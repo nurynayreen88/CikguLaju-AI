@@ -1,0 +1,1055 @@
+"""Guardrails for Pendidikan Muzik RPT/RPH 2027 staging."""
+import csv
+import json
+import pathlib
+import re
+import unittest
+
+ROOT = pathlib.Path(__file__).resolve().parents[1]
+MUSIC = ROOT / "staging" / "pendidikan_muzik"
+YEAR_COUNTS = {2: 35, 3: 35, 4: 35, 5: 35, 6: 35}
+REQUIRED = (
+    "**Set Induksi", "**Set induksi", "**Aktiviti 1", "**Aktiviti 2",
+    "**Penutup", "**Bahan", "**Status", "**Objektif",
+)
+
+
+class MusicRPTAndRPHStagingQA(unittest.TestCase):
+    def test_original_google_drive_audio_links_are_source_only_and_fail_closed(self):
+        """617 exact source URLs; no bot download, no guessed PdP track choices."""
+        from staging.pendidikan_muzik.rpt_rph_2027 import external_audio_links_staging as audio
+
+        total_files = 0
+        eligible_pdps = 0
+        for year, expected in audio.AUDIO_COUNTS.items():
+            path = MUSIC / "rpt_rph_2027" / f"audio_source_index_year{year}_20261106.json"
+            catalog = json.loads(path.read_text(encoding="utf-8"))
+            self.assertEqual(catalog["year"], year)
+            self.assertEqual(catalog["scope"], "EXTERNAL_SOURCE_LINKS_ONLY")
+            self.assertFalse(catalog["access_verified"])
+            self.assertFalse(catalog["audio_content_verified"])
+            self.assertFalse(catalog["redistribution_permitted"])
+            self.assertEqual(len(catalog["files"]), expected)
+            total_files += len(catalog["files"])
+            self.assertIsNotNone(audio._source_catalog(year))
+            for pdp in range(1, 36):
+                result = audio.audio_link_action(year, pdp)
+                self.assertFalse(result["download_available"])
+                self.assertTrue(result["available"] == bool(result["links"]))
+                if result["available"]:
+                    eligible_pdps += 1
+                    self.assertEqual(result["button_label"], "Buka Audio Sumber")
+                for item in result["links"]:
+                    self.assertEqual(item["status"], audio.SOURCE_STATUS)
+                    self.assertFalse(item["download_available"])
+                    self.assertTrue(item["url"].startswith(
+                        "https://drive.google.com/file/d/" + item["file_id"] + "/view"
+                    ))
+                    self.assertNotIn("export=download", item["url"])
+                    self.assertNotIn("/uc?id=", item["url"])
+        self.assertEqual(total_files, 617)
+        self.assertGreater(eligible_pdps, 95)
+        self.assertLess(eligible_pdps, 175)
+        self.assertEqual(
+            [link["track"] for link in audio.links_for_pdp(4, 6)],
+            [12, 13, 14, 15, 16],
+        )
+        self.assertEqual(
+            [link["track"] for link in audio.links_for_pdp(5, 12)],
+            [61, 62, 63],
+        )
+        self.assertEqual(len(audio.links_for_pdp(6, 1)), 10)
+        self.assertEqual(audio.links_for_pdp(2, 3), [])
+        self.assertEqual(audio.links_for_pdp(1, 1), [])
+        self.assertEqual(audio.links_for_pdp(4, 36), [])
+        self.assertEqual(audio.numbers_from_printed_reference("5 atau 8"), ())
+        self.assertEqual(audio.numbers_from_printed_reference("22 / 24–26"), ())
+        self.assertEqual(audio.numbers_from_printed_reference("36.1"), ())
+        self.assertEqual(audio.numbers_from_printed_reference("12–16"), (12, 13, 14, 15, 16))
+
+    def test_music_native_route_candidate_source_identity_and_access_gate(self):
+        """Candidate uses existing native rows, never bypasses release parity."""
+        import os
+        from unittest.mock import patch
+        from staging.pendidikan_muzik.rpt_rph_2027 import music_native_route_candidate as candidate
+
+        all_ids = set()
+        digests = set()
+        for year in range(2, 7):
+            for pdp in range(1, 36):
+                src = candidate.load(year, pdp)
+                self.assertIsNotNone(src, f"Missing candidate Y{year} PdP{pdp}")
+                self.assertEqual(src["title"], src["preview"]["layout"]["header"][9]["value"])
+                self.assertFalse(src["preview"]["approved_for_live"])
+                self.assertEqual(src["subject"], "Pendidikan Muzik")
+                self.assertRegex(src["digest"], r"^[0-9a-f]{64}$")
+                all_ids.add((src["year"], src["pdp"]))
+                digests.add(src["digest"])
+        self.assertEqual(len(all_ids), 175)
+        self.assertEqual(len(digests), 175)
+        self.assertIsNone(candidate.load(1, 1))
+        self.assertIsNone(candidate.load(2, 36))
+        self.assertIsNone(candidate.source_digest(2, 36))
+
+        sends, calls, session = [], [], {}
+        def send(cid, text, kb=None, *args, **kwargs):
+            sends.append((cid, text, kb))
+            return "SENT"
+        def original_callback(cid, data):
+            calls.append(("old", cid, data))
+            return "ORIGINAL"
+        def next_class(cid):
+            calls.append(("class", cid))
+            return "CLASS_SELECTION"
+        ns = {
+            "state": session,
+            "callback": original_callback,
+            "subjects": lambda cid, label: "OLD_SUBJECTS",
+            "send": send,
+            "_rph_rows": lambda state, *a, **k: {"MATA PELAJARAN": "UNMODIFIED"},
+            "_lesson_to_class_v2439": next_class,
+            "SUBJECTS_BY_GRADE": {"Tahun 4": ["English", "Matematik"]},
+            "SUBJECT_LABEL": {},
+            "_CIKGULAJU_DEV_SUBJECTS_V2617": {"Pendidikan Muzik": (2, 3, 4, 5, 6)},
+        }
+        with patch.dict(os.environ, {candidate.FLAG: "0", candidate.PARITY_FLAG: "0"}):
+            self.assertFalse(candidate.install(ns))
+            self.assertIs(ns["callback"], original_callback)
+        with patch.dict(os.environ, {candidate.FLAG: "1", candidate.PARITY_FLAG: "0"}):
+            self.assertFalse(candidate.install(ns))
+            self.assertIs(ns["callback"], original_callback)
+        with patch.dict(os.environ, {candidate.FLAG: "1", candidate.PARITY_FLAG: "1"}):
+            self.assertTrue(candidate.install(ns))
+            self.assertTrue(ns["MUZIK_2027_NATIVE_CANDIDATE_ACTIVE"])
+            self.assertEqual(ns["subjects"](42, "Tahun 4"), "SENT")
+            flat = [x for row in sends[-1][2] for x in row]
+            self.assertEqual(sum(x["callback_data"] == "sub_Pendidikan Muzik" for x in flat), 1)
+            self.assertEqual(ns["callback"](42, "sub_Pendidikan Muzik"), "SENT")
+            self.assertEqual(ns["callback"](42, "muzik27pick|4|06"), "CLASS_SELECTION")
+            state = ns["state"][42]
+            self.assertEqual(state["subject"], candidate.SUBJECT)
+            self.assertEqual(state["lesson_no"], "6")
+            result = ns["_rph_rows"](state)
+            self.assertEqual(result["MATA PELAJARAN"], candidate.SUBJECT)
+            self.assertEqual(result["TAJUK"], "BEG CANTIK MENAWAN")
+            self.assertIn("Rakaman tidak diperlukan", result["AKTIVITI UTAMA"])
+            self.assertIn("mengajuk", result["OBJEKTIF PEMBELAJARAN"].lower())
+            state[candidate.SESSION_KEY]["digest"] = "0" * 64
+            with self.assertRaises(ValueError):
+                ns["_rph_rows"](state)
+            self.assertEqual(ns["callback"](42, "muzik27pick|3|06"), "SENT")
+            self.assertEqual(ns["callback"](42, "muzik27page|4|1"), "SENT")
+            # Separate original-source viewer, never a native media download.
+            self.assertEqual(ns["callback"](42, "muzik27audio|4|06|0"), "SENT")
+            audio_buttons = [item for group in sends[-1][2] for item in group if "url" in item]
+            self.assertEqual(len(audio_buttons), 5)
+            self.assertTrue(all(item["url"].startswith("https://drive.google.com/file/d/")
+                                and "/view" in item["url"] for item in audio_buttons))
+            self.assertIn("belum disahkan", sends[-1][1])
+            self.assertEqual(ns["callback"](42, "muzik27audio|4|06|9"), "SENT")
+            self.assertIn("Halaman audio tidak sah", sends[-1][1])
+            self.assertEqual(ns["callback"](42, "muzik27audio|3|06|0"), "SENT")
+            self.assertIn("tidak sepadan", sends[-1][1])
+        # The old subject path and Year 1 route remain delegated.
+        self.assertEqual(ns["callback"](42, "totally_other_event"), "ORIGINAL")
+
+    def test_rpt_manifest_identity_unit_sp_pages_and_group_slots_all_175(self):
+        """Keep lesson source and printed RPT synchronized without altering records."""
+        columns = {
+            2: ("Slot A", "Slot B", "Unit", "SP DSKP", "BT m/s"),
+            3: ("Kumpulan A slot 2027", "Kumpulan B slot 2027",
+                "Unit/Tajuk", "SP", "RPT halaman BT (belum sah)"),
+            4: ("Kumpulan A slot 2027", "Kumpulan B slot 2027",
+                "Unit/Tajuk", "SP", "RPT halaman BT (belum sah)"),
+            5: ("Slot Kumpulan A", "Slot Kumpulan B",
+                "Unit/Tajuk", "Kod SP", "Buku Teks m/s"),
+            6: ("Kumpulan A slot 2027", "Kumpulan B slot 2027",
+                "Unit/Tajuk", "SP", "RPT halaman BT (belum sah)"),
+        }
+        seen = set()
+        for year, (col_a, col_b, col_unit, col_sp, col_page) in columns.items():
+            folder = MUSIC / "rpt_rph_2027" / f"year{year}"
+            manifest = json.loads((folder / "pdp_manifest.json").read_text(encoding="utf-8"))
+            with (folder / f"RPT_MUZIK_TAHUN_{year}_2027_DRAF.csv").open(
+                encoding="utf-8-sig", newline=""
+            ) as handle:
+                rpt = list(csv.DictReader(handle))
+            self.assertEqual(len(rpt), 35, f"RPT rows Year {year}")
+            self.assertEqual(len(manifest["pdps"]), 35, f"Manifest Year {year}")
+            for row, source in zip(rpt, manifest["pdps"]):
+                ident = source["pdp_id"]
+                with self.subTest(ident=ident):
+                    self.assertNotIn(ident, seen, f"Duplicate across years: {ident}")
+                    seen.add(ident)
+                    self.assertEqual(row["PdP ID"], ident)
+                    self.assertEqual(row["PdP"], str(source["pdp"]))
+                    self.assertEqual(
+                        " ".join(row[col_unit].split()).casefold(),
+                        " ".join(source["unit"].split()).casefold(),
+                    )
+                    self.assertEqual(
+                        [v.strip() for v in row[col_sp].split(";") if v.strip()],
+                        source["sp"],
+                        f"SP mismatch {ident}",
+                    )
+                    # The RPT may cite an old page without book-image proof;
+                    # equal page text is not itself verification of the book.
+                    self.assertEqual(
+                        row[col_page].replace("–", "-").strip(),
+                        str(source.get("page") or "").replace("–", "-").strip(),
+                    )
+                    self.assertEqual(row[col_a], source["rpt2027_slot"]["groupA"])
+                    self.assertEqual(row[col_b], source["rpt2027_slot"]["groupB"])
+            self.assertFalse(manifest["textbook_verified"])
+            self.assertFalse(manifest["rph_word_pdf_verified"])
+        self.assertEqual(len(seen), 175)
+
+    def test_audit_summary_status_matches_current_source_evidence(self):
+        """Prevent stale 3/28/15 counts being reported as the current QA state."""
+        register = (MUSIC / "rpt_rph_2027" / "SOURCE_BOOK_REGISTER_20261106.md").read_text(
+            encoding="utf-8"
+        )
+        current_summary = register.split("## Pusingan Tahun 2", 1)[0]
+        expected = {2: 33, 3: 33, 4: 33, 5: 35, 6: 33}
+        total = 0
+        missing_from_book = set()
+        for year, count in expected.items():
+            directory = MUSIC / "rpt_rph_2027" / f"year{year}"
+            manifest = json.loads((directory / "pdp_manifest.json").read_text(encoding="utf-8"))
+            checked = {
+                r["pdp_id"] for r in manifest["pdps"]
+                if r.get("source_book_text_crosscheck") is True
+                or r.get("source_book_content_page_checked") is True
+            }
+            self.assertEqual(len(checked), count, f"Year {year} has stale coverage")
+            self.assertEqual(
+                manifest["status"],
+                f"DRAF_STAGING_{count}_OF_35_TEXT_OR_PAGE_CROSSCHECK_NOT_FINAL",
+            )
+            summary_row = next(
+                line for line in current_summary.splitlines()
+                if line.startswith(f"| {year} |")
+            )
+            self.assertIn(f"{count}/35", summary_row)
+            self.assertFalse(manifest["textbook_verified"])
+            self.assertFalse(manifest["audio_verified"])
+            self.assertFalse(manifest["rph_word_pdf_verified"])
+            total += len(checked)
+            missing_from_book.update(
+                r["pdp_id"] for r in manifest["pdps"] if r["pdp_id"] not in checked
+            )
+        self.assertEqual(total, 167)
+        self.assertEqual(missing_from_book, {
+            f"MZ-Y{year}-{pdp:02d}"
+            for year in (2, 3, 4, 6) for pdp in (34, 35)
+        })
+        self.assertIn("167/175", current_summary)
+        self.assertIn("8 RPH", current_summary)
+
+    def test_pdp_identity_rpt_rph_coverage(self):
+        all_keys = set()
+        for year, expected in YEAR_COUNTS.items():
+            directory = MUSIC / "rpt_rph_2027" / f"year{year}"
+            manifest = json.loads((directory / "pdp_manifest.json").read_text(encoding="utf-8"))
+            self.assertEqual(manifest["year"], year)
+            self.assertEqual(manifest["academic_year"], 2027)
+            self.assertIn("DRAF", manifest["status"])
+            self.assertFalse(manifest["textbook_verified"])
+            self.assertFalse(manifest["audio_verified"])
+            self.assertFalse(manifest["rph_word_pdf_verified"])
+
+            pdps = manifest["pdps"]
+            self.assertEqual(len(pdps), expected)
+            catalogue = json.loads((MUSIC / f"y{year}_dskp_sp_rph_seeds.json").read_text(encoding="utf-8"))
+            known_sp = {row["sp"] for row in catalogue["standards"]}
+            paths = sorted(directory.glob("rph_pdp_??.md"))
+            self.assertEqual(len(paths), expected)
+            for i, row in enumerate(pdps, start=1):
+                self.assertEqual(row["pdp"], i)
+                self.assertEqual(row["pdp_id"], f"MZ-Y{year}-{i:02d}")
+                self.assertNotIn(row["pdp_id"], all_keys)
+                all_keys.add(row["pdp_id"])
+                self.assertTrue(row["unit"].strip())
+                self.assertTrue(row["sp"])
+                self.assertRegex(row["rpt2027_slot"]["groupA"], r"^\d{2}/\d{2}")
+                self.assertRegex(row["rpt2027_slot"]["groupB"], r"^\d{2}/\d{2}")
+                md = (directory / f"rph_pdp_{i:02d}.md").read_text(encoding="utf-8")
+                self.assertIn(" ".join(row["unit"].split()), " ".join(md.split()))
+                self.assertIn(f"PdP {i:02d}", md)
+                self.assertIn("DRAF STAGING", md)
+                for field in REQUIRED:
+                    if field.startswith("**Set"):
+                        continue
+                    self.assertIn(field, md)
+                self.assertTrue("**Set Induksi" in md or "**Set induksi" in md)
+                self.assertEqual(md.count("**Aktiviti 1"), 1)
+                self.assertEqual(md.count("**Aktiviti 2"), 1)
+                for sp in row["sp"]:
+                    self.assertRegex(sp, r"^[1-5][.][1-9][.]\d{1,2}$")
+                missing = set(row["sp"]) - known_sp
+                if missing:
+                    self.assertEqual(year, 4, "Unknown SP outside known Year 4 source conflict")
+                    self.assertTrue(row.get("flags") or "AMARAN KOD" in md)
+            rpt_csv = directory / f"RPT_MUZIK_TAHUN_{year}_2027_DRAF.csv"
+            with rpt_csv.open(encoding="utf-8-sig", newline="") as f:
+                rows = list(csv.reader(f))
+            self.assertEqual(len(rows), expected + 1)
+            rpt_md = (directory / f"RPT_MUZIK_TAHUN_{year}_2027_DRAF.md").read_text(encoding="utf-8")
+            self.assertIn("KUMPULAN A & B", rpt_md.upper())
+            self.assertIn("DRAF", rpt_md)
+        self.assertEqual(len(all_keys), 175)
+
+    def test_week_slots_match_frozen_master_not_per_state_availability(self):
+        """Master-index week ranges only. This does NOT validate school dates by state."""
+        snapshot = json.loads((MUSIC / "rpt_rph_2027" / "KALENDAR_MINGGU_RPT_2027_INDUK_AUDIT_SNAPSHOT.json").read_text(encoding="utf-8"))
+        self.assertFalse(snapshot["verification"]["release_authorization"])
+        self.assertEqual(snapshot["verification"]["year2_to6_pdp"], 175)
+        for group in ("A", "B"):
+            self.assertEqual(len(snapshot["weeks"][group]), 44)
+            self.assertEqual(set(snapshot["weeks"][group]), {f"M{i:02d}" for i in range(1, 45)})
+            self.assertEqual(len(snapshot["school_break_week_slots"][group]), 4)
+        self.assertEqual(snapshot["weeks"]["A"]["M10"]["start"], "2027-03-14")
+        self.assertEqual(snapshot["weeks"]["B"]["M10"]["start"], "2027-03-15")
+        self.assertEqual(snapshot["weeks"]["B"]["M20"]["start"], "2027-06-07")
+        self.assertEqual(snapshot["weeks"]["B"]["M32"]["start"], "2027-09-06")
+
+        import csv
+        def short_date(iso):
+            return iso[8:10] + "/" + iso[5:7]
+
+        for year in range(2, 7):
+            directory = MUSIC / "rpt_rph_2027" / f"year{year}"
+            manifest = json.loads((directory / "pdp_manifest.json").read_text(encoding="utf-8"))
+            with (directory / f"RPT_MUZIK_TAHUN_{year}_2027_DRAF.csv").open(encoding="utf-8", newline="") as fh:
+                csv_rows = {row[0]: row for row in list(csv.reader(fh))[1:]}
+            self.assertEqual(len(csv_rows), 35)
+            for row in manifest["pdps"]:
+                ident = row["pdp_id"]
+                week_code = f"M{row['rpt2027_slot']['week']:02d}"
+                for group, column in (("A", 2), ("B", 3)):
+                    source = snapshot["weeks"][group][week_code]
+                    expected = short_date(source["start"]) + "–" + short_date(source["end"])
+                    self.assertEqual(row["rpt2027_slot"]["group" + group], expected)
+                    self.assertEqual(csv_rows[ident][column], expected)
+
+    def test_conflicting_year_4_codes_not_automatically_normalized(self):
+        directory = MUSIC / "rpt_rph_2027" / "year4"
+        manifest = json.loads((directory / "pdp_manifest.json").read_text(encoding="utf-8"))
+        self.assertTrue(any(row.get("flags") for row in manifest["pdps"]))
+        self.assertEqual(
+            [row["pdp"] for row in manifest["pdps"] if row.get("source_book_content_page_checked")],
+            [14, 15, 16, 21, 24, 31, 32, 33],
+        )
+        self.assertEqual({row["pdp"]: row["page"] for row in manifest["pdps"] if row.get("source_book_content_page_checked")},
+                         {14: "50-51", 15: "52-53", 16: "52-53", 21: "70-71", 24: "82-83", 31: "100-101", 32: "102-103", 33: "102-103"})
+        self.assertTrue(all("4.1.1" in row["sp_rpt_source"] for row in manifest["pdps"] if row.get("source_book_content_page_checked") and row["pdp"] not in (21, 24)))
+        self.assertTrue(all("4.1.1" not in row["sp"] for row in manifest["pdps"] if row.get("source_book_content_page_checked") and row["pdp"] not in (21, 24)))
+        self.assertTrue(all(not row["source_book_audio_file_verified"] for row in manifest["pdps"] if row.get("source_book_content_page_checked")))
+        self.assertTrue(any("3.1.1" in row.get("sp_rpt_source", []) for row in manifest["pdps"]))
+        sources = json.loads((MUSIC / "y4_dskp_sp_rph_seeds.json").read_text(encoding="utf-8"))
+        self.assertEqual(
+            {x["sp"] for x in sources["standards"] if x["flag_kod_sk_sp_tidak_sepadan"]},
+            {"3.2.1", "3.2.2", "3.2.3", "4.2.1"},
+        )
+
+    def test_dskp_code_presence_exact_conflict_allowlist_and_release_gate(self):
+        """Fail closed if a new unknown SP or premature approval appears."""
+        root = MUSIC / "rpt_rph_2027"
+        audit = json.loads((root / "DSKP_SP_CODE_PRESENCE_175_20261106.json").read_text(encoding="utf-8"))
+        allowed = {}  # all current draft SP codes occur in the printed DSKP
+        self.assertEqual(audit["summary"]["rph_count"], 175)
+        self.assertEqual(audit["summary"]["sp_present_rph"], 175)
+        self.assertEqual(audit["summary"]["sp_absent_rph"], 0)
+        self.assertEqual(set(audit["summary"]["conflicted_pdps"]), set(allowed))
+        self.assertEqual(len(audit["records"]), 175)
+
+        manifests = {year: json.loads((root / f"year{year}" / "pdp_manifest.json").read_text(encoding="utf-8")) for year in YEAR_COUNTS}
+        seen = set()
+        mismatches = {}
+        for record in audit["records"]:
+            identity = record["pdp_id"]
+            self.assertNotIn(identity, seen)
+            seen.add(identity)
+            year, pdp = record["year"], record["pdp"]
+            manifest = manifests[year]["pdps"][pdp - 1]
+            self.assertEqual(manifest["pdp_id"], identity)
+            self.assertEqual(record["manifest_sp"], manifest["sp"])
+            self.assertFalse(record["official_approval"], identity)
+            self.assertFalse(record["semantic_alignment_verified"], identity)
+            if record["sp_not_found_in_source"]:
+                mismatches[identity] = record["sp_not_found_in_source"]
+                self.assertEqual(year, 4)
+                self.assertEqual(record["sp_not_found_in_source"], allowed[identity])
+                self.assertFalse(manifest["dskp_crosswalk_approved"])
+        self.assertEqual(seen, {f"MZ-Y{year}-{pdp:02d}" for year in YEAR_COUNTS for pdp in range(1, 36)})
+        self.assertEqual(mismatches, allowed)
+
+    def test_year4_crosswalk_sources_preserved_and_not_approved(self):
+        manifest = json.loads((MUSIC / "rpt_rph_2027" / "year4" / "pdp_manifest.json").read_text(encoding="utf-8"))
+        expected = {
+            21: (["3.1.2", "3.1.3"], ["3.2.2", "3.2.3"]),
+            24: (["3.1.1", "3.1.2", "3.1.3"], ["3.2.1", "3.2.2", "3.2.3"]),
+        }
+        for pdp, (source, printed) in expected.items():
+            row = manifest["pdps"][pdp-1]
+            self.assertEqual(row["sp_rpt_source"], source)
+            self.assertEqual(row["sp"], printed)
+            self.assertEqual(row["dskp_source_printed_sp"], printed)
+            self.assertEqual(row["textbook_printed_sp"], printed)
+            self.assertFalse(row["dskp_crosswalk_approved"])
+            self.assertEqual(row["dskp_crosswalk_review_level"], "SP_PRINTED_MATCHED_SK_NUMBERING_UNRESOLVED")
+            self.assertIn("drive.google.com", row["dskp_source_document_url"])
+            doc = (MUSIC / "rpt_rph_2027" / "year4" / f"rph_pdp_{pdp:02d}.md").read_text(encoding="utf-8")
+            self.assertIn("BELUM DILULUSKAN", doc)
+            self.assertIn(", ".join(printed), doc)
+        self.assertIn("G, A, B, C", manifest["pdps"][20]["crosswalk_review_note"])
+        item24 = manifest["pdps"][23]
+        self.assertEqual(item24["page"], "82-83")
+        self.assertEqual(item24["source_rpt_original_page"], "82")
+        text24 = (MUSIC / "rpt_rph_2027" / "year4" / "rph_pdp_24.md").read_text(encoding="utf-8")
+        self.assertIn("m/s 82–83", text24)
+        self.assertTrue(manifest["pdps"][20]["source_book_score_visual_checked"])
+        self.assertTrue(item24["source_book_score_visual_checked"])
+        self.assertIn("m/s84", item24["source_book_visual_review_note"])
+        self.assertIn("corak irama", text24)
+
+    def test_reinforcement_candidates_stay_nonofficial_and_no_fabricated_audio(self):
+        """All eight non-book slots are specificity-reviewed but never count as book-verified."""
+        total = 0
+        for year in (2, 3, 4, 6):
+            directory = MUSIC / "rpt_rph_2027" / f"year{year}"
+            manifest = json.loads((directory / "pdp_manifest.json").read_text(encoding="utf-8"))
+            for pdp in (34, 35):
+                row = manifest["pdps"][pdp-1]
+                self.assertEqual(row["pdp_kind"], "CADANGAN_PENGUKUHAN_BUKAN_PROJEK_RASMI")
+                self.assertTrue(row["reinforcement_specificity_reviewed"])
+                self.assertIsNone(row["page"])
+                self.assertFalse(row.get("source_book_text_crosscheck", False))
+                self.assertFalse(row["source_book_audio_file_verified"])
+                self.assertTrue(row["validation_status"].startswith("DRAF_"))
+                doc = (directory / f"rph_pdp_{pdp:02d}.md").read_text(encoding="utf-8")
+                self.assertIn("BUKAN Projek Seni Muzik rasmi", doc)
+                self.assertIn("BUKAN Projek Seni Muzik rasmi".upper(), doc.upper())
+                self.assertIn("**Aktiviti 1", doc)
+                self.assertIn("**Aktiviti 2", doc)
+                self.assertIn("semakan teks buku", doc)
+                total += 1
+        self.assertEqual(total, 8)
+
+    def test_only_two_official_music_projects_each_year(self):
+        for year in YEAR_COUNTS:
+            directory = MUSIC / "rpt_rph_2027" / f"year{year}"
+            manifest = json.loads((directory / "pdp_manifest.json").read_text(encoding="utf-8"))
+            project_names = {row["unit"].split(" — ")[0] for row in manifest["pdps"] if row["unit"].startswith("Projek Seni Muzik")}
+            self.assertEqual(project_names, {"Projek Seni Muzik 1", "Projek Seni Muzik 2"})
+            self.assertFalse(any("Projek Seni Muzik 3" in row["unit"] for row in manifest["pdps"]))
+            if year != 5:
+                self.assertEqual(manifest["deprecated_project3_reclassified_count"], 2)
+                extra = manifest["pdps"][-2:]
+                self.assertTrue(all(row["pdp_kind"] == "CADANGAN_PENGUKUHAN_BUKAN_PROJEK_RASMI" for row in extra))
+                self.assertTrue(all("Projek Seni Muzik 3" in row["source_rpt_original_unit"] for row in extra))
+                self.assertTrue(all(row["validation_status"].startswith("DRAF") for row in extra))
+
+    def test_textbook_crosscheck_is_partial_and_audio_is_unverified(self):
+        expected = {
+            2: (33, set(range(1, 34))),
+            3: (33, set(range(1, 34))),
+            4: (27, set(range(1, 14)) | set(range(17, 31))),
+            5: (35, set(range(1, 36))),
+            6: (33, set(range(1, 34))),
+        }
+        for year, (count, pdp_numbers) in expected.items():
+            manifest = json.loads((MUSIC / "rpt_rph_2027" / f"year{year}" / "pdp_manifest.json").read_text(encoding="utf-8"))
+            actual = {r["pdp"] for r in manifest["pdps"] if r.get("source_book_text_crosscheck")}
+            self.assertEqual(actual, pdp_numbers)
+            self.assertEqual(manifest["partial_textbook_crosscheck_count"] if year != 4 else manifest["partial_text_crosscheck_count"], count)
+            self.assertFalse(manifest["textbook_verified"])
+            self.assertFalse(manifest["audio_verified"])
+            self.assertFalse(manifest["rph_word_pdf_verified"])
+            self.assertTrue(all(r.get("source_book_audio_file_verified") is False for r in manifest["pdps"] if r.get("source_book_text_crosscheck")))
+        year2 = json.loads((MUSIC / "rpt_rph_2027" / "year2" / "pdp_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(year2["pdps"][10]["page"], "36-37")
+        self.assertEqual(year2["pdps"][10]["source_rpt_original_page"], "32-33")
+        self.assertEqual(year2["pdps"][21]["source_book_audio_numbers_printed"], "60–66 (berbeza rujukan RPT 57–59)")
+        self.assertTrue(year2["pdps"][32].get("source_book_text_crosscheck", False))
+        self.assertFalse(year2["pdps"][32].get("pending_book_page_crosscheck", False))
+        self.assertIn("sompoton", (MUSIC / "rpt_rph_2027" / "year2" / "rph_pdp_33.md").read_text(encoding="utf-8"))
+        self.assertTrue(all(year2["pdps"][i-1].get("source_book_project_evidence") for i in (12,13,26,27)))
+        year3 = json.loads((MUSIC / "rpt_rph_2027" / "year3" / "pdp_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(year3["partial_textbook_crosscheck_count"], 33)
+        self.assertEqual(year3["pdps"][5]["page"], "21")
+        self.assertTrue(all(year3["pdps"][i-1]["source_book_project_evidence"] for i in (12,13,24,25,26)))
+        self.assertFalse(any(year3["pdps"][i-1].get("source_book_text_crosscheck", False) for i in (34,35)))
+        self.assertEqual(year3["pdps"][5]["source_rpt_original_page"], "20")
+        self.assertEqual(year3["pdps"][9]["audio"], "39–40")
+        self.assertEqual(year3["pdps"][9]["source_rpt_original_audio"], "36-38")
+        self.assertEqual({r["pdp"] for r in year3["pdps"] if r.get("source_book_text_crosscheck")}, set(range(1, 34)))
+        self.assertEqual(year3["pdps"][26]["audio"], "65")
+        self.assertEqual(year3["pdps"][26]["source_rpt_original_audio"], "69-70")
+        self.assertEqual(year3["pdps"][27]["page"], "81")
+        self.assertEqual(year3["pdps"][27]["source_rpt_original_page"], "80-81")
+        self.assertIn("12 detik", (MUSIC / "rpt_rph_2027" / "year3" / "rph_pdp_20.md").read_text(encoding="utf-8"))
+        self.assertIn("tiga jenis ikon", (MUSIC / "rpt_rph_2027" / "year3" / "rph_pdp_32.md").read_text(encoding="utf-8"))
+        self.assertIn("rock balada", (MUSIC / "rpt_rph_2027" / "year3" / "rph_pdp_33.md").read_text(encoding="utf-8"))
+        self.assertTrue(all(r["source_book_audio_file_verified"] is False for r in year3["pdps"][3:11]))
+        self.assertIn("tempo lambat", (MUSIC / "rpt_rph_2027" / "year3" / "rph_pdp_06.md").read_text(encoding="utf-8"))
+        self.assertIn("Gigih Si Labah-labah", (MUSIC / "rpt_rph_2027" / "year3" / "rph_pdp_10.md").read_text(encoding="utf-8"))
+        self.assertIn("Muzik Jaz", (MUSIC / "rpt_rph_2027" / "year3" / "rph_pdp_11.md").read_text(encoding="utf-8"))
+        self.assertFalse(year3["textbook_verified"])
+        year4 = json.loads((MUSIC / "rpt_rph_2027" / "year4" / "pdp_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(year4["partial_page_content_check_count"], 8)
+        self.assertEqual(year4["partial_text_crosscheck_count"], 27)
+        self.assertTrue(all(year4["pdps"][i-1].get("source_book_project_evidence") for i in (12,13,25,26,27)))
+        self.assertEqual([year4["pdps"][i-1]["page"] for i in (12,13,25,26,27)], ["4-5","4-5","54-55","54-55","54-55"])
+        self.assertFalse(year4["pdps"][33].get("source_book_text_crosscheck", False))
+        self.assertFalse(year4["pdps"][34].get("source_book_text_crosscheck", False))
+        y5 = json.loads((MUSIC / "rpt_rph_2027" / "year5" / "pdp_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(y5["partial_textbook_crosscheck_count"], 35)
+        self.assertIn("Da Dum", (MUSIC / "rpt_rph_2027" / "year5" / "rph_pdp_01.md").read_text(encoding="utf-8"))
+        self.assertIn("Permainan Teroka Bunyi", (MUSIC / "rpt_rph_2027" / "year5" / "rph_pdp_02.md").read_text(encoding="utf-8"))
+        self.assertIn("meter 3/4", (MUSIC / "rpt_rph_2027" / "year5" / "rph_pdp_06.md").read_text(encoding="utf-8"))
+        self.assertIn("Lightly Row", (MUSIC / "rpt_rph_2027" / "year5" / "rph_pdp_08.md").read_text(encoding="utf-8"))
+        self.assertIn("Dua Kekal Dua Mengembara", (MUSIC / "rpt_rph_2027" / "year5" / "rph_pdp_11.md").read_text(encoding="utf-8"))
+        self.assertFalse(any(r.get("source_book_audio_file_verified") for r in y5["pdps"][:11]))
+        self.assertIn("melodi kaunter", (MUSIC / "rpt_rph_2027" / "year5" / "rph_pdp_19.md").read_text(encoding="utf-8"))
+        self.assertIn("Siapa yang Kena", (MUSIC / "rpt_rph_2027" / "year5" / "rph_pdp_22.md").read_text(encoding="utf-8"))
+        self.assertIn("Lompat Luncur", (MUSIC / "rpt_rph_2027" / "year5" / "rph_pdp_25.md").read_text(encoding="utf-8"))
+        self.assertIn("Cipta Melodi Indah", (MUSIC / "rpt_rph_2027" / "year5" / "rph_pdp_26.md").read_text(encoding="utf-8"))
+        self.assertTrue(all(r.get("source_book_audio_file_verified") is False for r in y5["pdps"]))
+        self.assertEqual(y5["pdps"][30]["source_rpt_original_page"], "80-83")
+        self.assertEqual(y5["pdps"][31]["source_rpt_original_page"], "80-83")
+        self.assertEqual(y5["pdps"][30]["page"], "80-81")
+        self.assertEqual(y5["pdps"][31]["page"], "82-83")
+        y6 = json.loads((MUSIC / "rpt_rph_2027" / "year6" / "pdp_manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(y6["partial_textbook_crosscheck_count"], 33)
+        self.assertEqual(y6["pdps"][4]["page"], "14-17")
+        self.assertEqual(y6["pdps"][4]["source_rpt_original_page"], "14-15")
+        self.assertIn("crescendo", (MUSIC / "rpt_rph_2027" / "year6" / "rph_pdp_01.md").read_text(encoding="utf-8"))
+        self.assertIn("32 detik", (MUSIC / "rpt_rph_2027" / "year6" / "rph_pdp_02.md").read_text(encoding="utf-8"))
+        self.assertIn("EMI Music Publishing", (MUSIC / "rpt_rph_2027" / "year6" / "rph_pdp_06.md").read_text(encoding="utf-8"))
+        self.assertIn("kontur melodi", (MUSIC / "rpt_rph_2027" / "year6" / "rph_pdp_10.md").read_text(encoding="utf-8"))
+        self.assertIn("minim bertitik", (MUSIC / "rpt_rph_2027" / "year6" / "rph_pdp_18.md").read_text(encoding="utf-8"))
+        self.assertIn("fermata", (MUSIC / "rpt_rph_2027" / "year6" / "rph_pdp_19.md").read_text(encoding="utf-8"))
+        self.assertIn("combo-mat", (MUSIC / "rpt_rph_2027" / "year6" / "rph_pdp_23.md").read_text(encoding="utf-8"))
+        self.assertIn("Kutub Utara", (MUSIC / "rpt_rph_2027" / "year6" / "rph_pdp_24.md").read_text(encoding="utf-8"))
+        self.assertIn("melodi kaunter", (MUSIC / "rpt_rph_2027" / "year6" / "rph_pdp_29.md").read_text(encoding="utf-8"))
+        self.assertTrue(all(y6["pdps"][i-1]["project_book_evidence"] for i in (12,13,26,27)))
+        self.assertEqual([y6["pdps"][i-1]["page"] for i in (12,13,26,27)], ["44-45","44-45","88-89","88-89"])
+        self.assertFalse(y6["pdps"][33].get("source_book_text_crosscheck", False))
+        self.assertFalse(y6["pdps"][34].get("source_book_text_crosscheck", False))
+        self.assertTrue(all(r.get("source_book_audio_file_verified") is False for r in y6["pdps"] if r.get("source_book_text_crosscheck")))
+        self.assertFalse(any(x["source_book_audio_file_verified"] for x in y6["pdps"][:10]))
+        self.assertEqual(y6["pdps"][10]["dskp_classical_years"], "1750-1830")
+        self.assertEqual(y6["pdps"][10]["textbook_classical_years"], "1750-1850")
+        self.assertIn("Classical", (MUSIC / "rpt_rph_2027" / "year6" / "rph_pdp_11.md").read_text(encoding="utf-8"))
+
+    def test_year_5_6_risks_remain_visible(self):
+        y5 = json.loads((MUSIC / "rpt_rph_2027" / "year5" / "pdp_manifest.json").read_text(encoding="utf-8"))
+        y6 = json.loads((MUSIC / "rpt_rph_2027" / "year6" / "pdp_manifest.json").read_text(encoding="utf-8"))
+        self.assertTrue(y5["source_rpt_2026_crosswalk_checked"])
+        self.assertEqual(y5["project_count_dskp"], 2)
+        self.assertEqual([r["pdp"] for r in y5["pdps"] if r["unit"].startswith("Projek Seni Muzik")], [15, 16, 34, 35])
+        self.assertFalse(any("Projek Seni Muzik 3" in r["unit"] for r in y5["pdps"]))
+        self.assertEqual([(r["pdp"], r["page"]) for r in y5["pdps"] if r["unit"] == "ADIWIRA"], [(27, "70-71"), (28, "72-73"), (29, "74-77")])
+        self.assertEqual([r["pdp"] for r in y5["pdps"] if r["unit"] == "RAJA DI LAUTAN"], [13, 14, 17])
+        self.assertFalse(y5["textbook_verified"])
+        self.assertFalse(y5["audio_verified"])
+        self.assertFalse(y5["rph_word_pdf_verified"])
+        self.assertTrue(any("Baroque" in " ".join(r.get("flags", [])) for r in y6["pdps"]))
+        self.assertTrue(any("Classical" in " ".join(r.get("flags", [])) for r in y6["pdps"]))
+
+
+
+# Extra staging-only tests live in this already-allowlisted CI audit file.
+import importlib.util as _music_importlib_util
+_MUSIC_PREVIEW_SOURCE = MUSIC / "rpt_rph_2027"
+_music_preview_spec = _music_importlib_util.spec_from_file_location(
+    "music_native_layout_preview_staging", _MUSIC_PREVIEW_SOURCE / "native_layout_preview_staging.py")
+module = _music_importlib_util.module_from_spec(_music_preview_spec)
+_music_preview_spec.loader.exec_module(module)
+SOURCE = _MUSIC_PREVIEW_SOURCE
+
+class MusicNativeLayoutStagingTests(unittest.TestCase):
+    def test_preview_book_evidence_warnings_only_for_eight_nonofficial_pdps(self):
+        """Page-image crosschecks must not be treated as unreviewed book content."""
+        warning = "TEXTBOOK_NOT_FULLY_CROSSCHECKED_OR_NONOFFICIAL"
+        actual = set()
+        for year in range(2, 7):
+            manifest = json.loads(
+                (SOURCE / f"year{year}" / "pdp_manifest.json").read_text(encoding="utf-8")
+            )
+            for row in manifest["pdps"]:
+                preview = module.build_staging_preview(SOURCE, year, row["pdp"])
+                covered = (
+                    row.get("source_book_text_crosscheck") is True
+                    or row.get("source_book_content_page_checked") is True
+                )
+                self.assertEqual(warning in preview["warnings"], not covered, row["pdp_id"])
+                if warning in preview["warnings"]:
+                    actual.add(row["pdp_id"])
+        self.assertEqual(actual, {
+            f"MZ-Y{year}-{pdp:02d}"
+            for year in (2, 3, 4, 6) for pdp in (34, 35)
+        })
+
+    def test_all_175_music_rph_preserve_the_five_pedagogical_parts(self):
+        for year in range(2, 7):
+            for pdp in range(1, 36):
+                with self.subTest(year=year, pdp=pdp):
+                    preview = module.build_staging_preview(SOURCE, year, pdp)
+                    self.assertFalse(preview["approved_for_live"])
+                    self.assertEqual(preview["source_pdp_id"], f"MZ-Y{year}-{pdp:02d}")
+                    self.assertEqual(preview["layout"]["style"], "telegram-native-rph-v1")
+                    self.assertEqual(len(preview["layout"]["header"]), 20)
+                    self.assertEqual(preview["layout"]["activity_header"], module.ACTIVITY_HEADER)
+                    self.assertEqual(len(preview["layout"]["phases"]), 3)
+                    self.assertEqual(len(preview["layout"]["footer"]), 2)
+                    self.assertEqual(preview["layout"]["phases"][0]["activity"], preview["phase_text"]["induction"])
+                    self.assertEqual(preview["layout"]["phases"][2]["activity"], preview["phase_text"]["closure"])
+                    for kind in ("act1", "act2", "assessment"):
+                        self.assertIn(preview["phase_text"][kind], preview["layout"]["phases"][1]["activity"])
+                    self.assertIn("NO_REAL_WORD_PDF_RENDER", preview["warnings"])
+    def test_175_layouts_pass_existing_web_native_parser_preflight(self):
+        """Run the actual Web input parser, WITHOUT enabling Muzik in runtime.
+
+        Extract only known pure functions/constants from its AST. We never
+        import app.py, open the live service, write files or debit user quota.
+        The one temporary MUZIK whitelist is isolated inside the test only.
+        There is NO source digest or production approval here.
+        """
+        import ast
+        import datetime
+        import hmac
+        import os
+        import re
+        from unittest.mock import patch
+
+        path = ROOT / "web" / "native_rph_telegram_api.py"
+        source_text = path.read_text(encoding="utf-8")
+        tree = ast.parse(source_text, filename=str(path))
+        constants = {"MIMES", "SUBJECTS", "LAYOUT_STYLE", "HEADINGS"}
+        functions = {"_require_text", "_metadata_dict", "_extract", "build_native_input"}
+        namespace = {"os": os, "re": re, "hmac": hmac, "date": datetime.date}
+        for node in tree.body:
+            if isinstance(node, ast.Assign):
+                for target in node.targets:
+                    if isinstance(target, ast.Name) and target.id in constants:
+                        namespace[target.id] = ast.literal_eval(node.value)
+        found = {n.name: n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name in functions}
+        self.assertEqual(set(found), functions)
+        self.assertEqual(constants, set(namespace).intersection(constants))
+        # Compile only selected trusted local functions; never execute the module boot.
+        ast_module = ast.Module(body=[found[n] for n in sorted(functions, key=lambda z: found[z].lineno)], type_ignores=[])
+        exec(compile(ast.fix_missing_locations(ast_module), str(path), "exec"), namespace)
+        self.assertNotIn("MUZIK", namespace["SUBJECTS"])
+
+        def payload_for(preview, fmt):
+            header = {entry["label"]: entry["value"] for entry in preview["layout"]["header"]}
+            return {"subject": "MUZIK", "component": None,
+                    "year": preview["year"], "lesson": preview["pdp"],
+                    "unit": header["Tajuk"],
+                    "teacher": {"class": "4 Amanah", "date": "2027-01-04", "time": "09:00-09:30"},
+                    "layout": preview["layout"], "format": fmt}
+
+        first = module.build_staging_preview(SOURCE, 4, 21)
+        with patch.dict(os.environ, {"CIKGULAJU_WEB_RPH_SOURCE_PARITY_REQUIRED": "0"}):
+            with self.assertRaisesRegex(ValueError, "Invalid subject/year"):
+                namespace["build_native_input"](payload_for(first, "word"))
+            namespace["SUBJECTS"] = dict(namespace["SUBJECTS"], MUZIK="Pendidikan Muzik")
+            # Even with test-only allowlisting, real source-parity mode MUST reject
+            # Muzik because runtime has no approved fingerprint/source route yet.
+            from web.rph_shared_source_identity import source_paths
+            self.assertIsNone(source_paths(4, "MUZIK", 21, None))
+            with patch.dict(os.environ, {"CIKGULAJU_WEB_RPH_SOURCE_PARITY_REQUIRED": "1"}):
+                with self.assertRaisesRegex(ValueError, "Missing source identity"):
+                    namespace["build_native_input"](payload_for(first, "word"))
+                supplied = dict(payload_for(first, "word"), source_digest="0" * 64)
+                with self.assertRaisesRegex(ValueError, "Web/Telegram RPH source mismatch"):
+                    namespace["build_native_input"](supplied)
+            for year in range(2, 7):
+                for pdp in range(1, 36):
+                    with self.subTest(year=year, pdp=pdp):
+                        preview = module.build_staging_preview(SOURCE, year, pdp)
+                        for fmt in ("word", "pdf"):
+                            state, ai_text, returned_format = namespace["build_native_input"](payload_for(preview, fmt))
+                            self.assertEqual(returned_format, fmt)
+                            self.assertEqual(state["task"], "rph")
+                            self.assertEqual(state["subject"], "Pendidikan Muzik")
+                            self.assertEqual(state["year"], f"Tahun {year}")
+                            self.assertEqual(state["lesson_no"], pdp)
+                            self.assertEqual(state["topic"], next(e["value"] for e in preview["layout"]["header"] if e["label"] == "Tajuk"))
+                            self.assertEqual(state["rph_class"], "4 Amanah")
+                            self.assertEqual(state["rph_date"], "2027-01-04")
+                            self.assertEqual(state["rph_time"], "09:00-09:30")
+                            self.assertIn("STANDARD PEMBELAJARAN:", ai_text)
+                            for component in ("induction", "act1", "act2", "assessment", "closure", "objective", "materials"):
+                                self.assertIn(preview["phase_text"][component], ai_text)
+                            self.assertFalse(preview["approved_for_live"])
+        # A future production integration MUST implement source-digest parity,
+        # actual DOCX/PDF rendering and approval gates separately.
+
+    def test_81_success_criteria_crosschecked_without_fake_release_approval(self):
+        root = MUSIC / "rpt_rph_2027"
+        audit = json.loads((root / "SUCCESS_CRITERIA_TEXT_ALIGNMENT_AUDIT_20261106.json").read_text(encoding="utf-8"))
+        overlay = json.loads((root / "SUCCESS_CRITERIA_DRAFT_20261106.json").read_text(encoding="utf-8"))
+        self.assertEqual(audit["summary"]["total"], 81)
+        self.assertEqual(audit["summary"]["needs_score_review"], 81)
+        self.assertEqual(audit["summary"]["editorially_approved"], 81)
+        self.assertEqual(set(audit["records"]), set(overlay))
+        for ident, row in audit["records"].items():
+            year, pdp = int(ident.split("-")[1][1:]), int(ident.split("-")[2])
+            src = (root / f"year{year}" / f"rph_pdp_{pdp:02d}.md").read_text(encoding="utf-8")
+            self.assertEqual(row["criterion"], overlay[ident]["criterion"])
+            self.assertIn(row["objective"], src)
+            self.assertIn(row["assessment"], src)
+            self.assertGreaterEqual(row["lexical_alignment_score"], 0.5)
+            self.assertEqual(row["editorial_approval"], "CIKGULAJU_INTERNAL_TEXT_REVIEW_PASSED")
+            self.assertEqual(row["source_score_visual_review"], "PENDING")
+
+    def test_all_81_specific_success_criteria_overlays_remain_draft(self):
+        overlay = json.loads((SOURCE / "SUCCESS_CRITERIA_DRAFT_20261106.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(overlay), 81)
+        counts = {2: 28, 3: 3, 4: 28, 5: 15, 6: 7}
+        for year in range(2, 7):
+            matched = 0
+            for pdp in range(1, 36):
+                result = module.build_staging_preview(SOURCE, year, pdp)
+                ident = f"MZ-Y{year}-{pdp:02d}"
+                criterion = next(x["value"] for x in result["layout"]["header"] if x["label"] == "KRITERIA KEJAYAAN")
+                self.assertNotEqual(criterion, "—")
+                self.assertFalse(result["approved_for_live"])
+                if ident in overlay:
+                    matched += 1
+                    self.assertEqual(criterion, overlay[ident]["criterion"])
+                    self.assertEqual(overlay[ident]["approval"], "CIKGULAJU_EDITORIAL_TEXT_REVIEW_PASSED")
+                    self.assertFalse(
+                        re.search(r"(?i)\\b(?:belum disahkan|menunggu penyelarasan|tertakluk semakan|kod SP|RPT lama)\\b", criterion),
+                        f"Internal source-audit caveat must not leak into pedagogical criteria for {ident}"
+                    )
+                    self.assertIn("EDITORIAL_TEXT_REVIEW_PASSED_SCORE_PENDING", result["warnings"])
+                else:
+                    self.assertNotIn("EDITORIAL_TEXT_REVIEW_PASSED_SCORE_PENDING", result["warnings"])
+            self.assertEqual(matched, counts[year])
+        self.assertEqual(len({x["criterion"] for x in overlay.values()}), 81)
+
+    def test_lossless_punctuation_adapter_prevents_wrong_textbook_pages(self):
+        from pathlib import Path
+        spec = _music_importlib_util.spec_from_file_location(
+            "music_legacy_punctuation_staging", SOURCE / "legacy_doc_text_safe_staging.py")
+        adapter = _music_importlib_util.module_from_spec(spec)
+        spec.loader.exec_module(adapter)
+        samples = {
+            "Buku Kesenian halaman 4–5": "Buku Kesenian halaman 4-5",
+            "Buku halaman 46–47, Audio 84–86": "Buku halaman 46-47, Audio 84-86",
+            "melodi—menaik, menurun—serta": "melodi - menaik, menurun - serta",
+            "Guru menyemak peristiwa–bunyi": "Guru menyemak peristiwa-bunyi",
+            "murid ‘menjawab’ “melodi”": "murid 'menjawab' \"melodi\"",
+        }
+        for old, expected in samples.items():
+            self.assertEqual(adapter.normalize_for_legacy_doc(old), expected)
+            self.assertTrue(adapter.normalize_check(old, expected))
+        with self.assertRaisesRegex(ValueError, "U\\+266B"):
+            adapter.normalize_for_legacy_doc("simbol ♫ tanpa pengendalian khusus")
+        with self.assertRaises(TypeError):
+            adapter.normalize_for_legacy_doc(None)
+
+    def test_native_music_layout_has_no_markdown_or_repeated_activity_labels(self):
+        for year in range(2, 7):
+            for pdp in range(1, 36):
+                preview = module.build_staging_preview(SOURCE, year, pdp)
+                phases = preview["layout"]["phases"]
+                combined = "\\n".join(phase["activity"] for phase in phases)
+                self.assertNotIn("**", combined, f"Markdown leaked in Y{year} PdP{pdp}")
+                self.assertNotRegex(combined, r"(?i)Aktiviti 1\\s*[-—]\\s*Aktiviti 1")
+                self.assertNotRegex(combined, r"(?i)Aktiviti 2\\s*[-—]\\s*Aktiviti 2")
+                self.assertNotRegex(combined, r"(?i)Pengukuhan dan Penilaian\\s*[-—]\\s*Pengukuhan")
+
+    def test_year4_sk_sp_labels_match_standalone_music_dskp(self):
+        """Prevent SK 3.2 or 4.2 from appearing in generated Y4 native RPH."""
+        for pdp in range(1, 36):
+            preview = module.build_staging_preview(SOURCE, 4, pdp)
+            headers = {entry["label"]: entry["value"] for entry in preview["layout"]["header"]}
+            sp = [c.strip() for c in headers["Standard Pembelajaran"].split(";")]
+            sk = [c.strip() for c in headers["Standard Kandungan"].split(";")]
+            if any(code.startswith("3.2.") for code in sp):
+                self.assertIn("3.1", sk, f"Y4 PdP{pdp} SK creative source discrepancy")
+                self.assertNotIn("3.2", sk)
+            if "4.2.1" in sp:
+                self.assertIn("4.1", sk, f"Y4 PdP{pdp} appreciation SK")
+                self.assertNotIn("4.2", sk)
+        for pdp, expected_sp in (
+            (21, ["3.2.2", "3.2.3"]),
+            (24, ["3.2.1", "3.2.2", "3.2.3"]),
+            (34, ["4.2.1", "2.3.1"]),
+        ):
+            preview = module.build_staging_preview(SOURCE, 4, pdp)
+            headers = {entry["label"]: entry["value"] for entry in preview["layout"]["header"]}
+            self.assertEqual(headers["Standard Pembelajaran"].split("; "), expected_sp)
+            self.assertIn("3.1" if pdp in (21, 24) else "4.1",
+                          headers["Standard Kandungan"].split("; "))
+
+    def test_music_preview_flags_curriculum_and_calendar_blockers_fail_closed(self):
+        """No publication from native staging preview for two invalid SP rows and ten zero-day slots."""
+        curriculum, numbering, calendar = [], [], []
+        for year in range(2, 7):
+            for pdp in range(1, 36):
+                item = module.build_staging_preview(SOURCE, year, pdp)
+                self.assertFalse(item["approved_for_live"])
+                if item["source_sp_code_conflict"]:
+                    curriculum.append(item["source_pdp_id"])
+                    self.assertIn("SP_CODE_NOT_FOUND_IN_YEAR_DSKP", item["warnings"])
+                    self.assertIn("DSKP_CROSSWALK_NOT_APPROVED", item["warnings"])
+                else:
+                    self.assertNotIn("SP_CODE_NOT_FOUND_IN_YEAR_DSKP", item["warnings"])
+                if item["source_sp_numbering_discrepancy"]:
+                    numbering.append(item["source_pdp_id"])
+                    self.assertIn("DSKP_SK_SP_NUMBERING_DISCREPANCY", item["warnings"])
+                    self.assertIn("DSKP_CROSSWALK_NOT_APPROVED", item["warnings"])
+                if item["rpt_week_zero_candidate_days"]:
+                    calendar.append(item["source_pdp_id"])
+                    self.assertIn("RPT_ZERO_CANDIDATE_SCHOOL_DAYS", item["warnings"])
+                    self.assertIn("PDP_ANJAL_DO_NOT_AUTO_SHIFT", item["warnings"])
+                else:
+                    self.assertNotIn("RPT_ZERO_CANDIDATE_SCHOOL_DAYS", item["warnings"])
+        self.assertEqual(curriculum, [])
+        self.assertEqual(numbering, ["MZ-Y4-21", "MZ-Y4-24"])
+        self.assertEqual(calendar, [f"MZ-Y{year}-{pdp:02d}" for year in range(2, 7) for pdp in (6, 19)])
+
+    def test_music_175_sp_code_source_presence_matrix(self):
+        audit = json.loads((MUSIC / "rpt_rph_2027" / "DSKP_SP_CODE_PRESENCE_175_20261106.json").read_text(encoding="utf-8"))
+        self.assertEqual(audit["summary"]["rph_count"], 175)
+        self.assertEqual(audit["summary"]["sp_present_rph"], 175)
+        self.assertEqual(audit["summary"]["sp_absent_rph"], 0)
+        self.assertEqual(audit["summary"]["conflicted_pdps"], [])
+        self.assertEqual(audit["summary"]["source_numbering_discrepancy_pdps"], ["MZ-Y4-21", "MZ-Y4-24"])
+        self.assertEqual(len(audit["records"]), 175)
+        seen = set()
+        for year in range(2, 7):
+            manifest = json.loads((MUSIC / "rpt_rph_2027" / f"year{year}" / "pdp_manifest.json").read_text(encoding="utf-8"))
+            year_records = [r for r in audit["records"] if r["year"] == year]
+            self.assertEqual(len(year_records), 35)
+            self.assertEqual(audit["per_year"][str(year)]["without_unknown_codes"], 35)
+            for row, original in zip(year_records, manifest["pdps"]):
+                self.assertEqual(row["pdp_id"], original["pdp_id"])
+                self.assertEqual(row["manifest_sp"], original["sp"])
+                self.assertFalse(row["semantic_alignment_verified"])
+                self.assertFalse(row["official_approval"])
+                self.assertNotIn(row["pdp_id"], seen)
+                seen.add(row["pdp_id"])
+                if row["pdp_id"] in ("MZ-Y4-21", "MZ-Y4-24"):
+                    self.assertEqual(row["code_text_presence"], "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT")
+                    self.assertEqual(row["proposed_dskp_printed_sp"], original["sp"])
+                    self.assertEqual(row["source_rpt_original_sp"], original["sp_rpt_source"])
+                    self.assertFalse(original["dskp_crosswalk_approved"])
+                else:
+                    self.assertEqual(row["sp_not_found_in_source"], [])
+        self.assertEqual(len(seen), 175)
+
+    def test_muzik_2027_day_index_zero_day_slots_all_states(self):
+        index = json.loads((MUSIC / "rpt_rph_2027" / "KALENDAR_2027_HARI_PDP_16_NEGERI_AUDIT.json").read_text(encoding="utf-8"))
+        self.assertEqual(index["source_day_record_count"], 5840)
+        self.assertEqual(index["state_count"], 16)
+        self.assertEqual(index["weeks_per_state"], 35)
+        self.assertEqual(index["summary"]["state_week_combinations"], 560)
+        self.assertEqual(index["summary"]["zero_day_combinations"], 32)
+        self.assertEqual(index["summary"]["affected_pdp_across_5_years"], 10)
+        self.assertEqual(index["zero_day_pdp_numbers"], [6, 19])
+        self.assertEqual(len(index["states"]), 16)
+        for state, item in index["states"].items():
+            self.assertIn(item["group"], ("A", "B"))
+            self.assertEqual(set(item["candidate_days_by_week"]), {f"M{i:02d}" for i in range(1, 36)})
+            self.assertEqual(item["candidate_days_by_week"]["M06"], 0, state)
+            self.assertEqual(item["candidate_days_by_week"]["M19"], 0, state)
+            self.assertTrue(all(v > 1 for k, v in item["candidate_days_by_week"].items() if k not in ("M06", "M19")))
+        self.assertEqual(len(index["zero_day_details"]), 32)
+        self.assertEqual({r["slot"] for r in index["zero_day_details"]}, {"M06", "M19"})
+        self.assertIn("BUKAN_AKTIVASI", index["scope"])
+        self.assertIn("CALON PDP", index["day_status_formula"])
+
+    def test_2027_music_rpt_pdp06_pdp19_have_explicit_anjar_risk(self):
+        import csv
+        calendar = json.loads((MUSIC / "rpt_rph_2027" / "KALENDAR_MINGGU_RPT_2027_INDUK_AUDIT_SNAPSHOT.json").read_text(encoding="utf-8"))
+        day = json.loads((MUSIC / "rpt_rph_2027" / "KALENDAR_2027_HARI_PDP_16_NEGERI_AUDIT.json").read_text(encoding="utf-8"))
+        flagged = 0
+        for year in range(2, 7):
+            directory = MUSIC / "rpt_rph_2027" / f"year{year}"
+            manifest = json.loads((directory / "pdp_manifest.json").read_text(encoding="utf-8"))
+            with (directory / f"RPT_MUZIK_TAHUN_{year}_2027_DRAF.csv").open(encoding="utf-8", newline="") as handle:
+                cells = list(csv.reader(handle))
+            self.assertEqual(len(cells), 36)
+            self.assertIn("AMARAN KALENDAR M06/M19", (directory / f"RPT_MUZIK_TAHUN_{year}_2027_DRAF.md").read_text(encoding="utf-8"))
+            for pdp in range(1, 36):
+                record = manifest["pdps"][pdp-1]
+                ident = f"MZ-Y{year}-{pdp:02d}"
+                self.assertEqual(record["pdp_id"], ident)
+                self.assertEqual(record["rpt2027_slot"]["week"], pdp)
+                self.assertEqual(cells[pdp][0], ident)
+                self.assertEqual(int(cells[pdp][1]), pdp)
+                if pdp in (6, 19):
+                    flagged += 1
+                    self.assertIn("RISIKO CALON HARI PDP 0/16 NEGERI", cells[pdp][-1])
+                    self.assertIn("JANGAN ANJAK AUTOMATIK", cells[pdp][-1])
+                    risk = record["rpt2027_day_audit"]
+                    self.assertEqual(risk["indexed_candidate_days_all_states"], 0)
+                    self.assertEqual(risk["indexed_state_count"], 16)
+                    self.assertTrue(risk["automatic_shift_or_skip_forbidden"])
+                    self.assertTrue(risk["approval"].startswith("DRAF_"))
+                    week = f"M{pdp:02d}"
+                    for group, col in (("A", 2), ("B", 3)):
+                        slot = calendar["weeks"][group][week]
+                        def fmt(iso):
+                            return iso[8:10] + "/" + iso[5:7]
+                        self.assertEqual(cells[pdp][col], fmt(slot["start"]) + "–" + fmt(slot["end"]))
+                        self.assertTrue(all(v["candidate_days_by_week"][week] == 0
+                                            for v in day["states"].values() if v["group"] == group))
+                else:
+                    self.assertNotIn("rpt2027_day_audit", record)
+                    self.assertNotIn("RISIKO CALON HARI PDP 0/16 NEGERI", cells[pdp][-1])
+        self.assertEqual(flagged, 10)
+
+    def test_music_staging_source_digest_matches_physical_sources(self):
+        """Source hash is integrity-only; it must never grant release access."""
+        import hashlib
+        import re
+        import tempfile
+        from pathlib import Path
+        import shutil
+        spec = _music_importlib_util.spec_from_file_location(
+            "music_staging_source_identity", SOURCE / "music_source_identity_staging.py")
+        checker = _music_importlib_util.module_from_spec(spec)
+        spec.loader.exec_module(checker)
+        digests = {}
+        for year in range(2, 7):
+            for pdp in range(1, 36):
+                paths = checker.source_paths(year, pdp)
+                self.assertEqual(len(paths), 6)
+                self.assertTrue(checker.manifest_matches_source(year, pdp))
+                expected = hashlib.sha256()
+                for rel in paths:
+                    data = (ROOT / rel).read_bytes()
+                    expected.update(rel.encode("utf-8"))
+                    expected.update(bytes([0]))
+                    expected.update(data)
+                    expected.update(bytes([0]))
+                result = checker.source_fingerprint(year, pdp)
+                self.assertRegex(result, r"^[a-f0-9]{64}$")
+                self.assertEqual(result, expected.hexdigest())
+                self.assertEqual(result, checker.source_fingerprint(year, pdp))
+                digests[f"MZ-Y{year}-{pdp:02d}"] = result
+        self.assertEqual(len(digests), 175)
+        self.assertEqual(len(set(digests.values())), 175)
+        for args in [(1, 1), (7, 1), (2, 0), (2, 36), ("2", 1), (2, "1")]:
+            self.assertIsNone(checker.source_paths(*args))
+            self.assertIsNone(checker.source_fingerprint(*args))
+        self.assertIsNone(checker.source_fingerprint(2, 1, component="PJ"))
+
+        # Work on a temporary copy, never source files.
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            for rel in checker.source_paths(2, 1):
+                target = root / rel
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(ROOT / rel, target)
+            before = checker.source_fingerprint(2, 1, root=root)
+            self.assertIsNotNone(before)
+            source = root / checker.source_paths(2, 1)[0]
+            source.write_bytes(source.read_bytes() + b"\nSTAGING_TEST_MUTATION")
+            self.assertNotEqual(before, checker.source_fingerprint(2, 1, root=root))
+            source.unlink()
+            self.assertIsNone(checker.source_fingerprint(2, 1, root=root))
+            source.symlink_to(ROOT / checker.source_paths(2, 1)[0])
+            self.assertIsNone(checker.source_fingerprint(2, 1, root=root))
+            source.unlink()
+            shutil.copy2(ROOT / checker.source_paths(2, 1)[0], source)
+            self.assertEqual(before, checker.source_fingerprint(2, 1, root=root))
+            overlay = root / checker.source_paths(2, 1)[3]
+            overlay.write_bytes(overlay.read_bytes() + b"\nSTAGING_TEST_MUTATION")
+            self.assertNotEqual(before, checker.source_fingerprint(2, 1, root=root))
+            shutil.copy2(ROOT / checker.source_paths(2, 1)[3], overlay)
+            crosswalk = root / checker.source_paths(2, 1)[5]
+            crosswalk.write_bytes(crosswalk.read_bytes() + b"\\nSTAGING_TEST_CROSSWALK_MUTATION")
+            self.assertNotEqual(before, checker.source_fingerprint(2, 1, root=root))
+            crosswalk.unlink()
+            self.assertIsNone(checker.source_fingerprint(2, 1, root=root))
+
+    def test_release_readiness_gate_cannot_silently_promote_drafts(self):
+        """Editorial, media, curriculum and calendar placeholders are not approvals."""
+        root = MUSIC / "rpt_rph_2027"
+        overlay = json.loads((root / "SUCCESS_CRITERIA_DRAFT_20261106.json").read_text(encoding="utf-8"))
+        self.assertEqual(len(overlay), 81)
+        expected_ids = {f"MZ-Y{year}-{pdp:02d}" for year in YEAR_COUNTS for pdp in range(1, 36)}
+        self.assertTrue(set(overlay).issubset(expected_ids))
+        for ident, candidate in overlay.items():
+            self.assertEqual(ident, f"MZ-Y{candidate['year']}-{candidate['pdp']:02d}")
+            self.assertEqual(candidate["approval"], "CIKGULAJU_EDITORIAL_TEXT_REVIEW_PASSED")
+            self.assertTrue(candidate["criterion"].strip())
+            self.assertTrue(candidate["evidence"].strip())
+
+        without_school_day, reinforcement, audio_released = set(), set(), set()
+        for year in YEAR_COUNTS:
+            manifest = json.loads((root / f"year{year}" / "pdp_manifest.json").read_text(encoding="utf-8"))
+            self.assertIn("DRAF", manifest["status"])
+            for name in ("textbook_verified", "audio_verified", "rph_word_pdf_verified"):
+                self.assertIs(manifest[name], False, f"Premature approval {year}: {name}")
+            for row in manifest["pdps"]:
+                ident = row["pdp_id"]
+                self.assertFalse(row.get("source_book_audio_file_verified", False), ident)
+                if row.get("source_book_audio_file_verified"):
+                    audio_released.add(ident)
+                risk = row.get("rpt2027_day_audit")
+                if risk:
+                    self.assertEqual(risk["status"], "ZERO_CALON_PDP_IN_ALL_16_STATES")
+                    self.assertTrue(risk["automatic_shift_or_skip_forbidden"])
+                    without_school_day.add(ident)
+                if row.get("pdp_kind") == "CADANGAN_PENGUKUHAN_BUKAN_PROJEK_RASMI":
+                    self.assertIsNone(row["page"], ident)
+                    self.assertFalse(row.get("source_book_text_crosscheck", False), ident)
+                    self.assertIn("DRAF", row["validation_status"])
+                    reinforcement.add(ident)
+        self.assertEqual(without_school_day,
+                         {f"MZ-Y{year}-{pdp:02d}" for year in YEAR_COUNTS for pdp in (6, 19)})
+        self.assertEqual(reinforcement,
+                         {f"MZ-Y{year}-{pdp:02d}" for year in (2, 3, 4, 6) for pdp in (34, 35)})
+        self.assertFalse(audio_released)
+
+    def test_teacher_facing_music_sections_exclude_internal_audio_audit_notes(self):
+        """Audit notes belong in source metadata, not teacher classroom instructions."""
+        heading = re.compile(r"^\\*\\*(Objektif|Set [Ii]nduksi|Aktiviti [12]|Pengukuhan dan pentaksiran|Penutup|Bahan)[^*]*\\*\\*", re.I)
+        internal = re.compile(
+            r"audio.{0,50}belum|belum.{0,50}(?:audio|fail)|"
+            r"RPT lama|bukti audio|kod SP.{0,40}menunggu|"
+            r"tanpa mereka-reka nama|tertakluk semakan DSKP",
+            re.I,
+        )
+        for year in range(2, 7):
+            for pdp in range(1, 36):
+                path = MUSIC / "rpt_rph_2027" / f"year{year}" / f"rph_pdp_{pdp:02d}.md"
+                for line in path.read_text(encoding="utf-8").splitlines():
+                    if heading.match(line):
+                        self.assertIsNone(internal.search(line),
+                                          f"Teacher-facing audit note in Y{year} PdP{pdp:02d}: {line}")
+
+    def test_rpt_y2_y5_review_notes_match_evidence(self):
+        base = MUSIC / "rpt_rph_2027"
+        for year in (2, 5):
+            path = base / f"year{year}" / f"RPT_MUZIK_TAHUN_{year}_2027_DRAF.csv"
+            with path.open(encoding="utf-8-sig", newline="") as handle:
+                rows = {r["PdP ID"]: r for r in csv.DictReader(handle)}
+            self.assertEqual(len(rows), 35)
+            if year == 5:
+                self.assertTrue(all("RPT rujukan sahaja" not in r["Status Semakan"] for r in rows.values()))
+            else:
+                for n in (12, 13, 26, 27):
+                    self.assertIn("projek seni muzik rasmi disemak teks", rows[f"MZ-Y2-{n:02d}"]["Semakan"])
+                self.assertIn("Sumazau", rows["MZ-Y2-33"]["Audio cetak atau RPT"])
+                self.assertIn("belum disahkan", rows["MZ-Y2-33"]["Semakan"])
+
+    def test_fail_closed_for_invalid_year_or_pdp(self):
+        for year, pdp in ((1, 1), (7, 1), (2, 0), (3, 36), ("2", 1)):
+            with self.subTest(year=year, pdp=pdp):
+                with self.assertRaises(ValueError):
+                    module.build_staging_preview(SOURCE, year, pdp)
+
+
+if __name__ == "__main__":
+    unittest.main()
