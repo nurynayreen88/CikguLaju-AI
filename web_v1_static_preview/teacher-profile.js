@@ -421,7 +421,7 @@ function populateSchoolSelect(control, placeholder, items, saved="") {
     control.add(new Option(label,row.value));
   }
   if (saved && !items.some(row=>row.value===saved)) {
-    control.add(new Option(saved+" (rekod lama — semak semula)",saved));
+    control.add(new Option(saved.toLocaleUpperCase("ms-MY")+" (rekod lama — semak semula)",saved));
   }
   control.value=saved||"";
   control.disabled=items.length===0;
@@ -499,7 +499,7 @@ async function loadSchoolPickerForProfile(profile) {
     if(seq!==schoolPickerRequest)return;
     // Account and timetable still work; do not wipe school data during outages.
     if(savedState && ![...schoolStateField.options].some(o=>o.value===savedState))
-      schoolStateField.add(new Option(savedState,savedState));
+      schoolStateField.add(new Option(savedState.toLocaleUpperCase("ms-MY"),savedState));
     schoolStateField.value=savedState;
     schoolNameField.value=(profile.school_name||"").toLocaleUpperCase("ms-MY");
     schoolPickerNotice.textContent="Direktori sekolah tidak tersedia. Maklumat lama dikekalkan; cuba Refresh Profil.";
@@ -556,7 +556,7 @@ async function loadTeacherProfile() {
     document.getElementById("profile-name").value=profile.display_name || "Cikgu";
     await loadSchoolPickerForProfile(profile);
     document.getElementById("profile-classes").value=profile.class_names.join("\n");
-    setTeacherIdentity(profile);
+    setTeacherIdentity({...profile,school_name:schoolNameField.value});
     teacherProfileState.classNames=[...profile.class_names];
     teacherProfileState.profileVersion=profile.version || "";
     teacherProfileState.timetableVersion=timetable.version || "";
