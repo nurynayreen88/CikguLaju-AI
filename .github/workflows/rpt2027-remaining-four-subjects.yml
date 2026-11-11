@@ -2,6 +2,8 @@ name: RPT2027 remaining BM PI Arabic Music 20-PDF format QA
 on:
   pull_request:
     paths:
+      - 'scripts/audit_rpt2027_teacher_text_leaks_20261108.py'
+      - 'tests/test_rpt2027_teacher_text_leak_scan.py'
       - 'scripts/build_rpt_2027_remaining_four_subjects_staging.py'
       - 'rpt_2027/common/music_dskp_full_statement_staging.py'
       - 'staging/pendidikan_muzik/rpt_rph_2027/DSKP_MUSIC_FULL_TEXT_Y*_20261107_DRAF.json'
