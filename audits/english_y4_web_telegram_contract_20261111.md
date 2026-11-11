@@ -18,6 +18,13 @@
 - Cache PDF Web → `no-store, private`.
 - **5/5 ujian silang lulus** dalam GitHub Actions run **43016729997**, termasuk pengadang kegagalan sebelah sumber. Bukti bertahap: 4/4 run 43016329993 dan 3/3 run 43016057275.
 
+## Render Web dependency release gate — semakan 11 Nov 2026
+- Servis produksi `cikgulaju-web` (Render `srv-dbm5go8u01pc738f40cg`) menggunakan cabang `production/cikgulaju-web-20261105`, auto-deploy berasaskan commit, dan pada masa audit menggunakan build command `pip install 'flask==3.1.3' 'gunicorn==23.0.0'`.
+- Ini **belum memasang pypdf** yang diperlukan bagi pembacaan PDF Workbook dan Student Book pada Web. Tanpa perubahan build, muat turun baharu boleh mengembalikan ralat walaupun CI berasingan lulus.
+- Fail `requirements-web-render.txt` di staging mengunci Flask 3.1.3, Gunicorn 23.0.0, pypdf 5.1.0. Workflow silang PR kini memulakan persekitaran ujian daripada fail ini **sebelum** memasang pustaka QA tambahan.
+- **Urutan pelepasan selamat**: (1) Sahkan hak edaran serta rujukan buku dan PR Telegram #558; (2) Uji Telegram API di servis sebenar; (3) pada cabang Web produksi *semasa*, ubah build Render dahulu kepada `pip install 'flask==3.1.3' 'gunicorn==23.0.0' 'pypdf==5.1.0'` dan sahkan redeploy/health sehingga LIVE — perubahan ini tidak bergantung kepada fail baharu; (4) hanya selepas itu gabung PR #559 ke cabang Web yang auto-deploy; (5) sahkan muat turun sebenar dan status kredit tidak terpotong; (6) selepas fail keperluan wujud di produksi, pilihan mengemas kini build ke `pip install -r requirements-web-render.txt` boleh dibuat pada pelepasan berasingan.
+- **TIDAK DILAKSANAKAN DI PRODUKSI** dalam audit ini; ia masih kawalan pelepasan.
+
 ## Had dan langkah seterusnya
 - Ujian menggunakan kod sebenar dan fail PDF sebenar, tetapi *penghantaran antara proses* menggunakan WSGI mock, **bukan** trafik HTTPS sebenar antara servis Render.
 - Tidak mengesahkan hak edar setiap halaman, visual cetakan setiap Lesson, identiti akaun pengguna sebenar atau baki kredit dalam Supabase.
