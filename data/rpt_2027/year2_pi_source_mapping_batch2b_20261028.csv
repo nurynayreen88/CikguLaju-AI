@@ -1,0 +1,4 @@
+record_id,subject,year,source_week,source_domain,unit_or_topic,sk_codes,sp_codes,textbook_pages,calendar_group,calendar_2027_status,review_status,source_file_id,notes
+PI2-007,Pendidikan Islam,2,4,QURAN,Surah al-Baqarah ayat 62-88,,,UNVERIFIED,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1A4Xpdv_slwC86L9N90pMSjZut_tDABYP,Source 2026
+PI2-008,Pendidikan Islam,2,4,AKIDAH,Sifat Allah,2.1,2.1.1;2.1.2;2.1.3,UNVERIFIED,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1A4Xpdv_slwC86L9N90pMSjZut_tDABYP,Source 2026
+PI2-009,Pendidikan Islam,2,4,JAWI,Perkataan tiga suku kata - menulis,6.1,6.1.1;6.1.2;6.1.3,UNVERIFIED,UNASSIGNED,UNVERIFIED,SOURCE_REVIEW,1A4Xpdv_slwC86L9N90pMSjZut_tDABYP,Source 2026
