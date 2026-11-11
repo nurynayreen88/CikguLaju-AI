@@ -486,6 +486,10 @@ async function loadSchoolPickerForProfile(profile) {
       await populateSchoolDistricts("",seq);
     }
     if(seq!==schoolPickerRequest)return;
+    // Use the server's verified full uppercase display label for a linked
+    // school; old free-text profiles still keep their existing identity.
+    const matchingSchool=savedCode && schoolCatalogOptions.find(row=>row.value===savedCode);
+    if(matchingSchool)schoolNameField.value=matchingSchool.label;
     schoolPickerNotice.textContent=savedCode
       ? "Sekolah dipadankan melalui kod rasmi. Rujukan direktori Jun 2022."
       : savedState && profile.school_name
@@ -497,7 +501,7 @@ async function loadSchoolPickerForProfile(profile) {
     if(savedState && ![...schoolStateField.options].some(o=>o.value===savedState))
       schoolStateField.add(new Option(savedState,savedState));
     schoolStateField.value=savedState;
-    schoolNameField.value=profile.school_name||"";
+    schoolNameField.value=(profile.school_name||"").toLocaleUpperCase("ms-MY");
     schoolPickerNotice.textContent="Direktori sekolah tidak tersedia. Maklumat lama dikekalkan; cuba Refresh Profil.";
   }
 }
