@@ -889,8 +889,13 @@ def create_blueprint():
                 music_source_links,
             )
             if sub == "ENGLISH":
-                label = english_workbook_metadata(year, number)
+                # Independent verified sources: a Workbook bridge failure must
+                # not hide an otherwise available Student Book (and vice versa).
                 items = []
+                try:
+                    label = english_workbook_metadata(year, number)
+                except Exception:
+                    label = None
                 from urllib.parse import urlencode
                 params = urlencode({"year":year, "subject":sub,
                                     "unit":unit, "lesson":token})
