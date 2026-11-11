@@ -116,7 +116,7 @@ class StudentBookYear4Materials(unittest.TestCase):
         app_source = (root / "app.py").read_text(encoding="utf-8")
         def literal_map(name):
             match = re.search(
-                r"(?ms)^" + re.escape(name) + r"\\s*=\\s*(\\{.*?^\\})",
+                r"(?ms)^" + re.escape(name) + r"\s*=\s*(\{.*?^\})",
                 app_source,
             )
             self.assertIsNotNone(match, f"Telegram source {name} missing")
