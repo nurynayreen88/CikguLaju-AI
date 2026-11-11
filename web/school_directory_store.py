@@ -69,7 +69,7 @@ _SCHOOL_WORDS = {"BKT": "BUKIT", "KG": "KAMPUNG", "SG": "SUNGAI",
 def full_school_name(name):
     if not isinstance(name, str):
         raise ValueError("Invalid school name")
-    return re.sub(r"\\b(?:BKT|KG|SG|TMN|JLN)\\b",
+    return re.sub(r"\b(?:BKT|KG|SG|TMN|JLN)\b",
                   lambda match: _SCHOOL_WORDS[match.group()], name.upper())
 
 
