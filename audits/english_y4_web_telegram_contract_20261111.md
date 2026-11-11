@@ -2,7 +2,7 @@
 
 ## Bukti dua-PR (staging sahaja)
 - Web: PR #559, cabang `staging/web-english-y4-studentbook-20261111`.
-- Telegram: PR #558, commit sumber dipin `c0fb43edb4384869fd49c918c0b8afa0020aee93`.
+- Telegram: PR #558, commit sumber dipin `28aca5abef094588906114d7985930a01affdd4f`.
 - Workflow: `.github/workflows/web-english-y4-cross-pr-contract-staging.yml`; ujian: `tests/test_web_english_y4_partner_contract_20261111.py`.
 - Dua checkout GitHub yang berbeza dijalankan dalam GitHub Actions. API Flask kedua-duanya dihubungkan melalui penyesuai WSGI offline, dan menggunakan fail PDF asal dalam repositori.
 - Jalur auth Telegram dalam ujian ialah stub Bearer untuk persekitaran offline; auth sebenar turut diliputi ujian PR Telegram, namun **ujian rangkaian LIVE dengan token sebenar belum dijalankan**.
@@ -30,3 +30,10 @@
 - Tidak mengesahkan hak edar setiap halaman, visual cetakan setiap Lesson, identiti akaun pengguna sebenar atau baki kredit dalam Supabase.
 - Apabila PR #558 berubah, **kemas kini pin SHA** dalam workflow dan jalankan semula ujian, supaya bukan menguji pasangan kod yang lapuk.
 - **STAGING HOLD / DRAF**: Jangan gabung atau deploy ke pengeluaran sehingga ujian Render ↔ Telegram sebenar dan pengesahan akademik/sumber selesai.
+
+## Audit lengkap 81 pemetaan Student Book — 12 Nov 2026
+- PR Telegram #558 commit `28aca5abef094588906114d7985930a01affdd4f` menambah ujian `test_all_81_original_source_mappings_fail_closed_or_extract_exact_pdf_pages` yang membaca peta asal `app.py`, menilai semua 81 pilihan, mengesahkan 80 excerpt 1–4 halaman, dan menguji PDF dipulangkan terhadap content stream fail sumber bagi setiap halaman.
+- Lesson 43 dengan lima halaman kekal disekat; Lesson 103 memulangkan 73–75 dan Lesson 157 halaman utama 110 sahaja. Semakan chunk sempadan dan endpoint Bearer sedia ada kekal.
+- CI Telegram `English Workbook PDF and Music external links source QA` run **43118922500**: **SUCCESS** pada commit `28aca5abef094588906114d7985930a01affdd4f`.
+- Workflow silang Web–Telegram kini memin commit itu, menggantikan pin lama. Ujian WSGI berasingan masih perlu lulus pada head Web terkini.
+- Bukti ini ialah semakan pemetaan dan stream PDF sumber sebenar dalam repositori, **bukan** pengesahan visual buku cetak, kebenaran hak edaran atau pemeriksaan LIVE.
