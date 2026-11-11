@@ -192,15 +192,21 @@ def create_english_workbook_blueprint(runtime=None):
         response.headers["X-Content-Type-Options"] = "nosniff"
         return response
 
-    def selected():
+    def _selected_identifiers():
+        """Validate source identifiers independently of Workbook availability."""
         if (set(request.args) != {"year", "lesson"}
                 or any(len(request.args.getlist(k)) != 1 for k in request.args)):
-            return None, None, None
+            return None, None
         raw_year, raw_lesson = request.args["year"], request.args["lesson"]
         if (not re.fullmatch(r"[2-4]", raw_year)
                 or not re.fullmatch(r"[1-9][0-9]{0,2}", raw_lesson)):
+            return None, None
+        return int(raw_year), int(raw_lesson)
+
+    def selected():
+        year, lesson = _selected_identifiers()
+        if year is None:
             return None, None, None
-        year, lesson = int(raw_year), int(raw_lesson)
         return year, lesson, _material(year, lesson)
 
     @bp.get("/internal/rph/v1/english-extras/workbook")
@@ -235,7 +241,7 @@ def create_english_workbook_blueprint(runtime=None):
 
     @bp.get("/internal/rph/v1/english-extras/student-book")
     def student_book_metadata():
-        year, lesson, _ = selected()
+        year, lesson = _selected_identifiers()
         material = _student_book_material(runtime, year, lesson)
         if not material:
             return jsonify({"available": False}), 404
@@ -250,7 +256,7 @@ def create_english_workbook_blueprint(runtime=None):
 
     @bp.get("/internal/rph/v1/english-extras/student-book.pdf")
     def student_book_download():
-        year, lesson, _ = selected()
+        year, lesson = _selected_identifiers()
         material = _student_book_material(runtime, year, lesson)
         if not material:
             return jsonify({"error": "Student Book source not mapped"}), 404
