@@ -91,6 +91,7 @@ class ExtraMaterialsWebTests(unittest.TestCase):
         self.assertEqual(pdf.status_code, 200)
         self.assertEqual(pdf.mimetype, "application/pdf")
         self.assertIn("Lesson_030", pdf.headers["Content-Disposition"])
+        self.assertEqual(pdf.headers["Cache-Control"], "no-store, private")
         with self._account():
             bad = self.client.get("/api/web/rph/english-student-book",
                                   query_string={**params, "unit":"Wrong Unit"})
@@ -167,6 +168,13 @@ class ExtraMaterialsWebTests(unittest.TestCase):
             self.assertEqual(response.status_code,401)
             pdf=self.client.get("/api/web/rph/english-workbook",query_string=self.sel)
             self.assertEqual(pdf.status_code,401)
+            y4 = next(row for row in source_records(4, "ENGLISH")
+                      if row["lesson"] == 30)
+            private_book = self.client.get(
+                "/api/web/rph/english-student-book",
+                query_string={"year":"4", "subject":"ENGLISH",
+                              "unit":y4["unit"], "lesson":y4["token"]})
+            self.assertEqual(private_book.status_code, 401)
 
     def test_browser_uses_lesson_token_not_rpt_id(self):
         static=(ROOT/"web_v1_static_preview"/"index.html").read_text("utf8")
