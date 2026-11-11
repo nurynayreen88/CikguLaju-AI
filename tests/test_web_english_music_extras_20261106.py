@@ -138,6 +138,8 @@ class ExtraMaterialsWebTests(unittest.TestCase):
     def test_browser_uses_lesson_token_not_rpt_id(self):
         static=(ROOT/"web_v1_static_preview"/"index.html").read_text("utf8")
         self.assertIn("/api/web/rph/extra-materials?",static)
+        self.assertIn('item.type==="student_book"',static)
+        self.assertIn("/api/web/rph/english-student-book?",static)
         self.assertIn("Buka Audio Sumber",static)
         self.assertNotIn('"/api/materials?"',static)
 
