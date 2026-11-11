@@ -71,7 +71,37 @@ def probe():
               record.get("official_unique_code_hits",0),record.get("text_chars",0),
               record.get("error",""),flush=True)
         result["sources"].append(record)
+    result["source_code_coverage_ready"] = source_code_coverage_complete(result)
+    result["status"] = (
+        "SOURCE_CODE_COVERAGE_FOUND_NOT_ACADEMIC_APPROVAL"
+        if result["source_code_coverage_ready"]
+        else "SOURCE_COVERAGE_BLOCKED")
     return result
+
+
+def source_code_coverage_complete(result):
+    """Require 96 matched codes within one readable source before green CI.
+
+    Code coverage is only a prerequisite, never academic text approval.
+    A 403 mirror and an empty HTML result must NEVER pass as verified.
+    """
+    if (not isinstance(result, dict)
+            or result.get("expected_unique_sp") != 96
+            or result.get("academic_release_approved") is not False):
+        return False
+    for source in result.get("sources", []):
+        if not isinstance(source, dict):
+            continue
+        contexts = source.get("matching_code_contexts")
+        if (source.get("http_status") == 200
+                and source.get("official_unique_code_hits") == 96
+                and type(source.get("text_chars")) is int
+                and source["text_chars"] >= 10000
+                and source.get("missing_codes") == []
+                and isinstance(contexts, dict)
+                and len(contexts) == 96):
+            return True
+    return False
 
 
 if __name__=="__main__":
@@ -81,3 +111,7 @@ if __name__=="__main__":
     out.write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n","utf-8")
     print("Y6_2021_OFFICIAL_SP_COVERAGE_SUMMARY",
           [(x["url"],x.get("official_unique_code_hits",0)) for x in result["sources"]],flush=True)
+    print("Y6_2021_SOURCE_COVERAGE_STATUS",result["status"],flush=True)
+    if not result["source_code_coverage_ready"]:
+        raise SystemExit("BLOCKED: No complete 96-SP source contexts; "
+                         "RPT academic release remains forbidden")
