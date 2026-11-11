@@ -470,7 +470,7 @@ async function loadSchoolPickerForProfile(profile) {
   const savedState=profile.state_name||"";
   const savedDistrict=profile.district_name||"";
   const savedCode=profile.school_code||"";
-  schoolNameField.value=profile.school_name||"";
+  schoolNameField.value=(profile.school_name||"").toLocaleUpperCase("ms-MY");
   schoolStateField.value=savedState;
   populateSchoolSelect(schoolDistrictField,"Pilih negeri dahulu",[]);
   populateSchoolSelect(schoolChoiceField,"Pilih PPD dahulu",[]);
