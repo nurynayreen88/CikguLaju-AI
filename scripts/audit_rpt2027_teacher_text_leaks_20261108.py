@@ -82,7 +82,7 @@ def scan_file(path: Path) -> list[dict]:
     for page_number, text in _parts(path):
         # A scanned/image-only PDF can contain visible editorial notes but
         # produce zero searchable words. Never certify it as a clean RPT.
-        if is_pdf and re.search(r"\\w", text):
+        if is_pdf and re.search(r"\w", text):
             has_extractable_text = True
         for item in find_internal_notes(text):
             findings.append({"file": str(path), "page": page_number, **item})
