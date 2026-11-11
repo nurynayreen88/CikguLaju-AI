@@ -43,6 +43,38 @@ class SchoolProfileTests(unittest.TestCase):
             **changed,
         }
 
+    def test_school_names_are_full_and_uppercase_without_changing_codes(self):
+        from web.school_directory_store import full_school_name
+        self.assertEqual(full_school_name("Sekolah Kebangsaan Bkt Selambau"),
+                         "SEKOLAH KEBANGSAAN BUKIT SELAMBAU")
+        self.assertEqual(full_school_name("SK KG BARU BKT GELUGOR"),
+                         "SK KAMPUNG BARU BUKIT GELUGOR")
+        self.assertEqual(full_school_name("SEKOLAH KEBANGSAAN BUKIT RAYA"),
+                         "SEKOLAH KEBANGSAAN BUKIT RAYA")
+        self.assertEqual(full_school_name("BUKITAN BKT."),"BUKITAN BUKIT.")
+
+    def test_state_and_ppd_labels_uppercase_but_lookup_uses_original(self):
+        from web.school_directory_store import states, districts, schools
+        def read(url, secret, table, query, **kwargs):
+            if table=="school_states":
+                return [{"state_name":"Pulau Pinang"}]
+            if table=="school_districts":
+                self.assertEqual(query["state_name"],"eq.Pulau Pinang")
+                return [{"district_name":"PPD Seberang Perai Tengah"}]
+            self.assertEqual(query["state_name"],"eq.Pulau Pinang")
+            self.assertEqual(query["district_name"],"eq.PPD Seberang Perai Tengah")
+            return [{"school_code":"PBA0001","school_name":"SK BKT MERTAJAM",
+                     "school_level":"Rendah"}]
+        with patch("web.school_directory_store._read",side_effect=read):
+            self.assertEqual(states("https://db.example","test")[0],
+                             {"value":"Pulau Pinang","label":"PULAU PINANG"})
+            self.assertEqual(districts("https://db.example","test","Pulau Pinang")[0],
+                             {"value":"PPD Seberang Perai Tengah",
+                              "label":"PPD SEBERANG PERAI TENGAH"})
+            self.assertEqual(schools("https://db.example","test",
+                                     "Pulau Pinang","PPD Seberang Perai Tengah")[0]["label"],
+                             "SK BUKIT MERTAJAM")
+
     def test_cascade_reads_supabase_dimensions_without_exposing_keys(self):
         calls = []
         def read(url, secret, table, query, **kwargs):
