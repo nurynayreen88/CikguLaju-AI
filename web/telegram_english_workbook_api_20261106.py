@@ -130,7 +130,9 @@ def _student_book_material(runtime, year: int, lesson: int, *, root=ROOT):
                  "lesson_no": lesson, "_en98_selected_staging_row": source_row}
         selected = []
         for page in pages:
-            physical = int(physical_page(state, "textbook", page))
+            physical = physical_page(state, "textbook", page)
+            if type(physical) is not int or physical < 1:
+                return None
             matches = [row for row in chunks
                        if isinstance(row, (tuple, list)) and len(row) == 3
                        and type(row[0]) is int and type(row[1]) is int
