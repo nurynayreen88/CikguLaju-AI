@@ -12,7 +12,7 @@ from urllib.request import Request, build_opener
 
 from web.teacher_profile_store import NoRedirect
 
-_TABLES = frozenset(("school_states", "school_districts", "school_directory"))
+_TABLES = frozenset(("school_states", "school_districts", "school_directory", "school_logo_sources"))
 _CODE = re.compile(r"[A-Z0-9]{6,12}\Z")
 MAX_RESPONSE = 220000
 

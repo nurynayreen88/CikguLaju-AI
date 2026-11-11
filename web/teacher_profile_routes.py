@@ -161,6 +161,34 @@ def teacher_school_logo_get():
                      conditional=False)
 
 
+@bp.get("/api/web/teacher/school-logo-candidate")
+def teacher_school_logo_candidate():
+    """Fetch only the logo of the authenticated teacher's SAVED primary school.
+
+    No caller-controlled URL, school code, destination, or Supabase user ID.
+    An unsuccessful lookup is read-only and never touches existing logos.
+    """
+    conf, uid, err = _auth()
+    if err is not None:
+        return err
+    if request.args:
+        return jsonify({"error": "Parameter tambahan tidak dibenarkan"}), 400
+    from web.school_logo_candidate import logo_candidate, LogoSourceUnavailable
+    try:
+        profile = get_profile(conf["supabase_url"], conf["supabase_key"], uid)
+        code = profile.get("school_code") or ""
+        candidate = logo_candidate(conf["supabase_url"], conf["supabase_key"], code)
+    except (ProfileUnavailable, ProfileValidation):
+        return jsonify({"error": "Profil sekolah belum dapat disemak"}), 503
+    except LogoSourceUnavailable:
+        return jsonify({"error": "Sumber logo sekolah belum dapat dihubungi"}), 503
+    if candidate is None:
+        return jsonify({"error": "Logo automatik tiada untuk sekolah ini. Boleh muat naik sendiri."}), 404
+    data, mimetype = candidate
+    return send_file(BytesIO(data), mimetype=mimetype, max_age=0,
+                     conditional=False)
+
+
 @bp.post("/api/web/teacher/school-logo")
 def teacher_school_logo_put():
     conf, uid, err = _auth()
