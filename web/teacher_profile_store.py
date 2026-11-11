@@ -392,6 +392,10 @@ def save_profile(url, key, uid, form, *, opener=None):
             raise ProfileValidation("Muat semula profil dan pilih sekolah daripada senarai")
         from web.school_directory_store import full_school_name
         values["school_name"] = full_school_name(record["school_name"])
+    elif values["school_name"]:
+        # Backward-compatible Telegram/legacy calls without school_code:
+        # retain their existing free-text semantics but store uppercase.
+        values["school_name"] = values["school_name"].upper()
     rows = _class_records(record)
     byname = {r["name"].casefold(): r for r in rows}
     keep = {name.casefold() for name in values["class_names"]}
