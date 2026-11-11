@@ -1,0 +1,41 @@
+name: RPT2027 Recover complete Sains source sequences
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/rpt2027-science-source-recovery-20261110.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  discover-sains:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Identify reusable full Sains RPH/RPT sources, no writes
+        run: |
+          python - <<'PY'
+          import subprocess,collections,re,os,json
+          from pathlib import Path
+          names=subprocess.check_output(['git','ls-files'],text=True).splitlines()
+          focus=[s for s in names if re.search(r'sains|science|curriculum_master',s,re.I)]
+          print('SAINS_SOURCE_INVENTORY_TOTAL',len(focus),flush=True)
+          for name in focus[:220]:
+              try: size=Path(name).stat().st_size
+              except OSError: size=-1
+              print('SOURCE',size,name,flush=True)
+          for k in ('sequence','pdp','rpt','rph','official','db','.part','year2','tahun_2'):
+              subset=[name for name in focus if k in name.lower()]
+              print('SAINS_MATCH',k,len(subset),flush=True)
+          from tools.audit_sains_25_82_delta_20261106 import ROOT,SOURCES,load
+          import tempfile
+          with tempfile.TemporaryDirectory() as temp:
+              for version,filename in SOURCES.items():
+                  try:
+                      records=load(filename,ROOT,Path(temp))
+                      groups=collections.Counter(r.get('year_label') for r in records)
+                      unit_counts={year:len({str(r.get('unit_title')) for r in records if r.get('year_label')==year}) for year in groups}
+                      print('DB_SOURCE',version,'pdp',len(records),'years',dict(groups),'distinct_unit_titles',unit_counts,flush=True)
+                  except Exception as exc:
+                      print('DB_SOURCE_ERROR',version,type(exc).__name__,str(exc)[:180],flush=True)
+          PY
