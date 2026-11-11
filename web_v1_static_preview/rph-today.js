@@ -58,13 +58,43 @@
  }
  function updateAll(){
   const selectable=choices.filter(c=>c.slot.can_prepare);
+  const incomplete=selectable.filter(c=>!c.controls.lesson.value);
+  const busy=selectable.some(c=>c.busy);
   generateAll.disabled=loading||reviewing||!confirm.checked||!selectable.length||
-   selectable.some(c=>c.busy||!c.controls.lesson.value);
+   busy||incomplete.length>0;
   for(const c of choices){
    for(const name of TAGS){
     const select=c.controls[name];
     if(select&&!select.hidden&&select.dataset.ready==="1")
      select.disabled=reviewing||!select.dataset.hasOptions;
+   }
+  }
+  // Inform teachers why batch generation is disabled without changing the
+  // existing button, selection flow, or any generation/credit endpoints.
+  // Only saved timetable slot labels and source-backed selection states appear.
+  if(!loading&&!reviewing&&resultsHost.hidden){
+   const done=selectable.length-incomplete.length;
+   if(!selectable.length){
+    allStatus.textContent=choices.length
+     ?"Tiada slot dengan bahan disahkan untuk disediakan pada tarikh ini.":"";
+   }else if(busy){
+    allStatus.textContent=done+" daripada "+selectable.length+
+     " slot lengkap. Sedang menyemak pilihan kurikulum…";
+   }else if(incomplete.length){
+    const first=incomplete[0];
+    const noSource=Boolean(first.message.textContent)&&
+     first.controls.lesson.dataset.hasOptions!=="1";
+    allStatus.textContent=done+" daripada "+selectable.length+
+     " slot lengkap. "+(noSource
+      ?"Semak pilihan sumber untuk "+first.slot.class_name+" ("+first.slot.subject+")."
+      :"Pilih Lesson/PdP untuk "+first.slot.class_name+" ("+first.slot.subject+").")+
+     (incomplete.length>1?" Baki "+incomplete.length+" slot belum lengkap.":"");
+   }else if(!confirm.checked){
+    allStatus.textContent=done+" daripada "+selectable.length+
+     " slot lengkap. Sahkan hari PdP sebenar untuk meneruskan.";
+   }else{
+    allStatus.textContent=done+" daripada "+selectable.length+
+     " slot lengkap. Tekan Jana Bahan Semua Lesson untuk menyemak bahan.";
    }
   }
  }
