@@ -96,6 +96,7 @@ def _student_book_material(runtime, year: int, lesson: int, *, root=ROOT):
     if (year != 4 or type(lesson) is not int or not 1 <= lesson <= 160
             or runtime is None):
         return None
+    loader = getattr(runtime, "_en97_units", None)
     resolver = getattr(runtime, "_en34_verified_sb_pages_v25230", None)
     numbers = getattr(runtime, "_v25232_nums", None)
     physical_page = getattr(runtime, "_book_physical_page_v25237", None)
