@@ -73,7 +73,7 @@ class StudentBookYear4Materials(unittest.TestCase):
             root = Path(folder)
             book = root / "books" / "english"
             book.mkdir(parents=True)
-            path = book / "y4_student_book_001_015.pdf"
+            path = book / "y4_student_001_020.pdf"
             writer = PdfWriter()
             for _ in range(6):
                 writer.add_blank_page(width=200, height=200)
@@ -81,11 +81,18 @@ class StudentBookYear4Materials(unittest.TestCase):
             with path.open("wb") as handle:
                 writer.write(handle)
             runtime = SimpleNamespace(
-                _en34_verified_sb_pages_v25230=lambda row, y: "1–2",
+                _en97_units=lambda year: ([{"lesson_no": 17, "unit_name": "Our World"}], ["Our World"])
+                    if year == "Tahun 4" else ([], []),
+                _en34_verified_sb_pages_v25230=lambda row, y: "1–2"
+                    if row.get("unit_name") == "Our World" else "",
                 _v25232_nums=lambda raw: [1, 2],
-                _book_physical_page_v25237=lambda state, kind, page: page,
+                _book_physical_page_v25237=lambda state, kind, page:
+                    page if state.get("year") == "Tahun 4" and
+                            state.get("lesson_no") == 17 and
+                            state.get("_en98_selected_staging_row", {}).get("unit_name") == "Our World"
+                    else 0,
                 _EN_LOCAL_BOOK_CHUNKS_V25234={
-                    (4, "textbook"): [(1, 15, "books/english/y4_student_book_001_015.pdf")]
+                    (4, "textbook"): [(1, 20, "books/english/y4_student_001_020.pdf")]
                 },
             )
             material = _student_book_material(runtime, 4, 17, root=root)
@@ -94,6 +101,7 @@ class StudentBookYear4Materials(unittest.TestCase):
             self.assertEqual(len(PdfReader(BytesIO(pdf)).pages), 2)
             self.assertIsNone(_student_book_material(runtime, 3, 17, root=root))
             self.assertIsNone(_student_book_material(runtime, 4, 161, root=root))
+            self.assertIsNone(_student_book_material(runtime, 4, 18, root=root))
             # A page mapping that includes a whole resource range is rejected.
             runtime._v25232_nums = lambda raw: list(range(1, 25))
             self.assertIsNone(_student_book_material(runtime, 4, 17, root=root))
