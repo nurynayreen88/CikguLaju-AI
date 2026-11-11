@@ -15,6 +15,7 @@ from web.native_telegram_rph_client import BlockRedirects, NativeRPHUnavailable
 
 MUSIC_SOURCE = "telegram-provisional-subjects-2027-v1"
 WORKBOOK_SOURCE = "telegram-verified-english-workbook-v1"
+STUDENT_SOURCE = "telegram-verified-english-y4-student-book-v1"
 DRIVE_VIEW = re.compile(r"^https://drive\.google\.com/file/d/[A-Za-z0-9_-]{10,100}/view\?usp=drivesdk$")
 MUSIC_UNIT = re.compile(r"^(?:u(?:0[1-9]|[1-9][0-9])|x[a-f0-9]{12})$")
 MAX_PDF = 8 * 1024 * 1024
@@ -81,6 +82,36 @@ def english_workbook_pdf(year, lesson, *, opener=None):
                limit=MAX_PDF, opener=opener)
     if raw is None or len(raw) < 450 or not raw.startswith(b"%PDF-"):
         raise NativeRPHUnavailable("Verified Workbook PDF unavailable")
+    return raw
+
+
+def english_student_book_metadata(year, lesson, *, opener=None):
+    """Only metadata bound to the existing Telegram Y4 main-page source."""
+    if type(year) is not int or year != 4 or type(lesson) is not int or not 1 <= lesson <= 160:
+        raise ValueError("Unsupported verified Student Book selection")
+    data = _json("/internal/rph/v1/english-extras/student-book",
+                 {"year": year, "lesson": lesson}, opener=opener)
+    if data is None:
+        return None
+    if (data.get("source") != STUDENT_SOURCE or data.get("available") is not True
+            or data.get("year") != year or data.get("lesson") != lesson
+            or data.get("type") != "textbook" or data.get("format") != "pdf"
+            or data.get("status") != "VERIFIED_SOURCE"
+            or not isinstance(data.get("title"), str)
+            or not 10 <= len(data["title"]) <= 220):
+        raise NativeRPHUnavailable("Student Book source identity mismatch")
+    return data["title"]
+
+
+def english_student_book_pdf(year, lesson, *, opener=None):
+    """Authorized exact-page PDF, never a whole book or unverified page."""
+    if type(year) is not int or year != 4 or type(lesson) is not int or not 1 <= lesson <= 160:
+        raise ValueError("Unsupported verified Student Book selection")
+    raw = _get("/internal/rph/v1/english-extras/student-book.pdf",
+               {"year": year, "lesson": lesson}, accept="application/pdf",
+               limit=MAX_PDF, opener=opener)
+    if raw is None or len(raw) < 450 or not raw.startswith(b"%PDF-"):
+        raise NativeRPHUnavailable("Verified Student Book PDF unavailable")
     return raw
 
 
