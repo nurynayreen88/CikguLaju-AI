@@ -1,11 +1,11 @@
 """Rakan Pembangun Early Bird percentage display. No public quota/count disclosure.
 
 Only pass the count of distinct, confirmed and active Rakan Pembangun members.
-The 200-place denominator is internal and must never appear in UI strings.
+The 500-place denominator is internal and must never appear in UI strings.
 """
 from decimal import Decimal, ROUND_HALF_UP
 
-_PIONEER_CAPACITY = 200
+_PIONEER_CAPACITY = 500
 
 def pioneer_percentage(active_confirmed_count: int) -> str:
     """Return a one-decimal percentage with safe bounds."""
@@ -22,6 +22,6 @@ def pioneer_details(active_confirmed_count: int) -> str:
     return (
         f"🏆 RAKAN PEMBANGUN EARLY BIRD\n"
         f"{pioneer_percentage(active_confirmed_count)} telah menyertai\n\n"
-        "💰 RM10 sekali bayar\n"
+        "💰 RM20 sekali bayar\n"
         "Akses sepanjang CikguLaju AI beroperasi tanpa yuran bulanan atau tahunan."
     )
