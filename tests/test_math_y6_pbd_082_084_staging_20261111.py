@@ -87,6 +87,11 @@ class Year6MathPbdStageTests(unittest.TestCase):
         self.assertEqual((28//7)*4,16)
         for answer in ("2 : 3","3 : 1","5 × 4 = 20","4 × 4 = 16"):
             self.assertIn(answer,key)
+        self.assertIn("bunga putih `5 × 4 = 20` kuntum", key)
+        self.assertIn("bunga merah kepada bunga putih", pupil)
+        self.assertNotIn("20 kuntum", pupil)
+        self.assertIn("bunga putih", self.rph)
+        self.assertIn("1.5 L kepada 500 mL", self.rph)
 
     def test_084_two_step_word_problems_are_mathematically_coherent(self):
         pupil,key=self.pupils["084"],self.keys["084"]
