@@ -126,10 +126,11 @@ def _student_book_material(runtime, year: int, lesson: int, *, root=ROOT):
         if not isinstance(chunks, (list, tuple)):
             return None
         books = (Path(root) / "books" / "english").resolve()
+        state = {"year": "Tahun 4", "subject": "English",
+                 "lesson_no": lesson, "_en98_selected_staging_row": source_row}
         selected = []
         for page in pages:
-            physical = int(physical_page({"year": "Year 4", "subject": "English"},
-                                         "textbook", page))
+            physical = int(physical_page(state, "textbook", page))
             matches = [row for row in chunks
                        if isinstance(row, (tuple, list)) and len(row) == 3
                        and type(row[0]) is int and type(row[1]) is int
