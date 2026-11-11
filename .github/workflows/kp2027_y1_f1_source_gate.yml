@@ -1,0 +1,43 @@
+name: KP2027 Year 1 and Form 1 Source Integrity
+
+on:
+  pull_request:
+    paths:
+      - 'curriculum/kp2027/**'
+      - 'web/kp2027_status_api.py'
+      - 'tests/test_kp2027_*.py'
+      - '.github/workflows/kp2027_y1_f1_source_gate.yml'
+  workflow_dispatch:
+
+jobs:
+  kp2027-source-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install API test dependency
+        run: python -m pip install 'Flask==3.1.0'
+      - name: Verify all new-curriculum choices are source-gated
+        run: python -m unittest discover -s tests -p 'test_kp2027_y1_f1_source_gate_20261106.py' -v
+
+      - name: Verify original editorial candidates remain non-public
+        run: python -m unittest discover -s tests -p 'test_kp2027_candidate_rph_20261107.py' -v
+      - name: Verify Year 1 only candidate package
+        run: python -m unittest discover -s tests -p 'test_kp2027_year1_focus_20261107.py' -v
+      - name: Verify 36 Year 1 candidates and BM/Math training evidence gates
+        run: python -m unittest discover -s tests -p 'test_kp2027_year1_training_evidence_20261107.py' -v
+      - name: Verify Year 1 BM SK teaching drafts and Math source count discrepancy
+        run: python -m unittest discover -s tests -p 'test_kp2027_y1_training_alignment_20261107.py' -v
+      - name: Audit 26 BM Tahun 1 SK training candidates and prevent false READY
+        run: python -m unittest discover -s tests -p 'test_kp2027_year1_bm_sk_26_source_20261107.py' -v
+      - name: Verify Bahasa Melayu Tahun 1 original DK hold remains enforced
+        run: python -m unittest discover -s tests -p 'test_kp2027_year1_bm_sk_final_dk_hold_20261109.py' -v
+      - name: Verify Matematik Tahun 1 DK search remains evidence-gated
+        run: python -m unittest discover -s tests -p 'test_kp2027_year1_math_dk_search_20261108.py' -v
+      - name: Verify 2027 Year 1 textbook leads stay unverified and non-public
+        run: python -m unittest discover -s tests -p 'test_kp2027_year1_textbook_leads_20261108.py' -v

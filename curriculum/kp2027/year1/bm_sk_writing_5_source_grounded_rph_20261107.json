@@ -1,0 +1,302 @@
+{
+  "schema_version": "1.0",
+  "curriculum": "KP2027",
+  "level": "Tahun 1",
+  "school_type": "SK",
+  "subject": "Bahasa Melayu",
+  "skill": "Menulis",
+  "date": "2026-11-07",
+  "status": "DRAFT_HOLD_NOT_READY",
+  "source": {
+    "title": "SLOT 5-8 KUPAS DAN KUASAI KEMAHIRAN-compressed.pdf",
+    "url": "https://drive.google.com/file/d/1OYy3lh95ifjf31ymPuwF-zLOcfkYF1Jv/view",
+    "sha256": "447b499db78253c4c3f0559afa791691a010c58d076666917a060531b9637691",
+    "kind": "BPK_PENATARAN_NOT_FINAL_DK"
+  },
+  "release_gate": {
+    "final_dk_verified": false,
+    "school_stream_checked_in_training": false,
+    "approved_rph_count": 0,
+    "rpt_scheduled": false,
+    "production_disabled": true
+  },
+  "records": [
+    {
+      "id": "KP27-Y1-BM-SK-TULIS-C01",
+      "candidate_sequence": 1,
+      "sp_training_code": "4.1.1",
+      "sp_training_text": "Melakar pelbagai bentuk atau corak yang sesuai.",
+      "sp_training_page_numbers": [
+        104
+      ],
+      "sp_final_dk_verified": false,
+      "official_sp": null,
+      "official_sk": null,
+      "official_spi": null,
+      "title": "Corak Garis dan Bentuk",
+      "objective_candidate": "Murid melakar sekurang-kurangnya tiga jenis garis atau corak dengan pergerakan tangan terkawal.",
+      "materials": [
+        "Kad bentuk",
+        "dulang pasir bersih atau papan putih",
+        "pensel segi tiga",
+        "kertas A4"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru melakar garis lurus, melengkung dan beralun pada papan dan meminta murid memerhati arah pergerakan.",
+          "pupil_action": "Murid mengikut pergerakan dengan jari di udara dan menamakan perbezaan tiga corak."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru menunjukkan cara memegang alat dan melakar corak besar dengan titik permulaan yang jelas.",
+          "pupil_action": "Murid melakar tiga corak pada permukaan yang sesuai dan memeriksa arah garis."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru memberi cabaran mencantum corak menjadi gambar objek kelas tanpa menilai kemahiran seni secara berlebihan.",
+          "pupil_action": "Murid melakar corak sendiri, membanding dengan kad contoh dan membaiki satu bahagian."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru mengumpul bukti lakaran serta memberi maklum balas kepada setiap murid tentang kawalan tangan.",
+          "pupil_action": "Murid memilih satu corak terbaik dan menerangkan cara melakarnya."
+        }
+      ],
+      "formative_assessment": "Tiga corak atau bentuk boleh dikenal pasti dan pergerakan tangan yang terkawal.",
+      "differentiation": "Beri titik mula dan garisan besar; pengayaan gabungkan corak menjadi rangka hiasan.",
+      "character_values": [
+        "Ketekunan",
+        "kreativiti"
+      ],
+      "school_type": "SK",
+      "minutes": null,
+      "ready": false,
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-TULIS-C02",
+      "candidate_sequence": 2,
+      "sp_training_code": "4.1.2",
+      "sp_training_text": "Membentuk dan menekap abjad dengan betulnya.",
+      "sp_training_page_numbers": [
+        104
+      ],
+      "sp_final_dk_verified": false,
+      "official_sp": null,
+      "official_sk": null,
+      "official_spi": null,
+      "title": "Bentuk Huruf dengan Bahan Selamat",
+      "objective_candidate": "Murid membentuk dan menekap empat abjad menggunakan bahan manipulatif serta mengikut arah yang ditunjuk guru.",
+      "materials": [
+        "Kad abjad bercetak besar",
+        "jalur kertas",
+        "doh tidak toksik",
+        "helaian menekap"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menunjukkan satu huruf daripada kad nama rekaan dan meminta murid mengesan bentuk menggunakan jari.",
+          "pupil_action": "Murid mengikuti bentuk huruf di udara serta mengenal titik mula."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel membentuk huruf menggunakan doh dan jalur kertas yang selamat lalu menekap di atas helaian.",
+          "pupil_action": "Murid membina dua huruf, menekapnya dan membetulkan bentuk apabila tersasar."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru menyediakan dua huruf lain dan membimbing pasangan membezakan bentuk yang hampir sama.",
+          "pupil_action": "Murid membentuk, menekap dan membanding empat huruf dengan kad sumber."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru mengadakan semakan individu dengan dua huruf rawak dan menyimpan contoh kerja.",
+          "pupil_action": "Murid menekap kedua-dua huruf mengikut bentuk yang betul dan membuat refleksi kendiri."
+        }
+      ],
+      "formative_assessment": "Empat huruf dibentuk/ditekap dengan bentuk yang boleh dicam; catatan arah strok guru.",
+      "differentiation": "Kad titik dan helaian besar untuk sokongan; murid cepat membentuk huruf tanpa acuan.",
+      "character_values": [
+        "Ketelitian",
+        "berdikari"
+      ],
+      "school_type": "SK",
+      "minutes": null,
+      "ready": false,
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-TULIS-C03",
+      "candidate_sequence": 3,
+      "sp_training_code": "4.1.3",
+      "sp_training_text": "Menyalin abjad, suku kata, perkataan, frasa dan ayat.",
+      "sp_training_page_numbers": [
+        104,
+        105
+      ],
+      "sp_final_dk_verified": false,
+      "official_sp": null,
+      "official_sk": null,
+      "official_spi": null,
+      "title": "Salin dari Huruf ke Ayat",
+      "objective_candidate": "Murid menyalin satu set abjad, suku kata, perkataan, frasa dan ayat pendek dengan tulisan yang boleh dibaca.",
+      "materials": [
+        "Kad abjad",
+        "kad perkataan",
+        "frasa dan ayat asli",
+        "kertas berbaris",
+        "pensel"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menunjukkan perbezaan tulisan yang jelas dan kurang jelas tanpa memalukan murid.",
+          "pupil_action": "Murid menyatakan mengapa jarak dan bentuk huruf membantu pembaca."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel cara menyalin abjad dan suku kata pada garisan dengan ruang mencukupi.",
+          "pupil_action": "Murid menyalin abjad dan suku kata lalu memeriksa tinggi serta jarak."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru membimbing peralihan daripada perkataan kepada frasa dan ayat menggunakan model yang berkaitan kelas.",
+          "pupil_action": "Murid menyalin satu perkataan, satu frasa dan satu ayat serta menyemak dengan kad sumber."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru menyemak lima jenis unit tulisan dalam lembaran individu serta menanda satu penambahbaikan.",
+          "pupil_action": "Murid memperbetul satu bahagian tulisan selepas maklum balas dan membaca ayat yang disalin."
+        }
+      ],
+      "formative_assessment": "Set abjad, suku kata, perkataan, frasa dan ayat yang boleh dibaca dengan jarak sesuai.",
+      "differentiation": "Benarkan pembesaran baris bagi sokongan; murid maju menyalin ayat tambahan tanpa menukar sasaran standard.",
+      "character_values": [
+        "Kemas",
+        "sabar"
+      ],
+      "school_type": "SK",
+      "minutes": null,
+      "ready": false,
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-TULIS-C04",
+      "candidate_sequence": 4,
+      "sp_training_code": "4.2.1",
+      "sp_training_text": "Menggabungkan dan membentuk suku kata, perkataan, dan frasa.",
+      "sp_training_page_numbers": [
+        109
+      ],
+      "sp_final_dk_verified": false,
+      "official_sp": null,
+      "official_sk": null,
+      "official_spi": null,
+      "title": "Kereta Api Suku Kata",
+      "objective_candidate": "Murid menggabungkan kad suku kata untuk membentuk sekurang-kurangnya tiga perkataan dan dua frasa bermakna.",
+      "materials": [
+        "Kad suku kata bercetak",
+        "gambar objek sekolah",
+        "kad perkataan",
+        "jalur kereta api kertas"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menunjukkan dua kad suku kata terpisah lalu meminta murid meneka perkataan apabila digabungkan.",
+          "pupil_action": "Murid menyebut bunyi, membanding dua susunan kad dan menjelaskan mana yang bermakna."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel gabungan suku kata kepada perkataan menggunakan kad berwarna.",
+          "pupil_action": "Murid membina tiga perkataan berdasarkan kad gambar dan menyemak sebutan bersama rakan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru membimbing gabungan dua perkataan kepada frasa pada jalur kereta api kertas.",
+          "pupil_action": "Murid membina dua frasa, membaca dengan jelas dan menerangkan makna ringkasnya."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memberi kad rawak baharu untuk kerja individu dan mengumpul bukti pembinaan.",
+          "pupil_action": "Murid membina satu perkataan serta satu frasa tanpa melihat contoh susunan asal."
+        }
+      ],
+      "formative_assessment": "Tiga perkataan dan dua frasa terbina daripada suku kata dengan makna relevan.",
+      "differentiation": "Kad warna mengikut suku kata bagi sokongan; pengayaan pelbagaikan frasa berdasarkan gambar.",
+      "character_values": [
+        "Kerjasama",
+        "pemikiran"
+      ],
+      "school_type": "SK",
+      "minutes": null,
+      "ready": false,
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false
+    },
+    {
+      "id": "KP27-Y1-BM-SK-TULIS-C05",
+      "candidate_sequence": 5,
+      "sp_training_code": "4.2.2",
+      "sp_training_text": "Membina dan menulis ayat dengan menggunakan binaan ayat yang betul.",
+      "sp_training_page_numbers": [
+        109,
+        110
+      ],
+      "sp_final_dk_verified": false,
+      "official_sp": null,
+      "official_sk": null,
+      "official_spi": null,
+      "title": "Susun, Bina dan Tulis Ayat",
+      "objective_candidate": "Murid membina serta menulis dua ayat ringkas bermakna dengan binaan yang sesuai berdasarkan gambar.",
+      "materials": [
+        "Kad perkataan subjek dan perbuatan",
+        "kad gambar sekolah",
+        "kertas berbaris"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru memperlihatkan gambar murid membaca di kelas dan dua susunan perkataan berlainan.",
+          "pupil_action": "Murid memilih susunan yang membawa makna serta menyebut sebab."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru membimbing pembinaan satu ayat berdasarkan kad gambar dan memodel huruf besar serta titik secara kontekstual.",
+          "pupil_action": "Murid menyusun kad perkataan untuk membina ayat serta membaca hasilnya."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru memberikan gambar baharu untuk pembinaan ayat kedua dengan pilihan kosa kata yang sesuai.",
+          "pupil_action": "Murid menulis dua ayat, menyemak binaan dengan pasangan dan membetulkan kesalahan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru menilai dua ayat bertulis secara individu dengan kriteria susunan dan kejelasan mesej.",
+          "pupil_action": "Murid membaca ayat sendiri, membetulkan satu binaan dan menyatakan pelajaran hari ini."
+        }
+      ],
+      "formative_assessment": "Dua ayat ringkas tersusun, bermakna dan boleh dibaca.",
+      "differentiation": "Bingkai ayat subjek-perbuatan bagi sokongan; pengayaan membina ayat dengan maklumat tambahan.",
+      "character_values": [
+        "Ketekunan",
+        "komunikasi jelas"
+      ],
+      "school_type": "SK",
+      "minutes": null,
+      "ready": false,
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false
+    }
+  ]
+}
