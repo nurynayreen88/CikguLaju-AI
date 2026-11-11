@@ -166,6 +166,23 @@ class TeacherProfileHttpTests(unittest.TestCase):
 
 
 class WebTeacherProfileUiTests(unittest.TestCase):
+    def test_profile_guide_uses_only_saved_data_and_does_not_block_rph(self):
+        from pathlib import Path
+        root=Path(__file__).resolve().parents[1]/"web_v1_static_preview"
+        html=(root/"index.html").read_text("utf-8")
+        js=(root/"teacher-profile.js").read_text("utf-8")
+        self.assertIn('id="profile-setup-status"',html)
+        self.assertIn('id="profile-setup-next"',html)
+        self.assertIn("RPH biasa masih boleh dicuba",html)
+        self.assertIn("function savedProfileReadiness()",js)
+        self.assertIn("teacherProfileState.savedProfile",js)
+        self.assertIn("teacherProfileState.savedPeriods>0",js)
+        self.assertIn("teacherProfileState.loaded=true;",js)
+        self.assertIn("renderProfileReadiness();",js)
+        self.assertIn('profileSetupNext.addEventListener("click"',js)
+        self.assertNotIn("fetch('/api/web/teacher/profile-readiness",js)
+        self.assertNotIn("supabase_key",js)
+
     def test_profile_fields_and_schedule_editor_are_present(self):
         from pathlib import Path
         html=(Path(__file__).resolve().parents[1]/"web_v1_static_preview"/"index.html").read_text(encoding="utf-8")
@@ -173,7 +190,7 @@ class WebTeacherProfileUiTests(unittest.TestCase):
                       "teacher-profile-form","timetable-rows","timetable-add",
                       "timetable-save","profile-save","profile-access-summary"):
             self.assertIn('id="'+ident+'"',html)
-        self.assertIn('src="/assets/teacher-profile.js?v=teacher-uppercase-20261111"',html)
+        self.assertIn('src="/assets/teacher-profile.js?v=profile-guide-20261111"',html)
         self.assertIn("loadTeacherProfile();",html)
         self.assertIn('id="view-rpt"',html)
         self.assertIn('id="view-rph"',html)
