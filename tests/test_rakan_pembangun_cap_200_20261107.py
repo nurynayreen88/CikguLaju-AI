@@ -1,16 +1,17 @@
-"""Regression: single batch-1 capacity shared by UI, backend and Supabase."""
+"""Regression: 500 member current capacity; historical 200 migration remains immutable."""
 import unittest
 from pathlib import Path
 from pioneer_percentage import pioneer_percentage
 from pioneer_supabase import PIONEER_LIMIT, pioneer_availability
 
 
-class RakanCap200Tests(unittest.TestCase):
+class RakanCap500Tests(unittest.TestCase):
     def test_boundary_and_clamp(self):
-        self.assertEqual(PIONEER_LIMIT,200)
+        self.assertEqual(PIONEER_LIMIT,500)
         for count,remaining,percent in (
-            (0,200,"0.0%"),(1,199,"0.5%"),(7,193,"3.5%"),
-            (199,1,"99.5%"),(200,0,"100.0%"),(201,0,"100.0%")
+            (0,500,"0.0%"),(1,499,"0.2%"),(7,493,"1.4%"),
+            (199,301,"39.8%"),(200,300,"40.0%"),(499,1,"99.8%"),
+            (500,0,"100.0%"),(501,0,"100.0%")
         ):
             with self.subTest(count=count):
                 self.assertEqual(pioneer_availability(
@@ -35,7 +36,7 @@ class RakanCap200Tests(unittest.TestCase):
              ).read_text("utf-8")
         self.assertIn("if remaining == 0:",code)
         self.assertIn("if not pending and pioneer_availability(sb)[1] == 0:",code)
-        self.assertIn("Rakan Pembangun batch pertama sudah penuh",code)
+        self.assertIn("Rakan Pembangun sudah penuh",code)
 
 
 if __name__=="__main__":
