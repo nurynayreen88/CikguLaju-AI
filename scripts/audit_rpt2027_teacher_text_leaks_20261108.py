@@ -77,9 +77,17 @@ def _parts(path: Path):
 def scan_file(path: Path) -> list[dict]:
     """Scan every extractable PDF page or text file, retaining exact file/page."""
     findings = []
+    is_pdf = path.suffix.lower() == ".pdf"
+    has_extractable_text = False
     for page_number, text in _parts(path):
+        # A scanned/image-only PDF can contain visible editorial notes but
+        # produce zero searchable words. Never certify it as a clean RPT.
+        if is_pdf and re.search(r"\\w", text):
+            has_extractable_text = True
         for item in find_internal_notes(text):
             findings.append({"file": str(path), "page": page_number, **item})
+    if is_pdf and not has_extractable_text:
+        raise ValueError("PDF has no extractable text; manual visual review required")
     return findings
 
 
