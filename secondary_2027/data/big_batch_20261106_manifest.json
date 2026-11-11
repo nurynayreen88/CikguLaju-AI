@@ -1,0 +1,48 @@
+{
+  "created_date": "2026-11-06",
+  "release_status": "DRAF_SEMAK_INDIVIDU_BUKU_TEKS",
+  "for_runtime": false,
+  "warning": "DO NOT IMPORT older five-lesson pilot alongside batch T2; choose one source; do not merge until individual audits",
+  "series": [
+    {
+      "tingkatan": 2,
+      "rph_count": 120,
+      "file": "bm_t2_pdp_001_120_staging.json",
+      "source": "https://docs.google.com/document/d/19Hb9U6gY_ghzVUF-B6_U-ks6C64v7qEC/edit",
+      "source_dskp": "https://drive.google.com/file/d/1xtVFZirPVpMV6GMCs2ZNO46dBX0xl4iw/view",
+      "flagged_count": 7,
+      "issues": {
+        "PAGE_ORDER_REVIEW": 2,
+        "CURATED_ORIGINAL_PILOT": 5,
+        "BOOK_TEXT_PENDING": 5
+      },
+      "distinct_title_count": 120
+    },
+    {
+      "tingkatan": 3,
+      "rph_count": 60,
+      "file": "bm_t3_pdp_001_060_staging.json",
+      "source": "https://docs.google.com/document/d/1iRVbaH_kHD8K3IlLPIXsguVEUs3Bk0D4/edit",
+      "source_dskp": "https://drive.google.com/file/d/1WkLzsgqz9pbqC2fIblmRI7oAI8aMnhvO/view",
+      "flagged_count": 17,
+      "issues": {
+        "SKILL_SP_CATEGORY_MISMATCH": 14,
+        "RPT_SP_TEXT_DISCREPANCY": 1,
+        "PAGE_ORDER_REVIEW": 3
+      },
+      "distinct_title_count": 60
+    }
+  ],
+  "prior_pilot_overlap": {
+    "tingkatan": 2,
+    "pdp": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "action": "PDP 1-5 are included with their individually authored activities in the 120-record pack. Keep the separate pilot as archive; import only the 120-record pack when approved."
+  },
+  "rollout": "Manual audit each record; validate source book and the actual SP text, then QA render Word/PDF and integrate additive; no Telegram/Web changes in this PR."
+}

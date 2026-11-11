@@ -1,0 +1,438 @@
+{
+  "index_version": "2026-11-07-v2-corrected",
+  "method": "T5 printed-to-PDF offset verified against page image (PDF page27 = printed page 3); Form 5 offset 24, not 26. SP text codes verified per printed page in PDF. Some headings are split in PDF text, hence TOC/page facing layout used. T4 offset 22.",
+  "content_distributed": false,
+  "source": {
+    "4": {
+      "drive_file_id": "1kXLu1ndQeE4BHvp1AWxnBpEIUI0oQjkY",
+      "title": "Bahasa_Melayu_Tingkatan_4.pdf",
+      "source_kind": "KSSM textbook",
+      "page_offset": 22,
+      "codes": {
+        "1.1.1": [
+          3,
+          "Kitalah Juara!"
+        ],
+        "1.1.2": [
+          9,
+          "Lautan Api Kurenangi"
+        ],
+        "1.2.1": [
+          29,
+          "Kerjaya di Awan Biru"
+        ],
+        "1.3.1": [
+          45,
+          "Semerah Rozel"
+        ],
+        "1.3.2": [
+          59,
+          "Rumah Pasang Siap"
+        ],
+        "1.4.1": [
+          73,
+          "Malaysia Syurga Makanan"
+        ],
+        "1.4.2": [
+          65,
+          "Menghadapi Rintangan"
+        ],
+        "1.5.1": [
+          103,
+          "Rumah Pusaka Sutan Mangatas"
+        ],
+        "1.5.2": [
+          117,
+          "Bukan Sebarang Seniman"
+        ],
+        "1.5.3": [
+          35,
+          "Menjulang Potensi Diri"
+        ],
+        "1.6.1": [
+          123,
+          "Menu Malaysia di Serata Dunia"
+        ],
+        "1.7.1": [
+          161,
+          "Ekspresi Diri"
+        ],
+        "1.7.2": [
+          169,
+          "Hutan Kecilku"
+        ],
+        "1.8.1": [
+          191,
+          "Ikrar Anda, Harapan Mereka"
+        ],
+        "1.8.2": [
+          205,
+          "Bahasa Alam"
+        ],
+        "2.1.1": [
+          5,
+          "Menawan Samudera"
+        ],
+        "2.1.2": [
+          11,
+          "Tangan yang Menggoncang Dunia"
+        ],
+        "2.2.1": [
+          19,
+          "Bahasa Melayu di Persada Dunia"
+        ],
+        "2.3.1": [
+          37,
+          "Harapan Setinggi Gunung"
+        ],
+        "2.3.2": [
+          89,
+          "Jebak Digital"
+        ],
+        "2.3.3": [
+          111,
+          "Tercatat dalam Sejarah"
+        ],
+        "2.3.4": [
+          149,
+          "Mendung Beralih Jua"
+        ],
+        "2.3.5": [
+          177,
+          "Patah Dagu Bertongkat Paruh"
+        ],
+        "2.4.1": [
+          139,
+          "Pencinta Bahasa"
+        ],
+        "3.1.1": [
+          7,
+          "Jutawan Sukan"
+        ],
+        "3.2.1": [
+          21,
+          "Evolusi Pembelajaran Sepanjang Hayat"
+        ],
+        "3.3.1": [
+          53,
+          "Sinar Baharu Penternak Jaya"
+        ],
+        "3.4.1": [
+          67,
+          "Maju dalam Industri Mutakhir"
+        ],
+        "3.4.2": [
+          77,
+          "Warisan Dunia"
+        ],
+        "3.4.3": [
+          95,
+          "Tentang Bulan"
+        ],
+        "3.4.4": [
+          107,
+          "Sejarah Mendewasakan Kita"
+        ],
+        "3.4.5": [
+          121,
+          "Amalan Hidup Bermasyarakat"
+        ],
+        "3.5.1": [
+          135,
+          "Bahasa Murni, Wajah Peribadi"
+        ],
+        "3.5.2": [
+          165,
+          "Indahnya Terapeutik"
+        ],
+        "3.6.1": [
+          125,
+          "Misi Kemanusiaan"
+        ],
+        "4.1.1": [
+          11,
+          "Tangan yang Menggoncang Dunia"
+        ],
+        "4.1.2": [
+          33,
+          "Dari Titik ke Titik"
+        ],
+        "4.2.1": [
+          65,
+          "Menghadapi Rintangan"
+        ],
+        "4.3.1": [
+          93,
+          "Gema Belantara"
+        ],
+        "4.3.2": [
+          135,
+          "Bahasa Murni, Wajah Peribadi"
+        ],
+        "4.4.1": [
+          121,
+          "Amalan Hidup Bermasyarakat"
+        ],
+        "4.4.2": [
+          177,
+          "Patah Dagu Bertongkat Paruh"
+        ],
+        "4.4.3": [
+          207,
+          "Futuris"
+        ],
+        "5.1.1": [
+          5,
+          "Menawan Samudera"
+        ],
+        "5.1.2": [
+          25,
+          "Membawa Dunia ke Bilik Darjah"
+        ],
+        "5.1.3": [
+          37,
+          "Harapan Setinggi Gunung"
+        ],
+        "5.2.1": [
+          49,
+          "Realisasikan Impian"
+        ],
+        "5.2.2": [
+          61,
+          "Khazanah Hutan Bakau"
+        ],
+        "5.2.3": [
+          89,
+          "Jebak Digital"
+        ],
+        "5.2.4": [
+          105,
+          "Darah Sateria"
+        ],
+        "5.3.1": [
+          155,
+          "Simpan, Labur, dan Untung!"
+        ],
+        "5.3.2": [
+          169,
+          "Hutan Kecilku"
+        ],
+        "5.3.3": [
+          181,
+          "Panorama Diorama"
+        ],
+        "5.3.4": [
+          213,
+          "Inovasi 5G"
+        ]
+      }
+    },
+    "5": {
+      "drive_file_id": "1vHicn5bs9xAIcETkearILtLo9-VIpZyj",
+      "title": "Bahasa Melayu Tingkatan 5 KSSM.pdf",
+      "source_kind": "KSSM textbook",
+      "page_offset": 24,
+      "codes": {
+        "1.1.1": [
+          3,
+          "Cergaskan Dirimu"
+        ],
+        "1.1.2": [
+          9,
+          "Bersih Itu Indah"
+        ],
+        "1.2.1": [
+          23,
+          "Dari Petak ke Petak"
+        ],
+        "1.3.1": [
+          31,
+          "Suka-suka Menjadi Kerjaya"
+        ],
+        "1.3.2": [
+          37,
+          "Ajaibnya Kuasa Tangan"
+        ],
+        "1.4.1": [
+          43,
+          "Bulat Air kerana Pembetung"
+        ],
+        "1.4.2": [
+          49,
+          "Uniknya Rakyat Malaysia"
+        ],
+        "1.5.1": [
+          57,
+          "Mendidik Insan Istimewa"
+        ],
+        "1.5.2": [
+          63,
+          "Demi Masa Hadapan"
+        ],
+        "1.6.1": [
+          73,
+          "Sisa yang Bermanfaat"
+        ],
+        "1.7.1": [
+          79,
+          "Kecil tetapi Raksasa"
+        ],
+        "1.7.2": [
+          85,
+          "Penawar dalam Sajian"
+        ],
+        "1.8.1": [
+          91,
+          "Rona Akuatik"
+        ],
+        "1.8.2": [
+          99,
+          "Lestarikan Keindahan Bumi Kita"
+        ],
+        "2.1.1": [
+          5,
+          "Kawal Sebelum Tular"
+        ],
+        "2.1.2": [
+          11,
+          "Kebersihan Jadi Amalan"
+        ],
+        "2.2.1": [
+          19,
+          "Sama tetapi Tidak Serupa"
+        ],
+        "2.3.1": [
+          33,
+          "Tuah di Sebalik Bungkusan"
+        ],
+        "2.3.2": [
+          113,
+          "Untung Besar"
+        ],
+        "2.3.3": [
+          45,
+          "Wisma Putra"
+        ],
+        "2.3.4": [
+          51,
+          "Tak Kenal maka Tak Cinta"
+        ],
+        "2.3.5": [
+          65,
+          "Pendidikan Asas Kemajuan"
+        ],
+        "2.4.1": [
+          75,
+          "Inovasi"
+        ],
+        "3.1.1": [
+          7,
+          "Seni Memberikan Erti"
+        ],
+        "3.2.1": [
+          21,
+          "Gerakkan Kakimu"
+        ],
+        "3.3.1": [
+          25,
+          "Mencandat Sotong"
+        ],
+        "3.4.1": [
+          35,
+          "Berkhidmat untuk Negara"
+        ],
+        "3.4.2": [
+          47,
+          "Aman Makmur Malaysia"
+        ],
+        "3.4.3": [
+          61,
+          "Membina Sahsiah Unggul"
+        ],
+        "3.5.1": [
+          77,
+          "Indahnya Bimasakti"
+        ],
+        "3.5.2": [
+          81,
+          "Hakikat Pokok Pisang"
+        ],
+        "3.6.1": [
+          103,
+          "Indahnya Negaraku"
+        ],
+        "4.1.1": [
+          11,
+          "Kebersihan Jadi Amalan"
+        ],
+        "4.1.2": [
+          37,
+          "Ajaibnya Kuasa Tangan"
+        ],
+        "4.2.1": [
+          51,
+          "Tak Kenal maka Tak Cinta"
+        ],
+        "4.3.1": [
+          81,
+          "Hakikat Pokok Pisang"
+        ],
+        "4.3.2": [
+          89,
+          "Pasaran dan Pemasaran"
+        ],
+        "4.4.1": [
+          105,
+          "Lenggong, Oh, Lenggong!"
+        ],
+        "4.4.2": [
+          117,
+          "Dari Kopitiam ke Kafe Hipster"
+        ],
+        "4.4.3": [
+          145,
+          "Negara Sentosa, Rakyat Selesa"
+        ],
+        "5.1.1": [
+          5,
+          "Kawal Sebelum Tular"
+        ],
+        "5.1.2": [
+          19,
+          "Sama tetapi Tidak Serupa"
+        ],
+        "5.1.3": [
+          35,
+          "Berkhidmat untuk Negara"
+        ],
+        "5.2.1": [
+          45,
+          "Wisma Putra"
+        ],
+        "5.3.1": [
+          59,
+          "Tiada Tercicir, Tiada Terpinggir"
+        ],
+        "5.3.2": [
+          75,
+          "Inovasi"
+        ],
+        "5.3.3": [
+          87,
+          "Kluq! Kluq! Kluq!"
+        ],
+        "5.3.4": [
+          101,
+          "Mutiara yang Bersinar"
+        ]
+      }
+    }
+  },
+  "extraction_anomalies": [
+    "T4 2.3.12",
+    "T4 4.2.14",
+    "T5 2.3.22"
+  ],
+  "release_gate": "Not READY. Page/code presence verified; individual lesson relevance, printed text accuracy, 2027 RPT mapping, Word/PDF layout require manual review.",
+  "correction_audit": "Corrected all 48 T5 SP-page-title anchors and two T4 title mappings; do not use former index version."
+}
