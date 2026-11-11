@@ -38,6 +38,7 @@ jobs:
           from tools.run_web_production import app
           writer = PdfWriter()
           writer.add_blank_page(width=612, height=792)
+          writer.add_metadata({"/Title": "Runtime preflight " + "x" * 700})
           buffer = BytesIO()
           writer.write(buffer)
           assert _verified_short_pdf(buffer.getvalue(), "Workbook")
