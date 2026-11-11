@@ -1,0 +1,77 @@
+{
+  "schema": "cikgulaju_pi_editor_only_held_quran_candidate_v1",
+  "lesson_id": "T2-L035",
+  "subject": "Pendidikan Islam",
+  "year": 2,
+  "lesson": 35,
+  "publication": "HOLD",
+  "verified_ready": false,
+  "allowed_in_teacher_web_or_telegram": false,
+  "source_provenance": {
+    "source_rpt2027_drive_id": "1R2FNyT0CYb_WTMiw99lnZW9GuPaatz8w",
+    "source_rpt2027_sha256": "86a8e6fb599eb0f65f3a0a888cb29d636223c75896718d058886076a95f6c05d",
+    "source_rpt2026_drive_id": "10nFtY-6tJRhvn8XggwtJRFBNozltQbqk",
+    "source_rpt2026_sha256": "e5328102b4d059616ede2adf5cdf3a357acf1c0d997a2472e135fa120fcb7845",
+    "source_rpt2027_pdf_page": 12,
+    "source_rpt_pdp": 35,
+    "source_pdp032": "al-Baqarah 216–224",
+    "source_pdp035": "al-Baqarah 224–245",
+    "next_pdp038": "al-Baqarah 246–259",
+    "source_exact_overlap_ayah": [
+      224
+    ],
+    "source_explicitly_flags_overlap": true,
+    "official_three_level_dskp_sk_sp_claimed": false
+  },
+  "editorial_draft": {
+    "lesson_title": "Tasmi’ al-Quran — al-Baqarah ayat 224–245 (julatan RPT asal)",
+    "estimated_time": "1 jam 30 minit menurut RPT 2027; peruntukan bacaan individu mengikut jumlah murid",
+    "bidang": "al-Quran — khatam/tasmi’ berdasarkan RPT guru; bukan kod SK/SP rasmi DSKP",
+    "sk_provenance": "RPT 2027 PdP 035 (perancangan bacaan/tasmi'); jangan menggantikan kod rasmi DSKP.",
+    "sp_source_text": "al-Baqarah ayat 224–245, Juzuk 2; berulang ayat 224 dengan PdP 032 (216–224).",
+    "learning_outcomes": [
+      "Murid membaca petikan al-Baqarah yang dipilih oleh guru dalam julat 224–245 dengan bimbingan, sebutan dan tajwid yang betul.",
+      "Murid mengenal pasti dan memperbaiki sekurang-kurangnya satu kesalahan bacaan yang disemak guru."
+    ],
+    "set_induksi": "Guru menunjukkan julat asal PdP 032 dan 035 dalam RPT; murid mengenal pasti ayat 224 sebagai titik ulang kaji. Guru menetapkan secara jelas sama ada ayat 224 diulang sebagai pemantapan atau petikan mula sebenar ialah ayat 225, lalu mencatat pilihan itu dalam rekod PdP.",
+    "aktiviti_utama": [
+      "1. Guru memperdengarkan bacaan contoh petikan yang dipilih daripada al-Baqarah 224–245 melalui talaqqi dan musyafahah; murid mengikuti pada mushaf.",
+      "2. Murid membaca secara berpasangan mengikut petikan yang ditetapkan; pasangan menyemak kelancaran dan tanda bacaan, sementara guru membetulkan sebutan.",
+      "3. Setiap murid memperdengarkan tasmi’ individu pada ayat mula/akhir yang direkodkan guru; guru menyemak makhraj, kelancaran dan hukum tajwid yang berkaitan.",
+      "4. Murid mengulang bacaan yang memerlukan pembetulan; guru merekod penguasaan dan menentukan petikan susulan bagi murid yang belum selesai."
+    ],
+    "pengukuhan": "Murid mengulang satu potongan bacaan berdasarkan maklum balas guru dan menjelaskan pembetulan yang dibuat.",
+    "pentaksiran": "Senarai semak tasmi’ mengikut individu: surah, ayat mula dan akhir sebenar, ketepatan sebutan, tajwid, kelancaran dan tindakan susulan. Tandakan secara eksplisit sama ada ayat 224 digunakan semula untuk pengukuhan atau tidak.",
+    "penutup": "Murid menyebut satu aspek bacaan yang telah diperbaiki; guru merumuskan perkembangan murid dan menyatakan petikan berikutnya.",
+    "bahan": "Mushaf al-Quran, senarai semak individu, contoh bacaan guru dan RPT 2027 PdP 032/035/038.",
+    "teacher_note": "DRAF penyemak sahaja. Julat sumber 224–245 tidak dipinda; alternatif mula 225 hanya boleh digunakan selepas guru mengekalkan atau mengubah agihan RPT secara sedar. Tiada ayat al-Quran ditranskripsi."
+  },
+  "options_for_teacher": {
+    "A_keep_source_overlap_as_revision": {
+      "pdp035": [
+        224,
+        245
+      ],
+      "ayah224_intentionally_repeated": true
+    },
+    "B_nonoverlap_subject_to_teacher_confirmation": {
+      "pdp035": [
+        225,
+        245
+      ],
+      "ayah224_intentionally_repeated": false
+    },
+    "selected_option": null,
+    "teacher_approved": false,
+    "do_not_change_source_rpt": true
+  },
+  "review_checks": {
+    "original_catalog_year2_l035_still_wholly_withheld": true,
+    "official_dskp_sp_claimed": false,
+    "full_jawi_approved": false,
+    "quran_reading_and_tajwid_review_approved": false,
+    "content_expert_approved": false,
+    "actual_word_pdf_checked": false,
+    "can_publish": false
+  }
+}
