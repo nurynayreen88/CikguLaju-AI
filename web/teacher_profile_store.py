@@ -345,12 +345,14 @@ def save_profile(url, key, uid, form, *, opener=None):
                 record and record.get("school_code") == code and
                 record.get("state_name") == values["state_name"] and
                 record.get("district_name") == values["district_name"] and
-                (record.get("school_name") or "") == values["school_name"]
+                (record.get("school_name") or "").casefold() ==
+                values["school_name"].casefold()
             )
             if same_school:
-                # Editing a class or timetable must not depend on a second
-                # directory HTTP request when school identity is unchanged.
-                values["school_name"] = record["school_name"]
+                # Preserve the existing verified school code and normalize
+                # the stored name without a second HTTP call for class edits.
+                from web.school_directory_store import full_school_name
+                values["school_name"] = full_school_name(record["school_name"])
             else:
                 from web.school_directory_store import (
                     SchoolDirectoryUnavailable, school_by_code,
@@ -366,22 +368,30 @@ def save_profile(url, key, uid, form, *, opener=None):
                     raise ProfileValidation("Sekolah tidak sepadan dengan negeri atau PPD")
                 values["school_name"] = school["school_name"]
         elif (record and record.get("school_code")
-              and values["school_name"] == (record.get("school_name") or "")
+              and values["school_name"].casefold() ==
+                  (record.get("school_name") or "").casefold()
               and values["state_name"] == record.get("state_name")):
             # An unavailable/legacy picker must not wipe previously linked data.
+            from web.school_directory_store import full_school_name
+            values["school_name"] = full_school_name(record["school_name"])
             values["school_code"] = record["school_code"]
             values["district_name"] = record.get("district_name")
         elif values["school_name"]:
-            # Existing manually typed school names remain readable and editable
-            # only by choosing an entry, never by posting an invented new name.
-            if (not record or
-                    values["school_name"] != (record.get("school_name") or "") or
+            # Legacy school names may be uppercased safely; never allow free
+            # text replacement or dropping a linked code while saving classes.
+            if (not record or record.get("school_code") or
+                    values["school_name"].casefold() !=
+                        (record.get("school_name") or "").casefold() or
                     values["state_name"] != record.get("state_name")):
                 raise ProfileValidation("Pilih sekolah daripada direktori rasmi")
+            values["school_name"] = record["school_name"].upper()
     elif record and record.get("school_code"):
-        if (values["school_name"] != (record.get("school_name") or "")
-                or values["state_name"] != record.get("state_name")):
+        if (values["school_name"].casefold() !=
+                (record.get("school_name") or "").casefold() or
+                values["state_name"] != record.get("state_name")):
             raise ProfileValidation("Muat semula profil dan pilih sekolah daripada senarai")
+        from web.school_directory_store import full_school_name
+        values["school_name"] = full_school_name(record["school_name"])
     rows = _class_records(record)
     byname = {r["name"].casefold(): r for r in rows}
     keep = {name.casefold() for name in values["class_names"]}
