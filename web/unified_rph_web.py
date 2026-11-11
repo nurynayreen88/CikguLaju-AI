@@ -885,18 +885,29 @@ def create_blueprint():
             return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
         try:
             from web.native_telegram_extra_materials_20261106 import (
-                english_workbook_metadata, music_source_links,
+                english_workbook_metadata, english_student_book_metadata, music_source_links,
             )
             if sub == "ENGLISH":
+                # Workbook parity remains unchanged; Student Book is isolated
+                # so an unavailable new Telegram route does not hide Workbook.
+                from urllib.parse import urlencode
+                params = urlencode({"year": year, "subject": sub,
+                                    "unit": unit, "lesson": token})
                 label = english_workbook_metadata(year, number)
                 items = []
                 if label:
-                    from urllib.parse import urlencode
-                    params = urlencode({"year":year, "subject":sub,
-                                      "unit":unit, "lesson":token})
-                    items.append({"type":"workbook", "title":label,
-                                  "url":"/api/web/rph/english-workbook?"+params,
-                                  "action":"Download"})
+                    items.append({"type": "workbook", "title": label,
+                                  "url": "/api/web/rph/english-workbook?" + params,
+                                  "action": "Download"})
+                if year == 4:
+                    try:
+                        book_label = english_student_book_metadata(year, number)
+                    except Exception:
+                        book_label = None  # Fail closed until the private Telegram route is live.
+                    if book_label:
+                        items.append({"type": "textbook", "title": book_label,
+                                      "url": "/api/web/rph/english-student-book?" + params,
+                                      "action": "Download"})
             else:
                 # Telegram verifies the Music Unit/PdP pair and returns only
                 # original owner-hosted Google Drive VIEW links.
@@ -929,5 +940,29 @@ def create_blueprint():
         return send_file(BytesIO(content), mimetype="application/pdf",
                          as_attachment=True, conditional=False,
                          download_name=f"CikguLaju_English_Y{year}_Lesson_{number:03d}_Workbook.pdf")
+
+    @bp.get("/api/web/rph/english-student-book")
+    def english_student_book():
+        account, error = _account()
+        if error is not None:
+            return error
+        try:
+            year, sub, unit, token, number = _extra_selection()
+            if sub != "ENGLISH" or year != 4:
+                raise ValueError("Wrong resource")
+        except (ValueError, TypeError):
+            return jsonify({"error": "Pilihan Lesson Student Book tidak sah"}), 400
+        try:
+            from web.native_telegram_extra_materials_20261106 import english_student_book_pdf
+            content = english_student_book_pdf(year, number)
+        except Exception:
+            return jsonify({"error": "PDF Student Book dari Telegram belum tersedia"}), 503
+        response = send_file(BytesIO(content), mimetype="application/pdf",
+                             as_attachment=True, conditional=False,
+                             download_name=f"CikguLaju_English_Y{year}_Lesson_{number:03d}_Student_Book.pdf")
+        response.headers["Cache-Control"] = "private, no-store"
+        response.headers["Vary"] = "Cookie"
+        response.headers["X-Content-Type-Options"] = "nosniff"
+        return response
 
     return bp
