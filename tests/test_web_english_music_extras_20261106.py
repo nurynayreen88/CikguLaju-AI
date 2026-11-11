@@ -98,6 +98,22 @@ class ExtraMaterialsWebTests(unittest.TestCase):
         self.assertEqual(found.status_code, 200)
         self.assertEqual([row["type"] for row in found.json["items"]], ["workbook"])
 
+    def test_student_book_remains_visible_if_workbook_bridge_fails(self):
+        e4 = next(row for row in source_records(4, "ENGLISH")
+                  if row["lesson"] == 30)
+        params = {"year":"4", "subject":"ENGLISH",
+                  "unit":e4["unit"], "lesson":e4["token"]}
+        with self._account(), patch(
+             "web.native_telegram_extra_materials_20261106.english_workbook_metadata",
+             side_effect=RuntimeError("Workbook source unavailable")), patch(
+             "web.native_telegram_extra_materials_20261106.english_student_book_metadata",
+             return_value="Verified Year 4 Student Book"):
+            response = self.client.get("/api/web/rph/extra-materials",
+                                       query_string=params)
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual([row["type"] for row in response.json["items"]],
+                         ["student_book"])
+
     def test_music_original_link_not_mislabeled_as_download(self):
         params={"year":"3","subject":"MUZIK","unit":"u01","lesson":"001"}
         external="https://drive.google.com/file/d/1l8GZxYtttttttttttttttttttttttttt/view?usp=drivesdk"
