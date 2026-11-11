@@ -90,8 +90,8 @@ def validated_plans(catalog):
         raise ProfileUnavailable("Bot Web dan Telegram tidak sepadan")
     items = catalog.get("plans")
     if not isinstance(items, list) or len(items) != 1:
-        raise ProfileUnavailable("Hanya Rakan Pembangun RM10 ditawarkan")
-    expected = {"rakan_pembangun": "10.00"}
+        raise ProfileUnavailable("Hanya Rakan Pembangun RM20 ditawarkan")
+    expected = {"rakan_pembangun": "20.00"}
     result = {}
     for entry in items:
         if (not isinstance(entry, dict) or entry.get("code") not in expected
