@@ -164,6 +164,39 @@ class WebTelegramYear4PartnerContract(unittest.TestCase):
         self.assertEqual(book.headers["Cache-Control"], "no-store, private")
         self.assertEqual(workbook.headers["Cache-Control"], "no-store, private")
 
+    def test_one_telegram_material_failure_does_not_hide_the_other(self):
+        query = self._select(30)
+        account = {"authenticated": True, "telegram_user_id": 123}
+
+        def no_workbook(path, args, **kwargs):
+            if "/workbook" in path:
+                raise NativeRPHUnavailable("Workbook service temporarily unavailable")
+            return self._dispatch(path, args, **kwargs)
+
+        def no_student_book(path, args, **kwargs):
+            if "/student-book" in path:
+                raise NativeRPHUnavailable("Student Book service temporarily unavailable")
+            return self._dispatch(path, args, **kwargs)
+
+        for transport, expected in (
+            (no_workbook, "student_book"),
+            (no_student_book, "workbook"),
+        ):
+            with self.subTest(expected=expected), \
+                 patch("web.unified_rph_web._account",
+                       return_value=(account, None)), \
+                 patch("web.native_telegram_extra_materials_20261106._get",
+                       side_effect=transport):
+                response = self.web_client.get("/api/web/rph/extra-materials",
+                                               query_string=query)
+                self.assertEqual(response.status_code, 200)
+                self.assertEqual([item["type"] for item in response.json["items"]],
+                                 [expected])
+                path = ("/api/web/rph/english-student-book" if
+                        expected == "student_book" else "/api/web/rph/english-workbook")
+                self.assertEqual(self.web_client.get(path, query_string=query).status_code,
+                                 200)
+
     def test_lesson157_main_page_only_and_lesson43_fails_closed(self):
         self.assertEqual(self.runtime.main[(4, 157)], "110")
         for lesson, pages_expected in ((157, 1), (43, None)):
