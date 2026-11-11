@@ -14,7 +14,7 @@ from web.web_payment_routes import (
 
 CATALOG={"mode":"manual_receipt_review","telegram_bot_id":"123456789",
     "progress_percentage":"1.2%","rakan_open":True,"plans":[
-    {"code":"rakan_pembangun","amount":"10.00","label":"Rakan Pembangun"},
+    {"code":"rakan_pembangun","amount":"20.00","label":"Rakan Pembangun"},
 ]}
 CONF={"supabase_url":"https://unit.supabase.co",
       "supabase_key":"server-secret-key-for-test-only"}
@@ -105,7 +105,7 @@ class PaymentWebTests(unittest.TestCase):
         self.assertEqual(write.call_args.args[1],"POST")
         row=write.call_args.kwargs["body"]
         self.assertEqual(row["proof_telegram_file_id"],"telegram-proof-id")
-        self.assertEqual(row["amount"],"10.00")
+        self.assertEqual(row["amount"],"20.00")
         self.assertEqual(row["notes"],"proof_received_web")
         self.assertEqual(row["chat_id"],"712")
 
@@ -213,7 +213,7 @@ class PaymentWebTests(unittest.TestCase):
             r=self.client.get("/api/web/payment/catalog",base_url=self.url)
         self.assertEqual(r.status_code,200,r.json)
         self.assertEqual(r.json["progress_percentage"],"1.2%")
-        self.assertEqual(r.json["plans"][0]["amount"],"10.00")
+        self.assertEqual(r.json["plans"][0]["amount"],"20.00")
         self.assertEqual([x["code"] for x in r.json["plans"]],["rakan_pembangun"])
         self.assertTrue(r.json["rakan_open"])
         self.assertNotIn("500",str(r.json))
