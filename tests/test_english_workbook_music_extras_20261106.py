@@ -116,7 +116,11 @@ class StudentBookYear4Materials(unittest.TestCase):
             }), patch(
                 "web.telegram_english_workbook_api_20261106._student_book_material",
                 side_effect=lambda rt, y, n: _student_book_material(rt, y, n, root=root),
+            ), patch(
+                "web.telegram_english_workbook_api_20261106._material",
+                side_effect=RuntimeError("Workbook source deliberately unavailable"),
             ):
+                # Student Book must never inspect or depend on Workbook sources.
                 self.assertEqual(client.get(
                     "/internal/rph/v1/english-extras/student-book",
                     query_string=params).status_code, 401)
