@@ -101,11 +101,20 @@ def _student_book_material(runtime, year: int, lesson: int, *, root=ROOT):
     numbers = getattr(runtime, "_v25232_nums", None)
     physical_page = getattr(runtime, "_book_physical_page_v25237", None)
     catalog = getattr(runtime, "_EN_LOCAL_BOOK_CHUNKS_V25234", None)
-    if (not all(callable(fn) for fn in (resolver, numbers, physical_page))
+    if (not all(callable(fn) for fn in (loader, resolver, numbers, physical_page))
             or not isinstance(catalog, dict)):
         return None
     try:
-        printed = resolver({"lesson_no": lesson}, 4)
+        source_rows, _ = loader("Tahun 4")
+        if not isinstance(source_rows, list):
+            return None
+        matched = [row for row in source_rows
+                   if isinstance(row, dict)
+                   and str(row.get("lesson_no", "")).strip() == str(lesson)]
+        if len(matched) != 1:
+            return None
+        source_row = matched[0]
+        printed = resolver(source_row, 4)
         pages = numbers("m/s " + str(printed)) if printed else []
         # A main SB activity should never result in the entire book or a
         # supplementary cut-out being exposed as a Lesson download.
