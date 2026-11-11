@@ -180,6 +180,12 @@ async function importSavedSchoolLogo(automatic=false) {
     const png=await schoolLogoToPng(blob);
     if(savedLogoSchoolCode()!==code)throw new Error(
       "Sekolah berubah semasa logo dimuatkan. Simpan profil dan cuba lagi.");
+    // A manual upload may have started or finished during the remote fetch.
+    // Never let a background auto-import overwrite that newly supplied logo.
+    if(automatic && (schoolLogoPresent===true || schoolLogoFile.files?.length)){
+      schoolLogoStatus.textContent="Logo pilihan guru dikekalkan.";
+      return;
+    }
     await saveCandidateLogoToPrivateStorage(png);
     await loadSchoolLogo();
     schoolLogoStatus.textContent=
