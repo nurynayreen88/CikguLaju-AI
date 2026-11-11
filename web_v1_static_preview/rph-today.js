@@ -60,8 +60,9 @@
   const selectable=choices.filter(c=>c.slot.can_prepare);
   const incomplete=selectable.filter(c=>!c.controls.lesson.value);
   const busy=selectable.some(c=>c.busy);
+  // Keep the original all-slots guard, covered by existing RPH Hari Ini QA.
   generateAll.disabled=loading||reviewing||!confirm.checked||!selectable.length||
-   busy||incomplete.length>0;
+   selectable.some(c=>c.busy||!c.controls.lesson.value);
   for(const c of choices){
    for(const name of TAGS){
     const select=c.controls[name];
