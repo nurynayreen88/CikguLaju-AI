@@ -59,6 +59,73 @@ class EnglishWorkbookMaterials(unittest.TestCase):
             self.assertEqual(invalid.status_code,404)
 
 
+
+class StudentBookYear4Materials(unittest.TestCase):
+    def test_main_student_book_pages_use_only_verified_runtime_map(self):
+        from pathlib import Path
+        from tempfile import TemporaryDirectory
+        from types import SimpleNamespace
+        from pypdf import PdfWriter
+        from web.telegram_english_workbook_api_20261106 import (
+            _student_book_material, _extract_student_book,
+        )
+        with TemporaryDirectory() as folder:
+            root = Path(folder)
+            book = root / "books" / "english"
+            book.mkdir(parents=True)
+            path = book / "y4_student_book_001_015.pdf"
+            writer = PdfWriter()
+            for _ in range(6):
+                writer.add_blank_page(width=200, height=200)
+            writer.add_metadata({"/Title": "Verified example " + "x" * 1500})
+            with path.open("wb") as handle:
+                writer.write(handle)
+            runtime = SimpleNamespace(
+                _en34_verified_sb_pages_v25230=lambda row, y: "1–2",
+                _v25232_nums=lambda raw: [1, 2],
+                _book_physical_page_v25237=lambda state, kind, page: page,
+                _EN_LOCAL_BOOK_CHUNKS_V25234={
+                    (4, "textbook"): [(1, 15, "books/english/y4_student_book_001_015.pdf")]
+                },
+            )
+            material = _student_book_material(runtime, 4, 17, root=root)
+            self.assertIsNotNone(material)
+            pdf = _extract_student_book(material)
+            self.assertEqual(len(PdfReader(BytesIO(pdf)).pages), 2)
+            self.assertIsNone(_student_book_material(runtime, 3, 17, root=root))
+            self.assertIsNone(_student_book_material(runtime, 4, 161, root=root))
+            # A page mapping that includes a whole resource range is rejected.
+            runtime._v25232_nums = lambda raw: list(range(1, 25))
+            self.assertIsNone(_student_book_material(runtime, 4, 17, root=root))
+            runtime._v25232_nums = lambda raw: [1, 2]
+            app = Flask(__name__ + "sb")
+            app.register_blueprint(create_english_workbook_blueprint(runtime))
+            client = app.test_client()
+            params = {"year": "4", "lesson": "17"}
+            with patch.dict(os.environ, {
+                "CIKGULAJU_WEB_NATIVE_RPH_ENABLED": "1",
+                "CIKGULAJU_AUTHORITATIVE_API_TOKEN": "z" * 40,
+            }):
+                self.assertEqual(client.get(
+                    "/internal/rph/v1/english-extras/student-book",
+                    query_string=params).status_code, 401)
+                headers = {"Authorization": "Bearer " + "z" * 40}
+                found = client.get("/internal/rph/v1/english-extras/student-book",
+                                   query_string=params, headers=headers)
+                self.assertEqual(found.status_code, 200)
+                self.assertEqual(found.json["type"], "student_book")
+                pdf_response = client.get(
+                    "/internal/rph/v1/english-extras/student-book.pdf",
+                    query_string=params, headers=headers)
+                self.assertEqual(pdf_response.status_code, 200)
+                self.assertEqual(pdf_response.mimetype, "application/pdf")
+                self.assertEqual(pdf_response.headers["Cache-Control"], "private, no-store")
+                denied = client.get(
+                    "/internal/rph/v1/english-extras/student-book",
+                    query_string={"year":"3", "lesson":"17"}, headers=headers)
+                self.assertEqual(denied.status_code, 404)
+
+
 class MusicExternalLinkOnly(unittest.TestCase):
     def test_music_source_links_never_claim_download_or_audio_verification(self):
         runtime=Mock()
