@@ -43,9 +43,10 @@ jobs:
           entry = Path("tools/run_web_production.py").read_text()
           for text in ('id="web-admin-tab"', 'data-web-view="admin"',
                        'id="view-admin"', 'id="web-admin-status"',
-                       'window.cikgulajuAdminInit?.();',
-                       '/assets/admin-usage.js?v=20261111'):
+                       'window.cikgulajuAdminInit?.();'):
               assert html.count(text) == 1, (text, html.count(text))
+          import re
+          assert len(re.findall(r'<script src="/assets/admin-usage\.js\?v=[a-zA-Z0-9_-]+"></script>', html)) == 1
           assert 'app.register_blueprint(admin_usage_bp)' in entry
           assert '@app.get("/assets/admin-usage.js")' in entry
           assert 'id="web-admin-tab" class="sidebar-tab" data-web-view="admin" aria-controls="view-admin" hidden' in html

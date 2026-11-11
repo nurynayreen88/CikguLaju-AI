@@ -7,7 +7,10 @@
   const status = document.getElementById("web-admin-status");
   const updated = document.getElementById("web-admin-updated");
   const refresh = document.getElementById("web-admin-refresh");
-  if (!tab || !status || !updated || !refresh) return;
+  const view = document.getElementById("view-admin");
+  if (!tab || !view || !status || !updated || !refresh) return;
+  tab.hidden = true;
+  view.hidden = true;
   let busy = false;
 
   const text = (id, value) => {
