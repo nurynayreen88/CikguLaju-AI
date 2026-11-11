@@ -93,7 +93,7 @@ class PaymentCatalogTests(unittest.TestCase):
             self.assertEqual(result.status_code,200)
             self.assertEqual(result.json["telegram_bot_id"],"123456789")
             plans={p["code"]:p["amount"] for p in result.json["plans"]}
-            self.assertEqual(plans,{"rakan_pembangun":"10.00"})
+            self.assertEqual(plans,{"rakan_pembangun":"20.00"})
             self.assertEqual(result.json["progress_percentage"],"1.2%")
             self.assertTrue(result.json["rakan_open"])
             self.assertNotIn("500",str(result.json))
