@@ -81,6 +81,14 @@ class ProofFirstTests(unittest.TestCase):
         self.assertEqual(float(self.rt.requests[0]["amount"]), 10.0)
         self.assertIsNotNone(self.rt._latest_pending_payment(301)["id"])
 
+    def test_selected_rm20_is_preserved_for_proof_first_submission(self):
+        self.rt.state[301] = {"waiting": "payment_proof", "payment_amount": 20.0}
+        self.rt.upload()
+        self.assertEqual(self.rt._latest_pending_payment(301)["amount"], 20.0)
+        rid = self.rt._new_payment_request(301, 777, 5.0)
+        self.assertEqual(rid, 1)
+        self.assertEqual(float(self.rt.requests[0]["amount"]), 20.0)
+
     def test_receipt_creates_rm5_once_and_preserves_original_message(self):
         self.rt.state[301] = {"waiting": "payment_proof", "payment_amount": 5.0}
         self.rt.upload()
