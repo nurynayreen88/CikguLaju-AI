@@ -75,6 +75,7 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 #view-rpt #rpt2027-panel{padding:12px 0 0}
 #view-rpt #rpt2027-panel h3{font-size:1.3rem;color:#113e60;margin-top:0}
 .profile-access-status{padding:16px 18px;background:#eef6fa;border:1px solid #cfe1eb;border-radius:12px;color:#163f59;white-space:pre-wrap}
+.profile-setup-guide{padding:14px 18px;margin:16px 0;border:1px solid #d8e3df;border-radius:12px;background:#fff;color:#173d37}.profile-setup-guide h3{margin:0 0 6px;font-size:1rem}.profile-setup-guide p{margin:6px 0 10px}.profile-setup-guide button{margin-top:8px}
 .guide-steps{line-height:1.6}
 .guide-steps h3{color:#18486c;margin:24px 0 5px}
 .guide-steps p{margin:0 0 12px}
@@ -473,6 +474,12 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <h2 id="view-account-heading">Profil Guru</h2>
 <p>Maklumat guru yang sama boleh dilihat dan dikemas kini melalui Telegram atau Web. Isi sekali untuk memudahkan penyediaan RPH.</p>
 <p id="profile-access-summary" class="profile-access-status" role="status">Memuatkan status akaun…</p><p><button type="button" id="profile-refresh" class="profile-refresh" aria-label="Refresh profil dari Telegram atau Web">🔄 Refresh Profil &amp; Jadual</button></p>
+<section id="profile-setup-guide" class="profile-setup-guide" aria-labelledby="profile-setup-title">
+<h3 id="profile-setup-title">Persediaan Profil Guru</h3>
+<p id="profile-setup-status" role="status" aria-live="polite">Menyemak maklumat tersimpan…</p>
+<p class="notice">Nama Guru dan sekolah digunakan untuk maklumat profil dan muka depan RPT. Kelas serta jadual membantu RPH Hari Ini. RPH biasa masih boleh dicuba tanpa melengkapkan semuanya.</p>
+<button id="profile-setup-next" type="button" disabled>Lengkapkan maklumat seterusnya</button>
+</section>
 <form id="teacher-profile-form" class="teacher-profile-form" autocomplete="on">
   <h3>Maklumat Diri &amp; Sekolah</h3>
   <div class="profile-fields-grid">
@@ -1418,7 +1425,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/rph-today.js?v=results-below-all-subjects-20261107"></script>
-<script src="/assets/teacher-profile.js?v=teacher-uppercase-20261111"></script>
+<script src="/assets/teacher-profile.js?v=profile-guide-20261111"></script>
 <script src="/assets/web-payment.js?v=rakan-only-percent-20261106"></script>
 <script src="/assets/web-referral.js?v=20261106"></script>
 <script src="/assets/admin-usage.js?v=20261111"></script>
