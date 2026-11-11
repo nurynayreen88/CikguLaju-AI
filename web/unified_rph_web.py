@@ -858,8 +858,9 @@ def create_blueprint():
     # The Web never guesses an RPT ID, exposes Telegram credentials or
     # copies files from an unsynchronized Web-side legacy database.
     def _extra_selection():
-        if set(request.args) != {"year", "subject", "unit", "lesson"}:
-            raise ValueError("Unexpected extra resource selection")
+        if (set(request.args) != {"year", "subject", "unit", "lesson"}
+                or any(len(request.args.getlist(k)) != 1 for k in request.args)):
+            raise ValueError("Unexpected or duplicate extra resource selection")
         year, sub, unit, lesson, component = _selection()
         if component is not None:
             raise ValueError("Unsupported extra resource component")
