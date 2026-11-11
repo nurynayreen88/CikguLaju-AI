@@ -89,6 +89,25 @@ class MathY6RatioDraftAcademicTests(unittest.TestCase):
         self.assertEqual((56 // 7 * 3 - 8, 56 // 7 * 4), (16, 32))
         self.assertEqual((48 // 8 * 3, 48 // 8 * 5 - 6), (18, 24))
 
+    def test_verified_textbook_topics_and_rpt_label_conflict_remain_staging_only(self):
+        audit = (ROOT / "rph_standalone/matematik/STAGING_AUDIT_DSKP_MT6_PDP082_084_20261111.md").read_text(encoding="utf-8")
+        # The book was checked as source PDF text; visual/exercise and PdP-sequence
+        # approval still require human review. These tests MUST NOT imply READY.
+        self.assertIn("hlm. 191–196 (nisbah)", self.sections["082"])
+        self.assertIn("197–200 (kadaran)", self.sections["082"])
+        self.assertIn("202–204 (masalah nisbah/kadaran)", self.sections["082"])
+        self.assertIn("hlm. 191–196 (nisbah)", self.sections["083"])
+        self.assertIn("197–200 (kadaran)", self.sections["083"])
+        self.assertIn("hlm. 202–204 (masalah nisbah/kadaran", self.sections["084"])
+        self.assertIn("hlm. 201 memfokuskan masalah koordinat", self.sections["084"])
+        self.assertIn("7.3 Kadaran / SP 7.3.1", audit)
+        self.assertIn("7.4 Penyelesaian masalah / SP 7.4.1", audit)
+        self.assertIn("7.1 Kadaran", audit)  # observed erroneous draft label
+        self.assertIn("7.2 Penyelesaian masalah", audit)  # observed erroneous draft label
+        self.assertIn("Kedua-duanya DRAF", audit)
+        self.assertIn("Semakan paparan visual", audit)
+        self.assertIn("JANGAN TERBITKAN", audit)
+
     def test_not_a_production_enablement_or_source_overwrite(self):
         self.assertNotIn("FINAL READY", self.raw)
         self.assertIn("Tiada data v26.00", self.raw)
