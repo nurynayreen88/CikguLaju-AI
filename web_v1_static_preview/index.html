@@ -476,7 +476,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <form id="teacher-profile-form" class="teacher-profile-form" autocomplete="on">
   <h3>Maklumat Diri &amp; Sekolah</h3>
   <div class="profile-fields-grid">
-    <div><label for="profile-name">Nama guru</label><input id="profile-name" name="display_name" type="text" autocomplete="name" maxlength="100" placeholder="Contoh: Cikgu Ahmad" required></div>
+    <div><label for="profile-name">Nama Guru (HURUF BESAR)</label><input id="profile-name" name="display_name" type="text" autocomplete="name" autocapitalize="characters" spellcheck="false" maxlength="100" placeholder="CONTOH: CIKGU AHMAD" required></div>
     <div><label for="profile-state">Negeri sekolah</label><select id="profile-state" name="state_name">
       <option value="">Pilih negeri</option>
       <option>Johor</option><option>Kedah</option><option>Kelantan</option><option>Melaka</option>
@@ -1418,7 +1418,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/rph-today.js?v=results-below-all-subjects-20261107"></script>
-<script src="/assets/teacher-profile.js?v=school-fullcaps-20261111"></script>
+<script src="/assets/teacher-profile.js?v=teacher-uppercase-20261111"></script>
 <script src="/assets/web-payment.js?v=rakan-only-percent-20261106"></script>
 <script src="/assets/web-referral.js?v=20261106"></script>
 <script src="/assets/admin-usage.js?v=20261111"></script>

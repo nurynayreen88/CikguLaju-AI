@@ -77,6 +77,7 @@ class SharedStorageTests(unittest.TestCase):
         self.assertEqual(rows[2]["timetable"],[])
         self.assertEqual(self.memory.profile["class_names"],args["class_names"])
         self.assertEqual(self.memory.profile["school_name"],"SK BAHAGIA")
+        self.assertEqual(self.memory.profile["display_name"],"CIKGU B")
         self.assertEqual(len(self.memory.writes),1)
         self.assertNotIn("teacher_timetables",[x[0] for x in self.memory.writes])
 

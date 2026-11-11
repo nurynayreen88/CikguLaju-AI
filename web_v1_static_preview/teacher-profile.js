@@ -25,6 +25,24 @@ const teacherSubjectGroups = [
 const subjectNames = new Set(teacherSubjectGroups.flatMap(group => group.values));
 const timetableOtherSubject = "__cikgulaju_custom_subject__";
 const profileForm = document.getElementById("teacher-profile-form");
+const teacherNameField = document.getElementById("profile-name");
+function uppercaseTeacherName() {
+  // Uppercase while typing, pasting and autofill without moving the caret.
+  const original = teacherNameField.value;
+  const uppercase = original.toLocaleUpperCase("ms-MY");
+  if (original === uppercase) return;
+  const start = teacherNameField.selectionStart;
+  const end = teacherNameField.selectionEnd;
+  teacherNameField.value = uppercase;
+  if (start !== null && end !== null) {
+    teacherNameField.setSelectionRange(
+      original.slice(0,start).toLocaleUpperCase("ms-MY").length,
+      original.slice(0,end).toLocaleUpperCase("ms-MY").length,
+    );
+  }
+}
+teacherNameField.addEventListener("input", uppercaseTeacherName);
+teacherNameField.addEventListener("change", uppercaseTeacherName);
 const timetableBody = document.getElementById("timetable-rows");
 const profileMessage = document.getElementById("profile-save-status");
 const timetableMessage = document.getElementById("timetable-save-status");
@@ -45,7 +63,7 @@ function setTeacherIdentity(profile) {
   // Only use the name explicitly saved in the shared teacher profile.
   // Telegram widget usernames are not substitutes for the teacher's name.
   const name = typeof profile?.display_name === "string" && profile.display_name.trim()
-    ? profile.display_name.trim() : "Cikgu";
+    ? profile.display_name.trim().toLocaleUpperCase("ms-MY") : "CIKGU";
   const school = typeof profile?.school_name === "string" && profile.school_name.trim()
     ? profile.school_name.trim() : "Ruang Guru";
   document.getElementById("sidebar-teacher-name").textContent = name;
@@ -231,7 +249,7 @@ schoolLogoUpload.addEventListener("click", async () => {
 
 function profileEditorData() {
   return {
-    display_name: document.getElementById("profile-name").value.trim(),
+    display_name: teacherNameField.value.trim().toLocaleUpperCase("ms-MY"),
     school_name: document.getElementById("profile-school").value.trim(),
     state_name: document.getElementById("profile-state").value,
     district_name: document.getElementById("profile-district").value,
@@ -553,7 +571,7 @@ async function loadTeacherProfile() {
     if(!result.profile || !result.timetable || !Array.isArray(result.profile.class_names)
        || !Array.isArray(result.timetable.entries))throw new Error("Data profil tidak sah.");
     const profile=result.profile, timetable=result.timetable;
-    document.getElementById("profile-name").value=profile.display_name || "Cikgu";
+    teacherNameField.value=(profile.display_name || "Cikgu").toLocaleUpperCase("ms-MY");
     await loadSchoolPickerForProfile(profile);
     document.getElementById("profile-classes").value=profile.class_names.join("\n");
     setTeacherIdentity({...profile,school_name:schoolNameField.value});

@@ -136,7 +136,9 @@ def clean_profile(form):
                 PROFILE_KEYS | school_fields | {"avatar_code"})
     if not isinstance(form, dict) or set(form) not in accepted:
         raise ProfileValidation("Maklumat profil tidak lengkap")
-    name = _validated_name(form["display_name"], 100, "Nama guru", required=True)
+    name = _validated_name(form["display_name"], 100, "Nama guru", required=True).upper()
+    if len(name) > 100:
+        raise ProfileValidation("Nama guru terlalu panjang")
     school = _validated_name(form["school_name"], 160, "Nama sekolah")
     state = _validated_name(form["state_name"], 30, "Negeri")
     if state and state not in STATES:
