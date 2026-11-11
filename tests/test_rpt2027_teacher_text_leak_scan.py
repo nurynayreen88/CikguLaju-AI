@@ -53,6 +53,36 @@ class TeacherTextLeakAuditTests(unittest.TestCase):
             with contextlib.redirect_stdout(io.StringIO()):
                 self.assertEqual(main([str(folder / "missing")]), 1)
 
+    def test_image_only_pdf_is_not_silently_marked_clean(self):
+        # No text layer means the audit cannot read developer notes visible
+        # inside a raster image. Such a PDF must require manual inspection.
+        import fitz
+        with tempfile.TemporaryDirectory() as temp:
+            file = Path(temp) / "rpt_2027_scanned.pdf"
+            with fitz.open() as document:
+                document.new_page(width=842, height=595)
+                document.save(file)
+            report = scan_paths([file], pdf_only=True)
+            self.assertEqual(report["scanned_files"], 1)
+            self.assertEqual(report["findings_count"], 0)
+            self.assertEqual(len(report["read_errors"]), 1)
+            self.assertIn("no extractable text", report["read_errors"][0]["error"])
+
+    def test_blank_cover_and_readable_page_remain_auditable(self):
+        # A blank cover alone is not a reason to block a document whose
+        # remaining pages have an extractable and fully scanned text layer.
+        import fitz
+        with tempfile.TemporaryDirectory() as temp:
+            file = Path(temp) / "rpt_2027_mixed.pdf"
+            with fitz.open() as document:
+                document.new_page(width=842, height=595)
+                page = document.new_page(width=842, height=595)
+                page.insert_text((50, 50), "RANCANGAN PENGAJARAN TAHUNAN 2027")
+                document.save(file)
+            report = scan_paths([file], pdf_only=True)
+            self.assertEqual(report["read_errors"], [])
+            self.assertEqual(report["findings_count"], 0)
+
     def test_teacher_projection_keeps_source_and_hides_review_notes(self):
         from rpt_2027.common.teacher_display_projection import (
             public_note, public_standard, public_topic
