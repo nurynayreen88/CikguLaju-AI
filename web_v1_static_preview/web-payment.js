@@ -1,5 +1,5 @@
 "use strict";
-/* One current offer: RM10 Rakan Pembangun. The participation percentage is
+/* One current offer: RM20 Rakan Pembangun. The participation percentage is
  * read from Telegram's approved entitlement RPC, never a hardcoded estimate.
  * Receipt and membership confirmation remain server-side and admin reviewed. */
 const payStatus=document.getElementById("web-payment-status");
@@ -23,7 +23,7 @@ let payBusy=false;
 
 function paymentReady(){
   const file=payReceipt.files?.[0];
-  const choice=payCatalog?.plans?.find(p=>p.code==="rakan_pembangun"&&p.amount==="10.00");
+  const choice=payCatalog?.plans?.find(p=>p.code==="rakan_pembangun"&&p.amount==="20.00");
   paySubmit.disabled=payBusy||payEntry.hidden||!choice||!file
     ||file.size>4*1024*1024||file.size<700
     ||!["image/jpeg","image/png","image/webp","application/pdf"].includes(file.type);
@@ -66,11 +66,11 @@ async function loadWebPayments(){
     const data=await paymentApi("/api/web/payment/catalog");
     if(!Array.isArray(data.plans)||data.plans.length!==1
        ||data.plans[0].code!=="rakan_pembangun"
-       ||data.plans[0].amount!=="10.00")throw Error("Pakej Rakan Pembangun belum dapat disahkan.");
+       ||data.plans[0].amount!=="20.00")throw Error("Pakej Rakan Pembangun belum dapat disahkan.");
     setVerifiedProgress(data);
     payCatalog=data;
     payPlan.value="rakan_pembangun";
-    payDesc.textContent=data.plans[0].description+" • RM10.00 (sekali bayar)";
+    payDesc.textContent=data.plans[0].description+" • RM20.00 (sekali bayar)";
     const pending=data.status?.pending===true;
     const active=data.already_member===true;
     const available=data.rakan_open===true;
@@ -88,7 +88,7 @@ async function loadWebPayments(){
     }else if(!available){
       payStatus.textContent="Pendaftaran Rakan Pembangun Early Bird telah penuh. Bayaran baharu tidak diterima.";
     }else{
-      payStatus.textContent="Rakan Pembangun RM10 sekali bayar tersedia. Bayar menggunakan QR atau link, kemudian hantar resit.";
+      payStatus.textContent="Rakan Pembangun RM20 sekali bayar tersedia. Bayar menggunakan QR atau link, kemudian hantar resit.";
     }
     payQrNotice.textContent="Memuatkan QR DuitNow rasmi…";
     if(canPay)void loadPaymentQr();
@@ -119,7 +119,7 @@ async function loadPaymentQr(){
     payQrUrl=URL.createObjectURL(image);
     payQr.src=payQrUrl;
     payQr.hidden=false;
-    payQrNotice.textContent="Bayar RM10.00 menggunakan aplikasi perbankan, kemudian hantar resit.";
+    payQrNotice.textContent="Bayar RM20.00 menggunakan aplikasi perbankan, kemudian hantar resit.";
   }catch(error){if(!payEntry.hidden)payQrNotice.textContent=error.message;}
 }
 payReceipt.addEventListener("change",()=>{
@@ -129,10 +129,10 @@ payReceipt.addEventListener("change",()=>{
   paymentReady();
 });
 paySubmit.addEventListener("click",async()=>{
-  const p=payCatalog?.plans?.find(row=>row.code==="rakan_pembangun"&&row.amount==="10.00");
+  const p=payCatalog?.plans?.find(row=>row.code==="rakan_pembangun"&&row.amount==="20.00");
   const f=payReceipt.files?.[0];
   if(!p||!f||payBusy||payEntry.hidden)return;
-  if(!window.confirm("Sahkan anda telah membayar RM10 sekali untuk Rakan Pembangun dan ingin menghantar resit bagi semakan admin?"))return;
+  if(!window.confirm("Sahkan anda telah membayar RM20 sekali untuk Rakan Pembangun dan ingin menghantar resit bagi semakan admin?"))return;
   payBusy=true;paymentReady();
   payMessage.textContent="Menghantar resit dan menyemak rekod Pending…";
   try{
