@@ -190,8 +190,11 @@ async function importSavedSchoolLogo(automatic=false) {
     updateAutoLogoButton();
   }
 }
-async function refreshLogoAndTryAutomaticImport() {
+async function refreshLogoAndTryAutomaticImport(schoolChanged=false) {
   const stored=await loadSchoolLogo();
+  if(stored===true && schoolChanged)
+    schoolLogoStatus.textContent=
+      "Sekolah telah ditukar. Logo lama dikekalkan; sila semak dan ganti jika perlu.";
   if(stored===false && savedLogoSchoolCode())await importSavedSchoolLogo(true);
 }
 schoolLogoAutoButton.addEventListener("click",()=>{void importSavedSchoolLogo(false);});
@@ -585,7 +588,7 @@ profileForm.addEventListener("submit", async event => {
     teacherProfileState.classNames=class_names;
     updateAutoLogoButton();
     if(body.school_code && body.school_code!==previousCode){
-      void refreshLogoAndTryAutomaticImport();
+      void refreshLogoAndTryAutomaticImport(true);
     }
     setTeacherIdentity(body);
     renderTeacherTimetable(timetableValueRows());
