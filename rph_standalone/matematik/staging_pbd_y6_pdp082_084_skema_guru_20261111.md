@@ -18,7 +18,7 @@ Padankan skema dengan lembaran PBD murid berasingan. Bukan soalan Buku Teks/Buku
 
 1. `6 : 9 ÷ 3 = 2 : 3`.
 2. `1.5 L : 500 mL = 1 500 mL : 500 mL = 3 : 1`.
-3. `8 ÷ 2 = 4`; pasu `5 × 4 = 20`.
+3. `8 ÷ 2 = 4`; bunga putih `5 × 4 = 20` kuntum.
 4. `28 ÷ 7 = 4`; beras `4 × 4 = 16` cawan.
 
 **Pentaksiran:** 1 mata bagi setiap item lengkap; sasaran `3/4`. Bagi item 2, semak murid menukarkan L kepada mL sebelum memudahkan. Bagi item 3–4, pastikan faktor skala digunakan pada kedua-dua bahagian secara konsisten.
