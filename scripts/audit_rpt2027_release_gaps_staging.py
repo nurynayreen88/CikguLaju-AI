@@ -29,8 +29,15 @@ def build_audit():
             raise ValueError(f"Arabic T{year} source count changed")
         arab_years[str(year)] = {
             "pdp": len(rows),
-            "not_full_sk": sum("belum dipadankan" in r["sk_display"].lower() for r in rows),
-            "not_full_sp": sum("belum dipadankan" in r["sp_display"].lower() for r in rows),
+            # A PDF-derived candidate sentence can now be displayed in staging.
+            # It is NOT a full official DSKP statement until academic signoff.
+            # Use explicit signoff flags, never display-placeholder wording.
+            "not_full_sk": sum(r.get("source_sk_full_text_signoff") is not True for r in rows),
+            "not_full_sp": sum(r.get("source_sp_dskp_text_signoff") is not True for r in rows),
+            "with_candidate_sp_text": sum(
+                "belum dipadankan" not in r["sp_display"].lower()
+                and r.get("source_sp_dskp_text_signoff") is False for r in rows
+            ),
             "without_calendar_week": sum(not r.get("week") for r in rows),
             "with_source_sp_pdf_page": sum(isinstance(r.get("source_sp_dskp_pdf_page"), int) for r in rows),
         }
@@ -76,10 +83,15 @@ def build_audit():
             "years": arab_years,
             "pdp_total": arab_total,
             "without_full_sk_text": sum(v["not_full_sk"] for v in arab_years.values()),
+            # Legacy output keys retained for downstream QA; both counts now
+            # mean *without academically approved full DSKP wording*.
             "without_full_sp_text": sum(v["not_full_sp"] for v in arab_years.values()),
+            "candidate_sp_text_present_not_approved": sum(
+                v["with_candidate_sp_text"] for v in arab_years.values()
+            ),
             "without_sourced_calendar_week": sum(v["without_calendar_week"] for v in arab_years.values()),
             "source_sp_page_anchors": sum(v["with_source_sp_pdf_page"] for v in arab_years.values()),
-            "reason": "117 unique SP codes linked to original PDF pages. Exact Arabic SK/SP sentences remain unapproved.",
+            "reason": "117 unique SP codes linked to original PDF pages. Source-derived SP sentence candidates are present but have no independent academic/visual signoff; SK thematic openings are not full approved SK statements.",
         },
         "pendidikan_islam": {
             "years": islam_years,
