@@ -922,11 +922,17 @@ def create_blueprint():
         except Exception:
             return jsonify({"items": [],"error":
                             "Sumber bahan tambahan Telegram belum dapat disahkan."}), 503
-        return jsonify({"items": items, "status":"SUMBER_ASAL",
+        return jsonify({"items": items,
+                        "status": "SUMBER_ASAL" if items else "BELUM_TERSEDIA",
                         "note": ("Pautan audio luar: akses, kandungan dan hak edar "
                                  "belum disahkan." if sub == "MUZIK" else
-                                 "Buku Aktiviti dipetik daripada halaman sumber yang dipadankan; "
-                                 "tiada janaan RPH digunakan.")})
+                                 "Student Book dan Workbook disediakan hanya bagi "
+                                 "halaman yang dipadankan dengan sumber. "
+                                 "Ketepatan kandungan dan hak edaran perlu disahkan; "
+                                 "muat turun ini tidak menggunakan kuota janaan RPH."
+                                 if items else
+                                 "Tiada bahan tambahan yang dapat disahkan "
+                                 "untuk Lesson ini.")})
 
     @bp.get("/api/web/rph/english-student-book")
     def english_student_book():
