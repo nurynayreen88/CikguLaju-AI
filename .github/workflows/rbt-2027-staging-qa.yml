@@ -6,6 +6,8 @@ on:
       - 'rph_standalone/rbt/**'
       - 'audits/rbt_*'
       - 'scripts/check_rbt_t4_t6_2027.py'
+      - 'scripts/check_rbt_2027_pedagogy_qa.py'
+      - 'scripts/check_rbt_2027_source_semantics.py'
       - 'scripts/render_rbt_2027_previews.py'
       - 'scripts/build_rbt_2027_review_word.py'
       - 'scripts/check_rbt_2027_source_adapter.py'
@@ -29,6 +31,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check 96 draft RPH and fail-closed gates
         run: python scripts/check_rbt_t4_t6_2027.py
+      - name: Verify 96 individual PdP content and original DSKP text evidence
+        run: python scripts/check_rbt_2027_pedagogy_qa.py
+      - name: Guard curriculum-specific RBT activities, unclipped titles and 60 rewrites
+        run: python scripts/check_rbt_2027_source_semantics.py
       - name: Verify read-only RBT dropdown and deny public exports
         run: python scripts/check_rbt_2027_source_adapter.py
       - name: Build draft A4 HTML previews
