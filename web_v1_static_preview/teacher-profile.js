@@ -44,6 +44,52 @@ function uppercaseTeacherName() {
 teacherNameField.addEventListener("input", uppercaseTeacherName);
 teacherNameField.addEventListener("change", uppercaseTeacherName);
 const timetableBody = document.getElementById("timetable-rows");
+const profileSetupStatus = document.getElementById("profile-setup-status");
+const profileSetupNext = document.getElementById("profile-setup-next");
+
+function savedProfileReadiness() {
+  if (!teacherProfileState.loaded || !teacherProfileState.savedProfile) return null;
+  let saved;
+  try { saved=JSON.parse(teacherProfileState.savedProfile); }
+  catch (_err) { return null; }
+  const checks=[
+    {label:"Nama Guru",ready:Boolean(teacherProfileState.profileVersion &&
+      saved.display_name && saved.display_name.trim()),target:teacherNameField},
+    {label:"Sekolah",ready:Boolean(saved.school_code &&
+      saved.state_name && saved.district_name),target:
+      !schoolStateField.value ? schoolStateField :
+      !schoolDistrictField.value ? schoolDistrictField : schoolChoiceField},
+    {label:"Kelas",ready:Array.isArray(saved.class_names) &&
+      saved.class_names.length>0,target:document.getElementById("profile-classes")},
+    {label:"Jadual Hari Ini",ready:teacherProfileState.savedPeriods>0,
+      target:timetableAddButton},
+  ];
+  return checks;
+}
+
+function renderProfileReadiness() {
+  const checks=savedProfileReadiness();
+  if (!checks) {
+    profileSetupStatus.textContent="Maklumat persediaan belum tersedia. Tekan Refresh Profil.";
+    profileSetupNext.disabled=true;
+    return;
+  }
+  const done=checks.filter(check=>check.ready).length;
+  const next=checks.find(check=>!check.ready);
+  profileSetupStatus.textContent="Persediaan "+done+"/4: "+
+    checks.map(check=>(check.ready?"✓ ":"○ ")+check.label).join(" · ")+
+    (next ? ". Langkah seterusnya: "+next.label+"." : ". Semua maklumat asas sudah tersedia.");
+  profileSetupNext.disabled=!next;
+  profileSetupNext.hidden=!next;
+}
+
+profileSetupNext.addEventListener("click",()=>{
+  const next=savedProfileReadiness()?.find(check=>!check.ready);
+  if (!next || !next.target || next.target.disabled) return;
+  next.target.scrollIntoView({block:"center",behavior:"smooth"});
+  next.target.focus({preventScroll:true});
+});
+
 const profileMessage = document.getElementById("profile-save-status");
 const timetableMessage = document.getElementById("timetable-save-status");
 const profileSaveButton = document.getElementById("profile-save");
@@ -584,12 +630,14 @@ async function loadTeacherProfile() {
     teacherProfileState.savedTimetable=JSON.stringify(timetableValueRows());
     teacherProfileState.loaded=true;
     setTeacherProfileButtons(true);
+    renderProfileReadiness();
     void refreshLogoAndTryAutomaticImport();
     profileMessage.textContent="Maklumat guru tersedia untuk disunting.";
     timetableMessage.textContent=timetable.entries.length+" waktu dimuatkan.";
   }catch(err){
     profileMessage.textContent=err.message;
     timetableMessage.textContent="Tidak dapat memuatkan jadual. Simpan dimatikan untuk melindungi rekod lama.";
+    renderProfileReadiness();
   }
 }
 
@@ -615,6 +663,7 @@ profileForm.addEventListener("submit", async event => {
     teacherProfileState.savedProfile=JSON.stringify(profileEditorData());
     teacherProfileState.classNames=class_names;
     updateAutoLogoButton();
+    renderProfileReadiness();
     if(body.school_code && body.school_code!==previousCode){
       void refreshLogoAndTryAutomaticImport(true);
     }
@@ -668,6 +717,7 @@ timetableSaveButton.addEventListener("click",async() => {
     teacherProfileState.profileVersion=result.version;
     teacherProfileState.savedTimetable=JSON.stringify(entries);
     teacherProfileState.savedPeriods=entries.length;
+    renderProfileReadiness();
     timetableMessage.textContent=entries.length+" waktu berjaya disimpan. Jadual ini turut tersedia di Telegram.";
   }catch(err){
     timetableMessage.textContent=err.message;
