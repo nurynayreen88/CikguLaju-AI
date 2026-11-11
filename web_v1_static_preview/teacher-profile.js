@@ -36,7 +36,10 @@ const schoolLogoUpload = document.getElementById("school-logo-upload");
 const schoolLogoStatus = document.getElementById("school-logo-status");
 const schoolLogoPreview = document.getElementById("school-logo-preview");
 const schoolLogoPlaceholder = document.getElementById("school-logo-placeholder");
+const schoolLogoAutoButton = document.getElementById("school-logo-auto");
 let schoolLogoObjectUrl = null;
+let schoolLogoPresent = null;
+const attemptedAutoLogoCodes = new Set();
 
 function setTeacherIdentity(profile) {
   // Only use the name explicitly saved in the shared teacher profile.
@@ -69,16 +72,21 @@ async function loadSchoolLogo() {
       schoolLogoPreview.hidden = true;
       schoolLogoPreview.removeAttribute("src");
       schoolLogoPlaceholder.hidden = false;
-      schoolLogoStatus.textContent = "Belum ada logo sekolah. Pilih fail untuk memuat naik.";
-      return;
+      schoolLogoPresent = false;
+      schoolLogoStatus.textContent = "Belum ada logo sekolah. Pilih fail atau gunakan Ambil Logo Automatik.";
+      return false;
     }
     if (!response.ok) throw new Error("Logo sekolah tidak dapat dimuatkan.");
     const blob = await response.blob();
     if (blob.type !== "image/png" || blob.size > 460800) throw new Error("Logo tersimpan tidak sah.");
     setSchoolLogoPreview(blob);
+    schoolLogoPresent = true;
     schoolLogoStatus.textContent = "Logo tersimpan. Cetakan RPT berlogo memerlukan akses berbayar aktif.";
+    return true;
   } catch (error) {
+    schoolLogoPresent = null; // unknown: never overwrite on a failed storage lookup
     schoolLogoStatus.textContent = error.message;
+    return null;
   }
 }
 
@@ -123,6 +131,70 @@ async function schoolLogoToPng(file) {
     URL.revokeObjectURL(url);
   }
 }
+
+// Only a SAVED school code can request a logo; unsaved changes do not switch
+// the school attached to the user's existing private Supabase logo object.
+function savedLogoSchoolCode() {
+  if (!teacherProfileState.loaded || !teacherProfileState.savedProfile) return "";
+  let saved;
+  try {saved=JSON.parse(teacherProfileState.savedProfile);}catch(_err){return "";}
+  const current=document.getElementById("profile-school-choice").value;
+  return saved?.school_code && saved.school_code===current ? current : "";
+}
+function updateAutoLogoButton() {
+  schoolLogoAutoButton.disabled=!savedLogoSchoolCode();
+}
+async function saveCandidateLogoToPrivateStorage(png) {
+  const body=new FormData();
+  body.append("logo",png,"logo.png");
+  const response=await fetch("/api/web/teacher/school-logo",{
+    method:"POST",credentials:"same-origin",cache:"no-store",body,
+  });
+  const result=await response.json().catch(()=>({}));
+  if(!response.ok || result.saved!==true)
+    throw new Error(result.error||"Logo tidak berjaya disimpan.");
+}
+async function importSavedSchoolLogo(automatic=false) {
+  const code=savedLogoSchoolCode();
+  if(!code || schoolLogoAutoButton.disabled)return;
+  if(automatic && attemptedAutoLogoCodes.has(code))return;
+  if(automatic && (schoolLogoPresent!==false || schoolLogoFile.files?.length))return;
+  if(!automatic && schoolLogoPresent===true &&
+     !window.confirm("Logo sekolah sedia ada akan diganti. Teruskan?"))return;
+  attemptedAutoLogoCodes.add(code);
+  schoolLogoAutoButton.disabled=true;
+  schoolLogoStatus.textContent="Mengambil logo sekolah berdasarkan kod sekolah…";
+  try {
+    const response=await fetch("/api/web/teacher/school-logo-candidate",{
+      credentials:"same-origin",cache:"no-store",redirect:"error",
+    });
+    if(response.status===404)throw new Error(
+      "Logo automatik belum tersedia untuk sekolah ini. Gunakan Muat Naik Logo.");
+    if(!response.ok)throw new Error("Sumber logo sekolah belum dapat dihubungi.");
+    const blob=await response.blob();
+    if(!["image/png","image/jpeg","image/gif"].includes(blob.type) ||
+        blob.size<=0 || blob.size>2*1024*1024)
+      throw new Error("Logo daripada sumber tidak sah. Sila muat naik sendiri.");
+    // The browser normalizes metadata, transparency and GIF first frame before
+    // the same server-side PNG validation used for manual private uploads.
+    const png=await schoolLogoToPng(blob);
+    if(savedLogoSchoolCode()!==code)throw new Error(
+      "Sekolah berubah semasa logo dimuatkan. Simpan profil dan cuba lagi.");
+    await saveCandidateLogoToPrivateStorage(png);
+    await loadSchoolLogo();
+    schoolLogoStatus.textContent=
+      "Logo sekolah berjaya diambil dan disimpan. Sila semak lencana sebelum mencetak RPT.";
+  }catch(error){
+    schoolLogoStatus.textContent=error.message;
+  }finally{
+    updateAutoLogoButton();
+  }
+}
+async function refreshLogoAndTryAutomaticImport() {
+  const stored=await loadSchoolLogo();
+  if(stored===false && savedLogoSchoolCode())await importSavedSchoolLogo(true);
+}
+schoolLogoAutoButton.addEventListener("click",()=>{void importSavedSchoolLogo(false);});
 
 schoolLogoUpload.addEventListener("click", async () => {
   const file = schoolLogoFile.files?.[0];
@@ -302,6 +374,7 @@ function setTeacherProfileButtons(enabled) {
   profileSaveButton.disabled=!enabled;
   timetableSaveButton.disabled=!enabled;
   timetableAddButton.disabled=!enabled;
+  updateAutoLogoButton();
 }
 
 async function teacherApi(url, method, body) {
@@ -422,6 +495,7 @@ async function loadSchoolPickerForProfile(profile) {
 
 schoolStateField.addEventListener("change",async()=>{
   const seq=++schoolPickerRequest;
+  updateAutoLogoButton();
   schoolNameField.value="";
   schoolPickerNotice.textContent="Memuatkan PPD negeri yang dipilih…";
   try {
@@ -435,6 +509,7 @@ schoolStateField.addEventListener("change",async()=>{
 });
 schoolDistrictField.addEventListener("change",async()=>{
   const seq=++schoolPickerRequest;
+  updateAutoLogoButton();
   schoolNameField.value="";
   schoolPickerNotice.textContent="Memuatkan sekolah PPD yang dipilih…";
   try {
@@ -448,6 +523,7 @@ schoolDistrictField.addEventListener("change",async()=>{
 });
 schoolChoiceField.addEventListener("change",()=>{
   const chosen=schoolCatalogOptions.find(row=>row.value===schoolChoiceField.value);
+  updateAutoLogoButton();
   schoolNameField.value=chosen?.label||"";
   schoolPickerNotice.textContent=chosen
     ? "Nama rasmi sekolah diisi automatik; tekan Simpan Profil untuk menyimpannya di pangkalan data."
@@ -468,7 +544,6 @@ async function loadTeacherProfile() {
     await loadSchoolPickerForProfile(profile);
     document.getElementById("profile-classes").value=profile.class_names.join("\n");
     setTeacherIdentity(profile);
-    void loadSchoolLogo();
     teacherProfileState.classNames=[...profile.class_names];
     teacherProfileState.profileVersion=profile.version || "";
     teacherProfileState.timetableVersion=timetable.version || "";
@@ -478,6 +553,7 @@ async function loadTeacherProfile() {
     teacherProfileState.savedTimetable=JSON.stringify(timetableValueRows());
     teacherProfileState.loaded=true;
     setTeacherProfileButtons(true);
+    void refreshLogoAndTryAutomaticImport();
     profileMessage.textContent="Maklumat guru tersedia untuk disunting.";
     timetableMessage.textContent=timetable.entries.length+" waktu dimuatkan.";
   }catch(err){
@@ -494,6 +570,8 @@ profileForm.addEventListener("submit", async event => {
     profileMessage.textContent="Maksimum 25 kelas. Sila kurangkan senarai.";
     return;
   }
+  const previousCode=teacherProfileState.savedProfile
+    ? JSON.parse(teacherProfileState.savedProfile).school_code : "";
   const body={...profileEditorData(),class_names,
     version:teacherProfileState.profileVersion};
   profileSaveButton.disabled=true;
@@ -505,6 +583,10 @@ profileForm.addEventListener("submit", async event => {
     teacherProfileState.timetableVersion=result.version;
     teacherProfileState.savedProfile=JSON.stringify(profileEditorData());
     teacherProfileState.classNames=class_names;
+    updateAutoLogoButton();
+    if(body.school_code && body.school_code!==previousCode){
+      void refreshLogoAndTryAutomaticImport();
+    }
     setTeacherIdentity(body);
     renderTeacherTimetable(timetableValueRows());
     if(typeof loadTeacherClasses==="function")loadTeacherClasses();
