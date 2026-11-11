@@ -118,6 +118,28 @@ class ExtraMaterialsWebTests(unittest.TestCase):
                 with self.assertRaises(NativeRPHUnavailable):
                     english_student_book_pdf(4, 30)
 
+    def test_duplicate_query_keys_never_select_wrong_english_book(self):
+        e4 = next(row for row in source_records(4, "ENGLISH")
+                  if row["lesson"] == 30)
+        base = [("year", "4"), ("subject", "ENGLISH"),
+                ("unit", e4["unit"]), ("lesson", e4["token"])]
+        for field, another in (
+            ("year", "3"),
+            ("subject", "BM"),
+            ("unit", "Wrong Unit"),
+            ("lesson", "e-4-031"),
+        ):
+            with self.subTest(field=field), self._account():
+                ambiguous = base + [(field, another)]
+                listing = self.client.get("/api/web/rph/extra-materials",
+                                          query_string=ambiguous)
+                self.assertEqual(listing.status_code, 200)
+                self.assertEqual(listing.json["items"], [])
+                for endpoint in ("english-student-book", "english-workbook"):
+                    response = self.client.get("/api/web/rph/" + endpoint,
+                                               query_string=ambiguous)
+                    self.assertEqual(response.status_code, 400)
+
     def test_student_book_absent_does_not_hide_verified_workbook(self):
         e4 = next(row for row in source_records(4, "ENGLISH")
                   if row["lesson"] == 30)
