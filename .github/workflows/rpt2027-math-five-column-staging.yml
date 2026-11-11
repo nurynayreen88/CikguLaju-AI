@@ -2,6 +2,8 @@ name: RPT2027 Math Y2-6 585-Lesson five-column staging QA
 on:
   pull_request:
     paths:
+      - 'scripts/audit_rpt2027_teacher_text_leaks_20261108.py'
+      - 'tests/test_rpt2027_teacher_text_leak_scan.py'
       - 'scripts/build_rpt_2027_mathematics_pdf_reflow_staging.py'
       - 'tests/test_rpt_2027_mathematics_reflow_staging.py'
       - '.github/workflows/rpt2027-math-five-column-staging.yml'
