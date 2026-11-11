@@ -521,7 +521,7 @@ except Exception as exc:
 # Lesson -> Workbook page map. Extract only the mapped PDF page(s).
 try:
     from web.telegram_english_workbook_api_20261106 import create_english_workbook_blueprint
-    telegram_runtime.app.register_blueprint(create_english_workbook_blueprint())
+    telegram_runtime.app.register_blueprint(create_english_workbook_blueprint(telegram_runtime))
     ENGLISH_EXTRA_WORKBOOK_SOURCE_REGISTERED = True
 except Exception as exc:
     ENGLISH_EXTRA_WORKBOOK_SOURCE_REGISTERED = False
