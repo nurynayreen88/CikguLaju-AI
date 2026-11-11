@@ -1,0 +1,19 @@
+name: PI 2027 V5 staging bundle readers
+on:
+  pull_request:
+    paths:
+      - 'curriculum_staging/pendidikan_islam_v5/**'
+      - '.github/workflows/pi-v5-staging-readers.yml'
+  workflow_dispatch:
+jobs:
+  safe-staging-reader-checks:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test synthetic 696-lesson catalogs and fail-closed guards
+        run: python -m unittest discover -s curriculum_staging/pendidikan_islam_v5 -p 'test_*.py' -v
