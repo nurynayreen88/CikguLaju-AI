@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Alam dan Manusia Year 1 KP2027 verified standards",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "curriculum",
+      "year",
+      "subject",
+      "unit",
+      "lesson",
+      "standard_code",
+      "standard_text",
+      "source_url",
+      "source_page",
+      "verification_status"
+    ],
+    "properties": {
+      "curriculum": {
+        "const": "KP2027"
+      },
+      "year": {
+        "const": 1
+      },
+      "subject": {
+        "const": "Alam dan Manusia"
+      },
+      "unit": {
+        "type": "string",
+        "minLength": 1
+      },
+      "lesson": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "standard_code": {
+        "type": "string",
+        "minLength": 1
+      },
+      "standard_text": {
+        "type": "string",
+        "minLength": 1
+      },
+      "source_url": {
+        "type": "string",
+        "format": "uri"
+      },
+      "source_page": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "verification_status": {
+        "enum": [
+          "pending",
+          "verified",
+          "approved"
+        ]
+      },
+      "approved_by": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "approved_at": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    }
+  }
+}
