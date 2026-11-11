@@ -116,7 +116,7 @@ class Year6MathPbdStageTests(unittest.TestCase):
         self.assertEqual(self.rph.count("**Status:** HOLD"),3)
         self.assertIn("JANGAN AKTIFKAN UNTUK PENGGUNA",self.rph)
         self.assertIn("calon",self.teacher.lower())
-        self.assertIn("bukan petikan Buku Teks atau Buku Aktiviti",self.pupil)
+        self.assertIn("Bukan petikan Buku Teks atau Buku Aktiviti",self.pupil)
         self.assertNotIn("FINAL READY",self.pupil)
         self.assertNotIn("FINAL READY",self.teacher)
 
