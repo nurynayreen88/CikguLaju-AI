@@ -1,8 +1,12 @@
 """Web materials: exact source-bound Lesson, no RPT numeric guess or quota debit."""
 import unittest
+from io import BytesIO
 from pathlib import Path
 from unittest.mock import patch
 from flask import Flask, jsonify
+from pypdf import PdfWriter
+from web.native_telegram_extra_materials_20261106 import english_student_book_pdf
+from web.native_telegram_rph_client import NativeRPHUnavailable
 
 from web.unified_rph_web import create_blueprint, source_records
 
@@ -21,6 +25,17 @@ class ExtraMaterialsWebTests(unittest.TestCase):
     def _account(self):
         return patch("web.unified_rph_web._account",
                      return_value=({"telegram_user_id":1,"authenticated":True},None))
+
+    @staticmethod
+    def _student_book_test_pdf(pages=2, *, encrypted=False):
+        writer = PdfWriter()
+        for _ in range(pages):
+            writer.add_blank_page(width=612, height=792)
+        if encrypted:
+            writer.encrypt("test-only-password")
+        buffer = BytesIO()
+        writer.write(buffer)
+        return buffer.getvalue()
 
     def test_workbook_is_bound_to_source_token_not_rpt_row(self):
         with self._account(),patch(
@@ -71,7 +86,7 @@ class ExtraMaterialsWebTests(unittest.TestCase):
         self.assertIn("lesson=e-4-030", found.json["items"][1]["url"])
         with self._account(), patch(
              "web.native_telegram_extra_materials_20261106.english_student_book_pdf",
-             return_value=b"%PDF-1.7\\n" + b"X" * 1000):
+             return_value=self._student_book_test_pdf()):
             pdf = self.client.get("/api/web/rph/english-student-book", query_string=params)
         self.assertEqual(pdf.status_code, 200)
         self.assertEqual(pdf.mimetype, "application/pdf")
@@ -83,6 +98,24 @@ class ExtraMaterialsWebTests(unittest.TestCase):
             wrong_year = self.client.get("/api/web/rph/english-student-book",
                                          query_string=self.sel)
             self.assertEqual(wrong_year.status_code, 400)
+
+    def test_student_book_rejects_fake_oversized_page_count_and_encrypted_pdf(self):
+        valid = self._student_book_test_pdf(pages=2)
+        with patch("web.native_telegram_extra_materials_20261106._get",
+                   return_value=valid):
+            self.assertEqual(english_student_book_pdf(4, 30), valid)
+
+        bad_sources = (
+            b"%PDF-1.7\n" + b"J" * 800,
+            self._student_book_test_pdf(pages=5),
+            self._student_book_test_pdf(pages=1, encrypted=True),
+        )
+        for data in bad_sources:
+            with self.subTest(size=len(data)), patch(
+                    "web.native_telegram_extra_materials_20261106._get",
+                    return_value=data):
+                with self.assertRaises(NativeRPHUnavailable):
+                    english_student_book_pdf(4, 30)
 
     def test_student_book_absent_does_not_hide_verified_workbook(self):
         e4 = next(row for row in source_records(4, "ENGLISH")
