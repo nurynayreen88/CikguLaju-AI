@@ -84,7 +84,7 @@ class WebEnglishSourceTests(unittest.TestCase):
 
     def test_unauthenticated_downloads_are_rejected(self):
         with patch("web.unified_rph_web._account",
-                   return_value=(None, (jsonify({"error": "Login"}), 401))):
+                   return_value=(None, ({"error": "Login"}, 401))):
             self.assertEqual(self.client.get(
                 "/api/web/rph/english-student-book",
                 query_string=self.sel).status_code, 401)
