@@ -235,7 +235,7 @@ class SchoolProfileTests(unittest.TestCase):
               "school_code":"JBA0001","class_names":[],
               "version":old["updated_at"]}
         with patch("web.teacher_profile_store._profile_record",return_value=old), \
-             patch("web.school_directory_store.school_by_code") as lookup, \\
+             patch("web.school_directory_store.school_by_code") as lookup, \
              patch("web.teacher_profile_store._save",return_value="saved") as save:
             self.assertEqual(save_profile("https://db.example.invalid","TEST",123,form),"saved")
             lookup.assert_not_called()
