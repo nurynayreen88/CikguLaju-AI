@@ -89,7 +89,7 @@ class SchoolProfileTests(unittest.TestCase):
                     | {"school_level":"Rendah"}]
         with patch("web.school_directory_store._read",side_effect=read):
             self.assertEqual(states("https://db.example.invalid","TEST_KEY"),
-                             [{"value":"Johor","label":"Johor"}])
+                             [{"value":"Johor","label":"JOHOR"}])
             self.assertEqual(districts("https://db.example.invalid","TEST_KEY","Johor"),
                              [{"value":"PPD BATU PAHAT","label":"PPD BATU PAHAT"}])
             self.assertEqual(schools("https://db.example.invalid","TEST_KEY","Johor",
