@@ -20,6 +20,8 @@ Teacher guides Activity 3 using Teacher's Book p.51. Pupils then retrieve marked
 **Pupils:** Pupils complete Workbook p.24, Activity 1, by correcting present continuous sentences about pictured actions.
 Teacher checks specific listening details and revised writing. Pupils explain one correction.
 
+**Workbook practice:** Pupils complete Workbook p.24, Activity 1, by correcting present continuous sentences about pictured actions. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one accurate sentence and reflect on improvements.
 

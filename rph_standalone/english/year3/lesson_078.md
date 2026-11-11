@@ -24,6 +24,8 @@
 **Teacher:** Check each pupil's bedroom sentences for clarity and basic punctuation; listen to a short oral description.
 **Pupils:** Submit their sentences and describe one feature of the bedroom.
 
+**Workbook practice:** Write questions and possessive answers for the pictured furniture in Workbook p.40, Activity 1. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher:** Invite examples and give brief corrective feedback.
 **Pupils:** Share one accurate sentence about their bedroom.

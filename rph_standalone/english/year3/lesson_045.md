@@ -21,6 +21,8 @@ Teacher guides Student's Book pp.32â€“33 Activity 1 using Teacher's Book pp.56â€
 **Pupils:** Pupils complete Workbook p.31, Activity 1, by matching pictures from the story to the correct answers.
 Teacher checks understanding of the main idea and accurate spelling of selected sports words. Pupils complete a short learning diary reflection.
 
+**Workbook practice:** Pupils complete Workbook p.31, Activity 1, by matching pictures from the story to the correct answers. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one value learned from the story.
 

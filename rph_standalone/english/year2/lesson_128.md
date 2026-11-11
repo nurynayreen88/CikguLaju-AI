@@ -28,6 +28,8 @@
 **Teacher (10 min):** Record individual performance against the success criteria.
 **Pupils:** Submit individual evidence.
 
+**Workbook practice:** Pupils complete Workbook p.108, Activity 1, by matching the beach pictures with the written questions and answers. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful beach word.
 **Pupils:** Share one word or phrase.

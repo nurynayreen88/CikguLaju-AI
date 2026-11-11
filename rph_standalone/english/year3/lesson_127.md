@@ -20,6 +20,8 @@ Pupils read the weekend story and vote on whose weekend was best. They infer unf
 **Pupils:** Pupils complete Workbook p.65, Activity 1, by matching characters to the places they visited at the weekend.
 Teacher asks pupils to explain their favourite weekend scene and infer one word meaning from a picture or sentence clue.
 
+**Workbook practice:** Pupils complete Workbook p.65, Activity 1, by matching characters to the places they visited at the weekend. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share a favourite part of the story.
 

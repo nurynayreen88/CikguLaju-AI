@@ -21,6 +21,8 @@ Teacher models 'What do you want to be when you grow up?' and guides Student's B
 **Pupils:** Pupils complete Workbook p.13, Activity 2, by writing about the job they want to do.
 Teacher listens to each pupil ask one occupation question and answer a partner's question using a complete phrase.
 
+**Workbook practice:** Pupils complete Workbook p.13, Activity 2, by writing about the job they want to do. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Teacher reviews common errors and celebrates clear communication.
 

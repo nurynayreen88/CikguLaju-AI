@@ -21,6 +21,8 @@ Teacher guides the listening task on Student's Book p.17 following the SOW refer
 **Pupils:** Pupils complete Workbook p.11, Activity 1, by reading and writing sentences about travelling to school and work.
 Teacher asks targeted detail questions and observes pupils' listening strategies. Pupils identify the transport and routine information heard.
 
+**Workbook practice:** Pupils complete Workbook p.11, Activity 1, by reading and writing sentences about travelling to school and work. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share a transport phrase and explain how they understood it.
 

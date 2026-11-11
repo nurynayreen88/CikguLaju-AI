@@ -29,6 +29,8 @@
 **Teacher (10 min):** Check five listening-detail choices (SP 1.2.2) and two ability exchanges (SP 2.1.4).
 **Pupils:** Submit individual evidence.
 
+**Workbook practice:** Pupils complete Workbook p.96, Activity 1, by matching the animal pictures to sentences about what they can do. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful robot-related expression.
 **Pupils:** Share one word or sentence.

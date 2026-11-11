@@ -22,6 +22,8 @@ Pupils complete Workbook p.48, Activity 1, by adding commas and *and* where nece
 **Teacher:** Ask each pupil to state the main idea of the pizza text and check one completed sentence for a capital letter and full stop.
 **Pupils:** Explain the main idea and submit one correctly punctuated sentence.
 
+**Workbook practice:** Pupils complete Workbook p.48, Activity 2, by drawing and describing their favourite pizza or salad. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one sentence describing a pizza.
 

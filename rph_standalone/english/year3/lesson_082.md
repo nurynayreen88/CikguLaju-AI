@@ -24,6 +24,8 @@
 **Teacher:** Listen to each pupil's two food descriptions and check quantity meaning and clarity.
 **Pupils:** Say one 'There is...' and one 'There are...' sentence about the displayed food.
 
+**Workbook practice:** Describe the food in the fridge aloud in pairs, then write the sentences in Workbook p.44, Activity 2. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher:** Recap the sentence patterns and correct a common error.
 **Pupils:** Share one accurate food sentence.

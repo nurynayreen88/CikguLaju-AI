@@ -21,6 +21,8 @@ Pupils give and follow directions in a team game.
 **Teacher:** Observe each pupil giving two clear directions and correctly following a partner's instructions.
 **Pupils:** Give and follow directions in pairs.
 
+**Workbook practice:** Pupils complete Workbook p.52, Activity 2, by writing directions to help Steve reach the cinema. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils give two simple directions.
 

@@ -21,6 +21,8 @@ Teacher guides the Student's Book listening task. Pupils listen to directions an
 **Teacher:** Ask two route-detail questions and one question about the destination; record individual responses.
 **Pupils:** Identify the destination and explain two directions heard.
 
+**Workbook practice:** Pupils complete Workbook p.52, Activity 1, by writing the directions shown on road signs. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one direction from school.
 

@@ -20,6 +20,8 @@ Teacher reviews There weren't any and the Grammar Box, then guides Student's Boo
 **Pupils:** Write their own sentences comparing their town in the past and now using the new sheet.
 Teacher checks each pupil's two hometown sentences for clear past-time meaning, apostrophes, spelling and punctuation. Pupils correct one error.
 
+**Workbook practice:** Pupils complete Workbook p.62, Activity 2, by writing sentences about a town in 1900 using 'was', 'wasn't', 'were' and 'weren't'. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils read one sentence about a place.
 

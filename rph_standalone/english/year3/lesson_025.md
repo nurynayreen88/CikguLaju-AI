@@ -21,6 +21,8 @@ Teacher demonstrates how to read a crossword clue and write the correct occupati
 **Pupils:** Match four occupations to descriptions, write two new job clues, and ask a partner for help when needed.
 Teacher checks written occupation words and listens for appropriate requests for help. Pupils correct mistakes.
 
+**Workbook practice:** Pupils complete Workbook p.12, Activity 1, by filling in the occupation crossword using the written clues. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils describe one job and share one useful word.
 

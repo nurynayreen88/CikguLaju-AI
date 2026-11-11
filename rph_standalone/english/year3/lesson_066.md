@@ -20,6 +20,8 @@ Teacher guides Student's Book p.45 Activity 2 and introduces clothes vocabulary 
 **Pupils:** Pupils complete Workbook p.37, Activity 2, by answering questions about where objects are in the bedroom.
 Pupils describe one picture using two details and answer one short question from a partner.
 
+**Workbook practice:** Answer the printed bedroom-location questions aloud, then write their answers in Workbook p.37, Activity 2. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one accurate sentence describing an object's position.
 

@@ -31,6 +31,8 @@
 **Teacher:** Check five individual listening choices and observe one independent reference lookup. Note prompts required.  
 **Pupils:** Respond individually.
 
+**Workbook practice:** Pupils complete Workbook p.82, Activity 1, by finding and circling the clothes words in the wordsearch. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher:** Recap two useful words and one lesson skill.  
 **Pupils:** Share one correct example.

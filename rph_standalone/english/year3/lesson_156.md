@@ -20,6 +20,8 @@ Pupils describe family members using superlatives, complete the optional activit
 **Pupils:** Ask and answer questions about three fictional characters, then say two superlative sentences.
 Teacher listens to two family comparisons using superlatives. Pupils then complete the Unit 10 self-assessment worksheet.
 
+**Workbook practice:** Pupils ask and answer the personal questions orally, then complete Workbook p.79, Activity 2 in writing. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one family comparison.
 

@@ -20,6 +20,8 @@ Pupils read for enjoyment, infer new words from illustrations and discuss the st
 **Pupils:** Pupils complete Workbook p.73, Activity 1, by reading the story again and matching the pictures with the correct descriptions.
 Teacher asks each pupil to name a favourite story moment and give one reason, referring to a picture or story detail.
 
+**Workbook practice:** Pupils complete Workbook p.73, Activity 1, by matching pictures with events from the story. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils explain whether they liked the ending.
 

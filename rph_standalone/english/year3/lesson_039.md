@@ -20,6 +20,8 @@ Teacher guides Student's Book p.27 Activity 4. Pupils take turns secretly choosi
 **Pupils:** Pupils complete Workbook p.21, Activity 2, by matching present continuous questions with short answers.
 Teacher listens to each pupil describe one picture and ask a partner for clarification when needed.
 
+**Workbook practice:** Pupils complete Workbook p.21, Activity 2, by matching present continuous questions with short answers. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Teacher displays an anonymous common error. Pupils suggest and explain the correction.
 

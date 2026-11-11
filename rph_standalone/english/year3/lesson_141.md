@@ -20,6 +20,8 @@ Pairs take turns remembering one of five questions posted around the room, retur
 **Pupils:** Pupils complete Workbook p.72, Activity 1, by completing the sentences with 'and' or 'but'.
 Teacher asks pupils to locate two answers in James's email and identify one example of correct email punctuation.
 
+**Workbook practice:** Pupils complete Workbook p.72, Activity 1, by completing a holiday postcard with past-tense words. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one fact from the email.
 

@@ -20,6 +20,8 @@ Pupils read short examples, then write their own sentences using adjectives and 
 **Pupils:** Pupils complete Workbook p.63, Activity 1, by completing the responses to questions about places and experiences using the given adjectives.
 Teacher checks each pupil's adjective sentences for accurate spelling and asks them to locate one detail in the model text. Pupils revise one error.
 
+**Workbook practice:** Pupils complete Workbook p.63, Activity 1, by writing adjectives to describe how the places were. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils read one adjective sentence.
 

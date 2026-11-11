@@ -21,6 +21,8 @@ Teacher guides Student's Book p.17 Activity 4 and distributes survey worksheets.
 **Pupils:** Pupils complete Workbook p.11, Activity 2, by matching people with transport and answering questions.
 Teacher listens to each pupil's question and response, and checks listening comprehension during the survey. Pupils report one result.
 
+**Workbook practice:** Pupils complete Workbook p.11, Activity 2, by matching people with transport and answering questions. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share findings and teacher corrects common question forms.
 

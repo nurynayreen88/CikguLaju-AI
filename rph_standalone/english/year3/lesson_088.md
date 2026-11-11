@@ -22,6 +22,8 @@ Groups of four read the texts from Student's Book p.58, match them to pictures a
 **Teacher:** Ask each pupil to identify one main idea and two supporting details.
 **Pupils:** Locate and explain evidence from the reading text.
 
+**Workbook practice:** Pupils complete Workbook p.46, Activity 2, by matching international food descriptions to the pictures. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one interesting fact about a dish.
 

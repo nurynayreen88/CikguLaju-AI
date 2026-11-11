@@ -20,6 +20,8 @@ Pupils ask planet questions in groups, record guesses, and check answers using w
 **Pupils:** Listen to four original planet clues, identify the planets and answer one oral question.
 Teacher asks two spoken planet questions. Pupils answer and locate one supporting fact on the worksheet.
 
+**Workbook practice:** Pupils respond to spoken planet facts, then complete the Workbook p.80, Activity 2 crossword using its printed clues. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one planet answer.
 

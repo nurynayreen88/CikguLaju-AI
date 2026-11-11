@@ -20,6 +20,8 @@ Teacher guides Student's Book p.25 Activity 1 and the action song. Pupils listen
 **Pupils:** Pupils complete Workbook p.18, Activity 1, by choosing 'am', 'are' or 'is' for the pictured actions.
 Teacher gives two oral prompts. Pupils identify the matching details and explain one unfamiliar word using context clues.
 
+**Workbook practice:** Pupils complete Workbook p.18, Activity 1, by choosing 'am', 'are' or 'is' for the pictured actions. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils respond to TPR commands from Teacher's Book p.46.
 

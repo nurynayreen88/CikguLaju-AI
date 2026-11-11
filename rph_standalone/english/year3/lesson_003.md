@@ -22,6 +22,8 @@
 **Pupils:** Pupils complete Workbook p.7, Activities 1–2, to match story characters and check details from the story.
 **Teacher:** Check pupils' answers for two story details and one visually inferred word. **Pupils:** Answer two story-detail questions and identify one unfamiliar word using a picture clue.
 
+**Workbook practice:** Pupils complete Workbook p.7, Activities 1–2, to match story characters and check details from the story. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher:** Play stand-up true/false using have/has got. **Pupils:** Summarise one thing learned.
 

@@ -20,6 +20,8 @@ Pupils read the picture story on Student's Book p.26 to check matches. Teacher g
 **Pupils:** Pupils complete Workbook p.23, Activity 2, by selecting correct details from the story.
 Pupils state the story's main idea and explain one unfamiliar word using a clue from the text or picture.
 
+**Workbook practice:** Pupils complete Workbook p.23, Activity 2, by selecting correct details from the story. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils record one new word and a reflection in their learning diaries.
 

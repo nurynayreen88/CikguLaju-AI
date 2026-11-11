@@ -20,6 +20,8 @@ Pupils write the three interview questions and their own answers on the workshee
 **Pupils:** Interview two classmates and report one answer orally using the new sheet.
 Teacher listens to each pupil's interview questions and answers, then checks one reported finding.
 
+**Workbook practice:** Pupils complete Workbook p.63, Activity 2, by answering questions about where they were yesterday. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one interview finding.
 

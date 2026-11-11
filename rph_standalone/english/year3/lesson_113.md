@@ -20,6 +20,8 @@ Teacher plays the song. Pupils put place flashcards in morning, afternoon and ev
 **Pupils:** Pupils complete Workbook p.60, Activity 1, by matching people and places from the song.
 Teacher asks each pupil to identify two places and their time order from the song. Pupils arrange the matching flashcards and answer orally.
 
+**Workbook practice:** Pupils complete Workbook p.60, Activity 1, by matching people and places from the song. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils say where they were yesterday.
 

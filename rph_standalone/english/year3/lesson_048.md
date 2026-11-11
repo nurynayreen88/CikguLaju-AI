@@ -20,6 +20,8 @@ Pupils read Part A of the SOW worksheet and mark statements Yes or No. Teacher g
 **Pupils:** Correct four new sentences, describe three mimed actions and say contractions aloud; do not repeat Workbook p.24, Activity 1.
 Teacher checks written descriptions and pronunciation of contractions. Pupils complete a brief self-assessment.
 
+**Workbook practice:** Complete Workbook p.24, Activity 1, by writing negative answers and correcting the pictured actions using the present continuous. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Teacher reviews common errors. Pupils share one accurate sentence.
 

@@ -30,6 +30,8 @@
 **Teacher (10 min):** Record three accurate individual clothing descriptions (0–3) and one fixed-phrase introduction (0–1) for each pupil. Note clarity, turn-taking and prompts needed; do not assign a shared pair score.
 **Pupils:** Demonstrate speaking individually within a pair.
 
+**Workbook practice:** Pupils complete Workbook p.91, Activity 1, by asking about their clothes and recording the materials in a chart. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher (5 min):** Review polite turn-taking.
 **Pupils:** Share one useful phrase.

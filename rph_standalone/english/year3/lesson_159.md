@@ -24,6 +24,8 @@
 **Teacher:** Ask each pupil to identify a favourite character or event, give one story-based reason and read one short section independently.
 **Pupils:** Explain a favourite character or event with one supporting reason.
 
+**Workbook practice:** Pupils complete Workbook p.81, Activity 1, by matching the story characters with their descriptions. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher:** Invite a short reflection.
 **Pupils:** Share a favourite event and one lesson learned.

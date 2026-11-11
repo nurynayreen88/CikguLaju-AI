@@ -20,6 +20,8 @@ Pupils interview classmates using SB p.87 Activity 4, repeat time phrases to sus
 **Pupils:** Pupils complete Workbook p.71, Activity 2, by answering the questions about the children's activities shown in Workbook p.71, Activity 1.
 Teacher observes pupils asking and answering a weekend question, then checks one written past-tense sentence for spelling.
 
+**Workbook practice:** Pupils complete Workbook p.71, Activity 2, by answering questions about the children's past holiday activities. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share a partner's answer.
 

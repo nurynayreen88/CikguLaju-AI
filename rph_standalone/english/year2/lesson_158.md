@@ -27,6 +27,8 @@
 **Teacher (10 min):** Record four intelligible sentences, three correct detail answers and individual evidence of rereading for meaning.
 **Pupils:** Provide individual evidence.
 
+**Workbook practice:** Pupils complete Workbook p.89, Activity 1, independently by answering the clothing questions using the pictures. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher (5 min):** Review one useful expression.
 **Pupils:** Share one useful word.

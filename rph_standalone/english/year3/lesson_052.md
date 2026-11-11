@@ -20,6 +20,8 @@ Teacher guides Student's Book p.37 Activity 2 and the diary worksheet. Pupils wr
 **Pupils:** Pupils complete Workbook p.30, Activity 1, by reading the month calendar and comparing the seasons.
 Pupils spell three weekdays correctly and answer two simple questions about the weekly routine.
 
+**Workbook practice:** Complete Workbook p.27, Activity 3, by writing their favourite day and an activity they do on that day. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one correctly spelled day and a short diary sentence.
 

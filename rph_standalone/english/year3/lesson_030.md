@@ -21,6 +21,8 @@ Teacher guides comprehension questions and the Writing Tip on Teacher's Book p.4
 **Pupils:** Pupils complete Workbook p.14, Activity 2, by adding full stops and question marks to sentences about routines.
 Teacher checks guided sentence punctuation and cursive letter formation. Pupils correct and improve writing.
 
+**Workbook practice:** Pupils complete Workbook p.14, Activity 2, by adding full stops and question marks to sentences about routines. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one accurate sentence about their daily routine.
 

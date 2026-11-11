@@ -32,6 +32,8 @@
 **Teacher (10 min):** Record three ability exchanges (SP 2.1.4) and two listening-detail responses (SP 1.2.2).
 **Pupils:** Demonstrate speaking individually.
 
+**Workbook practice:** Pupils complete Workbook p.97, Activity 1, by listening and ticking the correct pictures of people's abilities. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher (5 min):** Review clear pronunciation and turn-taking.
 **Pupils:** Share one action phrase.

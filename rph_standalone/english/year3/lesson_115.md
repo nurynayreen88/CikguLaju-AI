@@ -20,6 +20,8 @@ Teacher introduces film and popcorn and asks pupils to predict suitable adjectiv
 **Pupils:** Pupils complete Workbook p.61, Activity 1, by reading the illustrated cinema story and writing the missing words in its sentences.
 Teacher asks each pupil to state the cinema story's main idea and answer two supported questions using details from the text. Pupils point to evidence.
 
+**Workbook practice:** Pupils complete Workbook p.61, Activity 1, by writing past-tense sentences with 'was' and 'were'. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils use one adjective in a sentence.
 

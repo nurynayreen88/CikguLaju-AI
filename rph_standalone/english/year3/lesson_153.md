@@ -20,6 +20,8 @@ Pairs answer Student's Book p.99 questions from memory, then check the text on p
 **Pupils:** Pupils complete Workbook p.80, Activity 2, by completing the Solar System crossword using the numbered clues.
 Teacher checks two written planet facts for accurate superlatives, capital letters and punctuation. Pupils revise one sentence.
 
+**Workbook practice:** Pupils complete the Workbook p.80, Activity 2 crossword using the printed clues about the Sun and planets. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one superlative sentence.
 

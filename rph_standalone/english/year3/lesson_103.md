@@ -20,6 +20,8 @@ Teacher guides Activity 4. Pupils draw a farm containing their assigned animal c
 **Pupils:** Describe a hidden farm card, draw two details heard from a partner and ask one question.
 Teacher observes each pupil describing two farm animals and drawing two details heard from a partner. Pupils compare the drawings and explain one difference.
 
+**Workbook practice:** Pupils complete Workbook p.53, Activity 2, by describing the farm animals and writing sentences about them. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils describe one animal on their farm.
 

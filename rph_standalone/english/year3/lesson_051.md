@@ -20,6 +20,8 @@ Teacher guides Student's Book p.36 Activity 1 using Teacher's Book p.62. Pupils 
 **Pupils:** Read the new text, select its main idea, answer three detail questions and compare weather orally; do not repeat Workbook p.31, Activity 1.
 Pupils state the main idea of the reading text and recount two relevant details orally.
 
+**Workbook practice:** Pupils complete Workbook p.31, Activity 1, by matching the story pictures with the correct answers. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one new word about days, months or seasons.
 

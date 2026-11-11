@@ -20,6 +20,8 @@ Pupils prepare cut-out cards and play the speaking-and-listening guessing game f
 **Pupils:** Play a paired action-guessing information-gap game; do not repeat Workbook p.21, Activity 2.
 Teacher observes descriptive speaking and understanding of short questions. Pupils demonstrate one exchange.
 
+**Workbook practice:** Pupils complete Workbook p.21, Activity 2, by matching questions about actions to short answers. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Teacher uses the optional card game from Teacher's Book p.53 and gives feedback.
 

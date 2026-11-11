@@ -20,6 +20,8 @@ Teacher guides Student's Book p.49 Activity 4 and the related group task from Te
 **Pupils:** Exchange information about furniture locations using hidden cards and describe differences orally; do not repeat Workbook p.37, Activity 2.
 Pupils describe two features and use one polite request for assistance when needed.
 
+**Workbook practice:** Ask and answer the printed bedroom-location questions in pairs, then write the answers in Workbook p.37, Activity 2. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils describe one piece of furniture and its location.
 

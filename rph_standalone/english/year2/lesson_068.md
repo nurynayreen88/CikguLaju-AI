@@ -33,6 +33,8 @@
 **Teacher:** Check each pupil's independent main-idea choice (0–1), supporting clue (0–1) and five details (0–5). Use the two comprehension questions for additional feedback. Record individual accuracy and assistance needed; do not substitute detail scores for the main-idea criterion.  
 **Pupils:** Demonstrate the skill individually.
 
+**Workbook practice:** Pupils complete Workbook p.86, Activity 1, by listening and ticking the correct clothing pictures. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 **Teacher:** Review two useful clothing words and invite a relevant response.  
 **Pupils:** Share one word and one sentence.

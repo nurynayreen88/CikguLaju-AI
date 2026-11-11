@@ -20,6 +20,8 @@ Pupils reuse Lesson 130 holiday pictures to draft sentences, exchange notebooks 
 **Pupils:** Pupils complete Workbook p.69, Activity 2, by matching short past-tense weekend recounts to the correct pictures.
 Teacher checks each pupil's past-tense holiday sentences for accurate verbs, spelling and punctuation. Pupils revise one sentence.
 
+**Workbook practice:** Pupils complete Workbook p.69, Activity 3, by matching short holiday descriptions to the correct pictures. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one sentence using a past-tense verb.
 

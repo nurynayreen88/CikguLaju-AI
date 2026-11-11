@@ -20,6 +20,8 @@ Pupils listen to five True/False comparative sentences, record answers and expla
 **Pupils:** Pupils complete Workbook p.79, Activity 2, by reading the questions and answering about themselves using superlative adjectives.
 Teacher reads two comparative statements. Pupils mark true or false, correct one statement and give a respectful spoken comparison.
 
+**Workbook practice:** Pupils answer the questions aloud, then complete Workbook p.79, Activity 2 with written answers about themselves. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one comparative sentence and explain why differences should be respected.
 

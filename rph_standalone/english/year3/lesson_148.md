@@ -20,6 +20,8 @@ Teacher gives animal clues using comparative adjectives; pupils guess the animal
 **Pupils:** Pupils complete Workbook p.77, Activity 2, by writing comparative sentences about the pictured animals using the adjective prompts.
 Teacher checks each pupil's two animal-description sentences for accurate comparisons and spelling. Pupils correct one error; teacher retains feedback for Lesson 160.
 
+**Workbook practice:** Pupils complete Workbook p.77, Activity 2, by writing comparative sentences about the pictured characters and animals. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils name one endangered animal.
 

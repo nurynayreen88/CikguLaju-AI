@@ -20,6 +20,8 @@ Pupils read three sets of instructions on p.71 and match each text to the correc
 **Pupils:** Pupils complete Workbook p.56, Activity 2, by writing what the prohibition signs mean.
 Teacher asks each pupil to match a road-sign text, state its main instruction and explain one key word using the sign as context. Pupils point to the supporting text.
 
+**Workbook practice:** Pupils complete Workbook p.56, Activity 2, by writing what the prohibition signs mean. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils explain one road sign.
 

@@ -20,6 +20,8 @@ Pupils listen to the holiday song, raise matching pictures, order the pictures a
 **Pupils:** Pupils complete Workbook p.68, Activity 1, by unscrambling holiday action words.
 Teacher asks pupils to identify two holiday activities from the song and describe one activity using the picture prompts.
 
+**Workbook practice:** Pupils complete Workbook p.68, Activity 1, by unscrambling holiday action words. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils name one holiday activity.
 

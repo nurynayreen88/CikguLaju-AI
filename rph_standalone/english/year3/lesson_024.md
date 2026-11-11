@@ -21,6 +21,8 @@ Teacher displays pictures and word cards for firefighter, lifeguard and dentist,
 **Pupils:** Pupils complete Workbook p.12, Activity 1, by using occupation clues to fill in the crossword.
 Teacher observes dictionary use and checks answers about occupations. Pupils demonstrate locating a word and identifying two reading details.
 
+**Workbook practice:** Pupils complete Workbook p.12, Activity 1, by using occupation clues to fill in the crossword. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils explain one new occupation word.
 

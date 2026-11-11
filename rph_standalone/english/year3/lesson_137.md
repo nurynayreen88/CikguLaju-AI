@@ -20,6 +20,8 @@ Groups of six use Write, Fold and Pass to make a holiday story, then revise the 
 **Pupils:** Pupils complete Workbook p.70, Activity 2, by correcting the false sentences about Katie's holiday using the pictures.
 Teacher checks each group's holiday story for past-tense verbs and spelling. Pupils correct one sentence and explain the change.
 
+**Workbook practice:** Pupils complete Workbook p.70, Activity 2, by writing sentences about Katie's holiday activities. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share one corrected sentence.
 

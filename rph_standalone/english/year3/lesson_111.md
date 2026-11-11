@@ -20,6 +20,8 @@ Teacher reads The Secret Tunnel, pausing for predictions about the park and tunn
 **Pupils:** Pupils complete Workbook p.57, Activity 1, by answering questions about the tunnel story.
 Teacher asks each pupil to name a favourite scene and explain why, using one detail from the story. Pupils respond orally.
 
+**Workbook practice:** Pupils complete Workbook p.57, Activity 1, by answering questions about the tunnel story. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils share a favourite scene.
 

@@ -20,6 +20,8 @@ Teacher guides unit revision activities using Student's Book p.44 and the SOW wo
 **Pupils:** Pupils complete Workbook p.32, Activity 2, by filling in missing weather and seasonal vocabulary.
 Teacher checks punctuation and accurate preposition use in written sentences and observes spoken exchanges.
 
+**Workbook practice:** Complete Workbook p.32, Activity 2, by writing the missing words in the printed sentences about months and days. Teacher checks answers and provides guidance.
+
 ## Closure (5 minutes)
 Pupils self-assess one strength and one language point to practise.
 
