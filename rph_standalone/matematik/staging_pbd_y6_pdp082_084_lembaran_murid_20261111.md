@@ -24,7 +24,7 @@ Nama: __________________  Kelas: __________  Tarikh: __________
 
 1. Nisbah tepung kepada gula ialah **6 : 9**. Mudahkan nisbah itu.
 2. Nyatakan nisbah **1.5 L kepada 500 mL** dalam bentuk termudah.
-3. Nisbah benih kepada pasu ialah **2 : 5**. Jika terdapat **8 benih**, berapakah bilangan pasu yang berkadaran?
+3. Nisbah bunga merah kepada bunga putih untuk hiasan kelas ialah **2 : 5**. Jika digunakan **8 kuntum bunga merah**, berapakah kuntum bunga putih yang diperlukan?
 4. Nisbah beras kepada air ialah **4 : 7**. Jika terdapat **28 cawan air**, berapa cawan beras diperlukan untuk mengekalkan nisbah?
 
 ## MT6-PDP-084 — Lembaran Murid (3 masalah dua langkah; sasaran 2/3)
