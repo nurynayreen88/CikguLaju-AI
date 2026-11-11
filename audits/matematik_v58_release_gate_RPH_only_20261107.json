@@ -1,0 +1,61 @@
+{
+  "version": "v58",
+  "scope": "RPH Matematik Tahun 2–6 sahaja. RPT dikecualikan.",
+  "archive_name": "CIKGULAJU_MATEMATIK_v58_585_RPH_RUJUKAN_BUKU_T4_DAN_INDUKSI_STAGING.zip",
+  "archive_sha256": "bb8d1e727c383efd2bfbe2b748570f7b6f4aeb99c7ffffa4f4426bd5baafdc13",
+  "archive_bytes": 48954101,
+  "source_version": "v57",
+  "source_sha256": "07bada94723bde54d958c11fcdfc3e46b06e59aefbcf63e26926144365331332",
+  "rph_total": 585,
+  "year4_pairs_total": 34,
+  "pairs_with_new_book_chapter_pages": 32,
+  "pairs_with_preexisting_specific_refs_untouched": 2,
+  "preexisting_refs_preserved": [
+    "T4-L022",
+    "T4-L023",
+    "T4-L056",
+    "T4-L057"
+  ],
+  "lessons_with_book_chapter_pages_added": 64,
+  "off_skill_intros_corrected": 9,
+  "changed_sections": 73,
+  "changed_rph": 64,
+  "unchanged_rph": 521,
+  "docx_count": 585,
+  "individual_pdf_A4_onepage": 585,
+  "markdown_count": 585,
+  "merged_year_pdf_count": 5,
+  "merged_year4_pdf_pages": 117,
+  "BA_year2_3_ref_count": 234,
+  "changed_years": [
+    4
+  ],
+  "other_years_merged_pdfs_byte_identical": true,
+  "book_source": "Buku Teks Matematik Tahun 4 SK (Dewan Bahasa dan Pustaka, 2019): https://anyflip.com/coll/xosm/basic",
+  "book_verification_level": "PAGE_RANGE_FOR_TOPIC_FROM_BOOK_CONTENTS_NOT_EXACT_BOOK_EXERCISE",
+  "book_item_level_exercises_verified": 0,
+  "teacher_academic_formal_signoffs": 0,
+  "actual_zip_test_results": "15/15 PASS",
+  "word_rendered_and_onepage_checked": 64,
+  "visual_samples_checked": [
+    "T4-L010",
+    "T4-L025",
+    "T4-L027",
+    "T4-L029",
+    "T4-L043",
+    "T4-L049",
+    "T4-L087",
+    "T4-L089"
+  ],
+  "audit_contents_inside_zip": [
+    "AUDIT/V58_73_RPH_SECTIONS.csv",
+    "AUDIT/V58_64_TEXTBOOK_CHAPTER_REFERENCES.csv",
+    "AUDIT/V58_RELEASE_GATE.json"
+  ],
+  "academic_all_585_exercise_signoff": false,
+  "telegram_web_real_staging_e2e": false,
+  "final_ready": false,
+  "rpt_changed": false,
+  "production_modified": false,
+  "release_instruction": "DO NOT MERGE OR DEPLOY. Staging-only and no changes to curriculum DB, user data, RPT, quota, access or payments."
+}

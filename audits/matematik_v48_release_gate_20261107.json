@@ -1,0 +1,32 @@
+{
+  "version": "v48",
+  "source": "v47",
+  "archive_name": "CIKGULAJU_MATEMATIK_v48_585_RPH_MATA_WANG_SEMASA_DSKP_STAGING.zip",
+  "source_sha256": "08890923150fa71002f5dd6d762ce880f2552987cda3d5c00095e689b8e7b762",
+  "sha256": "a19841be74474f819496f694faebcd75e617864bfac9c48c4b3e841ec0393b4b",
+  "size_bytes": 48770526,
+  "rph_total": 585,
+  "updated_lessons": [
+    "T3-L060",
+    "T4-L055",
+    "T4-L056",
+    "T4-L057"
+  ],
+  "updated_word_markdown_pdf_count": 4,
+  "changed_sections": 21,
+  "DSKP_Y3_SP_4_6_2_PDF_page": 61,
+  "DSKP_Y4_SP_3_5_2_PDF_page": 57,
+  "BNM_source": "https://www.bnm.gov.my/latest-rates",
+  "static_currency_rates_included": false,
+  "teacher_needs_dated_BNM_table_for_lesson": true,
+  "PDF_A4_one_page": 585,
+  "year2_3_BA_reference_count": 234,
+  "v47_concrete_intro_count_preserved": 46,
+  "academic_exercise_signoff_count": 0,
+  "year4_34_pair_signoff": false,
+  "actual_telegram_web_staging_e2e": false,
+  "calendar_2027_final_verified": false,
+  "final_ready": false,
+  "production_modified": false,
+  "note": "SP requires RM1 exchange equivalent based on current real-world currency; simulated fictional X/Y/Z rates are not accepted as primary learning activities."
+}

@@ -1,0 +1,34 @@
+{
+  "version": "v50",
+  "source": "v49",
+  "archive_name": "CIKGULAJU_MATEMATIK_v50_585_RPH_GEOMETRI_DAN_GRAF_STAGING.zip",
+  "sha256": "895c87161dd7b62d9cecdea20b1d9efdf7ce0b77a14915d4edc186c4d2c9cdbb",
+  "archive_bytes": 48769382,
+  "source_sha256": "fcc3e7fe07ed6eb9cb0abdff1ef3bd1765c7050a6d8e036b81abd199ae4835b0",
+  "rph_total": 585,
+  "corrected_lessons": [
+    "T2-L111",
+    "T2-L112",
+    "T4-L109",
+    "T4-L114"
+  ],
+  "corrected_sections": 16,
+  "unchanged_individual_rph": 581,
+  "changed_word_pdf_markdown": 12,
+  "rebuilt_year_merged_pdfs": [
+    2,
+    4
+  ],
+  "individual_pdf_a4_one_page": 585,
+  "sources": {
+    "T2_L111_L112": "Buku Aktiviti Matematik Tahun 2 printed pages 145–146, footer SP7.3.1, textbook reference printed BT pages 88–89; DSKP Tahun 2 unit 7 Shape 2D/3D",
+    "T4_L109": "DSKP Matematik Tahun 4 SP 8.1.1 requires constructing piktograf and carta palang, previously only tables",
+    "T4_L114": "RPH chart icon values A 4, B 3, C 5 with 1 icon=2 books, so C-B=2 icons =4 books"
+  },
+  "academic_exercise_signoff": 0,
+  "real_telegram_web_staging_e2e": false,
+  "school_calendar_2027_verified": false,
+  "production_modified": false,
+  "final_ready": false,
+  "release_policy": "Fail closed. Source-specific corrections must not be confused with signoff for all 585 lessons."
+}

@@ -1,0 +1,485 @@
+year,lesson,lhs,rhs,checked_lhs,checked_rhs,status,calc_lhs,calc_rhs,context
+2,13,450 − 125,325,450 - 125,325,ARITHMETIC_CONFIRMED,325,325,"perasi dan menyelesaikan 450 − 125 = 325 bagi baki buku di rak.
+
+**A"
+2,14,450 − 125,325,450 - 125,325,ARITHMETIC_CONFIRMED,325,325,perasi dan menyelesaikan 450 − 125 = 325 bagi baki buku di rak. Muri
+2,15,425 + 163,"588,",425 + 163,588,ARITHMETIC_CONFIRMED,588,588," minit):** Murid mengira 425 + 163 = 588, kemudian menulis satu ayat"
+2,16,125 + 213 + 142,480,125 + 213 + 142,480,ARITHMETIC_CONFIRMED,480,480,* Guru menunjukkan 125 + 213 + 142 = 480 menggunakan carta nilai tem
+2,16,230 + 105 + 54,389,230 + 105 + 54,389,ARITHMETIC_CONFIRMED,389,389,Murid menyelesaikan 230 + 105 + 54 = 389 dan memeriksa tertib penamb
+2,17,752 − 321,431,752 - 321,431,ARITHMETIC_CONFIRMED,431,431,"init):** Guru memodelkan 752 − 321 = 431 dengan blok ratus, puluh da"
+2,17,640 − 185,455,640 - 185,455,ARITHMETIC_CONFIRMED,455,455,):** Murid menyelesaikan 640 − 185 = 455 dan menyemak jawapan menggu
+2,18,850 − 230 − 120,500,850 - 230 - 120,500,ARITHMETIC_CONFIRMED,500,500,Guru melukis model 850 − 230 − 120 = 500 dan menerangkan tolak bertu
+2,18,704 − 153 − 201,350,704 - 153 - 201,350,ARITHMETIC_CONFIRMED,350,350,urid menyelesaikan 704 − 153 − 201 = 350 dalam bentuk lajur lalu men
+2,19,4 × 3,12.,4 * 3,12,ARITHMETIC_CONFIRMED,12,12," setiap kumpulan dan menulis 4 × 3 = 12.
+
+**Aktiviti 2 — Aplikasi/La"
+2,19,5 × 6,30,5 * 6,30,ARITHMETIC_CONFIRMED,30,30,kumpulan 6 token; menyatakan 5 × 6 = 30 dan kaitan dengan tambah ber
+2,20,4 × 3,12.,4 * 3,12,ARITHMETIC_CONFIRMED,12,12, setiap kumpulan dan menulis 4 × 3 = 12. Guru mengurangkan petunjuk 
+2,20,5 × 6,30,5 * 6,30,ARITHMETIC_CONFIRMED,30,30,kumpulan 6 token; menyatakan 5 × 6 = 30 dan kaitan dengan tambah ber
+2,21,7 × 10,70.,7 * 10,70,ARITHMETIC_CONFIRMED,70,70,"luh batang lidi; mengaitkan 7 × 10 = 70.
+
+**Aktiviti 2 — Aplikasi/La"
+2,22,7 × 10,70.,7 * 10,70,ARITHMETIC_CONFIRMED,70,70,luh batang lidi; mengaitkan 7 × 10 = 70. Guru mengurangkan petunjuk 
+2,23,24 ÷ 6,4.,24 / 6,4,ARITHMETIC_CONFIRMED,4,4,"tiap cawan mendapat 4, jadi 24 ÷ 6 = 4.
+
+**Aktiviti 2 — Aplikasi/Lat"
+2,23,18 ÷ 3,6,18 / 3,6,ARITHMETIC_CONFIRMED,6,6,"ada 3 kumpulan dan menyemak 18 ÷ 3 = 6 menggunakan 6 × 3 = 18.
+
+**Ak"
+2,23,6 × 3,18.,6 * 3,18,ARITHMETIC_CONFIRMED,18,18,"yemak 18 ÷ 3 = 6 menggunakan 6 × 3 = 18.
+
+**Aktiviti 3 — Buku Aktivi"
+2,24,24 ÷ 6,4.,24 / 6,4,ARITHMETIC_CONFIRMED,4,4,"tiap cawan mendapat 4, jadi 24 ÷ 6 = 4. Guru mengurangkan petunjuk s"
+2,24,18 ÷ 3,6,18 / 3,6,ARITHMETIC_CONFIRMED,6,6,ada 3 kumpulan dan menyemak 18 ÷ 3 = 6 menggunakan 6 × 3 = 18. Murid
+2,24,6 × 3,18.,6 * 3,18,ARITHMETIC_CONFIRMED,18,18,yemak 18 ÷ 3 = 6 menggunakan 6 × 3 = 18. Murid bertukar hasil kerja 
+2,25,80 ÷ 10,8.,80 / 10,8,ARITHMETIC_CONFIRMED,8,8,"mengandungi 8 pensel, maka 80 ÷ 10 = 8.
+
+**Aktiviti 2 — Aplikasi/Lat"
+2,26,80 ÷ 10,8.,80 / 10,8,ARITHMETIC_CONFIRMED,8,8,"mengandungi 8 pensel, maka 80 ÷ 10 = 8. Guru mengurangkan petunjuk s"
+2,27,120+35,"155,",120+35,155,ARITHMETIC_CONFIRMED,155,155,"l (20 minit):** Guru menulis 120+35=155, kemudian membina cerita ten"
+2,27,40÷5,8,40/5,8,ARITHMETIC_CONFIRMED,8,8, minit):** Murid mereka cerita 40÷5=8 untuk pengagihan alat tulis da
+2,27,9×4,36,9*4,36,ARITHMETIC_CONFIRMED,36,36,untuk pengagihan alat tulis dan 9×4=36 untuk empat kumpulan sembilan
+2,28,120+35,"155,",120+35,155,ARITHMETIC_CONFIRMED,155,155,"l (20 minit):** Guru menulis 120+35=155, kemudian membina cerita ten"
+2,28,40÷5,8,40/5,8,ARITHMETIC_CONFIRMED,8,8,rpasangan: Murid mereka cerita 40÷5=8 untuk pengagihan alat tulis da
+2,28,9×4,36,9*4,36,ARITHMETIC_CONFIRMED,36,36,untuk pengagihan alat tulis dan 9×4=36 untuk empat kumpulan sembilan
+2,41,3/10,0.3.,3/10,0.3,ARITHMETIC_CONFIRMED,3/10,3/10,"tak sama besar dan menyatakan 3/10 = 0.3.
+
+**Aktiviti 2 — Aplikasi/L"
+2,42,3/10,0.3.,3/10,0.3,ARITHMETIC_CONFIRMED,3/10,3/10,tak sama besar dan menyatakan 3/10 = 0.3. Guru mengurangkan petunjuk
+2,55,3/10,0.3,3/10,0.3,ARITHMETIC_CONFIRMED,3/10,3/10,an (20 minit):** Murid memilih 3/10=0.3 bahagian minuman dan 7/10=0.
+2,55,7/10,"0.7,",7/10,0.7,ARITHMETIC_CONFIRMED,7/10,7/10," 3/10=0.3 bahagian minuman dan 7/10=0.7, kemudian menjelaskan bahagi"
+2,56,3/10,0.3,3/10,0.3,ARITHMETIC_CONFIRMED,3/10,3/10,asi berpasangan: Murid memilih 3/10=0.3 bahagian minuman dan 7/10=0.
+2,56,7/10,"0.7,",7/10,0.7,ARITHMETIC_CONFIRMED,7/10,7/10," 3/10=0.3 bahagian minuman dan 7/10=0.7, kemudian menjelaskan bahagi"
+2,61,RM24.30 + RM16.50,RM40.80,24.30 + 16.50,40.80,ARITHMETIC_CONFIRMED,204/5,204/5,d mengira jumlah RM24.30 + RM16.50 = RM40.80 dengan wang mainan dan 
+2,62,RM24.30 + RM16.50,RM40.80,24.30 + 16.50,40.80,ARITHMETIC_CONFIRMED,204/5,204/5,d mengira jumlah RM24.30 + RM16.50 = RM40.80 dengan wang mainan dan 
+2,63,RM12.00 + RM8.50 + RM15.20,"RM35.70,",12.00 + 8.50 + 15.20,35.70,ARITHMETIC_CONFIRMED,357/10,357/10,"arangan RM12.00 + RM8.50 + RM15.20 = RM35.70, lalu memeriksa jumlah."
+2,64,RM12.00 + RM8.50 + RM15.20,"RM35.70,",12.00 + 8.50 + 15.20,35.70,ARITHMETIC_CONFIRMED,357/10,357/10,"arangan RM12.00 + RM8.50 + RM15.20 = RM35.70, lalu memeriksa jumlah."
+2,65,RM80.00 − RM27.50,RM52.50,80.00 - 27.50,52.50,ARITHMETIC_CONFIRMED,105/2,105/2,ari baki selepas RM80.00 − RM27.50 = RM52.50 menggunakan carta ringg
+2,66,RM80.00 − RM27.50,RM52.50,80.00 - 27.50,52.50,ARITHMETIC_CONFIRMED,105/2,105/2,ari baki selepas RM80.00 − RM27.50 = RM52.50 menggunakan carta ringg
+2,67,RM80 − RM19.50 − RM15.30,RM45.20,80 - 19.50 - 15.30,45.20,ARITHMETIC_CONFIRMED,226/5,226/5,emodelkan RM80 − RM19.50 − RM15.30 = RM45.20 sebagai baki selepas du
+2,67,RM100 − RM38.40 − RM21.60,RM40.00,100 - 38.40 - 21.60,40.00,ARITHMETIC_CONFIRMED,40,40, mengira RM100 − RM38.40 − RM21.60 = RM40.00 dengan menyemak jumlah 
+2,68,4 × RM6.50,RM26.00.,4 * 6.50,26.00,ARITHMETIC_CONFIRMED,26,26,"50 setiap satu; mengira 4 × RM6.50 = RM26.00.
+
+**Aktiviti 2 — Aplika"
+2,68,6 × RM8.20,RM49.20,6 * 8.20,49.20,ARITHMETIC_CONFIRMED,246/5,246/5,:** Murid menyelesaikan 6 × RM8.20 = RM49.20 dan membuat model tamba
+2,69,4 × RM6.50,RM26.00.,4 * 6.50,26.00,ARITHMETIC_CONFIRMED,26,26,50 setiap satu; mengira 4 × RM6.50 = RM26.00. Guru mengurangkan petu
+2,69,6 × RM8.20,RM49.20,6 * 8.20,49.20,ARITHMETIC_CONFIRMED,246/5,246/5,:** Murid menyelesaikan 6 × RM8.20 = RM49.20 dan membuat model tamba
+2,70,RM24 ÷ 6,RM4,24 / 6,4,ARITHMETIC_CONFIRMED,4,4,"a rata kepada enam orang: RM24 ÷ 6 = RM4 seorang.
+
+**Aktiviti 2 — Ap"
+2,70,RM45 ÷ 5,RM9,45 / 5,9,ARITHMETIC_CONFIRMED,9,9,"0 minit):** Murid mengira RM45 ÷ 5 = RM9 serta RM80 ÷ 10 = RM8, kemu"
+2,70,RM80 ÷ 10,"RM8,",80 / 10,8,ARITHMETIC_CONFIRMED,8,8,"ira RM45 ÷ 5 = RM9 serta RM80 ÷ 10 = RM8, kemudian menyemak dengan d"
+2,71,RM24 ÷ 6,RM4,24 / 6,4,ARITHMETIC_CONFIRMED,4,4,a rata kepada enam orang: RM24 ÷ 6 = RM4 seorang. Guru mengurangkan 
+2,71,RM45 ÷ 5,RM9,45 / 5,9,ARITHMETIC_CONFIRMED,9,9,"0 minit):** Murid mengira RM45 ÷ 5 = RM9 serta RM80 ÷ 10 = RM8, kemu"
+2,71,RM80 ÷ 10,"RM8,",80 / 10,8,ARITHMETIC_CONFIRMED,8,8,"ira RM45 ÷ 5 = RM9 serta RM80 ÷ 10 = RM8, kemudian menyemak dengan d"
+2,74,RM8.80+RM6.70,RM15.50,8.80+6.70,15.50,ARITHMETIC_CONFIRMED,31/2,31/2, menulis resit contoh RM8.80+RM6.70=RM15.50 dan baki daripada RM25 i
+2,75,RM8.80+RM6.70,RM15.50,8.80+6.70,15.50,ARITHMETIC_CONFIRMED,31/2,31/2, menulis resit contoh RM8.80+RM6.70=RM15.50 dan baki daripada RM25 i
+2,111,12 − 6,6.,12 - 6,6,ARITHMETIC_CONFIRMED,6,6,"ari jumlah 26 buku dan beza 12 − 6 = 6.
+
+**Aktiviti 2 — Aplikasi/Lat"
+2,112,12 − 6,6.,12 - 6,6,ARITHMETIC_CONFIRMED,6,6,ari jumlah 26 buku dan beza 12 − 6 = 6. Guru mengurangkan petunjuk s
+3,12,6 000−2 450,3 550,6000-2450,3550,ARITHMETIC_CONFIRMED,3550,3550,):** Murid mengira baki 6 000−2 450=3 550 serta mengenal operasi yan
+3,13,6 000−2 450,3 550,6000-2450,3550,ARITHMETIC_CONFIRMED,3550,3550,gan: Murid mengira baki 6 000−2 450=3 550 serta mengenal operasi yan
+3,14,3 460 + 2 215,5 675,3460 + 2215,5675,ARITHMETIC_CONFIRMED,5675,5675,t):** Guru menjumlah 3 460 + 2 215 = 5 675 dengan digit disusun meng
+3,14,4 708+1 195,5 903,4708+1195,5903,ARITHMETIC_CONFIRMED,5903,5903,:** Murid menyelesaikan 4 708+1 195=5 903 dan menyemak menggunakan a
+3,15,1 250+2 315+3 100,6 665,1250+2315+3100,6665,ARITHMETIC_CONFIRMED,6665,6665,"** Guru menjumlah 1 250+2 315+3 100=6 665 dengan kaedah lajur.
+
+**Ak"
+3,15,2 408+1 100+650,4 158,2408+1100+650,4158,ARITHMETIC_CONFIRMED,4158,4158,Murid menyelesaikan 2 408+1 100+650=4 158 dan memeriksa pengumpulan 
+3,16,8 000−3 425,4 575,8000-3425,4575,ARITHMETIC_CONFIRMED,4575,4575,it):** Guru menunjukkan 8 000−3 425=4 575 dengan proses meminjam mer
+3,16,6 305−2 117,4 188,6305-2117,4188,ARITHMETIC_CONFIRMED,4188,4188,minit):** Murid mengira 6 305−2 117=4 188 dan menyemak dengan operas
+3,17,9 000−2 350−1 125,5 525,9000-2350-1125,5525,ARITHMETIC_CONFIRMED,5525,5525,"):** Guru mengira 9 000−2 350−1 125=5 525 langkah demi langkah.
+
+**A"
+3,17,7 800−3 200−450,4 150,7800-3200-450,4150,ARITHMETIC_CONFIRMED,4150,4150,Murid menyelesaikan 7 800−3 200−450=4 150 dan menerangkan susunan op
+3,18,1 240×3,3 720,1240*3,3720,ARITHMETIC_CONFIRMED,3720,3720, minit):** Guru menunjukkan 1 240×3=3 720 melalui tambah berulang da
+3,18,406×5,2 030,406*5,2030,ARITHMETIC_CONFIRMED,2030,2030,minit):** Murid menyelesaikan 406×5=2 030 dan 2 103×4=8 412 dengan s
+3,18,2 103×4,8 412,2103*4,8412,ARITHMETIC_CONFIRMED,8412,8412,"nyelesaikan 406×5=2 030 dan 2 103×4=8 412 dengan semakan anggaran.
+
+"
+3,19,1 240×3,3 720,1240*3,3720,ARITHMETIC_CONFIRMED,3720,3720, minit):** Guru menunjukkan 1 240×3=3 720 melalui tambah berulang da
+3,19,406×5,2 030,406*5,2030,ARITHMETIC_CONFIRMED,2030,2030,pasangan: Murid menyelesaikan 406×5=2 030 dan 2 103×4=8 412 dengan s
+3,19,2 103×4,8 412,2103*4,8412,ARITHMETIC_CONFIRMED,8412,8412,nyelesaikan 406×5=2 030 dan 2 103×4=8 412 dengan semakan anggaran. S
+3,20,3 600÷9,400,3600/9,400,ARITHMETIC_CONFIRMED,400,400,"20 minit):** Guru membahagi 3 600÷9=400 dan menyemak 400×9=3 600.
+
+*"
+3,20,400×9,3 600.,400*9,3600,ARITHMETIC_CONFIRMED,3600,3600,"hagi 3 600÷9=400 dan menyemak 400×9=3 600.
+
+**Aktiviti 2 — Aplikasi/"
+3,20,8 000÷10,800,8000/10,800,ARITHMETIC_CONFIRMED,800,800,it):** Murid menyelesaikan 8 000÷10=800 serta 4 200÷100=42 menggunak
+3,20,4 200÷100,42,4200/100,42,ARITHMETIC_CONFIRMED,42,42,"saikan 8 000÷10=800 serta 4 200÷100=42 menggunakan nilai tempat.
+
+**"
+3,21,5 000−1 250+300,4 050,5000-1250+300,4050,ARITHMETIC_CONFIRMED,4050,4050,it):** Guru mengira 5 000−1 250+300=4 050 dan menekankan operasi tam
+3,21,3 600+900−1 250,3 250,3600+900-1250,3250,ARITHMETIC_CONFIRMED,3250,3250,t):** Murid mengira 3 600+900−1 250=3 250 serta menerangkan setiap l
+3,24,1 250+340,1 590,1250+340,1590,ARITHMETIC_CONFIRMED,1590,1590,20 minit):** Guru menulis 1 250+340=1 590 lalu mereka cerita jumlah 
+3,24,2 400÷6,400,2400/6,400,ARITHMETIC_CONFIRMED,400,400,it):** Murid membina cerita 2 400÷6=400 dan 180×3=540 yang memadanka
+3,24,180×3,540,180*3,540,ARITHMETIC_CONFIRMED,540,540,embina cerita 2 400÷6=400 dan 180×3=540 yang memadankan situasi deng
+3,25,3 000−850+120,2 270,3000-850+120,2270,ARITHMETIC_CONFIRMED,2270,2270,Guru menggunakan ayat 3 000−850+120=2 270 untuk membina cerita baki 
+3,25,2 500+350−900,1 950,2500+350-900,1950,ARITHMETIC_CONFIRMED,1950,1950,* Murid mereka cerita 2 500+350−900=1 950 dengan urutan operasi dan 
+3,26,3 000−850+120,2 270,3000-850+120,2270,ARITHMETIC_CONFIRMED,2270,2270,Guru menggunakan ayat 3 000−850+120=2 270 untuk membina cerita baki 
+3,26,2 500+350−900,1 950,2500+350-900,1950,ARITHMETIC_CONFIRMED,1950,1950,: Murid mereka cerita 2 500+350−900=1 950 dengan urutan operasi dan 
+3,27,6 400−2 150−250,4 000,6400-2150-250,4000,ARITHMETIC_CONFIRMED,4000,4000,ayat matematik bagi 6 400−2 150−250=4 000 dan menyemak nilai dalam s
+3,29,1/3,2/6,1/3,2/6,ARITHMETIC_CONFIRMED,1/3,1/3,han (20 minit):** Murid membina 1/3=2/6 serta 2/5=4/10 menggunakan g
+3,29,2/5,4/10,2/5,4/10,ARITHMETIC_CONFIRMED,2/5,2/5,:** Murid membina 1/3=2/6 serta 2/5=4/10 menggunakan grid yang mempu
+3,32,1/4 + 2/4,3/4.,1/4 + 2/4,3/4,ARITHMETIC_CONFIRMED,3/4,3/4,"ur pecahan sama panjang: 1/4 + 2/4 = 3/4.
+
+**Aktiviti 2 — Aplikasi/L"
+3,32,2/5 + 1/5,3/5,2/5 + 1/5,3/5,ARITHMETIC_CONFIRMED,3/5,3/5,minit):** Murid menambah 2/5 + 1/5 = 3/5 dan menerangkan penyebut di
+3,33,4/5 − 2/5,2/5.,4/5 - 2/5,2/5,ARITHMETIC_CONFIRMED,2/5,2/5,"an 2/5 untuk menunjukkan 4/5 − 2/5 = 2/5.
+
+**Aktiviti 2 — Aplikasi/L"
+3,33,3/4 − 1/4,2/4,3/4 - 1/4,2/4,ARITHMETIC_CONFIRMED,1/2,1/2, minit):** Murid mengira 3/4 − 1/4 = 2/4 = 1/2 menggunakan jalur dan
+3,33,2/4,1/2,2/4,1/2,ARITHMETIC_CONFIRMED,1/2,1/2,):** Murid mengira 3/4 − 1/4 = 2/4 = 1/2 menggunakan jalur dan menul
+3,38,0.25 + 0.30,0.55,0.25 + 0.30,0.55,ARITHMETIC_CONFIRMED,11/20,11/20," titik perpuluhan bagi 0.25 + 0.30 = 0.55 dan menanda 55 petak.
+
+**A"
+3,38,0.46 + 0.37,0.83,0.46 + 0.37,0.83,ARITHMETIC_CONFIRMED,83/100,83/100,"** Murid menyelesaikan 0.46 + 0.37 = 0.83 dan 0.08 + 0.12 = 0.20.
+
+*"
+3,38,0.08 + 0.12,0.20.,0.08 + 0.12,0.20,ARITHMETIC_CONFIRMED,1/5,1/5,"0.46 + 0.37 = 0.83 dan 0.08 + 0.12 = 0.20.
+
+**Aktiviti 3 — Buku Akti"
+3,39,0.80 − 0.35,0.45,0.80 - 0.35,0.45,ARITHMETIC_CONFIRMED,9/20,9/20,it):** Guru memodelkan 0.80 − 0.35 = 0.45 menggunakan 80 petak berwa
+3,39,0.76 − 0.24,0.52,0.76 - 0.24,0.52,ARITHMETIC_CONFIRMED,13/25,13/25,"init):** Murid mengira 0.76 − 0.24 = 0.52 dan 0.50 − 0.18 = 0.32.
+
+*"
+3,39,0.50 − 0.18,0.32.,0.50 - 0.18,0.32,ARITHMETIC_CONFIRMED,8/25,8/25,"0.76 − 0.24 = 0.52 dan 0.50 − 0.18 = 0.32.
+
+**Aktiviti 3 — Buku Akti"
+3,44,8/100,"0.08, 60/100",8/100,"0.08, 60/100",CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,parse,parse," (20 minit):** Murid menukar 8/100 = 0.08, 60/100 = 0.60 dan 99/100 "
+3,44,"0.08, 60/100",0.60,"0.08, 60/100",0.60,CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,parse,parse,"Murid menukar 8/100 = 0.08, 60/100 = 0.60 dan 99/100 = 0.99 serta me"
+3,44,99/100,0.99,99/100,0.99,ARITHMETIC_CONFIRMED,99/100,99/100,"0 = 0.08, 60/100 = 0.60 dan 99/100 = 0.99 serta membuat model.
+
+**Ak"
+3,45,35/100,35,35/100,35,CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,7/20,35," minit):** Guru menunjukkan 35/100 = 35% pada grid seratus petak.
+
+*"
+3,47,1/4 + 2/4,3/4,1/4 + 2/4,3/4,ARITHMETIC_CONFIRMED,3/4,3/4,init):** Guru memaparkan 1/4 + 2/4 = 3/4 lalu membina cerita pembaha
+3,47,0.25 + 0.50,0.75,0.25 + 0.50,0.75,ARITHMETIC_CONFIRMED,3/4,3/4,eka cerita menggunakan 0.25 + 0.50 = 0.75 dan 25% daripada 20 = 5 se
+3,48,1/4 + 2/4,3/4,1/4 + 2/4,3/4,ARITHMETIC_CONFIRMED,3/4,3/4,erpandu: Guru memaparkan 1/4 + 2/4 = 3/4 lalu membina cerita pembaha
+3,48,0.25 + 0.50,0.75,0.25 + 0.50,0.75,ARITHMETIC_CONFIRMED,3/4,3/4,eka cerita menggunakan 0.25 + 0.50 = 0.75 dan 25% daripada 20 = 5 se
+3,49,3/4 − 1/4,1/2,3/4 - 1/4,1/2,ARITHMETIC_CONFIRMED,1/2,1/2,"a 20 guli = 5 guli serta 3/4 − 1/4 = 1/2 menggunakan model.
+
+**Aktiv"
+3,50,3/4 − 1/4,1/2,3/4 - 1/4,1/2,ARITHMETIC_CONFIRMED,1/2,1/2,a 20 guli = 5 guli serta 3/4 − 1/4 = 1/2 menggunakan model. Murid be
+3,51,RM1 205.40 + RM784.30,RM1 989.70,1205.40 + 784.30,1989.70,ARITHMETIC_CONFIRMED,19897/10,19897/10,uru menambah RM1 205.40 + RM784.30 = RM1 989.70 menggunakan lajur ri
+3,51,RM2 600.50+RM375.75,RM2 976.25,2600.50+375.75,2976.25,ARITHMETIC_CONFIRMED,11905/4,11905/4,Murid menjumlah RM2 600.50+RM375.75=RM2 976.25 dan menyemak sen yang
+3,52,RM250.40+RM109.60+RM30.20,RM390.20,250.40+109.60+30.20,390.20,ARITHMETIC_CONFIRMED,1951/5,1951/5,"menjumlah RM250.40+RM109.60+RM30.20=RM390.20 secara sejajar.
+
+**Akti"
+3,52,RM1 200.25+RM300.50+RM90.75,RM1 591.50,1200.25+300.50+90.75,1591.50,ARITHMETIC_CONFIRMED,3183/2,3183/2,enambah RM1 200.25+RM300.50+RM90.75=RM1 591.50 dengan semakan lajur.
+3,53,RM500−RM125.40,RM374.60,500-125.40,374.60,ARITHMETIC_CONFIRMED,1873/5,1873/5,:** Guru menunjukkan RM500−RM125.40=RM374.60 dan menerangkan pertuka
+3,53,RM1 000.00−RM78.35,RM921.65,1000.00-78.35,921.65,ARITHMETIC_CONFIRMED,18433/20,18433/20,id menyelesaikan RM1 000.00−RM78.35=RM921.65 dan menyemak dengan tam
+3,54,RM1 000−RM215.50−RM120.25,RM664.25,1000-215.50-120.25,664.25,ARITHMETIC_CONFIRMED,2657/4,2657/4,u menolak RM1 000−RM215.50−RM120.25=RM664.25 dengan susunan langkah 
+3,54,RM900−RM175.75−RM64.25,RM660.00,900-175.75-64.25,660.00,ARITHMETIC_CONFIRMED,660,660,urid mengira RM900−RM175.75−RM64.25=RM660.00 dan menyemak baki wang.
+3,55,RM300+RM125.50−RM45.20,RM380.30,300+125.50-45.20,380.30,ARITHMETIC_CONFIRMED,3803/10,3803/10,enyelesaikan RM300+RM125.50−RM45.20=RM380.30 menggunakan resit rekaa
+3,55,RM500−RM125+RM75,RM450,500-125+75,450,ARITHMETIC_CONFIRMED,450,450,enulis dua langkah RM500−RM125+RM75=RM450 dan menerangkan konteks wa
+3,56,RM300+RM125.50−RM45.20,RM380.30,300+125.50-45.20,380.30,ARITHMETIC_CONFIRMED,3803/10,3803/10,enyelesaikan RM300+RM125.50−RM45.20=RM380.30 menggunakan resit rekaa
+3,56,RM500−RM125+RM75,RM450,500-125+75,450,ARITHMETIC_CONFIRMED,450,450,enulis dua langkah RM500−RM125+RM75=RM450 dan menerangkan konteks wa
+3,57,7×RM14.50,RM101.50,7*14.50,101.50,ARITHMETIC_CONFIRMED,203/2,203/2,init):** Guru menunjukkan 7×RM14.50=RM101.50 untuk tujuh buku berhar
+3,57,10×RM125.30,RM1 253.00,10*125.30,1253.00,ARITHMETIC_CONFIRMED,1253,1253,minit):** Murid mengira 10×RM125.30=RM1 253.00 dan 5×RM9.20=RM46.00.
+3,57,5×RM9.20,RM46.00.,5*9.20,46.00,ARITHMETIC_CONFIRMED,46,46,"10×RM125.30=RM1 253.00 dan 5×RM9.20=RM46.00.
+
+**Aktiviti 3 — Buku Ak"
+3,58,RM600÷6,RM100.,600/6,100,ARITHMETIC_CONFIRMED,100,100,"0 sama rata kepada 6 kelas: RM600÷6=RM100.
+
+**Aktiviti 2 — Aplikasi/"
+3,58,RM1 200÷10,RM120,1200/10,120,ARITHMETIC_CONFIRMED,120,120,):** Murid menyelesaikan RM1 200÷10=RM120 dan RM4 500÷100=RM45; sema
+3,58,RM4 500÷100,RM45,4500/100,45,ARITHMETIC_CONFIRMED,45,45,"an RM1 200÷10=RM120 dan RM4 500÷100=RM45; semak dengan darab.
+
+**Akt"
+3,64,RM12.50×4,RM50,12.50*4,50,ARITHMETIC_CONFIRMED,50,50,20 minit):** Guru menulis RM12.50×4=RM50 lalu membina cerita empat b
+3,64,RM80−RM23.40,RM56.60,80-23.40,56.60,ARITHMETIC_CONFIRMED,283/5,283/5,** Murid mereka cerita RM80−RM23.40=RM56.60 dan RM36÷6=RM6 dengan un
+3,64,RM36÷6,RM6,36/6,6,ARITHMETIC_CONFIRMED,6,6,"ita RM80−RM23.40=RM56.60 dan RM36÷6=RM6 dengan unit dan soalan.
+
+**A"
+3,65,RM12.50×4,RM50,12.50*4,50,ARITHMETIC_CONFIRMED,50,50,20 minit):** Guru menulis RM12.50×4=RM50 lalu membina cerita empat b
+3,65,RM80−RM23.40,RM56.60,80-23.40,56.60,ARITHMETIC_CONFIRMED,283/5,283/5,n: Murid mereka cerita RM80−RM23.40=RM56.60 dan RM36÷6=RM6 dengan un
+3,65,RM36÷6,RM6,36/6,6,ARITHMETIC_CONFIRMED,6,6,ita RM80−RM23.40=RM56.60 dan RM36÷6=RM6 dengan unit dan soalan. Seti
+3,116,8+6+10,24,8+6+10,24,ARITHMETIC_CONFIRMED,24,24,"mengira jumlah buku dipinjam 8+6+10=24 daripada carta yang diberi, k"
+3,117,8+6+10,24,8+6+10,24,ARITHMETIC_CONFIRMED,24,24,"mengira jumlah buku dipinjam 8+6+10=24 daripada carta yang diberi, k"
+4,6,12 450 + 8 320 + 6 125 + 3 105,30 000.,12450 + 8320 + 6125 + 3105,30000,ARITHMETIC_CONFIRMED,30000,30000,agi 12 450 + 8 320 + 6 125 + 3 105 = 30 000. Murid menandakan lajur 
+4,6,23 410 + 15 230 + 8 105,46 745,23410 + 15230 + 8105,46745,ARITHMETIC_CONFIRMED,46745,46745,id mengira 23 410 + 15 230 + 8 105 = 46 745 dan 17 650 + 12 345 + 10
+4,6,17 650 + 12 345 + 10 005 + 9 000,49 000,17650 + 12345 + 10005 + 9000,49000,ARITHMETIC_CONFIRMED,49000,49000,n 17 650 + 12 345 + 10 005 + 9 000 = 49 000; seorang murid menerangk
+4,7,54 200 − 18 675,35 525,54200 - 18675,35525,ARITHMETIC_CONFIRMED,35525,35525,mbimbing pengiraan 54 200 − 18 675 = 35 525 menggunakan bentuk lazim
+4,7,70 000 − 26 450,43 550,70000 - 26450,43550,ARITHMETIC_CONFIRMED,43550,43550,"gan, murid mengira 70 000 − 26 450 = 43 550 dan 83 405 − 17 890 = 65"
+4,7,83 405 − 17 890,65 515,83405 - 17890,65515,ARITHMETIC_CONFIRMED,65515,65515,6 450 = 43 550 dan 83 405 − 17 890 = 65 515; kemudian bertukar kerta
+4,8,55 250 − 18 250,37 000.,55250 - 18250,37000,ARITHMETIC_CONFIRMED,37000,37000,secara berturutan: 55 250 − 18 250 = 37 000. Murid menerangkan uruta
+4,8,65 000 − 12 350 − 7 650,45 000,65000 - 12350 - 7650,45000,ARITHMETIC_CONFIRMED,45000,45000,yelesaikan 65 000 − 12 350 − 7 650 = 45 000 serta 92 500 − 22 500 − 
+4,8,92 500 − 22 500 − 15 000,55 000.,92500 - 22500 - 15000,55000,ARITHMETIC_CONFIRMED,55000,55000,000 serta 92 500 − 22 500 − 15 000 = 55 000. Pasangan menyemak denga
+4,9,304 × 12,"3 648, 456",304 * 12,"3648, 456",CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,parse,parse,"t):** Murid menyelesaikan 304 × 12 = 3 648, 456 × 100 = 45 600 dan 7"
+4,9,"3 648, 456 × 100",45 600,"3648, 456 * 100",45600,CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,parse,parse,"saikan 304 × 12 = 3 648, 456 × 100 = 45 600 dan 72 × 1 000 = 72 000;"
+4,9,72 × 1 000,72 000,72 * 1000,72000,ARITHMETIC_CONFIRMED,72000,72000, 456 × 100 = 45 600 dan 72 × 1 000 = 72 000; murid membandingkan kae
+4,10,3 600 ÷ 12,300,3600 / 12,300,ARITHMETIC_CONFIRMED,300,300,nit):** Guru memodelkan 3 600 ÷ 12 = 300 menggunakan fakta darab 12 
+4,10,12 × 300,3 600,12 * 300,3600,ARITHMETIC_CONFIRMED,3600,3600,0 menggunakan fakta darab 12 × 300 = 3 600; murid menyusun langkah b
+4,11,8 400 ÷ 20,420,8400 / 20,420,ARITHMETIC_CONFIRMED,420,420,nit):** Guru memodelkan 8 400 ÷ 20 = 420 dengan membahagi 840 ÷ 2 da
+4,11,420 × 20,8 400,420 * 20,8400,ARITHMETIC_CONFIRMED,8400,8400,hagi 840 ÷ 2 dan menyemak 420 × 20 = 8 400; murid menjelaskan langka
+4,11,8 400 ÷ 20,"420, 56 000",8400 / 20,"420, 56000",CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,parse,parse,":** Murid menyelesaikan 8 400 ÷ 20 = 420, 56 000 ÷ 100 = 560 dan 72 "
+4,11,"420, 56 000 ÷ 100",560,"420, 56000 / 100",560,CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,parse,parse,"kan 8 400 ÷ 20 = 420, 56 000 ÷ 100 = 560 dan 72 000 ÷ 1 000 = 72; mu"
+4,11,72 000 ÷ 1 000,72,72000 / 1000,72,ARITHMETIC_CONFIRMED,72,72,000 ÷ 100 = 560 dan 72 000 ÷ 1 000 = 72; murid membandingkan kesan p
+4,12,23 400 + 12 500 − 8 300,27 600.,23400 + 12500 - 8300,27600,ARITHMETIC_CONFIRMED,27600,27600,membimbing 23 400 + 12 500 − 8 300 = 27 600. Murid menulis langkah d
+4,13,45 600 − 12 400 + 3 200,36 400,45600 - 12400 + 3200,36400,ARITHMETIC_CONFIRMED,36400,36400,yelesaikan 45 600 − 12 400 + 3 200 = 36 400 dan 18 250 + 20 300 − 7 
+4,13,18 250 + 20 300 − 7 150,31 400.,18250 + 20300 - 7150,31400,ARITHMETIC_CONFIRMED,31400,31400,36 400 dan 18 250 + 20 300 − 7 150 = 31 400. Murid bertukar jawapan 
+4,14,24 × 15 ÷ 6,60,24 * 15 / 6,60,ARITHMETIC_CONFIRMED,60,60,it):** Guru memodelkan 24 × 15 ÷ 6 = 60 dan menunjukkan 24 × 15 = 36
+4,14,24 × 15,"360,",24 * 15,360,ARITHMETIC_CONFIRMED,360,360,"5 ÷ 6 = 60 dan menunjukkan 24 × 15 = 360, kemudian 360 ÷ 6 = 60; mur"
+4,14,360 ÷ 6,60,360 / 6,60,ARITHMETIC_CONFIRMED,60,60,"an 24 × 15 = 360, kemudian 360 ÷ 6 = 60; murid menyemak 60 × 6 = 360"
+4,14,60 × 6,360.,60 * 6,360,ARITHMETIC_CONFIRMED,360,360,"60 ÷ 6 = 60; murid menyemak 60 × 6 = 360.
+
+**Aktiviti 2 — Aplikasi/L"
+4,15,48 × 25 ÷ 10,120,48 * 25 / 10,120,ARITHMETIC_CONFIRMED,120,120,* Murid menyelesaikan 48 × 25 ÷ 10 = 120 dan 1 200 ÷ 8 × 3 = 450; da
+4,15,1 200 ÷ 8 × 3,450,1200 / 8 * 3,450,ARITHMETIC_CONFIRMED,450,450, × 25 ÷ 10 = 120 dan 1 200 ÷ 8 × 3 = 450; dalam kumpulan kecil murid
+4,16,45 − 18,27,45 - 18,27,ARITHMETIC_CONFIRMED,27,27,18 = 45 dan membimbing a = 45 − 18 = 27; murid menggantikan a dengan
+4,16,27 + 18,45.,27 + 18,45,ARITHMETIC_CONFIRMED,45,45,"a dengan 27 untuk menyemak 27 + 18 = 45.
+
+**Aktiviti 2 — Aplikasi/La"
+4,17,72 − 28,44,72 - 28,44,ARITHMETIC_CONFIRMED,44,44,"lkan 72 − p = 28, maka p = 72 − 28 = 44; murid mengesahkan 72 − 44 ="
+4,17,72 − 44,28.,72 - 44,28,ARITHMETIC_CONFIRMED,28,28,28 = 44; murid mengesahkan 72 − 44 = 28. Guru membezakan anu pada ke
+4,19,36 × 120 ÷ 9,480,36 * 120 / 9,480,ARITHMETIC_CONFIRMED,480,480,"las; murid memodelkan 36 × 120 ÷ 9 = 480 pensel setiap kelas.
+
+**Akt"
+4,20,43 + 25,68.,43 + 25,68,ARITHMETIC_CONFIRMED,68,68,"atik, mengira dan menyemak 43 + 25 = 68.
+
+**Aktiviti 2 — Aplikasi/La"
+4,21,75 − 29,46.,75 - 29,46,ARITHMETIC_CONFIRMED,46,46,"n b membentuk 75, jadi b = 75 − 29 = 46.
+
+**Aktiviti 2 — Aplikasi/La"
+4,22,2 − 3/4,1 1/4,2 - 3/4,(1+1/4),ARITHMETIC_CONFIRMED,5/4,5/4,enerokaan: Guru memodelkan 2 − 3/4 = 1 1/4 menggunakan jalur pecahan
+4,22,2 1/2 − 3/4,1 3/4,(2+1/2) - 3/4,(1+3/4),ARITHMETIC_CONFIRMED,7/4,7/4,mbina model kedua bagi 2 1/2 − 3/4 = 1 3/4 dan menerangkan penyamaan
+4,23,4 − 1/2 − 3/4,2 3/4,4 - 1/2 - 3/4,(2+3/4),ARITHMETIC_CONFIRMED,11/4,11/4,):** Guru memodelkan 4 − 1/2 − 3/4 = 2 3/4 dengan jalur pecahan dan 
+4,23,3 1/2 − 1 1/4 − 1/2,1 3/4,(3+1/2) - (1+1/4) - 1/2,(1+3/4),ARITHMETIC_CONFIRMED,7/4,7/4, menyelesaikan 3 1/2 − 1 1/4 − 1/2 = 1 3/4 serta 5 − 1 1/2 − 1/4 = 3
+4,23,5 − 1 1/2 − 1/4,3 1/4,5 - (1+1/2) - 1/4,(3+1/4),ARITHMETIC_CONFIRMED,13/4,13/4, 1/2 = 1 3/4 serta 5 − 1 1/2 − 1/4 = 3 1/4; pasangan menyemak dengan
+4,24,1/2 + 1/4 − 1/8,5/8,1/2 + 1/4 - 1/8,5/8,ARITHMETIC_CONFIRMED,5/8,5/8,n: Guru memodelkan 1/2 + 1/4 − 1/8 = 5/8 menggunakan jalur pecahan. 
+4,27,7/3,2 1/3,7/3,(2+1/3),ARITHMETIC_CONFIRMED,7/3,7/3,alur pecahan untuk menunjukkan 7/3 = 2 1/3 dan 2 2/5 = 12/5. Murid m
+4,27,2 2/5,12/5.,(2+2/5),12/5,ARITHMETIC_CONFIRMED,12/5,12/5, menunjukkan 7/3 = 2 1/3 dan 2 2/5 = 12/5. Murid melukis model dan m
+4,28,11/4,"2 3/4, 3 1/2",11/4,"(2+3/4), (3+1/2)",CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,parse,parse,"minit):** Murid menyelesaikan 11/4 = 2 3/4, 3 1/2 = 7/2 dan 17/5 = 3"
+4,28,"2 3/4, 3 1/2",7/2,"(2+3/4), (3+1/2)",7/2,CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,parse,parse," menyelesaikan 11/4 = 2 3/4, 3 1/2 = 7/2 dan 17/5 = 3 2/5, kemudian "
+4,28,17/5,"3 2/5,",17/5,(3+2/5),ARITHMETIC_CONFIRMED,17/5,17/5,"11/4 = 2 3/4, 3 1/2 = 7/2 dan 17/5 = 3 2/5, kemudian bertukar model "
+4,29,1/2 + 1/4,3/4,1/2 + 1/4,3/4,ARITHMETIC_CONFIRMED,3/4,3/4,init):** Guru membimbing 1/2 + 1/4 = 3/4 dan 1 1/2 + 2/3 = 2 1/6 men
+4,29,1 1/2 + 2/3,2 1/6,(1+1/2) + 2/3,(2+1/6),ARITHMETIC_CONFIRMED,13/6,13/6,ng 1/2 + 1/4 = 3/4 dan 1 1/2 + 2/3 = 2 1/6 menggunakan penyebut sepu
+4,30,1 + 1/3 + 1/6,1 1/2,1 + 1/3 + 1/6,(1+1/2),ARITHMETIC_CONFIRMED,3/2,3/2,:** Guru menunjukkan 1 + 1/3 + 1/6 = 1 1/2 dengan penyebut sepunya e
+4,30,1 + 1/3 + 1/6,1 1/2,1 + 1/3 + 1/6,(1+1/2),ARITHMETIC_CONFIRMED,3/2,3/2, Murid menyelesaikan 1 + 1/3 + 1/6 = 1 1/2 dan 2 1/4 + 1/2 + 1/4 = 3
+4,30,2 1/4 + 1/2 + 1/4,3,(2+1/4) + 1/2 + 1/4,3,ARITHMETIC_CONFIRMED,3,3, 1/6 = 1 1/2 dan 2 1/4 + 1/2 + 1/4 = 3; murid menyemak dengan jalur 
+4,31,1.250 + 0.375,1.625.,1.250 + 0.375,1.625,ARITHMETIC_CONFIRMED,13/8,13/8,an titik perpuluhan: 1.250 + 0.375 = 1.625. Murid menggunakan jadual
+4,31,2.4 + 0.35 + 1.125,3.875,2.4 + 0.35 + 1.125,3.875,ARITHMETIC_CONFIRMED,31/8,31/8,"* Murid mengira 2.4 + 0.35 + 1.125 = 3.875 dan 0.608 + 1.27 = 1.878,"
+4,31,0.608 + 1.27,"1.878,",0.608 + 1.27,1.878,ARITHMETIC_CONFIRMED,939/500,939/500,"5 + 1.125 = 3.875 dan 0.608 + 1.27 = 1.878, kemudian menganggarkan j"
+4,32,3.500 − 1.275,2.225,3.500 - 1.275,2.225,ARITHMETIC_CONFIRMED,89/40,89/40,):** Guru memodelkan 3.500 − 1.275 = 2.225 dengan jadual nilai tempa
+4,32,2.225 + 1.275,3.500.,2.225 + 1.275,3.500,ARITHMETIC_CONFIRMED,7/2,7/2,"mula. Murid menyemak 2.225 + 1.275 = 3.500.
+
+**Aktiviti 2 — Aplikasi"
+4,32,5.000 − 1.250 − 0.375,3.375,5.000 - 1.250 - 0.375,3.375,ARITHMETIC_CONFIRMED,27/8,27/8,enyelesaikan 5.000 − 1.250 − 0.375 = 3.375 dan 4.8 − 2.065 = 2.735; 
+4,32,4.8 − 2.065,2.735,4.8 - 2.065,2.735,ARITHMETIC_CONFIRMED,547/200,547/200,50 − 0.375 = 3.375 dan 4.8 − 2.065 = 2.735; murid membandingkan cara
+4,33,0.375 × 4,1.500,0.375 * 4,1.500,ARITHMETIC_CONFIRMED,3/2,3/2,init):** Guru membimbing 0.375 × 4 = 1.500 dan 1.235 × 10 = 12.350; 
+4,33,1.235 × 10,12.350,1.235 * 10,12.350,ARITHMETIC_CONFIRMED,247/20,247/20,g 0.375 × 4 = 1.500 dan 1.235 × 10 = 12.350; murid menerangkan nilai
+4,34,0.246 × 3,0.738,0.246 * 3,0.738,ARITHMETIC_CONFIRMED,369/500,369/500,init):** Guru membimbing 0.246 × 3 = 0.738 pada carta nilai tempat p
+4,34,0.246 × 3,"0.738, 0.125",0.246 * 3,"0.738, 0.125",CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,parse,parse,"):** Murid menyelesaikan 0.246 × 3 = 0.738, 0.125 × 100 = 12.5 dan 0"
+4,34,"0.738, 0.125 × 100",12.5,"0.738, 0.125 * 100",12.5,CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,parse,parse,"kan 0.246 × 3 = 0.738, 0.125 × 100 = 12.5 dan 0.008 × 1000 = 8; muri"
+4,34,0.008 × 1000,8,0.008 * 1000,8,ARITHMETIC_CONFIRMED,8,8,.125 × 100 = 12.5 dan 0.008 × 1000 = 8; murid menyemak dengan anggar
+4,35,1.2 ÷ 4,0.3,1.2 / 4,0.3,ARITHMETIC_CONFIRMED,3/10,3/10, minit):** Guru memodelkan 1.2 ÷ 4 = 0.3 dan 6.25 ÷ 10 = 0.625 denga
+4,35,6.25 ÷ 10,0.625,6.25 / 10,0.625,ARITHMETIC_CONFIRMED,5/8,5/8,delkan 1.2 ÷ 4 = 0.3 dan 6.25 ÷ 10 = 0.625 dengan jadual nilai tempa
+4,35,0.3 × 4,1.2.,0.3 * 4,1.2,ARITHMETIC_CONFIRMED,6/5,6/5," tempat. Murid mengesahkan 0.3 × 4 = 1.2.
+
+**Aktiviti 2 — Aplikasi/L"
+4,35,2.448 ÷ 3,"0.816, 12.5",2.448 / 3,"0.816, 12.5",CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,parse,parse,"):** Murid menyelesaikan 2.448 ÷ 3 = 0.816, 12.5 ÷ 100 = 0.125 dan 7"
+4,35,"0.816, 12.5 ÷ 100",0.125,"0.816, 12.5 / 100",0.125,CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,parse,parse,"ikan 2.448 ÷ 3 = 0.816, 12.5 ÷ 100 = 0.125 dan 7 ÷ 1000 = 0.007; mur"
+4,35,7 ÷ 1000,0.007,7 / 1000,0.007,ARITHMETIC_CONFIRMED,7/1000,7/1000,"6, 12.5 ÷ 100 = 0.125 dan 7 ÷ 1000 = 0.007; murid menyemak melalui p"
+4,36,25/100,25,25/100,25,CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,1/4,25,membimbing murid menyatakan 25/100 = 25% dan 1/4 = 25% melalui petak
+4,36,1/4,25,1/4,25,CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,1/4,25,id menyatakan 25/100 = 25% dan 1/4 = 25% melalui petak seratus. Muri
+4,36,1/2,50,1/2,50,CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,1/2,50,"id 100 petak untuk menunjukkan 1/2 = 50% dan 1/4 = 25%, kemudian men"
+4,36,1/4,25,1/4,25,CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,1/4,25,"ntuk menunjukkan 1/2 = 50% dan 1/4 = 25%, kemudian menulis pasangan "
+4,38,1/4 × 20,5,1/4 * 20,5,ARITHMETIC_CONFIRMED,5,5,odelkan 25% daripada 20 = 1/4 × 20 = 5 menggunakan 20 pembilang. Mur
+4,41,"RM12,450.75 + RM3,208.50 + RM125.25","RM15,784.50",12450.75 + 3208.50 + 125.25,15784.50,ARITHMETIC_CONFIRMED,31569/2,31569/2,"M12,450.75 + RM3,208.50 + RM125.25 = RM15,784.50 dengan penjajaran r"
+4,41,"RM2,350.40 + RM875.60 + RM120.00","RM3,346.00",2350.40 + 875.60 + 120.00,3346.00,ARITHMETIC_CONFIRMED,3346,3346,"h RM2,350.40 + RM875.60 + RM120.00 = RM3,346.00 dan RM8,100.25 + RM2"
+4,41,"RM8,100.25 + RM2,009.75","RM10,110.00",8100.25 + 2009.75,10110.00,ARITHMETIC_CONFIRMED,10110,10110,"346.00 dan RM8,100.25 + RM2,009.75 = RM10,110.00; kemudian membandin"
+4,42,"RM5,000.00 − RM1,275.80","RM3,724.20",5000.00 - 1275.80,3724.20,ARITHMETIC_CONFIRMED,18621/5,18621/5,"enunjukkan RM5,000.00 − RM1,275.80 = RM3,724.20 menggunakan jadual n"
+4,42,"RM8,000.00 − RM1,250.50 − RM749.50","RM6,000.00",8000.00 - 1250.50 - 749.50,6000.00,ARITHMETIC_CONFIRMED,6000,6000,"RM8,000.00 − RM1,250.50 − RM749.50 = RM6,000.00 serta RM2,500.25 − R"
+4,42,"RM2,500.25 − RM875.75","RM1,624.50",2500.25 - 875.75,1624.50,ARITHMETIC_CONFIRMED,3249/2,3249/2,"000.00 serta RM2,500.25 − RM875.75 = RM1,624.50; murid menulis baki "
+4,43,RM12.50 × 8,RM100.00,12.50 * 8,100.00,ARITHMETIC_CONFIRMED,100,100,mbimbing murid menulis RM12.50 × 8 = RM100.00 dan menyemak menggunak
+4,44,RM247.50 + RM49.50,RM297.00.,247.50 + 49.50,297.00,ARITHMETIC_CONFIRMED,297,297,"4.75 × (10+2) = RM247.50 + RM49.50 = RM297.00.
+
+**Aktiviti 2 — Aplik"
+4,44,RM24.75 × 12,RM297.00,24.75 * 12,297.00,ARITHMETIC_CONFIRMED,297,297,nit):** Murid mengira RM24.75 × 12 = RM297.00 dan RM125.50 × 15 = RM
+4,44,RM125.50 × 15,"RM1,882.50",125.50 * 15,1882.50,ARITHMETIC_CONFIRMED,3765/2,3765/2," × 12 = RM297.00 dan RM125.50 × 15 = RM1,882.50 dalam kumpulan; mere"
+4,45,RM96.00 ÷ 8,RM12.00,96.00 / 8,12.00,ARITHMETIC_CONFIRMED,12,12,t):** Guru menunjukkan RM96.00 ÷ 8 = RM12.00 menggunakan wang mainan
+4,46,15 × RM25,RM375.,15 * 25,375,ARITHMETIC_CONFIRMED,375,375,"setiap orang RM25 kerana 15 × RM25 = RM375.
+
+**Aktiviti 2 — Aplikasi"
+4,46,RM375.00 ÷ 15,RM25.00,375.00 / 15,25.00,ARITHMETIC_CONFIRMED,25,25," Murid menyelesaikan RM375.00 ÷ 15 = RM25.00 dan RM1,248.00 ÷ 12 = R"
+4,46,"RM1,248.00 ÷ 12",RM104.00,1248.00 / 12,104.00,ARITHMETIC_CONFIRMED,104,104,"÷ 15 = RM25.00 dan RM1,248.00 ÷ 12 = RM104.00; setiap kumpulan menye"
+4,47,RM200.00 + RM75.00 − RM40.00,RM235.00,200.00 + 75.00 - 40.00,235.00,ARITHMETIC_CONFIRMED,235,235,elkan RM200.00 + RM75.00 − RM40.00 = RM235.00 menggunakan garis nomb
+4,48,RM850.50 − RM125.25 + RM49.75,RM775.00,850.50 - 125.25 + 49.75,775.00,ARITHMETIC_CONFIRMED,775,775,ulis RM850.50 − RM125.25 + RM49.75 = RM775.00 dan menerangkan penyus
+4,48,RM850.50 − RM125.25 + RM49.75,RM775.00,850.50 - 125.25 + 49.75,775.00,ARITHMETIC_CONFIRMED,775,775,"gira RM850.50 − RM125.25 + RM49.75 = RM775.00 dan RM1,200.00 + RM300"
+4,48,"RM1,200.00 + RM300.00 − RM450.00","RM1,050.00",1200.00 + 300.00 - 450.00,1050.00,ARITHMETIC_CONFIRMED,1050,1050,"n RM1,200.00 + RM300.00 − RM450.00 = RM1,050.00; murid menyemak kewa"
+4,49,RM18.00 × 6 ÷ 3,RM36.00,18.00 * 6 / 3,36.00,ARITHMETIC_CONFIRMED,36,36,** Guru memodelkan RM18.00 × 6 ÷ 3 = RM36.00 bagi setiap kelas; muri
+4,50,RM25 × 8 ÷ 4,RM50,25 * 8 / 4,50,ARITHMETIC_CONFIRMED,50,50,):** Guru menunjukkan RM25 × 8 ÷ 4 = RM50 dengan lapan harga sama ya
+4,50,RM25.00 × 8 ÷ 4,RM50.00,25.00 * 8 / 4,50.00,ARITHMETIC_CONFIRMED,50,50,urid menyelesaikan RM25.00 × 8 ÷ 4 = RM50.00 dan RM360.00 ÷ 6 × 2 = 
+4,50,RM360.00 ÷ 6 × 2,RM120.00,360.00 / 6 * 2,120.00,ARITHMETIC_CONFIRMED,120,120,÷ 4 = RM50.00 dan RM360.00 ÷ 6 × 2 = RM120.00; setiap pasangan meluk
+4,51,RM25 + RM10 + RM15,RM50.,25 + 10 + 15,50,ARITHMETIC_CONFIRMED,50,50,"murid memeriksa RM25 + RM10 + RM15 = RM50.
+
+**Aktiviti 2 — Aplikasi/"
+4,84,2 000 + 500 − 750,1 750,2000 + 500 - 750,1750,ARITHMETIC_CONFIRMED,1750,1750," lalu menghitung 2 000 + 500 − 750 = 1 750 g = 1 kg 750 g.
+
+**Aktivi"
+4,92,200 ÷ 4,50,200 / 4,50,ARITHMETIC_CONFIRMED,50,50,"epada empat bahagian sama, 200 ÷ 4 = 50 cm setiap bahagian.
+
+**Aktiv"
+4,96,3+4+5,12,3+4+5,12,ARITHMETIC_CONFIRMED,12,12,d mengira perimeter segi tiga 3+4+5=12 cm; segi lima lima sisi 2 cm=
+4,97,6×4,24,6*4,24,ARITHMETIC_CONFIRMED,24,24,embimbing luas segi empat tepat 6×4=24 unit² dan luas segi tiga bers
+4,97,6×4,12,6*4,12,CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,24,12,"an tapak 6 dan tinggi 4 ialah ½×6×4=12 unit² melalui petak grid.
+
+**"
+4,97,7×3,21,7*3,21,ARITHMETIC_CONFIRMED,21,21,ma 5=25 unit²; segi empat tepat 7×3=21 unit²; segi tiga sama kaki ta
+4,105,RM12 ÷ 3,RM4,12 / 3,4,ARITHMETIC_CONFIRMED,4,4,rid mengira harga 1 buku: RM12 ÷ 3 = RM4; kemudian harga 5 buku: RM4
+4,105,RM4 × 5,RM20.,4 * 5,20,ARITHMETIC_CONFIRMED,20,20,M4; kemudian harga 5 buku: RM4 × 5 = RM20. Murid menerangkan dua lan
+4,106,RM10 ÷ 4,RM2.50,10 / 4,2.50,ARITHMETIC_CONFIRMED,5/2,5/2,ga RM10: kos sebatang pen RM10 ÷ 4 = RM2.50; murid meramal harga 6 p
+5,9,182 587 + 237 317,419 904,182587 + 237317,419904,ARITHMETIC_CONFIRMED,419904,419904,nunjukkan jumlah 182 587 + 237 317 = 419 904 dan menyusun angka seja
+5,9,980 + 2 350 + 145 920,149 250,980 + 2350 + 145920,149250,ARITHMETIC_CONFIRMED,149250,149250,rid menambah 980 + 2 350 + 145 920 = 149 250; menyemak munasabahnya 
+5,10,100 685 − 5 322,95 363,100685 - 5322,95363,ARITHMETIC_CONFIRMED,95363,95363,Guru menyelesaikan 100 685 − 5 322 = 95 363 dengan langkah meminjam 
+5,10,600 000 − 24 750 − 6 098,569 152,600000 - 24750 - 6098,569152,ARITHMETIC_CONFIRMED,569152,569152,elesaikan 600 000 − 24 750 − 6 098 = 569 152; memeriksa jawapan deng
+5,11,35 215 × 10,352 150,35215 * 10,352150,ARITHMETIC_CONFIRMED,352150,352150,t):** Guru menunjukkan 35 215 × 10 = 352 150 dan mengaitkan pola dar
+5,11,2 604 × 43,111 972,2604 * 43,111972,ARITHMETIC_CONFIRMED,111972,111972,minit):** Murid mengira 2 604 × 43 = 111 972 menggunakan pecahan 40+
+5,12,734 000 ÷ 100,7 340,734000 / 100,7340,ARITHMETIC_CONFIRMED,7340,7340,:** Guru menunjukkan 734 000 ÷ 100 = 7 340 dengan gerakan nilai temp
+5,12,165 090 ÷ 10,16 509,165090 / 10,16509,ARITHMETIC_CONFIRMED,16509,16509,nit):** Murid mengira 165 090 ÷ 10 = 16 509 dan 36 000 ÷ 12 = 3 000;
+5,12,36 000 ÷ 12,3 000,36000 / 12,3000,ARITHMETIC_CONFIRMED,3000,3000, 090 ÷ 10 = 16 509 dan 36 000 ÷ 12 = 3 000; semak melalui darab song
+5,13,30 + 12 × 4,78,30 + 12 * 4,78,ARITHMETIC_CONFIRMED,78,78,+ 12) × 4 = 168 dengan 30 + 12 × 4 = 78 untuk menerangkan tanda kuru
+5,13,30 × 4 + 20,"140,",30 * 4 + 20,140,ARITHMETIC_CONFIRMED,140,140,"− (125 + 75) = 400 dan 30 × 4 + 20 = 140, kemudian menerangkan terti"
+5,14,30 + 12 × 4,78,30 + 12 * 4,78,ARITHMETIC_CONFIRMED,78,78,+ 12) × 4 = 168 dengan 30 + 12 × 4 = 78 untuk menerangkan tanda kuru
+5,14,30 × 4 + 20,"140,",30 * 4 + 20,140,ARITHMETIC_CONFIRMED,140,140,"− (125 + 75) = 400 dan 30 × 4 + 20 = 140, kemudian menerangkan terti"
+5,15,96 ÷ 8,12.,96 / 8,12,ARITHMETIC_CONFIRMED,12,12,"engan operasi songsang; □ = 96 ÷ 8 = 12.
+
+**Aktiviti 2 — Aplikasi/La"
+5,16,96 ÷ 8,12.,96 / 8,12,ARITHMETIC_CONFIRMED,12,12,engan operasi songsang; □ = 96 ÷ 8 = 12. Guru meminta murid membina 
+5,17,35 × 12,420.,35 * 12,420,ARITHMETIC_CONFIRMED,420,420,"kkan □ ÷ 12 = 35, maka □ = 35 × 12 = 420.
+
+**Aktiviti 2 — Aplikasi/L"
+5,18,35 × 12,420.,35 * 12,420,ARITHMETIC_CONFIRMED,420,420,"kkan □ ÷ 12 = 35, maka □ = 35 × 12 = 420. Guru meminta murid membina"
+5,19,400 000−175 000,225 000,400000-175000,225000,ARITHMETIC_CONFIRMED,225000,225000,ntukan baki selepas 400 000−175 000=225 000 dan menerangkan makna no
+5,20,400 000−175 000,225 000,400000-175000,225000,ARITHMETIC_CONFIRMED,225000,225000,ntukan baki selepas 400 000−175 000=225 000 dan menerangkan makna no
+5,21,25×40−120,880,25*40-120,880,ARITHMETIC_CONFIRMED,880,880,"udian 120 buku dipinjam; 25×40−120 = 880 buku.
+
+**Pengukuhan dan pen"
+5,22,25×40−120,880,25*40-120,880,ARITHMETIC_CONFIRMED,880,880,udian 120 buku dipinjam; 25×40−120 = 880 buku. Setiap murid juga mem
+5,25,3/4 × 8,6,3/4 * 8,6,ARITHMETIC_CONFIRMED,6,6, minit):** Guru memodelkan 3/4 × 8 = 6 menggunakan lapan objek dan j
+5,25,2 1/2 × 2/3,5/3,(2+1/2) * 2/3,5/3,ARITHMETIC_CONFIRMED,5/3,5/3,init):** Murid mengira 2 1/2 × 2/3 = 5/3 = 1 2/3; memeriksa dengan m
+5,25,5/3,1 2/3,5/3,(1+2/3),ARITHMETIC_CONFIRMED,5/3,5/3,** Murid mengira 2 1/2 × 2/3 = 5/3 = 1 2/3; memeriksa dengan model/k
+5,26,3/4 × 8,6,3/4 * 8,6,ARITHMETIC_CONFIRMED,6,6, berpandu: Guru memodelkan 3/4 × 8 = 6 menggunakan lapan objek dan j
+5,26,2 1/2 × 2/3,5/3,(2+1/2) * 2/3,5/3,ARITHMETIC_CONFIRMED,5/3,5/3,init):** Murid mengira 2 1/2 × 2/3 = 5/3 = 1 2/3; memeriksa dengan m
+5,26,5/3,1 2/3,5/3,(1+2/3),ARITHMETIC_CONFIRMED,5/3,5/3,** Murid mengira 2 1/2 × 2/3 = 5/3 = 1 2/3; memeriksa dengan model/k
+5,29,5.275 + 1.300 − 0.625,5.950.,5.275 + 1.300 - 0.625,5.950,ARITHMETIC_CONFIRMED,119/20,119/20,"puluhan bagi 5.275 + 1.300 − 0.625 = 5.950.
+
+**Aktiviti 2 — Aplikasi"
+5,29,8.250 − 1.750 + 0.500,7.000,8.250 - 1.750 + 0.500,7.000,ARITHMETIC_CONFIRMED,7,7,enyelesaikan 8.250 − 1.750 + 0.500 = 7.000 dan menyemak dengan angga
+5,30,5.275 + 1.300 − 0.625,5.950.,5.275 + 1.300 - 0.625,5.950,ARITHMETIC_CONFIRMED,119/20,119/20,puluhan bagi 5.275 + 1.300 − 0.625 = 5.950. Guru mengurangkan petunj
+5,30,8.250 − 1.750 + 0.500,7.000,8.250 - 1.750 + 0.500,7.000,ARITHMETIC_CONFIRMED,7,7,enyelesaikan 8.250 − 1.750 + 0.500 = 7.000 dan menyemak dengan angga
+5,31,1.250 × 12,15.000,1.250 * 12,15.000,ARITHMETIC_CONFIRMED,15,15,it):** Guru menunjukkan 1.250 × 12 = 15.000 dan menyemak anggaran 1.
+5,31,0.125 × 8,1.000,0.125 * 8,1.000,ARITHMETIC_CONFIRMED,1,1, minit):** Murid mengira 0.125 × 8 = 1.000 dan 2.345 × 100 = 234.500
+5,31,2.345 × 100,234.500.,2.345 * 100,234.500,ARITHMETIC_CONFIRMED,469/2,469/2," 0.125 × 8 = 1.000 dan 2.345 × 100 = 234.500.
+
+**Pengukuhan dan pent"
+5,32,1.250 × 12,15.000,1.250 * 12,15.000,ARITHMETIC_CONFIRMED,15,15,pandu: Guru menunjukkan 1.250 × 12 = 15.000 dan menyemak anggaran 1.
+5,32,0.125 × 8,1.000,0.125 * 8,1.000,ARITHMETIC_CONFIRMED,1,1, minit):** Murid mengira 0.125 × 8 = 1.000 dan 2.345 × 100 = 234.500
+5,32,2.345 × 100,234.500.,2.345 * 100,234.500,ARITHMETIC_CONFIRMED,469/2,469/2, 0.125 × 8 = 1.000 dan 2.345 × 100 = 234.500. Murid bertukar hasil k
+5,33,7.500 ÷ 3,2.500,7.500 / 3,2.500,ARITHMETIC_CONFIRMED,5/2,5/2,nit):** Guru menunjukkan 7.500 ÷ 3 = 2.500 dan membuktikannya dengan
+5,33,5.600 ÷ 7,0.800,5.600 / 7,0.800,ARITHMETIC_CONFIRMED,4/5,4/5,"):** Murid menyelesaikan 5.600 ÷ 7 = 0.800 dan 2.500 ÷ 100 = 0.025.
+"
+5,33,2.500 ÷ 100,0.025.,2.500 / 100,0.025,ARITHMETIC_CONFIRMED,1/40,1/40," 5.600 ÷ 7 = 0.800 dan 2.500 ÷ 100 = 0.025.
+
+**Pengukuhan dan pentak"
+5,34,7.500 ÷ 3,2.500,7.500 / 3,2.500,ARITHMETIC_CONFIRMED,5/2,5/2,rpandu: Guru menunjukkan 7.500 ÷ 3 = 2.500 dan membuktikannya dengan
+5,34,5.600 ÷ 7,0.800,5.600 / 7,0.800,ARITHMETIC_CONFIRMED,4/5,4/5,):** Murid menyelesaikan 5.600 ÷ 7 = 0.800 dan 2.500 ÷ 100 = 0.025. 
+5,34,2.500 ÷ 100,0.025.,2.500 / 100,0.025,ARITHMETIC_CONFIRMED,1/40,1/40, 5.600 ÷ 7 = 0.800 dan 2.500 ÷ 100 = 0.025. Murid bertukar hasil ker
+5,37,1.25 × 80,100.,1.25 * 80,100,ARITHMETIC_CONFIRMED,100,100,"ukkan 125% daripada 80 = 1.25 × 80 = 100.
+
+**Aktiviti 2 — Aplikasi/L"
+5,38,1.25 × 80,100.,1.25 * 80,100,ARITHMETIC_CONFIRMED,100,100,ukkan 125% daripada 80 = 1.25 × 80 = 100. Guru mengurangkan petunjuk
+5,41,RM1 205.50 + RM234.25,RM1 439.75,1205.50 + 234.25,1439.75,ARITHMETIC_CONFIRMED,5759/4,5759/4,id menjumlah RM1 205.50 + RM234.25 = RM1 439.75 dan menerangkan pemi
+5,42,RM500−RM125.70−RM50.25,RM324.05.,500-125.70-50.25,324.05,ARITHMETIC_CONFIRMED,6481/20,6481/20,"dan RM50.25; RM500−RM125.70−RM50.25=RM324.05.
+
+**Aktiviti 2 — Aplika"
+5,42,RM1 000−RM240.50−RM359.20,RM400.30,1000-240.50-359.20,400.30,ARITHMETIC_CONFIRMED,4003/10,4003/10,cari baki RM1 000−RM240.50−RM359.20=RM400.30 dan menyemak dengan tam
+5,43,RM500−RM125.70−RM50.25,RM324.05.,500-125.70-50.25,324.05,ARITHMETIC_CONFIRMED,6481/20,6481/20,dan RM50.25; RM500−RM125.70−RM50.25=RM324.05. Guru meminta murid mem
+5,43,RM1 000−RM240.50−RM359.20,RM400.30,1000-240.50-359.20,400.30,ARITHMETIC_CONFIRMED,4003/10,4003/10,cari baki RM1 000−RM240.50−RM359.20=RM400.30 dan menyemak dengan tam
+5,44,12×RM25.50,RM306.00.,12*25.50,306.00,ARITHMETIC_CONFIRMED,306,306,"ada RM25.50 setiap satu: 12×RM25.50=RM306.00.
+
+**Aktiviti 2 — Aplika"
+5,44,100 × RM12.40,"RM1 240.00, 1 000",100 * 12.40,"1240.00, 1000",CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,parse,parse," Murid menyelesaikan 100 × RM12.40 = RM1 240.00, 1 000 × RM24.50 = R"
+5,44,"RM1 240.00, 1 000 × RM24.50",RM24 500.00,"1240.00, 1000 * 24.50",24500.00,CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,parse,parse,"2.40 = RM1 240.00, 1 000 × RM24.50 = RM24 500.00 dan 8 × RM7.25 = RM"
+5,44,8 × RM7.25,RM58.00,8 * 7.25,58.00,ARITHMETIC_CONFIRMED,58,58,"24.50 = RM24 500.00 dan 8 × RM7.25 = RM58.00; semak kedudukan sen.
+
+"
+5,44,RM25.50×12,RM306.00,25.50*12,306.00,ARITHMETIC_CONFIRMED,306,306,Empat soalan nilai wang: RM25.50×12=RM306.00; RM12.40×100=RM1 240.00
+5,44,RM12.40×100,RM1 240.00,12.40*100,1240.00,ARITHMETIC_CONFIRMED,1240,1240,g: RM25.50×12=RM306.00; RM12.40×100=RM1 240.00; RM24.50×1 000=RM24 5
+5,44,RM24.50×1 000,RM24 500.00,24.50*1000,24500.00,ARITHMETIC_CONFIRMED,24500,24500,12.40×100=RM1 240.00; RM24.50×1 000=RM24 500.00; RM7.25×8=RM58.00. S
+5,44,RM7.25×8,RM58.00.,7.25*8,58.00,ARITHMETIC_CONFIRMED,58,58,RM24.50×1 000=RM24 500.00; RM7.25×8=RM58.00. Sasaran 3/4 betul dan h
+5,45,35 × RM120.00,RM4 200.00,35 * 120.00,4200.00,ARITHMETIC_CONFIRMED,4200,4200,membimbing pengiraan 35 × RM120.00 = RM4 200.00 menggunakan 30×120 d
+5,45,100 × RM129.90,RM12 990.00,100 * 129.90,12990.00,ARITHMETIC_CONFIRMED,12990,12990,** Murid membanding 100 × RM129.90 = RM12 990.00 dengan 1 000 × RM12
+5,45,1 000 × RM125.00,RM125 000.00,1000 * 125.00,125000.00,ARITHMETIC_CONFIRMED,125000,125000,M12 990.00 dengan 1 000 × RM125.00 = RM125 000.00; pasangan menerang
+5,45,RM120×35,RM4 200,120*35,4200,ARITHMETIC_CONFIRMED,4200,4200, (10 minit):** Empat item: RM120×35=RM4 200; RM129.90×100=RM12 990; 
+5,45,RM129.90×100,RM12 990,129.90*100,12990,ARITHMETIC_CONFIRMED,12990,12990,tem: RM120×35=RM4 200; RM129.90×100=RM12 990; RM125×1 000=RM125 000;
+5,45,RM125×1 000,RM125 000,125*1000,125000,ARITHMETIC_CONFIRMED,125000,125000, RM129.90×100=RM12 990; RM125×1 000=RM125 000; RM25.50×12=RM306. Set
+5,45,RM25.50×12,RM306.,25.50*12,306,ARITHMETIC_CONFIRMED,306,306,; RM125×1 000=RM125 000; RM25.50×12=RM306. Setiap murid menyemak has
+5,46,RM1 250.00÷25,RM50.00,1250.00/25,50.00,ARITHMETIC_CONFIRMED,50,50,"nit):** Murid mengira RM1 250.00÷25=RM50.00 dan RM900.00÷100=RM9.00,"
+5,46,RM900.00÷100,"RM9.00,",900.00/100,9.00,ARITHMETIC_CONFIRMED,9,9," 250.00÷25=RM50.00 dan RM900.00÷100=RM9.00, kemudian melakukan darab"
+5,53,10×RM88,RM880,10*88,880,ARITHMETIC_CONFIRMED,880,880, tunai RM800 dengan ansuran 10×RM88=RM880; terangkan tambahan RM80 s
+5,54,10×RM88,RM880,10*88,880,ARITHMETIC_CONFIRMED,880,880, tunai RM800 dengan ansuran 10×RM88=RM880; terangkan tambahan RM80 s
+5,82,5 − 1.2 − 0.8,3,5 - 1.2 - 0.8,3,ARITHMETIC_CONFIRMED,3,3,it):** Murid mengira 5 − 1.2 − 0.8 = 3 kg dan membina dua soalan pen
+5,90,8.4 − 1.36 − 4.91,2.13,8.4 - 1.36 - 4.91,2.13,ARITHMETIC_CONFIRMED,213/100,213/100,id menyelesaikan 8.4 − 1.36 − 4.91 = 2.13 L dan masalah tiga bekas y
+5,92,2.5 ÷ 4,0.625,2.5 / 4,0.625,ARITHMETIC_CONFIRMED,5/8,5/8,"empat bekas. Murid mengira 2.5 ÷ 4 = 0.625 L setiap bekas.
+
+**Aktivi"
+5,100,4 × 4,16,4 * 4,16,ARITHMETIC_CONFIRMED,16,16,** Murid memperoleh luas A = 4 × 4 = 16 unit² dan luas B = 1/2 × 2 ×
+5,100,1/2 × 2 × 4,4,1/2 * 2 * 4,4,ARITHMETIC_CONFIRMED,4,4," 16 unit² dan luas B = 1/2 × 2 × 4 = 4 unit²; jumlah 20 unit², kemud"
+5,102,2 × 1 × 3,6,2 * 1 * 3,6,ARITHMETIC_CONFIRMED,6,6, minit):** Murid mengira 2 × 1 × 3 = 6 unit³ dan 9 × 2 × 3 = 54 unit
+5,102,9 × 2 × 3,54,9 * 2 * 3,54,ARITHMETIC_CONFIRMED,54,54, 2 × 1 × 3 = 6 unit³ dan 9 × 2 × 3 = 54 unit³; isi padu gabungan = 6
+5,104,4×4−2×4,28,4*4-2*4,28,CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,8,28,"a kali sisi kongsi: 2(4+6)+4×4−2×4 = 28 m, kemudian melakar masalah "
+6,17,48 ÷ 6,8,48 / 6,8,ARITHMETIC_CONFIRMED,8,8,"29 (perdana), 39 (gubahan), 48 ÷ 6 = 8 dan 36 = 6 × 6 (gubahan). Mur"
+6,19,1.5+0.25,1.75,1.5+0.25,1.75,ARITHMETIC_CONFIRMED,7/4,7/4,t item (nilai dalam juta): 1.5+0.25=1.75; 2.4−(0.6+0.25)=1.55; (2.4−
+6,19,0.75×2+0.5,2.0.,0.75*2+0.5,2.0,ARITHMETIC_CONFIRMED,2,2,"55; (2.4−0.6)+0.25=2.05; 0.75×2+0.5=2.0. Sasaran 3/4 tepat.
+
+**Penut"
+6,21,3/4 ÷ 3,1/4,3/4 / 3,1/4,ARITHMETIC_CONFIRMED,1/4,1/4, minit):** Guru memodelkan 3/4 ÷ 3 = 1/4 dengan membahagi jalur tiga
+6,21,2 1/4 ÷ 3,3/4,(2+1/4) / 3,3/4,ARITHMETIC_CONFIRMED,3/4,3/4,"):** Murid menyelesaikan 2 1/4 ÷ 3 = 3/4 dan 2/3 ÷ 1/6 = 4, lalu men"
+6,21,2/3 ÷ 1/6,"4,",2/3 / 1/6,4,CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,1/9,4,"ikan 2 1/4 ÷ 3 = 3/4 dan 2/3 ÷ 1/6 = 4, lalu menyemak dengan darab.
+"
+6,22,3/4 ÷ 3,1/4,3/4 / 3,1/4,ARITHMETIC_CONFIRMED,1/4,1/4, berpandu: Guru memodelkan 3/4 ÷ 3 = 1/4 dengan membahagi jalur tiga
+6,22,2 1/4 ÷ 3,3/4,(2+1/4) / 3,3/4,ARITHMETIC_CONFIRMED,3/4,3/4,"):** Murid menyelesaikan 2 1/4 ÷ 3 = 3/4 dan 2/3 ÷ 1/6 = 4, lalu men"
+6,22,2/3 ÷ 1/6,"4,",2/3 / 1/6,4,CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,1/9,4,"ikan 2 1/4 ÷ 3 = 3/4 dan 2/3 ÷ 1/6 = 4, lalu menyemak dengan darab. "
+6,23,3/4 ÷ 3,1/4,3/4 / 3,1/4,ARITHMETIC_CONFIRMED,1/4,1/4,kesilapan: Guru memodelkan 3/4 ÷ 3 = 1/4 dengan membahagi jalur tiga
+6,23,2 1/4 ÷ 3,3/4,(2+1/4) / 3,3/4,ARITHMETIC_CONFIRMED,3/4,3/4,"):** Murid menyelesaikan 2 1/4 ÷ 3 = 3/4 dan 2/3 ÷ 1/6 = 4, lalu men"
+6,23,2/3 ÷ 1/6,"4,",2/3 / 1/6,4,CONTEXT_CONFIRMED_IN_ORIGINAL_MARKDOWN,1/9,4,"ikan 2 1/4 ÷ 3 = 3/4 dan 2/3 ÷ 1/6 = 4, lalu menyemak dengan darab. "
+6,24,1.2 × 0.35,0.420,1.2 * 0.35,0.420,ARITHMETIC_CONFIRMED,21/50,21/50,minit):** Guru mendarab 1.2 × 0.35 = 0.420 dan menerangkan bilangan 
+6,24,0.24 × 0.5,0.12,0.24 * 0.5,0.12,ARITHMETIC_CONFIRMED,3/25,3/25,":** Murid menyelesaikan 0.24 × 0.5 = 0.12 dan 1.25 × 0.8 = 1.000.
+
+*"
+6,24,1.25 × 0.8,1.000.,1.25 * 0.8,1.000,ARITHMETIC_CONFIRMED,1,1,"n 0.24 × 0.5 = 0.12 dan 1.25 × 0.8 = 1.000.
+
+**Pengukuhan dan pentak"
+6,25,1.2 × 0.35,0.420,1.2 * 0.35,0.420,ARITHMETIC_CONFIRMED,21/50,21/50,berpandu: Guru mendarab 1.2 × 0.35 = 0.420 dan menerangkan bilangan 
+6,25,0.24 × 0.5,0.12,0.24 * 0.5,0.12,ARITHMETIC_CONFIRMED,3/25,3/25,:** Murid menyelesaikan 0.24 × 0.5 = 0.12 dan 1.25 × 0.8 = 1.000. Mu
+6,25,1.25 × 0.8,1.000.,1.25 * 0.8,1.000,ARITHMETIC_CONFIRMED,1,1,n 0.24 × 0.5 = 0.12 dan 1.25 × 0.8 = 1.000. Murid bertukar hasil ker
+6,26,1.2 × 0.35,0.420,1.2 * 0.35,0.420,ARITHMETIC_CONFIRMED,21/50,21/50,esilapan: Guru mendarab 1.2 × 0.35 = 0.420 dan menerangkan bilangan 
+6,26,0.24 × 0.5,0.12,0.24 * 0.5,0.12,ARITHMETIC_CONFIRMED,3/25,3/25,:** Murid menyelesaikan 0.24 × 0.5 = 0.12 dan 1.25 × 0.8 = 1.000. Mu
+6,26,1.25 × 0.8,1.000.,1.25 * 0.8,1.000,ARITHMETIC_CONFIRMED,1,1,n 0.24 × 0.5 = 0.12 dan 1.25 × 0.8 = 1.000. Murid menghasilkan satu 
+6,27,1.44 ÷ 0.6,2.4,1.44 / 0.6,2.4,ARITHMETIC_CONFIRMED,12/5,12/5,init):** Guru membahagi 1.44 ÷ 0.6 = 2.4 dengan mendarab kedua-dua n
+6,27,0.84 ÷ 0.2,4.2,0.84 / 0.2,4.2,ARITHMETIC_CONFIRMED,21/5,21/5,":** Murid menyelesaikan 0.84 ÷ 0.2 = 4.2 dan 1.25 ÷ 0.5 = 2.5, lalu "
+6,27,1.25 ÷ 0.5,"2.5,",1.25 / 0.5,2.5,ARITHMETIC_CONFIRMED,5/2,5/2,"an 0.84 ÷ 0.2 = 4.2 dan 1.25 ÷ 0.5 = 2.5, lalu menyemak dengan darab"
+6,28,1.44 ÷ 0.6,2.4,1.44 / 0.6,2.4,ARITHMETIC_CONFIRMED,12/5,12/5,erpandu: Guru membahagi 1.44 ÷ 0.6 = 2.4 dengan mendarab kedua-dua n
+6,28,0.84 ÷ 0.2,4.2,0.84 / 0.2,4.2,ARITHMETIC_CONFIRMED,21/5,21/5,":** Murid menyelesaikan 0.84 ÷ 0.2 = 4.2 dan 1.25 ÷ 0.5 = 2.5, lalu "
+6,28,1.25 ÷ 0.5,"2.5,",1.25 / 0.5,2.5,ARITHMETIC_CONFIRMED,5/2,5/2,"an 0.84 ÷ 0.2 = 4.2 dan 1.25 ÷ 0.5 = 2.5, lalu menyemak dengan darab"
+6,29,1.44 ÷ 0.6,2.4,1.44 / 0.6,2.4,ARITHMETIC_CONFIRMED,12/5,12/5,silapan: Guru membahagi 1.44 ÷ 0.6 = 2.4 dengan mendarab kedua-dua n
+6,29,0.84 ÷ 0.2,4.2,0.84 / 0.2,4.2,ARITHMETIC_CONFIRMED,21/5,21/5,":** Murid menyelesaikan 0.84 ÷ 0.2 = 4.2 dan 1.25 ÷ 0.5 = 2.5, lalu "
+6,29,1.25 ÷ 0.5,"2.5,",1.25 / 0.5,2.5,ARITHMETIC_CONFIRMED,5/2,5/2,"an 0.84 ÷ 0.2 = 4.2 dan 1.25 ÷ 0.5 = 2.5, lalu menyemak dengan darab"
+6,30,1.44 ÷ 0.6,2.4,1.44 / 0.6,2.4,ARITHMETIC_CONFIRMED,12/5,12/5,asangan: Guru membahagi 1.44 ÷ 0.6 = 2.4 dengan mendarab kedua-dua n
+6,30,0.84 ÷ 0.2,4.2,0.84 / 0.2,4.2,ARITHMETIC_CONFIRMED,21/5,21/5,":** Murid menyelesaikan 0.84 ÷ 0.2 = 4.2 dan 1.25 ÷ 0.5 = 2.5, lalu "
+6,30,1.25 ÷ 0.5,"2.5,",1.25 / 0.5,2.5,ARITHMETIC_CONFIRMED,5/2,5/2,"an 0.84 ÷ 0.2 = 4.2 dan 1.25 ÷ 0.5 = 2.5, lalu menyemak dengan darab"
+6,37,1.25 × 40,50.,1.25 * 40,50,ARITHMETIC_CONFIRMED,50,50,"tukan 125% daripada 40 = 1.25 × 40 = 50.
+
+**Aktiviti 2 — Aplikasi/La"
+6,38,1.25 × 40,50.,1.25 * 40,50,ARITHMETIC_CONFIRMED,50,50,tukan 125% daripada 40 = 1.25 × 40 = 50. Guru mengurangkan petunjuk 
+6,39,1.25 × 40,50.,1.25 * 40,50,ARITHMETIC_CONFIRMED,50,50,tukan 125% daripada 40 = 1.25 × 40 = 50. Murid menilai satu langkah 
+6,114,5+4+3,12.,5+4+3,12,ARITHMETIC_CONFIRMED,12,12,"inton, 3 hoki; jumlah disemak 5+4+3=12.
+
+**Aktiviti 2 — Aplikasi/Lat"
+6,115,5+4+3,12.,5+4+3,12,ARITHMETIC_CONFIRMED,12,12,"inton, 3 hoki; jumlah disemak 5+4+3=12. Guru mengurangkan petunjuk s"
+6,116,5+4+3,12.,5+4+3,12,ARITHMETIC_CONFIRMED,12,12,"inton, 3 hoki; jumlah disemak 5+4+3=12. Murid menilai satu langkah y"
+6,117,5+4+3,12.,5+4+3,12,ARITHMETIC_CONFIRMED,12,12,"inton, 3 hoki; jumlah disemak 5+4+3=12. Murid membanding dua jalan k"

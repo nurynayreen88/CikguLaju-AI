@@ -1,0 +1,63 @@
+{
+  "version": "v53",
+  "source_version": "v52",
+  "scope": "RPH Matematik Tahun 2-6 ONLY, no RPT creation/edit/audit",
+  "archive_name": "CIKGULAJU_MATEMATIK_v53_585_RPH_BA_GEOMETRI_AKTIVITI_STAGING.zip",
+  "archive_sha256": "518e4a56f8a88ee3fdf9d0adf33e02140fb21442b20c836bb8a02c2148ad09fe",
+  "archive_size_bytes": 49393550,
+  "source_sha256": "646ec1516189275509382d92cc7228912f7a805b41229d5912f5f1a9ea58f847",
+  "rph_total": 585,
+  "changed_lessons_count": 32,
+  "changed_sections": 47,
+  "changed_lessons_by_year": {
+    "2": 16,
+    "3": 9,
+    "4": 0,
+    "5": 1,
+    "6": 6
+  },
+  "changes_by_section": {
+    "set_induksi": 13,
+    "aktiviti2": 21,
+    "aktiviti3_buku_aktiviti_pbd": 13
+  },
+  "unchanged_lessons_count": 553,
+  "word_docx_count": 585,
+  "markdown_count": 585,
+  "individual_pdf_a4_onepage_count": 585,
+  "combined_pdf_count": 5,
+  "each_combined_pdf_pages": 117,
+  "year2_3_BA_refs_originally_present": 234,
+  "visually_checked_BA_page_specific_lessons": 13,
+  "visually_checked_BA_printed_pages": {
+    "Year2": [
+      139,
+      140,
+      141,
+      143,
+      144
+    ],
+    "Year3": [
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136
+    ]
+  },
+  "test_zip_crc": "PASS",
+  "test_modified_32_word_pdf_markdown": "PASS",
+  "test_unchanged_553_byte_identical": "PASS",
+  "test_pdf_pages_and_bounds": "PASS",
+  "test_no_RPT_in_ZIP": "PASS",
+  "academic_exercise_item_teacher_signoff_count": 0,
+  "year4_34_pairs_academic_signoff": false,
+  "telegram_web_real_staging_e2e": false,
+  "final_ready": false,
+  "production_modified": false,
+  "rpt_changed": false,
+  "archive_not_committed_publicly": true
+}
