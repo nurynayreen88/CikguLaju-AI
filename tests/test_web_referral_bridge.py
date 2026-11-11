@@ -49,6 +49,22 @@ class WebReferralTests(unittest.TestCase):
         self.assertFalse(capture_after_verified_login(-1))
         rest.assert_not_called()
 
+    def test_private_web_navigation_is_hidden_until_authorized(self):
+        from pathlib import Path
+        base = Path(__file__).resolve().parents[1] / "web_v1_static_preview"
+        html = (base / "index.html").read_text("utf-8")
+        referral = (base / "web-referral.js").read_text("utf-8")
+        admin = (base / "admin-usage.js").read_text("utf-8")
+        self.assertIn('id="web-referral-tab"', html)
+        self.assertIn('id="web-admin-tab"', html)
+        self.assertIn('.sidebar-menu .sidebar-tab[hidden]{display:none!important}', html)
+        self.assertIn('if(targetButton?.hidden)return;', html)
+        self.assertIn('window.cikgulajuReferralInit?.();', html)
+        self.assertIn('tab.hidden = false;', referral)
+        self.assertIn('if (data.enabled !== true) { revoke(); return; }', referral)
+        self.assertIn('tab.hidden = true;', admin)
+        self.assertIn('if (res.status === 401 || res.status === 403)', admin)
+
     @patch("web.web_referral_routes._auth_uid", return_value=123)
     @patch("web.web_referral_routes._rest")
     def test_disabled_member_has_no_link(self, rest, _uid):
