@@ -528,6 +528,19 @@ except Exception as exc:
     print("English extra workbook route unavailable:", type(exc).__name__, flush=True)
 
 
+# English Year 4: authenticated Student Book PDF excerpts from the same
+# page map and local book chunks already used by the Telegram sender.
+try:
+    from web.telegram_english_studentbook_api_20261111 import create_english_studentbook_blueprint
+    telegram_runtime.app.register_blueprint(
+        create_english_studentbook_blueprint(telegram_runtime))
+    ENGLISH_Y4_STUDENTBOOK_EXTRA_REGISTERED = True
+except Exception as exc:
+    ENGLISH_Y4_STUDENTBOOK_EXTRA_REGISTERED = False
+    print("English Year4 Student Book route unavailable:",
+          type(exc).__name__, flush=True)
+
+
 # RBT: Web uses the same Telegram curriculum and native Word/PDF engine.
 # Token-authenticated, opt-in, no database, subscription or quota changes.
 try:
