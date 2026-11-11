@@ -51,7 +51,14 @@ class SchoolProfileTests(unittest.TestCase):
                          "SK KAMPUNG BARU BUKIT GELUGOR")
         self.assertEqual(full_school_name("SEKOLAH KEBANGSAAN BUKIT RAYA"),
                          "SEKOLAH KEBANGSAAN BUKIT RAYA")
-        self.assertEqual(full_school_name("BUKITAN BKT."),"BUKITAN BUKIT.")
+        self.assertEqual(full_school_name("BUKITAN BKT."),"BUKITAN BUKIT")
+        self.assertEqual(full_school_name("SK SG.AYAM"),"SK SUNGAI AYAM")
+        self.assertEqual(full_school_name("SK KPG. ANGUS"),"SK KAMPUNG ANGUS")
+        self.assertEqual(full_school_name("SJK(T) LDG KUALA MUDA BHG. 7"),
+                         "SJK(T) LADANG KUALA MUDA BAHAGIAN 7")
+        self.assertEqual(full_school_name("SK BT ROK"),"SK BATU ROK")
+        self.assertEqual(full_school_name("SK SERI PDG SARI"),
+                         "SK SERI PADANG SARI")
 
     def test_state_and_ppd_labels_uppercase_but_lookup_uses_original(self):
         from web.school_directory_store import states, districts, schools
