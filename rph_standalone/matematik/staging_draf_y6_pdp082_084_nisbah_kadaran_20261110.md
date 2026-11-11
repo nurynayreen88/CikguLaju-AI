@@ -4,11 +4,11 @@
 
 **Rujukan kurikulum:** KPM, *DSKP KSSR Matematik Tahun 6 (Semakan 2017)*, September 2021, halaman bercetak 56 (PDF halaman 68): SK 7.2 Nisbah / SP 7.2.1; SK 7.3 Kadaran / SP 7.3.1; SK 7.4 Penyelesaian masalah / SP 7.4.1. Kod 8.x dalam data asal adalah Data/Kebolehjadian, bukan Nisbah/Kadaran.
 
-**Rujukan Buku Teks:** DBP 2021, *Matematik Tahun 6 SK*, Bahagian 3, halaman bercetak 191–204 mengikut audit sumber PR #460; fail Drive asal `GuruBesar_BukuTeks_Matematik_T6_SK_Bahagian3.pdf` (SHA256 `35006f052cea2a327415c816e08a061c963b1bf56f3fc5346ca2a491fff52571`). Halaman ialah **cadangan rujukan berdasarkan audit terdahulu**; padanan aktiviti/latihan khusus masih perlu semakan visual guru. Semua contoh pengiraan di sini ditulis baharu, **bukan** petikan soalan Buku Teks. Tiada halaman Buku Aktiviti direka.
+**Rujukan Buku Teks:** DBP, *Matematik Tahun 6 SK*, Bahagian 3; fail Drive asal `GuruBesar_BukuTeks_Matematik_T6_SK_Bahagian3.pdf` (SHA256 `35006f052cea2a327415c816e08a061c963b1bf56f3fc5346ca2a491fff52571`). **Semakan teks PDF sumber (11 Nov 2026) bagi julat penuh halaman bercetak 191–204:** halaman bercetak 191–196 = 7.2.1 nisbah termudah; 197–200 = 7.3.1 kuantiti berkadaran; 201–204 = 7.4.1 penyelesaian masalah (halaman 201 contoh koordinat, halaman 202–204 contoh masalah nisbah/kadaran). Ini ialah **padanan topik-ke-halaman daripada teks PDF**, **bukan kelulusan visual aktiviti khusus**; semakan visual guru masih diperlukan bagi setiap aktiviti dan turutan PdP, tanpa menyalin petikan latihan. Semua contoh pengiraan dalam draf ditulis baharu, bukan salinan Buku Teks. Tiada halaman Buku Aktiviti direka.
 
 ## PdP MT6-PDP-082 — Pengukuhan Nisbah dan Kadaran
 
-**SP asal Telegram:** 8.1.1; 8.2.1; 8.3.1 (**tidak sepadan**). **Calon SK/SP:** 7.2 / 7.2.1; 7.3 / 7.3.1; 7.4 / 7.4.1. **Rujukan Buku Teks:** 191–204. **Masa:** 60 minit.
+**SP asal Telegram:** 8.1.1; 8.2.1; 8.3.1 (**tidak sepadan**). **Calon SK/SP:** 7.2 / 7.2.1; 7.3 / 7.3.1; 7.4 / 7.4.1. **Rujukan Buku Teks:** hlm. 191–196 (nisbah), 197–200 (kadaran), 202–204 (masalah nisbah/kadaran); halaman rujukan topik sahaja, aktiviti khusus belum disahkan secara visual. **Masa:** 60 minit.
 
 **Objektif:** Murid dapat memudahkan nisbah, menentukan kuantiti berkadaran dan menyelesaikan masalah harian dengan tepat bagi sekurang-kurangnya **4 daripada 5** item individu serta menunjukkan kaedah penyelesaian. **Kriteria kejayaan:** 4/5 tepat; tertib nisbah, faktor skala, jawapan berunit dan semakan dinyatakan.
 
@@ -18,7 +18,7 @@
 
 **Aktiviti 2 — Stesen kadaran (20 minit):** Guru memodel nisbah buku kepada pen `2 : 5` dan `8` buku, lalu menerangkan satu bahagian `= 4`, jadi bilangan pen `= 20`. Murid mengisi rajah bar bagi nisbah `3 : 4` dengan kuantiti pertama `9` (kuantiti kedua `12`), dan nisbah `4 : 7` dengan kuantiti pertama `12` (kuantiti kedua `21`). Murid berbincang sama ada faktor darab yang sama digunakan pada kedua-dua kuantiti; guru membetulkan kesilapan menggunakan tambah terus pada nisbah.
 
-**Aktiviti 3 — Penyelesaian masalah dan PBD (15 minit):** Guru menunjukkan cara memahami soalan, melakar rajah, mengira dan menyemak. Murid secara **individu** menjawab lima item merangkumi dua nisbah termudah, dua kadaran dan satu masalah berayat: nisbah murid lelaki kepada perempuan `3 : 4`, jumlah `35`, maka `15` lelaki dan `20` perempuan. Guru merekod betul/salah, kaedah dan murid yang memerlukan pemulihan; tidak menilai secara lisan sahaja.
+**Aktiviti 3 — Penyelesaian masalah dan PBD (15 minit):** Guru menunjukkan cara memahami soalan, melakar rajah, mengira dan menyemak. Murid secara **individu** menjawab lima item pada lembaran PBD berasingan: (1) mudahkan nisbah kad merah kepada biru 18 : 30; (2) samakan unit 2 kg kepada 800 g sebelum memudahkan nisbah; (3) tentukan bilangan pen daripada 12 buku apabila nisbah buku kepada pen 3 : 4; (4) tentukan bilangan pen daripada 21 buku nota apabila nisbah pen kepada buku nota 5 : 7; (5) selesaikan nisbah murid lelaki kepada perempuan 3 : 4 bagi jumlah 35 murid. Guru merekod jawapan, kaedah dan bukti langkah kerja pada setiap item. **Susulan berasaskan bukti:** item 1–2 salah → pemudahan nisbah dan unit; item 3–4 salah → faktor skala; item 5 salah → jumlah bahagian melalui rajah bar. Penilaian tidak dibuat secara lisan sahaja.
 
 **Penutup (5 minit):** Murid menyebut perbezaan antara *memudahkan nisbah*, *menentukan kadaran*, dan *menyelesaikan masalah*; guru meminta satu alasan bagaimana jawapan boleh disemak. **BBM:** kad nisbah, blok warna, rajah bar, Buku Teks, lembaran PBD. **Refleksi guru:** ___/___ murid mencapai sekurang-kurangnya 4/5; tindakan susulan: ___.
 
@@ -26,7 +26,7 @@
 
 ## PdP MT6-PDP-083 — Aplikasi Nisbah dan Kadaran
 
-**SP asal Telegram:** 8.1.1; 8.2.1 (**tidak sepadan**). **Calon SK/SP:** 7.2 / 7.2.1 dan 7.3 / 7.3.1. **Rujukan Buku Teks:** 191–200. **Masa:** 60 minit.
+**SP asal Telegram:** 8.1.1; 8.2.1 (**tidak sepadan**). **Calon SK/SP:** 7.2 / 7.2.1 dan 7.3 / 7.3.1. **Rujukan Buku Teks:** hlm. 191–196 (nisbah) dan 197–200 (kadaran); halaman rujukan topik sahaja, aktiviti khusus belum disahkan secara visual. **Masa:** 60 minit.
 
 **Objektif:** Murid dapat mengaplikasikan nisbah termudah dan faktor skala untuk menentukan kuantiti dalam sekurang-kurangnya **3 daripada 4** situasi aplikasi, dengan menunjukkan model/operasi yang bersesuaian. **Kriteria kejayaan:** 3/4 betul, kedua-dua kuantiti berubah mengikut faktor yang sama dan unit digunakan dengan betul.
 
@@ -36,7 +36,7 @@
 
 **Aktiviti 2 — Projek mini resipi (20 minit):** Dalam kumpulan, murid menerima resipi asal tepung kepada gula `3 : 2`. Jika tepung ialah `12` cawan, murid menentukan gula `8` cawan; jika tepung `21` cawan, gula `14` cawan. Setiap kumpulan melukis rajah bar, jadual faktor skala dan menerangkan mengapa nisbah kekal `3 : 2`. Guru menyediakan kad satu-bahagian bagi murid yang memerlukan sokongan; murid mahir membina resipi setara tambahan lalu meminta kumpulan lain menyemak.
 
-**Aktiviti 3 — PBD individu (15 minit):** Murid menjawab empat situasi baharu yang merangkumi nisbah dalam bentuk termudah dan kuantiti kadaran. Guru menyemak faktor skala, kaedah, tertib nisbah dan unit; murid yang menjawab betul tanpa kaedah diminta menerangkan pengiraan. **Pengayaan:** murid membandingkan dua kaedah (jadual dan rajah bar).
+**Aktiviti 3 — PBD individu (15 minit):** Murid menjawab empat item lembaran PBD berasingan: (1) memudahkan nisbah 6 : 9, (2) menyamakan unit 1.5 L kepada 500 mL sebelum memudahkan nisbah, (3) menentukan bilangan bunga putih daripada nisbah bunga merah kepada putih 2 : 5 apabila 8 kuntum bunga merah digunakan, dan (4) menentukan cawan beras daripada nisbah beras kepada air 4 : 7 dengan 28 cawan air. Guru menyemak faktor skala, kaedah, tertib nisbah dan unit; murid yang menjawab betul tanpa kaedah diminta menerangkan pengiraan. **Susulan berasaskan bukti:** kesilapan item 1 dibimbing dengan faktor sepunya, item 2 dengan penukaran unit, item 3–4 dengan rajah bar atau jadual skala. **Pengayaan:** murid membandingkan dua kaedah (jadual dan rajah bar).
 
 **Penutup (5 minit):** Murid menerangkan mengapa hanya mendarab satu kuantiti akan mengubah nisbah. Guru merumuskan faktor skala dan padanan unit. **BBM:** kad resipi, kad angka, jadual faktor, rajah bar, Buku Teks dan lembaran PBD. **Refleksi:** ___/___ mencapai 3/4; susulan: ___.
 
@@ -44,7 +44,7 @@
 
 ## PdP MT6-PDP-084 — Penyelesaian Masalah Bukan Rutin Nisbah dan Kadaran
 
-**SP asal Telegram:** 8.3.1 (**tidak sepadan**). **Calon SK/SP:** 7.4 / 7.4.1 — menyelesaikan masalah harian melibatkan koordinat, nisbah dan kadaran. **Fokus sesi:** masalah nisbah dan kadaran; **liputan koordinat SP 7.4.1 perlu dipastikan pada PdP lain dalam RPT**, bukan diandaikan telah selesai. **Rujukan Buku Teks:** 201–204. **Masa:** 60 minit.
+**SP asal Telegram:** 8.3.1 (**tidak sepadan**). **Calon SK/SP:** 7.4 / 7.4.1 — menyelesaikan masalah harian melibatkan koordinat, nisbah dan kadaran. **Fokus sesi:** masalah nisbah dan kadaran; **liputan koordinat SP 7.4.1 perlu dipastikan pada PdP lain dalam RPT**, bukan diandaikan telah selesai. **Rujukan Buku Teks:** hlm. 202–204 (masalah nisbah/kadaran dalam SP 7.4.1); hlm. 201 memfokuskan masalah koordinat dan tidak boleh dianggap bukti latihan nisbah. **Masa:** 60 minit.
 
 **Objektif:** Murid dapat menyelesaikan sekurang-kurangnya **2 daripada 3** masalah dua langkah yang melibatkan perubahan kuantiti dan nisbah, dengan menunjukkan model, operasi, jawapan baharu dan alasan kewajaran. **Kriteria kejayaan:** 2/3 lengkap serta sekurang-kurangnya satu semakan nisbah akhir.
 

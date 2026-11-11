@@ -5,6 +5,10 @@ on:
     paths:
       - "rph_standalone/matematik/staging_draf_y6_pdp082_084_nisbah_kadaran_20261110.md"
       - "tests/test_math_y6_ratio_082_084_staging_academic_20261110.py"
+      - "rph_standalone/matematik/staging_pbd_y6_pdp082_084_lembaran_murid_20261111.md"
+      - "rph_standalone/matematik/staging_pbd_y6_pdp082_084_skema_guru_20261111.md"
+      - "tests/test_math_y6_pbd_082_084_staging_20261111.py"
+      - "rph_standalone/matematik/STAGING_AUDIT_DSKP_MT6_PDP082_084_20261111.md"
       - ".github/workflows/math-y6-ratio-082-084-staging-qa.yml"
   workflow_dispatch:
 
@@ -22,13 +26,24 @@ jobs:
           python-version: "3.12"
       - name: Validate 082–084 teaching sequence, SP, 60min, PBD and example arithmetic
         run: python -m unittest tests.test_math_y6_ratio_082_084_staging_academic_20261110 -v
+      - name: Validate separated pupil worksheets and teacher answer keys (12 items)
+        run: python -m unittest tests.test_math_y6_pbd_082_084_staging_20261111 -v
       - name: Confirm no production publication or automatic source modification
         run: |
           python - <<'PY'
           from pathlib import Path
-          text=Path('rph_standalone/matematik/staging_draf_y6_pdp082_084_nisbah_kadaran_20261110.md').read_text()
-          assert text.count('**Status:** HOLD') == 3
-          assert 'JANGAN AKTIFKAN UNTUK PENGGUNA' in text
-          assert 'SEMAKAN' not in 'FINAL READY'
-          print('STAGING_ONLY_THREE_RPH_CANDIDATES_NO_RUNTIME_CHANGES')
+          root = Path('rph_standalone/matematik')
+          rph = (root / 'staging_draf_y6_pdp082_084_nisbah_kadaran_20261110.md').read_text(encoding='utf-8')
+          pupil = (root / 'staging_pbd_y6_pdp082_084_lembaran_murid_20261111.md').read_text(encoding='utf-8')
+          key = (root / 'staging_pbd_y6_pdp082_084_skema_guru_20261111.md').read_text(encoding='utf-8')
+          audit = (root / 'STAGING_AUDIT_DSKP_MT6_PDP082_084_20261111.md').read_text(encoding='utf-8')
+          assert rph.count('**Status:** HOLD') == 3
+          assert 'JANGAN AKTIFKAN UNTUK PENGGUNA' in rph
+          assert 'JANGAN TERBITKAN' in audit
+          assert '7.2.1' in audit and '7.3.1' in audit and '7.4.1' in audit
+          assert all(code in audit for code in ('082', '083', '084'))
+          assert 'JANGAN EDAR KEPADA MURID' in key
+          assert 'Skema Guru' not in pupil
+          assert all('FINAL READY' not in document for document in (rph, pupil, key, audit))
+          print('STAGING_ONLY_HOLD_DSKP_MAPPED_NO_PRODUCTION_PUBLICATION')
           PY
