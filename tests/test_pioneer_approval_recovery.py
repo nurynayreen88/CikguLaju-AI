@@ -80,7 +80,7 @@ class TestStalePioneerApproval(unittest.TestCase):
     def buttons(self):
         return [b.get("callback_data") for row in self.bot.messages[-1][2] for b in row]
 
-    def test_rm10_qr_and_receipt_button_do_not_create_pending_without_upload(self):
+    def test_rm20_qr_and_receipt_button_do_not_create_pending_without_upload(self):
         import base64
         from types import SimpleNamespace
         self.ns["API"] = "https://example.invalid/bot"
@@ -92,22 +92,22 @@ class TestStalePioneerApproval(unittest.TestCase):
             "No premature payment note allowed")
         self.ns["_latest_pending_payment"] = lambda cid: None
         telegram = SimpleNamespace(ok=True)
-        with patch("pioneer_telegram.pioneer_availability", return_value=(0, 200)):
+        with patch("pioneer_telegram.pioneer_availability", return_value=(0, 500)):
             with patch("requests.post", return_value=telegram) as sent:
                 self.ns["callback"](PAYER, "pioneer_pay")
         self.assertEqual(sent.call_count, 1)
         self.assertEqual(self.ns["state"][PAYER]["waiting"], "payment_proof")
-        self.assertEqual(self.ns["state"][PAYER]["payment_amount"], 10.0)
+        self.assertEqual(self.ns["state"][PAYER]["payment_amount"], 20.0)
         self.ns["state"][PAYER].clear()
-        with patch("pioneer_telegram.pioneer_availability", return_value=(0, 200)):
+        with patch("pioneer_telegram.pioneer_availability", return_value=(0, 500)):
             self.ns["callback"](PAYER, "pioneer_receipt")
-        self.assertEqual(self.ns["state"][PAYER]["payment_amount"], 10.0)
+        self.assertEqual(self.ns["state"][PAYER]["payment_amount"], 20.0)
         self.assertEqual(self.ns["state"][PAYER]["waiting"], "payment_proof")
         self.assertEqual(self.bot.marked, [])
 
     def test_full_batch_blocks_new_join_receipt_and_qr(self):
         self.ns["_latest_pending_payment"]=lambda cid: None
-        with patch("pioneer_telegram.pioneer_availability", return_value=(200, 0)):
+        with patch("pioneer_telegram.pioneer_availability", return_value=(500, 0)):
             self.ns["callback"](PAYER, "pioneer_join")
             self.assertIn("sudah penuh",self.bot.messages[-1][1])
             self.assertNotIn("pioneer_pay",self.buttons())
