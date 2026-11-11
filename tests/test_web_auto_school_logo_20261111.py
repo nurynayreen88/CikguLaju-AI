@@ -146,7 +146,7 @@ class AutoLogoTests(unittest.TestCase):
         html=(root/"index.html").read_text("utf-8")
         js=(root/"teacher-profile.js").read_text("utf-8")
         self.assertIn('id="school-logo-auto"',html)
-        self.assertIn('src="/assets/teacher-profile.js?v=teacher-uppercase-20261111"',html)
+        self.assertIn('src="/assets/teacher-profile.js?v=profile-guide-20261111"',html)
         self.assertIn("/api/web/teacher/school-logo-candidate",js)
         self.assertIn("savedLogoSchoolCode()",js)
         self.assertIn("schoolLogoPresent===true",js)
