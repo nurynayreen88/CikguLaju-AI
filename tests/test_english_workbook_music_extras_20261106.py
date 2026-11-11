@@ -61,6 +61,41 @@ class EnglishWorkbookMaterials(unittest.TestCase):
 
 
 class StudentBookYear4Materials(unittest.TestCase):
+    def test_complete_main_page_tokens_not_only_legacy_first_page(self):
+        from web.telegram_english_workbook_api_20261106 import (
+            _verified_y4_student_main_pages,
+        )
+        self.assertEqual(_verified_y4_student_main_pages("15, 16"), [15, 16])
+        self.assertEqual(_verified_y4_student_main_pages("73, 74–75"), [73, 74, 75])
+        self.assertEqual(_verified_y4_student_main_pages("20-21"), [20, 21])
+        self.assertEqual(_verified_y4_student_main_pages("110"), [110])
+        for invalid in (
+            "110–133", "27, 28, 29, 30, 31", "20, 22", "74, 74",
+            "73, 74x", "p.73", "0", "178", "", "2,,3",
+        ):
+            with self.subTest(invalid=invalid):
+                self.assertEqual(_verified_y4_student_main_pages(invalid), [])
+
+    def test_real_y4_student_book_chunk_integrity_and_boundaries(self):
+        """Read source PDFs from the repository, not synthetic blank pages."""
+        from pathlib import Path
+        from pypdf import PdfReader
+        root = Path(__file__).resolve().parents[1] / "books" / "english"
+        for filename, first, last in (
+            ("y4_student_001_020.pdf", 1, 20),
+            ("y4_student_021_100.pdf", 21, 100),
+            ("y4_student_101_177.pdf", 101, 177),
+        ):
+            with self.subTest(filename=filename):
+                source = root / filename
+                self.assertTrue(source.is_file())
+                reader = PdfReader(str(source), strict=True)
+                self.assertFalse(reader.is_encrypted)
+                self.assertEqual(len(reader.pages), last - first + 1)
+                for page in (reader.pages[0], reader.pages[-1]):
+                    self.assertGreater(float(page.mediabox.width), 100)
+                    self.assertGreater(float(page.mediabox.height), 100)
+
     def test_main_student_book_pages_use_only_verified_runtime_map(self):
         from pathlib import Path
         from tempfile import TemporaryDirectory
@@ -103,9 +138,9 @@ class StudentBookYear4Materials(unittest.TestCase):
             self.assertIsNone(_student_book_material(runtime, 4, 161, root=root))
             self.assertIsNone(_student_book_material(runtime, 4, 18, root=root))
             # A page mapping that includes a whole resource range is rejected.
-            runtime._v25232_nums = lambda raw: list(range(1, 25))
+            runtime._en34_verified_sb_pages_v25230 = lambda row, y: "1–24"
             self.assertIsNone(_student_book_material(runtime, 4, 17, root=root))
-            runtime._v25232_nums = lambda raw: [1, 2]
+            runtime._en34_verified_sb_pages_v25230 = lambda row, y: "1–2"
             app = Flask(__name__ + "sb")
             app.register_blueprint(create_english_workbook_blueprint(runtime))
             client = app.test_client()
@@ -195,9 +230,9 @@ class StudentBookYear4Materials(unittest.TestCase):
             runtime._EN_LOCAL_BOOK_CHUNKS_V25234[(4, "textbook")].pop()
 
             # Disconnected page lists must not export supplementary pages.
-            runtime._v25232_nums = lambda raw: [20, 22]
+            runtime._en34_verified_sb_pages_v25230 = lambda row, y: "20, 22"
             self.assertIsNone(_student_book_material(runtime, 4, 157, root=root))
-            runtime._v25232_nums = lambda raw: [20, 21]
+            runtime._en34_verified_sb_pages_v25230 = lambda row, y: "20–21"
             runtime._book_physical_page_v25237 = lambda state, kind, page: 20.9
             self.assertIsNone(_student_book_material(runtime, 4, 157, root=root))
 
