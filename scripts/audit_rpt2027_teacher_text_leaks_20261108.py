@@ -79,15 +79,26 @@ def scan_file(path: Path) -> list[dict]:
     findings = []
     is_pdf = path.suffix.lower() == ".pdf"
     has_extractable_text = False
+    unreadable_body_pages = []
     for page_number, text in _parts(path):
-        # A scanned/image-only PDF can contain visible editorial notes but
-        # produce zero searchable words. Never certify it as a clean RPT.
-        if is_pdf and re.search(r"\w", text):
-            has_extractable_text = True
+        # RPT preview pages after the cover contain five-column teaching
+        # tables. A single image-only body page must never be called clean
+        # just because another page (or the cover) has searchable text.
+        readable = bool(re.search(r"\w", text))
+        if is_pdf:
+            has_extractable_text |= readable
+            if page_number > 1 and not readable:
+                unreadable_body_pages.append(page_number)
         for item in find_internal_notes(text):
             findings.append({"file": str(path), "page": page_number, **item})
     if is_pdf and not has_extractable_text:
         raise ValueError("PDF has no extractable text; manual visual review required")
+    if unreadable_body_pages:
+        raise ValueError(
+            "PDF body pages have no extractable text: "
+            + ", ".join(map(str, unreadable_body_pages))
+            + "; manual visual review required"
+        )
     return findings
 
 
