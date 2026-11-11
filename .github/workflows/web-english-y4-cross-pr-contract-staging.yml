@@ -5,6 +5,8 @@ on:
       - 'web/native_telegram_extra_materials_20261106.py'
       - 'web/unified_rph_web.py'
       - 'tests/test_web_english_y4_partner_contract_20261111.py'
+      - 'requirements-web-render.txt'
+      - 'tools/run_web_production.py'
       - '.github/workflows/web-english-y4-cross-pr-contract-staging.yml'
   workflow_dispatch:
 permissions:
@@ -26,8 +28,24 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install only offline test dependencies
-        run: pip install 'flask==3.1.3' 'python-docx==1.2.0' 'lxml==5.4.0' 'pypdf==5.1.0'
+      - name: Preflight exact proposed Render Web runtime dependencies
+        run: |
+          pip install -r requirements-web-render.txt
+          python - <<'PY'
+          from io import BytesIO
+          from pypdf import PdfWriter
+          from web.native_telegram_extra_materials_20261106 import _verified_short_pdf
+          from tools.run_web_production import app
+          writer = PdfWriter()
+          writer.add_blank_page(width=612, height=792)
+          buffer = BytesIO()
+          writer.write(buffer)
+          assert _verified_short_pdf(buffer.getvalue(), "Workbook")
+          assert callable(app.wsgi_app)
+          print("WEB_RENDER_MATERIAL_PDF_RUNTIME_READY")
+          PY
+      - name: Install auxiliary QA-only document libraries
+        run: pip install 'python-docx==1.2.0' 'lxml==5.4.0'
       - name: Verify Web and Telegram PR contract with real source PDFs
         env:
           CIKGULAJU_PR558_DIR: .partner-telegram
