@@ -27,6 +27,15 @@ def source_paths(year, subject, lesson, component=None):
         elif year == 6:
             paths.append("rph_standalone/english/year6/sow_task_overlay_2027.json")
         return tuple(paths)
+    if subject == "SEJARAH" and component is None and 4 <= year <= 6 and 1 <= lesson <= 36:
+        return (
+            "rph_standalone/sejarah/tahun_%d/RPH_SEJ-T%d-PDP-%03d.md" % (year,year,lesson),
+            "rph_standalone/sejarah/y%d_2027_rph_DRAF.json" % year,
+            "curriculum/sejarah/y%d_dskp_crosswalk_DRAF.json" % year,
+            "curriculum/sejarah/y%d_buku_teks_unit_map_20261106.json" % year,
+            "curriculum/sejarah/kalender_sejarah_2027_kumpulan_a_b.json",
+            "rpt_2027/sejarah/RPT_SEJARAH_TAHUN_%d_2027_A_B_DRAF.csv" % year,
+        )
     if subject == "MORAL" and component is None and 1 <= lesson <= 42:
         return (
             "rph_standalone/pendidikan_moral/year%d/lesson_%03d.md" % (year, lesson),
@@ -47,6 +56,9 @@ def source_paths(year, subject, lesson, component=None):
 
 def source_fingerprint(year, subject, lesson, component=None, *, root=ROOT):
     """A digest of exact source bytes, not a generic topic/RPT identifier."""
+    if subject=="SEJARAH" and component is None:
+        from web.sejarah_2027_source_hash import fingerprint
+        return fingerprint(year,lesson,root=root)
     paths = source_paths(year, subject, lesson, component)
     if not paths:
         return None

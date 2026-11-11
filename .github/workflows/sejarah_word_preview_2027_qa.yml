@@ -1,0 +1,37 @@
+name: Sejarah 2027 Word Layout Preview QA
+on:
+  pull_request:
+    paths:
+      - 'rph_standalone/sejarah/**'
+      - 'rpt_2027/sejarah/**'
+      - 'scripts/render_sejarah_word_preview_2027.py'
+      - '.github/workflows/sejarah_word_preview_2027_qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  word-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Word/PDF QA and LibreOffice
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libreoffice-writer
+          python -m pip install 'python-docx==1.1.2' 'pypdf==5.1.0'
+      - name: Create Word drafts and verify LibreOffice PDF output
+        run: python scripts/render_sejarah_word_preview_2027.py
+      - name: Upload six Word drafts with layout-verification PDFs
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Sejarah-Y4-Y6-2027-DRAF-Word-Layout-Previews
+          path: |
+            output/sejarah_word_preview_qa/*.docx
+            output/sejarah_word_preview_qa/*.pdf
+            output/sejarah_word_preview_qa/manifest.json
+          if-no-files-found: error

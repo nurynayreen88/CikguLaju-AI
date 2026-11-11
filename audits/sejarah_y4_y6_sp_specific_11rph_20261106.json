@@ -1,0 +1,183 @@
+{
+  "status": "DRAF_UNVERIFIED_BY_TEACHER",
+  "audit_date": "2026-11-06",
+  "count": 11,
+  "scope": "11 RPH detail activities on introductory topics only",
+  "rows": [
+    {
+      "year": 4,
+      "id": "SEJ-T4-PDP-001",
+      "sk": "1.1",
+      "sp": [
+        "1.1.1",
+        "1.1.2",
+        "K1.1.6"
+      ],
+      "pages": "4–7",
+      "evidence": "RUJUKAN_HALAMAN_PBD_PENERBIT_BUKAN_SEMAKAN_VISUAL_BUKU",
+      "topic": "Pengertian dan sumber sejarah",
+      "sources": [
+        "https://online.anyflip.com/ekbvw/hqkg/files/basic-html/page30.html",
+        "https://online.anyflip.com/ekbvw/hqkg/files/basic-html/page31.html"
+      ]
+    },
+    {
+      "year": 4,
+      "id": "SEJ-T4-PDP-002",
+      "sk": "1.1",
+      "sp": [
+        "1.1.3",
+        "K1.1.7"
+      ],
+      "pages": "8–9",
+      "evidence": "RUJUKAN_HALAMAN_PBD_PENERBIT_BUKAN_SEMAKAN_VISUAL_BUKU",
+      "topic": "Kaedah penyelidikan sejarah",
+      "sources": [
+        "https://online.anyflip.com/ekbvw/hqkg/files/basic-html/page32.html"
+      ]
+    },
+    {
+      "year": 4,
+      "id": "SEJ-T4-PDP-003",
+      "sk": "1.1",
+      "sp": [
+        "1.1.4",
+        "K1.1.8"
+      ],
+      "pages": "10",
+      "evidence": "RUJUKAN_HALAMAN_PBD_PENERBIT_BUKAN_SEMAKAN_VISUAL_BUKU",
+      "topic": "Konsep ruang dan masa",
+      "sources": [
+        "https://online.anyflip.com/ekbvw/hqkg/files/basic-html/page33.html"
+      ]
+    },
+    {
+      "year": 4,
+      "id": "SEJ-T4-PDP-004",
+      "sk": "1.1",
+      "sp": [
+        "1.1.5",
+        "K1.1.9"
+      ],
+      "pages": "11–12",
+      "evidence": "RUJUKAN_HALAMAN_PBD_PENERBIT_BUKAN_SEMAKAN_VISUAL_BUKU",
+      "topic": "Sebab dan akibat peristiwa",
+      "sources": [
+        "https://online.anyflip.com/ekbvw/hqkg/files/basic-html/page34.html"
+      ]
+    },
+    {
+      "year": 5,
+      "id": "SEJ-T5-PDP-001",
+      "sk": "6.1",
+      "sp": [
+        "6.1.1",
+        "6.1.2",
+        "K6.1.6"
+      ],
+      "pages": "4–6",
+      "evidence": "BUKU_TEKS_ASAL_TAHUN5_HTML_DIBACA",
+      "topic": "Raja, kerajaan dan waadat",
+      "sources": [
+        "https://online.anyflip.com/iawvx/fevz/files/basic-html/page10.html",
+        "https://online.anyflip.com/iawvx/fevz/files/basic-html/page11.html",
+        "https://online.anyflip.com/iawvx/fevz/files/basic-html/page12.html"
+      ]
+    },
+    {
+      "year": 5,
+      "id": "SEJ-T5-PDP-002",
+      "sk": "6.1",
+      "sp": [
+        "6.1.3",
+        "K6.1.7"
+      ],
+      "pages": "7",
+      "evidence": "BUKU_TEKS_ASAL_TAHUN5_HTML_DIBACA",
+      "topic": "Daulat dan derhaka",
+      "sources": [
+        "https://online.anyflip.com/iawvx/fevz/files/basic-html/page13.html",
+        "https://online.anyflip.com/ekbvw/uyqz/files/basic-html/page25.html"
+      ]
+    },
+    {
+      "year": 5,
+      "id": "SEJ-T5-PDP-003",
+      "sk": "6.1",
+      "sp": [
+        "6.1.4",
+        "K6.1.8"
+      ],
+      "pages": "8–9",
+      "evidence": "BUKU_TEKS_ASAL_TAHUN5_HTML_DIBACA",
+      "topic": "Perubahan institusi raja",
+      "sources": [
+        "https://online.anyflip.com/iawvx/fevz/files/basic-html/page14.html",
+        "https://online.anyflip.com/iawvx/fevz/files/basic-html/page15.html"
+      ]
+    },
+    {
+      "year": 5,
+      "id": "SEJ-T5-PDP-004",
+      "sk": "6.1",
+      "sp": [
+        "6.1.5"
+      ],
+      "pages": "10",
+      "evidence": "BUKU_TEKS_ASAL_TAHUN5_HTML_DIBACA",
+      "topic": "Institusi raja di dunia",
+      "sources": [
+        "https://online.anyflip.com/iawvx/fevz/files/basic-html/page16.html"
+      ]
+    },
+    {
+      "year": 6,
+      "id": "SEJ-T6-PDP-001",
+      "sk": "10.1",
+      "sp": [
+        "10.1.1",
+        "10.1.2",
+        "K10.1.5"
+      ],
+      "pages": "4–9",
+      "evidence": "RUJUKAN_HALAMAN_PBD_PENERBIT_BUKAN_SEMAKAN_VISUAL_BUKU",
+      "topic": "Idea, sebab dan langkah pembentukan Malaysia",
+      "sources": [
+        "https://online.anyflip.com/ekbvw/ahxj/files/basic-html/page26.html",
+        "https://online.anyflip.com/ekbvw/ahxj/files/basic-html/page28.html"
+      ]
+    },
+    {
+      "year": 6,
+      "id": "SEJ-T6-PDP-002",
+      "sk": "10.1",
+      "sp": [
+        "10.1.3",
+        "K10.1.6"
+      ],
+      "pages": "10–13",
+      "evidence": "RUJUKAN_HALAMAN_PBD_PENERBIT_BUKAN_SEMAKAN_VISUAL_BUKU",
+      "topic": "Tokoh dan negeri dalam pembentukan Malaysia",
+      "sources": [
+        "https://anyflip.com/ekbvw/mldc/basic",
+        "https://online.anyflip.com/ekbvw/xymp/files/basic-html/page14.html"
+      ]
+    },
+    {
+      "year": 6,
+      "id": "SEJ-T6-PDP-003",
+      "sk": "10.1",
+      "sp": [
+        "10.1.4",
+        "K10.1.7"
+      ],
+      "pages": "14–16",
+      "evidence": "RUJUKAN_HALAMAN_PBD_PENERBIT_BUKAN_SEMAKAN_VISUAL_BUKU",
+      "topic": "Cabaran ke arah pembentukan Malaysia",
+      "sources": [
+        "https://online.anyflip.com/ekbvw/xymp/files/basic-html/page15.html"
+      ]
+    }
+  ],
+  "limitations": "Y4/Y6 pages corroborated by publisher's PBD guide not firsthand full textbook page verification; Y5 textbook HTML read, but teacher approval not given; all files remain DRAF.. Year5 source was inspected as browser HTML text, not page screenshot or visual comparison."
+}
