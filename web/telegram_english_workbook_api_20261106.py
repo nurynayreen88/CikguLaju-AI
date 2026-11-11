@@ -87,6 +87,35 @@ def _extract(material):
 
 
 
+def _verified_y4_student_main_pages(printed):
+    """Parse every explicit main-page token, not only a legacy first-page match.
+
+    A verified range/list must expand to 1–4 consecutive pages. Never extend
+    supplementary source ranges or guess missing pages.
+    """
+    if printed is None:
+        return []
+    raw = str(printed).strip()
+    if not raw or len(raw) > 70:
+        return []
+    parts = raw.split(",")
+    pages = []
+    for part in parts:
+        match = re.fullmatch(r"\s*([1-9]\d{0,2})(?:\s*[–-]\s*([1-9]\d{0,2}))?\s*", part)
+        if not match:
+            return []
+        first = int(match.group(1))
+        last = int(match.group(2) or first)
+        if first > 177 or last > 177 or last < first or last - first >= 4:
+            return []
+        pages.extend(range(first, last + 1))
+        if len(pages) > 4:
+            return []
+    if not pages or pages != list(range(pages[0], pages[-1] + 1)):
+        return []
+    return pages
+
+
 def _student_book_material(runtime, year: int, lesson: int, *, root=ROOT):
     """Resolve only Telegram's VERIFIED Y4 main Student Book pages.
 
@@ -98,10 +127,9 @@ def _student_book_material(runtime, year: int, lesson: int, *, root=ROOT):
         return None
     loader = getattr(runtime, "_en97_units", None)
     resolver = getattr(runtime, "_en34_verified_sb_pages_v25230", None)
-    numbers = getattr(runtime, "_v25232_nums", None)
     physical_page = getattr(runtime, "_book_physical_page_v25237", None)
     catalog = getattr(runtime, "_EN_LOCAL_BOOK_CHUNKS_V25234", None)
-    if (not all(callable(fn) for fn in (loader, resolver, numbers, physical_page))
+    if (not all(callable(fn) for fn in (loader, resolver, physical_page))
             or not isinstance(catalog, dict)):
         return None
     try:
@@ -115,7 +143,7 @@ def _student_book_material(runtime, year: int, lesson: int, *, root=ROOT):
             return None
         source_row = matched[0]
         printed = resolver(source_row, 4)
-        pages = numbers("m/s " + str(printed)) if printed else []
+        pages = _verified_y4_student_main_pages(printed)
         # A main SB activity should never result in the entire book or a
         # supplementary cut-out being exposed as a Lesson download.
         if (not isinstance(pages, list) or not 1 <= len(pages) <= 4
