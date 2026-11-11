@@ -50,6 +50,48 @@ class ExtraMaterialsWebTests(unittest.TestCase):
         self.assertIn("unit=",row["url"])
         self.assertEqual(row["action"],"Download")
 
+    def test_material_status_and_description_reflect_actual_availability(self):
+        # Do not claim that a source exists when neither book was verified.
+        with self._account(), patch(
+            "web.native_telegram_extra_materials_20261106.english_workbook_metadata",
+            return_value=None):
+            absent = self.client.get("/api/web/rph/extra-materials",
+                                     query_string=self.sel)
+        self.assertEqual(absent.status_code, 200)
+        self.assertEqual(absent.json["items"], [])
+        self.assertEqual(absent.json["status"], "BELUM_TERSEDIA")
+        self.assertIn("Tiada bahan tambahan", absent.json["note"])
+
+        # A verified Workbook must have an accurate materials note and status.
+        with self._account(), patch(
+            "web.native_telegram_extra_materials_20261106.english_workbook_metadata",
+            return_value="English Tahun 2 Lesson 002 Workbook"):
+            workbook = self.client.get("/api/web/rph/extra-materials",
+                                       query_string=self.sel)
+        self.assertEqual(workbook.json["status"], "SUMBER_ASAL")
+        self.assertEqual([r["type"] for r in workbook.json["items"]],
+                         ["workbook"])
+        self.assertIn("Student Book dan Workbook", workbook.json["note"])
+        self.assertIn("hak edaran", workbook.json["note"])
+        self.assertIn("tidak menggunakan kuota", workbook.json["note"])
+
+        # Do not mislabel a Student Book-only result as a Workbook.
+        year4 = next(r for r in source_records(4, "ENGLISH")
+                     if r["lesson"] == 30)
+        params = {"year": "4", "subject": "ENGLISH",
+                  "unit": year4["unit"], "lesson": year4["token"]}
+        with self._account(), patch(
+            "web.native_telegram_extra_materials_20261106.english_workbook_metadata",
+            return_value=None), patch(
+            "web.native_telegram_extra_materials_20261106.english_student_book_metadata",
+            return_value="English Tahun 4 Lesson 030 Student Book"):
+            student = self.client.get("/api/web/rph/extra-materials",
+                                      query_string=params)
+        self.assertEqual(student.json["status"], "SUMBER_ASAL")
+        self.assertEqual([r["type"] for r in student.json["items"]],
+                         ["student_book"])
+        self.assertIn("Student Book", student.json["note"])
+
     def test_wrong_unit_does_not_expose_book_page(self):
         with self._account():
             response=self.client.get("/api/web/rph/extra-materials",
