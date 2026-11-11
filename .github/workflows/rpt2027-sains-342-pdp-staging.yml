@@ -2,6 +2,8 @@ name: RPT2027 Sains 342-source-PdP five-column partial QA
 on:
   pull_request:
     paths:
+      - 'scripts/audit_rpt2027_teacher_text_leaks_20261108.py'
+      - 'tests/test_rpt2027_teacher_text_leak_scan.py'
       - 'scripts/build_rpt_2027_sains_342_actual_source_staging.py'
       - 'tests/test_rpt_2027_sains_342_actual_source_staging.py'
       - 'scripts/audit_sains_rpt2027_uncovered_verified_sp_staging.py'
