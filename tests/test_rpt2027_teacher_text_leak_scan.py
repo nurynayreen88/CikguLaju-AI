@@ -83,6 +83,53 @@ class TeacherTextLeakAuditTests(unittest.TestCase):
             self.assertEqual(report["read_errors"], [])
             self.assertEqual(report["findings_count"], 0)
 
+    def test_image_only_middle_body_page_requires_manual_review(self):
+        # Cover and final pages may be searchable while a scanned table page
+        # in between hides developer text inside a raster image.
+        import contextlib
+        import fitz
+        import io
+        from scripts.audit_rpt2027_teacher_text_leaks_20261108 import main
+        with tempfile.TemporaryDirectory() as temp:
+            file = Path(temp) / "rpt_2027_mixed_source.pdf"
+            with fitz.open() as raster_source:
+                page = raster_source.new_page(width=842, height=595)
+                page.insert_text((50, 70), "SEMAK TAJUK PENUH - DO NOT PUBLISH")
+                png = page.get_pixmap().tobytes("png")
+            with fitz.open() as document:
+                cover = document.new_page(width=842, height=595)
+                cover.insert_text((50, 60), "RANCANGAN PENGAJARAN TAHUNAN 2027")
+                body = document.new_page(width=842, height=595)
+                body.insert_image(body.rect, stream=png)
+                last = document.new_page(width=842, height=595)
+                last.insert_text((50, 60), "Murid membaca buku teks halaman 12")
+                document.save(file)
+            report = scan_paths([file], pdf_only=True)
+            self.assertEqual(report["scanned_files"], 1)
+            self.assertEqual(report["findings_count"], 0)
+            self.assertEqual(len(report["read_errors"]), 1)
+            self.assertIn("body pages have no extractable text: 2",
+                          report["read_errors"][0]["error"])
+            with contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(main(["--pdf-only", str(file)]), 1)
+
+    def test_readable_all_body_pages_pass_structure_gate(self):
+        import fitz
+        with tempfile.TemporaryDirectory() as temp:
+            file = Path(temp) / "rpt_2027_readable.pdf"
+            with fitz.open() as document:
+                for text in (
+                    "RANCANGAN PENGAJARAN TAHUNAN 2027",
+                    "Tema 1 PdP 001 Standard Pembelajaran 1.1.1",
+                    "Tema 2 PdP 002 Standard Pembelajaran 1.2.1",
+                ):
+                    page = document.new_page(width=842, height=595)
+                    page.insert_text((50, 60), text)
+                document.save(file)
+            report = scan_paths([file], pdf_only=True)
+            self.assertEqual(report["read_errors"], [])
+            self.assertEqual(report["findings_count"], 0)
+
     def test_teacher_projection_keeps_source_and_hides_review_notes(self):
         from rpt_2027.common.teacher_display_projection import (
             public_note, public_standard, public_topic
