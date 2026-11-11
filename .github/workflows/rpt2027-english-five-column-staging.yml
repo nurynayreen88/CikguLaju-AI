@@ -2,6 +2,8 @@ name: RPT2027 English Y2-6 five-column 800-Lesson PDF QA
 on:
   pull_request:
     paths:
+      - 'scripts/audit_rpt2027_teacher_text_leaks_20261108.py'
+      - 'tests/test_rpt2027_teacher_text_leak_scan.py'
       - 'scripts/build_rpt_2027_english_pdf_reflow_staging.py'
       - 'rpt_2027/common/format_2026_layout_preview.py'
       - 'tests/test_rpt_2027_rtl_layout_staging.py'
