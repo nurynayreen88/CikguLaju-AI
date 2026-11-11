@@ -4,11 +4,11 @@
 
 **Rujukan kurikulum:** KPM, *DSKP KSSR Matematik Tahun 6 (Semakan 2017)*, September 2021, halaman bercetak 56 (PDF halaman 68): SK 7.2 Nisbah / SP 7.2.1; SK 7.3 Kadaran / SP 7.3.1; SK 7.4 Penyelesaian masalah / SP 7.4.1. Kod 8.x dalam data asal adalah Data/Kebolehjadian, bukan Nisbah/Kadaran.
 
-**Rujukan Buku Teks:** DBP 2021, *Matematik Tahun 6 SK*, Bahagian 3, halaman bercetak 191–204 mengikut audit sumber PR #460; fail Drive asal `GuruBesar_BukuTeks_Matematik_T6_SK_Bahagian3.pdf` (SHA256 `35006f052cea2a327415c816e08a061c963b1bf56f3fc5346ca2a491fff52571`). Halaman ialah **cadangan rujukan berdasarkan audit terdahulu**; padanan aktiviti/latihan khusus masih perlu semakan visual guru. Semua contoh pengiraan di sini ditulis baharu, **bukan** petikan soalan Buku Teks. Tiada halaman Buku Aktiviti direka.
+**Rujukan Buku Teks:** DBP, *Matematik Tahun 6 SK*, Bahagian 3; fail Drive asal `GuruBesar_BukuTeks_Matematik_T6_SK_Bahagian3.pdf` (SHA256 `35006f052cea2a327415c816e08a061c963b1bf56f3fc5346ca2a491fff52571`). **Semakan teks PDF sumber (11 Nov 2026):** halaman bercetak 191–196 = 7.2.1 nisbah termudah; 197–200 = 7.3.1 kuantiti berkadaran; 201–204 = 7.4.1 penyelesaian masalah (halaman 201 contoh koordinat, halaman 202–204 contoh masalah nisbah/kadaran). Ini ialah **padanan topik-ke-halaman daripada teks PDF**, **bukan kelulusan visual aktiviti khusus**, turutan PdP atau petikan latihan. Semua contoh pengiraan dalam draf ditulis baharu, bukan salinan Buku Teks. Tiada halaman Buku Aktiviti direka.
 
 ## PdP MT6-PDP-082 — Pengukuhan Nisbah dan Kadaran
 
-**SP asal Telegram:** 8.1.1; 8.2.1; 8.3.1 (**tidak sepadan**). **Calon SK/SP:** 7.2 / 7.2.1; 7.3 / 7.3.1; 7.4 / 7.4.1. **Rujukan Buku Teks:** 191–204. **Masa:** 60 minit.
+**SP asal Telegram:** 8.1.1; 8.2.1; 8.3.1 (**tidak sepadan**). **Calon SK/SP:** 7.2 / 7.2.1; 7.3 / 7.3.1; 7.4 / 7.4.1. **Rujukan Buku Teks mengikut fokus:** hlm. 191–196 (nisbah), 197–200 (kadaran), 202–204 (masalah nisbah/kadaran); halaman rujukan topik sahaja, aktiviti khusus belum disahkan secara visual. **Masa:** 60 minit.
 
 **Objektif:** Murid dapat memudahkan nisbah, menentukan kuantiti berkadaran dan menyelesaikan masalah harian dengan tepat bagi sekurang-kurangnya **4 daripada 5** item individu serta menunjukkan kaedah penyelesaian. **Kriteria kejayaan:** 4/5 tepat; tertib nisbah, faktor skala, jawapan berunit dan semakan dinyatakan.
 
@@ -26,7 +26,7 @@
 
 ## PdP MT6-PDP-083 — Aplikasi Nisbah dan Kadaran
 
-**SP asal Telegram:** 8.1.1; 8.2.1 (**tidak sepadan**). **Calon SK/SP:** 7.2 / 7.2.1 dan 7.3 / 7.3.1. **Rujukan Buku Teks:** 191–200. **Masa:** 60 minit.
+**SP asal Telegram:** 8.1.1; 8.2.1 (**tidak sepadan**). **Calon SK/SP:** 7.2 / 7.2.1 dan 7.3 / 7.3.1. **Rujukan Buku Teks mengikut fokus:** hlm. 191–196 (nisbah) dan 197–200 (kadaran); halaman rujukan topik sahaja, aktiviti khusus belum disahkan secara visual. **Masa:** 60 minit.
 
 **Objektif:** Murid dapat mengaplikasikan nisbah termudah dan faktor skala untuk menentukan kuantiti dalam sekurang-kurangnya **3 daripada 4** situasi aplikasi, dengan menunjukkan model/operasi yang bersesuaian. **Kriteria kejayaan:** 3/4 betul, kedua-dua kuantiti berubah mengikut faktor yang sama dan unit digunakan dengan betul.
 
@@ -44,7 +44,7 @@
 
 ## PdP MT6-PDP-084 — Penyelesaian Masalah Bukan Rutin Nisbah dan Kadaran
 
-**SP asal Telegram:** 8.3.1 (**tidak sepadan**). **Calon SK/SP:** 7.4 / 7.4.1 — menyelesaikan masalah harian melibatkan koordinat, nisbah dan kadaran. **Fokus sesi:** masalah nisbah dan kadaran; **liputan koordinat SP 7.4.1 perlu dipastikan pada PdP lain dalam RPT**, bukan diandaikan telah selesai. **Rujukan Buku Teks:** 201–204. **Masa:** 60 minit.
+**SP asal Telegram:** 8.3.1 (**tidak sepadan**). **Calon SK/SP:** 7.4 / 7.4.1 — menyelesaikan masalah harian melibatkan koordinat, nisbah dan kadaran. **Fokus sesi:** masalah nisbah dan kadaran; **liputan koordinat SP 7.4.1 perlu dipastikan pada PdP lain dalam RPT**, bukan diandaikan telah selesai. **Rujukan Buku Teks mengikut fokus:** hlm. 202–204 (masalah nisbah/kadaran dalam SP 7.4.1); hlm. 201 memfokuskan masalah koordinat dan tidak boleh dianggap bukti latihan nisbah. **Masa:** 60 minit.
 
 **Objektif:** Murid dapat menyelesaikan sekurang-kurangnya **2 daripada 3** masalah dua langkah yang melibatkan perubahan kuantiti dan nisbah, dengan menunjukkan model, operasi, jawapan baharu dan alasan kewajaran. **Kriteria kejayaan:** 2/3 lengkap serta sekurang-kurangnya satu semakan nisbah akhir.
 
