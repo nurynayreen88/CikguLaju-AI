@@ -86,7 +86,85 @@ def _extract(material):
     return result
 
 
-def create_english_workbook_blueprint():
+
+def _student_book_material(runtime, year: int, lesson: int, *, root=ROOT):
+    """Resolve only Telegram's VERIFIED Y4 main Student Book pages.
+
+    Keep the Telegram main/supplementary page distinction, page-offset
+    overrides, and local source-chunk manifest; do not infer pages from Lesson.
+    """
+    if (year != 4 or type(lesson) is not int or not 1 <= lesson <= 160
+            or runtime is None):
+        return None
+    resolver = getattr(runtime, "_en34_verified_sb_pages_v25230", None)
+    numbers = getattr(runtime, "_v25232_nums", None)
+    physical_page = getattr(runtime, "_book_physical_page_v25237", None)
+    catalog = getattr(runtime, "_EN_LOCAL_BOOK_CHUNKS_V25234", None)
+    if (not all(callable(fn) for fn in (resolver, numbers, physical_page))
+            or not isinstance(catalog, dict)):
+        return None
+    try:
+        printed = resolver({"lesson_no": lesson}, 4)
+        pages = numbers("m/s " + str(printed)) if printed else []
+        # A main SB activity should never result in the entire book or a
+        # supplementary cut-out being exposed as a Lesson download.
+        if (not isinstance(pages, list) or not 1 <= len(pages) <= 4
+                or any(type(p) is not int or p < 1 for p in pages)
+                or pages != list(range(pages[0], pages[-1] + 1))):
+            return None
+        chunks = catalog.get((4, "textbook"))
+        if not isinstance(chunks, (list, tuple)):
+            return None
+        books = (Path(root) / "books" / "english").resolve()
+        selected = []
+        for page in pages:
+            physical = int(physical_page({"year": "Year 4", "subject": "English"},
+                                         "textbook", page))
+            matches = [row for row in chunks
+                       if isinstance(row, (tuple, list)) and len(row) == 3
+                       and type(row[0]) is int and type(row[1]) is int
+                       and row[0] <= physical <= row[1]]
+            if len(matches) != 1:
+                return None
+            start, end, rel = matches[0]
+            if (not isinstance(rel, str)
+                    or not re.fullmatch(r"books/english/y4_student_book_[0-9]{3}_[0-9]{3}\\.pdf", rel)):
+                return None
+            path = Path(root) / rel
+            if (path.is_symlink() or not path.is_file()
+                    or path.resolve().parent != books
+                    or not 1024 <= path.stat().st_size <= 70 * 1024 * 1024):
+                return None
+            selected.append((path, physical - start))
+        span = str(pages[0]) if len(pages) == 1 else f"{pages[0]}–{pages[-1]}"
+        return {"parts": selected,
+                "label": f"English Tahun 4 • Lesson {lesson:03d} • Student Book m/s {span}"}
+    except (OSError, TypeError, ValueError, OverflowError, KeyError, IndexError):
+        return None
+
+
+def _extract_student_book(material):
+    from pypdf import PdfReader, PdfWriter
+    readers, writer = {}, PdfWriter()
+    for path, index in material["parts"]:
+        if path not in readers:
+            reader = PdfReader(str(path), strict=True)
+            if reader.is_encrypted:
+                raise ValueError("Encrypted Student Book source")
+            readers[path] = reader
+        reader = readers[path]
+        if not 0 <= index < len(reader.pages):
+            raise ValueError("Student Book source page unavailable")
+        writer.add_page(reader.pages[index])
+    output = BytesIO()
+    writer.write(output)
+    raw = output.getvalue()
+    if not 450 <= len(raw) <= 8 * 1024 * 1024 or not raw.startswith(b"%PDF-"):
+        raise ValueError("Student Book excerpt invalid")
+    return raw
+
+
+def create_english_workbook_blueprint(runtime=None):
     bp = Blueprint("telegram_english_workbook_extras_v1", __name__)
 
     @bp.before_request
@@ -138,6 +216,38 @@ def create_english_workbook_blueprint():
         response = Response(content, mimetype="application/pdf")
         response.headers["Content-Disposition"] = (
             f'attachment; filename="CikguLaju_English_Y{year}_Lesson_{lesson:03d}_Workbook.pdf"'
+        )
+        return response
+
+
+    @bp.get("/internal/rph/v1/english-extras/student-book")
+    def student_book_metadata():
+        year, lesson, _ = selected()
+        material = _student_book_material(runtime, year, lesson)
+        if not material:
+            return jsonify({"available": False}), 404
+        try:
+            _extract_student_book(material)
+        except Exception:
+            return jsonify({"available": False}), 503
+        return jsonify({"source": "telegram-verified-english-studentbook-y4-v1",
+                        "available": True, "year": year, "lesson": lesson,
+                        "title": material["label"], "type": "student_book",
+                        "format": "pdf", "status": "VERIFIED_SOURCE"})
+
+    @bp.get("/internal/rph/v1/english-extras/student-book.pdf")
+    def student_book_download():
+        year, lesson, _ = selected()
+        material = _student_book_material(runtime, year, lesson)
+        if not material:
+            return jsonify({"error": "Student Book source not mapped"}), 404
+        try:
+            content = _extract_student_book(material)
+        except Exception:
+            return jsonify({"error": "Student Book excerpt unavailable"}), 503
+        response = Response(content, mimetype="application/pdf")
+        response.headers["Content-Disposition"] = (
+            f'attachment; filename="CikguLaju_English_Y4_Lesson_{lesson:03d}_Student_Book.pdf"'
         )
         return response
 
