@@ -885,16 +885,32 @@ def create_blueprint():
             return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
         try:
             from web.native_telegram_extra_materials_20261106 import (
-                english_workbook_metadata, music_source_links,
+                english_workbook_metadata, english_studentbook_metadata,
+                music_source_links,
             )
             if sub == "ENGLISH":
-                label = english_workbook_metadata(year, number)
+                from urllib.parse import urlencode
+                params = urlencode({"year":year, "subject":sub,
+                                    "unit":unit, "lesson":token})
                 items = []
-                if label:
-                    from urllib.parse import urlencode
-                    params = urlencode({"year":year, "subject":sub,
-                                      "unit":unit, "lesson":token})
-                    items.append({"type":"workbook", "title":label,
+                # The Student Book and Workbook checks are independent:
+                # a missing/unreachable new SB route must not hide the
+                # already-established Workbook download.
+                if year == 4:
+                    try:
+                        sb_title = english_studentbook_metadata(year, number)
+                    except Exception:
+                        sb_title = None
+                    if sb_title:
+                        items.append({"type":"textbook", "title":sb_title,
+                                      "url":"/api/web/rph/english-studentbook?"+params,
+                                      "action":"Download"})
+                try:
+                    wb_title = english_workbook_metadata(year, number)
+                except Exception:
+                    wb_title = None
+                if wb_title:
+                    items.append({"type":"workbook", "title":wb_title,
                                   "url":"/api/web/rph/english-workbook?"+params,
                                   "action":"Download"})
             else:
@@ -929,5 +945,28 @@ def create_blueprint():
         return send_file(BytesIO(content), mimetype="application/pdf",
                          as_attachment=True, conditional=False,
                          download_name=f"CikguLaju_English_Y{year}_Lesson_{number:03d}_Workbook.pdf")
+
+    @bp.get("/api/web/rph/english-studentbook")
+    def english_studentbook():
+        account, error = _account()
+        if error is not None:
+            return error
+        try:
+            year, sub, unit, token, number = _extra_selection()
+            if sub != "ENGLISH" or year != 4:
+                raise ValueError("Wrong resource")
+        except (ValueError, TypeError):
+            return jsonify({"error":"Pilihan Lesson Student Book tidak sah"}), 400
+        try:
+            from web.native_telegram_extra_materials_20261106 import english_studentbook_pdf
+            content = english_studentbook_pdf(year, number)
+        except Exception:
+            return jsonify({"error":"Fail Student Book dari Telegram belum tersedia"}), 503
+        response = send_file(BytesIO(content), mimetype="application/pdf",
+                             as_attachment=True, conditional=False,
+                             download_name=f"CikguLaju_English_Y4_Lesson_{number:03d}_StudentBook.pdf")
+        response.headers["Cache-Control"] = "private, no-store"
+        response.headers["X-Content-Type-Options"] = "nosniff"
+        return response
 
     return bp
