@@ -389,7 +389,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     <button type="button" class="sidebar-tab" data-web-view="special" aria-controls="view-special"><span aria-hidden="true">🌱</span> RPH Aktiviti Khas</button>
     <button type="button" class="sidebar-tab" data-web-view="rpt" aria-controls="view-rpt"><span aria-hidden="true">📅</span> RPT 2027</button>
     <button type="button" class="sidebar-tab" data-web-view="payment" aria-controls="view-payment"><span aria-hidden="true">🏆</span> Rakan Pembangun</button>
-    <button type="button" class="sidebar-tab" data-web-view="referral" aria-controls="view-referral"><span aria-hidden="true">🎁</span> Referral Saya</button>
+    <button type="button" id="web-referral-tab" class="sidebar-tab" data-web-view="referral" aria-controls="view-referral" hidden><span aria-hidden="true">🎁</span> Referral Saya</button>
     <button type="button" id="web-admin-tab" class="sidebar-tab" data-web-view="admin" aria-controls="view-admin" hidden><span aria-hidden="true">📊</span> Analisis Admin</button>
      <button type="button" class="sidebar-tab" data-web-view="guide" aria-controls="view-guide"><span aria-hidden="true">📖</span> Panduan</button>
   </nav>
@@ -674,6 +674,8 @@ function restoreRphEditor(){
 window.closeRphFromToday=restoreRphEditor;
 function showWebView(name){
  if(!webViews.has(name))return;
+ const targetButton=webViewButtons.find(button=>button.dataset.webView===name);
+ if(targetButton?.hidden)return;
  if(name!=="today")restoreRphEditor();
  for(const [key,id] of webViews){
   document.getElementById(id).hidden=key!==name;
@@ -1427,8 +1429,8 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/rph-today.js?v=selection-progress-20261111"></script>
 <script src="/assets/teacher-profile.js?v=profile-guide-20261111"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
-<script src="/assets/web-referral.js?v=20261106"></script>
-<script src="/assets/admin-usage.js?v=20261111"></script>
+<script src="/assets/web-referral.js?v=private-menu-20261111"></script>
+<script src="/assets/admin-usage.js?v=private-menu-20261111"></script>
 <script src="/assets/special-activities.js?v=source-draft-20261106"></script>
 </body>
 </html>
