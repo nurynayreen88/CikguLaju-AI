@@ -66,3 +66,15 @@ Lima tasmi' tidak dibekalkan dengan kod SK/SP rasmi dalam sumber. Tiada kod dire
 - PI enam rekod V5 ditahan: enam RPH cadangan A4 satu halaman telah ditulis dalam Word dan PDF, siap objektif, set induksi, guru/murid, dua aktiviti, PBD dan penutup. Lima aktiviti tasmi tidak mempunyai SK/SP rasmi dalam RPT sumber. L060 kini aktiviti pengukuhan Solat Ketika Sakit T6 SK4.2, SP4.2.3-4.2.5 berdasarkan DSKP asal PDF hlm46/cetakan34; L059 sudah meliputi kod tersebut. L117 membetulkan sumber az-Zumar 1-5 bukan Juz29. Semua merupakan calon sumber, bukan overwrite RPH V5.
 - PI evidence SHA-256 original DSKP T6 fd12636abb8b220623ec8c33a0c12261c7f27adc44c02efc5ee2ac04b71fea45. Ledger auditable: audits/pendidikan_islam_6_held_rph_new_candidate_activity_plans_20261107.json.
 - Blockers remain: DSKP Sains T6 source and lesson/textbook sequencing; Arabic full RTL sentence signoff; per-school RBT dates/holidays; PI teacher signoff; authenticated Web/Telegram E2E. GitHub PR stays draft. No prod, main or user DB changes.
+
+## Susulan 11 Nov 2026 — pengadang kelulusan akademik Bahasa Arab
+
+Pemeriksaan CI pada PR #441 mendapati `scripts.audit_rpt2027_release_gaps_staging` masih mengira baris `sp_display` yang mengandungi teks SP calon sebagai *sudah disahkan*, kerana pemeriksa lama hanya mencari frasa `belum dipadankan`. Ini tidak tepat selepas pemurnian 10 November memasukkan teks Arab calon daripada PDF DSKP asal bagi kesemua 298 PdP.
+
+Pembaikan staging menukar pengiraan kepada penanda kelulusan yang eksplisit:
+- `source_sp_dskp_text_signoff is True` sahaja boleh dianggap SP diluluskan; nilai `False` atau tiada penanda kekal TIDAK DILULUSKAN.
+- Untuk SK penuh, diperlukan penanda berasingan `source_sk_full_text_signoff is True`; petikan pembukaan tema SK Tahun 6 belum cukup sebagai kelulusan ayat SK penuh.
+- Jumlah teks SP calon yang ada dicatat dalam `candidate_sp_text_present_not_approved` supaya kerja transkripsi yang dibuat tidak hilang daripada laporan.
+- Ujian regresi memeriksa 298/298 teks SP calon kekal belum diluluskan dan perubahan satu penanda signoff tidak mengubah audit secara senyap.
+
+**Tidak ada kelulusan akademik baharu.** Label `without_full_sk_text` dan `without_full_sp_text` yang dikekalkan untuk keserasian laporan bermaksud *tanpa ayat lengkap yang diluluskan secara akademik*, bukan semestinya tiada teks calon dipaparkan. PR #441 kekal **STAGING / HOLD** sehingga signoff sumber visual, kalendar, aktiviti, buku teks dan ujian muat turun Web–Telegram sebenar selesai. CI semasa perubahan perlu disemak sebelum sebarang dakwaan PASS.
