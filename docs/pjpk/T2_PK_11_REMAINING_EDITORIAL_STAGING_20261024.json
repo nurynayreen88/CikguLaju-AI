@@ -1,0 +1,490 @@
+{
+  "schema_version": 1,
+  "description": "11 T2 PK editorial drafts mapped to DSKP SK/SP; distinct RPT slots, textbook pages and runtime remain unverified; not production ready",
+  "records": [
+    {
+      "id": 2249,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Postur, Rehat dan Tidur",
+      "objective": "Murid menyatakan maksud postur, rehat dan tidur serta menjana idea tentang kepentingannya kepada pertumbuhan dan perkembangan fizikal yang sihat.",
+      "materials": "Kad ilustrasi posisi duduk dan jadual aktiviti rekaan.",
+      "induction": "Guru memaparkan dua ilustrasi murid belajar dengan posisi berbeza dan meminta pemerhatian.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Guru memaparkan ilustrasi postur duduk dan tidur. Murid menerangkan maksud postur, rehat dan tidur menggunakan contoh harian."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Kumpulan membandingkan dua rutin rekaan dan menjana idea tentang manfaat postur yang betul serta rehat dan tidur yang mencukupi, dengan alasan."
+        }
+      ],
+      "reinforcement": "Murid membetulkan satu rutin rekaan dan menjelaskan manfaat postur, rehat dan tidur.",
+      "closure": "Rumusan amalan postur dan rehat yang baik.",
+      "assessment": "Semakan maksud tiga istilah dan idea beralasan tentang kepentingannya.",
+      "sk": "1.1",
+      "sp": [
+        "1.1.1",
+        "1.1.3"
+      ],
+      "source_mapping": "DSKP PJPK Tahun 2 Google Drive 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR; editorial SP mapping, RPT slot unverified",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": true,
+      "sp_text_verified": true,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    },
+    {
+      "id": 2250,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Sentuhan Tidak Selamat dan Tidak Selesa",
+      "objective": "Murid menyatakan situasi sentuhan tidak selamat dan tidak selesa serta mengaplikasikan kemahiran berkata TIDAK kepada individu yang melakukannya.",
+      "materials": "Kad senario tanpa imej grafik, kad respons dan senarai orang dewasa dipercayai.",
+      "induction": "Guru memperkenalkan hak setiap murid terhadap sempadan tubuh melalui contoh situasi rekaan.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Guru menunjukkan kad situasi sesuai usia; murid mengelaskan sentuhan tidak selamat dan tidak selesa tanpa berkongsi pengalaman peribadi."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Murid berlatih berkata TIDAK, menjauhkan diri dan memberitahu orang dewasa dipercayai melalui lakonan tanpa sentuhan fizikal."
+        }
+      ],
+      "reinforcement": "Murid memilih respons bagi dua situasi rekaan dan menyatakan orang dewasa yang boleh membantu.",
+      "closure": "Guru menegaskan murid boleh meminta bantuan berulang kali sehingga didengari.",
+      "assessment": "Senarai semak pengenalpastian situasi dan demonstrasi respons berkata TIDAK tanpa sentuhan fizikal.",
+      "sk": "1.2",
+      "sp": [
+        "1.2.1",
+        "1.2.2"
+      ],
+      "source_mapping": "DSKP PJPK Tahun 2 Google Drive 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR; editorial SP mapping, RPT slot unverified",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": true,
+      "sp_text_verified": true,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    },
+    {
+      "id": 2251,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Penyalahgunaan Bahan",
+      "objective": "Murid menyatakan tembakau, alkohol dan dadah sebagai bahan ketagihan serta menjelaskan bahayanya terhadap kesihatan diri dan orang lain.",
+      "materials": "Poster pendidikan tembakau, alkohol dan dadah; kad kesan bahaya; kad ajakan rekaan.",
+      "induction": "Guru menunjukkan poster tiga bahan ketagihan dan bertanya contoh tindakan selamat apabila diajak mencubanya.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Murid mengenal pasti tembakau, alkohol dan dadah daripada poster pendidikan yang sesuai usia dan membincangkan kesan bahayanya kepada diri serta orang lain."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Kumpulan memadankan situasi pengambilan tembakau, alkohol dan dadah dengan kesan bahayanya terhadap diri serta orang lain, kemudian membentangkan alasan."
+        }
+      ],
+      "reinforcement": "Murid menjelaskan satu bahaya bagi setiap kategori bahan ketagihan.",
+      "closure": "Rumusan bahaya bahan ketagihan, kemahiran berkata TIDAK dan mendapatkan bantuan.",
+      "assessment": "Senarai semak pengenalpastian tiga bahan dan penjelasan bahaya terhadap diri serta orang lain.",
+      "sk": "2.1",
+      "sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "source_mapping": "DSKP PJPK Tahun 2 Google Drive 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR; editorial SP mapping, RPT slot unverified",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": true,
+      "sp_text_verified": true,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    },
+    {
+      "id": 2344,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Rutin Sihat: Postur, Rehat dan Tidur",
+      "objective": "Murid mengaplikasikan postur yang betul ketika duduk dan belajar untuk menyokong pertumbuhan serta perkembangan fizikal yang sihat.",
+      "materials": "Kad ilustrasi postur; kad rutin rehat dan tidur; jadual harian rekaan.",
+      "induction": "Guru menunjukkan dua rutin harian rekaan dan meminta murid mengenal pasti perbezaan.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Guru menunjukkan ilustrasi postur duduk. Murid mengenal pasti kedudukan tubuh yang sesuai dan menerangkan sebabnya."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Secara individu, murid mempraktikkan postur duduk yang betul ketika aktiviti pembelajaran ringkas; rakan menyemak menggunakan kad panduan tanpa memaksa posisi yang menyakitkan."
+        }
+      ],
+      "reinforcement": "Murid membetulkan satu contoh postur rekaan dan menunjukkan amalan yang lebih sesuai.",
+      "closure": "Rumusan postur yang betul serta kepentingan rehat dan tidur mencukupi.",
+      "assessment": "Senarai semak demonstrasi postur duduk yang betul dan alasan murid.",
+      "sk": "1.1",
+      "sp": [
+        "1.1.2"
+      ],
+      "source_mapping": "DSKP PJPK Tahun 2 Google Drive 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR; editorial SP mapping, RPT slot unverified",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": true,
+      "sp_text_verified": true,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    },
+    {
+      "id": 2345,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Jaga Diri",
+      "objective": "Murid menilai situasi yang memerlukan kemahiran berkata TIDAK kepada sentuhan tidak selamat atau tidak selesa serta menjelaskan pilihan tindakannya.",
+      "materials": "Kad situasi sentuhan selamat, tidak selamat dan tidak selesa; kad respons berkata TIDAK; senarai orang dewasa dipercayai.",
+      "induction": "Guru menunjukkan ilustrasi murid berdepan situasi kurang selesa dan bertanya pilihan tindakan.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Murid membandingkan kad situasi rekaan dan menilai sama ada mereka perlu berkata TIDAK, beredar dan meminta bantuan, tanpa berkongsi pengalaman peribadi."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Pasangan memberikan alasan untuk respons selamat dalam dua situasi berbeza melalui dialog tanpa sentuhan fizikal."
+        }
+      ],
+      "reinforcement": "Murid memilih dan mempertahankan respons bagi situasi baharu.",
+      "closure": "Rumusan hak menjaga batas tubuh, berkata TIDAK dan mendapatkan bantuan.",
+      "assessment": "Rubrik alasan penilaian situasi dan pemilihan respons selamat.",
+      "sk": "1.2",
+      "sp": [
+        "1.2.3"
+      ],
+      "source_mapping": "DSKP PJPK Tahun 2 Google Drive 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR; editorial SP mapping, RPT slot unverified",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": true,
+      "sp_text_verified": true,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    },
+    {
+      "id": 2346,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Jauhkan Diri",
+      "objective": "Murid menilai kepentingan berkata TIDAK kepada ajakan mengambil tembakau, alkohol dan dadah dengan alasan berkaitan keselamatan diri serta orang lain.",
+      "materials": "Poster pendidikan tembakau, alkohol dan dadah; kad ajakan rekaan; kad respons berkata TIDAK.",
+      "induction": "Guru menunjukkan poster tiga bahan ketagihan dan bertanya sebab murid tidak patut mencubanya.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Murid meneliti kad ajakan rekaan berkaitan tembakau, alkohol dan dadah, kemudian membincangkan mengapa ajakan itu perlu ditolak."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Pasangan melakonkan respons berkata TIDAK, menjauhkan diri dan memaklumkan orang dewasa dipercayai; setiap pasangan menjelaskan kepentingan respons tersebut."
+        }
+      ],
+      "reinforcement": "Murid membandingkan dua respons rekaan dan memilih respons lebih selamat dengan alasan.",
+      "closure": "Rumusan bahaya tembakau, alkohol dan dadah serta cara menolak ajakan mencubanya.",
+      "assessment": "Rubrik penilaian kepentingan berkata TIDAK dan alasan murid.",
+      "sk": "2.1",
+      "sp": [
+        "2.1.3"
+      ],
+      "source_mapping": "DSKP PJPK Tahun 2 Google Drive 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR; editorial SP mapping, RPT slot unverified",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": true,
+      "sp_text_verified": true,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    },
+    {
+      "id": 2347,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Sayang Adik Sayang",
+      "objective": "Murid menyatakan perasaan bimbang dan cemburu, mengaplikasikan cara mengurusnya serta menilai kesan kepada diri jika perasaan itu tidak diurus ketika berlaku perubahan dalam keluarga atau kalangan rakan sebaya.",
+      "materials": "Kad situasi adik baharu dan perubahan persahabatan; kad emosi; kad dialog sokongan.",
+      "induction": "Guru membacakan dua situasi rekaan: menerima adik baharu dan rakan rapat mula berkawan dengan murid lain.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Murid mengenal pasti perasaan bimbang atau cemburu dalam situasi adik baharu dan perubahan hubungan rakan sebaya tanpa menghakimi watak."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Pasangan membina dialog sopan untuk menyatakan perasaan dan mendapatkan sokongan; kemudian membandingkan kesan kepada diri bagi watak yang mengurus perasaan dengan watak yang membiarkannya berlarutan dalam situasi keluarga dan rakan sebaya."
+        }
+      ],
+      "reinforcement": "Murid memilih respons dan menilai satu kesan kepada diri jika bimbang atau cemburu tidak diurus.",
+      "closure": "Rumusan cara mengurus bimbang dan cemburu ketika hubungan keluarga atau persahabatan berubah.",
+      "assessment": "Semakan dialog pengurusan emosi dan alasan penilaian kesan kepada diri.",
+      "sk": "3.1",
+      "sp": [
+        "3.1.1",
+        "3.1.2",
+        "3.1.3"
+      ],
+      "source_mapping": "DSKP PJPK Tahun 2 Google Drive 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR; editorial SP mapping, RPT slot unverified",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": true,
+      "sp_text_verified": true,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    },
+    {
+      "id": 2348,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Bekerjasama Sekeluarga",
+      "objective": "Murid menyatakan keistimewaan diri, mengaplikasikan cara menghargai ahli keluarga dan menilai kepentingan saling menghargai tanpa mengira jantina.",
+      "materials": "Kad tugasan rumah dan carta pembahagian tugas rekaan.",
+      "induction": "Guru membentangkan situasi persediaan keluarga untuk aktiviti bersama.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Murid menyatakan satu keistimewaan diri sebagai lelaki atau perempuan dalam keluarga dan meneliti sumbangan ahli keluarga tanpa menetapkan tugas mengikut jantina."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Kumpulan mengagihkan tugasan ringan mengikut kemampuan, melakonkan penghargaan kepada ahli keluarga dan membandingkan kesan apabila sumbangan setiap ahli dihargai atau diabaikan tanpa stereotaip jantina."
+        }
+      ],
+      "reinforcement": "Murid menerangkan mengapa menghargai diri dan ahli keluarga penting tanpa mengira jantina.",
+      "closure": "Rumusan kerjasama, keselamatan dan saling menghargai.",
+      "assessment": "Semakan aplikasi penghargaan dan alasan menilai kepentingannya.",
+      "sk": "4.1",
+      "sp": [
+        "4.1.1",
+        "4.1.2",
+        "4.1.3"
+      ],
+      "source_mapping": "DSKP PJPK Tahun 2 Google Drive 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR; editorial SP mapping, RPT slot unverified",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": true,
+      "sp_text_verified": true,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    },
+    {
+      "id": 2349,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Bersyukur dan Kasih Sayang",
+      "objective": "Murid menyatakan cara menzahirkan kasih sayang, mengamalkan kesyukuran dan ucapan terima kasih serta menilai kepentingan menzahirkan kasih sayang kepada Tuhan, diri, ibu bapa, penjaga, ahli keluarga, guru dan rakan.",
+      "materials": "Kad dialog penghargaan dan senario sokongan harian.",
+      "induction": "Guru berkongsi situasi rekaan seseorang membantu menyediakan keperluan sekolah.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Murid memadankan situasi sokongan dengan cara menzahirkan kasih sayang dan penghargaan yang sesuai."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Pasangan menghasilkan kad penghargaan atau dialog ringkas yang mempraktikkan kesyukuran dan ucapan terima kasih; kemudian menilai mengapa menzahirkan kasih sayang penting dalam hubungan harian, dengan mengambil kira kepelbagaian struktur keluarga."
+        }
+      ],
+      "reinforcement": "Murid memilih satu tindakan kasih sayang dan menjelaskan kepentingannya dengan alasan.",
+      "closure": "Penutup menekankan kasih sayang dan hormat dalam pelbagai bentuk keluarga.",
+      "assessment": "Senarai semak contoh kasih sayang, aplikasi kesyukuran/terima kasih dan alasan penilaian kepentingan.",
+      "sk": "5.1",
+      "sp": [
+        "5.1.1",
+        "5.1.2",
+        "5.1.3"
+      ],
+      "source_mapping": "DSKP PJPK Tahun 2 Google Drive 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR; editorial SP mapping, RPT slot unverified",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": true,
+      "sp_text_verified": true,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    },
+    {
+      "id": 2350,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Bersama Mencegah",
+      "objective": "Murid menerangkan penyakit tangan, kaki dan mulut serta konjunktivitis, mengaplikasikan langkah kebersihan dan mereka cipta bahan maklumat pencegahan kedua-dua penyakit.",
+      "materials": "Kad maklumat penyakit tangan, kaki dan mulut serta konjunktivitis; kad amalan kebersihan; kertas carta pencegahan.",
+      "induction": "Guru memaparkan dua situasi rekaan berkaitan penyakit tangan, kaki dan mulut serta konjunktivitis dan bertanya amalan kebersihan yang sesuai.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Guru menunjukkan kad situasi penyakit tangan, kaki dan mulut serta konjunktivitis. Murid mengenal pasti penyakit berdasarkan maklumat yang diberi tanpa membuat diagnosis terhadap rakan."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Kumpulan memilih langkah kebersihan diri yang sesuai untuk mengurangkan penularan dan mereka cipta poster atau carta maklumat pencegahan yang jelas bagi penyakit tangan, kaki dan mulut serta konjunktivitis."
+        }
+      ],
+      "reinforcement": "Murid memadankan setiap penyakit dengan langkah pencegahan dan memberikan alasan.",
+      "closure": "Rumusan penerangan kedua-dua penyakit dan amalan kebersihan diri untuk mencegah penularan.",
+      "assessment": "Senarai semak penerangan kedua-dua penyakit, aplikasi langkah kebersihan dan ketepatan bahan maklumat pencegahan.",
+      "sk": "6.1",
+      "sp": [
+        "6.1.1",
+        "6.1.2",
+        "6.1.3"
+      ],
+      "source_mapping": "DSKP PJPK Tahun 2 Google Drive 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR; editorial SP mapping, RPT slot unverified",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": true,
+      "sp_text_verified": true,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    },
+    {
+      "id": 2354,
+      "year": "Tahun 2",
+      "subject": "Pendidikan Kesihatan",
+      "topic": "Jangan Terpengaruh",
+      "objective": "Murid menilai pengaruh rakan dan media terhadap pilihan makanan serta minuman dan memberi alasan untuk keputusan yang lebih sihat.",
+      "materials": "Kad iklan rekaan tanpa jenama, kad ajakan rakan dan pilihan makanan.",
+      "induction": "Guru menunjukkan iklan rekaan dan bertanya sama ada semua dakwaan perlu dipercayai.",
+      "activities": [
+        {
+          "heading": "Aktiviti 1",
+          "body": "Murid meneliti contoh iklan makanan dan ajakan rakan yang direka guru; membezakan dakwaan, fakta yang boleh diperiksa dan pengaruh terhadap pilihan."
+        },
+        {
+          "heading": "Aktiviti 2",
+          "body": "Kumpulan membandingkan dua pilihan makanan atau minuman dalam situasi harian dan menjelaskan keputusan tanpa memperlekeh bentuk badan individu."
+        }
+      ],
+      "reinforcement": "Murid menulis satu respons kepada ajakan rakan dengan alasan pemakanan yang munasabah.",
+      "closure": "Rumusan keputusan pemakanan berdasarkan pertimbangan sendiri.",
+      "assessment": "Semakan penilaian pengaruh rakan/media dan justifikasi pilihan.",
+      "sk": "8.1",
+      "sp": [
+        "8.1.3"
+      ],
+      "source_mapping": "DSKP PJPK Tahun 2 Google Drive 1OFdnYP30I32SCEo2-V7UxStaBFTMsSgR; editorial SP mapping, RPT slot unverified",
+      "status": "editorial_staging_only",
+      "production_ready": false,
+      "sk_text_verified": true,
+      "sp_text_verified": true,
+      "textbook_verified": false,
+      "rpt_exact_slot_verified": false,
+      "rph_runtime_verified": false,
+      "a4_review_verified": false,
+      "teacher_fields": {
+        "date": null,
+        "day": null,
+        "class": null,
+        "time": null,
+        "duration_minutes": null,
+        "reflection": null
+      }
+    }
+  ]
+}

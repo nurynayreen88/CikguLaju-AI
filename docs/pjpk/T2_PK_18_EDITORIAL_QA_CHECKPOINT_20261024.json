@@ -1,0 +1,162 @@
+{
+  "status": "static_editorial_qa_pass_not_production_gate",
+  "source_files": [
+    {
+      "path": "docs/pjpk/T2_PK_11_REMAINING_EDITORIAL_STAGING_20261024.json",
+      "blob_sha": "e63ffab1d64ab50e8914088352fb7418626183bf",
+      "count": 11
+    },
+    {
+      "path": "docs/pjpk/T2_PK_7_COMPLETE_RPH_EDITORIAL_STAGING_20261024.json",
+      "blob_sha": "a579d44ca120a31a7371070c632b44b4448303f5",
+      "count": 7
+    }
+  ],
+  "checks": {
+    "total_records": 18,
+    "unique_ids": 18,
+    "missing_required_editorial_fields": 0,
+    "invalid_activity_pairs": 0,
+    "invalid_fail_closed_flags": 0
+  },
+  "sp_status": {
+    "eleven_candidate_only_empty_sp": false,
+    "seven_with_editorial_sp": true,
+    "all_eighteen_dskp_sk_sp_verified": true,
+    "unresolved_duplicate_groups": [
+      [
+        2232,
+        2352
+      ],
+      [
+        2252,
+        2353
+      ]
+    ]
+  },
+  "blockers": [
+    "exact RPT slot evidence",
+    "individual source-to-record verification",
+    "real bot RPH runtime",
+    "A4 output inspection"
+  ],
+  "production_ready": 0,
+  "rpt_source_audit": {
+    "result": "not_found_in_accessible_drive_search",
+    "checked_on": "2026-10-25",
+    "queries": [
+      "RPT PK Tahun 2",
+      "RPT Pendidikan Kesihatan",
+      "RPT PJPK Tahun 2"
+    ],
+    "examined_documents": [
+      {
+        "title": "Rozayus_RPT_PJ_Tahun_2_SK_2026.docx",
+        "drive_id": "1iYXEatUbSTbV1B4QqLDJsRx_YrW_KsFF",
+        "finding": "PJ content; no verified PK Year 2 SP schedule"
+      },
+      {
+        "title": "STAGING RPT 2027 PJ Tahun 2 - Audit Tarikh",
+        "drive_id": "1vL5kjChFCn1YoJe4m3sD0dLdLso6Br9f",
+        "finding": "PJ draft; no verified PK Year 2 SP schedule"
+      },
+      {
+        "title": "Rozayus_RPT_PK_Tahun_3_SK_2026.docx",
+        "drive_id": "1L1Jw_XaaZuZF19PSWFxr7b78rejDg3EB",
+        "finding": "PK Year 3, not Year 2"
+      }
+    ],
+    "policy": "Do not infer PK Year 2 exact PdP slots from PJ Year 2 or PK Year 3. Preserve all production gates.",
+    "unresolved_sp_overlaps": [
+      [
+        2232,
+        2352
+      ],
+      [
+        2252,
+        2353
+      ]
+    ]
+  },
+  "textbook_page_leads": {
+    "source_drive_id": "12Ym1lDW67L_cNJQ9NB6pUYVveIyvdIA6",
+    "status": "preliminary_not_verified",
+    "entries": [
+      {
+        "ids": [
+          2249
+        ],
+        "pages": "68-69",
+        "sp": [
+          "1.1.1",
+          "1.1.3"
+        ]
+      },
+      {
+        "ids": [
+          2232,
+          2352
+        ],
+        "pages": "97-98",
+        "sp": [
+          "8.1.1"
+        ]
+      },
+      {
+        "ids": [
+          2252,
+          2353
+        ],
+        "pages": "99",
+        "sp": [
+          "8.1.2"
+        ]
+      }
+    ],
+    "production_flags_unchanged": true
+  },
+  "textbook_sp_locator_audit": {
+    "source_drive_id": "12Ym1lDW67L_cNJQ9NB6pUYVveIyvdIA6",
+    "status": "preliminary_page_locator_only",
+    "printed_page_ranges": [
+      {
+        "sp_prefix": "1.2",
+        "pages": "70-72"
+      },
+      {
+        "sp_prefix": "2.1",
+        "pages": "73-76"
+      },
+      {
+        "sp_prefix": "3.1",
+        "pages": "77-79"
+      },
+      {
+        "sp_prefix": "4.1",
+        "pages": "80-82"
+      },
+      {
+        "sp_prefix": "5.1",
+        "pages": "83-86"
+      },
+      {
+        "sp_prefix": "6.1",
+        "pages": "87-90"
+      },
+      {
+        "sp_prefix": "7.1",
+        "pages": "91-94"
+      },
+      {
+        "sp_prefix": "8.1",
+        "pages": "97-100"
+      },
+      {
+        "sp_prefix": "9.1",
+        "pages": "102-104"
+      }
+    ],
+    "caution": "Page ranges are candidate navigation only; verify individual lesson-to-page and activities before setting textbook_verified true.",
+    "flags_changed": false
+  }
+}
