@@ -73,6 +73,25 @@ def english_workbook_metadata(year, lesson, *, opener=None):
     return data["title"]
 
 
+def _verified_short_pdf(raw, label):
+    """Reject PDF-looking junk and full book segments from the Telegram bridge.
+
+    Source routes send only 1–4 verified excerpt pages. Re-validate the
+    response in Web because an older/misconfigured Telegram may be selected.
+    """
+    if raw is None or len(raw) < 450 or not raw.startswith(b"%PDF-"):
+        raise NativeRPHUnavailable("Verified " + label + " PDF unavailable")
+    try:
+        from io import BytesIO
+        from pypdf import PdfReader
+        reader = PdfReader(BytesIO(raw), strict=True)
+        if reader.is_encrypted or not 1 <= len(reader.pages) <= 4:
+            raise ValueError("Invalid PDF length or encryption")
+    except Exception:
+        raise NativeRPHUnavailable("Invalid " + label + " PDF pages") from None
+    return raw
+
+
 def english_workbook_pdf(year, lesson, *, opener=None):
     # A PDF request is authorized and re-verified independently of metadata.
     if type(year) is not int or year not in (2, 3, 4) or type(lesson) is not int or not 1 <= lesson <= 160:
@@ -80,9 +99,7 @@ def english_workbook_pdf(year, lesson, *, opener=None):
     raw = _get("/internal/rph/v1/english-extras/workbook.pdf",
                {"year": year, "lesson": lesson}, accept="application/pdf",
                limit=MAX_PDF, opener=opener)
-    if raw is None or len(raw) < 450 or not raw.startswith(b"%PDF-"):
-        raise NativeRPHUnavailable("Verified Workbook PDF unavailable")
-    return raw
+    return _verified_short_pdf(raw, "Workbook")
 
 
 
@@ -112,20 +129,7 @@ def english_student_book_pdf(year, lesson, *, opener=None):
     raw = _get("/internal/rph/v1/english-extras/student-book.pdf",
                {"year": year, "lesson": lesson}, accept="application/pdf",
                limit=MAX_PDF, opener=opener)
-    if raw is None or len(raw) < 450 or not raw.startswith(b"%PDF-"):
-        raise NativeRPHUnavailable("Verified Student Book excerpt unavailable")
-    # The Telegram endpoint normally extracts a PDF with pypdf, but the Web
-    # must not advertise success if a stale/misconfigured backend serves junk
-    # or a whole book segment instead of the selected 1–4 pages.
-    try:
-        from io import BytesIO
-        from pypdf import PdfReader
-        reader = PdfReader(BytesIO(raw), strict=True)
-        if reader.is_encrypted or not 1 <= len(reader.pages) <= 4:
-            raise ValueError("Student Book page count or encryption invalid")
-    except Exception:
-        raise NativeRPHUnavailable("Invalid Student Book PDF pages") from None
-    return raw
+    return _verified_short_pdf(raw, "Student Book")
 
 
 def music_source_links(year, unit, lesson, *, opener=None):
