@@ -96,6 +96,102 @@ class StudentBookYear4Materials(unittest.TestCase):
                     self.assertGreater(float(page.mediabox.width), 100)
                     self.assertGreater(float(page.mediabox.height), 100)
 
+    def test_all_81_original_source_mappings_fail_closed_or_extract_exact_pdf_pages(self):
+        """Exercise all 81 actual Y4 source map entries, not just sample lessons.
+
+        Verifies the excerpt bytes against the three original repository PDF
+        parts. This is source-integrity QA, not visual/academic or copyright
+        approval of the printed pages.
+        """
+        import ast
+        from pathlib import Path
+        import re
+        from types import SimpleNamespace
+        from web.telegram_english_workbook_api_20261106 import (
+            _student_book_material, _extract_student_book,
+            _verified_y4_student_main_pages,
+        )
+
+        root = Path(__file__).resolve().parents[1]
+        app_source = (root / "app.py").read_text(encoding="utf-8")
+        def literal_map(name):
+            match = re.search(
+                r"(?ms)^" + re.escape(name) + r"\\s*=\\s*(\\{.*?^\\})",
+                app_source,
+            )
+            self.assertIsNotNone(match, f"Telegram source {name} missing")
+            return ast.literal_eval(match.group(1))
+
+        page_map = literal_map("_Y4_SB_PAGES_V25230")
+        main_map = literal_map("_EN34_MAIN_SB_V25231")
+        self.assertEqual(len(page_map), 81)
+        self.assertTrue(all(type(lesson) is int and 1 <= lesson <= 160
+                            for lesson in page_map))
+        self.assertEqual(main_map.get((4, 157)), "110")
+
+        valid = {
+            lesson: _verified_y4_student_main_pages(
+                main_map.get((4, lesson), source)
+            )
+            for lesson, source in page_map.items()
+        }
+        self.assertEqual(sum(bool(pages) for pages in valid.values()), 80)
+        self.assertEqual([n for n, pages in valid.items() if not pages], [43])
+        self.assertEqual(valid[103], [73, 74, 75])
+        self.assertEqual(valid[157], [110])
+
+        chunks = [
+            (1, 20, "books/english/y4_student_001_020.pdf"),
+            (21, 100, "books/english/y4_student_021_100.pdf"),
+            (101, 177, "books/english/y4_student_101_177.pdf"),
+        ]
+        origin = {}
+        for first, last, relpath in chunks:
+            original = PdfReader(str(root / relpath), strict=True)
+            self.assertFalse(original.is_encrypted)
+            self.assertEqual(len(original.pages), last - first + 1)
+            origin[relpath] = original
+
+        rows = [{"lesson_no": str(n), "unit_name": "original-source"}
+                for n in page_map]
+        runtime = SimpleNamespace(
+            _en97_units=lambda year: (rows, ["original-source"])
+                if year == "Tahun 4" else ([], []),
+            _en34_verified_sb_pages_v25230=lambda row, year:
+                main_map.get((year, int(row["lesson_no"])),
+                             page_map.get(int(row["lesson_no"]), "")),
+            _book_physical_page_v25237=lambda state, kind, page: page
+                if state.get("year") == "Tahun 4" and kind == "textbook" else 0,
+            _EN_LOCAL_BOOK_CHUNKS_V25234={(4, "textbook"): chunks},
+        )
+
+        checked = 0
+        for lesson in sorted(page_map):
+            with self.subTest(lesson=lesson):
+                material = _student_book_material(runtime, 4, lesson,
+                                                  root=root)
+                if lesson == 43:
+                    self.assertIsNone(material)
+                    continue
+                self.assertIsNotNone(material)
+                expected = valid[lesson]
+                self.assertEqual(len(material["parts"]), len(expected))
+                self.assertLessEqual(len(expected), 4)
+                pdf = _extract_student_book(material)
+                returned = PdfReader(BytesIO(pdf), strict=True)
+                self.assertEqual(len(returned.pages), len(expected))
+                for index, (path, offset) in enumerate(material["parts"]):
+                    source_name = str(path.relative_to(root))
+                    self.assertIn(source_name, origin)
+                    original_page = origin[source_name].pages[offset]
+                    self.assertEqual(
+                        returned.pages[index].get_contents().get_data(),
+                        original_page.get_contents().get_data(),
+                    )
+                checked += 1
+        self.assertEqual(checked, 80)
+
+
     def test_main_student_book_pages_use_only_verified_runtime_map(self):
         from pathlib import Path
         from tempfile import TemporaryDirectory
