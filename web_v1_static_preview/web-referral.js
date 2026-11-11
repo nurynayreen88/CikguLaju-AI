@@ -14,7 +14,7 @@
     tab.hidden = true;
     box.hidden = true;
     linkInput.value = "";
-    if (!view.hidden) window.showWebView?.("today");
+    if (!view.hidden) document.querySelector('[data-web-view="today"]')?.click();
     view.hidden = true;
   }
   async function update() {
