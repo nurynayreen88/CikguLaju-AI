@@ -128,7 +128,7 @@ def _student_book_material(runtime, year: int, lesson: int, *, root=ROOT):
                 return None
             start, end, rel = matches[0]
             if (not isinstance(rel, str)
-                    or not re.fullmatch(r"books/english/y4_student_book_[0-9]{3}_[0-9]{3}\\.pdf", rel)):
+                    or not re.fullmatch(r"books/english/y4_student_book_[0-9]{3}_[0-9]{3}\.pdf", rel)):
                 return None
             path = Path(root) / rel
             if (path.is_symlink() or not path.is_file()
