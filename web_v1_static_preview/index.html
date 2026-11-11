@@ -63,6 +63,7 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 .sidebar-brand strong{display:block;color:#153f66;font-size:.98rem}
 .sidebar-brand span{display:block;color:#60778d;font-size:.76rem;margin-top:4px}
 .sidebar-menu{display:flex;flex-direction:column;gap:7px}
+.sidebar-menu .sidebar-tab[hidden]{display:none!important}
 .sidebar-tab{font:inherit;font-size:.93rem;display:flex;gap:11px;align-items:center;text-align:left;width:100%;padding:13px 11px;background:transparent;border:1px solid transparent;border-radius:11px;color:#2b485d;font-weight:650;cursor:pointer}
 .sidebar-tab:hover{background:#eef5f9}
 .sidebar-tab.is-active,.sidebar-tab[aria-current="page"]{background:#e7f1fa;border-color:#c7deed;color:#0b4e7d}
@@ -698,7 +699,7 @@ showWebView("today");
  const status=document.getElementById("login-status");
  try{
   const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),8000);let session;try{session=await fetch("/api/auth/telegram/session",{credentials:"same-origin",cache:"no-store",signal:controller.signal});}finally{clearTimeout(timeout);}
-  if(session.ok){const account=await session.json();document.querySelector("main.panel").hidden=true;document.getElementById("workspace").hidden=false;applyRphAccount(account);loadTeacherProfile();loadRptCatalog();loadTeacherClasses();window.cikgulajuAdminInit?.();showWebView("today");window.rphTodayLoad?.();return;}
+  if(session.ok){const account=await session.json();document.querySelector("main.panel").hidden=true;document.getElementById("workspace").hidden=false;applyRphAccount(account);loadTeacherProfile();loadRptCatalog();loadTeacherClasses();window.cikgulajuAdminInit?.();window.cikgulajuReferralInit?.();showWebView("today");window.rphTodayLoad?.();return;}
   const response=await fetch("/api/auth/capabilities",{cache:"no-store"});
   if(session.status===503){status.textContent="Semakan akaun belum tersedia pada pelayan. Cuba log masuk semula selepas konfigurasi disemak.";}
 
