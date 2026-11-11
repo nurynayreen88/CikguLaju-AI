@@ -133,7 +133,7 @@ async function schoolLogoToPng(file) {
 }
 
 // Only a SAVED school code can request a logo; unsaved changes do not switch
-// the school attached to the user's existing private Supabase logo object.
+// the school attached to the user's existing private storan kekal logo object.
 function savedLogoSchoolCode() {
   if (!teacherProfileState.loaded || !teacherProfileState.savedProfile) return "";
   let saved;
