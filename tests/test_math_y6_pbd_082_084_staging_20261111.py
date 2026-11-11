@@ -79,7 +79,7 @@ class Year6MathPbdStageTests(unittest.TestCase):
     def test_083_answer_key_matches_ratio_and_unit_conversion(self):
         pupil, key = self.pupils["083"], self.keys["083"]
         for prompt in ("6 : 9", "1.5 L kepada 500 mL",
-                       "8 benih", "28 cawan air"):
+                       "8 kuntum bunga merah", "28 cawan air"):
             self.assertIn(prompt,pupil)
         self.assertEqual((6//gcd(6,9),9//gcd(6,9)),(2,3))
         self.assertEqual((1500//gcd(1500,500),500//gcd(1500,500)),(3,1))
