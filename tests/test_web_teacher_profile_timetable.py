@@ -26,10 +26,27 @@ def profile_form(**overrides):
 class StoreValidatorTests(unittest.TestCase):
     def test_profile_cleans_pii_without_touching_access(self):
         clean,version=clean_profile(profile_form(display_name=" Cikgu Aminah "))
-        self.assertEqual(clean["display_name"],"Cikgu Aminah")
+        self.assertEqual(clean["display_name"],"CIKGU AMINAH")
         self.assertEqual(clean["class_names"],["4 Bestari"])
         self.assertEqual(version,"")
         self.assertEqual(set(clean),{"display_name","school_name","state_name","class_names"})
+
+    def test_teacher_name_is_uppercase_even_when_api_receives_lowercase(self):
+        fields,_=clean_profile(profile_form(display_name="  siti nur binti ali  "))
+        self.assertEqual(fields["display_name"],"SITI NUR BINTI ALI")
+        fields,_=clean_profile(profile_form(display_name="Nurul 'Ain"))
+        self.assertEqual(fields["display_name"],"NURUL 'AIN")
+
+    def test_web_teacher_name_input_forces_capitals_on_typing_and_paste(self):
+        from pathlib import Path
+        root=Path(__file__).resolve().parents[1]/"web_v1_static_preview"
+        html=(root/"index.html").read_text("utf8")
+        js=(root/"teacher-profile.js").read_text("utf8")
+        self.assertIn('id="profile-name"',html)
+        self.assertIn('autocapitalize="characters"',html)
+        self.assertIn('teacherNameField.addEventListener("input", uppercaseTeacherName)',js)
+        self.assertIn('teacherNameField.value.trim().toLocaleUpperCase("ms-MY")',js)
+        self.assertIn("setSelectionRange",js)
 
     def test_profile_rejects_extra_fields_or_duplicate_classes(self):
         for bad in (profile_form(telegram_user_id=123),profile_form(credits=99),
@@ -156,7 +173,7 @@ class WebTeacherProfileUiTests(unittest.TestCase):
                       "teacher-profile-form","timetable-rows","timetable-add",
                       "timetable-save","profile-save","profile-access-summary"):
             self.assertIn('id="'+ident+'"',html)
-        self.assertIn('src="/assets/teacher-profile.js?v=school-fullcaps-20261111"',html)
+        self.assertIn('src="/assets/teacher-profile.js?v=teacher-uppercase-20261111"',html)
         self.assertIn("loadTeacherProfile();",html)
         self.assertIn('id="view-rpt"',html)
         self.assertIn('id="view-rph"',html)
