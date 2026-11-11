@@ -2,6 +2,8 @@ name: RPT 2027 staged 21-PDF QA plus 3 RBT simulations
 on:
   pull_request:
     paths:
+      - 'scripts/audit_rpt2027_teacher_text_leaks_20261108.py'
+      - 'tests/test_rpt2027_teacher_text_leak_scan.py'
       - 'rpt_2027/common/format_2026_layout_preview.py'
       - 'rpt_2027/common/standard_text_enrichment.py'
       - 'rpt_2027/common/calendar_week_2027_a_b_snapshot_20261107_DRAF.json'
