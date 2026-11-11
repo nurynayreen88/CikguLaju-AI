@@ -141,6 +141,67 @@ class StudentBookYear4Materials(unittest.TestCase):
                 self.assertEqual(denied.status_code, 404)
 
 
+    def test_split_pdf_boundary_is_exact_and_ambiguous_sources_fail_closed(self):
+        """m/s 20–21 must use page 20 of part A and page 1 of part B."""
+        from pathlib import Path
+        from tempfile import TemporaryDirectory
+        from types import SimpleNamespace
+        from pypdf import PdfWriter
+        from web.telegram_english_workbook_api_20261106 import (
+            _student_book_material, _extract_student_book,
+        )
+
+        with TemporaryDirectory() as folder:
+            root = Path(folder)
+            book_dir = root / "books" / "english"
+            book_dir.mkdir(parents=True)
+            for filename, count, width in (
+                ("y4_student_001_020.pdf", 20, 200),
+                ("y4_student_021_100.pdf", 80, 400),
+            ):
+                writer = PdfWriter()
+                for offset in range(count):
+                    writer.add_blank_page(width=width + offset, height=300)
+                with (book_dir / filename).open("wb") as fh:
+                    writer.write(fh)
+
+            source_row = {"lesson_no": 157, "unit_name": "Get Smart"}
+            runtime = SimpleNamespace(
+                _en97_units=lambda year: ([source_row], ["Get Smart"])
+                    if year == "Tahun 4" else ([], []),
+                _en34_verified_sb_pages_v25230=lambda row, year: "20–21",
+                _v25232_nums=lambda raw: [20, 21],
+                _book_physical_page_v25237=lambda state, kind, page: page,
+                _EN_LOCAL_BOOK_CHUNKS_V25234={
+                    (4, "textbook"): [
+                        (1, 20, "books/english/y4_student_001_020.pdf"),
+                        (21, 100, "books/english/y4_student_021_100.pdf"),
+                    ],
+                },
+            )
+            source = _student_book_material(runtime, 4, 157, root=root)
+            self.assertIsNotNone(source)
+            pages = PdfReader(BytesIO(_extract_student_book(source))).pages
+            self.assertEqual(len(pages), 2)
+            self.assertEqual([int(page.mediabox.width) for page in pages],
+                             [219, 400])
+            self.assertIn("m/s 20–21", source["label"])
+
+            # A duplicated/overlapping manifest cannot select an arbitrary file.
+            runtime._EN_LOCAL_BOOK_CHUNKS_V25234[(4, "textbook")].append(
+                (20, 30, "books/english/y4_student_021_100.pdf")
+            )
+            self.assertIsNone(_student_book_material(runtime, 4, 157, root=root))
+            runtime._EN_LOCAL_BOOK_CHUNKS_V25234[(4, "textbook")].pop()
+
+            # Disconnected page lists must not export supplementary pages.
+            runtime._v25232_nums = lambda raw: [20, 22]
+            self.assertIsNone(_student_book_material(runtime, 4, 157, root=root))
+            runtime._v25232_nums = lambda raw: [20, 21]
+            runtime._book_physical_page_v25237 = lambda state, kind, page: 20.9
+            self.assertIsNone(_student_book_material(runtime, 4, 157, root=root))
+
+
 class MusicExternalLinkOnly(unittest.TestCase):
     def test_music_source_links_never_claim_download_or_audio_verification(self):
         runtime=Mock()
