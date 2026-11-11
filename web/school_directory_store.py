@@ -60,11 +60,36 @@ def _read(url, secret, table, query, *, limit=350, opener=None):
         raise SchoolDirectoryUnavailable("School directory temporarily unavailable") from None
 
 
+# Presentation-only normalization. Preserve the canonical Supabase identifiers and
+# original 2022 school records; expand only unambiguous whole-word abbreviations.
+_SCHOOL_WORDS = {
+    "BKT": "BUKIT", "KG": "KAMPUNG", "KPG": "KAMPUNG",
+    "SG": "SUNGAI", "TMN": "TAMAN", "JLN": "JALAN",
+    "BT": "BATU", "BHG": "BAHAGIAN", "PDG": "PADANG", "LDG": "LADANG",
+}
+_SCHOOL_ABBREVIATION = re.compile(
+    r"\b(?:BKT|KG|KPG|SG|TMN|JLN|BT|BHG|PDG|LDG)\b\.?"
+)
+
+
+def full_school_name(name):
+    if not isinstance(name, str):
+        raise ValueError("Invalid school name")
+    # The 2022 dataset also contains punctuation forms such as SG.AYAM,
+    # KPG. ANGUS and BHG. 7. Preserve spaces without the abbreviation dot.
+    expanded = _SCHOOL_ABBREVIATION.sub(
+        lambda match: _SCHOOL_WORDS[match.group().rstrip(".")] +
+                      (" " if match.group().endswith(".") else ""),
+        name.upper(),
+    )
+    return re.sub(r"\s+", " ", expanded).strip()
+
+
 def states(url, secret, *, opener=None):
     rows = _read(url, secret, "school_states",
                  {"select": "state_name", "order": "state_name.asc"},
                  limit=25, opener=opener)
-    return [{"value": r["state_name"], "label": r["state_name"]} for r in rows]
+    return [{"value": r["state_name"], "label": r["state_name"].upper()} for r in rows]
 
 
 def districts(url, secret, state, *, opener=None):
@@ -74,7 +99,7 @@ def districts(url, secret, state, *, opener=None):
         "state_name": "eq." + state,
         "order": "district_name.asc",
     }, limit=80, opener=opener)
-    return [{"value": r["district_name"], "label": r["district_name"]}
+    return [{"value": r["district_name"], "label": r["district_name"].upper()}
             for r in rows]
 
 
@@ -87,7 +112,7 @@ def schools(url, secret, state, district, *, opener=None):
         "school_level": "eq.Rendah",
         "order": "school_name.asc,school_code.asc",
     }, limit=350, opener=opener)
-    return [{"value": r["school_code"], "label": r["school_name"],
+    return [{"value": r["school_code"], "label": full_school_name(r["school_name"]),
              "level": r.get("school_level") or ""}
             for r in rows]
 
@@ -104,4 +129,6 @@ def school_by_code(url, secret, code, *, opener=None):
         raise ValueError("School not found in verified directory")
     if rows[0].get("school_level") != "Rendah":
         raise ValueError("Only primary schools are supported")
-    return rows[0]
+    result = dict(rows[0])
+    result["school_name"] = full_school_name(result["school_name"])
+    return result

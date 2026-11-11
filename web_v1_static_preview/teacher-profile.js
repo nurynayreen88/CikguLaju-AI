@@ -421,7 +421,7 @@ function populateSchoolSelect(control, placeholder, items, saved="") {
     control.add(new Option(label,row.value));
   }
   if (saved && !items.some(row=>row.value===saved)) {
-    control.add(new Option(saved+" (rekod lama — semak semula)",saved));
+    control.add(new Option(saved.toLocaleUpperCase("ms-MY")+" (rekod lama — semak semula)",saved));
   }
   control.value=saved||"";
   control.disabled=items.length===0;
@@ -470,7 +470,7 @@ async function loadSchoolPickerForProfile(profile) {
   const savedState=profile.state_name||"";
   const savedDistrict=profile.district_name||"";
   const savedCode=profile.school_code||"";
-  schoolNameField.value=profile.school_name||"";
+  schoolNameField.value=(profile.school_name||"").toLocaleUpperCase("ms-MY");
   schoolStateField.value=savedState;
   populateSchoolSelect(schoolDistrictField,"Pilih negeri dahulu",[]);
   populateSchoolSelect(schoolChoiceField,"Pilih PPD dahulu",[]);
@@ -486,6 +486,10 @@ async function loadSchoolPickerForProfile(profile) {
       await populateSchoolDistricts("",seq);
     }
     if(seq!==schoolPickerRequest)return;
+    // Use the server's verified full uppercase display label for a linked
+    // school; old free-text profiles still keep their existing identity.
+    const matchingSchool=savedCode && schoolCatalogOptions.find(row=>row.value===savedCode);
+    if(matchingSchool)schoolNameField.value=matchingSchool.label;
     schoolPickerNotice.textContent=savedCode
       ? "Sekolah dipadankan melalui kod rasmi. Rujukan direktori Jun 2022."
       : savedState && profile.school_name
@@ -495,9 +499,9 @@ async function loadSchoolPickerForProfile(profile) {
     if(seq!==schoolPickerRequest)return;
     // Account and timetable still work; do not wipe school data during outages.
     if(savedState && ![...schoolStateField.options].some(o=>o.value===savedState))
-      schoolStateField.add(new Option(savedState,savedState));
+      schoolStateField.add(new Option(savedState.toLocaleUpperCase("ms-MY"),savedState));
     schoolStateField.value=savedState;
-    schoolNameField.value=profile.school_name||"";
+    schoolNameField.value=(profile.school_name||"").toLocaleUpperCase("ms-MY");
     schoolPickerNotice.textContent="Direktori sekolah tidak tersedia. Maklumat lama dikekalkan; cuba Refresh Profil.";
   }
 }
@@ -552,7 +556,7 @@ async function loadTeacherProfile() {
     document.getElementById("profile-name").value=profile.display_name || "Cikgu";
     await loadSchoolPickerForProfile(profile);
     document.getElementById("profile-classes").value=profile.class_names.join("\n");
-    setTeacherIdentity(profile);
+    setTeacherIdentity({...profile,school_name:schoolNameField.value});
     teacherProfileState.classNames=[...profile.class_names];
     teacherProfileState.profileVersion=profile.version || "";
     teacherProfileState.timetableVersion=timetable.version || "";
