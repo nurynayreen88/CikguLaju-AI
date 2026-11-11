@@ -196,7 +196,7 @@ class SchoolProfileTests(unittest.TestCase):
             self.assertEqual(save_profile("https://db.example.invalid","TEST",123,
                                           form),"saved")
             values=save.call_args.args[4]
-            self.assertEqual(values["school_name"],"SK Lama")
+            self.assertEqual(values["school_name"],"SK LAMA")
             self.assertNotIn("school_code",values)
             self.assertNotIn("district_name",values)
         with patch("web.teacher_profile_store._profile_record",
@@ -207,6 +207,40 @@ class SchoolProfileTests(unittest.TestCase):
                              {**form,"school_name":"Sekolah palsu",
                               "district_name":"","school_code":""})
             save.assert_not_called()
+
+    def test_legacy_mixed_case_can_save_other_profile_fields_without_renaming_school(self):
+        old={"telegram_user_id":123,"school_name":"Sk Bkt Lama",
+             "state_name":"Kedah","updated_at":"2026-11-11T00:00:00+00:00",
+             "class_profiles":[],"class_names":[],"school_code":None}
+        form={"display_name":"Cikgu Ahmad","school_name":"SK BKT LAMA",
+              "state_name":"Kedah","district_name":"","school_code":"",
+              "class_names":["4 Amanah"],"version":old["updated_at"]}
+        with patch("web.teacher_profile_store._profile_record",return_value=old), \
+             patch("web.teacher_profile_store._save",return_value="saved") as save:
+            self.assertEqual(save_profile("https://db.example.invalid","TEST",123,form),"saved")
+            values=save.call_args.args[4]
+            self.assertEqual(values["school_name"],"SK BKT LAMA")
+            self.assertIsNone(values["school_code"])
+            self.assertEqual(values["class_profiles"][0]["name"],"4 Amanah")
+
+    def test_linked_old_abbreviation_can_normalize_without_directory_requery(self):
+        old={"telegram_user_id":123,"school_code":"JBA0001",
+             "school_name":"SEKOLAH KEBANGSAAN BKT SELAMBAU",
+             "state_name":"Johor","district_name":"PPD BATU PAHAT",
+             "updated_at":"2026-11-11T00:00:00+00:00",
+             "class_profiles":[],"class_names":[]}
+        form={"display_name":"Cikgu Ahmad",
+              "school_name":"SEKOLAH KEBANGSAAN BKT SELAMBAU",
+              "state_name":"Johor","district_name":"PPD BATU PAHAT",
+              "school_code":"JBA0001","class_names":[],
+              "version":old["updated_at"]}
+        with patch("web.teacher_profile_store._profile_record",return_value=old), \
+             patch("web.school_directory_store.school_by_code") as lookup, \\
+             patch("web.teacher_profile_store._save",return_value="saved") as save:
+            self.assertEqual(save_profile("https://db.example.invalid","TEST",123,form),"saved")
+            lookup.assert_not_called()
+            self.assertEqual(save.call_args.args[4]["school_name"],
+                             "SEKOLAH KEBANGSAAN BUKIT SELAMBAU")
 
     def test_profile_get_reports_persistent_school_identity(self):
         record={"school_name":"SEKOLAH KEBANGSAAN LUBOK",
