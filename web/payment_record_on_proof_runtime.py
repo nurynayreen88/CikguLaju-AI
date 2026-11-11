@@ -70,7 +70,7 @@ def install(rt):
             amount = float(amount)
         except (TypeError, ValueError, OverflowError):
             return None
-        return amount if amount in (5.00, 10.00) else None
+        return amount if amount in (5.00, 10.00, 20.00) else None
 
     def pending(cid):
         existing = original_latest(cid)

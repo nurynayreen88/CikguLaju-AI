@@ -88,7 +88,7 @@ def create_web_payment_source(runtime):
             "telegram_bot_id":match.group(1),
             "plans":[
                 {"code":"rakan_pembangun","label":"Rakan Pembangun",
-                 "amount":"10.00","description":"RM10 sekali bayar, akses sepanjang CikguLaju AI beroperasi"},
+                 "amount":"20.00","description":"RM20 sekali bayar, akses sepanjang CikguLaju AI beroperasi"},
             ],
             "progress_percentage":joined,
             "rakan_open":remaining > 0,

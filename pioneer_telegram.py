@@ -45,11 +45,11 @@ def install(ns):
         import json
         from io import BytesIO
         import requests
-        caption = ("🏆 <b>RAKAN PEMBANGUN EARLY BIRD CIKGULAJU — RM10</b>\n\n"
-                   "Imbas QR DuitNow ini dan bayar RM10 sekali sahaja.\n"
+        caption = ("🏆 <b>RAKAN PEMBANGUN EARLY BIRD CIKGULAJU — RM20</b>\n\n"
+                   "Imbas QR DuitNow ini dan bayar RM20 sekali sahaja.\n"
                    "Hantar resit untuk semakan admin. Status hanya aktif selepas disahkan.")
         markup = {"inline_keyboard": [
-            [{"text": "📎 Hantar Resit RM10", "callback_data": "pioneer_receipt"}],
+            [{"text": "📎 Hantar Resit RM20", "callback_data": "pioneer_receipt"}],
             [{"text": "🏠 Menu Utama", "callback_data": "home"}]]}
         data = {"chat_id": str(cid), "caption": caption,
                 "parse_mode": "HTML", "reply_markup": json.dumps(markup)}
@@ -103,7 +103,7 @@ def install(ns):
         if not ns["_is_admin"](cid):
             return send(cid, "⛔ Admin sahaja.")
         req = ns["_payment_request"](request_id)
-        if req and float(req["amount"]) == 10.0 and req["status"] == "pending":
+        if req and float(req["amount"]) in (10.0, 20.0) and req["status"] == "pending":
             uid = int(req["chat_id"])
             proof_received = _has_recorded_payment_proof(req)
             status = ("✅ Resit sudah direkodkan"
@@ -120,10 +120,10 @@ def install(ns):
                 [{"text": "❌ Tolak", "callback_data": f"admin_reject|{request_id}"}],
                 [{"text": "🛠️ Panel Admin", "callback_data": "admin_panel"}],
             ])
-            return send(cid, "🏆 <b>PENGESAHAN RAKAN PEMBANGUN RM10</b>\n"
+            return send(cid, "🏆 <b>PENGESAHAN RAKAN PEMBANGUN</b>\n"
                         f"ID permohonan: <code>{request_id}</code>\n"
                         f"ID pelanggan Telegram: <code>{uid}</code>\n"
-                        f"Jumlah: RM10.00\n{status}\n\n"
+                        f"Jumlah: RM{float(req['amount']):.2f}\n{status}\n\n"
                         "Sahkan ID pelanggan dan transaksi TNG Merchant sebelum lulus. "
                         "Jangan minta pelanggan bayar semula.", buttons)
         return original_card(cid, request_id)
@@ -167,11 +167,11 @@ def install(ns):
                             [[{"text": "🏠 Menu Utama", "callback_data": "home"}]])
             count, remaining = pioneer_availability(sb)
             if remaining == 0:
-                return send(cid, "⛔ <b>Rakan Pembangun batch pertama sudah penuh.</b>\n"
-                            "Pendaftaran baharu RM10 telah ditutup.",
+                return send(cid, "⛔ <b>Rakan Pembangun sudah penuh.</b>\n"
+                            "Pendaftaran baharu telah ditutup.",
                             [[{"text":"🏠 Menu Utama","callback_data":"home"}]])
-            return send(cid, "🏆 <b>RAKAN PEMBANGUN EARLY BIRD CIKGULAJU — RM10 SEKALI SAHAJA</b>\n"
-                        "<b>Kelebihan Rakan Pembangun:</b>\n✅ Bayar RM10 sekali sahaja.\n✅ Guna CikguLaju AI tanpa perlu bayar langganan bulanan atau tahunan.\n♾️ Akses Rakan Pembangun seumur hidup.\n👩‍🏫 Sediakan RPH untuk pelbagai subjek.\n\n" + quota_text() + "\n"
+            return send(cid, "🏆 <b>RAKAN PEMBANGUN EARLY BIRD CIKGULAJU — RM20 SEKALI SAHAJA</b>\n"
+                        "<b>Kelebihan Rakan Pembangun:</b>\n✅ Bayar RM20 sekali sahaja.\n✅ Guna CikguLaju AI tanpa perlu bayar langganan bulanan atau tahunan.\n♾️ Akses Rakan Pembangun seumur hidup.\n👩‍🏫 Sediakan RPH untuk pelbagai subjek.\n\n" + quota_text() + "\n"
                         "Status Rakan Pembangun kekal walaupun sistem dikemas kini.",
                         [[{"text": "💳 Papar QR & Hantar Resit", "callback_data": "pioneer_pay"}],
                          [{"text": "🏠 Menu Utama", "callback_data": "home"}]])
@@ -179,18 +179,18 @@ def install(ns):
             if has_pioneer(sb, cid):
                 return send(cid, "🏆 Status Rakan Pembangun anda sudah aktif.")
             pending = ns["_latest_pending_payment"](cid)
-            if pending and float(pending.get("amount", 0)) != 10.0:
+            if pending and float(pending.get("amount", 0)) not in (10.0, 20.0):
                 return send(cid, "⚠️ Ada permohonan bayaran lain yang masih menunggu semakan.")
             if pending and pending.get("notes") == "proof_received_admin_notified":
-                return send(cid, "⌛ Resit Rakan Pembangun RM10 sudah diterima. Tunggu semakan admin; tidak perlu hantar semula.")
+                return send(cid, f"⌛ Resit Rakan Pembangun RM{float(pending['amount']):.2f} sudah diterima. Tunggu semakan admin; tidak perlu hantar semula.")
             if not pending and pioneer_availability(sb)[1] == 0:
-                return send(cid, "⛔ Kuota Rakan Pembangun batch pertama sudah penuh. "
+                return send(cid, "⛔ Kuota Rakan Pembangun sudah penuh. "
                             "Permohonan baharu dan muat naik resit baharu ditutup.")
             # Selecting upload is a draft intent, NOT a payment request.
             draft = state.setdefault(cid, {})
             draft["waiting"] = "payment_proof"
-            draft["payment_amount"] = 10.0
-            return send(cid, "📎 Sila hantar gambar atau PDF resit bayaran RM10. "
+            draft["payment_amount"] = float(pending["amount"]) if pending else 20.0
+            return send(cid, "📎 Sila hantar gambar atau PDF resit bayaran RM20. "
                         "Permohonan hanya direkod selepas resit dihantar.")
         if d == "pioneer_pay":
             if has_pioneer(sb, cid):
@@ -198,16 +198,16 @@ def install(ns):
             if pioneer_availability(sb)[1] == 0:
                 return send(cid, "⛔ Pendaftaran Rakan Pembangun Early Bird sudah penuh.")
             pending = ns["_latest_pending_payment"](cid)
-            if pending and float(pending["amount"]) != 10.0:
+            if pending and float(pending["amount"]) not in (10.0, 20.0):
                 return send(cid, "⚠️ Ada permohonan pembayaran lain yang belum selesai. "
                             "Sila selesaikan permohonan tersebut dahulu.")
             if pending and pending.get("notes") == "proof_received_admin_notified":
-                return send(cid, "⌛ Resit Rakan Pembangun RM10 sudah diterima dan menunggu semakan admin. Tidak perlu hantar semula.")
+                return send(cid, f"⌛ Resit Rakan Pembangun RM{float(pending['amount']):.2f} sudah diterima dan menunggu semakan admin. Tidak perlu hantar semula.")
             # Show QR and remember a transient intent only. Do not insert a
             # pending record into SQLite/Supabase before a receipt is uploaded.
             draft = state.setdefault(cid, {})
             draft["waiting"] = "payment_proof"
-            draft["payment_amount"] = 10.0
+            draft["payment_amount"] = float(pending["amount"]) if pending else 20.0
             # Existing QR bytes are reused, not copied into a new asset.
             return send_pioneer_qr(cid, pending["id"] if pending else None)
         if str(d).startswith("pioneer_review|"):
@@ -243,7 +243,7 @@ def install(ns):
                 return send(cid, f"⚠️ Permohonan #{rid} tidak ditemui pada rekod semasa. "
                             "Semak panel admin. Jangan minta pelanggan bayar semula.",
                             [[{"text": "🛠️ Panel Admin", "callback_data": "admin_panel"}]])
-            if float(req["amount"]) == 10.0:
+            if float(req["amount"]) in (10.0, 20.0):
                 if expected_uid is None:
                     # Legacy 'admin_approve|id' has no payer binding.
                     # Show the current card and a fresh ID-bound approval button.
@@ -344,7 +344,7 @@ def install(ns):
                     return send(cid, f"⚠️ Rakan Pembangun belum diaktifkan untuk Payment ID #{rid}.\\n"
                                 f"Sebab: {reason}\\n"
                                 "Bayaran masih menunggu pengesahan. Jangan minta pengguna bayar semula.")
-                ns["_mark_payment_request"](rid, "approved", cid, "Rakan Pembangun RM10 manually verified by admin")
+                ns["_mark_payment_request"](rid, "approved", cid, f"Rakan Pembangun RM{float(req['amount']):.2f} manually verified by admin")
                 send(cid, f"✅ Rakan Pembangun diaktifkan untuk {req['chat_id']}.")
                 return send(req["chat_id"], "🏆 <b>Status Rakan Pembangun Anda: AKTIF</b>\n\nAnda menikmati akses tanpa bayaran langganan bulanan atau tahunan sepanjang CikguLaju AI beroperasi.",
                             [[{"text": "🏠 Kembali ke Menu Utama", "callback_data": "home"}]])
@@ -356,7 +356,7 @@ def install(ns):
     ns["callback"] = callback
     ns["menu"] = menu
     ns["_admin_pioneer_status"] = admin_pioneer_status
-    # Admin-only reconciliation for bank-verified RM10 payments whose local
+    # Admin-only reconciliation for legacy bank-verified RM10 payments whose local
     # SQLite pending rows disappeared after a Render deploy. No auto-approval.
     # Install BEFORE private referrals so the outer webhook-secret guard remains.
     try:
