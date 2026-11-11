@@ -885,18 +885,30 @@ def create_blueprint():
             return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
         try:
             from web.native_telegram_extra_materials_20261106 import (
-                english_workbook_metadata, music_source_links,
+                english_workbook_metadata, english_student_book_metadata,
+                music_source_links,
             )
             if sub == "ENGLISH":
                 label = english_workbook_metadata(year, number)
                 items = []
+                from urllib.parse import urlencode
+                params = urlencode({"year":year, "subject":sub,
+                                    "unit":unit, "lesson":token})
                 if label:
-                    from urllib.parse import urlencode
-                    params = urlencode({"year":year, "subject":sub,
-                                      "unit":unit, "lesson":token})
                     items.append({"type":"workbook", "title":label,
                                   "url":"/api/web/rph/english-workbook?"+params,
                                   "action":"Download"})
+                if year == 4:
+                    # Fail closed for an unavailable Student Book source without
+                    # concealing an independently verified Workbook download.
+                    try:
+                        book_label = english_student_book_metadata(year, number)
+                    except Exception:
+                        book_label = None
+                    if book_label:
+                        items.append({"type":"student_book", "title":book_label,
+                                      "url":"/api/web/rph/english-student-book?"+params,
+                                      "action":"Download"})
             else:
                 # Telegram verifies the Music Unit/PdP pair and returns only
                 # original owner-hosted Google Drive VIEW links.
@@ -909,6 +921,26 @@ def create_blueprint():
                                  "belum disahkan." if sub == "MUZIK" else
                                  "Buku Aktiviti dipetik daripada halaman sumber yang dipadankan; "
                                  "tiada janaan RPH digunakan.")})
+
+    @bp.get("/api/web/rph/english-student-book")
+    def english_student_book():
+        account, error = _account()
+        if error is not None:
+            return error
+        try:
+            year, sub, unit, token, number = _extra_selection()
+            if sub != "ENGLISH" or year != 4:
+                raise ValueError("Unsupported Student Book")
+        except (ValueError, TypeError):
+            return jsonify({"error":"Pilihan Lesson Student Book tidak sah"}), 400
+        try:
+            from web.native_telegram_extra_materials_20261106 import english_student_book_pdf
+            content = english_student_book_pdf(year, number)
+        except Exception:
+            return jsonify({"error":"Fail Student Book dari Telegram belum tersedia"}), 503
+        return send_file(BytesIO(content), mimetype="application/pdf",
+                         as_attachment=True, conditional=False,
+                         download_name=f"CikguLaju_English_Y{year}_Lesson_{number:03d}_Student_Book.pdf")
 
     @bp.get("/api/web/rph/english-workbook")
     def english_workbook():
