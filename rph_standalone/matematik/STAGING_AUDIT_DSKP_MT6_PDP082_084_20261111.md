@@ -23,7 +23,7 @@ Tarikh semakan: 11 November 2026. Audit ini menyemak padanan **topik dan jenis s
 | 082 | 5 | Masalah jumlah bahagian (lelaki/perempuan) | 7.3.1, 7.4.1 |
 | 083 | 1 | Memudahkan 6:9 | 7.2.1 |
 | 083 | 2 | Menyeragamkan L/mL sebelum memudahkan nisbah | 7.2.1 |
-| 083 | 3–4 | Menentukan kuantiti berkadaran | 7.3.1 |
+| 083 | 3–4 | Bunga merah:putih 2:5 (8 merah → 20 putih); beras:air 4:7 (28 air → 16 beras) | 7.3.1 |
 | 084 | 1–3 | Masalah dua langkah: kuantiti asal, perubahan, nisbah akhir | 7.4.1 |
 
 **Semakan aritmetik:** 12 item, dengan jawapan dan jalan kerja berasingan dalam fail skema guru; QA automatik staging telah mencakupi kesemua 12 item. Soalan merupakan latihan baharu, bukan transkripsi buku sumber.
