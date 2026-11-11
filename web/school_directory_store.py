@@ -62,15 +62,27 @@ def _read(url, secret, table, query, *, limit=350, opener=None):
 
 # Presentation-only normalization. Preserve the canonical Supabase identifiers and
 # original 2022 school records; expand only unambiguous whole-word abbreviations.
-_SCHOOL_WORDS = {"BKT": "BUKIT", "KG": "KAMPUNG", "SG": "SUNGAI",
-                 "TMN": "TAMAN", "JLN": "JALAN"}
+_SCHOOL_WORDS = {
+    "BKT": "BUKIT", "KG": "KAMPUNG", "KPG": "KAMPUNG",
+    "SG": "SUNGAI", "TMN": "TAMAN", "JLN": "JALAN",
+    "BT": "BATU", "BHG": "BAHAGIAN", "PDG": "PADANG", "LDG": "LADANG",
+}
+_SCHOOL_ABBREVIATION = re.compile(
+    r"\b(?:BKT|KG|KPG|SG|TMN|JLN|BT|BHG|PDG|LDG)\b\.?"
+)
 
 
 def full_school_name(name):
     if not isinstance(name, str):
         raise ValueError("Invalid school name")
-    return re.sub(r"\b(?:BKT|KG|SG|TMN|JLN)\b",
-                  lambda match: _SCHOOL_WORDS[match.group()], name.upper())
+    # The 2022 dataset also contains punctuation forms such as SG.AYAM,
+    # KPG. ANGUS and BHG. 7. Preserve spaces without the abbreviation dot.
+    expanded = _SCHOOL_ABBREVIATION.sub(
+        lambda match: _SCHOOL_WORDS[match.group().rstrip(".")] +
+                      (" " if match.group().endswith(".") else ""),
+        name.upper(),
+    )
+    return re.sub(r"\s+", " ", expanded).strip()
 
 
 def states(url, secret, *, opener=None):
