@@ -114,6 +114,17 @@ def english_student_book_pdf(year, lesson, *, opener=None):
                limit=MAX_PDF, opener=opener)
     if raw is None or len(raw) < 450 or not raw.startswith(b"%PDF-"):
         raise NativeRPHUnavailable("Verified Student Book excerpt unavailable")
+    # The Telegram endpoint normally extracts a PDF with pypdf, but the Web
+    # must not advertise success if a stale/misconfigured backend serves junk
+    # or a whole book segment instead of the selected 1–4 pages.
+    try:
+        from io import BytesIO
+        from pypdf import PdfReader
+        reader = PdfReader(BytesIO(raw), strict=True)
+        if reader.is_encrypted or not 1 <= len(reader.pages) <= 4:
+            raise ValueError("Student Book page count or encryption invalid")
+    except Exception:
+        raise NativeRPHUnavailable("Invalid Student Book PDF pages") from None
     return raw
 
 
