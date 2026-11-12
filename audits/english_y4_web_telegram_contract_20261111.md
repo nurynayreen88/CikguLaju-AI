@@ -72,3 +72,5 @@
 - Semakan ini **tidak menyekat Workbook** yang disahkan dan tidak menjana halaman baharu. Ujian antara cabang kekal menggunakan pin SHA PR #558 dan #567; apabila salah satu berubah, jalankan semula kontrak selepas pin diperbaharui.
 - Penambahan kes negatif ialah **QA staging sahaja**; ia tidak mengubah data, akses ahli, kuota, dan fail PDF produksi. Keputusan CI untuk komit terkini mesti diperiksa sebelum menyatakan ujian lulus.
 - Untuk penerbitan: audit visual kandungan PDF, hak edaran, pypdf dalam Render, dan HTTPS akaun guru sebenar masih HOLD.
+
+- Ujian berasingan `test_unmapped_student_book_preserves_verified_workbook` memilih Lesson yang tiada sumber Student Book tetapi mempunyai peta Workbook sah, lalu menyemak Workbook masih muncul dan PDF-nya dapat dimuat turun, sementara Student Book terus tidak dipaparkan. Ini memelihara aturan bahan bebas antara satu sama lain; keputusan CI pada head terkini perlu disahkan.
