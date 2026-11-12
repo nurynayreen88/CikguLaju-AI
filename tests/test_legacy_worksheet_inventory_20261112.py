@@ -25,6 +25,10 @@ class LegacyWorksheetAuditTests(unittest.TestCase):
             self.assertEqual(result["sources"][0]["state"], "INSPECTED_NOT_APPROVED")
             self.assertEqual(result["sources"][0]["tables"][0]["rows"], 1)
             self.assertEqual(result["sources"][0]["tables"][0]["status"], "UNREVIEWED_ROWS")
+            self.assertEqual(
+                [v["name"] for v in result["sources"][0]["tables"][0]["columns"]],
+                ["id", "body"])
+            self.assertNotIn("DRAF - NOT APPROVED", json.dumps(result))
             self.assertEqual(result["sources"][1]["state"], "MISSING_OR_LINK")
             self.assertEqual(db.read_bytes(), before)
             self.assertFalse((root / (db.name + "-wal")).exists())
