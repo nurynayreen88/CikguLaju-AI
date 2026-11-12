@@ -27,3 +27,12 @@
 2. Selesaikan integrasi PDF English Tahun 4 bersama tiga PR sumber di atas.
 3. Uji dengan guru sebenar: sesi buka web → pilih slot → dapat bahan → berjaya muat turun, dan rekod punca pengguna berhenti sebelum log masuk / sebelum janaan (tanpa data murid).
 4. Selepas penggunaan harian stabil, keutamaan kandungan seterusnya ialah **bank lembaran kerja yang benar-benar siap dan berpaut pada Lesson/PdP**, bukan menu kosong.
+
+## Sambungan: pengalaman pengguna baharu tanpa login (12 Nov 2026)
+- Halaman umum kini menerangkan empat fungsi sedia ada: PdP Hari Ini, RPH Word/PDF, RPT 2027 dan bahan sokongan yang benar-benar tersedia. Tiada dakwaan semua Lesson ada Workbook/audio.
+- Pelawat boleh membuka panduan "Tengok cara ... tanpa log masuk" menggunakan HTML `details`. Panduan ini berlabel **bukan RPH sebenar**; tidak memanggil API kurikulum, tidak menjana bahan dan tidak mengurangkan baki percubaan.
+- CTA percubaan membawa ke komponen Telegram Login sedia ada; tidak membuat aliran pendaftaran atau mekanisme kuota kedua.
+- Pautan buka bot Telegram diberi hanya apabila `/api/auth/capabilities` mengesahkan `bot_username` dan nama lulus penapisan format ketat. Tiada bot username atau deep link direka.
+- Ujian tambahan `tests/test_guest_onboarding_20261112.cjs` menjaga halaman umum, sumber bot yang disahkan, login asal, admin/referral tersembunyi dan ketiadaan output palsu.
+- **Belum mengira pelawat anonim atau kadar konversi**. Analisis admin sedia ada mengira akaun/login; jangan membuat anggaran kadar konversi pelawat tanpa event sah yang membolehkan pengiraan.
+- Status ini masih staging. Perlu semakan sebenar Android/mobile, Telegram Login Widget, akaun baharu, akses pautan bot serta kesan pada masa muat laman sebelum release.
