@@ -2,15 +2,15 @@
 
 ## Bukti dua-PR (staging sahaja)
 - Web: PR #559, cabang `staging/web-english-y4-studentbook-20261111`.
-- Telegram: PR #558, commit sumber dipin `47b1c18c376ef57818f3dba12869a785ab766db5`.
+- Telegram: PR #558, commit sumber dipin `e4ca75a71b4c1d2bc2579785629414674fae03a2`.
 - Workflow: `.github/workflows/web-english-y4-cross-pr-contract-staging.yml`; ujian: `tests/test_web_english_y4_partner_contract_20261111.py`.
 - Dua checkout GitHub yang berbeza dijalankan dalam GitHub Actions. API Flask kedua-duanya dihubungkan melalui penyesuai WSGI offline, dan menggunakan fail PDF asal dalam repositori.
 - Jalur auth Telegram dalam ujian ialah stub Bearer untuk persekitaran offline; auth sebenar turut diliputi ujian PR Telegram, namun **ujian rangkaian LIVE dengan token sebenar belum dijalankan**.
 - Tiada request terhadap perkhidmatan LIVE, tiada transaksi Supabase, tiada potongan kredit dan tiada deployment.
 
 ## Keputusan ujian silang
-- Lesson 103: ketiga-tiga halaman Student Book **73, 74, 75** diekstrak dan kandungan stream PDF yang dihantar oleh Web sepadan dengan halaman asal dalam `y4_student_021_100.pdf`.
-- Lesson 157: hanya halaman utama **110**; halaman tambahan 133 tidak disertakan.
+- Lesson 103: ujian asal mengekstrak 73, 74, 75; **audit SOW lanjut mendapati dua halaman tambahan itu milik Lesson 104**. Kontrak terkini menyemak PDF halaman 73 sahaja daripada `y4_student_021_100.pdf`.
+- Lesson 157: rujukan SOW utama ialah **110–111** (dua halaman); halaman 133 ialah pilihan CLIL berasingan dan tidak dicampur.
 - Lesson 43: sumber asal lima halaman 27–31 ialah peta salah; diperbetulkan ke **Phonics 3, Student Book halaman 121** mengikut Scheme of Work Year 4. Ujian silang perlu mengesahkan satu halaman sumber sahaja.
 - Lesson 30: **Student Book dan Workbook** muncul berasingan dalam senarai bahan dan kedua-duanya boleh dimuat turun sebagai PDF sumber sebenar.
 - Pengadang kegagalan separa: jika Workbook API gagal, Student Book yang sah kekal dipaparkan/muat turun; jika Student Book gagal, Workbook yang sah masih dipaparkan/muat turun.
@@ -32,7 +32,7 @@
 - **STAGING HOLD / DRAF**: Jangan gabung atau deploy ke pengeluaran sehingga ujian Render ↔ Telegram sebenar dan pengesahan akademik/sumber selesai.
 
 ## Audit lengkap 81 pemetaan Student Book — 12 Nov 2026
-- PR Telegram #558 commit `47b1c18c376ef57818f3dba12869a785ab766db5` menambah ujian `test_all_81_original_source_mappings_fail_closed_or_extract_exact_pdf_pages` yang membaca peta asal `app.py`, menilai semua 81 pilihan, mengesahkan 80 excerpt 1–4 halaman, dan menguji PDF dipulangkan terhadap content stream fail sumber bagi setiap halaman.
+- PR Telegram #558 commit `e4ca75a71b4c1d2bc2579785629414674fae03a2` menambah ujian `test_all_81_original_source_mappings_fail_closed_or_extract_exact_pdf_pages` yang membaca peta asal `app.py`, menilai semua 81 pilihan, mengesahkan 80 excerpt 1–4 halaman, dan menguji PDF dipulangkan terhadap content stream fail sumber bagi setiap halaman.
 - Lesson 43 dengan peta lama lima halaman kini diperbetulkan kepada halaman tunggal 121 di resolver API;  Lesson 103 memulangkan 73–75 dan Lesson 157 halaman utama 110 sahaja. Semakan chunk sempadan dan endpoint Bearer sedia ada kekal.
 - CI Telegram `English Workbook PDF and Music external links source QA` run **43118922500**: **SUCCESS** pada commit `28aca5abef094588906114d7985930a01affdd4f`.
 - Workflow silang Web–Telegram kini memin commit itu, menggantikan pin lama. Ujian WSGI berasingan masih perlu lulus pada head Web terkini.
@@ -44,3 +44,12 @@
 - PR Telegram #558 memperkenalkan pembetulan bersyarat hanya untuk pemetaan lama yang sepadan tepat. Tidak melonggarkan had 1–4 halaman untuk Lesson lain; ujian sumber kini meliputi 81 pemetaan.
 - Ujian silang Web–Telegram dipinda untuk menguji PDF p.121 sebenar daripada `y4_student_101_177.pdf`, dan pin Telegram diperbaharui.
 - Belum membetulkan pemetaan legasi `app.py`, belum ada ujian akaun guru LIVE atau kelulusan hak edar; **STAGING HOLD**.
+
+## Pembetulan kontrak selepas audit SOW (12 November 2026)
+
+- **Lesson 43**: Phonics 3 p.121 sahaja; sumber lama p.27–31 tersalah cakupan.
+- **Lesson 103**: Activity 5 p.73 sahaja; p.74–75 sebenarnya diperuntukkan untuk Lesson 104.
+- **Lesson 157**: pilihan utama *What are germs?* p.110–111; CLIL p.133 pilihan lain (bukan disambung).
+- Ujian silang dibina terhadap Telegram commit `e4ca75a71b4c1d2bc2579785629414674fae03a2`. Setiap PDF dibanding dengan stream halaman sebenar, tiada buku penuh atau halaman tambahan terdedah.
+- Sumber rujukan: https://www.scribd.com/document/774411596/Primary-Year-4-SK-SoW dan https://online.anyflip.com/aecw/prtt/files/basic-html/page133.html .
+- **Bukan LIVE**. Pemeriksaan akademik lanjut/hak edaran dan E2E akaun sebenar kekal HOLD; rekod pemetaan dalam `app.py` Telegram lama belum dikemaskini.
