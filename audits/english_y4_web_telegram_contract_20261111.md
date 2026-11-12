@@ -2,7 +2,7 @@
 
 ## Bukti dua-PR (staging sahaja)
 - Web: PR #559, cabang `staging/web-english-y4-studentbook-20261111`.
-- Telegram: PR #558, commit sumber dipin `28aca5abef094588906114d7985930a01affdd4f`.
+- Telegram: PR #558, commit sumber dipin `47b1c18c376ef57818f3dba12869a785ab766db5`.
 - Workflow: `.github/workflows/web-english-y4-cross-pr-contract-staging.yml`; ujian: `tests/test_web_english_y4_partner_contract_20261111.py`.
 - Dua checkout GitHub yang berbeza dijalankan dalam GitHub Actions. API Flask kedua-duanya dihubungkan melalui penyesuai WSGI offline, dan menggunakan fail PDF asal dalam repositori.
 - Jalur auth Telegram dalam ujian ialah stub Bearer untuk persekitaran offline; auth sebenar turut diliputi ujian PR Telegram, namun **ujian rangkaian LIVE dengan token sebenar belum dijalankan**.
@@ -11,7 +11,7 @@
 ## Keputusan ujian silang
 - Lesson 103: ketiga-tiga halaman Student Book **73, 74, 75** diekstrak dan kandungan stream PDF yang dihantar oleh Web sepadan dengan halaman asal dalam `y4_student_021_100.pdf`.
 - Lesson 157: hanya halaman utama **110**; halaman tambahan 133 tidak disertakan.
-- Lesson 43: rujukan lima halaman kekal ditahan, API muat turun tidak mendedahkan PDF.
+- Lesson 43: sumber asal lima halaman 27–31 ialah peta salah; diperbetulkan ke **Phonics 3, Student Book halaman 121** mengikut Scheme of Work Year 4. Ujian silang perlu mengesahkan satu halaman sumber sahaja.
 - Lesson 30: **Student Book dan Workbook** muncul berasingan dalam senarai bahan dan kedua-duanya boleh dimuat turun sebagai PDF sumber sebenar.
 - Pengadang kegagalan separa: jika Workbook API gagal, Student Book yang sah kekal dipaparkan/muat turun; jika Student Book gagal, Workbook yang sah masih dipaparkan/muat turun.
 - Login tiada → 401; Unit yang tidak sepadan → 400; Bearer Telegram tiada → 401.
@@ -32,8 +32,15 @@
 - **STAGING HOLD / DRAF**: Jangan gabung atau deploy ke pengeluaran sehingga ujian Render ↔ Telegram sebenar dan pengesahan akademik/sumber selesai.
 
 ## Audit lengkap 81 pemetaan Student Book — 12 Nov 2026
-- PR Telegram #558 commit `28aca5abef094588906114d7985930a01affdd4f` menambah ujian `test_all_81_original_source_mappings_fail_closed_or_extract_exact_pdf_pages` yang membaca peta asal `app.py`, menilai semua 81 pilihan, mengesahkan 80 excerpt 1–4 halaman, dan menguji PDF dipulangkan terhadap content stream fail sumber bagi setiap halaman.
-- Lesson 43 dengan lima halaman kekal disekat; Lesson 103 memulangkan 73–75 dan Lesson 157 halaman utama 110 sahaja. Semakan chunk sempadan dan endpoint Bearer sedia ada kekal.
+- PR Telegram #558 commit `47b1c18c376ef57818f3dba12869a785ab766db5` menambah ujian `test_all_81_original_source_mappings_fail_closed_or_extract_exact_pdf_pages` yang membaca peta asal `app.py`, menilai semua 81 pilihan, mengesahkan 80 excerpt 1–4 halaman, dan menguji PDF dipulangkan terhadap content stream fail sumber bagi setiap halaman.
+- Lesson 43 dengan peta lama lima halaman kini diperbetulkan kepada halaman tunggal 121 di resolver API;  Lesson 103 memulangkan 73–75 dan Lesson 157 halaman utama 110 sahaja. Semakan chunk sempadan dan endpoint Bearer sedia ada kekal.
 - CI Telegram `English Workbook PDF and Music external links source QA` run **43118922500**: **SUCCESS** pada commit `28aca5abef094588906114d7985930a01affdd4f`.
 - Workflow silang Web–Telegram kini memin commit itu, menggantikan pin lama. Ujian WSGI berasingan masih perlu lulus pada head Web terkini.
 - Bukti ini ialah semakan pemetaan dan stream PDF sumber sebenar dalam repositori, **bukan** pengesahan visual buku cetak, kebenaran hak edaran atau pemeriksaan LIVE.
+
+## Sambungan 12 Nov 2026 — pembetulan kandungan Phonics 3
+
+- Penemuan audit: Lesson 43 sepatutnya Phonics 3, Student Book **p.121**, bukan lima halaman Unit 3 **p.27–31**. Rujukan utama: https://online.anyflip.com/aecw/prtt/files/basic-html/page133.html .
+- PR Telegram #558 memperkenalkan pembetulan bersyarat hanya untuk pemetaan lama yang sepadan tepat. Tidak melonggarkan had 1–4 halaman untuk Lesson lain; ujian sumber kini meliputi 81 pemetaan.
+- Ujian silang Web–Telegram dipinda untuk menguji PDF p.121 sebenar daripada `y4_student_101_177.pdf`, dan pin Telegram diperbaharui.
+- Belum membetulkan pemetaan legasi `app.py`, belum ada ujian akaun guru LIVE atau kelulusan hak edar; **STAGING HOLD**.
