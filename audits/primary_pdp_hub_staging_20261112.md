@@ -48,3 +48,11 @@
 - Ujian `tests/test_web_english_y4_worksheet_20261112.py` memeriksa halaman PDF sebenar melalui pypdf, tiada skema jawapan, authentication, Lesson/token mismatch, ketiadaan kuota, pengasingan Workbook, dan satu contoh PDF awam.
 - QA yang belum selesai: semak rupa fizikal empat PDF di telefon dan pada cetakan A4, semak pedagogi kandungan berserta SOW sebenar, uji alamat public sample pada Render staging, kemudian buka kepada guru ujian. Jangan isytihar *Bank Lembaran Kerja Tahun 1–6 READY*.
 - Ketika menggabung PR #559 dan PR #568, satukan semula metadata `extra-materials` supaya **Workbook + Student Book + worksheet** kekal bebas. Jangan overwrite salah satu ciri.
+
+## Sambungan: salinan Word boleh edit (12 November 2026)
+- Empat Lembaran Kerja tambahan English Y4 yang sama (Lesson 004/079/089/090) kini mempunyai **dua format**: PDF A4 untuk dicetak dan Word (.docx) yang boleh disunting oleh guru. Bahan tidak ditambah secara generik untuk Lesson lain.
+- Pelaksanaan `web/english_y4_worksheet_word_20261112.py` menggunakan _source dan _student_lines daripada renderer PDF sedia ada: tajuk, aktiviti, ruangan jawapan dan kotak semak kekal; nota Purpose, Teacher assessment serta Answer key dikeluarkan.
+- Endpoint berasingan `/api/web/rph/english-worksheet-word` mengulangi login dan semakan identiti Tahun/Subjek/Unit/Token yang sama dengan PDF, tidak menyentuh penjana atau baki percubaan.
+- Senarai bahan manual dan PdP Hari Ini memaparkan Word hanya apabila `extra-materials` memulangkan URL dalaman asal yang disahkan; tiada menu Word kosong. Contoh awam tanpa login masih **PDF Lesson 004 sahaja**, bukannya Word atau PDF bebas mengikut parameter.
+- CI staging diperluas memeriksa sumber, hak akses, format DOCX, dimensi A4, tiada skema/nota guru dalam teks murid, dan bukan perubahan kredit. Catatan tambahan: pemeriksaan susun atur Word Lesson 090 dengan LibreOffice tempatan menghasilkan satu halaman A4 tanpa pemotongan; ini belum menggantikan semakan keempat-empat fail dalam Render/mobile.
+- Kekal HOLD sebelum deploy: perlu gabung selamat dengan PR #559 Student Book, semakan reka letak keempat-empat Word/PDF dan ujian klik real di telefon serta hak edaran bahan.
