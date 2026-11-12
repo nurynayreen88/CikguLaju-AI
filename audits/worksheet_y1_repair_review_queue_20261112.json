@@ -23,7 +23,9 @@
         "Padankan PdP sebenar",
         "Semak arahan lukis satu bulatan dan ruang jawapan",
         "Semak masa pelaksanaan dan kesesuaian murid Tahun 1"
-      ]
+      ],
+      "mapping_status": "PENDING_VERIFIED_TELEGRAM_LESSON",
+      "mapping_note": "web/unified_rph_web.py source_records only serves local Year 2-6 ENGLISH/MORAL/PJPK/PSV, and cannot verify Year 1 Sains/Matematik Lesson. Require authoritative Telegram source check before assigning token."
     },
     {
       "id": "repair-science-y1-1.1.1",
@@ -43,7 +45,9 @@
         "Padankan PdP sebenar",
         "Pastikan semua bahan pemerhatian bersih dan tersedia",
         "Pastikan jawapan warna, bentuk dan tekstur diterima mengikut objek yang digunakan"
-      ]
+      ],
+      "mapping_status": "PENDING_VERIFIED_TELEGRAM_LESSON",
+      "mapping_note": "web/unified_rph_web.py source_records only serves local Year 2-6 ENGLISH/MORAL/PJPK/PSV, and cannot verify Year 1 Sains/Matematik Lesson. Require authoritative Telegram source check before assigning token."
     }
   ],
   "release_criteria": [
