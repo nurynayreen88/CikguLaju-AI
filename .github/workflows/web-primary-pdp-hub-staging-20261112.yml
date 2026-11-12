@@ -5,6 +5,7 @@ on:
       - 'web_v1_static_preview/index.html'
       - 'web_v1_static_preview/rph-today.js'
       - 'tests/test_primary_pdp_hub_staging_20261112.cjs'
+      - 'tests/test_guest_onboarding_20261112.cjs'
       - '.github/workflows/web-primary-pdp-hub-staging-20261112.yml'
   push:
     branches:
@@ -23,5 +24,7 @@ jobs:
         run: node --check web_v1_static_preview/rph-today.js
       - name: Test verified materials and unchanged menu/credit boundaries
         run: node tests/test_primary_pdp_hub_staging_20261112.cjs
+      - name: Test public guest onboarding and trusted Telegram link
+        run: node tests/test_guest_onboarding_20261112.cjs
       - name: Regression - existing selection and timetable flow
         run: node tests/test_rph_today_selection_progress_20261111.cjs
