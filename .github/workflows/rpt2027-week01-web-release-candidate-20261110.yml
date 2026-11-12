@@ -55,6 +55,12 @@ jobs:
       - name: Prove all 56 review PDFs remain release-blocked
         run: |
           python -m unittest tests.test_rpt2027_teacher_release_review_guard_20261112 -v
+      - name: Independently audit every teacher PDF for internal wording
+        run: |
+          python -m scripts.audit_rpt2027_teacher_text_leaks_20261108 \
+            --pdf-only \
+            --output output/rpt2027_week01_review/teacher_text_leak_56_report.json \
+            output/rpt2027_week01_review/rpt_2027/web_2027_pdfs
       - name: Confirm there were no edits in original Web checkout
         run: |
           test -z "$(git -C _web_baseline status --porcelain --untracked-files=no)"
@@ -68,4 +74,5 @@ jobs:
           if-no-files-found: warn
           path: |
             output/rpt2027_week01_review/week01_candidate_review.json
+            output/rpt2027_week01_review/teacher_text_leak_56_report.json
             output/rpt2027_week01_review/rpt_2027/web_2027_pdfs/
