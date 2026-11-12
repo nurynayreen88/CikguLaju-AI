@@ -908,8 +908,11 @@ def create_blueprint():
                     from web.english_y4_worksheet_pdf_20261112 import worksheet_metadata
                     worksheet_label = worksheet_metadata(year, number)
                     if worksheet_label:
-                        items.append({"type":"worksheet", "title":worksheet_label,
+                        items.append({"type":"worksheet", "title":worksheet_label+" (PDF)",
                                       "url":"/api/web/rph/english-worksheet?"+params,
+                                      "action":"Download"})
+                        items.append({"type":"worksheet_word", "title":worksheet_label+" (Word boleh edit)",
+                                      "url":"/api/web/rph/english-worksheet-word?"+params,
                                       "action":"Download"})
                 if workbook_failed and not items:
                     return jsonify({"items": [], "error":
@@ -992,6 +995,33 @@ def create_blueprint():
         response = send_file(BytesIO(document), mimetype="application/pdf",
                              as_attachment=True, conditional=False,
                              download_name=f"CikguLaju_English_Y4_Lesson_{number:03d}_Worksheet.pdf")
+        response.headers["X-CikguLaju-Material-Source"] = "approved-supplementary-english-y4"
+        return response
+
+    @bp.get("/api/web/rph/english-worksheet-word")
+    def english_worksheet_word():
+        # Editable pupil copy, same exact source selection and auth as PDF.
+        # Read-only resource; never use RPH delivery-credit methods.
+        account, error = _account()
+        if error is not None:
+            return error
+        try:
+            year, sub, unit, token, number = _extra_selection()
+            if sub != "ENGLISH" or year != 4:
+                raise ValueError("Unsupported worksheet subject or year")
+        except (ValueError, TypeError):
+            return jsonify({"error":"Pilihan lembaran kerja tidak sah"}), 400
+        try:
+            from web.english_y4_worksheet_word_20261112 import worksheet_docx
+            document = worksheet_docx(year, number)
+        except Exception:
+            return jsonify({"error":"Lembaran kerja Word belum dapat disediakan"}), 503
+        if document is None:
+            return jsonify({"error":"Lembaran kerja belum tersedia untuk Lesson ini"}), 404
+        response = send_file(BytesIO(document),
+                             mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                             as_attachment=True, conditional=False,
+                             download_name=f"CikguLaju_English_Y4_Lesson_{number:03d}_Worksheet.docx")
         response.headers["X-CikguLaju-Material-Source"] = "approved-supplementary-english-y4"
         return response
 
