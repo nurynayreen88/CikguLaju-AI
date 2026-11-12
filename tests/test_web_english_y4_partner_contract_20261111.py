@@ -232,6 +232,64 @@ class WebTelegramYear4PartnerContract(unittest.TestCase):
                 self.assertEqual(actual.pages[0].get_contents().get_data(),
                                  source.pages[20].get_contents().get_data())
 
+    def test_all_81_staging_sources_match_corrected_legacy_map(self):
+        """Compare all 81 private PDF page choices against separately patched Telegram.
+
+        PR #567 corrects legacy app.py; PR #558 serves private PDF excerpts;
+        PR #559 displays/downloads them. These are independent branch sources.
+        """
+        corrected_root = (ROOT / os.environ.get(
+            "CIKGULAJU_PR567_DIR", ".partner-y4-legacy"
+        )).resolve()
+        corrected_source = (corrected_root / "app.py").read_text(
+            encoding="utf-8"
+        )
+        expected_map = _source_constant(corrected_source, "_Y4_SB_PAGES_V25230")
+        expected_overrides = _source_constant(
+            corrected_source, "_EN34_MAIN_SB_V25231"
+        )
+        self.assertEqual(len(expected_map), 81)
+        self.assertEqual(set(expected_map), set(self.runtime.mapped))
+        rows = [
+            {"lesson_no": lesson, "unit_name": f"Source Lesson {lesson}"}
+            for lesson in sorted(expected_map)
+        ]
+        manifest = self.runtime._EN_LOCAL_BOOK_CHUNKS_V25234[(4, "textbook")]
+        with patch.object(self.runtime, "_en97_units",
+                          return_value=(rows, ["Source"])):
+            for lesson in sorted(expected_map):
+                with self.subTest(lesson=lesson):
+                    raw = expected_overrides.get(
+                        (4, lesson), expected_map[lesson]
+                    )
+                    expected = self.partner._verified_y4_student_main_pages(raw)
+                    self.assertTrue(expected, "Corrected map is not a safe range")
+                    self.assertLessEqual(len(expected), 4)
+                    material = self.partner._student_book_material(
+                        self.runtime, 4, lesson, root=PARTNER
+                    )
+                    self.assertIsNotNone(
+                        material, f"Private PDF resolver rejected Lesson {lesson}"
+                    )
+                    observed = []
+                    for path, offset in material["parts"]:
+                        matching = [
+                            first for first, last, rel in manifest
+                            if Path(rel).name == path.name
+                        ]
+                        self.assertEqual(len(matching), 1)
+                        observed.append(matching[0] + offset)
+                    self.assertEqual(
+                        observed, expected,
+                        f"Private PDF differs from legacy Lesson {lesson}"
+                    )
+        for lesson, expected in ((43, [121]), (103, [73]),
+                                 (157, [110, 111])):
+            raw = expected_overrides.get((4, lesson), expected_map[lesson])
+            self.assertEqual(
+                self.partner._verified_y4_student_main_pages(raw), expected
+            )
+
     def test_no_login_wrong_unit_and_missing_telegram_bearer(self):
         query = self._select(103)
         with patch("web.unified_rph_web._account",
