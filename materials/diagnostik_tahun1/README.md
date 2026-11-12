@@ -39,7 +39,7 @@ kredit percuma, langganan, pembayaran atau rekod pengguna.
 
 ## Ujian
 
-python -m unittest tests/test_diagnostik_tahun1_resources.py
+python -m unittest discover -s tests -p test_diagnostik_tahun1_resources.py
 
 Semakan fail hilang, checksum tidak sah, akses tidak dibenarkan, flag tidak aktif
 dan penghantaran fail sah diliputi. Jalankan juga QA integrasi pada staging.
