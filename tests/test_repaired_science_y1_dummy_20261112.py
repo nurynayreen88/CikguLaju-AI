@@ -51,7 +51,7 @@ class ScienceY1WorksheetRepairTests(unittest.TestCase):
             for n in range(1, 7):
                 self.assertIn(str(n) + ".", student_text)
             self.assertIn("SAINS TAHUN 1", student_text)
-            self.assertIn("BELUM UNTUK EDARAN", student_text)
+            self.assertIn("BUKAN UNTUK EDARAN", student_text)
             docx = Document(docx_path)
             self.assertEqual(round(docx.sections[0].page_width.mm), 210)
             self.assertEqual(round(docx.sections[0].page_height.mm), 297)
