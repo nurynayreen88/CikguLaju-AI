@@ -6,6 +6,7 @@ on:
       - 'web_v1_static_preview/rph-today.js'
       - 'tests/test_primary_pdp_hub_staging_20261112.cjs'
       - 'tests/test_web_worksheet_submenu_20261112.cjs'
+      - 'tests/test_web_upcoming_materials_menu_20261112.cjs'
       - 'tests/test_web_english_three_source_merge_20261112.cjs'
       - 'tests/test_web_english_three_source_merge_20261112.py'
       - 'web/native_telegram_extra_materials_20261106.py'
@@ -53,6 +54,8 @@ jobs:
         run: node tests/test_web_worksheet_submenu_20261112.cjs
       - name: Test exact Workbook and Student Book UI selection without clobbering worksheet
         run: node tests/test_web_english_three_source_merge_20261112.cjs
+      - name: Test Coming Soon sidebar route without fake downloads
+        run: node tests/test_web_upcoming_materials_menu_20261112.cjs
       - name: Test public guest onboarding and trusted Telegram link
         run: node tests/test_guest_onboarding_20261112.cjs
       - name: Regression - existing selection and timetable flow
