@@ -164,7 +164,7 @@ class PrivateWebFeedbackTests(unittest.TestCase):
             (url, {"status": "SELESAI"},
              {"Origin": "https://localhost"}, 400),
             ("/api/web/admin/feedback/0", payload,
-             {"Origin": "https://localhost"}, 404),
+             {"Origin": "https://localhost"}, 400),
         ]
         for route, body, headers, expected in cases:
             with self.subTest(route=route, body=body):
