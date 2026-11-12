@@ -385,14 +385,18 @@ def music_records(year):
         unit=field(r,"Unit","Unit/Tajuk").strip()
         status=field(r,"Semakan","Status tambahan","Status Semakan")
         display_status=_music_status_for_pdf(status)
-        book=field(r,"BT m/s","RPT halaman BT (belum sah)","Buku Teks m/s")
+        book=field(r,"BT m/s","RPT halaman BT (belum sah)","Buku Teks m/s").strip()
+        # Empty printed-book references must not become "BT m/s:." in a PDF.
+        # Keep the untouched source record and its HOLD status for audit.
+        book_note=("BT m/s: "+book+" (draf). "
+                   if book and book.lower() not in ("-", "—", "tiada", "n/a") else "")
         audio=r.get("Audio cetak atau RPT",r.get("Audio Tercetak",""))
         output.append(dict(
             id=f"{n:03d}",week=matches[0],unit="Unit/Tajuk: "+unit,
             topic="PdP Seni Muzik "+f"{n:03d}",
             sk=official["sk"],sk_display=official["sk_display"],
             sp=official["sp"],sp_display=official["sp_display"],
-            note=("BT m/s: "+book+" (draf). " +
+            note=(book_note+
                   ("Audio: "+audio+". " if audio else "")+display_status+
                   (" | "+official["source_note"] if official["source_note"] else ""))[:660],
             source_rpt_sp_codes=sp,source_status_original=status,
