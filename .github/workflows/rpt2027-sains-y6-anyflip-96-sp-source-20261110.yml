@@ -1,0 +1,33 @@
+name: RPT Sains Y6 2021 full 96-SP published-source context audit
+on:
+  pull_request:
+    paths:
+      - 'scripts/probe_sains_y6_2021_96_sp_anyflip_20261110.py'
+      - 'tests/test_sains_y6_source_coverage_guard_20261112.py'
+      - '.github/workflows/rpt2027-sains-y6-anyflip-96-sp-source-20261110.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  original-source-96:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'requests==2.32.5' 'beautifulsoup4==4.12.3'
+      - name: Offline regression — missing source must fail closed
+        run: python -m unittest -v tests.test_sains_y6_source_coverage_guard_20261112
+      - name: Find actual 96 original 2021 SP contexts from published facsimile
+        run: python -m scripts.probe_sains_y6_2021_96_sp_anyflip_20261110
+      # Always preserve the diagnostic report, even when the source
+      # mirror rejects the request and the academic coverage guard fails.
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: rpt2027-sains-y6-published-96-sp-source-contexts-not-academic-final
+          path: output/sains_y6_2021_anyflip_96_sp_source_contexts_20261110.json
+          retention-days: 30
+          if-no-files-found: error
