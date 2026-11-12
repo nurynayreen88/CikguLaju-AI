@@ -127,18 +127,25 @@ class StudentBookYear4Materials(unittest.TestCase):
         self.assertEqual(len(page_map), 81)
         self.assertTrue(all(type(lesson) is int and 1 <= lesson <= 160
                             for lesson in page_map))
-        self.assertEqual(main_map.get((4, 157)), "110")
-
+        # This API PR predates the separate legacy-source PR #567. Verify
+        # correctness with both its unpatched legacy map and the future
+        # KPM SOW-corrected map; reject every unexpected third mapping.
+        self.assertIn(page_map[43], ("27, 28, 29, 30, 31", "121"))
+        self.assertIn(page_map[103], ("73, 74–75", "73"))
+        self.assertIn(page_map[157], ("110–133", "110–111"))
+        self.assertIn(main_map.get((4, 157)), ("110", "110–111"))
         valid = {
             lesson: _verified_y4_student_main_pages(
                 main_map.get((4, lesson), source)
             )
             for lesson, source in page_map.items()
         }
-        self.assertEqual(sum(bool(pages) for pages in valid.values()), 80)
-        self.assertEqual([n for n, pages in valid.items() if not pages], [43])
-        self.assertEqual(valid[103], [73, 74, 75])
-        self.assertEqual(valid[157], [110])
+        self.assertEqual([n for n, pages in valid.items() if not pages],
+                         [43] if page_map[43] != "121" else [])
+        self.assertEqual(sum(bool(pages) for pages in valid.values()),
+                         80 if page_map[43] != "121" else 81)
+        self.assertIn(valid[103], ([73, 74, 75], [73]))
+        self.assertIn(valid[157], ([110], [110, 111]))
 
         chunks = [
             (1, 20, "books/english/y4_student_001_020.pdf"),
@@ -171,8 +178,8 @@ class StudentBookYear4Materials(unittest.TestCase):
                 material = _student_book_material(runtime, 4, lesson,
                                                   root=root)
                 self.assertIsNotNone(material)
-                # Legacy app.py lists five unrelated Unit 3 pages for L043;
-                # the source-specific API corrects Phonics 3 to SOW p.121.
+                # Whether app.py is patched or still legacy, the API must
+                # return the same 3 SOW-correct main textbook page sets.
                 # Academic SOW crosswalk for three confirmed legacy mismaps.
                 corrections = {43: [121], 103: [73], 157: [110, 111]}
                 expected = corrections.get(lesson, valid[lesson])
