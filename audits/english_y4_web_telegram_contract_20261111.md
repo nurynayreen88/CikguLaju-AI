@@ -62,3 +62,13 @@
 - Had maksimum empat halaman berturutan, kesahihan PDF, pemisahan Workbook, serta sekatan login/bearer tidak dilonggarkan.
 - Ujian tiga PR ini ialah ujian staging offline, bukan semakan rupa buku cetak, hak edaran, konfigurasi pypdf pada Render, atau muat turun sebenar akaun guru. Semua release gate itu masih HOLD; tiada merge/deploy pengeluaran.
 - Jika kepala PR #567 atau PR #558 berubah, pindaan pin SHA dan ujian semula diwajibkan sebelum penerbitan.
+
+
+## Audit liputan 160 Lesson — pengadang 79 tanpa peta Student Book (12 Nov 2026)
+
+- Peta kanonik Telegram legasi mempunyai **81/160** Lesson dengan sumber halaman Student Book utama yang ditentukan.
+- Baki **79/160 Lesson** **bukan** secara automatik dianggap salah, tidak lengkap RPH, atau wajib mempunyai halaman Student Book. Ia bermaksud sumber halaman **belum disahkan dalam peta khusus**; sebab itu pautan Student Book bagi Lesson tersebut mesti kekal tidak tersedia.
+- Ujian tambahan `test_unmapped_79_lessons_never_offer_student_book` membina katalog Lesson 1–160 penuh daripada nombor Lesson, tetapi tetap menguji peta sumber asal PR #558: setiap satu daripada 79 Lesson tanpa rekod tidak boleh memperoleh metadata atau PDF Student Book pada API private (404). Untuk Lesson yang tersedia dalam katalog Web, senarai bahan tidak boleh memaparkan butang Student Book palsu; permintaan URL terus juga ditolak.
+- Semakan ini **tidak menyekat Workbook** yang disahkan dan tidak menjana halaman baharu. Ujian antara cabang kekal menggunakan pin SHA PR #558 dan #567; apabila salah satu berubah, jalankan semula kontrak selepas pin diperbaharui.
+- Penambahan kes negatif ialah **QA staging sahaja**; ia tidak mengubah data, akses ahli, kuota, dan fail PDF produksi. Keputusan CI untuk komit terkini mesti diperiksa sebelum menyatakan ujian lulus.
+- Untuk penerbitan: audit visual kandungan PDF, hak edaran, pypdf dalam Render, dan HTTPS akaun guru sebenar masih HOLD.
