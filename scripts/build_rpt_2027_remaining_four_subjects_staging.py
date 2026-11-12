@@ -82,12 +82,20 @@ def bm_records(year):
             source_notes=td[3].get_text(" ",strip=True)
             if not source_notes:
                 raise ValueError("BM source reference cell empty")
+            # The original Year2/3 crosswalk includes held textbook/BA/SP
+            # mismatches. These are academic source warnings, NOT teacher
+            # teaching guidance. Preserve original notes for the audit but
+            # never print them in a candidate PDF or silently approve them.
+            source_held=bool(re.search(
+                r"\\bHOLD(?:\\s*:|\\s+(?:padanan|tajuk|SP|rujukan|kod)\\b)",
+                source_notes,flags=re.IGNORECASE))
             items.append(dict(
                 id=f"{no:03d}",week=week,unit=unit,topic=detail,
                 sk=sk_code.group(0) if sk_code else sk,
                 sp=sp_code.group(0) if sp_code else sp,
                 sk_display=sk,sp_display=sp,
-                note=source_notes,source_week=week,**dates(master,week)
+                note=source_notes,source_held=source_held,
+                source_week=week,**dates(master,week)
             ))
     expected={2:164,3:165,4:165,5:166,6:165}[year]
     if len(items)!=expected:
