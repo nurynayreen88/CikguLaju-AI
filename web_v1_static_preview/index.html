@@ -51,6 +51,23 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 .selection-help{padding:12px 14px;border-left:4px solid #087568;background:#f4f9f6;color:#173d37;border-radius:8px;font-weight:650}
 @media print{.rph-guide,.selection-help{display:none!important}}
 /* Read-only upcoming materials: no fake downloads, no account or credit action. */
+/* Verified, fixed excerpts of work-in-progress, deliberately without file routes. */
+.upcoming-examples{margin:24px 0 18px}
+.upcoming-examples h3{margin:0 0 8px;color:#163f57;font-size:1.08rem}
+.upcoming-examples>p{color:#506878;font-size:.91rem;line-height:1.6}
+.upcoming-samples{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:12px}
+.upcoming-sample{border:1px solid #dce5ea;border-radius:12px;background:#fff;min-width:0;align-self:start}
+.upcoming-sample summary{cursor:pointer;padding:13px 15px;color:#244c61;font-weight:720;line-height:1.5}
+.upcoming-sample summary:focus-visible{outline:3px solid #087568;outline-offset:2px}
+.upcoming-sample summary small{display:block;font-size:.77rem;font-weight:600;color:#657784}
+.upcoming-sample-content{border-top:1px solid #e1e8ed;padding:12px 15px 14px;line-height:1.65;color:#354d5a;font-size:.9rem}
+.upcoming-sample-content p{margin:0 0 8px}
+.upcoming-sample-content ul{margin:7px 0 8px;padding-left:22px}
+.upcoming-sample-content li{margin:0 0 6px}
+.upcoming-example-disclaimer{font-size:.8rem;color:#637481;font-style:italic}
+@media(max-width:580px){.upcoming-samples{grid-template-columns:minmax(0,1fr)}}
+@media print{.upcoming-examples{display:none!important}}
+
 .sidebar-coming-status{margin-left:auto;flex:none;font-size:.67rem;line-height:1.2;font-weight:750;color:#637585;border:1px solid #d6e0e5;border-radius:8px;padding:4px 6px;background:#f4f6f8}
 .upcoming-intro{line-height:1.6;color:#3b5768;max-width:700px}
 .upcoming-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:19px 0}
@@ -425,7 +442,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <div class="workspace-intro"><div><span class="workspace-eyebrow">RUANG GURU</span><p>Selamat datang, <strong id="workspace-teacher-name">Cikgu</strong></p></div><span class="workspace-ready"><span aria-hidden="true">●</span> Portal Pembelajaran</span></div>
 <section id="view-upcoming" class="app-view" aria-labelledby="view-upcoming-heading" hidden>
   <h2 id="view-upcoming-heading">🧰 Bahan Akan Datang</h2>
-  <p class="upcoming-intro">Kami sedang menyusun bahan tambahan untuk guru sekolah rendah Tahun 1–6. Semua modul di bawah masih dalam semakan dan <strong>belum boleh dimuat turun</strong>. Tiada tarikh pelancaran yang dijanjikan.</p>
+  <p class="upcoming-intro">Bahan tambahan sekolah rendah Tahun 1–6 sedang disusun dan disemak. <strong>Enam contoh aktiviti sebenar</strong> daripada kerja yang sudah dibuat boleh dipratonton di bawah sebagai bukti kemajuan. Ini contoh kandungan, <strong>bukan enam modul yang sudah siap</strong>; fail penuh belum boleh dimuat turun dan tiada tarikh pelancaran yang dijanjikan.</p>
   <div class="upcoming-grid" aria-label="Senarai modul dalam pembangunan">
     <article class="upcoming-item"><div class="upcoming-item-header"><strong>📄 Bank Lembaran Kerja Tahun 1–6</strong><span>Akan Datang</span></div><p>Latihan mengikut subjek, SK/SP dan Lesson/PdP. Bahan terpilih yang sudah disahkan boleh muncul lebih awal dalam Sediakan Bahan PdP.</p></article>
     <article class="upcoming-item"><div class="upcoming-item-header"><strong>🧩 BBM &amp; Aktiviti</strong><span>Akan Datang</span></div><p>Bahan bantu mengajar dan aktiviti pembelajaran yang dipadankan dengan tajuk sebenar.</p></article>
@@ -433,6 +450,66 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     <article class="upcoming-item"><div class="upcoming-item-header"><strong>📊 Rekod PBD</strong><span>Akan Datang</span></div><p>Alat sokongan Pentaksiran Bilik Darjah. Tiada maklumat murid dikumpulkan melalui paparan ini.</p></article>
     <article class="upcoming-item"><div class="upcoming-item-header"><strong>📚 KP2027 Tahun 1</strong><span>Akan Datang</span></div><p>Bahan Kurikulum Persekolahan 2027 selepas pemetaan dan semakan sumber selesai.</p></article>
   </div>
+
+  <section class="upcoming-examples" aria-labelledby="upcoming-examples-heading">
+    <h3 id="upcoming-examples-heading">👀 Lihat hasil kerja yang sedang disemak</h3>
+    <p>Ini ialah petikan latihan asal daripada sumber pemulihan dan lembaran tambahan yang sudah disediakan. Buka setiap contoh untuk melihat soalan sebenar, bukan teks atau butang muat turun rekaan. Jawapan guru, identiti murid dan maklumat peribadi tidak dipaparkan.</p>
+    <div class="upcoming-samples">
+      <details class="upcoming-sample" data-upcoming-sample="english-004">
+        <summary>English Tahun 4 — Lesson 004 <small>Writing • Country and nationality • Pratonton sumber</small></summary>
+        <div class="upcoming-sample-content">
+          <p><strong>Complete the sentences</strong></p>
+          <ul><li>She is from Malaysia. She is __________.</li><li>He is from Japan. He is __________.</li></ul>
+          <p class="upcoming-example-disclaimer">Petikan daripada lembaran tambahan Lesson 004; bukan halaman Student Book atau Workbook.</p>
+        </div>
+      </details>
+      <details class="upcoming-sample" data-upcoming-sample="english-079">
+        <summary>English Tahun 4 — Lesson 079 <small>The King of Kites • Story response • Pratonton sumber</small></summary>
+        <div class="upcoming-sample-content">
+          <p><strong>Think about the story</strong></p>
+          <ul><li>Which character made an important choice?</li><li>What happened after that choice?</li><li>What lesson can readers learn?</li></ul>
+          <p class="upcoming-example-disclaimer">Lembaran respons ciptaan guru; murid perlu merujuk cerita asal.</p>
+        </div>
+      </details>
+      <details class="upcoming-sample" data-upcoming-sample="english-089">
+        <summary>English Tahun 4 — Lesson 089 <small>Famous buildings • Writing planner • Pratonton sumber</small></summary>
+        <div class="upcoming-sample-content">
+          <p><strong>Check your research notes</strong></p>
+          <ul><li>Building name: ____________________</li><li>Country/city: ____________________</li><li>One checked fact: ____________________</li></ul>
+          <p class="upcoming-example-disclaimer">Petikan perancang penulisan Lesson 089; bukan fakta bangunan yang direka oleh sistem.</p>
+        </div>
+      </details>
+      <details class="upcoming-sample" data-upcoming-sample="english-090">
+        <summary>English Tahun 4 — Lesson 090 <small>Invitation card • Writing activity • Pratonton sumber</small></summary>
+        <div class="upcoming-sample-content">
+          <p><strong>Read and find the information</strong></p>
+          <ul><li>What is the event?</li><li>When is it?</li><li>Where is it?</li></ul>
+          <p class="upcoming-example-disclaimer">Petikan latihan kad jemputan yang sudah dibaiki; bahan penuh masih menjalani QA.</p>
+        </div>
+      </details>
+      <details class="upcoming-sample" data-upcoming-sample="math-y1">
+        <summary>Matematik Tahun 1 — Banding Kuantiti <small>SK 1.1 • SP 1.1.1 • Calon pemulihan</small></summary>
+        <div class="upcoming-sample-content">
+          <p><strong>Kumpulan manakah lebih banyak?</strong></p>
+          <p>Kumpulan A: ● ● ● ● ●</p>
+          <p>Kumpulan B: ● ● ●</p>
+          <p>Pilih: A lebih banyak / B lebih banyak.</p>
+          <p class="upcoming-example-disclaimer">Petikan daripada enam item asal yang dibaiki. Padanan Lesson/PdP masih menunggu pengesahan.</p>
+        </div>
+      </details>
+      <details class="upcoming-sample" data-upcoming-sample="science-y1">
+        <summary>Sains Tahun 1 — Saya Memerhati <small>SK 1.1 • SP 1.1.1 • Calon pemulihan</small></summary>
+        <div class="upcoming-sample-content">
+          <p><strong>Lihat pensel kamu. Apakah warna pensel itu?</strong></p>
+          <p>Warna pensel: ____________________</p>
+          <p><strong>Sentuh kain bersih yang disediakan oleh guru. Bagaimanakah permukaannya?</strong></p>
+          <p>Pilih: Lembut / Kasar / Lain-lain.</p>
+          <p class="upcoming-example-disclaimer">Petikan daripada enam aktiviti memerhati; perlu pemeriksaan guru serta pemetaan PdP yang tepat.</p>
+        </div>
+      </details>
+    </div>
+    <p class="upcoming-example-disclaimer">Status semua contoh: <strong>pratonton semakan</strong>. Belum ada pautan PDF/Word atau penjanaan untuk contoh ini dalam menu tersebut. Bahan lengkap hanya dibuka selepas semakan isi, SK/SP, keselamatan dan kesesuaian murid selesai.</p>
+  </section>
   <p class="notice">Fungsi sedia ada seperti <strong>RPH Hari Ini, Sediakan RPH, RPH Aktiviti Khas dan RPT 2027</strong> kekal di menu masing-masing. Bahan baharu hanya dibuka selepas disemak; label “Akan Datang” bukan bermaksud bahan sudah siap.</p>
   <p class="notice"><strong>Jom sokong CikguLaju dengan menjadi Rakan Pembangun.</strong> Sumbangan RM20 sekali bayar membantu kerja pemetaan buku teks, penyediaan bahan dan penambahbaikan sistem diteruskan. Rakan Pembangun mendapat akses seumur hidup kepada semua kemudahan CikguLaju, termasuk modul baharu apabila dilancarkan, <strong>tanpa bayaran tambahan</strong>. Untuk menyertai, pilih menu <strong>Rakan Pembangun</strong>.</p>
 </section>
