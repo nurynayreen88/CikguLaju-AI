@@ -130,6 +130,27 @@ class WorksheetWebRoutesTests(TestCase):
                                              query_string=params).status_code
                     self.assertIn(status, (400, 404))
 
+    def test_single_public_sample_but_all_other_files_remain_private(self):
+        # An actual anonymized teacher-created Lesson 004 PDF is demonstrable
+        # before login. No generic source selection or premium PDF bypass.
+        with patch("web.unified_rph_web._account",
+                   side_effect=AssertionError("Demo must not read user accounts")):
+            sample = self.client.get("/api/web/demo/worksheet.pdf")
+            self.assertEqual(sample.status_code, 200)
+            self.assertEqual(sample.headers["X-CikguLaju-Public-Demo"], "1")
+            self.assertEqual(sample.mimetype, "application/pdf")
+            self.assertEqual(len(PdfReader(io.BytesIO(sample.data)).pages), 1)
+            self.assertIn("Lesson 004",
+                          PdfReader(io.BytesIO(sample.data)).pages[0].extract_text())
+            attempt = self.client.get("/api/web/demo/worksheet.pdf",
+                                      query_string={"lesson": "90"})
+            self.assertEqual(attempt.status_code, 400)
+        with patch("web.unified_rph_web._account",
+                   side_effect=lambda: (None, (jsonify({"error":"Login"}), 401))):
+            private = self.client.get("/api/web/rph/english-worksheet",
+                                      query_string=self.sel(90))
+        self.assertEqual(private.status_code, 401)
+
     def test_unauthenticated_not_listed_or_downloadable(self):
         with patch("web.unified_rph_web._account",
                    side_effect=lambda: (None, (jsonify({"error": "Login"}), 401))):
