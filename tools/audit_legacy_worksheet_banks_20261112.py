@@ -26,7 +26,8 @@ def inspect_db(path):
     size = path.stat().st_size
     if size < 100 or size > MAX_SOURCE_BYTES:
         return {"state": "INVALID_SIZE", "bytes": size}
-    sha = hashlib.file_digest(path.open("rb"), "sha256").hexdigest()
+    with path.open("rb") as handle:
+        sha = hashlib.file_digest(handle, "sha256").hexdigest()
     report = {"state": "INSPECTED_NOT_APPROVED", "bytes": size,
               "sha256": sha, "integrity": None, "tables": []}
     # immutable=1 prevents journal/WAL creation; query_only blocks writes.
