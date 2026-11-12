@@ -26,3 +26,26 @@ jobs:
         run: python -m py_compile app.py
       - name: Test all 81 Year 4 legacy Student Book page maps
         run: python -m unittest -v tests.test_english_y4_legacy_studentbook_sow_parity_20261112
+
+  cross-pr-pdf-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - name: Checkout exact Telegram API PR 558 for compatibility QA
+        uses: actions/checkout@v4
+        with:
+          repository: nurynayreen88/CikguLaju-AI
+          ref: aa05d06324806add65304cabd1d1c2c8db0d6aa9
+          path: .partner-telegram
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install only offline test runtime libraries
+        run: pip install 'flask==3.1.3' 'python-docx==1.2.0' 'pypdf==5.1.0'
+      - name: Test new canonical app.py against partner Telegram API and real PDF bytes
+        run: |
+          cp app.py .partner-telegram/app.py
+          cd .partner-telegram
+          PYTHONPATH=tests:. python -m unittest -v tests.test_english_workbook_music_extras_20261106
