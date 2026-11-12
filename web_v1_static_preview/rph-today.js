@@ -29,7 +29,7 @@
   PSV:"Bidang / Unit",PJPK:"Unit / Tajuk",ARAB:"Unit",
   MUZIK:"Unit / Tajuk",SEJARAH:"Unit",RBT:"Unit"
  };
- const TYPES=new Set(["workbook","audio","student_book"]);
+ const TYPES=new Set(["workbook","audio","student_book","worksheet"]);
  const musicLink=/^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]{10,100}\/view\?usp=drivesdk$/;
 
  function create(tag,cls,value){
@@ -378,6 +378,8 @@
   if(item.type==="workbook")return item.url.startsWith("/api/web/rph/english-workbook?");
   if(item.type==="student_book")return subject==="ENGLISH"&&Number(year)===4&&
    item.url.startsWith("/api/web/rph/english-student-book?");
+  if(item.type==="worksheet")return subject==="ENGLISH"&&Number(year)===4&&
+   item.url.startsWith("/api/web/rph/english-worksheet?");
   if(item.type==="audio")return musicLink.test(item.url);
   return false;
  }
