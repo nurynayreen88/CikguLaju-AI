@@ -86,7 +86,150 @@ def _extract(material):
     return result
 
 
-def create_english_workbook_blueprint():
+
+def _verified_y4_student_main_pages(printed):
+    """Parse every explicit main-page token, not only a legacy first-page match.
+
+    A verified range/list must expand to 1–4 consecutive pages. Never extend
+    supplementary source ranges or guess missing pages.
+    """
+    if printed is None:
+        return []
+    raw = str(printed).strip()
+    if not raw or len(raw) > 70:
+        return []
+    parts = raw.split(",")
+    pages = []
+    for part in parts:
+        match = re.fullmatch(r"\s*([1-9]\d{0,2})(?:\s*[–-]\s*([1-9]\d{0,2}))?\s*", part)
+        if not match:
+            return []
+        first = int(match.group(1))
+        last = int(match.group(2) or first)
+        if first > 177 or last > 177 or last < first or last - first >= 4:
+            return []
+        pages.extend(range(first, last + 1))
+        if len(pages) > 4:
+            return []
+    if not pages or pages != list(range(pages[0], pages[-1] + 1)):
+        return []
+    return pages
+
+
+def _student_book_material(runtime, year: int, lesson: int, *, root=ROOT):
+    """Resolve only Telegram's VERIFIED Y4 main Student Book pages.
+
+    Keep the Telegram main/supplementary page distinction, page-offset
+    overrides, and local source-chunk manifest; do not infer pages from Lesson.
+    """
+    if (year != 4 or type(lesson) is not int or not 1 <= lesson <= 160
+            or runtime is None):
+        return None
+    loader = getattr(runtime, "_en97_units", None)
+    resolver = getattr(runtime, "_en34_verified_sb_pages_v25230", None)
+    physical_page = getattr(runtime, "_book_physical_page_v25237", None)
+    catalog = getattr(runtime, "_EN_LOCAL_BOOK_CHUNKS_V25234", None)
+    if (not all(callable(fn) for fn in (loader, resolver, physical_page))
+            or not isinstance(catalog, dict)):
+        return None
+    try:
+        source_rows, _ = loader("Tahun 4")
+        if not isinstance(source_rows, list):
+            return None
+        matched = [row for row in source_rows
+                   if isinstance(row, dict)
+                   and str(row.get("lesson_no", "")).strip() == str(lesson)]
+        if len(matched) != 1:
+            return None
+        source_row = matched[0]
+        printed = resolver(source_row, 4)
+        # Primary Year 4 SK Scheme of Work, Lesson 43 / Phonics 3,
+        # specifies Student Book p.121 (source p.133), not the legacy
+        # five-page Unit 3 sweep p.27-31. Correct only this exact,
+        # demonstrably mismapped legacy value; other lessons fail closed.
+        # https://online.anyflip.com/aecw/prtt/files/basic-html/page133.html
+        # L103, L157: Primary Year 4 SK SOW (KPM), Lessons 103/157.
+        # https://www.scribd.com/document/774411596/Primary-Year-4-SK-SoW
+        original = str(printed).strip()
+        if lesson == 43 and re.fullmatch(
+            r"27\s*,\s*28\s*,\s*29\s*,\s*30\s*,\s*31", original
+        ):
+            pages = [121]
+        elif lesson == 103 and re.fullmatch(
+            r"73\s*,\s*74\s*[–-]\s*75", original
+        ):
+            # Year 4 SK SOW L103 Activity 5 p.73; p.74-75 belong to L104.
+            pages = [73]
+        elif lesson == 157 and original == "110":
+            # Year 4 SK SOW L157 main option is p.110-111;
+            # CLIL p.133 is an alternative, not a third consecutive page.
+            pages = [110, 111]
+        else:
+            pages = _verified_y4_student_main_pages(printed)
+        # A main SB activity should never result in the entire book or a
+        # supplementary cut-out being exposed as a Lesson download.
+        if (not isinstance(pages, list) or not 1 <= len(pages) <= 4
+                or any(type(p) is not int or p < 1 for p in pages)
+                or pages != list(range(pages[0], pages[-1] + 1))):
+            return None
+        chunks = catalog.get((4, "textbook"))
+        if not isinstance(chunks, (list, tuple)):
+            return None
+        books = (Path(root) / "books" / "english").resolve()
+        state = {"year": "Tahun 4", "subject": "English",
+                 "lesson_no": lesson, "_en98_selected_staging_row": source_row}
+        selected = []
+        for page in pages:
+            physical = physical_page(state, "textbook", page)
+            if type(physical) is not int or physical < 1:
+                return None
+            matches = [row for row in chunks
+                       if isinstance(row, (tuple, list)) and len(row) == 3
+                       and type(row[0]) is int and type(row[1]) is int
+                       and row[0] <= physical <= row[1]]
+            if len(matches) != 1:
+                return None
+            start, end, rel = matches[0]
+            if (not isinstance(rel, str)
+                    or not re.fullmatch(
+                        r"books/english/y4_student_(?:001_020|021_100|101_177)\.pdf",
+                        rel)):
+                return None
+            path = Path(root) / rel
+            if (path.is_symlink() or not path.is_file()
+                    or path.resolve().parent != books
+                    or not 1024 <= path.stat().st_size <= 70 * 1024 * 1024):
+                return None
+            selected.append((path, physical - start))
+        span = str(pages[0]) if len(pages) == 1 else f"{pages[0]}–{pages[-1]}"
+        return {"parts": selected,
+                "label": f"English Tahun 4 • Lesson {lesson:03d} • Student Book m/s {span}"}
+    except (OSError, TypeError, ValueError, OverflowError, KeyError, IndexError):
+        return None
+
+
+def _extract_student_book(material):
+    from pypdf import PdfReader, PdfWriter
+    readers, writer = {}, PdfWriter()
+    for path, index in material["parts"]:
+        if path not in readers:
+            reader = PdfReader(str(path), strict=True)
+            if reader.is_encrypted:
+                raise ValueError("Encrypted Student Book source")
+            readers[path] = reader
+        reader = readers[path]
+        if not 0 <= index < len(reader.pages):
+            raise ValueError("Student Book source page unavailable")
+        writer.add_page(reader.pages[index])
+    output = BytesIO()
+    writer.write(output)
+    raw = output.getvalue()
+    if not 450 <= len(raw) <= 8 * 1024 * 1024 or not raw.startswith(b"%PDF-"):
+        raise ValueError("Student Book excerpt invalid")
+    return raw
+
+
+def create_english_workbook_blueprint(runtime=None):
     bp = Blueprint("telegram_english_workbook_extras_v1", __name__)
 
     @bp.before_request
@@ -101,15 +244,21 @@ def create_english_workbook_blueprint():
         response.headers["X-Content-Type-Options"] = "nosniff"
         return response
 
-    def selected():
+    def _selected_identifiers():
+        """Validate source identifiers independently of Workbook availability."""
         if (set(request.args) != {"year", "lesson"}
                 or any(len(request.args.getlist(k)) != 1 for k in request.args)):
-            return None, None, None
+            return None, None
         raw_year, raw_lesson = request.args["year"], request.args["lesson"]
         if (not re.fullmatch(r"[2-4]", raw_year)
                 or not re.fullmatch(r"[1-9][0-9]{0,2}", raw_lesson)):
+            return None, None
+        return int(raw_year), int(raw_lesson)
+
+    def selected():
+        year, lesson = _selected_identifiers()
+        if year is None:
             return None, None, None
-        year, lesson = int(raw_year), int(raw_lesson)
         return year, lesson, _material(year, lesson)
 
     @bp.get("/internal/rph/v1/english-extras/workbook")
@@ -138,6 +287,38 @@ def create_english_workbook_blueprint():
         response = Response(content, mimetype="application/pdf")
         response.headers["Content-Disposition"] = (
             f'attachment; filename="CikguLaju_English_Y{year}_Lesson_{lesson:03d}_Workbook.pdf"'
+        )
+        return response
+
+
+    @bp.get("/internal/rph/v1/english-extras/student-book")
+    def student_book_metadata():
+        year, lesson = _selected_identifiers()
+        material = _student_book_material(runtime, year, lesson)
+        if not material:
+            return jsonify({"available": False}), 404
+        try:
+            _extract_student_book(material)
+        except Exception:
+            return jsonify({"available": False}), 503
+        return jsonify({"source": "telegram-verified-english-studentbook-y4-v1",
+                        "available": True, "year": year, "lesson": lesson,
+                        "title": material["label"], "type": "student_book",
+                        "format": "pdf", "status": "VERIFIED_SOURCE"})
+
+    @bp.get("/internal/rph/v1/english-extras/student-book.pdf")
+    def student_book_download():
+        year, lesson = _selected_identifiers()
+        material = _student_book_material(runtime, year, lesson)
+        if not material:
+            return jsonify({"error": "Student Book source not mapped"}), 404
+        try:
+            content = _extract_student_book(material)
+        except Exception:
+            return jsonify({"error": "Student Book excerpt unavailable"}), 503
+        response = Response(content, mimetype="application/pdf")
+        response.headers["Content-Disposition"] = (
+            f'attachment; filename="CikguLaju_English_Y4_Lesson_{lesson:03d}_Student_Book.pdf"'
         )
         return response
 
