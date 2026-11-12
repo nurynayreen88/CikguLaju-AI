@@ -355,17 +355,17 @@ def candidate_package(web_root: Path, output: Path):
         (Path(output) / "week01_candidate_review.json").write_text(
             json.dumps(report, ensure_ascii=False, indent=2) + "\n", "utf-8")
         (Path(output) / "BACA_DULU_RPT_2027_SEMAKAN_BUKAN_FINAL.txt").write_text(
-            "CIKGULAJU AI - RPT 2027 - PAKEJ SEMAKAN DALAMAN SAHAJA\\n"
-            "BUKAN FINAL READY. JANGAN EDAR ATAU MUAT NAIK SEBAGAI RPT YANG DILULUSKAN.\\n\\n"
+            "CIKGULAJU AI - RPT 2027 - PAKEJ SEMAKAN DALAMAN SAHAJA\n"
+            "BUKAN FINAL READY. JANGAN EDAR ATAU MUAT NAIK SEBAGAI RPT YANG DILULUSKAN.\n\n"
             "Kandungan: 56 RPT Tahun 2-6, 28 PDF ditambah baik "
             "(23 agihan PdP Minggu 1 dan 5 Pendidikan Muzik), "
-            "28 fail asal kekal. Tiada perubahan produksi.\\n"
+            "28 fail asal kekal. Tiada perubahan produksi.\n"
             "9 rekod BM T2-3 masih mempunyai konflik padanan SP dengan buku teks/"
-            "buku aktiviti; butiran disimpan dalam week01_candidate_review.json.\\n"
+            "buku aktiviti; butiran disimpan dalam week01_candidate_review.json.\n"
             "Sains, Pendidikan Islam, Bahasa Arab, RBT, Muzik dan subjek lain masih "
-            "memerlukan pengesahan SK/SP, buku teks, RPH dan jadual sebenar guru.\\n"
+            "memerlukan pengesahan SK/SP, buku teks, RPH dan jadual sebenar guru.\n"
             "Bukti QA PDF yang lulus tidak bermaksud kurikulum atau hak edaran "
-            "sudah diluluskan. Tahun 1 KP2027 memerlukan aliran tersendiri.\\n",
+            "sudah diluluskan. Tahun 1 KP2027 memerlukan aliran tersendiri.\n",
             encoding="utf-8",
         )
 
