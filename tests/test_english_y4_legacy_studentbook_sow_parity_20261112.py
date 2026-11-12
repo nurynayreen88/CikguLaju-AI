@@ -39,9 +39,9 @@ class EnglishY4LegacyPageParity(unittest.TestCase):
     def setUpClass(cls):
         cls.pages = _literal("_Y4_SB_PAGES_V25230")
         cls.overrides = _literal("_EN34_MAIN_SB_V25231")
-        cls.parser = _function(
+        cls.parser = staticmethod(_function(
             "_en4_verified_page_tokens_v20261112", {"_re_v25232": re}
-        )
+        ))
 
         def resolver(row, year):
             lesson = int(row["lesson_no"])
@@ -49,14 +49,14 @@ class EnglishY4LegacyPageParity(unittest.TestCase):
                 return cls.overrides.get((year, lesson), cls.pages.get(lesson, ""))
             return "15-16" if year == 3 else ""
 
-        cls.base_pages = _function("_en_book_pages_v25232", {
+        cls.base_pages = staticmethod(_function("_en_book_pages_v25232", {
             "_english_primary_year_number_v2517": lambda raw: int(str(raw).split()[-1]),
             "_en34_verified_sb_pages_v25230": resolver,
             "_en4_verified_page_tokens_v20261112": cls.parser,
             "_v25232_nums": _function("_v25232_nums", {"_re_v25232": re}),
             "_lesson_activity_book_rows_v2407": lambda ss: [],
             "_en3_book_refs_v2595": lambda r: {},
-        }, occurrence=0)
+        }, occurrence=0))
 
     def _state(self, lesson, year=4, **extra):
         return {"year": "Tahun " + str(year), "subject": "English",
