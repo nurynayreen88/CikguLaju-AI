@@ -11,6 +11,12 @@ const view=source.match(/<section id="view-upcoming" class="app-view"[^>]*hidden
 assert.ok(view,"Read-only upcoming panel must start hidden");
 assert.match(view[1],/belum boleh dimuat turun/);
 assert.match(view[1],/Tiada tarikh pelancaran yang dijanjikan/);
+assert.match(view[1],/RPH Hari Ini, Sediakan RPH, RPH Aktiviti Khas dan RPT 2027/);
+assert.match(view[1],/RM20 sekali bayar/);
+assert.match(view[1],/akses seumur hidup/);
+assert.match(view[1],/termasuk modul baharu apabila dilancarkan/);
+assert.match(view[1],/tanpa bayaran tambahan/);
+assert.match(view[1],/pilih menu <strong>Rakan Pembangun<\/strong>/);
 for(const item of ["Bank Lembaran Kerja Tahun 1–6","BBM &amp; Aktiviti",
                     "Latihan UASA","Rekod PBD","KP2027 Tahun 1"]){
  assert.ok(view[1].includes(item),"A planned module is missing: "+item);
