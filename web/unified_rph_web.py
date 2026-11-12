@@ -950,6 +950,26 @@ def create_blueprint():
                          as_attachment=True, conditional=False,
                          download_name=f"CikguLaju_English_Y{year}_Lesson_{number:03d}_Workbook.pdf")
 
+    @bp.get("/api/web/demo/worksheet.pdf")
+    def public_sample_worksheet():
+        # Single owner-authored public example: no Telegram session, account,
+        # credit lookup, private Book/Workbook pages, or user-selected Lesson.
+        # All other worksheet downloads still require an authenticated account.
+        if request.args:
+            return jsonify({"error": "Pratonton awam tidak menerima pilihan tambahan"}), 400
+        try:
+            from web.english_y4_worksheet_pdf_20261112 import worksheet_pdf
+            document = worksheet_pdf(4, 4)
+        except Exception:
+            return jsonify({"error": "Contoh lembaran kerja belum tersedia"}), 503
+        if document is None:
+            return jsonify({"error": "Contoh lembaran kerja belum tersedia"}), 503
+        response = send_file(BytesIO(document), mimetype="application/pdf",
+                             as_attachment=False, conditional=False,
+                             download_name="CikguLaju_Contoh_Lembaran_Kerja_English_Y4_L004.pdf")
+        response.headers["X-CikguLaju-Public-Demo"] = "1"
+        return response
+
     @bp.get("/api/web/rph/english-worksheet")
     def english_worksheet():
         # Not an RPH generation: authenticated, source-exact and credit-free.
