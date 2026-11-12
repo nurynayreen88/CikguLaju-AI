@@ -104,9 +104,9 @@ def bm_records(year):
     return items
 
 _PI_UNVERIFIED_SOURCE_PAGE_NOTE = re.compile(
-    r"(?i)(?:Padanan\\s+SK\\s*/\\s*TOC\\s+terdahulu|"
-    r"perlu\\s+padanan\\s+fokus\\s+halaman|"
-    r"Julat\\s+bidang\\s+sahaja\\s*[—–-]\\s*halaman\\s+khusus\\s+belum\\s+dipadankan)"
+    r"(?i)(?:Padanan\s+SK\s*/\s*TOC\s+terdahulu|"
+    r"perlu\s+padanan\s+fokus\s+halaman|"
+    r"Julat\s+bidang\s+sahaja\s*[—–-]\s*halaman\s+khusus\s+belum\s+dipadankan)"
 )
 
 
@@ -122,7 +122,7 @@ def _pi_teacher_bahan(original):
                if line.strip() and not _PI_UNVERIFIED_SOURCE_PAGE_NOTE.search(line)]
     if not visible:
         raise ValueError("PI teacher materials became empty after source-note filter")
-    return "\\n".join(visible)
+    return "\n".join(visible)
 
 
 def pi_records(year):
