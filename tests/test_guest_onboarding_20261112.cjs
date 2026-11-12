@@ -10,6 +10,10 @@ assert.ok(main,"Expected public guest login panel");
 assert.match(main,/id="guest-tour"/,"Guided tour should work before login");
 assert.match(main,/tanpa log masuk/,"Clarify no-login access");
 assert.match(main,/bukan RPH sebenar/,"Do not confuse static walkthrough with real generated material");
+assert.match(main,/id="guest-real-worksheet" href="\/api\/web\/demo\/worksheet\.pdf"/,
+ "An actual teacher-authored worksheet demo must be viewable before login");
+assert.match(main,/Ini bukan halaman buku teks rasmi/,
+ "Do not misrepresent teacher-authored source as a textbook page");
 assert.match(main,/id="telegram-widget"/,"Original trusted Telegram Login widget preserved");
 assert.match(main,/href="#telegram-widget"/,"Guest CTA should lead to real login");
 assert.match(main,/10 janaan RPH percuma/,"Trial should remain clear");
