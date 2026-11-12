@@ -4,9 +4,9 @@
 - Baca kod sumber `app.py` pada cabang PR #558: `_Y4_SB_PAGES_V25230`, `_EN34_MAIN_SB_V25231`, `_EN_LOCAL_BOOK_CHUNKS_V25234`.
 - Terdapat **81 Lesson** dengan rekod muka surat pada peta terverifikasi kod Telegram. Ini bukan dakwaan semua 160 Lesson telah disemak secara visual.
 - Daripada 81: **80 Lesson** memenuhi pengadang asal 1–4 halaman utama berturutan. **Lesson 43** ialah rujukan lama yang salah, kini diperbetulkan khusus kepada Student Book **halaman 121** mengikut *Primary Year 4 SK Scheme of Work*, Lesson 43 (Phonics 3). Keseluruhan **81/81** laluan sumber API boleh diuji dalam staging, tertakluk hak edaran dan pengesahan visual.
-- **14 Lesson** mempunyai lebih daripada satu halaman, termasuk Lesson 18 (`15, 16`) dan Lesson 103 (`73, 74–75`).
+- **14 Lesson** mempunyai lebih daripada satu halaman, termasuk Lesson 18 (`15, 16`). **Nota:** rekod lama Lesson 103 (`73, 74–75`) kini diselaraskan kepada halaman 73 sahaja mengikut SOW.
 - **Lesson 43**: peta Telegram lama memetakan **5 halaman salah** (`27, 28, 29, 30, 31`). Rujukan *Primary Year 4 SK Scheme of Work* (Lesson 43, Phonics 3) menyatakan **Student Book p.121**. Resolver API staging hanya membetulkan rekod spesifik apabila padanan lama itu tepat, tanpa mengubah had empat halaman untuk Lesson lain. Peta lama dalam `app.py` masih memerlukan pembetulan berasingan bagi laluan Telegram legasi.
-- **Lesson 157**: peta lama `110–133` telah digantikan untuk **halaman utama 110**; halaman 133 direkod sebagai bahan tambahan berasingan. Jangan dedahkan 110–133 sebagai satu muat turun.
+- **Lesson 157**: peta lama `110–133` diganti dengan halaman utama **110–111** mengikut SOW, dan halaman **133** ialah teks pilihan CLIL berasingan. Jangan dedahkan 110–133 sebagai satu muat turun.
 
 ## Penemuan ketepatan parser
 - Pembaca Telegram lama `_v25232_nums` hanya mengekstrak satu nombor/rentang awal; contohnya `15, 16` menjadi `[15]` dan `73, 74–75` menjadi `[73]`.
@@ -25,3 +25,15 @@
 - Rujukan silang RPT 2026 yang sama: https://www.scribd.com/document/990880280/Rpt-English-Year-4-Sk-2026 . Halaman 27–31 menerangkan aktiviti Unit 3 lain, bukan bahan Phonics 3 Lesson 43.
 - Ujian baharu mengekstrak tepat satu halaman daripada sumber `y4_student_101_177.pdf`, membandingkan data halaman asal; bukan melonggarkan penghad empat halaman untuk Lesson lain.
 - **Status: STAGING, BELUM LIVE.** Pemulihan halaman rujukan tidak membuktikan hak edaran, ketepatan visual keseluruhan buku, atau ujian HTTPS Web–Telegram; bahan tidak dipromosikan sebagai FINAL READY.
+
+## Audit tiga konflik sumber — 12 November 2026
+
+| Lesson | Peta legasi | Rujukan *Primary Year 4 SK Scheme of Work* | Pelaksanaan staging |
+|---|---|---|---|
+| 43 Phonics 3 | 27, 28, 29, 30, 31 | Student Book **121** | PDF p.121 sahaja |
+| 103 Speaking (Activity 5) | 73, 74–75 | Student Book **73**; p.74–75 ialah Lesson 104 | PDF p.73 sahaja |
+| 157 Reading (What are germs?) | 110 (selepas pengasingan CLIL 133) | Student Book **110–111**; CLIL 133 ialah pilihan lain | PDF p.110–111 |
+
+Sumber SOW: https://www.scribd.com/document/774411596/Primary-Year-4-SK-SoW dan https://docx.my/wp-content/uploads/2023/07/Primary-Year-4-SK-SOW.pdf .
+
+Tiga pembetulan ialah *crosswalk terhad*, digunakan hanya apabila nilai sumber lama sepadan tepat. Fail `app.py` legasi kekal tidak berubah kerana penukaran keseluruhan peta memerlukan audit tersendiri. Tiada akses Web/Telegram LIVE, pembaharuan kuota atau metadata akaun disentuh.
