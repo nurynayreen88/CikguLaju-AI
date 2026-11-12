@@ -9,17 +9,17 @@
 **Source:** KPM Primary Year 3 SK Scheme of Work, Lesson 13.
 
 ## Set Induction (5 minutes)
-**Teacher:** Predict the text about Fay from its picture. **Pupils:** Respond and recall prior learning.
+**Teacher:** Give two verbal clues about family members and ask pupils to identify the people. **Pupils:** Name the family members and recall related words.
 
 ## Activity 1 — Guided preparation (15 minutes)
 **Teacher:** Show the picture of Fay on the referenced reading page, elicit predictions and distribute one comprehension-question strip to each pupil. **Pupils:** Identify Fay, read their question and predict where its answer may appear in the text.
 
 ## Activity 2 — Main task (25 minutes)
-**Teacher:** Read p.11; answer individual question strips; compare answers; discuss characters and complete optional follow-up. **Pupils:** Read Fay's SB p.11 text, find the detail answering the question strip, compare answers and describe one character orally.
+**Teacher:** Guide pupils to read SB p.11, model how to locate one answer using evidence from the text, and facilitate comparison of answers. **Pupils:** Read Fay's SB p.11 text, find the detail answering the question strip, compare answers and describe one character orally.
 **Workbook:** Pupils complete Workbook p.6, Activity 1, by reading and correcting a short description of a family member.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Assess specific reading details and oral descriptions. **Pupils:** Find two facts in the reading text and describe one character using a complete phrase.
+**Teacher:** Check whether each pupil can identify two accurate details from the text and give one oral character description. **Pupils:** Point to two facts in the reading text and describe one character using a complete phrase.
 
 ## Closure (5 minutes)
 **Teacher:** Play true/false with evidence from the text. **Pupils:** Share one learning point.
