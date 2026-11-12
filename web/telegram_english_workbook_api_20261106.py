@@ -148,11 +148,22 @@ def _student_book_material(runtime, year: int, lesson: int, *, root=ROOT):
         # five-page Unit 3 sweep p.27-31. Correct only this exact,
         # demonstrably mismapped legacy value; other lessons fail closed.
         # https://online.anyflip.com/aecw/prtt/files/basic-html/page133.html
+        # L103, L157: Primary Year 4 SK SOW (KPM), Lessons 103/157.
+        # https://www.scribd.com/document/774411596/Primary-Year-4-SK-SoW
+        original = str(printed).strip()
         if lesson == 43 and re.fullmatch(
-            r"27\s*,\s*28\s*,\s*29\s*,\s*30\s*,\s*31",
-            str(printed).strip(),
+            r"27\s*,\s*28\s*,\s*29\s*,\s*30\s*,\s*31", original
         ):
             pages = [121]
+        elif lesson == 103 and re.fullmatch(
+            r"73\s*,\s*74\s*[–-]\s*75", original
+        ):
+            # Year 4 SK SOW L103 Activity 5 p.73; p.74-75 belong to L104.
+            pages = [73]
+        elif lesson == 157 and original == "110":
+            # Year 4 SK SOW L157 main option is p.110-111;
+            # CLIL p.133 is an alternative, not a third consecutive page.
+            pages = [110, 111]
         else:
             pages = _verified_y4_student_main_pages(printed)
         # A main SB activity should never result in the entire book or a
