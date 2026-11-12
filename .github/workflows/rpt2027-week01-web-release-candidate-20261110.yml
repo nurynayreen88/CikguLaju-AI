@@ -74,5 +74,6 @@ jobs:
           if-no-files-found: warn
           path: |
             output/rpt2027_week01_review/week01_candidate_review.json
+            output/rpt2027_week01_review/BACA_DULU_RPT_2027_SEMAKAN_BUKAN_FINAL.txt
             output/rpt2027_week01_review/teacher_text_leak_56_report.json
             output/rpt2027_week01_review/rpt_2027/web_2027_pdfs/
