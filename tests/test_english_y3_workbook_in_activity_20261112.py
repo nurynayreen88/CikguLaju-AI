@@ -24,7 +24,7 @@ class WorkbookInActivityTests(unittest.TestCase):
             with self.subTest(lesson=lesson):
                 source = (ROOT / f"lesson_{lesson:03d}.md").read_text("utf-8")
                 self.assertIn("## Activity 2", source)
-                self.assertIn("## Assessment / PBD (5 minutes)", source)
+                self.assertIn("## Assessment / PBD (10 minutes)", source)
                 self.assertNotIn("Workbook assessment:", source)
                 head, tail = source.split("## Assessment / PBD", 1)
                 self.assertEqual(len(re.findall(r"Workbook\\s+p\\.", head)), 1)
@@ -44,7 +44,7 @@ class WorkbookInActivityTests(unittest.TestCase):
                 self.assertNotIn("NOT READY", rows["PENUTUP"])
                 parts = re.findall(r"^## (?:Set Induction|Activity [12]|Assessment / PBD|Closure)[^\\n]*\\((\\d+) minutes\\)",
                                    source, re.M)
-                self.assertEqual([int(t) for t in parts], [5,15,30,5,5])
+                self.assertEqual([int(t) for t in parts], [5,15,25,10,5])
                 self.assertEqual(sum(map(int, parts)), 60)
 
     def test_unrelated_y3_lesson_and_other_year_are_unchanged(self):
