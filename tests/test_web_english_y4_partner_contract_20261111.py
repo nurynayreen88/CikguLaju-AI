@@ -290,6 +290,78 @@ class WebTelegramYear4PartnerContract(unittest.TestCase):
                 self.partner._verified_y4_student_main_pages(raw), expected
             )
 
+    def test_unmapped_79_lessons_never_offer_student_book(self):
+        """No guessing: 79 Lessons without main-page evidence stay unavailable.
+
+        A full 160-row Lesson catalog must not cause Telegram/Web to infer a
+        Student Book excerpt from a neighboring Lesson or stale state.
+        Workbook availability is independent and not modified.
+        """
+        verified = set(self.runtime.mapped)
+        self.assertEqual(len(verified), 81)
+        self.assertTrue(all(1 <= n <= 160 for n in verified))
+        unmapped = sorted(set(range(1, 161)) - verified)
+        self.assertEqual(len(unmapped), 79)
+        full_catalog = [
+            {"lesson_no": n, "unit_name": f"Source Lesson {n}"}
+            for n in range(1, 161)
+        ]
+        account = {"authenticated": True, "telegram_user_id": 123}
+        headers = {"Authorization": "Bearer " + SECRET}
+        with patch.object(self.runtime, "_en97_units",
+                          return_value=(full_catalog, ["Source"])):
+            for lesson in unmapped:
+                with self.subTest(lesson=lesson, layer="Telegram"):
+                    self.assertIsNone(
+                        self.partner._student_book_material(
+                            self.runtime, 4, lesson, root=PARTNER
+                        )
+                    )
+                    metadata = self.telegram_client.get(
+                        "/internal/rph/v1/english-extras/student-book",
+                        query_string={"year": 4, "lesson": lesson},
+                        headers=headers
+                    )
+                    self.assertEqual(metadata.status_code, 404)
+                    self.assertEqual(metadata.json, {"available": False})
+                    pdf = self.telegram_client.get(
+                        "/internal/rph/v1/english-extras/student-book.pdf",
+                        query_string={"year": 4, "lesson": lesson},
+                        headers=headers
+                    )
+                    self.assertEqual(pdf.status_code, 404)
+
+            # Validate every Web-listed unmapped Lesson; Workbook is mocked
+            # absent only to isolate Student Book and not depend on WB rights.
+            with patch("web.unified_rph_web._account",
+                       return_value=(account, None)), \
+                 patch("web.native_telegram_extra_materials_20261106._get",
+                       side_effect=self._dispatch), \
+                 patch("web.native_telegram_extra_materials_20261106.english_workbook_metadata",
+                       return_value=None):
+                listed_unmapped = [n for n in unmapped if n in self.rows]
+                self.assertTrue(listed_unmapped, "No unmapped Web Lesson was tested")
+                for lesson in listed_unmapped:
+                    with self.subTest(lesson=lesson, layer="Web"):
+                        query = self._select(lesson)
+                        response = self.web_client.get(
+                            "/api/web/rph/extra-materials", query_string=query
+                        )
+                        self.assertEqual(response.status_code, 200)
+                        self.assertNotIn(
+                            "student_book",
+                            [item["type"] for item in response.json["items"]]
+                        )
+                # Direct URLs must also fail when the source was never verified.
+                for lesson in (listed_unmapped[0], listed_unmapped[-1]):
+                    query = self._select(lesson)
+                    response = self.web_client.get(
+                        "/api/web/rph/english-student-book",
+                        query_string=query
+                    )
+                    self.assertEqual(response.status_code, 503)
+
+
     def test_no_login_wrong_unit_and_missing_telegram_bearer(self):
         query = self._select(103)
         with patch("web.unified_rph_web._account",
