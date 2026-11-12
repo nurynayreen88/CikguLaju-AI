@@ -8,9 +8,11 @@ from unittest.mock import patch
 
 from flask import Flask, jsonify
 from pypdf import PdfReader
+from docx import Document
 
 from web.unified_rph_web import create_blueprint, source_records
 from web.english_y4_worksheet_pdf_20261112 import worksheet_metadata, worksheet_pdf
+from web.english_y4_worksheet_word_20261112 import worksheet_docx
 
 SOURCE = {x["lesson"]: x for x in source_records(4, "ENGLISH")}
 LESSONS = (4, 79, 89, 90)
@@ -47,6 +49,23 @@ class WorksheetSourceTests(TestCase):
                 self.assertNotIn("Answer key", text)
                 self.assertNotIn("Purpose:", text)
 
+    def test_editable_word_a4_preserves_pupil_tasks_only(self):
+        for n in LESSONS:
+            with self.subTest(lesson=n):
+                blob = worksheet_docx(4, n)
+                self.assertTrue(blob.startswith(bytes.fromhex("504b0304")))
+                doc = Document(io.BytesIO(blob))
+                self.assertEqual(int(round(doc.sections[0].page_width.mm)), 210)
+                self.assertEqual(int(round(doc.sections[0].page_height.mm)), 297)
+                text = "\n".join(p.text for p in doc.paragraphs)
+                self.assertIn("Lesson %03d" % n, text)
+                self.assertIn("Name:", text)
+                self.assertNotIn("Teacher assessment:", text)
+                self.assertNotIn("Answer key", text)
+                self.assertNotIn("Purpose:", text)
+        self.assertIsNone(worksheet_docx(3, 4))
+        self.assertIsNone(worksheet_docx(4, 2))
+
     def test_missing_file_fail_closed(self):
         import english_supplementary_materials as registry
         with patch.object(registry, "ROOT", Path("/missing/english_source")):
@@ -80,8 +99,8 @@ class WorksheetWebRoutesTests(TestCase):
                 listing = self.client.get("/api/web/rph/extra-materials", query_string=self.sel(n))
                 self.assertEqual(listing.status_code, 200, listing.json)
                 items = listing.json["items"]
-                self.assertEqual(len(items), 1, items)
-                self.assertEqual(items[0]["type"], "worksheet")
+                self.assertEqual(len(items), 2, items)
+                self.assertEqual([x["type"] for x in items], ["worksheet", "worksheet_word"])
                 self.assertIn("lesson=", items[0]["url"])
                 self.assertIn("english-worksheet?", items[0]["url"])
                 pdf = self.client.get(items[0]["url"])
@@ -91,6 +110,16 @@ class WorksheetWebRoutesTests(TestCase):
                 self.assertEqual(pdf.headers["X-Content-Type-Options"], "nosniff")
                 self.assertIn("Worksheet.pdf", pdf.headers.get("Content-Disposition", ""))
                 self.assertEqual(len(PdfReader(io.BytesIO(pdf.data)).pages), 1)
+                self.assertIn("worksheet-word?", items[1]["url"])
+                word = self.client.get(items[1]["url"])
+                self.assertEqual(word.status_code, 200)
+                self.assertEqual(
+                    word.mimetype,
+                    "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
+                self.assertEqual(word.headers["Cache-Control"], "no-store, private")
+                self.assertIn("Worksheet.docx", word.headers.get("Content-Disposition", ""))
+                self.assertIn("Lesson %03d" % n,
+                              "\n".join(p.text for p in Document(io.BytesIO(word.data)).paragraphs))
                 debit.assert_not_called()
 
     def test_workbook_unavailable_does_not_hide_local_worksheet(self):
@@ -100,7 +129,8 @@ class WorksheetWebRoutesTests(TestCase):
             response = self.client.get("/api/web/rph/extra-materials",
                                        query_string=self.sel(4))
         self.assertEqual(response.status_code, 200)
-        self.assertEqual([r["type"] for r in response.json["items"]], ["worksheet"])
+        self.assertEqual([r["type"] for r in response.json["items"]],
+                         ["worksheet", "worksheet_word"])
 
     def test_unmapped_lesson_no_fake_worksheet(self):
         with self._account(), patch(
@@ -110,9 +140,12 @@ class WorksheetWebRoutesTests(TestCase):
                                       query_string=self.sel(5))
             pdf = self.client.get("/api/web/rph/english-worksheet",
                                   query_string=self.sel(5))
+            word = self.client.get("/api/web/rph/english-worksheet-word",
+                                   query_string=self.sel(5))
         self.assertEqual(listing.status_code, 200)
         self.assertEqual(listing.json["items"], [])
         self.assertEqual(pdf.status_code, 404)
+        self.assertEqual(word.status_code, 404)
 
     def test_wrong_unit_year_subject_and_extra_param_rejected(self):
         v = self.sel(4)
@@ -129,6 +162,9 @@ class WorksheetWebRoutesTests(TestCase):
                     status = self.client.get("/api/web/rph/english-worksheet",
                                              query_string=params).status_code
                     self.assertIn(status, (400, 404))
+                    status_word = self.client.get("/api/web/rph/english-worksheet-word",
+                                                  query_string=params).status_code
+                    self.assertIn(status_word, (400, 404))
 
     def test_single_public_sample_but_all_other_files_remain_private(self):
         # An actual anonymized teacher-created Lesson 004 PDF is demonstrable
@@ -155,7 +191,8 @@ class WorksheetWebRoutesTests(TestCase):
         with patch("web.unified_rph_web._account",
                    side_effect=lambda: (None, (jsonify({"error": "Login"}), 401))):
             for url in ("/api/web/rph/extra-materials",
-                        "/api/web/rph/english-worksheet"):
+                        "/api/web/rph/english-worksheet",
+                        "/api/web/rph/english-worksheet-word"):
                 with self.subTest(url=url):
                     result = self.client.get(url, query_string=self.sel(4))
                     self.assertEqual(result.status_code, 401)
