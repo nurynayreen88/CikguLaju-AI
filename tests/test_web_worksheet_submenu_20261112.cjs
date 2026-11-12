@@ -55,7 +55,8 @@ for(const type of ["worksheet","worksheet_word"]){
  assert.equal(allow({...row,url:row.url+"&lesson=EN4-L060"},4,"ENGLISH",unit,token),false);
  assert.equal(allow({...row,url:row.url.replace("EN4-L004","EN4-L005")},
   4,"ENGLISH",unit,token),false);
- assert.equal(allow({...row,url:row.url.replace("english-worksheet?","english-workbook?")},
+ const invalidRoute=type==="worksheet"?"english-worksheet?":"english-worksheet-word?";
+ assert.equal(allow({...row,url:row.url.replace(invalidRoute,"english-workbook?")},
   4,"ENGLISH",unit,token),false);
 }
 assert.equal(allow({type:"worksheet",title:"Dummy Mathematics Year 1",
