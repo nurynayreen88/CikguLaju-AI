@@ -8,6 +8,7 @@ on:
       - 'tests/test_guest_onboarding_20261112.cjs'
       - 'tests/test_web_english_y4_worksheet_20261112.py'
       - 'web/english_y4_worksheet_pdf_20261112.py'
+      - 'web/english_y4_worksheet_word_20261112.py'
       - 'web/unified_rph_web.py'
       - 'english_supplementary_materials.py'
       - 'supplementary_materials/english/year4/**'
@@ -38,5 +39,5 @@ jobs:
           python-version: '3.12'
       - name: Install verified Web PDF/runtime dependencies
         run: pip install -r requirements-web-v1.txt 'pypdf==5.1.0'
-      - name: Validate all four source-backed worksheets and original Workbook paths
+      - name: Validate printable PDF and editable A4 Word worksheets, auth and original Workbook paths
         run: PYTHONPATH=tests:. python -m unittest -v tests.test_web_english_y4_worksheet_20261112 tests.test_web_english_music_extras_20261106
