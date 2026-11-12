@@ -30,6 +30,17 @@ assert.equal(allowed({...studentBook,type:"textbook"},4,"ENGLISH"),false,
 
 const workbook={type:"workbook",title:"English Year 4 Workbook",
  url:"/api/web/rph/english-workbook?year=4&lesson=EN4-L002"};
+const worksheet={type:"worksheet",title:"Lembaran Kerja Tambahan Lesson 004",
+ url:"/api/web/rph/english-worksheet?year=4&subject=ENGLISH&unit=Unit+1&lesson=e-4-004"};
+assert.equal(allowed(worksheet,4,"ENGLISH"),true,
+ "Registered teacher-created English Y4 worksheet must be selectable by exact Lesson");
+assert.equal(allowed(worksheet,3,"ENGLISH"),false,
+ "Year 3 must not inherit Year 4 worksheets");
+assert.equal(allowed(worksheet,4,"MATH"),false,
+ "Other subjects must never inherit English worksheets");
+assert.equal(allowed({...worksheet,url:"https://external.example/worksheet.pdf"},4,"ENGLISH"),false);
+assert.equal(allowed({...worksheet,url:"/api/web/rph/english-workbook?year=4"},4,"ENGLISH"),false);
+
 assert.equal(allowed(workbook,4,"ENGLISH"),true,
  "Existing independent verified Workbook bridge must not regress");
 const audio={type:"audio",title:"Original Music audio",
