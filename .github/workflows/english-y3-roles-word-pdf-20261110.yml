@@ -28,6 +28,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_english_y3_render_roles_20261110.py' -v
           python -m unittest discover -s tests -p 'test_english_y3_workbook_in_activity_20261112.py' -v
+          python -m unittest discover -s tests -p 'test_english_y3_l11_l14_quality_20261113.py' -v
           python -m unittest discover -s tests -p 'test_english_y2_y3_rph_render_integrity.py' -v
           python -m unittest discover -s tests -p 'test_english_y3_12_sow_pupil_actions_20261104.py' -v
       - name: Generate actual RPH Word table files with source-backed Y3 rows
@@ -70,7 +71,7 @@ jobs:
               path=root/f"Y3_L{lesson:03d}_native_layout.pdf"
               pages=PdfReader(str(path)).pages
               assert len(pages)>=1,(lesson,"no pages")
-              if lesson in (11,12,13,16,17):
+              if lesson in (11,12,13,14,16,17):
                   assert len(pages)==1,(lesson,"RPH exceeds one A4 page",len(pages))
               assert all(abs(float(p.mediabox.width)-595.28)<1.5 and abs(float(p.mediabox.height)-841.89)<1.5 for p in pages)
               text="\n".join(p.extract_text() or "" for p in pages)
