@@ -378,6 +378,29 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .web-feedback-card-top small,.web-feedback-owner{color:#60788e}
 .web-feedback-text{white-space:pre-wrap;margin:10px 0 0;line-height:1.55}
 </style>
+
+<style>
+/* Terang kegunaan produk sebelum login; hanya panduan, bukan kandungan janaan. */
+.guest-free-note{border:1px solid #cbe4d5;border-radius:13px;padding:12px 15px;margin:17px 0;background:#f2faf5;color:#195447;font-weight:700;font-size:.94rem}
+.guest-highlights{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:19px 0}
+.guest-highlights article{border:1px solid #dbe9e5;background:#fbfefd;padding:12px 13px;border-radius:13px;min-width:0}
+.guest-highlights strong{display:block;font-size:.91rem;color:#174d44}
+.guest-highlights span{display:block;color:#536e64;font-size:.82rem;line-height:1.5;margin-top:4px}
+.guest-tour{border:1px solid #c6dcd4;border-radius:14px;padding:13px 15px;margin:17px 0;background:white}
+.guest-tour summary{cursor:pointer;color:#12685a;font-weight:800;line-height:1.45}
+.guest-tour summary:focus-visible,.guest-cta:focus-visible,.guest-bot-link:focus-visible{outline:3px solid #efb947;outline-offset:3px}
+.guest-tour p{margin:9px 0 6px;font-size:.85rem}
+.guest-tour ol{padding-left:24px;margin:9px 0 4px;line-height:1.7;color:#36564e;font-size:.9rem}
+.guest-tour li{padding:4px 0}
+.guest-actions{display:grid;gap:9px;margin:18px 0 9px}
+.guest-cta{display:block;text-align:center;text-decoration:none;background:#087568;color:white;font-weight:800;padding:13px 15px;border-radius:12px}
+.guest-login-help{border-top:1px solid #e1eae5;padding-top:15px;margin-top:15px}
+.guest-login-help strong{color:#19493f}
+.guest-login-help p{margin:7px 0;font-size:.89rem}
+.guest-bot-link{display:inline-block;color:#087568;font-size:.91rem;font-weight:750;margin:7px 0}
+#telegram-widget{min-height:34px}
+@media(max-width:420px){.guest-highlights{grid-template-columns:minmax(0,1fr)}}
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -386,9 +409,31 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <img class="login-brand" src="/assets/cikgulaju-logo.svg" width="118" height="118" alt="CikguLaju AI" decoding="async">
 <span class="pill">Versi Web</span>
 <h1>Urus PdP sekolah rendah lebih mudah</h1>
-<p>CikguLaju menyatukan jadual PdP, RPH, RPT dan bahan sokongan yang tersedia untuk Tahun 1–6. Log masuk menggunakan Telegram, pilih kelas dan Lesson/PdP, kemudian lihat bahan yang benar-benar boleh diakses.</p><p class="notice">10 janaan RPH percuma untuk akaun baharu. Semakan senarai bahan tidak memotong kuota.</p>
-<div id="telegram-widget" aria-label="Log masuk Telegram"></div>
-<p class="notice" role="status" id="login-status">Menyemak sambungan log masuk…</p>
+<p>CikguLaju menyatukan jadual PdP, RPH, RPT dan bahan sokongan yang tersedia untuk Tahun 1–6. Pilih kelas dan Lesson/PdP, kemudian lihat bahan yang benar-benar boleh diakses.</p>
+<div class="guest-free-note">🎁 10 janaan RPH percuma untuk akaun baharu. Semak senarai bahan tanpa menggunakan kuota.</div>
+<section class="guest-highlights" aria-label="Fungsi utama CikguLaju">
+  <article><strong>📆 PdP Hari Ini</strong><span>Lihat slot daripada jadual waktu yang disimpan, pilih Lesson/PdP dan semak bahan ikut kelas.</span></article>
+  <article><strong>📘 RPH Word &amp; PDF</strong><span>Jana RPH daripada sumber Telegram untuk Lesson/PdP yang telah disahkan.</span></article>
+  <article><strong>📅 RPT 2027</strong><span>Lihat dan muat turun RPT yang tersedia mengikut subjek serta tahun.</span></article>
+  <article><strong>📚 Bahan Sokongan</strong><span>Workbook dan audio sumber yang tersedia dipaparkan mengikut Lesson; bukan semua Lesson mempunyai bahan.</span></article>
+</section>
+<details id="guest-tour" class="guest-tour">
+  <summary>👀 Tengok cara CikguLaju berfungsi — tanpa log masuk</summary>
+  <p class="notice">Ini panduan aliran penggunaan, bukan RPH sebenar atau contoh muat turun. Tiada kredit digunakan.</p>
+  <ol>
+    <li><strong>Pilih</strong> Tahun 1–6, subjek, Unit/Tajuk dan Lesson/PdP daripada katalog sebenar selepas log masuk.</li>
+    <li><strong>Semak</strong> senarai RPH serta bahan sokongan yang disahkan bagi pilihan itu.</li>
+    <li><strong>Muat turun</strong> bahan yang tersedia. Hanya janaan RPH tertakluk kepada kuota atau akses langganan.</li>
+  </ol>
+</details>
+<div class="guest-actions"><a class="guest-cta" href="#telegram-widget">Cuba CikguLaju — 10 janaan RPH percuma</a></div>
+<section class="guest-login-help" aria-label="Cara mula menggunakan CikguLaju">
+  <strong>Bagaimana nak mula?</strong>
+  <p>Gunakan butang log masuk Telegram di bawah. Jika belum pernah menggunakan bot CikguLaju, buka bot dan tekan <strong>Start</strong>, kemudian kembali ke web untuk log masuk.</p>
+  <a id="telegram-start-link" class="guest-bot-link" target="_blank" rel="noopener noreferrer" hidden>Buka bot CikguLaju di Telegram</a>
+  <div id="telegram-widget" aria-label="Log masuk Telegram"></div>
+  <p class="notice" role="status" id="login-status">Menyemak sambungan log masuk…</p>
+</section>
 </main>
 <section id="workspace" class="panel" hidden>
 <div class="app-shell">
@@ -747,6 +792,11 @@ webViewButtons.forEach(button=>button.addEventListener("click",()=>{
 }));
 showWebView("today");
 
+function verifiedTelegramBotUrl(value){
+ // Hanya bot daripada endpoint keupayaan login rasmi; tiada URL pengguna rawak.
+ const name=String(value||"");
+ return /^[A-Za-z][A-Za-z0-9_]{4,31}$/.test(name)?"https://t.me/"+name:null;
+}
 (async()=>{
  const status=document.getElementById("login-status");
  try{
@@ -758,6 +808,9 @@ showWebView("today");
   if(!response.ok)throw Error("offline");
   const config=await response.json();
   if(config.telegram_widget_enabled!==true||!config.bot_username){status.textContent="Log masuk Telegram belum diaktifkan pada pelayan web.";return;}
+  const link=verifiedTelegramBotUrl(config.bot_username);
+  const startLink=document.getElementById("telegram-start-link");
+  if(link&&startLink){startLink.href=link;startLink.hidden=false;}
   const script=document.createElement("script");
   script.async=true;script.src="https://telegram.org/js/telegram-widget.js?22";
   script.setAttribute("data-telegram-login",config.bot_username);
