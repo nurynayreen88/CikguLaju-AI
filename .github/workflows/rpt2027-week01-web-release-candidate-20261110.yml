@@ -10,7 +10,7 @@ on:
       - 'tests/test_rpt2027_owner_week1_distribution_20261110.py'
       - 'tests/test_rpt2027_teacher_release_review_guard_20261112.py'
       - 'rpt_2027/common/teacher_display_projection.py'
-      - 'rpt_2027/common/teacher_display_projection.py'
+      - 'scripts/audit_rpt2027_teacher_text_leaks_20261108.py'
       - 'rpt_2027/common/format_2026_layout_preview.py'
       - 'tests/test_rpt2027_teacher_text_leak_scan.py'
       - '.github/workflows/rpt2027-week01-web-release-candidate-20261110.yml'
@@ -59,6 +59,7 @@ jobs:
         run: |
           python -m scripts.audit_rpt2027_teacher_text_leaks_20261108 \
             --pdf-only \
+            --fail-on-findings \
             --output output/rpt2027_week01_review/teacher_text_leak_56_report.json \
             output/rpt2027_week01_review/rpt_2027/web_2027_pdfs
       - name: Confirm there were no edits in original Web checkout
