@@ -11,7 +11,7 @@ from pypdf import PdfReader
 from docx import Document
 
 from web.unified_rph_web import create_blueprint, source_records
-from web.english_y4_worksheet_pdf_20261112 import worksheet_metadata, worksheet_pdf
+from web.english_y4_worksheet_pdf_20261112 import worksheet_metadata, worksheet_pdf, _student_lines
 from web.english_y4_worksheet_word_20261112 import worksheet_docx
 
 SOURCE = {x["lesson"]: x for x in source_records(4, "ENGLISH")}
@@ -65,6 +65,43 @@ class WorksheetSourceTests(TestCase):
                 self.assertNotIn("Purpose:", text)
         self.assertIsNone(worksheet_docx(3, 4))
         self.assertIsNone(worksheet_docx(4, 2))
+
+    def test_multiline_teacher_sections_are_never_printed_for_pupils(self):
+        # The source can gain a multi-line teacher footer later: never remove
+        # only its label and accidentally print the answer paragraphs below.
+        cases = (
+            "**Teacher assessment:** Confidential rubric\\nSECRET_RUBRIC",
+            "## Teacher notes\\nSECRET_TEACHER_NOTES",
+            "### Answer key (A)\\nSECRET_ANSWERS",
+            "**Suggested answers:**\\nSECRET_EXAMPLES",
+        )
+        for tail in cases:
+            with self.subTest(footer=tail.splitlines()[0]):
+                raw = ("# English Year 4 — Lesson 004 — Writing Sheet\\n"
+                       "**Purpose:** Confidential planning note\\n"
+                       "Name: __________________\\n"
+                       "## A. Complete the sentence\\n"
+                       "1. She is from Malaysia.\\n" + tail +
+                       "\\nExtra confidential explanations.\\n")
+                visible = "\\n".join(_student_lines(raw))
+                self.assertIn("1. She is from Malaysia.", visible)
+                self.assertNotIn("Confidential", visible)
+                self.assertNotIn("SECRET_", visible)
+                self.assertNotIn("Extra confidential", visible)
+
+    def test_lesson_090_invitation_date_is_calendar_neutral(self):
+        source = (Path(__file__).resolve().parents[1] /
+                  "supplementary_materials/english/year4/lesson_090_worksheet.md"
+                  ).read_text(encoding="utf-8")
+        self.assertIn("Date: 20 November", source)
+        self.assertIn("2 20 November at 2:00 p.m.", source)
+        self.assertNotIn("Friday, 20 November", source)
+        self.assertIn("Date: 20 November", PdfReader(
+            io.BytesIO(worksheet_pdf(4, 90))).pages[0].extract_text())
+        doc = Document(io.BytesIO(worksheet_docx(4, 90)))
+        student_text = "\\n".join(p.text for p in doc.paragraphs)
+        self.assertIn("Date: 20 November", student_text)
+        self.assertNotIn("Friday, 20 November", student_text)
 
     def test_missing_file_fail_closed(self):
         import english_supplementary_materials as registry
