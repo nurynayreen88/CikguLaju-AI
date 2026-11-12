@@ -103,6 +103,28 @@ def bm_records(year):
     validate_rows("bahasa_melayu",year,items)
     return items
 
+_PI_UNVERIFIED_SOURCE_PAGE_NOTE = re.compile(
+    r"(?i)(?:Padanan\\s+SK\\s*/\\s*TOC\\s+terdahulu|"
+    r"perlu\\s+padanan\\s+fokus\\s+halaman|"
+    r"Julat\\s+bidang\\s+sahaja\\s*[—–-]\\s*halaman\\s+khusus\\s+belum\\s+dipadankan)"
+)
+
+
+def _pi_teacher_bahan(original):
+    """Keep teaching resources, withhold only separate source page-review lines.
+
+    The original yearN.json/fields.bahan is never edited. A broad unit/page
+    candidate without visual book verification must not appear authoritative
+    in the teacher PDF; the curriculum/source hold remains in the ledger.
+    """
+    lines = str(original or "").splitlines()
+    visible = [line.strip() for line in lines
+               if line.strip() and not _PI_UNVERIFIED_SOURCE_PAGE_NOTE.search(line)]
+    if not visible:
+        raise ValueError("PI teacher materials became empty after source-note filter")
+    return "\\n".join(visible)
+
+
 def pi_records(year):
     path=ROOT/f"rph_standalone/pendidikan_islam_draf_2027/year{year}.json"
     doc=json.loads(path.read_text(encoding="utf-8"))
@@ -174,7 +196,7 @@ def pi_records(year):
             sk=str(field.get("sk") or "").strip()
             sp=str(field.get("sp") or "").strip()
             topic=str(field.get("objektif") or "").strip()
-            note=("Bahan: "+str(field.get("bahan") or "").strip()+
+            note=("Bahan: "+_pi_teacher_bahan(field.get("bahan"))+
                   " | Penilaian: "+str(field.get("pentaksiran") or "").strip())
             if not sk or not sp or not note:
                 raise ValueError(f"PI T{year} PdP{n:03d}: original SK/SP/notes absent")
