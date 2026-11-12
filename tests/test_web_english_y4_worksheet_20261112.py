@@ -11,7 +11,7 @@ from pypdf import PdfReader
 from docx import Document
 
 from web.unified_rph_web import create_blueprint, source_records
-from web.english_y4_worksheet_pdf_20261112 import worksheet_metadata, worksheet_pdf, _student_lines
+from web.english_y4_worksheet_pdf_20261112 import worksheet_metadata, worksheet_pdf, _student_lines, _has_complete_pupil_sections
 from web.english_y4_worksheet_word_20261112 import worksheet_docx
 
 SOURCE = {x["lesson"]: x for x in source_records(4, "ENGLISH")}
@@ -88,6 +88,21 @@ class WorksheetSourceTests(TestCase):
                 self.assertNotIn("Confidential", visible)
                 self.assertNotIn("SECRET_", visible)
                 self.assertNotIn("Extra confidential", visible)
+
+    def test_early_teacher_heading_never_sends_partial_student_file(self):
+        root = Path(__file__).resolve().parents[1]
+        for lesson in LESSONS:
+            with self.subTest(lesson=lesson):
+                raw = (root / ("supplementary_materials/english/year4/"
+                       "lesson_%03d_worksheet.md" % lesson)).read_text(encoding="utf-8")
+                self.assertTrue(_has_complete_pupil_sections(raw, lesson))
+                # An accidentally inserted teacher heading BEFORE the final
+                # student section must lock the output rather than truncate.
+                parts = raw.split("## ", 2)
+                self.assertEqual(len(parts), 3)
+                altered = parts[0] + "## " + parts[1] + (
+                    "## Teacher notes\\nPRIVATE_ANSWER\\n## " + parts[2])
+                self.assertFalse(_has_complete_pupil_sections(altered, lesson))
 
     def test_lesson_090_invitation_date_is_calendar_neutral(self):
         source = (Path(__file__).resolve().parents[1] /
