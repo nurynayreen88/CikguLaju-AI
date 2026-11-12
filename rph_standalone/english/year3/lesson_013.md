@@ -14,11 +14,11 @@
 ## Activity 1 — Guided preparation (15 minutes)
 **Teacher:** Show the picture of Fay on the referenced reading page, elicit predictions and distribute one comprehension-question strip to each pupil. **Pupils:** Identify Fay, read their question and predict where its answer may appear in the text.
 
-## Activity 2 — Main task (25 minutes)
+## Activity 2 — Main task (30 minutes)
 **Teacher:** Read p.11; answer individual question strips; compare answers; discuss characters and complete optional follow-up. **Pupils:** Read Fay's SB p.11 text, find the detail answering the question strip, compare answers and describe one character orally.
+**Workbook:** Pupils complete Workbook p.6, Activity 1, by reading and correcting a short description of a family member.
 
-## Reinforcement / PBD (10 minutes)
-**Workbook assessment:** Pupils complete Workbook p.6, Activity 1, by reading and correcting a short description of a family member.
+## Assessment / PBD (5 minutes)
 **Teacher:** Assess specific reading details and oral descriptions. **Pupils:** Find two facts in the reading text and describe one character using a complete phrase.
 
 ## Closure (5 minutes)
