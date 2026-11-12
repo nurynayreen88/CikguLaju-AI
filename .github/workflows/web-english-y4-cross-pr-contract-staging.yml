@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: nurynayreen88/CikguLaju-AI
-          ref: 28aca5abef094588906114d7985930a01affdd4f
+          ref: 47b1c18c376ef57818f3dba12869a785ab766db5
           path: .partner-telegram
           persist-credentials: false
       - uses: actions/setup-python@v5
