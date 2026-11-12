@@ -14,6 +14,8 @@ on:
       - 'tests/test_legacy_worksheet_inventory_20261112.py'
       - 'tools/triage_legacy_worksheet_candidates_20261112.py'
       - 'tests/test_legacy_worksheet_triage_20261112.py'
+      - 'web/legacy_worksheet_quality_gate_20261112.py'
+      - 'tests/test_legacy_worksheet_quality_gate_20261112.py'
       - 'web/unified_rph_web.py'
       - 'english_supplementary_materials.py'
       - 'supplementary_materials/english/year4/**'
@@ -70,6 +72,6 @@ jobs:
           PY
       - name: Triage worksheet content coverage and manual approval boundary
         run: |
-          PYTHONPATH=. python -m unittest -v tests.test_legacy_worksheet_triage_20261112
+          PYTHONPATH=. python -m unittest -v tests.test_legacy_worksheet_triage_20261112 tests.test_legacy_worksheet_quality_gate_20261112
           PYTHONPATH=. python tools/triage_legacy_worksheet_candidates_20261112.py \
             --root . --out /tmp/cikgulaju-worksheet-triage.json
