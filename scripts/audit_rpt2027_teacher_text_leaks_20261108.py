@@ -39,6 +39,9 @@ RULES = {
     "MUSIC_MISSING_NOTATION": r"\bSimbol\s*/\s*skor\s+tidak\s+penuh\s+dalam\s+teks\b",
     "MUSIC_EDITOR_STATUS": r"\bPengukuhan\s+pilihan,\s*bukan\s+projek\s+rasmi\s*;\s*DRAF\b",
     "EMPTY_BOOK_PAGE": r"\bBT\s+m/s\s*:\s*(?:[.|]|\Z)",
+    "PI_SOURCE_ONLY_SK_TOC": r"Padanan\s+SK\s*/\s*TOC\s+terdahulu",
+    "PI_UNVERIFIED_BOOK_PAGE_CANDIDATE": r"perlu\s+padanan\s+fokus\s+halaman",
+    "PI_UNVERIFIED_FIELD_RANGE": r"Julat\s+bidang\s+sahaja\s*[—–-]\s*halaman\s+khusus\s+belum\s+dipadankan",
 }
 _COMPILED = tuple((key, re.compile(value, flags=re.IGNORECASE)) for key, value in RULES.items())
 SUFFIXES = frozenset((".pdf", ".html", ".htm", ".csv", ".txt"))
