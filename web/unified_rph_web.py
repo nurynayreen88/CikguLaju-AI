@@ -888,27 +888,47 @@ def create_blueprint():
                 english_workbook_metadata, music_source_links,
             )
             if sub == "ENGLISH":
-                label = english_workbook_metadata(year, number)
+                # Existing Telegram Workbook and owner-authored worksheets are
+                # independent sources. A Telegram outage must not hide a local
+                # exact-Lesson worksheet that has passed the file registry.
+                from urllib.parse import urlencode
+                params = urlencode({"year":year, "subject":sub,
+                                    "unit":unit, "lesson":token})
                 items = []
+                workbook_failed = False
+                try:
+                    label = english_workbook_metadata(year, number)
+                except Exception:
+                    label, workbook_failed = None, True
                 if label:
-                    from urllib.parse import urlencode
-                    params = urlencode({"year":year, "subject":sub,
-                                      "unit":unit, "lesson":token})
                     items.append({"type":"workbook", "title":label,
                                   "url":"/api/web/rph/english-workbook?"+params,
                                   "action":"Download"})
+                if year == 4:
+                    from web.english_y4_worksheet_pdf_20261112 import worksheet_metadata
+                    worksheet_label = worksheet_metadata(year, number)
+                    if worksheet_label:
+                        items.append({"type":"worksheet", "title":worksheet_label,
+                                      "url":"/api/web/rph/english-worksheet?"+params,
+                                      "action":"Download"})
+                if workbook_failed and not items:
+                    return jsonify({"items": [], "error":
+                                    "Sumber bahan tambahan Telegram belum dapat disahkan."}), 503
             else:
                 # Telegram verifies the Music Unit/PdP pair and returns only
                 # original owner-hosted Google Drive VIEW links.
                 items = music_source_links(year, unit, token)
         except Exception:
             return jsonify({"items": [],"error":
-                            "Sumber bahan tambahan Telegram belum dapat disahkan."}), 503
-        return jsonify({"items": items, "status":"SUMBER_ASAL",
+                            "Sumber bahan tambahan belum dapat disahkan."}), 503
+        return jsonify({"items": items,
+                        "status":"SUMBER_ASAL" if items else "BELUM_TERSEDIA",
                         "note": ("Pautan audio luar: akses, kandungan dan hak edar "
                                  "belum disahkan." if sub == "MUZIK" else
-                                 "Buku Aktiviti dipetik daripada halaman sumber yang dipadankan; "
-                                 "tiada janaan RPH digunakan.")})
+                                 "Hanya halaman Workbook atau lembaran kerja tambahan "
+                                 "yang benar-benar tersedia dipaparkan. "
+                                 "Lembaran kerja tambahan bukan halaman buku teks rasmi; "
+                                 "semakan bahan tidak menggunakan kuota RPH.")})
 
     @bp.get("/api/web/rph/english-workbook")
     def english_workbook():
@@ -929,5 +949,30 @@ def create_blueprint():
         return send_file(BytesIO(content), mimetype="application/pdf",
                          as_attachment=True, conditional=False,
                          download_name=f"CikguLaju_English_Y{year}_Lesson_{number:03d}_Workbook.pdf")
+
+    @bp.get("/api/web/rph/english-worksheet")
+    def english_worksheet():
+        # Not an RPH generation: authenticated, source-exact and credit-free.
+        account, error = _account()
+        if error is not None:
+            return error
+        try:
+            year, sub, unit, token, number = _extra_selection()
+            if sub != "ENGLISH" or year != 4:
+                raise ValueError("Unsupported worksheet subject or year")
+        except (ValueError, TypeError):
+            return jsonify({"error":"Pilihan lembaran kerja tidak sah"}), 400
+        try:
+            from web.english_y4_worksheet_pdf_20261112 import worksheet_pdf
+            document = worksheet_pdf(year, number)
+        except Exception:
+            return jsonify({"error":"Lembaran kerja belum dapat disediakan"}), 503
+        if document is None:
+            return jsonify({"error":"Lembaran kerja belum tersedia untuk Lesson ini"}), 404
+        response = send_file(BytesIO(document), mimetype="application/pdf",
+                             as_attachment=True, conditional=False,
+                             download_name=f"CikguLaju_English_Y4_Lesson_{number:03d}_Worksheet.pdf")
+        response.headers["X-CikguLaju-Material-Source"] = "approved-supplementary-english-y4"
+        return response
 
     return bp
