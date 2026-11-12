@@ -1,0 +1,61 @@
+name: Web English Y4 real PDF partner-PR WSGI contract (staging)
+on:
+  pull_request:
+    paths:
+      - 'web/native_telegram_extra_materials_20261106.py'
+      - 'web/unified_rph_web.py'
+      - 'tests/test_web_english_y4_partner_contract_20261111.py'
+      - 'requirements-web-render.txt'
+      - 'tools/run_web_production.py'
+      - '.github/workflows/web-english-y4-cross-pr-contract-staging.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  cross-pr-real-pdf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - name: Checkout Web PR code
+        uses: actions/checkout@v4
+      - name: Checkout pinned Telegram PR 558 code separately
+        uses: actions/checkout@v4
+        with:
+          repository: nurynayreen88/CikguLaju-AI
+          ref: aa05d06324806add65304cabd1d1c2c8db0d6aa9
+          path: .partner-telegram
+          persist-credentials: false
+      - name: Checkout pinned legacy map correction PR 567 separately
+        uses: actions/checkout@v4
+        with:
+          repository: nurynayreen88/CikguLaju-AI
+          ref: e98872f8a21ca001d1c2041b907ec31346ee4111
+          path: .partner-y4-legacy
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Preflight exact proposed Render Web runtime dependencies
+        run: |
+          pip install -r requirements-web-render.txt
+          python - <<'PY'
+          from io import BytesIO
+          from pypdf import PdfWriter
+          from web.native_telegram_extra_materials_20261106 import _verified_short_pdf
+          from tools.run_web_production import app
+          writer = PdfWriter()
+          writer.add_blank_page(width=612, height=792)
+          writer.add_metadata({"/Title": "Runtime preflight " + "x" * 700})
+          buffer = BytesIO()
+          writer.write(buffer)
+          assert _verified_short_pdf(buffer.getvalue(), "Workbook")
+          assert callable(app.wsgi_app)
+          print("WEB_RENDER_MATERIAL_PDF_RUNTIME_READY")
+          PY
+      - name: Install auxiliary QA-only document libraries
+        run: pip install 'python-docx==1.2.0' 'lxml==5.4.0'
+      - name: Verify Web and Telegram PR contract with real source PDFs
+        env:
+          CIKGULAJU_PR558_DIR: .partner-telegram
+          CIKGULAJU_PR567_DIR: .partner-y4-legacy
+        run: python -m unittest -v tests.test_web_english_y4_partner_contract_20261111

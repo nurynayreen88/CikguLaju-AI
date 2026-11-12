@@ -858,8 +858,9 @@ def create_blueprint():
     # The Web never guesses an RPT ID, exposes Telegram credentials or
     # copies files from an unsynchronized Web-side legacy database.
     def _extra_selection():
-        if set(request.args) != {"year", "subject", "unit", "lesson"}:
-            raise ValueError("Unexpected extra resource selection")
+        if (set(request.args) != {"year", "subject", "unit", "lesson"}
+                or any(len(request.args.getlist(k)) != 1 for k in request.args)):
+            raise ValueError("Unexpected or duplicate extra resource selection")
         year, sub, unit, lesson, component = _selection()
         if component is not None:
             raise ValueError("Unsupported extra resource component")
@@ -885,18 +886,35 @@ def create_blueprint():
             return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
         try:
             from web.native_telegram_extra_materials_20261106 import (
-                english_workbook_metadata, music_source_links,
+                english_workbook_metadata, english_student_book_metadata,
+                music_source_links,
             )
             if sub == "ENGLISH":
-                label = english_workbook_metadata(year, number)
+                # Independent verified sources: a Workbook bridge failure must
+                # not hide an otherwise available Student Book (and vice versa).
                 items = []
+                try:
+                    label = english_workbook_metadata(year, number)
+                except Exception:
+                    label = None
+                from urllib.parse import urlencode
+                params = urlencode({"year":year, "subject":sub,
+                                    "unit":unit, "lesson":token})
                 if label:
-                    from urllib.parse import urlencode
-                    params = urlencode({"year":year, "subject":sub,
-                                      "unit":unit, "lesson":token})
                     items.append({"type":"workbook", "title":label,
                                   "url":"/api/web/rph/english-workbook?"+params,
                                   "action":"Download"})
+                if year == 4:
+                    # Fail closed for an unavailable Student Book source without
+                    # concealing an independently verified Workbook download.
+                    try:
+                        book_label = english_student_book_metadata(year, number)
+                    except Exception:
+                        book_label = None
+                    if book_label:
+                        items.append({"type":"student_book", "title":book_label,
+                                      "url":"/api/web/rph/english-student-book?"+params,
+                                      "action":"Download"})
             else:
                 # Telegram verifies the Music Unit/PdP pair and returns only
                 # original owner-hosted Google Drive VIEW links.
@@ -904,11 +922,37 @@ def create_blueprint():
         except Exception:
             return jsonify({"items": [],"error":
                             "Sumber bahan tambahan Telegram belum dapat disahkan."}), 503
-        return jsonify({"items": items, "status":"SUMBER_ASAL",
+        return jsonify({"items": items,
+                        "status": "SUMBER_ASAL" if items else "BELUM_TERSEDIA",
                         "note": ("Pautan audio luar: akses, kandungan dan hak edar "
                                  "belum disahkan." if sub == "MUZIK" else
-                                 "Buku Aktiviti dipetik daripada halaman sumber yang dipadankan; "
-                                 "tiada janaan RPH digunakan.")})
+                                 "Student Book dan Workbook disediakan hanya bagi "
+                                 "halaman yang dipadankan dengan sumber. "
+                                 "Ketepatan kandungan dan hak edaran perlu disahkan; "
+                                 "muat turun ini tidak menggunakan kuota janaan RPH."
+                                 if items else
+                                 "Tiada bahan tambahan yang dapat disahkan "
+                                 "untuk Lesson ini.")})
+
+    @bp.get("/api/web/rph/english-student-book")
+    def english_student_book():
+        account, error = _account()
+        if error is not None:
+            return error
+        try:
+            year, sub, unit, token, number = _extra_selection()
+            if sub != "ENGLISH" or year != 4:
+                raise ValueError("Unsupported Student Book")
+        except (ValueError, TypeError):
+            return jsonify({"error":"Pilihan Lesson Student Book tidak sah"}), 400
+        try:
+            from web.native_telegram_extra_materials_20261106 import english_student_book_pdf
+            content = english_student_book_pdf(year, number)
+        except Exception:
+            return jsonify({"error":"Fail Student Book dari Telegram belum tersedia"}), 503
+        return send_file(BytesIO(content), mimetype="application/pdf",
+                         as_attachment=True, conditional=False,
+                         download_name=f"CikguLaju_English_Y{year}_Lesson_{number:03d}_Student_Book.pdf")
 
     @bp.get("/api/web/rph/english-workbook")
     def english_workbook():
