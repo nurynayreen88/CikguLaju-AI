@@ -1,0 +1,28 @@
+name: English Y4 legacy Student Book SOW page parity (staging)
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'app.py'
+      - 'tests/test_english_y4_legacy_studentbook_sow_parity_20261112.py'
+      - '.github/workflows/english-y4-legacy-studentbook-sow-parity-20261112.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile Telegram bot without starting runtime
+        run: python -m py_compile app.py
+      - name: Test all 81 Year 4 legacy Student Book page maps
+        run: python -m unittest -v tests.test_english_y4_legacy_studentbook_sow_parity_20261112
