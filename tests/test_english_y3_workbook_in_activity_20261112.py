@@ -27,8 +27,8 @@ class WorkbookInActivityTests(unittest.TestCase):
                 self.assertIn("## Assessment / PBD (10 minutes)", source)
                 self.assertNotIn("Workbook assessment:", source)
                 head, tail = source.split("## Assessment / PBD", 1)
-                self.assertEqual(len(re.findall(r"Workbook\\s+p\\.", head)), 1)
-                self.assertEqual(len(re.findall(r"Workbook\\s+p\\.", tail)), 0)
+                self.assertEqual(len(re.findall(r"Workbook\s+p\.", head)), 1)
+                self.assertEqual(len(re.findall(r"Workbook\s+p\.", tail)), 0)
                 rows = apply({"subject": "English", "year": "Year 3",
                               "lesson_no": lesson}, {})
                 self.assertIn("_standalone_y3_source", rows)
@@ -42,7 +42,7 @@ class WorkbookInActivityTests(unittest.TestCase):
                 self.assertNotIn("**", rows["AKTIVITI UTAMA"])
                 self.assertNotIn("Pengukuhan", rows["AKTIVITI UTAMA"])
                 self.assertNotIn("NOT READY", rows["PENUTUP"])
-                parts = re.findall(r"^## (?:Set Induction|Activity [12]|Assessment / PBD|Closure)[^\\n]*\\((\\d+) minutes\\)",
+                parts = re.findall(r"^## (?:Set Induction|Activity [12]|Assessment / PBD|Closure)[^\n]*\((\d+) minutes\)",
                                    source, re.M)
                 self.assertEqual([int(t) for t in parts], [5,15,25,10,5])
                 self.assertEqual(sum(map(int, parts)), 60)
