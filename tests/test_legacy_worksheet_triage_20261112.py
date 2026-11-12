@@ -24,6 +24,13 @@ class LegacyWorksheetTriageTests(unittest.TestCase):
         self.assertTrue(all(len(v["question_pattern"]) <= 135
                             for v in output["review_samples"]))
         self.assertTrue(output["blueprint_year_subject"])
+        gate = output["content_quality_gate"]
+        self.assertEqual(gate["classification"], "ALL_HELD_UNTIL_MANUAL_APPROVAL")
+        self.assertEqual(gate["auto_approved_count"], 0)
+        self.assertEqual(sum(gate["status_counts"].values()),
+                         output["worksheet_blueprint_count"])
+        self.assertGreater(gate["blocker_counts"].get("GENERIC_LEVEL_TITLE", 0), 0)
+        self.assertGreater(gate["blocker_counts"].get("RENDER_PLACEHOLDER", 0), 0)
         # A source requiring manual review does not automatically become a
         # CikguLaju delivery record even if a legacy column says 'approved'.
         self.assertNotIn("ready_files", output)
