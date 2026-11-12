@@ -12,9 +12,15 @@ from english_supplementary_materials import available, ROOT, YEAR4
 
 MAX_SOURCE_BYTES = 16000
 ALLOWED_LESSONS = frozenset((4, 79, 89, 90))
+# Teacher metadata is a trailing section, not just a single line.
+# Stop at its first heading to block accidental multi-line answer key leaks.
 _TEACHER_ONLY = re.compile(
-    r"^\*\*\s*(?:Purpose|Teacher assessment|Answer key(?:\s*\([^)]*\))?)\s*:", re.I
+    r"^\s*(?:(?:\*\*)|(?:#{1,6}\s+))?"
+    r"(?:Teacher(?:-only)?\s+(?:assessment|notes?|guidance)|"
+    r"Answer\s+key(?:\s*\([^)]*\))?|Suggested\s+answers?|"
+    r"Model\s+answers?|Solutions?)\b", re.I
 )
+_PURPOSE_ONLY = re.compile(r"^\s*(?:\*\*)?Purpose\s*:", re.I)
 _DOC_TITLE = re.compile(r"^#\s+English Year 4\s+—\s+Lesson\s+(\d{3})\s+—\s+(.+)$")
 
 
@@ -53,9 +59,9 @@ def _student_lines(raw):
     lines = []
     for original in raw.splitlines():
         line = original.rstrip()
-        if _TEACHER_ONLY.match(line.lstrip()):
-            continue
-        if line.lstrip().startswith("**Purpose:**"):
+        if _TEACHER_ONLY.match(line):
+            break
+        if _PURPOSE_ONLY.match(line):
             continue
         # Strip simple Markdown presentation syntax from teacher-authored text.
         line = line.replace("**", "").replace("*", "").replace("  ", " ")
