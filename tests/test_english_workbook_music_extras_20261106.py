@@ -170,12 +170,13 @@ class StudentBookYear4Materials(unittest.TestCase):
             with self.subTest(lesson=lesson):
                 material = _student_book_material(runtime, 4, lesson,
                                                   root=root)
-                if lesson == 43:
-                    self.assertIsNone(material)
-                    continue
                 self.assertIsNotNone(material)
-                expected = valid[lesson]
+                # Legacy app.py lists five unrelated Unit 3 pages for L043;
+                # the source-specific API corrects Phonics 3 to SOW p.121.
+                expected = [121] if lesson == 43 else valid[lesson]
                 self.assertEqual(len(material["parts"]), len(expected))
+                if lesson == 43:
+                    self.assertIn("m/s 121", material["label"])
                 self.assertLessEqual(len(expected), 4)
                 pdf = _extract_student_book(material)
                 returned = PdfReader(BytesIO(pdf), strict=True)
@@ -189,7 +190,7 @@ class StudentBookYear4Materials(unittest.TestCase):
                         original_page.get_contents().get_data(),
                     )
                 checked += 1
-        self.assertEqual(checked, 80)
+        self.assertEqual(checked, 81)
 
 
     def test_main_student_book_pages_use_only_verified_runtime_map(self):
@@ -233,6 +234,13 @@ class StudentBookYear4Materials(unittest.TestCase):
             self.assertIsNone(_student_book_material(runtime, 3, 17, root=root))
             self.assertIsNone(_student_book_material(runtime, 4, 161, root=root))
             self.assertIsNone(_student_book_material(runtime, 4, 18, root=root))
+            # SOW-specific L043 correction must not whitelist five pages in
+            # another Lesson or accept a different unverified source range.
+            runtime._en34_verified_sb_pages_v25230 = lambda row, y: (
+                "27, 28, 29, 30, 31"
+            )
+            self.assertIsNone(_student_book_material(runtime, 4, 17, root=root))
+            runtime._en34_verified_sb_pages_v25230 = lambda row, y: "1–2"
             # A page mapping that includes a whole resource range is rejected.
             runtime._en34_verified_sb_pages_v25230 = lambda row, y: "1–24"
             self.assertIsNone(_student_book_material(runtime, 4, 17, root=root))
