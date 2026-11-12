@@ -15,7 +15,7 @@ for(const item of ["Bank Lembaran Kerja Tahun 1–6","BBM &amp; Aktiviti",
                     "Latihan UASA","Rekod PBD","KP2027 Tahun 1"]){
  assert.ok(view[1].includes(item),"A planned module is missing: "+item);
 }
-assert.equal((view[1].match(/<span>Akan Datang<\\/span>/g)||[]).length,5,"Every planned module needs explicit status");
+assert.equal((view[1].match(/<span>Akan Datang<\/span>/g)||[]).length,5,"Every planned module needs explicit status");
 assert.doesNotMatch(view[1],/<(?:a|button|form|input|select)\b/i,
  "No fake download, purchase, form or clickable action for unapproved modules");
 assert.doesNotMatch(nav,/data-web-view="worksheet"|data-web-view="pbd"|data-web-view="uasa"|data-web-view="bbm"/,
