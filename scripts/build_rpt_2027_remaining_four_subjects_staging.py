@@ -87,7 +87,7 @@ def bm_records(year):
             # teaching guidance. Preserve original notes for the audit but
             # never print them in a candidate PDF or silently approve them.
             source_held=bool(re.search(
-                r"\\bHOLD(?:\\s*:|\\s+(?:padanan|tajuk|SP|rujukan|kod)\\b)",
+                r"\bHOLD(?:\s*:|\s+(?:padanan|tajuk|SP|rujukan|kod)\b)",
                 source_notes,flags=re.IGNORECASE))
             items.append(dict(
                 id=f"{no:03d}",week=week,unit=unit,topic=detail,
