@@ -21,6 +21,7 @@ class WorksheetYear1ReviewQueueTests(unittest.TestCase):
                 self.assertFalse(item["public"])
                 self.assertFalse(item["teacher_approved"])
                 self.assertIsNone(item["lesson_token"])
+                self.assertEqual(item["mapping_status"], "PENDING_VERIFIED_TELEGRAM_LESSON")
                 self.assertEqual(item["content_status"], "REVIEW_REQUIRED")
                 self.assertEqual(item["question_count"], 6)
                 self.assertFalse(Path(item["source"]).is_absolute())
