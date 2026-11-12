@@ -47,7 +47,7 @@ def _url_and_headers(conf):
 
 def _db(conf, method, params=None, payload=None, *, opener=None):
     """Bounded, no-redirect PostgREST call with server-owned identity."""
-    if method not in ("GET", "POST"):
+    if method not in ("GET", "POST", "PATCH"):
         raise ValueError("Unsupported feedback operation")
     url, headers = _url_and_headers(conf)
     if params:
@@ -173,3 +173,43 @@ def admin_feedback():
     except FeedbackUnavailable:
         current_app.logger.exception("Private admin feedback list unavailable")
         return jsonify({"error": "Senarai komen admin belum tersedia"}), 503
+
+
+@bp.patch("/api/web/admin/feedback/<int:feedback_id>")
+def admin_feedback_status(feedback_id):
+    """Admin-only status management on Telegram's existing feedback ledger.
+
+    Never trust a browser-supplied Telegram ID. No modification to comment
+    text, owner, date, credits, payments, or the global account records.
+    """
+    conf, uid, error = _auth()
+    if error:
+        return error
+    if uid not in allowed_admin_ids():
+        return jsonify({"error": "Akses admin diperlukan"}), 403
+    if request.args or feedback_id <= 0 or feedback_id > 9223372036854775807:
+        return jsonify({"error": "ID komen tidak sah"}), 400
+    if request.headers.get("Origin") != "https://" + request.host:
+        return jsonify({"error": "Asal permintaan tidak sah"}), 403
+    if (not request.is_json or request.content_length is None
+            or not 0 < request.content_length <= 256):
+        return jsonify({"error": "Format permintaan tidak sah"}), 400
+    body = request.get_json(silent=True)
+    if not isinstance(body, dict) or set(body) != {"status"}:
+        return jsonify({"error": "Status komen tidak sah"}), 400
+    next_status = body["status"]
+    if not isinstance(next_status, str) or next_status not in STATUSES:
+        return jsonify({"error": "Status komen tidak sah"}), 400
+    try:
+        changed = _db(conf, "PATCH",
+                      {"id": f"eq.{feedback_id}", "select": "id,status"},
+                      {"status": next_status})
+        if not changed:
+            return jsonify({"error": "Komen tidak ditemui"}), 404
+        if (len(changed) != 1 or changed[0].get("id") != feedback_id
+                or changed[0].get("status") != next_status):
+            raise FeedbackUnavailable("Status update not confirmed")
+        return jsonify({"ok": True, "id": feedback_id, "status": next_status})
+    except FeedbackUnavailable:
+        current_app.logger.exception("Private admin feedback update unavailable")
+        return jsonify({"error": "Status komen belum dapat disimpan"}), 503
