@@ -77,6 +77,14 @@
       "pages": 6,
       "size_bytes": 144039,
       "sha256": "7ba35e07c4fd8a108cc524b1ab9bd5fe0a1b1bba39b65a6cad72526dd61f7e34"
+    },
+    {
+      "id": "download_semua",
+      "label": "Muat Turun Semua — ZIP",
+      "file": "CikguLaju_Pakej_Ujian_Diagnostik_Tahun_1_2027.zip",
+      "mime": "application/zip",
+      "size_bytes": 468181,
+      "sha256": "69e2adc57401e244dd8584112b795d5ef444ed18cdf3d1b6337293e5eb7d8e5d"
     }
   ]
 }
