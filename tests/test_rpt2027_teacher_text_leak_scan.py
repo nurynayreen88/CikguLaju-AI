@@ -163,6 +163,52 @@ class TeacherTextLeakAuditTests(unittest.TestCase):
         self.assertEqual(public_note(arabic), "")
         self.assertFalse(arabic["source_sp_dskp_text_signoff"])
 
+    def test_pi_year2_source_bookpage_holds_stay_original_but_hide_in_teacher_notes(self):
+        import json
+        from scripts.build_rpt_2027_remaining_four_subjects_staging import (
+            ROOT, _pi_teacher_bahan, pi_records,
+        )
+        raw = json.loads((ROOT / "rph_standalone/pendidikan_islam_draf_2027/year2.json")
+                         .read_text("utf-8"))["records"]
+        printable = pi_records(2)
+        self.assertEqual(len(raw), len(printable))
+        markers = ("Padanan SK/TOC terdahulu", "perlu padanan fokus halaman",
+                   "Julat bidang sahaja")
+        affected = 0
+        for source, row in zip(raw, printable):
+            original = str((source.get("fields") or {}).get("bahan") or "")
+            if not any(tag in original for tag in markers):
+                continue
+            affected += 1
+            visible = _pi_teacher_bahan(original)
+            # Never overwrite original JSON; preserve actual teaching resources
+            # and PBD, not unverified whole-unit textbook-page guesses.
+            self.assertIn(original.splitlines()[0].strip(), visible)
+            self.assertIn(original.splitlines()[0].strip(), row["note"])
+            self.assertIn("Penilaian:", row["note"])
+            for tag in markers:
+                self.assertNotIn(tag, visible)
+                self.assertNotIn(tag, row["note"])
+            self.assertTrue(any(tag in original for tag in markers))
+        self.assertEqual(affected, 77)
+
+    def test_pi_source_only_page_review_phrases_block_teacher_pdf(self):
+        examples = (
+            ("Unit 1 - Kenali Sifat 20 Allah | ms. 55-60 | Padanan SK/TOC terdahulu",
+             "PI_SOURCE_ONLY_SK_TOC"),
+            ("Unit 1-3 (perlu padanan fokus halaman) | ms. 37-54",
+             "PI_UNVERIFIED_BOOK_PAGE_CANDIDATE"),
+            ("Julat bidang sahaja — halaman khusus belum dipadankan",
+             "PI_UNVERIFIED_FIELD_RANGE"),
+        )
+        for original, expected in examples:
+            with self.subTest(original=original):
+                self.assertIn(expected, {f["rule"] for f in find_internal_notes(original)})
+        self.assertEqual(find_internal_notes(
+            "Bahan: Kad ayat, Mushaf al-Quran dan papan putih. "
+            "Penilaian: Pemerhatian bacaan murid."
+        ), [])
+
     def test_music_pdf_editorial_leaks_trigger_pdf_release_guard(self):
         findings = (
             ("BT m/s: 10 (draf).", "MUSIC_DRAFT_BOOK_PAGE"),
