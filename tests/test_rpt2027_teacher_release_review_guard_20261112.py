@@ -62,6 +62,23 @@ class TeacherReleaseReviewGuardTests(unittest.TestCase):
         self.assertFalse(manifest["ready_for_web_catalog"])
         self.assertTrue(manifest["teacher_release_blocked"])
         self.assertFalse(manifest["academic_final_approved"])
+        academic_holds = report["academic_source_holds_not_printed"]
+        self.assertEqual(set(academic_holds), {
+            "bahasa_melayu:2", "bahasa_melayu:3",
+        })
+        self.assertEqual({k: len(v) for k, v in academic_holds.items()}, {
+            "bahasa_melayu:2": 2, "bahasa_melayu:3": 7,
+        })
+        self.assertEqual(manifest["academic_source_holds_total"], 9)
+        self.assertEqual(manifest["academic_source_holds_not_printed"],
+                         academic_holds)
+        info = Path("output/rpt2027_week01_review/"
+                    "BACA_DULU_RPT_2027_SEMAKAN_BUKAN_FINAL.txt")
+        self.assertTrue(info.is_file())
+        content = info.read_text("utf-8")
+        self.assertIn("JANGAN EDAR", content)
+        self.assertIn("9 rekod BM", content)
+        self.assertIn("\n", content)
         expected_music = {f"muzik:{year}" for year in range(2, 7)}
         found = set(report["printed_internal_note_affected_files"])
         self.assertEqual(found, set(), "No editorial notes may remain in review PDFs")
