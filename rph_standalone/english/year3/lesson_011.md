@@ -9,13 +9,13 @@
 **Source:** KPM Primary Year 3 SK Scheme of Work, Lesson 11.
 
 ## Set Induction (5 minutes)
-**Teacher:** Play word ladder or brainstorm activity words. **Pupils:** Respond and recall prior learning.
+**Teacher:** Show two action flashcards and ask pupils to mime the actions without speaking. **Pupils:** Mime and name the actions they recognise.
 
 ## Activity 1 — Guided preparation (15 minutes)
 **Teacher:** Run a word-ladder or group brainstorm on activities, correct challenging spellings and model 'Can you help me, please?' **Pupils:** Contribute activity words, practise asking 'Can you ...?' and request help politely.
 
 ## Activity 2 — Main task (25 minutes)
-**Teacher:** Review Can you...? and how to request help; guide Activity 5 using Teacher's Book p.22; monitor responses. **Pupils:** Follow SB p.9 Activity 5, practise 'Can you...?' answers and request help with 'Can you help me, please?' when needed.
+**Teacher:** Guide Student's Book p.9 Activity 5 with Teacher's Book p.22, organise pair exchanges and give feedback on polite requests. **Pupils:** Complete SB p.9 Activity 5, ask and answer 'Can you...?' with a partner, and request help using 'Can you help me, please?' when needed.
 **Workbook:** Pupils complete Workbook p.8, Activity 2, by forming questions and answers with 'can'.
 
 ## Assessment / PBD (10 minutes)
