@@ -50,6 +50,18 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 .rph-guide .notice{margin-top:13px;font-size:.86rem}
 .selection-help{padding:12px 14px;border-left:4px solid #087568;background:#f4f9f6;color:#173d37;border-radius:8px;font-weight:650}
 @media print{.rph-guide,.selection-help{display:none!important}}
+/* Read-only upcoming materials: no fake downloads, no account or credit action. */
+.sidebar-coming-status{margin-left:auto;flex:none;font-size:.67rem;line-height:1.2;font-weight:750;color:#637585;border:1px solid #d6e0e5;border-radius:8px;padding:4px 6px;background:#f4f6f8}
+.upcoming-intro{line-height:1.6;color:#3b5768;max-width:700px}
+.upcoming-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:19px 0}
+.upcoming-item{border:1px solid #dce5ea;border-radius:14px;background:#fbfcfe;padding:15px 17px;min-width:0}
+.upcoming-item-header{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center}
+.upcoming-item strong{color:#1d4863}
+.upcoming-item span{font-size:.76rem;font-weight:750;color:#627585}
+.upcoming-item p{margin:9px 0 0;font-size:.9rem;line-height:1.5;color:#526779}
+@media(max-width:520px){.upcoming-grid{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:760px){.sidebar-coming-status{font-size:.63rem;padding:3px 5px}}
+@media print{#view-upcoming{display:none!important}}
  .brand-icon{object-fit:contain;flex-shrink:0;background:transparent}
  .login-brand{object-fit:contain;display:block;margin:0 auto 20px;background:transparent}
  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
@@ -400,6 +412,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     <button type="button" class="sidebar-tab" data-web-view="rph" aria-controls="view-rph"><span aria-hidden="true">📘</span> Sediakan RPH</button>
     <button type="button" class="sidebar-tab" data-web-view="special" aria-controls="view-special"><span aria-hidden="true">🌱</span> RPH Aktiviti Khas</button>
     <button type="button" class="sidebar-tab" data-web-view="rpt" aria-controls="view-rpt"><span aria-hidden="true">📅</span> RPT 2027</button>
+    <button type="button" class="sidebar-tab" data-web-view="upcoming" aria-controls="view-upcoming"><span aria-hidden="true">🧰</span> Bahan Akan Datang <span class="sidebar-coming-status">Akan Datang</span></button>
     <button type="button" class="sidebar-tab" data-web-view="payment" aria-controls="view-payment"><span aria-hidden="true">🏆</span> Rakan Pembangun</button>
     <button type="button" id="web-referral-tab" class="sidebar-tab" data-web-view="referral" aria-controls="view-referral" hidden><span aria-hidden="true">🎁</span> Referral Saya</button>
     <button type="button" class="sidebar-tab" data-web-view="feedback" aria-controls="view-feedback"><span aria-hidden="true">💬</span> Komen &amp; Cadangan</button>
@@ -410,6 +423,18 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </aside>
 <div class="app-main">
 <div class="workspace-intro"><div><span class="workspace-eyebrow">RUANG GURU</span><p>Selamat datang, <strong id="workspace-teacher-name">Cikgu</strong></p></div><span class="workspace-ready"><span aria-hidden="true">●</span> Portal Pembelajaran</span></div>
+<section id="view-upcoming" class="app-view" aria-labelledby="view-upcoming-heading" hidden>
+  <h2 id="view-upcoming-heading">🧰 Bahan Akan Datang</h2>
+  <p class="upcoming-intro">Kami sedang menyusun bahan tambahan untuk guru sekolah rendah Tahun 1–6. Semua modul di bawah masih dalam semakan dan <strong>belum boleh dimuat turun</strong>. Tiada tarikh pelancaran yang dijanjikan.</p>
+  <div class="upcoming-grid" aria-label="Senarai modul dalam pembangunan">
+    <article class="upcoming-item"><div class="upcoming-item-header"><strong>📄 Bank Lembaran Kerja Tahun 1–6</strong><span>Akan Datang</span></div><p>Latihan mengikut subjek, SK/SP dan Lesson/PdP. Bahan terpilih yang sudah disahkan boleh muncul lebih awal dalam Sediakan Bahan PdP.</p></article>
+    <article class="upcoming-item"><div class="upcoming-item-header"><strong>🧩 BBM &amp; Aktiviti</strong><span>Akan Datang</span></div><p>Bahan bantu mengajar dan aktiviti pembelajaran yang dipadankan dengan tajuk sebenar.</p></article>
+    <article class="upcoming-item"><div class="upcoming-item-header"><strong>📝 Latihan UASA</strong><span>Akan Datang</span></div><p>Set latihan dan pentaksiran sekolah rendah selepas semakan kandungan serta format.</p></article>
+    <article class="upcoming-item"><div class="upcoming-item-header"><strong>📊 Rekod PBD</strong><span>Akan Datang</span></div><p>Alat sokongan Pentaksiran Bilik Darjah. Tiada maklumat murid dikumpulkan melalui paparan ini.</p></article>
+    <article class="upcoming-item"><div class="upcoming-item-header"><strong>📚 KP2027 Tahun 1</strong><span>Akan Datang</span></div><p>Bahan Kurikulum Persekolahan 2027 selepas pemetaan dan semakan sumber selesai.</p></article>
+  </div>
+  <p class="notice">Untuk RPH, RPT dan bahan sokongan yang sudah disahkan, terus gunakan menu sedia ada. Label “Akan Datang” bukan tanda bahan sudah siap atau dibuka untuk pengguna.</p>
+</section>
 <section id="view-today" class="app-view" aria-labelledby="view-today-heading" hidden>
   <h2 id="view-today-heading">RPH Hari Ini</h2>
   <p>Pilih Tema/Unit/Tajuk dan Lesson/PdP untuk setiap kelas di bawah. Selepas semua pilihan selesai, tekan <strong>Jana Bahan Semua Lesson</strong> sekali. Hasil bagi setiap kelas dan subjek akan dipaparkan secara berasingan di bahagian paling bawah.</p>
@@ -692,7 +717,7 @@ function canGenerateRph(){
   (rphAccessMode==="trial"&&rphTrialRemaining!==null&&rphTrialRemaining>0);
 }
 const webViewButtons=Array.from(document.querySelectorAll("[data-web-view]"));
-const webViews=new Map([["today","view-today"],["rph","view-rph"],["special","view-special"],["rpt","view-rpt"],["account","view-account"],["payment","view-payment"],["referral","view-referral"],["feedback","view-feedback"],["admin","view-admin"],["guide","view-guide"]]);
+const webViews=new Map([["today","view-today"],["upcoming","view-upcoming"],["rph","view-rph"],["special","view-special"],["rpt","view-rpt"],["account","view-account"],["payment","view-payment"],["referral","view-referral"],["feedback","view-feedback"],["admin","view-admin"],["guide","view-guide"]]);
 /* Only the original curriculum dropdowns and material actions are moved
  * into a timetable card. The "Sediakan RPH" page itself NEVER moves, opens
  * or renders inside RPH Hari Ini. Event listeners and native APIs are reused.
