@@ -12,6 +12,8 @@ on:
       - 'audits/legacy_worksheet_sources_staging_20261112.json'
       - 'tools/audit_legacy_worksheet_banks_20261112.py'
       - 'tests/test_legacy_worksheet_inventory_20261112.py'
+      - 'tools/triage_legacy_worksheet_candidates_20261112.py'
+      - 'tests/test_legacy_worksheet_triage_20261112.py'
       - 'web/unified_rph_web.py'
       - 'english_supplementary_materials.py'
       - 'supplementary_materials/english/year4/**'
@@ -66,3 +68,8 @@ jobs:
                   print('  TABLE', table['table'], 'rows=', table.get('rows'),
                         'columns=', cols[:320], 'STATUS=', table['status'])
           PY
+      - name: Triage worksheet content coverage and manual approval boundary
+        run: |
+          PYTHONPATH=. python -m unittest -v tests.test_legacy_worksheet_triage_20261112
+          PYTHONPATH=. python tools/triage_legacy_worksheet_candidates_20261112.py \
+            --root . --out /tmp/cikgulaju-worksheet-triage.json
