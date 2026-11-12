@@ -10,6 +10,7 @@ import sqlite3
 from pathlib import Path
 from urllib.parse import quote
 from collections import Counter
+from web.legacy_worksheet_quality_gate_20261112 import assess_legacy_blueprint
 
 WORKSHEET_DB = "CikguLaju_Worksheet_Content.db"
 RESOURCE_DB = "CikguLaju_Templates_08.db"
@@ -94,6 +95,28 @@ def audit(root):
             db, "worksheet_item_templates", "item_type")
         report["year_label_distribution"] = _distribution(
             db, "worksheet_blueprints", "year_label")
+        fields = ("year_label", "subject", "sk_code", "sp_code", "title",
+                  "instructions", "question_pattern", "answer_space",
+                  "verified_alignment")
+        statuses, reason_counts, status_by_year_subject = Counter(), Counter(), Counter()
+        for row in db.execute("SELECT " + ",".join(fields) + " FROM worksheet_blueprints"):
+            record = dict(zip(fields, row))
+            assessment = assess_legacy_blueprint(record)
+            statuses[assessment["status"]] += 1
+            reason_counts.update(assessment["reasons"])
+            status_by_year_subject[(str(record["year_label"]),
+                                    str(record["subject"]),
+                                    assessment["status"])] += 1
+        report["content_quality_gate"] = {
+            "classification": "ALL_HELD_UNTIL_MANUAL_APPROVAL",
+            "status_counts": dict(sorted(statuses.items())),
+            "blocker_counts": dict(reason_counts.most_common()),
+            "year_subject_status": [
+                {"year": y, "subject": subj, "status": stat, "count": count}
+                for (y, subj, stat), count in sorted(status_by_year_subject.items())
+            ],
+            "auto_approved_count": 0,
+        }
         # Bounded static teaching content; never a learner/teacher account table.
         sample = db.execute("""
             SELECT year_label,subject,sk_code,sp_code,title,instructions,
@@ -165,6 +188,7 @@ def main():
         "item_type_distribution", "resource_verification", "resource_worksheet_flag",
         "delivery_release_status", "visual_asset_records", "visual_approval",
         "curriculum_review_queue_records", "curriculum_review_decisions",
+        "content_quality_gate",
     ):
         print(name, json.dumps(data[name], ensure_ascii=False))
     print("YEAR_SUBJECT", json.dumps(data["blueprint_year_subject"], ensure_ascii=False))
