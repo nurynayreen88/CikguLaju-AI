@@ -32,6 +32,8 @@ _AUDIT_CLAUSE = re.compile(
     r"\bRPT\s+2026\s+(?:salah|mengulangi)|"
     r"\b(?:TARIKH|MINGGU)\s+(?:A/B\s+)?(?:BELUM|(?:IALAH|ADALAH)\s+CADANGAN)|"
     r"\b(?:HALAMAN|AKTIVITI|BUKU|TEKS|KOD)\b.{0,80}\b(?:belum|draf|calon|sebelum READY)|"
+    r"\b(?:Simbol\s*/\s*skor\s+tidak\s+penuh\s+dalam\s+teks|"
+    r"Pengukuhan\s+pilihan,\s*bukan\s+projek\s+rasmi\s*;\s*DRAF)\b|"
     r"\b(?:audit|developer|release|signoff)\b)"
 )
 _SEPARATOR = re.compile(r"\s*(?:\s+[|•]\s+|(?<=[.!?])\s+)")
