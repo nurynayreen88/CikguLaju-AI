@@ -173,10 +173,15 @@ class StudentBookYear4Materials(unittest.TestCase):
                 self.assertIsNotNone(material)
                 # Legacy app.py lists five unrelated Unit 3 pages for L043;
                 # the source-specific API corrects Phonics 3 to SOW p.121.
-                expected = [121] if lesson == 43 else valid[lesson]
+                # Academic SOW crosswalk for three confirmed legacy mismaps.
+                corrections = {43: [121], 103: [73], 157: [110, 111]}
+                expected = corrections.get(lesson, valid[lesson])
                 self.assertEqual(len(material["parts"]), len(expected))
-                if lesson == 43:
-                    self.assertIn("m/s 121", material["label"])
+                if lesson in corrections:
+                    self.assertIn("m/s " + (
+                        "121" if lesson == 43 else
+                        "73" if lesson == 103 else "110–111"
+                    ), material["label"])
                 self.assertLessEqual(len(expected), 4)
                 pdf = _extract_student_book(material)
                 returned = PdfReader(BytesIO(pdf), strict=True)
