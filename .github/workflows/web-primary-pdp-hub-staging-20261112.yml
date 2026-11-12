@@ -58,7 +58,11 @@ jobs:
           assert data['approval'] == 'NONE'
           assert data['production_feature_gate'] == 'OFF'
           for x in data['sources']:
-              print(x['path'], x['state'],
+              print('SOURCE', x['path'], x['state'],
                     'candidate tables:', len(x.get('tables', [])),
                     'integrity:', x.get('integrity', 'n/a'))
+              for table in x.get('tables', []):
+                  cols = ', '.join(c['name'] for c in table.get('columns', []))
+                  print('  TABLE', table['table'], 'rows=', table.get('rows'),
+                        'columns=', cols[:320], 'STATUS=', table['status'])
           PY
