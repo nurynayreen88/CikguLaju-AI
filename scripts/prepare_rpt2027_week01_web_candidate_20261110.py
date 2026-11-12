@@ -66,6 +66,9 @@ TEACHER_PDF_REVIEW_MARKERS = {
     "DRAFT_RPT_STATUS": re.compile(
         r"(?i)\b(?:RPT|kandungan\s+buku)\b[^.\n]{0,80}\bmasih\s+draf\b"
     ),
+    "BM_UNVERIFIED_CROSSWALK": re.compile(
+        r"(?i)\bHOLD\s+(?:padanan|tajuk|SP|rujukan|kod)\b"
+    ),
     "INTERNAL_STAGING_STATUS": re.compile(
         r"(?i)(?:\bHOLD\s*:|\bSTAGING\b|\bJANGAN\s+MERGE\b|"
         r"\bBUKAN\s+UNTUK\s+GURU\b|\bBELUM\s+READY\b)"
