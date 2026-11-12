@@ -197,9 +197,11 @@ class WebTelegramYear4PartnerContract(unittest.TestCase):
                 self.assertEqual(self.web_client.get(path, query_string=query).status_code,
                                  200)
 
-    def test_lesson157_main_page_only_and_lesson43_fails_closed(self):
+    def test_lesson157_main_page_only_and_lesson43_phonics3_page121(self):
         self.assertEqual(self.runtime.main[(4, 157)], "110")
-        for lesson, pages_expected in ((157, 1), (43, None)):
+        # Legacy L043 p27-31 is wrong; SOW Lesson 43 specifies Phonics 3 p121.
+        self.assertEqual(self.runtime.mapped[43], "27, 28, 29, 30, 31")
+        for lesson in (157, 43):
             query = self._select(lesson)
             with patch("web.unified_rph_web._account",
                        return_value=({"authenticated": True, "telegram_user_id": 123}, None)), \
@@ -209,14 +211,18 @@ class WebTelegramYear4PartnerContract(unittest.TestCase):
                                              query_string=query)
                 self.assertEqual(listed.status_code, 200)
                 found = [x for x in listed.json["items"] if x["type"] == "student_book"]
-                self.assertEqual(len(found), 0 if pages_expected is None else 1)
+                self.assertEqual(len(found), 1)
                 pdf = self.web_client.get("/api/web/rph/english-student-book",
                                           query_string=query)
-            if pages_expected is None:
-                self.assertEqual(pdf.status_code, 503)
-            else:
-                self.assertEqual(pdf.status_code, 200)
-                self.assertEqual(len(PdfReader(BytesIO(pdf.data)).pages), pages_expected)
+            self.assertEqual(pdf.status_code, 200)
+            actual = PdfReader(BytesIO(pdf.data), strict=True)
+            self.assertEqual(len(actual.pages), 1)
+            if lesson == 43:
+                self.assertIn("m/s 121", found[0]["title"])
+                source = PdfReader(str(PARTNER / "books/english/y4_student_101_177.pdf"),
+                                   strict=True)
+                self.assertEqual(actual.pages[0].get_contents().get_data(),
+                                 source.pages[20].get_contents().get_data())
 
     def test_no_login_wrong_unit_and_missing_telegram_bearer(self):
         query = self._select(103)
