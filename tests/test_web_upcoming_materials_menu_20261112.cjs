@@ -25,6 +25,18 @@ assert.equal((view[1].match(/<span>Akan Datang<\/span>/g)||[]).length,5,"Every p
 const actualSamples=["english-004","english-079","english-089","english-090","math-y1","science-y1"];
 const htmlSamples=[...view[1].matchAll(/<details class="upcoming-sample" data-upcoming-sample="([^"]+)">/g)].map(x=>x[1]);
 assert.deepEqual(htmlSamples,actualSamples,"Only six genuinely sourced WIP previews are shown");
+const worksheetImages=[...view[1].matchAll(/<img loading="lazy" decoding="async" width="794" height="1123" alt="([^"]+)" src="([^"]+)">/g)];
+assert.equal(worksheetImages.length,6,"Six A4 worksheet pictures must render as actual image elements");
+for(const [,alt,uri] of worksheetImages){
+ assert.match(alt,/Gambar lembaran A4/);
+ assert.ok(uri.startsWith("data:image/svg+xml;charset=utf-8,"),"Image must be a self-contained SVG without external routes");
+ const decoded=decodeURIComponent(uri.slice("data:image/svg+xml;charset=utf-8,".length));
+ assert.match(decoded,/<svg[^>]+viewBox="0 0 794 1123"/);
+ assert.match(decoded,/PRATONTON SUSUN ATUR/);
+ assert.doesNotMatch(decoded,/Answer key|Teacher assessment|SECRET_|jawapan guru/i);
+}
+assert.match(view[1],/Lihat gambar susun atur A4/);
+
 for(const pupilText of [
   "She is from Malaysia. She is __________.",
   "Which character made an important choice?",
