@@ -89,8 +89,8 @@ class EnglishY3RoleLayoutTests(unittest.TestCase):
             {"subject": "English", "year": "Year 3", "lesson_no": 14}, {}
         )
         assessment = out["PENTAKSIRAN"]
-        self.assertIn("Pupils write three family sentences", assessment)
-        self.assertIn("Teacher: Check punctuation", assessment)
+        self.assertIn("Use a checklist to assess two family-description sentences", assessment)
+        self.assertIn("Teacher: Use a checklist", assessment)
         self.assertIn("Pupils: Submit two family-description sentences", assessment)
         self.assertNotIn("CikguLaju original assessment", assessment)
         self.assertNotIn("materials/lesson_", assessment)
