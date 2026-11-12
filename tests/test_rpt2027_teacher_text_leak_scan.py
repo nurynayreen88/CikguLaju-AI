@@ -163,6 +163,24 @@ class TeacherTextLeakAuditTests(unittest.TestCase):
         self.assertEqual(public_note(arabic), "")
         self.assertFalse(arabic["source_sp_dskp_text_signoff"])
 
+    def test_music_pdf_editorial_leaks_trigger_pdf_release_guard(self):
+        findings = (
+            ("BT m/s: 10 (draf).", "MUSIC_DRAFT_BOOK_PAGE"),
+            ("Simbol/skor tidak penuh dalam teks; rujuk rajah DSKP PDF hlm 33",
+             "MUSIC_MISSING_NOTATION"),
+            ("Pengukuhan pilihan, bukan projek rasmi; DRAF",
+             "MUSIC_EDITOR_STATUS"),
+            ("BT m/s:. | Audio: Tiada", "EMPTY_BOOK_PAGE"),
+        )
+        for source, expected in findings:
+            with self.subTest(source=source):
+                rules = {r["rule"] for r in find_internal_notes(source)}
+                self.assertIn(expected, rules)
+        self.assertFalse(find_internal_notes(
+            "Standard Pembelajaran 3.3.1 Menulis draf dan menghasilkan "
+            "penulisan imaginatif."
+        ))
+
     def test_music_review_notes_not_printed_but_verified_fields_remain(self):
         from rpt_2027.common.teacher_display_projection import public_note
         examples = (
