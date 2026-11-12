@@ -58,13 +58,13 @@ WEEK_REGEX = re.compile(r"(?<![A-Za-z0-9])M\s*01(?![0-9])", re.I)
 # expression "menulis draf karangan". Scan ALL 56 packaged teacher PDFs,
 # including the 33 baseline PDFs kept unchanged in the Week01 candidate.
 TEACHER_PDF_REVIEW_MARKERS = {
-    "DRAFT_PARENTHESES": re.compile(r"\\(\\s*draf\\s*\\)", re.I),
+    "DRAFT_PARENTHESES": re.compile(r"\(\s*draf\s*\)", re.I),
     "DRAFT_RPT_STATUS": re.compile(
-        r"(?i)\\b(?:RPT|kandungan\\s+buku)\\b[^.\\n]{0,80}\\bmasih\\s+draf\\b"
+        r"(?i)\b(?:RPT|kandungan\s+buku)\b[^.\n]{0,80}\bmasih\s+draf\b"
     ),
     "INTERNAL_STAGING_STATUS": re.compile(
-        r"(?i)\\b(?:HOLD\\s*:|STAGING|JANGAN\\s+MERGE|"
-        r"BUKAN\\s+UNTUK\\s+GURU|BELUM\\s+READY)\\b"
+        r"(?i)(?:\bHOLD\s*:|\bSTAGING\b|\bJANGAN\s+MERGE\b|"
+        r"\bBUKAN\s+UNTUK\s+GURU\b|\bBELUM\s+READY\b)"
     ),
 }
 
@@ -77,7 +77,7 @@ def teacher_pdf_review_markers(pages):
     """
     findings = []
     for page_no, value in enumerate(pages, 1):
-        text = re.sub(r"\\s+", " ", value)
+        text = re.sub(r"\s+", " ", value)
         for kind, pattern in TEACHER_PDF_REVIEW_MARKERS.items():
             matches = list(pattern.finditer(text))
             if matches:
