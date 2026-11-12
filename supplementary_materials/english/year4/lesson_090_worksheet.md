@@ -6,7 +6,7 @@ Name: __________________ Class: __________ Date: __________
 
 ## A. Read and find the information
 **You're invited to our class celebration!**
-Date: Friday, 20 November
+Date: 20 November
 Time: 2:00 p.m.
 Venue: School Hall
 Please reply to the class teacher by Wednesday.
@@ -32,4 +32,4 @@ From: _______________________________________________________________
 - [ ] Spelling and punctuation are checked.
 
 **Teacher assessment:** Clear purpose, suitable language, and complete event details where applicable.  
-**Answer key (A):** 1 Class celebration; 2 Friday, 20 November at 2:00 p.m.; 3 School Hall; 4 Class teacher.
+**Answer key (A):** 1 Class celebration; 2 20 November at 2:00 p.m.; 3 School Hall; 4 Class teacher.
