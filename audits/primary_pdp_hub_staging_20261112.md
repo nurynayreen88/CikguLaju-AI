@@ -36,3 +36,15 @@
 - Ujian tambahan `tests/test_guest_onboarding_20261112.cjs` menjaga halaman umum, sumber bot yang disahkan, login asal, admin/referral tersembunyi dan ketiadaan output palsu.
 - **Belum mengira pelawat anonim atau kadar konversi**. Analisis admin sedia ada mengira akaun/login; jangan membuat anggaran kadar konversi pelawat tanpa event sah yang membolehkan pengiraan.
 - Status ini masih staging. Perlu semakan sebenar Android/mobile, Telegram Login Widget, akaun baharu, akses pautan bot serta kesan pada masa muat laman sebelum release.
+
+## Pilot Bank Lembaran Kerja — empat fail English Tahun 4
+- Sumber tunggal: empat worksheet yang telah didaftarkan dalam modul Telegram `english_supplementary_materials.py`. Lesson **004, 079, 089, 090** sahaja, bukan semua Year 4 atau Tahun 1–6.
+- Tambahan Web `web/english_y4_worksheet_pdf_20261112.py` memproses fail Markdown buatan guru daripada `supplementary_materials/english/year4`, memeriksa path/identiti Lesson dan membina **PDF A4 untuk murid** (satu halaman atau fail closed).
+- PDF murid sengaja mengecualikan nota Purpose, Teacher assessment dan Answer key. Ia dilabel jelas sebagai bahan tambahan ciptaan guru, **bukan halaman buku teks rasmi**.
+- `/api/web/rph/extra-materials` memaparkan worksheet hanya untuk Tahun 4 English dan Lesson sumber tepat. Workbook Telegram dan worksheet tempatan adalah dua sumber bebas; kegagalan satu tidak membenarkan pemalsuan yang lain.
+- `/api/web/rph/english-worksheet` hanya untuk akaun sah melalui `_account`, mengulangi semakan Tahun/Unit/Token, tidak membuat pemotongan 10 kredit RPH.
+- `/api/web/demo/worksheet.pdf` dibuka tanpa login untuk **satu contoh tetap Lesson 004**; ia tidak menerima query, tidak membaca data peribadi, tidak memanggil penjana Telegram/kuota, dan tidak memberi akses awam kepada Worksheet 079/089/090 atau Workbook/Student Book.
+- CTA contoh di halaman guest adalah bahan sebenar (selain panduan tiga langkah yang tetap dilabel bukan RPH sebenar). Kandungan ini dibenarkan untuk diuji dalam staging sahaja sehingga pemilik mengesahkan hak edaran dan keputusan release.
+- Ujian `tests/test_web_english_y4_worksheet_20261112.py` memeriksa halaman PDF sebenar melalui pypdf, tiada skema jawapan, authentication, Lesson/token mismatch, ketiadaan kuota, pengasingan Workbook, dan satu contoh PDF awam.
+- QA yang belum selesai: semak rupa fizikal empat PDF di telefon dan pada cetakan A4, semak pedagogi kandungan berserta SOW sebenar, uji alamat public sample pada Render staging, kemudian buka kepada guru ujian. Jangan isytihar *Bank Lembaran Kerja Tahun 1–6 READY*.
+- Ketika menggabung PR #559 dan PR #568, satukan semula metadata `extra-materials` supaya **Workbook + Student Book + worksheet** kekal bebas. Jangan overwrite salah satu ciri.
