@@ -95,3 +95,12 @@ Ujian read-only pada sumber sebenar telah selesai dan merekodkan:
 - Submenu dimatikan dan dibersihkan setiap kali pengguna menukar pilihan Lesson atau apabila semakan bahan diulang. Pautan silang Lesson, URL luar, URL tidak sepadan, parameter tambahan/pendua, judul kosong dan dummy Matematik/Sains Tahun 1 tidak diterima.
 - Bahan Tahun 1 Matematik/Sains daripada pemulihan bank 4,316 rangka tetap **STAGING_INTERNAL** dan tidak dipaparkan dalam submenu ini selagi belum ada kelulusan manual, padanan Lesson/PdP dan laluan pengedaran sah.
 - Ujian `tests/test_web_worksheet_submenu_20261112.cjs` ditambah dalam workflow utama. **HOLD untuk produksi:** semak integrasi PR #559 Student Book supaya Workbook+Student Book+worksheet tidak berkonflik, sahkan click/Word/PDF sebenar pada Web dan telefon, serta hak edaran bahan asal.
+
+## 12 November — integrasi tiga sumber English Y4 (staging sahaja)
+- Digabung secara *additive* ke PR #568 kontrak Web Student Book dari PR #559, tanpa memadam sumber Workbook Telegram atau empat Worksheet PDF/Word English Tahun 4.
+- `web/native_telegram_extra_materials_20261106.py` kini mengesahkan identiti Student Book `year=4`, Lesson yang tepat serta PDF 1–4 halaman yang sah dan tidak terenkripsi. Render memerlukan `pypdf` sebelum ciri ini dilancar; fail `requirements-web-render.txt` disalin ke staging tetapi konfigurasi Render LIVE tidak diubah.
+- `/api/web/rph/extra-materials` menyenarai tiga sumber secara bebas (Workbook, Student Book, Worksheet PDF/Word). Kegagalan satu tidak menyembunyikan sumber lain. Tiada sumber yang direka apabila metadata tiada.
+- `/api/web/rph/english-student-book` memerlukan sesi sah dan pengesahan Tahun/Subjek/Unit/Lesson; PDF diperoleh terus daripada Telegram private bridge, tidak menggunakan kredit RPH. Param berulang ditolak.
+- UI bahan manual hanya menerima pautan dalaman dengan identiti Year/Unit/Lesson tepat, tidak memindahkan Student Book/Workbook ke submenu Worksheet. PdP Hari Ini menggunakan guard Student Book sedia ada.
+- Ujian berasingan `tests/test_web_english_three_source_merge_20261112.py` dan `.cjs` ditambah ke Actions; semua bergantung pada sumber dummy yang dimock, bukan Telegram/Render LIVE.
+- **HOLD**: PR #558/#567 (dan final PR #559) masih perlu diselaraskan, pemeriksaan hak edar/halaman fizikal dan muat turun HTTPS akaun sebenar belum dibuat. Tiada merge main, tiada deploy, tiada perubahan Supabase/credit/produk.
