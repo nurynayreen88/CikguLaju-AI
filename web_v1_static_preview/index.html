@@ -367,6 +367,17 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 @media(max-width:750px){.admin-stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:370px){.admin-stats-grid{grid-template-columns:minmax(0,1fr)}}
 </style>
+
+<style>
+#view-feedback .teacher-profile-form{max-width:740px}
+#web-feedback-form label{display:block;font-weight:700;color:#174766;margin:13px 0 6px}
+#web-feedback-form select,#web-feedback-form textarea{display:block;width:100%;box-sizing:border-box}
+#web-feedback-own,#web-feedback-admin-list{display:grid;gap:12px;margin:14px 0}
+.web-feedback-card{border:1px solid #d8e6ee;background:#fbfdff;border-radius:12px;padding:13px 16px;overflow-wrap:anywhere}
+.web-feedback-card-top{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center}
+.web-feedback-card-top small,.web-feedback-owner{color:#60788e}
+.web-feedback-text{white-space:pre-wrap;margin:10px 0 0;line-height:1.55}
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -391,6 +402,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     <button type="button" class="sidebar-tab" data-web-view="rpt" aria-controls="view-rpt"><span aria-hidden="true">📅</span> RPT 2027</button>
     <button type="button" class="sidebar-tab" data-web-view="payment" aria-controls="view-payment"><span aria-hidden="true">🏆</span> Rakan Pembangun</button>
     <button type="button" id="web-referral-tab" class="sidebar-tab" data-web-view="referral" aria-controls="view-referral" hidden><span aria-hidden="true">🎁</span> Referral Saya</button>
+    <button type="button" class="sidebar-tab" data-web-view="feedback" aria-controls="view-feedback"><span aria-hidden="true">💬</span> Komen &amp; Cadangan</button>
     <button type="button" id="web-admin-tab" class="sidebar-tab" data-web-view="admin" aria-controls="view-admin" hidden><span aria-hidden="true">📊</span> Analisis Admin</button>
      <button type="button" class="sidebar-tab" data-web-view="guide" aria-controls="view-guide"><span aria-hidden="true">📖</span> Panduan</button>
   </nav>
@@ -568,6 +580,30 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <p class="notice">Akses hanya dibuka selepas admin mengesahkan bayaran. Jika bayaran sudah dibuat tetapi terdapat masalah, jangan bayar sekali lagi—semak status dan hubungi admin.</p>
 <button type="button" id="payment-refresh" class="profile-refresh">🔄 Refresh Status Bayaran</button>
 </section>
+<section id="view-feedback" class="app-view" aria-labelledby="web-feedback-heading" hidden>
+<h2 id="web-feedback-heading">💬 Komen &amp; Cadangan</h2>
+<p>Cadangkan penambahbaikan atau maklumkan masalah RPH, RPT dan Web CikguLaju. Komen dihantar secara peribadi kepada admin, bukan dipaparkan kepada pengguna lain.</p>
+<form id="web-feedback-form" class="teacher-profile-form" autocomplete="off">
+ <h3>Hantar Komen</h3>
+ <label for="web-feedback-category">Jenis komen</label>
+ <select id="web-feedback-category" required>
+  <option value="Umum">Komen umum</option>
+  <option value="Cadangan">Cadangan penambahbaikan</option>
+  <option value="Masalah RPH">Masalah RPH</option>
+  <option value="Masalah RPT">Masalah RPT</option>
+  <option value="Masalah Web">Masalah Web / Login</option>
+ </select>
+ <label for="web-feedback-message">Komen anda</label>
+ <textarea id="web-feedback-message" rows="5" minlength="10" maxlength="1500" required placeholder="Contoh: RPT Sains Tahun 5, tajuk Unit 3 tidak sama dengan buku teks…"></textarea>
+ <p class="notice">10–1,500 aksara. Had 3 komen sejam untuk setiap akaun. Jangan tulis kata laluan atau maklumat sensitif murid.</p>
+ <div class="profile-actions"><button id="web-feedback-submit" type="submit">Hantar Komen</button><span id="web-feedback-status" role="status" aria-live="polite"></span></div>
+</form>
+<section aria-labelledby="web-feedback-history-heading">
+ <h3 id="web-feedback-history-heading">Komen Saya</h3>
+ <button id="web-feedback-refresh" type="button" class="profile-refresh">🔄 Muat Semula</button>
+ <div id="web-feedback-own" aria-live="polite">Buka menu ini untuk melihat komen anda.</div>
+</section>
+</section>
 <section id="view-admin" class="app-view" aria-labelledby="web-admin-heading" hidden>
 <h2 id="web-admin-heading">📊 Analisis Admin</h2>
 <p class="notice">Paparan peribadi untuk admin. Statistik pengguna aktif dikira berdasarkan akaun berbeza yang log masuk ke Web; tiada maklumat individu dipaparkan.</p>
@@ -584,6 +620,12 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <p class="notice" id="web-admin-rph-note">Rekod janaan lama mungkin belum lengkap.</p>
 <p class="admin-stats-caption" id="web-admin-updated"></p>
 <button type="button" id="web-admin-refresh">🔄 Muat Semula Statistik</button>
+<section class="teacher-timetable-section" aria-labelledby="web-feedback-admin-heading">
+ <h3 id="web-feedback-admin-heading">💬 Komen &amp; Cadangan Pengguna</h3>
+ <p class="notice">Komen daripada Web dan Telegram disatukan dalam rekod CikguLaju; hanya admin boleh melihat senarai ini.</p>
+ <button id="web-feedback-admin-refresh" type="button" class="profile-refresh">🔄 Muat Semula Komen</button>
+ <div id="web-feedback-admin-list" aria-live="polite">Buka panel admin untuk melihat komen.</div>
+</section>
 </section>
 <section id="view-guide" class="app-view" aria-labelledby="view-guide-heading" hidden>
 <h2 id="view-guide-heading">Panduan Penggunaan</h2>
@@ -642,7 +684,7 @@ function canGenerateRph(){
   (rphAccessMode==="trial"&&rphTrialRemaining!==null&&rphTrialRemaining>0);
 }
 const webViewButtons=Array.from(document.querySelectorAll("[data-web-view]"));
-const webViews=new Map([["today","view-today"],["rph","view-rph"],["special","view-special"],["rpt","view-rpt"],["account","view-account"],["payment","view-payment"],["referral","view-referral"],["admin","view-admin"],["guide","view-guide"]]);
+const webViews=new Map([["today","view-today"],["rph","view-rph"],["special","view-special"],["rpt","view-rpt"],["account","view-account"],["payment","view-payment"],["referral","view-referral"],["feedback","view-feedback"],["admin","view-admin"],["guide","view-guide"]]);
 /* Only the original curriculum dropdowns and material actions are moved
  * into a timetable card. The "Sediakan RPH" page itself NEVER moves, opens
  * or renders inside RPH Hari Ini. Event listeners and native APIs are reused.
@@ -692,6 +734,8 @@ webViewButtons.forEach(button=>button.addEventListener("click",()=>{
  showWebView(button.dataset.webView);
  if(button.dataset.webView==="rph")void loadTeacherClasses();
  if(button.dataset.webView==="today")window.rphTodayLoad?.();
+ if(button.dataset.webView==="feedback")window.cikgulajuFeedbackLoad?.();
+ if(button.dataset.webView==="admin")window.cikgulajuFeedbackAdminLoad?.();
 }));
 showWebView("today");
 
@@ -1432,6 +1476,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=private-menu-20261111"></script>
 <script src="/assets/admin-usage.js?v=private-menu-20261111"></script>
+<script src="/assets/web-feedback.js?v=comments-20261112"></script>
 <script src="/assets/special-activities.js?v=source-draft-20261106"></script>
 </body>
 </html>

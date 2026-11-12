@@ -26,6 +26,8 @@ from web.special_activities_web import bp as special_activities_bp
 app.register_blueprint(special_activities_bp)
 from web.admin_usage_web import bp as admin_usage_bp
 app.register_blueprint(admin_usage_bp)
+from web.web_feedback_routes import bp as web_feedback_bp
+app.register_blueprint(web_feedback_bp)
 
 
 
@@ -115,6 +117,17 @@ def web_payment_script():
     file = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "web-payment.js"
     return send_file(file, mimetype="application/javascript", max_age=1800,
                      conditional=True)
+
+
+@app.get("/assets/web-feedback.js")
+def web_feedback_script():
+    """Serve only static UI; private comments require cookie-auth endpoints."""
+    from pathlib import Path
+    from flask import send_file
+    source = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "web-feedback.js"
+    response = send_file(source, mimetype="application/javascript")
+    response.headers["Cache-Control"] = "public, max-age=300"
+    return response
 
 
 @app.get("/assets/admin-usage.js")
