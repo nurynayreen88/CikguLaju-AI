@@ -163,6 +163,50 @@ class TeacherTextLeakAuditTests(unittest.TestCase):
         self.assertEqual(public_note(arabic), "")
         self.assertFalse(arabic["source_sp_dskp_text_signoff"])
 
+    def test_music_review_notes_not_printed_but_verified_fields_remain(self):
+        from rpt_2027.common.teacher_display_projection import public_note
+        examples = (
+            ("BT m/s: 20-21 (draf). | Audio: 14–16. | "
+             "Simbol/skor tidak penuh dalam teks; rujuk rajah DSKP PDF hlm 35",
+             ("BT m/s: 20-21", "Audio: 14–16"),
+             ("(draf)", "Simbol/skor tidak penuh", "rujuk rajah")),
+            ("Pengukuhan pilihan, bukan projek rasmi; DRAF | "
+             "Simbol/skor tidak penuh dalam teks; rujuk rajah DSKP PDF hlm 39",
+             (), ("DRAF", "Simbol/skor tidak penuh", "rujuk rajah")),
+        )
+        for original, must_show, must_hide in examples:
+            with self.subTest(original=original):
+                row = {"note": original}
+                rendered = public_note(row)
+                self.assertEqual(row["note"], original)
+                for text in must_show:
+                    self.assertIn(text, rendered)
+                for text in must_hide:
+                    self.assertNotIn(text, rendered)
+
+    def test_music_empty_book_page_never_prints_empty_reference(self):
+        from scripts.build_rpt_2027_remaining_four_subjects_staging import (
+            music_records, csv_rows, ROOT,
+        )
+        from rpt_2027.common.teacher_display_projection import public_note
+        found_empty = False
+        for year in range(2, 7):
+            base = ROOT / "staging/pendidikan_muzik/rpt_rph_2027"
+            raw = csv_rows(base / f"year{year}" /
+                           f"RPT_MUZIK_TAHUN_{year}_2027_DRAF.csv")
+            rows = music_records(year)
+            self.assertEqual(len(raw), len(rows))
+            for original, row in zip(raw, rows):
+                book = (original.get("BT m/s") or
+                        original.get("RPT halaman BT (belum sah)") or
+                        original.get("Buku Teks m/s") or "").strip()
+                if book and book.lower() not in ("-", "—", "tiada", "n/a"):
+                    continue
+                found_empty = True
+                self.assertNotIn("BT m/s:", row["note"])
+                self.assertNotIn("BT m/s:", public_note(row))
+        self.assertTrue(found_empty, "Expected original blank Music book source")
+
     def test_teacher_notes_hide_editor_status_but_preserve_valid_learning_refs(self):
         from rpt_2027.common.teacher_display_projection import public_note
         scenarios = (
