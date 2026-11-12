@@ -111,7 +111,7 @@ def make_pdf(data, path):
                 start = x + 10 + qty * 20
                 pdf.rect(start - 7, cy - 9, 24, 19, stroke=1, fill=0)
 
-        y -= 42
+        y -= 37
         pdf.setFont("Helvetica", 9)
         if item["choices"]:
             x = margin + 22
@@ -121,7 +121,7 @@ def make_pdf(data, path):
                 x += 245
         else:
             pdf.drawString(margin + 22, y, "Lukis bulatan dalam kotak kosong kumpulan B.")
-        y -= 34
+        y -= 29
         pdf.setStrokeColor(colors.Color(.87, .87, .87))
         pdf.line(margin + 20, y + 12, right, y + 12)
 
