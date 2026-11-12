@@ -16,9 +16,9 @@
 
 ## Activity 2 — Main task (25 minutes)
 **Teacher:** Read p.11; answer individual question strips; compare answers; discuss characters and complete optional follow-up. **Pupils:** Read Fay's SB p.11 text, find the detail answering the question strip, compare answers and describe one character orally.
+**Workbook:** Pupils complete Workbook p.6, Activity 1, by reading and correcting a short description of a family member.
 
-## Reinforcement / PBD (10 minutes)
-**Workbook assessment:** Pupils complete Workbook p.6, Activity 1, by reading and correcting a short description of a family member.
+## Assessment / PBD (10 minutes)
 **Teacher:** Assess specific reading details and oral descriptions. **Pupils:** Find two facts in the reading text and describe one character using a complete phrase.
 
 ## Closure (5 minutes)

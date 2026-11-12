@@ -16,9 +16,9 @@
 
 ## Activity 2 — Main task (25 minutes)
 **Teacher:** Review has got/have got with character flashcards, guide SOW worksheet Sections A and B, then model can/can't and Can you? exchanges before guiding worksheet Section C and punctuation review. **Pupils:** Compare I have got with he/she has got, complete SOW worksheet Sections A–C, ask and answer 'Can you...?' and check punctuation.
+**Workbook:** Pupils use Workbook p.9, Activity 5, to say sentences with 'has got' and 'can' from the pictures.
 
-## Reinforcement / PBD (10 minutes)
-**Workbook assessment:** Pupils use Workbook p.9, Activity 5, to say sentences with 'has got' and 'can' from the pictures.
+## Assessment / PBD (10 minutes)
 **Teacher:** Check reading answers and guided sentence punctuation. **Pupils:** Answer two reading questions and write one correctly punctuated 'has got' or 'can' sentence.
 
 ## Closure (5 minutes)
