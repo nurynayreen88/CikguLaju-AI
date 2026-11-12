@@ -31,6 +31,13 @@ RULES = {
     "BM_EDITORIAL_INSTRUCTION": r"(?:Semak\s+judul\s+aktiviti\s+penuh|BA\s+asal\s+belum\s+disemak|jangan\s+dakwa\s+kedua-duanya\s+setara)",
     "INTERNAL_TASMI_STANDARD_FLAG": r"(?:TIADA\s+KOD\s+SP\s+RASMI\s+DALAM\s+RPT\s+SUMBER|BUKAN\s+KOD\s+SK\s+RASMI)",
     "RPT_SOURCE_PHRASE": r"\bRPT\s+sumber\b",
+    # Music source provenance is kept in internal CSV/ledger, never printed
+    # in the RPT teacher PDF. This is distinct from legitimate SK/SP words
+    # such as "menulis draf dan menghasilkan penulisan".
+    "MUSIC_DRAFT_BOOK_PAGE": r"\(\s*draf\s*\)",
+    "MUSIC_MISSING_NOTATION": r"\bSimbol\s*/\s*skor\s+tidak\s+penuh\s+dalam\s+teks\b",
+    "MUSIC_EDITOR_STATUS": r"\bPengukuhan\s+pilihan,\s*bukan\s+projek\s+rasmi\s*;\s*DRAF\b",
+    "EMPTY_BOOK_PAGE": r"\bBT\s+m/s\s*:\s*(?:[.|]|\Z)",
 }
 _COMPILED = tuple((key, re.compile(value, flags=re.IGNORECASE)) for key, value in RULES.items())
 SUFFIXES = frozenset((".pdf", ".html", ".htm", ".csv", ".txt"))
