@@ -83,21 +83,21 @@ def make_pdf(data, target):
     for item in data["student_copy"]["questions"]:
         if y < 114:
             raise ValueError("Six questions cannot fit on one A4 page")
-        pdf.setFont("Helvetica-Bold", 9.5)
+        pdf.setFont("Helvetica-Bold", 10.5)
         pdf.drawString(left, y, str(item["no"]) + ".")
         indent = left+21
-        lines = simpleSplit(_pdf_clean(item["task"]), "Helvetica", 9.2, usable-21)
-        pdf.setFont("Helvetica", 9.2)
+        lines = simpleSplit(_pdf_clean(item["task"]), "Helvetica", 10.5, usable-21)
+        pdf.setFont("Helvetica", 10.5)
         for line in lines:
             pdf.drawString(indent, y, line)
-            y -= 14
-        y -= 7
+            y -= 17
+        y -= 10
         if item["response_type"] == "checkboxes":
             x=indent+3
-            pdf.setFont("Helvetica", 9)
+            pdf.setFont("Helvetica", 10)
             for opt in item["options"]:
                 label = _pdf_clean(opt)
-                size = 19 + pdf.stringWidth(label, "Helvetica", 9) + 15
+                size = 19 + pdf.stringWidth(label, "Helvetica", 10) + 15
                 if x+size > page_w-right:
                     x=indent+3
                     y -= 18
@@ -105,17 +105,17 @@ def make_pdf(data, target):
                 pdf.rect(x, y-2, 8.5, 8.5)
                 pdf.drawString(x+13, y-1, label)
                 x += size
-            y -= 27
+            y -= 32
         else:
             label = _pdf_clean(item.get("response_label", "Jawapan:"))
-            pdf.setFont("Helvetica", 8.7)
+            pdf.setFont("Helvetica", 10)
             pdf.drawString(indent+2, y, label)
             y -= 16
             for _ in range(item["response_lines"]):
                 pdf.setStrokeColor(colors.Color(.45,.45,.45))
                 pdf.line(indent+2, y, page_w-right, y)
-                y -= 18
-            y -= 7
+                y -= 25
+            y -= 10
         if y < 85:
             raise ValueError("Worksheet content overflow")
     pdf.setStrokeColor(colors.Color(.65, .68, .67))
@@ -157,7 +157,7 @@ def make_docx(data, target):
     for item in data["student_copy"]["questions"]:
         para=doc.add_paragraph()
         para.paragraph_format.keep_with_next=True
-        para.paragraph_format.space_before=Pt(4.5)
+        para.paragraph_format.space_before=Pt(6)
         para.paragraph_format.space_after=Pt(2)
         num=para.add_run(str(item["no"]) + ". ")
         num.bold=True
