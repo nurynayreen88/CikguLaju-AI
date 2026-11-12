@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "legacy-repair-math-y1-sk1_1-sp1_1_1-20261112",
+  "visibility": "STAGING_INTERNAL",
+  "approval": "NOT_APPROVED_FOR_PRODUCTION",
+  "publish": false,
+  "origin": {
+    "legacy_source": "CikguLaju_Worksheet_Content.db",
+    "legacy_scope": "Tahun 1 / Matematik / SK 1.1 / SP 1.1.1",
+    "repair_method": "original fully specified exercises rebuilt from generic blueprint; not a recovered finished worksheet"
+  },
+  "curriculum": {
+    "school_level": "sekolah rendah",
+    "year": 1,
+    "subject": "Matematik",
+    "sk": "1.1",
+    "sp": "1.1.1",
+    "focus": "Menyatakan kuantiti melalui perbandingan",
+    "ds_kp_reference": "https://fliphtml5.com/ubcth/jenz/DSKP_KSSR_Semakan_2017_Matematik_Tahun_1/46/",
+    "lesson_token": null,
+    "unit": "Nombor Bulat hingga 100",
+    "textbook_page": null
+  },
+  "student_copy": {
+    "title": "Banding Kuantiti",
+    "subtitle": "Banyak · Sedikit · Sama Banyak",
+    "instruction": "Perhatikan kumpulan A dan B. Bulatkan pilihan yang betul. Gunakan pensel.",
+    "questions": [
+      {
+        "no": 1,
+        "group_a": 5,
+        "group_b": 3,
+        "shape": "bulatan",
+        "task": "Kumpulan manakah lebih banyak?",
+        "choices": [
+          "A lebih banyak",
+          "B lebih banyak"
+        ]
+      },
+      {
+        "no": 2,
+        "group_a": 2,
+        "group_b": 4,
+        "shape": "bulatan",
+        "task": "Kumpulan manakah lebih sedikit?",
+        "choices": [
+          "A lebih sedikit",
+          "B lebih sedikit"
+        ]
+      },
+      {
+        "no": 3,
+        "group_a": 4,
+        "group_b": 4,
+        "shape": "bulatan",
+        "task": "Bandingkan kedua-dua kumpulan.",
+        "choices": [
+          "Sama banyak",
+          "Tidak sama banyak"
+        ]
+      },
+      {
+        "no": 4,
+        "group_a": 3,
+        "group_b": 6,
+        "shape": "bulatan",
+        "task": "Kumpulan manakah lebih banyak?",
+        "choices": [
+          "A lebih banyak",
+          "B lebih banyak"
+        ]
+      },
+      {
+        "no": 5,
+        "group_a": 6,
+        "group_b": 6,
+        "shape": "bulatan",
+        "task": "Adakah kedua-dua kumpulan sama banyak?",
+        "choices": [
+          "Ya",
+          "Tidak"
+        ]
+      },
+      {
+        "no": 6,
+        "group_a": 4,
+        "group_b": 3,
+        "shape": "bulatan",
+        "task": "Lukis satu bulatan lagi dalam kumpulan B supaya sama banyak.",
+        "choices": []
+      }
+    ]
+  },
+  "qa": {
+    "word_document_created": true,
+    "pdf_created": true,
+    "printed_page_count_checked": 1,
+    "layout_inspected": true,
+    "teacher_approved": false,
+    "lesson_mapping_approved": false,
+    "no_quota_changes": true,
+    "no_public_routes": true
+  }
+}
