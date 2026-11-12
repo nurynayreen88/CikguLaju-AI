@@ -35479,7 +35479,7 @@ _Y4_SB_PAGES_V25230 = {
     38:'29',
     40:'30',
     41:'31',
-    43:'27, 28, 29, 30, 31',
+    43:'121',
     45:'32',
     46:'33',
     48:'36',
@@ -35514,7 +35514,7 @@ _Y4_SB_PAGES_V25230 = {
     98:'71',
     100:'73',
     102:'73',
-    103:'73, 74–75',
+    103:'73',
     105:'75',
     107:'66–67',
     108:'76',
@@ -35539,7 +35539,7 @@ _Y4_SB_PAGES_V25230 = {
     146:'103',
     147:'104',
     152:'106–107',
-    157:'110–133',
+    157:'110–111',
     158:'109',
 }
 
@@ -35594,7 +35594,7 @@ APP_VERSION='v25.230-ENGLISH-Y3-Y4-TEXTBOOK-PAGE-MENU'
 # Scope is intentionally limited to English Primary Y3/Y4; all other subjects/years delegate unchanged.
 _EN34_MAIN_SB_V25231 = {
     (3,108): '70',
-    (4,157): '110',
+    (4,157): '110–111',
 }
 _EN34_SUPP_SB_V25231 = {
     (3,108): [('Cut-out Cards – Places', '131')],
@@ -35656,6 +35656,36 @@ def _en_primary_v25232(ss):
     return (_english_primary_year_number_v2517((ss or {}).get('year')) in (1,2,3,4,5,6)
             and str((ss or {}).get('subject') or '').strip().casefold() in ('english','bahasa inggeris'))
 
+def _en4_verified_page_tokens_v20261112(raw):
+    """Fail-closed Year 4 main Student Book page parser (1-4 consecutive pages).
+
+    The old _v25232_nums takes only the first comma-separated token, so
+    "15, 16" silently became page 15. Accept only exact verified Y4 main
+    references and never combine disconnected, duplicate or supplemental pages.
+    Other years keep their existing parsers and downloads unchanged.
+    """
+    if not isinstance(raw, str) or not raw.strip() or len(raw) > 70:
+        return []
+    pages = []
+    for part in raw.split(','):
+        match = _re_v25232.fullmatch(
+            r'\s*([1-9]\d{0,2})(?:\s*[–-]\s*([1-9]\d{0,2}))?\s*',
+            part,
+        )
+        if match is None:
+            return []
+        first = int(match.group(1))
+        last = int(match.group(2) or first)
+        if first > 177 or last > 177 or last < first or last - first > 3:
+            return []
+        pages.extend(range(first, last + 1))
+        if len(pages) > 4:
+            return []
+    if not pages or pages != list(range(pages[0], pages[-1] + 1)):
+        return []
+    return pages
+
+
 def _v25232_nums(raw):
     """Extract printed page numbers/ranges only; activity numbers are ignored by using the first page token."""
     s=str(raw or '').replace('–','-')
@@ -35671,7 +35701,17 @@ def _en_book_pages_v25232(ss,key):
         # Y3/Y4: use the final lesson-menu main-page resolver so supplementary pages
         # (e.g. Y3 L108 p.131 cut-out cards) are not mixed into the main SB download.
         r=(ss or {}).get('_en98_selected_staging_row') or {}
-        if y in (3,4) and r:
+        if y==4:
+            # A selected Y4 SOW Lesson must never fall back to stale pages
+            # from the browser / Telegram state when its source is missing.
+            if not isinstance(r,dict) or not r:
+                return []
+            try:
+                raw=_en34_verified_sb_pages_v25230(r,y)
+            except Exception:
+                return []
+            return _en4_verified_page_tokens_v20261112(raw)
+        if y==3 and r:
             try: raw=_en34_verified_sb_pages_v25230(r,y)
             except Exception: raw=''
             nums=_v25232_nums('m/s '+str(raw)) if raw else []
