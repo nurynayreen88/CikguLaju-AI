@@ -25,6 +25,8 @@ jobs:
         run: |
           python -m py_compile web/web_feedback_routes.py tests/test_web_private_feedback_20261112.py tools/run_web_production.py
           python -m unittest -v tests.test_web_private_feedback_20261112
+      - name: Check browser script JavaScript syntax
+        run: node --check web_v1_static_preview/web-feedback.js
       - name: Ensure no new public Supabase credentials or service-role script
         run: |
           ! grep -E '(SUPABASE_SECRET_KEY|SUPABASE_SERVICE_ROLE|apikey:|Bearer )' web_v1_static_preview/web-feedback.js
