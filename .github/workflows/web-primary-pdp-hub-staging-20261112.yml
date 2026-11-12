@@ -5,6 +5,7 @@ on:
       - 'web_v1_static_preview/index.html'
       - 'web_v1_static_preview/rph-today.js'
       - 'tests/test_primary_pdp_hub_staging_20261112.cjs'
+      - 'tests/test_web_worksheet_submenu_20261112.cjs'
       - 'tests/test_guest_onboarding_20261112.cjs'
       - 'tests/test_web_english_y4_worksheet_20261112.py'
       - 'web/english_y4_worksheet_pdf_20261112.py'
@@ -44,6 +45,8 @@ jobs:
         run: node --check web_v1_static_preview/rph-today.js
       - name: Test verified materials and unchanged menu/credit boundaries
         run: node tests/test_primary_pdp_hub_staging_20261112.cjs
+      - name: Test Lesson-matched worksheet submenu, exact Year/Unit/Lesson and hidden dummy
+        run: node tests/test_web_worksheet_submenu_20261112.cjs
       - name: Test public guest onboarding and trusted Telegram link
         run: node tests/test_guest_onboarding_20261112.cjs
       - name: Regression - existing selection and timetable flow
