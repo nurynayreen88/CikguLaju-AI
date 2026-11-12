@@ -66,6 +66,12 @@ TEACHER_PDF_REVIEW_MARKERS = {
         r"(?i)(?:\bHOLD\s*:|\bSTAGING\b|\bJANGAN\s+MERGE\b|"
         r"\bBUKAN\s+UNTUK\s+GURU\b|\bBELUM\s+READY\b)"
     ),
+    "MISSING_MUSIC_NOTATION": re.compile(
+        r"(?i)\bSimbol\s*/\s*skor\s+tidak\s+penuh\s+dalam\s+teks\b"
+    ),
+    "EDITOR_SOURCE_NUMBERING_NOTE": re.compile(
+        r"(?i)\bDSKP\s+T[2-6]\s+cetak\s+SK\b[^.]{0,150}\bsusun\s+RPT\b"
+    ),
 }
 
 
