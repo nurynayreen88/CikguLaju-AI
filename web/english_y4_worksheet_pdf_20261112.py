@@ -12,6 +12,12 @@ from english_supplementary_materials import available, ROOT, YEAR4
 
 MAX_SOURCE_BYTES = 16000
 ALLOWED_LESSONS = frozenset((4, 79, 89, 90))
+# Only four reviewed pilot worksheets exist. If a future edit moves teacher
+# notes into the pupil material or drops an activity, fail closed instead of
+# returning a partial PDF/DOCX download.
+_EXPECTED_PUPIL_SECTIONS = {4: "ABCD", 79: "ABCD", 89: "ABC", 90: "ABC"}
+_SECTION_HEADING = re.compile(r"^## ([A-Z])\.\s+\S")
+
 # Teacher metadata is a trailing section, not just a single line.
 # Stop at its first heading to block accidental multi-line answer key leaks.
 _TEACHER_ONLY = re.compile(
@@ -43,6 +49,8 @@ def _source(year, lesson):
     match = _DOC_TITLE.fullmatch(header)
     if not match or int(match.group(1)) != lesson:
         return None
+    if not _has_complete_pupil_sections(raw, lesson):
+        return None
     return rows[0]["title"], raw
 
 
@@ -71,6 +79,17 @@ def _student_lines(raw):
             line = "- " + line[2:]
         lines.append(line)
     return lines
+
+
+def _has_complete_pupil_sections(raw, lesson):
+    # The teacher footer may have many lines. Never mistake a truncated
+    # worksheet (caused by an early teacher heading) for a valid pupil copy.
+    headings = []
+    for line in _student_lines(raw):
+        matched = _SECTION_HEADING.match(line)
+        if matched:
+            headings.append(matched.group(1))
+    return "".join(headings) == _EXPECTED_PUPIL_SECTIONS.get(lesson)
 
 
 def _pdf_text(s):
