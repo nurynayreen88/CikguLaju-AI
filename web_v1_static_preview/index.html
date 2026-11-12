@@ -1192,6 +1192,24 @@ const materialPanel=document.getElementById("materials-panel");
 const worksheetSubmenu=document.getElementById("worksheet-submenu");
 const worksheetMaterialList=document.getElementById("worksheet-materials-list");
 let materialsRequestKey="";
+function verifiedBookMaterialLink(item, selectedYear, selectedSubject, selectedUnit, selectedLesson){
+ // Workbook Y2-Y4 and Student Book Y4 only: source-bound private route, never
+ // an arbitrary URL/other Lesson/duplicate query-key selected by a response.
+ if(!item||typeof item.url!=="string"||typeof item.title!=="string"||
+    !item.title.trim()||selectedSubject!=="ENGLISH"||
+    ![2,3,4].includes(Number(selectedYear)))return false;
+ const isWorkbook=item.type==="workbook";
+ const route=isWorkbook?"/api/web/rph/english-workbook":
+             item.type==="student_book"&&Number(selectedYear)===4?
+             "/api/web/rph/english-student-book":null;
+ if(!route||!item.url.startsWith(route+"?"))return false;
+ const query=new URLSearchParams(item.url.slice(route.length+1));
+ if(Array.from(query.keys()).sort().join(",")!=="lesson,subject,unit,year")return false;
+ return query.get("year")===String(selectedYear)&&
+        query.get("subject")===selectedSubject&&
+        query.get("unit")===selectedUnit&&
+        query.get("lesson")===selectedLesson;
+}
 function verifiedWorksheetMaterialLink(item, selectedYear, selectedSubject, selectedUnit, selectedLesson){
  // Accept only the exact authenticated endpoint and selected Lesson; never a
  // cross-Lesson, external or unapproved dummy link in the teacher's menu.
@@ -1286,15 +1304,17 @@ async function populateMaterialList(){
    extraNotice=String(data.note||"");
    for(const item of data.items){
     if(!item||typeof item.url!=="string"||typeof item.title!=="string")continue;
-    const ownWorkbook=item.type==="workbook"&&
-        item.url.startsWith("/api/web/rph/english-workbook?");
+    const ownWorkbook=item.type==="workbook"&&verifiedBookMaterialLink(item,
+        year.value,subject.value,currentLessonSourceUnit(),lesson.value);
+    const ownStudentBook=item.type==="student_book"&&verifiedBookMaterialLink(item,
+        year.value,subject.value,currentLessonSourceUnit(),lesson.value);
     const ownWorksheet=verifiedWorksheetMaterialLink(item,year.value,subject.value,
         currentLessonSourceUnit(),lesson.value)&&item.type==="worksheet";
     const ownWorksheetWord=verifiedWorksheetMaterialLink(item,year.value,subject.value,
         currentLessonSourceUnit(),lesson.value)&&item.type==="worksheet_word";
     const externalMusic=item.type==="audio"&&
         /^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]{10,100}\/view\?usp=drivesdk$/.test(item.url);
-    if(!ownWorkbook&&!ownWorksheet&&!ownWorksheetWord&&!externalMusic)continue;
+    if(!ownWorkbook&&!ownStudentBook&&!ownWorksheet&&!ownWorksheetWord&&!externalMusic)continue;
     const target=(ownWorksheet||ownWorksheetWord)?worksheetMaterialList:list;
     target.append(materialRow(item.title,{ready:true,url:item.url,
       actionLabel:externalMusic?"Buka Audio Sumber":"Download"}));
