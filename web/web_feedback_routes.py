@@ -161,16 +161,39 @@ def admin_feedback():
         return error
     if uid not in allowed_admin_ids():
         return jsonify({"error": "Akses admin diperlukan"}), 403
-    if request.args:
-        return jsonify({"error": "Parameter tidak dibenarkan"}), 400
+    # Only a status from our fixed list and a keyset cursor may filter admin rows.
+    # No SQL fragments, usernames, user IDs, offsets or arbitrary query keys.
+    if set(request.args) - {"status", "before"}:
+        return jsonify({"error": "Parameter penapis tidak sah"}), 400
+    if any(len(request.args.getlist(key)) != 1 for key in request.args):
+        return jsonify({"error": "Parameter penapis berganda"}), 400
+    status = request.args.get("status", "semua")
+    if status not in ("semua",) + STATUSES:
+        return jsonify({"error": "Status komen tidak sah"}), 400
+    cursor = request.args.get("before")
+    if cursor is not None:
+        if (not isinstance(cursor, str) or
+            not re.fullmatch(r"[1-9][0-9]{0,18}", cursor) or
+            int(cursor) > 9223372036854775807):
+            return jsonify({"error": "Penanda halaman tidak sah"}), 400
     try:
-        rows = _db(conf, "GET", {
+        params = {
             "select": "id,chat_id,category,feedback_text,created_at,status",
-            "order": "id.desc", "limit": str(MAX_ROWS),
-        })
-        return jsonify({"items": [_visible(row, admin=True) for row in rows],
-                        "limited": len(rows) == MAX_ROWS})
-    except FeedbackUnavailable:
+            "order": "id.desc", "limit": str(MAX_ROWS + 1),
+        }
+        if status != "semua":
+            params["status"] = "eq." + status
+        if cursor is not None:
+            params["id"] = "lt." + cursor
+        rows = _db(conf, "GET", params)
+        if len(rows) > MAX_ROWS + 1:
+            raise FeedbackUnavailable("Feedback page exceeds bounded limit")
+        more = len(rows) > MAX_ROWS
+        page = rows[:MAX_ROWS]
+        return jsonify({"items": [_visible(row, admin=True) for row in page],
+                        "limited": more, "has_more": more,
+                        "next_before": page[-1]["id"] if more and page else None})
+    except (FeedbackUnavailable, KeyError, TypeError, ValueError):
         current_app.logger.exception("Private admin feedback list unavailable")
         return jsonify({"error": "Senarai komen admin belum tersedia"}), 503
 

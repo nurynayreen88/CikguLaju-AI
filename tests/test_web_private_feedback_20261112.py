@@ -112,7 +112,61 @@ class PrivateWebFeedbackTests(unittest.TestCase):
         result = self.client.get("/api/web/admin/feedback")
         self.assertEqual(result.status_code, 200)
         self.assertEqual(result.json["items"][0]["chat_id"], "7777")
-        self.assertEqual(db.call_args.args[2]["limit"], "50")
+        self.assertEqual(db.call_args.args[2]["limit"], "51")
+        self.assertFalse(result.json["has_more"])
+        self.assertIsNone(result.json["next_before"])
+
+    @patch("web.web_feedback_routes._auth")
+    @patch("web.web_feedback_routes.allowed_admin_ids")
+    @patch("web.web_feedback_routes._db")
+    def test_admin_pagination_never_loses_records_beyond_first_50(self, db, admins, auth):
+        auth.return_value = self.conf, 25, None
+        admins.return_value = {25}
+        def record(n):
+            return {"id": n, "chat_id": "7777", "feedback_text": "Komen pengguna",
+                    "category": "Cadangan", "status": "baru",
+                    "created_at": "2026-11-12T02:00:00Z"}
+        db.return_value = [record(n) for n in range(1000, 949, -1)]
+        first = self.client.get("/api/web/admin/feedback?status=baru")
+        self.assertEqual(first.status_code, 200)
+        self.assertEqual(len(first.json["items"]), 50)
+        self.assertTrue(first.json["has_more"])
+        self.assertEqual(first.json["next_before"], 951)
+        self.assertEqual(db.call_args.args[2]["status"], "eq.baru")
+        self.assertEqual(db.call_args.args[2]["limit"], "51")
+        db.return_value = [record(950), record(949)]
+        later = self.client.get("/api/web/admin/feedback?status=baru&before=951")
+        self.assertEqual(later.status_code, 200)
+        self.assertEqual([x["id"] for x in later.json["items"]], [950, 949])
+        self.assertFalse(later.json["has_more"])
+        self.assertIsNone(later.json["next_before"])
+        self.assertEqual(db.call_args.args[2]["id"], "lt.951")
+
+    @patch("web.web_feedback_routes._auth")
+    @patch("web.web_feedback_routes.allowed_admin_ids")
+    @patch("web.web_feedback_routes._db")
+    def test_admin_filter_and_cursor_allowlist_rejects_injection(self, db, admins, auth):
+        auth.return_value = self.conf, 25, None
+        admins.return_value = {25}
+        for query in (
+            "?status=padam", "?before=0", "?before=-5",
+            "?before=15%3BDELETE", "?before=9223372036854775808",
+            "?status=baru&status=selesai", "?chat_id=7777",
+            "?offset=500", "?before=1&before=2",
+        ):
+            with self.subTest(query=query):
+                self.assertEqual(self.client.get("/api/web/admin/feedback" + query).status_code, 400)
+        db.assert_not_called()
+
+    @patch("web.web_feedback_routes._auth")
+    @patch("web.web_feedback_routes.allowed_admin_ids")
+    @patch("web.web_feedback_routes._db")
+    def test_teacher_cannot_filter_other_users_comments(self, db, admins, auth):
+        auth.return_value = self.conf, 25, None
+        admins.return_value = {100}
+        result = self.client.get("/api/web/admin/feedback?status=baru&before=2")
+        self.assertEqual(result.status_code, 403)
+        db.assert_not_called()
 
     @patch("web.web_feedback_routes._auth")
     @patch("web.web_feedback_routes.allowed_admin_ids")
@@ -221,6 +275,10 @@ class PrivateWebFeedbackTests(unittest.TestCase):
         self.assertIn("window.cikgulajuFeedbackLoad", js)
         self.assertIn("window.cikgulajuFeedbackAdminLoad", js)
         self.assertIn("Simpan Status", js)
+        self.assertIn("web-feedback-admin-more", html)
+        self.assertIn("web-feedback-admin-filter", html)
+        self.assertIn("URLSearchParams", js)
+        self.assertIn("adminNextBefore", js)
         self.assertIn('method:"PATCH"', js)
         self.assertIn('credentials:"same-origin"', js)
         self.assertIn("app.register_blueprint(web_feedback_bp)", wsgi)

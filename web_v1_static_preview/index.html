@@ -623,8 +623,16 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <section class="teacher-timetable-section" aria-labelledby="web-feedback-admin-heading">
  <h3 id="web-feedback-admin-heading">💬 Komen &amp; Cadangan Pengguna</h3>
  <p class="notice">Komen daripada Web dan Telegram disatukan dalam rekod CikguLaju; hanya admin boleh melihat senarai ini.</p>
+ <label for="web-feedback-admin-filter">Paparkan komen</label>
+ <select id="web-feedback-admin-filter" aria-label="Tapis komen mengikut status">
+  <option value="semua">Semua status</option>
+  <option value="baru">Baharu</option>
+  <option value="dibaca">Dibaca</option>
+  <option value="selesai">Selesai</option>
+ </select>
  <button id="web-feedback-admin-refresh" type="button" class="profile-refresh">🔄 Muat Semula Komen</button>
  <div id="web-feedback-admin-list" aria-live="polite">Buka panel admin untuk melihat komen.</div>
+ <button id="web-feedback-admin-more" type="button" class="profile-refresh" hidden>Muat Komen Terdahulu</button>
 </section>
 </section>
 <section id="view-guide" class="app-view" aria-labelledby="view-guide-heading" hidden>
@@ -1476,7 +1484,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=private-menu-20261111"></script>
 <script src="/assets/admin-usage.js?v=private-menu-20261111"></script>
-<script src="/assets/web-feedback.js?v=comments-20261112"></script>
+<script src="/assets/web-feedback.js?v=comments-inbox-20261112"></script>
 <script src="/assets/special-activities.js?v=source-draft-20261106"></script>
 </body>
 </html>
