@@ -1,4 +1,4 @@
-"""Build a REVIEW-ONLY 56-PDF Web RPT package with 23 Week-01 fixes.
+"""Build a REVIEW-ONLY 56-PDF RPT package with 23 Week01 + 5 Music fixes.
 
 Never writes to the Web's published PDF catalog, manifest, or database.
 Caller must pass a separate checkout of the existing Web production branch.
@@ -45,9 +45,13 @@ SUBJECT_LABELS = {
     "bahasa_arab": "BAHASA ARAB",
     "rbt": "REKA BENTUK DAN TEKNOLOGI",
     "sains": "SAINS",
+    "muzik": "PENDIDIKAN MUZIK",
 }
 TARGET = {f"{sub}:{y}" for sub, years in SUBJECT_YEARS.items() for y in years}
 assert len(TARGET) == 23
+MUSIC_TARGET = {f"muzik:{year}" for year in range(2, 7)}
+REPLACEMENT_TARGET = TARGET | MUSIC_TARGET
+assert len(MUSIC_TARGET) == 5 and len(REPLACEMENT_TARGET) == 28
 COVER_KEYS = ("RANCANGAN PENGAJARAN TAHUNAN 2027",
               "LOGO SEKOLAH", "NAMA SEKOLAH", "NAMA GURU")
 EXPECTED_FIRST = {"bahasa_melayu": 3, "pendidikan_islam": 2,
@@ -56,7 +60,7 @@ WEEK_REGEX = re.compile(r"(?<![A-Za-z0-9])M\s*01(?![0-9])", re.I)
 
 # These are **printed developer qualifiers**, not the legitimate curricular
 # expression "menulis draf karangan". Scan ALL 56 packaged teacher PDFs,
-# including the 33 baseline PDFs kept unchanged in the Week01 candidate.
+# including all baseline copies preserved in the 56-file candidate.
 TEACHER_PDF_REVIEW_MARKERS = {
     "DRAFT_PARENTHESES": re.compile(r"\(\s*draf\s*\)", re.I),
     "DRAFT_RPT_STATUS": re.compile(
@@ -160,15 +164,15 @@ def build_preview_files(destination: Path):
              for sub, year, _, path in remaining + standard}
     paths.update({f"sains:{year}": Path(path)
                   for year, count, approved, path in science})
-    if set(paths) & TARGET != TARGET:
-        raise ValueError("Missing target Week01 PDF")
+    if set(paths) & REPLACEMENT_TARGET != REPLACEMENT_TARGET:
+        raise ValueError("Missing proposed Week01/Music PDF")
     return paths
 
 
 def candidate_package(web_root: Path, output: Path):
     baseline = Path(web_root) / "rpt_2027" / "web_2027_pdfs"
     original = json.loads((baseline / "manifest.json").read_text("utf-8"))
-    if len(original["files"]) != 56 or set(TARGET) - set(original["files"]):
+    if len(original["files"]) != 56 or REPLACEMENT_TARGET - set(original["files"]):
         raise ValueError("Unexpected published RPT PDF manifest")
     if original.get("academic_final_approved") is not False:
         raise ValueError("Never promote unapproved files under an approved manifest")
@@ -183,7 +187,7 @@ def candidate_package(web_root: Path, output: Path):
         package = Path(output) / "rpt_2027" / "web_2027_pdfs"
         package.mkdir(parents=True, exist_ok=True)
         candidate = deepcopy(original)
-        candidate["source"] = "Week01 staging candidate, 23 replacements, original other 33 unchanged"
+        candidate["source"] = "Week01+Music staging: 23 Week01 PDFs, 5 Music clean PDFs, 28 original PDFs retained"
         candidate["academic_final_approved"] = False
         # Source Web catalog may expose DRAFT PDFs. This independent package
         # is not approved and must NEVER inherit the live-catalog-ready flag.
@@ -199,7 +203,7 @@ def candidate_package(web_root: Path, output: Path):
                 raise ValueError(f"{identity}: Web baseline SHA/bytes invalid")
             target = package / src["path"]
             target.parent.mkdir(parents=True, exist_ok=True)
-            if identity not in TARGET:
+            if identity not in REPLACEMENT_TARGET:
                 shutil.copyfile(old, target)
                 entry = dict(src)
             else:
@@ -229,7 +233,7 @@ def candidate_package(web_root: Path, output: Path):
                     if found:
                         snippet = teaching[max(0, found.start()-65):found.end()+65]
                         raise ValueError(f"{identity}: internal author status in teacher PDF: {snippet!r}")
-                    if sub not in ("pendidikan_islam", "bahasa_arab") and not WEEK_REGEX.search(teaching):
+                    if identity in TARGET and sub not in ("pendidikan_islam", "bahasa_arab") and not WEEK_REGEX.search(teaching):
                         raise ValueError(f"{identity}: Week01 not printed")
                     if sub in ("bahasa_arab", "pendidikan_islam") and not re.search(r"2027", teaching):
                         raise ValueError(f"{identity}: RTL table or dates missing")
@@ -249,12 +253,15 @@ def candidate_package(web_root: Path, output: Path):
                 if len(doc) != entry["pages"]:
                     raise ValueError(f"{identity}: packaged PDF page count mismatch")
             observation = {"subject_year": identity,
-                           "changed": identity in TARGET,
+                           "changed": identity in REPLACEMENT_TARGET,
+                           "change_reason": (
+                               "week01_allocation" if identity in TARGET else
+                               "music_teacher_text_cleanup" if identity in MUSIC_TARGET else
+                               "original_bytes_retained"),
                            "old_pages": src["pages"], "new_pages": entry["pages"],
                            "old_sha256": src["sha256"], "new_sha256": entry["sha256"]}
-            # Scan *all* actual PDF pages including the 33 baseline copies.
-            # The Week01 target check above alone cannot catch an old Music
-            # PDF that still prints "(draf)" dozens of times.
+            # Scan all 56 teacher-facing PDF bodies, including retained originals.
+            # A clean layout is required; this NEVER grants academic signoff.
             with fitz.open(target) as check:
                 printed = [page.get_text("text") or "" for page in list(check)[1:]]
             leaks = teacher_pdf_review_markers(printed)
@@ -262,6 +269,15 @@ def candidate_package(web_root: Path, output: Path):
                 item["count"] for item in leaks)
             if leaks:
                 observation["teacher_pdf_review_markers"] = leaks[:10]
+                raise ValueError(f"{identity}: printed developer notes remain in candidate PDF")
+            if identity in MUSIC_TARGET:
+                with fitz.open(old) as baseline_pdf:
+                    old_printed = [page.get_text("text") or "" for page in list(baseline_pdf)[1:]]
+                old_leaks = teacher_pdf_review_markers(old_printed)
+                observation["baseline_music_editorial_note_count"] = sum(
+                    item["count"] for item in old_leaks)
+                if not old_leaks:
+                    raise ValueError(f"{identity}: expected old Music editor notes absent, inspect source drift")
             if identity in TARGET:
                 observation["week01_sourced_pdp"] = first[identity]
                 old_text = pdf_text(old)
@@ -270,18 +286,26 @@ def candidate_package(web_root: Path, output: Path):
                     SequenceMatcher(None, old_text.splitlines(), new_text.splitlines(), autojunk=False).ratio(), 4)
                 observation["week01_extracted_ltr"] = bool(WEEK_REGEX.search(new_text))
             observations.append(observation)
-        if sum(item["changed"] for item in observations) != 23:
-            raise ValueError("Only exactly 23 Week01 PDFs may change")
+        if sum(item["changed"] for item in observations) != 28:
+            raise ValueError("Only exactly 23 Week01 + 5 Music PDFs may change")
         if any(item["old_sha256"] != item["new_sha256"]
                for item in observations if not item["changed"]):
-            raise ValueError("One of the other 33 published PDF bytes changed")
+            raise ValueError("One of the other 28 unchanged PDF bytes changed")
         candidate["pages"] = sum(e["pages"] for e in candidate["files"].values())
         leaked = [r for r in observations if r["teacher_pdf_review_marker_count"]]
+        music_before = {r["subject_year"]: r["baseline_music_editorial_note_count"]
+                        for r in observations if r["subject_year"] in MUSIC_TARGET}
+        if set(music_before) != MUSIC_TARGET or any(n <= 0 for n in music_before.values()):
+            raise ValueError("All five Music legacy PDFs must have proven notes to remove")
         candidate["printed_internal_note_finding_count"] = sum(
             r["teacher_pdf_review_marker_count"] for r in leaked)
         candidate["printed_internal_note_affected_files"] = [
             r["subject_year"] for r in leaked]
         candidate["teacher_release_blocked"] = True
+        candidate["music_legacy_editorial_notes_removed"] = sum(music_before.values())
+        candidate["music_teacher_note_affected_source_files"] = list(sorted(MUSIC_TARGET))
+        candidate["candidate_replaced_files"] = 28
+        candidate["candidate_unchanged_files"] = 28
         (package / "manifest.json").write_text(
             json.dumps(candidate, ensure_ascii=False, indent=2) + "\n", "utf-8")
         report = {
@@ -295,16 +319,20 @@ def candidate_package(web_root: Path, output: Path):
                 r["subject_year"] for r in leaked],
             "printed_internal_note_finding_count": sum(
                 r["teacher_pdf_review_marker_count"] for r in leaked),
+            "music_legacy_editorial_notes_removed": sum(music_before.values()),
+            "music_legacy_editorial_counts": music_before,
             "total": 56,
             "target_week01_fixes": 23,
-            "unchanged": 33,
+            "target_music_teacher_pdf_fixes": 5,
+            "changed": 28,
+            "unchanged": 28,
             "source_week01_counts": first,
             "files": observations,
         }
         (Path(output) / "week01_candidate_review.json").write_text(
             json.dumps(report, ensure_ascii=False, indent=2) + "\n", "utf-8")
         print("WEEK01_CANDIDATE_PACKAGE_56", json.dumps(
-            {"changed": 23, "unchanged": 33,
+            {"changed": 28, "unchanged": 28,
              "total_pages": candidate["pages"],
              "week01_counts": first}, ensure_ascii=False, sort_keys=True),
             flush=True)
