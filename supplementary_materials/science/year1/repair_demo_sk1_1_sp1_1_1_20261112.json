@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "id": "legacy-repair-science-y1-sk1_1-sp1_1_1-20261112",
+  "visibility": "STAGING_INTERNAL",
+  "approval": "NOT_APPROVED_FOR_PRODUCTION",
+  "publish": false,
+  "origin": {
+    "legacy_source": "CikguLaju_Worksheet_Content.db",
+    "legacy_scope": "Tahun 1 / Sains / SK 1.1 / SP 1.1.1",
+    "repair_method": "Enam soalan pemerhatian lengkap ditulis baharu berdasarkan rangka generik; bukan worksheet siap yang dipetik daripada database lama."
+  },
+  "curriculum": {
+    "school_level": "sekolah rendah",
+    "year": 1,
+    "subject": "Sains",
+    "sk": "1.1",
+    "sp": "1.1.1",
+    "focus": "Memerhati menggunakan deria yang sesuai",
+    "unit": "Kemahiran Saintifik",
+    "ds_kp_reference": "https://fliphtml5.com/sloio/DSKP-KSSR-SAINS-TAHUN-1/DSKP_KSSR_SAINS_TAHUN_1/40/",
+    "lesson_token": null,
+    "textbook_page": null,
+    "verify_against_current_rpt": true
+  },
+  "student_copy": {
+    "title": "Saya Memerhati",
+    "subtitle": "Gunakan mata, sentuhan dan telinga",
+    "instruction": "Ikut arahan guru. Perhatikan bahan yang disediakan. Tulis atau tandakan jawapan berdasarkan pemerhatian sendiri.",
+    "materials": [
+      "pensel sendiri",
+      "pemadam sendiri",
+      "sehelai kain bersih",
+      "sudu plastik bersih",
+      "meja kelas"
+    ],
+    "safety": "Sentuh bahan yang dibenarkan guru sahaja. Jangan merasa bahan yang tidak dikenal pasti.",
+    "questions": [
+      {
+        "no": 1,
+        "task": "Lihat pensel kamu. Apakah warna pensel itu?",
+        "response_type": "short_text",
+        "response_label": "Warna pensel:",
+        "response_lines": 1
+      },
+      {
+        "no": 2,
+        "task": "Lihat pemadam kamu. Pilih bentuk yang paling hampir dengan bentuk pemadam itu.",
+        "response_type": "checkboxes",
+        "options": [
+          "Segi empat",
+          "Bulat",
+          "Lain-lain: __________"
+        ],
+        "response_lines": 0
+      },
+      {
+        "no": 3,
+        "task": "Sentuh kain bersih yang disediakan oleh guru. Bagaimanakah permukaannya?",
+        "response_type": "checkboxes",
+        "options": [
+          "Lembut",
+          "Kasar",
+          "Lain-lain: __________"
+        ],
+        "response_lines": 0
+      },
+      {
+        "no": 4,
+        "task": "Sentuh sudu plastik yang bersih. Apakah yang kamu rasa pada permukaannya?",
+        "response_type": "checkboxes",
+        "options": [
+          "Licin",
+          "Kasar",
+          "Lain-lain: __________"
+        ],
+        "response_lines": 0
+      },
+      {
+        "no": 5,
+        "task": "Dengar bunyi apabila guru mengetuk meja satu kali. Deria manakah digunakan untuk mendengar bunyi itu?",
+        "response_type": "checkboxes",
+        "options": [
+          "Telinga",
+          "Mata",
+          "Lidah"
+        ],
+        "response_lines": 0
+      },
+      {
+        "no": 6,
+        "task": "Lihat pensel dan pemadam kamu. Tulis satu perbezaan yang dapat kamu perhatikan.",
+        "response_type": "long_text",
+        "response_label": "Perbezaan yang saya lihat:",
+        "response_lines": 2
+      }
+    ]
+  },
+  "teacher_only": {
+    "preparation": "Sediakan kain dan sudu plastik bersih. Pastikan semua objek selamat disentuh. Minta murid menulis mengikut ciri bahan yang benar-benar diberikan; jangan anggap warna, bentuk atau tekstur sentiasa sama.",
+    "assessment": "Murid dapat memilih deria yang sesuai dan melaporkan sekurang-kurangnya tiga pemerhatian sebenar.",
+    "answer_policy": "Jawapan Q1–Q4 dan Q6 bergantung kepada objek. Q5: telinga. Jangan cetak nota ini dalam salinan murid."
+  },
+  "qa": {
+    "pdf_created": false,
+    "word_document_created": false,
+    "visual_inspected": false,
+    "teacher_approved": false,
+    "lesson_mapping_approved": false,
+    "no_public_routes": true,
+    "no_quota_changes": true,
+    "rights": "teacher-authored-original"
+  }
+}
