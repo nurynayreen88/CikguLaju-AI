@@ -143,7 +143,18 @@ def _student_book_material(runtime, year: int, lesson: int, *, root=ROOT):
             return None
         source_row = matched[0]
         printed = resolver(source_row, 4)
-        pages = _verified_y4_student_main_pages(printed)
+        # Primary Year 4 SK Scheme of Work, Lesson 43 / Phonics 3,
+        # specifies Student Book p.121 (source p.133), not the legacy
+        # five-page Unit 3 sweep p.27-31. Correct only this exact,
+        # demonstrably mismapped legacy value; other lessons fail closed.
+        # https://online.anyflip.com/aecw/prtt/files/basic-html/page133.html
+        if lesson == 43 and re.fullmatch(
+            r"27\s*,\s*28\s*,\s*29\s*,\s*30\s*,\s*31",
+            str(printed).strip(),
+        ):
+            pages = [121]
+        else:
+            pages = _verified_y4_student_main_pages(printed)
         # A main SB activity should never result in the entire book or a
         # supplementary cut-out being exposed as a Lesson download.
         if (not isinstance(pages, list) or not 1 <= len(pages) <= 4
