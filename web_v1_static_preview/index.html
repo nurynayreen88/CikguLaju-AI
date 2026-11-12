@@ -1257,9 +1257,11 @@ async function populateMaterialList(){
         item.url.startsWith("/api/web/rph/english-workbook?");
     const ownWorksheet=item.type==="worksheet"&&subject.value==="ENGLISH"&&
         Number(year.value)===4&&item.url.startsWith("/api/web/rph/english-worksheet?");
+    const ownWorksheetWord=item.type==="worksheet_word"&&subject.value==="ENGLISH"&&
+        Number(year.value)===4&&item.url.startsWith("/api/web/rph/english-worksheet-word?");
     const externalMusic=item.type==="audio"&&
         /^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]{10,100}\/view\?usp=drivesdk$/.test(item.url);
-    if(!ownWorkbook&&!ownWorksheet&&!externalMusic)continue;
+    if(!ownWorkbook&&!ownWorksheet&&!ownWorksheetWord&&!externalMusic)continue;
     list.append(materialRow(item.title,{ready:true,url:item.url,
       actionLabel:externalMusic?"Buka Audio Sumber":"Download"}));
     found++;
