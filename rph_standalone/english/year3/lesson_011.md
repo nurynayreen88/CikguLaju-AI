@@ -14,11 +14,11 @@
 ## Activity 1 — Guided preparation (15 minutes)
 **Teacher:** Run a word-ladder or group brainstorm on activities, correct challenging spellings and model 'Can you help me, please?' **Pupils:** Contribute activity words, practise asking 'Can you ...?' and request help politely.
 
-## Activity 2 — Main task (30 minutes)
+## Activity 2 — Main task (25 minutes)
 **Teacher:** Review Can you...? and how to request help; guide Activity 5 using Teacher's Book p.22; monitor responses. **Pupils:** Follow SB p.9 Activity 5, practise 'Can you...?' answers and request help with 'Can you help me, please?' when needed.
 **Workbook:** Pupils complete Workbook p.8, Activity 2, by forming questions and answers with 'can'.
 
-## Assessment / PBD (5 minutes)
+## Assessment / PBD (10 minutes)
 **Teacher:** Assess listening and requests for help. **Pupils:** Follow two spoken instructions and make one polite request for help using 'Can you ...?'.
 
 ## Closure (5 minutes)
