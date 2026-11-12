@@ -1,0 +1,24 @@
+name: Web Bahan Akan Datang menu (safe production-only UI)
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'web_v1_static_preview/index.html'
+      - 'tests/test_web_upcoming_materials_menu_20261112.cjs'
+      - '.github/workflows/web-upcoming-materials-menu-20261112.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  coming-soon-ui:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify roadmap navigation has no enabled unfinished files
+        run: node tests/test_web_upcoming_materials_menu_20261112.cjs
+      - name: Verify existing RPH Hari Ini selection contract
+        run: node tests/test_rph_today_selection_progress_20261111.cjs
