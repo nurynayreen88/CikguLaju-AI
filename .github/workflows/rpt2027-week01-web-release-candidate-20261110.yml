@@ -1,4 +1,4 @@
-name: RPT2027 23 Week01 PDFs - 56-file review package
+name: RPT2027 23 Week01 and 5 Music PDFs - 56-file review
 on:
   pull_request:
     paths:
@@ -9,6 +9,7 @@ on:
       - 'scripts/build_rpt_2027_sains_342_actual_source_staging.py'
       - 'tests/test_rpt2027_owner_week1_distribution_20261110.py'
       - 'tests/test_rpt2027_teacher_release_review_guard_20261112.py'
+      - 'rpt_2027/common/teacher_display_projection.py'
       - 'rpt_2027/common/teacher_display_projection.py'
       - 'rpt_2027/common/format_2026_layout_preview.py'
       - 'tests/test_rpt2027_teacher_text_leak_scan.py'
@@ -46,7 +47,7 @@ jobs:
         run: |
           python -m py_compile scripts/prepare_rpt2027_week01_web_candidate_20261110.py
           python -m unittest tests.test_rpt2027_owner_week1_distribution_20261110 tests.test_rpt2027_teacher_text_leak_scan tests.test_rpt2027_teacher_release_review_guard_20261112 -v
-      - name: Build all 56 PDFs in isolated review output, replace exactly 23
+      - name: Build 56 PDF review package, replace 23 Week01 and 5 Music
         run: |
           python -m scripts.prepare_rpt2027_week01_web_candidate_20261110 \
             --web-checkout _web_baseline \
@@ -58,7 +59,7 @@ jobs:
         run: |
           test -z "$(git -C _web_baseline status --porcelain --untracked-files=no)"
           test -z "$(git status --porcelain --untracked-files=no)"
-      - name: Save reviewer PDFs, unchanged file proofs and new SHA manifest
+      - name: Save 28 replacements, 28 unchanged file proofs and review manifest
         if: always()
         uses: actions/upload-artifact@v4
         with:
