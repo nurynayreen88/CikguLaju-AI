@@ -47,7 +47,12 @@ def inspect_db(path):
                     report["tables"].append({"table": name, "status": "UNSAFE_NAME"})
                     continue
                 count = con.execute('SELECT COUNT(*) FROM "' + name + '"').fetchone()[0]
+                # Schema only: column names/types contain no pupil records.
+                columns = [{"name": col[1], "type": col[2]}
+                           for col in con.execute('PRAGMA table_info("' + name + '")')]
                 report["tables"].append({"table": name, "rows": count,
+                                         "columns": columns[:32],
+                                         "column_count": len(columns),
                                          "status": "UNREVIEWED_ROWS"})
     except sqlite3.DatabaseError as exc:
         report["state"] = "DB_READ_ERROR"
