@@ -6,6 +6,10 @@ on:
       - 'web_v1_static_preview/rph-today.js'
       - 'tests/test_primary_pdp_hub_staging_20261112.cjs'
       - 'tests/test_web_worksheet_submenu_20261112.cjs'
+      - 'tests/test_web_english_three_source_merge_20261112.cjs'
+      - 'tests/test_web_english_three_source_merge_20261112.py'
+      - 'web/native_telegram_extra_materials_20261106.py'
+      - 'requirements-web-render.txt'
       - 'tests/test_guest_onboarding_20261112.cjs'
       - 'tests/test_web_english_y4_worksheet_20261112.py'
       - 'web/english_y4_worksheet_pdf_20261112.py'
@@ -47,6 +51,8 @@ jobs:
         run: node tests/test_primary_pdp_hub_staging_20261112.cjs
       - name: Test Lesson-matched worksheet submenu, exact Year/Unit/Lesson and hidden dummy
         run: node tests/test_web_worksheet_submenu_20261112.cjs
+      - name: Test exact Workbook and Student Book UI selection without clobbering worksheet
+        run: node tests/test_web_english_three_source_merge_20261112.cjs
       - name: Test public guest onboarding and trusted Telegram link
         run: node tests/test_guest_onboarding_20261112.cjs
       - name: Regression - existing selection and timetable flow
@@ -57,7 +63,7 @@ jobs:
       - name: Install verified Web PDF/runtime dependencies
         run: pip install -r requirements-web-v1.txt 'pypdf==5.1.0'
       - name: Validate printable PDF and editable A4 Word worksheets, auth and original Workbook paths
-        run: PYTHONPATH=tests:. python -m unittest -v tests.test_web_english_y4_worksheet_20261112 tests.test_web_english_music_extras_20261106
+        run: PYTHONPATH=tests:. python -m unittest -v tests.test_web_english_y4_worksheet_20261112 tests.test_web_english_music_extras_20261106 tests.test_web_english_three_source_merge_20261112
       - name: Ensure historical worksheet DBs remain unapproved and read-only
         run: PYTHONPATH=. python -m unittest -v tests.test_legacy_worksheet_inventory_20261112
       - name: Inventory historical SQLite source tables without writes or publication
