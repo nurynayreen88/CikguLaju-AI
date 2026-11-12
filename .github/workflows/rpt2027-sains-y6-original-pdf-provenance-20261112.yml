@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install PDF reader without writing source PDFs into repository
-        run: python -m pip install 'requests==2.32.5' 'beautifulsoup4==4.12.3' 'pypdf==5.1.0'
+        run: python -m pip install 'requests==2.32.5' 'beautifulsoup4==4.12.3' 'pypdf==5.1.0' 'reportlab==4.2.5'
       - name: Offline evidence and fail-closed guard tests
         run: |
           python -m py_compile scripts/audit_sains_y6_2021_pdf_source_provenance_20261112.py
