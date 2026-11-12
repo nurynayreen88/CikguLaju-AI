@@ -82,6 +82,6 @@ def worksheet_docx(year, lesson):
     stream = BytesIO()
     doc.save(stream)
     result = stream.getvalue()
-    if not result.startswith(b"PK\\x03\\x04") or len(result) < 5000 or len(result) > 200000:
+    if not result.startswith(bytes.fromhex("504b0304")) or len(result) < 5000 or len(result) > 200000:
         raise ValueError("Invalid Word worksheet output")
     return result
