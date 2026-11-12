@@ -1,7 +1,8 @@
 """Teacher-output release guard for the 56-PDF RPT 2027 preview.
 
-The unchanged Music PDFs can still carry draft source-page qualifiers.
-Keep a release HOLD without mutating source PDFs or legitimate DSKP wording.
+The 5 legacy Music PDFs are replaced in a REVIEW-ONLY package, after
+proof of old editor notes and verification that new pages have none.
+Keep release HOLD without mutating originals or legitimate DSKP wording.
 """
 import json
 import unittest
@@ -53,7 +54,9 @@ class TeacherReleaseReviewGuardTests(unittest.TestCase):
         manifest = json.loads(REVIEW_MANIFEST.read_text("utf-8"))
         self.assertEqual(report["total"], 56)
         self.assertEqual(report["target_week01_fixes"], 23)
-        self.assertEqual(report["unchanged"], 33)
+        self.assertEqual(report["target_music_teacher_pdf_fixes"], 5)
+        self.assertEqual(report["changed"], 28)
+        self.assertEqual(report["unchanged"], 28)
         self.assertFalse(report["ready_for_web_catalog"])
         self.assertTrue(report["teacher_release_blocked"])
         self.assertFalse(manifest["ready_for_web_catalog"])
@@ -61,10 +64,31 @@ class TeacherReleaseReviewGuardTests(unittest.TestCase):
         self.assertFalse(manifest["academic_final_approved"])
         expected_music = {f"muzik:{year}" for year in range(2, 7)}
         found = set(report["printed_internal_note_affected_files"])
-        self.assertTrue(expected_music.issubset(found), found)
-        self.assertGreaterEqual(report["printed_internal_note_finding_count"], 175)
+        self.assertEqual(found, set(), "No editorial notes may remain in review PDFs")
+        self.assertEqual(report["printed_internal_note_finding_count"], 0)
+        self.assertEqual(manifest["printed_internal_note_finding_count"], 0)
+        before = report["music_legacy_editorial_counts"]
+        self.assertEqual(set(before), expected_music)
+        self.assertGreaterEqual(sum(before.values()), 175)
+        self.assertEqual(report["music_legacy_editorial_notes_removed"],
+                         sum(before.values()))
+        self.assertEqual(manifest["music_legacy_editorial_notes_removed"],
+                         sum(before.values()))
+        self.assertEqual(manifest["candidate_replaced_files"], 28)
+        self.assertEqual(manifest["candidate_unchanged_files"], 28)
+        files = {r["subject_year"]: r for r in report["files"]}
+        for identity in expected_music:
+            item = files[identity]
+            self.assertEqual(item["change_reason"], "music_teacher_text_cleanup")
+            self.assertTrue(item["changed"])
+            self.assertGreater(item["baseline_music_editorial_note_count"], 0)
+            self.assertEqual(item["teacher_pdf_review_marker_count"], 0)
+            self.assertNotEqual(item["new_sha256"], item["old_sha256"])
+        for identity, item in files.items():
+            if item["change_reason"] == "original_bytes_retained":
+                self.assertEqual(item["new_sha256"], item["old_sha256"])
         self.assertEqual(
-            found, set(manifest["printed_internal_note_affected_files"])
+            sum(1 for item in files.values() if not item["changed"]), 28
         )
 
 
