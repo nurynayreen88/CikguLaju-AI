@@ -37,7 +37,7 @@ class MathY1WorksheetRepairDemoTests(unittest.TestCase):
     def test_repair_is_a_review_candidate_not_automatically_ready(self):
         data = json.loads(SAMPLE.read_text(encoding="utf-8"))
         pupil = data["student_copy"]
-        items = "\\n".join(
+        items = "\n".join(
             str(x["no"]) + ". " + x["task"] + " Kumpulan A: " +
             str(x["group_a"]) + " objek; Kumpulan B: " + str(x["group_b"]) +
             " objek."
