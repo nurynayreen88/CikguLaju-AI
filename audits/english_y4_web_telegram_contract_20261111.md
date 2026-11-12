@@ -53,3 +53,12 @@
 - Ujian silang dibina terhadap Telegram commit `e4ca75a71b4c1d2bc2579785629414674fae03a2`. Setiap PDF dibanding dengan stream halaman sebenar, tiada buku penuh atau halaman tambahan terdedah.
 - Sumber rujukan: https://www.scribd.com/document/774411596/Primary-Year-4-SK-SoW dan https://online.anyflip.com/aecw/prtt/files/basic-html/page133.html .
 - **Bukan LIVE**. Pemeriksaan akademik lanjut/hak edaran dan E2E akaun sebenar kekal HOLD; rekod pemetaan dalam `app.py` Telegram lama belum dikemaskini.
+
+## Kontrak tiga PR — sambungan 12 November 2026
+
+- PR #567 (peta Telegram legasi app.py) dipin ke e98872f8a21ca001d1c2041b907ec31346ee4111; PR #558 (API Student Book Telegram) dipin ke aa05d06324806add65304cabd1d1c2c8db0d6aa9; PR #559 (Web) menjalankan ujian silang terhadap kedua-duanya.
+- Workflow web-english-y4-cross-pr-contract-staging.yml kini mengambil tiga checkout berasingan. Ujian baharu membandingkan kesemua 81 entri halaman utama daripada peta app.py yang dibetulkan dengan halaman PDF yang dipilih oleh resolver Telegram private.
+- Semakan SOW khusus: Lesson 43 = p.121; Lesson 103 = p.73; Lesson 157 = p.110–111. Rekod terdahulu dalam dokumen ini yang menyebut p.73–75 atau p.110 sahaja ialah bukti sejarah sebelum pembetulan dan **bukan keadaan sasaran terkini**.
+- Had maksimum empat halaman berturutan, kesahihan PDF, pemisahan Workbook, serta sekatan login/bearer tidak dilonggarkan.
+- Ujian tiga PR ini ialah ujian staging offline, bukan semakan rupa buku cetak, hak edaran, konfigurasi pypdf pada Render, atau muat turun sebenar akaun guru. Semua release gate itu masih HOLD; tiada merge/deploy pengeluaran.
+- Jika kepala PR #567 atau PR #558 berubah, pindaan pin SHA dan ujian semula diwajibkan sebelum penerbitan.
