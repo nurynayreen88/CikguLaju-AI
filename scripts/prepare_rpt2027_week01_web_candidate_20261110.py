@@ -185,6 +185,20 @@ def candidate_package(web_root: Path, output: Path):
     ):
         raise ValueError("Week 01 calendar changed")
     first = sourced_week_assertions()
+    # Reuse existing BM source audit: the original 2027 HTML contains nine
+    # textbook/BA/SP crosswalk HOLD rows. Remove *review commentary* from
+    # teacher PDF only, never lose academic recheck work items.
+    bm_academic_holds = {}
+    for year, expected_count in ((2, 2), (3, 7)):
+        source = bm_records(year)
+        held = [
+            {"pdp": row["id"], "sp": row["sp"],
+             "original_source_week": row["source_week"]}
+            for row in source if row.get("source_held")
+        ]
+        if len(held) != expected_count:
+            raise ValueError(f"BM Tahun {year}: source HOLD ledger changed; re-audit")
+        bm_academic_holds[f"bahasa_melayu:{year}"] = held
     with TemporaryDirectory(prefix="cikgulaju_rpt2027_preview_") as tmp:
         source_paths = build_preview_files(Path(tmp))
         package = Path(output) / "rpt_2027" / "web_2027_pdfs"
@@ -309,6 +323,9 @@ def candidate_package(web_root: Path, output: Path):
         candidate["music_teacher_note_affected_source_files"] = list(sorted(MUSIC_TARGET))
         candidate["candidate_replaced_files"] = 28
         candidate["candidate_unchanged_files"] = 28
+        candidate["academic_source_holds_not_printed"] = bm_academic_holds
+        candidate["academic_source_holds_total"] = sum(
+            len(items) for items in bm_academic_holds.values())
         (package / "manifest.json").write_text(
             json.dumps(candidate, ensure_ascii=False, indent=2) + "\n", "utf-8")
         report = {
@@ -324,6 +341,9 @@ def candidate_package(web_root: Path, output: Path):
                 r["teacher_pdf_review_marker_count"] for r in leaked),
             "music_legacy_editorial_notes_removed": sum(music_before.values()),
             "music_legacy_editorial_counts": music_before,
+            "academic_source_holds_not_printed": bm_academic_holds,
+            "academic_source_holds_total": sum(
+                len(items) for items in bm_academic_holds.values()),
             "total": 56,
             "target_week01_fixes": 23,
             "target_music_teacher_pdf_fixes": 5,
@@ -334,6 +354,21 @@ def candidate_package(web_root: Path, output: Path):
         }
         (Path(output) / "week01_candidate_review.json").write_text(
             json.dumps(report, ensure_ascii=False, indent=2) + "\n", "utf-8")
+        (Path(output) / "BACA_DULU_RPT_2027_SEMAKAN_BUKAN_FINAL.txt").write_text(
+            "CIKGULAJU AI - RPT 2027 - PAKEJ SEMAKAN DALAMAN SAHAJA\\n"
+            "BUKAN FINAL READY. JANGAN EDAR ATAU MUAT NAIK SEBAGAI RPT YANG DILULUSKAN.\\n\\n"
+            "Kandungan: 56 RPT Tahun 2-6, 28 PDF ditambah baik "
+            "(23 agihan PdP Minggu 1 dan 5 Pendidikan Muzik), "
+            "28 fail asal kekal. Tiada perubahan produksi.\\n"
+            "9 rekod BM T2-3 masih mempunyai konflik padanan SP dengan buku teks/"
+            "buku aktiviti; butiran disimpan dalam week01_candidate_review.json.\\n"
+            "Sains, Pendidikan Islam, Bahasa Arab, RBT, Muzik dan subjek lain masih "
+            "memerlukan pengesahan SK/SP, buku teks, RPH dan jadual sebenar guru.\\n"
+            "Bukti QA PDF yang lulus tidak bermaksud kurikulum atau hak edaran "
+            "sudah diluluskan. Tahun 1 KP2027 memerlukan aliran tersendiri.\\n",
+            encoding="utf-8",
+        )
+
         print("WEEK01_CANDIDATE_PACKAGE_56", json.dumps(
             {"changed": 28, "unchanged": 28,
              "total_pages": candidate["pages"],
