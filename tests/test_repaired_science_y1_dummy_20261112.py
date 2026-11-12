@@ -8,6 +8,7 @@ from docx import Document
 from pypdf import PdfReader
 
 from tools.render_science_y1_worksheet_20261112 import make_docx, make_pdf, source
+from web.legacy_worksheet_quality_gate_20261112 import assess_legacy_blueprint
 
 
 class ScienceY1WorksheetRepairTests(unittest.TestCase):
@@ -33,6 +34,26 @@ class ScienceY1WorksheetRepairTests(unittest.TestCase):
         self.assertTrue(all(len(x["task"]) > 20 for x in q))
         self.assertNotIn("ANSWERSPACE", str(q))
         self.assertIn("Telinga", q[4]["options"])
+
+    def test_repaired_items_pass_generic_detector_but_still_require_review(self):
+        data = source()
+        pupil = data["student_copy"]
+        questions = "\\n".join(
+            str(item["no"]) + ". " + item["task"]
+            for item in pupil["questions"]
+        )
+        row = {
+            "year_label": "Tahun 1", "subject": "Sains",
+            "sk_code": "1.1", "sp_code": "1.1.1",
+            "title": pupil["title"], "instructions": pupil["instruction"],
+            "question_pattern": questions, "answer_space": "Baris dan kotak pilihan",
+            "verified_alignment": 1,
+        }
+        result = assess_legacy_blueprint(row)
+        self.assertEqual(result["status"], "REVIEW_REQUIRED")
+        self.assertEqual(result["reasons"], [])
+        self.assertFalse(result["approved"])
+        self.assertFalse(result["public"])
 
     def test_pupil_pdf_docx_are_a4_without_teacher_answers(self):
         data = source()
