@@ -53,6 +53,40 @@ COVER_KEYS = ("RANCANGAN PENGAJARAN TAHUNAN 2027",
 EXPECTED_FIRST = {"bahasa_melayu": 3, "pendidikan_islam": 2,
                   "bahasa_arab": 1, "rbt": 1}
 WEEK_REGEX = re.compile(r"(?<![A-Za-z0-9])M\s*01(?![0-9])", re.I)
+
+# These are **printed developer qualifiers**, not the legitimate curricular
+# expression "menulis draf karangan". Scan ALL 56 packaged teacher PDFs,
+# including the 33 baseline PDFs kept unchanged in the Week01 candidate.
+TEACHER_PDF_REVIEW_MARKERS = {
+    "DRAFT_PARENTHESES": re.compile(r"\\(\\s*draf\\s*\\)", re.I),
+    "DRAFT_RPT_STATUS": re.compile(
+        r"(?i)\\b(?:RPT|kandungan\\s+buku)\\b[^.\\n]{0,80}\\bmasih\\s+draf\\b"
+    ),
+    "INTERNAL_STAGING_STATUS": re.compile(
+        r"(?i)\\b(?:HOLD\\s*:|STAGING|JANGAN\\s+MERGE|"
+        r"BUKAN\\s+UNTUK\\s+GURU|BELUM\\s+READY)\\b"
+    ),
+}
+
+
+def teacher_pdf_review_markers(pages):
+    """Flag obvious internal wording without deleting original lesson data.
+
+    The resulting evidence is a release hold, NOT an automatic text-edit pass.
+    In particular, never erase valid SK/SP words such as 'menulis draf'.
+    """
+    findings = []
+    for page_no, value in enumerate(pages, 1):
+        text = re.sub(r"\\s+", " ", value)
+        for kind, pattern in TEACHER_PDF_REVIEW_MARKERS.items():
+            matches = list(pattern.finditer(text))
+            if matches:
+                findings.append({"page": page_no, "rule": kind,
+                                 "count": len(matches),
+                                 "example": matches[0].group(0)})
+    return findings
+
+
 HIDDEN_AUDIT_NOTES = re.compile(
     # A pedagogical instruction such as "menulis draf karangan" is valid.
     # Reject release-status labels, not the legitimate word "draf" in DSKP.
@@ -145,7 +179,10 @@ def candidate_package(web_root: Path, output: Path):
         candidate = deepcopy(original)
         candidate["source"] = "Week01 staging candidate, 23 replacements, original other 33 unchanged"
         candidate["academic_final_approved"] = False
-        candidate["ready_for_web_catalog"] = original["ready_for_web_catalog"]
+        # Source Web catalog may expose DRAFT PDFs. This independent package
+        # is not approved and must NEVER inherit the live-catalog-ready flag.
+        candidate["source_ready_for_web_catalog"] = original["ready_for_web_catalog"]
+        candidate["ready_for_web_catalog"] = False
         candidate["release_candidate_only"] = True
         candidate["requires_teacher_calendar_and_academic_signoff"] = True
         observations = []
@@ -209,6 +246,16 @@ def candidate_package(web_root: Path, output: Path):
                            "changed": identity in TARGET,
                            "old_pages": src["pages"], "new_pages": entry["pages"],
                            "old_sha256": src["sha256"], "new_sha256": entry["sha256"]}
+            # Scan *all* actual PDF pages including the 33 baseline copies.
+            # The Week01 target check above alone cannot catch an old Music
+            # PDF that still prints "(draf)" dozens of times.
+            with fitz.open(target) as check:
+                printed = [page.get_text("text") or "" for page in list(check)[1:]]
+            leaks = teacher_pdf_review_markers(printed)
+            observation["teacher_pdf_review_marker_count"] = sum(
+                item["count"] for item in leaks)
+            if leaks:
+                observation["teacher_pdf_review_markers"] = leaks[:10]
             if identity in TARGET:
                 observation["week01_sourced_pdp"] = first[identity]
                 old_text = pdf_text(old)
@@ -223,6 +270,12 @@ def candidate_package(web_root: Path, output: Path):
                for item in observations if not item["changed"]):
             raise ValueError("One of the other 33 published PDF bytes changed")
         candidate["pages"] = sum(e["pages"] for e in candidate["files"].values())
+        leaked = [r for r in observations if r["teacher_pdf_review_marker_count"]]
+        candidate["printed_internal_note_finding_count"] = sum(
+            r["teacher_pdf_review_marker_count"] for r in leaked)
+        candidate["printed_internal_note_affected_files"] = [
+            r["subject_year"] for r in leaked]
+        candidate["teacher_release_blocked"] = True
         (package / "manifest.json").write_text(
             json.dumps(candidate, ensure_ascii=False, indent=2) + "\n", "utf-8")
         report = {
@@ -230,6 +283,12 @@ def candidate_package(web_root: Path, output: Path):
             "source_year1_transition_changed": False,
             "published_web_files_modified": False,
             "academic_signoff": False,
+            "ready_for_web_catalog": False,
+            "teacher_release_blocked": True,
+            "printed_internal_note_affected_files": [
+                r["subject_year"] for r in leaked],
+            "printed_internal_note_finding_count": sum(
+                r["teacher_pdf_review_marker_count"] for r in leaked),
             "total": 56,
             "target_week01_fixes": 23,
             "unchanged": 33,
