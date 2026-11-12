@@ -50,7 +50,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install 'PyMuPDF==1.24.14' 'reportlab==4.2.5'
+      - run: pip install 'PyMuPDF==1.24.14' 'reportlab==4.2.5' 'beautifulsoup4==4.12.3'
       - run: python -m py_compile scripts/build_rpt_2027_sains_342_actual_source_staging.py scripts/audit_sains_rpt2027_uncovered_verified_sp_staging.py
       - name: Run five subject-year DSKP-source RPT tests
         run: python -m unittest tests.test_rpt_2027_sains_342_actual_source_staging -v
