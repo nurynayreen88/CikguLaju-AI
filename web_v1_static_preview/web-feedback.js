@@ -7,6 +7,10 @@
  const message=document.getElementById("web-feedback-message");
  const status=document.getElementById("web-feedback-status");
  const submit=document.getElementById("web-feedback-submit");
+ const adminFilter=document.getElementById("web-feedback-admin-filter");
+ const adminMore=document.getElementById("web-feedback-admin-more");
+ let adminNextBefore=null;
+ let adminLoading=false;
  if(!form||!own||!admin||!category||!message||!status||!submit)return;
 
  function info(node,text){node.textContent=text;}
@@ -16,10 +20,10 @@
    node.textContent=String(value==null?"":value);
    return node;
  }
- function showRows(target, rows, forAdmin){
-   target.replaceChildren();
+ function showRows(target, rows, forAdmin, append=false){
+   if(!append)target.replaceChildren();
    if(!Array.isArray(rows)||!rows.length){
-     target.append(element("p","notice","Belum ada komen."));
+     if(!append)target.append(element("p","notice","Belum ada komen."));
      return;
    }
    for(const item of rows){
@@ -83,14 +87,37 @@
      showRows(own,data.items,false);
    }catch(e){info(own,e.message);}
  }
- async function loadAdmin(){
-   info(admin,"Memuatkan komen terkini…");
+ async function loadAdmin(append=false){
+   if(adminLoading)return;
+   if(append&&!adminNextBefore)return;
+   adminLoading=true;
+   if(!append){
+     adminNextBefore=null;
+     info(admin,"Memuatkan komen terkini…");
+   }
+   if(adminMore)adminMore.disabled=true;
    try{
-     const data=await response("/api/web/admin/feedback");
-     showRows(admin,data.items,true);
-     if(data.limited)admin.prepend(element("p","notice",
-       "Memaparkan 50 komen terkini. Komen lama masih tersimpan di Supabase."));
-   }catch(e){info(admin,e.message);}
+     const params=new URLSearchParams();
+     if(adminFilter?.value&&adminFilter.value!=="semua"){
+       params.set("status",adminFilter.value);
+     }
+     if(append)params.set("before",String(adminNextBefore));
+     const query=params.toString();
+     const data=await response("/api/web/admin/feedback"+(query?"?"+query:""));
+     if(!Array.isArray(data.items)||typeof data.has_more!=="boolean"||
+        (data.has_more&&(!Number.isSafeInteger(data.next_before)||data.next_before<=0))){
+       throw Error("Format senarai komen tidak lengkap.");
+     }
+     showRows(admin,data.items,true,append);
+     adminNextBefore=data.has_more?data.next_before:null;
+     if(adminMore)adminMore.hidden=!data.has_more;
+   }catch(e){
+     if(!append)info(admin,e.message);
+     else admin.append(element("p","notice",e.message||"Gagal memuatkan komen terdahulu."));
+   }finally{
+     adminLoading=false;
+     if(adminMore)adminMore.disabled=false;
+   }
  }
  form.addEventListener("submit",async e=>{
    e.preventDefault();
@@ -110,7 +137,9 @@
    finally{submit.disabled=false;}
  });
  document.getElementById("web-feedback-refresh")?.addEventListener("click",loadOwn);
- document.getElementById("web-feedback-admin-refresh")?.addEventListener("click",loadAdmin);
+ document.getElementById("web-feedback-admin-refresh")?.addEventListener("click",()=>void loadAdmin());
+ adminFilter?.addEventListener("change",()=>void loadAdmin());
+ adminMore?.addEventListener("click",()=>void loadAdmin(true));
  window.cikgulajuFeedbackLoad=loadOwn;
- window.cikgulajuFeedbackAdminLoad=loadAdmin;
+ window.cikgulajuFeedbackAdminLoad=()=>loadAdmin();
 })();
