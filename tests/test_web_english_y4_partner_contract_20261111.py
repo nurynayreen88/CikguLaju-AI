@@ -111,8 +111,9 @@ class WebTelegramYear4PartnerContract(unittest.TestCase):
             raise NativeRPHUnavailable("Partner Telegram content contract mismatch")
         return response.data
 
-    def test_exact_three_pages_reach_web_from_real_telegram_pdf(self):
-        # The source map explicitly says 73, 74-75; legacy parser lost 74 and 75.
+    def test_lesson103_sow_page73_only_reaches_web(self):
+        # Legacy p73,74-75 conflated L103 speaking with L104 reading.
+        # Source SOW Lesson 103 Activity 5 is Student Book p.73 only.
         self.assertEqual(self.runtime.mapped[103], "73, 74–75")
         query = self._select(103)
         with patch("web.unified_rph_web._account",
@@ -121,8 +122,9 @@ class WebTelegramYear4PartnerContract(unittest.TestCase):
                    side_effect=self._dispatch):
             listed = self.web_client.get("/api/web/rph/extra-materials", query_string=query)
             self.assertEqual(listed.status_code, 200)
-            items = listed.json["items"]
-            self.assertEqual(len([x for x in items if x["type"] == "student_book"]), 1)
+            items = [x for x in listed.json["items"] if x["type"] == "student_book"]
+            self.assertEqual(len(items), 1)
+            self.assertIn("m/s 73", items[0]["title"])
             downloaded = self.web_client.get("/api/web/rph/english-student-book",
                                              query_string=query)
 
@@ -131,12 +133,11 @@ class WebTelegramYear4PartnerContract(unittest.TestCase):
         self.assertEqual(downloaded.headers["Cache-Control"], "no-store, private")
         self.assertIn("Lesson_103", downloaded.headers["Content-Disposition"])
         actual = PdfReader(BytesIO(downloaded.data), strict=True)
-        self.assertEqual(len(actual.pages), 3)
+        self.assertEqual(len(actual.pages), 1)
         original = PdfReader(str(PARTNER / "books/english/y4_student_021_100.pdf"),
                              strict=True)
-        for result_page, source_index in zip(actual.pages, [52, 53, 54]):
-            self.assertEqual(result_page.get_contents().get_data(),
-                             original.pages[source_index].get_contents().get_data())
+        self.assertEqual(actual.pages[0].get_contents().get_data(),
+                         original.pages[52].get_contents().get_data())
 
     def test_web_displays_and_downloads_both_real_workbook_and_student_book(self):
         """One verified Lesson exposes two independently authenticated PDFs."""
@@ -197,11 +198,11 @@ class WebTelegramYear4PartnerContract(unittest.TestCase):
                 self.assertEqual(self.web_client.get(path, query_string=query).status_code,
                                  200)
 
-    def test_lesson157_main_page_only_and_lesson43_phonics3_page121(self):
+    def test_lesson157_main_pages_and_lesson43_phonics3_page121(self):
         self.assertEqual(self.runtime.main[(4, 157)], "110")
         # Legacy L043 p27-31 is wrong; SOW Lesson 43 specifies Phonics 3 p121.
         self.assertEqual(self.runtime.mapped[43], "27, 28, 29, 30, 31")
-        for lesson in (157, 43):
+        for lesson, length in ((157, 2), (43, 1)):
             query = self._select(lesson)
             with patch("web.unified_rph_web._account",
                        return_value=({"authenticated": True, "telegram_user_id": 123}, None)), \
@@ -216,7 +217,14 @@ class WebTelegramYear4PartnerContract(unittest.TestCase):
                                           query_string=query)
             self.assertEqual(pdf.status_code, 200)
             actual = PdfReader(BytesIO(pdf.data), strict=True)
-            self.assertEqual(len(actual.pages), 1)
+            self.assertEqual(len(actual.pages), length)
+            if lesson == 157:
+                self.assertIn("m/s 110–111", found[0]["title"])
+                source = PdfReader(str(PARTNER / "books/english/y4_student_101_177.pdf"),
+                                   strict=True)
+                for page, offset in zip(actual.pages, (9, 10)):
+                    self.assertEqual(page.get_contents().get_data(),
+                                     source.pages[offset].get_contents().get_data())
             if lesson == 43:
                 self.assertIn("m/s 121", found[0]["title"])
                 source = PdfReader(str(PARTNER / "books/english/y4_student_101_177.pdf"),
