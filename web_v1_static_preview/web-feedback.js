@@ -35,6 +35,38 @@
      if(forAdmin)card.append(element("small","web-feedback-owner",
        "ID Telegram: "+item.chat_id+" · Komen #"+item.id));
      card.append(element("p","web-feedback-text",item.feedback_text));
+     if(forAdmin){
+       const actions=element("div","web-feedback-admin-actions","");
+       const label=element("label","", "Tukar status: ");
+       const chooser=document.createElement("select");
+       chooser.setAttribute("aria-label","Status komen #"+item.id);
+       for(const [value,title] of [["baru","Baharu"],["dibaca","Dibaca"],["selesai","Selesai"]]){
+         const option=document.createElement("option");
+         option.value=value;option.textContent=title;chooser.append(option);
+       }
+       chooser.value=item.status;
+       label.append(chooser);
+       const save=element("button","profile-refresh","Simpan Status");
+       save.type="button";
+       const note=element("span","notice","");
+       note.setAttribute("role","status");
+       save.addEventListener("click",async()=>{
+         if(chooser.value===item.status){note.textContent="Status masih sama.";return;}
+         save.disabled=true;
+         note.textContent="Menyimpan status…";
+         try{
+           await response("/api/web/admin/feedback/"+encodeURIComponent(String(item.id)),{
+             method:"PATCH",headers:{"Content-Type":"application/json"},
+             body:JSON.stringify({status:chooser.value})
+           });
+           note.textContent="Status dikemas kini.";
+           await loadAdmin();
+         }catch(err){note.textContent=err.message||"Status tidak dapat disimpan.";}
+         finally{save.disabled=false;}
+       });
+       actions.append(label,save,note);
+       card.append(actions);
+     }
      target.append(card);
    }
  }

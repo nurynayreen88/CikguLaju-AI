@@ -115,6 +115,81 @@ class PrivateWebFeedbackTests(unittest.TestCase):
         self.assertEqual(db.call_args.args[2]["limit"], "50")
 
     @patch("web.web_feedback_routes._auth")
+    @patch("web.web_feedback_routes.allowed_admin_ids")
+    @patch("web.web_feedback_routes._db")
+    def test_admin_can_update_only_status_in_telegram_shared_ledger(self, db, admins, auth):
+        auth.return_value = self.conf, 25, None
+        admins.return_value = {25}
+        db.return_value = [{"id": 48, "status": "dibaca"}]
+        response = self.client.patch(
+            "/api/web/admin/feedback/48",
+            json={"status": "dibaca"},
+            headers={"Origin": "https://localhost"},
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json, {"ok": True, "id": 48, "status": "dibaca"})
+        self.assertEqual(db.call_args.args[1], "PATCH")
+        self.assertEqual(db.call_args.args[2], {"id": "eq.48", "select": "id,status"})
+        self.assertEqual(db.call_args.args[3], {"status": "dibaca"})
+        self.assertEqual(response.headers.get("Cache-Control"), "no-store, private")
+
+    @patch("web.web_feedback_routes._auth")
+    @patch("web.web_feedback_routes.allowed_admin_ids")
+    @patch("web.web_feedback_routes._db")
+    def test_non_admin_cannot_change_status(self, db, admins, auth):
+        auth.return_value = self.conf, 25, None
+        admins.return_value = {100}
+        response = self.client.patch(
+            "/api/web/admin/feedback/48",
+            json={"status": "selesai"},
+            headers={"Origin": "https://localhost"},
+        )
+        self.assertEqual(response.status_code, 403)
+        db.assert_not_called()
+
+    @patch("web.web_feedback_routes._auth")
+    @patch("web.web_feedback_routes.allowed_admin_ids")
+    @patch("web.web_feedback_routes._db")
+    def test_status_update_rejects_csrf_extra_fields_and_invalid_status(self, db, admins, auth):
+        auth.return_value = self.conf, 25, None
+        admins.return_value = {25}
+        url = "/api/web/admin/feedback/48"
+        payload = {"status": "selesai"}
+        cases = [
+            (url, payload, {}, 403),
+            (url, {"status": "selesai", "chat_id": "9999"},
+             {"Origin": "https://localhost"}, 400),
+            (url, {"status": "padam"},
+             {"Origin": "https://localhost"}, 400),
+            (url, {"status": "SELESAI"},
+             {"Origin": "https://localhost"}, 400),
+            ("/api/web/admin/feedback/0", payload,
+             {"Origin": "https://localhost"}, 400),
+        ]
+        for route, body, headers, expected in cases:
+            with self.subTest(route=route, body=body):
+                response = self.client.patch(route, json=body, headers=headers)
+                self.assertEqual(response.status_code, expected)
+        db.assert_not_called()
+
+    @patch("web.web_feedback_routes._auth")
+    @patch("web.web_feedback_routes.allowed_admin_ids")
+    @patch("web.web_feedback_routes._db")
+    def test_missing_or_unconfirmed_status_write_returns_failure(self, db, admins, auth):
+        auth.return_value = self.conf, 25, None
+        admins.return_value = {25}
+        for returned, code in (([], 404), ([{"id": 48, "status": "baru"}], 503)):
+            with self.subTest(returned=returned):
+                db.return_value = returned
+                result = self.client.patch(
+                    "/api/web/admin/feedback/48",
+                    json={"status": "selesai"},
+                    headers={"Origin": "https://localhost"},
+                )
+                self.assertEqual(result.status_code, code)
+                self.assertNotIn("ok", result.json)
+
+    @patch("web.web_feedback_routes._auth")
     @patch("web.web_feedback_routes._db")
     def test_failed_database_write_must_never_show_success(self, db, auth):
         auth.return_value = self.conf, 25, None
@@ -145,6 +220,8 @@ class PrivateWebFeedbackTests(unittest.TestCase):
             self.assertIn(token, html)
         self.assertIn("window.cikgulajuFeedbackLoad", js)
         self.assertIn("window.cikgulajuFeedbackAdminLoad", js)
+        self.assertIn("Simpan Status", js)
+        self.assertIn('method:"PATCH"', js)
         self.assertIn('credentials:"same-origin"', js)
         self.assertIn("app.register_blueprint(web_feedback_bp)", wsgi)
         self.assertNotIn("SUPABASE_SECRET_KEY", js)
