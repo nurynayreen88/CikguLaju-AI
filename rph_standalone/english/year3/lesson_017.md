@@ -14,11 +14,11 @@
 ## Activity 1 — Modelling (15 minutes)
 **Teacher:** Mime new daily-routine actions, arrange pupils in a circle and distribute action flashcards. Introduce the song about Mike and explain that pupils should raise their card when they hear its action. **Pupils:** Practise the actions, name the flashcard phrases and predict which actions they will hear.
 
-## Activity 2 — Main learning task (25 minutes)
+## Activity 2 — Main learning task (30 minutes)
 **Teacher:** Use flashcards in a circle; play the song about Mike twice; pupils hold up cards and mime actions; follow SB p.15 song and picture matching. **Pupils:** Complete the lesson task, practising both standards.
+**Workbook:** Pupils complete Workbook p.10, Activity 1, by writing the correct daily-routine phrases.
 
-## Reinforcement / PBD (10 minutes)
-**Workbook assessment:** Pupils complete Workbook p.10, Activity 1, by writing the correct daily-routine phrases.
+## Assessment / PBD (5 minutes)
 **Teacher:** Check two details from the song and meanings inferred from visual clues. **Pupils:** Identify two song details and match one unfamiliar action word to its picture clue.
 
 ## Closure (5 minutes)
