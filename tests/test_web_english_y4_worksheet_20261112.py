@@ -101,7 +101,7 @@ class WorksheetSourceTests(TestCase):
                 parts = raw.split("## ", 2)
                 self.assertEqual(len(parts), 3)
                 altered = parts[0] + "## " + parts[1] + (
-                    "## Teacher notes\\nPRIVATE_ANSWER\\n## " + parts[2])
+                    "## Teacher notes\nPRIVATE_ANSWER\n## " + parts[2])
                 self.assertFalse(_has_complete_pupil_sections(altered, lesson))
 
     def test_lesson_090_invitation_date_is_calendar_neutral(self):
