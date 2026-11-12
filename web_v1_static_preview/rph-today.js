@@ -2,6 +2,8 @@
  * teachable timetable slot. One Jana Bahan discovers resources for all
  * selections; a download remains per Lesson and uses the native Telegram
  * endpoint/quota. No guessed lesson, duplicate catalog or batch trial debit.
+ * English Y4 Student Book excerpts appear only when the authenticated
+ * extra-materials API verifies source pages; no guessed links or full books.
  */
 (()=>{
  "use strict";
@@ -27,7 +29,7 @@
   PSV:"Bidang / Unit",PJPK:"Unit / Tajuk",ARAB:"Unit",
   MUZIK:"Unit / Tajuk",SEJARAH:"Unit",RBT:"Unit"
  };
- const TYPES=new Set(["workbook","audio"]);
+ const TYPES=new Set(["workbook","audio","student_book"]);
  const musicLink=/^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]{10,100}\/view\?usp=drivesdk$/;
 
  function create(tag,cls,value){
@@ -370,10 +372,12 @@
   li.append(button);
   return {li,button};
  }
- function readyMaterialLink(item){
+ function readyMaterialLink(item,year,subject){
   if(!item||!TYPES.has(item.type)||typeof item.title!=="string"||
      typeof item.url!=="string"||!item.title.trim())return false;
   if(item.type==="workbook")return item.url.startsWith("/api/web/rph/english-workbook?");
+  if(item.type==="student_book")return subject==="ENGLISH"&&Number(year)===4&&
+   item.url.startsWith("/api/web/rph/english-student-book?");
   if(item.type==="audio")return musicLink.test(item.url);
   return false;
  }
@@ -413,7 +417,7 @@
     if(epoch!==batchEpoch||key!==selectedKey(c))return;
     if(response.ok&&Array.isArray(data.items)&&data.items.length<=30){
      for(const item of data.items){
-      if(!readyMaterialLink(item))continue;
+      if(!readyMaterialLink(item,c.slot.year,c.slot.subject_code))continue;
       const label=item.title;
       const row=actionRow(label,item.type==="audio"?"Buka Audio Sumber":"Download",item.url);
       c.resultList.append(row.li);found++;
