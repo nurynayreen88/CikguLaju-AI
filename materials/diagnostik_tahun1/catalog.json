@@ -1,0 +1,82 @@
+{
+  "package_id": "CIKGULAJU-AI-T1-DIAG-2027",
+  "label": "Ujian Diagnostik • Tahun 1",
+  "school_level": "sekolah rendah",
+  "edition": "2027",
+  "created": "2026-11-13",
+  "notice": "Pengesanan awal selepas murid memasuki Tahun 1. Bukan ujian kemasukan atau instrumen rasmi KPM. Tiada penggredan TP PBD.",
+  "placement": "Sediakan Bahan PdP > Tahun 1 > Ujian Diagnostik",
+  "status": "REVIEWED_PENDING_WEB_ASSETS",
+  "items": [
+    {
+      "id": "bm",
+      "label": "Bahasa Melayu",
+      "file": "CikguLaju_Diagnostik_T1_2027_BM.pdf",
+      "mime": "application/pdf",
+      "pages": 2,
+      "size_bytes": 73899,
+      "sha256": "63570c019b339a942070effcf30f38083a127bc1e991659a9f0fcf49ac1e8f0d"
+    },
+    {
+      "id": "bi",
+      "label": "Bahasa Inggeris",
+      "file": "CikguLaju_Diagnostik_T1_2027_BI.pdf",
+      "mime": "application/pdf",
+      "pages": 2,
+      "size_bytes": 72910,
+      "sha256": "6c98d6830cbec8a48f35d4e441bba521c1be00c8dec8c7624dd59f42225c5845"
+    },
+    {
+      "id": "math",
+      "label": "Matematik",
+      "file": "CikguLaju_Diagnostik_T1_2027_Matematik.pdf",
+      "mime": "application/pdf",
+      "pages": 2,
+      "size_bytes": 74270,
+      "sha256": "d40bdea5d8c6bfd2d7bc93a1ea2f8bb77ad217bda405dc94a34f9d3200ecb15a"
+    },
+    {
+      "id": "observation",
+      "label": "Borang Pemerhatian",
+      "file": "CikguLaju_Diagnostik_T1_2027_Pemerhatian.pdf",
+      "mime": "application/pdf",
+      "pages": 2,
+      "size_bytes": 72396,
+      "sha256": "35129580b6e79d6c8e45df6b2c693b2f1a94abf0f57d47aa70b9397280241b87"
+    },
+    {
+      "id": "teacher_pdf",
+      "label": "Panduan Guru — PDF",
+      "file": "CikguLaju_Diagnostik_T1_2027_Panduan_Guru.pdf",
+      "mime": "application/pdf",
+      "pages": 5,
+      "size_bytes": 148710,
+      "sha256": "ba1acb072df4c9b64a20e81d3333b6faf0073085f1239befbb2801e8bfa380cc"
+    },
+    {
+      "id": "teacher_word",
+      "label": "Panduan Guru — Word",
+      "file": "CikguLaju_Diagnostik_T1_2027_Panduan_Guru.docx",
+      "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "size_bytes": 40680,
+      "sha256": "4020eab6a23e91cd40b6f3a5cb1da4b577292a2961aa87afab63a53476e6bf33"
+    },
+    {
+      "id": "analysis",
+      "label": "Analisis Kelas — Excel",
+      "file": "CikguLaju_Diagnostik_T1_2027_Analisis_Kelas.xlsx",
+      "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "size_bytes": 8450,
+      "sha256": "cfed22aa2ded0c9b70fef641a0b0c9279efd346d8da80d65e1c8586b14123a65"
+    },
+    {
+      "id": "all_pupils",
+      "label": "Lembaran Murid Gabungan — PDF",
+      "file": "CikguLaju_Diagnostik_T1_2027_Lembaran_Murid_Gabungan.pdf",
+      "mime": "application/pdf",
+      "pages": 6,
+      "size_bytes": 144039,
+      "sha256": "7ba35e07c4fd8a108cc524b1ab9bd5fe0a1b1bba39b65a6cad72526dd61f7e34"
+    }
+  ]
+}
