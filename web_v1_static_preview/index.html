@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#0c7669">
-<title>CikguLaju AI — Web</title>
+<title>CikguLaju AI — Pusat Sehenti Guru Sekolah Rendah</title>
 <link rel="icon" type="image/svg+xml" href="/assets/cikgulaju-logo.svg">
 <style>
 :root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#173d37;background:#f5f8f7}*{box-sizing:border-box}body{margin:0}.wrap{max-width:920px;margin:auto;padding:24px}.header{display:flex;align-items:center;gap:12px;font-size:1.1rem;font-weight:800}.mark{background:#087568;color:#fff;padding:13px;border-radius:13px}.panel{background:white;border:1px solid #e0eae6;border-radius:24px;padding:clamp(26px,6vw,58px);margin:56px auto 18px;max-width:640px;box-shadow:0 16px 48px #174b3910}h1{font-size:clamp(1.8rem,5vw,2.6rem);letter-spacing:-.04em;line-height:1.15;margin:0 0 18px}p{line-height:1.65;color:#536c64} .pill{display:inline-block;background:#e6f5ee;color:#087568;border-radius:30px;padding:7px 12px;font-size:.78rem;font-weight:700;margin-bottom:20px}.login{background:#087568;color:#fff;border:0;border-radius:12px;padding:15px 20px;font:inherit;font-weight:700;width:100%;margin-top:14px;cursor:not-allowed;opacity:.55}.notice{font-size:.88rem;color:#65796f;margin-top:14px}.foot{text-align:center;color:#75867f;font-size:.8rem;margin-top:26px}@media(max-width:550px){.wrap{padding:16px}.panel{margin-top:35px;border-radius:18px;padding:27px}}
@@ -381,12 +381,12 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </head>
 <body>
 <div class="wrap">
-<header class="header site-header"><div class="site-header-brand"><img class="brand-icon" src="/assets/cikgulaju-logo.svg" width="62" height="62" alt="Logo CikguLaju AI" decoding="async"><div><strong>CikguLaju AI</strong><small>Portal pengajaran guru</small></div></div><span class="site-header-chip">RPH &amp; RPT 2027</span></header>
+<header class="header site-header"><div class="site-header-brand"><img class="brand-icon" src="/assets/cikgulaju-logo.svg" width="62" height="62" alt="Logo CikguLaju AI" decoding="async"><div><strong>CikguLaju AI</strong><small>Pusat Sehenti Guru Sekolah Rendah</small></div></div><span class="site-header-chip">Tahun 1–6 · PdP &amp; Bahan</span></header>
 <main class="panel">
 <img class="login-brand" src="/assets/cikgulaju-logo.svg" width="118" height="118" alt="CikguLaju AI" decoding="async">
 <span class="pill">Versi Web</span>
-<h1>Sediakan RPH langkah demi langkah</h1>
-<p>Log masuk dengan akaun Telegram CikguLaju. Pilih Tahun, Subjek, Unit/Tajuk dan Lesson/PdP, kemudian jana RPH Word atau PDF terus menggunakan penjana Telegram.</p>
+<h1>Urus PdP sekolah rendah lebih mudah</h1>
+<p>CikguLaju menyatukan jadual PdP, RPH, RPT dan bahan sokongan yang tersedia untuk Tahun 1–6. Log masuk menggunakan Telegram, pilih kelas dan Lesson/PdP, kemudian lihat bahan yang benar-benar boleh diakses.</p><p class="notice">10 janaan RPH percuma untuk akaun baharu. Semakan senarai bahan tidak memotong kuota.</p>
 <div id="telegram-widget" aria-label="Log masuk Telegram"></div>
 <p class="notice" role="status" id="login-status">Menyemak sambungan log masuk…</p>
 </main>
@@ -409,9 +409,9 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <button id="logout" type="button" class="sidebar-logout">Log keluar</button>
 </aside>
 <div class="app-main">
-<div class="workspace-intro"><div><span class="workspace-eyebrow">RUANG GURU</span><p>Selamat datang, <strong id="workspace-teacher-name">Cikgu</strong></p></div><span class="workspace-ready"><span aria-hidden="true">●</span> Portal Pembelajaran</span></div>
+<div class="workspace-intro"><div><span class="workspace-eyebrow">PUSAT SEHENTI GURU SEKOLAH RENDAH</span><p>Selamat datang, <strong id="workspace-teacher-name">Cikgu</strong></p></div><span class="workspace-ready"><span aria-hidden="true">●</span> Tahun 1–6</span></div>
 <section id="view-today" class="app-view" aria-labelledby="view-today-heading" hidden>
-  <h2 id="view-today-heading">RPH Hari Ini</h2>
+  <h2 id="view-today-heading">RPH Hari Ini · Pusat Bahan PdP</h2>
   <p>Pilih Tema/Unit/Tajuk dan Lesson/PdP untuk setiap kelas di bawah. Selepas semua pilihan selesai, tekan <strong>Jana Bahan Semua Lesson</strong> sekali. Hasil bagi setiap kelas dan subjek akan dipaparkan secara berasingan di bahagian paling bawah.</p>
   <div class="daily-rph-toolbar">
     <div><label for="today-date">Tarikh PdP</label><input id="today-date" type="date" aria-label="Tarikh RPH Hari Ini"></div>
@@ -426,8 +426,8 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <div class="daily-rph-batch"><button type="button" id="today-generate-all" disabled>Jana Bahan Semua Lesson</button><span class="notice">Pilih Lesson/PdP untuk semua kelas terlebih dahulu.</span></div>
   <p id="today-generate-status" class="notice" role="status" aria-live="polite"></p>
   <section id="today-results" class="daily-rph-output" aria-labelledby="today-results-heading" hidden>
-    <h3 id="today-results-heading">Bahan RPH Hari Ini</h3>
-    <p class="notice">Hasil disusun mengikut urutan waktu mengajar di atas. Setiap kelas dan subjek mempunyai bahan serta butang muat turun masing-masing.</p>
+    <h3 id="today-results-heading">Bahan PdP Hari Ini Mengikut Kelas</h3>
+    <p class="notice">Hasil disusun mengikut waktu dan kelas. RPH, Buku Aktiviti, audio dan petikan Student Book hanya dipaparkan apabila pautan sumber berkaitan benar-benar tersedia. Bahan yang belum disahkan tidak dipaparkan.</p>
     <div id="today-results-list" class="daily-rph-result-list" aria-label="Bahan mengikut kelas dan subjek" aria-live="polite"></div>
   </section>
   <div class="daily-rph-footer">
