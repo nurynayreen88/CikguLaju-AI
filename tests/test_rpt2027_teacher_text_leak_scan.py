@@ -289,6 +289,27 @@ class TeacherTextLeakAuditTests(unittest.TestCase):
         self.assertNotIn("semak negeri", public_note(row).lower())
         self.assertIn("Aktiviti guru", public_note(row))
 
+    def test_bm_y2_y3_all_source_hold_notes_are_withheld_not_mutated(self):
+        from scripts.build_rpt_2027_remaining_four_subjects_staging import bm_records
+        from rpt_2027.common.teacher_display_projection import public_note
+        expected = {2: 2, 3: 7, 4: 0, 5: 0, 6: 0}
+        for year, count in expected.items():
+            with self.subTest(year=year):
+                rows = bm_records(year)
+                held = [row for row in rows if row.get("source_held")]
+                self.assertEqual(len(held), count)
+                for row in held:
+                    original_note = row["note"]
+                    self.assertIn("HOLD", original_note)
+                    self.assertEqual(public_note(row), "")
+                    self.assertEqual(row["note"], original_note)
+                self.assertTrue(all(not row.get("source_held")
+                                    for row in rows[:3]))
+        leaked = ("PdP 034 BT1 m/s 32 BA m/s 38 "
+                  "HOLD padanan SP berganda, semak semula sumber.")
+        self.assertIn("HELD_BM_SP_CROSSWALK",
+                      {r["rule"] for r in find_internal_notes(leaked)})
+
     def test_bm_y2_held_pdp_130_131_do_not_leak_ready_instruction(self):
         from rpt_2027.common.teacher_display_projection import public_note
         records = (
