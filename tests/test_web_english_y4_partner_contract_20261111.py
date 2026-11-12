@@ -362,6 +362,46 @@ class WebTelegramYear4PartnerContract(unittest.TestCase):
                     self.assertEqual(response.status_code, 503)
 
 
+    def test_unmapped_student_book_preserves_verified_workbook(self):
+        """A missing Student Book must not suppress a separately verified WB."""
+        unmapped = sorted(set(range(1, 161)) - set(self.runtime.mapped))
+        candidates = [
+            n for n in unmapped if n in self.rows
+            and self.partner._material(4, n, root=PARTNER) is not None
+        ]
+        self.assertTrue(candidates, "Expected an independently verified WB Lesson")
+        lesson = candidates[0]
+        full_catalog = [
+            {"lesson_no": n, "unit_name": f"Source Lesson {n}"}
+            for n in range(1, 161)
+        ]
+        query = self._select(lesson)
+        with patch.object(self.runtime, "_en97_units",
+                          return_value=(full_catalog, ["Source"])), \
+             patch("web.unified_rph_web._account",
+                   return_value=({"authenticated": True, "telegram_user_id": 123}, None)), \
+             patch("web.native_telegram_extra_materials_20261106._get",
+                   side_effect=self._dispatch):
+            listing = self.web_client.get(
+                "/api/web/rph/extra-materials", query_string=query
+            )
+            self.assertEqual(listing.status_code, 200)
+            types_found = [x["type"] for x in listing.json["items"]]
+            self.assertIn("workbook", types_found)
+            self.assertNotIn("student_book", types_found)
+            workbook = self.web_client.get(
+                "/api/web/rph/english-workbook", query_string=query
+            )
+            missing_book = self.web_client.get(
+                "/api/web/rph/english-student-book", query_string=query
+            )
+        self.assertEqual(workbook.status_code, 200)
+        self.assertEqual(workbook.mimetype, "application/pdf")
+        self.assertGreaterEqual(len(PdfReader(BytesIO(workbook.data)).pages), 1)
+        self.assertEqual(workbook.headers["Cache-Control"], "no-store, private")
+        self.assertEqual(missing_book.status_code, 503)
+
+
     def test_no_login_wrong_unit_and_missing_telegram_bearer(self):
         query = self._select(103)
         with patch("web.unified_rph_web._account",
