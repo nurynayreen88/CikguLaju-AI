@@ -25,7 +25,7 @@ for(const name of ["today","rph","special","rpt","account","payment","feedback",
  assert.ok(source.includes('["'+name+'","view-'+name+'"]'),"Existing navigation removed: "+name);
 assert.match(nav,/id="web-admin-tab"[^>]*hidden/,"Private admin must stay hidden");
 assert.match(nav,/id="web-referral-tab"[^>]*hidden/,"Private referral must stay hidden");
-assert.doesNotMatch(view[1],/href=|onclick=|fetch\\(/,
+assert.equal(/href=|onclick=/.test(view[1]) || view[1].includes("fetch("), false,
  "Coming Soon is only information, not an active download route");
 assert.match(source,/id="show-materials"/,"Original RPH options remain intact");
 console.log("UPCOMING_MATERIALS_MENU: PASS (roadmap is visible, inactive sources locked, original navigation intact)");
