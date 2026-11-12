@@ -56,3 +56,13 @@
 - Senarai bahan manual dan PdP Hari Ini memaparkan Word hanya apabila `extra-materials` memulangkan URL dalaman asal yang disahkan; tiada menu Word kosong. Contoh awam tanpa login masih **PDF Lesson 004 sahaja**, bukannya Word atau PDF bebas mengikut parameter.
 - CI staging diperluas memeriksa sumber, hak akses, format DOCX, dimensi A4, tiada skema/nota guru dalam teks murid, dan bukan perubahan kredit. Catatan tambahan: pemeriksaan susun atur Word Lesson 090 dengan LibreOffice tempatan menghasilkan satu halaman A4 tanpa pemotongan; ini belum menggantikan semakan keempat-empat fail dalam Render/mobile.
 - Kekal HOLD sebelum deploy: perlu gabung selamat dengan PR #559 Student Book, semakan reka letak keempat-empat Word/PDF dan ujian klik real di telefon serta hak edaran bahan.
+
+## Pemulihan bank worksheet lama (12 November 2026)
+- Pengguna mengesahkan mahu menggunakan bahan awal pembangunan sebagai **dummy/staging** dan membaikinya sebelum pengguna produksi melihatnya.
+- Fail sumber yang benar-benar wujud dalam repo termasuk `CikguLaju_Worksheet_Content.db`, `CikguLaju_Templates_02.db` hingga `_10.db`, `CikguLaju_Visuals_04.db`/`_06.db` dan DB kurikulum lama `CikguLaju_Curriculum_Master_v24_95_MATERIAL_AUDIT.db`.
+- Rekod sejarah v23.97/v23.98 menyebut 20,332 **sumber kurikulum** dan 17,875 sumber yang boleh diproses tanpa lukisan baharu, bukan 20,332 worksheet siap/approved. Queue 4,378 artwork tasks pada v23.99 bukan imej siap. Oktober 2026 BBM/Worksheet OFF atas isu kualiti; tiada kebenaran untuk membuka semula secara automatik.
+- Inventori terasing: `audits/legacy_worksheet_sources_staging_20261112.json` (semua `UNREVIEWED`, gate `OFF`).
+- Skrip `tools/audit_legacy_worksheet_banks_20261112.py` membaca SQLite secara `mode=ro&immutable=1`, hanya mengeluarkan hash, integrity, nama jadual dan bilangan rekod yang berkaitan; tiada salinan kandungan murid, tiada mutasi DB, tiada Supabase, tiada Telegram.
+- CI `tests/test_legacy_worksheet_inventory_20261112.py` menjaga fail tidak berubah, tiada `READY` tersirat, nama fail terkawal, fail missing/symlink tidak dibaca; workflow memeriksa fail DB sebenar dalam staging dan menyimpan hasil hanya sementara pada runner.
+- Langkah seterusnya: kenal pasti skema dan kandungan calon, padan Tahun 1–6/DSKP/SK/SP/Unit/Lesson; audit kesesuaian pedagogi, ejaan, hak edaran, visual dan ruang jawapan; baiki format; sediakan PDF/Word; hanya kemudian tandakan calon `READY` secara manual dan buka dalam UI. Bahan belum lulus tidak muncul di Web/Telegram.
+- Fail demo Tahun 1 lama dalam Library (`CikguLaju_Demo_Worksheet_Tahun1_Semua_Subjek.pdf`, `CikguLaju_Worksheet_Commercial_BW_Tahun1_v23_22.pdf`) ialah **contoh reka bentuk**, bukan bukti bahan rasmi yang lulus audit.
