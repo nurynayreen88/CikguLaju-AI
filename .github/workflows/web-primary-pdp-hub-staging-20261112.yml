@@ -21,6 +21,8 @@ on:
       - 'supplementary_materials/science/year1/repair_demo_sk1_1_sp1_1_1_20261112.json'
       - 'tools/render_science_y1_worksheet_20261112.py'
       - 'tests/test_repaired_science_y1_dummy_20261112.py'
+      - 'audits/worksheet_y1_repair_review_queue_20261112.json'
+      - 'tests/test_worksheet_y1_review_queue_20261112.py'
       - 'web/unified_rph_web.py'
       - 'english_supplementary_materials.py'
       - 'supplementary_materials/english/year4/**'
@@ -75,6 +77,8 @@ jobs:
                   print('  TABLE', table['table'], 'rows=', table.get('rows'),
                         'columns=', cols[:320], 'STATUS=', table['status'])
           PY
+      - name: Validate Year 1 candidate review queue cannot auto-publish
+        run: PYTHONPATH=. python -m unittest -v tests.test_worksheet_y1_review_queue_20261112
       - name: Validate Science Year 1 A4 PDF and Word, all six answers and private staging boundaries
         run: PYTHONPATH=. python -m unittest -v tests.test_repaired_science_y1_dummy_20261112
       - name: Triage worksheet content coverage and manual approval boundary
