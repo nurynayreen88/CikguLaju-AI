@@ -858,8 +858,9 @@ def create_blueprint():
     # The Web never guesses an RPT ID, exposes Telegram credentials or
     # copies files from an unsynchronized Web-side legacy database.
     def _extra_selection():
-        if set(request.args) != {"year", "subject", "unit", "lesson"}:
-            raise ValueError("Unexpected extra resource selection")
+        if (set(request.args) != {"year", "subject", "unit", "lesson"}
+                or any(len(request.args.getlist(k)) != 1 for k in request.args)):
+            raise ValueError("Unexpected or duplicate extra resource selection")
         year, sub, unit, lesson, component = _selection()
         if component is not None:
             raise ValueError("Unsupported extra resource component")
@@ -885,30 +886,85 @@ def create_blueprint():
             return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
         try:
             from web.native_telegram_extra_materials_20261106 import (
-                english_workbook_metadata, music_source_links,
+                english_workbook_metadata, english_student_book_metadata, music_source_links,
             )
             if sub == "ENGLISH":
-                label = english_workbook_metadata(year, number)
+                # Existing Telegram Workbook and owner-authored worksheets are
+                # independent sources. A Telegram outage must not hide a local
+                # exact-Lesson worksheet that has passed the file registry.
+                from urllib.parse import urlencode
+                params = urlencode({"year":year, "subject":sub,
+                                    "unit":unit, "lesson":token})
                 items = []
+                workbook_failed = False
+                try:
+                    label = english_workbook_metadata(year, number)
+                except Exception:
+                    label, workbook_failed = None, True
                 if label:
-                    from urllib.parse import urlencode
-                    params = urlencode({"year":year, "subject":sub,
-                                      "unit":unit, "lesson":token})
                     items.append({"type":"workbook", "title":label,
                                   "url":"/api/web/rph/english-workbook?"+params,
                                   "action":"Download"})
+                if year == 4:
+                    # Independent Telegram Student Book and owner-authored Worksheet:
+                    # missing one source never hides other source-verified files.
+                    try:
+                        book_label = english_student_book_metadata(year, number)
+                    except Exception:
+                        book_label = None
+                    if book_label:
+                        items.append({"type":"student_book", "title":book_label,
+                                      "url":"/api/web/rph/english-student-book?"+params,
+                                      "action":"Download"})
+                    from web.english_y4_worksheet_pdf_20261112 import worksheet_metadata
+                    worksheet_label = worksheet_metadata(year, number)
+                    if worksheet_label:
+                        items.append({"type":"worksheet", "title":worksheet_label+" (PDF)",
+                                      "url":"/api/web/rph/english-worksheet?"+params,
+                                      "action":"Download"})
+                        items.append({"type":"worksheet_word", "title":worksheet_label+" (Word boleh edit)",
+                                      "url":"/api/web/rph/english-worksheet-word?"+params,
+                                      "action":"Download"})
+                if workbook_failed and not items:
+                    return jsonify({"items": [], "error":
+                                    "Sumber bahan tambahan Telegram belum dapat disahkan."}), 503
             else:
                 # Telegram verifies the Music Unit/PdP pair and returns only
                 # original owner-hosted Google Drive VIEW links.
                 items = music_source_links(year, unit, token)
         except Exception:
             return jsonify({"items": [],"error":
-                            "Sumber bahan tambahan Telegram belum dapat disahkan."}), 503
-        return jsonify({"items": items, "status":"SUMBER_ASAL",
+                            "Sumber bahan tambahan belum dapat disahkan."}), 503
+        return jsonify({"items": items,
+                        "status":"SUMBER_ASAL" if items else "BELUM_TERSEDIA",
                         "note": ("Pautan audio luar: akses, kandungan dan hak edar "
                                  "belum disahkan." if sub == "MUZIK" else
-                                 "Buku Aktiviti dipetik daripada halaman sumber yang dipadankan; "
-                                 "tiada janaan RPH digunakan.")})
+                                 "Hanya Workbook, Student Book atau lembaran kerja "
+                                 "yang mempunyai sumber tepat dipaparkan. "
+                                 "Lembaran kerja ciptaan guru bukan halaman buku teks rasmi; "
+                                 "semak ketepatan dan hak edar sumber asal. "
+                                 "Semakan bahan tidak menggunakan kuota RPH.")})
+
+    @bp.get("/api/web/rph/english-student-book")
+    def english_student_book():
+        # Private, exact Lesson; never consume RPH trial credits.
+        account, error = _account()
+        if error is not None:
+            return error
+        try:
+            year, sub, unit, token, number = _extra_selection()
+            if sub != "ENGLISH" or year != 4:
+                raise ValueError("Unsupported Student Book")
+        except (ValueError, TypeError):
+            return jsonify({"error":"Pilihan Lesson Student Book tidak sah"}), 400
+        try:
+            from web.native_telegram_extra_materials_20261106 import english_student_book_pdf
+            content = english_student_book_pdf(year, number)
+        except Exception:
+            return jsonify({"error":"Fail Student Book dari Telegram belum tersedia"}), 503
+        return send_file(BytesIO(content), mimetype="application/pdf",
+                         as_attachment=True, conditional=False,
+                         download_name=f"CikguLaju_English_Y{year}_Lesson_{number:03d}_Student_Book.pdf")
 
     @bp.get("/api/web/rph/english-workbook")
     def english_workbook():
@@ -929,5 +985,77 @@ def create_blueprint():
         return send_file(BytesIO(content), mimetype="application/pdf",
                          as_attachment=True, conditional=False,
                          download_name=f"CikguLaju_English_Y{year}_Lesson_{number:03d}_Workbook.pdf")
+
+    @bp.get("/api/web/demo/worksheet.pdf")
+    def public_sample_worksheet():
+        # Single owner-authored public example: no Telegram session, account,
+        # credit lookup, private Book/Workbook pages, or user-selected Lesson.
+        # All other worksheet downloads still require an authenticated account.
+        if request.args:
+            return jsonify({"error": "Pratonton awam tidak menerima pilihan tambahan"}), 400
+        try:
+            from web.english_y4_worksheet_pdf_20261112 import worksheet_pdf
+            document = worksheet_pdf(4, 4)
+        except Exception:
+            return jsonify({"error": "Contoh lembaran kerja belum tersedia"}), 503
+        if document is None:
+            return jsonify({"error": "Contoh lembaran kerja belum tersedia"}), 503
+        response = send_file(BytesIO(document), mimetype="application/pdf",
+                             as_attachment=False, conditional=False,
+                             download_name="CikguLaju_Contoh_Lembaran_Kerja_English_Y4_L004.pdf")
+        response.headers["X-CikguLaju-Public-Demo"] = "1"
+        return response
+
+    @bp.get("/api/web/rph/english-worksheet")
+    def english_worksheet():
+        # Not an RPH generation: authenticated, source-exact and credit-free.
+        account, error = _account()
+        if error is not None:
+            return error
+        try:
+            year, sub, unit, token, number = _extra_selection()
+            if sub != "ENGLISH" or year != 4:
+                raise ValueError("Unsupported worksheet subject or year")
+        except (ValueError, TypeError):
+            return jsonify({"error":"Pilihan lembaran kerja tidak sah"}), 400
+        try:
+            from web.english_y4_worksheet_pdf_20261112 import worksheet_pdf
+            document = worksheet_pdf(year, number)
+        except Exception:
+            return jsonify({"error":"Lembaran kerja belum dapat disediakan"}), 503
+        if document is None:
+            return jsonify({"error":"Lembaran kerja belum tersedia untuk Lesson ini"}), 404
+        response = send_file(BytesIO(document), mimetype="application/pdf",
+                             as_attachment=True, conditional=False,
+                             download_name=f"CikguLaju_English_Y4_Lesson_{number:03d}_Worksheet.pdf")
+        response.headers["X-CikguLaju-Material-Source"] = "approved-supplementary-english-y4"
+        return response
+
+    @bp.get("/api/web/rph/english-worksheet-word")
+    def english_worksheet_word():
+        # Editable pupil copy, same exact source selection and auth as PDF.
+        # Read-only resource; never use RPH delivery-credit methods.
+        account, error = _account()
+        if error is not None:
+            return error
+        try:
+            year, sub, unit, token, number = _extra_selection()
+            if sub != "ENGLISH" or year != 4:
+                raise ValueError("Unsupported worksheet subject or year")
+        except (ValueError, TypeError):
+            return jsonify({"error":"Pilihan lembaran kerja tidak sah"}), 400
+        try:
+            from web.english_y4_worksheet_word_20261112 import worksheet_docx
+            document = worksheet_docx(year, number)
+        except Exception:
+            return jsonify({"error":"Lembaran kerja Word belum dapat disediakan"}), 503
+        if document is None:
+            return jsonify({"error":"Lembaran kerja belum tersedia untuk Lesson ini"}), 404
+        response = send_file(BytesIO(document),
+                             mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                             as_attachment=True, conditional=False,
+                             download_name=f"CikguLaju_English_Y4_Lesson_{number:03d}_Worksheet.docx")
+        response.headers["X-CikguLaju-Material-Source"] = "approved-supplementary-english-y4"
+        return response
 
     return bp

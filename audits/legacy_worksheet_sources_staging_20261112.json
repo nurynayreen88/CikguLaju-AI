@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "name": "CikguLaju legacy worksheet restoration inventory",
+  "visibility": "internal_staging_only",
+  "production_feature_gate": "OFF",
+  "purpose": "Discover and audit old worksheets without publishing or modifying their source databases",
+  "sources": [
+    {"path": "CikguLaju_Worksheet_Content.db", "type": "sqlite", "status": "UNREVIEWED", "role": "legacy worksheet content"},
+    {"path": "CikguLaju_Templates_02.db", "type": "sqlite", "status": "UNREVIEWED", "role": "legacy template"},
+    {"path": "CikguLaju_Templates_03.db", "type": "sqlite", "status": "UNREVIEWED", "role": "legacy template"},
+    {"path": "CikguLaju_Templates_04.db", "type": "sqlite", "status": "UNREVIEWED", "role": "legacy template"},
+    {"path": "CikguLaju_Templates_05.db", "type": "sqlite", "status": "UNREVIEWED", "role": "legacy template"},
+    {"path": "CikguLaju_Templates_06.db", "type": "sqlite", "status": "UNREVIEWED", "role": "legacy template"},
+    {"path": "CikguLaju_Templates_07.db", "type": "sqlite", "status": "UNREVIEWED", "role": "legacy template"},
+    {"path": "CikguLaju_Templates_08.db", "type": "sqlite", "status": "UNREVIEWED", "role": "legacy template"},
+    {"path": "CikguLaju_Templates_09.db", "type": "sqlite", "status": "UNREVIEWED", "role": "legacy template"},
+    {"path": "CikguLaju_Templates_10.db", "type": "sqlite", "status": "UNREVIEWED", "role": "legacy template"},
+    {"path": "CikguLaju_Visuals_04.db", "type": "sqlite", "status": "UNREVIEWED", "role": "visual production queue; no image-ready claim"},
+    {"path": "CikguLaju_Visuals_06.db", "type": "sqlite", "status": "UNREVIEWED", "role": "legacy visuals; licensing and quality unknown"},
+    {"path": "CikguLaju_Curriculum_Master_v24_95_MATERIAL_AUDIT.db", "type": "sqlite", "status": "UNREVIEWED", "role": "old curriculum-material mapping, not the live curriculum DB"}
+  ],
+  "review_rules": [
+    "Only primary-school Years 1–6",
+    "No legacy content is approved merely because a row or template exists",
+    "Validate subject, Year, Tema/Unit/Tajuk, SK/SP, lesson and current DSKP/RPT/textbook",
+    "Reject blank, duplicated, generic, factually wrong, age-inappropriate or broken-image tasks",
+    "Check source rights, answer spaces, Malay/English language, A4 PDF and editable Word",
+    "Do not show SK/SP in student worksheet artwork; keep curriculum mapping in metadata",
+    "Only manually approved records may be promoted by a separate reviewed change",
+    "Do not alter production database, Telegram, quota, payment or the disabled BBM/Worksheet gate"
+  ]
+}

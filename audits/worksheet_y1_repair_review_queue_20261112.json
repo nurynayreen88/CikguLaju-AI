@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "scope": "INTERNAL_STAGING_ONLY",
+  "live_feature_gate": "OFF",
+  "auto_publish": false,
+  "description": "Calon pemulihan daripada bank worksheet lama. Hanya bahan Tahun 1 yang mempunyai soalan lengkap; belum dipadankan dengan Lesson/PdP atau diluluskan guru.",
+  "candidates": [
+    {
+      "id": "repair-math-y1-1.1.1",
+      "source": "supplementary_materials/math/year1/repair_demo_sk1_1_sp1_1_1_20261112.json",
+      "year": 1,
+      "subject": "Matematik",
+      "sk": "1.1",
+      "sp": "1.1.1",
+      "question_count": 6,
+      "content_status": "REVIEW_REQUIRED",
+      "pdf_status": "QA_LOCAL_ONLY",
+      "word_status": "QA_LOCAL_ONLY",
+      "lesson_token": null,
+      "teacher_approved": false,
+      "public": false,
+      "review_focus": [
+        "Padankan PdP sebenar",
+        "Semak arahan lukis satu bulatan dan ruang jawapan",
+        "Semak masa pelaksanaan dan kesesuaian murid Tahun 1"
+      ],
+      "mapping_status": "PENDING_VERIFIED_TELEGRAM_LESSON",
+      "mapping_note": "web/unified_rph_web.py source_records only serves local Year 2-6 ENGLISH/MORAL/PJPK/PSV, and cannot verify Year 1 Sains/Matematik Lesson. Require authoritative Telegram source check before assigning token."
+    },
+    {
+      "id": "repair-science-y1-1.1.1",
+      "source": "supplementary_materials/science/year1/repair_demo_sk1_1_sp1_1_1_20261112.json",
+      "year": 1,
+      "subject": "Sains",
+      "sk": "1.1",
+      "sp": "1.1.1",
+      "question_count": 6,
+      "content_status": "REVIEW_REQUIRED",
+      "pdf_status": "QA_LOCAL_ONLY",
+      "word_status": "QA_LOCAL_ONLY",
+      "lesson_token": null,
+      "teacher_approved": false,
+      "public": false,
+      "review_focus": [
+        "Padankan PdP sebenar",
+        "Pastikan semua bahan pemerhatian bersih dan tersedia",
+        "Pastikan jawapan warna, bentuk dan tekstur diterima mengikut objek yang digunakan"
+      ],
+      "mapping_status": "PENDING_VERIFIED_TELEGRAM_LESSON",
+      "mapping_note": "web/unified_rph_web.py source_records only serves local Year 2-6 ENGLISH/MORAL/PJPK/PSV, and cannot verify Year 1 Sains/Matematik Lesson. Require authoritative Telegram source check before assigning token."
+    }
+  ],
+  "release_criteria": [
+    "Guru mengesahkan objektif dan ketepatan SK/SP daripada DSKP/DSKP terkini",
+    "Lesson/PdP dan Tema/Unit/Tajuk disahkan pada katalog web sebenar",
+    "Soalan bukan arahan generik dan boleh dijawab tanpa gambar/bahan yang hilang",
+    "Pemeriksaan saiz ruang respons, PDF dan DOCX pada peranti sebenar",
+    "Bahan tidak mengandungi skema jawapan tersembunyi atau nota developer",
+    "Hak edaran latihan disahkan",
+    "Kelulusan manusia direkod berasingan sebelum dibuka kepada pengguna"
+  ],
+  "prohibition": "Do not display in public Web/Telegram; do not change Supabase, credit, payment or original DB."
+}
