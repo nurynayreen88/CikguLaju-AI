@@ -25,6 +25,13 @@ jobs:
           ref: aa05d06324806add65304cabd1d1c2c8db0d6aa9
           path: .partner-telegram
           persist-credentials: false
+      - name: Checkout pinned legacy map correction PR 567 separately
+        uses: actions/checkout@v4
+        with:
+          repository: nurynayreen88/CikguLaju-AI
+          ref: e98872f8a21ca001d1c2041b907ec31346ee4111
+          path: .partner-y4-legacy
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -50,4 +57,5 @@ jobs:
       - name: Verify Web and Telegram PR contract with real source PDFs
         env:
           CIKGULAJU_PR558_DIR: .partner-telegram
+          CIKGULAJU_PR567_DIR: .partner-y4-legacy
         run: python -m unittest -v tests.test_web_english_y4_partner_contract_20261111
