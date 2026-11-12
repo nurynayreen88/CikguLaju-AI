@@ -2,7 +2,7 @@
   "package_id": "CIKGULAJU-AI-T1-DIAG-2027",
   "label": "Ujian Diagnostik • Tahun 1",
   "school_level": "sekolah rendah",
-  "edition": "2027",
+  "edition": "2027 • Edisi Baharu (v2)",
   "created": "2026-11-13",
   "notice": "Pengesanan awal selepas murid memasuki Tahun 1. Bukan ujian kemasukan atau instrumen rasmi KPM. Tiada penggredan TP PBD.",
   "placement": "Sediakan Bahan PdP > Tahun 1 > Ujian Diagnostik",
@@ -11,80 +11,81 @@
     {
       "id": "bm",
       "label": "Bahasa Melayu",
-      "file": "CikguLaju_Diagnostik_T1_2027_BM.pdf",
+      "file": "01_Bahasa_Melayu_T1_2027.pdf",
       "mime": "application/pdf",
-      "pages": 2,
-      "size_bytes": 73899,
-      "sha256": "63570c019b339a942070effcf30f38083a127bc1e991659a9f0fcf49ac1e8f0d"
+      "pages": 3,
+      "size_bytes": 64961,
+      "sha256": "793f3807c95029423f6cd053e809e41382bb9ba8f9340b31df9173337a38ea0a"
     },
     {
       "id": "bi",
       "label": "Bahasa Inggeris",
-      "file": "CikguLaju_Diagnostik_T1_2027_BI.pdf",
+      "file": "02_Bahasa_Inggeris_T1_2027.pdf",
       "mime": "application/pdf",
-      "pages": 2,
-      "size_bytes": 72910,
-      "sha256": "6c98d6830cbec8a48f35d4e441bba521c1be00c8dec8c7624dd59f42225c5845"
+      "pages": 3,
+      "size_bytes": 81259,
+      "sha256": "c902a64b05a8c024ddca520c352cf98f099c5ef60ea976038f527b9193842442"
     },
     {
       "id": "math",
       "label": "Matematik",
-      "file": "CikguLaju_Diagnostik_T1_2027_Matematik.pdf",
+      "file": "03_Matematik_T1_2027.pdf",
       "mime": "application/pdf",
-      "pages": 2,
-      "size_bytes": 74270,
-      "sha256": "d40bdea5d8c6bfd2d7bc93a1ea2f8bb77ad217bda405dc94a34f9d3200ecb15a"
+      "pages": 3,
+      "size_bytes": 64283,
+      "sha256": "7615e40c23660091cf841ea66e8f20f187ea02655b28364a1545a03fee35062f"
     },
     {
       "id": "observation",
       "label": "Borang Pemerhatian",
-      "file": "CikguLaju_Diagnostik_T1_2027_Pemerhatian.pdf",
+      "file": "04_Borang_Pemerhatian_T1_2027.pdf",
       "mime": "application/pdf",
       "pages": 2,
-      "size_bytes": 72396,
-      "sha256": "35129580b6e79d6c8e45df6b2c693b2f1a94abf0f57d47aa70b9397280241b87"
+      "size_bytes": 79364,
+      "sha256": "23808c85f0d8021f6be0c0fc7ac32c6c60d31af53ffef45117652d712328e419"
     },
     {
       "id": "teacher_pdf",
       "label": "Panduan Guru — PDF",
-      "file": "CikguLaju_Diagnostik_T1_2027_Panduan_Guru.pdf",
+      "file": "05_Panduan_Guru_Diagnostik_T1_2027.pdf",
       "mime": "application/pdf",
-      "pages": 5,
-      "size_bytes": 148710,
-      "sha256": "ba1acb072df4c9b64a20e81d3333b6faf0073085f1239befbb2801e8bfa380cc"
+      "pages": 6,
+      "size_bytes": 138016,
+      "sha256": "f4f12f0748da63010d83d6cf6db53952ee91f86a1cf8b55e44efdbdbb1ec6c17"
     },
     {
       "id": "teacher_word",
       "label": "Panduan Guru — Word",
-      "file": "CikguLaju_Diagnostik_T1_2027_Panduan_Guru.docx",
+      "file": "05_Panduan_Guru_Diagnostik_T1_2027.docx",
       "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-      "size_bytes": 40680,
-      "sha256": "4020eab6a23e91cd40b6f3a5cb1da4b577292a2961aa87afab63a53476e6bf33"
+      "size_bytes": 45138,
+      "sha256": "80b903bb653d637f06b4d4da65787a0d7f717965a9247293d12f898960627838"
     },
     {
       "id": "analysis",
       "label": "Analisis Kelas — Excel",
-      "file": "CikguLaju_Diagnostik_T1_2027_Analisis_Kelas.xlsx",
+      "file": "06_Analisis_Kelas_T1_2027.xlsx",
       "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
-      "size_bytes": 8450,
-      "sha256": "cfed22aa2ded0c9b70fef641a0b0c9279efd346d8da80d65e1c8586b14123a65"
+      "size_bytes": 16618,
+      "sha256": "c362acc9d3de55ae927976c346d33d1eb103d1195b6556dd584ee40d5142667f"
     },
     {
       "id": "all_pupils",
       "label": "Lembaran Murid Gabungan — PDF",
-      "file": "CikguLaju_Diagnostik_T1_2027_Lembaran_Murid_Gabungan.pdf",
+      "file": "07_Lembaran_Murid_Gabungan_9_Halaman.pdf",
       "mime": "application/pdf",
-      "pages": 6,
-      "size_bytes": 144039,
-      "sha256": "7ba35e07c4fd8a108cc524b1ab9bd5fe0a1b1bba39b65a6cad72526dd61f7e34"
+      "pages": 9,
+      "size_bytes": 102356,
+      "sha256": "0314658888ed957c306a16d3128675b88e8b294c305f32d91528abea020f9a71"
     },
     {
       "id": "download_semua",
       "label": "Muat Turun Semua — ZIP",
-      "file": "CikguLaju_Pakej_Ujian_Diagnostik_Tahun_1_2027.zip",
+      "file": "CIKGULAJU_Ujian_Diagnostik_Tahun1_2027_EDISI_BAHARU.zip",
       "mime": "application/zip",
-      "size_bytes": 468181,
-      "sha256": "69e2adc57401e244dd8584112b795d5ef444ed18cdf3d1b6337293e5eb7d8e5d"
+      "size_bytes": 475206,
+      "sha256": "e5bcc307ad8ce4bcbc1c17c3c536aaba903fc58aa98ac64535e75f9207480192"
     }
-  ]
+  ],
+  "revised_on": "2026-11-13"
 }
