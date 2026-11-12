@@ -101,13 +101,16 @@
     "answer_policy": "Jawapan Q1–Q4 dan Q6 bergantung kepada objek. Q5: telinga. Jangan cetak nota ini dalam salinan murid."
   },
   "qa": {
-    "pdf_created": false,
-    "word_document_created": false,
-    "visual_inspected": false,
+    "pdf_created": true,
+    "word_document_created": true,
+    "visual_inspected": true,
     "teacher_approved": false,
     "lesson_mapping_approved": false,
     "no_public_routes": true,
     "no_quota_changes": true,
-    "rights": "teacher-authored-original"
+    "rights": "teacher-authored-original",
+    "page_count_local_pdf": 1,
+    "page_count_local_word": 1,
+    "rendering_note": "QA setempat melalui ReportLab, LibreOffice dan semakan paparan PNG; sumber skrip staging turut diuji dalam GitHub Actions. Belum disahkan oleh guru atau dipadankan ke Lesson."
   }
 }
