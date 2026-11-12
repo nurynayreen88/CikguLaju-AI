@@ -58,7 +58,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install 'reportlab==4.2.5' 'pypdf==5.1.0' 'PyMuPDF==1.24.14'
+      - run: pip install 'reportlab==4.2.5' 'pypdf==5.1.0' 'PyMuPDF==1.24.14' 'beautifulsoup4==4.12.3'
       - run: python -m py_compile rpt_2027/common/format_2026_layout_preview.py scripts/build_rpt_2027_standard_preview.py scripts/build_rpt_2027_second_batch_preview.py rpt_2027/common/standard_text_enrichment.py rpt_2027/common/calendar_week_mapping_staging.py scripts/audit_rpt_2027_calendar_master_staging.py rpt_2027/common/sejarah_source_enrichment_staging.py scripts/build_rpt_2027_rbt_32_week_illustration.py rpt_2027/common/rbt_truncated_title_guard_staging.py rpt_2027/common/rbt_2026_week_source_annotation_staging.py scripts/audit_rpt2027_release_gaps_staging.py scripts/verify_rbt_t4_textbook_pages_offline.py
       - name: Audit source and render each of the 13 A4 landscape PDFs
         run: python -m unittest tests.test_rpt_2027_standard_2026_layout_preview tests.test_rpt_2027_second_batch_preview tests.test_rpt_2027_calendar_master_staging tests.test_rpt_2027_rbt_32_week_illustration tests.test_rbt_rpt2026_week_block_evidence_staging tests.test_rbt_2026_source_week_notes_staging tests.test_rbt_teacher_week_allocation_staging tests.test_rpt_2027_rbt_truncated_titles tests.test_rpt_2027_rbt_t4_book_page_evidence tests.test_rpt_2027_rbt_y5_y6_book_mapping -v
