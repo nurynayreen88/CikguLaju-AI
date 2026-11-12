@@ -70,20 +70,20 @@ class WorksheetSourceTests(TestCase):
         # The source can gain a multi-line teacher footer later: never remove
         # only its label and accidentally print the answer paragraphs below.
         cases = (
-            "**Teacher assessment:** Confidential rubric\\nSECRET_RUBRIC",
-            "## Teacher notes\\nSECRET_TEACHER_NOTES",
-            "### Answer key (A)\\nSECRET_ANSWERS",
-            "**Suggested answers:**\\nSECRET_EXAMPLES",
+            "**Teacher assessment:** Confidential rubric\nSECRET_RUBRIC",
+            "## Teacher notes\nSECRET_TEACHER_NOTES",
+            "### Answer key (A)\nSECRET_ANSWERS",
+            "**Suggested answers:**\nSECRET_EXAMPLES",
         )
         for tail in cases:
             with self.subTest(footer=tail.splitlines()[0]):
-                raw = ("# English Year 4 — Lesson 004 — Writing Sheet\\n"
-                       "**Purpose:** Confidential planning note\\n"
-                       "Name: __________________\\n"
-                       "## A. Complete the sentence\\n"
-                       "1. She is from Malaysia.\\n" + tail +
-                       "\\nExtra confidential explanations.\\n")
-                visible = "\\n".join(_student_lines(raw))
+                raw = ("# English Year 4 — Lesson 004 — Writing Sheet\n"
+                       "**Purpose:** Confidential planning note\n"
+                       "Name: __________________\n"
+                       "## A. Complete the sentence\n"
+                       "1. She is from Malaysia.\n" + tail +
+                       "\nExtra confidential explanations.\n")
+                visible = "\n".join(_student_lines(raw))
                 self.assertIn("1. She is from Malaysia.", visible)
                 self.assertNotIn("Confidential", visible)
                 self.assertNotIn("SECRET_", visible)
@@ -99,7 +99,7 @@ class WorksheetSourceTests(TestCase):
         self.assertIn("Date: 20 November", PdfReader(
             io.BytesIO(worksheet_pdf(4, 90))).pages[0].extract_text())
         doc = Document(io.BytesIO(worksheet_docx(4, 90)))
-        student_text = "\\n".join(p.text for p in doc.paragraphs)
+        student_text = "\n".join(p.text for p in doc.paragraphs)
         self.assertIn("Date: 20 November", student_text)
         self.assertNotIn("Friday, 20 November", student_text)
 
