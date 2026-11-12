@@ -136,9 +136,9 @@ def make_docx(data, target):
     section.header_distance, section.footer_distance = Mm(7), Mm(7)
     norm = doc.styles["Normal"]
     norm.font.name = "Arial"
-    norm.font.size = Pt(9)
-    norm.paragraph_format.space_after = Pt(2)
-    norm.paragraph_format.line_spacing = 1.02
+    norm.font.size = Pt(10.5)
+    norm.paragraph_format.space_after = Pt(3)
+    norm.paragraph_format.line_spacing = 1.10
     h=section.header.paragraphs[0]
     h.add_run(TITLE).bold=True
     h.runs[0].font.size=Pt(9)
