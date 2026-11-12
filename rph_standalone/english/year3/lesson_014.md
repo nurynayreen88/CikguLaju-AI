@@ -12,14 +12,13 @@
 **Teacher:** Review family words from Lesson 13. **Pupils:** Respond and recall prior learning.
 
 ## Activity 1 — Guided preparation (15 minutes)
-**Teacher:** Replay or reread the model family text, highlight useful sentence openings and demonstrate the Writing Tip. **Pupils:** Read along, orally rehearse at least two sentences about their families and identify capitals and full stops.
+**Teacher:** Revisit the family text on SB p.11 as a writing model, show how to begin a sentence and demonstrate the Writing Tip in Teacher's Book p.27. **Pupils:** Identify useful sentence openings, rehearse two family sentences aloud and notice initial capitals and full stops.
 
 ## Activity 2 — Main task (25 minutes)
-**Teacher:** Read the model text; rehearse family descriptions orally; use the Writing Tip to draft and revise two or more sentences. **Pupils:** Rehearse two family sentences using SB p.11, apply the TB p.27 Writing Tip, draft the description and revise punctuation after feedback.
+**Teacher:** Guide pupils to draft two family-description sentences, organise a partner check for capitals and full stops, and give one improvement prompt. **Pupils:** Use SB p.11 as a model, write two family sentences, check a partner's punctuation and revise one sentence after feedback.
 
-## Reinforcement / PBD (10 minutes)
-**CikguLaju original assessment:** Pupils use `materials/lesson_014_writing_family_revision.md` to write three family sentences, check capitals and full stops, and revise one sentence; do not repeat Workbook p.6, Activity 2.
-**Teacher:** Check punctuation and written drafts with feedback. **Pupils:** Submit two family-description sentences with capitals and full stops, then correct one punctuation error.
+## Assessment / PBD (10 minutes)
+**Teacher:** Use a checklist to assess two family-description sentences for meaning, initial capitals and full stops, and give one specific correction. **Pupils:** Submit two family-description sentences with capitals and full stops, then correct one punctuation error.
 
 ## Closure (5 minutes)
 **Teacher:** Share one corrected family sentence. **Pupils:** Summarise their learning.
