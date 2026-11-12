@@ -1,0 +1,82 @@
+name: RPT2027 Sains Year6 original KPM DSKP 2021 source audit
+on:
+  pull_request:
+    paths:
+      - 'scripts/audit_sains_y6_original_2021_sp_membership_staging.py'
+      - 'tests/test_sains_y6_original_2021_sp_membership_staging.py'
+      - 'rpt_2027/sains/kssr2017_t6_2021_secondary_mirror_sp_code_ranges_20261107_DRAF.json'
+      - 'scripts/audit_sains_y6_2021_secondary_mirror_codes_staging.py'
+      - 'tests/test_sains_y6_2021_secondary_mirror_codes_staging.py'
+      - '.github/workflows/rpt2027-sains-y6-original-2021-source.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  year6_source_only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'PyMuPDF==1.24.14' 'reportlab==4.2.5'
+      - name: Failing release gate / synthetic code mismatch QA
+        run: python -m unittest tests.test_sains_y6_original_2021_sp_membership_staging -v
+      - name: Compare historical 84 PdP to 96 officially published 2021 SP code numbers from secondary mirror
+        run: |
+          python -m unittest tests.test_sains_y6_2021_secondary_mirror_codes_staging -v
+          python -m scripts.audit_sains_y6_2021_secondary_mirror_codes_staging
+      - name: Attempt source retrieval without confusing network failure with academic approval
+        run: |
+          curl --http1.1 --fail --location --retry 2 --retry-delay 2 \
+            --max-time 25 --user-agent 'Mozilla/5.0' \
+            'https://beebeeclassroom.com/wp-content/uploads/2022/04/DSKP-KSSR-Semakan-2017-Sains-Tahun-6_ISBN_.pdf' \
+            --output /tmp/Sains_T6_DSKP_KPM_2021_source.pdf || true
+          if [ -s /tmp/Sains_T6_DSKP_KPM_2021_source.pdf ] && \
+             [ "$(wc -c < /tmp/Sains_T6_DSKP_KPM_2021_source.pdf)" -ge 200000 ] && \
+             [ "$(head -c 4 /tmp/Sains_T6_DSKP_KPM_2021_source.pdf)" = '%PDF' ]; then
+            echo 'ORIGINAL_PDF_AVAILABLE=true' >> "$GITHUB_ENV"
+          else
+            echo 'ORIGINAL_PDF_AVAILABLE=false' >> "$GITHUB_ENV"
+            echo 'Source retrieval unavailable; independent year6 audit remains BLOCKED.'
+          fi
+      - name: Compare 84 historical PdP only when original Year6 KPM PDF exists
+        run: |
+          mkdir -p staging/rpt_2027_seragam_2026
+          if [ "$ORIGINAL_PDF_AVAILABLE" = true ]; then
+            python -m scripts.audit_sains_y6_original_2021_sp_membership_staging \
+              --pdf /tmp/Sains_T6_DSKP_KPM_2021_source.pdf \
+              --out staging/rpt_2027_seragam_2026/sains_y6_original2021_code_membership_DRAF.json
+          else
+            python - <<'PY'
+          import json
+          from pathlib import Path
+          dst=Path('staging/rpt_2027_seragam_2026/sains_y6_original2021_code_membership_DRAF.json')
+          dst.write_text(json.dumps({
+            'status':'SOURCE_PDF_UNAVAILABLE_NO_Y6_OFFICIAL_AUDIT_COMPLETED',
+            'year':6,
+            'source_url':'https://beebeeclassroom.com/wp-content/uploads/2022/04/DSKP-KSSR-Semakan-2017-Sains-Tahun-6_ISBN_.pdf',
+            'source_retrieval_passed':False,'academic_ready':False,
+            'ready_for_web_telegram':False,'production_changes':0,
+            'message':'Mirror disconnected during acquisition; 84 Year6 PdP were NOT independently checked'
+          },ensure_ascii=False,indent=2)+'\n')
+          PY
+          fi
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('staging/rpt_2027_seragam_2026/sains_y6_original2021_code_membership_DRAF.json').read_text())
+          assert d['ready_for_web_telegram'] is False
+          assert d['academic_ready'] is False
+          assert d['production_changes']==0
+          print(d['status'])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: RPT2027-SAINS-Y6-KPM-2021-ORIGINAL-SP-CODE-MEMBERSHIP-STAGING
+          path: |
+            staging/rpt_2027_seragam_2026/sains_y6_original2021_code_membership_DRAF.json
+            staging/rpt_2027_seragam_2026/sains_y6_2021_secondary_mirror_code_pdp_diff_DRAF.json
+          if-no-files-found: error
+          retention-days: 14

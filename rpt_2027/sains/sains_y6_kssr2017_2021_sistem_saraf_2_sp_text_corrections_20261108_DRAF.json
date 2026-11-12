@@ -1,0 +1,31 @@
+{
+  "status": "STAGING_SAINS_T6_2021_KPM_DSKP_TWO_NUMERIC_MATCH_BUT_TEXT_CONFLICTS_NOT_RELEASE",
+  "year": 6,
+  "curriculum_source_2021_url": "https://fliphtml5.com/mcbrg/xizk/DSKP_KSSR_Semakan_2017_Sains_Tahun_6/",
+  "independent_2021_mirror_url": "https://fliphtml5.com/oreta/ewne/006_DSKP_KSSR_Tahun_6_-_SAINS/",
+  "bpk_panduan_2020_pdf_sha256": "2f8b8a1893b35608c06423867f8f47d1a7dbae1f7e06f1d8437daf57dc24d909",
+  "note": "Original 2021 KPM PDF binary/whole-document SHA is not yet verified. 2021 published source transcripts and 2020 KPM guide agree on both exact 2.2.2/2.2.3 statements. Only modify staged RPT display. Do not change original legacy DB, RPH or 2027 live content.",
+  "entries": [
+    {
+      "sp_code": "2.2.2",
+      "legacy_v26_text": "Memerihalkan fungsi sistem saraf pusat dan sistem saraf periferi.",
+      "official_2021_dskp_text": "Memerihalkan sistem saraf pusat dan fungsinya.",
+      "historical_pdp_code": "SCI-Y6-PDP-006",
+      "original_2021_flip_pdf_page": 59,
+      "bpk_2020_guide_pdf_page": 23
+    },
+    {
+      "sp_code": "2.2.3",
+      "legacy_v26_text": "Menyatakan fungsi bahagian utama sistem saraf pusat.",
+      "official_2021_dskp_text": "Menyatakan fungsi sistem saraf periferi.",
+      "historical_pdp_code": "SCI-Y6-PDP-007",
+      "original_2021_flip_pdf_page": 59,
+      "bpk_2020_guide_pdf_page": 23
+    }
+  ],
+  "corrected_sp_display_count": 2,
+  "year6_remaining_original_pdf_sp_wording_signoff_count": 0,
+  "academic_2027_rph_approved": false,
+  "ready_for_web_telegram": false,
+  "production_db_writes": 0
+}

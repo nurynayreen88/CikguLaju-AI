@@ -1,0 +1,43 @@
+{
+  "subject": "PSV",
+  "year": 4,
+  "status": "DRAF_CROSSWALK_FULL_DSKP_TEXT",
+  "source": "Original KPM DSKP Pendidikan Seni Visual Tahun 4",
+  "source_drive_file_id": "1CpSVz8txeDqSnKM7OfOmrjnYH9HBmGy1",
+  "source_url": "https://drive.google.com/file/d/1CpSVz8txeDqSnKM7OfOmrjnYH9HBmGy1/view",
+  "extraction": "Drive extracted text, code-indexed and bounded by next SP/teaching-notes marker; requires visual/teacher signoff",
+  "sk": {
+    "1.1": "Bahasa Seni Visual",
+    "2.1": "Kemahiran Seni Visual",
+    "3.1": "Penghasilan karya kreatif",
+    "4.1": "Penghayatan karya Seni Visual",
+    "5.1": "Persembahan hasil karya"
+  },
+  "sp": {
+    "1.1.1": "Mengenal pasti dan membanding beza bahasa seni visual yang ada pada karya dalam Bidang Menggambar: (i) catan (ii) mozek (iii) poster (iv) cetakan",
+    "1.1.2": "Mengenal pasti dan membanding beza bahasa seni visual yang ada pada karya dalam Bidang Membuat Corak dan Rekaan: (i) pualaman (ii) stensilan",
+    "1.1.3": "Mengenal pasti dan membanding beza bahasa seni visual yang ada pada karya dalam Bidang Membentuk dan Membuat Binaan: (i) arca (ii) diorama",
+    "1.1.4": "Mengenal pasti dan membanding beza bahasa seni visual yang ada pada karya dalam Bidang Mengenal Kraf Tradisional: (i) ukiran (ii) alat domestik",
+    "2.1.1": "Mengaplikasikan bahasa seni visual pada karya catan dalam Bidang Menggambar melalui penerokaan: (i) media dan teknik basah atas basah. (ii) proses pengkaryaan.",
+    "2.1.2": "Mengaplikasikan bahasa seni visual pada karya mozek dalam Bidang Menggambar melalui penerokaan: (i) media dan teknik susunan bahan. (ii) proses pengkaryaan.",
+    "2.1.3": "Mengaplikasikan bahasa seni visual pada karya poster dalam Bidang Menggambar melalui penerokaan: (i) media dan teknik menggunakan gabungan lukisan dan montaj. (ii) proses pengkaryaan.",
+    "2.1.4": "Mengaplikasikan bahasa seni visual pada karya cetakan dalam Bidang Menggambar melalui penerokaan: (i) media dan teknik kolograf. (ii) proses pengkaryaan.",
+    "2.1.5": "Mengaplikasikan bahasa seni visual pada karya pualaman dalam Bidang Membuat Corak dan Rekaan melalui penerokaan: (i) media dan teknik pualaman. (ii) proses pengkaryaan. (iii) idea rekaan produk berfungsi",
+    "2.1.6": "Mengaplikasikan bahasa seni visual pada karya stensilan dalam Bidang Membuat Corak dan Rekaan melalui penerokaan: (i) media dan teknik stensilan. (ii) proses pengkaryaan. (iii) idea rekaan produk berfungsi",
+    "2.1.7": "Mengaplikasikan bahasa seni visual pada karya arca dalam Bidang Membentuk dan Membuat Binaan melalui penerokaan: (i) media dan teknik asemblaj. (ii) proses pengkaryaan.",
+    "2.1.8": "Mengaplikasikan bahasa seni visual pada karya diorama dalam Bidang Membentuk dan Membuat Binaan melalui penerokaan: (i) media dan teknik binaan. (ii) proses pengkaryaan.",
+    "2.1.9": "Mengaplikasikan bahasa seni visual pada karya ukiran dalam Bidang Mengenal Kraf Tradisional melalui penerokaan: (i) media dan teknik ukiran bunga timbul. (ii) proses pengkaryaan.",
+    "2.1.10": "Mengaplikasikan bahasa seni visual pada karya alat domestik dalam Bidang Mengenal Kraf Tradisional melalui penerokaan: (i) media dan teknik papier mache. (ii) proses pengkaryaan.",
+    "3.1.1": "Menghasilkan karya kreatif dalam Bidang Menggambar berdasarkan: (i) penentuan tema dan tajuk melalui sumber idea. (ii) perkembangan idea melalui pengolahan komposisi, kadar banding, perspektif dan reka letak berpandukan kajian lakaran. (iii) penetapan jenis media dan teknik yang sesuai berdasarkan perkembangan idea. (iv) disiplin pengkaryaan dan nilai murni. (v) kemasan akhir.",
+    "3.1.3": "Menghasilkan produk rekaan kreatif dalam Bidang Membuat Corak dan Rekaan menggunakan corak yang telah dihasilkan berdasarkan: (i) penentuan tema dan tajuk melalui sumber idea. (ii) perkembangan idea reka bentuk. (iii) penetapan jenis media dan teknik yang sesuai berdasarkan reka bentuk. (iv) disiplin pengkaryaan dan nilai murni. (v) kemasan akhir.",
+    "3.1.4": "Menghasilkan produk kreatif dalam Bidang Membentuk dan Membuat Binaan berdasarkan: (i) penentuan tema dan tajuk melalui sumber idea. (ii) penentuan fungsi dan rekaan melalui sumber idea. (iii) perkembangan idea reka bentuk dengan menekankan aspek keselamatan dalam penghasilan. (iv) penetapan jenis media dan teknik yang sesuai berdasarkan reka bentuk yang kukuh, tahan, kuat dan selamat. (v) disiplin pengkaryaan dan nilai murni. (vi) kemasan akhir.",
+    "3.1.5": "Menghasilkan kraf kreatif dalam Bidang Mengenal Kraf Tradisional berdasarkan: (i) penentuan tema dan tajuk melalui sumber idea. (ii) perkembangan idea reka bentuk dengan menekankan identiti kebangsaan. (iii) penetapan jenis media dan teknik yang sesuai berdasarkan penghasilan kraf secara tradisional atau media gantian. (iv) disiplin pengkaryaan dan nilai murni. (v) kemasan akhir.",
+    "3.3.1": "Merancang persediaan pameran seni visual dalam kumpulan meliputi: (i) penentuan lokasi pameran (ii) Pengumpulan karya (iii) penghasilan kapsyen (iv) penentuan susun atur karya (v) promosi pameran",
+    "3.3.2": "Menjalankan proses persediaan pameran seni visual berdasarkan perancangan.",
+    "3.3.3": "Menceritakan karya sendiri dan memberi pandangan karya rakan semasa pameran.",
+    "3.3.4": "Memastikan karya dan alat pameran selamat dan terpelihara semasa pameran dijalankan.",
+    "3.3.5": "Menyusun bahan dan alatan pameran seni serta memastikan ruang pameran bersih selepas pameran dilaksanakan.",
+    "4.1.1": "Mempamerkan karya yang dihasilkan.",
+    "4.1.2": "Membuat penyataan lisan secara kritis karya sendiri dan rakan berpandukan bahasa seni visual, teknik dan proses serta menghubungkaitkan seni dengan kehidupan seharian."
+  }
+}

@@ -1,0 +1,117 @@
+name: RPT2027 remaining BM PI Arabic Music 20-PDF format QA
+on:
+  pull_request:
+    paths:
+      - 'scripts/audit_rpt2027_teacher_text_leaks_20261108.py'
+      - 'tests/test_rpt2027_teacher_text_leak_scan.py'
+      - 'scripts/build_rpt_2027_remaining_four_subjects_staging.py'
+      - 'rpt_2027/common/music_dskp_full_statement_staging.py'
+      - 'staging/pendidikan_muzik/rpt_rph_2027/DSKP_MUSIC_FULL_TEXT_Y*_20261107_DRAF.json'
+      - 'tests/test_rpt_2027_music_full_dskp_statements_staging.py'
+      - 'tests/test_rpt_2027_remaining_four_subjects_staging.py'
+      - 'scripts/build_arabic_rpt_2027_offline_dskp_bundle_staging.py'
+      - 'tests/test_arabic_rpt_2027_offline_dskp_bundle_staging.py'
+      - 'tests/test_bahasa_arab_rpt2027_source_page_audit.py'
+      - 'tests/test_pi_rpt2027_6_held_source_recovery_staging.py'
+      - 'tests/test_pi_6_held_rph_new_candidate_activity_plans.py'
+      - 'audits/pendidikan_islam_6_held_rph_new_candidate_activity_plans_20261107.json'
+      - 'audits/pendidikan_islam_rpt2027_6_held_source_recovery_20261107_DRAF.json'
+      - 'audits/bahasa_arab_rpt2027_y2_y6_117_sp_pdf_page_evidence_20261107.json'
+      - 'rpt_2027/common/format_2026_layout_preview.py'
+      - 'tests/test_rpt_2027_rtl_layout_staging.py'
+      - 'rpt_2027/bahasa_melayu/*Format_2026_DRAF.html'
+      - 'rpt_2027/bahasa_arab/*DRAF.csv'
+      - 'staging/pendidikan_muzik/rpt_rph_2027/year*/RPT_MUZIK*DRAF.csv'
+      - 'rph_standalone/pendidikan_islam_draf_2027/year*.json'
+      - '.github/workflows/rpt2027-remaining-four-subjects.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preview_20:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Amiri font for accurate Jawi / Arabic PDF previews
+        run: sudo apt-get update -qq && sudo apt-get install -y fonts-hosny-amiri
+      - run: pip install 'reportlab==4.2.5' 'pypdf==5.1.0' 'PyMuPDF==1.24.14' 'beautifulsoup4==4.12.3' 'arabic-reshaper==3.0.0' 'python-bidi==0.6.3'
+      - run: test -s /usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf
+      - run: python -m py_compile scripts/build_rpt_2027_remaining_four_subjects_staging.py rpt_2027/common/format_2026_layout_preview.py
+      - name: Synthetic 60-link self-contained Arabic PDF source-page regression
+        run: |
+          python -m py_compile scripts/build_arabic_rpt_2027_offline_dskp_bundle_staging.py
+          python -m unittest tests.test_arabic_rpt_2027_offline_dskp_bundle_staging -v
+      - name: 20 source-faithful five-column RPT audits
+        run: python -m unittest tests.test_rpt_2027_remaining_four_subjects_staging tests.test_rpt_2027_music_full_dskp_statements_staging tests.test_bahasa_arab_rpt2027_source_page_audit tests.test_pi_rpt2027_6_held_source_recovery_staging tests.test_pi_6_held_rph_new_candidate_activity_plans -v
+      - name: Verify RTL layout for Arabic / Jawi and LTR for all others
+        run: python -m unittest tests.test_rpt_2027_rtl_layout_staging -v
+      - name: Build 20 PDFs and visual QA
+        run: |
+          python -m scripts.build_rpt_2027_remaining_four_subjects_staging
+          python - <<'PY'
+          import fitz
+          from pathlib import Path
+          root=Path('staging/rpt_2027_seragam_2026/baki_4_subjek_DRAF')
+          allpdf=sorted(root.glob('*.pdf'))
+          assert len(allpdf)==20, len(allpdf)
+          for file in allpdf:
+              with fitz.open(file) as pdf:
+                  assert pdf.page_count>=2, file
+                  for i,pg in enumerate(pdf):
+                      assert pg.rect.width>pg.rect.height, (file,i,'not landscape')
+                      for b in pg.get_text('blocks'):
+                          x0,y0,x1,y1=b[:4]
+                          assert 0<=x0<=x1<=pg.rect.width and 0<=y0<=y1<=pg.rect.height, (file,i,b[:4])
+                      assert chr(0) not in pg.get_text(), (file,i,'NUL chars')
+                  page1=pdf[0]
+                  for t in ('LOGO SEKOLAH','NAMA SEKOLAH','NAMA GURU'):
+                      assert t in page1.get_text(),(file,t)
+                  page1.get_pixmap(matrix=fitz.Matrix(1.5,1.5),alpha=False).save(
+                      str(file.with_suffix('.cover.png')))
+                  pdf[1].get_pixmap(matrix=fitz.Matrix(1.5,1.5),alpha=False).save(
+                      str(file.with_suffix('.page2.png')))
+          # For the 10 actual Islamic/Arabic documents, assert table header
+          # physical direction, and unchanged cover profile placeholders.
+          for file in allpdf:
+              name=file.name
+              if 'PENDIDIKAN_ISLAM' not in name and 'BAHASA_ARAB' not in name:
+                  continue
+              with fitz.open(file) as pdf:
+                  page=pdf[1]
+                  # The physical table stays RTL. All five yellow header
+                  # cells must be Arabic/Jawi, not leftover Malay Latin text.
+                  bands=[(29,193),(193,403),(403,528),(528,708),(708,813)]
+                  spans=[span for block in page.get_text('dict')['blocks']
+                         for line in block.get('lines',[])
+                         for span in line['spans']
+                         if 46<=span['bbox'][1]<86 and span['bbox'][3]<90]
+                  for left,right in bands:
+                      group=[sp for sp in spans if left<=sp['bbox'][0]<right]
+                      assert group,(file,left,spans)
+                      assert any(any('\u0600'<=c<='\u08ff' or '\ufb50'<=c<='\ufeff'
+                                     for c in sp['text']) for sp in group),(file,left,group)
+                  assert not any('MINGGU / TARIKH' in sp['text'] for sp in spans),file
+                  assert not any('CATATAN / BAHAN' in sp['text'] for sp in spans),file
+          print('SUCCESS: 20 PDF, 40 PNG previews, 10 RTL PDFs, landscape bounded text')
+          PY
+      - name: Audit RPT developer-note leakage in BM-PI-ARAB-MUZIK output (read-only)
+        run: |
+          python -m unittest tests.test_rpt2027_teacher_text_leak_scan -v
+          python -m scripts.audit_rpt2027_teacher_text_leaks_20261108 \
+            --teacher-output-only \
+            --fail-on-findings \
+            --output staging/rpt_2027_seragam_2026/teacher_text_leak_BM-PI-ARAB-MUZIK.json \
+            staging/rpt_2027_seragam_2026/baki_4_subjek_DRAF
+      - uses: actions/upload-artifact@v4
+        with:
+          name: RPT2027-20-BM-PI-ARAB-MUZIK-Seragam-DRAF
+          path: |
+            staging/rpt_2027_seragam_2026/teacher_text_leak_BM-PI-ARAB-MUZIK.json
+            staging/rpt_2027_seragam_2026/baki_4_subjek_DRAF/*.pdf
+            staging/rpt_2027_seragam_2026/baki_4_subjek_DRAF/*.png
+          if-no-files-found: error
+          retention-days: 14

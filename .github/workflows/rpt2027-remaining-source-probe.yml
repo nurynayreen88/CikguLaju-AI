@@ -1,0 +1,21 @@
+name: RPT2027 remaining 7-subject source inspection (staging only)
+on:
+  pull_request:
+    paths:
+      - 'scripts/probe_remaining_rpt_pdf_sources_2027.py'
+      - '.github/workflows/rpt2027-remaining-source-probe.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source_probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'PyMuPDF==1.24.14'
+      - name: Read-only probe of 4 source PDF subjects
+        run: python -m scripts.probe_remaining_rpt_pdf_sources_2027

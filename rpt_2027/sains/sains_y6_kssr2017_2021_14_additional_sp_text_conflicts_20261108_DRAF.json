@@ -1,0 +1,143 @@
+{
+  "status": "STAGING_SAINS_T6_2021_KPM_DSKP_FOURTEEN_MORE_SOURCE_TEXT_CONFLICTS_NOT_RELEASE",
+  "year": 6,
+  "source_title": "KSSR Semakan 2017 Sains Tahun 6, BPK September 2021",
+  "source_mirror_url": "https://fliphtml5.com/mcbrg/xizk/DSKP_KSSR_Semakan_2017_Sains_Tahun_6/",
+  "secondary_mirror_url": "https://fliphtml5.com/oreta/ewne/006_DSKP_KSSR_Tahun_6_-_SAINS/",
+  "source_type": "Published text of KPM 2021 DSKP, NOT original SHA-256 verified PDF",
+  "additional_sp_wording_conflicts": 14,
+  "entries": [
+    {
+      "sp_code": "3.1.2",
+      "legacy_v26_text": "Mengitlak bahawa mikroorganisma menjalani proses hidup.",
+      "official_2021_dskp_text": "Mengitlak maksud mikroorganisma.",
+      "historical_pdp_code": "SCI-Y6-PDP-012",
+      "source_flip_pdf_page": 60,
+      "display_only": true,
+      "academic_rph_textbook_approved": false
+    },
+    {
+      "sp_code": "3.1.3",
+      "legacy_v26_text": "Mengeksperimen untuk menentukan faktor yang mempengaruhi pertumbuhan mikroorganisma.",
+      "official_2021_dskp_text": "Memerihalkan proses hidup mikroorganisma dengan menjalankan penyiasatan.",
+      "historical_pdp_code": "SCI-Y6-PDP-013",
+      "source_flip_pdf_page": 60,
+      "display_only": true,
+      "academic_rph_textbook_approved": false
+    },
+    {
+      "sp_code": "3.1.4",
+      "legacy_v26_text": "Menjelas dengan contoh kesan tindakan mikroorganisma dalam kehidupan harian.",
+      "official_2021_dskp_text": "Mengeksperimen untuk menentukan faktor yang mempengaruhi pertumbuhan mikroorganisma.",
+      "historical_pdp_code": "SCI-Y6-PDP-014",
+      "source_flip_pdf_page": 60,
+      "display_only": true,
+      "academic_rph_textbook_approved": false
+    },
+    {
+      "sp_code": "3.1.5",
+      "legacy_v26_text": "Menjana idea tentang langkah mencegah penyakit berjangkit.",
+      "official_2021_dskp_text": "Memerihalkan kesan tindakan mikroorganisma dalam kehidupan harian.",
+      "historical_pdp_code": "SCI-Y6-PDP-015",
+      "source_flip_pdf_page": 61,
+      "display_only": true,
+      "academic_rph_textbook_approved": false
+    },
+    {
+      "sp_code": "5.1.5",
+      "legacy_v26_text": "Menjelaskan melalui contoh faktor yang menyebabkan kepupusan haiwan dan tumbuhan.",
+      "official_2021_dskp_text": "Memerihalkan faktor yang menyebabkan haiwan dan tumbuhan diancam kepupusan.",
+      "historical_pdp_code": "SCI-Y6-PDP-028",
+      "source_flip_pdf_page": 64,
+      "display_only": true,
+      "academic_rph_textbook_approved": false
+    },
+    {
+      "sp_code": "5.1.6",
+      "legacy_v26_text": "Menaakul kepentingan pemeliharaan dan pemuliharaan haiwan dan tumbuhan.",
+      "official_2021_dskp_text": "Menjana idea tentang kesan pemeliharaan dan pemuliharaan terhadap haiwan dan tumbuhan yang mengalami ancaman kepupusan.",
+      "historical_pdp_code": "SCI-Y6-PDP-029",
+      "source_flip_pdf_page": 65,
+      "display_only": true,
+      "academic_rph_textbook_approved": false
+    },
+    {
+      "sp_code": "6.2.2",
+      "legacy_v26_text": "Mengeksperimen untuk menentukan faktor yang mempengaruhi daya geseran.",
+      "official_2021_dskp_text": "Memerihalkan kesan daya geseran.",
+      "historical_pdp_code": "SCI-Y6-PDP-035",
+      "source_flip_pdf_page": 69,
+      "display_only": true,
+      "academic_rph_textbook_approved": false
+    },
+    {
+      "sp_code": "6.2.3",
+      "legacy_v26_text": "Memerihalkan kesan daya geseran.",
+      "official_2021_dskp_text": "Mengeksperimen untuk menentukan faktor yang mempengaruhi daya geseran.",
+      "historical_pdp_code": "SCI-Y6-PDP-036",
+      "source_flip_pdf_page": 69,
+      "display_only": true,
+      "academic_rph_textbook_approved": false
+    },
+    {
+      "sp_code": "6.3.2",
+      "legacy_v26_text": "Memerihalkan aplikasi tekanan udara dalam kehidupan harian.",
+      "official_2021_dskp_text": "Menghubungkaitkan antara tekanan udara dengan aras ketinggian.",
+      "historical_pdp_code": "SCI-Y6-PDP-040",
+      "source_flip_pdf_page": 70,
+      "display_only": true,
+      "academic_rph_textbook_approved": false
+    },
+    {
+      "sp_code": "6.3.3",
+      "legacy_v26_text": "Menjana idea tentang kepentingan tekanan udara dalam kehidupan harian.",
+      "official_2021_dskp_text": "Menjelaskan melalui contoh aplikasi tekanan udara dalam kehidupan harian.",
+      "historical_pdp_code": "SCI-Y6-PDP-041",
+      "source_flip_pdf_page": 70,
+      "display_only": true,
+      "academic_rph_textbook_approved": false
+    },
+    {
+      "sp_code": "7.1.1",
+      "legacy_v26_text": "Menjelaskan maksud kelajuan dengan menjalankan aktiviti.",
+      "official_2021_dskp_text": "Menyatakan unit bagi kelajuan.",
+      "historical_pdp_code": "SCI-Y6-PDP-043",
+      "source_flip_pdf_page": 72,
+      "display_only": true,
+      "academic_rph_textbook_approved": false
+    },
+    {
+      "sp_code": "7.1.2",
+      "legacy_v26_text": "Menyatakan unit bagi kelajuan.",
+      "official_2021_dskp_text": "Mengeksperimen untuk menentukan hubungan antara kelajuan, jarak dan masa.",
+      "historical_pdp_code": "SCI-Y6-PDP-044",
+      "source_flip_pdf_page": 72,
+      "display_only": true,
+      "academic_rph_textbook_approved": false
+    },
+    {
+      "sp_code": "7.1.3",
+      "legacy_v26_text": "Menentukan kelajuan, jarak atau masa menggunakan formula.",
+      "official_2021_dskp_text": "Menyelesaikan masalah berkaitan kelajuan dengan menggunakan rumus.",
+      "historical_pdp_code": "SCI-Y6-PDP-045",
+      "source_flip_pdf_page": 72,
+      "display_only": true,
+      "academic_rph_textbook_approved": false
+    },
+    {
+      "sp_code": "7.1.4",
+      "legacy_v26_text": "Menyelesaikan masalah berkaitan kelajuan menggunakan rumus.",
+      "official_2021_dskp_text": "Mendefinisi secara operasi kelajuan dengan menjalankan aktiviti.",
+      "historical_pdp_code": "SCI-Y6-PDP-046",
+      "source_flip_pdf_page": 72,
+      "display_only": true,
+      "academic_rph_textbook_approved": false
+    }
+  ],
+  "no_database_edit": true,
+  "original_source_binary_sha_verified": false,
+  "all_other_sp_statement_signoffs": 0,
+  "live_download_verified": false,
+  "academic_release_approved": false,
+  "production_db_writes": 0
+}

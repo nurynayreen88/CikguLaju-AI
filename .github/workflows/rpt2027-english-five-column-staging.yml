@@ -1,0 +1,75 @@
+name: RPT2027 English Y2-6 five-column 800-Lesson PDF QA
+on:
+  pull_request:
+    paths:
+      - 'scripts/audit_rpt2027_teacher_text_leaks_20261108.py'
+      - 'tests/test_rpt2027_teacher_text_leak_scan.py'
+      - 'scripts/build_rpt_2027_english_pdf_reflow_staging.py'
+      - 'rpt_2027/common/format_2026_layout_preview.py'
+      - 'tests/test_rpt_2027_rtl_layout_staging.py'
+      - 'tests/test_rpt_2027_english_reflow_staging.py'
+      - '.github/workflows/rpt2027-english-five-column-staging.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'PyMuPDF==1.24.14' 'reportlab==4.2.5' 'pypdf==5.1.0' 'beautifulsoup4==4.12.3'
+      - run: python -m py_compile scripts/build_rpt_2027_english_pdf_reflow_staging.py
+      - name: Test source PDF lesson row extraction and all 5 PDF layouts
+        run: python -m unittest tests.test_rpt_2027_english_reflow_staging -v
+      - name: Build 5 English PDFs and QA all pages
+        run: |
+          python -m scripts.build_rpt_2027_english_pdf_reflow_staging
+          python - <<'PY'
+          from pathlib import Path
+          import fitz
+          src=Path('staging/rpt_2027_seragam_2026/english_reflow_DRAF')
+          files=list(src.glob('*.pdf'))
+          assert len(files)==5,len(files)
+          for f in files:
+              with fitz.open(f) as doc:
+                  assert doc.page_count>=2
+                  # All 5 table headings must be in English, including
+                  # the two DSKP/SOW standard labels.
+                  body=doc[1].get_text("text")
+                  for label in ("WEEK / DATE","UNIT / TOPIC / LESSON",
+                                "CONTENT STANDARD","LEARNING STANDARD",
+                                "NOTES / MATERIALS"):
+                      assert label in body,(f,label,body[:420])
+                  for old in ("MINGGU / TARIKH","UNIT / TAJUK / PDP",
+                              "CATATAN / BAHAN"):
+                      assert old not in body,(f,old)
+                  for page in doc:
+                      assert page.rect.width>page.rect.height
+                      assert chr(0) not in page.get_text()
+                      for b in page.get_text('blocks'):
+                          x0,y0,x1,y1=b[:4]
+                          assert 0<=x0<=x1<=page.rect.width and 0<=y0<=y1<=page.rect.height
+                  doc[0].get_pixmap(matrix=fitz.Matrix(1.4,1.4),alpha=False).save(str(f.with_suffix('.cover.png')))
+                  doc[1].get_pixmap(matrix=fitz.Matrix(1.4,1.4),alpha=False).save(str(f.with_suffix('.page2.png')))
+          PY
+      - name: Audit RPT developer-note leakage in ENGLISH output (read-only)
+        run: |
+          python -m unittest tests.test_rpt2027_teacher_text_leak_scan -v
+          python -m scripts.audit_rpt2027_teacher_text_leaks_20261108 \
+            --teacher-output-only \
+            --fail-on-findings \
+            --output staging/rpt_2027_seragam_2026/teacher_text_leak_ENGLISH.json \
+            staging/rpt_2027_seragam_2026/english_reflow_DRAF
+      - uses: actions/upload-artifact@v4
+        with:
+          name: RPT2027-ENGLISH-Y2Y6-800-LIMA-LAJUR-DRAF
+          path: |
+            staging/rpt_2027_seragam_2026/teacher_text_leak_ENGLISH.json
+            staging/rpt_2027_seragam_2026/english_reflow_DRAF/*.pdf
+            staging/rpt_2027_seragam_2026/english_reflow_DRAF/*.png
+          if-no-files-found: error
+          retention-days: 14

@@ -1,0 +1,80 @@
+name: RPT2027 23 Week01 and 5 Music PDFs - 56-file review
+on:
+  pull_request:
+    paths:
+      - 'scripts/prepare_rpt2027_week01_web_candidate_20261110.py'
+      - 'rpt_2027/common/week1_owner_plan_20261110.py'
+      - 'scripts/build_rpt_2027_remaining_four_subjects_staging.py'
+      - 'scripts/build_rpt_2027_standard_preview.py'
+      - 'scripts/build_rpt_2027_sains_342_actual_source_staging.py'
+      - 'tests/test_rpt2027_owner_week1_distribution_20261110.py'
+      - 'tests/test_rpt2027_teacher_release_review_guard_20261112.py'
+      - 'rpt_2027/common/teacher_display_projection.py'
+      - 'scripts/audit_rpt2027_teacher_text_leaks_20261108.py'
+      - 'rpt_2027/common/format_2026_layout_preview.py'
+      - 'tests/test_rpt2027_teacher_text_leak_scan.py'
+      - '.github/workflows/rpt2027-week01-web-release-candidate-20261110.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package-review-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout tested staging RPT source
+        uses: actions/checkout@v4
+      - name: Checkout existing Web production PDFs, read-only
+        uses: actions/checkout@v4
+        with:
+          ref: production/cikgulaju-web-20261105
+          path: _web_baseline
+      - name: Print exact input revisions
+        run: |
+          echo "CANDIDATE_SOURCE_COMMIT=$(git rev-parse HEAD)"
+          echo "BASELINE_WEB_COMMIT=$(git -C _web_baseline rev-parse HEAD)"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install isolated PDF authoring and inspection tools
+        run: |
+          python -m pip install 'PyMuPDF==1.24.14' 'reportlab==4.2.5' 'pypdf==5.1.0' 'beautifulsoup4==4.12.3' 'arabic-reshaper==3.0.0' 'python-bidi==0.6.3'
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-hosny-amiri
+      - name: Check Week01 23-source allocations and no source mutation
+        run: |
+          python -m py_compile scripts/prepare_rpt2027_week01_web_candidate_20261110.py
+          python -m unittest tests.test_rpt2027_owner_week1_distribution_20261110 tests.test_rpt2027_teacher_text_leak_scan tests.test_rpt2027_teacher_release_review_guard_20261112 -v
+      - name: Build 56 PDF review package, replace 23 Week01 and 5 Music
+        run: |
+          python -m scripts.prepare_rpt2027_week01_web_candidate_20261110 \
+            --web-checkout _web_baseline \
+            --output output/rpt2027_week01_review
+      - name: Prove all 56 review PDFs remain release-blocked
+        run: |
+          python -m unittest tests.test_rpt2027_teacher_release_review_guard_20261112 -v
+      - name: Independently audit every teacher PDF for internal wording
+        run: |
+          python -m scripts.audit_rpt2027_teacher_text_leaks_20261108 \
+            --pdf-only \
+            --fail-on-findings \
+            --output output/rpt2027_week01_review/teacher_text_leak_56_report.json \
+            output/rpt2027_week01_review/rpt_2027/web_2027_pdfs
+      - name: Confirm there were no edits in original Web checkout
+        run: |
+          test -z "$(git -C _web_baseline status --porcelain --untracked-files=no)"
+          test -z "$(git status --porcelain --untracked-files=no)"
+      - name: Save 28 replacements, 28 unchanged file proofs and review manifest
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rpt2027-56-pdf-23-week01-review-only-20261110
+          retention-days: 30
+          if-no-files-found: warn
+          path: |
+            output/rpt2027_week01_review/week01_candidate_review.json
+            output/rpt2027_week01_review/BACA_DULU_RPT_2027_SEMAKAN_BUKAN_FINAL.txt
+            output/rpt2027_week01_review/teacher_text_leak_56_report.json
+            output/rpt2027_week01_review/rpt_2027/web_2027_pdfs/

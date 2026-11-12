@@ -1,0 +1,767 @@
+{
+  "schema_version": 2,
+  "audit_date": "2026-11-07",
+  "scope": "Source-page index for all 117 unique DSKP SP codes referenced by staged Bahasa Arab RPT Year2-6. Not a full-statement crosswalk.",
+  "status": "STAGING_117_CODE_AND_PDF_PAGE_VERIFIED_ONLY",
+  "method": "Years3-6: original Drive PDF code positions in PyMuPDF, with spot checks against page image. Year2: rendered PDF pages 31-38 inspected directly; printed Arabic-Indic SP codes read visually because extracted numeral glyphs are defective. No OCR and no invented standards.",
+  "year2": {
+    "unique_rpt_sp_codes": 19,
+    "pdf_pages": 44,
+    "pdf_sha256": "97b3c0a5b31b3bb96d4b2e4a0ef72a53d64254e110a0c476ac130a360499d7af",
+    "source_url": "https://drive.google.com/file/d/1WY_c69UshDm3jHzVK86G2xfu77UUkGYO/view",
+    "status": "SOURCE_19_CODE_PAGES_VISUALLY_LOCATED_FULL_TEXT_PENDING",
+    "note": "Code glyph extraction repeats 1.1.1; printed codes on rendered pages 31-38 were manually checked. These page anchors do not verify Arabic full statement text or per-PdP pedagogy.",
+    "entries": [
+      {
+        "sp_code": "1.1.1",
+        "pdf_page": 31,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "1.1.2",
+        "pdf_page": 31,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "1.2.1",
+        "pdf_page": 31,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "1.2.2",
+        "pdf_page": 31,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "1.3.1",
+        "pdf_page": 32,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "1.3.2",
+        "pdf_page": 32,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "1.4.1",
+        "pdf_page": 33,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "1.4.5",
+        "pdf_page": 33,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "2.1.1",
+        "pdf_page": 34,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "2.2.1",
+        "pdf_page": 35,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "2.2.2",
+        "pdf_page": 35,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "2.3.1",
+        "pdf_page": 35,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "2.3.2",
+        "pdf_page": 35,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "2.3.5",
+        "pdf_page": 35,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "2.5.1",
+        "pdf_page": 36,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "3.1.1",
+        "pdf_page": 37,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "3.2.1",
+        "pdf_page": 37,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "3.3.1",
+        "pdf_page": 37,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      },
+      {
+        "sp_code": "3.4.1",
+        "pdf_page": 38,
+        "statement_verified": false,
+        "review_status": "PDF_CODE_PAGE_LOCATED_BY_VISUAL_NOT_TEXT_SIGNOFF"
+      }
+    ]
+  },
+  "years": [
+    {
+      "year": 3,
+      "source_url": "https://drive.google.com/file/d/1LlqBjz05t3M-M-kMC_FpZA0QSXdcUaZW/view",
+      "pdf_sha256": "d09e12abade3a9bf02935fa2bdc888e0e134c7031cac8ef90a95992eb3f72826",
+      "pdf_page_count": 48,
+      "unique_rpt_sp_codes": 23,
+      "entries": [
+        {
+          "sp_code": "1.1.1",
+          "pdf_page": 29,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.1.2",
+          "pdf_page": 29,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.2.1",
+          "pdf_page": 29,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.2.2",
+          "pdf_page": 29,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.3.1",
+          "pdf_page": 30,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.3.2",
+          "pdf_page": 30,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.4.1",
+          "pdf_page": 31,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.4.2",
+          "pdf_page": 31,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.4.3",
+          "pdf_page": 31,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.1.1",
+          "pdf_page": 34,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.1.2",
+          "pdf_page": 34,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.1.3",
+          "pdf_page": 34,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.2.1",
+          "pdf_page": 34,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.2.2",
+          "pdf_page": 34,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.2.3",
+          "pdf_page": 34,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.3.1",
+          "pdf_page": 35,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.3.2",
+          "pdf_page": 35,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.3.3",
+          "pdf_page": 35,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.3.5",
+          "pdf_page": 35,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.4.1",
+          "pdf_page": 36,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "3.1.1",
+          "pdf_page": 39,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "3.2.1",
+          "pdf_page": 39,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "3.3.1",
+          "pdf_page": 39,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        }
+      ]
+    },
+    {
+      "year": 4,
+      "source_url": "https://drive.google.com/file/d/1ljeuSbPI4vfu0moS_itg7ONaJ6mnKII2/view",
+      "pdf_sha256": "f4b35b8cfb5cfb494596e015373be941dd1c6d19dbfda273f6ed7f6c790c0f8b",
+      "pdf_page_count": 54,
+      "unique_rpt_sp_codes": 25,
+      "entries": [
+        {
+          "sp_code": "1.1.1",
+          "pdf_page": 31,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.1.2",
+          "pdf_page": 31,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.2.1",
+          "pdf_page": 32,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.2.2",
+          "pdf_page": 32,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.2.3",
+          "pdf_page": 32,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.2.4",
+          "pdf_page": 32,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.3.1",
+          "pdf_page": 33,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.3.2",
+          "pdf_page": 33,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.3.4",
+          "pdf_page": 33,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.4.1",
+          "pdf_page": 34,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.4.2",
+          "pdf_page": 34,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.4.4",
+          "pdf_page": 34,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.1.1",
+          "pdf_page": 36,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.2.1",
+          "pdf_page": 37,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.2.3",
+          "pdf_page": 37,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.2.4",
+          "pdf_page": 37,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.3.1",
+          "pdf_page": 38,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.3.2",
+          "pdf_page": 38,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.3.4",
+          "pdf_page": 38,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.3.6",
+          "pdf_page": 38,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.4.2",
+          "pdf_page": 39,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "3.1.1",
+          "pdf_page": 41,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "3.2.1",
+          "pdf_page": 42,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "3.3.1",
+          "pdf_page": 43,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "3.4.1",
+          "pdf_page": 44,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        }
+      ]
+    },
+    {
+      "year": 5,
+      "source_url": "https://drive.google.com/file/d/1D-Yb6pwiHAf4k4FDkPbdbsAhvGwv8G5q/view",
+      "pdf_sha256": "8017d4d6e3f47cd107e1f193edb46ad5aefd47beadaab6edef208eed9015cbf4",
+      "pdf_page_count": 54,
+      "unique_rpt_sp_codes": 25,
+      "entries": [
+        {
+          "sp_code": "1.1.1",
+          "pdf_page": 31,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.1.2",
+          "pdf_page": 31,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.1.3",
+          "pdf_page": 31,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.2.1",
+          "pdf_page": 32,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.2.3",
+          "pdf_page": 32,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.2.4",
+          "pdf_page": 32,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.2.5",
+          "pdf_page": 32,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.3.1",
+          "pdf_page": 33,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.3.2",
+          "pdf_page": 33,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.3.5",
+          "pdf_page": 33,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.4.1",
+          "pdf_page": 34,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.4.2",
+          "pdf_page": 34,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.1.1",
+          "pdf_page": 36,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.2.1",
+          "pdf_page": 37,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.2.2",
+          "pdf_page": 37,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.2.3",
+          "pdf_page": 37,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.2.5",
+          "pdf_page": 37,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.3.1",
+          "pdf_page": 38,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.3.2",
+          "pdf_page": 38,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.3.3",
+          "pdf_page": 38,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.3.6",
+          "pdf_page": 38,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "3.1.1",
+          "pdf_page": 41,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "3.2.1",
+          "pdf_page": 42,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "3.3.1",
+          "pdf_page": 43,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "3.4.1",
+          "pdf_page": 44,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        }
+      ]
+    },
+    {
+      "year": 6,
+      "source_url": "https://drive.google.com/file/d/1tHZTKLAc_4N4fpMvHeJN_DgCpn_m7dMp/view",
+      "pdf_sha256": "a8e27f109f4aa5cbe1214e71000138f1bdccdea6cdd38cd289715f71cac7238a",
+      "pdf_page_count": 52,
+      "unique_rpt_sp_codes": 25,
+      "entries": [
+        {
+          "sp_code": "1.1.1",
+          "pdf_page": 31,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.1.2",
+          "pdf_page": 31,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.1.4",
+          "pdf_page": 31,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.2.1",
+          "pdf_page": 32,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.2.2",
+          "pdf_page": 32,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.2.3",
+          "pdf_page": 32,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.2.4",
+          "pdf_page": 32,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.2.5",
+          "pdf_page": 32,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.3.1",
+          "pdf_page": 33,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.3.2",
+          "pdf_page": 33,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.3.4",
+          "pdf_page": 33,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.4.1",
+          "pdf_page": 34,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "1.4.3",
+          "pdf_page": 34,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.1.2",
+          "pdf_page": 36,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.2.1",
+          "pdf_page": 37,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.2.2",
+          "pdf_page": 37,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.2.3",
+          "pdf_page": 37,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.2.4",
+          "pdf_page": 37,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.2.5",
+          "pdf_page": 37,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.3.1",
+          "pdf_page": 38,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.3.2",
+          "pdf_page": 38,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "2.3.6",
+          "pdf_page": 38,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "3.1.1",
+          "pdf_page": 41,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "3.2.1",
+          "pdf_page": 42,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        },
+        {
+          "sp_code": "3.3.1",
+          "pdf_page": 43,
+          "statement_verified": false,
+          "review_status": "PDF_CODE_PAGE_LOCATED_NOT_TEXT_SIGNOFF"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "year3to6_unique_codes": 98,
+    "year3to6_page_located": 98,
+    "year2_page_located": 19,
+    "full_arabic_statement_signoffs": 0,
+    "production_changes": 0,
+    "all_year2to6_unique_codes": 117,
+    "all_year2to6_pdf_page_located": 117,
+    "year2_visual_page_review": true
+  }
+}

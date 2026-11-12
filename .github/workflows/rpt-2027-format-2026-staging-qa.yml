@@ -1,9 +1,49 @@
-name: RPT 2027 format 2026 staged 13-PDF visual QA
+name: RPT 2027 staged 21-PDF QA plus 3 RBT simulations
 on:
   pull_request:
     paths:
+      - 'scripts/audit_rpt2027_teacher_text_leaks_20261108.py'
+      - 'tests/test_rpt2027_teacher_text_leak_scan.py'
       - 'rpt_2027/common/format_2026_layout_preview.py'
+      - 'rpt_2027/common/standard_text_enrichment.py'
+      - 'rpt_2027/common/calendar_week_2027_a_b_snapshot_20261107_DRAF.json'
+      - 'rpt_2027/common/calendar_week_mapping_staging.py'
+      - 'rpt_2027/common/sejarah_source_enrichment_staging.py'
+      - 'rpt_2027/common/sejarah_group_a_2027_03_14_holiday_index_evidence_DRAF.json'
+      - 'audits/sejarah_y4_y6_primary_textbook_page_evidence_20261106.json'
+      - 'scripts/audit_rpt_2027_calendar_master_staging.py'
+      - 'tests/test_rpt_2027_calendar_master_staging.py'
+      - 'curriculum/sejarah/y*_dskp_crosswalk_DRAF.json'
+      - 'rpt_2027/pendidikan_moral/year*_crosswalk_DSKP.json'
+      - 'rpt_2027/psv/dskp_full_standard_texts_y*_20261107_DRAF.json'
+      - 'rpt_2027/rbt/dskp_full_standard_texts_y*_20261107_DRAF.json'
+      - 'rpt_2027/pjpk/dskp_full_standard_texts_y*_20261107_DRAF.json'
       - 'scripts/build_rpt_2027_standard_preview.py'
+      - 'scripts/build_rpt_2027_second_batch_preview.py'
+      - 'scripts/build_rpt_2027_rbt_32_week_illustration.py'
+      - 'rpt_2027/common/rbt_truncated_title_guard_staging.py'
+      - 'rpt_2027/common/rbt_2026_week_source_annotation_staging.py'
+      - 'tests/test_rbt_2026_source_week_notes_staging.py'
+      - 'rpt_2027/common/rbt_teacher_week_allocation_staging.py'
+      - 'tests/test_rbt_teacher_week_allocation_staging.py'
+      - 'tests/test_rpt_2027_rbt_truncated_titles.py'
+      - 'tests/test_rpt_2027_rbt_t4_book_page_evidence.py'
+      - 'scripts/audit_rbt_y5_y6_64_pdp_page_consistency_staging.py'
+      - 'tests/test_rpt_2027_rbt_y5_y6_book_mapping.py'
+      - 'audits/rbt_y5_y6_textbook_page_evidence_20261106.json'
+      - 'scripts/verify_rbt_t4_textbook_pages_offline.py'
+      - 'audits/rbt_t4_actual_pdf_page_code_verification_20261107.md'
+      - 'tests/test_rpt_2027_rbt_32_week_illustration.py'
+      - 'scripts/build_rpt_2027_rbt_teacher_adjustable_candidate.py'
+      - 'tests/test_rpt2027_rbt_teacher_adjustable_candidate.py'
+      - 'tests/test_rbt_rpt2026_week_block_evidence_staging.py'
+      - 'scripts/audit_rpt2027_release_gaps_staging.py'
+      - 'tests/test_rpt2027_release_gaps_staging.py'
+      - 'audits/rbt_t4_t6_rpt2026_23_sp_week_block_source_evidence_20261107.json'
+      - 'audits/rbt_y4_y6_dskp_full_standard_text_audit_20261107.md'
+      - 'tests/test_rpt_2027_second_batch_preview.py'
+      - 'rpt_2027/sejarah/RPT_SEJARAH_TAHUN_*_2027_A_B_DRAF.csv'
+      - 'rpt_2027/pjpk/pjpk_2027_rpt_manifest.json'
       - 'tests/test_rpt_2027_standard_2026_layout_preview.py'
       - '.github/workflows/rpt-2027-format-2026-staging-qa.yml'
   workflow_dispatch:
@@ -18,33 +58,125 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install 'reportlab==4.2.5' 'pypdf==5.1.0' 'PyMuPDF==1.24.14'
-      - run: python -m py_compile rpt_2027/common/format_2026_layout_preview.py scripts/build_rpt_2027_standard_preview.py
+      - run: pip install 'reportlab==4.2.5' 'pypdf==5.1.0' 'PyMuPDF==1.24.14' 'beautifulsoup4==4.12.3'
+      - run: python -m py_compile rpt_2027/common/format_2026_layout_preview.py scripts/build_rpt_2027_standard_preview.py scripts/build_rpt_2027_second_batch_preview.py rpt_2027/common/standard_text_enrichment.py rpt_2027/common/calendar_week_mapping_staging.py scripts/audit_rpt_2027_calendar_master_staging.py rpt_2027/common/sejarah_source_enrichment_staging.py scripts/build_rpt_2027_rbt_32_week_illustration.py rpt_2027/common/rbt_truncated_title_guard_staging.py rpt_2027/common/rbt_2026_week_source_annotation_staging.py scripts/audit_rpt2027_release_gaps_staging.py scripts/verify_rbt_t4_textbook_pages_offline.py
       - name: Audit source and render each of the 13 A4 landscape PDFs
-        run: python -m unittest tests.test_rpt_2027_standard_2026_layout_preview -v
+        run: python -m unittest tests.test_rpt_2027_standard_2026_layout_preview tests.test_rpt_2027_second_batch_preview tests.test_rpt_2027_calendar_master_staging tests.test_rpt_2027_rbt_32_week_illustration tests.test_rbt_rpt2026_week_block_evidence_staging tests.test_rbt_2026_source_week_notes_staging tests.test_rbt_teacher_week_allocation_staging tests.test_rpt_2027_rbt_truncated_titles tests.test_rpt_2027_rbt_t4_book_page_evidence tests.test_rpt_2027_rbt_y5_y6_book_mapping -v
+      - name: Verify teacher-adjustable 32-week RBT planning drafts
+        run: python -m unittest tests.test_rpt2027_rbt_teacher_adjustable_candidate -v
+      - name: Assert current curriculum source gaps remain release-blocking
+        run: |
+          python -m unittest tests.test_rpt2027_release_gaps_staging -v
+          python -m scripts.audit_rpt2027_release_gaps_staging
+      - name: Verify 64 RBT Y5–6 RPH/CSV/manifest candidate book-page ranges
+        run: python -m scripts.audit_rbt_y5_y6_64_pdp_page_consistency_staging
+      - name: Audit calendar against central 2027 week master (read-only)
+        run: python -m scripts.audit_rpt_2027_calendar_master_staging
       - name: Build named reviewer previews (not live downloads)
         run: |
           python -m scripts.build_rpt_2027_standard_preview
+          python -m scripts.build_rpt_2027_second_batch_preview
           python - <<'PY'
           from pathlib import Path
           import fitz
           root=Path('staging/rpt_2027_seragam_2026/pdf')
           pdfs=sorted(root.glob('*.pdf'))
-          assert len(pdfs)==13, len(pdfs)
+          assert len(pdfs)==21, len(pdfs)
           for f in pdfs:
               with fitz.open(f) as pdf:
-                  for page in pdf:
-                      assert page.rect.width>page.rect.height
-                  # First table page, for human visual comparison on review.
-                  if pdf.page_count>1:
-                      pix=pdf[1].get_pixmap(matrix=fitz.Matrix(1.5,1.5),alpha=False)
-                      pix.save(str(f.with_suffix('.page2.png')))
+                  assert pdf.page_count>1, f
+                  for i,page in enumerate(pdf):
+                      assert page.rect.width>page.rect.height, (f, i)
+                      text = page.get_text()
+                      # A DSKP bullet previously became U+0000 in PJPK/PSV.
+                      assert chr(0) not in text, (f, i, "blank/control glyph")
+                      for block in page.get_text("blocks"):
+                          x0,y0,x1,y1 = block[:4]
+                          assert 0 <= x0 <= x1 <= page.rect.width, (f, i, "text outside horizontal page")
+                          assert 0 <= y0 <= y1 <= page.rect.height, (f, i, "text outside vertical page")
+                  cover=pdf[0].get_text()
+                  for required in ("RANCANGAN PENGAJARAN TAHUNAN 2027",
+                                   "NAMA SEKOLAH", "NAMA GURU", "LOGO SEKOLAH"):
+                      assert required in cover, (f, "missing cover field", required)
+                  for forbidden in ("ALAMAT SEKOLAH", "NEGERI / KUMPULAN", "KUMPULAN A",
+                                    "KUMPULAN B", "DRAF SEMAKAN", "Halaman 1"):
+                      assert forbidden not in cover, (f, "extra cover field", forbidden)
+                  coverpix=pdf[0].get_pixmap(matrix=fitz.Matrix(1.4,1.4),alpha=False)
+                  coverpix.save(str(f.with_suffix('.cover.png')))
+                  pix=pdf[1].get_pixmap(matrix=fitz.Matrix(1.5,1.5),alpha=False)
+                  pix.save(str(f.with_suffix('.page2.png')))
           PY
+      - name: Generate separate explicitly unapproved RBT example schedules
+        run: |
+          python -m scripts.build_rpt_2027_rbt_32_week_illustration
+          python - <<'PY'
+          from pathlib import Path
+          import fitz
+          root=Path('staging/rpt_2027_seragam_2026/rbt_32week_SIMULASI')
+          files=sorted(root.glob('*.pdf'))
+          assert len(files)==3, files
+          for file in files:
+              assert 'SIMULASI_BUKAN_FINAL' in file.name
+              with fitz.open(file) as doc:
+                  assert doc.page_count>1
+                  assert all(p.rect.width>p.rect.height for p in doc)
+                  cover=doc[0].get_text()
+                  assert all(t in cover for t in ('NAMA GURU','NAMA SEKOLAH','LOGO SEKOLAH'))
+                  body='\\n'.join(p.get_text() for p in list(doc)[1:])
+                  assert 'M03 (SIMULASI)' in body and 'M34 (SIMULASI)' in body
+                  assert 'bukan tarikh kelas sebenar' in ' '.join(body.split())
+                  assert not any(chr(0) in p.get_text() for p in doc)
+                  for p in doc:
+                      for b in p.get_text('blocks'):
+                          x0,y0,x1,y1=b[:4]
+                          assert 0<=x0<=x1<=p.rect.width and 0<=y0<=y1<=p.rect.height
+                  doc[0].get_pixmap(matrix=fitz.Matrix(1.4,1.4),alpha=False).save(
+                      str(file.with_suffix('.cover.png')))
+                  doc[1].get_pixmap(matrix=fitz.Matrix(1.5,1.5),alpha=False).save(
+                      str(file.with_suffix('.page2.png')))
+          PY
+      - name: Build three teacher-adjustable 2027 RBT plans in an isolated folder
+        run: |
+          python -m scripts.build_rpt_2027_rbt_teacher_adjustable_candidate
+          python - <<'PY'
+          import fitz
+          from pathlib import Path
+          files=sorted(Path('staging/rpt_2027_seragam_2026/rbt_32week_CADANGAN_RPT_GURU_DRAF').glob('*.pdf'))
+          assert len(files)==3
+          for f in files:
+              with fitz.open(f) as pdf:
+                  assert pdf.page_count>1
+                  assert all(page.rect.width>page.rect.height for page in pdf)
+                  body=" ".join(page.get_text() for page in list(pdf)[1:])
+                  assert 'M03 (CADANGAN RPT)' in body and 'M34 (CADANGAN RPT)' in body
+          PY
+      - name: Record teacher-facing RPT developer-note leaks (read-only, not a release approval)
+        run: |
+          python -m unittest tests.test_rpt2027_teacher_text_leak_scan -v
+          python -m scripts.audit_rpt2027_teacher_text_leaks_20261108 \
+            --teacher-output-only \
+            --fail-on-findings \
+            --output staging/rpt_2027_seragam_2026/teacher_text_leak_report.json \
+            staging/rpt_2027_seragam_2026/pdf
+          # Existing packaged PDFs are reported separately from the 21 new previews.
+          python -m scripts.audit_rpt2027_teacher_text_leaks_20261108 \
+            --teacher-output-only \
+            --output staging/rpt_2027_seragam_2026/teacher_text_leak_existing_packaged_rpt.json \
+            rpt_2027
+          # For the later FINAL READY release gate, rerun with --fail-on-findings.
       - uses: actions/upload-artifact@v4
         with:
-          name: RPT2027-13-draf-format-2026-PDF-dan-pratonton
+          name: RPT2027-21-asal-dan-3-RBT-simulasi-DRAF
           path: |
+            staging/rpt_2027_seragam_2026/teacher_text_leak_report.json
+            staging/rpt_2027_seragam_2026/teacher_text_leak_existing_packaged_rpt.json
             staging/rpt_2027_seragam_2026/pdf/*.pdf
             staging/rpt_2027_seragam_2026/pdf/*.png
+            staging/rpt_2027_seragam_2026/audit_calendar_week_alignment.json
+            staging/rpt_2027_seragam_2026/release_gap_audit_20261107_DRAF.json
+            staging/rpt_2027_seragam_2026/audit_rbt_y5_y6_64_pdp_page_consistency.json
+            staging/rpt_2027_seragam_2026/rbt_32week_SIMULASI/*.pdf
+            staging/rpt_2027_seragam_2026/rbt_32week_SIMULASI/*.png
+            staging/rpt_2027_seragam_2026/rbt_32week_CADANGAN_RPT_GURU_DRAF/*.pdf
           if-no-files-found: error
           retention-days: 14

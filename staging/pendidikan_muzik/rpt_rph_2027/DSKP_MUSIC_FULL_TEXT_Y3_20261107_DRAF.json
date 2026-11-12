@@ -1,0 +1,253 @@
+{
+  "year": 3,
+  "status": "DSKP_SOURCE_TEXT_STAGING_NOT_OFFICIAL_RELEASE",
+  "source_pdf": {
+    "url": "https://drive.google.com/file/d/1uu1n3V3dL5aN0MCC7gdwaG6II1nGJWFz/view",
+    "filename": "GuruBesar_DSKP_Pendidikan_Muzik_Tahun_3.pdf",
+    "sha256": "f86397f03aee8c9a0a20cd7b6cb1b040ba3671b2fd4bdb8fc92327e4518a2304"
+  },
+  "source_note": "Full readable textual SP clauses from KPM DSKP table. Some SP additionally contain score/notation graphics not conveyed by PDF text; flagged for refer-to-source. SK Y4 3.1/4.1 labels differ from printed SP 3.2.x/4.2.1; do not recode.",
+  "sk_titles": {
+    "1.1": "Elemen Muzik",
+    "1.2": "Notasi Muzik",
+    "2.1": "Nyanyian",
+    "2.2": "Permainan Alat Perkusi",
+    "2.3": "Bergerak Mengikut Muzik",
+    "2.4": "Rekoder",
+    "3.1": "Pengkaryaan Muzik",
+    "4.1": "Penghayatan Karya Muzik",
+    "5.1": "Persembahan Muzik"
+  },
+  "sp": [
+    {
+      "code": "1.1.1",
+      "sk": "1.1",
+      "sk_title": "Elemen Muzik",
+      "text": "Mengenal dan membezakan tekstur tebal dan nipis.",
+      "pdf_page": 31,
+      "printed_page": 19,
+      "figure_or_score_required": false,
+      "notes": []
+    },
+    {
+      "code": "1.1.2",
+      "sk": "1.1",
+      "sk_title": "Elemen Muzik",
+      "text": "Mengaplikasikan pemahaman tekstur tebal dan nipis dalam aktiviti muzik.",
+      "pdf_page": 31,
+      "printed_page": 19,
+      "figure_or_score_required": false,
+      "notes": []
+    },
+    {
+      "code": "1.2.1",
+      "sk": "1.2",
+      "sk_title": "Notasi Muzik",
+      "text": "Membaca not pada baluk: (i) not G, A dan B. (ii)",
+      "pdf_page": 31,
+      "printed_page": 19,
+      "figure_or_score_required": true,
+      "notes": [
+        "Figure/notation in original DSKP may not be represented in extracted text"
+      ]
+    },
+    {
+      "code": "1.2.2",
+      "sk": "1.2",
+      "sk_title": "Notasi Muzik",
+      "text": "Mengaplikasikan pengetahuan notasi muzik dalam aktiviti permainan rekoder.",
+      "pdf_page": 31,
+      "printed_page": 19,
+      "figure_or_score_required": false,
+      "notes": []
+    },
+    {
+      "code": "2.1.1",
+      "sk": "2.1",
+      "sk_title": "Nyanyian",
+      "text": "Bernyanyi dengan teknik pernafasan yang betul.",
+      "pdf_page": 31,
+      "printed_page": 19,
+      "figure_or_score_required": false,
+      "notes": []
+    },
+    {
+      "code": "2.1.2",
+      "sk": "2.1",
+      "sk_title": "Nyanyian",
+      "text": "Bernyanyi dengan pic yang betul.",
+      "pdf_page": 31,
+      "printed_page": 19,
+      "figure_or_score_required": false,
+      "notes": []
+    },
+    {
+      "code": "2.1.3",
+      "sk": "2.1",
+      "sk_title": "Nyanyian",
+      "text": "Bernyanyi mengikut tempo.",
+      "pdf_page": 31,
+      "printed_page": 19,
+      "figure_or_score_required": false,
+      "notes": []
+    },
+    {
+      "code": "2.2.1",
+      "sk": "2.2",
+      "sk_title": "Permainan Alat Perkusi",
+      "text": "Memainkan alat perkusi mengikut tempo.",
+      "pdf_page": 31,
+      "printed_page": 19,
+      "figure_or_score_required": false,
+      "notes": []
+    },
+    {
+      "code": "2.2.2",
+      "sk": "2.2",
+      "sk_title": "Permainan Alat Perkusi",
+      "text": "Memainkan alat perkusi mengikut corak irama berdasarkan skor ikon yang mewakili nilai not",
+      "pdf_page": 31,
+      "printed_page": 19,
+      "figure_or_score_required": false,
+      "notes": []
+    },
+    {
+      "code": "2.3.1",
+      "sk": "2.3",
+      "sk_title": "Bergerak Mengikut Muzik",
+      "text": "Membuat pergerakan berdasarkan corak irama dari muzik yang didengar.",
+      "pdf_page": 33,
+      "printed_page": 21,
+      "figure_or_score_required": false,
+      "notes": []
+    },
+    {
+      "code": "2.3.2",
+      "sk": "2.3",
+      "sk_title": "Bergerak Mengikut Muzik",
+      "text": "Membuat pergerakan berdasarkan tempo.",
+      "pdf_page": 33,
+      "printed_page": 21,
+      "figure_or_score_required": false,
+      "notes": []
+    },
+    {
+      "code": "2.3.3",
+      "sk": "2.3",
+      "sk_title": "Bergerak Mengikut Muzik",
+      "text": "Merancang pergerakan berdasarkan muzik yang didengar: (i) corak irama lagu (ii) tempo",
+      "pdf_page": 33,
+      "printed_page": 21,
+      "figure_or_score_required": true,
+      "notes": [
+        "Figure/notation in original DSKP may not be represented in extracted text"
+      ]
+    },
+    {
+      "code": "2.4.1",
+      "sk": "2.4",
+      "sk_title": "Rekoder",
+      "text": "Mengenal dan memahami: (i) bahagian rekoder. (ii) cara menjaga rekoder. (iii) penjarian asas rekoder.",
+      "pdf_page": 34,
+      "printed_page": 22,
+      "figure_or_score_required": true,
+      "notes": [
+        "Figure/notation in original DSKP may not be represented in extracted text"
+      ]
+    },
+    {
+      "code": "2.4.2",
+      "sk": "2.4",
+      "sk_title": "Rekoder",
+      "text": "Memainkan rekoder mengikut tempo dengan ton yang baik: (i) dengan penjarian not B, A dan G. (ii) menggunakan jenis not (iii) pernafasan yang betul. (iv) perlidahan yang betul. (v) Embouchure yang betul. (vi) postur yang betul.",
+      "pdf_page": 35,
+      "printed_page": 23,
+      "figure_or_score_required": true,
+      "notes": [
+        "Figure/notation in original DSKP may not be represented in extracted text"
+      ]
+    },
+    {
+      "code": "2.4.3",
+      "sk": "2.4",
+      "sk_title": "Rekoder",
+      "text": "Memainkan rekoder dengan mengaplikasikan pembacaan skor muzik.",
+      "pdf_page": 35,
+      "printed_page": 23,
+      "figure_or_score_required": false,
+      "notes": []
+    },
+    {
+      "code": "3.1.1",
+      "sk": "3.1",
+      "sk_title": "Pengkaryaan Muzik",
+      "text": "Menghasilkan kesan bunyi untuk mengiringi persembahan.",
+      "pdf_page": 37,
+      "printed_page": 25,
+      "figure_or_score_required": false,
+      "notes": []
+    },
+    {
+      "code": "3.1.2",
+      "sk": "3.1",
+      "sk_title": "Pengkaryaan Muzik",
+      "text": "Mencipta corak irama mudah menggunakan ikon mewakili nilai not",
+      "pdf_page": 37,
+      "printed_page": 25,
+      "figure_or_score_required": false,
+      "notes": []
+    },
+    {
+      "code": "3.1.3",
+      "sk": "3.1",
+      "sk_title": "Pengkaryaan Muzik",
+      "text": "Mempersembahkan hasil ciptaan.",
+      "pdf_page": 37,
+      "printed_page": 25,
+      "figure_or_score_required": false,
+      "notes": []
+    },
+    {
+      "code": "4.1.1",
+      "sk": "4.1",
+      "sk_title": "Penghayatan Karya Muzik",
+      "text": "Membuat ulasan terhadap Muzik Popular yang didengar daripada aspek: (i) jenis muzik (ii) nama penyanyi atau kumpulan",
+      "pdf_page": 39,
+      "printed_page": 27,
+      "figure_or_score_required": true,
+      "notes": [
+        "Figure/notation in original DSKP may not be represented in extracted text"
+      ]
+    },
+    {
+      "code": "5.1.1",
+      "sk": "5.1",
+      "sk_title": "Persembahan Muzik",
+      "text": "Merancang persembahan muzik.",
+      "pdf_page": 41,
+      "printed_page": 29,
+      "figure_or_score_required": false,
+      "notes": []
+    },
+    {
+      "code": "5.1.2",
+      "sk": "5.1",
+      "sk_title": "Persembahan Muzik",
+      "text": "Membuat persembahan muzik.",
+      "pdf_page": 41,
+      "printed_page": 29,
+      "figure_or_score_required": false,
+      "notes": []
+    },
+    {
+      "code": "5.1.3",
+      "sk": "5.1",
+      "sk_title": "Persembahan Muzik",
+      "text": "Mengamalkan nilai murni dalam aktiviti muzik.",
+      "pdf_page": 41,
+      "printed_page": 29,
+      "figure_or_score_required": false,
+      "notes": []
+    }
+  ]
+}
