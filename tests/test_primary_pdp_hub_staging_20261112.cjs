@@ -40,6 +40,14 @@ assert.equal(allowed(worksheet,4,"MATH"),false,
  "Other subjects must never inherit English worksheets");
 assert.equal(allowed({...worksheet,url:"https://external.example/worksheet.pdf"},4,"ENGLISH"),false);
 assert.equal(allowed({...worksheet,url:"/api/web/rph/english-workbook?year=4"},4,"ENGLISH"),false);
+const editable={...worksheet,type:"worksheet_word",
+ url:"/api/web/rph/english-worksheet-word?year=4&subject=ENGLISH&unit=Unit+1&lesson=e-4-004"};
+assert.equal(allowed(editable,4,"ENGLISH"),true,
+ "Editable Year 4 worksheet must be visible only for verified source");
+assert.equal(allowed(editable,3,"ENGLISH"),false);
+assert.equal(allowed(editable,4,"MATH"),false);
+assert.equal(allowed({...editable,url:"https://example.com/file.docx"},4,"ENGLISH"),false);
+assert.equal(allowed({...editable,url:"/api/web/rph/english-worksheet?year=4"},4,"ENGLISH"),false);
 
 assert.equal(allowed(workbook,4,"ENGLISH"),true,
  "Existing independent verified Workbook bridge must not regress");
