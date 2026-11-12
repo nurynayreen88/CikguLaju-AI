@@ -1,15 +1,17 @@
 # CikguLaju AI — Ujian Diagnostik Tahun 1 (2027)
 
+Edisi Baharu (v2) menggantikan pakej awal yang tidak memuaskan dari segi susun atur dan mutu cetakan.
+
 Pengesanan awal selepas murid mula sekolah, bukan saringan kemasukan Tahun 1.
 Item asal CikguLaju AI, bukan peperiksaan rasmi KPM atau penetapan TP PBD.
 
 ## Kandungan pakej semakan
 
-- Bahasa Melayu (2 halaman, 20 markah): lisan, arahan, huruf, bunyi awal, perkataan, tulisan, pratulis.
-- Bahasa Inggeris (2 halaman, 20 markah): listening, speaking, gambar, letters, tracing.
-- Matematik (2 halaman, 20 markah): nombor, padanan, banding, bentuk, pola, tulisan.
+- Bahasa Melayu (3 halaman, 20 markah): lisan, arahan, huruf, bunyi awal, perkataan, tulisan, pratulis.
+- Bahasa Inggeris (3 halaman, 20 markah): listening, speaking, gambar, letters, tracing.
+- Matematik (3 halaman, 20 markah): nombor, padanan, banding, bentuk, pola, tulisan.
 - Pemerhatian kesediaan (2 halaman): 10 aspek, skala 0/1/2/TB.
-- Panduan Guru (Word dan PDF), Analisis Kelas (Excel), PDF lembaran murid gabungan dan ZIP semua.
+- Panduan Guru (Word dan PDF, 6 halaman), Analisis Kelas (Excel, 4 tab), PDF lembaran murid gabungan (9 halaman) dan ZIP semua.
 
 catalog.json menyimpan nama, MIME, saiz dan SHA-256 yang telah diperiksa. Fail
 binari masih perlu dipasang secara berasingan di pelayan; metadata bukan fail.
