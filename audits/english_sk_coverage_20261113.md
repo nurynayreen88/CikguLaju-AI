@@ -5,7 +5,7 @@ Skop bahan English semasa ialah Sekolah Kebangsaan. Katalog SOW SK menjadi asas 
 | Tahun | Katalog RPH Web | Buku Aktiviti boleh dipetik | Sambungan bahan lain |
 | --- | --- | --- | --- |
 | 1 | 2 Lesson KSSR Semakan 2017 dalam katalog semasa | Belum disambung pada laluan ini | Inventori lama mempunyai 158/160 fail dengan nama standard. KP2027 memerlukan semakan sumber berasingan. |
-| 2 | 160 Lesson, 160 padanan standard tetap | 61 Lesson | Student Book Super Minds 1 First Edition boleh dipetik bagi 61 Lesson. Pemetaan audio Web meliputi 45 padanan trek WMA asal bagi 32 Lesson selepas audit sambungan. Lihat status pelepasan dalam log. |
+| 2 | 160 Lesson, 160 padanan standard tetap | 61 Lesson | Student Book Super Minds 1 First Edition boleh dipetik bagi 61 Lesson. Pemetaan audio Web meliputi 68 padanan trek WMA asal bagi 45 Lesson selepas audit sambungan. Lihat status pelepasan dalam log. |
 | 3 | 160 Lesson, 160 padanan standard tetap | 70 Lesson | Student Book dan audio mengikut sumber Telegram. |
 | 4 | 160 Lesson, 150 padanan tetap dan 10 pilihan guru | 107 Lesson | Petikan SB Lesson 43, 103 dan 157 dipadankan ke muka surat 121, 73 dan 110–111. Sekatan audio sedia ada masih berkuat kuasa. |
 | 5 | 160 Lesson, 151 padanan tetap dan 9 pilihan guru | 130 Lesson | Student Book dan audio memerlukan semakan sumber dan laluan penghantaran. |
@@ -64,3 +64,34 @@ Teacher’s Book T95 mengesahkan bahawa Track 20 digunakan pada Student Book m/s
 ID 15 trek sepadan dengan katalog penghantar Telegram asal. Semua fail lulus semakan pengepala ASF, codec WMAv2, nombor trek terbenam dan nyahkod penuh. Laluan Web memeriksa identiti Lesson, halaman Student Book dan Workbook serta rujukan v15 sebelum menyenaraikan fail dengan label buku, halaman dan aktiviti. Penambahan ini dibuat pada laluan bahan Web, sementara Telegram terus menggunakan pemetaan penghantaran asal mengikut arahan pemilik projek.
 
 Baki **21 Lesson HOLD** ialah 3, 12, 13, 20, 42, 56, 66, 68, 71, 79, 87, 116–119, 126–128, 139, 146 dan 147. Muat turun menggunakan akaun guru produksi belum disahkan.
+
+## 14 November 2026 — Penyelesaian semakan baki 21 Lesson Tahun 2 SK
+
+SOW dirujuk pada muka surat bercetak yang disenaraikan di bawah. Nombor trek dan aktiviti disemak pada Student Book, Workbook dan Teacher’s Book edisi pertama. Fail WMA asal sepadan dengan ID penghantar Telegram, pengepala ASF, codec WMAv2 dan nombor trek terbenam. Kesemua trek yang disenaraikan lulus nyahkod penuh.
+
+| Lesson | SOW m/s | Student Book | Workbook |
+| --- | --- | --- | --- |
+| 3 | 29 | m/s 59, Aktiviti 1 dan 2, CD2 Track 20 dan 21 | m/s 59, Aktiviti 1, CD2 Track 22 |
+| 12 | 51 | m/s 62–63, cerita Aktiviti 1, CD2 Track 27 | m/s 62, Aktiviti 1, CD2 Track 28 |
+| 13 | 53 | m/s 63, Aktiviti 4, CD2 Track 29 | m/s 63, Aktiviti 2, CD2 Track 30 |
+| 20 | 67 | m/s 65, aktiviti puisi dan penulisan | m/s 65, Aktiviti 1, CD2 Track 32 |
+| 42 | 111 | m/s 76, aktiviti bacaan dan lisan | m/s 76, Aktiviti 1, CD2 Track 49 |
+| 56 | 139 | m/s 82, Aktiviti 1 dan 2, CD3 Track 2 dan 3 | m/s 82, carian perkataan |
+| 66 | 159 | m/s 84, Aktiviti 1, CD3 Track 6 | m/s 84, bacaan dan mewarna |
+| 68 | 163 | m/s 86–87, cerita Aktiviti 1, CD3 Track 10 | m/s 86, Aktiviti 1, CD3 Track 11 |
+| 71 | 169 | m/s 87, Aktiviti 4, CD3 Track 12 | m/s 87, Aktiviti 2, CD3 Track 13 |
+| 117 | 261 | m/s 104, Aktiviti 1, CD3 Track 33 | m/s 104, kraf topeng robot |
+| 126 | 279 | m/s 106, Aktiviti 1 dan 2, CD3 Track 34 dan 35 | m/s 106, latihan tulis dan lukis |
+| 127 | 281 | m/s 107, Aktiviti 1 dan 2, CD3 Track 36 dan 37 | m/s 107, latihan padanan dialog |
+| 128 | 283 | m/s 108, Aktiviti 1 dan 2, CD3 Track 38 dan 40 | m/s 108, penulisan rangkap tambahan |
+
+Lapan Lesson tidak mempunyai rakaman untuk aktiviti pada halaman yang dipadankan.
+
+| Lesson | Halaman Student Book / Workbook | Bukti |
+| --- | --- | --- |
+| 79, 87 | 91, 93 | Bacaan, projek bahan dan permainan ulang kaji; rujukan v15 ialah trek halaman lain. |
+| 116, 118, 119 | 103, 105 | Kuiz rangka, projek poster dan permainan ingatan atau benar/salah secara berpasangan; Track 33 ialah aktiviti visualisasi m/s 104. |
+| 139 | 113 | Guru memberikan arahan pelekat secara lisan mengikut T113. |
+| 146, 147 | 114, 115 | Aktiviti cuaca, peta dan diari; tiada nombor trek pada halaman pelajaran. |
+
+Untuk Lesson 12, audio cerita merangkumi m/s 62–63; pautan petikan Student Book sedia ada menyajikan m/s 62 mengikut rekod runtime. Versi karaoke yang disebut dalam panduan guru tidak disertakan dalam batch trek bercetak ini. Rekod v15, fail sumber dan penghantaran Telegram asal dikekalkan. Kesemua 53 Lesson dengan label audio v15 telah disemak, dan 45 mempunyai padanan rakaman untuk Web. Muat turun melalui sesi guru produksi belum disahkan.

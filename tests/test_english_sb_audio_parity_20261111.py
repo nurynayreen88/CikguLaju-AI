@@ -276,14 +276,27 @@ class EnglishSourceParityTests(unittest.TestCase):
 
     def test_year_two_source_checked_audio_replaces_only_exact_legacy_rows(self):
         cases = (
-            (96, (96, 96), (96, 96), "CD3-20", (21, 23)),
-            (97, (97, 97), (97, 97), "CD3-21", (24, 25)),
-            (98, (98, 99), (98, 99), "CD3-27", (26, 27)),
-            (106, (99, 99), (99, 99), "CD3-29", (28, 29)),
-            (108, (101, 101), (101, 101), "CD3-31", (31,)),
-            (136, (110, 111), (110, 111), "CD3-44", (43, 44)),
-            (137, (111, 111), (111, 111), "CD3-46", (45, 46)),
-            (138, (112, 112), (112, 112), "CD3-48", (47, 48)),
+            (3, (59, 59), (59, 59), "CD2-20; CD2-21; CD2-22", ("CD2-20", "CD2-21", "CD2-22")),
+            (12, (62, 62), (62, 62), "CD2-27; CD2-28", ("CD2-27", "CD2-28")),
+            (13, (63, 63), (63, 63), "CD2-29; CD2-30", ("CD2-29", "CD2-30")),
+            (20, (65, 65), (65, 65), "CD2-32", ("CD2-32",)),
+            (42, (76, 76), (76, 76), "CD2-48", ("CD2-49",)),
+            (56, (82, 82), (82, 82), "CD3-01; CD3-02", ("CD3-02", "CD3-03")),
+            (66, (84, 84), (84, 84), "CD3-06; CD3-07", ("CD3-06",)),
+            (68, (86, 87), (86, 87), "CD3-10; CD3-11", ("CD3-10", "CD3-11")),
+            (71, (87, 87), (87, 87), "CD3-12; CD3-13", ("CD3-12", "CD3-13")),
+            (96, (96, 96), (96, 96), "CD3-20", ("CD3-21", "CD3-23")),
+            (97, (97, 97), (97, 97), "CD3-21", ("CD3-24", "CD3-25")),
+            (98, (98, 99), (98, 99), "CD3-27", ("CD3-26", "CD3-27")),
+            (106, (99, 99), (99, 99), "CD3-29", ("CD3-28", "CD3-29")),
+            (108, (101, 101), (101, 101), "CD3-31", ("CD3-31",)),
+            (117, (104, 104), (104, 104), "CD3-34", ("CD3-33",)),
+            (126, (106, 106), (106, 106), "CD3-37; CD3-38", ("CD3-34", "CD3-35")),
+            (127, (107, 107), (107, 107), "CD3-39", ("CD3-36", "CD3-37")),
+            (128, (108, 108), (108, 108), "CD3-40", ("CD3-38", "CD3-40")),
+            (136, (110, 111), (110, 111), "CD3-44", ("CD3-43", "CD3-44")),
+            (137, (111, 111), (111, 111), "CD3-46", ("CD3-45", "CD3-46")),
+            (138, (112, 112), (112, 112), "CD3-48", ("CD3-47", "CD3-48")),
         )
         source = self.runtime._eng12_rows("Tahun 2")[0]
         self.assertEqual(set(YEAR2_AUDIO_BOOK_EVIDENCE), {case[0] for case in cases})
@@ -294,14 +307,27 @@ class EnglishSourceParityTests(unittest.TestCase):
                        "workbook_page_start": wb_first, "workbook_page_end": wb_last,
                        "workbook_status": "LINKED_VERIFIED", "audio_reference": legacy}
                 items = _audio_rows(self.runtime, 2, lesson, year2_rows=[row])
-                self.assertEqual([item["reference"] for item in items],
-                                 [f"CD3 Track {number}" for number in tracks])
+                expected = [f"{disc} Track {int(number)}"
+                            for disc, number in (track.split("-") for track in tracks)]
+                self.assertEqual([item["reference"] for item in items], expected)
                 for change in ({"audio_reference": "CD3-99"}, {"textbook_page_start": sb_first - 1},
                                {"workbook_page_end": wb_last + 1}, {"workbook_status": "REVIEW_REQUIRED"}):
                     self.assertEqual(_audio_rows(self.runtime, 2, lesson, year2_rows=[{**row, **change}]), [])
                 if lesson == 98:
                     self.assertTrue(items[0]["title"].endswith("Student Book pp. 98–99 Activity 1"))
                     self.assertTrue(items[1]["title"].endswith("Workbook p. 98 Activity 1"))
+
+    def test_year_two_pages_without_recorded_audio_ignore_legacy_tracks(self):
+        source = self.runtime._eng12_rows("Tahun 2")[0]
+        for lesson, page, reference in ((79, 91, "CD3-15"), (87, 93, "CD3-16"),
+                (116, 103, "CD3-33"), (118, 105, "CD3-35"), (119, 105, "CD3-36"),
+                (139, 113, "CD3-47"), (146, 114, "CD3-48"), (147, 115, "CD3-49")):
+            with self.subTest(lesson=lesson):
+                row = {**source, "lesson_no": lesson, "audio_reference": reference,
+                       "textbook_page_start": page, "textbook_page_end": page,
+                       "workbook_page_start": page, "workbook_page_end": page,
+                       "workbook_status": "LINKED_VERIFIED"}
+                self.assertEqual(_audio_rows(self.runtime, 2, lesson, year2_rows=[row]), [])
 
     def test_auth_and_input_guards(self):
         bare = self.client.get("/internal/rph/v1/english-extras/audio",

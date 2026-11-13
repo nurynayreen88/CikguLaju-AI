@@ -40,10 +40,18 @@ YEAR4_STUDENT_BOOK_CORRECTIONS = {
 YEAR2_AUDIO = {
     2: ((58, 58), {"CD2-18": "14nIKU6l5utMudXb9HS8Zc9aZsYOVul1a",
                    "CD2-19": "1xL916QiLasf1dO35exMZ1LgypwNwrkLC"}),
+    3: ((59, 59), {"CD2-20": "1T8j14lzwH_gDMg-3fHFAYAhbhIUSX61U",
+                   "CD2-21": "1tytx8H50xtmemOXI-Vh0YERcy9HI5CGH",
+                   "CD2-22": "1aUGlOIiWw4-lFvOtfgoJTna4NXGG5jbc"}),
     4: ((60, 60), {"CD2-23": "1NINHVmxH_tX1sO2WGYDAgfmIZh5i-Mqh"}),
     11: ((61, 61), {"CD2-25": "1dZfNW0fnedxJjSARaHw2fIi8x_k0-vO4",
                     "CD2-26": "1vpNkB4OWao5iPQvHzEpemQrlNiNhkX4H"}),
+    12: ((62, 62), {"CD2-27": "10g7LyS5-rGCPgoOgPoYfw-zpBrUZVt9-",
+                    "CD2-28": "1EMV_qy19Ktx3F_lPWtt3JFHPibyHt5du"}),
+    13: ((63, 63), {"CD2-29": "1s-eJwkUYYRbPOBNjXRKhkuUsT1yj3C3o",
+                    "CD2-30": "16LfOMCkuY-PfaToO932aSE35yGJ5jYXJ"}),
     14: ((64, 64), {"CD2-31": "1bohxCDWg5pwB4IZnpibBlFoM3z6FkPyP"}),
+    20: ((65, 65), {"CD2-32": "1t44G8OrP3Zj4Rb7kWUAV_u08PUxl4HhU"}),
     21: ((66, 66), {"CD2-33": "1bg-g73NV1eIgVL8qKi4BxwDz7dUiQYm9"}),
     23: ((68, 68), {"CD2-34": "1nk3TNOEUIL7gjIuR7LRFoaKHATh46E_P"}),
     26: ((70, 70), {"CD2-35": "1ZxYROG_L291L8WWIq2_J3NZDiW8giBkK",
@@ -54,11 +62,19 @@ YEAR2_AUDIO = {
     35: ((72, 72), {"CD2-40": "1GngRTwaqv-uXxokcGy4rDZW4rAQqDug0",
                     "CD2-42": "1yxRjQaqDAgS5aA9zS_1mcQZvJvMHhyCj"}),
     41: ((75, 75), {"CD2-47": "1gVtRNiGlqST9I43FSNEN4IP-aBhTAPj1"}),
+    42: ((76, 76), {"CD2-49": "1UGmgoS-CtYZLVrjna_yjqz3AbXadbVH6"}),
     43: ((77, 77), {"CD2-50": "12dHue3P1j6QrUMY0PJlrVRT-2pqBQ5yh"}),
     51: ((80, 80), {"CD2-51": "1fk-NenI3cLjmN1D8KSvbHyDOzzQRrlsX"}),
+    56: ((82, 82), {"CD3-02": "1CWEtMxq1EITbN9LG_tzxESe6ETkoeUrZ",
+                    "CD3-03": "17lqds1s5vGojKpMacwczirCDXWXAPyeU"}),
     57: ((83, 83), {"CD3-05": "1FM3Y5WOaR2-sAAO9cQUW9jsI3j7hxIcg"}),
+    66: ((84, 84), {"CD3-06": "1Of8zmJv5QoSFsxM9mMG3mArtxhpnh19a"}),
     67: ((85, 85), {"CD3-08": "1Y6nG2rpOOGwKZQCwc0GbsxFtRtdOOVdh",
                     "CD3-09": "1SRZv1CganXHWXVD5WXRTQaJgqrNT8sBZ"}),
+    68: ((86, 87), {"CD3-10": "1x7LIPuPvbl9oGZXg3fDROUVE0H-cjg_2",
+                    "CD3-11": "1aFRRk2mzGa1BLhVe7kzhfqRCnCp3ZWpt"}),
+    71: ((87, 87), {"CD3-12": "1PjQuJwy8SVrh4Y8sZYdFJKxKTCmtRjsh",
+                    "CD3-13": "1JAfqE_ieNNsEYbhDCMH8f-rj449a23Du"}),
     77: ((89, 89), {"CD3-14": "1gdfLJPCySLr7czH4pTRu3TWxRYZ-Lr-s"}),
     78: ((90, 90), {"CD3-15": "1cJiT8FzVnxl3YrRIFpESLS-A16aBPC7Z"}),
     86: ((92, 92), {"CD3-16": "12GfEs-yBivczu4stIKMfm8BrS4AyYW2M"}),
@@ -76,6 +92,13 @@ YEAR2_AUDIO = {
     107: ((100, 100), {"CD3-30": "1M01-6uPokXgXnOF78vPQZ5i0apdjDmWt"}),
     108: ((101, 101), {"CD3-31": "1wyhMvVojLHvfhcuWQDxlPzEIjdDp69ZL"}),
     109: ((102, 102), {"CD3-32": "1ohHvL4cQ26aNIyp97qexlEOZsYA_OMbp"}),
+    117: ((104, 104), {"CD3-33": "1vWg2Dw-1Vbm19JsUuqgEy21yuQyH2zOb"}),
+    126: ((106, 106), {"CD3-34": "1sY7S0EVVbENv5gmUnMb0SFIujfg6XGpK",
+                       "CD3-35": "1CYkpnETZJAQxFk8xacljNQD-TBS4danc"}),
+    127: ((107, 107), {"CD3-36": "1UnG0RwD8flFNz0UpFgNWqJ8BgT8XzTM5",
+                       "CD3-37": "1Kd0kLZo4lwM5ZbxliJHoHgn0e3PKsfvz"}),
+    128: ((108, 108), {"CD3-38": "173GIORr-aUO2Iww7j9rCsOiWW3XNhXVk",
+                       "CD3-40": "1uO3orq4gonX_YBzxOGI5EX3F9y_NpfbB"}),
     129: ((109, 109), {"CD3-41": "1GqLqE6EntsZACqd93g-IX-AfMIqmUwPC"}),
     136: ((110, 111), {"CD3-43": "1Lwu3pgFWQsfn5u67ErKgSs0LGtKah6Uq",
                        "CD3-44": "1rpmMiue_pZkAKTsPeTLYZZpc2ALy-wXL"}),
@@ -85,15 +108,28 @@ YEAR2_AUDIO = {
                        "CD3-48": "1rTGk7reWr8ES0kGR4-jHX_ojIens-uQj"}),
 }
 
-# Primary Year 2 SK SOW and Super Minds 1 Teacher's Book T96–T112.
-# These lessons have a stale or incomplete v15 audio reference. Match that
-# exact reference and the Workbook pages before using the audited tracks.
+# Primary Year 2 SK SOW and Super Minds 1 Teacher's Book T59–T112.
+# Match the exact v15 references and Workbook pages before publishing the
+# audited tracks, including cases where the original reference is stale.
 YEAR2_AUDIO_BOOK_EVIDENCE = {
+    3: ("CD2-20; CD2-21; CD2-22", (59, 59), ("Student Book p. 59 Activity 1", "Student Book p. 59 Activity 2", "Workbook p. 59 Activity 1")),
+    12: ("CD2-27; CD2-28", (62, 62), ("Student Book pp. 62–63 Activity 1", "Workbook p. 62 Activity 1")),
+    13: ("CD2-29; CD2-30", (63, 63), ("Student Book p. 63 Activity 4", "Workbook p. 63 Activity 2")),
+    20: ("CD2-32", (65, 65), ("Workbook p. 65 Activity 1",)),
+    42: ("CD2-48", (76, 76), ("Workbook p. 76 Activity 1",)),
+    56: ("CD3-01; CD3-02", (82, 82), ("Student Book p. 82 Activity 1", "Student Book p. 82 Activity 2")),
+    66: ("CD3-06; CD3-07", (84, 84), ("Student Book p. 84 Activity 1",)),
+    68: ("CD3-10; CD3-11", (86, 87), ("Student Book pp. 86–87 Activity 1", "Workbook p. 86 Activity 1")),
+    71: ("CD3-12; CD3-13", (87, 87), ("Student Book p. 87 Activity 4", "Workbook p. 87 Activity 2")),
     96: ("CD3-20", (96, 96), ("Student Book p. 96 Activity 1", "Student Book p. 96 Activity 2")),
     97: ("CD3-21", (97, 97), ("Student Book p. 97 Activity 1", "Student Book p. 97 Activity 2")),
     98: ("CD3-27", (98, 99), ("Student Book pp. 98–99 Activity 1", "Workbook p. 98 Activity 1")),
     106: ("CD3-29", (99, 99), ("Student Book p. 99 Activity 4", "Workbook p. 99 Activity 2")),
     108: ("CD3-31", (101, 101), ("Workbook p. 101 Activity 1",)),
+    117: ("CD3-34", (104, 104), ("Student Book p. 104 Activity 1",)),
+    126: ("CD3-37; CD3-38", (106, 106), ("Student Book p. 106 Activity 1", "Student Book p. 106 Activity 2")),
+    127: ("CD3-39", (107, 107), ("Student Book p. 107 Activity 1", "Student Book p. 107 Activity 2")),
+    128: ("CD3-40", (108, 108), ("Student Book p. 108 Activity 1", "Student Book p. 108 Activity 2")),
     136: ("CD3-44", (110, 111), ("Student Book pp. 110–111 Activity 1", "Workbook p. 110 Activity 1")),
     137: ("CD3-46", (111, 111), ("Student Book p. 111 Activity 4", "Workbook p. 111 Activity 2")),
     138: ("CD3-48", (112, 112), ("Student Book p. 112 Activity 2", "Workbook p. 112 Activity 1")),
@@ -241,7 +277,7 @@ def _audio_rows(runtime, year, lesson, *, year2_rows=None):
         labels = ("",) * len(tracks)
         if evidence:
             legacy_ref, workbook_pages, labels = evidence
-            if (refs != [legacy_ref] or row.get("workbook_status") != "LINKED_VERIFIED"
+            if ("; ".join(refs) != legacy_ref or row.get("workbook_status") != "LINKED_VERIFIED"
                     or (row.get("workbook_page_start"), row.get("workbook_page_end")) != workbook_pages):
                 return []
         elif refs != list(tracks):
