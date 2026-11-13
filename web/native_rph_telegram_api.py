@@ -112,15 +112,19 @@ def build_native_input(payload):
     unit=payload["unit"]
     teacher=payload["teacher"]
     fmt=payload["format"]
-    if subject not in SUBJECTS or type(year) is not int or not 2<=year<=6:
+    if subject not in SUBJECTS or type(year) is not int or not 1<=year<=6:
         raise ValueError("Invalid subject/year")
+    if year == 1:
+        from web.english_y1_kssr_rph import PLANS, UNIT
+        if subject != "ENGLISH" or type(lesson) is not int or lesson not in PLANS or unit != UNIT:
+            raise ValueError("English Year 1 Lesson not released")
     if type(lesson) is not int or not 1<=lesson<=200:
         raise ValueError("Invalid lesson")
     # Web and Telegram deploy independently. A live Web must not render a
     # stale lesson when the Telegram source/mapping was updated.
     source_digest=payload.get("source_digest")
     require_parity=os.environ.get("CIKGULAJU_WEB_RPH_SOURCE_PARITY_REQUIRED")=="1"
-    if source_digest is not None or require_parity:
+    if source_digest is not None or require_parity or year == 1:
         if not isinstance(source_digest,str) or not re.fullmatch(r"[a-f0-9]{64}",source_digest):
             raise ValueError("Missing source identity")
         from web.rph_shared_source_identity import source_fingerprint
@@ -222,6 +226,8 @@ def build_native_input(payload):
     # These are the exact selection markers set by Telegram callbacks. The
     # PJPK/PSV native row adapters otherwise silently return the older generic
     # document even though a source file exists on both servers.
+    if year == 1:
+        s["_web_english_y1_kssr_lesson"] = lesson
     if subject=="PJPK":
         from web.pjpk_2027_preview_runtime import _source
         selected=_source(year,component.lower(),lesson)
@@ -351,6 +357,8 @@ def create_native_rph_blueprint(runtime):
             if not (getattr(runtime,"CIKGULAJU_ENGLISH_Y5_DRAFT_RPH_ACTIVE",False)
                     and approved_for_telegram(body["lesson"])):
                 return jsonify({"error":"English Year 5 RPH not approved in Telegram"}),503
+        if body["year"] == 1 and not getattr(runtime, "ENGLISH_Y1_KSSR_WEB_ACTIVE", False):
+            return jsonify({"error": "English Year 1 renderer unavailable"}), 503
         unique="web"+uuid.uuid4().hex
         output=None
         try:

@@ -13,7 +13,16 @@ MAX_SOURCE_BYTES = 2_500_000
 
 
 def source_paths(year, subject, lesson, component=None):
-    if type(year) is not int or type(lesson) is not int or not 2 <= year <= 6:
+    if type(year) is not int or type(lesson) is not int:
+        return None
+    if year == 1 and subject == "ENGLISH" and component is None:
+        from web.english_y1_kssr_rph import PLANS
+        if lesson in PLANS:
+            return (
+                "web/english_y1_kssr_rph.py",
+                f"rph_standalone/english/year1/lesson_{lesson:03d}.md",
+            )
+    if not 2 <= year <= 6:
         return None
     if subject == "ENGLISH" and component is None and 1 <= lesson <= 160:
         paths = [

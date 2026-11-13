@@ -750,6 +750,10 @@ except Exception as _rph_entry_choices_error:
 
 
 # Apply Web teacher text after the native subject adapters set default rows.
+from web.english_y1_kssr_rph import install as install_english_y1_kssr
 from web.rph_teacher_reflection import install as install_teacher_reflection
+
+ENGLISH_Y1_KSSR_WEB_ACTIVE = install_english_y1_kssr(telegram_runtime)
+telegram_runtime.ENGLISH_Y1_KSSR_WEB_ACTIVE = ENGLISH_Y1_KSSR_WEB_ACTIVE
 
 RPH_TEACHER_REFLECTION_ACTIVE = install_teacher_reflection(telegram_runtime)

@@ -4,6 +4,8 @@ on:
     branches: [feature/telegram-internal-rph-api-20261105, feature/telegram-db-rph-bridge-bm-pi-20261106, fix/telegram-native-rph-overlay-guards-20261108]
     paths:
       - web/native_rph_telegram_api.py
+      - web/english_y1_kssr_rph.py
+      - tests/test_english_y1_kssr_native.py
       - web/telegram_verified_rpt_rph_bridge.py
       - web/telegram_verified_sequence_rph_bridge.py
       - web/sains_y3_unit_awal.py
@@ -22,6 +24,8 @@ on:
     paths:
       - web/rph_teacher_reflection.py
       - web/native_rph_telegram_api.py
+      - web/english_y1_kssr_rph.py
+      - tests/test_english_y1_kssr_native.py
       - web/telegram_verified_rpt_rph_bridge.py
       - web/telegram_verified_sequence_rph_bridge.py
       - web/sains_y3_unit_awal.py
@@ -59,3 +63,4 @@ jobs:
           python -m unittest discover -s tests -p test_telegram_bm_hierarchy_web.py -v
           python -m unittest discover -s tests -p test_telegram_unit_navigation.py -v
           python -m unittest discover -s tests -p test_sains_y3_unit_awal.py -v
+          python -m unittest discover -s tests -p test_english_y1_kssr_native.py -v
