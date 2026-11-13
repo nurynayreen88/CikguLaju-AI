@@ -5,22 +5,28 @@
 **Complementary SK/SP:** Reading 3.2 / 3.2.2
 **Duration:** 60 minutes
 **References:** Student's Book pp.28–29; Teacher's Book pp.50–51; pictures of four children and matching texts.
+**Learning objective:** State the main idea of a short exercise text and locate two specific details.
+**Success criteria:** One accurate main idea and two correct details supported by words in the text.
 
 ## Set Induction (5 minutes)
-Teacher leads a short classroom exercise. Pupils name actions such as dancing and jogging.
+**Teacher:** Lead a brief safe exercise and ask pupils what they are doing.
+**Pupils:** Name the movements and connect them to the topic of exercise.
 
-## Activity 1 — Vocabulary (15 minutes)
-Teacher invites pupils to do two minutes of safe exercise, elicits actions such as dancing and jogging, then introduces exercise vocabulary and pictures of four children. Pupils describe their actions and predict the children's activities.
+## Activity 1 — Match text to picture (15 minutes)
+**Teacher:** Introduce the vocabulary on p.28 and give each pupil one short text from Activity 1.
+**Pupils:** Read, match the text to one of the four pictures and point to a clue for the match.
 
-## Activity 2 — Reading (25 minutes)
-Pupils read short texts and match each one to a child. Teacher guides Student's Book p.28 Activity 1 and the Grammar Box and Activity 2 on pp.28–29.
+## Activity 2 — Read for evidence (25 minutes)
+**Teacher:** Use the Grammar Box and Activity 2 on p.29 to model checking a statement against the text.
+**Pupils:** Reread the texts and justify two choices by pointing to the relevant words.
+**Workbook:** Write positive and negative action sentences using Workbook p.20, Activity 2.
 
 ## PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.20, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.20, Activity 2, by writing positive and negative present continuous sentences about sports.
-Teacher checks the main idea and two details from each text, noting pupils who need extra support.
+**Teacher:** Give each pupil one of the short texts and ask for its main idea and two details.
+**Pupils:** State the main idea and show where the text supports their two answers.
 
 ## Closure (5 minutes)
-Pupils share one activity a child is or is not doing.
+**Teacher:** Prompt a learning diary entry.
+**Pupils:** Write one detail from a text and the clue that helped them find it.
 
-**QA:** Official SOW checked; source contains a typographical '3..2.1' interpreted as 3.2.1. Direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
+**QA:** Official SOW checked; source contains a typographical '3..2.1' interpreted as 3.2.1. Printed Student's Book, Teacher's Book and Workbook pages reviewed for the tasks cited. Live delivery not verified. NOT READY FOR RELEASE.
