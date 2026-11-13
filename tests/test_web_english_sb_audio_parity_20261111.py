@@ -211,6 +211,20 @@ class WebEnglishSourceTests(unittest.TestCase):
                     "/api/web/rph/extra-materials", query_string=query).json["items"], [])
             science.assert_not_called()
 
+    def test_science_measurement_requires_corrected_telegram_pages(self):
+        unit, lesson = "u" + "a" * 24, "ST3-PDP-048"
+        query = dict(year=3, subject="SCIENCE", unit=unit, lesson=lesson)
+        prefix = "web.native_textbook_references."
+        with self.account(), patch(prefix + "private_textbook_pdf", return_value=None), patch(
+            prefix + "list_native_lessons", return_value=[{"value": lesson, "textbook_ref": "Buku Teks m/s 6–8"}]
+        ) as source:
+            endpoint = "/api/web/rph/extra-materials"
+            self.assertEqual(self.client.get(endpoint, query_string=query).json["items"], [])
+            source.return_value[0]["textbook_ref"] = "Buku Teks m/s 6–7"
+            item, = self.client.get(endpoint, query_string=query).json["items"]
+            self.assertEqual(item["action"], "local-pdf")
+            self.assertEqual((item["pdf"]["start"], item["pdf"]["end"]), (13, 14))
+
 
 if __name__ == "__main__":
     unittest.main()
