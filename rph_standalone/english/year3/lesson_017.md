@@ -9,19 +9,19 @@
 **Source:** KPM Primary Year 3 SK Scheme of Work, Lesson 17.
 
 ## Set Induction (5 minutes)
-**Teacher:** Mime daily routines. **Pupils:** Respond and recall prior learning.
+**Teacher:** Mime familiar daily routines and show a picture cue only when pupils need help. **Pupils:** Name the actions they recognise and match each mime to a routine word.
 
 ## Activity 1 — Modelling (15 minutes)
-**Teacher:** Mime new daily-routine actions, arrange pupils in a circle and distribute action flashcards. Introduce the song about Mike and explain that pupils should raise their card when they hear its action. **Pupils:** Practise the actions, name the flashcard phrases and predict which actions they will hear.
+**Teacher:** Distribute daily-routine flashcards and model how to listen for an action before raising the matching card. Introduce the song about Mike without giving away its sequence. **Pupils:** Say the routine phrases, practise the listening signal and predict which actions may appear in the song.
 
 ## Activity 2 — Main learning task (25 minutes)
-**Teacher:** Use flashcards in a circle; play the song about Mike twice; pupils hold up cards and mime actions; follow SB p.15 song and picture matching. **Pupils:** Complete the lesson task, practising both standards.
+**Teacher:** Play the song about Mike twice; on the first listening, check which routines are heard, and on the second, pause for pupils to show the matching cards. Guide the song and picture-matching task in Student's Book p.15. **Pupils:** Listen, raise the matching routine cards, mime the actions and compare their picture matches with a partner.
 **Workbook:** Pupils complete Workbook p.10, Activity 1, by writing the correct daily-routine phrases.
 
 ## Assessment / PBD (10 minutes)
-**Teacher:** Check two details from the song and meanings inferred from visual clues. **Pupils:** Identify two song details and match one unfamiliar action word to its picture clue.
+**Teacher:** Ask two short questions about actions heard in the song and provide a picture clue for one less familiar routine word; record which pupils identify the details independently. **Pupils:** Name two routines they heard and use the picture to explain one action word.
 
 ## Closure (5 minutes)
-**Teacher:** Review routine words with flashcards. **Pupils:** State one learning point.
+**Teacher:** Display three flashcards and invite a final listening recall. **Pupils:** Name one action from the song and explain how its picture helped them understand it.
 
 **QA:** Lesson-level SOW standards and outline checked. Direct Teacher's Book review and Word/PDF output tests pending. NOT READY FOR RELEASE.
