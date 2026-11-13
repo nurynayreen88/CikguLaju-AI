@@ -1,26 +1,31 @@
 # English Year 3 — Lesson 46: Writing
 
 **Unit:** Right Now
+**Theme:** World of Self, Family and Friends
 **Main SK/SP:** Writing 4.3 / 4.3.3
 **Complementary SK/SP:** Speaking 2.3 / 2.3.1
 **Duration:** 60 minutes
 **References:** Student's Book p.31; Teacher's Book pp.54–55; cards from Lesson 44, poster paper, pencils and labels.
+**Learning objective:** Plan, draft and revise simple present continuous sentences and describe the pictured events aloud.
+**Success criteria:** Revise two action sentences after peer feedback and use them to describe a picture.
 
 ## Set Induction (5 minutes)
-Teacher reviews action cards from Lesson 44. Pupils describe actions.
+**Teacher:** Reuse the action cards from Lesson 44 for a quick guessing game.
+**Pupils:** Ask and answer present continuous questions to identify each action.
 
-## Activity 1 — Picture preparation (15 minutes)
-Teacher guides Student's Book p.31 Activity 1. Pupils study pictures and answer questions about what people are doing.
+## Activity 1 — Plan the picture labels (15 minutes)
+**Teacher:** Guide Activity 1 on Student's Book p.31. Model checking a detail with an action question.
+**Pupils:** Read the instructions, identify the actions and plan two sentences for their picture.
 
-## Activity 2 — Drafting and display (25 minutes)
-Pupils write sentences about their pictures, exchange work for peer review, redraft neatly on labels and attach them to their pictures for a classroom display. Teacher supports accurate present continuous sentences.
+## Activity 2 — Draft and revise (25 minutes)
+**Teacher:** Model a check for subject, am/is/are and verb ending. Give pupils paper strips for the revised labels.
+**Pupils:** Draft on the back, exchange pictures for feedback and attach revised labels to the front.
+**Workbook:** Complete the five sentences about the picture in Workbook p.22, Activity 2.
 
 ## PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.22, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.22, Activity 2, by writing sentences about the sports shown in the picture.
-Teacher checks planning, drafting and short oral narration of pictured events. Pupils explain their work to partners.
+**Teacher:** Compare each pupil's draft and two final labels. Listen for the same two pictured actions in their oral description.
+**Pupils:** Show one revision and use the two final sentences to describe the picture to a partner.
 
 ## Closure (5 minutes)
-Teacher displays selected work and invites pupils to share a corrected sentence.
-
-**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
+**Teacher:** Display the pictures and invite a pupil to explain one correction.
+**Pupils:** Read a classmate's label and point to the corresponding action.

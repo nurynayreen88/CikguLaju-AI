@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 WORKBOOK_TASKS = {
     33: (18, 1), 34: (18, 2), 35: (19, 1), 36: (19, 2),
     38: (19, 2), 39: (19, 2), 40: (20, 2), 43: (20, 1), 44: (21, 2),
+    45: (23, 1), 46: (22, 2),
 }
 EVIDENCE = {
     33: ("two matching pictures", "visual clue"),
@@ -26,6 +27,10 @@ EVIDENCE = {
     42: ("contribution", "one clear description"),
     43: ("five listening answers", "two final written sentences"),
     44: ("one clear description", "three supported questions"),
+    45: ("main event", "supporting panel"),
+    46: ("two final labels", "two pictured actions"),
+    47: ("three pictures", "two independent matches"),
+    48: ("two sentences", "two contractions"),
 }
 
 

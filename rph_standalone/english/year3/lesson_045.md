@@ -6,22 +6,26 @@
 **Complementary SK/SP:** Writing 4.3 / 4.3.2
 **Duration:** 60 minutes
 **References:** Student's Book pp.32–33; Teacher's Book pp.56–57; sports flashcards.
+**Learning objective:** Identify the main idea of the story and spell familiar sports words in guided writing.
+**Success criteria:** State the main event, point to one supporting panel and spell two sports words correctly.
 
 ## Set Induction (5 minutes)
-Teacher reviews sports through the miming hopscotch game. Pupils name actions.
+**Teacher:** Run one round of miming hopscotch using the sports flashcards.
+**Pupils:** Mime each sport and say its name.
 
-## Activity 1 — Vocabulary (15 minutes)
-Teacher leads a jumbled-letter game with sports and table tennis vocabulary. Pupils discuss whether they enjoy these activities.
+## Activity 1 — Predict from pictures (15 minutes)
+**Teacher:** Use jumbled letters to review sports vocabulary, including table tennis. Show the opening story panel.
+**Pupils:** Unscramble the words and predict what the characters are doing.
 
-## Activity 2 — Story reading (25 minutes)
-Teacher guides Student's Book pp.32–33 Activity 1 using Teacher's Book pp.56–57. Pupils read the story, identify its main idea and discuss the value illustrated.
+## Activity 2 — Follow the story (25 minutes)
+**Teacher:** Guide Activity 1 on Student's Book pp.32–33. Pause for pupils to check their predictions and discuss the value.
+**Pupils:** Read the story, identify the main event and explain it using one panel.
+**Workbook:** Match the three speech bubbles to their pictures in Workbook p.23, Activity 1.
 
 ## PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.31, Activity 1; explain the printed task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.31, Activity 1, by matching pictures from the story to the correct answers.
-Teacher checks understanding of the main idea and accurate spelling of selected sports words. Pupils complete a short learning diary reflection.
+**Teacher:** Check the main event, one supporting panel and the spelling of two sports words.
+**Pupils:** Explain what happens in the story and write two sports words in their learning diary.
 
 ## Closure (5 minutes)
-Pupils share one value learned from the story.
-
-**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
+**Teacher:** Invite pupils to share an example of the value from their own lives.
+**Pupils:** Share one example or name a sport they would like to try.
