@@ -10,7 +10,7 @@ from flask import Flask
 from pypdf import PdfReader, PdfWriter
 from pypdf.generic import NameObject, NumberObject
 from web.telegram_english_sb_audio_api_20261111 import (
-    create_english_book_audio_blueprint, _book_selection, _audio_rows,
+    create_english_book_audio_blueprint, _book_selection, _audio_rows, YEAR2_AUDIO, WMA_HEADER,
 )
 
 
@@ -32,6 +32,13 @@ class FakeRuntime:
     def __init__(self, path):
         self.path = path
 
+    def _eng12_rows(self, year):
+        assert year == "Tahun 2"
+        return [{"year_label": year, "subject": "Bahasa Inggeris", "lesson_no": 26,
+                 "textbook_title": "Super Minds 1", "textbook_page_start": 70,
+                 "textbook_page_end": 70, "audio_status": "VERIFIED_AUDIO",
+                 "audio_reference": "CD2-35; CD2-36"}]
+
     def _en97_units(self, year):
         if year not in ("Tahun 3", "Tahun 4"):
             return [], []
@@ -43,6 +50,8 @@ class FakeRuntime:
                 103: "73, 74–75", 157: "110"}.get(row["lesson_no"], "")
 
     def _en_book_pages_v25232(self, state, kind):
+        if state["year"] == "Tahun 2":
+            return [state["textbook_page_start"]]
         return {18: [15], 30: list(range(110, 134)), 93: [61]}.get(state["lesson_no"], [])
 
     def _en_book_source_v25232(self, state, kind):
@@ -197,6 +206,50 @@ class EnglishSourceParityTests(unittest.TestCase):
         self.assertEqual(len(result), 1)
         self.assertEqual(result[0].mediabox.width, 211)
         self.assertFalse(original.exists())
+
+    def test_year_two_keeps_verified_book_page_and_original_wma(self):
+        from shutil import copyfile
+        root = Path(__file__).resolve().parents[1]
+        name = "y12_student_061_080.pdf"
+        file = self.runtime.path.parent / name
+        copyfile(root / "books" / "english" / name, file)
+        self.runtime._local_book_chunk_v25234 = lambda *_: (str(file), 61, 80)
+        params = {"year": 2, "lesson": 26}
+        prefix = "/internal/rph/v1/english-extras/"
+        listing = self.client.get(prefix + "student-book", query_string=params, headers=self.headers)
+        self.assertEqual(listing.json["pages"], [70])
+        result = self.client.get(prefix + "student-book.pdf", query_string=params, headers=self.headers)
+        actual = PdfReader(BytesIO(result.data)).pages
+        self.assertEqual(len(actual), 1)
+        expected = PdfReader(file).pages[9]
+        self.assertEqual(actual[0].get_contents().get_data(), expected.get_contents().get_data())
+        audio = self.client.get(prefix + "audio", query_string=params, headers=self.headers)
+        self.assertEqual([t["reference"] for t in audio.json["tracks"]], ["CD2 Track 35", "CD2 Track 36"])
+        raw = WMA_HEADER + b"A" * 1600
+        source = Mock(status_code=200, headers={"Content-Type": "application/octet-stream"})
+        source.iter_content.return_value = [raw]
+        with patch("requests.get", return_value=source) as drive:
+            data = self.client.get(prefix + "audio.wma", query_string={**params, "track": 2},
+                                   headers=self.headers)
+            self.assertEqual(data.data, raw)
+            self.assertEqual(data.mimetype, "audio/x-ms-wma")
+            self.assertTrue(data.headers["Content-Disposition"].endswith('.wma"'))
+            self.assertEqual(drive.call_args.kwargs["params"]["id"], YEAR2_AUDIO[26][1]["CD2-36"])
+            denied = self.client.get(prefix + "audio.mp3", query_string={**params, "track": 2},
+                                     headers=self.headers)
+            self.assertEqual(denied.status_code, 404)
+
+    def test_year_two_track_ids_match_telegram_and_conflicts_are_hidden(self):
+        from tools.audit_english_y2_l026_telegram_route_from_ast_20261105 import extract
+        telegram, _ = extract()
+        for _, tracks in YEAR2_AUDIO.values():
+            self.assertEqual(tracks, {key: telegram[key] for key in tracks})
+        row = self.runtime._eng12_rows("Tahun 2")[0]
+        self.assertEqual(_audio_rows(self.runtime, 2, 26,
+                                    year2_rows=[{**row, "audio_reference": "CD1-17"}]), [])
+        self.assertEqual(_audio_rows(self.runtime, 2, 98,
+                                    year2_rows=[{**row, "lesson_no": 98,
+                                                 "audio_reference": "CD3-27"}]), [])
 
     def test_auth_and_input_guards(self):
         bare = self.client.get("/internal/rph/v1/english-extras/audio",
