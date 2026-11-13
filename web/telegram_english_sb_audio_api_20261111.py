@@ -43,7 +43,7 @@ YEAR2_AUDIO = {
              "CD2-19": "1xL916QiLasf1dO35exMZ1LgypwNwrkLC"}),
     26: (70, {"CD2-35": "1ZxYROG_L291L8WWIq2_J3NZDiW8giBkK",
               "CD2-36": "1DZnb_IvBrqYfNZqWxuliQlJ-uGPgqIz9"}),
-    88: (94, {"CD3-17": "1vRuXvDGVqcPcIwfT3EjfAebwPKkK8Du",
+    88: (94, {"CD3-17": "1vRuXvDGVqcPcIwfT3EjfAebwPKk9K8Du",
               "CD3-18": "1pKoaMY8-6Kg_0hF8jnOBXS7_5mtXCt8a"}),
 }
 
