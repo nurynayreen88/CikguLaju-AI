@@ -10,7 +10,7 @@
       !/^[a-f0-9]{64}$/.test(spec.sha256) ||
       !Number.isInteger(spec.start) || !Number.isInteger(spec.end) ||
       spec.start < 0 || spec.end < spec.start || spec.end - spec.start + 1 > maxPages ||
-      !/^CikguLaju_Sains_ST[1235]-PDP-\d{3}_ms_\d{1,2}-\d{1,2}\.pdf$/.test(spec.filename) ||
+      !/^CikguLaju_Sains_(?:ST[12356]|SCI-Y[23])-PDP-\d{3}_ms_\d{1,2}-\d{1,2}\.pdf$/.test(spec.filename) ||
       typeof spec.source !== "string" || typeof spec.authors !== "string") return null;
 
   return () => {

@@ -1013,7 +1013,7 @@ def create_blueprint():
                     return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
                 pages, path = selection
                 try:
-                    stored = private_textbook_pdf(path, metadata_only=True)
+                    stored = path and private_textbook_pdf(path, metadata_only=True)
                 except (OSError, ValueError):
                     stored = False
                 if stored:
@@ -1042,7 +1042,7 @@ def create_blueprint():
                 raise ValueError("Wrong textbook source")
             from web.native_textbook_references import private_textbook_pdf, textbook_reference
             selection = textbook_reference(year, unit, lesson)
-            content = private_textbook_pdf(selection[1]) if selection else None
+            content = private_textbook_pdf(selection[1]) if selection and selection[1] else None
         except (ValueError, TypeError):
             return jsonify({"error": "Pilihan PdP Buku Teks tidak sah"}), 400
         except Exception:
