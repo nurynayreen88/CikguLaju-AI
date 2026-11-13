@@ -30,6 +30,8 @@ def fixture(pioneer_amount=10.0):
         if path == "referral_members" and method == "POST":
             member.append(dict(kwargs["json"]))
         if path.startswith("rpc/"):
+            if path.endswith("affiliate_point_summary"):
+                return [{"earned":12,"balance":2,"available":2,"reserved":0,"paid":10}]
             if path.endswith("referral_award_verified_payment"):
                 return {"awarded":True,"points":"2.00"}
             return {"captured":True}
@@ -182,6 +184,9 @@ class TestPrivateReferral(unittest.TestCase):
         self.assertTrue(last[0][0]["url"].startswith("https://t.me/share/url?"))
         self.assertTrue(last[1][0]["copy_text"]["text"].startswith(
             "https://t.me/CikguLajuBot?start=rp_"))
+        message = next(text for uid, text, _ in reversed(keyboards) if uid == 301)
+        self.assertIn("Baki mata: <b>2</b>", message)
+        self.assertIn("Mata dibayar: <b>10</b>", message)
 
     def test_private_referral_button_rechecks_revoked_member(self):
         ns, sent, calls, _ = fixture()

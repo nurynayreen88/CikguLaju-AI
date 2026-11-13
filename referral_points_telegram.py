@@ -21,6 +21,22 @@ def format_points(value):
     return format(Decimal(str(value)).quantize(Decimal('0.01')).normalize(), 'f')
 
 
+def point_summary(sb, uid):
+    rows = sb("POST", "rpc/affiliate_point_summary", json={"p_user": int(uid)})
+    if not isinstance(rows, list) or len(rows) != 1:
+        raise RuntimeError("Affiliate balances unavailable")
+    return rows[0]
+
+
+def point_lines(points):
+    return (
+        f"Baki mata: <b>{format_points(points['balance'])}</b>\n"
+        f"Boleh dituntut: <b>{format_points(max(Decimal(str(points['available'])), 0))}</b>\n"
+        f"Dalam tuntutan: <b>{format_points(points['reserved'])}</b>\n"
+        f"Mata dibayar: <b>{format_points(points['paid'])}</b>"
+    )
+
+
 def enabled():
     return os.getenv("CIKGULAJU_REFERRAL_POINTS_ENABLED", "0").lower() in ("1", "true", "yes")
 
@@ -76,8 +92,8 @@ def install(ns):
         signups = sb("GET", f"referral_signups?referrer_user_id=eq.{int(uid)}"
                      "&select=referred_user_id") or []
         events = sb("GET", f"referral_point_events?referrer_user_id=eq.{int(uid)}"
-                     "&select=points_delta") or []
-        return len(signups), len(events), sum((Decimal(str(e["points_delta"])) for e in events), Decimal("0"))
+                     "&select=id") or []
+        return len(signups), len(events)
 
     def link_for(uid, code):
         username = str(ns["_bot_username_v25267"]() or "").strip().lstrip("@")
@@ -102,7 +118,8 @@ def install(ns):
         link = link_for(uid, row["referral_code"])
         if not link:
             return send(uid, "⚠️ Pautan belum dapat dijana. Sila cuba lagi.")
-        total, paid, points = summary(uid)
+        total, paid = summary(uid)
+        points = point_summary(sb, uid)
         share = ("https://t.me/share/url?url=" + quote(link, safe="")
                  + "&text=" + quote(
                      "Saya sedang menggunakan CikguLaju AI untuk membantu penyediaan RPH. Cuba pautan ini:",
@@ -120,7 +137,7 @@ def install(ns):
             f"🔗 <code>{link}</code>\n\n"
             f"👥 Rakan mendaftar: <b>{total}</b>\n"
             f"✅ Pembayaran layak: <b>{paid}</b>\n"
-            f"⭐ Mata terkumpul: <b>{format_points(points)}</b>\n\n"
+            f"{point_lines(points)}\n\n"
             "Ganjaran dikira selepas bayaran pertama disahkan. "
             + ("Tuntutan minimum 10 mata (RM10) melalui TNG eWallet." if open_program
                else "Mata dikumpul dahulu dan belum boleh ditebus."),
