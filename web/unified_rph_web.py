@@ -1007,13 +1007,13 @@ def create_blueprint():
                 return jsonify({"items": items, "status": "SUMBER_ASAL", "note": note})
             if sub == "SCIENCE":
                 from urllib.parse import urlencode
-                from web.native_textbook_references import local_science_copy, private_textbook_pdf, textbook_reference
+                from web.native_textbook_references import private_textbook_pdf, textbook_reference
                 selection = textbook_reference(year, unit, token)
                 if not selection:
                     return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
                 pages, path = selection
                 try:
-                    stored = path and private_textbook_pdf(path, metadata_only=True)
+                    stored = private_textbook_pdf(path, metadata_only=True)
                 except (OSError, ValueError):
                     stored = False
                 if stored:
@@ -1022,7 +1022,7 @@ def create_blueprint():
                         "title": f"Buku Teks Sains Tahun {year} • m/s {pages}",
                         "url": "/api/web/rph/science-textbook?" + params,
                         "action": "Download"}], "status": "SUMBER_ASAL"})
-                return jsonify({"items": [local_science_copy(year, token, pages)], "status": "SUMBER_ASAL"})
+                return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
             # Music intentionally remains original-owner VIEW links only.
             items = music_source_links(year, unit, token)
         except Exception:
@@ -1042,7 +1042,7 @@ def create_blueprint():
                 raise ValueError("Wrong textbook source")
             from web.native_textbook_references import private_textbook_pdf, textbook_reference
             selection = textbook_reference(year, unit, lesson)
-            content = private_textbook_pdf(selection[1]) if selection and selection[1] else None
+            content = private_textbook_pdf(selection[1]) if selection else None
         except (ValueError, TypeError):
             return jsonify({"error": "Pilihan PdP Buku Teks tidak sah"}), 400
         except Exception:
@@ -1050,9 +1050,11 @@ def create_blueprint():
         if content is None:
             return jsonify({"error": "Halaman Buku Teks belum tersedia"}), 404
         pages = selection[0].replace("–", "-")
-        return send_file(BytesIO(content), mimetype="application/pdf",
+        response = send_file(BytesIO(content), mimetype="application/pdf",
                          as_attachment=True, conditional=False,
                          download_name=f"CikguLaju_Sains_T{year}_{lesson}_Buku_Teks_ms_{pages}.pdf")
+        response.headers["Cache-Control"] = "no-store, private"
+        return response
 
     @bp.get("/api/web/rph/english-workbook")
     def english_workbook():

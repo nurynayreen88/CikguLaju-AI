@@ -869,7 +869,6 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </section><footer class="foot">CikguLaju AI · Web</footer>
 </div>
 <script src="/assets/pdf-lib.min.js?v=1.17.1"></script>
-<script src="/assets/pdp-pdf-copy.js?v=science-copy-expanded-20261113"></script>
 <script src="/assets/rpt-personalize.js?v=20261110-free-rpt"></script>
 <script>
 "use strict";
@@ -1458,7 +1457,7 @@ async function populateMaterialList(){
   }
  }
  if((subject.value==="ENGLISH"&&[2,3,4,5,6].includes(Number(year.value)))||
-    subject.value==="MUZIK"||(subject.value==="SCIENCE"&&[1,2,3,5,6].includes(Number(year.value)))){
+    subject.value==="MUZIK"||(subject.value==="SCIENCE"&&[1,2,3,4,5,6].includes(Number(year.value)))){
   try{
    const params=new URLSearchParams({year:year.value,subject:subject.value,
                                     unit:currentLessonSourceUnit(),lesson:lesson.value});
@@ -1470,14 +1469,6 @@ async function populateMaterialList(){
    if(!Array.isArray(data.items)||data.items.length>30)throw Error("Senarai sumber tidak sah.");
    extraNotice=String(data.note||"");
    for(const item of data.items){
-    if(subject.value==="SCIENCE"&&item?.action==="local-pdf"){
-     const copy=window.cikgulajuPdpPdfCopy?.(item,status);
-     if(copy){
-      list.append(materialRow(item.title,{ready:true,onDownload:copy,actionLabel:"Pilih PDF Asal"}));
-      found++;
-     }
-     continue;
-    }
     if(!item||typeof item.url!=="string"||typeof item.title!=="string")continue;
     const ownWorkbook=item.type==="workbook"&&
         item.url.startsWith("/api/web/rph/english-workbook?");
@@ -1790,7 +1781,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
-<script src="/assets/rph-today.js?v=science-copy-expanded-20261113"></script>
+<script src="/assets/rph-today.js?v=science-direct-download-all-years-20261114"></script>
 <script src="/assets/teacher-profile.js?v=profile-guide-20261111"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=private-menu-20261111"></script>
