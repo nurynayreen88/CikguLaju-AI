@@ -6,6 +6,10 @@ on:
       - web/native_rph_telegram_api.py
       - web/telegram_verified_rpt_rph_bridge.py
       - web/telegram_verified_sequence_rph_bridge.py
+      - web/pi_navigation.py
+      - web_v1_dropdown_catalog.py
+      - web_v1_verified_pdp.py
+      - tests/test_telegram_unit_navigation.py
       - tests/test_telegram_verified_rpt_rph_bridge.py
       - tests/test_telegram_verified_sequence_rph_bridge.py
       - tools/run_telegram_with_curriculum_api.py
@@ -18,6 +22,10 @@ on:
       - web/native_rph_telegram_api.py
       - web/telegram_verified_rpt_rph_bridge.py
       - web/telegram_verified_sequence_rph_bridge.py
+      - web/pi_navigation.py
+      - web_v1_dropdown_catalog.py
+      - web_v1_verified_pdp.py
+      - tests/test_telegram_unit_navigation.py
       - web/telegram_native_bm_sequence_rph_bridge.py
       - web/rbt_2027_native_api.py
       - web/sejarah_2027_native_api.py
@@ -44,3 +52,5 @@ jobs:
           python -m py_compile web/telegram_verified_rpt_rph_bridge.py web/telegram_verified_sequence_rph_bridge.py
           python -m unittest discover -s tests -p test_telegram_verified_rpt_rph_bridge.py -v
           python -m unittest discover -s tests -p test_telegram_verified_sequence_rph_bridge.py -v
+          python -m unittest discover -s tests -p test_telegram_bm_hierarchy_web.py -v
+          python -m unittest discover -s tests -p test_telegram_unit_navigation.py -v

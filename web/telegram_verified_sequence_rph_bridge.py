@@ -87,16 +87,14 @@ def _pdp_groups(rows, code, title):
     return groups
 
 
-def _resolve(runtime, year, subject, unit_token, pdp_code=None):
-    if (not isinstance(unit_token, str)
-            or not re.fullmatch(r"u[a-f0-9]{24}", unit_token)):
-        raise ValueError("Invalid unit token")
-    rows, units = _source(runtime, year, subject)
-    matched = [item for item in _unit_catalog(units) if item["value"] == unit_token]
-    if len(matched) != 1:
-        raise SourceUnavailable("Unit not verified by Telegram")
-    unit = matched[0]
-    groups = _pdp_groups(rows, unit["_unit_code"], unit["_unit_title"])
+def _available_groups(rows, unit, year, subject):
+    groups = {
+        code: items for code, items in
+        _pdp_groups(rows, unit["_unit_code"], unit["_unit_title"]).items()
+        if len(code) <= 100 and not any(ord(c) < 32 for c in code)
+        and any(str(row.get("sk_code") or "").strip()
+                and str(row.get("sp_code") or "").strip() for row in items)
+    }
     if year == 6 and subject == "MATH":
         # Six source-backed Year 6 ratio lessons currently carry *Data* 8.x
         # codes (DSKP 2021 requires 7.2/7.3/7.4). Hide only the exact
@@ -109,6 +107,19 @@ def _resolve(runtime, year, subject, unit_token, pdp_code=None):
             code: items for code, items in groups.items()
             if not held_math_y6_ratio_source(year, subject, code, items)
         }
+    return groups
+
+
+def _resolve(runtime, year, subject, unit_token, pdp_code=None):
+    if (not isinstance(unit_token, str)
+            or not re.fullmatch(r"u[a-f0-9]{24}", unit_token)):
+        raise ValueError("Invalid unit token")
+    rows, units = _source(runtime, year, subject)
+    matched = [item for item in _unit_catalog(units) if item["value"] == unit_token]
+    if len(matched) != 1:
+        raise SourceUnavailable("Unit not verified by Telegram")
+    unit = matched[0]
+    groups = _available_groups(rows, unit, year, subject)
     if pdp_code is None:
         return unit, groups
     if not isinstance(pdp_code, str) or not 0 < len(pdp_code) <= 100:
@@ -231,8 +242,11 @@ def create_native_sequence_rph_blueprint(runtime):
     def units():
         try:
             year, sub = _query({"year", "subject"})
-            _, known = _source(runtime, year, sub)
-            catalog = _unit_catalog(known)
+            rows, known = _source(runtime, year, sub)
+            catalog = [
+                unit for unit in _unit_catalog(known)
+                if _available_groups(rows, unit, year, sub)
+            ]
         except (ValueError, SourceUnavailable):
             return jsonify({"error": "Native units unavailable"}), 503
         return jsonify({"source": "telegram-runtime-v1",
