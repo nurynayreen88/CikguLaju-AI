@@ -191,7 +191,9 @@ def lesson_text(code):
 
 def install(runtime):
     """Restore lesson-specific fields after the existing Science layout adapters."""
-    previous = runtime._rph_rows
+    previous = getattr(runtime, "_rph_rows", None)
+    if not callable(previous):
+        return False
 
     def rows(state, *args, **kwargs):
         result = previous(state, *args, **kwargs)
@@ -214,3 +216,4 @@ def install(runtime):
         }
 
     runtime._rph_rows = rows
+    return True
