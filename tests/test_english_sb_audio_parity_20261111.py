@@ -36,10 +36,11 @@ class FakeRuntime:
         if year not in ("Tahun 3", "Tahun 4"):
             return [], []
         return [{"lesson_no": n, "unit_name": "Our World"}
-                for n in (18, 30, 7, 93, 103)], ["Our World"]
+                for n in (18, 30, 7, 43, 93, 103, 157)], ["Our World"]
 
     def _en34_verified_sb_pages_v25230(self, row, year):
-        return {18: "15, 16", 30: "110–133", 103: "73, 74–75"}.get(row["lesson_no"], "")
+        return {18: "15, 16", 30: "110–133", 43: "27, 28, 29, 30, 31",
+                103: "73, 74–75", 157: "110"}.get(row["lesson_no"], "")
 
     def _en_book_pages_v25232(self, state, kind):
         return {18: [15], 30: list(range(110, 134)), 93: [61]}.get(state["lesson_no"], [])
@@ -112,11 +113,37 @@ class EnglishSourceParityTests(unittest.TestCase):
 
     def test_cutout_span_does_not_publish_entire_book(self):
         self.assertIsNone(_book_selection(self.runtime, 4, 30))
-        self.assertIsNone(_book_selection(self.runtime, 4, 103))
         bad = self.client.get("/internal/rph/v1/english-extras/student-book",
                               headers=self.headers,
                               query_string={"year": "4", "lesson": "30"})
         self.assertEqual(bad.status_code, 404)
+
+    def test_year_four_corrected_sow_pages_match_real_book_excerpts(self):
+        folder = self.runtime.path.parents[2] / "books" / "english"
+        original = Path(__file__).resolve().parents[1] / "books" / "english"
+        chunks = ((21, 100, "y4_student_021_100.pdf"), (101, 177, "y4_student_101_177.pdf"))
+        from shutil import copyfile
+        for _, _, name in chunks:
+            copyfile(original / name, folder / name)
+        self.runtime._local_book_chunk_v25234 = lambda state, kind, page: next(
+            (str(folder / name), first, last) for first, last, name in chunks
+            if first <= page <= last
+        )
+        for lesson, pages in ((43, [121]), (103, [73]), (157, [110, 111])):
+            with self.subTest(lesson=lesson):
+                params = {"year": 4, "lesson": lesson}
+                prefix = "/internal/rph/v1/english-extras/student-book"
+                metadata = self.client.get(prefix, query_string=params, headers=self.headers)
+                self.assertEqual(metadata.status_code, 200)
+                self.assertEqual(metadata.json["pages"], pages)
+                result = self.client.get(prefix + ".pdf", query_string=params, headers=self.headers)
+                self.assertEqual(result.status_code, 200)
+                excerpts = PdfReader(BytesIO(result.data)).pages
+                for excerpt, page in zip(excerpts, pages, strict=True):
+                    file, first, _ = self.runtime._local_book_chunk_v25234({}, "textbook", page)
+                    expected = PdfReader(file, strict=True).pages[page - first]
+                    self.assertEqual(excerpt.get_contents().get_data(),
+                                     expected.get_contents().get_data())
 
     def test_audio_verified_track_without_drive_id_exposure(self):
         r = self.client.get("/internal/rph/v1/english-extras/audio",
