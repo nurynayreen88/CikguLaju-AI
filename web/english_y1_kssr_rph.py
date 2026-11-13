@@ -5,6 +5,7 @@ https://padlet-uploads.storage.googleapis.com/214113651/91bb41eb266e86d4ccfe5ee4
 Activities, differentiation and assessment are written for CikguLaju.
 """
 from dataclasses import dataclass
+from datetime import date
 
 
 UNIT = "Unit 1 — At School"
@@ -108,10 +109,11 @@ def install(runtime):
             return previous(state, *args, **kwargs)
         plan = PLANS[number]
         main_cs, main_ls, comp_cs, comp_ls = plan.standards
+        lesson_date = state.get("rph_date")
         return {
             "MATA PELAJARAN": "Bahasa Inggeris",
             "TAHUN/TINGKATAN": "Year 1",
-            "TARIKH": state.get("rph_date", ""),
+            "TARIKH": date.fromisoformat(lesson_date).strftime("%d/%m/%Y") if lesson_date else "",
             "HARI": state.get("rph_day", ""),
             "MASA": state.get("rph_time", ""),
             "KELAS": state.get("rph_class", ""),
