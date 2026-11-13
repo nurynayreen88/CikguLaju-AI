@@ -3,6 +3,7 @@ import unittest
 from unittest.mock import patch
 from io import BytesIO
 from uuid import UUID
+from urllib.parse import parse_qs, urlsplit
 from flask import Flask
 
 from web.web_referral_routes import install, pending_referral, capture_after_verified_login, REF_COOKIE, WEB_ORIGIN
@@ -139,6 +140,31 @@ class WebReferralTests(unittest.TestCase):
         self.assertEqual(response.json, rpc.return_value)
         self.assertIn("no-store", response.headers["Cache-Control"])
         rpc.assert_called_once_with("affiliate_admin_members", p_page=1, p_page_size=25)
+
+    @patch("web.web_referral_routes._auth_uid", return_value=456)
+    @patch("web.web_referral_routes.allowed_admin_ids", return_value={456})
+    @patch("web.web_referral_routes._overview", return_value={"open":True})
+    @patch("web.web_referral_routes._rest", return_value=[])
+    def test_admin_claim_filter_scopes_to_selected_member(self, rest, _overview, _admin, _uid):
+        client = self.make_app().test_client()
+        path = "/api/web/admin/affiliate/claims"
+        for invalid in ("0", "-1", "123,status.eq.paid", "9223372036854775808", ""):
+            self.assertEqual(client.get(path, query_string={"user_id":invalid}).status_code, 400)
+        rest.assert_not_called()
+        for status in ("all", "paid"):
+            response = client.get(path, query_string={"user_id":"123", "status":status, "page":"2"})
+            self.assertEqual(response.status_code, 200)
+            method, query = rest.call_args.args
+            self.assertEqual(method, "GET")
+            params = parse_qs(urlsplit(query).query)
+            self.assertEqual(params["user_id"], ["eq.123"])
+            self.assertEqual(params["offset"], ["50"])
+            self.assertIn("paid_at", params["select"][0].split(","))
+            self.assertEqual(params.get("status"), None if status == "all" else ["eq.paid"])
+        self.assertEqual(client.get(path).status_code, 200)
+        params = parse_qs(urlsplit(rest.call_args.args[1]).query)
+        self.assertNotIn("user_id", params)
+        self.assertEqual(params["status"], ["eq.pending"])
 
     @patch("web.web_referral_routes._auth_uid", return_value=456)
     @patch("web.web_referral_routes.allowed_admin_ids", return_value={456})

@@ -20,6 +20,9 @@
   const filter = get("affiliate-admin-filter");
   const adminStatus = get("affiliate-admin-status");
   const adminList = get("affiliate-admin-list");
+  const adminClaims = get("affiliate-admin-claims");
+  const memberFilter = get("affiliate-admin-member-filter");
+  const selectedMember = get("affiliate-admin-selected-member");
   const membersList = get("affiliate-members-list");
   const membersStatus = get("affiliate-members-status");
   const membersPrev = get("affiliate-members-prev");
@@ -39,6 +42,8 @@
   let page = 0;
   let membersPage = 0;
   let membersRequest = 0;
+  let adminRequest = 0;
+  let memberId = "";
   let claimRequest = 0;
   let updateRequest = 0;
   let submitting = false;
@@ -69,6 +74,11 @@
   function syncSubmit() {
     get("affiliate-submit").disabled = submitting || !savedAccount || account.value !== savedAccount || !confirm.checked || available < 10;
   }
+  function claimDetails(row) {
+    return (row.paid_at ? ` · Dibayar pada ${date(row.paid_at)}` : "")
+      + (row.payment_reference ? ` · Rujukan ${row.payment_reference}` : "")
+      + (row.rejection_reason ? ` · Sebab penolakan ${row.rejection_reason}` : "");
+  }
   function showClaims(data) {
     claimPanel.hidden = !data.open;
     if (!data.open) return;
@@ -87,9 +97,8 @@
     history.replaceChildren();
     for (const row of data.claims) {
       const li = document.createElement("li");
-      li.textContent = `${date(row.requested_at)} · RM${money(row.points)} · ${labels[row.status]}`
-        + (row.payment_reference ? ` · Rujukan ${row.payment_reference}` : "")
-        + (row.rejection_reason ? ` · ${row.rejection_reason}` : "");
+      li.textContent = `Dimohon pada ${date(row.requested_at)} · RM${money(row.points)} · ${labels[row.status]}`
+        + claimDetails(row);
       history.append(li);
     }
     if (!data.claims.length) {
@@ -217,7 +226,7 @@
       data.set("action", action);
       try {
         await api(`/api/web/admin/affiliate/claims/${claimId}`, {method:"POST", body:data});
-        if (action === "processing") filter.value = "processing";
+        if (adminList.contains(form)) filter.value = action;
         await Promise.all([updateAdmin(), updateMembers(membersPage)]);
         adminStatus.textContent = "Status tuntutan dikemas kini.";
       } catch (error) { adminStatus.textContent = error.message; }
@@ -237,10 +246,21 @@
       for (const item of data.items) {
         const li = document.createElement("li");
         const name = [item.first_name, item.username && `@${item.username}`].filter(Boolean).join(" ");
-        const heading = document.createElement("strong");
-        heading.textContent = [name, `ID ${item.user_id}`, item.enabled ? "Aktif" : "Tidak aktif"].filter(Boolean).join(" · ");
+        const heading = document.createElement("button");
+        heading.type = "button";
+        const identity = [name, `ID ${item.user_id}`].filter(Boolean).join(" · ");
+        heading.textContent = identity;
+        heading.setAttribute("aria-label", `Semak tuntutan ${identity}`);
+        heading.addEventListener("click", () => {
+          memberId = item.user_id;
+          selectedMember.textContent = identity;
+          memberFilter.hidden = false;
+          filter.value = "all";
+          filter.focus();
+          void updateAdmin();
+        });
         const balances = document.createElement("div");
-        balances.textContent = `Baki ${money(item.balance)} mata · Boleh dituntut ${money(item.available)} · Dalam tuntutan ${money(item.reserved)} · Dibayar ${money(item.paid)}`;
+        balances.textContent = `${item.enabled ? "Aktif" : "Tidak aktif"} · Baki ${money(item.balance)} mata · Boleh dituntut ${money(item.available)} · Dalam tuntutan ${money(item.reserved)} · Dibayar ${money(item.paid)}`;
         li.append(heading, balances);
         membersList.append(li);
       }
@@ -258,23 +278,29 @@
     }
   }
   async function updateAdmin(append = false) {
-    if (!append) page = 0;
-    const requestedStatus = filter.value;
-    const requestedPage = page;
+    const revision = ++adminRequest;
+    const requestedPage = append ? page + 1 : 0;
+    const query = new URLSearchParams({status:filter.value, page:String(requestedPage)});
+    if (memberId) query.set("user_id", memberId);
+    more.disabled = true;
+    if (!append) {
+      adminList.replaceChildren();
+      more.hidden = true;
+      adminStatus.textContent = "Memuatkan tuntutan…";
+    }
     try {
-      const data = await api(`/api/web/admin/affiliate/claims?status=${requestedStatus}&page=${requestedPage}`);
-      if (requestedStatus !== filter.value || requestedPage !== page) return;
-      get("affiliate-admin-claims").hidden = !data.open;
-      if (!append) adminList.replaceChildren();
+      const data = await api(`/api/web/admin/affiliate/claims?${query}`);
+      if (revision !== adminRequest) return;
+      page = requestedPage;
+      adminClaims.hidden = !data.open;
       more.hidden = !data.more;
-      adminStatus.textContent = data.items.length ? "" : "Tiada tuntutan bagi status ini.";
+      adminStatus.textContent = data.items.length ? "" : "Tiada tuntutan bagi pilihan ini.";
       for (const item of data.items) {
         const section = document.createElement("section");
         section.className = "teacher-timetable-section";
         const line = document.createElement("p");
-        line.textContent = `Akaun ${item.user_id} · Akaun TNG ${item.account_number_snapshot || "belum direkodkan"} · RM${money(item.points)} · ${date(item.requested_at)} · ${labels[item.status]}`
-          + (item.payment_reference ? ` · Rujukan ${item.payment_reference}` : "")
-          + (item.rejection_reason ? ` · ${item.rejection_reason}` : "");
+        line.textContent = `Akaun ${item.user_id} · Akaun TNG ${item.account_number_snapshot || "belum direkodkan"} · RM${money(item.points)} · Dimohon pada ${date(item.requested_at)} · ${labels[item.status]}`
+          + claimDetails(item);
         section.append(line);
         if (item.status === "pending" && item.account_number_snapshot) {
           section.append(actionForm(item.id, "processing", "Mula Proses", []));
@@ -300,8 +326,9 @@
         adminList.append(section);
       }
     } catch (error) {
-      adminList.replaceChildren();
-      adminStatus.textContent = error.message;
+      if (revision === adminRequest) adminStatus.textContent = error.message;
+    } finally {
+      if (revision === adminRequest) more.disabled = false;
     }
   }
   function refreshAdmin() {
@@ -310,10 +337,17 @@
   }
   get("web-admin-tab")?.addEventListener("click", refreshAdmin);
   get("affiliate-admin-refresh").addEventListener("click", refreshAdmin);
+  get("affiliate-admin-clear-member").addEventListener("click", () => {
+    memberId = "";
+    memberFilter.hidden = true;
+    filter.value = "pending";
+    filter.focus();
+    void updateAdmin();
+  });
   membersPrev.addEventListener("click", () => updateMembers(membersPage - 1));
   membersNext.addEventListener("click", () => updateMembers(membersPage + 1));
   filter.addEventListener("change", () => updateAdmin());
-  more.addEventListener("click", () => { page += 1; void updateAdmin(true); });
+  more.addEventListener("click", () => updateAdmin(true));
   void update();
   tab.addEventListener("click", update);
   function refreshVisibleBalance() {

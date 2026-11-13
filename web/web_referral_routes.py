@@ -287,12 +287,19 @@ def affiliate_admin_list():
         return jsonify(open=False, items=[])
     status = request.args.get("status", "pending")
     page = request.args.get("page", "0")
-    if status not in ("pending", "processing", "paid", "rejected") or not re.fullmatch(r"[0-9]{1,5}", page):
+    member_id = request.args.get("user_id")
+    if status not in ("all", "pending", "processing", "paid", "rejected") or not re.fullmatch(r"[0-9]{1,5}", page):
         return jsonify(error="Penapis tidak sah."), 400
-    query = urlencode({"status": "eq." + status,
-        "select": "id,user_id,points,account_number_snapshot,status,requested_at,reviewer_id,payment_reference,rejection_reason",
-        "order": "requested_at.desc,id.desc", "limit": 26, "offset": int(page) * 25})
-    items = _rest("GET", "affiliate_claims?" + query)
+    filters = {
+        "select": "id,user_id,points,account_number_snapshot,status,requested_at,paid_at,reviewer_id,payment_reference,rejection_reason",
+        "order": "requested_at.desc,id.desc", "limit": 26, "offset": int(page) * 25}
+    if status != "all":
+        filters["status"] = "eq." + status
+    if member_id is not None:
+        if not re.fullmatch(r"[1-9][0-9]{0,18}", member_id) or int(member_id) > 9223372036854775807:
+            return jsonify(error="ID affiliate tidak sah."), 400
+        filters["user_id"] = "eq." + member_id
+    items = _rest("GET", "affiliate_claims?" + urlencode(filters))
     return jsonify(open=True, items=items[:25], more=len(items) > 25, admin_id=str(uid))
 
 
