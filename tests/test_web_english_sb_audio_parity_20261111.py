@@ -169,47 +169,43 @@ class WebEnglishSourceTests(unittest.TestCase):
         self.assertIn("/api/web/rph/english-student-book?", today)
         self.assertIn("english-audio", today)
 
-    def test_science_and_history_books_require_exact_native_lesson(self):
-        from web.native_textbook_references import HISTORY_BOOKS, SCIENCE_BOOKS
-
+    def test_science_book_download_requires_exact_native_lesson_and_private_file(self):
         prefix = "web.native_textbook_references."
-        cases = (
-            ("SCIENCE", 3, "u" + "a" * 24, "ST3-PDP-054", "24–27",
-             SCIENCE_BOOKS[3][2], "list_native_lessons", "Sains"),
-            ("SEJARAH", 5, "u01", "002", "7", HISTORY_BOOKS[5],
-             "list_sejarah_lessons", "Sejarah"),
-        )
-        for subject, year, unit, lesson, pages, url, loader, name in cases:
-            with self.subTest(subject=subject), self.account(), patch(
-                prefix + loader, return_value=[{"value": lesson, "textbook_ref": "Buku Teks m/s " + pages}]
-            ) as lookup:
-                query = dict(year=year, subject=subject, unit=unit, lesson=lesson)
-                answer = self.client.get("/api/web/rph/extra-materials", query_string=query)
-                self.assertEqual(answer.status_code, 200)
-                self.assertEqual(answer.json["items"], [{
-                    "type": "textbook", "title": f"Buku Teks {name} Tahun {year} • m/s {pages}",
-                    "url": url, "action": "Buka Buku Teks",
-                }])
-                args = (year, subject, unit) if subject == "SCIENCE" else (year, unit)
-                lookup.assert_called_once_with(*args)
-                lookup.return_value = []
-                self.assertEqual(self.client.get(
-                    "/api/web/rph/extra-materials", query_string=query).json["items"], [])
-                lookup.return_value = [{"value": lesson, "textbook_ref": "Buku Teks m/s 20–2"}]
-                self.assertEqual(self.client.get(
-                    "/api/web/rph/extra-materials", query_string=query).json["items"], [])
+        unit, lesson = "u" + "a" * 24, "ST3-PDP-054"
+        query = dict(year=3, subject="SCIENCE", unit=unit, lesson=lesson)
+        record = {"value": lesson, "textbook_ref": "Buku Teks m/s 24–27"}
+        path = "buku-teks/sains/tahun-3/ms-24-27.pdf"
+        raw = b"%PDF-1.7\n" + b"X" * 800
+        with self.account(), patch(prefix + "list_native_lessons", return_value=[record]) as lookup, patch(
+            prefix + "private_textbook_pdf", side_effect=lambda name, metadata_only=False: True if metadata_only else raw
+        ) as storage:
+            answer = self.client.get("/api/web/rph/extra-materials", query_string=query)
+            item, = answer.json["items"]
+            self.assertEqual(item["title"], "Buku Teks Sains Tahun 3 • m/s 24–27")
+            self.assertTrue(item["url"].startswith("/api/web/rph/science-textbook?"))
+            lookup.assert_called_once_with(3, "SCIENCE", unit)
+            storage.assert_called_once_with(path, metadata_only=True)
+            download = self.client.get(item["url"])
+            self.assertEqual(download.data, raw)
+            self.assertEqual(download.mimetype, "application/pdf")
+            self.assertIn("ST3-PDP-054_Buku_Teks_ms_24-27.pdf", download.headers["Content-Disposition"])
+            lookup.return_value = [{**record, "textbook_ref": "Buku Teks m/s 20–21"}]
+            self.assertEqual(self.client.get(item["url"]).status_code, 404)
+            lookup.return_value = [record]
+            storage.side_effect = None
+            storage.return_value = None
+            self.assertEqual(self.client.get("/api/web/rph/extra-materials", query_string=query).json["items"], [])
+        with patch("web.unified_rph_web._account", return_value=(None, ({"error": "Login"}, 401))):
+            self.assertEqual(self.client.get(item["url"]).status_code, 401)
 
     def test_books_outside_the_checked_subset_do_not_call_native_source(self):
-        with self.account(), patch("web.native_textbook_references.list_native_lessons") as science, patch(
-            "web.native_textbook_references.list_sejarah_lessons"
-        ) as history:
+        with self.account(), patch("web.native_textbook_references.list_native_lessons") as science:
             for query in ({"year": 3, "subject": "SCIENCE", "unit": "u" + "b" * 24,
                            "lesson": "ST3-PDP-045"},
-                          {"year": 5, "subject": "SEJARAH", "unit": "u02", "lesson": "004"}):
+                          {"year": 5, "subject": "SEJARAH", "unit": "u01", "lesson": "001"}):
                 self.assertEqual(self.client.get(
                     "/api/web/rph/extra-materials", query_string=query).json["items"], [])
             science.assert_not_called()
-            history.assert_not_called()
 
 
 if __name__ == "__main__":
