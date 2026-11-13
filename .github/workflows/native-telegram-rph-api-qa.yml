@@ -6,6 +6,8 @@ on:
       - web/native_rph_telegram_api.py
       - web/telegram_verified_rpt_rph_bridge.py
       - web/telegram_verified_sequence_rph_bridge.py
+      - web/sains_y3_unit_awal.py
+      - tests/test_sains_y3_unit_awal.py
       - web/pi_navigation.py
       - web_v1_dropdown_catalog.py
       - web_v1_verified_pdp.py
@@ -22,6 +24,8 @@ on:
       - web/native_rph_telegram_api.py
       - web/telegram_verified_rpt_rph_bridge.py
       - web/telegram_verified_sequence_rph_bridge.py
+      - web/sains_y3_unit_awal.py
+      - tests/test_sains_y3_unit_awal.py
       - web/pi_navigation.py
       - web_v1_dropdown_catalog.py
       - web_v1_verified_pdp.py
@@ -54,3 +58,4 @@ jobs:
           python -m unittest discover -s tests -p test_telegram_verified_sequence_rph_bridge.py -v
           python -m unittest discover -s tests -p test_telegram_bm_hierarchy_web.py -v
           python -m unittest discover -s tests -p test_telegram_unit_navigation.py -v
+          python -m unittest discover -s tests -p test_sains_y3_unit_awal.py -v

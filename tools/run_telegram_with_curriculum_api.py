@@ -750,3 +750,6 @@ except Exception as _rph_entry_choices_error:
 from web.rph_teacher_reflection import install as install_teacher_reflection
 
 RPH_TEACHER_REFLECTION_ACTIVE = install_teacher_reflection(telegram_runtime)
+
+from web.sains_y3_unit_awal import install as install_sains_y3_opening_units
+install_sains_y3_opening_units(telegram_runtime)
