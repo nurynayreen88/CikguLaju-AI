@@ -35,16 +35,40 @@ YEAR4_STUDENT_BOOK_CORRECTIONS = {
     157: ("110", [110, 111]),
 }
 
-# Super Minds 1 First Edition pp. 58, 70 and 94. Each pair is printed
-# on the corresponding Student's Book page. The file IDs match the
-# existing Telegram WMA sender and are checked against it in CI.
+# Super Minds 1 First Edition. Page ranges and track order must match
+# the current Telegram lesson record. File IDs are checked against
+# the original Telegram WMA sender by the parity tests.
 YEAR2_AUDIO = {
-    2: (58, {"CD2-18": "14nIKU6l5utMudXb9HS8Zc9aZsYOVul1a",
-             "CD2-19": "1xL916QiLasf1dO35exMZ1LgypwNwrkLC"}),
-    26: (70, {"CD2-35": "1ZxYROG_L291L8WWIq2_J3NZDiW8giBkK",
-              "CD2-36": "1DZnb_IvBrqYfNZqWxuliQlJ-uGPgqIz9"}),
-    88: (94, {"CD3-17": "1vRuXvDGVqcPcIwfT3EjfAebwPKk9K8Du",
-              "CD3-18": "1pKoaMY8-6Kg_0hF8jnOBXS7_5mtXCt8a"}),
+    2: ((58, 58), {"CD2-18": "14nIKU6l5utMudXb9HS8Zc9aZsYOVul1a",
+                   "CD2-19": "1xL916QiLasf1dO35exMZ1LgypwNwrkLC"}),
+    4: ((60, 60), {"CD2-23": "1NINHVmxH_tX1sO2WGYDAgfmIZh5i-Mqh"}),
+    11: ((61, 61), {"CD2-25": "1dZfNW0fnedxJjSARaHw2fIi8x_k0-vO4",
+                    "CD2-26": "1vpNkB4OWao5iPQvHzEpemQrlNiNhkX4H"}),
+    14: ((64, 64), {"CD2-31": "1bohxCDWg5pwB4IZnpibBlFoM3z6FkPyP"}),
+    21: ((66, 66), {"CD2-33": "1bg-g73NV1eIgVL8qKi4BxwDz7dUiQYm9"}),
+    23: ((68, 68), {"CD2-34": "1nk3TNOEUIL7gjIuR7LRFoaKHATh46E_P"}),
+    26: ((70, 70), {"CD2-35": "1ZxYROG_L291L8WWIq2_J3NZDiW8giBkK",
+                    "CD2-36": "1DZnb_IvBrqYfNZqWxuliQlJ-uGPgqIz9"}),
+    31: ((71, 71), {"CD2-37": "1lALVLnBi4r9FgV_RXo6vaZIjfmioonEu"}),
+    32: ((73, 73), {"CD2-43": "1fiMT41Y9PYMVBaYN5D_adxhrYMoBbr11"}),
+    33: ((74, 75), {"CD2-45": "1ZV1aYbfSnulRINSzl2Cd1JJPtqUfAG1X"}),
+    35: ((72, 72), {"CD2-40": "1GngRTwaqv-uXxokcGy4rDZW4rAQqDug0",
+                    "CD2-42": "1yxRjQaqDAgS5aA9zS_1mcQZvJvMHhyCj"}),
+    41: ((75, 75), {"CD2-47": "1gVtRNiGlqST9I43FSNEN4IP-aBhTAPj1"}),
+    43: ((77, 77), {"CD2-50": "12dHue3P1j6QrUMY0PJlrVRT-2pqBQ5yh"}),
+    51: ((80, 80), {"CD2-51": "1fk-NenI3cLjmN1D8KSvbHyDOzzQRrlsX"}),
+    57: ((83, 83), {"CD3-05": "1FM3Y5WOaR2-sAAO9cQUW9jsI3j7hxIcg"}),
+    67: ((85, 85), {"CD3-08": "1Y6nG2rpOOGwKZQCwc0GbsxFtRtdOOVdh",
+                    "CD3-09": "1SRZv1CganXHWXVD5WXRTQaJgqrNT8sBZ"}),
+    77: ((89, 89), {"CD3-14": "1gdfLJPCySLr7czH4pTRu3TWxRYZ-Lr-s"}),
+    78: ((90, 90), {"CD3-15": "1cJiT8FzVnxl3YrRIFpESLS-A16aBPC7Z"}),
+    86: ((92, 92), {"CD3-16": "12GfEs-yBivczu4stIKMfm8BrS4AyYW2M"}),
+    88: ((94, 94), {"CD3-17": "1vRuXvDGVqcPcIwfT3EjfAebwPKk9K8Du",
+                    "CD3-18": "1pKoaMY8-6Kg_0hF8jnOBXS7_5mtXCt8a"}),
+    89: ((95, 95), {"CD3-19": "1GXJmGrb4OJ6bp9vbrTGLUwbMWrN4Iv6c"}),
+    107: ((100, 100), {"CD3-30": "1M01-6uPokXgXnOF78vPQZ5i0apdjDmWt"}),
+    109: ((102, 102), {"CD3-32": "1ohHvL4cQ26aNIyp97qexlEOZsYA_OMbp"}),
+    129: ((109, 109), {"CD3-41": "1GqLqE6EntsZACqd93g-IX-AfMIqmUwPC"}),
 }
 
 
@@ -181,16 +205,18 @@ def _audio_rows(runtime, year, lesson, *, year2_rows=None):
         approved = YEAR2_AUDIO.get(lesson)
         if not approved or row.get("audio_status") != "VERIFIED_AUDIO":
             return []
-        page, tracks = approved
+        pages, tracks = approved
         refs = [ref.strip() for ref in str(row.get("audio_reference") or "").split(";")]
-        if (row.get("textbook_page_start") != page
-                or row.get("textbook_page_end") != page or refs != list(tracks)):
+        if ((row.get("textbook_page_start"), row.get("textbook_page_end")) != pages
+                or refs != list(tracks)):
             return []
-        return [
-            {"title": f"English Tahun 2 • Lesson {lesson:03d} • {ref.replace('-', ' Track ')}",
-             "reference": ref.replace("-", " Track "), "id": tracks[ref]}
-            for ref in refs
-        ]
+        entries = []
+        for ref, file_id in tracks.items():
+            disc, number = ref.split("-")
+            reference = f"{disc} Track {int(number)}"
+            entries.append({"title": f"English Tahun 2 • Lesson {lesson:03d} • {reference}",
+                            "reference": reference, "id": file_id})
+        return entries
     state = _lesson_state(row, year, lesson)
     if year == 4 and (lesson == 30 or lesson in HOLD_LESSONS
             or not getattr(runtime, "CIKGULAJU_Y4_WRONG_BOOK_AUDIO_HOLD_ACTIVE", False)

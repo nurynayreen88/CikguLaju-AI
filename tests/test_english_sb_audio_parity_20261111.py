@@ -251,6 +251,26 @@ class EnglishSourceParityTests(unittest.TestCase):
                                     year2_rows=[{**row, "lesson_no": 98,
                                                  "audio_reference": "CD3-27"}]), [])
 
+    def test_year_two_checked_ranges_and_single_digit_track_labels(self):
+        from web.telegram_english_sb_audio_api_20261111 import REF
+
+        source = self.runtime._eng12_rows("Tahun 2")[0]
+        for lesson, (pages, tracks) in YEAR2_AUDIO.items():
+            with self.subTest(lesson=lesson):
+                row = {**source, "lesson_no": lesson, "textbook_page_start": pages[0],
+                       "textbook_page_end": pages[1], "audio_reference": "; ".join(tracks)}
+                entries = _audio_rows(self.runtime, 2, lesson, year2_rows=[row])
+                self.assertEqual([entry["id"] for entry in entries], list(tracks.values()))
+                self.assertTrue(all(REF.fullmatch(entry["reference"]) for entry in entries))
+
+        wrong_page = {**source, "lesson_no": 33, "textbook_page_start": 74,
+                      "textbook_page_end": 74, "audio_reference": "CD2-45"}
+        self.assertEqual(_audio_rows(self.runtime, 2, 33, year2_rows=[wrong_page]), [])
+        padded = {**source, "lesson_no": 57, "textbook_page_start": 83,
+                  "textbook_page_end": 83, "audio_reference": "CD3-05"}
+        self.assertEqual(_audio_rows(self.runtime, 2, 57, year2_rows=[padded])[0]["reference"],
+                         "CD3 Track 5")
+
     def test_auth_and_input_guards(self):
         bare = self.client.get("/internal/rph/v1/english-extras/audio",
                                query_string={"year": "4", "lesson": "93"})
