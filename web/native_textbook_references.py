@@ -1,47 +1,61 @@
-"""Original textbook readers for selected Telegram Science and History PdP."""
+"""Serve checked Science textbook excerpts from private material storage."""
+import os
 import re
+from urllib.error import HTTPError
+from urllib.parse import urlsplit
+from urllib.request import Request, build_opener
 
-from web.native_telegram_sejarah_2027_client import list_sejarah_lessons
+from web.native_telegram_extra_materials_20261106 import MAX_PDF
+from web.native_telegram_rph_client import BlockRedirects
 from web.native_telegram_sequence_rph_client import list_native_lessons
 
-SCIENCE_BOOKS = {
-    1: (44, 47, "https://fliphtml5.com/rjler/yoow/BUKU_TEKS_SAINS_TAHUN_1_SEMAKAN/"),
-    2: (52, 58, "https://fliphtml5.com/oudxg/ntkx/Buku_Teks_Digital_Sains_Tahun_2_SK_KSSR_Semakan_2007/"),
-    3: (46, 54, "https://fliphtml5.com/ptqlr/bxbt/D3_BUKU_TEKS_SAINS_-_SAINS_SKDAM/"),
-    4: (80, 85, "https://fliphtml5.com/itzsi/xpxe/BUKU_TEKS_SAINS_TAHUN_4/"),
-    5: (84, 88, "https://fliphtml5.com/lbufr/faxv/TAHUN_5_SAINS_KSSR_BUKU_TEKS_Part_1/"),
-    6: (85, 89, "https://fliphtml5.com/rmzqa/gqmb/Sains_T6_SK/"),
+SCIENCE_PAGES = {
+    2: {52: (2, 4), 53: (5, 7), 54: (8, 9), 55: (10, 11), 56: (12, 14),
+        57: (12, 14), 58: (18, 20)},
+    3: {46: (2, 3), 47: (4, 5), 49: (9, 10), 50: (11, 12), 51: (13, 14),
+        52: (16, 19), 53: (20, 20), 54: (24, 27)},
 }
-HISTORY_BOOKS = {
-    4: "https://fliphtml5.com/jfuhh/cmqw/Buku_Teks_Sejarah_Tahun_4/",
-    5: "https://fliphtml5.com/mlzri/alte/Sejarah_T5_SK/",
-    6: "https://fliphtml5.com/itcew/pnmn",
-}
-PAGES = re.compile(r"Buku Teks m/s ([1-9][0-9]{0,2})(?:[–-]([1-9][0-9]{0,2}))?")
 
 
-def textbook_reference(year, subject, unit, lesson):
-    if subject == "SCIENCE" and year in SCIENCE_BOOKS:
-        first, last, url = SCIENCE_BOOKS[year]
-        match = re.fullmatch(rf"ST{year}-PDP-([0-9]{{3}})", lesson)
-        if not match or not first <= int(match[1]) <= last:
-            return None
-        rows = list_native_lessons(year, subject, unit)
-        name = "Sains"
-    elif subject == "SEJARAH" and year in HISTORY_BOOKS and lesson in ("001", "002", "003"):
-        rows = list_sejarah_lessons(year, unit)
-        url = HISTORY_BOOKS[year]
-        name = "Sejarah"
-    else:
+def textbook_reference(year, unit, lesson):
+    match = re.fullmatch(rf"ST{year}-PDP-([0-9]{{3}})", lesson)
+    pages = SCIENCE_PAGES.get(year, {}).get(int(match[1])) if match else None
+    if pages is None:
         return None
-
+    first, last = pages
+    printed = str(first) if first == last else f"{first}–{last}"
+    rows = list_native_lessons(year, "SCIENCE", unit)
     matches = [row for row in rows if row["value"] == lesson]
-    if len(matches) != 1:
+    if len(matches) != 1 or matches[0].get("textbook_ref") != f"Buku Teks m/s {printed}":
         return None
-    reference = matches[0].get("textbook_ref")
-    pages = PAGES.fullmatch(reference) if isinstance(reference, str) else None
-    if not pages or (pages[2] and int(pages[2]) <= int(pages[1])):
+    path = f"buku-teks/sains/tahun-{year}/ms-{first}-{last}.pdf"
+    return printed, path
+
+
+def private_textbook_pdf(path, *, metadata_only=False):
+    base = os.environ.get("SUPABASE_URL", "").rstrip("/")
+    secret = os.environ.get("SUPABASE_SECRET_KEY", "")
+    bucket = os.environ.get("CIKGULAJU_MATERIAL_BUCKET", "cikgulaju-materials")
+    origin = urlsplit(base)
+    if (origin.scheme != "https" or not re.fullmatch(r"[a-z0-9]+\.supabase\.co", origin.netloc)
+            or origin.path or origin.query or origin.fragment or not secret
+            or not re.fullmatch(r"[a-zA-Z0-9_-]{1,100}", bucket)):
         return None
-    printed = f"{pages[1]}–{pages[2]}" if pages[2] else pages[1]
-    return {"type": "textbook", "title": f"Buku Teks {name} Tahun {year} • m/s {printed}",
-            "url": url, "action": "Buka Buku Teks"}
+    if not re.fullmatch(r"buku-teks/sains/tahun-[23]/ms-[0-9]{1,2}-[0-9]{1,2}\.pdf", path):
+        return None
+    request = Request(f"{base}/storage/v1/object/authenticated/{bucket}/{path}",
+                      method="HEAD" if metadata_only else "GET",
+                      headers={"apikey": secret, "Authorization": f"Bearer {secret}"})
+    try:
+        with build_opener(BlockRedirects()).open(request, timeout=10) as response:
+            if response.status != 200 or response.headers.get_content_type() != "application/pdf":
+                return None
+            if metadata_only:
+                size = response.headers.get("Content-Length", "")
+                return size.isdecimal() and 450 <= int(size) <= MAX_PDF
+            data = response.read(MAX_PDF + 1)
+            return data if 450 <= len(data) <= MAX_PDF and data.startswith(b"%PDF-") else None
+    except HTTPError as error:
+        if error.code == 404:
+            return None
+        raise

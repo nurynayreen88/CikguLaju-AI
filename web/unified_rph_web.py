@@ -940,7 +940,7 @@ def create_blueprint():
             if len(found) != 1:
                 raise ValueError("English Lesson identity mismatch")
             return year, sub, unit, lesson, found[0]["lesson"]
-        if (sub == "MUZIK" and year in range(2, 7)) or sub in ("SCIENCE", "SEJARAH"):
+        if (sub == "MUZIK" and year in range(2, 7)) or (sub == "SCIENCE" and year in (2, 3)):
             return year, sub, unit, lesson, None
         raise ValueError("No verified source for optional resources")
 
@@ -1001,13 +1001,18 @@ def create_blueprint():
                         + (" Sumber lain belum dapat disahkan: " + ", ".join(missing)
                            if missing else ""))
                 return jsonify({"items": items, "status": "SUMBER_ASAL", "note": note})
-            if sub in ("SCIENCE", "SEJARAH"):
-                from web.native_textbook_references import textbook_reference
-                try:
-                    book = textbook_reference(year, sub, unit, token)
-                except ValueError:
-                    book = None
-                return jsonify({"items": [book] if book else [], "status": "SUMBER_ASAL"})
+            if sub == "SCIENCE":
+                from urllib.parse import urlencode
+                from web.native_textbook_references import private_textbook_pdf, textbook_reference
+                selection = textbook_reference(year, unit, token)
+                if selection and private_textbook_pdf(selection[1], metadata_only=True):
+                    pages, _ = selection
+                    params = urlencode({"year": year, "subject": sub, "unit": unit, "lesson": token})
+                    return jsonify({"items": [{"type": "textbook",
+                        "title": f"Buku Teks Sains Tahun {year} • m/s {pages}",
+                        "url": "/api/web/rph/science-textbook?" + params,
+                        "action": "Download"}], "status": "SUMBER_ASAL"})
+                return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
             # Music intentionally remains original-owner VIEW links only.
             items = music_source_links(year, unit, token)
         except Exception:
@@ -1015,6 +1020,29 @@ def create_blueprint():
                             "Sumber bahan tambahan Telegram belum dapat disahkan."}), 503
         return jsonify({"items": items, "status": "SUMBER_ASAL",
                         "note": "Pautan audio luar: akses, kandungan dan hak edar belum disahkan."})
+
+    @bp.get("/api/web/rph/science-textbook")
+    def science_textbook():
+        _, error = _account()
+        if error is not None:
+            return error
+        try:
+            year, sub, unit, lesson, _ = _extra_selection()
+            if sub != "SCIENCE":
+                raise ValueError("Wrong textbook source")
+            from web.native_textbook_references import private_textbook_pdf, textbook_reference
+            selection = textbook_reference(year, unit, lesson)
+            content = private_textbook_pdf(selection[1]) if selection else None
+        except (ValueError, TypeError):
+            return jsonify({"error": "Pilihan PdP Buku Teks tidak sah"}), 400
+        except Exception:
+            return jsonify({"error": "Fail Buku Teks belum dapat dicapai"}), 503
+        if content is None:
+            return jsonify({"error": "Halaman Buku Teks belum tersedia"}), 404
+        pages = selection[0].replace("–", "-")
+        return send_file(BytesIO(content), mimetype="application/pdf",
+                         as_attachment=True, conditional=False,
+                         download_name=f"CikguLaju_Sains_T{year}_{lesson}_Buku_Teks_ms_{pages}.pdf")
 
     @bp.get("/api/web/rph/english-workbook")
     def english_workbook():

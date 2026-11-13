@@ -29,7 +29,6 @@
  };
  const TYPES=new Set(["textbook","workbook","audio"]);
  const musicLink=/^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]{10,100}\/view\?usp=drivesdk$/;
- const textbookLink=/^https:\/\/fliphtml5\.com\/[a-z0-9]+\/[a-z0-9]+(?:\/[A-Za-z0-9_-]+)?\/?$/;
 
  function create(tag,cls,value){
   const el=document.createElement(tag);
@@ -414,7 +413,7 @@
      typeof item.url!=="string"||!item.title.trim())return false;
   if(item.type==="workbook")return item.url.startsWith("/api/web/rph/english-workbook?");
   if(item.type==="textbook")return item.url.startsWith("/api/web/rph/english-student-book?")||
-    (["SCIENCE","SEJARAH"].includes(subject)&&textbookLink.test(item.url));
+    (subject==="SCIENCE"&&item.url.startsWith("/api/web/rph/science-textbook?"));
   if(item.type==="audio")return /^\/api\/web\/rph\/english-audio\/[1-4]\?/.test(item.url)||musicLink.test(item.url);
   return false;
  }
@@ -450,7 +449,7 @@
   }catch(_error){errors.push("Semakan RPH tidak dapat dihubungi.");}
   if(epoch!==batchEpoch||key!==selectedKey(c))return;
   if((c.slot.subject_code==="ENGLISH"&&[2,3,4,5,6].includes(c.slot.year))||
-      ["MUZIK","SCIENCE","SEJARAH"].includes(c.slot.subject_code)){
+      c.slot.subject_code==="MUZIK"||(c.slot.subject_code==="SCIENCE"&&[2,3].includes(c.slot.year))){
    try{
     const params=new URLSearchParams({year:args.year,subject:args.subject,unit:args.unit,lesson:args.lesson});
     const response=await fetch("/api/web/rph/extra-materials?"+params,{
@@ -462,9 +461,7 @@
      for(const item of data.items){
       if(!readyMaterialLink(item,c.slot.subject_code))continue;
       const label=item.title;
-      let action="Download";
-      if(item.type==="textbook"&&textbookLink.test(item.url))action="Buka Buku Teks";
-      if(item.type==="audio"&&musicLink.test(item.url))action="Buka Audio Sumber";
+      const action=item.type==="audio"&&musicLink.test(item.url)?"Buka Audio Sumber":"Download";
       const row=actionRow(label,action,item.url);
       c.resultList.append(row.li);found++;
      }

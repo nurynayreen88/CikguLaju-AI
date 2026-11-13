@@ -158,20 +158,22 @@ class ScienceBrowserDownloadTest(unittest.TestCase):
                       self.page.locator("#account-access").inner_text())
         self.assertEqual(self.page.evaluate("window.__sainsRequests.length"),1)
 
-    def test_textbook_opens_source_without_using_rph_credit(self):
-        url = "https://fliphtml5.com/itzsi/xpxe/BUKU_TEKS_SAINS_TAHUN_4/"
+    def test_textbook_download_stays_inside_web_without_using_rph_credit(self):
+        url = "/api/web/rph/science-textbook?year=3&subject=SCIENCE&unit=" + UNIT + "&lesson=ST3-PDP-054"
         self.page.evaluate("""(url)=>{
+          document.querySelector('#year').value='3';
+          verifiedRphKey=currentRphLessonKey();
           const original=window.fetch;
           window.fetch=async (target,options)=>{
             if(!String(target).includes('/api/web/rph/extra-materials?'))return original(target,options);
             return new Response(JSON.stringify({items:[{
-              type:'textbook',title:'Buku Teks Sains Tahun 4 • m/s 2–4',url
+              type:'textbook',title:'Buku Teks Sains Tahun 3 • m/s 24–27',url
             }]}),{status:200,headers:{'content-type':'application/json'}});
           };
         }""", url)
         self.page.locator("#show-materials").click()
-        book = self.page.locator("#materials-list li").filter(has_text="m/s 2–4")
-        link = book.get_by_role("link", name="Buka Buku Teks")
+        book = self.page.locator("#materials-list li").filter(has_text="m/s 24–27")
+        link = book.get_by_role("link", name="Download")
         self.assertEqual(link.get_attribute("href"), url)
         self.assertEqual(link.get_attribute("target"), "_blank")
         self.assertIn("10 daripada 10 janaan", self.page.locator("#account-access").inner_text())
