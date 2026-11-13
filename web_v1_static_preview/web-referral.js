@@ -11,7 +11,7 @@
   const claimPanel = get("web-affiliate-claim");
   const walletForm = get("affiliate-wallet-form");
   const claimForm = get("affiliate-claim-form");
-  const phone = get("affiliate-phone");
+  const account = get("affiliate-account-number");
   const confirm = get("affiliate-confirm");
   const amount = get("affiliate-amount");
   const claimStatus = get("affiliate-status");
@@ -28,7 +28,7 @@
   const date = value => new Date(value).toLocaleString("ms-MY", {timeZone:"Asia/Kuala_Lumpur"});
   const deepLink = new URLSearchParams(window.location.search).get("affiliate") === "1";
   let openFromTelegram = deepLink;
-  let savedPhone = "";
+  let savedAccount = "";
   let available = 0;
   let requestKey;
   let requestIdentity;
@@ -51,27 +51,27 @@
     box.hidden = true;
     claimPanel.hidden = true;
     linkInput.value = "";
-    phone.value = savedPhone = "";
+    account.value = savedAccount = "";
     history.replaceChildren();
     confirm.checked = false;
     if (!view.hidden) document.querySelector('[data-web-view="today"]')?.click();
     view.hidden = true;
   }
   function syncSubmit() {
-    get("affiliate-submit").disabled = submitting || !savedPhone || phone.value !== savedPhone || !confirm.checked || available < 10;
+    get("affiliate-submit").disabled = submitting || !savedAccount || account.value !== savedAccount || !confirm.checked || available < 10;
   }
   function showClaims(data) {
     claimPanel.hidden = !data.open;
     if (!data.open) return;
-    const nextPhone = data.phone || "";
-    if (phone.value === savedPhone) phone.value = nextPhone;
-    if (nextPhone !== savedPhone) confirm.checked = false;
-    savedPhone = nextPhone;
+    const nextAccount = data.account_number || "";
+    if (account.value === savedAccount) account.value = nextAccount;
+    if (nextAccount !== savedAccount) confirm.checked = false;
+    savedAccount = nextAccount;
     available = Number(data.available);
     get("affiliate-available").textContent = money(available);
     amount.max = String(available);
-    claimForm.hidden = !savedPhone || available < 10;
-    get("affiliate-save-wallet").textContent = savedPhone ? "Simpan Nombor" : "Sertai Affiliate";
+    claimForm.hidden = !savedAccount || available < 10;
+    get("affiliate-save-wallet").textContent = savedAccount ? "Simpan Nombor" : "Sertai Affiliate";
     history.replaceChildren();
     for (const row of data.claims) {
       const li = document.createElement("li");
@@ -94,7 +94,7 @@
         if (data.can_join !== true) { revoke(); return; }
         box.hidden = true;
         linkInput.value = "";
-        status.textContent = "Simpan nombor telefon TNG eWallet untuk menyertai affiliate dan mendapat pautan jemputan.";
+        status.textContent = "Simpan nombor akaun TNG eWallet untuk menyertai affiliate dan mendapat pautan jemputan.";
       } else {
         if (typeof data.link !== "string" || !data.link.startsWith("https://cikgulaju-web.onrender.com/?ref=")) { revoke(); return; }
         linkInput.value = data.link;
@@ -119,24 +119,24 @@
     } catch (_) { revoke(); }
   }
 
-  phone.addEventListener("input", () => { confirm.checked = false; syncSubmit(); });
+  account.addEventListener("input", () => { confirm.checked = false; syncSubmit(); });
   confirm.addEventListener("change", syncSubmit);
   walletForm.addEventListener("submit", async event => {
     event.preventDefault();
     const button = get("affiliate-save-wallet");
     button.disabled = true;
     try {
-      await api("/api/web/affiliate/wallet", jsonPost({phone:phone.value, confirmed:confirm.checked}));
-      phone.value = savedPhone;
+      await api("/api/web/affiliate/wallet", jsonPost({account_number:account.value, confirmed:confirm.checked}));
+      account.value = savedAccount;
       await update();
-      claimStatus.textContent = "Nombor TNG eWallet disimpan.";
+      claimStatus.textContent = "Nombor akaun TNG eWallet disimpan.";
     } catch (error) { claimStatus.textContent = error.message; }
     finally { button.disabled = false; }
   });
   claimForm.addEventListener("submit", async event => {
     event.preventDefault();
     if (get("affiliate-submit").disabled) return;
-    const identity = `${savedPhone}/${amount.value}`;
+    const identity = `${savedAccount}/${amount.value}`;
     if (requestIdentity !== identity) {
       requestIdentity = identity;
       requestKey = crypto.randomUUID();
@@ -144,7 +144,7 @@
     submitting = true;
     syncSubmit();
     try {
-      await api("/api/web/affiliate/claims", jsonPost({phone:savedPhone, confirmed:confirm.checked, points:amount.value, key:requestKey}));
+      await api("/api/web/affiliate/claims", jsonPost({account_number:savedAccount, confirmed:confirm.checked, points:amount.value, key:requestKey}));
       requestIdentity = requestKey = undefined;
       amount.value = "";
       confirm.checked = false;
@@ -217,11 +217,18 @@
         const section = document.createElement("section");
         section.className = "teacher-timetable-section";
         const line = document.createElement("p");
-        line.textContent = `Akaun ${item.user_id} · TNG ${item.phone_snapshot} · RM${money(item.points)} · ${date(item.requested_at)} · ${labels[item.status]}`
+        line.textContent = `Akaun ${item.user_id} · Akaun TNG ${item.account_number_snapshot || "belum direkodkan"} · RM${money(item.points)} · ${date(item.requested_at)} · ${labels[item.status]}`
           + (item.payment_reference ? ` · Rujukan ${item.payment_reference}` : "")
           + (item.rejection_reason ? ` · ${item.rejection_reason}` : "");
         section.append(line);
-        if (item.status === "pending") section.append(actionForm(item.id, "processing", "Mula Proses", []));
+        if (item.status === "pending" && item.account_number_snapshot) {
+          section.append(actionForm(item.id, "processing", "Mula Proses", []));
+        }
+        if (item.status === "pending" && !item.account_number_snapshot) {
+          const notice = document.createElement("p");
+          notice.textContent = "Tolak tuntutan lama ini supaya affiliate boleh masukkan nombor akaun TNG eWallet dan hantar semula.";
+          section.append(notice);
+        }
         if (item.status === "processing" && String(item.reviewer_id) === data.admin_id) {
           section.append(actionForm(item.id, "paid", "Rekod Bayaran Selesai", [
             ["reference", "Rujukan transaksi TNG", "text"], ["proof", "Bukti bayaran TNG", "file"]]));

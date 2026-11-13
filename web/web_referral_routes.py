@@ -207,7 +207,8 @@ def _claim_result(data, success=200):
         "disabled": (403, "Akaun affiliate ini tidak aktif."),
         "invalid": (400, "Semak butiran yang diisi."),
         "balance": (409, "Baki mata tersedia tidak mencukupi."),
-        "wallet_changed": (409, "Simpan dan sahkan semula nombor TNG eWallet."),
+        "wallet_changed": (409, "Simpan dan sahkan semula nombor akaun TNG eWallet."),
+        "account_required": (409, "Tuntutan ini memerlukan nombor akaun TNG eWallet. Jika masih menunggu, tolak tuntutan supaya affiliate boleh hantar semula."),
         "request_conflict": (409, "Maklumat tuntutan ini telah berubah. Muat semula dan semak sejarah tuntutan."),
         "missing": (404, "Tuntutan tidak dijumpai."),
         "status": (409, "Status telah berubah atau tuntutan sedang diproses oleh admin lain."),
@@ -221,20 +222,16 @@ def _claim_result(data, success=200):
     return jsonify(data), success
 
 
-def _confirmed_phone(body):
+def _confirmed_account_number(body):
     if not isinstance(body, dict) or body.get("confirmed") is not True:
         raise ValueError("Confirmation required")
-    value = body.get("phone")
+    value = body.get("account_number")
     if not isinstance(value, str) or len(value) > 32:
-        raise ValueError("Invalid number")
-    phone = re.sub(r"[ -]", "", value.strip())
-    if phone.startswith("+60"):
-        phone = "0" + phone[3:]
-    elif phone.startswith("60"):
-        phone = "0" + phone[2:]
-    if not re.fullmatch(r"01[0-9]{8,9}", phone):
-        raise ValueError("Invalid number")
-    return phone
+        raise ValueError("Invalid account number")
+    account_number = re.sub(r"[ -]", "", value.strip())
+    if not re.fullmatch(r"[0-9]{12}", account_number):
+        raise ValueError("Invalid account number")
+    return account_number
 
 
 def _json_body():
@@ -258,10 +255,10 @@ def affiliate_wallet():
     if error is not None:
         return error
     try:
-        phone = _confirmed_phone(_json_body())
+        account_number = _confirmed_account_number(_json_body())
     except ValueError:
-        return jsonify(error="Isi dan sahkan nombor telefon berdaftar TNG eWallet yang sah."), 400
-    return _claim_result(_rpc("affiliate_save_wallet", p_user=uid, p_phone=phone))
+        return jsonify(error="Isi dan sahkan nombor akaun TNG eWallet (DuitNow) 12 digit."), 400
+    return _claim_result(_rpc("affiliate_save_account", p_user=uid, p_account_number=account_number))
 
 
 @bp.post("/api/web/affiliate/claims")
@@ -271,14 +268,14 @@ def affiliate_submit():
         return error
     try:
         body = _json_body()
-        phone = _confirmed_phone(body)
+        account_number = _confirmed_account_number(body)
         points = body.get("points")
         if not isinstance(points, str) or not re.fullmatch(r"[0-9]{1,10}(?:\.[0-9]{1,2})?", points) or Decimal(points) < 10:
             raise ValueError("Minimum claim")
         key = str(UUID(body.get("key", "")))
     except (ValueError, TypeError, AttributeError):
-        return jsonify(error="Sahkan nombor TNG eWallet dan masukkan sekurang-kurangnya 10 mata."), 400
-    return _claim_result(_rpc("affiliate_submit_claim", p_user=uid, p_points=points, p_phone=phone, p_key=key), 201)
+        return jsonify(error="Sahkan nombor akaun TNG eWallet dan masukkan sekurang-kurangnya 10 mata."), 400
+    return _claim_result(_rpc("affiliate_submit_account_claim", p_user=uid, p_points=points, p_account_number=account_number, p_key=key), 201)
 
 
 @bp.get("/api/web/admin/affiliate/claims")
@@ -293,7 +290,7 @@ def affiliate_admin_list():
     if status not in ("pending", "processing", "paid", "rejected") or not re.fullmatch(r"[0-9]{1,5}", page):
         return jsonify(error="Penapis tidak sah."), 400
     query = urlencode({"status": "eq." + status,
-        "select": "id,user_id,points,phone_snapshot,status,requested_at,reviewer_id,payment_reference,rejection_reason",
+        "select": "id,user_id,points,account_number_snapshot,status,requested_at,reviewer_id,payment_reference,rejection_reason",
         "order": "requested_at.desc,id.desc", "limit": 26, "offset": int(page) * 25})
     items = _rest("GET", "affiliate_claims?" + query)
     return jsonify(open=True, items=items[:25], more=len(items) > 25, admin_id=str(uid))

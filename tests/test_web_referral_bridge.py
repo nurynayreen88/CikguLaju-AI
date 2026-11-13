@@ -78,19 +78,23 @@ class WebReferralTests(unittest.TestCase):
 
     @patch("web.web_referral_routes._auth_uid", return_value=123)
     @patch("web.web_referral_routes._rpc")
-    def test_phone_confirmation_and_origin(self, rpc, _uid):
+    def test_account_confirmation_and_origin(self, rpc, _uid):
         client = self.make_app().test_client()
         path = "/api/web/affiliate/wallet"
-        body = {"phone": "+60 12-3456789", "confirmed": True, "user_id": 999}
+        body = {"account_number": "0012 3456-7890", "confirmed": True, "user_id": 999}
         self.assertEqual(client.post(path, json=body).status_code, 403)
         headers = {"Origin": WEB_ORIGIN}
         self.assertEqual(client.post(path, json={**body, "confirmed": False}, headers=headers).status_code, 400)
+        for invalid in ({"phone": "0123456789", "confirmed": True},
+                        {**body, "account_number": "0123456789"},
+                        {**body, "account_number": 123456789012}):
+            self.assertEqual(client.post(path, json=invalid, headers=headers).status_code, 400)
         rpc.assert_not_called()
         rpc.return_value = {"saved": True}
         response = client.post(path, json=body, headers=headers)
         self.assertEqual(response.status_code, 200)
         self.assertIn("no-store", response.headers["Cache-Control"])
-        rpc.assert_called_once_with("affiliate_save_wallet", p_user=123, p_phone="0123456789")
+        rpc.assert_called_once_with("affiliate_save_account", p_user=123, p_account_number="001234567890")
 
     @patch("web.web_referral_routes._auth_uid", return_value=123)
     @patch("web.web_referral_routes._rpc")
@@ -98,14 +102,14 @@ class WebReferralTests(unittest.TestCase):
         client = self.make_app().test_client()
         path = "/api/web/affiliate/claims"
         key = str(UUID(int=1))
-        body = {"phone": "01123456789", "confirmed": True, "points": "9.99", "key": key, "user_id": 999}
+        body = {"account_number": "001234567890", "confirmed": True, "points": "9.99", "key": key, "user_id": 999}
         headers = {"Origin": WEB_ORIGIN}
         self.assertEqual(client.post(path, json=body, headers=headers).status_code, 400)
         rpc.assert_not_called()
         rpc.return_value = {"id": key, "status": "pending"}
         self.assertEqual(client.post(path, json={**body, "points": "10.00"}, headers=headers).status_code, 201)
-        rpc.assert_called_once_with("affiliate_submit_claim", p_user=123, p_points="10.00",
-                                    p_phone="01123456789", p_key=key)
+        rpc.assert_called_once_with("affiliate_submit_account_claim", p_user=123, p_points="10.00",
+                                    p_account_number="001234567890", p_key=key)
 
     @patch("web.web_referral_routes._auth_uid", return_value=123)
     @patch("web.web_referral_routes.allowed_admin_ids", return_value={456})
