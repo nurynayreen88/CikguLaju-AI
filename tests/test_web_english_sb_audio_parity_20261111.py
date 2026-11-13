@@ -229,6 +229,32 @@ class WebEnglishSourceTests(unittest.TestCase):
                         "/api/web/rph/extra-materials", query_string=query
                     ).json["items"], [])
 
+    def test_science_existing_units_require_source_verified_page_marker(self):
+        unit = "u" + "a" * 24
+        for year, lesson, pages, indexes in (
+            (2, "SCI-Y2-PDP-004", "36–37", (41, 42)),
+            (3, "SCI-Y3-PDP-005", "38", (45, 45)),
+            (6, "ST6-PDP-089", "7–8", (13, 14)),
+        ):
+            with self.subTest(lesson=lesson), self.account(), patch(
+                "web.native_textbook_references.list_native_lessons"
+            ) as lookup, patch("web.native_textbook_references.build_opener") as storage:
+                query = dict(year=year, subject="SCIENCE", unit=unit, lesson=lesson)
+                row = {"value": lesson, "textbook_ref": f"Buku Teks m/s {pages}"}
+                lookup.return_value = [row]
+                route = "/api/web/rph/extra-materials"
+                if year in (2, 3):
+                    self.assertEqual(self.client.get(route, query_string=query).json["items"], [])
+                    row["science_copy_pages"] = pages
+                item, = self.client.get(route, query_string=query).json["items"]
+                self.assertEqual(item["action"], "local-pdf")
+                self.assertEqual((item["pdf"]["start"], item["pdf"]["end"]), indexes)
+                self.assertNotIn("url", item)
+                self.assertEqual(self.client.get(
+                    "/api/web/rph/science-textbook", query_string=query
+                ).status_code, 404)
+                storage.assert_not_called()
+
     def test_books_outside_the_checked_subset_do_not_call_native_source(self):
         with self.account(), patch("web.native_textbook_references.list_native_lessons") as science:
             for query in ({"year": 3, "subject": "SCIENCE", "unit": "u" + "b" * 24,

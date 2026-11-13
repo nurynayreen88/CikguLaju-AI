@@ -449,7 +449,7 @@
   }catch(_error){errors.push("Semakan RPH tidak dapat dihubungi.");}
   if(epoch!==batchEpoch||key!==selectedKey(c))return;
   if((c.slot.subject_code==="ENGLISH"&&[2,3,4,5,6].includes(c.slot.year))||
-      c.slot.subject_code==="MUZIK"||(c.slot.subject_code==="SCIENCE"&&[1,2,3,5].includes(c.slot.year))){
+      c.slot.subject_code==="MUZIK"||(c.slot.subject_code==="SCIENCE"&&[1,2,3,5,6].includes(c.slot.year))){
    try{
     const params=new URLSearchParams({year:args.year,subject:args.subject,unit:args.unit,lesson:args.lesson});
     const response=await fetch("/api/web/rph/extra-materials?"+params,{
