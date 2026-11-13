@@ -75,6 +75,22 @@ class SingleMenuTests(unittest.TestCase):
         self.assertEqual(sent, [])
         self.assertEqual(called, [(321, True)])
 
+    def test_existing_main_menu_web_button_gets_clearer_label_without_duplicate(self):
+        original = [
+            [{"text": "📚 Sediakan RPH", "callback_data": "quick"}],
+            [{"text": "🌐 BUKA CIKGULAJU WEB", "url": web_link_telegram.WEB_URL}],
+            [{"text": "👤 Profil Saya", "callback_data": "account"}],
+        ]
+        rt, sent, called = self.make_runtime(original, active=False)
+        rows = self.updated_rows(rt)
+        links = [b for row in rows for b in row
+                 if b.get("url") == web_link_telegram.WEB_URL]
+        self.assertEqual(links, [web_link_telegram.BUTTON])
+        self.assertEqual(sent, [])
+        self.assertEqual(called, [(321, True)])
+        self.assertEqual(sum(1 for row in rows for b in row
+                             if b.get("callback_data") == "quick"), 1)
+
     def test_no_duplicate_if_buttons_already_exist(self):
         original = [
             [{"text": "📚 Sediakan RPH", "callback_data": "quick"}],
