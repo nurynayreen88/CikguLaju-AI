@@ -26,7 +26,7 @@ def fake_runtime(*,active=True,missing_year=None):
             "sp_text":"Menyatakan bahagian asas tubuh manusia.",
         }]
     def units(rows):
-        return [(r["unit_code"],r["unit_title"]) for r in rows]
+        return list(dict.fromkeys((r["unit_code"],r["unit_title"]) for r in rows))
     def commit(state,items):
         state["sk_code"]=items[0]["sk_code"]
         state["sp_code"]=items[0]["sp_code"]
