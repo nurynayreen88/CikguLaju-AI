@@ -46,7 +46,7 @@ class TelegramWebMenuNoticeQA(unittest.TestCase):
         self.assertIn("Log masuk menggunakan Telegram.",body)
         self.assertIn("Baki janaan RPH dikongsi",body)
         self.assertIn("Cikgu digalakkan menggunakan Web untuk urusan lebih mudah",body)
-        self.assertIn("pilih Lesson/PdP, gunakan RPH Hari Ini",body)
+        self.assertIn("pilih Lesson/PdP, sediakan RPH berdasarkan jadual waktu",body)
         self.assertIn("RPT asas boleh dimuat turun percuma",body)
         self.assertIn("muka depan berprofil memerlukan akses berbayar.",body)
         self.assertEqual(body.count("🌐 <b>CIKGULAJU WEB SUDAH TERSEDIA</b>"),1)
