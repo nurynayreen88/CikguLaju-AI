@@ -770,9 +770,10 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <h3 id="affiliate-claim-heading">Claim Ganjaran</h3>
   <p>Baki tersedia <strong id="affiliate-available">—</strong> mata. Minimum 10 mata (RM10).</p>
   <form id="affiliate-wallet-form" class="teacher-profile-form">
-   <label for="affiliate-phone">Nombor Telefon Berdaftar TNG eWallet</label>
-   <input id="affiliate-phone" type="tel" inputmode="tel" autocomplete="off" maxlength="32" placeholder="01XXXXXXXX" required>
-   <label><input id="affiliate-confirm" type="checkbox" required> Saya mengesahkan nombor telefon berdaftar TNG eWallet ini betul.</label>
+   <label for="affiliate-account-number">Nombor Akaun TNG eWallet (DuitNow)</label>
+   <input id="affiliate-account-number" type="text" inputmode="numeric" autocomplete="off" maxlength="32" aria-describedby="affiliate-account-help" required>
+   <label><input id="affiliate-confirm" type="checkbox" required> Saya mengesahkan nombor akaun TNG eWallet ini betul.</label>
+   <p id="affiliate-account-help">Salin nombor 12 digit daripada Profil → DuitNow Account Number dalam aplikasi TNG eWallet.</p>
    <div class="profile-actions"><button type="submit" id="affiliate-save-wallet">Simpan Nombor</button></div>
   </form>
   <form id="affiliate-claim-form" class="teacher-profile-form" hidden>
@@ -1824,7 +1825,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/rph-today.js?v=science-copy-expanded-20261113"></script>
 <script src="/assets/teacher-profile.js?v=profile-guide-20261111"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
-<script src="/assets/web-referral.js?v=affiliate-claims-20261114"></script>
+<script src="/assets/web-referral.js?v=affiliate-duitnow-account-20261114"></script>
 <script src="/assets/admin-usage.js?v=private-menu-20261111"></script>
 <script src="/assets/web-feedback.js?v=comments-inbox-20261112"></script>
 <script src="/assets/special-activities.js?v=source-draft-20261106"></script>
