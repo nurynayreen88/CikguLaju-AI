@@ -4,23 +4,27 @@
 **Main SK/SP:** Listening 1.2 / 1.2.2
 **Complementary SK/SP:** Writing 4.3 / 4.3.3
 **Duration:** 60 minutes
-**References:** Student's Book p.29 Activity 3; Teacher's Book p.51; pupils' written slips from Lesson 41.
+**References:** Student's Book p.29, Activity 3. Teacher's Book p.51. Marked slips from Lesson 41.
+**Learning objective:** Identify specific actions in short spoken dialogues and revise the action clues drafted in Lesson 41.
+**Success criteria:** Match at least four of five spoken clues to the correct pictures and submit two revised or extended sentences with correct spelling and punctuation.
 
 ## Set Induction (5 minutes)
-Teacher reviews action vocabulary and present continuous sentences. Pupils identify actions.
+**Teacher:** Describe the p.29 picture aloud, including one incorrect detail.
+**Pupils:** Signal when they hear the incorrect detail and point to the action they see.
 
-## Activity 1 — Error spotting (15 minutes)
-Teacher describes the picture on Student's Book p.29 with deliberate factual mistakes. Pupils listen and stop the teacher when they hear an error.
+## Activity 1 — Listen for action details (15 minutes)
+**Teacher:** Lead Activity 3 using the listening text on Teacher's Book p.51. Pause after each dialogue and repeat for checking.
+**Pupils:** Listen and number the five pictured actions, then listen again to check their answers.
 
-## Activity 2 — Listening and revision (25 minutes)
-Teacher guides Activity 3 using Teacher's Book p.51. Pupils then retrieve marked descriptions from Lesson 41, correct errors and rewrite neat final sentences with accurate spelling and punctuation.
+## Activity 2 — Revise written clues (25 minutes)
+**Teacher:** Return the marked slips from Lesson 41 and model revising one action sentence.
+**Pupils:** Correct and rewrite their clues. Add a new clue if the original is accurate.
+**Workbook:** Match the pictured sports to the action phrases in Workbook p.20, Activity 1.
 
 ## PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.24, Activity 1; explain the printed task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.24, Activity 1, by correcting present continuous sentences about pictured actions.
-Teacher checks specific listening details and revised writing. Pupils explain one correction.
+**Teacher:** Check the five listening answers and two final written sentences.
+**Pupils:** Submit their answers and show one change or addition to their first draft.
 
 ## Closure (5 minutes)
-Pupils share one accurate sentence and reflect on improvements.
-
-**QA:** Official SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
+**Teacher:** Ask how revising helped make a clue easier to understand.
+**Pupils:** Read one revised sentence and explain what they improved.

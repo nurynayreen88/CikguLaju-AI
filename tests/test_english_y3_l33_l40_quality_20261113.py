@@ -11,7 +11,7 @@ from web.english_y2_y3_standard_runtime import enrich_rows
 ROOT = Path(__file__).resolve().parents[1]
 WORKBOOK_TASKS = {
     33: (18, 1), 34: (18, 2), 35: (19, 1), 36: (19, 2),
-    38: (19, 2), 39: (19, 2), 40: (20, 2),
+    38: (19, 2), 39: (19, 2), 40: (20, 2), 43: (20, 1), 44: (21, 2),
 }
 EVIDENCE = {
     33: ("two matching pictures", "visual clue"),
@@ -22,6 +22,10 @@ EVIDENCE = {
     38: ("two correct pictures", "visual clue"),
     39: ("one action", "help question"),
     40: ("main idea", "two answers"),
+    41: ("two picture matches", "two written sentences"),
+    42: ("contribution", "one clear description"),
+    43: ("five listening answers", "two final written sentences"),
+    44: ("one clear description", "three supported questions"),
 }
 
 
@@ -74,3 +78,11 @@ class RightNowQualityTests(unittest.TestCase):
                     self.assertNotIn("**", phase)
                 for phrase in evidence:
                     self.assertIn(phrase, rows["PENTAKSIRAN"].casefold())
+
+    def test_linked_writing_and_listening_sequence_uses_the_same_pupil_draft(self):
+        writing = apply({"subject": "English", "year": "Year 3", "lesson_no": 41}, {})
+        listening = apply({"subject": "English", "year": "Year 3", "lesson_no": 43}, {})
+        self.assertIn("Mark any errors in the slips for Lesson 43", writing["PENTAKSIRAN"])
+        self.assertIn("Return the marked slips from Lesson 41", listening["AKTIVITI UTAMA"])
+        self.assertIn("number the five pictured actions", listening["AKTIVITI UTAMA"])
+        self.assertNotIn("Workbook p.24", listening["AKTIVITI UTAMA"])
