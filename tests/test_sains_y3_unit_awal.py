@@ -34,7 +34,8 @@ class ScienceOpeningUnitTests(unittest.TestCase):
         self.assertEqual([r["sp_code"] for r in rows[1:]], list(SP))
         self.assertEqual(len({r["pdp_sequence_code"] for r in rows[1:]}), 9)
         self.assertIn(("2.1", "Peraturan Bilik Sains"), units)
-        self.assertEqual(_source(self.runtime, 4, "SCIENCE")[0], self.base)
+        self.assertTrue(all(not row.get("_sains_y3_opening_lesson")
+                            for row in _source(self.runtime, 4, "SCIENCE")[0]))
         self.assertEqual(add_opening_units([]), [])
 
     def test_existing_source_sk_and_pdp_codes_take_precedence(self):

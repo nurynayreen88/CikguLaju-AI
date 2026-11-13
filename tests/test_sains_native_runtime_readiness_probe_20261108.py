@@ -58,6 +58,8 @@ class ScienceProductionReadiness(unittest.TestCase):
         self.assertTrue(result["native_web_bridge_enabled"])
         self.assertEqual(set(result["years"]),{"2","3","4","5","6"})
         self.assertTrue(result["all_five_years_sample_ready"])
+        self.assertEqual(result["opening_unit_pdp_counts"]["1"], {"Kemahiran Saintifik": 4})
+        self.assertEqual(result["opening_unit_pdp_counts"]["6"], {"Kemahiran Saintifik": 5})
         self.assertEqual(result["academic_individual_approval_count"],0)
         self.assertFalse(result["new_342_academically_ready"])
         self.assertFalse(result["web_telegram_real_download_tested"])

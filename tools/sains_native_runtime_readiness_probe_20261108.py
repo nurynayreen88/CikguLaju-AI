@@ -9,7 +9,6 @@ from __future__ import annotations
 
 import json
 import os
-from collections import Counter
 
 from web.telegram_verified_sequence_rph_bridge import (
     _source, _unit_catalog, _pdp_groups, _build_state, _source_text,
@@ -31,12 +30,26 @@ def readiness(runtime):
             runtime,"CIKGULAJU_SAINS_342_INTERNAL_REVIEW_ACTIVE",False)),
         "academic_individual_approval_count":0,
         "authoring_new_rph_total":342,
+        "opening_unit_pdp_counts":{},
         "years":{},
     }
     try:
         result["academic_individual_approval_count"]=approved_count()
     except (OSError,ValueError,KeyError,TypeError) as exc:
         result["academic_registry_error"]=type(exc).__name__
+    for year in (1, *YEARS):
+        try:
+            rows, _ = _source(runtime, year, "SCIENCE")
+        except (ValueError, SourceUnavailable):
+            continue
+        opening = {}
+        for row in rows:
+            if row.get("_sains_opening_lesson") or row.get("_sains_y3_opening_lesson"):
+                unit = row["unit_title"]
+                opening.setdefault(unit, set()).add(row["pdp_sequence_code"])
+        result["opening_unit_pdp_counts"][str(year)] = {
+            unit: len(codes) for unit, codes in opening.items()
+        }
     for year in YEARS:
         status={
             "db_sequence_row_count":0,

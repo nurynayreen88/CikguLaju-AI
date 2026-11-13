@@ -19,6 +19,7 @@ from flask import Blueprint, Response, jsonify, request
 
 from web.native_rph_telegram_api import MIMES, compact_web_word_notes
 from web.rph_teacher_reflection import clean_reflection
+from web import sains_unit_awal
 from web.sains_y3_unit_awal import add_opening_units, lesson_text
 from web.telegram_verified_rpt_rph_bridge import (
     _authorization, _teacher_metadata, SourceUnavailable,
@@ -39,8 +40,8 @@ def _source(runtime, year, subject):
         raise SourceUnavailable("Telegram PdP sequence unavailable")
     try:
         rows = rows_reader(f"Tahun {year}", SUBJECTS[subject])
-        if year == 3 and subject == "SCIENCE" and isinstance(rows, list):
-            rows = add_opening_units(rows)
+        if subject == "SCIENCE" and isinstance(rows, list):
+            rows = add_opening_units(rows) if year == 3 else sains_unit_awal.add_opening_units(year, rows)
         units = units_reader(rows)
     except Exception as exc:
         raise SourceUnavailable("Native PdP sequence unavailable") from exc
@@ -187,6 +188,8 @@ def _build_state(runtime, year, subject, unit_token, pdp_code, teacher):
     }
     if first.get("_sains_y3_opening_lesson"):
         state["_sains_y3_opening_lesson"] = True
+    if first.get("_sains_opening_lesson"):
+        state["_sains_opening_lesson"] = True
     group = getattr(runtime, "_commit_multi_sp", None)
     if not callable(group):
         raise SourceUnavailable("Native grouped SP resolver unavailable")
@@ -200,6 +203,8 @@ def _build_state(runtime, year, subject, unit_token, pdp_code, teacher):
 def _source_text(runtime, state):
     if state.get("_sains_y3_opening_lesson"):
         return lesson_text(state["pdp_sequence_code"])
+    if state.get("_sains_opening_lesson"):
+        return sains_unit_awal.lesson_text(state["pdp_sequence_code"])
     local = getattr(runtime, "_local_rph_text", None)
     if not callable(local):
         raise SourceUnavailable("Native Telegram lesson text unavailable")
