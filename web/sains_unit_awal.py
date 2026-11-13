@@ -276,7 +276,7 @@ LESSONS = (
            "Guru menyemak ketiga-tiga jenis pemboleh ubah dan hipotesis yang boleh diuji.",
            "Murid menyatakan kesan mengubah lebih daripada satu faktor serentak.",
            "Beri jadual perancangan. Murid lanjutan mencadangkan cara menyeragamkan saiz belon.", year=6),
-    Lesson(89, ("1.1.12",), "Menguji kesan jisim pada jarak pergerakan", "8–9",
+    Lesson(89, ("1.1.12",), "Menguji kesan jisim pada jarak pergerakan", "7–8",
            "Mengukur jarak bagi dua jisim, merekod ulangan dan melaporkan kesimpulan yang disokong data.",
            "Kereta belon siap bina, pemberat ringan, pita ukuran dan jadual.",
            "Guru menyemak titik mula, pemboleh ubah dimalarkan dan peranan ahli kumpulan.",
