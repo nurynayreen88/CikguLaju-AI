@@ -209,6 +209,8 @@
  async function advance(c,from){
   c.rev++;
   clearAfter(c,from);
+  c.reflection.value="";
+  c.reflectionPanel.open=false;
   const code=c.slot.subject_code,control=c.controls;
   if(from==="lesson"){
    const chosen=control.lesson.selectedOptions[0];
@@ -307,7 +309,18 @@
    else countHint.textContent=count===0?"Senarai murid sesi "+schoolYear+" masih kosong. Guru boleh isi jumlah di sini.":
     "Rekod PBD belum dapat disemak. Guru boleh isi jumlah di sini.";
   });
-  c.editor.append(c.bookRef,c.message,countLabel,c.students,countHint);
+  c.reflectionPanel=create("details","rph-reflection");
+  c.reflection=create("textarea");
+  c.reflection.rows=3;
+  c.reflection.maxLength=500;
+  c.reflection.id="daily-rph-reflection-"+index;
+  const reflectionLabel=create("label","","Refleksi guru");
+  reflectionLabel.htmlFor=c.reflection.id;
+  const reflectionHint=create("p","notice","Maksimum 500 aksara dan 6 baris. Biarkan kosong untuk menggunakan ruangan refleksi sedia ada.");
+  reflectionHint.id=c.reflection.id+"-hint";
+  c.reflection.setAttribute("aria-describedby",reflectionHint.id);
+  c.reflectionPanel.append(create("summary","","Tulis refleksi sendiri (pilihan)"),reflectionLabel,c.reflection,reflectionHint);
+  c.editor.append(c.bookRef,c.message,countLabel,c.students,countHint,c.reflectionPanel);
   card.append(c.editor);
   // Result cards are deliberately NOT appended inside the selection cards.
   // They are rendered in a single output area after the *entire* timetable.
@@ -474,9 +487,7 @@
   button.disabled=true;
   c.downloadStatus.textContent="Menjana RPH "+format.toUpperCase()+" menggunakan penjana Telegram…";
   try{
-   const response=await fetch("/api/web/rph/"+format+"?"+expected,{
-    credentials:"same-origin",cache:"no-store",redirect:"error"
-   });
+   const response=await fetch("/api/web/rph/"+format+"?"+expected,rphDownloadOptions(c.reflection.value));
    if(!response.ok){
     const body=await response.json().catch(()=>({}));
     throw Error(body.error||"Muat turun RPH gagal (HTTP "+response.status+").");

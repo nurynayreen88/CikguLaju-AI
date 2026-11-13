@@ -54,6 +54,29 @@ class UnifiedWebRPHTests(unittest.TestCase):
     @patch("web.unified_rph_web._account", return_value=(None, ({"error": "Login required"}, 401)))
     def test_non_authenticated_read_rejected(self, _):
         self.assertEqual(self.client.get("/api/web/rph/preview").status_code, 401)
+        self.assertEqual(self.client.post("/api/web/rph/pdf",json={"reflection":"Contoh"}).status_code,401)
+
+    @patch("web.unified_rph_web._has_paid_access", return_value=True)
+    @patch("web.unified_rph_web._account", return_value=({"telegram_user_id":123},None))
+    def test_custom_reflection_passes_only_in_download_body(self, *_):
+        row=source_records(4,"ENGLISH")[0]
+        args={"year":4,"subject":"ENGLISH","unit":row["unit"],"lesson":row["token"]}
+        reflection="24 murid mencapai objektif.\nLatihan susulan."
+        with patch("web.native_telegram_rph_client.request_native_rph",
+                   side_effect=lambda _, fmt: BytesIO(fmt.encode())) as native:
+            for fmt in ("word","pdf"):
+                path="/api/web/rph/"+fmt
+                response=self.client.post(path,query_string=args,json={"reflection":" "+reflection+" "})
+                self.assertEqual(response.status_code,200,response.get_json())
+                self.assertEqual(native.call_args.args[0]["teacher"]["reflection"],reflection)
+                response=self.client.get(path,query_string=args)
+                self.assertEqual(response.status_code,200)
+                self.assertNotIn("reflection",native.call_args.args[0]["teacher"])
+                native.reset_mock()
+                for bad in (None,"x"*501,"a\n"*6+"a"):
+                    response=self.client.post(path,query_string=args,json={"reflection":bad})
+                    self.assertEqual(response.status_code,400)
+                native.assert_not_called()
 
     @patch("web.unified_rph_web._has_paid_access", return_value=False)
     @patch("web.unified_rph_web._account", return_value=(

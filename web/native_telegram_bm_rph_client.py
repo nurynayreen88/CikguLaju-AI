@@ -10,6 +10,7 @@ from urllib.parse import urlencode
 from urllib.request import Request, build_opener, HTTPSHandler
 from urllib.error import HTTPError, URLError
 from zipfile import ZipFile, BadZipFile
+from web.rph_teacher_reflection import valid_teacher_fields
 
 from web.native_telegram_rph_client import (
     NativeRPHUnavailable, BlockRedirects, MIMES, MAX_DOCUMENT,
@@ -65,13 +66,12 @@ def request_native_bm_rph(selected, fmt, *, opener=None):
     args = _selection(selected.get("year"), selected.get("unit"),
                       selected.get("lesson"))
     teacher = selected.get("teacher")
-    if not isinstance(teacher, dict) or set(teacher) != {
-            "class", "date", "time", "students"}:
+    if not valid_teacher_fields(teacher):
         raise ValueError("Invalid BM teacher metadata")
     payload = json.dumps({
         "selection": args, "teacher": teacher, "format": fmt,
     }, ensure_ascii=False).encode("utf-8")
-    if len(payload) > 3500:
+    if len(payload) > 7000:
         raise NativeRPHUnavailable("BM request oversized")
     base, secret = _backend()
     req = Request(base + "/internal/rph/v1/bm-sequence/render",

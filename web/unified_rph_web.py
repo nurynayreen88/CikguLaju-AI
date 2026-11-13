@@ -20,6 +20,7 @@ from zipfile import ZIP_DEFLATED, ZipFile
 from flask import Blueprint, g, jsonify, request, send_file
 
 from web.english_rpt_2027_http import _account, _has_paid_access
+from web.rph_teacher_reflection import clean_reflection
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "audits/english_primary_2_6_official_sow_index_20261103.json"
@@ -531,7 +532,7 @@ def create_blueprint():
         resp.headers["Vary"] = "Cookie"
         return resp
 
-    def selected_rph(*, require_generation_access=True, fill_roster_count=False):
+    def selected_rph(*, require_generation_access=True, for_download=False):
         """Authenticate every request; check quota only for actual paid/trial
         preview and document generation, not read-only source availability.
         No RPH content or file bytes leave the availability endpoint.
@@ -561,7 +562,22 @@ def create_blueprint():
             teacher = _teacher_context()
         except (ValueError, TypeError):
             return None, (jsonify({"error": "Pilihan Tahun/Subjek/Unit/PdP tidak sah"}), 400)
-        if fill_roster_count:
+        if for_download and request.method == "POST":
+            body = request.get_json(silent=True) if (
+                request.is_json and 0 < (request.content_length or 0) <= 8192
+            ) else None
+            try:
+                if not isinstance(body, dict) or set(body) != {"reflection"}:
+                    raise ValueError("Invalid reflection request")
+                reflection = clean_reflection(body["reflection"])
+            except ValueError:
+                return None, (jsonify({
+                    "error": "Semak refleksi. Hadnya 500 aksara dan 6 baris.",
+                    "code": "INVALID_RPH_REFLECTION",
+                }), 400)
+            if reflection:
+                teacher["reflection"] = reflection
+        if for_download:
             _fill_roster_count(teacher, account)
         # BM's REAL Telegram flow uses verified_pdp_sequence, NOT rpt_entries.
         # Never reinterpret an opaque BM PdP token as an RPT row ID.
@@ -857,9 +873,9 @@ def create_blueprint():
                 "remaining": charged["remaining"]}), 403), None
         return document, None, charged["remaining"]
 
-    @bp.get("/api/web/rph/word")
+    @bp.route("/api/web/rph/word", methods=["GET", "POST"])
     def word():
-        selected, err = selected_rph(fill_roster_count=True)
+        selected, err = selected_rph(for_download=True)
         if err is not None:
             return err
         document, error, trial_remaining = _native_document(selected, "word")
@@ -878,9 +894,9 @@ def create_blueprint():
             response.headers["X-RPH-Trial-Remaining"] = str(trial_remaining)
         return response
 
-    @bp.get("/api/web/rph/pdf")
+    @bp.route("/api/web/rph/pdf", methods=["GET", "POST"])
     def pdf():
-        selected, err = selected_rph(fill_roster_count=True)
+        selected, err = selected_rph(for_download=True)
         if err is not None:
             return err
         document, error, trial_remaining = _native_document(selected, "pdf")

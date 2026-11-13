@@ -12,6 +12,7 @@ from urllib.parse import urlencode
 from urllib.request import Request, build_opener, HTTPSHandler
 from urllib.error import HTTPError, URLError
 from zipfile import ZipFile, BadZipFile
+from web.rph_teacher_reflection import valid_teacher_fields
 
 from web.native_telegram_rph_client import (
     NativeRPHUnavailable, BlockRedirects, MIMES, MAX_DOCUMENT,
@@ -105,12 +106,12 @@ def request_rbt_rph(selection,fmt,*,opener=None):
     lesson=selection.get("lesson")
     _validate(year,unit,lesson)
     teacher=selection.get("teacher")
-    if (type(teacher) is not dict or set(teacher)!={"class","date","time","students"}
+    if (not valid_teacher_fields(teacher)
         or any(type(v) is not str for v in teacher.values())):
         raise ValueError("Invalid RBT teacher context")
     body=json.dumps({"selection":{"year":year,"unit":unit,"lesson":lesson},
                      "teacher":teacher,"format":fmt},ensure_ascii=False).encode("utf-8")
-    if len(body)>4000:
+    if len(body)>7000:
         raise ValueError("Oversized RBT source selection")
     base,token=_backend()
     req=Request(base+ROOT+"render",data=body,method="POST",
