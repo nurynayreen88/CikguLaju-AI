@@ -79,7 +79,7 @@ LESSONS = (
            "Semak enam kad dan dua label. Minta murid menjelaskan ciri sepunya yang digunakan.",
            "Murid menunjukkan bagaimana kad yang sama boleh dikelaskan semula menggunakan ciri lain.",
            "Sediakan dua label ciri untuk dipilih. Murid yang sudah menguasai kemahiran mengelaskan semula kad mengikut bentuk."),
-    Lesson(48, ("1.1.3",), "Mengukur panjang dalam sentimeter", "6–8",
+    Lesson(48, ("1.1.3",), "Mengukur panjang dalam sentimeter", "6–7",
            "Mengukur panjang tiga jalur dengan pembaris dan merekod bacaan dalam sentimeter.",
            "Pembaris, jalur kad yang panjangnya dalam sentimeter bulat, jadual rekod.",
            "Guru menunjukkan dua jalur. Murid menganggar jalur yang lebih panjang.",
