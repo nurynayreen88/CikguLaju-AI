@@ -24,10 +24,11 @@ class Lesson:
     assessment: str
     closure: str
     follow_up: str
+    year: int = 3
 
     @property
     def code(self):
-        return f"ST3-PDP-{self.number:03d}"
+        return f"ST{self.year}-PDP-{self.number:03d}"
 
     @property
     def sk(self):
@@ -172,12 +173,15 @@ def add_opening_units(rows):
 
 
 def lesson_text(code):
-    lesson = LESSON_BY_CODE[code]
+    return plan_text(LESSON_BY_CODE[code], SP)
+
+
+def plan_text(lesson, standards):
     return "\n".join((
         f"TAJUK: {lesson.title}",
         f"STANDARD KANDUNGAN: {lesson.sk} {SK[lesson.sk]}",
         "STANDARD PEMBELAJARAN: " + "\n".join(
-            f"{sp} {SP[sp]}" for sp in lesson.standards),
+            f"{sp} {standards[sp]}" for sp in lesson.standards),
         f"OBJEKTIF PEMBELAJARAN: {lesson.objective}",
         f"KRITERIA KEJAYAAN: {lesson.objective}",
         f"BAHAN BANTU MENGAJAR: {lesson.materials} Buku Teks m/s {lesson.pages}.",
@@ -187,6 +191,23 @@ def lesson_text(code):
         f"PENUTUP: {lesson.closure}",
         f"PEMULIHAN / PENGAYAAN: {lesson.follow_up}",
     ))
+
+
+def plan_rows(result, plan, standards):
+    return {
+        **result,
+        "STANDARD KANDUNGAN": f"{plan.sk} {SK[plan.sk]}",
+        "STANDARD PEMBELAJARAN": "\n".join(f"{sp} {standards[sp]}" for sp in plan.standards),
+        "OBJEKTIF PEMBELAJARAN": "Murid dapat " + plan.objective[0].lower() + plan.objective[1:],
+        "KRITERIA KEJAYAAN": plan.objective,
+        "BAHAN BANTU MENGAJAR": f"{plan.materials} Buku Teks m/s {plan.pages}.",
+        "KBAT / PAK21": SK[plan.sk],
+        "PENTAKSIRAN": plan.assessment,
+        "SET INDUKSI": plan.induction,
+        "AKTIVITI UTAMA": f"Aktiviti 1 – {plan.guided}\nAktiviti 2 – {plan.independent}",
+        "PENUTUP": plan.closure,
+        "PEMULIHAN / PENGAYAAN": plan.follow_up,
+    }
 
 
 def install(runtime):
@@ -199,21 +220,7 @@ def install(runtime):
         result = previous(state, *args, **kwargs)
         if not state.get("_sains_y3_opening_lesson"):
             return result
-        plan = LESSON_BY_CODE[state["pdp_sequence_code"]]
-        return {
-            **result,
-            "STANDARD KANDUNGAN": f"{plan.sk} {SK[plan.sk]}",
-            "STANDARD PEMBELAJARAN": "\n".join(f"{sp} {SP[sp]}" for sp in plan.standards),
-            "OBJEKTIF PEMBELAJARAN": "Murid dapat " + plan.objective[0].lower() + plan.objective[1:],
-            "KRITERIA KEJAYAAN": plan.objective,
-            "BAHAN BANTU MENGAJAR": f"{plan.materials} Buku Teks m/s {plan.pages}.",
-            "KBAT / PAK21": SK[plan.sk],
-            "PENTAKSIRAN": plan.assessment,
-            "SET INDUKSI": plan.induction,
-            "AKTIVITI UTAMA": f"Aktiviti 1 – {plan.guided}\nAktiviti 2 – {plan.independent}",
-            "PENUTUP": plan.closure,
-            "PEMULIHAN / PENGAYAAN": plan.follow_up,
-        }
+        return plan_rows(result, LESSON_BY_CODE[state["pdp_sequence_code"]], SP)
 
     runtime._rph_rows = rows
     return True

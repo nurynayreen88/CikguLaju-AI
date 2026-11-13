@@ -658,7 +658,9 @@ except Exception as _web_broadcast_exc:
 # Word/PDF field builder, and never creates documents or touches user credits.
 # All 342 newly authored Science RPH remain DRAF/HOLD until per-PdP signoff.
 from web.sains_y3_unit_awal import install as install_sains_y3_opening_units
+from web.sains_unit_awal import install as install_sains_opening_units
 install_sains_y3_opening_units(telegram_runtime)
+install_sains_opening_units(telegram_runtime)
 
 try:
     from tools.sains_native_runtime_readiness_probe_20261108 import (
