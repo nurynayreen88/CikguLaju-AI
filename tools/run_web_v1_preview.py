@@ -131,8 +131,9 @@ def options():
                     shared_subjects = source.list_subjects(year)
                     if kind == "subjects":
                         items = [
-                            {**row, "label": "Bahasa Inggeris (KSSR Semakan 2017)"}
-                            if year == 1 and row.get("value") == "ENGLISH" else row
+                            {**row, "label": ("Bahasa Inggeris (SK) · KSSR Semakan 2017"
+                                              if year == 1 else "Bahasa Inggeris (SK)")}
+                            if row.get("value") == "ENGLISH" else row
                             for row in shared_subjects
                         ]
                         if year in range(2, 7):

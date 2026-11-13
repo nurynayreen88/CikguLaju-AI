@@ -20,7 +20,7 @@ YEARS = tuple(range(2,7))
 V2 = "web_2027_pdfs"
 # (Label, allowed years, legacy folder, legacy exact filename, legacy status)
 SUBJECTS = {
-    "english": ("English", YEARS, "english", "RPT_ENGLISH_TAHUN_%d_2027_UNTUK_GURU.pdf", "TERSEDIA"),
+    "english": ("English (SK)", YEARS, "english", "RPT_ENGLISH_TAHUN_%d_2027_UNTUK_GURU.pdf", "TERSEDIA"),
     "bahasa_melayu": ("Bahasa Melayu", YEARS, "bahasa_melayu", "RPT_Bahasa_Melayu_Tahun_%d_2027_DRAF.pdf", "DRAF"),
     "matematik": ("Matematik", YEARS, "matematik", "RPT_Matematik_Tahun_%d_2027_v28_SEMENTARA.pdf", "SEMENTARA"),
     "sains": ("Sains", YEARS, None, None, "SEPARA DRAF"),
