@@ -4,12 +4,13 @@
 
  function createAction(item, status) {
   const spec = item?.pdf;
+  const maxPages = 6;
   if (item?.type !== "textbook" || item.action !== "local-pdf" || !spec ||
       !Number.isInteger(spec.size) || spec.size <= 0 || spec.size > 110000000 ||
       !/^[a-f0-9]{64}$/.test(spec.sha256) ||
       !Number.isInteger(spec.start) || !Number.isInteger(spec.end) ||
-      spec.start < 0 || spec.end < spec.start || spec.end - spec.start > 3 ||
-      !/^CikguLaju_Sains_ST[23]-PDP-\d{3}_ms_\d{1,2}-\d{1,2}\.pdf$/.test(spec.filename) ||
+      spec.start < 0 || spec.end < spec.start || spec.end - spec.start + 1 > maxPages ||
+      !/^CikguLaju_Sains_ST[1235]-PDP-\d{3}_ms_\d{1,2}-\d{1,2}\.pdf$/.test(spec.filename) ||
       typeof spec.source !== "string" || typeof spec.authors !== "string") return null;
 
   return () => {

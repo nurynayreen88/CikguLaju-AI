@@ -940,8 +940,12 @@ def create_blueprint():
             if len(found) != 1:
                 raise ValueError("English Lesson identity mismatch")
             return year, sub, unit, lesson, found[0]["lesson"]
-        if (sub == "MUZIK" and year in range(2, 7)) or (sub == "SCIENCE" and year in (2, 3)):
+        if sub == "MUZIK" and year in range(2, 7):
             return year, sub, unit, lesson, None
+        if sub == "SCIENCE":
+            from web.native_textbook_references import SCIENCE_PAGES
+            if year in SCIENCE_PAGES:
+                return year, sub, unit, lesson, None
         raise ValueError("No verified source for optional resources")
 
     @bp.get("/api/web/rph/extra-materials")
