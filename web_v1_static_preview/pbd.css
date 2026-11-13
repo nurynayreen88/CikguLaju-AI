@@ -1,0 +1,14 @@
+#view-pbd fieldset,#pbd-editor{border:1px solid #d9e5ee;border-radius:12px;margin:1rem 0;padding:1rem;min-inline-size:0}
+#view-pbd [hidden]{display:none!important}
+#view-pbd legend,#view-pbd summary{font-weight:700}
+#view-pbd summary{cursor:pointer}
+#view-pbd .pbd-fields,#view-pbd .pbd-student-fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:.7rem;align-items:end}
+#view-pbd label{display:block;font-weight:600}
+#view-pbd input:not([type=checkbox]),#view-pbd select,#view-pbd textarea{width:100%;max-width:100%;box-sizing:border-box;margin:.25rem 0;padding:.55rem;border:1px solid #9fb3c3;border-radius:6px;background:#fff;color:#18334b;font:inherit}
+#view-pbd .pbd-actions{display:flex;gap:.5rem;flex-wrap:wrap;align-items:end;margin:.8rem 0}
+#view-pbd button{width:auto;min-width:0;margin:0}
+#view-pbd .pbd-student{border-top:1px solid #d9e5ee;padding:.65rem 0}
+#view-pbd .pbd-student>label{margin-bottom:.35rem}
+#view-pbd #pbd-history{padding-left:1.25rem}
+#view-pbd #pbd-history li{margin:.5rem 0}
+#view-pbd #pbd-history li a{margin-left:.75rem}

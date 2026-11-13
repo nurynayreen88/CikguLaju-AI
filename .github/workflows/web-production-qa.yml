@@ -18,9 +18,13 @@ on:
       - 'tests/test_web_direct_telegram_registration.py'
       - 'tests/test_web_production_inventory.py'
       - 'tests/test_web_unified_rph_preview.py'
+      - 'tests/test_web_pbd.py'
       - 'rph_standalone/**'
   pull_request:
     paths:
+      - 'web/pbd_*.py'
+      - 'web_v1_static_preview/pbd.*'
+      - 'tests/test_web_pbd.py'
       - 'web_v1_static_preview/index.html'
       - 'web_v1_static_preview/teacher-profile.js'
       - 'tests/test_web_teacher_avatar_picker.py'
@@ -41,6 +45,9 @@ jobs:
       - name: Run source, auth, RPH and document unit tests
         run: |
           python -m py_compile tools/run_web_production.py tools/run_web_v1_preview.py web/unified_rph_web.py web_v1_telegram_login.py
+          python -m unittest discover -s tests -p 'test_web_pbd.py' -v
+          node tests/test_web_upcoming_materials_menu_20261112.cjs
+          node --check web_v1_static_preview/pbd.js
           python -m unittest discover -s tests -p 'test_web_production_inventory.py' -v
           python -m unittest discover -s tests -p 'test_web_unified_rph_preview.py' -v
           python -m unittest discover -s tests -p 'test_web_v1_quick_preview.py' -v

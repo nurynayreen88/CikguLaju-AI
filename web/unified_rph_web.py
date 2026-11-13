@@ -713,6 +713,27 @@ def create_blueprint():
                            "formats": selected["formats"]})
         return jsonify(result)
 
+    @bp.get("/api/web/rph/pbd-context")
+    def pbd_context():
+        """Reuse only the assessment fields from an accessible RPH preview."""
+        selected, err = selected_rph(require_generation_access=False)
+        if err is not None:
+            return err
+        if not g.cikgulaju_rph_paid:
+            return jsonify({})
+        header = {item["label"]: item["value"]
+                  for item in selected.get("telegram_layout", {}).get("header", [])}
+        def field(*labels, limit):
+            return " / ".join(header[label] for label in labels
+                              if header.get(label) not in (None, "", "—"))[:limit]
+        return jsonify({
+            "sk": field("Main Content Standard", "Complementary Content Standard",
+                        "Standard Kandungan", limit=200),
+            "sp": field("Main Learning Standard", "Complementary Learning Standard",
+                        "Standard Pembelajaran", limit=200),
+            "criteria1": field("Assessment", "Pentaksiran", limit=450),
+        })
+
     @bp.get("/api/web/rph/preview")
     def preview():
         selected, err = selected_rph()

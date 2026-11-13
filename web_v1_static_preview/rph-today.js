@@ -389,6 +389,12 @@
    const data=await availability.json().catch(()=>({}));
    if(epoch!==batchEpoch||key!==selectedKey(c))return;
    if(availability.ok&&data.available===true&&data.generator==="telegram-native"){
+    const pbd=actionRow("Pentaksiran Bilik Darjah","Rekod PBD");
+    pbd.button.addEventListener("click",()=>window.cikgulajuPbdFromRph?.({
+      className:c.slot.class_name,date:loadedDate,subject:c.slot.subject,
+      lesson:c.controls.lesson.selectedOptions[0]?.textContent||""
+    },args));
+    c.resultList.append(pbd.li);found++;
     const formats=Array.isArray(data.formats)?data.formats.filter(f=>["pdf","word"].includes(f)):["pdf","word"];
     for(const format of ["pdf","word"]){
      if(!formats.includes(format))continue;
