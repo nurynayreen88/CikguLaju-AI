@@ -291,6 +291,14 @@ def _psv_records(year):
         return []
 
 def source_records(year, subject, component=None):
+    if type(year) is int and year == 1 and subject == "ENGLISH" and component in (None, ""):
+        from web.english_y1_kssr_rph import PLANS, UNIT
+        return [
+            {"unit": UNIT, "label": plan.title, "lesson": number,
+             "token": f"e-1-{number:03d}", "status": "KSSR SEMAKAN 2017",
+             "textbook_ref": plan.textbook_ref, "fields": plan.fields()}
+            for number, plan in PLANS.items()
+        ]
     if type(year) is not int or year not in range(2, 7):
         return []
     if subject == "ENGLISH" and component in (None, ""):
@@ -399,9 +407,11 @@ def verified_preview(year, subject, unit, token, component=None):
     if len(matching) != 1:
         return None
     row = matching[0]
-    if row["path"] is None:
+    if subject == "ENGLISH" and year == 1:
+        fields = row["fields"]
+    elif row["path"] is None:
         return None
-    if subject == "ENGLISH" and year == 6:
+    elif subject == "ENGLISH" and year == 6:
         # Same strict official SOW + overlay source already used by Web's
         # existing Year 6 RPH reader, not a generic RPT template.
         from web.english_y6_rph_2027_http import source_rows, FIELDS
