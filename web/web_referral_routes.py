@@ -296,6 +296,17 @@ def affiliate_admin_list():
     return jsonify(open=True, items=items[:25], more=len(items) > 25, admin_id=str(uid))
 
 
+@bp.get("/api/web/admin/affiliate/members")
+def affiliate_admin_members():
+    _, error = _affiliate_identity(admin=True)
+    if error is not None:
+        return error
+    page = request.args.get("page", "0")
+    if not re.fullmatch(r"[0-9]{1,5}", page):
+        return jsonify(error="Halaman tidak sah."), 400
+    return _claim_result(_rpc("affiliate_admin_members", p_page=int(page), p_page_size=25))
+
+
 @bp.post("/api/web/admin/affiliate/claims/<uuid:claim_id>")
 def affiliate_admin_review(claim_id):
     uid, error = _affiliate_identity(admin=True, write=True)

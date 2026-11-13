@@ -764,11 +764,12 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <label for="web-referral-link">Pautan Referral Web</label>
   <input id="web-referral-link" type="text" readonly style="width:100%;padding:12px;border:1px solid #c4d7e2;border-radius:10px;font:inherit" />
   <div class="profile-actions"><button type="button" id="web-referral-copy">📋 Salin Pautan</button><button type="button" id="web-referral-share">📤 Kongsi Pautan</button></div>
-  <p>Rakan mendaftar: <strong id="web-referral-signups">0</strong> · Bayaran layak: <strong id="web-referral-paid">0</strong> · Mata: <strong id="web-referral-points">0.00</strong></p>
+  <p>Rakan mendaftar: <strong id="web-referral-signups">0</strong> · Bayaran layak: <strong id="web-referral-paid">0</strong></p>
+  <p>Baki mata: <strong id="affiliate-balance">—</strong> · Dalam tuntutan: <strong id="affiliate-reserved">—</strong> · Dibayar: <strong id="affiliate-paid">—</strong></p>
  </div>
  <section id="web-affiliate-claim" class="teacher-timetable-section" aria-labelledby="affiliate-claim-heading" hidden>
   <h3 id="affiliate-claim-heading">Claim Ganjaran</h3>
-  <p>Baki tersedia <strong id="affiliate-available">—</strong> mata. Minimum 10 mata (RM10).</p>
+  <p>Baki boleh dituntut <strong id="affiliate-available">—</strong> mata. Minimum 10 mata (RM10).</p>
   <form id="affiliate-wallet-form" class="teacher-profile-form">
    <label for="affiliate-account-number">Nombor Akaun TNG eWallet (DuitNow)</label>
    <input id="affiliate-account-number" type="text" inputmode="numeric" autocomplete="off" maxlength="32" aria-describedby="affiliate-account-help" required>
@@ -858,15 +859,25 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <button type="button" id="web-admin-refresh">🔄 Muat Semula Statistik</button>
 <section id="affiliate-admin" class="teacher-timetable-section" aria-labelledby="affiliate-admin-heading" hidden>
  <h3 id="affiliate-admin-heading">Pengurusan Affiliate</h3>
- <label for="affiliate-admin-filter">Status tuntutan</label>
- <select id="affiliate-admin-filter">
-  <option value="pending">Menunggu</option><option value="processing">Dalam Proses</option>
-  <option value="paid">Dibayar</option><option value="rejected">Ditolak</option>
- </select>
- <button id="affiliate-admin-refresh" type="button">Muat Semula Tuntutan</button>
- <p id="affiliate-admin-status" role="status" aria-live="polite"></p>
- <div id="affiliate-admin-list"></div>
- <button id="affiliate-admin-more" type="button" hidden>Lagi Tuntutan</button>
+ <h4>Senarai Affiliate dan Baki Mata</h4>
+ <button id="affiliate-admin-refresh" type="button">Muat Semula Rekod Affiliate</button>
+ <p id="affiliate-members-status" role="status" aria-live="polite"></p>
+ <ul id="affiliate-members-list"></ul>
+ <div class="profile-actions">
+  <button id="affiliate-members-prev" type="button" hidden>Halaman Sebelum</button>
+  <button id="affiliate-members-next" type="button" hidden>Halaman Seterusnya</button>
+ </div>
+ <div id="affiliate-admin-claims">
+  <h4>Tuntutan Ganjaran</h4>
+  <label for="affiliate-admin-filter">Status tuntutan</label>
+  <select id="affiliate-admin-filter">
+   <option value="pending">Menunggu</option><option value="processing">Dalam Proses</option>
+   <option value="paid">Dibayar</option><option value="rejected">Ditolak</option>
+  </select>
+  <p id="affiliate-admin-status" role="status" aria-live="polite"></p>
+  <div id="affiliate-admin-list"></div>
+  <button id="affiliate-admin-more" type="button" hidden>Lagi Tuntutan</button>
+ </div>
 </section>
 <section class="teacher-timetable-section" aria-labelledby="web-feedback-admin-heading">
  <h3 id="web-feedback-admin-heading">💬 Komen &amp; Cadangan Pengguna</h3>
@@ -1825,7 +1836,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/rph-today.js?v=science-copy-expanded-20261113"></script>
 <script src="/assets/teacher-profile.js?v=profile-guide-20261111"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
-<script src="/assets/web-referral.js?v=affiliate-duitnow-account-20261114"></script>
+<script src="/assets/web-referral.js?v=affiliate-balances-20261114"></script>
 <script src="/assets/admin-usage.js?v=private-menu-20261111"></script>
 <script src="/assets/web-feedback.js?v=comments-inbox-20261112"></script>
 <script src="/assets/special-activities.js?v=source-draft-20261106"></script>
