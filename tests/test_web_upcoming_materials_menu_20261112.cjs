@@ -16,7 +16,6 @@ const features=[
  ["worksheet","Lembaran Kerja"],
  ["bbm","BBM &amp; Aktiviti"],
  ["uasa","Latihan UASA"],
- ["pbd","Rekod PBD"],
  ["kp2027","KP2027 • Tahun 1"],
 ];
 const locations=features.map(([id,label])=>{
@@ -80,7 +79,8 @@ for(const feature of locations){
  assert.match(feature.content,/tanpa bayaran tambahan/);
  assert.match(feature.content,/pilih menu <strong>Rakan Pembangun<\/strong>/);
 }
-assert.match(locations.find(x=>x.id==="pbd").content,/tidak mengumpulkan atau menyimpan maklumat murid/);
+assert.match(nav, /class="sidebar-tab" data-web-view="pbd"/);
+assert.match(source, /id="pbd-save-roster"/);
 assert.match(locations.find(x=>x.id==="kp2027").content,/RPT 2027/);
 for(const name of ["today","rph","special","rpt","account","payment","referral","feedback","admin","guide"]){
  assert.ok(source.includes('["'+name+'","view-'+name+'"]'),
@@ -93,4 +93,4 @@ assert.match(source,/function showWebView\(name\)/);
 const scripts=[...source.matchAll(/<script>([\s\S]*?)<\/script>/g)];
 assert.equal(scripts.length,1,"Keep one native inline JS script");
 new vm.Script(scripts[0][1],"web JS must parse");
-console.log("WEB_PLANNED_MENUS: PASS (five native sidebar slots, badges, six visual previews, no fake downloads)");
+console.log("WEB_PLANNED_MENUS: PASS (four planned sidebar slots, badges, six visual previews, no fake downloads)");

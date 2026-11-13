@@ -412,6 +412,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .web-feedback-card-top small,.web-feedback-owner{color:#60788e}
 .web-feedback-text{white-space:pre-wrap;margin:10px 0 0;line-height:1.55}
 </style>
+<link rel="stylesheet" href="/assets/pbd.css?v=1">
 </head>
 <body>
 <div class="wrap">
@@ -435,7 +436,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     <button type="button" class="sidebar-tab sidebar-tab--planned" data-web-view="worksheet" aria-controls="view-worksheet"><span aria-hidden="true">📄</span> Lembaran Kerja <span class="sidebar-coming-status">Akan Datang</span></button>
     <button type="button" class="sidebar-tab sidebar-tab--planned" data-web-view="bbm" aria-controls="view-bbm"><span aria-hidden="true">🧩</span> BBM &amp; Aktiviti <span class="sidebar-coming-status">Akan Datang</span></button>
     <button type="button" class="sidebar-tab sidebar-tab--planned" data-web-view="uasa" aria-controls="view-uasa"><span aria-hidden="true">📝</span> Latihan UASA <span class="sidebar-coming-status">Akan Datang</span></button>
-    <button type="button" class="sidebar-tab sidebar-tab--planned" data-web-view="pbd" aria-controls="view-pbd"><span aria-hidden="true">📊</span> Rekod PBD <span class="sidebar-coming-status">Akan Datang</span></button>
+    <button type="button" class="sidebar-tab" data-web-view="pbd" aria-controls="view-pbd"><span aria-hidden="true">📊</span> Rekod PBD</button>
     <button type="button" class="sidebar-tab" data-web-view="special" aria-controls="view-special"><span aria-hidden="true">🌱</span> RPH Aktiviti Khas</button>
     <button type="button" class="sidebar-tab" data-web-view="rpt" aria-controls="view-rpt"><span aria-hidden="true">📅</span> RPT 2027</button>
     <button type="button" class="sidebar-tab sidebar-tab--planned" data-web-view="kp2027" aria-controls="view-kp2027"><span aria-hidden="true">📚</span> KP2027 • Tahun 1 <span class="sidebar-coming-status">Akan Datang</span></button>
@@ -530,10 +531,71 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </section>
 
 <section id="view-pbd" class="app-view" aria-labelledby="view-pbd-heading" hidden>
-  <h2 id="view-pbd-heading">📊 Rekod PBD <span class="sidebar-coming-status">Akan Datang</span></h2>
-  <p class="upcoming-intro">Alat sokongan Pentaksiran Bilik Darjah sedang dibangunkan. Modul <strong>Akan Datang</strong>; paparan ini tidak mengumpulkan atau menyimpan maklumat murid.</p>
-  <p class="notice">Bahan masih melalui semakan. Muat turun Word/PDF belum dibuka, dan tiada kuota RPH dipotong melalui pratonton ini.</p>
-  <p class="notice"><strong>Jom sokong CikguLaju dengan menjadi Rakan Pembangun.</strong> Sumbangan RM20 sekali bayar membantu kerja pemetaan buku teks, penyediaan bahan dan penambahbaikan sistem diteruskan. Rakan Pembangun mendapat akses seumur hidup kepada semua kemudahan CikguLaju, termasuk modul baharu apabila dilancarkan, <strong>tanpa bayaran tambahan</strong>. Untuk menyertai, pilih menu <strong>Rakan Pembangun</strong>.</p>
+  <h2 id="view-pbd-heading">Rekod PBD</h2>
+  <p id="pbd-message" class="notice" role="status" aria-live="polite">Pilih kelas dan sesi akademik untuk membuka rekod.</p>
+  <fieldset id="pbd-controls">
+    <legend>Kelas dan sesi akademik</legend>
+    <div class="pbd-fields">
+      <label>Kelas<select id="pbd-class"><option value="">Pilih kelas</option></select></label>
+      <label>Sesi akademik<input id="pbd-year" type="number" min="2020" max="2100"></label>
+      <button id="pbd-open" type="button">Buka kelas</button>
+    </div>
+  </fieldset>
+  <fieldset id="pbd-work" hidden>
+    <legend id="pbd-scope">Rekod kelas</legend>
+    <details id="pbd-roster">
+      <summary>Senarai murid</summary>
+      <p><a href="/assets/Templat_Rekod_PBD_CikguLaju.xlsx" download>Muat turun templat Excel kosong</a></p>
+      <p>Import lajur Nama Murid daripada Excel atau CSV. Kod ringkas seperti M01 boleh ditambah. Semak senarai sebelum menyimpan.</p>
+      <div class="pbd-actions">
+        <input id="pbd-file" type="file" accept=".xlsx,.csv" aria-label="Fail senarai murid">
+        <button id="pbd-import" type="button">Pratonton import</button>
+        <button id="pbd-add" type="button">Tambah murid</button>
+        <button id="pbd-save-roster" type="button">Simpan senarai</button>
+      </div>
+      <div id="pbd-roster-rows"></div>
+    </details>
+    <div class="pbd-actions">
+      <button id="pbd-new" type="button">Rekod pentaksiran</button>
+      <button id="pbd-report" type="button">Rekod Tahap Penguasaan</button>
+    </div>
+    <form id="pbd-editor" hidden>
+      <h3 id="pbd-editor-heading">Rekod pentaksiran</h3>
+      <div class="pbd-fields">
+        <label>Tarikh<input id="pbd-date" type="date" required></label>
+        <label>Subjek<input id="pbd-subject" maxlength="80" required></label>
+        <label><span id="pbd-lesson-label">Lesson/PdP</span><input id="pbd-lesson" maxlength="180"></label>
+      </div>
+      <div class="pbd-fields" id="pbd-assessment-fields">
+        <label>SK<input id="pbd-sk" maxlength="200"></label>
+        <label>SP<input id="pbd-sp" maxlength="200"></label>
+        <label>Kriteria 1<textarea id="pbd-criteria1" maxlength="450" rows="2"></textarea></label>
+        <label>Kriteria 2 (pilihan)<textarea id="pbd-criteria2" maxlength="450" rows="2"></textarea></label>
+      </div>
+      <div id="pbd-report-fields" hidden>
+        <label>Tempoh pelaporan<input id="pbd-period" maxlength="120"></label>
+        <p>Guru memilih TP1–TP6 berdasarkan Standard Prestasi DSKP dan bukti yang dikumpulkan.</p>
+      </div>
+      <div id="pbd-bulk" class="pbd-actions">
+        <label>Kriteria<select id="pbd-bulk-criterion"><option value="status1">Kriteria 1</option><option value="status2">Kriteria 2</option></select></label>
+        <label>Status<select id="pbd-bulk-status"><option>Boleh sendiri</option><option>Dengan bimbingan</option><option>Belum menguasai</option><option>Belum dinilai</option></select></label>
+        <button id="pbd-apply" type="button">Tanda murid dipilih</button>
+      </div>
+      <div id="pbd-entry-rows"></div>
+      <div class="pbd-actions">
+        <button type="submit">Simpan rekod</button>
+        <button id="pbd-close" type="button">Tutup rekod</button>
+        <button id="pbd-delete" type="button" hidden>Padam rekod</button>
+      </div>
+    </form>
+    <h3>Sejarah rekod</h3>
+    <label>Tapis murid<select id="pbd-history-student"><option value="">Semua murid</option></select></label>
+    <ul id="pbd-history"></ul>
+    <div class="pbd-actions">
+      <button id="pbd-prev" type="button" hidden>Sebelumnya</button>
+      <button id="pbd-next" type="button" hidden>Seterusnya</button>
+    </div>
+  </fieldset>
 </section>
 
 <section id="view-kp2027" class="app-view" aria-labelledby="view-kp2027-heading" hidden>
@@ -874,6 +936,7 @@ webViewButtons.forEach(button=>button.addEventListener("click",()=>{
  showWebView(button.dataset.webView);
  if(button.dataset.webView==="rph")void loadTeacherClasses();
  if(button.dataset.webView==="today")window.rphTodayLoad?.();
+ if(button.dataset.webView==="pbd")window.cikgulajuPbdLoad?.();
  if(button.dataset.webView==="feedback")window.cikgulajuFeedbackLoad?.();
  if(button.dataset.webView==="admin")window.cikgulajuFeedbackAdminLoad?.();
 }));
@@ -1611,7 +1674,8 @@ rphWord.addEventListener("click",()=>generateRphFile("word"));
 rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
-<script src="/assets/rph-today.js?v=selection-progress-20261111"></script>
+<script src="/assets/pbd.js?v=1"></script>
+<script src="/assets/rph-today.js?v=pbd-20261113"></script>
 <script src="/assets/teacher-profile.js?v=profile-guide-20261111"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=private-menu-20261111"></script>

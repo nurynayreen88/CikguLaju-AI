@@ -11,6 +11,8 @@ from web.teacher_profile_routes import bp as teacher_profile_bp
 app.register_blueprint(teacher_profile_bp)
 from web.rph_hari_ini_web import bp as rph_hari_ini_bp
 app.register_blueprint(rph_hari_ini_bp)
+from web.pbd_routes import bp as pbd_bp
+app.register_blueprint(pbd_bp)
 from web.web_payment_routes import bp as web_payment_bp
 app.register_blueprint(web_payment_bp)
 
@@ -47,6 +49,18 @@ def web_brand_logo():
     from flask import send_file
     path = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "cikgulaju-logo.svg"
     return send_file(path, mimetype="image/svg+xml", conditional=True, max_age=86400)
+
+
+@app.get("/assets/pbd.js")
+@app.get("/assets/pbd.css")
+@app.get("/assets/Templat_Rekod_PBD_CikguLaju.xlsx")
+def pbd_asset():
+    from pathlib import Path
+    from flask import request, send_file
+    name = request.path.rsplit("/", 1)[-1]
+    file = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / name
+    return send_file(file, conditional=True, max_age=1800,
+                     as_attachment=name.endswith(".xlsx"))
 
 
 @app.get("/assets/rph-today.js")
