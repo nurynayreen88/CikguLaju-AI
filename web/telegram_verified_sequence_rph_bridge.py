@@ -18,6 +18,7 @@ from zipfile import ZipFile
 from flask import Blueprint, Response, jsonify, request
 
 from web.native_rph_telegram_api import MIMES, compact_web_word_notes
+from web.rph_teacher_reflection import clean_reflection
 from web.telegram_verified_rpt_rph_bridge import (
     _authorization, _teacher_metadata, SourceUnavailable,
 )
@@ -167,6 +168,7 @@ def _build_state(runtime, year, subject, unit_token, pdp_code, teacher):
         "activitybook_ref": join("activitybook_ref"),
         "rph_class": cls, "rph_date": (date.fromisoformat(dt).strftime("%d/%m/%Y") if dt else ""), "rph_time": tm,
         "rph_day": day, "rph_students": pupils,
+        "rph_teacher_reflection": clean_reflection(teacher.get("reflection", "")),
         "variation_seed": "web-native-pdp-" + subject + "-" + pdp_code,
     }
     group = getattr(runtime, "_commit_multi_sp", None)
@@ -281,7 +283,7 @@ def create_native_sequence_rph_blueprint(runtime):
     @bp.post("/internal/rph/v1/sequence/render")
     def render():
         if (not request.is_json or request.content_length is None
-                or request.content_length > 3500):
+                or request.content_length > 7000):
             return jsonify({"error": "Invalid document request"}), 400
         data = request.get_json(silent=True)
         if not isinstance(data, dict) or set(data) != {

@@ -18,6 +18,7 @@ from zipfile import ZipFile
 from flask import Blueprint, Response, jsonify, request
 
 from web.native_rph_telegram_api import MIMES, compact_web_word_notes
+from web.rph_teacher_reflection import clean_reflection
 from web.rbt_2027_staging_source import RBTSourceUnavailable, menu_pdp, menu_units, source_fingerprint
 from web.rbt_2027_user_runtime import (
     SUBJECT, SELECTION, _lesson, adapt_rows,
@@ -68,6 +69,7 @@ def _state(year,unit,lesson,teacher):
         "selected_sp_codes":list(row["sp_codes"]),"grouped_sp_codes":list(row["sp_codes"]),
         "rph_class":cls,"rph_date":date.fromisoformat(dt).strftime("%d/%m/%Y") if dt else "",
         "rph_day":day,"rph_time":tm,"rph_students":pupils,
+        "rph_teacher_reflection": clean_reflection(teacher.get("reflection", "")),
         SELECTION:{"year":year,"pdp":n},
     }
 
@@ -141,7 +143,7 @@ def create_rbt_2027_native_blueprint(runtime):
 
     @bp.post("/internal/rph/v1/rbt/render")
     def render():
-        if not request.is_json or request.content_length is None or request.content_length>4000:
+        if not request.is_json or request.content_length is None or request.content_length>7000:
             return jsonify({"error":"Invalid RBT render request"}),400
         payload=request.get_json(silent=True)
         if not isinstance(payload,dict) or set(payload)!={"selection","teacher","format"}:

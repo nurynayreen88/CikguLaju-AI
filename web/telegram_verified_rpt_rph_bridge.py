@@ -21,10 +21,11 @@ from zipfile import ZipFile, BadZipFile
 from flask import Blueprint, Response, jsonify, request
 
 from web.native_rph_telegram_api import MIMES, compact_web_word_notes
+from web.rph_teacher_reflection import clean_reflection, valid_teacher_fields
 
 CODE_LABELS = {"BM": "Bahasa Melayu", "PI": "Pendidikan Islam"}
 MAX_FILE = 15 * 1024 * 1024
-MAX_BODY = 3000
+MAX_BODY = 7000
 
 
 class SourceUnavailable(Exception):
@@ -120,9 +121,9 @@ def _resolve_verified_rpt(runtime, selection):
 
 
 def _teacher_metadata(teacher, code):
-    if not isinstance(teacher, dict) or set(teacher) != {
-            "class", "date", "time", "students"}:
+    if not valid_teacher_fields(teacher):
         raise ValueError("Invalid teacher metadata")
+    clean_reflection(teacher.get("reflection", ""))
     cls, dt, tm, pupils = (teacher[k] for k in ("class", "date", "time", "students"))
     if any(not isinstance(v, str) for v in (cls, dt, tm, pupils)):
         raise ValueError("Invalid teacher field")
@@ -177,6 +178,7 @@ def _native_state(runtime, selection, teacher):
         "rpt_assessment_note": str(row.get("assessment_note") or ""),
         "rph_class": cls, "rph_date": (date.fromisoformat(dt).strftime("%d/%m/%Y") if dt else ""), "rph_time": tm,
         "rph_day": day, "rph_students": pupils,
+        "rph_teacher_reflection": clean_reflection(teacher.get("reflection", "")),
         "_quick_selected_rpt_row_v2388": src,
         "quick_rpt_row": src,
         "variation_seed": "web-rpt-" + str(lesson),

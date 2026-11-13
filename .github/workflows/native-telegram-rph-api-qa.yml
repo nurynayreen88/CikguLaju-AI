@@ -12,6 +12,19 @@ on:
       - tests/test_native_telegram_rph_api.py
       - .github/workflows/native-telegram-rph-api-qa.yml
   workflow_dispatch:
+  pull_request:
+    paths:
+      - web/rph_teacher_reflection.py
+      - web/native_rph_telegram_api.py
+      - web/telegram_verified_rpt_rph_bridge.py
+      - web/telegram_verified_sequence_rph_bridge.py
+      - web/telegram_native_bm_sequence_rph_bridge.py
+      - web/rbt_2027_native_api.py
+      - web/sejarah_2027_native_api.py
+      - web/telegram_provisional_arab_music_api.py
+      - tools/run_telegram_with_curriculum_api.py
+      - tests/test_native_telegram_rph_api.py
+      - .github/workflows/native-telegram-rph-api-qa.yml
 permissions:
   contents: read
 jobs:

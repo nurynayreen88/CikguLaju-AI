@@ -14,6 +14,7 @@ from web.native_rph_telegram_api import (
     build_native_input, compact_web_word_notes,
     create_native_rph_blueprint,
 )
+from web.rph_teacher_reflection import install
 
 
 def payload(fmt="word"):
@@ -61,6 +62,10 @@ class FakeRuntime:
         self.calls=[]
         self.last_path=None
 
+    def _rph_rows(self,state,ai_text):
+        return {"REFLEKSI":"____ pupils met objectives.",
+                "AKTIVITI UTAMA":"Pupils match the flag."}
+
     def create_word_file(self,state,ai_text,cid):
         self.calls.append(("word",state,ai_text,cid))
         doc=Document()
@@ -76,7 +81,7 @@ class FakeRuntime:
         phase.cell(1,2).text=""
         footer=doc.add_table(rows=2,cols=2)
         footer.cell(0,0).text="Reflection"
-        footer.cell(0,1).text="____ pupils met objectives."
+        footer.cell(0,1).text=self._rph_rows(state,ai_text)["REFLEKSI"]
         self.last_path=os.path.join(tempfile.gettempdir(),cid+"_TEST.docx")
         doc.save(self.last_path)
         return self.last_path
@@ -150,6 +155,30 @@ class NativeRPHBridgeTests(unittest.TestCase):
         response=self._post(payload())
         self.assertEqual(response.status_code,200,response.get_json() if response.is_json else "")
         self.assertEqual(self.runtime.calls[0][1]["rph_students"],"")
+
+    def test_custom_reflection_is_applied_after_source_rows(self):
+        install(self.runtime)
+        reflection="24 murid mencapai objektif.\nTindakan susulan: bimbingan & latihan."
+        for fmt in ("word","pdf"):
+            body=payload(fmt)
+            body["teacher"]["reflection"]=reflection.replace("\n","\r\n")
+            response=self._post(body)
+            self.assertEqual(response.status_code,200)
+            _,state,source,_=self.runtime.calls[-1]
+            rows=self.runtime._rph_rows(state,source)
+            self.assertEqual(rows["REFLEKSI"],reflection)
+            self.assertEqual(rows["AKTIVITI UTAMA"],"Pupils match the flag.")
+            if fmt=="word":
+                self.assertEqual(Document(BytesIO(response.data)).tables[2].cell(0,1).text,reflection)
+        self.assertIn("____ pupils",self.runtime._rph_rows({}, "")["REFLEKSI"])
+
+    def test_invalid_reflection_does_not_render(self):
+        for reflection in (False,"x"*501,"a\n"*6+"a","a\x00b","\ud800"):
+            with self.subTest(reflection=reflection):
+                body=payload()
+                body["teacher"]["reflection"]=reflection
+                self.assertEqual(self._post(body).status_code,400)
+        self.assertEqual(self.runtime.calls,[])
 
     def test_rejects_invalid_pupil_counts_before_document_generation(self):
         for students in ("0","201","-5","2.5","1e2"," 32 ","999",
