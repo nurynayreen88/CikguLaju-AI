@@ -1456,7 +1456,8 @@ async function populateMaterialList(){
    found++;
   }
  }
- if((subject.value==="ENGLISH"&&[2,3,4,5,6].includes(Number(year.value)))||subject.value==="MUZIK"){
+ if((subject.value==="ENGLISH"&&[2,3,4,5,6].includes(Number(year.value)))||
+    ["MUZIK","SCIENCE","SEJARAH"].includes(subject.value)){
   try{
    const params=new URLSearchParams({year:year.value,subject:subject.value,
                                     unit:currentLessonSourceUnit(),lesson:lesson.value});
@@ -1477,9 +1478,11 @@ async function populateMaterialList(){
         /^\/api\/web\/rph\/english-audio\/[1-4]\?/.test(item.url);
     const externalMusic=item.type==="audio"&&
         /^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]{10,100}\/view\?usp=drivesdk$/.test(item.url);
-    if(!ownWorkbook&&!ownStudentBook&&!ownEnglishAudio&&!externalMusic)continue;
+    const externalBook=item.type==="textbook"&&["SCIENCE","SEJARAH"].includes(subject.value)&&
+        /^https:\/\/fliphtml5\.com\/[a-z0-9]+\/[a-z0-9]+(?:\/[A-Za-z0-9_-]+)?\/?$/.test(item.url);
+    if(!ownWorkbook&&!ownStudentBook&&!ownEnglishAudio&&!externalMusic&&!externalBook)continue;
     list.append(materialRow(item.title,{ready:true,url:item.url,
-      actionLabel:externalMusic?"Buka Audio Sumber":"Download"}));
+      actionLabel:externalBook?"Buka Buku Teks":externalMusic?"Buka Audio Sumber":"Download"}));
     found++;
    }
   }catch(e){sourceError=(sourceError+" "+e.message).trim();}
@@ -1778,7 +1781,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
-<script src="/assets/rph-today.js?v=english-sk-workbook-20261113"></script>
+<script src="/assets/rph-today.js?v=science-history-books-20261113"></script>
 <script src="/assets/teacher-profile.js?v=profile-guide-20261111"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=private-menu-20261111"></script>
