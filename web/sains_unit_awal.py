@@ -184,7 +184,7 @@ LESSONS = (
            "Guru menyemak dua jenis pemboleh ubah dan hipotesis yang menghubungkannya dengan bilangan adukan.",
            "Murid menjelaskan mengapa suhu air perlu sama.",
            "Sediakan kad jenis pemboleh ubah. Murid lanjutan membandingkan dua reka bentuk ujian.", year=4),
-    Lesson(85, ("1.1.12",), "Menjalankan eksperimen pelarutan gula", "16–20",
+    Lesson(85, ("1.1.12",), "Menjalankan eksperimen pelarutan gula", "16–19",
            "Merekod masa pelarutan untuk dua bilangan adukan awal dan melaporkan kesimpulan berdasarkan data.",
            "Gula, air suhu bilik, cawan jernih, sudu, jam randik dan jadual.",
            "Guru meminta murid menyemak semula pemboleh ubah dan cara mengenal pasti gula telah larut.",
