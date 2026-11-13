@@ -11,6 +11,7 @@ from urllib.parse import urlencode
 from urllib.request import Request, build_opener, HTTPSHandler
 from urllib.error import HTTPError, URLError
 from zipfile import ZipFile, BadZipFile
+from web.rph_teacher_reflection import valid_teacher_fields
 
 from web.native_telegram_rph_client import (
     NativeRPHUnavailable, BlockRedirects, MIMES, MAX_DOCUMENT,
@@ -122,13 +123,13 @@ def request_draft_rph(selection, fmt, *, opener=None):
     if subject=="ARAB" and fmt=="pdf":
         raise NativeRPHUnavailable("Arabic PDF Arabic shaping not certified")
     teacher=selection.get("teacher")
-    if not isinstance(teacher,dict) or set(teacher)!={"class","date","time","students"}:
+    if not valid_teacher_fields(teacher):
         raise ValueError("Invalid teacher metadata")
     payload=json.dumps({"selection":{"year":year,"subject":subject,
                                      "unit":unit,"lesson":lesson},
                         "teacher":teacher,"format":fmt},
                        ensure_ascii=False).encode("utf8")
-    if len(payload)>3500:
+    if len(payload)>7000:
         raise ValueError("Oversized draft selection")
     base,token=_backend()
     req=Request(base+PREFIX+"render",data=payload,method="POST",

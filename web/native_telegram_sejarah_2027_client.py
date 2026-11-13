@@ -12,6 +12,7 @@ from urllib.parse import urlencode
 from urllib.request import Request, build_opener, HTTPSHandler
 from urllib.error import HTTPError, URLError
 from zipfile import ZipFile, BadZipFile
+from web.rph_teacher_reflection import valid_teacher_fields
 
 from web.native_telegram_rph_client import (
     NativeRPHUnavailable, BlockRedirects, MIMES, MAX_DOCUMENT,
@@ -103,11 +104,11 @@ def request_sejarah_rph(selection, fmt, *, opener=None):
     lesson = selection.get("lesson")
     _validate(year, unit, lesson)
     teacher = selection.get("teacher")
-    if not isinstance(teacher, dict) or set(teacher) != {"class","date","time","students"}:
+    if not valid_teacher_fields(teacher):
         raise ValueError("Missing verified teacher context")
     body = json.dumps({"selection":{"year":year,"unit":unit,"lesson":lesson},
                        "teacher":teacher,"format":fmt},ensure_ascii=False).encode("utf-8")
-    if len(body) > 3500:
+    if len(body) > 7000:
         raise ValueError("Oversized Sejarah RPH selection")
     base, token = _backend()
     req = Request(base + ROOT + "render", data=body,

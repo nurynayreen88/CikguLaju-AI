@@ -11,6 +11,7 @@ from urllib.parse import urlencode, urlsplit
 from urllib.request import Request, build_opener, HTTPSHandler
 from urllib.error import HTTPError, URLError
 from zipfile import ZipFile, BadZipFile
+from web.rph_teacher_reflection import valid_teacher_fields
 
 from web.native_telegram_rph_client import (
     NativeRPHUnavailable, BlockRedirects, MIMES, MAX_DOCUMENT
@@ -85,14 +86,13 @@ def request_verified_rpt_rph(data, fmt, *, opener=None):
     if data.get("source") != "telegram-verified-rpt-master":
         raise ValueError("Unsupported native RPH source")
     teacher = data.get("teacher")
-    if not isinstance(teacher, dict) or set(teacher) != {
-            "class", "date", "time", "students"}:
+    if not valid_teacher_fields(teacher):
         raise ValueError("Invalid teacher metadata")
     base, token = _backend()
     body = json.dumps({
         "selection": selection, "teacher": teacher, "format": fmt
     }, ensure_ascii=False).encode("utf-8")
-    if len(body) > 3000:
+    if len(body) > 7000:
         raise NativeRPHUnavailable("Invalid native RPH request size")
     req = Request(base + "/internal/rph/v1/verified-rpt/render",
                   data=body, headers={
