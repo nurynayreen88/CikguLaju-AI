@@ -115,3 +115,81 @@ def music_source_links(year, unit, lesson, *, opener=None):
                     "url":item["url"], "action":"Buka Audio Sumber",
                     "source_only":True})
     return out
+
+
+ENGLISH_ASSET_SOURCE = "telegram-english-lesson-locked-assets-v1"
+MAX_AUDIO = 12 * 1024 * 1024
+
+
+def _english_asset_selection(year, lesson):
+    if type(year) is not int or year not in (3, 4) or type(lesson) is not int or not 1 <= lesson <= 160:
+        raise ValueError("Unsupported English material selection")
+
+
+def english_student_book_metadata(year, lesson, *, opener=None):
+    _english_asset_selection(year, lesson)
+    data = _json("/internal/rph/v1/english-extras/student-book",
+                 {"year": year, "lesson": lesson}, opener=opener)
+    if data is None:
+        return None
+    pages = data.get("pages")
+    if (data.get("source") != ENGLISH_ASSET_SOURCE or data.get("available") is not True
+            or data.get("year") != year or data.get("lesson") != lesson
+            or data.get("type") != "textbook" or data.get("format") != "pdf"
+            or data.get("status") != "VERIFIED_SOURCE"
+            or not isinstance(pages, list) or not 1 <= len(pages) <= 4
+            or not all(type(p) is int and 1 <= p <= (135 if year == 3 else 177) for p in pages)
+            or pages != list(range(pages[0], pages[-1] + 1))
+            or not isinstance(data.get("title"), str)
+            or not 10 <= len(data["title"]) <= 220):
+        raise NativeRPHUnavailable("Student Book source mismatch")
+    return data["title"]
+
+
+def english_student_book_pdf(year, lesson, *, opener=None):
+    _english_asset_selection(year, lesson)
+    raw = _get("/internal/rph/v1/english-extras/student-book.pdf",
+               {"year": year, "lesson": lesson}, accept="application/pdf",
+               limit=MAX_PDF, opener=opener)
+    if raw is None or len(raw) < 450 or not raw.startswith(b"%PDF-"):
+        raise NativeRPHUnavailable("Student Book pages unavailable")
+    return raw
+
+
+def english_audio_tracks(year, lesson, *, opener=None):
+    _english_asset_selection(year, lesson)
+    data = _json("/internal/rph/v1/english-extras/audio",
+                 {"year": year, "lesson": lesson}, opener=opener)
+    if data is None:
+        return []
+    tracks = data.get("tracks")
+    if (data.get("source") != ENGLISH_ASSET_SOURCE or data.get("available") is not True
+            or data.get("status") != "VERIFIED_SOURCE"
+            or data.get("year") != year or data.get("lesson") != lesson
+            or not isinstance(tracks, list) or not 1 <= len(tracks) <= 4):
+        raise NativeRPHUnavailable("Original audio identity mismatch")
+    result = []
+    for i, track in enumerate(tracks, 1):
+        if (not isinstance(track, dict) or set(track) != {"index", "title", "reference"}
+                or track["index"] != i or type(track["index"]) is not int
+                or not isinstance(track["title"], str)
+                or not 10 <= len(track["title"]) <= 200
+                or not isinstance(track["reference"], str)
+                or not re.fullmatch(r"CD[1-9][0-9]? Track [1-9][0-9]{0,2}", track["reference"])):
+            raise NativeRPHUnavailable("Unverified audio track")
+        result.append({"index": i, "title": track["title"],
+                       "reference": track["reference"]})
+    return result
+
+
+def english_audio_mp3(year, lesson, index, *, opener=None):
+    _english_asset_selection(year, lesson)
+    if type(index) is not int or not 1 <= index <= 4:
+        raise ValueError("Invalid verified track")
+    raw = _get("/internal/rph/v1/english-extras/audio.mp3",
+               {"year": year, "lesson": lesson, "track": index},
+               accept="audio/mpeg", limit=MAX_AUDIO, opener=opener)
+    if raw is None or len(raw) < 1000 or not (
+            raw.startswith(b"ID3") or (raw[0] == 0xff and (raw[1] & 0xe0) == 0xe0)):
+        raise NativeRPHUnavailable("Original MP3 unavailable")
+    return raw

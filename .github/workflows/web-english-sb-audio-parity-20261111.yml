@@ -1,0 +1,35 @@
+name: Web English selected-page and audio-track parity
+on:
+  push:
+    branches: [fix/web-english-lesson-materials-20261113]
+    paths:
+      - 'web/unified_rph_web.py'
+      - 'web/native_telegram_extra_materials_20261106.py'
+      - 'web_v1_static_preview/index.html'
+      - 'web_v1_static_preview/rph-today.js'
+      - 'tests/test_web_english_sb_audio_parity_20261111.py'
+      - '.github/workflows/web-english-sb-audio-parity-20261111.yml'
+  pull_request:
+    paths:
+      - 'web/unified_rph_web.py'
+      - 'web/native_telegram_extra_materials_20261106.py'
+      - 'web_v1_static_preview/index.html'
+      - 'web_v1_static_preview/rph-today.js'
+      - 'tests/test_web_english_sb_audio_parity_20261111.py'
+      - '.github/workflows/web-english-sb-audio-parity-20261111.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'flask==3.1.3' 'python-docx==1.2.0' 'lxml==5.4.0'
+      - run: |
+          python -m unittest discover -s tests -p 'test_web_english_sb_audio_parity_20261111.py' -v
+          python -m unittest discover -s tests -p 'test_web_english_music_extras_20261106.py' -v
+          node --test tests/test_rph_today_selection_progress_20261111.cjs
