@@ -5,22 +5,28 @@
 **Complementary SK/SP:** Reading 3.2 / 3.2.3
 **Duration:** 60 minutes
 **References:** Student's Book pp.26–27; Teacher's Book pp.48–49; story pictures and sentence cards.
+**Learning objective:** State the main idea of the picture story and infer the meaning of one unfamiliar word from the illustrations or topic.
+**Success criteria:** One accurate main idea and one plausible word meaning with a relevant visual clue.
 
 ## Set Induction (5 minutes)
-Pupils sing and act out the song from Student's Book p.25.
+**Teacher:** Replay the action song on Student’s Book p.25.
+**Pupils:** Sing or mime and name one action they remember.
 
-## Activity 1 — Prediction (15 minutes)
-Teacher introduces new vocabulary and displays selected story pictures. Pupils match sentence cards to pictures using visual clues.
+## Activity 1 — Picture and sentence matching (15 minutes)
+**Teacher:** Teach key vocabulary, then display story pictures 1, 3, 5 and 6 with matching sentence cards.
+**Pupils:** Match the cards in pairs and point to a picture clue for one unfamiliar word.
 
-## Activity 2 — Reading (25 minutes)
-Pupils read the picture story on Student's Book p.26 to check matches. Teacher guides Activity 1 and introduces present continuous question forms from the p.27 Grammar Box.
+## Activity 2 — Read and check (25 minutes)
+**Teacher:** Guide Activity 1 on p.26. Use the Grammar Box on p.27 to model a question and answer.
+**Pupils:** Read the story, check their matches and ask and answer about one pictured action.
+**Workbook:** Circle the sentences that match the pictures in Workbook p.19, Activity 1.
 
 ## PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.23, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.23, Activity 2, by selecting correct details from the story.
-Pupils state the story's main idea and explain one unfamiliar word using a clue from the text or picture.
+**Teacher:** Ask what the whole story is mainly about and ask for one unfamiliar word and its clue.
+**Pupils:** State the main idea, then give one plausible word meaning and point to the clue.
 
 ## Closure (5 minutes)
-Pupils record one new word and a reflection in their learning diaries.
+**Teacher:** Prompt a learning diary entry.
+**Pupils:** Write one word they learnt and one reading strategy that helped.
 
-**QA:** Official KPM SOW checked; direct Teacher's Book and Word/PDF tests pending. NOT READY FOR RELEASE.
+**QA:** Official KPM SOW checked; printed Student's Book, Teacher's Book and Workbook pages reviewed for the tasks cited. Audio file and live delivery not verified. NOT READY FOR RELEASE.

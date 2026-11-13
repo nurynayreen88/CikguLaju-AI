@@ -13,6 +13,7 @@ on:
       - 'tests/test_english_y3_l21_l24_quality_20261113.py'
       - 'tests/test_english_y3_l25_l28_quality_20261113.py'
       - 'tests/test_english_y3_l29_l32_quality_20261113.py'
+      - 'tests/test_english_y3_l33_l40_quality_20261113.py'
       - 'rph_standalone/english/year3/lesson_0*.md'
       - '.github/workflows/english-y3-roles-word-pdf-20261110.yml'
 permissions:
@@ -37,6 +38,7 @@ jobs:
           python -m unittest discover -s tests -p 'test_english_y3_l21_l24_quality_20261113.py' -v
           python -m unittest discover -s tests -p 'test_english_y3_l25_l28_quality_20261113.py' -v
           python -m unittest discover -s tests -p 'test_english_y3_l29_l32_quality_20261113.py' -v
+          python -m unittest discover -s tests -p 'test_english_y3_l33_l40_quality_20261113.py' -v
           python -m unittest discover -s tests -p 'test_english_y2_y3_rph_render_integrity.py' -v
           python -m unittest discover -s tests -p 'test_english_y3_12_sow_pupil_actions_20261104.py' -v
       - name: Generate actual RPH Word table files with source-backed Y3 rows
@@ -65,7 +67,7 @@ jobs:
                   print(f"WORD_Y3_L{lesson:03d} VALID bytes={path.stat().st_size} tables={len(doc.tables)}")
           PY
       - name: Render native ReportLab PDF using actual production table builder
-        run: python tools/verify_english_800_native_pdf_contract_20261104.py --year 3 --lessons 11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,93
+        run: python tools/verify_english_800_native_pdf_contract_20261104.py --year 3 --lessons 11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,93
       - name: Check native PDF A4 pages and extracted text
         run: |
           python - <<'PY'
@@ -75,11 +77,11 @@ jobs:
           root=Path("output/english_2_6_native_pdf_smoke_20261104/year3")
           report=json.loads((root/"native_pdf_report.json").read_text(encoding="utf-8"))
           assert report["summary"].get("errors",0)==0,report["errors"]
-          for lesson in (11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,93):
+          for lesson in (11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,93):
               path=root/f"Y3_L{lesson:03d}_native_layout.pdf"
               pages=PdfReader(str(path)).pages
               assert len(pages)>=1,(lesson,"no pages")
-              if lesson in (11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32):
+              if lesson in (11,12,13,14,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40):
                   assert len(pages)==1,(lesson,"RPH exceeds one A4 page",len(pages))
               assert all(abs(float(p.mediabox.width)-595.28)<1.5 and abs(float(p.mediabox.height)-841.89)<1.5 for p in pages)
               text="\n".join(p.extract_text() or "" for p in pages)
