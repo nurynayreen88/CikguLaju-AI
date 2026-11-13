@@ -1,4 +1,5 @@
 """Source-specific Web RPH preview tests with no production imports or mutations."""
+from io import BytesIO
 import tempfile
 import unittest
 from pathlib import Path
@@ -118,6 +119,35 @@ class UnifiedWebRPHTests(unittest.TestCase):
                 self.assertIn("5 Bestari", xml)
                 self.assertIn("08/03/2027", xml)
                 self.assertIn("08:30", xml)
+
+    @patch("web.unified_rph_web._has_paid_access", return_value=True)
+    @patch("web.unified_rph_web._account", return_value=({"telegram_user_id": 123}, None))
+    def test_word_and_pdf_use_saved_roster_count_unless_teacher_overrides(self, *_):
+        row = source_records(4, "ENGLISH")[0]
+        query = {"year":4, "subject":"ENGLISH", "unit":row["unit"], "lesson":row["token"],
+                 "teacher_class":"4 Bestari", "teacher_date":"2027-03-08",
+                 "teacher_start":"08:30", "teacher_end":"09:30"}
+        config = {"account_backend":"supabase"}
+        with patch("web_v1_telegram_auth_routes._config", return_value=config), \
+             patch("web.pbd_store.roster_count", return_value=28) as lookup, \
+             patch("web.native_telegram_rph_client.request_native_rph",
+                   side_effect=lambda _, fmt: BytesIO(fmt.encode())) as native:
+            for fmt in ("word", "pdf"):
+                response = self.client.get("/api/web/rph/" + fmt, query_string=query)
+                self.assertEqual(response.status_code, 200, response.get_json())
+                self.assertEqual(native.call_args.args[0]["teacher"]["students"], "28")
+                lookup.assert_called_with(config, 123, {
+                    "class_name":"eq.4 Bestari", "school_year":"eq.2027",
+                })
+            lookup.reset_mock()
+            response = self.client.get("/api/web/rph/pdf", query_string={**query, "teacher_students":"26"})
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(native.call_args.args[0]["teacher"]["students"], "26")
+            lookup.assert_not_called()
+            lookup.return_value = 0
+            response = self.client.get("/api/web/rph/word", query_string=query)
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(native.call_args.args[0]["teacher"]["students"], "")
 
     @patch("web.unified_rph_web._has_paid_access", return_value=True)
     @patch("web.unified_rph_web._account", return_value=({"telegram_user_id": 123}, None))

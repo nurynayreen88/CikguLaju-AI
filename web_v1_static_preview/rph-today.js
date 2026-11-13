@@ -19,7 +19,7 @@
  if(!dateInput||!refresh||!state||!list||!confirm||!generateAll||
     !allStatus||!resultsHost||!resultsList)return;
  let requestId=0,loadedDate="",loading=false,reviewing=false,choices=[],batchEpoch=0;
- const cache=new Map();
+ const cache=new Map(),rosterCounts=new Map();
  const TAGS=["component","theme","unit","topic","lesson"];
  const SOURCE_NAMES={
   BM:"Unit",ENGLISH:"Unit / Topic",PI:"Bidang / Tajuk",
@@ -284,7 +284,30 @@
    ["component","Komponen PJ atau PK"],["theme","Tema"],["unit",SOURCE_NAMES[slot.subject_code]||"Unit / Tajuk"],
    ["topic","Tajuk"],["lesson",slot.subject_code==="ENGLISH"?"Lesson":"PdP"]
   ])stage(c,name,label);
-  c.editor.append(c.bookRef,c.message);
+  c.students=create("input");
+  c.students.type="number";
+  c.students.min="1";
+  c.students.max="200";
+  c.students.step="1";
+  c.students.inputMode="numeric";
+  c.students.id="daily-rph-students-"+index;
+  const countLabel=create("label","","Bilangan Murid");
+  countLabel.htmlFor=c.students.id;
+  const countHint=create("p","notice","Guru boleh ubah jumlah untuk RPH ini.");
+  countHint.id=c.students.id+"-hint";
+  c.students.setAttribute("aria-describedby",countHint.id);
+  c.students.placeholder="Ikut Rekod PBD";
+  const schoolYear=loadedDate.slice(0,4);
+  if(!rosterCounts.has(slot.class_name)){
+   rosterCounts.set(slot.class_name,readPbdRosterCount(slot.class_name,schoolYear).catch(()=>null));
+  }
+  void rosterCounts.get(slot.class_name).then(count=>{
+   if(ticket!==requestId)return;
+   if(count)c.students.placeholder=String(count)+" daripada Rekod PBD";
+   else countHint.textContent=count===0?"Senarai murid sesi "+schoolYear+" masih kosong. Guru boleh isi jumlah di sini.":
+    "Rekod PBD belum dapat disemak. Guru boleh isi jumlah di sini.";
+  });
+  c.editor.append(c.bookRef,c.message,countLabel,c.students,countHint);
   card.append(c.editor);
   // Result cards are deliberately NOT appended inside the selection cards.
   // They are rendered in a single output area after the *entire* timetable.
@@ -326,6 +349,7 @@
  async function load(date=""){
   const ticket=++requestId;
   cache.clear();
+  rosterCounts.clear();
   batchEpoch++;
   loading=true;reviewing=false;choices=[];
   resultsHost.hidden=true;
@@ -433,11 +457,17 @@
  }
  async function downloadRph(c,format,key,button){
   if(reviewing||key!==selectedKey(c)||!confirm.checked)return;
+  const students=c.students.value.trim();
+  if(!c.students.checkValidity()||(students&&!/^[1-9][0-9]{0,2}$/.test(students))){
+   c.downloadStatus.textContent="Masukkan bilangan murid antara 1 hingga 200.";
+   c.students.reportValidity();
+   return;
+  }
   const args=selection(c);
   const params=new URLSearchParams({
    year:args.year,subject:args.subject,unit:args.unit,lesson:args.lesson,
    teacher_class:c.slot.class_name,teacher_date:loadedDate,
-   teacher_start:c.slot.start,teacher_end:c.slot.end,teacher_students:""
+   teacher_start:c.slot.start,teacher_end:c.slot.end,teacher_students:students
   });
   if(args.component)params.set("component",args.component);
   const expected=params.toString();

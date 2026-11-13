@@ -630,7 +630,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   </div>
 </section>
 <section id="view-rph" class="app-view" aria-labelledby="view-rph-heading">
-<h2 id="view-rph-heading">Sediakan RPH</h2><p id="account-access" class="notice" role="status"></p><section class="rph-guide" aria-label="Cara menyediakan RPH"><h3>Cara menyediakan RPH</h3><p><strong>1.</strong> Pilih Tahun → Subjek → Unit/Tajuk → Lesson/PdP.</p><p><strong>2.</strong> Pilih kelas, tarikh, waktu mula/tamat dan bilangan murid jika perlu.</p><p><strong>3.</strong> Tekan <strong>Jana Bahan</strong> untuk melihat RPH PDF, RPH Word, Buku Teks, Audio dan Buku Aktiviti yang tersedia bagi Lesson/PdP ini, kemudian muat turun bahan pilihan.</p><p class="notice">Hanya RPH yang mempunyai sumber lengkap tersedia. 10 janaan RPH percuma dikongsi antara Web dan Telegram. Rakan Pembangun yang aktif mendapat akses tanpa had.</p></section><p id="selection-help" class="selection-help" role="status">Mula di bawah dengan memilih Tahun.</p><label for="year">Langkah 1 — Pilih Tahun</label><select id="year"><option value="">Pilih Tahun</option><option value="1">Tahun 1</option><option value="2">Tahun 2</option><option value="3">Tahun 3</option><option value="4">Tahun 4</option><option value="5">Tahun 5</option><option value="6">Tahun 6</option></select><label for="subject">Langkah 2 — Pilih Subjek</label><select id="subject" disabled><option value="">Pilih Tahun dahulu</option></select><label for="component" id="component-label" hidden>Pilih komponen PJPK (PJ atau PK)</label><select id="component" hidden disabled><option value="">Pilih PJ atau PK</option></select><label for="theme" id="theme-label" hidden>Langkah 3 — Pilih Tema</label><select id="theme" hidden disabled><option value="">Pilih Tema</option></select><label for="unit" id="unit-label" hidden>Langkah 3 — Pilih Unit/Tajuk</label><select id="unit" hidden disabled><option value="">Pilih Subjek dahulu</option></select><label for="topic" id="topic-label" hidden>Langkah 5 — Pilih Tajuk</label><select id="topic" hidden disabled><option value="">Pilih Tajuk</option></select><label for="lesson" id="lesson-label" hidden>Langkah 4 — Pilih Lesson/PdP</label><select id="lesson" hidden disabled><option value="">Pilih Subjek dahulu</option></select><p id="catalog-status" class="notice" role="status"></p><p id="lesson-source-pages" class="notice" role="status" hidden></p><button id="show-materials" type="button" hidden disabled>Jana Bahan</button><section id="teacher-info" hidden aria-label="Maklumat kelas, masa dan murid"><h3>Langkah 5 — Maklumat RPH</h3><p>Isi maklumat PdP jika ada. Maklumat yang diisi akan dicetak dalam RPH Word atau PDF.</p><label for="teacher-class">Pilih Kelas</label><select id="teacher-class"><option value="">Pilih kelas (pilihan)</option><option value="__other__">+ Isi nama kelas lain</option></select><div id="teacher-class-other-wrap" hidden><label for="teacher-class-other">Nama Kelas Lain</label><input id="teacher-class-other" type="text" maxlength="40" autocomplete="off" placeholder="Contoh: 4 Bestari"></div><p class="notice" id="teacher-class-hint">Kelas yang disimpan dalam Profil Guru akan disenaraikan secara automatik.</p><label for="teacher-date">Tarikh PdP</label><input id="teacher-date" type="date"><div class="rph-time-fields"><div><label for="teacher-time-start">Waktu Mula</label><input id="teacher-time-start" type="time" step="60"></div><div><label for="teacher-time-end">Waktu Tamat</label><input id="teacher-time-end" type="time" step="60"></div></div><p class="notice">Jika isi masa, lengkapkan kedua-dua waktu mula dan tamat. Waktu tamat mestilah selepas waktu mula.</p><label for="teacher-students">Bilangan Murid</label><input id="teacher-students" type="number" min="1" max="200" step="1" inputmode="numeric" placeholder="Contoh: 32"><p class="notice">Bilangan murid adalah pilihan; masukkan jumlah sebenar kelas (1–200).</p></section><div id="rph-download-actions" hidden><button id="rph-word" type="button" disabled>Jana RPH Word</button> <button id="rph-pdf" type="button" disabled>Jana RPH PDF</button></div><p id="rph-download-status" class="notice" role="status" aria-live="polite"></p><section id="materials-panel" hidden aria-live="polite"><h3>Bahan untuk Lesson/PdP dipilih</h3><p id="materials-status" class="notice" role="status"></p><ul id="materials-list"></ul><button id="download-all" type="button" hidden disabled>Muat Turun Semua</button></section></section>
+<h2 id="view-rph-heading">Sediakan RPH</h2><p id="account-access" class="notice" role="status"></p><section class="rph-guide" aria-label="Cara menyediakan RPH"><h3>Cara menyediakan RPH</h3><p><strong>1.</strong> Pilih Tahun → Subjek → Unit/Tajuk → Lesson/PdP.</p><p><strong>2.</strong> Pilih kelas, tarikh, waktu mula/tamat dan bilangan murid jika perlu.</p><p><strong>3.</strong> Tekan <strong>Jana Bahan</strong> untuk melihat RPH PDF, RPH Word, Buku Teks, Audio dan Buku Aktiviti yang tersedia bagi Lesson/PdP ini, kemudian muat turun bahan pilihan.</p><p class="notice">Hanya RPH yang mempunyai sumber lengkap tersedia. 10 janaan RPH percuma dikongsi antara Web dan Telegram. Rakan Pembangun yang aktif mendapat akses tanpa had.</p></section><p id="selection-help" class="selection-help" role="status">Mula di bawah dengan memilih Tahun.</p><label for="year">Langkah 1 — Pilih Tahun</label><select id="year"><option value="">Pilih Tahun</option><option value="1">Tahun 1</option><option value="2">Tahun 2</option><option value="3">Tahun 3</option><option value="4">Tahun 4</option><option value="5">Tahun 5</option><option value="6">Tahun 6</option></select><label for="subject">Langkah 2 — Pilih Subjek</label><select id="subject" disabled><option value="">Pilih Tahun dahulu</option></select><label for="component" id="component-label" hidden>Pilih komponen PJPK (PJ atau PK)</label><select id="component" hidden disabled><option value="">Pilih PJ atau PK</option></select><label for="theme" id="theme-label" hidden>Langkah 3 — Pilih Tema</label><select id="theme" hidden disabled><option value="">Pilih Tema</option></select><label for="unit" id="unit-label" hidden>Langkah 3 — Pilih Unit/Tajuk</label><select id="unit" hidden disabled><option value="">Pilih Subjek dahulu</option></select><label for="topic" id="topic-label" hidden>Langkah 5 — Pilih Tajuk</label><select id="topic" hidden disabled><option value="">Pilih Tajuk</option></select><label for="lesson" id="lesson-label" hidden>Langkah 4 — Pilih Lesson/PdP</label><select id="lesson" hidden disabled><option value="">Pilih Subjek dahulu</option></select><p id="catalog-status" class="notice" role="status"></p><p id="lesson-source-pages" class="notice" role="status" hidden></p><button id="show-materials" type="button" hidden disabled>Jana Bahan</button><section id="teacher-info" hidden aria-label="Maklumat kelas, masa dan murid"><h3>Langkah 5 — Maklumat RPH</h3><p>Isi maklumat PdP jika ada. Maklumat yang diisi akan dicetak dalam RPH Word atau PDF.</p><label for="teacher-class">Pilih Kelas</label><select id="teacher-class"><option value="">Pilih kelas (pilihan)</option><option value="__other__">+ Isi nama kelas lain</option></select><div id="teacher-class-other-wrap" hidden><label for="teacher-class-other">Nama Kelas Lain</label><input id="teacher-class-other" type="text" maxlength="40" autocomplete="off" placeholder="Contoh: 4 Bestari"></div><p class="notice" id="teacher-class-hint">Kelas yang disimpan dalam Profil Guru akan disenaraikan secara automatik.</p><label for="teacher-date">Tarikh PdP</label><input id="teacher-date" type="date"><div class="rph-time-fields"><div><label for="teacher-time-start">Waktu Mula</label><input id="teacher-time-start" type="time" step="60"></div><div><label for="teacher-time-end">Waktu Tamat</label><input id="teacher-time-end" type="time" step="60"></div></div><p class="notice">Jika isi masa, lengkapkan kedua-dua waktu mula dan tamat. Waktu tamat mestilah selepas waktu mula.</p><label for="teacher-students">Bilangan Murid</label><input id="teacher-students" type="number" min="1" max="200" step="1" inputmode="numeric" placeholder="Contoh: 32" aria-describedby="teacher-students-hint"><p id="teacher-students-hint" class="notice" role="status">Pilih kelas untuk mengambil bilangan murid daripada Rekod PBD.</p></section><div id="rph-download-actions" hidden><button id="rph-word" type="button" disabled>Jana RPH Word</button> <button id="rph-pdf" type="button" disabled>Jana RPH PDF</button></div><p id="rph-download-status" class="notice" role="status" aria-live="polite"></p><section id="materials-panel" hidden aria-live="polite"><h3>Bahan untuk Lesson/PdP dipilih</h3><p id="materials-status" class="notice" role="status"></p><ul id="materials-list"></ul><button id="download-all" type="button" hidden disabled>Muat Turun Semua</button></section></section>
 <section id="view-special" class="app-view" aria-labelledby="view-special-heading" hidden>
  <h2 id="view-special-heading">RPH Aktiviti Khas</h2>
  <p>Pilih <strong>Program Transisi Tahun 1</strong> atau <strong>Selepas Tamat Sukatan</strong>. Ini aktiviti tambahan; bukan Unit, Lesson/PdP atau SK/SP rasmi. Sumber Telegram dan Web adalah sama.</p>
@@ -983,6 +983,7 @@ async function loadTeacherClasses(){
   choices.add(new Option("+ Isi nama kelas lain","__other__"));
   if([...choices.options].some(option=>option.value===previous))choices.value=previous;
   toggleTeacherClassOther();
+  void refreshRphClassCount(true);
   document.getElementById("teacher-class-hint").textContent=
    used.size?"Pilih kelas daripada Profil Guru atau pilih Isi nama kelas lain.":
    "Belum ada kelas disimpan. Pilih Isi nama kelas lain, atau tambah kelas dalam Profil Guru.";
@@ -994,7 +995,45 @@ const teacherClass=document.getElementById("teacher-class"),
  teacherDate=document.getElementById("teacher-date"),
  teacherTimeStart=document.getElementById("teacher-time-start"),
  teacherTimeEnd=document.getElementById("teacher-time-end"),
- teacherStudents=document.getElementById("teacher-students");
+ teacherStudents=document.getElementById("teacher-students"),
+ teacherStudentsHint=document.getElementById("teacher-students-hint");
+let rphClassCountKey="",rphClassCountRequest=0,rphClassCountManual=false;
+async function readPbdRosterCount(className,schoolYear){
+ const params=new URLSearchParams({class:className,year:schoolYear});
+ const response=await fetch("/api/web/pbd/roster-count?"+params,{
+  credentials:"same-origin",cache:"no-store",redirect:"error"
+ });
+ if(!response.ok)throw Error("Rekod PBD belum dapat disemak.");
+ const {count}=await response.json();
+ if(!Number.isInteger(count)||count<0||count>200)throw Error("Bilangan murid tidak sah.");
+ return count;
+}
+async function refreshRphClassCount(reload=false){
+ const className=teacherClass.value;
+ const schoolYear=teacherDate.value.slice(0,4)||
+  new Intl.DateTimeFormat("en",{year:"numeric",timeZone:"Asia/Kuala_Lumpur"}).format(new Date());
+ const key=JSON.stringify([className,schoolYear]);
+ if(key!==rphClassCountKey){
+  rphClassCountKey=key;
+  rphClassCountManual=false;
+  teacherStudents.value="";
+ }else if(reload!==true||rphClassCountManual)return;
+ const request=++rphClassCountRequest;
+ teacherStudentsHint.textContent="Guru boleh isi bilangan murid untuk RPH ini.";
+ if(!className||className==="__other__")return;
+ teacherStudentsHint.textContent="Menyemak senarai murid dalam Rekod PBD…";
+ try{
+  const count=await readPbdRosterCount(className,schoolYear);
+  if(request!==rphClassCountRequest)return;
+  teacherStudents.value=count||"";
+  teacherStudentsHint.textContent=count?"Diisi daripada Rekod PBD. Guru boleh ubah jumlah untuk RPH ini.":
+   "Senarai murid untuk sesi "+schoolYear+" masih kosong. Guru boleh isi jumlah di sini.";
+  showRphAction();
+ }catch(_error){
+  if(request===rphClassCountRequest)
+   teacherStudentsHint.textContent="Rekod PBD belum dapat disemak. Guru boleh isi jumlah di sini.";
+ }
+}
 function toggleTeacherClassOther(){
  const isOther=teacherClass.value==="__other__";
  teacherClassOtherWrap.hidden=!isOther;
@@ -1025,7 +1064,7 @@ function currentRphParams(){
  if(className.length>40)return null;
  const start=teacherTimeStart.value,end=teacherTimeEnd.value;
  if((start||end)&&(!start||!end||start>=end))return null;
- const students=teacherStudents.value.trim();
+ const students=rphClassCountManual?teacherStudents.value.trim():"";
  if(students&&(!/^[1-9][0-9]{0,2}$/.test(students)||Number(students)>200))return null;
  const params=new URLSearchParams({year:year.value,subject:subject.value,unit:currentLessonSourceUnit(),lesson:lesson.value,
    teacher_class:className,teacher_date:teacherDate.value,
@@ -1544,6 +1583,19 @@ rptDownload.addEventListener("click",()=>{
       selection.item.label,rptStatus,rptDownload);
 });
 teacherClass.addEventListener("change",toggleTeacherClassOther);
+teacherClass.addEventListener("change",refreshRphClassCount);
+teacherDate.addEventListener("change",refreshRphClassCount);
+teacherStudents.addEventListener("input",()=>{
+ rphClassCountRequest++;
+ rphClassCountManual=true;
+ teacherStudentsHint.textContent=teacherStudents.value?"Jumlah untuk RPH ini.":
+  "Jika kosong, sistem akan cuba guna jumlah daripada Rekod PBD.";
+});
+teacherClassOther.addEventListener("change",()=>{
+ teacherStudents.value="";
+ rphClassCountManual=false;
+ teacherStudentsHint.textContent="Guru boleh isi bilangan murid untuk RPH ini.";
+});
 for(const field of [teacherClass,teacherClassOther,teacherDate,teacherTimeStart,teacherTimeEnd,teacherStudents]){
  const refresh=()=>{
   resetRphPreview();showRphAction();
@@ -1675,7 +1727,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=1"></script>
-<script src="/assets/rph-today.js?v=pbd-20261113"></script>
+<script src="/assets/rph-today.js?v=pbd-count-20261113"></script>
 <script src="/assets/teacher-profile.js?v=profile-guide-20261111"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=private-menu-20261111"></script>
