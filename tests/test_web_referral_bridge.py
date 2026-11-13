@@ -1,9 +1,11 @@
 """Regression tests for Web referral first-touch, member-only access and attribution."""
 import unittest
 from unittest.mock import patch
+from io import BytesIO
+from uuid import UUID
 from flask import Flask
 
-from web.web_referral_routes import install, pending_referral, capture_after_verified_login, REF_COOKIE
+from web.web_referral_routes import install, pending_referral, capture_after_verified_login, REF_COOKIE, WEB_ORIGIN
 
 
 class WebReferralTests(unittest.TestCase):
@@ -61,7 +63,7 @@ class WebReferralTests(unittest.TestCase):
         self.assertIn('if(targetButton?.hidden)return;', html)
         self.assertIn('window.cikgulajuReferralInit?.();', html)
         self.assertIn('tab.hidden = false;', referral)
-        self.assertIn('if (data.enabled !== true) { revoke(); return; }', referral)
+        self.assertIn('if (data.can_join !== true) { revoke(); return; }', referral)
         self.assertIn('tab.hidden = true;', admin)
         self.assertIn('if (res.status === 401 || res.status === 403)', admin)
 
@@ -72,6 +74,67 @@ class WebReferralTests(unittest.TestCase):
         data = self.make_app().test_client().get("/api/web/referral").json
         self.assertEqual(data, {"enabled": False})
         self.assertNotIn("link", data)
+
+
+    @patch("web.web_referral_routes._auth_uid", return_value=123)
+    @patch("web.web_referral_routes._rpc")
+    def test_phone_confirmation_and_origin(self, rpc, _uid):
+        client = self.make_app().test_client()
+        path = "/api/web/affiliate/wallet"
+        body = {"phone": "+60 12-3456789", "confirmed": True, "user_id": 999}
+        self.assertEqual(client.post(path, json=body).status_code, 403)
+        headers = {"Origin": WEB_ORIGIN}
+        self.assertEqual(client.post(path, json={**body, "confirmed": False}, headers=headers).status_code, 400)
+        rpc.assert_not_called()
+        rpc.return_value = {"saved": True}
+        response = client.post(path, json=body, headers=headers)
+        self.assertEqual(response.status_code, 200)
+        self.assertIn("no-store", response.headers["Cache-Control"])
+        rpc.assert_called_once_with("affiliate_save_wallet", p_user=123, p_phone="0123456789")
+
+    @patch("web.web_referral_routes._auth_uid", return_value=123)
+    @patch("web.web_referral_routes._rpc")
+    def test_claim_minimum_and_server_owned_identity(self, rpc, _uid):
+        client = self.make_app().test_client()
+        path = "/api/web/affiliate/claims"
+        key = str(UUID(int=1))
+        body = {"phone": "01123456789", "confirmed": True, "points": "9.99", "key": key, "user_id": 999}
+        headers = {"Origin": WEB_ORIGIN}
+        self.assertEqual(client.post(path, json=body, headers=headers).status_code, 400)
+        rpc.assert_not_called()
+        rpc.return_value = {"id": key, "status": "pending"}
+        self.assertEqual(client.post(path, json={**body, "points": "10.00"}, headers=headers).status_code, 201)
+        rpc.assert_called_once_with("affiliate_submit_claim", p_user=123, p_points="10.00",
+                                    p_phone="01123456789", p_key=key)
+
+    @patch("web.web_referral_routes._auth_uid", return_value=123)
+    @patch("web.web_referral_routes.allowed_admin_ids", return_value={456})
+    @patch("web.web_referral_routes._rpc")
+    def test_admin_requires_session_and_existing_allowlist(self, rpc, _admin, identity):
+        client = self.make_app().test_client()
+        path = "/api/web/admin/affiliate/claims"
+        self.assertEqual(client.get(path).status_code, 403)
+        identity.return_value = None
+        self.assertEqual(client.get(path).status_code, 401)
+        rpc.assert_not_called()
+
+    @patch("web.web_referral_routes._auth_uid", return_value=456)
+    @patch("web.web_referral_routes.allowed_admin_ids", return_value={456})
+    @patch("web.web_referral_routes._rpc")
+    def test_record_paid_with_private_proof(self, rpc, _admin, _uid):
+        key = str(UUID(int=1))
+        client = self.make_app().test_client()
+        path = "/api/web/admin/affiliate/claims/" + key
+        headers = {"Origin": WEB_ORIGIN}
+        self.assertEqual(client.post(path, data={"action": "paid"}, headers=headers).status_code, 400)
+        rpc.assert_not_called()
+        rpc.return_value = {"status": "paid"}
+        proof = b"%PDF-1.7\nexample"
+        data = {"action": "paid", "reference": " tng-001 ", "proof": (BytesIO(proof), "proof.pdf")}
+        self.assertEqual(client.post(path, data=data, headers=headers).status_code, 200)
+        rpc.assert_called_once_with("affiliate_review_claim", p_claim=key, p_admin=456,
+                                    p_action="paid", p_reference="TNG-001", p_reason=None,
+                                    p_content_type="application/pdf", p_proof="\\x" + proof.hex())
 
 
 if __name__ == "__main__":

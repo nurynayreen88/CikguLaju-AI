@@ -9,10 +9,14 @@ import os
 import re
 import json
 from decimal import Decimal
-from urllib.parse import urlencode
-from urllib.request import Request, urlopen
+from urllib.parse import urlencode, urlsplit
+from urllib.request import Request, urlopen, HTTPSHandler, build_opener
+from uuid import UUID
+from io import BytesIO
 from itsdangerous import URLSafeTimedSerializer, BadSignature, SignatureExpired
-from flask import Blueprint, request, jsonify, make_response
+from flask import Blueprint, request, jsonify, send_file
+from web.web_login_analytics import _NoRedirect
+from web.admin_usage_web import allowed_admin_ids
 
 bp = Blueprint("cikgulaju_web_referral", __name__)
 REF_COOKIE = "cikgulaju_web_referral"
@@ -46,15 +50,19 @@ def _rest(method, path, *, body=None):
     if not conf or conf.get("account_backend") != "supabase":
         raise RuntimeError("Shared Supabase not available")
     base, key = conf["supabase_url"].rstrip("/"), conf["supabase_key"]
-    if not base.startswith("https://") or len(key) < 20:
+    parts = urlsplit(base)
+    if (parts.scheme != "https" or not parts.hostname or parts.username or parts.password
+            or parts.port is not None or parts.path or parts.query or parts.fragment or len(key) < 20):
         raise RuntimeError("Shared Supabase not configured")
     data = None if body is None else json.dumps(body, separators=(",", ":")).encode()
-    req = Request(base + "/rest/v1/" + path, data=data, method=method,
-                  headers={"apikey": key, "Authorization": "Bearer " + key,
-                           "Accept": "application/json", "Content-Type": "application/json"})
-    with urlopen(req, timeout=8) as result:
-        blob = result.read(131073)
-        if len(blob) > 131072:
+    headers = {"apikey": key, "Accept": "application/json", "Content-Type": "application/json"}
+    if not key.startswith("sb_secret_"):
+        headers["Authorization"] = "Bearer " + key
+    req = Request(base + "/rest/v1/" + path, data=data, method=method, headers=headers)
+    limit = 4 * 1024 * 1024 + 4096 if path.startswith("affiliate_claim_proofs?") else 131072
+    with build_opener(HTTPSHandler(), _NoRedirect()).open(req, timeout=12) as result:
+        blob = result.read(limit + 1)
+        if len(blob) > limit:
             raise RuntimeError("Response too large")
         return json.loads(blob or b"null")
 
@@ -135,7 +143,13 @@ def my_referral():
         members = _rest("GET", "referral_members?" + urlencode({
             "referrer_user_id": "eq." + str(uid),
             "select": "referral_code,enabled", "limit": "1"}))
-        if not members or members[0].get("enabled") is not True:
+        if not members:
+            try:
+                can_join = _overview(uid).get("open") is True
+            except (RuntimeError, OSError):
+                can_join = False
+            return jsonify({"enabled": False, "can_join": can_join})
+        if members[0].get("enabled") is not True:
             return jsonify({"enabled": False})
         code = members[0]["referral_code"]
         if not isinstance(code, str) or not REF_PATTERN.fullmatch(code):
@@ -155,6 +169,179 @@ def my_referral():
         print("WEB REFERRAL member lookup unavailable:", type(exc).__name__, flush=True)
         return jsonify({"error": "referral temporarily unavailable"}), 503
 
+
+
+MAX_PROOF = 2 * 1024 * 1024
+
+
+def _rpc(name, **body):
+    return _rest("POST", "rpc/" + name, body=body)
+
+
+def _overview(uid):
+    return _rpc("affiliate_overview", p_user=uid)
+
+
+@bp.after_request
+def _private_response(response):
+    response.headers["Cache-Control"] = "no-store, private"
+    response.headers["Vary"] = "Cookie"
+    response.headers["X-Content-Type-Options"] = "nosniff"
+    return response
+
+
+def _affiliate_identity(*, admin=False, write=False):
+    uid = _auth_uid()
+    if uid is None:
+        return None, (jsonify(error="Sila log masuk semula."), 401)
+    if admin and uid not in allowed_admin_ids():
+        return None, (jsonify(error="Akses admin diperlukan."), 403)
+    if write and request.headers.get("Origin") != WEB_ORIGIN:
+        return None, (jsonify(error="Permintaan tidak sah."), 403)
+    return uid, None
+
+
+def _claim_result(data, success=200):
+    errors = {
+        "closed": (403, "Program affiliate belum dibuka."),
+        "disabled": (403, "Akaun affiliate ini tidak aktif."),
+        "invalid": (400, "Semak butiran yang diisi."),
+        "balance": (409, "Baki mata tersedia tidak mencukupi."),
+        "wallet_changed": (409, "Simpan dan sahkan semula nombor TNG eWallet."),
+        "request_conflict": (409, "Maklumat tuntutan ini telah berubah. Muat semula dan semak sejarah tuntutan."),
+        "missing": (404, "Tuntutan tidak dijumpai."),
+        "status": (409, "Status telah berubah atau tuntutan sedang diproses oleh admin lain."),
+        "reference_used": (409, "Rujukan transaksi ini sudah direkodkan."),
+    }
+    if not isinstance(data, dict):
+        raise RuntimeError("Invalid affiliate response")
+    if "error" in data:
+        code, message = errors.get(data["error"], (503, "Tuntutan belum dapat diproses."))
+        return jsonify(error=message), code
+    return jsonify(data), success
+
+
+def _confirmed_phone(body):
+    if not isinstance(body, dict) or body.get("confirmed") is not True:
+        raise ValueError("Confirmation required")
+    value = body.get("phone")
+    if not isinstance(value, str) or len(value) > 32:
+        raise ValueError("Invalid number")
+    phone = re.sub(r"[ -]", "", value.strip())
+    if phone.startswith("+60"):
+        phone = "0" + phone[3:]
+    elif phone.startswith("60"):
+        phone = "0" + phone[2:]
+    if not re.fullmatch(r"01[0-9]{8,9}", phone):
+        raise ValueError("Invalid number")
+    return phone
+
+
+def _json_body():
+    if not request.is_json or not 0 < (request.content_length or 0) <= 4096:
+        raise ValueError("Invalid JSON request")
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict):
+        raise ValueError("Invalid JSON object")
+    return data
+
+
+@bp.get("/api/web/affiliate")
+def affiliate_overview():
+    uid, error = _affiliate_identity()
+    return error if error is not None else _claim_result(_overview(uid))
+
+
+@bp.post("/api/web/affiliate/wallet")
+def affiliate_wallet():
+    uid, error = _affiliate_identity(write=True)
+    if error is not None:
+        return error
+    try:
+        phone = _confirmed_phone(_json_body())
+    except ValueError:
+        return jsonify(error="Isi dan sahkan nombor telefon berdaftar TNG eWallet yang sah."), 400
+    return _claim_result(_rpc("affiliate_save_wallet", p_user=uid, p_phone=phone))
+
+
+@bp.post("/api/web/affiliate/claims")
+def affiliate_submit():
+    uid, error = _affiliate_identity(write=True)
+    if error is not None:
+        return error
+    try:
+        body = _json_body()
+        phone = _confirmed_phone(body)
+        points = body.get("points")
+        if not isinstance(points, str) or not re.fullmatch(r"[0-9]{1,10}(?:\.[0-9]{1,2})?", points) or Decimal(points) < 10:
+            raise ValueError("Minimum claim")
+        key = str(UUID(body.get("key", "")))
+    except (ValueError, TypeError, AttributeError):
+        return jsonify(error="Sahkan nombor TNG eWallet dan masukkan sekurang-kurangnya 10 mata."), 400
+    return _claim_result(_rpc("affiliate_submit_claim", p_user=uid, p_points=points, p_phone=phone, p_key=key), 201)
+
+
+@bp.get("/api/web/admin/affiliate/claims")
+def affiliate_admin_list():
+    uid, error = _affiliate_identity(admin=True)
+    if error is not None:
+        return error
+    if _overview(uid).get("open") is not True:
+        return jsonify(open=False, items=[])
+    status = request.args.get("status", "pending")
+    page = request.args.get("page", "0")
+    if status not in ("pending", "processing", "paid", "rejected") or not re.fullmatch(r"[0-9]{1,5}", page):
+        return jsonify(error="Penapis tidak sah."), 400
+    query = urlencode({"status": "eq." + status,
+        "select": "id,user_id,points,phone_snapshot,status,requested_at,reviewer_id,payment_reference,rejection_reason",
+        "order": "requested_at.desc,id.desc", "limit": 26, "offset": int(page) * 25})
+    items = _rest("GET", "affiliate_claims?" + query)
+    return jsonify(open=True, items=items[:25], more=len(items) > 25, admin_id=str(uid))
+
+
+@bp.post("/api/web/admin/affiliate/claims/<uuid:claim_id>")
+def affiliate_admin_review(claim_id):
+    uid, error = _affiliate_identity(admin=True, write=True)
+    if error is not None:
+        return error
+    if not 0 < (request.content_length or 0) <= MAX_PROOF + 32768:
+        return jsonify(error="Had bukti bayaran ialah 2 MB."), 400
+    action = request.form.get("action")
+    reference = (request.form.get("reference") or "").strip().upper() or None
+    reason = (request.form.get("reason") or "").strip() or None
+    proof = content_type = None
+    if action == "paid":
+        file = request.files.get("proof")
+        raw = file.read(MAX_PROOF + 1) if file is not None else b""
+        signatures = {"image/png": b"\x89PNG\r\n\x1a\n", "image/jpeg": b"\xff\xd8\xff", "application/pdf": b"%PDF-"}
+        content_type = next((kind for kind, magic in signatures.items() if raw.startswith(magic)), None)
+        if not content_type or len(raw) > MAX_PROOF:
+            return jsonify(error="Muat naik bukti PNG, JPEG atau PDF sehingga 2 MB."), 400
+        proof = "\\x" + raw.hex()
+    return _claim_result(_rpc("affiliate_review_claim", p_claim=str(claim_id), p_admin=uid,
+        p_action=action, p_reference=reference, p_reason=reason, p_content_type=content_type, p_proof=proof))
+
+
+@bp.get("/api/web/admin/affiliate/claims/<uuid:claim_id>/proof")
+def affiliate_admin_proof(claim_id):
+    _, error = _affiliate_identity(admin=True)
+    if error is not None:
+        return error
+    rows = _rest("GET", "affiliate_claim_proofs?" + urlencode({"claim_id":"eq." + str(claim_id),
+                                                               "select":"content_type,content", "limit":1}))
+    if not rows:
+        return jsonify(error="Bukti tidak dijumpai."), 404
+    row = rows[0]
+    suffix = {"image/png":"png", "image/jpeg":"jpg", "application/pdf":"pdf"}[row["content_type"]]
+    raw = bytes.fromhex(row["content"][2:])
+    return send_file(BytesIO(raw), mimetype=row["content_type"], as_attachment=True,
+                     download_name=f"Bukti-TNG-{claim_id}.{suffix}")
+
+
+@bp.errorhandler(RuntimeError)
+@bp.errorhandler(OSError)
+def affiliate_unavailable(_):
+    return jsonify(error="Rekod affiliate belum dapat dibaca. Cuba semula."), 503
 
 def install(app):
     app.register_blueprint(bp)

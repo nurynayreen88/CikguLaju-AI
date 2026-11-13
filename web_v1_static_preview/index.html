@@ -444,7 +444,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     <button type="button" class="sidebar-tab" data-web-view="rpt" aria-controls="view-rpt"><span aria-hidden="true">📅</span> RPT 2027</button>
     <button type="button" class="sidebar-tab sidebar-tab--planned" data-web-view="kp2027" aria-controls="view-kp2027"><span aria-hidden="true">📚</span> KP2027 • Tahun 1 <span class="sidebar-coming-status">Akan Datang</span></button>
     <button type="button" class="sidebar-tab" data-web-view="payment" aria-controls="view-payment"><span aria-hidden="true">🏆</span> Rakan Pembangun</button>
-    <button type="button" id="web-referral-tab" class="sidebar-tab" data-web-view="referral" aria-controls="view-referral" hidden><span aria-hidden="true">🎁</span> Referral Saya</button>
+    <button type="button" id="web-referral-tab" class="sidebar-tab" data-web-view="referral" aria-controls="view-referral" hidden><span aria-hidden="true">🎁</span> Affiliate Saya</button>
     <button type="button" class="sidebar-tab" data-web-view="feedback" aria-controls="view-feedback"><span aria-hidden="true">💬</span> Komen &amp; Cadangan</button>
     <button type="button" id="web-admin-tab" class="sidebar-tab" data-web-view="admin" aria-controls="view-admin" hidden><span aria-hidden="true">📊</span> Analisis Admin</button>
      <button type="button" class="sidebar-tab" data-web-view="guide" aria-controls="view-guide"><span aria-hidden="true">📖</span> Panduan</button>
@@ -757,8 +757,8 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <p class="notice">RPT boleh dimuat turun secara percuma. Cetakan nama guru, nama sekolah dan logo sekolah hanya untuk Rakan Pembangun atau langganan aktif. RPH mempunyai 10 janaan percuma yang dikongsi bersama Telegram.</p>
 </section>
 <section id="view-referral" class="app-view" aria-labelledby="view-referral-heading" hidden>
- <h2 id="view-referral-heading">🎁 Referral Saya</h2>
- <p>Program referral tertutup CikguLaju. Link ini terus membawa rakan ke Web dan kod jemputan dikekalkan semasa log masuk Telegram.</p>
+ <h2 id="view-referral-heading">🎁 Affiliate Saya</h2>
+ <p>Kongsi pautan affiliate CikguLaju. Mata diperoleh apabila bayaran pertama rakan disahkan.</p>
  <p id="web-referral-status" role="status" aria-live="polite">Menyemak status referral…</p>
  <div id="web-referral-details" hidden>
   <label for="web-referral-link">Pautan Referral Web</label>
@@ -766,6 +766,25 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <div class="profile-actions"><button type="button" id="web-referral-copy">📋 Salin Pautan</button><button type="button" id="web-referral-share">📤 Kongsi Pautan</button></div>
   <p>Rakan mendaftar: <strong id="web-referral-signups">0</strong> · Bayaran layak: <strong id="web-referral-paid">0</strong> · Mata: <strong id="web-referral-points">0.00</strong></p>
  </div>
+ <section id="web-affiliate-claim" class="teacher-timetable-section" aria-labelledby="affiliate-claim-heading" hidden>
+  <h3 id="affiliate-claim-heading">Claim Ganjaran</h3>
+  <p>Baki tersedia <strong id="affiliate-available">—</strong> mata. Minimum 10 mata (RM10).</p>
+  <form id="affiliate-wallet-form" class="teacher-profile-form">
+   <label for="affiliate-phone">Nombor Telefon Berdaftar TNG eWallet</label>
+   <input id="affiliate-phone" type="tel" inputmode="tel" autocomplete="off" maxlength="32" placeholder="01XXXXXXXX" required>
+   <label><input id="affiliate-confirm" type="checkbox" required> Saya mengesahkan nombor telefon berdaftar TNG eWallet ini betul.</label>
+   <div class="profile-actions"><button type="submit" id="affiliate-save-wallet">Simpan Nombor</button></div>
+  </form>
+  <form id="affiliate-claim-form" class="teacher-profile-form" hidden>
+   <label for="affiliate-amount">Jumlah Mata Dituntut</label>
+   <input id="affiliate-amount" type="number" inputmode="decimal" min="10" step="0.01" required>
+   <p id="affiliate-amount-hint">1 mata bersamaan RM1. Bayaran diproses secara manual oleh admin.</p>
+   <div class="profile-actions"><button id="affiliate-submit" type="submit">Hantar Tuntutan</button></div>
+  </form>
+  <p id="affiliate-status" role="status" aria-live="polite"></p>
+  <h4>Sejarah Tuntutan</h4>
+  <ul id="affiliate-history"></ul>
+ </section>
 </section>
 <section id="view-payment" class="app-view" aria-labelledby="view-payment-heading" hidden>
 <h2 id="view-payment-heading">🏆 Rakan Pembangun</h2>
@@ -836,6 +855,18 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <p class="notice" id="web-admin-rph-note">Rekod janaan lama mungkin belum lengkap.</p>
 <p class="admin-stats-caption" id="web-admin-updated"></p>
 <button type="button" id="web-admin-refresh">🔄 Muat Semula Statistik</button>
+<section id="affiliate-admin" class="teacher-timetable-section" aria-labelledby="affiliate-admin-heading" hidden>
+ <h3 id="affiliate-admin-heading">Pengurusan Affiliate</h3>
+ <label for="affiliate-admin-filter">Status tuntutan</label>
+ <select id="affiliate-admin-filter">
+  <option value="pending">Menunggu</option><option value="processing">Dalam Proses</option>
+  <option value="paid">Dibayar</option><option value="rejected">Ditolak</option>
+ </select>
+ <button id="affiliate-admin-refresh" type="button">Muat Semula Tuntutan</button>
+ <p id="affiliate-admin-status" role="status" aria-live="polite"></p>
+ <div id="affiliate-admin-list"></div>
+ <button id="affiliate-admin-more" type="button" hidden>Lagi Tuntutan</button>
+</section>
 <section class="teacher-timetable-section" aria-labelledby="web-feedback-admin-heading">
  <h3 id="web-feedback-admin-heading">💬 Komen &amp; Cadangan Pengguna</h3>
  <p class="notice">Komen daripada Web dan Telegram disatukan dalam rekod CikguLaju; hanya admin boleh melihat senarai ini.</p>
@@ -1793,7 +1824,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/rph-today.js?v=science-copy-expanded-20261113"></script>
 <script src="/assets/teacher-profile.js?v=profile-guide-20261111"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
-<script src="/assets/web-referral.js?v=private-menu-20261111"></script>
+<script src="/assets/web-referral.js?v=affiliate-claims-20261114"></script>
 <script src="/assets/admin-usage.js?v=private-menu-20261111"></script>
 <script src="/assets/web-feedback.js?v=comments-inbox-20261112"></script>
 <script src="/assets/special-activities.js?v=source-draft-20261106"></script>
