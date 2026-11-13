@@ -96,7 +96,7 @@ def install(ns):
         web = "https://cikgulaju-web.onrender.com/?affiliate=1"
         if not row or row.get("enabled") is not True:
             if row is None and open_program:
-                return send(uid, "🎁 Daftar affiliate dengan nombor telefon berdaftar TNG eWallet.",
+                return send(uid, "🎁 Daftar affiliate dengan nombor akaun TNG eWallet (DuitNow).",
                             [[{"text": "Sertai Affiliate", "url": web}]])
             return send(uid, "🔒 Program affiliate tidak tersedia untuk akaun ini.")
         link = link_for(uid, row["referral_code"])
