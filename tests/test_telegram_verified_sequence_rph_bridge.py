@@ -67,6 +67,35 @@ class NativeMathScienceTests(unittest.TestCase):
         with self.assertRaises(SourceUnavailable):
             _resolve(self.runtime,2,"MATH",self.unit,"M2-PDP-007")
 
+    def test_science_copy_pages_follow_sp_when_database_ids_are_reused(self):
+        for year, unit_code, title, code, sk, sp, pages in (
+            (2, "4.1", "Haiwan", "SCI-Y2-PDP-004", "4.1", "4.1.1", "36–37"),
+            (2, "4.1", "Haiwan", "SCI-Y2-PDP-004", "4.1", "4.1.4", "41–42"),
+            (3, "Manusia", "Manusia / 3.1 Gigi", "SCI-Y3-PDP-005", "3.1", "3.1.1", "30–31"),
+            (3, "Manusia", "Manusia / 3.1 Gigi", "SCI-Y3-PDP-005", "3.1", "3.1.5", "38"),
+        ):
+            with self.subTest(year=year, code=code, sp=sp):
+                row = {"unit_code": unit_code, "unit_title": title, "pdp_sequence_code": code,
+                       "sk_code": sk, "sp_code": sp}
+                self.runtime._sm2542_rows.return_value = [row]
+                self.runtime._sm2542_unique_units.return_value = [(unit_code, title)]
+                app = Flask(__name__)
+                app.register_blueprint(create_native_sequence_rph_blueprint(self.runtime))
+                client = app.test_client()
+                args = {"year": year, "subject": "SCIENCE", "unit": _unit_catalog(
+                    [(unit_code, title)])[0]["value"]}
+                route = "/internal/rph/v1/sequence/lessons"
+                with patch.dict(os.environ, {"CIKGULAJU_WEB_NATIVE_RPH_ENABLED": "1",
+                                             "CIKGULAJU_AUTHORITATIVE_API_TOKEN": "x" * 40}):
+                    headers = {"Authorization": "Bearer " + "x" * 40}
+                    item, = client.get(route, query_string=args, headers=headers).json["items"]
+                    self.assertEqual(item["science_copy_pages"], pages)
+                    self.assertEqual(item["textbook_ref"], f"Buku Teks m/s {pages}")
+                    row["textbook_ref"] = "Buku Teks m/s 98"
+                    item, = client.get(route, query_string=args, headers=headers).json["items"]
+                    self.assertNotIn("science_copy_pages", item)
+                    self.assertEqual(item["textbook_ref"], "Buku Teks m/s 98")
+
     def test_unit_and_pdp_routes_require_strong_server_auth(self):
         app=Flask(__name__)
         app.register_blueprint(create_native_sequence_rph_blueprint(self.runtime))

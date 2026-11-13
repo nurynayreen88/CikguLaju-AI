@@ -28,6 +28,31 @@ from web.telegram_verified_rpt_rph_bridge import (
 SUBJECTS = {"MATH": "Matematik", "SCIENCE": "Sains"}
 MAX_FILE = 15 * 1024 * 1024
 
+# Printed pages checked against the SK editions of the original textbooks.
+# Resolve via SK/SP because the older Science DB snapshots reuse PdP IDs.
+SCIENCE_TEXTBOOK_PAGES = {
+    2: {
+        "4.1.1": "36–37", "4.1.2": "38", "4.1.3": "39–40",
+        "4.1.4": "41–42", "4.1.5": "45–46", "4.1.6": "43–44", "4.1.7": "46",
+    },
+    3: {
+        "3.1.1": "30–31", "3.1.2": "32–33", "3.1.3": "34–36",
+        "3.1.4": "37–38", "3.1.5": "38",
+    },
+}
+
+
+def _science_textbook_pages(year, code, rows):
+    if not re.fullmatch(rf"SCI-Y{year}-PDP-[0-9]{{3}}", code):
+        return None
+    standards = {(row.get("sk_code"), row.get("sp_code")) for row in rows}
+    if len(standards) != 1:
+        return None
+    sk, sp = next(iter(standards))
+    if not isinstance(sp, str) or sk != sp.rsplit(".", 1)[0]:
+        return None
+    return SCIENCE_TEXTBOOK_PAGES.get(year, {}).get(sp)
+
 
 def _source(runtime, year, subject):
     if type(year) is not int or not 1 <= year <= 6 or subject not in SUBJECTS:
@@ -289,6 +314,11 @@ def create_native_sequence_rph_blueprint(runtime):
                 entry = {"value": code, "label": label}
                 if refs:
                     entry["textbook_ref"] = " • ".join(refs[:3])
+                if sub == "SCIENCE":
+                    checked_pages = _science_textbook_pages(year, code, rows)
+                    if checked_pages and (not refs or refs == [f"Buku Teks m/s {checked_pages}"]):
+                        entry["science_copy_pages"] = checked_pages
+                        entry.setdefault("textbook_ref", f"Buku Teks m/s {checked_pages}")
                 items.append(entry)
         except (ValueError, SourceUnavailable):
             return jsonify({"error": "Native PdP choices unavailable"}), 503
