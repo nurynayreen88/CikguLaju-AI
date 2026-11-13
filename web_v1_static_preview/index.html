@@ -412,7 +412,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .web-feedback-card-top small,.web-feedback-owner{color:#60788e}
 .web-feedback-text{white-space:pre-wrap;margin:10px 0 0;line-height:1.55}
 </style>
-<link rel="stylesheet" href="/assets/pbd.css?v=roster-20261113">
+<link rel="stylesheet" href="/assets/pbd.css?v=assessment-20261113">
 </head>
 <body>
 <div class="wrap">
@@ -583,11 +583,18 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
         <label>Tempoh pelaporan<input id="pbd-period" maxlength="120"></label>
         <p>Guru memilih TP1–TP6 berdasarkan Standard Prestasi DSKP dan bukti yang dikumpulkan.</p>
       </div>
+      <div class="pbd-fields" aria-label="Tapis senarai murid">
+        <label>Cari murid<input id="pbd-student-search" type="search" placeholder="Nama atau kod murid" autocomplete="off"></label>
+        <label>Paparan<select id="pbd-student-filter"><option value="all">Semua murid</option><option value="pending">Belum selesai dinilai</option><option value="done">Selesai dinilai</option></select></label>
+      </div>
+      <p id="pbd-student-summary" class="notice" role="status"></p>
       <div id="pbd-bulk" class="pbd-actions">
+        <label class="pbd-select-visible"><input id="pbd-select-visible" type="checkbox"> Pilih semua yang dipaparkan</label>
         <label>Kriteria<select id="pbd-bulk-criterion"><option value="status1">Kriteria 1</option><option value="status2">Kriteria 2</option></select></label>
         <label>Status<select id="pbd-bulk-status"><option>Boleh sendiri</option><option>Dengan bimbingan</option><option>Belum menguasai</option><option>Belum dinilai</option></select></label>
-        <button id="pbd-apply" type="button">Tanda murid dipilih</button>
+        <button id="pbd-apply" type="button" disabled>Tetapkan status murid dipilih</button>
       </div>
+      <p id="pbd-bulk-result" class="notice" role="status" hidden></p>
       <div id="pbd-entry-rows"></div>
       <div class="pbd-actions">
         <button type="submit">Simpan rekod</button>
@@ -1740,7 +1747,7 @@ rphWord.addEventListener("click",()=>generateRphFile("word"));
 rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
-<script src="/assets/pbd.js?v=roster-20261113"></script>
+<script src="/assets/pbd.js?v=assessment-20261113"></script>
 <script src="/assets/rph-today.js?v=pbd-count-20261113"></script>
 <script src="/assets/teacher-profile.js?v=profile-guide-20261111"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>

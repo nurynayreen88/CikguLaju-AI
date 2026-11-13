@@ -9,6 +9,8 @@
 #view-pbd input:not([type=checkbox]),#view-pbd select,#view-pbd textarea{width:100%;max-width:100%;box-sizing:border-box;margin:.25rem 0;padding:.55rem;border:1px solid #9fb3c3;border-radius:6px;background:#fff;color:#18334b;font:inherit}
 #view-pbd .pbd-actions{display:flex;gap:.5rem;flex-wrap:wrap;align-items:end;margin:.8rem 0}
 #view-pbd button{width:auto;min-width:0;margin:0}
+#view-pbd button:disabled{opacity:.55;cursor:not-allowed}
+#view-pbd .pbd-select-visible{align-self:center}
 #view-pbd .pbd-student{border-top:1px solid #d9e5ee;padding:.65rem 0}
 #view-pbd .pbd-student>label{margin-bottom:.35rem}
 #view-pbd #pbd-history{padding-left:1.25rem}
