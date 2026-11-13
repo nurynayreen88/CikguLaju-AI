@@ -972,7 +972,7 @@ def create_blueprint():
                                       "action": "Download"})
                 except Exception:
                     missing.append("Workbook")
-                if year in (3, 4):
+                if year in (2, 3, 4):
                     # The additional APIs are optional until Telegram deploys
                     # them. A missing new route must not hide existing Workbook.
                     try:
@@ -1036,7 +1036,7 @@ def create_blueprint():
             return error
         try:
             year, sub, unit, token, number = _extra_selection()
-            if sub != "ENGLISH" or year not in (3, 4):
+            if sub != "ENGLISH" or year not in (2, 3, 4):
                 raise ValueError("Wrong Student Book source")
         except (ValueError, TypeError):
             return jsonify({"error": "Pilihan Student Book tidak sah"}), 400
@@ -1056,17 +1056,22 @@ def create_blueprint():
             return error
         try:
             year, sub, unit, token, number = _extra_selection()
-            if sub != "ENGLISH" or year not in (3, 4) or not 1 <= track <= 4:
+            if sub != "ENGLISH" or year not in (2, 3, 4) or not 1 <= track <= 4:
                 raise ValueError("Invalid track")
         except (ValueError, TypeError):
             return jsonify({"error": "Pilihan trek audio tidak sah"}), 400
         try:
-            from web.native_telegram_extra_materials_20261106 import english_audio_mp3
-            data = english_audio_mp3(year, number, track)
+            from web.native_telegram_extra_materials_20261106 import english_audio_mp3, english_audio_wma
+            if year == 2:
+                data = english_audio_wma(number, track)
+                mime, extension = "audio/x-ms-wma", "wma"
+            else:
+                data = english_audio_mp3(year, number, track)
+                mime, extension = "audio/mpeg", "mp3"
         except Exception:
             return jsonify({"error": "Trek audio belum disahkan atau tidak tersedia"}), 503
-        return send_file(BytesIO(data), mimetype="audio/mpeg",
+        return send_file(BytesIO(data), mimetype=mime,
                          as_attachment=True, conditional=False,
-                         download_name=f"CikguLaju_English_Y{year}_Lesson_{number:03d}_Track_{track}.mp3")
+                         download_name=f"CikguLaju_English_Y{year}_Lesson_{number:03d}_Track_{track}.{extension}")
 
     return bp

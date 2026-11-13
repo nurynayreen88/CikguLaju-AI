@@ -119,10 +119,11 @@ def music_source_links(year, unit, lesson, *, opener=None):
 
 ENGLISH_ASSET_SOURCE = "telegram-english-lesson-locked-assets-v1"
 MAX_AUDIO = 12 * 1024 * 1024
+WMA_HEADER = bytes.fromhex("3026b2758e66cf11a6d900aa0062ce6c")
 
 
 def _english_asset_selection(year, lesson):
-    if type(year) is not int or year not in (3, 4) or type(lesson) is not int or not 1 <= lesson <= 160:
+    if type(year) is not int or year not in (2, 3, 4) or type(lesson) is not int or not 1 <= lesson <= 160:
         raise ValueError("Unsupported English material selection")
 
 
@@ -133,12 +134,13 @@ def english_student_book_metadata(year, lesson, *, opener=None):
     if data is None:
         return None
     pages = data.get("pages")
+    minimum, maximum = {2: (58, 117), 3: (1, 135), 4: (1, 177)}[year]
     if (data.get("source") != ENGLISH_ASSET_SOURCE or data.get("available") is not True
             or data.get("year") != year or data.get("lesson") != lesson
             or data.get("type") != "textbook" or data.get("format") != "pdf"
             or data.get("status") != "VERIFIED_SOURCE"
             or not isinstance(pages, list) or not 1 <= len(pages) <= 4
-            or not all(type(p) is int and 1 <= p <= (135 if year == 3 else 177) for p in pages)
+            or not all(type(p) is int and minimum <= p <= maximum for p in pages)
             or pages != list(range(pages[0], pages[-1] + 1))
             or not isinstance(data.get("title"), str)
             or not 10 <= len(data["title"]) <= 220):
@@ -192,4 +194,16 @@ def english_audio_mp3(year, lesson, index, *, opener=None):
     if raw is None or len(raw) < 1000 or not (
             raw.startswith(b"ID3") or (raw[0] == 0xff and (raw[1] & 0xe0) == 0xe0)):
         raise NativeRPHUnavailable("Original MP3 unavailable")
+    return raw
+
+
+def english_audio_wma(lesson, index, *, opener=None):
+    _english_asset_selection(2, lesson)
+    if type(index) is not int or not 1 <= index <= 4:
+        raise ValueError("Invalid verified track")
+    raw = _get("/internal/rph/v1/english-extras/audio.wma",
+               {"year": 2, "lesson": lesson, "track": index},
+               accept="audio/x-ms-wma", limit=MAX_AUDIO, opener=opener)
+    if raw is None or len(raw) < 1000 or not raw.startswith(WMA_HEADER):
+        raise NativeRPHUnavailable("Original WMA unavailable")
     return raw

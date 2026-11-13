@@ -123,6 +123,24 @@ class WebEnglishSourceTests(unittest.TestCase):
         self.assertEqual([row["type"] for row in reply.json["items"]], ["textbook", "workbook", "audio"])
         self.assertTrue(all("lesson=e-3-045" in row["url"] for row in reply.json["items"]))
 
+    def test_year_two_original_wma_is_a_lesson_bound_download(self):
+        from web.native_telegram_extra_materials_20261106 import WMA_HEADER
+        row = next(r for r in source_records(2, "ENGLISH") if r["lesson"] == 26)
+        params = {"year": 2, "subject": "ENGLISH", "unit": row["unit"], "lesson": row["token"]}
+        bridge = "web.native_telegram_extra_materials_20261106."
+        audio = WMA_HEADER + b"A" * 1600
+        with self.account(), patch(bridge + "english_workbook_metadata", return_value=None), patch(
+                bridge + "english_student_book_metadata", return_value="Student Book m/s 70"), patch(
+                bridge + "english_audio_tracks", return_value=[{"index": 1, "title": "CD2 Track 35"}]), patch(
+                bridge + "english_audio_wma", return_value=audio) as source:
+            reply = self.client.get("/api/web/rph/extra-materials", query_string=params)
+            self.assertEqual([item["type"] for item in reply.json["items"]], ["textbook", "audio"])
+            response = self.client.get(reply.json["items"][1]["url"])
+        source.assert_called_once_with(26, 1)
+        self.assertEqual(response.data, audio)
+        self.assertEqual(response.mimetype, "audio/x-ms-wma")
+        self.assertTrue(response.headers["Content-Disposition"].endswith(".wma"))
+
     def test_year_five_and_six_workbook_only_for_exact_lesson(self):
         bridge = "web.native_telegram_extra_materials_20261106."
         for year, lesson in ((5, 29), (6, 13)):

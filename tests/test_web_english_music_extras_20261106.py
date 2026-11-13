@@ -25,7 +25,11 @@ class ExtraMaterialsWebTests(unittest.TestCase):
     def test_workbook_is_bound_to_source_token_not_rpt_row(self):
         with self._account(),patch(
              "web.native_telegram_extra_materials_20261106.english_workbook_metadata",
-             return_value="English Tahun 2 • Lesson 002 • Buku Aktiviti m/s 58"):
+             return_value="English Tahun 2 • Lesson 002 • Buku Aktiviti m/s 58"), patch(
+             "web.native_telegram_extra_materials_20261106.english_student_book_metadata",
+             return_value=None), patch(
+             "web.native_telegram_extra_materials_20261106.english_audio_tracks",
+             return_value=[]):
             response=self.client.get("/api/web/rph/extra-materials",query_string=self.sel)
         self.assertEqual(response.status_code,200)
         self.assertEqual(len(response.json["items"]),1)
