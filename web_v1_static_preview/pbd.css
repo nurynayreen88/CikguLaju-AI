@@ -2,6 +2,8 @@
 #view-pbd [hidden]{display:none!important}
 #view-pbd legend,#view-pbd summary{font-weight:700}
 #view-pbd summary{cursor:pointer}
+#pbd-paste-panel{padding:.7rem;border:1px solid #d9e5ee;border-radius:8px}
+#pbd-paste-panel[open] summary{margin-bottom:.6rem}
 #view-pbd .pbd-fields,#view-pbd .pbd-student-fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:.7rem;align-items:end}
 #view-pbd label{display:block;font-weight:600}
 #view-pbd input:not([type=checkbox]),#view-pbd select,#view-pbd textarea{width:100%;max-width:100%;box-sizing:border-box;margin:.25rem 0;padding:.55rem;border:1px solid #9fb3c3;border-radius:6px;background:#fff;color:#18334b;font:inherit}
