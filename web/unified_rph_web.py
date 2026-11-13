@@ -493,6 +493,28 @@ def _teacher_context():
     return {"class": cls.strip(), "date": dt, "time": tm, "students": students}
 
 
+def _fill_roster_count(teacher, account):
+    if teacher["students"] or not teacher["class"]:
+        return
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    from web.pbd_store import StorageError, roster_count, scope
+    from web_v1_telegram_auth_routes import _config
+
+    conf = _config()
+    uid = account.get("telegram_user_id")
+    if not conf or conf.get("account_backend") != "supabase" or type(uid) is not int or uid <= 0:
+        return
+    school_year = (date.fromisoformat(teacher["date"]).year if teacher["date"]
+                   else datetime.now(ZoneInfo("Asia/Kuala_Lumpur")).year)
+    try:
+        count = roster_count(conf, uid, scope(teacher["class"], school_year))
+    except StorageError:
+        return
+    if 1 <= count <= 200:
+        teacher["students"] = str(count)
+
+
 def _docx(data):
     """Word and browser print use the same Telegram three-table RPH layout."""
     from web.rph_table_layout import build_rph_table_docx
@@ -509,7 +531,7 @@ def create_blueprint():
         resp.headers["Vary"] = "Cookie"
         return resp
 
-    def selected_rph(*, require_generation_access=True):
+    def selected_rph(*, require_generation_access=True, fill_roster_count=False):
         """Authenticate every request; check quota only for actual paid/trial
         preview and document generation, not read-only source availability.
         No RPH content or file bytes leave the availability endpoint.
@@ -539,6 +561,8 @@ def create_blueprint():
             teacher = _teacher_context()
         except (ValueError, TypeError):
             return None, (jsonify({"error": "Pilihan Tahun/Subjek/Unit/PdP tidak sah"}), 400)
+        if fill_roster_count:
+            _fill_roster_count(teacher, account)
         # BM's REAL Telegram flow uses verified_pdp_sequence, NOT rpt_entries.
         # Never reinterpret an opaque BM PdP token as an RPT row ID.
         if subject == "BM":
@@ -835,7 +859,7 @@ def create_blueprint():
 
     @bp.get("/api/web/rph/word")
     def word():
-        selected, err = selected_rph()
+        selected, err = selected_rph(fill_roster_count=True)
         if err is not None:
             return err
         document, error, trial_remaining = _native_document(selected, "word")
@@ -856,7 +880,7 @@ def create_blueprint():
 
     @bp.get("/api/web/rph/pdf")
     def pdf():
-        selected, err = selected_rph()
+        selected, err = selected_rph(fill_roster_count=True)
         if err is not None:
             return err
         document, error, trial_remaining = _native_document(selected, "pdf")

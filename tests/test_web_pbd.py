@@ -29,9 +29,25 @@ class PbdTests(TestCase):
             rejected = (jsonify({"error":"Sila log masuk"}), 401)
         with patch.object(pbd, "_auth", return_value=(None, None, rejected)):
             self.assertEqual(self.client.get(self.url + "classes").status_code, 401)
+            self.assertEqual(self.client.get(self.url + "roster-count" + self.query).status_code, 401)
         with patch.object(pbd, "one") as lookup:
             self.assertEqual(self.client.get(self.url + "roster?class=3+Bestari&year=2026").status_code, 400)
             lookup.assert_not_called()
+
+    def test_roster_count_only_returns_count_for_the_saved_class_and_year(self):
+        with patch.object(pbd_store, "request_rows", return_value=[{"students":self.students}]) as rows:
+            result = self.client.get(self.url + "roster-count" + self.query)
+            self.assertEqual(result.get_json(), {"count":1})
+            self.assertIn("no-store", result.headers["Cache-Control"])
+            self.assertEqual(rows.call_args.args[1:], (self.uid, pbd.ROSTERS, "GET", {
+                "class_name":"eq.3 Amanah", "school_year":"eq.2026", "select":"students", "limit":1,
+            }))
+            rows.reset_mock()
+            self.assertEqual(self.client.get(
+                self.url + "roster-count?class=3+Bestari&year=2026").status_code, 400)
+            rows.assert_not_called()
+            rows.return_value = []
+            self.assertEqual(self.client.get(self.url + "roster-count" + self.query).get_json(), {"count":0})
 
     def test_import_preview_keeps_only_name_and_class_code(self):
         data = io.BytesIO()

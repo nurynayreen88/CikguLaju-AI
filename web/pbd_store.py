@@ -62,6 +62,11 @@ def one(conf, uid, table, filters):
     return rows[0] if rows else None
 
 
+def roster_count(conf, uid, filters):
+    row = one(conf, uid, ROSTERS, {**filters, "select": "students"})
+    return len(row["students"]) if row else 0
+
+
 def write(conf, uid, table, filters, payload, version=""):
     method = "PATCH" if version else "POST"
     if version:

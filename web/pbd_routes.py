@@ -10,7 +10,9 @@ from zipfile import BadZipFile, ZipFile
 
 from flask import Blueprint, Response, jsonify, request
 
-from web.pbd_store import Conflict, RECORDS, ROSTERS, StorageError, one, request_rows, scope, write
+from web.pbd_store import (
+    Conflict, RECORDS, ROSTERS, StorageError, one, request_rows, roster_count, scope, write,
+)
 from web.pbd_xlsx import read_rows
 from web.teacher_profile_routes import _auth
 from web.teacher_profile_store import ProfileUnavailable, ProfileValidation, get_profile
@@ -290,6 +292,15 @@ def roster():
         payload.update(class_name=cls, school_year=year)
     saved = write(conf, uid, ROSTERS, filters, payload, version)
     return jsonify({k: saved[k] for k in ("students", "version")})
+
+
+@bp.get("/roster-count")
+def count_roster():
+    conf, uid, err = _auth()
+    if err is not None:
+        return err
+    filters, _, _ = scoped(conf, uid)
+    return jsonify({"count": roster_count(conf, uid, filters)})
 
 
 @bp.post("/import")
