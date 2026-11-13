@@ -29,6 +29,7 @@ def install(runtime):
             cid,
             "📚 <b>Sediakan RPH</b>\n\n"
             "📝 <b>RPH Harian</b>\n"
+            "Bahan Bahasa Inggeris mengikut kurikulum Sekolah Kebangsaan (SK). "
             "Untuk pengajaran biasa mengikut kurikulum. Pilih "
             "<b>Tahun/Tingkatan → Subjek → Tema/Unit/Tajuk → Lesson/PdP</b>. "
             "SK/SP, RPT/SOW, buku teks dan buku aktiviti dipadankan secara "

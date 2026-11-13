@@ -22,6 +22,13 @@ MAX_PDF = 8 * 1024 * 1024
 MAX_AUDIO = 12 * 1024 * 1024
 ID = re.compile(r"[A-Za-z0-9_-]{15,100}\Z")
 REF = re.compile(r"CD[1-9][0-9]? Track [1-9][0-9]{0,2}\Z")
+# Primary Year 4 SK SOW, printed pp. 81, 145 and 203. Match the exact
+# legacy reference so a future correction cannot be silently overridden.
+YEAR4_STUDENT_BOOK_CORRECTIONS = {
+    43: ("27, 28, 29, 30, 31", [121]),
+    103: ("73, 74–75", [73]),
+    157: ("110", [110, 111]),
+}
 
 
 def _source_row(runtime, year, lesson):
@@ -50,13 +57,21 @@ def _book_selection(runtime, year, lesson):
     if row is None:
         return None
     state = _lesson_state(row, year, lesson)
-    # The existing Y4 L43 and L103 lists include conflicting pages.
-    # Keep these Web excerpts unavailable until the source is corrected.
-    if year == 4 and lesson in (43, 103):
-        return None
-    if year == 4 and not runtime._en34_verified_sb_pages_v25230(row, year):
-        return None
-    pages = runtime._en_book_pages_v25232(state, "textbook")
+    if year == 4:
+        reference = runtime._en34_verified_sb_pages_v25230(row, year)
+        if not reference:
+            return None
+        correction = YEAR4_STUDENT_BOOK_CORRECTIONS.get(lesson)
+        if correction and reference == correction[0]:
+            pages = correction[1]
+        elif correction and reference not in (
+            str(correction[1][0]), "–".join(map(str, correction[1])),
+        ):
+            return None
+        else:
+            pages = runtime._en_book_pages_v25232(state, "textbook")
+    else:
+        pages = runtime._en_book_pages_v25232(state, "textbook")
     maximum = YEAR3_SB_PAGE_COUNT if year == 3 else 177
     if (not isinstance(pages, list) or not 1 <= len(pages) <= 4
             or not all(type(p) is int and 1 <= p <= maximum for p in pages)

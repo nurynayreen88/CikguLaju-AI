@@ -26,7 +26,9 @@ def sanitize(text):
 
 
 def install(runtime):
-    original = runtime.send
+    original = getattr(runtime, "send", None)
+    if not callable(original):
+        return False
     if getattr(original, "_cikgulaju_subscription_price_guard", False):
         return True
 

@@ -15,20 +15,33 @@ from web.telegram_provisional_arab_music_api import (
 
 
 class EnglishWorkbookMaterials(unittest.TestCase):
-    def test_source_only_verified_year2_to_4(self):
-        for year, lesson in ((2,2),(3,8),(4,30)):
+    def test_source_only_verified_year2_to_6(self):
+        for year, lesson in ((2,2),(3,8),(4,30),(5,29),(6,1)):
             with self.subTest(year=year):
                 source=_material(year,lesson)
                 self.assertIsNotNone(source)
-                self.assertTrue(source["path"].is_file())
+                self.assertTrue(all(path.is_file() for path, _ in source["pages"]))
                 data=_extract(source)
                 self.assertTrue(data.startswith(b"%PDF-"))
                 self.assertEqual(len(PdfReader(BytesIO(data)).pages),
-                                 source["last"]-source["first"]+1)
+                                 len(source["pages"]))
                 self.assertLess(len(data),8*1024*1024)
-        self.assertIsNone(_material(5,2))
+        self.assertIsNone(_material(5,16))
+        self.assertIsNone(_material(6,16))
         self.assertIsNone(_material(3,1))
         self.assertIsNone(_material(4,999))
+
+    def test_upper_primary_excerpts_match_original_pdf_pages(self):
+        for year, lesson, expected in ((5, 29, (18, 19)), (6, 13, (8, 16))):
+            with self.subTest(year=year, lesson=lesson):
+                source = _material(year, lesson)
+                self.assertIsNotNone(source)
+                self.assertTrue(source["label"].endswith(", ".join(map(str, expected))))
+                excerpt = PdfReader(BytesIO(_extract(source)))
+                for actual, (path, index) in zip(excerpt.pages, source["pages"], strict=True):
+                    original = PdfReader(path, strict=True).pages[index - 1]
+                    self.assertEqual(actual.get_contents().get_data(),
+                                     original.get_contents().get_data())
 
     def test_pdf_route_requires_bearer_and_never_returns_whole_book_part(self):
         app=Flask(__name__)
