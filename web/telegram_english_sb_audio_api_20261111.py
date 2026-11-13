@@ -1,8 +1,10 @@
-"""Read-only Web access to the existing Telegram English Year 3–4 materials."""
+"""Read-only Web access to the existing Telegram English Year 2–4 materials."""
 from __future__ import annotations
 
 from io import BytesIO
 from pathlib import Path
+from threading import Lock
+from time import monotonic
 import re
 
 from flask import Blueprint, Response, jsonify, request
@@ -14,12 +16,15 @@ from resources.english.y3.student_book_repaired_source import (
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = "telegram-english-lesson-locked-assets-v1"
-BOOK_PARTS = frozenset((
-    "y4_student_001_020.pdf", "y4_student_021_100.pdf",
-    "y4_student_101_177.pdf",
-))
+BOOK_PARTS = {
+    "Tahun 2": frozenset(("y12_student_041_060.pdf", "y12_student_061_080.pdf",
+                         "y12_student_081_120.pdf")),
+    "Tahun 4": frozenset(("y4_student_001_020.pdf", "y4_student_021_100.pdf",
+                         "y4_student_101_177.pdf")),
+}
 MAX_PDF = 8 * 1024 * 1024
 MAX_AUDIO = 12 * 1024 * 1024
+WMA_HEADER = bytes.fromhex("3026b2758e66cf11a6d900aa0062ce6c")
 ID = re.compile(r"[A-Za-z0-9_-]{15,100}\Z")
 REF = re.compile(r"CD[1-9][0-9]? Track [1-9][0-9]{0,2}\Z")
 # Primary Year 4 SK SOW, printed pp. 81, 145 and 203. Match the exact
@@ -30,19 +35,43 @@ YEAR4_STUDENT_BOOK_CORRECTIONS = {
     157: ("110", [110, 111]),
 }
 
+# Super Minds 1 First Edition pp. 58, 70 and 94. Each pair is printed
+# on the corresponding Student's Book page. The file IDs match the
+# existing Telegram WMA sender and are checked against it in CI.
+YEAR2_AUDIO = {
+    2: (58, {"CD2-18": "14nIKU6l5utMudXb9HS8Zc9aZsYOVul1a",
+             "CD2-19": "1xL916QiLasf1dO35exMZ1LgypwNwrkLC"}),
+    26: (70, {"CD2-35": "1ZxYROG_L291L8WWIq2_J3NZDiW8giBkK",
+              "CD2-36": "1DZnb_IvBrqYfNZqWxuliQlJ-uGPgqIz9"}),
+    88: (94, {"CD3-17": "1vRuXvDGVqcPcIwfT3EjfAebwPKk9K8Du",
+              "CD3-18": "1pKoaMY8-6Kg_0hF8jnOBXS7_5mtXCt8a"}),
+}
 
-def _source_row(runtime, year, lesson):
-    if type(year) is not int or year not in (3, 4) or type(lesson) is not int or not 1 <= lesson <= 160:
+
+def _source_row(runtime, year, lesson, *, year2_rows=None):
+    if type(year) is not int or year not in (2, 3, 4) or type(lesson) is not int or not 1 <= lesson <= 160:
         return None
-    loader = getattr(runtime, "_en97_units", None)
-    if not callable(loader):
-        return None
-    rows, _ = loader(f"Tahun {year}")
+    if year == 2:
+        rows = (year2_rows if year2_rows is not None
+                else runtime._eng12_rows("Tahun 2"))
+    else:
+        loader = getattr(runtime, "_en97_units", None)
+        if not callable(loader):
+            return None
+        rows, _ = loader(f"Tahun {year}")
     if not isinstance(rows, list):
         return None
     matched = [r for r in rows if isinstance(r, dict)
                and str(r.get("lesson_no", "")).strip() == str(lesson)]
-    return matched[0] if len(matched) == 1 else None
+    if len(matched) != 1:
+        return None
+    row = matched[0]
+    if year == 2 and (row.get("textbook_title") != "Super Minds 1"
+                      or row.get("year_label") != "Tahun 2"
+                      or row.get("subject") != "Bahasa Inggeris"
+                      or "sjk" in str(row.get("notes") or "").casefold()):
+        return None
+    return row
 
 
 def _lesson_state(row, year, lesson):
@@ -52,12 +81,16 @@ def _lesson_state(row, year, lesson):
             "_en98_selected_staging_row": row}
 
 
-def _book_selection(runtime, year, lesson):
-    row = _source_row(runtime, year, lesson)
+def _book_selection(runtime, year, lesson, *, year2_rows=None):
+    row = _source_row(runtime, year, lesson, year2_rows=year2_rows)
     if row is None:
         return None
     state = _lesson_state(row, year, lesson)
-    if year == 4:
+    if year == 2:
+        state["textbook_page_start"] = row.get("textbook_page_start")
+        state["textbook_page_end"] = row.get("textbook_page_end")
+        pages = runtime._en_book_pages_v25232(state, "textbook")
+    elif year == 4:
         reference = runtime._en34_verified_sb_pages_v25230(row, year)
         if not reference:
             return None
@@ -72,9 +105,9 @@ def _book_selection(runtime, year, lesson):
             pages = runtime._en_book_pages_v25232(state, "textbook")
     else:
         pages = runtime._en_book_pages_v25232(state, "textbook")
-    maximum = YEAR3_SB_PAGE_COUNT if year == 3 else 177
+    minimum, maximum = {2: (58, 117), 3: (1, YEAR3_SB_PAGE_COUNT), 4: (1, 177)}[year]
     if (not isinstance(pages, list) or not 1 <= len(pages) <= 4
-            or not all(type(p) is int and 1 <= p <= maximum for p in pages)
+            or not all(type(p) is int and minimum <= p <= maximum for p in pages)
             or pages != list(range(pages[0], pages[-1] + 1))):
         return None
     if year == 3:
@@ -112,7 +145,7 @@ def _pdf(runtime, state, pages, *, root=ROOT):
         name, first, last = item
         path = Path(name)
         if (path.is_symlink() or not path.is_file()
-                or path.name not in BOOK_PARTS
+                or path.name not in BOOK_PARTS[state["year"]]
                 or path.resolve().parent != folder
                 or not 1024 <= path.stat().st_size <= 30 * 1024 * 1024
                 or type(first) is not int or type(last) is not int):
@@ -140,10 +173,24 @@ def _pdf_bytes(writer):
     return data
 
 
-def _audio_rows(runtime, year, lesson):
-    row = _source_row(runtime, year, lesson)
+def _audio_rows(runtime, year, lesson, *, year2_rows=None):
+    row = _source_row(runtime, year, lesson, year2_rows=year2_rows)
     if row is None:
         return []
+    if year == 2:
+        approved = YEAR2_AUDIO.get(lesson)
+        if not approved or row.get("audio_status") != "VERIFIED_AUDIO":
+            return []
+        page, tracks = approved
+        refs = [ref.strip() for ref in str(row.get("audio_reference") or "").split(";")]
+        if (row.get("textbook_page_start") != page
+                or row.get("textbook_page_end") != page or refs != list(tracks)):
+            return []
+        return [
+            {"title": f"English Tahun 2 • Lesson {lesson:03d} • {ref.replace('-', ' Track ')}",
+             "reference": ref.replace("-", " Track "), "id": tracks[ref]}
+            for ref in refs
+        ]
     state = _lesson_state(row, year, lesson)
     if year == 4 and (lesson == 30 or lesson in HOLD_LESSONS
             or not getattr(runtime, "CIKGULAJU_Y4_WRONG_BOOK_AUDIO_HOLD_ACTIVE", False)
@@ -173,7 +220,7 @@ def _audio_rows(runtime, year, lesson):
     return out
 
 
-def _mp3(id_):
+def _original_audio(id_, *, wma=False):
     import requests
     response = requests.get(
         "https://drive.usercontent.google.com/download",
@@ -191,10 +238,14 @@ def _mp3(id_):
                 if len(data) > MAX_AUDIO:
                     raise ValueError("Audio exceeds limit")
         raw = bytes(data)
-        if (len(raw) < 1000 or
-                not (raw.startswith(b"ID3") or
-                     (raw[0] == 0xff and (raw[1] & 0xe0) == 0xe0))):
-            raise ValueError("Original MP3 identity not confirmed")
+        if len(raw) < 1000:
+            raise ValueError("Original audio is incomplete")
+        if wma:
+            valid = raw.startswith(WMA_HEADER)
+        else:
+            valid = raw.startswith(b"ID3") or (raw[0] == 0xff and (raw[1] & 0xe0) == 0xe0)
+        if not valid:
+            raise ValueError("Original audio format not confirmed")
         return raw
     finally:
         response.close()
@@ -202,6 +253,18 @@ def _mp3(id_):
 
 def create_english_book_audio_blueprint(runtime, *, root=ROOT):
     bp = Blueprint("telegram_english_lesson_locked_book_audio", __name__)
+    year2_rows, year2_expiry = None, 0.0
+    year2_lock = Lock()
+
+    def source_options(year):
+        nonlocal year2_rows, year2_expiry
+        if year != 2:
+            return {}
+        with year2_lock:
+            if monotonic() >= year2_expiry:
+                year2_rows = runtime._eng12_rows("Tahun 2")
+                year2_expiry = monotonic() + (120 if year2_rows else 10)
+        return {"year2_rows": year2_rows}
 
     @bp.before_request
     def authorize():
@@ -219,7 +282,7 @@ def create_english_book_audio_blueprint(runtime, *, root=ROOT):
         allowed = {"year", "lesson", "track"} if with_track else {"year", "lesson"}
         if set(request.args) != allowed or any(len(request.args.getlist(k)) != 1 for k in allowed):
             return None
-        if not re.fullmatch(r"[34]", request.args["year"]) or not re.fullmatch(r"[1-9][0-9]{0,2}", request.args["lesson"]):
+        if not re.fullmatch(r"[234]", request.args["year"]) or not re.fullmatch(r"[1-9][0-9]{0,2}", request.args["lesson"]):
             return None
         year, lesson = int(request.args["year"]), int(request.args["lesson"])
         if not 1 <= lesson <= 160:
@@ -236,14 +299,14 @@ def create_english_book_audio_blueprint(runtime, *, root=ROOT):
         selected = selection()
         if not selected:
             return jsonify({"available": False}), 404
-        picked = _book_selection(runtime, *selected)
+        picked = _book_selection(runtime, *selected, **source_options(selected[0]))
         if not picked:
             return jsonify({"available": False}), 404
         state, pages = picked
         try:
             # Year 3 is stored on Drive. Use the verified mapping for listing
             # and open the original PDF only for a requested excerpt.
-            if selected[0] == 4:
+            if selected[0] != 3:
                 _pdf(runtime, state, pages, root=root)
         except Exception:
             return jsonify({"available": False}), 503
@@ -256,7 +319,7 @@ def create_english_book_audio_blueprint(runtime, *, root=ROOT):
     @bp.get("/internal/rph/v1/english-extras/student-book.pdf")
     def book_download():
         selected = selection()
-        picked = _book_selection(runtime, *selected) if selected else None
+        picked = _book_selection(runtime, *selected, **source_options(selected[0])) if selected else None
         if not picked:
             return jsonify({"error": "Student Book page not mapped"}), 404
         try:
@@ -273,7 +336,7 @@ def create_english_book_audio_blueprint(runtime, *, root=ROOT):
         selected = selection()
         if not selected:
             return jsonify({"available": False}), 404
-        rows = _audio_rows(runtime, *selected)
+        rows = _audio_rows(runtime, *selected, **source_options(selected[0]))
         if not rows:
             return jsonify({"available": False}), 404
         return jsonify({"source": SOURCE, "available": True,
@@ -283,24 +346,27 @@ def create_english_book_audio_blueprint(runtime, *, root=ROOT):
                                     "reference": r["reference"]}
                                    for i, r in enumerate(rows)]})
 
-    @bp.get("/internal/rph/v1/english-extras/audio.mp3")
-    def audio_download():
+    @bp.get("/internal/rph/v1/english-extras/audio.<extension>")
+    def audio_download(extension):
         selected = selection(with_track=True)
         if not selected:
             return jsonify({"error": "Invalid track"}), 404
         year, lesson, index = selected
-        rows = _audio_rows(runtime, year, lesson)
+        expected, mime = ("wma", "audio/x-ms-wma") if year == 2 else ("mp3", "audio/mpeg")
+        if extension != expected:
+            return jsonify({"error": "Wrong original audio format"}), 404
+        rows = _audio_rows(runtime, year, lesson, **source_options(year))
         if not 1 <= index <= len(rows):
             return jsonify({"error": "Unverified track"}), 404
         row = rows[index - 1]
         try:
-            raw = _mp3(row["id"])
+            raw = _original_audio(row["id"], wma=year == 2)
         except Exception:
             return jsonify({"error": "Original audio unavailable"}), 503
         name = re.sub(r"[^A-Za-z0-9_-]", "_", row["reference"])
-        answer = Response(raw, mimetype="audio/mpeg")
+        answer = Response(raw, mimetype=mime)
         answer.headers["Content-Disposition"] = (
-            f'attachment; filename="CikguLaju_English_Y{year}_Lesson_{lesson:03d}_{name}.mp3"')
+            f'attachment; filename="CikguLaju_English_Y{year}_Lesson_{lesson:03d}_{name}.{extension}"')
         return answer
 
     return bp

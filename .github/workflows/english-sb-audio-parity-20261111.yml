@@ -1,7 +1,7 @@
 name: English selected Student Book and track parity
 on:
   push:
-    branches: [fix/telegram-english-web-materials-20261113, fix/english-sk-source-coverage-20261113]
+    branches: [fix/telegram-english-web-materials-20261113, fix/english-sk-source-coverage-20261113, fix/english-y2-web-source-20261113]
     paths:
       - 'web/telegram_english_sb_audio_api_20261111.py'
       - 'tools/run_telegram_with_curriculum_api.py'
