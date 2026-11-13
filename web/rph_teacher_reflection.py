@@ -27,7 +27,9 @@ def valid_teacher_fields(teacher, *, legacy=False):
 
 
 def install(runtime):
-    previous = runtime._rph_rows
+    previous = getattr(runtime, "_rph_rows", None)
+    if not callable(previous):
+        return False
 
     def rows(state, *args, **kwargs):
         result = previous(state, *args, **kwargs)
@@ -37,3 +39,4 @@ def install(runtime):
         return result
 
     runtime._rph_rows = rows
+    return True

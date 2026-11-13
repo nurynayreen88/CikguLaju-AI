@@ -749,4 +749,4 @@ except Exception as _rph_entry_choices_error:
 # Apply Web teacher text after the native subject adapters set default rows.
 from web.rph_teacher_reflection import install as install_teacher_reflection
 
-install_teacher_reflection(telegram_runtime)
+RPH_TEACHER_REFLECTION_ACTIVE = install_teacher_reflection(telegram_runtime)
