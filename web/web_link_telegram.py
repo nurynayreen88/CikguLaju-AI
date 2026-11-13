@@ -6,7 +6,7 @@ the user manual and private referral buttons. No curriculum/payment/state edits.
 import requests
 
 WEB_URL = "https://cikgulaju-web.onrender.com/"
-BUTTON = {"text": "🌐 Web CikguLaju", "url": WEB_URL}
+BUTTON = {"text": "🌐 GUNA WEB • LEBIH MUDAH", "url": WEB_URL}
 TODAY_BUTTON = {"text": "⚡ RPH Hari Ini", "callback_data": "todayrph272"}
 MANUAL_BUTTON = {"text": "📖 Manual Pengguna", "callback_data": "manual_pengguna_pdf"}
 REFERRAL_BUTTON = {"text": "🎁 Referral Saya", "callback_data": "private_referral_home"}
@@ -75,7 +75,16 @@ def install(runtime):
                                 for b in row)), len(rows))
                     rows.insert(after_manual, [dict(REFERRAL_BUTTON)])
                     changed = True
-            if not any(b.get("url") == WEB_URL for row in rows for b in row):
+            # Relabel the existing Web shortcut in the ORIGINAL main menu.
+            # Do not send a second Web announcement or duplicate its URL.
+            existing_web = [b for row in rows for b in row
+                            if b.get("url") == WEB_URL]
+            if existing_web:
+                for button in existing_web:
+                    if button.get("text") != BUTTON["text"]:
+                        button["text"] = BUTTON["text"]
+                        changed = True
+            else:
                 index = next((i+1 for i, row in enumerate(rows)
                               if any(b.get("callback_data") == "account"
                                      for b in row)), len(rows))
