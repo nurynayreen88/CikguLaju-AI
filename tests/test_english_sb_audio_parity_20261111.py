@@ -10,7 +10,8 @@ from flask import Flask
 from pypdf import PdfReader, PdfWriter
 from pypdf.generic import NameObject, NumberObject
 from web.telegram_english_sb_audio_api_20261111 import (
-    create_english_book_audio_blueprint, _book_selection, _audio_rows, YEAR2_AUDIO, WMA_HEADER,
+    create_english_book_audio_blueprint, _book_selection, _audio_rows, YEAR2_AUDIO,
+    YEAR2_AUDIO_BOOK_EVIDENCE, WMA_HEADER,
 )
 
 
@@ -247,15 +248,17 @@ class EnglishSourceParityTests(unittest.TestCase):
         row = self.runtime._eng12_rows("Tahun 2")[0]
         self.assertEqual(_audio_rows(self.runtime, 2, 26,
                                     year2_rows=[{**row, "audio_reference": "CD1-17"}]), [])
-        self.assertEqual(_audio_rows(self.runtime, 2, 98,
-                                    year2_rows=[{**row, "lesson_no": 98,
-                                                 "audio_reference": "CD3-27"}]), [])
+        self.assertEqual(_audio_rows(self.runtime, 2, 139,
+                                    year2_rows=[{**row, "lesson_no": 139,
+                                                 "audio_reference": "CD3-47"}]), [])
 
     def test_year_two_checked_ranges_and_single_digit_track_labels(self):
         from web.telegram_english_sb_audio_api_20261111 import REF
 
         source = self.runtime._eng12_rows("Tahun 2")[0]
         for lesson, (pages, tracks) in YEAR2_AUDIO.items():
+            if lesson in YEAR2_AUDIO_BOOK_EVIDENCE:
+                continue
             with self.subTest(lesson=lesson):
                 row = {**source, "lesson_no": lesson, "textbook_page_start": pages[0],
                        "textbook_page_end": pages[1], "audio_reference": "; ".join(tracks)}
@@ -270,6 +273,35 @@ class EnglishSourceParityTests(unittest.TestCase):
                   "textbook_page_end": 83, "audio_reference": "CD3-05"}
         self.assertEqual(_audio_rows(self.runtime, 2, 57, year2_rows=[padded])[0]["reference"],
                          "CD3 Track 5")
+
+    def test_year_two_source_checked_audio_replaces_only_exact_legacy_rows(self):
+        cases = (
+            (96, (96, 96), (96, 96), "CD3-20", (21, 23)),
+            (97, (97, 97), (97, 97), "CD3-21", (24, 25)),
+            (98, (98, 99), (98, 99), "CD3-27", (26, 27)),
+            (106, (99, 99), (99, 99), "CD3-29", (28, 29)),
+            (108, (101, 101), (101, 101), "CD3-31", (31,)),
+            (136, (110, 111), (110, 111), "CD3-44", (43, 44)),
+            (137, (111, 111), (111, 111), "CD3-46", (45, 46)),
+            (138, (112, 112), (112, 112), "CD3-48", (47, 48)),
+        )
+        source = self.runtime._eng12_rows("Tahun 2")[0]
+        self.assertEqual(set(YEAR2_AUDIO_BOOK_EVIDENCE), {case[0] for case in cases})
+        for lesson, (sb_first, sb_last), (wb_first, wb_last), legacy, tracks in cases:
+            with self.subTest(lesson=lesson):
+                row = {**source, "lesson_no": lesson,
+                       "textbook_page_start": sb_first, "textbook_page_end": sb_last,
+                       "workbook_page_start": wb_first, "workbook_page_end": wb_last,
+                       "workbook_status": "LINKED_VERIFIED", "audio_reference": legacy}
+                items = _audio_rows(self.runtime, 2, lesson, year2_rows=[row])
+                self.assertEqual([item["reference"] for item in items],
+                                 [f"CD3 Track {number}" for number in tracks])
+                for change in ({"audio_reference": "CD3-99"}, {"textbook_page_start": sb_first - 1},
+                               {"workbook_page_end": wb_last + 1}, {"workbook_status": "REVIEW_REQUIRED"}):
+                    self.assertEqual(_audio_rows(self.runtime, 2, lesson, year2_rows=[{**row, **change}]), [])
+                if lesson == 98:
+                    self.assertTrue(items[0]["title"].endswith("Student Book pp. 98–99 Activity 1"))
+                    self.assertTrue(items[1]["title"].endswith("Workbook p. 98 Activity 1"))
 
     def test_auth_and_input_guards(self):
         bare = self.client.get("/internal/rph/v1/english-extras/audio",

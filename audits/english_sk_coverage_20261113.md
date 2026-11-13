@@ -5,7 +5,7 @@ Skop bahan English semasa ialah Sekolah Kebangsaan. Katalog SOW SK menjadi asas 
 | Tahun | Katalog RPH Web | Buku Aktiviti boleh dipetik | Sambungan bahan lain |
 | --- | --- | --- | --- |
 | 1 | 2 Lesson KSSR Semakan 2017 dalam katalog semasa | Belum disambung pada laluan ini | Inventori lama mempunyai 158/160 fail dengan nama standard. KP2027 memerlukan semakan sumber berasingan. |
-| 2 | 160 Lesson, 160 padanan standard tetap | 61 Lesson | Student Book Super Minds 1 First Edition boleh dipetik bagi 61 Lesson. Pemetaan audio Web meliputi 30 fail WMA asal bagi 24 Lesson. Lihat status pelepasan dalam log. |
+| 2 | 160 Lesson, 160 padanan standard tetap | 61 Lesson | Student Book Super Minds 1 First Edition boleh dipetik bagi 61 Lesson. Pemetaan audio Web meliputi 45 padanan trek WMA asal bagi 32 Lesson selepas audit sambungan. Lihat status pelepasan dalam log. |
 | 3 | 160 Lesson, 160 padanan standard tetap | 70 Lesson | Student Book dan audio mengikut sumber Telegram. |
 | 4 | 160 Lesson, 150 padanan tetap dan 10 pilihan guru | 107 Lesson | Petikan SB Lesson 43, 103 dan 157 dipadankan ke muka surat 121, 73 dan 110–111. Sekatan audio sedia ada masih berkuat kuasa. |
 | 5 | 160 Lesson, 151 padanan tetap dan 9 pilihan guru | 130 Lesson | Student Book dan audio memerlukan semakan sumber dan laluan penghantaran. |
@@ -42,3 +42,25 @@ Semakan baki 50 rekod v15 mendapati 21 Lesson lagi dengan 24 trek yang sepadan d
 **HOLD bagi 29 Lesson:** 3, 12, 13, 20, 42, 56, 66, 68, 71, 79, 87, 96–98, 106, 108, 116–119, 126–128, 136–139, 146 dan 147. Sebahagian rujukan tidak dicetak pada halaman Student Book yang dipadankan. Contohnya, Lesson 96 merujuk CD3 Track 20 dalam v15, sementara m/s 96 mencetak Track 21 dan 23. Sesetengah nombor mungkin berasal daripada Workbook atau panduan guru. Semak aktiviti dan trek pada bahan itu sebelum pelepasan. Tiada pembetulan automatik pada padanan Telegram.
 
 Jumlah selepas perubahan ialah 24 daripada 53 Lesson bertanda VERIFIED_AUDIO dalam v15. Ujian muat turun menggunakan sesi guru produksi belum dibuat.
+
+
+## 14 November 2026 — Semakan Teacher’s Book dan Workbook Tahun 2 SK
+
+Silang semak Primary Year 2 SK Scheme of Work dengan *Super Minds 1* edisi pertama, Teacher’s Book T96–T112, halaman bercetak Student Book dan Workbook, serta baris sebenar v15. Trek disenaraikan mengikut aktiviti yang sepadan. Buku dan fail WMA asal kekal pada sumber sedia ada.
+
+| Lesson | SOW m/s | Student Book dan CD3 | Workbook dan CD3 |
+| --- | --- | --- | --- |
+| 96 | 219 | m/s 96, Aktiviti 1 dan 2, Track 21 dan 23 | m/s 96, Aktiviti 1 padanan gambar dan ayat |
+| 97 | 221 | m/s 97, Aktiviti 1 dan 2, Track 24 dan 25 | m/s 97, Aktiviti 1 dan 2 latihan soalan dan jawapan |
+| 98 | 223 | m/s 98–99, Aktiviti 1, Track 26 | m/s 98, Aktiviti 1, Track 27 |
+| 106 | 239 | m/s 99, Aktiviti 4, Track 28 | m/s 99, Aktiviti 2, Track 29 |
+| 108 | 243 | m/s 101, bacaan dan penulisan | m/s 101, Aktiviti 1, Track 31 |
+| 136 | 299 | m/s 110–111, Aktiviti 1, Track 43 | m/s 110, Aktiviti 1, Track 44 |
+| 137 | 301 | m/s 111, Aktiviti 4, Track 45 | m/s 111, Aktiviti 2, Track 46 |
+| 138 | 303 | m/s 112, Aktiviti 2, Track 47 | m/s 112, Aktiviti 1, Track 48 |
+
+Teacher’s Book T95 mengesahkan bahawa Track 20 digunakan pada Student Book m/s 95, Aktiviti 3. Track 21 ialah lagu m/s 96, jadi rujukan lama Lesson 97 juga tersasar. Lesson 139 dan 146 kekal HOLD kerana rujukan v15 menggunakan trek yang telah dikenal pasti pada bahan Lesson 138. Aktiviti pada halaman bercetak Lesson 139 dan 146 memerlukan semakan berasingan.
+
+ID 15 trek sepadan dengan katalog penghantar Telegram asal. Semua fail lulus semakan pengepala ASF, codec WMAv2, nombor trek terbenam dan nyahkod penuh. Laluan Web memeriksa identiti Lesson, halaman Student Book dan Workbook serta rujukan v15 sebelum menyenaraikan fail dengan label buku, halaman dan aktiviti. Penambahan ini dibuat pada laluan bahan Web, sementara Telegram terus menggunakan pemetaan penghantaran asal mengikut arahan pemilik projek.
+
+Baki **21 Lesson HOLD** ialah 3, 12, 13, 20, 42, 56, 66, 68, 71, 79, 87, 116–119, 126–128, 139, 146 dan 147. Muat turun menggunakan akaun guru produksi belum disahkan.
