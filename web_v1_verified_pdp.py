@@ -6,6 +6,7 @@ No import of production app.py and no database mutations.
 """
 import sqlite3
 from pathlib import Path
+from web.pi_navigation import GENERIC_RPT_ACTIVITIES, pi_navigation_unit
 from web_v1_verified_topics import SUBJECTS
 
 
@@ -33,13 +34,42 @@ class VerifiedPdpCatalog:
                    ORDER BY sequence_no, id LIMIT ?""",
                 (f"Tahun {year}", SUBJECTS[subject_code], limit + 1),
             ).fetchall()
+            eligible_pi_ids = set()
+            if subject_code == "PI" and any(not str(r[2] or "").strip() for r in rows):
+                eligible_pi_ids = self._eligible_pi_ids(con, year)
         if len(rows) > limit:
             raise ValueError("verified curriculum exceeds navigation limit")
         return [
-            {"id": r[0], "pdp_no": r[1], "unit_title": r[2],
+            {"id": r[0], "pdp_no": r[1],
+             "unit_title": pi_navigation_unit({"unit_title": r[2], "skill_focus": r[5]})
+                           if r[0] in eligible_pi_ids else r[2],
              "topic": r[3], "subtopic": r[4], "skill_focus": r[5]}
             for r in rows
         ]
+
+    @staticmethod
+    def _eligible_pi_ids(con, year):
+        tables = con.execute(
+            "SELECT count(*) FROM sqlite_master WHERE type='table' "
+            "AND name IN ('pi_pdp_details_v2591', 'rpt_entry_standards')"
+        ).fetchone()[0]
+        if tables != 2:
+            return set()
+        return {r[0] for r in con.execute(
+            """SELECT r.id FROM rpt_entries r
+               WHERE r.year_label=? AND r.subject='Pendidikan Islam' AND r.verified=1
+                 AND trim(COALESCE(r.unit_title, ''))=''
+                 AND length(trim(COALESCE(r.activity_note, '')))>=30
+                 AND lower(trim(r.activity_note)) NOT IN (?, ?)
+                 AND EXISTS (SELECT 1 FROM pi_pdp_details_v2591 d
+                             WHERE d.year_label=r.year_label AND d.pdp_no=r.sequence_no
+                               AND d.verified=1)
+                 AND (SELECT count(DISTINCT s.standard_type) FROM rpt_entry_standards s
+                      WHERE s.rpt_entry_id=r.id AND s.verified=1
+                        AND s.standard_type IN ('SK','SP')
+                        AND trim(COALESCE(s.standard_code, ''))<>'')=2""",
+            (f"Tahun {year}", *GENERIC_RPT_ACTIVITIES),
+        )}
 
 
 def list_explicit_pjpk_entries(database_path, year, component):

@@ -1,5 +1,6 @@
 """Read-only dropdown options for Web V1 staging."""
 import re
+from web.pi_navigation import PI_FIELD_ORDER
 from web_v1_verified_topics import SUBJECTS
 from web_v1_verified_pdp import VerifiedPdpCatalog, list_explicit_pjpk_entries
 
@@ -42,6 +43,8 @@ def _navigation_records(database_path, year, subject_code, component=None):
 def unit_options(database_path, year, subject_code, component=None):
     records = _navigation_records(database_path, year, subject_code, component)
     names = dict.fromkeys((r.get('unit_title') or '').strip() for r in records)
+    if subject_code == "PI":
+        names = dict.fromkeys([field for field in PI_FIELD_ORDER if field in names] + list(names))
     return [{'value': name, 'label': name} for name in names if name]
 
 
@@ -213,6 +216,13 @@ def _bm_verified_structured_rows(database_path, year):
         if str(r.get("sk_code") or "").strip()
         and str(r.get("sp_code") or "").strip()
     }
+    for r in result:
+        r["navigation_theme"] = r["theme"]
+        if (year == 5 and
+                (bm_theme_identity(r["theme"]), r["unit_code"], r["unit_title"], r["topic"])
+                == (bm_theme_identity("Tema 1: Keluarga Berwawasan"),
+                    "1", "Masyarakat Penyayang", "Bank Rezeki Bergerak")):
+            r["navigation_theme"] = "Tema 1: Kemasyarakatan"
     return [
         r for r in result
         if (r["theme"], r["unit_code"], r["unit_title"], r["topic"]) in valid
@@ -253,22 +263,27 @@ def bm_theme_options(database_path, year):
     rows = _bm_verified_structured_rows(database_path, year)
     found = {}
     for r in rows:
-        raw = r["theme"]
+        raw = r["navigation_theme"]
         found.setdefault(bm_theme_identity(raw), bm_theme_display(raw))
     return [{"value": title, "label": title} for title in found.values()]
+
+
+def _bm_unit_key(title):
+    return " ".join(title.split()).casefold()
 
 
 def bm_unit_options(database_path, year, theme):
     if not isinstance(theme, str) or not 0 < len(theme) <= 300:
         raise ValueError("Invalid BM theme")
     identity = bm_theme_identity(theme)
-    rows = [r for r in _bm_verified_structured_rows(database_path, year)
-            if bm_theme_identity(r["theme"]) == identity]
-    if not rows:
-        return []
+    groups = {}
+    for row in _bm_verified_structured_rows(database_path, year):
+        if bm_theme_identity(row["navigation_theme"]) == identity:
+            groups.setdefault(_bm_unit_key(row["unit_title"]), []).append(row)
     result = []
-    for title in dict.fromkeys(r["unit_title"] for r in rows):
-        codes = {r["unit_code"] for r in rows if r["unit_title"] == title}
+    for rows in groups.values():
+        title = rows[0]["unit_title"]
+        codes = {row["unit_code"] for row in rows}
         code = next(iter(codes)) if len(codes) == 1 else ""
         result.append({"value": title, "label": display_unit_label(title, code)})
     return result
@@ -278,9 +293,10 @@ def bm_topic_options(database_path, year, theme, unit):
     if not isinstance(unit, str) or not 0 < len(unit) <= 300:
         raise ValueError("Invalid BM unit")
     identity = bm_theme_identity(theme)
+    selected_unit = _bm_unit_key(unit)
     rows = [r for r in _bm_verified_structured_rows(database_path, year)
-            if bm_theme_identity(r["theme"]) == identity
-            and r["unit_title"] == unit]
+            if bm_theme_identity(r["navigation_theme"]) == identity
+            and _bm_unit_key(r["unit_title"]) == selected_unit]
     return [{"value": title, "label": title}
             for title in dict.fromkeys(r["topic"] for r in rows)]
 
@@ -298,8 +314,9 @@ def bm_pdp_options(database_path, year, theme, unit, topic):
     # PdP group order. It does not claim to be an official SOW lesson number.
     choices = []
     for idx, (key, members) in enumerate(groups.items(), 1):
-        t, code, title, name = key
-        if (bm_theme_identity(t), title, name) != (bm_theme_identity(theme), unit, topic):
+        _, _, title, name = key
+        row_theme = bm_theme_identity(members[0]["navigation_theme"])
+        if (row_theme, _bm_unit_key(title), name) != (bm_theme_identity(theme), _bm_unit_key(unit), topic):
             continue
         if not any(str(r.get("sk_code") or "").strip()
                    and str(r.get("sp_code") or "").strip() for r in members):
@@ -311,6 +328,8 @@ def bm_pdp_options(database_path, year, theme, unit, topic):
         number = next(iter(seqs)) if len(seqs) == 1 else idx
         item = {"value": token, "label": f"PdP {number:03d} — {name}",
                 "pdp_no": number, "standalone_rph_verified": False}
+        if title != unit:
+            item["origin_unit"] = title
         refs = {str(r.get("textbook_ref") or "").strip() for r in members
                 if str(r.get("textbook_ref") or "").strip()}
         if len(refs) == 1:

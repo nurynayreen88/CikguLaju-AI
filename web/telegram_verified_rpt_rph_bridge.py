@@ -21,6 +21,7 @@ from zipfile import ZipFile, BadZipFile
 from flask import Blueprint, Response, jsonify, request
 
 from web.native_rph_telegram_api import MIMES, compact_web_word_notes
+from web.pi_navigation import GENERIC_RPT_ACTIVITIES, pi_navigation_unit
 from web.rph_teacher_reflection import clean_reflection, valid_teacher_fields
 
 CODE_LABELS = {"BM": "Bahasa Melayu", "PI": "Pendidikan Islam"}
@@ -83,12 +84,12 @@ def _resolve_verified_rpt(runtime, selection):
                 raise SourceUnavailable("Verified RPT row unavailable")
             row = dict(matched)
             # Unit is the exact value shown by the authoritative dropdown.
-            if (row.get("unit_title") or "").strip() != unit.strip():
+            source_unit = (pi_navigation_unit(row) if code == "PI"
+                           else (row.get("unit_title") or "").strip())
+            if source_unit != unit.strip():
                 raise SourceUnavailable("RPT unit and selected lesson differ")
             src_activity = str(row.get("activity_note") or "").strip()
-            if len(src_activity) < 30 or src_activity.casefold() in (
-                    "aktiviti berpandu, aplikasi dan pentaksiran formatif mengikut sp.",
-                    "aktiviti mengikut sk dan sp"):
+            if len(src_activity) < 30 or src_activity.casefold() in GENERIC_RPT_ACTIVITIES:
                 raise SourceUnavailable("Lesson-specific source activity unavailable")
             standards = [dict(item) for item in conn.execute(
                 """SELECT standard_type,standard_code,standard_text,sequence_no
