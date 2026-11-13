@@ -7,14 +7,14 @@ direct teachers to the Web. Do not alter callback routing or payment amounts.
 import re
 
 _OLD_PLAN = re.compile(
-    r"💳 <b>LANGGANAN</b>\\nBulanan: <b>RM8/sebulan</b>\\n"
-    r"Tahunan: <b>RM50/setahun</b>\\n"
-    r"Akan datang\\. Langganan belum dibuka\\.",
+    r"💳 <b>LANGGANAN</b>\nBulanan: <b>RM8/sebulan</b>\n"
+    r"Tahunan: <b>RM50/setahun</b>\n"
+    r"Akan datang\. Langganan belum dibuka\.",
     re.IGNORECASE,
 )
 _NEW_PLAN = (
-    "💳 <b>LANGGANAN</b>\\n"
-    "Maklumat pakej dan harga semasa: sila rujuk Web CikguLaju.\\n"
+    "💳 <b>LANGGANAN</b>\n"
+    "Maklumat pakej dan harga semasa: sila rujuk Web CikguLaju.\n"
     "Langganan belum dibuka."
 )
 
