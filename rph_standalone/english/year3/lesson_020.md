@@ -8,20 +8,19 @@
 **References:** KPM Year 3 SK SOW Lesson 20; daily routine flashcards and teacher-prepared writing worksheet.
 
 ## Set Induction (5 minutes)
-Teacher reviews daily routines. Pupils name activities and recall frequency words.
+**Teacher:** Show daily-routine flashcards and ask how often each activity happens. **Pupils:** Name the activities and use always, sometimes or never in short oral answers.
 
 ## Activity 1 — Modelling (15 minutes)
-Teacher models 'I always/sometimes/never ...' and changes examples to 'He/She ...' with third-person -s. Pupils practise transformations.
+**Teacher:** Write model sentences with I always/sometimes/never and demonstrate the change to He/She with the appropriate verb ending. Check capitals and full stops. **Pupils:** Transform one first-person sentence into a third-person sentence and explain the change with a partner.
 
 ## Activity 2 — Guided writing (25 minutes)
-Groups draft sentences for routine flashcards, write them on the board and peer-check. Pupils then write a short routine description using frequency adverbs and punctuation.
+**Teacher:** Give groups routine flashcards to create sentences, guide peer checking of frequency words and verb endings, then direct pupils to the existing printed Workbook task. **Pupils:** Draft a short description of routines, exchange it with a partner and correct a verb ending or punctuation mark.
+**Workbook:** Pupils complete Workbook p.10, Activity 2, using always, sometimes and never in sentences about routines.
 
 ## PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.10, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.10, Activity 2, using 'always', 'sometimes' and 'never' in sentences about routines.
-Teacher checks sentence range, third-person verb endings, capitals and full stops. Pupils revise their drafts.
+**Teacher:** Check two independently written routine sentences, including one third-person example, for a suitable frequency word, verb ending, capital letter and full stop. Record which pupils need support. **Pupils:** Submit two routine sentences, one using I and one using He/She, and correct one error after feedback.
 
 ## Closure (5 minutes)
-Pupils share one corrected routine sentence.
+**Teacher:** Display a sample sentence with a missing full stop or verb ending. **Pupils:** Suggest the correction and read one accurate routine sentence aloud.
 
 **QA:** SOW standards and lesson outline checked. Direct Teacher's Book and Word/PDF output tests pending. NOT READY FOR RELEASE.
