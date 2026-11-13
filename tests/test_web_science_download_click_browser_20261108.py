@@ -58,6 +58,10 @@ class ScienceBrowserDownloadTest(unittest.TestCase):
           window.__sainsRequests=[];
           window.fetch=async (url,options)=>{
             const target=String(url);
+            if(target.includes('/api/web/rph/extra-materials?')){
+              return new Response(JSON.stringify({items:[]}),
+                {status:200,headers:{'content-type':'application/json'}});
+            }
             if(target.includes('/api/web/rph/word?')||
                target.includes('/api/web/rph/pdf?')){
               const isPdf=target.includes('/pdf?');
@@ -130,7 +134,12 @@ class ScienceBrowserDownloadTest(unittest.TestCase):
         self.page.evaluate("""()=>{
           window.__sainsRequests=[];
           window.fetch=async (url)=>{
-            window.__sainsRequests.push(String(url));
+            const target=String(url);
+            if(target.includes('/api/web/rph/extra-materials?')){
+              return new Response(JSON.stringify({items:[]}),
+                {status:200,headers:{'content-type':'application/json'}});
+            }
+            window.__sainsRequests.push(target);
             return new Response(
               JSON.stringify({error:'Penjana RPH Telegram belum dapat dihubungi.',
                               code:'TELEGRAM_RPH_GENERATOR_UNAVAILABLE'}),
@@ -148,6 +157,25 @@ class ScienceBrowserDownloadTest(unittest.TestCase):
         self.assertIn("10 daripada 10 janaan",
                       self.page.locator("#account-access").inner_text())
         self.assertEqual(self.page.evaluate("window.__sainsRequests.length"),1)
+
+    def test_textbook_opens_source_without_using_rph_credit(self):
+        url = "https://fliphtml5.com/itzsi/xpxe/BUKU_TEKS_SAINS_TAHUN_4/"
+        self.page.evaluate("""(url)=>{
+          const original=window.fetch;
+          window.fetch=async (target,options)=>{
+            if(!String(target).includes('/api/web/rph/extra-materials?'))return original(target,options);
+            return new Response(JSON.stringify({items:[{
+              type:'textbook',title:'Buku Teks Sains Tahun 4 • m/s 2–4',url
+            }]}),{status:200,headers:{'content-type':'application/json'}});
+          };
+        }""", url)
+        self.page.locator("#show-materials").click()
+        book = self.page.locator("#materials-list li").filter(has_text="m/s 2–4")
+        link = book.get_by_role("link", name="Buka Buku Teks")
+        self.assertEqual(link.get_attribute("href"), url)
+        self.assertEqual(link.get_attribute("target"), "_blank")
+        self.assertIn("10 daripada 10 janaan", self.page.locator("#account-access").inner_text())
+        self.assertEqual(self.page.evaluate("window.__sainsRequests.length"), 0)
 
 
 if __name__=="__main__":
