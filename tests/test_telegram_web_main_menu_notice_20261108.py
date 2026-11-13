@@ -42,6 +42,8 @@ class TelegramWebMenuNoticeQA(unittest.TestCase):
         self.assertEqual(callbacks,
                          ["quick","rpt2027_home","account","pioneer_join"])
         self.assertIn("🌐 <b>CIKGULAJU WEB SUDAH TERSEDIA</b>",body)
+        self.assertIn("Cikgu digalakkan guna Web — lebih mudah dan tersusun!",body)
+        self.assertIn("Pilih Lesson/PdP, urus jadual waktu, sediakan RPH dan muat turun RPT 2027",body)
         self.assertIn(URL,body)
         self.assertIn("Log masuk menggunakan Telegram.",body)
         self.assertIn("Baki janaan RPH dikongsi",body)
