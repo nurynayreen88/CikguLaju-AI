@@ -11,7 +11,7 @@
 **Teacher:** Begin a daily-routine vocabulary chain and ask for one detail about a pupil's morning. **Pupils:** Add a routine phrase to the chain and state when they do that activity.
 
 ## Activity 1 — Reading and listening (15 minutes)
-**Teacher:** Follow the Student's Book p.21 Activity 1 preparation and use the prescribed recording about Jim's diary where available; otherwise use the verified lesson text for listening practice. **Pupils:** Listen and follow the text, tick the routine activities they hear and compare answers with a partner.
+**Teacher:** Follow the Student's Book p.21 Activity 1 preparation and use the prescribed recording about Jim's diary where available; otherwise read the existing Jim's diary text aloud for listening practice. **Pupils:** Listen and follow the text, tick the routine activities they hear and compare answers with a partner.
 
 ## Activity 2 — Writing (25 minutes)
 **Teacher:** Guide the comprehension questions and Writing Tip referenced in Teacher's Book p.40. Model one routine sentence with a capital letter and full stop, and demonstrate legible cursive letter joins. **Pupils:** Write two routine sentences, check capitals and end punctuation with a partner, then rewrite one corrected sentence in supported cursive handwriting.
