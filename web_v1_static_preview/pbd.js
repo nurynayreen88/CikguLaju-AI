@@ -122,6 +122,11 @@
     $("assessment-fields").hidden = report;
     $("report-fields").hidden = !report;
     $("bulk").hidden = report;
+    $("bulk-result").hidden = true;
+    $("student-search").value = "";
+    $("student-filter").value = "all";
+    $("student-filter").options[1].textContent = report ? "TP belum diisi" : "Belum selesai dinilai";
+    $("student-filter").options[2].textContent = report ? "TP sudah diisi" : "Selesai dinilai";
     $("delete").hidden = !record;
     $("criteria1").required = !report;
     $("period").required = report;
@@ -137,11 +142,15 @@
       const row = element("div");
       row.className = "pbd-student";
       row.dataset.id = id;
-      const checkbox = element("input");
-      checkbox.type = "checkbox";
-      checkbox.dataset.field = "selected";
-      const title = element("label");
-      title.append(checkbox," " + student.name + (student.code ? " ("+student.code+")" : ""));
+      const caption = student.name + (student.code ? " ("+student.code+")" : "");
+      row.dataset.search = caption.toLocaleLowerCase("ms");
+      const title = element(report ? "strong" : "label",caption);
+      if (!report) {
+        const checkbox = element("input");
+        checkbox.type = "checkbox";
+        checkbox.dataset.field = "selected";
+        title.prepend(checkbox," ");
+      }
       const inputs = element("div");
       inputs.className = "pbd-student-fields";
       const controls = report
@@ -159,6 +168,7 @@
       $("entry-rows").append(row);
     }
     setSecondCriterion();
+    updateStudentFilter();
     $("editor").hidden = false;
     recordDirty = false;
     $("editor-heading").scrollIntoView({block:"nearest"});
@@ -170,6 +180,39 @@
     }
     $("bulk-criterion").options[1].disabled = !enabled;
     if (!enabled) $("bulk-criterion").value = "status1";
+  }
+  function visibleSelectionBoxes() {
+    return [...$("entry-rows").querySelectorAll('[data-field="selected"]')]
+      .filter(box => !box.closest("[data-id]").hidden);
+  }
+  function updateStudentSelection() {
+    const rows = [...$("entry-rows").children];
+    const visible = rows.filter(row => !row.hidden).length;
+    const boxes = visibleSelectionBoxes();
+    const selected = boxes.filter(box => box.checked).length;
+    const master = $("select-visible");
+    master.disabled = !boxes.length;
+    master.checked = boxes.length > 0 && selected === boxes.length;
+    master.indeterminate = selected > 0 && selected < boxes.length;
+    $("apply").disabled = !selected;
+    $("student-summary").textContent = (visible ? visible + " daripada " + rows.length +
+      " murid dipaparkan." : "Tiada murid sepadan dengan carian atau penapis.") +
+      (selected ? " " + selected + " dipilih." : "");
+  }
+  function updateStudentFilter() {
+    const query = $("student-search").value.trim().toLocaleLowerCase("ms");
+    const filter = $("student-filter").value;
+    const secondCriterion = Boolean($("criteria2").value.trim());
+    for (const row of $("entry-rows").children) {
+      const value = key => row.querySelector('[data-field="' + key + '"]')?.value;
+      const done = current?.kind === "report" ? Boolean(value("tp")) :
+        value("status1") !== statuses[0] && (!secondCriterion || value("status2") !== statuses[0]);
+      row.hidden = !row.dataset.search.includes(query) ||
+        (filter === "pending" && done) || (filter === "done" && !done);
+      const checkbox = row.querySelector('[data-field="selected"]');
+      if (row.hidden && checkbox) checkbox.checked = false;
+    }
+    updateStudentSelection();
   }
   function historyFilter() {
     const selected = $("history-student").value;
@@ -380,16 +423,37 @@
   for (const [control,kind] of [["new","assessment"],["report","report"]]) {
     $(control).addEventListener("click",() => {if (editAllowed()) newEditor(kind);});
   }
-  $("criteria2").addEventListener("input",setSecondCriterion);
-  $("editor").addEventListener("input",() => {recordDirty = true;});
+  $("criteria2").addEventListener("input",() => {
+    setSecondCriterion();
+    updateStudentFilter();
+  });
+  $("student-search").addEventListener("input",updateStudentFilter);
+  $("student-search").addEventListener("keydown",event => {
+    if (event.key === "Enter") event.preventDefault();
+  });
+  $("student-filter").addEventListener("change",updateStudentFilter);
+  $("select-visible").addEventListener("change",() => {
+    for (const box of visibleSelectionBoxes()) box.checked = $("select-visible").checked;
+    updateStudentSelection();
+  });
+  $("editor").addEventListener("input",event => {
+    const {id, dataset} = event.target;
+    if (dataset.field === "selected") updateStudentSelection();
+    else if (dataset.field || fields.some(field => id === "pbd-" + field)) recordDirty = true;
+  });
+  $("entry-rows").addEventListener("change",event => {
+    if (["status1","status2","tp"].includes(event.target.dataset.field)) updateStudentFilter();
+  });
   $("apply").addEventListener("click",() => {
-    const chosen = [...$("entry-rows").querySelectorAll('[data-field="selected"]:checked')];
-    if (!chosen.length) {notify("Tandakan kotak di sebelah nama murid dahulu.");return;}
+    const chosen = visibleSelectionBoxes().filter(box => box.checked);
+    if (!chosen.length) return;
     for (const box of chosen) {
       box.closest("[data-id]").querySelector('[data-field="' + $("bulk-criterion").value + '"]').value = $("bulk-status").value;
     }
     recordDirty = true;
-    notify("Status " + chosen.length + " murid dikemas kini dalam rekod ini.");
+    updateStudentFilter();
+    $("bulk-result").hidden = false;
+    $("bulk-result").textContent = "Status " + chosen.length + " murid dikemas kini. Tekan Simpan rekod untuk menyimpan.";
   });
   $("editor").addEventListener("submit",event => {
     event.preventDefault();
@@ -407,6 +471,7 @@
       const result = await api("records" + query(),json("POST",body));
       current.version = result.version;
       $("delete").hidden = false;
+      $("bulk-result").hidden = true;
       recordDirty = false;
       notify("Rekod disimpan.");
       page = 1;
