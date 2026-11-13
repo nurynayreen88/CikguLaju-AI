@@ -1195,7 +1195,7 @@ function fillSelect(el,items,label){
   if(item.value==null||!item.label)continue;
   let text=String(item.label);
   // Clean the visible subject name without changing approval or download eligibility.
-  if(el===subject)text=text.replace(/\s*(?:[([{]\s*)?(?:DRAF|DRAFT)(?:\s*[)\]}])?\s*$/i,"").trim();
+  if(el===subject)text=text.replace(/\s*(?:[—–:-]\s*)?(?:[([{]\s*)?(?:DRAF|DRAFT)(?:\s*[)\]}])?\s*$/i,"").trim()||text;
   if(el===unit)text=sourceUnitLabel(text);
   if(el===lesson){
    text=numberedPdpLabel(item);
