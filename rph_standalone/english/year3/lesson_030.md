@@ -8,20 +8,19 @@
 **References:** Get Smart plus 3 Student's Book p.21; Teacher's Book pp.34, 39–41; Jim's diary listening text.
 
 ## Set Induction (5 minutes)
-Teacher plays the routine vocabulary chain game. Pupils recall daily activities.
+**Teacher:** Begin a daily-routine vocabulary chain and ask for one detail about a pupil's morning. **Pupils:** Add a routine phrase to the chain and state when they do that activity.
 
 ## Activity 1 — Reading and listening (15 minutes)
-Teacher follows the Student's Book p.21 Activity 1 preparation, plays the recording about Jim's diary and asks pupils to tick activities heard. Pupils listen and read along.
+**Teacher:** Follow the Student's Book p.21 Activity 1 preparation and use the prescribed recording about Jim's diary where available; otherwise read the existing Jim's diary text aloud for listening practice. **Pupils:** Listen and follow the text, tick the routine activities they hear and compare answers with a partner.
 
 ## Activity 2 — Writing (25 minutes)
-Teacher guides comprehension questions and the Writing Tip on Teacher's Book p.40. Pupils practise sentences about routines with correct capitals and punctuation, then write neatly using supported cursive handwriting.
+**Teacher:** Guide the comprehension questions and Writing Tip referenced in Teacher's Book p.40. Model one routine sentence with a capital letter and full stop, and demonstrate legible cursive letter joins. **Pupils:** Write two routine sentences, check capitals and end punctuation with a partner, then rewrite one corrected sentence in supported cursive handwriting.
+**Workbook:** Pupils complete Workbook p.14, Activity 2, by adding full stops and question marks to sentences about routines.
 
 ## PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.14, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.14, Activity 2, by adding full stops and question marks to sentences about routines.
-Teacher checks guided sentence punctuation and cursive letter formation. Pupils correct and improve writing.
+**Teacher:** Check two individual routine sentences for correct capitals and end punctuation and examine one rewritten sentence for readable joined cursive letters; record pupils who still need guidance. **Pupils:** Submit two punctuated routine sentences and show one legible cursive rewrite with a correction made.
 
 ## Closure (5 minutes)
-Pupils share one accurate sentence about their daily routine.
+**Teacher:** Display a sentence with a missing question mark or full stop and invite a correction. **Pupils:** Explain the correction and read one accurate routine sentence.
 
 **QA:** Official KPM SOW checked; direct Teacher's Book and Word/PDF output verification pending. NOT READY FOR RELEASE.
