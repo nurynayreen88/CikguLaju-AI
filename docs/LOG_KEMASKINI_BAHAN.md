@@ -5,7 +5,7 @@ Log ini ialah penanda kesinambungan antara sesi. Kemas kini pada setiap perubaha
 | Tarikh | Bahan / perubahan | PR / commit | Semakan | Status kod | Web/Telegram | Susulan |
 | --- | --- | --- | --- | --- | --- | --- |
 | 2026-11-13 | English Tahun 3, Lesson 11–14: tindakan guru/murid, variasi aktiviti dan PBD dua ayat yang konsisten | [PR #574](https://github.com/nurynayreen88/CikguLaju-AI/pull/574), `5968280837a559403efe50e7e66f7bc54a19962f` | 7 aliran CI lulus pada PR; PDF Lesson 14 satu halaman A4 | **MERGED MAIN** | **BELUM DISAHKAN** | Sahkan Render/Web dan muat turun melalui Telegram selepas deployment; semakan visual rujukan buku jika relevan |
-| 2026-11-13 | Prosedur tetap simpan→uji→gabung→sahkan & log setiap perubahan | [PR #575](https://github.com/nurynayreen88/CikguLaju-AI/pull/575) | Semakan dokumen/PR | **DALAM SEMAKAN** | Tidak berkenaan | Gabung PR selepas semakan dokumen |
+| 2026-11-13 | Prosedur tetap simpan→uji→gabung→sahkan & log setiap perubahan | [PR #575](https://github.com/nurynayreen88/CikguLaju-AI/pull/575), `b66091e4191508966a2220faff5288971b49604e` | Dokumen/prosedur diperiksa; tiada perubahan aplikasi atau data | **MERGED MAIN** | Tidak berkenaan | Gunakan aliran ini untuk setiap pembaikan seterusnya |
 
 ## Peraturan status
 - **DALAM SEMAKAN**: perubahan disimpan pada branch/PR tetapi belum memenuhi semua syarat.
