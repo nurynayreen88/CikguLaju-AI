@@ -5,11 +5,9 @@ Admin permission is rechecked for every callback; all records stay server-side.
 """
 import html
 import re
-from decimal import Decimal
-
 import requests
 
-from referral_points_telegram import format_points
+from referral_points_telegram import format_points, point_lines, point_summary
 
 _ADMIN_LIST = re.compile(r"^admin_ref_points[|]list[|]([0-9]{1,4})$")
 _ADMIN_DETAIL = re.compile(r"^admin_ref_points[|]detail[|]([0-9]{1,20})$")
@@ -50,26 +48,21 @@ def install(runtime):
         events = rows_for("referral_point_events", uid,
                           "points_delta,referred_user_id,payment_kind,awarded_at",
                           order="awarded_at.desc")
-        points = sum((Decimal(str(x["points_delta"])) for x in events), Decimal("0"))
-        return len(signups), len(events), points, events
+        return len(signups), len(events), events
 
     def admin_list(cid, page):
         if page > 1000:
             return send(cid, "⚠️ Halaman tidak sah.")
-        offset = page * _PAGE_SIZE
-        members = sb(
-            "GET",
-            f"referral_members?select=referrer_user_id,enabled"
-            f"&order=created_at.desc&limit={_PAGE_SIZE + 1}&offset={offset}"
+        result = sb(
+            "POST", "rpc/affiliate_admin_members",
+            json={"p_page": page, "p_page_size": _PAGE_SIZE},
         )
-        if not isinstance(members, list):
+        if not isinstance(result, dict) or not isinstance(result.get("items"), list):
             raise RuntimeError("Referral member list unavailable")
-        more = len(members) > _PAGE_SIZE
-        members = members[:_PAGE_SIZE]
+        members = result["items"]
         lines = [
             "📊 <b>MATA REFERRAL — ADMIN</b>",
             "",
-            "Ganjaran: <b>20% bayaran pertama yang disahkan</b>",
             f"Halaman: <b>{page + 1}</b>",
             "",
         ]
@@ -78,12 +71,16 @@ def install(runtime):
             lines.append("Tiada peserta referral direkodkan." if page == 0
                          else "Tiada peserta pada halaman ini.")
         for member in members:
-            uid = int(member["referrer_user_id"])
-            registered, paid, points, _ = totals(uid)
+            uid = int(member["user_id"])
+            name = html.escape(str(member.get("first_name") or "").strip()[:70])
+            identity = f"{name} · <code>{uid}</code>" if name else f"ID <code>{uid}</code>"
             status = "✅" if member["enabled"] else "🔒"
-            lines.append(f"{status} ID <code>{uid}</code>: "
-                         f"<b>{format_points(points)} mata</b> • "
-                         f"{registered} daftar • {paid} bayaran")
+            lines.append(f"{status} {identity}\n"
+                         f"Baki <b>{format_points(member['balance'])}</b> mata · "
+                         f"Boleh dituntut {format_points(member['available'])} · "
+                         f"Dalam tuntutan {format_points(member['reserved'])} · "
+                         f"Dibayar {format_points(member['paid'])}\n"
+                         f"{int(member['registered_count'])} daftar · {int(member['payment_count'])} bayaran")
             keyboard.append([{
                 "text": f"{status} Semak ID {uid}",
                 "callback_data": f"admin_ref_points|detail|{uid}",
@@ -91,7 +88,7 @@ def install(runtime):
         nav = []
         if page:
             nav.append({"text": "⬅️", "callback_data": f"admin_ref_points|list|{page - 1}"})
-        if more:
+        if result.get("more") is True and page < 1000:
             nav.append({"text": "➡️", "callback_data": f"admin_ref_points|list|{page + 1}"})
         if nav:
             keyboard.append(nav)
@@ -106,7 +103,8 @@ def install(runtime):
             return send(cid, "⚠️ Pengguna ini bukan peserta referral.",
                         [[{"text": "⬅️ Senarai Referral",
                            "callback_data": "admin_ref_points|list|0"}]])
-        registered, paid, points, events = totals(uid)
+        registered, paid, events = totals(uid)
+        points = point_summary(sb, uid)
         users = sb("GET", f"cikgulaju_users?telegram_user_id=eq.{uid}"
                    "&select=first_name,username") or []
         user = users[0] if users else {}
@@ -124,7 +122,7 @@ def install(runtime):
             f"Status referral: <b>{status}</b>",
             f"Rakan mendaftar: <b>{registered}</b>",
             f"Bayaran layak direkodkan: <b>{paid}</b>",
-            f"Jumlah mata: <b>{format_points(points)}</b>",
+            point_lines(points),
             "",
             "<b>5 ganjaran terakhir</b>",
         ]

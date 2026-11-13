@@ -26,6 +26,7 @@ class FakeRuntime:
         self.signups = [{"referred_user_id": 901}]
         self.events = [{"referred_user_id": 901, "points_delta": "2.00",
                         "payment_kind": "pioneer", "awarded_at": "2026-11-04T12:00:00Z"}]
+        self.points = {"earned":12,"balance":2,"available":2,"reserved":0,"paid":10}
 
     def _is_admin(self, cid):
         return int(cid) == 1
@@ -35,6 +36,11 @@ class FakeRuntime:
 
     def _sb_request(self, method, path, **kwargs):
         self.calls.append((method, path))
+        if method == "POST" and path == "rpc/affiliate_point_summary":
+            return [self.points]
+        if method == "POST" and path == "rpc/affiliate_admin_members":
+            return {"items":[{"user_id":"301","first_name":"Teacher","enabled":True,
+                              "registered_count":1,"payment_count":1,**self.points}],"more":False}
         if method != "GET":
             raise AssertionError("Points view must be read-only")
         if path.startswith("referral_members?"):
@@ -94,7 +100,8 @@ class TestReferralAdminPanel(unittest.TestCase):
         rt.callback(1, "admin_ref_points|list|0")
         cid, message, keyboard = rt.sent[-1]
         self.assertEqual(cid, 1)
-        self.assertIn("2 mata", message)
+        self.assertIn("Baki <b>2</b> mata", message)
+        self.assertIn("Dibayar 10", message)
         self.assertIn("1 daftar", message)
         self.assertIn("1 bayaran", message)
         self.assertTrue(any(b.get("callback_data") == "admin_ref_points|detail|301"
@@ -103,8 +110,10 @@ class TestReferralAdminPanel(unittest.TestCase):
         detail = rt.sent[-1][1]
         self.assertIn("Teacher", detail)
         self.assertIn("+2 mata", detail)
+        self.assertIn("Baki mata: <b>2</b>", detail)
         self.assertIn("Rakan Pembangun", detail)
-        self.assertTrue(all(method == "GET" for method, _ in rt.calls))
+        self.assertEqual([path for method, path in rt.calls if method != "GET"],
+                         ["rpc/affiliate_admin_members", "rpc/affiliate_point_summary"])
 
     def test_non_referral_callbacks_preserve_existing_behavior(self):
         rt = FakeRuntime()
@@ -121,8 +130,9 @@ class TestReferralAdminPanel(unittest.TestCase):
 
     def test_database_error_does_not_report_false_zero(self):
         rt = FakeRuntime()
-        rt._sb_request = lambda method, path: (_ for _ in ()).throw(
-            RuntimeError("DB unavailable"))
+        def unavailable(*args, **kwargs):
+            raise RuntimeError("DB unavailable")
+        rt._sb_request = unavailable
         install(rt)
         rt.callback(1, "admin_ref_points|list|0")
         self.assertIn("belum dapat disemak", rt.sent[-1][1])
