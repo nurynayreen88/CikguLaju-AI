@@ -4,6 +4,9 @@ on:
     branches: [production/cikgulaju-web-20261105, qa/all-primary-subject-unit-parity-20261106]
     paths:
       - 'web/unified_rph_web.py'
+      - 'web/english_y1_kssr_rph.py'
+      - 'web/rph_shared_source_identity.py'
+      - 'tests/test_english_y1_kssr_web.py'
       - 'web/science_unit_groups.py'
       - 'web/math_unit_groups.py'
       - 'tools/run_web_v1_preview.py'
@@ -13,6 +16,9 @@ on:
   pull_request:
     paths:
       - 'web/unified_rph_web.py'
+      - 'web/english_y1_kssr_rph.py'
+      - 'web/rph_shared_source_identity.py'
+      - 'tests/test_english_y1_kssr_web.py'
       - 'web/science_unit_groups.py'
       - 'web/math_unit_groups.py'
       - 'tools/run_web_v1_preview.py'
@@ -31,4 +37,4 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install 'flask==3.1.3' 'python-docx==1.2.0' 'lxml==5.4.0'
-      - run: PYTHONPATH=tests:. python -m unittest -v tests.test_web_all_subject_unit_parity_20261106 tests.test_web_science_unit_groups tests.test_web_math_unit_grouping_20261106 tests.test_web_pk_domain_navigation_20261106 tests.test_web_pj_unit_navigation_20261106
+      - run: PYTHONPATH=tests:. python -m unittest -v tests.test_web_all_subject_unit_parity_20261106 tests.test_english_y1_kssr_web tests.test_web_science_unit_groups tests.test_web_math_unit_grouping_20261106 tests.test_web_pk_domain_navigation_20261106 tests.test_web_pj_unit_navigation_20261106

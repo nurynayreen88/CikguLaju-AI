@@ -130,7 +130,11 @@ def options():
                     # any Web lesson; never fall back silently to a stale copy.
                     shared_subjects = source.list_subjects(year)
                     if kind == "subjects":
-                        items = list(shared_subjects)
+                        items = [
+                            {**row, "label": "Bahasa Inggeris (KSSR Semakan 2017)"}
+                            if year == 1 and row.get("value") == "ENGLISH" else row
+                            for row in shared_subjects
+                        ]
                         if year in range(2, 7):
                             from web.unified_rph_web import source_records
                             for code, label in (("MORAL", "Pendidikan Moral"),
@@ -306,7 +310,7 @@ def options():
                                 "code": "TELEGRAM_NATIVE_PDP_UNAVAILABLE",
                             }), 503
                         return jsonify(choices)
-                    if year in range(2, 7):
+                    if year in range(2, 7) or (year == 1 and subject == "ENGLISH"):
                         from web.unified_rph_web import SOURCE_SUBJECTS
                         if subject in SOURCE_SUBJECTS:
                             from web.unified_rph_web import unit_options as source_units, pdp_options as source_pdp
