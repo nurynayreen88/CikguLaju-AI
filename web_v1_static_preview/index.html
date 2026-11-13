@@ -70,6 +70,10 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 @media print{.upcoming-examples{display:none!important}}
 
 .sidebar-coming-status{margin-left:auto;flex:none;font-size:.67rem;line-height:1.2;font-weight:750;color:#637585;border:1px solid #d6e0e5;border-radius:8px;padding:4px 6px;background:#f4f6f8}
+.sidebar-tab--planned{flex-wrap:wrap;row-gap:6px}
+.sidebar-tab--planned .sidebar-coming-status{margin-left:26px}
+.app-view h2>.sidebar-coming-status{display:inline-block;margin-left:10px;vertical-align:middle}
+@media(max-width:760px){.sidebar-tab--planned{align-content:center}.sidebar-tab--planned .sidebar-coming-status{margin-left:24px}}
 .upcoming-intro{line-height:1.6;color:#3b5768;max-width:700px}
 .upcoming-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:19px 0}
 .upcoming-item{border:1px solid #dce5ea;border-radius:14px;background:#fbfcfe;padding:15px 17px;min-width:0}
@@ -79,7 +83,7 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 .upcoming-item p{margin:9px 0 0;font-size:.9rem;line-height:1.5;color:#526779}
 @media(max-width:520px){.upcoming-grid{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:760px){.sidebar-coming-status{font-size:.63rem;padding:3px 5px}}
-@media print{#view-upcoming{display:none!important}}
+@media print{#view-worksheet,#view-bbm,#view-uasa,#view-pbd,#view-kp2027{display:none!important}}
  .brand-icon{object-fit:contain;flex-shrink:0;background:transparent}
  .login-brand{object-fit:contain;display:block;margin:0 auto 20px;background:transparent}
  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
@@ -428,9 +432,13 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     <button type="button" class="sidebar-tab" data-web-view="account" aria-controls="view-account"><span aria-hidden="true">👤</span> Profil &amp; Akses</button>
     <button type="button" class="sidebar-tab is-active" data-web-view="today" aria-controls="view-today" aria-current="page"><span aria-hidden="true">📆</span> RPH Hari Ini</button>
     <button type="button" class="sidebar-tab" data-web-view="rph" aria-controls="view-rph"><span aria-hidden="true">📘</span> Sediakan RPH</button>
+    <button type="button" class="sidebar-tab sidebar-tab--planned" data-web-view="worksheet" aria-controls="view-worksheet"><span aria-hidden="true">📄</span> Lembaran Kerja <span class="sidebar-coming-status">Akan Datang</span></button>
+    <button type="button" class="sidebar-tab sidebar-tab--planned" data-web-view="bbm" aria-controls="view-bbm"><span aria-hidden="true">🧩</span> BBM &amp; Aktiviti <span class="sidebar-coming-status">Akan Datang</span></button>
+    <button type="button" class="sidebar-tab sidebar-tab--planned" data-web-view="uasa" aria-controls="view-uasa"><span aria-hidden="true">📝</span> Latihan UASA <span class="sidebar-coming-status">Akan Datang</span></button>
+    <button type="button" class="sidebar-tab sidebar-tab--planned" data-web-view="pbd" aria-controls="view-pbd"><span aria-hidden="true">📊</span> Rekod PBD <span class="sidebar-coming-status">Akan Datang</span></button>
     <button type="button" class="sidebar-tab" data-web-view="special" aria-controls="view-special"><span aria-hidden="true">🌱</span> RPH Aktiviti Khas</button>
     <button type="button" class="sidebar-tab" data-web-view="rpt" aria-controls="view-rpt"><span aria-hidden="true">📅</span> RPT 2027</button>
-    <button type="button" class="sidebar-tab" data-web-view="upcoming" aria-controls="view-upcoming"><span aria-hidden="true">🧰</span> Bahan Akan Datang <span class="sidebar-coming-status">Akan Datang</span></button>
+    <button type="button" class="sidebar-tab sidebar-tab--planned" data-web-view="kp2027" aria-controls="view-kp2027"><span aria-hidden="true">📚</span> KP2027 • Tahun 1 <span class="sidebar-coming-status">Akan Datang</span></button>
     <button type="button" class="sidebar-tab" data-web-view="payment" aria-controls="view-payment"><span aria-hidden="true">🏆</span> Rakan Pembangun</button>
     <button type="button" id="web-referral-tab" class="sidebar-tab" data-web-view="referral" aria-controls="view-referral" hidden><span aria-hidden="true">🎁</span> Referral Saya</button>
     <button type="button" class="sidebar-tab" data-web-view="feedback" aria-controls="view-feedback"><span aria-hidden="true">💬</span> Komen &amp; Cadangan</button>
@@ -441,17 +449,9 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </aside>
 <div class="app-main">
 <div class="workspace-intro"><div><span class="workspace-eyebrow">RUANG GURU</span><p>Selamat datang, <strong id="workspace-teacher-name">Cikgu</strong></p></div><span class="workspace-ready"><span aria-hidden="true">●</span> Portal Pembelajaran</span></div>
-<section id="view-upcoming" class="app-view" aria-labelledby="view-upcoming-heading" hidden>
-  <h2 id="view-upcoming-heading">🧰 Bahan Akan Datang</h2>
-  <p class="upcoming-intro">Bahan tambahan sekolah rendah Tahun 1–6 sedang disusun dan disemak. <strong>Enam contoh aktiviti sebenar</strong> daripada kerja yang sudah dibuat boleh dipratonton di bawah sebagai bukti kemajuan. Ini contoh kandungan, <strong>bukan enam modul yang sudah siap</strong>; fail penuh belum boleh dimuat turun dan tiada tarikh pelancaran yang dijanjikan.</p>
-  <div class="upcoming-grid" aria-label="Senarai modul dalam pembangunan">
-    <article class="upcoming-item"><div class="upcoming-item-header"><strong>📄 Bank Lembaran Kerja Tahun 1–6</strong><span>Akan Datang</span></div><p>Latihan mengikut subjek, SK/SP dan Lesson/PdP. Bahan terpilih yang sudah disahkan boleh muncul lebih awal dalam Sediakan Bahan PdP.</p></article>
-    <article class="upcoming-item"><div class="upcoming-item-header"><strong>🧩 BBM &amp; Aktiviti</strong><span>Akan Datang</span></div><p>Bahan bantu mengajar dan aktiviti pembelajaran yang dipadankan dengan tajuk sebenar.</p></article>
-    <article class="upcoming-item"><div class="upcoming-item-header"><strong>📝 Latihan UASA</strong><span>Akan Datang</span></div><p>Set latihan dan pentaksiran sekolah rendah selepas semakan kandungan serta format.</p></article>
-    <article class="upcoming-item"><div class="upcoming-item-header"><strong>📊 Rekod PBD</strong><span>Akan Datang</span></div><p>Alat sokongan Pentaksiran Bilik Darjah. Tiada maklumat murid dikumpulkan melalui paparan ini.</p></article>
-    <article class="upcoming-item"><div class="upcoming-item-header"><strong>📚 KP2027 Tahun 1</strong><span>Akan Datang</span></div><p>Bahan Kurikulum Persekolahan 2027 selepas pemetaan dan semakan sumber selesai.</p></article>
-  </div>
-
+<section id="view-worksheet" class="app-view" aria-labelledby="view-worksheet-heading" hidden>
+  <h2 id="view-worksheet-heading">📄 Lembaran Kerja <span class="sidebar-coming-status">Akan Datang</span></h2>
+  <p class="upcoming-intro">Lembaran Kerja Tahun 1–6 sedang disusun mengikut subjek, SK/SP dan Lesson/PdP. <strong>Enam contoh susun atur A4</strong> boleh dilihat di bawah sebagai bukti kerja yang sedang disemak. Ini <strong>bukan enam modul yang sudah siap</strong>; fail penuh belum boleh dimuat turun dan tiada tarikh pelancaran yang dijanjikan.</p>
   <div class="upcoming-examples" aria-labelledby="upcoming-examples-heading">
     <h3 id="upcoming-examples-heading">👀 Lihat hasil kerja yang sedang disemak</h3>
     <p>Lihat gambar susun atur A4 bagi enam contoh bahan yang sedang disemak. Ini paparan visual daripada petikan aktiviti yang telah disediakan, bukan PDF siap atau pautan muat turun. Jawapan guru, identiti murid dan maklumat peribadi tidak dipaparkan.</p>
@@ -511,7 +511,35 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     </div>
     <p class="upcoming-example-disclaimer">Status semua contoh: <strong>pratonton semakan</strong>. Belum ada pautan PDF/Word atau penjanaan untuk contoh ini dalam menu tersebut. Bahan lengkap hanya dibuka selepas semakan isi, SK/SP, keselamatan dan kesesuaian murid selesai.</p>
   </div>
-  <p class="notice">Fungsi sedia ada seperti <strong>RPH Hari Ini, Sediakan RPH, RPH Aktiviti Khas dan RPT 2027</strong> kekal di menu masing-masing. Bahan baharu hanya dibuka selepas disemak; label “Akan Datang” bukan bermaksud bahan sudah siap.</p>
+  <p class="notice">Bahan masih melalui semakan. Muat turun Word/PDF belum dibuka, dan tiada kuota RPH dipotong melalui pratonton ini.</p>
+  <p class="notice"><strong>Jom sokong CikguLaju dengan menjadi Rakan Pembangun.</strong> Sumbangan RM20 sekali bayar membantu kerja pemetaan buku teks, penyediaan bahan dan penambahbaikan sistem diteruskan. Rakan Pembangun mendapat akses seumur hidup kepada semua kemudahan CikguLaju, termasuk modul baharu apabila dilancarkan, <strong>tanpa bayaran tambahan</strong>. Untuk menyertai, pilih menu <strong>Rakan Pembangun</strong>.</p>
+</section>
+
+<section id="view-bbm" class="app-view" aria-labelledby="view-bbm-heading" hidden>
+  <h2 id="view-bbm-heading">🧩 BBM &amp; Aktiviti <span class="sidebar-coming-status">Akan Datang</span></h2>
+  <p class="upcoming-intro">Bahan bantu mengajar dan aktiviti pembelajaran sekolah rendah sedang dipadankan dengan tajuk, buku teks dan Lesson/PdP sebenar. Modul ini <strong>Akan Datang</strong> selepas semakan sumber dan kualiti.</p>
+  <p class="notice">Bahan masih melalui semakan. Muat turun Word/PDF belum dibuka, dan tiada kuota RPH dipotong melalui pratonton ini. Fungsi <strong>RPH Aktiviti Khas</strong> yang sedia ada kekal di menu asalnya.</p>
+  <p class="notice"><strong>Jom sokong CikguLaju dengan menjadi Rakan Pembangun.</strong> Sumbangan RM20 sekali bayar membantu kerja pemetaan buku teks, penyediaan bahan dan penambahbaikan sistem diteruskan. Rakan Pembangun mendapat akses seumur hidup kepada semua kemudahan CikguLaju, termasuk modul baharu apabila dilancarkan, <strong>tanpa bayaran tambahan</strong>. Untuk menyertai, pilih menu <strong>Rakan Pembangun</strong>.</p>
+</section>
+
+<section id="view-uasa" class="app-view" aria-labelledby="view-uasa-heading" hidden>
+  <h2 id="view-uasa-heading">📝 Latihan UASA <span class="sidebar-coming-status">Akan Datang</span></h2>
+  <p class="upcoming-intro">Set latihan UASA Tahun 1–6 masih disediakan dan disemak mengikut subjek, format serta tahap murid. Modul ini <strong>Akan Datang</strong>.</p>
+  <p class="notice">Bahan masih melalui semakan. Muat turun Word/PDF belum dibuka, dan tiada kuota RPH dipotong melalui pratonton ini.</p>
+  <p class="notice"><strong>Jom sokong CikguLaju dengan menjadi Rakan Pembangun.</strong> Sumbangan RM20 sekali bayar membantu kerja pemetaan buku teks, penyediaan bahan dan penambahbaikan sistem diteruskan. Rakan Pembangun mendapat akses seumur hidup kepada semua kemudahan CikguLaju, termasuk modul baharu apabila dilancarkan, <strong>tanpa bayaran tambahan</strong>. Untuk menyertai, pilih menu <strong>Rakan Pembangun</strong>.</p>
+</section>
+
+<section id="view-pbd" class="app-view" aria-labelledby="view-pbd-heading" hidden>
+  <h2 id="view-pbd-heading">📊 Rekod PBD <span class="sidebar-coming-status">Akan Datang</span></h2>
+  <p class="upcoming-intro">Alat sokongan Pentaksiran Bilik Darjah sedang dibangunkan. Modul <strong>Akan Datang</strong>; paparan ini tidak mengumpulkan atau menyimpan maklumat murid.</p>
+  <p class="notice">Bahan masih melalui semakan. Muat turun Word/PDF belum dibuka, dan tiada kuota RPH dipotong melalui pratonton ini.</p>
+  <p class="notice"><strong>Jom sokong CikguLaju dengan menjadi Rakan Pembangun.</strong> Sumbangan RM20 sekali bayar membantu kerja pemetaan buku teks, penyediaan bahan dan penambahbaikan sistem diteruskan. Rakan Pembangun mendapat akses seumur hidup kepada semua kemudahan CikguLaju, termasuk modul baharu apabila dilancarkan, <strong>tanpa bayaran tambahan</strong>. Untuk menyertai, pilih menu <strong>Rakan Pembangun</strong>.</p>
+</section>
+
+<section id="view-kp2027" class="app-view" aria-labelledby="view-kp2027-heading" hidden>
+  <h2 id="view-kp2027-heading">📚 KP2027 • Tahun 1 <span class="sidebar-coming-status">Akan Datang</span></h2>
+  <p class="upcoming-intro">Bahan Kurikulum Persekolahan 2027 (KP2027) Tahun 1 sedang melalui pemetaan dan semakan sumber. Modul ini <strong>Akan Datang</strong> dan belum mempunyai fail yang diluluskan untuk muat turun.</p>
+  <p class="notice">RPT 2027 yang sudah tersedia kekal di menu <strong>RPT 2027</strong>; pilihan Tahun 1 KP2027 masih belum dibuka. Bahan masih melalui semakan. Muat turun Word/PDF belum dibuka, dan tiada kuota RPH dipotong melalui pratonton ini.</p>
   <p class="notice"><strong>Jom sokong CikguLaju dengan menjadi Rakan Pembangun.</strong> Sumbangan RM20 sekali bayar membantu kerja pemetaan buku teks, penyediaan bahan dan penambahbaikan sistem diteruskan. Rakan Pembangun mendapat akses seumur hidup kepada semua kemudahan CikguLaju, termasuk modul baharu apabila dilancarkan, <strong>tanpa bayaran tambahan</strong>. Untuk menyertai, pilih menu <strong>Rakan Pembangun</strong>.</p>
 </section>
 <section id="view-today" class="app-view" aria-labelledby="view-today-heading" hidden>
@@ -796,7 +824,7 @@ function canGenerateRph(){
   (rphAccessMode==="trial"&&rphTrialRemaining!==null&&rphTrialRemaining>0);
 }
 const webViewButtons=Array.from(document.querySelectorAll("[data-web-view]"));
-const webViews=new Map([["today","view-today"],["upcoming","view-upcoming"],["rph","view-rph"],["special","view-special"],["rpt","view-rpt"],["account","view-account"],["payment","view-payment"],["referral","view-referral"],["feedback","view-feedback"],["admin","view-admin"],["guide","view-guide"]]);
+const webViews=new Map([["today","view-today"],["rph","view-rph"],["worksheet","view-worksheet"],["bbm","view-bbm"],["uasa","view-uasa"],["pbd","view-pbd"],["special","view-special"],["rpt","view-rpt"],["kp2027","view-kp2027"],["account","view-account"],["payment","view-payment"],["referral","view-referral"],["feedback","view-feedback"],["admin","view-admin"],["guide","view-guide"]]);
 /* Only the original curriculum dropdowns and material actions are moved
  * into a timetable card. The "Sediakan RPH" page itself NEVER moves, opens
  * or renders inside RPH Hari Ini. Event listeners and native APIs are reused.
