@@ -1003,16 +1003,22 @@ def create_blueprint():
                 return jsonify({"items": items, "status": "SUMBER_ASAL", "note": note})
             if sub == "SCIENCE":
                 from urllib.parse import urlencode
-                from web.native_textbook_references import private_textbook_pdf, textbook_reference
+                from web.native_textbook_references import local_science_copy, private_textbook_pdf, textbook_reference
                 selection = textbook_reference(year, unit, token)
-                if selection and private_textbook_pdf(selection[1], metadata_only=True):
-                    pages, _ = selection
+                if not selection:
+                    return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
+                pages, path = selection
+                try:
+                    stored = private_textbook_pdf(path, metadata_only=True)
+                except (OSError, ValueError):
+                    stored = False
+                if stored:
                     params = urlencode({"year": year, "subject": sub, "unit": unit, "lesson": token})
                     return jsonify({"items": [{"type": "textbook",
                         "title": f"Buku Teks Sains Tahun {year} • m/s {pages}",
                         "url": "/api/web/rph/science-textbook?" + params,
                         "action": "Download"}], "status": "SUMBER_ASAL"})
-                return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
+                return jsonify({"items": [local_science_copy(year, token, pages)], "status": "SUMBER_ASAL"})
             # Music intentionally remains original-owner VIEW links only.
             items = music_source_links(year, unit, token)
         except Exception:

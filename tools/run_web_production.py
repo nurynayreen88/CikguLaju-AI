@@ -92,6 +92,14 @@ def self_hosted_pdf_lib():
     return send_file(path,mimetype="application/javascript",max_age=86400,conditional=True)
 
 
+@app.get("/assets/pdp-pdf-copy.js")
+def pdp_pdf_copy_script():
+    from pathlib import Path
+    from flask import send_file
+    path = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "pdp-pdf-copy.js"
+    return send_file(path, mimetype="application/javascript", max_age=1800, conditional=True)
+
+
 @app.get("/assets/rpt-original-cover-layout.json")
 def original_rpt_cover_layout():
     """Fixed public PDF cover coordinates and hashes only; no teacher data."""
