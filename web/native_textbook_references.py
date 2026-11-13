@@ -1,4 +1,4 @@
-"""Serve checked Science textbook excerpts from private material storage."""
+"""Provide checked Science textbook page selections and private PDF copies."""
 import os
 import re
 from urllib.error import HTTPError
@@ -10,17 +10,23 @@ from web.native_telegram_rph_client import BlockRedirects
 from web.native_telegram_sequence_rph_client import list_native_lessons
 
 SCIENCE_PAGES = {
+    1: {44: (2, 3), 45: (4, 5), 46: (6, 8), 47: (7, 8)},
     2: {52: (2, 4), 53: (5, 7), 54: (8, 9), 55: (10, 11), 56: (12, 14),
         57: (12, 14), 58: (18, 20)},
     3: {46: (2, 3), 47: (4, 5), 48: (6, 7), 49: (9, 10), 50: (11, 12), 51: (13, 14),
         52: (16, 19), 53: (20, 20), 54: (24, 27)},
+    5: {84: (2, 7), 85: (2, 7), 86: (8, 13), 87: (8, 13), 88: (10, 13)},
 }
 
 SCIENCE_SOURCE = {
+    1: (7, 66542795, "0edddd446f02c2b4e0ed2ffec34cbf03366aa60de439f95283cb3de2016e9727",
+        "Alias bin Puteh, Jong Tze Kian, Mohd Ramadhan bin Anwar", 2016),
     2: (5, 79464408, "cf2e00ba3fc77290dd4298d563faf7e0b352343301120ecf962b735f342d366b",
         "Suwaibatullaslamiah binti Jalaludin, Mohd Ramadhan bin Anwar, Abdul Karim bin Daud", 2017),
     3: (7, 100100997, "5c5c95276915abfc52dab3515040064502cf10e8fcc4e1682648b9ee260f1cb8",
         "Mohd Faizal bin Rus Rzerli, Raja Shahida binti Raja Mansor, Abdul Karim bin Daud, Jong Tze Kian", 2018),
+    5: (7, 91275648, "322b8ea0e19fc5b6da1c41ff64a25d22e470917027d9b293c85efc045a6be3e2",
+        "Siti Roha binti Abd Karim, Mohd Ramadhan bin Anwar, Suwaibatullaslamiah binti Jalaludin", 2020),
 }
 
 

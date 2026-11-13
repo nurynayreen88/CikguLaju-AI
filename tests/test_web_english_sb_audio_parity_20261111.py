@@ -202,6 +202,33 @@ class WebEnglishSourceTests(unittest.TestCase):
         with patch("web.unified_rph_web._account", return_value=(None, ({"error": "Login"}, 401))):
             self.assertEqual(self.client.get(item["url"]).status_code, 401)
 
+    def test_science_year_one_and_five_return_local_pdf_for_exact_pages(self):
+        for year, number, pages, indexes in (
+            (1, 44, "2–3", (9, 10)), (5, 86, "8–13", (15, 20)),
+        ):
+            with self.subTest(year=year, number=number):
+                lesson = f"ST{year}-PDP-{number:03d}"
+                unit = "u" + "a" * 24
+                query = dict(year=year, subject="SCIENCE", unit=unit, lesson=lesson)
+                record = {"value": lesson, "textbook_ref": f"Buku Teks m/s {pages}"}
+                with self.account(), patch(
+                    "web.native_textbook_references.list_native_lessons", return_value=[record]
+                ) as lookup, patch("web.native_textbook_references.build_opener") as storage:
+                    reply = self.client.get("/api/web/rph/extra-materials", query_string=query)
+                    self.assertEqual(reply.status_code, 200)
+                    item, = reply.json["items"]
+                    self.assertEqual(item["action"], "local-pdf")
+                    self.assertNotIn("url", item)
+                    self.assertEqual((item["pdf"]["start"], item["pdf"]["end"]), indexes)
+                    self.assertIn(lesson, item["pdf"]["filename"])
+                    self.assertIn(f"m/s {pages}", item["pdf"]["source"])
+                    lookup.assert_called_once_with(year, "SCIENCE", unit)
+                    storage.assert_not_called()
+                    lookup.return_value = [{**record, "textbook_ref": "Buku Teks m/s 5"}]
+                    self.assertEqual(self.client.get(
+                        "/api/web/rph/extra-materials", query_string=query
+                    ).json["items"], [])
+
     def test_books_outside_the_checked_subset_do_not_call_native_source(self):
         with self.account(), patch("web.native_textbook_references.list_native_lessons") as science:
             for query in ({"year": 3, "subject": "SCIENCE", "unit": "u" + "b" * 24,
