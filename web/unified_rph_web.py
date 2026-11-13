@@ -940,7 +940,7 @@ def create_blueprint():
             if len(found) != 1:
                 raise ValueError("English Lesson identity mismatch")
             return year, sub, unit, lesson, found[0]["lesson"]
-        if sub == "MUZIK" and year in range(2, 7):
+        if (sub == "MUZIK" and year in range(2, 7)) or sub in ("SCIENCE", "SEJARAH"):
             return year, sub, unit, lesson, None
         raise ValueError("No verified source for optional resources")
 
@@ -1001,6 +1001,13 @@ def create_blueprint():
                         + (" Sumber lain belum dapat disahkan: " + ", ".join(missing)
                            if missing else ""))
                 return jsonify({"items": items, "status": "SUMBER_ASAL", "note": note})
+            if sub in ("SCIENCE", "SEJARAH"):
+                from web.native_textbook_references import textbook_reference
+                try:
+                    book = textbook_reference(year, sub, unit, token)
+                except ValueError:
+                    book = None
+                return jsonify({"items": [book] if book else [], "status": "SUMBER_ASAL"})
             # Music intentionally remains original-owner VIEW links only.
             items = music_source_links(year, unit, token)
         except Exception:

@@ -226,7 +226,7 @@ class DailyTimetableRouteTests(TestCase):
         self.assertIn('if(sourceConfirmed){',page)
         self.assertIn('if(verifiedRphFormats.includes("pdf"))',page)
         self.assertIn('if(verifiedRphFormats.includes("word"))',page)
-        self.assertIn('if(!readyMaterialLink(item))continue;',daily)
+        self.assertIn('if(!readyMaterialLink(item,c.slot.subject_code))continue;',daily)
         self.assertIn('if(!formats.includes(format))continue;',daily)
         self.assertIn('Tiada bahan yang disahkan tersedia',page)
         self.assertIn('Tiada bahan yang disahkan tersedia',daily)
