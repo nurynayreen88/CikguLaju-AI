@@ -64,6 +64,11 @@
     node.maxLength = max;
     return node;
   }
+  function updateRosterSummary() {
+    const count = students.filter(student => student.name.trim()).length;
+    $("roster-summary").textContent = "Senarai murid (" + count + ")" +
+      (rosterDirty ? " · Belum disimpan" : "");
+  }
   function renderRoster() {
     const host = $("roster-rows");
     host.replaceChildren();
@@ -73,8 +78,16 @@
       const name = input(student.name, 120), code = input(student.code, 20);
       const remove = element("button", "Buang dari senarai");
       remove.type = "button";
-      name.addEventListener("input", () => {student.name = name.value; rosterDirty = true;});
-      code.addEventListener("input", () => {student.code = code.value; rosterDirty = true;});
+      name.addEventListener("input", () => {
+        student.name = name.value;
+        rosterDirty = true;
+        updateRosterSummary();
+      });
+      code.addEventListener("input", () => {
+        student.code = code.value;
+        rosterDirty = true;
+        updateRosterSummary();
+      });
       remove.addEventListener("click", () => {
         students.splice(index,1);
         rosterDirty = true;
@@ -83,10 +96,14 @@
       row.append(label("Nama murid",name),label("Kod murid (pilihan)",code),remove);
       host.append(row);
     });
-    if (!students.length) host.append(element("p","Tambah murid atau import senarai Excel/CSV."));
+    if (!students.length) host.append(element("p","Belum ada nama dalam senarai ini."));
+    updateRosterSummary();
   }
   function editAllowed() {
-    if (rosterDirty) { notify("Simpan senarai murid dahulu."); return false; }
+    if (rosterDirty || $("paste-input").value.trim()) {
+      notify("Selesaikan perubahan senarai murid dahulu.");
+      return false;
+    }
     return !recordDirty || window.confirm("Buang perubahan rekod yang belum disimpan?");
   }
   function newEditor(kind, seed = {}, record = null) {
@@ -191,23 +208,41 @@
   }
   async function openClass(cls, year) {
     if (!cls || !/^(20[2-9][0-9]|2100)$/.test(year)) throw Error("Pilih kelas dan sesi akademik dahulu.");
-    $("work").hidden = true;
+    let result;
+    try {
+      result = await api("roster?" + new URLSearchParams({class:cls,year}));
+    } catch (error) {
+      if (active) {
+        $("class").value = active.cls;
+        $("year").value = active.year;
+      }
+      throw error;
+    }
     pendingLesson = null;
     active = {cls,year};
     $("editor").hidden = true;
     current = null;
-    const result = await api("roster" + query());
+    $("paste-input").value = "";
+    $("paste-panel").open = false;
+    $("file").value = "";
     students = result.students;
     rosterVersion = result.version;
     rosterDirty = recordDirty = false;
     $("scope").textContent = cls + " · " + year;
     renderRoster();
+    $("history-student").value = "";
     historyFilter();
     page = 1;
-    await history();
+    $("history").replaceChildren();
+    $("prev").hidden = $("next").hidden = true;
     $("roster").open = students.length === 0;
     $("work").hidden = false;
     notify("Rekod kelas dibuka.");
+    try {
+      await history();
+    } catch {
+      $("history").append(element("li","Sejarah belum dapat dimuatkan. Pilih penapis murid untuk cuba lagi."));
+    }
   }
   async function loadClasses(selected) {
     const result = await api("classes");
@@ -217,6 +252,33 @@
     if (!result.classes.length) notify("Tambah kelas dalam Profil & Akses dahulu.");
   }
   window.cikgulajuPbdLoad = () => {void run(() => loadClasses(active?.cls || $("class").value));};
+  function confirmClassChange() {
+    if ((rosterDirty || $("paste-input").value.trim()) &&
+        !window.confirm("Buang perubahan senarai murid yang belum disimpan?")) return false;
+    return !recordDirty || window.confirm("Buang perubahan rekod yang belum disimpan?");
+  }
+  function focusRoster() {
+    $("roster").open = true;
+    $("roster-summary").focus();
+  }
+  window.cikgulajuPbdOpenRoster = (cls, year) => {
+    if (busy) return;
+    const alreadyOpen = active?.cls === cls && active.year === year;
+    if (!alreadyOpen && !confirmClassChange()) return;
+    showWebView("pbd");
+    if (alreadyOpen) {
+      $("class").value = cls;
+      $("year").value = year;
+      focusRoster();
+      return;
+    }
+    void run(async () => {
+      await loadClasses(cls);
+      $("year").value = year;
+      await openClass(cls,year);
+      focusRoster();
+    });
+  };
   window.cikgulajuPbdFromRph = (seed, selection) => {
     if (busy || !editAllowed()) return;
     document.querySelector('[data-web-view="pbd"]').focus();
@@ -237,8 +299,7 @@
     });
   };
   $("open").addEventListener("click",() => {
-    if (rosterDirty && !window.confirm("Buang perubahan senarai murid yang belum disimpan?")) return;
-    if (recordDirty && !window.confirm("Buang perubahan rekod yang belum disimpan?")) return;
+    if (!confirmClassChange()) return;
     void run(() => openClass($("class").value,$("year").value));
   });
   $("add").addEventListener("click",() => {
@@ -248,9 +309,7 @@
     renderRoster();
     $("roster-rows").lastElementChild?.querySelector("input")?.focus();
   });
-  $("import").addEventListener("click",() => {void run(async () => {
-    const file = $("file").files[0];
-    if (!file) throw Error("Pilih fail Excel atau CSV dahulu.");
+  async function previewImport(file) {
     const form = new FormData();
     form.append("file",file);
     const result = await api("import",{method:"POST",body:form});
@@ -268,17 +327,54 @@
       rosterDirty = true;
       renderRoster();
     }
+    notify(additions.length ? additions.length + " nama ditambah pada pratonton. Tekan Simpan senarai selepas semakan." : "Semua nama yang dimasukkan sudah ada dalam senarai.");
+  }
+  function pastedRoster(text) {
+    const rows = text.split(/\r\n|\n|\r/).filter(line => line.trim())
+      .map(line => line.split("\t").map(cell => cell.trim()));
+    const header = value => value.toLowerCase().replace(/[^a-z0-9]/g,"");
+    const nameHeadings = ["namamurid","namapenuhmurid","nama","namapenuh","studentname"];
+    if (rows.length && nameHeadings.includes(header(rows[0][0]))) {
+      const headings = rows.shift();
+      if (headings.length > 2 ||
+          (headings[1] && !["kodmurid","kodmuridpilihan"].includes(header(headings[1])))) {
+        throw Error("Salin lajur Nama Murid dan Kod Murid sahaja.");
+      }
+    }
+    if (!rows.length) throw Error("Tampal sekurang-kurangnya satu nama murid.");
+    if (rows.length > 100) throw Error("Pilih satu kelas sahaja dengan maksimum 100 murid.");
+    if (rows.some(row => row.length > 2 || !row[0])) {
+      throw Error("Tampal satu nama setiap baris. Jika ada kod, tampal kod di lajur kedua.");
+    }
+    const quote = cell => '"' + cell.replace(/"/g,'""') + '"';
+    return "Nama Murid,Kod Murid\n" +
+      rows.map(([name,code = ""]) => [quote(name),quote(code)].join(",")).join("\n");
+  }
+  $("import").addEventListener("click",() => {void run(async () => {
+    const file = $("file").files[0];
+    if (!file) throw Error("Pilih fail Excel atau CSV dahulu.");
+    await previewImport(file);
     $("file").value = "";
-    notify(additions.length ? additions.length + " nama ditambah pada pratonton. Tekan Simpan senarai selepas semakan." : "Semua nama dalam fail sudah ada dalam senarai.");
+  });});
+  $("paste-preview").addEventListener("click",() => {void run(async () => {
+    const csv = pastedRoster($("paste-input").value);
+    await previewImport(new File([csv],"senarai-murid.csv",{type:"text/csv"}));
+    $("paste-input").value = "";
+    $("paste-panel").open = false;
   });});
   $("save-roster").addEventListener("click",() => {void run(async () => {
+    if ($("paste-input").value.trim()) {
+      $("paste-panel").open = true;
+      $("paste-input").focus();
+      throw Error("Pratonton senarai yang ditampal sebelum menyimpan.");
+    }
     const result = await api("roster" + query(),json("PUT",{version:rosterVersion,students}));
     students = result.students;
     rosterVersion = result.version;
     rosterDirty = false;
     renderRoster();
     historyFilter();
-    notify("Senarai murid disimpan.");
+    notify(students.length + " murid disimpan untuk " + active.cls + " (" + active.year + ").");
     if (students.length && pendingLesson) newEditor("assessment",pendingLesson);
   });});
   for (const [control,kind] of [["new","assessment"],["report","report"]]) {
