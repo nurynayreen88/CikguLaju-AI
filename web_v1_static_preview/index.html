@@ -869,6 +869,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </section><footer class="foot">CikguLaju AI · Web</footer>
 </div>
 <script src="/assets/pdf-lib.min.js?v=1.17.1"></script>
+<script src="/assets/pdp-pdf-copy.js?v=20261113"></script>
 <script src="/assets/rpt-personalize.js?v=20261110-free-rpt"></script>
 <script>
 "use strict";
@@ -1469,6 +1470,14 @@ async function populateMaterialList(){
    if(!Array.isArray(data.items)||data.items.length>30)throw Error("Senarai sumber tidak sah.");
    extraNotice=String(data.note||"");
    for(const item of data.items){
+    if(subject.value==="SCIENCE"&&item?.action==="local-pdf"){
+     const copy=window.cikgulajuPdpPdfCopy?.(item,status);
+     if(copy){
+      list.append(materialRow(item.title,{ready:true,onDownload:copy,actionLabel:"Pilih PDF Asal"}));
+      found++;
+     }
+     continue;
+    }
     if(!item||typeof item.url!=="string"||typeof item.title!=="string")continue;
     const ownWorkbook=item.type==="workbook"&&
         item.url.startsWith("/api/web/rph/english-workbook?");
@@ -1781,7 +1790,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
-<script src="/assets/rph-today.js?v=private-science-book-20261113"></script>
+<script src="/assets/rph-today.js?v=local-science-copy-20261113"></script>
 <script src="/assets/teacher-profile.js?v=profile-guide-20261111"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=private-menu-20261111"></script>

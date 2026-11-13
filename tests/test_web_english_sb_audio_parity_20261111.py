@@ -194,7 +194,11 @@ class WebEnglishSourceTests(unittest.TestCase):
             lookup.return_value = [record]
             storage.side_effect = None
             storage.return_value = None
-            self.assertEqual(self.client.get("/api/web/rph/extra-materials", query_string=query).json["items"], [])
+            local, = self.client.get("/api/web/rph/extra-materials", query_string=query).json["items"]
+            self.assertEqual(local["action"], "local-pdf")
+            self.assertNotIn("url", local)
+            self.assertEqual((local["pdf"]["start"], local["pdf"]["end"]), (31, 34))
+            self.assertIn("Dewan Bahasa dan Pustaka", local["pdf"]["source"])
         with patch("web.unified_rph_web._account", return_value=(None, ({"error": "Login"}, 401))):
             self.assertEqual(self.client.get(item["url"]).status_code, 401)
 

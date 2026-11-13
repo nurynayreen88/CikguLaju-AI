@@ -16,6 +16,26 @@ SCIENCE_PAGES = {
         52: (16, 19), 53: (20, 20), 54: (24, 27)},
 }
 
+SCIENCE_SOURCE = {
+    2: (5, 79464408, "cf2e00ba3fc77290dd4298d563faf7e0b352343301120ecf962b735f342d366b",
+        "Suwaibatullaslamiah binti Jalaludin, Mohd Ramadhan bin Anwar, Abdul Karim bin Daud", 2017),
+    3: (7, 100100997, "5c5c95276915abfc52dab3515040064502cf10e8fcc4e1682648b9ee260f1cb8",
+        "Mohd Faizal bin Rus Rzerli, Raja Shahida binti Raja Mansor, Abdul Karim bin Daud, Jong Tze Kian", 2018),
+}
+
+
+def local_science_copy(year, lesson, pages):
+    first, last = SCIENCE_PAGES[year][int(lesson.rsplit("-", 1)[1])]
+    offset, size, digest, authors, edition = SCIENCE_SOURCE[year]
+    return {
+        "type": "textbook", "action": "local-pdf",
+        "title": f"Salinan PdP Buku Teks Sains Tahun {year} • m/s {pages}",
+        "pdf": {"size": size, "sha256": digest, "start": first + offset,
+                "end": last + offset, "filename": f"CikguLaju_Sains_{lesson}_ms_{first}-{last}.pdf",
+                "source": f"Sains Tahun {year} SK, Dewan Bahasa dan Pustaka ({edition}), m/s {pages}",
+                "authors": authors},
+    }
+
 
 def textbook_reference(year, unit, lesson):
     match = re.fullmatch(rf"ST{year}-PDP-([0-9]{{3}})", lesson)
