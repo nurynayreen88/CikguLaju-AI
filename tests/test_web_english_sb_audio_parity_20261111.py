@@ -188,72 +188,51 @@ class WebEnglishSourceTests(unittest.TestCase):
             download = self.client.get(item["url"])
             self.assertEqual(download.data, raw)
             self.assertEqual(download.mimetype, "application/pdf")
+            self.assertEqual(download.headers["Cache-Control"], "no-store, private")
             self.assertIn("ST3-PDP-054_Buku_Teks_ms_24-27.pdf", download.headers["Content-Disposition"])
             lookup.return_value = [{**record, "textbook_ref": "Buku Teks m/s 20–21"}]
             self.assertEqual(self.client.get(item["url"]).status_code, 404)
             lookup.return_value = [record]
             storage.side_effect = None
             storage.return_value = None
-            local, = self.client.get("/api/web/rph/extra-materials", query_string=query).json["items"]
-            self.assertEqual(local["action"], "local-pdf")
-            self.assertNotIn("url", local)
-            self.assertEqual((local["pdf"]["start"], local["pdf"]["end"]), (31, 34))
-            self.assertIn("Dewan Bahasa dan Pustaka", local["pdf"]["source"])
+            empty = self.client.get("/api/web/rph/extra-materials", query_string=query)
+            self.assertEqual(empty.json, {"items": [], "status": "BELUM_TERSEDIA"})
+            self.assertEqual(self.client.get(item["url"]).status_code, 404)
         with patch("web.unified_rph_web._account", return_value=(None, ({"error": "Login"}, 401))):
             self.assertEqual(self.client.get(item["url"]).status_code, 401)
 
-    def test_science_year_one_and_five_return_local_pdf_for_exact_pages(self):
-        for year, number, pages, indexes in (
-            (1, 44, "2–3", (9, 10)), (5, 86, "8–13", (15, 20)),
-        ):
-            with self.subTest(year=year, number=number):
-                lesson = f"ST{year}-PDP-{number:03d}"
-                unit = "u" + "a" * 24
-                query = dict(year=year, subject="SCIENCE", unit=unit, lesson=lesson)
-                record = {"value": lesson, "textbook_ref": f"Buku Teks m/s {pages}"}
-                with self.account(), patch(
-                    "web.native_textbook_references.list_native_lessons", return_value=[record]
-                ) as lookup, patch("web.native_textbook_references.build_opener") as storage:
-                    reply = self.client.get("/api/web/rph/extra-materials", query_string=query)
-                    self.assertEqual(reply.status_code, 200)
-                    item, = reply.json["items"]
-                    self.assertEqual(item["action"], "local-pdf")
-                    self.assertNotIn("url", item)
-                    self.assertEqual((item["pdf"]["start"], item["pdf"]["end"]), indexes)
-                    self.assertIn(lesson, item["pdf"]["filename"])
-                    self.assertIn(f"m/s {pages}", item["pdf"]["source"])
-                    lookup.assert_called_once_with(year, "SCIENCE", unit)
-                    storage.assert_not_called()
-                    lookup.return_value = [{**record, "textbook_ref": "Buku Teks m/s 5"}]
-                    self.assertEqual(self.client.get(
-                        "/api/web/rph/extra-materials", query_string=query
-                    ).json["items"], [])
-
-    def test_science_existing_units_require_source_verified_page_marker(self):
+    def test_science_years_and_existing_units_use_their_exact_private_pdf(self):
         unit = "u" + "a" * 24
-        for year, lesson, pages, indexes in (
-            (2, "SCI-Y2-PDP-004", "36–37", (41, 42)),
-            (3, "SCI-Y3-PDP-005", "38", (45, 45)),
-            (6, "ST6-PDP-089", "7–8", (13, 14)),
+        for year, lesson, pages, file_range in (
+            (1, "ST1-PDP-044", "2–3", "2-3"),
+            (2, "SCI-Y2-PDP-004", "36–37", "36-37"),
+            (3, "SCI-Y3-PDP-005", "38", "38-38"),
+            (5, "ST5-PDP-086", "8–13", "8-13"),
+            (6, "ST6-PDP-089", "7–8", "7-8"),
         ):
             with self.subTest(lesson=lesson), self.account(), patch(
                 "web.native_textbook_references.list_native_lessons"
-            ) as lookup, patch("web.native_textbook_references.build_opener") as storage:
+            ) as lookup, patch("web.native_textbook_references.private_textbook_pdf") as storage:
                 query = dict(year=year, subject="SCIENCE", unit=unit, lesson=lesson)
                 row = {"value": lesson, "textbook_ref": f"Buku Teks m/s {pages}"}
                 lookup.return_value = [row]
                 route = "/api/web/rph/extra-materials"
-                if year in (2, 3):
+                if lesson.startswith("SCI-Y"):
                     self.assertEqual(self.client.get(route, query_string=query).json["items"], [])
+                    storage.assert_not_called()
                     row["science_copy_pages"] = pages
+                raw = b"%PDF-1.7\n" + b"X" * 800
+                storage.side_effect = lambda path, metadata_only=False: True if metadata_only else raw
                 item, = self.client.get(route, query_string=query).json["items"]
-                self.assertEqual(item["action"], "local-pdf")
-                self.assertEqual((item["pdf"]["start"], item["pdf"]["end"]), indexes)
-                self.assertNotIn("url", item)
-                self.assertEqual(self.client.get(
-                    "/api/web/rph/science-textbook", query_string=query
-                ).status_code, 404)
-                storage.assert_not_called()
+                path = f"buku-teks/sains/tahun-{year}/ms-{file_range}.pdf"
+                storage.assert_called_once_with(path, metadata_only=True)
+                self.assertEqual(item["action"], "Download")
+                self.assertNotIn("pdf", item)
+                self.assertEqual(self.client.get(item["url"]).data, raw)
+                storage.assert_called_with(path)
+                row["textbook_ref"] = "Buku Teks m/s 99"
+                self.assertEqual(self.client.get(route, query_string=query).json["items"], [])
+                self.assertEqual(self.client.get(item["url"]).status_code, 404)
 
     def test_books_outside_the_checked_subset_do_not_call_native_source(self):
         with self.account(), patch("web.native_textbook_references.list_native_lessons") as science:
@@ -268,15 +247,15 @@ class WebEnglishSourceTests(unittest.TestCase):
         unit, lesson = "u" + "a" * 24, "ST3-PDP-048"
         query = dict(year=3, subject="SCIENCE", unit=unit, lesson=lesson)
         prefix = "web.native_textbook_references."
-        with self.account(), patch(prefix + "private_textbook_pdf", return_value=None), patch(
+        with self.account(), patch(prefix + "private_textbook_pdf", return_value=True) as storage, patch(
             prefix + "list_native_lessons", return_value=[{"value": lesson, "textbook_ref": "Buku Teks m/s 6–8"}]
         ) as source:
             endpoint = "/api/web/rph/extra-materials"
             self.assertEqual(self.client.get(endpoint, query_string=query).json["items"], [])
             source.return_value[0]["textbook_ref"] = "Buku Teks m/s 6–7"
             item, = self.client.get(endpoint, query_string=query).json["items"]
-            self.assertEqual(item["action"], "local-pdf")
-            self.assertEqual((item["pdf"]["start"], item["pdf"]["end"]), (13, 14))
+            self.assertEqual(item["action"], "Download")
+            storage.assert_called_once_with("buku-teks/sains/tahun-3/ms-6-7.pdf", metadata_only=True)
 
 
 if __name__ == "__main__":

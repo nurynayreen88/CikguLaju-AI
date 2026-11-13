@@ -459,15 +459,6 @@
     if(epoch!==batchEpoch||key!==selectedKey(c))return;
     if(response.ok&&Array.isArray(data.items)&&data.items.length<=30){
      for(const item of data.items){
-      if(c.slot.subject_code==="SCIENCE"&&item?.action==="local-pdf"){
-       const copy=window.cikgulajuPdpPdfCopy?.(item,c.downloadStatus);
-       if(copy){
-        const row=actionRow(item.title,"Pilih PDF Asal");
-        row.button.addEventListener("click",copy);
-        c.resultList.append(row.li);found++;
-       }
-       continue;
-      }
       if(!readyMaterialLink(item,c.slot.subject_code))continue;
       const label=item.title;
       const action=item.type==="audio"&&musicLink.test(item.url)?"Buka Audio Sumber":"Download";
