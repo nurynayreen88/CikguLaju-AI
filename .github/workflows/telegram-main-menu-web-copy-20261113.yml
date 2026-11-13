@@ -1,0 +1,25 @@
+name: Telegram main menu Web invitation copy QA
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'app.py'
+      - 'tests/test_telegram_web_main_menu_notice_20261108.py'
+      - '.github/workflows/telegram-main-menu-web-copy-20261113.yml'
+permissions:
+  contents: read
+jobs:
+  safe-menu-message:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Compile Telegram source without importing production runtime
+        run: python -m py_compile app.py
+      - name: Verify message, existing menu callbacks, free quota and admin
+        run: python -m unittest discover -s tests -p 'test_telegram_web_main_menu_notice_20261108.py' -v
+      - name: Check patch formatting
+        run: git diff --check
