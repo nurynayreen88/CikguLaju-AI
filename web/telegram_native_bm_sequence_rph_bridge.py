@@ -19,11 +19,12 @@ from web_v1_dropdown_catalog import (
     _bm_verified_structured_rows, bm_sequence_token,
 )
 from web.native_rph_telegram_api import MIMES, compact_web_word_notes
+from web.rph_teacher_reflection import clean_reflection
 from web.telegram_verified_rpt_rph_bridge import (
     _authorization, _teacher_metadata, SourceUnavailable,
 )
 
-MAX_BODY = 3500
+MAX_BODY = 7000
 MAX_FILE = 15 * 1024 * 1024
 TOKEN = re.compile(r"b[a-f0-9]{24}")
 
@@ -143,6 +144,7 @@ def _state(runtime, year, unit, token, teacher):
         "rph_class": cls,
         "rph_date": __import__("datetime").date.fromisoformat(dt).strftime("%d/%m/%Y") if dt else "",
         "rph_day": day, "rph_time": tm, "rph_students": pupils,
+        "rph_teacher_reflection": clean_reflection(teacher.get("reflection", "")),
         "variation_seed": "web-bm-verified-" + token,
     }
     source_seq = str(first.get("source_sequence_no") or "")

@@ -20,6 +20,7 @@ from zipfile import ZipFile
 from flask import Blueprint, Response, jsonify, request
 
 from web.native_rph_telegram_api import MIMES, compact_web_word_notes
+from web.rph_teacher_reflection import clean_reflection
 from web.telegram_verified_rpt_rph_bridge import _authorization, _teacher_metadata
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -201,6 +202,7 @@ def _music_state(selected,teacher):
            "rph_class":cls,
            "rph_date":__import__("datetime").date.fromisoformat(dt).strftime("%d/%m/%Y") if dt else "",
            "rph_day":day,"rph_time":tm,"rph_students":pupils,
+           "rph_teacher_reflection": clean_reflection(teacher.get("reflection", "")),
            "variation_seed":"muzik-source-"+selected["music"]["digest"][:20]}
     sections={
         "STANDARD KANDUNGAN":fields["Standard Kandungan"],
@@ -241,15 +243,23 @@ def _arab_word(selected,teacher,dest):
     if len(doc.tables)!=1 or not doc.paragraphs:
         raise ValueError("Arabic Word structure invalid")
     doc.paragraphs[0].add_run(" • DRAF UNTUK SEMAKAN GURU").bold=True
+    reflection = clean_reflection(teacher.get("reflection", ""))
     for row in doc.tables[0].rows:
-        if row.cells[0].text.strip()=="Tarikh / Masa / Kelas":
+        caption = row.cells[0].text.strip()
+        if caption=="Tarikh / Masa / Kelas":
             value=(
                 "Tarikh: "+(__import__("datetime").date.fromisoformat(dt).strftime("%d/%m/%Y") if dt else "___/___/_____")
                 +"   Masa: "+(tm or "________")
                 +"   Kelas: "+(cls or "________")
                 +"   Murid: "+(pupils or "_____"))
             row.cells[1].text=value
-            break
+        elif caption == "Refleksi" and reflection:
+            row.cells[1].text = reflection
+            reflection = ""
+    if reflection:
+        cells = doc.tables[0].add_row().cells
+        cells[0].text = "Refleksi"
+        cells[1].text = reflection
     doc.save(dest)
     return dest
 
@@ -333,7 +343,7 @@ def create_provisional_subjects_blueprint(runtime):
     @bp.post("/internal/rph/v1/other-drafts/render")
     def render():
         if (not request.is_json or request.content_length is None
-                or request.content_length>3500):
+                or request.content_length>7000):
             return jsonify({"error":"Invalid render request"}),400
         data=request.get_json(silent=True)
         if (not isinstance(data,dict) or set(data)!={"selection","teacher","format"}

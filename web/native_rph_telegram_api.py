@@ -18,6 +18,7 @@ from urllib.parse import urlsplit
 from zipfile import ZipFile
 
 from flask import Blueprint, Response, jsonify, request
+from web.rph_teacher_reflection import clean_reflection, valid_teacher_fields
 
 MIMES = {
     "word": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
@@ -132,9 +133,7 @@ def build_native_input(payload):
         raise ValueError("Invalid requested format")
     # Legacy clients send class/date/time. New Web adds an optional pupil
     # count; keep old requests valid while validating the new value strictly.
-    if (not isinstance(teacher,dict)
-            or set(teacher) not in ({"class","date","time"},
-                                   {"class","date","time","students"})):
+    if not valid_teacher_fields(teacher, legacy=True):
         raise ValueError("Invalid teacher fields")
     cls=_require_text(teacher["class"],40,allow_empty=True).strip()
     dt=_require_text(teacher["date"],10,allow_empty=True).strip()
@@ -218,6 +217,7 @@ def build_native_input(payload):
             ("Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu","Ahad")
         )[day.weekday()] if day else ""),
         "rph_students":students,
+        "rph_teacher_reflection":clean_reflection(teacher.get("reflection","")),
     }
     # These are the exact selection markers set by Telegram callbacks. The
     # PJPK/PSV native row adapters otherwise silently return the older generic

@@ -744,3 +744,9 @@ except Exception as _rph_entry_choices_error:
     TELEGRAM_RPH_ENTRY_CHOICES_ACTIVE = False
     print("Telegram RPH entry choices unavailable:",
           type(_rph_entry_choices_error).__name__, flush=True)
+
+
+# Apply Web teacher text after the native subject adapters set default rows.
+from web.rph_teacher_reflection import install as install_teacher_reflection
+
+install_teacher_reflection(telegram_runtime)
