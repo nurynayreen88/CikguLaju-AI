@@ -35,9 +35,8 @@ YEAR4_STUDENT_BOOK_CORRECTIONS = {
     157: ("110", [110, 111]),
 }
 
-# Super Minds 1 First Edition. Page ranges and track order must match
-# the current Telegram lesson record. File IDs are checked against
-# the original Telegram WMA sender by the parity tests.
+# Super Minds 1 First Edition. Match the exact runtime lesson record before
+# serving audio. File IDs are checked against the original Telegram WMA sender.
 YEAR2_AUDIO = {
     2: ((58, 58), {"CD2-18": "14nIKU6l5utMudXb9HS8Zc9aZsYOVul1a",
                    "CD2-19": "1xL916QiLasf1dO35exMZ1LgypwNwrkLC"}),
@@ -66,9 +65,38 @@ YEAR2_AUDIO = {
     88: ((94, 94), {"CD3-17": "1vRuXvDGVqcPcIwfT3EjfAebwPKk9K8Du",
                     "CD3-18": "1pKoaMY8-6Kg_0hF8jnOBXS7_5mtXCt8a"}),
     89: ((95, 95), {"CD3-19": "1GXJmGrb4OJ6bp9vbrTGLUwbMWrN4Iv6c"}),
+    96: ((96, 96), {"CD3-21": "1Qa9AfemBu-etancAHnryknAC1XZNK0FR",
+                    "CD3-23": "1-I0iGq290CG99f0ZBMnkMPnZkuuMQzSU"}),
+    97: ((97, 97), {"CD3-24": "1bns47o67HLRpXpfHXjBwY-lU3Vb8lV2p",
+                    "CD3-25": "1iA-FDSGoydonKqSnOXMdfyxerMWCVXSV"}),
+    98: ((98, 99), {"CD3-26": "1ZRcaKXVwlBn94woeQOX20EWyVijloFE6",
+                    "CD3-27": "1ydVjR7Z9XBL5s3c47PwMkvJrg-etKOXu"}),
+    106: ((99, 99), {"CD3-28": "1UKcSHeY_s6Sc5Su859fDSHD0bthksXs2",
+                     "CD3-29": "1jfzvwPt92qebONMhoQMABhaPcChmG0pF"}),
     107: ((100, 100), {"CD3-30": "1M01-6uPokXgXnOF78vPQZ5i0apdjDmWt"}),
+    108: ((101, 101), {"CD3-31": "1wyhMvVojLHvfhcuWQDxlPzEIjdDp69ZL"}),
     109: ((102, 102), {"CD3-32": "1ohHvL4cQ26aNIyp97qexlEOZsYA_OMbp"}),
     129: ((109, 109), {"CD3-41": "1GqLqE6EntsZACqd93g-IX-AfMIqmUwPC"}),
+    136: ((110, 111), {"CD3-43": "1Lwu3pgFWQsfn5u67ErKgSs0LGtKah6Uq",
+                       "CD3-44": "1rpmMiue_pZkAKTsPeTLYZZpc2ALy-wXL"}),
+    137: ((111, 111), {"CD3-45": "1OZNkiZYvdD5_Cp-pywsB530Hk_QLLdzb",
+                       "CD3-46": "1SRGmGyKu9cDmQyyi2RD5SjfevpaR11F5"}),
+    138: ((112, 112), {"CD3-47": "1f_1TRT0kI34tYGX_VvxIJUyw8tGQttWo",
+                       "CD3-48": "1rTGk7reWr8ES0kGR4-jHX_ojIens-uQj"}),
+}
+
+# Primary Year 2 SK SOW and Super Minds 1 Teacher's Book T96–T112.
+# These lessons have a stale or incomplete v15 audio reference. Match that
+# exact reference and the Workbook pages before using the audited tracks.
+YEAR2_AUDIO_BOOK_EVIDENCE = {
+    96: ("CD3-20", (96, 96), ("Student Book p. 96 Activity 1", "Student Book p. 96 Activity 2")),
+    97: ("CD3-21", (97, 97), ("Student Book p. 97 Activity 1", "Student Book p. 97 Activity 2")),
+    98: ("CD3-27", (98, 99), ("Student Book pp. 98–99 Activity 1", "Workbook p. 98 Activity 1")),
+    106: ("CD3-29", (99, 99), ("Student Book p. 99 Activity 4", "Workbook p. 99 Activity 2")),
+    108: ("CD3-31", (101, 101), ("Workbook p. 101 Activity 1",)),
+    136: ("CD3-44", (110, 111), ("Student Book pp. 110–111 Activity 1", "Workbook p. 110 Activity 1")),
+    137: ("CD3-46", (111, 111), ("Student Book p. 111 Activity 4", "Workbook p. 111 Activity 2")),
+    138: ("CD3-48", (112, 112), ("Student Book p. 112 Activity 2", "Workbook p. 112 Activity 1")),
 }
 
 
@@ -207,15 +235,25 @@ def _audio_rows(runtime, year, lesson, *, year2_rows=None):
             return []
         pages, tracks = approved
         refs = [ref.strip() for ref in str(row.get("audio_reference") or "").split(";")]
-        if ((row.get("textbook_page_start"), row.get("textbook_page_end")) != pages
-                or refs != list(tracks)):
+        if (row.get("textbook_page_start"), row.get("textbook_page_end")) != pages:
+            return []
+        evidence = YEAR2_AUDIO_BOOK_EVIDENCE.get(lesson)
+        labels = ("",) * len(tracks)
+        if evidence:
+            legacy_ref, workbook_pages, labels = evidence
+            if (refs != [legacy_ref] or row.get("workbook_status") != "LINKED_VERIFIED"
+                    or (row.get("workbook_page_start"), row.get("workbook_page_end")) != workbook_pages):
+                return []
+        elif refs != list(tracks):
             return []
         entries = []
-        for ref, file_id in tracks.items():
+        for (ref, file_id), label in zip(tracks.items(), labels, strict=True):
             disc, number = ref.split("-")
             reference = f"{disc} Track {int(number)}"
-            entries.append({"title": f"English Tahun 2 • Lesson {lesson:03d} • {reference}",
-                            "reference": reference, "id": file_id})
+            title = f"English Tahun 2 • Lesson {lesson:03d} • {reference}"
+            if label:
+                title += f" • {label}"
+            entries.append({"title": title, "reference": reference, "id": file_id})
         return entries
     state = _lesson_state(row, year, lesson)
     if year == 4 and (lesson == 30 or lesson in HOLD_LESSONS
