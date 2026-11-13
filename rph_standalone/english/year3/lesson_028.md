@@ -8,20 +8,19 @@
 **References:** Get Smart plus 3 Student's Book p.20 Activity 1; Teacher's Book pp.38–39; occupation flashcards.
 
 ## Set Induction (5 minutes)
-Teacher plays Guess the occupation from Teacher's Book p.38. Pupils identify jobs.
+**Teacher:** Play the 'Guess the occupation' activity referenced in Teacher's Book p.38. **Pupils:** Identify the occupation from one spoken clue.
 
 ## Activity 1 — Vocabulary (15 minutes)
-Teacher models occupation and action matching, such as pilot and fly a helicopter. Pupils match pictures and phrases.
+**Teacher:** Match occupation flashcards to actions such as pilot and fly a helicopter, then model the question 'What do you want to be when you grow up?'. **Pupils:** Match each job to an action and rehearse the question with a partner.
 
 ## Activity 2 — Speaking (25 minutes)
-Teacher models 'What do you want to be when you grow up?' and guides Student's Book p.20 Activity 1. Pupils ask and answer in pairs, then share responses.
+**Teacher:** Guide Student's Book p.20 Activity 1 and model taking turns asking, answering and listening for the chosen occupation. **Pupils:** Ask at least two classmates about their future jobs, answer using a complete phrase and report one partner's response.
+**Workbook:** Pupils complete Workbook p.13, Activity 2, by writing about the job they want to do.
 
 ## PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.13, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.13, Activity 2, by writing about the job they want to do.
-Teacher listens to each pupil ask one occupation question and answer a partner's question using a complete phrase.
+**Teacher:** Listen to one individual question-and-answer exchange per pupil and note the clarity of the occupation question, complete answer and response to a partner. **Pupils:** Ask one occupation question, answer with the job they want to do and accurately report one classmate's choice.
 
 ## Closure (5 minutes)
-Teacher reviews common errors and celebrates clear communication.
+**Teacher:** Model a corrected form of one common question or answer error and invite a final exchange. **Pupils:** Repeat the corrected expression and say one job they heard from a classmate.
 
 **QA:** Official KPM SOW checked; direct Teacher's Book and Word/PDF output verification pending. NOT READY FOR RELEASE.
