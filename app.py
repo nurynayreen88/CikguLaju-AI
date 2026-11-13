@@ -46717,7 +46717,7 @@ def menu(cid, show_persistent=False):
         '📚 <b>SEDIAKAN RPH</b>\nPilih Tahun → Subjek → Unit/Tajuk → Lesson/PdP, kemudian pilih RPH (PDF/Word).\n\n'
         '📅 <b>RPT 2027</b>\nRancangan Pengajaran Tahunan 2027 mengikut tahun, subjek dan Kumpulan A/B.\n\n'
         '🌐 <b>CIKGULAJU WEB SUDAH TERSEDIA</b>\n'
-        'Cikgu digalakkan menggunakan Web untuk urusan lebih mudah: pilih Lesson/PdP, gunakan RPH Hari Ini dan muat turun bahan yang tersedia melalui telefon atau komputer.\n'
+        'Cikgu digalakkan menggunakan Web untuk urusan lebih mudah: pilih Lesson/PdP, sediakan RPH berdasarkan jadual waktu dan muat turun bahan yang tersedia melalui telefon atau komputer.\n'
         '🔗 https://cikgulaju-web.onrender.com/\n'
         'Log masuk menggunakan Telegram. Baki janaan RPH dikongsi antara Web dan bot. RPT asas boleh dimuat turun percuma; muka depan berprofil memerlukan akses berbayar.\n\n'
         '👤 <b>PROFIL SAYA</b>\nUrus kelas, jadual waktu dan maklumat cikgu.\n\n'
