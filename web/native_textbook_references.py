@@ -1,4 +1,5 @@
 """Provide checked Science textbook page selections and private PDF copies."""
+import json
 import os
 import re
 from urllib.error import HTTPError
@@ -15,6 +16,7 @@ SCIENCE_PAGES = {
         57: (12, 14), 58: (18, 20)},
     3: {46: (2, 3), 47: (4, 5), 48: (6, 7), 49: (9, 10), 50: (11, 12), 51: (13, 14),
         52: (16, 19), 53: (20, 20), 54: (24, 27)},
+    4: {80: (2, 4), 81: (3, 5), 82: (6, 9), 83: (10, 11), 84: (12, 15), 85: (16, 19)},
     5: {84: (2, 7), 85: (2, 7), 86: (8, 13), 87: (8, 13), 88: (10, 13)},
     6: {85: (2, 5), 86: (5, 7), 87: (6, 7), 88: (7, 8), 89: (7, 8)},
 }
@@ -58,7 +60,7 @@ def private_textbook_pdf(path, *, metadata_only=False):
             or origin.path or origin.query or origin.fragment or not secret
             or not re.fullmatch(r"[a-zA-Z0-9_-]{1,100}", bucket)):
         return None
-    if not re.fullmatch(r"buku-teks/sains/tahun-[12356]/ms-[0-9]{1,2}-[0-9]{1,2}\.pdf", path):
+    if not re.fullmatch(r"buku-teks/sains/tahun-[1-6]/ms-[0-9]{1,2}-[0-9]{1,2}\.pdf", path):
         return None
     request = Request(f"{base}/storage/v1/object/authenticated/{bucket}/{path}",
                       method="HEAD" if metadata_only else "GET",
@@ -75,4 +77,14 @@ def private_textbook_pdf(path, *, metadata_only=False):
     except HTTPError as error:
         if error.code == 404:
             return None
+        if error.code == 400:
+            # Some Storage versions return 400 / NoSuchKey on a missing GET.
+            try:
+                detail = json.loads(error.read(2048))
+            except (OSError, ValueError):
+                detail = None
+            if isinstance(detail, dict) and detail.get("message") == "Object not found" and (
+                detail.get("errorCode") == "NoSuchKey" or detail.get("error") == "not_found"
+            ):
+                return None
         raise
