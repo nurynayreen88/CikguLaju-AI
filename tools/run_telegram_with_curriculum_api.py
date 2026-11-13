@@ -759,3 +759,9 @@ ENGLISH_Y1_KSSR_WEB_ACTIVE = install_english_y1_kssr(telegram_runtime)
 telegram_runtime.ENGLISH_Y1_KSSR_WEB_ACTIVE = ENGLISH_Y1_KSSR_WEB_ACTIVE
 
 RPH_TEACHER_REFLECTION_ACTIVE = install_teacher_reflection(telegram_runtime)
+
+
+# Remove legacy RM8/RM50 subscription advertising from Telegram menu only.
+# No change to payment amount, entitlement, callbacks or user records.
+from web.telegram_subscription_price_guard import install as install_subscription_price_guard
+TELEGRAM_SUBSCRIPTION_PRICE_GUARD_ACTIVE = install_subscription_price_guard(telegram_runtime)
