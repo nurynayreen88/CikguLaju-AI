@@ -267,16 +267,12 @@ def options():
                         if component not in (None, ""):
                             return jsonify({"error": "invalid component"}), 400
                         try:
+                            source_units = list_native_units(year, subject)
                             if subject == "MATH":
-                                # Two opaque Telegram Unit tokens can describe the
-                                # same printed Unit (e.g. Unit 01 and Unit 1).
-                                # Merge only the Web dropdown label, NOT the
-                                # underlying PdP identities, RPHs or database.
                                 from web.math_unit_groups import (
                                     grouped_math_units, matched_math_tokens,
                                     tagged_math_lessons,
                                 )
-                                source_units = list_native_units(year, subject)
                                 if kind == "units":
                                     choices = grouped_math_units(source_units)
                                 else:
@@ -289,9 +285,21 @@ def options():
                                         for token in tokens
                                     ])
                             else:
-                                choices = (list_native_units(year, subject)
-                                           if kind == "units" else list_native_lessons(
-                                               year, subject, request.args.get("unit", "")))
+                                from web.science_unit_groups import (
+                                    grouped_science_units, matched_science_tokens,
+                                    tagged_science_lessons,
+                                )
+                                if kind == "units":
+                                    choices = grouped_science_units(year, source_units)
+                                else:
+                                    tokens = matched_science_tokens(
+                                        year, source_units, request.args.get("unit", ""))
+                                    if not tokens:
+                                        return jsonify({"error": "Unknown Science Unit"}), 400
+                                    choices = tagged_science_lessons([
+                                        (token, list_native_lessons(year, subject, token))
+                                        for token in tokens
+                                    ])
                         except (NativeRPHUnavailable, ValueError):
                             return jsonify({
                                 "error": "Telegram native PdP sequence unavailable",

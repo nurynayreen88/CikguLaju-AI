@@ -9,7 +9,7 @@ import re
 
 _UNIT_NUMBER = re.compile(
     r"^\s*(?:Unit|U)\s*0*([1-9][0-9]{0,2})(?=\b|[\s:：.\-–—•])", re.I)
-_DOT_NUMBER = re.compile(r"^\s*([1-9][0-9]{0,2})\s*[•·]\s*")
+_DOT_NUMBER = re.compile(r"^\s*([1-9][0-9]{0,2})(?:\.0)?\s*[•·]\s*")
 _CLEAN_PREFIX = re.compile(
     r"^\s*(?:Unit|U)\s*0*[1-9][0-9]{0,2}\s*[:：.\-–—•]?\s*", re.I)
 
@@ -82,7 +82,7 @@ def tagged_math_lessons(raw_by_unit):
         for row in rows:
             key = (source_token, row["value"])
             if key in seen:
-                raise ValueError("Duplicate PdP identity within Mathematics Unit")
+                raise ValueError("Duplicate PdP identity within source Unit")
             seen.add(key)
             result.append({**row, "origin_unit": source_token})
     return result
