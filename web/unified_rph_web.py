@@ -952,34 +952,62 @@ def create_blueprint():
         try:
             year, sub, unit, token, number = _extra_selection()
         except (ValueError, TypeError):
-            # Other subjects genuinely have no extra-material bridge yet.
             return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
         try:
             from web.native_telegram_extra_materials_20261106 import (
                 english_workbook_metadata, music_source_links,
+                english_student_book_metadata, english_audio_tracks,
             )
             if sub == "ENGLISH":
-                label = english_workbook_metadata(year, number)
-                items = []
-                if label:
-                    from urllib.parse import urlencode
-                    params = urlencode({"year":year, "subject":sub,
-                                      "unit":unit, "lesson":token})
-                    items.append({"type":"workbook", "title":label,
-                                  "url":"/api/web/rph/english-workbook?"+params,
-                                  "action":"Download"})
-            else:
-                # Telegram verifies the Music Unit/PdP pair and returns only
-                # original owner-hosted Google Drive VIEW links.
-                items = music_source_links(year, unit, token)
+                from urllib.parse import urlencode
+                params = urlencode({"year": year, "subject": sub,
+                                    "unit": unit, "lesson": token})
+                items, missing = [], []
+                # Preserve the already-running Y2–Y4 Workbook route.
+                try:
+                    label = english_workbook_metadata(year, number)
+                    if label:
+                        items.append({"type": "workbook", "title": label,
+                                      "url": "/api/web/rph/english-workbook?" + params,
+                                      "action": "Download"})
+                except Exception:
+                    missing.append("Workbook")
+                if year in (3, 4):
+                    # The additional APIs are optional until Telegram deploys
+                    # them. A missing new route must not hide existing Workbook.
+                    try:
+                        label = english_student_book_metadata(year, number)
+                        if label:
+                            items.insert(0, {"type": "textbook", "title": label,
+                                             "url": "/api/web/rph/english-student-book?" + params,
+                                             "action": "Download"})
+                    except Exception:
+                        missing.append("Student Book")
+                    try:
+                        tracks = english_audio_tracks(year, number)
+                        for track in tracks:
+                            items.append({
+                                "type": "audio", "title": track["title"],
+                                "url": "/api/web/rph/english-audio/" +
+                                       str(track["index"]) + "?" + params,
+                                "action": "Download",
+                            })
+                    except Exception:
+                        missing.append("Audio")
+                if missing and not items:
+                    return jsonify({"items": [], "error":
+                                    "Sumber bahan English Telegram belum dapat disahkan."}), 503
+                note = ("Bahan mengikut halaman dan trek Lesson asal; tiada janaan RPH digunakan."
+                        + (" Sumber lain belum dapat disahkan: " + ", ".join(missing)
+                           if missing else ""))
+                return jsonify({"items": items, "status": "SUMBER_ASAL", "note": note})
+            # Music intentionally remains original-owner VIEW links only.
+            items = music_source_links(year, unit, token)
         except Exception:
-            return jsonify({"items": [],"error":
+            return jsonify({"items": [], "error":
                             "Sumber bahan tambahan Telegram belum dapat disahkan."}), 503
-        return jsonify({"items": items, "status":"SUMBER_ASAL",
-                        "note": ("Pautan audio luar: akses, kandungan dan hak edar "
-                                 "belum disahkan." if sub == "MUZIK" else
-                                 "Buku Aktiviti dipetik daripada halaman sumber yang dipadankan; "
-                                 "tiada janaan RPH digunakan.")})
+        return jsonify({"items": items, "status": "SUMBER_ASAL",
+                        "note": "Pautan audio luar: akses, kandungan dan hak edar belum disahkan."})
 
     @bp.get("/api/web/rph/english-workbook")
     def english_workbook():
@@ -991,14 +1019,54 @@ def create_blueprint():
             if sub != "ENGLISH":
                 raise ValueError("Wrong resource")
         except (ValueError, TypeError):
-            return jsonify({"error":"Pilihan Lesson Buku Aktiviti tidak sah"}), 400
+            return jsonify({"error": "Pilihan Lesson Buku Aktiviti tidak sah"}), 400
         try:
             from web.native_telegram_extra_materials_20261106 import english_workbook_pdf
             content = english_workbook_pdf(year, number)
         except Exception:
-            return jsonify({"error":"Fail Buku Aktiviti dari Telegram belum tersedia"}), 503
+            return jsonify({"error": "Fail Buku Aktiviti dari Telegram belum tersedia"}), 503
         return send_file(BytesIO(content), mimetype="application/pdf",
                          as_attachment=True, conditional=False,
                          download_name=f"CikguLaju_English_Y{year}_Lesson_{number:03d}_Workbook.pdf")
+
+    @bp.get("/api/web/rph/english-student-book")
+    def english_student_book():
+        account, error = _account()
+        if error is not None:
+            return error
+        try:
+            year, sub, unit, token, number = _extra_selection()
+            if sub != "ENGLISH" or year not in (3, 4):
+                raise ValueError("Wrong Student Book source")
+        except (ValueError, TypeError):
+            return jsonify({"error": "Pilihan Student Book tidak sah"}), 400
+        try:
+            from web.native_telegram_extra_materials_20261106 import english_student_book_pdf
+            data = english_student_book_pdf(year, number)
+        except Exception:
+            return jsonify({"error": "Halaman Student Book belum tersedia"}), 503
+        return send_file(BytesIO(data), mimetype="application/pdf",
+                         as_attachment=True, conditional=False,
+                         download_name=f"CikguLaju_English_Y{year}_Lesson_{number:03d}_Student_Book.pdf")
+
+    @bp.get("/api/web/rph/english-audio/<int:track>")
+    def english_audio(track):
+        account, error = _account()
+        if error is not None:
+            return error
+        try:
+            year, sub, unit, token, number = _extra_selection()
+            if sub != "ENGLISH" or year not in (3, 4) or not 1 <= track <= 4:
+                raise ValueError("Invalid track")
+        except (ValueError, TypeError):
+            return jsonify({"error": "Pilihan trek audio tidak sah"}), 400
+        try:
+            from web.native_telegram_extra_materials_20261106 import english_audio_mp3
+            data = english_audio_mp3(year, number, track)
+        except Exception:
+            return jsonify({"error": "Trek audio belum disahkan atau tidak tersedia"}), 503
+        return send_file(BytesIO(data), mimetype="audio/mpeg",
+                         as_attachment=True, conditional=False,
+                         download_name=f"CikguLaju_English_Y{year}_Lesson_{number:03d}_Track_{track}.mp3")
 
     return bp

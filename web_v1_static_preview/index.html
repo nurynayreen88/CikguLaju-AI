@@ -1471,9 +1471,13 @@ async function populateMaterialList(){
     if(!item||typeof item.url!=="string"||typeof item.title!=="string")continue;
     const ownWorkbook=item.type==="workbook"&&
         item.url.startsWith("/api/web/rph/english-workbook?");
+    const ownStudentBook=item.type==="textbook"&&
+        item.url.startsWith("/api/web/rph/english-student-book?");
+    const ownEnglishAudio=item.type==="audio"&&
+        /^\/api\/web\/rph\/english-audio\/[1-4]\?/.test(item.url);
     const externalMusic=item.type==="audio"&&
         /^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]{10,100}\/view\?usp=drivesdk$/.test(item.url);
-    if(!ownWorkbook&&!externalMusic)continue;
+    if(!ownWorkbook&&!ownStudentBook&&!ownEnglishAudio&&!externalMusic)continue;
     list.append(materialRow(item.title,{ready:true,url:item.url,
       actionLabel:externalMusic?"Buka Audio Sumber":"Download"}));
     found++;
@@ -1774,7 +1778,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
-<script src="/assets/rph-today.js?v=reflection-20261113"></script>
+<script src="/assets/rph-today.js?v=english-materials-20261113"></script>
 <script src="/assets/teacher-profile.js?v=profile-guide-20261111"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=private-menu-20261111"></script>

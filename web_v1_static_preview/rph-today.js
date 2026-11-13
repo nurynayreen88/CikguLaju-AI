@@ -27,7 +27,7 @@
   PSV:"Bidang / Unit",PJPK:"Unit / Tajuk",ARAB:"Unit",
   MUZIK:"Unit / Tajuk",SEJARAH:"Unit",RBT:"Unit"
  };
- const TYPES=new Set(["workbook","audio"]);
+ const TYPES=new Set(["textbook","workbook","audio"]);
  const musicLink=/^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]{10,100}\/view\?usp=drivesdk$/;
 
  function create(tag,cls,value){
@@ -411,7 +411,8 @@
   if(!item||!TYPES.has(item.type)||typeof item.title!=="string"||
      typeof item.url!=="string"||!item.title.trim())return false;
   if(item.type==="workbook")return item.url.startsWith("/api/web/rph/english-workbook?");
-  if(item.type==="audio")return musicLink.test(item.url);
+  if(item.type==="textbook")return item.url.startsWith("/api/web/rph/english-student-book?");
+  if(item.type==="audio")return /^\/api\/web\/rph\/english-audio\/[1-4]\?/.test(item.url)||musicLink.test(item.url);
   return false;
  }
  async function inspectOne(c,epoch){
@@ -458,7 +459,7 @@
      for(const item of data.items){
       if(!readyMaterialLink(item))continue;
       const label=item.title;
-      const row=actionRow(label,item.type==="audio"?"Buka Audio Sumber":"Download",item.url);
+      const row=actionRow(label,item.type==="audio"&&musicLink.test(item.url)?"Buka Audio Sumber":"Download",item.url);
       c.resultList.append(row.li);found++;
      }
     }else if(!response.ok)errors.push("Bahan tambahan tidak dapat disahkan.");
