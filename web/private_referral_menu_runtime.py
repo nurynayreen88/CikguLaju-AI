@@ -7,7 +7,7 @@ explicitly invited referrer. Non-members see no menu changes.
 import requests
 
 
-_BUTTON = {"text": "🎁 Referral Saya", "callback_data": "private_referral_home"}
+_BUTTON = {"text": "🎁 Affiliate Saya", "callback_data": "private_referral_home"}
 
 
 def install(runtime):
@@ -22,7 +22,11 @@ def install(runtime):
         response = original_menu(cid, show_persistent=show_persistent)
         try:
             member = member_lookup(cid)
-            if not member or member.get("enabled") is not True:
+            if member is None:
+                open_program = getattr(runtime, "_affiliate_open", None)
+                if not callable(open_program) or not open_program(cid):
+                    return response
+            elif member.get("enabled") is not True:
                 return response
         except Exception as exc:
             print("PRIVATE REFERRAL menu lookup unavailable:", type(exc).__name__, flush=True)

@@ -10,9 +10,9 @@ class FakeApp:
         self.view_functions = {"webhook": lambda: {"old": True}}
 
 
-def fixture():
+def fixture(pioneer_amount=10.0):
     sent, calls, registered = [], [], []
-    payments = {7: {"id": 7, "status": "pending", "chat_id": "301", "amount": 10.0}}
+    payments = {7: {"id": 7, "status": "pending", "chat_id": "301", "amount": pioneer_amount}}
     member = []
     def sb(method, path, **kwargs):
         calls.append((method, path, kwargs))
@@ -195,7 +195,7 @@ class TestPrivateReferral(unittest.TestCase):
         self.assertFalse(any("https://t.me/" in message for uid, message in sent))
 
     def test_pioneer_points_after_admin_approval_only(self):
-        ns,sent,calls,_=fixture()
+        ns,sent,calls,_=fixture(pioneer_amount=20.0)
         ns["request"]=type("Request",(),{"headers":{"X-Telegram-Bot-Api-Secret-Token":"correct-long-secret"},"get_json":lambda self,**_:{} })()
         with patch.dict(os.environ,{"CIKGULAJU_REFERRAL_POINTS_ENABLED":"1","CIKGULAJU_TELEGRAM_WEBHOOK_SECRET":"correct-long-secret"}):
             referral.install(ns)

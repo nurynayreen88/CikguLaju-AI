@@ -83,11 +83,22 @@ def install(ns):
         username = str(ns["_bot_username_v25267"]() or "").strip().lstrip("@")
         return f"https://t.me/{username}?start=rp_{code}" if username else ""
 
+    def affiliate_open(uid):
+        try:
+            result = sb("POST", "rpc/affiliate_overview", json={"p_user": int(uid)})
+            return isinstance(result, dict) and result.get("open") is True
+        except Exception:
+            return False
+
     def show_referral(uid):
-        # Recheck the member allowlist on every click, including old buttons.
         row = member(uid)
+        open_program = affiliate_open(uid)
+        web = "https://cikgulaju-web.onrender.com/?affiliate=1"
         if not row or row.get("enabled") is not True:
-            return send(uid, "🔒 Program referral tertutup tidak tersedia untuk akaun ini.")
+            if row is None and open_program:
+                return send(uid, "🎁 Daftar affiliate dengan nombor telefon berdaftar TNG eWallet.",
+                            [[{"text": "Sertai Affiliate", "url": web}]])
+            return send(uid, "🔒 Program affiliate tidak tersedia untuk akaun ini.")
         link = link_for(uid, row["referral_code"])
         if not link:
             return send(uid, "⚠️ Pautan belum dapat dijana. Sila cuba lagi.")
@@ -102,14 +113,17 @@ def install(ns):
             [{"text": "📋 Salin Pautan", "copy_text": {"text": link}}],
             [{"text": "🏠 Menu Utama", "callback_data": "home"}],
         ]
+        if open_program:
+            buttons.insert(2, [{"text": "💸 Claim Ganjaran", "url": web}])
         return send(uid,
-            "🎁 <b>REFERRAL SAYA</b>\n\n"
+            "🎁 <b>AFFILIATE SAYA</b>\n\n"
             f"🔗 <code>{link}</code>\n\n"
             f"👥 Rakan mendaftar: <b>{total}</b>\n"
             f"✅ Pembayaran layak: <b>{paid}</b>\n"
             f"⭐ Mata terkumpul: <b>{format_points(points)}</b>\n\n"
-            "Ganjaran ialah 20% daripada bayaran pertama yang disahkan. "
-            "Mata dikumpul dahulu dan belum boleh ditebus.",
+            "Ganjaran dikira selepas bayaran pertama disahkan. "
+            + ("Tuntutan minimum 10 mata (RM10) melalui TNG eWallet." if open_program
+               else "Mata dikumpul dahulu dan belum boleh ditebus."),
             buttons)
 
     def manage_member(admin, uid, allow):
@@ -152,7 +166,7 @@ def install(ns):
             return
         payer = int(after["chat_id"])
         try:
-            if float(after.get("amount", 0)) == 10.0:
+            if Decimal(str(after.get("amount", 0))) in (Decimal("10"), Decimal("20")):
                 rows = sb("GET", f"pioneer_entitlements?telegram_user_id=eq.{payer}"
                           "&revoked_at=is.null"
                           "&select=payment_reference,entitlement") or []
@@ -292,6 +306,7 @@ def install(ns):
         return previous_webhook()
 
     ns["_private_referral_member"] = member
+    ns["_affiliate_open"] = affiliate_open
     ns["callback"] = callback
     app.view_functions["webhook"] = webhook
     return True
