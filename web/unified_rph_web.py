@@ -934,7 +934,7 @@ def create_blueprint():
         year, sub, unit, lesson, component = _selection()
         if component is not None:
             raise ValueError("Unsupported extra resource component")
-        if sub == "ENGLISH" and year in (2, 3, 4):
+        if sub == "ENGLISH" and year in range(2, 7):
             found = [row for row in source_records(year, sub)
                      if row["unit"] == unit and row["token"] == lesson]
             if len(found) != 1:
@@ -963,7 +963,7 @@ def create_blueprint():
                 params = urlencode({"year": year, "subject": sub,
                                     "unit": unit, "lesson": token})
                 items, missing = [], []
-                # Preserve the already-running Y2–Y4 Workbook route.
+                # Each verified Workbook uses the existing Telegram route.
                 try:
                     label = english_workbook_metadata(year, number)
                     if label:

@@ -56,7 +56,7 @@ def _json(path, args, *, opener=None):
 
 
 def english_workbook_metadata(year, lesson, *, opener=None):
-    if type(year) is not int or year not in (2, 3, 4) or type(lesson) is not int or not 1 <= lesson <= 160:
+    if type(year) is not int or year not in range(2, 7) or type(lesson) is not int or not 1 <= lesson <= 160:
         raise ValueError("Unsupported verified Workbook selection")
     data = _json("/internal/rph/v1/english-extras/workbook",
                  {"year": year, "lesson": lesson}, opener=opener)
@@ -74,7 +74,7 @@ def english_workbook_metadata(year, lesson, *, opener=None):
 
 def english_workbook_pdf(year, lesson, *, opener=None):
     # A PDF request is authorized and re-verified independently of metadata.
-    if type(year) is not int or year not in (2, 3, 4) or type(lesson) is not int or not 1 <= lesson <= 160:
+    if type(year) is not int or year not in range(2, 7) or type(lesson) is not int or not 1 <= lesson <= 160:
         raise ValueError("Unsupported verified Workbook selection")
     raw = _get("/internal/rph/v1/english-extras/workbook.pdf",
                {"year": year, "lesson": lesson}, accept="application/pdf",

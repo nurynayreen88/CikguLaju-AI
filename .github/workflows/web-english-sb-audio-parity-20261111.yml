@@ -1,7 +1,7 @@
 name: Web English selected-page and audio-track parity
 on:
   push:
-    branches: [fix/web-english-lesson-materials-20261113]
+    branches: [fix/web-english-lesson-materials-20261113, fix/web-english-sk-coverage-20261113]
     paths:
       - 'web/unified_rph_web.py'
       - 'web/native_telegram_extra_materials_20261106.py'

@@ -123,6 +123,24 @@ class WebEnglishSourceTests(unittest.TestCase):
         self.assertEqual([row["type"] for row in reply.json["items"]], ["textbook", "workbook", "audio"])
         self.assertTrue(all("lesson=e-3-045" in row["url"] for row in reply.json["items"]))
 
+    def test_year_five_and_six_workbook_only_for_exact_lesson(self):
+        bridge = "web.native_telegram_extra_materials_20261106."
+        for year, lesson in ((5, 29), (6, 13)):
+            with self.subTest(year=year, lesson=lesson):
+                row = next(r for r in source_records(year, "ENGLISH") if r["lesson"] == lesson)
+                params = {"year": year, "subject": "ENGLISH", "unit": row["unit"], "lesson": row["token"]}
+                with self.account(), patch(bridge + "english_workbook_metadata",
+                        return_value="Buku Aktiviti muka surat disahkan") as metadata, patch(
+                        bridge + "english_workbook_pdf", return_value=b"%PDF-1.7\n" + b"A" * 600) as pdf:
+                    reply = self.client.get("/api/web/rph/extra-materials", query_string=params)
+                    self.assertEqual(reply.status_code, 200)
+                    self.assertEqual([r["type"] for r in reply.json["items"]], ["workbook"])
+                    download = self.client.get(reply.json["items"][0]["url"])
+                metadata.assert_called_once_with(year, lesson)
+                pdf.assert_called_once_with(year, lesson)
+                self.assertEqual(download.status_code, 200)
+                self.assertIn(f"Y{year}_Lesson_{lesson:03d}", download.headers["Content-Disposition"])
+
     def test_browser_does_not_expose_unverified_or_unrelated_audio(self):
         html = (ROOT / "web_v1_static_preview" / "index.html").read_text("utf8")
         self.assertIn("ownStudentBook", html)

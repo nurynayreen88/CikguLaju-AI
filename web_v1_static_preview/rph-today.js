@@ -270,7 +270,8 @@
   heading.append(create("strong","",slot.class_name+" · "+slot.subject),
                  create("span","daily-rph-time",slot.start+" – "+slot.end));
   card.append(heading);
-  const info=create("p","daily-rph-note","Tahun "+slot.year+" · "+slot.subject);
+  const subjectLabel=slot.subject_code==="ENGLISH"?"Bahasa Inggeris (SK)":slot.subject;
+  const info=create("p","daily-rph-note","Tahun "+slot.year+" · "+subjectLabel);
   card.append(info);
   const c={slot,index,ticket,card,rev:0,busy:false,controls:{}};
   if(!slot.can_prepare){
@@ -446,7 +447,7 @@
     errors.push(data.error||"Semakan RPH tidak berjaya.");
   }catch(_error){errors.push("Semakan RPH tidak dapat dihubungi.");}
   if(epoch!==batchEpoch||key!==selectedKey(c))return;
-  if((c.slot.subject_code==="ENGLISH"&&[2,3,4].includes(c.slot.year))||
+  if((c.slot.subject_code==="ENGLISH"&&[2,3,4,5,6].includes(c.slot.year))||
       c.slot.subject_code==="MUZIK"){
    try{
     const params=new URLSearchParams({year:args.year,subject:args.subject,unit:args.unit,lesson:args.lesson});
