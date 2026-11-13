@@ -8,18 +8,18 @@
 **References:** Get Smart plus 3 Student's Book p.19 Activity 4; Teacher's Book p.37; occupation flashcards and drawing worksheet.
 
 ## Set Induction (5 minutes)
-Teacher reviews occupation flashcards and asks pupils about their future jobs. Pupils answer briefly.
+**Teacher:** Show two occupation flashcards and describe what one worker does without naming the job. **Pupils:** Listen and point to the matching occupation.
 
 ## Activity 1 — Planning (15 minutes)
-Teacher models choosing an occupation and drawing it without writing the pupil's name. Pupils label the occupation and plan oral clues.
+**Teacher:** Model drawing a chosen occupation without adding a pupil name; demonstrate two short oral clues about what the worker does. **Pupils:** Select an occupation, draw or label it privately and rehearse two clues with a partner.
 
 ## Activity 2 — Listening and speaking (25 minutes)
-Pupils give simple clues about their chosen jobs and listen to classmates' descriptions to identify occupations. Teacher refers to Student's Book p.19 Activity 4 for useful language while following the SOW's non-textbook task sequence.
+**Teacher:** Use the language reference from Student's Book p.19 Activity 4 while guiding the SOW's class guessing task. Invite pupils to describe their chosen jobs one at a time and allow listeners to request repetition. **Pupils:** Listen to classmates' spoken job clues, identify the occupation, ask for clarification when necessary and take turns giving their own clues.
 
 ## PBD (10 minutes)
-Teacher observes listening comprehension and short oral communication. Pupils identify classmates' occupations from spoken clues.
+**Teacher:** Give two short spoken job descriptions without picture support; record whether pupils identify both occupations from the clues, then observe one brief clue-giving turn. **Pupils:** Identify two jobs from the descriptions and give at least one intelligible clue about their own chosen occupation.
 
 ## Closure (5 minutes)
-Pupils share one job they would like to do and why.
+**Teacher:** Invite volunteers to share their preferred future job and ask for a reason. **Pupils:** Name one job they would like to do and give a brief reason.
 
 **QA:** Official KPM SOW checked; direct Teacher's Book and Word/PDF output verification pending. NOT READY FOR RELEASE.
