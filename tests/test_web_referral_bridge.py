@@ -116,11 +116,29 @@ class WebReferralTests(unittest.TestCase):
     @patch("web.web_referral_routes._rpc")
     def test_admin_requires_session_and_existing_allowlist(self, rpc, _admin, identity):
         client = self.make_app().test_client()
-        path = "/api/web/admin/affiliate/claims"
-        self.assertEqual(client.get(path).status_code, 403)
-        identity.return_value = None
-        self.assertEqual(client.get(path).status_code, 401)
+        for endpoint in ("claims", "members"):
+            path = "/api/web/admin/affiliate/" + endpoint
+            identity.return_value = 123
+            self.assertEqual(client.get(path).status_code, 403)
+            identity.return_value = None
+            self.assertEqual(client.get(path).status_code, 401)
         rpc.assert_not_called()
+
+    @patch("web.web_referral_routes._auth_uid", return_value=456)
+    @patch("web.web_referral_routes.allowed_admin_ids", return_value={456})
+    @patch("web.web_referral_routes._rpc")
+    def test_admin_directory_returns_per_member_balances(self, rpc, _admin, _uid):
+        client = self.make_app().test_client()
+        path = "/api/web/admin/affiliate/members"
+        self.assertEqual(client.get(path + "?page=-1").status_code, 400)
+        rpc.assert_not_called()
+        rpc.return_value = {"items":[{"user_id":"123", "balance":2, "available":2, "paid":10, "reserved":0}],
+                            "more":False}
+        response = client.get(path + "?page=1")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json, rpc.return_value)
+        self.assertIn("no-store", response.headers["Cache-Control"])
+        rpc.assert_called_once_with("affiliate_admin_members", p_page=1, p_page_size=25)
 
     @patch("web.web_referral_routes._auth_uid", return_value=456)
     @patch("web.web_referral_routes.allowed_admin_ids", return_value={456})

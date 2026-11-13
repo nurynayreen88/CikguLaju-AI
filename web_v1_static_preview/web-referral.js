@@ -20,6 +20,10 @@
   const filter = get("affiliate-admin-filter");
   const adminStatus = get("affiliate-admin-status");
   const adminList = get("affiliate-admin-list");
+  const membersList = get("affiliate-members-list");
+  const membersStatus = get("affiliate-members-status");
+  const membersPrev = get("affiliate-members-prev");
+  const membersNext = get("affiliate-members-next");
   const more = get("affiliate-admin-more");
   if (!box || !status || !linkInput || !copy || !share || !tab || !view || !claimPanel || !admin) return;
 
@@ -33,6 +37,10 @@
   let requestKey;
   let requestIdentity;
   let page = 0;
+  let membersPage = 0;
+  let membersRequest = 0;
+  let claimRequest = 0;
+  let updateRequest = 0;
   let submitting = false;
   tab.hidden = true;
   view.hidden = true;
@@ -47,6 +55,7 @@
     return {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(body)};
   }
   function revoke() {
+    claimRequest += 1;
     tab.hidden = true;
     box.hidden = true;
     claimPanel.hidden = true;
@@ -69,6 +78,9 @@
     savedAccount = nextAccount;
     available = Number(data.available);
     get("affiliate-available").textContent = money(available);
+    get("affiliate-balance").textContent = money(data.balance);
+    get("affiliate-reserved").textContent = money(data.reserved);
+    get("affiliate-paid").textContent = money(data.paid);
     amount.max = String(available);
     claimForm.hidden = !savedAccount || available < 10;
     get("affiliate-save-wallet").textContent = savedAccount ? "Simpan Nombor" : "Sertai Affiliate";
@@ -87,9 +99,25 @@
     }
     syncSubmit();
   }
+  async function refreshClaims() {
+    const revision = ++claimRequest;
+    try {
+      const details = await api("/api/web/affiliate");
+      if (revision !== claimRequest) return;
+      showClaims(details);
+      return details;
+    } catch (_) {
+      if (revision === claimRequest) {
+        claimPanel.hidden = true;
+        for (const id of ["affiliate-balance", "affiliate-reserved", "affiliate-paid"]) get(id).textContent = "—";
+      }
+    }
+  }
   async function update() {
+    const revision = ++updateRequest;
     try {
       const data = await api("/api/web/referral");
+      if (revision !== updateRequest) return;
       if (data.enabled !== true) {
         if (data.can_join !== true) { revoke(); return; }
         box.hidden = true;
@@ -100,23 +128,18 @@
         linkInput.value = data.link;
         get("web-referral-signups").textContent = String(data.registered);
         get("web-referral-paid").textContent = String(data.paid);
-        get("web-referral-points").textContent = String(data.points);
         box.hidden = false;
         status.textContent = "Mata dikreditkan selepas bayaran pertama disahkan.";
       }
       tab.hidden = false;
-      try {
-        const details = await api("/api/web/affiliate");
-        showClaims(details);
-        if (details.open && data.enabled) status.textContent = `Ganjaran ${details.rate}% bagi bayaran pertama yang disahkan.`;
-      } catch (_) {
-        claimPanel.hidden = true;
-      }
+      const details = await refreshClaims();
+      if (revision !== updateRequest) return;
+      if (details?.open && data.enabled) status.textContent = `Ganjaran ${details.rate}% bagi bayaran pertama yang disahkan.`;
       if (openFromTelegram) {
         openFromTelegram = false;
         tab.click();
       }
-    } catch (_) { revoke(); }
+    } catch (_) { if (revision === updateRequest) revoke(); }
   }
 
   account.addEventListener("input", () => { confirm.checked = false; syncSubmit(); });
@@ -195,12 +218,44 @@
       try {
         await api(`/api/web/admin/affiliate/claims/${claimId}`, {method:"POST", body:data});
         if (action === "processing") filter.value = "processing";
-        await updateAdmin();
+        await Promise.all([updateAdmin(), updateMembers(membersPage)]);
         adminStatus.textContent = "Status tuntutan dikemas kini.";
       } catch (error) { adminStatus.textContent = error.message; }
       finally { button.disabled = false; }
     });
     return form;
+  }
+  async function updateMembers(nextPage = membersPage) {
+    const revision = ++membersRequest;
+    membersPrev.disabled = membersNext.disabled = true;
+    try {
+      const data = await api(`/api/web/admin/affiliate/members?page=${nextPage}`);
+      if (revision !== membersRequest) return;
+      membersPage = nextPage;
+      admin.hidden = false;
+      membersList.replaceChildren();
+      for (const item of data.items) {
+        const li = document.createElement("li");
+        const name = [item.first_name, item.username && `@${item.username}`].filter(Boolean).join(" ");
+        const heading = document.createElement("strong");
+        heading.textContent = [name, `ID ${item.user_id}`, item.enabled ? "Aktif" : "Tidak aktif"].filter(Boolean).join(" · ");
+        const balances = document.createElement("div");
+        balances.textContent = `Baki ${money(item.balance)} mata · Boleh dituntut ${money(item.available)} · Dalam tuntutan ${money(item.reserved)} · Dibayar ${money(item.paid)}`;
+        li.append(heading, balances);
+        membersList.append(li);
+      }
+      membersStatus.textContent = data.items.length ? `Halaman ${membersPage + 1}` : "Tiada affiliate pada halaman ini.";
+      membersPrev.hidden = membersPage === 0;
+      membersNext.hidden = !data.more;
+    } catch (error) {
+      if (revision !== membersRequest) return;
+      membersList.replaceChildren();
+      membersStatus.textContent = error.message;
+      membersPrev.hidden = membersPage === 0;
+      membersNext.hidden = true;
+    } finally {
+      if (revision === membersRequest) membersPrev.disabled = membersNext.disabled = false;
+    }
   }
   async function updateAdmin(append = false) {
     if (!append) page = 0;
@@ -209,7 +264,7 @@
     try {
       const data = await api(`/api/web/admin/affiliate/claims?status=${requestedStatus}&page=${requestedPage}`);
       if (requestedStatus !== filter.value || requestedPage !== page) return;
-      admin.hidden = !data.open;
+      get("affiliate-admin-claims").hidden = !data.open;
       if (!append) adminList.replaceChildren();
       more.hidden = !data.more;
       adminStatus.textContent = data.items.length ? "" : "Tiada tuntutan bagi status ini.";
@@ -245,16 +300,26 @@
         adminList.append(section);
       }
     } catch (error) {
-      admin.hidden = true;
       adminList.replaceChildren();
       adminStatus.textContent = error.message;
     }
   }
-  get("web-admin-tab")?.addEventListener("click", () => updateAdmin());
-  get("affiliate-admin-refresh").addEventListener("click", () => updateAdmin());
+  function refreshAdmin() {
+    void updateMembers();
+    void updateAdmin();
+  }
+  get("web-admin-tab")?.addEventListener("click", refreshAdmin);
+  get("affiliate-admin-refresh").addEventListener("click", refreshAdmin);
+  membersPrev.addEventListener("click", () => updateMembers(membersPage - 1));
+  membersNext.addEventListener("click", () => updateMembers(membersPage + 1));
   filter.addEventListener("change", () => updateAdmin());
   more.addEventListener("click", () => { page += 1; void updateAdmin(true); });
   void update();
   tab.addEventListener("click", update);
+  function refreshVisibleBalance() {
+    if (!document.hidden && !view.hidden && !tab.hidden && !submitting) void refreshClaims();
+  }
+  document.addEventListener("visibilitychange", refreshVisibleBalance);
+  window.setInterval(refreshVisibleBalance, 30000);
   window.cikgulajuReferralInit = () => update();
 })();
