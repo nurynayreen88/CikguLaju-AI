@@ -137,6 +137,18 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 .teacher-profile-form h3,.teacher-timetable-section h3{margin:0 0 13px;color:#174766}
 .profile-fields-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 18px}
 .teacher-profile-form input,.teacher-profile-form select,.teacher-profile-form textarea,.timetable-table input,.timetable-table select{font:inherit;border:1px solid #c4d7e2;border-radius:10px;padding:10px;background:#fff;color:#153d56;max-width:100%;width:100%}
+.school-picker{min-width:0}
+.school-picker-combo{position:relative}
+.teacher-profile-form .school-picker-combo input{padding-right:36px;min-height:44px;cursor:pointer;text-overflow:ellipsis}
+.school-picker-combo input[aria-expanded="true"]{cursor:text}
+.school-picker-combo input:disabled{background:#f1f5f3;cursor:default}
+.school-picker-combo::after{content:"";position:absolute;right:16px;top:16px;width:7px;height:7px;border:solid #466473;border-width:0 2px 2px 0;transform:rotate(45deg);pointer-events:none}
+.school-picker-menu{position:absolute;top:calc(100% + 4px);left:0;right:0;z-index:4;background:#fff;border:1px solid #c4d7e2;border-radius:10px;box-shadow:0 8px 24px #193d5422;overflow:hidden}
+.school-picker-menu ul{list-style:none;margin:0;padding:4px;max-height:min(230px,36dvh);overflow-y:auto;overscroll-behavior:contain}
+.school-picker-menu li{padding:10px;border-radius:6px;cursor:pointer;line-height:1.35;overflow-wrap:anywhere}
+.school-picker-menu li:hover,.school-picker-menu li.is-active{background:#e7f4f0}
+.school-picker-menu li[aria-selected="true"]{font-weight:700;color:#12695e}
+.school-picker-empty{margin:0;padding:10px 13px}
 .teacher-profile-form textarea{resize:vertical;line-height:1.6}
 .profile-actions{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:15px 0 2px}
 .profile-actions button{background:#087568;color:#fff;border:0;border-radius:10px;padding:11px 15px;font:inherit;font-weight:700;cursor:pointer}
@@ -718,18 +730,45 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <h3>Maklumat Diri &amp; Sekolah</h3>
   <div class="profile-fields-grid">
     <div><label for="profile-name">Nama Guru (HURUF BESAR)</label><input id="profile-name" name="display_name" type="text" autocomplete="name" autocapitalize="characters" spellcheck="false" maxlength="100" placeholder="CONTOH: CIKGU AHMAD" required></div>
-    <div><label for="profile-state-search">Cari negeri</label><input id="profile-state-search" type="search" placeholder="Contoh: Selangor" maxlength="80" autocomplete="off" aria-controls="profile-state">
-      <label for="profile-state">Negeri sekolah</label><select id="profile-state" name="state_name">
+    <div class="school-picker">
+      <label id="profile-state-label" for="profile-state">Negeri sekolah</label>
+      <select id="profile-state" name="state_name">
       <option value="">Pilih negeri</option>
       <option>Johor</option><option>Kedah</option><option>Kelantan</option><option>Melaka</option>
       <option>Negeri Sembilan</option><option>Pahang</option><option>Perak</option><option>Perlis</option>
       <option>Pulau Pinang</option><option>Sabah</option><option>Sarawak</option><option>Selangor</option>
       <option>Terengganu</option><option>Kuala Lumpur</option><option>Putrajaya</option><option>Labuan</option><option>W.P. Kuala Lumpur</option><option>W.P. Putrajaya</option><option>W.P. Labuan</option>
-    </select></div>
-    <div><label for="profile-district-search">Cari PPD</label><input id="profile-district-search" type="search" placeholder="Contoh: Hulu Langat" maxlength="100" autocomplete="off" aria-controls="profile-district" disabled>
-      <label for="profile-district">PPD / Daerah pendidikan</label><select id="profile-district" name="district_name" disabled><option value="">Pilih negeri dahulu</option></select></div>
-    <div><label for="profile-school-search">Cari sekolah</label><input id="profile-school-search" type="search" placeholder="Nama atau kod sekolah" maxlength="100" autocomplete="off" aria-controls="profile-school-choice" disabled>
-      <label for="profile-school-choice">Pilih sekolah</label><select id="profile-school-choice" name="school_code" disabled><option value="">Pilih PPD dahulu</option></select></div>
+    </select>
+      <div class="school-picker-combo" hidden>
+        <input id="profile-state-input" type="text" role="combobox" aria-labelledby="profile-state-label" aria-controls="profile-state-list" aria-autocomplete="list" aria-expanded="false" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="100">
+        <div class="school-picker-menu" hidden>
+          <ul id="profile-state-list" role="listbox" aria-labelledby="profile-state-label"></ul>
+          <p class="school-picker-empty" role="status" hidden>Tiada padanan.</p>
+        </div>
+      </div>
+    </div>
+    <div class="school-picker">
+      <label id="profile-district-label" for="profile-district">PPD / Daerah pendidikan</label>
+      <select id="profile-district" name="district_name" disabled><option value="">Pilih negeri dahulu</option></select>
+      <div class="school-picker-combo" hidden>
+        <input id="profile-district-input" type="text" role="combobox" aria-labelledby="profile-district-label" aria-controls="profile-district-list" aria-autocomplete="list" aria-expanded="false" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="100">
+        <div class="school-picker-menu" hidden>
+          <ul id="profile-district-list" role="listbox" aria-labelledby="profile-district-label"></ul>
+          <p class="school-picker-empty" role="status" hidden>Tiada padanan.</p>
+        </div>
+      </div>
+    </div>
+    <div class="school-picker">
+      <label id="profile-school-choice-label" for="profile-school-choice">Sekolah</label>
+      <select id="profile-school-choice" name="school_code" disabled><option value="">Pilih PPD dahulu</option></select>
+      <div class="school-picker-combo" hidden>
+        <input id="profile-school-choice-input" type="text" role="combobox" aria-labelledby="profile-school-choice-label" aria-controls="profile-school-choice-list" aria-autocomplete="list" aria-expanded="false" autocomplete="off" autocapitalize="none" spellcheck="false" maxlength="100">
+        <div class="school-picker-menu" hidden>
+          <ul id="profile-school-choice-list" role="listbox" aria-labelledby="profile-school-choice-label"></ul>
+          <p class="school-picker-empty" role="status" hidden>Tiada padanan.</p>
+        </div>
+      </div>
+    </div>
     <div><label for="profile-school">Nama penuh sekolah (direktori)</label><input id="profile-school" name="school_name" type="text" maxlength="160" placeholder="Dipaparkan selepas memilih sekolah" readonly></div>
   </div>
   <p id="profile-school-notice" role="status">Pilih Negeri → PPD → Sekolah untuk nama penuh. Senarai rujukan Jun 2022; semak jika sekolah baharu atau bertukar nama.</p>
@@ -1999,7 +2038,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
 <script src="/assets/rph-today.js?v=science-copy-expanded-20261113"></script>
-<script src="/assets/teacher-profile.js?v=school-logo-preview-20261114"></script>
+<script src="/assets/teacher-profile.js?v=school-combobox-20261114"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>
 <script src="/assets/admin-usage.js?v=payment-inbox-20261114"></script>

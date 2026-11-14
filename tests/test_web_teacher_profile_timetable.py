@@ -190,7 +190,7 @@ class WebTeacherProfileUiTests(unittest.TestCase):
                       "teacher-profile-form","timetable-rows","timetable-add",
                       "timetable-save","profile-save","profile-access-summary"):
             self.assertIn('id="'+ident+'"',html)
-        self.assertIn('src="/assets/teacher-profile.js?v=school-logo-preview-20261114"',html)
+        self.assertIn('src="/assets/teacher-profile.js?v=school-combobox-20261114"',html)
         self.assertIn("loadTeacherProfile();",html)
         self.assertIn('id="view-rpt"',html)
         self.assertIn('id="view-rph"',html)
