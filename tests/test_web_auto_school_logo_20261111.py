@@ -6,6 +6,7 @@ URL and that an unrelated user cannot select another account's school.
 """
 import unittest
 from pathlib import Path
+from urllib.error import HTTPError
 from unittest.mock import patch
 
 from flask import Flask
@@ -31,11 +32,14 @@ class FakeResponse:
 
 
 class FakeOpener:
-    def __init__(self, content):
+    def __init__(self, content, *, missing_catalog=False):
         self.requests=[]
+        self.missing_catalog=missing_catalog
         self.content=content
     def open(self, request, timeout=9):
         self.requests.append(request.full_url)
+        if self.missing_catalog and "/school-logo-catalog/" in request.full_url:
+            raise HTTPError(request.full_url,404,"missing",{},None)
         return FakeResponse(self.content)
 
 
@@ -48,7 +52,7 @@ class AutoLogoTests(unittest.TestCase):
 
     def test_exact_school_code_fetches_pinned_govtech_image(self):
         data=b"\xff\xd8\xff"+b"rest-of-jpeg"
-        opener=FakeOpener(data)
+        opener=FakeOpener(data, missing_catalog=True)
         with patch("web.school_logo_candidate.school_by_code",
                    return_value={"school_code":"JBA0001","school_level":"Rendah"}), \
              patch("web.school_logo_candidate._read",return_value=[{
@@ -57,9 +61,26 @@ class AutoLogoTests(unittest.TestCase):
              }]) as registry:
             found=logo_candidate("https://example.supabase.co","fake", "JBA0001",opener=opener)
         self.assertEqual(found,(data,"image/jpeg"))
-        self.assertEqual(opener.requests,[UPSTREAM_ROOT+"JBA0001.jpg"])
+        self.assertEqual(opener.requests,[
+            "https://example.supabase.co/storage/v1/object/authenticated/cikgulaju-materials/"
+            f"school-logo-catalog/{UPSTREAM_COMMIT}/JBA0001.jpg",
+            UPSTREAM_ROOT+"JBA0001.jpg",
+        ])
         self.assertEqual(registry.call_args.args[2],"school_logo_sources")
         self.assertEqual(registry.call_args.args[3]["school_code"],"eq.JBA0001")
+
+    def test_stored_catalog_image_does_not_use_external_host(self):
+        data=b"\xff\xd8\xff"+b"rest-of-jpeg"
+        opener=FakeOpener(data)
+        with patch("web.school_logo_candidate.school_by_code",
+                   return_value={"school_level":"Rendah"}), \
+             patch("web.school_logo_candidate._read",return_value=[{
+                "school_code":"JBA0001","image_extension":"jpg","source_commit":UPSTREAM_COMMIT,
+             }]):
+            found=logo_candidate("https://db.example","fake","JBA0001",opener=opener)
+        self.assertEqual(found,(data,"image/jpeg"))
+        self.assertEqual(len(opener.requests),1)
+        self.assertIn("/school-logo-catalog/",opener.requests[0])
 
     def test_no_candidate_does_not_make_external_request(self):
         opener=FakeOpener(b"")
@@ -146,7 +167,7 @@ class AutoLogoTests(unittest.TestCase):
         html=(root/"index.html").read_text("utf-8")
         js=(root/"teacher-profile.js").read_text("utf-8")
         self.assertIn('id="school-logo-auto"',html)
-        self.assertIn('src="/assets/teacher-profile.js?v=profile-guide-20261111"',html)
+        self.assertIn('src="/assets/teacher-profile.js?v=school-search-20261114"',html)
         self.assertIn("/api/web/teacher/school-logo-candidate",js)
         self.assertIn("savedLogoSchoolCode()",js)
         self.assertIn("schoolLogoPresent===true",js)

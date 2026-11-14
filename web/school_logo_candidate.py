@@ -1,18 +1,18 @@
 """User-scoped candidate school logos from GovTech Sekolahku's public fallback files.
 
-CikguLaju retains metadata in Supabase, NOT a mass copy of third-party files.
-The authenticated teacher's already-saved school code (not a browser-supplied
-URL or code) selects the candidate. The browser can then convert the image
-to PNG and store it in the teacher's existing PRIVATE Supabase Storage path.
-Never overwrite a previously uploaded logo without a user decision.
+The authenticated teacher's saved school code selects the candidate from the
+private Storage catalog, with the pinned source as a fallback for missing files.
+The candidate is kept separate from the teacher's personal logo.
 """
 import re
 from urllib.error import HTTPError, URLError
+from urllib.parse import urlsplit
 from urllib.request import Request, build_opener
 
 from web.school_directory_store import (
     _read, school_by_code, SchoolDirectoryUnavailable,
 )
+from web.school_logo_store import BUCKET
 from web.teacher_profile_store import NoRedirect
 
 UPSTREAM_COMMIT = "2fa79e15e77da39371138bc247dc034d17a90b4b"
@@ -59,12 +59,45 @@ def logo_candidate(url, service_key, school_code, *, opener=None):
     ext, commit = rows[0].get("image_extension"), rows[0].get("source_commit")
     if ext not in MIME or commit != UPSTREAM_COMMIT:
         raise LogoSourceUnavailable("Sumber logo belum disahkan")
-    source_url = UPSTREAM_ROOT + school_code + "." + ext
-    req = Request(source_url, headers={
-        "Accept": MIME[ext], "User-Agent": "CikguLaju-SchoolLogo/1.0",
-    }, method="GET")
+    if school_code in {"PBA1015", "YBB1418"}:
+        return None
+    filename = school_code + "." + ext
     try:
-        # No redirects: never follow a third-party Location to a new host.
+        blob = _catalog_image(url, service_key, commit, filename, ext, opener=opener)
+    except LogoSourceUnavailable:
+        blob = None
+    if blob is None:
+        req = Request(UPSTREAM_ROOT + filename, headers={
+            "Accept": MIME[ext], "User-Agent": "CikguLaju-SchoolLogo/1.0",
+        }, method="GET")
+        try:
+            blob = _image(req, ext, opener=opener)
+        except HTTPError as exc:
+            if exc.code in (403, 404):
+                return None
+            raise LogoSourceUnavailable("Sumber logo tidak dapat dihubungi") from None
+    return blob, MIME[ext]
+
+
+def _catalog_image(url, key, commit, filename, ext, *, opener=None):
+    parts = urlsplit(url)
+    if (parts.scheme != "https" or not parts.hostname or parts.username or parts.password
+            or parts.port is not None or parts.path not in ("", "/") or parts.query or parts.fragment):
+        raise LogoSourceUnavailable("Konfigurasi storan logo tidak sah")
+    path = f"/storage/v1/object/authenticated/{BUCKET}/school-logo-catalog/{commit}/{filename}"
+    request = Request(url.rstrip("/") + path, headers={
+        "apikey": key, "Authorization": "Bearer " + key, "Accept": MIME[ext],
+    })
+    try:
+        return _image(request, ext, opener=opener)
+    except HTTPError as exc:
+        if exc.code in (400, 404):
+            return None
+        raise LogoSourceUnavailable("Katalog logo belum tersedia") from None
+
+
+def _image(req, ext, *, opener=None):
+    try:
         with (opener or build_opener(NoRedirect())).open(req, timeout=9) as response:
             if response.status != 200:
                 raise LogoSourceUnavailable("Sumber logo tidak dapat dibaca")
@@ -72,10 +105,8 @@ def logo_candidate(url, service_key, school_code, *, opener=None):
             if length and (not length.isdecimal() or int(length) > MAX_SOURCE_BYTES):
                 raise LogoSourceUnavailable("Fail logo terlalu besar")
             blob = response.read(MAX_SOURCE_BYTES + 1)
-    except HTTPError as exc:
-        if exc.code in (403, 404):
-            return None
-        raise LogoSourceUnavailable("Sumber logo tidak dapat dihubungi") from None
+    except HTTPError:
+        raise
     except (URLError, OSError, TimeoutError):
         raise LogoSourceUnavailable("Sumber logo tidak dapat dihubungi") from None
     if not 0 < len(blob) <= MAX_SOURCE_BYTES:
@@ -87,4 +118,4 @@ def logo_candidate(url, service_key, school_code, *, opener=None):
     }
     if not magic[ext]:
         raise LogoSourceUnavailable("Kandungan sumber bukan imej sekolah yang sah")
-    return blob, MIME[ext]
+    return blob

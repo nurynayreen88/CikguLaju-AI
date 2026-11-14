@@ -476,19 +476,75 @@ const schoolPickerNotice=document.getElementById("profile-school-notice");
 let schoolPickerRequest=0;
 let schoolCatalogOptions=[];
 
-function populateSchoolSelect(control, placeholder, items, saved="") {
-  control.replaceChildren(new Option(placeholder,""));
-  for (const row of items) {
-    // Codes disambiguate schools sharing a full name within the same PPD.
-    const label=control===schoolChoiceField
-      ? row.label+" ("+row.value+")" : row.label;
+const schoolSearchFields=new Map([
+  [schoolStateField,document.getElementById("profile-state-search")],
+  [schoolDistrictField,document.getElementById("profile-district-search")],
+  [schoolChoiceField,document.getElementById("profile-school-search")],
+]);
+const schoolSelectData=new Map();
+
+function schoolSearchText(value) {
+  return value.toLocaleUpperCase("ms-MY").normalize("NFKD")
+    .replace(/\p{M}/gu,"").replace(/[^A-Z0-9]+/g," ").trim();
+}
+
+function filterSchoolSelect(control, selected=control.value) {
+  const search=schoolSearchFields.get(control);
+  const {placeholder,items}=schoolSelectData.get(control);
+  const query=schoolSearchText(search?.value||"");
+  const words=query ? query.split(" ") : [];
+  const matches=items.filter(row=>{
+    const label=schoolSearchText(row.label);
+    const value=schoolSearchText(row.value);
+    const initials=label.split(" ").map(word=>word[0]).join("");
+    const text=label+" "+value+" "+initials;
+    return words.every(word=>text.includes(word));
+  });
+  const visible=matches.some(row=>row.value===selected)
+    ? matches : [...items.filter(row=>row.value===selected),...matches];
+  control.replaceChildren(new Option(query&&!matches.length?"Tiada padanan":placeholder,""));
+  for(const row of visible) {
+    const label=control===schoolChoiceField ? row.label+" ("+row.value+")" : row.label;
     control.add(new Option(label,row.value));
   }
-  if (saved && !items.some(row=>row.value===saved)) {
-    control.add(new Option(saved.toLocaleUpperCase("ms-MY")+" (rekod lama — semak semula)",saved));
+  if(selected&&!items.some(row=>row.value===selected))
+    control.add(new Option(selected.toLocaleUpperCase("ms-MY")+" (rekod lama — semak semula)",selected));
+  control.value=selected;
+  control.disabled=!items.length&&!selected;
+  return matches;
+}
+
+function populateSchoolSelect(control, placeholder, items, saved="") {
+  schoolSelectData.set(control,{placeholder,items});
+  const search=schoolSearchFields.get(control);
+  if(search) {
+    search.value="";
+    search.disabled=!items.length;
   }
-  control.value=saved||"";
-  control.disabled=items.length===0;
+  filterSchoolSelect(control,saved);
+}
+
+for(const [control,search] of schoolSearchFields) {
+  if(!search)continue;
+  search.addEventListener("input",()=>{
+    if(schoolSelectData.has(control))filterSchoolSelect(control);
+  });
+  search.addEventListener("keydown",event=>{
+    if(event.key!=="Enter")return;
+    event.preventDefault();
+    if(!schoolSelectData.has(control))return;
+    const matches=filterSchoolSelect(control);
+    if(matches.length!==1||!schoolSearchText(search.value)) {
+      control.focus();
+      return;
+    }
+    if(control.value===matches[0].value) {
+      control.focus();
+      return;
+    }
+    control.value=matches[0].value;
+    control.dispatchEvent(new Event("change",{bubbles:true}));
+  });
 }
 
 async function getSchoolChoices(kind, state="", district="") {
@@ -535,7 +591,11 @@ async function loadSchoolPickerForProfile(profile) {
   const savedDistrict=profile.district_name||"";
   const savedCode=profile.school_code||"";
   schoolNameField.value=(profile.school_name||"").toLocaleUpperCase("ms-MY");
-  schoolStateField.value=savedState;
+  const currentStates=schoolSelectData.get(schoolStateField)?.items||
+    [...schoolStateField.options].filter(option=>option.value).map(option=>({
+      value:option.value,label:option.textContent.toLocaleUpperCase("ms-MY"),
+    }));
+  populateSchoolSelect(schoolStateField,"Pilih negeri",currentStates,savedState);
   populateSchoolSelect(schoolDistrictField,"Pilih negeri dahulu",[]);
   populateSchoolSelect(schoolChoiceField,"Pilih PPD dahulu",[]);
   schoolPickerNotice.textContent="Memuatkan negeri, PPD dan sekolah dari pangkalan data…";

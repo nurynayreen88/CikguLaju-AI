@@ -716,15 +716,18 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <h3>Maklumat Diri &amp; Sekolah</h3>
   <div class="profile-fields-grid">
     <div><label for="profile-name">Nama Guru (HURUF BESAR)</label><input id="profile-name" name="display_name" type="text" autocomplete="name" autocapitalize="characters" spellcheck="false" maxlength="100" placeholder="CONTOH: CIKGU AHMAD" required></div>
-    <div><label for="profile-state">Negeri sekolah</label><select id="profile-state" name="state_name">
+    <div><label for="profile-state-search">Cari negeri</label><input id="profile-state-search" type="search" placeholder="Contoh: Selangor" maxlength="80" autocomplete="off" aria-controls="profile-state">
+      <label for="profile-state">Negeri sekolah</label><select id="profile-state" name="state_name">
       <option value="">Pilih negeri</option>
       <option>Johor</option><option>Kedah</option><option>Kelantan</option><option>Melaka</option>
       <option>Negeri Sembilan</option><option>Pahang</option><option>Perak</option><option>Perlis</option>
       <option>Pulau Pinang</option><option>Sabah</option><option>Sarawak</option><option>Selangor</option>
       <option>Terengganu</option><option>Kuala Lumpur</option><option>Putrajaya</option><option>Labuan</option><option>W.P. Kuala Lumpur</option><option>W.P. Putrajaya</option><option>W.P. Labuan</option>
     </select></div>
-    <div><label for="profile-district">PPD / Daerah pendidikan</label><select id="profile-district" name="district_name" disabled><option value="">Pilih negeri dahulu</option></select></div>
-    <div><label for="profile-school-choice">Pilih sekolah</label><select id="profile-school-choice" name="school_code" disabled><option value="">Pilih PPD dahulu</option></select></div>
+    <div><label for="profile-district-search">Cari PPD</label><input id="profile-district-search" type="search" placeholder="Contoh: Hulu Langat" maxlength="100" autocomplete="off" aria-controls="profile-district" disabled>
+      <label for="profile-district">PPD / Daerah pendidikan</label><select id="profile-district" name="district_name" disabled><option value="">Pilih negeri dahulu</option></select></div>
+    <div><label for="profile-school-search">Cari sekolah</label><input id="profile-school-search" type="search" placeholder="Nama atau kod sekolah" maxlength="100" autocomplete="off" aria-controls="profile-school-choice" disabled>
+      <label for="profile-school-choice">Pilih sekolah</label><select id="profile-school-choice" name="school_code" disabled><option value="">Pilih PPD dahulu</option></select></div>
     <div><label for="profile-school">Nama penuh sekolah (direktori)</label><input id="profile-school" name="school_name" type="text" maxlength="160" placeholder="Dipaparkan selepas memilih sekolah" readonly></div>
   </div>
   <p id="profile-school-notice" role="status">Pilih Negeri → PPD → Sekolah untuk nama penuh. Senarai rujukan Jun 2022; semak jika sekolah baharu atau bertukar nama.</p>
@@ -1993,7 +1996,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
 <script src="/assets/rph-today.js?v=science-copy-expanded-20261113"></script>
-<script src="/assets/teacher-profile.js?v=profile-guide-20261111"></script>
+<script src="/assets/teacher-profile.js?v=school-search-20261114"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>
 <script src="/assets/admin-usage.js?v=payment-inbox-20261114"></script>
