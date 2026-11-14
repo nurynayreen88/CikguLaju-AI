@@ -23,7 +23,9 @@ class BrowserSharedTrialTests(unittest.TestCase):
           document.querySelector('main.panel').hidden=true;
           document.querySelector('#workspace').hidden=false;
           document.querySelector('#teacher-info').hidden=false;
-          document.querySelector('#year').value='4';
+          curriculum.value='kssr';
+          selectCurriculum();
+          year.value='4';
           for (const [id,value] of [['subject','ENGLISH'],['unit','Where are you from?'],
                                     ['lesson','e-4-001']]) {
              let e=document.getElementById(id);
