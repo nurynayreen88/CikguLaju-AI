@@ -105,8 +105,6 @@ const panel={hidden:true}, science={hidden:true}, mathematics={hidden:true};
 const ctx={
  curriculum,year,subject,unit,catalogStatus:{textContent:""}, dlpPreviewPanel:panel,
  dlpPreviews:new Map([["SCIENCE_DLP",science],["MATH_DLP",mathematics]]),
- dlpPreviewOptions:[{value:"SCIENCE_DLP",label:"Science (DLP) — Akan Datang"},
-                    {value:"MATH_DLP",label:"Mathematics (DLP) — Akan Datang"}],
  resetSelect(el,label){el.value="";el.options=[{value:"",label}];el.disabled=true;},
  fillSelect(el,items,label){ctx.resetSelect(el,label);el.options.push(...items);el.disabled=!items.length;},
  resetCurriculumChoices(){ctx.showDlpPreview("");}, setSubjectNavigationLabels(){},
@@ -115,7 +113,7 @@ const ctx={
  showStep(el,visible){el.hidden=!visible;}, subjectNavLabel(){return "Unit";},
  async fillForSelection(_el,kind,extra){catalogueCalls.push(kind,extra.subject);},
 };
-vm.runInNewContext(code.slice(code.indexOf("const curriculumYears="),code.indexOf("async function loadOptions("))
+vm.runInNewContext(code.slice(code.indexOf("const dlpSubjectOptions="),code.indexOf("async function loadOptions("))
  +"\n"+code.slice(code.indexOf('curriculum.addEventListener("change"'),code.indexOf('component.addEventListener("change"'))
  +"\nthis.showDlpPreview=showDlpPreview;",ctx);
 (async()=>{
@@ -133,7 +131,10 @@ vm.runInNewContext(code.slice(code.indexOf("const curriculumYears="),code.indexO
  assert.deepEqual(catalogueCalls,[]);
  curriculum.value="dlp";
  listeners["curriculum.change"]();
- assert.deepEqual(year.options.map(x=>x.value),["","2"]);
+ assert.deepEqual(year.options.map(x=>x.label),[
+  "Pilih Tahun","Tahun 1 (KP Baharu) — Akan Datang","Tahun 2 — Pratonton",
+  "Tahun 3 — Akan Datang","Tahun 4 — Akan Datang","Tahun 5 — Akan Datang","Tahun 6 — Akan Datang"
+ ]);
  year.value="2";
  await listeners["year.change"]();
  assert.deepEqual(subject.options.map(x=>x.value),["","SCIENCE_DLP","MATH_DLP"]);
@@ -147,6 +148,21 @@ vm.runInNewContext(code.slice(code.indexOf("const curriculumYears="),code.indexO
  await listeners["subject.change"]();
  assert.equal(science.hidden,true);
  assert.equal(mathematics.open,true);
+ for(const n of ["1","3","4","5","6"]){
+  year.value=n;
+  await listeners["year.change"]();
+  assert.equal(panel.hidden,true);
+  assert.deepEqual(subject.options.map(x=>x.label),[
+   "Pilih Subjek","Science (DLP) — Akan Datang","Mathematics (DLP) — Akan Datang"
+  ]);
+  for(const option of subject.options.slice(1)){
+   subject.value=option.value;
+   await listeners["subject.change"]();
+   assert.equal(panel.hidden,true);
+   assert.match(ctx.help,/Akan Datang/);
+   assert.ok(ctx.catalogStatus.textContent.includes(n==="1"?"Tahun 1 (KP Baharu)":"Tahun "+n));
+  }
+ }
  assert.deepEqual(catalogueCalls,[]);
  curriculum.value="kssr";
  listeners["curriculum.change"]();
