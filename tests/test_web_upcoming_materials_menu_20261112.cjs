@@ -16,7 +16,6 @@ const features=[
  ["worksheet","Lembaran Kerja"],
  ["bbm","BBM &amp; Aktiviti"],
  ["uasa","Latihan UASA"],
- ["kp2027","KP2027 • Tahun 1"],
 ];
 const locations=features.map(([id,label])=>{
  const re=new RegExp('<button type="button" class="sidebar-tab sidebar-tab--planned" data-web-view="'+id+'" aria-controls="view-'+id+'">([^<]*|[\\s\\S]*?)<\\/button>');
@@ -40,8 +39,10 @@ const pos=id=>nav.indexOf('data-web-view="'+id+'"');
 assert.ok(pos("rph")<pos("worksheet") && pos("worksheet")<pos("bbm") &&
  pos("bbm")<pos("uasa") && pos("uasa")<pos("pbd") &&
  pos("pbd")<pos("special"),"Teaching-material features should follow Sediakan RPH");
-assert.ok(pos("rpt")<pos("kp2027") && pos("kp2027")<pos("payment"),
- "KP2027 should sit next to RPT 2027, not in a separate bucket");
+assert.doesNotMatch(source,/id="view-kp2027"|data-web-view="kp2027"/);
+assert.match(source,/<option value="kp2027-y1">Tahun 1 \(KP Baharu\)<\/option>/);
+assert.match(source,/<option value="1">Tahun 1 \(KSSR\)<\/option>/);
+assert.match(source,/year===1\?"Tahun 1 \(KP Baharu\)"/);
 
 const worksheet=locations.find(x=>x.id==="worksheet").content;
 assert.match(worksheet,/Enam contoh susun atur A4/);
@@ -81,7 +82,6 @@ for(const feature of locations){
 }
 assert.match(nav, /class="sidebar-tab" data-web-view="pbd"/);
 assert.match(source, /id="pbd-save-roster"/);
-assert.match(locations.find(x=>x.id==="kp2027").content,/RPT 2027/);
 for(const name of ["today","rph","special","rpt","account","payment","referral","feedback","admin","guide"]){
  assert.ok(source.includes('["'+name+'","view-'+name+'"]'),
  "Existing navigation changed unexpectedly: "+name);
@@ -93,4 +93,56 @@ assert.match(source,/function showWebView\(name\)/);
 const scripts=[...source.matchAll(/<script>([\s\S]*?)<\/script>/g)];
 assert.equal(scripts.length,1,"Keep one native inline JS script");
 new vm.Script(scripts[0][1],"web JS must parse");
-console.log("WEB_PLANNED_MENUS: PASS (four planned sidebar slots, badges, six visual previews, no fake downloads)");
+const code=scripts[0][1];
+const listeners={};
+function mockSelect(name){
+ return {value:"",options:[],addEventListener(event,fn){listeners[name+"."+event]=fn;}};
+}
+const year=mockSelect("year"),subject=mockSelect("subject"),unit=mockSelect("unit");
+const catalogueCalls=[];
+const panel={hidden:true}, science={hidden:true}, mathematics={hidden:true};
+const ctx={
+ year,subject,unit,catalogStatus:{textContent:""}, dlpPreviewPanel:panel,
+ dlpPreviews:new Map([["SCIENCE_DLP",science],["MATH_DLP",mathematics]]),
+ dlpPreviewOptions:[{value:"SCIENCE_DLP",label:"Science (DLP) — Akan Datang"},
+                    {value:"MATH_DLP",label:"Mathematics (DLP) — Akan Datang"}],
+ resetSelect(el,label){el.value="";el.options=[{value:"",label}];el.disabled=true;},
+ fillSelect(el,items,label){ctx.resetSelect(el,label);el.options.push(...items);el.disabled=!items.length;},
+ resetCurriculumChoices(){ctx.showDlpPreview("");}, setSubjectNavigationLabels(){},
+ updateSelectionHelp(text){ctx.help=text;},
+ async loadOptions(kind){catalogueCalls.push(kind);return [{value:"MATH",label:"Matematik"}];},
+ showStep(){}, subjectNavLabel(){return "Unit";},
+ async fillForSelection(_el,kind,extra){catalogueCalls.push(kind,extra.subject);},
+};
+vm.runInNewContext(code.slice(code.indexOf("function showDlpPreview("),code.indexOf("async function loadOptions("))
+ +"\n"+code.slice(code.indexOf('year.addEventListener("change"'),code.indexOf('component.addEventListener("change"'))
+ +"\nthis.showDlpPreview=showDlpPreview;",ctx);
+(async()=>{
+ year.value="kp2027-y1";
+ await listeners["year.change"]();
+ assert.equal(subject.disabled,true);
+ assert.match(ctx.help,/KP Baharu.*Akan Datang/);
+ assert.deepEqual(catalogueCalls,[]);
+ year.value="1";
+ await listeners["year.change"]();
+ assert.deepEqual(subject.options.map(x=>x.value),["","MATH"]);
+ year.value="2";
+ await listeners["year.change"]();
+ assert.deepEqual(subject.options.map(x=>x.value),["","MATH","SCIENCE_DLP","MATH_DLP"]);
+ subject.value="SCIENCE_DLP";
+ await listeners["subject.change"]();
+ assert.equal(panel.hidden,false);
+ assert.equal(science.hidden,false);
+ assert.equal(science.open,true);
+ assert.equal(mathematics.hidden,true);
+ subject.value="MATH_DLP";
+ await listeners["subject.change"]();
+ assert.equal(science.hidden,true);
+ assert.equal(mathematics.open,true);
+ assert.deepEqual(catalogueCalls,["subjects","subjects"]);
+ subject.value="MATH";
+ await listeners["subject.change"]();
+ assert.equal(panel.hidden,true);
+ assert.deepEqual(catalogueCalls,["subjects","subjects","units","MATH"]);
+ console.log("WEB_PLANNED_MENUS: PASS (inline DLP and KP Baharu, legacy access, six worksheet previews)");
+})().catch(error=>{console.error(error);process.exitCode=1;});
