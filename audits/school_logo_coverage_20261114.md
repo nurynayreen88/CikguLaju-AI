@@ -129,10 +129,11 @@ Sumber utama ialah fail profil Pandai yang dinamakan dengan kod sekolah. Baki im
 
 ## Kemas kini katalog produksi, 14 November 2026
 
-Pusingan kedua menambah 19 logo. Semakan terus terhadap storan produksi mengesahkan 7,767 daripada 7,778 sekolah rendah mempunyai imej katalog (99.86%). Setiap imej baharu dibaca semula dari laluan storan persendirian dan SHA-256 sepadan. Sebahagian imej ialah potongan lencana beresolusi rendah daripada bahan sekolah atau foto papan tanda.
+Pusingan kedua menambah 20 logo. Semakan terus terhadap storan produksi mengesahkan 7,768 daripada 7,778 sekolah rendah mempunyai imej katalog (99.87%). Setiap imej baharu dibaca semula dari laluan storan persendirian dan SHA-256 sepadan. Sebahagian imej ialah potongan lencana beresolusi rendah daripada bahan sekolah atau foto papan tanda.
 
 | Kod | Sekolah | Sumber | SHA-256 |
 | --- | --- | --- | --- |
+| ABA7036 | SEKOLAH KEBANGSAAN RPS POS KEMAR | [Blog SK RPS Kemar, foto papan tanda](https://skrpskemar.blogspot.com/) | `6386121afa79e74393b6305f833d39deedd2b1fed391db41bfdaceb2b777d693` |
 | ABAB025 | SEKOLAH KEBANGSAAN SUNGAI TIANG BAROH | [Buku Mesyuarat Agung PIBG SK Sungai Tiang Baroh](<https://anyflip.com/haskq/iqbp/basic>) | `b762e61cdd3776e6d86c5e5048027820e20440c1509980b5921a458859534523` |
 | ABC1056 | SEKOLAH JENIS KEBANGSAAN (CINA) CHIEN HUA | [Blog SJKC Chien Hua, foto papan tanda](<https://sjkchienhua.blogspot.com/2015/03/blog-post.html>) | `3e35922070ad8c177f4e8d18b00a0d311bc279c4943e6a59b9bdc0a7c65ec8a0` |
 | ABCA001 | SEKOLAH JENIS KEBANGSAAN (CINA) HO PIN | [The Community Chest, foto papan tanda](<https://commchest.org.my/projects/sjkc-ho-pin/>) | `a31eea31f944434a0e950b33eef14136e68d50fec456e77bbcd13c966440a0e2` |
@@ -158,7 +159,6 @@ Pusingan kedua menambah 19 logo. Semakan terus terhadap storan produksi mengesah
 | Kod | Sekolah | PPD | Negeri |
 | --- | --- | --- | --- |
 | ABA0128 | SEKOLAH KEBANGSAAN JERNANG | PPD BATANG PADANG | Perak |
-| ABA7036 | SEKOLAH KEBANGSAAN RPS POS KEMAR | PPD HULU PERAK | Perak |
 | ABDB011 | SEKOLAH JENIS KEBANGSAAN (TAMIL) LADANG STRATHMASHIE | PPD BAGAN DATUK | Perak |
 | CBC4052 | SEKOLAH JENIS KEBANGSAAN (CINA) POAY CHAI | PPD KUANTAN | Pahang |
 | KBC0047 | SEKOLAH JENIS KEBANGSAAN (CINA) POI CHEE | PPD BALING | Kedah |
