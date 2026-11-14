@@ -31,7 +31,7 @@ def install(runtime):
             "📝 <b>RPH Harian</b>\n"
             "Bahan Bahasa Inggeris mengikut kurikulum Sekolah Kebangsaan (SK). "
             "Untuk pengajaran biasa mengikut kurikulum. Pilih "
-            "<b>Tahun/Tingkatan → Subjek → Tema/Unit/Tajuk → Lesson/PdP</b>. "
+            "<b>Kurikulum → Tahun → Subjek → Tema/Unit/Tajuk → Lesson/PdP</b>. "
             "SK/SP, RPT/SOW, buku teks dan buku aktiviti dipadankan secara "
             "automatik apabila sumber tersedia. Selepas memilih kelas, "
             "tarikh dan masa, pilih bahan yang diperlukan dan tekan "

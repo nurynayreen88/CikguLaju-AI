@@ -16,20 +16,28 @@ class TelegramCurriculumTests(unittest.TestCase):
         self.assertTrue(install(self.ns))
         self.ns["state"][1] = {"task":"quick_material","quick_material_flow":True}
 
-    def test_year_one_versions_are_in_the_same_year_menu(self):
+    def test_curriculum_comes_before_year(self):
+        self.ns["state"][1].update(curriculum_version="existing",year="Tahun 4")
         self.ns["year"](1,"primary")
         _, keyboard = self.messages[-1]
-        self.assertEqual(keyboard[0], [
-            {"text":"Tahun 1 (KP Baharu)","callback_data":"cv_year1_kp"},
-            {"text":"Tahun 1 (KSSR)","callback_data":"year_1"},
-        ])
-        self.assertIn("year_6",str(keyboard))
+        self.assertEqual([row[0]["text"] for row in keyboard[:3]], ["KSSR","KP27 (KP Baharu)","DLP"])
+        self.assertNotIn("year_",str(keyboard))
+        self.assertNotIn("year",self.ns["state"][1])
+        self.ns["callback"](1,"year_1")
+        self.assertEqual(self.calls,[])
+        self.ns["callback"](1,"cv_primary_kssr")
+        keyboard = self.messages[-1][1]
+        self.assertEqual([b["callback_data"] for row in keyboard[:3] for b in row],
+                         [f"year_{year}" for year in range(1,7)])
         self.ns["callback"](1,"year_1")
         self.assertEqual(self.calls,[("subjects","Tahun 1")])
         self.assertEqual(self.ns["state"][1]["curriculum_version"],"existing")
 
     def test_kp2027_blocks_subject_and_legacy_fallback(self):
         self.ns["state"][1].update(subject="Sains",lesson_no="7",waiting="rph_date")
+        self.ns["callback"](1,"cv_primary_kp27")
+        self.assertEqual(self.messages[-1][1][0],[
+            {"text":"Tahun 1 (KP Baharu)","callback_data":"cv_year1_kp"}])
         self.ns["callback"](1,"cv_year1_kp")
         self.assertNotIn("lesson_no",self.ns["state"][1])
         self.assertNotIn("waiting",self.ns["state"][1])
@@ -49,15 +57,16 @@ class TelegramCurriculumTests(unittest.TestCase):
     def test_old_year_one_kp_button_still_opens_preview(self):
         self.ns["state"][1]["year"]="Tahun 1"
         self.ns["callback"](1,"cv_kp2027")
+        self.assertIn("cv_year1_kp",str(self.messages[-1][1]))
+        self.ns["callback"](1,"cv_year1_kp")
         self.assertIn("Tahun 1 (KP Baharu)",self.messages[-1][0])
 
-    def test_year_two_lists_dlp_with_regular_subjects(self):
-        self.ns["callback"](1,"year_2")
+    def test_year_two_lists_only_dlp_subjects_in_dlp(self):
+        self.ns["callback"](1,"cv_primary_dlp")
+        self.assertEqual(self.messages[-1][1][0],[{"text":"Tahun 2","callback_data":"cv_year2_dlp"}])
+        self.ns["callback"](1,"cv_year2_dlp")
         keys = {button["callback_data"]:button["text"] for row in self.messages[-1][1] for button in row}
-        self.assertEqual(keys["sub_Sains"],"Sains")
-        self.assertEqual(keys["sub_Matematik"],"Matematik")
-        self.assertIn("devsub2617_Pendidikan Seni Visual",keys)
-        self.assertNotIn("devsub2617_Sejarah",keys)
+        self.assertEqual(set(keys),{"cv_dlp_science","cv_dlp_math","cv_primary_dlp","home"})
         for data,title,topic in (("cv_dlp_science","Science (DLP)","Observe"),
                                  ("cv_dlp_math","Mathematics (DLP)","Recognise Numbers")):
             with self.subTest(data=data):
@@ -68,12 +77,19 @@ class TelegramCurriculumTests(unittest.TestCase):
                 self.assertIn("Activity Book pp. 1–2",msg)
                 self.assertIn("back_subjects",str(kb))
                 self.assertNotIn("matsubmit2528",str(kb))
+                self.ns["callback"](1,"back_subjects")
+                self.assertIn("cv_dlp_math",str(self.messages[-1][1]))
         self.assertNotIn("subject",self.ns["state"][1])
         self.assertEqual(self.calls,[])
         self.ns["callback"](1,"sub_Sains")
-        self.assertEqual(self.calls,[("callback","sub_Sains")])
+        self.assertEqual(self.calls,[])
+        self.ns["callback"](1,"cv_primary_kssr")
+        self.ns["callback"](1,"year_2")
+        self.ns["callback"](1,"sub_Sains")
+        self.assertEqual(self.calls,[("subjects","Tahun 2"),("callback","sub_Sains")])
 
     def test_stale_dlp_button_and_other_tasks(self):
+        self.ns["callback"](1,"cv_primary_kssr")
         self.ns["callback"](1,"year_3")
         self.ns["callback"](1,"cv_dlp_science")
         self.assertNotIn("Observe",self.messages[-1][0])
@@ -83,6 +99,7 @@ class TelegramCurriculumTests(unittest.TestCase):
         self.assertEqual(self.calls,[("subjects","Tahun 3"),("year","primary"),("subjects","Tahun 2")])
 
     def test_other_years_preserve_old_subject_flow(self):
+        self.ns["callback"](1,"cv_primary_kssr")
         self.ns["callback"](1,"year_3")
         self.assertEqual(self.calls,[("subjects","Tahun 3")])
 
