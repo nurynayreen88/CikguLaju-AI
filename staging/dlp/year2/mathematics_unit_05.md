@@ -21,7 +21,7 @@ Six 60-minute RPH for CS 5.1–5.3. See the [source mapping](../../../audits/dlp
 ## DLP-MAT-Y2-U05-02 · Read and Show Time on Clocks
 
 **Standards** · CS 5.1 · LS 5.1.2
-**References** · Textbook Part 2 pp. 42–44 · Activity Book pp. 117–118 (shared section reference)
+**References** · Textbook Part 2 pp. 42–44 · Activity Book p. 117 · Activity 1
 **Learning objective** · State two shown times and set an analogue model for two given times, with at least three correct responses including one of each type.
 **Materials** · Teaching clock with linked hands, pupil clocks, analogue pictures and digital time cards.
 
@@ -37,7 +37,7 @@ Six 60-minute RPH for CS 5.1–5.3. See the [source mapping](../../../audits/dlp
 ## DLP-MAT-Y2-U05-03 · Convert Time Between Words and Numerals
 
 **Standards** · CS 5.1 · LS 5.1.3
-**References** · Textbook Part 2 pp. 43–44 · Activity Book pp. 117–118 (shared section reference)
+**References** · Textbook Part 2 pp. 43–44 · Activity Book p. 118 · Activity 2
 **Learning objective** · Convert at least three of four times between words and numerals, including one conversion in each direction.
 **Materials** · Word and numeral cards, an analogue clock model, and individual response slips.
 
