@@ -7,7 +7,7 @@ import fitz
 from flask import Flask
 from PIL import Image, ImageDraw, ImageFont
 
-from web.timetable_reader import read_timetable
+from web.timetable_reader import _read_grid, read_timetable
 from web.timetable_reader_api import bp
 from web.timetable_upload import READER_PATH, UnreadableTimetable, validate_result
 
@@ -138,6 +138,26 @@ class TimetableReaderTest(unittest.TestCase):
             with self.subTest(raw=raw), self.assertRaises(UnreadableTimetable):
                 read_timetable(raw, CLASSES)
 
+    def test_reports_known_location_without_guessing_missing_fields(self):
+        texts = [
+            ((40, 0, 80, 30), "08:00–08:30"),
+            ((80, 0, 120, 30), "08:30–09:00"),
+            ((0, 30, 40, 60), "Isnin"),
+            ((0, 60, 40, 90), "Selasa"),
+            ((40, 30, 80, 60), "Unknown"),
+            ((80, 30, 120, 60), "BM"),
+            ((120, 30, 160, 60), "BI 5 Amanah"),
+            ((40, 60, 80, 90), "REHAT"),
+        ]
+        entries, unclear = _read_grid(texts, CLASSES)
+        self.assertEqual(entries, [dict(day="Isnin", start="08:30", end="09:00",
+                                        class_name="", subject="Bahasa Melayu")])
+        self.assertEqual(unclear, [
+            dict(day="Isnin", start="08:00", end="08:30", reason="details"),
+            dict(day="Isnin", start="08:30", end="09:00", reason="review"),
+            dict(day="Isnin", start="", end="", reason="time"),
+        ])
+
     def test_private_endpoint_authenticates_and_returns_real_slots(self):
         app = Flask(__name__)
         app.register_blueprint(bp)
@@ -149,8 +169,12 @@ class TimetableReaderTest(unittest.TestCase):
                                          content_type="application/pdf").status_code, 401)
             response = client.post(READER_PATH, data=data, content_type="application/pdf",
                                    headers={"Authorization": "Bearer " + token})
+            review = client.post(READER_PATH, data=data, content_type="application/pdf",
+                                 headers={"Authorization": "Bearer " + token, "X-Timetable-Review": "1"})
         self.assertEqual(response.status_code, 200)
         self.assertEqual(len(response.json["entries"]), len(EXPECTED))
+        self.assertNotIn("unclear_cells", response.json)
+        self.assertEqual(review.json["unclear_cells"], [])
         self.assertEqual(response.headers["Cache-Control"], "no-store, private")
 
 
