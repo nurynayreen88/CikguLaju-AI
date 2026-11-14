@@ -133,6 +133,16 @@ class TimetableReaderTest(unittest.TestCase):
         ])
         self.assertEqual(result["uncertain"], 0)
 
+    def test_large_jpeg_is_reduced_before_decode_and_png_gets_clear_feedback(self):
+        with Image.open(BytesIO(image_bytes())) as image:
+            large = image.resize((3200, 2000))
+        jpeg, png = BytesIO(), BytesIO()
+        large.save(jpeg, format="JPEG")
+        large.save(png, format="PNG")
+        self.assert_slots(jpeg.getvalue())
+        with self.assertRaisesRegex(UnreadableTimetable, "simpan sebagai JPG"):
+            read_timetable(png.getvalue(), CLASSES)
+
     def test_rejects_invalid_bytes_and_unreadable_document(self):
         for raw in (b"fake.pdf", b"%PDF-damaged", b"\x89PNG\r\n\x1a\nbroken"):
             with self.subTest(raw=raw), self.assertRaises(UnreadableTimetable):

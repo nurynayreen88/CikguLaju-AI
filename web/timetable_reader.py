@@ -58,6 +58,8 @@ NON_TEACHING = re.compile(
 
 MAX_PAGES = 3
 MAX_PIXELS = 18_000_000
+MAX_PAGE_SIDE = 1600
+MAX_FULL_DECODE_PIXELS = 3_000_000
 
 
 def _pages(data):
@@ -69,7 +71,7 @@ def _pages(data):
             if doc.needs_pass or not 0 < len(doc) <= MAX_PAGES:
                 raise UnreadableTimetable("Gunakan PDF tanpa kata laluan, maksimum 3 halaman.")
             for page in doc:
-                zoom = min(4, 2200 / max(page.rect.width, page.rect.height))
+                zoom = min(4, MAX_PAGE_SIDE / max(page.rect.width, page.rect.height))
                 matrix = fitz.Matrix(zoom, zoom)
                 pix = page.get_pixmap(matrix=matrix, alpha=False)
                 transform = page.rotation_matrix * matrix
@@ -82,15 +84,33 @@ def _pages(data):
     with Image.open(BytesIO(data)) as source:
         if source.width * source.height > MAX_PIXELS or getattr(source, "n_frames", 1) != 1:
             raise UnreadableTimetable("Gunakan satu gambar jadual yang lebih kecil.")
+        if source.format == "JPEG" and source.width * source.height > MAX_FULL_DECODE_PIXELS:
+            scale = next(factor for factor in (2, 4, 8)
+                         if ((source.width + factor - 1) // factor)
+                         * ((source.height + factor - 1) // factor) <= MAX_FULL_DECODE_PIXELS)
+            source.draft("RGB", (source.width // scale, source.height // scale))
+        if source.width * source.height > MAX_FULL_DECODE_PIXELS:
+            raise UnreadableTimetable(
+                "Resolusi gambar terlalu tinggi. Potong bahagian jadual atau simpan sebagai JPG bersaiz lebih kecil."
+            )
+        source.thumbnail((MAX_PAGE_SIDE, MAX_PAGE_SIDE), Image.Resampling.LANCZOS)
         img = ImageOps.exif_transpose(source)
-        img.thumbnail((2400, 2400), Image.Resampling.LANCZOS)
-        yield img.convert("RGB"), []
+        if img.mode != "RGB":
+            img = img.convert("RGB")
+    yield img, []
 
 
 @lru_cache(maxsize=1)
 def _ocr_engine():
+    from onnxruntime import disable_telemetry_events
     from ocrust import Ocr
-    return Ocr(threads=2, tables=False, word_boxes=True, preprocess=False,
+
+    disable_telemetry_events()
+    # The reader shares a 512 MiB instance with the Telegram app. Bound
+    # detection tensors and recognition batches even on large uploads.
+    return Ocr(threads=1, page_workers=1, memory="frugal",
+               det_limit_side=960, rec_batch_size=4,
+               tables=False, word_boxes=True, preprocess=False,
                fix_orientation=False, drop_score=0.48, max_pixels=MAX_PIXELS)
 
 
