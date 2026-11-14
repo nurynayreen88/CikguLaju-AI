@@ -85,18 +85,22 @@ class AutoLogoTests(unittest.TestCase):
     def test_restored_logo_has_priority_and_original_is_a_fallback(self):
         restored = b"\x89PNG\r\n\x1a\nrestored"
         old = b"\x89PNG\r\n\x1a\noriginal"
-        with patch("web.school_logo_candidate.school_by_code",
-                   return_value={"school_level": "Rendah"}), \
-             patch("web.school_logo_candidate._read", return_value=[]) as registry, \
-             patch("web.school_logo_candidate._catalog_image",
-                   side_effect=[restored, None, old]) as storage:
-            self.assertEqual(logo_candidate("https://db.example", "fake", "JBC1051"),
-                             (restored, "image/png"))
-            registry.assert_not_called()
-            self.assertEqual(logo_candidate("https://db.example", "fake", "JBC1051"),
-                             (old, "image/png"))
-        self.assertEqual([call.args[2] for call in storage.call_args_list],
-                         ["restored-512-v1", "restored-512-v1", "risalahmap"])
+        for code in ("CBA6024", "JBC1051", "XBA1102", "XBA4376"):
+            with self.subTest(code=code), \
+                 patch("web.school_logo_candidate.school_by_code",
+                       return_value={"school_level": "Rendah"}), \
+                 patch("web.school_logo_candidate._read", return_value=[]) as registry, \
+                 patch("web.school_logo_candidate._catalog_image",
+                       side_effect=[restored, None, old]) as storage:
+                self.assertEqual(logo_candidate("https://db.example", "fake", code),
+                                 (restored, "image/png"))
+                registry.assert_not_called()
+                self.assertEqual(logo_candidate("https://db.example", "fake", code),
+                                 (old, "image/png"))
+            self.assertEqual([(call.args[2], call.args[3]) for call in storage.call_args_list],
+                             [("restored-512-v1", code + ".png"),
+                              ("restored-512-v1", code + ".png"),
+                              ("risalahmap", code + ".png")])
 
     def test_no_candidate_does_not_make_external_request(self):
         opener=FakeOpener(b"", missing_catalog=True)

@@ -24,7 +24,7 @@ MAX_SOURCE_BYTES = 2 * 1024 * 1024
 CODE = re.compile(r"[A-Z0-9]{6,12}\Z")
 MIME = {"jpg": "image/jpeg", "png": "image/png", "gif": "image/gif"}
 RESTORED_VERSION = "restored-512-v1"
-RESTORED_CODES = frozenset({"JBC1051", "XBA4376"})
+RESTORED_CODES = frozenset({"CBA6024", "JBC1051", "XBA1102", "XBA4376"})
 
 
 class LogoSourceUnavailable(Exception):
