@@ -106,7 +106,7 @@ const panel={hidden:true}, heading={textContent:""};
 const makeNode=()=>({textContent:"",children:[],append(...items){this.children.push(...items);},replaceChildren(){this.children=[];}});
 const content=makeNode();
 const dlpReviewData=JSON.parse(source.match(/<script id="dlp-review-data" type="application\/json">([\s\S]*?)<\/script>/)[1]);
-assert.deepEqual(Object.values(dlpReviewData).map(groups=>groups.map(group=>group.lessons.length)),[[7,1,5,7,6,6],[12,21,8,11,6,10]]);
+assert.deepEqual(Object.values(dlpReviewData).map(groups=>groups.map(group=>group.lessons.length)),[[7,1,5,7,6,6,7],[12,21,8,11,6,10,6]]);
 const ctx={
  curriculum,year,subject,unit,lesson,theme,topic,component,catalogStatus:{textContent:""},
  dlpPreviewPanel:panel,dlpReviewHeading:heading,dlpReviewContent:content,dlpReviewData,
@@ -150,7 +150,7 @@ vm.runInNewContext(code.slice(code.indexOf("const dlpSubjectOptions="),code.inde
   subject.value=subjectCode;
   await listeners["subject.change"]();
   assert.equal(panel.hidden,true);
-  assert.deepEqual(unit.options.map(x=>x.value),["","01","02","03","04","05","06"]);
+  assert.deepEqual(unit.options.map(x=>x.value),["","01","02","03","04","05","06","07"]);
   for(const group of groups){
    unit.value=group.id;
    await listeners["unit.change"]();
