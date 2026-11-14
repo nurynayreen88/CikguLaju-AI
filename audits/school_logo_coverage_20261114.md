@@ -154,17 +154,26 @@ Pusingan kedua menambah 20 logo. Semakan terus terhadap storan produksi mengesah
 | YCB8204 | SEKOLAH KEBANGSAAN ST MICHAEL MONGKOS | [Profil sekolah SK St Michael Mongkos](<https://www.schoolandcollegelistings.com/MY/Serian/117083944726083/SK-St-Michael-Mongkos-Serian>) | `f2d222a3b31ca5654c0cb2283bc0d42b74b46c300571eff157518f9d53cce241` |
 | YCC3214 | SEKOLAH JENIS KEBANGSAAN (CINA) KAI NANG | [Profil sekolah SJKC Kai Nang](<https://www.schoolandcollegelistings.com/MY/Kuching/268362826366439/SJKC-KAI-NANG>) | `1c287873ebbe7057de282ad585867553247c833a5cd1d72816022544bd31c4c4` |
 
+## Semakan susulan katalog produksi
+
+Tiga imej ditambah dan disahkan semula melalui SHA-256. Liputan kini 7,771 daripada 7,778 sekolah rendah (99.91%). Kod lama ABD5137 pada kepala surat SJKT Ladang Strathmashie dipadankan dengan kod semasa ABDB011 melalui [senarai sekolah Perak](https://myschoolchildren.com/data/SEK_REN_Perak_files/sheet001.htm).
+
+| Kod | Sekolah | Sumber | SHA-256 |
+| --- | --- | --- | --- |
+| ABA0128 | SEKOLAH KEBANGSAAN JERNANG | [Minit HEM SK Jernang 2024/2025 dengan kod ABA0128](<https://www.scribd.com/document/753320071/Min-Mesy-HEM-Bil-1-2024-2025>) | `76d5480549b20c696d144dce9351b10ed10bc2704fbf8936ecacc884f1ea320c` |
+| ABDB011 | SEKOLAH JENIS KEBANGSAAN (TAMIL) LADANG STRATHMASHIE | [Kepala surat sekolah dengan kod lama ABD5137](<https://id.scribd.com/doc/227336183/Contoh-Surat-Iringan-PPD>) | `fe283150e7d659ba4df38194d556945bc85f26baf377b6144c5aeba2f078197e` |
+| YBB6314 | SEKOLAH KEBANGSAAN ULU MERADONG | [Buku Pengurusan SK Ulu Meradong dengan kod YBB6314](<https://www.scribd.com/doc/230899078/Buku-Pengurusan-Sekolah-2014-pptx>) | `8435d9f8b32587c6e567a713453a8f0a0f3df56dfa86ba0a70960ed9a0fa442d` |
+
 ## Sekolah yang masih memerlukan logo
 
 | Kod | Sekolah | PPD | Negeri |
 | --- | --- | --- | --- |
-| ABA0128 | SEKOLAH KEBANGSAAN JERNANG | PPD BATANG PADANG | Perak |
-| ABDB011 | SEKOLAH JENIS KEBANGSAAN (TAMIL) LADANG STRATHMASHIE | PPD BAGAN DATUK | Perak |
 | CBC4052 | SEKOLAH JENIS KEBANGSAAN (CINA) POAY CHAI | PPD KUANTAN | Pahang |
 | KBC0047 | SEKOLAH JENIS KEBANGSAAN (CINA) POI CHEE | PPD BALING | Kedah |
 | XBA4376 | SEKOLAH KEBANGSAAN WASAI | PPD TUARAN | Sabah |
-| YBB6314 | SEKOLAH KEBANGSAAN ULU MERADONG | PPD MARADONG | Sarawak |
 | YCB1301 | SEKOLAH KEBANGSAAN EMPEROH JAMBU | PPD PADAWAN | Sarawak |
 | YCB1319 | SEKOLAH KEBANGSAAN GEORGE | PPD PADAWAN | Sarawak |
 | YCC1329 | SEKOLAH JENIS KEBANGSAAN (CINA) CHUNG HUA SYN-SAN-TU | PPD PADAWAN | Sarawak |
 | YCC6111 | SEKOLAH JENIS KEBANGSAAN (CINA) SING MING | PPD SARIKEI | Sarawak |
+
+Untuk CBC4052, rekod PPD Kuantan dan laporan pemindahan sekolah senama memerlukan pengesahan lanjut sebelum imej digunakan.
