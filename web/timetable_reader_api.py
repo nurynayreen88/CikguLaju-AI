@@ -24,6 +24,10 @@ def prevent_cache(response):
 
 @bp.post(READER_PATH)
 def timetable_read():
+    # Temporary safety switch: OCR can exhaust the shared 512 MiB Render instance.
+    # Re-enable only after browser-first reader is deployed and load-tested.
+    if os.environ.get("CIKGULAJU_TIMETABLE_SERVER_OCR_ENABLED", "0") != "1":
+        return jsonify(error="Bacaan automatik jadual ditangguhkan sementara. Jadual manual masih boleh digunakan."), 503
     token = os.environ.get("CIKGULAJU_AUTHORITATIVE_API_TOKEN", "")
     header = request.headers.get("Authorization", "")
     if len(token) < 32 or not hmac.compare_digest(header.encode(), ("Bearer " + token).encode()):
