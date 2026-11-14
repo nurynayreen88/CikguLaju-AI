@@ -40,6 +40,51 @@ class PaymentWebTests(unittest.TestCase):
                data={"plan":plan,"receipt":(BytesIO(RECEIPT),"receipt.pdf",
                                      "application/pdf")})
 
+    def test_admin_payment_queue_is_private_and_does_not_expose_file_id(self):
+        route = "/api/web/admin/payments"
+        row = {"id": 31, "chat_id": "201", "amount": "20.00", "status": "pending",
+               "proof_telegram_file_id": "private-reference",
+               "proof_received_at": "2026-11-14T01:00:00+00:00"}
+        with patch.dict(os.environ, {"CIKGULAJU_WEB_ADMIN_IDS": "901"}), \
+             patch("web.web_payment_routes._admin_payment_rows", return_value=[row]) as source, \
+             patch("web.web_payment_routes._payer_names", return_value={"201": "Cikgu Ujian"}):
+            self.assertEqual(self.client.get(route).status_code, 403)
+            source.assert_not_called()
+            with patch("web.web_payment_routes._auth", return_value=(CONF, 901, None)):
+                self.assertEqual(self.client.get(route + "?status=bad").status_code, 400)
+                response = self.client.get(route)
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json["items"][0]["name"], "Cikgu Ujian")
+        self.assertTrue(response.json["items"][0]["can_review"])
+        self.assertNotIn("private-reference", response.get_data(as_text=True))
+        self.assertIn("no-store", response.headers["Cache-Control"])
+
+    def test_admin_receipt_and_review_bind_authorized_admin_and_version(self):
+        route = "/api/web/admin/payments/31"
+        stamp = "2026-11-14T01:00:00+00:00"
+        body = {"payer": "201", "receipt_at": stamp, "decision": "approved"}
+        row = {"proof_telegram_file_id": "private-reference", "proof_received_at": stamp}
+        with patch.dict(os.environ, {"CIKGULAJU_WEB_ADMIN_IDS": "901"}), \
+             patch("web.web_payment_routes._auth", return_value=(CONF, 901, None)), \
+             patch("web.web_payment_routes._admin_payment_rows", return_value=[row]), \
+             patch("web.web_payment_routes._telegram_receipt_bytes",
+                   return_value=(RECEIPT, "application/pdf", ".pdf")), \
+             patch("web.web_payment_routes._review_rakan",
+                   return_value={"status": "approved"}) as review:
+            receipt = self.client.get(route + "/receipt")
+            self.assertEqual(receipt.data, RECEIPT)
+            self.assertIn("sandbox", receipt.headers["Content-Security-Policy"])
+            self.assertEqual(self.client.post(route + "/review", json=body).status_code, 403)
+            review.assert_not_called()
+            response = self.client.post(route + "/review", base_url=self.url,
+                                        json=body, headers={"Origin": self.url})
+            review.assert_called_once_with(CONF, 31, 201, 901, stamp, "approved")
+            self.assertEqual(response.json, {"status": "approved"})
+            review.return_value = {"error": "reviewed"}
+            response = self.client.post(route + "/review", base_url=self.url,
+                                        json=body, headers={"Origin": self.url})
+            self.assertEqual(response.status_code, 409)
+
     def test_qr_does_not_create_pending(self):
         def source(path,**kwargs):
             return CATALOG if path.endswith("/catalog") else (b"\xff\xd8\xff"+b"x"*900,"image/jpeg")
@@ -301,7 +346,7 @@ class PaymentWebTests(unittest.TestCase):
         self.assertIn('setVerifiedProgress(data)',js)
         self.assertIn('payDirectLink.hidden=!canPay;',js)
         self.assertIn('payDirectLink.hidden=true;',js)
-        self.assertIn('v=rakan-only-percent-20261106',html)
+        self.assertRegex(html, r'/assets/web-payment\.js\?v=[a-z0-9-]+')
         self.assertIn("hantar resit",html.lower())
 
 

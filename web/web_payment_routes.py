@@ -2,8 +2,7 @@
 
 The server authenticates signed Telegram sessions, uses Telegram's configured
 payment QR and plan catalog, and inserts a pending request ONLY AFTER receipt
-bytes were accepted by Telegram. Admin confirmation and entitlement assignment
-remain in Telegram's existing payment workflow.
+bytes were accepted by Telegram. Admin review uses the shared Supabase payment transaction.
 
 No anonymous user IDs, public Storage links, duplicate pending rows, automatic
 approval, paywall bypass, or new database columns.
@@ -396,3 +395,168 @@ def payment_submit():
         return jsonify({"error":str(exc)}),400
     except ProfileUnavailable:
         return jsonify({"error":"Resit tidak dapat direkodkan dengan selamat. Semak status pembayaran sebelum cuba lagi; jangan bayar sekali lagi."}),503
+
+
+def _admin_payment_auth():
+    from web.admin_usage_web import allowed_admin_ids
+
+    conf, uid, error = _auth()
+    if error is None and uid not in allowed_admin_ids():
+        error = jsonify({"error": "Akses admin diperlukan"}), 403
+    return conf, uid, error
+
+
+def _admin_payment_rows(conf, **filters):
+    columns = ("id,chat_id,amount,status,submitted_at,reviewed_at,"
+               "proof_received_at,proof_telegram_file_id,proof_mime_type")
+    return _payment_rest(conf, "GET", query=urlencode({"select": columns, **filters}))
+
+
+def _proof_available(row):
+    return bool(row.get("proof_received_at") and str(row.get("proof_telegram_file_id") or "").strip())
+
+
+def _payer_names(conf, rows):
+    from web.admin_usage_web import _fetch
+
+    ids = sorted({str(int(row["chat_id"])) for row in rows})
+    if not ids:
+        return {}
+    users = _fetch(conf, "cikgulaju_users", {
+        "select": "telegram_user_id,first_name,last_name,username",
+        "telegram_user_id": "in.(" + ",".join(ids) + ")",
+    })
+    return {str(user["telegram_user_id"]): (
+        " ".join(str(user.get(key) or "").strip() for key in ("first_name", "last_name")).strip()
+        or user.get("username") or "Pengguna"
+    ) for user in users}
+
+
+@bp.get("/api/web/admin/payments")
+def admin_payment_inbox():
+    conf, _, error = _admin_payment_auth()
+    if error is not None:
+        return error
+    status = request.args.get("status", "pending")
+    page = request.args.get("page", "0")
+    if status not in ("pending", "approved", "rejected") or not re.fullmatch(r"[0-9]{1,5}", page):
+        return jsonify({"error": "Penapis bayaran tidak sah"}), 400
+    try:
+        size = 20
+        order = "submitted_at.asc,id.asc" if status == "pending" else "reviewed_at.desc.nullslast,id.desc"
+        rows = _admin_payment_rows(conf, status="eq." + status, order=order,
+                                   offset=int(page) * size, limit=size + 1)
+        names = _payer_names(conf, rows[:size])
+        items = []
+        for row in rows[:size]:
+            rakan = float(row["amount"]) in (10, 20)
+            uid = row["chat_id"]
+            items.append({
+                "id": str(row["id"]), "user_id": uid, "name": names.get(uid, "Pengguna"),
+                "package": "Rakan Pembangun" if rakan else "Langganan",
+                "amount": f'{float(row["amount"]):.2f}', "status": row["status"],
+                "received": row.get("proof_received_at"), "submitted": row.get("submitted_at"),
+                "reviewed": row.get("reviewed_at"), "has_receipt": _proof_available(row),
+                "can_review": rakan and row["status"] == "pending" and _proof_available(row),
+            })
+        return jsonify({"items": items, "more": len(rows) > size})
+    except (ProfileUnavailable, PaymentConflict, RuntimeError, ValueError, TypeError, KeyError, OSError):
+        return jsonify({"error": "Senarai bayaran belum dapat dimuatkan. Cuba semula."}), 503
+
+
+def _telegram_receipt_bytes(conf, row, *, opener=None):
+    token = conf["CIKGULAJU_WEB_BOT_TOKEN"]
+    if not re.fullmatch(r"[0-9]{5,15}:[A-Za-z0-9_-]{20,}", token):
+        raise ProfileUnavailable("Bot resit belum tersedia")
+    base = "https://api.telegram.org"
+    client = opener or build_opener(HTTPSHandler(), NoRedirect())
+    try:
+        url = base + "/bot" + token + "/getFile?" + urlencode({"file_id": row["proof_telegram_file_id"]})
+        with client.open(Request(url), timeout=12) as response:
+            reply = json.loads(response.read(MAX_REPLY + 1))
+        path = reply.get("result", {}).get("file_path") if reply.get("ok") is True else None
+        if not isinstance(path, str) or not re.fullmatch(r"[A-Za-z0-9_-]+/[A-Za-z0-9_-]+\.[A-Za-z0-9]+", path):
+            raise ValueError("Invalid Telegram receipt path")
+        with client.open(Request(base + "/file/bot" + token + "/" + path), timeout=20) as response:
+            raw = response.read(MAX_RECEIPT + 1)
+        guessed = mimetypes.guess_type(path)[0]
+        mime = guessed if guessed in CONTENT_TYPES else row.get("proof_mime_type")
+        extension = _validate_receipt(raw, mime)
+        return raw, mime, extension
+    except (OSError, ValueError, TypeError, KeyError, AttributeError):
+        raise ProfileUnavailable("Fail resit belum dapat dibuka") from None
+
+
+@bp.get("/api/web/admin/payments/<int:payment_id>/receipt")
+def admin_payment_receipt(payment_id):
+    conf, _, error = _admin_payment_auth()
+    if error is not None:
+        return error
+    if not 0 < payment_id < 10**18:
+        return jsonify({"error": "ID bayaran tidak sah"}), 400
+    try:
+        rows = _admin_payment_rows(conf, id=f"eq.{payment_id}", limit=1)
+        if not rows or not _proof_available(rows[0]):
+            return jsonify({"error": "Resit tersimpan tidak dijumpai"}), 404
+        raw, mime, extension = _telegram_receipt_bytes(conf, rows[0])
+        response = Response(raw, mimetype=mime)
+        response.headers["Content-Disposition"] = f'inline; filename="Resit-{payment_id}{extension}"'
+        response.headers["Content-Security-Policy"] = "sandbox; default-src 'none'"
+        response.headers["Cross-Origin-Resource-Policy"] = "same-origin"
+        return response
+    except (ProfileUnavailable, PaymentConflict):
+        return jsonify({"error": "Resit belum dapat dibuka. Cuba semula."}), 503
+
+
+def _review_rakan(conf, payment_id, payer, admin, proof_received, decision):
+    from web.admin_usage_web import _api_config
+
+    base, headers = _api_config(conf)
+    payload = {"p_payment_id": payment_id, "p_payer": payer, "p_admin": admin,
+               "p_proof_received_at": proof_received, "p_decision": decision}
+    req = Request(base + "/rest/v1/rpc/review_rakan_payment", method="POST",
+                  headers={**headers, "Content-Type": "application/json"},
+                  data=json.dumps(payload).encode())
+    with build_opener(HTTPSHandler(), NoRedirect()).open(req, timeout=12) as response:
+        result = json.loads(response.read(MAX_REPLY + 1))
+    if not isinstance(result, dict):
+        raise ValueError("Invalid payment review response")
+    return result
+
+
+@bp.post("/api/web/admin/payments/<int:payment_id>/review")
+def admin_payment_review(payment_id):
+    conf, uid, error = _admin_payment_auth()
+    if error is not None:
+        return error
+    if request.headers.get("Origin") != "https://" + request.host:
+        return jsonify({"error": "Asal permintaan tidak sah"}), 403
+    if not request.is_json or not request.content_length or request.content_length > 1024:
+        return jsonify({"error": "Keputusan semakan tidak sah"}), 400
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict) or set(data) != {"payer", "receipt_at", "decision"}:
+        return jsonify({"error": "Keputusan semakan tidak sah"}), 400
+    payer, received, decision = data["payer"], data["receipt_at"], data["decision"]
+    if (not 0 < payment_id < 10**18 or not isinstance(payer, str)
+            or not re.fullmatch(r"[1-9][0-9]{0,17}", payer)
+            or decision not in ("approved", "rejected")
+            or not isinstance(received, str) or len(received) > 48):
+        return jsonify({"error": "Keputusan semakan tidak sah"}), 400
+    try:
+        stamp = datetime.fromisoformat(received.replace("Z", "+00:00"))
+        if stamp.tzinfo is None:
+            raise ValueError("Missing receipt time zone")
+    except ValueError:
+        return jsonify({"error": "Masa resit tidak sah"}), 400
+    try:
+        result = _review_rakan(conf, payment_id, int(payer), uid, received, decision)
+    except (RuntimeError, ValueError, OSError, TypeError):
+        return jsonify({"error": "Keputusan belum dapat disahkan. Muat semula senarai dahulu."}), 503
+    if result.get("status") == decision:
+        return jsonify({"status": decision})
+    messages = {
+        "already_active": "Akses Rakan Pembangun sudah aktif. Semak transaksi asal sebelum memutuskan bayaran ini.",
+        "reviewed": "Bayaran ini sudah disemak. Muat semula senarai.",
+        "proof_changed": "Resit sudah berubah atau belum tersedia. Buka semula resit.",
+    }
+    return jsonify({"error": messages.get(result.get("error"), "Rekod bayaran tidak lagi sepadan.")}), 409
