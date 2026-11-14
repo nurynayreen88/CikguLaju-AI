@@ -194,7 +194,7 @@ class TeacherProfileHttpTests(unittest.TestCase):
             entries = response.json["entries"]
             self.assertEqual([r["subject"] for r in entries],
                              ["Pendidikan Moral", "KM", "Pendidikan Jasmani dan Pendidikan Kesihatan"])
-            self.assertEqual([r.get("subject_code") for r in entries], ["PD", "KM", None])
+            self.assertEqual([r.get("subject_code") for r in entries], ["PD", "KM", "PJPK"])
 
     def test_anonymous_and_unregistered_blocked(self):
         with patch("web.teacher_profile_routes.verify_session_ticket",return_value=None):

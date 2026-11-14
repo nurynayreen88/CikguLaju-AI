@@ -4,7 +4,7 @@
 const teacherProfileState = {
   loaded: false, profileVersion: "", timetableVersion: "",
   classNames: [], savedPeriods: 0, savedProfile: null, savedTimetable: null,
-  subjectAliases: {},
+  classAliases: {},
 };
 const teacherDays = ["Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu","Ahad"];
 // Full, source-compatible names so RPH Hari Ini can match a saved period.
@@ -101,27 +101,23 @@ const timetableReader = document.getElementById("timetable-reader");
 const timetableReaderFile = document.getElementById("timetable-reader-file");
 const timetableReaderStart = document.getElementById("timetable-reader-start");
 const timetableReaderStatus = document.getElementById("timetable-reader-status");
-const timetableSubjectAliases = document.getElementById("timetable-subject-aliases");
-const timetableAliasList = document.getElementById("timetable-alias-list");
-const timetableAliasCode = document.getElementById("timetable-alias-code");
-const timetableAliasPicker = document.getElementById("timetable-alias-picker");
-const timetableAliasSave = document.getElementById("timetable-alias-save");
-const timetableAliasStatus = document.getElementById("timetable-alias-status");
 const timetableReaderReview = document.getElementById("timetable-reader-review");
-const timetableReaderReviewNote = document.getElementById("timetable-reader-review-note");
+const timetableReaderTitle = document.getElementById("timetable-reader-review-title");
+const timetableReaderNote = document.getElementById("timetable-reader-review-note");
+const timetableReaderFields = document.getElementById("timetable-reader-fields");
+const timetableReaderPreview = document.getElementById("timetable-reader-preview");
 const timetableReaderReportRows = document.getElementById("timetable-reader-report-rows");
 const timetableReaderUnclear = document.getElementById("timetable-reader-unclear");
 const timetableReaderUnclearTitle = document.getElementById("timetable-reader-unclear-title");
 const timetableReaderUnclearList = document.getElementById("timetable-reader-unclear-list");
 const timetableReaderUnclearNote = document.getElementById("timetable-reader-unclear-note");
-const timetableReaderAppend = document.getElementById("timetable-reader-append");
-const timetableReaderReplace = document.getElementById("timetable-reader-replace");
-const timetableReaderClassActions = document.getElementById("timetable-reader-classes-actions");
-const timetableReaderClasses = document.getElementById("timetable-reader-classes");
-let timetableReadRows = [];
+const timetableReaderNext = document.getElementById("timetable-reader-next");
+const timetableReaderBack = document.getElementById("timetable-reader-back");
+const timetableReaderDismiss = document.getElementById("timetable-reader-dismiss");
+const timetableReaderFeedback = document.getElementById("timetable-reader-feedback");
+let timetableReview = null;
 let timetableReadRequest = null;
-let timetableReadPartial = false;
-let importedTimetable = false;
+let timetableImportSaving = false;
 const schoolLogoFile = document.getElementById("school-logo-file");
 const schoolLogoUpload = document.getElementById("school-logo-upload");
 const schoolLogoStatus = document.getElementById("school-logo-status");
@@ -399,7 +395,7 @@ function profileEditorData() {
 }
 function hasUnsavedTeacherChanges() {
   if (!teacherProfileState.loaded) return false;
-  return timetableReadRows.length>0 ||
+  return timetableReview!==null ||
          JSON.stringify(profileEditorData()) !== teacherProfileState.savedProfile ||
          JSON.stringify(timetableValueRows()) !== teacherProfileState.savedTimetable;
 }
@@ -856,19 +852,13 @@ schoolChoiceField.addEventListener("change",()=>{
 });
 
 async function loadTeacherProfile() {
+  if(timetableImportSaving)return;
   clearSchoolLogoSelection();
   teacherProfileState.loaded=false;
   timetableReadRequest?.abort();
   timetableReader.hidden=true;
   timetableReaderFile.value="";
-  teacherProfileState.subjectAliases={};
-  timetableSubjectAliases.open=false;
-  timetableAliasStatus.textContent="";
-  selectTimetableAlias("");
-  timetableReadRows=[];
-  timetableReadPartial=false;
-  importedTimetable=false;
-  timetableReaderClassActions.hidden=true;
+  timetableReview=null;
   timetableReaderStatus.textContent="";
   setTeacherProfileButtons(false);
   profileMessage.textContent="Memuatkan maklumat guru…";
@@ -878,8 +868,7 @@ async function loadTeacherProfile() {
     if(!result.profile || !result.timetable || !Array.isArray(result.profile.class_names)
        || !Array.isArray(result.timetable.entries))throw new Error("Data profil tidak sah.");
     const profile=result.profile, timetable=result.timetable;
-    teacherProfileState.subjectAliases=profile.timetable_subject_aliases||{};
-    renderTimetableAliasList();
+    teacherProfileState.classAliases=profile.timetable_class_aliases||{};
     teacherNameField.value=(profile.display_name || "Cikgu").toLocaleUpperCase("ms-MY");
     await loadSchoolPickerForProfile(profile);
     document.getElementById("profile-classes").value=profile.class_names.join("\n");
@@ -907,7 +896,7 @@ async function loadTeacherProfile() {
 
 profileForm.addEventListener("submit", async event => {
   event.preventDefault();
-  if(!teacherProfileState.loaded)return;
+  if(!teacherProfileState.loaded || timetableImportSaving)return;
   const class_names=teacherClassLines();
   if(class_names.length>25) {
     profileMessage.textContent="Maksimum 25 kelas. Sila kurangkan senarai.";
@@ -934,7 +923,6 @@ profileForm.addEventListener("submit", async event => {
     }
     setTeacherIdentity(body);
     renderTeacherTimetable(timetableValueRows());
-    timetableReaderClassActions.hidden=missingTimetableClasses().length===0;
     if(typeof loadTeacherClasses==="function")loadTeacherClasses();
     profileMessage.textContent="Maklumat guru dan senarai kelas berjaya disimpan.";
   }catch(err){
@@ -964,13 +952,8 @@ timetableAddButton.addEventListener("click",() => {
 });
 
 timetableSaveButton.addEventListener("click",async() => {
-  if(!teacherProfileState.loaded)return;
+  if(!teacherProfileState.loaded || timetableImportSaving)return;
   const entries=timetableValueRows();
-  if(importedTimetable && entries.some(row=>!teacherProfileState.classNames.includes(row.class_name)
-      || !row.subject || !row.start || !row.end || row.start>=row.end)){
-    timetableMessage.textContent="Semak kelas, subjek dan masa bagi semua waktu sebelum simpan.";
-    return;
-  }
   if(!entries.length && teacherProfileState.savedPeriods>0 &&
      !window.confirm("Ini akan mengosongkan jadual waktu yang disimpan. Teruskan?"))return;
   if(!entries.length && !teacherProfileState.savedPeriods){
@@ -988,8 +971,6 @@ timetableSaveButton.addEventListener("click",async() => {
     teacherProfileState.profileVersion=result.version;
     teacherProfileState.savedTimetable=JSON.stringify(entries);
     teacherProfileState.savedPeriods=entries.length;
-    importedTimetable=false;
-    timetableReaderClassActions.hidden=true;
     renderProfileReadiness();
     timetableMessage.textContent=entries.length+" waktu berjaya disimpan. Jadual ini turut tersedia di Telegram.";
   }catch(err){
@@ -1001,96 +982,13 @@ timetableSaveButton.addEventListener("click",async() => {
 
 
 function updateTimetableReaderButtons() {
-  timetableReaderStart.disabled=!teacherProfileState.loaded
-    || !timetableReaderFile.files.length || timetableReadRequest!==null;
-  timetableReaderReview.hidden=timetableReadRows.length===0;
-  if(timetableReaderReview.hidden){
-    timetableReaderReportRows.replaceChildren();
-    timetableReaderUnclearList.replaceChildren();
-    timetableReaderUnclear.hidden=true;
-  }
-  const selected=selectedTimetableReadRows();
-  timetableReaderAppend.disabled=!selected.length;
-  timetableReaderReplace.disabled=timetableReadPartial ||
-    timetableReadRows.some(row=>row.subject_code && !resolvedTimetableReadRow(row).subject);
+  timetableReaderStart.disabled=!teacherProfileState.loaded || !timetableReaderFile.files.length ||
+    timetableReadRequest!==null || timetableImportSaving;
+  timetableReaderReview.hidden=!timetableReview;
+  timetableReaderBack.disabled=timetableImportSaving;
+  timetableReaderDismiss.disabled=timetableImportSaving;
+  timetableReaderNext.disabled=timetableImportSaving;
 }
-
-function selectedTimetableReadRows() {
-  return [...timetableReaderReportRows.querySelectorAll("input:checked")]
-    .map(input=>resolvedTimetableReadRow(timetableReadRows[Number(input.value)]));
-}
-
-function resolvedTimetableReadRow(row) {
-  const {subject_code, ...entry}=row;
-  if(subject_code)
-    entry.subject=teacherProfileState.subjectAliases[subject_code]||
-      (entry.subject===subject_code ? "" : entry.subject);
-  return entry;
-}
-
-function selectTimetableAlias(code) {
-  timetableAliasCode.value=code;
-  const picker=makeTimetableSubjectPicker(teacherProfileState.subjectAliases[code]||"",0);
-  const select=picker.querySelector('[data-field="subject"]');
-  select.id="timetable-alias-subject";
-  select.setAttribute("aria-label","Nama penuh subjek");
-  picker.querySelector('[data-field="subject_custom"]').setAttribute("aria-label","Nama penuh subjek lain");
-  timetableAliasPicker.replaceChildren(picker);
-}
-
-function renderTimetableAliasList() {
-  timetableAliasList.replaceChildren();
-  for(const [code,name] of Object.entries(teacherProfileState.subjectAliases).sort()){
-    const item=document.createElement("li");
-    const button=document.createElement("button");
-    button.type="button";
-    button.className="secondary";
-    button.textContent=code+" · "+name;
-    button.addEventListener("click",()=>{
-      selectTimetableAlias(code);
-      document.getElementById("timetable-alias-subject").focus();
-    });
-    item.append(button);
-    timetableAliasList.append(item);
-  }
-  timetableAliasList.hidden=!timetableAliasList.children.length;
-}
-
-timetableAliasSave.addEventListener("click",async()=>{
-  if(!teacherProfileState.loaded || timetableAliasSave.disabled)return;
-  const code=timetableAliasCode.value.trim().toUpperCase();
-  const select=document.getElementById("timetable-alias-subject");
-  const subject=select.value===timetableOtherSubject
-    ? timetableAliasPicker.querySelector('[data-field="subject_custom"]').value.trim()
-    : select.value;
-  if(!/^[A-Z][A-Z0-9]{1,7}$/.test(code) || !subject){
-    timetableAliasStatus.textContent="Isi singkatan dan nama penuh subjek.";
-    return;
-  }
-  const aliases={...teacherProfileState.subjectAliases,[code]:subject};
-  timetableAliasSave.disabled=true;
-  timetableAliasStatus.textContent="Menyimpan padanan…";
-  try{
-    const result=await teacherApi("/api/web/teacher/timetable/subject-aliases","PUT",{
-      aliases,version:teacherProfileState.profileVersion,
-    });
-    if(!result.saved || typeof result.version!=="string")throw new Error("Pengesahan simpan tidak lengkap.");
-    teacherProfileState.profileVersion=result.version;
-    teacherProfileState.timetableVersion=result.version;
-    teacherProfileState.subjectAliases=aliases;
-    const expand=entry=>entry.subject.toUpperCase()===code ? {...entry,subject} : entry;
-    renderTeacherTimetable(timetableValueRows().map(expand));
-    teacherProfileState.savedTimetable=JSON.stringify(JSON.parse(teacherProfileState.savedTimetable).map(expand));
-    if(timetableReadRows.length)renderTimetableReadReport(true);
-    updateTimetableReaderButtons();
-    renderTimetableAliasList();
-    timetableAliasStatus.textContent=code+" dipadankan dengan "+subject+".";
-  }catch(err){
-    timetableAliasStatus.textContent=err.message;
-  }finally{
-    timetableAliasSave.disabled=false;
-  }
-});
 
 function sameTimetablePeriod(first,second) {
   return first.day===second.day && first.start===second.start && first.end===second.end
@@ -1127,102 +1025,184 @@ function renderUnclearTimetableCells(result) {
     : "";
 }
 
-function renderTimetableReadReport(keepSelection=false) {
-  const current=timetableValueRows();
-  const checked=new Set([...timetableReaderReportRows.querySelectorAll("input:checked")].map(input=>input.value));
+function timetableReviewGroup(row, index, field) {
+  const value=field==="subject" ? row.subject_code || row.subject : row.class_name;
+  return value ? value.toUpperCase() : "?" + index;
+}
+
+function reviewField(label) {
+  const field=document.createElement("fieldset");
+  const legend=document.createElement("legend");
+  legend.textContent=label;
+  field.append(legend);
+  timetableReaderFields.append(field);
+  return field;
+}
+
+function renderTimetableMappings(field) {
+  const isSubject=field==="subject";
+  const mappings=isSubject ? timetableReview.subjects : timetableReview.classes;
+  const groups=new Map();
+  timetableReview.rows.forEach((row,index)=>{
+    const key=timetableReviewGroup(row,index,field);
+    if(!groups.has(key))groups.set(key,{row,index,count:0});
+    groups.get(key).count++;
+  });
+  for(const [key,{row,index,count}] of groups){
+    const unknown=key.startsWith("?");
+    const label=unknown ? row.day+" · "+(row.start || "waktu "+(index+1))
+      : isSubject ? row.subject_code || row.subject : row.class_name;
+    const group=reviewField(label+" · "+count+" waktu");
+    group.dataset.key=key;
+    if(isSubject){
+      const suggested=row.subject_code===row.subject ? "" : row.subject;
+      group.append(makeTimetableSubjectPicker(mappings.get(key) ?? suggested,index));
+      group.querySelector("select").setAttribute("aria-label","Subjek "+label);
+    }else{
+      const input=document.createElement("input");
+      input.type="text";
+      input.maxLength=40;
+      input.placeholder="Nama penuh kelas";
+      input.setAttribute("aria-label","Nama penuh kelas "+label);
+      const saved=Object.hasOwn(teacherProfileState.classAliases,key) ? teacherProfileState.classAliases[key] : "";
+      input.value=mappings.get(key) ?? (saved || row.class_name);
+      group.append(input);
+    }
+  }
+}
+
+function renderTimetableTimes() {
+  timetableReview.rows.forEach((row,index)=>{
+    const subject=timetableReview.subjects.get(timetableReviewGroup(row,index,"subject"));
+    const className=timetableReview.classes.get(timetableReviewGroup(row,index,"class_name"));
+    const group=reviewField((index+1)+". "+className+" · "+subject);
+    const times=timetableReview.times[index] || row;
+    const fields=document.createElement("div");
+    fields.className="timetable-time-fields";
+    const controls=[
+      ["Hari",makeTimetableSelect(teacherDays,times.day,"day",null)],
+      ["Mula",makeTimetableInput("time","start",times.start)],
+      ["Tamat",makeTimetableInput("time","end",times.end)],
+    ];
+    for(const [label,control] of controls){
+      const field=document.createElement("label");
+      field.textContent=label;
+      control.setAttribute("aria-label",label+" waktu "+(index+1));
+      field.append(control);
+      fields.append(field);
+    }
+    group.append(fields);
+    const skip=document.createElement("input");
+    skip.type="checkbox";
+    skip.dataset.field="skip";
+    skip.checked=Boolean(times.skip);
+    const label=document.createElement("label");
+    label.append(skip," Abaikan waktu ini");
+    group.append(label);
+  });
+}
+
+function renderTimetableReadReport() {
+  const current=JSON.parse(teacherProfileState.savedTimetable);
+  timetableReview.base=teacherProfileState.savedTimetable;
+  timetableReview.choices=[];
   timetableReaderReportRows.replaceChildren();
-  const missingCodes=new Set();
-  let hasOverlaps=false;
-  for(const [index,detected] of timetableReadRows.entries()){
-    const row=resolvedTimetableReadRow(detected);
-    const needsAlias=Boolean(detected.subject_code && !row.subject);
-    if(needsAlias)missingCodes.add(detected.subject_code);
-    const duplicate=current.some(period=>sameTimetablePeriod(period,row));
-    const overlaps=current.some(period=>overlappingTimetablePeriod(period,row));
-    hasOverlaps ||= overlaps;
-    const messages=[];
-    if(duplicate)messages.push("Sudah ada");
-    else if(overlaps)messages.push("Bertindih dengan jadual sedia ada");
-    if(needsAlias)messages.push("Padankan singkatan");
-    else if(!row.class_name || !row.subject)messages.push("Lengkapkan kelas atau subjek");
-    const tr=document.createElement("tr");
+  for(const [index,raw] of timetableReview.rows.entries()){
+    const {day,start,end,skip}=timetableReview.times[index];
+    if(skip)continue;
+    const row={day,start,end,
+      class_name:timetableReview.classes.get(timetableReviewGroup(raw,index,"class_name")),
+      subject:timetableReview.subjects.get(timetableReviewGroup(raw,index,"subject"))};
+    const overlaps=current.map((period,i)=>overlappingTimetablePeriod(period,row) ? i : -1).filter(i=>i>=0);
+    const duplicate=overlaps.some(i=>sameTimetablePeriod(current[i],row));
+    const canUpdate=overlaps.length===1 && !duplicate;
+    const previous=timetableReview.choices.find(choice=>sameTimetablePeriod(choice.row,row));
     const input=document.createElement("input");
     input.type="checkbox";
-    input.value=String(index);
-    input.disabled=needsAlias;
-    input.checked=!needsAlias && (keepSelection ? checked.has(input.value) : !overlaps);
-    input.setAttribute("aria-label","Pilih "+row.day+" "+row.start+" hingga "+row.end+
-      (row.class_name ? ", "+row.class_name : "")+(row.subject ? ", "+row.subject : ""));
-    const checkCell=document.createElement("td");
-    checkCell.append(input);
-    tr.append(checkCell);
-    const values=[row.day+" "+row.start+"–"+row.end,row.class_name||"Belum jelas",
-                  row.subject||detected.subject_code||"Belum jelas",messages.join(". ")||"—"];
-    for(const [field,value] of values.entries()){
+    input.checked=!previous && !overlaps.length &&
+      !timetableReview.choices.some(choice=>choice.input.checked && overlappingTimetablePeriod(choice.row,row));
+    input.disabled=Boolean(previous || (overlaps.length && !canUpdate));
+    input.setAttribute("aria-label",(canUpdate ? "Kemas kini " : "Pilih ")+day+" "+start+" "+row.subject);
+    const note=previous || duplicate ? "Pendua"
+      : canUpdate ? "Tanda untuk kemas kini "+current[overlaps[0]].start+"–"+current[overlaps[0]].end+
+        " · "+current[overlaps[0]].class_name+" · "+current[overlaps[0]].subject
+      : overlaps.length ? "Bertindih dengan beberapa waktu sedia ada" : "Waktu baharu";
+    const tr=document.createElement("tr");
+    const cell=document.createElement("td");
+    cell.append(input);
+    tr.append(cell);
+    for(const value of [day+" "+start+"–"+end,row.class_name,row.subject,note]){
       const td=document.createElement("td");
       td.textContent=value;
-      if(field===2 && detected.subject_code){
-        if(needsAlias){
-          const button=document.createElement("button");
-          button.type="button";
-          button.className="secondary timetable-alias-link";
-          button.textContent=detected.subject_code;
-          button.setAttribute("aria-label","Padankan singkatan "+detected.subject_code);
-          button.addEventListener("click",()=>{
-            timetableSubjectAliases.open=true;
-            selectTimetableAlias(detected.subject_code);
-            timetableAliasStatus.textContent="";
-            document.getElementById("timetable-alias-subject").focus();
-          });
-          td.replaceChildren(button);
-        }else{
-          const code=document.createElement("small");
-          code.className="timetable-subject-code";
-          code.textContent=detected.subject_code;
-          td.append(code);
-        }
-      }
       tr.append(td);
     }
     timetableReaderReportRows.append(tr);
+    timetableReview.choices.push({row,input,replace:canUpdate ? overlaps[0] : -1});
   }
-  timetableReaderReviewNote.textContent=timetableReadPartial
-    ? "Bacaan belum lengkap. Cikgu boleh tambah waktu yang dipilih. Penggantian jadual tersedia apabila bacaan lengkap."
-    : "Pilih waktu untuk ditambah. Semak dan simpan perubahan dalam borang Jadual Sedia Ada.";
-  if(hasOverlaps)
-    timetableReaderReviewNote.textContent+=" Waktu bertindih atau sudah ada tidak dipilih secara automatik.";
-  if(missingCodes.size){
-    timetableReaderReviewNote.textContent+=" Padankan "+[...missingCodes].join(", ")+" di bahagian Singkatan Subjek.";
-    if(!timetableReadPartial)
-      timetableReaderReviewNote.textContent+=" Pilihan ganti tersedia selepas semua singkatan dipadankan.";
-    timetableSubjectAliases.open=true;
-    if(!keepSelection || !missingCodes.has(timetableAliasCode.value))
-      selectTimetableAlias(missingCodes.values().next().value);
-  }
-  timetableReaderReview.hidden=false;
-  if(!keepSelection)document.getElementById("timetable-reader-review-title").focus();
 }
 
-timetableReaderReportRows.addEventListener("change",updateTimetableReaderButtons);
+function showTimetableStep(step) {
+  const titles=["Sahkan Subjek","Sahkan Kelas","Sahkan Masa","Semak dan Simpan"];
+  const instructions=[
+    "Pilih nama subjek sekali bagi setiap singkatan atau nama yang dikesan.",
+    "Taip nama penuh bagi setiap kod kelas.",
+    "Semak hari, masa mula dan masa tamat. Tandakan Abaikan waktu ini jika perlu.",
+    "Pilih waktu yang hendak ditambah atau dikemas kini.",
+  ];
+  timetableReview.step=step;
+  timetableReaderFields.replaceChildren();
+  timetableReaderPreview.hidden=step!==3;
+  timetableReaderBack.hidden=step===0;
+  timetableReaderTitle.textContent=(step+1)+"/4 · "+titles[step];
+  timetableReaderNote.textContent=instructions[step];
+  timetableReaderNext.textContent=step===3 ? "Simpan Waktu Dipilih" : titles[step];
+  timetableReaderFeedback.textContent="";
+  if(step<2)renderTimetableMappings(step===0 ? "subject" : "class_name");
+  else if(step===2)renderTimetableTimes();
+  else renderTimetableReadReport();
+  timetableReaderReview.hidden=false;
+  timetableReaderTitle.focus();
+}
+
+function rememberTimetableStep() {
+  const {step,subjects,classes}=timetableReview;
+  const groups=[...timetableReaderFields.querySelectorAll("fieldset")];
+  if(step===2){
+    timetableReview.times=groups.map(group=>{
+      const value=field=>group.querySelector('[data-field="'+field+'"]').value;
+      return {day:value("day"),start:value("start"),end:value("end"),
+        skip:group.querySelector('[data-field="skip"]').checked};
+    });
+    return;
+  }
+  for(const group of groups){
+    if(step===0){
+      const select=group.querySelector("select");
+      subjects.set(group.dataset.key,select.value===timetableOtherSubject
+        ? group.querySelector('[data-field="subject_custom"]').value.trim() : select.value);
+    }else if(step===1){
+      classes.set(group.dataset.key,group.querySelector("input").value.trim());
+    }
+  }
+}
 
 timetableReaderFile.addEventListener("change",()=>{
   timetableReadRequest?.abort();
-  timetableReadRows=[];
-  timetableReadPartial=false;
+  timetableReview=null;
   timetableReaderStatus.textContent="";
   updateTimetableReaderButtons();
 });
 
 timetableReaderStart.addEventListener("click",async()=>{
   const file=timetableReaderFile.files[0];
-  if(!teacherProfileState.loaded || timetableReader.hidden || !file || timetableReadRequest)return;
+  if(!teacherProfileState.loaded || timetableReader.hidden || !file || timetableReadRequest || timetableImportSaving)return;
   if(file.size===0 || file.size>8*1024*1024){
     timetableReaderStatus.textContent="Pilih satu fail jadual berukuran maksimum 8 MB.";
     return;
   }
   const controller=new AbortController();
   timetableReadRequest=controller;
-  timetableReadRows=[];
+  timetableReview=null;
   updateTimetableReaderButtons();
   timetableReaderStatus.textContent="Sedang membaca jadual waktu…";
   const timeout=setTimeout(()=>controller.abort("timeout"),25000);
@@ -1237,16 +1217,14 @@ timetableReaderStart.addEventListener("click",async()=>{
     if(!response.ok || !Array.isArray(result.entries) || !result.entries.length)
       throw new Error(result.error || "Jadual belum dapat dibaca. Cuba lagi.");
     if(controller.signal.aborted || timetableReader.hidden)return;
-    timetableReadRows=result.entries;
-    timetableReadPartial=Boolean(result.uncertain || result.unreadable_pages ||
-      result.entries.some(row=>!row.class_name || !row.subject));
+    timetableReview={rows:result.entries,subjects:new Map(),classes:new Map(),times:[]};
     const summary=[result.entries.length+" waktu dikesan."];
     if(result.uncertain)summary.push(result.uncertain+" petak kurang jelas.");
     if(result.unreadable_pages)summary.push(result.unreadable_pages+" halaman kurang jelas.");
     if(result.uncertain || result.unreadable_pages)summary.push("Semak jadual asal dan tambah waktu yang tertinggal.");
     timetableReaderStatus.textContent=summary.join(" ");
-    renderTimetableReadReport();
     renderUnclearTimetableCells(result);
+    showTimetableStep(0);
   }catch(err){
     if(controller.signal.reason==="timeout"){
       timetableReaderStatus.textContent="Bacaan mengambil masa terlalu lama. Cuba satu halaman atau gambar yang lebih kecil.";
@@ -1260,69 +1238,125 @@ timetableReaderStart.addEventListener("click",async()=>{
   }
 });
 
-function applyReadTimetable(append) {
-  const selected=append ? selectedTimetableReadRows() : timetableReadRows.map(resolvedTimetableReadRow);
-  if(!teacherProfileState.loaded || !selected.length || (!append && timetableReaderReplace.disabled))return;
-  const current=timetableValueRows();
-  const added=append ? selected.filter(row=>!current.some(period=>sameTimetablePeriod(period,row))) : selected;
-  if(append && !added.length){
-    timetableReaderStatus.textContent="Semua waktu yang dikesan sudah ada dalam jadual.";
+async function saveTimetableReview() {
+  if(profileSaveButton.disabled || timetableSaveButton.disabled)return;
+  const current=JSON.parse(teacherProfileState.savedTimetable);
+  if(JSON.stringify(timetableValueRows())!==teacherProfileState.savedTimetable){
+    timetableReaderFeedback.textContent="Simpan suntingan dalam Jadual Sedia Ada dahulu, kemudian semak pilihan import.";
     return;
   }
-  if(append && current.length+added.length>80){
-    timetableReaderStatus.textContent="Had jadual ialah 80 waktu. Buang waktu yang tidak diperlukan dan cuba lagi.";
+  if(timetableReview.base!==teacherProfileState.savedTimetable){
+    renderTimetableReadReport();
+    timetableReaderFeedback.textContent="Jadual sedia ada telah berubah. Semak semula pilihan waktu.";
     return;
   }
-  if(append && added.some(row=>current.some(period=>overlappingTimetablePeriod(period,row))) &&
-     !window.confirm("Ada waktu dipilih yang bertindih dengan jadual dalam borang. Teruskan tambah?"))
+  const selected=timetableReview.choices.filter(choice=>choice.input.checked);
+  if(!selected.length){
+    timetableReaderFeedback.textContent="Pilih sekurang-kurangnya satu waktu.";
     return;
-  if(!append && current.length && !window.confirm(
-    "Gantikan "+current.length+" waktu dalam borang dengan "+added.length+
-    " waktu yang dikesan? Perubahan disimpan hanya apabila cikgu tekan Simpan Jadual Waktu."))
+  }
+  const replacements=selected.map(choice=>choice.replace).filter(index=>index>=0);
+  const entries=current.filter((_,index)=>!replacements.includes(index)).concat(selected.map(choice=>choice.row));
+  if(new Set(replacements).size!==replacements.length ||
+     selected.some(({row})=>entries.some(other=>other!==row && overlappingTimetablePeriod(row,other)))){
+    timetableReaderFeedback.textContent="Waktu yang dipilih bertindih. Semak pilihan atau kembali untuk betulkan masa.";
     return;
-  const rows=append ? [...current,...added] : added;
-  renderTeacherTimetable(rows);
-  importedTimetable=true;
-  const newClasses=missingTimetableClasses();
-  timetableReaderClassActions.hidden=newClasses.length===0;
-  timetableReadRows=[];
-  timetableReadPartial=false;
-  timetableReaderFile.value="";
+  }
+  if(entries.length>80){
+    timetableReaderFeedback.textContent="Maksimum 80 waktu dalam jadual.";
+    return;
+  }
+  if(replacements.length && !window.confirm("Kemas kini "+replacements.length+" waktu sedia ada dan simpan jadual?"))return;
+  const subjectAliases=Object.fromEntries(timetableReview.rows
+    .filter(row=>row.subject_code)
+    .map(row=>[row.subject_code,timetableReview.subjects.get(row.subject_code)]));
+  const classAliases=Object.fromEntries([...timetableReview.classes].filter(([key])=>!key.startsWith("?")));
+  timetableImportSaving=true;
+  timetableReaderFile.disabled=true;
+  timetableAddButton.disabled=true;
+  profileSaveButton.disabled=true;
+  timetableSaveButton.disabled=true;
+  const controls=[...timetableBody.querySelectorAll("input, select, button")].filter(control=>!control.disabled);
+  controls.forEach(control=>{control.disabled=true;});
   updateTimetableReaderButtons();
-  timetableReaderStatus.textContent=newClasses.length
-    ? "Kelas baharu dikesan: "+newClasses.join(", ")+". Tambah ke profil atau pilih kelas sedia ada."
-    : "Semak hari, masa, kelas dan subjek, kemudian tekan Simpan Jadual Waktu.";
-  timetableMessage.textContent="Semak perubahan, kemudian tekan Simpan Jadual Waktu.";
-  timetableBody.querySelectorAll("tr")[append ? current.length : 0]?.querySelector("select")?.focus();
-}
-
-function missingTimetableClasses() {
-  if(!importedTimetable)return [];
-  const saved=new Set(teacherProfileState.classNames.map(name=>name.toLowerCase()));
-  return [...new Set(timetableValueRows().map(row=>row.class_name)
-    .filter(name=>name && !saved.has(name.toLowerCase())))];
-}
-
-timetableReaderClasses.addEventListener("click",()=>{
-  const field=document.getElementById("profile-classes");
-  const classes=new Map(teacherClassLines().map(name=>[name.toLowerCase(),name]));
-  for(const name of missingTimetableClasses()){
-    if(!classes.has(name.toLowerCase()))classes.set(name.toLowerCase(),name);
+  timetableReaderFeedback.textContent="Menyimpan jadual…";
+  try{
+    const result=await teacherApi("/api/web/teacher/timetable/import","PUT",{
+      changes:selected.map(({row,replace})=>({entry:row,replace:current[replace]||null})),
+      subject_aliases:subjectAliases,class_aliases:classAliases,version:teacherProfileState.timetableVersion,
+    });
+    if(!result.saved || typeof result.version!=="string")throw new Error("Pengesahan simpan tidak lengkap.");
+    teacherProfileState.profileVersion=result.version;
+    teacherProfileState.timetableVersion=result.version;
+    Object.assign(teacherProfileState.classAliases,classAliases);
+    const classes=new Map(teacherProfileState.classNames.map(name=>[name.toLowerCase(),name]));
+    const draftClasses=new Map(teacherClassLines().map(name=>[name.toLowerCase(),name]));
+    const savedProfile=JSON.parse(teacherProfileState.savedProfile);
+    for(const {class_name:name} of entries){
+      if(!classes.has(name.toLowerCase())){
+        classes.set(name.toLowerCase(),name);
+        draftClasses.set(name.toLowerCase(),name);
+      }
+    }
+    teacherProfileState.classNames=[...classes.values()];
+    savedProfile.class_names=teacherProfileState.classNames;
+    teacherProfileState.savedProfile=JSON.stringify(savedProfile);
+    document.getElementById("profile-classes").value=[...draftClasses.values()].join("\n");
+    renderTeacherTimetable(entries);
+    teacherProfileState.savedTimetable=JSON.stringify(timetableValueRows());
+    teacherProfileState.savedPeriods=entries.length;
+    renderProfileReadiness();
+    if(typeof loadTeacherClasses==="function")loadTeacherClasses();
+    timetableReview=null;
+    timetableReaderFile.value="";
+    const message=selected.length+" waktu dipilih berjaya disimpan.";
+    timetableMessage.textContent=message;
+    timetableReaderStatus.textContent=message;
+  }catch(err){
+    timetableReaderFeedback.textContent=err.message;
+  }finally{
+    timetableImportSaving=false;
+    controls.forEach(control=>{control.disabled=false;});
+    timetableReaderFile.disabled=!teacherProfileState.loaded;
+    timetableAddButton.disabled=!teacherProfileState.loaded;
+    profileSaveButton.disabled=!teacherProfileState.loaded;
+    timetableSaveButton.disabled=!teacherProfileState.loaded;
+    updateTimetableReaderButtons();
   }
-  if(classes.size>25){
-    timetableReaderStatus.textContent="Senarai kelas melebihi 25. Semak pilihan kelas dalam jadual.";
+}
+
+timetableReaderNext.addEventListener("click",()=>{
+  if(!timetableReview || timetableImportSaving)return;
+  const {step,subjects,classes}=timetableReview;
+  if(step===3){
+    void saveTimetableReview();
     return;
   }
-  field.value=[...classes.values()].join("\n");
-  profileMessage.textContent="Semak Senarai Kelas dan tekan Simpan Maklumat Guru.";
-  field.focus();
+  rememberTimetableStep();
+  if(step<2 && [...(step===0 ? subjects : classes).values()].some(value=>!value)){
+    timetableReaderFeedback.textContent=step===0 ? "Pilih nama bagi setiap subjek." : "Isi nama penuh bagi setiap kelas.";
+    return;
+  }
+  if(step===2 && timetableReview.times.some(row=>!row.skip && (!row.start || !row.end || row.start>=row.end))){
+    timetableReaderFeedback.textContent="Betulkan masa mula dan tamat atau abaikan waktu berkenaan.";
+    return;
+  }
+  if(step===2 && timetableReview.times.every(row=>row.skip)){
+    timetableReaderFeedback.textContent="Kekalkan sekurang-kurangnya satu waktu untuk disemak.";
+    return;
+  }
+  showTimetableStep(step+1);
 });
 
-timetableReaderAppend.addEventListener("click",()=>applyReadTimetable(true));
-timetableReaderReplace.addEventListener("click",()=>applyReadTimetable(false));
-document.getElementById("timetable-reader-dismiss").addEventListener("click",()=>{
-  timetableReadRows=[];
-  timetableReadPartial=false;
+timetableReaderBack.addEventListener("click",()=>{
+  if(!timetableReview || timetableImportSaving)return;
+  rememberTimetableStep();
+  showTimetableStep(timetableReview.step-1);
+});
+
+timetableReaderDismiss.addEventListener("click",()=>{
+  if(timetableImportSaving)return;
+  timetableReview=null;
   timetableReaderStatus.textContent="";
   updateTimetableReaderButtons();
   timetableReaderStart.focus();

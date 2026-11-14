@@ -95,6 +95,26 @@ class SharedStorageTests(unittest.TestCase):
         self.assertEqual(len(self.memory.writes),1)
         self.assertEqual(self.memory.writes[0][0],"teacher_profiles")
 
+    def test_guided_import_writes_aliases_classes_and_selected_slots_together(self):
+        args = {"changes": [{"entry": {**SLOT2, "class_name": "6 Ceria", "subject": "MT"},
+                             "replace": None}], "version": STAMP,
+                "subject_aliases": {"MT": "Matematik"}, "class_aliases": {"6C": "6 Ceria"}}
+        version = store.save_schedule("https://test.supabase.co", "unit-test-only", 123, args, guided=True)
+        self.assertEqual(len(self.memory.writes), 1)
+        self.assertEqual(self.memory.profile["timetable_subject_aliases"], {"MT": "Matematik"})
+        self.assertEqual(self.memory.profile["timetable_class_aliases"], {"6C": "6 Ceria"})
+        classes = self.memory.profile["class_profiles"]
+        self.assertEqual(classes[0], profile()["class_profiles"][0])
+        self.assertEqual(classes[2]["timetable"], [{**SLOT2, "subject": "Matematik"}])
+        with self.assertRaises(store.ProfileConflict):
+            store.save_schedule("https://test.supabase.co", "unit-test-only", 123, args, guided=True)
+        args["version"] = version
+        args["changes"][0]["replace"] = {**SLOT, "class_name": "4 Bestari"}
+        args["changes"][0]["entry"] = {**SLOT, "class_name": "6 Ceria", "subject": "Sains"}
+        store.save_schedule("https://test.supabase.co", "unit-test-only", 123, args, guided=True)
+        self.assertEqual(self.memory.profile["class_profiles"][0]["timetable"], [])
+        self.assertEqual(len(self.memory.profile["class_profiles"][2]["timetable"]), 2)
+
     def test_telegram_edits_then_web_reloads_actual_current_data(self):
         self.memory.profile["display_name"]="Cikgu Telegram"
         self.memory.profile["class_profiles"][0]["timetable"].append(SLOT2)

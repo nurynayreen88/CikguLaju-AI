@@ -146,7 +146,7 @@ def normalize_timetable_subject(subject, aliases):
     if not isinstance(subject, str):
         return subject
     code = subject.strip().upper()
-    return STANDARD_SUBJECT_CODES.get(code, aliases.get(code, subject))
+    return aliases.get(code, STANDARD_SUBJECT_CODES.get(code, subject))
 
 
 def clean_subject_aliases(aliases):
@@ -155,8 +155,7 @@ def clean_subject_aliases(aliases):
     result = {}
     for raw_code, raw_subject in aliases.items():
         code = _validated_name(raw_code, 8, "Singkatan subjek", required=True).upper()
-        if (not SUBJECT_CODE.fullmatch(code) or code in STANDARD_SUBJECT_CODES
-                or code in result):
+        if (not SUBJECT_CODE.fullmatch(code) or code in result):
             raise ProfileValidation("Singkatan subjek tidak sah atau berulang")
         subject = _validated_name(raw_subject, 60, "Nama penuh subjek", required=True)
         if not SUBJECT.fullmatch(subject) or SUBJECT_CODE.fullmatch(subject):
@@ -288,7 +287,7 @@ def _class_records(record):
 def _profile_record(url, key, uid, *, opener=None):
     return _get_one(
         url, key, "teacher_profiles", uid,
-        "telegram_user_id,display_name,school_name,state_name,district_name,school_code,avatar_code,class_names,class_profiles,timetable_subject_aliases,updated_at",
+        "telegram_user_id,display_name,school_name,state_name,district_name,school_code,avatar_code,class_names,class_profiles,timetable_subject_aliases,timetable_class_aliases,updated_at",
         opener=opener,
     )
 
@@ -312,7 +311,8 @@ def get_profile(url, key, uid, *, opener=None):
     if record is None:
         return {"display_name": "Cikgu", "school_name": "",
                 "state_name": "", "district_name": "", "school_code": "",
-                "avatar_code": "initials", "class_names": [], "timetable_subject_aliases": {}, "version": ""}
+                "avatar_code": "initials", "class_names": [], "timetable_subject_aliases": {},
+                "timetable_class_aliases": {}, "version": ""}
     classes = [r["name"] for r in _class_records(record)]
     return {
         "display_name": record.get("display_name") or "Cikgu",
@@ -323,6 +323,7 @@ def get_profile(url, key, uid, *, opener=None):
         "avatar_code": record.get("avatar_code") if record.get("avatar_code") in AVATAR_CODES else "initials",
         "class_names": classes,
         "timetable_subject_aliases": record.get("timetable_subject_aliases") or {},
+        "timetable_class_aliases": record.get("timetable_class_aliases") or {},
         "version": record.get("updated_at") or "",
     }
 
@@ -472,24 +473,97 @@ def save_subject_aliases(url, key, uid, form, *, opener=None):
                  {"timetable_subject_aliases": aliases}, version, opener=opener)
 
 
-def save_schedule(url, key, uid, form, *, opener=None):
-    """Write same Telegram class_profiles timetable, never a second writable copy."""
+def clean_class_aliases(aliases):
+    if not isinstance(aliases, dict) or len(aliases) > 80:
+        raise ProfileValidation("Maksimum 80 padanan kelas")
+    result = {}
+    for raw_code, raw_name in aliases.items():
+        code = _validated_name(raw_code, 40, "Kod kelas", required=True).upper()
+        name = _validated_name(raw_name, 40, "Nama penuh kelas", required=True)
+        if not CLASS_PATTERN.fullmatch(code) or not CLASS_PATTERN.fullmatch(name) or code in result:
+            raise ProfileValidation("Nama atau kod kelas tidak sah")
+        result[code] = name
+    return result
+
+
+def _import_schedule(url, key, uid, form, record, records, classes, *, opener=None):
+    if set(form) != {"changes", "version", "subject_aliases", "class_aliases"}:
+        raise ProfileValidation("Maklumat import jadual tidak lengkap")
+    aliases = record.get("timetable_subject_aliases") or {}
+    subject_aliases = clean_subject_aliases({**aliases, **clean_subject_aliases(form["subject_aliases"])})
+    class_aliases = clean_class_aliases({
+        **(record.get("timetable_class_aliases") or {}), **clean_class_aliases(form["class_aliases"]),
+    })
+    changes = form["changes"]
+    if not isinstance(changes, list) or not 0 < len(changes) <= 80:
+        raise ProfileValidation("Pilih antara 1 hingga 80 waktu")
+    current = _flatten_timetable(records)
+    if record and not record.get("class_profiles"):
+        legacy = _get_one(url, key, "teacher_timetables", uid,
+                          "telegram_user_id,entries,updated_at", opener=opener)
+        current = (legacy.get("entries") or []) if legacy else []
+    visible = [{**row, "subject": normalize_timetable_subject(row.get("subject"), aliases)}
+               for row in current]
+    added, replaced = [], set()
+    known = {name.casefold() for name in classes}
+    for change in changes:
+        if (not isinstance(change, dict) or set(change) != {"entry", "replace"}
+                or not isinstance(change["entry"], dict)):
+            raise ProfileValidation("Pilihan import tidak sah")
+        entry, prior = change["entry"], change["replace"]
+        if prior is not None:
+            try:
+                index = visible.index(prior)
+            except ValueError:
+                raise ProfileConflict("Waktu sedia ada telah berubah") from None
+            if index in replaced:
+                raise ProfileValidation("Waktu sedia ada hanya boleh dikemas kini sekali")
+            replaced.add(index)
+        name = _validated_name(entry.get("class_name"), 40, "Nama kelas", required=True)
+        if not CLASS_PATTERN.fullmatch(name):
+            raise ProfileValidation("Nama kelas tidak sah")
+        if name.casefold() not in known:
+            records.append({"name": name, "students": None, "timetable": []})
+            classes.append(name)
+            known.add(name.casefold())
+        selected, _ = clean_schedule({"entries": [entry], "version": form["version"]}, classes)
+        new_row = selected[0]
+        if prior is not None and (
+                new_row["day"] != prior["day"] or not
+                (new_row["start"] < prior["end"] and prior["start"] < new_row["end"])):
+            raise ProfileValidation("Waktu kemas kini mesti bertindih dengan waktu asal")
+        added.append({**new_row, "subject": normalize_timetable_subject(new_row["subject"], subject_aliases)})
+    if len(classes) > 25:
+        raise ProfileValidation("Maksimum 25 kelas dalam profil")
+    retained = [row for index, row in enumerate(current) if index not in replaced]
+    return {"entries": retained + added, "version": form["version"]}, {
+        "timetable_subject_aliases": subject_aliases, "timetable_class_aliases": class_aliases,
+    }
+
+
+def save_schedule(url, key, uid, form, *, opener=None, guided=False):
+    """Write the shared Telegram and Web timetable in one versioned update."""
     record = _profile_record(url, key, uid, opener=opener)
-    if not record:
+    if not record and not guided:
         raise ProfileValidation("Simpan maklumat kelas terlebih dahulu")
-    records = _class_records(record)
-    classes = [r["name"] for r in records]
-    entries, version = clean_schedule(form, classes)
+    record = record or {}
+    version = _version(form.get("version"))
     if version != (record.get("updated_at") or ""):
         raise ProfileConflict("Maklumat telah dikemas kini. Muat semula")
+    records = _class_records(record)
+    classes = [r["name"] for r in records]
     aliases = record.get("timetable_subject_aliases") or {}
+    values = {} if record else {"display_name": "Cikgu"}
+    if guided:
+        form, mappings = _import_schedule(url, key, uid, form, record, records, classes, opener=opener)
+        values.update(mappings)
+    entries, _ = clean_schedule(form, classes)
     byname = {r["name"].casefold(): [] for r in records}
     for entry in entries:
         byname[entry["class_name"].casefold()].append({
-            "day": entry["day"], "start": entry["start"],
-            "end": entry["end"], "subject": normalize_timetable_subject(entry["subject"], aliases),
+            "day": entry["day"], "start": entry["start"], "end": entry["end"],
+            "subject": entry["subject"] if guided else normalize_timetable_subject(entry["subject"], aliases),
         })
     updated = [{**r, "timetable": byname[r["name"].casefold()]} for r in records]
-    return _save(url, key, "teacher_profiles", uid,
-                 {"class_profiles": updated, "class_names": classes},
-                 version, opener=opener)
+    values.update(class_profiles=updated, class_names=classes)
+    return _save(url, key, "teacher_profiles", uid, values, version, opener=opener)

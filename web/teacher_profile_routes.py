@@ -9,7 +9,7 @@ from web_v1_telegram_auth_routes import COOKIE, _config, _lookup
 from web_v1_sessions import verify_session_ticket
 from web.teacher_profile_store import (
     ProfileConflict, ProfileUnavailable, ProfileValidation,
-    STANDARD_SUBJECT_CODES, SUBJECT_CODE, get_profile, get_schedule,
+    SUBJECT_CODE, get_profile, get_schedule,
     normalize_timetable_subject, save_profile, save_schedule, save_subject_aliases,
 )
 
@@ -43,11 +43,11 @@ def _auth(*, return_account=False):
     return conf, account if return_account else uid, None
 
 
-def _body():
+def _body(*, limit=17000):
     # Same-origin guard on cookie-authenticated writes; require browser Origin.
     if request.headers.get("Origin") != "https://" + request.host:
         raise ProfileValidation("Asal permintaan tidak sah")
-    if not request.is_json or request.content_length is None or request.content_length > 17000:
+    if not request.is_json or request.content_length is None or request.content_length > limit:
         raise ProfileValidation("Format atau saiz maklumat tidak sah")
     body = request.get_json(silent=True)
     if not isinstance(body, dict):
@@ -163,10 +163,10 @@ def teacher_timetable_read():
                                          profile["class_names"])
         aliases = profile.get("timetable_subject_aliases") or {}
         for row in result["entries"]:
-            printed = row["subject"]
-            row["subject"] = normalize_timetable_subject(printed, aliases)
-            if SUBJECT_CODE.fullmatch(printed) and printed not in STANDARD_SUBJECT_CODES:
+            printed = row.get("subject_code") or row["subject"]
+            if SUBJECT_CODE.fullmatch(printed):
                 row["subject_code"] = printed
+            row["subject"] = normalize_timetable_subject(printed, aliases)
         return jsonify(result)
     except UnreadableTimetable as exc:
         return jsonify(error=str(exc)), 422
@@ -188,6 +188,23 @@ def teacher_timetable_subject_aliases_put():
     try:
         version = save_subject_aliases(conf["supabase_url"], conf["supabase_key"],
                                        account["telegram_user_id"], _body())
+    except (ProfileValidation, ProfileUnavailable, ProfileConflict) as exc:
+        return _failure(exc)
+    return jsonify(saved=True, version=version)
+
+
+@bp.put("/api/web/teacher/timetable/import")
+def teacher_timetable_import():
+    conf, account, err = _auth(return_account=True)
+    if err is not None:
+        return err
+    if not _can_read_timetable(account):
+        return jsonify(error="Auto Baca Jadual Waktu tersedia untuk pelanggan aktif."), 403
+    if request.args:
+        return jsonify(error="Parameter tidak dijangka"), 400
+    try:
+        version = save_schedule(conf["supabase_url"], conf["supabase_key"],
+                                account["telegram_user_id"], _body(limit=32000), guided=True)
     except (ProfileValidation, ProfileUnavailable, ProfileConflict) as exc:
         return _failure(exc)
     return jsonify(saved=True, version=version)

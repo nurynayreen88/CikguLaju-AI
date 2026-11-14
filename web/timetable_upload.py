@@ -42,13 +42,17 @@ def validate_result(result):
             raise TimetableReaderUnavailable
     for row in entries:
         limits = {"day": 6, "start": 5, "end": 5, "class_name": 40, "subject": 60}
-        if not isinstance(row, dict) or row.keys() != limits.keys():
+        if not isinstance(row, dict) or set(row) not in (set(limits), set(limits) | {"subject_code"}):
             raise TimetableReaderUnavailable
         if any(not isinstance(row[key], str) or len(row[key]) > length
                or any(ord(char) < 32 for char in row[key]) for key, length in limits.items()):
             raise TimetableReaderUnavailable
-        if (row["day"] not in DAYS or not TIME.fullmatch(row["start"])
-                or not TIME.fullmatch(row["end"]) or row["start"] >= row["end"]):
+        start, end = row["start"], row["end"]
+        if row["day"] not in DAYS or ((start or end) and (
+                not TIME.fullmatch(start) or not TIME.fullmatch(end) or start >= end)):
+            raise TimetableReaderUnavailable
+        if "subject_code" in row and (not isinstance(row["subject_code"], str)
+                or not re.fullmatch(r"[A-Z][A-Z0-9]{1,7}", row["subject_code"])):
             raise TimetableReaderUnavailable
     unclear = result.get("unclear_cells", [])
     if not isinstance(unclear, list) or len(unclear) > min(80, result["uncertain"]):
