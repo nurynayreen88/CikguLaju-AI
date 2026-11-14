@@ -182,6 +182,17 @@ def install(runtime):
             raise RuntimeError("Payment request changed before review")
         return True
 
+    def review_rakan_payment(req, admin_cid, decision):
+        if not runtime._is_admin(admin_cid):
+            raise PermissionError("Rakan payment review requires admin")
+        return _first(sb("POST", "rpc/review_rakan_payment", json={
+            "p_payment_id": _int_id(req["id"]),
+            "p_payer": _int_id(req["chat_id"]),
+            "p_admin": _int_id(admin_cid),
+            "p_proof_received_at": req.get("proof_received_at"),
+            "p_decision": decision,
+        }))
+
     def payment_counts():
         counts = _first(sb("POST", "rpc/bot_payment_status_counts", json={}))
         if not isinstance(counts, dict):
@@ -328,6 +339,7 @@ def install(runtime):
     runtime._new_payment_request = new_payment_request
     runtime._set_payment_note = set_payment_note
     runtime._mark_payment_request = mark_payment_request
+    runtime._review_rakan_payment = review_rakan_payment
     runtime._admin_counts = admin_counts
     runtime._admin_list = admin_list
     runtime._upsert_user = upsert_user
