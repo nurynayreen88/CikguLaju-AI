@@ -83,13 +83,27 @@ class AutoLogoTests(unittest.TestCase):
         self.assertIn("/school-logo-catalog/",opener.requests[0])
 
     def test_no_candidate_does_not_make_external_request(self):
-        opener=FakeOpener(b"")
+        opener=FakeOpener(b"", missing_catalog=True)
         with patch("web.school_logo_candidate.school_by_code",
                    return_value={"school_level":"Rendah"}), \
              patch("web.school_logo_candidate._read",return_value=[]):
             self.assertIsNone(logo_candidate("https://db.example","fake",
                                               "JBA0001",opener=opener))
-        self.assertEqual(opener.requests,[])
+        self.assertEqual(opener.requests,[
+            "https://db.example/storage/v1/object/authenticated/cikgulaju-materials/"
+            "school-logo-catalog/risalahmap/JBA0001.png",
+        ])
+
+    def test_risalah_catalog_is_available_without_fallback_registry(self):
+        png=b"\x89PNG\r\n\x1a\n"+b"sample"
+        opener=FakeOpener(png)
+        with patch("web.school_logo_candidate.school_by_code",
+                   return_value={"school_level":"Rendah"}), \
+             patch("web.school_logo_candidate._read",return_value=[]):
+            self.assertEqual(logo_candidate("https://db.example","fake","JBA0001",opener=opener),
+                             (png,"image/png"))
+        self.assertEqual(len(opener.requests),1)
+        self.assertIn("/school-logo-catalog/risalahmap/JBA0001.png",opener.requests[0])
 
     def test_non_primary_school_never_fetches_logo(self):
         opener=FakeOpener(b"")

@@ -53,14 +53,14 @@ def logo_candidate(url, service_key, school_code, *, opener=None):
     except SchoolDirectoryUnavailable:
         raise LogoSourceUnavailable("Senarai logo belum tersedia") from None
     if not rows:
-        return None
+        return _risalah_candidate(url, service_key, school_code, opener=opener)
     if len(rows) != 1 or rows[0].get("school_code") != school_code:
         raise LogoSourceUnavailable("Rekod logo tidak sepadan")
     ext, commit = rows[0].get("image_extension"), rows[0].get("source_commit")
     if ext not in MIME or commit != UPSTREAM_COMMIT:
         raise LogoSourceUnavailable("Sumber logo belum disahkan")
     if school_code in {"PBA1015", "YBB1418"}:
-        return None
+        return _risalah_candidate(url, service_key, school_code, opener=opener)
     filename = school_code + "." + ext
     try:
         blob = _catalog_image(url, service_key, commit, filename, ext, opener=opener)
@@ -79,12 +79,17 @@ def logo_candidate(url, service_key, school_code, *, opener=None):
     return blob, MIME[ext]
 
 
-def _catalog_image(url, key, commit, filename, ext, *, opener=None):
+def _risalah_candidate(url, key, school_code, *, opener=None):
+    image = _catalog_image(url, key, "risalahmap", school_code + ".png", "png", opener=opener)
+    return (image, MIME["png"]) if image is not None else None
+
+
+def _catalog_image(url, key, version, filename, ext, *, opener=None):
     parts = urlsplit(url)
     if (parts.scheme != "https" or not parts.hostname or parts.username or parts.password
             or parts.port is not None or parts.path not in ("", "/") or parts.query or parts.fragment):
         raise LogoSourceUnavailable("Konfigurasi storan logo tidak sah")
-    path = f"/storage/v1/object/authenticated/{BUCKET}/school-logo-catalog/{commit}/{filename}"
+    path = f"/storage/v1/object/authenticated/{BUCKET}/school-logo-catalog/{version}/{filename}"
     request = Request(url.rstrip("/") + path, headers={
         "apikey": key, "Authorization": "Bearer " + key, "Accept": MIME[ext],
     })
