@@ -74,6 +74,35 @@ def pdf_bytes(*, scanned=False, transposed=False, extra_page=False):
         return doc.tobytes()
 
 
+def compact_jpeg():
+    image = Image.new("RGB", (1030, 640), "#d5effa")
+    draw = ImageDraw.Draw(image)
+    font = ImageFont.truetype("DejaVuSans-Bold.ttf", 26)
+    draw.text((80, 22), "JADUAL WAKTU", font=font, fill="black")
+    rows = [
+        ["Hari", "10.30\n11.00", "11.00\n11.30", "11.30\n12.00",
+         "12.00\n12.30", "12.30\n1.00"],
+        ["I", "KM\n1A", "KM\n1A", "R", "PD\n2B", ""],
+        ["S", "", "PJPK\n1B", "E", "", "KM\n1A"],
+        ["R", "PD\n2B", "", "H", "", ""],
+        ["K", "", "", "A", "PD\n2B", "PD\n2B"],
+        ["J", "", "", "T", "", ""],
+    ]
+    colors = {"KM": "#00b4ed", "PD": "#ff49a8", "PJPK": "#929292"}
+    for row, values in enumerate(rows):
+        for col, value in enumerate(values):
+            x, y = 30 + 160 * col, 70 + 90 * row
+            fill = "#ffb7d0" if not row or not col else "#fff"
+            if row and col:
+                fill = "#22ef40" if col == 3 else colors.get(value.split("\n")[0], fill)
+            draw.rectangle((x, y, x + 160, y + 90), outline="black", fill=fill, width=3)
+            draw.multiline_text((x + 80, y + 45), value, anchor="mm",
+                                align="center", font=font, fill="black")
+    result = BytesIO()
+    image.save(result, format="JPEG")
+    return result.getvalue()
+
+
 class TimetableReaderTest(unittest.TestCase):
     def assert_slots(self, data):
         result = validate_result(read_timetable(data, CLASSES))
@@ -91,6 +120,18 @@ class TimetableReaderTest(unittest.TestCase):
 
     def test_actual_scanned_pdf_and_partial_page_warning(self):
         self.assertEqual(self.assert_slots(pdf_bytes(scanned=True, extra_page=True))["unreadable_pages"], 1)
+
+    def test_compact_colored_timetable_keeps_codes_and_skips_vertical_break(self):
+        result = validate_result(read_timetable(compact_jpeg(), []))
+        self.assertEqual([tuple(row.values()) for row in result["entries"]], [
+            ("Isnin", "10:30", "11:30", "1A", "KM"),
+            ("Isnin", "12:00", "12:30", "2B", "PD"),
+            ("Selasa", "11:00", "11:30", "1B", "PJPK"),
+            ("Selasa", "12:30", "13:00", "1A", "KM"),
+            ("Rabu", "10:30", "11:00", "2B", "PD"),
+            ("Khamis", "12:00", "13:00", "2B", "PD"),
+        ])
+        self.assertEqual(result["uncertain"], 0)
 
     def test_rejects_invalid_bytes_and_unreadable_document(self):
         for raw in (b"fake.pdf", b"%PDF-damaged", b"\x89PNG\r\n\x1a\nbroken"):
