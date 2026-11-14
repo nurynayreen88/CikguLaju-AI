@@ -27,6 +27,7 @@ SUBJECTS = {
     "MATH": "Matematik", "SN": "Sains", "SC": "Sains", "Science": "Sains",
     "PI": "Pendidikan Islam", "PAI": "Pendidikan Islam",
     "PM": "Pendidikan Moral", "PSV": "Pendidikan Seni Visual",
+    "Seni Visual": "Pendidikan Seni Visual",
     "MZ": "Pendidikan Muzik", "MUZIK": "Pendidikan Muzik",
     "PJ": "Pendidikan Jasmani", "PK": "Pendidikan Kesihatan",
     "PJPK": "PJPK", "RBT": "Reka Bentuk dan Teknologi",
@@ -49,7 +50,10 @@ TIME_OCR_DIGITS = str.maketrans("IlOo", "1100")
 COMPACT_CLASS = re.compile(r"([1-6Il])\s*([A-Za-z])", re.I)
 SUBJECT_CODE = re.compile(r"[A-Z][A-Z0-9]{1,7}")
 NON_TEACHING = re.compile(
-    r"^(?:masa rehat|rehat|recess|perhimpunan|assembly|kokurikulum|free period)\b", re.I)
+    r"^(?:masa rehat|rehat|recess|perhimpunan|assembly|kokurikulum|free period|"
+    r"kaunseling|bimbingan kelas|intervensi|pengurusan\s*&\s*pentadbiran)\b|^PE\s*R(?:H)?$",
+    re.I,
+)
 
 
 MAX_PAGES = 3
@@ -99,7 +103,7 @@ def _ocr_words(image):
     ]
 
 
-def _grid(image):
+def _grid(image, *, close_gaps=3):
     # Extract ruled cell boundaries first, retaining wide merged teaching cells.
     import cv2
     import numpy as np
@@ -113,7 +117,7 @@ def _grid(image):
     vertical = cv2.morphologyEx(ink, cv2.MORPH_OPEN,
                                 cv2.getStructuringElement(cv2.MORPH_RECT, (1, max(14, height // 38))))
     ruled = cv2.bitwise_or(horizontal, vertical)
-    ruled = cv2.morphologyEx(ruled, cv2.MORPH_CLOSE, np.ones((3, 3), dtype=np.uint8))
+    ruled = cv2.morphologyEx(ruled, cv2.MORPH_CLOSE, np.ones((close_gaps, close_gaps), dtype=np.uint8))
     _, _, stats, _ = cv2.connectedComponentsWithStats(255 - ruled, connectivity=4)
     cells = []
     for x, y, w, h, area in stats[1:]:
@@ -215,7 +219,7 @@ def _headers(texts, labels, time_axis, day_axis):
             bands.append((band, [entry]))
     if not bands:
         return []
-    _, header = max(bands, key=lambda band: len(band[1]))
+    header_band, header = max(bands, key=lambda band: len(band[1]))
     header.sort()
     output = []
     for index, (span, times) in enumerate(header):
@@ -231,14 +235,45 @@ def _headers(texts, labels, time_axis, day_axis):
                 end = f"{int(end[:2]) + 12:02d}{end[2:]}"
         if start < end:
             output.append((span, start, end))
+    # Printed afternoon timetables may use 1:00–6:20 without a suffix.
+    # Require a complete-looking school session wholly within that range.
+    first, last = (output[0][1], output[-1][2]) if output else ("", "")
+    explicit_morning = any(re.search(r"\b(?:a\.?m\.?|pagi)\b", text, re.I)
+                           for cell, text in texts
+                           if _intersects(_interval(cell, day_axis), header_band))
+    if (len(output) >= 6 and "01:00" <= first <= "03:00"
+            and "05:00" <= last <= "07:00" and not explicit_morning
+            and all(first <= start < end <= last for _, start, end in output)
+            and all(left[2] == right[1] for left, right in zip(output, output[1:]))):
+        output = [(span, f"{int(start[:2]) + 12:02d}{start[2:]}",
+                   f"{int(end[:2]) + 12:02d}{end[2:]}") for span, start, end in output]
     return output
+
+
+def _printed_classes(words):
+    for marker in words:
+        if marker[-1].casefold().rstrip(":") != "kelas":
+            continue
+        line = _text([word for word in words if word[0] >= marker[0]
+                      and _intersects((word[1], word[3]), (marker[1], marker[3]))])
+        match = re.match(r"kelas\s*:\s*(.+)$", line, re.I)
+        if match:
+            codes = [code.strip().upper() for code in match[1].split(",")]
+            if sum(bool(re.fullmatch(r"[1-6][A-Z]", code)) for code in codes) >= 2:
+                return set(codes)
+    return set()
 
 
 def _class_key(value):
     return re.sub(r"[\W_]+", "", re.sub(r"^tahun\s*", "", value.casefold()))
 
 
-def _subject_class(text, saved_classes, compact=False, *, preserve_class=False):
+def _subject_class(text, saved_classes, compact=False, *, preserve_class=False,
+                   printed_classes=()):
+    text = text.rstrip(" .,:")
+    # OCR can read a narrow I as 1. Use the printed class list as evidence.
+    if (code := re.search(r"(?<!\w)([1-6])\s*1$", text)) and code[1] + "I" in printed_classes:
+        text = text[:code.start()] + code[1] + "I"
     match = SUBJECT_PATTERN.search(text)
     if match:
         subject = SUBJECTS[match[0].casefold()]
@@ -246,7 +281,8 @@ def _subject_class(text, saved_classes, compact=False, *, preserve_class=False):
     else:
         code, _, name = text.partition(" ")
         # Preserve printed local codes until the teacher selects a subject.
-        subject = code if compact and SUBJECT_CODE.fullmatch(code) and COMPACT_CLASS.fullmatch(name) else ""
+        valid_class = COMPACT_CLASS.fullmatch(name) or (preserve_class and CLASS_PATTERN.fullmatch(name))
+        subject = code if (compact or preserve_class) and SUBJECT_CODE.fullmatch(code) and valid_class else ""
     if not subject:
         # Keep a readable custom subject if the class already exists in the profile.
         for name in sorted(saved_classes, key=len, reverse=True):
@@ -259,9 +295,11 @@ def _subject_class(text, saved_classes, compact=False, *, preserve_class=False):
                 return "", name
         return "", ""
     name = " ".join(name.split())
-    if compact and (short_class := COMPACT_CLASS.fullmatch(name)):
+    if (compact or preserve_class) and (short_class := COMPACT_CLASS.fullmatch(name)):
         year, suffix = short_class.groups()
         name = ("1" if not year.isdigit() else year) + suffix.upper()
+    elif preserve_class:
+        name = re.sub(r"^([1-6])\s*([A-Za-z]{2,})", r"\1 \2", name)
     matching = [saved for saved in saved_classes if _class_key(saved) == _class_key(name)]
     if len(matching) == 1:
         return subject, name if preserve_class else matching[0]
@@ -393,7 +431,7 @@ def _recover_compact_texts(image, cells, texts, saved_classes):
     return list(original.items())
 
 
-def _read_grid(texts, saved_classes, *, guided=False):
+def _read_grid(texts, saved_classes, *, guided=False, printed_classes=()):
     labels, day_axis, compact = _day_labels(texts)
     if not labels:
         return [], []
@@ -405,19 +443,34 @@ def _read_grid(texts, saved_classes, *, guided=False):
     entries, uncertain = [], []
     for cell, text in texts:
         if (cell in skipped or NON_TEACHING.search(text)
+                or any(_intersects(_interval(cell, time_axis), _interval(label, time_axis))
+                       for label, _ in labels)
                 or not any(c.isalpha() for c in text)):
             continue
         matching_days = [day for day_cell, day in labels
                          if _intersects(_interval(cell, day_axis), _interval(day_cell, day_axis))]
-        spans = [(start, end) for span, start, end in headers
-                 if _intersects(_interval(cell, time_axis), span)]
+        cell_span = _interval(cell, time_axis)
+        matches = [(span, start, end) for span, start, end in headers
+                   if _intersects(cell_span, span)]
+        spans = [(start, end) for _, start, end in matches]
         if len(matching_days) != 1:
             continue
         day = matching_days[0]
-        subject, class_name = _subject_class(text, saved_classes, compact, preserve_class=guided)
-        time_unclear = not spans or any(
-            last_end != next_start for (_, last_end), (next_start, _) in zip(spans, spans[1:])
-        )
+        subject, class_name = _subject_class(text, saved_classes, compact, preserve_class=guided,
+                                             printed_classes=printed_classes)
+        if not spans and not class_name:
+            continue
+        # A printed cell can span a break absent from the numbered headers.
+        # Require its outer edges and all interior columns to match the grid.
+        time_unclear = not spans
+        if matches:
+            first, last = matches[0][0], matches[-1][0]
+            time_unclear = (first[0] - cell_span[0] > (first[1] - first[0]) * 0.25
+                            or cell_span[1] - last[1] > (last[1] - last[0]) * 0.25
+                            or any(right[0][0] - left[0][1] >
+                                   min(left[0][1] - left[0][0], right[0][1] - right[0][0]) * 0.25
+                                   or left[2] > right[1]
+                                   for left, right in zip(matches, matches[1:])))
         if time_unclear:
             if not (subject or class_name):
                 continue
@@ -455,23 +508,57 @@ def _merge_adjacent(entries):
     return merged
 
 
+def _score(rows, unclear):
+    complete = sum(bool(row["start"] and row["class_name"] and row["subject"]) for row in rows)
+    return complete, -len(unclear), len(rows)
+
+
+def _read_image_grid(image, cells, words, saved_classes, *, guided):
+    texts = _cell_texts(cells, words)
+    labels, day_axis, compact = _day_labels(texts)
+    if compact:
+        texts = _recover_compact_texts(image, cells, texts, saved_classes)
+    if compact or not guided or not labels:
+        return _read_grid(texts, saved_classes, guided=guided)
+
+    printed = _printed_classes(words)
+    initial = _read_grid(texts, saved_classes, guided=True, printed_classes=printed)
+    # Reconnect gaps at grid intersections without affecting a valid grid.
+    repaired_cells = _grid(image, close_gaps=7)
+    repaired = _cell_texts(repaired_cells, words)
+    repaired_labels, repaired_axis, _ = _day_labels(repaired)
+    if repaired_axis == day_axis and {day for _, day in repaired_labels} == {day for _, day in labels}:
+        alternative = _read_grid(repaired, saved_classes, guided=True, printed_classes=printed)
+        if _score(*alternative) > _score(*initial):
+            texts, cells, labels = repaired, repaired_cells, repaired_labels
+
+    headers = _headers(texts, labels, 1 - day_axis, day_axis)
+    original = dict(texts)
+    candidates = [cell for cell in _teaching_cells(cells, labels, headers, day_axis)
+                  if cell in original and re.search(r"[A-Za-z]\d|\d-\d", original[cell])]
+    for cell, text in _ocr_cell_lines(image, candidates).items():
+        if all(_subject_class(text, saved_classes, preserve_class=True, printed_classes=printed)):
+            original[cell] = text
+    return _read_grid(list(original.items()), saved_classes, guided=True, printed_classes=printed)
+
+
 def read_timetable(data, saved_classes, *, guided=False):
     """Return review rows plus counts of unreadable cells and pages."""
     import fitz
     from PIL import Image
 
     results, uncertain, unreadable_pages = {}, [], 0
+    counselling = False
     try:
         for page, (image, words) in enumerate(_pages(data), start=1):
             cells = _grid(image)
             entries, missed = _read_grid(_cell_texts(cells, words), saved_classes, guided=guided)
             if (not entries or missed) and cells:
-                texts = _cell_texts(cells, _ocr_words(image))
-                texts = _recover_compact_texts(image, cells, texts, saved_classes)
-                ocr_entries, ocr_missed = _read_grid(texts, saved_classes, guided=guided)
-                score = lambda rows, unclear: (sum(bool(row["start"]) for row in rows), len(rows), -len(unclear))
-                if score(ocr_entries, ocr_missed) > score(entries, missed):
-                    entries, missed = ocr_entries, ocr_missed
+                words = _ocr_words(image)
+                counselling |= bool(re.search(r"jadual waktu guru kaunseling\b", _text(words), re.I))
+                read = _read_image_grid(image, cells, words, saved_classes, guided=guided)
+                if _score(*read) > _score(entries, missed):
+                    entries, missed = read
             uncertain.extend(dict(cell, page=page) for cell in missed)
             if not entries:
                 unreadable_pages += 1
@@ -482,6 +569,8 @@ def read_timetable(data, saved_classes, *, guided=False):
     except (fitz.FileDataError, Image.DecompressionBombError, OSError) as exc:
         raise UnreadableTimetable("Fail jadual tidak dapat dibuka. Cuba simpan semula fail.") from exc
     if not results:
+        if counselling:
+            raise UnreadableTimetable("Jadual kaunseling dikesan. Tiada slot mata pelajaran yang dapat diimport ke RPH Hari Ini.")
         raise UnreadableTimetable(
             "Tiada waktu dapat dibaca. Cuba gambar yang lebih rapat pada jadual, "
             "atau tekan + Tambah Waktu untuk isi slot secara manual."
