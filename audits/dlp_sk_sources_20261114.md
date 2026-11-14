@@ -35,3 +35,26 @@ Rujukan [E-Katalog Buku Teks KPM](https://moe.gov.my/storage/files/shares/Banner
 ## Padanan sebelum janaan
 
 Gunakan identiti SK, edisi kurikulum, Tahun, subjek, versi DLP dan Lesson/PdP pada setiap rekod. Padankan standard dan rujukan buku terlebih dahulu, kemudian semak RPH bahasa Inggeris serta bukti PBD. Sambungan Word/PDF dan petikan bahan perlu diuji melalui pilihan Lesson yang sama di Web dan Telegram. Petikan buku menggunakan sumber dalaman yang tersedia dan disahkan.
+
+## Year 2 batch 1 source check
+
+KSSR (Semakan 2017) edisi bahasa Inggeris menjadi asas kod CS dan LS untuk kumpulan ini. KPM juga menerbitkan Dokumen Penjajaran Edisi 3 untuk Tahap I. Sahkan penjajaran dan urutan RPT/SOW sebelum memberi nombor Lesson/PdP produksi. Urutan sementara di bawah mengikut topik buku teks dan kod dalam DSKP asal. [Surat Siaran KPM Bil. 6 Tahun 2024](https://www.moe.gov.my/storage/files/shares/pekeliling_dan_garis_panduan/surat_siaran/bahagian-pengurusan-sekolah-harian/Surat%20Siaran%20KPM%20Bil.%206%202024%20Pelaksanaan%20Dokumen%20Penjajaran%20Kurikulum%20Standard%20Sekolah%20Rendah%20Edisi%203%20Sains%20Dan%20Math%20Tahap%201.pdf)
+
+| Rekod staging | Topik | CS / LS | DSKP m/s | Buku teks bercetak | Buku aktiviti bercetak | Rujukan BA tertera pada BT |
+| --- | --- | --- | --- | --- | --- | --- |
+| DLP-SCI-Y2-U01-01 | Observe | 1.1 / 1.1.1 | 30–31 | 2–4 | 1–2 | 3 |
+| DLP-SCI-Y2-U01-02 | Classify | 1.1 / 1.1.2 | 32 | 5–7 | 3–4 | 5 |
+| DLP-SCI-Y2-U01-03 | Measure and Use Numbers | 1.1 / 1.1.3 | 33 | 8–10 | 5–6 | 8 |
+| DLP-SCI-Y2-U01-04 | Communicate | 1.1 / 1.1.4 | 34 | 10–11 | 7–8 | 10 |
+| DLP-MAT-Y2-U01-01 | Recognise Numbers | 1.1 / 1.1.1(i), (ii), (iii) | 34 | Bahagian 1, 2–5 | 1–2 | 3, 4 |
+| DLP-MAT-Y2-U01-02 | Write Numbers | 1.2 / 1.2.1 | 34 | Bahagian 1, 6–7 | 3–4 | 7 |
+| DLP-MAT-Y2-U01-03 | Show and Match Number Values | 1.1 / 1.1.2(i), (ii) | 34 | Bahagian 1, 8–12 | 5–6 | 10, 12 |
+| DLP-MAT-Y2-U01-04 | Place Value and Digit Value | 1.4 / 1.4.1 | 34 | Bahagian 1, 13–15 | 7–9 | 15 |
+| DLP-MAT-Y2-U01-05 | Partition Numbers | 1.4 / 1.4.2 | 34 | Bahagian 1, 16–17 | 10–11 | 17 |
+| DLP-MAT-Y2-U01-06 | Compare Numbers | 1.1 / 1.1.2(iii) | 34 | Bahagian 1, 18–21 | 12–13 | 19, 21 |
+
+- Science menggunakan [DSKP edisi bahasa Inggeris](https://anyflip.com/ittl/ygqq/basic) dan [buku teks DLP](https://fliphtml5.com/fbdki/veis/Science_Year_2/). Buku teks m/s 3 turut menyenaraikan BA m/s 7. Rekod Observe menggunakan m/s 1–2 dan m/s 7 disemak di bawah Communicate bersama m/s 8 sebelum sebarang pautan petikan dibuka.
+- Mathematics menggunakan [DSKP edisi bahasa Inggeris](https://asiemodel.net/wp-content/uploads/2022/08/DSKP-Matematik-Tahun-2-DLP.pdf) dan [buku teks DLP Bahagian 1](https://fliphtml5.com/dpauv/rwgq/Mathematics_DLP_Year_2_Part_1/). Kod dalam jadual mengikut DSKP asal dan nota buku teks.
+- Kod penerbitan Science BT072004 / BA072004 dan Mathematics BT082004 / BA082003 dirujuk pada [E-Katalog Buku Teks KPM](https://moe.gov.my/storage/files/shares/Banner/E-Katalog%20Buku%20Teks%20KPM.pdf). Halaman buku aktiviti dalam jadual ialah rujukan bercetak yang ditemui dalam buku teks. Kandungan latihan pada halaman BA asal belum diperiksa.
+- Bahan untuk semakan guru ialah [empat RPH Science](../staging/dlp/year2/science_unit_01.md) dan [enam RPH Mathematics](../staging/dlp/year2/mathematics_unit_01.md). Setiap RPH ada tindakan guru dan murid, masa, tugasan PBD individu, kriteria dan refleksi. Science meliputi LS 1.1.1–1.1.4. RPH ini ialah kumpulan awal Unit 1, dengan Manipulative Skills dan baki topik nombor masih dalam skop kerja seterusnya.
+- **Status HOLD untuk pengeluaran**. Semak latihan BA asal, urutan RPT/SOW, semakan guru, dan sambungan penjana serta format Word/PDF sebelum membuka janaan.
