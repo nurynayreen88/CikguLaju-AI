@@ -124,10 +124,37 @@ await sql("UPDATE pioneer_entitlements SET revoked_at=now() WHERE telegram_user_
 assert.equal((await result("SELECT affiliate_overview(10) result")).available,"0");
 await balances(1,10,10,0);
 assert.equal((await sql("SELECT count(*)::int AS n FROM affiliate_point_reversals")).rows[0].n,1);
+await db.exec(readFileSync("supabase/migrations/20261114042423_affiliate_admin_invitation_filters.sql", "utf8"));
+await sql("INSERT INTO referral_signups (referred_user_id,referrer_user_id) VALUES (11,10),(12,10),(16,13)");
+await sql("SET ROLE service_role");
+const filtered = (status, page=0, size=25) => result(
+  `SELECT affiliate_admin_members(${page},${size},'${status}') result`);
+const ids = data => data.items.map(row => row.user_id);
+const invited = await filtered("registered");
+assert.deepEqual(ids(invited).sort(), ["10","13"]);
+assert.deepEqual(invited.items.map(row => [row.user_id,row.registered_count,row.payment_count]).sort(),
+  [["10",2,1],["13",1,0]]);
+assert.deepEqual(ids(await filtered("paid")), ["10"]);
+assert.deepEqual(ids(await filtered("unpaid")).sort(), ["10","13"]);
+assert.equal((await filtered("all")).items.length,7);
+assert.equal((await filtered("none")).items.length,5);
+assert.ok((await filtered("none")).items.every(row => row.registered_count === 0));
+const firstInvited = await filtered("registered",0,1);
+const secondInvited = await filtered("registered",1,1);
+assert.equal(firstInvited.more,true);
+assert.equal(secondInvited.more,false);
+assert.deepEqual([...ids(firstInvited),...ids(secondInvited)].sort(), ["10","13"]);
+assert.deepEqual(await filtered("registered",2,1), {items:[],more:false});
+assert.deepEqual(await filtered("unknown"), {items:[],more:false});
+await sql("RESET ROLE");
+await sql("SET ROLE anon");
+await assert.rejects(sql("SELECT affiliate_admin_members(0,25,'all')"),/permission denied/);
+await sql("RESET ROLE");
 await sql("SET ROLE authenticated");
 await assert.rejects(sql("SELECT phone FROM affiliate_wallets"),/permission denied/);
 await assert.rejects(sql("SELECT affiliate_overview(10)"),/permission denied/);
 await assert.rejects(sql("SELECT affiliate_admin_members(0,25)"),/permission denied/);
+await assert.rejects(sql("SELECT affiliate_admin_members(0,25,'all')"),/permission denied/);
 await assert.rejects(sql("SELECT affiliate_point_summary(10)"),/permission denied/);
 await assert.rejects(sql("SELECT content FROM affiliate_claim_proofs"),/permission denied/);
 await db.close();
