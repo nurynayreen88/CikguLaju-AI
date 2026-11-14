@@ -103,6 +103,10 @@ const timetableReaderStatus = document.getElementById("timetable-reader-status")
 const timetableReaderReview = document.getElementById("timetable-reader-review");
 const timetableReaderReviewNote = document.getElementById("timetable-reader-review-note");
 const timetableReaderReportRows = document.getElementById("timetable-reader-report-rows");
+const timetableReaderUnclear = document.getElementById("timetable-reader-unclear");
+const timetableReaderUnclearTitle = document.getElementById("timetable-reader-unclear-title");
+const timetableReaderUnclearList = document.getElementById("timetable-reader-unclear-list");
+const timetableReaderUnclearNote = document.getElementById("timetable-reader-unclear-note");
 const timetableReaderAppend = document.getElementById("timetable-reader-append");
 const timetableReaderReplace = document.getElementById("timetable-reader-replace");
 const timetableReaderClassActions = document.getElementById("timetable-reader-classes-actions");
@@ -987,7 +991,11 @@ function updateTimetableReaderButtons() {
   timetableReaderStart.disabled=!teacherProfileState.loaded
     || !timetableReaderFile.files.length || timetableReadRequest!==null;
   timetableReaderReview.hidden=timetableReadRows.length===0;
-  if(timetableReaderReview.hidden)timetableReaderReportRows.replaceChildren();
+  if(timetableReaderReview.hidden){
+    timetableReaderReportRows.replaceChildren();
+    timetableReaderUnclearList.replaceChildren();
+    timetableReaderUnclear.hidden=true;
+  }
   const selected=selectedTimetableReadRows();
   timetableReaderAppend.disabled=!selected.length;
   timetableReaderReplace.disabled=timetableReadPartial;
@@ -1006,6 +1014,31 @@ function sameTimetablePeriod(first,second) {
 
 function overlappingTimetablePeriod(first,second) {
   return first.day===second.day && first.start<second.end && second.start<first.end;
+}
+
+function renderUnclearTimetableCells(result) {
+  const cells=result.unclear_cells||[];
+  const count=result.uncertain||0;
+  const messages={
+    time:"Masa tidak dapat dikenal pasti",
+    details:"Kelas dan subjek tidak dapat dikenal pasti",
+    review:"Semak kelas atau subjek dalam senarai di atas",
+  };
+  timetableReaderUnclear.hidden=!count;
+  timetableReaderUnclear.open=true;
+  timetableReaderUnclearTitle.textContent=count+" petak kurang jelas";
+  timetableReaderUnclearList.replaceChildren();
+  for(const cell of cells){
+    const item=document.createElement("li");
+    item.textContent="Halaman "+cell.page+" · "+cell.day+
+      (cell.start ? " "+cell.start+"–"+cell.end : "")+" · "+messages[cell.reason];
+    timetableReaderUnclearList.append(item);
+  }
+  const remaining=count-cells.length;
+  timetableReaderUnclearNote.hidden=remaining<=0;
+  timetableReaderUnclearNote.textContent=remaining>0
+    ? remaining+" petak lagi perlu disemak pada jadual asal."
+    : "";
 }
 
 function renderTimetableReadReport() {
@@ -1088,6 +1121,7 @@ timetableReaderStart.addEventListener("click",async()=>{
     if(result.uncertain || result.unreadable_pages)summary.push("Semak jadual asal dan tambah waktu yang tertinggal.");
     timetableReaderStatus.textContent=summary.join(" ");
     renderTimetableReadReport();
+    renderUnclearTimetableCells(result);
   }catch(err){
     if(controller.signal.reason==="timeout"){
       timetableReaderStatus.textContent="Bacaan mengambil masa terlalu lama. Cuba satu halaman atau gambar yang lebih kecil.";

@@ -165,6 +165,8 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 #timetable-reader-report th{color:#184965}
 #timetable-reader-report input{width:18px;height:18px;margin:0;vertical-align:middle}
 #timetable-reader-report td:nth-child(2){white-space:nowrap}
+#timetable-reader-unclear{margin-top:12px}
+#timetable-reader-unclear ul{margin:8px 0;padding-left:22px;font-size:.88rem}
 #timetable-reader-actions button.secondary{background:#fff;color:#1a526a;border:1px solid #c7d8de}
 @media(max-width:450px){
  #timetable-reader-report td:nth-child(2){white-space:normal}
@@ -822,6 +824,11 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
         <tbody id="timetable-reader-report-rows"></tbody>
       </table>
     </div>
+    <details id="timetable-reader-unclear" open hidden>
+      <summary id="timetable-reader-unclear-title"></summary>
+      <ul id="timetable-reader-unclear-list"></ul>
+      <p class="notice" id="timetable-reader-unclear-note" hidden></p>
+    </details>
     <div class="profile-actions" id="timetable-reader-actions">
       <button type="button" id="timetable-reader-append">Tambah Waktu Dipilih</button>
       <button type="button" id="timetable-reader-replace" class="secondary">Ganti dengan Semua Hasil</button>
@@ -2080,7 +2087,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
 <script src="/assets/rph-today.js?v=science-copy-expanded-20261113"></script>
-<script src="/assets/teacher-profile.js?v=timetable-read-review-20261114"></script>
+<script src="/assets/teacher-profile.js?v=timetable-unclear-cells-20261114"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>
 <script src="/assets/admin-usage.js?v=payment-inbox-20261114"></script>

@@ -31,7 +31,8 @@ def upload_mime(data):
 
 
 def validate_result(result):
-    if not isinstance(result, dict) or set(result) != {"entries", "uncertain", "unreadable_pages"}:
+    fields = {"entries", "uncertain", "unreadable_pages"}
+    if not isinstance(result, dict) or set(result) not in (fields, fields | {"unclear_cells"}):
         raise TimetableReaderUnavailable
     entries = result["entries"]
     if not isinstance(entries, list) or not 0 < len(entries) <= 80:
@@ -48,5 +49,21 @@ def validate_result(result):
             raise TimetableReaderUnavailable
         if (row["day"] not in DAYS or not TIME.fullmatch(row["start"])
                 or not TIME.fullmatch(row["end"]) or row["start"] >= row["end"]):
+            raise TimetableReaderUnavailable
+    unclear = result.get("unclear_cells", [])
+    if not isinstance(unclear, list) or len(unclear) > min(80, result["uncertain"]):
+        raise TimetableReaderUnavailable
+    for cell in unclear:
+        if not isinstance(cell, dict) or cell.keys() != {"page", "day", "start", "end", "reason"}:
+            raise TimetableReaderUnavailable
+        if (type(cell["page"]) is not int or not 1 <= cell["page"] <= 3 or cell["day"] not in DAYS
+                or cell["reason"] not in ("time", "details", "review")
+                or not isinstance(cell["start"], str) or not isinstance(cell["end"], str)):
+            raise TimetableReaderUnavailable
+        if cell["reason"] == "time":
+            if cell["start"] or cell["end"]:
+                raise TimetableReaderUnavailable
+        elif (not TIME.fullmatch(cell["start"]) or not TIME.fullmatch(cell["end"])
+                or cell["start"] >= cell["end"]):
             raise TimetableReaderUnavailable
     return result
