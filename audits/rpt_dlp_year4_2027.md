@@ -1,0 +1,7 @@
+# RPT DLP Year 4 SK 2027
+
+- [Kalendar Akademik KPM 2027](https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik), Lampiran A–C. Jadual bermula 4 Januari dengan 42 julat tarikh bagi Kumpulan A dan B.
+- DSKP KSSR (Semakan 2017), edisi bahasa Inggeris: [Science](https://sites.google.com/moe-dl.edu.my/sksb-sains/rpt-rph-dskp) dan [Mathematics](https://anyflip.com/ifkkk/wwxf/basic). Semua 92 kod LS Science dan 85 kod LS Mathematics dipadankan. Peruntukan masa Tahap II ialah 64 jam Science dan 96 jam Mathematics.
+- [E-Katalog KPM](https://moe.gov.my/storage/files/shares/Banner/E-Katalog%20Buku%20Teks%20KPM.pdf) menyenaraikan [Science BT074003](https://anyflip.com/yjsfa/rjal/basic/) (ISBN 978-983-49-2579-6) dan [Mathematics BT084003](https://fliphtml5.com/wgvyt/rxza/Buku_Teks_Mathematics_Tahun_4/) (ISBN 978-983-49-2580-2). Nombor halaman menggunakan cetakan DBP 2019 bagi kedua-dua subjek. Setiap unit ada bukti pembelajaran PBD dan satu sesi ulang kaji. Rujukan adalah kepada halaman bercetak dalam buku teks DLP.
+- Science mengandungi 59 Lesson dan 10 sesi Review (7 halaman). Mathematics mengandungi 69 Lesson dan 8 sesi Review (8 halaman). Urutan Lesson, jumlah minit, tajuk tahun, 42 julat tarikh, teks dan dimensi A4 landskap disahkan dalam Word/PDF.
+- Year 3 turut dikemas kini pada kaki muka depan yang tersilap memaparkan Year 2. Perbandingan PDF mengesahkan teks jadual Year 3 sepadan dengan keluaran sebelumnya.

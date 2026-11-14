@@ -5,7 +5,7 @@ entrypoint. It never alters RPH credit accounting, subscriptions or the DB.
 """
 from pathlib import Path
 from tempfile import TemporaryDirectory
-from rpt_2027.dlp.documents import SUBJECTS as DLP_SUBJECTS, document_path
+from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
 from rpt_2027.psv.telegram_downloads import pdf_ready as psv_pdf_ready, build_pdf as build_psv_pdf
 from rpt_2027.matematik.telegram_downloads import pdf_ready as math_pdf_ready
 from rpt_2027.bahasa_melayu.telegram_downloads import pdf_ready as bm_pdf_ready
@@ -50,6 +50,8 @@ def install(ns):
             [[{"text": "🏆 Jadi Rakan Pembangun", "callback_data": "pioneer_join"}],
              [{"text": "🏠 Menu Utama", "callback_data": "home"}]])
 
+    published_year_tokens = tuple(map(str, PUBLISHED_YEARS))
+
     def callback(cid, d):
         data = str(d or "")
         is_year = data.startswith("rpt2027_year_")
@@ -67,7 +69,7 @@ def install(ns):
                 # Year 2 buttons sent before the multi-year menu remain valid.
                 _, subject, fmt = parts
                 year = 2
-            elif len(parts) == 4 and parts[2] in ("2", "3"):
+            elif len(parts) == 4 and parts[2] in published_year_tokens:
                 _, subject, year_text, fmt = parts
                 year = int(year_text)
             else:
