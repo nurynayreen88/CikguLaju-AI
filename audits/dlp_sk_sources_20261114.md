@@ -264,3 +264,18 @@ Padanan ini menggunakan DSKP KSSR (Semakan 2017) edisi bahasa Inggeris. KPM meny
 - **Air (Water).** BA m/s 64 mencetak SP 9.1.2, tetapi tugasnya melabel sumber air berdasarkan BT m/s 102–104. Rujukan itu digunakan bersama BA m/s 63 untuk 9.1.1. BA m/s 65 benar-benar menyiasat arah aliran bagi 9.1.2. BA m/s 68–69 mencetak 9.1.4 dan 9.1.5 bersama. RPH membezakan susunan peringkat pada m/s 68 daripada penerangan berasaskan pemerhatian, dengan m/s 69 sebagai rujukan lakaran.
 - **Udara (Air).** BA m/s 70 dan 71 membezakan kewujudan udara dengan kandungan gasnya. BA m/s 73 memadankan takrif angin, manakala m/s 74–75 merangkumi kesan angin. BA m/s 72 ialah aktiviti bot layar. BT m/s 114 menunjukkan model roket berasaskan pergerakan udara dan merujuk model BA m/s 72 dan 76. RPH 9.2.6 menambah PBD individu untuk menerangkan dua pemerhatian.
 - Katalog merangkumi 135 RPH untuk semakan guru, terdiri daripada 57 Science (Unit 1–9) dan 78 Mathematics (Unit 1–8). Janaan Word/PDF dalam penyediaan sementara urutan produksi dan dokumen belum diluluskan.
+
+## Year 2 Unit 10 source check
+
+| Rekod staging | Topik | CS / LS | DSKP m/s | Buku teks bercetak | Buku aktiviti bercetak | Rujukan BA tertera pada BT |
+| --- | --- | --- | --- | --- | --- | --- |
+| DLP-SCI-Y2-U10-01 | Choose a Model From a Building Set | 10.1 / 10.1.1 | 52 | 117–119 | 77 | 118 |
+| DLP-SCI-Y2-U10-02 | Identify the Parts Shown in a Manual | 10.1 / 10.1.2 | 52 | 120–121 | 78 | 120 (m/s 78–79) |
+| DLP-SCI-Y2-U10-03 | Assemble a Model From Illustrated Instructions | 10.1 / 10.1.3 | 52 | 122–123 | 79–80 | 122 (m/s 81) |
+| DLP-SCI-Y2-U10-04 | Design and Build an Original Model | 10.1 / 10.1.4 | 52 | 124–125 | 81 | 124 (m/s 81 dan 84) |
+| DLP-SCI-Y2-U10-05 | Disassemble and Store a Model in Order | 10.1 / 10.1.5 | 52 | 126–127 | 82–83 | 126 |
+| DLP-SCI-Y2-U10-06 | Explain Observations About a Built Model | 10.1 / 10.1.6 | 52 | 124–125 | 84 | 124 (m/s 81 dan 84) |
+
+- [DSKP edisi bahasa Inggeris](https://anyflip.com/jrwq/zcff/basic/51-70), [buku teks DLP](https://www.scribd.com/document/466322157/Text-Book-Science-Dual-Language-Program-KSSR-Semakan-Year-2-SK), [buku aktiviti asal](https://anyflip.com/kskjz/cucq/basic/51-91) dan [RPT Science SK 2026](https://www.scribd.com/document/1044199355/Rpt-Sc-Dlp-Year-2-Sk-2026-by-Rozayus-Academy-Kump-a-0kump-b). [Enam RPH Technology](../staging/dlp/year2/science_unit_10.md) meliputi semua SP 10.1.1–10.1.6. Kod penuh dalam DSKP digunakan bersama urutan kemahiran dalam RPT.
+- **Padanan BA.** M/s 78 mengenal pasti jenis dan kuantiti komponen. M/s 79–80 membaca dan menyusun langkah pemasangan. M/s 81 melakar model baharu. BT m/s 122 mencetak rujukan BA 81 bagi pemasangan, tetapi kod SP dan kandungan sebenar BA menyokong m/s 79–80 untuk 10.1.3 dan m/s 81 untuk 10.1.4. RPH pemasangan dan reka bentuk menilai binaan sebenar sebagai tambahan kepada latihan BA.
+- Katalog merangkumi 141 RPH untuk semakan guru, terdiri daripada 63 Science (Unit 1–10) dan 78 Mathematics (Unit 1–8). Janaan Word/PDF masih dalam penyediaan.

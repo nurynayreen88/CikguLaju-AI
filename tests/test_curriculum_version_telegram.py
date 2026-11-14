@@ -77,7 +77,7 @@ class TelegramCurriculumTests(unittest.TestCase):
         source = Path(__file__).resolve().parents[1] / "data" / "dlp_year2_review.json"
         catalog = json.loads(source.read_text(encoding="utf-8"))
         for data, code, title, count, unit_count in (
-            ("cv_dlp_science", "SCIENCE_DLP", "Science (DLP)", 57, 9),
+            ("cv_dlp_science", "SCIENCE_DLP", "Science (DLP)", 63, 10),
             ("cv_dlp_math", "MATH_DLP", "Mathematics (DLP)", 78, 8),
         ):
             self.assertEqual(keys[data], f"{title} — {count} RPH")
