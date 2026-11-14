@@ -127,37 +127,44 @@ Sumber utama ialah fail profil Pandai yang dinamakan dengan kod sekolah. Baki im
 | YCC6107 | SEKOLAH JENIS KEBANGSAAN (CINA) SU TAK | [Pandai](https://app.pandai.org/uploads/school/YCC6107.jpg) | `a1b130e6e746e8f5f269fd8f977e9deec6e0dfc958c7d8e5665959961a9e08b3` |
 | YCC6304 | SEKOLAH JENIS KEBANGSAAN (CINA) YONG KWONG | [Pandai](https://app.pandai.org/uploads/school/YCC6304.jpg) | `dfaa1496d4dcf56aaf83207c3b9b9e2ba71b3f6278f38a8e195bf84e23e6c2fd` |
 
+## Kemas kini katalog produksi, 14 November 2026
+
+Pusingan kedua menambah 19 logo. Semakan terus terhadap storan produksi mengesahkan 7,767 daripada 7,778 sekolah rendah mempunyai imej katalog (99.86%). Setiap imej baharu dibaca semula dari laluan storan persendirian dan SHA-256 sepadan. Sebahagian imej ialah potongan lencana beresolusi rendah daripada bahan sekolah atau foto papan tanda.
+
+| Kod | Sekolah | Sumber | SHA-256 |
+| --- | --- | --- | --- |
+| ABAB025 | SEKOLAH KEBANGSAAN SUNGAI TIANG BAROH | [Buku Mesyuarat Agung PIBG SK Sungai Tiang Baroh](<https://anyflip.com/haskq/iqbp/basic>) | `b762e61cdd3776e6d86c5e5048027820e20440c1509980b5921a458859534523` |
+| ABC1056 | SEKOLAH JENIS KEBANGSAAN (CINA) CHIEN HUA | [Blog SJKC Chien Hua, foto papan tanda](<https://sjkchienhua.blogspot.com/2015/03/blog-post.html>) | `3e35922070ad8c177f4e8d18b00a0d311bc279c4943e6a59b9bdc0a7c65ec8a0` |
+| ABCA001 | SEKOLAH JENIS KEBANGSAAN (CINA) HO PIN | [The Community Chest, foto papan tanda](<https://commchest.org.my/projects/sjkc-ho-pin/>) | `a31eea31f944434a0e950b33eef14136e68d50fec456e77bbcd13c966440a0e2` |
+| ABCB003 | SEKOLAH JENIS KEBANGSAAN (CINA) POOI AING | [Laporan SJKC Pooi Aing](<https://anyflip.com/lusri/gihq/basic>) | `c17719a2e8e5e243fe8afc779d1309245836b94a6225cc6c31a06a3fe6ba9871` |
+| ABCB009 | SEKOLAH JENIS KEBANGSAAN (CINA) YEE HWA | [Blog SJKC Yee Hwa, lencana pada seragam](<https://sjkcyeehwasb.blogspot.com/>) | `78f15cf3a5614001ce12f013b70201efd59d15d915af3189e0c3ad2e9fdf04b8` |
+| ABD1082 | SEKOLAH JENIS KEBANGSAAN (TAMIL) LADANG AYER TAWAR | [Blog SJKT Ladang Ayer Tawar](<https://sjktlat.blogspot.com/>) | `d0a2bb36168a5bdc0674ef21518c5d2a83866cffa329c5db7358a36855c87e49` |
+| CBC6034 | SEKOLAH JENIS KEBANGSAAN (CINA) YUH HWA | [Majalah SJKC Yuh Hwa Bukit Koman 2024/2025](<https://online.anyflip.com/oomez/zluv/mobile/index.html>) | `d39cf8455db61278a25d71c8f9ade6b2ee448b8b816513da683d29f03f64b261` |
+| DBA3237 | SEKOLAH KEBANGSAAN OTHMAN TALIB (2) | [Buku Program SK Othman Talib (2)](<https://anyflip.com/ztzjzr/mhtt/basic>) | `7e524a05f4aaf030f20b66692a6ad36073f4ffbb293fcf843d1e082c04483881` |
+| JBC0035 | SEKOLAH JENIS KEBANGSAAN (CINA) YONG PENG 1 | [Buku Kejohanan Olahraga SJKC Yong Peng 1](<https://online.fliphtml5.com/ymrps/dyjm/files/shot.jpg?1>) | `24c52bca47f94e3dafa95fed75163d629af52b55426e1f5d348f657925b0fa06` |
+| JBC9020 | SEKOLAH JENIS KEBANGSAAN (CINA) KEBUN BAHRU | [Foto Wee Hong di Wikimedia Commons, potongan dan penukaran PNG, CC BY-SA 4.0](<https://commons.wikimedia.org/wiki/File:SJK_(C)_Kebun_Bahru.jpg>) | `c09bb0f82902d361cc709f591d8323e5caf80e4de1769ecc6226e8f4def5cde6` |
+| MBD0064 | SEKOLAH JENIS KEBANGSAAN (TAMIL) LADANG GADEK | [Kertas Kerja Bahasa Tamil SJKT Ladang Gadek](<https://www.scribd.com/document/989519902/Kertas-Kerja-B-tamil-2024>) | `34ac425004c6ff6245b942fafbd857ca52c2588a3c3d2f360d3c46ec15419a78` |
+| PBC1046 | SEKOLAH JENIS KEBANGSAAN (CINA) AIK HUA | [Persatuan Hainan Pulau Pinang, poster SJKC Aik Hua](<https://www.hainan.my/aik-hua-school/>) | `b873792d18c0f915735b551f304f8ffc4b6bdd177e2fa39ef8c76571623aaa17` |
+| XBA5203 | SEKOLAH KEBANGSAAN KANIBONGAN | [Blog SK Kanibongan Pitas](<https://sk-kanibongan.blogspot.com/p/panitia.html>) | `f345744266a4307ac73bbf8516ac5fd632ea8cfd637d674c13784c5c7e7f35b5` |
+| XCC3041 | SEKOLAH JENIS KEBANGSAAN (CINA) SIN HWA | [Buku ulang tahun SJKC Sin Hwa Tawau](<https://anyflip.com/ibdxf/spwp/basic/101-150>) | `c6cd132c23205072d0483a34dcbcc71f0c696235323cde7bfb4b697475bf3c3c` |
+| XCC5034 | SEKOLAH JENIS KEBANGSAAN (CINA) LOK YUK BATU 1 KUDAT | [Foto sekolah SJKC Lok Yuk Batu 1 Kudat](<https://30.com.my/wp-content/uploads/2022/08/SJKC-Lok-Yuk-Batu-1-Kudat-Kudat-Sabah-1.jpg>) | `01c21114d31ce487393eabd6d9102bfc852d252e88f898ccff8486c50a164f0b` |
+| YBB3406 | SEKOLAH KEBANGSAAN SG ARAU | [Blog SK Sungai Arau Selangau](<https://sksungaiarauselangau.blogspot.com/2015/04/>) | `3062f0095f4e10ba8ecdcee0c70a14ff25c66d62acca0cddb4e512a585ae53f4` |
+| YCB2102 | SEKOLAH KEBANGSAAN ST LAWRENCE | [Buku program PIBKS SK St Lawrence (M)](<https://fliphtml5.com/gglvm/zrpx/Dinner_PIBKS%272024/>) | `bdb4111349f216c8cc5a87d83a5767198537d8a083127677564dd54b0ffe6c22` |
+| YCB8204 | SEKOLAH KEBANGSAAN ST MICHAEL MONGKOS | [Profil sekolah SK St Michael Mongkos](<https://www.schoolandcollegelistings.com/MY/Serian/117083944726083/SK-St-Michael-Mongkos-Serian>) | `f2d222a3b31ca5654c0cb2283bc0d42b74b46c300571eff157518f9d53cce241` |
+| YCC3214 | SEKOLAH JENIS KEBANGSAAN (CINA) KAI NANG | [Profil sekolah SJKC Kai Nang](<https://www.schoolandcollegelistings.com/MY/Kuching/268362826366439/SJKC-KAI-NANG>) | `1c287873ebbe7057de282ad585867553247c833a5cd1d72816022544bd31c4c4` |
+
 ## Sekolah yang masih memerlukan logo
 
 | Kod | Sekolah | PPD | Negeri |
 | --- | --- | --- | --- |
 | ABA0128 | SEKOLAH KEBANGSAAN JERNANG | PPD BATANG PADANG | Perak |
 | ABA7036 | SEKOLAH KEBANGSAAN RPS POS KEMAR | PPD HULU PERAK | Perak |
-| ABAB025 | SEKOLAH KEBANGSAAN SUNGAI TIANG BAROH | PPD BAGAN DATUK | Perak |
-| ABC1056 | SEKOLAH JENIS KEBANGSAAN (CINA) CHIEN HUA | PPD MANJUNG | Perak |
-| ABCA001 | SEKOLAH JENIS KEBANGSAAN (CINA) HO PIN | PPD MUALLIM | Perak |
-| ABCB003 | SEKOLAH JENIS KEBANGSAAN (CINA) POOI AING | PPD BAGAN DATUK | Perak |
-| ABCB009 | SEKOLAH JENIS KEBANGSAAN (CINA) YEE HWA | PPD BAGAN DATUK | Perak |
-| ABD1082 | SEKOLAH JENIS KEBANGSAAN (TAMIL) LADANG AYER TAWAR | PPD MANJUNG | Perak |
 | ABDB011 | SEKOLAH JENIS KEBANGSAAN (TAMIL) LADANG STRATHMASHIE | PPD BAGAN DATUK | Perak |
 | CBC4052 | SEKOLAH JENIS KEBANGSAAN (CINA) POAY CHAI | PPD KUANTAN | Pahang |
-| CBC6034 | SEKOLAH JENIS KEBANGSAAN (CINA) YUH HWA | PPD RAUB | Pahang |
-| DBA3237 | SEKOLAH KEBANGSAAN OTHMAN TALIB (2) | PPD PASIR MAS | Kelantan |
-| JBC0035 | SEKOLAH JENIS KEBANGSAAN (CINA) YONG PENG 1 | PPD BATU PAHAT | Johor |
-| JBC9020 | SEKOLAH JENIS KEBANGSAAN (CINA) KEBUN BAHRU | PPD TANGKAK | Johor |
 | KBC0047 | SEKOLAH JENIS KEBANGSAAN (CINA) POI CHEE | PPD BALING | Kedah |
-| MBD0064 | SEKOLAH JENIS KEBANGSAAN (TAMIL) LADANG GADEK | PPD ALOR GAJAH | Melaka |
-| PBC1046 | SEKOLAH JENIS KEBANGSAAN (CINA) AIK HUA | PPD TIMUR LAUT | Pulau Pinang |
 | XBA4376 | SEKOLAH KEBANGSAAN WASAI | PPD TUARAN | Sabah |
-| XBA5203 | SEKOLAH KEBANGSAAN KANIBONGAN | PPD PITAS | Sabah |
-| XCC3041 | SEKOLAH JENIS KEBANGSAAN (CINA) SIN HWA | PPD TAWAU | Sabah |
-| XCC5034 | SEKOLAH JENIS KEBANGSAAN (CINA) LOK YUK BATU 1 KUDAT | PPD KUDAT | Sabah |
-| YBB3406 | SEKOLAH KEBANGSAAN SG ARAU | PPD SELANGAU | Sarawak |
 | YBB6314 | SEKOLAH KEBANGSAAN ULU MERADONG | PPD MARADONG | Sarawak |
 | YCB1301 | SEKOLAH KEBANGSAAN EMPEROH JAMBU | PPD PADAWAN | Sarawak |
 | YCB1319 | SEKOLAH KEBANGSAAN GEORGE | PPD PADAWAN | Sarawak |
-| YCB2102 | SEKOLAH KEBANGSAAN ST LAWRENCE | PPD SRI AMAN | Sarawak |
-| YCB8204 | SEKOLAH KEBANGSAAN ST MICHAEL MONGKOS | PPD SERIAN | Sarawak |
 | YCC1329 | SEKOLAH JENIS KEBANGSAAN (CINA) CHUNG HUA SYN-SAN-TU | PPD PADAWAN | Sarawak |
-| YCC3214 | SEKOLAH JENIS KEBANGSAAN (CINA) KAI NANG | PPD SIBU | Sarawak |
 | YCC6111 | SEKOLAH JENIS KEBANGSAAN (CINA) SING MING | PPD SARIKEI | Sarawak |
