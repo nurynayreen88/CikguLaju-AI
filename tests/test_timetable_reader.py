@@ -171,6 +171,37 @@ class TimetableReaderTest(unittest.TestCase):
         self.assertEqual([row["start"] for row in rows], ["08:00", ""])
         self.assertEqual(unclear, [dict(day="Isnin", start="", end="", reason="time")])
 
+    def test_guided_merged_cells_can_span_a_gap_in_the_printed_times(self):
+        texts = [
+            ((40, 0, 80, 30), "09:10–09:40"),
+            ((80, 0, 120, 30), "10:00–10:30"),
+            ((0, 30, 40, 60), "Isnin"),
+            ((0, 60, 40, 90), "Selasa"),
+            ((40, 30, 120, 60), "Seni Visual 3 Kreatif"),
+            ((40, 60, 80, 90), "MZK 21"),
+            ((120, 30, 220, 60), "MATEMATIK"),
+        ]
+        rows, unclear = _read_grid(texts, [], guided=True, printed_classes={"2I"})
+        self.assertEqual([(row["start"], row["end"], row["class_name"], row["subject"])
+                          for row in rows], [
+            ("09:10", "10:30", "3 Kreatif", "Pendidikan Seni Visual"),
+            ("09:10", "09:40", "2I", "MZK"),
+        ])
+        self.assertEqual(rows[1]["subject_code"], "MZK")
+        self.assertEqual(unclear, [])
+
+    def test_afternoon_grid_uses_24_hour_times_and_ignores_assembly(self):
+        times = ("1:00", "1:30", "2:00", "2:30", "3:00", "3:30", "4:00", "4:30", "5:00")
+        texts = [((i*40, 0, (i+1)*40, 30), left+"–"+right)
+                 for i, (left, right) in enumerate(zip(times, times[1:]), start=1)]
+        texts += [((0, 30, 40, 60), "Isnin"), ((0, 60, 40, 90), "Selasa"),
+                  ((40, 30, 120, 60), "BI 2USM"), ((120, 30, 160, 60), "PE R"),
+                  ((40, 60, 120, 90), "BI 2 USM")]
+        rows, unclear = _read_grid(texts, [], guided=True)
+        self.assertEqual([(row["start"], row["end"], row["class_name"]) for row in rows],
+                         [("13:00", "14:00", "2 USM"), ("13:00", "14:00", "2 USM")])
+        self.assertEqual(unclear, [])
+
     def test_private_endpoint_authenticates_and_returns_real_slots(self):
         app = Flask(__name__)
         app.register_blueprint(bp)
