@@ -128,3 +128,30 @@ Padanan ini menggunakan DSKP KSSR (Semakan 2017) edisi bahasa Inggeris. KPM meny
 - **Science.** [DSKP edisi bahasa Inggeris](https://anyflip.com/ittl/ygqq/basic), [buku teks DLP](https://fliphtml5.com/fbdki/veis/Science_Year_2/) dan [RPT Science SK 2026](https://www.scribd.com/document/1044199355/Rpt-Sc-Dlp-Year-2-Sk-2026-by-Rozayus-Academy-Kump-a-0kump-b). [Lima RPH Humans](../staging/dlp/year2/science_unit_03.md) meliputi enam SP. Rekod 01–02 dan 03–04 memecahkan blok RPT kepada objektif individu. RPH menggunakan data rekaan, ukuran pada model dan carta keluarga fiksyen. BA m/s 19–20 dirujuk pada dua tempat dalam buku teks dan latihan asal perlu diperiksa sebelum diberikan secara khusus.
 - **Mathematics.** [DSKP edisi bahasa Inggeris](https://asiemodel.net/wp-content/uploads/2022/08/DSKP-Matematik-Tahun-2-DLP.pdf), [buku teks DLP Bahagian 2](https://fliphtml5.com/dpauv/dyzw/Mathematics_DLP_Year_2_Part_2/) dan [SOW Mathematics SK 2026](https://www.scribd.com/document/989378292/RPT-MATH-DLP-YEAR-2-SK-2026-Kump-A-Kump-B). [Lapan RPH Fractions and Decimals](../staging/dlp/year2/mathematics_unit_03.md) meliputi 13 SP. Rekod 04 dan 05 menggunakan SP 3.2.5 dalam dua konteks, iaitu menulis perpuluhan daripada sebutan dan daripada model. Rekod 07 membandingkan pecahan persepuluh dengan perpuluhan, mengikut contoh buku teks m/s 14.
 - Semua halaman BA dalam jadual ialah rujukan yang tertera dalam BT. Kandungan latihan BA asal masih perlu diperiksa. Jumlah Unit 1–3 kini 54 RPH. **Status HOLD untuk pengeluaran** sementara semakan guru, urutan PdP dan janaan Word/PDF melalui Web serta Telegram belum disahkan.
+
+## Year 2 Unit 4 source check
+
+| Rekod staging | Topik | CS / LS | DSKP m/s | Buku teks bercetak | Buku aktiviti bercetak | Rujukan BA tertera pada BT |
+| --- | --- | --- | --- | --- | --- | --- |
+| DLP-SCI-Y2-U04-01 | How Animals Reproduce | 4.1 / 4.1.1 | 40 | 36–37 | 21–22 (rujukan bersama) | 36 |
+| DLP-SCI-Y2-U04-02 | Classify Animals by Reproduction | 4.1 / 4.1.2 | 40 | 36–38 | 21–22 (rujukan bersama) | 36 |
+| DLP-SCI-Y2-U04-03 | Animals That Lay Few or Many Eggs | 4.1 / 4.1.3 | 40 | 39–40 | 23 | 39 |
+| DLP-SCI-Y2-U04-04 | Animals That Give Birth to Few or Many Young | 4.1 / 4.1.4 | 40 | 41–42 | 24 | 41 |
+| DLP-SCI-Y2-U04-05 | Record Changes During Animal Growth | 4.1 / 4.1.5 | 40 | 45–46 | 25–27 | 45 |
+| DLP-SCI-Y2-U04-06 | Compare Young Animals and Their Adults | 4.1 / 4.1.6 | 41 | 43–44 | 28 | 43 |
+| DLP-SCI-Y2-U04-07 | Communicate Observations About Reproduction and Growth | 4.1 / 4.1.7 | 41 | 46 dan 48 | — | — |
+| DLP-MAT-Y2-U04-01 | Recognise Malaysian Banknotes | 4.1 / 4.1.1 | 46 | Bahagian 2, 20 | 103 | 20 |
+| DLP-MAT-Y2-U04-02 | Find and Make Money Values | 4.1 / 4.1.2 | 46 | Bahagian 2, 21–22 | 104 | 22 |
+| DLP-MAT-Y2-U04-03 | Add Two Money Amounts | 4.2 / 4.2.1 | 46 | Bahagian 2, 23–25 | 105–106 (rujukan bersama) | 25 |
+| DLP-MAT-Y2-U04-04 | Add Three Money Amounts | 4.2 / 4.2.2 | 46 | Bahagian 2, 24–25 | 105–106 (rujukan bersama) | 25 |
+| DLP-MAT-Y2-U04-05 | Subtract Two Money Amounts | 4.3 / 4.3.1 | 46 | Bahagian 2, 26–28 | 107–108 (rujukan bersama) | 28 |
+| DLP-MAT-Y2-U04-06 | Subtract Two Amounts in Sequence | 4.3 / 4.3.2 | 46 | Bahagian 2, 27–28 | 107–108 (rujukan bersama) | 28 |
+| DLP-MAT-Y2-U04-07 | Multiply Money Amounts | 4.4 / 4.4.1 | 46 | Bahagian 2, 29–30 | 109 | 30 |
+| DLP-MAT-Y2-U04-08 | Divide Money Into Equal Shares | 4.5 / 4.5.1 | 46 | Bahagian 2, 31–32 | 110 | 32 |
+| DLP-MAT-Y2-U04-09 | Plan Spending and Savings | 4.6 / 4.6.1 | 47 | Bahagian 2, 33 | 111 | 33 |
+| DLP-MAT-Y2-U04-10 | Solve Shopping and Change Problems | 4.7 / 4.7.1 | 47 | Bahagian 2, 34–36 | 112 (rujukan bersama) | 36 |
+| DLP-MAT-Y2-U04-11 | Solve Equal-Group Money Problems | 4.7 / 4.7.1 | 47 | Bahagian 2, 34–37 | 112 (rujukan bersama) | 36 |
+
+- **Science.** [DSKP edisi bahasa Inggeris](https://anyflip.com/ittl/ygqq/basic), [buku teks DLP](https://fliphtml5.com/fbdki/veis/Science_Year_2/) dan [RPT Science SK 2026](https://www.scribd.com/document/1044199355/Rpt-Sc-Dlp-Year-2-Sk-2026-by-Rozayus-Academy-Kump-a-0kump-b). [Tujuh RPH Animals](../staging/dlp/year2/science_unit_04.md) meliputi ketujuh-tujuh SP. Urutan katalog ikut kod SP dan RPT, dengan perubahan tumbesaran 4.1.5 sebelum perbandingan rupa 4.1.6. Buku teks memaparkan perbandingan rupa dahulu. RPH 4.1.7 menggunakan PBD asal berdasarkan carta kitaran hidup. Rujukan BA 25–27 dicetak bersama SP 4.1.5 di BT m/s 45.
+- **Mathematics.** [DSKP edisi bahasa Inggeris](https://asiemodel.net/wp-content/uploads/2022/08/DSKP-Matematik-Tahun-2-DLP.pdf), [buku teks DLP Bahagian 2](https://fliphtml5.com/dpauv/dyzw/Mathematics_DLP_Year_2_Part_2/) dan [SOW Mathematics SK 2026](https://www.scribd.com/document/989378292/RPT-MATH-DLP-YEAR-2-SK-2026-Kump-A-Kump-B). [Sebelas RPH Money](../staging/dlp/year2/mathematics_unit_04.md) meliputi kesemua sepuluh SP. Penyelesaian masalah 4.7.1 dipecahkan kepada situasi beli dan baki serta situasi kumpulan sama banyak. RPH menggunakan harga, resit dan peruntukan rekaan untuk PBD individu.
+- Halaman BA dalam jadual disalin daripada rujukan dalam BT. Kandungan latihan BA asal masih perlu disemak. Keseluruhan Unit 1–4 merangkumi 72 RPH. Katalog untuk semakan guru, dengan janaan Word/PDF dalam penyediaan.

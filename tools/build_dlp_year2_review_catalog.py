@@ -23,12 +23,18 @@ def build_catalog():
     seen = set()
     for path in sorted(SOURCE.glob("*.md")):
         source = path.read_text(encoding="utf-8")
-        unit_name = re.search(r"^# .+? · (Unit [123] [^\n·]+)", source, re.M)[1].strip()
+        unit_heading = re.search(r"^# .+? · (Unit ([1-9]\d*) [^\n·]+)", source, re.M)
+        if not unit_heading:
+            raise ValueError(f"Missing unit heading in {path}")
+        unit_name = unit_heading[1].strip()
+        unit_id = unit_heading[2].zfill(2)
         sections = list(HEADER.finditer(source))
         if not sections:
             raise ValueError(f"No lessons in {path}")
         for index, match in enumerate(sections):
             lesson_id, subject, unit, title = match.groups()
+            if unit != unit_id:
+                raise ValueError(f"{lesson_id}: unit differs from the heading in {path}")
             end = sections[index + 1].start() if index + 1 < len(sections) else len(source)
             body = source[match.end():end]
             if lesson_id in seen:
