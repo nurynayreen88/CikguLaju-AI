@@ -153,6 +153,8 @@ class WebReferralTests(unittest.TestCase):
         client = self.make_app().test_client()
         path = "/api/web/admin/affiliate/members"
         self.assertEqual(client.get(path + "?page=-1").status_code, 400)
+        for invalid in ("", "pending", "paid,none"):
+            self.assertEqual(client.get(path, query_string={"referral_status":invalid}).status_code, 400)
         rpc.assert_not_called()
         rpc.return_value = {"items":[{"user_id":"123", "balance":2, "available":2, "paid":10, "reserved":0}],
                             "more":False}
@@ -160,7 +162,12 @@ class WebReferralTests(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json, rpc.return_value)
         self.assertIn("no-store", response.headers["Cache-Control"])
-        rpc.assert_called_once_with("affiliate_admin_members", p_page=1, p_page_size=25)
+        rpc.assert_called_once_with("affiliate_admin_members", p_page=1, p_page_size=25, p_referral_status="all")
+        for status in ("all", "registered", "none", "unpaid", "paid"):
+            response = client.get(path, query_string={"page":"2", "referral_status":status})
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.json, rpc.return_value)
+            rpc.assert_called_with("affiliate_admin_members", p_page=2, p_page_size=25, p_referral_status=status)
 
     @patch("web.web_referral_routes._auth_uid", return_value=456)
     @patch("web.web_referral_routes.allowed_admin_ids", return_value={456})

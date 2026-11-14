@@ -303,9 +303,13 @@ def affiliate_admin_members():
     if error is not None:
         return error
     page = request.args.get("page", "0")
+    referral_status = request.args.get("referral_status", "all")
     if not re.fullmatch(r"[0-9]{1,5}", page):
         return jsonify(error="Halaman tidak sah."), 400
-    return _claim_result(_rpc("affiliate_admin_members", p_page=int(page), p_page_size=25))
+    if referral_status not in ("all", "registered", "none", "unpaid", "paid"):
+        return jsonify(error="Status jemputan tidak sah."), 400
+    return _claim_result(_rpc("affiliate_admin_members", p_page=int(page), p_page_size=25,
+                              p_referral_status=referral_status))
 
 
 @bp.post("/api/web/admin/affiliate/claims/<uuid:claim_id>")
