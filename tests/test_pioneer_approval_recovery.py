@@ -212,6 +212,18 @@ class TestStalePioneerApproval(unittest.TestCase):
         self.assertIn("admin_approve|1|202", self.buttons())
         self.grant_mock.assert_not_called()
 
+    def test_durable_rakan_uses_shared_review_for_both_decisions(self):
+        from unittest.mock import Mock
+
+        self.ns["_review_rakan_payment"] = Mock(side_effect=[
+            {"status": "approved"}, {"status": "rejected"}])
+        self.ns["callback"](ADMIN, "admin_approve|1|201")
+        self.ns["callback"](ADMIN, "admin_reject|1")
+        calls = self.ns["_review_rakan_payment"].call_args_list
+        self.assertEqual([call.args[2] for call in calls], ["approved", "rejected"])
+        self.assertTrue(all(call.args[:2] == (self.bot.requests[1], ADMIN) for call in calls))
+        self.assertEqual(self.bot.marked, [])
+
     def test_missing_proof_blocks_even_forged_fresh_button(self):
         self.bot.requests[1]["notes"] = "awaiting_proof"
         self.ns["callback"](ADMIN, "admin_approve|1")

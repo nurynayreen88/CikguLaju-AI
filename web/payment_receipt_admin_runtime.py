@@ -79,7 +79,7 @@ def install(rt):
             if uid <= 0:
                 raise ValueError("Invalid payer")
             amount = Decimal(str(req["amount"]))
-            if amount != Decimal("10.00"):
+            if amount not in (Decimal("10.00"), Decimal("20.00")):
                 raise ValueError("Invalid plan")
             if int(req["id"]) != int(rid):
                 raise ValueError("Payment ID changed")
@@ -168,7 +168,7 @@ def install(rt):
         if not req:
             return send(cid, "⚠️ Rekod bayaran tidak ditemui.")
         try:
-            is_rakan = (Decimal(str(req.get("amount"))) == Decimal("10.00")
+            is_rakan = (Decimal(str(req.get("amount"))) in (Decimal("10.00"), Decimal("20.00"))
                         and req.get("status") == "pending")
         except (InvalidOperation, TypeError, ValueError):
             is_rakan = False

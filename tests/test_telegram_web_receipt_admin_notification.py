@@ -75,6 +75,11 @@ class WebReceiptNoticeTests(unittest.TestCase):
             headers={"Authorization": authorization or "Bearer "+SECRET},
             json={"request_id":rid, "telegram_user_id":uid})
 
+    def test_rm20_receipt_notifies_admin_with_actual_amount(self):
+        self.row["amount"] = "20.00"
+        self.assertEqual(self.notify().status_code, 200)
+        self.assertIn("RM20.00", self.copied[0]["json"]["caption"])
+
     def test_registration_never_sends_or_reviews(self):
         self.assertEqual(self.copied, [])
         self.assertEqual(self.sent, [])

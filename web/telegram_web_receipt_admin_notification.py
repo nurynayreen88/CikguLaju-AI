@@ -36,7 +36,7 @@ def _valid_pending_row(row, uid, rid):
         and row["id"] == rid
         and str(row.get("chat_id")) == str(uid)
         and row.get("status") == "pending"
-        and amount == Decimal("10.00")
+        and amount in (Decimal("10.00"), Decimal("20.00"))
         and row.get("notes") == "proof_received_web"
         and isinstance(row.get("proof_telegram_file_id"), str)
         and bool(row["proof_telegram_file_id"].strip())
@@ -128,7 +128,7 @@ def create_web_receipt_admin_notification(runtime):
             f"🧾 Permohonan: <b>#{rid}</b>\n"
             f"👤 ID pengguna: <code>{uid}</code>\n"
             "🏆 Pakej: <b>Rakan Pembangun</b>\n"
-            "💰 Jumlah: <b>RM10.00</b>\n"
+            f"💰 Jumlah: <b>RM{Decimal(str(row['amount'])):.2f}</b>\n"
             f"🕒 Resit dihantar: <b>{timestamp}</b>\n"
             "⏳ Status: <b>PENDING</b>\n\n"
             "Semak resit dan transaksi sebenar sebelum mengesahkan."

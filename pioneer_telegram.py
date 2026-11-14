@@ -132,6 +132,23 @@ def install(ns):
         count, remaining = pioneer_availability(sb)
         return f"📊 {pioneer_percentage(count)} telah menyertai"
 
+    def review_durable_rakan(cid, req, decision):
+        try:
+            result = ns["_review_rakan_payment"](req, cid, decision)
+        except Exception as exc:
+            print("RAKAN PAYMENT REVIEW unavailable:", type(exc).__name__, flush=True)
+            return send(cid, "⚠️ Semakan bayaran belum selesai. Muat semula kad permohonan.")
+        if not isinstance(result, dict) or result.get("status") != decision:
+            if isinstance(result, dict) and result.get("error") == "already_active":
+                return send(cid, "ℹ️ Rakan Pembangun sudah aktif. Semak transaksi asal sebelum memutuskan bayaran ini.")
+            return send(cid, "⚠️ Bayaran sudah disemak atau resit berubah. Muat semula kad permohonan.")
+        if decision == "rejected":
+            send(req["chat_id"], "❌ Bayaran Rakan Pembangun belum disahkan. Semak transaksi dan hantar semula resit sedia ada.")
+            return send(cid, f"Bayaran #{req['id']} ditolak.")
+        send(cid, f"✅ Rakan Pembangun diaktifkan untuk {req['chat_id']}.")
+        return send(req["chat_id"], "🏆 <b>Status Rakan Pembangun Anda: AKTIF</b>",
+                    [[{"text": "🏠 Kembali ke Menu Utama", "callback_data": "home"}]])
+
     def callback(cid, d):
         if str(d).startswith(("pioneer_revoke_ask|", "pioneer_revoke_confirm|")):
             if not ns["_is_admin"](cid):
@@ -224,6 +241,15 @@ def install(ns):
                             "Semak panel admin. Jangan minta pelanggan bayar semula.",
                             [[{"text": "🛠️ Panel Admin", "callback_data": "admin_panel"}]])
             return ns["_admin_pending_card"](cid, rid)
+        if str(d).startswith("admin_reject|") and ns.get("_review_rakan_payment"):
+            if not ns["_is_admin"](cid):
+                return send(cid, "⛔ Admin sahaja.")
+            _, _, raw_id = str(d).partition("|")
+            if not raw_id.isascii() or not raw_id.isdecimal() or not 0 < int(raw_id) < 10**18:
+                return send(cid, "⚠️ ID bayaran tidak sah.")
+            req = ns["_payment_request"](int(raw_id))
+            if req and float(req["amount"]) in (10.0, 20.0):
+                return review_durable_rakan(cid, req, "rejected")
         if str(d).startswith("admin_approve|"):
             if not ns["_is_admin"](cid):
                 return send(cid, "⛔ Admin sahaja.")
@@ -266,6 +292,8 @@ def install(ns):
                          [{"text": "📄 Buka Kad Permohonan Semasa",
                            "callback_data": f"pioneer_review|{rid}"}],
                          [{"text": "🛠️ Panel Admin", "callback_data": "admin_panel"}]])
+                if ns.get("_review_rakan_payment"):
+                    return review_durable_rakan(cid, req, "approved")
                 if has_pioneer(sb, int(req["chat_id"])):
                     # A manually verified entitlement may already be active even
                     # when the local SQLite payment is still pending. Reconcile
