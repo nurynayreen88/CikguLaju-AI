@@ -173,13 +173,34 @@ def teacher_school_logo_candidate():
         return err
     if request.args:
         return jsonify({"error": "Parameter tambahan tidak dibenarkan"}), 400
-    from web.school_logo_candidate import logo_candidate, LogoSourceUnavailable
     try:
         profile = get_profile(conf["supabase_url"], conf["supabase_key"], uid)
-        code = profile.get("school_code") or ""
-        candidate = logo_candidate(conf["supabase_url"], conf["supabase_key"], code)
     except (ProfileUnavailable, ProfileValidation):
         return jsonify({"error": "Profil sekolah belum dapat disemak"}), 503
+    return _school_logo_catalog_response(conf, profile.get("school_code") or "")
+
+
+@bp.get("/api/web/teacher/school-logo-preview")
+def teacher_school_logo_preview():
+    """Read a directory logo without changing the teacher's saved profile."""
+    conf, _, err = _auth()
+    if err is not None:
+        return err
+    from web.school_logo_candidate import CODE
+
+    if set(request.args) != {"school_code"} or len(request.args.getlist("school_code")) != 1:
+        return jsonify({"error": "Pilih satu kod sekolah"}), 400
+    code = request.args["school_code"]
+    if not CODE.fullmatch(code):
+        return jsonify({"error": "Kod sekolah tidak sah"}), 400
+    return _school_logo_catalog_response(conf, code)
+
+
+def _school_logo_catalog_response(conf, code):
+    from web.school_logo_candidate import logo_candidate, LogoSourceUnavailable
+
+    try:
+        candidate = logo_candidate(conf["supabase_url"], conf["supabase_key"], code)
     except LogoSourceUnavailable:
         return jsonify({"error": "Sumber logo sekolah belum dapat dihubungi"}), 503
     if candidate is None:

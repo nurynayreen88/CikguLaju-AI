@@ -232,6 +232,8 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .school-logo-card{display:grid;grid-template-columns:142px minmax(0,1fr);gap:22px;align-items:center;margin:19px 0;padding:18px;border:1px solid #cfe5e8;border-radius:17px;background:linear-gradient(135deg,#f0fbfa,#fbfdff)}
 .school-logo-preview{height:142px;width:142px;display:flex;align-items:center;justify-content:center;border:2px dashed #b3d2d3;border-radius:18px;background:#fff;color:#77959d;text-align:center;line-height:1.6;font-size:.72rem;font-weight:850;letter-spacing:.07em}
 .school-logo-preview img{display:block;object-fit:contain;width:100%;height:100%;padding:9px}
+.school-logo-preview.is-candidate #school-logo-preview,.school-logo-preview.is-candidate #school-logo-placeholder{display:none}
+.school-logo-preview.is-candidate:has(#school-logo-selection-preview[hidden])::after{content:"LOGO SEKOLAH"}
 .school-logo-content{min-width:0}
 .school-logo-content h4{font-size:1.1rem;color:#13465d;margin:0 0 7px}
 .school-logo-content p{margin:5px 0;line-height:1.5}
@@ -732,9 +734,10 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   </div>
   <p id="profile-school-notice" role="status">Pilih Negeri → PPD → Sekolah untuk nama penuh. Senarai rujukan Jun 2022; semak jika sekolah baharu atau bertukar nama.</p>
   <section class="school-logo-card" aria-labelledby="school-logo-heading">
-    <div class="school-logo-preview"><img id="school-logo-preview" alt="Logo sekolah tersimpan" hidden><span id="school-logo-placeholder">LOGO<br>SEKOLAH</span></div>
+    <div class="school-logo-preview"><img id="school-logo-preview" alt="Logo sekolah tersimpan" hidden><span id="school-logo-placeholder">LOGO<br>SEKOLAH</span><img id="school-logo-selection-preview" alt="Logo sekolah yang dipilih" hidden></div>
     <div class="school-logo-content"><h4 id="school-logo-heading">Logo Sekolah</h4><p>Simpan logo sekolah dalam profil. Logo dan nama sekolah hanya akan muncul pada cetakan RPT apabila akses berbayar masih aktif.</p>
       <div class="profile-actions"><button id="school-logo-auto" type="button" disabled>Ambil Logo Automatik</button></div>
+      <p class="notice" id="school-logo-selection-status" role="status" hidden></p>
       <label for="school-logo-file">Pilih fail logo</label><input id="school-logo-file" type="file" accept="image/png,image/jpeg,image/webp,.png,.jpg,.jpeg,.webp" aria-describedby="school-logo-help">
       <p class="notice" id="school-logo-help">PNG, JPG atau WebP · maksimum 2 MB · latar telus dibenarkan.</p>
       <div class="profile-actions"><button id="school-logo-upload" type="button" disabled>Muat Naik Logo</button><span id="school-logo-status" class="notice" role="status" aria-live="polite">Logo belum disemak.</span></div>
@@ -1996,7 +1999,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
 <script src="/assets/rph-today.js?v=science-copy-expanded-20261113"></script>
-<script src="/assets/teacher-profile.js?v=school-search-20261114"></script>
+<script src="/assets/teacher-profile.js?v=school-logo-preview-20261114"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>
 <script src="/assets/admin-usage.js?v=payment-inbox-20261114"></script>
