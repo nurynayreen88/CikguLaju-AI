@@ -30,8 +30,6 @@ SUBJECT_LABELS = {
     "BM": "Bahasa Melayu",
     "MATH": "Matematik",
     "SCIENCE": "Sains",
-    "SCIENCE_DLP": "Science (DLP)",
-    "MATH_DLP": "Mathematics (DLP)",
     "PI": "Pendidikan Islam",
     "PJPK": "PJPK",
     "MORAL": "Pendidikan Moral",
@@ -451,7 +449,8 @@ def _selection():
     year = int(raw_year)
     subject, unit, lesson = (request.args[key] for key in ("subject", "unit", "lesson"))
     component = request.args.get("component")
-    if subject not in SUBJECT_LABELS or not _safe_text(unit) or not _safe_text(lesson, MAX_TOKEN):
+    if ((subject not in SUBJECT_LABELS and subject not in DLP_CODES)
+            or not _safe_text(unit) or not _safe_text(lesson, MAX_TOKEN)):
         raise ValueError("Invalid subject or lesson")
     if subject in DLP_CODES and year != 2:
         raise ValueError("DLP downloads are available for Year 2")
