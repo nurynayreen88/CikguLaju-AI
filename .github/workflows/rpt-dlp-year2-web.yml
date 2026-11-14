@@ -1,0 +1,23 @@
+name: RPT DLP Year 2 Web
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'rpt_2027/dlp/**'
+      - 'web/rpt_2027_all_http.py'
+      - 'web_v1_static_preview/rpt-personalize.js'
+      - 'tests/test_web_rpt2027_56_release_catalog.py'
+      - '.github/workflows/rpt-dlp-year2-web.yml'
+permissions:
+  contents: read
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install flask
+      - run: python -m unittest tests.test_web_rpt2027_56_release_catalog tests.test_web_rpt_2027_all tests.test_rpt2027_catalog_teacher_labels_20261110
+      - run: node --check web_v1_static_preview/rpt-personalize.js

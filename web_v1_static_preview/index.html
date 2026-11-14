@@ -1816,7 +1816,7 @@ function renderAllRptCards(data){
    if(!Number.isInteger(year?.year))continue;
    listed++;
    const card=document.createElement("div");card.className="rpt-year-card";
-   const title=document.createElement("strong");title.textContent=rptYearLabel(year.year);
+   const title=document.createElement("strong");title.textContent=rptYearLabel(year.year,year.year_label);
    const status=document.createElement("span");status.className="rpt-year-status";
    status.textContent=year.year===1?"Belum dibuka":year.download_enabled===true?"PDF tersedia":"Belum tersedia";
    card.append(title,status);
@@ -1851,7 +1851,7 @@ function renderAllRptCards(data){
   (data.personalization_allowed===true?". Akaun berbayar aktif: muka depan boleh diisi dengan nama dan logo.":". Muat turun percuma tanpa nama dan logo pada cetakan.");
 }
 const rptSubject=document.getElementById("rpt-subject"),rptYear=document.getElementById("rpt-year"),rptDownload=document.getElementById("rpt-download"),rptMobileLink=document.getElementById("rpt-download-mobile"),rptStatus=document.getElementById("rpt-status");
-function rptYearLabel(year){return year===1?"Tahun 1 (KP Baharu)":"Tahun "+year;}
+function rptYearLabel(year,label){return label||(year===1?"Tahun 1 (KP Baharu)":"Tahun "+year);}
 let rptCatalog=null;
 async function loadRptCatalog(){
  rptDownload.disabled=true;
@@ -1933,7 +1933,7 @@ rptSubject.addEventListener("change",()=>{
  const item=rptCatalog?.subjects.find(s=>s.code===rptSubject.value);
  if(!item){rptYear.disabled=true;rptStatus.textContent="Pilih subjek.";return;}
  for(const year of item.years){
-  rptYear.add(new Option(rptYearLabel(year.year)+" — "+(year.year===1?"Akan Datang":year.status),String(year.year)));
+  rptYear.add(new Option(rptYearLabel(year.year,year.year_label)+" — "+(year.year===1?"Akan Datang":year.status),String(year.year)));
  }
  rptYear.disabled=false;rptStatus.textContent="Pilih tahun untuk RPT "+item.label+".";
 });

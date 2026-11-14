@@ -128,5 +128,45 @@
     "sejarah:6": "c4acfae098d482be802d9432985263da71ba302dfd39eeb6f560e18c940532b7"
   },
   "rtl_pi_arabic_pdf_hashes_updated_without_cover_geometry_changes": true,
-  "cover_hash_synced_to_manifest_after_20261110_pdf_updates": true
+  "cover_hash_synced_to_manifest_after_20261110_pdf_updates": true,
+  "dlp_year2": {
+    "version": 1,
+    "status": "DLP_YEAR_2_PDF_COVER",
+    "page_width": 841.89,
+    "page_height": 595.304,
+    "tolerance_pt": 0.3,
+    "identity_background_rgb": [
+      1,
+      1,
+      1
+    ],
+    "source_sha256_by_subject_year": {
+      "mathematics_dlp:2": "1a807c212c86ce9c5cad277bd777c36a596f0fc70cbcda12fb3d4741934d6d4e",
+      "science_dlp:2": "b1929dcc33c9b20c2f53ddec10c7ed2f674d273542750152fb71204129983bda"
+    },
+    "logo_interior_top_left": [
+      700,
+      194,
+      805,
+      256
+    ],
+    "logo_image_safe_top_left": [
+      705,
+      198,
+      800,
+      252
+    ],
+    "school_row_top_left": [
+      156,
+      194,
+      697,
+      223
+    ],
+    "teacher_row_top_left": [
+      156,
+      227,
+      697,
+      255
+    ]
+  }
 }

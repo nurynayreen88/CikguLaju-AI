@@ -43,6 +43,29 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
         self.tmp.cleanup()
     def _save(self):
         (self.base/"manifest.json").write_text(json.dumps(self.manifest),encoding="utf-8")
+    def test_year_two_dlp_pdf_and_catalog_do_not_change_legacy_manifest(self):
+        folder = self.root / "dlp"
+        folder.mkdir()
+        files = {}
+        for name in ("Science", "Mathematics"):
+            path = folder / f"CikguLaju_RPT_DLP_2027_{name}_Year_2.pdf"
+            path.write_bytes(b"%PDF-" + name.encode() * 3000)
+            files[name.lower() + "_dlp"] = path.read_bytes()
+        with (patch("web.rpt_2027_all_http._account", return_value=({"telegram_user_id":42}, None)),
+              patch("web.rpt_2027_all_http._has_paid_access", side_effect=[False, True, True])):
+            data = self.client.get("/api/rpt/2027/catalog").get_json()
+            self.assertEqual(data["total_rpt"], 58)
+            self.assertEqual(data["available_rpt"], 58)
+            self.assertEqual(len(expected_pairs()), 56)
+            for code, expected in files.items():
+                entry = next(s for s in data["subjects"] if s["code"] == code)
+                self.assertEqual(entry["years"][0]["year_label"], "Year 2")
+                response = self.client.get(f"/api/rpt/2027/all/{code}/2.pdf")
+                self.assertEqual(response.data, expected)
+                self.assertEqual(response.headers["X-RPT-Personalization-Allowed"], "1")
+                self.assertIn("attachment", response.headers["Content-Disposition"])
+                self.assertEqual(self.client.get(f"/api/rpt/2027/all/{code}/3.pdf").status_code, 404)
+
     def test_all_56_files_and_12_subjects_only(self):
         data=catalog_data(root=self.root,allowed=True)
         self.assertEqual(len(data["subjects"]),12)

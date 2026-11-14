@@ -76,10 +76,13 @@
       box[0]<box[2]&&box[1]<box[3];
   }
   function validatedLayout(layout,key,hash){
+    const dlp = key === "science_dlp:2" || key === "mathematics_dlp:2";
+    if(dlp)layout = layout?.dlp_year2;
+    const status = dlp ? "DLP_YEAR_2_PDF_COVER" : "ORIGINAL_COVER_TEMPLATE_LOCKED_TO_56_SOURCE_PDF_SHA256";
+    const count = dlp ? 2 : 56;
     if(!layout||layout.version!==1||
-       layout.status!=="ORIGINAL_COVER_TEMPLATE_LOCKED_TO_56_SOURCE_PDF_SHA256" ||
-       !layout.source_sha256_by_subject_year||
-       Object.keys(layout.source_sha256_by_subject_year).length!==56||
+       layout.status!==status||
+       Object.keys(layout.source_sha256_by_subject_year||{}).length!==count||
        layout.source_sha256_by_subject_year[key]!==hash||
        !/^[a-f0-9]{64}$/.test(hash)||
        !Array.isArray(layout.identity_background_rgb)||
@@ -214,7 +217,8 @@
     }
     const download=new Blob([output],{type:"application/pdf"});
     const url=URL.createObjectURL(download);
-    const filename="CIKGULAJU_RPT_"+code.toUpperCase()+"_TAHUN_"+year+
+    const yearLabel=code.endsWith("_dlp")?"_YEAR_":"_TAHUN_";
+    const filename="CIKGULAJU_RPT_"+code.toUpperCase()+yearLabel+year+
       (result.personalized?"_2027_ISI_PROFIL.pdf":"_2027_PERCUMA.pdf");
     function downloadLink(doc){
       const link=doc.createElement("a");
