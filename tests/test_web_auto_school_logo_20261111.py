@@ -82,6 +82,22 @@ class AutoLogoTests(unittest.TestCase):
         self.assertEqual(len(opener.requests),1)
         self.assertIn("/school-logo-catalog/",opener.requests[0])
 
+    def test_restored_logo_has_priority_and_original_is_a_fallback(self):
+        restored = b"\x89PNG\r\n\x1a\nrestored"
+        old = b"\x89PNG\r\n\x1a\noriginal"
+        with patch("web.school_logo_candidate.school_by_code",
+                   return_value={"school_level": "Rendah"}), \
+             patch("web.school_logo_candidate._read", return_value=[]) as registry, \
+             patch("web.school_logo_candidate._catalog_image",
+                   side_effect=[restored, None, old]) as storage:
+            self.assertEqual(logo_candidate("https://db.example", "fake", "JBC1051"),
+                             (restored, "image/png"))
+            registry.assert_not_called()
+            self.assertEqual(logo_candidate("https://db.example", "fake", "JBC1051"),
+                             (old, "image/png"))
+        self.assertEqual([call.args[2] for call in storage.call_args_list],
+                         ["restored-512-v1", "restored-512-v1", "risalahmap"])
+
     def test_no_candidate_does_not_make_external_request(self):
         opener=FakeOpener(b"", missing_catalog=True)
         with patch("web.school_logo_candidate.school_by_code",

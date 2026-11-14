@@ -3,6 +3,8 @@ const fs = require("node:fs");
 const vm = require("node:vm");
 
 const script = fs.readFileSync("web_v1_static_preview/teacher-profile.js", "utf8");
+const processor = script.slice(script.indexOf("const schoolLogoCatalogSize="),
+  script.indexOf("// Only a SAVED school code"));
 const methods = script.slice(script.indexOf("function savedLogoSchoolCode()"),
   script.indexOf("async function saveCandidateLogoToPrivateStorage"));
 const selectHandler = script.slice(script.indexOf('schoolChoiceField.addEventListener("change",'),
@@ -21,6 +23,18 @@ const schoolChoiceField = {
   addEventListener(event, handler) { this[event] = handler; },
 };
 const state = {loaded: true, savedProfile: JSON.stringify({school_code: "KBA4015"})};
+const drawCalls = [];
+const canvas = {
+  getContext: () => ({
+    clearRect() {},
+    drawImage: (_picture, ...box) => drawCalls.push(box),
+  }),
+  toBlob: callback => callback({
+    type: "image/png", size: 20, id: currentImage.id,
+    width: canvas.width, height: canvas.height,
+  }),
+};
+let currentImage;
 const context = {
   AbortController, URLSearchParams, schoolChoiceField, schoolLogoSelectionImage,
   schoolLogoFile: {files: []}, schoolLogoAutoButton: {}, schoolLogoSelectionStatus: {hidden: true},
@@ -28,11 +42,20 @@ const context = {
   schoolCatalogOptions: [{value: "KBA4016", label: "SEKOLAH KEBANGSAAN PADANG PERAHU"},
                          {value: "KBA4017", label: "SEKOLAH UJIAN"}],
   schoolLogoSelectionUrl: null, schoolLogoSelectionRequest: null,
-  teacherProfileState: state, document: {getElementById: () => schoolChoiceField},
+  teacherProfileState: state,
+  document: {getElementById: () => schoolChoiceField, createElement: () => canvas},
+  Image: class {
+    set src(value) { this.id = value.slice(5); }
+    async decode() {
+      this.width = 100;
+      this.height = 200;
+      currentImage = this;
+    }
+  },
   URL: {createObjectURL: blob => "blob:" + blob.id, revokeObjectURL: url => revoked.push(url)},
   fetch: (path, options) => new Promise(resolve => requests.push({path, options, resolve})),
 };
-vm.runInNewContext(methods + selectHandler, context);
+vm.runInNewContext(processor + methods + selectHandler, context);
 
 const png = id => ({ok: true, blob: async () => ({type: "image/png", size: 20, id})});
 const settle = () => new Promise(resolve => setImmediate(resolve));
@@ -53,6 +76,13 @@ const settle = () => new Promise(resolve => setImmediate(resolve));
   assert.equal(schoolLogoSelectionImage.src, "blob:KBA4017");
   assert.equal(schoolLogoSelectionImage.hidden, false);
   assert.ok(classes.has("is-candidate"));
+  assert.deepEqual(drawCalls.at(-1), [128, 0, 256, 512]);
+  const fitted = await context.schoolLogoToPng({id: "small"}, {catalog: true});
+  assert.equal(fitted.width, 512);
+  assert.equal(fitted.height, 512);
+  const manual = await context.schoolLogoToPng({id: "manual"});
+  assert.equal(manual.width, 100);
+  assert.equal(manual.height, 200);
   requests[0].resolve(png("KBA4016"));
   await settle();
   assert.equal(schoolLogoSelectionImage.src, "blob:KBA4017");
