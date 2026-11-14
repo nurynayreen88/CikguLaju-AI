@@ -1,3 +1,5 @@
+import json
+from pathlib import Path
 import unittest
 from curriculum_version_telegram import install
 
@@ -66,23 +68,45 @@ class TelegramCurriculumTests(unittest.TestCase):
         years = [row[0] for row in self.messages[-1][1][:6]]
         self.assertEqual([button["callback_data"] for button in years],
                          [f"cv_year{n}_dlp" for n in range(1,7)])
-        self.assertEqual(years[0]["text"],"Tahun 1 (KP Baharu) — Akan Datang")
-        self.assertEqual(years[1]["text"],"Tahun 2 — Pratonton")
+        self.assertEqual(years[0]["text"],"Tahun 1 (KP Baharu) — Dalam Penyediaan")
+        self.assertEqual(years[1]["text"],"Tahun 2 — Untuk Semakan Guru")
         self.ns["callback"](1,"cv_year2_dlp")
         keys = {button["callback_data"]:button["text"] for row in self.messages[-1][1] for button in row}
         self.assertEqual(set(keys),{"cv_dlp_science","cv_dlp_math","cv_primary_dlp","home"})
-        for data,title,topic in (("cv_dlp_science","Science (DLP)","Observe"),
-                                 ("cv_dlp_math","Mathematics (DLP)","Recognise Numbers")):
-            with self.subTest(data=data):
-                self.assertEqual(keys[data],title+" — Pratonton")
+        source = Path(__file__).resolve().parents[1] / "data" / "dlp_year2_review.json"
+        catalog = json.loads(source.read_text(encoding="utf-8"))
+        for data, code, title, count in (
+            ("cv_dlp_science", "SCIENCE_DLP", "Science (DLP)", 13),
+            ("cv_dlp_math", "MATH_DLP", "Mathematics (DLP)", 41),
+        ):
+            self.assertEqual(keys[data], f"{title} — {count} RPH")
+            self.ns["callback"](1,data)
+            self.assertIn("Untuk Semakan Guru",self.messages[-1][0])
+            self.assertEqual(len(self.messages[-1][1]),4)
+            groups = catalog[code]
+            self.assertEqual(sum(len(group["lessons"]) for group in groups),count)
+            for group in groups:
+                callback = "cv_dlp_unit_" + group["id"]
+                self.ns["callback"](1,callback)
+                lesson_keys = [row[0]["callback_data"] for row in self.messages[-1][1][:-1]]
+                self.assertEqual(lesson_keys,["cv_dlp_rph_" + row["id"] for row in group["lessons"]])
+                for key, lesson in zip(lesson_keys,group["lessons"],strict=True):
+                    self.ns["callback"](1,key)
+                    msg,kb=self.messages[-1]
+                    self.assertIn(lesson["title"],msg)
+                    self.assertIn(lesson["references"],msg)
+                    self.assertIn("Teacher:",msg)
+                    self.assertIn("Pupils:",msg)
+                    self.assertIn("Reflection",msg)
+                    self.assertLess(len(msg),4096)
+                    self.assertEqual(kb[0][0]["callback_data"],callback)
+                    self.assertLessEqual(len(key.encode()),64)
+                    self.assertNotIn("matsubmit2528",str(kb))
+                self.ns["callback"](1,"cv_dlp_rph_DLP-UNKNOWN-Y2-U01-01")
+                self.assertIn("Pilih unit",self.messages[-1][0])
                 self.ns["callback"](1,data)
-                msg,kb=self.messages[-1]
-                self.assertIn(topic,msg)
-                self.assertIn("Activity Book pp. 1–2",msg)
-                self.assertIn("back_subjects",str(kb))
-                self.assertNotIn("matsubmit2528",str(kb))
-                self.ns["callback"](1,"back_subjects")
-                self.assertIn("cv_dlp_math",str(self.messages[-1][1]))
+            self.ns["callback"](1,"back_subjects")
+            self.assertIn("cv_dlp_math",str(self.messages[-1][1]))
         self.assertNotIn("subject",self.ns["state"][1])
         self.assertEqual(self.calls,[])
         self.ns["callback"](1,"sub_Sains")
@@ -100,12 +124,12 @@ class TelegramCurriculumTests(unittest.TestCase):
                 year_label = f"Tahun {n}" + (" (KP Baharu)" if n == 1 else "")
                 self.assertIn(year_label,self.messages[-1][0])
                 self.assertEqual([row[0]["text"] for row in self.messages[-1][1][:2]],
-                                 ["Science (DLP) — Akan Datang","Mathematics (DLP) — Akan Datang"])
+                                 ["Science (DLP) — Dalam Penyediaan","Mathematics (DLP) — Dalam Penyediaan"])
                 for code in ("cv_dlp_science","cv_dlp_math"):
                     self.ns["callback"](1,code)
                     message = self.messages[-1][0]
                     self.assertIn(year_label,message)
-                    self.assertIn("Akan Datang",message)
+                    self.assertIn("Dalam Penyediaan",message)
                     self.assertNotIn("Activity Book",message)
                 self.ns["callback"](1,"matsubmit2528")
                 self.assertEqual(self.calls,[])

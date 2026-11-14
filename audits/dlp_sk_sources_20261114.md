@@ -35,3 +35,96 @@ Rujukan [E-Katalog Buku Teks KPM](https://moe.gov.my/storage/files/shares/Banner
 ## Padanan sebelum janaan
 
 Gunakan identiti SK, edisi kurikulum, Tahun, subjek, versi DLP dan Lesson/PdP pada setiap rekod. Padankan standard dan rujukan buku terlebih dahulu, kemudian semak RPH bahasa Inggeris serta bukti PBD. Sambungan Word/PDF dan petikan bahan perlu diuji melalui pilihan Lesson yang sama di Web dan Telegram. Petikan buku menggunakan sumber dalaman yang tersedia dan disahkan.
+
+Paparan **Untuk Semakan Guru** menyediakan teks penuh RPH Unit 1–3 pada menu DLP Tahun 2. Sumbernya ialah 54 rekod di bawah. Paparan mengikut tajuk dan kod dalaman supaya urutan buku teks dapat dibaca sementara nombor PdP produksi disahkan. Penjanaan fail dan petikan buku kekal berstatus **Dalam Penyediaan**.
+
+<a id="year-2-batch-1-source-check"></a>
+
+## Year 2 Unit 1 source check
+
+Padanan ini menggunakan DSKP KSSR (Semakan 2017) edisi bahasa Inggeris. KPM menyediakan Dokumen Penjajaran Edisi 3 sebagai pilihan. Nombor rekod staging di bawah mengikut topik buku teks. [Surat Siaran KPM Bil. 6 Tahun 2024](https://www.moe.gov.my/storage/files/shares/pekeliling_dan_garis_panduan/surat_siaran/bahagian-pengurusan-sekolah-harian/Surat%20Siaran%20KPM%20Bil.%206%202024%20Pelaksanaan%20Dokumen%20Penjajaran%20Kurikulum%20Standard%20Sekolah%20Rendah%20Edisi%203%20Sains%20Dan%20Math%20Tahap%201.pdf)
+
+| Rekod staging | Topik | CS / LS | DSKP m/s | Buku teks bercetak | Buku aktiviti bercetak | Rujukan BA tertera pada BT |
+| --- | --- | --- | --- | --- | --- | --- |
+| DLP-SCI-Y2-U01-01 | Observe | 1.1 / 1.1.1 | 30–31 | 2–4 | 1–2 | 3 |
+| DLP-SCI-Y2-U01-02 | Classify | 1.1 / 1.1.2 | 32 | 5–7 | 3–4 | 5 |
+| DLP-SCI-Y2-U01-03 | Measure and Use Numbers | 1.1 / 1.1.3 | 33 | 8–10 | 5–6 | 8 |
+| DLP-SCI-Y2-U01-04 | Communicate | 1.1 / 1.1.4 | 34 | 10–11 | 7–8 | 10 |
+| DLP-SCI-Y2-U01-05 | Use Apparatus and Handle Specimens | 1.2 / 1.2.1, 1.2.2 | 35 | 12–14 | 9–10 (rujukan bersama) | 12 |
+| DLP-SCI-Y2-U01-06 | Sketch and Clean Apparatus | 1.2 / 1.2.3, 1.2.4 | 35 | 12–14 | 9–10 (rujukan bersama) | 12 |
+| DLP-SCI-Y2-U01-07 | Store Apparatus and Substances | 1.2 / 1.2.5 | 35 | 12–14 | 9–10 (rujukan bersama) | 12 |
+| DLP-MAT-Y2-U01-01 | Recognise Numbers | 1.1 / 1.1.1(i), (ii), (iii) | 34 | Bahagian 1, 2–5 | 1–2 | 3, 4 |
+| DLP-MAT-Y2-U01-02 | Write Numbers | 1.2 / 1.2.1 | 34 | Bahagian 1, 6–7 | 3–4 | 7 |
+| DLP-MAT-Y2-U01-03 | Show and Match Number Values | 1.1 / 1.1.2(i), (ii) | 34 | Bahagian 1, 8–12 | 5–6 | 10, 12 |
+| DLP-MAT-Y2-U01-04 | Place Value and Digit Value | 1.4 / 1.4.1 | 34 | Bahagian 1, 13–15 | 7–9 | 15 |
+| DLP-MAT-Y2-U01-05 | Partition Numbers | 1.4 / 1.4.2 | 34 | Bahagian 1, 16–17 | 10–11 | 17 |
+| DLP-MAT-Y2-U01-06 | Compare Numbers | 1.1 / 1.1.2(iii) | 34 | Bahagian 1, 18–21 | 12–13 | 19, 21 |
+| DLP-MAT-Y2-U01-07 | Arrange Numbers | 1.1 / 1.1.2(iv) | 34 | Bahagian 1, 22–23 | 14–15 | 23 |
+| DLP-MAT-Y2-U01-08 | Count Numbers and Complete Sequences | 1.3 / 1.3.1, 1.3.2 | 34 | Bahagian 1, 24–28 | 16–18 | 27 |
+| DLP-MAT-Y2-U01-09 | Estimate Numbers | 1.5 / 1.5.1 | 35 | Bahagian 1, 29–31 | 19–20 | 31 |
+| DLP-MAT-Y2-U01-10 | Round to the Nearest Hundred | 1.6 / 1.6.1 | 35 | Bahagian 1, 34–35 | 22–23 (rujukan bersama topik pembundaran) | 35 |
+| DLP-MAT-Y2-U01-11 | Identify and Complete Number Patterns | 1.7 / 1.7.1, 1.7.2 | 35 | Bahagian 1, 36–39 | 24–26 | 38 |
+| DLP-MAT-Y2-U01-12 | Solve Everyday Number Problems | 1.8 / 1.8.1 | 35 | Bahagian 1, 40–43 | 27–28 | 42 |
+
+- Science menggunakan [DSKP edisi bahasa Inggeris](https://anyflip.com/ittl/ygqq/basic) dan [buku teks DLP](https://fliphtml5.com/fbdki/veis/Science_Year_2/). Buku teks m/s 3 turut menyenaraikan BA m/s 7. Rekod Observe menggunakan m/s 1–2 dan m/s 7 disemak di bawah Communicate bersama m/s 8 sebelum sebarang pautan petikan dibuka.
+- Mathematics menggunakan [DSKP edisi bahasa Inggeris](https://asiemodel.net/wp-content/uploads/2022/08/DSKP-Matematik-Tahun-2-DLP.pdf) dan [buku teks DLP Bahagian 1](https://fliphtml5.com/dpauv/rwgq/Mathematics_DLP_Year_2_Part_1/). Kod dalam jadual mengikut DSKP asal dan nota buku teks.
+- Kod penerbitan Science BT072004 / BA072004 dan Mathematics BT082004 / BA082003 dirujuk pada [E-Katalog Buku Teks KPM](https://moe.gov.my/storage/files/shares/Banner/E-Katalog%20Buku%20Teks%20KPM.pdf). Halaman buku aktiviti dalam jadual ialah rujukan bercetak yang ditemui dalam buku teks. Kandungan latihan pada halaman BA asal belum diperiksa.
+- [RPT Science SK 2026](https://www.scribd.com/document/1044199355/Rpt-Sc-Dlp-Year-2-Sk-2026-by-Rozayus-Academy-Kump-a-0kump-b), turut disenaraikan oleh [Panitia Sains SKSN](https://sites.google.com/moe-dl.edu.my/panitia-sains-sksn/induk/rptdskpmodul), menyokong pecahan LS 1.2.1–1.2.2, 1.2.3–1.2.4 dan 1.2.5. BA m/s 9–10 ialah rujukan umum seksyen, jadi tiga RPH menggunakan tugasan PBD tersendiri. Aktiviti menggunakan benih dan peralatan plastik yang biasa terdapat di kelas.
+- [SOW Mathematics SK 2026](https://www.scribd.com/document/989378292/RPT-MATH-DLP-YEAR-2-SK-2026-Kump-A-Kump-B) meletakkan CS 1.1 sebelum CS 1.2–1.4. Buku teks meletakkan Write Numbers sebelum Number Value, dan Compare Numbers serta Arrange Numbers selepas Place Value dan Partition Numbers. Kod staging ikut buku teks. Jika SOW ini dipilih untuk produksi, susun rekod Mathematics mengikut turutan `01 → 03 → 06 → 07 → 02 → 08 → 04 → 05 → 09 → 10 → 11 → 12`. Gunakan kod 1.1.2(iv) untuk Arrange Numbers mengikut DSKP, walaupun subitem itu tertera sebagai (i) dalam salinan SOW yang diperiksa. Penjajaran Edisi 3 perlu dipetakan mengikut edisinya sekiranya digunakan.
+- Bahan untuk semakan guru ialah [tujuh RPH Science](../staging/dlp/year2/science_unit_01.md) dan [dua belas RPH Mathematics](../staging/dlp/year2/mathematics_unit_01.md). Kesemua SK/SP Unit 1 dalam DSKP asal diliputi. Aktiviti penilaian individu dalam RPH boleh dilaksanakan menggunakan bahan kelas yang disenaraikan.
+- **Status HOLD untuk pengeluaran**. Latihan BA asal, pemilihan urutan RPT/SOW produksi, semakan guru dan janaan Word/PDF melalui Web serta Telegram masih perlu disahkan.
+
+## Year 2 Unit 2 source check
+
+| Rekod staging | Topik | CS / LS | DSKP m/s | Buku teks bercetak | Buku aktiviti bercetak | Rujukan BA tertera pada BT |
+| --- | --- | --- | --- | --- | --- | --- |
+| DLP-SCI-Y2-U02-01 | Follow Science Room Rules | 2.1 / 2.1.1 | 37 | 18–20 | 11–12 | 20 |
+| DLP-MAT-Y2-U02-01 | Add Ones, Tens and Hundreds | 2.1 / 2.1.1 | 38 | Bahagian 1, 46 | 31 | 46 |
+| DLP-MAT-Y2-U02-02 | Add Two Numbers Without Regrouping | 2.1 / 2.1.1 | 38 | Bahagian 1, 47–48 | 32–34 | 48 |
+| DLP-MAT-Y2-U02-03 | Add Two Numbers With Regrouping | 2.1 / 2.1.1 | 38 | Bahagian 1, 51–55 | 35–37 | 55 |
+| DLP-MAT-Y2-U02-04 | Add Two Numbers Near 1,000 | 2.1 / 2.1.1 | 38 | Bahagian 1, 56–57 | 38 (rujukan seksyen) | 56 |
+| DLP-MAT-Y2-U02-05 | Add Three Numbers Within 1,000 | 2.1 / 2.1.2 | 38 | Bahagian 1, 58–61 | 39–41 | 60 |
+| DLP-MAT-Y2-U02-06 | Subtract Without Regrouping | 2.2 / 2.2.1 | 38 | Bahagian 1, 62–65 | 42–43 | 65 |
+| DLP-MAT-Y2-U02-07 | Subtract With Regrouping | 2.2 / 2.2.1 | 38 | Bahagian 1, 66–72 | 44–48 | 71 |
+| DLP-MAT-Y2-U02-08 | Subtract Successively | 2.2 / 2.2.2 | 38 | Bahagian 1, 73–75 | 49–51 | 75 |
+| DLP-MAT-Y2-U02-09 | Build Equal Groups and Arrays | 2.3 / 2.3.1 | 38 | Bahagian 1, 81–83 | 56–58 | 82, 83 |
+| DLP-MAT-Y2-U02-10 | Build Facts for 2, 3, 4, 5 and 6 | 2.3 / 2.3.1 | 38 | Bahagian 1, 84–86 | 59–63 | 84, 85, 86 |
+| DLP-MAT-Y2-U02-11 | Build Facts for 7, 8 and 9 | 2.3 / 2.3.1 | 38 | Bahagian 1, 87–90 | 64–67 | 87, 88, 89, 90 |
+| DLP-MAT-Y2-U02-12 | Multiply by 0, 1 and 10 | 2.3 / 2.3.1, 2.3.2 | 38 | Bahagian 1, 91–93 | 68–70 | 92, 93 |
+| DLP-MAT-Y2-U02-13 | Share and Group Equally | 2.4 / 2.4.1 | 39 | Bahagian 1, 95–98 | 71–74 | 95, 96, 97, 98 |
+| DLP-MAT-Y2-U02-14 | Use Multiplication to Divide | 2.4 / 2.4.1 | 39 | Bahagian 1, 99–103 | 75–79 | 102 |
+| DLP-MAT-Y2-U02-15 | Divide by One and Use Zero as the Dividend | 2.4 / 2.4.1 | 39 | Bahagian 1, 104–106 | 80 (rujukan bersama) | 105 |
+| DLP-MAT-Y2-U02-16 | Divide With a Remainder | 2.4 / 2.4.1 | 39 | Bahagian 1, 109–113 | — | — |
+| DLP-MAT-Y2-U02-17 | Divide Two-Digit Numbers by Ten | 2.4 / 2.4.2 | 39 | Bahagian 1, 105–107 dan 114–115 | 81–82 (rujukan bagi baki) | 114 |
+| DLP-MAT-Y2-U02-18 | Create Addition and Subtraction Stories | 2.5 / 2.5.1 | 39 | Bahagian 1, 76–77 | 52–53 | 77 |
+| DLP-MAT-Y2-U02-19 | Solve Addition and Subtraction Stories | 2.5 / 2.5.2 | 39 | Bahagian 1, 78–80 | 54–55 | 79 |
+| DLP-MAT-Y2-U02-20 | Create Multiplication and Division Stories | 2.5 / 2.5.1 | 39 | Bahagian 1, 116–117 | 83–84 | 116 |
+| DLP-MAT-Y2-U02-21 | Solve Multiplication and Division Stories | 2.5 / 2.5.2 | 39 | Bahagian 1, 118–121 | 85–86 (rujukan seksyen) | 120 |
+
+- **Science** menggunakan [DSKP edisi bahasa Inggeris](https://anyflip.com/gohfh/jnak/basic), [buku teks DLP](https://fliphtml5.com/fbdki/veis/Science_Year_2/) dan [RPT Science SK 2026](https://www.scribd.com/document/1044199355/Rpt-Sc-Dlp-Year-2-Sk-2026-by-Rozayus-Academy-Kump-a-0kump-b). DSKP dan RPT menyarankan pemerhatian sebelum, semasa dan selepas menggunakan bilik sains. [RPH Unit 2](../staging/dlp/year2/science_unit_02.md) menggunakan simulasi bergambar untuk insiden dan senarai semak per murid untuk menilai amalan sebenar.
+- **Mathematics** menggunakan [DSKP edisi bahasa Inggeris](https://asiemodel.net/wp-content/uploads/2022/08/DSKP-Matematik-Tahun-2-DLP.pdf), [buku teks DLP Bahagian 1](https://fliphtml5.com/dpauv/rwgq/Mathematics_DLP_Year_2_Part_1/) dan [SOW Mathematics SK 2026](https://www.scribd.com/document/989378292/RPT-MATH-DLP-YEAR-2-SK-2026-Kump-A-Kump-B). SOW meletakkan 2.1.1 dan 2.1.2 dalam blok yang sama. [Lima RPH tambah](../staging/dlp/year2/mathematics_unit_02_addition.md) memecahkannya mengikut kemahiran dan menggunakan garis nombor serta blok asas sepuluh. Buku teks m/s 49–50 boleh dirujuk untuk kaedah abakus. RPH *Add Two Numbers Near 1,000* menggunakan latihan PBD asal berpandukan soalan perbandingan jumlah pada m/s 57. BA m/s 38 hanya rujukan seksyen yang dicetak pada m/s 56.
+- Mathematics Unit 2 kini mempunyai 21 RPH bagi semua SP 2.1.1 hingga 2.5.2 dalam DSKP asal. Rekod baharu meliputi [tolak](../staging/dlp/year2/mathematics_unit_02_subtraction.md), [darab](../staging/dlp/year2/mathematics_unit_02_multiplication.md), [bahagi](../staging/dlp/year2/mathematics_unit_02_division.md) dan [cerita serta penyelesaian masalah](../staging/dlp/year2/mathematics_unit_02_problems.md). Bagi urutan berdasarkan buku teks, letakkan rekod 18–19 selepas rekod 08 dan rekod 17 selepas rekod 16 bagi latihan bahagi sepuluh dengan baki. Rekod 17 juga merujuk pengenalan bahagi sepuluh tanpa baki pada m/s 105–107.
+- Semua halaman BA yang disenaraikan ialah rujukan bercetak dalam BT. Padanan khusus BA belum dikenal pasti bagi *Divide With a Remainder* untuk pembahagi satu digit. BA m/s 81–82 dicetak bersama contoh bahagi dengan sepuluh pada BT m/s 114. Setiap RPH mempunyai latihan PBD tersendiri. Jumlah keseluruhan Unit 1–2 ialah 41 RPH.
+- **Status HOLD untuk pengeluaran**. Tetapkan urutan PdP produksi, semak latihan BA dan dapatkan semakan guru. Ujian janaan Word/PDF Web dan Telegram masih diperlukan.
+
+## Year 2 Unit 3 source check
+
+| Rekod staging | Topik | CS / LS | DSKP m/s | Buku teks bercetak | Buku aktiviti bercetak | Rujukan BA tertera pada BT |
+| --- | --- | --- | --- | --- | --- | --- |
+| DLP-SCI-Y2-U03-01 | Human Reproduction | 3.1 / 3.1.1 | 38 | 24 | 13 | 24 |
+| DLP-SCI-Y2-U03-02 | Describe Growth Since Birth | 3.1 / 3.1.2 | 38 | 25–27 | 14–15 | 25 |
+| DLP-SCI-Y2-U03-03 | Compare Growth Among Individuals | 3.1 / 3.1.3 | 38 | 28–30 | 16 | 28 |
+| DLP-SCI-Y2-U03-04 | Recognise Inherited Features | 3.1 / 3.1.4, 3.1.5 | 38 | 30–32 | 17–20 (rujukan bersama) | 30 |
+| DLP-SCI-Y2-U03-05 | Communicate Findings About Growth and Heredity | 3.1 / 3.1.6 | 39 | 33–34 | 19–20 | 33 |
+| DLP-MAT-Y2-U03-01 | Recognise and Name Proper Fractions | 3.1 / 3.1.1, 3.1.2 | 42 | Bahagian 2, 2–3 | 89–90 | 3 |
+| DLP-MAT-Y2-U03-02 | Draw and Write Proper Fractions | 3.1 / 3.1.3, 3.1.4 | 42 | Bahagian 2, 4–6 | 91–92 | 5, 6 |
+| DLP-MAT-Y2-U03-03 | Compare Proper Fractions | 3.1 / 3.1.5 | 42 | Bahagian 2, 7–9 | 93 | 9 |
+| DLP-MAT-Y2-U03-04 | Convert Tenths and Read Decimals | 3.2 / 3.2.1, 3.2.2, 3.2.5 | 42 | Bahagian 2, 10–11 | 94–95 (rujukan bersama) | 11 |
+| DLP-MAT-Y2-U03-05 | Show and Represent Decimals | 3.2 / 3.2.3, 3.2.4, 3.2.5 | 42 | Bahagian 2, 11–12 | 96 | 12 |
+| DLP-MAT-Y2-U03-06 | Compare Decimals | 3.2 / 3.2.6 | 42 | Bahagian 2, 13 | 97 | 13 |
+| DLP-MAT-Y2-U03-07 | Compare Fractions and Decimals | 3.3 / 3.3.1 | 43 | Bahagian 2, 14 | 98 | 14 |
+| DLP-MAT-Y2-U03-08 | Solve Everyday Fraction and Decimal Problems | 3.4 / 3.4.1 | 43 | Bahagian 2, 15–17 | 99–100 | 16 |
+
+- **Science.** [DSKP edisi bahasa Inggeris](https://anyflip.com/ittl/ygqq/basic), [buku teks DLP](https://fliphtml5.com/fbdki/veis/Science_Year_2/) dan [RPT Science SK 2026](https://www.scribd.com/document/1044199355/Rpt-Sc-Dlp-Year-2-Sk-2026-by-Rozayus-Academy-Kump-a-0kump-b). [Lima RPH Humans](../staging/dlp/year2/science_unit_03.md) meliputi enam SP. Rekod 01–02 dan 03–04 memecahkan blok RPT kepada objektif individu. RPH menggunakan data rekaan, ukuran pada model dan carta keluarga fiksyen. BA m/s 19–20 dirujuk pada dua tempat dalam buku teks dan latihan asal perlu diperiksa sebelum diberikan secara khusus.
+- **Mathematics.** [DSKP edisi bahasa Inggeris](https://asiemodel.net/wp-content/uploads/2022/08/DSKP-Matematik-Tahun-2-DLP.pdf), [buku teks DLP Bahagian 2](https://fliphtml5.com/dpauv/dyzw/Mathematics_DLP_Year_2_Part_2/) dan [SOW Mathematics SK 2026](https://www.scribd.com/document/989378292/RPT-MATH-DLP-YEAR-2-SK-2026-Kump-A-Kump-B). [Lapan RPH Fractions and Decimals](../staging/dlp/year2/mathematics_unit_03.md) meliputi 13 SP. Rekod 04 dan 05 menggunakan SP 3.2.5 dalam dua konteks, iaitu menulis perpuluhan daripada sebutan dan daripada model. Rekod 07 membandingkan pecahan persepuluh dengan perpuluhan, mengikut contoh buku teks m/s 14.
+- Semua halaman BA dalam jadual ialah rujukan yang tertera dalam BT. Kandungan latihan BA asal masih perlu diperiksa. Jumlah Unit 1–3 kini 54 RPH. **Status HOLD untuk pengeluaran** sementara semakan guru, urutan PdP dan janaan Word/PDF melalui Web serta Telegram belum disahkan.
