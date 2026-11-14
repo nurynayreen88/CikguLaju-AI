@@ -202,3 +202,18 @@ Rekod direktori lama CBC4052 dari sumber Jun 2022 dibetulkan kepada JBC1051 untu
 | JBC1051 | SJKC Poay Chai, Taman Bukit Indah | [Foto hari pertama sekolah, potongan lencana pada bendera berlabel BUKIT INDAH](https://dapmalaysia.org/cn/wordpress/wp-content/uploads/2024/06/1719111567438-1-scaled.jpg) | `5c1ea07a44fdbade65b166c38d07f3cc786917fe729fca33f99b8709b6ffc98b` |
 
 Imej JBC1051 dibaca semula daripada storan dan disahkan dengan SHA-256. Semakan direktori dan storan produksi mengesahkan **7,778 daripada 7,778 rekod sekolah rendah (100%)** mempunyai fail katalog. Paparan melalui sesi guru belum diuji.
+
+## Penyeragaman saiz logo katalog di Web
+
+Pratonton dan pengambilan automatik menghasilkan PNG 512 × 512 pada kanvas lutsinar sambil mengekalkan nisbah lencana. Saiz dipilih untuk paparan Web dan muka depan RPT. Fail asal dalam storan dan logo peribadi guru dikekalkan. Penukaran dimensi berlaku apabila Web menggunakan logo katalog.
+
+| Kod | Sekolah | Rujukan pemulihan | SHA-256 PNG 512 × 512 |
+| --- | --- | --- | --- |
+| JBC1051 | SJKC Poay Chai, Taman Bukit Indah | Foto bendera sekolah pada hari pertama operasi | `ec26f8fb736e1dd461379e3d708248dec04a1782708e9de12dda9a5666968b73` |
+| XBA4376 | SK Wasai | Lencana pada kepala surat sekolah | `403afca007489c9ac187720ae95033f1a093cdefb50e39b64d698c90bdcd4b3f` |
+
+Dua pemulihan visual dibuat menggunakan penjana imej berpandukan rujukan asal untuk membersihkan latar dan menjelaskan tulisan dan bentuk. Kedua-duanya diperiksa secara visual, disimpan dalam storan persendirian di `restored-512-v1` dan dibaca semula untuk semakan SHA-256. Versi asal boleh digunakan jika versi pemulihan gagal dibaca.
+
+[PR Web #720](https://github.com/nurynayreen88/CikguLaju-AI/pull/720) digabung ke cabang produksi. Render melaporkan komit `ffac4c3be0eae50759a1ce748452b9fc5327e2fb` aktif. Halaman utama dan aset JavaScript produksi memaparkan versi 512. Ujian katalog, profil guru dan produksi lulus di CI. Semakan terus dalam akaun guru produksi belum dibuat.
+
+Audit ketajaman setiap logo masih terbuka. Dua objek terkecil yang perlu disemak ialah XBA1102 (SK Logongon, 338 bait) dan CBA6024 (SK Felda Tersang 3, 527 bait). Saiz fail sahaja belum menentukan dimensi atau ketajaman imej. Sumber lain yang beresolusi rendah termasuk ABAB025, ABCA001, CBC6034, JBC0035, ABD1082 dan XCC5034.

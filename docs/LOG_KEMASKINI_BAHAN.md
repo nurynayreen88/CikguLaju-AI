@@ -85,3 +85,8 @@ Log ini ialah penanda kesinambungan antara sesi. Kemas kini pada setiap perubaha
 - **LIVE DISAHKAN**: bukti deployment dan ujian pengguna sebenar bagi Web dan/atau Telegram telah diperoleh.
 
 Setiap sesi pembaikan baharu perlu merekodkan jenis bahan, rujukan PR, keputusan semakan, status kod, status Web/Telegram serta apa yang masih tertangguh.
+
+## 14 November 2026 — Logo sekolah 512 × 512
+
+- Web produksi: PR [#720](https://github.com/nurynayreen88/CikguLaju-AI/pull/720) digabung ke cabang produksi. Render dan aset Web produksi disahkan menggunakan versi 512 × 512. Ujian logo, profil, akses produksi dan aliran RPT lulus. Semakan logo melalui sesi guru produksi belum dibuat.
+- Lencana JBC1051 (Poay Chai Bukit Indah) dan XBA4376 (SK Wasai) dipulihkan, disimpan sebagai versi tambahan dan disahkan dalam storan. Audit ketajaman lencana lain masih dalam semakan. [Audit katalog](../audits/school_logo_coverage_20261114.md#penyeragaman-saiz-logo-katalog-di-web)
