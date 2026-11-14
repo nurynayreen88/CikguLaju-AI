@@ -22,6 +22,7 @@ def read_uploaded_timetable(data, classes):
             "Content-Type": mime,
             "Accept": "application/json",
             "X-Timetable-Classes": encoded,
+            "X-Timetable-Review": "1",
         }, method="POST")
         with build_opener(BlockRedirects()).open(req, timeout=18) as response:
             payload = response.read(MAX_RESULT + 1)
