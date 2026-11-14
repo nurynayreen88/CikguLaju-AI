@@ -193,10 +193,12 @@ Nama SJK (C) SING MING dan kod YCC 6111 tertera pada lencana pengguna. Imej ditu
 | --- | --- | --- | --- |
 | YCC6111 | SJKC Sing Ming | Imej lencana daripada pengguna | `b0f33d9242bdcebf0c43ae5e2a8dec7f3b73acbd2214718d58c62d8463c7e4bc` |
 
-## Sekolah yang masih memerlukan logo
+## Pembetulan rekod Poay Chai dan liputan katalog lengkap
 
-| Kod | Sekolah | PPD | Negeri |
+Rekod direktori lama CBC4052 dari sumber Jun 2022 dibetulkan kepada JBC1051 untuk SJKC Poay Chai, Taman Bukit Indah, PPD Johor Bahru. Sekolah berpindah dari Singkir, Kedah (KBC9032) dan memulakan operasi di lokasi baharu pada 23 Jun 2024. Semakan sebelum pembetulan mendapati tiada profil guru atau rekod sumber logo menggunakan CBC4052. Semakan selepas pembetulan mengesahkan CBC4043 (Pei Chai, Kuantan) dan KBC1022 (Poay Chai, Lubok Buntar) kekal sebagai rekod berasingan. [Kod JBC1051 dan PPD](https://checksekolah.my/school/johor/sekolah-jenis-kebangsaan-cina-poay-chai/) · [Laporan perpindahan Bernama](https://www.astroawani.com/berita-malaysia/sjkc-poay-chai-di-taman-bukit-indah-beroperasi-23-jun-473988)
+
+| Kod | Sekolah | Sumber | SHA-256 |
 | --- | --- | --- | --- |
-| CBC4052 | SEKOLAH JENIS KEBANGSAAN (CINA) POAY CHAI | PPD KUANTAN | Pahang |
+| JBC1051 | SJKC Poay Chai, Taman Bukit Indah | [Foto hari pertama sekolah, potongan lencana pada bendera berlabel BUKIT INDAH](https://dapmalaysia.org/cn/wordpress/wp-content/uploads/2024/06/1719111567438-1-scaled.jpg) | `5c1ea07a44fdbade65b166c38d07f3cc786917fe729fca33f99b8709b6ffc98b` |
 
-Untuk CBC4052, [direktori](https://www.apac.com.my/cbc4052-sjkc-poay-chai.html) menyenaraikan Kampung Tiram, PPD Kuantan, dan [senarai sekolah Cina Pahang](https://zh.wikipedia.org/wiki/彭亨州华文小学列表) memaparkan status lokasi dan bilangan murid sebagai tidak berkenaan. Kod ini memerlukan pengesahan PPD Kuantan.
+Imej JBC1051 dibaca semula daripada storan dan disahkan dengan SHA-256. Semakan direktori dan storan produksi mengesahkan **7,778 daripada 7,778 rekod sekolah rendah (100%)** mempunyai fail katalog. Paparan melalui sesi guru belum diuji.
