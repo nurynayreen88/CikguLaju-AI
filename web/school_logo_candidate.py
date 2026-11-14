@@ -23,6 +23,8 @@ UPSTREAM_ROOT = (
 MAX_SOURCE_BYTES = 2 * 1024 * 1024
 CODE = re.compile(r"[A-Z0-9]{6,12}\Z")
 MIME = {"jpg": "image/jpeg", "png": "image/png", "gif": "image/gif"}
+RESTORED_VERSION = "restored-512-v1"
+RESTORED_CODES = frozenset({"JBC1051", "XBA4376"})
 
 
 class LogoSourceUnavailable(Exception):
@@ -45,6 +47,15 @@ def logo_candidate(url, service_key, school_code, *, opener=None):
         raise LogoSourceUnavailable("Direktori sekolah belum dapat disemak") from None
     if school.get("school_level") != "Rendah":
         return None
+    if school_code in RESTORED_CODES:
+        try:
+            restored = _catalog_image(
+                url, service_key, RESTORED_VERSION, school_code + ".png", "png", opener=opener,
+            )
+        except LogoSourceUnavailable:
+            restored = None
+        if restored is not None:
+            return restored, MIME["png"]
     try:
         rows = _read(url, service_key, "school_logo_sources", {
             "select": "school_code,image_extension,source_commit",
