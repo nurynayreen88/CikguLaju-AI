@@ -93,7 +93,6 @@
     get("affiliate-paid").textContent = money(data.paid);
     amount.max = String(available);
     claimForm.hidden = !savedAccount || available < 10;
-    get("affiliate-save-wallet").textContent = savedAccount ? "Simpan Nombor" : "Sertai Affiliate";
     history.replaceChildren();
     for (const row of data.claims) {
       const li = document.createElement("li");
@@ -127,23 +126,17 @@
     try {
       const data = await api("/api/web/referral");
       if (revision !== updateRequest) return;
-      if (data.enabled !== true) {
-        if (data.can_join !== true) { revoke(); return; }
-        box.hidden = true;
-        linkInput.value = "";
-        status.textContent = "Simpan nombor akaun TNG eWallet untuk menyertai affiliate dan mendapat pautan jemputan.";
-      } else {
-        if (typeof data.link !== "string" || !data.link.startsWith("https://cikgulaju-web.onrender.com/?ref=")) { revoke(); return; }
-        linkInput.value = data.link;
-        get("web-referral-signups").textContent = String(data.registered);
-        get("web-referral-paid").textContent = String(data.paid);
-        box.hidden = false;
-        status.textContent = "Mata dikreditkan selepas bayaran pertama disahkan.";
-      }
+      if (data.enabled !== true || typeof data.link !== "string" ||
+          !data.link.startsWith("https://cikgulaju-web.onrender.com/?ref=")) { revoke(); return; }
+      linkInput.value = data.link;
+      get("web-referral-signups").textContent = String(data.registered);
+      get("web-referral-paid").textContent = String(data.paid);
+      box.hidden = false;
+      status.textContent = "Mata dikreditkan selepas bayaran pertama disahkan.";
       tab.hidden = false;
       const details = await refreshClaims();
       if (revision !== updateRequest) return;
-      if (details?.open && data.enabled) status.textContent = `Ganjaran ${details.rate}% bagi bayaran pertama yang disahkan.`;
+      if (details?.open) status.textContent = `Ganjaran ${details.rate}% bagi bayaran pertama yang disahkan.`;
       if (openFromTelegram) {
         openFromTelegram = false;
         tab.click();

@@ -64,7 +64,8 @@ class WebReferralTests(unittest.TestCase):
         self.assertIn('if(targetButton?.hidden)return;', html)
         self.assertIn('window.cikgulajuReferralInit?.();', html)
         self.assertIn('tab.hidden = false;', referral)
-        self.assertIn('if (data.can_join !== true) { revoke(); return; }', referral)
+        self.assertIn('if (data.enabled !== true || typeof data.link !== "string"', referral)
+        self.assertNotIn('Sertai Affiliate', referral)
         self.assertIn('tab.hidden = true;', admin)
         self.assertIn('if (res.status === 401 || res.status === 403)', admin)
 
@@ -76,6 +77,26 @@ class WebReferralTests(unittest.TestCase):
         self.assertEqual(data, {"enabled": False})
         self.assertNotIn("link", data)
 
+
+    @patch("web.web_referral_routes._auth_uid", return_value=123)
+    @patch("web.web_referral_routes._rest")
+    def test_automatic_link_is_available_without_a_payout_account(self, rest, _uid):
+        code = "a" * 32
+        rest.side_effect = [[{"referral_code": code, "enabled": True}], [], []]
+        response = self.make_app().test_client().get("/api/web/referral")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json["link"], WEB_ORIGIN + "/?ref=" + code)
+        self.assertEqual(response.json["registered"], 0)
+        self.assertEqual(response.json["points"], "0.00")
+        self.assertEqual(rest.call_count, 3)
+        self.assertTrue(all(call.args[0] == "GET" for call in rest.call_args_list))
+
+    @patch("web.web_referral_routes._auth_uid", return_value=123)
+    @patch("web.web_referral_routes._rest", return_value=[])
+    def test_missing_member_cannot_sign_up_from_the_referral_view(self, rest, _uid):
+        response = self.make_app().test_client().get("/api/web/referral")
+        self.assertEqual(response.json, {"enabled": False})
+        rest.assert_called_once()
 
     @patch("web.web_referral_routes._auth_uid", return_value=123)
     @patch("web.web_referral_routes._rpc")

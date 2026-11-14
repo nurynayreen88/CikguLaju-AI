@@ -143,13 +143,7 @@ def my_referral():
         members = _rest("GET", "referral_members?" + urlencode({
             "referrer_user_id": "eq." + str(uid),
             "select": "referral_code,enabled", "limit": "1"}))
-        if not members:
-            try:
-                can_join = _overview(uid).get("open") is True
-            except (RuntimeError, OSError):
-                can_join = False
-            return jsonify({"enabled": False, "can_join": can_join})
-        if members[0].get("enabled") is not True:
+        if not members or members[0].get("enabled") is not True:
             return jsonify({"enabled": False})
         code = members[0]["referral_code"]
         if not isinstance(code, str) or not REF_PATTERN.fullmatch(code):
