@@ -640,7 +640,10 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   </div>
 </section>
 <section id="view-rph" class="app-view" aria-labelledby="view-rph-heading">
-<h2 id="view-rph-heading">Sediakan RPH</h2><p id="account-access" class="notice" role="status"></p><section class="rph-guide" aria-label="Cara menyediakan RPH"><h3>Cara menyediakan RPH</h3><p><strong>1.</strong> Pilih Tahun → Subjek → Unit/Tajuk → Lesson/PdP.</p><p><strong>2.</strong> Pilih kelas, tarikh, waktu mula/tamat dan bilangan murid jika perlu.</p><p><strong>3.</strong> Tekan <strong>Jana Bahan</strong> untuk melihat RPH PDF, RPH Word, Buku Teks, Audio dan Buku Aktiviti yang tersedia bagi Lesson/PdP ini, kemudian muat turun bahan pilihan.</p><p class="notice">Hanya RPH yang mempunyai sumber lengkap tersedia. 10 janaan RPH percuma dikongsi antara Web dan Telegram. Rakan Pembangun yang aktif mendapat akses tanpa had.</p></section><p id="selection-help" class="selection-help" role="status">Mula di bawah dengan memilih Tahun.</p><label for="year">Langkah 1 — Pilih Tahun</label><select id="year"><option value="">Pilih Tahun</option><option value="kp2027-y1">Tahun 1 (KP Baharu)</option><option value="1">Tahun 1 (KSSR)</option><option value="2">Tahun 2</option><option value="3">Tahun 3</option><option value="4">Tahun 4</option><option value="5">Tahun 5</option><option value="6">Tahun 6</option></select><label for="subject">Langkah 2 — Pilih Subjek</label><select id="subject" disabled><option value="">Pilih Tahun dahulu</option></select><label for="component" id="component-label" hidden>Pilih komponen PJPK (PJ atau PK)</label><select id="component" hidden disabled><option value="">Pilih PJ atau PK</option></select><label for="theme" id="theme-label" hidden>Langkah 3 — Pilih Tema</label><select id="theme" hidden disabled><option value="">Pilih Tema</option></select><label for="unit" id="unit-label" hidden>Langkah 3 — Pilih Unit/Tajuk</label><select id="unit" hidden disabled><option value="">Pilih Subjek dahulu</option></select><label for="topic" id="topic-label" hidden>Langkah 5 — Pilih Tajuk</label><select id="topic" hidden disabled><option value="">Pilih Tajuk</option></select><label for="lesson" id="lesson-label" hidden>Langkah 4 — Pilih Lesson/PdP</label><select id="lesson" hidden disabled><option value="">Pilih Subjek dahulu</option></select>
+<h2 id="view-rph-heading">Sediakan RPH</h2><p id="account-access" class="notice" role="status"></p><section class="rph-guide" aria-label="Cara menyediakan RPH"><h3>Cara menyediakan RPH</h3><p><strong>1.</strong> Pilih Kurikulum → Tahun → Subjek → Unit/Tajuk → Lesson/PdP.</p><p><strong>2.</strong> Pilih kelas, tarikh, waktu mula/tamat dan bilangan murid jika perlu.</p><p><strong>3.</strong> Tekan <strong>Jana Bahan</strong> untuk melihat RPH PDF, RPH Word, Buku Teks, Audio dan Buku Aktiviti yang tersedia bagi Lesson/PdP ini, kemudian muat turun bahan pilihan.</p><p class="notice">Hanya RPH yang mempunyai sumber lengkap tersedia. 10 janaan RPH percuma dikongsi antara Web dan Telegram. Rakan Pembangun yang aktif mendapat akses tanpa had.</p></section><p id="selection-help" class="selection-help" role="status">Mula dengan memilih kurikulum.</p>
+<label for="curriculum">Kurikulum</label><select id="curriculum"><option value="">Pilih Kurikulum</option><option value="kssr">KSSR</option><option value="kp2027">KP27 (KP Baharu)</option><option value="dlp">DLP</option></select>
+<label for="year" id="year-label" hidden>Tahun</label><select id="year" hidden disabled><option value="">Pilih Kurikulum dahulu</option></select>
+<label for="subject" id="subject-label" hidden>Subjek</label><select id="subject" hidden disabled><option value="">Pilih Tahun dahulu</option></select><label for="component" id="component-label" hidden>Pilih komponen PJPK (PJ atau PK)</label><select id="component" hidden disabled><option value="">Pilih PJ atau PK</option></select><label for="theme" id="theme-label" hidden>Pilih Tema</label><select id="theme" hidden disabled><option value="">Pilih Tema</option></select><label for="unit" id="unit-label" hidden>Pilih Unit/Tajuk</label><select id="unit" hidden disabled><option value="">Pilih Subjek dahulu</option></select><label for="topic" id="topic-label" hidden>Pilih Tajuk</label><select id="topic" hidden disabled><option value="">Pilih Tajuk</option></select><label for="lesson" id="lesson-label" hidden>Pilih Lesson/PdP</label><select id="lesson" hidden disabled><option value="">Pilih Subjek dahulu</option></select>
 <section id="dlp-rph-preview" class="upcoming-examples" aria-labelledby="dlp-rph-heading" hidden>
   <h3 id="dlp-rph-heading">Subjek DLP <span class="sidebar-coming-status">Akan Datang</span></h3>
   <p>Pratonton RPH Year 2 SK dalam bahasa Inggeris. RPH penuh dan muat turun akan dibuka selepas semakan bahan.</p>
@@ -677,7 +680,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     </details>
   </div>
 </section>
-<p id="catalog-status" class="notice" role="status"></p><p id="lesson-source-pages" class="notice" role="status" hidden></p><button id="show-materials" type="button" hidden disabled>Jana Bahan</button><section id="teacher-info" hidden aria-label="Maklumat kelas, masa dan murid"><h3>Langkah 5 — Maklumat RPH</h3><p>Isi maklumat PdP jika ada. Maklumat yang diisi akan dicetak dalam RPH Word atau PDF.</p><label for="teacher-class">Pilih Kelas</label><select id="teacher-class"><option value="">Pilih kelas (pilihan)</option><option value="__other__">+ Isi nama kelas lain</option></select><div id="teacher-class-other-wrap" hidden><label for="teacher-class-other">Nama Kelas Lain</label><input id="teacher-class-other" type="text" maxlength="40" autocomplete="off" placeholder="Contoh: 4 Bestari"></div><p class="notice" id="teacher-class-hint">Kelas yang disimpan dalam Profil Guru akan disenaraikan secara automatik.</p><label for="teacher-date">Tarikh PdP</label><input id="teacher-date" type="date"><div class="rph-time-fields"><div><label for="teacher-time-start">Waktu Mula</label><input id="teacher-time-start" type="time" step="60"></div><div><label for="teacher-time-end">Waktu Tamat</label><input id="teacher-time-end" type="time" step="60"></div></div><p class="notice">Jika isi masa, lengkapkan kedua-dua waktu mula dan tamat. Waktu tamat mestilah selepas waktu mula.</p><label for="teacher-students">Bilangan Murid</label><input id="teacher-students" type="number" min="1" max="200" step="1" inputmode="numeric" placeholder="Contoh: 32" aria-describedby="teacher-students-hint"><p id="teacher-students-hint" class="notice" role="status">Pilih kelas untuk mengambil bilangan murid daripada Rekod PBD.</p><button id="teacher-open-roster" type="button" hidden>Urus senarai murid</button>
+<p id="catalog-status" class="notice" role="status"></p><p id="lesson-source-pages" class="notice" role="status" hidden></p><button id="show-materials" type="button" hidden disabled>Jana Bahan</button><section id="teacher-info" hidden aria-label="Maklumat kelas, masa dan murid"><h3>Maklumat RPH</h3><p>Isi maklumat PdP jika ada. Maklumat yang diisi akan dicetak dalam RPH Word atau PDF.</p><label for="teacher-class">Pilih Kelas</label><select id="teacher-class"><option value="">Pilih kelas (pilihan)</option><option value="__other__">+ Isi nama kelas lain</option></select><div id="teacher-class-other-wrap" hidden><label for="teacher-class-other">Nama Kelas Lain</label><input id="teacher-class-other" type="text" maxlength="40" autocomplete="off" placeholder="Contoh: 4 Bestari"></div><p class="notice" id="teacher-class-hint">Kelas yang disimpan dalam Profil Guru akan disenaraikan secara automatik.</p><label for="teacher-date">Tarikh PdP</label><input id="teacher-date" type="date"><div class="rph-time-fields"><div><label for="teacher-time-start">Waktu Mula</label><input id="teacher-time-start" type="time" step="60"></div><div><label for="teacher-time-end">Waktu Tamat</label><input id="teacher-time-end" type="time" step="60"></div></div><p class="notice">Jika isi masa, lengkapkan kedua-dua waktu mula dan tamat. Waktu tamat mestilah selepas waktu mula.</p><label for="teacher-students">Bilangan Murid</label><input id="teacher-students" type="number" min="1" max="200" step="1" inputmode="numeric" placeholder="Contoh: 32" aria-describedby="teacher-students-hint"><p id="teacher-students-hint" class="notice" role="status">Pilih kelas untuk mengambil bilangan murid daripada Rekod PBD.</p><button id="teacher-open-roster" type="button" hidden>Urus senarai murid</button>
 <details class="rph-reflection"><summary>Tulis refleksi sendiri (pilihan)</summary>
 <label for="teacher-reflection">Refleksi guru</label>
 <textarea id="teacher-reflection" rows="3" maxlength="500" aria-describedby="teacher-reflection-hint"></textarea>
@@ -1170,7 +1173,7 @@ function currentRphLessonKey(){
                         subject.value==="PJPK"?component.value:""]);
 }
 function currentRphParams(){
- if(!/^[1-6]$/.test(year.value)||dlpPreviews.has(subject.value)||!subject.value||!unit.value||!lesson.value)return null;
+ if(curriculum.value!=="kssr"||!/^[1-6]$/.test(year.value)||dlpPreviews.has(subject.value)||!subject.value||!unit.value||!lesson.value)return null;
  if(subject.value==="BM"&&(!theme.value||!topic.value))return null;
  if(!teacherClass.checkValidity()||!teacherDate.checkValidity()||
     !teacherTimeStart.checkValidity()||!teacherTimeEnd.checkValidity()||
@@ -1211,7 +1214,7 @@ function showRphAction(){
  document.getElementById("rph-word").disabled=!available||!verifiedRphFormats.includes("word");
  document.getElementById("rph-pdf").disabled=!available||!verifiedRphFormats.includes("pdf");
 }
-const year=document.getElementById("year"),subject=document.getElementById("subject"),lesson=document.getElementById("lesson"),catalogStatus=document.getElementById("catalog-status");
+const curriculum=document.getElementById("curriculum"),year=document.getElementById("year"),subject=document.getElementById("subject"),lesson=document.getElementById("lesson"),catalogStatus=document.getElementById("catalog-status");
 const unit=document.getElementById("unit"),component=document.getElementById("component"),theme=document.getElementById("theme"),topic=document.getElementById("topic");
 const dlpPreviewPanel=document.getElementById("dlp-rph-preview");
 const dlpPreviews=new Map([
@@ -1222,6 +1225,23 @@ const dlpPreviewOptions=[
  {value:"SCIENCE_DLP",label:"Science (DLP) — Akan Datang"},
  {value:"MATH_DLP",label:"Mathematics (DLP) — Akan Datang"}
 ];
+const curriculumYears={
+ kssr:[1,2,3,4,5,6].map(n=>({value:String(n),label:"Tahun "+n})),
+ kp2027:[{value:"1",label:"Tahun 1 (KP Baharu)"}],
+ dlp:[{value:"2",label:"Tahun 2"}]
+};
+let subjectLoadRevision=0;
+function selectCurriculum(){
+ subjectLoadRevision++;
+ const years=curriculumYears[curriculum.value]||[];
+ fillSelect(year,years,"Pilih Tahun");
+ showStep(year,years.length>0);
+ showStep(subject,false);
+ resetSelect(subject,"Pilih Tahun dahulu");
+ resetCurriculumChoices();
+ catalogStatus.textContent="";
+ updateSelectionHelp(years.length?"Pilih Tahun.":"Mula dengan memilih kurikulum.");
+}
 function showDlpPreview(code){
  dlpPreviewPanel.hidden=!dlpPreviews.has(code);
  for(const [key,preview] of dlpPreviews){
@@ -1255,11 +1275,11 @@ function subjectNavLabel(code){
  })[code]||"Unit / Tajuk";
 }
 function setSubjectNavigationLabels(){
- const code=subject.value, bm=code==="BM";
- document.getElementById("theme-label").textContent="Langkah 3 — Pilih Tema";
- document.getElementById("unit-label").textContent=(bm?"Langkah 4":"Langkah 3")+" — Pilih "+subjectNavLabel(code);
- document.getElementById("topic-label").textContent="Langkah 5 — Pilih Tajuk";
- document.getElementById("lesson-label").textContent=(bm?"Langkah 6":"Langkah 4")+" — Pilih "+(code==="ENGLISH"?"Lesson":"PdP");
+ const code=subject.value;
+ document.getElementById("theme-label").textContent="Pilih Tema";
+ document.getElementById("unit-label").textContent="Pilih "+subjectNavLabel(code);
+ document.getElementById("topic-label").textContent="Pilih Tajuk";
+ document.getElementById("lesson-label").textContent="Pilih "+(code==="ENGLISH"?"Lesson":"PdP");
 }
 function sourceUnitLabel(value){
  const label=String(value||"").trim();
@@ -1361,13 +1381,15 @@ window.prepareRphFromToday=async function(slot,dateIso,inlineHost=null){
    for(const {node} of inlineRphAnchors)inlineHost.appendChild(node);
   }else showWebView("rph");
   const selectionEpoch=++todaySelectionEpoch;
+  curriculum.value="kssr";
+  selectCurriculum();
   year.value=String(slot.year);
-  resetSelect(subject,"Pilih Subjek");
-  resetCurriculumChoices();
+  showStep(subject,true);
   const expectedYear=year.value;
+  const expectedRevision=subjectLoadRevision;
   const subjects=await loadOptions("subjects");
   if(selectionEpoch!==todaySelectionEpoch)return false;
-  if(year.value!==expectedYear)throw Error("Tahun ditukar semasa bacaan jadual.");
+  if(expectedRevision!==subjectLoadRevision)throw Error("Pilihan ditukar semasa bacaan jadual.");
   fillSelect(subject,subjects,"Pilih Subjek");
   if(![...subject.options].some(o=>o.value===slot.subject_code)){
    catalogStatus.textContent="Subjek dalam jadual belum tersedia untuk Tahun "+expectedYear+" dalam sumber Telegram.";
@@ -1378,7 +1400,8 @@ window.prepareRphFromToday=async function(slot,dateIso,inlineHost=null){
   subject.dispatchEvent(new Event("change"));
   // The real saved class is resolved through the existing shared profile.
   await loadTeacherClasses();
-  if(selectionEpoch!==todaySelectionEpoch)return false;
+  if(selectionEpoch!==todaySelectionEpoch||expectedRevision!==subjectLoadRevision||
+     subject.value!==slot.subject_code)return false;
   const exists=[...teacherClass.options].some(o=>o.value===slot.class_name);
   if(exists){teacherClass.value=slot.class_name;teacherClassOther.value="";}
   else{teacherClass.value="__other__";teacherClassOther.value=slot.class_name;}
@@ -1395,28 +1418,37 @@ window.prepareRphFromToday=async function(slot,dateIso,inlineHost=null){
  }finally{todayPrepareBusy=false;}
 };
 
+curriculum.addEventListener("change",selectCurriculum);
 year.addEventListener("change",async()=>{
- const targetYear=year.value;
+ const targetYear=year.value, choice=curriculum.value;
+ const revision=++subjectLoadRevision;
  resetSelect(subject,"Pilih Subjek");resetCurriculumChoices();
+ showStep(subject,false);
  catalogStatus.textContent="";
- updateSelectionHelp(targetYear?"Langkah 2: Pilih Subjek.":"Mula dengan memilih Tahun.");
+ updateSelectionHelp("Pilih Tahun.");
  if(!targetYear)return;
- if(targetYear==="kp2027-y1"){
-  resetSelect(subject,"Subjek belum dibuka");
-  updateSelectionHelp("Tahun 1 (KP Baharu) — Akan Datang.");
+ if(choice==="kp2027"){
+  updateSelectionHelp("Tahun 1 (KP Baharu) akan datang.");
   catalogStatus.textContent="Bahan Kurikulum Persekolahan 2027 masih dalam semakan.";
   return;
  }
- const planned=targetYear==="2"?dlpPreviewOptions:[];
+ if(choice==="dlp"){
+  if(targetYear!=="2")return;
+  fillSelect(subject,dlpPreviewOptions,"Pilih Subjek");
+  showStep(subject,true);
+  updateSelectionHelp("Pilih subjek untuk lihat pratonton DLP Tahun 2.");
+  return;
+ }
+ if(choice!=="kssr")return;
+ showStep(subject,true);
+ updateSelectionHelp("Pilih Subjek.");
  try{
   const items=await loadOptions("subjects");
-  if(year.value!==targetYear)return;
-  fillSelect(subject,[...items,...planned],"Pilih Subjek");
+  if(revision!==subjectLoadRevision)return;
+  fillSelect(subject,items,"Pilih Subjek");
   if(!subject.options[1])updateSelectionHelp("Tiada pilihan yang disahkan untuk sumber ini. Semak rekod Telegram.");
  }catch(error){
-  if(year.value!==targetYear)return;
-  fillSelect(subject,planned,"Pilih Subjek");
-  catalogStatus.textContent=error.message;
+  if(revision===subjectLoadRevision)catalogStatus.textContent=error.message;
  }
 });
 subject.addEventListener("change",async()=>{
@@ -1424,13 +1456,14 @@ subject.addEventListener("change",async()=>{
  resetCurriculumChoices();setSubjectNavigationLabels();
  catalogStatus.textContent="";
  if(!code)return;
- if(dlpPreviews.has(code)){
-  if(targetYear==="2"){
+ if(curriculum.value==="dlp"){
+  if(targetYear==="2"&&dlpPreviews.has(code)){
    showDlpPreview(code);
    updateSelectionHelp("Pratonton Year 2 SK. Janaan RPH DLP belum dibuka.");
   }
   return;
  }
+ if(curriculum.value!=="kssr"||dlpPreviews.has(code))return;
  updateSelectionHelp("Pilih Tema, Unit atau Tajuk untuk melihat Lesson/PdP.");
  try{
   if(code==="PJPK"){
