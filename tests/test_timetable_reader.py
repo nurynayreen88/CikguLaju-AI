@@ -212,13 +212,27 @@ class TimetableReaderTest(unittest.TestCase):
                          [("13:00", "14:00", "2 USM"), ("13:00", "14:00", "2 USM")])
         self.assertEqual(unclear, [])
 
+    def test_private_endpoint_rejects_uploads_while_paused(self):
+        app = Flask(__name__)
+        app.register_blueprint(bp)
+        with patch.dict(os.environ, {"CIKGULAJU_TIMETABLE_SERVER_OCR_ENABLED": "0"}), patch(
+            "web.timetable_reader_api.read_timetable",
+        ) as read:
+            response = app.test_client().post(READER_PATH)
+        self.assertEqual(response.status_code, 503)
+        self.assertIn("ditangguhkan sementara", response.json["error"])
+        read.assert_not_called()
+
     def test_private_endpoint_authenticates_and_returns_real_slots(self):
         app = Flask(__name__)
         app.register_blueprint(bp)
         client = app.test_client()
         token = "test-server-token" * 3
         data = pdf_bytes()
-        with patch.dict(os.environ, {"CIKGULAJU_AUTHORITATIVE_API_TOKEN": token}):
+        with patch.dict(os.environ, {
+            "CIKGULAJU_AUTHORITATIVE_API_TOKEN": token,
+            "CIKGULAJU_TIMETABLE_SERVER_OCR_ENABLED": "1",
+        }):
             self.assertEqual(client.post(READER_PATH, data=data,
                                          content_type="application/pdf").status_code, 401)
             response = client.post(READER_PATH, data=data, content_type="application/pdf",
