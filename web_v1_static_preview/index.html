@@ -1221,14 +1221,19 @@ const dlpPreviews=new Map([
  ["SCIENCE_DLP",document.getElementById("dlp-science")],
  ["MATH_DLP",document.getElementById("dlp-mathematics")]
 ]);
-const dlpPreviewOptions=[
- {value:"SCIENCE_DLP",label:"Science (DLP) — Akan Datang"},
- {value:"MATH_DLP",label:"Mathematics (DLP) — Akan Datang"}
+const dlpSubjectOptions=[
+ {value:"SCIENCE_DLP",label:"Science (DLP)"},
+ {value:"MATH_DLP",label:"Mathematics (DLP)"}
 ];
+const primaryYears=[1,2,3,4,5,6].map(n=>({value:String(n),label:"Tahun "+n}));
 const curriculumYears={
- kssr:[1,2,3,4,5,6].map(n=>({value:String(n),label:"Tahun "+n})),
+ kssr:primaryYears,
  kp2027:[{value:"1",label:"Tahun 1 (KP Baharu)"}],
- dlp:[{value:"2",label:"Tahun 2"}]
+ dlp:primaryYears.map(({value,label})=>({
+  value,
+  label:value==="2"?label+" — Pratonton":
+   label+(value==="1"?" (KP Baharu)":"")+" — Akan Datang"
+ }))
 };
 let subjectLoadRevision=0;
 function selectCurriculum(){
@@ -1433,10 +1438,11 @@ year.addEventListener("change",async()=>{
   return;
  }
  if(choice==="dlp"){
-  if(targetYear!=="2")return;
-  fillSelect(subject,dlpPreviewOptions,"Pilih Subjek");
+  if(!curriculumYears.dlp.some(option=>option.value===targetYear))return;
+  const status=targetYear==="2"?"Pratonton":"Akan Datang";
+  fillSelect(subject,dlpSubjectOptions.map(({value,label})=>({value,label:label+" — "+status})),"Pilih Subjek");
   showStep(subject,true);
-  updateSelectionHelp("Pilih subjek untuk lihat pratonton DLP Tahun 2.");
+  updateSelectionHelp(targetYear==="2"?"Pilih subjek untuk lihat pratonton DLP Tahun 2.":"Pilih subjek DLP.");
   return;
  }
  if(choice!=="kssr")return;
@@ -1457,9 +1463,15 @@ subject.addEventListener("change",async()=>{
  catalogStatus.textContent="";
  if(!code)return;
  if(curriculum.value==="dlp"){
-  if(targetYear==="2"&&dlpPreviews.has(code)){
+  const selectedSubject=dlpSubjectOptions.find(option=>option.value===code);
+  if(!selectedSubject||!curriculumYears.dlp.some(option=>option.value===targetYear))return;
+  if(targetYear==="2"){
    showDlpPreview(code);
    updateSelectionHelp("Pratonton Year 2 SK. Janaan RPH DLP belum dibuka.");
+  }else{
+   const yearLabel="Tahun "+targetYear+(targetYear==="1"?" (KP Baharu)":"");
+   catalogStatus.textContent="Bahan "+selectedSubject.label+" "+yearLabel+" sedang disediakan.";
+   updateSelectionHelp("Janaan dan muat turun RPH DLP — Akan Datang.");
   }
   return;
  }
