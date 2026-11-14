@@ -181,8 +181,48 @@
       1
     ],
     "source_sha256_by_subject_year": {
-      "mathematics_dlp:3": "35ebe007f7fe4cb4da2b0c2784e66df09eb90535818535025e8cef17b7693abd",
-      "science_dlp:3": "f1e6eb104fa76c4352775c23588a0f6937dea8c1a3f06a09b7026aed6a249bac"
+      "mathematics_dlp:3": "bc609979b2785d4ee8ad91720e86195d0c3780f99b0ff4bb1778e1705d94a061",
+      "science_dlp:3": "ce6aefafb01ed02466cfefc81aacf2e8e5e54cc6cc9feb15a39b320b3f5418c8"
+    },
+    "logo_interior_top_left": [
+      700,
+      194,
+      805,
+      256
+    ],
+    "logo_image_safe_top_left": [
+      705,
+      198,
+      800,
+      252
+    ],
+    "school_row_top_left": [
+      156,
+      194,
+      697,
+      223
+    ],
+    "teacher_row_top_left": [
+      156,
+      227,
+      697,
+      255
+    ]
+  },
+  "dlp_year4": {
+    "version": 1,
+    "status": "DLP_YEAR_4_PDF_COVER",
+    "page_width": 841.89,
+    "page_height": 595.304,
+    "tolerance_pt": 0.3,
+    "identity_background_rgb": [
+      1,
+      1,
+      1
+    ],
+    "source_sha256_by_subject_year": {
+      "mathematics_dlp:4": "e46f707343f0d6087294e372c0e62be444a66db93dbe3e3c761a94f432afe072",
+      "science_dlp:4": "4c685320f6633ecece9327958949119993470bf9f9e658d62d7057db8640dadc"
     },
     "logo_interior_top_left": [
       700,
