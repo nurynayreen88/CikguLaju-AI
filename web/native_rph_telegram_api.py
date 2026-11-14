@@ -329,6 +329,75 @@ def create_native_rph_blueprint(runtime):
         response.headers["X-Content-Type-Options"]="nosniff"
         return response
 
+    def dlp_selection(selection):
+        from dlp_year2_rph import resolve
+
+        if not isinstance(selection, dict) or set(selection) != {"year", "subject", "unit", "lesson"}:
+            raise ValueError("Invalid DLP selection")
+        year, subject, unit, lesson = (selection[key] for key in ("year", "subject", "unit", "lesson"))
+        if any(not isinstance(value, str) or len(value) > 40 for value in (subject, unit, lesson)):
+            raise ValueError("Invalid DLP selection")
+        return resolve(year, subject, unit, lesson)
+
+    @bp.get("/internal/rph/v1/dlp/availability")
+    def dlp_availability():
+        allowed, status = _authorized()
+        if not allowed:
+            return jsonify({"error": "Unauthorized renderer"}), status
+        try:
+            if any(len(values) != 1 for _, values in request.args.lists()):
+                raise ValueError("Ambiguous DLP selection")
+            selection = request.args.to_dict()
+            selection["year"] = int(selection.get("year", ""))
+            plan = dlp_selection(selection)
+        except ValueError:
+            return jsonify({"error": "Invalid DLP selection"}), 400
+        if plan is None:
+            return jsonify({"available": False}), 404
+        return jsonify({"available": True, "formats": ["word", "pdf"]})
+
+    @bp.post("/internal/rph/v1/dlp/render")
+    def dlp_render():
+        from flask import current_app
+        from dlp_year2_rph import filename, render as render_dlp
+
+        allowed, status = _authorized()
+        if not allowed:
+            return jsonify({"error": "Unauthorized renderer"}), status
+        if not request.is_json or not 0 < (request.content_length or 0) <= 7000:
+            return jsonify({"error": "Invalid render body"}), 400
+        body = request.get_json(silent=True)
+        try:
+            if not isinstance(body, dict) or set(body) != {"selection", "teacher", "format"}:
+                raise ValueError("Invalid render body")
+            fmt = body["format"]
+            if not isinstance(fmt, str) or fmt not in MIMES:
+                raise ValueError("Invalid format")
+            plan = dlp_selection(body["selection"])
+            teacher = body["teacher"]
+            if not valid_teacher_fields(teacher):
+                raise ValueError("Invalid teacher fields")
+            limits = {"class": 40, "date": 10, "time": 13, "students": 3}
+            teacher = {key: _require_text(teacher[key], limit, allow_empty=True)
+                       for key, limit in limits.items()} | {
+                           "reflection": clean_reflection(teacher.get("reflection", "")),
+                       }
+            if any(not teacher[key].isprintable() for key in limits if teacher[key]):
+                raise ValueError("Invalid teacher fields")
+        except ValueError:
+            return jsonify({"error": "Invalid DLP render request"}), 400
+        if plan is None:
+            return jsonify({"error": "DLP lesson unavailable"}), 404
+        unit, lesson = plan
+        try:
+            document = render_dlp(body["selection"]["subject"], unit, lesson, fmt, teacher)
+            response = Response(document, mimetype=MIMES[fmt])
+            response.headers["Content-Disposition"] = f'attachment; filename="{filename(lesson["id"], fmt)}"'
+            return response
+        except Exception:
+            current_app.logger.exception("DLP document generation failed for %s", lesson["id"])
+            return jsonify({"error": "DLP document generation unavailable"}), 503
+
     @bp.post("/internal/rph/v1/render")
     def render():
         allowed,status=_authorized()
