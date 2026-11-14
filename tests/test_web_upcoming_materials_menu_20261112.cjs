@@ -100,22 +100,30 @@ function mockSelect(name){
  return {value:"",options:[],addEventListener(event,fn){listeners[name+"."+event]=fn;}};
 }
 const curriculum=mockSelect("curriculum"),year=mockSelect("year"),subject=mockSelect("subject"),unit=mockSelect("unit");
+const lesson=mockSelect("lesson"),theme=mockSelect("theme"),topic=mockSelect("topic"),component=mockSelect("component");
 const catalogueCalls=[];
-const panel={hidden:true}, science={hidden:true}, mathematics={hidden:true};
+const panel={hidden:true}, heading={textContent:""};
+const makeNode=()=>({textContent:"",children:[],append(...items){this.children.push(...items);},replaceChildren(){this.children=[];}});
+const content=makeNode();
+const dlpReviewData=JSON.parse(source.match(/<script id="dlp-review-data" type="application\/json">([\s\S]*?)<\/script>/)[1]);
+assert.deepEqual(Object.values(dlpReviewData).map(groups=>groups.map(group=>group.lessons.length)),[[7,1,5],[12,21,8]]);
 const ctx={
- curriculum,year,subject,unit,catalogStatus:{textContent:""}, dlpPreviewPanel:panel,
- dlpPreviews:new Map([["SCIENCE_DLP",science],["MATH_DLP",mathematics]]),
+ curriculum,year,subject,unit,lesson,theme,topic,component,catalogStatus:{textContent:""},
+ dlpPreviewPanel:panel,dlpReviewHeading:heading,dlpReviewContent:content,dlpReviewData,
+ document:{createElement:makeNode,createTextNode:text=>({textContent:text})},
  resetSelect(el,label){el.value="";el.options=[{value:"",label}];el.disabled=true;},
  fillSelect(el,items,label){ctx.resetSelect(el,label);el.options.push(...items);el.disabled=!items.length;},
- resetCurriculumChoices(){ctx.showDlpPreview("");}, setSubjectNavigationLabels(){},
+ resetCurriculumChoices(){ctx.showDlpReview(null);ctx.resetSelect(unit,"");ctx.resetSelect(lesson,"");unit.hidden=lesson.hidden=true;},
+ setSubjectNavigationLabels(){},
+ resetMaterials(){},resetRphPreview(){},showRphAction(){},displayBookReference(){},
  updateSelectionHelp(text){ctx.help=text;},
  async loadOptions(kind){catalogueCalls.push(kind);return [{value:"MATH",label:"Matematik"}];},
  showStep(el,visible){el.hidden=!visible;}, subjectNavLabel(){return "Unit";},
  async fillForSelection(_el,kind,extra){catalogueCalls.push(kind,extra.subject);},
 };
 vm.runInNewContext(code.slice(code.indexOf("const dlpSubjectOptions="),code.indexOf("async function loadOptions("))
- +"\n"+code.slice(code.indexOf('curriculum.addEventListener("change"'),code.indexOf('component.addEventListener("change"'))
- +"\nthis.showDlpPreview=showDlpPreview;",ctx);
+ +"\n"+code.slice(code.indexOf('curriculum.addEventListener("change"'),code.indexOf('const MATERIAL_CATEGORIES'))
+ +"\nthis.showDlpReview=showDlpReview;",ctx);
 (async()=>{
  listeners["curriculum.change"]();
  assert.equal(year.hidden,true);
@@ -132,34 +140,45 @@ vm.runInNewContext(code.slice(code.indexOf("const dlpSubjectOptions="),code.inde
  curriculum.value="dlp";
  listeners["curriculum.change"]();
  assert.deepEqual(year.options.map(x=>x.label),[
-  "Pilih Tahun","Tahun 1 (KP Baharu) — Akan Datang","Tahun 2 — Pratonton",
-  "Tahun 3 — Akan Datang","Tahun 4 — Akan Datang","Tahun 5 — Akan Datang","Tahun 6 — Akan Datang"
+  "Pilih Tahun","Tahun 1 (KP Baharu) — Dalam Penyediaan","Tahun 2 — Untuk Semakan Guru",
+  "Tahun 3 — Dalam Penyediaan","Tahun 4 — Dalam Penyediaan","Tahun 5 — Dalam Penyediaan","Tahun 6 — Dalam Penyediaan"
  ]);
  year.value="2";
  await listeners["year.change"]();
  assert.deepEqual(subject.options.map(x=>x.value),["","SCIENCE_DLP","MATH_DLP"]);
- subject.value="SCIENCE_DLP";
- await listeners["subject.change"]();
- assert.equal(panel.hidden,false);
- assert.equal(science.hidden,false);
- assert.equal(science.open,true);
- assert.equal(mathematics.hidden,true);
- subject.value="MATH_DLP";
- await listeners["subject.change"]();
- assert.equal(science.hidden,true);
- assert.equal(mathematics.open,true);
+ for(const [subjectCode,groups] of Object.entries(dlpReviewData)){
+  subject.value=subjectCode;
+  await listeners["subject.change"]();
+  assert.equal(panel.hidden,true);
+  assert.deepEqual(unit.options.map(x=>x.value),["","01","02","03"]);
+  for(const group of groups){
+   unit.value=group.id;
+   await listeners["unit.change"]();
+   assert.equal(panel.hidden,true);
+   assert.equal(lesson.options.length,group.lessons.length+1);
+   for(const item of group.lessons){
+    lesson.value=item.id;
+    listeners["lesson.change"]();
+    assert.equal(heading.textContent,item.title);
+    assert.equal(panel.hidden,false);
+    assert.equal(content.children.length,17);
+    assert.ok(content.children[0].children.some(node=>node.textContent===item.standards));
+    assert.ok(content.children[1].children.some(node=>node.textContent===item.references));
+   }
+  }
+ }
  for(const n of ["1","3","4","5","6"]){
   year.value=n;
   await listeners["year.change"]();
   assert.equal(panel.hidden,true);
   assert.deepEqual(subject.options.map(x=>x.label),[
-   "Pilih Subjek","Science (DLP) — Akan Datang","Mathematics (DLP) — Akan Datang"
+   "Pilih Subjek","Science (DLP) — Dalam Penyediaan","Mathematics (DLP) — Dalam Penyediaan"
   ]);
   for(const option of subject.options.slice(1)){
    subject.value=option.value;
    await listeners["subject.change"]();
    assert.equal(panel.hidden,true);
-   assert.match(ctx.help,/Akan Datang/);
+   assert.match(ctx.help,/Dalam Penyediaan/);
    assert.ok(ctx.catalogStatus.textContent.includes(n==="1"?"Tahun 1 (KP Baharu)":"Tahun "+n));
   }
  }
