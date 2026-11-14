@@ -104,3 +104,25 @@ Padanan ini menggunakan DSKP KSSR (Semakan 2017) edisi bahasa Inggeris. KPM meny
 - Mathematics Unit 2 kini mempunyai 21 RPH bagi semua SP 2.1.1 hingga 2.5.2 dalam DSKP asal. Rekod baharu meliputi [tolak](../staging/dlp/year2/mathematics_unit_02_subtraction.md), [darab](../staging/dlp/year2/mathematics_unit_02_multiplication.md), [bahagi](../staging/dlp/year2/mathematics_unit_02_division.md) dan [cerita serta penyelesaian masalah](../staging/dlp/year2/mathematics_unit_02_problems.md). Bagi urutan berdasarkan buku teks, letakkan rekod 18–19 selepas rekod 08 dan rekod 17 selepas rekod 16 bagi latihan bahagi sepuluh dengan baki. Rekod 17 juga merujuk pengenalan bahagi sepuluh tanpa baki pada m/s 105–107.
 - Semua halaman BA yang disenaraikan ialah rujukan bercetak dalam BT. Padanan khusus BA belum dikenal pasti bagi *Divide With a Remainder* untuk pembahagi satu digit. BA m/s 81–82 dicetak bersama contoh bahagi dengan sepuluh pada BT m/s 114. Setiap RPH mempunyai latihan PBD tersendiri. Jumlah keseluruhan Unit 1–2 ialah 41 RPH.
 - **Status HOLD untuk pengeluaran**. Tetapkan urutan PdP produksi, semak latihan BA dan dapatkan semakan guru. Ujian janaan Word/PDF Web dan Telegram masih diperlukan.
+
+## Year 2 Unit 3 source check
+
+| Rekod staging | Topik | CS / LS | DSKP m/s | Buku teks bercetak | Buku aktiviti bercetak | Rujukan BA tertera pada BT |
+| --- | --- | --- | --- | --- | --- | --- |
+| DLP-SCI-Y2-U03-01 | Human Reproduction | 3.1 / 3.1.1 | 38 | 24 | 13 | 24 |
+| DLP-SCI-Y2-U03-02 | Describe Growth Since Birth | 3.1 / 3.1.2 | 38 | 25–27 | 14–15 | 25 |
+| DLP-SCI-Y2-U03-03 | Compare Growth Among Individuals | 3.1 / 3.1.3 | 38 | 28–30 | 16 | 28 |
+| DLP-SCI-Y2-U03-04 | Recognise Inherited Features | 3.1 / 3.1.4, 3.1.5 | 38 | 30–32 | 17–20 (rujukan bersama) | 30 |
+| DLP-SCI-Y2-U03-05 | Communicate Findings About Growth and Heredity | 3.1 / 3.1.6 | 39 | 33–34 | 19–20 | 33 |
+| DLP-MAT-Y2-U03-01 | Recognise and Name Proper Fractions | 3.1 / 3.1.1, 3.1.2 | 42 | Bahagian 2, 2–3 | 89–90 | 3 |
+| DLP-MAT-Y2-U03-02 | Draw and Write Proper Fractions | 3.1 / 3.1.3, 3.1.4 | 42 | Bahagian 2, 4–6 | 91–92 | 5, 6 |
+| DLP-MAT-Y2-U03-03 | Compare Proper Fractions | 3.1 / 3.1.5 | 42 | Bahagian 2, 7–9 | 93 | 9 |
+| DLP-MAT-Y2-U03-04 | Convert Tenths and Read Decimals | 3.2 / 3.2.1, 3.2.2, 3.2.5 | 42 | Bahagian 2, 10–11 | 94–95 (rujukan bersama) | 11 |
+| DLP-MAT-Y2-U03-05 | Show and Represent Decimals | 3.2 / 3.2.3, 3.2.4, 3.2.5 | 42 | Bahagian 2, 11–12 | 96 | 12 |
+| DLP-MAT-Y2-U03-06 | Compare Decimals | 3.2 / 3.2.6 | 42 | Bahagian 2, 13 | 97 | 13 |
+| DLP-MAT-Y2-U03-07 | Compare Fractions and Decimals | 3.3 / 3.3.1 | 43 | Bahagian 2, 14 | 98 | 14 |
+| DLP-MAT-Y2-U03-08 | Solve Everyday Fraction and Decimal Problems | 3.4 / 3.4.1 | 43 | Bahagian 2, 15–17 | 99–100 | 16 |
+
+- **Science.** [DSKP edisi bahasa Inggeris](https://anyflip.com/ittl/ygqq/basic), [buku teks DLP](https://fliphtml5.com/fbdki/veis/Science_Year_2/) dan [RPT Science SK 2026](https://www.scribd.com/document/1044199355/Rpt-Sc-Dlp-Year-2-Sk-2026-by-Rozayus-Academy-Kump-a-0kump-b). [Lima RPH Humans](../staging/dlp/year2/science_unit_03.md) meliputi enam SP. Rekod 01–02 dan 03–04 memecahkan blok RPT kepada objektif individu. RPH menggunakan data rekaan, ukuran pada model dan carta keluarga fiksyen. BA m/s 19–20 dirujuk pada dua tempat dalam buku teks dan latihan asal perlu diperiksa sebelum diberikan secara khusus.
+- **Mathematics.** [DSKP edisi bahasa Inggeris](https://asiemodel.net/wp-content/uploads/2022/08/DSKP-Matematik-Tahun-2-DLP.pdf), [buku teks DLP Bahagian 2](https://fliphtml5.com/dpauv/dyzw/Mathematics_DLP_Year_2_Part_2/) dan [SOW Mathematics SK 2026](https://www.scribd.com/document/989378292/RPT-MATH-DLP-YEAR-2-SK-2026-Kump-A-Kump-B). [Lapan RPH Fractions and Decimals](../staging/dlp/year2/mathematics_unit_03.md) meliputi 13 SP. Rekod 04 dan 05 menggunakan SP 3.2.5 dalam dua konteks, iaitu menulis perpuluhan daripada sebutan dan daripada model. Rekod 07 membandingkan pecahan persepuluh dengan perpuluhan, mengikut contoh buku teks m/s 14.
+- Semua halaman BA dalam jadual ialah rujukan yang tertera dalam BT. Kandungan latihan BA asal masih perlu diperiksa. Jumlah Unit 1–3 kini 54 RPH. **Status HOLD untuk pengeluaran** sementara semakan guru, urutan PdP dan janaan Word/PDF melalui Web serta Telegram belum disahkan.
