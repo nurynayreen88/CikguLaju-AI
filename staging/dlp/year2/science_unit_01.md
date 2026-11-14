@@ -1,6 +1,6 @@
 # Science (DLP) · Year 2 SK · Unit 1 Scientific Skills
 
-These four CikguLaju lesson plans cover Science Process Skills (CS 1.1) in the KSSR (Semakan 2017) English-edition DSKP. Each plan is 60 minutes. The codes identify staging records. Source mapping and the remaining checks are recorded in the [DLP audit](../../../audits/dlp_sk_sources_20261114.md#year-2-batch-1-source-check).
+These seven CikguLaju lesson plans cover Science Process Skills (CS 1.1) and Manipulative Skills (CS 1.2) in the KSSR (Semakan 2017) English-edition DSKP. Each plan is 60 minutes. The codes identify staging records. See the [source mapping](../../../audits/dlp_sk_sources_20261114.md#year-2-unit-1-source-check).
 
 ## DLP-SCI-Y2-U01-01 · Observe
 
@@ -65,3 +65,51 @@ These four CikguLaju lesson plans cover Science Process Skills (CS 1.1) in the K
 | Closure · 5 min | Ask what would make a classmate's table easy to understand. | Identify one useful feature, such as clear category headings. |
 
 **Reflection** · ___ of ___ pupils reported two accurate totals and a correct comparison. Revisit the use of headings and reading across a row.
+
+## DLP-SCI-Y2-U01-05 · Use Apparatus and Handle Specimens
+
+**Standards** · CS 1.2 · LS 1.2.1, 1.2.2  
+**References** · Textbook pp. 12–14 · Activity Book pp. 9–10 (shared section reference)  
+**Learning objective** · Independently use a dropper to wet cotton wool without pooling water and place two seeds gently with blunt tweezers.  
+**Materials** · Water, plastic droppers, shallow clear cups, cotton wool, dried beans, blunt tweezers and trays. Tell pupils the beans are for observation.
+
+| Phase | Teacher | Pupils |
+| --- | --- | --- |
+| Set induction · 5 min | Show two prepared cups, one with damp cotton wool and one with pooled water. Ask which tool helps control the amount. | Choose a dropper and describe the difference between the cups. |
+| Main activity · 30 min | Demonstrate drawing water into the dropper and adding it a few drops at a time. Show how to lift a bean gently over the tray. | Take turns preparing a cup. Stop when the cotton wool is evenly damp and place two beans apart so both can be seen. |
+| Practice and assessment · 20 min | Give each pupil a clean setup and check dropper use, absence of pooled water, and careful transfer of both seeds. | Independently prepare one cup, then explain how the dropper or tweezers helped. Refer to the relevant items in Activity Book pp. 9–10 if available. |
+| Closure · 5 min | Ask how to correct a setup with too much water. | Explain how adding a few drops at a time prevents pooling. |
+
+**Reflection** · ___ of ___ pupils met all three checks. Give pupils who squeezed too much water a short dropper practice task.
+
+## DLP-SCI-Y2-U01-06 · Sketch and Clean Apparatus
+
+**Standards** · CS 1.2 · LS 1.2.3, 1.2.4  
+**References** · Textbook pp. 12–14 · Activity Book pp. 9–10 (shared section reference)  
+**Learning objective** · Make a recognisable sketch with three correct labels and clean the plastic cup and dropper without leaving visible residue.  
+**Materials** · A clear plastic cup with a bean and damp cotton wool, plastic dropper, shallow tray, clean rinse water and a draining rack. Prepare a second cup and dropper used with water and a pinch of sugar for cleaning practice.
+
+| Phase | Teacher | Pupils |
+| --- | --- | --- |
+| Set induction · 5 min | Show a simple line drawing of a cup and ask what would make the specimen inside easy to identify. | Suggest showing the bean outline and adding a clear label. |
+| Main activity · 30 min | Model drawing from the side, then show how to rinse a used cup and draw and expel clean water through the dropper over the tray. | Practise sketching the cup setup with a partner. Take turns rinsing the used cup and dropper and placing them on the rack. |
+| Practice and assessment · 20 min | Check each pupil's sketch for a clear outline and correct labels for the cup, bean and cotton wool. Observe each pupil rinsing both items and checking for residue. | Sketch and label the setup independently. Clean the used cup and dropper, then show both items to the teacher. |
+| Closure · 5 min | Ask why a dropper used for sugar solution still needs rinsing if the liquid looks clear. | Explain that clear liquid can still contain dissolved sugar, then describe how to rinse the dropper. |
+
+**Reflection** · ___ of ___ pupils completed the sketch and cleaning checks. Reteach the sketch or rinsing step that each pupil missed.
+
+## DLP-SCI-Y2-U01-07 · Store Apparatus and Substances
+
+**Standards** · CS 1.2 · LS 1.2.5  
+**References** · Textbook pp. 12–14 · Activity Book pp. 9–10 (shared section reference)  
+**Learning objective** · Return three items to their designated places and explain what to do with a wet cup before storage.  
+**Materials** · A clean dry plastic cup, a clean dry plastic dropper, a closed labelled container of table sugar, a wet cup, an equipment tray, a substance shelf and a drying rack.
+
+| Phase | Teacher | Pupils |
+| --- | --- | --- |
+| Set induction · 5 min | Show a wet cup beside a dry cup. Ask which is ready to put away. | Choose the dry cup and give one reason. |
+| Main activity · 30 min | Model checking that apparatus is clean and dry and that the substance lid is closed. Point out the storage labels and drying rack. | In pairs, check sample items, choose the correct location and explain why a wet item goes to the rack. |
+| Practice and assessment · 20 min | Observe each pupil returning a dry cup, a dry dropper and the closed sugar container. Check all three locations and the response to the wet cup. | Put the three items away independently. Point to the drying rack and explain when the wet cup can be stored. |
+| Closure · 5 min | Ask what to check before returning the sugar container. | Check the label and confirm that the lid is closed. |
+
+**Reflection** · ___ of ___ pupils stored all three items correctly and identified the drying step. Repeat the routine with pupils who mixed equipment and substances.
