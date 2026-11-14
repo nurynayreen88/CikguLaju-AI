@@ -168,6 +168,34 @@ class TeacherProfileHttpTests(unittest.TestCase):
             read.assert_called_once_with(data, ["4 Bestari"])
             save.assert_not_called()
 
+    def test_subject_aliases_are_private_and_ocr_uses_full_subject_names(self):
+        url = "/api/web/teacher/timetable/subject-aliases"
+        payload = {"aliases": {"PD": "Pendidikan Moral"}, "version": "2026-11-05T11:00:00+00:00"}
+        data = b"%PDF-1.7 example"
+        raw_rows = [period(subject=code) for code in ("PD", "KM", "PJPK")]
+        with patch("web.teacher_profile_routes._lookup", return_value={
+            "telegram_user_id": 123, "authenticated": True, "rakan_pembangun": True,
+        }), patch("web.teacher_profile_routes.save_subject_aliases", return_value=payload["version"]) as save, \
+             patch("web.teacher_profile_routes.get_profile", return_value={
+                 "class_names": ["4 Bestari"], "timetable_subject_aliases": payload["aliases"],
+             }), patch("web.timetable_reader_client.read_uploaded_timetable", return_value={
+                 "entries": raw_rows, "uncertain": 0, "unreadable_pages": 0,
+             }):
+            bad = self.client.put(url, json=payload, base_url=self.base)
+            self.assertEqual(bad.status_code, 400)
+            save.assert_not_called()
+            response = self.client.put(url, json=payload, base_url=self.base, headers=self.origin)
+            self.assertEqual(response.status_code, 200)
+            save.assert_called_once_with(self.config["supabase_url"], self.config["supabase_key"], 123, payload)
+            response = self.client.post("/api/web/teacher/timetable/read",
+                                        data={"timetable": (BytesIO(data), "jadual.pdf")},
+                                        base_url=self.base, headers=self.origin)
+            self.assertEqual(response.status_code, 200)
+            entries = response.json["entries"]
+            self.assertEqual([r["subject"] for r in entries],
+                             ["Pendidikan Moral", "KM", "Pendidikan Jasmani dan Pendidikan Kesihatan"])
+            self.assertEqual([r.get("subject_code") for r in entries], ["PD", "KM", None])
+
     def test_anonymous_and_unregistered_blocked(self):
         with patch("web.teacher_profile_routes.verify_session_ticket",return_value=None):
             for method in ("get","put"):

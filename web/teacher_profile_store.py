@@ -27,6 +27,19 @@ SCHEDULE_PUT_KEYS = frozenset(("entries", "version"))
 MAX_RESPONSE = 65536
 TIME = re.compile(r"(?:[01][0-9]|2[0-3]):[0-5][0-9]")
 SUBJECT = re.compile(r"[\w .\-/()&,]+", re.UNICODE)
+SUBJECT_CODE = re.compile(r"[A-Z][A-Z0-9]{1,7}")
+STANDARD_SUBJECT_CODES = {
+    "BM": "Bahasa Melayu", "BI": "English", "EN": "English", "ENG": "English",
+    "BA": "Bahasa Arab", "ARAB": "Bahasa Arab",
+    "MT": "Matematik", "MM": "Matematik", "MATH": "Matematik",
+    "SN": "Sains", "SC": "Sains", "SCIENCE": "Sains",
+    "PI": "Pendidikan Islam", "PAI": "Pendidikan Islam",
+    "PM": "Pendidikan Moral", "MORAL": "Pendidikan Moral",
+    "PSV": "Pendidikan Seni Visual", "MZ": "Pendidikan Muzik",
+    "MUZIK": "Pendidikan Muzik", "PJ": "Pendidikan Jasmani",
+    "PK": "Pendidikan Kesihatan", "PJPK": "Pendidikan Jasmani dan Pendidikan Kesihatan",
+    "RBT": "Reka Bentuk dan Teknologi", "SJ": "Sejarah", "SEJ": "Sejarah",
+}
 
 
 class ProfileConflict(Exception):
@@ -127,6 +140,29 @@ def _validated_name(value, max_len, label, *, required=False):
     if required and not item:
         raise ProfileValidation(label + " diperlukan")
     return item
+
+
+def normalize_timetable_subject(subject, aliases):
+    if not isinstance(subject, str):
+        return subject
+    code = subject.strip().upper()
+    return STANDARD_SUBJECT_CODES.get(code, aliases.get(code, subject))
+
+
+def clean_subject_aliases(aliases):
+    if not isinstance(aliases, dict) or len(aliases) > 40:
+        raise ProfileValidation("Maksimum 40 singkatan subjek")
+    result = {}
+    for raw_code, raw_subject in aliases.items():
+        code = _validated_name(raw_code, 8, "Singkatan subjek", required=True).upper()
+        if (not SUBJECT_CODE.fullmatch(code) or code in STANDARD_SUBJECT_CODES
+                or code in result):
+            raise ProfileValidation("Singkatan subjek tidak sah atau berulang")
+        subject = _validated_name(raw_subject, 60, "Nama penuh subjek", required=True)
+        if not SUBJECT.fullmatch(subject) or SUBJECT_CODE.fullmatch(subject):
+            raise ProfileValidation("Masukkan nama penuh bagi " + code)
+        result[code] = subject
+    return result
 
 
 def clean_profile(form):
@@ -252,7 +288,7 @@ def _class_records(record):
 def _profile_record(url, key, uid, *, opener=None):
     return _get_one(
         url, key, "teacher_profiles", uid,
-        "telegram_user_id,display_name,school_name,state_name,district_name,school_code,avatar_code,class_names,class_profiles,updated_at",
+        "telegram_user_id,display_name,school_name,state_name,district_name,school_code,avatar_code,class_names,class_profiles,timetable_subject_aliases,updated_at",
         opener=opener,
     )
 
@@ -276,7 +312,7 @@ def get_profile(url, key, uid, *, opener=None):
     if record is None:
         return {"display_name": "Cikgu", "school_name": "",
                 "state_name": "", "district_name": "", "school_code": "",
-                "avatar_code": "initials", "class_names": [], "version": ""}
+                "avatar_code": "initials", "class_names": [], "timetable_subject_aliases": {}, "version": ""}
     classes = [r["name"] for r in _class_records(record)]
     return {
         "display_name": record.get("display_name") or "Cikgu",
@@ -286,6 +322,7 @@ def get_profile(url, key, uid, *, opener=None):
         "school_code": record.get("school_code") or "",
         "avatar_code": record.get("avatar_code") if record.get("avatar_code") in AVATAR_CODES else "initials",
         "class_names": classes,
+        "timetable_subject_aliases": record.get("timetable_subject_aliases") or {},
         "version": record.get("updated_at") or "",
     }
 
@@ -299,13 +336,20 @@ def get_schedule(url, key, uid, *, opener=None):
     # No fallback is permitted once class_profiles exist: an intentionally
     # cleared timetable must stay empty, not resurrect archived Web entries.
     if record.get("class_profiles"):
-        return {"entries": _flatten_timetable(classes),
-                "version": record.get("updated_at") or ""}
-    # Read-only compatibility for the pre-unification Web timetable rows.
-    legacy = _get_one(url, key, "teacher_timetables", uid,
-                      "telegram_user_id,entries,updated_at", opener=opener)
-    return {"entries": (legacy.get("entries") or []) if legacy else [],
-            "version": record.get("updated_at") or ""}
+        entries = _flatten_timetable(classes)
+    else:
+        # Read-only compatibility for the pre-unification Web timetable rows.
+        legacy = _get_one(url, key, "teacher_timetables", uid,
+                          "telegram_user_id,entries,updated_at", opener=opener)
+        entries = (legacy.get("entries") or []) if legacy else []
+    aliases = record.get("timetable_subject_aliases") or {}
+    return {
+        "entries": [
+            {**row, "subject": normalize_timetable_subject(row.get("subject"), aliases)}
+            for row in entries
+        ],
+        "version": record.get("updated_at") or "",
+    }
 
 
 def _save(url, key, table, uid, values, expected_version, *, opener=None):
@@ -417,6 +461,17 @@ def save_profile(url, key, uid, form, *, opener=None):
     return _save(url, key, "teacher_profiles", uid, values, version, opener=opener)
 
 
+def save_subject_aliases(url, key, uid, form, *, opener=None):
+    if set(form) != {"aliases", "version"}:
+        raise ProfileValidation("Maklumat singkatan subjek tidak lengkap")
+    aliases = clean_subject_aliases(form["aliases"])
+    version = _version(form["version"])
+    if not version:
+        raise ProfileValidation("Simpan maklumat guru terlebih dahulu")
+    return _save(url, key, "teacher_profiles", uid,
+                 {"timetable_subject_aliases": aliases}, version, opener=opener)
+
+
 def save_schedule(url, key, uid, form, *, opener=None):
     """Write same Telegram class_profiles timetable, never a second writable copy."""
     record = _profile_record(url, key, uid, opener=opener)
@@ -427,11 +482,12 @@ def save_schedule(url, key, uid, form, *, opener=None):
     entries, version = clean_schedule(form, classes)
     if version != (record.get("updated_at") or ""):
         raise ProfileConflict("Maklumat telah dikemas kini. Muat semula")
+    aliases = record.get("timetable_subject_aliases") or {}
     byname = {r["name"].casefold(): [] for r in records}
     for entry in entries:
         byname[entry["class_name"].casefold()].append({
             "day": entry["day"], "start": entry["start"],
-            "end": entry["end"], "subject": entry["subject"],
+            "end": entry["end"], "subject": normalize_timetable_subject(entry["subject"], aliases),
         })
     updated = [{**r, "timetable": byname[r["name"].casefold()]} for r in records]
     return _save(url, key, "teacher_profiles", uid,
