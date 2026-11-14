@@ -30,6 +30,8 @@ def fixture(pioneer_amount=10.0):
         if path == "referral_members" and method == "POST":
             member.append(dict(kwargs["json"]))
         if path.startswith("rpc/"):
+            if path.endswith("affiliate_overview"):
+                return {"open": True, "account_number": None}
             if path.endswith("affiliate_point_summary"):
                 return [{"earned":12,"balance":2,"available":2,"reserved":0,"paid":10}]
             if path.endswith("referral_award_verified_payment"):
@@ -158,32 +160,33 @@ class TestPrivateReferral(unittest.TestCase):
         self.assertEqual(response[1],403)
         self.assertFalse(any(path=="referral_members" for method,path,args in calls))
 
-    def test_private_share_and_copy_buttons_for_invited_user(self):
-        ns, sent, calls, _ = fixture()
+    def test_automatic_referrer_can_share_without_wallet(self):
+        ns, _, calls, _ = fixture()
+        code = "a" * 32
+        def sb(method, path, **kwargs):
+            if path.startswith("referral_members?"):
+                return [{"referrer_user_id": 301, "referral_code": code, "enabled": True}]
+            return original_sb(method, path, **kwargs)
+        original_sb = ns["_sb_request"]
+        ns["_sb_request"] = sb
         keyboards = []
         ns["send"] = lambda uid, text, *args: keyboards.append(
             (uid, text, args[0] if args else []))
-        msg = {"chat": {"id": 1, "type": "private"},
-               "from": {"id": 1}, "text": "/refadd 301"}
-        ns["request"] = type("Request", (), {
-            "headers": {"X-Telegram-Bot-Api-Secret-Token": "correct-long-secret"},
-            "get_json": lambda self, **_: {"message": msg},
-        })()
         with patch.dict(os.environ, {
             "CIKGULAJU_REFERRAL_POINTS_ENABLED": "1",
             "CIKGULAJU_TELEGRAM_WEBHOOK_SECRET": "correct-long-secret",
         }):
             referral.install(ns)
-            ns["app"].view_functions["webhook"]()
             ns["callback"](301, "private_referral_home")
+        self.assertFalse(any(path == "referral_members" for _, path, _ in calls))
         buttons = [kb for uid, text, kb in keyboards if uid == 301 and kb]
         self.assertTrue(buttons)
         last = buttons[-1]
         self.assertIn("Kongsi Pautan", last[0][0]["text"])
         self.assertIn("Salin Pautan", last[1][0]["text"])
         self.assertTrue(last[0][0]["url"].startswith("https://t.me/share/url?"))
-        self.assertTrue(last[1][0]["copy_text"]["text"].startswith(
-            "https://t.me/CikguLajuBot?start=rp_"))
+        self.assertEqual(last[1][0]["copy_text"]["text"], "https://t.me/CikguLajuBot?start=rp_" + code)
+        self.assertEqual(last[2][0]["url"], "https://cikgulaju-web.onrender.com/?affiliate=1")
         message = next(text for uid, text, _ in reversed(keyboards) if uid == 301)
         self.assertIn("Baki mata: <b>2</b>", message)
         self.assertIn("Mata dibayar: <b>10</b>", message)
