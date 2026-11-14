@@ -14,6 +14,7 @@ from functools import lru_cache
 from pathlib import Path
 from flask import Blueprint, jsonify, send_file, request
 from web.english_rpt_2027_http import _account, _has_paid_access
+from rpt_2027.dlp.documents import SUBJECTS as DLP_SUBJECTS, document_path
 
 ROOT = Path(__file__).resolve().parents[1] / "rpt_2027"
 YEARS = tuple(range(2,7))
@@ -170,16 +171,30 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
                 "is_draft":current is not None or entry_status!="TERSEDIA",
             })
         subjects.append({"code":code,"label":label,"years":entries})
+    dlp_count = 0
+    for code, label in DLP_SUBJECTS.items():
+        if document_path(code, 2, root=Path(root)/"dlp") is None:
+            continue
+        subjects.append({"code":code,"label":f"{label} (DLP)","years":[{
+            "year":2,
+            "pdf_ready":True,
+            "status":"TERSEDIA",
+            "download_enabled":bool(allowed),
+            "note":"Year 2 SK · Group A and Group B",
+            "is_draft":False,
+            "year_label":"Year 2",
+        }]})
+        dlp_count += 1
     return {
         "year":2027,
         "format":"pdf",
         "allowed":bool(allowed),
         "personalization_allowed":bool(personalization_allowed),
         "subjects":subjects,
-        "total_rpt":56,
-        "total_display_choices":66,
+        "total_rpt":56+dlp_count,
+        "total_display_choices":66+dlp_count,
         "year1_coming_soon":10,
-        "available_rpt":available,
+        "available_rpt":available+dlp_count,
         "note":"Tahun 1 KP2027 belum boleh dimuat turun. RPT Tahun 2–6 boleh dimuat turun oleh semua pengguna log masuk; nama dan logo hanya dicetak untuk akses berbayar yang masih aktif.",
     }
 
@@ -205,6 +220,15 @@ def create_all_rpt_blueprint(*,root=ROOT):
         account,error=_account()
         if error is not None:
             return error
+        if subject in DLP_SUBJECTS:
+            path = document_path(subject, year, root=Path(root)/"dlp")
+            if path is None:
+                return jsonify({"error":"Pilihan RPT DLP tidak tersedia"}),404
+            response = send_file(path, mimetype="application/pdf", as_attachment=True,
+                                 download_name=path.name, conditional=False)
+            response.headers["X-RPT-Source-SHA256"] = hashlib.sha256(path.read_bytes()).hexdigest()
+            response.headers["X-RPT-Personalization-Allowed"] = "1" if _has_paid_access(account) else "0"
+            return response
         if subject not in SUBJECTS or year not in SUBJECTS[subject][1]:
             return jsonify({"error":"Pilihan RPT tidak sah"}),404
         staged=_staged_file(subject,year,root=root)
