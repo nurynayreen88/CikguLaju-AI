@@ -217,3 +217,29 @@ Dua pemulihan visual dibuat menggunakan penjana imej berpandukan rujukan asal un
 [PR Web #720](https://github.com/nurynayreen88/CikguLaju-AI/pull/720) digabung ke cabang produksi. Render melaporkan komit `ffac4c3be0eae50759a1ce748452b9fc5327e2fb` aktif. Halaman utama dan aset JavaScript produksi memaparkan versi 512. Ujian katalog, profil guru dan produksi lulus di CI. Semakan terus dalam akaun guru produksi belum dibuat.
 
 Audit ketajaman setiap logo masih terbuka. Dua objek terkecil yang perlu disemak ialah XBA1102 (SK Logongon, 338 bait) dan CBA6024 (SK Felda Tersang 3, 527 bait). Saiz fail sahaja belum menentukan dimensi atau ketajaman imej. Sumber lain yang beresolusi rendah termasuk ABAB025, ABCA001, CBC6034, JBC0035, ABD1082 dan XCC5034.
+
+## Audit dimensi dan pemulihan lencana susulan
+
+Semakan direktori dan metadata objek aktif Supabase mengesahkan 7,778 daripada 7,778 sekolah rendah mempunyai fail katalog. Saiz fail produksi bagi XBA1102 dan CBA6024 masing-masing 338 dan 527 bait. Fail asal berada dalam katalog persendirian.
+
+Semakan dimensi dijalankan pada 872 imej sumber GovTech berdaftar yang dipadankan dengan kod dan sambungan fail pada komit `2fa79e15e77da39371138bc247dc034d17a90b4b`. Semua 872 imej boleh dibaca. Sisi terpanjang bagi 761 imej kurang daripada 128 piksel dan bagi 860 imej kurang daripada 256 piksel, termasuk 761 imej tadi. Enam imej mencapai sekurang-kurangnya 512 piksel pada sisi terpanjang. Ukuran ini membantu memilih keutamaan semakan visual dan belum merangkumi dimensi 6,906 fail dalam folder katalog RisalahMap.
+
+| Kod | Sekolah | Rujukan pemulihan | SHA-256 PNG 512 × 512 |
+| --- | --- | --- | --- |
+| XBA1102 | SK Logongon, PPD Pensiangan | [Pandai, fail berkod XBA1102](https://app.pandai.org/uploads/school/XBA1102.jpg), 150 × 150 | `626cb9c24247e19bf4de3083cec76478c397c89880eea4a5f14c312c0198608d` |
+| CBA6024 | SK (Felda) Tersang 3, PPD Raub | [Profil blog sekolah](https://www.blogger.com/profile/06047563211529349264), lencana cetak 220 × 199, disemak bersama [foto lencana sulaman Pandai](https://app.pandai.org/uploads/school/CBA6024.jpg), 1,441 × 1,619 | `b07afae18057cbd1c9c6c1ab6b8eb8192f7adec0f18a5b866d324c0f1d4f0ff0` |
+
+Kedua-dua lencana dihasilkan semula berpandukan imej rujukan. Ejaan, bentuk dan susunan lambang disemak secara visual. Kedua-dua fail berukuran 512 × 512, menggunakan PNG RGBA dan lulus pengesahan fail logo CikguLaju. Kedua-dua fail ditambah ke folder persendirian `restored-512-v1` dan bacaan semula mengesahkan checksum di atas. Laluan import sementara ditutup selepas bacaan semula. [PR Web #723](https://github.com/nurynayreen88/CikguLaju-AI/pull/723) mengaktifkan logo dipulihkan dalam laluan pratonton dan pengambilan automatik. Ujian setempat (55 Python dan dua Node) dan CI logo lulus. Render mengesahkan komit `25c027d` aktif pada 22:38 MYT. Pengesahan sesi guru produksi masih tertangguh.
+
+## Audit dimensi folder RisalahMap
+
+Saiz bait fail setempat dipadankan dengan metadata storan produksi melalui kod sekolah. Sebanyak 6,905 daripada 6,906 fail folder RisalahMap sepadan dan dibuka untuk semakan dimensi. Fail PBA1015 masih memerlukan ukuran secara langsung daripada storan. Nilai di bawah menggunakan sisi terpanjang imej asal.
+
+| Sisi terpanjang | Bilangan |
+| --- | ---: |
+| Kurang daripada 128 px | 6,104 |
+| 128–255 px | 702 |
+| 256–511 px | 97 |
+| 512 px atau lebih | 2 |
+
+Audit ini meliputi dimensi sumber. Semakan visual dan pencarian sumber yang lebih jelas masih diteruskan.

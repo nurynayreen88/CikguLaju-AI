@@ -90,3 +90,9 @@ Setiap sesi pembaikan baharu perlu merekodkan jenis bahan, rujukan PR, keputusan
 
 - Web produksi: PR [#720](https://github.com/nurynayreen88/CikguLaju-AI/pull/720) digabung ke cabang produksi. Render dan aset Web produksi disahkan menggunakan versi 512 × 512. Ujian logo, profil, akses produksi dan aliran RPT lulus. Semakan logo melalui sesi guru produksi belum dibuat.
 - Lencana JBC1051 (Poay Chai Bukit Indah) dan XBA4376 (SK Wasai) dipulihkan, disimpan sebagai versi tambahan dan disahkan dalam storan. Audit ketajaman lencana lain masih dalam semakan. [Audit katalog](../audits/school_logo_coverage_20261114.md#penyeragaman-saiz-logo-katalog-di-web)
+
+## 14 November 2026 — Audit dimensi dan pemulihan dua lagi lencana
+
+- XBA1102 (SK Logongon) dan CBA6024 (SK Felda Tersang 3) dihasilkan semula sebagai PNG lutsinar 512 × 512. Semakan visual, pengesahan fail PNG, 14 ujian Python dan dua ujian Node lulus setempat.
+- **MERGED PRODUKSI WEB** melalui [#723](https://github.com/nurynayreen88/CikguLaju-AI/pull/723) pada komit `25c027d`. Versi persendirian kedua-dua logo telah dibaca semula dan disahkan melalui SHA-256. CI lulus dan komit aktif pada Render pada 22:38 MYT. Pengesahan melalui sesi guru produksi masih tertangguh.
+- Audit dimensi mengesahkan 860 daripada 872 fail sumber GovTech berdaftar mempunyai sisi terpanjang kurang daripada 256 piksel. Audit tambahan meliputi 6,905 daripada 6,906 fail RisalahMap. Sebanyak 6,806 daripada 6,905 fail yang diperiksa mempunyai sisi terpanjang kurang daripada 256 piksel. Semakan ketajaman keseluruhan masih berjalan. [Rekod pemulihan dan checksum](../audits/school_logo_coverage_20261114.md#audit-dimensi-dan-pemulihan-lencana-susulan)
