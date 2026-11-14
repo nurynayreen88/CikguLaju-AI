@@ -229,4 +229,17 @@ Semakan dimensi dijalankan pada 872 imej sumber GovTech berdaftar yang dipadanka
 | XBA1102 | SK Logongon, PPD Pensiangan | [Pandai, fail berkod XBA1102](https://app.pandai.org/uploads/school/XBA1102.jpg), 150 × 150 | `626cb9c24247e19bf4de3083cec76478c397c89880eea4a5f14c312c0198608d` |
 | CBA6024 | SK (Felda) Tersang 3, PPD Raub | [Profil blog sekolah](https://www.blogger.com/profile/06047563211529349264), lencana cetak 220 × 199, disemak bersama [foto lencana sulaman Pandai](https://app.pandai.org/uploads/school/CBA6024.jpg), 1,441 × 1,619 | `b07afae18057cbd1c9c6c1ab6b8eb8192f7adec0f18a5b866d324c0f1d4f0ff0` |
 
-Kedua-dua lencana dihasilkan semula berpandukan imej rujukan. Ejaan, bentuk dan susunan lambang disemak secara visual. Kedua-dua fail berukuran 512 × 512, menggunakan PNG RGBA dan lulus pengesahan fail logo CikguLaju. Status HOLD. Muat naik ke katalog persendirian masih memerlukan akses tulis Supabase Storage. Selepas muat naik, sahkan SHA-256 daripada bacaan semula dan masukkan kod ke dalam senarai pemulihan pada cabang Web produksi. Semak pratonton melalui sesi guru sebelum menanda pelepasan.
+Kedua-dua lencana dihasilkan semula berpandukan imej rujukan. Ejaan, bentuk dan susunan lambang disemak secara visual. Kedua-dua fail berukuran 512 × 512, menggunakan PNG RGBA dan lulus pengesahan fail logo CikguLaju. Kedua-dua fail ditambah ke folder persendirian `restored-512-v1` dan bacaan semula mengesahkan checksum di atas. Laluan import sementara ditutup selepas bacaan semula. [PR Web #723](https://github.com/nurynayreen88/CikguLaju-AI/pull/723) mengaktifkan logo dipulihkan dalam laluan pratonton dan pengambilan automatik. Ujian setempat (55 Python dan dua Node) dan CI logo lulus. Pengesahan sesi guru produksi masih tertangguh.
+
+## Audit dimensi folder RisalahMap
+
+Saiz bait fail setempat dipadankan dengan metadata storan produksi melalui kod sekolah. Sebanyak 6,905 daripada 6,906 fail folder RisalahMap sepadan dan dibuka untuk semakan dimensi. Fail PBA1015 masih memerlukan ukuran secara langsung daripada storan. Nilai di bawah menggunakan sisi terpanjang imej asal.
+
+| Sisi terpanjang | Bilangan |
+| --- | ---: |
+| Kurang daripada 128 px | 6,104 |
+| 128–255 px | 702 |
+| 256–511 px | 97 |
+| 512 px atau lebih | 2 |
+
+Audit ini meliputi dimensi sumber. Semakan visual dan pencarian sumber yang lebih jelas masih diteruskan.
