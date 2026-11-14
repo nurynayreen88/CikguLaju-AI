@@ -200,7 +200,9 @@ schoolLogoFile.addEventListener("change", () => {
   schoolLogoStatus.textContent = "Pratonton sahaja. Tekan Muat Naik Logo untuk menyimpan.";
 });
 
-async function schoolLogoToPng(file) {
+const schoolLogoCatalogSize=512;
+
+async function schoolLogoToPng(file, {catalog=false}={}) {
   // Canvas removes image metadata and normalizes PNG/JPEG/WebP to a compact,
   // static PNG. Private server accepts PNG only, independently validating it.
   const url=URL.createObjectURL(file),picture=new Image();
@@ -211,14 +213,19 @@ async function schoolLogoToPng(file) {
         picture.width * picture.height > 12000000)
       throw new Error("Dimensi gambar tidak sah atau terlalu besar.");
     for (const side of [512,420,320,240]) {
-      const factor=Math.min(1,side/Math.max(picture.width,picture.height));
+      const fit=side/Math.max(picture.width,picture.height);
+      const factor=catalog ? fit : Math.min(1,fit);
+      const width=Math.max(catalog ? 1 : 32,Math.round(picture.width*factor));
+      const height=Math.max(catalog ? 1 : 32,Math.round(picture.height*factor));
       const canvas=document.createElement("canvas");
-      canvas.width=Math.max(32,Math.round(picture.width*factor));
-      canvas.height=Math.max(32,Math.round(picture.height*factor));
+      canvas.width=catalog ? schoolLogoCatalogSize : width;
+      canvas.height=catalog ? schoolLogoCatalogSize : height;
       const ctx=canvas.getContext("2d");
       if (!ctx) throw new Error("Pemprosesan logo tidak tersedia.");
       ctx.clearRect(0,0,canvas.width,canvas.height);
-      ctx.drawImage(picture,0,0,canvas.width,canvas.height);
+      ctx.imageSmoothingQuality="high";
+      ctx.drawImage(picture,Math.round((canvas.width-width)/2),
+        Math.round((canvas.height-height)/2),width,height);
       const png=await new Promise(resolve=>canvas.toBlob(resolve,"image/png"));
       if (png?.type==="image/png" && png.size>0 && png.size<450*1024)
         return png;
@@ -289,7 +296,9 @@ async function previewSelectedSchoolLogo() {
     const query=new URLSearchParams({school_code:code});
     const blob=await fetchSchoolLogoCandidate("/api/web/teacher/school-logo-preview?"+query,request.signal);
     if(request.signal.aborted || selectedLogoSchoolCode()!==code || savedLogoSchoolCode())return;
-    schoolLogoSelectionUrl=URL.createObjectURL(blob);
+    const png=await schoolLogoToPng(blob,{catalog:true});
+    if(request.signal.aborted || selectedLogoSchoolCode()!==code || savedLogoSchoolCode())return;
+    schoolLogoSelectionUrl=URL.createObjectURL(png);
     schoolLogoSelectionImage.src=schoolLogoSelectionUrl;
     await schoolLogoSelectionImage.decode();
     if(request.signal.aborted || selectedLogoSchoolCode()!==code || savedLogoSchoolCode())return;
@@ -327,7 +336,7 @@ async function importSavedSchoolLogo(automatic=false) {
     const blob=await fetchSchoolLogoCandidate("/api/web/teacher/school-logo-candidate");
     // The browser normalizes metadata, transparency and GIF first frame before
     // the same server-side PNG validation used for manual private uploads.
-    const png=await schoolLogoToPng(blob);
+    const png=await schoolLogoToPng(blob,{catalog:true});
     if(savedLogoSchoolCode()!==code)throw new Error(
       "Sekolah berubah semasa logo dimuatkan. Simpan profil dan cuba lagi.");
     // A manual upload may have started or finished during the remote fetch.
