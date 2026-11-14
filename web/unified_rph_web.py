@@ -21,6 +21,7 @@ from flask import Blueprint, g, jsonify, request, send_file
 
 from web.english_rpt_2027_http import _account, _has_paid_access
 from web.rph_teacher_reflection import clean_reflection
+from web.native_telegram_sequence_rph_client import DLP_CODES, DLP_SOURCE
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "audits/english_primary_2_6_official_sow_index_20261103.json"
@@ -29,6 +30,8 @@ SUBJECT_LABELS = {
     "BM": "Bahasa Melayu",
     "MATH": "Matematik",
     "SCIENCE": "Sains",
+    "SCIENCE_DLP": "Science (DLP)",
+    "MATH_DLP": "Mathematics (DLP)",
     "PI": "Pendidikan Islam",
     "PJPK": "PJPK",
     "MORAL": "Pendidikan Moral",
@@ -450,6 +453,8 @@ def _selection():
     component = request.args.get("component")
     if subject not in SUBJECT_LABELS or not _safe_text(unit) or not _safe_text(lesson, MAX_TOKEN):
         raise ValueError("Invalid subject or lesson")
+    if subject in DLP_CODES and year != 2:
+        raise ValueError("DLP downloads are available for Year 2")
     if subject == "PJPK" and component not in ("PJ", "PK"):
         raise ValueError("Missing PJPK component")
     if subject != "PJPK" and component is not None:
@@ -589,6 +594,23 @@ def create_blueprint():
                 teacher["reflection"] = reflection
         if for_download:
             _fill_roster_count(teacher, account)
+        if subject in DLP_CODES:
+            from web.native_telegram_sequence_rph_client import (
+                verified_dlp_available, NativeRPHUnavailable,
+            )
+            try:
+                verified_dlp_available(year, subject, unit, token)
+            except ValueError:
+                return None, (jsonify({"error": "Pilihan Lesson/PdP DLP tidak sah."}), 400)
+            except NativeRPHUnavailable:
+                return None, (jsonify({
+                    "error": "Fail RPH DLP belum dapat disahkan. Pilihan guru dikekalkan.",
+                    "code": "DLP_RPH_UNAVAILABLE",
+                }), 503)
+            return {
+                "source": DLP_SOURCE, "year": year, "subject": subject,
+                "unit": unit, "lesson": token, "teacher": teacher,
+            }, None
         # BM's REAL Telegram flow uses verified_pdp_sequence, NOT rpt_entries.
         # Never reinterpret an opaque BM PdP token as an RPT row ID.
         if subject == "BM":
@@ -756,6 +778,8 @@ def create_blueprint():
                 "download_allowed": allowed, "access_status": access}
         # Preserve the existing JSON contract for English/BM/PI/other users.
         # Publish DRAF and format restrictions only for the new subjects.
+        if selected.get("source")==DLP_SOURCE:
+            result["formats"] = ["word", "pdf"]
         if selected.get("source")=="telegram-native-rbt-2027":
             result.update({"status":selected["status"],"formats":["word","pdf"]})
         if selected.get("source")=="telegram-provisional-subjects-2027":
@@ -789,6 +813,8 @@ def create_blueprint():
         selected, err = selected_rph()
         if err is not None:
             return err
+        if selected.get("source") == DLP_SOURCE:
+            return jsonify({"error": "Pilih Muat Turun Word atau PDF untuk mendapatkan RPH DLP."}), 404
         # Full RPH source JSON is a complete teaching artifact. A free
         # user must not bypass the one-use trial charge by reading preview.
         if not g.cikgulaju_rph_paid:
@@ -825,6 +851,9 @@ def create_blueprint():
                         "code":"DRAFT_RPH_FORMAT_NOT_VERIFIED",
                     }),503), None
                 document = request_draft_rph(selected, fmt)
+            elif selected.get("source") == DLP_SOURCE:
+                from web.native_telegram_sequence_rph_client import request_dlp_rph
+                document = request_dlp_rph(selected, fmt)
             elif selected.get("source") == "telegram-native-pdp-sequence":
                 from web.native_telegram_sequence_rph_client import request_native_sequence_rph
                 document = request_native_sequence_rph(selected, fmt)
@@ -894,6 +923,8 @@ def create_blueprint():
         lesson_tag = (f"{selected['lesson']:03d}" if type(selected["lesson"]) is int
                       else re.sub(r"[^A-Za-z0-9_-]", "_", selected["lesson"])[:80])
         filename = f"CIKGULAJU_RPH_{selected['subject']}_TAHUN_{selected['year']}_{lesson_tag}.docx"
+        if selected.get("source") == DLP_SOURCE:
+            filename = f"CIKGULAJU_RPH_{lesson_tag}.docx"
         response = send_file(document,
             mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
             as_attachment=True,download_name=filename,conditional=False)
@@ -915,6 +946,8 @@ def create_blueprint():
         lesson_tag = (f"{selected['lesson']:03d}" if type(selected["lesson"]) is int
                       else re.sub(r"[^A-Za-z0-9_-]", "_", selected["lesson"])[:80])
         filename = f"CIKGULAJU_RPH_{selected['subject']}_TAHUN_{selected['year']}_{lesson_tag}.pdf"
+        if selected.get("source") == DLP_SOURCE:
+            filename = f"CIKGULAJU_RPH_{lesson_tag}.pdf"
         response = send_file(document,mimetype="application/pdf",
             as_attachment=True,download_name=filename,conditional=False)
         response.headers["X-RPH-Generator"] = "telegram-native"

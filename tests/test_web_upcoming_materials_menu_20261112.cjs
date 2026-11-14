@@ -102,18 +102,17 @@ function mockSelect(name){
 const curriculum=mockSelect("curriculum"),year=mockSelect("year"),subject=mockSelect("subject"),unit=mockSelect("unit");
 const lesson=mockSelect("lesson"),theme=mockSelect("theme"),topic=mockSelect("topic"),component=mockSelect("component");
 const catalogueCalls=[];
-const panel={hidden:true}, heading={textContent:""};
-const makeNode=()=>({textContent:"",children:[],append(...items){this.children.push(...items);},replaceChildren(){this.children=[];}});
-const content=makeNode();
-const dlpReviewData=JSON.parse(source.match(/<script id="dlp-review-data" type="application\/json">([\s\S]*?)<\/script>/)[1]);
-assert.deepEqual(Object.values(dlpReviewData).map(groups=>groups.map(group=>group.lessons.length)),[[7,1,5,7,6,6,7,7,11,6],[12,21,8,11,6,10,6,4]]);
+const readinessCalls=[];
+assert.doesNotMatch(source,/id="dlp-rph-preview"/);
+const dlpNavigationData=JSON.parse(source.match(/<script id="dlp-navigation-data" type="application\/json">([\s\S]*?)<\/script>/)[1]);
+assert.deepEqual(Object.values(dlpNavigationData).map(groups=>groups.map(group=>group.lessons.length)),[[7,1,5,7,6,6,7,7,11,6],[12,21,8,11,6,10,6,4]]);
 const ctx={
  curriculum,year,subject,unit,lesson,theme,topic,component,catalogStatus:{textContent:""},
- dlpPreviewPanel:panel,dlpReviewHeading:heading,dlpReviewContent:content,dlpReviewData,
- document:{createElement:makeNode,createTextNode:text=>({textContent:text})},
+ dlpNavigationData,
+ checkRphAvailability(){readinessCalls.push([subject.value,unit.value,lesson.value]);},
  resetSelect(el,label){el.value="";el.options=[{value:"",label}];el.disabled=true;},
  fillSelect(el,items,label){ctx.resetSelect(el,label);el.options.push(...items);el.disabled=!items.length;},
- resetCurriculumChoices(){ctx.showDlpReview(null);ctx.resetSelect(unit,"");ctx.resetSelect(lesson,"");unit.hidden=lesson.hidden=true;},
+ resetCurriculumChoices(){ctx.resetSelect(unit,"");ctx.resetSelect(lesson,"");unit.hidden=lesson.hidden=true;},
  setSubjectNavigationLabels(){},
  resetMaterials(){},resetRphPreview(){},showRphAction(){},displayBookReference(){},
  updateSelectionHelp(text){ctx.help=text;},
@@ -123,7 +122,7 @@ const ctx={
 };
 vm.runInNewContext(code.slice(code.indexOf("const dlpSubjectOptions="),code.indexOf("async function loadOptions("))
  +"\n"+code.slice(code.indexOf('curriculum.addEventListener("change"'),code.indexOf('const MATERIAL_CATEGORIES'))
- +"\nthis.showDlpReview=showDlpReview;",ctx);
+,ctx);
 (async()=>{
  listeners["curriculum.change"]();
  assert.equal(year.hidden,true);
@@ -140,44 +139,38 @@ vm.runInNewContext(code.slice(code.indexOf("const dlpSubjectOptions="),code.inde
  curriculum.value="dlp";
  listeners["curriculum.change"]();
  assert.deepEqual(year.options.map(x=>x.label),[
-  "Pilih Tahun","Tahun 1 (KP Baharu) — Dalam Penyediaan","Tahun 2 — Untuk Semakan Guru",
+  "Pilih Tahun","Tahun 1 (KP Baharu) — Dalam Penyediaan","Tahun 2",
   "Tahun 3 — Dalam Penyediaan","Tahun 4 — Dalam Penyediaan","Tahun 5 — Dalam Penyediaan","Tahun 6 — Dalam Penyediaan"
  ]);
  year.value="2";
  await listeners["year.change"]();
  assert.deepEqual(subject.options.map(x=>x.value),["","SCIENCE_DLP","MATH_DLP"]);
- for(const [subjectCode,groups] of Object.entries(dlpReviewData)){
+ for(const [subjectCode,groups] of Object.entries(dlpNavigationData)){
   subject.value=subjectCode;
   await listeners["subject.change"]();
-  assert.equal(panel.hidden,true);
   assert.deepEqual(unit.options.map(x=>x.value),["",...groups.map(group=>group.id)]);
   for(const group of groups){
    unit.value=group.id;
    await listeners["unit.change"]();
-   assert.equal(panel.hidden,true);
    assert.equal(lesson.options.length,group.lessons.length+1);
    for(const item of group.lessons){
     lesson.value=item.id;
     listeners["lesson.change"]();
-    assert.equal(heading.textContent,item.title);
-    assert.equal(panel.hidden,false);
-    assert.equal(content.children.length,17);
-    assert.ok(content.children[0].children.some(node=>node.textContent===item.standards));
-    assert.ok(content.children[1].children.some(node=>node.textContent===item.references));
+    assert.deepEqual(Object.keys(item),["id","title"]);
+    assert.deepEqual(readinessCalls.at(-1),[subjectCode,group.id,item.id]);
    }
   }
  }
+ assert.equal(readinessCalls.length,141);
  for(const n of ["1","3","4","5","6"]){
   year.value=n;
   await listeners["year.change"]();
-  assert.equal(panel.hidden,true);
   assert.deepEqual(subject.options.map(x=>x.label),[
    "Pilih Subjek","Science (DLP) — Dalam Penyediaan","Mathematics (DLP) — Dalam Penyediaan"
   ]);
   for(const option of subject.options.slice(1)){
    subject.value=option.value;
    await listeners["subject.change"]();
-   assert.equal(panel.hidden,true);
    assert.match(ctx.help,/Dalam Penyediaan/);
    assert.ok(ctx.catalogStatus.textContent.includes(n==="1"?"Tahun 1 (KP Baharu)":"Tahun "+n));
   }
@@ -185,7 +178,6 @@ vm.runInNewContext(code.slice(code.indexOf("const dlpSubjectOptions="),code.inde
  assert.deepEqual(catalogueCalls,[]);
  curriculum.value="kssr";
  listeners["curriculum.change"]();
- assert.equal(panel.hidden,true);
  assert.equal(subject.hidden,true);
  assert.deepEqual(year.options.map(x=>x.value),["","1","2","3","4","5","6"]);
  year.value="2";
@@ -193,7 +185,6 @@ vm.runInNewContext(code.slice(code.indexOf("const dlpSubjectOptions="),code.inde
  assert.deepEqual(subject.options.map(x=>x.value),["","MATH"]);
  subject.value="MATH";
  await listeners["subject.change"]();
- assert.equal(panel.hidden,true);
  assert.deepEqual(catalogueCalls,["subjects","units","MATH"]);
  let resolveOldSubjects;
  ctx.loadOptions=()=>new Promise(resolve=>{resolveOldSubjects=resolve;});
