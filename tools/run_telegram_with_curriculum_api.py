@@ -164,6 +164,11 @@ def active_master_database():
 
 register_if_enabled(app, active_master_database)
 
+# Private, read-only OCR for the Web timetable editor.
+from web.timetable_reader_api import bp as timetable_reader_bp
+app.register_blueprint(timetable_reader_bp)
+
+
 # RPT English 2027 PDF download: install after all Telegram callback wrappers.
 # This does not alter app.py, RPH generation, DB state or quota debits.
 try:

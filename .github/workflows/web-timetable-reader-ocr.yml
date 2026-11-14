@@ -1,0 +1,27 @@
+name: Web timetable reader OCR
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/web-timetable-reader-ocr.yml'
+      - 'web/timetable_reader*.py'
+      - 'web/timetable_upload.py'
+      - 'tests/test_timetable_reader.py'
+      - 'tools/run_telegram_with_curriculum_api.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  ocr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - name: Read images, scanned PDFs and vector PDFs through the OCR endpoint
+        run: |
+          python -m py_compile tools/run_telegram_with_curriculum_api.py web/timetable_reader*.py web/timetable_upload.py
+          python -m unittest discover -s tests -p 'test_timetable_reader.py' -v
+          python -m unittest discover -s tests -p 'test_telegram_rph_hari_ini_manual_20261110.py' -v
