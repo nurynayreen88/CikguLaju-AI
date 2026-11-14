@@ -8,6 +8,9 @@ on:
       - 'curriculum_version_selector.py'
       - 'curriculum_version_telegram.py'
       - 'tests/test_curriculum_version_*.py'
+      - 'data/dlp_year2_review.json'
+      - 'staging/dlp/year2/*.md'
+      - 'tools/build_dlp_year2_review_catalog.py'
       - 'app.py'
       - '.github/workflows/kp2027-selector-checks.yml'
 permissions:
@@ -21,4 +24,5 @@ jobs:
         with:
           python-version: '3.13'
       - run: python -m py_compile curriculum_version_selector.py curriculum_version_telegram.py app.py
+      - run: python tools/build_dlp_year2_review_catalog.py --check
       - run: python -m unittest tests.test_curriculum_version_selector tests.test_curriculum_version_telegram

@@ -36,6 +36,8 @@ Rujukan [E-Katalog Buku Teks KPM](https://moe.gov.my/storage/files/shares/Banner
 
 Gunakan identiti SK, edisi kurikulum, Tahun, subjek, versi DLP dan Lesson/PdP pada setiap rekod. Padankan standard dan rujukan buku terlebih dahulu, kemudian semak RPH bahasa Inggeris serta bukti PBD. Sambungan Word/PDF dan petikan bahan perlu diuji melalui pilihan Lesson yang sama di Web dan Telegram. Petikan buku menggunakan sumber dalaman yang tersedia dan disahkan.
 
+Paparan **Untuk Semakan Guru** menyediakan teks penuh RPH Unit 1–3 pada menu DLP Tahun 2. Sumbernya ialah 54 rekod di bawah. Paparan mengikut tajuk dan kod dalaman supaya urutan buku teks dapat dibaca sementara nombor PdP produksi disahkan. Penjanaan fail dan petikan buku kekal berstatus **Dalam Penyediaan**.
+
 <a id="year-2-batch-1-source-check"></a>
 
 ## Year 2 Unit 1 source check
