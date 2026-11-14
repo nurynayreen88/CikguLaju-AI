@@ -396,13 +396,13 @@ def _recover_compact_texts(image, cells, texts, saved_classes):
 def _read_grid(texts, saved_classes):
     labels, day_axis, compact = _day_labels(texts)
     if not labels:
-        return [], 0
+        return [], []
     time_axis = 1 - day_axis
     headers = _headers(texts, labels, time_axis, day_axis)
     if not headers:
-        return [], 0
+        return [], []
     skipped = {cell for cell, _ in labels} | _break_cells(texts, labels, day_axis)
-    entries, uncertain = [], 0
+    entries, uncertain = [], []
     for cell, text in texts:
         if (cell in skipped or NON_TEACHING.search(text)
                 or not any(c.isalpha() for c in text)):
@@ -413,22 +413,22 @@ def _read_grid(texts, saved_classes):
                  if _intersects(_interval(cell, time_axis), span)]
         if len(matching_days) != 1:
             continue
-        if not spans:
-            # Count a teaching cell on the timetable band if its time heading
-            # is missing. It must not disappear from the review summary.
-            if _subject_class(text, saved_classes, compact) != ("", ""):
-                uncertain += 1
-            continue
-        if any(last_end != next_start for (_, last_end), (next_start, _) in zip(spans, spans[1:])):
-            uncertain += 1
-            continue
+        day = matching_days[0]
         subject, class_name = _subject_class(text, saved_classes, compact)
+        time_unclear = not spans or any(
+            last_end != next_start for (_, last_end), (next_start, _) in zip(spans, spans[1:])
+        )
+        if time_unclear:
+            if subject or class_name:
+                uncertain.append(dict(day=day, start="", end="", reason="time"))
+            continue
+        start, end = spans[0][0], spans[-1][1]
         if not subject and not class_name:
-            uncertain += 1
+            uncertain.append(dict(day=day, start=start, end=end, reason="details"))
             continue
         if not subject or not class_name:
-            uncertain += 1
-        entries.append(dict(day=matching_days[0], start=spans[0][0], end=spans[-1][1],
+            uncertain.append(dict(day=day, start=start, end=end, reason="review"))
+        entries.append(dict(day=day, start=start, end=end,
                             class_name=class_name, subject=subject))
     return entries, uncertain
 
@@ -449,18 +449,18 @@ def read_timetable(data, saved_classes):
     import fitz
     from PIL import Image
 
-    results, uncertain, unreadable_pages = {}, 0, 0
+    results, uncertain, unreadable_pages = {}, [], 0
     try:
-        for image, words in _pages(data):
+        for page, (image, words) in enumerate(_pages(data), start=1):
             cells = _grid(image)
             entries, missed = _read_grid(_cell_texts(cells, words), saved_classes)
             if (not entries or missed) and cells:
                 texts = _cell_texts(cells, _ocr_words(image))
                 texts = _recover_compact_texts(image, cells, texts, saved_classes)
                 ocr_entries, ocr_missed = _read_grid(texts, saved_classes)
-                if (len(ocr_entries), -ocr_missed) > (len(entries), -missed):
+                if (len(ocr_entries), -len(ocr_missed)) > (len(entries), -len(missed)):
                     entries, missed = ocr_entries, ocr_missed
-            uncertain += missed
+            uncertain.extend(dict(cell, page=page) for cell in missed)
             if not entries:
                 unreadable_pages += 1
             for entry in entries:
@@ -476,4 +476,6 @@ def read_timetable(data, saved_classes):
     entries = _merge_adjacent(entries)
     if len(entries) > 80:
         raise UnreadableTimetable("Lebih daripada 80 waktu dikesan. Muat naik jadual untuk seorang guru.")
-    return {"entries": entries, "uncertain": uncertain, "unreadable_pages": unreadable_pages}
+    uncertain.sort(key=lambda row: (row["page"], DAYS.index(row["day"]), row["start"]))
+    return {"entries": entries, "uncertain": len(uncertain), "unreadable_pages": unreadable_pages,
+            "unclear_cells": uncertain[:80]}
