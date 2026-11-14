@@ -1,4 +1,4 @@
-"""Opt-in PRIVATE referral points for CikguLaju Telegram (no public menu).
+"""Referral points and private account summaries for CikguLaju Telegram.
 
 Only install after the existing pioneer callback has been installed. This
 feature is OFF by default; it requires an applied DB migration and configured
@@ -99,21 +99,9 @@ def install(ns):
         username = str(ns["_bot_username_v25267"]() or "").strip().lstrip("@")
         return f"https://t.me/{username}?start=rp_{code}" if username else ""
 
-    def affiliate_open(uid):
-        try:
-            result = sb("POST", "rpc/affiliate_overview", json={"p_user": int(uid)})
-            return isinstance(result, dict) and result.get("open") is True
-        except Exception:
-            return False
-
     def show_referral(uid):
         row = member(uid)
-        open_program = affiliate_open(uid)
-        web = "https://cikgulaju-web.onrender.com/?affiliate=1"
         if not row or row.get("enabled") is not True:
-            if row is None and open_program:
-                return send(uid, "🎁 Daftar affiliate dengan nombor akaun TNG eWallet (DuitNow).",
-                            [[{"text": "Sertai Affiliate", "url": web}]])
             return send(uid, "🔒 Program affiliate tidak tersedia untuk akaun ini.")
         link = link_for(uid, row["referral_code"])
         if not link:
@@ -130,8 +118,14 @@ def install(ns):
             [{"text": "📋 Salin Pautan", "copy_text": {"text": link}}],
             [{"text": "🏠 Menu Utama", "callback_data": "home"}],
         ]
-        if open_program:
-            buttons.insert(2, [{"text": "💸 Claim Ganjaran", "url": web}])
+        try:
+            overview = sb("POST", "rpc/affiliate_overview", json={"p_user": int(uid)})
+        except Exception:
+            overview = None
+        claims_open = isinstance(overview, dict) and overview.get("open") is True
+        if claims_open:
+            web = "https://cikgulaju-web.onrender.com/?affiliate=1"
+            buttons.insert(2, [{"text": "💸 Tuntutan & Sejarah", "url": web}])
         return send(uid,
             "🎁 <b>AFFILIATE SAYA</b>\n\n"
             f"🔗 <code>{link}</code>\n\n"
@@ -139,7 +133,7 @@ def install(ns):
             f"✅ Pembayaran layak: <b>{paid}</b>\n"
             f"{point_lines(points)}\n\n"
             "Ganjaran dikira selepas bayaran pertama disahkan. "
-            + ("Tuntutan minimum 10 mata (RM10) melalui TNG eWallet." if open_program
+            + ("Simpan nombor akaun TNG eWallet di Web untuk tuntutan minimum 10 mata (RM10)." if claims_open
                else "Mata dikumpul dahulu dan belum boleh ditebus."),
             buttons)
 
@@ -323,7 +317,6 @@ def install(ns):
         return previous_webhook()
 
     ns["_private_referral_member"] = member
-    ns["_affiliate_open"] = affiliate_open
     ns["callback"] = callback
     app.view_functions["webhook"] = webhook
     return True

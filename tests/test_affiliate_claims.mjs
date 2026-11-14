@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import {PGlite} from "@electric-sql/pglite";
 
 const db = new PGlite();
-const sql = query => db.query(query);
+const sql = (query, params) => db.query(query, params);
 const result = async query => (await sql(query)).rows[0].result;
 await db.exec(`CREATE ROLE anon; CREATE ROLE authenticated; CREATE ROLE service_role BYPASSRLS;
   CREATE TABLE public.cikgulaju_users(telegram_user_id bigint PRIMARY KEY,
@@ -12,7 +12,7 @@ await db.exec(`CREATE ROLE anon; CREATE ROLE authenticated; CREATE ROLE service_
       approved_at timestamptz, approved_by bigint, revoked_at timestamptz);
   CREATE TABLE public.subscription_payments(telegram_user_id bigint, payment_reference text,
       amount_rm numeric, status text, created_at timestamptz);
-  GRANT SELECT ON public.cikgulaju_users TO service_role;
+  GRANT SELECT, INSERT ON public.cikgulaju_users TO service_role;
   GRANT SELECT, UPDATE ON public.pioneer_entitlements, public.subscription_payments TO service_role;
   INSERT INTO public.cikgulaju_users(telegram_user_id) VALUES (10),(11),(12),(13),(14),(15);
   UPDATE public.cikgulaju_users SET first_name='Affiliate Ujian', username='affiliate_ujian' WHERE telegram_user_id=10;`);
@@ -38,7 +38,21 @@ const legacy = await result(`SELECT affiliate_submit_claim(10,10,'01123456789','
 await sql("RESET ROLE");
 await db.exec(readFileSync("supabase/migrations/20261113225317_affiliate_duitnow_account.sql", "utf8"));
 await db.exec(readFileSync("supabase/migrations/20261113231252_affiliate_point_balances.sql", "utf8"));
+await sql("UPDATE referral_members SET enabled=false WHERE referrer_user_id=10");
+await db.exec(readFileSync("supabase/migrations/20261114033218_auto_referral_members_existing_new_v2.sql", "utf8"));
+assert.equal((await sql("SELECT enabled FROM referral_members WHERE referrer_user_id=10")).rows[0].enabled, false);
+await sql("UPDATE referral_members SET enabled=true WHERE referrer_user_id=10");
+
 await sql("SET ROLE service_role");
+const autoMember = async uid => (await sql(
+  "SELECT referral_code FROM referral_members WHERE referrer_user_id=$1", [uid])).rows[0];
+assert.match((await autoMember(15)).referral_code, /^[a-f0-9]{32}$/);
+await sql("INSERT INTO cikgulaju_users (telegram_user_id) VALUES (16)");
+const newCode = (await autoMember(16)).referral_code;
+assert.match(newCode, /^[a-f0-9]{32}$/);
+assert.notEqual(newCode, (await autoMember(15)).referral_code);
+assert.equal((await result("SELECT affiliate_overview(16) result")).account_number, null);
+assert.equal((await autoMember(10)).referral_code, member.referral_code);
 assert.equal((await result("SELECT affiliate_overview(10) result")).account_number, null);
 assert.equal((await result("SELECT affiliate_save_wallet(10,'0123456789') result")).error, "account_required");
 assert.equal((await result(`SELECT affiliate_submit_claim(10,10,'01123456789','${legacyKey}') result`)).error,"account_required");
