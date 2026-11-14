@@ -82,8 +82,25 @@ Padanan ini menggunakan DSKP KSSR (Semakan 2017) edisi bahasa Inggeris. KPM meny
 | DLP-MAT-Y2-U02-03 | Add Two Numbers With Regrouping | 2.1 / 2.1.1 | 38 | Bahagian 1, 51–55 | 35–37 | 55 |
 | DLP-MAT-Y2-U02-04 | Add Two Numbers Near 1,000 | 2.1 / 2.1.1 | 38 | Bahagian 1, 56–57 | 38 (rujukan seksyen) | 56 |
 | DLP-MAT-Y2-U02-05 | Add Three Numbers Within 1,000 | 2.1 / 2.1.2 | 38 | Bahagian 1, 58–61 | 39–41 | 60 |
+| DLP-MAT-Y2-U02-06 | Subtract Without Regrouping | 2.2 / 2.2.1 | 38 | Bahagian 1, 62–65 | 42–43 | 65 |
+| DLP-MAT-Y2-U02-07 | Subtract With Regrouping | 2.2 / 2.2.1 | 38 | Bahagian 1, 66–72 | 44–48 | 71 |
+| DLP-MAT-Y2-U02-08 | Subtract Successively | 2.2 / 2.2.2 | 38 | Bahagian 1, 73–75 | 49–51 | 75 |
+| DLP-MAT-Y2-U02-09 | Build Equal Groups and Arrays | 2.3 / 2.3.1 | 38 | Bahagian 1, 81–83 | 56–58 | 82, 83 |
+| DLP-MAT-Y2-U02-10 | Build Facts for 2, 3, 4, 5 and 6 | 2.3 / 2.3.1 | 38 | Bahagian 1, 84–86 | 59–63 | 84, 85, 86 |
+| DLP-MAT-Y2-U02-11 | Build Facts for 7, 8 and 9 | 2.3 / 2.3.1 | 38 | Bahagian 1, 87–90 | 64–67 | 87, 88, 89, 90 |
+| DLP-MAT-Y2-U02-12 | Multiply by 0, 1 and 10 | 2.3 / 2.3.1, 2.3.2 | 38 | Bahagian 1, 91–93 | 68–70 | 92, 93 |
+| DLP-MAT-Y2-U02-13 | Share and Group Equally | 2.4 / 2.4.1 | 39 | Bahagian 1, 95–98 | 71–74 | 95, 96, 97, 98 |
+| DLP-MAT-Y2-U02-14 | Use Multiplication to Divide | 2.4 / 2.4.1 | 39 | Bahagian 1, 99–103 | 75–79 | 102 |
+| DLP-MAT-Y2-U02-15 | Divide by One and Use Zero as the Dividend | 2.4 / 2.4.1 | 39 | Bahagian 1, 104–106 | 80 (rujukan bersama) | 105 |
+| DLP-MAT-Y2-U02-16 | Divide With a Remainder | 2.4 / 2.4.1 | 39 | Bahagian 1, 109–113 | — | — |
+| DLP-MAT-Y2-U02-17 | Divide Two-Digit Numbers by Ten | 2.4 / 2.4.2 | 39 | Bahagian 1, 105–107 dan 114–115 | 81–82 (rujukan bagi baki) | 114 |
+| DLP-MAT-Y2-U02-18 | Create Addition and Subtraction Stories | 2.5 / 2.5.1 | 39 | Bahagian 1, 76–77 | 52–53 | 77 |
+| DLP-MAT-Y2-U02-19 | Solve Addition and Subtraction Stories | 2.5 / 2.5.2 | 39 | Bahagian 1, 78–80 | 54–55 | 79 |
+| DLP-MAT-Y2-U02-20 | Create Multiplication and Division Stories | 2.5 / 2.5.1 | 39 | Bahagian 1, 116–117 | 83–84 | 116 |
+| DLP-MAT-Y2-U02-21 | Solve Multiplication and Division Stories | 2.5 / 2.5.2 | 39 | Bahagian 1, 118–121 | 85–86 (rujukan seksyen) | 120 |
 
 - **Science** menggunakan [DSKP edisi bahasa Inggeris](https://anyflip.com/gohfh/jnak/basic), [buku teks DLP](https://fliphtml5.com/fbdki/veis/Science_Year_2/) dan [RPT Science SK 2026](https://www.scribd.com/document/1044199355/Rpt-Sc-Dlp-Year-2-Sk-2026-by-Rozayus-Academy-Kump-a-0kump-b). DSKP dan RPT menyarankan pemerhatian sebelum, semasa dan selepas menggunakan bilik sains. [RPH Unit 2](../staging/dlp/year2/science_unit_02.md) menggunakan simulasi bergambar untuk insiden dan senarai semak per murid untuk menilai amalan sebenar.
 - **Mathematics** menggunakan [DSKP edisi bahasa Inggeris](https://asiemodel.net/wp-content/uploads/2022/08/DSKP-Matematik-Tahun-2-DLP.pdf), [buku teks DLP Bahagian 1](https://fliphtml5.com/dpauv/rwgq/Mathematics_DLP_Year_2_Part_1/) dan [SOW Mathematics SK 2026](https://www.scribd.com/document/989378292/RPT-MATH-DLP-YEAR-2-SK-2026-Kump-A-Kump-B). SOW meletakkan 2.1.1 dan 2.1.2 dalam blok yang sama. [Lima RPH tambah](../staging/dlp/year2/mathematics_unit_02_addition.md) memecahkannya mengikut kemahiran dan menggunakan garis nombor serta blok asas sepuluh. Buku teks m/s 49–50 boleh dirujuk untuk kaedah abakus. RPH *Add Two Numbers Near 1,000* menggunakan latihan PBD asal berpandukan soalan perbandingan jumlah pada m/s 57. BA m/s 38 hanya rujukan seksyen yang dicetak pada m/s 56.
-- Semua muka surat BA ialah rujukan bercetak dalam BT. Kandungan latihan BA asal masih menunggu semakan. RPH Science Unit 2 dan Mathematics CS 2.1 menambah enam rekod, menjadikan jumlah 25. Mathematics Unit 2 masih berbaki topik selepas tambah.
+- Mathematics Unit 2 kini mempunyai 21 RPH bagi semua SP 2.1.1 hingga 2.5.2 dalam DSKP asal. Rekod baharu meliputi [tolak](../staging/dlp/year2/mathematics_unit_02_subtraction.md), [darab](../staging/dlp/year2/mathematics_unit_02_multiplication.md), [bahagi](../staging/dlp/year2/mathematics_unit_02_division.md) dan [cerita serta penyelesaian masalah](../staging/dlp/year2/mathematics_unit_02_problems.md). Bagi urutan berdasarkan buku teks, letakkan rekod 18–19 selepas rekod 08 dan rekod 17 selepas rekod 16 bagi latihan bahagi sepuluh dengan baki. Rekod 17 juga merujuk pengenalan bahagi sepuluh tanpa baki pada m/s 105–107.
+- Semua halaman BA yang disenaraikan ialah rujukan bercetak dalam BT. Padanan khusus BA belum dikenal pasti bagi *Divide With a Remainder* untuk pembahagi satu digit. BA m/s 81–82 dicetak bersama contoh bahagi dengan sepuluh pada BT m/s 114. Setiap RPH mempunyai latihan PBD tersendiri. Jumlah keseluruhan Unit 1–2 ialah 41 RPH.
 - **Status HOLD untuk pengeluaran**. Tetapkan urutan PdP produksi, semak latihan BA dan dapatkan semakan guru. Ujian janaan Word/PDF Web dan Telegram masih diperlukan.
