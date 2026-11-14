@@ -1,10 +1,15 @@
-"""Show curriculum versions and DLP previews inside Telegram's RPH selectors."""
+"""Show curriculum choices and DLP availability inside Telegram's RPH selectors."""
 from html import escape
 
 from curriculum_version_selector import KP2027, LEGACY, resolve_curriculum
 
 
 DLP = "dlp"
+DLP_YEARS = {
+    f"cv_year{n}_dlp": f"Tahun {n}" + (" (KP Baharu)" if n == 1 else "")
+    for n in range(1, 7)
+}
+DLP_PREVIEW_YEAR = "Tahun 2"
 PRIMARY_CURRICULA = {
     "cv_primary_kssr": (LEGACY, "KSSR"),
     "cv_primary_kp27": (KP2027, "KP27 (KP Baharu)"),
@@ -77,7 +82,10 @@ def install(namespace):
         elif version == KP2027:
             keyboard = [[{"text":"Tahun 1 (KP Baharu)", "callback_data":"cv_year1_kp"}]]
         else:
-            keyboard = [[{"text":"Tahun 2", "callback_data":"cv_year2_dlp"}]]
+            keyboard = [[{
+                "text": year_label + (" — Pratonton" if year_label == DLP_PREVIEW_YEAR else " — Akan Datang"),
+                "callback_data": key,
+            }] for key, year_label in DLP_YEARS.items()]
         keyboard.extend([[{"text":"⬅️ Pilih Kurikulum", "callback_data":"level_primary"}],
                          [{"text":"🏠 Menu Utama", "callback_data":"home"}]])
         return send(cid, f"📚 <b>{label}</b>\n\nPilih tahun.", keyboard)
@@ -86,12 +94,15 @@ def install(namespace):
         reset_selection(cid, KP2027)["year"] = "Tahun 1"
         return subjects(cid, "Tahun 1")
 
-    def dlp_subjects(cid):
-        keyboard = [[{"text":preview[0]+" — Akan Datang", "callback_data":key}]
+    def dlp_subjects(cid, year_label):
+        has_preview = year_label == DLP_PREVIEW_YEAR
+        status = "Pratonton" if has_preview else "Akan Datang"
+        keyboard = [[{"text":f"{preview[0]} — {status}", "callback_data":key}]
                     for key, preview in DLP_PREVIEWS.items()]
         keyboard.extend([[{"text":"⬅️ Pilih Tahun", "callback_data":"cv_primary_dlp"}],
                          [{"text":"🏠 Menu Utama", "callback_data":"home"}]])
-        return send(cid, "📘 <b>DLP · Tahun 2</b>\n\nPilih subjek untuk lihat pratonton.", keyboard)
+        prompt = "Pilih subjek untuk lihat pratonton." if has_preview else "Pilih subjek DLP."
+        return send(cid, f"📘 <b>DLP · {year_label}</b>\n\n{prompt}", keyboard)
 
     def choose(cid,label):
         st=state.setdefault(cid,{})
@@ -109,7 +120,7 @@ def install(namespace):
     def subjects(cid,label):
         st=state.setdefault(cid,{})
         if st.get("curriculum_version") == DLP:
-            return dlp_subjects(cid) if label == "Tahun 2" else primary_years(cid, DLP, "DLP")
+            return dlp_subjects(cid, label) if label in DLP_YEARS.values() else primary_years(cid, DLP, "DLP")
         result=resolve_curriculum(st.get("curriculum_version"),label,st.get("subject"))
         if st.get("curriculum_version")==KP2027 and label in ("Tahun 1", "Tingkatan 1"):
             # Display candidate subjects only; never route into legacy SK/SP.
@@ -145,19 +156,25 @@ def install(namespace):
             if _rph_flow(st) and version == KP2027:
                 return choose_year_one_preview(cid)
             return year(cid, "primary")
-        if d == "cv_year2_dlp":
+        if d in DLP_YEARS:
             if _rph_flow(st) and version == DLP:
-                reset_selection(cid, DLP)["year"] = "Tahun 2"
-                return dlp_subjects(cid)
+                year_label = DLP_YEARS[d]
+                reset_selection(cid, DLP)["year"] = year_label
+                return dlp_subjects(cid, year_label)
             return year(cid, "primary")
         if d in DLP_PREVIEWS:
-            if not (_rph_flow(st) and st.get("year") == "Tahun 2" and version == DLP):
+            year_label = st.get("year")
+            if not (_rph_flow(st) and year_label in DLP_YEARS.values() and version == DLP):
                 return year(cid, "primary")
             name, topic, standards, objective, books = DLP_PREVIEWS[d]
+            keyboard = [[{"text":"⬅️ Pilih Subjek", "callback_data":"back_subjects"}],
+                        [{"text":"🏠 Menu Utama", "callback_data":"home"}]]
+            if year_label != DLP_PREVIEW_YEAR:
+                return send(cid, f"<b>{name} · {year_label}</b>\n\n"
+                            "Akan Datang. Bahan sedang disediakan.", keyboard)
             return send(cid, f"<b>{name} · Year 2</b>\n{topic}\n{standards}\n\n{objective}\n{books}\n\n"
                         "Pratonton. Janaan RPH dan muat turun berstatus Akan Datang.",
-                        [[{"text":"⬅️ Pilih Subjek", "callback_data":"back_subjects"}],
-                         [{"text":"🏠 Menu Utama", "callback_data":"home"}]])
+                        keyboard)
         if d.startswith("year_"):
             if _rph_flow(st) and version != LEGACY:
                 return curriculum_menu(cid)
