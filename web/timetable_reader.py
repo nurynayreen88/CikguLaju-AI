@@ -89,8 +89,15 @@ def _pages(data):
 
 @lru_cache(maxsize=1)
 def _ocr_engine():
+    from onnxruntime import disable_telemetry_events
     from ocrust import Ocr
-    return Ocr(threads=2, tables=False, word_boxes=True, preprocess=False,
+
+    disable_telemetry_events()
+    # The reader shares a 512 MiB instance with the Telegram app. Bound
+    # detection tensors and recognition batches even on large uploads.
+    return Ocr(threads=1, page_workers=1, memory="frugal",
+               det_limit_side=960, rec_batch_size=4,
+               tables=False, word_boxes=True, preprocess=False,
                fix_orientation=False, drop_score=0.48, max_pixels=MAX_PIXELS)
 
 
