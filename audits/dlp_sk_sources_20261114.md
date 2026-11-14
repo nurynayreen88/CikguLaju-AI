@@ -36,7 +36,7 @@ Rujukan [E-Katalog Buku Teks KPM](https://moe.gov.my/storage/files/shares/Banner
 
 Gunakan identiti SK, edisi kurikulum, Tahun, subjek, versi DLP dan Lesson/PdP pada setiap rekod. Padankan standard dan rujukan buku terlebih dahulu, kemudian semak RPH bahasa Inggeris serta bukti PBD. Sambungan Word/PDF dan petikan bahan perlu diuji melalui pilihan Lesson yang sama di Web dan Telegram. Petikan buku menggunakan sumber dalaman yang tersedia dan disahkan.
 
-Paparan **Untuk Semakan Guru** menyediakan teks penuh RPH Unit 1–3 pada menu DLP Tahun 2. Sumbernya ialah 54 rekod di bawah. Paparan mengikut tajuk dan kod dalaman supaya urutan buku teks dapat dibaca sementara nombor PdP produksi disahkan. Penjanaan fail dan petikan buku kekal berstatus **Dalam Penyediaan**.
+Paparan **Untuk Semakan Guru** menyediakan teks penuh RPH Unit 1–5 pada menu DLP Tahun 2. Sumbernya ialah 84 rekod di bawah. Paparan mengikut tajuk dan kod dalaman supaya urutan buku teks dapat dibaca sementara nombor PdP produksi disahkan. Penjanaan fail dan petikan buku kekal berstatus **Dalam Penyediaan**.
 
 <a id="year-2-batch-1-source-check"></a>
 
@@ -155,3 +155,24 @@ Padanan ini menggunakan DSKP KSSR (Semakan 2017) edisi bahasa Inggeris. KPM meny
 - **Science.** [DSKP edisi bahasa Inggeris](https://anyflip.com/ittl/ygqq/basic), [buku teks DLP](https://fliphtml5.com/fbdki/veis/Science_Year_2/) dan [RPT Science SK 2026](https://www.scribd.com/document/1044199355/Rpt-Sc-Dlp-Year-2-Sk-2026-by-Rozayus-Academy-Kump-a-0kump-b). [Tujuh RPH Animals](../staging/dlp/year2/science_unit_04.md) meliputi ketujuh-tujuh SP. Urutan katalog ikut kod SP dan RPT, dengan perubahan tumbesaran 4.1.5 sebelum perbandingan rupa 4.1.6. Buku teks memaparkan perbandingan rupa dahulu. RPH 4.1.7 menggunakan PBD asal berdasarkan carta kitaran hidup. Rujukan BA 25–27 dicetak bersama SP 4.1.5 di BT m/s 45.
 - **Mathematics.** [DSKP edisi bahasa Inggeris](https://asiemodel.net/wp-content/uploads/2022/08/DSKP-Matematik-Tahun-2-DLP.pdf), [buku teks DLP Bahagian 2](https://fliphtml5.com/dpauv/dyzw/Mathematics_DLP_Year_2_Part_2/) dan [SOW Mathematics SK 2026](https://www.scribd.com/document/989378292/RPT-MATH-DLP-YEAR-2-SK-2026-Kump-A-Kump-B). [Sebelas RPH Money](../staging/dlp/year2/mathematics_unit_04.md) meliputi kesemua sepuluh SP. Penyelesaian masalah 4.7.1 dipecahkan kepada situasi beli dan baki serta situasi kumpulan sama banyak. RPH menggunakan harga, resit dan peruntukan rekaan untuk PBD individu.
 - Halaman BA dalam jadual disalin daripada rujukan dalam BT. Kandungan latihan BA asal masih perlu disemak. Keseluruhan Unit 1–4 merangkumi 72 RPH. Katalog untuk semakan guru, dengan janaan Word/PDF dalam penyediaan.
+
+## Year 2 Unit 5 source check
+
+| Rekod staging | Topik | CS / LS | DSKP m/s | Buku teks bercetak | Buku aktiviti bercetak | Rujukan BA tertera pada BT |
+| --- | --- | --- | --- | --- | --- | --- |
+| DLP-SCI-Y2-U05-01 | Explain Why Plants Are Important | 5.1 / 5.1.1 | 42 | 49–50 | 29 | 50 |
+| DLP-SCI-Y2-U05-02 | Identify What Seeds Need to Germinate | 5.1 / 5.1.2 | 42 | 51 | 30–31 | 51 |
+| DLP-SCI-Y2-U05-03 | Record Changes From Seed to Seedling | 5.1 / 5.1.3 | 42 | 52–53 | 32 | 52 |
+| DLP-SCI-Y2-U05-04 | Sequence the Stages of Plant Growth | 5.1 / 5.1.4 | 42 | 54–55 | 33–34 | 54 |
+| DLP-SCI-Y2-U05-05 | Investigate What Plants Need to Grow | 5.1 / 5.1.5 | 42 | 56–58 | 35 | 56 (35–36 untuk seksyen) |
+| DLP-SCI-Y2-U05-06 | Explain Observations About a Plant's Life | 5.1 / 5.1.6 | 43 | 57–59 | 36 | 56 (35–36 untuk seksyen) |
+| DLP-MAT-Y2-U05-01 | Recognise Minute Graduations | 5.1 / 5.1.1 | 50 | Bahagian 2, 39–41 | 115–116 | 41 |
+| DLP-MAT-Y2-U05-02 | Read and Show Time on Clocks | 5.1 / 5.1.2 | 50 | Bahagian 2, 42–44 | 117–118 (rujukan bersama) | 44 |
+| DLP-MAT-Y2-U05-03 | Convert Time Between Words and Numerals | 5.1 / 5.1.3 | 50 | Bahagian 2, 43–44 | 117–118 (rujukan bersama) | 44 |
+| DLP-MAT-Y2-U05-04 | Record Times of Daily Activities | 5.1 / 5.1.4 | 50 | Bahagian 2, 45–46 | 119–120 | 46 |
+| DLP-MAT-Y2-U05-05 | Relate Days, Hours and Minutes | 5.2 / 5.2.1 | 50 | Bahagian 2, 47–48 | 121 | 48 |
+| DLP-MAT-Y2-U05-06 | Solve Everyday Time Problems | 5.3 / 5.3.1 | 50 | Bahagian 2, 49–51 | 122 | 50 |
+
+- **Science.** [DSKP edisi bahasa Inggeris](https://anyflip.com/ittl/ygqq/basic/51-70), [buku teks DLP](https://fliphtml5.com/bbsbl/gfnw/Science_Year_2/), [buku aktiviti DLP](https://anyflip.com/kskjz/cucq/basic/) dan [RPT Science SK 2026](https://www.scribd.com/document/1044199355/Rpt-Sc-Dlp-Year-2-Sk-2026-by-Rozayus-Academy-Kump-a-0kump-b). [Enam RPH Plants](../staging/dlp/year2/science_unit_05.md) meliputi semua enam SP. Semakan BA mengesahkan m/s 35 menggunakan perbandingan penyiraman bagi 5.1.5, manakala m/s 36 menggunakan penerangan keperluan timun pada dua peringkat bagi 5.1.6. RPH 5.1.3 menggunakan tiga peringkat spesimen sebenar yang disediakan awal. RPH 5.1.5 menggunakan rekod penyiasatan kelas selama tujuh hari supaya murid membuat kesimpulan berasaskan pemerhatian.
+- **Mathematics.** [DSKP edisi bahasa Inggeris](https://asiemodel.net/wp-content/uploads/2022/08/DSKP-Matematik-Tahun-2-DLP.pdf), [buku teks DLP Bahagian 2](https://fliphtml5.com/dpauv/dyzw/Mathematics_DLP_Year_2_Part_2/) dan [SOW Mathematics SK 2026](https://www.scribd.com/document/989378292/RPT-MATH-DLP-YEAR-2-SK-2026-Kump-A-Kump-B). [Enam RPH Time](../staging/dlp/year2/mathematics_unit_05.md) meliputi semua enam SP. M/s 117–118 ialah rujukan bersama 5.1.2 dan 5.1.3 dalam buku teks. Halaman BA Mathematics diambil daripada nota guru yang dicetak pada buku teks. PBD setiap RPH menggunakan soalan asal CikguLaju.
+- Keseluruhan Unit 1–5 merangkumi 84 RPH untuk semakan guru, terdiri daripada 26 Science dan 58 Mathematics. Semakan bahan untuk muat turun masih melibatkan latihan BA Mathematics asal, urutan PdP produksi, kelulusan guru dan ujian janaan Word/PDF.

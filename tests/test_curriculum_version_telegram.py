@@ -1,3 +1,4 @@
+import html
 import json
 from pathlib import Path
 import unittest
@@ -76,14 +77,14 @@ class TelegramCurriculumTests(unittest.TestCase):
         source = Path(__file__).resolve().parents[1] / "data" / "dlp_year2_review.json"
         catalog = json.loads(source.read_text(encoding="utf-8"))
         for data, code, title, count in (
-            ("cv_dlp_science", "SCIENCE_DLP", "Science (DLP)", 20),
-            ("cv_dlp_math", "MATH_DLP", "Mathematics (DLP)", 52),
+            ("cv_dlp_science", "SCIENCE_DLP", "Science (DLP)", 26),
+            ("cv_dlp_math", "MATH_DLP", "Mathematics (DLP)", 58),
         ):
             self.assertEqual(keys[data], f"{title} — {count} RPH")
             self.ns["callback"](1,data)
             self.assertIn("Untuk Semakan Guru",self.messages[-1][0])
             groups = catalog[code]
-            self.assertEqual([group["id"] for group in groups], ["01", "02", "03", "04"])
+            self.assertEqual([group["id"] for group in groups], ["01", "02", "03", "04", "05"])
             self.assertEqual(len(self.messages[-1][1]), len(groups) + 1)
             self.assertEqual(sum(len(group["lessons"]) for group in groups),count)
             for group in groups:
@@ -94,7 +95,7 @@ class TelegramCurriculumTests(unittest.TestCase):
                 for key, lesson in zip(lesson_keys,group["lessons"],strict=True):
                     self.ns["callback"](1,key)
                     msg,kb=self.messages[-1]
-                    self.assertIn(lesson["title"],msg)
+                    self.assertIn(lesson["title"],html.unescape(msg))
                     self.assertIn(lesson["references"],msg)
                     self.assertIn("Teacher:",msg)
                     self.assertIn("Pupils:",msg)
