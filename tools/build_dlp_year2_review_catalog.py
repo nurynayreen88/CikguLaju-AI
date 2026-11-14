@@ -61,30 +61,41 @@ def build_catalog():
     return {subject: list(sorted(groups.values(), key=lambda row: row["id"])) for subject, groups in subjects.items()}
 
 
+def navigation(catalog):
+    return {
+        code: [{"id": unit["id"], "title": unit["title"], "lessons": [
+            {"id": lesson["id"], "title": lesson["title"]} for lesson in unit["lessons"]
+        ]} for unit in units]
+        for code, units in catalog.items()
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Verify the committed catalog against its lesson plans.")
-    parser.add_argument("--web-index", type=Path, help="Update the embedded catalog in the Web release HTML.")
+    parser.add_argument("--web-index", type=Path, help="Update the navigation in the Web release HTML.")
     args = parser.parse_args()
-    data = json.dumps(build_catalog(), ensure_ascii=False, separators=(",", ":"))
+    catalog = build_catalog()
+    data = json.dumps(catalog, ensure_ascii=False, separators=(",", ":"))
+    web_data = json.dumps(navigation(catalog), ensure_ascii=False, separators=(",", ":"))
     if args.check:
         if CATALOG.read_text(encoding="utf-8") != data + "\n":
             parser.error("Review catalog differs from the source lesson plans.")
         if args.web_index:
-            expected = data.replace("<", "\\u003c")
-            if f'<script id="dlp-review-data" type="application/json">{expected}</script>' not in args.web_index.read_text(encoding="utf-8"):
-                parser.error("Embedded Web review catalog differs from the source lesson plans.")
+            expected = web_data.replace("<", "\\u003c")
+            if f'<script id="dlp-navigation-data" type="application/json">{expected}</script>' not in args.web_index.read_text(encoding="utf-8"):
+                parser.error("Embedded Web navigation differs from the source lesson plans.")
         return
     CATALOG.write_text(data + "\n", encoding="utf-8")
     if args.web_index:
         page = args.web_index.read_text(encoding="utf-8")
-        payload = data.replace("<", "\\u003c")
+        payload = web_data.replace("<", "\\u003c")
         page, count = re.subn(
-            r'(<script id="dlp-review-data" type="application/json">).*?(</script>)',
+            r'(<script id="dlp-navigation-data" type="application/json">).*?(</script>)',
             lambda match: match[1] + payload + match[2], page, count=1, flags=re.S,
         )
         if count != 1:
-            parser.error("Web review catalog placeholder missing.")
+            parser.error("Web navigation placeholder missing.")
         args.web_index.write_text(page, encoding="utf-8")
 
 

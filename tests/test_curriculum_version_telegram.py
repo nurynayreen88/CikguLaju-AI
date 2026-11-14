@@ -8,7 +8,7 @@ class TelegramCurriculumTests(unittest.TestCase):
     def setUp(self):
         self.messages=[]
         self.calls=[]
-        self.ns={"state":{},"send":lambda cid,text,kb:self.messages.append((text,kb)),
+        self.ns={"state":{},"send":lambda cid,text,kb=None:self.messages.append((text,kb)),
                  "SUBJECTS_BY_GRADE":{"Tahun 1":["Matematik","Sains","Bahasa Cina","Bahasa Tamil"],
                                       "Tahun 2":["Sains","Matematik"],"Tingkatan 1":["Bahasa Inggeris"]},
                  "SUBJECT_LABEL":{"Matematik":"Matematik","Sains":"Sains","Bahasa Inggeris":"Bahasa Inggeris"},
@@ -70,7 +70,7 @@ class TelegramCurriculumTests(unittest.TestCase):
         self.assertEqual([button["callback_data"] for button in years],
                          [f"cv_year{n}_dlp" for n in range(1,7)])
         self.assertEqual(years[0]["text"],"Tahun 1 (KP Baharu) — Dalam Penyediaan")
-        self.assertEqual(years[1]["text"],"Tahun 2 — Untuk Semakan Guru")
+        self.assertEqual(years[1]["text"],"Tahun 2")
         self.ns["callback"](1,"cv_year2_dlp")
         keys = {button["callback_data"]:button["text"] for row in self.messages[-1][1] for button in row}
         self.assertEqual(set(keys),{"cv_dlp_science","cv_dlp_math","cv_primary_dlp","home"})
@@ -82,7 +82,7 @@ class TelegramCurriculumTests(unittest.TestCase):
         ):
             self.assertEqual(keys[data], f"{title} — {count} RPH")
             self.ns["callback"](1,data)
-            self.assertIn("Untuk Semakan Guru",self.messages[-1][0])
+            self.assertIn("Pilih unit",self.messages[-1][0])
             groups = catalog[code]
             self.assertEqual([group["id"] for group in groups], [f"{number:02d}" for number in range(1, unit_count + 1)])
             self.assertEqual(len(self.messages[-1][1]), len(groups) + 1)
@@ -96,13 +96,11 @@ class TelegramCurriculumTests(unittest.TestCase):
                     self.ns["callback"](1,key)
                     msg,kb=self.messages[-1]
                     self.assertIn(lesson["title"],html.unescape(msg))
-                    self.assertIn(lesson["references"],msg)
-                    self.assertIn("Teacher:",msg)
-                    self.assertIn("Pupils:",msg)
-                    self.assertIn("Reflection",msg)
-                    self.assertLess(len(msg),4096)
-                    self.assertEqual(kb[0][0]["callback_data"],callback)
-                    self.assertLessEqual(len(key.encode()),64)
+                    self.assertNotIn(lesson["references"],msg)
+                    self.assertEqual([b["callback_data"] for b in kb[0]],
+                                     [f"cv_dlp_{fmt}_{lesson['id']}" for fmt in ("word", "pdf")])
+                    self.assertEqual(kb[1][0]["callback_data"],callback)
+                    self.assertTrue(all(len(b["callback_data"].encode()) <= 64 for row in kb for b in row))
                     self.assertNotIn("matsubmit2528",str(kb))
                 self.ns["callback"](1,"cv_dlp_rph_DLP-UNKNOWN-Y2-U01-01")
                 self.assertIn("Pilih unit",self.messages[-1][0])
@@ -118,7 +116,41 @@ class TelegramCurriculumTests(unittest.TestCase):
         self.ns["callback"](1,"sub_Sains")
         self.assertEqual(self.calls,[("subjects","Tahun 2"),("callback","sub_Sains")])
 
-    def test_dlp_other_years_show_subject_status_without_using_year_two_preview(self):
+    def test_download_honours_gate_and_delivers_selected_file(self):
+        call = self.ns["callback"]
+        for key in ("cv_primary_dlp", "cv_year2_dlp", "cv_dlp_math",
+                    "cv_dlp_unit_08", "cv_dlp_rph_DLP-MAT-Y2-U08-04"):
+            call(1, key)
+        sent = []
+        self.ns["send_document"] = lambda _, path, caption: sent.append(
+            (Path(path).name, Path(path).read_bytes(), caption)) or {"ok": True}
+        self.ns["_telegram_delivery_ok_v25279"] = lambda result: result.get("ok") is True
+        self.ns["_credit_gate"] = lambda *_: False
+        call(1, "cv_dlp_word_DLP-MAT-Y2-U08-04")
+        self.assertFalse(sent)
+
+        def trial(_, state):
+            state["_free_generation_pending_v25282"] = True
+            return True
+
+        self.ns["_credit_gate"] = trial
+        call(1, "cv_dlp_word_DLP-MAT-Y2-U08-03")
+        self.assertFalse(sent)
+        call(1, "cv_dlp_word_DLP-MAT-Y2-U08-04")
+        call(1, "cv_dlp_pdf_DLP-MAT-Y2-U08-04")
+        self.assertEqual([item[0] for item in sent], [
+            "CIKGULAJU_RPH_DLP-MAT-Y2-U08-04.docx",
+            "CIKGULAJU_RPH_DLP-MAT-Y2-U08-04.pdf",
+        ])
+        self.assertTrue(sent[0][1].startswith(b"PK"))
+        self.assertTrue(sent[1][1].startswith(b"%PDF-"))
+        self.assertEqual(sent[1][2], "Solve Everyday Problems With Data")
+        self.ns["send_document"] = lambda *_: {"ok": False}
+        call(1, "cv_dlp_pdf_DLP-MAT-Y2-U08-04")
+        self.assertIn("belum berjaya dihantar", self.messages[-1][0])
+        self.assertNotIn("_free_generation_pending_v25282", self.ns["state"][1])
+
+    def test_dlp_other_years_show_subject_status_without_using_year_two(self):
         self.ns["callback"](1,"cv_primary_dlp")
         for n in (1,3,4,5,6):
             with self.subTest(year=n):

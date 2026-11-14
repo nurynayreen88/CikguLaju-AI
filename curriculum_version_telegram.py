@@ -1,7 +1,10 @@
 """Show curriculum choices and DLP availability inside Telegram's RPH selectors."""
 from html import escape
-import json
+from logging import getLogger
 from pathlib import Path
+from tempfile import TemporaryDirectory
+
+from dlp_year2_rph import catalog, filename, render, resolve
 
 from curriculum_version_selector import KP2027, LEGACY, resolve_curriculum
 
@@ -11,7 +14,7 @@ DLP_YEARS = {
     f"cv_year{n}_dlp": f"Tahun {n}" + (" (KP Baharu)" if n == 1 else "")
     for n in range(1, 7)
 }
-DLP_REVIEW_YEAR = "Tahun 2"
+DLP_DOWNLOAD_YEAR = "Tahun 2"
 DLP_IN_PREPARATION = "Dalam Penyediaan"
 PRIMARY_CURRICULA = {
     "cv_primary_kssr": (LEGACY, "KSSR"),
@@ -37,8 +40,8 @@ def install(namespace):
     send=namespace["send"]
     subjects_by_grade=namespace["SUBJECTS_BY_GRADE"]
     subject_label=namespace["SUBJECT_LABEL"]
-    with (Path(__file__).resolve().parent / "data" / "dlp_year2_review.json").open(encoding="utf-8") as source:
-        dlp_catalog = json.load(source)
+    dlp_catalog = catalog()
+    downloading = set()
 
     def curriculum_menu(cid):
         reset_selection(cid, None)
@@ -76,7 +79,7 @@ def install(namespace):
             keyboard = [[{"text":"Tahun 1 (KP Baharu)", "callback_data":"cv_year1_kp"}]]
         else:
             keyboard = [[{
-                "text": year_label + (" — Untuk Semakan Guru" if year_label == DLP_REVIEW_YEAR else f" — {DLP_IN_PREPARATION}"),
+                "text": year_label + ("" if year_label == DLP_DOWNLOAD_YEAR else f" — {DLP_IN_PREPARATION}"),
                 "callback_data": key,
             }] for key, year_label in DLP_YEARS.items()]
         keyboard.extend([[{"text":"⬅️ Pilih Kurikulum", "callback_data":"level_primary"}],
@@ -88,17 +91,17 @@ def install(namespace):
         return subjects(cid, "Tahun 1")
 
     def dlp_subjects(cid, year_label):
-        for key in ("dlp_subject", "dlp_unit"):
+        for key in ("dlp_subject", "dlp_unit", "dlp_lesson"):
             state[cid].pop(key, None)
-        has_review = year_label == DLP_REVIEW_YEAR
+        has_downloads = year_label == DLP_DOWNLOAD_YEAR
         keyboard = []
         for key, (code, name) in DLP_SUBJECTS.items():
             count = sum(len(unit["lessons"]) for unit in dlp_catalog[code])
-            status = f"{count} RPH" if has_review else DLP_IN_PREPARATION
+            status = f"{count} RPH" if has_downloads else DLP_IN_PREPARATION
             keyboard.append([{"text": f"{name} — {status}", "callback_data": key}])
         keyboard.extend([[{"text":"⬅️ Pilih Tahun", "callback_data":"cv_primary_dlp"}],
                          [{"text":"🏠 Menu Utama", "callback_data":"home"}]])
-        prompt = "Pilih subjek untuk lihat RPH bagi semakan guru." if has_review else "Pilih subjek DLP."
+        prompt = "Pilih subjek untuk muat turun RPH." if has_downloads else "Pilih subjek DLP."
         return send(cid, f"📘 <b>DLP · {year_label}</b>\n\n{prompt}", keyboard)
 
     def dlp_units(cid, subject_key):
@@ -106,13 +109,15 @@ def install(namespace):
         st = state[cid]
         st["dlp_subject"] = subject_key
         st.pop("dlp_unit", None)
+        st.pop("dlp_lesson", None)
         keyboard = [[{"text": unit["title"], "callback_data": "cv_dlp_unit_" + unit["id"]}]
                     for unit in dlp_catalog[code]]
         keyboard.append([{"text": "⬅️ Pilih Subjek", "callback_data": "back_subjects"}])
-        return send(cid, f"<b>{name} · Year 2 SK</b>\nUntuk Semakan Guru\n\nPilih unit.", keyboard)
+        return send(cid, f"<b>{name} · Year 2 SK</b>\n\nPilih unit.", keyboard)
 
     def dlp_lessons(cid, subject_key, unit):
         state[cid]["dlp_unit"] = unit["id"]
+        state[cid].pop("dlp_lesson", None)
         keyboard = [[{"text": lesson["title"], "callback_data": "cv_dlp_rph_" + lesson["id"]}]
                     for lesson in unit["lessons"]]
         keyboard.append([{"text": "⬅️ Pilih Unit", "callback_data": subject_key}])
@@ -120,19 +125,44 @@ def install(namespace):
 
     def dlp_lesson(cid, subject_key, unit, lesson):
         _, name = DLP_SUBJECTS[subject_key]
-        header = f"<b>{escape(lesson['title'])}</b>\n{name} · Year 2 SK\nUntuk Semakan Guru"
-        fields = [
-            f"<b>{label}</b>\n{escape(lesson[key])}"
-            for label, key in (("Standards", "standards"), ("Book references", "references"),
-                               ("Learning objective", "objective"), ("Materials", "materials"))
-        ]
-        phases = [
-            f"<b>{escape(phase)}</b>\nTeacher: {escape(teacher)}\nPupils: {escape(pupils)}"
-            for phase, teacher, pupils in lesson["phases"]
-        ]
-        footer = f"<b>Reflection</b>\n{escape(lesson['reflection'])}"
-        return send(cid, "\n\n".join([header, *fields, *phases, footer, "Janaan Word/PDF dalam penyediaan."]),
-                    [[{"text": "⬅️ Pilih Tajuk RPH", "callback_data": "cv_dlp_unit_" + unit["id"]}]])
+        state[cid]["dlp_lesson"] = lesson["id"]
+        keyboard = [[
+            {"text": "⬇️ Muat Turun Word", "callback_data": "cv_dlp_word_" + lesson["id"]},
+            {"text": "⬇️ Muat Turun PDF", "callback_data": "cv_dlp_pdf_" + lesson["id"]},
+        ], [{"text": "⬅️ Pilih Tajuk RPH", "callback_data": "cv_dlp_unit_" + unit["id"]}]]
+        return send(cid, f"<b>{escape(lesson['title'])}</b>\n{name} · Year 2 SK\n\nPilih format fail.", keyboard)
+
+    def download_dlp(cid, st, fmt, lesson_id):
+        if not (_rph_flow(st) and st.get("curriculum_version") == DLP
+                and st.get("year") == DLP_DOWNLOAD_YEAR and st.get("dlp_lesson") == lesson_id):
+            return send(cid, "Sila pilih tajuk RPH DLP semula.")
+        subject_key = st.get("dlp_subject")
+        if subject_key not in DLP_SUBJECTS:
+            return send(cid, "Sila pilih subjek DLP semula.")
+        code, _ = DLP_SUBJECTS[subject_key]
+        plan = resolve(2, code, st.get("dlp_unit"), lesson_id)
+        if plan is None:
+            return send(cid, "RPH DLP ini tidak tersedia. Sila pilih tajuk semula.")
+        if cid in downloading:
+            return send(cid, "Fail sedang dijana. Sila tunggu sebentar.")
+        downloading.add(cid)
+        try:
+            if not namespace["_credit_gate"](cid, st):
+                return
+            unit, lesson = plan
+            teacher = {"class": "", "date": "", "time": "", "students": ""}
+            with TemporaryDirectory(prefix="cikgulaju-dlp-") as directory:
+                path = Path(directory) / filename(lesson_id, fmt)
+                path.write_bytes(render(code, unit, lesson, fmt, teacher))
+                result = namespace["send_document"](cid, str(path), escape(lesson["title"]))
+            if namespace["_telegram_delivery_ok_v25279"](result):
+                return result
+        except Exception:
+            getLogger(__name__).exception("DLP document delivery failed for %s", lesson_id)
+        finally:
+            st.pop("_free_generation_pending_v25282", None)
+            downloading.remove(cid)
+        return send(cid, "Fail DLP belum berjaya dihantar. Pilih format untuk cuba semula.")
 
     def choose(cid,label):
         st=state.setdefault(cid,{})
@@ -197,18 +227,21 @@ def install(namespace):
             if not (_rph_flow(st) and year_label in DLP_YEARS.values() and version == DLP):
                 return year(cid, "primary")
             _, name = DLP_SUBJECTS[d]
-            if year_label != DLP_REVIEW_YEAR:
+            if year_label != DLP_DOWNLOAD_YEAR:
                 keyboard = [[{"text":"⬅️ Pilih Subjek", "callback_data":"back_subjects"}],
                             [{"text":"🏠 Menu Utama", "callback_data":"home"}]]
                 return send(cid, f"<b>{name} · {year_label}</b>\n\n"
                             f"{DLP_IN_PREPARATION}.", keyboard)
             return dlp_units(cid, d)
+        if d.startswith(("cv_dlp_word_", "cv_dlp_pdf_")):
+            _, _, fmt, lesson_id = d.split("_", 3)
+            return download_dlp(cid, st, fmt, lesson_id)
         if d.startswith(("cv_dlp_unit_", "cv_dlp_rph_")):
-            if not (_rph_flow(st) and st.get("year") == DLP_REVIEW_YEAR and version == DLP):
+            if not (_rph_flow(st) and st.get("year") == DLP_DOWNLOAD_YEAR and version == DLP):
                 return year(cid, "primary")
             subject_key = st.get("dlp_subject")
             if subject_key not in DLP_SUBJECTS:
-                return dlp_subjects(cid, DLP_REVIEW_YEAR)
+                return dlp_subjects(cid, DLP_DOWNLOAD_YEAR)
             code, _ = DLP_SUBJECTS[subject_key]
             groups = dlp_catalog[code]
             if d.startswith("cv_dlp_unit_"):
