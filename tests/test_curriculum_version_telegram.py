@@ -77,14 +77,14 @@ class TelegramCurriculumTests(unittest.TestCase):
         source = Path(__file__).resolve().parents[1] / "data" / "dlp_year2_review.json"
         catalog = json.loads(source.read_text(encoding="utf-8"))
         for data, code, title, count in (
-            ("cv_dlp_science", "SCIENCE_DLP", "Science (DLP)", 26),
-            ("cv_dlp_math", "MATH_DLP", "Mathematics (DLP)", 58),
+            ("cv_dlp_science", "SCIENCE_DLP", "Science (DLP)", 32),
+            ("cv_dlp_math", "MATH_DLP", "Mathematics (DLP)", 68),
         ):
             self.assertEqual(keys[data], f"{title} — {count} RPH")
             self.ns["callback"](1,data)
             self.assertIn("Untuk Semakan Guru",self.messages[-1][0])
             groups = catalog[code]
-            self.assertEqual([group["id"] for group in groups], ["01", "02", "03", "04", "05"])
+            self.assertEqual([group["id"] for group in groups], ["01", "02", "03", "04", "05", "06"])
             self.assertEqual(len(self.messages[-1][1]), len(groups) + 1)
             self.assertEqual(sum(len(group["lessons"]) for group in groups),count)
             for group in groups:
