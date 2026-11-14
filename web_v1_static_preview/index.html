@@ -846,7 +846,34 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </section>
 <section id="view-admin" class="app-view" aria-labelledby="web-admin-heading" hidden>
 <h2 id="web-admin-heading">📊 Analisis Admin</h2>
-<p class="notice">Paparan peribadi untuk admin. Statistik pengguna aktif dikira berdasarkan akaun berbeza yang log masuk ke Web; tiada maklumat individu dipaparkan.</p>
+<section id="admin-payments" class="teacher-timetable-section" aria-labelledby="admin-payments-heading" hidden>
+ <h3 id="admin-payments-heading">Semakan Bayaran</h3>
+ <div class="profile-actions">
+  <label for="admin-payment-filter">Status bayaran</label>
+  <select id="admin-payment-filter"><option value="pending">Menunggu</option><option value="approved">Disahkan</option><option value="rejected">Ditolak</option></select>
+  <button id="admin-payment-refresh" type="button">Muat Semula Bayaran</button>
+ </div>
+ <p id="admin-payment-status" role="status" aria-live="polite"></p>
+ <ul id="admin-payment-list"></ul>
+ <div class="profile-actions">
+  <button id="admin-payment-prev" type="button" hidden>Halaman Sebelum</button>
+  <button id="admin-payment-next" type="button" hidden>Halaman Seterusnya</button>
+ </div>
+ <dialog id="admin-payment-dialog" aria-labelledby="admin-payment-dialog-title">
+  <h3 id="admin-payment-dialog-title">Resit Bayaran</h3>
+  <p id="admin-payment-dialog-status" role="status" aria-live="polite"></p>
+  <div id="admin-payment-proof"></div>
+  <div id="admin-payment-decision" hidden>
+   <label><input type="checkbox" id="admin-payment-confirm"> Saya telah menyemak resit dan transaksi sebenar.</label>
+   <div class="profile-actions">
+    <button type="button" id="admin-payment-approve" disabled>Sahkan Bayaran</button>
+    <button type="button" id="admin-payment-reject" disabled>Tolak Bayaran</button>
+   </div>
+  </div>
+  <div class="profile-actions"><button type="button" id="admin-payment-close">Tutup</button></div>
+ </dialog>
+</section>
+<p class="notice">Statistik penggunaan dikira berdasarkan akaun berbeza yang log masuk ke Web.</p>
 <div class="admin-stats-grid" aria-label="Ringkasan penggunaan CikguLaju">
  <div class="admin-stats-card"><span>Pengguna berdaftar</span><strong id="web-admin-users">—</strong></div>
  <div class="admin-stats-card"><span>Rakan Pembangun aktif</span><strong id="web-admin-rakan">—</strong></div>
@@ -1012,7 +1039,7 @@ webViewButtons.forEach(button=>button.addEventListener("click",()=>{
  if(button.dataset.webView==="today")window.rphTodayLoad?.();
  if(button.dataset.webView==="pbd")window.cikgulajuPbdLoad?.();
  if(button.dataset.webView==="feedback")window.cikgulajuFeedbackLoad?.();
- if(button.dataset.webView==="admin")window.cikgulajuFeedbackAdminLoad?.();
+ if(button.dataset.webView==="admin"){window.cikgulajuFeedbackAdminLoad?.();window.cikgulajuPaymentsAdminLoad?.();}
 }));
 showWebView("today");
 
@@ -1020,7 +1047,7 @@ showWebView("today");
  const status=document.getElementById("login-status");
  try{
   const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),8000);let session;try{session=await fetch("/api/auth/telegram/session",{credentials:"same-origin",cache:"no-store",signal:controller.signal});}finally{clearTimeout(timeout);}
-  if(session.ok){const account=await session.json();document.querySelector("main.panel").hidden=true;document.getElementById("workspace").hidden=false;applyRphAccount(account);loadTeacherProfile();loadRptCatalog();loadTeacherClasses();window.cikgulajuAdminInit?.();window.cikgulajuReferralInit?.();showWebView("today");window.rphTodayLoad?.();return;}
+  if(session.ok){const account=await session.json();document.querySelector("main.panel").hidden=true;document.getElementById("workspace").hidden=false;applyRphAccount(account);loadTeacherProfile();loadRptCatalog();loadTeacherClasses();window.cikgulajuReferralInit?.();if(new URLSearchParams(location.search).get("admin")==="payments")window.cikgulajuOpenPaymentsAdmin?.();else window.cikgulajuAdminInit?.();showWebView("today");window.rphTodayLoad?.();return;}
   const response=await fetch("/api/auth/capabilities",{cache:"no-store"});
   if(session.status===503){status.textContent="Semakan akaun belum tersedia pada pelayan. Cuba log masuk semula selepas konfigurasi disemak.";}
 
@@ -1962,7 +1989,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/teacher-profile.js?v=profile-guide-20261111"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-auto-referral-20261114"></script>
-<script src="/assets/admin-usage.js?v=private-menu-20261111"></script>
+<script src="/assets/admin-usage.js?v=payment-inbox-20261114"></script>
 <script src="/assets/web-feedback.js?v=comments-inbox-20261112"></script>
 <script src="/assets/special-activities.js?v=source-draft-20261106"></script>
 </body>

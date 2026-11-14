@@ -2,6 +2,12 @@ name: Web payment admin review notice QA
 on:
   push:
     branches: [feature/web-receipt-admin-notify-20261106]
+  pull_request:
+    paths:
+      - 'web/web_payment_routes.py'
+      - 'web_v1_static_preview/admin-usage.js'
+      - 'tests/test_web_payment_proof_first.py'
+      - '.github/workflows/web-receipt-admin-notify-qa.yml'
   workflow_dispatch:
 permissions:
   contents: read
@@ -19,3 +25,4 @@ jobs:
       - run: python -m unittest discover -s tests -p test_web_payment_proof_first.py -v
       - run: python -m unittest discover -s tests -p test_web_v1_supabase_account_adapter.py -v
       - run: python -m unittest discover -s tests -p test_web_shared_ten_rph_trial.py -v
+      - run: node --check web_v1_static_preview/admin-usage.js
