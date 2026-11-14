@@ -1,0 +1,20 @@
+name: RPT DLP Year 2 Telegram
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'rpt_2027/dlp/**'
+      - 'rpt_2027/english/telegram_downloads.py'
+      - 'tests/test_english_rpt_2027_telegram_downloads.py'
+      - '.github/workflows/rpt-dlp-year2-telegram.yml'
+permissions:
+  contents: read
+jobs:
+  telegram:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest tests.test_english_rpt_2027_telegram_downloads

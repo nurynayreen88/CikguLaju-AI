@@ -5,6 +5,7 @@ entrypoint. It never alters RPH credit accounting, subscriptions or the DB.
 """
 from pathlib import Path
 from tempfile import TemporaryDirectory
+from rpt_2027.dlp.documents import SUBJECTS as DLP_SUBJECTS, document_path
 from rpt_2027.psv.telegram_downloads import pdf_ready as psv_pdf_ready, build_pdf as build_psv_pdf
 from rpt_2027.matematik.telegram_downloads import pdf_ready as math_pdf_ready
 from rpt_2027.bahasa_melayu.telegram_downloads import pdf_ready as bm_pdf_ready
@@ -54,11 +55,29 @@ def install(ns):
         is_year = data.startswith("rpt2027_year_")
         is_download = data.startswith("rpt2027_en_pdf_")
         is_psv = data.startswith("rpt2027_psv_pdf_")
-        if data != "rpt2027_home" and not is_year and not is_download and not is_psv:
+        is_dlp = data.startswith("rpt2027_dlp:")
+        if data != "rpt2027_home" and not is_year and not is_download and not is_psv and not is_dlp:
             return previous(cid, d)
         # Enforce entitlement again for stale/forged buttons and downloads.
         if not allowed(cid):
             return locked(cid)
+        if is_dlp:
+            parts = data.split(":")
+            if len(parts) != 3:
+                return send(cid, "Pilihan RPT DLP tidak sah.")
+            _, subject, fmt = parts
+            path = document_path(subject, 2, fmt)
+            if path is None:
+                return send(cid, "Fail RPT DLP ini belum tersedia.")
+            try:
+                result = send_document(cid, str(path), f"RPT 2027 · {DLP_SUBJECTS[subject]} (DLP) · Year 2")
+                verify = ns.get("_telegram_delivery_ok_v25279")
+                if callable(verify) and not verify(result):
+                    return send(cid, "Telegram belum mengesahkan penghantaran RPT DLP. Cuba lagi.")
+                return result
+            except Exception as exc:
+                print("DLP RPT delivery failed:", type(exc).__name__, flush=True)
+                return send(cid, "Muat turun RPT DLP gagal. Cuba lagi.")
         if data == "rpt2027_home":
             kb = [[{"text": "Tahun %s" % year,
                     "callback_data": "rpt2027_year_%s" % year}]
@@ -96,6 +115,14 @@ def install(ns):
             if psv_pdf_ready(year):
                 kb.append([{"text": "📥 Pendidikan Seni Visual (PDF)",
                             "callback_data": "rpt2027_psv_pdf_%d" % year}])
+            for code, name in DLP_SUBJECTS.items():
+                buttons = [
+                    {"text": f"{name} DLP ({label})", "callback_data": f"rpt2027_dlp:{code}:{fmt}"}
+                    for fmt, label in (("pdf", "PDF"), ("docx", "Word"))
+                    if document_path(code, year, fmt)
+                ]
+                if buttons:
+                    kb.append(buttons)
             kb.extend([
                 [{"text": "⬅️ Pilih Tahun", "callback_data": "rpt2027_home"}],
                 [{"text": "🏠 Menu Utama", "callback_data": "home"}],
