@@ -42,9 +42,9 @@ def _selection(year, subject, unit, lesson=None):
     return result
 
 
-def _read(endpoint, params, *, opener=None):
+def _read(endpoint, params, *, stream="sequence", opener=None):
     base, token = _backend()
-    req = Request(base + "/internal/rph/v1/sequence/" + endpoint + "?" +
+    req = Request(base + f"/internal/rph/v1/{stream}/{endpoint}?" +
                   urlencode(params), headers={
                       "Authorization":"Bearer " + token,
                       "Accept":"application/json",
@@ -105,14 +105,47 @@ def verified_native_sequence_available(year, subject, unit, lesson):
     return True
 
 
+DLP_SOURCE = "telegram-dlp-year2"
+DLP_CODES = {"SCIENCE_DLP": "SCI", "MATH_DLP": "MAT"}
+
+
+def _dlp_selection(year, subject, unit, lesson):
+    if (type(year) is not int or year != 2 or subject not in DLP_CODES
+            or not isinstance(unit, str) or not re.fullmatch(r"0[1-9]|10", unit)
+            or not isinstance(lesson, str)
+            or not re.fullmatch(fr"DLP-{DLP_CODES[subject]}-Y2-U{unit}-[0-9]{{2}}", lesson)):
+        raise ValueError("Invalid DLP lesson")
+    return {"year": year, "subject": subject, "unit": unit, "lesson": lesson}
+
+
+def verified_dlp_available(year, subject, unit, lesson):
+    selection = _dlp_selection(year, subject, unit, lesson)
+    data = _read("availability", selection, stream="dlp")
+    if (not isinstance(data, dict) or data.get("available") is not True
+            or data.get("formats") != ["word", "pdf"]):
+        raise NativeRPHUnavailable("DLP RPH not ready")
+    return True
+
+
+def request_dlp_rph(selection, fmt, *, opener=None):
+    if not isinstance(selection, dict) or selection.get("source") != DLP_SOURCE:
+        raise ValueError("Unknown source")
+    args = _dlp_selection(selection.get("year"), selection.get("subject"),
+                          selection.get("unit"), selection.get("lesson"))
+    return _request_document(args, selection.get("teacher"), fmt, stream="dlp", opener=opener)
+
+
 def request_native_sequence_rph(selection, fmt, *, opener=None):
-    if fmt not in MIMES:
-        raise ValueError("Invalid RPH format")
     if not isinstance(selection,dict) or selection.get("source") != "telegram-native-pdp-sequence":
         raise ValueError("Unknown source")
     args = _selection(selection.get("year"),selection.get("subject"),
                       selection.get("unit"),selection.get("lesson"))
-    teacher = selection.get("teacher")
+    return _request_document(args, selection.get("teacher"), fmt, opener=opener)
+
+
+def _request_document(args, teacher, fmt, *, stream="sequence", opener=None):
+    if fmt not in MIMES:
+        raise ValueError("Invalid RPH format")
     if not valid_teacher_fields(teacher):
         raise ValueError("Invalid teacher data")
     payload = json.dumps({
@@ -121,7 +154,7 @@ def request_native_sequence_rph(selection, fmt, *, opener=None):
     if len(payload) > 7000:
         raise NativeRPHUnavailable("Invalid native request size")
     base, token = _backend()
-    req = Request(base + "/internal/rph/v1/sequence/render",
+    req = Request(base + f"/internal/rph/v1/{stream}/render",
                   data=payload,method="POST",headers={
                       "Authorization":"Bearer "+token,
                       "Content-Type":"application/json",

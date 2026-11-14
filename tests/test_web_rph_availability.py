@@ -1,4 +1,5 @@
 """RPH readiness is checked before showing native Word/PDF buttons."""
+from io import BytesIO
 from pathlib import Path
 import unittest
 from unittest.mock import patch
@@ -79,6 +80,54 @@ class ReadinessTests(unittest.TestCase):
         response = self.client.get("/api/web/rph/availability", query_string=query)
         self.assertEqual(response.status_code, 503)
         self.assertEqual(response.get_json()["code"], "TELEGRAM_RPH_PARITY_NOT_READY")
+
+    @patch("web.native_telegram_sequence_rph_client._read",
+           return_value={"available": True, "formats": ["word", "pdf"]})
+    @patch("web.unified_rph_web._has_paid_access", return_value=False)
+    @patch("web.unified_rph_web._account", return_value=(
+        {"authenticated": True, "telegram_user_id": 123, "free_remaining": 10}, None))
+    def test_dlp_download_passes_exact_source_and_existing_credit_gate(self, _account, paid, read):
+        from web.native_telegram_sequence_rph_client import NativeRPHUnavailable
+
+        query = {"year": 2, "subject": "SCIENCE_DLP", "unit": "10", "lesson": "DLP-SCI-Y2-U10-06"}
+        status = self.client.get("/api/web/rph/availability", query_string=query)
+        self.assertEqual(status.json, {"available": True, "generator": "telegram-native",
+                                       "download_allowed": True, "access_status": "trial",
+                                       "formats": ["word", "pdf"]})
+        read.assert_called_once_with("availability", query, stream="dlp")
+        for invalid in ({"year": 3}, {"unit": "09"}, {"subject": "MATH_DLP"}):
+            self.assertEqual(self.client.get("/api/web/rph/pdf",
+                                             query_string=query | invalid).status_code, 400)
+        self.assertEqual(self.client.get("/api/web/rph/preview", query_string=query).status_code, 404)
+        payload = b"%PDF-" + b" " * 1500
+        with (
+            patch("web.unified_rph_web._fill_roster_count"),
+            patch("web.native_telegram_sequence_rph_client.request_dlp_rph",
+                  side_effect=[BytesIO(payload), NativeRPHUnavailable(), BytesIO(payload)]) as render,
+            patch("web_v1_telegram_auth_routes._config", return_value={
+                "account_backend": "supabase", "supabase_url": "https://example.invalid",
+                "supabase_key": "fake-key"}),
+            patch("web.rph_delivery_quota.authorize_rendered_document",
+                  return_value={"allowed": True, "remaining": 9}) as debit,
+        ):
+            pdf = self.client.post("/api/web/rph/pdf", query_string=query | {"teacher_class": "2 Bestari"},
+                                   json={"reflection": "Review the model next lesson."})
+            self.assertEqual(pdf.status_code, 200, pdf.get_json(silent=True))
+            self.assertEqual(pdf.data, payload)
+            self.assertEqual(pdf.headers["X-RPH-Trial-Remaining"], "9")
+            self.assertIn("CIKGULAJU_RPH_DLP-SCI-Y2-U10-06.pdf", pdf.headers["Content-Disposition"])
+            selection, fmt = render.call_args.args
+            self.assertEqual(fmt, "pdf")
+            self.assertEqual(selection, query | {
+                "source": "telegram-dlp-year2",
+                "teacher": {"class": "2 Bestari", "date": "", "time": "", "students": "",
+                            "reflection": "Review the model next lesson."},
+            })
+            self.assertEqual(self.client.get("/api/web/rph/pdf", query_string=query).status_code, 503)
+            debit.assert_called_once()
+            paid.return_value = True
+            self.assertEqual(self.client.get("/api/web/rph/pdf", query_string=query).status_code, 200)
+            debit.assert_called_once()
 
     def test_browser_hides_download_until_verified_and_shows_failures(self):
         page=(ROOT/"web_v1_static_preview"/"index.html").read_text("utf8")
