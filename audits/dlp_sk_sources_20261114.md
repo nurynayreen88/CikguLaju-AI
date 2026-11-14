@@ -71,3 +71,19 @@ Padanan ini menggunakan DSKP KSSR (Semakan 2017) edisi bahasa Inggeris. KPM meny
 - [SOW Mathematics SK 2026](https://www.scribd.com/document/989378292/RPT-MATH-DLP-YEAR-2-SK-2026-Kump-A-Kump-B) meletakkan CS 1.1 sebelum CS 1.2–1.4. Buku teks meletakkan Write Numbers sebelum Number Value, dan Compare Numbers serta Arrange Numbers selepas Place Value dan Partition Numbers. Kod staging ikut buku teks. Jika SOW ini dipilih untuk produksi, susun rekod Mathematics mengikut turutan `01 → 03 → 06 → 07 → 02 → 08 → 04 → 05 → 09 → 10 → 11 → 12`. Gunakan kod 1.1.2(iv) untuk Arrange Numbers mengikut DSKP, walaupun subitem itu tertera sebagai (i) dalam salinan SOW yang diperiksa. Penjajaran Edisi 3 perlu dipetakan mengikut edisinya sekiranya digunakan.
 - Bahan untuk semakan guru ialah [tujuh RPH Science](../staging/dlp/year2/science_unit_01.md) dan [dua belas RPH Mathematics](../staging/dlp/year2/mathematics_unit_01.md). Kesemua SK/SP Unit 1 dalam DSKP asal diliputi. Aktiviti penilaian individu dalam RPH boleh dilaksanakan menggunakan bahan kelas yang disenaraikan.
 - **Status HOLD untuk pengeluaran**. Latihan BA asal, pemilihan urutan RPT/SOW produksi, semakan guru dan janaan Word/PDF melalui Web serta Telegram masih perlu disahkan.
+
+## Year 2 Unit 2 source check
+
+| Rekod staging | Topik | CS / LS | DSKP m/s | Buku teks bercetak | Buku aktiviti bercetak | Rujukan BA tertera pada BT |
+| --- | --- | --- | --- | --- | --- | --- |
+| DLP-SCI-Y2-U02-01 | Follow Science Room Rules | 2.1 / 2.1.1 | 37 | 18–20 | 11–12 | 20 |
+| DLP-MAT-Y2-U02-01 | Add Ones, Tens and Hundreds | 2.1 / 2.1.1 | 38 | Bahagian 1, 46 | 31 | 46 |
+| DLP-MAT-Y2-U02-02 | Add Two Numbers Without Regrouping | 2.1 / 2.1.1 | 38 | Bahagian 1, 47–48 | 32–34 | 48 |
+| DLP-MAT-Y2-U02-03 | Add Two Numbers With Regrouping | 2.1 / 2.1.1 | 38 | Bahagian 1, 51–55 | 35–37 | 55 |
+| DLP-MAT-Y2-U02-04 | Add Two Numbers Near 1,000 | 2.1 / 2.1.1 | 38 | Bahagian 1, 56–57 | 38 (rujukan seksyen) | 56 |
+| DLP-MAT-Y2-U02-05 | Add Three Numbers Within 1,000 | 2.1 / 2.1.2 | 38 | Bahagian 1, 58–61 | 39–41 | 60 |
+
+- **Science** menggunakan [DSKP edisi bahasa Inggeris](https://anyflip.com/gohfh/jnak/basic), [buku teks DLP](https://fliphtml5.com/fbdki/veis/Science_Year_2/) dan [RPT Science SK 2026](https://www.scribd.com/document/1044199355/Rpt-Sc-Dlp-Year-2-Sk-2026-by-Rozayus-Academy-Kump-a-0kump-b). DSKP dan RPT menyarankan pemerhatian sebelum, semasa dan selepas menggunakan bilik sains. [RPH Unit 2](../staging/dlp/year2/science_unit_02.md) menggunakan simulasi bergambar untuk insiden dan senarai semak per murid untuk menilai amalan sebenar.
+- **Mathematics** menggunakan [DSKP edisi bahasa Inggeris](https://asiemodel.net/wp-content/uploads/2022/08/DSKP-Matematik-Tahun-2-DLP.pdf), [buku teks DLP Bahagian 1](https://fliphtml5.com/dpauv/rwgq/Mathematics_DLP_Year_2_Part_1/) dan [SOW Mathematics SK 2026](https://www.scribd.com/document/989378292/RPT-MATH-DLP-YEAR-2-SK-2026-Kump-A-Kump-B). SOW meletakkan 2.1.1 dan 2.1.2 dalam blok yang sama. [Lima RPH tambah](../staging/dlp/year2/mathematics_unit_02_addition.md) memecahkannya mengikut kemahiran dan menggunakan garis nombor serta blok asas sepuluh. Buku teks m/s 49–50 boleh dirujuk untuk kaedah abakus. RPH *Add Two Numbers Near 1,000* menggunakan latihan PBD asal berpandukan soalan perbandingan jumlah pada m/s 57. BA m/s 38 hanya rujukan seksyen yang dicetak pada m/s 56.
+- Semua muka surat BA ialah rujukan bercetak dalam BT. Kandungan latihan BA asal masih menunggu semakan. RPH Science Unit 2 dan Mathematics CS 2.1 menambah enam rekod, menjadikan jumlah 25. Mathematics Unit 2 masih berbaki topik selepas tambah.
+- **Status HOLD untuk pengeluaran**. Tetapkan urutan PdP produksi, semak latihan BA dan dapatkan semakan guru. Ujian janaan Word/PDF Web dan Telegram masih diperlukan.
