@@ -176,12 +176,42 @@ class AutoLogoTests(unittest.TestCase):
         self.assertEqual(r.status_code,404)
         fetch.assert_called_once()
 
+    @patch("web.teacher_profile_routes._auth",
+           return_value=(None, None, ({"error": "Sila log masuk"}, 401)))
+    def test_preview_requires_a_teacher_session(self, *_):
+        self.assertEqual(self.client.get(
+            "/api/web/teacher/school-logo-preview?school_code=KBA4016").status_code, 401)
+
+    @patch("web.teacher_profile_routes._auth",
+           return_value=({"supabase_url": "https://db.example",
+                          "supabase_key": "private"}, 123, None))
+    def test_preview_reads_the_selected_catalog_logo_without_touching_profile(self, *_):
+        with patch("web.teacher_profile_routes.get_profile") as profile, \
+             patch("web.teacher_profile_routes.save_profile") as save_profile, \
+             patch("web.school_logo_store.save_logo_png") as save_logo, \
+             patch("web.school_logo_candidate.logo_candidate",
+                   return_value=(b"\x89PNG\r\n\x1a\nimage", "image/png")) as catalog:
+            for suffix in ("", "?school_code=../../logo.png",
+                           "?school_code=KBA4016&school_code=KBA4017",
+                           "?school_code=KBA4016&user_id=123"):
+                self.assertEqual(self.client.get(
+                    "/api/web/teacher/school-logo-preview" + suffix).status_code, 400)
+            catalog.assert_not_called()
+            response = self.client.get("/api/web/teacher/school-logo-preview?school_code=KBA4016")
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.content_type, "image/png")
+            self.assertEqual(response.headers["Cache-Control"], "no-store, private")
+            catalog.assert_called_once_with("https://db.example", "private", "KBA4016")
+            profile.assert_not_called()
+            save_profile.assert_not_called()
+            save_logo.assert_not_called()
+
     def test_frontend_does_not_overwrite_logo_without_consent(self):
         root=Path(__file__).resolve().parents[1]/"web_v1_static_preview"
         html=(root/"index.html").read_text("utf-8")
         js=(root/"teacher-profile.js").read_text("utf-8")
         self.assertIn('id="school-logo-auto"',html)
-        self.assertIn('src="/assets/teacher-profile.js?v=school-search-20261114"',html)
+        self.assertIn('src="/assets/teacher-profile.js?v=school-logo-preview-20261114"',html)
         self.assertIn("/api/web/teacher/school-logo-candidate",js)
         self.assertIn("savedLogoSchoolCode()",js)
         self.assertIn("schoolLogoPresent===true",js)
