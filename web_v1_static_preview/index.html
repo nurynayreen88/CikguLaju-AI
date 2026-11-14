@@ -155,6 +155,10 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 .profile-actions button:disabled{opacity:.55;cursor:not-allowed}
 .profile-actions button:focus-visible,.teacher-profile-form input:focus-visible,.timetable-table select:focus-visible,.timetable-table input:focus-visible{outline:3px solid #ffc84b;outline-offset:2px}
 .profile-actions .notice{margin:0;flex:1 1 200px}
+#timetable-reader{padding:12px 14px;margin:12px 0 16px;border:1px solid #d2e1e7;border-radius:12px}
+#timetable-reader h4{margin:0 0 8px}
+#timetable-reader-file{max-width:100%}
+#timetable-reader-actions[hidden]{display:none}
 .timetable-table-wrap{overflow-x:auto}
 .timetable-table{border-collapse:collapse;width:100%;min-width:655px;font-size:.87rem}
 .timetable-table th,.timetable-table td{border:1px solid #d2e1e7;padding:7px;vertical-align:top}
@@ -790,7 +794,22 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <section id="teacher-timetable" class="teacher-timetable-section" aria-labelledby="timetable-heading">
 <h3 id="timetable-heading">Jadual Waktu Mengajar</h3>
 <p>Tambah waktu PdP mengikut hari, masa, kelas dan subjek. <strong>Pilih subjek daripada senarai mengikut kategori</strong>; untuk subjek khas atau nama lama, pilih <strong>Lain-lain — taip sendiri</strong>. Jadual ini digunakan oleh RPH Hari Ini.</p>
-<p class="notice">Jadual yang dikemas kini di sini juga boleh dilihat melalui Telegram. Muat naik gambar jadual boleh dilakukan melalui bot Telegram; bacaan gambar automatik belum tersedia pada Web.</p>
+<div id="timetable-reader" hidden>
+  <h4>Auto Baca Jadual Waktu</h4>
+  <label for="timetable-reader-file">Gambar atau PDF jadual waktu (maksimum 8 MB)</label>
+  <div class="profile-actions">
+    <input type="file" id="timetable-reader-file" accept=".jpg,.jpeg,.png,.webp,.pdf,image/jpeg,image/png,image/webp,application/pdf">
+    <button type="button" id="timetable-reader-start" disabled>Baca Jadual</button>
+  </div>
+  <p class="notice" id="timetable-reader-status" role="status" aria-live="polite"></p>
+  <div class="profile-actions" id="timetable-reader-classes-actions" hidden>
+    <button type="button" id="timetable-reader-classes">Tambah Kelas Dikesan ke Profil</button>
+  </div>
+  <div class="profile-actions" id="timetable-reader-actions" hidden>
+    <button type="button" id="timetable-reader-append">Tambah Waktu Dikesan</button>
+    <button type="button" id="timetable-reader-replace">Guna Jadual Dikesan</button>
+  </div>
+</div>
 <div class="timetable-table-wrap"><table class="timetable-table" aria-label="Jadual waktu guru">
 <thead><tr><th>Hari</th><th>Mula</th><th>Tamat</th><th>Kelas</th><th>Subjek</th><th>Padam</th></tr></thead>
 <tbody id="timetable-rows"></tbody></table></div>
@@ -2038,7 +2057,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
 <script src="/assets/rph-today.js?v=science-copy-expanded-20261113"></script>
-<script src="/assets/teacher-profile.js?v=school-combobox-20261114"></script>
+<script src="/assets/teacher-profile.js?v=auto-timetable-20261114"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>
 <script src="/assets/admin-usage.js?v=payment-inbox-20261114"></script>

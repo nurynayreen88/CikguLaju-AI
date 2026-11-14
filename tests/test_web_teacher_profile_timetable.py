@@ -1,5 +1,7 @@
 """Prevent cross-user reads/writes and verify new profile/timetable editor."""
 import unittest
+from io import BytesIO
+import os
 from unittest.mock import patch
 from flask import Flask
 
@@ -137,6 +139,35 @@ class TeacherProfileHttpTests(unittest.TestCase):
             self.assertEqual(response.status_code,200)
             self.assertEqual(save.call_args.args[2],123)
 
+    def test_ocr_preview_checks_paid_access_and_uses_saved_classes(self):
+        url = "/api/web/teacher/timetable/read"
+        data = b"%PDF-1.7 example"
+        result = {"entries": [period()], "uncertain": 0, "unreadable_pages": 0}
+
+        def upload(headers=None):
+            return self.client.post(url, data={"timetable": (BytesIO(data), "jadual.pdf")},
+                                    base_url=self.base, headers=headers or self.origin)
+
+        with patch.dict(os.environ, {"CIKGULAJU_WEB_ADMIN_IDS": "555"}), \
+             patch("web.teacher_profile_routes.get_profile", return_value={"class_names": ["4 Bestari"]}) as profile, \
+             patch("web.timetable_reader_client.read_uploaded_timetable", return_value=result) as read, \
+             patch("web.teacher_profile_routes.save_schedule") as save:
+            with patch("web.teacher_profile_routes.verify_session_ticket", return_value=None):
+                self.assertEqual(upload().status_code, 401)
+            self.assertEqual(upload().status_code, 403)
+            with patch("web.teacher_profile_routes._lookup", return_value={
+                "telegram_user_id": 123, "authenticated": True, "rakan_pembangun": True,
+            }):
+                self.assertEqual(upload({"Origin": "https://evil.example"}).status_code, 400)
+                read.assert_not_called()
+                response = upload()
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.json, result)
+            self.assertEqual(response.headers["Cache-Control"], "no-store, private")
+            profile.assert_called_once_with(self.config["supabase_url"], self.config["supabase_key"], 123)
+            read.assert_called_once_with(data, ["4 Bestari"])
+            save.assert_not_called()
+
     def test_anonymous_and_unregistered_blocked(self):
         with patch("web.teacher_profile_routes.verify_session_ticket",return_value=None):
             for method in ("get","put"):
@@ -190,7 +221,7 @@ class WebTeacherProfileUiTests(unittest.TestCase):
                       "teacher-profile-form","timetable-rows","timetable-add",
                       "timetable-save","profile-save","profile-access-summary"):
             self.assertIn('id="'+ident+'"',html)
-        self.assertIn('src="/assets/teacher-profile.js?v=school-combobox-20261114"',html)
+        self.assertRegex(html, r'src="/assets/teacher-profile\.js\?v=[a-z0-9-]+"')
         self.assertIn("loadTeacherProfile();",html)
         self.assertIn('id="view-rpt"',html)
         self.assertIn('id="view-rph"',html)

@@ -23,7 +23,7 @@ def protect_response(resp):
     return resp
 
 
-def _auth():
+def _auth(*, return_account=False):
     conf = _config()
     if conf is None:
         return None, None, (jsonify({"error": "Konfigurasi akaun belum tersedia"}), 503)
@@ -39,7 +39,7 @@ def _auth():
         return None, None, (jsonify({"error": "Semakan akaun belum tersedia"}), 503)
     if not account or account.get("telegram_user_id") != uid:
         return None, None, (jsonify({"error": "Akaun berdaftar diperlukan"}), 403)
-    return conf, uid, None
+    return conf, account if return_account else uid, None
 
 
 def _body():
@@ -100,17 +100,19 @@ def teacher_school_directory():
 
 @bp.get("/api/web/teacher/profile")
 def teacher_profile_get():
-    conf, uid, err = _auth()
+    conf, account, err = _auth(return_account=True)
     if err is not None:
         return err
     if request.args:
         return jsonify({"error": "Parameter tidak dijangka"}), 400
+    uid = account["telegram_user_id"]
     try:
         profile = get_profile(conf["supabase_url"], conf["supabase_key"], uid)
         schedule = get_schedule(conf["supabase_url"], conf["supabase_key"], uid)
     except (ProfileValidation, ProfileUnavailable, ProfileConflict) as exc:
         return _failure(exc)
-    return make_response(jsonify({"profile": profile, "timetable": schedule}))
+    return make_response(jsonify({"profile": profile, "timetable": schedule,
+                                  "timetable_auto_read": _can_read_timetable(account)}))
 
 
 @bp.put("/api/web/teacher/profile")
@@ -126,6 +128,44 @@ def teacher_profile_put():
     except (ProfileValidation, ProfileUnavailable, ProfileConflict) as exc:
         return _failure(exc)
     return jsonify({"saved": True, "version": version})
+
+
+def _can_read_timetable(account):
+    from web.admin_usage_web import allowed_admin_ids
+    from web.rph_delivery_quota import has_active_paid_access
+
+    return (has_active_paid_access(account)
+            or account["telegram_user_id"] in allowed_admin_ids())
+
+
+@bp.post("/api/web/teacher/timetable/read")
+def teacher_timetable_read():
+    from web.timetable_reader_client import read_uploaded_timetable
+    from web.timetable_upload import MAX_UPLOAD, TimetableReaderUnavailable, UnreadableTimetable
+
+    conf, account, err = _auth(return_account=True)
+    if err is not None:
+        return err
+    if not _can_read_timetable(account):
+        return jsonify(error="Auto Baca Jadual Waktu tersedia untuk Rakan Pembangun dan pelanggan aktif."), 403
+    if request.headers.get("Origin") != "https://" + request.host or request.args:
+        return jsonify(error="Asal permintaan tidak sah."), 400
+    if (request.mimetype != "multipart/form-data" or request.content_length is None
+            or not 0 < request.content_length <= MAX_UPLOAD + 8192):
+        return jsonify(error="Pilih satu fail jadual berukuran maksimum 8 MB."), 400
+    uploads = request.files.getlist("timetable")
+    if len(uploads) != 1 or len(request.files) != 1 or request.form:
+        return jsonify(error="Pilih satu fail jadual."), 400
+    try:
+        profile = get_profile(conf["supabase_url"], conf["supabase_key"], account["telegram_user_id"])
+        return jsonify(read_uploaded_timetable(uploads[0].stream.read(MAX_UPLOAD + 1),
+                                                profile["class_names"]))
+    except UnreadableTimetable as exc:
+        return jsonify(error=str(exc)), 422
+    except TimetableReaderUnavailable as exc:
+        return jsonify(error=str(exc) or "Pembaca jadual belum dapat dihubungi. Cuba lagi."), 503
+    except (ProfileValidation, ProfileUnavailable, ProfileConflict) as exc:
+        return _failure(exc)
 
 
 @bp.put("/api/web/teacher/timetable")

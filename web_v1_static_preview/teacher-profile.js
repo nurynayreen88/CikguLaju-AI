@@ -96,6 +96,16 @@ const timetableMessage = document.getElementById("timetable-save-status");
 const profileSaveButton = document.getElementById("profile-save");
 const timetableSaveButton = document.getElementById("timetable-save");
 const timetableAddButton = document.getElementById("timetable-add");
+const timetableReader = document.getElementById("timetable-reader");
+const timetableReaderFile = document.getElementById("timetable-reader-file");
+const timetableReaderStart = document.getElementById("timetable-reader-start");
+const timetableReaderStatus = document.getElementById("timetable-reader-status");
+const timetableReaderActions = document.getElementById("timetable-reader-actions");
+const timetableReaderClassActions = document.getElementById("timetable-reader-classes-actions");
+const timetableReaderClasses = document.getElementById("timetable-reader-classes");
+let timetableReadRows = [];
+let timetableReadRequest = null;
+let importedTimetable = false;
 const schoolLogoFile = document.getElementById("school-logo-file");
 const schoolLogoUpload = document.getElementById("school-logo-upload");
 const schoolLogoStatus = document.getElementById("school-logo-status");
@@ -399,10 +409,11 @@ function makeTimetableSelect(values, selected, field, placeholder) {
   select.dataset.field = field;
   if (placeholder) select.add(new Option(placeholder, ""));
   for (const text of values) select.add(new Option(text, text));
-  if (selected && !values.includes(selected)) {
+  const existing = selected && values.find(value=>value.toLowerCase()===selected.toLowerCase());
+  if (selected && !existing) {
     select.add(new Option(selected + " (semak profil)", selected));
   }
-  select.value = selected || (placeholder ? "" : values[0] || "");
+  select.value = existing || selected || (placeholder ? "" : values[0] || "");
   select.setAttribute("aria-label", field);
   return select;
 }
@@ -515,6 +526,8 @@ function setTeacherProfileButtons(enabled) {
   profileSaveButton.disabled=!enabled;
   timetableSaveButton.disabled=!enabled;
   timetableAddButton.disabled=!enabled;
+  timetableReaderFile.disabled=!enabled;
+  updateTimetableReaderButtons();
   updateAutoLogoButton();
 }
 
@@ -828,6 +841,13 @@ schoolChoiceField.addEventListener("change",()=>{
 async function loadTeacherProfile() {
   clearSchoolLogoSelection();
   teacherProfileState.loaded=false;
+  timetableReadRequest?.abort();
+  timetableReader.hidden=true;
+  timetableReaderFile.value="";
+  timetableReadRows=[];
+  importedTimetable=false;
+  timetableReaderClassActions.hidden=true;
+  timetableReaderStatus.textContent="";
   setTeacherProfileButtons(false);
   profileMessage.textContent="Memuatkan maklumat guru…";
   timetableMessage.textContent="Memuatkan jadual mengajar…";
@@ -848,6 +868,7 @@ async function loadTeacherProfile() {
     renderTeacherTimetable(timetable.entries);
     teacherProfileState.savedTimetable=JSON.stringify(timetableValueRows());
     teacherProfileState.loaded=true;
+    timetableReader.hidden=result.timetable_auto_read!==true;
     setTeacherProfileButtons(true);
     renderProfileReadiness();
     void refreshLogoAndTryAutomaticImport();
@@ -889,6 +910,7 @@ profileForm.addEventListener("submit", async event => {
     }
     setTeacherIdentity(body);
     renderTeacherTimetable(timetableValueRows());
+    timetableReaderClassActions.hidden=missingTimetableClasses().length===0;
     if(typeof loadTeacherClasses==="function")loadTeacherClasses();
     profileMessage.textContent="Maklumat guru dan senarai kelas berjaya disimpan.";
   }catch(err){
@@ -920,6 +942,11 @@ timetableAddButton.addEventListener("click",() => {
 timetableSaveButton.addEventListener("click",async() => {
   if(!teacherProfileState.loaded)return;
   const entries=timetableValueRows();
+  if(importedTimetable && entries.some(row=>!teacherProfileState.classNames.includes(row.class_name)
+      || !row.subject || !row.start || !row.end || row.start>=row.end)){
+    timetableMessage.textContent="Semak kelas, subjek dan masa bagi semua waktu sebelum simpan.";
+    return;
+  }
   if(!entries.length && teacherProfileState.savedPeriods>0 &&
      !window.confirm("Ini akan mengosongkan jadual waktu yang disimpan. Teruskan?"))return;
   if(!entries.length && !teacherProfileState.savedPeriods){
@@ -937,6 +964,8 @@ timetableSaveButton.addEventListener("click",async() => {
     teacherProfileState.profileVersion=result.version;
     teacherProfileState.savedTimetable=JSON.stringify(entries);
     teacherProfileState.savedPeriods=entries.length;
+    importedTimetable=false;
+    timetableReaderClassActions.hidden=true;
     renderProfileReadiness();
     timetableMessage.textContent=entries.length+" waktu berjaya disimpan. Jadual ini turut tersedia di Telegram.";
   }catch(err){
@@ -945,3 +974,116 @@ timetableSaveButton.addEventListener("click",async() => {
     timetableSaveButton.disabled=!teacherProfileState.loaded;
   }
 });
+
+
+function updateTimetableReaderButtons() {
+  timetableReaderStart.disabled=!teacherProfileState.loaded
+    || !timetableReaderFile.files.length || timetableReadRequest!==null;
+  timetableReaderActions.hidden=timetableReadRows.length===0;
+}
+
+timetableReaderFile.addEventListener("change",()=>{
+  timetableReadRequest?.abort();
+  timetableReadRows=[];
+  timetableReaderStatus.textContent="";
+  updateTimetableReaderButtons();
+});
+
+timetableReaderStart.addEventListener("click",async()=>{
+  const file=timetableReaderFile.files[0];
+  if(!teacherProfileState.loaded || timetableReader.hidden || !file || timetableReadRequest)return;
+  if(file.size===0 || file.size>8*1024*1024){
+    timetableReaderStatus.textContent="Pilih satu fail jadual berukuran maksimum 8 MB.";
+    return;
+  }
+  const controller=new AbortController();
+  timetableReadRequest=controller;
+  timetableReadRows=[];
+  updateTimetableReaderButtons();
+  timetableReaderStatus.textContent="Sedang membaca jadual waktu…";
+  const timeout=setTimeout(()=>controller.abort("timeout"),25000);
+  try{
+    const body=new FormData();
+    body.append("timetable",file);
+    const response=await fetch("/api/web/teacher/timetable/read",{
+      method:"POST",credentials:"same-origin",cache:"no-store",body,signal:controller.signal,
+      headers:{"Accept":"application/json"},
+    });
+    const result=await response.json().catch(()=>({}));
+    if(!response.ok || !Array.isArray(result.entries) || !result.entries.length)
+      throw new Error(result.error || "Jadual belum dapat dibaca. Cuba lagi.");
+    if(controller.signal.aborted || timetableReader.hidden)return;
+    timetableReadRows=result.entries;
+    const summary=[result.entries.length+" waktu dikesan."];
+    if(result.uncertain)summary.push(result.uncertain+" petak kurang jelas.");
+    if(result.unreadable_pages)summary.push(result.unreadable_pages+" halaman kurang jelas.");
+    if(result.uncertain || result.unreadable_pages)summary.push("Semak jadual asal dan tambah waktu yang tertinggal.");
+    timetableReaderStatus.textContent=summary.join(" ");
+  }catch(err){
+    if(controller.signal.reason==="timeout"){
+      timetableReaderStatus.textContent="Bacaan mengambil masa terlalu lama. Cuba satu halaman atau gambar yang lebih kecil.";
+    }else if(!controller.signal.aborted){
+      timetableReaderStatus.textContent=err.message;
+    }
+  }finally{
+    clearTimeout(timeout);
+    if(timetableReadRequest===controller)timetableReadRequest=null;
+    updateTimetableReaderButtons();
+  }
+});
+
+function applyReadTimetable(append) {
+  if(!teacherProfileState.loaded || !timetableReadRows.length)return;
+  const current=timetableValueRows();
+  const key=row=>[row.day,row.start,row.end,row.class_name.toLowerCase(),row.subject.toLowerCase()].join("|");
+  const existing=new Set(current.map(key));
+  const added=append ? timetableReadRows.filter(row=>!existing.has(key(row))) : timetableReadRows;
+  if(append && !added.length){
+    timetableReaderStatus.textContent="Semua waktu yang dikesan sudah ada dalam jadual.";
+    return;
+  }
+  if(append && current.length+added.length>80){
+    timetableReaderStatus.textContent="Had jadual ialah 80 waktu. Buang waktu yang tidak diperlukan dan cuba lagi.";
+    return;
+  }
+  if(!append && current.length && !window.confirm("Gantikan waktu dalam jadual yang sedang disunting?"))
+    return;
+  const rows=append ? [...current,...added] : added;
+  renderTeacherTimetable(rows);
+  importedTimetable=true;
+  const newClasses=missingTimetableClasses();
+  timetableReaderClassActions.hidden=newClasses.length===0;
+  timetableReadRows=[];
+  timetableReaderFile.value="";
+  updateTimetableReaderButtons();
+  timetableReaderStatus.textContent=newClasses.length
+    ? "Kelas baharu dikesan: "+newClasses.join(", ")+". Tambah ke profil atau pilih kelas sedia ada."
+    : "Semak hari, masa, kelas dan subjek, kemudian tekan Simpan Jadual Waktu.";
+  timetableMessage.textContent="Waktu yang dikesan sedia untuk disemak.";
+  timetableBody.querySelector("tr select")?.focus();
+}
+
+function missingTimetableClasses() {
+  if(!importedTimetable)return [];
+  const saved=new Set(teacherProfileState.classNames.map(name=>name.toLowerCase()));
+  return [...new Set(timetableValueRows().map(row=>row.class_name)
+    .filter(name=>name && !saved.has(name.toLowerCase())))];
+}
+
+timetableReaderClasses.addEventListener("click",()=>{
+  const field=document.getElementById("profile-classes");
+  const classes=new Map(teacherClassLines().map(name=>[name.toLowerCase(),name]));
+  for(const name of missingTimetableClasses()){
+    if(!classes.has(name.toLowerCase()))classes.set(name.toLowerCase(),name);
+  }
+  if(classes.size>25){
+    timetableReaderStatus.textContent="Senarai kelas melebihi 25. Semak pilihan kelas dalam jadual.";
+    return;
+  }
+  field.value=[...classes.values()].join("\n");
+  profileMessage.textContent="Semak Senarai Kelas dan tekan Simpan Maklumat Guru.";
+  field.focus();
+});
+
+document.getElementById("timetable-reader-append").addEventListener("click",()=>applyReadTimetable(true));
+document.getElementById("timetable-reader-replace").addEventListener("click",()=>applyReadTimetable(false));
