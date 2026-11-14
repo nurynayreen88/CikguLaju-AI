@@ -890,6 +890,14 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <section id="affiliate-admin" class="teacher-timetable-section" aria-labelledby="affiliate-admin-heading" hidden>
  <h3 id="affiliate-admin-heading">Pengurusan Affiliate</h3>
  <h4>Senarai Affiliate dan Baki Mata</h4>
+ <label for="affiliate-members-filter">Status jemputan</label>
+ <select id="affiliate-members-filter">
+  <option value="all">Semua affiliate</option>
+  <option value="registered">Ada jemputan berdaftar</option>
+  <option value="none">Belum ada jemputan berdaftar</option>
+  <option value="unpaid">Ada jemputan tanpa bayaran disahkan</option>
+  <option value="paid">Ada jemputan dengan bayaran disahkan</option>
+ </select>
  <button id="affiliate-admin-refresh" type="button">Muat Semula Rekod Affiliate</button>
  <p id="affiliate-members-status" role="status" aria-live="polite"></p>
  <ul id="affiliate-members-list"></ul>
@@ -1988,7 +1996,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/rph-today.js?v=science-copy-expanded-20261113"></script>
 <script src="/assets/teacher-profile.js?v=profile-guide-20261111"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
-<script src="/assets/web-referral.js?v=affiliate-auto-referral-20261114"></script>
+<script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>
 <script src="/assets/admin-usage.js?v=payment-inbox-20261114"></script>
 <script src="/assets/web-feedback.js?v=comments-inbox-20261112"></script>
 <script src="/assets/special-activities.js?v=source-draft-20261106"></script>

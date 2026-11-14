@@ -23,6 +23,7 @@
   const adminClaims = get("affiliate-admin-claims");
   const memberFilter = get("affiliate-admin-member-filter");
   const selectedMember = get("affiliate-admin-selected-member");
+  const membersFilter = get("affiliate-members-filter");
   const membersList = get("affiliate-members-list");
   const membersStatus = get("affiliate-members-status");
   const membersPrev = get("affiliate-members-prev");
@@ -229,9 +230,11 @@
   }
   async function updateMembers(nextPage = membersPage) {
     const revision = ++membersRequest;
+    const query = new URLSearchParams({page:String(nextPage), referral_status:membersFilter.value});
     membersPrev.disabled = membersNext.disabled = true;
+    membersStatus.textContent = "Memuatkan senarai affiliate…";
     try {
-      const data = await api(`/api/web/admin/affiliate/members?page=${nextPage}`);
+      const data = await api(`/api/web/admin/affiliate/members?${query}`);
       if (revision !== membersRequest) return;
       membersPage = nextPage;
       admin.hidden = false;
@@ -252,12 +255,14 @@
           filter.focus();
           void updateAdmin();
         });
+        const referrals = document.createElement("div");
+        referrals.textContent = `${item.registered_count} jemputan berdaftar · ${item.payment_count} bayaran disahkan`;
         const balances = document.createElement("div");
         balances.textContent = `${item.enabled ? "Aktif" : "Tidak aktif"} · Baki ${money(item.balance)} mata · Boleh dituntut ${money(item.available)} · Dalam tuntutan ${money(item.reserved)} · Dibayar ${money(item.paid)}`;
-        li.append(heading, balances);
+        li.append(heading, referrals, balances);
         membersList.append(li);
       }
-      membersStatus.textContent = data.items.length ? `Halaman ${membersPage + 1}` : "Tiada affiliate pada halaman ini.";
+      membersStatus.textContent = data.items.length ? `Halaman ${membersPage + 1}` : "Tiada affiliate bagi pilihan ini.";
       membersPrev.hidden = membersPage === 0;
       membersNext.hidden = !data.more;
     } catch (error) {
@@ -336,6 +341,11 @@
     filter.value = "pending";
     filter.focus();
     void updateAdmin();
+  });
+  membersFilter.addEventListener("change", () => {
+    membersPage = 0;
+    membersList.replaceChildren();
+    void updateMembers();
   });
   membersPrev.addEventListener("click", () => updateMembers(membersPage - 1));
   membersNext.addEventListener("click", () => updateMembers(membersPage + 1));
