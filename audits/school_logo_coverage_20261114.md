@@ -177,12 +177,19 @@ Semakan storan produksi menunjukkan 7,775 daripada 7,778 sekolah rendah mempunya
 
 Poi Chee berpindah dari Malau, Baling, ke Sungai Petani dan menggunakan kod KBC3106 dalam direktori Dong Lian Kedah. Katalog Web masih mempunyai rekod KBC0047, jadi logo dipadankan pada kod tersebut. [Laporan perpindahan](https://www.orientaldaily.com.my/news/north/2024/03/10/636512) · [Direktori Dong Lian Kedah](https://dongliankedah.com/吉打州国民型华文小学/)
 
+## Logo SK Emperoh Jambu daripada foto pengguna
+
+Foto pengguna menunjukkan lencana berlabel SK EMPEROH JAMBU. Versi lutsinar yang dihasilkan semula daripada foto dimuat naik untuk YCB1301 dan dibaca semula daripada storan. Semakan produksi mengesahkan 7,776 daripada 7,778 rekod sekolah rendah mempunyai logo katalog (99.97%).
+
+| Kod | Sekolah | Sumber | SHA-256 |
+| --- | --- | --- | --- |
+| YCB1301 | SK Emperoh Jambu | Foto lencana daripada pengguna, dihasilkan semula dengan latar lutsinar | `a50eb88d2cc461c51b32ff986ea3e873314d1af5629392ffe2ae0c60fac91a9f` |
+
 ## Sekolah yang masih memerlukan logo
 
 | Kod | Sekolah | PPD | Negeri |
 | --- | --- | --- | --- |
 | CBC4052 | SEKOLAH JENIS KEBANGSAAN (CINA) POAY CHAI | PPD KUANTAN | Pahang |
-| YCB1301 | SEKOLAH KEBANGSAAN EMPEROH JAMBU | PPD PADAWAN | Sarawak |
 | YCC6111 | SEKOLAH JENIS KEBANGSAAN (CINA) SING MING | PPD SARIKEI | Sarawak |
 
-Untuk CBC4052, [direktori](https://www.apac.com.my/cbc4052-sjkc-poay-chai.html) menyenaraikan Kampung Tiram, PPD Kuantan, dan [senarai sekolah Cina Pahang](https://zh.wikipedia.org/wiki/彭亨州华文小学列表) memaparkan status lokasi dan bilangan murid sebagai tidak berkenaan. Kod ini memerlukan pengesahan PPD Kuantan. Dua sekolah Sarawak masih memerlukan imej lencana yang dapat dipadankan dengan kod sekolah.
+Untuk CBC4052, [direktori](https://www.apac.com.my/cbc4052-sjkc-poay-chai.html) menyenaraikan Kampung Tiram, PPD Kuantan, dan [senarai sekolah Cina Pahang](https://zh.wikipedia.org/wiki/彭亨州华文小学列表) memaparkan status lokasi dan bilangan murid sebagai tidak berkenaan. Kod ini memerlukan pengesahan PPD Kuantan. SJKC Sing Ming masih memerlukan imej lencana yang dapat dipadankan dengan kod YCC6111.
