@@ -35,6 +35,26 @@ class TelegramRPTTests(unittest.TestCase):
         }
         self.assertTrue(telegram_downloads.install(self.namespace))
 
+    def test_dlp_year_two_menu_and_pdf_word_delivery(self):
+        callback = self.namespace["callback"]
+        callback(123, "rpt2027_dlp:science_dlp:pdf")
+        self.assertIn("Akses Terhad", self.messages[-1][1])
+        self.active = True
+        callback(123, "rpt2027_year_2")
+        buttons = [button["callback_data"] for row in self.messages[-1][2] for button in row]
+        for code in ("science_dlp", "mathematics_dlp"):
+            for fmt in ("pdf", "docx"):
+                key = f"rpt2027_dlp:{code}:{fmt}"
+                self.assertIn(key, buttons)
+                callback(123, key)
+                self.assertTrue(self.documents[-1][1].endswith("_Year_2." + fmt))
+                self.assertNotIn("RPH", self.documents[-1][2])
+        callback(123, "rpt2027_year_3")
+        self.assertFalse(any("rpt2027_dlp:" in b["callback_data"]
+                             for row in self.messages[-1][2] for b in row))
+        callback(123, "rpt2027_dlp:science_dlp:../pdf")
+        self.assertEqual(len(self.documents), 4)
+
     def test_other_callbacks_are_unchanged(self):
         self.assertEqual(self.namespace["callback"](123, "quick"), ("previous", 123, "quick"))
 
