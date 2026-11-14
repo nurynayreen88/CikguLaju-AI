@@ -185,11 +185,18 @@ Foto pengguna menunjukkan lencana berlabel SK EMPEROH JAMBU. Versi lutsinar yang
 | --- | --- | --- | --- |
 | YCB1301 | SK Emperoh Jambu | Foto lencana daripada pengguna, dihasilkan semula dengan latar lutsinar | `a50eb88d2cc461c51b32ff986ea3e873314d1af5629392ffe2ae0c60fac91a9f` |
 
+## Logo SJKC Sing Ming daripada imej pengguna
+
+Nama SJK (C) SING MING dan kod YCC 6111 tertera pada lencana pengguna. Imej ditukar kepada PNG dan dibaca semula daripada storan selepas dimuat naik untuk YCC6111. Semakan produksi mengesahkan 7,777 daripada 7,778 rekod sekolah rendah mempunyai logo katalog (99.99%).
+
+| Kod | Sekolah | Sumber | SHA-256 |
+| --- | --- | --- | --- |
+| YCC6111 | SJKC Sing Ming | Imej lencana daripada pengguna | `b0f33d9242bdcebf0c43ae5e2a8dec7f3b73acbd2214718d58c62d8463c7e4bc` |
+
 ## Sekolah yang masih memerlukan logo
 
 | Kod | Sekolah | PPD | Negeri |
 | --- | --- | --- | --- |
 | CBC4052 | SEKOLAH JENIS KEBANGSAAN (CINA) POAY CHAI | PPD KUANTAN | Pahang |
-| YCC6111 | SEKOLAH JENIS KEBANGSAAN (CINA) SING MING | PPD SARIKEI | Sarawak |
 
-Untuk CBC4052, [direktori](https://www.apac.com.my/cbc4052-sjkc-poay-chai.html) menyenaraikan Kampung Tiram, PPD Kuantan, dan [senarai sekolah Cina Pahang](https://zh.wikipedia.org/wiki/彭亨州华文小学列表) memaparkan status lokasi dan bilangan murid sebagai tidak berkenaan. Kod ini memerlukan pengesahan PPD Kuantan. SJKC Sing Ming masih memerlukan imej lencana yang dapat dipadankan dengan kod YCC6111.
+Untuk CBC4052, [direktori](https://www.apac.com.my/cbc4052-sjkc-poay-chai.html) menyenaraikan Kampung Tiram, PPD Kuantan, dan [senarai sekolah Cina Pahang](https://zh.wikipedia.org/wiki/彭亨州华文小学列表) memaparkan status lokasi dan bilangan murid sebagai tidak berkenaan. Kod ini memerlukan pengesahan PPD Kuantan.
