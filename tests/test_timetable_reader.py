@@ -158,6 +158,19 @@ class TimetableReaderTest(unittest.TestCase):
             dict(day="Isnin", start="", end="", reason="time"),
         ])
 
+    def test_guided_review_retains_subject_codes_and_slots_with_unknown_times(self):
+        texts = [
+            ((40, 0, 80, 30), "08:00–08:30"),
+            ((0, 30, 40, 60), "Isnin"),
+            ((0, 60, 40, 90), "Selasa"),
+            ((40, 30, 80, 60), "MT 4 Bestari"),
+            ((80, 30, 120, 60), "MT 4 Bestari"),
+        ]
+        rows, unclear = _read_grid(texts, CLASSES, guided=True)
+        self.assertEqual([row["subject_code"] for row in rows], ["MT", "MT"])
+        self.assertEqual([row["start"] for row in rows], ["08:00", ""])
+        self.assertEqual(unclear, [dict(day="Isnin", start="", end="", reason="time")])
+
     def test_private_endpoint_authenticates_and_returns_real_slots(self):
         app = Flask(__name__)
         app.register_blueprint(bp)

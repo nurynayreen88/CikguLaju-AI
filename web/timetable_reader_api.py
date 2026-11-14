@@ -49,8 +49,9 @@ def timetable_read():
         data = request.get_data(cache=False)
         if upload_mime(data) != request.mimetype:
             raise UnreadableTimetable("Jenis fail jadual tidak sepadan.")
-        result = read_timetable(data, classes)
-        if request.headers.get("X-Timetable-Review") != "1":
+        review = request.headers.get("X-Timetable-Review")
+        result = read_timetable(data, classes, guided=review == "2")
+        if review not in ("1", "2"):
             result.pop("unclear_cells")
         return jsonify(result)
     except UnreadableTimetable as exc:
