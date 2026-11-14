@@ -238,7 +238,7 @@ def _class_key(value):
     return re.sub(r"[\W_]+", "", re.sub(r"^tahun\s*", "", value.casefold()))
 
 
-def _subject_class(text, saved_classes, compact=False):
+def _subject_class(text, saved_classes, compact=False, *, preserve_class=False):
     match = SUBJECT_PATTERN.search(text)
     if match:
         subject = SUBJECTS[match[0].casefold()]
@@ -264,7 +264,7 @@ def _subject_class(text, saved_classes, compact=False):
         name = ("1" if not year.isdigit() else year) + suffix.upper()
     matching = [saved for saved in saved_classes if _class_key(saved) == _class_key(name)]
     if len(matching) == 1:
-        return subject, matching[0]
+        return subject, name if preserve_class else matching[0]
     return subject, name if len(name) <= 40 and CLASS_PATTERN.fullmatch(name) else ""
 
 
@@ -393,13 +393,13 @@ def _recover_compact_texts(image, cells, texts, saved_classes):
     return list(original.items())
 
 
-def _read_grid(texts, saved_classes):
+def _read_grid(texts, saved_classes, *, guided=False):
     labels, day_axis, compact = _day_labels(texts)
     if not labels:
         return [], []
     time_axis = 1 - day_axis
     headers = _headers(texts, labels, time_axis, day_axis)
-    if not headers:
+    if not headers and not guided:
         return [], []
     skipped = {cell for cell, _ in labels} | _break_cells(texts, labels, day_axis)
     entries, uncertain = [], []
@@ -414,37 +414,48 @@ def _read_grid(texts, saved_classes):
         if len(matching_days) != 1:
             continue
         day = matching_days[0]
-        subject, class_name = _subject_class(text, saved_classes, compact)
+        subject, class_name = _subject_class(text, saved_classes, compact, preserve_class=guided)
         time_unclear = not spans or any(
             last_end != next_start for (_, last_end), (next_start, _) in zip(spans, spans[1:])
         )
         if time_unclear:
-            if subject or class_name:
-                uncertain.append(dict(day=day, start="", end="", reason="time"))
-            continue
-        start, end = spans[0][0], spans[-1][1]
-        if not subject and not class_name:
-            uncertain.append(dict(day=day, start=start, end=end, reason="details"))
-            continue
-        if not subject or not class_name:
-            uncertain.append(dict(day=day, start=start, end=end, reason="review"))
-        entries.append(dict(day=day, start=start, end=end,
-                            class_name=class_name, subject=subject))
+            if not (subject or class_name):
+                continue
+            start = end = ""
+            uncertain.append(dict(day=day, start=start, end=end, reason="time"))
+            if not guided:
+                continue
+        else:
+            start, end = spans[0][0], spans[-1][1]
+            if not subject and not class_name:
+                uncertain.append(dict(day=day, start=start, end=end, reason="details"))
+                continue
+            if not subject or not class_name:
+                uncertain.append(dict(day=day, start=start, end=end, reason="review"))
+        entry = dict(day=day, start=start, end=end, class_name=class_name, subject=subject)
+        if guided:
+            match = SUBJECT_PATTERN.search(text)
+            token = match[0].upper() if match else subject
+            if SUBJECT_CODE.fullmatch(token) and (not match or token != subject.upper()):
+                entry["subject_code"] = token
+        entries.append(entry)
     return entries, uncertain
 
 
 def _merge_adjacent(entries):
     merged = []
     for row in entries:
-        if (merged and row["class_name"] and row["subject"] and merged[-1]["end"] == row["start"]
-                and all(merged[-1][key] == row[key] for key in ("day", "class_name", "subject"))):
+        if (merged and row["start"] and row["class_name"] and row["subject"]
+                and merged[-1]["end"] == row["start"]
+                and all(merged[-1].get(key) == row.get(key)
+                        for key in ("day", "class_name", "subject", "subject_code"))):
             merged[-1] = {**merged[-1], "end": row["end"]}
         else:
             merged.append(row)
     return merged
 
 
-def read_timetable(data, saved_classes):
+def read_timetable(data, saved_classes, *, guided=False):
     """Return review rows plus counts of unreadable cells and pages."""
     import fitz
     from PIL import Image
@@ -453,18 +464,21 @@ def read_timetable(data, saved_classes):
     try:
         for page, (image, words) in enumerate(_pages(data), start=1):
             cells = _grid(image)
-            entries, missed = _read_grid(_cell_texts(cells, words), saved_classes)
+            entries, missed = _read_grid(_cell_texts(cells, words), saved_classes, guided=guided)
             if (not entries or missed) and cells:
                 texts = _cell_texts(cells, _ocr_words(image))
                 texts = _recover_compact_texts(image, cells, texts, saved_classes)
-                ocr_entries, ocr_missed = _read_grid(texts, saved_classes)
-                if (len(ocr_entries), -len(ocr_missed)) > (len(entries), -len(missed)):
+                ocr_entries, ocr_missed = _read_grid(texts, saved_classes, guided=guided)
+                score = lambda rows, unclear: (sum(bool(row["start"]) for row in rows), len(rows), -len(unclear))
+                if score(ocr_entries, ocr_missed) > score(entries, missed):
                     entries, missed = ocr_entries, ocr_missed
             uncertain.extend(dict(cell, page=page) for cell in missed)
             if not entries:
                 unreadable_pages += 1
-            for entry in entries:
-                results[tuple(entry.values())] = entry
+            for index, entry in enumerate(entries):
+                key = tuple(entry.values())
+                # Unknown times must be reviewed individually even if labels repeat.
+                results[key if entry["start"] else (*key, page, index)] = entry
     except (fitz.FileDataError, Image.DecompressionBombError, OSError) as exc:
         raise UnreadableTimetable("Fail jadual tidak dapat dibuka. Cuba simpan semula fail.") from exc
     if not results:
