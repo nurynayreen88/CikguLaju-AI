@@ -83,3 +83,37 @@ assert(groups.some(g=>g.label==="Subjek utama"));
 assert(groups.some(g=>g.label==="Waktu bukan PdP"));
 assert(select.children.some(x=>x.value===OTHER));
 console.log("PASS: "+checks+" existing subjects/aliases preserve exact value, custom choice, grouped options");
+
+// Missing OCR class labels show their location and can be left out of import.
+const reviewFields=new Element("div");
+const reviewContext={
+  document, Option, timetableReaderFields:reviewFields,
+  teacherProfileState:{classAliases:{}},
+  teacherDays:["Isnin","Selasa"],
+  makeTimetableSelect:()=>new Element("select"),
+  makeTimetableInput:()=>new Element("input"),
+  timetableReview:{
+    rows:[{day:"Selasa",start:"08:00",end:"08:30",class_name:"",subject:"Matematik"}],
+    subjects:new Map([["MATEMATIK","Matematik"]]),
+    classes:new Map(),
+    times:[],
+  },
+};
+vm.createContext(reviewContext);
+vm.runInContext(declarations+picker+
+  between("function timetableReviewGroup(","function renderTimetableReadReport("),reviewContext);
+reviewContext.renderTimetableMappings("class_name");
+let [legend,input]=reviewFields.children[0].children;
+assert.equal(legend.textContent,"Kod kelas tidak dapat dibaca · Selasa · 08:00");
+assert.equal(input.value,"");
+reviewFields.children=[];
+reviewContext.renderTimetableTimes();
+let skip=reviewFields.children[0].children.at(-1).children[0];
+assert.equal(skip.checked,true);
+assert.equal(skip.disabled,true);
+reviewContext.timetableReview.classes.set("?0","1 Amanah");
+reviewFields.children=[];
+reviewContext.renderTimetableTimes();
+skip=reviewFields.children[0].children.at(-1).children[0];
+assert.equal(skip.checked,false);
+assert.equal(skip.disabled,false);
