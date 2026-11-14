@@ -40,8 +40,9 @@ assert.ok(pos("rph")<pos("worksheet") && pos("worksheet")<pos("bbm") &&
  pos("bbm")<pos("uasa") && pos("uasa")<pos("pbd") &&
  pos("pbd")<pos("special"),"Teaching-material features should follow Sediakan RPH");
 assert.doesNotMatch(source,/id="view-kp2027"|data-web-view="kp2027"/);
-assert.match(source,/<option value="kp2027-y1">Tahun 1 \(KP Baharu\)<\/option>/);
-assert.match(source,/<option value="1">Tahun 1 \(KSSR\)<\/option>/);
+assert.match(source,/<select id="curriculum">.*<option value="kssr">KSSR<\/option><option value="kp2027">KP27 \(KP Baharu\)<\/option><option value="dlp">DLP<\/option><\/select>/);
+assert.match(source,/<select id="year" hidden disabled>/);
+assert.match(source,/<select id="subject" hidden disabled>/);
 assert.match(source,/year===1\?"Tahun 1 \(KP Baharu\)"/);
 
 const worksheet=locations.find(x=>x.id==="worksheet").content;
@@ -98,11 +99,11 @@ const listeners={};
 function mockSelect(name){
  return {value:"",options:[],addEventListener(event,fn){listeners[name+"."+event]=fn;}};
 }
-const year=mockSelect("year"),subject=mockSelect("subject"),unit=mockSelect("unit");
+const curriculum=mockSelect("curriculum"),year=mockSelect("year"),subject=mockSelect("subject"),unit=mockSelect("unit");
 const catalogueCalls=[];
 const panel={hidden:true}, science={hidden:true}, mathematics={hidden:true};
 const ctx={
- year,subject,unit,catalogStatus:{textContent:""}, dlpPreviewPanel:panel,
+ curriculum,year,subject,unit,catalogStatus:{textContent:""}, dlpPreviewPanel:panel,
  dlpPreviews:new Map([["SCIENCE_DLP",science],["MATH_DLP",mathematics]]),
  dlpPreviewOptions:[{value:"SCIENCE_DLP",label:"Science (DLP) — Akan Datang"},
                     {value:"MATH_DLP",label:"Mathematics (DLP) — Akan Datang"}],
@@ -111,24 +112,31 @@ const ctx={
  resetCurriculumChoices(){ctx.showDlpPreview("");}, setSubjectNavigationLabels(){},
  updateSelectionHelp(text){ctx.help=text;},
  async loadOptions(kind){catalogueCalls.push(kind);return [{value:"MATH",label:"Matematik"}];},
- showStep(){}, subjectNavLabel(){return "Unit";},
+ showStep(el,visible){el.hidden=!visible;}, subjectNavLabel(){return "Unit";},
  async fillForSelection(_el,kind,extra){catalogueCalls.push(kind,extra.subject);},
 };
-vm.runInNewContext(code.slice(code.indexOf("function showDlpPreview("),code.indexOf("async function loadOptions("))
- +"\n"+code.slice(code.indexOf('year.addEventListener("change"'),code.indexOf('component.addEventListener("change"'))
+vm.runInNewContext(code.slice(code.indexOf("const curriculumYears="),code.indexOf("async function loadOptions("))
+ +"\n"+code.slice(code.indexOf('curriculum.addEventListener("change"'),code.indexOf('component.addEventListener("change"'))
  +"\nthis.showDlpPreview=showDlpPreview;",ctx);
 (async()=>{
- year.value="kp2027-y1";
- await listeners["year.change"]();
- assert.equal(subject.disabled,true);
- assert.match(ctx.help,/KP Baharu.*Akan Datang/);
- assert.deepEqual(catalogueCalls,[]);
+ listeners["curriculum.change"]();
+ assert.equal(year.hidden,true);
+ assert.equal(subject.hidden,true);
+ curriculum.value="kp2027";
+ listeners["curriculum.change"]();
+ assert.deepEqual(year.options.map(x=>x.label),["Pilih Tahun","Tahun 1 (KP Baharu)"]);
  year.value="1";
  await listeners["year.change"]();
- assert.deepEqual(subject.options.map(x=>x.value),["","MATH"]);
+ assert.equal(subject.disabled,true);
+ assert.equal(subject.hidden,true);
+ assert.match(ctx.help,/KP Baharu.*Akan Datang/i);
+ assert.deepEqual(catalogueCalls,[]);
+ curriculum.value="dlp";
+ listeners["curriculum.change"]();
+ assert.deepEqual(year.options.map(x=>x.value),["","2"]);
  year.value="2";
  await listeners["year.change"]();
- assert.deepEqual(subject.options.map(x=>x.value),["","MATH","SCIENCE_DLP","MATH_DLP"]);
+ assert.deepEqual(subject.options.map(x=>x.value),["","SCIENCE_DLP","MATH_DLP"]);
  subject.value="SCIENCE_DLP";
  await listeners["subject.change"]();
  assert.equal(panel.hidden,false);
@@ -139,10 +147,28 @@ vm.runInNewContext(code.slice(code.indexOf("function showDlpPreview("),code.inde
  await listeners["subject.change"]();
  assert.equal(science.hidden,true);
  assert.equal(mathematics.open,true);
- assert.deepEqual(catalogueCalls,["subjects","subjects"]);
+ assert.deepEqual(catalogueCalls,[]);
+ curriculum.value="kssr";
+ listeners["curriculum.change"]();
+ assert.equal(panel.hidden,true);
+ assert.equal(subject.hidden,true);
+ assert.deepEqual(year.options.map(x=>x.value),["","1","2","3","4","5","6"]);
+ year.value="2";
+ await listeners["year.change"]();
+ assert.deepEqual(subject.options.map(x=>x.value),["","MATH"]);
  subject.value="MATH";
  await listeners["subject.change"]();
  assert.equal(panel.hidden,true);
- assert.deepEqual(catalogueCalls,["subjects","subjects","units","MATH"]);
- console.log("WEB_PLANNED_MENUS: PASS (inline DLP and KP Baharu, legacy access, six worksheet previews)");
+ assert.deepEqual(catalogueCalls,["subjects","units","MATH"]);
+ let resolveOldSubjects;
+ ctx.loadOptions=()=>new Promise(resolve=>{resolveOldSubjects=resolve;});
+ const pending=listeners["year.change"]();
+ curriculum.value="dlp";
+ listeners["curriculum.change"]();
+ year.value="2";
+ await listeners["year.change"]();
+ resolveOldSubjects([{value:"MATH",label:"Matematik"}]);
+ await pending;
+ assert.deepEqual(subject.options.map(x=>x.value),["","SCIENCE_DLP","MATH_DLP"]);
+ console.log("WEB_PLANNED_MENUS: PASS (curriculum first, scoped years and subjects, stale request discarded)");
 })().catch(error=>{console.error(error);process.exitCode=1;});

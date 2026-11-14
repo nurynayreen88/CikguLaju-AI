@@ -37,13 +37,16 @@ class ScienceBrowserDownloadTest(unittest.TestCase):
           document.querySelector('#workspace').hidden=false;
           showWebView('rph'); // Mimic authenticated teacher opening sidebar RPH
           document.querySelector('#teacher-info').hidden=false;
+          curriculum.value='kssr';
+          selectCurriculum();
           for(const [id,value] of [
-             ['year','4'],['subject','SCIENCE'],['unit',unit],['lesson',pdp]
+             ['subject','SCIENCE'],['unit',unit],['lesson',pdp]
           ]) {
             const node=document.getElementById(id);
             node.add(new Option(value,value));
             node.value=value;
           }
+          year.value='4';
           const date=document.getElementById('teacher-date');
           if(date)date.value='2026-11-08';
           verifiedRphKey=currentRphLessonKey();
