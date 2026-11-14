@@ -63,14 +63,20 @@ def install(ns):
             return locked(cid)
         if is_dlp:
             parts = data.split(":")
-            if len(parts) != 3:
+            if len(parts) == 3:
+                # Year 2 buttons sent before the multi-year menu remain valid.
+                _, subject, fmt = parts
+                year = 2
+            elif len(parts) == 4 and parts[2] in ("2", "3"):
+                _, subject, year_text, fmt = parts
+                year = int(year_text)
+            else:
                 return send(cid, "Pilihan RPT DLP tidak sah.")
-            _, subject, fmt = parts
-            path = document_path(subject, 2, fmt)
+            path = document_path(subject, year, fmt)
             if path is None:
                 return send(cid, "Fail RPT DLP ini belum tersedia.")
             try:
-                result = send_document(cid, str(path), f"RPT 2027 · {DLP_SUBJECTS[subject]} (DLP) · Year 2")
+                result = send_document(cid, str(path), f"RPT 2027 · {DLP_SUBJECTS[subject]} (DLP) · Year {year}")
                 verify = ns.get("_telegram_delivery_ok_v25279")
                 if callable(verify) and not verify(result):
                     return send(cid, "Telegram belum mengesahkan penghantaran RPT DLP. Cuba lagi.")
@@ -117,7 +123,7 @@ def install(ns):
                             "callback_data": "rpt2027_psv_pdf_%d" % year}])
             for code, name in DLP_SUBJECTS.items():
                 buttons = [
-                    {"text": f"{name} DLP ({label})", "callback_data": f"rpt2027_dlp:{code}:{fmt}"}
+                    {"text": f"{name} DLP ({label})", "callback_data": f"rpt2027_dlp:{code}:{year}:{fmt}"}
                     for fmt, label in (("pdf", "PDF"), ("docx", "Word"))
                     if document_path(code, year, fmt)
                 ]
