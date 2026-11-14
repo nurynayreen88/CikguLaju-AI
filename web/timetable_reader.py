@@ -19,6 +19,7 @@ DAY_LABELS = {
     ))
     for name in names
 }
+SHORT_DAYS = dict(zip("isrkj", DAYS))
 SUBJECTS = {
     "BM": "Bahasa Melayu", "BI": "English", "BA": "Bahasa Arab",
     "EN": "English", "ENG": "English", "Bahasa Inggeris": "English",
@@ -43,6 +44,10 @@ SUBJECT_PATTERN = re.compile(
 TIME_PATTERN = re.compile(r"(?<!\d)([01]?\d|2[0-3])\s*[:.]\s*([0-5]\d)(?!\d)"
                           r"\s*(a\.?m\.?|p\.?m\.?|pagi|petang|tengah\s+hari)?", re.I)
 CLASS_PATTERN = re.compile(r"(?:Tahun\s*)?[1-6]\s*[A-Za-z][\w .'-]{0,34}", re.I)
+TIME_OCR = re.compile(r"(?<!\w)[0-9Il]{1,2}[:.][0-9Oo]{2}(?!\w)")
+TIME_OCR_DIGITS = str.maketrans("IlOo", "1100")
+COMPACT_CLASS = re.compile(r"([1-6Il])\s*([A-Za-z])", re.I)
+SUBJECT_CODE = re.compile(r"[A-Z][A-Z0-9]{1,7}")
 NON_TEACHING = re.compile(
     r"^(?:masa rehat|rehat|recess|perhimpunan|assembly|kokurikulum|free period)\b", re.I)
 
@@ -142,6 +147,7 @@ def _cell_texts(cells, words):
 
 
 def _times(text):
+    text = TIME_OCR.sub(lambda match: match[0].translate(TIME_OCR_DIGITS), text)
     values = []
     for hh, mm, label in TIME_PATTERN.findall(text):
         hour = int(hh)
@@ -161,6 +167,33 @@ def _interval(cell, axis):
 def _intersects(first, second):
     overlap = min(first[1], second[1]) - max(first[0], second[0])
     return overlap > min(first[1] - first[0], second[1] - second[0]) * 0.45
+
+
+def _day_labels(texts):
+    labels = [(cell, DAY_LABELS[text.casefold().strip(" .:")]) for cell, text in texts
+              if text.casefold().strip(" .:") in DAY_LABELS]
+    if len({day for _, day in labels}) >= 2:
+        x = [(cell[0] + cell[2]) / 2 for cell, _ in labels]
+        y = [(cell[1] + cell[3]) / 2 for cell, _ in labels]
+        return labels, int(max(y) - min(y) > max(x) - min(x)), False
+
+    # Interpret single letters only in a coherent day band, where a lone
+    # letter in the teaching grid (including vertical REHAT) cannot be a day.
+    short = [(cell, SHORT_DAYS[text.casefold().strip(" .:")]) for cell, text in texts
+             if text.casefold().strip(" .:") in SHORT_DAYS]
+    candidates = []
+    for axis in (0, 1):
+        for anchor, _ in short:
+            lane = [(cell, day) for cell, day in short
+                    if _intersects(_interval(cell, 1 - axis), _interval(anchor, 1 - axis))]
+            lane.sort(key=lambda pair: pair[0][axis])
+            days = [DAYS.index(day) for _, day in lane]
+            if len(days) >= 3 and days == sorted(set(days)):
+                candidates.append((lane, axis))
+    if candidates:
+        lane, axis = max(candidates, key=lambda candidate: len(candidate[0]))
+        return lane, axis, True
+    return [], 1, False
 
 
 def _headers(texts, labels, time_axis, day_axis):
@@ -189,6 +222,13 @@ def _headers(texts, labels, time_axis, day_axis):
         start = times[0]
         end = times[1] if len(times) == 2 else (
             header[index + 1][1][0] if index + 1 < len(header) else "")
+        if "12:00" <= start < "13:00" and "01:00" <= end < "07:00":
+            end = f"{int(end[:2]) + 12:02d}{end[2:]}"
+        if output and output[-1][2] >= "13:00" and "01:00" <= start < end < "07:00":
+            afternoon = f"{int(start[:2]) + 12:02d}{start[2:]}"
+            if output[-1][2] == afternoon:
+                start = afternoon
+                end = f"{int(end[:2]) + 12:02d}{end[2:]}"
         if start < end:
             output.append((span, start, end))
     return output
@@ -198,9 +238,16 @@ def _class_key(value):
     return re.sub(r"[\W_]+", "", re.sub(r"^tahun\s*", "", value.casefold()))
 
 
-def _subject_class(text, saved_classes):
+def _subject_class(text, saved_classes, compact=False):
     match = SUBJECT_PATTERN.search(text)
-    if not match:
+    if match:
+        subject = SUBJECTS[match[0].casefold()]
+        name = (text[:match.start()] + " " + text[match.end():]).strip(" -/|:–—")
+    else:
+        code, _, name = text.partition(" ")
+        # Preserve printed local codes until the teacher selects a subject.
+        subject = code if compact and SUBJECT_CODE.fullmatch(code) and COMPACT_CLASS.fullmatch(name) else ""
+    if not subject:
         # Keep a readable custom subject if the class already exists in the profile.
         for name in sorted(saved_classes, key=len, reverse=True):
             found = re.search(r"(?<!\w)" + re.escape(name) + r"(?!\w)", text, re.I)
@@ -211,30 +258,153 @@ def _subject_class(text, saved_classes):
                     return custom, name
                 return "", name
         return "", ""
-    subject = SUBJECTS[match[0].casefold()]
-    name = (text[:match.start()] + " " + text[match.end():]).strip(" -/|:–—")
     name = " ".join(name.split())
+    if compact and (short_class := COMPACT_CLASS.fullmatch(name)):
+        year, suffix = short_class.groups()
+        name = ("1" if not year.isdigit() else year) + suffix.upper()
     matching = [saved for saved in saved_classes if _class_key(saved) == _class_key(name)]
     if len(matching) == 1:
         return subject, matching[0]
     return subject, name if len(name) <= 40 and CLASS_PATTERN.fullmatch(name) else ""
 
 
+def _break_cells(texts, labels, day_axis):
+    label_cells = {cell for cell, _ in labels}
+    letters = [(cell, text.upper()) for cell, text in texts
+               if len(text) == 1 and text.upper() in "REHAT" and cell not in label_cells]
+    for anchor, _ in letters:
+        lane = [(cell, letter) for cell, letter in letters
+                if _intersects(_interval(cell, 1 - day_axis), _interval(anchor, 1 - day_axis))]
+        lane.sort(key=lambda pair: pair[0][day_axis])
+        if "".join(letter for _, letter in lane) == "REHAT":
+            return {cell for cell, _ in lane}
+    return set()
+
+
+def _teaching_cells(cells, labels, headers, day_axis):
+    return [cell for cell in cells
+            if not any(_intersects(_interval(cell, 1 - day_axis), _interval(label, 1 - day_axis))
+                       for label, _ in labels)
+            and any(_intersects(_interval(cell, day_axis), _interval(label, day_axis))
+                    for label, _ in labels)
+            and any(_intersects(_interval(cell, 1 - day_axis), span) for span, _, _ in headers)]
+
+
+def _cell_lines(gray, cell):
+    import cv2
+    import numpy as np
+
+    x0, y0, x1, y1 = cell
+    margin = max(3, min(8, min(x1 - x0, y1 - y0) // 12))
+    tile = gray[y0 + margin:y1 - margin, x0 + margin:x1 - margin]
+    tile = cv2.GaussianBlur(tile, (3, 3), 0)
+    background = np.bincount(tile.ravel(), minlength=256).argmax()
+    if background < 50:
+        return []
+    ink = (tile < 0.70 * background).astype("uint8")
+    _, labels, stats, _ = cv2.connectedComponentsWithStats(ink)
+    clean = np.zeros_like(ink)
+    for index, (_, _, width, height, area) in enumerate(stats[1:], start=1):
+        if width >= 2 and 3 <= height < 0.7 * len(tile) and area >= 10:
+            clean[labels == index] = 1
+    boundaries = np.flatnonzero(np.diff(np.r_[False, clean.sum(axis=1) > 1, False]))
+    lines = []
+    for top, bottom in zip(boundaries[::2], boundaries[1::2]):
+        if bottom - top >= 7:
+            _, columns = np.nonzero(clean[top:bottom])
+            line = tile[top:bottom, columns.min():columns.max() + 1]
+            lines.append(cv2.normalize(line, None, 0, 255, cv2.NORM_MINMAX))
+    return lines
+
+
+def _ocr_cell_lines(image, cells):
+    """Read subject and class lines separately after removing borders and color."""
+    import cv2
+    import numpy as np
+    from PIL import Image
+
+    gray = np.asarray(image.convert("L"))
+    pieces = []
+    for cell in cells:
+        lines = _cell_lines(gray, cell)
+        if len(lines) == 2:
+            pieces.extend((cell, index, line) for index, line in enumerate(lines))
+
+    # OCR a sheet of isolated lines in one call per batch.
+    columns, tile_width, tile_height = 7, 165, 100
+    recovered = defaultdict(list)
+    for offset in range(0, len(pieces), 70):
+        batch = pieces[offset:offset + 70]
+        height = ((len(batch) + columns - 1) // columns) * tile_height
+        sheet = np.full((height, columns * tile_width), 255, dtype=np.uint8)
+        for index, (_, _, line) in enumerate(batch):
+            scale = min(1.6, (tile_width - 30) / line.shape[1], (tile_height - 35) / line.shape[0])
+            width, height = (max(1, round(size * scale)) for size in reversed(line.shape))
+            resized = cv2.resize(line, (width, height), interpolation=cv2.INTER_CUBIC)
+            y, x = (index // columns) * tile_height + 20, (index % columns) * tile_width + 15
+            sheet[y:y + height, x:x + width] = resized
+        for word in _ocr_words(Image.fromarray(sheet)):
+            x0, y0, x1, y1, _ = word
+            col = int((x0 + x1) / 2) // tile_width
+            row = int((y0 + y1) / 2) // tile_height
+            index = row * columns + col
+            if index < len(batch):
+                cell, line, _ = batch[index]
+                recovered[cell, line].append(word)
+    return {cell: " ".join(_text(recovered[cell, line]) for line in (0, 1))
+            for cell, _, _ in pieces if recovered[cell, 0] and recovered[cell, 1]}
+
+
+def _recover_compact_texts(image, cells, texts, saved_classes):
+    labels, day_axis, compact = _day_labels(texts)
+    if not compact:
+        return texts
+    headers = _headers(texts, labels, 1 - day_axis, day_axis)
+    original = dict(texts)
+    if len(labels) == 4 and headers:
+        # A lone I can be dropped by OCR. Recover one missing day only when
+        # a labelled header and all five weekday cells agree with the layout.
+        anchor, _ = labels[0]
+        lane = sorted((cell for cell in cells
+                       if _intersects(_interval(cell, 1 - day_axis), _interval(anchor, 1 - day_axis))),
+                      key=lambda cell: cell[day_axis])
+        if len(lane) == 6 and re.search(r"\b(?:hari|day)\b", original.get(lane[0], ""), re.I):
+            expected = list(zip(lane[1:], DAYS[:5], SHORT_DAYS))
+            present = set(labels)
+            missing = [(cell, short) for cell, day, short in expected if (cell, day) not in present]
+            if len(missing) == 1:
+                cell, short = missing[0]
+                if len(original.get(cell, "")) <= 1:
+                    original[cell] = short
+                    labels, _, _ = _day_labels(list(original.items()))
+    teaching = _teaching_cells(cells, labels, headers, day_axis)
+    skipped = _break_cells(list(original.items()), labels, day_axis)
+    candidates = [cell for cell in teaching if cell not in skipped
+                  and not NON_TEACHING.search(original.get(cell, ""))]
+    recovered = _ocr_cell_lines(image, candidates)
+    for cell, text in recovered.items():
+        before = _subject_class(original.get(cell, ""), saved_classes, compact=True)
+        after = _subject_class(text, saved_classes, compact=True)
+        if all(after) and not all(before):
+            original[cell] = text
+        elif cell not in original:
+            # Retain detected but ambiguous text so review counts include it.
+            original[cell] = text
+    return list(original.items())
+
+
 def _read_grid(texts, saved_classes):
-    labels = [(cell, DAY_LABELS[text.casefold().strip(" .:")]) for cell, text in texts
-              if text.casefold().strip(" .:") in DAY_LABELS]
-    if len({day for _, day in labels}) < 2:
+    labels, day_axis, compact = _day_labels(texts)
+    if not labels:
         return [], 0
-    x_centers = [(cell[0] + cell[2]) / 2 for cell, _ in labels]
-    y_centers = [(cell[1] + cell[3]) / 2 for cell, _ in labels]
-    day_axis = int(max(y_centers) - min(y_centers) > max(x_centers) - min(x_centers))
     time_axis = 1 - day_axis
     headers = _headers(texts, labels, time_axis, day_axis)
     if not headers:
         return [], 0
+    skipped = {cell for cell, _ in labels} | _break_cells(texts, labels, day_axis)
     entries, uncertain = [], 0
     for cell, text in texts:
-        if (text.casefold().strip(" .:") in DAY_LABELS or NON_TEACHING.search(text)
+        if (cell in skipped or NON_TEACHING.search(text)
                 or not any(c.isalpha() for c in text)):
             continue
         matching_days = [day for day_cell, day in labels
@@ -246,19 +416,32 @@ def _read_grid(texts, saved_classes):
         if not spans:
             # Count a teaching cell on the timetable band if its time heading
             # is missing. It must not disappear from the review summary.
-            if _subject_class(text, saved_classes) != ("", ""):
+            if _subject_class(text, saved_classes, compact) != ("", ""):
                 uncertain += 1
             continue
         if any(last_end != next_start for (_, last_end), (next_start, _) in zip(spans, spans[1:])):
             uncertain += 1
             continue
-        subject, class_name = _subject_class(text, saved_classes)
+        subject, class_name = _subject_class(text, saved_classes, compact)
         if not subject and not class_name:
             uncertain += 1
             continue
+        if not subject or not class_name:
+            uncertain += 1
         entries.append(dict(day=matching_days[0], start=spans[0][0], end=spans[-1][1],
                             class_name=class_name, subject=subject))
     return entries, uncertain
+
+
+def _merge_adjacent(entries):
+    merged = []
+    for row in entries:
+        if (merged and row["class_name"] and row["subject"] and merged[-1]["end"] == row["start"]
+                and all(merged[-1][key] == row[key] for key in ("day", "class_name", "subject"))):
+            merged[-1] = {**merged[-1], "end": row["end"]}
+        else:
+            merged.append(row)
+    return merged
 
 
 def read_timetable(data, saved_classes):
@@ -272,8 +455,10 @@ def read_timetable(data, saved_classes):
             cells = _grid(image)
             entries, missed = _read_grid(_cell_texts(cells, words), saved_classes)
             if (not entries or missed) and cells:
-                ocr_entries, ocr_missed = _read_grid(_cell_texts(cells, _ocr_words(image)), saved_classes)
-                if len(ocr_entries) > len(entries):
+                texts = _cell_texts(cells, _ocr_words(image))
+                texts = _recover_compact_texts(image, cells, texts, saved_classes)
+                ocr_entries, ocr_missed = _read_grid(texts, saved_classes)
+                if (len(ocr_entries), -ocr_missed) > (len(entries), -missed):
                     entries, missed = ocr_entries, ocr_missed
             uncertain += missed
             if not entries:
@@ -282,9 +467,13 @@ def read_timetable(data, saved_classes):
                 results[tuple(entry.values())] = entry
     except (fitz.FileDataError, Image.DecompressionBombError, OSError) as exc:
         raise UnreadableTimetable("Fail jadual tidak dapat dibuka. Cuba simpan semula fail.") from exc
-    if len(results) > 80:
-        raise UnreadableTimetable("Lebih daripada 80 waktu dikesan. Muat naik jadual untuk seorang guru.")
     if not results:
-        raise UnreadableTimetable("Tiada waktu dapat dibaca. Gunakan jadual yang jelas dengan tajuk hari dan masa.")
+        raise UnreadableTimetable(
+            "Tiada waktu dapat dibaca. Cuba gambar yang lebih rapat pada jadual, "
+            "atau tekan + Tambah Waktu untuk isi slot secara manual."
+        )
     entries = sorted(results.values(), key=lambda row: (DAYS.index(row["day"]), row["start"]))
+    entries = _merge_adjacent(entries)
+    if len(entries) > 80:
+        raise UnreadableTimetable("Lebih daripada 80 waktu dikesan. Muat naik jadual untuk seorang guru.")
     return {"entries": entries, "uncertain": uncertain, "unreadable_pages": unreadable_pages}
