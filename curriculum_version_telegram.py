@@ -4,6 +4,13 @@ from html import escape
 from curriculum_version_selector import KP2027, LEGACY, resolve_curriculum
 
 
+DLP = "dlp"
+PRIMARY_CURRICULA = {
+    "cv_primary_kssr": (LEGACY, "KSSR"),
+    "cv_primary_kp27": (KP2027, "KP27 (KP Baharu)"),
+    "cv_primary_dlp": (DLP, "DLP"),
+}
+
 DLP_PREVIEWS = {
     "cv_dlp_science": (
         "Science (DLP)",
@@ -34,27 +41,57 @@ def install(namespace):
     send=namespace["send"]
     subjects_by_grade=namespace["SUBJECTS_BY_GRADE"]
     subject_label=namespace["SUBJECT_LABEL"]
-    preview_subject_years=namespace.get("_CIKGULAJU_DEV_SUBJECTS_V2617", {})
+
+    def curriculum_menu(cid):
+        reset_selection(cid, None)
+        keyboard = [
+            [{"text":label, "callback_data":key}]
+            for key, (_, label) in PRIMARY_CURRICULA.items()
+        ]
+        keyboard.extend([
+            [{"text":"⬅️ Pilih Peringkat Sekolah", "callback_data":"choose_grade"}],
+            [{"text":"🏠 Menu Utama", "callback_data":"home"}],
+        ])
+        return send(cid, "🏫 <b>Sekolah Rendah</b>\n\nPilih kurikulum.", keyboard)
 
     def year(cid, level):
         if str(level).lower() != "primary" or not _rph_flow(state.get(cid, {})):
             return previous_year(cid, level)
-        keyboard = [
-            [{"text":"Tahun 1 (KP Baharu)", "callback_data":"cv_year1_kp"},
-             {"text":"Tahun 1 (KSSR)", "callback_data":"year_1"}],
-            *[[{"text":f"Tahun {n}", "callback_data":f"year_{n}"} for n in row]
-              for row in ((2, 3), (4, 5), (6,))],
-            [{"text":"⬅️ Pilih Peringkat Sekolah", "callback_data":"choose_grade"}],
-            [{"text":"🏠 Menu Utama", "callback_data":"home"}],
-        ]
-        return send(cid, "🏫 <b>Sekolah Rendah</b>\n\nPilih Tahun:", keyboard)
+        return curriculum_menu(cid)
+
+    def reset_selection(cid, version):
+        st = state.get(cid, {})
+        # Drop stale lesson, standards and pending generation when switching stream.
+        fresh = {key: st[key] for key in ("task", "quick_material_flow", "rph_mode", "_cid") if key in st}
+        if version is not None:
+            fresh["curriculum_version"] = version
+        state[cid] = fresh
+        return fresh
+
+    def primary_years(cid, version, label):
+        if version == LEGACY:
+            keyboard = [
+                [{"text":f"Tahun {n}", "callback_data":f"year_{n}"} for n in row]
+                for row in ((1, 2), (3, 4), (5, 6))
+            ]
+        elif version == KP2027:
+            keyboard = [[{"text":"Tahun 1 (KP Baharu)", "callback_data":"cv_year1_kp"}]]
+        else:
+            keyboard = [[{"text":"Tahun 2", "callback_data":"cv_year2_dlp"}]]
+        keyboard.extend([[{"text":"⬅️ Pilih Kurikulum", "callback_data":"level_primary"}],
+                         [{"text":"🏠 Menu Utama", "callback_data":"home"}]])
+        return send(cid, f"📚 <b>{label}</b>\n\nPilih tahun.", keyboard)
 
     def choose_year_one_preview(cid):
-        st = state.get(cid, {})
-        # Discard any earlier Lesson/standard/pending generation selection.
-        state[cid] = {key: st[key] for key in ("task", "quick_material_flow", "rph_mode", "_cid") if key in st}
-        state[cid].update(year="Tahun 1", curriculum_version=KP2027)
+        reset_selection(cid, KP2027)["year"] = "Tahun 1"
         return subjects(cid, "Tahun 1")
+
+    def dlp_subjects(cid):
+        keyboard = [[{"text":preview[0]+" — Akan Datang", "callback_data":key}]
+                    for key, preview in DLP_PREVIEWS.items()]
+        keyboard.extend([[{"text":"⬅️ Pilih Tahun", "callback_data":"cv_primary_dlp"}],
+                         [{"text":"🏠 Menu Utama", "callback_data":"home"}]])
+        return send(cid, "📘 <b>DLP · Tahun 2</b>\n\nPilih subjek untuk lihat pratonton.", keyboard)
 
     def choose(cid,label):
         st=state.setdefault(cid,{})
@@ -71,6 +108,8 @@ def install(namespace):
             [{"text":"⬅️ Tahun/Tingkatan","callback_data":"choose_grade"}]])
     def subjects(cid,label):
         st=state.setdefault(cid,{})
+        if st.get("curriculum_version") == DLP:
+            return dlp_subjects(cid) if label == "Tahun 2" else primary_years(cid, DLP, "DLP")
         result=resolve_curriculum(st.get("curriculum_version"),label,st.get("subject"))
         if st.get("curriculum_version")==KP2027 and label in ("Tahun 1", "Tingkatan 1"):
             # Display candidate subjects only; never route into legacy SK/SP.
@@ -91,28 +130,28 @@ def install(namespace):
                         "Bahan Kurikulum Persekolahan 2027 sedang disemak. Janaan RPH berstatus Akan Datang.",kb)
         if not result["enabled"]:
             return send(cid,"⏳ KP2027 belum tersedia.",[[{"text":"⬅️ Tukar Kurikulum","callback_data":"cv_choose"}]])
-        if label == "Tahun 2" and _rph_flow(st):
-            st["year"] = label
-            existing = list(subjects_by_grade.get(label, ()))
-            buttons = [{"text":subject_label.get(sub,sub), "callback_data":"sub_"+sub} for sub in existing]
-            buttons.extend(
-                {"text":name+" — Akan Datang", "callback_data":"devsub2617_"+name}
-                for name, years in preview_subject_years.items() if 2 in years and name not in existing
-            )
-            keyboard = [buttons[i:i+2] for i in range(0,len(buttons),2)]
-            keyboard.extend([{"text":preview[0]+" — Akan Datang", "callback_data":key}]
-                            for key, preview in DLP_PREVIEWS.items())
-            keyboard.extend([[{"text":"⬅️ Pilih Tahun", "callback_data":"level_primary"}],
-                             [{"text":"🏠 Menu Utama", "callback_data":"home"}]])
-            return send(cid,"📘 <b>Tahun 2</b>\n\nPilih subjek.",keyboard)
         return previous_subjects(cid,label)
 
     def callback(cid,d):
         st=state.setdefault(cid,{})
+        version = st.get("curriculum_version")
+        if d in PRIMARY_CURRICULA:
+            if not _rph_flow(st):
+                return year(cid, "primary")
+            version, label = PRIMARY_CURRICULA[d]
+            reset_selection(cid, version)
+            return primary_years(cid, version, label)
         if d == "cv_year1_kp":
-            return choose_year_one_preview(cid) if _rph_flow(st) else year(cid, "primary")
+            if _rph_flow(st) and version == KP2027:
+                return choose_year_one_preview(cid)
+            return year(cid, "primary")
+        if d == "cv_year2_dlp":
+            if _rph_flow(st) and version == DLP:
+                reset_selection(cid, DLP)["year"] = "Tahun 2"
+                return dlp_subjects(cid)
+            return year(cid, "primary")
         if d in DLP_PREVIEWS:
-            if not (_rph_flow(st) and st.get("year") == "Tahun 2" and st.get("curriculum_version") == LEGACY):
+            if not (_rph_flow(st) and st.get("year") == "Tahun 2" and version == DLP):
                 return year(cid, "primary")
             name, topic, standards, objective, books = DLP_PREVIEWS[d]
             return send(cid, f"<b>{name} · Year 2</b>\n{topic}\n{standards}\n\n{objective}\n{books}\n\n"
@@ -120,6 +159,8 @@ def install(namespace):
                         [[{"text":"⬅️ Pilih Subjek", "callback_data":"back_subjects"}],
                          [{"text":"🏠 Menu Utama", "callback_data":"home"}]])
         if d.startswith("year_"):
+            if _rph_flow(st) and version != LEGACY:
+                return curriculum_menu(cid)
             return choose(cid,"Tahun "+d[5:])
         if d.startswith("form_"):
             return choose(cid,"Tingkatan "+d[5:])
@@ -127,8 +168,13 @@ def install(namespace):
             label = st.get("year","Tahun 1")
             if label=="Tingkatan 1" or not _rph_flow(st):
                 return choose(cid,label)
-            return year(cid,"primary")
+            if version == KP2027:
+                reset_selection(cid, KP2027)
+                return primary_years(cid, KP2027, "KP27 (KP Baharu)")
+            return curriculum_menu(cid)
         if d in ("cv_existing","cv_kp2027"):
+            if _rph_flow(st) and st.get("year") != "Tingkatan 1":
+                return callback(cid, "cv_primary_kssr" if d=="cv_existing" else "cv_primary_kp27")
             if d=="cv_kp2027" and st.get("year","Tahun 1")=="Tahun 1":
                 return choose_year_one_preview(cid)
             st["curriculum_version"]=LEGACY if d=="cv_existing" else KP2027
@@ -148,6 +194,8 @@ def install(namespace):
                         [{"text":"⬅️ Senarai Subjek KP Baharu","callback_data":"cv_subjects"}],
                         [{"text":"🏠 Menu Utama","callback_data":"home"}]])
         if d=="cv_preview":
+            if version != KP2027 or not st.get("year"):
+                return year(cid, "primary")
             label=st.get("year","Tahun 1")
             return send(cid,
                 "📖 <b>"+escape(label)+" (KP Baharu)</b>\n\n"
@@ -163,10 +211,16 @@ def install(namespace):
                 [{"text":"📚 Lihat Subjek KP2027","callback_data":"cv_subjects"}],
                 [{"text":"🏠 Menu Utama","callback_data":"home"}]])
         if d=="cv_subjects":
-            return subjects(cid,st.get("year","Tahun 1"))
-        if st.get("curriculum_version")==KP2027 and (
+            if version != KP2027 or not st.get("year"):
+                return year(cid, "primary")
+            return subjects(cid,st["year"])
+        if d=="back_subjects" and version in (KP2027, DLP) and st.get("year"):
+            return subjects(cid,st["year"])
+        if version in (KP2027, DLP) and (
                 d.startswith(("sub_", "topic_", "st3|", "matpick2528|")) or d=="matsubmit2528"):
-            return subjects(cid,st.get("year","Tahun 1"))
+            if not st.get("year"):
+                return primary_years(cid, version, "KP27 (KP Baharu)" if version == KP2027 else "DLP")
+            return subjects(cid,st["year"])
         return previous_callback(cid,d)
     namespace["year"]=year
     namespace["subjects"]=subjects
