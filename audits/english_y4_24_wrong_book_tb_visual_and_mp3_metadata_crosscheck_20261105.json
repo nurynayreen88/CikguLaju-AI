@@ -1,0 +1,351 @@
+{
+  "date": "2026-11-05",
+  "scope": "English Year 4: exact 24 historical wrong-textbook WMA route rows across 19 Lessons",
+  "source": {
+    "title": "Get Smart Plus 4 Teacher's Book.pdf",
+    "google_drive_file_id": "1lBWc96e8DCIMSdxzRuLC7CissHL52q8v",
+    "page_image_review": "Scanned original teacher pages, visually inspected; page numbers recorded below"
+  },
+  "drive_listing_verification": {
+    "status": "VERIFIED_METADATA_ONLY",
+    "class_cd1_folder": {
+      "id": "172V689kqHh3AY787suKI4Teug3PjSj5_",
+      "name": "Get Smart Plus 4 Class CD 1 (12-11-2019 3-30-32 PM)",
+      "listed_files": 88
+    },
+    "class_cd2_folder": {
+      "id": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR",
+      "name": "Get Smart Plus 4 Class CD 2(12-11-2019 3-45-38 PM)",
+      "listed_files": 88
+    },
+    "candidate_route_rows_matched_filename_size_id_mime_folder": 24,
+    "unique_mp3_files": 22,
+    "metadata_mismatches": 0
+  },
+  "source_checks": [
+    {
+      "lesson": 7,
+      "teacher_book_printed_page": 21,
+      "teacher_book_pdf_page": 7,
+      "book_required_tracks": [
+        "CD1 Track 9"
+      ],
+      "legacy_wma_tracks": [
+        "CD1 Track 9"
+      ],
+      "legacy_tracks_not_for_this_lesson": [],
+      "source_verification": "VISUALLY_CHECKED_ORIGINAL_TEACHERS_BOOK_PAGE",
+      "audio_content_verified": false,
+      "telegram_delivery_verified": false
+    },
+    {
+      "lesson": 8,
+      "teacher_book_printed_page": 22,
+      "teacher_book_pdf_page": 8,
+      "book_required_tracks": [
+        "CD1 Track 11"
+      ],
+      "legacy_wma_tracks": [
+        "CD1 Track 11"
+      ],
+      "legacy_tracks_not_for_this_lesson": [],
+      "source_verification": "VISUALLY_CHECKED_ORIGINAL_TEACHERS_BOOK_PAGE",
+      "audio_content_verified": false,
+      "telegram_delivery_verified": false
+    },
+    {
+      "lesson": 9,
+      "teacher_book_printed_page": 23,
+      "teacher_book_pdf_page": 9,
+      "book_required_tracks": [
+        "CD1 Track 12",
+        "CD1 Track 13"
+      ],
+      "legacy_wma_tracks": [
+        "CD1 Track 12",
+        "CD1 Track 13"
+      ],
+      "legacy_tracks_not_for_this_lesson": [],
+      "source_verification": "VISUALLY_CHECKED_ORIGINAL_TEACHERS_BOOK_PAGE",
+      "audio_content_verified": false,
+      "telegram_delivery_verified": false
+    },
+    {
+      "lesson": 11,
+      "teacher_book_printed_page": 28,
+      "teacher_book_pdf_page": 14,
+      "book_required_tracks": [
+        "CD1 Track 16"
+      ],
+      "legacy_wma_tracks": [
+        "CD1 Track 16"
+      ],
+      "legacy_tracks_not_for_this_lesson": [],
+      "source_verification": "VISUALLY_CHECKED_ORIGINAL_TEACHERS_BOOK_PAGE",
+      "audio_content_verified": false,
+      "telegram_delivery_verified": false
+    },
+    {
+      "lesson": 12,
+      "teacher_book_printed_page": 30,
+      "teacher_book_pdf_page": 16,
+      "book_required_tracks": [
+        "CD1 Track 17"
+      ],
+      "legacy_wma_tracks": [
+        "CD1 Track 17"
+      ],
+      "legacy_tracks_not_for_this_lesson": [],
+      "source_verification": "VISUALLY_CHECKED_ORIGINAL_TEACHERS_BOOK_PAGE",
+      "audio_content_verified": false,
+      "telegram_delivery_verified": false
+    },
+    {
+      "lesson": 17,
+      "teacher_book_printed_page": 32,
+      "teacher_book_pdf_page": 18,
+      "book_required_tracks": [
+        "CD1 Track 19"
+      ],
+      "legacy_wma_tracks": [
+        "CD1 Track 19"
+      ],
+      "legacy_tracks_not_for_this_lesson": [],
+      "source_verification": "VISUALLY_CHECKED_ORIGINAL_TEACHERS_BOOK_PAGE",
+      "audio_content_verified": false,
+      "telegram_delivery_verified": false
+    },
+    {
+      "lesson": 22,
+      "teacher_book_printed_page": 34,
+      "teacher_book_pdf_page": 20,
+      "book_required_tracks": [
+        "CD1 Track 22"
+      ],
+      "legacy_wma_tracks": [
+        "CD1 Track 22"
+      ],
+      "legacy_tracks_not_for_this_lesson": [],
+      "source_verification": "VISUALLY_CHECKED_ORIGINAL_TEACHERS_BOOK_PAGE",
+      "audio_content_verified": false,
+      "telegram_delivery_verified": false
+    },
+    {
+      "lesson": 24,
+      "teacher_book_printed_page": 36,
+      "teacher_book_pdf_page": 22,
+      "book_required_tracks": [
+        "CD1 Track 25"
+      ],
+      "legacy_wma_tracks": [
+        "CD1 Track 25"
+      ],
+      "legacy_tracks_not_for_this_lesson": [],
+      "source_verification": "VISUALLY_CHECKED_ORIGINAL_TEACHERS_BOOK_PAGE",
+      "audio_content_verified": false,
+      "telegram_delivery_verified": false
+    },
+    {
+      "lesson": 29,
+      "teacher_book_printed_page": 193,
+      "teacher_book_pdf_page": 178,
+      "book_required_tracks": [
+        "CD3 Track 35",
+        "CD3 Track 36"
+      ],
+      "legacy_wma_tracks": [
+        "CD1 Track 35",
+        "CD1 Track 36"
+      ],
+      "legacy_tracks_not_for_this_lesson": [
+        "CD1 Track 35",
+        "CD1 Track 36"
+      ],
+      "source_verification": "VISUALLY_CHECKED_ORIGINAL_TEACHERS_BOOK_PAGE",
+      "audio_content_verified": false,
+      "telegram_delivery_verified": false
+    },
+    {
+      "lesson": 32,
+      "teacher_book_printed_page": 46,
+      "teacher_book_pdf_page": 32,
+      "book_required_tracks": [
+        "CD1 Track 35"
+      ],
+      "legacy_wma_tracks": [
+        "CD1 Track 35"
+      ],
+      "legacy_tracks_not_for_this_lesson": [],
+      "source_verification": "VISUALLY_CHECKED_ORIGINAL_TEACHERS_BOOK_PAGE",
+      "audio_content_verified": false,
+      "telegram_delivery_verified": false
+    },
+    {
+      "lesson": 48,
+      "teacher_book_printed_page": 60,
+      "teacher_book_pdf_page": 46,
+      "book_required_tracks": [
+        "CD1 Track 51"
+      ],
+      "legacy_wma_tracks": [
+        "CD1 Track 51"
+      ],
+      "legacy_tracks_not_for_this_lesson": [],
+      "source_verification": "VISUALLY_CHECKED_ORIGINAL_TEACHERS_BOOK_PAGE",
+      "audio_content_verified": false,
+      "telegram_delivery_verified": false
+    },
+    {
+      "lesson": 59,
+      "teacher_book_printed_page": 67,
+      "teacher_book_pdf_page": 53,
+      "book_required_tracks": [
+        "CD1 Track 61"
+      ],
+      "legacy_wma_tracks": [
+        "CD1 Track 61"
+      ],
+      "legacy_tracks_not_for_this_lesson": [],
+      "source_verification": "VISUALLY_CHECKED_ORIGINAL_TEACHERS_BOOK_PAGE",
+      "audio_content_verified": false,
+      "telegram_delivery_verified": false
+    },
+    {
+      "lesson": 97,
+      "teacher_book_printed_page": 108,
+      "teacher_book_pdf_page": 94,
+      "book_required_tracks": [
+        "CD2 Track 21"
+      ],
+      "legacy_wma_tracks": [
+        "CD2 Track 21"
+      ],
+      "legacy_tracks_not_for_this_lesson": [],
+      "source_verification": "VISUALLY_CHECKED_ORIGINAL_TEACHERS_BOOK_PAGE",
+      "audio_content_verified": false,
+      "telegram_delivery_verified": false
+    },
+    {
+      "lesson": 98,
+      "teacher_book_printed_page": 108,
+      "teacher_book_pdf_page": 94,
+      "book_required_tracks": [
+        "CD2 Track 21",
+        "CD2 Track 22"
+      ],
+      "legacy_wma_tracks": [
+        "CD2 Track 21",
+        "CD2 Track 22"
+      ],
+      "legacy_tracks_not_for_this_lesson": [],
+      "source_verification": "VISUALLY_CHECKED_ORIGINAL_TEACHERS_BOOK_PAGE",
+      "audio_content_verified": false,
+      "telegram_delivery_verified": false
+    },
+    {
+      "lesson": 99,
+      "teacher_book_printed_page": 110,
+      "teacher_book_pdf_page": 96,
+      "book_required_tracks": [
+        "CD2 Track 24"
+      ],
+      "legacy_wma_tracks": [
+        "CD2 Track 24"
+      ],
+      "legacy_tracks_not_for_this_lesson": [],
+      "source_verification": "VISUALLY_CHECKED_ORIGINAL_TEACHERS_BOOK_PAGE",
+      "audio_content_verified": false,
+      "telegram_delivery_verified": false
+    },
+    {
+      "lesson": 102,
+      "teacher_book_printed_page": 111,
+      "teacher_book_pdf_page": 97,
+      "book_required_tracks": [
+        "CD2 Track 25"
+      ],
+      "legacy_wma_tracks": [
+        "CD2 Track 25"
+      ],
+      "legacy_tracks_not_for_this_lesson": [],
+      "source_verification": "VISUALLY_CHECKED_ORIGINAL_TEACHERS_BOOK_PAGE",
+      "audio_content_verified": false,
+      "telegram_delivery_verified": false
+    },
+    {
+      "lesson": 103,
+      "teacher_book_printed_page": 111,
+      "teacher_book_pdf_page": 97,
+      "book_required_tracks": [
+        "CD2 Track 26"
+      ],
+      "legacy_wma_tracks": [
+        "CD2 Track 26",
+        "CD2 Track 27",
+        "CD2 Track 28"
+      ],
+      "legacy_tracks_not_for_this_lesson": [
+        "CD2 Track 27",
+        "CD2 Track 28"
+      ],
+      "source_verification": "VISUALLY_CHECKED_ORIGINAL_TEACHERS_BOOK_PAGE",
+      "audio_content_verified": false,
+      "telegram_delivery_verified": false
+    },
+    {
+      "lesson": 107,
+      "teacher_book_printed_page": 118,
+      "teacher_book_pdf_page": 104,
+      "book_required_tracks": [
+        "CD2 Track 32"
+      ],
+      "legacy_wma_tracks": [
+        "CD2 Track 32"
+      ],
+      "legacy_tracks_not_for_this_lesson": [],
+      "source_verification": "VISUALLY_CHECKED_ORIGINAL_TEACHERS_BOOK_PAGE",
+      "audio_content_verified": false,
+      "telegram_delivery_verified": false
+    },
+    {
+      "lesson": 110,
+      "teacher_book_printed_page": 115,
+      "teacher_book_pdf_page": 101,
+      "book_required_tracks": [
+        "CD2 Track 31"
+      ],
+      "legacy_wma_tracks": [
+        "CD2 Track 31"
+      ],
+      "legacy_tracks_not_for_this_lesson": [],
+      "source_verification": "VISUALLY_CHECKED_ORIGINAL_TEACHERS_BOOK_PAGE",
+      "audio_content_verified": false,
+      "telegram_delivery_verified": false
+    }
+  ],
+  "additional_confirmed_crosslesson": {
+    "lesson": 104,
+    "teacher_book_printed_page": 112,
+    "teacher_book_pdf_page": 98,
+    "book_required_tracks": [
+      "CD2 Track 27",
+      "CD2 Track 28"
+    ],
+    "legacy_103_extras_not_approved_for_delivery": true
+  },
+  "totals": {
+    "legacy_wma_routes": 24,
+    "source_page_checked_lessons": 19,
+    "source_check_rows": 19,
+    "wrong_disc_l29_routes": 2,
+    "wrong_lesson_l103_routes": 2,
+    "all_other_legacy_wma_routes_match_printed_disc_track": 20
+  },
+  "release_status": "AUDIT_ONLY_KEEP_24_WRONG_BOOK_WMA_HELD_CANDIDATE_MP3_UNAPPROVED",
+  "limitations": [
+    "TB page and activity names checked visually, not the actual 22 MP3 spoken recordings",
+    "24 candidate route rows are not 24 distinct audio recordings",
+    "Audio waveform, playback, teacher authenticated Telegram access, callback handling and user-visible delivery not tested",
+    "No main, production, user database, credits, payments or other subjects changed"
+  ]
+}

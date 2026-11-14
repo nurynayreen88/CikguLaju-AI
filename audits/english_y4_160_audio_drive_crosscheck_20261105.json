@@ -1,0 +1,3353 @@
+{
+  "date": "2026-11-05",
+  "status": "AUDIT_ONLY_NOT_RELEASE_APPROVAL",
+  "origin_commit": "019720a85a203e75881403b5bda5c86c6119676e",
+  "coverage": {
+    "sow_lessons": 160,
+    "sow_lessons_mentioning_tracks": 65,
+    "legacy_map_v25259_lessons": 56,
+    "legacy_map_v25259_audio_references": 69,
+    "canonical_folders": {
+      "CD1_MP3": {
+        "folderId": "172V689kqHh3AY787suKI4Teug3PjSj5_",
+        "file_count": 88
+      },
+      "CD2_MP3": {
+        "folderId": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR",
+        "file_count": 88
+      },
+      "CD3_MP3": {
+        "folderId": "1DkVeV-LrGxF05bs7krvc6a1UJS5FKU5u",
+        "file_count": 44
+      },
+      "CD1_WMA": {
+        "folderId": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50",
+        "file_count": 72
+      },
+      "CD2_WMA": {
+        "folderId": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv",
+        "file_count": 51
+      }
+    },
+    "matched_drive_refs": 69,
+    "legacy_wma_refs": 24,
+    "legacy_mp3_refs": 45,
+    "missing_media_for_sow_audio_lessons": 9,
+    "flag_occurrences": {
+      "WMA_SOURCE_WITH_LEGACY_MP3_SENDER": 24,
+      "TB_P193_CONFIRMS_CD3_NOT_CD1": 2,
+      "TB_P39_AND_USER_CONFIRM_CD1_NOT_CD2": 1,
+      "TRACK_NOT_LISTED_IN_THIS_SOW_LESSON": 2,
+      "SOW_ASSIGNMENT_IS_LESSON_104": 2
+    },
+    "wrong_textbook_super_minds1_year4_audio_references": 24
+  },
+  "known_teacher_book_checks": {
+    "29": {
+      "TB_page": 193,
+      "SB_page": 129,
+      "CD": "CD3",
+      "tracks": [
+        35,
+        36
+      ],
+      "status": "VISUALLY_CHECKED_SOURCE_ONLY"
+    },
+    "30": {
+      "TB_page": 39,
+      "SB_page": 20,
+      "CD": "CD1",
+      "tracks": [
+        29
+      ],
+      "status": "USER_CONFIRMED_TB_SOURCE_ONLY"
+    },
+    "103": {
+      "sow_track": [
+        26
+      ],
+      "wrong_legacy_extra_tracks": [
+        27,
+        28
+      ],
+      "next_lesson": 104,
+      "status": "SOW_CROSSCHECKED"
+    },
+    "104": {
+      "sow_tracks": [
+        27,
+        28
+      ],
+      "legacy_route_missing": true,
+      "status": "SOW_CROSSCHECKED"
+    }
+  },
+  "warnings": [
+    "24 legacy references are source WMA; old sender downloads as mp3 without conversion (playback not proven).",
+    "SOW compatibility is not independent TB verification; all 160 need activity-level TB/SB/media signoff before blanket FINAL READY.",
+    "Historical v25.257/258/259 maps may all be reachable from older callback closures; do not patch only the last map.",
+    "CD3 material can legitimately appear early for CLIL/phonics, so monotonic disc sequence is a heuristic only.",
+    "ESCALATION: all 24 WMA paths are in Super Minds 1 Audio Unzipped/CD1 or CD2, not Get Smart Plus 4. Treat as wrong-textbook source provenance and hold; file rename/conversion is not sufficient."
+  ],
+  "missing_legacy_media_for_sow_audio_lessons": [
+    {
+      "lesson": 13,
+      "tracks": [
+        "Track 15"
+      ]
+    },
+    {
+      "lesson": 20,
+      "tracks": [
+        "Track 22"
+      ]
+    },
+    {
+      "lesson": 65,
+      "tracks": [
+        "Track 70",
+        "Track 71"
+      ]
+    },
+    {
+      "lesson": 66,
+      "tracks": [
+        "CD1 Track 72"
+      ]
+    },
+    {
+      "lesson": 68,
+      "tracks": [
+        "CD1 Track 75",
+        "CD1 Track 76"
+      ]
+    },
+    {
+      "lesson": 70,
+      "tracks": [
+        "CD1 Track 77",
+        "CD1 Track 79"
+      ]
+    },
+    {
+      "lesson": 76,
+      "tracks": [
+        "CD1 Track 81"
+      ]
+    },
+    {
+      "lesson": 104,
+      "tracks": [
+        "Track 27",
+        "Track 28"
+      ]
+    },
+    {
+      "lesson": 139,
+      "tracks": [
+        "Track 60"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "lesson": 1,
+      "focus": "Listening 1",
+      "topic": "Where are you from?",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 3,
+          "source_excerpt": "instructions in Teacher’s Book for Activity 1 (CD 1 - Track 3). Pupils sing or say the word"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 1,
+          "declared_disc": 1,
+          "declared_track": 3,
+          "legacy_file_id": "1Y1dlDrMq6ufg-t5pcH_6HY3ZeMtIBLKG",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 3,
+            "file_name": "03 Track 3.mp3",
+            "size_bytes": 1119889,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 2,
+      "focus": "Speaking 1",
+      "topic": "Where are you from?",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 3,
+          "source_excerpt": "Post-lesson 6. Play the song from Activity 1 (CD 1 - Track 3) and have pupils sing along or"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 2,
+          "declared_disc": 1,
+          "declared_track": 3,
+          "legacy_file_id": "1Y1dlDrMq6ufg-t5pcH_6HY3ZeMtIBLKG",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 3,
+            "file_name": "03 Track 3.mp3",
+            "size_bytes": 1119889,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 3,
+      "focus": "Reading 1",
+      "topic": "Where are you from?",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 6,
+          "source_excerpt": "instructions in Teacher’s book for Vocabulary (CD1 – Track 6). 3. Show pupils the picture o"
+        },
+        {
+          "disc": 1,
+          "track": 7,
+          "source_excerpt": "instructions in Teacher’s Book for Activity 1 (CD1 – Track 7). (If time allows, teachers co"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 3,
+          "declared_disc": 1,
+          "declared_track": 6,
+          "legacy_file_id": "1aO3GiFYO_BjrXoQJ5FUEPtPv25ePBBK0",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 6,
+            "file_name": "06 Track 6.mp3",
+            "size_bytes": 630331,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        },
+        {
+          "lesson": 3,
+          "declared_disc": 1,
+          "declared_track": 7,
+          "legacy_file_id": "1EU9K4YZb-G70sZMi4Qy1tLwx6goraXfq",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 7,
+            "file_name": "07 Track 7.mp3",
+            "size_bytes": 1216633,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 4,
+      "focus": "Writing 1",
+      "topic": "Where are you from?",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 5,
+      "focus": "Language Arts 1",
+      "topic": "Holiday Memories (Poem)",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 6,
+      "focus": "Listening 2",
+      "topic": "Where are you from?",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 8,
+          "source_excerpt": "lities. 3. Follow instructions for Activity 4 (CD 1 -Track 8) in the Teacher’s Book. Note:"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 6,
+          "declared_disc": 1,
+          "declared_track": 8,
+          "legacy_file_id": "18VcHZ2_hDYeHFBcWXwJpQDdyd1mrh_UA",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 8,
+            "file_name": "08 Track 8.mp3",
+            "size_bytes": 1254997,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 7,
+      "focus": "Speaking 2",
+      "topic": "Where are you from?",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 9,
+          "source_excerpt": "y made in previous lesson(s). 4. Play the CD (Track 9) and ask pupils to listen and f"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 7,
+          "declared_disc": 1,
+          "declared_track": 9,
+          "legacy_file_id": "1FWD8yWIYH8qw0qgXRsjLgpcakl-FV5Jd",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "WMA",
+            "track": 9,
+            "file_name": "CD1-09.wma",
+            "size_bytes": 792402,
+            "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        }
+      ]
+    },
+    {
+      "lesson": 8,
+      "focus": "Reading 2",
+      "topic": "Where are you from?",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 11,
+          "source_excerpt": "rink). 4. Follow instructions for Activity 1 (Track 11) in Teacher’s Book (page 22)."
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 8,
+          "declared_disc": 1,
+          "declared_track": 11,
+          "legacy_file_id": "1vf0CXmq7XumG9aAa_tglZ_haghztiG9G",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "WMA",
+            "track": 11,
+            "file_name": "CD1-11.wma",
+            "size_bytes": 511530,
+            "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        }
+      ]
+    },
+    {
+      "lesson": 9,
+      "focus": "Writing 2",
+      "topic": "Where are you from?",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 12,
+          "source_excerpt": "ssary. 4. Follow instructions for Activity 3 (Track 12) in Teacher’s Book (page 23)."
+        },
+        {
+          "disc": null,
+          "track": 13,
+          "source_excerpt": "essary. 5. Follow instructions for Activity 4 (Track 13) in Teacher’s Book (page 23)."
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 9,
+          "declared_disc": 1,
+          "declared_track": 12,
+          "legacy_file_id": "1eaoHB3Mv1yZWj53KaVJNY_9q7M3ag3C1",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "WMA",
+            "track": 12,
+            "file_name": "CD1-12.wma",
+            "size_bytes": 1820274,
+            "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        },
+        {
+          "lesson": 9,
+          "declared_disc": 1,
+          "declared_track": 13,
+          "legacy_file_id": "1XHx5n_Ajd8uhnm-0kV7TzGcOu510_WBH",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "WMA",
+            "track": 13,
+            "file_name": "CD1-13.wma",
+            "size_bytes": 911922,
+            "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        }
+      ]
+    },
+    {
+      "lesson": 10,
+      "focus": "Language Arts 2",
+      "topic": "At the Playground (Poem)",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 11,
+      "focus": "Listening 3",
+      "topic": "Where are you from?",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 16,
+          "source_excerpt": "which order the pictures go in. Play the CD (Track 16). 5. Check pupils’ answers and"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 11,
+          "declared_disc": 1,
+          "declared_track": 16,
+          "legacy_file_id": "1OzT7ZXRtOKwNBcQ9kYcHHjT2o_X8uOqa",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "WMA",
+            "track": 16,
+            "file_name": "CD1-16.wma",
+            "size_bytes": 911922,
+            "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        }
+      ]
+    },
+    {
+      "lesson": 12,
+      "focus": "Speaking 3",
+      "topic": "Where are you from?",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 17,
+          "source_excerpt": "30) 3. Follow the instructions for Activity 1 (Track 17) in the Teacher’s Book (page 30"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 12,
+          "declared_disc": 1,
+          "declared_track": 17,
+          "legacy_file_id": "1f083A06NlIo0NkZqbRH_XM_OkobuU4oY",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "WMA",
+            "track": 17,
+            "file_name": "CD1-17.wma",
+            "size_bytes": 1336218,
+            "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        }
+      ]
+    },
+    {
+      "lesson": 13,
+      "focus": "Reading 3",
+      "topic": "Where are you from?",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 15,
+          "source_excerpt": "e). 4. Follow the instructions for Activity 1 (Track 15) & Activity 2 in Teacher’s Book"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 14,
+      "focus": "Writing 3",
+      "topic": "Where are you from?",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 15,
+      "focus": "Language Arts 3",
+      "topic": "Sounds like Magic (Poem)",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 16,
+      "focus": "Language Awareness 1",
+      "topic": "Where are you from?",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 17,
+      "focus": "Listening 4",
+      "topic": "My Week",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 19,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 1 (Track 19). Note: The focus of this less"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 17,
+          "declared_disc": 1,
+          "declared_track": 19,
+          "legacy_file_id": "1J7bjab5zvMHsf8nn_HM7dzDZb3wrNJAl",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "WMA",
+            "track": 19,
+            "file_name": "CD1-19.wma",
+            "size_bytes": 840210,
+            "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        }
+      ]
+    },
+    {
+      "lesson": 18,
+      "focus": "Speaking 4",
+      "topic": "My Week",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 19,
+      "focus": "Reading 4",
+      "topic": "My Week",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 20,
+      "focus": "Writing 4",
+      "topic": "My Week",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 22,
+          "source_excerpt": "e story and follow instructions for Activity 1 (Track 22). 3. Focus on specific unders"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 21,
+      "focus": "Language Arts 4",
+      "topic": "Grandma’s House (Poem)",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 22,
+      "focus": "Listening 5",
+      "topic": "My Week",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 22,
+          "source_excerpt": "delivery 2. Review the story from Activity 1 (Track 22) by asking pupils to listen a"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 22,
+          "declared_disc": 1,
+          "declared_track": 22,
+          "legacy_file_id": "1bOffmpd3jucdHKNaKleJpZB7nl9HDCVY",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "WMA",
+            "track": 22,
+            "file_name": "CD1-22.wma",
+            "size_bytes": 475674,
+            "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        }
+      ]
+    },
+    {
+      "lesson": 23,
+      "focus": "Speaking 5",
+      "topic": "My Week",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 24,
+      "focus": "Reading 5",
+      "topic": "My Week",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 25,
+          "source_excerpt": "Teacher’s Book. Have pupils read and listen (Track 25) to the text. 4. Ask pupils to"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 24,
+          "declared_disc": 1,
+          "declared_track": 25,
+          "legacy_file_id": "12AuYsXvPu1BUI6BCUVTX67EPQzRxYadW",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "WMA",
+            "track": 25,
+            "file_name": "CD1-25.wma",
+            "size_bytes": 1515498,
+            "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        }
+      ]
+    },
+    {
+      "lesson": 25,
+      "focus": "Writing 5",
+      "topic": "My Week",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 26,
+      "focus": "Language Arts 5",
+      "topic": "Clap your hands (Poem)",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 27,
+      "focus": "Listening 6",
+      "topic": "My Week",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 26,
+          "source_excerpt": "tivity. 4. Follow instructions for Activity 3 (CD1, Track 26) in the Teacher’s Book. 5. Bas"
+        },
+        {
+          "disc": 1,
+          "track": 37,
+          "source_excerpt": "in the Teacher’s Book. 5. Based on Activity 4 (CD1, Track 37), have pupils ask and answer ab"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 27,
+          "declared_disc": 1,
+          "declared_track": 26,
+          "legacy_file_id": "1E4fh0O6fP-LesC4GC6-sG6GTFYYZP3r0",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 26,
+            "file_name": "26 Track 26.mp3",
+            "size_bytes": 855928,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        },
+        {
+          "lesson": 27,
+          "declared_disc": 1,
+          "declared_track": 37,
+          "legacy_file_id": "1jDroe7ZuZru_FeHvGJGYccCbzPmC90q3",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 37,
+            "file_name": "37 Track 37.mp3",
+            "size_bytes": 132433,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 28,
+      "focus": "Speaking 6",
+      "topic": "My Week",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 29,
+      "focus": "Reading 6",
+      "topic": "Social Studies (CLIL 1)",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 35,
+          "source_excerpt": "ge. 6. Follow the Lesson plan (Steps: Warm up (Track 35, listen & repeat), Vocabulary,"
+        },
+        {
+          "disc": null,
+          "track": 36,
+          "source_excerpt": "35, listen & repeat), Vocabulary, Activity 1 (Track 36) and Activity 2 in the Teacher’"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 29,
+          "declared_disc": 1,
+          "declared_track": 35,
+          "legacy_file_id": "1BJFfffgxHyiYohapgypE2C212W3177mt",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "WMA",
+            "track": 35,
+            "file_name": "CD1-35.wma",
+            "size_bytes": 1354146,
+            "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "TB_P193_CONFIRMS_CD3_NOT_CD1",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        },
+        {
+          "lesson": 29,
+          "declared_disc": 1,
+          "declared_track": 36,
+          "legacy_file_id": "18EUpIGuG87WIzjYifdnPWjXf6OZl41F3",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "WMA",
+            "track": 36,
+            "file_name": "CD1-36.wma",
+            "size_bytes": 403962,
+            "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "TB_P193_CONFIRMS_CD3_NOT_CD1",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        }
+      ]
+    },
+    {
+      "lesson": 30,
+      "focus": "Writing 6",
+      "topic": "My Week",
+      "sow_track_references": [
+        {
+          "disc": 2,
+          "track": 29,
+          "source_excerpt": "Book. 4. Follow instructions for Activity 2 (CD2, Track 29) in the Teacher’s Book. 5. Pla"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 30,
+          "declared_disc": 2,
+          "declared_track": 29,
+          "legacy_file_id": "1jndYaX3ysrgEERRYQFFojPLxHuwN35Ob",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "MP3",
+            "track": 29,
+            "file_name": "29 Track 29.mp3",
+            "size_bytes": 245857,
+            "folder_id": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+          },
+          "flags": [
+            "TB_P39_AND_USER_CONFIRM_CD1_NOT_CD2"
+          ],
+          "classification": "REVIEW_OR_HOLD"
+        }
+      ]
+    },
+    {
+      "lesson": 31,
+      "focus": "Language Arts 7",
+      "topic": "Poem (Noisy Food)",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 32,
+      "focus": "Language Awareness 2",
+      "topic": "My Week",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 35,
+          "source_excerpt": "uctions in the Teacher’s Book for Activities 1 (Track 35) to 2. You could also use the"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 32,
+          "declared_disc": 1,
+          "declared_track": 35,
+          "legacy_file_id": "1BJFfffgxHyiYohapgypE2C212W3177mt",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "WMA",
+            "track": 35,
+            "file_name": "CD1-35.wma",
+            "size_bytes": 1354146,
+            "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        }
+      ]
+    },
+    {
+      "lesson": 33,
+      "focus": "Listening 7",
+      "topic": "In the Past",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 34,
+      "focus": "Speaking 7",
+      "topic": "In the Past",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 35,
+      "focus": "Reading 7",
+      "topic": "In the Past",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 39,
+          "source_excerpt": "lesson tasks. Lesson delivery 2. Play the CD (CD1 – Track 39) for Activity 1 with the Studen"
+        },
+        {
+          "disc": 1,
+          "track": 38,
+          "source_excerpt": "s. 4. Follow the instructions for Vocabulary (CD1 – Track 38) in the Teacher’s Book. Post-l"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 35,
+          "declared_disc": 1,
+          "declared_track": 39,
+          "legacy_file_id": "1KzUbYsklsFfJgMJwI4Uvc2-mNapG_lbK",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 39,
+            "file_name": "39 Track 39.mp3",
+            "size_bytes": 943915,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        },
+        {
+          "lesson": 35,
+          "declared_disc": 1,
+          "declared_track": 38,
+          "legacy_file_id": "1-ZgLtPkWimoU-2uKz0eSJjsxtqh5NoCC",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 38,
+            "file_name": "38 Track 38.mp3",
+            "size_bytes": 262537,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 36,
+      "focus": "Writing 7",
+      "topic": "In the Past",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 37,
+      "focus": "Language Arts 7",
+      "topic": "Woodpecker (Poem)",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 38,
+      "focus": "Listening 8",
+      "topic": "In the Past",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 40,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 4 (CD1 – Track 40). 3. Prepare a matching activ"
+        },
+        {
+          "disc": 1,
+          "track": 41,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 5 (CD1 – Track 41). You could adapt this activity"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 38,
+          "declared_disc": 1,
+          "declared_track": 40,
+          "legacy_file_id": "1cKcqWH36RrGAX1a45BIIQiR7Q9QVrmKW",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 40,
+            "file_name": "40 Track 40.mp3",
+            "size_bytes": 1385935,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 39,
+      "focus": "Speaking 8",
+      "topic": "In the Past",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 40,
+      "focus": "Reading 8",
+      "topic": "In the Past",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 42,
+          "source_excerpt": "ry. 3. Follow the instructions for Vocabulary (CD 1 – Track 42) in the Teacher’s Book. 4. T"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 40,
+          "declared_disc": 1,
+          "declared_track": 42,
+          "legacy_file_id": "1nCm-KxLXBaPERwXsZ_9RX9fZN5R2mQ0W",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 42,
+            "file_name": "42 Track 42.mp3",
+            "size_bytes": 338014,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 41,
+      "focus": "Writing 8",
+      "topic": "In the Past",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 43,
+          "source_excerpt": "3. Have pupils listen to the text ‘The Curse’ (CD1 – Track 43) and answer the questions. Pu"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 41,
+          "declared_disc": 1,
+          "declared_track": 43,
+          "legacy_file_id": "1yfyiKSb3a72dSis6NiYrjD9mWOyuEJ7X",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 43,
+            "file_name": "43 Track 43.mp3",
+            "size_bytes": 1830457,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 42,
+      "focus": "Language Arts 8",
+      "topic": "Sand Castle (Poem)",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 43,
+      "focus": "Listening 9",
+      "topic": "In the Past",
+      "sow_track_references": [
+        {
+          "disc": 3,
+          "track": 10,
+          "source_excerpt": "uctions in the Teacher’s Book for Activity 1 (CD 3 – Track 10) Phonics 3. 3. Follow the ins"
+        },
+        {
+          "disc": 3,
+          "track": 11,
+          "source_excerpt": "3. 3. Follow the instructions for Activity 2 (CD 3 – Track 11) in the Teacher’s Book. 4. Dr"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 43,
+          "declared_disc": 3,
+          "declared_track": 10,
+          "legacy_file_id": "1gvT8iZYbhI6e2oTZ2AJGJNS4_9vjcRXM",
+          "drive_inventory": {
+            "disc": "CD3",
+            "format": "MP3",
+            "track": 10,
+            "file_name": "10 Track 10.mp3",
+            "size_bytes": 779105,
+            "folder_id": "1DkVeV-LrGxF05bs7krvc6a1UJS5FKU5u"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        },
+        {
+          "lesson": 43,
+          "declared_disc": 3,
+          "declared_track": 11,
+          "legacy_file_id": "1mqN9ToduBjk57FRmKToJkdUu-f47ZDok",
+          "drive_inventory": {
+            "disc": "CD3",
+            "format": "MP3",
+            "track": 11,
+            "file_name": "11 Track 11.mp3",
+            "size_bytes": 936731,
+            "folder_id": "1DkVeV-LrGxF05bs7krvc6a1UJS5FKU5u"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 44,
+      "focus": "Speaking 9",
+      "topic": "In the Past",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 45,
+      "focus": "Reading 9",
+      "topic": "In the Past",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 47,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 2 (CD1 – Track 47). Post-lesson 7. Play ‘Hangma"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 45,
+          "declared_disc": 1,
+          "declared_track": 47,
+          "legacy_file_id": "130D70_-BY2hf__y0dgJI8fTi_Z317l79",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 47,
+            "file_name": "47 Track 47.mp3",
+            "size_bytes": 201238,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 46,
+      "focus": "Writing 9",
+      "topic": "In the Past",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 49,
+          "source_excerpt": "structions in the Teacher’s Book for Activity 1(CD1 – Track 49). Skip reading aloud in the T"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 46,
+          "declared_disc": 1,
+          "declared_track": 49,
+          "legacy_file_id": "1v654HZcwbktcDsSgf965XGwuxuSCvCB7",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 49,
+            "file_name": "49 Track 49.mp3",
+            "size_bytes": 656602,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 47,
+      "focus": "Language Arts 9",
+      "topic": "The King of Kites",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 48,
+      "focus": "Language Awareness 3",
+      "topic": "In the past",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 51,
+          "source_excerpt": "Plus 4 Revision 3 Activities 1-3 (Activity 2 CD 1 – Track 51) Student’s Book page 36 and"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 48,
+          "declared_disc": 1,
+          "declared_track": 51,
+          "legacy_file_id": "1bIvShBruLIYJNVy3i3iY_-L8tudecOQj",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "WMA",
+            "track": 51,
+            "file_name": "CD1-51.wma",
+            "size_bytes": 1144986,
+            "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        }
+      ]
+    },
+    {
+      "lesson": 49,
+      "focus": "Listening 10",
+      "topic": "Celebrations",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 52,
+          "source_excerpt": "mbers by following instructions for Vocabulary (CD1, Track 52) in the Teacher’s Book. 4. F"
+        },
+        {
+          "disc": 1,
+          "track": 53,
+          "source_excerpt": "ok. 4. Follow the instructions for Activity 1 (CD1, Track 53) in the Teacher’s Book. Note th"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 49,
+          "declared_disc": 1,
+          "declared_track": 52,
+          "legacy_file_id": "1iHgWZhls0X_zCIqj---UO5ovB8M9hoCw",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 52,
+            "file_name": "52 Track 52.mp3",
+            "size_bytes": 908470,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        },
+        {
+          "lesson": 49,
+          "declared_disc": 1,
+          "declared_track": 53,
+          "legacy_file_id": "1apDOLcZC8Ujayd1pYmdZQGjvXLMR3nll",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 53,
+            "file_name": "53 Track 53.mp3",
+            "size_bytes": 1170346,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 50,
+      "focus": "Speaking 10",
+      "topic": "Celebrations",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 54,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 3 (CD1, Track 54). 3. Show or elicit from pupil"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 50,
+          "declared_disc": 1,
+          "declared_track": 54,
+          "legacy_file_id": "1iLb-fj2ckhN7RTS_SpJnHDzwSChoFmTM",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 54,
+            "file_name": "54 Track 54.mp3",
+            "size_bytes": 265456,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 51,
+      "focus": "Reading 10",
+      "topic": "Celebrations",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 52,
+      "focus": "Writing 10",
+      "topic": "Celebrations",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 55,
+          "source_excerpt": "ery 2. Follow the instructions for Vocabulary (CD1, Track 55) in the Teacher’s book. 3. D"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 52,
+          "declared_disc": 1,
+          "declared_track": 55,
+          "legacy_file_id": "1n1vVhh2qn_iuNwTtoQNHZ8nMeZy9DG-_",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 55,
+            "file_name": "55 Track 55.mp3",
+            "size_bytes": 504814,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 53,
+      "focus": "Language Arts 10",
+      "topic": "The King of Kites",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 54,
+      "focus": "Listening 11",
+      "topic": "Celebrations",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 56,
+          "source_excerpt": "alse questions on the worksheet. Play the CD (CD1, Track 56) for the story in Activity 1. D"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 54,
+          "declared_disc": 1,
+          "declared_track": 56,
+          "legacy_file_id": "18Be8wE2Au0W5xq4gFBZdWESDfbZxlbX-",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 56,
+            "file_name": "56 Track 56.mp3",
+            "size_bytes": 1477258,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 55,
+      "focus": "Speaking 11",
+      "topic": "Celebrations",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 58,
+          "source_excerpt": "elivery 2. Follow instructions for Activity 5 (CD1, Track 58) in the Teacher’s Book. Extend"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 55,
+          "declared_disc": 1,
+          "declared_track": 58,
+          "legacy_file_id": "1YPQJQkMcrZBhAY5jkgdrZqj4cts5oRfe",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 58,
+            "file_name": "58 Track 58.mp3",
+            "size_bytes": 216250,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 56,
+      "focus": "Reading 11",
+      "topic": "Celebrations",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 59,
+          "source_excerpt": "elivery 2. Follow instructions for Vocabulary (CD1, Track 59) in the Teacher’s Book. 3. Wri"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 56,
+          "declared_disc": 1,
+          "declared_track": 59,
+          "legacy_file_id": "1gJaWYI8DpRKSAt2nL0D3ZBuWjRmV3nN8",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 59,
+            "file_name": "59 Track 59.mp3",
+            "size_bytes": 330091,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 57,
+      "focus": "Writing 11",
+      "topic": "Celebrations",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 58,
+      "focus": "Language Arts 11",
+      "topic": "The King of Kites",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 59,
+      "focus": "Listening 12",
+      "topic": "Celebrations",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 61,
+          "source_excerpt": "mar Box on page 41. Lesson delivery 2. Play Track 61 and ask pupils what the convers"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 59,
+          "declared_disc": 1,
+          "declared_track": 61,
+          "legacy_file_id": "1pHZtmTX98352O8oYMv86OqaOMLLV5GmY",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "WMA",
+            "track": 61,
+            "file_name": "CD1-61.wma",
+            "size_bytes": 810330,
+            "folder_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        }
+      ]
+    },
+    {
+      "lesson": 60,
+      "focus": "Speaking 12",
+      "topic": "Celebrations",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 61,
+      "focus": "Reading 12",
+      "topic": "Celebrations",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 65,
+          "source_excerpt": "ery 2. Follow the instructions for Activity 1 (CD1, Track 65) in the Teacher’s Book for re"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 61,
+          "declared_disc": 1,
+          "declared_track": 65,
+          "legacy_file_id": "1gxY4rQ3_wiIw_y2us9bT29P7D5VQnO4e",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 65,
+            "file_name": "65 Track 65.mp3",
+            "size_bytes": 690379,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 62,
+      "focus": "Writing 12",
+      "topic": "Celebrations",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 63,
+      "focus": "Language Arts 12",
+      "topic": "The King of Kites",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 64,
+      "focus": "Language Awareness 4) MAIN SKILL FOCUS Language Awareness THEME: teacher to complete",
+      "topic": "Celebrations",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 65,
+      "focus": "Listening 13",
+      "topic": "Eating right",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 70,
+          "source_excerpt": "ulary by following instructions for Vocabulary (Track 70) in the Teacher’s Book. 3. A"
+        },
+        {
+          "disc": null,
+          "track": 71,
+          "source_excerpt": "ls to close their books and listen to the song (Track 71). Ask pupils to highlight words"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 66,
+      "focus": "Speaking 13",
+      "topic": "Eating right",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 72,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 3 (CD1, Track 72). Some of the dishes may be unf"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 67,
+      "focus": "Reading 13",
+      "topic": "Eating right",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 68,
+      "focus": "Writing 13",
+      "topic": "Eating right",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 75,
+          "source_excerpt": ") and Teacher’s Book (page 81) Activity 4 (CD1, Track 75) Activity 5 (CD1, Track 76)"
+        },
+        {
+          "disc": 1,
+          "track": 76,
+          "source_excerpt": "81) Activity 4 (CD1, Track 75) Activity 5 (CD1, Track 76) Differentiate learning acco"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 69,
+      "focus": "Language Arts 13",
+      "topic": "The King of Kites",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 70,
+      "focus": "Listening 14",
+      "topic": "Eating right",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 77,
+          "source_excerpt": "the Teacher’s Book for Warm up and Vocabulary (CD1, Track 77). Lesson delivery 2. Teacher"
+        },
+        {
+          "disc": 1,
+          "track": 79,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 3 (CD1, Track 79). Post-lesson 5. Choose a pos"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 71,
+      "focus": "Speaking 14",
+      "topic": "Eating right",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 80,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 4, CD1,Track 80. 3. Have pupils tell each othe"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 71,
+          "declared_disc": 1,
+          "declared_track": 80,
+          "legacy_file_id": "1smW3MIHSRALzCfDBpJCCQZOU-PRMpAV0",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 80,
+            "file_name": "80 Track 80.mp3",
+            "size_bytes": 240019,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 72,
+      "focus": "Reading 14",
+      "topic": "Eating right",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 83,
+          "source_excerpt": "in the Teacher’s Book for Project Activity 1, CD1, Track 83. 5. Follow the instructions in"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 72,
+          "declared_disc": 1,
+          "declared_track": 83,
+          "legacy_file_id": "1r-tJ-UEpyucVSrqBv7BEJhxwBVQuQBJo",
+          "drive_inventory": {
+            "disc": "CD1",
+            "format": "MP3",
+            "track": 83,
+            "file_name": "83 Track 83.mp3",
+            "size_bytes": 596137,
+            "folder_id": "172V689kqHh3AY787suKI4Teug3PjSj5_"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 73,
+      "focus": "Writing 14",
+      "topic": "Eating right",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 74,
+      "focus": "Language Arts 14",
+      "topic": "The King of Kites",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 75,
+      "focus": "Listening 15",
+      "topic": "Eating right",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 76,
+      "focus": "Speaking 15",
+      "topic": "Eating right",
+      "sow_track_references": [
+        {
+          "disc": 1,
+          "track": 81,
+          "source_excerpt": "the Teacher’s Book for Warm up and Vocabulary (CD1, Track 81). Lesson delivery 2. Prepare"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 77,
+      "focus": "Reading 15",
+      "topic": "Eating right",
+      "sow_track_references": [
+        {
+          "disc": 3,
+          "track": 38,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 1 (CD3, Track 38). 3. Prepare a worksheet for m"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 77,
+          "declared_disc": 3,
+          "declared_track": 38,
+          "legacy_file_id": "1hNVASEHCo7SUoDszDQeH9p7m-WUnqwHm",
+          "drive_inventory": {
+            "disc": "CD3",
+            "format": "MP3",
+            "track": 38,
+            "file_name": "38 Track 38.mp3",
+            "size_bytes": 1144397,
+            "folder_id": "1DkVeV-LrGxF05bs7krvc6a1UJS5FKU5u"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 78,
+      "focus": "Writing 15",
+      "topic": "Eating right",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 79,
+      "focus": "Language Arts 15",
+      "topic": "The King of Kites",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 80,
+      "focus": "Project-Based Learning 1",
+      "topic": "Teacher to select",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 81,
+      "focus": "Listening 16",
+      "topic": "Getting around",
+      "sow_track_references": [
+        {
+          "disc": 2,
+          "track": 2,
+          "source_excerpt": "the Teacher’s Book for Warm up and Vocabulary (CD 2, Track 2). Lesson delivery 2. Prepare"
+        },
+        {
+          "disc": 2,
+          "track": 4,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 1 (CD 2, Track 4), then have pupils check thei"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 81,
+          "declared_disc": 2,
+          "declared_track": 4,
+          "legacy_file_id": "1JFrvzzb5nUfURQx6K9jPUeTX4H38n51B",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "MP3",
+            "track": 4,
+            "file_name": "04 Track 4.mp3",
+            "size_bytes": 132016,
+            "folder_id": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 82,
+      "focus": "Speaking 16",
+      "topic": "Getting around",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 83,
+      "focus": "Reading 16",
+      "topic": "Getting around",
+      "sow_track_references": [
+        {
+          "disc": 2,
+          "track": 5,
+          "source_excerpt": "tructions in the Teacher’s Book for Vocabulary.(CD2, Track 5) Lesson delivery 2. Follow th"
+        },
+        {
+          "disc": 2,
+          "track": 6,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 1 (CD2, Track 6) and play the listening track"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 83,
+          "declared_disc": 2,
+          "declared_track": 5,
+          "legacy_file_id": "1F7ysttxsdK9ea5yi7CgJ-Y9jpy7FNoOL",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "MP3",
+            "track": 5,
+            "file_name": "05 Track 5.mp3",
+            "size_bytes": 787957,
+            "folder_id": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        },
+        {
+          "lesson": 83,
+          "declared_disc": 2,
+          "declared_track": 6,
+          "legacy_file_id": "18VHSJvwInCizFh3_zmfXOWYrGMbk2WdE",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "MP3",
+            "track": 6,
+            "file_name": "06 Track 6.mp3",
+            "size_bytes": 986032,
+            "folder_id": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 84,
+      "focus": "Writing 16",
+      "topic": "Getting around",
+      "sow_track_references": [
+        {
+          "disc": 3,
+          "track": 39,
+          "source_excerpt": "he Teacher’s Book for Warm up and Vocabulary (CD3, Track 39). Lesson delivery 2. Introduc"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 84,
+          "declared_disc": 3,
+          "declared_track": 39,
+          "legacy_file_id": "1M_m571pdSFLa4JjyVk8KA0_IPLowcAWW",
+          "drive_inventory": {
+            "disc": "CD3",
+            "format": "MP3",
+            "track": 39,
+            "file_name": "39 Track 39.mp3",
+            "size_bytes": 435080,
+            "folder_id": "1DkVeV-LrGxF05bs7krvc6a1UJS5FKU5u"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 85,
+      "focus": "Language Arts 16",
+      "topic": "The King of Kites",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 86,
+      "focus": "Listening 17",
+      "topic": "Getting around",
+      "sow_track_references": [
+        {
+          "disc": 2,
+          "track": 7,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 4 (CD2, Track 7). 4. Plan a pairwork activity,"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 86,
+          "declared_disc": 2,
+          "declared_track": 7,
+          "legacy_file_id": "1ej-JbQYifQ2laQ95HnMaNZIkkwnqRqLt",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "MP3",
+            "track": 7,
+            "file_name": "07 Track 7.mp3",
+            "size_bytes": 1244989,
+            "folder_id": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 87,
+      "focus": "Speaking 17",
+      "topic": "Getting around",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 88,
+      "focus": "Reading 17",
+      "topic": "Getting around",
+      "sow_track_references": [
+        {
+          "disc": 2,
+          "track": 9,
+          "source_excerpt": "the Teacher’s Book for Warm up and Vocabulary (CD2, Track 9). Lesson delivery 2. Put the"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 88,
+          "declared_disc": 2,
+          "declared_track": 9,
+          "legacy_file_id": "1BxSFHrnGxRndfH5Ek8meRNFS2qoo33Ey",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "MP3",
+            "track": 9,
+            "file_name": "09 Track 9.mp3",
+            "size_bytes": 395977,
+            "folder_id": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 89,
+      "focus": "Writing 17",
+      "topic": "Getting around",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 90,
+      "focus": "Language Arts 17",
+      "topic": "The King of Kites",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 91,
+      "focus": "Listening 19",
+      "topic": "Getting around",
+      "sow_track_references": [
+        {
+          "disc": 2,
+          "track": 11,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 3 (CD2, Track 11). 3. Follow the instructions i"
+        },
+        {
+          "disc": 2,
+          "track": 12,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 4 (CD2, Track 12). 5. Extend the language and h"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 91,
+          "declared_disc": 2,
+          "declared_track": 11,
+          "legacy_file_id": "16AByqK9Ar861UHoKD7W0zwd3KJ9njvJ0",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "MP3",
+            "track": 11,
+            "file_name": "11 Track 11.mp3",
+            "size_bytes": 1371340,
+            "folder_id": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        },
+        {
+          "lesson": 91,
+          "declared_disc": 2,
+          "declared_track": 12,
+          "legacy_file_id": "1plSPAVVbj4wj2eUx_axYLOFFyVA1GiWc",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "MP3",
+            "track": 12,
+            "file_name": "12 Track 12.mp3",
+            "size_bytes": 155368,
+            "folder_id": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 92,
+      "focus": "Speaking 18",
+      "topic": "Getting around",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 93,
+      "focus": "Reading 18",
+      "topic": "Getting around",
+      "sow_track_references": [
+        {
+          "disc": 2,
+          "track": 16,
+          "source_excerpt": "nswer in their books. Play the CD of the story (CD2, Track 16) and have pupils listen if th"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 93,
+          "declared_disc": 2,
+          "declared_track": 16,
+          "legacy_file_id": "1AggUOHCnBT6QLAA47v8W4lH4MjGNo8Bz",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "MP3",
+            "track": 16,
+            "file_name": "16 Track 16.mp3",
+            "size_bytes": 1910521,
+            "folder_id": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 94,
+      "focus": "Writing 18",
+      "topic": "Getting around",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 95,
+      "focus": "Language Arts 18",
+      "topic": "The King of Kites",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 96,
+      "focus": "Language Awareness 5",
+      "topic": "Getting around",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 97,
+      "focus": "Listening 19",
+      "topic": "Helping out",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 20,
+          "source_excerpt": "the Teacher’s Book for Warm up and Vocabulary (Track 20). 3. Follow the instructions i"
+        },
+        {
+          "disc": null,
+          "track": 21,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 1 (Track 21). 4. Ask pupils to find the w"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 97,
+          "declared_disc": 2,
+          "declared_track": 21,
+          "legacy_file_id": "1tytx8H50xtmemOXI-Vh0YERcy9HI5CGH",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "WMA",
+            "track": 21,
+            "file_name": "CD2-21.wma",
+            "size_bytes": 433694,
+            "folder_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        }
+      ]
+    },
+    {
+      "lesson": 98,
+      "focus": "Speaking 19",
+      "topic": "Helping out",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 21,
+          "source_excerpt": "Pre-lesson 1. Play the song from Lesson 97 (Track 21) again and have pupils mime as"
+        },
+        {
+          "disc": null,
+          "track": 22,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 3 (Track 22) to review the usage of Prese"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 98,
+          "declared_disc": 2,
+          "declared_track": 21,
+          "legacy_file_id": "1tytx8H50xtmemOXI-Vh0YERcy9HI5CGH",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "WMA",
+            "track": 21,
+            "file_name": "CD2-21.wma",
+            "size_bytes": 433694,
+            "folder_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        },
+        {
+          "lesson": 98,
+          "declared_disc": 2,
+          "declared_track": 22,
+          "legacy_file_id": "1aUGlOIiWw4-lFvOtfgoJTna4NXGG5jbc",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "WMA",
+            "track": 22,
+            "file_name": "CD2-22.wma",
+            "size_bytes": 720542,
+            "folder_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        }
+      ]
+    },
+    {
+      "lesson": 99,
+      "focus": "Reading 19",
+      "topic": "Helping out",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 23,
+          "source_excerpt": "the Teacher’s Book for Warm up and Vocabulary (Track 23). 3. Follow the first three in"
+        },
+        {
+          "disc": null,
+          "track": 24,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 1 (Track 24). 4. Ask pupils whether they h"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 99,
+          "declared_disc": 2,
+          "declared_track": 24,
+          "legacy_file_id": "17GXqR69gZa1ARaqjb59vylcH5vqvKAHT",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "WMA",
+            "track": 24,
+            "file_name": "CD2-24.wma",
+            "size_bytes": 1575110,
+            "folder_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        }
+      ]
+    },
+    {
+      "lesson": 100,
+      "focus": "Writing 19",
+      "topic": "Helping out",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 101,
+      "focus": "Language Arts 19",
+      "topic": "Graphic Novel – The Jungle Book",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 102,
+      "focus": "Listening 20",
+      "topic": "Helping out",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 25,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 4 (Track 25). 5. Ask pupils to give feedba"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 102,
+          "declared_disc": 2,
+          "declared_track": 25,
+          "legacy_file_id": "1dZfNW0fnedxJjSARaHw2fIi8x_k0-vO4",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "WMA",
+            "track": 25,
+            "file_name": "CD2-25.wma",
+            "size_bytes": 475526,
+            "folder_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        }
+      ]
+    },
+    {
+      "lesson": 103,
+      "focus": "Speaking 20",
+      "topic": "Helping out",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 26,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 5 (Track 26). 4. Have pupils do a further"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 103,
+          "declared_disc": 2,
+          "declared_track": 26,
+          "legacy_file_id": "1vpNkB4OWao5iPQvHzEpemQrlNiNhkX4H",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "WMA",
+            "track": 26,
+            "file_name": "CD2-26.wma",
+            "size_bytes": 451622,
+            "folder_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        },
+        {
+          "lesson": 103,
+          "declared_disc": 2,
+          "declared_track": 27,
+          "legacy_file_id": "10g7LyS5-rGCPgoOgPoYfw-zpBrUZVt9-",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "WMA",
+            "track": 27,
+            "file_name": "CD2-27.wma",
+            "size_bytes": 1999406,
+            "folder_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "TRACK_NOT_LISTED_IN_THIS_SOW_LESSON",
+            "SOW_ASSIGNMENT_IS_LESSON_104",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        },
+        {
+          "lesson": 103,
+          "declared_disc": 2,
+          "declared_track": 28,
+          "legacy_file_id": "1EMV_qy19Ktx3F_lPWtt3JFHPibyHt5du",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "WMA",
+            "track": 28,
+            "file_name": "CD2-28.wma",
+            "size_bytes": 541262,
+            "folder_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "TRACK_NOT_LISTED_IN_THIS_SOW_LESSON",
+            "SOW_ASSIGNMENT_IS_LESSON_104",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        }
+      ]
+    },
+    {
+      "lesson": 104,
+      "focus": "Reading (20",
+      "topic": "Helping out",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 27,
+          "source_excerpt": "he Teacher’s Book for Warm up and Vocabulary (Track 27) as necessary. 4. Show pupils"
+        },
+        {
+          "disc": null,
+          "track": 28,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 1 (Track 28). 7. Including examples from t"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 105,
+      "focus": "Writing 20",
+      "topic": "Helping out",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 29,
+          "source_excerpt": "uctions in the Teacher’s Book for Activity 4 (Track 29), if time allows. Post-lesson"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 105,
+          "declared_disc": 2,
+          "declared_track": 29,
+          "legacy_file_id": "1jndYaX3ysrgEERRYQFFojPLxHuwN35Ob",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "MP3",
+            "track": 29,
+            "file_name": "29 Track 29.mp3",
+            "size_bytes": 245857,
+            "folder_id": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 106,
+      "focus": "Language Arts 20",
+      "topic": "Graphic Novel – The Jungle Book",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 107,
+      "focus": "Listening 21",
+      "topic": "Helping out",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 32,
+          "source_excerpt": ". Enhance listening activity by playing the CD (Track 32) and then get the pupils to a"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 107,
+          "declared_disc": 2,
+          "declared_track": 32,
+          "legacy_file_id": "1t44G8OrP3Zj4Rb7kWUAV_u08PUxl4HhU",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "WMA",
+            "track": 32,
+            "file_name": "CD2-32.wma",
+            "size_bytes": 1216550,
+            "folder_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        }
+      ]
+    },
+    {
+      "lesson": 108,
+      "focus": "Speaking 21",
+      "topic": "Helping out",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 109,
+      "focus": "Reading 21",
+      "topic": "Helping out",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 110,
+      "focus": "Writing 21",
+      "topic": "Helping out",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 31,
+          "source_excerpt": "tructions in the Teacher’s Book for Vocabulary (Track 31) and review other key vocabul"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 110,
+          "declared_disc": 2,
+          "declared_track": 31,
+          "legacy_file_id": "1bohxCDWg5pwB4IZnpibBlFoM3z6FkPyP",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "WMA",
+            "track": 31,
+            "file_name": "CD2-31.wma",
+            "size_bytes": 2118926,
+            "folder_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv"
+          },
+          "flags": [
+            "WMA_SOURCE_WITH_LEGACY_MP3_SENDER",
+            "SOURCE_TEXTBOOK_SUPER_MINDS1_NOT_GET_SMART_PLUS4"
+          ],
+          "classification": "WRONG_TEXTBOOK_SOURCE_HOLD"
+        }
+      ]
+    },
+    {
+      "lesson": 111,
+      "focus": "Language Arts 21",
+      "topic": "Graphic Novel – The Jungle Book",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 112,
+      "focus": "Language Awareness 6",
+      "topic": "Helping out",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 113,
+      "focus": "Listening 22",
+      "topic": "Amazing animals",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 114,
+      "focus": "Speaking 22",
+      "topic": "Amazing animals",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 115,
+      "focus": "Reading 22",
+      "topic": "Amazing animals",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 116,
+      "focus": "Writing 22",
+      "topic": "Amazing animals",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 117,
+      "focus": "Language Arts 22",
+      "topic": "Graphic Novel – The Jungle Book",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 118,
+      "focus": "Listening 23",
+      "topic": "Amazing animals",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 119,
+      "focus": "Speaking 23",
+      "topic": "Amazing animals",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 120,
+      "focus": "Reading 23",
+      "topic": "Amazing animals",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 121,
+      "focus": "Writing 23",
+      "topic": "Amazing animals",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 122,
+      "focus": "Language Arts 23",
+      "topic": "Graphic Novel – The Jungle Book",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 123,
+      "focus": "Listening 24",
+      "topic": "Amazing animals",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 124,
+      "focus": "Speaking 24",
+      "topic": "Amazing animals",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 125,
+      "focus": "Reading 24",
+      "topic": "Amazing animals",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 126,
+      "focus": "Writing 24",
+      "topic": "Amazing animals",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 127,
+      "focus": "Language Arts 24",
+      "topic": "Graphic Novel – The Jungle Book",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 128,
+      "focus": "Language Awareness 7",
+      "topic": "Amazing animals",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 129,
+      "focus": "Listening 25",
+      "topic": "Get active!",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 130,
+      "focus": "Speaking 25",
+      "topic": "Get active!",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 131,
+      "focus": "Reading 25",
+      "topic": "Get active!",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 132,
+      "focus": "Writing 25",
+      "topic": "Get active!",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 133,
+      "focus": "Language Arts 25",
+      "topic": "Graphic Novel – The Jungle Book",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 134,
+      "focus": "Listening 26",
+      "topic": "Get active!",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 135,
+      "focus": "Speaking 26",
+      "topic": "Get active!",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 136,
+      "focus": "Reading 26",
+      "topic": "Get active!",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 137,
+      "focus": "Writing 26",
+      "topic": "Get active!",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 138,
+      "focus": "Language Arts 26",
+      "topic": "Graphic Novel – The Jungle Book",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 139,
+      "focus": "Listening 27",
+      "topic": "Get active!",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 60,
+          "source_excerpt": "Book for Activity 3. Ask pupils to listen to track 60 in the CD to identify which spo"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 140,
+      "focus": "Speaking 27",
+      "topic": "Get active!",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 141,
+      "focus": "Reading 27",
+      "topic": "Get active!",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 142,
+      "focus": "Writing 27",
+      "topic": "Get active!",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 143,
+      "focus": "Language Arts 27",
+      "topic": "Graphic Novel – The Jungle Book",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 144,
+      "focus": "Language Awareness 8",
+      "topic": "Get active!",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 145,
+      "focus": "Listening 28",
+      "topic": "What’s the matter?",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 68,
+          "source_excerpt": "tructions in the Teacher’s Book for Vocabulary (Track 68). Optional: Focus on the rhym"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 145,
+          "declared_disc": 2,
+          "declared_track": 68,
+          "legacy_file_id": "1CzT6SqnZlhyoY496JNs02DOOKYU-_6Gc",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "MP3",
+            "track": 68,
+            "file_name": "68 Track 68.mp3",
+            "size_bytes": 429337,
+            "folder_id": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 146,
+      "focus": "Speaking 28",
+      "topic": "What’s the matter?",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 147,
+      "focus": "Reading 28",
+      "topic": "What’s the matter?",
+      "sow_track_references": [
+        {
+          "disc": null,
+          "track": 72,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 1 (Track 72). Post-lesson 7. Complete Act"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 147,
+          "declared_disc": 2,
+          "declared_track": 72,
+          "legacy_file_id": "1Vy95yzTfnKI6QhGcL_c-ocujXGle_9WP",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "MP3",
+            "track": 72,
+            "file_name": "72 Track 72.mp3",
+            "size_bytes": 1432222,
+            "folder_id": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 148,
+      "focus": "Writing 28",
+      "topic": "What’s the matter?",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 149,
+      "focus": "Language Arts 28",
+      "topic": "Graphic Novel – The Jungle Book",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 150,
+      "focus": "Listening 29",
+      "topic": "What’s the matter?",
+      "sow_track_references": [
+        {
+          "disc": 2,
+          "track": 73,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 4 (CD2, Track 73). 4. Follow the instructions i"
+        },
+        {
+          "disc": 2,
+          "track": 74,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 5 (CD2, Track 74). Note that the dialogue could"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 150,
+          "declared_disc": 2,
+          "declared_track": 73,
+          "legacy_file_id": "14t8DPtSCIbt_EFKGIxqUY2DYbjAo1GcD",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "MP3",
+            "track": 73,
+            "file_name": "73 Track 73.mp3",
+            "size_bytes": 2032285,
+            "folder_id": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        },
+        {
+          "lesson": 150,
+          "declared_disc": 2,
+          "declared_track": 74,
+          "legacy_file_id": "16ZguiY2lWDOIZtGVA5NVHNQzA3CNVUC0",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "MP3",
+            "track": 74,
+            "file_name": "74 Track 74.mp3",
+            "size_bytes": 309241,
+            "folder_id": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 151,
+      "focus": "Speaking 29",
+      "topic": "teacher to complete",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 152,
+      "focus": "Reading 29",
+      "topic": "What’s the matter?",
+      "sow_track_references": [
+        {
+          "disc": 2,
+          "track": 75,
+          "source_excerpt": "the Teacher’s Book for Warm up and Vocabulary (CD2, Track 75). Pupils check their answers to"
+        },
+        {
+          "disc": 2,
+          "track": 76,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 1 (CD2, Track 76). 5. Optional: Follow the inst"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 152,
+          "declared_disc": 2,
+          "declared_track": 76,
+          "legacy_file_id": "14q2_Rn5WsbGz-tYZUrIpLxfcH97xBxqt",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "MP3",
+            "track": 76,
+            "file_name": "76 Track 76.mp3",
+            "size_bytes": 1083193,
+            "folder_id": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 153,
+      "focus": "Writing 29",
+      "topic": "What’s the matter?",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 154,
+      "focus": "Language Arts 29",
+      "topic": "Graphic Novel – The Jungle Book",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 155,
+      "focus": "Listening 30",
+      "topic": "What’s the matter?",
+      "sow_track_references": [
+        {
+          "disc": 2,
+          "track": 78,
+          "source_excerpt": "tructions in the Teacher’s Book for Activity 4 (CD2, Track 78). Have pupils explain the reas"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 155,
+          "declared_disc": 2,
+          "declared_track": 78,
+          "legacy_file_id": "1zDwWsVwIaRqZ5CWmCfELX7M0BIyg7FCS",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "MP3",
+            "track": 78,
+            "file_name": "78 Track 78.mp3",
+            "size_bytes": 214582,
+            "folder_id": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 156,
+      "focus": "Speaking 30",
+      "topic": "What’s the matter?",
+      "sow_track_references": [
+        {
+          "disc": 2,
+          "track": 79,
+          "source_excerpt": "he Teacher’s Book for Warm up and Vocabulary (CD2, Track 79). 3. Follow the instructions"
+        }
+      ],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": [
+        {
+          "lesson": 156,
+          "declared_disc": 2,
+          "declared_track": 79,
+          "legacy_file_id": "14IQcEOc7M05_qjch764Dto1LQlotl3_-",
+          "drive_inventory": {
+            "disc": "CD2",
+            "format": "MP3",
+            "track": 79,
+            "file_name": "79 Track 79.mp3",
+            "size_bytes": 206659,
+            "folder_id": "1jz5D-zs7y8L9hQDYxffaNl2QcaXhx5nR"
+          },
+          "flags": [],
+          "classification": "SOW_AND_ASSET_LABEL_ONLY_NOT_SPEECH_VERIFIED"
+        }
+      ]
+    },
+    {
+      "lesson": 157,
+      "focus": "Reading 30",
+      "topic": "What’s the matter?",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 158,
+      "focus": "Writing 30",
+      "topic": "What’s the matter?",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 159,
+      "focus": "Language Arts 30",
+      "topic": "Graphic Novel – The Jungle Book",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    },
+    {
+      "lesson": 160,
+      "focus": "Project-Based Learning 2",
+      "topic": "Teacher to select",
+      "sow_track_references": [],
+      "source": "Primary Year 4 SK Scheme of Work PDF (KPM, printed original)",
+      "source_url": "https://drive.google.com/file/d/13Wefj9KN7z5YWt2Wk9dxmcE3pXS4o16S/view",
+      "legacy_audio": []
+    }
+  ],
+  "audit_parser_correction": {
+    "version": "v2",
+    "date": "2026-11-05",
+    "issue": "Initial SOW-to-app parser missed the first dict key (Lesson1) because it follows '{' rather than a newline",
+    "correction": "The first legacy map row is now explicitly included; 56 Lessons/69 route references, 24 WMA + 45 MP3, 9 SOW-audio gaps."
+  },
+  "source_provenance_discovery_20261105": {
+    "parent_title": "Super Minds 1 Audio Unzipped",
+    "parent_drive_id": "1vRIoINoYFHpBiBew73WYTQc_qMCLZtlh",
+    "folder_path": [
+      "Super Minds 1 Audio Unzipped",
+      "CD1 or CD2"
+    ],
+    "subfolders": [
+      {
+        "title": "CD1",
+        "drive_id": "1tbbr7hbvZfbF3ZhxpIIdMAnLBR_MZS50",
+        "year4_legacy_references": 14
+      },
+      {
+        "title": "CD2",
+        "drive_id": "1EQxVxNqvyg-dKi_pLTtEomOFwuUTC-cv",
+        "year4_legacy_references": 10
+      }
+    ],
+    "conclusion": "The 24 Year4 legacy WMA IDs refer to Super Minds 1 audio source folders. Year4 textbook is Get Smart Plus 4; this is a textbook identity mismatch, not just a WMA-to-MP3 transport issue.",
+    "status": "WRONG_TEXTBOOK_SOURCE_PROVENANCE_HOLD_ALL_24",
+    "note": "No spoken-word comparisons or live user delivery were performed. Exact CD/Track filenames cannot cure wrong textbook source."
+  }
+}
