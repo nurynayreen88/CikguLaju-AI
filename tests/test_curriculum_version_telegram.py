@@ -63,14 +63,18 @@ class TelegramCurriculumTests(unittest.TestCase):
 
     def test_year_two_lists_only_dlp_subjects_in_dlp(self):
         self.ns["callback"](1,"cv_primary_dlp")
-        self.assertEqual(self.messages[-1][1][0],[{"text":"Tahun 2","callback_data":"cv_year2_dlp"}])
+        years = [row[0] for row in self.messages[-1][1][:6]]
+        self.assertEqual([button["callback_data"] for button in years],
+                         [f"cv_year{n}_dlp" for n in range(1,7)])
+        self.assertEqual(years[0]["text"],"Tahun 1 (KP Baharu) — Akan Datang")
+        self.assertEqual(years[1]["text"],"Tahun 2 — Pratonton")
         self.ns["callback"](1,"cv_year2_dlp")
         keys = {button["callback_data"]:button["text"] for row in self.messages[-1][1] for button in row}
         self.assertEqual(set(keys),{"cv_dlp_science","cv_dlp_math","cv_primary_dlp","home"})
         for data,title,topic in (("cv_dlp_science","Science (DLP)","Observe"),
                                  ("cv_dlp_math","Mathematics (DLP)","Recognise Numbers")):
             with self.subTest(data=data):
-                self.assertEqual(keys[data],title+" — Akan Datang")
+                self.assertEqual(keys[data],title+" — Pratonton")
                 self.ns["callback"](1,data)
                 msg,kb=self.messages[-1]
                 self.assertIn(topic,msg)
@@ -87,6 +91,24 @@ class TelegramCurriculumTests(unittest.TestCase):
         self.ns["callback"](1,"year_2")
         self.ns["callback"](1,"sub_Sains")
         self.assertEqual(self.calls,[("subjects","Tahun 2"),("callback","sub_Sains")])
+
+    def test_dlp_other_years_show_subject_status_without_using_year_two_preview(self):
+        self.ns["callback"](1,"cv_primary_dlp")
+        for n in (1,3,4,5,6):
+            with self.subTest(year=n):
+                self.ns["callback"](1,f"cv_year{n}_dlp")
+                year_label = f"Tahun {n}" + (" (KP Baharu)" if n == 1 else "")
+                self.assertIn(year_label,self.messages[-1][0])
+                self.assertEqual([row[0]["text"] for row in self.messages[-1][1][:2]],
+                                 ["Science (DLP) — Akan Datang","Mathematics (DLP) — Akan Datang"])
+                for code in ("cv_dlp_science","cv_dlp_math"):
+                    self.ns["callback"](1,code)
+                    message = self.messages[-1][0]
+                    self.assertIn(year_label,message)
+                    self.assertIn("Akan Datang",message)
+                    self.assertNotIn("Activity Book",message)
+                self.ns["callback"](1,"matsubmit2528")
+                self.assertEqual(self.calls,[])
 
     def test_stale_dlp_button_and_other_tasks(self):
         self.ns["callback"](1,"cv_primary_kssr")
