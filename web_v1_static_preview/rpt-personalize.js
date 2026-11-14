@@ -76,9 +76,9 @@
       box[0]<box[2]&&box[1]<box[3];
   }
   function validatedLayout(layout,key,hash){
-    const dlp = key === "science_dlp:2" || key === "mathematics_dlp:2";
-    if(dlp)layout = layout?.dlp_year2;
-    const status = dlp ? "DLP_YEAR_2_PDF_COVER" : "ORIGINAL_COVER_TEMPLATE_LOCKED_TO_56_SOURCE_PDF_SHA256";
+    const dlp = /^(science|mathematics)_dlp:([23])$/.exec(key);
+    if(dlp)layout = layout?.[`dlp_year${dlp[2]}`];
+    const status = dlp ? `DLP_YEAR_${dlp[2]}_PDF_COVER` : "ORIGINAL_COVER_TEMPLATE_LOCKED_TO_56_SOURCE_PDF_SHA256";
     const count = dlp ? 2 : 56;
     if(!layout||layout.version!==1||
        layout.status!==status||
