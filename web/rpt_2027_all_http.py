@@ -14,7 +14,7 @@ from functools import lru_cache
 from pathlib import Path
 from flask import Blueprint, jsonify, send_file, request
 from web.english_rpt_2027_http import _account, _has_paid_access
-from rpt_2027.dlp.documents import SUBJECTS as DLP_SUBJECTS, document_path
+from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
 
 ROOT = Path(__file__).resolve().parents[1] / "rpt_2027"
 YEARS = tuple(range(2,7))
@@ -173,18 +173,22 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
         subjects.append({"code":code,"label":label,"years":entries})
     dlp_count = 0
     for code, label in DLP_SUBJECTS.items():
-        if document_path(code, 2, root=Path(root)/"dlp") is None:
-            continue
-        subjects.append({"code":code,"label":f"{label} (DLP)","years":[{
-            "year":2,
-            "pdf_ready":True,
-            "status":"TERSEDIA",
-            "download_enabled":bool(allowed),
-            "note":"Year 2 SK · Group A and Group B",
-            "is_draft":False,
-            "year_label":"Year 2",
-        }]})
-        dlp_count += 1
+        entries = [
+            {
+                "year": year,
+                "pdf_ready": True,
+                "status": "TERSEDIA",
+                "download_enabled": bool(allowed),
+                "note": f"Year {year} SK · Group A and Group B",
+                "is_draft": False,
+                "year_label": f"Year {year}",
+            }
+            for year in PUBLISHED_YEARS
+            if document_path(code, year, root=Path(root) / "dlp") is not None
+        ]
+        if entries:
+            subjects.append({"code": code, "label": f"{label} (DLP)", "years": entries})
+            dlp_count += len(entries)
     return {
         "year":2027,
         "format":"pdf",
