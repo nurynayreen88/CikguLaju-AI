@@ -158,7 +158,18 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 #timetable-reader{padding:12px 14px;margin:12px 0 16px;border:1px solid #d2e1e7;border-radius:12px}
 #timetable-reader h4{margin:0 0 8px}
 #timetable-reader-file{max-width:100%}
-#timetable-reader-actions[hidden]{display:none}
+#timetable-reader-review{margin:14px 0;padding:12px;background:#f4f9fb;border:1px solid #d2e1e7;border-radius:10px}
+#timetable-reader-review h5{margin:0 0 6px;color:#184965;font-size:1rem}
+#timetable-reader-report{width:100%;border-collapse:collapse;font-size:.88rem}
+#timetable-reader-report th,#timetable-reader-report td{padding:8px 5px;text-align:left;border-bottom:1px solid #d2e1e7;overflow-wrap:anywhere}
+#timetable-reader-report th{color:#184965}
+#timetable-reader-report input{width:18px;height:18px;margin:0;vertical-align:middle}
+#timetable-reader-report td:nth-child(2){white-space:nowrap}
+#timetable-reader-actions button.secondary{background:#fff;color:#1a526a;border:1px solid #c7d8de}
+@media(max-width:450px){
+ #timetable-reader-report td:nth-child(2){white-space:normal}
+ #timetable-reader-report th,#timetable-reader-report td{padding:8px 3px}
+}
 .timetable-table-wrap{overflow-x:auto}
 .timetable-table{border-collapse:collapse;width:100%;min-width:655px;font-size:.87rem}
 .timetable-table th,.timetable-table td{border:1px solid #d2e1e7;padding:7px;vertical-align:top}
@@ -802,15 +813,27 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     <button type="button" id="timetable-reader-start" disabled>Baca Jadual</button>
   </div>
   <p class="notice" id="timetable-reader-status" role="status" aria-live="polite"></p>
+  <section id="timetable-reader-review" aria-labelledby="timetable-reader-review-title" hidden>
+    <h5 id="timetable-reader-review-title" tabindex="-1">Hasil Bacaan Jadual</h5>
+    <p class="notice" id="timetable-reader-review-note"></p>
+    <div class="timetable-table-wrap">
+      <table id="timetable-reader-report" aria-labelledby="timetable-reader-review-title">
+        <thead><tr><th scope="col">Pilih</th><th scope="col">Hari dan masa</th><th scope="col">Kelas</th><th scope="col">Subjek</th><th scope="col">Semakan</th></tr></thead>
+        <tbody id="timetable-reader-report-rows"></tbody>
+      </table>
+    </div>
+    <div class="profile-actions" id="timetable-reader-actions">
+      <button type="button" id="timetable-reader-append">Tambah Waktu Dipilih</button>
+      <button type="button" id="timetable-reader-replace" class="secondary">Ganti dengan Semua Hasil</button>
+      <button type="button" id="timetable-reader-dismiss" class="secondary">Tutup Hasil Bacaan</button>
+    </div>
+  </section>
   <div class="profile-actions" id="timetable-reader-classes-actions" hidden>
     <button type="button" id="timetable-reader-classes">Tambah Kelas Dikesan ke Profil</button>
   </div>
-  <div class="profile-actions" id="timetable-reader-actions" hidden>
-    <button type="button" id="timetable-reader-append">Tambah Waktu Dikesan</button>
-    <button type="button" id="timetable-reader-replace">Guna Jadual Dikesan</button>
-  </div>
 </div>
-<div class="timetable-table-wrap"><table class="timetable-table" aria-label="Jadual waktu guru">
+<h4 id="timetable-editor-heading">Jadual Sedia Ada</h4>
+<div class="timetable-table-wrap"><table class="timetable-table" aria-labelledby="timetable-editor-heading">
 <thead><tr><th>Hari</th><th>Mula</th><th>Tamat</th><th>Kelas</th><th>Subjek</th><th>Padam</th></tr></thead>
 <tbody id="timetable-rows"></tbody></table></div>
 <p id="timetable-empty" class="notice">Tiada waktu disimpan. Tekan Tambah Waktu untuk mula.</p>
@@ -2057,7 +2080,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
 <script src="/assets/rph-today.js?v=science-copy-expanded-20261113"></script>
-<script src="/assets/teacher-profile.js?v=auto-timetable-20261114"></script>
+<script src="/assets/teacher-profile.js?v=timetable-read-review-20261114"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>
 <script src="/assets/admin-usage.js?v=payment-inbox-20261114"></script>

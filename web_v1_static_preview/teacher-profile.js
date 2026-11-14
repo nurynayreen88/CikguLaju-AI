@@ -100,11 +100,16 @@ const timetableReader = document.getElementById("timetable-reader");
 const timetableReaderFile = document.getElementById("timetable-reader-file");
 const timetableReaderStart = document.getElementById("timetable-reader-start");
 const timetableReaderStatus = document.getElementById("timetable-reader-status");
-const timetableReaderActions = document.getElementById("timetable-reader-actions");
+const timetableReaderReview = document.getElementById("timetable-reader-review");
+const timetableReaderReviewNote = document.getElementById("timetable-reader-review-note");
+const timetableReaderReportRows = document.getElementById("timetable-reader-report-rows");
+const timetableReaderAppend = document.getElementById("timetable-reader-append");
+const timetableReaderReplace = document.getElementById("timetable-reader-replace");
 const timetableReaderClassActions = document.getElementById("timetable-reader-classes-actions");
 const timetableReaderClasses = document.getElementById("timetable-reader-classes");
 let timetableReadRows = [];
 let timetableReadRequest = null;
+let timetableReadPartial = false;
 let importedTimetable = false;
 const schoolLogoFile = document.getElementById("school-logo-file");
 const schoolLogoUpload = document.getElementById("school-logo-upload");
@@ -383,7 +388,8 @@ function profileEditorData() {
 }
 function hasUnsavedTeacherChanges() {
   if (!teacherProfileState.loaded) return false;
-  return JSON.stringify(profileEditorData()) !== teacherProfileState.savedProfile ||
+  return timetableReadRows.length>0 ||
+         JSON.stringify(profileEditorData()) !== teacherProfileState.savedProfile ||
          JSON.stringify(timetableValueRows()) !== teacherProfileState.savedTimetable;
 }
 async function refreshTeacherProfile() {
@@ -845,6 +851,7 @@ async function loadTeacherProfile() {
   timetableReader.hidden=true;
   timetableReaderFile.value="";
   timetableReadRows=[];
+  timetableReadPartial=false;
   importedTimetable=false;
   timetableReaderClassActions.hidden=true;
   timetableReaderStatus.textContent="";
@@ -979,12 +986,71 @@ timetableSaveButton.addEventListener("click",async() => {
 function updateTimetableReaderButtons() {
   timetableReaderStart.disabled=!teacherProfileState.loaded
     || !timetableReaderFile.files.length || timetableReadRequest!==null;
-  timetableReaderActions.hidden=timetableReadRows.length===0;
+  timetableReaderReview.hidden=timetableReadRows.length===0;
+  if(timetableReaderReview.hidden)timetableReaderReportRows.replaceChildren();
+  const selected=selectedTimetableReadRows();
+  timetableReaderAppend.disabled=!selected.length;
+  timetableReaderReplace.disabled=timetableReadPartial;
 }
+
+function selectedTimetableReadRows() {
+  return [...timetableReaderReportRows.querySelectorAll("input:checked")]
+    .map(input=>timetableReadRows[Number(input.value)]);
+}
+
+function sameTimetablePeriod(first,second) {
+  return first.day===second.day && first.start===second.start && first.end===second.end
+    && first.class_name.toLowerCase()===second.class_name.toLowerCase()
+    && first.subject.toLowerCase()===second.subject.toLowerCase();
+}
+
+function overlappingTimetablePeriod(first,second) {
+  return first.day===second.day && first.start<second.end && second.start<first.end;
+}
+
+function renderTimetableReadReport() {
+  const current=timetableValueRows();
+  timetableReaderReportRows.replaceChildren();
+  for(const [index,row] of timetableReadRows.entries()){
+    const duplicate=current.some(period=>sameTimetablePeriod(period,row));
+    const overlaps=current.some(period=>overlappingTimetablePeriod(period,row));
+    const messages=[];
+    if(duplicate)messages.push("Sudah ada");
+    else if(overlaps)messages.push("Bertindih dengan jadual sedia ada");
+    if(!row.class_name || !row.subject)messages.push("Lengkapkan kelas atau subjek");
+    const tr=document.createElement("tr");
+    const input=document.createElement("input");
+    input.type="checkbox";
+    input.value=String(index);
+    input.checked=!overlaps;
+    input.setAttribute("aria-label","Pilih "+row.day+" "+row.start+" hingga "+row.end+
+      (row.class_name ? ", "+row.class_name : "")+(row.subject ? ", "+row.subject : ""));
+    const checkCell=document.createElement("td");
+    checkCell.append(input);
+    tr.append(checkCell);
+    for(const value of [row.day+" "+row.start+"–"+row.end,row.class_name||"Belum jelas",
+                         row.subject||"Belum jelas",messages.join(". ")||"—"]){
+      const td=document.createElement("td");
+      td.textContent=value;
+      tr.append(td);
+    }
+    timetableReaderReportRows.append(tr);
+  }
+  timetableReaderReviewNote.textContent=timetableReadPartial
+    ? "Bacaan belum lengkap. Cikgu boleh tambah waktu yang dipilih. Penggantian jadual tersedia apabila bacaan lengkap."
+    : "Pilih waktu untuk ditambah. Semak dan simpan perubahan dalam borang Jadual Sedia Ada.";
+  if(current.length && timetableReadRows.some(row=>current.some(period=>overlappingTimetablePeriod(period,row))))
+    timetableReaderReviewNote.textContent+=" Waktu bertindih atau sudah ada tidak dipilih secara automatik.";
+  timetableReaderReview.hidden=false;
+  document.getElementById("timetable-reader-review-title").focus();
+}
+
+timetableReaderReportRows.addEventListener("change",updateTimetableReaderButtons);
 
 timetableReaderFile.addEventListener("change",()=>{
   timetableReadRequest?.abort();
   timetableReadRows=[];
+  timetableReadPartial=false;
   timetableReaderStatus.textContent="";
   updateTimetableReaderButtons();
 });
@@ -1014,11 +1080,14 @@ timetableReaderStart.addEventListener("click",async()=>{
       throw new Error(result.error || "Jadual belum dapat dibaca. Cuba lagi.");
     if(controller.signal.aborted || timetableReader.hidden)return;
     timetableReadRows=result.entries;
+    timetableReadPartial=Boolean(result.uncertain || result.unreadable_pages ||
+      result.entries.some(row=>!row.class_name || !row.subject));
     const summary=[result.entries.length+" waktu dikesan."];
     if(result.uncertain)summary.push(result.uncertain+" petak kurang jelas.");
     if(result.unreadable_pages)summary.push(result.unreadable_pages+" halaman kurang jelas.");
     if(result.uncertain || result.unreadable_pages)summary.push("Semak jadual asal dan tambah waktu yang tertinggal.");
     timetableReaderStatus.textContent=summary.join(" ");
+    renderTimetableReadReport();
   }catch(err){
     if(controller.signal.reason==="timeout"){
       timetableReaderStatus.textContent="Bacaan mengambil masa terlalu lama. Cuba satu halaman atau gambar yang lebih kecil.";
@@ -1033,11 +1102,10 @@ timetableReaderStart.addEventListener("click",async()=>{
 });
 
 function applyReadTimetable(append) {
-  if(!teacherProfileState.loaded || !timetableReadRows.length)return;
+  const selected=append ? selectedTimetableReadRows() : timetableReadRows;
+  if(!teacherProfileState.loaded || !selected.length || (!append && timetableReadPartial))return;
   const current=timetableValueRows();
-  const key=row=>[row.day,row.start,row.end,row.class_name.toLowerCase(),row.subject.toLowerCase()].join("|");
-  const existing=new Set(current.map(key));
-  const added=append ? timetableReadRows.filter(row=>!existing.has(key(row))) : timetableReadRows;
+  const added=append ? selected.filter(row=>!current.some(period=>sameTimetablePeriod(period,row))) : selected;
   if(append && !added.length){
     timetableReaderStatus.textContent="Semua waktu yang dikesan sudah ada dalam jadual.";
     return;
@@ -1046,7 +1114,12 @@ function applyReadTimetable(append) {
     timetableReaderStatus.textContent="Had jadual ialah 80 waktu. Buang waktu yang tidak diperlukan dan cuba lagi.";
     return;
   }
-  if(!append && current.length && !window.confirm("Gantikan waktu dalam jadual yang sedang disunting?"))
+  if(append && added.some(row=>current.some(period=>overlappingTimetablePeriod(period,row))) &&
+     !window.confirm("Ada waktu dipilih yang bertindih dengan jadual dalam borang. Teruskan tambah?"))
+    return;
+  if(!append && current.length && !window.confirm(
+    "Gantikan "+current.length+" waktu dalam borang dengan "+added.length+
+    " waktu yang dikesan? Perubahan disimpan hanya apabila cikgu tekan Simpan Jadual Waktu."))
     return;
   const rows=append ? [...current,...added] : added;
   renderTeacherTimetable(rows);
@@ -1054,13 +1127,14 @@ function applyReadTimetable(append) {
   const newClasses=missingTimetableClasses();
   timetableReaderClassActions.hidden=newClasses.length===0;
   timetableReadRows=[];
+  timetableReadPartial=false;
   timetableReaderFile.value="";
   updateTimetableReaderButtons();
   timetableReaderStatus.textContent=newClasses.length
     ? "Kelas baharu dikesan: "+newClasses.join(", ")+". Tambah ke profil atau pilih kelas sedia ada."
     : "Semak hari, masa, kelas dan subjek, kemudian tekan Simpan Jadual Waktu.";
-  timetableMessage.textContent="Waktu yang dikesan sedia untuk disemak.";
-  timetableBody.querySelector("tr select")?.focus();
+  timetableMessage.textContent="Semak perubahan, kemudian tekan Simpan Jadual Waktu.";
+  timetableBody.querySelectorAll("tr")[append ? current.length : 0]?.querySelector("select")?.focus();
 }
 
 function missingTimetableClasses() {
@@ -1085,5 +1159,12 @@ timetableReaderClasses.addEventListener("click",()=>{
   field.focus();
 });
 
-document.getElementById("timetable-reader-append").addEventListener("click",()=>applyReadTimetable(true));
-document.getElementById("timetable-reader-replace").addEventListener("click",()=>applyReadTimetable(false));
+timetableReaderAppend.addEventListener("click",()=>applyReadTimetable(true));
+timetableReaderReplace.addEventListener("click",()=>applyReadTimetable(false));
+document.getElementById("timetable-reader-dismiss").addEventListener("click",()=>{
+  timetableReadRows=[];
+  timetableReadPartial=false;
+  timetableReaderStatus.textContent="";
+  updateTimetableReaderButtons();
+  timetableReaderStart.focus();
+});
