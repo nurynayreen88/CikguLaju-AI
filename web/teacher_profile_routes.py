@@ -14,6 +14,7 @@ from web.teacher_profile_store import (
 )
 
 bp = Blueprint("teacher_profile_web", __name__)
+TIMETABLE_AUTO_READ_ENABLED = False
 
 
 @bp.after_request
@@ -113,7 +114,8 @@ def teacher_profile_get():
     except (ProfileValidation, ProfileUnavailable, ProfileConflict) as exc:
         return _failure(exc)
     return make_response(jsonify({"profile": profile, "timetable": schedule,
-                                  "timetable_auto_read": _can_read_timetable(account)}))
+                                  "timetable_auto_read": (TIMETABLE_AUTO_READ_ENABLED
+                                                          and _can_read_timetable(account))}))
 
 
 @bp.put("/api/web/teacher/profile")
@@ -141,6 +143,9 @@ def _can_read_timetable(account):
 
 @bp.post("/api/web/teacher/timetable/read")
 def teacher_timetable_read():
+    if not TIMETABLE_AUTO_READ_ENABLED:
+        return jsonify(error="Bacaan automatik jadual ditangguhkan sementara. Gunakan Tambah Waktu untuk isi jadual."), 404
+
     from web.timetable_reader_client import read_uploaded_timetable
     from web.timetable_upload import MAX_UPLOAD, TimetableReaderUnavailable, UnreadableTimetable
 

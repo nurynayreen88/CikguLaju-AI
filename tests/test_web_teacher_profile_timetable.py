@@ -139,6 +139,29 @@ class TeacherProfileHttpTests(unittest.TestCase):
             self.assertEqual(response.status_code,200)
             self.assertEqual(save.call_args.args[2],123)
 
+    def test_paused_reader_is_hidden_and_does_not_forward_uploads(self):
+        saved = {"entries": [period()], "version": "2026-11-05T11:00:00+00:00"}
+        with (
+            patch("web.teacher_profile_routes._lookup", return_value={
+                "telegram_user_id": 123, "authenticated": True, "rakan_pembangun": True,
+            }) as lookup,
+            patch("web.teacher_profile_routes.get_profile", return_value={"class_names": ["4 Bestari"]}) as profile,
+            patch("web.teacher_profile_routes.get_schedule", return_value=saved),
+            patch("web.timetable_reader_client.read_uploaded_timetable") as read,
+        ):
+            result = self.client.get(self.url, base_url=self.base)
+            self.assertEqual(result.status_code, 200)
+            self.assertIs(result.json["timetable_auto_read"], False)
+            self.assertEqual(result.json["timetable"], saved)
+            response = self.client.post("/api/web/teacher/timetable/read", base_url=self.base,
+                                        headers=self.origin)
+            self.assertEqual(response.status_code, 404)
+            self.assertIn("Tambah Waktu", response.json["error"])
+            lookup.assert_called_once()
+            profile.assert_called_once()
+            read.assert_not_called()
+
+    @patch("web.teacher_profile_routes.TIMETABLE_AUTO_READ_ENABLED", True)
     def test_ocr_preview_checks_paid_access_and_uses_saved_classes(self):
         url = "/api/web/teacher/timetable/read"
         data = b"%PDF-1.7 example"
@@ -168,6 +191,7 @@ class TeacherProfileHttpTests(unittest.TestCase):
             read.assert_called_once_with(data, ["4 Bestari"])
             save.assert_not_called()
 
+    @patch("web.teacher_profile_routes.TIMETABLE_AUTO_READ_ENABLED", True)
     def test_subject_aliases_are_private_and_ocr_uses_full_subject_names(self):
         url = "/api/web/teacher/timetable/subject-aliases"
         payload = {"aliases": {"PD": "Pendidikan Moral"}, "version": "2026-11-05T11:00:00+00:00"}
