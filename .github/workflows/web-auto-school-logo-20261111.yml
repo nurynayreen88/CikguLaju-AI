@@ -10,6 +10,7 @@ on:
       - web_v1_static_preview/teacher-profile.js
       - tests/test_web_auto_school_logo_20261111.py
       - tests/test_school_logo_preview.cjs
+      - tests/test_school_directory_combobox.cjs
       - tests/test_web_teacher_profile_timetable.py
       - .github/workflows/web-auto-school-logo-20261111.yml
   push:
@@ -22,6 +23,7 @@ on:
       - web_v1_static_preview/teacher-profile.js
       - tests/test_web_auto_school_logo_20261111.py
       - tests/test_school_logo_preview.cjs
+      - tests/test_school_directory_combobox.cjs
       - tests/test_web_teacher_profile_timetable.py
       - .github/workflows/web-auto-school-logo-20261111.yml
   workflow_dispatch:
@@ -42,6 +44,7 @@ jobs:
           python -m py_compile web/school_logo_candidate.py web/school_directory_store.py web/teacher_profile_routes.py tests/test_web_auto_school_logo_20261111.py
           node --check web_v1_static_preview/teacher-profile.js
           node tests/test_school_logo_preview.cjs
+          node tests/test_school_directory_combobox.cjs
       - name: Candidate logo and non-destructive existing profile tests
         run: |
           python -m unittest discover -s tests -p 'test_web_auto_school_logo_20261111.py' -v
