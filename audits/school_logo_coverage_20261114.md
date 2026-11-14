@@ -165,15 +165,24 @@ Empat imej ditambah dan disahkan semula melalui SHA-256. Liputan kini 7,772 dari
 | YBB6314 | SEKOLAH KEBANGSAAN ULU MERADONG | [Buku Pengurusan SK Ulu Meradong dengan kod YBB6314](<https://www.scribd.com/doc/230899078/Buku-Pengurusan-Sekolah-2014-pptx>) | `8435d9f8b32587c6e567a713453a8f0a0f3df56dfa86ba0a70960ed9a0fa442d` |
 | YCB1319 | SEKOLAH KEBANGSAAN GEORGE | [Buku program SK St George Punau](https://anyflip.com/xzkmv/hfjc/basic), [kod YCB1319 dalam direktori sekolah misi](https://www.fcmsm.org/wp-content/uploads/2024/03/Directory-2024-updated-March.pdf?x38165=) | `a39d560c053751936b4687c69882a7188174e2f93070dedfb55c714911813c4c` |
 
+## Tiga lagi logo disahkan dalam produksi
+
+Semakan storan produksi menunjukkan 7,775 daripada 7,778 sekolah rendah mempunyai logo katalog (99.96%). Ketiga-tiga imej baharu dibaca semula daripada storan dan disahkan dengan SHA-256.
+
+| Kod direktori | Sekolah | Sumber | SHA-256 |
+| --- | --- | --- | --- |
+| KBC0047 | SJKC Poi Chee | [Logo oleh rakan projek landskap sekolah](https://maylandscape-interiors.com/wp-content/uploads/2025/08/poi-chee-logo.jpg) | `f2f9f1007c8dc420f83638ed7572280afcd8c7ce318e3da8a2f44a2c242d5a26` |
+| XBA4376 | SK Wasai | [Kepala surat SK Wasai dengan kod XBA4376](<https://pt.scribd.com/doc/228775691/Surat-Iringan-Pengesahan-Lantikan-Audit-Dalaman>) | `f03d2cac8b033447046f1f2b50954ea37243b905b7440f968303e95083f4d3ab` |
+| YCC1329 | SJKC Chung Hua Syn-San-Tu | [Buku profil KBAT sekolah, lencana bertulis Syn San Too](https://anyflip.com/aicza/dffm/basic) | `0aaec386c6cb1bc6939df657b0891291288d64979e5086f15afd22405b85ed9c` |
+
+Poi Chee berpindah dari Malau, Baling, ke Sungai Petani dan menggunakan kod KBC3106 dalam direktori Dong Lian Kedah. Katalog Web masih mempunyai rekod KBC0047, jadi logo dipadankan pada kod tersebut. [Laporan perpindahan](https://www.orientaldaily.com.my/news/north/2024/03/10/636512) · [Direktori Dong Lian Kedah](https://dongliankedah.com/吉打州国民型华文小学/)
+
 ## Sekolah yang masih memerlukan logo
 
 | Kod | Sekolah | PPD | Negeri |
 | --- | --- | --- | --- |
 | CBC4052 | SEKOLAH JENIS KEBANGSAAN (CINA) POAY CHAI | PPD KUANTAN | Pahang |
-| KBC0047 | SEKOLAH JENIS KEBANGSAAN (CINA) POI CHEE | PPD BALING | Kedah |
-| XBA4376 | SEKOLAH KEBANGSAAN WASAI | PPD TUARAN | Sabah |
 | YCB1301 | SEKOLAH KEBANGSAAN EMPEROH JAMBU | PPD PADAWAN | Sarawak |
-| YCC1329 | SEKOLAH JENIS KEBANGSAAN (CINA) CHUNG HUA SYN-SAN-TU | PPD PADAWAN | Sarawak |
 | YCC6111 | SEKOLAH JENIS KEBANGSAAN (CINA) SING MING | PPD SARIKEI | Sarawak |
 
-Untuk CBC4052, rekod PPD Kuantan dan laporan pemindahan sekolah senama memerlukan pengesahan lanjut sebelum imej digunakan.
+Untuk CBC4052, [direktori](https://www.apac.com.my/cbc4052-sjkc-poay-chai.html) menyenaraikan Kampung Tiram, PPD Kuantan, dan [senarai sekolah Cina Pahang](https://zh.wikipedia.org/wiki/彭亨州华文小学列表) memaparkan status lokasi dan bilangan murid sebagai tidak berkenaan. Kod ini memerlukan pengesahan PPD Kuantan. Dua sekolah Sarawak masih memerlukan imej lencana yang dapat dipadankan dengan kod sekolah.
