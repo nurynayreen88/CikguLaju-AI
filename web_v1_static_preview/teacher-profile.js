@@ -4,6 +4,7 @@
 const teacherProfileState = {
   loaded: false, profileVersion: "", timetableVersion: "",
   classNames: [], savedPeriods: 0, savedProfile: null, savedTimetable: null,
+  subjectAliases: {},
 };
 const teacherDays = ["Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu","Ahad"];
 // Full, source-compatible names so RPH Hari Ini can match a saved period.
@@ -15,7 +16,7 @@ const teacherSubjectGroups = [
   ]},
   { label:"Subjek sekolah rendah lain", values:[
     "Pendidikan Moral","Pendidikan Seni Visual","Pendidikan Muzik",
-    "Pendidikan Jasmani","Pendidikan Kesihatan","PJPK",
+    "Pendidikan Jasmani","Pendidikan Kesihatan","Pendidikan Jasmani dan Pendidikan Kesihatan",
     "Bahasa Arab","Sejarah","Reka Bentuk dan Teknologi"
   ]},
   { label:"Waktu bukan PdP", values:[
@@ -100,6 +101,12 @@ const timetableReader = document.getElementById("timetable-reader");
 const timetableReaderFile = document.getElementById("timetable-reader-file");
 const timetableReaderStart = document.getElementById("timetable-reader-start");
 const timetableReaderStatus = document.getElementById("timetable-reader-status");
+const timetableSubjectAliases = document.getElementById("timetable-subject-aliases");
+const timetableAliasList = document.getElementById("timetable-alias-list");
+const timetableAliasCode = document.getElementById("timetable-alias-code");
+const timetableAliasPicker = document.getElementById("timetable-alias-picker");
+const timetableAliasSave = document.getElementById("timetable-alias-save");
+const timetableAliasStatus = document.getElementById("timetable-alias-status");
 const timetableReaderReview = document.getElementById("timetable-reader-review");
 const timetableReaderReviewNote = document.getElementById("timetable-reader-review-note");
 const timetableReaderReportRows = document.getElementById("timetable-reader-report-rows");
@@ -854,6 +861,10 @@ async function loadTeacherProfile() {
   timetableReadRequest?.abort();
   timetableReader.hidden=true;
   timetableReaderFile.value="";
+  teacherProfileState.subjectAliases={};
+  timetableSubjectAliases.open=false;
+  timetableAliasStatus.textContent="";
+  selectTimetableAlias("");
   timetableReadRows=[];
   timetableReadPartial=false;
   importedTimetable=false;
@@ -867,6 +878,8 @@ async function loadTeacherProfile() {
     if(!result.profile || !result.timetable || !Array.isArray(result.profile.class_names)
        || !Array.isArray(result.timetable.entries))throw new Error("Data profil tidak sah.");
     const profile=result.profile, timetable=result.timetable;
+    teacherProfileState.subjectAliases=profile.timetable_subject_aliases||{};
+    renderTimetableAliasList();
     teacherNameField.value=(profile.display_name || "Cikgu").toLocaleUpperCase("ms-MY");
     await loadSchoolPickerForProfile(profile);
     document.getElementById("profile-classes").value=profile.class_names.join("\n");
@@ -998,13 +1011,86 @@ function updateTimetableReaderButtons() {
   }
   const selected=selectedTimetableReadRows();
   timetableReaderAppend.disabled=!selected.length;
-  timetableReaderReplace.disabled=timetableReadPartial;
+  timetableReaderReplace.disabled=timetableReadPartial ||
+    timetableReadRows.some(row=>row.subject_code && !resolvedTimetableReadRow(row).subject);
 }
 
 function selectedTimetableReadRows() {
   return [...timetableReaderReportRows.querySelectorAll("input:checked")]
-    .map(input=>timetableReadRows[Number(input.value)]);
+    .map(input=>resolvedTimetableReadRow(timetableReadRows[Number(input.value)]));
 }
+
+function resolvedTimetableReadRow(row) {
+  const {subject_code, ...entry}=row;
+  if(subject_code)
+    entry.subject=teacherProfileState.subjectAliases[subject_code]||
+      (entry.subject===subject_code ? "" : entry.subject);
+  return entry;
+}
+
+function selectTimetableAlias(code) {
+  timetableAliasCode.value=code;
+  const picker=makeTimetableSubjectPicker(teacherProfileState.subjectAliases[code]||"",0);
+  const select=picker.querySelector('[data-field="subject"]');
+  select.id="timetable-alias-subject";
+  select.setAttribute("aria-label","Nama penuh subjek");
+  picker.querySelector('[data-field="subject_custom"]').setAttribute("aria-label","Nama penuh subjek lain");
+  timetableAliasPicker.replaceChildren(picker);
+}
+
+function renderTimetableAliasList() {
+  timetableAliasList.replaceChildren();
+  for(const [code,name] of Object.entries(teacherProfileState.subjectAliases).sort()){
+    const item=document.createElement("li");
+    const button=document.createElement("button");
+    button.type="button";
+    button.className="secondary";
+    button.textContent=code+" · "+name;
+    button.addEventListener("click",()=>{
+      selectTimetableAlias(code);
+      document.getElementById("timetable-alias-subject").focus();
+    });
+    item.append(button);
+    timetableAliasList.append(item);
+  }
+  timetableAliasList.hidden=!timetableAliasList.children.length;
+}
+
+timetableAliasSave.addEventListener("click",async()=>{
+  if(!teacherProfileState.loaded || timetableAliasSave.disabled)return;
+  const code=timetableAliasCode.value.trim().toUpperCase();
+  const select=document.getElementById("timetable-alias-subject");
+  const subject=select.value===timetableOtherSubject
+    ? timetableAliasPicker.querySelector('[data-field="subject_custom"]').value.trim()
+    : select.value;
+  if(!/^[A-Z][A-Z0-9]{1,7}$/.test(code) || !subject){
+    timetableAliasStatus.textContent="Isi singkatan dan nama penuh subjek.";
+    return;
+  }
+  const aliases={...teacherProfileState.subjectAliases,[code]:subject};
+  timetableAliasSave.disabled=true;
+  timetableAliasStatus.textContent="Menyimpan padanan…";
+  try{
+    const result=await teacherApi("/api/web/teacher/timetable/subject-aliases","PUT",{
+      aliases,version:teacherProfileState.profileVersion,
+    });
+    if(!result.saved || typeof result.version!=="string")throw new Error("Pengesahan simpan tidak lengkap.");
+    teacherProfileState.profileVersion=result.version;
+    teacherProfileState.timetableVersion=result.version;
+    teacherProfileState.subjectAliases=aliases;
+    const expand=entry=>entry.subject.toUpperCase()===code ? {...entry,subject} : entry;
+    renderTeacherTimetable(timetableValueRows().map(expand));
+    teacherProfileState.savedTimetable=JSON.stringify(JSON.parse(teacherProfileState.savedTimetable).map(expand));
+    if(timetableReadRows.length)renderTimetableReadReport(true);
+    updateTimetableReaderButtons();
+    renderTimetableAliasList();
+    timetableAliasStatus.textContent=code+" dipadankan dengan "+subject+".";
+  }catch(err){
+    timetableAliasStatus.textContent=err.message;
+  }finally{
+    timetableAliasSave.disabled=false;
+  }
+});
 
 function sameTimetablePeriod(first,second) {
   return first.day===second.day && first.start===second.start && first.end===second.end
@@ -1041,30 +1127,61 @@ function renderUnclearTimetableCells(result) {
     : "";
 }
 
-function renderTimetableReadReport() {
+function renderTimetableReadReport(keepSelection=false) {
   const current=timetableValueRows();
+  const checked=new Set([...timetableReaderReportRows.querySelectorAll("input:checked")].map(input=>input.value));
   timetableReaderReportRows.replaceChildren();
-  for(const [index,row] of timetableReadRows.entries()){
+  const missingCodes=new Set();
+  let hasOverlaps=false;
+  for(const [index,detected] of timetableReadRows.entries()){
+    const row=resolvedTimetableReadRow(detected);
+    const needsAlias=Boolean(detected.subject_code && !row.subject);
+    if(needsAlias)missingCodes.add(detected.subject_code);
     const duplicate=current.some(period=>sameTimetablePeriod(period,row));
     const overlaps=current.some(period=>overlappingTimetablePeriod(period,row));
+    hasOverlaps ||= overlaps;
     const messages=[];
     if(duplicate)messages.push("Sudah ada");
     else if(overlaps)messages.push("Bertindih dengan jadual sedia ada");
-    if(!row.class_name || !row.subject)messages.push("Lengkapkan kelas atau subjek");
+    if(needsAlias)messages.push("Padankan singkatan");
+    else if(!row.class_name || !row.subject)messages.push("Lengkapkan kelas atau subjek");
     const tr=document.createElement("tr");
     const input=document.createElement("input");
     input.type="checkbox";
     input.value=String(index);
-    input.checked=!overlaps;
+    input.disabled=needsAlias;
+    input.checked=!needsAlias && (keepSelection ? checked.has(input.value) : !overlaps);
     input.setAttribute("aria-label","Pilih "+row.day+" "+row.start+" hingga "+row.end+
       (row.class_name ? ", "+row.class_name : "")+(row.subject ? ", "+row.subject : ""));
     const checkCell=document.createElement("td");
     checkCell.append(input);
     tr.append(checkCell);
-    for(const value of [row.day+" "+row.start+"–"+row.end,row.class_name||"Belum jelas",
-                         row.subject||"Belum jelas",messages.join(". ")||"—"]){
+    const values=[row.day+" "+row.start+"–"+row.end,row.class_name||"Belum jelas",
+                  row.subject||detected.subject_code||"Belum jelas",messages.join(". ")||"—"];
+    for(const [field,value] of values.entries()){
       const td=document.createElement("td");
       td.textContent=value;
+      if(field===2 && detected.subject_code){
+        if(needsAlias){
+          const button=document.createElement("button");
+          button.type="button";
+          button.className="secondary timetable-alias-link";
+          button.textContent=detected.subject_code;
+          button.setAttribute("aria-label","Padankan singkatan "+detected.subject_code);
+          button.addEventListener("click",()=>{
+            timetableSubjectAliases.open=true;
+            selectTimetableAlias(detected.subject_code);
+            timetableAliasStatus.textContent="";
+            document.getElementById("timetable-alias-subject").focus();
+          });
+          td.replaceChildren(button);
+        }else{
+          const code=document.createElement("small");
+          code.className="timetable-subject-code";
+          code.textContent=detected.subject_code;
+          td.append(code);
+        }
+      }
       tr.append(td);
     }
     timetableReaderReportRows.append(tr);
@@ -1072,10 +1189,18 @@ function renderTimetableReadReport() {
   timetableReaderReviewNote.textContent=timetableReadPartial
     ? "Bacaan belum lengkap. Cikgu boleh tambah waktu yang dipilih. Penggantian jadual tersedia apabila bacaan lengkap."
     : "Pilih waktu untuk ditambah. Semak dan simpan perubahan dalam borang Jadual Sedia Ada.";
-  if(current.length && timetableReadRows.some(row=>current.some(period=>overlappingTimetablePeriod(period,row))))
+  if(hasOverlaps)
     timetableReaderReviewNote.textContent+=" Waktu bertindih atau sudah ada tidak dipilih secara automatik.";
+  if(missingCodes.size){
+    timetableReaderReviewNote.textContent+=" Padankan "+[...missingCodes].join(", ")+" di bahagian Singkatan Subjek.";
+    if(!timetableReadPartial)
+      timetableReaderReviewNote.textContent+=" Pilihan ganti tersedia selepas semua singkatan dipadankan.";
+    timetableSubjectAliases.open=true;
+    if(!keepSelection || !missingCodes.has(timetableAliasCode.value))
+      selectTimetableAlias(missingCodes.values().next().value);
+  }
   timetableReaderReview.hidden=false;
-  document.getElementById("timetable-reader-review-title").focus();
+  if(!keepSelection)document.getElementById("timetable-reader-review-title").focus();
 }
 
 timetableReaderReportRows.addEventListener("change",updateTimetableReaderButtons);
@@ -1136,8 +1261,8 @@ timetableReaderStart.addEventListener("click",async()=>{
 });
 
 function applyReadTimetable(append) {
-  const selected=append ? selectedTimetableReadRows() : timetableReadRows;
-  if(!teacherProfileState.loaded || !selected.length || (!append && timetableReadPartial))return;
+  const selected=append ? selectedTimetableReadRows() : timetableReadRows.map(resolvedTimetableReadRow);
+  if(!teacherProfileState.loaded || !selected.length || (!append && timetableReaderReplace.disabled))return;
   const current=timetableValueRows();
   const added=append ? selected.filter(row=>!current.some(period=>sameTimetablePeriod(period,row))) : selected;
   if(append && !added.length){

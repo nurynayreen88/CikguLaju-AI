@@ -9,7 +9,8 @@ from web_v1_telegram_auth_routes import COOKIE, _config, _lookup
 from web_v1_sessions import verify_session_ticket
 from web.teacher_profile_store import (
     ProfileConflict, ProfileUnavailable, ProfileValidation,
-    get_profile, get_schedule, save_profile, save_schedule,
+    STANDARD_SUBJECT_CODES, SUBJECT_CODE, get_profile, get_schedule,
+    normalize_timetable_subject, save_profile, save_schedule, save_subject_aliases,
 )
 
 bp = Blueprint("teacher_profile_web", __name__)
@@ -158,14 +159,38 @@ def teacher_timetable_read():
         return jsonify(error="Pilih satu fail jadual."), 400
     try:
         profile = get_profile(conf["supabase_url"], conf["supabase_key"], account["telegram_user_id"])
-        return jsonify(read_uploaded_timetable(uploads[0].stream.read(MAX_UPLOAD + 1),
-                                                profile["class_names"]))
+        result = read_uploaded_timetable(uploads[0].stream.read(MAX_UPLOAD + 1),
+                                         profile["class_names"])
+        aliases = profile.get("timetable_subject_aliases") or {}
+        for row in result["entries"]:
+            printed = row["subject"]
+            row["subject"] = normalize_timetable_subject(printed, aliases)
+            if SUBJECT_CODE.fullmatch(printed) and printed not in STANDARD_SUBJECT_CODES:
+                row["subject_code"] = printed
+        return jsonify(result)
     except UnreadableTimetable as exc:
         return jsonify(error=str(exc)), 422
     except TimetableReaderUnavailable as exc:
         return jsonify(error=str(exc) or "Pembaca jadual belum dapat dihubungi. Cuba lagi."), 503
     except (ProfileValidation, ProfileUnavailable, ProfileConflict) as exc:
         return _failure(exc)
+
+
+@bp.put("/api/web/teacher/timetable/subject-aliases")
+def teacher_timetable_subject_aliases_put():
+    conf, account, err = _auth(return_account=True)
+    if err is not None:
+        return err
+    if not _can_read_timetable(account):
+        return jsonify(error="Singkatan jadual tersedia untuk pengguna Auto Baca Jadual Waktu."), 403
+    if request.args:
+        return jsonify(error="Parameter tidak dijangka"), 400
+    try:
+        version = save_subject_aliases(conf["supabase_url"], conf["supabase_key"],
+                                       account["telegram_user_id"], _body())
+    except (ProfileValidation, ProfileUnavailable, ProfileConflict) as exc:
+        return _failure(exc)
+    return jsonify(saved=True, version=version)
 
 
 @bp.put("/api/web/teacher/timetable")

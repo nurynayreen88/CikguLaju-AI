@@ -165,6 +165,11 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 #timetable-reader-report th{color:#184965}
 #timetable-reader-report input{width:18px;height:18px;margin:0;vertical-align:middle}
 #timetable-reader-report td:nth-child(2){white-space:nowrap}
+#timetable-subject-aliases{margin:12px 0}
+#timetable-alias-list{margin:8px 0;padding-left:22px;font-size:.88rem}
+#timetable-alias-code{max-width:12rem;text-transform:uppercase}
+.timetable-alias-link{padding:4px 8px;background:#fff;color:#1a526a;border:1px solid #c7d8de}
+.timetable-subject-code{display:block;font-size:.8rem;color:#426175}
 #timetable-reader-unclear{margin-top:12px}
 #timetable-reader-unclear ul{margin:8px 0;padding-left:22px;font-size:.88rem}
 #timetable-reader-actions button.secondary{background:#fff;color:#1a526a;border:1px solid #c7d8de}
@@ -815,6 +820,18 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     <button type="button" id="timetable-reader-start" disabled>Baca Jadual</button>
   </div>
   <p class="notice" id="timetable-reader-status" role="status" aria-live="polite"></p>
+  <details id="timetable-subject-aliases">
+    <summary>Singkatan Subjek</summary>
+    <ul id="timetable-alias-list" hidden></ul>
+    <label for="timetable-alias-code">Singkatan pada jadual</label>
+    <input id="timetable-alias-code" type="text" maxlength="8" placeholder="Contoh PD" autocapitalize="characters">
+    <label for="timetable-alias-subject">Nama penuh subjek</label>
+    <div id="timetable-alias-picker"></div>
+    <div class="profile-actions">
+      <button id="timetable-alias-save" type="button">Simpan Padanan</button>
+      <span id="timetable-alias-status" class="notice" role="status"></span>
+    </div>
+  </details>
   <section id="timetable-reader-review" aria-labelledby="timetable-reader-review-title" hidden>
     <h5 id="timetable-reader-review-title" tabindex="-1">Hasil Bacaan Jadual</h5>
     <p class="notice" id="timetable-reader-review-note"></p>
@@ -2087,7 +2104,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
 <script src="/assets/rph-today.js?v=science-copy-expanded-20261113"></script>
-<script src="/assets/teacher-profile.js?v=timetable-unclear-cells-20261114"></script>
+<script src="/assets/teacher-profile.js?v=timetable-subject-aliases-20261114"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>
 <script src="/assets/admin-usage.js?v=payment-inbox-20261114"></script>
