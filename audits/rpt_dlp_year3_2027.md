@@ -1,0 +1,8 @@
+# Sumber RPT DLP Year 3 SK 2027
+
+- DSKP KSSR (Semakan 2017) edisi bahasa Inggeris: [Science](https://sites.google.com/moe-dl.edu.my/sciencepanelhub/resources/year-3) dan [Mathematics](https://sites.google.com/moe-dl.edu.my/panitiamathselute2025/utama/2-dokumen-standard-kurikulum-dan-pentaksiran). Fail DSKP v3 diperiksa untuk 60 dan 102 kod LS. Pelan ini mengikut DSKP, dengan semakan silang ke [Dokumen Penjajaran Edisi 3](https://sites.google.com/moe-dl.edu.my/dokumenpenjajarankurikulum/home).
+- [Kalendar KPM 2027](https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik), Lampiran A–C. 42 julat tarikh bersama bagi kedua-dua kumpulan. Lesson 01 bermula dalam julat 4 Januari.
+- [E-Katalog KPM](https://moe.gov.my/storage/files/shares/Banner/E-Katalog%20Buku%20Teks%20KPM.pdf): Science BT073005 dan BA073004. Mathematics BT083006, BT083007 dan BA083005. Semakan terhadap [buku teks Science](https://anyflip.com/ejbrb/qeuz/basic), [buku aktiviti Science](https://anyflip.com/dswck/altu/basic), [Mathematics Part 1](https://anyflip.com/zqlz/bggt/basic), [Part 2](https://fliphtml5.com/snttz/jcaz) dan [buku aktiviti Mathematics](https://anyflip.com/dswck/yuiv/basic).
+- Bagi Science 8.1.2, perbandingan sifat menggunakan pemerhatian yang dibekalkan oleh guru. Murid merekod ujian penunjuk bagi klasifikasi bahan.
+- Minit: Science 2,880 dan Mathematics 5,760. Baris Review disediakan sebagai pengukuhan bagi LS yang telah diajar.
+- Turutan Lesson dan jumlah masa disahkan dalam Word dan PDF. Dokumen 6 halaman Science, 9 halaman Mathematics. Rujukan halaman ialah nombor cetakan buku.
