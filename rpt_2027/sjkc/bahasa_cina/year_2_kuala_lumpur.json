@@ -1,0 +1,4029 @@
+{
+  "academic_year": 2027,
+  "curriculum": "KSSR (Semakan 2017)",
+  "school_type": "SJKC",
+  "subject": "Bahasa Cina",
+  "year": 2,
+  "state": "Kuala Lumpur",
+  "calendar_group": "B",
+  "time_allocation_hours": 192,
+  "calendar_model": "192 slots of 60 minutes. Dates are suggested and can be adjusted to the school timetable.",
+  "reserve_dates": [
+    "2027-01-29",
+    "2027-03-04",
+    "2027-04-30",
+    "2027-06-30",
+    "2027-07-30",
+    "2027-09-30",
+    "2027-11-30"
+  ],
+  "additional_calendar_exclusions": [
+    "2027-01-22",
+    "2027-02-01",
+    "2027-02-05",
+    "2027-02-08",
+    "2027-02-09",
+    "2027-02-10",
+    "2027-02-11",
+    "2027-02-12",
+    "2027-02-24",
+    "2027-05-17",
+    "2027-05-18",
+    "2027-05-19",
+    "2027-05-20",
+    "2027-05-21",
+    "2027-06-07",
+    "2027-06-08",
+    "2027-08-16",
+    "2027-09-16",
+    "2027-10-27",
+    "2027-10-28",
+    "2027-10-29"
+  ],
+  "sources": {
+    "rpt_reference": "https://www.scribd.com/document/983289184/Y2-BC-RPT-2026",
+    "dskp": "https://asiemodel.net/wp-content/uploads/2022/08/3-DSKP-KSSR-SEMAKAN-2017-BAHASA-CINA-TAHUN-2.pdf",
+    "textbook": "https://fliphtml5.com/izabd/qmwm/KSSRs-Bahasa_Cina_SJKC_Tahun_2/",
+    "workbook_1": "https://fliphtml5.com/huzej/jqwh",
+    "workbook_2": "https://fliphtml5.com/huzej/lscv/%E4%BA%8C%E5%B9%B4%E7%BA%A7%E5%8D%8E%E6%96%87%E4%BD%9C%E4%B8%9A%EF%BC%88%E4%B8%8B%E5%86%8C%EF%BC%89/",
+    "calendar": "https://www.moe.gov.my/storage/files/shares/pekeliling_dan_garis_panduan/surat_siaran/SS%20KPM%20Bil.%201%20Tahun%202026%20-%20Kalendar%20Akademik%20Tahun%202027.pdf",
+    "time_allocation": "https://id.scribd.com/presentation/430536598/TAKLIMAT-SPI-BIL-8-2016-RPT-dan-Jadual-Waktu-Satish-SKK6-pptx",
+    "public_holidays": "https://www.kabinet.gov.my/hari-kelepasan-am/"
+  },
+  "lessons": [
+    {
+      "block": "Z1",
+      "unit": "识字一",
+      "topic": "我的小天地",
+      "kind": "activity",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "借图认读学习角物品，把名称与用途配对。",
+      "textbook_pages": "1",
+      "workbook": {
+        "volume": 1,
+        "pages": "1",
+        "scope": "activity"
+      },
+      "pdp": 1,
+      "date": "2027-01-04",
+      "duration_minutes": 60
+    },
+    {
+      "block": "Z1",
+      "unit": "识字一",
+      "topic": "我的小天地",
+      "kind": "activity",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "在田字格练写五个范字，核对笔顺和结构。",
+      "textbook_pages": "1",
+      "workbook": {
+        "volume": 1,
+        "pages": "1",
+        "scope": "activity"
+      },
+      "pdp": 2,
+      "date": "2027-01-05",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U1",
+      "unit": "第一单元 丰富多彩的校园生活",
+      "topic": "我们的校园故事",
+      "kind": "activity",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "focus": "找出两项校园活动，用诗句说明学习体验。",
+      "textbook_pages": "2–3",
+      "workbook": {
+        "volume": 1,
+        "pages": "2",
+        "scope": "activity"
+      },
+      "pdp": 3,
+      "date": "2027-01-06",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U1",
+      "unit": "第一单元 丰富多彩的校园生活",
+      "topic": "热闹的乐园",
+      "kind": "activity",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "focus": "用人物、活动及声音线索说明课间热闹的气氛。",
+      "textbook_pages": "4",
+      "workbook": {
+        "volume": 1,
+        "pages": "3",
+        "scope": "activity"
+      },
+      "pdp": 4,
+      "date": "2027-01-07",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U1",
+      "unit": "第一单元 丰富多彩的校园生活",
+      "topic": "两课生字书写",
+      "kind": "activity",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "练写两课生字，订正部件位置或笔画。",
+      "textbook_pages": "2–4",
+      "workbook": {
+        "volume": 1,
+        "pages": "4",
+        "scope": "activity"
+      },
+      "pdp": 5,
+      "date": "2027-01-08",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U1",
+      "unit": "第一单元 丰富多彩的校园生活",
+      "topic": "积累运用：校园词语",
+      "kind": "activity",
+      "sk": [
+        "4.1",
+        "5.3"
+      ],
+      "sp": [
+        "4.1.1",
+        "5.3.1"
+      ],
+      "focus": "用叠词和选词游戏表达不同课间动作。",
+      "textbook_pages": "5",
+      "workbook": {
+        "volume": 1,
+        "pages": "5–6",
+        "scope": "activity"
+      },
+      "pdp": 6,
+      "date": "2027-01-11",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U1",
+      "unit": "第一单元 丰富多彩的校园生活",
+      "topic": "想想说说、课间写话",
+      "kind": "activity",
+      "sk": [
+        "1.3",
+        "3.2"
+      ],
+      "sp": [
+        "1.3.2",
+        "3.2.1"
+      ],
+      "focus": "描述同学的两个可观察特点，写出课间活动地点和原因。",
+      "textbook_pages": "5",
+      "workbook": {
+        "volume": 1,
+        "pages": "7",
+        "scope": "activity"
+      },
+      "pdp": 7,
+      "date": "2027-01-12",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U2",
+      "unit": "第二单元 生活多美好",
+      "topic": "看图说话：户外写生",
+      "kind": "activity",
+      "sk": [
+        "1.3"
+      ],
+      "sp": [
+        "1.3.1"
+      ],
+      "focus": "根据图片口述时间、地点、人物和写生经过。",
+      "textbook_pages": "6",
+      "workbook": null,
+      "pdp": 8,
+      "date": "2027-01-13",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U2",
+      "unit": "第二单元 生活多美好",
+      "topic": "美术课",
+      "kind": "activity",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "focus": "比较添画前后画面，用两个例子解释变化。",
+      "textbook_pages": "6–7",
+      "workbook": {
+        "volume": 1,
+        "pages": "8",
+        "scope": "activity"
+      },
+      "pdp": 9,
+      "date": "2027-01-14",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U2",
+      "unit": "第二单元 生活多美好",
+      "topic": "小猫看着我",
+      "kind": "activity",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "focus": "用两处情节说明女孩为何让小猫觉得她专心。",
+      "textbook_pages": "8–9",
+      "workbook": {
+        "volume": 1,
+        "pages": "9",
+        "scope": "activity"
+      },
+      "pdp": 10,
+      "date": "2027-01-15",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U2",
+      "unit": "第二单元 生活多美好",
+      "topic": "两课生字书写",
+      "kind": "activity",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "按笔顺书写选字，对照范字修正笔画和部件位置。",
+      "textbook_pages": "7, 9",
+      "workbook": {
+        "volume": 1,
+        "pages": "10",
+        "scope": "activity"
+      },
+      "pdp": 11,
+      "date": "2027-01-18",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U2",
+      "unit": "第二单元 生活多美好",
+      "topic": "读读想想：冒号和引号",
+      "kind": "activity",
+      "sk": [
+        "5.5"
+      ],
+      "sp": [
+        "5.5.1"
+      ],
+      "focus": "辨认说话者与对话内容，给简短对话补上冒号、引号。",
+      "textbook_pages": "10",
+      "workbook": {
+        "volume": 1,
+        "pages": "11",
+        "scope": "activity"
+      },
+      "pdp": 12,
+      "date": "2027-01-19",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U2",
+      "unit": "第二单元 生活多美好",
+      "topic": "读读说说：两篇课文",
+      "kind": "activity",
+      "sk": [
+        "2.2",
+        "2.1"
+      ],
+      "sp": [
+        "2.2.1",
+        "2.1.2"
+      ],
+      "focus": "练习朗读的停顿和语气，并以文中线索回答问题。",
+      "textbook_pages": "10",
+      "workbook": null,
+      "pdp": 13,
+      "date": "2027-01-20",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U2",
+      "unit": "第二单元 生活多美好",
+      "topic": "古诗：所见",
+      "kind": "poem",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "focus": "背诵古诗，解释牧童由歌唱转为安静的原因。",
+      "textbook_pages": "10",
+      "workbook": null,
+      "pdp": 14,
+      "date": "2027-01-21",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U2",
+      "unit": "第二单元 生活多美好",
+      "topic": "看图写话：美术课",
+      "kind": "activity",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "按图写三句连贯的话，交代人物、活动和想添画的景物。",
+      "textbook_pages": "6–7",
+      "workbook": {
+        "volume": 1,
+        "pages": "12–13",
+        "scope": "activity"
+      },
+      "pdp": 15,
+      "date": "2027-01-25",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U2",
+      "unit": "第二单元 生活多美好",
+      "topic": "深广课文：放学路上",
+      "kind": "extension",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "借上下文解释雨中“花朵”指什么，描绘雨停后的画面。",
+      "textbook_pages": "11",
+      "workbook": null,
+      "pdp": 16,
+      "date": "2027-01-26",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U3",
+      "unit": "第三单元 温暖的家",
+      "topic": "听听说说：家",
+      "kind": "activity",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.2"
+      ],
+      "focus": "听读童诗，选出一个画面，用关键词说出它为何感人。",
+      "textbook_pages": "12",
+      "workbook": null,
+      "pdp": 17,
+      "date": "2027-01-27",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U3",
+      "unit": "第三单元 温暖的家",
+      "topic": "我爱我家 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "找出家人共同做的事，用图文线索说出家庭气氛。",
+      "textbook_pages": "13",
+      "workbook": {
+        "volume": 1,
+        "pages": "14",
+        "scope": "activity"
+      },
+      "pdp": 18,
+      "date": "2027-01-28",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U3",
+      "unit": "第三单元 温暖的家",
+      "topic": "我爱我家 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "比较诗中不同画面，选一处说出能感受到的关爱。",
+      "textbook_pages": "13",
+      "workbook": null,
+      "pdp": 19,
+      "date": "2027-02-02",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U3",
+      "unit": "第三单元 温暖的家",
+      "topic": "借生日 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "按照故事发展排列生日礼物与对话，解释题目里的“借”。",
+      "textbook_pages": "14–15",
+      "workbook": {
+        "volume": 1,
+        "pages": "15",
+        "scope": "activity"
+      },
+      "pdp": 20,
+      "date": "2027-02-03",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U3",
+      "unit": "第三单元 温暖的家",
+      "topic": "借生日 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "从人物的举动推想心情，并用一个情节说明理由。",
+      "textbook_pages": "14–15",
+      "workbook": null,
+      "pdp": 21,
+      "date": "2027-02-04",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U3",
+      "unit": "第三单元 温暖的家",
+      "topic": "朗读与部首：心部和日部",
+      "kind": "activity",
+      "sk": [
+        "2.2",
+        "5.1"
+      ],
+      "sp": [
+        "2.2.1",
+        "5.1.2"
+      ],
+      "focus": "读出欢快语气，按心部和日部整理本单元的生字。",
+      "textbook_pages": "16",
+      "workbook": {
+        "volume": 1,
+        "pages": "14–19",
+        "scope": "unit"
+      },
+      "pdp": 22,
+      "date": "2027-02-15",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U3",
+      "unit": "第三单元 温暖的家",
+      "topic": "读读说说：灯",
+      "kind": "activity",
+      "sk": [
+        "4.4"
+      ],
+      "sp": [
+        "4.4.1"
+      ],
+      "focus": "交流树上的“灯”和家里灯光带来的不同感受。",
+      "textbook_pages": "17",
+      "workbook": null,
+      "pdp": 23,
+      "date": "2027-02-16",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U3",
+      "unit": "第三单元 温暖的家",
+      "topic": "亲情写话",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "借“我爱我家”的句式写三句，说明一件家人帮助自己的事。",
+      "textbook_pages": "13–15",
+      "workbook": null,
+      "pdp": 24,
+      "date": "2027-02-17",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L1",
+      "unit": "语文乐园一",
+      "topic": "我的发现：汉字与图意",
+      "kind": "activity",
+      "sk": [
+        "5.1",
+        "2.1"
+      ],
+      "sp": [
+        "5.1.1",
+        "2.1.1"
+      ],
+      "focus": "从图意解释“泪”“卡”“奔”中的字形线索。",
+      "textbook_pages": "18",
+      "workbook": {
+        "volume": 1,
+        "pages": "20",
+        "scope": "activity"
+      },
+      "pdp": 25,
+      "date": "2027-02-18",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L1",
+      "unit": "语文乐园一",
+      "topic": "读读想想：扩写动作",
+      "kind": "activity",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "比较原句与扩写句，加入动作或比喻使句意具体。",
+      "textbook_pages": "18",
+      "workbook": {
+        "volume": 1,
+        "pages": "20",
+        "scope": "activity"
+      },
+      "pdp": 26,
+      "date": "2027-02-19",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L1",
+      "unit": "语文乐园一",
+      "topic": "汉语拼音：ai、ei、ao、ou",
+      "kind": "activity",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.1"
+      ],
+      "focus": "拼读四个复韵母组成的音节，结合图片辨认声调。",
+      "textbook_pages": "19",
+      "workbook": {
+        "volume": 1,
+        "pages": "21",
+        "scope": "activity"
+      },
+      "pdp": 27,
+      "date": "2027-02-22",
+      "duration_minutes": 60
+    },
+    {
+      "block": "E1",
+      "unit": "阶段评估一",
+      "topic": "校园生活与亲情",
+      "kind": "assessment",
+      "sk": [
+        "2.1",
+        "3.1"
+      ],
+      "sp": [
+        "2.1.1",
+        "2.1.2",
+        "3.1.1"
+      ],
+      "focus": "完成评估一，按认读、理解和书写表现记录后续辅导重点。",
+      "textbook_pages": "2–19",
+      "workbook": {
+        "volume": 1,
+        "pages": "22",
+        "scope": "activity"
+      },
+      "pdp": 28,
+      "date": "2027-02-23",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U4",
+      "unit": "第四单元 我们的文化",
+      "topic": "想想说说：新年习俗",
+      "kind": "activity",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2"
+      ],
+      "focus": "围绕一项新年习俗，向同伴提出两个恰当的问题。",
+      "textbook_pages": "20",
+      "workbook": null,
+      "pdp": 29,
+      "date": "2027-02-25",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U4",
+      "unit": "第四单元 我们的文化",
+      "topic": "小渔童和年画 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "用故事线索说明小渔童和年画的关系。",
+      "textbook_pages": "20–21",
+      "workbook": {
+        "volume": 1,
+        "pages": "23",
+        "scope": "activity"
+      },
+      "pdp": 30,
+      "date": "2027-02-26",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U4",
+      "unit": "第四单元 我们的文化",
+      "topic": "小渔童和年画 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "比较故事开头和结尾，解释年画为什么格外受人喜爱。",
+      "textbook_pages": "20–21",
+      "workbook": null,
+      "pdp": 31,
+      "date": "2027-03-01",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U4",
+      "unit": "第四单元 我们的文化",
+      "topic": "吃年糕 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "从短文找出年糕的相关习俗和含义。",
+      "textbook_pages": "22–23",
+      "workbook": {
+        "volume": 1,
+        "pages": "24",
+        "scope": "activity"
+      },
+      "pdp": 32,
+      "date": "2027-03-02",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U4",
+      "unit": "第四单元 我们的文化",
+      "topic": "吃年糕 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "把年糕的样子、吃法或寓意整理为图文介绍。",
+      "textbook_pages": "22–23",
+      "workbook": null,
+      "pdp": 33,
+      "date": "2027-03-03",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U4",
+      "unit": "第四单元 我们的文化",
+      "topic": "积累运用：部首和贺词",
+      "kind": "activity",
+      "sk": [
+        "5.1",
+        "4.1"
+      ],
+      "sp": [
+        "5.1.2",
+        "4.1.1"
+      ],
+      "focus": "归类火部和金部的字，轮流选用符合对象的新年贺词。",
+      "textbook_pages": "24",
+      "workbook": {
+        "volume": 1,
+        "pages": "23–28",
+        "scope": "unit"
+      },
+      "pdp": 34,
+      "date": "2027-03-05",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U4",
+      "unit": "第四单元 我们的文化",
+      "topic": "深广课文：新年",
+      "kind": "extension",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "从文章找出新年的具体场景，说说节日里人物的感受。",
+      "textbook_pages": "25",
+      "workbook": null,
+      "pdp": 35,
+      "date": "2027-03-15",
+      "duration_minutes": 60
+    },
+    {
+      "block": "Z2",
+      "unit": "识字二",
+      "topic": "小白兔种果树",
+      "kind": "activity",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "从儿歌里找出带竹字头或提手旁的字，并说明字义。",
+      "textbook_pages": "26",
+      "workbook": {
+        "volume": 1,
+        "pages": "29",
+        "scope": "activity"
+      },
+      "pdp": 36,
+      "date": "2027-03-16",
+      "duration_minutes": 60
+    },
+    {
+      "block": "Z2",
+      "unit": "识字二",
+      "topic": "小白兔种果树：写字",
+      "kind": "activity",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "书写该课选字，对照部件示范检查笔顺与左右比例。",
+      "textbook_pages": "26",
+      "workbook": {
+        "volume": 1,
+        "pages": "29",
+        "scope": "activity"
+      },
+      "pdp": 37,
+      "date": "2027-03-17",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U5",
+      "unit": "第五单元 珍贵的友情",
+      "topic": "三个好朋友 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "整理三个朋友种树时各自的做法，按先后复述关键情节。",
+      "textbook_pages": "27–28",
+      "workbook": {
+        "volume": 1,
+        "pages": "30",
+        "scope": "activity"
+      },
+      "pdp": 38,
+      "date": "2027-03-18",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U5",
+      "unit": "第五单元 珍贵的友情",
+      "topic": "三个好朋友 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "选一处举动，说明怎样看出朋友彼此在意。",
+      "textbook_pages": "27–28",
+      "workbook": null,
+      "pdp": 39,
+      "date": "2027-03-19",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U5",
+      "unit": "第五单元 珍贵的友情",
+      "topic": "池塘边的叫声 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "辨认池塘边的说话者，整理小鱼想知道什么及青蛙怎样回应。",
+      "textbook_pages": "29–30",
+      "workbook": {
+        "volume": 1,
+        "pages": "31",
+        "scope": "activity"
+      },
+      "pdp": 40,
+      "date": "2027-03-22",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U5",
+      "unit": "第五单元 珍贵的友情",
+      "topic": "池塘边的叫声 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "说明青蛙怎样让小鱼认识岸上的世界，引用一处依据。",
+      "textbook_pages": "29–30",
+      "workbook": null,
+      "pdp": 41,
+      "date": "2027-03-23",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U5",
+      "unit": "第五单元 珍贵的友情",
+      "topic": "想想说说：大扫除分工",
+      "kind": "activity",
+      "sk": [
+        "1.1",
+        "2.2"
+      ],
+      "sp": [
+        "1.1.1",
+        "2.2.1"
+      ],
+      "focus": "礼貌提出分工建议，分角色朗读，听辨人物的语气。",
+      "textbook_pages": "31",
+      "workbook": {
+        "volume": 1,
+        "pages": "30–35",
+        "scope": "unit"
+      },
+      "pdp": 42,
+      "date": "2027-03-24",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U5",
+      "unit": "第五单元 珍贵的友情",
+      "topic": "读读比比：感叹句",
+      "kind": "activity",
+      "sk": [
+        "5.4"
+      ],
+      "sp": [
+        "5.4.1"
+      ],
+      "focus": "辨认感叹句表达的情绪并读出得体的语气。",
+      "textbook_pages": "31",
+      "workbook": {
+        "volume": 1,
+        "pages": "30–35",
+        "scope": "unit"
+      },
+      "pdp": 43,
+      "date": "2027-03-25",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U5",
+      "unit": "第五单元 珍贵的友情",
+      "topic": "古诗：赠汪伦",
+      "kind": "poem",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "focus": "有节奏地背诵，用送别的画面说明朋友间的情意。",
+      "textbook_pages": "31",
+      "workbook": null,
+      "pdp": 44,
+      "date": "2027-03-26",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U5",
+      "unit": "第五单元 珍贵的友情",
+      "topic": "生字书写：校园合作",
+      "kind": "writing",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写两课生字，比较“助”和“锄”，按田字格检查结构。",
+      "textbook_pages": "28, 30",
+      "workbook": {
+        "volume": 1,
+        "pages": "32",
+        "scope": "activity"
+      },
+      "pdp": 45,
+      "date": "2027-03-29",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U6",
+      "unit": "第六单元 动物世界",
+      "topic": "想想说说：松鼠的特征",
+      "kind": "activity",
+      "sk": [
+        "1.3"
+      ],
+      "sp": [
+        "1.3.2"
+      ],
+      "focus": "描述松鼠的尾巴、动作和食物，用细节补充观察。",
+      "textbook_pages": "32",
+      "workbook": null,
+      "pdp": 46,
+      "date": "2027-03-30",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U6",
+      "unit": "第六单元 动物世界",
+      "topic": "我的观察日记 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "圈出记录对象、时间和观察到的变化。",
+      "textbook_pages": "32–33",
+      "workbook": {
+        "volume": 1,
+        "pages": "36",
+        "scope": "activity"
+      },
+      "pdp": 47,
+      "date": "2027-03-31",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U6",
+      "unit": "第六单元 动物世界",
+      "topic": "我的观察日记 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "辨别观察事实和个人感想，并指出日记中的一例。",
+      "textbook_pages": "32–33",
+      "workbook": null,
+      "pdp": 48,
+      "date": "2027-04-01",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U6",
+      "unit": "第六单元 动物世界",
+      "topic": "动物的心声 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "把各动物的特点与心声配对，说明语句表达的意思。",
+      "textbook_pages": "34–35",
+      "workbook": {
+        "volume": 1,
+        "pages": "37",
+        "scope": "activity"
+      },
+      "pdp": 49,
+      "date": "2027-04-02",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U6",
+      "unit": "第六单元 动物世界",
+      "topic": "动物的心声 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "从动物的愿望推想它们在意的事，并说明一条依据。",
+      "textbook_pages": "34–35",
+      "workbook": null,
+      "pdp": 50,
+      "date": "2027-04-05",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U6",
+      "unit": "第六单元 动物世界",
+      "topic": "读读演演：动物对话",
+      "kind": "activity",
+      "sk": [
+        "5.5",
+        "4.3"
+      ],
+      "sp": [
+        "5.5.1",
+        "4.3.1"
+      ],
+      "focus": "根据顿号辨认并列词语，用恰当语气表演动物对话。",
+      "textbook_pages": "36",
+      "workbook": {
+        "volume": 1,
+        "pages": "36–42",
+        "scope": "unit"
+      },
+      "pdp": 51,
+      "date": "2027-04-06",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U6",
+      "unit": "第六单元 动物世界",
+      "topic": "写观察日记",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "用日期及天气开头，从看到的动作写两句观察、一句感想。",
+      "textbook_pages": "32–33",
+      "workbook": null,
+      "pdp": 52,
+      "date": "2027-04-07",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U6",
+      "unit": "第六单元 动物世界",
+      "topic": "深广课文：蜻蜓落在睡莲上",
+      "kind": "extension",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "整理蜻蜓与睡莲的情节线索，分享最有画面感的一处。",
+      "textbook_pages": "37–38",
+      "workbook": null,
+      "pdp": 53,
+      "date": "2027-04-08",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L2",
+      "unit": "语文乐园二",
+      "topic": "我的发现：同音字字形",
+      "kind": "activity",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "给“象”“像”“橡”等字配词，辨认部件和语义。",
+      "textbook_pages": "39",
+      "workbook": {
+        "volume": 1,
+        "pages": "43",
+        "scope": "activity"
+      },
+      "pdp": 54,
+      "date": "2027-04-09",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L2",
+      "unit": "语文乐园二",
+      "topic": "读读想想：先后与转折",
+      "kind": "activity",
+      "sk": [
+        "5.4"
+      ],
+      "sp": [
+        "5.4.1"
+      ],
+      "focus": "比较短句和连接句，选用“但是”或“接着”连接。",
+      "textbook_pages": "39",
+      "workbook": {
+        "volume": 1,
+        "pages": "43",
+        "scope": "activity"
+      },
+      "pdp": 55,
+      "date": "2027-04-12",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L2",
+      "unit": "语文乐园二",
+      "topic": "汉语拼音：ie、iao、iu 等",
+      "kind": "activity",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.1"
+      ],
+      "focus": "拼读音节，分辨四个韵母并按图片读词。",
+      "textbook_pages": "40",
+      "workbook": {
+        "volume": 1,
+        "pages": "44",
+        "scope": "activity"
+      },
+      "pdp": 56,
+      "date": "2027-04-13",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U7",
+      "unit": "第七单元 有趣的游戏",
+      "topic": "听听做做：排椅子",
+      "kind": "activity",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.1"
+      ],
+      "focus": "听取摆放椅子和后续活动的指令，按正确顺序回应。",
+      "textbook_pages": "41",
+      "workbook": null,
+      "pdp": 57,
+      "date": "2027-04-14",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U7",
+      "unit": "第七单元 有趣的游戏",
+      "topic": "坐椅子 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "把每把椅子与男孩想象的身份及动作配对。",
+      "textbook_pages": "41–42",
+      "workbook": {
+        "volume": 1,
+        "pages": "45",
+        "scope": "activity"
+      },
+      "pdp": 58,
+      "date": "2027-04-15",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U7",
+      "unit": "第七单元 有趣的游戏",
+      "topic": "坐椅子 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "比较男孩在不同椅子上的想象，说明一处童趣。",
+      "textbook_pages": "41–42",
+      "workbook": null,
+      "pdp": 59,
+      "date": "2027-04-16",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U7",
+      "unit": "第七单元 有趣的游戏",
+      "topic": "风筝，快乐地飞着！ · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "从诗句找出风筝的动作和描绘风筝的词语。",
+      "textbook_pages": "43",
+      "workbook": {
+        "volume": 1,
+        "pages": "46",
+        "scope": "activity"
+      },
+      "pdp": 60,
+      "date": "2027-04-19",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U7",
+      "unit": "第七单元 有趣的游戏",
+      "topic": "风筝，快乐地飞着！ · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用一处动作或画面说明诗里为什么有快乐的感觉。",
+      "textbook_pages": "43",
+      "workbook": null,
+      "pdp": 61,
+      "date": "2027-04-20",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U7",
+      "unit": "第七单元 有趣的游戏",
+      "topic": "读读演演：坐椅子",
+      "kind": "activity",
+      "sk": [
+        "2.2",
+        "5.1"
+      ],
+      "sp": [
+        "2.2.1",
+        "5.1.1"
+      ],
+      "focus": "借动作读出角色变化，比较“步”“龙”的字形演变。",
+      "textbook_pages": "44–45",
+      "workbook": {
+        "volume": 1,
+        "pages": "45–51",
+        "scope": "unit"
+      },
+      "pdp": 62,
+      "date": "2027-04-21",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U7",
+      "unit": "第七单元 有趣的游戏",
+      "topic": "古诗：江南",
+      "kind": "poem",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "focus": "背诵古诗，用位置图表示鱼儿游动的方位。",
+      "textbook_pages": "45",
+      "workbook": null,
+      "pdp": 63,
+      "date": "2027-04-22",
+      "duration_minutes": 60
+    },
+    {
+      "block": "E2",
+      "unit": "阶段评估二",
+      "topic": "文化、友情、动物与游戏",
+      "kind": "assessment",
+      "sk": [
+        "2.1",
+        "3.1"
+      ],
+      "sp": [
+        "2.1.1",
+        "2.1.2",
+        "3.1.1"
+      ],
+      "focus": "完成评估二，依据答题说明和生字笔顺表现订正错题。",
+      "textbook_pages": "20–45",
+      "workbook": {
+        "volume": 1,
+        "pages": "52",
+        "scope": "activity"
+      },
+      "pdp": 64,
+      "date": "2027-04-23",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U8",
+      "unit": "第八单元 乡野风光好",
+      "topic": "想想说说：回乡经历",
+      "kind": "activity",
+      "sk": [
+        "1.3"
+      ],
+      "sp": [
+        "1.3.1"
+      ],
+      "focus": "按时间、地点、人物与经过分享一次乡村见闻。",
+      "textbook_pages": "46",
+      "workbook": null,
+      "pdp": 65,
+      "date": "2027-04-26",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U8",
+      "unit": "第八单元 乡野风光好",
+      "topic": "回乡下 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "按叙述顺序整理回乡所见景物和活动。",
+      "textbook_pages": "47–48",
+      "workbook": {
+        "volume": 1,
+        "pages": "53",
+        "scope": "activity"
+      },
+      "pdp": 66,
+      "date": "2027-04-27",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U8",
+      "unit": "第八单元 乡野风光好",
+      "topic": "回乡下 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "选一处景物描写，说明它如何表现乡村生活的特色。",
+      "textbook_pages": "47–48",
+      "workbook": null,
+      "pdp": 67,
+      "date": "2027-04-28",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U8",
+      "unit": "第八单元 乡野风光好",
+      "topic": "鱼米之乡——适耕庄 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "在图文中找出与稻米、渔业有关的资讯。",
+      "textbook_pages": "49–50",
+      "workbook": {
+        "volume": 1,
+        "pages": "54",
+        "scope": "activity"
+      },
+      "pdp": 68,
+      "date": "2027-04-29",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U8",
+      "unit": "第八单元 乡野风光好",
+      "topic": "鱼米之乡——适耕庄 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "对照两类景观，用文字线索解释“鱼米之乡”的称呼。",
+      "textbook_pages": "49–50",
+      "workbook": null,
+      "pdp": 69,
+      "date": "2027-05-03",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U8",
+      "unit": "第八单元 乡野风光好",
+      "topic": "读读比比、背背演演",
+      "kind": "activity",
+      "sk": [
+        "5.3",
+        "4.3"
+      ],
+      "sp": [
+        "5.3.1",
+        "4.3.1"
+      ],
+      "focus": "辨析近似字并选词，背诵《回乡下》后配合动作呈现。",
+      "textbook_pages": "51",
+      "workbook": {
+        "volume": 1,
+        "pages": "53–59",
+        "scope": "unit"
+      },
+      "pdp": 70,
+      "date": "2027-05-04",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U8",
+      "unit": "第八单元 乡野风光好",
+      "topic": "看图写话：乡野风光",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "选稻田或渔村图，分别写人物动作、景物与自己的感受。",
+      "textbook_pages": "47–50",
+      "workbook": null,
+      "pdp": 71,
+      "date": "2027-05-05",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U8",
+      "unit": "第八单元 乡野风光好",
+      "topic": "深广课文：我的风筝",
+      "kind": "extension",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "按文字找出风筝特征，说出一处表现心情的描写。",
+      "textbook_pages": "52–53",
+      "workbook": null,
+      "pdp": 72,
+      "date": "2027-05-06",
+      "duration_minutes": 60
+    },
+    {
+      "block": "Z3",
+      "unit": "识字三",
+      "topic": "添“口”歌",
+      "kind": "activity",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "通过儿歌拆合“口”部件，用例词区分新字含义。",
+      "textbook_pages": "54",
+      "workbook": {
+        "volume": 1,
+        "pages": "60",
+        "scope": "activity"
+      },
+      "pdp": 73,
+      "date": "2027-05-07",
+      "duration_minutes": 60
+    },
+    {
+      "block": "Z3",
+      "unit": "识字三",
+      "topic": "添“口”歌：写字",
+      "kind": "activity",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "练写含“口”的选字，比较部件处于不同时的位置。",
+      "textbook_pages": "54",
+      "workbook": {
+        "volume": 1,
+        "pages": "60",
+        "scope": "activity"
+      },
+      "pdp": 74,
+      "date": "2027-05-10",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U9",
+      "unit": "第九单元 童年是一首歌",
+      "topic": "童年的问号 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "圈出课文里的几个问号，找出引发问题的事物。",
+      "textbook_pages": "55–56",
+      "workbook": {
+        "volume": 1,
+        "pages": "61",
+        "scope": "activity"
+      },
+      "pdp": 75,
+      "date": "2027-05-11",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U9",
+      "unit": "第九单元 童年是一首歌",
+      "topic": "童年的问号 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "选一个问号，说明它怎样表现儿童观察世界的方式。",
+      "textbook_pages": "55–56",
+      "workbook": null,
+      "pdp": 76,
+      "date": "2027-05-12",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U9",
+      "unit": "第九单元 童年是一首歌",
+      "topic": "聪明的司马光 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "按事情经过排列人物的处境、做法和结果。",
+      "textbook_pages": "57–58",
+      "workbook": {
+        "volume": 1,
+        "pages": "62",
+        "scope": "activity"
+      },
+      "pdp": 77,
+      "date": "2027-05-13",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U9",
+      "unit": "第九单元 童年是一首歌",
+      "topic": "聪明的司马光 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "比较几个角色的反应，从行动说明司马光的特点。",
+      "textbook_pages": "57–58",
+      "workbook": null,
+      "pdp": 78,
+      "date": "2027-05-14",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U9",
+      "unit": "第九单元 童年是一首歌",
+      "topic": "读读想想：提出问题",
+      "kind": "activity",
+      "sk": [
+        "1.1",
+        "5.1"
+      ],
+      "sp": [
+        "1.1.2",
+        "5.1.1"
+      ],
+      "focus": "把观察变成能回答的问题，认识“首”和“壶”的字形。",
+      "textbook_pages": "59",
+      "workbook": {
+        "volume": 1,
+        "pages": "61–67",
+        "scope": "unit"
+      },
+      "pdp": 79,
+      "date": "2027-06-09",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U9",
+      "unit": "第九单元 童年是一首歌",
+      "topic": "读读说说：把屋子装满",
+      "kind": "activity",
+      "sk": [
+        "4.4"
+      ],
+      "sp": [
+        "4.4.1"
+      ],
+      "focus": "比较三个孩子的做法，分享自己认为有效的办法。",
+      "textbook_pages": "60",
+      "workbook": null,
+      "pdp": 80,
+      "date": "2027-06-10",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L3",
+      "unit": "语文乐园三",
+      "topic": "我的发现：添笔变字",
+      "kind": "activity",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "加笔组成“由”“力”“牛”“右”等字并匹配词语。",
+      "textbook_pages": "61",
+      "workbook": {
+        "volume": 1,
+        "pages": "68",
+        "scope": "activity"
+      },
+      "pdp": 81,
+      "date": "2027-06-11",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L3",
+      "unit": "语文乐园三",
+      "topic": "读读想想：组织景物句",
+      "kind": "activity",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "按景物、动作和特点组织词组，比较重组前后的表达。",
+      "textbook_pages": "61",
+      "workbook": {
+        "volume": 1,
+        "pages": "68",
+        "scope": "activity"
+      },
+      "pdp": 82,
+      "date": "2027-06-14",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L3",
+      "unit": "语文乐园三",
+      "topic": "汉语拼音：ui、uai、an",
+      "kind": "activity",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.1"
+      ],
+      "focus": "按韵母给音节分类，拼读带不同声调的词语。",
+      "textbook_pages": "62",
+      "workbook": {
+        "volume": 1,
+        "pages": "69",
+        "scope": "activity"
+      },
+      "pdp": 83,
+      "date": "2027-06-15",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U10",
+      "unit": "第十单元 阅读世界真有趣",
+      "topic": "听听做做：申请借书卡",
+      "kind": "activity",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.1"
+      ],
+      "focus": "听出申请日期、需带物品和行动要求，作出适当回应。",
+      "textbook_pages": "63",
+      "workbook": null,
+      "pdp": 84,
+      "date": "2027-06-16",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U10",
+      "unit": "第十单元 阅读世界真有趣",
+      "topic": "拜访书的家 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "结合文字辨识“书的家”及其中能进行的活动。",
+      "textbook_pages": "63–64",
+      "workbook": {
+        "volume": 1,
+        "pages": "70",
+        "scope": "activity"
+      },
+      "pdp": 85,
+      "date": "2027-06-17",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U10",
+      "unit": "第十单元 阅读世界真有趣",
+      "topic": "拜访书的家 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用一个细节说明阅读场所怎样帮助人找书或读书。",
+      "textbook_pages": "63–64",
+      "workbook": null,
+      "pdp": 86,
+      "date": "2027-06-18",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U10",
+      "unit": "第十单元 阅读世界真有趣",
+      "topic": "我的阅读心得 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "辨别内容简介和阅读感想，分别在短文里找例子。",
+      "textbook_pages": "65–66",
+      "workbook": {
+        "volume": 1,
+        "pages": "71",
+        "scope": "activity"
+      },
+      "pdp": 87,
+      "date": "2027-06-21",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U10",
+      "unit": "第十单元 阅读世界真有趣",
+      "topic": "我的阅读心得 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "选出一处能表达读者感受的语句，解释感受的来源。",
+      "textbook_pages": "65–66",
+      "workbook": null,
+      "pdp": 88,
+      "date": "2027-06-22",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U10",
+      "unit": "第十单元 阅读世界真有趣",
+      "topic": "积累运用：访、防及多音字",
+      "kind": "activity",
+      "sk": [
+        "2.1",
+        "5.3"
+      ],
+      "sp": [
+        "2.1.1",
+        "5.3.1"
+      ],
+      "focus": "比较“访”“防”的用词，依据语境读准“壳”“藏”。",
+      "textbook_pages": "67–68",
+      "workbook": {
+        "volume": 1,
+        "pages": "70–76",
+        "scope": "unit"
+      },
+      "pdp": 89,
+      "date": "2027-06-23",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U10",
+      "unit": "第十单元 阅读世界真有趣",
+      "topic": "古诗：早发白帝城",
+      "kind": "poem",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "focus": "背诵古诗，用诗句说明小船行进的速度感。",
+      "textbook_pages": "68",
+      "workbook": null,
+      "pdp": 90,
+      "date": "2027-06-24",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U10",
+      "unit": "第十单元 阅读世界真有趣",
+      "topic": "写阅读心得",
+      "kind": "writing",
+      "sk": [
+        "3.2",
+        "4.4"
+      ],
+      "sp": [
+        "3.2.1",
+        "4.4.1"
+      ],
+      "focus": "用书名、情节和感受组织简短心得，再和同伴交流。",
+      "textbook_pages": "65–66",
+      "workbook": null,
+      "pdp": 91,
+      "date": "2027-06-25",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U10",
+      "unit": "第十单元 阅读世界真有趣",
+      "topic": "深广课文：那一夜",
+      "kind": "extension",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "从风雨的描写推想当夜天气，解释诗里的“泪”所指。",
+      "textbook_pages": "69",
+      "workbook": null,
+      "pdp": 92,
+      "date": "2027-06-28",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U11",
+      "unit": "第十一单元 海阔天空",
+      "topic": "听听说说：树海",
+      "kind": "activity",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.2"
+      ],
+      "focus": "抓住童诗要点，用自己的话说出森林像什么并说明理由。",
+      "textbook_pages": "70",
+      "workbook": null,
+      "pdp": 93,
+      "date": "2027-06-29",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U11",
+      "unit": "第十一单元 海阔天空",
+      "topic": "诗 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "找出诗里描写的景物，结合画面理解词句。",
+      "textbook_pages": "70–71",
+      "workbook": {
+        "volume": 1,
+        "pages": "77",
+        "scope": "activity"
+      },
+      "pdp": 94,
+      "date": "2027-07-01",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U11",
+      "unit": "第十一单元 海阔天空",
+      "topic": "诗 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "选一处语言富有想象力的地方，用自己的话描绘画面。",
+      "textbook_pages": "70–71",
+      "workbook": null,
+      "pdp": 95,
+      "date": "2027-07-02",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U11",
+      "unit": "第十一单元 海阔天空",
+      "topic": "雾 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "把雾藏起的景物按先后整理成表，说明前后变化。",
+      "textbook_pages": "72–73",
+      "workbook": {
+        "volume": 1,
+        "pages": "78",
+        "scope": "activity"
+      },
+      "pdp": 96,
+      "date": "2027-07-05",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U11",
+      "unit": "第十一单元 海阔天空",
+      "topic": "雾 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "根据课文措辞说明雾中景物带来的感受。",
+      "textbook_pages": "72–73",
+      "workbook": null,
+      "pdp": 97,
+      "date": "2027-07-06",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U11",
+      "unit": "第十一单元 海阔天空",
+      "topic": "读读写写：无论……还是……",
+      "kind": "activity",
+      "sk": [
+        "5.4"
+      ],
+      "sp": [
+        "5.4.1"
+      ],
+      "focus": "用句式说清两种条件下共同的结果，并写出自己的例句。",
+      "textbook_pages": "74",
+      "workbook": {
+        "volume": 1,
+        "pages": "77–83",
+        "scope": "unit"
+      },
+      "pdp": 98,
+      "date": "2027-07-07",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U11",
+      "unit": "第十一单元 海阔天空",
+      "topic": "古诗：鹿柴",
+      "kind": "poem",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "focus": "背诵古诗，比较山间的声音和光影线索。",
+      "textbook_pages": "74",
+      "workbook": null,
+      "pdp": 99,
+      "date": "2027-07-08",
+      "duration_minutes": 60
+    },
+    {
+      "block": "E3",
+      "unit": "阶段评估三",
+      "topic": "乡野、探究与阅读",
+      "kind": "assessment",
+      "sk": [
+        "2.1",
+        "5.3"
+      ],
+      "sp": [
+        "2.1.1",
+        "2.1.2",
+        "5.3.1"
+      ],
+      "focus": "完成评估三，记录能否借上下文解释词句与内容。",
+      "textbook_pages": "46–74",
+      "workbook": {
+        "volume": 1,
+        "pages": "84",
+        "scope": "activity"
+      },
+      "pdp": 100,
+      "date": "2027-07-09",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U12",
+      "unit": "第十二单元 植物的故事",
+      "topic": "想想说说：植物的外形",
+      "kind": "activity",
+      "sk": [
+        "1.3"
+      ],
+      "sp": [
+        "1.3.2"
+      ],
+      "focus": "从叶、茎、花或果中选择两个特点描述一种植物。",
+      "textbook_pages": "75",
+      "workbook": null,
+      "pdp": 101,
+      "date": "2027-07-12",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U12",
+      "unit": "第十二单元 植物的故事",
+      "topic": "荷叶 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "把不同角色和它们眼中的荷叶配对。",
+      "textbook_pages": "76–77",
+      "workbook": {
+        "volume": 2,
+        "pages": "1",
+        "scope": "activity"
+      },
+      "pdp": 102,
+      "date": "2027-07-13",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U12",
+      "unit": "第十二单元 植物的故事",
+      "topic": "荷叶 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "比较同一片荷叶的不同用途，解释其中一项想象。",
+      "textbook_pages": "76–77",
+      "workbook": null,
+      "pdp": 103,
+      "date": "2027-07-14",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U12",
+      "unit": "第十二单元 植物的故事",
+      "topic": "我们神奇的世界 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "从文本找出植物或自然现象的特点。",
+      "textbook_pages": "78–79",
+      "workbook": {
+        "volume": 2,
+        "pages": "2",
+        "scope": "activity"
+      },
+      "pdp": 104,
+      "date": "2027-07-15",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U12",
+      "unit": "第十二单元 植物的故事",
+      "topic": "我们神奇的世界 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "把观察到的一个现象说清楚，再提出一个有根据的问题。",
+      "textbook_pages": "78–79",
+      "workbook": null,
+      "pdp": 105,
+      "date": "2027-07-16",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U12",
+      "unit": "第十二单元 植物的故事",
+      "topic": "想想说说：荷叶剧场",
+      "kind": "activity",
+      "sk": [
+        "2.2",
+        "4.3"
+      ],
+      "sp": [
+        "2.2.1",
+        "4.3.1"
+      ],
+      "focus": "朗读后分角色演示荷叶的不同用途，使用相应语气。",
+      "textbook_pages": "80",
+      "workbook": {
+        "volume": 2,
+        "pages": "1–7",
+        "scope": "unit"
+      },
+      "pdp": 106,
+      "date": "2027-07-19",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U12",
+      "unit": "第十二单元 植物的故事",
+      "topic": "读读找找：植物描写",
+      "kind": "activity",
+      "sk": [
+        "2.1",
+        "5.3"
+      ],
+      "sp": [
+        "2.1.2",
+        "5.3.1"
+      ],
+      "focus": "找出与“十分”近义的词，在植物描写中选择恰当词语。",
+      "textbook_pages": "80",
+      "workbook": {
+        "volume": 2,
+        "pages": "1–7",
+        "scope": "unit"
+      },
+      "pdp": 107,
+      "date": "2027-07-20",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U12",
+      "unit": "第十二单元 植物的故事",
+      "topic": "深广课文：小雨点",
+      "kind": "extension",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "按诗意画出小雨点出现的地点，说出喜欢的画面。",
+      "textbook_pages": "81–82",
+      "workbook": null,
+      "pdp": 108,
+      "date": "2027-07-21",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L4",
+      "unit": "语文乐园四",
+      "topic": "我的发现：量词的不同用法",
+      "kind": "activity",
+      "sk": [
+        "5.3"
+      ],
+      "sp": [
+        "5.3.1"
+      ],
+      "focus": "比较“粒”“块”“包”作量词和在其他句子里的用法。",
+      "textbook_pages": "83",
+      "workbook": {
+        "volume": 2,
+        "pages": "8",
+        "scope": "activity"
+      },
+      "pdp": 109,
+      "date": "2027-07-22",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L4",
+      "unit": "语文乐园四",
+      "topic": "读读想想：描述植物",
+      "kind": "activity",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "focus": "比较语句中加入的描写，选一个细节使植物特征更清楚。",
+      "textbook_pages": "83",
+      "workbook": {
+        "volume": 2,
+        "pages": "8",
+        "scope": "activity"
+      },
+      "pdp": 110,
+      "date": "2027-07-23",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L4",
+      "unit": "语文乐园四",
+      "topic": "汉语拼音：in、en、uan 等",
+      "kind": "activity",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.1"
+      ],
+      "focus": "按韵母归类带鼻音音节，口读后核对配图词语。",
+      "textbook_pages": "84",
+      "workbook": {
+        "volume": 2,
+        "pages": "9",
+        "scope": "activity"
+      },
+      "pdp": 111,
+      "date": "2027-07-26",
+      "duration_minutes": 60
+    },
+    {
+      "block": "Z4",
+      "unit": "识字四",
+      "topic": "求取学问要勤劳",
+      "kind": "activity",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "从儿歌找出反义词，并解释动物名称与字义的关系。",
+      "textbook_pages": "85",
+      "workbook": {
+        "volume": 2,
+        "pages": "10",
+        "scope": "activity"
+      },
+      "pdp": 112,
+      "date": "2027-07-27",
+      "duration_minutes": 60
+    },
+    {
+      "block": "Z4",
+      "unit": "识字四",
+      "topic": "求取学问要勤劳：写字",
+      "kind": "activity",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "书写该课选字，比较偏旁位置，复查笔画与笔顺。",
+      "textbook_pages": "85",
+      "workbook": {
+        "volume": 2,
+        "pages": "10",
+        "scope": "activity"
+      },
+      "pdp": 113,
+      "date": "2027-07-28",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U13",
+      "unit": "第十三单元 你知道吗？",
+      "topic": "种子的旅行 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "按课文整理种子移动的方式及相关自然条件。",
+      "textbook_pages": "86–87",
+      "workbook": {
+        "volume": 2,
+        "pages": "11",
+        "scope": "activity"
+      },
+      "pdp": 114,
+      "date": "2027-07-29",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U13",
+      "unit": "第十三单元 你知道吗？",
+      "topic": "种子的旅行 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用因果图解释一种传播方式，并用课文细节支持说明。",
+      "textbook_pages": "86–87",
+      "workbook": null,
+      "pdp": 115,
+      "date": "2027-08-02",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U13",
+      "unit": "第十三单元 你知道吗？",
+      "topic": "又臭又懒的花 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "圈出花的外形、气味等特征，并辨认关键生词。",
+      "textbook_pages": "88–89",
+      "workbook": {
+        "volume": 2,
+        "pages": "12",
+        "scope": "activity"
+      },
+      "pdp": 116,
+      "date": "2027-08-03",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U13",
+      "unit": "第十三单元 你知道吗？",
+      "topic": "又臭又懒的花 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "讨论题目怎样引出植物特征，用一条证据说明。",
+      "textbook_pages": "88–89",
+      "workbook": null,
+      "pdp": 117,
+      "date": "2027-08-04",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U13",
+      "unit": "第十三单元 你知道吗？",
+      "topic": "读读说说：传播与寄生",
+      "kind": "activity",
+      "sk": [
+        "2.2",
+        "5.3",
+        "1.1"
+      ],
+      "sp": [
+        "2.2.1",
+        "5.3.1",
+        "1.1.2"
+      ],
+      "focus": "朗读并解释种子传播或植物寄生，用适当方式提出一个问题。",
+      "textbook_pages": "90",
+      "workbook": {
+        "volume": 2,
+        "pages": "11–17",
+        "scope": "unit"
+      },
+      "pdp": 118,
+      "date": "2027-08-05",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U13",
+      "unit": "第十三单元 你知道吗？",
+      "topic": "读读说说：大王花的自述",
+      "kind": "activity",
+      "sk": [
+        "4.4"
+      ],
+      "sp": [
+        "4.4.1"
+      ],
+      "focus": "整理大王花的生长地点和特征，交流一个新发现。",
+      "textbook_pages": "91",
+      "workbook": null,
+      "pdp": 119,
+      "date": "2027-08-06",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U13",
+      "unit": "第十三单元 你知道吗？",
+      "topic": "生字书写：植物术语",
+      "kind": "writing",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "练写两课有关植物的字，比较“奇”和“寄”的结构。",
+      "textbook_pages": "86–89",
+      "workbook": {
+        "volume": 2,
+        "pages": "13",
+        "scope": "activity"
+      },
+      "pdp": 120,
+      "date": "2027-08-09",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U14",
+      "unit": "第十四单元 环保大家做",
+      "topic": "听听说说：环保拍手歌",
+      "kind": "activity",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.2"
+      ],
+      "focus": "听辨儿歌提出的环保做法，从图片选出准确内容。",
+      "textbook_pages": "92",
+      "workbook": null,
+      "pdp": 121,
+      "date": "2027-08-10",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U14",
+      "unit": "第十四单元 环保大家做",
+      "topic": "垃圾山消失了 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "按先后写出垃圾堆出现、处理和改变的经过。",
+      "textbook_pages": "93–94",
+      "workbook": {
+        "volume": 2,
+        "pages": "18",
+        "scope": "activity"
+      },
+      "pdp": 122,
+      "date": "2027-08-11",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U14",
+      "unit": "第十四单元 环保大家做",
+      "topic": "垃圾山消失了 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用两处情节说明环境改变与人物行动的关系。",
+      "textbook_pages": "93–94",
+      "workbook": null,
+      "pdp": 123,
+      "date": "2027-08-12",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U14",
+      "unit": "第十四单元 环保大家做",
+      "topic": "家有环保大使 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "整理家中的环保行动，并把行动与对象配对。",
+      "textbook_pages": "95–96",
+      "workbook": {
+        "volume": 2,
+        "pages": "19",
+        "scope": "activity"
+      },
+      "pdp": 124,
+      "date": "2027-08-13",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U14",
+      "unit": "第十四单元 环保大家做",
+      "topic": "家有环保大使 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "比较文中两种做法，说明其中一种如何减少浪费。",
+      "textbook_pages": "95–96",
+      "workbook": null,
+      "pdp": 125,
+      "date": "2027-08-17",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U14",
+      "unit": "第十四单元 环保大家做",
+      "topic": "读读比比：环保词语",
+      "kind": "activity",
+      "sk": [
+        "4.1",
+        "5.3"
+      ],
+      "sp": [
+        "4.1.1",
+        "5.3.1"
+      ],
+      "focus": "玩词语接龙，根据语境辨认“脏”“好”等多音字。",
+      "textbook_pages": "97",
+      "workbook": {
+        "volume": 2,
+        "pages": "18–24",
+        "scope": "unit"
+      },
+      "pdp": 126,
+      "date": "2027-08-18",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U14",
+      "unit": "第十四单元 环保大家做",
+      "topic": "深广课文：木木的日记",
+      "kind": "extension",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "整理合欢树的外形及昼夜变化，说出一项观察所得。",
+      "textbook_pages": "98–99",
+      "workbook": null,
+      "pdp": 127,
+      "date": "2027-08-19",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U15",
+      "unit": "第十五单元 谢谢你们",
+      "topic": "想想说说：访问不同职业",
+      "kind": "activity",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2"
+      ],
+      "focus": "选定一种职业，拟两个恰当问题并作模拟访问。",
+      "textbook_pages": "100",
+      "workbook": null,
+      "pdp": 128,
+      "date": "2027-08-20",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U15",
+      "unit": "第十五单元 谢谢你们",
+      "topic": "一行有一行的气味 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "把课文中的职业、工作地点和气味线索配对。",
+      "textbook_pages": "101–102",
+      "workbook": {
+        "volume": 2,
+        "pages": "25",
+        "scope": "activity"
+      },
+      "pdp": 129,
+      "date": "2027-08-23",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U15",
+      "unit": "第十五单元 谢谢你们",
+      "topic": "一行有一行的气味 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "从气味联想到劳动者的日常，说明一项工作的贡献。",
+      "textbook_pages": "101–102",
+      "workbook": null,
+      "pdp": 130,
+      "date": "2027-08-24",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U15",
+      "unit": "第十五单元 谢谢你们",
+      "topic": "猜一猜 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "圈出职业谜语中的关键提示并说出答案。",
+      "textbook_pages": "103–104",
+      "workbook": {
+        "volume": 2,
+        "pages": "26",
+        "scope": "activity"
+      },
+      "pdp": 131,
+      "date": "2027-08-25",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U15",
+      "unit": "第十五单元 谢谢你们",
+      "topic": "猜一猜 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "比较两则谜语的提示，指出帮助自己判断的一个词句。",
+      "textbook_pages": "103–104",
+      "workbook": null,
+      "pdp": 132,
+      "date": "2027-08-26",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U15",
+      "unit": "第十五单元 谢谢你们",
+      "topic": "读读演演与说说：职业贡献",
+      "kind": "activity",
+      "sk": [
+        "4.3",
+        "5.4"
+      ],
+      "sp": [
+        "4.3.1",
+        "5.4.1"
+      ],
+      "focus": "用表情动作演诗并用“如果……”说明缺少一种工作的影响。",
+      "textbook_pages": "105",
+      "workbook": {
+        "volume": 2,
+        "pages": "25–31",
+        "scope": "unit"
+      },
+      "pdp": 133,
+      "date": "2027-08-27",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L5",
+      "unit": "语文乐园五",
+      "topic": "我的发现：近义词组词",
+      "kind": "activity",
+      "sk": [
+        "2.1",
+        "5.3"
+      ],
+      "sp": [
+        "2.1.1",
+        "5.3.1"
+      ],
+      "focus": "比较“漂走”“流走”等短语，再用共有意思理解复合词。",
+      "textbook_pages": "106",
+      "workbook": {
+        "volume": 2,
+        "pages": "32",
+        "scope": "activity"
+      },
+      "pdp": 134,
+      "date": "2027-09-06",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L5",
+      "unit": "语文乐园五",
+      "topic": "读读比比：选择描写词",
+      "kind": "activity",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "比较同一景物的不同描写，把合适的修饰词加进句子。",
+      "textbook_pages": "106",
+      "workbook": {
+        "volume": 2,
+        "pages": "32",
+        "scope": "activity"
+      },
+      "pdp": 135,
+      "date": "2027-09-07",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L5",
+      "unit": "语文乐园五",
+      "topic": "汉语拼音：ian、un",
+      "kind": "activity",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.1"
+      ],
+      "focus": "辨读四声并区分易混音节，把职业与环保词配回图片。",
+      "textbook_pages": "107",
+      "workbook": {
+        "volume": 2,
+        "pages": "33",
+        "scope": "activity"
+      },
+      "pdp": 136,
+      "date": "2027-09-08",
+      "duration_minutes": 60
+    },
+    {
+      "block": "E4",
+      "unit": "阶段评估四",
+      "topic": "植物、环保与职业",
+      "kind": "assessment",
+      "sk": [
+        "2.1",
+        "3.1"
+      ],
+      "sp": [
+        "2.1.1",
+        "2.1.2",
+        "3.1.1"
+      ],
+      "focus": "完成评估四，整理对说明文、童话词句与汉字结构的掌握情况。",
+      "textbook_pages": "75–107",
+      "workbook": {
+        "volume": 2,
+        "pages": "34",
+        "scope": "activity"
+      },
+      "pdp": 137,
+      "date": "2027-09-09",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U16",
+      "unit": "第十六单元 小故事，大道理",
+      "topic": "听听做做：听取用药说明",
+      "kind": "activity",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.1"
+      ],
+      "focus": "听取模拟说明，复述教师提供的时间和注意事项。",
+      "textbook_pages": "108",
+      "workbook": null,
+      "pdp": 138,
+      "date": "2027-09-10",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U16",
+      "unit": "第十六单元 小故事，大道理",
+      "topic": "黄鼠狼卖药 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "按说辞、行动和结果整理情节。",
+      "textbook_pages": "108–109",
+      "workbook": {
+        "volume": 2,
+        "pages": "35",
+        "scope": "activity"
+      },
+      "pdp": 139,
+      "date": "2027-09-13",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U16",
+      "unit": "第十六单元 小故事，大道理",
+      "topic": "黄鼠狼卖药 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "比较人物的说法和行动，用情节说明为什么需要判断真伪。",
+      "textbook_pages": "108–109",
+      "workbook": null,
+      "pdp": 140,
+      "date": "2027-09-14",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U16",
+      "unit": "第十六单元 小故事，大道理",
+      "topic": "鼠鹿和鳄鱼 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "整理鼠鹿所遇的困难、应对办法和结果。",
+      "textbook_pages": "110–111",
+      "workbook": {
+        "volume": 2,
+        "pages": "36",
+        "scope": "activity"
+      },
+      "pdp": 141,
+      "date": "2027-09-15",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U16",
+      "unit": "第十六单元 小故事，大道理",
+      "topic": "鼠鹿和鳄鱼 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "比较鼠鹿与鳄鱼所掌握的消息，说明故事的转折。",
+      "textbook_pages": "110–111",
+      "workbook": null,
+      "pdp": 142,
+      "date": "2027-09-17",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U16",
+      "unit": "第十六单元 小故事，大道理",
+      "topic": "读读想想：用“可是”表转折",
+      "kind": "activity",
+      "sk": [
+        "2.2",
+        "5.4"
+      ],
+      "sp": [
+        "2.2.1",
+        "5.4.1"
+      ],
+      "focus": "朗读两则故事片段，用“可是”口述预期与实际的不同。",
+      "textbook_pages": "112–113",
+      "workbook": {
+        "volume": 2,
+        "pages": "35–40",
+        "scope": "unit"
+      },
+      "pdp": 143,
+      "date": "2027-09-20",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U16",
+      "unit": "第十六单元 小故事，大道理",
+      "topic": "古诗：敕勒歌",
+      "kind": "poem",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "focus": "背诵古诗，借天空、草原和牛羊说明远近画面。",
+      "textbook_pages": "113",
+      "workbook": null,
+      "pdp": 144,
+      "date": "2027-09-21",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U16",
+      "unit": "第十六单元 小故事，大道理",
+      "topic": "深广课文：乌鸦兄弟",
+      "kind": "extension",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "理清两只乌鸦的决定和后果，说出可改变结局的做法。",
+      "textbook_pages": "114–115",
+      "workbook": null,
+      "pdp": 145,
+      "date": "2027-09-22",
+      "duration_minutes": 60
+    },
+    {
+      "block": "Z5",
+      "unit": "识字五",
+      "topic": "分秒必争勤学习",
+      "kind": "activity",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "圈出描写家务和学习的动作词，口头比较姐弟的做法。",
+      "textbook_pages": "116",
+      "workbook": {
+        "volume": 2,
+        "pages": "41",
+        "scope": "activity"
+      },
+      "pdp": 146,
+      "date": "2027-09-23",
+      "duration_minutes": 60
+    },
+    {
+      "block": "Z5",
+      "unit": "识字五",
+      "topic": "分秒必争勤学习：写字",
+      "kind": "activity",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "在田字格写“巧”“争”“秒”等课内选字，核对笔顺。",
+      "textbook_pages": "116",
+      "workbook": {
+        "volume": 2,
+        "pages": "41",
+        "scope": "activity"
+      },
+      "pdp": 147,
+      "date": "2027-09-24",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U17",
+      "unit": "第十七单元 珍惜时间",
+      "topic": "奇奇借时间 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "把奇奇要借时间的情节按先后排列。",
+      "textbook_pages": "117–118",
+      "workbook": {
+        "volume": 2,
+        "pages": "42",
+        "scope": "activity"
+      },
+      "pdp": 148,
+      "date": "2027-09-27",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U17",
+      "unit": "第十七单元 珍惜时间",
+      "topic": "奇奇借时间 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "比较“借时间”和合理使用时间，从课文找出关键转折。",
+      "textbook_pages": "117–118",
+      "workbook": null,
+      "pdp": 149,
+      "date": "2027-09-28",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U17",
+      "unit": "第十七单元 珍惜时间",
+      "topic": "读读说说：奇奇借时间",
+      "kind": "activity",
+      "sk": [
+        "2.2",
+        "1.1"
+      ],
+      "sp": [
+        "2.2.1",
+        "1.1.1"
+      ],
+      "focus": "读出奇奇心理变化，用合适的礼貌用语提出请求。",
+      "textbook_pages": "119",
+      "workbook": {
+        "volume": 2,
+        "pages": "42–46",
+        "scope": "unit"
+      },
+      "pdp": 150,
+      "date": "2027-09-29",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U17",
+      "unit": "第十七单元 珍惜时间",
+      "topic": "读读比比：马、土、糸部",
+      "kind": "activity",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.2"
+      ],
+      "focus": "分辨马部、土部和糸部，在相关字词中指出部首。",
+      "textbook_pages": "120",
+      "workbook": {
+        "volume": 2,
+        "pages": "42–46",
+        "scope": "unit"
+      },
+      "pdp": 151,
+      "date": "2027-10-01",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U17",
+      "unit": "第十七单元 珍惜时间",
+      "topic": "古诗：登乐游原",
+      "kind": "poem",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "focus": "背诵古诗，谈一谈诗里对夕阳和黄昏的感受。",
+      "textbook_pages": "120",
+      "workbook": null,
+      "pdp": 152,
+      "date": "2027-10-04",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U17",
+      "unit": "第十七单元 珍惜时间",
+      "topic": "写时间安排",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "按时间先后写两项要完成的事，并解释为什么先做一项。",
+      "textbook_pages": "117–118",
+      "workbook": null,
+      "pdp": 153,
+      "date": "2027-10-05",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U18",
+      "unit": "第十八单元 想和做",
+      "topic": "想想问问：了解事情经过",
+      "kind": "activity",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2"
+      ],
+      "focus": "就朋友做的一件好事提出关于经过和结果的问题。",
+      "textbook_pages": "121",
+      "workbook": null,
+      "pdp": 154,
+      "date": "2027-10-06",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U18",
+      "unit": "第十八单元 想和做",
+      "topic": "好事情 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "将主人公的设想和实际发生的事分别列出。",
+      "textbook_pages": "121–123",
+      "workbook": {
+        "volume": 2,
+        "pages": "47",
+        "scope": "activity"
+      },
+      "pdp": 155,
+      "date": "2027-10-07",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U18",
+      "unit": "第十八单元 想和做",
+      "topic": "好事情 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "结合一个生活情境解释课文中“好事情”的含义。",
+      "textbook_pages": "121–123",
+      "workbook": null,
+      "pdp": 156,
+      "date": "2027-10-08",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U18",
+      "unit": "第十八单元 想和做",
+      "topic": "读读比比与读后分享",
+      "kind": "activity",
+      "sk": [
+        "5.1",
+        "4.4"
+      ],
+      "sp": [
+        "5.1.1",
+        "4.4.1"
+      ],
+      "focus": "观察“井”“血”的字形，交流风娃娃带给大家的快乐。",
+      "textbook_pages": "124",
+      "workbook": {
+        "volume": 2,
+        "pages": "47–53",
+        "scope": "unit"
+      },
+      "pdp": 157,
+      "date": "2027-10-11",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U18",
+      "unit": "第十八单元 想和做",
+      "topic": "深广课文：渡轮",
+      "kind": "extension",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "比较白天和黑夜两幅图景，说明诗里的“船长”是谁。",
+      "textbook_pages": "125–126",
+      "workbook": null,
+      "pdp": 158,
+      "date": "2027-10-12",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L6",
+      "unit": "语文乐园六",
+      "topic": "我的发现：并列动作",
+      "kind": "activity",
+      "sk": [
+        "5.3",
+        "2.1"
+      ],
+      "sp": [
+        "5.3.1",
+        "2.1.1"
+      ],
+      "focus": "用连续动作说清鼠鹿或鳄鱼的行踪，比较动词的先后。",
+      "textbook_pages": "127",
+      "workbook": {
+        "volume": 2,
+        "pages": "54",
+        "scope": "activity"
+      },
+      "pdp": 159,
+      "date": "2027-10-13",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L6",
+      "unit": "语文乐园六",
+      "topic": "读读比比：把情节说具体",
+      "kind": "activity",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "比较两个故事句，找出使动作或神态更清楚的细节。",
+      "textbook_pages": "127",
+      "workbook": {
+        "volume": 2,
+        "pages": "54",
+        "scope": "activity"
+      },
+      "pdp": 160,
+      "date": "2027-10-14",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L6",
+      "unit": "语文乐园六",
+      "topic": "汉语拼音：ang、eng",
+      "kind": "activity",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.1"
+      ],
+      "focus": "比较后鼻韵尾，拼读音节并根据听到的声调选词。",
+      "textbook_pages": "128",
+      "workbook": {
+        "volume": 2,
+        "pages": "55",
+        "scope": "activity"
+      },
+      "pdp": 161,
+      "date": "2027-10-15",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U19",
+      "unit": "第十九单元 走走看看",
+      "topic": "想想说说：逛夜市",
+      "kind": "activity",
+      "sk": [
+        "1.3"
+      ],
+      "sp": [
+        "1.3.1"
+      ],
+      "focus": "按事情经过讲一次夜市见闻，补充地点和印象最深的事。",
+      "textbook_pages": "129",
+      "workbook": null,
+      "pdp": 162,
+      "date": "2027-10-18",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U19",
+      "unit": "第十九单元 走走看看",
+      "topic": "美丽的夜市 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "整理夜市描写中的摊位、声音与动作。",
+      "textbook_pages": "130–131",
+      "workbook": {
+        "volume": 2,
+        "pages": "56",
+        "scope": "activity"
+      },
+      "pdp": 163,
+      "date": "2027-10-19",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U19",
+      "unit": "第十九单元 走走看看",
+      "topic": "美丽的夜市 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "选一个有代表性的描写细节，说明它怎样表现夜市气氛。",
+      "textbook_pages": "130–131",
+      "workbook": null,
+      "pdp": 164,
+      "date": "2027-10-20",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U19",
+      "unit": "第十九单元 走走看看",
+      "topic": "读读比比：夜市描写",
+      "kind": "activity",
+      "sk": [
+        "2.2",
+        "5.3"
+      ],
+      "sp": [
+        "2.2.1",
+        "5.3.1"
+      ],
+      "focus": "朗读夜市片段，比较“精巧”“精细”等词的用法。",
+      "textbook_pages": "132–133",
+      "workbook": {
+        "volume": 2,
+        "pages": "56–62",
+        "scope": "unit"
+      },
+      "pdp": 165,
+      "date": "2027-10-21",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U19",
+      "unit": "第十九单元 走走看看",
+      "topic": "古诗：望庐山瀑布",
+      "kind": "poem",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "focus": "背诵古诗，以远景和近景解释瀑布的气势。",
+      "textbook_pages": "133",
+      "workbook": null,
+      "pdp": 166,
+      "date": "2027-10-22",
+      "duration_minutes": 60
+    },
+    {
+      "block": "E5",
+      "unit": "阶段评估五",
+      "topic": "寓言、时间、助人与夜市",
+      "kind": "assessment",
+      "sk": [
+        "2.1",
+        "3.2"
+      ],
+      "sp": [
+        "2.1.2",
+        "3.2.1"
+      ],
+      "focus": "完成评估五，另选一则课内故事，写出一项行动和结果。",
+      "textbook_pages": "108–133",
+      "workbook": {
+        "volume": 2,
+        "pages": "63",
+        "scope": "activity"
+      },
+      "pdp": 167,
+      "date": "2027-10-25",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U20",
+      "unit": "第二十单元 生活处处有学问",
+      "topic": "想想说说：礼貌沟通",
+      "kind": "activity",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1"
+      ],
+      "focus": "在请教、借过、告别的情境中用得体的称呼和礼貌语。",
+      "textbook_pages": "134",
+      "workbook": null,
+      "pdp": 168,
+      "date": "2027-10-26",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U20",
+      "unit": "第二十单元 生活处处有学问",
+      "topic": "会说话的灯 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "把不同灯号、出现地点及所传达的信息配对。",
+      "textbook_pages": "135–136",
+      "workbook": {
+        "volume": 2,
+        "pages": "64",
+        "scope": "activity"
+      },
+      "pdp": 169,
+      "date": "2027-11-01",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U20",
+      "unit": "第二十单元 生活处处有学问",
+      "topic": "会说话的灯 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "从标题与文本线索说明灯如何传达意思。",
+      "textbook_pages": "135–136",
+      "workbook": null,
+      "pdp": 170,
+      "date": "2027-11-02",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U20",
+      "unit": "第二十单元 生活处处有学问",
+      "topic": "读读写写：只要……就……",
+      "kind": "activity",
+      "sk": [
+        "2.2",
+        "5.4"
+      ],
+      "sp": [
+        "2.2.1",
+        "5.4.1"
+      ],
+      "focus": "朗读灯号说明，用关联词写出信号与行为之间的关系。",
+      "textbook_pages": "137–138",
+      "workbook": {
+        "volume": 2,
+        "pages": "64–69",
+        "scope": "unit"
+      },
+      "pdp": 171,
+      "date": "2027-11-03",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U20",
+      "unit": "第二十单元 生活处处有学问",
+      "topic": "读读比比：词语接龙",
+      "kind": "activity",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1"
+      ],
+      "focus": "用课文词汇进行接龙，说明接续的词语是否合乎语意。",
+      "textbook_pages": "138",
+      "workbook": {
+        "volume": 2,
+        "pages": "64–69",
+        "scope": "unit"
+      },
+      "pdp": 172,
+      "date": "2027-11-04",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U20",
+      "unit": "第二十单元 生活处处有学问",
+      "topic": "生字书写：会说话的灯",
+      "kind": "writing",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "通过灯号语境认读选字，练写“广”“改”等并检查部件。",
+      "textbook_pages": "136",
+      "workbook": {
+        "volume": 2,
+        "pages": "65",
+        "scope": "activity"
+      },
+      "pdp": 173,
+      "date": "2027-11-05",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U20",
+      "unit": "第二十单元 生活处处有学问",
+      "topic": "深广课文：萤火虫和星星",
+      "kind": "extension",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "比较萤火虫和星星在文中呈现的光，说明想象的依据。",
+      "textbook_pages": "139–140",
+      "workbook": null,
+      "pdp": 174,
+      "date": "2027-11-08",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U21",
+      "unit": "第二十一单元 知识的力量",
+      "topic": "听听说说：谁偷走大王的皇冠",
+      "kind": "activity",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.2"
+      ],
+      "focus": "听辨人物、事件与关键线索，复述故事的主要内容。",
+      "textbook_pages": "141",
+      "workbook": null,
+      "pdp": 175,
+      "date": "2027-11-09",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U21",
+      "unit": "第二十一单元 知识的力量",
+      "topic": "回家的脚印 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "按先后找出人物遇到的问题及辨认方向的线索。",
+      "textbook_pages": "141–143",
+      "workbook": {
+        "volume": 2,
+        "pages": "70",
+        "scope": "activity"
+      },
+      "pdp": 176,
+      "date": "2027-11-10",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U21",
+      "unit": "第二十一单元 知识的力量",
+      "topic": "回家的脚印 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "比较线索的作用，说明人物为什么能找到回家的方向。",
+      "textbook_pages": "141–143",
+      "workbook": null,
+      "pdp": 177,
+      "date": "2027-11-11",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U21",
+      "unit": "第二十一单元 知识的力量",
+      "topic": "读读想想：不同的人物反应",
+      "kind": "activity",
+      "sk": [
+        "2.2",
+        "2.1"
+      ],
+      "sp": [
+        "2.2.1",
+        "2.1.2"
+      ],
+      "focus": "读出欢喜或害怕的语气，比较人物面对困难的反应。",
+      "textbook_pages": "144",
+      "workbook": {
+        "volume": 2,
+        "pages": "70–75",
+        "scope": "unit"
+      },
+      "pdp": 178,
+      "date": "2027-11-12",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U21",
+      "unit": "第二十一单元 知识的力量",
+      "topic": "读读比比：“互”和“兽”",
+      "kind": "activity",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1"
+      ],
+      "focus": "从字形演变图解释“互”和“兽”现代写法的一处特征。",
+      "textbook_pages": "145",
+      "workbook": {
+        "volume": 2,
+        "pages": "70–75",
+        "scope": "unit"
+      },
+      "pdp": 179,
+      "date": "2027-11-15",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U21",
+      "unit": "第二十一单元 知识的力量",
+      "topic": "古诗：江雪",
+      "kind": "poem",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "focus": "背诵古诗，画出空旷的雪景和独钓者的位置。",
+      "textbook_pages": "145",
+      "workbook": null,
+      "pdp": 180,
+      "date": "2027-11-16",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L7",
+      "unit": "语文乐园七",
+      "topic": "我的发现：一词多义",
+      "kind": "activity",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "比较“千万”“可怜”“抄”在两种语境里的意思。",
+      "textbook_pages": "146",
+      "workbook": {
+        "volume": 2,
+        "pages": "76",
+        "scope": "activity"
+      },
+      "pdp": 181,
+      "date": "2027-11-17",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L7",
+      "unit": "语文乐园七",
+      "topic": "读读比比：使用比喻",
+      "kind": "activity",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "比较有无比喻的句子，借图说明哪一句的画面更鲜明。",
+      "textbook_pages": "146",
+      "workbook": {
+        "volume": 2,
+        "pages": "76",
+        "scope": "activity"
+      },
+      "pdp": 182,
+      "date": "2027-11-18",
+      "duration_minutes": 60
+    },
+    {
+      "block": "L7",
+      "unit": "语文乐园七",
+      "topic": "汉语拼音：ong、ing 等",
+      "kind": "activity",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.1"
+      ],
+      "focus": "辨读后鼻音并口读“明星”“总共”“强壮”等词。",
+      "textbook_pages": "147",
+      "workbook": {
+        "volume": 2,
+        "pages": "77",
+        "scope": "activity"
+      },
+      "pdp": 183,
+      "date": "2027-11-19",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U22",
+      "unit": "第二十二单元 小小心愿",
+      "topic": "听听做做：生活营通知",
+      "kind": "activity",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.1"
+      ],
+      "focus": "听取同意书通知，说出应办的事项并作适当回应。",
+      "textbook_pages": "148",
+      "workbook": null,
+      "pdp": 184,
+      "date": "2027-11-22",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U22",
+      "unit": "第二十二单元 小小心愿",
+      "topic": "百宝箱 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "找出百宝箱中出现的事物及人物的做法。",
+      "textbook_pages": "148–149",
+      "workbook": {
+        "volume": 2,
+        "pages": "78",
+        "scope": "activity"
+      },
+      "pdp": 185,
+      "date": "2027-11-23",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U22",
+      "unit": "第二十二单元 小小心愿",
+      "topic": "百宝箱 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "从物品和人物行动推想心愿，引用一处文字依据。",
+      "textbook_pages": "148–149",
+      "workbook": null,
+      "pdp": 186,
+      "date": "2027-11-24",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U22",
+      "unit": "第二十二单元 小小心愿",
+      "topic": "读读说说：心愿与行动",
+      "kind": "activity",
+      "sk": [
+        "2.2",
+        "2.1"
+      ],
+      "sp": [
+        "2.2.1",
+        "2.1.2"
+      ],
+      "focus": "朗读课文，用一处语言或一项做法说明题目的含义。",
+      "textbook_pages": "150",
+      "workbook": {
+        "volume": 2,
+        "pages": "78–83",
+        "scope": "unit"
+      },
+      "pdp": 187,
+      "date": "2027-11-25",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U22",
+      "unit": "第二十二单元 小小心愿",
+      "topic": "读读比比：部首的位置",
+      "kind": "activity",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.2"
+      ],
+      "focus": "辨认人、木、衣、手四组部首在不同位置的写法。",
+      "textbook_pages": "151",
+      "workbook": {
+        "volume": 2,
+        "pages": "78–83",
+        "scope": "unit"
+      },
+      "pdp": 188,
+      "date": "2027-11-26",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U22",
+      "unit": "第二十二单元 小小心愿",
+      "topic": "古诗：小池",
+      "kind": "poem",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "focus": "背诵古诗，按诗句描绘泉水、荷叶和蜻蜓的位置。",
+      "textbook_pages": "151",
+      "workbook": null,
+      "pdp": 189,
+      "date": "2027-11-29",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U22",
+      "unit": "第二十二单元 小小心愿",
+      "topic": "写一张心愿卡",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "写一项对家人、同伴或自己的心愿，并写出实现办法。",
+      "textbook_pages": "148–150",
+      "workbook": null,
+      "pdp": 190,
+      "date": "2027-12-01",
+      "duration_minutes": 60
+    },
+    {
+      "block": "U22",
+      "unit": "第二十二单元 小小心愿",
+      "topic": "深广课文：世界很小又很大",
+      "kind": "extension",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "比较诗里的“寒冷”与“温暖”，用一个画面说明自己的理解。",
+      "textbook_pages": "152",
+      "workbook": null,
+      "pdp": 191,
+      "date": "2027-12-02",
+      "duration_minutes": 60
+    },
+    {
+      "block": "E6",
+      "unit": "阶段评估六",
+      "topic": "信号、知识与心愿",
+      "kind": "assessment",
+      "sk": [
+        "2.1",
+        "3.2"
+      ],
+      "sp": [
+        "2.1.1",
+        "2.1.2",
+        "3.2.1"
+      ],
+      "focus": "完成评估六，另写一项心愿及一个可以实施的行动。",
+      "textbook_pages": "134–152",
+      "workbook": {
+        "volume": 2,
+        "pages": "84",
+        "scope": "activity"
+      },
+      "pdp": 192,
+      "date": "2027-12-03",
+      "duration_minutes": 60
+    }
+  ]
+}
