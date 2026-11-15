@@ -58,7 +58,7 @@ def read_weeks(path, subject):
                               for d in printed_dates)
                 clip = fitz.Rect(510 if rtl else 140, rect.y0,
                                  rect.x0 if rtl else 300, rect.y1)
-                if subject == "ENGLISH" and "School closed" in text:
+                if "School closed" in text or "Cuti sekolah" in text:
                     if LESSON.search(page.get_text(clip=clip)):
                         raise ValueError(f"{path}: Lesson assigned during school closure in week {n}")
                     continue

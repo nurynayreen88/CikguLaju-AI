@@ -8,7 +8,7 @@ from unittest.mock import patch
 
 from flask import Flask, jsonify
 from web.rph_hari_ini_web import (
-    bp, class_year, day_payload, subject_identity, weekly_rpt_suggestion,
+    bp, class_year, day_payload, subject_identity, weekly_catalog, weekly_rpt_suggestion,
 )
 
 from web.rph_today_progress import attach_progress, lesson_signer, read_progress_summary
@@ -129,6 +129,12 @@ class DailyTimetablePureTests(TestCase):
                 self.assertIsNone(weekly_rpt_suggestion(state, date(2027, *day), "SCIENCE", 2))
         self.assertIsNotNone(weekly_rpt_suggestion("Johor", date(2027, 3, 4), "SCIENCE", 2))
         self.assertIsNotNone(weekly_rpt_suggestion("Sarawak", date(2027, 10, 27), "SCIENCE", 2))
+
+    def test_every_published_kssr_rpt_omits_both_full_closure_weeks(self):
+        for subject, weeks in weekly_catalog().items():
+            with self.subTest(subject=subject):
+                self.assertNotIn("6", weeks)
+                self.assertNotIn("19", weeks)
 
     def test_missing_schedule_is_empty_without_guessing(self):
         out=day_payload({"state_name":"Selangor"},{"entries":[]},
