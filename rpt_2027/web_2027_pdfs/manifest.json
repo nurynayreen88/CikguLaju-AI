@@ -87,43 +87,48 @@
     },
     "english:2": {
       "path": "english/tahun_2.pdf",
-      "sha256": "f12abd36e1cbb64a61d86f650733a92b462de484c44ebd7b5b496fbfdf0820a2",
-      "bytes": 142303,
+      "sha256": "9c89fb4d245f2685397de6628816f6ea3c78d3ee66d8617d019df57ed630648b",
+      "bytes": 166917,
       "pages": 40,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
+      "week_lesson_ranges_displayed": true
     },
     "english:3": {
       "path": "english/tahun_3.pdf",
-      "sha256": "bc8081feb67eed883a7897efa9d74774f8ed57418f4b7cb0448ff13eef3adae2",
-      "bytes": 142299,
+      "sha256": "521cafe2a5fa246b285a488eeb8100c789e780e8370ff4b20b189e7fd37e9e08",
+      "bytes": 167110,
       "pages": 41,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
+      "week_lesson_ranges_displayed": true
     },
     "english:4": {
       "path": "english/tahun_4.pdf",
-      "sha256": "cbcced2a72a62808102f9ac02b43d917596a50eb1dc997bd23d7ceda155371ff",
-      "bytes": 147942,
+      "sha256": "af294eb1b29284c0abd92ccd1ff761ec6e0dd4f30a8aaa194e3b2babacf2459f",
+      "bytes": 172193,
       "pages": 38,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
+      "week_lesson_ranges_displayed": true
     },
     "english:5": {
       "path": "english/tahun_5.pdf",
-      "sha256": "98f3bf188c185133e285eac48d638b07bf6a550bba292edbb2606b7ade6e7110",
-      "bytes": 154075,
+      "sha256": "e112415d3ee6341d3b67c3fdc62c51ae583477b010c8b25ac7ad4553a6a06820",
+      "bytes": 178686,
       "pages": 40,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
+      "week_lesson_ranges_displayed": true
     },
     "english:6": {
       "path": "english/tahun_6.pdf",
-      "sha256": "bcb5a1c13aa6d6800bb7629158085bec14644210164a049b84ec80b78f0140c7",
-      "bytes": 159878,
+      "sha256": "bdc897aa6eaff35502ef0eaacf38c2d7f83586292978e1f8db75a1b7dcfc655a",
+      "bytes": 184878,
       "pages": 42,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
+      "week_lesson_ranges_displayed": true
     },
     "matematik:2": {
       "path": "matematik/tahun_2.pdf",

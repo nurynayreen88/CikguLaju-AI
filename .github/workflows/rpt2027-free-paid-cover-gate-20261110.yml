@@ -37,6 +37,7 @@ jobs:
             tests/test_web_rpt2027_56_release_catalog.py \
             tests/test_web_rpt2027_free_paid_expiry_20261110.py \
             tests/test_web_rpt_original_cover_layout.py \
+            tests/test_web_rpt_english_week_labels.py \
             tests/test_rpt2027_catalog_teacher_labels_20261110.py
           do
             PYTHONPATH=. python "$suite"
