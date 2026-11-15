@@ -265,3 +265,43 @@ Susulan penyediaan bahan meliputi semakan RPT sekolah, pecahan dan takrif SP men
 - **Pengukuhan dan PBD (15 minit).** Guru menyoal secara lisan tentang keluarga watak dan meminta murid menjawab tanpa melihat teks. Catat tiga respons tepat daripada empat.
 - **Penutup (5 minit).** Murid sebut satu persamaan antara keluarga watak dengan keluarga sendiri.
 - **Bahan.** Buku teks ms. 2 dan kad gambar. Buku teks merujuk Buku Aktiviti ms. 1.
+
+## Rangka RPH Unit 1 bagi PdP 02–05
+
+Rangka mengikut SP utama dan halaman buku teks 3–6. Rangka PdP mendengar di atas menggunakan halaman 2. Kelima-lima kod utama Unit 1 sepadan dengan RPT rujukan 2022/2023. Tempoh 60 minit bagi setiap rangka ialah andaian draf. Rakaman buku teks dan edisi Buku Aktiviti masih perlu diperiksa.
+
+### PdP 02 — Deg Eng (ms. 3)
+
+- **SK 2.1 · SP 2.1.4.** Murid membaca sekurang-kurangnya tiga daripada empat ayat mudah dengan jelas dan menyatakan tiga maklumat tepat tentang rumah dalam petikan.
+- **Set induksi (5 minit).** Guru tunjuk gambar rumah pada ms. 3. Murid namakan bahagian rumah yang kelihatan.
+- **Aktiviti utama (35 minit).** Guru modelkan bacaan satu ayat dan tunjuk kata yang membantu murid mencari maklumat. Murid membaca ayat terpilih secara berpasangan, kemudian memadankan ayat dengan kad maklumat tentang rumah, bahan binaan atau bilik.
+- **Pengukuhan dan PBD (15 minit).** Guru dengar murid membaca empat ayat dan kemukakan tiga soalan fakta. Catat ketepatan bacaan serta pemahaman secara berasingan.
+- **Penutup (5 minit).** Murid pilih satu ayat yang menceritakan keadaan rumah dalam petikan.
+- **Bahan.** Buku teks ms. 3, rujukan cetak Buku Aktiviti ms. 2, rujukan cetak trek 2.
+
+### PdP 03 — Kempen Berengseh (ms. 4)
+
+- **SK 3.1 · SP 3.1.2.** Murid menulis sekurang-kurangnya empat daripada lima perkataan dua suku kata berdasarkan ilustrasi kempen dengan ejaan tepat.
+- **Set induksi (5 minit).** Guru paparkan ilustrasi kempen kebersihan. Murid cari dua tindakan yang dilakukan oleh watak dalam gambar.
+- **Aktiviti utama (35 minit).** Guru pilih satu perkataan dua suku kata berdasarkan gambar dan modelkan cara memisahkan suku kata. Murid berpasangan mencari perkataan lain, menyusun kad suku kata untuk membina perkataan dan menulisnya dalam buku.
+- **Pengukuhan dan PBD (15 minit).** Murid menulis lima perkataan berdasarkan gambar dan petunjuk suku kata. Guru catat ketepatan ejaan dan betulkan satu contoh bersama murid.
+- **Penutup (5 minit).** Murid baca satu perkataan yang ditulis dan sebut tindakan yang berkaitan dengan gambar.
+- **Bahan.** Buku teks ms. 4, rujukan cetak Buku Aktiviti ms. 3.
+
+### PdP 04 — Jenagak Berengseh (ms. 5)
+
+- **SK 4.2 · SP 4.2.1.** Murid menyalin dua baris seni kata dengan tepat dan menyanyikan satu rangkap bersama kumpulan mengikut irama yang ditunjukkan.
+- **Set induksi (5 minit).** Guru tunjuk gambar tong sampah. Murid nyatakan apa yang patut dibuat dengan sampah selepas waktu rehat.
+- **Aktiviti utama (35 minit).** Guru bacakan atau nyanyikan seni kata pada ms. 5 dan bimbing murid membincangkan maksudnya. Murid mengulang satu rangkap dengan guru, menyalin dua baris yang dipilih dan berlatih menyanyikannya dalam kumpulan.
+- **Pengukuhan dan PBD (15 minit).** Guru semak dua baris yang ditulis dan dengar persembahan rangkap. Catat kejelasan sebutan serta turutan baris.
+- **Penutup (5 minit).** Murid sebut satu amalan menjaga kebersihan yang disebut dalam lagu.
+- **Bahan.** Buku teks ms. 5, rujukan cetak Buku Aktiviti ms. 4, rujukan cetak trek 3.
+
+### PdP 05 — Engrok Muh Khas (ms. 6)
+
+- **SK 5.1 · SP 5.1.2.** Murid mengenal pasti sekurang-kurangnya empat daripada lima kata nama khas dalam contoh dan menggunakan satu contoh dalam ayat mudah.
+- **Set induksi (5 minit).** Guru paparkan kad nama sekolah dan gambar sekolah. Murid pilih kad yang merujuk nama sekolah tertentu.
+- **Aktiviti utama (35 minit).** Guru terangkan contoh kata nama khas pada peta minda ms. 6. Murid asingkan kad nama orang dan tempat daripada kad nama umum. Pasangan memilih satu contoh daripada peta minda dan membina ayat mudah.
+- **Pengukuhan dan PBD (15 minit).** Murid menanda kata nama khas pada lima kad dan menulis satu ayat daripada contoh. Guru semak empat padanan tepat dan penggunaan kata nama khas dalam ayat.
+- **Penutup (5 minit).** Murid namakan satu orang atau tempat di sekeliling mereka menggunakan nama khusus.
+- **Bahan.** Buku teks ms. 6.

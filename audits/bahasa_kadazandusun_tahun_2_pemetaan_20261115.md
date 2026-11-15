@@ -245,3 +245,63 @@ Kod pada lajur terakhir merujuk keseluruhan blok RPT. Indeks halaman mengekalkan
 - **Pengukuhan dan PBD (15 minit).** Guru gunakan lima rangsangan bunyi daripada latihan. Murid tunjuk kad dan sebut semula bunyi yang sepadan. Guru tandakan ketepatan pilihan dan sebutan.
 - **Penutup (5 minit).** Murid sebut semula satu konsonan dan satu vokal daripada latihan.
 - **Bahan.** Buku teks ms. 1, kad huruf dan rujukan trek 1–2. Buku teks merujuk Buku Aktiviti ms. 1.
+
+## Rangka RPH Unit 1 bagi PdP 02–07
+
+Rangka ini melengkapkan liputan halaman 1–8, dengan halaman 1 direkodkan dalam rangka PdP mendengar dan menyebut di atas. Pecahan sesi berdasarkan perubahan fokus SP dan halaman buku teks. RPT 2025 menghimpunkan halaman yang sama dalam lima blok. Tempoh 60 minit bagi setiap rangka ialah andaian draf.
+
+### PdP 02 — Inomoto’ (ms. 2)
+
+- **SK 1.3 · SP 1.3.1 (i) (a), (b).** Murid mendengar ayat penyata dan soalan berpandukan gambar, kemudian menjawab sekurang-kurangnya tiga daripada empat soalan fakta tentang sekolah Wani.
+- **Set induksi (5 minit).** Guru tunjuk gambar sekolah pada halaman 2 dan minta murid meneka fungsi satu tempat yang kelihatan.
+- **Aktiviti utama (35 minit).** Guru gunakan trek 3 jika tersedia atau bacakan transkrip A–E pada ms. 115. Murid padankan setiap penerangan dengan gambar berhuruf. Guru baca semula maklumat bagi dua gambar dan modelkan cara membina jawapan pendek daripada perkara yang didengar.
+- **Pengukuhan dan PBD (15 minit).** Guru baca empat soalan fakta pertama daripada bahan. Murid jawab secara individu tanpa melihat transkrip. Guru semak nama sekolah, bilangan kelas, kegiatan di kantin dan lokasi bermain bola.
+- **Penutup (5 minit).** Murid nyatakan satu perkara yang sama antara sekolah Wani dan sekolah sendiri.
+- **Bahan.** Buku teks ms. 2, rujukan cetak trek 3.
+
+### PdP 03 — Intutunai om Roito’ Pimato dan Polombuso’ (ms. 3–4)
+
+- **SK 2.1, 2.2 · SP 2.1.1 (i), 2.1.2 (iv), 2.2.2 (iii).** Murid memadankan sekurang-kurangnya empat daripada lima huruf konsonan dengan bunyinya dan memenggal sekurang-kurangnya tiga daripada empat perkataan berkaitan sekolah mengikut pola suku kata.
+- **Set induksi (5 minit).** Guru paparkan dua gambar dan minta murid sebut bunyi awal perkataan yang sepadan.
+- **Aktiviti utama (35 minit).** Guru modelkan bunyi huruf dengan contoh ms. 3. Murid sebut perkataan berdasarkan gambar dan pilih kad huruf yang sepadan. Guru beralih ke ms. 4, tunjuk cara memenggal satu perkataan dalam konteks sekolah, kemudian murid memenggal perkataan lain menggunakan kad suku kata.
+- **Pengukuhan dan PBD (15 minit).** Guru jalankan semakan lima huruf secara individu diikuti empat perkataan untuk pemenggalan. Catat ketepatan kedua-dua bahagian secara berasingan.
+- **Penutup (5 minit).** Murid sebut satu perkataan dan tutup latihan dengan menunjukkan bahagian suku kata pertamanya.
+- **Bahan.** Buku teks ms. 3–4, rujukan cetak Buku Aktiviti ms. 2 (ms. 3), rujukan cetak trek 4 (ms. 3).
+
+### PdP 04 — Tudukai i Tambalut Kawawagu (ms. 5)
+
+- **SK 2.3, 1.5 · SP 2.3.4 (v), (a), (c); 1.5.1 (ii), (b).** Murid membaca satu dialog dengan sebutan yang dapat difahami dan menyatakan sekurang-kurangnya dua daripada tiga maklumat lokasi atau arah dengan tepat.
+- **Set induksi (5 minit).** Guru paparkan pelan sekolah ringkas. Murid tunjuk lokasi sebuah tempat yang disebut guru.
+- **Aktiviti utama (35 minit).** Guru bacakan dialog buku teks atau gunakan trek 5 jika tersedia. Murid jejak laluan di pelan dan garis ungkapan arah dalam dialog. Pasangan baca giliran meminta dan memberi maklumat, kemudian tukar peranan dengan laluan yang lain.
+- **Pengukuhan dan PBD (15 minit).** Guru beri tiga kad destinasi dalam pelan dan minta murid jawab dalam dialog pendek. Guru semak lokasi, arah dan kejelasan sebutan.
+- **Penutup (5 minit).** Murid pilih satu ungkapan arah daripada dialog dan tunjuk pergerakannya pada pelan.
+- **Bahan.** Buku teks ms. 5, rujukan cetak Buku Aktiviti ms. 3, rujukan cetak trek 5.
+
+### PdP 05 — Sompipio’ Pimato (ms. 6)
+
+- **SK 5.1, 2.2 · SP 5.1.1 (i), (ii); 2.2.1 (i), (ii).** Murid mengelaskan sekurang-kurangnya lima daripada enam contoh bunyi awal kepada konsonan atau vokal dan menyebut setiap bunyi yang dikelaskan dengan betul.
+- **Set induksi (5 minit).** Guru tunjuk gambar di taman sains sekolah. Murid namakan satu benda dan sebut bunyi awalnya.
+- **Aktiviti utama (35 minit).** Guru modelkan pengelasan konsonan dan vokal berdasarkan peta pada halaman 6. Murid baca perkataan dan letakkan kad di ruang yang sesuai dalam peta mereka. Guru bimbing murid menambah contoh baharu daripada gambar yang disediakan.
+- **Pengukuhan dan PBD (15 minit).** Murid mengelaskan enam kad secara individu dan menyebut bunyi awal bagi setiap kad. Guru semak pengelasan dan sebutan.
+- **Penutup (5 minit).** Murid kongsi satu contoh vokal dan satu contoh konsonan daripada latihan.
+- **Bahan.** Buku teks ms. 6, rujukan cetak Buku Aktiviti ms. 4.
+
+### PdP 06 — Suato’ (ms. 7)
+
+- **SK 3.1 · SP 3.1.2 (iii).** Murid menyusun suku kata dan menulis sekurang-kurangnya empat daripada lima perkataan berkaitan sekolah dengan betul.
+- **Set induksi (5 minit).** Guru tunjuk dua gambar pada ms. 7. Murid padankan setiap gambar dengan kad perkataan.
+- **Aktiviti utama (35 minit).** Guru tunjuk cara menggabungkan suku kata untuk membina satu perkataan daripada halaman sasaran. Murid guna kad suku kata dan petunjuk gambar untuk membina perkataan lain, baca hasil kepada rakan dan salin perkataan lengkap dalam buku tulis.
+- **Pengukuhan dan PBD (15 minit).** Murid menulis lima perkataan daripada set kad yang disusun semula. Guru semak turutan suku kata dan ejaan.
+- **Penutup (5 minit).** Murid baca satu perkataan yang telah dibetulkan dan tunjuk petunjuk gambar yang sepadan.
+- **Bahan.** Buku teks ms. 7, rujukan cetak Buku Aktiviti ms. 5.
+
+### PdP 07 — Taala-ala Sikul Ku (ms. 8)
+
+- **SK 4.2, 2.3 · SP 4.2.1 (iii), (b); 2.3.2 (i).** Murid menyampaikan satu rangkap taala-ala mengikut bimbingan guru dan memberikan maksud yang sepadan untuk sekurang-kurangnya dua daripada tiga perkataan yang ditandai.
+- **Set induksi (5 minit).** Guru paparkan gambar kawasan sekolah. Murid nyatakan satu ciri kawasan yang menyenangkan untuk belajar.
+- **Aktiviti utama (35 minit).** Guru bacakan taala-ala pada ms. 8 atau gunakan trek yang dirujuk jika tersedia. Murid ikut ungkapan secara berbaris dan berbincang tentang maksud kata yang ditebalkan berpandukan konteks. Kumpulan berlatih satu rangkap menggunakan sebutan yang telah dimodelkan.
+- **Pengukuhan dan PBD (15 minit).** Kumpulan menyampaikan satu rangkap. Guru tandakan turutan dan kejelasan sebutan. Murid padankan tiga perkataan dengan maksud yang dipilih secara individu.
+- **Penutup (5 minit).** Murid beri satu contoh daripada taala-ala yang membantu mereka menggambarkan sekolah.
+- **Bahan.** Buku teks ms. 8, rujukan cetak Buku Aktiviti ms. 6, rujukan cetak trek 6, 7.
+
+[Transkrip trek 3 dalam buku teks](https://padlet-uploads.storage.googleapis.com/150348405/08fa062da29e2e4fff0994223feb88db/Bahasa_Kadazandusun_Tahun_2.pdf#page=123) berada pada ms. cetak 115 dan mengandungi lima penerangan gambar serta soalan. Gunakan transkrip sebagai bacaan guru bagi PdP 02 jika fail audio belum tersedia. [Rakaman `Gumuli Sikul`](https://www.youtube.com/watch?v=3yz7BPHZppQ) ialah calon bahan sokongan rangka PdP pertama berdasarkan padanan tajuk dan tahun pada penyenaraian. Buku teks menyenaraikan trek 1 dan 2 pada ms. 1. Rakaman calon masih memerlukan pengesahan kandungan dan padanan dengan fail trek penerbit.

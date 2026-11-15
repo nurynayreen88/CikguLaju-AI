@@ -316,6 +316,66 @@ Rangka guru disusun mengikut lima turutan pertama RPT SK Kuala Medalam 2026. Hal
 - **Pengukuhan dan PBD (15 minit).** Murid mengelaskan enam kad secara individu dan tulis satu ayat. Guru catat ketepatan pengelasan serta semak penggunaan kata nama khas dalam ayat.
 - **Penutup (5 minit).** Murid sebut satu contoh daripada setiap golongan kata nama yang terdapat di sekolah.
 
+## Rangka RPH bagi PdP 06–11
+
+Rangka menggunakan turutan 6–10 dalam RPT SK Kuala Medalam 2026 dan sesi pengukuhan tambahan PdP 07 daripada draf 2027. Semua halaman sasaran ialah daripada Unit 2 — Kami Sebilik. Tempoh 60 minit adalah untuk draf dan boleh diselaraskan selepas jadual sekolah diterima.
+
+### PdP 06 — Kami Sebilik — Memilih jus buah (ms. 9)
+
+- **SK 1.1 · SP 1.1.2 (i), (ii).** Murid menunjukkan persetujuan atau penolakan secara sopan dalam sekurang-kurangnya tiga daripada empat situasi pilihan minuman yang didengar.
+- **Set induksi (5 minit).** Guru tunjuk gambar dua jenis jus. Murid nyatakan pilihan mereka.
+- **Aktiviti utama (35 minit).** Guru bacakan dialog ms. 9 dan tunjuk cara memberi isyarat persetujuan atau penolakan yang sepadan dengan jawapan. Murid baca dialog secara berpasangan dan bertukar peranan. Guru beri kad pilihan jus yang berbeza supaya murid berlatih mendengar tawaran sebelum memberi respons.
+- **Pengukuhan dan PBD (15 minit).** Guru berikan empat tawaran lisan secara individu. Catat sama ada respons sepadan dengan pilihan yang ditunjukkan pada kad dan disampaikan dengan sopan.
+- **Penutup (5 minit).** Murid sebut satu cara menolak tawaran tanpa menyinggung rakan.
+- **Bahan.** Buku teks ms. 9, rujukan cetak Buku Aktiviti ms. 7.
+
+### PdP 07 — Kami Sebilik — Pengukuhan respons sopan (ms. 9)
+
+- **SK 1.1 · SP 1.1.2 (i), (ii).** Tanpa skrip, murid memberi sekurang-kurangnya satu respons setuju dan satu respons tidak setuju dalam tiga giliran soal jawab.
+- **Set induksi (5 minit).** Guru paparkan semula gambar minuman pada ms. 9. Murid tunjuk isyarat untuk setuju atau tidak setuju mengikut pilihan masing-masing.
+- **Aktiviti utama (35 minit).** Guru edarkan kad peranan dengan pilihan minuman berbeza. Murid lakukan simulasi menawarkan minuman kepada ahli keluarga. Murid yang menerima tawaran perlu menunggu soalan habis sebelum menyatakan pilihan. Guru ulang model sebutan untuk murid yang memerlukan bimbingan.
+- **Pengukuhan dan PBD (15 minit).** Guru beri tiga tawaran baharu tanpa teks dialog. Tandakan respons yang sesuai dengan pilihan serta penggunaan ungkapan sopan.
+- **Penutup (5 minit).** Murid pilih satu respons daripada latihan untuk digunakan ketika menerima tawaran di rumah.
+- **Bahan.** Buku teks ms. 9, rujukan cetak Buku Aktiviti ms. 7.
+
+### PdP 08 — Sida Daniella Sebilik dan Biodata Kami Sebilik (ms. 10–11)
+
+- **SK 2.2 · SP 2.2.1 (i), (ii), (iii).** Selepas membaca petikan dan biodata, murid menentukan maksud dua perkataan melalui konteks, menjawab satu soalan fakta dan membuat satu jangkaan yang disokong maklumat bacaan.
+- **Set induksi (5 minit).** Guru paparkan gambar keluarga pada ms. 10 dan tanya hubungan antara watak. Murid buat tekaan awal.
+- **Aktiviti utama (35 minit).** Guru modelkan satu cara mencari petunjuk makna perkataan dalam ayat. Murid baca petikan secara senyap, hubungkan nama ahli keluarga dengan biodata dan semak soalan fakta bersama pasangan. Guru modelkan satu jangkaan tentang kegiatan keluarga berdasarkan hobi yang tercatat.
+- **Pengukuhan dan PBD (15 minit).** Guru beri empat soalan meliputi dua maksud perkataan, satu fakta dan satu jangkaan. Murid jawab sendiri. Guru catat ketepatan dan semak sama ada jangkaan bersandarkan butiran teks.
+- **Penutup (5 minit).** Murid tunjuk satu maklumat yang hanya terdapat dalam biodata.
+- **Bahan.** Buku teks ms. 10–11, rujukan cetak Buku Aktiviti ms. 8, rujukan cetak trek 5 (ms. 10).
+
+### PdP 09 — Pengerindu Kami Sebilik dan Pengerindu Kami Maya Lepa (ms. 12–13)
+
+- **SK 3.1 · SP 3.1.2.** Murid menyalin suku kata dan menggabungkannya menjadi sekurang-kurangnya empat daripada lima perkataan bermakna berkaitan hobi.
+- **Set induksi (5 minit).** Guru tunjuk gambar hobi pada ms. 12. Murid padankan gambar dengan satu hobi yang mereka kenali.
+- **Aktiviti utama (35 minit).** Guru pilih perkataan daripada halaman sasaran dan modelkan cara memisahkan serta menyalin suku kata. Murid susun kad suku kata berdasarkan petikan dan gambar, kemudian salin suku kata dan tulis perkataan lengkap dalam buku tulis.
+- **Pengukuhan dan PBD (15 minit).** Guru berikan lima gambar atau kad petunjuk yang disusun semula. Murid tulis perkataan sendiri. Guru tandakan turutan suku kata dan ejaan yang tepat.
+- **Penutup (5 minit).** Murid baca satu perkataan yang ditulis dan mengaitkannya dengan gambar.
+- **Bahan.** Buku teks ms. 12–13, rujukan cetak Buku Aktiviti ms. 9, rujukan cetak trek 6 (ms. 13).
+
+### PdP 10 — Pelandai Sayau (ms. 14)
+
+- **SK 4.1 · SP 4.1.2.** Murid menyusun semula sekurang-kurangnya tiga daripada empat kad frasa mengikut turutan satu rangkap pelandai.
+- **Set induksi (5 minit).** Guru tunjuk gambar ahli keluarga. Murid nyatakan kepada siapa mereka boleh mengucapkan terima kasih.
+- **Aktiviti utama (35 minit).** Guru perdengarkan trek 7 jika tersedia atau deklamasikan rangkap daripada ms. 14. Murid baca semula rangkap berirama. Guru edarkan kad frasa daripada rangkap yang sama dan minta kumpulan menyusun kad, membaca hasil dan menyemak turutan dengan teks.
+- **Pengukuhan dan PBD (15 minit).** Guru edarkan empat kad frasa dalam susunan baharu. Murid menyusun tanpa melihat buku. Guru bandingkan turutan dengan rangkap asal dan catat ketepatan sekurang-kurangnya tiga kedudukan.
+- **Penutup (5 minit).** Murid nyatakan satu nilai keluarga yang digambarkan dalam rangkap tadi.
+- **Bahan.** Buku teks ms. 14, rujukan cetak Buku Aktiviti ms. 10, rujukan cetak trek 7.
+
+### PdP 11 — Memarin di Tebing Tasik dan Aram Belagu (ms. 15–16)
+
+- **SK 5.1 · SP 5.1.2 (i), (ii), (iii).** Murid mengelaskan sekurang-kurangnya lima daripada enam kata ganti nama daripada dialog dan lagu, kemudian melengkapkan satu dialog ringkas dengan kata ganti nama yang sesuai.
+- **Set induksi (5 minit).** Guru tunjuk gambar keluarga di tebing tasik dan minta murid kenal pasti siapa yang bercakap dalam satu baris dialog.
+- **Aktiviti utama (35 minit).** Guru baca dialog atau perdengarkan trek 8. Murid kesan kata ganti nama dan jelaskan siapa atau milik siapa yang dirujuk berdasarkan dialog. Guru semak tiga kategori dengan contoh daripada buku teks. Murid kemudian menanda contoh tambahan semasa membaca lirik pada ms. 16.
+- **Pengukuhan dan PBD (15 minit).** Murid mengelaskan enam kad perkataan dan memilih kata ganti nama untuk melengkapkan satu dialog. Guru semak ketepatan pengelasan dan rujukan kata ganti nama dalam konteks.
+- **Penutup (5 minit).** Murid baca dialog sendiri dan nyatakan orang yang dirujuk oleh kata ganti nama pilihan mereka.
+- **Bahan.** Buku teks ms. 15–16, rujukan cetak Buku Aktiviti ms. 11, rujukan cetak trek 8 (ms. 15), 9 (ms. 16).
+
+Sumber audio Buku Teks Primari 2 dirujuk dalam [indeks Bahasa Iban di Sekula](https://sites.google.com/moe.gov.my/bahasa-iban-di-sekula/kereban-sanding/buku-teks-kssr). [Rakaman `Sayauka Pengerai`](https://www.youtube.com/watch?v=5ugLMuEcZYs) ialah calon bahan sokongan PdP 01 berdasarkan padanan tajuk dan tahun pada penyenaraian. Kandungan rakaman, edisi dan padanan dengan fail trek penerbit masih perlu disahkan.
+
 ## Semakan kod bercanggah pada ms. 45, 46 dan 95
 
 | Buku teks (ms.) | Aktiviti yang dapat disahkan | SP DSKP yang perlu disemak dengan guru |
