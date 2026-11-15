@@ -10,6 +10,10 @@ Rancangan Pengajaran Tahunan sekolah rendah berdasarkan RPT induk CikguLaju 2027
 | 5 | 160 | [RPT English Year 5](RPT_ENGLISH_TAHUN_5_2027_UNTUK_GURU.pdf) |
 | 6 | 160 | [RPT English Year 6](RPT_ENGLISH_TAHUN_6_2027_UNTUK_GURU.pdf) |
 
+## Agihan mingguan 2027
+
+Setiap tahun merangkumi 160 Lesson dalam 44 julat Kumpulan A/B, termasuk dua minggu cuti penuh. Agihan ialah 35 minggu dengan empat Lesson, enam minggu dengan tiga Lesson dan satu minggu dengan dua Lesson. Agihan mengambil panduan daripada RPT 2026 dan tarikh 2027 menggunakan [takwim KPM](https://www.moe.gov.my/index.php/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik). Satu Lesson SOW ialah 60 minit. Sahkan tarikh pengajaran dengan jadual dan cuti sekolah masing-masing. [Semakan Web dan rujukan RPT 2026](https://github.com/nurynayreen88/CikguLaju-AI/pull/752).
+
 ## RPH yang sepadan
 
 **800/800 sumber RPH Year 2–6 sudah tersedia**, termasuk [160 RPH Year 6](../../rph_standalone/english/year6/). Pernyataan lama bahawa RPH Year 6 belum dijana sudah tidak tepat dan telah dibetulkan di sini.
@@ -32,4 +36,4 @@ Audit teknikal sumber–SOW–Word/PDF dan penjana PDF A4 core telah lulus bagi 
 - [Audit audio Tahun 1–6 dan risiko sumber](../../audits/english_y1_y6_audio_source_risk_register_20261105.json)
 - [Audit sebenar PDF RPT Year 6](../../tests/test_english_rpt_2027_y6_pdf_source.py)
 
-Penyediaan dan kemas kini README ini tidak mengubah lima PDF asal, struktur DB, data guru, kuota, transaksi pembayaran atau penghantaran Telegram.
+Agihan ini turut menyelaraskan ringkasan minggu mengikut modul Year 3.
