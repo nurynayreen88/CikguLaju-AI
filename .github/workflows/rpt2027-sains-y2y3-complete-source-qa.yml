@@ -1,0 +1,53 @@
+name: RPT2027 Sains Y2/3 complete 124 official SP 92/103 PdP QA
+on:
+  pull_request:
+    paths:
+      - 'rpt_2027/sains/sains_y2_y3_original_dskp_124_sp_20261110.py'
+      - 'scripts/build_rpt2027_sains_kssr2017_complete_y2y3_20261110.py'
+      - 'tests/test_rpt2027_sains_kssr2017_complete_y2y3_20261110.py'
+      - '.github/workflows/rpt2027-sains-y2y3-complete-source-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  generate-source-verified-pdfs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'PyMuPDF==1.24.14' 'reportlab==4.2.5'
+      - name: Prove original KSSR Year2/3 code coverage, Week01 and academic HOLD
+        run: |
+          python -m unittest tests.test_rpt2027_sains_kssr2017_complete_y2y3_20261110 -v
+      - name: Build and inspect Year2 92 and Year3 103 source-backed RPT PDFs
+        run: |
+          python - <<'PY'
+          import fitz
+          from pathlib import Path
+          from scripts.build_rpt2027_sains_kssr2017_complete_y2y3_20261110 import build_all
+          out=Path('output/rpt2027_sains_y2_92_y3_103_full_124_sp_source')
+          files=build_all(out)
+          assert [(y,n) for y,n,p in files]==[(2,92),(3,103)]
+          for year,count,path in files:
+              with fitz.open(path) as d:
+                  page_count=len(d)
+                  assert len(d)>=10
+                  assert all(p.rect.width>p.rect.height for p in d)
+                  cover=d[0].get_text()
+                  assert 'NAMA GURU' in cover and 'NAMA SEKOLAH' in cover
+                  text='\n'.join(p.get_text() for p in list(d)[1:])
+                  assert 'M01' in text and 'Unit 1' in text
+                  assert 'PdP 001' in text
+                  assert '1.1.1' in text
+                  assert 'JANGAN MERGE' not in text and 'SEBELUM READY' not in text
+              print('ORIGINAL_DSKP_SAINS_YEAR_PDF',year,count,page_count,path,flush=True)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rpt2027-sains-year2-92-year3-103-original-124-sp-review
+          retention-days: 30
+          if-no-files-found: error
+          path: output/rpt2027_sains_y2_92_y3_103_full_124_sp_source/

@@ -1,0 +1,63 @@
+name: RPT 2027 actual Web Telegram packaged PDF leak audit
+on:
+  pull_request:
+    paths:
+      - 'scripts/audit_rpt2027_packaged_live_downloads_staging.py'
+      - 'scripts/audit_rpt2027_teacher_text_leaks_20261108.py'
+      - 'rpt_2027/**/*.pdf'
+      - 'web/native_rpt_telegram_api.py'
+      - '.github/workflows/rpt2027-packaged-live-route-scan.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit-packaged-25:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'PyMuPDF==1.24.14'
+      - name: Verify 25 real packaged RPT PDFs and report all developer text
+        run: |
+          python -m scripts.audit_rpt2027_packaged_live_downloads_staging
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('staging/rpt_2027_seragam_2026/packaged_delivery_pdf_audit.json')
+          report=json.loads(p.read_text(encoding='utf-8'))
+          assert report['target_count']==25
+          assert report['scanned_files']==25
+          assert not report['missing_packaged_files']
+          assert not report['read_errors']
+          assert report['academic_signoff'] is False
+          print('PACKAGED_LEAK_COUNT:',report['findings_count'])
+          print('PACKAGED_FILES_AFFECTED:',report['files_with_findings'])
+          PY
+      - name: Render PI Year4 source sample for visual audit
+        run: |
+          mkdir -p staging/rpt_2027_seragam_2026/packaged_pdf_samples
+          python - <<'PY'
+          import fitz
+          from pathlib import Path
+          inp=Path('rpt_2027/pendidikan_islam/RPT_Pendidikan_Islam_Tahun_4_2027_CikguLaju.pdf')
+          out=Path('staging/rpt_2027_seragam_2026/packaged_pdf_samples')
+          with fitz.open(inp) as d:
+              for page in sorted({0, 1, min(3, d.page_count-1), d.page_count-1}):
+                  d[page].get_pixmap(matrix=fitz.Matrix(1.5,1.5),alpha=False).save(str(out/f'PI_T4_original_page_{page+1}.png'))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: RPT2027-actual-packaged-25-PDF-leak-audit
+          path: |
+            staging/rpt_2027_seragam_2026/packaged_delivery_pdf_audit.json
+            staging/rpt_2027_seragam_2026/packaged_pdf_samples/*.png
+            rpt_2027/english/RPT_ENGLISH_TAHUN_*_2027_UNTUK_GURU.pdf
+            rpt_2027/bahasa_melayu/RPT_Bahasa_Melayu_Tahun_*_2027_DRAF.pdf
+            rpt_2027/matematik/RPT_Matematik_Tahun_*_2027_v28_SEMENTARA.pdf
+            rpt_2027/pendidikan_islam/RPT_Pendidikan_Islam_Tahun_*_2027_CikguLaju.pdf
+            rpt_2027/pjpk/RPT_PJPK_Tahun_*_2027_DRAF.pdf
+          if-no-files-found: error
+          retention-days: 14

@@ -1,0 +1,86 @@
+{
+  "audit_date": "2026-11-07",
+  "scope": "Bahasa Arab 298 RPT Year2-6 PdP source SP code presence in official KPM DSKP PDFs",
+  "status": "RPT_STAGING_SOURCE_CODE_AUDIT_ONLY",
+  "notes": [
+    "This is *not* a full SK/SP official statement review or approval of pedagogical alignment.",
+    "Year2 PDF text layer is defective: most printed SP codes are extracted as repeating 1.1.1, so absence in extracted text does not show SP does not exist on page. Needs layout-based reading of original PDF before full statements can be safely incorporated.",
+    "Years3-6 source literal code presence matches source RPT index, not proof correct SP selected for every exercise or that Arabic full statements can be copied in logical RTL order."
+  ],
+  "years": [
+    {
+      "year": 2,
+      "pdp_count": 60,
+      "unique_rpt_sp_codes": 19,
+      "source_pdf_name": "GuruBesar_DSKP_Bahasa_Arab_Tahun_2.pdf",
+      "source_url": "https://drive.google.com/file/d/1WY_c69UshDm3jHzVK86G2xfu77UUkGYO/view",
+      "source_extracted_unique_sp_codes": 1,
+      "source_code_presence_count": 1,
+      "not_visible_in_extracted_text": [
+        "1.1.2",
+        "1.2.1",
+        "1.2.2",
+        "1.3.1",
+        "1.3.2",
+        "1.4.1",
+        "1.4.5",
+        "2.1.1",
+        "2.2.1",
+        "2.2.2",
+        "2.3.1",
+        "2.3.2",
+        "2.3.5",
+        "2.5.1",
+        "3.1.1",
+        "3.2.1",
+        "3.3.1",
+        "3.4.1"
+      ],
+      "reading_gate": "PDF_TEXT_LAYER_UNRELIABLE_NEEDS_LAYOUT_AND_VISUAL_CHECK"
+    },
+    {
+      "year": 3,
+      "pdp_count": 60,
+      "unique_rpt_sp_codes": 23,
+      "source_pdf_name": "DSKP KSSR (Semakan 2017) Bahasa Arab Tahun 3.pdf",
+      "source_url": "https://drive.google.com/file/d/1LlqBjz05t3M-M-kMC_FpZA0QSXdcUaZW/view",
+      "source_extracted_unique_sp_codes": 50,
+      "source_code_presence_count": 23,
+      "not_visible_in_extracted_text": [],
+      "reading_gate": "SOURCE_CODE_PRESENCE_ONLY_NOT_FULL_DSKP_SENTENCE"
+    },
+    {
+      "year": 4,
+      "pdp_count": 58,
+      "unique_rpt_sp_codes": 25,
+      "source_pdf_name": "DSKP KSSR (Semakan 2017) Bahasa Arab Tahun 4.pdf",
+      "source_url": "https://drive.google.com/file/d/1ljeuSbPI4vfu0moS_itg7ONaJ6mnKII2/view",
+      "source_extracted_unique_sp_codes": 46,
+      "source_code_presence_count": 25,
+      "not_visible_in_extracted_text": [],
+      "reading_gate": "SOURCE_CODE_PRESENCE_ONLY_NOT_FULL_DSKP_SENTENCE"
+    },
+    {
+      "year": 5,
+      "pdp_count": 60,
+      "unique_rpt_sp_codes": 25,
+      "source_pdf_name": "DSKP KSSR (Semakan 2017) Bahasa Arab Tahun 5.pdf",
+      "source_url": "https://drive.google.com/file/d/1D-Yb6pwiHAf4k4FDkPbdbsAhvGwv8G5q/view",
+      "source_extracted_unique_sp_codes": 49,
+      "source_code_presence_count": 25,
+      "not_visible_in_extracted_text": [],
+      "reading_gate": "SOURCE_CODE_PRESENCE_ONLY_NOT_FULL_DSKP_SENTENCE"
+    },
+    {
+      "year": 6,
+      "pdp_count": 60,
+      "unique_rpt_sp_codes": 25,
+      "source_pdf_name": "DSKP KSSR (Semakan 2017) Bahasa Arab Tahun 6.pdf",
+      "source_url": "https://drive.google.com/file/d/1tHZTKLAc_4N4fpMvHeJN_DgCpn_m7dMp/view",
+      "source_extracted_unique_sp_codes": 46,
+      "source_code_presence_count": 25,
+      "not_visible_in_extracted_text": [],
+      "reading_gate": "SOURCE_CODE_PRESENCE_ONLY_NOT_FULL_DSKP_SENTENCE"
+    }
+  ]
+}

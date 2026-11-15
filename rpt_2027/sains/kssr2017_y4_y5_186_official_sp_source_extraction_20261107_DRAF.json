@@ -1,0 +1,1701 @@
+{
+  "status": "STAGING_KSSR2017_SOURCE_STATEMENTS_FROM_ORIGINAL_PDF_EXTRACT_PENDING_VISUAL_SIGNOFF",
+  "curriculum": "KSSR (Semakan 2017), Sains Tahun 4–5",
+  "authored_date": "2026-11-07",
+  "source": {
+    "4": {
+      "official_pdf_sha256": "623e60d32156e1a3eeb399f856f40dc6529946445278bf4cf69aea081ad543ea",
+      "original_drive_url": "https://drive.google.com/file/d/1eXDdb_qSfCKyqoVtl9T4q2I4rKyHtk9D/view",
+      "official_sp_count": 91,
+      "visual_signoff_count": 0,
+      "rpt_pdp_mapping_approved": false
+    },
+    "5": {
+      "official_pdf_sha256": "e90744b28e6cc3943e8707475a911238ffc8b6a9dffb812bf742d35bcaa61ef6",
+      "original_drive_url": "https://drive.google.com/file/d/1YkiK-pVo4UUzyOUvv_Vrico58eQyddCz/view",
+      "official_sp_count": 95,
+      "visual_signoff_count": 0,
+      "rpt_pdp_mapping_approved": false
+    }
+  },
+  "rows": [
+    {
+      "year": 4,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.1",
+      "sp_text_source_extract_UNVERIFIED": "Memerhati dengan menggunakan semua deria yang terlibat dan alat jika perlu untuk membuat pemerhatian secara kualitatif bagi menerangkan fenomena atau perubahan yang berlaku.",
+      "original_pdf_page": 54,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.2",
+      "sp_text_source_extract_UNVERIFIED": "Mengelas dengan membandingkan atau mengenal pasti persamaan dan perbezaan berdasarkan ciri sepunya.",
+      "original_pdf_page": 54,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.3",
+      "sp_text_source_extract_UNVERIFIED": "Mengukur dan menggunakan nombor dengan menggunakan alat dan unit piawai dengan teknik yang betul.",
+      "original_pdf_page": 54,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.4",
+      "sp_text_source_extract_UNVERIFIED": "Membuat inferens dengan menyatakan kesimpulan awal atau penerangan yang munasabah bagi sesuatu pemerhatian dengan menggunakan maklumat yang diperoleh.",
+      "original_pdf_page": 54,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.5",
+      "sp_text_source_extract_UNVERIFIED": "Meramal dengan membuat jangkaan tentang sesuatu peristiwa atau fenomena berdasarkan pemerhatian, pengalaman lalu atau data.",
+      "original_pdf_page": 55,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.6",
+      "sp_text_source_extract_UNVERIFIED": "Berkomunikasi dengan merekod maklumat atau idea dalam bentuk yang sesuai dan mempersembahkan maklumat atau idea tersebut secara sistematik.",
+      "original_pdf_page": 55,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.7",
+      "sp_text_source_extract_UNVERIFIED": "Menggunakan perhubungan ruang dan masa dengan menyusun kejadian sesuatu fenomena atau peristiwa mengikut kronologi berdasarkan masa.",
+      "original_pdf_page": 55,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.8",
+      "sp_text_source_extract_UNVERIFIED": "Mentafsir data dengan memilih idea yang relevan tentang objek, peristiwa atau pola yang terdapat pada data untuk membuat penerangan.",
+      "original_pdf_page": 55,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.9",
+      "sp_text_source_extract_UNVERIFIED": "Mendefinisi secara operasi dengan memerihalkan satu tafsiran tentang perkara yang dilakukan dan diperhatikan bagi sesuatu situasi mengikut aspek yang ditentukan.",
+      "original_pdf_page": 56,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.10",
+      "sp_text_source_extract_UNVERIFIED": "Mengawal pemboleh ubah dengan menentukan pemboleh ubah bergerak balas dan dimalarkan setelah pemboleh ubah dimanipulasi ditentukan dalam sesuatu penyiasatan.",
+      "original_pdf_page": 56,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.11",
+      "sp_text_source_extract_UNVERIFIED": "Membuat hipotesis dengan membuat pernyataan umum yang boleh diuji tentang hubungan antara pemboleh ubah dalam sesuatu penyiasatan.",
+      "original_pdf_page": 56,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.12",
+      "sp_text_source_extract_UNVERIFIED": "Mengeksperimen dengan menggunakan kemahiran proses sains asas bagi mengumpul dan mentafsir data serta membuat rumusan untuk membuktikan hipotesis dan membuat laporan.",
+      "original_pdf_page": 56,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "2.1",
+      "sk_title_source": "Pernafasan Manusia",
+      "sp_code": "2.1.1",
+      "sp_text_source_extract_UNVERIFIED": "Mengenal pasti organ yang terlibat dalam proses pernafasan.",
+      "original_pdf_page": 58,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "2.1",
+      "sk_title_source": "Pernafasan Manusia",
+      "sp_code": "2.1.2",
+      "sp_text_source_extract_UNVERIFIED": "Memerihalkan proses pernafasan dari aspek laluan udara dan pertukaran gas yang berlaku di peparu melalui pemerhatian menerusi pelbagai media.",
+      "original_pdf_page": 58,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "2.1",
+      "sk_title_source": "Pernafasan Manusia",
+      "sp_code": "2.1.3",
+      "sp_text_source_extract_UNVERIFIED": "Membezakan kandungan oksigen dan karbon dioksida semasa menarik dan menghembus nafas.",
+      "original_pdf_page": 58,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "2.1",
+      "sk_title_source": "Pernafasan Manusia",
+      "sp_code": "2.1.4",
+      "sp_text_source_extract_UNVERIFIED": "Memerihalkan pergerakan dada semasa menarik dan menghembus nafas dengan menjalankan aktiviti.",
+      "original_pdf_page": 58,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "2.1",
+      "sk_title_source": "Pernafasan Manusia",
+      "sp_code": "2.1.5",
+      "sp_text_source_extract_UNVERIFIED": "Mengitlak bahawa kadar pernafasan bergantung kepada jenis aktiviti yang dilakukan.",
+      "original_pdf_page": 58,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "2.1",
+      "sk_title_source": "Pernafasan Manusia",
+      "sp_code": "2.1.6",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang proses pernafasan manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 59,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "2.2",
+      "sk_title_source": "Perkumuhan dan Penyahtinjaan",
+      "sp_code": "2.2.1",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan maksud perkumuhan dan penyahtinjaan.",
+      "original_pdf_page": 60,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "2.2",
+      "sk_title_source": "Perkumuhan dan Penyahtinjaan",
+      "sp_code": "2.2.2",
+      "sp_text_source_extract_UNVERIFIED": "Mengenal pasti organ dan hasil bagi perkumuhan.",
+      "original_pdf_page": 60,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "2.2",
+      "sk_title_source": "Perkumuhan dan Penyahtinjaan",
+      "sp_code": "2.2.3",
+      "sp_text_source_extract_UNVERIFIED": "Membuat inferens kepentingan penyingkiran hasil perkumuhan dan hasil penyahtinjaan.",
+      "original_pdf_page": 60,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "2.2",
+      "sk_title_source": "Perkumuhan dan Penyahtinjaan",
+      "sp_code": "2.2.4",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang perkumuhan dan penyahtinjaan manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 60,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "2.3",
+      "sk_title_source": "Manusia Bergerak Balas Terhadap Rangsangan",
+      "sp_code": "2.3.1",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan manusia bergerak balas apabila organ deria menerima rangsangan.",
+      "original_pdf_page": 61,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "2.3",
+      "sk_title_source": "Manusia Bergerak Balas Terhadap Rangsangan",
+      "sp_code": "2.3.2",
+      "sp_text_source_extract_UNVERIFIED": "Menjelas dengan contoh gerak balas manusia terhadap rangsangan dalam kehidupan harian.",
+      "original_pdf_page": 61,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "2.3",
+      "sk_title_source": "Manusia Bergerak Balas Terhadap Rangsangan",
+      "sp_code": "2.3.3",
+      "sp_text_source_extract_UNVERIFIED": "Membuat inferens tentang kepentingan gerak balas manusia terhadap rangsangan.",
+      "original_pdf_page": 61,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "2.3",
+      "sk_title_source": "Manusia Bergerak Balas Terhadap Rangsangan",
+      "sp_code": "2.3.4",
+      "sp_text_source_extract_UNVERIFIED": "Memerihalkan tabiat yang mengganggu proses gerak balas manusia terhadap rangsangan.",
+      "original_pdf_page": 61,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "2.3",
+      "sk_title_source": "Manusia Bergerak Balas Terhadap Rangsangan",
+      "sp_code": "2.3.5",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang manusia bergerak balas terhadap rangsangan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 61,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "3.1",
+      "sk_title_source": "Organ Pernafasan Haiwan",
+      "sp_code": "3.1.1",
+      "sp_text_source_extract_UNVERIFIED": "Mengenal pasti organ pernafasan haiwan.",
+      "original_pdf_page": 63,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "3.1",
+      "sk_title_source": "Organ Pernafasan Haiwan",
+      "sp_code": "3.1.2",
+      "sp_text_source_extract_UNVERIFIED": "Mengelaskan haiwan berdasarkan organ pernafasan.",
+      "original_pdf_page": 63,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "3.1",
+      "sk_title_source": "Organ Pernafasan Haiwan",
+      "sp_code": "3.1.3",
+      "sp_text_source_extract_UNVERIFIED": "Mengitlak terdapat haiwan yang mempunyai lebih daripada satu organ pernafasan.",
+      "original_pdf_page": 63,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "3.1",
+      "sk_title_source": "Organ Pernafasan Haiwan",
+      "sp_code": "3.1.4",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang organ pernafasan haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 63,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "3.2",
+      "sk_title_source": "Haiwan Vertebrata",
+      "sp_code": "3.2.1",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan maksud haiwan vertebrata dan invertebrata.",
+      "original_pdf_page": 64,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "3.2",
+      "sk_title_source": "Haiwan Vertebrata",
+      "sp_code": "3.2.2",
+      "sp_text_source_extract_UNVERIFIED": "Memberi contoh haiwan vertebrata dan invertebrata.",
+      "original_pdf_page": 64,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "3.2",
+      "sk_title_source": "Haiwan Vertebrata",
+      "sp_code": "3.2.3",
+      "sp_text_source_extract_UNVERIFIED": "Mengelaskan haiwan vertebrata berdasarkan ciri khusus bagi mamalia, reptilia, amfibia, burung dan ikan.",
+      "original_pdf_page": 64,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "3.2",
+      "sk_title_source": "Haiwan Vertebrata",
+      "sp_code": "3.2.4",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang haiwan vertebrata melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 64,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "4.1",
+      "sk_title_source": "Tumbuhan Bergerak Balas Terhadap Rangsangan",
+      "sp_code": "4.1.1",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan tumbuhan bergerak balas terhadap rangsangan melalui pemerhatian menerusi pelbagai media.",
+      "original_pdf_page": 65,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "4.1",
+      "sk_title_source": "Tumbuhan Bergerak Balas Terhadap Rangsangan",
+      "sp_code": "4.1.2",
+      "sp_text_source_extract_UNVERIFIED": "Menghubungkait bahagian tumbuhan yang bergerak balas dengan jenis rangsangan.",
+      "original_pdf_page": 65,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "4.1",
+      "sk_title_source": "Tumbuhan Bergerak Balas Terhadap Rangsangan",
+      "sp_code": "4.1.3",
+      "sp_text_source_extract_UNVERIFIED": "Membuat kesimpulan bahagian tumbuhan yang bergerak balas terhadap rangsangan dengan menjalankan penyiasatan.",
+      "original_pdf_page": 65,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "4.1",
+      "sk_title_source": "Tumbuhan Bergerak Balas Terhadap Rangsangan",
+      "sp_code": "4.1.4",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang tumbuhan gerak balas terhadap rangsangan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 65,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "4.2",
+      "sk_title_source": "Fotosintesis",
+      "sp_code": "4.2.1",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan maksud fotosintesis.",
+      "original_pdf_page": 66,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "4.2",
+      "sk_title_source": "Fotosintesis",
+      "sp_code": "4.2.2",
+      "sp_text_source_extract_UNVERIFIED": "Menyenaraikan keperluan tumbuhan semasa proses fotosintesis.",
+      "original_pdf_page": 66,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "4.2",
+      "sk_title_source": "Fotosintesis",
+      "sp_code": "4.2.3",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan hasil fotosintesis melalui pemerhatian menerusi pelbagai media.",
+      "original_pdf_page": 66,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "4.2",
+      "sk_title_source": "Fotosintesis",
+      "sp_code": "4.2.4",
+      "sp_text_source_extract_UNVERIFIED": "Menaakul kepentingan fotosintesis terhadap hidupan.",
+      "original_pdf_page": 66,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "4.2",
+      "sk_title_source": "Fotosintesis",
+      "sp_code": "4.2.5",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang fotosintesis melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 66,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "5.1",
+      "sk_title_source": "Cahaya Bergerak Lurus",
+      "sp_code": "5.1.1",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan cahaya bergerak lurus dengan menjalankan aktiviti.",
+      "original_pdf_page": 68,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "5.1",
+      "sk_title_source": "Cahaya Bergerak Lurus",
+      "sp_code": "5.1.2",
+      "sp_text_source_extract_UNVERIFIED": "Membanding dan membezakan bayang- bayang yang terhasil apabila cahaya dihalang oleh objek lutsinar, lutcahaya dan legap dengan menjalankan aktiviti.",
+      "original_pdf_page": 68,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "5.1",
+      "sk_title_source": "Cahaya Bergerak Lurus",
+      "sp_code": "5.1.3",
+      "sp_text_source_extract_UNVERIFIED": "Mengeksperimen untuk menentukan faktor yang mempengaruhi saiz dan bentuk bayang-bayang.",
+      "original_pdf_page": 68,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "5.1",
+      "sk_title_source": "Cahaya Bergerak Lurus",
+      "sp_code": "5.1.4",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang cahaya bergerak lurus melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 68,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "5.2",
+      "sk_title_source": "Pantulan Cahaya",
+      "sp_code": "5.2.1",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan cahaya boleh dipantulkan dengan menjalankan aktiviti.",
+      "original_pdf_page": 69,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "5.2",
+      "sk_title_source": "Pantulan Cahaya",
+      "sp_code": "5.2.2",
+      "sp_text_source_extract_UNVERIFIED": "Memerihalkan kegunaan pantulan cahaya dalam kehidupan harian.",
+      "original_pdf_page": 69,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "5.2",
+      "sk_title_source": "Pantulan Cahaya",
+      "sp_code": "5.2.3",
+      "sp_text_source_extract_UNVERIFIED": "Melukis gambar rajah sinar yang menunjukkan pantulan cahaya pada cermin.",
+      "original_pdf_page": 69,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "5.2",
+      "sk_title_source": "Pantulan Cahaya",
+      "sp_code": "5.2.4",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang pantulan cahaya melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 69,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "5.3",
+      "sk_title_source": "Pembiasan Cahaya",
+      "sp_code": "5.3.1",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan cahaya boleh dibiaskan melalui pemerhatian menerusi pelbagai media.",
+      "original_pdf_page": 70,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "5.3",
+      "sk_title_source": "Pembiasan Cahaya",
+      "sp_code": "5.3.2",
+      "sp_text_source_extract_UNVERIFIED": "Menjelas melalui contoh cahaya boleh dibiaskan dengan menjalankan aktiviti.",
+      "original_pdf_page": 70,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "5.3",
+      "sk_title_source": "Pembiasan Cahaya",
+      "sp_code": "5.3.3",
+      "sp_text_source_extract_UNVERIFIED": "Memerihalkan pembentukan pelangi dengan menjalankan aktiviti.",
+      "original_pdf_page": 70,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "5.3",
+      "sk_title_source": "Pembiasan Cahaya",
+      "sp_code": "5.3.4",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang pembiasan cahaya melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 70,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "6.1",
+      "sk_title_source": "Bunyi",
+      "sp_code": "6.1.1",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan bunyi dihasilkan oleh getaran dengan menjalankan aktiviti.",
+      "original_pdf_page": 71,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "6.1",
+      "sk_title_source": "Bunyi",
+      "sp_code": "6.1.2",
+      "sp_text_source_extract_UNVERIFIED": "Memerihalkan bunyi bergerak ke semua arah.",
+      "original_pdf_page": 71,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "6.1",
+      "sk_title_source": "Bunyi",
+      "sp_code": "6.1.3",
+      "sp_text_source_extract_UNVERIFIED": "Memberi contoh fenomena dalam kehidupan harian yang menunjukkan bunyi boleh dipantulkan.",
+      "original_pdf_page": 71,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "6.1",
+      "sk_title_source": "Bunyi",
+      "sp_code": "6.1.4",
+      "sp_text_source_extract_UNVERIFIED": "Memerihalkan bunyi yang berfaedah dan bunyi yang memudaratkan dalam kehidupan harian.",
+      "original_pdf_page": 71,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "6.1",
+      "sk_title_source": "Bunyi",
+      "sp_code": "6.1.5",
+      "sp_text_source_extract_UNVERIFIED": "Menjana idea untuk menyelesaikan masalah bagi mengurangkan pencemaran bunyi.",
+      "original_pdf_page": 71,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "7.1",
+      "sk_title_source": "Sumber dan Bentuk Tenaga",
+      "sp_code": "7.1.1",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan maksud tenaga.",
+      "original_pdf_page": 73,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "7.1",
+      "sk_title_source": "Sumber dan Bentuk Tenaga",
+      "sp_code": "7.1.2",
+      "sp_text_source_extract_UNVERIFIED": "Memerihalkan pelbagai sumber tenaga melalui pemerhatian menerusi pelbagai media.",
+      "original_pdf_page": 73,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "7.1",
+      "sk_title_source": "Sumber dan Bentuk Tenaga",
+      "sp_code": "7.1.3",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan dengan contoh pelbagai bentuk tenaga.",
+      "original_pdf_page": 73,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "7.1",
+      "sk_title_source": "Sumber dan Bentuk Tenaga",
+      "sp_code": "7.1.4",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan melalui contoh perubahan bentuk tenaga dalam kehidupan seharian.",
+      "original_pdf_page": 73,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "7.1",
+      "sk_title_source": "Sumber dan Bentuk Tenaga",
+      "sp_code": "7.1.5",
+      "sp_text_source_extract_UNVERIFIED": "Mengitlak tenaga tidak boleh dicipta dan tidak boleh dimusnahkan tetapi boleh berubah bentuk.",
+      "original_pdf_page": 73,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "7.1",
+      "sk_title_source": "Sumber dan Bentuk Tenaga",
+      "sp_code": "7.1.6",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang sumber tenaga dan bentuk tenaga melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 73,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "7.2",
+      "sk_title_source": "Sumber Tenaga Boleh Dibaharui dan Sumber Tenaga Tidak Boleh Dibaharui",
+      "sp_code": "7.2.1",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan dengan contoh sumber tenaga boleh dibaharui dan tenaga tidak boleh dibaharui melalui pemerhatian menerusi pelbagai media.",
+      "original_pdf_page": 74,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "7.2",
+      "sk_title_source": "Sumber Tenaga Boleh Dibaharui dan Sumber Tenaga Tidak Boleh Dibaharui",
+      "sp_code": "7.2.2",
+      "sp_text_source_extract_UNVERIFIED": "Menjana idea kepentingan penggunaan sumber tenaga secara berhemah.",
+      "original_pdf_page": 74,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "7.2",
+      "sk_title_source": "Sumber Tenaga Boleh Dibaharui dan Sumber Tenaga Tidak Boleh Dibaharui",
+      "sp_code": "7.2.3",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang sumber tenaga boleh dibaharui dan sumber tenaga tidak boleh dibaharui melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 74,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "8.1",
+      "sk_title_source": "Sumber Asas Bahan",
+      "sp_code": "8.1.1",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan melalui contoh sumber asas bagi bahan yang digunakan untuk membuat objek.",
+      "original_pdf_page": 76,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "8.1",
+      "sk_title_source": "Sumber Asas Bahan",
+      "sp_code": "8.1.2",
+      "sp_text_source_extract_UNVERIFIED": "Mengelaskan objek berdasarkan sumber asasnya.",
+      "original_pdf_page": 76,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "8.1",
+      "sk_title_source": "Sumber Asas Bahan",
+      "sp_code": "8.1.3",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang sumber asas bahan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 76,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "8.2",
+      "sk_title_source": "Sifat Bahan",
+      "sp_code": "8.2.1",
+      "sp_text_source_extract_UNVERIFIED": "Memerihalkan sifat bahan dengan menjalankan aktiviti.",
+      "original_pdf_page": 77,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "8.2",
+      "sk_title_source": "Sifat Bahan",
+      "sp_code": "8.2.2",
+      "sp_text_source_extract_UNVERIFIED": "Mereka cipta objek dengan mengaplikasikan pengetahuan tentang sifat bahan.",
+      "original_pdf_page": 77,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "8.2",
+      "sk_title_source": "Sifat Bahan",
+      "sp_code": "8.2.3",
+      "sp_text_source_extract_UNVERIFIED": "Menaakul pemilihan jenis bahan yang digunakan dalam mereka cipta objek.",
+      "original_pdf_page": 77,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "8.2",
+      "sk_title_source": "Sifat Bahan",
+      "sp_code": "8.2.4",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang sifat bahan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 77,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "9.1",
+      "sk_title_source": "Graviti Bumi",
+      "sp_code": "9.1.1",
+      "sp_text_source_extract_UNVERIFIED": "Memerihalkan daya tarikan graviti bumi berdasarkan pemerhatian dengan menjalankan aktiviti.",
+      "original_pdf_page": 80,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "9.1",
+      "sk_title_source": "Graviti Bumi",
+      "sp_code": "9.1.2",
+      "sp_text_source_extract_UNVERIFIED": "Mengitlak bahawa semua objek di Bumi boleh berada pada kedudukannya dengan menjalankan aktiviti.",
+      "original_pdf_page": 80,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "9.1",
+      "sk_title_source": "Graviti Bumi",
+      "sp_code": "9.1.3",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang tarikan graviti bumi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 80,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "9.2",
+      "sk_title_source": "Putaran dan Peredaran Bumi",
+      "sp_code": "9.2.1",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan Bumi berputar pada paksinya dan pada masa yang sama beredar mengikut orbitnya mengelilingi Matahari.",
+      "original_pdf_page": 81,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "9.2",
+      "sk_title_source": "Putaran dan Peredaran Bumi",
+      "sp_code": "9.2.2",
+      "sp_text_source_extract_UNVERIFIED": "Memerihalkan putaran dan peredaran Bumi dari aspek arah dan tempoh.",
+      "original_pdf_page": 81,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "9.2",
+      "sk_title_source": "Putaran dan Peredaran Bumi",
+      "sp_code": "9.2.3",
+      "sp_text_source_extract_UNVERIFIED": "Memerihalkan kesan putaran Bumi pada paksinya dengan menjalankan aktiviti.",
+      "original_pdf_page": 81,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "9.2",
+      "sk_title_source": "Putaran dan Peredaran Bumi",
+      "sp_code": "9.2.4",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang putaran dan peredaran Bumi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 81,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "10.1",
+      "sk_title_source": "Tuas",
+      "sp_code": "10.1.1",
+      "sp_text_source_extract_UNVERIFIED": "Mengenal pasti beban, fulkrum dan daya pada tuas dengan menjalankan aktiviti.",
+      "original_pdf_page": 84,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "10.1",
+      "sk_title_source": "Tuas",
+      "sp_code": "10.1.2",
+      "sp_text_source_extract_UNVERIFIED": "Mengitlak hubung kait jarak beban dari fulkrum dengan daya yang diperlukan.",
+      "original_pdf_page": 84,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "10.1",
+      "sk_title_source": "Tuas",
+      "sp_code": "10.1.3",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang tuas melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 84,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "10.2",
+      "sk_title_source": "Mesin Ringkas dan Mesin Kompleks",
+      "sp_code": "10.2.1",
+      "sp_text_source_extract_UNVERIFIED": "Menjelas dengan contoh jenis dan kegunaan mesin ringkas dengan menjalankan aktiviti.",
+      "original_pdf_page": 85,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "10.2",
+      "sk_title_source": "Mesin Ringkas dan Mesin Kompleks",
+      "sp_code": "10.2.2",
+      "sp_text_source_extract_UNVERIFIED": "Menyelesaikan masalah dengan menggunakan dua atau lebih mesin ringkas.",
+      "original_pdf_page": 85,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "10.2",
+      "sk_title_source": "Mesin Ringkas dan Mesin Kompleks",
+      "sp_code": "10.2.3",
+      "sp_text_source_extract_UNVERIFIED": "Merumuskan maksud mesin kompleks.",
+      "original_pdf_page": 85,
+      "visual_signoff": false
+    },
+    {
+      "year": 4,
+      "sk_code": "10.2",
+      "sk_title_source": "Mesin Ringkas dan Mesin Kompleks",
+      "sp_code": "10.2.4",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang mesin ringkas dan mesin kompleks melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 85,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.1",
+      "sp_text_source_extract_UNVERIFIED": "Memerhati dengan menggunakan semua deria yang terlibat dan alat jika perlu untuk membuat pemerhatian secara kualitatif bagi menerangkan fenomena atau perubahan yang berlaku.",
+      "original_pdf_page": 54,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.2",
+      "sp_text_source_extract_UNVERIFIED": "Mengelas dengan membandingkan atau mengenal pasti persamaan dan perbezaan berdasarkan ciri sepunya.",
+      "original_pdf_page": 54,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.3",
+      "sp_text_source_extract_UNVERIFIED": "Mengukur dan menggunakan nombor dengan menggunakan alat dan unit piawai dengan teknik yang betul.",
+      "original_pdf_page": 54,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.4",
+      "sp_text_source_extract_UNVERIFIED": "Membuat inferens dengan menyatakan kesimpulan awal atau penerangan yang munasabah bagi sesuatu pemerhatian dengan menggunakan maklumat yang diperoleh.",
+      "original_pdf_page": 54,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.5",
+      "sp_text_source_extract_UNVERIFIED": "Meramal dengan membuat jangkaan tentang sesuatu peristiwa atau fenomena berdasarkan pemerhatian, pengalaman lalu atau data.",
+      "original_pdf_page": 55,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.6",
+      "sp_text_source_extract_UNVERIFIED": "Berkomunikasi dengan merekod maklumat atau idea dalam bentuk yang sesuai dan mempersembahkan maklumat atau idea tersebut secara sistematik.",
+      "original_pdf_page": 55,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.7",
+      "sp_text_source_extract_UNVERIFIED": "Menggunakan perhubungan ruang dan masa dengan menyusun kejadian sesuatu fenomena atau peristiwa mengikut kronologi berdasarkan masa.",
+      "original_pdf_page": 55,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.8",
+      "sp_text_source_extract_UNVERIFIED": "Mentafsir data dengan memilih idea yang relevan tentang objek, peristiwa atau pola yang terdapat pada data untuk membuat penerangan.",
+      "original_pdf_page": 55,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.9",
+      "sp_text_source_extract_UNVERIFIED": "Mendefinisi secara operasi dengan memerihalkan satu tafsiran tentang perkara yang dilakukan dan diperhatikan bagi sesuatu situasi mengikut aspek yang ditentukan.",
+      "original_pdf_page": 56,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.10",
+      "sp_text_source_extract_UNVERIFIED": "Mengawal pemboleh ubah dengan menentukan pemboleh ubah bergerak balas dan dimalarkan setelah pemboleh ubah dimanipulasi ditentukan dalam sesuatu penyiasatan.",
+      "original_pdf_page": 56,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.11",
+      "sp_text_source_extract_UNVERIFIED": "Membuat hipotesis dengan membuat pernyataan umum yang boleh diuji tentang hubungan antara pemboleh ubah dalam sesuatu penyiasatan.",
+      "original_pdf_page": 56,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "1.1",
+      "sk_title_source": "Kemahiran Proses Sains",
+      "sp_code": "1.1.12",
+      "sp_text_source_extract_UNVERIFIED": "Mengeksperimen dengan menggunakan kemahiran proses sains asas bagi mengumpul dan mentafsir data serta membuat rumusan untuk membuktikan hipotesis dan membuat laporan.",
+      "original_pdf_page": 56,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "2.1",
+      "sk_title_source": "Sistem Rangka Manusia",
+      "sp_code": "2.1.1",
+      "sp_text_source_extract_UNVERIFIED": "Memerihalkan fungsi rangka utama manusia.",
+      "original_pdf_page": 58,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "2.1",
+      "sk_title_source": "Sistem Rangka Manusia",
+      "sp_code": "2.1.2",
+      "sp_text_source_extract_UNVERIFIED": "Mengenal pasti tulang dan kedudukan sendi dalam sistem rangka manusia.",
+      "original_pdf_page": 58,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "2.1",
+      "sk_title_source": "Sistem Rangka Manusia",
+      "sp_code": "2.1.3",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan fungsi sendi dalam sistem rangka manusia.",
+      "original_pdf_page": 58,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "2.1",
+      "sk_title_source": "Sistem Rangka Manusia",
+      "sp_code": "2.1.4",
+      "sp_text_source_extract_UNVERIFIED": "Menaakul kepentingan sistem rangka kepada tubuh manusia.",
+      "original_pdf_page": 58,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "2.1",
+      "sk_title_source": "Sistem Rangka Manusia",
+      "sp_code": "2.1.5",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang sistem rangka manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 58,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "2.2",
+      "sk_title_source": "Sistem Peredaran Darah Manusia",
+      "sp_code": "2.2.1",
+      "sp_text_source_extract_UNVERIFIED": "Memerihalkan fungsi bahagian utama yang terlibat dalam sistem peredaran darah manusia.",
+      "original_pdf_page": 59,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "2.2",
+      "sk_title_source": "Sistem Peredaran Darah Manusia",
+      "sp_code": "2.2.2",
+      "sp_text_source_extract_UNVERIFIED": "Melakar laluan peredaran darah yang lebih oksigen dan laluan peredaran darah yang lebih karbon dioksida dalam tubuh manusia.",
+      "original_pdf_page": 59,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "2.2",
+      "sk_title_source": "Sistem Peredaran Darah Manusia",
+      "sp_code": "2.2.3",
+      "sp_text_source_extract_UNVERIFIED": "Merumuskan kepentingan sistem peredaran darah kepada tubuh manusia.",
+      "original_pdf_page": 59,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "2.2",
+      "sk_title_source": "Sistem Peredaran Darah Manusia",
+      "sp_code": "2.2.4",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang sistem peredaran darah manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 59,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "2.3",
+      "sk_title_source": "Perkaitan antara Sistem dalam Tubuh Manusia",
+      "sp_code": "2.3.1",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan melalui contoh perkaitan antara sistem dalam tubuh manusia.",
+      "original_pdf_page": 60,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "2.3",
+      "sk_title_source": "Perkaitan antara Sistem dalam Tubuh Manusia",
+      "sp_code": "2.3.2",
+      "sp_text_source_extract_UNVERIFIED": "Menaakul kepentingan penjagaan semua sistem dalam tubuh manusia supaya berfungsi dengan sempurna.",
+      "original_pdf_page": 60,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "2.3",
+      "sk_title_source": "Perkaitan antara Sistem dalam Tubuh Manusia",
+      "sp_code": "2.3.3",
+      "sp_text_source_extract_UNVERIFIED": "Menjana idea cara memelihara sistem dalam tubuh manusia bagi menjamin kehidupan yang sihat.",
+      "original_pdf_page": 60,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "2.3",
+      "sk_title_source": "Perkaitan antara Sistem dalam Tubuh Manusia",
+      "sp_code": "2.3.4",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang perkaitan antara sistem dalam tubuh manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 60,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "3.1",
+      "sk_title_source": "Kemandirian Spesies Haiwan",
+      "sp_code": "3.1.1",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan maksud kemandirian spesies.",
+      "original_pdf_page": 61,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "3.1",
+      "sk_title_source": "Kemandirian Spesies Haiwan",
+      "sp_code": "3.1.2",
+      "sp_text_source_extract_UNVERIFIED": "Menjelas dengan contoh ciri dan tingkah laku khas haiwan untuk melindungi diri daripada musuh.",
+      "original_pdf_page": 61,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "3.1",
+      "sk_title_source": "Kemandirian Spesies Haiwan",
+      "sp_code": "3.1.3",
+      "sp_text_source_extract_UNVERIFIED": "Menjelas dengan contoh ciri dan tingkah laku khas haiwan untuk melindungi diri daripada cuaca melampau.",
+      "original_pdf_page": 61,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "3.1",
+      "sk_title_source": "Kemandirian Spesies Haiwan",
+      "sp_code": "3.1.4",
+      "sp_text_source_extract_UNVERIFIED": "Mengenal pasti cara haiwan melindungi telurnya.",
+      "original_pdf_page": 61,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "3.1",
+      "sk_title_source": "Kemandirian Spesies Haiwan",
+      "sp_code": "3.1.5",
+      "sp_text_source_extract_UNVERIFIED": "Mengenal pasti cara haiwan memastikan anaknya terus hidup.",
+      "original_pdf_page": 61,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "3.1",
+      "sk_title_source": "Kemandirian Spesies Haiwan",
+      "sp_code": "3.1.6",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang kemandirian spesies haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 62,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "3.2",
+      "sk_title_source": "Mereka Cipta Model Haiwan",
+      "sp_code": "3.2.1",
+      "sp_text_source_extract_UNVERIFIED": "Mencipta model haiwan imaginasi yang boleh melindungi diri daripada musuh dan cuaca melampau.",
+      "original_pdf_page": 62,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "3.2",
+      "sk_title_source": "Mereka Cipta Model Haiwan",
+      "sp_code": "3.2.2",
+      "sp_text_source_extract_UNVERIFIED": "Menaakul ciri khas pada model haiwan imaginasi bagi melindungi diri daripada musuh dan cuaca melampau.",
+      "original_pdf_page": 62,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "3.2",
+      "sk_title_source": "Mereka Cipta Model Haiwan",
+      "sp_code": "3.2.3",
+      "sp_text_source_extract_UNVERIFIED": "Berkomunikasi tentang ciri khas haiwan bagi mengagumi ciptaan Tuhan dalam memastikan keseimbangan alam semula jadi.",
+      "original_pdf_page": 62,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "3.2",
+      "sk_title_source": "Mereka Cipta Model Haiwan",
+      "sp_code": "3.2.4",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang model haiwan imaginasi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 62,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "3.3",
+      "sk_title_source": "Hubungan Makanan antara Hidupan",
+      "sp_code": "3.3.1",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan maksud rantai makanan.",
+      "original_pdf_page": 63,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "3.3",
+      "sk_title_source": "Hubungan Makanan antara Hidupan",
+      "sp_code": "3.3.2",
+      "sp_text_source_extract_UNVERIFIED": "Mengenal pasti pengeluar dan pengguna dalam rantai makanan.",
+      "original_pdf_page": 63,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "3.3",
+      "sk_title_source": "Hubungan Makanan antara Hidupan",
+      "sp_code": "3.3.3",
+      "sp_text_source_extract_UNVERIFIED": "Merumus tentang hubungan makanan antara hidupan dengan proses fotosintesis dari aspek perpindahan tenaga berdasarkan rantai makanan.",
+      "original_pdf_page": 63,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "3.3",
+      "sk_title_source": "Hubungan Makanan antara Hidupan",
+      "sp_code": "3.3.4",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan maksud siratan makanan.",
+      "original_pdf_page": 63,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "3.3",
+      "sk_title_source": "Hubungan Makanan antara Hidupan",
+      "sp_code": "3.3.5",
+      "sp_text_source_extract_UNVERIFIED": "Membina siratan makanan di pelbagai habitat.",
+      "original_pdf_page": 63,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "3.3",
+      "sk_title_source": "Hubungan Makanan antara Hidupan",
+      "sp_code": "3.3.6",
+      "sp_text_source_extract_UNVERIFIED": "Meramalkan kesan terhadap hidupan lain jika berlaku perubahan populasi dalam siratan makanan suatu habitat.",
+      "original_pdf_page": 64,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "3.3",
+      "sk_title_source": "Hubungan Makanan antara Hidupan",
+      "sp_code": "3.3.7",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang hubungan makanan antara hidupan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 64,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "4.1",
+      "sk_title_source": "Kemandirian Spesies Tumbuhan",
+      "sp_code": "4.1.1",
+      "sp_text_source_extract_UNVERIFIED": "Menjelas dengan contoh ciri khas tumbuhan untuk melindungi diri daripada musuh.",
+      "original_pdf_page": 65,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "4.1",
+      "sk_title_source": "Kemandirian Spesies Tumbuhan",
+      "sp_code": "4.1.2",
+      "sp_text_source_extract_UNVERIFIED": "Menjelas dengan contoh ciri khas tumbuhan untuk menyesuaikan diri dengan iklim dan perubahan musim.",
+      "original_pdf_page": 65,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "4.1",
+      "sk_title_source": "Kemandirian Spesies Tumbuhan",
+      "sp_code": "4.1.3",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang kemandirian spesies tumbuhan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 65,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "4.2",
+      "sk_title_source": "Pencaran Biji Benih",
+      "sp_code": "4.2.1",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan cara tumbuhan memencarkan biji benih atau buah.",
+      "original_pdf_page": 66,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "4.2",
+      "sk_title_source": "Pencaran Biji Benih",
+      "sp_code": "4.2.2",
+      "sp_text_source_extract_UNVERIFIED": "Menghubungkait cara pencaran dengan ciri biji benih atau buah.",
+      "original_pdf_page": 66,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "4.2",
+      "sk_title_source": "Pencaran Biji Benih",
+      "sp_code": "4.2.3",
+      "sp_text_source_extract_UNVERIFIED": "Meramal cara pencaran bagi suatu biji benih berdasarkan ciri biji benih tersebut.",
+      "original_pdf_page": 66,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "4.2",
+      "sk_title_source": "Pencaran Biji Benih",
+      "sp_code": "4.2.4",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang pencaran biji benih melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 66,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "5.1",
+      "sk_title_source": "Sumber Tenaga Elektrik",
+      "sp_code": "5.1.1",
+      "sp_text_source_extract_UNVERIFIED": "Menjelas dengan contoh sumber yang menghasilkan tenaga elektrik.",
+      "original_pdf_page": 68,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "5.2",
+      "sk_title_source": "Litar Bersiri dan Litar Selari",
+      "sp_code": "5.2.1",
+      "sp_text_source_extract_UNVERIFIED": "Mengenal pasti susunan mentol secara bersiri dan selari dalam litar elektrik lengkap.",
+      "original_pdf_page": 68,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "5.2",
+      "sk_title_source": "Litar Bersiri dan Litar Selari",
+      "sp_code": "5.2.2",
+      "sp_text_source_extract_UNVERIFIED": "Melakar rajah litar bersiri dan litar selari menggunakan simbol.",
+      "original_pdf_page": 68,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "5.2",
+      "sk_title_source": "Litar Bersiri dan Litar Selari",
+      "sp_code": "5.2.3",
+      "sp_text_source_extract_UNVERIFIED": "Membanding dan membezakan kecerahan mentol dalam litar bersiri dan litar selari.",
+      "original_pdf_page": 68,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "5.2",
+      "sk_title_source": "Litar Bersiri dan Litar Selari",
+      "sp_code": "5.2.4",
+      "sp_text_source_extract_UNVERIFIED": "Mengeksperimen untuk membezakan kecerahan mentol dalam litar bersiri atau selari dengan mengubah bilangan mentol.",
+      "original_pdf_page": 69,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "5.2",
+      "sk_title_source": "Litar Bersiri dan Litar Selari",
+      "sp_code": "5.2.5",
+      "sp_text_source_extract_UNVERIFIED": "Mengeksperimen untuk membezakan kecerahan mentol dalam litar bersiri atau selari dengan mengubah bilangan sel kering.",
+      "original_pdf_page": 69,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "5.2",
+      "sk_title_source": "Litar Bersiri dan Litar Selari",
+      "sp_code": "5.2.6",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan keadaan mentol apabila beberapa suis ditutup atau dibuka dalam litar bersiri dan litar selari dengan menjalankan aktiviti.",
+      "original_pdf_page": 69,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "5.2",
+      "sk_title_source": "Litar Bersiri dan Litar Selari",
+      "sp_code": "5.2.7",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang litar bersiri dan litar selari melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 69,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "5.3",
+      "sk_title_source": "Keselamatan Pengendalian Peralatan dan Penjimatan Elektrik",
+      "sp_code": "5.3.1",
+      "sp_text_source_extract_UNVERIFIED": "Menjana idea faktor yang mempengaruhi penggunaan tenaga elektrik dengan menjalankan aktiviti.",
+      "original_pdf_page": 70,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "5.3",
+      "sk_title_source": "Keselamatan Pengendalian Peralatan dan Penjimatan Elektrik",
+      "sp_code": "5.3.2",
+      "sp_text_source_extract_UNVERIFIED": "Menjelas dengan contoh kesan kecuaian pengendalian peralatan elektrik.",
+      "original_pdf_page": 70,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "5.3",
+      "sk_title_source": "Keselamatan Pengendalian Peralatan dan Penjimatan Elektrik",
+      "sp_code": "5.3.3",
+      "sp_text_source_extract_UNVERIFIED": "Memerihalkan langkah keselamatan ketika mengendalikan peralatan elektrik.",
+      "original_pdf_page": 70,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "5.3",
+      "sk_title_source": "Keselamatan Pengendalian Peralatan dan Penjimatan Elektrik",
+      "sp_code": "5.3.4",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang keselamatan pengendalian peralatan dan penjimatan elektrik melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 70,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "6.1",
+      "sk_title_source": "Haba dan Suhu",
+      "sp_code": "6.1.1",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan maksud haba dan suhu.",
+      "original_pdf_page": 71,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "6.1",
+      "sk_title_source": "Haba dan Suhu",
+      "sp_code": "6.1.2",
+      "sp_text_source_extract_UNVERIFIED": "Menyukat suhu dengan menggunakan alat dan unit piawai dengan teknik yang betul.",
+      "original_pdf_page": 71,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "6.1",
+      "sk_title_source": "Haba dan Suhu",
+      "sp_code": "6.1.3",
+      "sp_text_source_extract_UNVERIFIED": "Menggunakan perhubungan ruang dan masa untuk melihat perubahan suhu apabila ais dipanaskan dan menentukan takat beku dan takat didih air dengan menjalankan aktiviti.",
+      "original_pdf_page": 71,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "6.1",
+      "sk_title_source": "Haba dan Suhu",
+      "sp_code": "6.1.4",
+      "sp_text_source_extract_UNVERIFIED": "Memerihalkan perubahan suhu air apabila air panas disejukkan ke suhu bilik.",
+      "original_pdf_page": 71,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "6.1",
+      "sk_title_source": "Haba dan Suhu",
+      "sp_code": "6.1.5",
+      "sp_text_source_extract_UNVERIFIED": "Membuat kesimpulan tentang kesan ke atas bahan apabila menerima haba dan apabila kehilangan haba dengan menjalankan aktiviti.",
+      "original_pdf_page": 71,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "6.1",
+      "sk_title_source": "Haba dan Suhu",
+      "sp_code": "6.1.6",
+      "sp_text_source_extract_UNVERIFIED": "Menaakul kepentingan aplikasi prinsip pengembangan dan pengecutan bahan dalam kehidupan harian.",
+      "original_pdf_page": 72,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "6.1",
+      "sk_title_source": "Haba dan Suhu",
+      "sp_code": "6.1.7",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang haba dan suhu air melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 72,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "7.1",
+      "sk_title_source": "Pengaratan Bahan",
+      "sp_code": "7.1.1",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan ciri objek yang berkarat.",
+      "original_pdf_page": 74,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "7.1",
+      "sk_title_source": "Pengaratan Bahan",
+      "sp_code": "7.1.2",
+      "sp_text_source_extract_UNVERIFIED": "Mengitlak bahawa objek yang diperbuat daripada besi boleh berkarat.",
+      "original_pdf_page": 74,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "7.1",
+      "sk_title_source": "Pengaratan Bahan",
+      "sp_code": "7.1.3",
+      "sp_text_source_extract_UNVERIFIED": "Mengeksperimen untuk menentukan faktor yang menyebabkan pengaratan.",
+      "original_pdf_page": 74,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "7.1",
+      "sk_title_source": "Pengaratan Bahan",
+      "sp_code": "7.1.4",
+      "sp_text_source_extract_UNVERIFIED": "Memerihalkan cara mencegah pengaratan.",
+      "original_pdf_page": 74,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "7.1",
+      "sk_title_source": "Pengaratan Bahan",
+      "sp_code": "7.1.5",
+      "sp_text_source_extract_UNVERIFIED": "Menaakul kepentingan mencegah pengaratan.",
+      "original_pdf_page": 74,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "7.1",
+      "sk_title_source": "Pengaratan Bahan",
+      "sp_code": "7.1.6",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang pengaratan bahan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 74,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "8.1",
+      "sk_title_source": "Keadaan Jirim",
+      "sp_code": "8.1.1",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan jirim wujud dalam keadaan pepejal, cecair dan gas.",
+      "original_pdf_page": 75,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "8.1",
+      "sk_title_source": "Keadaan Jirim",
+      "sp_code": "8.1.2",
+      "sp_text_source_extract_UNVERIFIED": "Mengelas bahan atau objek berdasarkan keadaan jirim.",
+      "original_pdf_page": 75,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "8.1",
+      "sk_title_source": "Keadaan Jirim",
+      "sp_code": "8.1.3",
+      "sp_text_source_extract_UNVERIFIED": "Mencirikan sifat pepejal, cecair dan gas dengan menjalankan aktiviti.",
+      "original_pdf_page": 75,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "8.1",
+      "sk_title_source": "Keadaan Jirim",
+      "sp_code": "8.1.4",
+      "sp_text_source_extract_UNVERIFIED": "Mengitlak bahawa air boleh wujud dalam tiga keadaan jirim dengan menjalankan aktiviti.",
+      "original_pdf_page": 75,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "8.1",
+      "sk_title_source": "Keadaan Jirim",
+      "sp_code": "8.1.5",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang keadaan jirim melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 75,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "8.2",
+      "sk_title_source": "Perubahan Keadaan Jirim Bagi Air",
+      "sp_code": "8.2.1",
+      "sp_text_source_extract_UNVERIFIED": "Memerihalkan perubahan keadaan jirim bagi air dengan menjalankan aktiviti.",
+      "original_pdf_page": 76,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "8.2",
+      "sk_title_source": "Perubahan Keadaan Jirim Bagi Air",
+      "sp_code": "8.2.2",
+      "sp_text_source_extract_UNVERIFIED": "Menjelas dengan contoh perubahan keadaan jirim berlaku apabila jirim menerima atau kehilangan haba dengan menjalankan aktiviti.",
+      "original_pdf_page": 76,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "8.2",
+      "sk_title_source": "Perubahan Keadaan Jirim Bagi Air",
+      "sp_code": "8.2.3",
+      "sp_text_source_extract_UNVERIFIED": "Menghubung kait perubahan keadaan jirim bagi air dengan pembentukan awan dan hujan.",
+      "original_pdf_page": 76,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "8.2",
+      "sk_title_source": "Perubahan Keadaan Jirim Bagi Air",
+      "sp_code": "8.2.4",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang perubahan keadaan jirim bagi air melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 76,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "9.1",
+      "sk_title_source": "Fasa Bulan",
+      "sp_code": "9.1.1",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan Bulan tidak mengeluarkan cahaya tetapi memantulkan cahaya Matahari.",
+      "original_pdf_page": 78,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "9.1",
+      "sk_title_source": "Fasa Bulan",
+      "sp_code": "9.1.2",
+      "sp_text_source_extract_UNVERIFIED": "Memerihalkan Bulan berputar pada paksinya dan pada masa yang sama beredar mengelilingi Bumi dari aspek arah dan tempoh dengan menjalankan simulasi.",
+      "original_pdf_page": 78,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "9.1",
+      "sk_title_source": "Fasa Bulan",
+      "sp_code": "9.1.3",
+      "sp_text_source_extract_UNVERIFIED": "Menggunakan perhubungan ruang dan masa untuk menggambarkan fasa Bulan dalam satu edaran lengkap mengikut takwim Qamari.",
+      "original_pdf_page": 78,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "9.1",
+      "sk_title_source": "Fasa Bulan",
+      "sp_code": "9.1.4",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang fasa bulan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 78,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "9.2",
+      "sk_title_source": "Buruj",
+      "sp_code": "9.2.1",
+      "sp_text_source_extract_UNVERIFIED": "Mengenal pasti buruj dan corak buruj.",
+      "original_pdf_page": 78,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "9.2",
+      "sk_title_source": "Buruj",
+      "sp_code": "9.2.2",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan kegunaan buruj.",
+      "original_pdf_page": 78,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "9.2",
+      "sk_title_source": "Buruj",
+      "sp_code": "9.2.3",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang buruj melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 78,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "10.1",
+      "sk_title_source": "Penggunaan Alat dalam Kehidupan",
+      "sp_code": "10.1.1",
+      "sp_text_source_extract_UNVERIFIED": "Menyatakan kegunaan suatu alat yang terdapat di persekitaran murid.",
+      "original_pdf_page": 80,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "10.1",
+      "sk_title_source": "Penggunaan Alat dalam Kehidupan",
+      "sp_code": "10.1.2",
+      "sp_text_source_extract_UNVERIFIED": "Menerangkan kombinasi fungsi mesin ringkas pada suatu alat yang membolehkan alat tersebut berfungsi melalui pemerhatian alat sebenar.",
+      "original_pdf_page": 80,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "10.1",
+      "sk_title_source": "Penggunaan Alat dalam Kehidupan",
+      "sp_code": "10.1.3",
+      "sp_text_source_extract_UNVERIFIED": "Menaakul kepentingan kombinasi mesin ringkas untuk memastikan alat itu berfungsi dengan sempurna.",
+      "original_pdf_page": 80,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "10.1",
+      "sk_title_source": "Penggunaan Alat dalam Kehidupan",
+      "sp_code": "10.1.4",
+      "sp_text_source_extract_UNVERIFIED": "Menjana idea tentang kepentingan ciri penciptaan alat yang lestari.",
+      "original_pdf_page": 80,
+      "visual_signoff": false
+    },
+    {
+      "year": 5,
+      "sk_code": "10.1",
+      "sk_title_source": "Penggunaan Alat dalam Kehidupan",
+      "sp_code": "10.1.5",
+      "sp_text_source_extract_UNVERIFIED": "Menjelaskan pemerhatian tentang penggunaan alat dalam kehidupan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "original_pdf_page": 80,
+      "visual_signoff": false
+    }
+  ],
+  "total_official_sp": 186,
+  "academic_release_ready": false,
+  "ready_for_web_telegram": false,
+  "note": "Source transcript from SHA-256-locked original KPM PDFs with automated code/page checks and some sample page image checks. NOT a per-SP visual signoff, no lesson sequencing, textbook matching or 2027 week dates. Not for public RPT."
+}

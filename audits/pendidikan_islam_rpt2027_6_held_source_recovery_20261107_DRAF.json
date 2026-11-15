@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-07",
+  "status": "PROVISIONAL_SOURCE_RECOVERY_FOR_HELD_PI_RPT_PREVIEW_ONLY",
+  "source_group": "Connected original draft RPT 2027 PI Year2/6 (derived from 2026 templates); not primary DSKP, not original V5 RPH.",
+  "source_rph_held_count": 6,
+  "optional_tasmi_source_rows": 5,
+  "conflicting_ibaadah_source_rows": 1,
+  "release_ready_count": 0,
+  "semantics": "Show source-derived topic/week candidate with visible warning on 5 tasmi' slots, not a fabricated official SK/SP. Keep L060 explicitly BLOCKED due SK/SP collision. V5 RPH stays unchanged.",
+  "entries": [
+    {
+      "year": 2,
+      "lesson": 35,
+      "week": "M14",
+      "kind": "KHATAM_TASMI_OPTIONAL_NO_OFFICIAL_SK_SP_IN_SOURCE",
+      "unit": "ختم القرءان / تسميع القرءان",
+      "focus": "سورة البقرة آية 224–245",
+      "source_url": "https://docs.google.com/document/d/1SYj4WOOwl0YnVD9tuVAsq0QUyCPmDyOG/edit",
+      "source_lesson": "L035",
+      "proof": "RPT PI T2 2027 RTL Minggu Lesson DRAF; source text lists Al-Baqarah 224–245; objective is recitation/tasmi' and notes practice of mad asli.",
+      "source_sk_sp_given": false
+    },
+    {
+      "year": 6,
+      "lesson": 6,
+      "week": "M03",
+      "kind": "KHATAM_TASMI_OPTIONAL_NO_OFFICIAL_SK_SP_IN_SOURCE",
+      "unit": "ختم القرءان / تسميع القرءان",
+      "focus": "الشورى آية 33–77",
+      "source_url": "https://docs.google.com/document/d/1fogqtNd7i-khEXBj9V2H1W07oihsNPrH/edit",
+      "source_lesson": "L006",
+      "proof": "RPT PI T6 2027 RTL Minggu Lesson DRAF; Juz 25, Al-Shura 33–77, tasmi' evaluation.",
+      "source_sk_sp_given": false
+    },
+    {
+      "year": 6,
+      "lesson": 14,
+      "week": "M05",
+      "kind": "KHATAM_TASMI_OPTIONAL_NO_OFFICIAL_SK_SP_IN_SOURCE",
+      "unit": "ختم القرءان / تسميع القرءان",
+      "focus": "الزخرف آية 34–73",
+      "source_url": "https://docs.google.com/document/d/1fogqtNd7i-khEXBj9V2H1W07oihsNPrH/edit",
+      "source_lesson": "L014",
+      "proof": "RPT PI T6 2027 RTL Minggu Lesson DRAF; Juz 25, Az-Zukhruf 34–73, tasmi' evaluation.",
+      "source_sk_sp_given": false
+    },
+    {
+      "year": 6,
+      "lesson": 18,
+      "week": "M06",
+      "kind": "KHATAM_TASMI_OPTIONAL_NO_OFFICIAL_SK_SP_IN_SOURCE",
+      "unit": "ختم القرءان / تسميع القرءان",
+      "focus": "الدخان آية 40–59",
+      "source_url": "https://docs.google.com/document/d/1fogqtNd7i-khEXBj9V2H1W07oihsNPrH/edit",
+      "source_lesson": "L018",
+      "proof": "RPT PI T6 2027 RTL Minggu Lesson DRAF; Juz 25, Ad-Dukhan 40–59, tasmi' evaluation.",
+      "source_sk_sp_given": false
+    },
+    {
+      "year": 6,
+      "lesson": 60,
+      "week": "M18",
+      "kind": "IBADAH_2026_RPT_STANDARD_CONFLICT_HOLD",
+      "unit": "عبادة",
+      "focus": "صلاة برجماعة (RPT sumber) — konflik dengan kandungan Solat Ketika Sakit dalam rekod V5 bersebelahan",
+      "source_url": "https://docs.google.com/document/d/1fogqtNd7i-khEXBj9V2H1W07oihsNPrH/edit",
+      "source_lesson": "L060",
+      "proof": "RPT PI T6 2027 RTL Minggu Lesson DRAF shows SK 4.2 Solat Berjemaah and SP 4.2.3/4.2.4/4.2.5. V5 JSON adjacent L059 instead shows SK 4.2 Solat Ketika Sakit. Cannot assign 4.2 before primary DSKP verification.",
+      "source_sk_sp_given": true,
+      "source_sk": "4.2",
+      "source_sp": [
+        "4.2.3",
+        "4.2.4",
+        "4.2.5"
+      ],
+      "source_conflict": true,
+      "conflict_resolution_evidence": {
+        "year6_expected_topic": "Solat Ketika Sakit",
+        "year6_sk_code": "4.2",
+        "year6_sp_codes": [
+          "4.2.3",
+          "4.2.4",
+          "4.2.5"
+        ],
+        "year6_reference": "https://sites.google.com/moe-dl.edu.my/gapd-rukhsah-solat/utama",
+        "year5_topic_used_by_errant_rpt": "Solat Berjemaah",
+        "year5_reference": "https://edu.sistemguruonline.my/wp-content/uploads/2023/11/carta-alir-SOLAT_BERJEMAAH_MEMBENTUK_KEKUATAN_UMMAHSOLAT_JEMAAH_.pdf",
+        "year6_existing_internal_source": "rph_standalone/pendidikan_islam_draf_2027/year6.json: Lesson 059 SK4.2, SP 4.2.3–4.2.5",
+        "finding": "Exact SP code numbering overlaps between Year5 and Year6, with different learning topics. The source RPT Year6 L060 appears to have copied Year5 Ibadah content. The Year6 topic may be corrected only as a flagged proposal, not a verified distinct RPH.",
+        "candidate_correction_approval": false,
+        "source_rpt_draft_unmodified": true
+      },
+      "proposed_year6_display": "KONFLIK SUMBER: SK 4.2 Tahun 6 ialah Solat Ketika Sakit; Solat Berjemaah ialah padanan Tahun 5 untuk kod 4.2, bukan Tahun 6."
+    },
+    {
+      "year": 6,
+      "lesson": 117,
+      "week": "M36",
+      "kind": "KHATAM_TASMI_OPTIONAL_NO_OFFICIAL_SK_SP_IN_SOURCE",
+      "unit": "ختم القرءان / تسميع القرءان",
+      "focus": "المعارج 40–44؛ نوح 1–28؛ الجن 1–13؛ الزمر 1–5",
+      "source_url": "https://docs.google.com/document/d/1fogqtNd7i-khEXBj9V2H1W07oihsNPrH/edit",
+      "source_lesson": "L117",
+      "proof": "RPT PI T6 2027 RTL Minggu Lesson DRAF; several Juz 29 passages copied from source. Passage sequence needs visual/Quran review.",
+      "source_sk_sp_given": false,
+      "passage_sequence_approval_pending": true
+    }
+  ],
+  "production_changes": 0,
+  "year6_l060_conflict_investigated": true
+}
