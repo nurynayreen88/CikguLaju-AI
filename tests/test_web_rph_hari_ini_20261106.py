@@ -136,6 +136,20 @@ class DailyTimetablePureTests(TestCase):
                 self.assertNotIn("6", weeks)
                 self.assertNotIn("19", weeks)
 
+    def test_math_suggestions_cover_all_teaching_weeks_in_lesson_order(self):
+        from collections import Counter
+
+        for year in range(2, 7):
+            with self.subTest(year=year):
+                weeks = weekly_catalog()[f"MATH:{year}"]
+                self.assertEqual(set(map(int, weeks)), set(range(1, 45)) - {6, 19})
+                lessons = [week[4][""] for week in weeks.values()]
+                self.assertEqual([number for group in lessons for number in group], list(range(1, 118)))
+                self.assertEqual(Counter(map(len, lessons)), {1: 1, 2: 7, 3: 34})
+                self.assertEqual(weekly_rpt_suggestion("Johor", date(2027, 10, 25), "MATH", year), {
+                    "week": 39, "group": "B", "lessons": {"": [102]},
+                })
+
     def test_missing_schedule_is_empty_without_guessing(self):
         out=day_payload({"state_name":"Selangor"},{"entries":[]},
                         date(2026,11,6),today=date(2026,11,6))
