@@ -48,25 +48,25 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
         folder.mkdir()
         files = {}
         for name in ("Science", "Mathematics"):
-            for year in (2, 3, 4):
+            for year in (2, 3, 4, 5):
                 path = folder / f"CikguLaju_RPT_DLP_2027_{name}_Year_{year}.pdf"
                 path.write_bytes(b"%PDF-" + f"{name}{year}".encode() * 3000)
                 files[(name.lower() + "_dlp", year)] = path.read_bytes()
         with (patch("web.rpt_2027_all_http._account", return_value=({"telegram_user_id":42}, None)),
-              patch("web.rpt_2027_all_http._has_paid_access", side_effect=[False] + [True] * 6)):
+              patch("web.rpt_2027_all_http._has_paid_access", side_effect=[False] + [True] * 8)):
             data = self.client.get("/api/rpt/2027/catalog").get_json()
-            self.assertEqual(data["total_rpt"], 62)
-            self.assertEqual(data["available_rpt"], 62)
+            self.assertEqual(data["total_rpt"], 64)
+            self.assertEqual(data["available_rpt"], 64)
             self.assertEqual(len(expected_pairs()), 56)
             for code in ("science_dlp", "mathematics_dlp"):
                 entry = next(s for s in data["subjects"] if s["code"] == code)
-                self.assertEqual([item["year_label"] for item in entry["years"]], ["Year 2", "Year 3", "Year 4"])
-                for year in (2, 3, 4):
+                self.assertEqual([item["year_label"] for item in entry["years"]], ["Year 2", "Year 3", "Year 4", "Year 5"])
+                for year in (2, 3, 4, 5):
                     response = self.client.get(f"/api/rpt/2027/all/{code}/{year}.pdf")
                     self.assertEqual(response.data, files[code, year])
                     self.assertEqual(response.headers["X-RPT-Personalization-Allowed"], "1")
                     self.assertIn("attachment", response.headers["Content-Disposition"])
-                self.assertEqual(self.client.get(f"/api/rpt/2027/all/{code}/5.pdf").status_code, 404)
+                self.assertEqual(self.client.get(f"/api/rpt/2027/all/{code}/6.pdf").status_code, 404)
 
     def test_all_56_files_and_12_subjects_only(self):
         data=catalog_data(root=self.root,allowed=True)
