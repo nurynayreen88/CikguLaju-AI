@@ -214,6 +214,14 @@ def build_preview(subject, year, records, destination, *, logo_path=None, school
         if any("\u0600" <= ch <= "\u08ff" for ch in printable):
             from arabic_reshaper import reshape
             from bidi.algorithm import get_display
+            if subject == "pendidikan_islam":
+                # Keep a numeric range left-to-right inside the Jawi sentence.
+                # The embedding marks are consumed by get_display before PDF output.
+                printable = re.sub(
+                    r"(?<![0-9./–-])[0-9]+[–-][0-9]+(?![0-9./–-])",
+                    lambda match: "\u202a" + match.group() + "\u202c",
+                    printable,
+                )
             printable = "\n".join(
                 get_display(reshape(piece), base_dir="R") if piece.strip() else piece
                 for piece in printable.split("\n")
