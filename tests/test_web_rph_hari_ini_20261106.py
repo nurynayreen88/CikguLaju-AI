@@ -67,6 +67,46 @@ class DailyTimetablePureTests(TestCase):
         self.assertIn("hujung minggu",out["holiday_notice"])
         self.assertEqual(out["count"],3) # no silent deletion
 
+    def test_weekly_recommendations_use_published_subject_and_group_dates(self):
+        entries = [
+            dict(EXAMPLE["entries"][0], day="Ahad", class_name="2 Amanah"),
+            dict(EXAMPLE["entries"][0], day="Isnin", class_name="1 Amanah"),
+            dict(EXAMPLE["entries"][1], day="Isnin", class_name="2 Bestari",
+                 subject="Pendidikan Jasmani"),
+            dict(EXAMPLE["entries"][2], day="Isnin", class_name="2 Cemerlang",
+                 subject="Sains"),
+        ]
+        schedule = {"entries": entries}
+        sunday = date(2027, 1, 10)
+        kedah = day_payload({"state_name": "KEDAH"}, schedule, sunday, today=sunday)
+        self.assertEqual(kedah["entries"][0]["rpt_suggestion"], {
+            "week": 2, "group": "A", "lessons": {"": [5, 6, 7, 8]},
+        })
+        johor = day_payload({"state_name": "Johor"}, schedule, sunday, today=sunday)
+        self.assertIsNone(johor["entries"][0]["rpt_suggestion"])
+
+        monday = date(2027, 1, 4)
+        johor = day_payload({"state_name": "Johor"}, schedule, monday, today=monday)
+        slots = {slot["subject_code"]: slot["rpt_suggestion"] for slot in johor["entries"]}
+        self.assertIsNone(slots["ENGLISH"])  # No Year 1 mapping.
+        self.assertEqual(slots["PJPK"], {
+            "week": 1, "group": "B", "lessons": {"PJ": [1], "PK": [1]},
+        })
+        self.assertEqual(slots["SCIENCE"]["lessons"], {"": [1, 2]})
+
+    def test_known_holidays_and_missing_state_do_not_suggest_lessons(self):
+        entries = [dict(EXAMPLE["entries"][1], day="Isnin", class_name="2 Amanah",
+                        subject="English")]
+        for state, target in [("", date(2027, 1, 4)),
+                              ("Selangor", date(2027, 3, 8)),
+                              ("Kelantan", date(2027, 2, 8)),
+                              ("Johor", date(2026, 11, 16))]:
+            with self.subTest(state=state, target=target):
+                output = day_payload({"state_name": state}, {"entries": entries},
+                                     target, today=target)
+                self.assertEqual(output["count"], 1)
+                self.assertIsNone(output["entries"][0]["rpt_suggestion"])
+
     def test_missing_schedule_is_empty_without_guessing(self):
         out=day_payload({"state_name":"Selangor"},{"entries":[]},
                         date(2026,11,6),today=date(2026,11,6))

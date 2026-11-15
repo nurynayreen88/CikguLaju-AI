@@ -1,22 +1,34 @@
 """CikguLaju Web RPH Hari Ini: read the shared Telegram timetable.
 
 The schedule comes only from authenticated teacher_profiles.class_profiles.
-No new database, RPH templates, guessed RPT offsets, credits or auto-generation.
-The user confirms the exact Lesson/PdP in the existing native RPH flow.
+Weekly suggestions come from the published Web RPT. Teachers still select
+the exact Lesson/PdP in the existing native RPH flow.
 """
-from datetime import date, datetime, timedelta
-from zoneinfo import ZoneInfo
+from datetime import date, datetime
+from functools import lru_cache
+import json
+from pathlib import Path
 import re
+from zoneinfo import ZoneInfo
 from flask import Blueprint, jsonify, request
 
 from web.teacher_profile_routes import _auth
 from web.teacher_profile_store import (
-    ProfileUnavailable, ProfileValidation, get_profile, get_schedule,
+    ProfileUnavailable, ProfileValidation, STATES, get_profile, get_schedule,
 )
 
 bp = Blueprint("rph_hari_ini_web", __name__)
 WEEKDAY = ("Isnin", "Selasa", "Rabu", "Khamis", "Jumaat", "Sabtu", "Ahad")
 FRI_SAT = frozenset(("Kedah", "Kelantan", "Terengganu"))
+RPT_WEEKLY_CATALOG = Path(__file__).with_name("rpt_weekly_suggestions_2027.json")
+SCHOOL_STATES = {state.casefold(): state for state in STATES}
+# KPM, Kalendar Akademik 2027, Lampiran C. Term breaks are already omitted
+# from the published RPT date ranges. State and school-specific closures
+# outside this schedule are still confirmed by the teacher.
+COMMON_CLOSURES = frozenset(("02-09", "02-10", "02-11", "05-17", "05-18", "05-19", "05-20"))
+GROUP_A_CLOSURES = frozenset(("02-07", "03-14", "05-16", "10-27", "10-28"))
+GROUP_B_CLOSURES = frozenset(("02-05", "02-12", "05-21", "10-28"))
+GROUP_A_FEBRUARY_8_CLOSURES = frozenset(("Kelantan", "Terengganu"))
 SUBJECTS = {
     "bahasa melayu": ("BM", None),
     "bm": ("BM", None),
@@ -77,6 +89,36 @@ def malaysia_today():
     return datetime.now(ZoneInfo("Asia/Kuala_Lumpur")).date()
 
 
+@lru_cache(maxsize=1)
+def weekly_catalog():
+    return json.loads(RPT_WEEKLY_CATALOG.read_text(encoding="utf-8"))
+
+
+def weekly_rpt_suggestion(state, target, subject, year):
+    state = SCHOOL_STATES.get(state.strip().casefold()) if isinstance(state, str) else None
+    if target.year != 2027 or state is None:
+        return None
+    group_a = state in FRI_SAT
+    day = target.strftime("%m-%d")
+    if (day in COMMON_CLOSURES
+            or (group_a and day in GROUP_A_CLOSURES)
+            or (not group_a and day in GROUP_B_CLOSURES)
+            or (state in GROUP_A_FEBRUARY_8_CLOSURES and day == "02-08")
+            or (not group_a and state != "Sarawak" and day in ("10-27", "10-29"))):
+        return None
+    try:
+        weeks = weekly_catalog().get(f"{subject}:{year}", {})
+    except (OSError, ValueError):
+        return None
+    offset = 0 if group_a else 2
+    selected = target.isoformat()
+    for week, row in weeks.items():
+        if row[offset] <= selected <= row[offset + 1]:
+            return {"week": int(week), "group": "A" if group_a else "B",
+                    "lessons": row[4]}
+    return None
+
+
 def day_payload(profile, schedule, target, *, today=None):
     """Pure computation. Never modifies the stored timetable."""
     if not isinstance(profile, dict) or not isinstance(schedule, dict):
@@ -89,7 +131,7 @@ def day_payload(profile, schedule, target, *, today=None):
         raise ProfileValidation("Tarikh mesti dalam lingkungan 400 hari")
     day = WEEKDAY[target.weekday()]
     state = profile.get("state_name") or ""
-    weekend = target.weekday() in ((4, 5) if state in FRI_SAT else (5, 6))
+    weekend = target.weekday() in ((4, 5) if str(state).strip().title() in FRI_SAT else (5, 6))
     selected = []
     for row in rows:
         if not isinstance(row, dict) or row.get("day") != day:
@@ -113,7 +155,9 @@ def day_payload(profile, schedule, target, *, today=None):
         selected.append({"day":day,"start":start,"end":end,
                          "class_name":cls,"subject":subject,
                          "year":year,"subject_code":code,"component":component,
-                         "can_prepare":valid,"reason":reason})
+                         "can_prepare":valid,"reason":reason,
+                         "rpt_suggestion": weekly_rpt_suggestion(state, target, code, year)
+                         if valid and not weekend else None})
     selected.sort(key=lambda x:(x["start"],x["end"],x["class_name"].casefold()))
     return {
         "date":target.isoformat(),"day":day,"state":state,
@@ -125,7 +169,7 @@ def day_payload(profile, schedule, target, *, today=None):
             "Semakan cuti sekolah, cuti umum dan cuti tambahan belum automatik. "
             "Sahkan hari persekolahan sebelum menyediakan RPH."
         ),
-        "lesson_note":"Lesson/PdP mesti dipilih daripada katalog asal. Tiada nombor PdP diteka.",
+        "lesson_note":"Cadangan minggu merujuk RPT 2027. Pilih Lesson/PdP daripada katalog mengikut kemajuan kelas.",
     }
 
 
