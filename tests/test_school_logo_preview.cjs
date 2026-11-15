@@ -4,7 +4,7 @@ const vm = require("node:vm");
 
 const script = fs.readFileSync("web_v1_static_preview/teacher-profile.js", "utf8");
 const processor = script.slice(script.indexOf("const schoolLogoCatalogSize="),
-  script.indexOf("// Only a SAVED school code"));
+  script.indexOf("function savedLogoSchoolCode()"));
 const methods = script.slice(script.indexOf("function savedLogoSchoolCode()"),
   script.indexOf("async function importSavedSchoolLogo"));
 const selectHandler = script.slice(script.indexOf('schoolChoiceField.addEventListener("change",'),
@@ -79,6 +79,10 @@ vm.runInNewContext(processor + methods + selectHandler + profileHandler, context
 const png = (id, saved=false) => ({ok: true, headers:{get:()=>saved?"1":null},
   blob: async () => ({type: "image/png", size: 20, id})});
 const settle = () => new Promise(resolve => setImmediate(resolve));
+const timeout=setTimeout(() => {
+  console.error("Timed out waiting for the school logo save test.");
+  process.exitCode=1;
+}, 4000);
 const submit = () => profileForm.save({preventDefault(){}});
 
 function finishUpload(request, success=true) {
@@ -175,4 +179,5 @@ function finishUpload(request, success=true) {
   finishUpload(requests[9]);
   await retry;
   assert.equal(context.displayedLogo.id,"KBA4016");
-})().catch(error => { console.error(error); process.exitCode = 1; });
+})().catch(error => { console.error(error); process.exitCode = 1; })
+  .finally(() => clearTimeout(timeout));
