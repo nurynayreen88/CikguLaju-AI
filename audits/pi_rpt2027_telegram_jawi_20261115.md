@@ -30,4 +30,18 @@ Dua tempoh 60 minit dipulihkan dalam Tahun 6 melalui padanan baris RPT 2026. PdP
 
 Pengesahan setempat menyemak 220 tajuk minggu, semua 696 identiti dan kandungan baris termasuk SK/SP, objektif, aktiviti dan pentaksiran. Operasi teks asal mengekalkan glif dan susunan Jawi. Tajuk jadual takwim baharu menggunakan Rumi dan lajur kandungan menggunakan Jawi asal. Jumlah halaman akhir ialah 242. Lapan ujian laluan, akses dan integriti aset Telegram serta semakan kompilasi lulus setempat.
 
-Semakan akademik yang masih diperlukan ialah pengasingan jumlah tahunan Pendidikan Islam dan Tasmik, termasuk Tahun 2 yang merekodkan 111 jam gabungan. Semak terhadap peruntukan 96 jam Pendidikan Islam dan 32 jam Tasmik SK dalam SPI Bil. 8 Tahun 2016 dan lampiran pindaan sebelum memuktamadkan jadual. Selepas pengesahan, padankan agihan Web/RPH Hari Ini dengan versi yang dipersetujui dan uji muat turun Telegram melalui akaun guru.
+## Pengasingan minit Pendidikan Islam dan Tasmik
+
+**HOLD Tahun 2–6.** Peruntukan minimum KSSR SK ialah 96 jam Pendidikan Islam dan 32 jam Tasmik setahun, berdasarkan [SPI Bil. 8 Tahun 2016 dan rujukan jadual waktu PPD](https://sites.google.com/moe-dl.edu.my/jadualwaktu-ppdkiu/spi) serta [kerangka KSSR, Jadual 2 dan 3](https://fliphtml5.com/axjgi/nklf). [SPI KPM Bil. 3 Tahun 2024](https://www.moe.gov.my/storage/files/shares/pekeliling_dan_garis_panduan/ikhtisas/2024/SPI%20KPM%20Bil.%203%20Tahun%202024%20Pelaksanaan%20Norma%20Baharu%20Guru%20Pendidikan%20Islam%20di%20Sekolah%20Rendah%20KPM.pdf) menunjukkan 60 minit untuk Model Tasmik dalam lampiran j-QAF SK. Semakan had draf menggunakan 180 minit Pendidikan Islam dan 60 minit Tasmik pada minggu penuh, 120/60 minit pada M01/M05/M10/M20/M35 dan 90/30 minit pada M39. Had minggu pendek ialah andaian perancangan CikguLaju untuk Kumpulan A/B.
+
+| Tahun | PdP | Pendidikan Islam dalam lajur masa | Tasmik dengan tempoh berlabel |
+|---|---:|---:|---:|
+| 2 | 112 | 111 jam direkodkan sebagai masa PdP | Belum disahkan |
+| 3 | 147 | 110 jam 30 minit | 37 jam |
+| 4 | 151 | 113 jam 30 minit | 38 jam |
+| 5 | 143 | 107 jam 30 minit | 36 jam |
+| 6 | 143 | 108 jam | 36 jam |
+
+Dalam Tahun 2, 31 baris memaparkan Tasmi’ pada kandungan SK. Lajur masa bagi baris ini tidak menyatakan tempoh Tasmik secara berasingan. Contohnya, PdP 001 memaparkan 1 jam 30 minit untuk al-Quran, seperti baris rujukan [RPT SK Tahun 2 2026](https://anyflip.com/uucmr/gqno/basic). Gunakan keseluruhan masa bercetak sebagai beban PdP sementara. Tempoh Tasmik Tahun 2 memerlukan sumber yang menyatakan agihannya.
+
+Semua 696 PdP kekal dalam urutan asal. Pada PDF Telegram, tajuk minggu dengan PdP memaparkan jumlah minit Pendidikan Islam, berserta minit Tasmik apabila dinyatakan. PDF Web dan cadangan RPH Hari Ini dalam [PR #775](https://github.com/nurynayreen88/CikguLaju-AI/pull/775) menggunakan agihan PdP daripada lima PDF Telegram ini. M06 dan M19 kosong bagi semua tahun. Kelulusan akademik dan pengesahan muat turun guru di produksi masih diperlukan. Enam rekod kurikulum dalam semakan terdahulu masih di luar kelulusan akhir.

@@ -8,6 +8,7 @@ at 034d0e0. The output directory must differ from the source directory.
 import argparse
 from bisect import bisect_right
 from collections import Counter, defaultdict
+from dataclasses import dataclass
 from datetime import date
 import json
 from pathlib import Path
@@ -33,7 +34,31 @@ WEEK = re.compile(r"^M(\d{2})  ")
 NUM = rb"(-?[\d.]+)"
 TEXT = re.compile(rb"\bBT\s+(.*?)\s+ET\b", re.S)
 ORIGIN = re.compile(NUM + rb"\s+" + NUM + rb"\s+Td\b")
+TIME = re.compile(r"(\d+)\s*(جم|مينيت)")
+TASMIK = re.compile(r"تسميع\s*\+\s*(\d+\s*(?:جم|مينيت))")
 BOTTOM = 565
+
+
+@dataclass(frozen=True)
+class Duration:
+    pi: int
+    tasmik: int = 0
+
+    @property
+    def total(self):
+        return self.pi + self.tasmik
+
+
+def teaching_capacity(week):
+    # Planning assumptions for the paired 2027 calendar. The school timetable
+    # determines the actual PI and Tasmik periods.
+    if week in CLOSURES:
+        return Duration(0)
+    if week == DEEPAVALI:
+        return Duration(90, 30)
+    if week in SHORT_WEEKS:
+        return Duration(120, 60)
+    return Duration(180, 60)
 
 
 def page_bands(page):
@@ -59,12 +84,19 @@ def lesson_numbers(spans):
             and (match := LESSON.fullmatch(span["text"]))]
 
 
-def band_minutes(spans):
+def duration_minutes(text):
+    return sum(int(value) * (60 if unit == "جم" else 1) for value, unit in TIME.findall(text))
+
+
+def band_duration(spans):
     field = " ".join(span["text"].strip() for span in sorted(
         spans, key=lambda item: (item["origin"][1], -item["origin"][0]))
         if COLUMNS[3] < span["origin"][0] < COLUMNS[4])
-    return sum(int(value) * (60 if unit == "جم" else 1)
-               for value, unit in re.findall(r"(\d+)\s*(جم|مينيت)", field))
+    tasmik_times = TASMIK.findall(field)
+    if field.count("تسميع") != len(tasmik_times):
+        raise ValueError(f"Missing explicit Tasmik duration in {field!r}")
+    tasmik = sum(duration_minutes(value) for value in tasmik_times)
+    return Duration(duration_minutes(field) - tasmik, tasmik)
 
 
 def cell_text(spans, omit_restored_time=False):
@@ -99,8 +131,8 @@ def original_rows(pdf, year):
             (number,) = labels
             if number != len(rows) + 1 or not operations[i]:
                 raise ValueError(f"Unexpected PdP {number:03} on page {page.number + 1}")
-            minutes = band_minutes(spans[i])
-            if not minutes and year == 6 and number in RESTORE_HOUR:
+            duration = band_duration(spans[i])
+            if not duration.total and year == 6 and number in RESTORE_HOUR:
                 if len(one_hour) != 2:
                     raise ValueError("Expected the original 1 جم text from Year 6 PdP 003")
                 cell_baseline = next(s["origin"][1] for s in spans[i]
@@ -109,10 +141,10 @@ def original_rows(pdf, year):
                     x, _ = ORIGIN.search(template).groups()
                     position = b"%s %.4f Td" % (x, page.rect.height - cell_baseline - 20.85)
                     operations[i].append(ORIGIN.sub(position, template, count=1))
-                minutes = 60
-            if not minutes:
+                duration = Duration(60)
+            if not duration.total:
                 raise ValueError(f"Missing duration for Year {year} PdP {number:03}")
-            rows[number] = (boundaries[i - 1], boundaries[i], operations[i], minutes)
+            rows[number] = (boundaries[i - 1], boundaries[i], operations[i], duration)
             content[number] = cell_text(spans[i])
     if len(rows) != COUNTS[year]:
         raise ValueError(f"Year {year}: expected {COUNTS[year]} PdP, found {len(rows)}")
@@ -163,16 +195,17 @@ def allocate(rows, windows, web):
     for week, entry in enumerate(suggested, 1):
         target_count = len(entry[4][""])
         target_end += target_count
-        limit = (0 if week in CLOSURES else 120 if week == DEEPAVALI
-                 else 180 if week in SHORT_WEEKS else 240)
+        limit = teaching_capacity(week)
         next_candidates = {}
         for start, (cost, counts) in candidates.items():
-            minutes = 0
+            pi_minutes = tasmik_minutes = 0
             for count in range(min(4, len(rows) - start) + 1):
                 end = start + count
                 if count:
-                    minutes += rows[end][3]
-                if minutes > limit:
+                    duration = rows[end][3]
+                    pi_minutes += duration.pi
+                    tasmik_minutes += duration.tasmik
+                if pi_minutes > limit.pi or tasmik_minutes > limit.tasmik:
                     break
                 score = cost + abs(target_end - end) + 3 * abs(target_count - count)
                 if end not in next_candidates or score < next_candidates[end][0]:
@@ -194,12 +227,19 @@ def draw_grid(page, top, bottom, *, merged=False):
             page.draw_line((x, top), (x, bottom), width=0.5)
 
 
-def week_heading(week, dates, ids, continuation=False):
+def week_heading(week, dates, ids, rows, continuation=False):
     a1, a2, b1, b2 = [date.fromisoformat(value).strftime("%d/%m") for value in dates]
     detail = CLOSURES.get(week, "Ruang fleksibel" if not ids else "")
     suffix = ("  |  " + detail) if detail else ("  |  Sambungan" if continuation else "")
+    minutes = ""
+    if ids:
+        pi = sum(rows[number][3].pi for number in ids)
+        tasmik = sum(rows[number][3].tasmik for number in ids)
+        minutes = f"  |  Pendidikan Islam {pi} minit"
+        if tasmik:
+            minutes += f"  |  Tasmik {tasmik} minit"
     return (f"M{week:02}  |  Kumpulan A {a1}-{a2}  |  Kumpulan B {b1}-{b2}"
-            f"  |  {len(ids)} PdP" + suffix)
+            f"  |  {len(ids)} PdP" + minutes + suffix)
 
 
 def render(source, destination, year, windows, web):
@@ -235,7 +275,7 @@ def render(source, destination, year, windows, web):
             if y + 25 + need > BOTTOM:
                 page, y = new_page()
             draw_grid(page, y, y + 25, merged=True)
-            page.insert_text((40, y + 15), week_heading(week, dates, ids),
+            page.insert_text((40, y + 15), week_heading(week, dates, ids, rows),
                              fontsize=9, fontname="hebo")
             y += 25
             for number in ids:
@@ -244,7 +284,7 @@ def render(source, destination, year, windows, web):
                 if y + height_needed > BOTTOM:
                     page, y = new_page()
                     draw_grid(page, y, y + 25, merged=True)
-                    page.insert_text((40, y + 15), week_heading(week, dates, ids, True),
+                    page.insert_text((40, y + 15), week_heading(week, dates, ids, rows, True),
                                      fontsize=9, fontname="hebo")
                     y += 25
                 draw_grid(page, y, y + height_needed)
@@ -275,13 +315,13 @@ def verify_pdf(path, plan, rows, content, year):
                         if continuation != (week in printed):
                             raise ValueError(f"Unexpected duplicate heading in {path} at M{week:02}")
                         printed[week] = value
-                        if value != week_heading(week, *expected[week], continuation):
+                        if value != week_heading(week, *expected[week], rows, continuation):
                             raise ValueError(f"Wrong date/count in {path} at M{week:02}")
                 for number in lesson_numbers(spans[i]):
                     actual[week].append(number)
                     omit_time = year == 6 and number in RESTORE_HOUR
                     if (cell_text(spans[i], omit_time) != content[number]
-                            or band_minutes(spans[i]) != rows[number][3]):
+                            or band_duration(spans[i]) != rows[number][3]):
                         raise ValueError(f"Content or duration changed at PdP {number:03} in {path}")
     if (list(printed) != list(expected) or actual.keys() - expected.keys()
             or any(actual[n] != ids for n, (_, ids) in expected.items())):
