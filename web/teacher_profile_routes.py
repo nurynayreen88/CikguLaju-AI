@@ -237,9 +237,11 @@ def teacher_school_logo_get():
         return err
     if request.args:
         return jsonify({"error": "Parameter tidak dijangka"}), 400
-    from web.school_logo_store import logo_png
+    from web.school_logo_store import profile_logo_png
     try:
-        logo = logo_png(conf["supabase_url"], conf["supabase_key"], uid)
+        profile = get_profile(conf["supabase_url"], conf["supabase_key"], uid)
+        logo = profile_logo_png(conf["supabase_url"], conf["supabase_key"], uid,
+                                profile["school_code"], profile["legacy_logo_school_code"])
     except ProfileUnavailable:
         return jsonify({"error": "Logo sekolah belum dapat dibaca"}), 503
     if logo is None:
@@ -270,7 +272,7 @@ def teacher_school_logo_candidate():
 @bp.get("/api/web/teacher/school-logo-preview")
 def teacher_school_logo_preview():
     """Read a directory logo without changing the teacher's saved profile."""
-    conf, _, err = _auth()
+    conf, uid, err = _auth()
     if err is not None:
         return err
     from web.school_logo_candidate import CODE
@@ -280,6 +282,17 @@ def teacher_school_logo_preview():
     code = request.args["school_code"]
     if not CODE.fullmatch(code):
         return jsonify({"error": "Kod sekolah tidak sah"}), 400
+    from web.school_logo_store import profile_logo_png
+    try:
+        profile = get_profile(conf["supabase_url"], conf["supabase_key"], uid)
+        saved = profile_logo_png(conf["supabase_url"], conf["supabase_key"], uid,
+                                 code, profile["legacy_logo_school_code"])
+    except ProfileUnavailable:
+        return jsonify({"error": "Logo sekolah belum dapat dibaca"}), 503
+    if saved is not None:
+        response = send_file(BytesIO(saved), mimetype="image/png", max_age=0, conditional=False)
+        response.headers["X-School-Logo-Saved"] = "1"
+        return response
     return _school_logo_catalog_response(conf, code)
 
 
@@ -308,14 +321,27 @@ def teacher_school_logo_put():
             or request.content_length > 2 * 1024 * 1024 + 8192
             or request.mimetype != "multipart/form-data"):
         return jsonify({"error": "Logo tidak sah atau melebihi 2 MB"}), 400
-    upload = request.files.get("logo")
-    if upload is None or len(request.files) != 1:
+    uploads = request.files.getlist("logo")
+    if len(uploads) != 1 or len(request.files) != 1:
         return jsonify({"error": "Sila pilih satu logo sekolah"}), 400
+    from web.school_logo_candidate import CODE
     from web.school_logo_store import MAX_INPUT, save_logo_png
-    data = upload.stream.read(MAX_INPUT + 1)
+    if (set(request.form) - {"school_code", "automatic"}
+            or any(len(request.form.getlist(key)) != 1 for key in request.form)):
+        return jsonify({"error": "Pilihan logo tidak sah"}), 400
+    expected_code = request.form.get("school_code")
+    automatic = request.form.get("automatic")
+    if ((expected_code and not CODE.fullmatch(expected_code))
+            or automatic not in (None, "1") or (automatic and not expected_code)):
+        return jsonify({"error": "Pilihan logo tidak sah"}), 400
+    data = uploads[0].stream.read(MAX_INPUT + 1)
     try:
+        profile = get_profile(conf["supabase_url"], conf["supabase_key"], uid)
+        code = profile["school_code"]
+        if expected_code is not None and expected_code != code:
+            return jsonify({"error": "Sekolah telah berubah. Muat semula profil dan cuba lagi."}), 409
         count = save_logo_png(conf["supabase_url"], conf["supabase_key"],
-                              uid, data)
+                              uid, data, school_code=code, automatic=automatic == "1")
     except (ProfileValidation, ProfileUnavailable) as exc:
         return _failure(exc)
     return jsonify({"saved": True, "bytes": count})

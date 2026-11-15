@@ -15,7 +15,7 @@ import json
 import os
 
 from web.teacher_profile_store import _get_one, ProfileUnavailable, _validated_name
-from web.school_logo_store import logo_png
+from web.school_logo_store import profile_logo_png
 
 
 def school_identity(config, uid):
@@ -25,12 +25,13 @@ def school_identity(config, uid):
     row = _get_one(
         config["supabase_url"], config["supabase_key"],
         "teacher_profiles", uid,
-        "telegram_user_id,display_name,school_name,state_name")
+        "telegram_user_id,display_name,school_name,state_name,school_code,legacy_logo_school_code")
     row = row or {}
     school = _validated_name(row.get("school_name") or "", 160, "Nama sekolah")
     teacher = _validated_name(row.get("display_name") or "", 100, "Nama guru")
     state = _validated_name(row.get("state_name") or "", 40, "Negeri sekolah")
-    logo = logo_png(config["supabase_url"], config["supabase_key"], uid)
+    logo = profile_logo_png(config["supabase_url"], config["supabase_key"], uid,
+                            row.get("school_code") or "", row.get("legacy_logo_school_code") or "")
     if not school and logo is None:
         return None
     return {"school": school, "teacher": teacher, "state": state, "logo": logo}

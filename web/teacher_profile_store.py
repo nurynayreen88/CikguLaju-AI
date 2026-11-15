@@ -287,7 +287,7 @@ def _class_records(record):
 def _profile_record(url, key, uid, *, opener=None):
     return _get_one(
         url, key, "teacher_profiles", uid,
-        "telegram_user_id,display_name,school_name,state_name,district_name,school_code,avatar_code,class_names,class_profiles,timetable_subject_aliases,timetable_class_aliases,updated_at",
+        "telegram_user_id,display_name,school_name,state_name,district_name,school_code,legacy_logo_school_code,avatar_code,class_names,class_profiles,timetable_subject_aliases,timetable_class_aliases,updated_at",
         opener=opener,
     )
 
@@ -311,6 +311,7 @@ def get_profile(url, key, uid, *, opener=None):
     if record is None:
         return {"display_name": "Cikgu", "school_name": "",
                 "state_name": "", "district_name": "", "school_code": "",
+                "legacy_logo_school_code": "",
                 "avatar_code": "initials", "class_names": [], "timetable_subject_aliases": {},
                 "timetable_class_aliases": {}, "version": ""}
     classes = [r["name"] for r in _class_records(record)]
@@ -320,6 +321,7 @@ def get_profile(url, key, uid, *, opener=None):
         "state_name": record.get("state_name") or "",
         "district_name": record.get("district_name") or "",
         "school_code": record.get("school_code") or "",
+        "legacy_logo_school_code": record.get("legacy_logo_school_code") or "",
         "avatar_code": record.get("avatar_code") if record.get("avatar_code") in AVATAR_CODES else "initials",
         "class_names": classes,
         "timetable_subject_aliases": record.get("timetable_subject_aliases") or {},

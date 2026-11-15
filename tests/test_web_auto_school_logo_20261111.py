@@ -206,7 +206,9 @@ class AutoLogoTests(unittest.TestCase):
            return_value=({"supabase_url": "https://db.example",
                           "supabase_key": "private"}, 123, None))
     def test_preview_reads_the_selected_catalog_logo_without_touching_profile(self, *_):
-        with patch("web.teacher_profile_routes.get_profile") as profile, \
+        with patch("web.teacher_profile_routes.get_profile",
+                   return_value={"legacy_logo_school_code": "KBA4015"}) as profile, \
+             patch("web.school_logo_store.profile_logo_png",return_value=None) as private_logo, \
              patch("web.teacher_profile_routes.save_profile") as save_profile, \
              patch("web.school_logo_store.save_logo_png") as save_logo, \
              patch("web.school_logo_candidate.logo_candidate",
@@ -222,9 +224,24 @@ class AutoLogoTests(unittest.TestCase):
             self.assertEqual(response.content_type, "image/png")
             self.assertEqual(response.headers["Cache-Control"], "no-store, private")
             catalog.assert_called_once_with("https://db.example", "private", "KBA4016")
-            profile.assert_not_called()
+            profile.assert_called_once_with("https://db.example", "private", 123)
+            private_logo.assert_called_once_with("https://db.example", "private", 123,
+                                                "KBA4016", "KBA4015")
             save_profile.assert_not_called()
             save_logo.assert_not_called()
+
+    @patch("web.teacher_profile_routes._auth",
+           return_value=({"supabase_url": "https://db.example",
+                          "supabase_key": "private"}, 123, None))
+    def test_preview_prefers_previous_private_logo_for_selected_school(self, *_):
+        with patch("web.teacher_profile_routes.get_profile",
+                   return_value={"legacy_logo_school_code": "KBA4015"}), \
+             patch("web.school_logo_store.profile_logo_png",return_value=b"private school logo"), \
+             patch("web.school_logo_candidate.logo_candidate") as catalog:
+            response=self.client.get("/api/web/teacher/school-logo-preview?school_code=KBA4016")
+        self.assertEqual(response.data,b"private school logo")
+        self.assertEqual(response.headers["X-School-Logo-Saved"],"1")
+        catalog.assert_not_called()
 
     def test_frontend_does_not_overwrite_logo_without_consent(self):
         root=Path(__file__).resolve().parents[1]/"web_v1_static_preview"
