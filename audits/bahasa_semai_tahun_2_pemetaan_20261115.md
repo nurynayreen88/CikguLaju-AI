@@ -456,3 +456,101 @@ Bagi ms. 19, RPT menggunakan kod 3.3.3 dengan huraian bercerita daripada gambar.
 - **Pengukuhan dan PBD (15 minit).** Murid melengkapkan lima padanan dan menulis dua frasa. Guru semak ketepatan penjodoh bilangan dan ejaan.
 - **Penutup (5 minit).** Murid sebut satu frasa dan tunjuk benda yang dirujuk.
 - **Bahan.** Buku teks ms. 21, rujukan cetak Buku Aktiviti ms. 16.
+
+## Rangka RPH Unit 5 bagi PdP 21–25
+
+Unit 5 — Majuk Dirik meliputi ms. 22–26. Kelima-lima kod SP utama sepadan dengan [RPT Bahasa Semai 2022/2023](https://www.scribd.com/document/664811393/RPT-SEMAI-2). Pada ms. 22, kod 1.2.3 dicetak bersama nota guru tentang suku kata tertutup. RPT lama menghuraikan kod itu sebagai suku kata terbuka. [Dokumen Penjajaran Kurikulum 2.0](https://www.tcer.my/wp-content/uploads/2021/01/20_DPK-2.0-Bahasa-Semai-Tahun-2.pdf) menyenaraikan suku kata terbuka bagi 1.2.2. Rangka PdP 21 menggunakan suku kata tertutup mengikut nota guru buku teks dan semakan DSKP asal dalam indeks.
+
+### PdP 21 — Cite-cite Jik (ms. 22)
+
+- **SK 1.2 · SP 1.2.3.** Murid mengenal pasti sekurang-kurangnya empat daripada lima perkataan bersuku kata tertutup yang didengar daripada rangsangan tentang cita-cita.
+- **Set induksi (5 minit).** Guru tunjuk ilustrasi dan minta murid namakan pekerjaan yang mereka kenal.
+- **Aktiviti utama (35 minit).** Guru sebut perkataan berkaitan gambar yang telah disemak guru Bahasa Semai. Murid tunjuk gambar apabila mendengar perkataan, kemudian ulang suku kata tertutup dengan bimbingan.
+- **Pengukuhan dan PBD (15 minit).** Guru sebut lima perkataan. Murid pilih gambar dan ulang suku kata sasaran. Catat sekurang-kurangnya empat padanan tepat.
+- **Penutup (5 minit).** Murid menyebut satu perkataan sasaran semasa berkongsi cita-cita mereka.
+- **Bahan.** Buku teks ms. 22, rujukan cetak Buku Aktiviti ms. 17.
+
+### PdP 22 — Bah Raman Tukang Uker (ms. 23)
+
+- **SK 2.4 · SP 2.4.1.** Murid membaca petikan dan memberikan makna yang tepat bagi sekurang-kurangnya empat daripada lima perkataan atau frasa sasaran melalui konteks.
+- **Set induksi (5 minit).** Guru tunjuk gambar pengukir dan minta murid meneka perbuatan watak.
+- **Aktiviti utama (35 minit).** Guru modelkan cara mencari petunjuk makna dalam satu ayat. Pasangan membaca petikan ms. 23, memilih maksud bagi perkataan sasaran dan menunjukkan bahagian ayat yang menyokong pilihan mereka.
+- **Pengukuhan dan PBD (15 minit).** Murid melengkapkan lima padanan makna dan menerangkan alasan bagi satu pilihan. Guru menyemak ketepatan mengikut konteks.
+- **Penutup (5 minit).** Murid baca semula satu ayat selepas menggantikan perkataan dengan makna yang sesuai.
+- **Bahan.** Buku teks ms. 23, rujukan cetak Buku Aktiviti ms. 18.
+
+### PdP 23 — Kelas Dewasa Hik Sengoi (ms. 24)
+
+- **SK 3.1 · SP 3.1.2.** Murid menulis sekurang-kurangnya empat daripada lima perkataan daripada petikan dan meletakkannya dalam lajur dua atau tiga suku kata dengan betul.
+- **Set induksi (5 minit).** Guru tunjuk tajuk dan tanya perkara yang boleh dipelajari di kelas dewasa itu.
+- **Aktiviti utama (35 minit).** Guru bimbing bacaan atau rujuk trek 12 jika tersedia. Murid memilih perkataan daripada petikan, memecahkan suku kata dan mengisi jadual ms. 24 secara berpasangan.
+- **Pengukuhan dan PBD (15 minit).** Murid menulis lima perkataan berdasarkan bahan, kemudian mengelaskannya mengikut bilangan suku kata. Guru menyemak ejaan dan pengelasan.
+- **Penutup (5 minit).** Murid menyebut satu perkataan serta bilangan suku katanya.
+- **Bahan.** Buku teks ms. 24, rujukan cetak Buku Aktiviti ms. 19, rujukan cetak trek 12.
+
+### PdP 24 — Nu Sekulah (ms. 25)
+
+- **SK 4.2 · SP 4.2.1.** Murid menulis semula dua baris seni kata dengan tepat dan menyampaikan satu rangkap bersama kumpulan mengikut irama yang ditunjukkan.
+- **Set induksi (5 minit).** Guru tunjuk ilustrasi murid bersiap ke sekolah. Murid berkongsi satu rutin pagi.
+- **Aktiviti utama (35 minit).** Guru modelkan bacaan seni kata atau gunakan trek 13 jika tersedia. Murid bincang urutan rutin dan mengulang satu rangkap sambil membuat gerakan sesuai. Pasangan menyemak dua baris yang ditulis dalam buku.
+- **Pengukuhan dan PBD (15 minit).** Guru semak dua baris yang ditulis dan mendengar penyampaian satu rangkap. Catat ketepatan kata dan urutan baris.
+- **Penutup (5 minit).** Murid nyatakan satu rutin pagi daripada seni kata.
+- **Bahan.** Buku teks ms. 25, rujukan cetak Buku Aktiviti ms. 20, rujukan cetak trek 13.
+
+### PdP 25 — Jeoi Nengneng Jeoi Penanei — Engrok Muh Khas (ms. 26)
+
+- **SK 5.1 · SP 5.1.2.** Murid mengenal pasti sekurang-kurangnya empat daripada lima kata nama khas daripada petikan dan menggunakannya dalam satu ayat mudah.
+- **Set induksi (5 minit).** Guru tunjuk gambar pantai dan minta murid bezakan nama tempat khusus daripada nama umum.
+- **Aktiviti utama (35 minit).** Guru bimbing bacaan ms. 26 dan tunjuk dua nama khas daripada petikan. Pasangan menandakan nama orang serta tempat, mengelaskan contoh dan membina satu ayat dengan nama yang dipilih.
+- **Pengukuhan dan PBD (15 minit).** Murid mengenal pasti lima kata nama khas atau am dan membina satu ayat menggunakan kata nama khas. Guru semak sekurang-kurangnya empat pilihan tepat.
+- **Penutup (5 minit).** Murid menyebut satu nama tempat khusus daripada petikan.
+- **Bahan.** Buku teks ms. 26, rujukan cetak trek 14.
+
+## Rangka RPH Unit 6 bagi PdP 26–30
+
+Unit 6 — Sinui Jik meliputi ms. 27–31. Kelima-lima kod SP utama sepadan dengan RPT rujukan. Dalam PdP 27, murid membaca dan melakonkan dialog mengikut intonasi. Dalam PdP 28, murid mengesan dan menulis maklumat resipi. Kedua-dua fokus sepadan dengan Dokumen Penjajaran bagi 2.3.2 dan 3.3.1. Agihan 60 minit setiap sesi bagi Unit 5 dan 6 ialah andaian draf.
+
+### PdP 26 — Kernal Peringak Eng (ms. 27)
+
+- **SK 1.4 · SP 1.4.1.** Murid menggunakan sapaan yang sesuai dan menjawab sekurang-kurangnya tiga daripada empat soalan tentang hubungan ahli keluarga dalam carta.
+- **Set induksi (5 minit).** Guru paparkan carta keluarga dan minta murid menjejaki hubungan dua watak.
+- **Aktiviti utama (35 minit).** Guru modelkan sapaan dan pola soal jawab berdasarkan ms. 27. Pasangan bertukar peranan untuk bertanya tentang ahli keluarga dan memberi jawapan yang berpandukan carta.
+- **Pengukuhan dan PBD (15 minit).** Guru mendengar empat jawapan dan satu sapaan dalam lakonan ringkas. Catat ketepatan hubungan dan kesesuaian ujaran.
+- **Penutup (5 minit).** Murid membacakan satu ayat ringkas tentang ahli keluarga dalam carta.
+- **Bahan.** Buku teks ms. 27, rujukan cetak Buku Aktiviti ms. 21.
+
+### PdP 27 — Musem Betar (ms. 28)
+
+- **SK 2.3 · SP 2.3.2.** Murid membaca sekurang-kurangnya tiga daripada empat giliran dialog dengan sebutan dan intonasi yang sesuai.
+- **Set induksi (5 minit).** Guru tunjuk gambar hasil jualan dan minta murid jangka topik perbualan.
+- **Aktiviti utama (35 minit).** Guru modelkan bacaan dialog ms. 28 atau gunakan trek 15 jika tersedia. Pasangan membaca giliran watak, menanda ayat soal dan ujaran respons, kemudian berlatih lakonan pendek.
+- **Pengukuhan dan PBD (15 minit).** Guru mendengar empat giliran bagi setiap pasangan. Catat kejelasan sebutan, intonasi soalan dan ketepatan giliran.
+- **Penutup (5 minit).** Murid memilih satu giliran dan membacanya semula dengan intonasi yang telah dibetulkan.
+- **Bahan.** Buku teks ms. 28, rujukan cetak Buku Aktiviti ms. 22, rujukan cetak trek 15.
+
+### PdP 28 — Kek Cokelet Keju (ms. 29)
+
+- **SK 3.3 · SP 3.3.1.** Murid mengenal pasti dan menulis sekurang-kurangnya empat daripada lima maklumat tepat tentang bahan atau langkah daripada resipi.
+- **Set induksi (5 minit).** Guru paparkan gambar hasil resipi dan minta murid menjangka satu bahan.
+- **Aktiviti utama (35 minit).** Guru tunjuk perbezaan senarai bahan dengan langkah pada ms. 29. Pasangan mencari semula kuantiti dan tindakan daripada resipi dan mencatatnya dalam jadual. Murid menyalin satu ayat majmuk daripada resipi bagi mengekalkan konteks catatan.
+- **Pengukuhan dan PBD (15 minit).** Murid mencatat lima butiran yang diminta. Guru menyemak ketepatan bahan, kuantiti atau langkah terhadap sumber.
+- **Penutup (5 minit).** Murid menyebut satu bahan berserta kuantitinya.
+- **Bahan.** Buku teks ms. 29, rujukan cetak Buku Aktiviti ms. 23.
+
+### PdP 29 — Selamat Jis Yesnos (ms. 30)
+
+- **SK 4.2 · SP 4.2.2.** Murid membina dan menggunakan sekurang-kurangnya dua ayat ucapan sopan yang sesuai dengan situasi dalam kad ucapan.
+- **Set induksi (5 minit).** Guru tunjuk kad pada ms. 30 dan tanya bila ucapan seumpama itu digunakan.
+- **Aktiviti utama (35 minit).** Guru bimbing murid membaca kad dan mengenal pasti penerima serta tujuan ucapan. Pasangan memilih situasi, menulis dua ayat dan berlatih menyampaikan ucapan dengan pilihan kata yang sesuai.
+- **Pengukuhan dan PBD (15 minit).** Murid membaca ucapan di hadapan pasangan. Guru menyemak dua ayat berdasarkan kesopanan ujaran dan kesesuaian dengan situasi.
+- **Penutup (5 minit).** Murid pilih satu ayat yang akan dikekalkan pada kad ucapan.
+- **Bahan.** Buku teks ms. 30, rujukan cetak Buku Aktiviti ms. 24.
+
+### PdP 30 — Bengsat Mai Raknak — Neimboh (ms. 31)
+
+- **SK 5.2 · SP 5.2.1.** Murid memilih sekurang-kurangnya empat daripada lima perkataan berimbuhan yang sesuai untuk melengkapkan pantun.
+- **Set induksi (5 minit).** Guru baca tajuk pantun dan minta murid mengenal pasti satu perkataan yang mengandungi imbuhan.
+- **Aktiviti utama (35 minit).** Guru tunjuk cara mengenal pasti imbuhan dan menggunakan makna baris sebagai petunjuk. Pasangan membaca rangkap pada ms. 31 dan memadankan kata berimbuhan dengan ruang kosong yang sesuai.
+- **Pengukuhan dan PBD (15 minit).** Murid melengkapkan lima ruang secara individu. Guru semak bentuk dan makna kata, kemudian murid membaca satu rangkap yang telah lengkap.
+- **Penutup (5 minit).** Murid menyebut satu perkataan pilihan bersama imbuhannya.
+- **Bahan.** Buku teks ms. 31.

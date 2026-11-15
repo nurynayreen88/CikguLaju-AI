@@ -530,3 +530,177 @@ Buku teks ms. 30 menempatkan label trek 16 dan 17 berhampiran tajuk lagu. Indeks
 - **Pengukuhan dan PBD (15 minit).** Guru semak sekurang-kurangnya dua petunjuk dan jawapannya. Pasangan bertukar buku dan menilai sama ada petunjuk membolehkan rakan meneka.
 - **Penutup (5 minit).** Murid bacakan satu teka-teki yang mereka hasilkan dan jemput rakan menjawab.
 - **Bahan.** Buku teks ms. 34, rujukan cetak Buku Aktiviti ms. 24.
+
+## Rangka RPH Unit 5 bagi PdP 31–39
+
+Unit 5 — Timpu Kohiok meliputi ms. 35–44. Set 13 kod SP induk sepadan antara buku teks dan [RPT Bahasa Kadazandusun 2025](https://id.scribd.com/document/852169526/RPT-BKD-TAHUN-2-2025). Ms. 36 menerangkan permulaan permainan yang disambung pada ms. 37. PdP 32 menggunakan 2.1.2 (i) yang dicetak pada ms. 37. [Transkrip trek 21 dan 23](https://padlet-uploads.storage.googleapis.com/150348405/08fa062da29e2e4fff0994223feb88db/Bahasa_Kadazandusun_Tahun_2.pdf#page=124) pada ms. cetak 116 boleh digunakan untuk bacaan guru dalam PdP 31 dan 34.
+
+### PdP 31 — Toinuo’ om Polombuso’ — Mendengar nombor (ms. 35)
+
+- **SK 1.2, 1.1 · SP 1.2.2 (i) / 1.1.2 (i).** Murid memadankan sebutan dengan angka dan memenggal sebutan bagi sekurang-kurangnya empat daripada lima nombor yang didengar.
+- **Set induksi (5 minit).** Guru tunjuk kad angka daripada gambar dan minta murid mencari angka yang sepadan dalam buku.
+- **Aktiviti utama (35 minit).** Guru gunakan trek 21 jika tersedia atau bacakan transkrip ms. 116. Murid tunjuk angka apabila mendengar sebutannya. Pasangan menyusun kad suku kata untuk dua contoh dan membandingkan sebutan dengan model guru.
+- **Pengukuhan dan PBD (15 minit).** Guru sebut lima nombor tanpa menunjukkan kad. Murid pilih angka dan ulang sebutan mengikut suku kata. Guru catat padanan serta pemenggalan tepat.
+- **Penutup (5 minit).** Murid sebut satu nombor pilihan dan tunjuk angka yang sepadan.
+- **Bahan.** Buku teks ms. 35, rujukan cetak Buku Aktiviti ms. 25, rujukan cetak trek 21.
+
+### PdP 32 — Kanou Mamain — Membaca nombor (ms. 36–37)
+
+- **SK 2.1 · SP 2.1.2 (i).** Murid membaca dan memenggal sekurang-kurangnya empat daripada lima nombor dalam permainan dengan tepat.
+- **Set induksi (5 minit).** Guru tunjuk papan permainan dan minta murid cari nombor mula dan nombor 50.
+- **Aktiviti utama (35 minit).** Guru tunjuk aturan permainan pada ms. 36–37 dan modelkan bacaan nombor. Pasangan membaling dadu, menggerakkan penanda dan membaca nombor pada petak baharu. Guru bimbing murid menyemak pemenggalan sebelum bergerak.
+- **Pengukuhan dan PBD (15 minit).** Guru tunjuk lima petak terpilih. Murid membaca nombor dan menunjukkan pemenggalannya secara individu.
+- **Penutup (5 minit).** Murid baca nombor pada petak terakhir yang didudukinya.
+- **Bahan.** Buku teks ms. 36–37, rujukan cetak Buku Aktiviti ms. 26 (ms. 37).
+
+### PdP 33 — Basao’ — Surat Wani kepada Silin (ms. 38)
+
+- **SK 2.2, 3.3 · SP 2.2.5 (iv) / 3.3.1.** Murid membaca satu perenggan surat mengikut intonasi yang sesuai dan mengenal pasti sekurang-kurangnya empat daripada lima bahagian surat.
+- **Set induksi (5 minit).** Guru paparkan surat dan minta murid mencari nama pengirim dan penerima.
+- **Aktiviti utama (35 minit).** Guru modelkan bacaan perenggan dan tunjuk kedudukan alamat, tarikh, sapaan, isi dan penutup. Pasangan membaca surat secara bergilir, memadankan label dengan bahagian yang betul dan melengkapkan format surat berpandu.
+- **Pengukuhan dan PBD (15 minit).** Guru dengar bacaan perenggan pendek dan semak label bagi lima bahagian surat yang diisi secara individu.
+- **Penutup (5 minit).** Murid nyatakan di bahagian mana tarikh dan nama pengirim ditulis.
+- **Bahan.** Buku teks ms. 38, rujukan cetak Buku Aktiviti ms. 27, rujukan cetak trek 22.
+
+### PdP 34 — Tusin Amas id Kuang — Mengeja nombor (ms. 39)
+
+- **SK 5.3, 2.2 · SP 5.3.1 (i) / 2.2.2 (i).** Murid menulis sekurang-kurangnya empat daripada lima nombor dalam perkataan selepas menyusun suku kata yang sepadan.
+- **Set induksi (5 minit).** Guru paparkan gambar bekas syiling dan dua kad angka. Murid membandingkan nilainya.
+- **Aktiviti utama (35 minit).** Guru bacakan transkrip trek 23 pada ms. 116 atau perdengarkan rakaman jika tersedia. Murid padankan angka dengan sebutan, membina perkataan daripada kad suku kata dan menulisnya berpandukan contoh ms. 39.
+- **Pengukuhan dan PBD (15 minit).** Guru beri lima kad angka. Murid menyusun suku kata, membaca dan menulis perkataan nombor secara individu. Semak turutan dan ejaan.
+- **Penutup (5 minit).** Murid tunjuk satu contoh angka bersama bentuk perkataannya.
+- **Bahan.** Buku teks ms. 39, rujukan cetak trek 23.
+
+### PdP 35 — Boros Ngaran — Lawatan ke zoo (ms. 40)
+
+- **SK 5.2 · SP 5.2.1 (i).** Murid mengelaskan sekurang-kurangnya lima daripada enam kata nama am dan khas daripada petikan lawatan.
+- **Set induksi (5 minit).** Guru tunjuk kad gambar haiwan dan kad nama zoo. Murid nyatakan perbezaan jenis nama yang digunakan.
+- **Aktiviti utama (35 minit).** Guru bimbing bacaan ms. 40 dan modelkan penempatan satu kata nama am dan satu kata nama khas dalam peta pemikiran. Pasangan memilih contoh lain daripada teks dan menyemak huruf besar pada nama khas.
+- **Pengukuhan dan PBD (15 minit).** Murid mengelaskan enam kata daripada petikan. Guru catat sekurang-kurangnya lima padanan tepat dan minta murid menjelaskan satu contoh.
+- **Penutup (5 minit).** Murid berkongsi satu nama am dan satu nama khas yang ditemui.
+- **Bahan.** Buku teks ms. 40.
+
+### PdP 36 — Boros Ponowoli Ngaran (ms. 41)
+
+- **SK 5.2 · SP 5.2.2.** Murid memilih kata ganti nama atau kata tunjuk yang sesuai bagi sekurang-kurangnya empat daripada lima ayat mengikut penutur, pendengar atau jarak.
+- **Set induksi (5 minit).** Guru tunjuk satu objek dekat dan satu objek jauh. Murid perhatikan perubahan ujaran mengikut objek yang dirujuk.
+- **Aktiviti utama (35 minit).** Guru modelkan kata tunjuk dan kata ganti nama daripada ms. 41. Pasangan bertukar peranan sebagai penutur dan pendengar, kemudian melengkapkan dialog berdasarkan kad situasi.
+- **Pengukuhan dan PBD (15 minit).** Guru beri lima ayat berlompang. Murid memilih bentuk yang sesuai dan menjelaskan satu pilihan berdasarkan hubungan penutur atau kedudukan objek.
+- **Penutup (5 minit).** Murid menyebut semula satu ayat sambil menunjukkan orang atau benda yang dirujuk.
+- **Bahan.** Buku teks ms. 41, rujukan cetak Buku Aktiviti ms. 28.
+
+### PdP 37 — Kanou Monuat Numbul (ms. 42)
+
+- **SK 3.1 · SP 3.1.4.** Murid menulis sekurang-kurangnya lapan daripada sepuluh nombor dengan turutan yang betul dalam corak yang diberi.
+- **Set induksi (5 minit).** Guru paparkan satu baris nombor dengan beberapa ruang kosong. Murid nyatakan nombor yang berikutnya.
+- **Aktiviti utama (35 minit).** Guru modelkan satu turutan pada ms. 42. Kumpulan menyusun kad angka bagi turutan 10 hingga 20, kemudian membandingkannya dengan corak puluh dan ratus pada halaman yang sama.
+- **Pengukuhan dan PBD (15 minit).** Murid melengkapkan sepuluh ruang dalam turutan terpilih. Guru menyemak kedudukan dan bentuk angka.
+- **Penutup (5 minit).** Murid nyatakan bagaimana mereka menentukan nombor yang hilang.
+- **Bahan.** Buku teks ms. 42, rujukan cetak Buku Aktiviti ms. 29.
+
+### PdP 38 — Inomoto’ om Gonopo’ — Graf makanan pilihan (ms. 43)
+
+- **SK 3.3 · SP 3.3.4.** Murid menukarkan sekurang-kurangnya tiga daripada empat maklumat dalam graf makanan kepada ayat lengkap yang tepat.
+- **Set induksi (5 minit).** Guru paparkan graf dan minta murid mengenal pasti tajuk serta makna paksi.
+- **Aktiviti utama (35 minit).** Guru tunjuk cara membaca satu palang dan menukarkannya kepada ayat. Pasangan membandingkan pilihan makanan, mencari nilai tertinggi dan terendah, kemudian membina ayat berdasarkan nilai pada graf.
+- **Pengukuhan dan PBD (15 minit).** Murid menulis empat ayat berpandukan graf. Guru menyemak ketepatan nilai, kategori dan struktur ayat.
+- **Penutup (5 minit).** Murid baca satu ayat dan tunjuk palang yang menyokongnya.
+- **Bahan.** Buku teks ms. 43, rujukan cetak Buku Aktiviti ms. 30.
+
+### PdP 39 — Kanou Manangon — Bonong Toondos (ms. 44)
+
+- **SK 4.2, 1.3 · SP 4.2.1 (i) / 1.3.1 (ii) (d).** Selepas mendengar cerita, murid menceritakan semula sekurang-kurangnya tiga peristiwa mengikut turutan dan menyatakan satu pengajaran.
+- **Set induksi (5 minit).** Guru paparkan tajuk atau ilustrasi dan minta murid menjangka sifat watak.
+- **Aktiviti utama (35 minit).** Guru bacakan cerita ms. 44 atau gunakan trek 24 jika tersedia. Murid menyusun kad permulaan, masalah dan penutup. Pasangan berlatih menyampaikan semula cerita dengan intonasi yang sesuai.
+- **Pengukuhan dan PBD (15 minit).** Murid menceritakan tiga peristiwa dan menyatakan satu pengajaran. Guru mencatat ketepatan urutan dan kaitan pengajaran dengan cerita.
+- **Penutup (5 minit).** Murid memilih satu tindakan watak dan menerangkan kesannya.
+- **Bahan.** Buku teks ms. 44, rujukan cetak trek 24.
+
+## Rangka RPH Unit 6 bagi PdP 40–48
+
+Unit 6 — Bontuk meliputi ms. 45–54. Set 13 kod SP induk sepadan antara buku teks dan RPT 2025. Ms. 50 memperkenalkan cerita Buhangkut. Padanan SP 3.2.2 (i) (b) bagi PdP 45 menggunakan nota cetak pada ms. 51. [Transkrip trek 25](https://padlet-uploads.storage.googleapis.com/150348405/08fa062da29e2e4fff0994223feb88db/Bahasa_Kadazandusun_Tahun_2.pdf#page=125) pada ms. cetak 117 boleh digunakan untuk bacaan guru dalam PdP 40.
+
+Pada ms. 47, RPT melabel 2.1.2 dengan huraian pengecaman bentuk dan bunyi huruf vokal. Buku teks dan [DSKP asal Kadazandusun Tahun 2](https://asiemodel.net/wp-content/uploads/2022/08/15-DSKP-KSSR-SEMAKAN-BAHASA-KADAZANDUSUN-TAHUN-2.pdf) menggunakan 2.1.2 (ii) untuk pemenggalan perkataan berkaitan bentuk. PdP 42 menilai pemenggalan dan bacaan. Pada ms. 54, buku teks menggunakan kraf kertas di bawah 4.4.2. DSKP memperincikan penerangan langkah mamatu dan pembuatan manik. PdP 48 menggunakan rajah kraf kertas untuk latihan urutan dan menilai penerangan langkah pembuatan pinakol berdasarkan ms. 53.
+
+Peruntukan 60 minit setiap sesi bagi Unit 5 dan 6 ialah andaian draf.
+
+### PdP 40 — Inomoto’ om Roito’ Bontuk (ms. 45)
+
+- **SK 1.1, 1.2 · SP 1.1.2 (ii) / 1.2.2 (ii).** Murid mengenal pasti bentuk yang disebut dan memenggal dengan tepat sekurang-kurangnya empat daripada lima nama bentuk.
+- **Set induksi (5 minit).** Guru tunjuk ilustrasi halaman 45. Murid pilih satu bentuk yang mereka kenal.
+- **Aktiviti utama (35 minit).** Guru gunakan trek 25 jika tersedia atau baca transkrip ms. 117. Murid menunjuk bentuk yang didengar, memadankan kad nama dan menyebut perkataan mengikut suku kata dengan bimbingan guru.
+- **Pengukuhan dan PBD (15 minit).** Guru sebut lima nama bentuk. Murid pilih gambar, kemudian menyebut semula perkataan mengikut pemenggalannya.
+- **Penutup (5 minit).** Murid sebut satu bentuk yang terdapat pada objek di sekeliling.
+- **Bahan.** Buku teks ms. 45, rujukan cetak Buku Aktiviti ms. 31, rujukan cetak trek 25.
+
+### PdP 41 — Pogibaabarasai — Mencari bentuk (ms. 46)
+
+- **SK 1.5, 1.3 · SP 1.5.3 (ii) (a) / 1.3.1 (ii) (e).** Murid menjawab sekurang-kurangnya tiga daripada empat soalan lisan tentang lokasi atau warna bentuk dan mengemukakan satu soalan yang jelas.
+- **Set induksi (5 minit).** Guru tunjuk halaman 46 dan minta murid mencari dua bentuk yang disebut dalam dialog.
+- **Aktiviti utama (35 minit).** Guru bacakan dialog dan menunjukkan bagaimana jawapan merujuk lokasi atau warna. Pasangan bergilir meminta maklumat dan memberikan jawapan berpandukan gambar, kemudian menukar bentuk yang ditanya.
+- **Pengukuhan dan PBD (15 minit).** Guru nilai empat jawapan dan satu soalan bagi setiap murid. Catat sama ada jawapan merujuk bentuk yang betul.
+- **Penutup (5 minit).** Murid ulang satu pasangan soalan dan jawapan berdasarkan gambar.
+- **Bahan.** Buku teks ms. 46, rujukan cetak Buku Aktiviti ms. 31.
+
+### PdP 42 — Ijao’ — Mengeja nama bentuk (ms. 47)
+
+- **SK 2.1, 2.2 · SP 2.1.2 (ii) / 2.2.2 (ii).** Murid memenggal dan membaca sekurang-kurangnya empat daripada lima nama bentuk berdasarkan perkataan yang diberi.
+- **Set induksi (5 minit).** Guru tunjuk beberapa objek daripada ms. 47 dan minta murid memadankannya dengan bentuk.
+- **Aktiviti utama (35 minit).** Guru tunjuk cara menggabungkan suku kata bagi satu nama bentuk. Pasangan mengambil giliran menyebut perkataan dan membina ejaan daripada kad suku kata, kemudian menyemak bentuk yang disebut melalui ilustrasi.
+- **Pengukuhan dan PBD (15 minit).** Guru beri lima kad. Murid membaca, menunjukkan pemenggalan dan memilih gambar yang sepadan. Catat empat bacaan tepat.
+- **Penutup (5 minit).** Murid baca satu nama bentuk bersama contoh objek yang sepadan.
+- **Bahan.** Buku teks ms. 47, rujukan cetak Buku Aktiviti ms. 32.
+
+### PdP 43 — Basao’ om Polombuso’ — Biskut raya (ms. 48)
+
+- **SK 2.2 · SP 2.2.5 (vii) (a) / 2.2.4 (i), (iii).** Murid membaca satu pertukaran dialog dengan jelas dan memilih sekurang-kurangnya tiga daripada empat ujaran permintaan atau arahan yang sesuai dengan situasi.
+- **Set induksi (5 minit).** Guru paparkan gambar biskut pelbagai bentuk. Murid nyatakan satu cara meminta bantuan ketika membuat biskut.
+- **Aktiviti utama (35 minit).** Guru modelkan dialog daripada ms. 48 atau gunakan trek 26 jika tersedia. Pasangan membaca mengikut watak dan membandingkan bentuk ayat penyata dengan permintaan atau arahan sopan.
+- **Pengukuhan dan PBD (15 minit).** Murid membaca satu pertukaran dialog dan memilih ujaran bagi empat kad situasi. Guru menyemak sebutan, intonasi dan kesesuaian ujaran.
+- **Penutup (5 minit).** Murid mengulang satu permintaan sopan daripada latihan.
+- **Bahan.** Buku teks ms. 48, rujukan cetak Buku Aktiviti ms. 33, rujukan cetak trek 26.
+
+### PdP 44 — Pilio’ om Suato’ — Menulis nama bentuk (ms. 49)
+
+- **SK 5.1, 5.3 · SP 5.1.3 / 5.3.1 (ii).** Murid menyusun suku kata dan menulis dengan tepat sekurang-kurangnya empat daripada lima nama bentuk berdasarkan gambar.
+- **Set induksi (5 minit).** Guru tunjuk satu nama bentuk yang telah dipisahkan kepada suku kata. Murid menyusun semula contoh.
+- **Aktiviti utama (35 minit).** Guru gunakan gambar dan suku kata bercampur pada ms. 49 untuk membina perkataan. Pasangan memilih suku kata bagi setiap gambar, membaca hasil dan merekod perkataan dalam peta pemikiran.
+- **Pengukuhan dan PBD (15 minit).** Murid menulis lima nama bentuk daripada kad baharu. Guru menyemak urutan suku kata dan ejaan.
+- **Penutup (5 minit).** Murid tunjuk satu perkataan yang ditulis dan bentuk yang sepadan.
+- **Bahan.** Buku teks ms. 49, rujukan cetak Buku Aktiviti ms. 34.
+
+### PdP 45 — I Buhangkut — Ayat penyata berdasarkan cerita (ms. 50–51)
+
+- **SK 3.2 · SP 3.2.2 (i) (b).** Murid menyusun frasa dan menulis sekurang-kurangnya tiga daripada empat ayat penyata yang tepat tentang cerita Buhangkut.
+- **Set induksi (5 minit).** Guru tunjuk tajuk cerita dan minta murid mengenal pasti watak utama.
+- **Aktiviti utama (35 minit).** Guru bacakan permulaan pada ms. 50 atau gunakan trek 27 jika tersedia. Murid membaca sambungan pada ms. 51 dan memilih frasa tentang watak atau peristiwa. Pasangan menyusun frasa menjadi ayat sebelum murid menulisnya.
+- **Pengukuhan dan PBD (15 minit).** Murid diberi empat set frasa dan menulis ayat secara individu. Guru semak susunan dan ketepatan maklumat berdasarkan cerita.
+- **Penutup (5 minit).** Murid baca satu ayat yang menerangkan tindakan atau sifat watak.
+- **Bahan.** Buku teks ms. 50–51, rujukan cetak Buku Aktiviti ms. 35 (ms. 51), rujukan cetak trek 27 (ms. 50).
+
+### PdP 46 — Pisudongo’ om Suato’ — Ayat tentang biskut (ms. 52)
+
+- **SK 3.2 · SP 3.2.2 (i) (b).** Murid melengkapkan dan menulis sekurang-kurangnya tiga daripada empat ayat penyata menggunakan frasa bentuk atau kuantiti yang sepadan.
+- **Set induksi (5 minit).** Guru paparkan satu gambar biskut dan minta murid menyatakan bentuknya.
+- **Aktiviti utama (35 minit).** Guru modelkan pemilihan frasa untuk melengkapkan satu ayat pada ms. 52. Pasangan menyemak pilihan mengikut watak, bentuk dan jumlah, kemudian murid menyalin ayat lengkap.
+- **Pengukuhan dan PBD (15 minit).** Guru semak empat ayat individu berdasarkan susunan frasa dan ketepatan butiran daripada halaman.
+- **Penutup (5 minit).** Murid baca satu ayat lengkap dan tunjuk frasa yang ditambah.
+- **Bahan.** Buku teks ms. 52.
+
+### PdP 47 — Pinakol — Mengenal kraf manik Rungus (ms. 53)
+
+- **SK 4.4 · SP 4.4.1 (ii).** Murid mencatat sekurang-kurangnya tiga fakta tepat tentang pinakol, meliputi bahan, cara pembuatan atau penggunaannya.
+- **Set induksi (5 minit).** Guru paparkan gambar pinakol dan tanya ciri hiasan yang dapat diperhatikan.
+- **Aktiviti utama (35 minit).** Guru bimbing bacaan ms. 53 dan tunjuk cara mengasingkan catatan mengikut bahan, proses dan penggunaan. Pasangan mencari bukti dalam teks dan menyusun kad maklumat.
+- **Pengukuhan dan PBD (15 minit).** Murid mengisi tiga bahagian jadual maklumat secara individu. Guru semak fakta dan minta murid menunjukkan bukti bagi satu catatan.
+- **Penutup (5 minit).** Murid nyatakan satu perkara tentang penggunaan pinakol dalam masyarakat Rungus.
+- **Bahan.** Buku teks ms. 53, rujukan cetak Buku Aktiviti ms. 36.
+
+### PdP 48 — Momonsoi Karo Kalatas — Urutan kraf kertas (ms. 53–54)
+
+- **SK 4.4 · SP 4.4.2.** Murid menerangkan sekurang-kurangnya empat daripada lima langkah pembuatan pinakol mengikut urutan dan menggunakan rajah kraf kertas untuk berlatih menerangkan satu proses.
+- **Set induksi (5 minit).** Guru tunjuk gambar pinakol dan hasil kraf kertas daripada ms. 54. Murid nyatakan satu perbezaan bahan.
+- **Aktiviti utama (35 minit).** Guru bimbing murid membaca langkah pembuatan pinakol pada ms. 53 dan menyusun kad langkah. Pasangan mengikuti rajah kraf kertas ms. 54 bagi berlatih memberi arahan mengikut turutan. Murid kemudian menerangkan semula proses pembuatan pinakol menggunakan petunjuk bahan dan gambar.
+- **Pengukuhan dan PBD (15 minit).** Murid menyusun lima kad langkah pembuatan pinakol dan menerangkan proses secara lisan. Guru semak sekurang-kurangnya empat kedudukan tepat dan ketepatan tindakan.
+- **Penutup (5 minit).** Murid menyatakan satu langkah yang perlu dibuat sebelum menyusun manik.
+- **Bahan.** Buku teks ms. 53–54, rujukan cetak Buku Aktiviti ms. 36.
