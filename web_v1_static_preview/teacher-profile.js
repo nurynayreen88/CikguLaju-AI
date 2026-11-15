@@ -1129,6 +1129,7 @@ timetableSaveButton.addEventListener("click",async() => {
     teacherProfileState.savedPeriods=entries.length;
     renderProfileReadiness();
     timetableMessage.textContent=entries.length+" waktu berjaya disimpan. Jadual ini turut tersedia di Telegram.";
+    window.cikgulajuProgressLoad?.();
   }catch(err){
     timetableMessage.textContent=err.message;
   }finally{

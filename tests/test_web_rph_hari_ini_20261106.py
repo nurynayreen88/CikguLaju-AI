@@ -11,7 +11,8 @@ from web.rph_hari_ini_web import (
     bp, class_year, day_payload, subject_identity,
 )
 
-from web.rph_today_progress import attach_progress, lesson_signer
+from web.rph_today_progress import attach_progress, lesson_signer, read_progress_summary
+from web.teacher_profile_store import ProfileUnavailable
 
 ROOT=Path(__file__).resolve().parents[1]
 EXAMPLE={
@@ -193,6 +194,70 @@ class DailyTimetableRouteTests(TestCase):
             self.assertEqual(self.client.post(path, json={**body, "token": None},
                                               headers=origin).status_code, 200)
             self.assertEqual(save.call_args.args[4:], ("", None))
+
+    def test_profile_summary_is_private_and_lists_each_class_and_subject(self):
+        path = "/api/web/rph/hari-ini/progress"
+        scheduled = deepcopy(EXAMPLE)
+        scheduled["entries"].append(dict(EXAMPLE["entries"][1], subject="PJPK"))
+        summaries = {
+            ("3 cemerlang", "ENGLISH", ""): {
+                "completed": 2, "last_number": 4, "last_date": "2026-11-06",
+            },
+            ("2 setia", "MATH", ""): {
+                "completed": 1, "last_number": 8, "last_date": "2026-10-29",
+            },
+        }
+        with self.app.app_context():
+            denied = (jsonify({"error": "login"}), 401)
+        with patch("web.rph_hari_ini_web._auth", return_value=(None, None, denied)), patch(
+                "web.rph_hari_ini_web.read_progress_summary") as read:
+            self.assertEqual(self.client.get(path).status_code, 401)
+            read.assert_not_called()
+        today = date(2026, 11, 6)
+        with patch("web.rph_hari_ini_web._auth", return_value=(self.conf, 123, None)), patch(
+                "web.rph_hari_ini_web.malaysia_today", return_value=today), patch(
+                "web.rph_hari_ini_web.get_schedule", return_value=scheduled), patch(
+                "web.rph_hari_ini_web.read_progress_summary", return_value=summaries) as read:
+            self.assertEqual(self.client.get(path, query_string={"uid": 456}).status_code, 400)
+            reply = self.client.get(path)
+            read.assert_called_once_with(self.conf, 123, today)
+            read.side_effect = ProfileUnavailable("Test store is down")
+            self.assertEqual(self.client.get(path).status_code, 503)
+        self.assertEqual(reply.status_code, 200)
+        self.assertEqual(reply.headers["Cache-Control"], "no-store, private")
+        self.assertEqual(reply.json["year"], 2026)
+        rows = {(r["class_name"], r["subject"]): r for r in reply.json["entries"]}
+        self.assertEqual(rows["3 Cemerlang", "Bahasa Inggeris"], {
+            "class_name": "3 Cemerlang", "subject": "Bahasa Inggeris", "label": "Lesson",
+            "completed": 2, "last_number": 4, "last_date": "2026-11-06",
+        })
+        self.assertEqual(rows["2 setia", "Matematik"]["completed"], 1)
+        self.assertEqual(rows["4 Bestari", "Bahasa Melayu"]["completed"], 0)
+        self.assertEqual(rows["4 Bestari", "Pendidikan Jasmani"]["completed"], 0)
+        self.assertEqual(rows["4 Bestari", "Pendidikan Kesihatan"]["completed"], 0)
+
+    def test_summary_counts_distinct_lessons_across_pages_by_class_and_component(self):
+        def row(number, day, cls="3 cemerlang", component="PJ"):
+            return {"class_key": cls, "subject_code": "PJPK", "component": component,
+                    "pdp_date": day, "sequence_no": number}
+
+        newest = row(4, "2026-11-06")
+        with patch("web.rph_today_progress._request", side_effect=[
+            [newest] * 500,
+            [row(9, "2026-11-05"), row(4, "2026-11-03"),
+             row(7, "2026-10-29", component="PK"), row(8, "2026-10-29", cls="3 amanah")],
+        ]) as request:
+            result = read_progress_summary(self.conf, 123, date(2026, 11, 6))
+        self.assertEqual(result["3 cemerlang", "PJPK", "PJ"], {
+            "completed": 2, "last_number": 4, "last_date": "2026-11-06",
+        })
+        self.assertEqual(result["3 cemerlang", "PJPK", "PK"]["completed"], 1)
+        self.assertEqual(result["3 amanah", "PJPK", "PJ"]["last_number"], 8)
+        for index, call in enumerate(request.call_args_list):
+            filters = call.kwargs["filters"]
+            self.assertEqual(filters["offset"], index * 500)
+            self.assertEqual(filters["teacher_id"], "eq.123")
+            self.assertEqual(filters["and"], "(pdp_date.gte.2026-01-01,pdp_date.lte.2026-11-06)")
 
     def test_progress_respects_slot_order_class_and_pjpk_component(self):
         def record(day, start, sequence, component="PJ", cls="3 cemerlang"):
