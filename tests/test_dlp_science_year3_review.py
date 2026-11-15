@@ -36,13 +36,14 @@ def review_plans(pattern="science_*.md"):
             lesson["phases"] = re.findall(
                 r"^\| ([^|]+ · \d+ min) \| ([^|]+) \| ([^|]+) \|$", body, re.M
             )
-            yield {"title": unit_title}, lesson
+            title_for_render = "Consolidation" if "-R" in lesson_id else unit_title
+            yield {"title": title_for_render}, lesson
 
 
-def schedule():
+def schedule(path=RPT, subject_id="SCI"):
     lessons = {}
     reviews = 0
-    for table in Document(RPT).tables:
+    for table in Document(path).tables:
         for row in table.rows:
             cells = [" ".join(cell.text.split()) for cell in row.cells]
             if len(cells) != 5:
@@ -50,12 +51,12 @@ def schedule():
             _, title, standards, _, reference = cells
             if match := re.fullmatch(r"Lesson (\d+) (.+) (Unit (\d+) .+)", title):
                 number, topic, unit, unit_no = match.groups()
-                lesson_id = f"DLP-SCI-Y3-U{int(unit_no):02d}-{number}"
+                lesson_id = f"DLP-{subject_id}-Y3-U{int(unit_no):02d}-{number}"
                 cs, ls = re.fullmatch(r"CS (.+) LS (.+)", standards).groups()
                 standards = f"CS {cs} · LS {ls}"
             elif match := re.fullmatch(r"Review (.+) Consolidation", title):
                 reviews += 1
-                lesson_id, topic, unit = f"DLP-SCI-Y3-R{reviews:02d}", f"Review: {match[1]}", "Consolidation"
+                lesson_id, topic, unit = f"DLP-{subject_id}-Y3-R{reviews:02d}", f"Review: {match[1]}", "Consolidation"
                 standards = None
             else:
                 continue
@@ -111,50 +112,43 @@ class ScienceYear3DlpReviewTests(unittest.TestCase):
 
 
 class MathematicsYear3DlpReviewTests(unittest.TestCase):
-    def test_unit_two_matches_rpt_and_renders_word_and_pdf(self):
+    def test_all_units_match_rpt_and_render_word_and_pdf(self):
         rpt = RPT.with_name(RPT.name.replace("Science", "Mathematics"))
-        expected = {}
-        for table in Document(rpt).tables:
-            for row in table.rows:
-                cells = [" ".join(cell.text.split()) for cell in row.cells]
-                if len(cells) != 5:
-                    continue
-                _, title, standards, _, references = cells
-                if match := re.fullmatch(r"Lesson (\d+) (.+) Unit 2 Addition, Subtraction, Multiplication and Division", title):
-                    number, topic = match.groups()
-                    lesson_id = f"DLP-MAT-Y3-U02-{number}"
-                    cs, ls = re.fullmatch(r"CS (.+) LS (.+)", standards).groups()
-                    standards = f"CS {cs} · LS {ls}"
-                elif title == "Review Basic Operations Consolidation":
-                    lesson_id, topic, standards = "DLP-MAT-Y3-R02", "Review: Basic Operations", None
-                else:
-                    continue
-                time = int(re.search(r"(\d+) min$", references)[1])
-                expected[lesson_id] = topic, standards, time
-        available = set()
+        expected = schedule(rpt, "MAT")
+        plan_ids = set()
         covered = set()
         total = 0
         teacher = {"class": "", "date": "", "time": "", "students": ""}
-        for unit, plan in review_plans("mathematics_unit_02.md"):
+        for unit, plan in review_plans("mathematics_unit_*.md"):
             with self.subTest(lesson=plan["id"]):
-                self.assertNotIn(plan["id"], available)
-                available.add(plan["id"])
-                topic, standards, minutes = expected[plan["id"]]
-                self.assertEqual(plan["title"], topic)
+                self.assertNotIn(plan["id"], plan_ids)
+                plan_ids.add(plan["id"])
+                unit_title, title, standards, minutes = expected[plan["id"]]
+                self.assertEqual((unit["title"], plan["title"]), (unit_title, title))
                 if standards is not None:
-                    self.assertEqual(plan["standards"], standards)
-                    covered.update(re.findall(r"2\.\d+\.\d+", plan["standards"]))
-                self.assertIn("Textbook Part 1", plan["references"])
+                    # Unit 1 records subitems against the same LS in the RPT.
+                    self.assertEqual(
+                        re.sub(r" \(i\), \(ii\)| \(iii\), \(iv\)", "", plan["standards"]),
+                        standards,
+                    )
+                    covered.update(re.findall(r"\d+\.\d+\.\d+", plan["standards"]))
+                self.assertIn("Textbook Part", plan["references"])
                 self.assertIn("Activity Book", plan["references"])
-                self.assertEqual(len(plan["phases"]), 4)
-                self.assertEqual(sum(int(phase.rsplit(" ", 2)[1]) for phase, _, _ in plan["phases"]), minutes)
+                phases = plan["phases"]
+                self.assertEqual([phase.split(" · ")[0] for phase, _, _ in phases], [
+                    "Set induction", "Main activity", "Practice and assessment", "Closure",
+                ])
+                self.assertEqual(sum(int(phase.rsplit(" ", 2)[1]) for phase, _, _ in phases), minutes)
                 total += minutes
                 pdf = PdfReader(BytesIO(render("MATH_DLP", unit, plan, "pdf", teacher, year=3)))
                 self.assertEqual(len(pdf.pages), 1)
-                self.assertIn("Mathematics (DLP)", pdf.pages[0].extract_text())
+                page = pdf.pages[0]
+                self.assertAlmostEqual(float(page.mediabox.width), 595.28, places=1)
+                self.assertAlmostEqual(float(page.mediabox.height), 841.89, places=1)
+                self.assertIn("Mathematics (DLP)", page.extract_text())
                 word = Document(BytesIO(render("MATH_DLP", unit, plan, "word", teacher, year=3)))
-                self.assertEqual(word.paragraphs[2].text, topic)
-        self.assertEqual(available, set(expected))
-        self.assertEqual(len(available), 15)
-        self.assertEqual(len(covered), 12)
-        self.assertEqual(total, 1230)
+                self.assertEqual(word.paragraphs[2].text, title)
+        self.assertEqual(plan_ids, expected.keys())
+        self.assertEqual(len(plan_ids), 82)
+        self.assertEqual(len(covered), 102)
+        self.assertEqual(total, 5760)
