@@ -188,6 +188,9 @@ class ExistingCoverLayoutTests(unittest.TestCase):
                 with open_pdf(path) as pdf:
                     text = "\n".join(page.get_text() for page in list(pdf)[1:])
                     self.assertTrue(any("Amiri" in font[3] for font in pdf[1].get_fonts()))
+                teacher_text = " ".join(text.lower().split())
+                self.assertNotIn("pembetulan diaudit:", teacher_text)
+                self.assertNotIn("tiada halaman buku teks yang direka", teacher_text)
                 found = ranges.findall(text)
                 self.assertEqual(len(found), range_count)
                 self.assertTrue(all(int(start) <= int(end) for start, end in found))

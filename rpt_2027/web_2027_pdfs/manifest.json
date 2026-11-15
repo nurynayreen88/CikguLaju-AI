@@ -3,7 +3,7 @@
   "year": 2027,
   "status": "DRAF_USER_VISIBLE_NOT_ACADEMIC_FINAL",
   "count": 56,
-  "pages": 1526,
+  "pages": 1528,
   "files": {
     "bahasa_arab:2": {
       "path": "bahasa_arab/tahun_2.pdf",
@@ -227,17 +227,17 @@
     },
     "pendidikan_islam:2": {
       "path": "pendidikan_islam/tahun_2.pdf",
-      "sha256": "d4df3bc3262f8cc637f69512a1b30117b5e5515c602bf49e85819bb76c5a8f92",
-      "bytes": 281721,
-      "pages": 38,
+      "sha256": "4893e36b0f4ab880a2c5db9460a68118d7a2104927a9e0df32773d4a0f30f322",
+      "bytes": 403608,
+      "pages": 41,
       "status": "DRAF",
       "source_stage": "PI_JAWI_VERSE_ORDER_PR751_WITH_EXISTING_WEB_WEEK_PLAN",
       "full_school_closures_rescheduled": true
     },
     "pendidikan_islam:3": {
       "path": "pendidikan_islam/tahun_3.pdf",
-      "sha256": "9ec11043c066ebd044e436213ee084d00c67a8cd34ded6a28e581b3e5303611f",
-      "bytes": 358958,
+      "sha256": "4223dce7b1fd5dd371900d378e06214b8f58761baf72ef93e5ec6cde8f8ef95e",
+      "bytes": 513880,
       "pages": 41,
       "status": "DRAF",
       "source_stage": "PI_JAWI_VERSE_ORDER_PR751_WITH_EXISTING_WEB_WEEK_PLAN",
@@ -245,27 +245,27 @@
     },
     "pendidikan_islam:4": {
       "path": "pendidikan_islam/tahun_4.pdf",
-      "sha256": "9192598d291685b6710ae32f111086ef6898d4e57a51fa48489eb0a142b39fe3",
-      "bytes": 363389,
-      "pages": 60,
+      "sha256": "ef931d10758f1c0256d9425a35a32e18d91a703b2e27fbf68e7b82fda2225958",
+      "bytes": 519239,
+      "pages": 58,
       "status": "DRAF",
       "source_stage": "PI_JAWI_VERSE_ORDER_PR751_WITH_EXISTING_WEB_WEEK_PLAN",
       "full_school_closures_rescheduled": true
     },
     "pendidikan_islam:5": {
       "path": "pendidikan_islam/tahun_5.pdf",
-      "sha256": "f17c12dd3fef1d6b20954c9e868d79f20db8acd77d2bf45462156e21b8a8e570",
-      "bytes": 354402,
-      "pages": 45,
+      "sha256": "9b2a99d2c63051c54a77280eb8cec151f6d66013ad34818dc3d9757682c119c2",
+      "bytes": 498298,
+      "pages": 44,
       "status": "DRAF",
       "source_stage": "PI_JAWI_VERSE_ORDER_PR751_WITH_EXISTING_WEB_WEEK_PLAN",
       "full_school_closures_rescheduled": true
     },
     "pendidikan_islam:6": {
       "path": "pendidikan_islam/tahun_6.pdf",
-      "sha256": "56fd2bfee5367c681a89744a1fefb70d83c20ff01bc56fa5c06468fc21e69f07",
-      "bytes": 354334,
-      "pages": 38,
+      "sha256": "f7b8e71d88bd2f02246a9f3fe3460ba5fb3561e88e5d4c22e14d262206f0b98b",
+      "bytes": 496397,
+      "pages": 40,
       "status": "DRAF",
       "source_stage": "PI_JAWI_VERSE_ORDER_PR751_WITH_EXISTING_WEB_WEEK_PLAN",
       "full_school_closures_rescheduled": true
