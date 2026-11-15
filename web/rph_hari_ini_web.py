@@ -11,8 +11,10 @@ from pathlib import Path
 import re
 from zoneinfo import ZoneInfo
 from flask import Blueprint, jsonify, request
+from itsdangerous import BadSignature
 
-from web.teacher_profile_routes import _auth
+from web.rph_today_progress import attach_progress, lesson_signer, read_progress, save_completion
+from web.teacher_profile_routes import _auth, _body
 from web.teacher_profile_store import (
     ProfileUnavailable, ProfileValidation, STATES, get_profile, get_schedule,
 )
@@ -190,8 +192,9 @@ def hari_ini():
             len(request.args.getlist(k)) != 1 for k in request.args):
         return jsonify({"error":"Parameter tarikh tidak sah"}),400
     raw = request.args.get("date")
+    today = malaysia_today()
     if raw is None:
-        target = malaysia_today()
+        target = today
     else:
         try:
             if not re.fullmatch(r"20\d{2}-\d{2}-\d{2}", raw):
@@ -202,9 +205,60 @@ def hari_ini():
     try:
         profile = get_profile(config["supabase_url"],config["supabase_key"],uid)
         schedule = get_schedule(config["supabase_url"],config["supabase_key"],uid)
-        result = day_payload(profile,schedule,target)
+        result = day_payload(profile,schedule,target,today=today)
     except ProfileValidation as exc:
         return jsonify({"error":str(exc)}),400
     except ProfileUnavailable:
         return jsonify({"error":"Jadual guru belum dapat dibaca. Data lama tidak diubah."}),503
+    result["progress_editable"] = target <= today
+    if any(slot["can_prepare"] for slot in result["entries"]):
+        try:
+            attach_progress(result, read_progress(config, uid, result["date"]))
+        except ProfileUnavailable:
+            result["progress_unavailable"] = True
     return jsonify(result)
+
+
+@bp.post("/api/web/rph/hari-ini/completion")
+def complete_pdp():
+    config, uid, error = _auth()
+    if error is not None:
+        return error
+    try:
+        body = _body(limit=2048)
+        if set(body) != {"date", "start", "class_name", "subject_code", "component", "token"}:
+            raise ProfileValidation("Pilihan PdP tidak sah")
+        target = date.fromisoformat(body["date"])
+        today = malaysia_today()
+        if target.isoformat() != body["date"] or target > today:
+            raise ProfileValidation("Rekod PdP hanya boleh disimpan pada tarikh PdP atau selepasnya")
+        component, token = body["component"], body["token"]
+        if component not in ("", "PJ", "PK") or (token is not None and not isinstance(token, str)):
+            raise ProfileValidation("Pilihan PdP tidak sah")
+        profile = get_profile(config["supabase_url"], config["supabase_key"], uid)
+        schedule = get_schedule(config["supabase_url"], config["supabase_key"], uid)
+        result = day_payload(profile, schedule, target, today=today)
+        slot = next((entry for entry in result["entries"] if entry["can_prepare"]
+                     and all(entry[key] == body[key] for key in ("start", "class_name", "subject_code"))), None)
+        if (slot is None or (slot["subject_code"] == "PJPK") != bool(component)
+                or (slot["component"] and slot["component"] != component)):
+            raise ProfileValidation("Slot ini tiada dalam jadual. Muat semula jadual waktu.")
+        number = None
+        if token is not None:
+            record = lesson_signer(config).loads(token, max_age=28800)
+            if (not isinstance(record, list) or len(record) != 5
+                    or record[:4] != [uid, slot["year"], slot["subject_code"], component]
+                    or type(record[4]) is not int or not 1 <= record[4] <= 999):
+                raise ProfileValidation("Lesson/PdP ini tidak sepadan dengan slot jadual")
+            number = record[4]
+        save_completion(config, uid, result["date"], slot, component, number)
+        attach_progress(result, read_progress(config, uid, result["date"]))
+    except ProfileValidation as exc:
+        return jsonify({"error": str(exc)}), 400
+    except BadSignature:
+        return jsonify({"error": "Pilihan Lesson/PdP telah luput. Muat semula jadual waktu."}), 400
+    except (ValueError, TypeError):
+        return jsonify({"error": "Pilihan PdP tidak sah"}), 400
+    except ProfileUnavailable:
+        return jsonify({"error": "Rekod PdP belum dapat disahkan. Muat semula untuk menyemaknya."}), 503
+    return jsonify({"entries": result["entries"]})
