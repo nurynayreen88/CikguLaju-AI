@@ -3,10 +3,10 @@
 **DALAM SEMAKAN.** Pemetaan sumber bagi 20 unit dan halaman cetak 1–105.
 
 - [Buku teks Bahasa Semai Tahun 2](https://fliphtml5.com/bbsbl/utxa/Bahasa_Semai_Tahun_2/). Nombor paparan flipbook untuk halaman kandungan ialah halaman cetak tambah 8.
-- [Indeks DSKP SK Tahun 2](https://sites.google.com/moe-dl.edu.my/sigujin/lain-lain/dskp/dskp-sekolah-rendah/dskp-sk-tahun-2) dan [Dokumen Penjajaran Kurikulum 2.0](https://www.tcer.my/wp-content/uploads/2021/01/20_DPK-2.0-Bahasa-Semai-Tahun-2.pdf). Padanan semakan silang menggunakan kod SP induk DPK 2.0. Pengesahan takrif dan pecahan SP masih perlu dibuat dengan DSKP asal.
+- [DSKP Bahasa Semai Tahun 2, BPK KPM, April 2016](https://drive.google.com/file/d/1V36G7O3o0iJdlQarM5Sa6Wkgm-NWIChI/view) disemak terus. Dokumen Penjajaran 2.0 digunakan sebagai rujukan tambahan.
 - [E-Katalog Buku Teks KPM](https://moe.gov.my/storage/files/shares/Banner/E-Katalog%20Buku%20Teks%20KPM.pdf), halaman cetak 30. Kod DBP bagi buku teks ialah `BT232003` dan bagi Buku Aktiviti ialah `BA232001`.
 
-Semakan struktur meliputi 105 halaman, 45 kod SP induk daripada buku teks dan 46 rujukan trek unik. 44 kod SP induk turut ditemui dalam DPK 2.0. SP 1.2.3 tercetak pada ms. 22 dan belum dapat dipadankan dengan DPK 2.0. Sahkan dengan DSKP asal. Halaman 42 dan 74 ialah pengukuhan Tema 1 dan 2. Halaman 1, 43 dan 75 ialah muka pembuka tema. Lima halaman ini direkod pada peringkat tema. Nombor rujukan audio pada halaman unit bermula pada 2 dan berakhir pada 47. Susunan utama dan sampingan mengikuti turutan kod yang tercetak.
+Semakan struktur meliputi 105 halaman dan 46 rujukan trek unik. Kesemua 45 kod SP induk dalam indeks buku teks sepadan dengan set kod DSKP asal. Kod `1.2.3` pada ms. 22 sah untuk mendengar dan memahami perkataan yang mengandungi suku kata tertutup. Nota guru pada halaman tersebut menyebut suku kata tertutup. Halaman 42 dan 74 ialah pengukuhan Tema 1 dan 2. Halaman 1, 43 dan 75 ialah muka pembuka tema. Lima halaman ini direkod pada peringkat tema. Rujukan trek yang ditemui pada halaman unit meliputi nombor 2–47.
 
 ## Tema 1 — Duniak Eng
 
@@ -220,4 +220,4 @@ Muka pembuka tema ms. 75.
 | 104 | 4.1 / 2.1 | 4.1.2 | 2.1.1 |  | 47 |
 | 105 | 5.4 / 3.3 | 5.4.1 | 3.3.1 | 76 |  |
 
-Susulan penyediaan bahan meliputi semakan RPT sekolah dan DSKP asal, fail Buku Aktiviti serta padanan audio sebenar sebelum membina RPT 2027 dan RPH.
+Susulan penyediaan bahan meliputi semakan RPT sekolah, pecahan dan takrif SP mengikut aktiviti, fail Buku Aktiviti serta padanan audio sebenar sebelum membina RPT 2027 dan RPH.
