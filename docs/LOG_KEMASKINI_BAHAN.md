@@ -118,4 +118,4 @@ Setiap sesi pembaikan baharu perlu merekodkan jenis bahan, rujukan PR, keputusan
 ## 15 November 2026 — RPT Pendidikan Islam Tahun 2–6 Web dan Telegram
 
 - Web dalam semakan melalui [#775](https://github.com/nurynayreen88/CikguLaju-AI/pull/775). Lima PDF Amiri mengekalkan agihan 696 PdP dan muka depan profil asal. Padanan katalog, 537 julat, ujian isian profil dan semakan 56 muka depan lulus. Muat turun produksi belum disahkan.
-- Telegram **HOLD**. 519 julat dibetulkan pada lima PDF asal dengan lajur aktiviti dan pentaksiran sedia ada. Agihan cuti M06 dan M19 serta pengesahan produksi masih perlu diselesaikan. [Audit Telegram](../audits/pi_rpt2027_telegram_jawi_20261115.md)
+- Telegram **HOLD**. 519 julat dibetulkan pada lima PDF asal dengan lajur aktiviti dan pentaksiran sedia ada. Agihan 696 PdP dan cuti M06/M19 diselaraskan dengan Web dalam [#776](https://github.com/nurynayreen88/CikguLaju-AI/pull/776). Pengesahan akademik dan muat turun produksi masih tertangguh. [Audit Telegram](../audits/pi_rpt2027_telegram_jawi_20261115.md)
