@@ -82,6 +82,18 @@ class AutoLogoTests(unittest.TestCase):
         self.assertEqual(len(opener.requests),1)
         self.assertIn("/school-logo-catalog/",opener.requests[0])
 
+    def test_alor_mengkudu_uses_bundled_png_without_catalog_request(self):
+        from web.school_logo_store import normalized_png
+
+        with patch("web.school_logo_candidate.school_by_code",
+                   return_value={"school_code": "KBA2024", "school_level": "Rendah"}), \
+             patch("web.school_logo_candidate._read") as registry:
+            data, mime = logo_candidate("https://db.example", "fake", "KBA2024")
+        self.assertEqual(mime, "image/png")
+        self.assertEqual(normalized_png(data), data)
+        self.assertEqual(data[16:24], b"\x00\x00\x02\x00" * 2)
+        registry.assert_not_called()
+
     def test_restored_logo_has_priority_and_original_is_a_fallback(self):
         restored = b"\x89PNG\r\n\x1a\nrestored"
         old = b"\x89PNG\r\n\x1a\noriginal"

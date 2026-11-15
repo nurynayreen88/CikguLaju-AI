@@ -1,9 +1,11 @@
 """User-scoped candidate school logos from GovTech Sekolahku's public fallback files.
 
 The authenticated teacher's saved school code selects the candidate from the
-private Storage catalog, with the pinned source as a fallback for missing files.
+school-specific corrections and the private Storage catalog, with the pinned
+source as a fallback for missing files.
 The candidate is kept separate from the teacher's personal logo.
 """
+from pathlib import Path
 import re
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlsplit
@@ -23,6 +25,9 @@ UPSTREAM_ROOT = (
 MAX_SOURCE_BYTES = 2 * 1024 * 1024
 CODE = re.compile(r"[A-Z0-9]{6,12}\Z")
 MIME = {"jpg": "image/jpeg", "png": "image/png", "gif": "image/gif"}
+# SK Alor Mengkudu badge from its Musolla website.
+# https://surauskam.wixsite.com/asiss2017
+BUNDLED_LOGOS = {"KBA2024": Path(__file__).with_name("school_logo_assets") / "KBA2024.png"}
 RESTORED_VERSION = "restored-512-v1"
 RESTORED_CODES = frozenset({"CBA6024", "JBC1051", "XBA1102", "XBA4376"})
 
@@ -47,6 +52,8 @@ def logo_candidate(url, service_key, school_code, *, opener=None):
         raise LogoSourceUnavailable("Direktori sekolah belum dapat disemak") from None
     if school.get("school_level") != "Rendah":
         return None
+    if school_code in BUNDLED_LOGOS:
+        return BUNDLED_LOGOS[school_code].read_bytes(), MIME["png"]
     if school_code in RESTORED_CODES:
         try:
             restored = _catalog_image(
