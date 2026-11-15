@@ -6,7 +6,7 @@ Status: AUDIT / DALAM PENYEDIAAN. Tiada bahan Word/PDF baharu disahkan LIVE mela
 - Utamakan SJKC Tahun 2, kemudian Tahun 1 dan Tahun 3–6.
 - Asingkan laluan kurikulum sekolah jenis kebangsaan daripada SK; jangan guna DSKP Bahasa Cina SK untuk SJKC.
 - Kekalkan semua pautan buku, audio, data RPH, kuota, jadual dan bahan SK sedia ada.
-- Rangka Iban 48, Kadazandusun 48, Semai 30 (jumlah 126) dalam PR #779 kekal HOLD sehingga semakan guru, agihan masa, Word/PDF dan ujian Web/Telegram. Jangan tandakan READY secara automatik.
+- Menu Web memaparkan Bahasa Iban, Kadazandusun dan Semai dengan label Dalam Penyediaan melalui PR #778. Rangka dan pemetaan kurikulum disimpan dalam PR #779 dan belum mempunyai janaan Word/PDF aktif.
 
 ## Turutan audit SJKC
 1. Bahasa Cina SJKC Tahun 2 (华文): DSKP asal, Dokumen Penjajaran 2.0, RPT 2026, buku teks, buku aktiviti jilid 1/2; petakan unit → tajuk → SK/SP → halaman → PdP.
@@ -21,6 +21,10 @@ Status: AUDIT / DALAM PENYEDIAAN. Tiada bahan Word/PDF baharu disahkan LIVE mela
 - Dokumen Penjajaran 2.0: https://www.tcer.my/wp-content/uploads/2021/01/05_DPK-2.0-Bahasa-Cina-SJKC-Tahun-2.pdf
 - E-Katalog buku teks KPM: https://moe.gov.my/storage/files/shares/Banner/E-Katalog%20Buku%20Teks%20KPM.pdf
 - Rujukan koleksi buku teks Tahun 2 SJKC: https://www.sumbersekolah.com/p/download-buku-teks-digital-tahun-2-kssr.html
+
+## Kemajuan Bahasa Cina
+
+[Pemetaan dan 15 rangka PdP](sjkc_bahasa_cina_tahun_2_pemetaan_20261116.md) merangkumi 识字一 dan dua unit pertama. Buku Aktiviti Jilid 1 ms. 1–13 diperiksa dan bacaan peluasan pada Buku Teks ms. 11 dicatat.
 
 ## Kriteria sebelum diterbitkan
 - Padanan SP dan halaman bercetak disahkan secara individu; tiada RPH generik.
