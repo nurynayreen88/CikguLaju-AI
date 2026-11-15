@@ -6,7 +6,6 @@
 | Tahun 2 / 003 | Paparkan SP 6.1.1 dan 6.1.2 sekali setiap satu. Murid membaca tiga perkataan tiga suku kata dan membina dua perkataan dengan kad. |
 | Tahun 3 / 001 dan 005 | Pulihkan turutan ayat Surah al-Kafirun kepada 1 hingga 3 dan 4 hingga 5 seperti RPT rujukan. Gunakan latihan bacaan dan rekod sebutan, turutan serta tajwid secara individu. |
 | Tahun 3 / 004 | SP 7.1.1 memberi fokus kepada bacaan petikan berimbuhan awalan. Gunakan tiga perkataan sasaran dan rekod bacaan individu. Betulkan huruf akhir «peladang» kepada ڤلادڠ. |
-
 | Tahun 4 / 004 | Asingkan SP 7.1.1 dan 7.1.2. Murid mengecam kedudukan hamzah tiga suku dan membaca tiga perkataan. |
 | Tahun 5 / 004 | Asingkan SP 7.1.1 dan 7.1.2. Murid membaca petikan amalan hidup sihat dan membina satu ayat Jawi. |
 | Tahun 6 / 004 | Asingkan SP 7.1.1 dan 7.1.2. Murid membaca petikan sains dan teknologi dan membina ayat Jawi tentang fungsi rekaan. |
