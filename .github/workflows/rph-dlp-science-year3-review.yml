@@ -1,0 +1,24 @@
+name: RPH DLP Year 3 Review
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'staging/dlp/year3/*.md'
+      - 'rpt_2027/dlp/CikguLaju_RPT_DLP_2027_Mathematics_Year_3.docx'
+      - 'rpt_2027/dlp/CikguLaju_RPT_DLP_2027_Science_Year_3.docx'
+      - 'dlp_year2_rph.py'
+      - 'tests/test_dlp_science_year3_review.py'
+      - '.github/workflows/rph-dlp-science-year3-review.yml'
+permissions:
+  contents: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install python-docx reportlab pypdf
+      - run: python -m unittest tests.test_dlp_science_year3_review
