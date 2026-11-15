@@ -548,6 +548,183 @@ Bagi sesi RPT dengan julat SP, PdP 26 memilih SP 3.1.1 pada ms. 37 untuk penguku
 - **Penutup (5 minit).** Murid membaca satu ayat dan pasangan menunjukkan aksi yang dimaksudkan.
 - **Bahan.** Buku teks ms. 40, rujukan cetak Buku Aktiviti ms. 35, rujukan cetak trek 23.
 
+## Rangka RPH bagi PdP 30–48
+
+Kesemua 48 rangka mengikut turutan draf RPT Bahasa Iban Tahun 2 bagi Sarawak. Draf menggunakan 60 minit setiap sesi, termasuk enam sesi tambahan. Halaman sasaran dipilih daripada cadangan RPT berdasarkan padanan aktiviti dan SP. Rangka PdP 42 memilih 2.2.1 (ii) dan ms. 75 untuk pengukuhan pemahaman. PdP 47 memilih 1.1.1 (i) dan ms. 65 untuk pengukuhan mendengar. Kedua-dua pilihan mengkhususkan julat SP dalam RPT dan menunggu semakan guru.
+
+Pada ms. 48, buku teks mencetak 5.1.6 (i) dan nota gurunya turut menyebut arah. [Dokumen Penjajaran Bahasa Iban Tahun 2](https://anyflip.com/vghzy/lenn/basic), ms. 11, membezakan kata tempat bagi 5.1.6 (i) dan jenis kata tempat yang turut meliputi arah bagi 5.1.6 (ii). PdP 35 menilai kata tempat berdasarkan peta. Halaman 45, 46 dan 95 kekal dalam semakan padanan SP.
+
+### PdP 30 — Pengerami Hari Gawai SK Balai Ruai (ms. 41)
+
+- **SK 1.4 · SP 1.4.1 (i).** Murid menyebut sekurang-kurangnya empat daripada lima perkataan sasaran yang mengandungi konsonan berturutan atau vokal terbuka dengan sebutan yang betul.
+- **Set induksi (5 minit).** Guru paparkan gambar sambutan dan minta murid namakan dua pakaian yang kelihatan.
+- **Aktiviti utama (35 minit).** Guru pilih perkataan daripada petikan dan modelkan sebutan atau rujuk trek 24 jika tersedia. Murid tandakan bunyi sasaran, ulang secara berpasangan dan baca perkataan itu dalam ayat daripada petikan.
+- **Pengukuhan dan PBD (15 minit).** Murid baca lima kad perkataan. Guru catat sebutan tepat dan beri peluang murid mencuba semula satu perkataan selepas bimbingan.
+- **Penutup (5 minit).** Murid sebut satu perkataan sasaran sambil menunjukkan konteksnya dalam gambar atau petikan.
+- **Bahan.** Buku teks ms. 41, rujukan cetak Buku Aktiviti ms. 37, rujukan cetak trek 24.
+
+### PdP 31 — Begulai Sejalai dan dialog Selva (ms. 42–43)
+
+- **SK 2.4 · SP 2.4.2.** Murid membaca semula satu rangkap dan satu dialog pendek dengan turutan serta intonasi yang sesuai pada sekurang-kurangnya tiga daripada empat giliran.
+- **Set induksi (5 minit).** Guru tunjuk tajuk lagu dan gambar sambutan. Murid jangka tema lagu.
+- **Aktiviti utama (35 minit).** Guru modelkan satu rangkap dan satu pertukaran dialog daripada halaman sasaran. Murid membaca semula rangkap secara berkumpulan, kemudian membaca dialog secara berpasangan sambil menandakan kesan tanda soal dan sapaan pada intonasi.
+- **Pengukuhan dan PBD (15 minit).** Guru dengar empat giliran dialog bagi setiap pasangan dan semak ketepatan turutan serta intonasi. Murid mengulang satu giliran selepas maklum balas.
+- **Penutup (5 minit).** Murid menyebut satu persamaan ketika membaca lagu dan dialog secara bergilir.
+- **Bahan.** Buku teks ms. 42–43, rujukan cetak Buku Aktiviti ms. 38–39 (ms. 42), rujukan cetak trek 25 (ms. 42), 26 (ms. 43).
+
+### PdP 32 — Pelanduk Seduai Tekura Nipu Antu Gerasi (ms. 36)
+
+- **SK 3.1 · SP 3.1.1.** Murid memenggal, menyebut dan menulis dengan tepat sekurang-kurangnya empat daripada lima perkataan bercetak warna.
+- **Set induksi (5 minit).** Guru baca tajuk dan minta murid kenal pasti watak cerita.
+- **Aktiviti utama (35 minit).** Guru modelkan pemenggalan satu perkataan pada ms. 36. Pasangan menyusun kad suku kata, membaca perkataan dalam ayat dan mencari petunjuk makna daripada situasi cerita. Murid tulis perkataan lengkap dan banding dengan teks.
+- **Pengukuhan dan PBD (15 minit).** Guru beri lima perkataan secara lisan. Murid memenggal dan menulis secara individu. Semak turutan suku kata dan ejaan.
+- **Penutup (5 minit).** Murid sebut satu perkataan yang telah ditulis dan terangkan maknanya berdasarkan cerita.
+- **Bahan.** Buku teks ms. 36, rujukan cetak Buku Aktiviti ms. 32, rujukan cetak trek 19.
+
+### PdP 33 — Dinai Menidit Dinai (ms. 54)
+
+- **SK 4.1 · SP 4.1.1 (i), (ii), (iii), (iv).** Selepas mendengar contoh, murid menyampaikan satu rangkap leka main mengikut turutan dengan intonasi yang sesuai serta satu gerak yang menggambarkan maksud rangkap.
+- **Set induksi (5 minit).** Guru tunjuk gambar kisar tradisional. Murid nyatakan kegunaannya berdasarkan pengetahuan mereka.
+- **Aktiviti utama (35 minit).** Guru perdengarkan trek 30 jika tersedia atau sampaikan leka main daripada ms. 54. Murid ulang mengikut baris dan bincangkan petunjuk tentang alatan lama. Kumpulan berlatih satu rangkap dengan sebutan, intonasi dan gerak yang dipilih.
+- **Pengukuhan dan PBD (15 minit).** Kumpulan menyampaikan rangkap. Guru catat ketepatan urutan, intonasi dan gerak. Murid nyatakan satu petunjuk tentang alatan yang disebut.
+- **Penutup (5 minit).** Murid pilih satu baris dan ulang bersama kumpulan.
+- **Bahan.** Buku teks ms. 54, rujukan cetak Buku Aktiviti ms. 49, rujukan cetak trek 30.
+
+### PdP 34 — Jaku Penempat — Gambar tempat (ms. 47)
+
+- **SK 5.1 · SP 5.1.6 (i).** Murid memilih kata tempat yang sesuai daripada contoh buku teks untuk melengkapkan sekurang-kurangnya empat daripada lima ayat bergambar.
+- **Set induksi (5 minit).** Guru tunjuk kad gambar objek di beberapa tempat. Murid sebut kedudukan objek yang dipilih.
+- **Aktiviti utama (35 minit).** Guru modelkan kata tempat pada ms. 47 dan menunjukkan perbezaan berdasarkan gambar. Pasangan memadankan gambar dengan kad kata tempat, kemudian menggantikan satu unsur gambar dan menyebut lokasi baharu.
+- **Pengukuhan dan PBD (15 minit).** Murid melengkapkan lima ayat bergambar. Guru semak padanan kata tempat dan minta murid menjelaskan satu jawapan.
+- **Penutup (5 minit).** Murid menyebut lokasi satu objek di dalam kelas menggunakan kata tempat yang sesuai.
+- **Bahan.** Buku teks ms. 47, rujukan cetak Buku Aktiviti ms. 43.
+
+### PdP 35 — Jaku Penempat — Lokasi pada peta (ms. 48)
+
+- **SK 5.1 · SP 5.1.6 (i).** Murid menggunakan kata tempat yang sesuai untuk menerangkan sekurang-kurangnya tiga daripada empat lokasi pada peta buku teks.
+- **Set induksi (5 minit).** Guru paparkan peta ms. 48. Murid tunjuk kedudukan sekolah dan sebuah mercu tanda.
+- **Aktiviti utama (35 minit).** Guru gunakan peta untuk menunjukkan lokasi beberapa tempat. Pasangan bergilir bertanya di mana tempat yang dipilih dan menjawab menggunakan kata tempat. Murid semak dengan menunjuk mercu tanda yang disebut.
+- **Pengukuhan dan PBD (15 minit).** Guru beri empat kad lokasi. Murid menyatakan kedudukan setiap lokasi berdasarkan peta. Guru menilai pemilihan kata tempat dan ketepatan mercu tanda.
+- **Penutup (5 minit).** Murid beritahu satu lokasi pada peta menggunakan ayat yang telah disemak.
+- **Bahan.** Buku teks ms. 48, rujukan cetak Buku Aktiviti ms. 43.
+
+### PdP 36 — Kereban Asal (ms. 49)
+
+- **SK 1.5 · SP 1.5.1 (i).** Murid menyatakan kegunaan sekurang-kurangnya tiga daripada empat peralatan tradisional dan memberi satu respons yang berkaitan semasa perbualan.
+- **Set induksi (5 minit).** Guru tunjuk gambar satu alat daripada ms. 49. Murid jangka kegunaannya.
+- **Aktiviti utama (35 minit).** Guru bimbing murid menamakan alatan bergambar dan mengaitkannya dengan kegiatan harian. Pasangan bergilir menyoal dan menerangkan kegunaan kad alatan. Guru gunakan objek atau kad gambar untuk membetulkan padanan.
+- **Pengukuhan dan PBD (15 minit).** Guru tunjuk empat gambar secara berasingan. Murid terangkan kegunaan dan jawab satu soalan susulan. Catat jawapan yang tepat dan berkaitan.
+- **Penutup (5 minit).** Murid pilih satu peralatan yang ingin diterangkan kepada ahli keluarga.
+- **Bahan.** Buku teks ms. 49, rujukan cetak Buku Aktiviti ms. 45.
+
+### PdP 37 — Chara Nganyam Chapan dan Nemuai Ngagai Muzium (ms. 50–51)
+
+- **SK 2.4 · SP 2.4.3.** Murid mengenal pasti dua pengajaran daripada bacaan dan menyokong sekurang-kurangnya satu pengajaran dengan contoh daripada petikan.
+- **Set induksi (5 minit).** Guru tunjuk gambar chapan dan kisar. Murid bezakan kegunaan kedua-dua alat.
+- **Aktiviti utama (35 minit).** Guru bimbing bacaan dialog ms. 50–51. Pasangan memadankan peralatan dengan fungsi, kemudian menanda ujaran atau tindakan watak yang menunjukkan penghargaan terhadap warisan. Murid bandingkan dapatan dengan pasangan lain.
+- **Pengukuhan dan PBD (15 minit).** Secara individu, murid nyatakan dua pengajaran dan petik satu peristiwa atau ujaran sebagai bukti. Guru semak kesesuaian pengajaran dengan teks.
+- **Penutup (5 minit).** Murid kongsi satu cara menjaga alat tradisional atau bahan muzium.
+- **Bahan.** Buku teks ms. 50–51, rujukan cetak Buku Aktiviti ms. 46 (ms. 50), rujukan cetak trek 28 (ms. 50), 29 (ms. 51).
+
+### PdP 38 — Chara Nyaga Pemeresi Diri — Pengukuhan tulisan (ms. 5)
+
+- **SK 3.1 · SP 3.1.2.** Murid menyalin suku kata dan menggabungkannya menjadi sekurang-kurangnya empat daripada lima perkataan penjagaan diri dengan ejaan yang tepat.
+- **Set induksi (5 minit).** Guru tunjuk dua ilustrasi penjagaan diri. Murid namakan perbuatan yang dilakukan.
+- **Aktiviti utama (35 minit).** Guru modelkan cara menyalin dan menyusun suku kata daripada ms. 5. Pasangan memadankan kad suku kata dengan gambar dan menulis perkataan lengkap. Murid semak semula dengan membandingkan perkataan dengan gambar.
+- **Pengukuhan dan PBD (15 minit).** Guru edarkan lima gambar dan kad suku kata bercampur. Murid tulis perkataan yang sepadan. Guru catat urutan dan ejaan yang tepat.
+- **Penutup (5 minit).** Murid sebut satu perkataan dan mengaitkannya dengan satu amalan penjagaan diri.
+- **Bahan.** Buku teks ms. 5.
+
+### PdP 39 — Ramban Lantang Ati (ms. 61)
+
+- **SK 4.1 · SP 4.1.2.** Murid menyusun sekurang-kurangnya tiga daripada empat frasa daripada ramban mengikut turutan asal.
+- **Set induksi (5 minit).** Guru tunjuk gambar perjalanan keluarga dan minta murid berkongsi satu tempat yang pernah mereka lawati.
+- **Aktiviti utama (35 minit).** Guru bacakan ramban atau gunakan trek 35 jika tersedia. Murid mengulang bahagian terpilih dalam kumpulan dan mengenal pasti petunjuk turutan tempat. Pasangan menyusun kad frasa dan menyemak semula dengan teks.
+- **Pengukuhan dan PBD (15 minit).** Murid menyusun empat kad frasa secara individu dan membaca susunan yang dipilih. Guru semak kedudukan sekurang-kurangnya tiga frasa.
+- **Penutup (5 minit).** Murid sebut satu frasa serta frasa yang hadir selepasnya dalam ramban.
+- **Bahan.** Buku teks ms. 61, rujukan cetak Buku Aktiviti ms. 56, rujukan cetak trek 35.
+
+### PdP 40 — Umai Aki — Jaku Perintah (ms. 56)
+
+- **SK 5.1 · SP 5.1.7.** Murid mengenal pasti sekurang-kurangnya empat daripada lima ujaran perintah dan menggunakan satu arahan yang sesuai dengan situasi.
+- **Set induksi (5 minit).** Guru paparkan gambar keluarga di kebun dan tanya arahan yang biasa diberikan sebelum berjalan di kawasan kebun.
+- **Aktiviti utama (35 minit).** Guru bimbing bacaan ms. 56 atau gunakan trek 32 jika tersedia. Pasangan menandakan ujaran perintah dan membezakan arahan daripada pernyataan biasa. Murid berlatih memberi satu arahan mengikut situasi yang diberikan guru.
+- **Pengukuhan dan PBD (15 minit).** Murid mengelaskan lima ujaran dan membina satu arahan sesuai. Guru semak pengelasan serta kejelasan arahan.
+- **Penutup (5 minit).** Murid baca arahan sendiri dan terangkan situasi yang sesuai untuk menggunakannya.
+- **Bahan.** Buku teks ms. 56, rujukan cetak Buku Aktiviti ms. 50, rujukan cetak trek 32.
+
+### PdP 41 — Taman Negara Bukit Lambir (ms. 57)
+
+- **SK 1.6 · SP 1.6.1.** Murid menjawab sekurang-kurangnya tiga daripada empat soalan lisan mengenai tempat, jarak atau gambar dalam dialog.
+- **Set induksi (5 minit).** Guru tunjuk ilustrasi taman negara dan minta murid nyatakan apa yang mereka ingin tahu.
+- **Aktiviti utama (35 minit).** Guru bacakan dialog daripada ms. 57 dan modelkan jawapan bagi satu soalan. Pasangan bergilir bertanya tentang tempat dalam gambar dan menjawab menggunakan maklumat daripada teks.
+- **Pengukuhan dan PBD (15 minit).** Guru beri empat soalan satu demi satu. Murid jawab menggunakan maklumat dalam dialog. Guru semak ketepatan dan kesesuaian respons.
+- **Penutup (5 minit).** Murid tanya satu soalan tentang tempat lain dan seorang rakan memberi respons.
+- **Bahan.** Buku teks ms. 57, rujukan cetak Buku Aktiviti ms. 53.
+
+### PdP 42 — Proses Nepan Bilun — Pengukuhan pemahaman (ms. 75)
+
+- **SK 2.2 · SP 2.2.1 (ii).** Murid memberikan sekurang-kurangnya tiga daripada empat respons tepat kepada soalan berdasarkan carta proses menaiki kapal terbang.
+- **Set induksi (5 minit).** Guru tunjuk gambar lapangan terbang. Murid jangka satu langkah sebelum menaiki kapal terbang.
+- **Aktiviti utama (35 minit).** Guru bimbing murid membaca label dan mengesan turutan dalam carta ms. 75. Pasangan menyusun kad langkah berdasarkan carta dan menyoal tentang perkara yang berlaku sebelum atau selepas langkah yang dipilih.
+- **Pengukuhan dan PBD (15 minit).** Murid jawab empat soalan berdasarkan carta secara individu. Guru menyemak ketepatan respons dan minta murid tunjuk bukti bagi satu jawapan.
+- **Penutup (5 minit).** Murid menyatakan satu langkah dan langkah yang menyusulinya.
+- **Bahan.** Buku teks ms. 75, rujukan cetak Buku Aktiviti ms. 70.
+
+### PdP 43 — Kereban Komunikasyen — Tunda-tulis (ms. 84)
+
+- **SK 3.2 · SP 3.2.1.** Murid menulis semula sekurang-kurangnya tiga daripada empat ayat pendek daripada bahan perbandingan komunikasi dengan perkataan dan turutan tepat.
+- **Set induksi (5 minit).** Guru tunjuk gambar alat komunikasi lama dan baharu. Murid sebut fungsi satu alat.
+- **Aktiviti utama (35 minit).** Guru bimbing bacaan perbandingan ms. 84 dan pilih empat ayat pendek yang sesuai. Murid mengamalkan teknik lihat, baca, tutup dan tulis. Pasangan menyemak perkataan, turutan ayat dan tanda baca berdasarkan teks.
+- **Pengukuhan dan PBD (15 minit).** Guru paparkan empat ayat satu demi satu, tutup dan beri masa menulis. Catat ketepatan perkataan dan susunan ayat.
+- **Penutup (5 minit).** Murid membaca ayat yang sudah disemak dan menyatakan alat yang diterangkan.
+- **Bahan.** Buku teks ms. 84, rujukan cetak Buku Aktiviti ms. 80, rujukan cetak trek 48.
+
+### PdP 44 — Jaku Silup (ms. 70)
+
+- **SK 4.2 · SP 4.2.1 (ii).** Murid memadankan sekurang-kurangnya empat daripada lima ungkapan dengan maksud yang sesuai dan menerangkan satu padanan melalui contoh situasi.
+- **Set induksi (5 minit).** Guru sebut satu ungkapan daripada ms. 70 dalam situasi mudah. Murid teka maksud berdasarkan konteks.
+- **Aktiviti utama (35 minit).** Guru bimbing murid membaca ungkapan, kemudian bandingkan tekaan dengan penerangan. Pasangan memadankan kad ungkapan dan kad situasi. Murid menyampaikan satu padanan dan menerangkan petunjuk yang membantu.
+- **Pengukuhan dan PBD (15 minit).** Murid padankan lima ungkapan secara individu dan jelaskan satu pilihan. Guru semak ketepatan maksud dan kesesuaiannya dengan situasi.
+- **Penutup (5 minit).** Murid ulang satu ungkapan dan jelaskan bila ia boleh digunakan.
+- **Bahan.** Buku teks ms. 70, rujukan cetak Buku Aktiviti ms. 64, rujukan cetak trek 42.
+
+### PdP 45 — Jaku Pemendar (ms. 63)
+
+- **SK 5.1 · SP 5.1.8.** Murid mengenal pasti sekurang-kurangnya empat daripada lima ujaran pengesahan dalam konteks bersoal jawab.
+- **Set induksi (5 minit).** Guru paparkan gambar lawatan. Murid menjawab satu soalan tentang gambar dengan ujaran pengesahan.
+- **Aktiviti utama (35 minit).** Guru modelkan fungsi ujaran pengesahan menggunakan dialog ms. 63 atau trek 37 jika tersedia. Pasangan bergilir membaca dialog dan menanda ujaran yang mengesahkan maklumat tentang lawatan. Murid banding jawapan dengan bukti dalam dialog.
+- **Pengukuhan dan PBD (15 minit).** Guru kemukakan lima ujaran daripada situasi berkaitan. Murid menentukan ujaran pengesahan dan memberi alasan bagi satu pilihan.
+- **Penutup (5 minit).** Murid sebut satu ujaran pengesahan yang sesuai untuk digunakan dalam dialog.
+- **Bahan.** Buku teks ms. 63, rujukan cetak Buku Aktiviti ms. 58, rujukan cetak trek 37.
+
+### PdP 46 — Taman Baya Miri — Pengukuhan Jaku Pemendar (ms. 64)
+
+- **SK 5.1 · SP 5.1.8.** Murid menggunakan ujaran pengesahan yang sesuai dalam sekurang-kurangnya tiga daripada empat giliran dialog berpandukan petikan.
+- **Set induksi (5 minit).** Guru tunjuk ilustrasi lokasi dalam petikan. Murid kenal pasti fakta yang boleh disahkan selepas membaca.
+- **Aktiviti utama (35 minit).** Guru bimbing bacaan ms. 64. Pasangan sediakan soalan tentang tempat, watak dan peristiwa, kemudian beri respons pengesahan menggunakan maklumat petikan. Guru bimbing murid membezakan ujaran pengesahan daripada soalan dan pernyataan biasa.
+- **Pengukuhan dan PBD (15 minit).** Murid lakonkan empat giliran dengan kad soalan. Guru catat ketepatan fakta dan bentuk ujaran pengesahan.
+- **Penutup (5 minit).** Murid membaca semula satu pasangan soalan dan respons yang telah disemak.
+- **Bahan.** Buku teks ms. 64, rujukan cetak Buku Aktiviti ms. 59, rujukan cetak trek 38.
+
+### PdP 47 — Pemeresi Rampa Menua — Pengukuhan mendengar (ms. 65)
+
+- **SK 1.1 · SP 1.1.1 (i).** Murid memahami maklumat yang didengar dan menyatakan sekurang-kurangnya tiga daripada empat butiran tentang penjagaan alam sekitar.
+- **Set induksi (5 minit).** Guru tunjuk gambar ms. 65 dan minta murid perhatikan keadaan kawasan dalam gambar.
+- **Aktiviti utama (35 minit).** Guru perdengarkan trek 39 jika tersedia atau gunakan rangsangan lisan tentang gambar yang telah disemak oleh guru bahasa. Murid dengar dua kali. Pada ulangan, mereka padankan kad gambar dengan butiran yang didengar dan semak bersama pasangan.
+- **Pengukuhan dan PBD (15 minit).** Murid menjawab empat soalan lisan berdasarkan bahan dengar, dengan bahan bertulis ditutup. Guru catat ketepatan setiap butiran.
+- **Penutup (5 minit).** Murid sebut satu tindakan penjagaan alam sekitar yang disebut dalam rangsangan.
+- **Bahan.** Buku teks ms. 65, rujukan cetak trek 39.
+
+### PdP 48 — Aram Nemuai (ms. 58)
+
+- **SK 2.1 · SP 2.1.1 (i), (ii).** Murid memenggal dan menyebut dengan tepat sekurang-kurangnya empat daripada lima perkataan satu hingga tiga suku kata daripada petikan.
+- **Set induksi (5 minit).** Guru tunjuk ilustrasi percutian dan minta murid kenal pasti tempat yang ditunjukkan.
+- **Aktiviti utama (35 minit).** Guru modelkan pemenggalan berdasarkan perkataan terpilih daripada ms. 58. Murid baca ayat bersama pasangan, kenal pasti jumlah suku kata dan susun kad mengikut bilangan suku kata. Guru bimbing pembetulan sebutan.
+- **Pengukuhan dan PBD (15 minit).** Murid membaca lima perkataan dalam susunan baharu. Guru semak bilangan suku kata dan sebutan. Murid mengulang perkataan yang belum dikuasai.
+- **Penutup (5 minit).** Murid memilih satu perkataan dan membacanya dalam ayat daripada petikan.
+- **Bahan.** Buku teks ms. 58, rujukan cetak Buku Aktiviti ms. 54, rujukan cetak trek 33.
+
 ## Semakan kod bercanggah pada ms. 45, 46 dan 95
 
 | Buku teks (ms.) | Aktiviti yang dapat disahkan | SP DSKP yang perlu disemak dengan guru |

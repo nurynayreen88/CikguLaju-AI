@@ -58,7 +58,7 @@ Semakan struktur meliputi 114 halaman dan 53 rujukan trek unik. Semua 61 kod SP 
 | 27 | 2.1 / 2.2 | 2.1.2(iv) / 2.2.2(iv) | 19 | 14 |
 | 28 | 2.2 / 1.5 | 2.2.4 (i) / 1.5.3 (iii) |  | 15 |
 | 29 |  |  | 20 |  |
-| 30 | 5.1 | 5.1.2 / 5.1.3 |  | 16, 17, 5 |
+| 30 | 5.1 | 5.1.2 / 5.1.3 |  | 16, 17 |
 | 31 | 5.2 | 5.2.1 (iii) | 21 | 18 |
 | 32 | 3.1 | 3.1.2 (iv) | 22 |  |
 | 33 | 3.2 | 3.2.1 | 23 | 19, 20 |
@@ -443,3 +443,90 @@ Nota guru ms. 22 mencetak 3.2.2 (i)(b) serta (ii)(b). Kedua-dua pecahan turut di
 - **Pengukuhan dan PBD (15 minit).** Guru dengar penyampaian satu rangkap dan catat urutan baris serta kejelasan sebutan. Setiap kumpulan menerangkan satu mesej daripada rangkap.
 - **Penutup (5 minit).** Murid sebut satu cara menghargai ahli keluarga berdasarkan perbincangan.
 - **Bahan.** Buku teks ms. 24, rujukan cetak Buku Aktiviti ms. 18, rujukan cetak trek 11, 12.
+
+## Rangka RPH Unit 4 bagi PdP 22–30
+
+Unit 4 — Boogian Tinan meliputi ms. 25–34. Set 15 kod SP induk daripada [RPT Bahasa Kadazandusun 2025](https://id.scribd.com/document/852169526/RPT-BKD-TAHUN-2-2025) sepadan dengan set kod tercetak buku teks bagi unit ini. Halaman 29 ialah sambungan cerita ms. 28 dan menggunakan kod yang dicetak pada halaman utama cerita. Masa 60 minit setiap sesi ialah andaian draf.
+
+Buku teks ms. 30 menempatkan label trek 16 dan 17 berhampiran tajuk lagu. Indeks sebelumnya juga memasukkan nombor 5 untuk halaman tersebut. Semakan pada [PDF buku teks](https://padlet-uploads.storage.googleapis.com/150348405/08fa062da29e2e4fff0994223feb88db/Bahasa_Kadazandusun_Tahun_2.pdf) mengesahkan rujukan trek 16 dan 17 pada ms. 30. Trek 5 dilabel pada dialog ms. 5 dan telah dikeluarkan daripada baris ms. 30. [Transkrip trek 13](https://padlet-uploads.storage.googleapis.com/150348405/08fa062da29e2e4fff0994223feb88db/Bahasa_Kadazandusun_Tahun_2.pdf#page=123) pada ms. cetak 115 boleh digunakan sebagai bacaan guru untuk PdP 23.
+
+### PdP 22 — Intutunai om Polombuso’ — Boogian Tinan (ms. 25)
+
+- **SK 1.1, 1.2 · SP 1.1.2 (iv) / 1.2.2 (iv).** Murid memenggal dan menyebut dengan tepat sekurang-kurangnya empat daripada lima perkataan anggota badan daripada gambar.
+- **Set induksi (5 minit).** Guru paparkan ilustrasi dan minta murid tunjuk anggota badan yang disebut.
+- **Aktiviti utama (35 minit).** Guru modelkan sebutan dan pemenggalan perkataan pada ms. 25. Pasangan padankan label dengan gambar, susun kad suku kata dan sebut perkataan secara bergilir.
+- **Pengukuhan dan PBD (15 minit).** Guru gunakan lima kad gambar. Murid menyebut dan memenggal perkataan secara individu. Catat empat sebutan dan pemenggalan tepat.
+- **Penutup (5 minit).** Murid pilih satu label dan sebut semula sambil menunjukkan bahagian yang sepadan.
+- **Bahan.** Buku teks ms. 25.
+
+### PdP 23 — Kinongoho’ om Hulito’ (ms. 26)
+
+- **SK 1.3, 1.5 · SP 1.3.1 (ii) (a) / 1.5.1 (i) (b).** Murid mendengar dan menyatakan tiga daripada empat maklumat dalam kad ucapan serta mengulang satu ayat penyata yang sesuai.
+- **Set induksi (5 minit).** Guru tunjuk gambar atau contoh kad ucapan. Murid kenal pasti tujuan kad itu dihantar.
+- **Aktiviti utama (35 minit).** Guru gunakan trek 13 jika tersedia atau bacakan transkrip ms. 115. Murid kenal pasti penerima, pengirim dan mesej. Pasangan berlatih menyampaikan semula satu ayat dengan sebutan yang jelas.
+- **Pengukuhan dan PBD (15 minit).** Guru kemukakan empat soalan selepas bacaan lisan. Murid jawab dan ulang satu ayat daripada mesej. Catat ketepatan isi dan kejelasan ujaran.
+- **Penutup (5 minit).** Murid nyatakan satu maklumat yang diperlukan apabila menyampaikan mesej kepada rakan.
+- **Bahan.** Buku teks ms. 26, rujukan cetak trek 13.
+
+### PdP 24 — Basao’ om Roito’ — Muji (ms. 27)
+
+- **SK 2.1, 2.2 · SP 2.1.2 (iv) / 2.2.2 (iv).** Murid menyusun suku kata dan membaca sekurang-kurangnya empat daripada lima perkataan anggota badan dalam petikan dengan tepat.
+- **Set induksi (5 minit).** Guru tunjuk ilustrasi atau kad anggota badan yang berkaitan dengan cerita Muji.
+- **Aktiviti utama (35 minit).** Guru bimbing bacaan ms. 27 dan tunjuk cara menggabungkan suku kata daripada perkataan yang ditandai. Murid menyusun kad dan menyebut perkataan dalam ayat bersama pasangan.
+- **Pengukuhan dan PBD (15 minit).** Murid membaca lima kad perkataan dan menunjukkan pemenggalan setiap perkataan. Guru semak turutan dan sebutan.
+- **Penutup (5 minit).** Murid ulang satu perkataan yang telah dibetulkan dan tunjuk bahagian tubuh yang dirujuk.
+- **Bahan.** Buku teks ms. 27, rujukan cetak Buku Aktiviti ms. 19, rujukan cetak trek 14.
+
+### PdP 25 — I Anakanak om I Pondogon (ms. 28–29)
+
+- **SK 2.2, 1.5 · SP 2.2.4 (i) / 1.5.3 (iii).** Murid membaca sekurang-kurangnya tiga daripada empat ayat penyata dengan sebutan yang jelas dan menceritakan semula tiga peristiwa mengikut turutan.
+- **Set induksi (5 minit).** Guru paparkan dua watak. Murid jangka perkara yang akan berlaku apabila kedua-duanya bertemu.
+- **Aktiviti utama (35 minit).** Guru modelkan bacaan ayat penyata pada ms. 28. Pasangan membaca sambungan pada ms. 29, menyusun kad peristiwa dan menceritakan semula kisah dengan menggunakan kad sebagai panduan.
+- **Pengukuhan dan PBD (15 minit).** Murid baca empat ayat dan susun tiga kad peristiwa. Guru catat ketepatan bacaan serta urutan penceritaan.
+- **Penutup (5 minit).** Murid nyatakan satu perkara yang membezakan tindakan kedua-dua watak.
+- **Bahan.** Buku teks ms. 28–29, rujukan cetak Buku Aktiviti ms. 20 (ms. 29), rujukan cetak trek 15 (ms. 28).
+
+### PdP 26 — Intang-intangan (ms. 30)
+
+- **SK 5.1 · SP 5.1.2 / 5.1.3.** Murid menyebut bunyi huruf dengan tepat dan mengeja sekurang-kurangnya empat daripada lima perkataan sasaran berdasarkan seni kata.
+- **Set induksi (5 minit).** Guru tunjuk kad mata, mulut, tangan dan kaki. Murid memadankan gambar dengan perkataan.
+- **Aktiviti utama (35 minit).** Guru nyanyikan contoh daripada buku teks atau gunakan trek 16 dan 17 jika tersedia. Murid mengesan huruf dan bunyi yang ditandai dalam seni kata. Pasangan menyusun kad huruf, mengeja perkataan dan menyebutnya dalam rangkap.
+- **Pengukuhan dan PBD (15 minit).** Guru tunjuk lima perkataan terpilih. Murid menyebut bunyi huruf sasaran dan mengeja perkataan. Guru catat ketepatan sebutan dan ejaan.
+- **Penutup (5 minit).** Murid sebut satu perkataan dan kenal pasti huruf sasaran dalam perkataan tersebut.
+- **Bahan.** Buku teks ms. 30, rujukan cetak trek 16, 17.
+
+### PdP 27 — Tulun Koindaangan — Boros Ula (ms. 31)
+
+- **SK 5.2 · SP 5.2.1 (iii).** Murid mengenal pasti sekurang-kurangnya empat daripada lima kata sifat dalam petikan dan menggunakan satu kata sifat untuk menerangkan gambar.
+- **Set induksi (5 minit).** Guru tunjuk ilustrasi watak dan minta murid menyebut satu ciri yang mereka nampak.
+- **Aktiviti utama (35 minit).** Guru bimbing bacaan ms. 31 atau gunakan trek 18 jika tersedia. Pasangan menanda perkataan yang menerangkan rupa, keadaan atau perasaan. Murid padankan kad sifat dengan gambar berdasarkan konteks.
+- **Pengukuhan dan PBD (15 minit).** Murid pilih kata sifat yang sesuai untuk lima rangsangan dan bina satu frasa penerangan. Catat empat pilihan tepat.
+- **Penutup (5 minit).** Murid baca frasa penerangannya sambil menunjuk ciri dalam gambar.
+- **Bahan.** Buku teks ms. 31, rujukan cetak Buku Aktiviti ms. 21, rujukan cetak trek 18.
+
+### PdP 28 — Suato’ — Menyusun suku kata (ms. 32)
+
+- **SK 3.1 · SP 3.1.2 (iv).** Murid menyusun dan menulis sekurang-kurangnya empat daripada lima perkataan daripada bahan berkaitan anggota badan dengan ejaan tepat.
+- **Set induksi (5 minit).** Guru paparkan satu gambar watak dan minta murid sebut perkataan yang sesuai untuk melengkapkan label.
+- **Aktiviti utama (35 minit).** Guru modelkan pembinaan satu perkataan menggunakan gabungan suku kata daripada bahan ms. 32. Murid bekerja secara berpasangan untuk menyusun, membaca dan menyalin perkataan berdasarkan petunjuk ilustrasi.
+- **Pengukuhan dan PBD (15 minit).** Murid susun dan tulis lima perkataan sendiri. Guru semak turutan suku kata serta ejaan.
+- **Penutup (5 minit).** Murid menandakan bahagian suku kata pada satu perkataan yang telah diperbetulkan.
+- **Bahan.** Buku teks ms. 32, rujukan cetak Buku Aktiviti ms. 22.
+
+### PdP 29 — Sudawil Pononsunudan (ms. 33)
+
+- **SK 3.2 · SP 3.2.1.** Murid menggabungkan suku kata dan menulis sekurang-kurangnya empat daripada lima kata dasar melalui petunjuk daripada sudawil.
+- **Set induksi (5 minit).** Guru bacakan satu bahagian sudawil. Murid mendengar untuk mengenal pasti satu perkataan sasaran.
+- **Aktiviti utama (35 minit).** Guru gunakan rangkap ms. 33 dan kad suku kata untuk menunjukkan pembentukan kata dasar. Pasangan membina perkataan lain daripada petunjuk, menyemak ketepatan dengan guru dan menulis perkataan lengkap.
+- **Pengukuhan dan PBD (15 minit).** Guru beri lima set kad. Murid bina dan tulis kata dasar secara individu. Guru semak padanan suku kata dan ejaan.
+- **Penutup (5 minit).** Murid baca satu kata dasar dan sebut suku kata yang membentuknya.
+- **Bahan.** Buku teks ms. 33, rujukan cetak Buku Aktiviti ms. 23, rujukan cetak trek 19, 20.
+
+### PdP 30 — Momonsoi Buuk Tonini (ms. 34)
+
+- **SK 4.2 · SP 4.2.2 / 4.2.1.** Murid menghasilkan buku mini yang memuatkan sekurang-kurangnya dua teka-teki tentang anggota badan dan jawapan yang sepadan.
+- **Set induksi (5 minit).** Guru tunjuk buku mini contoh dan bacakan satu teka-teki tentang anggota badan.
+- **Aktiviti utama (35 minit).** Guru tunjuk langkah buku mini pada ms. 34 dan sediakan kertas atau helaian siap lipat. Pasangan mencuba teka-teki contoh, memilih dua anggota badan dan menulis petunjuk serta jawapan dalam buku masing-masing.
+- **Pengukuhan dan PBD (15 minit).** Guru semak sekurang-kurangnya dua petunjuk dan jawapannya. Pasangan bertukar buku dan menilai sama ada petunjuk membolehkan rakan meneka.
+- **Penutup (5 minit).** Murid bacakan satu teka-teki yang mereka hasilkan dan jemput rakan menjawab.
+- **Bahan.** Buku teks ms. 34, rujukan cetak Buku Aktiviti ms. 24.

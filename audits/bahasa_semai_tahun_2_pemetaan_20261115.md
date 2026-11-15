@@ -405,3 +405,54 @@ Halaman 14 mencetak 3.3.2. Nota guru meminta murid membina cerita menggunakan pe
 - **Pengukuhan dan PBD (15 minit).** Guru beri empat gambar atau kad rangsangan. Murid tulis satu ayat bagi setiap kad. Guru semak sama ada kedua-dua bahagian ialah frasa nama dan maknanya sesuai.
 - **Penutup (5 minit).** Murid membaca satu ayat dan menyebut frasa nama subjek serta frasa nama predikat.
 - **Bahan.** Buku teks ms. 16, rujukan cetak Buku Aktiviti ms. 12.
+
+## Rangka RPH Unit 4 bagi PdP 16–20
+
+Unit 4 — Gek-Gek, Leu-Leu Kijadik Lod meliputi ms. 17–21. Kelima-lima kod SP utama sepadan dengan [RPT Bahasa Semai 2022/2023](https://www.scribd.com/document/664811393/RPT-SEMAI-2). Tempoh 60 minit setiap sesi ialah andaian draf.
+
+Bagi ms. 19, RPT menggunakan kod 3.3.3 dengan huraian bercerita daripada gambar. Nota guru buku teks meminta pemilihan, penyusunan dan penulisan maklumat mengikut turutan. [Dokumen Penjajaran Bahasa Semai Tahun 2](https://www.tcer.my/wp-content/uploads/2021/01/20_DPK-2.0-Bahasa-Semai-Tahun-2.pdf), ms. 7, mengesahkan fokus penyusunan dan penulisan maklumat bagi 3.3.3. Rangka PdP 18 menilai proses tersebut melalui rajah penyediaan penanda buku.
+
+### PdP 16 — Bah Rapi, Eng Ngha Joi (ms. 17)
+
+- **SK 1.3 · SP 1.3.2.** Murid menyatakan niat untuk pergi ke stadium dan sekurang-kurangnya dua maklumat yang berkaitan dalam ujaran ringkas.
+- **Set induksi (5 minit).** Guru tunjuk ilustrasi atau gambar perlawanan bola sepak. Murid nyatakan satu perkara yang mereka perlu beritahu penjaga sebelum keluar.
+- **Aktiviti utama (35 minit).** Guru bimbing bacaan dialog ms. 17 atau gunakan trek 9 jika tersedia. Murid menanda niat watak dan maklumat tentang perjalanan. Pasangan lakonkan cara menyatakan niat kepada penjaga dengan memperincikan tempat dan rancangan.
+- **Pengukuhan dan PBD (15 minit).** Murid menyampaikan niat dan dua maklumat sokongan secara individu. Guru menilai maklumat dan kejelasan ujaran.
+- **Penutup (5 minit).** Murid menyebut satu ujaran sesuai untuk menyatakan niat secara sopan.
+- **Bahan.** Buku teks ms. 17, rujukan cetak Buku Aktiviti ms. 13, rujukan cetak trek 9.
+
+### PdP 17 — Neamal Tenabong (ms. 18)
+
+- **SK 2.2 · SP 2.2.4.** Murid membaca sekurang-kurangnya tiga daripada empat ayat majmuk dengan jelas dan menjawab sekurang-kurangnya dua daripada tiga soalan berdasarkan petikan.
+- **Set induksi (5 minit).** Guru tunjuk gambar tabung. Murid teka sebab watak menyimpan duit.
+- **Aktiviti utama (35 minit).** Guru modelkan hentian dalam ayat majmuk daripada ms. 18. Pasangan membaca petikan, menanda kata hubung dan mencari bukti untuk tiga soalan pemahaman.
+- **Pengukuhan dan PBD (15 minit).** Guru dengar bacaan empat ayat dan menyemak tiga jawapan soalan. Catat ketepatan bacaan dan kefahaman secara berasingan.
+- **Penutup (5 minit).** Murid membaca semula satu ayat yang menerangkan manfaat menabung.
+- **Bahan.** Buku teks ms. 18, rujukan cetak Buku Aktiviti ms. 14, rujukan cetak trek 10.
+
+### PdP 18 — Amen Hihod, ku Pajeh Mong (ms. 19)
+
+- **SK 3.3 · SP 3.3.3.** Murid memperoleh dan menyusun sekurang-kurangnya empat daripada lima maklumat daripada gambar dan menulisnya dalam turutan membuat penanda buku.
+- **Set induksi (5 minit).** Guru tunjuk penanda buku. Murid namakan satu bahan yang diperlukan.
+- **Aktiviti utama (35 minit).** Guru bimbing murid meneliti rajah dan teks pada ms. 19. Pasangan asingkan bahan daripada langkah, susun kad tindakan mengikut rajah dan catat isi yang diperlukan untuk menerangkan cara membuat penanda buku.
+- **Pengukuhan dan PBD (15 minit).** Murid menulis empat langkah yang tersusun serta menyatakan satu bahan. Guru semak ketepatan maklumat dan turutan tindakan.
+- **Penutup (5 minit).** Murid menerangkan satu langkah dan sebab ia perlu dilakukan pada kedudukan tersebut.
+- **Bahan.** Buku teks ms. 19.
+
+### PdP 19 — Juk Hidek ku Tabong (ms. 20)
+
+- **SK 4.2 · SP 4.2.2.** Murid membina dan menggunakan sekurang-kurangnya dua ayat sopan dalam soal jawab tentang cara atau faedah menabung.
+- **Set induksi (5 minit).** Guru paparkan kad gambar kedai dan tabung. Murid fikir satu soalan sopan tentang pilihan menyimpan wang.
+- **Aktiviti utama (35 minit).** Guru bacakan pantun pada ms. 20 atau gunakan trek 11 jika tersedia. Murid membincangkan maksud rangkap. Pasangan membina dialog ringkas tentang menabung menggunakan pilihan kata sopan yang dibimbing guru.
+- **Pengukuhan dan PBD (15 minit).** Pasangan menyampaikan dua giliran soal jawab tentang isu dalam pantun. Guru semak kesesuaian pilihan kata, situasi dan isi.
+- **Penutup (5 minit).** Murid mengulang satu ayat sopan yang boleh digunakan ketika meminta pandangan rakan.
+- **Bahan.** Buku teks ms. 20, rujukan cetak Buku Aktiviti ms. 15, rujukan cetak trek 11.
+
+### PdP 20 — Penjudoh Benilag (ms. 21)
+
+- **SK 5.4 · SP 5.4.1.** Murid memadankan sekurang-kurangnya empat daripada lima penjodoh bilangan dengan benda yang sesuai dan menulis dua frasa lengkap.
+- **Set induksi (5 minit).** Guru tunjuk ilustrasi barang. Murid pilih satu barang yang boleh disebut bersama penjodoh bilangan yang sudah diketahui.
+- **Aktiviti utama (35 minit).** Guru modelkan contoh daripada ms. 21. Pasangan baca frasa, memadankan kata dengan ilustrasi dan membandingkan pilihan. Murid menulis contoh baharu menggunakan kad gambar yang telah disemak oleh guru subjek.
+- **Pengukuhan dan PBD (15 minit).** Murid melengkapkan lima padanan dan menulis dua frasa. Guru semak ketepatan penjodoh bilangan dan ejaan.
+- **Penutup (5 minit).** Murid sebut satu frasa dan tunjuk benda yang dirujuk.
+- **Bahan.** Buku teks ms. 21, rujukan cetak Buku Aktiviti ms. 16.
