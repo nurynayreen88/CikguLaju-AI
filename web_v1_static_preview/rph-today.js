@@ -18,7 +18,7 @@
  const resultsList=document.getElementById("today-results-list");
  if(!dateInput||!refresh||!state||!list||!confirm||!generateAll||
     !allStatus||!resultsHost||!resultsList)return;
- let requestId=0,loadedDate="",loading=false,reviewing=false,choices=[],batchEpoch=0;
+ let requestId=0,loadedDate="",loading=false,reviewing=false,savingProgress=false,choices=[],batchEpoch=0;
  const cache=new Map(),rosterCounts=new Map();
  const TAGS=["component","theme","unit","topic","lesson"];
  const SOURCE_NAMES={
@@ -69,6 +69,7 @@
     if(select&&!select.hidden&&select.dataset.ready==="1")
      select.disabled=reviewing||!select.dataset.hasOptions;
    }
+   if(c.progressHint)renderProgress(c);
   }
   // Inform teachers why batch generation is disabled without changing the
   // existing button, selection flow, or any generation/credit endpoints.
@@ -146,8 +147,11 @@
   const match=/^(?:Lesson|PdP)\s*(\d+)/i.exec(title);
   return match?Number(match[1]):null;
  }
+ function selectedComponent(c){
+  return c.controls.component.value||c.slot.component||"";
+ }
  function suggestedLessonNumbers(c){
-  const component=c.controls.component.value||c.slot.component||"";
+  const component=selectedComponent(c);
   return c.slot.rpt_suggestion?.lessons?.[component]||[];
  }
  function renderWeeklySuggestion(c){
@@ -162,6 +166,62 @@
       ? " — Pilih PJ atau PK untuk melihat cadangan."
       : " — Tiada "+label+" untuk pilihan ini.");
  }
+ function renderProgress(c){
+  const component=selectedComponent(c);
+  const progress=c.slot.progress?.[component];
+  const label=c.slot.subject_code==="ENGLISH"?"Lesson":"PdP";
+  const describe=number=>label+" "+String(number).padStart(3,"0");
+  const previous=progress?.previous;
+  const completed=progress?.completed;
+  const next=previous&&previous<999?previous+1:null;
+  c.progressHint.textContent=completed
+   ?describe(completed)+" ditanda selesai untuk slot ini."
+   :previous?"Terakhir selesai: "+describe(previous)+".":"";
+  const selection=c.controls.lesson.selectedOptions[0];
+  let nextAvailable=false;
+  for(const option of c.controls.lesson.options){
+   if(!option.dataset.lessonLabel)continue;
+   const number=lessonNumber(option.dataset.lessonLabel);
+   if(number===next)nextAvailable=true;
+   const badge=!completed&&number===next?" · Sambungan kelas":
+     suggestedLessonNumbers(c).includes(number)?" · Cadangan minggu ini":"";
+   const title=option.dataset.lessonLabel+badge;
+   if(option.textContent!==title)option.textContent=title;
+  }
+  if(!completed&&nextAvailable)c.progressHint.textContent+=" Sambungan kelas: "+describe(next)+".";
+  c.complete.textContent=completed?"Kemas kini PdP":"Selesai PdP";
+  c.complete.disabled=savingProgress||reviewing||!confirm.checked||
+    !selection?.dataset.completionToken||lessonNumber(selection.dataset.lessonLabel)===completed;
+  c.undoCompletion.hidden=!completed;
+  c.undoCompletion.disabled=savingProgress||reviewing||!confirm.checked;
+ }
+ async function changeCompletion(c,undo=false){
+  const button=undo?c.undoCompletion:c.complete;
+  if(button.disabled||savingProgress)return;
+  const token=undo?null:c.controls.lesson.selectedOptions[0]?.dataset.completionToken;
+  const body={date:loadedDate,start:c.slot.start,class_name:c.slot.class_name,
+   subject_code:c.slot.subject_code,component:selectedComponent(c),token};
+  savingProgress=true;
+  c.progressStatus.textContent="Menyimpan rekod PdP…";
+  updateAll();
+  try{
+   const response=await fetch("/api/web/rph/hari-ini/completion",{
+    method:"POST",credentials:"same-origin",cache:"no-store",redirect:"error",
+    headers:{"Content-Type":"application/json"},body:JSON.stringify(body)
+   });
+   const data=await response.json().catch(()=>({}));
+   if(!response.ok||!Array.isArray(data.entries))throw Error(data.error||"Rekod PdP belum dapat disahkan.");
+   if(c.ticket!==requestId)return;
+   for(const choice of choices){
+    const fresh=data.entries.find(slot=>slot.start===choice.slot.start&&
+      slot.class_name===choice.slot.class_name&&slot.subject_code===choice.slot.subject_code);
+    if(fresh)choice.slot.progress=fresh.progress;
+   }
+   c.progressStatus.textContent=undo?"Tanda selesai dibatalkan.":"Rekod PdP disimpan.";
+  }catch(error){
+   if(c.ticket===requestId)c.progressStatus.textContent=error.message;
+  }finally{savingProgress=false;updateAll();}
+ }
  function fill(c,name,items,label){
   const select=c.controls[name];
   select.replaceChildren(new Option("Pilih "+label,""));
@@ -173,10 +233,12 @@
     title=nativeLessonLabel(item,c.slot.subject_code);
     if(!title)continue;
    }
-   if(name==="lesson" && suggestedLessonNumbers(c).includes(lessonNumber(title)))
-    title+=" · Cadangan minggu ini";
    const option=new Option(title,String(item.value));
    if(name==="lesson"){
+     option.dataset.lessonLabel=title;
+     option.dataset.completionToken=String(item.completion_token||"");
+     if(!c.progressHint&&suggestedLessonNumbers(c).includes(lessonNumber(title)))
+      option.textContent+=" · Cadangan minggu ini";
      option.dataset.bookRef=String(item.textbook_ref||item.student_book_ref||"").trim();
      option.dataset.originUnit=String(item.origin_unit||"");
     }
@@ -191,6 +253,7 @@
  }
  async function sourceOptions(year,kind,extra={}){
   const params=new URLSearchParams({kind,year:String(year),...extra});
+  if(kind==="pdp"||kind==="bm-pdp")params.set("rph_today","1");
   const key=params.toString();
   if(!cache.has(key)){
    const task=fetch("/api/options?"+key,{
@@ -288,7 +351,7 @@
   }catch(error){if(c.ticket===requestId)c.message.textContent=error.message;}
   finally{c.busy=false;updateAll();}
  }
- function makeChoice(slot,index,ticket){
+ function makeChoice(slot,index,ticket,progressEditable){
   const card=create("article","daily-rph-card");
   const heading=create("div","daily-rph-card-top");
   heading.append(create("strong","",slot.class_name+" · "+slot.subject),
@@ -317,6 +380,20 @@
    ["topic","Tajuk"],["lesson",slot.subject_code==="ENGLISH"?"Lesson":"PdP"]
   ])stage(c,name,label);
   renderWeeklySuggestion(c);
+  if(slot.progress&&(progressEditable||Object.values(slot.progress).some(record=>record.previous))){
+   c.progressHint=create("p","notice");
+   c.progressStatus=create("p","notice");
+   c.progressStatus.setAttribute("role","status");
+   c.complete=create("button","secondary","Selesai PdP");
+   c.undoCompletion=create("button","secondary","Batal tanda selesai");
+   c.complete.type=c.undoCompletion.type="button";
+   c.complete.addEventListener("click",()=>{void changeCompletion(c);});
+   c.undoCompletion.addEventListener("click",()=>{void changeCompletion(c,true);});
+   const actions=create("div","daily-rph-batch");
+   actions.hidden=!progressEditable;
+   actions.append(c.complete,c.undoCompletion);
+   c.editor.append(c.progressHint,actions,c.progressStatus);
+  }
   c.students=create("input");
   c.students.type="number";
   c.students.min="1";
@@ -383,11 +460,12 @@
   choices=[];
   if(!data.count)list.append(create("p","notice",
    "Tiada waktu mengajar pada "+data.day+". Pilih tarikh lain atau kemas kini Jadual Waktu di Profil Guru."));
-  for(const [i,slot] of data.entries.entries())choices.push(makeChoice(slot,i,ticket));
+  for(const [i,slot] of data.entries.entries())choices.push(makeChoice(slot,i,ticket,data.progress_editable));
   state.textContent=data.day+", "+new Intl.DateTimeFormat("ms-MY",{
    timeZone:"Asia/Kuala_Lumpur",day:"numeric",month:"long",year:"numeric"
   }).format(new Date(data.date+"T12:00:00+08:00"))+
-   " · "+data.count+" waktu dalam jadual. "+data.holiday_notice;
+   " · "+data.count+" waktu dalam jadual. "+data.holiday_notice+
+   (data.progress_unavailable?" Rekod PdP belum dapat disemak.":"");
   updateAll();
  }
  async function load(date=""){
