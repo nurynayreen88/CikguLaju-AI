@@ -91,6 +91,30 @@ def options():
         return jsonify({"error": "Account lookup unavailable", "code": "TELEGRAM_ACCOUNT_SOURCE_UNAVAILABLE"}), 503
     if not account or account.get("telegram_user_id") != uid:
         return jsonify({"error": "Existing account required"}), 403
+    if request.args.get("rph_today") == "1" and config.get("account_backend") == "supabase":
+        from flask import after_this_request
+        from web.rph_today_progress import lesson_number, lesson_signer
+
+        @after_this_request
+        def sign_pdp_options(response):
+            if response.status_code != 200 or request.args.get("kind") not in ("pdp", "bm-pdp"):
+                return response
+            items = response.get_json(silent=True)
+            if not isinstance(items, list):
+                return response
+            signer = lesson_signer(config)
+            subject = request.args.get("subject", "")
+            component = request.args.get("component", "")
+            for item in items:
+                number = lesson_number(item)
+                if number is not None:
+                    item["completion_token"] = signer.dumps([uid, int(request.args["year"]),
+                                                               subject, component, number])
+            response = jsonify(items)
+            response.headers["Cache-Control"] = "no-store, private"
+            response.headers["Vary"] = "Cookie"
+            return response
+
     try:
         year = int(request.args.get("year", ""))
         if year not in range(1, 7):
