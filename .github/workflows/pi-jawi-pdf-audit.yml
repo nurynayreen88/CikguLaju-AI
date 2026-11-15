@@ -4,6 +4,8 @@ on:
   pull_request:
     paths:
       - 'app.py'
+      - 'web/pi_primary_reviewed_rows.py'
+      - 'tests/test_pi_primary_reviewed_rows.py'
       - 'tools/audit_pi_jawi_pdf.py'
       - 'tests/test_audit_pi_jawi_pdf.py'
       - 'tests/test_pi_jawi_raqm_smoke.py'
@@ -39,3 +41,5 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_pi_jawi_raqm_smoke.py' -v
       - name: Run PDF structure regression
         run: python -m unittest discover -s tests -p 'test_audit_pi_jawi_pdf.py' -v
+      - name: Check reviewed Jawi and tilawah RPH content
+        run: python -m unittest tests.test_pi_primary_reviewed_rows -v
