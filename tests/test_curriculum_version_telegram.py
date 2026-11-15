@@ -183,5 +183,13 @@ class TelegramCurriculumTests(unittest.TestCase):
         self.ns["callback"](1,"year_3")
         self.assertEqual(self.calls,[("subjects","Tahun 3")])
 
+    def test_legacy_discovery_registers_languages_for_primary_only(self):
+        planned = self.ns["_CIKGULAJU_DEV_SUBJECTS_V2617"]
+        for label in ("Bahasa Iban", "Bahasa Kadazandusun", "Bahasa Semai",
+                      "Bahasa Cina (SK)", "Bahasa Tamil (SK)"):
+            self.assertEqual(planned[label], (1, 2, 3, 4, 5, 6))
+        self.assertEqual(planned["Sejarah"], (4, 5, 6))
+        self.assertNotIn("Bahasa Cina", self.ns["SUBJECTS_BY_GRADE"]["Tahun 2"])
+
 if __name__=="__main__":
     unittest.main()

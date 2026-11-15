@@ -7,6 +7,7 @@ from tempfile import TemporaryDirectory
 from dlp_year2_rph import catalog, filename, render, resolve
 
 from curriculum_version_selector import KP2027, LEGACY, resolve_curriculum
+from primary_language_subjects import PRIMARY_LANGUAGE_SUBJECTS
 
 
 DLP = "dlp"
@@ -40,6 +41,9 @@ def install(namespace):
     send=namespace["send"]
     subjects_by_grade=namespace["SUBJECTS_BY_GRADE"]
     subject_label=namespace["SUBJECT_LABEL"]
+    dev_subjects = namespace.get("_CIKGULAJU_DEV_SUBJECTS_V2617")
+    if dev_subjects is not None:
+        dev_subjects.update(dict.fromkeys(PRIMARY_LANGUAGE_SUBJECTS.values(), tuple(range(1, 7))))
     dlp_catalog = catalog()
     downloading = set()
 
