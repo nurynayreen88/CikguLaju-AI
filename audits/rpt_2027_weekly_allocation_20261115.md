@@ -49,6 +49,12 @@ Sebanyak 43 daripada 56 PDF asal mempunyai PdP pada satu atau kedua-dua minggu c
 
 Rujukan bagi subjek lain dihimpunkan daripada [RPT SK 2026](https://www.dminspired.com/kids-school/), [RPT Bahasa Arab 2026 SKMH](https://sites.google.com/moe-dl.edu.my/bahasa-arab-skmh/rpt/2026) dan [peruntukan masa KSSR Semakan 2017](https://www.scribd.com/document/449686173/Surat-Pekeliling-Ikhtisas-Bilangan-5-Pelaksanaan-KSSR-semakan-2017-pdf). Rujukan 2026 membandingkan topik, kemahiran dan tempoh. Nombor PdP siri CikguLaju boleh memecahkan satu blok RPT 2026 kepada beberapa pengajaran, jadi jumlah baris kedua-dua dokumen hanya boleh dibandingkan selepas unit dan tempoh dipadankan.
 
+## Pembetulan Pendidikan Muzik dan RBT
+
+Pendidikan Muzik Tahun 2–6 menempatkan 35 PdP, satu bagi setiap minggu yang digunakan, dari M01 hingga M37 dengan cuti penuh M06 dan M19 kosong. RBT Tahun 4–6 menempatkan 32 PdP × 60 minit, satu bagi setiap minggu yang digunakan. RBT menggunakan M20–M22 dan M40–M42 untuk memindahkan PdP daripada minggu cuti panjang M19 dan minggu Deepavali M39 tanpa mengubah susunan projek. Turutan PdP, tajuk, SK/SP, rujukan dan muka depan diperiksa terhadap PDF asal. Katalog RPH Hari Ini menggunakan julat yang sama.
+
+Rujukan jadual: [RPT Pendidikan Muzik SK 2026](https://gurubesar.my/rpt-pendidikan-muzik-sk-2026/), [RPT RBT SK 2026](https://gurubesar.my/rpt-reka-bentuk-dan-teknologi-sk-2026/) dan [Kalendar Akademik KPM 2027](https://www.moe.gov.my/kalendar-akademik-semasa). Semakan ini meliputi agihan minggu. Tempoh tepat Muzik dan rujukan pentaksiran atau buku yang belum disahkan terus tertakluk kepada semakan akademik.
+
 ## Semakan teknikal dan status
 
 - Lima PDF padan dengan katalog mingguan, mengandungi 800 Lesson unik mengikut urutan dan mengekalkan kandungan lajur pelajaran serta muka depan. Gambar sampel Year 2–6 disemak.
