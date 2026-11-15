@@ -200,6 +200,7 @@ def _native_state(runtime, selection, teacher):
     })
     if code == "PI":
         state.update({
+            "rpt_entry_id": lesson,
             "_pi_full_jawi_rph_v25210": True,
             "_pi_khatam_tasmik_v25210": False,
             "topic": str(row.get("topic") or row.get("skill_focus") or unit),

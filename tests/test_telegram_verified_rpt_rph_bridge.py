@@ -62,6 +62,24 @@ class NativeRPTBridgeTests(unittest.TestCase):
         self.assertEqual(state["rph_class"],"2 Bestari")
         self.assertEqual(state["rph_date"],"06/11/2026")
 
+    def test_pi_keeps_verified_selection_id_after_context_setup(self):
+        unit = "Jawi"
+        selection = {"year": 1, "subject": "PI", "unit": unit, "lesson": 1166}
+        row = {
+            "id": 3, "sequence_no": 3, "topic": "جاوي",
+            "_std": [
+                {"standard_type": "SK", "standard_code": "7.1", "standard_text": "جاوي"},
+                {"standard_type": "SP", "standard_code": "7.1.1", "standard_text": "جاوي"},
+            ],
+        }
+        self.runtime._apply_rpt_structure_context_v2384.side_effect = (
+            lambda state, source: state.update(rpt_entry_id=source["id"])
+        )
+        with patch("web.telegram_verified_rpt_rph_bridge._resolve_verified_rpt", return_value=row):
+            state = _native_state(self.runtime, selection, self.teacher)
+        self.assertEqual(state["rpt_entry_id"], 1166)
+        self.assertEqual(state["quick_rpt_row"]["sequence_no"], 3)
+
     def test_wrong_unit_or_subject_never_uses_stale_rpt(self):
         for selection in ({**self.selection,"unit":"Unit Lain"},
                           {**self.selection,"subject":"PI"},

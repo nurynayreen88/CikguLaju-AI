@@ -785,3 +785,19 @@ RPH_TEACHER_REFLECTION_ACTIVE = install_teacher_reflection(telegram_runtime)
 # No change to payment amount, entitlement, callbacks or user records.
 from web.telegram_subscription_price_guard import install as install_subscription_price_guard
 TELEGRAM_SUBSCRIPTION_PRICE_GUARD_ACTIVE = install_subscription_price_guard(telegram_runtime)
+
+
+# Both the verified Web download and the Telegram handler use these rows.
+from web.pi_primary_reviewed_rows import apply_primary_reviewed_rows
+
+_PI_PRIMARY_REVIEWED_ROWS_BASE = telegram_runtime._rph_rows
+
+
+def _pi_primary_reviewed_rows(state, *args, **kwargs):
+    rows = _PI_PRIMARY_REVIEWED_ROWS_BASE(state, *args, **kwargs)
+    if telegram_runtime._pi_primary_v25210(state):
+        return apply_primary_reviewed_rows(state, rows)
+    return rows
+
+
+telegram_runtime._rph_rows = _pi_primary_reviewed_rows
