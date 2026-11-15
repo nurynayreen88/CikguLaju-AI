@@ -69,16 +69,19 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
                     self.assertIn("attachment", response.headers["Content-Disposition"])
                 self.assertEqual(self.client.get(f"/api/rpt/2027/all/{code}/1.pdf").status_code, 404)
 
-    def test_all_56_files_and_12_subjects_only(self):
+    def test_all_56_files_and_25_language_choices_in_preparation(self):
         data=catalog_data(root=self.root,allowed=True)
-        self.assertEqual(len(data["subjects"]),12)
+        self.assertEqual(len(data["subjects"]),17)
         self.assertEqual(data["total_rpt"],56)
         self.assertEqual(data["available_rpt"],56)
-        self.assertEqual(sum(len(x["years"]) for x in data["subjects"]),66)
-        self.assertEqual(data["total_display_choices"],66)
+        self.assertEqual(sum(len(x["years"]) for x in data["subjects"]),91)
+        self.assertEqual(data["total_display_choices"],91)
+        self.assertEqual(sum(y.get("coming_soon",False) and y["year"]>=2
+                             for s in data["subjects"] for y in s["years"]),25)
         self.assertEqual(data["year1_coming_soon"],10)
         self.assertTrue(all(y["download_enabled"] and y["pdf_ready"]
-                            for s in data["subjects"] for y in s["years"] if y["year"]>=2))
+                            for s in data["subjects"] for y in s["years"]
+                            if y["year"]>=2 and not y.get("coming_soon")))
         self.assertEqual(len([y for s in data["subjects"] for y in s["years"]
                               if y["year"]==1]),10)
         self.assertTrue(all(not y["download_enabled"] and not y["pdf_ready"]

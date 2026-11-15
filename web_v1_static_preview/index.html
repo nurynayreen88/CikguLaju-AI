@@ -1366,6 +1366,20 @@ const dlpSubjectOptions=[
  {value:"SCIENCE_DLP",label:"Science (DLP)"},
  {value:"MATH_DLP",label:"Mathematics (DLP)"}
 ];
+const plannedKssrLanguages=[
+ {value:"bahasa_iban",label:"Bahasa Iban"},
+ {value:"bahasa_kadazandusun",label:"Bahasa Kadazandusun"},
+ {value:"bahasa_semai",label:"Bahasa Semai"},
+ {value:"bahasa_cina_sk",label:"Bahasa Cina (SK)"},
+ {value:"bahasa_tamil_sk",label:"Bahasa Tamil (SK)"}
+];
+function fillKssrSubjects(items){
+ const available=new Set(items.map(item=>item.value));
+ const planned=plannedKssrLanguages.filter(item=>!available.has(item.value));
+ fillSelect(subject,[...items,...planned.map(item=>({
+  ...item,value:"planned:"+item.value,label:item.label+" — Dalam Penyediaan"
+ }))],"Pilih Subjek");
+}
 const primaryYears=[1,2,3,4,5,6].map(n=>({value:String(n),label:"Tahun "+n}));
 const curriculumYears={
  kssr:primaryYears,
@@ -1611,10 +1625,13 @@ year.addEventListener("change",async()=>{
  try{
   const items=await loadOptions("subjects");
   if(revision!==subjectLoadRevision)return;
-  fillSelect(subject,items,"Pilih Subjek");
-  if(!subject.options[1])updateSelectionHelp("Tiada pilihan yang disahkan untuk sumber ini. Semak rekod Telegram.");
+  fillKssrSubjects(items);
+  if(!items.length)updateSelectionHelp("Bahan bagi pilihan ini sedang disediakan.");
  }catch(error){
-  if(revision===subjectLoadRevision)catalogStatus.textContent=error.message;
+  if(revision===subjectLoadRevision){
+   fillKssrSubjects([]);
+   catalogStatus.textContent=error.message;
+  }
  }
 });
 subject.addEventListener("change",async()=>{
@@ -1637,6 +1654,12 @@ subject.addEventListener("change",async()=>{
   return;
  }
  if(curriculum.value!=="kssr")return;
+ const planned=plannedKssrLanguages.find(item=>"planned:"+item.value===code);
+ if(planned){
+  catalogStatus.textContent=planned.label+" Tahun "+targetYear+" — Dalam Penyediaan.";
+  updateSelectionHelp("RPH dan bahan PdP sedang disediakan.");
+  return;
+ }
  updateSelectionHelp("Pilih Tema, Unit atau Tajuk untuk melihat Lesson/PdP.");
  try{
   if(code==="PJPK"){
@@ -1858,7 +1881,7 @@ function renderAllRptCards(data){
    const card=document.createElement("div");card.className="rpt-year-card";
    const title=document.createElement("strong");title.textContent=rptYearLabel(year.year,year.year_label);
    const status=document.createElement("span");status.className="rpt-year-status";
-   status.textContent=year.year===1?"Belum dibuka":year.download_enabled===true?"PDF tersedia":"Belum tersedia";
+   status.textContent=year.year===1?"Belum dibuka":year.coming_soon?"Dalam Penyediaan":year.download_enabled===true?"PDF tersedia":"Belum tersedia";
    card.append(title,status);
    if(year.pdf_ready===true)ready++;
    if(year.year===1){
@@ -1876,7 +1899,7 @@ function renderAllRptCards(data){
                                      document.getElementById("rpt-status"),button);
     });
     card.append(button);
-   }else{
+   }else if(!year.coming_soon){
     const unavailable=document.createElement("span");unavailable.className="rpt-year-muted";
     unavailable.textContent=year.pdf_ready===true?"Akses berbayar diperlukan":"PDF belum dipasang";
     card.append(unavailable);
@@ -1944,6 +1967,7 @@ function refreshRptDownload(){
  }
  if(!selection){rptStatus.textContent="Pilih subjek dan tahun.";return;}
  if(selection.year.year===1){rptStatus.textContent="Tahun 1 (KP Baharu) — Akan Datang.";return;}
+ if(selection.year.coming_soon){rptStatus.textContent="RPT "+selection.item.label+" Tahun "+selection.year.year+" — Dalam Penyediaan.";return;}
  if(!selection.year.pdf_ready){rptStatus.textContent="RPT "+selection.item.label+" Tahun "+selection.year.year+" — fail PDF belum tersedia. Tiada fail subjek/tahun lain digunakan.";return;}
  rptStatus.textContent="RPT "+selection.item.label+" Tahun "+selection.year.year+(ready?" · PDF tersedia untuk muat turun.":" · PDF belum tersedia.")+(rptCatalog?.personalization_allowed?" Cetakan berprofil aktif.":" Versi percuma tanpa identiti sekolah.");
 }

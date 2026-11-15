@@ -190,7 +190,16 @@ vm.runInNewContext(code.slice(code.indexOf("const dlpSubjectOptions="),code.inde
  assert.deepEqual(year.options.map(x=>x.value),["","1","2","3","4","5","6"]);
  year.value="2";
  await listeners["year.change"]();
- assert.deepEqual(subject.options.map(x=>x.value),["","MATH"]);
+ assert.deepEqual(subject.options.map(x=>x.value),["","MATH","planned:bahasa_iban",
+  "planned:bahasa_kadazandusun","planned:bahasa_semai","planned:bahasa_cina_sk","planned:bahasa_tamil_sk"]);
+ for(const option of subject.options.slice(2)){
+  subject.value=option.value;
+  await listeners["subject.change"]();
+  assert.match(ctx.catalogStatus.textContent,/Tahun 2 — Dalam Penyediaan/);
+  assert.equal(unit.hidden,true);
+  assert.equal(lesson.hidden,true);
+ }
+ assert.deepEqual(catalogueCalls,["subjects"]);
  subject.value="MATH";
  await listeners["subject.change"]();
  assert.equal(panel.hidden,true);
