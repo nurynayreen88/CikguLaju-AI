@@ -3,7 +3,7 @@
   "year": 2027,
   "status": "DRAF_USER_VISIBLE_NOT_ACADEMIC_FINAL",
   "count": 56,
-  "pages": 1528,
+  "pages": 1526,
   "files": {
     "bahasa_arab:2": {
       "path": "bahasa_arab/tahun_2.pdf",
@@ -227,47 +227,47 @@
     },
     "pendidikan_islam:2": {
       "path": "pendidikan_islam/tahun_2.pdf",
-      "sha256": "d90635e993ed1b92ecc06d61801b171bc5e048055eaa0290e1de49090acbef90",
-      "bytes": 718306,
-      "pages": 40,
+      "sha256": "d4df3bc3262f8cc637f69512a1b30117b5e5515c602bf49e85819bb76c5a8f92",
+      "bytes": 281721,
+      "pages": 38,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
+      "source_stage": "PI_JAWI_VERSE_ORDER_PR751_WITH_EXISTING_WEB_WEEK_PLAN",
       "full_school_closures_rescheduled": true
     },
     "pendidikan_islam:3": {
       "path": "pendidikan_islam/tahun_3.pdf",
-      "sha256": "f0c4ef02c13bdf81fc78220e1e8f46492143894ae537dbb66c1270f6d5854b74",
-      "bytes": 793242,
+      "sha256": "9ec11043c066ebd044e436213ee084d00c67a8cd34ded6a28e581b3e5303611f",
+      "bytes": 358958,
       "pages": 41,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
+      "source_stage": "PI_JAWI_VERSE_ORDER_PR751_WITH_EXISTING_WEB_WEEK_PLAN",
       "full_school_closures_rescheduled": true
     },
     "pendidikan_islam:4": {
       "path": "pendidikan_islam/tahun_4.pdf",
-      "sha256": "c9de72f9b047395c4f7682a44151c161306a146bfc36fb3c1b9cf46c4bc3f440",
-      "bytes": 802341,
+      "sha256": "9192598d291685b6710ae32f111086ef6898d4e57a51fa48489eb0a142b39fe3",
+      "bytes": 363389,
       "pages": 60,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
+      "source_stage": "PI_JAWI_VERSE_ORDER_PR751_WITH_EXISTING_WEB_WEEK_PLAN",
       "full_school_closures_rescheduled": true
     },
     "pendidikan_islam:5": {
       "path": "pendidikan_islam/tahun_5.pdf",
-      "sha256": "7963db1a6dd94c639cfd35a1054096051a8b803855bd4f5a37f20b3fe7732b22",
-      "bytes": 790167,
+      "sha256": "f17c12dd3fef1d6b20954c9e868d79f20db8acd77d2bf45462156e21b8a8e570",
+      "bytes": 354402,
       "pages": 45,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
+      "source_stage": "PI_JAWI_VERSE_ORDER_PR751_WITH_EXISTING_WEB_WEEK_PLAN",
       "full_school_closures_rescheduled": true
     },
     "pendidikan_islam:6": {
       "path": "pendidikan_islam/tahun_6.pdf",
-      "sha256": "df8a5f55a7a55188c1550a6c32138958c474f2b0dcb59aeffa4fa1aa8ad2f041",
-      "bytes": 785108,
+      "sha256": "56fd2bfee5367c681a89744a1fefb70d83c20ff01bc56fa5c06468fc21e69f07",
+      "bytes": 354334,
       "pages": 38,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
+      "source_stage": "PI_JAWI_VERSE_ORDER_PR751_WITH_EXISTING_WEB_WEEK_PLAN",
       "full_school_closures_rescheduled": true
     },
     "pendidikan_moral:2": {
