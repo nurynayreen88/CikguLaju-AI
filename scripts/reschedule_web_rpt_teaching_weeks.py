@@ -1,4 +1,4 @@
-"""Reassign Web RPT lessons around 2027 school closures."""
+"""Align Web RPT teaching sequences with the 2027 calendar."""
 
 from collections import Counter, defaultdict
 from datetime import date
@@ -16,8 +16,7 @@ from .build_web_rpt_weekly_suggestions import (
     LESSON, ROOT, RTL_SUBJECTS, SUBJECTS, WEEK, read_weeks,
 )
 
-SLUGS = ('bahasa_melayu', 'sains', 'pendidikan_islam', 'pendidikan_moral', 'pjpk',
-         'bahasa_arab', 'matematik')
+SLUGS = ('bahasa_melayu', 'sains', 'pendidikan_islam', 'pendidikan_moral', 'pjpk', 'bahasa_arab')
 AUDIT = Path('audits/rpt_2027_weekly_allocation_20261115.csv')
 TOP, BOTTOM = 78.7, 556
 LEFT, MARGIN = 35, 23
@@ -29,9 +28,6 @@ REGULAR_CAP = {'BM': 5, 'SCIENCE': 3, 'PI': 4, 'MORAL': 3, 'ARAB': 2}
 SHORT_CAP = {'BM': 3, 'SCIENCE': 2, 'PI': 3, 'MORAL': 2, 'ARAB': 2}
 DEEPAVALI_CAP = {'BM': 2, 'SCIENCE': 2, 'PI': 2, 'MORAL': 2, 'ARAB': 1}
 HOLIDAY = {6: 'Cuti Tahun Baharu Cina', 19: 'Cuti Aidiladha dan Hari Wesak'}
-MATH_SHORT = {1, 5, 10, 11, 20, 33, 35}
-MATH_NOTE = ('Cadangan masa: 34 minggu × 150 minit, 7 × 90 minit dan 1 × 30 minit = 96 jam. '
-             'Laras tempoh Lesson mengikut jadual kelas.')
 
 
 def weekly_capacity(subject, week):
@@ -46,24 +42,7 @@ def weekly_capacity(subject, week):
     return REGULAR_CAP[subject]
 
 
-def math_allocation():
-    """Keep the 117 numbered lesson parts in order across 42 teaching weeks."""
-    result = {}
-    start = 1
-    for week in range(1, 45):
-        if week in CLOSED_WEEKS:
-            continue
-        count = 1 if week == 39 else 2 if week in MATH_SHORT else 3
-        result[week] = {'': list(range(start, start + count))}
-        start += count
-    if start != 118:
-        raise ValueError('Expected 117 numbered Mathematics lessons')
-    return result
-
-
 def allocate(subject, original):
-    if subject == 'MATH':
-        return math_allocation()
     if subject == 'PJPK':
         result = {}
         next_week = 1
@@ -104,6 +83,52 @@ def allocate(subject, original):
     return result
 
 
+def math_telegram_source(year):
+    return ROOT.parent / 'matematik' / f'RPT_Matematik_Tahun_{year}_2027_v28_SEMENTARA.pdf'
+
+
+def math_telegram_plan(year, dates):
+    source = math_telegram_source(year)
+    week_heading = re.compile(
+        r'MINGGU (\d{2})\s*\|\s*A: (\d{2}/\d{2})–(\d{2}/\d{2})'
+        r'\s*•\s*B: (\d{2}/\d{2})–(\d{2}/\d{2})\s*\|\s*([0-3]) LESSON\b'
+    )
+    weeks = {}
+    counts = {}
+    week = None
+    with fitz.open(source) as pdf:
+        for page in pdf:
+            events = []
+            for block in page.get_text('dict')['blocks']:
+                for line in block.get('lines', ()):
+                    if line['bbox'][0] > 50:
+                        continue
+                    label = ''.join(span['text'] for span in line['spans']).strip()
+                    heading = week_heading.match(label)
+                    lesson = LESSON.fullmatch(label)
+                    if heading or lesson:
+                        events.append((line['bbox'][1], heading, lesson))
+            for _, heading, lesson in sorted(events, key=lambda event: event[0]):
+                if heading:
+                    number = int(heading[1])
+                    if number != len(weeks) + 1 or heading.groups()[1:5] != tuple(
+                            date.fromisoformat(d).strftime('%d/%m') for d in dates[number]):
+                        raise ValueError(f'{source}: unexpected calendar window {number}')
+                    week = number
+                    weeks[week] = []
+                    counts[week] = int(heading[6])
+                elif week is None or lesson[1]:
+                    raise ValueError(f'{source}: lesson outside the numbered weekly plan')
+                else:
+                    weeks[week].append(int(lesson[2]))
+    if (weeks.keys() != dates.keys()
+            or any(len(ids) != counts[n] for n, ids in weeks.items())
+            or {n for n, ids in weeks.items() if not ids} != CLOSED_WEEKS.keys()
+            or [number for ids in weeks.values() for number in ids] != list(range(1, 118))):
+        raise ValueError(f'{source}: incomplete Matematik teaching sequence')
+    return {n: {'': ids} for n, ids in weeks.items() if ids}
+
+
 def body_rect(page, rtl):
     right = page.rect.width - MARGIN
     x0, x1 = (LEFT, right - CELL_WIDTH) if rtl else (LEFT + CELL_WIDTH, right)
@@ -116,8 +141,12 @@ def pdf_rows(pdf, rtl):
         body = body_rect(page, rtl)
         for draw in page.get_drawings():
             rect = draw['rect']
-            if (draw['type'] != 'f' or abs(rect.x0 - LEFT) > 0.1
-                    or abs(rect.x1 - (page.rect.width - MARGIN)) > 0.1 or rect.y0 < TOP - 0.1):
+            right = page.rect.width - MARGIN
+            source_row = draw['type'] == 'f' and abs(rect.x0 - LEFT) <= 0.1
+            reflowed_row = draw['type'] == 's' and abs(rect.x0 - body.x0) <= 0.1
+            if not (source_row or reflowed_row) or rect.y0 < TOP - 0.1:
+                continue
+            if abs(rect.x1 - (right if source_row else body.x1)) > 0.1:
                 continue
             row = fitz.Rect(body.x0, rect.y0, body.x1, rect.y1)
             topic = fitz.Rect(510 if rtl else body.x0, row.y0,
@@ -127,15 +156,13 @@ def pdf_rows(pdf, rtl):
                           for line in block.get('lines', ()) for s in line['spans']
                           if abs(s['size'] - 8.1) < 0.05]
             matches = [m for m in identities if m]
+            if not matches and reflowed_row and page.get_text(clip=row).strip() in HOLIDAY.values():
+                continue
             if len(matches) != 1:
                 raise ValueError(f'Unexpected source row on page {page.number + 1}: {row}')
             match = matches[0]
             rows.append(((match[1] or '', int(match[2])), page.number, row))
     return rows
-
-
-def math_telegram_source(year):
-    return ROOT.parent / 'matematik' / f'RPT_Matematik_Tahun_{year}_2027_v28_SEMENTARA.pdf'
 
 
 MATH_LEGACY_WEEK_TEXT = re.compile(r'\bA:\s*\d{2}/\d{2}|\bLESSO\b|\bMPAT:|\d{2}/\d{2}[–-]\d{2}/\d{2}')
@@ -223,22 +250,18 @@ def clean_math_week_text(source, destination, year):
         pdf.save(destination, garbage=4, deflate=True, clean=True)
 
 
-def print_week(page, rect, week, dates, font, font_name, closed=False, numbers=()):
+def print_week(page, rect, week, dates, font, closed=False, lessons=None):
     page.draw_rect(rect, fill=GREEN, color=LINE, width=0.5)
     lines = [f'M{week:02d} - Cuti sekolah' if closed else f'M{week:02d}', 'Kumpulan A:',
              ' - '.join(dates[:2]), 'Kumpulan B:', ' - '.join(dates[2:])]
-    if numbers:
-        summary = f'Lesson {numbers[0]:03d}'
-        if len(numbers) > 1:
-            summary += f'-{numbers[-1]:03d} ({len(numbers)})'
-        lines.insert(1, summary)
-    space = min(11.3, (rect.height - 12) / len(lines))
-    first = rect.y0 + (rect.height - space * len(lines)) / 2 + 2.5
+    if lessons:
+        lines.insert(1, f'{len(lessons)} PdP ({lessons[0]:03d}-{lessons[-1]:03d})')
+    space = min(11.3, (rect.height - 12) / max(4, len(lines) - 1))
+    first = rect.y0 + (rect.height - space * (len(lines) - 1)) / 2 + 2.5
     for index, value in enumerate(lines):
         width = font.text_length(value, fontsize=7)
         x = rect.x1 - width - 5 if rect.x0 > 500 else rect.x0 + 7
-        page.insert_text((x, first + index * space), value, fontsize=7,
-                         fontname=font_name, color=INK)
+        page.insert_text((x, first + index * space), value, fontsize=7, fontname='RPTWeek', color=INK)
 
 
 def isolate_clip(fragments, source, page_no, clip):
@@ -256,7 +279,7 @@ def isolate_clip(fragments, source, page_no, clip):
     return page.number
 
 
-def add_page(pdf, bands, path_font, math):
+def add_page(pdf, bands, path_font):
     original = bands[0]
     rect = original.rect
     page = pdf.new_page(width=rect.width, height=rect.height)
@@ -264,12 +287,9 @@ def add_page(pdf, bands, path_font, math):
     page.show_pdf_page(header, bands, 0, clip=header)
     footer = fitz.Rect(0, 558, 755, rect.height)
     page.show_pdf_page(footer, bands, 1, clip=footer)
-    font_name = 'helv' if math else 'RPTWeek'
-    page.insert_font(fontname=font_name, fontfile=None if math else str(path_font))
+    page.insert_font(fontname='RPTWeek', fontfile=str(path_font))
     page.insert_text((775, 576), f'Halaman {page.number + 1}', fontsize=7,
-                     fontname=font_name, color=INK)
-    if math:
-        page.insert_text((LEFT, 588), MATH_NOTE, fontsize=7, fontname=font_name, color=INK)
+                     fontname='RPTWeek', color=INK)
     return page
 
 
@@ -291,10 +311,9 @@ def append_row(page, original, fragments, row_fragments, row, y, copied):
     return target.y1
 
 
-def render(source, target, rtl, assignments, dates, *, math=False):
+def render(source, target, rtl, assignments, dates, *, show_numbered_range=False):
     path_font = FONT_DIR / 'DejaVuSans.ttf'
-    font = fitz.Font('helv') if math else fitz.Font(fontfile=str(path_font))
-    font_name = 'helv' if math else 'RPTWeek'
+    font = fitz.Font(fontfile=str(path_font))
     with fitz.open(source) as original, fitz.open() as output, fitz.open() as fragments:
         rows = pdf_rows(original, rtl)
         week_for_row = {(component, num): week for week, plan in assignments.items()
@@ -312,7 +331,7 @@ def render(source, target, rtl, assignments, dates, *, math=False):
         isolate_clip(fragments, original, 1, fitz.Rect(0, 558, 755, rect.height))
         row_fragments = {identity: isolate_clip(fragments, original, page_no, clip)
                          for identity, page_no, clip in rows}
-        page = add_page(output, fragments, path_font, math)
+        page = add_page(output, fragments, path_font)
         y = TOP
         for week in sorted(assignments.keys() | HOLIDAY.keys()):
             body = body_rect(page, rtl)
@@ -320,34 +339,34 @@ def render(source, target, rtl, assignments, dates, *, math=False):
             if week in HOLIDAY:
                 height = 59
                 if y + height > BOTTOM:
-                    page, y = add_page(output, fragments, path_font, math), TOP
+                    page, y = add_page(output, fragments, path_font), TOP
                 page.draw_rect(fitz.Rect(body.x0, y, body.x1, y + height), color=LINE, width=0.5)
                 page.insert_text((body.x0 + 9, y + 30), HOLIDAY[week], fontsize=9,
-                                 fontname=font_name, color=INK)
+                                 fontname='RPTWeek', color=INK)
                 print_week(page, fitz.Rect(x, y, x + CELL_WIDTH, y + height),
-                           week, dates[week], font, font_name, closed=True)
+                           week, dates[week], font, closed=True)
                 y += height
                 continue
             pending = groups[week]
-            numbers = assignments[week][''] if math else ()
+            lessons = assignments[week][''] if show_numbered_range else None
             height = sum(row[2].height for row in pending)
             if y > TOP and y + height > BOTTOM:
-                page, y = add_page(output, fragments, path_font, math), TOP
+                page, y = add_page(output, fragments, path_font), TOP
             start = y
             for row in pending:
                 if y + row[2].height > BOTTOM:
-                    print_week(page, fitz.Rect(x, start, x + CELL_WIDTH, y), week, dates[week],
-                               font, font_name, numbers=numbers)
-                    page, y = add_page(output, fragments, path_font, math), TOP
+                    print_week(page, fitz.Rect(x, start, x + CELL_WIDTH, y), week, dates[week], font,
+                               lessons=lessons)
+                    page, y = add_page(output, fragments, path_font), TOP
                     start = y
                 if y + row[2].height > BOTTOM:
                     raise ValueError(f'{source}: one source row exceeds a page')
                 y = append_row(page, original, fragments, row_fragments, row, y, copied)
-            print_week(page, fitz.Rect(x, start, x + CELL_WIDTH, y), week, dates[week],
-                       font, font_name, numbers=numbers)
-        if math:
+            print_week(page, fitz.Rect(x, start, x + CELL_WIDTH, y), week, dates[week], font,
+                       lessons=lessons)
+        if show_numbered_range:
             output.subset_fonts()
-        output.save(target, garbage=4, deflate=True, clean=True, deflate_fonts=True, use_objstms=1)
+        output.save(target, garbage=4, deflate=True, clean=True, use_objstms=1)
         with fitz.open(target) as reopened:
             if original[0].get_pixmap().samples != reopened[0].get_pixmap().samples:
                 raise ValueError(f'{source}: cover changed')
@@ -379,8 +398,8 @@ def update_audit(allocation):
             f'{count} PdP × {freq}' for count, freq in sorted(Counter(counts.values()).items()))
         for week in (6, 19, 39):
             record[f'M{week:02d} calon'] = str(counts[week])
-        record['Status'] = ('Agihan 1–3 Lesson disemak; tempoh mengikut jadual kelas'
-                            if record['Subjek'] == 'MATH' else 'Agihan cuti penuh disemak')
+        record['Status'] = ('Agihan sepadan dengan PDF Telegram v28' if record['Subjek'] == 'MATH'
+                            else 'Agihan cuti penuh disemak')
     with AUDIT.open('w', encoding='utf-8', newline='') as file:
         writer = csv.DictWriter(file, fieldnames=fields, lineterminator='\n')
         writer.writeheader()
@@ -402,7 +421,7 @@ def main():
         outputs = []
         for key, record in manifest['files'].items():
             slug, year = key.split(':')
-            if slug not in SLUGS:
+            if slug not in (*SLUGS, 'matematik'):
                 continue
             path = ROOT / record['path']
             code = SUBJECTS[slug]
@@ -410,19 +429,21 @@ def main():
             if digest != record['sha256'] or digest != cover['source_sha256_by_subject_year'][key]:
                 raise ValueError(f'Source and cover hashes disagree for {path}')
             _, old = read_weeks(path, code)
-            if code != 'MATH' and not (CLOSED_WEEKS.keys() & old.keys()):
-                continue
-            new = allocate(code, old)
-            if old == new:
-                continue
+            if code == 'MATH':
+                new = math_telegram_plan(year, iso)
+                if old == new:
+                    continue
+            else:
+                if not (CLOSED_WEEKS.keys() & old.keys()):
+                    continue
+                new = allocate(code, old)
             candidate = Path(folder) / f'{slug}_{year}.pdf'
             source = path
             if code == 'MATH':
                 source = Path(folder) / f'math_source_{year}.pdf'
-                if old == new:
-                    continue
                 clean_math_week_text(path, source, year)
-            pages = render(source, candidate, code in RTL_SUBJECTS, new, dates, math=code == 'MATH')
+            pages = render(source, candidate, code in RTL_SUBJECTS, new, dates,
+                           show_numbered_range=(code == 'MATH'))
             published_dates, published = read_weeks(candidate, code)
             if published != new or published_dates != {w: iso[w] for w in new}:
                 raise ValueError(f'The new PDF does not match the proposed allocation for {path}')
@@ -430,9 +451,7 @@ def main():
             digest = sha256(data).hexdigest()
             manifest['pages'] += pages - record['pages']
             record.update(bytes=len(data), pages=pages, sha256=digest)
-            if code == 'MATH':
-                record['weekly_allocation_rebalanced'] = True
-            else:
+            if code != 'MATH':
                 record['full_school_closures_rescheduled'] = True
             cover['source_sha256_by_subject_year'][key] = digest
             outputs.append((candidate, path))

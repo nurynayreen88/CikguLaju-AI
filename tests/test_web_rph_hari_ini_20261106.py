@@ -122,6 +122,23 @@ class DailyTimetablePureTests(TestCase):
                 self.assertEqual(len(weekly_rpt_suggestion("Johor", date(2027, 10, 25), "ENGLISH", year)["lessons"][""]), 2)
                 self.assertEqual(weekly_rpt_suggestion("Johor", date(2027, 12, 3), "ENGLISH", year)["lessons"][""], [157, 158, 159, 160])
 
+    def test_math_weekly_suggestions_follow_the_same_117_pdp_plan_as_telegram(self):
+        short = {1, 5, 8, 10, 20, 30, 33, 35, 39}
+        for year in range(2, 7):
+            with self.subTest(year=year):
+                weeks = weekly_catalog()[f"MATH:{year}"]
+                self.assertEqual(set(map(int, weeks)), set(range(1, 45)) - {6, 19})
+                sequence = []
+                for n, data in sorted(weeks.items(), key=lambda item: int(item[0])):
+                    lessons = data[4][""]
+                    self.assertEqual(len(lessons), 2 if int(n) in short else 3)
+                    sequence.extend(lessons)
+                self.assertEqual(sequence, list(range(1, 118)))
+                self.assertEqual(
+                    weekly_rpt_suggestion("Pahang", date(2027, 1, 11), "MATH", year),
+                    {"week": 2, "group": "B", "lessons": {"": [3, 4, 5]}},
+                )
+
     def test_public_and_state_holidays_apply_to_other_subjects(self):
         for state, day in [("W.P. Kuala Lumpur", (2, 1)), ("Terengganu", (3, 4)),
                            ("Johor", (6, 8)), ("Selangor", (9, 16)), ("Sarawak", (10, 28))]:
@@ -135,20 +152,6 @@ class DailyTimetablePureTests(TestCase):
             with self.subTest(subject=subject):
                 self.assertNotIn("6", weeks)
                 self.assertNotIn("19", weeks)
-
-    def test_math_suggestions_cover_all_teaching_weeks_in_lesson_order(self):
-        from collections import Counter
-
-        for year in range(2, 7):
-            with self.subTest(year=year):
-                weeks = weekly_catalog()[f"MATH:{year}"]
-                self.assertEqual(set(map(int, weeks)), set(range(1, 45)) - {6, 19})
-                lessons = [week[4][""] for week in weeks.values()]
-                self.assertEqual([number for group in lessons for number in group], list(range(1, 118)))
-                self.assertEqual(Counter(map(len, lessons)), {1: 1, 2: 7, 3: 34})
-                self.assertEqual(weekly_rpt_suggestion("Johor", date(2027, 10, 25), "MATH", year), {
-                    "week": 39, "group": "B", "lessons": {"": [102]},
-                })
 
     def test_missing_schedule_is_empty_without_guessing(self):
         out=day_payload({"state_name":"Selangor"},{"entries":[]},

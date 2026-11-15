@@ -35,7 +35,7 @@ Kesemua 56 PDF KSSR kini mempunyai sifar PdP pada M06 dan M19. Lima PDF setiap s
 | Subjek | Dapatan agihan dalam PDF Web asal dan semakan 2026 |
 | --- | --- |
 | Bahasa Melayu | 164–166 PdP setahun. Lazimnya 5 PdP dan ada minggu 2–4. RPT 2026 memecahkan topik kepada baris kemahiran dan kadang-kadang memasukkan PKJR bersama. Kelima-lima PDF memuatkan 5 PdP pada M19. |
-| Matematik | 117 Lesson setahun setiap tahun. PDF asal tertumpu pada 25–28 minggu dan mencapai 11 Lesson dalam satu minggu. Agihan baharu menggunakan 42 minggu persekolahan. |
+| Matematik | 117 Lesson setahun setiap tahun. PDF Web asal mencapai 11 Lesson dalam satu minggu. Agihan baharu menggunakan 42 minggu persekolahan dan mengikut sumber Telegram v28. |
 | Sains | 92 / 103 / 88 / 116 / 84 PdP bagi Tahun 2–6. Tahun 6 Web mengandungi 84 PdP. Dua belas SP Kemahiran Proses Sains dalam indeks 96 masih perlu dipadankan. RPT 2026 menyusun penyiasatan dan SK/SP mengikut minggu. Semua tahun mempunyai 2–3 PdP pada M19. |
 | Pendidikan Islam | 112 / 147 / 151 / 143 / 143 PdP. RPT 2026 menggunakan tempoh berlainan seperti 30 minit dan 1 jam. Kelima-lima PDF memuatkan PdP pada M06. Kira minit tasmi berasingan sebelum menyebarkan semula bidang. |
 | Pendidikan Moral | 96 PdP dan agihan 2–3 seminggu. Semua tahun meletakkan 2 PdP pada M06 dan 3 pada M19. RPT 2026 mengelompokkan unit dan standard, dengan tempoh mengikut jadual. |
@@ -67,12 +67,12 @@ RPT Rozayus 2026 mengumpulkan SK dan SP mengikut tajuk dan julat minggu. Contohn
 | Minggu | Agihan Lesson | Cadangan minit setiap minggu |
 | --- | ---: | ---: |
 | M06 dan M19, cuti penuh | 0 | 0 |
-| M39, minggu Deepavali | 1 | 30 |
-| M01, M05, M10, M11, M20, M33 dan M35 | 2 | 90 |
-| 34 minggu lain | 3 | 150 |
+| M39, minggu Deepavali | 2 | 90 |
+| M01, M05, M08, M10, M20, M30, M33 dan M35 | 2 | 90 |
+| 33 minggu lain | 3 | 150 |
 | Jumlah setiap tahun | **117** | **5,760 minit / 96 jam** |
 
-Peruntukan masa minimum Matematik KSSR ialah [96 jam setahun](https://www.parlimen.gov.my/files/jindex/pdf/JDR30072025.pdf). Cadangan 150 minit seminggu, contohnya, boleh dibahagi kepada slot 60 + 60 + 30 minit mengikut jadual kelas dan keperluan Lesson. Setiap PDF memelihara turutan Lesson 001–117 dan muka depan. Teks jadual lama yang terselit dalam 17 baris telah dibuang dengan memulihkan sel kandungan daripada baris Telegram v28 yang sepadan nombor Lesson dan kod SP. RPH Hari Ini menggunakan tarikh dan julat Lesson daripada PDF yang sama. Peruntukan masa dalam dokumen ialah cadangan perancangan kerana tempoh setiap Lesson tidak dinyatakan pada sumber lama.
+Peruntukan masa minimum Matematik KSSR ialah [96 jam setahun](https://www.parlimen.gov.my/files/jindex/pdf/JDR30072025.pdf). Cadangan 150 minit seminggu boleh dibahagi kepada slot 60 + 60 + 30 minit. Pada minggu dua Lesson, sekolah boleh menggunakan agihan 60 + 30 minit mengikut keperluan Lesson dan waktu yang masih tersedia. Cadangan 33 × 150 dan 9 × 90 minit berjumlah 5,760 minit. Sumber Telegram v28 menentukan turutan dan bilangan mingguan Web serta RPH Hari Ini. Dalam 17 baris Web yang mengandungi serpihan teks jadual lama, kandungan dipulihkan daripada Lesson dan kod SP sepadan di Telegram. Kesemua 585 Lesson dan muka depan kekal dalam siri masing-masing.
 
 ## Sains Tahun 6
 
@@ -98,5 +98,3 @@ Kiraan 96 ialah jumlah SP dalam DSKP. RPT Web mempunyai 84 PdP bernombor. Unit 1
 - 43 ujian setempat meliputi akses, cetakan profil, RPH Hari Ini, tarikh cuti, katalog dan hashnya. Semakan cetak muka depan pada semua 56 PDF lulus dengan 12 sampel visual. Audit kebocoran teks pembangunan melaporkan 0 dapatan pada 56 PDF.
 - English Web aktif pada 15:31 MYT melalui #752. Versi Telegram menerapkan agihan sama kepada lima fail bersumber sendiri melalui #753. Pembaikan Pendidikan Muzik, RBT dan penyelarasan 30 fail tersebut meliputi PDF Web.
 - Penyelarasan 30 PDF melalui [#758](https://github.com/nurynayreen88/CikguLaju-AI/pull/758) digabungkan pada `7933e96`. Render membatalkan binaan `dep-dbsmu3u417fc73fmtigg` pada 16:36 MYT kerana minit binaan tempoh bil habis. Web masih menggunakan `00e525f` pada masa semakan. Status aktif bagi fail baharu perlu disahkan selepas binaan kembali tersedia.
-
-- Render turut membatalkan binaan Matematik #759 pada 16:48 MYT kerana minit binaan habis. Perubahan belum tersedia di Web.
