@@ -30,7 +30,7 @@ Rujukan takwim ialah [Surat Siaran KPM dan Lampiran A–C](https://www.moe.gov.m
 
 ## Subjek lain
 
-Sebanyak 43 daripada 56 PDF asal mempunyai PdP pada satu atau kedua-dua minggu cuti penuh. Selepas lima PDF English dijadualkan semula, masih ada 38 PDF dalam tujuh subjek yang memerlukan pengagihan semula. Cadangan di RPH Hari Ini disekat pada tarikh cuti untuk semua subjek. Jadual dalam PDF subjek lain masih memerlukan pembetulan.
+Sebanyak 43 daripada 56 PDF asal mempunyai PdP pada satu atau kedua-dua minggu cuti penuh. Selepas lima PDF English, lima Pendidikan Muzik dan tiga RBT dijadualkan semula, masih ada 30 PDF dalam enam subjek yang memerlukan pengagihan semula. Cadangan di RPH Hari Ini disekat pada tarikh cuti untuk semua subjek.
 
 | Subjek | Dapatan agihan dalam PDF Web asal dan semakan 2026 |
 | --- | --- |
@@ -41,9 +41,9 @@ Sebanyak 43 daripada 56 PDF asal mempunyai PdP pada satu atau kedua-dua minggu c
 | Pendidikan Moral | 96 PdP dan agihan 2–3 seminggu. Semua tahun meletakkan 2 PdP pada M06 dan 3 pada M19. RPT 2026 mengelompokkan unit dan standard, dengan tempoh mengikut jadual. |
 | PJPK | RPT 2026 menyenaraikan PJ dan PK secara berasingan. PDF Web mengandungi 33–38 PJ serta 32–35 PK setahun. Kelima-lima PDF mempunyai sekurang-kurangnya satu komponen pada M06 dan M19. |
 | Bahasa Arab | 58–60 PdP, biasanya 1–2 seminggu. RPT sekolah 2026 menggabungkan kemahiran dalam satu minggu dan memasukkan pengukuhan. Semua tahun meletakkan satu PdP pada M19. |
-| Pendidikan Muzik | 35 PdP, satu setiap minggu yang digunakan, termasuk M06 dan M19. RPT 2026 menggunakan tema dan objektif mingguan. Sahkan jumlah minit selepas mengalih dua sesi. |
+| Pendidikan Muzik | 35 PdP dan satu setiap minggu yang digunakan. M06 dan M19 kini kosong dalam PDF Web. Sesi selepas cuti mengikut minggu persekolahan seterusnya. RPT 2026 menggunakan tema dan objektif mingguan. Sahkan tempoh slot bagi jumlah masa setahun. |
 | Pendidikan Seni Visual | 42 PdP, satu seminggu dan kedua-dua cuti penuh sudah kosong. RPT 2026 membahagikan penghasilan karya, apresiasi dan sambungan projek. Sahkan tempoh dan pengelompokan projek. |
-| RBT | 32 PdP, satu seminggu dan PDF menyatakan 60 minit bagi PdP. Kesemua tiga tahun memasukkan satu PdP pada M19. RPT 2026 menyusun SK/SP dan projek berperingkat. |
+| RBT | 32 PdP, satu seminggu dan PDF menyatakan 60 minit bagi PdP. M19 kini kosong dalam ketiga-tiga PDF Web. M20 menjadi minggu pertama selepas cuti. RPT 2026 menyusun SK/SP dan projek berperingkat. |
 | Sejarah | 36 PdP, satu seminggu dengan M06 dan M19 kosong. RPT 2026 menggabungkan beberapa SP dalam satu minggu. Padankan skop dan tempoh setiap PdP dengan rancangan sekolah. |
 | DLP Mathematics / Science | Lapan fail Year 2–5 meliputi 42 julat. Kedua-dua minggu cuti penuh kosong. Jumlah sebenar termasuk ulang kaji sepadan dengan 96 jam Mathematics dan 48/64 jam Science. Beberapa minggu pendek, termasuk Deepavali, masih perlu dipadankan dengan minit slot kelas. |
 
@@ -53,4 +53,4 @@ Rujukan bagi subjek lain dihimpunkan daripada [RPT SK 2026](https://www.dminspir
 
 - Lima PDF padan dengan katalog mingguan, mengandungi 800 Lesson unik mengikut urutan dan mengekalkan kandungan lajur pelajaran serta muka depan. Gambar sampel Year 2–6 disemak.
 - 43 ujian setempat meliputi akses, cetakan profil, RPH Hari Ini, tarikh cuti, katalog dan hashnya. Semakan cetak muka depan pada semua 56 PDF lulus dengan 12 sampel visual. Audit kebocoran teks pembangunan melaporkan 0 dapatan pada 56 PDF.
-- Status awal ialah DALAM SEMAKAN untuk Web. RPT Telegram mempunyai fail dan sumber berasingan. Kesepadanan jadual serta pengesahan muat turun produksi masih diperlukan.
+- English Web aktif pada 15:31 MYT melalui #752. Versi Telegram menerapkan agihan sama kepada lima fail bersumber sendiri melalui #753. Pembaikan Pendidikan Muzik dan RBT hanya meliputi fail Web.
