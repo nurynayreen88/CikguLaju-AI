@@ -218,6 +218,11 @@
    : prefix+(c.slot.subject_code==="PJPK"&&!c.controls.component.value
       ? " — Pilih PJ atau PK untuk melihat cadangan."
       : " — Tiada "+label+" untuk pilihan ini.");
+  const capacity=c.slot.rpt_capacity;
+  if(capacity&&capacity.scheduled_minutes<capacity.required_minutes){
+   c.weeklySuggestion.textContent+=". Jadual kelas ada "+capacity.scheduled_minutes+
+    " minit minggu ini. RPT memerlukan "+capacity.required_minutes+" minit.";
+  }
  }
  function renderProgress(c){
   const component=selectedComponent(c);

@@ -4,7 +4,7 @@ The schedule comes only from authenticated teacher_profiles.class_profiles.
 Weekly suggestions come from the published Web RPT. Teachers still select
 the exact Lesson/PdP in the existing native RPH flow.
 """
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from functools import lru_cache
 import json
 from pathlib import Path
@@ -18,7 +18,7 @@ from web.rph_today_progress import (
 )
 from web.teacher_profile_routes import _auth, _body
 from web.teacher_profile_store import (
-    ProfileUnavailable, ProfileValidation, STATES, get_profile, get_schedule,
+    ProfileUnavailable, ProfileValidation, STATES, TIME, get_profile, get_schedule,
 )
 from web.unified_rph_web import SUBJECT_LABELS
 
@@ -122,18 +122,25 @@ def weekly_catalog():
     return json.loads(RPT_WEEKLY_CATALOG.read_text(encoding="utf-8"))
 
 
+def is_school_day(state, target):
+    group_a = state in FRI_SAT
+    day = target.strftime("%m-%d")
+    weekend = (4, 5) if group_a else (5, 6)
+    return not (target.weekday() in weekend
+                or day in COMMON_CLOSURES
+                or (group_a and day in GROUP_A_CLOSURES)
+                or (not group_a and day in GROUP_B_CLOSURES)
+                or state in STATE_CLOSURES.get(day, ())
+                or (not group_a and state != "Sarawak" and day in ("10-27", "10-29")))
+
+
 def weekly_rpt_suggestion(state, target, subject, year):
     state = SCHOOL_STATES.get(state.strip().casefold()) if isinstance(state, str) else None
     if target.year != 2027 or state is None:
         return None
     state = state.removeprefix("W.P. ")
     group_a = state in FRI_SAT
-    day = target.strftime("%m-%d")
-    if (day in COMMON_CLOSURES
-            or (group_a and day in GROUP_A_CLOSURES)
-            or (not group_a and day in GROUP_B_CLOSURES)
-            or state in STATE_CLOSURES.get(day, ())
-            or (not group_a and state != "Sarawak" and day in ("10-27", "10-29"))):
+    if not is_school_day(state, target):
         return None
     try:
         weeks = weekly_catalog().get(f"{subject}:{year}", {})
@@ -146,6 +153,34 @@ def weekly_rpt_suggestion(state, target, subject, year):
             return {"week": int(week), "group": "A" if group_a else "B",
                     "lessons": row[4]}
     return None
+
+
+def english_week_capacity(rows, state, class_name, year, suggestion):
+    """Compare the saved class timetable with this week's 60-minute SOW Lessons."""
+    offset = 0 if suggestion["group"] == "A" else 2
+    week = weekly_catalog()[f"ENGLISH:{year}"][str(suggestion["week"])]
+    start, end = map(date.fromisoformat, week[offset:offset + 2])
+    state = SCHOOL_STATES[state.strip().casefold()].removeprefix("W.P. ")
+    dates = (start + timedelta(days=step) for step in range((end - start).days + 1))
+    school_days = {WEEKDAY[day.weekday()] for day in dates if is_school_day(state, day)}
+    required = 60 * len(suggestion["lessons"][""])
+    scheduled = 0
+    for row in rows:
+        if not isinstance(row, dict) or row.get("day") not in school_days:
+            continue
+        name = row.get("class_name")
+        if (not isinstance(name, str) or class_key(name) != class_key(class_name)
+                or subject_identity(row.get("subject"))[0] != "ENGLISH"):
+            continue
+        begin, finish = row.get("start"), row.get("end")
+        if (not isinstance(begin, str) or not isinstance(finish, str)
+                or not TIME.fullmatch(begin) or not TIME.fullmatch(finish)
+                or begin >= finish):
+            return None
+        hours, minutes = map(int, finish.split(":"))
+        start_hours, start_minutes = map(int, begin.split(":"))
+        scheduled += (hours - start_hours) * 60 + minutes - start_minutes
+    return {"scheduled_minutes": scheduled, "required_minutes": required}
 
 
 def day_payload(profile, schedule, target, *, today=None):
@@ -181,12 +216,14 @@ def day_payload(profile, schedule, target, *, today=None):
                   "Tahun kelas belum jelas; semak nama kelas di Profil Guru."
                   if year is None else
                   "Subjek belum dapat dipadankan; semak nama subjek di Profil Guru.")
-        selected.append({"day":day,"start":start,"end":end,
-                         "class_name":cls,"subject":subject,
-                         "year":year,"subject_code":code,"component":component,
-                         "can_prepare":valid,"reason":reason,
-                         "rpt_suggestion": weekly_rpt_suggestion(state, target, code, year)
-                         if valid and not weekend else None})
+        suggestion = weekly_rpt_suggestion(state, target, code, year) if valid and not weekend else None
+        entry = {"day":day,"start":start,"end":end,
+                 "class_name":cls,"subject":subject,
+                 "year":year,"subject_code":code,"component":component,
+                 "can_prepare":valid,"reason":reason,"rpt_suggestion":suggestion}
+        if code == "ENGLISH" and suggestion:
+            entry["rpt_capacity"] = english_week_capacity(rows, state, cls, year, suggestion)
+        selected.append(entry)
     selected.sort(key=lambda x:(x["start"],x["end"],x["class_name"].casefold()))
     return {
         "date":target.isoformat(),"day":day,"state":state,

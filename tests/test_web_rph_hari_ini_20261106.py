@@ -122,6 +122,29 @@ class DailyTimetablePureTests(TestCase):
                 self.assertEqual(len(weekly_rpt_suggestion("Johor", date(2027, 10, 25), "ENGLISH", year)["lessons"][""]), 2)
                 self.assertEqual(weekly_rpt_suggestion("Johor", date(2027, 12, 3), "ENGLISH", year)["lessons"][""], [157, 158, 159, 160])
 
+    def test_english_capacity_uses_same_class_and_excludes_the_state_holiday(self):
+        english = dict(EXAMPLE["entries"][0], class_name="3 Cemerlang")
+        schedule = {"entries": [
+            dict(english, day="Isnin", start="08:00", end="09:00"),
+            dict(english, day="Rabu", start="09:00", end="10:30", subject="BI"),
+            dict(english, day="Jumaat", start="10:00", end="11:30"),
+            dict(english, day="Khamis", class_name="3 Amanah"),
+            dict(english, day="Khamis", subject="Sains"),
+        ]}
+        for state, minutes in [("Selangor", 150), ("Pahang", 240)]:
+            with self.subTest(state=state):
+                target = date(2027, 1, 18)
+                result = day_payload({"state_name": state}, schedule, target, today=target)
+                self.assertEqual(result["entries"][0]["rpt_capacity"], {
+                    "scheduled_minutes": minutes, "required_minutes": 240,
+                })
+                self.assertEqual(result["entries"][0]["rpt_suggestion"]["lessons"], {
+                    "": [8, 9, 10, 11],
+                })
+        holiday = date(2027, 1, 22)
+        result = day_payload({"state_name": "Selangor"}, schedule, holiday, today=holiday)
+        self.assertNotIn("rpt_capacity", result["entries"][0])
+
     def test_math_weekly_suggestions_follow_the_same_117_pdp_plan_as_telegram(self):
         short = {1, 5, 8, 10, 20, 30, 33, 35, 39}
         for year in range(2, 7):
