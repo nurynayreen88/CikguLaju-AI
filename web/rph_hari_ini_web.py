@@ -13,11 +13,14 @@ from zoneinfo import ZoneInfo
 from flask import Blueprint, jsonify, request
 from itsdangerous import BadSignature
 
-from web.rph_today_progress import attach_progress, lesson_signer, read_progress, save_completion
+from web.rph_today_progress import (
+    attach_progress, class_key, lesson_signer, read_progress, read_progress_summary, save_completion,
+)
 from web.teacher_profile_routes import _auth, _body
 from web.teacher_profile_store import (
     ProfileUnavailable, ProfileValidation, STATES, get_profile, get_schedule,
 )
+from web.unified_rph_web import SUBJECT_LABELS
 
 bp = Blueprint("rph_hari_ini_web", __name__)
 WEEKDAY = ("Isnin", "Selasa", "Rabu", "Khamis", "Jumaat", "Sabtu", "Ahad")
@@ -218,6 +221,46 @@ def hari_ini():
             result["progress_unavailable"] = True
     return jsonify(result)
 
+
+
+@bp.get("/api/web/rph/hari-ini/progress")
+def progress_summary():
+    config, uid, error = _auth()
+    if error is not None:
+        return error
+    if request.args:
+        return jsonify({"error": "Parameter tidak dijangka"}), 400
+    today = malaysia_today()
+    try:
+        schedule = get_schedule(config["supabase_url"], config["supabase_key"], uid)
+        summaries = read_progress_summary(config, uid, today)
+    except (ProfileValidation, ProfileUnavailable):
+        return jsonify({"error": "Kemajuan PdP belum dapat disemak."}), 503
+
+    class_names = {}
+    scopes = set(summaries)
+    for slot in schedule["entries"]:
+        name = slot.get("class_name")
+        code, component = subject_identity(slot.get("subject"))
+        if not class_year(name) or not code:
+            continue
+        key = class_key(name)
+        class_names.setdefault(key, name)
+        if code == "PJPK" and component is None:
+            scopes.update(((key, code, "PJ"), (key, code, "PK")))
+        else:
+            scopes.add((key, code, component or ""))
+
+    entries = []
+    component_labels = {"PJ": "Pendidikan Jasmani", "PK": "Pendidikan Kesihatan"}
+    for key, code, component in sorted(scopes):
+        entries.append({
+            "class_name": class_names.get(key, key),
+            "subject": component_labels.get(component) or SUBJECT_LABELS[code],
+            "label": "Lesson" if code == "ENGLISH" else "PdP",
+            **summaries.get((key, code, component), {"completed": 0}),
+        })
+    return jsonify({"year": today.year, "entries": entries})
 
 @bp.post("/api/web/rph/hari-ini/completion")
 def complete_pdp():

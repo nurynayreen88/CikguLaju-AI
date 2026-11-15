@@ -56,6 +56,59 @@
   if(book&&!text.includes(book))text+=" • "+book;
   return text;
  }
+ const summaryStatus=document.getElementById("pdp-summary-status");
+ const summaryList=document.getElementById("pdp-summary-list");
+ const summaryRetry=document.getElementById("pdp-summary-retry");
+ let summaryRequest=0;
+
+ async function loadProgressSummary(){
+  if(!summaryList)return;
+  const ticket=++summaryRequest;
+  summaryRetry.hidden=true;
+  summaryStatus.textContent="Memuatkan kemajuan PdP…";
+  summaryList.replaceChildren();
+  try{
+   const response=await fetch("/api/web/rph/hari-ini/progress",{
+    credentials:"same-origin",cache:"no-store",redirect:"error"
+   });
+   if(!response.ok)throw Error("Kemajuan PdP belum dapat disemak.");
+   const {year,entries}=await response.json();
+   if(ticket!==summaryRequest)return;
+   if(!Number.isInteger(year)||!Array.isArray(entries))
+    throw Error("Kemajuan PdP belum dapat disemak.");
+   const classes=new Map();
+   for(const row of entries){
+    if(!classes.has(row.class_name))classes.set(row.class_name,[]);
+    classes.get(row.class_name).push(row);
+   }
+   const content=document.createDocumentFragment();
+   const dates=new Intl.DateTimeFormat("ms-MY",{
+    timeZone:"Asia/Kuala_Lumpur",day:"numeric",month:"short"
+   });
+   for(const [name,rows] of classes){
+    const heading=create("h4","",name);
+    const subjects=create("ul","pdp-summary-subjects");
+    for(const row of rows){
+     const item=create("li");
+     const detail=row.completed
+      ? row.completed+" "+row.label+" selesai · Terakhir: "+row.label+" "+
+        row.last_number+" ("+dates.format(new Date(row.last_date+"T12:00:00+08:00"))+")"
+      : "Belum ada rekod PdP";
+     item.append(create("strong","",row.subject),create("span","notice",detail));
+     subjects.append(item);
+    }
+    content.append(heading,subjects);
+   }
+   summaryList.replaceChildren(content);
+   summaryStatus.textContent=entries.length?String(year):
+    "Tambah waktu mengajar dalam Jadual Waktu untuk melihat kemajuan di sini.";
+  }catch(_error){
+   if(ticket!==summaryRequest)return;
+   summaryStatus.textContent="Kemajuan PdP belum dapat disemak.";
+   summaryRetry.hidden=false;
+  }
+ }
+
  function updateAll(){
   const selectable=choices.filter(c=>c.slot.can_prepare);
   const incomplete=selectable.filter(c=>!c.controls.lesson.value);
@@ -175,8 +228,10 @@
   const completed=progress?.completed;
   const next=previous&&previous<999?previous+1:null;
   c.progressHint.textContent=completed
-   ?describe(completed)+" ditanda selesai untuk slot ini."
-   :previous?"Terakhir selesai: "+describe(previous)+".":"";
+   ?describe(completed)+" selesai untuk slot ini."
+   :previous?"Terakhir selesai "+describe(previous)+".":"";
+  if(c.progressActions&&!c.progressActions.hidden&&!confirm.checked)
+   c.progressHint.textContent+=(c.progressHint.textContent?" ":"")+"Sahkan hari PdP di atas untuk menyimpan rekod.";
   const selection=c.controls.lesson.selectedOptions[0];
   let nextAvailable=false;
   for(const option of c.controls.lesson.options){
@@ -189,7 +244,9 @@
    if(option.textContent!==title)option.textContent=title;
   }
   if(!completed&&nextAvailable)c.progressHint.textContent+=" Sambungan kelas: "+describe(next)+".";
-  c.complete.textContent=completed?"Kemas kini PdP":"Selesai PdP";
+  c.complete.hidden=Boolean(completed)&&
+    (!selection?.dataset.completionToken||lessonNumber(selection.dataset.lessonLabel)===completed);
+  c.complete.textContent=completed?"Betulkan rekod PdP":"Selesai PdP";
   c.complete.disabled=savingProgress||reviewing||!confirm.checked||
     !selection?.dataset.completionToken||lessonNumber(selection.dataset.lessonLabel)===completed;
   c.undoCompletion.hidden=!completed;
@@ -211,6 +268,7 @@
    });
    const data=await response.json().catch(()=>({}));
    if(!response.ok||!Array.isArray(data.entries))throw Error(data.error||"Rekod PdP belum dapat disahkan.");
+   if(document.getElementById("view-account")?.hidden===false)void loadProgressSummary();
    if(c.ticket!==requestId)return;
    for(const choice of choices){
     const fresh=data.entries.find(slot=>slot.start===choice.slot.start&&
@@ -384,15 +442,15 @@
    c.progressHint=create("p","notice");
    c.progressStatus=create("p","notice");
    c.progressStatus.setAttribute("role","status");
-   c.complete=create("button","secondary","Selesai PdP");
+   c.complete=create("button","","Selesai PdP");
    c.undoCompletion=create("button","secondary","Batal tanda selesai");
    c.complete.type=c.undoCompletion.type="button";
    c.complete.addEventListener("click",()=>{void changeCompletion(c);});
    c.undoCompletion.addEventListener("click",()=>{void changeCompletion(c,true);});
-   const actions=create("div","daily-rph-batch");
-   actions.hidden=!progressEditable;
-   actions.append(c.complete,c.undoCompletion);
-   c.editor.append(c.progressHint,actions,c.progressStatus);
+   c.progressActions=create("div","daily-rph-batch daily-rph-progress-actions");
+   c.progressActions.hidden=!progressEditable;
+   c.progressActions.append(c.complete,c.undoCompletion);
+   c.editor.append(c.progressHint,c.progressActions,c.progressStatus);
   }
   c.students=create("input");
   c.students.type="number";
@@ -672,7 +730,19 @@
  dateInput.addEventListener("change",()=>{void load(dateInput.value);});
  generateAll.addEventListener("click",()=>{void generate();});
  manual.addEventListener("click",()=>showWebView("rph"));
+ summaryRetry?.addEventListener("click",()=>{void loadProgressSummary();});
+ document.getElementById("profile-refresh")?.addEventListener("click",()=>{void loadProgressSummary();});
+ document.getElementById("pdp-summary-today")?.addEventListener("click",()=>{
+  showWebView("today");
+  window.rphTodayLoad();
+  document.getElementById("view-today-heading").focus();
+ });
+ document.getElementById("today-profile-progress")?.addEventListener("click",()=>{
+  showWebView("account");
+  document.getElementById("pdp-summary-heading").focus();
+ });
  window.rphTodayLoad=()=>{void load(dateInput.value);};
+ window.cikgulajuProgressLoad=loadProgressSummary;
  const workspace=document.getElementById("workspace"),todayView=document.getElementById("view-today");
  if(workspace&&!workspace.hidden&&todayView&&!todayView.hidden)void load(dateInput.value);
 })();

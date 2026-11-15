@@ -386,7 +386,16 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .daily-rph-selection{margin:9px 0 0;font-size:.91rem;color:#345c56;overflow-wrap:anywhere}
 .daily-rph-result-card .notice{margin:12px 0 0}
 .daily-rph-materials{list-style:none;padding:0;margin:0;display:grid;gap:9px}
+.pdp-summary-subjects{display:grid;gap:8px;padding:0;list-style:none;margin:0 0 14px}
+.pdp-summary-subjects li{display:grid;gap:2px;padding:8px 10px;border-left:2px solid #d8e3df}
+#pdp-summary-list h4{margin:12px 0 6px}
+#pdp-summary-list .notice{margin:0}
 .daily-rph-batch{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:16px}
+.daily-rph-progress-actions{margin-top:8px}
+.daily-rph-progress-actions button,#pdp-summary button,#today-profile-progress{min-height:44px}
+.daily-rph-progress-actions button{background:#087568;color:#fff}
+.daily-rph-progress-actions button.secondary,#pdp-summary button,#today-profile-progress{background:#fff;color:#1a526a;border:1px solid #c7d8de}
+.daily-rph-progress-actions button:disabled{background:#eaf0ed;color:#526763;cursor:not-allowed}
 #today-generate-all{background:#087568;color:white;border:0;border-radius:11px;padding:14px 20px;font:inherit;font-weight:700;cursor:pointer}
 #today-generate-all:disabled{background:#d8e4df;color:#587168;cursor:not-allowed}
 #today-generate-status{margin:8px 0 0}
@@ -657,11 +666,12 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </section>
 
 <section id="view-today" class="app-view" aria-labelledby="view-today-heading" hidden>
-  <h2 id="view-today-heading">RPH Hari Ini</h2>
+  <h2 id="view-today-heading" tabindex="-1">RPH Hari Ini</h2>
   <p>Semak cadangan minggu daripada RPT, kemudian pilih Lesson/PdP mengikut kemajuan kelas. Tekan <strong>Jana Bahan Semua Lesson</strong> untuk melihat bahan di bawah. Selepas mengajar, tekan <strong>Selesai PdP</strong> pada slot berkenaan.</p>
   <div class="daily-rph-toolbar">
     <div><label for="today-date">Tarikh PdP</label><input id="today-date" type="date" aria-label="Tarikh RPH Hari Ini"></div>
     <button type="button" id="today-refresh">Muat Semula Jadual</button>
+    <button type="button" id="today-profile-progress" class="secondary">Lihat Kemajuan PdP</button>
   </div>
   <p id="today-status" class="notice" role="status" aria-live="polite">Menyemak jadual waktu…</p>
   <label id="today-confirm-wrap" class="daily-rph-confirm" hidden>
@@ -748,6 +758,15 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <h2 id="view-account-heading">Profil Guru</h2>
 <p>Maklumat guru yang sama boleh dilihat dan dikemas kini melalui Telegram atau Web. Isi sekali untuk memudahkan penyediaan RPH.</p>
 <p id="profile-access-summary" class="profile-access-status" role="status">Memuatkan status akaun…</p><p><button type="button" id="profile-refresh" class="profile-refresh" aria-label="Refresh profil dari Telegram atau Web">🔄 Refresh Profil &amp; Jadual</button></p>
+<section id="pdp-summary" class="profile-setup-guide" aria-labelledby="pdp-summary-heading">
+  <h3 id="pdp-summary-heading" tabindex="-1">Kemajuan PdP</h3>
+  <p id="pdp-summary-status" class="notice" role="status"></p>
+  <div id="pdp-summary-list"></div>
+  <div class="profile-actions">
+    <button type="button" class="secondary" id="pdp-summary-retry" hidden>Cuba Lagi</button>
+    <button type="button" class="secondary" id="pdp-summary-today">Buka RPH Hari Ini</button>
+  </div>
+</section>
 <section id="profile-setup-guide" class="profile-setup-guide" aria-labelledby="profile-setup-title">
 <h3 id="profile-setup-title">Persediaan Profil Guru</h3>
 <p id="profile-setup-status" role="status" aria-live="polite">Menyemak maklumat tersimpan…</p>
@@ -1157,6 +1176,7 @@ function showWebView(name){
   if(active)button.setAttribute("aria-current","page");
   else button.removeAttribute("aria-current");
  }
+ if(name==="account")window.cikgulajuProgressLoad?.();
 }
 webViewButtons.forEach(button=>button.addEventListener("click",()=>{
  showWebView(button.dataset.webView);
@@ -2110,8 +2130,8 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
-<script src="/assets/rph-today.js?v=pdp-completion-20261115"></script>
-<script src="/assets/teacher-profile.js?v=manual-timetable-20261115"></script>
+<script src="/assets/rph-today.js?v=pdp-profile-20261115"></script>
+<script src="/assets/teacher-profile.js?v=profile-pdp-20261115"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>
 <script src="/assets/admin-usage.js?v=payment-inbox-20261114"></script>

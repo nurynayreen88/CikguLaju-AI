@@ -63,6 +63,35 @@ def read_progress(config, uid, target):
     return rows
 
 
+
+def read_progress_summary(config, uid, today):
+    """Aggregate distinct completions from the current calendar year."""
+    filters = {
+        "select": "class_key,subject_code,component,pdp_date,sequence_no",
+        "teacher_id": f"eq.{uid}",
+        "and": f"(pdp_date.gte.{today.year}-01-01,pdp_date.lte.{today.isoformat()})",
+        "order": "pdp_date.desc,start_time.desc,class_key,subject_code",
+        "limit": 500,
+    }
+    summaries = {}
+    for offset in range(0, 100000, filters["limit"]):
+        rows = _request(config, TABLE, "GET", filters={**filters, "offset": offset})
+        if not isinstance(rows, list):
+            raise ProfileUnavailable("Format rekod PdP tidak sah")
+        for row in rows:
+            scope = row["class_key"], row["subject_code"], row["component"]
+            if scope not in summaries:
+                summaries[scope] = {
+                    "last_number": row["sequence_no"],
+                    "last_date": row["pdp_date"],
+                    "completed": set(),
+                }
+            summaries[scope]["completed"].add(row["sequence_no"])
+        if len(rows) < filters["limit"]:
+            return {scope: {**summary, "completed": len(summary["completed"])}
+                    for scope, summary in summaries.items()}
+    raise ProfileUnavailable("Rekod PdP melebihi had semakan")
+
 def save_completion(config, uid, day, slot, component, number):
     key = {
         "teacher_id": uid, "class_key": class_key(slot["class_name"]),
