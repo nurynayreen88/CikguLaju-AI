@@ -93,6 +93,22 @@ class TableDirectionAndLanguageRegression(unittest.TestCase):
                 self.assertEqual(page.get_text().count("M02"),1)
                 self.assertIn("1.1.1",page.get_text())
 
+    def test_pi_verse_range_keeps_source_order_in_pdf(self):
+        dest = self.path / "pi-range.pdf"
+        rows = [item(1)]
+        rows[0]["sp"] = "سورة البقرة أية 1-29 دڠن بتول"
+        build_preview("pendidikan_islam", 4, rows, dest)
+        self.assertEqual(rows[0]["sp"], "سورة البقرة أية 1-29 دڠن بتول")
+        with fitz.open(dest) as pdf:
+            spans = [
+                span["text"]
+                for block in pdf[1].get_text("dict")["blocks"]
+                for line in block.get("lines", [])
+                for span in line["spans"]
+            ]
+        self.assertTrue(any("1-29" in text for text in spans), spans)
+        self.assertFalse(any("29-1" in text for text in spans), spans)
+
     def test_english_five_english_ltr_headers(self):
         with self.pdf("english") as pdf:
             page = pdf[1]
