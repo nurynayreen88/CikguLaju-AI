@@ -31,10 +31,10 @@ def filename(lesson_id, fmt):
     return f"CIKGULAJU_RPH_{lesson_id}." + ("docx" if fmt == "word" else "pdf")
 
 
-def render(subject, unit, lesson, fmt, teacher):
+def render(subject, unit, lesson, fmt, teacher, *, year=2):
     heading = (
         "Daily Lesson Plan",
-        f"{SUBJECTS[subject]} (DLP) · Year 2 SK",
+        f"{SUBJECTS[subject]} (DLP) · Year {year} SK",
         lesson["title"],
     )
     class_details = (
