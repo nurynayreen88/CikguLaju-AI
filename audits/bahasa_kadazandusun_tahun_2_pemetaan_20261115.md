@@ -189,3 +189,59 @@ Semakan struktur meliputi 114 halaman dan 53 rujukan trek unik. Semua 61 kod SP 
 | 114 | 4.2 | 4.2.1 (ii) | 76 | 53 |
 
 Susulan penyediaan bahan meliputi semakan RPT sekolah, pecahan dan takrif SP mengikut aktiviti, fail Buku Aktiviti serta padanan audio sebenar sebelum membina RPT 2027 dan RPH.
+
+## Silang semak RPT Bahasa Kadazandusun 2025
+
+[RPT Tahun 2 sesi 2025](https://id.scribd.com/document/852169526/RPT-BKD-TAHUN-2-2025) menyusun lima blok halaman bagi setiap unit. Kesemua 12 unit dan halaman 1–114 sepadan dengan indeks buku teks. RPT dan buku teks mempunyai set 61 kod SP induk yang sama. Perbandingan set kod ini meliputi seluruh buku. Padanan SP khusus pada pecahan halaman masih perlu disemak bersama DSKP asal. Contohnya, huraian 1.2.1 dalam RPT Unit 1 merujuk nombor dan bentuk. DSKP asal dan aktiviti cetak ms. 1 merujuk sebutan bunyi konsonan dan vokal. Rangka PdP di bawah menggunakan takrif DSKP. [Semak petikan DSKP asal](https://asiemodel.net/wp-content/uploads/2022/08/15-DSKP-KSSR-SEMAKAN-BAHASA-KADAZANDUSUN-TAHUN-2.pdf).
+
+| Unit | Tajuk buku teks | Turutan blok halaman pada RPT |
+| ---: | --- | --- |
+| undefined | Sikul Koupusan | 1–2 · 3–5 · 6 · 7 · 8 |
+| undefined | Sikul ku Lamin ku | 9–10 · 11–12 · 13–14 · 15 · 16 |
+| undefined | Piobpinayan | 17–18 · 19–20 · 21 · 22–23 · 24 |
+| undefined | Boogian Tinan | 25–26 · 27–29 · 30–31 · 32–33 · 34 |
+| undefined | Timpu Kohiok | 35 · 36–38 · 39–41 · 42–43 · 44 |
+| undefined | Bontuk | 45–46 · 47–48 · 49 · 50–52 · 53–54 |
+| undefined | Suang Lamin | 55–56 · 57–59 · 60 · 61–62 · 63–64 |
+| undefined | Lamin ku | 65–66 · 67–69 · 70 · 71–72 · 73–74 |
+| undefined | Tadau Sominggu | 75–76 · 77–80 · 81–82 · 83 · 84 |
+| undefined | Koua’an | 85–86 · 87–88 · 89–90 · 91 · 92–94 |
+| undefined | Kinotuan Ku | 95 · 96–98 · 99–101 · 102 · 103–104 |
+| undefined | Kinotuan Talun | 105–106 · 107–109 · 110 · 111–112 · 113–114 |
+
+### Halaman sambungan dan SP yang belum dipetakan
+
+| Buku teks (ms.) | Blok RPT | Fungsi halaman menurut buku teks | Kod SP yang disenaraikan untuk blok RPT |
+| ---: | --- | --- | --- |
+| 29 | 27–29 | Sambungan cerita Anakanak dan Pondogon. Rujukan Buku Aktiviti ms. 20. | 2.1.2, 2.2.2, 2.2.4 |
+| 36 | 36–38 | Permulaan permainan dadu berkaitan nombor. | 2.1.2, 2.2.2, 2.2.5 |
+| 50 | 50–52 | Teks permulaan cerita Buhangkut dengan trek 27 dan arahan menyalin ayat. | 3.2.2 |
+| 69 | 67–69 | Sambungan cerita Paragasu dan senarai kosa kata yang bererti sama. | 2.2.2, 2.2.5 |
+| 78 | 77–80 | Teks permulaan cerita I Ganang dengan trek 37. | 2.1.2, 2.2.2, 2.2.5, 2.3.1 |
+| 81 | 81–82 | Teks dan contoh pola ayat. | 5.4.1 |
+| 99 | 99–101 | Teks perumpamaan dengan trek 47. | 5.4.4, 5.5.2, 5.6.1 |
+
+Kod pada lajur terakhir merujuk keseluruhan blok RPT. Indeks halaman mengekalkan ruang SP kosong apabila halaman itu tiada kod cetak. Bagi 12 SP DSKP di bawah, sediakan aktiviti tambahan dan semak padanan dengan guru sebelum membina RPH.
+
+| SK | SP belum dipetakan dalam buku teks dan RPT | Fokus aktiviti berdasarkan DSKP |
+| --- | --- | --- |
+| 1.1 | 1.1.3 | Membezakan sebutan pasangan bunyi sasaran melalui rakaman atau model sebutan guru. |
+| 1.4 | 1.4.2, 1.4.3 | Menyampaikan semula arahan yang didengar dan melengkapkan peta maklumat daripada bahan dengar. |
+| 2.1 | 2.1.4 | Mengenal pasti noktah, koma dan tanda soal pada ayat yang dibaca. |
+| 2.4 | 2.4.1, 2.4.3 | Menyenaraikan nilai daripada teks dan menyusun ayat untuk menyatakan semula maklumatnya. |
+| 3.1 | 3.1.1 | Menulis 24 huruf konsonan dan lima huruf vokal. |
+| 3.3 | 3.3.2 | Menyusun maklumat mengikut format surat atau dialog. |
+| 4.1 | 4.1.4 | Menghasilkan ilustrasi berdasarkan karya tradisional yang dibaca. |
+| 4.3 | 4.3.2 | Menyusun pengetahuan sedia ada tentang amalan tradisional menggunakan peta pemikiran. |
+| 4.4 | 4.4.3 | Menghasilkan kraf warisan dengan bimbingan guru. |
+| 5.6 | 5.6.2 | Memilih peribahasa yang tepat untuk melengkapkan ayat. |
+
+### Unit 1 — Rangka PdP mendengar dan menyebut (ms. 1)
+
+**SK 1.1, 1.2 · SP 1.1.1, 1.2.1 (i), (ii).** Murid mengenal pasti dan menyebut dengan betul sekurang-kurangnya empat daripada lima bunyi huruf daripada contoh guru dalam konteks lagu `Gumuli Sikul`.
+
+- **Set induksi (5 minit).** Guru tunjuk gambar murid kembali ke sekolah. Murid beritahu satu perkara yang mereka lakukan apabila tiba di sekolah.
+- **Aktiviti utama (35 minit).** Guru bimbing murid mendengar dan menyanyi ikut trek pada ms. 1. Guru modelkan bunyi huruf yang ditandakan dalam bahan. Murid gunakan kad huruf untuk memilih padanan bagi bunyi yang disebut oleh guru, kemudian sebut bunyi itu secara bergilir dalam pasangan.
+- **Pengukuhan dan PBD (15 minit).** Guru gunakan lima rangsangan bunyi daripada latihan. Murid tunjuk kad dan sebut semula bunyi yang sepadan. Guru tandakan ketepatan pilihan dan sebutan.
+- **Penutup (5 minit).** Murid sebut semula satu konsonan dan satu vokal daripada latihan.
+- **Bahan.** Buku teks ms. 1, kad huruf dan rujukan trek 1–2. Buku teks merujuk Buku Aktiviti ms. 1.

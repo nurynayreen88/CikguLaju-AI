@@ -221,3 +221,47 @@ Muka pembuka tema ms. 75.
 | 105 | 5.4 / 3.3 | 5.4.1 | 3.3.1 | 76 |  |
 
 Susulan penyediaan bahan meliputi semakan RPT sekolah, pecahan dan takrif SP mengikut aktiviti, fail Buku Aktiviti serta padanan audio sebenar sebelum membina RPT 2027 dan RPH.
+
+## Silang semak RPT Bahasa Semai 2022/2023
+
+[RPT Bahasa Semai Tahun 2 sesi 2022/2023](https://www.scribd.com/document/664811393/RPT-SEMAI-2) ialah rujukan urutan unit dan SP sejarah. Agihan sekolah dan tarikh 2027 masih perlu disahkan. Perbandingan menggunakan SP utama yang dicetak pada setiap halaman unit. 95 daripada 100 padanan kod sepadan. Jadual menggunakan satu rekod RPT untuk setiap unit.
+
+| Unit | Tajuk buku teks | Ms. pada RPT 2022/2023 | Ms. kandungan unit buku teks | SP pada RPT | SP utama sepadan |
+| ---: | --- | --- | --- | --- | ---: |
+| 1 | Kampug Berseh, Peringak Sihat | 2–6 | 2–6 | 1.1.1, 2.1.4, 3.1.2, 4.2.1, 5.1.2 | 5/5 |
+| 2 | Kampug Benangge Eng | 7–11 | 7–11 | 1.1.2, 2.1.2, 3.1.3, 4.1.1, 5.1.3 | 5/5 |
+| 3 | Lemunj Berseh, Kerennyim Bepenateh | 12–16 | 12–16 | 1.2.2, 2.2.1, 3.3.3, 4.2.2, 5.3.1 | 4/5 |
+| 4 | Gek-Gek, Leu-Leu Kijadik Lod | 17–21 | 17–21 | 1.3.2, 2.2.4, 3.3.3, 4.2.2, 5.4.1 | 5/5 |
+| 5 | Majuk Dirik | 22–26 | 22–26 | 1.2.3, 2.4.1, 3.1.2, 4.2.1, 5.1.2 | 5/5 |
+| 6 | Sinui Jik | 27–31 | 27–31 | 1.4.1, 2.3.2, 3.3.1, 4.2.2, 5.2.1 | 5/5 |
+| 7 | Neamal de Bor | 32–36 | 32–36 | 1.1.3, 2.1.3, 3.1.1, 4.1.1, 5.1.1 | 5/5 |
+| 8 | Sernuk nu Sekulah | 37–42 | 37–41 | 1.3.1, 2.4.2, 3.3.1, 4.1.2, 5.4.1 | 5/5 |
+| 9 | Cerite Rakyat | 44–48 | 44–48 | 1.2.1, 2.2.3, 3.4.1, 4.2.1, 5.1.3 | 5/5 |
+| 10 | Cerite Lagenda | 49–53 | 49–53 | 1.3.1, 2.3.2, 3.4.1, 4.2.2, 5.2.1 | 5/5 |
+| 11 | Hokloh Jeres | 54–58 | 54–58 | 1.4.2, 2.4.1, 3.1.1, 4.1.1, 5.1.2 | 5/5 |
+| 12 | Nikmat Pengrag, Rahmat Manik | 59–63 | 59–63 | 1.4.3, 2.6.1, 3.2.1, 4.2.2, 5.1.1 | 5/5 |
+| 13 | Kawat Bor | 64–68 | 64–68 | 1.3.3, 2.3.2, 3.3.3, 4.1.2, 5.4.1 | 5/5 |
+| 14 | Sinui Cerie | 69–74 | 69–73 | 1.4.3, 2.1.3, 3.2.1, 4.1.1, 5.1.4 | 5/5 |
+| 15 | Jenagak Alam | 76–80 | 76–80 | 1.1.1, 2.1.1, 3.1.2, 4.2.1, 5.2.1 | 5/5 |
+| 16 | Kaknek Lemu Penanei | 81–85 | 81–85 | 1.4.1, 2.1.1, 3.3.1, 4.2.1, 5.1.2 | 5/5 |
+| 17 | Maklumat ku Mol Jaras | 86–90 | 86–90 | 1.3.1, 2.2.2, 3.3.1, 4.2.2, 5.3.1 | 5/5 |
+| 18 | Dij Senang | 91–95 | 91–95 | 1.4.3, 2.4.2, 3.2.1, 4.1.2, 5.1.4 | 5/5 |
+| 19 | Haknuk tok Dikdij | 96–100 | 96–100 | 1.3.1, 2.2.2, 3.3.1, 4.1.2, 5.4.1 | 2/5 |
+| 20 | Eknog Alam | 101–106 | 101–105 | 1.4.3, 2.4.2, 3.3.1, 4.1.2, 5.1.1 | 4/5 |
+
+- **Unit 3, ms. 14:** buku teks mencetak **3.3.2** untuk menulis cerita berdasarkan perkataan yang diberikan. RPT menyenaraikan **3.3.3** untuk bercerita berdasarkan gambar.
+- **Unit 5, ms. 22:** kod **1.2.3** sepadan. Huraian RPT merujuk suku kata terbuka, manakala nota guru dan semakan DSKP asal pada indeks merujuk suku kata tertutup.
+- **Unit 8 dan 14:** ms. 42 dan 74 ialah halaman pengukuhan tema dan diletakkan selepas halaman kandungan unit.
+- **Unit 19, ms. 98–100:** buku teks mencetak **3.1.1, 4.1.1, 5.1.1**. RPT menyenaraikan **3.3.1, 4.1.2, 5.4.1**.
+- **Unit 20, ms. 105:** buku teks mencetak **5.4.1** untuk peribahasa. RPT menyenaraikan **5.1.1**, yang muncul pada ms. 100 dalam Unit 19. Rujukan RPT hingga ms. 106 memerlukan pengesahan edisi.
+- Rekod terakhir RPT mengulangi Unit 20. Kekalkan satu rekod sumber untuk Unit 20 dalam draf 2027 dan tentukan sesi pengukuhan secara berasingan.
+
+### Unit 1 — Rangka PdP mendengar (ms. 2)
+
+**SK 1.1 · SP utama 1.1.1.** Murid mendengar bacaan `Peringak Bah Meran` dan memberikan respons lisan yang sesuai kepada sekurang-kurangnya tiga daripada empat soalan mudah tentang keluarga watak.
+
+- **Set induksi (5 minit).** Guru tunjuk gambar buku teks dan minta murid namakan ahli keluarga yang mereka kenal.
+- **Aktiviti utama (35 minit).** Guru membaca petikan dua kali. Pada bacaan pertama, murid kenal pasti topik. Pada bacaan kedua, murid padankan kad gambar ahli keluarga dengan maklumat yang didengar. Murid menyemak padanan secara berpasangan dengan menyatakan semula maklumat.
+- **Pengukuhan dan PBD (15 minit).** Guru menyoal secara lisan tentang keluarga watak dan meminta murid menjawab tanpa melihat teks. Catat tiga respons tepat daripada empat.
+- **Penutup (5 minit).** Murid sebut satu persamaan antara keluarga watak dengan keluarga sendiri.
+- **Bahan.** Buku teks ms. 2 dan kad gambar. Buku teks merujuk Buku Aktiviti ms. 1.

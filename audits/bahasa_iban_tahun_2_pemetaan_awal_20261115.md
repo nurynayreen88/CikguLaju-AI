@@ -272,6 +272,60 @@ Draf menggunakan **48 PdP × 60 minit = 48 jam**. Satu PdP ditempatkan dalam set
 
 Semakan struktur mengesahkan turutan RPT 1–42, PdP 01–48, enam sesi tambahan pada julat lima hari persekolahan dan enam julat tanpa PdP. Sahkan jadual waktu sekolah, pecahan SP serta halaman sasaran PdP, edisi Buku Aktiviti dan fail trek audio sebelum menerbitkan bahan guru.
 
+## Rangka RPH bagi PdP 01–05
+
+Rangka guru disusun mengikut lima turutan pertama RPT SK Kuala Medalam 2026. Halaman sasaran dipilih daripada Unit 1 — Pengerai Kitai. Rangka menggunakan 60 minit setiap PdP sebagai agihan draf. Semak bahasa arahan, bahan sokongan dan jadual sekolah sebelum menyediakan fail guru. Nombor Buku Aktiviti dan audio di bawah merujuk catatan cetak buku teks.
+
+### PdP 01 — Sayauka Pengerai (ms. 1)
+
+- **SK 1.1 · SP 1.1.1 (i), (ii).** Murid menyatakan secara lisan sekurang-kurangnya dua amalan menjaga kesihatan yang didengar dalam lagu dan memberi perhatian ketika rakan bercakap.
+- **Set induksi (5 minit).** Guru tunjuk gambar tangan bersih dan kotor. Murid pilih keadaan yang sesuai sebelum makan dan beritahu sebabnya.
+- **Aktiviti utama (35 minit).** Guru mainkan trek 1 atau nyanyikan lagu buku teks. Murid dengar untuk mencari amalan kesihatan. Pada ulangan, pasangan padankan kad ilustrasi dengan amalan yang didengar. Guru minta pasangan menyemak jawapan dengan menyebut amalan itu kepada satu sama lain.
+- **Pengukuhan dan PBD (15 minit).** Seorang murid dalam pasangan menyebut dua amalan dan seorang lagi mendengar hingga selesai sebelum bertukar giliran. Guru gunakan senarai semak untuk ketepatan dua amalan dan tingkah laku mendengar.
+- **Penutup (5 minit).** Murid pilih satu amalan daripada lagu untuk dibuat sebelum datang ke sekolah.
+
+### PdP 02 — Pemakai Nadai Zat (ms. 3)
+
+- **SK 2.1 · SP 2.1.1 (i), (ii).** Murid memenggal dan menyebut sekurang-kurangnya empat daripada lima perkataan daripada petikan mengikut suku kata.
+- **Set induksi (5 minit).** Guru paparkan gambar makanan daripada situasi petikan. Murid namakan makanan yang dikenali.
+- **Aktiviti utama (35 minit).** Guru perdengarkan trek 3 atau bacakan dialog. Murid ikuti teks dan tandakan perkataan yang guru pilih daripada dialog. Guru modelkan sebutan perkataan satu hingga tiga suku kata. Murid susun kad perkataan mengikut bilangan suku kata dan baca dalam pasangan.
+- **Pengukuhan dan PBD (15 minit).** Guru berikan lima kad perkataan daripada petikan dalam susunan baharu. Murid memenggal dan menyebut perkataan satu demi satu. Guru tandakan sebutan dan pemenggalan yang tepat.
+- **Penutup (5 minit).** Murid baca semula satu perkataan yang telah dibetulkan dan kaitkan dengan makanan dalam petikan.
+
+### PdP 03 — Pemakai Setimbang (ms. 4)
+
+- **SK 3.1 · SP 3.1.1.** Murid menyusun suku kata dan menulis sekurang-kurangnya empat daripada lima nama makanan mengikut gambar.
+- **Set induksi (5 minit).** Guru paparkan gambar tiga makanan pada halaman sasaran. Murid sebut nama yang sudah dikenali.
+- **Aktiviti utama (35 minit).** Guru modelkan pemenggalan dan gabungan satu nama makanan. Murid menyusun kad suku kata mengikut gambar dan membaca hasilnya kepada rakan. Guru membetulkan kedudukan suku kata sebelum murid menulis perkataan dalam buku tulis.
+- **Pengukuhan dan PBD (15 minit).** Guru agihkan lima gambar daripada halaman sasaran. Murid tulis nama makanan secara individu. Guru semak pemilihan perkataan, turutan suku kata dan ejaan.
+- **Penutup (5 minit).** Murid semak satu perkataan bersama rakan dan tandakan suku kata yang perlu diperbetulkan.
+
+### PdP 04 — Pengerai Kitai (ms. 6)
+
+- **SK 4.1 · SP 4.1.1 (i)–(iv).** Murid menyampaikan satu rangkap bersama kumpulan dengan urutan baris yang betul dan sekurang-kurangnya satu gerak yang sepadan dengan maksudnya.
+- **Set induksi (5 minit).** Guru tunjuk gambar pilihan makanan dan minta murid nyatakan mana yang ada dalam bekal mereka.
+- **Aktiviti utama (35 minit).** Guru perdengarkan trek 4 atau bacakan pantun bulan pada halaman 6. Murid dengar, ulang setiap baris dan nyatakan perkara yang dibincangkan. Guru bantu kumpulan memilih satu gerak yang sesuai. Murid berlatih menyampaikan rangkap mengikut irama.
+- **Pengukuhan dan PBD (15 minit).** Kumpulan mempersembahkan rangkap. Guru catat urutan baris, kejelasan sebutan dan kesesuaian gerak. Murid sebut satu amalan pemakanan daripada rangkap yang dipersembahkan.
+- **Penutup (5 minit).** Murid pilih satu amalan yang boleh dilaksanakan ketika waktu rehat.
+
+### PdP 05 — Jaku Nama Rama dan Jaku Nama Tetap (ms. 7–8)
+
+- **SK 5.1 · SP 5.1.1 (i), (ii).** Murid mengelaskan sekurang-kurangnya lima daripada enam kata nama pada kad dan menghasilkan satu ayat mudah menggunakan kata nama khas.
+- **Set induksi (5 minit).** Guru tunjuk satu objek di bilik darjah dan kad nama sekolah. Murid nyatakan apa yang dinamakan oleh setiap contoh.
+- **Aktiviti utama (35 minit).** Guru tunjuk dua jenis kata nama menggunakan halaman 7 dan 8. Murid baca kad berdasarkan perkataan pada kedua-dua halaman dan mengelaskan dalam pasangan. Guru bimbing murid menggunakan satu kata nama khas untuk membina ayat mudah.
+- **Pengukuhan dan PBD (15 minit).** Murid mengelaskan enam kad secara individu dan tulis satu ayat. Guru catat ketepatan pengelasan serta semak penggunaan kata nama khas dalam ayat.
+- **Penutup (5 minit).** Murid sebut satu contoh daripada setiap golongan kata nama yang terdapat di sekolah.
+
+## Semakan kod bercanggah pada ms. 45, 46 dan 95
+
+| Buku teks (ms.) | Aktiviti yang dapat disahkan | SP DSKP yang perlu disemak dengan guru |
+| ---: | --- | --- |
+| 45 | Mengenal pasti ungkapan sopan dalam dialog dan memberikan contoh lain. | Semak 1.6.1 sekiranya PdP memasukkan soal jawab dan murid memberi respons secara lisan. |
+| 46 | Melakonkan dialog, menyoal dengan sopan, memberi jawapan yang sesuai dan menggunakan intonasi. | Semak 1.6.1 untuk respons kepada soalan dan 1.4.1 jika pentaksiran menilai sebutan serta intonasi. |
+| 95 | Melakonkan dialog tentang pemilihan hadiah dan menggunakan ungkapan sopan semasa berbincang. | Semak 1.5.1 (i) jika objektif menilai interaksi dalam situasi harian. |
+
+Rujukan silang ialah [Dokumen Penjajaran Kurikulum Bahasa Iban Tahun 2](https://anyflip.com/vghzy/lenn/basic), bahagian 1.4–1.6 dan 4.1–4.3. Ketiga-tiga halaman ini kekal dikecualikan daripada padanan PdP automatik sehingga pertukaran kod disahkan.
+
 ## Subjek tambahan Tahun 2
 
 - [Bahasa Kadazandusun — 12 unit](bahasa_kadazandusun_tahun_2_pemetaan_20261115.md)
