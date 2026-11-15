@@ -376,6 +376,91 @@ Rangka menggunakan turutan 6–10 dalam RPT SK Kuala Medalam 2026 dan sesi pengu
 
 Sumber audio Buku Teks Primari 2 dirujuk dalam [indeks Bahasa Iban di Sekula](https://sites.google.com/moe.gov.my/bahasa-iban-di-sekula/kereban-sanding/buku-teks-kssr). [Rakaman `Sayauka Pengerai`](https://www.youtube.com/watch?v=5ugLMuEcZYs) ialah calon bahan sokongan PdP 01 berdasarkan padanan tajuk dan tahun pada penyenaraian. Kandungan rakaman, edisi dan padanan dengan fail trek penerbit masih perlu disahkan.
 
+## Rangka RPH bagi PdP 12–20
+
+PdP 12–17 menggunakan halaman 17–24 dalam Unit 3 — Pengelikun. PdP 14 ialah pengukuhan bacaan bagi SP 2.3.1. PdP 18–20 memasuki Unit 4 — Besaup Ngereja Pengawa mengikut turutan RPT SK Kuala Medalam. Draf menggunakan 60 minit setiap PdP. Halaman 27 memaparkan SP 2.2.1 dan direkod sebagai sumber pilihan untuk bacaan awal yang menggunakan kod tersebut. Agihan draf menetapkan SP 2.3.2 untuk PdP 19, maka rangka tersebut memilih ms. 28. Rujukan trek ialah nombor yang tercetak dalam buku teks.
+
+### PdP 12 — Kebun Buah (ms. 17)
+
+- **SK 1.2 · SP 1.2.1 (ii).** Murid mengecam sekurang-kurangnya empat daripada lima sebutan perkataan yang mengandungi vokal dengan hentian glotis seperti dimodelkan guru.
+- **Set induksi (5 minit).** Guru tunjuk gambar kebun dan minta murid namakan buah serta alat yang kelihatan.
+- **Aktiviti utama (35 minit).** Guru modelkan sebutan perkataan sasaran pada ms. 17, termasuk vokal yang berakhir dengan hentian glotis. Murid dengar, padankan gambar dengan perkataan dan ulang sebutan dalam pasangan. Guru tambah contoh lisan yang telah disemak dengan guru Bahasa Iban untuk membandingkan bunyi akhir.
+- **Pengukuhan dan PBD (15 minit).** Guru baca lima perkataan satu demi satu. Murid angkat kad apabila mendengar bunyi sasaran. Guru catat keputusan dan minta murid mengulang dua contoh daripada buku.
+- **Penutup (5 minit).** Murid pilih satu gambar dan sebut perkataan dengan bunyi sasaran.
+- **Bahan.** Buku teks ms. 17, rujukan cetak Buku Aktiviti ms. 13.
+
+### PdP 13 — Pengelikun — Membaca ayat keselamatan (ms. 18)
+
+- **SK 2.3 · SP 2.3.1.** Murid memenggal dan membaca kuat sekurang-kurangnya empat daripada lima perkataan yang dipilih daripada ayat keselamatan.
+- **Set induksi (5 minit).** Guru tunjuk gambar situasi keselamatan pada ms. 18. Murid pilih satu situasi dan nyatakan langkah berjaga-jaga.
+- **Aktiviti utama (35 minit).** Guru modelkan cara mengeja dan menyebut perkataan mengikut suku kata. Murid ketik bilangan suku kata, susun kad dan baca perkataan dalam ayat asal. Pasangan bergilir membaca satu ayat dan menunjukkan gambar yang sepadan.
+- **Pengukuhan dan PBD (15 minit).** Murid baca lima perkataan daripada ayat secara individu. Guru tandakan pemenggalan dan sebutan yang tepat.
+- **Penutup (5 minit).** Murid baca semula satu ayat keselamatan dengan sebutan yang telah dibetulkan.
+- **Bahan.** Buku teks ms. 18, rujukan cetak Buku Aktiviti ms. 14.
+
+### PdP 14 — Entadu Ngiga Indai — Pengukuhan bacaan (ms. 19)
+
+- **SK 2.3 · SP 2.3.1.** Murid memenggal dan membaca kuat sekurang-kurangnya empat daripada lima perkataan bercetak warna dalam cerita pendek.
+- **Set induksi (5 minit).** Guru lakarkan titi yang digunakan oleh Entadu. Murid teka perkara yang perlu dibuat sebelum watak melintas.
+- **Aktiviti utama (35 minit).** Guru perdengarkan trek 10 jika tersedia atau baca cerita pada ms. 19. Murid tanda perkataan sasaran dan pecahkan kepada suku kata pada kad. Dalam pasangan, murid baca ayat yang mengandungi perkataan tersebut. Guru bimbing murid membandingkan bacaan dengan konteks cerita.
+- **Pengukuhan dan PBD (15 minit).** Guru pilih lima perkataan bercetak warna dan minta murid membacanya dalam susunan yang berbeza. Catat ketepatan sebutan dan pemenggalan.
+- **Penutup (5 minit).** Murid sebut satu perkataan sasaran ketika memberi respons ringkas tentang situasi Entadu.
+- **Bahan.** Buku teks ms. 19, rujukan cetak Buku Aktiviti ms. 14, rujukan cetak trek 10.
+
+### PdP 15 — Pengelikun — Tunda-tulis (ms. 20)
+
+- **SK 3.2 · SP 3.2.1.** Murid menulis semula dengan tepat sekurang-kurangnya tiga daripada empat ayat mudah selepas melihat dan mengingat contoh.
+- **Set induksi (5 minit).** Guru paparkan gambar murid beratur. Murid nyatakan tempat mereka perlu beratur di sekolah.
+- **Aktiviti utama (35 minit).** Guru tunjuk teknik tunda-tulis dengan satu ayat ms. 20. Murid lihat, baca, tutup contoh dan tulis semula sebelum membandingkan hasil. Guru bimbing murid mengenal pasti perkataan tertinggal dan membetulkan huruf besar serta tanda noktah.
+- **Pengukuhan dan PBD (15 minit).** Guru tunjuk empat ayat secara bergilir dan tutup setiap contoh sebelum murid menulis. Catat ketepatan perkataan dan susunan ayat.
+- **Penutup (5 minit).** Murid nyatakan satu perkara yang disemak sebelum menyerahkan tulisan.
+- **Bahan.** Buku teks ms. 20, rujukan cetak Buku Aktiviti ms. 15–16.
+
+### PdP 16 — Jaku Kelaung (ms. 21–22)
+
+- **SK 4.2 · SP 4.2.1 (i).** Murid memadankan sekurang-kurangnya empat daripada lima ungkapan kiasan dengan maksud yang betul berdasarkan dialog dan latihan buku teks.
+- **Set induksi (5 minit).** Guru tunjuk gambar dua haiwan daripada ms. 21 tanpa memberikan maksud ungkapan. Murid beri tekaan selepas mendengar satu contoh.
+- **Aktiviti utama (35 minit).** Guru baca dialog atau gunakan trek 11 jika tersedia. Murid cari petunjuk konteks dan padankan ungkapan dengan gambar. Pasangan menyemak padanan pada ms. 22 dan menerangkan petunjuk yang menyokong satu jawapan.
+- **Pengukuhan dan PBD (15 minit).** Guru beri lima ungkapan pada kad. Murid pilih maksud setiap satu secara individu dan terangkan alasan bagi satu jawapan.
+- **Penutup (5 minit).** Murid sebut semula satu ungkapan yang dipelajari bersama maksudnya.
+- **Bahan.** Buku teks ms. 21–22, rujukan cetak Buku Aktiviti ms. 17, rujukan cetak trek 11 (ms. 21).
+
+### PdP 17 — Jeluing dan Jaku Adjektif Chura (ms. 23–24)
+
+- **SK 5.1 · SP 5.1.3 (i), (ii).** Murid mengelaskan sekurang-kurangnya lima daripada enam kata adjektif kepada sifat atau warna dan menggunakan satu contoh daripada setiap kumpulan dalam ayat mudah.
+- **Set induksi (5 minit).** Guru paparkan gambar watak dan lampu isyarat daripada buku teks. Murid pilih perkataan yang menerangkan watak atau objek.
+- **Aktiviti utama (35 minit).** Guru bimbing murid membaca petikan Jeluing dan mengenal pasti kata adjektif sifat. Murid lihat ms. 24, sebut warna dan padankan kad warna dengan objek. Dalam pasangan, mereka membina dua ayat berdasarkan gambar.
+- **Pengukuhan dan PBD (15 minit).** Murid mengelaskan enam contoh dan menulis satu ayat bagi setiap kumpulan. Guru semak pengelasan serta penggunaan kata adjektif dalam ayat.
+- **Penutup (5 minit).** Murid terangkan satu perbezaan antara kata yang menunjukkan sifat dan warna melalui contoh.
+- **Bahan.** Buku teks ms. 23–24, rujukan cetak Buku Aktiviti ms. 18 (ms. 23), 19 (ms. 24), rujukan cetak trek 12 (ms. 23).
+
+### PdP 18 — Berumah dan Ngiga Pemakai (ms. 25–26)
+
+- **SK 1.2 · SP 1.2.2 (i), (ii), (iii).** Murid mengenal pasti sekurang-kurangnya empat daripada lima contoh ungkapan lisan yang merujuk tempat, masa, sapaan atau bentuk ujaran mudah.
+- **Set induksi (5 minit).** Guru tunjuk gambar watak yang membina rumah. Murid teka masa atau tempat kegiatan mereka.
+- **Aktiviti utama (35 minit).** Guru baca kedua-dua dialog atau gunakan trek 13 dan 14 jika tersedia. Murid dengar ungkapan sasaran dan pilih kad kategori yang sepadan. Pasangan lakonkan satu bahagian dialog dan tukar maklumat tempat atau masa dengan bimbingan guru.
+- **Pengukuhan dan PBD (15 minit).** Guru baca lima ujaran daripada dialog secara berasingan. Murid pilih kategori dan gunakan satu sapaan dalam lakonan ringkas. Guru catat padanan yang tepat.
+- **Penutup (5 minit).** Murid nyatakan satu ungkapan yang sesuai untuk memulakan perbualan.
+- **Bahan.** Buku teks ms. 25–26, rujukan cetak Buku Aktiviti ms. 21 (ms. 26), rujukan cetak trek 13 (ms. 25), 14 (ms. 26).
+
+### PdP 19 — Nyaup Pelanduk (ms. 28)
+
+- **SK 2.3 · SP 2.3.2.** Murid membaca dan melakonkan sekurang-kurangnya dua giliran dialog mengikut watak dengan sebutan, intonasi dan respons yang sesuai.
+- **Set induksi (5 minit).** Guru paparkan ilustrasi cerita. Murid jangka watak yang memerlukan bantuan.
+- **Aktiviti utama (35 minit).** Guru bacakan cerita atau perdengarkan trek 16 jika tersedia. Murid tandakan giliran dialog Mayau, Chit dan Pelanduk. Kumpulan baca semula dialog, pilih nada yang sesuai dengan watak dan berlatih lakonan pendek.
+- **Pengukuhan dan PBD (15 minit).** Murid melakonkan sekurang-kurangnya dua giliran dialog. Guru rekod ketepatan ayat mengikut watak, sebutan dan kesesuaian intonasi.
+- **Penutup (5 minit).** Murid nyatakan cara dua watak bekerjasama membantu Pelanduk.
+- **Bahan.** Buku teks ms. 28, rujukan cetak trek 16.
+
+### PdP 20 — Chit Makai Chabi dan Ngaga Titi (ms. 29–30)
+
+- **SK 3.2 · SP 3.2.2 (i), (ii), (iii).** Murid menulis dua perkataan berdasarkan gambar dan menyusun sekurang-kurangnya tiga daripada empat ayat mudah dengan turutan dan tanda baca yang betul.
+- **Set induksi (5 minit).** Guru tunjuk dua gambar bersiri pada ms. 29. Murid sebut perkara yang berlaku dahulu.
+- **Aktiviti utama (35 minit).** Guru bimbing murid menulis perkataan berdasarkan gambar dan menunjukkan cara menyusun kad perkataan menjadi ayat daripada ms. 30. Pasangan susun ayat, baca dan semak huruf besar serta tanda baca sebelum menyalinnya.
+- **Pengukuhan dan PBD (15 minit).** Murid tulis dua perkataan daripada gambar dan susun empat set kad ayat. Guru catat ketepatan perkataan, turutan, huruf besar dan tanda baca.
+- **Penutup (5 minit).** Murid baca satu ayat yang disusun dan terangkan perubahan yang dibuat semasa menyemak.
+- **Bahan.** Buku teks ms. 29–30, rujukan cetak Buku Aktiviti ms. 23 (ms. 29), 24 (ms. 30).
+
 ## Semakan kod bercanggah pada ms. 45, 46 dan 95
 
 | Buku teks (ms.) | Aktiviti yang dapat disahkan | SP DSKP yang perlu disemak dengan guru |

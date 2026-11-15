@@ -305,3 +305,72 @@ Rangka ini melengkapkan liputan halaman 1–8, dengan halaman 1 direkodkan dalam
 - **Bahan.** Buku teks ms. 8, rujukan cetak Buku Aktiviti ms. 6, rujukan cetak trek 6, 7.
 
 [Transkrip trek 3 dalam buku teks](https://padlet-uploads.storage.googleapis.com/150348405/08fa062da29e2e4fff0994223feb88db/Bahasa_Kadazandusun_Tahun_2.pdf#page=123) berada pada ms. cetak 115 dan mengandungi lima penerangan gambar serta soalan. Gunakan transkrip sebagai bacaan guru bagi PdP 02 jika fail audio belum tersedia. [Rakaman `Gumuli Sikul`](https://www.youtube.com/watch?v=3yz7BPHZppQ) ialah calon bahan sokongan rangka PdP pertama berdasarkan padanan tajuk dan tahun pada penyenaraian. Buku teks menyenaraikan trek 1 dan 2 pada ms. 1. Rakaman calon masih memerlukan pengesahan kandungan dan padanan dengan fail trek penerbit.
+
+## Rangka RPH Unit 2 bagi PdP 08–14
+
+Rangka bagi Unit 2 — Sikul ku Lamin ku meliputi ms. 9–16. Turutan lima blok dalam [RPT Bahasa Kadazandusun 2025](https://id.scribd.com/document/852169526/RPT-BKD-TAHUN-2-2025) digunakan untuk rujukan. Halaman 9 dan 10 dipisahkan mengikut fokus soal jawab dan arahan. Halaman 11 dan 12 dipisahkan mengikut fokus sebutan dialog dan pemahaman jadual. Tempoh 60 minit setiap sesi ialah andaian draf.
+
+Bagi Unit 2, 13 daripada 14 kod SP induk sepadan antara RPT dan buku teks. RPT meletakkan 2.2.1 dalam blok ms. 11–12 dengan huraian pemenggalan suku kata. Buku teks mencetak 2.2.2 (iii) pada ms. 11. PdP 10 menggunakan 2.1.3 (i), (ii) dan 2.2.3 (i), (ii) yang sepadan dalam kedua-dua sumber. Pada ms. 9, rangka memfokuskan 1.3.1 (i) (b) melalui soal jawab berdasarkan gambar. Pada ms. 16, buku teks mencetak 4.2.1 dan RPT memperincikan pecahan (ii) untuk `sundait`.
+
+### PdP 08 — Sikul ku Lamin ku — Pogibaabarasai (ms. 9)
+
+- **SK 1.3 · SP 1.3.1 (i) (b).** Selepas mendengar soalan, murid memberi jawapan yang berkaitan kepada sekurang-kurangnya tiga daripada empat soalan tentang gambar sekolah.
+- **Set induksi (5 minit).** Guru tunjuk halaman 9 dan minta murid perhatikan kegiatan pada gambar tanpa membaca soalan.
+- **Aktiviti utama (35 minit).** Guru baca soalan pada halaman 9 dan tunjuk cara menggunakan petunjuk gambar untuk menjawab. Pasangan bergilir menyoal dan memberi jawapan tentang lokasi, kegiatan dan penjagaan kawasan sekolah. Guru bimbing murid menggunakan jawapan yang disokong gambar.
+- **Pengukuhan dan PBD (15 minit).** Guru kemukakan empat soalan satu demi satu. Murid beri respons lisan secara individu. Guru semak relevan dan ketepatan maklumat.
+- **Penutup (5 minit).** Murid nyatakan satu perkara yang boleh dilakukan untuk menjaga kawasan sekolah.
+- **Bahan.** Buku teks ms. 9.
+
+### PdP 09 — Tudukai — Menunjukkan laluan (ms. 10)
+
+- **SK 1.5 · SP 1.5.3 (iv), (i).** Murid menyampaikan sekurang-kurangnya tiga arahan arah yang tepat dan membimbing rakan sampai ke destinasi menggunakan peta.
+- **Set induksi (5 minit).** Guru tunjuk peta ms. 10. Murid cari kedudukan sekolah dan satu tempat yang lain.
+- **Aktiviti utama (35 minit).** Guru baca dan tunjuk laluan ke sekolah berdasarkan contoh. Murid jejak laluan pada peta dan berlatih arahan lurus, kiri dan kanan. Dalam pasangan, seorang murid memberi arahan dan seorang lagi menggerakkan penanda, kemudian mereka bertukar peranan.
+- **Pengukuhan dan PBD (15 minit).** Guru beri kad lokasi mula dan destinasi. Murid memberi arahan tanpa menunjukkan laluan. Guru semak sekurang-kurangnya tiga arahan serta destinasi akhir.
+- **Penutup (5 minit).** Murid ulang satu arahan yang paling membantu rakannya sampai.
+- **Bahan.** Buku teks ms. 10, rujukan cetak Buku Aktiviti ms. 7.
+
+### PdP 10 — Basao’ — Dialog Tadau Kadazandusun (ms. 11)
+
+- **SK 2.1, 2.2 · SP 2.1.3 (i), (ii) / 2.2.3 (i), (ii).** Murid membezakan pasangan bunyi sasaran dan menyebut sekurang-kurangnya empat daripada lima perkataan terpilih dengan tepat semasa membaca dialog.
+- **Set induksi (5 minit).** Guru nyatakan situasi perbualan dua murid tentang acara sekolah. Murid jangka satu perkara yang akan ditanya.
+- **Aktiviti utama (35 minit).** Guru modelkan pasangan bunyi sasaran berdasarkan contoh yang telah disemak dengan guru subjek. Murid dengar trek 8 jika tersedia atau bacaan guru, tanda perkataan sasaran dan ulang sebutan. Pasangan baca dialog dan beri maklum balas pada bunyi yang didengar.
+- **Pengukuhan dan PBD (15 minit).** Guru beri lima contoh berdasarkan perkataan yang telah dilatih. Murid pilih bunyi yang didengar dan baca perkataan tersebut dalam dialog. Guru semak diskriminasi bunyi dan sebutan.
+- **Penutup (5 minit).** Murid baca semula satu baris dialog yang mengandungi perkataan sasaran.
+- **Bahan.** Buku teks ms. 11, rujukan cetak Buku Aktiviti ms. 8, rujukan cetak trek 8.
+
+### PdP 11 — Basao’ om Rotio’ — Jadual Tadau Kadazandusun (ms. 12)
+
+- **SK 2.3, 2.4 · SP 2.3.1 (ii) / 2.4.4.** Murid menjelaskan perkara yang ditunjukkan oleh tajuk jadual dan melengkapkan sekurang-kurangnya empat daripada lima maklumat dalam peta pemikiran.
+- **Set induksi (5 minit).** Guru tunjuk tajuk dan satu baris jadual pada ms. 12. Murid jangka kegunaan jadual.
+- **Aktiviti utama (35 minit).** Guru bimbing murid mencari tiga lajur utama. Kumpulan membaca jadual dan menyalin maklumat untuk satu acara ke peta pemikiran. Pasangan bandingkan acara yang sesuai untuk dua kumpulan tahun berbeza.
+- **Pengukuhan dan PBD (15 minit).** Guru sediakan peta dengan lima ruang, menggunakan acara, tempat atau tahun peserta daripada halaman sasaran. Murid isi secara individu dan guru semak sekurang-kurangnya empat maklumat tepat.
+- **Penutup (5 minit).** Murid nyatakan satu acara dan tempatnya daripada peta yang disediakan.
+- **Bahan.** Buku teks ms. 12, rujukan cetak Buku Aktiviti ms. 9.
+
+### PdP 12 — Intutunai dan Basao’ — Boros ngaran (ms. 13–14)
+
+- **SK 5.2, 5.3 · SP 5.2.1 (i) / 5.3.2 (i), (ii).** Murid mengenal pasti sekurang-kurangnya empat daripada lima kata nama alatan sekolah dan menulis semula dua daripada tiga perkataan yang mengandungi pasangan bunyi sasaran.
+- **Set induksi (5 minit).** Guru tunjuk gambar alatan sekolah daripada ms. 13. Murid sebut nama alatan dan pilih kad yang sepadan.
+- **Aktiviti utama (35 minit).** Guru kenalkan kata nama menggunakan gambar, kemudian bimbing bacaan dialog ms. 14. Murid tandakan kata nama dan salin perkataan yang mengandungi pasangan bunyi sasaran yang dimodelkan. Pasangan bandingkan ejaan pilihan mereka.
+- **Pengukuhan dan PBD (15 minit).** Guru semak lima kad kata nama dan tiga contoh tulisan individu. Catat bilangan kata nama tepat dan ejaan contoh sasaran secara berasingan.
+- **Penutup (5 minit).** Murid pilih satu kata nama dan nyatakan kegunaan alat tersebut.
+- **Bahan.** Buku teks ms. 13–14, rujukan cetak Buku Aktiviti ms. 10 (ms. 13), 11 (ms. 14).
+
+### PdP 13 — Suato’ — Memberi tajuk cerita pensel (ms. 15)
+
+- **SK 3.1, 3.3 · SP 3.1.5 (i), (ii), (iii) / 3.3.5 (i).** Murid membezakan tulisan sekurang-kurangnya empat daripada lima contoh pasangan bunyi sasaran dan menulis satu tajuk yang sesuai bagi cerita tentang pensel.
+- **Set induksi (5 minit).** Guru tunjuk sebatang pensel. Murid teka perkara yang mungkin berlaku kepada pensel yang digunakan setiap hari.
+- **Aktiviti utama (35 minit).** Guru baca cerita ms. 15 dan minta murid gariskan petunjuk tentang watak utama. Guru bimbing murid membezakan bentuk tulisan pasangan bunyi dalam contoh yang disahkan guru Bahasa Kadazandusun. Murid kemudian bandingkan dua cadangan tajuk berdasarkan perkara yang berlaku dalam cerita.
+- **Pengukuhan dan PBD (15 minit).** Murid menulis lima perkataan latihan dan satu tajuk sendiri. Guru semak ejaan pasangan bunyi, hubungan tajuk dengan watak serta peristiwa utama.
+- **Penutup (5 minit).** Murid baca tajuknya dan sebut satu petunjuk cerita yang menyokong pilihan itu.
+- **Bahan.** Buku teks ms. 15, rujukan cetak Buku Aktiviti ms. 12.
+
+### PdP 14 — Polombuso’ om Tinduo’ — Sundait peralatan sekolah (ms. 16)
+
+- **SK 4.2 · SP 4.2.1.** Murid menyampaikan satu teka-teki tradisional dengan jelas dan memadankan sekurang-kurangnya tiga daripada empat teka-teki dengan gambar jawapan yang betul.
+- **Set induksi (5 minit).** Guru tunjuk tiga gambar alatan dan beri satu petunjuk berdasarkan fungsinya.
+- **Aktiviti utama (35 minit).** Guru bacakan sundait daripada ms. 16 atau gunakan trek 9 jika tersedia. Murid padankan petunjuk dengan gambar, kemudian berlatih menyampaikan satu contoh. Pasangan bina teka-teki pendek tentang satu alatan dengan bimbingan guru.
+- **Pengukuhan dan PBD (15 minit).** Guru baca empat teka-teki dan semak tiga padanan tepat. Murid menyampaikan satu contoh dengan sebutan yang boleh difahami.
+- **Penutup (5 minit).** Murid kongsi petunjuk paling berguna untuk meneka satu alatan.
+- **Bahan.** Buku teks ms. 16, rujukan cetak trek 9.

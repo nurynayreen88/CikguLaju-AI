@@ -305,3 +305,52 @@ Rangka mengikut SP utama dan halaman buku teks 3–6. Rangka PdP mendengar di at
 - **Pengukuhan dan PBD (15 minit).** Murid menanda kata nama khas pada lima kad dan menulis satu ayat daripada contoh. Guru semak empat padanan tepat dan penggunaan kata nama khas dalam ayat.
 - **Penutup (5 minit).** Murid namakan satu orang atau tempat di sekeliling mereka menggunakan nama khusus.
 - **Bahan.** Buku teks ms. 6.
+
+## Rangka RPH Unit 2 bagi PdP 06–10
+
+Lima sesi Unit 2 — Kampug Benangge Eng meliputi halaman 7–11 bagi Tema 1, Duniak Eng. Kelima-lima SP utama sepadan dengan [RPT Bahasa Semai 2022/2023](https://www.scribd.com/document/664811393/RPT-SEMAI-2). PdP 06 menggunakan rangsangan mendengar yang perlu disahkan sebelum digunakan. Rangka menggunakan 60 minit setiap sesi sebagai andaian draf.
+
+### PdP 06 — Imeriah Jis Kebangsaan (ms. 7)
+
+- **SK 1.1 · SP 1.1.2.** Murid mendengar dan menyatakan sekurang-kurangnya tiga daripada empat maklumat tepat tentang sambutan Hari Kebangsaan yang didengar.
+- **Set induksi (5 minit).** Guru tunjuk ilustrasi sambutan. Murid jangka perkara yang dilakukan oleh watak.
+- **Aktiviti utama (35 minit).** Guru gunakan trek 4 jika tersedia atau baca teks yang sepadan dan telah disahkan guru subjek. Pada ulangan, murid catat kegiatan yang disebut dalam peta buih bersama pasangan. Guru bimbing murid membezakan kegiatan yang didengar dengan tekaan daripada gambar.
+- **Pengukuhan dan PBD (15 minit).** Murid menjawab empat soalan lisan tentang bahan yang didengar. Guru catat tiga maklumat tepat dan beri maklum balas pada satu jawapan.
+- **Penutup (5 minit).** Murid nyatakan satu cara mereka boleh terlibat dalam sambutan di sekolah.
+- **Bahan.** Buku teks ms. 7, rujukan cetak Buku Aktiviti ms. 5, rujukan cetak trek 4.
+
+### PdP 07 — Gol! Gol! Gol! (ms. 8)
+
+- **SK 2.1 · SP 2.1.2.** Murid membaca dan mengeja sekurang-kurangnya empat daripada lima perkataan daripada halaman bertema bola sepak dengan sebutan tepat.
+- **Set induksi (5 minit).** Guru tunjuk gambar permainan bola sepak. Murid sebut satu perkara yang kelihatan pada gambar.
+- **Aktiviti utama (35 minit).** Guru modelkan ejaan dan sebutan perkataan ms. 8, termasuk contoh vokal berganding yang ditunjukkan dalam nota guru. Murid padankan kad perkataan dengan gambar dan baca secara bergilir dengan pasangan.
+- **Pengukuhan dan PBD (15 minit).** Guru tunjuk lima kad dalam susunan baharu. Murid membaca dan mengeja setiap perkataan. Guru catat ketepatan ejaan serta sebutan.
+- **Penutup (5 minit).** Murid ulang satu perkataan yang telah dibetulkan dan mengaitkannya dengan gambar.
+- **Bahan.** Buku teks ms. 8, rujukan cetak Buku Aktiviti ms. 6.
+
+### PdP 08 — Serengyap Senamut Jis Kebangsaan (ms. 9)
+
+- **SK 3.1 · SP 3.1.3.** Murid membina dan menulis sekurang-kurangnya empat daripada lima frasa daripada kata pada halaman 9.
+- **Set induksi (5 minit).** Guru tunjuk gambar persiapan sambutan. Murid sebut satu benda yang digunakan untuk menghias tempat.
+- **Aktiviti utama (35 minit).** Guru bimbing murid mengisi ruang jawapan berdasarkan halaman sasaran. Murid gunakan jawapan untuk mencantum kad perkataan menjadi frasa. Pasangan menyemak makna frasa sebelum menulis.
+- **Pengukuhan dan PBD (15 minit).** Guru beri lima set kad perkataan daripada bahan. Murid tulis frasa yang lengkap. Guru semak turutan, makna dan ejaan.
+- **Penutup (5 minit).** Murid baca satu frasa dan tunjuk perkara yang diterangkannya pada gambar.
+- **Bahan.** Buku teks ms. 9, rujukan cetak Buku Aktiviti ms. 7.
+
+### PdP 09 — Negare Malaysia (ms. 10)
+
+- **SK 4.1 · SP 4.1.1.** Murid membaca satu rangkap dengan sebutan jelas dan menyampaikan rangkap itu bersama kumpulan mengikut turutan baris.
+- **Set induksi (5 minit).** Guru tunjuk gambar Jalur Gemilang. Murid kongsi satu perkara yang mereka kenal tentang sambutan Hari Kebangsaan.
+- **Aktiviti utama (35 minit).** Guru modelkan sebutan seni kata pada ms. 10 menggunakan trek 5 jika tersedia atau bacaan guru. Murid ulang rangkap baris demi baris dan bincangkan maksudnya. Kumpulan berlatih menyanyikan rangkap bersama gerakan yang sesuai.
+- **Pengukuhan dan PBD (15 minit).** Guru dengar persembahan kumpulan dan catat sebutan serta turutan baris. Murid nyatakan satu maksud daripada rangkap selepas persembahan.
+- **Penutup (5 minit).** Murid kongsi satu cara menjaga sekolah atau komuniti yang berkaitan dengan lagu.
+- **Bahan.** Buku teks ms. 10, rujukan cetak trek 5.
+
+### PdP 10 — Malaysia Jaman Hunen — Engrok Kerjak (ms. 11)
+
+- **SK 5.1 · SP 5.1.3.** Murid mengesan sekurang-kurangnya empat kata kerja dalam petikan dan menggunakan dua daripadanya dalam ayat mudah.
+- **Set induksi (5 minit).** Guru baca tajuk dan tunjuk gambar sambutan. Murid lakonkan satu perbuatan yang disebut guru.
+- **Aktiviti utama (35 minit).** Guru bimbing bacaan ms. 11 dan modelkan satu cara mengenal pasti kata kerja melalui perbuatan watak. Murid garis kata kerja lain dalam petikan, padankan dengan kad aksi dan bina ayat bersama pasangan.
+- **Pengukuhan dan PBD (15 minit).** Murid senaraikan empat kata kerja dan tulis dua ayat. Guru semak pemilihan kata kerja dan penggunaannya dalam konteks.
+- **Penutup (5 minit).** Murid baca satu ayat sendiri dan rakan mengenal pasti kata kerjanya.
+- **Bahan.** Buku teks ms. 11, rujukan cetak Buku Aktiviti ms. 8, rujukan cetak trek 6.
