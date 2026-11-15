@@ -8,7 +8,7 @@ from unittest.mock import patch
 
 from flask import Flask, jsonify
 from web.rph_hari_ini_web import (
-    bp, class_year, day_payload, subject_identity,
+    bp, class_year, day_payload, subject_identity, weekly_rpt_suggestion,
 )
 
 from web.rph_today_progress import attach_progress, lesson_signer, read_progress_summary
@@ -84,7 +84,7 @@ class DailyTimetablePureTests(TestCase):
         sunday = date(2027, 1, 10)
         kedah = day_payload({"state_name": "KEDAH"}, schedule, sunday, today=sunday)
         self.assertEqual(kedah["entries"][0]["rpt_suggestion"], {
-            "week": 2, "group": "A", "lessons": {"": [5, 6, 7, 8]},
+            "week": 2, "group": "A", "lessons": {"": [4, 5, 6, 7]},
         })
         johor = day_payload({"state_name": "Johor"}, schedule, sunday, today=sunday)
         self.assertIsNone(johor["entries"][0]["rpt_suggestion"])
@@ -110,6 +110,25 @@ class DailyTimetablePureTests(TestCase):
                                      target, today=target)
                 self.assertEqual(output["count"], 1)
                 self.assertIsNone(output["entries"][0]["rpt_suggestion"])
+
+    def test_english_weekly_capacity_and_holiday_dates(self):
+        for year in range(2, 7):
+            with self.subTest(year=year):
+                self.assertEqual(weekly_rpt_suggestion("Terengganu", date(2027, 1, 4), "ENGLISH", year), {
+                    "week": 1, "group": "A", "lessons": {"": [1, 2, 3]},
+                })
+                self.assertIsNone(weekly_rpt_suggestion("Kedah", date(2027, 2, 8), "ENGLISH", year))
+                self.assertIsNone(weekly_rpt_suggestion("Johor", date(2027, 5, 19), "ENGLISH", year))
+                self.assertEqual(len(weekly_rpt_suggestion("Johor", date(2027, 10, 25), "ENGLISH", year)["lessons"][""]), 2)
+                self.assertEqual(weekly_rpt_suggestion("Johor", date(2027, 12, 3), "ENGLISH", year)["lessons"][""], [157, 158, 159, 160])
+
+    def test_public_and_state_holidays_apply_to_other_subjects(self):
+        for state, day in [("W.P. Kuala Lumpur", (2, 1)), ("Terengganu", (3, 4)),
+                           ("Johor", (6, 8)), ("Selangor", (9, 16)), ("Sarawak", (10, 28))]:
+            with self.subTest(state=state, day=day):
+                self.assertIsNone(weekly_rpt_suggestion(state, date(2027, *day), "SCIENCE", 2))
+        self.assertIsNotNone(weekly_rpt_suggestion("Johor", date(2027, 3, 4), "SCIENCE", 2))
+        self.assertIsNotNone(weekly_rpt_suggestion("Sarawak", date(2027, 10, 27), "SCIENCE", 2))
 
     def test_missing_schedule_is_empty_without_guessing(self):
         out=day_payload({"state_name":"Selangor"},{"entries":[]},
