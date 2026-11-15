@@ -177,6 +177,12 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
  #timetable-reader-report td:nth-child(2){white-space:normal}
  #timetable-reader-report th,#timetable-reader-report td{padding:8px 3px}
 }
+.timetable-day-tools{display:flex;align-items:end;gap:10px;flex-wrap:wrap;margin:0 0 12px}
+.timetable-day-tools label{display:grid;gap:4px;color:#184965;font-weight:650}
+.timetable-day-tools select{font:inherit;color:#153d56;background:#fff;border:1px solid #c4d7e2;border-radius:10px;padding:10px;min-height:44px}
+.timetable-day-tools .secondary{background:#fff;color:#1a526a;border:1px solid #c7d8de}
+#timetable-editor{border:0;margin:0;padding:0;min-inline-size:0}
+.timetable-table tbody tr[hidden]{display:none}
 .timetable-table-wrap{overflow-x:auto}
 .timetable-table{border-collapse:collapse;width:100%;min-width:655px;font-size:.87rem}
 .timetable-table th,.timetable-table td{border:1px solid #d2e1e7;padding:7px;vertical-align:top}
@@ -652,7 +658,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 
 <section id="view-today" class="app-view" aria-labelledby="view-today-heading" hidden>
   <h2 id="view-today-heading">RPH Hari Ini</h2>
-  <p>Pilih Tema/Unit/Tajuk dan Lesson/PdP untuk setiap kelas di bawah. Selepas semua pilihan selesai, tekan <strong>Jana Bahan Semua Lesson</strong> sekali. Hasil bagi setiap kelas dan subjek akan dipaparkan secara berasingan di bahagian paling bawah.</p>
+  <p>Semak cadangan minggu daripada RPT, kemudian pilih Lesson/PdP mengikut kemajuan kelas. Tekan <strong>Jana Bahan Semua Lesson</strong> untuk melihat bahan di bawah.</p>
   <div class="daily-rph-toolbar">
     <div><label for="today-date">Tarikh PdP</label><input id="today-date" type="date" aria-label="Tarikh RPH Hari Ini"></div>
     <button type="button" id="today-refresh">Muat Semula Jadual</button>
@@ -811,7 +817,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </form>
 <section id="teacher-timetable" class="teacher-timetable-section" aria-labelledby="timetable-heading">
 <h3 id="timetable-heading">Jadual Waktu Mengajar</h3>
-<p>Tambah waktu PdP mengikut hari, masa, kelas dan subjek. <strong>Pilih subjek daripada senarai mengikut kategori</strong>; untuk subjek khas atau nama lama, pilih <strong>Lain-lain — taip sendiri</strong>. Jadual ini digunakan oleh RPH Hari Ini.</p>
+<p>Pilih hari, tambah waktu mengajar dan simpan sekali selepas selesai. RPH Hari Ini menggunakan jadual ini.</p>
 <div id="timetable-reader" hidden>
   <h4>Auto Baca Jadual Waktu</h4>
   <label for="timetable-reader-file">Gambar atau PDF jadual waktu (maksimum 8 MB)</label>
@@ -843,13 +849,27 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     </div>
   </section>
 </div>
-<h4 id="timetable-editor-heading">Jadual Sedia Ada</h4>
+<fieldset id="timetable-editor" aria-label="Sunting jadual waktu">
+<div class="profile-actions timetable-day-tools">
+  <label for="timetable-day">Hari<select id="timetable-day" disabled>
+    <option value="Isnin">Isnin</option><option value="Selasa">Selasa</option>
+    <option value="Rabu">Rabu</option><option value="Khamis">Khamis</option>
+    <option value="Jumaat">Jumaat</option><option value="Sabtu">Sabtu</option>
+    <option value="Ahad">Ahad</option><option value="">Semua hari</option>
+  </select></label>
+  <button id="timetable-add" type="button" disabled>+ Tambah Waktu</button>
+  <label for="timetable-copy-day">Salin dari hari<select id="timetable-copy-day" disabled>
+    <option value="">Pilih hari asal</option>
+  </select></label>
+  <button id="timetable-copy" class="secondary" type="button" disabled>Salin Waktu</button>
+</div>
+<h4 id="timetable-editor-heading">Waktu Mengajar</h4>
 <div class="timetable-table-wrap"><table class="timetable-table" aria-labelledby="timetable-editor-heading">
 <thead><tr><th>Hari</th><th>Mula</th><th>Tamat</th><th>Kelas</th><th>Subjek</th><th>Padam</th></tr></thead>
 <tbody id="timetable-rows"></tbody></table></div>
-<p id="timetable-empty" class="notice">Tiada waktu disimpan. Tekan Tambah Waktu untuk mula.</p>
+<p id="timetable-empty" class="notice">Tiada waktu. Tekan Tambah Waktu untuk mula.</p>
+</fieldset>
 <div class="profile-actions">
-  <button id="timetable-add" type="button" disabled>+ Tambah Waktu</button>
   <button id="timetable-save" type="button" disabled>Simpan Jadual Waktu</button>
   <span id="timetable-save-status" class="notice" role="status" aria-live="polite">Memuatkan jadual…</span>
 </div>
@@ -2090,8 +2110,8 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
-<script src="/assets/rph-today.js?v=science-copy-expanded-20261113"></script>
-<script src="/assets/teacher-profile.js?v=school-logo-save-20261115"></script>
+<script src="/assets/rph-today.js?v=weekly-rpt-20261115"></script>
+<script src="/assets/teacher-profile.js?v=manual-timetable-20261115"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>
 <script src="/assets/admin-usage.js?v=payment-inbox-20261114"></script>

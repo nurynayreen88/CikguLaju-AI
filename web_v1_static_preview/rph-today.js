@@ -142,6 +142,26 @@
   select.addEventListener("change",()=>{void advance(c,name);});
   return select;
  }
+ function lessonNumber(title){
+  const match=/^(?:Lesson|PdP)\s*(\d+)/i.exec(title);
+  return match?Number(match[1]):null;
+ }
+ function suggestedLessonNumbers(c){
+  const component=c.controls.component.value||c.slot.component||"";
+  return c.slot.rpt_suggestion?.lessons?.[component]||[];
+ }
+ function renderWeeklySuggestion(c){
+  const suggestion=c.slot.rpt_suggestion;
+  if(!suggestion)return;
+  const label=c.slot.subject_code==="ENGLISH"?"Lesson":"PdP";
+  const numbers=suggestedLessonNumbers(c);
+  const prefix="Cadangan RPT · Minggu "+suggestion.week+" (Kumpulan "+suggestion.group+")";
+  c.weeklySuggestion.textContent=numbers.length
+   ? prefix+" — "+label+" "+numbers.map(number=>String(number).padStart(3,"0")).join(", ")
+   : prefix+(c.slot.subject_code==="PJPK"&&!c.controls.component.value
+      ? " — Pilih PJ atau PK untuk melihat cadangan."
+      : " — Tiada "+label+" untuk pilihan ini.");
+ }
  function fill(c,name,items,label){
   const select=c.controls[name];
   select.replaceChildren(new Option("Pilih "+label,""));
@@ -153,6 +173,8 @@
     title=nativeLessonLabel(item,c.slot.subject_code);
     if(!title)continue;
    }
+   if(name==="lesson" && suggestedLessonNumbers(c).includes(lessonNumber(title)))
+    title+=" · Cadangan minggu ini";
    const option=new Option(title,String(item.value));
    if(name==="lesson"){
      option.dataset.bookRef=String(item.textbook_ref||item.student_book_ref||"").trim();
@@ -233,8 +255,10 @@
    }else{
     await loadStage(c,"unit","units",{subject:code},SOURCE_NAMES[code]||"Unit / Tajuk");
    }
-  }else if(from==="component"&&control.component.value){
-   await loadStage(c,"unit","units",{subject:code,component:control.component.value},"Unit");
+  }else if(from==="component"){
+   renderWeeklySuggestion(c);
+   if(control.component.value)
+    await loadStage(c,"unit","units",{subject:code,component:control.component.value},"Unit");
   }else if(from==="theme"&&control.theme.value){
    await loadStage(c,"unit","bm-units",{subject:"BM",theme:control.theme.value},"Unit");
   }else if(from==="unit"&&control.unit.value){
@@ -281,12 +305,18 @@
   }
   c.editor=create("div","daily-rph-editor");
   c.editor.append(create("h3","","Pilih Tajuk / Topik / Lesson"));
+  if(slot.rpt_suggestion){
+   c.weeklySuggestion=create("p","notice");
+   c.weeklySuggestion.setAttribute("aria-live","polite");
+   c.editor.append(c.weeklySuggestion);
+  }
   c.message=create("p","notice");
   c.bookRef=create("p","notice");
   for(const [name,label] of [
    ["component","Komponen PJ atau PK"],["theme","Tema"],["unit",SOURCE_NAMES[slot.subject_code]||"Unit / Tajuk"],
    ["topic","Tajuk"],["lesson",slot.subject_code==="ENGLISH"?"Lesson":"PdP"]
   ])stage(c,name,label);
+  renderWeeklySuggestion(c);
   c.students=create("input");
   c.students.type="number";
   c.students.min="1";

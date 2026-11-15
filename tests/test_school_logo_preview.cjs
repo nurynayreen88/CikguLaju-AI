@@ -10,7 +10,7 @@ const methods = script.slice(script.indexOf("function savedLogoSchoolCode()"),
 const selectHandler = script.slice(script.indexOf('schoolChoiceField.addEventListener("change",'),
   script.indexOf("async function loadTeacherProfile()"));
 const profileHandler = script.slice(script.indexOf('profileForm.addEventListener("submit",'),
-  script.indexOf('timetableAddButton.addEventListener("click",'));
+  script.indexOf('timetableDay.addEventListener("change",'));
 const requests = [];
 const revoked = [];
 const classes = new Set();
@@ -44,7 +44,7 @@ const context = {
   AbortController, URLSearchParams, schoolChoiceField, schoolLogoSelectionImage,
   schoolLogoFile: {files: []}, schoolLogoAutoButton: {}, schoolLogoSelectionStatus: {hidden: true},
   profileForm, profileMessage, schoolLogoUpload: {}, profileSaveButton: {}, schoolLogoStatus:{},
-  profileSaving: false, schoolLogoSaving: false, timetableImportSaving: false,
+  profileSaving: false, schoolLogoSaving: false, timetableSaving: false, timetableImportSaving: false,
   pendingSchoolLogoCode: "", schoolLogoSelection: null,
   clearStoredSchoolLogo: () => {},
   loadSchoolLogo: async () => { context.displayedLogo=stored.get(JSON.parse(state.savedProfile).school_code); },
