@@ -30,12 +30,12 @@ Rujukan takwim ialah [Surat Siaran KPM dan Lampiran A–C](https://www.moe.gov.m
 
 ## Subjek lain
 
-Kesemua 56 PDF KSSR kini mempunyai sifar PdP pada M06 dan M19. Lima PDF setiap subjek Bahasa Melayu, Sains, Pendidikan Islam, Pendidikan Moral, PJPK dan Bahasa Arab diselaraskan selepas English, Pendidikan Muzik dan RBT. RPH Hari Ini dijana daripada agihan PDF yang sama. RPT 2026 menjadi rujukan rentak, sementara tarikh mengikuti takwim KPM 2027 Kumpulan A/B.
+Kesemua 56 PDF KSSR dalam cabang Web mempunyai sifar PdP pada M06 dan M19. Lima PDF setiap subjek Bahasa Melayu, Sains, Pendidikan Islam, Pendidikan Moral, PJPK dan Bahasa Arab diselaraskan selepas English, Pendidikan Muzik dan RBT. RPH Hari Ini dijana daripada agihan PDF yang sama. RPT 2026 menjadi rujukan rentak, sementara tarikh mengikuti takwim KPM 2027 Kumpulan A/B.
 
 | Subjek | Dapatan agihan dalam PDF Web asal dan semakan 2026 |
 | --- | --- |
 | Bahasa Melayu | 164–166 PdP setahun. Lazimnya 5 PdP dan ada minggu 2–4. RPT 2026 memecahkan topik kepada baris kemahiran dan kadang-kadang memasukkan PKJR bersama. Kelima-lima PDF memuatkan 5 PdP pada M19. |
-| Matematik | 117 Lesson setahun setiap tahun, tertumpu pada 25–28 minggu. Tertinggi 9 pada Tahun 3/4 dan 11 pada Tahun 5/6. RPT 2026 menyusun SK/SP mengikut minggu. Semak minit, pengumpulan Lesson di bawah topik dan minggu yang tiada baris sebelum mengagihkan semula. |
+| Matematik | 117 PdP setiap tahun. Versi Web asal menumpukan sehingga 11 PdP dalam satu minggu. Agihan Web kini mengikut RPT Matematik Telegram v28. Semak agihan minit mengikut jadual sekolah untuk peruntukan tahunan 96 jam. |
 | Sains | 92 / 103 / 88 / 116 / 84 PdP bagi Tahun 2–6. Tahun 6 Web mengandungi 84 PdP. Dua belas SP Kemahiran Proses Sains dalam indeks 96 masih perlu dipadankan. RPT 2026 menyusun penyiasatan dan SK/SP mengikut minggu. Semua tahun mempunyai 2–3 PdP pada M19. |
 | Pendidikan Islam | 112 / 147 / 151 / 143 / 143 PdP. RPT 2026 menggunakan tempoh berlainan seperti 30 minit dan 1 jam. Kelima-lima PDF memuatkan PdP pada M06. Kira minit tasmi berasingan sebelum menyebarkan semula bidang. |
 | Pendidikan Moral | 96 PdP dan agihan 2–3 seminggu. Semua tahun meletakkan 2 PdP pada M06 dan 3 pada M19. RPT 2026 mengelompokkan unit dan standard, dengan tempoh mengikut jadual. |
@@ -59,6 +59,12 @@ Rujukan bagi subjek lain dihimpunkan daripada [RPT SK 2026](https://www.dminspir
 - Bahasa Arab mengekalkan 58–60 PdP dan maksimum dua seminggu. Minggu Deepavali mempunyai paling banyak satu. Semua 298 pautan bahan kekal pada PdP yang sepadan.
 
 Agihan berdasarkan bilangan hari tersedia dan rentak asal subjek. Minit bagi PdP yang tempohnya berbeza mengikut sekolah belum disahkan sebagai jumlah jam setahun. Tarikh slot guru bergantung pada jadual kelas serta cuti negeri.
+
+## Matematik SK Tahun 2–6
+
+PDF Telegram v28 menyediakan agihan yang sama bagi kelima-lima tahun. RPT 2026 dalam jadual semakan menyusun SK/SP mengikut minggu dan menjadi rujukan susunan topik dan rentak. Lajur minggu Web dan cadangan RPH Hari Ini menggunakan 33 minggu dengan tiga PdP, sembilan minggu dengan dua PdP (M01, M05, M08, M10, M20, M30, M33, M35 dan M39) serta dua minggu tanpa PdP (M06 dan M19). Semua 585 PdP kekal mengikut turutan. Teks jadual lama yang terselit dalam 17 baris pengajaran dibuang dengan memulihkan empat sel kandungan daripada baris Telegram v28 yang sepadan nombor Lesson dan kod SP. Julat penuh PdP dipaparkan bagi setiap minggu termasuk apabila jadual bersambung ke halaman seterusnya.
+
+Bilangan PdP ialah agihan perancangan. Tempoh sebenar bergantung pada jadual dan cuti sekolah. Audit ini tidak mengesahkan 96 jam pengajaran dalam setiap jadual sekolah.
 
 ## Sains Tahun 6
 

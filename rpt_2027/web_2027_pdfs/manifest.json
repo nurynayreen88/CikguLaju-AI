@@ -3,7 +3,7 @@
   "year": 2027,
   "status": "DRAF_USER_VISIBLE_NOT_ACADEMIC_FINAL",
   "count": 56,
-  "pages": 1553,
+  "pages": 1528,
   "files": {
     "bahasa_arab:2": {
       "path": "bahasa_arab/tahun_2.pdf",
@@ -142,41 +142,41 @@
     },
     "matematik:2": {
       "path": "matematik/tahun_2.pdf",
-      "sha256": "73289bb2dcfbcd33f31f208d589ba1ebefa516e767f4ed618b57584255d3150b",
-      "bytes": 143623,
-      "pages": 53,
+      "sha256": "d675e0e419d3597ece0c9e3340fcbdb1f787535988a4912fda8f00c90b8bccf6",
+      "bytes": 228616,
+      "pages": 44,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "matematik:3": {
       "path": "matematik/tahun_3.pdf",
-      "sha256": "0ad335920554c2ed1571bfd4790e3e5c19103a2fcfced01bd86ee8411efe55a7",
-      "bytes": 138444,
-      "pages": 50,
+      "sha256": "07a383d5c1f2560093f808affc9770081cb539d026230918d22623fcef0bd88b",
+      "bytes": 230488,
+      "pages": 44,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "matematik:4": {
       "path": "matematik/tahun_4.pdf",
-      "sha256": "f6b93ecae0de86fe9c550423db1d5ff4091a0465d3e5e27ef90f48c0769e138b",
-      "bytes": 150221,
+      "sha256": "58825c18daf89511ba1b1ee77d99793409f9d99eeffb3bee8d59f02865df9cb6",
+      "bytes": 243809,
       "pages": 50,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "matematik:5": {
       "path": "matematik/tahun_5.pdf",
-      "sha256": "3755302cd6d079782682392b1110a4e13de0fc886dd5606983aee96183032796",
-      "bytes": 148951,
-      "pages": 55,
+      "sha256": "41cc1819d5a1522c5aac40f6e35197920bb1bf1ad23a6d25a2a57a68916ff1c8",
+      "bytes": 233636,
+      "pages": 51,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },
     "matematik:6": {
       "path": "matematik/tahun_6.pdf",
-      "sha256": "e09c4f1102ad6a2bc25140b734b1f2fdd2d7eac4afc3f3b19aee463d5b012898",
-      "bytes": 140907,
-      "pages": 51,
+      "sha256": "a89c18cdc65240f9566eb783198373777f9e8cd4e1027c4a7e0b0fb498f53af3",
+      "bytes": 232559,
+      "pages": 45,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
     },

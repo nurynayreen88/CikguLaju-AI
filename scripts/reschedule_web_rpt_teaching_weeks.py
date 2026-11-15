@@ -1,4 +1,4 @@
-"""Reassign the six remaining Web RPT subjects around 2027 school closures."""
+"""Align Web RPT teaching sequences with the 2027 calendar."""
 
 from collections import Counter, defaultdict
 from datetime import date
@@ -6,6 +6,7 @@ from hashlib import sha256
 import csv
 import json
 from pathlib import Path
+import re
 from tempfile import TemporaryDirectory
 
 import fitz
@@ -82,6 +83,52 @@ def allocate(subject, original):
     return result
 
 
+def math_telegram_source(year):
+    return ROOT.parent / 'matematik' / f'RPT_Matematik_Tahun_{year}_2027_v28_SEMENTARA.pdf'
+
+
+def math_telegram_plan(year, dates):
+    source = math_telegram_source(year)
+    week_heading = re.compile(
+        r'MINGGU (\d{2})\s*\|\s*A: (\d{2}/\d{2})–(\d{2}/\d{2})'
+        r'\s*•\s*B: (\d{2}/\d{2})–(\d{2}/\d{2})\s*\|\s*([0-3]) LESSON\b'
+    )
+    weeks = {}
+    counts = {}
+    week = None
+    with fitz.open(source) as pdf:
+        for page in pdf:
+            events = []
+            for block in page.get_text('dict')['blocks']:
+                for line in block.get('lines', ()):
+                    if line['bbox'][0] > 50:
+                        continue
+                    label = ''.join(span['text'] for span in line['spans']).strip()
+                    heading = week_heading.match(label)
+                    lesson = LESSON.fullmatch(label)
+                    if heading or lesson:
+                        events.append((line['bbox'][1], heading, lesson))
+            for _, heading, lesson in sorted(events, key=lambda event: event[0]):
+                if heading:
+                    number = int(heading[1])
+                    if number != len(weeks) + 1 or heading.groups()[1:5] != tuple(
+                            date.fromisoformat(d).strftime('%d/%m') for d in dates[number]):
+                        raise ValueError(f'{source}: unexpected calendar window {number}')
+                    week = number
+                    weeks[week] = []
+                    counts[week] = int(heading[6])
+                elif week is None or lesson[1]:
+                    raise ValueError(f'{source}: lesson outside the numbered weekly plan')
+                else:
+                    weeks[week].append(int(lesson[2]))
+    if (weeks.keys() != dates.keys()
+            or any(len(ids) != counts[n] for n, ids in weeks.items())
+            or {n for n, ids in weeks.items() if not ids} != CLOSED_WEEKS.keys()
+            or [number for ids in weeks.values() for number in ids] != list(range(1, 118))):
+        raise ValueError(f'{source}: incomplete Matematik teaching sequence')
+    return {n: {'': ids} for n, ids in weeks.items() if ids}
+
+
 def body_rect(page, rtl):
     right = page.rect.width - MARGIN
     x0, x1 = (LEFT, right - CELL_WIDTH) if rtl else (LEFT + CELL_WIDTH, right)
@@ -112,12 +159,99 @@ def pdf_rows(pdf, rtl):
     return rows
 
 
-def print_week(page, rect, week, dates, font, closed=False):
+MATH_LEGACY_WEEK_TEXT = re.compile(r'\bA:\s*\d{2}/\d{2}|\bLESSO\b|\bMPAT:|\d{2}/\d{2}[–-]\d{2}/\d{2}')
+MATH_COLUMNS = (140, 320, 445, 655, 818.88977)
+TELEGRAM_COLUMNS = (101, 231, 323, 384, 820)
+
+
+def math_telegram_rows(year):
+    """Extract the four content cells under each numbered Telegram Lesson."""
+    cells = {}
+    current = None
+    with fitz.open(math_telegram_source(year)) as pdf:
+        for page in pdf:
+            spans = [span for block in page.get_text('dict')['blocks']
+                     for line in block.get('lines', ()) for span in line['spans']]
+            headings = sorted((span['bbox'][1], span['text'].strip()) for span in spans
+                              if span['origin'][0] < 50
+                              and (LESSON.fullmatch(span['text'].strip())
+                                   or span['text'].startswith('MINGGU ')))
+            intervals = [(-1, current)]
+            for y, label in headings:
+                identity = LESSON.fullmatch(label)
+                current = int(identity[2]) if identity else None
+                intervals.append((y, current))
+                if identity:
+                    cells[current] = [[], [], [], []]
+            for low, high in zip(intervals, [*intervals[1:], (550, None)]):
+                if low[1] is None:
+                    continue
+                for span in sorted(spans, key=lambda span: span['origin'][::-1]):
+                    x, y = span['origin']
+                    if not max(54, low[0]) <= y < high[0] or span['text'].strip() in {
+                            'UNIT / TAJUK', 'SK', 'SP', 'AKTIVITI PdP DAN PBD (CADANGAN)'}:
+                        continue
+                    for column, (left, right) in enumerate(zip(TELEGRAM_COLUMNS, TELEGRAM_COLUMNS[1:])):
+                        if left <= x < right:
+                            cells[low[1]][column].append(span['text'].strip())
+                            break
+    return {lesson: [' '.join(values) for values in content] for lesson, content in cells.items()}
+
+
+def clean_math_week_text(source, destination, year):
+    """Restore contaminated Web cells from the same numbered Telegram source rows."""
+    source_rows = math_telegram_rows(year)
+    with fitz.open(source) as pdf:
+        for (_, number), page_no, row in pdf_rows(pdf, False):
+            page = pdf[page_no]
+            before = page.get_text(clip=row)
+            if not MATH_LEGACY_WEEK_TEXT.search(before):
+                continue
+            cells = source_rows[number]
+            before_codes = set(re.findall(r'\b\d+\.\d+\.\d+\b', before))
+            matching_codes = set(re.findall(r'\b\d+\.\d+\.\d+\b', cells[2]))
+            if not all(cells) or not matching_codes or before_codes.isdisjoint(matching_codes):
+                raise ValueError(f'{source}: SP evidence disagrees at Lesson {number:03d}')
+            page.add_redact_annot(row, fill=False, cross_out=False)
+            page.apply_redactions(images=0, graphics=0, text=0)
+            page.insert_font(fontname='RPTBody', fontfile=str(FONT_DIR / 'DejaVuSans.ttf'))
+            page.insert_font(fontname='RPTBold', fontfile=str(FONT_DIR / 'DejaVuSans-Bold.ttf'))
+            page.insert_text((147, row.y0 + 17.1), f'Lesson {number:03d}', fontsize=8.1,
+                             fontname='RPTBold', color=INK)
+            for column, value in enumerate(cells):
+                x = MATH_COLUMNS[column] + 7
+                y = row.y0 + (29 if column == 0 else 17)
+                font_name = 'RPTBold' if column == 0 else 'RPTBody'
+                font_path = FONT_DIR / ('DejaVuSans-Bold.ttf' if column == 0 else 'DejaVuSans.ttf')
+                width = MATH_COLUMNS[column + 1] - x - 5
+                font = fitz.Font(fontfile=str(font_path))
+                size = 7.3 if column == 2 else 7.5
+                words = value.split()
+                line = words.pop(0)
+                for word in words:
+                    expanded = f'{line} {word}'
+                    if font.text_length(expanded, fontsize=size) <= width:
+                        line = expanded
+                    else:
+                        page.insert_text((x, y), line, fontsize=size, fontname=font_name, color=INK)
+                        line = word
+                        y += 9
+                if y > row.y1 - 3:
+                    raise ValueError(f'{source}: restored text overflows Lesson {number:03d}')
+                page.insert_text((x, y), line, fontsize=size, fontname=font_name, color=INK)
+            print(f'Matematik Tahun {year}, Lesson {number:03d}: pulihkan teks sumber Telegram',
+                  flush=True)
+        pdf.save(destination, garbage=4, deflate=True, clean=True)
+
+
+def print_week(page, rect, week, dates, font, closed=False, lessons=None):
     page.draw_rect(rect, fill=GREEN, color=LINE, width=0.5)
     lines = [f'M{week:02d} - Cuti sekolah' if closed else f'M{week:02d}', 'Kumpulan A:',
              ' - '.join(dates[:2]), 'Kumpulan B:', ' - '.join(dates[2:])]
-    space = min(11.3, (rect.height - 12) / 4)
-    first = rect.y0 + (rect.height - space * 4) / 2 + 2.5
+    if lessons:
+        lines.insert(1, f'{len(lessons)} PdP ({lessons[0]:03d}-{lessons[-1]:03d})')
+    space = min(11.3, (rect.height - 12) / max(4, len(lines) - 1))
+    first = rect.y0 + (rect.height - space * (len(lines) - 1)) / 2 + 2.5
     for index, value in enumerate(lines):
         width = font.text_length(value, fontsize=7)
         x = rect.x1 - width - 5 if rect.x0 > 500 else rect.x0 + 7
@@ -171,7 +305,7 @@ def append_row(page, original, fragments, row_fragments, row, y, copied):
     return target.y1
 
 
-def render(source, target, rtl, assignments, dates):
+def render(source, target, rtl, assignments, dates, *, show_numbered_range=False):
     path_font = FONT_DIR / 'DejaVuSans.ttf'
     font = fitz.Font(fontfile=str(path_font))
     with fitz.open(source) as original, fitz.open() as output, fitz.open() as fragments:
@@ -208,20 +342,25 @@ def render(source, target, rtl, assignments, dates):
                 y += height
                 continue
             pending = groups[week]
+            lessons = assignments[week][''] if show_numbered_range else None
             height = sum(row[2].height for row in pending)
             if y > TOP and y + height > BOTTOM:
                 page, y = add_page(output, fragments, path_font), TOP
             start = y
             for row in pending:
                 if y + row[2].height > BOTTOM:
-                    print_week(page, fitz.Rect(x, start, x + CELL_WIDTH, y), week, dates[week], font)
+                    print_week(page, fitz.Rect(x, start, x + CELL_WIDTH, y), week, dates[week], font,
+                               lessons=lessons)
                     page, y = add_page(output, fragments, path_font), TOP
                     start = y
                 if y + row[2].height > BOTTOM:
                     raise ValueError(f'{source}: one source row exceeds a page')
                 y = append_row(page, original, fragments, row_fragments, row, y, copied)
-            print_week(page, fitz.Rect(x, start, x + CELL_WIDTH, y), week, dates[week], font)
-        output.save(target, garbage=4, deflate=True, clean=True)
+            print_week(page, fitz.Rect(x, start, x + CELL_WIDTH, y), week, dates[week], font,
+                       lessons=lessons)
+        if show_numbered_range:
+            output.subset_fonts()
+        output.save(target, garbage=4, deflate=True, clean=True, use_objstms=1)
         with fitz.open(target) as reopened:
             if original[0].get_pixmap().samples != reopened[0].get_pixmap().samples:
                 raise ValueError(f'{source}: cover changed')
@@ -253,7 +392,8 @@ def update_audit(allocation):
             f'{count} PdP × {freq}' for count, freq in sorted(Counter(counts.values()).items()))
         for week in (6, 19, 39):
             record[f'M{week:02d} calon'] = str(counts[week])
-        record['Status'] = 'Agihan cuti penuh disemak'
+        record['Status'] = ('Agihan sepadan dengan PDF Telegram v28' if record['Subjek'] == 'MATH'
+                            else 'Agihan cuti penuh disemak')
     with AUDIT.open('w', encoding='utf-8', newline='') as file:
         writer = csv.DictWriter(file, fieldnames=fields, lineterminator='\n')
         writer.writeheader()
@@ -275,7 +415,7 @@ def main():
         outputs = []
         for key, record in manifest['files'].items():
             slug, year = key.split(':')
-            if slug not in SLUGS:
+            if slug not in (*SLUGS, 'matematik'):
                 continue
             path = ROOT / record['path']
             code = SUBJECTS[slug]
@@ -283,19 +423,30 @@ def main():
             if digest != record['sha256'] or digest != cover['source_sha256_by_subject_year'][key]:
                 raise ValueError(f'Source and cover hashes disagree for {path}')
             _, old = read_weeks(path, code)
-            if not (CLOSED_WEEKS.keys() & old.keys()):
-                continue
-            new = allocate(code, old)
+            if code == 'MATH':
+                new = math_telegram_plan(year, iso)
+                if old == new:
+                    continue
+            else:
+                if not (CLOSED_WEEKS.keys() & old.keys()):
+                    continue
+                new = allocate(code, old)
             candidate = Path(folder) / f'{slug}_{year}.pdf'
-            pages = render(path, candidate, code in RTL_SUBJECTS, new, dates)
+            source = path
+            if code == 'MATH':
+                source = Path(folder) / f'math_source_{year}.pdf'
+                clean_math_week_text(path, source, year)
+            pages = render(source, candidate, code in RTL_SUBJECTS, new, dates,
+                           show_numbered_range=(code == 'MATH'))
             published_dates, published = read_weeks(candidate, code)
             if published != new or published_dates != {w: iso[w] for w in new}:
                 raise ValueError(f'The new PDF does not match the proposed allocation for {path}')
             data = candidate.read_bytes()
             digest = sha256(data).hexdigest()
             manifest['pages'] += pages - record['pages']
-            record.update(bytes=len(data), pages=pages, sha256=digest,
-                          full_school_closures_rescheduled=True)
+            record.update(bytes=len(data), pages=pages, sha256=digest)
+            if code != 'MATH':
+                record['full_school_closures_rescheduled'] = True
             cover['source_sha256_by_subject_year'][key] = digest
             outputs.append((candidate, path))
             allocations[code, year] = new
