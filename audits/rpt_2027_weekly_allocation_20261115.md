@@ -30,13 +30,13 @@ Rujukan takwim ialah [Surat Siaran KPM dan Lampiran A–C](https://www.moe.gov.m
 
 ## Subjek lain
 
-Sebanyak 43 daripada 56 PDF asal mempunyai PdP pada satu atau kedua-dua minggu cuti penuh. Selepas lima PDF English, lima Pendidikan Muzik dan tiga RBT dijadualkan semula, masih ada 30 PDF dalam enam subjek yang memerlukan pengagihan semula. Cadangan di RPH Hari Ini disekat pada tarikh cuti untuk semua subjek.
+Kesemua 56 PDF KSSR kini mempunyai sifar PdP pada M06 dan M19. Lima PDF setiap subjek Bahasa Melayu, Sains, Pendidikan Islam, Pendidikan Moral, PJPK dan Bahasa Arab diselaraskan selepas English, Pendidikan Muzik dan RBT. RPH Hari Ini dijana daripada agihan PDF yang sama. RPT 2026 menjadi rujukan rentak, sementara tarikh mengikuti takwim KPM 2027 Kumpulan A/B.
 
 | Subjek | Dapatan agihan dalam PDF Web asal dan semakan 2026 |
 | --- | --- |
 | Bahasa Melayu | 164–166 PdP setahun. Lazimnya 5 PdP dan ada minggu 2–4. RPT 2026 memecahkan topik kepada baris kemahiran dan kadang-kadang memasukkan PKJR bersama. Kelima-lima PDF memuatkan 5 PdP pada M19. |
 | Matematik | 117 Lesson setahun setiap tahun, tertumpu pada 25–28 minggu. Tertinggi 9 pada Tahun 3/4 dan 11 pada Tahun 5/6. RPT 2026 menyusun SK/SP mengikut minggu. Semak minit, pengumpulan Lesson di bawah topik dan minggu yang tiada baris sebelum mengagihkan semula. |
-| Sains | 92 / 103 / 88 / 116 / 84 PdP bagi Tahun 2–6. Tahun 6 Web mengandungi 84 dan perlu dipadankan dengan urutan induk 96. RPT 2026 menyusun penyiasatan dan SK/SP mengikut minggu. Semua tahun mempunyai 2–3 PdP pada M19. |
+| Sains | 92 / 103 / 88 / 116 / 84 PdP bagi Tahun 2–6. Tahun 6 Web mengandungi 84 PdP. Dua belas SP Kemahiran Proses Sains dalam indeks 96 masih perlu dipadankan. RPT 2026 menyusun penyiasatan dan SK/SP mengikut minggu. Semua tahun mempunyai 2–3 PdP pada M19. |
 | Pendidikan Islam | 112 / 147 / 151 / 143 / 143 PdP. RPT 2026 menggunakan tempoh berlainan seperti 30 minit dan 1 jam. Kelima-lima PDF memuatkan PdP pada M06. Kira minit tasmi berasingan sebelum menyebarkan semula bidang. |
 | Pendidikan Moral | 96 PdP dan agihan 2–3 seminggu. Semua tahun meletakkan 2 PdP pada M06 dan 3 pada M19. RPT 2026 mengelompokkan unit dan standard, dengan tempoh mengikut jadual. |
 | PJPK | RPT 2026 menyenaraikan PJ dan PK secara berasingan. PDF Web mengandungi 33–38 PJ serta 32–35 PK setahun. Kelima-lima PDF mempunyai sekurang-kurangnya satu komponen pada M06 dan M19. |
@@ -49,8 +49,31 @@ Sebanyak 43 daripada 56 PDF asal mempunyai PdP pada satu atau kedua-dua minggu c
 
 Rujukan bagi subjek lain dihimpunkan daripada [RPT SK 2026](https://www.dminspired.com/kids-school/), [RPT Bahasa Arab 2026 SKMH](https://sites.google.com/moe-dl.edu.my/bahasa-arab-skmh/rpt/2026) dan [peruntukan masa KSSR Semakan 2017](https://www.scribd.com/document/449686173/Surat-Pekeliling-Ikhtisas-Bilangan-5-Pelaksanaan-KSSR-semakan-2017-pdf). Rujukan 2026 membandingkan topik, kemahiran dan tempoh. Nombor PdP siri CikguLaju boleh memecahkan satu blok RPT 2026 kepada beberapa pengajaran, jadi jumlah baris kedua-dua dokumen hanya boleh dibandingkan selepas unit dan tempoh dipadankan.
 
+## Penyelarasan 30 PDF
+
+- Bahasa Melayu mengekalkan 164–166 PdP setahun, maksimum lima seminggu. Agihan turun kepada maksimum empat pada minggu empat hari, tiga pada minggu tiga hari dan dua pada minggu Deepavali.
+- Sains mengekalkan agihan dua hingga tiga PdP bagi kebanyakan minggu. Minggu dengan dua hingga tiga hari persekolahan mempunyai maksimum dua. Tahun 6 masih mempunyai 84 PdP bernombor.
+- Pendidikan Islam mengekalkan 112–151 PdP setahun dengan maksimum empat seminggu dan agihan lebih ringan pada minggu cuti pendek. Teks dan susun atur Jawi disalin dari PDF sumber bagi setiap baris PdP.
+- Pendidikan Moral mengekalkan 96 PdP setahun, dengan dua hingga tiga pada minggu biasa dan maksimum dua pada minggu yang lebih pendek.
+- PJPK mengekalkan perancangan PJ dan PK sebagai dua urutan tersendiri. Maksimum satu PdP setiap komponen pada satu minggu. Blok terjejas beralih ke minggu persekolahan berikutnya.
+- Bahasa Arab mengekalkan 58–60 PdP dan maksimum dua seminggu. Minggu Deepavali mempunyai paling banyak satu. Semua 298 pautan bahan kekal pada PdP yang sepadan.
+
+Agihan berdasarkan bilangan hari tersedia dan rentak asal subjek. Minit bagi PdP yang tempohnya berbeza mengikut sekolah belum disahkan sebagai jumlah jam setahun. Tarikh slot guru bergantung pada jadual kelas serta cuti negeri.
+
+## Sains Tahun 6
+
+Kedua belas kod yang tiada dalam PDF Web ialah SP Kemahiran Proses Sains (1.1.1–1.1.12). [DSKP KPM September 2021, muka surat bercetak 42–44](https://beebeeclassroom.com/wp-content/uploads/2022/04/DSKP-KSSR-Semakan-2017-Sains-Tahun-6_ISBN_.pdf) menerangkan penggunaan beberapa kemahiran dalam satu penyiasatan. [RPT Sains 2026](https://www.dminspired.com/kids-school/Darjah%206/Sains/RPT%20Sains%20Tahun%206%202026/RPT-SAINS-THN-6-SK-2026-By-Rozayus-Academy-Kump-AB.pdf) mengelompokkannya dalam Unit 1. Cadangan padanan awal berikut merujuk nombor PdP dalam PDF 2027 dan perlu disemak terhadap aktiviti RPH sebenar dan buku teks sebelum dilepaskan.
+
+| SP | Kemahiran | Cadangan padanan PdP sedia ada dan bukti murid |
+| --- | --- | --- |
+| 1.1.1 dan 1.1.2 | Memerhati dan mengelas | PdP 058, pengurusan bahan buangan. Catat ciri bahan yang bersih dan kelaskan contoh berdasarkan bahan. |
+| 1.1.3, 1.1.6 dan 1.1.8 | Mengukur, berkomunikasi dan mentafsir data | PdP 044, hubungan kelajuan, jarak dan masa. Ukur jarak dan masa, bina jadual, kemudian jelaskan pola data. |
+| 1.1.4 dan 1.1.5 | Membuat inferens dan meramal | PdP 036, faktor yang mempengaruhi daya geseran. Cadangkan sebab perbezaan jarak gelongsoran dan ramalkan keputusan ujian berikutnya. |
+| 1.1.7 | Perhubungan ruang dan masa | PdP 065, fenomena gerhana. Susun pemerhatian simulasi mengikut urutan masa dan kedudukan jasad. |
+| 1.1.9–1.1.12 | Mendefinisi secara operasi, mengawal pemboleh ubah, membuat hipotesis dan mengeksperimen | PdP 076, kestabilan objek. Nyatakan cara ukuran kestabilan, rancang ujian satu pemboleh ubah, bentangkan hipotesis dan laporkan keputusan. |
+
 ## Semakan teknikal dan status
 
 - Lima PDF padan dengan katalog mingguan, mengandungi 800 Lesson unik mengikut urutan dan mengekalkan kandungan lajur pelajaran serta muka depan. Gambar sampel Year 2–6 disemak.
 - 43 ujian setempat meliputi akses, cetakan profil, RPH Hari Ini, tarikh cuti, katalog dan hashnya. Semakan cetak muka depan pada semua 56 PDF lulus dengan 12 sampel visual. Audit kebocoran teks pembangunan melaporkan 0 dapatan pada 56 PDF.
-- English Web aktif pada 15:31 MYT melalui #752. Versi Telegram menerapkan agihan sama kepada lima fail bersumber sendiri melalui #753. Pembaikan Pendidikan Muzik dan RBT hanya meliputi fail Web.
+- English Web aktif pada 15:31 MYT melalui #752. Versi Telegram menerapkan agihan sama kepada lima fail bersumber sendiri melalui #753. Pembaikan Pendidikan Muzik, RBT dan penyelarasan 30 fail tersebut meliputi PDF Web.
