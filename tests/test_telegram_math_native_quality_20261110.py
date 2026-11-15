@@ -15,6 +15,8 @@ from reportlab.pdfgen.canvas import Canvas
 from reportlab.lib.pagesizes import A4
 
 from web import telegram_verified_sequence_rph_bridge as bridge
+from web.math_rph_delivery_quality_20261110 import _explicit_phase_minutes
+from web.math_y2_pdp21_rph import install as install_math_y2_pdp21
 
 AUTH = "test-internal-secret-token-" + "a" * 40
 UNIT = "u" + "a" * 24
@@ -155,6 +157,32 @@ class NativeMathQualityTests(unittest.TestCase):
     def test_unauthorized_private_route_still_requires_token(self):
         res = self.client.post("/internal/rph/v1/sequence/render", json={})
         self.assertEqual(res.status_code, 401)
+
+
+class MathYear2Pdp21Tests(unittest.TestCase):
+    def test_plan_fits_teacher_slot_and_applies_to_the_verified_lesson_only(self):
+        original = {"OBJEKTIF PEMBELAJARAN": "Objektif PdP lain", "REFLEKSI": "Refleksi guru"}
+        runtime = SimpleNamespace(_rph_rows=lambda state, text: original)
+        install_math_y2_pdp21(runtime)
+        state = {
+            "subject": "Matematik", "pdp_sequence_code": "MT2-PDP-021",
+            "sk_code": "2.1", "sp_code": "2.1.2",
+        }
+        for end, duration in (("07:30", 30), ("08:00", 60), ("08:30", 90)):
+            with self.subTest(duration=duration):
+                rows = runtime._rph_rows({**state, "rph_time": f"07:00 - {end}"}, "")
+                phases = _explicit_phase_minutes(
+                    "Set Induksi " + rows["SET INDUKSI"] + "\n"
+                    + rows["AKTIVITI UTAMA"] + "\n"
+                    + "Penutup " + rows["PENUTUP"]
+                )
+                self.assertEqual(len(phases), 5)
+                self.assertEqual(sum(phases.values()), duration)
+                self.assertIn("3 daripada 4", rows["OBJEKTIF PEMBELAJARAN"])
+                self.assertEqual(rows["REFLEKSI"], original["REFLEKSI"])
+        for mismatch in ({"pdp_sequence_code": "MT2-PDP-020"}, {"sp_code": "2.1.1"},
+                         {"subject": "Sains"}):
+            self.assertIs(runtime._rph_rows({**state, **mismatch}, ""), original)
 
 
 if __name__ == "__main__":
