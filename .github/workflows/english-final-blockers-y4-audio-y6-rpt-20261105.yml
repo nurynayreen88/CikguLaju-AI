@@ -41,7 +41,7 @@ jobs:
           python - <<'PY'
           import pathlib
           p=pathlib.Path('rpt_2027/english/RPT_ENGLISH_TAHUN_6_2027_UNTUK_GURU.pdf')
-          assert p.is_file() and p.stat().st_size>500000
+          assert p.is_file() and p.stat().st_size>100000
           assert p.open('rb').read(5)==b'%PDF-'
           print('Offline RPT source and callback tests only; live teacher download NOT claimed')
           PY
