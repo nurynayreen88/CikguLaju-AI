@@ -736,6 +736,11 @@ except Exception as _math_sk_display_exc:
           type(_math_sk_display_exc).__name__, flush=True)
 
 
+# Apply the verified Year 2 three-number addition plan in both document formats.
+from web.math_y2_pdp21_rph import install as install_math_y2_pdp21_rph
+install_math_y2_pdp21_rph(telegram_runtime)
+
+
 # User-visible Telegram parity for the existing Web Special Activities catalogue.
 # Installs AFTER previous menu/referral/credit adapters; only prefixes "ak26:"
 # callbacks. Shares the same immutable 59 DRAFT_REVIEW records, digest, Word/PDF.
