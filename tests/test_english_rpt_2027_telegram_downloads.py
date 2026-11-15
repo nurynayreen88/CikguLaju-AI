@@ -95,6 +95,24 @@ class TelegramRPTTests(unittest.TestCase):
         self.admin = True
         self.assertEqual(self.namespace["callback"](123, "rpt2027_year_1"), ("previous", 123, "rpt2027_year_1"))
 
+    def test_additional_languages_show_preparation_status_without_document(self):
+        callback = self.namespace["callback"]
+        callback(123, "rpt2027_language:bahasa_iban:2")
+        self.assertIn("Akses Terhad", self.messages[-1][1])
+        self.active = True
+        callback(123, "rpt2027_year_2")
+        buttons = {button["callback_data"]: button["text"]
+                   for row in self.messages[-1][2] for button in row}
+        for code in ("bahasa_iban", "bahasa_kadazandusun", "bahasa_semai",
+                     "bahasa_cina_sk", "bahasa_tamil_sk"):
+            selection = f"rpt2027_language:{code}:2"
+            self.assertIn("Dalam Penyediaan", buttons[selection])
+            callback(123, selection)
+            self.assertIn("dalam penyediaan", self.messages[-1][1])
+        callback(123, "rpt2027_language:bahasa_iban:1")
+        self.assertIn("tidak sah", self.messages[-1][1])
+        self.assertEqual(self.documents, [])
+
     def test_failure_not_reported_as_success(self):
         self.active = True
         class FailedResponse:

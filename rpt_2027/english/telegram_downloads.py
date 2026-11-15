@@ -4,6 +4,7 @@ This is installed after app.py's existing callback wrappers by the active WSGI
 entrypoint. It never alters RPH credit accounting, subscriptions or the DB.
 """
 from pathlib import Path
+from primary_language_subjects import PRIMARY_LANGUAGE_SUBJECTS
 from tempfile import TemporaryDirectory
 from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
 from rpt_2027.psv.telegram_downloads import pdf_ready as psv_pdf_ready, build_pdf as build_psv_pdf
@@ -58,11 +59,19 @@ def install(ns):
         is_download = data.startswith("rpt2027_en_pdf_")
         is_psv = data.startswith("rpt2027_psv_pdf_")
         is_dlp = data.startswith("rpt2027_dlp:")
-        if data != "rpt2027_home" and not is_year and not is_download and not is_psv and not is_dlp:
+        is_language = data.startswith("rpt2027_language:")
+        if data != "rpt2027_home" and not is_year and not is_download and not is_psv and not is_dlp and not is_language:
             return previous(cid, d)
         # Enforce entitlement again for stale/forged buttons and downloads.
         if not allowed(cid):
             return locked(cid)
+        if is_language:
+            code, _, year = data.removeprefix("rpt2027_language:").partition(":")
+            label = PRIMARY_LANGUAGE_SUBJECTS.get(code)
+            if label is None or year not in ("2", "3", "4", "5", "6"):
+                return send(cid, "Pilihan RPT tidak sah.")
+            return send(cid, f"<b>{label} · Tahun {year}</b>\n\nRPT 2027 dalam penyediaan.",
+                        [[{"text": "⬅️ Pilih Subjek", "callback_data": f"rpt2027_year_{year}"}]])
         if is_dlp:
             parts = data.split(":")
             if len(parts) == 3:
@@ -131,6 +140,11 @@ def install(ns):
                 ]
                 if buttons:
                     kb.append(buttons)
+            kb.extend(
+                [{"text": f"{label} — Dalam Penyediaan",
+                  "callback_data": f"rpt2027_language:{code}:{year}"}]
+                for code, label in PRIMARY_LANGUAGE_SUBJECTS.items()
+            )
             kb.extend([
                 [{"text": "⬅️ Pilih Tahun", "callback_data": "rpt2027_home"}],
                 [{"text": "🏠 Menu Utama", "callback_data": "home"}],
