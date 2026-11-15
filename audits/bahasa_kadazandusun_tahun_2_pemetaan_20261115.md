@@ -3,10 +3,10 @@
 **DALAM SEMAKAN.** Pemetaan sumber bagi 12 unit dan halaman cetak 1–114.
 
 - [Buku teks Bahasa Kadazandusun Tahun 2](https://fliphtml5.com/bbsbl/yuwx/Bahasa_Kadazandusun_Tahun_2/). Nombor paparan flipbook untuk halaman kandungan ialah halaman cetak tambah 8.
-- [Indeks DSKP SK Tahun 2](https://sites.google.com/moe-dl.edu.my/sigujin/lain-lain/dskp/dskp-sekolah-rendah/dskp-sk-tahun-2) dan [Dokumen Penjajaran Kurikulum 2.0](https://www.tcer.my/wp-content/uploads/2021/01/19_DPK-2.0-Bahasa-Kadazandusun-Tahun-2.pdf). Padanan semakan silang menggunakan kod SP induk DPK 2.0. Pengesahan takrif dan pecahan SP masih perlu dibuat dengan DSKP asal.
+- [DSKP Bahasa Kadazandusun Tahun 2, BPK KPM, April 2016](https://drive.google.com/file/d/1D_vGpY0tYmzuUaMa6JicoQ5I5QRyizyd/view) disemak terus. Dokumen Penjajaran 2.0 digunakan sebagai rujukan tambahan.
 - [E-Katalog Buku Teks KPM](https://moe.gov.my/storage/files/shares/Banner/E-Katalog%20Buku%20Teks%20KPM.pdf), halaman cetak 30. Kod DBP bagi buku teks ialah `BT222003` dan bagi Buku Aktiviti ialah `BA222001`.
 
-Semakan struktur meliputi 114 halaman, 61 kod SP induk daripada buku teks dan 53 rujukan trek unik. 61 kod SP induk turut ditemui dalam DPK 2.0. Ekstrak DPK memisahkan digit dalam kod 1.4.1 dan 3.2.2. Kedua-duanya disemak pada baris jadual berkaitan. Bagi ms. 29, 36, 50, 69, 78, 81 dan 99, jadual mengindeks rujukan yang kelihatan dan meninggalkan ruang SP kosong.
+Semakan struktur meliputi 114 halaman dan 53 rujukan trek unik. Semua 61 kod SP induk yang diindeks daripada buku teks sepadan dengan DSKP asal. DSKP mengandungi 73 kod induk. Baki 12 kod belum mempunyai padanan halaman dalam indeks ini (`1.1.3`, `1.4.2`, `1.4.3`, `2.1.4`, `2.4.1`, `2.4.3`, `3.1.1`, `3.3.2`, `4.1.4`, `4.3.2`, `4.4.3`, `5.6.2`). Bagi ms. 29, 36, 50, 69, 78, 81 dan 99, rujukan yang kelihatan direkod dan ruang SP dibiarkan kosong.
 
 ## Tema 1 — Winoun Sondii
 
@@ -188,4 +188,4 @@ Semakan struktur meliputi 114 halaman, 61 kod SP induk daripada buku teks dan 53
 | 113 | 4.1 | 4.1.1 (ii) | 75 |  |
 | 114 | 4.2 | 4.2.1 (ii) | 76 | 53 |
 
-Susulan penyediaan bahan meliputi semakan RPT sekolah dan DSKP asal, fail Buku Aktiviti serta padanan audio sebenar sebelum membina RPT 2027 dan RPH.
+Susulan penyediaan bahan meliputi semakan RPT sekolah, pecahan dan takrif SP mengikut aktiviti, fail Buku Aktiviti serta padanan audio sebenar sebelum membina RPT 2027 dan RPH.
