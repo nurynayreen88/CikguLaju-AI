@@ -465,8 +465,8 @@
     },
     "sains:6": {
       "path": "sains/tahun_6.pdf",
-      "sha256": "1f1b23138edaa0d3b832400e3b9c30baacd2c99bdf9581b0ffd121acd8eb7b9d",
-      "bytes": 160204,
+      "sha256": "b5a60790595f5e3da950a3342e1f9448d3808d7a963a04066840fdb1c6707150",
+      "bytes": 238710,
       "pages": 19,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",

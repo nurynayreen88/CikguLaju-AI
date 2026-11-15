@@ -79,7 +79,11 @@ def read_weeks(path, subject):
     for component in {component for component, _ in seen}:
         numbers = [number for n in sorted(lessons_by_week)
                    for number in lessons_by_week[n].get(component, ())]
-        if numbers != list(range(1, len(numbers) + 1)):
+        expected = list(range(1, len(numbers) + 1))
+        if subject == "SCIENCE" and path.name == "tahun_6.pdf" and len(numbers) == 89:
+            # Unit 1 was added to the RPH catalogue after the 84 existing PdP.
+            expected = expected[84:] + expected[:84]
+        if numbers != expected:
             raise ValueError(f"{path}: non-contiguous sequence for {component}")
     if dates_by_week.keys() != lessons_by_week.keys():
         raise ValueError(f"{path}: week without a numbered lesson")
