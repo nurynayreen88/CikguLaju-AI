@@ -1,4 +1,4 @@
-"""Verify the Year 3 DLP Science review plans against the annual schedule."""
+"""Verify the Year 3 DLP review plans against their annual schedules."""
 
 from io import BytesIO
 from pathlib import Path
@@ -13,7 +13,7 @@ from dlp_year2_rph import render
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "staging" / "dlp" / "year3"
 RPT = ROOT / "rpt_2027" / "dlp" / "CikguLaju_RPT_DLP_2027_Science_Year_3.docx"
-PLAN_HEADING = re.compile(r"^## (DLP-SCI-Y3-(?:U\d{2}-\d{2}|R\d{2})) · (.+)$", re.M)
+PLAN_HEADING = re.compile(r"^## (DLP-(?:SCI|MAT)-Y3-(?:U\d{2}-\d{2}|R\d{2})) · (.+)$", re.M)
 FIELDS = {
     "Standards": "standards",
     "References": "references",
@@ -23,8 +23,8 @@ FIELDS = {
 }
 
 
-def review_plans():
-    for source in sorted(SOURCE.glob("science_*.md")):
+def review_plans(pattern="science_*.md"):
+    for source in sorted(SOURCE.glob(pattern)):
         text = source.read_text(encoding="utf-8")
         unit_title = text.splitlines()[0].split(" · ")[-1]
         sections = PLAN_HEADING.split(text)
@@ -108,3 +108,53 @@ class ScienceYear3DlpReviewTests(unittest.TestCase):
                 self.assertAlmostEqual(word.sections[0].page_height.mm, 297, places=1)
                 self.assertIn("Year 3 SK", word.paragraphs[1].text)
                 self.assertEqual(word.tables[1].cell(3, 0).text, lesson["phases"][2][0])
+
+
+class MathematicsYear3DlpReviewTests(unittest.TestCase):
+    def test_unit_two_matches_rpt_and_renders_word_and_pdf(self):
+        rpt = RPT.with_name(RPT.name.replace("Science", "Mathematics"))
+        expected = {}
+        for table in Document(rpt).tables:
+            for row in table.rows:
+                cells = [" ".join(cell.text.split()) for cell in row.cells]
+                if len(cells) != 5:
+                    continue
+                _, title, standards, _, references = cells
+                if match := re.fullmatch(r"Lesson (\d+) (.+) Unit 2 Addition, Subtraction, Multiplication and Division", title):
+                    number, topic = match.groups()
+                    lesson_id = f"DLP-MAT-Y3-U02-{number}"
+                    cs, ls = re.fullmatch(r"CS (.+) LS (.+)", standards).groups()
+                    standards = f"CS {cs} · LS {ls}"
+                elif title == "Review Basic Operations Consolidation":
+                    lesson_id, topic, standards = "DLP-MAT-Y3-R02", "Review: Basic Operations", None
+                else:
+                    continue
+                time = int(re.search(r"(\d+) min$", references)[1])
+                expected[lesson_id] = topic, standards, time
+        available = set()
+        covered = set()
+        total = 0
+        teacher = {"class": "", "date": "", "time": "", "students": ""}
+        for unit, plan in review_plans("mathematics_unit_02.md"):
+            with self.subTest(lesson=plan["id"]):
+                self.assertNotIn(plan["id"], available)
+                available.add(plan["id"])
+                topic, standards, minutes = expected[plan["id"]]
+                self.assertEqual(plan["title"], topic)
+                if standards is not None:
+                    self.assertEqual(plan["standards"], standards)
+                    covered.update(re.findall(r"2\.\d+\.\d+", plan["standards"]))
+                self.assertIn("Textbook Part 1", plan["references"])
+                self.assertIn("Activity Book", plan["references"])
+                self.assertEqual(len(plan["phases"]), 4)
+                self.assertEqual(sum(int(phase.rsplit(" ", 2)[1]) for phase, _, _ in plan["phases"]), minutes)
+                total += minutes
+                pdf = PdfReader(BytesIO(render("MATH_DLP", unit, plan, "pdf", teacher, year=3)))
+                self.assertEqual(len(pdf.pages), 1)
+                self.assertIn("Mathematics (DLP)", pdf.pages[0].extract_text())
+                word = Document(BytesIO(render("MATH_DLP", unit, plan, "word", teacher, year=3)))
+                self.assertEqual(word.paragraphs[2].text, topic)
+        self.assertEqual(available, set(expected))
+        self.assertEqual(len(available), 15)
+        self.assertEqual(len(covered), 12)
+        self.assertEqual(total, 1230)

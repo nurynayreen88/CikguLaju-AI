@@ -12,3 +12,9 @@
 - [DSKP Mathematics Year 3 edisi Inggeris](https://sites.google.com/moe.gov.my/ruaidlp-ppdkapit/buku-panduan-dskpp), [SOW DLP 2026](https://www.scribd.com/document/1027534630/Rpt-Math-Dlp-Year-3-Sk-2026-by-Rozayus-Academy-Kump-a-Kump-b), [Textbook Part 1 BT083006](https://anyflip.com/zqlz/bggt/basic) dan [Activity Book BA083005](https://anyflip.com/dswck/yuiv/basic).
 - 10 Lesson dan satu ulang kaji merangkumi 12 kod LS dan 750 minit mengikut RPT 2027. Lesson 03 menggunakan 1.1.2 (i) dan (ii) bagi perwakilan, manakala Lesson 05 menggunakan (iii) dan (iv) bagi perbandingan dan susunan. Padanan buku aktiviti ialah halaman 3 dan 6–7 masing-masing.
 - Rujukan Lesson 01 menggunakan TB 1–2 dan BA 1 bagi sebut dan padan. Lesson 04 menggunakan TB 7–8 dan BA 4–5 bagi nilai tempat, nilai digit dan cerakinan.
+
+## Mathematics Year 3 Unit 2
+
+- [DSKP Mathematics Year 3 edisi Inggeris, Basic Operations](https://fliphtml5.com/wgvyt/xffu/DSKP_Mathematics_Tahun_3_%28DLP%29/44/), [SOW DLP 2026](https://www.scribd.com/document/1027534630/Rpt-Math-Dlp-Year-3-Sk-2026-by-Rozayus-Academy-Kump-a-Kump-b), [Textbook Part 1 BT083006](https://anyflip.com/zqlz/bggt/basic/51-100) dan [Activity Book BA083005](https://anyflip.com/dswck/yuiv/basic).
+- Lesson 11–24 dan satu sesi ulang kaji meliputi 12 LS dalam 1,230 minit mengikut pelan tahunan. Rujukan bercetak ialah TB 28–80 dan BA 17–52. PBD menggunakan soalan baharu berserta jawapan untuk guru.
+- Lesson 15 bermula dengan operasi bergabung tanpa pengumpulan semula, mengikut nota LS 2.5.1. Lesson 16 dan 22 membezakan cerita operasi tunggal daripada cerita gabungan tambah dan tolak. Lesson 17 dan 23 menyatakan sama ada anu ialah jumlah asal, saiz kumpulan atau bilangan kumpulan.
