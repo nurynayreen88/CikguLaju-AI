@@ -8,11 +8,13 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import unittest
 import unicodedata
 from pathlib import Path
 
 from fitz import open as open_pdf
+from scripts.build_web_rpt_weekly_suggestions import read_weeks
 
 ROOT=Path(__file__).resolve().parents[1]/"rpt_2027"/"web_2027_pdfs"
 FIELDS=("LOGO SEKOLAH","NAMA SEKOLAH","NAMA GURU")
@@ -166,6 +168,35 @@ class ExistingCoverLayoutTests(unittest.TestCase):
             self.assertLess(box[2],l["identity_panel_top_left"][2])
             self.assertLess(box[3]-box[1],32)
         self.assertEqual(l["expected_underscore_lines_per_cover"],2)
+
+    def test_pi_jawi_rpt_preserves_verse_order_and_weekly_suggestions(self):
+        weekly_path = ROOT.parents[1] / "web" / "rpt_weekly_suggestions_2027.json"
+        suggestions = json.loads(weekly_path.read_text("utf-8"))
+        ranges = re.compile(r"(?<!\d)(\d+)[–-](\d+)(?!\d)")
+        expected = {2: (112, 75), 3: (147, 104), 4: (151, 116),
+                    5: (143, 117), 6: (143, 125)}
+        for year, (lesson_count, range_count) in expected.items():
+            with self.subTest(year=year):
+                entry = self.manifest["files"][f"pendidikan_islam:{year}"]
+                path = ROOT / entry["path"]
+                dates, weeks = read_weeks(path, "PI")
+                self.assertFalse(weeks.keys() & {6, 19})
+                self.assertEqual({str(n): [*dates[n], weeks[n]] for n in weeks},
+                                 suggestions[f"PI:{year}"])
+                identities = [number for week in sorted(weeks) for number in weeks[week][""]]
+                self.assertEqual(identities, list(range(1, lesson_count + 1)))
+                with open_pdf(path) as pdf:
+                    text = "\n".join(page.get_text() for page in list(pdf)[1:])
+                    self.assertTrue(any("Amiri" in font[3] for font in pdf[1].get_fonts()))
+                teacher_text = " ".join(text.lower().split())
+                self.assertNotIn("pembetulan diaudit:", teacher_text)
+                self.assertNotIn("tiada halaman buku teks yang direka", teacher_text)
+                found = ranges.findall(text)
+                self.assertEqual(len(found), range_count)
+                self.assertTrue(all(int(start) <= int(end) for start, end in found))
+                if year == 3:
+                    for verse_range in (("1", "3"), ("4", "5"), ("77", "95")):
+                        self.assertIn(verse_range, found)
 
 
 if __name__=="__main__":

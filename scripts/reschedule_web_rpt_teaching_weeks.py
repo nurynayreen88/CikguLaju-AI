@@ -261,7 +261,7 @@ def print_week(page, rect, week, dates, font, closed=False, lessons=None):
     for index, value in enumerate(lines):
         width = font.text_length(value, fontsize=7)
         x = rect.x1 - width - 5 if rect.x0 > 500 else rect.x0 + 7
-        page.insert_text((x, first + index * space), value, fontsize=7, fontname='RPTWeek', color=INK)
+        page.insert_text((x, first + index * space), value, fontsize=7, fontname='RPTCalendar', color=INK)
 
 
 def isolate_clip(fragments, source, page_no, clip):
@@ -287,9 +287,9 @@ def add_page(pdf, bands, path_font):
     page.show_pdf_page(header, bands, 0, clip=header)
     footer = fitz.Rect(0, 558, 755, rect.height)
     page.show_pdf_page(footer, bands, 1, clip=footer)
-    page.insert_font(fontname='RPTWeek', fontfile=str(path_font))
+    page.insert_font(fontname='RPTCalendar', fontfile=str(path_font))
     page.insert_text((775, 576), f'Halaman {page.number + 1}', fontsize=7,
-                     fontname='RPTWeek', color=INK)
+                     fontname='RPTCalendar', color=INK)
     return page
 
 
@@ -342,7 +342,7 @@ def render(source, target, rtl, assignments, dates, *, show_numbered_range=False
                     page, y = add_page(output, fragments, path_font), TOP
                 page.draw_rect(fitz.Rect(body.x0, y, body.x1, y + height), color=LINE, width=0.5)
                 page.insert_text((body.x0 + 9, y + 30), HOLIDAY[week], fontsize=9,
-                                 fontname='RPTWeek', color=INK)
+                                 fontname='RPTCalendar', color=INK)
                 print_week(page, fitz.Rect(x, y, x + CELL_WIDTH, y + height),
                            week, dates[week], font, closed=True)
                 y += height
@@ -364,7 +364,7 @@ def render(source, target, rtl, assignments, dates, *, show_numbered_range=False
                 y = append_row(page, original, fragments, row_fragments, row, y, copied)
             print_week(page, fitz.Rect(x, start, x + CELL_WIDTH, y), week, dates[week], font,
                        lessons=lessons)
-        if show_numbered_range:
+        if show_numbered_range or rtl:
             output.subset_fonts()
         output.save(target, garbage=4, deflate=True, clean=True, use_objstms=1)
         with fitz.open(target) as reopened:
