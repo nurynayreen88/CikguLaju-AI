@@ -461,6 +461,93 @@ PdP 12–17 menggunakan halaman 17–24 dalam Unit 3 — Pengelikun. PdP 14 iala
 - **Penutup (5 minit).** Murid baca satu ayat yang disusun dan terangkan perubahan yang dibuat semasa menyemak.
 - **Bahan.** Buku teks ms. 29–30, rujukan cetak Buku Aktiviti ms. 23 (ms. 29), 24 (ms. 30).
 
+## Rangka RPH bagi PdP 21–29
+
+Turutan mengikuti draf RPT Sarawak 2027, dengan halaman sasaran dipilih daripada buku teks. PdP 21 menggunakan ms. 38 dalam Unit 5, kemudian PdP 22–23 kembali ke ms. 32 untuk mengekalkan SP penjodoh bilangan dan sesi pengukuhan dalam turutan RPT. PdP 24–29 menggunakan Unit 5, dengan ms. 35 sebagai sambungan bacaan ms. 34.
+
+Bagi sesi RPT dengan julat SP, PdP 26 memilih SP 3.1.1 pada ms. 37 untuk pengukuhan suku kata dan PdP 27 memilih SP 4.3.1 pada ms. 38 untuk pengukuhan intonasi leka main. Kedua-dua pilihan ini perlu disemak bersama guru apabila jadual sekolah ditetapkan. Tempoh 60 minit bagi setiap sesi digunakan untuk rangka ini.
+
+### PdP 21 — Wa Indung (ms. 38)
+
+- **SK 4.3 · SP 4.3.1.** Murid mendengar, menyebut dan menyampaikan satu rangkap leka main mengikut susunan baris dan intonasi yang sesuai.
+- **Set induksi (5 minit).** Guru tunjuk ilustrasi kegiatan menangkap ikan. Murid berkongsi satu perkara yang mereka tahu tentang kegiatan itu.
+- **Aktiviti utama (35 minit).** Guru perdengarkan trek 21 jika tersedia atau bacakan rangkap pada ms. 38. Murid dengar, ulang secara bergilir dan kenal pasti perubahan antara rangkap. Dalam kumpulan, mereka berlatih sebutan dan intonasi sambil menyusun kad baris.
+- **Pengukuhan dan PBD (15 minit).** Setiap kumpulan menyampaikan satu rangkap. Guru semak susunan baris, kejelasan sebutan dan intonasi. Murid menjawab satu soalan tentang kegiatan dalam rangkap.
+- **Penutup (5 minit).** Murid pilih satu baris yang ingin diulang dan sebut semula bersama pasangan.
+- **Bahan.** Buku teks ms. 38, rujukan cetak Buku Aktiviti ms. 33, rujukan cetak trek 21.
+
+### PdP 22 — Jaku Pengenap Tesa — Senarai barang di tamu (ms. 32)
+
+- **SK 5.1 · SP 5.1.4.** Murid memadankan sekurang-kurangnya empat daripada lima penjodoh bilangan kepada benda yang sesuai dalam senarai belian.
+- **Set induksi (5 minit).** Guru tunjuk ilustrasi Aina dan ibunya di tamu. Murid teka barang yang hendak dibeli.
+- **Aktiviti utama (35 minit).** Guru modelkan dua contoh penjodoh bilangan daripada halaman 32. Pasangan menyusun kad benda dan kad penjodoh bilangan, kemudian membaca pasangan kata dalam senarai belian. Guru bimbing murid membetulkan padanan melalui contoh yang berbeza.
+- **Pengukuhan dan PBD (15 minit).** Murid melengkapkan senarai lima barang secara individu. Guru semak ketepatan padanan dan minta murid menjelaskan satu pilihan.
+- **Penutup (5 minit).** Murid menyebut satu padanan yang boleh digunakan ketika membeli barang di tamu.
+- **Bahan.** Buku teks ms. 32, rujukan cetak Buku Aktiviti ms. 26.
+
+### PdP 23 — Jaku Pengenap Tesa — Pengukuhan di tamu (ms. 32)
+
+- **SK 5.1 · SP 5.1.4.** Murid menggunakan penjodoh bilangan yang sesuai dalam sekurang-kurangnya tiga daripada empat permintaan lisan semasa simulasi jual beli.
+- **Set induksi (5 minit).** Guru tunjuk dua kad barangan dan minta murid ingat semula padanan penjodoh bilangan yang dipelajari.
+- **Aktiviti utama (35 minit).** Guru sediakan kad barang dan kuantiti berdasarkan konteks ms. 32. Pasangan bergilir sebagai pembeli dan penjual. Pembeli membuat permintaan lengkap menggunakan penjodoh bilangan. Penjual memilih barangan serta kuantiti yang didengar dan menyemak permintaan bersama pembeli.
+- **Pengukuhan dan PBD (15 minit).** Guru menilai empat permintaan bagi setiap murid. Catat sama ada penjodoh bilangan dan kuantiti sesuai dengan barang pada kad.
+- **Penutup (5 minit).** Murid membetulkan satu frasa daripada aktiviti dan menyebutnya semula dalam ayat.
+- **Bahan.** Buku teks ms. 32, rujukan cetak Buku Aktiviti ms. 26.
+
+### PdP 24 — Dindang Ensera (ms. 33)
+
+- **SK 1.3 · SP 1.3.1 (iii).** Selepas mendengar dindang, murid memberi respons yang tepat kepada sekurang-kurangnya tiga daripada empat soalan mengenai watak dan kegiatan yang disebut.
+- **Set induksi (5 minit).** Guru tanya siapa yang biasa menceritakan cerita rakyat kepada murid dan tunjuk ilustrasi unit.
+- **Aktiviti utama (35 minit).** Guru perdengarkan trek 17 jika tersedia atau mendendangkan rangkap ms. 33. Murid mengenal pasti nama atau peranan ahli keluarga dan memadankannya dengan kegiatan yang didengar. Guru ulang rangkap terpilih dan pasangan menyemak bukti bagi setiap padanan.
+- **Pengukuhan dan PBD (15 minit).** Guru beri empat soalan lisan berdasarkan dindang. Murid menjawab secara individu tanpa melihat teks. Catat sekurang-kurangnya tiga respons yang tepat.
+- **Penutup (5 minit).** Murid sebut satu watak dalam dindang dan kegiatan yang berkaitan dengannya.
+- **Bahan.** Buku teks ms. 33, rujukan cetak Buku Aktiviti ms. 29, rujukan cetak trek 17.
+
+### PdP 25 — Uging Nyembi Padi (ms. 34–35)
+
+- **SK 2.4 · SP 2.4.1.** Murid membaca satu petikan pendek dengan sekurang-kurangnya tiga daripada empat hentian dan perubahan intonasi yang sesuai.
+- **Set induksi (5 minit).** Guru tunjuk tajuk dan ilustrasi cerita. Murid jangka cara watak bertindak selepas mendengar bunyi burung.
+- **Aktiviti utama (35 minit).** Guru modelkan bacaan daripada ms. 34 serta bezakan suara pencerita dengan ujaran watak pada sambungan ms. 35. Murid tandakan tempat berhenti dan berlatih membaca bergilir. Pasangan menilai sama ada perubahan nada membantu mereka mengetahui siapa yang bercakap.
+- **Pengukuhan dan PBD (15 minit).** Guru dengar petikan pendek yang dibaca secara individu. Catat ketepatan empat hentian atau perubahan nada yang ditetapkan dalam petikan.
+- **Penutup (5 minit).** Murid baca semula satu ujaran watak dengan intonasi yang disemak.
+- **Bahan.** Buku teks ms. 34–35, rujukan cetak Buku Aktiviti ms. 30–31 (ms. 34), rujukan cetak trek 18 (ms. 34).
+
+### PdP 26 — Ngalahka Antu Gerasi — Pengukuhan suku kata (ms. 37)
+
+- **SK 3.1 · SP 3.1.1.** Murid memenggal, menyebut dan menulis sekurang-kurangnya empat daripada lima perkataan yang ditandai dalam petikan.
+- **Set induksi (5 minit).** Guru sebut semula peristiwa utama daripada cerita dan perkenalkan satu perkataan sasaran yang perlu dipecahkan kepada suku kata.
+- **Aktiviti utama (35 minit).** Guru modelkan pemenggalan satu perkataan pada ms. 37. Murid bina perkataan daripada kad suku kata dan semak dengan teks. Pasangan membaca perkataan yang siap dan menulisnya semula tanpa melihat kad.
+- **Pengukuhan dan PBD (15 minit).** Guru memperdengarkan lima perkataan secara bergilir. Murid sebut semula suku kata dan tulis perkataan lengkap. Guru catat sebutan, turutan suku kata dan ejaan.
+- **Penutup (5 minit).** Murid mengulang satu perkataan yang telah dibetulkan bersama pasangan.
+- **Bahan.** Buku teks ms. 37, rujukan cetak Buku Aktiviti ms. 32, rujukan cetak trek 20.
+
+### PdP 27 — Wa Indung — Pengukuhan intonasi leka main (ms. 38)
+
+- **SK 4.3 · SP 4.3.1.** Murid menyampaikan satu rangkap leka main secara berpasangan dengan susunan tepat dan intonasi yang sesuai pada sekurang-kurangnya tiga daripada empat baris.
+- **Set induksi (5 minit).** Guru sebut satu baris mula dan murid mengenal pasti rangkap daripada sesi terdahulu.
+- **Aktiviti utama (35 minit).** Guru ulang contoh penyampaian pada ms. 38 dan minta murid bezakan penyampaian dengan intonasi mendatar dan intonasi yang sesuai. Pasangan berlatih menggunakan kad isyarat bagi akhir baris, kemudian cuba tanpa kad.
+- **Pengukuhan dan PBD (15 minit).** Pasangan menyampaikan satu rangkap. Guru catat intonasi pada empat baris dan minta murid mengulang satu baris selepas menerima maklum balas.
+- **Penutup (5 minit).** Murid jelaskan satu perubahan intonasi yang mereka buat dalam percubaan kedua.
+- **Bahan.** Buku teks ms. 38, rujukan cetak Buku Aktiviti ms. 33, rujukan cetak trek 21.
+
+### PdP 28 — Kesuling Tekura — Kata kerja dalam cerita (ms. 39)
+
+- **SK 5.1 · SP 5.1.5 (i), (ii), (iii).** Murid mengenal pasti sekurang-kurangnya empat daripada lima kata kerja dalam petikan dan menerangkan maksud dua kata kerja melalui aksi.
+- **Set induksi (5 minit).** Guru tunjuk gambar alat muzik dan minta murid lakonkan perbuatan memainkannya.
+- **Aktiviti utama (35 minit).** Guru bimbing murid membaca ms. 39 dan mencari kata kerja yang dicetak berwarna. Pasangan memadankan kata kerja dengan aksi watak. Murid menyusun tiga aksi mengikut turutan cerita dan menerangkan maksudnya.
+- **Pengukuhan dan PBD (15 minit).** Guru beri lima kata daripada petikan untuk dikenal pasti. Murid tunjuk dua aksi menggunakan kata kerja pilihan dan sebutnya dalam konteks.
+- **Penutup (5 minit).** Murid sebut satu kata kerja dan terangkan watak yang melakukan perbuatan itu.
+- **Bahan.** Buku teks ms. 39, rujukan cetak Buku Aktiviti ms. 34, rujukan cetak trek 22.
+
+### PdP 29 — Gerama Nulung Tekura — Pengukuhan kata kerja (ms. 40)
+
+- **SK 5.1 · SP 5.1.5 (i), (ii), (iii).** Murid memilih kata kerja yang sesuai bagi sekurang-kurangnya empat daripada lima gambar aksi dan menggunakan dua kata kerja dalam ayat mudah.
+- **Set induksi (5 minit).** Guru tunjuk ilustrasi sambungan cerita. Murid mengingat semula perkara yang berlaku kepada Tekura.
+- **Aktiviti utama (35 minit).** Guru bimbing bacaan ms. 40 atau perdengarkan trek 23 jika tersedia. Murid mengenal pasti perubahan tindakan Gerama dan Kera. Pasangan melakonkan aksi yang dipilih dan menulis ayat padanan menggunakan kata kerja daripada petikan.
+- **Pengukuhan dan PBD (15 minit).** Guru beri lima gambar aksi dalam susunan baharu. Murid memilih kata kerja dan membina dua ayat sendiri. Guru semak kesesuaian kata kerja dengan subjek dan aksi.
+- **Penutup (5 minit).** Murid membaca satu ayat dan pasangan menunjukkan aksi yang dimaksudkan.
+- **Bahan.** Buku teks ms. 40, rujukan cetak Buku Aktiviti ms. 35, rujukan cetak trek 23.
+
 ## Semakan kod bercanggah pada ms. 45, 46 dan 95
 
 | Buku teks (ms.) | Aktiviti yang dapat disahkan | SP DSKP yang perlu disemak dengan guru |

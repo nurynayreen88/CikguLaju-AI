@@ -354,3 +354,54 @@ Lima sesi Unit 2 — Kampug Benangge Eng meliputi halaman 7–11 bagi Tema 1, Du
 - **Pengukuhan dan PBD (15 minit).** Murid senaraikan empat kata kerja dan tulis dua ayat. Guru semak pemilihan kata kerja dan penggunaannya dalam konteks.
 - **Penutup (5 minit).** Murid baca satu ayat sendiri dan rakan mengenal pasti kata kerjanya.
 - **Bahan.** Buku teks ms. 11, rujukan cetak Buku Aktiviti ms. 8, rujukan cetak trek 6.
+
+## Rangka RPH Unit 3 bagi PdP 11–15
+
+Unit 3 — Lemunj Berseh, Kerennyim Bepenateh meliputi ms. 12–16. Empat daripada lima SP utama sepadan antara buku teks dan [RPT Bahasa Semai 2022/2023](https://www.scribd.com/document/664811393/RPT-SEMAI-2). Agihan 60 minit setiap sesi ialah andaian draf.
+
+Halaman 14 mencetak 3.3.2. Nota guru meminta murid membina cerita menggunakan perkataan rangsangan dan ayat majmuk. RPT sejarah meletakkan 3.3.3 bagi aktiviti bercerita daripada gambar. [Dokumen Penjajaran Kurikulum 2.0 Bahasa Semai Tahun 2](https://www.tcer.my/wp-content/uploads/2021/01/20_DPK-2.0-Bahasa-Semai-Tahun-2.pdf), ms. 6–7, membezakan 3.3.2 untuk membina cerita daripada gambar dan 3.3.3 untuk mendapatkan, menyusun dan menulis maklumat. Rangka PdP 13 menggunakan 3.3.2 berdasarkan kod buku teks dan takrif dalam Dokumen Penjajaran. Semak dengan guru Bahasa Semai sebelum memuktamadkan versi terbitan.
+
+### PdP 11 — Ku Kelinik Lemunj (ms. 12)
+
+- **SK 1.2 · SP 1.2.2.** Murid mendengar dan mengenal pasti sekurang-kurangnya empat daripada lima perkataan bersuku kata terbuka berkaitan ilustrasi klinik gigi.
+- **Set induksi (5 minit).** Guru tunjuk ilustrasi klinik pada halaman 12. Murid kenal pasti objek yang ditunjukkan dalam gambar.
+- **Aktiviti utama (35 minit).** Guru gunakan trek 7 jika tersedia atau menyebut perkataan yang dipilih dan disahkan guru subjek. Murid padankan perkataan yang didengar dengan objek bernombor. Guru modelkan sebutan suku kata terbuka dan minta murid ulang serta mengeja dengan pasangan.
+- **Pengukuhan dan PBD (15 minit).** Guru sebut lima perkataan sasaran. Murid memilih gambar atau nombor objek yang sepadan berdasarkan sebutan. Guru mengesahkan sekurang-kurangnya empat pilihan tepat.
+- **Penutup (5 minit).** Murid menyebut satu contoh perkataan dengan menunjukkan gambarnya.
+- **Bahan.** Buku teks ms. 12, rujukan cetak Buku Aktiviti ms. 9, rujukan cetak trek 7.
+
+### PdP 12 — Care-care Higeros Lemunj de Betol (ms. 13)
+
+- **SK 2.2 · SP 2.2.1.** Murid membaca sekurang-kurangnya tiga daripada empat ayat majmuk dalam brosur dengan jelas dan mengenal pasti kata hubung pada dua ayat.
+- **Set induksi (5 minit).** Guru tunjuk brosur pada halaman 13. Murid jangka tujuan brosur daripada tajuk dan gambar.
+- **Aktiviti utama (35 minit).** Guru modelkan bacaan satu ayat majmuk sambil menunjukkan cara kata hubung mengaitkan maklumat dalam ayat. Pasangan membaca ayat terpilih, menanda kata hubung dan menerangkan maklumat yang disampaikan oleh ayat.
+- **Pengukuhan dan PBD (15 minit).** Guru dengar empat ayat yang dibaca secara individu dan minta murid menanda kata hubung pada dua ayat. Catat ketepatan bacaan dan kata hubung.
+- **Penutup (5 minit).** Murid pilih satu ayat daripada brosur dan baca semula dengan sebutan yang disemak.
+- **Bahan.** Buku teks ms. 13, rujukan cetak Buku Aktiviti ms. 10.
+
+### PdP 13 — Amek, Lemunj Eng (ms. 14)
+
+- **SK 3.3 · SP 3.3.2.** Murid menulis sekurang-kurangnya tiga ayat yang membentuk cerita ringkas melalui perkataan rangsangan dan menggunakan sekurang-kurangnya satu ayat majmuk.
+- **Set induksi (5 minit).** Guru tunjuk gambar dan tiga perkataan rangsangan pada halaman 14. Murid jangka masalah watak.
+- **Aktiviti utama (35 minit).** Guru tunjuk cara memilih dan menyusun perkataan rangsangan untuk membina permulaan, peristiwa dan penutup cerita. Murid memilih perkataan daripada halaman, berbincang secara berpasangan dan menulis cerita ringkas.
+- **Pengukuhan dan PBD (15 minit).** Guru semak cerita individu berdasarkan urutan, penggunaan perkataan rangsangan dan sekurang-kurangnya satu ayat majmuk yang sesuai.
+- **Penutup (5 minit).** Murid membaca satu ayat daripada cerita dan menunjukkan perkataan rangsangan yang digunakan.
+- **Bahan.** Buku teks ms. 14.
+
+### PdP 14 — Lemunj Beralit (ms. 15)
+
+- **SK 4.2 · SP 4.2.2.** Murid membina sekurang-kurangnya dua ayat sopan yang sesuai dengan situasi dan menggunakan kedua-duanya dalam lakonan pendek.
+- **Set induksi (5 minit).** Guru tunjuk satu panel komik dan minta murid kenal pasti watak serta situasi.
+- **Aktiviti utama (35 minit).** Guru bimbing murid membaca komik atau gunakan trek 8 jika tersedia. Murid memilih dua situasi dialog dan menggubal respons sopan. Pasangan melakonkan dialog dan menyemak pemilihan kata serta intonasi dengan panduan guru.
+- **Pengukuhan dan PBD (15 minit).** Pasangan melakonkan semula dua situasi. Guru catat sekurang-kurangnya dua ayat sopan yang sesuai dengan situasi.
+- **Penutup (5 minit).** Murid ulang satu ayat yang boleh digunakan apabila membantu atau menasihati rakan.
+- **Bahan.** Buku teks ms. 15, rujukan cetak Buku Aktiviti ms. 11, rujukan cetak trek 8.
+
+### PdP 15 — Adeh Eng Pigoi Doh — Pola ayat FN + FN (ms. 16)
+
+- **SK 5.3 · SP 5.3.1.** Murid menulis sekurang-kurangnya tiga daripada empat ayat dasar FN + FN menggunakan frasa nama yang merujuk orang dan pekerjaan.
+- **Set induksi (5 minit).** Guru paparkan gambar pekerjaan daripada halaman 16. Murid padankan gambar dengan kad nama pekerjaan.
+- **Aktiviti utama (35 minit).** Guru tunjuk pola FN + FN daripada contoh buku teks. Murid mengenal pasti kedua-dua frasa nama, memadankan kad subjek dan predikat, kemudian menulis ayat lengkap. Pasangan membaca ayat masing-masing untuk menyemak padanan pekerjaan.
+- **Pengukuhan dan PBD (15 minit).** Guru beri empat gambar atau kad rangsangan. Murid tulis satu ayat bagi setiap kad. Guru semak sama ada kedua-dua bahagian ialah frasa nama dan maknanya sesuai.
+- **Penutup (5 minit).** Murid membaca satu ayat dan menyebut frasa nama subjek serta frasa nama predikat.
+- **Bahan.** Buku teks ms. 16, rujukan cetak Buku Aktiviti ms. 12.

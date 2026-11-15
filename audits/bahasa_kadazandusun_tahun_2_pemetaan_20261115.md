@@ -45,7 +45,7 @@ Semakan struktur meliputi 114 halaman dan 53 rujukan trek unik. Semua 61 kod SP 
 | 19 | 2.1 / 2.2 | 2.1.2 (v) / 2.2.2 (v) | 14 |  |
 | 20 | 2.2 | 2.2.5 (iii) / 2.2.2 (v) | 15 |  |
 | 21 | 5.2 / 5.3 | 5.2.1 (ii) / 5.3.1 (v) | 16 |  |
-| 22 | 3.2 | 3.2.2 (i) | 17 |  |
+| 22 | 3.2 | 3.2.2 (i) (b), (ii) (b) | 17 |  |
 | 23 | 3.1 | 3.1.3 / 3.1.2 (v) |  |  |
 | 24 | 4.2 | 4.2.1 (iii), (a) | 18 | 11, 12 |
 
@@ -374,3 +374,72 @@ Bagi Unit 2, 13 daripada 14 kod SP induk sepadan antara RPT dan buku teks. RPT m
 - **Pengukuhan dan PBD (15 minit).** Guru baca empat teka-teki dan semak tiga padanan tepat. Murid menyampaikan satu contoh dengan sebutan yang boleh difahami.
 - **Penutup (5 minit).** Murid kongsi petunjuk paling berguna untuk meneka satu alatan.
 - **Bahan.** Buku teks ms. 16, rujukan cetak trek 9.
+
+## Rangka RPH Unit 3 bagi PdP 15–21
+
+Unit 3 — Piobpinayan meliputi ms. 17–24. Set 12 kod SP induk bagi blok Unit 3 dalam [RPT Bahasa Kadazandusun 2025](https://id.scribd.com/document/852169526/RPT-BKD-TAHUN-2-2025) sepadan dengan buku teks. Satu sesi digunakan bagi setiap fokus pada ms. 17 dan 18, serta ms. 22 dan 23. Satu sesi meliputi bacaan ms. 19–20. Agihan 60 minit setiap sesi adalah sementara.
+
+Nota guru ms. 22 mencetak 3.2.2 (i)(b) serta (ii)(b). Kedua-dua pecahan turut disenaraikan untuk blok ms. 22–23 dalam RPT 2025. Rangka PdP 19 memasukkan latihan membina ayat penyata dan menulis ayat jawapan berpandukan soalan dan ilustrasi.
+
+### PdP 15 — Paganakan di Juni (ms. 17)
+
+- **SK 1.5 · SP 1.5.1 (i) (a), (b).** Murid menyampaikan sekurang-kurangnya tiga maklumat yang tepat tentang ahli keluarga berdasarkan gambar dengan menggunakan ayat penyata.
+- **Set induksi (5 minit).** Guru tunjuk carta keluarga Juni dan minta murid cari watak yang memperkenalkan keluarga.
+- **Aktiviti utama (35 minit).** Guru perdengarkan trek 10 jika tersedia atau bacakan contoh pada ms. 17. Murid padankan watak dengan hubungan kekeluargaan. Pasangan berlatih menggunakan bentuk ayat penyata daripada contoh untuk memperkenalkan tiga watak dalam carta.
+- **Pengukuhan dan PBD (15 minit).** Guru beri satu salinan carta atau gambar rujukan. Murid memperkenalkan tiga ahli keluarga dalam carta. Catat ketepatan fakta dan bentuk ayat.
+- **Penutup (5 minit).** Murid sebut semula satu ayat pengenalan yang telah disemak.
+- **Bahan.** Buku teks ms. 17, rujukan cetak Buku Aktiviti ms. 13, rujukan cetak trek 10.
+
+### PdP 16 — Pitimungan Tagayo Paganakan Dawoi (ms. 18)
+
+- **SK 1.1, 1.2 · SP 1.1.2 (v) / 1.2.2 (v).** Murid memenggal dan menyebut sekurang-kurangnya empat daripada lima perkataan berkaitan perjumpaan keluarga dengan tepat.
+- **Set induksi (5 minit).** Guru paparkan poster perjumpaan dalam buku teks. Murid cari tajuk dan jangka perkara yang diumumkan.
+- **Aktiviti utama (35 minit).** Guru bacakan poster ms. 18 dan tunjuk cara memenggal perkataan berkaitan keluarga. Pasangan menjejak sebutan menggunakan kad suku kata dan bertukar soal jawab tentang tempat atau aktiviti yang disebut dalam poster.
+- **Pengukuhan dan PBD (15 minit).** Guru sebut lima perkataan sasaran. Murid tunjuk urutan suku kata melalui kad, kemudian menyebut perkataan lengkap. Guru semak empat padanan tepat.
+- **Penutup (5 minit).** Murid pilih satu perkataan daripada poster dan menyebutnya dalam frasa mudah.
+- **Bahan.** Buku teks ms. 18, rujukan cetak Buku Aktiviti ms. 13.
+
+### PdP 17 — Pitimungan Paganakan — Teks dan kad ucapan (ms. 19–20)
+
+- **SK 2.1, 2.2 · SP 2.1.2 (v) / 2.2.2 (v) / 2.2.5 (iii).** Murid memenggal sekurang-kurangnya empat daripada lima perkataan daripada teks keluarga dan membaca satu kad ucapan dengan sebutan serta intonasi yang jelas.
+- **Set induksi (5 minit).** Guru tunjuk kad ucapan dan minta murid teka siapa yang menghantar ucapan kepada siapa.
+- **Aktiviti utama (35 minit).** Guru bimbing bacaan petikan ms. 19. Pasangan bergilir menyebut dan memenggal perkataan sasaran. Guru kemudian menunjukkan bahagian kad ucapan ms. 20. Murid membaca kad dan memilih nada yang sesuai untuk menyampaikan ucapan.
+- **Pengukuhan dan PBD (15 minit).** Murid membaca lima perkataan dan satu bahagian kad. Guru catat pemenggalan yang tepat dan kejelasan bacaan kad.
+- **Penutup (5 minit).** Murid pilih satu ungkapan daripada kad untuk digunakan semasa memberi ucapan.
+- **Bahan.** Buku teks ms. 19–20, rujukan cetak Buku Aktiviti ms. 14 (ms. 19), 15 (ms. 20).
+
+### PdP 18 — Boros Maan — Kata kerja aktif dan pasif (ms. 21)
+
+- **SK 5.2, 5.3 · SP 5.2.1 (ii) / 5.3.1 (v).** Murid mengenal pasti sekurang-kurangnya empat daripada lima kata kerja daripada contoh dan menulis dua padanan bentuk aktif dengan bentuk pasif yang tepat.
+- **Set induksi (5 minit).** Guru paparkan gambar perbuatan memasak, menjahit atau menyepak bola. Murid pilih satu aksi untuk dilakonkan.
+- **Aktiviti utama (35 minit).** Guru tunjuk dua bentuk kata kerja daripada jadual ms. 21. Murid membandingkan perubahan bentuk kata daripada contoh buku, memadankan kad kata kerja dengan gambar dan menulis semula dua pasangan bentuk dengan bimbingan.
+- **Pengukuhan dan PBD (15 minit).** Guru semak lima pilihan kata kerja dan dua pasangan bentuk yang ditulis. Catat ketepatan pilihan dan ejaan secara berasingan.
+- **Penutup (5 minit).** Murid membaca satu pasangan kata kerja dan menyatakan perbuatan yang dirujuk.
+- **Bahan.** Buku teks ms. 21, rujukan cetak Buku Aktiviti ms. 16.
+
+### PdP 19 — Suato’ — Menulis jawapan daripada gambar (ms. 22)
+
+- **SK 3.2 · SP 3.2.2 (i) (b) / 3.2.2 (ii) (b).** Murid membina sekurang-kurangnya tiga daripada empat ayat jawapan yang sesuai dengan soalan dan gambar.
+- **Set induksi (5 minit).** Guru tunjuk gambar A dan baca contoh soal jawab. Murid menunjukkan petunjuk gambar yang membantu menentukan jawapan.
+- **Aktiviti utama (35 minit).** Guru modelkan pemilihan frasa yang sesuai untuk melengkapkan satu ayat respons. Pasangan membaca soalan berdasarkan gambar A–E dan menyusun kad frasa. Murid kemudian menulis jawapan dengan bimbingan guru.
+- **Pengukuhan dan PBD (15 minit).** Guru beri empat soalan berdasarkan gambar. Murid tulis jawapan secara individu. Guru semak kesesuaian maklumat dengan soalan dan susunan frasa dalam ayat.
+- **Penutup (5 minit).** Murid bacakan satu jawapan dan terangkan petunjuk gambar yang digunakan.
+- **Bahan.** Buku teks ms. 22, rujukan cetak Buku Aktiviti ms. 17.
+
+### PdP 20 — Boros Mintootoiso (ms. 23)
+
+- **SK 3.1 · SP 3.1.3 / 3.1.2 (v).** Murid mengenal pasti dan menulis sekurang-kurangnya empat daripada lima kata dasar daripada petikan pendek dengan ejaan yang tepat.
+- **Set induksi (5 minit).** Guru tunjuk satu contoh kata dasar daripada halaman 23. Murid sebut dan tepuk suku katanya.
+- **Aktiviti utama (35 minit).** Guru terangkan ciri kata dasar menggunakan contoh pada halaman. Murid tandakan kata dasar dalam petikan dan bina beberapa contoh daripada kad suku kata, kemudian tulis perkataan lengkap dan semak bersama pasangan.
+- **Pengukuhan dan PBD (15 minit).** Guru agihkan petikan pendek daripada bahan atau latihan guru. Murid pilih lima kata dasar dan tulis semula secara individu. Guru catat ketepatan pilihan dan ejaan.
+- **Penutup (5 minit).** Murid membaca satu kata dasar dan menunjukkan perkataan itu dalam petikan.
+- **Bahan.** Buku teks ms. 23.
+
+### PdP 21 — Tupus Paganakan — Tudodoi (ms. 24)
+
+- **SK 4.2 · SP 4.2.1 (iii) (a).** Murid menyampaikan satu rangkap tudodoi bersama kumpulan dengan baris mengikut turutan dan sebutan yang boleh difahami.
+- **Set induksi (5 minit).** Guru tanya cara ahli keluarga menunjukkan rasa sayang. Murid berkongsi satu contoh.
+- **Aktiviti utama (35 minit).** Guru perdengarkan trek 11 dan 12 jika tersedia atau modelkan penyampaian daripada ms. 24. Murid dengar dan ulang rangkap mengikut baris. Kumpulan menyemak susunan teks, berlatih bersama dan membincangkan satu mesej dalam rangkap.
+- **Pengukuhan dan PBD (15 minit).** Guru dengar penyampaian satu rangkap dan catat urutan baris serta kejelasan sebutan. Setiap kumpulan menerangkan satu mesej daripada rangkap.
+- **Penutup (5 minit).** Murid sebut satu cara menghargai ahli keluarga berdasarkan perbincangan.
+- **Bahan.** Buku teks ms. 24, rujukan cetak Buku Aktiviti ms. 18, rujukan cetak trek 11, 12.
