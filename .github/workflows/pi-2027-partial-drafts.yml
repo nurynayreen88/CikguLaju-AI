@@ -15,5 +15,338 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Verify 690 draf, 6 held, no auto publication
-        run: python -m unittest discover -s rph_standalone/pendidikan_islam_draf_2027 -p 'test_pi_review_catalog.py' -v
+      - name: Verify all 696, six held, no automatic publication
+        run: python -m unittest discover -s rph_standalone/pendidikan_islam_draf_2027 -p 'test_pi*.py' -v
+      - name: Generate all-lesson QA ledger with academic NO-GO
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_quality_audit.py --output pi_quality_audit_696.json
+      - name: Prove corrected Quran surah and PBD verse consistency across 696 draft records
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_surah_pbd_alignment_audit.py --output pi_surah_pbd_alignment_11_NO_GO.json
+      - name: Export 9 RPT source conflicts and 13 exact field-level RPH corrections for editor signoff
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_rpt_source_errata_editor_register.py --json pi_rpt_source_errata_9_NO_GO.json --csv pi_rpt_source_errata_13_fields_NO_GO.csv
+      - name: Audit official DSKP code-number presence Year2/5/6 and mark Year3/4 PDFs unreadable
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_dskp_text_code_presence_ledger.py --json pi_dskp_text_code_presence_696_NO_GO.json --csv pi_dskp_text_code_presence_696_NO_GO.csv
+      - name: Verify Year3 solat invalidating cases progress 1-6 to 7-12 to 13-18
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t3_solat_case_sequence_audit.py --output pi_t3_solat_18_case_sequence_NO_GO.json
+      - name: Validate all literal Quran verse ranges against 114 chapter lengths and crossfield SP/obj/PBD
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_quran_114_surah_range_audit.py --output pi_quran_114_surah_all_696_NO_GO.json
+      - name: Compare Year4 Ramadan rukun objective to actual KPM textbook; retain three verb-copyedit provenance
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_primary_source_fiqh_copyedit_audit.py --output pi_fiqh_t4_puasa_and_copyedits_NO_GO.json
+      - name: Check Quran tasmi source continuity Year2-6 including inherited Juz25 gaps and heavy sessions
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_tasmi_continuity_quality_guard.py --output pi_tasmi_continuity_five_years_NO_GO.json
+      - name: Prepare 14 heavy tasmi individual reading and assessment editor overlays (no SP edits)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_heavy_tasmi_editor_overlay.py --output pi_heavy_tasmi_14_editor_overlay_NO_GO.json
+      - name: Prepare 690 domain-specific editor suggestions (not RPH)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_pedagogy_review.py --output pi_pedagogy_proposals_690.json
+      - name: Audit Buku Aktiviti mapping without guessing page numbers
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_activity_book_audit.py --output pi_buku_aktiviti_audit_696.json
+      - name: Audit Year5 Surah al-Qadr combined SK1.1/1.3 and SP1.3.1 hafazan
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_y5_qadr_dual_sk_source_audit.py --output pi_y5_qadr_2_dual_sk_sp_131_HOLD.json
+      - name: Audit all single-target Tajwid Mad SP/objective/PBD and Year5 source errors
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_tajwid_crossfield_mad_audit.py --output pi_tajwid_crossfield_mad_30_3_edits_NO_GO.json
+      - name: Audit Year5 DSKP khat source SP7.2.5/7.2.6 corrections (four lessons)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_y5_khat_nasakh_source_audit.py --output pi_y5_khat_nasakh_source_4_HOLD.json
+      - name: Prepare 13 khat Nasakh per-SP editor PBD and teacher worksheet previews (no official BA)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_y5_khat_nasakh_editor_overlay.py --output pi_y5_khat_editor_13_NO_GO.json
+      - name: Flag 13 ambiguous Year-5 Jawi Buku Aktiviti references (editor review only)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_y5_activity_book_wording_review.py --output pi_y5_buku_aktiviti_wording_13_NO_GO.json
+      - name: Confirm 49 exact Quran tajwid punctuation copyedits and preserve Jawi affix ellipses
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_tajwid_double_period_copyedit_review.py --output pi_tajwid_copyedit_49_NO_GO.json
+      - name: Produce 258 per-Lesson BA mapping proposals (174 review, 84 oral)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_ba_match_queue.py --output pi_ba_candidate_queue_258.json
+      - name: Collect 42 second-hand workbook page hints (NO direct verification)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_ba_secondary_evidence.py --output pi_ba_secondary_evidence_42.json
+      - name: Reject cross-curriculum KSSRPK workbook candidates
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_ba_source_integrity.py --output pi_ba_source_integrity.json
+      - name: Prepare 174 conditional Jawi activity-book cues (not teacher material)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_ba_sentence_candidates.py --output pi_ba_sentence_candidates_174.json
+      - name: Classify 42 secondary BA sources and their contradictions
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_ba_provenance_review.py --output pi_ba_provenance_42.json
+      - name: Prepare 174-lesson BA verification register (CSV and JSON; editor only)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_ba_verification_register.py --json pi_ba_verification_register_174.json --csv pi_ba_verification_register_174.csv
+      - name: Isolate 523 internal material notes in 690 editor-only RPH previews
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_editor_material_projection.py --output pi_editor_material_preview_690.json
+      - name: Prioritize 696 lesson reviews including 43 generic PBD flags
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_content_review_queue.py --json pi_content_review_queue_696.json --csv pi_content_review_queue_696.csv
+      - name: Group 690 Rumi closings for Jawi review with no automatic rewrites
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_closing_jawi_review_queue.py --json pi_closing_jawi_review_78.json --csv pi_closing_jawi_review_78.csv
+      - name: Draft 10 high-frequency Jawi closings for expert review only
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_closing_jawi_candidates.py --json pi_closing_jawi_candidates_581.json --csv pi_closing_jawi_candidates_581.csv
+      - name: Draft 13 more Jawi closings for expert review (23 groups total)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_closing_jawi_candidates_batch2.py --json pi_closing_jawi_candidates_635.json --csv pi_closing_jawi_candidates_635.csv
+      - name: Prepare all 78 unique Jawi closing candidates for 690 draft lessons (NO_GO)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_closing_jawi_candidates_complete.py --json pi_closing_jawi_candidates_690.json --csv pi_closing_jawi_candidates_690.csv
+      - name: Generate isolated 690-RPH Jawi closing preview preserving original Rumi
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_editor_jawi_closing_projection.py --output pi_jawi_editor_only_projection_690_NO_GO.json
+      - name: Compare 77 Year-2 old page notes with original 2017 textbook table of contents
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t2_textbook_toc_review.py --json pi_t2_toc_77.json --csv pi_t2_toc_77.csv
+      - name: Report fail-closed Year 2-6 release blockers; do not merge
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_release_readiness.py --output pi_release_readiness_696_NO_GO.json
+      - name: Generate 690 separate SK/SP-linked Jawi editor review rows (no publication)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_jawi_closing_lesson_review.py --json pi_jawi_closing_lesson_review_690.json --csv pi_jawi_closing_lesson_review_690.csv
+      - name: Attest 3 Lesson-to-SP footer source crosschecks and 2 DSKP wording repairs (no academic READY)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t2_54_direct_source_review.py --json pi_t2_dskp_tb_sp54_3.json --csv pi_t2_dskp_tb_sp54_3.csv
+      - name: Audit all Year2 3-level SP code presence against 83 DSKP codes (leave 30 tasmi unassigned)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t2_dskp_code_presence.py --json pi_t2_dskp_code_presence_111.json --csv pi_t2_dskp_code_presence_111.csv
+      - name: Audit source Year3 Awalan book p46-51 for 12 lessons, exclude legacy PDF34 wrong topic
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t3_awalan_book_review.py --json pi_t3_awalan_direct_book_12.json --csv pi_t3_awalan_direct_book_12.csv
+      - name: Audit original Year3 textbook footer SP codes, flag 6.4.3 DSKP-valid exception
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t3_book_footer_code_audit.py --json pi_t3_book_footer_sp_147.json --csv pi_t3_book_footer_sp_147.csv
+      - name: Audit source-backed T4 L083 guest-hadith excerpt, keep expert HOLD
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t4_hadith_source_audit.py --output pi_t4_l083_hadith_source_editor_HOLD.json
+      - name: Audit two Year6 Juz30 tasmi lessons against RPT2027 p48-49 (no ayah fabrication)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t6_tasmi_rpt_2027_review.py --json pi_t6_tasmi_rpt_2_NO_GO.json --csv pi_t6_tasmi_rpt_2_NO_GO.csv
+      - name: Audit five wholly held Year6 source cases against RPT2027; never create content
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_y6_held_rpt_2027_source_review.py --json pi_y6_full_held_source_5_NO_GO.json --csv pi_y6_full_held_source_5_NO_GO.csv
+      - name: Audit Y6 source DSKP SP4.2 and optional L060 editor draft with original catalog held
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t6_sp42_primary_source_audit.py --output pi_t6_sp42_optional_l060_HOLD.json
+      - name: Audit original 2026 source carryover of overlapping ayah224 in Year2 PdP035
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t2_l035_rpt_2026_2027_overlap_audit.py --output pi_t2_l035_inherited_ayah224_overlap_HOLD.json
+      - name: Audit all original Year6 Juz25 ayat; find 67 unmapped verses across four surah gaps
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t6_juz25_sequence_gap_audit.py --json pi_t6_juz25_full_source_67_gap_NO_GO.json --csv pi_t6_juz25_full_source_67_gap_NO_GO.csv
+      - name: Generate source-linked Year6 Juz25 67-ayah editor decision register (never auto assign)
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t6_juz25_gap_resolution_editor_plan.py --json pi_t6_juz25_gap_editor_plan_NO_GO.json --csv pi_t6_juz25_gap_editor_plan_NO_GO.csv
+      - name: Validate all six wholly withheld RPH as separate editor-only candidates
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_held_six_editor_candidate_packet.py --output pi_held_six_editor_packet_NO_GO.json
+      - name: Compare complete 246-ayat Juz25 alternative allocations without altering RPT
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t6_juz25_complete_alternative_rpt_plan.py --output pi_t6_juz25_complete_options_NO_GO.json
+      - name: Crosscheck held Year6 Juz29 L117 neighbor continuity for chapters 70-72
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t6_juz29_l117_continuity_review.py --output pi_t6_juz29_l117_100_ayat_local_NO_GO.json
+      - name: Validate four source-bounded Year6 Rumi editor-only Quran candidate drafts
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t6_held_quran_editor_candidate_review.py --output pi_t6_held_quran_rumi_editor_four_NO_GO.json
+      - name: Prove original Year6 RPT2026 impossible Shura 33-77 and inherited 67 missing Juz25 ayat
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_t6_juz25_rpt2026_source_provenance.py --output pi_t6_juz25_legacy2026_24_invalid_2_duplicate_67_missing_NO_GO.json
+      - name: Verify every audit artifact exists, is nonempty, and stays review-only
+        shell: bash
+        run: |
+          for file in \
+            pi_quality_audit_696.json \
+            pi_surah_pbd_alignment_11_NO_GO.json \
+            pi_rpt_source_errata_9_NO_GO.json \
+            pi_rpt_source_errata_13_fields_NO_GO.csv \
+            pi_dskp_text_code_presence_696_NO_GO.json \
+            pi_dskp_text_code_presence_696_NO_GO.csv \
+            pi_t3_solat_18_case_sequence_NO_GO.json \
+            pi_quran_114_surah_all_696_NO_GO.json \
+            pi_fiqh_t4_puasa_and_copyedits_NO_GO.json \
+            pi_tasmi_continuity_five_years_NO_GO.json \
+            pi_heavy_tasmi_14_editor_overlay_NO_GO.json \
+            pi_pedagogy_proposals_690.json \
+            pi_buku_aktiviti_audit_696.json \
+            pi_y5_qadr_2_dual_sk_sp_131_HOLD.json \
+            pi_tajwid_crossfield_mad_30_3_edits_NO_GO.json \
+            pi_y5_khat_nasakh_source_4_HOLD.json \
+            pi_y5_khat_editor_13_NO_GO.json \
+            pi_y5_buku_aktiviti_wording_13_NO_GO.json \
+            pi_tajwid_copyedit_49_NO_GO.json \
+            pi_ba_candidate_queue_258.json \
+            pi_ba_secondary_evidence_42.json \
+            pi_ba_source_integrity.json \
+            pi_ba_sentence_candidates_174.json \
+            pi_ba_provenance_42.json \
+            pi_ba_verification_register_174.json \
+            pi_ba_verification_register_174.csv \
+            pi_editor_material_preview_690.json \
+            pi_content_review_queue_696.json \
+            pi_content_review_queue_696.csv \
+            pi_closing_jawi_review_78.json \
+            pi_closing_jawi_review_78.csv \
+            pi_closing_jawi_candidates_581.json \
+            pi_closing_jawi_candidates_581.csv \
+            pi_t2_toc_77.json \
+            pi_t2_toc_77.csv \
+            pi_closing_jawi_candidates_635.json \
+            pi_closing_jawi_candidates_635.csv \
+            pi_closing_jawi_candidates_690.json \
+            pi_jawi_editor_only_projection_690_NO_GO.json \
+            pi_closing_jawi_candidates_690.csv \
+            pi_release_readiness_696_NO_GO.json \
+            pi_jawi_closing_lesson_review_690.json \
+            pi_jawi_closing_lesson_review_690.csv \
+            pi_t2_dskp_tb_sp54_3.json \
+            pi_t2_dskp_tb_sp54_3.csv \
+            pi_t2_dskp_code_presence_111.json \
+            pi_t2_dskp_code_presence_111.csv \
+            pi_t3_awalan_direct_book_12.json \
+            pi_t3_awalan_direct_book_12.csv \
+            pi_t3_book_footer_sp_147.json \
+            pi_t3_book_footer_sp_147.csv \
+            pi_t4_l083_hadith_source_editor_HOLD.json \
+            pi_t6_tasmi_rpt_2_NO_GO.json \
+            pi_t6_tasmi_rpt_2_NO_GO.csv \
+            pi_y6_full_held_source_5_NO_GO.json \
+            pi_y6_full_held_source_5_NO_GO.csv \
+            pi_t6_sp42_optional_l060_HOLD.json \
+            pi_t2_l035_inherited_ayah224_overlap_HOLD.json \
+            pi_t6_juz25_full_source_67_gap_NO_GO.json \
+            pi_t6_juz25_full_source_67_gap_NO_GO.csv \
+            pi_t6_juz25_gap_editor_plan_NO_GO.json \
+            pi_t6_juz25_gap_editor_plan_NO_GO.csv \
+            pi_held_six_editor_packet_NO_GO.json \
+            pi_t6_juz25_complete_options_NO_GO.json \
+            pi_t6_juz29_l117_100_ayat_local_NO_GO.json \
+            pi_t6_held_quran_rumi_editor_four_NO_GO.json \
+            pi_t6_juz25_legacy2026_24_invalid_2_duplicate_67_missing_NO_GO.json; do
+            if [ ! -s "$file" ]; then
+              echo "::error::Audit artifact missing or empty: $file"
+              exit 1
+            fi
+          done
+      - name: Upload isolated QA ledger and review queue (not teacher material)
+        uses: actions/upload-artifact@v4
+        with:
+          name: pi-2027-696-staging-quality-audit
+          path: |
+            pi_quality_audit_696.json
+            pi_surah_pbd_alignment_11_NO_GO.json
+            pi_rpt_source_errata_9_NO_GO.json
+            pi_rpt_source_errata_13_fields_NO_GO.csv
+            pi_dskp_text_code_presence_696_NO_GO.json
+            pi_dskp_text_code_presence_696_NO_GO.csv
+            pi_t3_solat_18_case_sequence_NO_GO.json
+            pi_quran_114_surah_all_696_NO_GO.json
+            pi_fiqh_t4_puasa_and_copyedits_NO_GO.json
+            pi_tasmi_continuity_five_years_NO_GO.json
+            pi_heavy_tasmi_14_editor_overlay_NO_GO.json
+            pi_pedagogy_proposals_690.json
+            pi_buku_aktiviti_audit_696.json
+            pi_y5_qadr_2_dual_sk_sp_131_HOLD.json
+            pi_tajwid_crossfield_mad_30_3_edits_NO_GO.json
+            pi_y5_khat_nasakh_source_4_HOLD.json
+            pi_y5_khat_editor_13_NO_GO.json
+            pi_y5_buku_aktiviti_wording_13_NO_GO.json
+            pi_tajwid_copyedit_49_NO_GO.json
+            pi_ba_candidate_queue_258.json
+            pi_ba_secondary_evidence_42.json
+            pi_ba_source_integrity.json
+            pi_ba_sentence_candidates_174.json
+            pi_ba_provenance_42.json
+            pi_ba_verification_register_174.json
+            pi_ba_verification_register_174.csv
+            pi_editor_material_preview_690.json
+            pi_content_review_queue_696.json
+            pi_content_review_queue_696.csv
+            pi_closing_jawi_review_78.json
+            pi_closing_jawi_review_78.csv
+            pi_closing_jawi_candidates_581.json
+            pi_closing_jawi_candidates_581.csv
+            pi_t2_toc_77.json
+            pi_t2_toc_77.csv
+            pi_closing_jawi_candidates_635.json
+            pi_closing_jawi_candidates_635.csv
+            pi_closing_jawi_candidates_690.json
+            pi_jawi_editor_only_projection_690_NO_GO.json
+            pi_closing_jawi_candidates_690.csv
+            pi_release_readiness_696_NO_GO.json
+            pi_jawi_closing_lesson_review_690.json
+            pi_jawi_closing_lesson_review_690.csv
+            pi_t2_dskp_tb_sp54_3.json
+            pi_t2_dskp_tb_sp54_3.csv
+            pi_t2_dskp_code_presence_111.json
+            pi_t2_dskp_code_presence_111.csv
+            pi_t3_awalan_direct_book_12.json
+            pi_t3_awalan_direct_book_12.csv
+            pi_t3_book_footer_sp_147.json
+            pi_t3_book_footer_sp_147.csv
+            pi_t4_l083_hadith_source_editor_HOLD.json
+            pi_t6_tasmi_rpt_2_NO_GO.json
+            pi_t6_tasmi_rpt_2_NO_GO.csv
+            pi_y6_full_held_source_5_NO_GO.json
+            pi_y6_full_held_source_5_NO_GO.csv
+            pi_t6_sp42_optional_l060_HOLD.json
+            pi_t2_l035_inherited_ayah224_overlap_HOLD.json
+            pi_t6_juz25_full_source_67_gap_NO_GO.json
+            pi_t6_juz25_full_source_67_gap_NO_GO.csv
+            pi_t6_juz25_gap_editor_plan_NO_GO.json
+            pi_t6_juz25_gap_editor_plan_NO_GO.csv
+            pi_held_six_editor_packet_NO_GO.json
+            pi_t6_juz25_complete_options_NO_GO.json
+            pi_t6_juz29_l117_100_ayat_local_NO_GO.json
+            pi_t6_held_quran_rumi_editor_four_NO_GO.json
+            pi_t6_juz25_legacy2026_24_invalid_2_duplicate_67_missing_NO_GO.json
+          retention-days: 30
+
+  physical-word-pdf-a4:
+    name: Audit temporary Word/PDF A4 for 687 non-held drafts (NO_GO)
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install isolated print dependencies and Amiri Jawi font
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-hosny-amiri fonts-liberation
+          python -m pip install --disable-pip-version-check python-docx==1.1.2 pypdf==5.1.0
+          fc-match "Amiri" | head -1
+      - name: Convert all 687 non-held RPH drafts to temporary Word and PDF
+        run: |
+          python rph_standalone/pendidikan_islam_draf_2027/pi_word_pdf_print_audit.py \
+            --output build/pi_word_pdf_a4_696_report.json --batch-size 25
+      - name: Convert all six separate held RPH reviewer proposals to temporary A4 Word and PDF
+        run: python rph_standalone/pendidikan_islam_draf_2027/pi_held_six_word_pdf_print_audit.py --output build/pi_held_six_word_pdf_a4_qa.json
+      - name: Upload only QA report (never distribute draft Word/PDF files)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pi-2027-a4-print-qa-review-only
+          path: |
+            build/pi_word_pdf_a4_696_report.json
+            build/pi_word_pdf_a4_696_report.csv
+            build/pi_held_six_word_pdf_a4_qa.json
+          if-no-files-found: warn
+          retention-days: 30
+
+
+  editor-word-pdf-export:
+    name: Export 696 editor-only RPH as year ZIPs (Word/PDF; NEVER production)
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Word/PDF generation tools and Amiri Jawi font
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends libreoffice-writer fonts-hosny-amiri fonts-liberation
+          python -m pip install --disable-pip-version-check python-docx==1.1.2 pypdf==5.1.0
+          fc-match "Amiri" | head -1
+      - name: Generate and audit complete 696 one-RPH-per-Lesson review archive
+        run: |
+          python rph_standalone/pendidikan_islam_draf_2027/pi_696_rph_editor_export.py \
+            --output build/pi_2027_696_rph_editor_review --batch-size 24
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root=Path("build/pi_2027_696_rph_editor_review")
+          data=json.loads((root/"RUN_SUMMARY.json").read_text(encoding="utf-8"))
+          assert data["rendered_docx"]==696 and data["rendered_pdf"]==696, data
+          assert len(data["year_archives"])==5, data
+          assert data["teacher_publishable"]==0 and data["source_data_modified"] is False
+          for path in data["year_archives"]:
+              assert (root/path).stat().st_size>5000
+          print("REVIEW ARCHIVES ONLY:", data["year_archives"])
+          PY
+      - name: Upload 5 year-specific reviewer ZIP files and audit indexes
+        uses: actions/upload-artifact@v4
+        with:
+          name: pi-2027-696-review-word-pdf-years2-6-NO_GO
+          path: |
+            build/pi_2027_696_rph_editor_review/RPH_PI_Tahun_2_DRAF_SEMAKAN_Word_PDF.zip
+            build/pi_2027_696_rph_editor_review/RPH_PI_Tahun_3_DRAF_SEMAKAN_Word_PDF.zip
+            build/pi_2027_696_rph_editor_review/RPH_PI_Tahun_4_DRAF_SEMAKAN_Word_PDF.zip
+            build/pi_2027_696_rph_editor_review/RPH_PI_Tahun_5_DRAF_SEMAKAN_Word_PDF.zip
+            build/pi_2027_696_rph_editor_review/RPH_PI_Tahun_6_DRAF_SEMAKAN_Word_PDF.zip
+            build/pi_2027_696_rph_editor_review/INDEX_EDITOR_696.json
+            build/pi_2027_696_rph_editor_review/INDEX_EDITOR_696.csv
+            build/pi_2027_696_rph_editor_review/RUN_SUMMARY.json
+            build/pi_2027_696_rph_editor_review/README_SEMAKAN_EDITOR.txt
+          retention-days: 30
+          if-no-files-found: error

@@ -1,0 +1,285 @@
+{
+  "schema": "pi_editor_only_quran_rph_proposals_v1",
+  "reference_rpt": {
+    "drive_id": "1T380Ot_gG58JhxanELMM0z-gr6wmSJcL",
+    "sha256": "b39a07b2dd7ef6062912f12fd43e63f87a98b13bde3885c925e88a37dac70e5b"
+  },
+  "quran_structure_sources": [
+    "https://qurankdn.moha.gov.my/myquran/index.php/juzuk/index",
+    "https://quran.com/ms/surahs"
+  ],
+  "status": "HOLD",
+  "publish_to_web_or_telegram": false,
+  "native_dskp_three_level_sp_assigned": false,
+  "description": "Four separate reviewer candidates; original Year6 catalog records remain completely withheld. Rumi reviewer text pending Jawi review and academic/fiqh/tajwid signoff.",
+  "teacher_use_approved": false,
+  "verified_sequence": {
+    "juz25_rpt_ayah_mapped": 179,
+    "juz25_rpt_ayah_expected": 246,
+    "juz25_rpt_ayah_missing": 67,
+    "juz29_70_71_72_neighboring_pdp_ayah_mapped": 100,
+    "juz29_70_71_72_missing": 0
+  },
+  "missing_juz25_not_assigned_to_any_existing_pdp": [
+    {
+      "surah": 41,
+      "ayah": [
+        47,
+        54
+      ],
+      "count": 8,
+      "handling": "Verify start of Juz25: Fussilat omitted before RPT PdP002"
+    },
+    {
+      "surah": 43,
+      "ayah": [
+        74,
+        89
+      ],
+      "count": 16,
+      "handling": "RPT jumps from 43:73 to 44:40"
+    },
+    {
+      "surah": 44,
+      "ayah": [
+        1,
+        39
+      ],
+      "count": 39,
+      "handling": "RPT jumps to 44:40; seek editorial allocation"
+    },
+    {
+      "surah": 45,
+      "ayah": [
+        34,
+        37
+      ],
+      "count": 4,
+      "handling": "RPT PdP026 stops Jathiyah at 45:33 before Juz26"
+    }
+  ],
+  "candidates": [
+    {
+      "lesson_id": "T6-L006",
+      "source_rpt_pdf_page": 3,
+      "source_juz": 25,
+      "source_verse_ranges": [
+        [
+          42,
+          33,
+          51
+        ]
+      ],
+      "source_rpt_target": "asy-Syura ayat 33–51",
+      "source_issue": "RPT verse range valid in Quran chapter; full Juz25 sequence has 67 omitted elsewhere; RPH remains held",
+      "publication": "HOLD",
+      "editor_preview_only": true,
+      "original_withheld_unmodified": true,
+      "curriculum_label": "Khatam/tasmi' berdasarkan RPT guru; bukan kod SP rasmi DSKP.",
+      "draft_language": "RUMI_EDITOR_PENDING_JAWI",
+      "rph_editor_draft": {
+        "lesson_title": "Tasmi’ al-Quran — asy-Syura ayat 33–51",
+        "estimated_time": "1 jam bacaan + 1 jam tasmi’ (seperti RPT; perlu diselaraskan mengikut jadual sebenar)",
+        "sk_provenance": "Perancangan khatam/tasmi' RPT 2027; bukan dakwaan standard kandungan DSKP.",
+        "learning_outcomes": [
+          "Murid membaca petikan ayat pilihan guru daripada asy-Syura ayat 33–51 dengan bimbingan dan tajwid yang betul.",
+          "Murid membetulkan kesalahan makhraj dan hukum tajwid yang dikenal pasti semasa tasmi’ mengikut maklum balas guru."
+        ],
+        "set_induksi": "Guru menunjukkan surah dan julat ayat yang tercatat dalam RPT, kemudian menetapkan petikan munasabah bagi tahap serta masa setiap murid menggunakan mushaf yang disemak.",
+        "aktiviti_utama": [
+          "1. Guru memodelkan bacaan petikan terpilih secara talaqqi dan musyafahah; murid meneliti makhraj serta satu hukum tajwid dalam petikan tersebut.",
+          "2. Murid membaca petikan secara berpasangan dan saling menyemak menggunakan mushaf; guru memperbetulkan sebutan atau panjang pendek bacaan yang kurang tepat.",
+          "3. Murid memperdengarkan bacaan tasmi’ secara individu mengikut petikan dan giliran yang ditetapkan; guru merekod julat ayat sebenar, ketepatan sebutan, kelancaran dan tajwid.",
+          "4. Murid mengulang bacaan pada kesalahan yang ditemukan; guru melaksanakan pemulihan bersasar serta menandakan tahap penguasaan dan petikan susulan bagi sesi seterusnya."
+        ],
+        "pengukuhan": "Murid mengulang sekurang-kurangnya satu petikan yang memerlukan pembetulan dan menjelaskan secara lisan kesalahan tajwid yang telah diperbaiki.",
+        "pentaksiran": "Senarai semak individu: nama murid, nama surah, ayat mula/akhir pilihan guru, makhraj, panjang pendek/tajwid, kelancaran, bilangan pembetulan dan tindakan susulan. Jangan mensyaratkan semua ayat asy-Syura 33–51 selesai dibaca oleh setiap murid dalam satu sesi.",
+        "penutup": "Murid menyebut satu penambahbaikan bacaan dan menetapkan latihan ulangan; guru merumuskan pencapaian berdasarkan rekod tasmi’.",
+        "bahan": "Mushaf al-Quran yang disahkan, rekod tasmi’ individu, contoh bacaan guru dan senarai semak tajwid.",
+        "editor_warning": "Sumber RPT belum meliputi 67 ayat Juzuk 25 yang lain."
+      },
+      "reviewer_checks": {
+        "original_rpt_range_copied_as_reference": true,
+        "source_quran_chapter_verse_bounds_validated": true,
+        "teaching_assignment_suitability_verified": false,
+        "source_omission_allocation_resolved": false,
+        "original_dskp_specific_sp_claimed": false,
+        "literal_quran_text_transcribed": false,
+        "content_expert_approved": false,
+        "jawi_orthography_approved": false,
+        "pedagogy_and_pbd_approved": false,
+        "actual_live_pdf_word_generator_verified": false,
+        "can_publish": false
+      }
+    },
+    {
+      "lesson_id": "T6-L014",
+      "source_rpt_pdf_page": 5,
+      "source_juz": 25,
+      "source_verse_ranges": [
+        [
+          43,
+          34,
+          73
+        ]
+      ],
+      "source_rpt_target": "az-Zukhruf ayat 34–73",
+      "source_issue": "RPT omits remainder az-Zukhruf 74–89 before next documented al-Dukhan 40; do not assume complete khatam",
+      "publication": "HOLD",
+      "editor_preview_only": true,
+      "original_withheld_unmodified": true,
+      "curriculum_label": "Khatam/tasmi' berdasarkan RPT guru; bukan kod SP rasmi DSKP.",
+      "draft_language": "RUMI_EDITOR_PENDING_JAWI",
+      "rph_editor_draft": {
+        "lesson_title": "Tasmi’ al-Quran — az-Zukhruf ayat 34–73",
+        "estimated_time": "1 jam bacaan + 1 jam tasmi’ (seperti RPT; perlu diselaraskan mengikut jadual sebenar)",
+        "sk_provenance": "Perancangan khatam/tasmi' RPT 2027; bukan dakwaan standard kandungan DSKP.",
+        "learning_outcomes": [
+          "Murid membaca petikan ayat pilihan guru daripada az-Zukhruf ayat 34–73 dengan bimbingan dan tajwid yang betul.",
+          "Murid membetulkan kesalahan makhraj dan hukum tajwid yang dikenal pasti semasa tasmi’ mengikut maklum balas guru."
+        ],
+        "set_induksi": "Guru menunjukkan surah dan julat ayat yang tercatat dalam RPT, kemudian menetapkan petikan munasabah bagi tahap serta masa setiap murid menggunakan mushaf yang disemak.",
+        "aktiviti_utama": [
+          "1. Guru memodelkan bacaan petikan terpilih secara talaqqi dan musyafahah; murid meneliti makhraj serta satu hukum tajwid dalam petikan tersebut.",
+          "2. Murid membaca petikan secara berpasangan dan saling menyemak menggunakan mushaf; guru memperbetulkan sebutan atau panjang pendek bacaan yang kurang tepat.",
+          "3. Murid memperdengarkan bacaan tasmi’ secara individu mengikut petikan dan giliran yang ditetapkan; guru merekod julat ayat sebenar, ketepatan sebutan, kelancaran dan tajwid.",
+          "4. Murid mengulang bacaan pada kesalahan yang ditemukan; guru melaksanakan pemulihan bersasar serta menandakan tahap penguasaan dan petikan susulan bagi sesi seterusnya."
+        ],
+        "pengukuhan": "Murid mengulang sekurang-kurangnya satu petikan yang memerlukan pembetulan dan menjelaskan secara lisan kesalahan tajwid yang telah diperbaiki.",
+        "pentaksiran": "Senarai semak individu: nama murid, nama surah, ayat mula/akhir pilihan guru, makhraj, panjang pendek/tajwid, kelancaran, bilangan pembetulan dan tindakan susulan. Jangan mensyaratkan semua ayat az-Zukhruf 34–73 selesai dibaca oleh setiap murid dalam satu sesi.",
+        "penutup": "Murid menyebut satu penambahbaikan bacaan dan menetapkan latihan ulangan; guru merumuskan pencapaian berdasarkan rekod tasmi’.",
+        "bahan": "Mushaf al-Quran yang disahkan, rekod tasmi’ individu, contoh bacaan guru dan senarai semak tajwid.",
+        "editor_warning": "Sumber RPT belum meliputi 67 ayat Juzuk 25 yang lain."
+      },
+      "reviewer_checks": {
+        "original_rpt_range_copied_as_reference": true,
+        "source_quran_chapter_verse_bounds_validated": true,
+        "teaching_assignment_suitability_verified": false,
+        "source_omission_allocation_resolved": false,
+        "original_dskp_specific_sp_claimed": false,
+        "literal_quran_text_transcribed": false,
+        "content_expert_approved": false,
+        "jawi_orthography_approved": false,
+        "pedagogy_and_pbd_approved": false,
+        "actual_live_pdf_word_generator_verified": false,
+        "can_publish": false
+      }
+    },
+    {
+      "lesson_id": "T6-L018",
+      "source_rpt_pdf_page": 7,
+      "source_juz": 25,
+      "source_verse_ranges": [
+        [
+          44,
+          40,
+          59
+        ]
+      ],
+      "source_rpt_target": "ad-Dukhan ayat 40–59",
+      "source_issue": "RPT omits ad-Dukhan 1–39 before this lesson; teacher/editor must resolve sequence",
+      "publication": "HOLD",
+      "editor_preview_only": true,
+      "original_withheld_unmodified": true,
+      "curriculum_label": "Khatam/tasmi' berdasarkan RPT guru; bukan kod SP rasmi DSKP.",
+      "draft_language": "RUMI_EDITOR_PENDING_JAWI",
+      "rph_editor_draft": {
+        "lesson_title": "Tasmi’ al-Quran — ad-Dukhan ayat 40–59",
+        "estimated_time": "1 jam bacaan + 1 jam tasmi’ (seperti RPT; perlu diselaraskan mengikut jadual sebenar)",
+        "sk_provenance": "Perancangan khatam/tasmi' RPT 2027; bukan dakwaan standard kandungan DSKP.",
+        "learning_outcomes": [
+          "Murid membaca petikan ayat pilihan guru daripada ad-Dukhan ayat 40–59 dengan bimbingan dan tajwid yang betul.",
+          "Murid membetulkan kesalahan makhraj dan hukum tajwid yang dikenal pasti semasa tasmi’ mengikut maklum balas guru."
+        ],
+        "set_induksi": "Guru menunjukkan surah dan julat ayat yang tercatat dalam RPT, kemudian menetapkan petikan munasabah bagi tahap serta masa setiap murid menggunakan mushaf yang disemak.",
+        "aktiviti_utama": [
+          "1. Guru memodelkan bacaan petikan terpilih secara talaqqi dan musyafahah; murid meneliti makhraj serta satu hukum tajwid dalam petikan tersebut.",
+          "2. Murid membaca petikan secara berpasangan dan saling menyemak menggunakan mushaf; guru memperbetulkan sebutan atau panjang pendek bacaan yang kurang tepat.",
+          "3. Murid memperdengarkan bacaan tasmi’ secara individu mengikut petikan dan giliran yang ditetapkan; guru merekod julat ayat sebenar, ketepatan sebutan, kelancaran dan tajwid.",
+          "4. Murid mengulang bacaan pada kesalahan yang ditemukan; guru melaksanakan pemulihan bersasar serta menandakan tahap penguasaan dan petikan susulan bagi sesi seterusnya."
+        ],
+        "pengukuhan": "Murid mengulang sekurang-kurangnya satu petikan yang memerlukan pembetulan dan menjelaskan secara lisan kesalahan tajwid yang telah diperbaiki.",
+        "pentaksiran": "Senarai semak individu: nama murid, nama surah, ayat mula/akhir pilihan guru, makhraj, panjang pendek/tajwid, kelancaran, bilangan pembetulan dan tindakan susulan. Jangan mensyaratkan semua ayat ad-Dukhan 40–59 selesai dibaca oleh setiap murid dalam satu sesi.",
+        "penutup": "Murid menyebut satu penambahbaikan bacaan dan menetapkan latihan ulangan; guru merumuskan pencapaian berdasarkan rekod tasmi’.",
+        "bahan": "Mushaf al-Quran yang disahkan, rekod tasmi’ individu, contoh bacaan guru dan senarai semak tajwid.",
+        "editor_warning": "Sumber RPT belum meliputi 67 ayat Juzuk 25 yang lain."
+      },
+      "reviewer_checks": {
+        "original_rpt_range_copied_as_reference": true,
+        "source_quran_chapter_verse_bounds_validated": true,
+        "teaching_assignment_suitability_verified": false,
+        "source_omission_allocation_resolved": false,
+        "original_dskp_specific_sp_claimed": false,
+        "literal_quran_text_transcribed": false,
+        "content_expert_approved": false,
+        "jawi_orthography_approved": false,
+        "pedagogy_and_pbd_approved": false,
+        "actual_live_pdf_word_generator_verified": false,
+        "can_publish": false
+      }
+    },
+    {
+      "lesson_id": "T6-L117",
+      "source_rpt_pdf_page": 41,
+      "source_juz": 29,
+      "source_verse_ranges": [
+        [
+          70,
+          40,
+          44
+        ],
+        [
+          71,
+          1,
+          28
+        ],
+        [
+          72,
+          1,
+          13
+        ]
+      ],
+      "source_rpt_target": "al-Ma‘arij ayat 40–44, Nuh ayat 1–28 dan al-Jinn ayat 1–13",
+      "source_issue": "Quran chapters 70–72 locally continuous across PdP113/117/121; entire Juz29 not thereby certified",
+      "publication": "HOLD",
+      "editor_preview_only": true,
+      "original_withheld_unmodified": true,
+      "curriculum_label": "Khatam/tasmi' berdasarkan RPT guru; bukan kod SP rasmi DSKP.",
+      "draft_language": "RUMI_EDITOR_PENDING_JAWI",
+      "rph_editor_draft": {
+        "lesson_title": "Tasmi’ al-Quran — al-Ma‘arij ayat 40–44, Nuh ayat 1–28 dan al-Jinn ayat 1–13",
+        "estimated_time": "1 jam bacaan + 1 jam tasmi’ (seperti RPT; perlu diselaraskan mengikut jadual sebenar)",
+        "sk_provenance": "Perancangan khatam/tasmi' RPT 2027; bukan dakwaan standard kandungan DSKP.",
+        "learning_outcomes": [
+          "Murid membaca petikan ayat pilihan guru daripada al-Ma‘arij ayat 40–44, Nuh ayat 1–28 dan al-Jinn ayat 1–13 dengan bimbingan dan tajwid yang betul.",
+          "Murid membetulkan kesalahan makhraj dan hukum tajwid yang dikenal pasti semasa tasmi’ mengikut maklum balas guru."
+        ],
+        "set_induksi": "Guru menunjukkan surah dan julat ayat yang tercatat dalam RPT, kemudian menetapkan petikan munasabah bagi tahap serta masa setiap murid menggunakan mushaf yang disemak.",
+        "aktiviti_utama": [
+          "1. Guru memodelkan bacaan petikan terpilih secara talaqqi dan musyafahah; murid meneliti makhraj serta satu hukum tajwid dalam petikan tersebut.",
+          "2. Murid membaca petikan secara berpasangan dan saling menyemak menggunakan mushaf; guru memperbetulkan sebutan atau panjang pendek bacaan yang kurang tepat.",
+          "3. Murid memperdengarkan bacaan tasmi’ secara individu mengikut petikan dan giliran yang ditetapkan; guru merekod julat ayat sebenar, ketepatan sebutan, kelancaran dan tajwid.",
+          "4. Murid mengulang bacaan pada kesalahan yang ditemukan; guru melaksanakan pemulihan bersasar serta menandakan tahap penguasaan dan petikan susulan bagi sesi seterusnya."
+        ],
+        "pengukuhan": "Murid mengulang sekurang-kurangnya satu petikan yang memerlukan pembetulan dan menjelaskan secara lisan kesalahan tajwid yang telah diperbaiki.",
+        "pentaksiran": "Senarai semak individu: nama murid, nama surah, ayat mula/akhir pilihan guru, makhraj, panjang pendek/tajwid, kelancaran, bilangan pembetulan dan tindakan susulan. Jangan mensyaratkan semua petikan al-Ma‘arij 40–44, Nuh 1–28 dan al-Jinn 1–13 selesai dibaca oleh setiap murid dalam satu sesi.",
+        "penutup": "Murid menyebut satu penambahbaikan bacaan dan menetapkan latihan ulangan; guru merumuskan pencapaian berdasarkan rekod tasmi’.",
+        "bahan": "Mushaf al-Quran yang disahkan, rekod tasmi’ individu, contoh bacaan guru dan senarai semak tajwid.",
+        "editor_warning": "Semakan setempat Juzuk 29 adalah lengkap untuk surah 70–72 sahaja."
+      },
+      "reviewer_checks": {
+        "original_rpt_range_copied_as_reference": true,
+        "source_quran_chapter_verse_bounds_validated": true,
+        "teaching_assignment_suitability_verified": false,
+        "source_omission_allocation_resolved": false,
+        "original_dskp_specific_sp_claimed": false,
+        "literal_quran_text_transcribed": false,
+        "content_expert_approved": false,
+        "jawi_orthography_approved": false,
+        "pedagogy_and_pbd_approved": false,
+        "actual_live_pdf_word_generator_verified": false,
+        "can_publish": false
+      }
+    }
+  ]
+}
