@@ -13,6 +13,7 @@ import re
 from functools import lru_cache
 from pathlib import Path
 from flask import Blueprint, jsonify, send_file, request
+from primary_language_subjects import PRIMARY_LANGUAGE_SUBJECTS
 from web.english_rpt_2027_http import _account, _has_paid_access
 from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
 
@@ -189,6 +190,20 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
         if entries:
             subjects.append({"code": code, "label": f"{label} (DLP)", "years": entries})
             dlp_count += len(entries)
+    for code, label in PRIMARY_LANGUAGE_SUBJECTS.items():
+        subjects.append({
+            "code": code,
+            "label": label,
+            "years": [{
+                "year": year,
+                "pdf_ready": False,
+                "status": "Dalam Penyediaan",
+                "download_enabled": False,
+                "note": "RPT KSSR untuk sekolah rendah sedang disediakan.",
+                "is_draft": True,
+                "coming_soon": True,
+            } for year in YEARS],
+        })
     return {
         "year":2027,
         "format":"pdf",
@@ -196,7 +211,7 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
         "personalization_allowed":bool(personalization_allowed),
         "subjects":subjects,
         "total_rpt":56+dlp_count,
-        "total_display_choices":66+dlp_count,
+        "total_display_choices":sum(len(item["years"]) for item in subjects),
         "year1_coming_soon":10,
         "available_rpt":available+dlp_count,
         "note":"Tahun 1 KP2027 belum boleh dimuat turun. RPT Tahun 2–6 boleh dimuat turun oleh semua pengguna log masuk; nama dan logo hanya dicetak untuk akses berbayar yang masih aktif.",

@@ -10,7 +10,7 @@ class RPTTeacherLabels(unittest.TestCase):
         html = HTML.read_text(encoding="utf-8")
         self.assertNotIn('status.textContent=typeof year.status', html)
         self.assertNotIn('RPT DRAF/SEPARA DRAF', html)
-        self.assertIn('status.textContent=year.year===1?"Belum dibuka":year.download_enabled===true?"PDF tersedia":"Belum tersedia";', html)
+        self.assertIn('year.coming_soon?"Dalam Penyediaan":year.download_enabled===true?"PDF tersedia":"Belum tersedia";', html)
         self.assertIn("Sila semak padanan SK/SP, buku teks dan takwim sekolah", html)
         self.assertIn('if(year.year===1)', html)
         self.assertIn('year.download_enabled===true', html)

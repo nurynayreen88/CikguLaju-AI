@@ -41,7 +41,11 @@ class AllSubjectRPTTests(unittest.TestCase):
         r = self.client.get("/api/rpt/2027/catalog")
         self.assertEqual(r.status_code, 200)
         data = r.get_json()
-        self.assertEqual(len(data["subjects"]), 12)
+        self.assertEqual(len(data["subjects"]), 17)
+        iban = next(s for s in data["subjects"] if s["code"] == "bahasa_iban")
+        self.assertEqual([item["year"] for item in iban["years"]], list(YEARS))
+        self.assertTrue(all(item["coming_soon"] and not item["download_enabled"]
+                            and not item["pdf_ready"] for item in iban["years"]))
         self.assertEqual(data["total_rpt"], 56)
         bm = next(s for s in data["subjects"] if s["code"] == "bahasa_melayu")
         by_year={r["year"]:r for r in bm["years"]}
