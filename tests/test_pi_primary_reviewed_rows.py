@@ -63,6 +63,19 @@ class PIReviewedRowsTests(unittest.TestCase):
         self.assertIn("3 باچاءن", rows["PENTAKSIRAN"])
         self.assertIn("2 سوسونن", rows["PENTAKSIRAN"])
 
+    def test_upper_primary_jawi_removes_repeated_codes_and_adds_individual_checks(self):
+        first = "7.1.1 – ممباچ."
+        second = "7.1.2- منوليس."
+        combined = f"{first} {second}"
+        for year, row, goal in ((4, 1538, "همزة"), (5, 1690, "صيحت"), (6, 1834, "تيکنولوݢي")):
+            with self.subTest(year=year):
+                state = context(year, row, 4, ["7.1.1", "7.1.2"], [combined, combined])
+                rows = apply_primary_reviewed_rows(state, {})
+                self.assertEqual(rows["STANDARD PEMBELAJARAN"], "7.1.1 ممباچ.\n7.1.2 منوليس.")
+                self.assertIn(goal, rows["KRITERIA KEJAYAAN"])
+                self.assertEqual(rows["AKTIVITI UTAMA"].count("اکتيۏيتي"), 3)
+                self.assertIn("مڽمق" if year > 4 else "مريکود", rows["PENTAKSIRAN"])
+
     def test_another_lesson_is_out_of_scope(self):
         rows = {"OBJEKTIF PEMBELAJARAN": "ممباچ سورة الكافرون اية 3-1"}
         copy_before = rows.copy()
