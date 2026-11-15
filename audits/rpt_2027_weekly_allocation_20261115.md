@@ -90,7 +90,7 @@ Padanan disemak terhadap PDF 2027 dan [bank aktiviti RPH Tahun 6 dalam semakan](
 | 1.1.9 | 046 · 7.1.4, takrif operasi kelajuan | Draf meminta takrif melalui ukuran jarak dan masa. Simpan takrif murid bersama bacaan serta unit sebagai bukti. |
 | 1.1.10–1.1.12 | 076 · 12.1.3, kestabilan objek | Draf membezakan ujian luas tapak dan tinggi serta merekod hasil. Tambah hipotesis yang boleh diuji, jadual tiga jenis pemboleh ubah dan laporan hubungan antara dapatan dan hipotesis. |
 
-Kiraan 96 ialah jumlah SP dalam DSKP. RPT Web mempunyai 84 PdP bernombor. Unit 1 memerlukan perancangan PdP dan padanan RPH yang boleh disahkan. Tajuk PdP 036 dan 044 juga perlu diperbetul kerana tajuk yang dicetak mengulang fokus PdP sebelumnya sedangkan SP dan draf aktiviti masing-masing merujuk eksperimen yang berbeza. Peruntukan masa minimum Sains Tahap II ialah [64 jam setahun](https://www.parlimen.gov.my/files/jindex/pdf/JDR30072025.pdf).
+Kiraan 96 ialah jumlah SP dalam DSKP. RPT Web mempunyai 84 PdP bernombor. Unit 1 memerlukan perancangan PdP dan padanan RPH yang boleh disahkan. Tajuk PdP 035, 036, 043, 044 dan 046 telah dipadankan semula dengan SP 6.2.2, 6.2.3, 7.1.1, 7.1.2 dan 7.1.4 dalam PDF Sains Tahun 6. Semakan membandingkan DSKP edisi 2021 dan bank aktiviti draf. Lima tajuk baharu tidak mengubah SK/SP, urutan 84 PdP atau takwim. Peruntukan masa minimum Sains Tahap II ialah [64 jam setahun](https://www.parlimen.gov.my/files/jindex/pdf/JDR30072025.pdf).
 
 ## Semakan teknikal dan status
 
