@@ -125,6 +125,9 @@ def _pi_teacher_bahan(original):
     return "\n".join(visible)
 
 
+_PI_YEAR_3_AL_KAFIRUN_RANGES = {1: ("3-1", "1-3"), 5: ("5-4", "4-5")}
+
+
 def pi_records(year):
     path=ROOT/f"rph_standalone/pendidikan_islam_draf_2027/year{year}.json"
     doc=json.loads(path.read_text(encoding="utf-8"))
@@ -196,6 +199,11 @@ def pi_records(year):
             sk=str(field.get("sk") or "").strip()
             sp=str(field.get("sp") or "").strip()
             topic=str(field.get("objektif") or "").strip()
+            if year == 3 and n in _PI_YEAR_3_AL_KAFIRUN_RANGES:
+                # The 2026 Year 3 RPT lists Al-Kafirun 1–3 and 4–5 in these sessions.
+                original, corrected = _PI_YEAR_3_AL_KAFIRUN_RANGES[n]
+                topic = topic.replace(f"سورة الكافرون اية {original}",
+                                      f"سورة الكافرون اية {corrected}")
             note=("Bahan: "+_pi_teacher_bahan(field.get("bahan"))+
                   " | Penilaian: "+str(field.get("pentaksiran") or "").strip())
             if not sk or not sp or not note:

@@ -64,6 +64,15 @@ class RemainingRPTFormatQA(unittest.TestCase):
                     self.assertEqual((row["b_start"],row["b_end"]),
                                      master["B"][row["week"]])
 
+    def test_year_3_pi_corrects_al_kafirun_at_two_source_rows(self):
+        rows = pi_records(3)
+        for index, expected, original in ((0, "1-3", "3-1"), (4, "4-5", "5-4")):
+            with self.subTest(pdp=rows[index]["id"]):
+                topic = rows[index]["topic"]
+                self.assertEqual(topic.count(f"سورة الكافرون اية {expected}"), 2)
+                self.assertNotIn(f"سورة الكافرون اية {original}", topic)
+        self.assertIn("77-95", rows[1]["sp"])
+
     def test_arabic_298_rows_keep_unknown_standards_and_dates_explicit(self):
         counts={2:60,3:60,4:58,5:60,6:60}
         for y,n in counts.items():
@@ -158,6 +167,11 @@ class RemainingRPTFormatQA(unittest.TestCase):
                                 any("\u0600"<=c<="\u08ff" or "\ufb50"<=c<="\ufeff"
                                     for c in s["text"])
                                 for s in spans))
+                            if sub == "pendidikan_islam" and year in (2, 3):
+                                ranges = {2: ("1-29",), 3: ("1-3", "4-5", "77-95")}
+                                text = "\n".join(page.get_text() for page in original[1:3])
+                                for verse_range in ranges[year]:
+                                    self.assertRegex(text, rf"(?<![\d-]){verse_range}(?![\d-])")
                     else:
                         for head in ("MINGGU / TARIKH","UNIT / TAJUK / PDP",
                                      "SK","SP","CATATAN / BAHAN"):
