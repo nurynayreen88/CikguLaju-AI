@@ -3,7 +3,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 SUBJECTS = {"science_dlp": "Science", "mathematics_dlp": "Mathematics"}
-PUBLISHED_YEARS = (2, 3, 4, 5)
+PUBLISHED_YEARS = (2, 3, 4, 5, 6)
 
 
 def document_path(subject, year, fmt="pdf", *, root=ROOT):
