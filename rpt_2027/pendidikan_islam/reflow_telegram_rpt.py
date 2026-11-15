@@ -25,6 +25,12 @@ CLOSURES = {6: "Cuti Tahun Baharu Cina", 19: "Cuti Hari Raya Aidiladha dan Hari 
 SHORT_WEEKS = {1, 5, 10, 20, 35}
 DEEPAVALI = 39
 COUNTS = {2: 112, 3: 147, 4: 151, 5: 143, 6: 143}
+# Tahun 2: jadualkan Tasmik j-QAF tambahan pada 31 minggu Khatam
+# dan satu minggu semakan bacaan individu. Lihat audit bagi rujukan KPM.
+YEAR_TWO_TASMIK_WEEKS = frozenset({
+    1, 2, 3, 4, 7, 8, 9, 12, 13, 14, 15, 16, 21, 22, 23, 24,
+    25, 26, 27, 28, 29, 30, 32, 33, 34, 36, 37, 38, 40, 41, 42, 43,
+})
 # The matching SK/SP rows in RPT Pendidikan Islam Tahun 6 (SK) 2026
 # show one hour each. See the source citations in the audit.
 RESTORE_HOUR = {60, 87}
@@ -227,7 +233,7 @@ def draw_grid(page, top, bottom, *, merged=False):
             page.draw_line((x, top), (x, bottom), width=0.5)
 
 
-def week_heading(week, dates, ids, rows, continuation=False):
+def week_heading(week, dates, ids, rows, year, continuation=False):
     a1, a2, b1, b2 = [date.fromisoformat(value).strftime("%d/%m") for value in dates]
     detail = CLOSURES.get(week, "Ruang fleksibel" if not ids else "")
     suffix = ("  |  " + detail) if detail else ("  |  Sambungan" if continuation else "")
@@ -238,6 +244,8 @@ def week_heading(week, dates, ids, rows, continuation=False):
         minutes = f"  |  Pendidikan Islam {pi} minit"
         if tasmik:
             minutes += f"  |  Tasmik {tasmik} minit"
+        if year == 2 and week in YEAR_TWO_TASMIK_WEEKS:
+            minutes += "  |  Cadangan Tasmik j-QAF 60 minit (slot berasingan)"
     return (f"M{week:02}  |  Kumpulan A {a1}-{a2}  |  Kumpulan B {b1}-{b2}"
             f"  |  {len(ids)} PdP" + minutes + suffix)
 
@@ -246,6 +254,11 @@ def render(source, destination, year, windows, web):
     with fitz.open(source) as doc:
         rows, content, (first_header, first_columns), (other_top, other_columns) = original_rows(doc, year)
         plan = list(allocate(rows, windows, web))
+        if year == 2:
+            eligible = {week for week, _, ids in plan
+                        if ids and teaching_capacity(week).tasmik >= 60}
+            if len(YEAR_TWO_TASMIK_WEEKS) != 32 or not YEAR_TWO_TASMIK_WEEKS <= eligible:
+                raise ValueError("Year 2 requires 32 separate 60-minute Tasmik slots")
         width, height = doc[0].rect.br
         resources = doc.xref_get_key(doc[0].xref, "Resources")[1]
         if any(doc.xref_get_key(page.xref, "Resources")[1] != resources for page in doc):
@@ -275,7 +288,7 @@ def render(source, destination, year, windows, web):
             if y + 25 + need > BOTTOM:
                 page, y = new_page()
             draw_grid(page, y, y + 25, merged=True)
-            page.insert_text((40, y + 15), week_heading(week, dates, ids, rows),
+            page.insert_text((40, y + 15), week_heading(week, dates, ids, rows, year),
                              fontsize=9, fontname="hebo")
             y += 25
             for number in ids:
@@ -284,7 +297,7 @@ def render(source, destination, year, windows, web):
                 if y + height_needed > BOTTOM:
                     page, y = new_page()
                     draw_grid(page, y, y + 25, merged=True)
-                    page.insert_text((40, y + 15), week_heading(week, dates, ids, rows, True),
+                    page.insert_text((40, y + 15), week_heading(week, dates, ids, rows, year, True),
                                      fontsize=9, fontname="hebo")
                     y += 25
                 draw_grid(page, y, y + height_needed)
@@ -315,7 +328,7 @@ def verify_pdf(path, plan, rows, content, year):
                         if continuation != (week in printed):
                             raise ValueError(f"Unexpected duplicate heading in {path} at M{week:02}")
                         printed[week] = value
-                        if value != week_heading(week, *expected[week], rows, continuation):
+                        if value != week_heading(week, *expected[week], rows, year, continuation):
                             raise ValueError(f"Wrong date/count in {path} at M{week:02}")
                 for number in lesson_numbers(spans[i]):
                     actual[week].append(number)

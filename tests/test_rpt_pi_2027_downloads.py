@@ -71,7 +71,7 @@ class TestPIRPT2027(unittest.TestCase):
     def test_committed_pdf_assets(self):
         import hashlib
         expected = {
-            2: ("c4dcd918cecec5d3dec1c9946db6afb0d27847147d1b43303c3a95e51d821370", 264422),
+            2: ("71820baf1a4e726070270d10831c84c9c2f2200683cfb1486cc07de0ff65cb26", 266526),
             3: ("795a5f65d348bbf8bf33bfe07da6d166a0eeed798e174af8c6d020f810946790", 332284),
             4: ("b3ba111d2ba8d0396532ac9353b6071e8947a0c4ef4a16001168aa6014b3d4be", 386009),
             5: ("699209f8f4f6f47237726bea6677b1516382754e623433bc01947c4fe1b3c648", 357848),
