@@ -72,7 +72,7 @@ RPT Rozayus 2026 mengumpulkan SK dan SP mengikut tajuk dan julat minggu. Contohn
 | 34 minggu lain | 3 | 150 |
 | Jumlah setiap tahun | **117** | **5,760 minit / 96 jam** |
 
-Peruntukan masa minimum Matematik KSSR ialah [96 jam setahun](https://www.parlimen.gov.my/files/jindex/pdf/JDR30072025.pdf). Cadangan 150 minit seminggu, contohnya, boleh dibahagi kepada slot 60 + 60 + 30 minit mengikut jadual kelas dan keperluan Lesson. Setiap PDF memelihara turutan Lesson 001–117, SK, SP, catatan bahan dan muka depan. RPH Hari Ini menggunakan tarikh dan julat Lesson daripada PDF yang sama. Peruntukan masa dalam dokumen ialah cadangan perancangan kerana tempoh setiap Lesson tidak dinyatakan pada sumber lama.
+Peruntukan masa minimum Matematik KSSR ialah [96 jam setahun](https://www.parlimen.gov.my/files/jindex/pdf/JDR30072025.pdf). Cadangan 150 minit seminggu, contohnya, boleh dibahagi kepada slot 60 + 60 + 30 minit mengikut jadual kelas dan keperluan Lesson. Setiap PDF memelihara turutan Lesson 001–117 dan muka depan. Teks jadual lama yang terselit dalam 17 baris telah dibuang dengan memulihkan sel kandungan daripada baris Telegram v28 yang sepadan nombor Lesson dan kod SP. RPH Hari Ini menggunakan tarikh dan julat Lesson daripada PDF yang sama. Peruntukan masa dalam dokumen ialah cadangan perancangan kerana tempoh setiap Lesson tidak dinyatakan pada sumber lama.
 
 ## Sains Tahun 6
 
@@ -98,3 +98,5 @@ Kiraan 96 ialah jumlah SP dalam DSKP. RPT Web mempunyai 84 PdP bernombor. Unit 1
 - 43 ujian setempat meliputi akses, cetakan profil, RPH Hari Ini, tarikh cuti, katalog dan hashnya. Semakan cetak muka depan pada semua 56 PDF lulus dengan 12 sampel visual. Audit kebocoran teks pembangunan melaporkan 0 dapatan pada 56 PDF.
 - English Web aktif pada 15:31 MYT melalui #752. Versi Telegram menerapkan agihan sama kepada lima fail bersumber sendiri melalui #753. Pembaikan Pendidikan Muzik, RBT dan penyelarasan 30 fail tersebut meliputi PDF Web.
 - Penyelarasan 30 PDF melalui [#758](https://github.com/nurynayreen88/CikguLaju-AI/pull/758) digabungkan pada `7933e96`. Render membatalkan binaan `dep-dbsmu3u417fc73fmtigg` pada 16:36 MYT kerana minit binaan tempoh bil habis. Web masih menggunakan `00e525f` pada masa semakan. Status aktif bagi fail baharu perlu disahkan selepas binaan kembali tersedia.
+
+- Render turut membatalkan binaan Matematik #759 pada 16:48 MYT kerana minit binaan habis. Perubahan belum tersedia di Web.
