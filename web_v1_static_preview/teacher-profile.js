@@ -128,9 +128,13 @@ const schoolLogoSelectionImage = document.getElementById("school-logo-selection-
 const schoolLogoSelectionStatus = document.getElementById("school-logo-selection-status");
 let schoolLogoSelectionUrl = null;
 let schoolLogoSelectionRequest = null;
+let schoolLogoSelection = null;
 let schoolLogoObjectUrl = null;
 let schoolLogoPresent = null;
-const attemptedAutoLogoCodes = new Set();
+let schoolLogoLoadId = 0;
+let profileSaving = false;
+let schoolLogoSaving = false;
+let pendingSchoolLogoCode = "";
 
 function setTeacherIdentity(profile) {
   // Only use the name explicitly saved in the shared teacher profile.
@@ -152,52 +156,67 @@ function setSchoolLogoPreview(blob) {
   schoolLogoPlaceholder.hidden = true;
 }
 
+function clearStoredSchoolLogo() {
+  ++schoolLogoLoadId;
+  if (schoolLogoObjectUrl) URL.revokeObjectURL(schoolLogoObjectUrl);
+  schoolLogoObjectUrl = null;
+  schoolLogoPreview.hidden = true;
+  schoolLogoPreview.removeAttribute("src");
+  schoolLogoPlaceholder.hidden = false;
+  schoolLogoPresent = null;
+}
+
 async function loadSchoolLogo() {
+  const loadId=++schoolLogoLoadId;
   try {
     const response = await fetch("/api/web/teacher/school-logo", {
       credentials:"same-origin",cache:"no-store",
     });
+    if(loadId!==schoolLogoLoadId)return null;
     if (response.status === 404) {
-      if (schoolLogoObjectUrl) URL.revokeObjectURL(schoolLogoObjectUrl);
-      schoolLogoObjectUrl = null;
-      schoolLogoPreview.hidden = true;
-      schoolLogoPreview.removeAttribute("src");
-      schoolLogoPlaceholder.hidden = false;
+      clearStoredSchoolLogo();
       schoolLogoPresent = false;
       schoolLogoStatus.textContent = "Belum ada logo sekolah. Pilih fail atau gunakan Ambil Logo Automatik.";
       return false;
     }
     if (!response.ok) throw new Error("Logo sekolah tidak dapat dimuatkan.");
     const blob = await response.blob();
+    if(loadId!==schoolLogoLoadId)return null;
     if (blob.type !== "image/png" || blob.size > 460800) throw new Error("Logo tersimpan tidak sah.");
     setSchoolLogoPreview(blob);
     schoolLogoPresent = true;
     schoolLogoStatus.textContent = "Logo tersimpan. Cetakan RPT berlogo memerlukan akses berbayar aktif.";
     return true;
   } catch (error) {
+    if(loadId!==schoolLogoLoadId)return null;
     schoolLogoPresent = null; // unknown: never overwrite on a failed storage lookup
     schoolLogoStatus.textContent = error.message;
     return null;
   }
 }
 
+function validSchoolLogoFile(file) {
+  return Boolean(file && file.size <= 2 * 1024 * 1024 &&
+    ["image/png","image/jpeg","image/webp"].includes(file.type));
+}
+
 schoolLogoFile.addEventListener("change", () => {
   const file = schoolLogoFile.files?.[0];
-  schoolLogoUpload.disabled = !file;
+  updateAutoLogoButton();
   if (!file) {
-    updateAutoLogoButton();
     void previewSelectedSchoolLogo();
     return;
   }
   clearSchoolLogoSelection();
-  updateAutoLogoButton();
-  if (file.size > 2 * 1024 * 1024 || !["image/png","image/jpeg","image/webp"].includes(file.type)) {
-    schoolLogoUpload.disabled = true;
+  if (!validSchoolLogoFile(file)) {
     schoolLogoStatus.textContent = "Pilih imej PNG, JPG atau WebP maksimum 2 MB.";
     return;
   }
+  ++schoolLogoLoadId;
   setSchoolLogoPreview(file);
-  schoolLogoStatus.textContent = "Pratonton sahaja. Tekan Muat Naik Logo untuk menyimpan.";
+  schoolLogoStatus.textContent = selectedLogoSchoolCode() && !savedLogoSchoolCode()
+    ? "Tekan Simpan Maklumat Guru untuk menyimpan sekolah dan logo ini."
+    : "Tekan Muat Naik Logo untuk menyimpan.";
 });
 
 const schoolLogoCatalogSize=512;
@@ -236,8 +255,7 @@ async function schoolLogoToPng(file, {catalog=false}={}) {
   }
 }
 
-// Only a SAVED school code can request a logo; unsaved changes do not switch
-// the school attached to the user's existing private storan kekal logo object.
+// Uploads send the saved school code to guard against stale browser tabs.
 function savedLogoSchoolCode() {
   if (!teacherProfileState.loaded || !teacherProfileState.savedProfile) return "";
   let saved;
@@ -253,13 +271,20 @@ function selectedLogoSchoolCode() {
 function updateAutoLogoButton() {
   const saved=savedLogoSchoolCode();
   const preview=selectedLogoSchoolCode()&&!saved;
+  const changingSchool=teacherProfileState.loaded &&
+    schoolChoiceField.value!==(JSON.parse(teacherProfileState.savedProfile || "{}").school_code || "");
   schoolLogoAutoButton.textContent=preview?"Lihat Logo Sekolah":"Ambil Logo Automatik";
-  schoolLogoAutoButton.disabled=!(saved || (preview && !schoolLogoFile.files?.length));
+  const busy=profileSaving || schoolLogoSaving;
+  schoolLogoAutoButton.disabled=busy || !(saved || (preview && !schoolLogoFile.files?.length));
+  schoolLogoUpload.disabled=busy || changingSchool || !validSchoolLogoFile(schoolLogoFile.files?.[0]);
+  schoolLogoFile.disabled=busy;
+  profileSaveButton.disabled=busy || !teacherProfileState.loaded;
 }
 
 function clearSchoolLogoSelection() {
   schoolLogoSelectionRequest?.abort();
   schoolLogoSelectionRequest=null;
+  schoolLogoSelection=null;
   if(schoolLogoSelectionUrl)URL.revokeObjectURL(schoolLogoSelectionUrl);
   schoolLogoSelectionUrl=null;
   schoolLogoSelectionImage.hidden=true;
@@ -273,17 +298,16 @@ async function fetchSchoolLogoCandidate(path, signal) {
   const response=await fetch(path,{
     credentials:"same-origin",cache:"no-store",redirect:"error",signal,
   });
-  if(response.status===404)throw new Error(
-    "Logo automatik belum tersedia untuk sekolah ini. Gunakan Muat Naik Logo.");
+  if(response.status===404)return null;
   if(!response.ok)throw new Error("Sumber logo sekolah belum dapat dihubungi.");
   const blob=await response.blob();
   if(!["image/png","image/jpeg","image/gif"].includes(blob.type) ||
       blob.size<=0 || blob.size>2*1024*1024)
     throw new Error("Logo daripada sumber tidak sah. Sila muat naik sendiri.");
-  return blob;
+  return {blob, saved:response.headers.get("X-School-Logo-Saved")==="1"};
 }
 
-async function previewSelectedSchoolLogo() {
+function previewSelectedSchoolLogo() {
   clearSchoolLogoSelection();
   const code=selectedLogoSchoolCode();
   if(!code || savedLogoSchoolCode() || schoolLogoFile.files?.length)return;
@@ -292,29 +316,38 @@ async function previewSelectedSchoolLogo() {
   schoolLogoSelectionImage.parentElement.classList.add("is-candidate");
   schoolLogoSelectionStatus.hidden=false;
   schoolLogoSelectionStatus.textContent="Memuatkan logo sekolah yang dipilih…";
-  try {
+  const ready=(async()=>{
     const query=new URLSearchParams({school_code:code});
-    const blob=await fetchSchoolLogoCandidate("/api/web/teacher/school-logo-preview?"+query,request.signal);
-    if(request.signal.aborted || selectedLogoSchoolCode()!==code || savedLogoSchoolCode())return;
-    const png=await schoolLogoToPng(blob,{catalog:true});
-    if(request.signal.aborted || selectedLogoSchoolCode()!==code || savedLogoSchoolCode())return;
-    schoolLogoSelectionUrl=URL.createObjectURL(png);
-    schoolLogoSelectionImage.src=schoolLogoSelectionUrl;
-    await schoolLogoSelectionImage.decode();
-    if(request.signal.aborted || selectedLogoSchoolCode()!==code || savedLogoSchoolCode())return;
-    schoolLogoSelectionImage.hidden=false;
-    schoolLogoSelectionStatus.textContent="Pratonton logo sekolah. Simpan maklumat guru untuk mengesahkan pilihan sekolah.";
-  }catch(error){
-    if(request.signal.aborted)return;
-    clearSchoolLogoSelection();
-    schoolLogoSelectionImage.parentElement.classList.add("is-candidate");
-    schoolLogoSelectionStatus.hidden=false;
-    schoolLogoSelectionStatus.textContent=error.message;
-  }
+    const candidate=await fetchSchoolLogoCandidate("/api/web/teacher/school-logo-preview?"+query,request.signal);
+    if(!candidate)return null;
+    const png=candidate.saved ? candidate.blob : await schoolLogoToPng(candidate.blob,{catalog:true});
+    return {...candidate,png};
+  })();
+  schoolLogoSelection={code,ready,signal:request.signal};
+  void (async()=>{
+    try {
+      const candidate=await ready;
+      if(request.signal.aborted || selectedLogoSchoolCode()!==code || savedLogoSchoolCode())return;
+      if(!candidate){
+        schoolLogoSelectionStatus.textContent="Logo automatik belum tersedia untuk sekolah ini. Boleh pilih fail sendiri.";
+        return;
+      }
+      schoolLogoSelectionUrl=URL.createObjectURL(candidate.png);
+      schoolLogoSelectionImage.src=schoolLogoSelectionUrl;
+      await schoolLogoSelectionImage.decode();
+      if(request.signal.aborted || selectedLogoSchoolCode()!==code || savedLogoSchoolCode())return;
+      schoolLogoSelectionImage.hidden=false;
+      schoolLogoSelectionStatus.textContent="Tekan Simpan Maklumat Guru untuk menyimpan sekolah dan logo ini.";
+    }catch(error){
+      if(!request.signal.aborted)schoolLogoSelectionStatus.textContent=error.message;
+    }
+  })();
 }
-async function saveCandidateLogoToPrivateStorage(png) {
+async function saveCandidateLogoToPrivateStorage(png, code, automatic=false) {
   const body=new FormData();
   body.append("logo",png,"logo.png");
+  body.append("school_code",code);
+  if(automatic)body.append("automatic","1");
   const response=await fetch("/api/web/teacher/school-logo",{
     method:"POST",credentials:"same-origin",cache:"no-store",body,
   });
@@ -325,70 +358,58 @@ async function saveCandidateLogoToPrivateStorage(png) {
 async function importSavedSchoolLogo(automatic=false) {
   const code=savedLogoSchoolCode();
   if(!code || schoolLogoAutoButton.disabled)return;
-  if(automatic && attemptedAutoLogoCodes.has(code))return;
   if(automatic && (schoolLogoPresent!==false || schoolLogoFile.files?.length))return;
   if(!automatic && schoolLogoPresent===true &&
      !window.confirm("Logo sekolah sedia ada akan diganti. Teruskan?"))return;
-  attemptedAutoLogoCodes.add(code);
-  schoolLogoAutoButton.disabled=true;
+  schoolLogoSaving=true;
+  updateAutoLogoButton();
   schoolLogoStatus.textContent="Mengambil logo sekolah berdasarkan kod sekolah…";
   try {
-    const blob=await fetchSchoolLogoCandidate("/api/web/teacher/school-logo-candidate");
+    const candidate=await fetchSchoolLogoCandidate("/api/web/teacher/school-logo-candidate");
+    if(!candidate)throw new Error("Logo automatik belum tersedia. Boleh muat naik logo sendiri.");
     // The browser normalizes metadata, transparency and GIF first frame before
     // the same server-side PNG validation used for manual private uploads.
-    const png=await schoolLogoToPng(blob,{catalog:true});
+    const png=await schoolLogoToPng(candidate.blob,{catalog:true});
     if(savedLogoSchoolCode()!==code)throw new Error(
       "Sekolah berubah semasa logo dimuatkan. Simpan profil dan cuba lagi.");
-    // A manual upload may have started or finished during the remote fetch.
-    // Never let a background auto-import overwrite that newly supplied logo.
-    if(automatic && (schoolLogoPresent===true || schoolLogoFile.files?.length)){
-      schoolLogoStatus.textContent="Logo pilihan guru dikekalkan.";
-      return;
-    }
-    await saveCandidateLogoToPrivateStorage(png);
+    await saveCandidateLogoToPrivateStorage(png,code,automatic);
     await loadSchoolLogo();
     schoolLogoStatus.textContent=
       "Logo sekolah berjaya diambil dan disimpan. Sila semak lencana sebelum mencetak RPT.";
   }catch(error){
     schoolLogoStatus.textContent=error.message;
   }finally{
+    schoolLogoSaving=false;
     updateAutoLogoButton();
   }
 }
-async function refreshLogoAndTryAutomaticImport(schoolChanged=false) {
-  const stored=await loadSchoolLogo();
-  if(stored===true && schoolChanged)
-    schoolLogoStatus.textContent=
-      "Sekolah telah ditukar. Logo lama dikekalkan; sila semak dan ganti jika perlu.";
-  if(stored===false && savedLogoSchoolCode())await importSavedSchoolLogo(true);
+async function loadProfileSchoolLogo() {
+  if(await loadSchoolLogo()===false)await importSavedSchoolLogo(true);
 }
 schoolLogoAutoButton.addEventListener("click",()=>{
-  if(savedLogoSchoolCode())void importSavedSchoolLogo(false);
+  if(savedLogoSchoolCode())void importSavedSchoolLogo();
   else void previewSelectedSchoolLogo();
 });
 
 schoolLogoUpload.addEventListener("click", async () => {
   const file = schoolLogoFile.files?.[0];
-  if (!file || schoolLogoUpload.disabled) return;
-  schoolLogoUpload.disabled = true;
+  if (!file || schoolLogoUpload.disabled || !teacherProfileState.loaded) return;
+  const code=savedLogoSchoolCode();
+  schoolLogoSaving=true;
+  updateAutoLogoButton();
   schoolLogoStatus.textContent = "Memproses dan menyimpan logo sekolah…";
   try {
     const png=await schoolLogoToPng(file);
-    const body = new FormData();
-    body.append("logo", png, "logo.png");
-    const response = await fetch("/api/web/teacher/school-logo", {
-      method:"POST",credentials:"same-origin",cache:"no-store",body,
-    });
-    const result = await response.json().catch(() => ({}));
-    if (!response.ok || result.saved !== true) throw new Error(
-      result.error || "Logo tidak berjaya dimuat naik.");
+    await saveCandidateLogoToPrivateStorage(png,code);
     schoolLogoFile.value = "";
     updateAutoLogoButton();
     await loadSchoolLogo();
     schoolLogoStatus.textContent = "Logo sekolah berjaya disimpan. Ia dicetak pada RPT hanya jika akses berbayar aktif.";
   } catch (error) {
     schoolLogoStatus.textContent = error.message;
-    schoolLogoUpload.disabled = false;
+  }finally{
+    schoolLogoSaving=false;
+    updateAutoLogoButton();
   }
 });
 
@@ -821,6 +842,7 @@ for(const control of schoolCombos.keys()) {
 schoolStateField.addEventListener("change",async()=>{
   const seq=++schoolPickerRequest;
   clearSchoolLogoSelection();
+  schoolLogoFile.value="";
   schoolNameField.value="";
   schoolPickerNotice.textContent="Memuatkan PPD negeri yang dipilih…";
   try {
@@ -837,6 +859,7 @@ schoolStateField.addEventListener("change",async()=>{
 schoolDistrictField.addEventListener("change",async()=>{
   const seq=++schoolPickerRequest;
   clearSchoolLogoSelection();
+  schoolLogoFile.value="";
   schoolNameField.value="";
   schoolPickerNotice.textContent="Memuatkan sekolah PPD yang dipilih…";
   try {
@@ -852,6 +875,7 @@ schoolDistrictField.addEventListener("change",async()=>{
 });
 schoolChoiceField.addEventListener("change",()=>{
   const chosen=schoolCatalogOptions.find(row=>row.value===schoolChoiceField.value);
+  schoolLogoFile.value="";
   updateAutoLogoButton();
   schoolNameField.value=chosen?.label||"";
   schoolPickerNotice.textContent=chosen
@@ -861,8 +885,9 @@ schoolChoiceField.addEventListener("change",()=>{
 });
 
 async function loadTeacherProfile() {
-  if(timetableImportSaving)return;
+  if(timetableImportSaving || profileSaving || schoolLogoSaving)return;
   clearSchoolLogoSelection();
+  clearStoredSchoolLogo();
   teacherProfileState.loaded=false;
   timetableReadRequest?.abort();
   timetableReader.hidden=true;
@@ -893,7 +918,7 @@ async function loadTeacherProfile() {
     timetableReader.hidden=result.timetable_auto_read!==true;
     setTeacherProfileButtons(true);
     renderProfileReadiness();
-    void refreshLogoAndTryAutomaticImport();
+    void loadProfileSchoolLogo();
     profileMessage.textContent="Maklumat guru tersedia untuk disunting.";
     timetableMessage.textContent=timetable.entries.length+" waktu dimuatkan.";
   }catch(err){
@@ -905,7 +930,7 @@ async function loadTeacherProfile() {
 
 profileForm.addEventListener("submit", async event => {
   event.preventDefault();
-  if(!teacherProfileState.loaded || timetableImportSaving)return;
+  if(!teacherProfileState.loaded || timetableImportSaving || profileSaving || schoolLogoSaving)return;
   const class_names=teacherClassLines();
   if(class_names.length>25) {
     profileMessage.textContent="Maksimum 25 kelas. Sila kurangkan senarai.";
@@ -915,29 +940,63 @@ profileForm.addEventListener("submit", async event => {
     ? JSON.parse(teacherProfileState.savedProfile).school_code : "";
   const editedProfile={...profileEditorData(),class_names};
   const body={...editedProfile,version:teacherProfileState.profileVersion};
-  profileSaveButton.disabled=true;
+  const code=body.school_code;
+  const schoolChanged=code!==previousCode;
+  const saveLogo=code && (schoolChanged || pendingSchoolLogoCode===code);
+  const manualFile=saveLogo && schoolLogoFile.files?.[0];
+  if(manualFile && !validSchoolLogoFile(manualFile)){
+    profileMessage.textContent="Pilih imej PNG, JPG atau WebP maksimum 2 MB.";
+    return;
+  }
+  const selectedPreview=schoolLogoSelection?.code===code ? schoolLogoSelection : null;
+  profileSaving=true;
+  updateAutoLogoButton();
   profileMessage.textContent="Menyimpan maklumat guru…";
   try {
+    const manualLogo=manualFile ? await schoolLogoToPng(manualFile) : null;
     const result=await teacherApi("/api/web/teacher/profile","PUT",body);
     if(!result.saved || typeof result.version!=="string")throw new Error("Pengesahan simpan tidak lengkap.");
     teacherProfileState.profileVersion=result.version;
     teacherProfileState.timetableVersion=result.version;
     teacherProfileState.savedProfile=JSON.stringify(editedProfile);
     teacherProfileState.classNames=class_names;
-    updateAutoLogoButton();
     renderProfileReadiness();
-    if(body.school_code && savedLogoSchoolCode()===body.school_code){
-      clearSchoolLogoSelection();
-      if(body.school_code!==previousCode)void refreshLogoAndTryAutomaticImport(true);
-    }
     setTeacherIdentity(body);
     renderTeacherTimetable(timetableValueRows());
     if(typeof loadTeacherClasses==="function")loadTeacherClasses();
     profileMessage.textContent="Maklumat guru dan senarai kelas berjaya disimpan.";
+    if(schoolChanged)clearStoredSchoolLogo();
+    if(schoolChanged && !code)pendingSchoolLogoCode="";
+    if(saveLogo){
+      pendingSchoolLogoCode=code;
+      try{
+        if(manualLogo){
+          await saveCandidateLogoToPrivateStorage(manualLogo,code);
+          if(schoolLogoFile.files?.[0]===manualFile)schoolLogoFile.value="";
+        }else{
+          const candidate=selectedPreview && !selectedPreview.signal.aborted
+            ? await selectedPreview.ready
+            : await fetchSchoolLogoCandidate("/api/web/teacher/school-logo-preview?"+new URLSearchParams({school_code:code}));
+          if(candidate && !candidate.saved){
+            const png=candidate.png || await schoolLogoToPng(candidate.blob,{catalog:true});
+            await saveCandidateLogoToPrivateStorage(png,code,true);
+          }
+        }
+        pendingSchoolLogoCode="";
+      }catch(error){
+        profileMessage.textContent="Maklumat guru disimpan. Logo belum dapat disimpan. Tekan Simpan Maklumat Guru untuk cuba lagi.";
+        schoolLogoStatus.textContent=error.message;
+      }
+    }
+    if(schoolChanged || saveLogo){
+      if(pendingSchoolLogoCode!==code || !code)await loadSchoolLogo();
+      if(schoolChoiceField.value===code)clearSchoolLogoSelection();
+    }
   }catch(err){
     profileMessage.textContent=err.message;
   }finally{
-    profileSaveButton.disabled=!teacherProfileState.loaded;
+    profileSaving=false;
+    updateAutoLogoButton();
   }
 });
 

@@ -6,6 +6,7 @@ additional tables, overwrite of curricular PDFs, or browser service keys.
 """
 from io import BytesIO
 import json
+import re
 from struct import unpack
 from zlib import crc32, decompressobj, error as ZlibError
 from urllib.error import HTTPError, URLError
@@ -19,18 +20,19 @@ MAX_INPUT = 2 * 1024 * 1024
 MAX_SAVED = 450 * 1024
 
 
-def _object_url(supabase_url, user_id, *, authenticated=False):
+def _object_url(supabase_url, user_id, *, authenticated=False, school_code=""):
     parsed = urlsplit(supabase_url)
     if (parsed.scheme != "https" or not parsed.hostname or parsed.port is not None
             or parsed.path not in ("", "/") or parsed.query or parsed.fragment
             or parsed.username or parsed.password or type(user_id) is not int
-            or user_id < 1):
+            or user_id < 1 or not isinstance(school_code, str)
+            or (school_code and not re.fullmatch(r"[A-Z0-9]{6,12}", school_code))):
         raise ProfileUnavailable("Konfigurasi storan tidak sah")
     # Supabase private downloads use /object/authenticated/...; uploads
     # use /object/... . Never switch this bucket to public access.
     prefix = "/storage/v1/object/authenticated/" if authenticated else "/storage/v1/object/"
-    return supabase_url.rstrip("/") + prefix + BUCKET + (
-        "/school-logos/%d/logo.png" % user_id)
+    school_folder = f"{school_code}/" if school_code else ""
+    return f"{supabase_url.rstrip('/')}{prefix}{BUCKET}/school-logos/{user_id}/{school_folder}logo.png"
 
 
 def normalized_png(source):
@@ -106,10 +108,11 @@ def normalized_png(source):
         raise ProfileValidation("Logo terlalu besar selepas diproses")
     return bytes(raw)
 
-def logo_png(supabase_url, service_key, user_id, *, opener=None):
+def logo_png(supabase_url, service_key, user_id, *, school_code="", opener=None):
     if not service_key:
         raise ProfileUnavailable("Sambungan storan belum tersedia")
-    request = Request(_object_url(supabase_url, user_id, authenticated=True), headers={
+    request = Request(_object_url(supabase_url, user_id, authenticated=True,
+                                  school_code=school_code), headers={
         "apikey": service_key, "Authorization": "Bearer " + service_key,
         "Accept": "image/png",
     }, method="GET")
@@ -144,14 +147,25 @@ def logo_png(supabase_url, service_key, user_id, *, opener=None):
         raise ProfileUnavailable("Storan logo tidak dapat dihubungi") from None
 
 
-def save_logo_png(supabase_url, service_key, user_id, raw, *, opener=None):
+def profile_logo_png(supabase_url, service_key, user_id, school_code, legacy_school_code, *, opener=None):
+    """Prefer images saved for the selected school and scope the original account logo."""
+    if school_code:
+        scoped = logo_png(supabase_url, service_key, user_id, school_code=school_code, opener=opener)
+        if scoped is not None:
+            return scoped
+    if school_code == legacy_school_code:
+        return logo_png(supabase_url, service_key, user_id, opener=opener)
+    return None
+
+
+def save_logo_png(supabase_url, service_key, user_id, raw, *, school_code="", automatic=False, opener=None):
     png = normalized_png(raw)
     if not service_key:
         raise ProfileUnavailable("Sambungan storan belum tersedia")
-    request = Request(_object_url(supabase_url, user_id), data=png, headers={
+    request = Request(_object_url(supabase_url, user_id, school_code=school_code), data=png, headers={
         "apikey": service_key, "Authorization": "Bearer " + service_key,
         "Content-Type": "image/png", "Content-Length": str(len(png)),
-        "x-upsert": "true",
+        "x-upsert": "false" if automatic else "true",
     }, method="POST")
     # Supabase's Storage upload endpoint supports POST /object/{bucket}/{path}
     try:
@@ -159,6 +173,12 @@ def save_logo_png(supabase_url, service_key, user_id, raw, *, opener=None):
             if response.status not in (200, 201):
                 raise ProfileUnavailable("Storan logo tidak menerima fail")
             response.read(2048)
-    except (HTTPError, URLError, OSError):
+    except HTTPError as exc:
+        if automatic and exc.code in (400, 409):
+            existing = logo_png(supabase_url, service_key, user_id, school_code=school_code, opener=opener)
+            if existing is not None:
+                return len(existing)
+        raise ProfileUnavailable("Logo sekolah tidak berjaya disimpan. Logo lama dikekalkan.") from None
+    except (URLError, OSError):
         raise ProfileUnavailable("Logo sekolah tidak berjaya disimpan. Logo lama dikekalkan.") from None
     return len(png)
