@@ -76,6 +76,12 @@ Peruntukan masa minimum Matematik KSSR ialah [96 jam setahun](https://www.parlim
 
 ## Sains Tahun 6
 
+RPT Web kini bermula dengan lima PdP Unit 1 yang telah ada pada sumber RPH: 085–089. Kelima-lima PdP menggunakan aktiviti kereta belon, muka surat bercetak 2–8, SK 1.1 dan SP 1.1.1–1.1.12. PDF dan cadangan RPH Hari Ini mengikuti urutan 085–089, kemudian 001–084. Semua tajuk, SK dan SP bagi 84 PdP asal dikekalkan semasa peralihan takwim.
+
+Pelan baharu menempatkan 89 PdP dalam 42 minggu pengajaran dan mengagihkan 3,840 minit (64 jam): lima minggu pendek × 60 minit, 30 minggu × 90 minit dan tujuh minggu × 120 minit. Dua minggu cuti penuh kosong dan minggu Deepavali terhad kepada 60 minit. Guru menempatkan minit yang dicadangkan mengikut slot kelas sebenar dan cuti negeri.
+
+### Catatan audit sebelum Unit 1 dimasukkan
+
 Kedua belas kod yang tiada dalam PDF Web ialah SP Kemahiran Proses Sains (1.1.1–1.1.12). [DSKP KPM September 2021, muka surat bercetak 42–44](https://c.zoom-a.com/cache/dbp/refpub/1668665312763/DSKP-Sains-6-%28Semakan-2017%29.pdf) menerangkan penggunaan beberapa kemahiran dalam satu penyiasatan. [RPT Sains 2026](https://id.scribd.com/document/973840413/Rpt-Sains-Thn-6-Sk-2026-by-Rozayus-Academy-Kump-a-b) mengelompokkannya dalam Unit 1 sebelum Unit 2. [Indeks buku teks](https://anyflip.com/jbdkj/uvly/basic/) meletakkan Unit 1 pada muka surat 1–12, sebelum Unit 2 bermula pada muka surat 13. Julat ini masih di peringkat unit.
 
 Padanan disemak terhadap PDF 2027 dan [bank aktiviti RPH Tahun 6 dalam semakan](https://github.com/nurynayreen88/CikguLaju-AI/blob/90b3da015758520e0a1ce53eb9100e4dc8902317/audits/sains_y6_84_sp_specific_staging_draf_20261107.md). Ini ialah cadangan pengukuhan Unit 1 dalam unit kandungan yang menyusul. Selaraskan fokus, aktiviti dan PBD sebelum memasukkan SK/SP tambahan ke dalam PDF atau RPH pengguna.

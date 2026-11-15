@@ -231,7 +231,11 @@
   const describe=number=>label+" "+String(number).padStart(3,"0");
   const previous=progress?.previous;
   const completed=progress?.completed;
-  const next=previous&&previous<999?previous+1:null;
+  let next=previous&&previous<999?previous+1:null;
+  if(c.slot.subject_code==="SCIENCE"&&c.slot.year===6){
+   if(previous===89)next=1;
+   if(previous===84)next=null;
+  }
   c.progressHint.textContent=completed
    ?describe(completed)+" selesai untuk slot ini."
    :previous?"Terakhir selesai "+describe(previous)+".":"";

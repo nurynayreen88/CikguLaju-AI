@@ -162,6 +162,17 @@ class DailyTimetablePureTests(TestCase):
                     {"week": 2, "group": "B", "lessons": {"": [3, 4, 5]}},
                 )
 
+    def test_science_year6_suggests_opening_unit_before_existing_lessons(self):
+        weeks = weekly_catalog()["SCIENCE:6"]
+        self.assertEqual(set(map(int, weeks)), set(range(1, 45)) - {6, 19})
+        numbers = [number for row in weeks.values() for number in row[4][""]]
+        self.assertEqual(numbers, [85, 86, 87, 88, 89, *range(1, 85)])
+        self.assertEqual(
+            weekly_rpt_suggestion("Pahang", date(2027, 1, 4), "SCIENCE", 6),
+            {"week": 1, "group": "B", "lessons": {"": [85, 86]}},
+        )
+        self.assertEqual(len(weeks["39"][4][""]), 2)
+
     def test_public_and_state_holidays_apply_to_other_subjects(self):
         for state, day in [("W.P. Kuala Lumpur", (2, 1)), ("Terengganu", (3, 4)),
                            ("Johor", (6, 8)), ("Selangor", (9, 16)), ("Sarawak", (10, 28))]:
