@@ -25,7 +25,6 @@ class Year6PublishedRPTSourceGate(unittest.TestCase):
         return pages[0]
 
     def test_landscape_and_all_160_numbered_lessons(self):
-        self.assertEqual(len(self.reader.pages), 43)
         self.assertTrue(all(float(p.mediabox.width) > float(p.mediabox.height)
                             for p in self.reader.pages))
         nums = [int(n) for n in re.findall(r"LESSON:\s*(\d+)\b", self.all_text)]

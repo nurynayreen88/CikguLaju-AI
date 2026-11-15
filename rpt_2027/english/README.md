@@ -10,6 +10,10 @@ Rancangan Pengajaran Tahunan sekolah rendah berdasarkan RPT induk CikguLaju 2027
 | 5 | 160 | [RPT English Year 5](RPT_ENGLISH_TAHUN_5_2027_UNTUK_GURU.pdf) |
 | 6 | 160 | [RPT English Year 6](RPT_ENGLISH_TAHUN_6_2027_UNTUK_GURU.pdf) |
 
+## Agihan 2027
+
+PDF Telegram dan Web menggunakan agihan yang sama untuk 44 julat tarikh Kumpulan A/B. Dua minggu cuti penuh (M06 dan M19) kosong. Minggu Deepavali (M39) memuatkan dua Lesson dan enam minggu pendek memuatkan tiga. Minggu lain memuatkan empat. Satu Lesson SOW bersamaan 60 minit pengajaran dan boleh dibahagikan mengikut slot jadual kelas. Agihan menggunakan [Kalendar Akademik KPM 2027](https://www.moe.gov.my/kalendar-akademik-semasa) selepas perbandingan dengan [RPT 2026](https://sites.google.com/moe-dl.edu.my/panitiabahasainggeris-/2-sukatan-pelajaran).
+
 ## RPH yang sepadan
 
 **800/800 sumber RPH Year 2–6 sudah tersedia**, termasuk [160 RPH Year 6](../../rph_standalone/english/year6/). Pernyataan lama bahawa RPH Year 6 belum dijana sudah tidak tepat dan telah dibetulkan di sini.
@@ -32,4 +36,4 @@ Audit teknikal sumber–SOW–Word/PDF dan penjana PDF A4 core telah lulus bagi 
 - [Audit audio Tahun 1–6 dan risiko sumber](../../audits/english_y1_y6_audio_source_risk_register_20261105.json)
 - [Audit sebenar PDF RPT Year 6](../../tests/test_english_rpt_2027_y6_pdf_source.py)
 
-Penyediaan dan kemas kini README ini tidak mengubah lima PDF asal, struktur DB, data guru, kuota, transaksi pembayaran atau penghantaran Telegram.
+Versi permulaan lima PDF kekal dalam sejarah Git. Untuk menjana semula pembetulan Telegram, eksport PDF versi sebelum pembetulan dan katalog `web/rpt_weekly_suggestions_2027.json` daripada pelepasan Web #752. Jalankan `python scripts/reflow_telegram_english_rpt_2027.py <katalog-web> <folder-pdf-asal>` dari akar repositori menggunakan PyMuPDF dan fon Liberation.
