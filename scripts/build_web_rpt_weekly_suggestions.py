@@ -45,7 +45,7 @@ def read_weeks(path, subject):
             for drawing in page.get_drawings():
                 rect = drawing["rect"]
                 edge = rect.x1 if rtl else rect.x0
-                if (drawing["type"] != "f" or abs(rect.width - 105) > 0.1
+                if (drawing["type"] not in ("f", "fs") or abs(rect.width - 105) > 0.1
                         or abs(edge - (page.rect.width - 23 if rtl else 35)) > 0.1):
                     continue
                 text = page.get_text(clip=rect)
@@ -56,10 +56,14 @@ def read_weeks(path, subject):
                 n = int(week[1])
                 dates = tuple(datetime.strptime(d, "%d/%m/%Y").date().isoformat()
                               for d in printed_dates)
-                if dates_by_week.setdefault(n, dates) != dates:
-                    raise ValueError(f"{path}: conflicting dates for week {n}")
                 clip = fitz.Rect(510 if rtl else 140, rect.y0,
                                  rect.x0 if rtl else 300, rect.y1)
+                if subject == "ENGLISH" and "School closed" in text:
+                    if LESSON.search(page.get_text(clip=clip)):
+                        raise ValueError(f"{path}: Lesson assigned during school closure in week {n}")
+                    continue
+                if dates_by_week.setdefault(n, dates) != dates:
+                    raise ValueError(f"{path}: conflicting dates for week {n}")
                 for block in page.get_text("dict", clip=clip)["blocks"]:
                     for line in block.get("lines", ()):
                         for span in line["spans"]:

@@ -3,7 +3,7 @@
   "year": 2027,
   "status": "DRAF_USER_VISIBLE_NOT_ACADEMIC_FINAL",
   "count": 56,
-  "pages": 1517,
+  "pages": 1533,
   "files": {
     "bahasa_arab:2": {
       "path": "bahasa_arab/tahun_2.pdf",
@@ -87,43 +87,48 @@
     },
     "english:2": {
       "path": "english/tahun_2.pdf",
-      "sha256": "f12abd36e1cbb64a61d86f650733a92b462de484c44ebd7b5b496fbfdf0820a2",
-      "bytes": 142303,
-      "pages": 40,
+      "sha256": "8f8139cc052750f1074a1b8e12efd3c071298ee104de06a5f16da2d304833b55",
+      "bytes": 201150,
+      "pages": 43,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
+      "weekly_allocation_20261115": true
     },
     "english:3": {
       "path": "english/tahun_3.pdf",
-      "sha256": "bc8081feb67eed883a7897efa9d74774f8ed57418f4b7cb0448ff13eef3adae2",
-      "bytes": 142299,
-      "pages": 41,
+      "sha256": "73b622bf1d3cf1937e557ca85e0cabd91d09be2fab493fcb05d2d5d54a4cbf48",
+      "bytes": 198951,
+      "pages": 43,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
+      "weekly_allocation_20261115": true
     },
     "english:4": {
       "path": "english/tahun_4.pdf",
-      "sha256": "cbcced2a72a62808102f9ac02b43d917596a50eb1dc997bd23d7ceda155371ff",
-      "bytes": 147942,
-      "pages": 38,
+      "sha256": "660ebadbe875f8135c6e6607a02646486262740eaed9ba89a736742c1fed71e3",
+      "bytes": 212834,
+      "pages": 43,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
+      "weekly_allocation_20261115": true
     },
     "english:5": {
       "path": "english/tahun_5.pdf",
-      "sha256": "98f3bf188c185133e285eac48d638b07bf6a550bba292edbb2606b7ade6e7110",
-      "bytes": 154075,
-      "pages": 40,
+      "sha256": "6b8a94311c3e459ac8fedd0c1e2fb380802def5756daa348d35483e9951a8911",
+      "bytes": 216848,
+      "pages": 43,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
+      "weekly_allocation_20261115": true
     },
     "english:6": {
       "path": "english/tahun_6.pdf",
-      "sha256": "bcb5a1c13aa6d6800bb7629158085bec14644210164a049b84ec80b78f0140c7",
-      "bytes": 159878,
-      "pages": 42,
+      "sha256": "158c8a12cb5d431e19b662543e06d6992e524478232b854a7ed20cf01eb3aa0a",
+      "bytes": 224408,
+      "pages": 45,
       "status": "DRAF",
-      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT"
+      "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
+      "weekly_allocation_20261115": true
     },
     "matematik:2": {
       "path": "matematik/tahun_2.pdf",
