@@ -658,7 +658,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 
 <section id="view-today" class="app-view" aria-labelledby="view-today-heading" hidden>
   <h2 id="view-today-heading">RPH Hari Ini</h2>
-  <p>Semak cadangan minggu daripada RPT, kemudian pilih Lesson/PdP mengikut kemajuan kelas. Tekan <strong>Jana Bahan Semua Lesson</strong> untuk melihat bahan di bawah.</p>
+  <p>Semak cadangan minggu daripada RPT, kemudian pilih Lesson/PdP mengikut kemajuan kelas. Tekan <strong>Jana Bahan Semua Lesson</strong> untuk melihat bahan di bawah. Selepas mengajar, tekan <strong>Selesai PdP</strong> pada slot berkenaan.</p>
   <div class="daily-rph-toolbar">
     <div><label for="today-date">Tarikh PdP</label><input id="today-date" type="date" aria-label="Tarikh RPH Hari Ini"></div>
     <button type="button" id="today-refresh">Muat Semula Jadual</button>
@@ -2110,7 +2110,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
-<script src="/assets/rph-today.js?v=weekly-rpt-20261115"></script>
+<script src="/assets/rph-today.js?v=pdp-completion-20261115"></script>
 <script src="/assets/teacher-profile.js?v=manual-timetable-20261115"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>

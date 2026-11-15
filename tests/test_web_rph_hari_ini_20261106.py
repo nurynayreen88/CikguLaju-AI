@@ -1,6 +1,7 @@
 """RPH Hari Ini: shared timetable, strict authentication and native RPH-only handoff."""
 from copy import deepcopy
 from datetime import date
+from contextlib import ExitStack
 from pathlib import Path
 from unittest import TestCase
 from unittest.mock import patch
@@ -9,6 +10,8 @@ from flask import Flask, jsonify
 from web.rph_hari_ini_web import (
     bp, class_year, day_payload, subject_identity,
 )
+
+from web.rph_today_progress import attach_progress, lesson_signer
 
 ROOT=Path(__file__).resolve().parents[1]
 EXAMPLE={
@@ -128,7 +131,8 @@ class DailyTimetableRouteTests(TestCase):
         self.app=Flask(__name__)
         self.app.register_blueprint(bp)
         self.client=self.app.test_client()
-        self.conf={"supabase_url":"https://example.supabase.co","supabase_key":"secret"}
+        self.conf={"supabase_url":"https://example.supabase.co","supabase_key":"secret",
+                   "CIKGULAJU_WEB_SESSION_SECRET":"test-session-secret"}
 
     def test_authentication_required_before_reading_profile(self):
         with self.app.app_context():
@@ -144,11 +148,14 @@ class DailyTimetableRouteTests(TestCase):
         with patch("web.rph_hari_ini_web._auth",return_value=(self.conf,123,None)),patch(
             "web.rph_hari_ini_web.malaysia_today",return_value=date(2026,11,6)),patch(
             "web.rph_hari_ini_web.get_profile",return_value={"state_name":"Selangor"}) as profile,patch(
-            "web.rph_hari_ini_web.get_schedule",return_value=EXAMPLE) as schedule:
+            "web.rph_hari_ini_web.get_schedule",return_value=EXAMPLE) as schedule,patch(
+            "web.rph_hari_ini_web.read_progress",return_value=[]) as progress:
             reply=self.client.get("/api/web/rph/hari-ini")
         self.assertEqual(reply.status_code,200)
         self.assertEqual(reply.json["count"],3)
         self.assertEqual(reply.json["date"],"2026-11-06")
+        self.assertTrue(reply.json["progress_editable"])
+        progress.assert_called_once_with(self.conf,123,"2026-11-06")
         profile.assert_called_once_with(self.conf["supabase_url"],self.conf["supabase_key"],123)
         schedule.assert_called_once_with(self.conf["supabase_url"],self.conf["supabase_key"],123)
         self.assertEqual(reply.headers["Cache-Control"],"no-store, private")
@@ -160,6 +167,51 @@ class DailyTimetableRouteTests(TestCase):
                 with self.subTest(qs=qs):
                     self.assertEqual(self.client.get("/api/web/rph/hari-ini",
                                                       query_string=qs).status_code,400)
+
+    def test_completion_requires_owned_slot_current_date_and_signed_source_choice(self):
+        signed = lesson_signer(self.conf).dumps([123, 3, "ENGLISH", "", 11])
+        foreign = lesson_signer(self.conf).dumps([456, 3, "ENGLISH", "", 11])
+        body = {"date": "2026-11-06", "start": "10:30", "class_name": "3 Cemerlang",
+                "subject_code": "ENGLISH", "component": "", "token": signed}
+        with ExitStack() as stack:
+            for name, value in {"_auth": (self.conf, 123, None), "get_schedule": EXAMPLE,
+                                "get_profile": {"state_name": "Selangor"}, "read_progress": [],
+                                "malaysia_today": date(2026, 11, 6)}.items():
+                stack.enter_context(patch("web.rph_hari_ini_web." + name, return_value=value))
+            save = stack.enter_context(patch("web.rph_hari_ini_web.save_completion"))
+            path = "/api/web/rph/hari-ini/completion"
+            origin = {"Origin": "https://localhost"}
+            for change in ({"token": foreign}, {"token": "invalid"}, {"start": "10:00"},
+                           {"component": "PJ"}, {"date": "2026-11-13"}):
+                with self.subTest(change=change):
+                    self.assertEqual(self.client.post(path, json={**body, **change},
+                                                      headers=origin).status_code, 400)
+            self.assertEqual(self.client.post(path, json=body).status_code, 400)
+            save.assert_not_called()
+            self.assertEqual(self.client.post(path, json=body, headers=origin).status_code, 200)
+            self.assertEqual(save.call_args.args[4:], ("", 11))
+            self.assertEqual(self.client.post(path, json={**body, "token": None},
+                                              headers=origin).status_code, 200)
+            self.assertEqual(save.call_args.args[4:], ("", None))
+
+    def test_progress_respects_slot_order_class_and_pjpk_component(self):
+        def record(day, start, sequence, component="PJ", cls="3 cemerlang"):
+            return {"pdp_date": day, "start_time": start + ":00", "sequence_no": sequence,
+                    "subject_code": "PJPK", "class_key": cls, "component": component}
+
+        slots = [dict(EXAMPLE["entries"][0], subject="PJPK", start=start, end=end)
+                 for start, end in [("08:00", "08:30"), ("09:00", "09:30")]]
+        target = date(2026, 11, 6)
+        result = day_payload({}, {"entries": slots}, target, today=target)
+        attach_progress(result, [record("2026-11-05", "08:00", 3),
+                                 record("2026-11-06", "08:00", 4),
+                                 record("2026-11-06", "09:00", 9, "PK"),
+                                 record("2026-11-06", "08:00", 40, cls="3 amanah")])
+        first, second = (row["progress"] for row in result["entries"])
+        self.assertEqual(first, {"PJ": {"completed": 4, "previous": 3},
+                                 "PK": {"completed": None, "previous": None}})
+        self.assertEqual(second, {"PJ": {"completed": None, "previous": 4},
+                                  "PK": {"completed": 9, "previous": None}})
 
     def test_ui_routes_only_to_existing_native_selection_not_auto_generate(self):
         page=(ROOT/"web_v1_static_preview"/"index.html").read_text("utf-8")
@@ -180,7 +232,7 @@ class DailyTimetableRouteTests(TestCase):
         daily=(ROOT/"web_v1_static_preview"/"rph-today.js").read_text("utf-8")
         self.assertIn('id="today-generate-all" disabled>Jana Bahan Semua Lesson',page)
         self.assertIn('id="today-generate-status"',page)
-        self.assertIn('choices.push(makeChoice(slot,i,ticket))',daily)
+        self.assertIn('choices.push(makeChoice(slot,i,ticket,data.progress_editable))',daily)
         self.assertIn('void initialize(c)',daily)
         self.assertIn('stage(c,name,label)',daily)
         self.assertIn('"/api/options?"',daily)
