@@ -227,8 +227,8 @@
     },
     "pendidikan_islam:2": {
       "path": "pendidikan_islam/tahun_2.pdf",
-      "sha256": "4893e36b0f4ab880a2c5db9460a68118d7a2104927a9e0df32773d4a0f30f322",
-      "bytes": 403608,
+      "sha256": "1cabe2eff0044218b4ae05c6515675f1fe5c82ccbc797ebd099d0bac34110b97",
+      "bytes": 469230,
       "pages": 41,
       "status": "DRAF",
       "source_stage": "PI_JAWI_VERSE_ORDER_PR751_WITH_EXISTING_WEB_WEEK_PLAN",
