@@ -10190,7 +10190,39 @@ def _rph_display_value(s,key,value):
 
 def _rph_title(s): return 'DAILY LESSON PLAN' if _is_english_subject(s) else 'RANCANGAN PENGAJARAN HARIAN'
 def _create_rph_word(doc, section, s, ai_text, path):
+    from docx.enum.table import WD_TABLE_DIRECTION
+    from unicodedata import bidirectional
+
     rph = _rph_rows(s, ai_text)
+    is_pi = _pi_primary_v25210(s)
+
+    def format_jawi_paragraph(paragraph):
+        direction = next((bidirectional(char) for char in paragraph.text
+                          if bidirectional(char) in ('L', 'R', 'AL')), '')
+        if direction in ('R', 'AL'):
+            properties = paragraph._p.get_or_add_pPr()
+            properties.insert_element_before(OxmlElement('w:bidi'), 'w:spacing',
+                                             'w:ind', 'w:jc')
+        if paragraph.alignment != WD_ALIGN_PARAGRAPH.CENTER:
+            if direction in ('R', 'AL'):
+                properties.get_or_add_jc().set(qn('w:val'), 'start')
+            else:
+                paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        for run in paragraph.runs:
+            if not any(bidirectional(char) == 'AL' for char in run.text):
+                continue
+            run.font.name = 'Amiri'
+            properties = run._element.get_or_add_rPr()
+            properties.rFonts.set(qn('w:cs'), 'Amiri')
+            if run.font.size is not None:
+                size = OxmlElement('w:szCs')
+                size.set(qn('w:val'), str(round(run.font.size.pt * 2)))
+                properties.insert_element_before(size, 'w:highlight', 'w:u', 'w:rtl', 'w:cs', 'w:lang')
+            if run.bold:
+                properties.insert_element_before(OxmlElement('w:bCs'), 'w:i', 'w:iCs',
+                                                 'w:color', 'w:sz', 'w:szCs', 'w:rtl', 'w:lang')
+            if not any(bidirectional(char) == 'L' for char in run.text):
+                properties.get_or_add_rtl().val = True
     p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     rr = p.add_run(_rph_title(s)); rr.bold=True; rr.font.size=Pt(15)
     p.paragraph_format.space_after = Pt(6)
@@ -10212,17 +10244,28 @@ def _create_rph_word(doc, section, s, ai_text, path):
         value=(_rph_attendance_value(rph.get(label,'')) if label == 'BILANGAN MURID' else _rph_blank_or_value(rph.get(label,''))) if label in ('TARIKH','HARI','MASA','KELAS','BILANGAN MURID') else rph.get(label,''); add_row(table,_rph_display_label(s,label),_rph_display_value(s,label,value))
     doc.add_paragraph().paragraph_format.space_after=Pt(1)
     t2=doc.add_table(rows=1, cols=3); t2.alignment=WD_TABLE_ALIGNMENT.CENTER
-    for i,h in enumerate((['Phase / Time','Teaching and Learning Activities','Notes'] if _is_english_subject(s) else ['Fasa / Masa','Aktiviti Pengajaran & Pembelajaran','Catatan'])):
-        q=t2.rows[0].cells[i].paragraphs[0]; q.alignment=WD_ALIGN_PARAGRAPH.CENTER; z=q.add_run(h); z.bold=True
-    phases=([('Set Induction',rph.get('SET INDUKSI','')),('Main Activities',rph.get('AKTIVITI UTAMA','')),('Closure',rph.get('PENUTUP',''))] if _is_english_subject(s) else [('Set Induksi',rph.get('SET INDUKSI','')),('Aktiviti Utama',rph.get('AKTIVITI UTAMA','')),('Penutup',rph.get('PENUTUP',''))])
+    if is_pi:
+        headings = ('فاسا / ماس', 'اکتيۏيتي ڤڠاجرن دان ڤمبلاجرن', 'چاتتن')
+        phase_labels = ('ست ايندوکسي', 'اکتيۏيتي اوتام', 'ڤنوتوڤ')
+    elif _is_english_subject(s):
+        headings = ('Phase / Time', 'Teaching and Learning Activities', 'Notes')
+        phase_labels = ('Set Induction', 'Main Activities', 'Closure')
+    else:
+        headings = ('Fasa / Masa', 'Aktiviti Pengajaran & Pembelajaran', 'Catatan')
+        phase_labels = ('Set Induksi', 'Aktiviti Utama', 'Penutup')
+    for i, heading in enumerate(headings):
+        q = t2.rows[0].cells[i].paragraphs[0]
+        q.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        q.add_run(heading).bold = True
+    phases = zip(phase_labels, (rph.get(key, '') for key in ('SET INDUKSI', 'AKTIVITI UTAMA', 'PENUTUP')))
     for phase,text in phases:
         cells=t2.add_row().cells; cells[0].text=phase; cells[1].text=_rph_format_activity_lines(text) if text else '—'; cells[2].text=''
     for row in t2.rows:
         for c in row.cells:
             _word_set_cell_border(c, top={'val':'single','sz':'6','color':'666666'}, bottom={'val':'single','sz':'6','color':'666666'}, left={'val':'single','sz':'6','color':'666666'}, right={'val':'single','sz':'6','color':'666666'})
     t3=doc.add_table(rows=0, cols=2); t3.alignment=WD_TABLE_ALIGNMENT.CENTER
-    add_row(t3,('Remedial / Enrichment' if _is_english_subject(s) else 'Pemulihan / Pengayaan'),rph.get('PEMULIHAN / PENGAYAAN',''))
-    add_row(t3,('Reflection' if _is_english_subject(s) else 'Refleksi'),rph.get('REFLEKSI','') or ('____ / ____ pupils achieved the lesson objectives.\n____ / ____ pupils require further support.\nFollow-up action: ______________________________' if _is_english_subject(s) else '____ / ____ murid mencapai objektif.\n____ / ____ murid belum mencapai objektif.\nTindakan susulan: ______________________________'))
+    add_row(t3,('ڤموليهن / ڤڠاياءن' if is_pi else 'Remedial / Enrichment' if _is_english_subject(s) else 'Pemulihan / Pengayaan'),rph.get('PEMULIHAN / PENGAYAAN',''))
+    add_row(t3,('رفليكسي' if is_pi else 'Reflection' if _is_english_subject(s) else 'Refleksi'),rph.get('REFLEKSI','') or ('____ / ____ pupils achieved the lesson objectives.\n____ / ____ pupils require further support.\nFollow-up action: ______________________________' if _is_english_subject(s) else '____ / ____ murid mencapai objektif.\n____ / ____ murid belum mencapai objektif.\nTindakan susulan: ______________________________'))
     footer=section.footer; fp=footer.paragraphs[0]; fp.alignment=WD_ALIGN_PARAGRAPH.CENTER; fr=fp.add_run('CikguLaju AI  •  '); fr.font.size=Pt(7.5); _word_page_number(fp)
     # Compact the active (second) Word RPH renderer, preserving all content.
     from docx.oxml import OxmlElement
@@ -10268,6 +10311,17 @@ def _create_rph_word(doc, section, s, ai_text, path):
         for row in tbl.rows:
             for cell,width in zip(row.cells,(Cm(5.3),Cm(13.45))):
                 cell.width = width
+    if is_pi:
+        format_jawi_paragraph(p)
+        for tbl, widths in ((table, (5.3, 13.45)), (t2, (2.65, 12.65, 3.45)),
+                            (t3, (5.3, 13.45))):
+            tbl.table_direction = WD_TABLE_DIRECTION.RTL
+            for col, width in zip(tbl.columns, widths):
+                col.width = Cm(width)
+            for row in tbl.rows:
+                for cell in row.cells:
+                    for paragraph in cell.paragraphs:
+                        format_jawi_paragraph(paragraph)
     doc.save(path); return path
 
 def create_word_file(s, ai_text, cid):
