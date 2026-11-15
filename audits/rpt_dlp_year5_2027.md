@@ -1,0 +1,7 @@
+# RPT DLP Year 5 SK 2027
+
+- [Kalendar Akademik KPM 2027](https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik), Lampiran A–C. Jadual menggunakan 42 julat Kumpulan A dan B, bermula 4 Januari.
+- DSKP KSSR Semakan 2017 edisi Inggeris: [Science](https://sites.google.com/moe-dl.edu.my/sk-stan-portal-2026/fail-fail-panitia-2026/sains/dskp-sains) dan [Mathematics](https://sites.google.com/moe-dl.edu.my/panitiamathselute2025/utama/2-dokumen-standard-kurikulum-dan-pentaksiran). Semua 95 LS Science dan 72 LS Mathematics diliputi.
+- [E-Katalog Buku Teks KPM](https://moe.gov.my/storage/files/shares/Banner/E-Katalog%20Buku%20Teks%20KPM.pdf) mengenal pasti [Science BT075003](https://sites.google.com/moe-dl.edu.my/ppd-batu-pahat-sains-matematik/buku-teks-digital-bidang-sains-matematik/buku-teks-sekolah-rendah/sains-tahun-5), ISBN 978-983-49-2952-7, dan [Mathematics BT085003](https://anyflip.com/dswck/pcag/basic/), ISBN 978-983-49-2951-0. Rujukan menggunakan nombor halaman bercetak edisi DBP 2020.
+- Science: 60 Lesson (95 LS), 10 sesi ulang kaji, 64 jam. Mathematics: 61 Lesson (72 LS), 8 sesi ulang kaji, 96 jam. Setiap baris menyatakan bukti pembelajaran untuk PBD dan rujukan halaman. Eksperimen pengaratan bermula dalam julat mengajar sebelum sesi tafsiran hasilnya.
+- Nombor Lesson, jumlah minit, 42 julat tarikh, muka depan Year 5 dan saiz A4 landskap telah disemak. Science mempunyai tujuh halaman dan Mathematics lapan halaman dalam kedua-dua format.
