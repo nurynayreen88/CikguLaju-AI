@@ -1,0 +1,191 @@
+# Bahasa Kadazandusun KSSR Tahun 2
+
+**DALAM SEMAKAN.** Pemetaan sumber bagi 12 unit dan halaman cetak 1–114.
+
+- [Buku teks Bahasa Kadazandusun Tahun 2](https://fliphtml5.com/bbsbl/yuwx/Bahasa_Kadazandusun_Tahun_2/). Nombor paparan flipbook untuk halaman kandungan ialah halaman cetak tambah 8.
+- [Indeks DSKP SK Tahun 2](https://sites.google.com/moe-dl.edu.my/sigujin/lain-lain/dskp/dskp-sekolah-rendah/dskp-sk-tahun-2) dan [Dokumen Penjajaran Kurikulum 2.0](https://www.tcer.my/wp-content/uploads/2021/01/19_DPK-2.0-Bahasa-Kadazandusun-Tahun-2.pdf). Padanan semakan silang menggunakan kod SP induk DPK 2.0. Pengesahan takrif dan pecahan SP masih perlu dibuat dengan DSKP asal.
+- [E-Katalog Buku Teks KPM](https://moe.gov.my/storage/files/shares/Banner/E-Katalog%20Buku%20Teks%20KPM.pdf), halaman cetak 30. Kod DBP bagi buku teks ialah `BT222003` dan bagi Buku Aktiviti ialah `BA222001`.
+
+Semakan struktur meliputi 114 halaman, 61 kod SP induk daripada buku teks dan 53 rujukan trek unik. 61 kod SP induk turut ditemui dalam DPK 2.0. Ekstrak DPK memisahkan digit dalam kod 1.4.1 dan 3.2.2. Kedua-duanya disemak pada baris jadual berkaitan. Bagi ms. 29, 36, 50, 69, 78, 81 dan 99, jadual mengindeks rujukan yang kelihatan dan meninggalkan ruang SP kosong.
+
+## Tema 1 — Winoun Sondii
+
+### Unit 1 — Sikul Koupusan
+
+| Buku teks (ms.) | SK | SP tercetak | Buku Aktiviti (ms.) | Trek audio |
+| ---: | --- | --- | ---: | --- |
+| 1 | 1.1 / 1.2 | 1.1.1 / 1.2.1 (i), (ii) | 1 | 1, 2 |
+| 2 | 1.3 | 1.3.1 (i) (a), (b) |  | 3 |
+| 3 | 2.1 | 2.1.1 (i) | 2 | 4 |
+| 4 | 2.1 / 2.2 | 2.1.2 (iv) / 2.2.2 (iii) |  |  |
+| 5 | 2.3 / 1.5 | 2.3.4 (v), (a), (c) / 1.5.1 (ii), (b) | 3 | 5 |
+| 6 | 5.1 / 2.2 | 5.1.1 (i), (ii) / 2.2.1 (i), (ii) | 4 |  |
+| 7 | 3.1 | 3.1.2 (iii) | 5 |  |
+| 8 | 4.2 / 2.3 | 4.2.1 (iii), (b) / 2.3.2 (i) | 6 | 6, 7 |
+
+### Unit 2 — Sikul ku Lamin ku
+
+| Buku teks (ms.) | SK | SP tercetak | Buku Aktiviti (ms.) | Trek audio |
+| ---: | --- | --- | ---: | --- |
+| 9 | 1.1 / 1.2 / 1.3 | 1.1.2 (iii) / 1.2.3 (i) / 1.3.1 (i:b) |  |  |
+| 10 | 1.5 | 1.5.3 (iv), (i) | 7 |  |
+| 11 | 2.1 / 2.2 | 2.1.3 (i), (ii) / 2.2.2 (iii) / 2.2.3 (i), (ii) | 8 | 8 |
+| 12 | 2.3 / 2.4 | 2.3.1(ii) / 2.4.4 | 9 |  |
+| 13 | 5.2 | 5.2.1 (i) | 10 |  |
+| 14 | 5.3 / 5.2 | 5.3.2 (i), (ii) / 5.2.1 (i) | 11 |  |
+| 15 | 3.1 / 3.3 | 3.1.5 (i), (ii), (iii) / 3.3.5 (i) | 12 |  |
+| 16 | 4.2 | 4.2.1 |  | 9 |
+
+### Unit 3 — Piobpinayan
+
+| Buku teks (ms.) | SK | SP tercetak | Buku Aktiviti (ms.) | Trek audio |
+| ---: | --- | --- | ---: | --- |
+| 17 | 1.5 | 1.5.1(i) | 13 | 10 |
+| 18 | 1.1 / 1.2 | 1.1.2 (v) / 1.2.2 (v) | 13 |  |
+| 19 | 2.1 / 2.2 | 2.1.2 (v) / 2.2.2 (v) | 14 |  |
+| 20 | 2.2 | 2.2.5 (iii) / 2.2.2 (v) | 15 |  |
+| 21 | 5.2 / 5.3 | 5.2.1 (ii) / 5.3.1 (v) | 16 |  |
+| 22 | 3.2 | 3.2.2 (i) | 17 |  |
+| 23 | 3.1 | 3.1.3 / 3.1.2 (v) |  |  |
+| 24 | 4.2 | 4.2.1 (iii), (a) | 18 | 11, 12 |
+
+### Unit 4 — Boogian Tinan
+
+| Buku teks (ms.) | SK | SP tercetak | Buku Aktiviti (ms.) | Trek audio |
+| ---: | --- | --- | ---: | --- |
+| 25 | 1.1 / 1.2 | 1.1.2 (iv) / 1.2.2 (iv) |  |  |
+| 26 | 1.3 / 1.5 | 1.3.1 (ii)(a) / 1.5.1 (i)(b) |  | 13 |
+| 27 | 2.1 / 2.2 | 2.1.2(iv) / 2.2.2(iv) | 19 | 14 |
+| 28 | 2.2 / 1.5 | 2.2.4 (i) / 1.5.3 (iii) |  | 15 |
+| 29 |  |  | 20 |  |
+| 30 | 5.1 | 5.1.2 / 5.1.3 |  | 16, 17, 5 |
+| 31 | 5.2 | 5.2.1 (iii) | 21 | 18 |
+| 32 | 3.1 | 3.1.2 (iv) | 22 |  |
+| 33 | 3.2 | 3.2.1 | 23 | 19, 20 |
+| 34 | 4.2 | 4.2.2 / 4.2.1 | 24 |  |
+
+## Tema 2 — Winoun Toilaan
+
+### Unit 5 — Timpu Kohiok
+
+| Buku teks (ms.) | SK | SP tercetak | Buku Aktiviti (ms.) | Trek audio |
+| ---: | --- | --- | ---: | --- |
+| 35 | 1.2 / 1.1 | 1.2.2 (i) / 1.1.2 (i) | 25 | 21 |
+| 36 |  |  |  |  |
+| 37 | 2.1 | 2.1.2(i) | 26 |  |
+| 38 | 2.2 / 3.3 | 2.2.5 (iv) / 3.3.1 | 27 | 22 |
+| 39 | 5.3 / 2.2 | 5.3.1 (i) / 2.2.2 (i) |  | 23 |
+| 40 | 5.2 | 5.2.1 (i) |  |  |
+| 41 | 5.2 | 5.2.2 | 28 |  |
+| 42 | 3.1 | 3.1.4 | 29 |  |
+| 43 | 3.3 | 3.3.4 | 30 |  |
+| 44 | 4.2 / 1.3 | 4.2.1 (i) / 1.3.1 (ii)(d) |  | 24 |
+
+### Unit 6 — Bontuk
+
+| Buku teks (ms.) | SK | SP tercetak | Buku Aktiviti (ms.) | Trek audio |
+| ---: | --- | --- | ---: | --- |
+| 45 | 1.1 / 1.2 | 1.1.2 (ii) / 1.2.2 (ii) | 31 | 25 |
+| 46 | 1.5 / 1.3 | 1.5.3 (ii), (a) / 1.3.1 (ii), (e) | 31 |  |
+| 47 | 2.1 / 2.2 | 2.1.2 (ii) / 2.2.2 (ii) | 32 |  |
+| 48 | 2.2 | 2.2.5 (vii), (a) / 2.2.4 (i), (iii) | 33 | 26 |
+| 49 | 5.1 / 5.3 | 5.1.3 / 5.3.1 (ii) | 34 |  |
+| 50 |  |  |  | 27 |
+| 51 | 3.2 | 3.2.2 (i), (b) | 35 |  |
+| 52 | 3.2 | 3.2.2 (i), (b) |  |  |
+| 53 | 4.4 | 4.4.1 (ii) | 36 |  |
+| 54 | 4.4 | 4.4.2 | 36 |  |
+
+### Unit 7 — Suang Lamin
+
+| Buku teks (ms.) | SK | SP tercetak | Buku Aktiviti (ms.) | Trek audio |
+| ---: | --- | --- | ---: | --- |
+| 55 | 1.2 / 1.1 | 1.2.2 (vi) / 1.1.2 (vi) | 37 |  |
+| 56 | 1.3 / 1.5 | 1.3.2 (i) / 1.5.2 (i) |  |  |
+| 57 | 2.3 | 2.3.2 (ii) | 38 | 28 |
+| 58 | 2.1 / 2.2 | 2.1.2 (vi) / 2.2.2 (vi) |  |  |
+| 59 | 2.1 / 2.4 | 2.1.2 (vi) / 2.4.2 / 2.4.4 |  | 29 |
+| 60 | 5.6 / 5.3 | 5.6.1 (i) / 5.3.1 (vi) | 39 |  |
+| 61 | 3.1 | 3.1.2 (vi) | 40 |  |
+| 62 | 3.3 | 3.3.3 (i) | 41 |  |
+| 63 | 4.1 | 4.1.1 (i) |  | 30 |
+| 64 | 4.1 | 4.1.1 (i) | 42 |  |
+
+### Unit 8 — Lamin ku
+
+| Buku teks (ms.) | SK | SP tercetak | Buku Aktiviti (ms.) | Trek audio |
+| ---: | --- | --- | ---: | --- |
+| 65 | 1.2 | 1.2.2 (vi) |  |  |
+| 66 | 1.5 | 1.5.2 (ii) |  | 31 |
+| 67 | 2.2 | 2.2.2 (vi) | 43 |  |
+| 68 | 2.3 / 2.2 | 2.3.2 (i) / 2.2.5 (vi) | 44 | 32 |
+| 69 |  |  |  |  |
+| 70 | 5.4 | 5.4.3 | 46 | 33 |
+| 71 | 3.1 | 3.1.2 (vi) | 47 |  |
+| 72 | 3.2 | 3.2.4 (iv) |  |  |
+| 73 | 4.1 | 4.1.1 (ii) |  |  |
+| 74 | 4.1 | 4.1.1 (ii) | 48 |  |
+
+## Tema 3 — Winoun Susuyan
+
+### Unit 9 — Tadau Sominggu
+
+| Buku teks (ms.) | SK | SP tercetak | Buku Aktiviti (ms.) | Trek audio |
+| ---: | --- | --- | ---: | --- |
+| 75 | 1.2 | 1.2.2 (vii) | 49 | 34, 35 |
+| 76 | 1.3 | 1.3.1 (ii)(d) |  | 36 |
+| 77 | 2.1 / 1.3 | 2.1.2 (vii) / 1.3.3 | 50 |  |
+| 78 |  |  |  | 37 |
+| 79 | 2.2 / 2.1 | 2.2.5 (vi) / 2.1.2 (vii) / 2.2.2 (vii) | 51 |  |
+| 80 | 2.3 | 2.3.1 (iii) | 52 |  |
+| 81 |  |  |  |  |
+| 82 | 5.4 | 5.4.1 (i), (ii) | 53 |  |
+| 83 | 3.3 / 1.3 | 3.3.3 (i) / 1.3.4 |  | 38 |
+| 84 | 4.4 / 1.3 | 4.4.2 (i) / 4.4.1 (i) / 1.3.2 (iii) | 54 | 39 |
+
+### Unit 10 — Koua’an
+
+| Buku teks (ms.) | SK | SP tercetak | Buku Aktiviti (ms.) | Trek audio |
+| ---: | --- | --- | ---: | --- |
+| 85 | 1.2 | 1.2.2 (viii) | 55 |  |
+| 86 | 1.5 | 1.5.2 (ii) |  |  |
+| 87 | 2.3 | 2.3.3 (i) | 56 |  |
+| 88 | 2.4 | 2.4.4 | 56 |  |
+| 89 | 5.4 / 5.1 | 5.4.4 (i) / 5.1.3 | 58 |  |
+| 90 | 5.4 | 5.4.2 (i), (ii) | 58 |  |
+| 91 | 3.1 / 3.3 | 3.1.2 (viii) / 3.3.5 (iii) | 59 | 40, 41 |
+| 92 | 4.1 | 4.1.2 (i) |  |  |
+| 93 | 4.1 | 4.1.2 |  | 42, 43 |
+| 94 | 4.1 | 4.1.3 | 60 |  |
+
+### Unit 11 — Kinotuan Ku
+
+| Buku teks (ms.) | SK | SP tercetak | Buku Aktiviti (ms.) | Trek audio |
+| ---: | --- | --- | ---: | --- |
+| 95 | 1.1 / 1.2 | 1.1.2 (ix) / 1.2.2 (ix) |  | 44 |
+| 96 | 2.2 | 2.2.2 (ix) / 2.2.4 (i), (ii) | 61 |  |
+| 97 | 2.2 / 2.3 | 2.2.5 (i) / 2.3.1 (i) | 62 | 45 |
+| 98 | 2.4 / 1.3 | 2.4.4 / 1.3.3 | 63 | 46 |
+| 99 |  |  |  | 47 |
+| 100 | 5.6 / 5.5 | 5.6.1 (ii) / 5.5.2 | 64 |  |
+| 101 | 5.4 | 5.4.4 (i), (iii) | 66 | 48 |
+| 102 | 3.2 | 3.2.2 (ii)(a), (b) | 67 | 49 |
+| 103 | 4.2 | 4.2.2 | 68 |  |
+| 104 | 4.3 | 4.3.1 (ii) |  | 50 |
+
+### Unit 12 — Kinotuan Talun
+
+| Buku teks (ms.) | SK | SP tercetak | Buku Aktiviti (ms.) | Trek audio |
+| ---: | --- | --- | ---: | --- |
+| 105 | 1.1 / 1.2 | 1.1.2 (ix) / 1.2.2 (ix) | 69 |  |
+| 106 | 1.5 / 1.4 | 1.5.3 (i) / 1.4.1 | 70 |  |
+| 107 | 2.1 | 2.1.2 (ix) | 71 | 51 |
+| 108 | 2.3 / 2.2 | 2.3.4 (iii) / 2.2.2 (ix) | 72 | 52 |
+| 109 | 2.3 | 2.3.4 (iii) |  |  |
+| 110 | 5.5 | 5.5.1 | 73 |  |
+| 111 | 3.2 | 3.2.3 |  |  |
+| 112 | 3.1 / 2.2 / 2.4 | 3.1.2 (ix) / 2.2.2 (ix) / 2.4.2 | 74 |  |
+| 113 | 4.1 | 4.1.1 (ii) | 75 |  |
+| 114 | 4.2 | 4.2.1 (ii) | 76 | 53 |
+
+Susulan penyediaan bahan meliputi semakan RPT sekolah dan DSKP asal, fail Buku Aktiviti serta padanan audio sebenar sebelum membina RPT 2027 dan RPH.
