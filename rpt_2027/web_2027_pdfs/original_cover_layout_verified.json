@@ -472,5 +472,49 @@
       "sains_sjkc:5": "944096d157df146865beff16d38093786195a1705a5a7719a031fcad198c6169",
       "sains_sjkc:6": "1b9c5ad962ca1026df1129a6334dbb8683aa97609e6203d3180c0e47c4b8eb57"
     }
+  },
+  "sjkc_matematik": {
+    "version": 1,
+    "status": "SJKC_MATEMATIK_PDF_COVER",
+    "page_width": 841.89,
+    "page_height": 595.3,
+    "tolerance_pt": 0.25,
+    "identity_background_rgb": [
+      1,
+      1,
+      1
+    ],
+    "logo_background_rgb": [
+      1,
+      1,
+      1
+    ],
+    "logo_interior_top_left": [
+      658.2,
+      327,
+      793.2,
+      408.5
+    ],
+    "logo_image_safe_top_left": [
+      664,
+      333,
+      787,
+      403
+    ],
+    "school_row_top_left": [
+      119,
+      272,
+      433,
+      288
+    ],
+    "teacher_row_top_left": [
+      115,
+      300,
+      429,
+      316
+    ],
+    "source_sha256_by_subject_year": {
+      "matematik_sjkc:2": "e06a4a35b6b310862b8ced238d0bb877ceae860e24dfd06f8789c54add240e54"
+    }
   }
 }
