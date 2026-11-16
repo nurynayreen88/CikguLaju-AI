@@ -420,9 +420,9 @@
     "source_sha256_by_subject_year": {
       "bahasa_melayu_sjk:2": "16144c797668740ade48cdd03e2424f6bbe08cf4c5043801faca547d74481fd7",
       "bahasa_melayu_sjk:3": "5ba1fe3d5bc136c3cbac3f89fe0ce9fd0517858fd293ece9dea8e9578d2ea363",
-      "bahasa_melayu_sjk:4": "004517e70096d0df9047577cf3eaaf3c1fca0c620f3fd82df8dbc17238614227",
-      "bahasa_melayu_sjk:5": "446f001d49fc18592fb438819d7a8b7c5f8c745a75f05a3c485d9e3477469493",
-      "bahasa_melayu_sjk:6": "42add0a7b82c86e5c40351f209587cf28d0563a96fe99d323d9be2ae5f5caa20"
+      "bahasa_melayu_sjk:4": "e8650319383fcd3bb00e98d6441e8066b3ef96894ee02e5ea1df2598e0ccc2ca",
+      "bahasa_melayu_sjk:5": "a51e8dd9af0ccd7a7468eeadc98b125e1d7548dd98e293266802483e57223965",
+      "bahasa_melayu_sjk:6": "2d730bd8b550934a00c78ed637f38a27083eb16255ede63288739e926ae1c428"
     }
   },
   "sjkc_sains": {
@@ -466,11 +466,11 @@
       316
     ],
     "source_sha256_by_subject_year": {
-      "sains_sjkc:2": "aeb80d363c15dc1d07a2e7c1722792373a2e35be5d5aa0919fae6aa714fe7cf2",
-      "sains_sjkc:3": "43a1c51f3575c7c31cab570cc9d86e6386f4f1f5fd633620ba0dd726b4b97a9d",
-      "sains_sjkc:4": "b5985eb682f5cb7f77b562f9031e763e8191ac70041daf7e95bd7f5e51a5ff51",
-      "sains_sjkc:5": "1c3a05d9eda61bf48243ce58df32beb680a170824aaf1838428982899249c9d5",
-      "sains_sjkc:6": "2bc6bf79bee9382293d52e7090428bf82bdac4310e1fa39f381159fc7ca4764c"
+      "sains_sjkc:2": "2998121c4c22d3bf106f8ec9682fcaaa1e0c55a4379b8884501570477ec79dfe",
+      "sains_sjkc:3": "56df8250a21dc58d3fb712af0ece77f721933c7643713ac570e2fe117c1cf6a7",
+      "sains_sjkc:4": "522ddbe21af9a8f55144a7cfb9031325e22f0ec4de6548cae174235170a982c9",
+      "sains_sjkc:5": "bf6a50acf37f550aedb858a2880d2d1d14944de7224f8fdef603d05abf329417",
+      "sains_sjkc:6": "e7f641f5dd1e2690dc8390089adae32c82ad5231b100aee516a0ef99ff980a81"
     }
   },
   "sjkc_matematik": {
@@ -514,7 +514,7 @@
       316
     ],
     "source_sha256_by_subject_year": {
-      "matematik_sjkc:2": "02a85030cc42eb7625aca754c84bf86bd61f14be074bee335f74bc878e31ef4f"
+      "matematik_sjkc:2": "792c840fbe03e4c7381581c6afbf71cddce4c4999b23913a4075df8d21e10e5b"
     }
   }
 }
