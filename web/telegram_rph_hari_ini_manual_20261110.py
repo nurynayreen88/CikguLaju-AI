@@ -6,12 +6,78 @@ entitlement path and never record a progress checkpoint for a failed delivery.
 from __future__ import annotations
 
 import html
+from datetime import datetime
 from pathlib import Path
+import re
 from tempfile import TemporaryDirectory
+from zoneinfo import ZoneInfo
+
+from web.school_days_2027 import normalize_state
+
+
+def _english_year(rt, cid, class_name):
+    record = rt._profile_class_record(cid, class_name) or {}
+    label = record.get("year_label") or record.get("year")
+    if label:
+        return rt._english_primary_year_number_v2517(label)
+    match = re.match(r"^(?:(?:tahun|year|t)\s*)?([1-6])(?=$|[\s/._-]|[A-Za-z])",
+                     class_name.strip(), flags=re.IGNORECASE)
+    return int(match[1]) if match else None
+
+
+def _candidate_english_2027(rt, cid, entry, today, year, integrated):
+    profile = rt._teacher_profile(cid) or {}
+    state = normalize_state(profile.get("state_name"))
+    if state is None:
+        return None, "english_2027_state_missing"
+    sessions = integrated.teaching_week(year, state, today)
+    if not sessions:
+        return None, "english_2027_no_teaching_session"
+    subjects, reason = rt._subject_alias_candidates_v25294(cid, entry)
+    subjects = [name for name in subjects
+                if rt._norm_subject_v2393(name) in {"english", "bahasainggeris"}]
+    if not subjects:
+        return None, reason
+    for subject in subjects:
+        progress = rt._get_rph_progress_v25274(cid, entry["class_name"], subject)
+        if progress:
+            timestamp = progress.get("last_success_at") or progress.get("updated_at")
+            if isinstance(timestamp, str) and timestamp:
+                try:
+                    saved = datetime.fromisoformat(timestamp)
+                except ValueError:
+                    saved = None
+                if saved is not None:
+                    if saved.tzinfo is not None:
+                        saved = saved.astimezone(ZoneInfo("Asia/Kuala_Lumpur"))
+                    if saved.year < today.year:
+                        continue
+            row = rt._resolve_next_curriculum_v25276(cid, entry["class_name"], subject, progress)
+            number = (rt._checkpoint_no_v25276(row) or 0) if row else 0
+            if not 1 <= number <= 160:
+                return None, "checkpoint_unresolved"
+            year_label = row.get("year_label") or row.get("year")
+            if year_label and rt._english_primary_year_number_v2517(year_label) != year:
+                return None, "checkpoint_unresolved"
+            source = "checkpoint"
+            break
+    else:
+        subject = subjects[0]
+        number = sessions[0][0]
+        row = rt._resolve_next_english_v25276(f"Tahun {year}", number - 1)
+        if row is None or str(row.get("_sequence_no")) != str(number):
+            return None, "english_2027_exact_lesson_unavailable"
+        source = "calendar_english_2027"
+
+    return {
+        **row, "_sequence_no": number, "_resolved_subject_v25294": subject,
+        "_english_2027_date": today.isoformat(),
+        "_english_2027_pair": integrated.pair_numbers(year, number),
+    }, source
 
 
 def _integrated_plan(rt, cid, entry, row):
-    subject = str(entry.get("subject", "")).casefold()
+    subject = " ".join(str(entry.get("subject") or "").casefold().split())
     if subject not in {"english", "bahasa inggeris", "bi"}:
         return None
     from web import english_integrated_rph_2027 as integrated
@@ -21,10 +87,8 @@ def _integrated_plan(rt, cid, entry, row):
     if today.year != 2027 or not integrated.one_hour(entry.get("start"), entry.get("end")):
         return None
     year_label = row.get("year_label") or row.get("year")
-    if not year_label:
-        profile = rt._profile_class_record(cid, entry["class_name"]) or {}
-        year_label = profile.get("year_label") or profile.get("year")
-    year = rt._english_primary_year_number_v2517(year_label)
+    year = (rt._english_primary_year_number_v2517(year_label) if year_label
+            else _english_year(rt, cid, entry["class_name"]))
     raw = row.get("_sequence_no") or row.get("lesson_no")
     try:
         number = int(raw)
@@ -80,6 +144,19 @@ def install(rt):
     if not isinstance(getattr(rt, "state", None), dict):
         return False
     old_callback = rt.callback
+    old_candidate = rt._daily_candidate_v25292
+
+    def daily_candidate(cid, entry):
+        subject = " ".join(str(entry.get("subject") or "").casefold().split())
+        if subject in {"english", "bahasa inggeris", "bi"}:
+            from web import english_integrated_rph_2027 as integrated
+            if integrated.enabled():
+                today = integrated.teaching_date()
+                if today.year == 2027 and integrated.one_hour(entry.get("start"), entry.get("end")):
+                    year = _english_year(rt, cid, entry["class_name"])
+                    if year in range(2, 7):
+                        return _candidate_english_2027(rt, cid, entry, today, year, integrated)
+        return old_candidate(cid, entry)
 
     def timetable(cid, note=""):
         entries = rt._timetable_entries(cid)
@@ -122,7 +199,7 @@ def install(rt):
                   str(e.get("end") or ""), str(e.get("class_name") or ""),
                   str(e.get("subject") or "")) for _i, e in current_rows}
         results = []
-        seen_slots, successful_lessons = set(), set()
+        seen_slots, successful_lessons, english_classes = set(), set(), set()
         try:
             for item in selected:
                 entry = dict(item.get("entry") or {})
@@ -139,6 +216,14 @@ def install(rt):
                 if not row:
                     results.append((entry, False, source))
                     continue
+                if (item.get("row") or {}).get("_english_2027_date") != row.get("_english_2027_date"):
+                    results.append((entry, False, "Cadangan telah berubah. Semak RPH Hari Ini semula."))
+                    continue
+                if row.get("_english_2027_date"):
+                    cls_key = " ".join(str(entry.get("class_name") or "").casefold().split())
+                    if cls_key in english_classes:
+                        results.append((entry, False, "Satu sesi English telah dihantar untuk kelas ini hari ini."))
+                        continue
                 subj = str(row.get("_resolved_subject_v25294") or entry.get("subject") or "")
                 canonical = rt._entry_with_subject_v25294(entry, subj)
                 seq = str(row.get("_sequence_no") or row.get("lesson_no") or row.get("sequence_no") or "")
@@ -156,7 +241,7 @@ def install(rt):
                             continue
                         if integrated_plan:
                             outcome = _generate_integrated(rt, cid, canonical, row, integrated_plan)
-                        elif source == "checkpoint":
+                        elif source == "checkpoint" and not row.get("_english_2027_date"):
                             outcome = rt._generate_one_quick_rph_v25278(cid, canonical)
                         else:
                             outcome = rt._generate_calendar_row_v25293(cid, canonical, row)
@@ -167,6 +252,8 @@ def install(rt):
                     ss.pop("_rph_hari_ini_delivery_guard_20261110", None)
                 if outcome.get("ok"):
                     successful_lessons.add(lesson_key)
+                    if row.get("_english_2027_date"):
+                        english_classes.add(cls_key)
                 results.append((canonical, bool(outcome.get("ok")),
                                 str(outcome.get("reason") or "")))
         finally:
@@ -223,6 +310,15 @@ def install(rt):
         return result
 
     rt._send_document_before_v25277 = delivery_guard
+    rt._daily_candidate_v25292 = daily_candidate
+    previous_summary = getattr(rt, "_next_curriculum_summary_v25276", None)
+    if callable(previous_summary):
+        def daily_summary(row):
+            pair = (row or {}).get("_english_2027_pair")
+            if pair:
+                return f"Lesson {pair[0]:03d} + {pair[1]:03d} • Satu RPH"
+            return previous_summary(row)
+        rt._next_curriculum_summary_v25276 = daily_summary
     if callable(getattr(rt, "_handle_timetable_upload_v25281", None)):
         def no_reader(cid, message):
             rt.state.setdefault(cid, {}).pop("waiting", None)

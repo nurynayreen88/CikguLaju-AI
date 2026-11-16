@@ -15,7 +15,8 @@ from reportlab.lib.units import mm
 from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer
 
 from tools.build_english_paired_rph_2027 import INK, TEAL, make_sheet, paired_plan_index
-from tools.build_english_rpt_2027_review import PAIR_PLAN
+from tools.build_english_rpt_2027_review import CALENDAR, PAIR_PLAN, schedule
+from web.school_days_2027 import FRI_SAT, is_school_day
 
 
 def enabled():
@@ -38,6 +39,27 @@ def pair_numbers(year, number):
 
 def teaching_date():
     return datetime.now(ZoneInfo("Asia/Kuala_Lumpur")).date()
+
+
+@lru_cache(maxsize=1)
+def _calendar():
+    return json.loads(CALENDAR.read_text())["minggu"]
+
+
+@lru_cache(maxsize=5)
+def _schedule(year):
+    return {week: sessions for week, _, _, sessions in schedule(year)}
+
+
+def teaching_week(year, state, target):
+    if year not in range(2, 7) or target.year != 2027 or not is_school_day(state, target):
+        return ()
+    group = "A" if state in FRI_SAT else "B"
+    for row in _calendar():
+        start, end = map(date.fromisoformat, row[group])
+        if start <= target <= end:
+            return _schedule(year)[row["minggu"]]
+    return ()
 
 
 def one_hour(start, end):

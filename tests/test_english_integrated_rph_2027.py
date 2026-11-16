@@ -1,4 +1,5 @@
 import os
+from datetime import date
 from pathlib import Path
 from types import SimpleNamespace
 from unittest import TestCase
@@ -9,7 +10,7 @@ from flask import Flask
 
 from web.english_integrated_rph_2027 import render
 from web.native_rph_telegram_api import create_native_rph_blueprint
-from web.telegram_rph_hari_ini_manual_20261110 import _generate_integrated
+from web.telegram_rph_hari_ini_manual_20261110 import _generate_integrated, install
 
 
 class IntegratedRPHTests(TestCase):
@@ -49,7 +50,6 @@ class IntegratedRPHTests(TestCase):
             self.assertEqual(client.post(path, json=wrong_time, headers=headers).status_code, 400)
 
     def test_telegram_checkpoint_uses_end_of_pair_after_confirmed_send(self):
-        from datetime import date
         rt = SimpleNamespace(state={7: {"old": True}})
         sent, charges = [], []
         def prepare(cid, entry, row):
@@ -70,6 +70,65 @@ class IntegratedRPHTests(TestCase):
         self.assertEqual(charges, [True])
         self.assertEqual(sent, [(14, "RPH_English_SK_2027_Y3_L013-014.pdf")] * 2)
         self.assertEqual(rt.state[7], {"old": True})
+
+    def test_daily_menu_bootstraps_exact_pair_and_rechecks_stale_preview(self):
+        slot = {"class_name": "3 Amanah", "subject": "English", "day": "Isnin",
+                "start": "08:00", "end": "09:00"}
+        rt = SimpleNamespace(state={}, menu=lambda cid: None, callback=lambda *args: None)
+        rt.send = lambda *args: args[1]
+        rt._timetable_entries = lambda cid: [slot]
+        rt._today_rows_v25272 = lambda cid: ("Isnin", [(0, slot)])
+        rt._entry_with_subject_v25294 = lambda entry, subject: {**entry, "subject": subject}
+        rt._daily_candidate_v25292 = lambda *args: (None, "legacy")
+        rt._next_curriculum_summary_v25276 = lambda row: "Legacy summary"
+        rt._generate_one_quick_rph_v25278 = lambda *args: self.fail("Unexpected legacy generation")
+        rt._generate_calendar_row_v25293 = lambda *args: self.fail("Unexpected unpaired generation")
+        rt._telegram_delivery_ok_v25279 = lambda result: result
+        rt._send_document_before_v25277 = lambda *args: True
+        rt._profile_class_record = lambda *args: {}
+        rt._teacher_profile = lambda cid: {"state_name": "Selangor"}
+        rt._subject_alias_candidates_v25294 = lambda *args: (["English"], "")
+        rt._norm_subject_v2393 = str.casefold
+        rt._get_rph_progress_v25274 = lambda *args: {}
+        rt._checkpoint_no_v25276 = lambda row: row["_sequence_no"]
+        rt._resolve_next_curriculum_v25276 = lambda *args: {"_sequence_no": 3, "year": "Year 3"}
+        rt._english_primary_year_number_v2517 = lambda year: int(year.split()[-1])
+        rt._resolve_next_english_v25276 = lambda year, last: {"_sequence_no": last + 1, "year": year}
+        def preview(cid):
+            row, source = rt._daily_candidate_v25292(cid, slot)
+            rt.state.setdefault(cid, {})["_daily_suggestions_v25292"] = [
+                {"entry": slot, "row": row, "source": source}] if row else []
+            return rt._next_curriculum_summary_v25276(row) if row else source
+        rt._today_rpt_suggestions_v25292 = preview
+        self.assertTrue(install(rt))
+        module = "web.english_integrated_rph_2027"
+        with patch(module + ".enabled", return_value=True), patch(module + ".teaching_date") as now, \
+                patch("web.telegram_rph_hari_ini_manual_20261110._generate_integrated",
+                      return_value={"ok": True}) as generate:
+            now.return_value = date(2027, 1, 4)
+            self.assertEqual(rt.callback(7, "todayrph272"), "Lesson 001 + 002 • Satu RPH")
+            self.assertIn("1/1", rt.callback(7, "daily292_generate"))
+            self.assertEqual(generate.call_args.args[-1][-1], (1, 2))
+
+            rt.callback(7, "todayrph272")
+            now.return_value = date(2027, 1, 5)
+            self.assertIn("Cadangan telah berubah", rt.callback(7, "daily292_generate"))
+            self.assertEqual(generate.call_count, 1)
+
+            for closed in (date(2027, 2, 8), date(2027, 3, 8), date(2027, 10, 27),
+                           date(2027, 11, 1)):
+                now.return_value = closed
+                self.assertEqual(rt.callback(7, "todayrph272"), "english_2027_no_teaching_session")
+
+            now.return_value = date(2027, 1, 4)
+            rt._get_rph_progress_v25274 = lambda *args: {"last_success_at": "2027-01-03T18:00:00+00:00"}
+            row, source = rt._daily_candidate_v25292(7, slot)
+            self.assertEqual((row["_sequence_no"], source), (3, "checkpoint"))
+            rt._get_rph_progress_v25274 = lambda *args: {"last_success_at": "2026-11-20T00:00:00+00:00"}
+            self.assertEqual(rt.callback(7, "todayrph272"), "Lesson 001 + 002 • Satu RPH")
+
+            rt._resolve_next_english_v25276 = lambda year, last: {"_sequence_no": last + 2, "year": year}
+            self.assertEqual(rt.callback(7, "todayrph272"), "english_2027_exact_lesson_unavailable")
 
     def test_all_real_pdf_renderers_fit_one_page(self):
         from web.english_integrated_rph_2027 import paired_plan_index
