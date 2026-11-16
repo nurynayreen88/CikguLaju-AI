@@ -35,6 +35,32 @@ Skop ialah RPT 2027 Matematik SJKC Tahun 3 dalam bahasa Cina, W.P. Kuala Lumpur,
 
 DSKP m.s. 32 menyenaraikan 1.3.2 dan Buku Teks Jilid 1 m.s. 18–19 turut mencetak kod itu. Kekalkan kod ini semasa menjadualkan aktiviti melengkapkan rangkaian nombor. Untuk Unit 2, Buku Teks menyusun operasi campuran tambah dan tolak pada m.s. 46 sebelum darab dan bahagi. Perancangan PdP perlu memadankan SK 2.5 pada halaman tersebut walaupun nombornya selepas SK darab dan bahagi dalam DSKP.
 
+## Padanan Unit 2: Operasi asas
+
+Susunan berikut mengikut Buku Teks Jilid 1. Halaman Buku Aktiviti disemak melalui rujukan nota guru dalam buku teks. Semakan item di Buku Aktiviti dan penjadualan PdP menyusul.
+
+| SP | Fokus | Buku Teks Jilid 1 | Buku Aktiviti |
+| --- | --- | --- | --- |
+| 2.1.1 | Tambah dua nombor dengan hasil tambah hingga 10 000 | 30–34 | 19–21 |
+| 2.1.2 | Tambah tiga nombor dengan hasil tambah hingga 10 000 | 35–37 | 22–23 |
+| 2.2.1 | Tolak dua nombor dalam lingkungan 10 000 | 38–42 | 24–26 |
+| 2.2.2 | Tolak tiga nombor secara berturutan dalam lingkungan 10 000 | 43–45 | 27 |
+| 2.5.1 | Gabungkan operasi tambah dan tolak dalam lingkungan 10 000 tanpa pengumpulan semula | 46–47 | 28–30 |
+| 2.3.1 | Darab nombor hingga empat digit dengan nombor satu digit, 10, 100 atau 1 000 dengan hasil darab hingga 10 000 | 48–53 | 31–34 |
+| 2.3.1 | Kukuhkan darab melalui penguraian dan pengumpulan semula nombor dalam pola | 54 | 35 |
+| 2.4.1 | Bahagi nombor hingga 10 000 dengan nombor satu digit, 10, 100 atau 1 000 | 55–60 | 36–40 |
+| 2.4.1 | Pilih nombor yang memberikan baki yang ditetapkan | 61 | 41 |
+| 2.6.1, 2.6.2 | Kenal pasti anu dan wakilkan situasi harian dengan ayat matematik satu operasi | 62–63 | 42 |
+| 2.7.1, 2.7.2 | Bina cerita daripada ayat matematik satu operasi atau operasi campuran tambah dan tolak | 64–65 | 43 |
+| 2.7.3 | Selesaikan masalah harian operasi asas dan operasi campuran tambah dan tolak | 66–73 | 44–48 |
+| 2.1–2.7 | Pengukuhan dan cadangan PBD Unit 2 | 74–76 | 49–50 |
+
+Semua 12 SP Unit 2 diliputi. Bahagian pengukuhan merujuk SK yang telah diajar. Sumber semakan halaman ialah [Buku Teks Jilid 1](https://fliphtml5.com/gtinf/ksca/%E4%B8%89%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6%E8%AF%BE%E6%9C%AC%EF%BC%88%E4%B8%8A%E5%86%8C%EF%BC%89/) dan [salinan teks Buku Teks Jilid 1](https://www.scribd.com/document/976345100/d3-Bt-Mt-Matematik-Jld1-Sjkc).
+
+## Semakan kod Unit 4
+
+[RPT edisi Cina 2026](https://www.scribd.com/document/985486038/2026-%E4%B8%89%E5%B9%B4%E7%BA%A7%E6%95%B0%E5%AD%A6-%E5%85%A8%E5%B9%B4%E6%95%99%E5%AD%A6%E8%AE%A1%E5%88%92) mengulang SP 4.5.1 pada baris SK 4.4. [DSKP edisi Cina](https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-3-SJKC-v3.pdf) dan [Buku Teks Jilid 2 halaman 9–10](https://anyflip.com/fnchw/fipy/basic) menyokong SP 4.4.1 untuk darab wang. SP 4.5.1 digunakan bagi bahagi wang. Nota guru menghubungkan darab dengan Buku Aktiviti halaman 82.
+
 ## Sumber
 
 - [DSKP Matematik SJKC Tahun 3 v3 melalui BPK](https://drive.google.com/file/d/1ujIni6EPzr5N-wMPvw14-bqTEKxaBMVZ/view), m.s. 32–33 untuk Unit 1.
