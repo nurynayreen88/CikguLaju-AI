@@ -34,4 +34,4 @@ Skop ialah KSSR (Semakan 2017), W.P. Kuala Lumpur, Kumpulan B. Perancangan guru 
 
 ## Status
 
-Fail guru Word dan PDF tersedia untuk semakan. Pilihan Bahasa Melayu SJK, akses muat turun Web/Telegram dan pengisian muka depan melalui profil guru belum disepadukan dalam keluaran ini.
+Fail Word dan PDF diuji dalam katalog Web dan penghantaran Telegram. Semakan akses berbayar dan cetakan nama guru, sekolah serta logo pada muka depan PDF Web lulus. Semakan sesi guru sebenar pada produksi masih belum dibuat.
