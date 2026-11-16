@@ -107,12 +107,13 @@ async function main(){
     const bmLayout=validatedLayout(layout,bmKey,bmHash);
     assert.throws(()=>validatedLayout(layout,bmKey,"0".repeat(64)));
     const bmDoc=await PDF.PDFDocument.load(bmRaw);
+    const bmPages=bmDoc.getPageCount();
     const bmResult=await fillOriginalCover(bmDoc,{display_name:"Cikgu Tan",school_name:"SJK(C) Contoh"},
       tinyPng,bmLayout,{PDFLib:PDF,textPng:async()=>tinyPng});
-    assert.strictEqual(bmResult.pages,year>=4?22:20);
+    assert.strictEqual(bmResult.pages,bmPages);
     assert.ok(bmResult.hasLogo&&bmResult.hasSchool&&bmResult.hasTeacher);
     const bmOutput=await bmDoc.save();
-    assert.strictEqual((await PDF.PDFDocument.load(bmOutput)).getPageCount(),year>=4?22:20);
+    assert.strictEqual((await PDF.PDFDocument.load(bmOutput)).getPageCount(),bmPages);
     if(write){
       fs.writeFileSync(path.join(outputDir,"bm-sjk-"+year+".pdf"),bmOutput);
       fs.writeFileSync(path.join(outputDir,"bm-sjk-"+year+".source.pdf"),bmRaw);
@@ -126,11 +127,12 @@ async function main(){
     const sainsLayout=validatedLayout(layout,sainsKey,sainsHash);
     assert.throws(()=>validatedLayout(layout,sainsKey,"0".repeat(64)));
     const sainsDoc=await PDF.PDFDocument.load(sainsRaw);
+    const sainsPages=sainsDoc.getPageCount();
     const sainsResult=await fillOriginalCover(sainsDoc,{display_name:"Cikgu Tan",school_name:"SJK(C) Contoh"},
       tinyPng,sainsLayout,{PDFLib:PDF,textPng:async()=>tinyPng});
     assert.ok(sainsResult.hasLogo&&sainsResult.hasSchool&&sainsResult.hasTeacher);
     const sainsOutput=await sainsDoc.save();
-    assert.strictEqual((await PDF.PDFDocument.load(sainsOutput)).getPageCount(),year===6?14:11);
+    assert.strictEqual((await PDF.PDFDocument.load(sainsOutput)).getPageCount(),sainsPages);
     if(write){
       fs.writeFileSync(path.join(outputDir,"sains-sjkc-"+year+".pdf"),sainsOutput);
       fs.writeFileSync(path.join(outputDir,"sains-sjkc-"+year+".source.pdf"),sainsRaw);
@@ -143,11 +145,12 @@ async function main(){
   const mathsLayout=validatedLayout(layout,mathsKey,mathsHash);
   assert.throws(()=>validatedLayout(layout,mathsKey,"0".repeat(64)));
   const mathsDoc=await PDF.PDFDocument.load(mathsRaw);
+  const mathsPages=mathsDoc.getPageCount();
   const mathsResult=await fillOriginalCover(mathsDoc,{display_name:"Cikgu Tan",school_name:"SJK(C) Contoh"},
     tinyPng,mathsLayout,{PDFLib:PDF,textPng:async()=>tinyPng});
   assert.ok(mathsResult.hasLogo&&mathsResult.hasSchool&&mathsResult.hasTeacher);
   const mathsOutput=await mathsDoc.save();
-  assert.strictEqual((await PDF.PDFDocument.load(mathsOutput)).getPageCount(),15);
+  assert.strictEqual((await PDF.PDFDocument.load(mathsOutput)).getPageCount(),mathsPages);
   if(write){
     fs.writeFileSync(path.join(outputDir,"matematik-sjkc-2.pdf"),mathsOutput);
     fs.writeFileSync(path.join(outputDir,"matematik-sjkc-2.source.pdf"),mathsRaw);

@@ -370,11 +370,11 @@
       336
     ],
     "source_sha256_by_subject_year": {
-      "bahasa_cina_sjkc:2": "4ffdab6cae2068adcc8fdec74f284a425732588e7b75ba1214ef16019b38520b",
-      "bahasa_cina_sjkc:3": "6189eaf3ca63730f0951cf0c597fecb1c9a9410811082e436c9e4b822fd9c19e",
-      "bahasa_cina_sjkc:4": "1a7ec718148538ee6303614ec3b20d750b1d30e895abda75626de0a9603b7ba3",
-      "bahasa_cina_sjkc:5": "f9a5f61a1651c1ffb0c2f7adad7199d25f2a1fc09e0d3506c6bbd4d472ab62f2",
-      "bahasa_cina_sjkc:6": "1f73b6018781684d334ff2cc6a6f8da61287a13217705ab177763fd28de5992a"
+      "bahasa_cina_sjkc:2": "c23636013e30f6e47135c0168aabd38dabb4d37b2da1e9bc38d4ee7d4e184782",
+      "bahasa_cina_sjkc:3": "8b01a1b306154ee12e37ae69a1fa997ceabdba14261231f79e3d3cef80c53410",
+      "bahasa_cina_sjkc:4": "e6172235354ddc728b8b5a07dd99c205dd6a29e9dd74dffcdf77607c33929439",
+      "bahasa_cina_sjkc:5": "8f919c7c4f15147afc388c97f1e13ee9d0b904da7df393dffad293213c624d3d",
+      "bahasa_cina_sjkc:6": "113eceb5ac1d20964f576f0ad2376d23c402a6b110fc685a63a80b51d8e0fefa"
     }
   },
   "sjk_bahasa_melayu": {
@@ -418,11 +418,11 @@
       256
     ],
     "source_sha256_by_subject_year": {
-      "bahasa_melayu_sjk:2": "d8a153679f729d6e446db6a4c803cc9c3ec7af1d5931dd7b237e8270e49bfa4d",
-      "bahasa_melayu_sjk:3": "c51b7346a697199855e30132a834a41698d845b9f253c3415232b9e2df6dbc78",
-      "bahasa_melayu_sjk:4": "2177be8896ed7d76ff0eaf499df804a349a25d458d623fb59cebdbfaff189e6e",
-      "bahasa_melayu_sjk:5": "b0a76b742681c2075b0f4edd5b0e8f99b1f3e53998bf8cb6404c0372b57d64dd",
-      "bahasa_melayu_sjk:6": "6b136dae955f44b470405f459459849f6d52294e049d80ff3bc099cda50e13fe"
+      "bahasa_melayu_sjk:2": "16144c797668740ade48cdd03e2424f6bbe08cf4c5043801faca547d74481fd7",
+      "bahasa_melayu_sjk:3": "5ba1fe3d5bc136c3cbac3f89fe0ce9fd0517858fd293ece9dea8e9578d2ea363",
+      "bahasa_melayu_sjk:4": "004517e70096d0df9047577cf3eaaf3c1fca0c620f3fd82df8dbc17238614227",
+      "bahasa_melayu_sjk:5": "446f001d49fc18592fb438819d7a8b7c5f8c745a75f05a3c485d9e3477469493",
+      "bahasa_melayu_sjk:6": "42add0a7b82c86e5c40351f209587cf28d0563a96fe99d323d9be2ae5f5caa20"
     }
   },
   "sjkc_sains": {
@@ -466,11 +466,11 @@
       316
     ],
     "source_sha256_by_subject_year": {
-      "sains_sjkc:2": "6da40481df031c2d9ce68acf09c3b1876741bde3ff78dbaba0f7b5b747c4a51c",
-      "sains_sjkc:3": "b6023ffdae1164c14f726c1f2b5bcc82c32626680555414d4618e6e8518376a6",
-      "sains_sjkc:4": "3c812573a0788fceb5d4a0e107f218c1bff579d210ccff43757d8224272652b4",
-      "sains_sjkc:5": "944096d157df146865beff16d38093786195a1705a5a7719a031fcad198c6169",
-      "sains_sjkc:6": "1b9c5ad962ca1026df1129a6334dbb8683aa97609e6203d3180c0e47c4b8eb57"
+      "sains_sjkc:2": "aeb80d363c15dc1d07a2e7c1722792373a2e35be5d5aa0919fae6aa714fe7cf2",
+      "sains_sjkc:3": "43a1c51f3575c7c31cab570cc9d86e6386f4f1f5fd633620ba0dd726b4b97a9d",
+      "sains_sjkc:4": "b5985eb682f5cb7f77b562f9031e763e8191ac70041daf7e95bd7f5e51a5ff51",
+      "sains_sjkc:5": "1c3a05d9eda61bf48243ce58df32beb680a170824aaf1838428982899249c9d5",
+      "sains_sjkc:6": "2bc6bf79bee9382293d52e7090428bf82bdac4310e1fa39f381159fc7ca4764c"
     }
   },
   "sjkc_matematik": {
@@ -514,7 +514,7 @@
       316
     ],
     "source_sha256_by_subject_year": {
-      "matematik_sjkc:2": "e06a4a35b6b310862b8ced238d0bb877ceae860e24dfd06f8789c54add240e54"
+      "matematik_sjkc:2": "02a85030cc42eb7625aca754c84bf86bd61f14be074bee335f74bc878e31ef4f"
     }
   }
 }
