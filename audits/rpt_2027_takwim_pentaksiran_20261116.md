@@ -38,9 +38,9 @@ RPT Rozayus Academy 2026 meletakkan Lesson 160 pada 18–22 Oktober (A) dan 19�
 
 ### Agihan draf 2027 mengikut Kumpulan A/B
 
-Sasaran tamat PdP baharu ialah 21 Oktober bagi Kumpulan A dan 22 Oktober bagi Kumpulan B. Minggu Deepavali diperuntukkan untuk ulang kaji pada hari sekolah yang tersedia. Ruang UASA dirancang pada awal November dan tertakluk kepada takwim setiap sekolah. Had 4/5 November ialah had paling lewat yang digunakan dalam audit semua subjek. Draf English menggunakan sasaran Oktober.
+Had PdP baharu ialah 4 November bagi Kumpulan A dan 5 November bagi Kumpulan B, serta sebelum tarikh pentaksiran atau UASA sekolah. Minggu Deepavali menggunakan sehingga dua sesi pada hari sekolah yang tersedia. Minggu 40 menggunakan sehingga empat sesi jika jadual kelas dan tarikh pentaksiran membenarkannya. Minggu 41–44 diperuntukkan untuk ulang kaji, pentaksiran atau aktiviti sekolah mengikut takwim sekolah.
 
-Anggaran jadual di bawah menggunakan maksimum empat waktu, setiap satu 60 minit, dengan enam minggu pendek sebanyak tiga waktu mengikut pola RPT semasa. Jadual sebenar, tarikh pentaksiran dan cuti setempat menentukan waktu yang tersedia. SOW Year 3–6 menerangkan tempoh 60 minit bagi setiap Lesson. SOW Year 2 menyenaraikan 160 Lesson dan panduan English SK menetapkan 160 jam minimum setahun. Untuk kiraan ini, 60 minit ialah anggaran satu Lesson Year 2.
+Agihan menggunakan maksimum empat sesi PdP seminggu, 60 minit setiap sesi. Enam minggu pendek menggunakan tiga sesi dan minggu Deepavali menggunakan dua sesi sebagai anggaran bersama Kumpulan A/B. Jadual sebenar, tarikh pentaksiran dan cuti setempat menentukan sesi yang tersedia. SOW Year 3–6 menerangkan tempoh 60 minit bagi setiap Lesson. SOW Year 2 menyenaraikan 160 Lesson dan panduan English SK menetapkan 160 jam minimum setahun. Untuk kiraan ini, 60 minit ialah anggaran satu Lesson Year 2.
 
 | Minggu | Kumpulan A | Kumpulan B | Waktu PdP baharu | Lesson atau kegunaan |
 | ---: | --- | --- | ---: | --- |
@@ -82,21 +82,19 @@ Anggaran jadual di bawah menggunakan maksimum empat waktu, setiap satu 60 minit,
 | 36 | 3–7 Okt | 4–8 Okt | 4 | 127–130 |
 | 37 | 10–14 Okt | 11–15 Okt | 4 | 131–134 |
 | 38 | 17–21 Okt | 18–22 Okt | 4 | 135–138 |
-| 39 | 24–28 Okt | 25–29 Okt | 0 | Ulang kaji pada hari persekolahan |
-| 40 | 31 Okt–4 Nov | 1–5 Nov | 0 | Ruang UASA mengikut sekolah |
+| 39 | 24–28 Okt | 25–29 Okt | 2 | 139–140 jika slot tersedia pada minggu Deepavali |
+| 40 | 31 Okt–4 Nov | 1–5 Nov | 4 | 141–144 jika slot tersedia sebelum pentaksiran/UASA |
 | 41 | 7–11 Nov | 8–12 Nov | 0 | Ruang UASA mengikut sekolah |
 | 42 | 14–18 Nov | 15–19 Nov | 0 | Aktiviti akhir tahun |
 | 43 | 21–25 Nov | 22–26 Nov | 0 | Aktiviti akhir tahun |
 | 44 | 28 Nov–2 Dis | 29 Nov–3 Dis | 0 | Aktiviti akhir tahun |
 
-### Baki sebelum sasaran Oktober
+### Baki sebelum had November
 
-- Hingga 21/22 Oktober, 36 minggu calon memberi maksimum teori 144 waktu. Dengan enam minggu pendek, anggaran ialah **138 waktu atau 138 jam**, dengan **Lesson 139–160 masih tanpa slot**. Untuk menempatkan 160 jam dalam 138 sesi, purata satu sesi perlu mencapai kira-kira 70 minit. Jika empat waktu pada Minggu 18 digunakan sepenuhnya untuk pentaksiran, anggaran turun kepada 134 waktu.
-- Jika satu waktu ialah 30 minit, 138 waktu memberi 69 jam. Pengiraan minit perlu membezakan satu waktu dalam jadual sekolah, sesi PdP yang merangkumi beberapa waktu dan Lesson bernombor SOW.
-- Dalam senario had 4/5 November, anggaran naik kepada 144 waktu jika dua waktu Minggu 39 dan empat waktu Minggu 40 tersedia untuk PdP. Penggunaannya mengurangkan ruang ulang kaji dan bergantung pada tarikh UASA sekolah.
-- Semakan sumber mengekalkan semua nombor SOW 001–160 bagi setiap tahun. Baki Oktober merangkumi PdP seperti On holiday untuk Year 3, Get active! untuk Year 4, Going away untuk Year 5 dan What’s your opinion? untuk Year 6, di samping ulang kaji, sastera dan projek. Agihan penuh memerlukan semakan slot kelas dan, bagi cadangan adaptasi, padanan SK/SP serta aktiviti bagi setiap Lesson terlibat. RPT pengguna menunggu pengesahan agihan penuh.
+- Anggaran kapasiti ialah **144 sesi atau 144 jam**. **Lesson 145–160** memerlukan 16 sesi tambahan sebelum had. Jika Minggu 18 digunakan sepenuhnya untuk pentaksiran, anggaran turun kepada 140 sesi. Jika UASA bermula sebelum Minggu 40, empat sesi pada minggu itu turut tertakluk kepada waktu yang masih tersedia.
+- Pada kadar empat sesi seminggu, 160 Lesson memerlukan 40 minggu dengan jadual penuh. Hingga 4/5 November terdapat 38 minggu calon apabila Minggu 6 dan 19 diletakkan pada kapasiti bersama sifar. Had teori 152 sesi sebelum mengambil kira minggu pendek menunjukkan sebab semua 160 Lesson memerlukan pelarasan.
 
-Lima salinan semakan boleh dibina dengan `python tools/build_english_rpt_2027_review.py <folder-keluaran>` menggunakan PyMuPDF, ReportLab dan font DejaVu Sans. Setiap salinan mempunyai 44 baris takwim A/B, 138 Lesson bertarikh dan lampiran Lesson 139–160 bersama SK/SP serta rujukan bahan sedia ada. Minggu 18 menyediakan empat Lesson yang hanya dijadualkan jika slot tersedia. Jika satu sesi menampung lebih daripada satu bahagian SOW, empat sesi 60–90 minit boleh mencapai sasaran minit. Susunan sedemikian masih menempatkan lima nombor Lesson SOW dalam beberapa minggu dan memerlukan keputusan pengguna tentang had itu. Agihan Web dan Telegram menunggu keputusan tersebut.
+Lima salinan semakan boleh dibina dengan `python tools/build_english_rpt_2027_review.py <folder-keluaran>` menggunakan PyMuPDF, ReportLab dan font DejaVu Sans. Setiap salinan mempunyai 44 baris takwim A/B, 144 Lesson bertarikh dan lampiran Lesson 145–160 bersama SK/SP serta rujukan bahan sedia ada. Agihan penuh untuk Web dan Telegram masih dalam semakan.
 
 Rujukan 2026. [Year 2](https://www.scribd.com/document/989617346/Rpt-English-Year-2-Sk-2026-by-Rozayusacademy-Kump-a-b), [Year 3 (satu minggu ulang kaji)](https://www.scribd.com/document/1031590988/3-Rpt-English-Year-3-Sk-2026), [Year 3 (dua minggu ulang kaji)](https://www.scribd.com/document/1006654453/RPT-ENGLISH-YEAR-3-SK-2026-by-RozayusAcademy-Kump-A-B), [Year 4](https://www.scribd.com/document/1048941884/Rpt-English-Year-4-Sk-2026-by-Rozayusacademy-Kump-a-b), [Year 5](https://www.scribd.com/document/973840203/Rpt-English-Year-5-Sk-2026-by-Rozayusacademy-Kump-a-b) dan [Year 6](https://www.scribd.com/document/989617349/Rpt-English-Year-6-Sk-2026-by-Rozayusacademy-Kump-a-b).
 
