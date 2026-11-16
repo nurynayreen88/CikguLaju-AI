@@ -25,7 +25,8 @@
         "2027-01-04",
         "2027-01-08"
       ],
-      "pdp_count": 0
+      "pdp_count": 1,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 2,
@@ -37,7 +38,8 @@
         "2027-01-11",
         "2027-01-15"
       ],
-      "pdp_count": 3
+      "pdp_count": 2,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 3,
@@ -49,7 +51,8 @@
         "2027-01-18",
         "2027-01-22"
       ],
-      "pdp_count": 3
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 4,
@@ -61,7 +64,8 @@
         "2027-01-25",
         "2027-01-29"
       ],
-      "pdp_count": 3
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 5,
@@ -74,7 +78,8 @@
         "2027-02-05"
       ],
       "pdp_count": 2,
-      "calendar_note": "05/02 cuti tambahan Tahun Baharu Cina (B)"
+      "calendar_note": "05/02 cuti tambahan Tahun Baharu Cina (B)",
+      "calendar_status": "pengajaran"
     },
     {
       "week": 6,
@@ -87,7 +92,8 @@
         "2027-02-12"
       ],
       "pdp_count": 0,
-      "calendar_note": "Tahun Baharu Cina dan cuti tambahan mengikut negeri"
+      "calendar_note": "Cuti Tahun Baharu Cina dan cuti tambahan mengikut negeri",
+      "calendar_status": "cuti_perayaan_kapasiti_bersama_sifar"
     },
     {
       "week": 7,
@@ -99,7 +105,8 @@
         "2027-02-15",
         "2027-02-19"
       ],
-      "pdp_count": 2
+      "pdp_count": 2,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 8,
@@ -111,7 +118,8 @@
         "2027-02-22",
         "2027-02-26"
       ],
-      "pdp_count": 3
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 9,
@@ -123,7 +131,8 @@
         "2027-03-01",
         "2027-03-05"
       ],
-      "pdp_count": 2
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 10,
@@ -136,7 +145,8 @@
         "2027-03-19"
       ],
       "pdp_count": 2,
-      "calendar_note": "14/03 cuti tambahan Aidilfitri (A)"
+      "calendar_note": "14/03 cuti tambahan Aidilfitri (A)",
+      "calendar_status": "pengajaran"
     },
     {
       "week": 11,
@@ -148,7 +158,8 @@
         "2027-03-22",
         "2027-03-26"
       ],
-      "pdp_count": 3
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 12,
@@ -160,7 +171,8 @@
         "2027-03-29",
         "2027-04-02"
       ],
-      "pdp_count": 2
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 13,
@@ -172,7 +184,8 @@
         "2027-04-05",
         "2027-04-09"
       ],
-      "pdp_count": 2
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 14,
@@ -184,7 +197,8 @@
         "2027-04-12",
         "2027-04-16"
       ],
-      "pdp_count": 3
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 15,
@@ -196,7 +210,8 @@
         "2027-04-19",
         "2027-04-23"
       ],
-      "pdp_count": 2
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 16,
@@ -208,7 +223,8 @@
         "2027-04-26",
         "2027-04-30"
       ],
-      "pdp_count": 2
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 17,
@@ -220,7 +236,8 @@
         "2027-05-03",
         "2027-05-07"
       ],
-      "pdp_count": 3
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 18,
@@ -232,7 +249,9 @@
         "2027-05-10",
         "2027-05-14"
       ],
-      "pdp_count": 2
+      "pdp_count": 0,
+      "calendar_status": "pentaksiran_pertengahan_tahun",
+      "calendar_note": "Pentaksiran Pertengahan Tahun • Tiada PdP"
     },
     {
       "week": 19,
@@ -245,7 +264,8 @@
         "2027-05-21"
       ],
       "pdp_count": 0,
-      "calendar_note": "Hari Raya Aidiladha, Hari Wesak dan cuti tambahan KPM"
+      "calendar_note": "Cuti Aidiladha, Wesak dan cuti tambahan • Tiada PdP",
+      "calendar_status": "cuti_perayaan_kapasiti_bersama_sifar"
     },
     {
       "week": 20,
@@ -258,7 +278,8 @@
         "2027-06-11"
       ],
       "pdp_count": 2,
-      "calendar_note": "Awal Muharam dan Hari Keputeraan Yang di-Pertuan Agong"
+      "calendar_note": "Awal Muharam dan Hari Keputeraan Yang di-Pertuan Agong",
+      "calendar_status": "pengajaran"
     },
     {
       "week": 21,
@@ -270,7 +291,8 @@
         "2027-06-14",
         "2027-06-18"
       ],
-      "pdp_count": 3
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 22,
@@ -282,7 +304,8 @@
         "2027-06-21",
         "2027-06-25"
       ],
-      "pdp_count": 2
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 23,
@@ -294,7 +317,8 @@
         "2027-06-28",
         "2027-07-02"
       ],
-      "pdp_count": 2
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 24,
@@ -306,7 +330,8 @@
         "2027-07-05",
         "2027-07-09"
       ],
-      "pdp_count": 3
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 25,
@@ -318,7 +343,8 @@
         "2027-07-12",
         "2027-07-16"
       ],
-      "pdp_count": 2
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 26,
@@ -330,7 +356,8 @@
         "2027-07-19",
         "2027-07-23"
       ],
-      "pdp_count": 2
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 27,
@@ -342,7 +369,8 @@
         "2027-07-26",
         "2027-07-30"
       ],
-      "pdp_count": 3
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 28,
@@ -354,7 +382,8 @@
         "2027-08-02",
         "2027-08-06"
       ],
-      "pdp_count": 2
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 29,
@@ -366,7 +395,8 @@
         "2027-08-09",
         "2027-08-13"
       ],
-      "pdp_count": 2
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 30,
@@ -379,7 +409,8 @@
         "2027-08-20"
       ],
       "pdp_count": 3,
-      "calendar_note": "Maulidur Rasul dan cuti ganti mengikut negeri"
+      "calendar_note": "Maulidur Rasul dan cuti ganti mengikut negeri",
+      "calendar_status": "pengajaran"
     },
     {
       "week": 31,
@@ -391,7 +422,8 @@
         "2027-08-23",
         "2027-08-27"
       ],
-      "pdp_count": 2
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 32,
@@ -403,7 +435,8 @@
         "2027-09-06",
         "2027-09-10"
       ],
-      "pdp_count": 2
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 33,
@@ -415,8 +448,9 @@
         "2027-09-13",
         "2027-09-17"
       ],
-      "pdp_count": 3,
-      "calendar_note": "16/09 Hari Malaysia"
+      "pdp_count": 2,
+      "calendar_note": "16/09 Hari Malaysia",
+      "calendar_status": "pengajaran"
     },
     {
       "week": 34,
@@ -428,7 +462,8 @@
         "2027-09-20",
         "2027-09-24"
       ],
-      "pdp_count": 2
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 35,
@@ -440,7 +475,8 @@
         "2027-09-27",
         "2027-10-01"
       ],
-      "pdp_count": 2
+      "pdp_count": 2,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 36,
@@ -452,7 +488,8 @@
         "2027-10-04",
         "2027-10-08"
       ],
-      "pdp_count": 3
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 37,
@@ -464,7 +501,8 @@
         "2027-10-11",
         "2027-10-15"
       ],
-      "pdp_count": 2
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 38,
@@ -476,7 +514,8 @@
         "2027-10-18",
         "2027-10-22"
       ],
-      "pdp_count": 2
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
     },
     {
       "week": 39,
@@ -488,8 +527,9 @@
         "2027-10-25",
         "2027-10-29"
       ],
-      "pdp_count": 2,
-      "calendar_note": "Deepavali dan cuti tambahan KPM mengikut negeri"
+      "pdp_count": 0,
+      "calendar_note": "Ruang persediaan pentaksiran akhir tahun • Tiada PdP",
+      "calendar_status": "persediaan_pentaksiran_akhir_tahun_atau_pentaksiran_akhir_tahun_mengikut_sekolah"
     },
     {
       "week": 40,
@@ -501,7 +541,9 @@
         "2027-11-01",
         "2027-11-05"
       ],
-      "pdp_count": 2
+      "pdp_count": 0,
+      "calendar_status": "cadangan_ruang_pentaksiran_akhir_tahun",
+      "calendar_note": "Ruang pentaksiran akhir tahun mengikut sekolah • Tiada PdP"
     },
     {
       "week": 41,
@@ -513,7 +555,9 @@
         "2027-11-08",
         "2027-11-12"
       ],
-      "pdp_count": 2
+      "pdp_count": 0,
+      "calendar_status": "aktiviti_selepas_pentaksiran_akhir_tahun",
+      "calendar_note": "Aktiviti sekolah selepas pentaksiran • Tiada PdP"
     },
     {
       "week": 42,
@@ -525,7 +569,9 @@
         "2027-11-15",
         "2027-11-19"
       ],
-      "pdp_count": 3
+      "pdp_count": 0,
+      "calendar_status": "aktiviti_selepas_pentaksiran_akhir_tahun_akhir_tahun",
+      "calendar_note": "Aktiviti akhir tahun • Tiada PdP"
     },
     {
       "week": 43,
@@ -537,7 +583,9 @@
         "2027-11-22",
         "2027-11-26"
       ],
-      "pdp_count": 2
+      "pdp_count": 0,
+      "calendar_status": "aktiviti_akhir_tahun",
+      "calendar_note": "Aktiviti akhir tahun • Tiada PdP"
     },
     {
       "week": 44,
@@ -549,13 +597,15 @@
         "2027-11-29",
         "2027-12-03"
       ],
-      "pdp_count": 2
+      "pdp_count": 0,
+      "calendar_status": "aktiviti_akhir_tahun",
+      "calendar_note": "Aktiviti akhir tahun • Tiada PdP"
     }
   ],
   "lessons": [
     {
       "pdp": 1,
-      "week": 2,
+      "week": 1,
       "duration_minutes": 60,
       "unit_number": 1,
       "unit": "10 000以内的整数",
@@ -1387,7 +1437,7 @@
     },
     {
       "pdp": 19,
-      "week": 10,
+      "week": 9,
       "duration_minutes": 60,
       "unit_number": 2,
       "unit": "基本运算",
@@ -1479,7 +1529,7 @@
     },
     {
       "pdp": 21,
-      "week": 11,
+      "week": 10,
       "duration_minutes": 60,
       "unit_number": 2,
       "unit": "基本运算",
@@ -1618,7 +1668,7 @@
     },
     {
       "pdp": 24,
-      "week": 12,
+      "week": 11,
       "duration_minutes": 60,
       "unit_number": 2,
       "unit": "基本运算",
@@ -1711,7 +1761,7 @@
     },
     {
       "pdp": 26,
-      "week": 13,
+      "week": 12,
       "duration_minutes": 60,
       "unit_number": 2,
       "unit": "基本运算",
@@ -1761,7 +1811,7 @@
     },
     {
       "pdp": 27,
-      "week": 13,
+      "week": 12,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -1807,7 +1857,7 @@
     },
     {
       "pdp": 28,
-      "week": 14,
+      "week": 13,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -1853,7 +1903,7 @@
     },
     {
       "pdp": 29,
-      "week": 14,
+      "week": 13,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -1899,7 +1949,7 @@
     },
     {
       "pdp": 30,
-      "week": 14,
+      "week": 13,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -1945,7 +1995,7 @@
     },
     {
       "pdp": 31,
-      "week": 15,
+      "week": 14,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -1991,7 +2041,7 @@
     },
     {
       "pdp": 32,
-      "week": 15,
+      "week": 14,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2037,7 +2087,7 @@
     },
     {
       "pdp": 33,
-      "week": 16,
+      "week": 14,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2083,7 +2133,7 @@
     },
     {
       "pdp": 34,
-      "week": 16,
+      "week": 15,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2129,7 +2179,7 @@
     },
     {
       "pdp": 35,
-      "week": 17,
+      "week": 15,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2175,7 +2225,7 @@
     },
     {
       "pdp": 36,
-      "week": 17,
+      "week": 15,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2222,7 +2272,7 @@
     },
     {
       "pdp": 37,
-      "week": 17,
+      "week": 16,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2268,7 +2318,7 @@
     },
     {
       "pdp": 38,
-      "week": 18,
+      "week": 16,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2315,7 +2365,7 @@
     },
     {
       "pdp": 39,
-      "week": 18,
+      "week": 16,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2364,7 +2414,7 @@
     },
     {
       "pdp": 40,
-      "week": 20,
+      "week": 17,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2412,7 +2462,7 @@
     },
     {
       "pdp": 41,
-      "week": 20,
+      "week": 17,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2459,7 +2509,7 @@
     },
     {
       "pdp": 42,
-      "week": 21,
+      "week": 17,
       "duration_minutes": 60,
       "unit_number": 4,
       "unit": "钱币",
@@ -2505,7 +2555,7 @@
     },
     {
       "pdp": 43,
-      "week": 21,
+      "week": 20,
       "duration_minutes": 60,
       "unit_number": 4,
       "unit": "钱币",
@@ -2551,7 +2601,7 @@
     },
     {
       "pdp": 44,
-      "week": 21,
+      "week": 20,
       "duration_minutes": 60,
       "unit_number": 4,
       "unit": "钱币",
@@ -2597,7 +2647,7 @@
     },
     {
       "pdp": 45,
-      "week": 22,
+      "week": 21,
       "duration_minutes": 60,
       "unit_number": 4,
       "unit": "钱币",
@@ -2643,7 +2693,7 @@
     },
     {
       "pdp": 46,
-      "week": 22,
+      "week": 21,
       "duration_minutes": 60,
       "unit_number": 4,
       "unit": "钱币",
@@ -2689,7 +2739,7 @@
     },
     {
       "pdp": 47,
-      "week": 23,
+      "week": 21,
       "duration_minutes": 60,
       "unit_number": 4,
       "unit": "钱币",
@@ -2735,7 +2785,7 @@
     },
     {
       "pdp": 48,
-      "week": 23,
+      "week": 22,
       "duration_minutes": 60,
       "unit_number": 4,
       "unit": "钱币",
@@ -2781,7 +2831,7 @@
     },
     {
       "pdp": 49,
-      "week": 24,
+      "week": 22,
       "duration_minutes": 60,
       "unit_number": 4,
       "unit": "钱币",
@@ -2827,7 +2877,7 @@
     },
     {
       "pdp": 50,
-      "week": 24,
+      "week": 22,
       "duration_minutes": 60,
       "unit_number": 4,
       "unit": "钱币",
@@ -2873,7 +2923,7 @@
     },
     {
       "pdp": 51,
-      "week": 24,
+      "week": 23,
       "duration_minutes": 60,
       "unit_number": 4,
       "unit": "钱币",
@@ -2919,7 +2969,7 @@
     },
     {
       "pdp": 52,
-      "week": 25,
+      "week": 23,
       "duration_minutes": 60,
       "unit_number": 4,
       "unit": "钱币",
@@ -2965,7 +3015,7 @@
     },
     {
       "pdp": 53,
-      "week": 25,
+      "week": 23,
       "duration_minutes": 60,
       "unit_number": 4,
       "unit": "钱币",
@@ -3012,7 +3062,7 @@
     },
     {
       "pdp": 54,
-      "week": 26,
+      "week": 24,
       "duration_minutes": 60,
       "unit_number": 5,
       "unit": "时间与时刻",
@@ -3059,7 +3109,7 @@
     },
     {
       "pdp": 55,
-      "week": 26,
+      "week": 24,
       "duration_minutes": 60,
       "unit_number": 5,
       "unit": "时间与时刻",
@@ -3106,7 +3156,7 @@
     },
     {
       "pdp": 56,
-      "week": 27,
+      "week": 24,
       "duration_minutes": 60,
       "unit_number": 5,
       "unit": "时间与时刻",
@@ -3152,7 +3202,7 @@
     },
     {
       "pdp": 57,
-      "week": 27,
+      "week": 25,
       "duration_minutes": 60,
       "unit_number": 5,
       "unit": "时间与时刻",
@@ -3198,7 +3248,7 @@
     },
     {
       "pdp": 58,
-      "week": 27,
+      "week": 25,
       "duration_minutes": 60,
       "unit_number": 5,
       "unit": "时间与时刻",
@@ -3244,7 +3294,7 @@
     },
     {
       "pdp": 59,
-      "week": 28,
+      "week": 25,
       "duration_minutes": 60,
       "unit_number": 5,
       "unit": "时间与时刻",
@@ -3290,7 +3340,7 @@
     },
     {
       "pdp": 60,
-      "week": 28,
+      "week": 26,
       "duration_minutes": 60,
       "unit_number": 5,
       "unit": "时间与时刻",
@@ -3336,7 +3386,7 @@
     },
     {
       "pdp": 61,
-      "week": 29,
+      "week": 26,
       "duration_minutes": 60,
       "unit_number": 5,
       "unit": "时间与时刻",
@@ -3382,7 +3432,7 @@
     },
     {
       "pdp": 62,
-      "week": 29,
+      "week": 26,
       "duration_minutes": 60,
       "unit_number": 5,
       "unit": "时间与时刻",
@@ -3428,7 +3478,7 @@
     },
     {
       "pdp": 63,
-      "week": 30,
+      "week": 27,
       "duration_minutes": 60,
       "unit_number": 5,
       "unit": "时间与时刻",
@@ -3474,7 +3524,7 @@
     },
     {
       "pdp": 64,
-      "week": 30,
+      "week": 27,
       "duration_minutes": 60,
       "unit_number": 6,
       "unit": "度量衡",
@@ -3520,7 +3570,7 @@
     },
     {
       "pdp": 65,
-      "week": 30,
+      "week": 27,
       "duration_minutes": 60,
       "unit_number": 6,
       "unit": "度量衡",
@@ -3566,7 +3616,7 @@
     },
     {
       "pdp": 66,
-      "week": 31,
+      "week": 28,
       "duration_minutes": 60,
       "unit_number": 6,
       "unit": "度量衡",
@@ -3612,7 +3662,7 @@
     },
     {
       "pdp": 67,
-      "week": 31,
+      "week": 28,
       "duration_minutes": 60,
       "unit_number": 6,
       "unit": "度量衡",
@@ -3658,7 +3708,7 @@
     },
     {
       "pdp": 68,
-      "week": 32,
+      "week": 28,
       "duration_minutes": 60,
       "unit_number": 6,
       "unit": "度量衡",
@@ -3704,7 +3754,7 @@
     },
     {
       "pdp": 69,
-      "week": 32,
+      "week": 29,
       "duration_minutes": 60,
       "unit_number": 6,
       "unit": "度量衡",
@@ -3750,7 +3800,7 @@
     },
     {
       "pdp": 70,
-      "week": 33,
+      "week": 29,
       "duration_minutes": 60,
       "unit_number": 6,
       "unit": "度量衡",
@@ -3796,7 +3846,7 @@
     },
     {
       "pdp": 71,
-      "week": 33,
+      "week": 29,
       "duration_minutes": 60,
       "unit_number": 6,
       "unit": "度量衡",
@@ -3842,7 +3892,7 @@
     },
     {
       "pdp": 72,
-      "week": 33,
+      "week": 30,
       "duration_minutes": 60,
       "unit_number": 6,
       "unit": "度量衡",
@@ -3888,7 +3938,7 @@
     },
     {
       "pdp": 73,
-      "week": 34,
+      "week": 30,
       "duration_minutes": 60,
       "unit_number": 6,
       "unit": "度量衡",
@@ -3934,7 +3984,7 @@
     },
     {
       "pdp": 74,
-      "week": 34,
+      "week": 30,
       "duration_minutes": 60,
       "unit_number": 6,
       "unit": "度量衡",
@@ -3980,7 +4030,7 @@
     },
     {
       "pdp": 75,
-      "week": 35,
+      "week": 31,
       "duration_minutes": 60,
       "unit_number": 6,
       "unit": "度量衡",
@@ -4026,7 +4076,7 @@
     },
     {
       "pdp": 76,
-      "week": 35,
+      "week": 31,
       "duration_minutes": 60,
       "unit_number": 6,
       "unit": "度量衡",
@@ -4072,7 +4122,7 @@
     },
     {
       "pdp": 77,
-      "week": 36,
+      "week": 31,
       "duration_minutes": 60,
       "unit_number": 6,
       "unit": "度量衡",
@@ -4118,7 +4168,7 @@
     },
     {
       "pdp": 78,
-      "week": 36,
+      "week": 32,
       "duration_minutes": 60,
       "unit_number": 6,
       "unit": "度量衡",
@@ -4164,7 +4214,7 @@
     },
     {
       "pdp": 79,
-      "week": 36,
+      "week": 32,
       "duration_minutes": 60,
       "unit_number": 6,
       "unit": "度量衡",
@@ -4210,7 +4260,7 @@
     },
     {
       "pdp": 80,
-      "week": 37,
+      "week": 32,
       "duration_minutes": 60,
       "unit_number": 6,
       "unit": "度量衡",
@@ -4256,7 +4306,7 @@
     },
     {
       "pdp": 81,
-      "week": 37,
+      "week": 33,
       "duration_minutes": 60,
       "unit_number": 7,
       "unit": "空间",
@@ -4302,7 +4352,7 @@
     },
     {
       "pdp": 82,
-      "week": 38,
+      "week": 33,
       "duration_minutes": 60,
       "unit_number": 7,
       "unit": "空间",
@@ -4348,7 +4398,7 @@
     },
     {
       "pdp": 83,
-      "week": 38,
+      "week": 34,
       "duration_minutes": 60,
       "unit_number": 7,
       "unit": "空间",
@@ -4394,7 +4444,7 @@
     },
     {
       "pdp": 84,
-      "week": 39,
+      "week": 34,
       "duration_minutes": 60,
       "unit_number": 7,
       "unit": "空间",
@@ -4440,7 +4490,7 @@
     },
     {
       "pdp": 85,
-      "week": 39,
+      "week": 34,
       "duration_minutes": 60,
       "unit_number": 7,
       "unit": "空间",
@@ -4486,7 +4536,7 @@
     },
     {
       "pdp": 86,
-      "week": 40,
+      "week": 35,
       "duration_minutes": 60,
       "unit_number": 7,
       "unit": "空间",
@@ -4532,7 +4582,7 @@
     },
     {
       "pdp": 87,
-      "week": 40,
+      "week": 35,
       "duration_minutes": 60,
       "unit_number": 7,
       "unit": "空间",
@@ -4578,7 +4628,7 @@
     },
     {
       "pdp": 88,
-      "week": 41,
+      "week": 36,
       "duration_minutes": 60,
       "unit_number": 8,
       "unit": "坐标",
@@ -4624,7 +4674,7 @@
     },
     {
       "pdp": 89,
-      "week": 41,
+      "week": 36,
       "duration_minutes": 60,
       "unit_number": 8,
       "unit": "坐标",
@@ -4670,7 +4720,7 @@
     },
     {
       "pdp": 90,
-      "week": 42,
+      "week": 36,
       "duration_minutes": 60,
       "unit_number": 8,
       "unit": "坐标",
@@ -4716,7 +4766,7 @@
     },
     {
       "pdp": 91,
-      "week": 42,
+      "week": 37,
       "duration_minutes": 60,
       "unit_number": 8,
       "unit": "坐标",
@@ -4762,7 +4812,7 @@
     },
     {
       "pdp": 92,
-      "week": 42,
+      "week": 37,
       "duration_minutes": 60,
       "unit_number": 9,
       "unit": "数据处理",
@@ -4808,7 +4858,7 @@
     },
     {
       "pdp": 93,
-      "week": 43,
+      "week": 37,
       "duration_minutes": 60,
       "unit_number": 9,
       "unit": "数据处理",
@@ -4854,7 +4904,7 @@
     },
     {
       "pdp": 94,
-      "week": 43,
+      "week": 38,
       "duration_minutes": 60,
       "unit_number": 9,
       "unit": "数据处理",
@@ -4900,7 +4950,7 @@
     },
     {
       "pdp": 95,
-      "week": 44,
+      "week": 38,
       "duration_minutes": 60,
       "unit_number": 9,
       "unit": "数据处理",
@@ -4946,7 +4996,7 @@
     },
     {
       "pdp": 96,
-      "week": 44,
+      "week": 38,
       "duration_minutes": 60,
       "unit_number": 9,
       "unit": "数据处理",
