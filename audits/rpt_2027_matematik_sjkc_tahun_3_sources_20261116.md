@@ -114,4 +114,11 @@ Status HOLD pada PR #828 sementara menunggu kelulusan kandungan dan ujian janaan
 
 - Katalog RPT Tahun 3 disambungkan pada calon Telegram dalam PR ini dan pada [PR Web #829](https://github.com/nurynayreen88/CikguLaju-AI/pull/829). Ujian setempat mengesahkan Word/PDF Tahun 2 dan 3, akses berbayar, serta 44 baris A/B. Muka depan Web Tahun 3 mengisi ruang sekolah, guru dan logo. Kesemua 13 halaman isi sepadan secara piksel.
 - Pratonton dalaman RPH mengambil satu PdP daripada dokumen yang sudah dipadankan dengan data 2027. Semakan automatik menjana 96 Word dan 96 PDF, mengesahkan satu PdP setiap fail. Ujian Flask mengesahkan respons sebenar Word/PDF, penolakan tahun/unit/PdP yang tidak sepadan, pengendalian dokumen hilang dan semakan capaian dalaman.
-- Pratonton dalaman belum disambungkan kepada pilihan RPH guru dalam Web dan Telegram. Muat turun RPT melalui akaun guru berbayar sebenar dan kelulusan kandungan masih belum disahkan.
+- Muat turun RPT melalui akaun guru berbayar sebenar dan kelulusan kandungan masih belum disahkan.
+
+
+## Pemilihan guru dalam calon Web dan Telegram
+
+- Laluan RPH KSSR Tahun 3 menggunakan pilihan Matematik SJKC sendiri. Kedua-dua antara muka menggunakan padanan unit dan nombor PdP daripada sumber yang sama. PdP daripada unit lain ditolak.
+- Dokumen Word dan PDF menerima kelas, tarikh, masa dan bilangan murid. Web juga menerima refleksi guru. Ujian integrasi Web → penjana Telegram meliputi kesemua 96 Word dan 96 PDF dengan akaun simulasi. Telegram menggunakan aliran kelas, masa, pilihan bahan dan kredit sedia ada. Penghantaran dua format dalam satu SUBMIT menggunakan satu janaan. Jika hanya satu format berjaya dihantar, SUBMIT semula menyambung format yang tertinggal.
+- Calon kekal HOLD. Penjana SJKC hanya disediakan apabila `CIKGULAJU_MATEMATIK_SJKC_T3_RPH_ENABLED=1` pada Telegram. Kelulusan kandungan dan ujian janaan serta muat turun dengan akaun guru produksi masih diperlukan. RPT menggunakan jadual Kumpulan A dan B yang dikongsi.
