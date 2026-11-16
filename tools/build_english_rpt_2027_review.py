@@ -22,7 +22,8 @@ CALENDAR = ROOT / "rpt_2027" / "takwim_pdp_2027_ab_draf.json"
 LESSON = re.compile(r"LESSON:\s*(\d+)\b")
 DEEPAVALI_WEEK = 39
 SHORT_WEEK_SESSIONS = {5: 3, 20: 3, 35: 3, DEEPAVALI_WEEK: 2}
-STOP_WEEK = 40
+STOP_WEEK = 41
+LATE_TEACHING_WEEKS = (40, STOP_WEEK)
 WEEK_WITH_ASSESSMENT = 18
 CLOSED_WEEKS = {6, 19}
 WIDTH, HEIGHT = landscape(A4)
@@ -90,7 +91,7 @@ def schedule():
         lessons = tuple(range(first, first + count))
         weeks.append((week, span(row["A"]), span(row["B"]), lessons))
         first += count
-    assert first == 148 and len(weeks) == 44
+    assert first == 152 and len(weeks) == 44
     return weeks
 
 
@@ -169,14 +170,14 @@ def cover(canvas, year, scheduled_count):
         y -= 65
     write_text(canvas, "2027 planning dates", 34, y - 5, size=13, bold=True)
     notes = (
-        "Group A (Kedah, Kelantan and Terengganu): teaching limit 4 November.",
-        "Group B (other states and federal territories): teaching limit 5 November.",
+        "Group A (Kedah, Kelantan and Terengganu): teaching limit 11 November.",
+        "Group B (other states and federal territories): teaching limit 12 November.",
         "Week 18: 9–13 May (A), 10–14 May (B). Use for school assessment or the available English sessions.",
         "Week 19 (Aidiladha and Wesak): 0 planned Lessons. Week 39 (Deepavali): up to two available sessions.",
-        "Week 40: teach up to the November limit if slots are available before school assessment or UASA.",
-        "Weeks with one public holiday retain four 60-minute sessions when the timetable permits.",
+        "Weeks 40–41: use available English slots before school assessment or UASA.",
+        "Plan eight 30-minute periods (four 60-minute Lessons) per full week, including weeks with one public holiday.",
         f"Lessons {scheduled_count + 1:03d}–160 await placement before the school assessment or UASA.",
-        "Use the revision and assessment dates set by the school. Weeks 41–44 have 0 new Lessons.",
+        "Use the revision and assessment dates set by the school. Weeks 42–44 have 0 new Lessons.",
         "See the calendar notes for local adjustments. Sources: KPM calendar, BKPP holidays and English SK SOW.",
     )
     for i, note in enumerate(notes):
@@ -242,12 +243,11 @@ def build(year, out):
         20: "3 sessions / Awal Muharram and Agong's Birthday",
         35: "3 shared sessions / 4 outside Kelantan, subject to local closures",
         DEEPAVALI_WEEK: "2 sessions in the shared plan / local dates vary",
-        STOP_WEEK: "up to 4 sessions before school assessment or UASA",
-        41: "School assessment or post-assessment activities / 0 new Lessons",
         42: "Year-end activities / 0 new Lessons",
         43: "Year-end activities / 0 new Lessons",
         44: "Year-end activities / 0 new Lessons",
     }
+    notes.update(dict.fromkeys(LATE_TEACHING_WEEKS, "up to 4 sessions before school assessment or UASA"))
     calendar_page(pdf, year, weeks[:22], notes, "2027 calendar · January to June")
     calendar_page(pdf, year, weeks[22:], notes, "2027 calendar · June to December")
     for week, group_a, group_b, lessons in weeks:
@@ -257,7 +257,7 @@ def build(year, out):
                 detail += "   /   If English slots are available"
             if week == DEEPAVALI_WEEK:
                 detail += "   /   On available school days"
-            if week == STOP_WEEK:
+            if week in LATE_TEACHING_WEEKS:
                 detail += "   /   Before school assessment or UASA"
             frame(pdf, year, "DATED LESSONS", f"Week {week:02d}  ·  {lesson_range(lessons)}", detail)
             draw_rows(pdf, (rows[n] for n in lessons))
