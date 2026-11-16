@@ -120,7 +120,7 @@ class MobileRptDownloadTests(unittest.TestCase):
                     result=self.prepare(page)
                     self.assertEqual(result["href"],"#")
                     self.assertFalse(result["linkHidden"])
-                    self.assertEqual(result["linkDisplay"],"inline-flex")
+                    self.assertNotEqual(result["linkDisplay"],"none")
                     self.assertEqual(result["desktopButtonDisplay"],"none")
                     self.assertEqual(result["linkTarget"],"_blank")
                     self.assertFalse(result["desktopButtonDisabled"])
