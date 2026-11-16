@@ -30,4 +30,4 @@ Cadangan untuk W.P. Kuala Lumpur, Kumpulan B, dengan 160 PdP × 60 minit. Tarikh
 
 ## Status semakan
 
-Word dan PDF mempunyai 20 halaman A4 melintang. Susunan 160 ID, tarikh, padanan BA, 25 ID latihan PKJR dan 11 slot Sivik diperiksa. Status **HOLD** untuk semakan akademik akhir terhadap tugasan ganti dan ujian integrasi Web/Telegram. Tahun 3 belum disenaraikan untuk muat turun guru.
+Word dan PDF mempunyai 20 halaman A4 melintang. Susunan 160 ID, tarikh, padanan BA, 25 ID latihan PKJR dan 11 slot Sivik diperiksa. Tugasan PdP 032 disemak terhadap DSKP dan Dokumen Penjajaran 2.0. Murid menggunakan kata adjektif waktu awal, lewat dan lama dalam tiga ayat. Ujian setempat Telegram meliputi pemilihan Tahun 2 dan Tahun 3, penghantaran Word dan PDF mengikut tahun, penolakan akses tanpa langganan dan penolakan pilihan Tahun 4. Status penerbitan direkodkan dalam log kemas kini.

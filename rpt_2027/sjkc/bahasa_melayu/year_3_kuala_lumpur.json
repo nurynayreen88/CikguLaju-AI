@@ -8,7 +8,7 @@
   "calendar_group": "B",
   "time_allocation_hours": 160,
   "calendar_model": "Tarikh cadangan Kumpulan B seperti Tahun 2 CikguLaju. Satu PdP mengambil masa 60 minit.",
-  "release_ready": false,
+  "release_ready": true,
   "additional_calendar_exclusions": [
     "2027-01-22",
     "2027-02-01",
