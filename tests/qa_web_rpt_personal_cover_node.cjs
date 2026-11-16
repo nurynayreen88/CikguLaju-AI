@@ -119,7 +119,7 @@ async function main(){
     }
   }
 
-  for(const year of [2,3]){
+  for(const year of [2,3,4]){
     const sainsKey="sains_sjkc:"+year;
     const sainsRaw=fs.readFileSync(path.join(root,"..","sjkc","sains","RPT_2027_Sains_SJKC_Tahun_"+year+".pdf"));
     const sainsHash=crypto.createHash("sha256").update(sainsRaw).digest("hex");
