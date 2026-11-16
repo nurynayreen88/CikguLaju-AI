@@ -19,6 +19,7 @@ from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, do
 
 from rpt_2027.sjkc.bahasa_cina import documents as bahasa_cina_sjkc
 from rpt_2027.sjkc.bahasa_melayu import documents as bahasa_melayu_sjk
+from rpt_2027.sjkc.sains import documents as sains_sjkc
 
 ROOT = Path(__file__).resolve().parents[1] / "rpt_2027"
 YEARS = tuple(range(2,7))
@@ -26,6 +27,7 @@ V2 = "web_2027_pdfs"
 SJK_RPTS = {
     "bahasa-cina": bahasa_cina_sjkc,
     "bahasa-melayu": bahasa_melayu_sjk,
+    "sains": sains_sjkc,
 }
 SJK_SLUG_BY_CODE = {definition.CODE: slug for slug, definition in SJK_RPTS.items()}
 # (Label, allowed years, legacy folder, legacy exact filename, legacy status)

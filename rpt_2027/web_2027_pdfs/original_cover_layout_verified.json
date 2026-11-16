@@ -424,5 +424,49 @@
       "bahasa_melayu_sjk:5": "b0a76b742681c2075b0f4edd5b0e8f99b1f3e53998bf8cb6404c0372b57d64dd",
       "bahasa_melayu_sjk:6": "6b136dae955f44b470405f459459849f6d52294e049d80ff3bc099cda50e13fe"
     }
+  },
+  "sjkc_sains": {
+    "version": 1,
+    "status": "SJKC_SAINS_PDF_COVER",
+    "page_width": 841.89,
+    "page_height": 595.3,
+    "tolerance_pt": 0.25,
+    "identity_background_rgb": [
+      1,
+      1,
+      1
+    ],
+    "logo_background_rgb": [
+      1,
+      1,
+      1
+    ],
+    "logo_interior_top_left": [
+      658.2,
+      327,
+      793.2,
+      408.5
+    ],
+    "logo_image_safe_top_left": [
+      664,
+      333,
+      787,
+      403
+    ],
+    "school_row_top_left": [
+      119,
+      272,
+      433,
+      288
+    ],
+    "teacher_row_top_left": [
+      115,
+      300,
+      429,
+      316
+    ],
+    "source_sha256_by_subject_year": {
+      "sains_sjkc:2": "6da40481df031c2d9ce68acf09c3b1876741bde3ff78dbaba0f7b5b747c4a51c"
+    }
   }
 }
