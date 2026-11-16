@@ -7,10 +7,8 @@ from pathlib import Path
 from primary_language_subjects import PRIMARY_LANGUAGE_SUBJECTS
 from tempfile import TemporaryDirectory
 from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
-from rpt_2027.sjkc.bahasa_cina.documents import (
-    FORMATS as SJKC_FORMATS, LABEL as SJKC_LABEL, YEARS as SJKC_YEARS,
-    document_path as sjkc_document_path,
-)
+from rpt_2027.sjkc.bahasa_cina import documents as bahasa_cina_sjkc
+from rpt_2027.sjkc.bahasa_melayu import documents as bahasa_melayu_sjk
 from rpt_2027.psv.telegram_downloads import pdf_ready as psv_pdf_ready, build_pdf as build_psv_pdf
 from rpt_2027.matematik.telegram_downloads import pdf_ready as math_pdf_ready
 from rpt_2027.bahasa_melayu.telegram_downloads import pdf_ready as bm_pdf_ready
@@ -21,6 +19,10 @@ from rpt_2027.pendidikan_moral.complete_96_downloads import combined_pdf_ready a
 
 PDF_ROOT = Path(__file__).resolve().parent
 YEARS = frozenset(range(2, 7))
+SCHOOL_RPT_CALLBACKS = {
+    "rpt2027_sjkc": bahasa_cina_sjkc,
+    "rpt2027_bm_sjk": bahasa_melayu_sjk,
+}
 
 
 def pdf_path(year):
@@ -56,7 +58,6 @@ def install(ns):
              [{"text": "🏠 Menu Utama", "callback_data": "home"}]])
 
     published_year_tokens = tuple(map(str, PUBLISHED_YEARS))
-    sjkc_year_tokens = tuple(map(str, SJKC_YEARS))
 
     def callback(cid, d):
         data = str(d or "")
@@ -65,33 +66,35 @@ def install(ns):
         is_psv = data.startswith("rpt2027_psv_pdf_")
         is_dlp = data.startswith("rpt2027_dlp:")
         is_language = data.startswith("rpt2027_language:")
-        is_sjkc = data.startswith("rpt2027_sjkc:")
-        if data != "rpt2027_home" and not is_year and not is_download and not is_psv and not is_dlp and not is_language and not is_sjkc:
+        callback_key, separator, payload = data.partition(":")
+        school_subject = SCHOOL_RPT_CALLBACKS.get(callback_key) if separator else None
+        if data != "rpt2027_home" and not is_year and not is_download and not is_psv and not is_dlp and not is_language and school_subject is None:
             return previous(cid, d)
         # Enforce entitlement again for stale/forged buttons and downloads.
         if not allowed(cid):
             return locked(cid)
-        if is_sjkc:
-            year, _, fmt = data.removeprefix("rpt2027_sjkc:").partition(":")
-            if year not in sjkc_year_tokens or fmt not in SJKC_FORMATS:
-                return send(cid, "Pilihan RPT Bahasa Cina SJKC tidak sah.")
-            path = sjkc_document_path(int(year), fmt)
+        if school_subject is not None:
+            year, _, fmt = payload.partition(":")
+            label = school_subject.LABEL
+            if year not in tuple(map(str, school_subject.YEARS)) or fmt not in school_subject.FORMATS:
+                return send(cid, f"Pilihan RPT {label} tidak sah.")
+            path = school_subject.document_path(int(year), fmt)
             if path is None:
-                return send(cid, "Fail RPT Bahasa Cina SJKC belum tersedia.")
+                return send(cid, f"Fail RPT {label} belum tersedia.")
             try:
                 result = send_document(
-                    cid, str(path), f"RPT 2027 · {SJKC_LABEL} · Tahun {year} · {SJKC_FORMATS[fmt]}",
+                    cid, str(path), f"RPT 2027 · {label} · Tahun {year} · {school_subject.FORMATS[fmt]}",
                 )
                 verify = ns.get("_telegram_delivery_ok_v25279")
                 confirmed = verify(result) if callable(verify) else (
                     getattr(result, "ok", False) and result.json().get("ok") is True
                 )
                 if not confirmed:
-                    return send(cid, "Telegram belum mengesahkan penghantaran RPT Bahasa Cina SJKC.")
+                    return send(cid, f"Telegram belum mengesahkan penghantaran RPT {label}.")
                 return result
             except Exception as exc:
-                print("SJKC RPT delivery failed:", type(exc).__name__, flush=True)
-                return send(cid, "Muat turun RPT Bahasa Cina SJKC gagal. Cuba lagi.")
+                print("RPT delivery failed:", label, type(exc).__name__, flush=True)
+                return send(cid, f"Muat turun RPT {label} gagal. Cuba lagi.")
         if is_language:
             code, _, year = data.removeprefix("rpt2027_language:").partition(":")
             label = PRIMARY_LANGUAGE_SUBJECTS.get(code)
@@ -167,13 +170,14 @@ def install(ns):
                 ]
                 if buttons:
                     kb.append(buttons)
-            sjkc_buttons = [
-                {"text": f"{SJKC_LABEL} ({label})", "callback_data": f"rpt2027_sjkc:{year}:{fmt}"}
-                for fmt, label in SJKC_FORMATS.items()
-                if sjkc_document_path(year, fmt)
-            ]
-            if sjkc_buttons:
-                kb.append(sjkc_buttons)
+            for key, school_subject in SCHOOL_RPT_CALLBACKS.items():
+                buttons = [
+                    {"text": f"{school_subject.LABEL} ({label})", "callback_data": f"{key}:{year}:{fmt}"}
+                    for fmt, label in school_subject.FORMATS.items()
+                    if school_subject.document_path(year, fmt)
+                ]
+                if buttons:
+                    kb.append(buttons)
             kb.extend(
                 [{"text": f"{label} — Dalam Penyediaan",
                   "callback_data": f"rpt2027_language:{code}:{year}"}]
