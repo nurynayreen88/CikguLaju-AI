@@ -78,10 +78,12 @@
   function validatedLayout(layout,key,hash){
     const dlp = /^(science|mathematics)_dlp:([2-6])$/.exec(key);
     const sjkc = /^bahasa_cina_sjkc:[2-6]$/.test(key);
+    const bmSjk = key==="bahasa_melayu_sjk:2";
+    if(bmSjk)layout = layout?.sjk_bahasa_melayu;
     if(dlp)layout = layout?.[`dlp_year${dlp[2]}`];
     if(sjkc)layout = layout?.sjkc_bahasa_cina;
-    const status = sjkc ? "SJKC_BAHASA_CINA_PDF_COVER" : dlp ? `DLP_YEAR_${dlp[2]}_PDF_COVER` : "ORIGINAL_COVER_TEMPLATE_LOCKED_TO_56_SOURCE_PDF_SHA256";
-    const count = sjkc ? 5 : dlp ? 2 : 56;
+    const status = bmSjk ? "SJK_BAHASA_MELAYU_PDF_COVER" : sjkc ? "SJKC_BAHASA_CINA_PDF_COVER" : dlp ? `DLP_YEAR_${dlp[2]}_PDF_COVER` : "ORIGINAL_COVER_TEMPLATE_LOCKED_TO_56_SOURCE_PDF_SHA256";
+    const count = bmSjk ? 1 : sjkc ? 5 : dlp ? 2 : 56;
     if(!layout||layout.version!==1||
        layout.status!==status||
        Object.keys(layout.source_sha256_by_subject_year||{}).length!==count||
@@ -92,7 +94,7 @@
        !layout.identity_background_rgb.every(x=>typeof x==="number"&&x>=0&&x<=1)){
       throw Error("Templat muka depan asal tidak sepadan dengan PDF RPT. Fail asal tidak diubah.");
     }
-    if(sjkc&&(!Array.isArray(layout.logo_background_rgb)||layout.logo_background_rgb.length!==3||
+    if((sjkc||bmSjk)&&(!Array.isArray(layout.logo_background_rgb)||layout.logo_background_rgb.length!==3||
        !layout.logo_background_rgb.every(x=>typeof x==="number"&&x>=0&&x<=1))){
       throw Error("Warna ruang logo RPT tidak disahkan.");
     }

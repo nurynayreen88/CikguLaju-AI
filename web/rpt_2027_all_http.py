@@ -17,13 +17,17 @@ from primary_language_subjects import PRIMARY_LANGUAGE_SUBJECTS
 from web.english_rpt_2027_http import _account, _has_paid_access
 from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
 
-from rpt_2027.sjkc.bahasa_cina.documents import (
-    CODE as SJKC_CODE, LABEL as SJKC_LABEL, YEARS as SJKC_YEARS, document_path as sjkc_document_path,
-)
+from rpt_2027.sjkc.bahasa_cina import documents as bahasa_cina_sjkc
+from rpt_2027.sjkc.bahasa_melayu import documents as bahasa_melayu_sjk
 
 ROOT = Path(__file__).resolve().parents[1] / "rpt_2027"
 YEARS = tuple(range(2,7))
 V2 = "web_2027_pdfs"
+SJK_RPTS = {
+    "bahasa-cina": bahasa_cina_sjkc,
+    "bahasa-melayu": bahasa_melayu_sjk,
+}
+SJK_SLUG_BY_CODE = {definition.CODE: slug for slug, definition in SJK_RPTS.items()}
 # (Label, allowed years, legacy folder, legacy exact filename, legacy status)
 SUBJECTS = {
     "english": ("English (SK)", YEARS, "english", "RPT_ENGLISH_TAHUN_%d_2027_UNTUK_GURU.pdf", "TERSEDIA"),
@@ -194,23 +198,28 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
         if entries:
             subjects.append({"code": code, "label": f"{label} (DLP)", "years": entries})
             dlp_count += len(entries)
-    sjkc_folder = Path(root) / "sjkc" / "bahasa_cina"
-    sjkc_entries = []
-    for year in SJKC_YEARS:
-        if sjkc_document_path(year, root=sjkc_folder) is None:
-            continue
-        ready = bool(allowed and personalization_allowed)
-        sjkc_entries.append({
-            "year": year,
-            "pdf_ready": True,
-            "status": "TERSEDIA" if ready else "Akses berbayar",
-            "download_enabled": ready,
-            "docx_ready": bool(ready and sjkc_document_path(year, "docx", root=sjkc_folder)),
-            "note": "Tarikh cadangan W.P. Kuala Lumpur, Kumpulan B.",
-            "is_draft": False,
-        })
-    if sjkc_entries:
-        subjects.append({"code": SJKC_CODE, "label": SJKC_LABEL, "years": sjkc_entries})
+    sjk_count = 0
+    for slug, definition in SJK_RPTS.items():
+        folder = Path(root) / "sjkc" / slug.replace("-", "_")
+        entries = []
+        for year in definition.YEARS:
+            if definition.document_path(year, root=folder) is None:
+                continue
+            ready = bool(allowed and personalization_allowed)
+            word_ready = bool(ready and definition.document_path(year, "docx", root=folder))
+            entries.append({
+                "year": year,
+                "pdf_ready": True,
+                "status": "TERSEDIA" if ready else "Akses berbayar",
+                "download_enabled": ready,
+                "docx_ready": word_ready,
+                "docx_url": f"/api/rpt/2027/sjkc/{slug}/{year}.docx" if word_ready else None,
+                "note": "Tarikh cadangan W.P. Kuala Lumpur, Kumpulan B.",
+                "is_draft": False,
+            })
+        if entries:
+            subjects.append({"code": definition.CODE, "label": definition.LABEL, "years": entries})
+            sjk_count += len(entries)
     for code, label in PRIMARY_LANGUAGE_SUBJECTS.items():
         subjects.append({
             "code": code,
@@ -231,11 +240,11 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
         "allowed":bool(allowed),
         "personalization_allowed":bool(personalization_allowed),
         "subjects":subjects,
-        "total_rpt":56+dlp_count+len(sjkc_entries),
+        "total_rpt":56+dlp_count+sjk_count,
         "total_display_choices":sum(len(item["years"]) for item in subjects),
         "year1_coming_soon":10,
-        "available_rpt":available+dlp_count+len(sjkc_entries),
-        "note":"Tahun 1 KP2027 belum boleh dimuat turun. RPT SK dan DLP tersedia kepada pengguna log masuk. RPT Bahasa Cina SJKC dan cetakan berprofil memerlukan akses berbayar aktif.",
+        "available_rpt":available+dlp_count+sjk_count,
+        "note":"Tahun 1 KP2027 belum boleh dimuat turun. RPT SK dan DLP tersedia kepada pengguna log masuk. RPT SJK dan cetakan berprofil memerlukan akses berbayar aktif.",
     }
 
 def create_all_rpt_blueprint(*,root=ROOT):
@@ -255,16 +264,19 @@ def create_all_rpt_blueprint(*,root=ROOT):
         return jsonify(catalog_data(root=root,allowed=True,
                                     personalization_allowed=_has_paid_access(account)))
 
-    @bp.get("/api/rpt/2027/sjkc/bahasa-cina/<int:year>.<fmt>")
-    def download_sjkc(year, fmt):
+    @bp.get("/api/rpt/2027/sjkc/<slug>/<int:year>.<fmt>")
+    def download_sjk(slug, year, fmt):
         account, error = _account()
         if error is not None:
             return error
+        definition = SJK_RPTS.get(slug)
+        if definition is None:
+            return jsonify({"error": "Pilihan RPT SJK tidak tersedia."}), 404
         if not _has_paid_access(account):
-            return jsonify({"error": "RPT Bahasa Cina SJKC memerlukan akses berbayar aktif."}), 403
-        path = sjkc_document_path(year, fmt, root=Path(root) / "sjkc" / "bahasa_cina")
+            return jsonify({"error": f"RPT {definition.LABEL} memerlukan akses berbayar aktif."}), 403
+        path = definition.document_path(year, fmt, root=Path(root) / "sjkc" / slug.replace("-", "_"))
         if path is None:
-            return jsonify({"error": "Pilihan RPT Bahasa Cina SJKC tidak tersedia."}), 404
+            return jsonify({"error": f"Pilihan RPT {definition.LABEL} tidak tersedia."}), 404
         mime = ("application/pdf" if fmt == "pdf" else
                 "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
         response = send_file(path, mimetype=mime, as_attachment=True, conditional=False)
@@ -275,8 +287,8 @@ def create_all_rpt_blueprint(*,root=ROOT):
 
     @bp.get("/api/rpt/2027/all/<subject>/<int:year>.pdf")
     def download(subject,year):
-        if subject == SJKC_CODE:
-            return download_sjkc(year, "pdf")
+        if subject in SJK_SLUG_BY_CODE:
+            return download_sjk(SJK_SLUG_BY_CODE[subject], year, "pdf")
         account,error=_account()
         if error is not None:
             return error

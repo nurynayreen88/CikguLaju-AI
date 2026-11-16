@@ -1091,7 +1091,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </div>
 <script src="/assets/pdf-lib.min.js?v=1.17.1"></script>
 <script src="/assets/pdp-pdf-copy.js?v=science-copy-expanded-20261113"></script>
-<script src="/assets/rpt-personalize.js?v=20261116-sjkc"></script>
+<script src="/assets/rpt-personalize.js?v=20261116-bm-sjk"></script>
 <script>
 "use strict";
 window.onCikguLajuTelegramAuth=async function(user){
@@ -1879,7 +1879,7 @@ let rptDownloading=false;
 function rptCurriculumFor(subject,year){
  if(year===1)return "kp2027";
  if(subject.endsWith("_dlp"))return "dlp";
- if(subject.endsWith("_sjkc"))return "sjkc";
+ if(subject.endsWith("_sjkc")||subject==="bahasa_melayu_sjk")return "sjkc";
  return "kssr";
 }
 function rptYearLabel(year,label){
@@ -1927,6 +1927,11 @@ function rptChoice(){
 function rptCanDownload(entry){
  return Boolean(entry&&entry.year.year>1&&entry.year.pdf_ready===true&&entry.year.download_enabled===true);
 }
+function rptWordUrl(entry){
+ const url=entry?.docx_url;
+ return entry?.docx_ready===true&&typeof url==="string"&&
+  /^\/api\/rpt\/2027\/sjkc\/bahasa-(cina|melayu)\/[2-6]\.docx$/.test(url)?url:null;
+}
 function refreshRptDownload(){
  const prepared=document.getElementById("rpt-prepared-manual-link");
  if(prepared){URL.revokeObjectURL(prepared.href);prepared.remove();}
@@ -1935,17 +1940,18 @@ function refreshRptDownload(){
  rptDownload.disabled=!ready;
  rptDownload.hidden=!ready;
  rptMobileLink.hidden=!ready;
- rptWordLink.hidden=!(ready&&selection.item.code==="bahasa_cina_sjkc"&&selection.year.docx_ready===true);
+ const wordUrl=ready?rptWordUrl(selection.year):null;
+ rptWordLink.hidden=!wordUrl;
  if(ready)rptMobileLink.href="#";
  else rptMobileLink.removeAttribute("href");
- if(!rptWordLink.hidden)rptWordLink.href="/api/rpt/2027/sjkc/bahasa-cina/"+selection.year.year+".docx";
+ if(wordUrl)rptWordLink.href=wordUrl;
  else rptWordLink.removeAttribute("href");
  if(!selection){rptStatus.textContent="";return;}
- const {item,year}=selection;
+ const {year}=selection;
  if(year.year===1||year.coming_soon){rptStatus.textContent="Dalam Penyediaan";return;}
  if(!year.pdf_ready){rptStatus.textContent="Fail RPT belum tersedia.";return;}
  if(!ready){rptStatus.textContent="RPT ini memerlukan akses berbayar aktif.";return;}
- const calendar=item.code==="bahasa_cina_sjkc"?year.note:"";
+ const calendar=selection.curriculum==="sjkc"?year.note:"";
  const cover=rptCatalog.personalizationAllowed?"Cetakan PDF dengan nama dan logo daripada Profil Guru.":"";
  rptStatus.textContent=[calendar,cover].filter(Boolean).join(" ");
 }

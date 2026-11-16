@@ -59,8 +59,11 @@ class MobileRptDownloadTests(unittest.TestCase):
                     {code:"sejarah",label:"Sejarah",years:[
                         {year:4,pdf_ready:true,download_enabled:true}]},
                     {code:"bahasa_cina_sjkc",label:"Bahasa Cina (SJKC)",years:[
-                        {year:2,pdf_ready:true,download_enabled:true,docx_ready:true,note:"W.P. Kuala Lumpur"},
+                        {year:2,pdf_ready:true,download_enabled:true,docx_ready:true,docx_url:"/api/rpt/2027/sjkc/bahasa-cina/2.docx",note:"W.P. Kuala Lumpur"},
                         {year:3,pdf_ready:true,download_enabled:false}]},
+                    {code:"bahasa_melayu_sjk",label:"Bahasa Melayu (SJK)",years:[
+                        {year:2,pdf_ready:true,download_enabled:true,docx_ready:true,
+                         docx_url:"/api/rpt/2027/sjkc/bahasa-melayu/2.docx",note:"W.P. Kuala Lumpur"}]},
                     {code:"science_dlp",label:"Science (DLP)",years:[
                         {year:3,pdf_ready:true,download_enabled:true,year_label:"Year 3"}]}
                 ];
@@ -92,6 +95,10 @@ class MobileRptDownloadTests(unittest.TestCase):
             subject.select_option("bahasa_cina_sjkc")
             self.assertTrue(word.is_visible())
             self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/bahasa-cina/2.docx")
+            subject.select_option("bahasa_melayu_sjk")
+            self.assertTrue(word.is_visible())
+            self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/bahasa-melayu/2.docx")
+            self.assertIn("W.P. Kuala Lumpur",page.locator("#rpt-status").inner_text())
             year.select_option("3")
             self.assertEqual(subject.input_value(),"")
             self.assertIsNone(word.get_attribute("href"))
