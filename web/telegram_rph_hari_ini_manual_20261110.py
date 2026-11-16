@@ -6,6 +6,65 @@ entitlement path and never record a progress checkpoint for a failed delivery.
 from __future__ import annotations
 
 import html
+from pathlib import Path
+from tempfile import TemporaryDirectory
+
+
+def _integrated_plan(rt, cid, entry, row):
+    subject = str(entry.get("subject", "")).casefold()
+    if subject not in {"english", "bahasa inggeris", "bi"}:
+        return None
+    from web import english_integrated_rph_2027 as integrated
+    if not integrated.enabled():
+        return None
+    today = integrated.teaching_date()
+    if today.year != 2027 or not integrated.one_hour(entry.get("start"), entry.get("end")):
+        return None
+    year_label = row.get("year_label") or row.get("year")
+    if not year_label:
+        profile = rt._profile_class_record(cid, entry["class_name"]) or {}
+        year_label = profile.get("year_label") or profile.get("year")
+    year = rt._english_primary_year_number_v2517(year_label)
+    raw = row.get("_sequence_no") or row.get("lesson_no")
+    try:
+        number = int(raw)
+    except (TypeError, ValueError):
+        return None
+    pair = integrated.pair_numbers(year, number)
+    if pair is None:
+        return None
+    return today, year, number, pair
+
+
+def _generate_integrated(rt, cid, entry, row, plan):
+    from web import english_integrated_rph_2027 as integrated
+    today, year, number, pair = plan
+    state = rt.state.setdefault(cid, {})
+    snapshot = dict(state)
+    try:
+        if not rt._apply_verified_next_row_v25277(cid, entry, row):
+            return {"ok": False, "reason": "RPH bersepadu belum tersedia"}
+        if not rt._credit_gate(cid, state):
+            return {"ok": False, "reason": "had FREE/VIP"}
+        payload = {
+            "class": entry["class_name"], "date": today.isoformat(),
+            "time": state.get("rph_time", ""), "students": str(state.get("rph_students") or ""),
+        }
+        data = integrated.render(year, number, "pdf", payload)
+        state["lesson_no"] = state["lesson"] = pair[-1]
+        state["textbook_lesson_no"] = pair[-1]
+        with TemporaryDirectory() as folder:
+            path = Path(folder) / integrated.filename(year, pair, "pdf")
+            path.write_bytes(data)
+            caption = f"📘 RPH English • Lesson {pair[0]:03d} + {pair[1]:03d}"
+            result = rt.send_document(cid, str(path), caption)
+        if not rt._telegram_delivery_ok_v25279(result):
+            return {"ok": False, "reason": "penghantaran belum disahkan"}
+        rt._consume_free_after_success_v25282(cid, "successful_integrated_rph_generation")
+        return {"ok": True, "reason": caption}
+    finally:
+        state.clear()
+        state.update(snapshot)
 
 
 def install(rt):
@@ -83,18 +142,21 @@ def install(rt):
                 subj = str(row.get("_resolved_subject_v25294") or entry.get("subject") or "")
                 canonical = rt._entry_with_subject_v25294(entry, subj)
                 seq = str(row.get("_sequence_no") or row.get("lesson_no") or row.get("sequence_no") or "")
-                lesson_key = (str(canonical.get("class_name") or "").casefold(),
-                              subj.casefold(), seq)
-                if lesson_key in successful_lessons:
-                    results.append((canonical, False, "PdP/Lesson yang sama sudah dijana"))
-                    continue
                 if not seq:
                     results.append((canonical, False, "Nombor PdP/Lesson belum disahkan"))
                     continue
                 ss["_rph_hari_ini_delivery_guard_20261110"] = True
                 try:
                     try:
-                        if source == "checkpoint":
+                        integrated_plan = _integrated_plan(rt, cid, canonical, row)
+                        lesson_key = (str(canonical.get("class_name") or "").casefold(),
+                                      subj.casefold(), str(integrated_plan[-1][0]) if integrated_plan else seq)
+                        if lesson_key in successful_lessons:
+                            results.append((canonical, False, "PdP/Lesson yang sama sudah dijana"))
+                            continue
+                        if integrated_plan:
+                            outcome = _generate_integrated(rt, cid, canonical, row, integrated_plan)
+                        elif source == "checkpoint":
                             outcome = rt._generate_one_quick_rph_v25278(cid, canonical)
                         else:
                             outcome = rt._generate_calendar_row_v25293(cid, canonical, row)
@@ -118,7 +180,7 @@ def install(rt):
                 entry.get("subject") or "", entry.get("class_name") or "",
                 entry.get("start") or "", entry.get("end") or "")
             lines.append(("✓ " if ok else "⚠️ ") + html.escape(label))
-            if not ok:
+            if reason and (not ok or reason.startswith("📘 RPH English")):
                 lines.append("   " + html.escape(reason)[:140])
         lines.extend(["", "Kemajuan PdP hanya disimpan selepas penghantaran RPH berjaya."])
         return rt.send(cid, "\n".join(lines),

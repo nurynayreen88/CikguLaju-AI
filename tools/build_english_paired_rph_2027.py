@@ -2,6 +2,7 @@
 
 import argparse
 import json
+from functools import lru_cache
 from pathlib import Path
 
 from docx import Document
@@ -11,7 +12,10 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Mm, Pt, RGBColor
 
-from build_english_rpt_2027_review import ROOT, SOURCE, schedule, source_rows
+if __package__:
+    from .build_english_rpt_2027_review import ROOT, SOURCE, schedule, source_rows
+else:
+    from build_english_rpt_2027_review import ROOT, SOURCE, schedule, source_rows
 
 
 TASKS = SOURCE / "october_paired_rph_tasks.txt"
@@ -118,7 +122,7 @@ def band(document, left, right):
         run.font.color.rgb = RGBColor(255, 255, 255)
 
 
-def build_sheet(out, year, week, group_a, group_b, slot, lessons):
+def make_sheet(year, week, group_a, group_b, slot, lessons, teacher=None):
     document = Document()
     stylise(document)
     a, b = (lesson[0] for lesson in lessons)
@@ -137,7 +141,14 @@ def build_sheet(out, year, week, group_a, group_b, slot, lessons):
     p.paragraph_format.space_after = Pt(3)
     labelled(document.add_paragraph(), "SOW references", f"Lesson {a:03d} + {b:03d}")
     document.add_paragraph(f"Week {week:02d} · Session {slot} · 60 minutes   |   Group A {group_a} · Group B {group_b}")
-    document.add_paragraph("Class ____________   Date ____________   Time ____________   Attendance ____ / ____")
+    teacher = teacher or {}
+    document.add_paragraph("   ".join(
+        f"{label} {teacher.get(key) or blank}"
+        for label, key, blank in (
+            ("Class", "class", "__________"), ("Date", "date", "__________"),
+            ("Time", "time", "__________"), ("Attendance", "students", "____ / ____"),
+        )
+    ))
 
     band(document, "Curriculum and materials", "SOW")
     for number, row, _, _, _ in lessons:
@@ -164,7 +175,18 @@ def build_sheet(out, year, week, group_a, group_b, slot, lessons):
     labelled(document.add_paragraph(), "Closure (4 min)", "Invite pupils to share a response from the activities and recap one useful example from the session.")
     labelled(document.add_paragraph(), "Reflection", "Activity 1 ____ / ____ met the target.   Activity 2 ____ / ____ met the target.")
     document.add_paragraph("Follow-up _________________________________________________________________")
-    document.save(out / f"RPH_English_SK_2027_Y{year}_L{a:03d}-{b:03d}.docx")
+    if teacher.get("reflection"):
+        labelled(document.add_paragraph(), "Teacher notes", teacher["reflection"])
+    return document
+
+
+@lru_cache(maxsize=1)
+def paired_plan_index():
+    return {
+        (plan[0], lesson[0]): plan
+        for plan in paired_lessons()
+        for lesson in plan[-1]
+    }
 
 
 def main():
@@ -174,7 +196,10 @@ def main():
     for year, week, group_a, group_b, slot, lessons in paired_lessons():
         folder = out / f"Year_{year}"
         folder.mkdir(parents=True, exist_ok=True)
-        build_sheet(folder, year, week, group_a, group_b, slot, lessons)
+        a, b = (lesson[0] for lesson in lessons)
+        make_sheet(year, week, group_a, group_b, slot, lessons).save(
+            folder / f"RPH_English_SK_2027_Y{year}_L{a:03d}-{b:03d}.docx"
+        )
 
 
 if __name__ == "__main__":

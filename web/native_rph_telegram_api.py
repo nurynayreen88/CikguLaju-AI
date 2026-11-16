@@ -329,6 +329,54 @@ def create_native_rph_blueprint(runtime):
         response.headers["X-Content-Type-Options"]="nosniff"
         return response
 
+    @bp.post("/internal/rph/v1/english-integrated")
+    def english_integrated():
+        allowed, status = _authorized()
+        if not allowed:
+            return jsonify({"error": "Unauthorized renderer"}), status
+        from web import english_integrated_rph_2027 as integrated
+        if not integrated.enabled():
+            return jsonify({"error": "Integrated English review disabled"}), 503
+        if not request.is_json or not 0 < (request.content_length or 0) <= 7000:
+            return jsonify({"error": "Invalid English RPH request"}), 400
+        body = request.get_json(silent=True)
+        try:
+            if not isinstance(body, dict) or set(body) != {"year", "lesson", "unit", "teacher", "format"}:
+                raise ValueError("Invalid English RPH request")
+            year, number, unit = (body[k] for k in ("year", "lesson", "unit"))
+            if type(year) is not int or not 2 <= year <= 6 or type(number) is not int or not 1 <= number <= 160:
+                raise ValueError("Invalid English source")
+            unit = _require_text(unit, 300)
+            fmt = body["format"]
+            if fmt not in ("word", "pdf", "metadata"):
+                raise ValueError("Invalid format")
+            from web.telegram_verified_rpt_rph_bridge import _teacher_metadata
+            teacher = body["teacher"]
+            cls, raw_date, raw_time, pupils, _ = _teacher_metadata(teacher, "ENGLISH")
+            times = re.split(r"\s*-\s*", raw_time)
+            if (not raw_date or date.fromisoformat(raw_date).year != 2027
+                    or len(times) != 2 or not integrated.one_hour(*times)):
+                raise ValueError("Integrated RPH requires a 60-minute slot in 2027")
+        except (ValueError, TypeError, KeyError):
+            return jsonify({"error": "Invalid English RPH request"}), 400
+        try:
+            pair = integrated.plan_for_selection(year, number, unit)
+            if pair is None:
+                return jsonify({"error": "Paired English RPH unavailable"}), 404
+            if fmt == "metadata":
+                return jsonify({"lessons": list(pair)})
+            data = integrated.render(year, number, fmt, {
+                "class": cls, "date": raw_date, "time": raw_time, "students": pupils,
+                "reflection": clean_reflection(teacher.get("reflection", "")),
+            })
+            response = Response(data, mimetype=MIMES[fmt])
+            response.headers["Content-Disposition"] = (
+                f'attachment; filename="{integrated.filename(year, pair, fmt)}"'
+            )
+            return response
+        except (KeyError, OSError, ValueError):
+            return jsonify({"error": "Paired English RPH source unavailable"}), 503
+
     def dlp_selection(selection):
         from dlp_year2_rph import resolve
 
