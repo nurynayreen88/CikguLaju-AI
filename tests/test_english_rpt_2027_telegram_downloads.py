@@ -79,28 +79,32 @@ class TelegramRPTTests(unittest.TestCase):
             self.assertIn("tidak sah", self.messages[-1][1])
         self.assertEqual(len(self.documents), 10)
 
-    def test_bm_sjk_year_two_paid_only_and_distinct_from_sk_and_cina(self):
+    def test_bm_sjk_year_two_and_three_paid_only_and_distinct_from_sk_and_cina(self):
         from rpt_2027.sjkc.bahasa_melayu.documents import document_path
 
         callback = self.namespace["callback"]
-        callback(123, "rpt2027_bm_sjk:2:pdf")
-        self.assertIn("Akses Terhad", self.messages[-1][1])
+        for year in (2, 3):
+            callback(123, f"rpt2027_bm_sjk:{year}:pdf")
+            self.assertIn("Akses Terhad", self.messages[-1][1])
+        self.assertEqual(self.documents, [])
         self.active = True
-        callback(123, "rpt2027_year_2")
-        buttons = {b["callback_data"]: b["text"] for row in self.messages[-1][2] for b in row}
-        for fmt in ("pdf", "docx"):
-            key = f"rpt2027_bm_sjk:2:{fmt}"
-            self.assertIn("Bahasa Melayu (SJK)", buttons[key])
-            self.assertIn(f"rpt2027_sjkc:2:{fmt}", buttons)
-            callback(123, key)
-            self.assertEqual(Path(self.documents[-1][1]), document_path(2, fmt))
-        callback(123, "rpt2027_year_3")
+        for year in (2, 3):
+            callback(123, f"rpt2027_year_{year}")
+            buttons = {b["callback_data"]: b["text"] for row in self.messages[-1][2] for b in row}
+            for fmt in ("pdf", "docx"):
+                key = f"rpt2027_bm_sjk:{year}:{fmt}"
+                self.assertIn("Bahasa Melayu (SJK)", buttons[key])
+                self.assertIn(f"rpt2027_sjkc:{year}:{fmt}", buttons)
+                callback(123, key)
+                self.assertEqual(Path(self.documents[-1][1]), document_path(year, fmt))
+                self.assertIn(f"Tahun {year}", self.documents[-1][2])
+        callback(123, "rpt2027_year_4")
         self.assertTrue(all("rpt2027_bm_sjk:" not in b["callback_data"]
                             for row in self.messages[-1][2] for b in row))
-        for key in ("rpt2027_bm_sjk:3:pdf", "rpt2027_bm_sjk:2:zip"):
+        for key in ("rpt2027_bm_sjk:4:pdf", "rpt2027_bm_sjk:3:zip"):
             callback(123, key)
             self.assertIn("tidak sah", self.messages[-1][1])
-        self.assertEqual(len(self.documents), 2)
+        self.assertEqual(len(self.documents), 4)
 
     def test_sjkc_delivery_requires_telegram_confirmation(self):
         self.active = True
