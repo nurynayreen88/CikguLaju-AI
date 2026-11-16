@@ -32,6 +32,12 @@ def main():
             f"{track['cd']}-{track['track']:02d}" for track in item["tracks"]
         ) for item in book_audio["lesson_audio_candidates"]
     }
+    book_sample = read_json(
+        ROOT / "audits/english_y5_l029_l030_original_sow_tb_sb_wb_audio_sources_20261105.json"
+    )
+    book_review_hashes = {
+        row["lesson"]: row["source_sha256"] for row in book_sample["word_a4_ci_evidence"]["lessons"]
+    } if book_sample["gates"]["printed_book_activity_verified"] else {}
     citations = check_citations()
     missing_citations = set(citations["lessons_without_explicit_printed_page"])
     wrong_citations = {item["lesson"] for item in citations["mismatches"]}
@@ -49,6 +55,8 @@ def main():
         match = _check(5, n, source)
         word_doc, pdf_doc = word[n], native[n]
         track_labels = audio_lessons.get(n, "")
+        source_hash = sha256((LESSON_ROOT / f"lesson_{n:03d}.md").read_bytes()).hexdigest()
+        book_reviewed = book_review_hashes.get(n) == source_hash
         rows.append({
             "lesson": n,
             "topic": source["topic"],
@@ -65,8 +73,15 @@ def main():
             "pdf_native_a4_satu_halaman": pdf_doc.get("pages") == 1 and bool(pdf_doc.get("a4")),
             "trek_bernombor_dalam_sow": track_labels,
             "status_audio": "semak kandungan dan tugas" if track_labels else "semak keperluan dalam rancangan",
-            "status_buku": "semak bukti aktiviti bagi versi satu Lesson",
-            "sumber_sha256": sha256((LESSON_ROOT / f"lesson_{n:03d}.md").read_bytes()).hexdigest(),
+            "status_buku": (
+                "bukti semakan buku tersedia bagi sumber ini" if book_reviewed
+                else "semak bukti aktiviti bagi versi satu Lesson"
+            ),
+            "bukti_semakan_buku": (
+                "audits/english_y5_l029_l030_original_sow_tb_sb_wb_audio_sources_20261105.json"
+                if book_reviewed else ""
+            ),
+            "sumber_sha256": source_hash,
             "kelulusan_penerbitan_direkod": approved_for_telegram(n),
         })
     OUT.mkdir(parents=True, exist_ok=True)
@@ -83,6 +98,7 @@ def main():
         counts["word_a4"] += row["word_a4_satu_halaman"]
         counts["native_pdf_a4"] += row["pdf_native_a4_satu_halaman"]
         counts["numbered_audio_lessons"] += bool(row["trek_bernombor_dalam_sow"])
+        counts["book_review_with_source_hash"] += bool(row["bukti_semakan_buku"])
         counts["release_approvals"] += row["kelulusan_penerbitan_direkod"]
     print("YEAR5_FIXED_RELEASE_EVIDENCE", json.dumps(dict(counts), sort_keys=True))
     notes = (

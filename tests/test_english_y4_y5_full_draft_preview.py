@@ -21,7 +21,7 @@ from web.english_y5_standalone_runtime import (
 from web.english_y5_fixed_draft_preview_runtime import (
     preview_rows as y5_preview, install as install_y5,
 )
-from web.english_y5_teacher_choice_runtime import adapt_rows as y5_choices
+from web.english_y5_teacher_choice_runtime import adapt_rows as y5_choices, load_proposal
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = {"TARIKH":"04/11/2026", "HARI":"Wednesday",
@@ -116,14 +116,17 @@ class EnglishY4Y5ReleaseCoverage(unittest.TestCase):
         self.assertEqual(len(mapped),151)
         print("Y5_151_FIXED_PREVIEW",len(mapped),flush=True)
 
-    def test_y5_nine_teacher_choice_proposals_unchanged(self):
+    def test_y5_nine_selected_dskp_proposals_preserve_draft_gate(self):
         for number in CHOICE_LESSONS:
             st={"subject":"English","year":"Tahun 5","lesson_no":number,"task":"rph"}
             self.assertIs(y5_preview(st,BASE),BASE)
             choice=y5_choices(st,BASE)
             self.assertIsNot(choice,BASE)
             self.assertIn("CADANGAN CIKGULAJU (DRAF)",choice["TAJUK"])
-            self.assertIn("not fixed by SOW",choice["MAIN LEARNING STANDARD"])
+            proposal = load_proposal(number)
+            self.assertEqual(choice["MAIN LEARNING STANDARD"], proposal["main_sp"])
+            self.assertEqual(choice["COMPLEMENTARY LEARNING STANDARD"], proposal["complementary_sp"])
+            self.assertFalse(approved_for_telegram(number))
 
     def test_mismatch_fail_closed_and_no_cross_year(self):
         for target in (y4_preview,y5_preview):
