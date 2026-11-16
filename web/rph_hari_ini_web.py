@@ -26,6 +26,7 @@ bp = Blueprint("rph_hari_ini_web", __name__)
 WEEKDAY = ("Isnin", "Selasa", "Rabu", "Khamis", "Jumaat", "Sabtu", "Ahad")
 FRI_SAT = frozenset(("Kedah", "Kelantan", "Terengganu"))
 RPT_WEEKLY_CATALOG = Path(__file__).with_name("rpt_weekly_suggestions_2027.json")
+INTEGRATED_ENGLISH_CATALOG = Path(__file__).with_name("english_integrated_rph_weeks_2027.json")
 SCHOOL_STATES = {state.casefold(): state for state in STATES}
 # KPM 2027 Lampiran C and the federal/state public holiday schedule. Term
 # breaks fall outside the printed windows. Schools may add local closures.
@@ -122,6 +123,19 @@ def weekly_catalog():
     return json.loads(RPT_WEEKLY_CATALOG.read_text(encoding="utf-8"))
 
 
+@lru_cache(maxsize=1)
+def integrated_english_calendar():
+    return json.loads(INTEGRATED_ENGLISH_CATALOG.read_text(encoding="utf-8"))
+
+
+def integrated_pair(year, lesson):
+    for row in integrated_english_calendar().get(str(year), {}).values():
+        for session in row[4]:
+            if len(session) == 2 and lesson in session:
+                return session
+    return None
+
+
 def is_school_day(state, target):
     group_a = state in FRI_SAT
     day = target.strftime("%m-%d")
@@ -143,6 +157,17 @@ def weekly_rpt_suggestion(state, target, subject, year):
     if not is_school_day(state, target):
         return None
     try:
+        from web.native_telegram_integrated_english_client import integrated_enabled
+        if subject == "ENGLISH" and 2 <= year <= 6 and integrated_enabled():
+            index = 0 if group_a else 2
+            for week, row in integrated_english_calendar()[str(year)].items():
+                if row[index] <= target.isoformat() <= row[index + 1]:
+                    return {
+                        "week": int(week), "group": "A" if group_a else "B",
+                        "lessons": {"": [number for session in row[4] for number in session]},
+                        "sessions": row[4], "dates": row[index:index + 2],
+                    }
+            return None
         weeks = weekly_catalog().get(f"{subject}:{year}", {})
     except (OSError, ValueError):
         return None
@@ -158,12 +183,15 @@ def weekly_rpt_suggestion(state, target, subject, year):
 def english_week_capacity(rows, state, class_name, year, suggestion):
     """Compare the saved class timetable with this week's 60-minute SOW Lessons."""
     offset = 0 if suggestion["group"] == "A" else 2
-    week = weekly_catalog()[f"ENGLISH:{year}"][str(suggestion["week"])]
-    start, end = map(date.fromisoformat, week[offset:offset + 2])
+    span = suggestion.get("dates")
+    if span is None:
+        week = weekly_catalog()[f"ENGLISH:{year}"][str(suggestion["week"])]
+        span = week[offset:offset + 2]
+    start, end = map(date.fromisoformat, span)
     state = SCHOOL_STATES[state.strip().casefold()].removeprefix("W.P. ")
     dates = (start + timedelta(days=step) for step in range((end - start).days + 1))
     school_days = {WEEKDAY[day.weekday()] for day in dates if is_school_day(state, day)}
-    required = 60 * len(suggestion["lessons"][""])
+    required = 60 * len(suggestion.get("sessions", suggestion["lessons"][""]))
     scheduled = 0
     for row in rows:
         if not isinstance(row, dict) or row.get("day") not in school_days:
@@ -355,6 +383,17 @@ def complete_pdp():
                     or type(record[4]) is not int or not 1 <= record[4] <= 999):
                 raise ProfileValidation("Lesson/PdP ini tidak sepadan dengan slot jadual")
             number = record[4]
+            if (slot["subject_code"] == "ENGLISH" and target.year == 2027
+                    and 2 <= slot["year"] <= 6):
+                from web.native_telegram_integrated_english_client import integrated_enabled
+                from datetime import time
+                if integrated_enabled() and (
+                    datetime.combine(target, time.fromisoformat(slot["end"]))
+                    - datetime.combine(target, time.fromisoformat(slot["start"]))
+                ) == timedelta(hours=1):
+                    pair = integrated_pair(slot["year"], number)
+                    if pair is not None:
+                        number = pair[-1]
         save_completion(config, uid, result["date"], slot, component, number)
         attach_progress(result, read_progress(config, uid, result["date"]))
     except ProfileValidation as exc:
