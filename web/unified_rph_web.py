@@ -805,6 +805,12 @@ def create_blueprint():
             return err
         if not g.cikgulaju_rph_paid:
             return jsonify({})
+        if selected.get("source") == "telegram-integrated-english-2027":
+            from web.native_telegram_integrated_english_client import NativeRPHUnavailable, request_integrated
+            try:
+                return jsonify(request_integrated(selected, "pbd"))
+            except NativeRPHUnavailable:
+                return jsonify({"error": "Kriteria PBD RPH English belum tersedia."}), 503
         header = {item["label"]: item["value"]
                   for item in selected.get("telegram_layout", {}).get("header", [])}
         def field(*labels, limit):

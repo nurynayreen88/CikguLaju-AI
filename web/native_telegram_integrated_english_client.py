@@ -14,17 +14,17 @@ def integrated_enabled():
 
 
 def request_integrated(data, fmt, *, opener=None):
-    if fmt not in ("metadata", "word", "pdf"):
+    if fmt not in ("metadata", "pbd", "word", "pdf"):
         raise ValueError("Unknown integrated RPH format")
     base, token = _backend()
-    mime = "application/json" if fmt == "metadata" else MIMES[fmt]
+    mime = "application/json" if fmt in ("metadata", "pbd") else MIMES[fmt]
     payload = {key: data[key] for key in ("year", "lesson", "unit", "teacher")}
     payload["format"] = fmt
     req = Request(urlsplit(base).geturl().rstrip("/") + "/internal/rph/v1/english-integrated",
                   data=json.dumps(payload, ensure_ascii=False).encode(), method="POST",
                   headers={"Authorization": "Bearer " + token, "Content-Type": "application/json",
                            "Accept": mime})
-    limit = 1500 if fmt == "metadata" else 1_000_000
+    limit = 4000 if fmt in ("metadata", "pbd") else 1_000_000
     try:
         with (opener or build_opener(BlockRedirects())).open(req, timeout=20) as response:
             if response.status != 200 or response.headers.get_content_type() != mime:
@@ -48,6 +48,19 @@ def request_integrated(data, fmt, *, opener=None):
             return pair
         except (KeyError, TypeError, ValueError):
             raise NativeRPHUnavailable("Invalid integrated lesson identity") from None
+    if fmt == "pbd":
+        try:
+            context = json.loads(content)
+            limits = {"lesson": 250, "sk": 200, "sp": 200, "criteria1": 450, "criteria2": 450}
+            if (not isinstance(context, dict) or set(context) != set(limits)
+                    or any(not isinstance(context[key], str) or not 0 < len(context[key]) <= limit
+                           for key, limit in limits.items())
+                    or context["lesson"] != "Lesson " + " + ".join(
+                        f"{number:03d}" for number in data["lessons"])):
+                raise ValueError("Invalid integrated PBD context")
+            return context
+        except (KeyError, TypeError, ValueError):
+            raise NativeRPHUnavailable("Invalid integrated PBD context") from None
     import io
     from zipfile import BadZipFile, ZipFile
     if fmt == "pdf":

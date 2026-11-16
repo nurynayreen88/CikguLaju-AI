@@ -81,13 +81,16 @@
     const bmSjk = /^bahasa_melayu_sjk:[2-6]$/.test(key);
     const sainsSjkc = /^sains_sjkc:[2-6]$/.test(key);
     const matematikSjkc = key === "matematik_sjkc:2";
+    const integratedEnglish = /^english:[2-6]$/.test(key) &&
+      layout?.english_integrated?.source_sha256_by_subject_year?.[key]===hash;
+    if(integratedEnglish)layout = layout.english_integrated;
     if(matematikSjkc)layout = layout?.sjkc_matematik;
     if(sainsSjkc)layout = layout?.sjkc_sains;
     if(bmSjk)layout = layout?.sjk_bahasa_melayu;
     if(dlp)layout = layout?.[`dlp_year${dlp[2]}`];
     if(sjkc)layout = layout?.sjkc_bahasa_cina;
-    const status = matematikSjkc ? "SJKC_MATEMATIK_PDF_COVER" : sainsSjkc ? "SJKC_SAINS_PDF_COVER" : bmSjk ? "SJK_BAHASA_MELAYU_PDF_COVER" : sjkc ? "SJKC_BAHASA_CINA_PDF_COVER" : dlp ? `DLP_YEAR_${dlp[2]}_PDF_COVER` : "ORIGINAL_COVER_TEMPLATE_LOCKED_TO_56_SOURCE_PDF_SHA256";
-    const count = matematikSjkc ? 1 : sainsSjkc ? 5 : bmSjk ? 5 : sjkc ? 5 : dlp ? 2 : 56;
+    const status = integratedEnglish ? "ENGLISH_INTEGRATED_RPT_COVER" : matematikSjkc ? "SJKC_MATEMATIK_PDF_COVER" : sainsSjkc ? "SJKC_SAINS_PDF_COVER" : bmSjk ? "SJK_BAHASA_MELAYU_PDF_COVER" : sjkc ? "SJKC_BAHASA_CINA_PDF_COVER" : dlp ? `DLP_YEAR_${dlp[2]}_PDF_COVER` : "ORIGINAL_COVER_TEMPLATE_LOCKED_TO_56_SOURCE_PDF_SHA256";
+    const count = integratedEnglish ? 5 : matematikSjkc ? 1 : sainsSjkc ? 5 : bmSjk ? 5 : sjkc ? 5 : dlp ? 2 : 56;
     if(!layout||layout.version!==1||
        layout.status!==status||
        Object.keys(layout.source_sha256_by_subject_year||{}).length!==count||
@@ -229,7 +232,7 @@
     }
     const download=new Blob([output],{type:"application/pdf"});
     const url=URL.createObjectURL(download);
-    const yearLabel=code.endsWith("_dlp")?"_YEAR_":"_TAHUN_";
+    const yearLabel=code.endsWith("_dlp")||code==="english"?"_YEAR_":"_TAHUN_";
     const filename="CIKGULAJU_RPT_"+code.toUpperCase()+yearLabel+year+
       (result.personalized?"_2027_ISI_PROFIL.pdf":"_2027_PERCUMA.pdf");
     function downloadLink(doc){

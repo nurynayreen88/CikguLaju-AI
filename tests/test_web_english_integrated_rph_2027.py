@@ -1,4 +1,5 @@
 from datetime import date
+import os
 from io import BytesIO
 from unittest import TestCase
 from unittest.mock import patch
@@ -45,3 +46,32 @@ class IntegratedWebTests(TestCase):
                 self.assertIn("013-014.pdf", response.headers["Content-Disposition"])
             self.assertEqual([c.args[1] for c in render.call_args_list],
                              ["metadata", "metadata", "pdf"] * 2)
+
+
+    def test_revised_rpt_requires_verified_bytes_and_preserves_cover_entitlement(self):
+        from web.rpt_2027_all_http import ROOT, create_all_rpt_blueprint
+        from web_v1_sessions import issue_session_ticket
+        from web_v1_telegram_auth_routes import COOKIE
+
+        app = Flask(__name__)
+        app.register_blueprint(create_all_rpt_blueprint())
+        client = app.test_client()
+        conf = {"CIKGULAJU_WEB_SESSION_SECRET": "local-test-session-" * 3}
+        secret = conf["CIKGULAJU_WEB_SESSION_SECRET"]
+        access = {"telegram_user_id": 123, "authenticated": True, "rakan_pembangun": True}
+        with patch.dict(os.environ, {"CIKGULAJU_ENGLISH_2027_INTEGRATED_RPH_ENABLED": "1"}), \
+                patch("web_v1_telegram_auth_routes._config", return_value=conf), \
+                patch("web_v1_telegram_auth_routes._lookup", return_value=access):
+            url = "/api/rpt/2027/all/english/2.pdf"
+            self.assertEqual(client.get(url).status_code, 401)
+            client.set_cookie(COOKIE, issue_session_ticket(123, secret))
+            response = client.get(url)
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.headers["X-RPT-Personalization-Allowed"], "1")
+            path = ROOT / "english" / "RPT_English_SK_2027_Year_2_A_B.pdf"
+            self.assertEqual(response.data, path.read_bytes())
+            response.close()
+            access["rakan_pembangun"] = False
+            response = client.get(url)
+            self.assertEqual(response.headers["X-RPT-Personalization-Allowed"], "0")
+            response.close()

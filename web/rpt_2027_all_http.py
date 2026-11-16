@@ -9,12 +9,13 @@ compatibility fallback until the complete new catalog is deployed.
 from __future__ import annotations
 import hashlib
 import json
+import hmac
 import re
 from functools import lru_cache
 from pathlib import Path
 from flask import Blueprint, jsonify, send_file, request
 from primary_language_subjects import PRIMARY_LANGUAGE_SUBJECTS
-from web.english_rpt_2027_http import _account, _has_paid_access
+from web.english_rpt_2027_http import _account, _has_paid_access, integrated_pdf_path
 from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
 
 from rpt_2027.sjkc.bahasa_cina import documents as bahasa_cina_sjkc
@@ -92,6 +93,26 @@ def _release_manifest(root=ROOT):
     except (ValueError,KeyError,TypeError,UnicodeError,OSError):
         return {}
 
+def _integrated_english_file(subject, year, root):
+    if subject != "english":
+        return None, None
+    path = integrated_pdf_path(Path(root) / "english", year)
+    if path is None:
+        return None, None
+    try:
+        layout = json.loads((Path(root) / V2 / "original_cover_layout_verified.json").read_text("utf-8"))
+        expected = layout["english_integrated"]["source_sha256_by_subject_year"][f"english:{year}"]
+        if path.is_symlink() or not 8000 <= path.stat().st_size <= 1_000_000:
+            return path, None
+        content = path.read_bytes()
+        digest = hashlib.sha256(content).hexdigest()
+        if content.startswith(b"%PDF-") and hmac.compare_digest(digest, expected):
+            return path, digest
+    except (OSError, ValueError, KeyError, TypeError):
+        pass
+    return path, None
+
+
 def _staged_file(subject,year,*,root=ROOT):
     entry=_release_manifest(root).get(f"{subject}:{year}")
     if not entry:
@@ -167,6 +188,17 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
                     "note":"RPT Tahun 1 KP2027 masih disediakan. PDF belum diterbitkan.",
                     "is_draft":True,
                     "coming_soon":True,
+                })
+                continue
+            integrated, digest = _integrated_english_file(code, year, root)
+            if integrated is not None:
+                ready = digest is not None
+                available += int(ready)
+                entries.append({
+                    "year": year, "year_label": f"Year {year}", "pdf_ready": ready,
+                    "status": "SEMAKAN GURU" if ready else "PDF BELUM DIPASANG",
+                    "download_enabled": bool(ready and allowed), "is_draft": True,
+                    "note": "Kumpulan A dan B. 160 rujukan SOW dalam 142 sesi hingga akhir Oktober.",
                 })
                 continue
             current=_staged_file(code,year,root=root)
@@ -307,6 +339,15 @@ def create_all_rpt_blueprint(*,root=ROOT):
             return response
         if subject not in SUBJECTS or year not in SUBJECTS[subject][1]:
             return jsonify({"error":"Pilihan RPT tidak sah"}),404
+        integrated, digest = _integrated_english_file(subject, year, root)
+        if integrated is not None:
+            if digest is None:
+                return jsonify({"error": "PDF RPT English bersepadu belum dapat disahkan."}), 503
+            response = send_file(integrated, mimetype="application/pdf", as_attachment=True,
+                                 download_name=integrated.name, conditional=False)
+            response.headers["X-RPT-Source-SHA256"] = digest
+            response.headers["X-RPT-Personalization-Allowed"] = "1" if _has_paid_access(account) else "0"
+            return response
         staged=_staged_file(subject,year,root=root)
         path=staged or _legacy_file(subject,year,root=root)
         if path is None:
