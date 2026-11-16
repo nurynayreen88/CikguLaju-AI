@@ -1,6 +1,16 @@
 # Pemetaan sumber Matematik SJKC Tahun 3
 
-Skop ialah RPT 2027 Matematik SJKC Tahun 3 dalam bahasa Cina, W.P. Kuala Lumpur, Kumpulan B. DSKP KSSR (Semakan 2017) v3 menyenaraikan 52 SK dan 102 SP dalam sembilan unit. RPT 2026 sekolah 金星小学 disemak sebagai rujukan turutan kandungan. Peruntukan 96 jam setahun ialah asas agihan yang perlu disahkan dalam jadual PdP.
+Skop ialah RPT 2027 Matematik SJKC Tahun 3 dalam bahasa Cina untuk sekolah Kumpulan A dan Kumpulan B. Kedua-dua julat tarikh hendaklah dipaparkan bersama pada setiap baris minggu, bukan melalui pilihan kumpulan. W.P. Kuala Lumpur (Kumpulan B) ialah contoh semakan tarikh, bukan had liputan RPT. DSKP KSSR (Semakan 2017) v3 menyenaraikan 52 SK dan 102 SP dalam sembilan unit. RPT 2026 sekolah 金星小学 disemak sebagai rujukan turutan kandungan. Peruntukan 96 jam setahun ialah asas agihan yang perlu disahkan dalam jadual PdP.
+
+
+## Keperluan format takwim 2027 (disahkan pengguna)
+
+- **Satu RPT bagi kedua-dua kumpulan**; tiada dropdown atau pilihan Kumpulan A/B untuk memuat turun fail.
+- Setiap baris mengandungi **Minggu | Tarikh Kumpulan A | Tarikh Kumpulan B | Unit/Tajuk | SK | SP | PdP | Rujukan Buku Teks/Buku Aktiviti**. Kedua-dua tarikh mesti disalin ke Word dan PDF, termasuk versi muka depan berprofil.
+- Contoh Minggu 1: **A 4–7 Januari 2027**, **B 4–8 Januari 2027**. Minggu 2: **A 10–14 Januari 2027**, **B 11–15 Januari 2027**. Semua minggu lain mesti dijana daripada takwim rasmi KPM, bukan menambah tujuh hari secara automatik kerana cuti dan minggu persekolahan tidak semestinya bersambung.
+- **Jangan gandakan PdP**: satu baris PdP yang sama mempunyai dua tarikh kumpulan, bukan dua PdP berlainan. Agihan 96 jam setahun disemak berasingan daripada bilangan minggu.
+- Sekiranya tarikh cuti menyebabkan minggu tidak mempunyai PdP, nyatakan cuti/tiada PdP dan jangan mereka-reka SP untuk mengisi ruang.
+- **Status: spesifikasi audit sahaja.** Tahun 3 belum mempunyai fail Word/PDF siap atau diterbitkan; lengkapkan padanan Unit 3–9 sebelum penerbitan.
 
 ## Indeks sumber setahun
 
