@@ -97,4 +97,9 @@ RPT menggunakan 44 baris minggu daripada takwim yang digunakan pada RPT SJKC Tah
 - PdP 050 menggunakan contoh lama pada BT m.s. 16 untuk menerangkan cara membaca jadual. Guru menggunakan jadual pertukaran bertarikh pada hari PdP bagi SP 4.6.2.
 - Lampiran A–C KPM disemak dengan 44 julat minggu kedua-dua kumpulan. Minggu 1 ialah ruang pengisian sekolah. Minggu 6 dan 19 mempunyai sifar PdP dalam agihan bersama. Jumlah 96 jam dan turutan PdP 001–096 lulus pada Word, PDF dan data. Setiap RPH mempunyai satu halaman A4, objektif yang boleh diukur, latihan bersumber dan tugasan PBD.
 
+## Semakan laluan aplikasi
+
+- 16 ujian katalog/penghantaran RPT Telegram dan 11 ujian katalog Web lulus pada kod asas. Simulasi dengan dokumen sebenar Tahun 2 dan Tahun 3 mengesahkan pilihan tahun, akses berbayar serta kandungan Word dan PDF, termasuk SHA-256 PDF di Web.
+- Katalog pengeluaran RPT masih menyenaraikan Tahun 2. Penjana RPH masih menggunakan laluan Matematik sedia ada dan memerlukan pengenalan sumber Matematik SJKC serta ujian pemilihan PdP dan janaan sebenar sebelum diterbitkan.
+
 Status HOLD pada PR #828 sementara menunggu kelulusan kandungan dan ujian janaan sebenar melalui Web serta Telegram.
