@@ -376,5 +376,49 @@
       "bahasa_cina_sjkc:5": "f9a5f61a1651c1ffb0c2f7adad7199d25f2a1fc09e0d3506c6bbd4d472ab62f2",
       "bahasa_cina_sjkc:6": "1f73b6018781684d334ff2cc6a6f8da61287a13217705ab177763fd28de5992a"
     }
+  },
+  "sjk_bahasa_melayu": {
+    "version": 1,
+    "status": "SJK_BAHASA_MELAYU_PDF_COVER",
+    "page_width": 841.89,
+    "page_height": 595.3,
+    "tolerance_pt": 0.6,
+    "identity_background_rgb": [
+      0.9529411764705882,
+      0.9686274509803922,
+      0.9803921568627451
+    ],
+    "logo_background_rgb": [
+      0.9529411764705882,
+      0.9686274509803922,
+      0.9803921568627451
+    ],
+    "logo_interior_top_left": [
+      347,
+      36,
+      495,
+      70
+    ],
+    "logo_image_safe_top_left": [
+      348,
+      36,
+      494,
+      70
+    ],
+    "school_row_top_left": [
+      48,
+      238,
+      351,
+      256
+    ],
+    "teacher_row_top_left": [
+      363,
+      238,
+      665,
+      256
+    ],
+    "source_sha256_by_subject_year": {
+      "bahasa_melayu_sjk:2": "d8a153679f729d6e446db6a4c803cc9c3ec7af1d5931dd7b237e8270e49bfa4d"
+    }
   }
 }

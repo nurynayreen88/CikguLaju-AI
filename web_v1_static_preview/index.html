@@ -1094,7 +1094,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </div>
 <script src="/assets/pdf-lib.min.js?v=1.17.1"></script>
 <script src="/assets/pdp-pdf-copy.js?v=science-copy-expanded-20261113"></script>
-<script src="/assets/rpt-personalize.js?v=20261116-sjkc"></script>
+<script src="/assets/rpt-personalize.js?v=20261116-bm-sjk"></script>
 <script>
 "use strict";
 window.onCikguLajuTelegramAuth=async function(user){
@@ -1866,6 +1866,11 @@ async function populateMaterialList(){
    (sourceError?"Semakan belum lengkap: "+sourceError:extraNotice);
 }
 document.getElementById("show-materials").addEventListener("click",()=>{void populateMaterialList();});
+function rptWordUrl(entry){
+ const url=entry?.docx_url;
+ return entry?.docx_ready===true&&typeof url==="string"&&
+  /^\/api\/rpt\/2027\/sjkc\/bahasa-(cina|melayu)\/[2-6]\.docx$/.test(url)?url:null;
+}
 function renderAllRptCards(data){
  const panel=document.getElementById("rpt-all-list");
  const summary=document.getElementById("rpt-catalog-summary");
@@ -1903,10 +1908,11 @@ function renderAllRptCards(data){
                                      document.getElementById("rpt-status"),button);
     });
     card.append(button);
-    if(year.docx_ready===true){
+    const wordUrl=rptWordUrl(year);
+    if(wordUrl){
      const word=document.createElement("a");
      word.className="rpt-year-link";
-     word.href="/api/rpt/2027/sjkc/bahasa-cina/"+year.year+".docx";
+     word.href=wordUrl;
      word.textContent="Muat turun Word";
      card.append(word);
     }
@@ -1970,8 +1976,9 @@ function refreshRptDownload(){
  const ready=selection?.year.year>1&&selection.year.download_enabled===true;
  rptDownload.disabled=!ready;
  if(rptWordLink){
-  rptWordLink.hidden=!(ready&&selection.year.docx_ready===true);
-  if(!rptWordLink.hidden)rptWordLink.href="/api/rpt/2027/sjkc/bahasa-cina/"+selection.year.year+".docx";
+  const wordUrl=ready?rptWordUrl(selection.year):null;
+  rptWordLink.hidden=!wordUrl;
+  if(wordUrl)rptWordLink.href=wordUrl;
   else rptWordLink.removeAttribute("href");
  }
  rptMobileLink.hidden=!ready;

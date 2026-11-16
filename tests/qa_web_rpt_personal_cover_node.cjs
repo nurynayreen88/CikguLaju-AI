@@ -99,6 +99,23 @@ async function main(){
     }
   }
 
+  const bmKey="bahasa_melayu_sjk:2";
+  const bmRaw=fs.readFileSync(path.join(root,"..","sjkc","bahasa_melayu","RPT_2027_Bahasa_Melayu_SJK_Tahun_2.pdf"));
+  const bmHash=crypto.createHash("sha256").update(bmRaw).digest("hex");
+  const bmLayout=validatedLayout(layout,bmKey,bmHash);
+  assert.throws(()=>validatedLayout(layout,bmKey,"0".repeat(64)));
+  const bmDoc=await PDF.PDFDocument.load(bmRaw);
+  const bmResult=await fillOriginalCover(bmDoc,{display_name:"Cikgu Tan",school_name:"SJK(C) Contoh"},
+    tinyPng,bmLayout,{PDFLib:PDF,textPng:async()=>tinyPng});
+  assert.strictEqual(bmResult.pages,20);
+  assert.ok(bmResult.hasLogo&&bmResult.hasSchool&&bmResult.hasTeacher);
+  const bmOutput=await bmDoc.save();
+  assert.strictEqual((await PDF.PDFDocument.load(bmOutput)).getPageCount(),20);
+  if(write){
+    fs.writeFileSync(path.join(outputDir,"bm-sjk-2.pdf"),bmOutput);
+    fs.writeFileSync(path.join(outputDir,"bm-sjk-2.source.pdf"),bmRaw);
+  }
+
   // Unfilled private profile must not create invented names or add a page.
   const key="english:2",entry=manifest.files[key];
   const raw=fs.readFileSync(path.join(root,entry.path));
