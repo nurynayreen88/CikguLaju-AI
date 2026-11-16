@@ -124,6 +124,42 @@ Dengan 38 minggu calon, had teori ialah 152 sesi apabila semua minggu calon menc
 
 Sumber tarikh. [Jadual Hari Kelepasan Am BKPP 2027](https://www.kabinet.gov.my/hari-kelepasan-am/), [jadual tarikh dan negeri](https://kongsilah.my/wp-content/uploads/2026/10/Hari-Cuti-Umum-2027.pdf), [Lampiran C takwim KPM](https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik) dan [ringkasan tarikh cuti ganti Awal Muharam](https://kalendar.ecentral.my/peristiwa/cuti-ganti-awal-muharram).
 
+### Jam pengajaran setahun dan minggu akhir
+
+English SK KSSR (Semakan 2017) memperuntukkan minimum 160 jam pengajaran setahun. Empat sesi 60 minit memberi empat jam untuk setiap minggu yang mempunyai semua sesi. Kiraan ini menggunakan 160 jam sebagai sasaran masa pengajaran dan menggunakan nombor Lesson SOW untuk mengesan kandungan. Rujuk [DSKP Year 3](https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-SEMAKAN-2017-BAHASA-INGGERIS-TAHUN-3-SK-b.pdf), [DSKP Year 4](https://fliphtml5.com/juojb/vqkc/DSKP_KSSR_Semakan_2017_Bahasa_Inggeris_Tahun_4/34/) dan [jawapan KPM mengenai peruntukan minimum tahunan](https://www.parlimen.gov.my/files/jindex/pdf/JDR30072025.pdf).
+
+| Semakan | Agihan bersama A/B | Agihan negeri dengan sesi dipulihkan |
+| --- | ---: | ---: |
+| Jam PdP bernombor hingga 4/5 November jika semua slot tersedia sebelum pentaksiran | 147 | 148–151 |
+| Jam PdP yang masih diperlukan untuk mencapai 160 jam | 13 | 9–12 |
+| Jumlah jika sekolah mengesahkan empat sesi pengajaran tambahan pada Minggu 41 di luar pentaksiran dan minggu yang dikosongkan | 151 | 152–155 |
+| Baki jam selepas senario empat sesi tambahan | 9 | 5–8 |
+
+Baris Minggu 41 ialah ujian kapasiti tahunan. Untuk mengekalkan arahan tamat Lesson baharu sebelum pentaksiran/UASA, sesi tambahan hanya boleh digunakan untuk ulang kaji atau pemulihan/pengayaan English yang sekolah benar-benar jadualkan. Kekalkan dua minggu selepas UASA dan tiga minggu terakhir dalam draf untuk kegunaan sekolah. Jadual kelas sebenar dan tarikh UASA belum disahkan. Rekodkan hanya minit pengajaran sebenar, termasuk PBD semasa PdP. Sesi ujian, cuti dan aktiviti sekolah umum tidak digunakan untuk menutup baki jam dalam audit ini.
+
+Untuk Year 2–3, gunakan PBD sepanjang PdP dan takwim pentaksiran sekolah. Panduan PBS KPM meletakkan UASA sekolah rendah pada Year 4–6. Sekolah menentukan tarikh UASA. Jika UASA mengambil Minggu 41, kapasiti tambahan dalam jadual ialah sifar. [Panduan Pengurusan PBS KPM 2025](https://www.moe.gov.my/storage/files/shares/pekeliling_dan_garis_panduan/Panduan%20Pengurusan%20PBS%20Edisi%201%20Tahun%202025.pdf) dan [Panduan UASA KPM](https://www.moe.gov.my/storage/files/shares/pentaksiran-berasaskan-sekolah/5.%20Panduan%20Pengurusan%20dan%20Pentadbiran%20UASA%20%26%20FAQ%20UASA.pdf).
+
+### Semakan standard bagi Lesson akhir
+
+Semakan menggunakan agihan bersama sebagai kes asas dan memeriksa Lesson 148–160 bagi setiap tahun. Pada semua 58 Lesson yang mempunyai kod tetap, setiap kod SP tetap sudah muncul dalam Lesson 001–147 tahun yang sama. Tujuh Lesson selebihnya mengandungi pilihan guru. Semakan kemunculan kod membantu merancang turutan dan pentaksiran. Semak aktiviti, teks, sastera, projek dan pencapaian murid bagi setiap Lesson sebelum mengubah penempatannya. [Lejar kod SOW daripada PDF asal](english_2_6_independent_sow_pdf_code_ledger_20261104.json).
+
+| Year | Lesson akhir dengan kod tetap yang pernah muncul | Lesson akhir pilihan guru |
+| --- | ---: | --- |
+| 2 | 13 | — |
+| 3 | 13 | — |
+| 4 | 12 | 160 |
+| 5 | 12 | 160 |
+| 6 | 8 | 155–158, 160 |
+
+Surat Siaran KPM Bil. 1 Tahun 2025 menyediakan Dokumen Penjajaran KSSR Bahasa Inggeris Tahap I Edisi 3 sebagai pilihan bersama DSKP, MOBIM dan SOW. Dokumen ini mengelompokkan SP tertentu dalam kitaran pengajaran. Kitaran boleh merangkumi beberapa waktu mengikut keupayaan murid. Pilihan ini terpakai kepada Year 2–3 dalam semakan ini. Pelaksanaan KP2027 yang diumumkan bagi kohort sekolah rendah 2027 bermula dengan Year 1. [Surat Siaran KPM Bil. 1 Tahun 2025](https://www.moe.gov.my/storage/files/shares/pekeliling_dan_garis_panduan/surat_siaran/bahagian-pengurusan-sekolah-harian/Surat%20Siaran%20Bil.1%20Pelaksanaan%20Dokumen%20Penjajaran%20Kurikulum%20BM%20Dan%20BI.pdf) dan [garis masa KP2027](https://www.moe.gov.my/kurikulum-persekolahan-2027).
+
+| Year | Contoh rujukan penjajaran bagi Lesson akhir | Bukti PdP yang perlu dikenal pasti sebelum mengubah agihan |
+| --- | --- | --- |
+| 2 | Kluster 2, hlm. 16 mengandungi SP 1.2.5 dan 3.2.3 (Lesson 158). Kluster 9, hlm. 22 mengandungi 4.3.1 dan 4.3.3 (Lesson 152 dan 159). | Murid menjawab soalan sokongan selepas membaca, serta merancang dan menulis ayat mudah dengan huruf besar dan noktah. |
+| 3 | Kluster 2, hlm. 26 mengandungi SP 1.2.2 (Lesson 150) dan 3.2.2 (Lesson 152). Kluster 8, hlm. 32 mengandungi 4.3.1 dan 4.3.3 (Lesson 153). | Murid mengenal pasti maklumat khusus daripada teks lisan dan bertulis, serta menghasilkan ayat yang ditaksir dari segi huruf besar, noktah dan tanda soal. |
+
+Contoh di atas meliputi kod terpilih. Kod pelengkap lain, bahan SOW dan kerja projek perlu kekal dapat dijejak. Pengajaran bersepadu boleh membantu liputan kemahiran sebelum pentaksiran. Jumlah 160 jam tetap perlu disahkan melalui jadual sekolah. [Dokumen Penjajaran Bahasa Inggeris Tahap I Edisi 3](https://asiemodel.net/wp-content/uploads/2025/02/DOKUMEN-PENJAJARAN-KSSR-BAHASA-INGGERIS-TAHAP-I_EDISI-3.pdf).
+
 Rujukan 2026. [Year 2](https://www.scribd.com/document/989617346/Rpt-English-Year-2-Sk-2026-by-Rozayusacademy-Kump-a-b), [Year 3 (satu minggu ulang kaji)](https://www.scribd.com/document/1031590988/3-Rpt-English-Year-3-Sk-2026), [Year 3 (dua minggu ulang kaji)](https://www.scribd.com/document/1006654453/RPT-ENGLISH-YEAR-3-SK-2026-by-RozayusAcademy-Kump-A-B), [Year 4](https://www.scribd.com/document/1048941884/Rpt-English-Year-4-Sk-2026-by-Rozayusacademy-Kump-a-b), [Year 5](https://www.scribd.com/document/973840203/Rpt-English-Year-5-Sk-2026-by-Rozayusacademy-Kump-a-b) dan [Year 6](https://www.scribd.com/document/989617349/Rpt-English-Year-6-Sk-2026-by-Rozayusacademy-Kump-a-b).
 
 Rujukan kurikulum dan takwim. [Indeks SOW English SK Year 2–6](english_primary_2_6_official_sow_index_20261103.json), [SOW Year 2](https://padlet-uploads.storage.googleapis.com/214113651/3bcd8848911cb74a8c164ebcc18198bc/Primary_Year_2_SK_Scheme_of_Work.pdf), [SOW Year 3–6](https://sites.google.com/moe-dl.edu.my/bahasa-inggeris-2026/dokumen-standard-kurikulum), [panduan peruntukan masa English SK](https://anyflip.com/zsllg/ejcr/basic/) dan [Takwim KPM 2027](https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik).
