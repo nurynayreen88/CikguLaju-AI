@@ -162,6 +162,29 @@ Contoh di atas meliputi kod terpilih. Kod pelengkap lain, bahan SOW dan kerja pr
 
 Rujukan 2026. [Year 2](https://www.scribd.com/document/989617346/Rpt-English-Year-2-Sk-2026-by-Rozayusacademy-Kump-a-b), [Year 3 (satu minggu ulang kaji)](https://www.scribd.com/document/1031590988/3-Rpt-English-Year-3-Sk-2026), [Year 3 (dua minggu ulang kaji)](https://www.scribd.com/document/1006654453/RPT-ENGLISH-YEAR-3-SK-2026-by-RozayusAcademy-Kump-A-B), [Year 4](https://www.scribd.com/document/1048941884/Rpt-English-Year-4-Sk-2026-by-Rozayusacademy-Kump-a-b), [Year 5](https://www.scribd.com/document/973840203/Rpt-English-Year-5-Sk-2026-by-Rozayusacademy-Kump-a-b) dan [Year 6](https://www.scribd.com/document/989617349/Rpt-English-Year-6-Sk-2026-by-Rozayusacademy-Kump-a-b).
 
+### Perbandingan dengan RPT dan jadual waktu 2025/2026
+
+[Set RPT English SK Kumpulan B Year 2–6](https://sites.google.com/moe-dl.edu.my/rptskfp1/bahasa-inggeris) dan [RPT Rozayus Year 6 Kumpulan A](https://www.scribd.com/document/830500413/Rpt-English-Year-6-Sk-2025-2026-by-Rozayusacademy-Kump-a) menggunakan blok topik dan minggu. Contoh Year 6 menyenaraikan kesemua 160 Lesson dalam sepuluh blok tanpa padanan Lesson kepada sesi atau minit sebenar. Minggu 1 ialah orientasi. Minggu 38–39 diperuntukkan untuk UASA.
+
+| Blok Year 6 | Lesson yang disenaraikan | Minggu | Kapasiti andaian empat sesi setiap minggu dalam blok |
+| --- | --- | --- | ---: |
+| 1 | 001–016 | 2–5 | 16 |
+| 2 | 017–032 | 6–9 | 12 selepas cuti penuh Minggu 7 |
+| 3 | 033–048 | 10–13 | 16 |
+| 4 | 049–064 | 14–17 | 16, termasuk Minggu 17 yang dikongsi |
+| 5 | 065–080 | 17–20 | 16, termasuk Minggu 17 yang dikongsi |
+| 6 | 081–096 | 21–23 | 12 |
+| 7 | 097–112 | 24–27 | 16 |
+| 8 | 113–128 | 28–30 | 12 |
+| 9 | 129–144 | 31–34 | 16 sebelum kerugian slot pada minggu Deepavali |
+| 10 | 145–160 | 35–37 | 12 |
+
+Blok 4 dan 5 berkongsi Minggu 17. Kira minggu itu sekali untuk kedua-duanya, jadi 32 Lesson mempunyai maksimum 28 sesi dalam tujuh minggu. Minggu 2–37 mempunyai 36 minggu unik. Kapasiti maksimum ialah 144 sesi sebelum cuti. Cuti penuh Aidilfitri pada Minggu 7 menurunkannya kepada 140 sesi dalam kiraan ini. Jika sekolah hanya ada dua slot English pada minggu pendek Deepavali, jumlah contoh turun kepada 138 sesi. Kiraan ialah semakan kapasiti dengan andaian empat sesi, tanpa pengesahan jadual kelas asal. [Takwim KPM 2025/2026, pindaan dan Lampiran C](https://www.moe.gov.my/storage/files/shares/Takwim/Takwim%20Persekolahan/Kalendar%20Akademik%202025_2026%20%28Pindaan%29.pdf).
+
+Contoh jadual waktu sekolah menerangkan bagaimana 160 jam boleh dirancang. [Pemetaan SK Marian Convent 2025/2026](https://www.scribd.com/document/850001331/PEMETAAN-JADUAL-WAKTU-2025-SKMC) memperuntukkan sembilan petak 30 minit seminggu untuk kedua-dua tahap. Tahap I mengira 171 jam dalam 38 minggu dan Tahap II 162 jam dalam 36 minggu. [Buku Pengurusan SK Simpang Pulai 2025/2026](https://fliphtml5.com/hnniv/mmdu/BUKU_PENGURUSAN_TAHUN_2025_2026_/65/) turut menyenaraikan sembilan waktu English bagi kedua-dua tahap. Sebagai pembanding, [SK Shah Alam 2024/2025](https://anyflip.com/ggvn/fbjr/basic/51-100) merancang lapan waktu English seminggu dan 40 minggu akademik untuk 160 jam. Rekod ini menyatakan peruntukan sekolah masing-masing. Jumlah jam yang telah dilaksanakan bergantung pada rekod waktu kelas.
+
+Bagi draf CikguLaju 2027, empat sesi 60 minit sebelum had tarikh masih memberi 148–151 jam dalam agihan negeri yang disemak. Pada tempoh sama, baki 9–12 jam bersamaan 18–24 petak 30 minit jika sekolah menggunakan petak 30 minit. Sebarang pelarasan jumlah masa memerlukan jadual kelas sebenar. Draf mengekalkan had empat sesi dan turutan SOW untuk semakan.
+
 Rujukan kurikulum dan takwim. [Indeks SOW English SK Year 2–6](english_primary_2_6_official_sow_index_20261103.json), [SOW Year 2](https://padlet-uploads.storage.googleapis.com/214113651/3bcd8848911cb74a8c164ebcc18198bc/Primary_Year_2_SK_Scheme_of_Work.pdf), [SOW Year 3–6](https://sites.google.com/moe-dl.edu.my/bahasa-inggeris-2026/dokumen-standard-kurikulum), [panduan peruntukan masa English SK](https://anyflip.com/zsllg/ejcr/basic/) dan [Takwim KPM 2027](https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik).
 
 - [Takwim draf 44 minggu A/B](../rpt_2027/takwim_pdp_2027_ab_draf.json)
