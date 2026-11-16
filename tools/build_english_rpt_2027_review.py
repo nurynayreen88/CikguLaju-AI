@@ -69,6 +69,11 @@ def source_rows(year):
                     rows[number] = columns
     if list(rows) != list(range(1, 161)):
         raise ValueError(f"Incomplete source sequence for Year {year}")
+    if year == 4:
+        # The original SK SOW and printed Student's Book both place these activities on p.15.
+        for number, activity in ((17, 1), (18, 3)):
+            topic, standards, _ = rows[number]
+            rows[number] = (topic, standards, [f"Get Smart Plus 4 SB p.15, Activity {activity}"])
     return rows
 
 
