@@ -1,23 +1,16 @@
-# English Year 5 — Lesson 105 (Language Arts 18)
+# English Year 5 Lesson 105 — Language Arts 18
 
-**Status:** DRAF — awaiting guidebook text check. **Topic:** Seaside (poem). **Main LS:** Language Arts 5.2.1; **Complementary LS:** Speaking 2.1.1. **Time:** 60 minutes (suggested). **CCE:** Creativity and Innovation.
+**Official SOW topic:** Seaside.
+**Official SOW:** Lesson 105, printed p.144. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Language Arts 5.2.1 and Speaking 2.1.1.
+**Materials:** Anthology of Poems p.19, Seaside by Shirley Hughes, BPK Poetry Guide, selected poem strips and a preference scale.
+**Learning objectives:** Pupils explain why they like or dislike a detail from the poem and share two specific details about their own seaside visit or preferences.
 
-**Materials:** Anthology of Poems p.19, “Seaside”; BPK Contemporary Children's Literature Poetry Teaching Guidebook; prepared poem line strips and a dislike-to-love scale.
+1. **Set induction (8 min):** Draw a simple beach scene. Pupils add an activity or object they associate with a seaside visit.
+2. **Activity 1 (12 min):** Groups read their line strips and identify the image each line creates. Pupils place the images on a preference scale and explain one choice.
+3. **Activity 2 (15 min):** Each pupil chooses a detail from the poem and gives a reason for liking or disliking it. Partners ask for a more specific reason if needed.
+4. **Activity 3 (17 min):** Pupils move into facing pairs. Each describes two details about a beach activity they have tried or would choose, then links one choice to the poem.
+5. **Closure (8 min):** Ask pupils to share one personal preference and suggest an item they would take on an outdoor trip.
 
-**Objective:** Pupils express simple preferences about images and events in the poem and explain their opinions with “because”.
-
-**Set induction (5 min):** Teacher sketches a beach; pupils brainstorm possible seaside activities.
-
-**Activity 1 — Rebuild the poem (15 min):** Teacher gives each group poem line strips; pupils arrange them into a plausible order and explain their choices. Use the anthology to check the sequence without copying unrelated textbook tasks.
-
-**Activity 2 — Opinions with reasons (20 min):** Groups place chosen lines along a hate-to-love scale. Each pupil selects a line and explains the reaction using “I like/don't like… because…”, adding detail when possible. Teacher encourages all voices.
-
-**Activity 3 — Share ideas (10 min):** Pupils face partners in two lines; each briefly states a chosen line, an opinion and a reason, then listens to a new partner.
-
-**PBD (5 min):** Teacher notes whether each pupil states an understandable opinion with a relevant reason connected to the poem.
-
-**Closure (5 min):** Groups discuss and list useful items for jungle camping, as directed by the SOW.
-
-**Differentiation:** Offer sentence starters and picture cues; extend by requiring two reasons. **QA:** Non-textbook Language Arts; Student Book, Workbook and audio not prescribed in this lesson.
-
-**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
+**PBD:** Listen for a reason connected to a poem detail and two specific spoken details about the pupil’s own experience or preference.
+**Differentiation:** Offer action pictures and because stems. Ask confident pupils to compare two different images.

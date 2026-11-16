@@ -201,6 +201,66 @@
     {
       "lesson": 96,
       "source_sha256": "d713612e1dec0970770a1c711d37261dc7f7cd8b119a0192110987b61d52495c"
+    },
+    {
+      "lesson": 97,
+      "source_sha256": "ed143ab4a4c36550184890d4626ca40204bb8c3b565660a66923e3e3ce6c88d8"
+    },
+    {
+      "lesson": 98,
+      "source_sha256": "c334ebd54f5b62ddd1b7aaf319251d3fc36bfabb8b4caab05ae29b0b3d71dc0d"
+    },
+    {
+      "lesson": 99,
+      "source_sha256": "374b1da1d49520479717a385e7788486a9f16454ebe52d9689c339d1d2d5d3a2"
+    },
+    {
+      "lesson": 100,
+      "source_sha256": "4840387b4e60f20d549ee0ee085f48e7ae2fc0888d246a3c72505b67c338a1a4"
+    },
+    {
+      "lesson": 101,
+      "source_sha256": "b3739f940748f7e8ccdc519a3c78ca6ac2b521c8d1701406b9c6cc8c968f6dc4"
+    },
+    {
+      "lesson": 102,
+      "source_sha256": "d3406c486dc5c1aa9eb19fe40a63262a157b9abb20df4f1b67e24c107c030685"
+    },
+    {
+      "lesson": 103,
+      "source_sha256": "2997fdbb5212ef59c071b71148413c94bce07a74e648299bec662f15b20cb99d"
+    },
+    {
+      "lesson": 104,
+      "source_sha256": "0ab900bda7d13495d7688b529b8075fec64a00bd1c7d3fd661f4650cf508f5a7"
+    },
+    {
+      "lesson": 105,
+      "source_sha256": "0a32a3f0c03989a3bca613f9119f7c25ce47c038185cd093fc84a283db9d66e4"
+    },
+    {
+      "lesson": 107,
+      "source_sha256": "3ebc739d4b28cf44353716c00374a4e1240ae3a805fa87bd35238ed177c5726a"
+    },
+    {
+      "lesson": 108,
+      "source_sha256": "54663d0808c0ecabcbacf4bda42ae71a7af51bec25cbd7f2d399db1959f359b5"
+    },
+    {
+      "lesson": 109,
+      "source_sha256": "a7a6b87fe5359e7db5a543c4b31154d08b09fd56d7bd9fbe267d4b2041ad48ea"
+    },
+    {
+      "lesson": 110,
+      "source_sha256": "a410310389e14467352a2b41396d9fd265295a2d818afd57ec283e532bc3ff67"
+    },
+    {
+      "lesson": 111,
+      "source_sha256": "2326d018046992d4dc0285c4ecf1419bf46b1dc6ef55f7bb9765ab3ba3f5f85a"
+    },
+    {
+      "lesson": 112,
+      "source_sha256": "655accb3f8fe93b3a7e854c0516aa6883e48443be9aabf41f376d3d9db3447cf"
     }
   ]
 }

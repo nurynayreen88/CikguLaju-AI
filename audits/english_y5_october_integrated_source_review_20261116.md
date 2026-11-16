@@ -144,3 +144,27 @@ Sumber Learning World dan Food and health menggunakan SOW serta buku English Plu
 Tajuk fokus dalam SOW Lesson 94 mencetak Reading, manakala lajur SK/SP utama menyenaraikan Writing 4.2/4.2.3. Objektif dan PBD menggunakan catatan ringkas tentang pengalaman makan sebenar bagi SP tersebut, bersama tugasan berbincang dan menyediakan senarai belian daripada SOW.
 
 Padanan kandungan CD1.44–CD1.45, CD2.05 dan CD3.12–CD3.14 tersedia dalam [audit audio](english_y4_y5_october_audio_content_20261117.md). Nombor CD2.02–CD2.04 dipadankan dengan buku. Kandungan tiga fail rakaman tersebut dan penghantaran melalui akaun guru produksi masih perlu disahkan. Pasangan 83–84, 91–92 dan 95–96 kekal dalam jadual Oktober dengan satu sesi untuk setiap pasangan.
+
+### Semakan 17 November bagi Lesson 97–105 dan 107–112
+
+Sumber Food and health dan Sport menggunakan SOW serta buku English Plus 1 yang dipautkan di atas. Lesson 99 menggunakan [My Menu, panduan puisi BPK](https://anyflip.com/xaxr/sgxc/basic/101-150). Lesson 105 dan 111 menyemak butiran [puisi Seaside](https://online.anyflip.com/ioqdj/ntvl/files/basic-html/page40.html) dan langkah dalam SOW.
+
+| Lesson | SOW bercetak | SP utama / pelengkap | Bahan dan aktiviti bercetak | WB pilihan | Trek dalam RPH |
+| --- | ---: | --- | --- | --- | --- |
+| 97 | 136 | 3.3.1 / 2.1.3 | SB 56 A1–3 / TB 70, minat membaca kuiz dan bertukar nasihat | 46 Ex2 | CD2.06 |
+| 98 | 137 | 4.2.1 / 2.1.3 | SB 56 A4, 57 A1, A2 dan A4 / TB 70–71, tabiat peribadi dan nasihat | 47 Ex3 | — |
+| 99 | 138 | 5.3.1 / 1.2.2 | Anthology p.20, panduan puisi BPK p.128 A4, menu kreatif dan butiran didengar | — | — |
+| 100 | 139 | 4.2.2 / 2.1.3 | SB 57 A5–7 dan Finished? / TB 71, nasihat bertulis dan lisan | 47 Ex4 | — |
+| 101 | 140 | 1.1.1 / 3.2.3 | SB 58 A1–4 / TB 72, bunyi dalam harga dan petunjuk menu | — | CD2.08–CD2.09 |
+| 102 | 141 | 2.1.1 / 1.2.5 | SB 58 A5–6 / TB 72, pilihan peribadi dan urutan soalan pesanan | 51 Ex6 | — |
+| 103 | 142 | 3.3.1 / 2.3.1 | SB 59 A1–4 / TB 73, respons blog dan lisan urutan resipi | — | — |
+| 104 | 143 | 4.3.3 / 4.2.5 | SB 59 A5 / TB 73, perenggan blog, kata hubung dan semakan draf | 51 Ex7 | — |
+| 105 | 144 | 5.2.1 / 2.1.1 | Anthology p.19, sebab pilihan dan perincian peribadi | — | — |
+| 107 | 147 | 1.3.1 / 3.2.4 | SB 62–63 A1–3 / TB 76–77, petunjuk lisan, kuiz dan kamus | 52 Ex3 | CD2.12 |
+| 108 | 148 | 2.3.1 / 1.2.1 | SB 63 A4–6 / TB 77, idea utama temu bual dan penceritaan pengalaman | 52 Ex2 | CD2.13 |
+| 109 | 149 | 3.2.2 / 3.2.4 | SB 64 A1–3 / TB 78, garis masa Olimpik dan carian makna | 56 Ex5 | CD2.14 |
+| 110 | 150 | 4.2.3 / 3.3.1 | SB 64 A4 dan 65 A1–2 / TB 78–79, pembacaan pilihan dan catatan fakta | 53 Ex2 | — |
+| 111 | 151 | 5.3.1 / 2.2.2 | Anthology p.19, persetujuan urutan arahan dan ilustrasi Seaside | — | — |
+| 112 | 152 | 4.2.3 / 2.1.2 | SB 65 A4, A5, A6 dan A8 / TB 79, catatan peristiwa dan temu bual pengalaman | 53 Ex4 | — |
+
+Lesson 106 telah mempunyai cadangan SK/SP yang dipadankan dengan DSKP. Lesson 101–102 berkongsi satu RPH 60 minit dalam jadual Oktober. Kandungan CD2.08–CD2.09 tersedia dalam [audit audio](english_y4_y5_october_audio_content_20261117.md). Nombor CD2.06, CD2.12, CD2.13 dan CD2.14 dipadankan dengan buku, manakala kandungan fail rakaman dan penghantaran melalui akaun guru produksi masih perlu disahkan.

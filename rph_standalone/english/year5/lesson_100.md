@@ -1,23 +1,16 @@
-# English Year 5 — Standalone RPH — Lesson 100 (Consolidation 10)
+# English Year 5 Lesson 100 — Consolidation 10
 
-**Status:** DRAF — SOW-aligned, awaiting source QA. **Topic:** Food and health. **Main LS:** 4.2.2. **Complementary LS:** 2.1.3. **Duration:** 60 minutes (suggested).
+**Official SOW topic:** Food and health.
+**Official SOW:** Lesson 100, printed p.139. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Writing 4.2.2 and Speaking 2.1.3.
+**Materials:** English Plus 1 SB p.57 Activities 5–7 and Finished?, TB p.71, advice cards and Workbook p.47 Exercise 4.
+**Learning objectives:** Pupils ask for, give and respond to simple advice in writing and complete a short spoken advice exchange.
 
-**Language focus:** Verb + gerund e.g. I like playing; Affirmative and negative imperatives e.g. Go, Don’t go. **Materials:** English Plus 1 Student’s Book Activities 5–7 p.57 Teacher’s Book p.71.
+1. **Set induction (8 min):** Show two familiar signs. Pupils suggest what each one tells people to do and explain when advice is more useful than a rule.
+2. **Activity 1 (12 min):** In SB Activity 5, pairs match signs to affirmative or negative imperatives. Pupils explain why an example is a rule.
+3. **Activity 2 (15 min):** In SB Activity 6, pupils use the situations to write a short request for advice. Partners write one suitable suggestion, then the first writer replies in writing.
+4. **Activity 3 (17 min):** Use SB Activity 7 for a new spoken exchange. Each pupil asks for advice, gives a relevant suggestion and responds before swapping roles.
+5. **Closure (8 min):** Compare one rule from Finished? with one piece of advice. If time permits, pupils complete an imperative in Workbook p.47 Exercise 4.
 
-**Learning objectives:** Main (Writing 4.2.2) — pupils ask for, give and respond to simple advice in the Food and health activities. Complementary (Speaking 2.1.3) — pupils ask for, give and respond to simple advice in the linked speaking task.
-
-**Set induction (5 min):** Write on board: ‘I like…-ing’, ‘I love…-ing’, ‘I prefer…-ing’. Explain pupils can say a true or false sentence about themselves. After each, pupils put up their right hand if they think the sentence is true, left hand if they think it’s false.
-
-**Activity 1 (15 min):** Pupils do p.57, Activity 5. Follow instructions in Teacher’s Book p.71 Exercise 5. Ask: What signs can you see in our town/city/village? Choose pupils to draw some on board. 3. Pre-teach: ‘marathon’ and ‘boring’. Pupils do Activity 6. Follow instructions in Teacher’s Book p.71 Exercise 6. Tell pupils to use some verbs from Activity 5.
-
-**Activity 2 (15 min):** Pupils do Activity 7, Use It!. Follow the instructions in Teacher’s Book p.71 Exercise 7. CCE – Values – ask pupils why it is important to think about advice people give you?
-
-**Activity 3 (15 min):** Pupils in pairs do Finished?. They write 3, 4 or 5 rules for the class. CCE – Values – ask pupils what the difference is between rules and advice. Note pupils who are confident at asking for and giving advice and those who are slow to ask and respond.
-
-**PBD (5 min):** Teacher observes responses to the prescribed SOW tasks and records an individual improvement.
-
-**Closure (5 min):** Pupils look at pictures of signs in Activity 5 then draw a sign but change words or symbols e.g. 1) a different date, 4) an arrow facing left.
-
-**Workbook practice (mapped):** p.47,50-51, Unit 5 Verb + -ing / Imperatives + Progress Review, Ex1-4 / Ex1-7. Use briefly; do not replace SOW tasks.
-
-**Differentiation:** Give suitable vocabulary or sentence prompts; challenge confident pupils with independent responses. **Final check:** Full printed-page and audio-content audit, A4 export and teacher approval pending; not READY.
+**PBD:** Check the written request, suggestion and response and listen for the same three functions in the spoken exchange.
+**Differentiation:** Provide a set of advice verbs and sentence starters. Ask confident pupils to respond to a suggestion with a reason.

@@ -1,23 +1,16 @@
-# English Year 5 — Standalone RPH — Lesson 099 (Language Arts 17)
+# English Year 5 Lesson 99 — Language Arts 17
 
-**Status:** DRAF — SOW-aligned, awaiting source QA. **Topic:** The Meal. **Main LS:** 5.3.1. **Complementary LS:** 1.2.2. **Duration:** 60 minutes (suggested).
+**Official SOW topic:** The Meal.
+**Official SOW:** Lesson 99, printed p.138. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Language Arts 5.3.1 and Listening 1.2.2.
+**Materials:** Anthology of Poems p.20, The Meal by Karla Kuskin, BPK Poetry Guide p.128 Activity 4, food cards, menu paper and a booking sheet.
+**Learning objectives:** Pupils identify two details from a description read aloud and design an imaginative menu for breakfast, lunch and dinner.
 
-**Language focus:** Verbs. **Materials:** Anthology of Poems p.20, The Meal; BPK CCL Poetry Guide Activity 4 p.128.
+1. **Set induction (8 min):** Recall foods from The Meal. Pupils name an unusual combination and predict what they might put on a menu.
+2. **Activity 1 (12 min):** Read a short food description and have pairs point to matching items. Pupils listen again for a second detail such as the meal or an ingredient and record two answers.
+3. **Activity 2 (15 min):** Use the menu examples in the BPK guide. Pairs choose a creative theme and devise dishes for three meals, using an idea from the poem as a starting point.
+4. **Activity 3 (17 min):** Pairs design a menu and give one dish an imaginative name. They describe the ingredients clearly enough for another pair to identify the dish.
+5. **Closure (8 min):** Display the menus. Pupils add their names to the booking sheet for a menu they would like to try and give a brief reason.
 
-**Learning objectives:** Main (Language Arts 5.3.1) — pupils respond imaginatively and intelligibly through creating simple role-plays and simple poems or another appropriate imaginative response in the The Meal activities. Complementary (Listening 1.2.2) — pupils understand with support specific information and details of longer simple texts on a range of familiar topics in the linked listening task.
-
-**Set induction (5 min):** Pupils go through the poem and remember as many as food items that they can. 2. Without looking at the poem, each pupil has to list down the food items they can remember.
-
-**Activity 1 (15 min):** Pupils pair up and teacher conducts a game where each pair has to listen and point to the food item.
-
-**Activity 2 (15 min):** Teacher informs pupils that they are going to create a menu that can appeal others to buy.
-
-**Activity 3 (15 min):** Follow Step 1 until Step 5 (Activity 4) in the guidebook.
-
-**PBD (5 min):** Teacher checks a creative response linked to the literary work and a relevant reason.
-
-**Closure (5 min):** Pupils put up their menus and other pupils will write their names on the booking list if they like the menu. Anthology of Poems Page 20 Contemporary Children’s Literature Teaching Guidebook (BPK) – Poetry Activity 4 128 Differentiate learning according to the needs of your pupils and class.
-
-**Literature route:** No English Plus Student Book, Workbook or CD activity is prescribed.
-
-**Differentiation:** Give suitable vocabulary or sentence prompts; challenge confident pupils with independent responses. **Final check:** Full printed-page and audio-content audit, A4 export and teacher approval pending; not READY.
+**PBD:** Check two accurate details from the spoken description and one imaginative menu choice that the pair can explain.
+**Differentiation:** Offer food pictures and a three-meal template. Ask confident pupils to make the dishes fit a shared theme.
