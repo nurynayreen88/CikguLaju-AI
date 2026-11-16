@@ -165,6 +165,24 @@ Minggu 41 boleh memuatkan Lesson baharu sebelum pentaksiran/UASA. Gunakan sehing
 
 Untuk Year 2–3, gunakan PBD sepanjang PdP dan takwim pentaksiran sekolah. Panduan PBS KPM meletakkan UASA sekolah rendah pada Year 4–6. Sekolah menentukan tarikh UASA. Jika UASA mengambil Minggu 41, kapasiti tambahan dalam jadual ialah sifar. [Panduan Pengurusan PBS KPM 2025](https://www.moe.gov.my/storage/files/shares/pekeliling_dan_garis_panduan/Panduan%20Pengurusan%20PBS%20Edisi%201%20Tahun%202025.pdf) dan [Panduan UASA KPM](https://www.moe.gov.my/storage/files/shares/pentaksiran-berasaskan-sekolah/5.%20Panduan%20Pengurusan%20dan%20Pentadbiran%20UASA%20%26%20FAQ%20UASA.pdf).
 
+### Pilihan mencapai 160 jam sebelum Minggu 41 berakhir
+
+Dengan Minggu 6 dan 19 tanpa PdP, lapan waktu seminggu memberi had 312 waktu (156 jam) hingga Minggu 41, walaupun semua minggu calon penuh. Sasaran tahunan ialah 320 waktu. Sekurang-kurangnya lapan blok tambahan 30 minit diperlukan sebelum pentaksiran sekiranya had November hendak dikekalkan. Jika jadual sekolah menetapkan maksimum lapan waktu pada setiap minggu, sasaran 160 jam memerlukan satu lagi minggu PdP penuh sebelum pentaksiran, dengan semua minggu pendek dipulihkan.
+
+Contoh pengiraan untuk Negeri Sembilan (Kumpulan B) bermula daripada 153 jam dalam agihan setempat. Minggu 5 dan 35 mempunyai empat sesi apabila jadual kelas membenarkan. Minggu 20 boleh memberi satu jam lagi jika sekolah dapat menyusun empat sesi dalam tiga hari sekolah. Minggu 39 kekal dua sesi. Asas contoh selepas pemulihan Minggu 20 ialah 308 waktu (154 jam). [Lampiran C takwim KPM](https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik) · [Jadual cuti BKPP](https://www.kabinet.gov.my/hari-kelepasan-am/).
+
+| Minggu terpilih | Tarikh Kumpulan B | Waktu tambahan |
+| --- | --- | ---: |
+| 21–29 | 14 Jun–13 Ogos, satu waktu seminggu selama sembilan minggu | 9 |
+| 32 | 6–10 September | 1 |
+| 34 | 20–24 September | 1 |
+| 36 | 4–8 Oktober | 1 |
+| Jumlah | 12 waktu × 30 minit | 12 |
+
+Jika sekolah memperuntukkan sembilan waktu pada minggu terpilih, 308 + 12 = 320 waktu atau 160 jam. Waktu kesembilan boleh memulakan atau menyambung Lesson mengikut turutan SOW. Pengiraan menempatkan Lesson 153–156 pada Minggu 40 dan Lesson 157–160 pada Minggu 41. Semak aktiviti dan SK/SP sebelum memilih titik pecahan 30 minit. [Panduan penyesuaian blok dalam SOW Year 6 SK](https://www.teacherfiera.com/wp-content/uploads/2020/04/SoW-Primary-Year-6-SK.pdf).
+
+Angka ini mengandaikan slot Minggu 18, 40 dan 41 tersedia sepenuhnya sebelum pentaksiran. Jika Minggu 20 kekal enam waktu, jumlah tambahan perlu menjadi 14 waktu. Jika pentaksiran mengambil keseluruhan Minggu 41, alihkan lapan waktu itu ke tarikh lebih awal sebelum UASA. Agihan sembilan waktu ialah pilihan tertakluk pada jadual sekolah. Lima PDF semakan masih menggunakan agihan bersama maksimum lapan waktu.
+
 ### Semakan standard bagi Lesson akhir
 
 Semakan menggunakan agihan bersama sebagai kes asas dan memeriksa Lesson 148–160 bagi setiap tahun. Pada semua 58 Lesson yang mempunyai kod tetap, setiap kod SP tetap sudah muncul dalam Lesson 001–147 tahun yang sama. Tujuh Lesson selebihnya mengandungi pilihan guru. Semakan kemunculan kod membantu merancang turutan dan pentaksiran. Semak aktiviti, teks, sastera, projek dan pencapaian murid bagi setiap Lesson sebelum mengubah penempatannya. [Lejar kod SOW daripada PDF asal](english_2_6_independent_sow_pdf_code_ledger_20261104.json).
