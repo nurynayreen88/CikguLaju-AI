@@ -71,6 +71,34 @@ async function main(){
   assert.strictEqual(callCount,112);
   if(write)assert.strictEqual(outputs,12);
 
+  for(const year of [2,3,4,5,6]){
+    const key="bahasa_cina_sjkc:"+year;
+    const filename="RPT_2027_Bahasa_Cina_SJKC_Tahun_"+year+".pdf";
+    const raw=fs.readFileSync(path.join(root,"..","sjkc","bahasa_cina",filename));
+    const hash=crypto.createHash("sha256").update(raw).digest("hex");
+    const sjkc=validatedLayout(layout,key,hash);
+    assert.throws(()=>validatedLayout(layout,key,"0".repeat(64)));
+    const doc=await PDF.PDFDocument.load(raw);
+    const before=doc.getPageCount();
+    const fills=[];
+    const result=await fillOriginalCover(doc,{display_name:"Cikgu Tan",school_name:"SJK(C) Contoh"},
+      tinyPng,sjkc,{PDFLib:PDF,textPng:async(value,box)=>{
+        assert.ok(box[2]-box[0]>=200);
+        assert.strictEqual(box[3]-box[1],30);
+        fills.push(value);
+        return tinyPng;
+    }});
+    assert.strictEqual(result.hasLogo,true);
+    assert.deepStrictEqual(fills,["SJK(C) Contoh","Cikgu Tan"]);
+    const output=await doc.save({useObjectStreams:false});
+    const updated=await PDF.PDFDocument.load(output);
+    assert.strictEqual(updated.getPageCount(),before);
+    if(write){
+      fs.writeFileSync(path.join(outputDir,"sjkc-"+year+".pdf"),output);
+      fs.writeFileSync(path.join(outputDir,"sjkc-"+year+".source.pdf"),raw);
+    }
+  }
+
   // Unfilled private profile must not create invented names or add a page.
   const key="english:2",entry=manifest.files[key];
   const raw=fs.readFileSync(path.join(root,entry.path));
