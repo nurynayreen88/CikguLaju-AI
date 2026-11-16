@@ -3,8 +3,23 @@
   "sumber_takwim": "https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik",
   "status": "DRAF_PERANCANGAN_BERSAMA_A_B",
   "bilangan_minggu_persekolahan": 44,
-  "bilangan_minggu_calon_pengajaran": 35,
-  "minggu_akhir_pengajaran": 38,
+  "bilangan_minggu_calon_pengajaran": 38,
+  "minggu_akhir_pengajaran": 40,
+  "had_pdp_pertengahan_tahun": {
+    "A": "2027-05-13",
+    "B": "2027-05-14"
+  },
+  "had_pdp_akhir_tahun": {
+    "A": "2027-11-04",
+    "B": "2027-11-05"
+  },
+  "minggu_raya_haji_dalam_kiraan_pdp": 19,
+  "minggu_selepas_uasa_tanpa_pdp": 2,
+  "minggu_akhir_tanpa_pdp": [
+    42,
+    43,
+    44
+  ],
   "cuti_penggal": [
     {
       "nama": "Cuti Penggal 1",
@@ -283,8 +298,8 @@
         "2027-05-10",
         "2027-05-14"
       ],
-      "status": "pentaksiran_pertengahan_tahun",
-      "boleh_jadualkan_pdp": false
+      "status": "pengajaran_atau_pentaksiran_mengikut_sekolah",
+      "boleh_jadualkan_pdp": true
     },
     {
       "minggu": 19,
@@ -296,7 +311,7 @@
         "2027-05-17",
         "2027-05-21"
       ],
-      "status": "cuti_perayaan_kapasiti_bersama_sifar",
+      "status": "minggu_pdp_raya_haji_wesak_kapasiti_bersama_sifar",
       "boleh_jadualkan_pdp": false
     },
     {
@@ -556,8 +571,8 @@
         "2027-10-25",
         "2027-10-29"
       ],
-      "status": "persediaan_uasa_atau_uasa_mengikut_sekolah",
-      "boleh_jadualkan_pdp": false
+      "status": "pengajaran_minggu_pendek_atau_uasa_mengikut_sekolah",
+      "boleh_jadualkan_pdp": true
     },
     {
       "minggu": 40,
@@ -569,8 +584,8 @@
         "2027-11-01",
         "2027-11-05"
       ],
-      "status": "cadangan_ruang_uasa",
-      "boleh_jadualkan_pdp": false
+      "status": "minggu_akhir_pengajaran_atau_uasa_mengikut_sekolah",
+      "boleh_jadualkan_pdp": true
     },
     {
       "minggu": 41,
@@ -582,7 +597,7 @@
         "2027-11-08",
         "2027-11-12"
       ],
-      "status": "aktiviti_selepas_uasa",
+      "status": "ruang_uasa_atau_aktiviti_akhir_tahun",
       "boleh_jadualkan_pdp": false
     },
     {
@@ -595,7 +610,7 @@
         "2027-11-15",
         "2027-11-19"
       ],
-      "status": "aktiviti_selepas_uasa_akhir_tahun",
+      "status": "ruang_uasa_atau_aktiviti_akhir_tahun",
       "boleh_jadualkan_pdp": false
     },
     {
@@ -608,7 +623,7 @@
         "2027-11-22",
         "2027-11-26"
       ],
-      "status": "aktiviti_akhir_tahun",
+      "status": "ruang_uasa_atau_aktiviti_akhir_tahun",
       "boleh_jadualkan_pdp": false
     },
     {
@@ -621,7 +636,7 @@
         "2027-11-29",
         "2027-12-03"
       ],
-      "status": "aktiviti_akhir_tahun",
+      "status": "ruang_uasa_atau_aktiviti_akhir_tahun",
       "boleh_jadualkan_pdp": false
     }
   ]
