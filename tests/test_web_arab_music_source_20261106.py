@@ -88,7 +88,7 @@ class DraftWebQA(unittest.TestCase):
                      "verifiedRphFormats.includes(\"pdf\")",
                      "verifiedRphFormats.includes(\"word\")",
                      "DRAF tersedia melalui sumber Telegram",
-                     "Format belum disahkan"):
+                     "Tiada format RPH disahkan untuk PdP ini."):
             self.assertIn(text,page)
 
 
