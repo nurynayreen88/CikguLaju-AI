@@ -1,25 +1,16 @@
-# English Year 5 — Lesson 36 (Speaking 7)
+# English Year 5 Lesson 36 — Speaking 7
 
-**Status:** DRAF — pending full source audit. **Topic:** Days. **Main LS:** Speaking 2.2.1. **Complementary LS:** Reading 3.2.3. **Time:** 60 minutes (suggested).
+**Official SOW topic:** Days.
+**Official SOW:** Lesson 36, printed p.72. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Speaking 2.2.1 and Reading 3.2.3.
+**Materials:** English Plus 1 SB p.22 Activity 2, TB p.36, Workbook p.20 Exercise 3 and true-or-false cards.
+**Learning objectives:** Pupils ask two relevant follow-up questions and infer the meaning of one unfamiliar quiz word using a nearby clue.
 
-**Materials:** English Plus 1 SB p.22 Activity 2; TB p.36; True/False cards. Workbook/audio contents are not independently verified; use only SOW-prescribed resources.
+1. **Set induction (8 min):** Pupils recall what they do in the morning, afternoon and evening.
+2. **Activity 1 (12 min):** Model the Key Phrases. Pairs read the Days and Nights Quiz, compare true-or-false answers and use familiar words to infer one new word.
+3. **Activity 2 (15 min):** Pairs show response cards, check answers and use a follow-up question to discuss the most surprising fact.
+4. **Activity 3 (17 min):** Pairs guess what their partner does within a time interval. They confirm or correct the guess and ask another question about the routine.
+5. **Closure (8 min):** Use Spot the Differences to review quiz wording. If time permits, pupils complete selected routine items from Workbook p.20 Exercise 3.
 
-**Learning objectives:** Main (Speaking 2.2.1) — pupils keep interaction going in short exchanges by asking suitable questions in the Days activities. Complementary (Reading 3.2.3) — pupils guess the meaning of unfamiliar words from clues provided by title, topic and other known words in the linked reading task.
-
-**Set induction (5 min):** Teacher lists morning, afternoon, evening and night; pupils recall daily routines.
-
-**Activity 1 (15 min):** Teacher models the Key Phrases. Pupils read and compare their true/false responses to the 12 Days and Nights quiz statements.
-
-**Activity 2 (15 min):** Pairs raise True or False cards as the teacher reads quiz claims. Pupils check answers, choose three surprising facts and explain choices with What do you think? and What about you?
-
-**Activity 3 (15 min):** Teacher models a time interval such as 7.30–8.30 a.m. Pairs guess each other's activities at different times and confirm or correct the guesses.
-
-**PBD (5 min):** Teacher notes meaningful turn-taking, use of Key Phrases and evidence of reading understanding. Each pupil contributes one opinion with a reason.
-
-**Closure (5 min):** Pairs complete Spot the Differences after teacher changes five words from quiz statements.
-
-**Differentiation:** Provide response cards and sentence starters; extend by giving reasons for surprising facts.
-
-**Verification:** Official Year 5 SOW outline checked; full book, workbook, audio and teacher approval pending before READY.
-
-**Workbook (existing source QA map):** p.20, Unit 2 Vocabulary — Daily routines, Ex1-4. Optional brief practice after SOW activities; not a substitute for core tasks.
+**PBD:** Record two relevant questions and check the clue each pupil used to explain one inferred meaning.
+**Differentiation:** Give sentence starters or reduce the number of quiz statements.
