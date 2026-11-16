@@ -1076,10 +1076,10 @@
       "unit_number": 5,
       "unit": "Utamakan Kebersihan",
       "kind": "unit",
-      "topic": "Restoran Idaman",
-      "focus": "Lengkapkan ayat dengan kata adjektif jarak berdasarkan kedudukan tempat dan benda di restoran.",
+      "topic": "Waktu Makan di Restoran Idaman",
+      "focus": "Guna kata awal, lewat dan lama dalam tiga ayat tentang waktu tiba, makan dan menunggu. Rujuk situasi restoran pada BT. BA Aktiviti 6 untuk pengayaan kata adjektif jarak.",
       "sp": [
-        "5.1.3"
+        "5.1.3(i)"
       ],
       "textbook_page": "32",
       "textbook_printed_sp": [
@@ -1090,7 +1090,8 @@
         {
           "volume": 1,
           "page": 32,
-          "activity": 6
+          "activity": 6,
+          "use": "Pengayaan kata adjektif jarak"
         }
       ],
       "workbook_printed_sp": [
