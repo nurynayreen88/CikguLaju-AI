@@ -106,7 +106,10 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
             }""")
             page.locator("#rpt-curriculum").select_option("kssr")
             page.locator("#rpt-year").select_option("4")
-            page.locator("#rpt-subject").select_option("pendidikan_islam")
+            subject_search=page.get_by_role("combobox",name="Subjek",exact=True)
+            subject_search.tap()
+            subject_search.fill("islam")
+            page.get_by_role("option",name="Pendidikan Islam").tap()
             with page.expect_popup(timeout=10000) as next_page:
                 page.locator("#rpt-download-mobile").tap()
             popup=next_page.value
