@@ -13,6 +13,8 @@ class OptionalWsgiTests(unittest.TestCase):
         fake = types.ModuleType("app")
         fake.app = Flask("telegram_stub")
         fake.DB_PATH = "/missing-master.db"
+        # The Mathematics row adapter wraps the shared renderer at WSGI startup.
+        fake._rph_rows = lambda state, *args, **kwargs: {}
         fake.CIKGULAJU_DB_V2600_ACTIVE = active
         @fake.app.post("/webhook")
         def webhook():
@@ -52,6 +54,8 @@ class OptionalWsgiTests(unittest.TestCase):
         fake = types.ModuleType("app")
         fake.app = Flask("telegram_missing_token_stub")
         fake.DB_PATH = "/missing-master.db"
+        # The Mathematics row adapter wraps the shared renderer at WSGI startup.
+        fake._rph_rows = lambda state, *args, **kwargs: {}
         fake.CIKGULAJU_DB_V2600_ACTIVE = True
 
         @fake.app.post("/webhook")
