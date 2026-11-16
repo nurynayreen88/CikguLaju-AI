@@ -97,6 +97,42 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
         with self.assertRaises(ValueError):
             pdf_path("rbt",2,root=self.root)
 
+    def test_sjkc_catalog_and_download_require_paid_access_for_every_year(self):
+        from rpt_2027.sjkc.bahasa_cina.documents import CODE, ROOT, YEARS, document_path
+
+        folder = self.root / "sjkc" / "bahasa_cina"
+        folder.mkdir(parents=True)
+        for original in ROOT.glob("RPT_2027_Bahasa_Cina_SJKC_Tahun_*"):
+            (folder / original.name).write_bytes(original.read_bytes())
+        account = {"telegram_user_id": 42}
+        with patch("web.rpt_2027_all_http._account", return_value=(account, None)):
+            for paid in (False, True):
+                with patch("web.rpt_2027_all_http._has_paid_access", return_value=paid):
+                    data = self.client.get("/api/rpt/2027/catalog").get_json()
+                    self.assertEqual(data["available_rpt"], 61)
+                    self.assertEqual(len(expected_pairs()), 56)
+                    entry = next(item for item in data["subjects"] if item["code"] == CODE)
+                    self.assertEqual([year["year"] for year in entry["years"]], list(YEARS))
+                    for meta in entry["years"]:
+                        year = meta["year"]
+                        self.assertEqual(meta["download_enabled"], paid)
+                        self.assertEqual(meta["docx_ready"], paid)
+                        pdf = self.client.get(f"/api/rpt/2027/all/{CODE}/{year}.pdf")
+                        word = self.client.get(f"/api/rpt/2027/sjkc/bahasa-cina/{year}.docx")
+                        self.assertEqual(pdf.status_code, 200 if paid else 403)
+                        self.assertEqual(word.status_code, 200 if paid else 403)
+                        if paid:
+                            self.assertEqual(pdf.data, document_path(year).read_bytes())
+                            self.assertEqual(word.data, document_path(year, "docx").read_bytes())
+                            self.assertEqual(pdf.headers["X-RPT-Source-SHA256"],
+                                             hashlib.sha256(pdf.data).hexdigest())
+                            self.assertEqual(pdf.headers["X-RPT-Personalization-Allowed"], "1")
+                            self.assertIn("attachment", word.headers["Content-Disposition"])
+                            self.assertEqual(word.headers["Cache-Control"], "no-store, private")
+                    if paid:
+                        self.assertEqual(self.client.get(f"/api/rpt/2027/all/{CODE}/1.pdf").status_code, 404)
+                        self.assertEqual(self.client.get("/api/rpt/2027/sjkc/bahasa-cina/2.zip").status_code, 404)
+
     def test_manifest_sha_tampering_blocks_only_corrupt_pdf(self):
         self.manifest["files"]["sains:6"]["sha256"]="0"*64
         self._save()
@@ -148,6 +184,7 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
                    side_effect=lambda:(None,(jsonify({"error":"Login required"}),401))):
             self.assertEqual(self.client.get("/api/rpt/2027/catalog").status_code,401)
             self.assertEqual(self.client.get("/api/rpt/2027/all/english/2.pdf").status_code,401)
+            self.assertEqual(self.client.get("/api/rpt/2027/sjkc/bahasa-cina/2.docx").status_code,401)
         with (patch("web.rpt_2027_all_http._account",return_value=({"telegram_user_id":42},None)),
               patch("web.rpt_2027_all_http._has_paid_access",return_value=True)):
             self.assertEqual(self.client.get("/api/rpt/2027/all/rbt/2.pdf").status_code,404)

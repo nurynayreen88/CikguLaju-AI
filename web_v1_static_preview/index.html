@@ -344,6 +344,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 @media(max-width:380px){#teacher-info .rph-time-fields{grid-template-columns:minmax(0,1fr);gap:0}}
 /* Android/iOS browsers handle a direct authenticated PDF attachment more
    reliably than a blob: URL synthesized after an asynchronous fetch. */
+#rpt-download-word:not([hidden]){display:inline-block;margin:18px 8px 0 0;padding:13px 16px}
 #rpt-download-mobile{display:none!important}
 @media screen and (max-width:760px){
   #rpt-download{display:none!important}
@@ -750,6 +751,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
  <label for="rpt-year">Tahun RPT</label>
  <select id="rpt-year" disabled><option value="">Pilih Subjek dahulu</option></select>
  <button id="rpt-download" type="button" disabled>Muat turun RPT 2027 (PDF)</button>
+ <a id="rpt-download-word" class="rpt-year-link" href="#" hidden>Muat turun Word</a>
  <a id="rpt-download-mobile" href="#" target="_blank" rel="noopener" aria-label="Muat turun RPT 2027 pada tab baharu" hidden>📥 Muat Turun RPT 2027 (PDF)</a>
  <p id="rpt-status" class="notice" role="status"></p>
  <p class="notice rpt-phone-help">Pada telefon, RPT percuma dimuat turun tanpa nama dan logo. Cetakan berprofil hanya untuk Rakan Pembangun atau langganan aktif. Maklumat profil dan logo yang disimpan tidak dipadamkan apabila langganan tamat.</p>
@@ -1092,7 +1094,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </div>
 <script src="/assets/pdf-lib.min.js?v=1.17.1"></script>
 <script src="/assets/pdp-pdf-copy.js?v=science-copy-expanded-20261113"></script>
-<script src="/assets/rpt-personalize.js?v=20261115-dlp-year6"></script>
+<script src="/assets/rpt-personalize.js?v=20261116-sjkc"></script>
 <script>
 "use strict";
 window.onCikguLajuTelegramAuth=async function(user){
@@ -1882,6 +1884,8 @@ function renderAllRptCards(data){
    const title=document.createElement("strong");title.textContent=rptYearLabel(year.year,year.year_label);
    const status=document.createElement("span");status.className="rpt-year-status";
    status.textContent=year.year===1?"Belum dibuka":year.coming_soon?"Dalam Penyediaan":year.download_enabled===true?"PDF tersedia":"Belum tersedia";
+   if(year.docx_ready===true)status.textContent="PDF dan Word tersedia";
+   else if(year.pdf_ready===true&&!year.download_enabled)status.textContent="Akses berbayar";
    card.append(title,status);
    if(year.pdf_ready===true)ready++;
    if(year.year===1){
@@ -1899,6 +1903,13 @@ function renderAllRptCards(data){
                                      document.getElementById("rpt-status"),button);
     });
     card.append(button);
+    if(year.docx_ready===true){
+     const word=document.createElement("a");
+     word.className="rpt-year-link";
+     word.href="/api/rpt/2027/sjkc/bahasa-cina/"+year.year+".docx";
+     word.textContent="Muat turun Word";
+     card.append(word);
+    }
    }else if(!year.coming_soon){
     const unavailable=document.createElement("span");unavailable.className="rpt-year-muted";
     unavailable.textContent=year.pdf_ready===true?"Akses berbayar diperlukan":"PDF belum dipasang";
@@ -1914,10 +1925,12 @@ function renderAllRptCards(data){
   (data.personalization_allowed===true?". Akaun berbayar aktif: muka depan boleh diisi dengan nama dan logo.":". Muat turun percuma tanpa nama dan logo pada cetakan.");
 }
 const rptSubject=document.getElementById("rpt-subject"),rptYear=document.getElementById("rpt-year"),rptDownload=document.getElementById("rpt-download"),rptMobileLink=document.getElementById("rpt-download-mobile"),rptStatus=document.getElementById("rpt-status");
+const rptWordLink=document.getElementById("rpt-download-word");
 function rptYearLabel(year,label){return label||(year===1?"Tahun 1 (KP Baharu)":"Tahun "+year);}
 let rptCatalog=null;
 async function loadRptCatalog(){
  rptDownload.disabled=true;
+ if(rptWordLink) rptWordLink.hidden=true;
  rptMobileLink.hidden=true;
  rptMobileLink.removeAttribute("href");
  rptSubject.disabled=true;
@@ -1956,6 +1969,11 @@ function refreshRptDownload(){
  const selection=rptChoice();
  const ready=selection?.year.year>1&&selection.year.download_enabled===true;
  rptDownload.disabled=!ready;
+ if(rptWordLink){
+  rptWordLink.hidden=!(ready&&selection.year.docx_ready===true);
+  if(!rptWordLink.hidden)rptWordLink.href="/api/rpt/2027/sjkc/bahasa-cina/"+selection.year.year+".docx";
+  else rptWordLink.removeAttribute("href");
+ }
  rptMobileLink.hidden=!ready;
  if(ready){
   // Same-origin private PDF, authenticated by the normal Telegram Web cookie.
@@ -1969,6 +1987,7 @@ function refreshRptDownload(){
  if(selection.year.year===1){rptStatus.textContent="Tahun 1 (KP Baharu) — Akan Datang.";return;}
  if(selection.year.coming_soon){rptStatus.textContent="RPT "+selection.item.label+" Tahun "+selection.year.year+" — Dalam Penyediaan.";return;}
  if(!selection.year.pdf_ready){rptStatus.textContent="RPT "+selection.item.label+" Tahun "+selection.year.year+" — fail PDF belum tersedia. Tiada fail subjek/tahun lain digunakan.";return;}
+ if(selection.year.pdf_ready&&!ready){rptStatus.textContent="RPT ini memerlukan akses berbayar aktif.";return;}
  rptStatus.textContent="RPT "+selection.item.label+" Tahun "+selection.year.year+(ready?" · PDF tersedia untuk muat turun.":" · PDF belum tersedia.")+(rptCatalog?.personalization_allowed?" Cetakan berprofil aktif.":" Versi percuma tanpa identiti sekolah.");
 }
 rptMobileLink.addEventListener("click",(event)=>{
@@ -1991,6 +2010,7 @@ rptMobileLink.addEventListener("click",(event)=>{
 });
 rptSubject.addEventListener("change",()=>{
  rptDownload.disabled=true;
+ if(rptWordLink) rptWordLink.hidden=true;
  rptMobileLink.hidden=true;
  rptMobileLink.removeAttribute("href");
  rptYear.replaceChildren(new Option(rptSubject.value?"Pilih Tahun":"Pilih Subjek dahulu",""));
