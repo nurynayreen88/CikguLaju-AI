@@ -18,21 +18,23 @@ class MobileRptDownloadTests(unittest.TestCase):
     @staticmethod
     def prepare(page, *,allowed=True, ready=True):
         page.goto(HTML,wait_until="domcontentloaded")
-        return page.evaluate("""({allowed, ready}) => {
+        return page.evaluate("""async ({allowed, ready}) => {
           document.querySelector('main.panel').hidden=true;
           document.querySelector('#workspace').hidden=false;
           document.querySelector('#view-rpt').hidden=false;
           const item={code:'pjpk',label:'PJPK',years:[{
             year:2,status:'DRAF',pdf_ready:ready,
             download_enabled:allowed&&ready}]};
-          rptCatalog={allowed,subjects:[item]};
-          const s=document.getElementById('rpt-subject');
-          s.replaceChildren(new Option('Pilih Subjek',''),new Option('PJPK','pjpk'));
-          s.value='pjpk';
-          const y=document.getElementById('rpt-year');
-          y.replaceChildren(new Option('Tahun 2','2'));
-          y.value='2';
-          refreshRptDownload();
+          const realFetch=window.fetch;
+          window.fetch=async (url, options)=>url==='/api/rpt/2027/catalog'
+            ?new Response(JSON.stringify({allowed,subjects:[item]}))
+            :realFetch(url,options);
+          try { await loadRptCatalog(); } finally { window.fetch=realFetch; }
+          for(const [id,value] of [['rpt-curriculum','kssr'],['rpt-year','2'],['rpt-subject','pjpk']]){
+            const select=document.getElementById(id);
+            select.value=value;
+            select.dispatchEvent(new Event('change'));
+          }
           const b=document.getElementById('rpt-download');
           const a=document.getElementById('rpt-download-mobile');
           return {
@@ -45,6 +47,70 @@ class MobileRptDownloadTests(unittest.TestCase):
              linkTarget:a.getAttribute('target')
           };
         }""",{"allowed":allowed,"ready":ready})
+
+    def test_cascading_dropdowns_filter_curriculum_and_clear_downloads(self):
+        page=self.browser.new_page(viewport={"width":360,"height":840})
+        try:
+            self.prepare(page)
+            page.evaluate("""async () => {
+                const subjects=[
+                    {code:"english",label:"English (SK)",years:[
+                        {year:1,coming_soon:true},{year:2,pdf_ready:true,download_enabled:true}]},
+                    {code:"sejarah",label:"Sejarah",years:[
+                        {year:4,pdf_ready:true,download_enabled:true}]},
+                    {code:"bahasa_cina_sjkc",label:"Bahasa Cina (SJKC)",years:[
+                        {year:2,pdf_ready:true,download_enabled:true,docx_ready:true,note:"W.P. Kuala Lumpur"},
+                        {year:3,pdf_ready:true,download_enabled:false}]},
+                    {code:"science_dlp",label:"Science (DLP)",years:[
+                        {year:3,pdf_ready:true,download_enabled:true,year_label:"Year 3"}]}
+                ];
+                const realFetch=window.fetch;
+                window.fetch=async ()=>new Response(JSON.stringify({subjects,personalization_allowed:true}));
+                try { await loadRptCatalog(); } finally { window.fetch=realFetch; }
+            }""")
+            curriculum=page.locator("#rpt-curriculum")
+            year=page.locator("#rpt-year")
+            subject=page.locator("#rpt-subject")
+            word=page.locator("#rpt-download-word")
+            pdf=page.locator("#rpt-download-mobile")
+            self.assertEqual(curriculum.locator("option").all_text_contents(),
+                             ["Pilih kurikulum","KSSR (SK)","KSSR (SJKC)","KP2027","DLP"])
+            self.assertTrue(year.is_disabled())
+            self.assertTrue(subject.is_disabled())
+            curriculum.select_option("kssr")
+            self.assertEqual(year.locator("option").all_text_contents(),["Pilih tahun","Tahun 2","Tahun 4"])
+            year.select_option("2")
+            self.assertEqual(subject.locator("option").all_text_contents(),["Pilih subjek","English (SK)"])
+            subject.select_option("english")
+            self.assertTrue(pdf.is_visible())
+            self.assertFalse(word.is_visible())
+            curriculum.select_option("sjkc")
+            self.assertEqual(year.input_value(),"")
+            self.assertTrue(subject.is_disabled())
+            self.assertFalse(pdf.is_visible())
+            year.select_option("2")
+            subject.select_option("bahasa_cina_sjkc")
+            self.assertTrue(word.is_visible())
+            self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/bahasa-cina/2.docx")
+            year.select_option("3")
+            self.assertEqual(subject.input_value(),"")
+            self.assertIsNone(word.get_attribute("href"))
+            subject.select_option("bahasa_cina_sjkc")
+            self.assertIn("akses berbayar",page.locator("#rpt-status").inner_text())
+            self.assertFalse(pdf.is_visible())
+            curriculum.select_option("kp2027")
+            year.select_option("1")
+            subject.select_option("english")
+            self.assertEqual(page.locator("#rpt-status").inner_text(),"Dalam Penyediaan")
+            self.assertFalse(pdf.is_visible())
+            curriculum.select_option("dlp")
+            self.assertEqual(year.locator("option").all_text_contents(),["Pilih tahun","Year 3"])
+            year.select_option("3")
+            subject.select_option("science_dlp")
+            self.assertTrue(pdf.is_visible())
+            self.assertIsNone(word.get_attribute("href"))
+        finally:
+            page.close()
 
     def test_phone_uses_safe_placeholder_link_for_personalized_rpt(self):
         for width in (320,360,375,390,430,760):

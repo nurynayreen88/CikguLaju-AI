@@ -342,20 +342,12 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .rph-reflection summary{cursor:pointer;font-weight:700}
 .rph-reflection textarea{display:block;width:100%;box-sizing:border-box;margin:8px 0;padding:12px;border:1px solid #ceded8;border-radius:12px;background:#fff;color:#18334b;font:inherit;resize:vertical}
 @media(max-width:380px){#teacher-info .rph-time-fields{grid-template-columns:minmax(0,1fr);gap:0}}
-/* Android/iOS browsers handle a direct authenticated PDF attachment more
-   reliably than a blob: URL synthesized after an asynchronous fetch. */
-#rpt-download-word:not([hidden]){display:inline-block;margin:18px 8px 0 0;padding:13px 16px}
+/* Open the mobile PDF save view directly from a user gesture. */
 #rpt-download-mobile{display:none!important}
 @media screen and (max-width:760px){
   #rpt-download{display:none!important}
-  #rpt-download-mobile:not([hidden]){display:inline-flex!important;align-items:center;justify-content:center;
-    min-height:48px;max-width:100%;padding:13px 16px;margin:18px 0 4px;
-    border-radius:12px;background:#087568;color:white;font:inherit;font-weight:750;
-    text-align:center;text-decoration:none;overflow-wrap:anywhere}
-  #rpt-download-mobile:focus-visible{outline:3px solid #ffc84b;outline-offset:3px}
-  .rpt-phone-help{display:block}
+  #rpt-download-mobile:not([hidden]){display:inline-flex!important}
 }
-@media screen and (min-width:761px){.rpt-phone-help{display:none}}
 </style>
 <style>
 /* RPH Hari Ini: grouped by saved, non-overlapping timetable periods. */
@@ -431,21 +423,17 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 @media(max-width:700px){.special-fields-grid{grid-template-columns:1fr}.special-teacher-info{padding:12px}}
 </style>
 <style>
-.rpt-catalog-summary{margin:16px 0 14px;background:#eaf3f8;border:1px solid #d0e2ea;padding:12px 15px;border-radius:11px;color:#194765;font-weight:700}
-.rpt-all-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,285px),1fr));gap:12px;margin:12px 0 24px}
-.rpt-subject-group{background:#fbfdfd;border:1px solid #d9e6eb;border-radius:14px;padding:14px;min-width:0}
-.rpt-subject-group h4{margin:0 0 11px;color:#173e61;font-size:1rem}
-.rpt-years-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(105px,1fr));gap:7px}
-.rpt-year-card{display:flex;flex-direction:column;gap:5px;background:white;border:1px solid #dce7eb;border-radius:9px;padding:9px;min-width:0}
-.rpt-year-card strong{font-size:.86rem;color:#173d55}
-.rpt-year-status{font-size:.68rem;color:#66551f;font-weight:750;letter-spacing:.03em}
-.rpt-year-link{display:block;font-size:.78rem;text-align:center;text-decoration:none;border-radius:8px;background:#087568;color:#fff!important;padding:8px 4px;font-weight:750}
-.rpt-year-link:hover:not(:disabled){background:#075f55}
-.rpt-year-link{border:0;cursor:pointer;font:inherit}
-.rpt-year-link:disabled{background:#e5e9ed;color:#6b7883!important;cursor:not-allowed}
-.rpt-year-link:focus-visible{outline:3px solid #ffbc47;outline-offset:2px}
-.rpt-year-muted{color:#71818b;font-size:.74rem;line-height:1.35}
-@media(max-width:440px){.rpt-all-list{grid-template-columns:1fr}.rpt-years-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.rpt-selectors{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:16px 0}
+.rpt-selectors>div{min-width:0}
+.rpt-selectors label{margin-top:0}
+.rpt-selectors select{width:100%;min-width:0}
+.rpt-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.rpt-actions [hidden]{display:none!important}
+.rpt-actions #rpt-download,.rpt-actions .rpt-download-link{margin:0;min-height:46px}
+.rpt-download-link{display:inline-flex;align-items:center;justify-content:center;text-align:center;padding:10px 15px;border-radius:10px;background:#087568;color:#fff!important;font-weight:750;text-decoration:none}
+.rpt-download-link:hover{background:#075f55}
+.rpt-download-link:focus-visible{outline:3px solid #ffbc47;outline-offset:2px}
+@media(max-width:760px){.rpt-selectors{grid-template-columns:minmax(0,1fr);gap:10px}}
 
 /* Private admin analytics; sensitive data never appears in the HTML source. */
 .admin-stats-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0}
@@ -741,20 +729,28 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </section>
 <section id="view-rpt" class="app-view" aria-labelledby="rpt2027-heading" hidden>
 <section id="rpt2027-panel" aria-labelledby="rpt2027-heading">
- <h3 id="rpt2027-heading">📅 RPT 2027 — Semua Subjek</h3>
- <p>Semua RPT yang tersedia dipaparkan di bawah mengikut subjek dan tahun. <strong>Sila semak padanan SK/SP, buku teks dan takwim sekolah sebelum digunakan.</strong> Muat turun RPT adalah <strong>percuma untuk semua pengguna berdaftar</strong> dan tidak memotong 10 janaan RPH percuma. Hanya <strong>Rakan Pembangun atau langganan aktif</strong> mendapat muka depan yang dicetak bersama logo sekolah, nama sekolah dan nama guru daripada Profil Guru. Pengguna biasa atau langganan tamat masih boleh menyimpan maklumat profil, tetapi maklumat itu <strong>tidak dicetak</strong>. Tiada muka depan atau halaman tambahan. <strong>Tahun 1 KP2027 boleh dilihat, tetapi muat turun belum dibuka.</strong></p>
- <p id="rpt-catalog-summary" class="rpt-catalog-summary" role="status">Memuatkan semua RPT 2027…</p>
- <div id="rpt-all-list" class="rpt-all-list" aria-label="Senarai RPT 2027 mengikut subjek"></div>
- <h4>Atau pilih terus mengikut subjek dan tahun</h4>
- <label for="rpt-subject">Subjek RPT</label>
- <select id="rpt-subject" disabled><option value="">Memuatkan senarai subjek…</option></select>
- <label for="rpt-year">Tahun RPT</label>
- <select id="rpt-year" disabled><option value="">Pilih Subjek dahulu</option></select>
- <button id="rpt-download" type="button" disabled>Muat turun RPT 2027 (PDF)</button>
- <a id="rpt-download-word" class="rpt-year-link" href="#" hidden>Muat turun Word</a>
- <a id="rpt-download-mobile" href="#" target="_blank" rel="noopener" aria-label="Muat turun RPT 2027 pada tab baharu" hidden>📥 Muat Turun RPT 2027 (PDF)</a>
+ <h3 id="rpt2027-heading">RPT 2027</h3>
+ <p class="notice">Semak padanan SK/SP, buku teks dan takwim sekolah sebelum menggunakan RPT.</p>
+ <div class="rpt-selectors">
+  <div>
+   <label for="rpt-curriculum">Kurikulum</label>
+   <select id="rpt-curriculum" disabled><option value="">Memuatkan katalog…</option></select>
+  </div>
+  <div>
+   <label for="rpt-year">Tahun</label>
+   <select id="rpt-year" disabled><option value="">Pilih kurikulum dahulu</option></select>
+  </div>
+  <div>
+   <label for="rpt-subject">Subjek</label>
+   <select id="rpt-subject" disabled><option value="">Pilih tahun dahulu</option></select>
+  </div>
+ </div>
+ <div class="rpt-actions">
+  <button id="rpt-download" type="button" disabled hidden>Muat turun PDF</button>
+  <a id="rpt-download-mobile" class="rpt-download-link" target="_blank" rel="noopener" aria-label="Muat turun PDF pada tab baharu" hidden>Muat turun PDF</a>
+  <a id="rpt-download-word" class="rpt-download-link" hidden>Muat turun Word</a>
+ </div>
  <p id="rpt-status" class="notice" role="status"></p>
- <p class="notice rpt-phone-help">Pada telefon, RPT percuma dimuat turun tanpa nama dan logo. Cetakan berprofil hanya untuk Rakan Pembangun atau langganan aktif. Maklumat profil dan logo yang disimpan tidak dipadamkan apabila langganan tamat.</p>
 </section></section>
 <section id="view-account" class="app-view" aria-labelledby="view-account-heading" hidden>
 <h2 id="view-account-heading">Profil Guru</h2>
@@ -1866,134 +1862,107 @@ async function populateMaterialList(){
    (sourceError?"Semakan belum lengkap: "+sourceError:extraNotice);
 }
 document.getElementById("show-materials").addEventListener("click",()=>{void populateMaterialList();});
-function renderAllRptCards(data){
- const panel=document.getElementById("rpt-all-list");
- const summary=document.getElementById("rpt-catalog-summary");
- panel.replaceChildren();
- const subjects=Array.isArray(data?.subjects)?data.subjects:[];
- let listed=0,ready=0;
- for(const item of subjects){
-  if(typeof item?.code!=="string"||typeof item?.label!=="string"||!Array.isArray(item?.years))continue;
-  const group=document.createElement("section");group.className="rpt-subject-group";
-  const heading=document.createElement("h4");heading.textContent=item.label;group.appendChild(heading);
-  const years=document.createElement("div");years.className="rpt-years-grid";
-  for(const year of item.years){
-   if(!Number.isInteger(year?.year))continue;
-   listed++;
-   const card=document.createElement("div");card.className="rpt-year-card";
-   const title=document.createElement("strong");title.textContent=rptYearLabel(year.year,year.year_label);
-   const status=document.createElement("span");status.className="rpt-year-status";
-   status.textContent=year.year===1?"Belum dibuka":year.coming_soon?"Dalam Penyediaan":year.download_enabled===true?"PDF tersedia":"Belum tersedia";
-   if(year.docx_ready===true)status.textContent="PDF dan Word tersedia";
-   else if(year.pdf_ready===true&&!year.download_enabled)status.textContent="Akses berbayar";
-   card.append(title,status);
-   if(year.pdf_ready===true)ready++;
-   if(year.year===1){
-    const disabled=document.createElement("button");
-    disabled.className="rpt-year-link";disabled.type="button";disabled.disabled=true;
-    disabled.textContent="Belum boleh muat turun";
-    disabled.setAttribute("aria-label","RPT Tahun 1 (KP Baharu) belum dibuka untuk muat turun");
-    card.append(disabled);
-   }else if(year.download_enabled===true){
-    const button=document.createElement("button");button.type="button";
-    button.className="rpt-year-link";button.textContent="Muat turun PDF";
-    button.setAttribute("aria-label","Muat turun RPT "+item.label+" Tahun "+year.year+" PDF");
-    button.addEventListener("click",()=>{
-     void window.downloadCikguLajuRPT(item.code,year.year,item.label,
-                                     document.getElementById("rpt-status"),button);
-    });
-    card.append(button);
-    if(year.docx_ready===true){
-     const word=document.createElement("a");
-     word.className="rpt-year-link";
-     word.href="/api/rpt/2027/sjkc/bahasa-cina/"+year.year+".docx";
-     word.textContent="Muat turun Word";
-     card.append(word);
-    }
-   }else if(!year.coming_soon){
-    const unavailable=document.createElement("span");unavailable.className="rpt-year-muted";
-    unavailable.textContent=year.pdf_ready===true?"Akses berbayar diperlukan":"PDF belum dipasang";
-    card.append(unavailable);
-   }
-   card.title=typeof year.note==="string"?year.note:"";
-   years.appendChild(card);
-  }
-  group.appendChild(years);panel.appendChild(group);
- }
- summary.textContent=subjects.length+" subjek • "+ready+" PDF RPT tersedia • "+
-  (listed-ready)+" pilihan belum tersedia termasuk Tahun 1 (KP Baharu)"+
-  (data.personalization_allowed===true?". Akaun berbayar aktif: muka depan boleh diisi dengan nama dan logo.":". Muat turun percuma tanpa nama dan logo pada cetakan.");
-}
-const rptSubject=document.getElementById("rpt-subject"),rptYear=document.getElementById("rpt-year"),rptDownload=document.getElementById("rpt-download"),rptMobileLink=document.getElementById("rpt-download-mobile"),rptStatus=document.getElementById("rpt-status");
+const rptCurriculum=document.getElementById("rpt-curriculum");
+const rptYear=document.getElementById("rpt-year");
+const rptSubject=document.getElementById("rpt-subject");
+const rptDownload=document.getElementById("rpt-download");
+const rptMobileLink=document.getElementById("rpt-download-mobile");
 const rptWordLink=document.getElementById("rpt-download-word");
-function rptYearLabel(year,label){return label||(year===1?"Tahun 1 (KP Baharu)":"Tahun "+year);}
+const rptStatus=document.getElementById("rpt-status");
+const rptCurricula=[
+ ["kssr","KSSR (SK)"],["sjkc","KSSR (SJKC)"],["kp2027","KP2027"],["dlp","DLP"]
+];
 let rptCatalog=null;
+let rptDownloading=false;
+
+function rptCurriculumFor(subject,year){
+ if(year===1)return "kp2027";
+ if(subject.endsWith("_dlp"))return "dlp";
+ if(subject.endsWith("_sjkc"))return "sjkc";
+ return "kssr";
+}
+function rptYearLabel(year,label){
+ return label||(year===1?"Tahun 1 (KP Baharu)":"Tahun "+year);
+}
+function resetRptSelect(select,label,options=[]){
+ select.replaceChildren(new Option(label,""),...options);
+ select.disabled=options.length===0;
+}
 async function loadRptCatalog(){
- rptDownload.disabled=true;
- if(rptWordLink) rptWordLink.hidden=true;
- rptMobileLink.hidden=true;
- rptMobileLink.removeAttribute("href");
- rptSubject.disabled=true;
- rptYear.disabled=true;
+ rptCatalog=null;
+ resetRptSelect(rptCurriculum,"Memuatkan katalog…");
+ resetRptSelect(rptYear,"Pilih kurikulum dahulu");
+ resetRptSelect(rptSubject,"Pilih tahun dahulu");
+ refreshRptDownload();
  try{
-  const r=await fetch("/api/rpt/2027/catalog",{credentials:"same-origin",cache:"no-store"});
-  if(!r.ok)throw Error(r.status===401?"Sila log masuk untuk melihat RPT 2027.":"Senarai RPT belum tersedia (HTTP "+r.status+").");
-  const data=await r.json();
+  const response=await fetch("/api/rpt/2027/catalog",{credentials:"same-origin",cache:"no-store"});
+  if(!response.ok)throw Error(response.status===401?"Sila log masuk untuk melihat RPT 2027.":"Katalog RPT belum dapat dimuatkan.");
+  const data=await response.json();
   if(!Array.isArray(data.subjects))throw Error("Format katalog RPT tidak sah.");
-  rptCatalog=data;
-  renderAllRptCards(data);
-  rptSubject.replaceChildren(new Option("Pilih Subjek",""));
+  const entries=[];
   for(const item of data.subjects){
-   if(typeof item.code!=="string"||typeof item.label!=="string"||!Array.isArray(item.years))continue;
-   rptSubject.add(new Option(item.label,item.code));
+   if(typeof item?.code!=="string"||typeof item?.label!=="string"||!Array.isArray(item.years))continue;
+   for(const year of item.years){
+    if(!Number.isInteger(year?.year)||year.year<1||year.year>6)continue;
+    entries.push({item,year,curriculum:rptCurriculumFor(item.code,year.year)});
+   }
   }
-  rptSubject.disabled=rptSubject.options.length<=1;
-  rptYear.replaceChildren(new Option("Pilih Subjek dahulu",""));
-  rptStatus.textContent=data.personalization_allowed===true?"Muat turun RPT tersedia. Akaun berbayar aktif boleh mencetak identiti sekolah.":"Muat turun RPT percuma tersedia. Nama dan logo hanya dicetak untuk akaun berbayar aktif.";
- }catch(e){
-  rptStatus.textContent=e.message;
-  document.getElementById("rpt-catalog-summary").textContent="Katalog RPT tidak dapat dimuatkan.";
-  document.getElementById("rpt-all-list").replaceChildren();
-  rptSubject.replaceChildren(new Option("Senarai belum tersedia",""));rptSubject.disabled=true;
+  rptCatalog={entries,personalizationAllowed:data.personalization_allowed===true};
+  const available=new Set(entries.map(entry=>entry.curriculum));
+  const options=rptCurricula.filter(([code])=>available.has(code)).map(([code,label])=>new Option(label,code));
+  resetRptSelect(rptCurriculum,options.length?"Pilih kurikulum":"Tiada RPT disenaraikan",options);
+ }catch(error){
+  resetRptSelect(rptCurriculum,"Katalog belum tersedia");
+  rptStatus.textContent=error.message;
  }
+}
+function rptEntries(year){
+ return rptCatalog?.entries.filter(entry=>entry.curriculum===rptCurriculum.value&&
+  (year===undefined||entry.year.year===year))??[];
 }
 function rptChoice(){
- if(!rptCatalog)return null;
- const item=rptCatalog.subjects.find(s=>s.code===rptSubject.value);
- const year=item?.years.find(y=>y.year===Number(rptYear.value));
- return item&&year?{item,year}:null;
+ return rptEntries(Number(rptYear.value)).find(entry=>entry.item.code===rptSubject.value);
+}
+function rptCanDownload(entry){
+ return Boolean(entry&&entry.year.year>1&&entry.year.pdf_ready===true&&entry.year.download_enabled===true);
 }
 function refreshRptDownload(){
  const prepared=document.getElementById("rpt-prepared-manual-link");
  if(prepared){URL.revokeObjectURL(prepared.href);prepared.remove();}
  const selection=rptChoice();
- const ready=selection?.year.year>1&&selection.year.download_enabled===true;
+ const ready=rptCanDownload(selection);
  rptDownload.disabled=!ready;
- if(rptWordLink){
-  rptWordLink.hidden=!(ready&&selection.year.docx_ready===true);
-  if(!rptWordLink.hidden)rptWordLink.href="/api/rpt/2027/sjkc/bahasa-cina/"+selection.year.year+".docx";
-  else rptWordLink.removeAttribute("href");
- }
+ rptDownload.hidden=!ready;
  rptMobileLink.hidden=!ready;
- if(ready){
-  // Same-origin private PDF, authenticated by the normal Telegram Web cookie.
-  // Native browser navigation preserves the user's click gesture on phones.
-  // Same-origin download triggered by the personalization script.
-  rptMobileLink.href="#";
- }else{
-  rptMobileLink.removeAttribute("href");
+ rptWordLink.hidden=!(ready&&selection.item.code==="bahasa_cina_sjkc"&&selection.year.docx_ready===true);
+ if(ready)rptMobileLink.href="#";
+ else rptMobileLink.removeAttribute("href");
+ if(!rptWordLink.hidden)rptWordLink.href="/api/rpt/2027/sjkc/bahasa-cina/"+selection.year.year+".docx";
+ else rptWordLink.removeAttribute("href");
+ if(!selection){rptStatus.textContent="";return;}
+ const {item,year}=selection;
+ if(year.year===1||year.coming_soon){rptStatus.textContent="Dalam Penyediaan";return;}
+ if(!year.pdf_ready){rptStatus.textContent="Fail RPT belum tersedia.";return;}
+ if(!ready){rptStatus.textContent="RPT ini memerlukan akses berbayar aktif.";return;}
+ const calendar=item.code==="bahasa_cina_sjkc"?year.note:"";
+ const cover=rptCatalog.personalizationAllowed?"Cetakan PDF dengan nama dan logo daripada Profil Guru.":"";
+ rptStatus.textContent=[calendar,cover].filter(Boolean).join(" ");
+}
+async function downloadSelectedRpt(selection,viewer=null,mobile=false){
+ rptDownloading=true;
+ for(const select of [rptCurriculum,rptYear,rptSubject])select.disabled=true;
+ try{
+  await window.downloadCikguLajuRPT(selection.item.code,selection.year.year,selection.item.label,
+                                    rptStatus,rptDownload,viewer,mobile);
+ }finally{
+  rptDownloading=false;
+  for(const select of [rptCurriculum,rptYear,rptSubject])select.disabled=select.options.length<=1;
  }
- if(!selection){rptStatus.textContent="Pilih subjek dan tahun.";return;}
- if(selection.year.year===1){rptStatus.textContent="Tahun 1 (KP Baharu) — Akan Datang.";return;}
- if(selection.year.coming_soon){rptStatus.textContent="RPT "+selection.item.label+" Tahun "+selection.year.year+" — Dalam Penyediaan.";return;}
- if(!selection.year.pdf_ready){rptStatus.textContent="RPT "+selection.item.label+" Tahun "+selection.year.year+" — fail PDF belum tersedia. Tiada fail subjek/tahun lain digunakan.";return;}
- if(selection.year.pdf_ready&&!ready){rptStatus.textContent="RPT ini memerlukan akses berbayar aktif.";return;}
- rptStatus.textContent="RPT "+selection.item.label+" Tahun "+selection.year.year+(ready?" · PDF tersedia untuk muat turun.":" · PDF belum tersedia.")+(rptCatalog?.personalization_allowed?" Cetakan berprofil aktif.":" Versi percuma tanpa identiti sekolah.");
 }
 rptMobileLink.addEventListener("click",(event)=>{
  event.preventDefault();
  const item=rptChoice();
- if(!item||item.year.year===1||!item.year.download_enabled)return;
+ if(rptDownloading||!rptCanDownload(item))return;
  // Open during the actual touch/click gesture. On iOS Safari an asynchronous
  // Blob download launched after fetch() may otherwise be silently blocked.
  let viewer=null;
@@ -2005,28 +1974,29 @@ rptMobileLink.addEventListener("click",(event)=>{
    viewer.document.body.textContent="Menyediakan PDF RPT 2027…";
   }
  }catch(_error){viewer=null;}
- void window.downloadCikguLajuRPT(item.item.code,item.year.year,item.item.label,
-                                   rptStatus,rptDownload,viewer,true);
+ void downloadSelectedRpt(item,viewer,true);
 });
-rptSubject.addEventListener("change",()=>{
- rptDownload.disabled=true;
- if(rptWordLink) rptWordLink.hidden=true;
- rptMobileLink.hidden=true;
- rptMobileLink.removeAttribute("href");
- rptYear.replaceChildren(new Option(rptSubject.value?"Pilih Tahun":"Pilih Subjek dahulu",""));
- const item=rptCatalog?.subjects.find(s=>s.code===rptSubject.value);
- if(!item){rptYear.disabled=true;rptStatus.textContent="Pilih subjek.";return;}
- for(const year of item.years){
-  rptYear.add(new Option(rptYearLabel(year.year,year.year_label)+" — "+(year.year===1?"Akan Datang":year.status),String(year.year)));
- }
- rptYear.disabled=false;rptStatus.textContent="Pilih tahun untuk RPT "+item.label+".";
+rptCurriculum.addEventListener("change",()=>{
+ const years=new Map(rptEntries().map(({year})=>[year.year,rptYearLabel(year.year,year.year_label)]));
+ const options=[...years].sort(([a],[b])=>a-b).map(([year,label])=>new Option(label,String(year)));
+ resetRptSelect(rptYear,rptCurriculum.value?"Pilih tahun":"Pilih kurikulum dahulu",options);
+ resetRptSelect(rptSubject,"Pilih tahun dahulu");
+ refreshRptDownload();
 });
-rptYear.addEventListener("change",refreshRptDownload);
+rptYear.addEventListener("change",()=>{
+ const options=rptEntries(Number(rptYear.value)).map(({item,year})=>{
+  const status=year.year===1||year.coming_soon?" — Dalam Penyediaan":
+   !year.pdf_ready?" — Belum tersedia":!year.download_enabled?" — Akses berbayar":"";
+  return new Option(item.label+status,item.code);
+ });
+ resetRptSelect(rptSubject,rptYear.value?"Pilih subjek":"Pilih tahun dahulu",options);
+ refreshRptDownload();
+});
+rptSubject.addEventListener("change",refreshRptDownload);
 rptDownload.addEventListener("click",()=>{
  const selection=rptChoice();
- if(!selection||selection.year.year===1||!selection.year.download_enabled)return;
- void window.downloadCikguLajuRPT(selection.item.code,selection.year.year,
-      selection.item.label,rptStatus,rptDownload);
+ if(rptDownloading||!rptCanDownload(selection))return;
+ void downloadSelectedRpt(selection);
 });
 teacherClass.addEventListener("change",toggleTeacherClassOther);
 document.getElementById("teacher-open-roster").addEventListener("click",()=>{
