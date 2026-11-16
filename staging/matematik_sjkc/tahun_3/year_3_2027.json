@@ -25,7 +25,7 @@
         "2027-01-04",
         "2027-01-08"
       ],
-      "pdp_count": 1,
+      "pdp_count": 0,
       "calendar_status": "pengajaran"
     },
     {
@@ -38,7 +38,7 @@
         "2027-01-11",
         "2027-01-15"
       ],
-      "pdp_count": 2,
+      "pdp_count": 3,
       "calendar_status": "pengajaran"
     },
     {
@@ -131,7 +131,7 @@
         "2027-03-01",
         "2027-03-05"
       ],
-      "pdp_count": 3,
+      "pdp_count": 2,
       "calendar_status": "pengajaran"
     },
     {
@@ -171,7 +171,7 @@
         "2027-03-29",
         "2027-04-02"
       ],
-      "pdp_count": 3,
+      "pdp_count": 2,
       "calendar_status": "pengajaran"
     },
     {
@@ -184,7 +184,7 @@
         "2027-04-05",
         "2027-04-09"
       ],
-      "pdp_count": 3,
+      "pdp_count": 2,
       "calendar_status": "pengajaran"
     },
     {
@@ -249,9 +249,9 @@
         "2027-05-10",
         "2027-05-14"
       ],
-      "pdp_count": 0,
-      "calendar_status": "pentaksiran_pertengahan_tahun",
-      "calendar_note": "Pentaksiran Pertengahan Tahun • Tiada PdP"
+      "pdp_count": 3,
+      "calendar_status": "pengajaran_atau_pentaksiran_mengikut_sekolah",
+      "calendar_note": "PdP atau pentaksiran pertengahan tahun mengikut takwim sekolah"
     },
     {
       "week": 19,
@@ -264,8 +264,8 @@
         "2027-05-21"
       ],
       "pdp_count": 0,
-      "calendar_note": "Cuti Aidiladha, Wesak dan cuti tambahan • Tiada PdP",
-      "calendar_status": "cuti_perayaan_kapasiti_bersama_sifar"
+      "calendar_note": "Minggu PdP Raya Haji, Wesak dan cuti tambahan",
+      "calendar_status": "minggu_pdp_raya_haji_wesak_kapasiti_bersama_sifar"
     },
     {
       "week": 20,
@@ -528,8 +528,8 @@
         "2027-10-29"
       ],
       "pdp_count": 0,
-      "calendar_note": "Ruang persediaan pentaksiran akhir tahun • Tiada PdP",
-      "calendar_status": "persediaan_pentaksiran_akhir_tahun_atau_pentaksiran_akhir_tahun_mengikut_sekolah"
+      "calendar_note": "Ruang pentaksiran akhir tahun mengikut takwim sekolah; minggu pendek Deepavali",
+      "calendar_status": "pengajaran_minggu_pendek_atau_pentaksiran_akhir_tahun_mengikut_sekolah"
     },
     {
       "week": 40,
@@ -542,8 +542,8 @@
         "2027-11-05"
       ],
       "pdp_count": 0,
-      "calendar_status": "cadangan_ruang_pentaksiran_akhir_tahun",
-      "calendar_note": "Ruang pentaksiran akhir tahun mengikut sekolah • Tiada PdP"
+      "calendar_status": "minggu_akhir_pengajaran_atau_pentaksiran_akhir_tahun_mengikut_sekolah",
+      "calendar_note": "Ruang pentaksiran akhir tahun mengikut takwim sekolah"
     },
     {
       "week": 41,
@@ -556,8 +556,8 @@
         "2027-11-12"
       ],
       "pdp_count": 0,
-      "calendar_status": "aktiviti_selepas_pentaksiran_akhir_tahun",
-      "calendar_note": "Aktiviti sekolah selepas pentaksiran • Tiada PdP"
+      "calendar_status": "ruang_pentaksiran_akhir_tahun_atau_aktiviti_akhir_tahun",
+      "calendar_note": "Pentaksiran akhir tahun atau aktiviti sekolah mengikut takwim sekolah"
     },
     {
       "week": 42,
@@ -570,8 +570,8 @@
         "2027-11-19"
       ],
       "pdp_count": 0,
-      "calendar_status": "aktiviti_selepas_pentaksiran_akhir_tahun_akhir_tahun",
-      "calendar_note": "Aktiviti akhir tahun • Tiada PdP"
+      "calendar_status": "ruang_pentaksiran_akhir_tahun_atau_aktiviti_akhir_tahun",
+      "calendar_note": "Aktiviti akhir tahun"
     },
     {
       "week": 43,
@@ -584,8 +584,8 @@
         "2027-11-26"
       ],
       "pdp_count": 0,
-      "calendar_status": "aktiviti_akhir_tahun",
-      "calendar_note": "Aktiviti akhir tahun • Tiada PdP"
+      "calendar_status": "ruang_pentaksiran_akhir_tahun_atau_aktiviti_akhir_tahun",
+      "calendar_note": "Aktiviti akhir tahun"
     },
     {
       "week": 44,
@@ -598,14 +598,14 @@
         "2027-12-03"
       ],
       "pdp_count": 0,
-      "calendar_status": "aktiviti_akhir_tahun",
-      "calendar_note": "Aktiviti akhir tahun • Tiada PdP"
+      "calendar_status": "ruang_pentaksiran_akhir_tahun_atau_aktiviti_akhir_tahun",
+      "calendar_note": "Aktiviti akhir tahun"
     }
   ],
   "lessons": [
     {
       "pdp": 1,
-      "week": 1,
+      "week": 2,
       "duration_minutes": 60,
       "unit_number": 1,
       "unit": "10 000以内的整数",
@@ -1437,7 +1437,7 @@
     },
     {
       "pdp": 19,
-      "week": 9,
+      "week": 10,
       "duration_minutes": 60,
       "unit_number": 2,
       "unit": "基本运算",
@@ -1529,7 +1529,7 @@
     },
     {
       "pdp": 21,
-      "week": 10,
+      "week": 11,
       "duration_minutes": 60,
       "unit_number": 2,
       "unit": "基本运算",
@@ -1668,7 +1668,7 @@
     },
     {
       "pdp": 24,
-      "week": 11,
+      "week": 12,
       "duration_minutes": 60,
       "unit_number": 2,
       "unit": "基本运算",
@@ -1761,7 +1761,7 @@
     },
     {
       "pdp": 26,
-      "week": 12,
+      "week": 13,
       "duration_minutes": 60,
       "unit_number": 2,
       "unit": "基本运算",
@@ -1811,7 +1811,7 @@
     },
     {
       "pdp": 27,
-      "week": 12,
+      "week": 13,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -1857,7 +1857,7 @@
     },
     {
       "pdp": 28,
-      "week": 13,
+      "week": 14,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -1903,7 +1903,7 @@
     },
     {
       "pdp": 29,
-      "week": 13,
+      "week": 14,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -1949,7 +1949,7 @@
     },
     {
       "pdp": 30,
-      "week": 13,
+      "week": 14,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -1995,7 +1995,7 @@
     },
     {
       "pdp": 31,
-      "week": 14,
+      "week": 15,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2041,7 +2041,7 @@
     },
     {
       "pdp": 32,
-      "week": 14,
+      "week": 15,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2087,7 +2087,7 @@
     },
     {
       "pdp": 33,
-      "week": 14,
+      "week": 15,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2133,7 +2133,7 @@
     },
     {
       "pdp": 34,
-      "week": 15,
+      "week": 16,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2179,7 +2179,7 @@
     },
     {
       "pdp": 35,
-      "week": 15,
+      "week": 16,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2225,7 +2225,7 @@
     },
     {
       "pdp": 36,
-      "week": 15,
+      "week": 16,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2272,7 +2272,7 @@
     },
     {
       "pdp": 37,
-      "week": 16,
+      "week": 17,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2318,7 +2318,7 @@
     },
     {
       "pdp": 38,
-      "week": 16,
+      "week": 17,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2365,7 +2365,7 @@
     },
     {
       "pdp": 39,
-      "week": 16,
+      "week": 17,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2414,7 +2414,7 @@
     },
     {
       "pdp": 40,
-      "week": 17,
+      "week": 18,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2462,7 +2462,7 @@
     },
     {
       "pdp": 41,
-      "week": 17,
+      "week": 18,
       "duration_minutes": 60,
       "unit_number": 3,
       "unit": "分数、小数与百分比",
@@ -2509,7 +2509,7 @@
     },
     {
       "pdp": 42,
-      "week": 17,
+      "week": 18,
       "duration_minutes": 60,
       "unit_number": 4,
       "unit": "钱币",
