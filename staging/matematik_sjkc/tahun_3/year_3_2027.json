@@ -86,7 +86,8 @@
         "2027-02-08",
         "2027-02-12"
       ],
-      "pdp_count": 0
+      "pdp_count": 0,
+      "calendar_note": "Tahun Baharu Cina dan cuti tambahan mengikut negeri"
     },
     {
       "week": 7,
@@ -243,7 +244,8 @@
         "2027-05-17",
         "2027-05-21"
       ],
-      "pdp_count": 0
+      "pdp_count": 0,
+      "calendar_note": "Hari Raya Aidiladha, Hari Wesak dan cuti tambahan KPM"
     },
     {
       "week": 20,
@@ -376,7 +378,8 @@
         "2027-08-16",
         "2027-08-20"
       ],
-      "pdp_count": 3
+      "pdp_count": 3,
+      "calendar_note": "Maulidur Rasul dan cuti ganti mengikut negeri"
     },
     {
       "week": 31,
@@ -638,7 +641,7 @@
         {
           "name": "总结",
           "minutes": 5,
-          "activity": "学生解释只移动一个百片到千位会改变什么，并用模型纠正错误放置。"
+          "activity": "教师拿走一个百片并放入一个千块。学生指出 2 305 变成 3 205，并说明数值增加了 900。"
         }
       ]
     },
@@ -1305,7 +1308,7 @@
       ],
       "textbook_volume": 1,
       "textbook_pages": "46–47",
-      "activity_book_pages": "28",
+      "activity_book_pages": "28（列式参考）",
       "objective": "四道万以内加减混合题至少答对三道，能标出依次进行的两步",
       "materials": "数量变化卡和数轴",
       "stages": [
@@ -1526,7 +1529,7 @@
       "duration_minutes": 60,
       "unit_number": 2,
       "unit": "基本运算",
-      "topic": "除以 10 100 和 1 000",
+      "topic": "除以 10、100 和 1 000",
       "sk": [
         "2.4"
       ],
@@ -1547,7 +1550,7 @@
         {
           "name": "活动 1 示范与引导",
           "minutes": 15,
-          "activity": "教师比较 3 200÷10 与 3 200÷100，再用 3 205÷100 说明商和余数。"
+          "activity": "教师比较 3 200÷10、3 200÷100 和 3 000÷1 000，再用 3 205÷100 说明商和余数。学生用乘法验算。"
         },
         {
           "name": "活动 2 学生练习",
@@ -2140,7 +2143,7 @@
       "textbook_volume": 1,
       "textbook_pages": "91",
       "activity_book_pages": "61",
-      "objective": "五张百格图至少正确写出四个百分数，能按给定分数涂色",
+      "objective": "根据五张百格图至少正确写出四个分母为 100 的分数，并正确完成一道涂色题",
       "materials": "百格图、颜色笔",
       "stages": [
         {
@@ -2151,7 +2154,7 @@
         {
           "name": "活动 1 示范与引导",
           "minutes": 15,
-          "activity": "教师用 7/100 解释分子和分母，再示范由图写分数及由分数涂图。"
+          "activity": "教师用 7/100 解释分子和分母，示范读作百分之七，再由图写出分母为 100 的分数。"
         },
         {
           "name": "活动 2 学生练习",
@@ -2166,7 +2169,7 @@
         {
           "name": "总结",
           "minutes": 5,
-          "activity": "学生说出为什么四分之一的百格图可表示为 25/100。"
+          "activity": "学生把涂了 25 格的百格图写成 25/100，并读作百分之二十五。"
         }
       ]
     },
@@ -2280,7 +2283,7 @@
       "textbook_volume": 1,
       "textbook_pages": "96–100",
       "activity_book_pages": "64–67",
-      "objective": "六道题至少正确五道，通过小数点对齐及图示验证一题",
+      "objective": "六道小数加减题至少答对五道，并用百格图验算一题。加法的和及减法的被减数均不超过 0.99",
       "materials": "百格纸和小数数位表",
       "stages": [
         {
@@ -2291,12 +2294,12 @@
         {
           "name": "活动 1 示范与引导",
           "minutes": 15,
-          "activity": "教师分别示范把 0.2 放在十分位并写成 0.20。学生用百格拼合和划去格子比较加、减。"
+          "activity": "教师示范把 0.2 写成 0.20，使十分位和百分位分别对齐。学生用百格图拼合和划去格子比较加、减。"
         },
         {
           "name": "活动 2 学生练习",
           "minutes": 25,
-          "activity": "同桌各设计一题和不超过 0.99 的加法及一题非负差的减法，交换用竖式解决。"
+          "activity": "同桌各设计一题和不超过 0.99 的加法，以及一题被减数不超过 0.99、差为非负数的减法，交换用竖式解答。"
         },
         {
           "name": "活动 3 课堂评估",
@@ -2515,7 +2518,7 @@
       ],
       "textbook_volume": 2,
       "textbook_pages": "2–4",
-      "activity_book_pages": "78",
+      "activity_book_pages": "78 C",
       "objective": "正确算出3份清单中的2份总价并说明一个简算",
       "materials": "购物清单、价签",
       "stages": [
@@ -2607,7 +2610,7 @@
       ],
       "textbook_volume": 2,
       "textbook_pages": "5–7",
-      "activity_book_pages": "80",
+      "activity_book_pages": "80 C",
       "objective": "正确完成3题中的2题并记录中间余额",
       "materials": "账本卡、模拟现金",
       "stages": [
@@ -2791,7 +2794,7 @@
       ],
       "textbook_volume": 2,
       "textbook_pages": "14–15",
-      "activity_book_pages": "85",
+      "activity_book_pages": "85 A、B",
       "objective": "配对5组国家与货币中的4组",
       "materials": "地图、货币名称卡",
       "stages": [
@@ -2837,7 +2840,7 @@
       ],
       "textbook_volume": 2,
       "textbook_pages": "16",
-      "activity_book_pages": "85",
+      "activity_book_pages": "85 C",
       "objective": "从教师准备的有日期汇率表正确读取3项中的2项",
       "materials": "有日期的汇率表、标示卡",
       "stages": [
@@ -2883,7 +2886,7 @@
       ],
       "textbook_volume": 2,
       "textbook_pages": "17",
-      "activity_book_pages": "86",
+      "activity_book_pages": "86 A",
       "objective": "为四项开支正确分类三项并说出一个选择理由",
       "materials": "开支卡、小额预算单",
       "stages": [
@@ -2929,7 +2932,7 @@
       ],
       "textbook_volume": 2,
       "textbook_pages": "18",
-      "activity_book_pages": "86",
+      "activity_book_pages": "86 B",
       "objective": "用自己的话说明两者用途并各举一个合适例子",
       "materials": "目标卡、储蓄图",
       "stages": [
@@ -2993,12 +2996,12 @@
         {
           "name": "活动 2 学生练习",
           "minutes": 25,
-          "activity": "学生以账本或图表解题，对照原情境验算。"
+          "activity": "同桌先按给定的钱币算式各写一则故事，交换后从故事还原算式。再用账本或图表解两道应用题并验算。"
         },
         {
           "name": "活动 3 课堂评估",
           "minutes": 10,
-          "activity": "第 87 页选编故事，第 88–90 页选做应用题，第 91–92 页供巩固。教师检查一则故事及两份解答。"
+          "activity": "第 87 页选编故事，第 88–90 页选做应用题，第 91–92 页供巩固。教师检查故事是否符合算式，以及两道应用题中是否至少答对一道。"
         },
         {
           "name": "总结",
@@ -3024,7 +3027,7 @@
       "textbook_volume": 2,
       "textbook_pages": "26",
       "activity_book_pages": "93",
-      "objective": "从时间表正确找出4项中的3项",
+      "objective": "四项读表任务至少答对三项，并正确记录指定活动之前、进行时及之后的时刻",
       "materials": "活动时间表、钟面卡",
       "stages": [
         {
@@ -3045,7 +3048,7 @@
         {
           "name": "活动 3 课堂评估",
           "minutes": 10,
-          "activity": "学生完成第 93 页的时间表题。教师另给四项读表任务，包含写下活动开始与结束的时刻。"
+          "activity": "学生完成第 93 页的时间表题。教师另给四项读表任务，其中一项要求完整记录活动之前、进行时及之后的时刻。"
         },
         {
           "name": "总结",
@@ -3092,7 +3095,7 @@
         {
           "name": "活动 3 课堂评估",
           "minutes": 10,
-          "activity": "使用第 94 页。教师用五个关系或换算检查，包含 1 星期、1 年和含秒数的时长。"
+          "activity": "学生练习第 94 页。教师另出五项任务，检查星期与天、年与月、分与秒的关系，以及小时与分钟、分钟与秒的换算。"
         },
         {
           "name": "总结",
@@ -3557,7 +3560,7 @@
         {
           "name": "总结",
           "minutes": 5,
-          "activity": "学生说出厘米和超过 100 时怎样改写。"
+          "activity": "学生说明厘米数相加达到 100 时怎样换成米并记录。"
         }
       ]
     },
@@ -4221,7 +4224,7 @@
       "textbook_volume": 2,
       "textbook_pages": "75–81",
       "activity_book_pages": "124–130",
-      "objective": "完成三种量各一题中的两题并验算",
+      "objective": "长度、质量和液体体积应用题各一题，至少答对两题并写出验算",
       "materials": "四步表、仪器图、复习卡",
       "stages": [
         {
@@ -4312,8 +4315,8 @@
       ],
       "textbook_volume": 2,
       "textbook_pages": "86",
-      "activity_book_pages": "131",
-      "objective": "正确记录三种模型中的两种特征",
+      "activity_book_pages": "131 A（特征栏）、B",
+      "objective": "三种棱柱体中至少正确记录两种的底面、侧面、顶点和棱",
       "materials": "立体模型、贴纸",
       "stages": [
         {
@@ -4641,7 +4644,7 @@
         {
           "name": "导入",
           "minutes": 5,
-          "activity": "教师展示两格横轴相同而纵轴不同的位置。"
+          "activity": "教师展示两个横轴位置相同、纵轴位置不同的点，学生分别说出各点上的物体。"
         },
         {
           "name": "活动 1 示范与引导",

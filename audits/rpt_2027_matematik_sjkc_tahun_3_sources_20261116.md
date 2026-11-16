@@ -84,7 +84,7 @@ Semua 12 SP Unit 2 diliputi. Bahagian pengukuhan merujuk SK yang telah diajar. S
 
 | Bahan | Word | PDF |
 | --- | --- | --- |
-| RPT | [12 halaman](../staging/matematik_sjkc/tahun_3/RPT_2027_Matematik_SJKC_Tahun_3.docx) | [12 halaman](../staging/matematik_sjkc/tahun_3/RPT_2027_Matematik_SJKC_Tahun_3.pdf) |
+| RPT | [14 halaman](../staging/matematik_sjkc/tahun_3/RPT_2027_Matematik_SJKC_Tahun_3.docx) | [14 halaman](../staging/matematik_sjkc/tahun_3/RPT_2027_Matematik_SJKC_Tahun_3.pdf) |
 | RPH | [96 halaman](../staging/matematik_sjkc/tahun_3/RPH_2027_Matematik_SJKC_Tahun_3.docx) | [96 halaman](../staging/matematik_sjkc/tahun_3/RPH_2027_Matematik_SJKC_Tahun_3.pdf) |
 
 RPT menggunakan 44 baris minggu daripada takwim yang digunakan pada RPT SJKC Tahun 2, dengan dua julat tarikh per minggu di jadual yang sama. Agihan mengekalkan maksimum tiga PdP dalam satu minggu dan mengosongkan minggu 1, 6 dan 19. RPH diperiksa mengikut turutan 001–096, satu halaman A4 setiap PdP. Medan tarikh, masa dan kelas diisi mengikut jadual guru.
@@ -101,5 +101,11 @@ RPT menggunakan 44 baris minggu daripada takwim yang digunakan pada RPT SJKC Tah
 
 - 16 ujian katalog/penghantaran RPT Telegram dan 11 ujian katalog Web lulus pada kod asas. Simulasi dengan dokumen sebenar Tahun 2 dan Tahun 3 mengesahkan pilihan tahun, akses berbayar serta kandungan Word dan PDF, termasuk SHA-256 PDF di Web.
 - Katalog pengeluaran RPT masih menyenaraikan Tahun 2. Penjana RPH masih menggunakan laluan Matematik sedia ada dan memerlukan pengenalan sumber Matematik SJKC serta ujian pemilihan PdP dan janaan sebenar sebelum diterbitkan.
+
+## Semakan dokumen dan aktiviti
+
+- RPT dan RPH kini memaparkan BA m.s. 28 sebagai contoh susun atur bagi PdP 017, serta bahagian khusus untuk PdP 043, 045, 049–052 dan 082. Latihan campuran untuk SP 2.5.1 menggunakan empat soalan guru tanpa pengumpulan semula. Contoh PdP 022 kini menunjukkan pembahagian dengan 10, 100 dan 1 000. Objektif dan PBD pada PdP 035, 038, 053–055, 080 dan 082 diperjelas berdasarkan skop DSKP dan tugasan yang diperhatikan.
+- 44 julat Kumpulan A/B dibandingkan dengan [Lampiran A–C salinan surat siaran KPM](https://ecentral.my/wp-content/uploads/2026/10/Kalendar-Akademik-Tahun-2027.pdf). Minggu 6 dan 19 diperuntukkan sifar PdP dalam pelan bersama kerana cuti perayaan dan cuti tambahan berbeza mengikut negeri. Setiap minggu pengajaran lengkap pada halaman yang sama dalam RPT.
+- Tetapan tema fon Asia Timur dibuang daripada gaya yang menetapkan Noto Sans CJK SC bagi mengelakkan aksara Cina hilang semasa penukaran ke PDF. Semakan Word dan PDF mengesahkan 96 PdP, 96 jam, sembilan unit, 52 SK dan 102 SP. RPT mempunyai 14 halaman A4 melintang dengan 44 baris A/B. RPH mempunyai satu halaman A4 setiap PdP. Kesemua 96 halaman RPH PDF mempunyai tajuk, objektif, SK/SP, rujukan Buku Aktiviti, lima langkah pengajaran dan ruang refleksi yang sepadan dengan data.
 
 Status HOLD pada PR #828 sementara menunggu kelulusan kandungan dan ujian janaan sebenar melalui Web serta Telegram.
