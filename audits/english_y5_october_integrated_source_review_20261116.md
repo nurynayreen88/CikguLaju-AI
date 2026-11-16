@@ -1,159 +1,50 @@
-{
-  "audit_date": "2026-11-05",
-  "scope": "Direct visual review of original official SOW pp64-65, Teacher's Book T106, Student's Book p92, Workbook pp18-19, plus true original MP3 SHA256/codec metadata. No recording speech transcription or Telegram send.",
-  "year": 5,
-  "source_books": {
-    "sow": {
-      "drive_id": "1FHJm1tl7IamOSZWIndUMoytm6SGoexAV",
-      "file": "Primary-Year-5-SoW-SK.pdf",
-      "sha256": "d9c61e7031d5acaf31a47f79560f653c3ce06b27d91c67e02013d819b33c3e3f",
-      "printed_pages_by_lesson": {
-        "29": 64,
-        "30": 65
-      },
-      "pdf_pages_by_lesson": {
-        "29": 65,
-        "30": 66
-      }
-    },
-    "teacher_book": {
-      "drive_id": "14Vpj-DjCbOERXdx7rGG8zhzNhsnUEPsM",
-      "printed_page": "T106",
-      "pdf_page": 107,
-      "sha256": "28d16fd342559ec87426b50fc39c48d029005ef319e6a37f81ed7efdec3038fe"
-    },
-    "student_book": {
-      "drive_id": "13B4s4HacQgWn3M2QkzwHif6JdrBqc1Fw",
-      "printed_page": 92,
-      "pdf_page": 93,
-      "sha256": "0f1b0263ccec6689e896ba375690e4d0cb900e00f52a86832e16411c759eff96"
-    },
-    "workbook": {
-      "drive_id": "1cmRSBYK0_DfKyOOFZW5JazYk7AG6wl8E",
-      "printed_pages": [
-        18,
-        19
-      ],
-      "pdf_pages": [
-        17,
-        18
-      ],
-      "sha256": "b418aabdada23964f168c46966c0ceb4ef41b7f6eed37df6ca84abb23519cec4",
-      "activity_context": "Unit 1 Progress Review: comparing places, places in town/city, asking and saying where places are; optional review, not SOW personal-information core"
-    }
-  },
-  "audio_source_folder_id": "1A-cDnYRn3j-B5NrvTC5fSaWCg-Gq6YyC",
-  "lesson_evidence": [
-    {
-      "lesson": 29,
-      "focus": "Listening 6",
-      "sow_main_sp": "1.2.5",
-      "sow_complementary_sp": "4.3.2",
-      "sow_printed_page": 64,
-      "printed_sb_activities": [
-        1,
-        2,
-        3
-      ],
-      "sow_audio_labels": [
-        "CD3.02",
-        "CD3.03"
-      ],
-      "original_tb_activity_evidence": "SB p92 Activity1: listen and correct 6 personal-information answers using CD3.02. Activities2-3: tick Luke's questions and complete Tobias table using CD3.03. TB T106 matches the SOW.",
-      "printed_task_alignment_verified": true
-    },
-    {
-      "lesson": 30,
-      "focus": "Speaking 6",
-      "sow_main_sp": "2.2.1",
-      "sow_complementary_sp": "1.2.5",
-      "sow_printed_page": 65,
-      "printed_sb_activities": [
-        4,
-        5
-      ],
-      "sow_audio_labels": [
-        "CD3.04"
-      ],
-      "original_tb_activity_evidence": "SB p92 Activity4: Sara/Lili dialogue with five questions, CD3.04. Activity5: Eriko/Liam pair dialogue using printed profiles, switch roles. TB T106 and SOW p65 match.",
-      "printed_task_alignment_verified": true
-    }
-  ],
-  "original_audio_files": [
-    {
-      "label": "CD3.02",
-      "filename": "3-02 English Plus Second Edition Students Book 1.mp3",
-      "drive_file_id": "1T-HBLwsQ2C4eC3egNFZ9ZgDLsOxDRO6N",
-      "size_bytes": 385087,
-      "sha256": "f435ae7c336a1e573b950e3f5a6f9799388a2b74d34ace56e2ad9a3520e13fa8",
-      "codec": "mp3",
-      "sample_rate_hz": 44100,
-      "channels": 1,
-      "duration_seconds": 37.616327
-    },
-    {
-      "label": "CD3.03",
-      "filename": "3-03 English Plus Second Edition Students Book 1.mp3",
-      "drive_file_id": "16N8fUyxWYYyzmeEIYyB7_f1MzLS2i5Zf",
-      "size_bytes": 819242,
-      "sha256": "0c3ad06c99b9b219c2566b64df767c8ea587942c8b6b0a95960df31e778fd6ca",
-      "codec": "mp3",
-      "sample_rate_hz": 44100,
-      "channels": 1,
-      "duration_seconds": 86.674286
-    },
-    {
-      "label": "CD3.04",
-      "filename": "3-04 English Plus Second Edition Students Book 1.mp3",
-      "drive_file_id": "1e4xl-R1CYY3t0XGiWhr8sKxVRzBrTNcX",
-      "size_bytes": 823068,
-      "sha256": "28b105375e3eeef4d04c2f1233b60673b28c98b686d4d4576a9224f9e5504301",
-      "codec": "mp3",
-      "sample_rate_hz": 44100,
-      "channels": 1,
-      "duration_seconds": 91.977143
-    }
-  ],
-  "gates": {
-    "official_sow_pair_verified": true,
-    "printed_book_activity_verified": true,
-    "audio_file_identity_and_codec_verified": true,
-    "audio_spoken_contents_verified": false,
-    "authenticated_teacher_telegram_send_verified": false,
-    "teacher_final_approval": false,
-    "printed_word_a4_per_lesson_verified": true,
-    "final_ready_approved": false,
-    "native_telegram_pdf_render_verified": false
-  },
-  "limitation": "The original book pages and three MP3 binary IDs are verified, and both Word documents render to one physical A4 page offline. Audio speech, actual Telegram document delivery and teacher approval are unverified; this does not certify native Telegram PDF output or authorize Year5 release.",
-  "word_a4_ci_evidence": {
-    "workflow_run_id": 41977394366,
-    "checked_head_sha": "3ec6dfacbed9144fee5b5bf5566229e9823e60fc",
-    "method": "AST-locked production Word builder, LibreOffice PDF approximation, not native Telegram PDF",
-    "criteria": "one physical A4 PDF page each, no missing Word source text; PDF extracted text >=60% Word source text",
-    "lessons": [
-      {
-        "lesson": 29,
-        "source_sha256": "a9f47f75a9b57b5550df0bcc5e32069cd28d1030c288cff5a711971d9a5ea9d9",
-        "pages": 1,
-        "one_page_a4": true,
-        "word_chars": 2543,
-        "pdf_chars": 2590
-      },
-      {
-        "lesson": 30,
-        "source_sha256": "1caaa14e5dd65654fe98a622e4c0509d2c1597e862a64a7a8830a559433ee0a6",
-        "pages": 1,
-        "one_page_a4": true,
-        "word_chars": 2598,
-        "pdf_chars": 2646
-      }
-    ],
-    "source_lesson_29_30_changed_after_audit": false,
-    "teacher_approved": false,
-    "authenticated_telegram_test": false
-  }
-}
+# Semakan sumber RPH bersepadu English SK Year 5 2027
+
+Audit 16 November 2026 merangkumi 18 pasangan Oktober. Satu pasangan ialah satu sesi 60 minit dengan satu RPH. Kolum SB dan TB menunjukkan halaman bercetak dan aktiviti buku yang digunakan dalam versi ringkas. Padanan tambahan WB ialah latihan pilihan yang relevan untuk guru. Sebahagiannya menggunakan teks atau rakaman lain. WB p.75 Ex6 melatih tawaran dan janji, jadi rujukan itu tidak digunakan untuk aktiviti ramalan cuaca Lesson 156.
+
+Sumber asal ialah [SOW rasmi Primary Year 5 SK](https://drive.google.com/file/d/1FHJm1tl7IamOSZWIndUMoytm6SGoexAV/view), [Student’s Book](https://drive.google.com/file/d/13B4s4HacQgWn3M2QkzwHif6JdrBqc1Fw/view), [Teacher’s Book](https://drive.google.com/file/d/14Vpj-DjCbOERXdx7rGG8zhzNhsnUEPsM/view) dan [Workbook](https://drive.google.com/file/d/1cmRSBYK0_DfKyOOFZW5JazYk7AG6wl8E/view) English Plus 1 Second Edition. Hash PDF sepadan dengan rekod sumber terdahulu. SB dan TB menggunakan halaman PDF satu selepas nombor bercetak. WB menggunakan halaman PDF satu sebelum nombor bercetak bagi halaman yang disenaraikan.
+
+| Pasangan | SOW bercetak | SB untuk aktiviti 1 / 2 | TB untuk aktiviti 1 / 2 | Trek dalam RPH | WB pilihan |
+| --- | --- | --- | --- | --- | --- |
+| 001 + 002 | 35–36 | 4 A1–2 / 4 A4–5 | 18 / 18 | 1-02, 1-03 | — |
+| 006 + 007 | 40–41 | 7 A1, A3–4 / 7 A5–6 | 21 / 21 | 1-08 | 7 Ex3–5 · be questions |
+| 008 + 009 | 42–43 | 8 A1–2 / 8 A3–4 | 22 / 22 | — | 8 Ex1–4 · basic adjectives |
+| 011 + 012 | 45–46 | 10 A2, 11 A2–3 / 11 A3–4 | 24–25 / 25 | 1-12 | 10 Ex1–4 · countries and nationalities |
+| 031 + 032 | 66–67 | 106 A1 / 106 A3–4 | 120 / 120 | — | 16–17 · reading and describing a town or city |
+| 035 + 036 | 71–72 | 22 A3 / 22 A2 | 36 / 36 | 1-22 | 20–21 · routines and frequency |
+| 041 + 042 | 77–78 | 24 A1–2 / 24 A4, 25 A3 | 38 / 38–39 | 1-23, 1-24 | 20–21 · routines and present simple |
+| 047 + 048 | 83–84 | 28 A2 / 28 A4–5 | 42 / 42 | 1-26 | 27 Ex6 · making plans and suggestions |
+| 059 + 060 | 96–97 | 36 A3–4 / 36 A5 | 50 / 50 | 1-34 | — |
+| 077 + 078 | 115–116 | 46 A1, A3 / 46 A5–6 | 60 / 60 | 1-42, 1-43 | 38 · learning a language |
+| 083 + 084 | 121–122 | 48 A1–2 / 48 A4–5 | 62 / 62 | 1-44, 1-45 | 43 Ex7 · asking for help |
+| 091 + 092 | 130–131 | 54 A1, A3 / 54 A4 | 68 / 68 | — | 48 · reading practice using a different text |
+| 095 + 096 | 134–135 | 96 A2–3 / 96 A6 | 110 / 110 | 3-12, 3-13 | — |
+| 101 + 102 | 140–141 | 58 A1–3 / 58 A5–6 | 72 / 72 | 2-08, 2-09 | 51 Ex6 · ordering in a café |
+| 113 + 114 | 153–154 | 66 A2–3 / 66 A4 | 80 / 80 | 2-16 | 54–55 · past simple |
+| 119 + 120 | 159–160 | 68 A1–2 / 68 A4–5 | 82 / 82 | 2-18 | 59 Ex6 · last-weekend dialogue |
+| 149 + 150 | 191–192 | 86 A1 and A3 / 86 A5–6 | 100 / 100 | 2-34 | 70 · weather vocabulary |
+| 155 + 156 | 197–198 | 99 A2–3 / 99 A4–5 | 113 / 113 | 3-19, 3-20 | 74 Ex4 · a separate weather forecast |
+
+Kesemua 36 kod SP utama dan 36 kod SP pelengkap sepadan dengan kolum Learning Standard dalam PDF SOW asal. Sebanyak 22 fail MP3 berbeza daripada folder English Plus 1 Second Edition sepadan dengan nombor trek dalam RPH dan berjaya dinyahkod sepenuhnya. Semakan ini mengesahkan rujukan bercetak dan kebolehbacaan fail. Padanan kandungan pertuturan direkodkan dalam [semakan audio 17 November](english_y4_y5_october_audio_content_20261117.md). Penghantaran melalui akaun guru produksi masih perlu disahkan.
+
+## Audio Year 4 untuk rujukan yang terlibat
+
+Enam trek daripada dua folder Class CD Get Smart Plus 4 telah diperiksa terhadap Teacher’s Book asal dan dinyahkod. Lesson 098 menggunakan semula trek 21 untuk lagu dan trek 22 bagi Aktiviti 3. Rujukan berikut mengenal pasti fail asal yang tersedia untuk semakan kandungan rakaman. Laluan Telegram bagi fail Year 4 dari buku yang salah masih tertakluk pada sekatan sedia ada.
+
+| Lesson | TB bercetak | Trek sumber |
+| --- | --- | --- |
+| 007 | 21 | [CD1 Track 9](https://drive.google.com/file/d/1RCIp86VNulrP6AfPsA-Bt3wfksyQh55h/view) |
+| 017 | 32 | [CD1 Track 19](https://drive.google.com/file/d/1I_6yoZHAyY7LQwsoJFNzr_m92aIQ4ETr/view) |
+| 097–098 | 108 | [CD2 Track 21](https://drive.google.com/file/d/1ZjFEfvJuagEtcEAZuCzRsSs3AXrqUMMw/view) |
+| 098 | 108 | [CD2 Track 22](https://drive.google.com/file/d/1sI2jDn8otlgH4pK_dyztrwuMY3azWlYl/view) |
+| 102 | 111 | [CD2 Track 25](https://drive.google.com/file/d/1Lz-BPqFM6g0dLLe0MPxnM3CqTwvZh5yk/view) |
+| 103 | 111 | [CD2 Track 26](https://drive.google.com/file/d/1PmJHMo3mOxKxUMJ145BpsmjypzhxJkHl/view) |
+
+## Status pelepasan
+
+Pakej kekal dalam semakan guru. Lejar kelulusan per Lesson Year 5 kekal sebagai sumber keputusan pelepasan. Uji penghantaran audio Year 4 sebelum mengaktifkan pakej. Jadual RPT dan syarat akses sedia ada masih digunakan dalam semakan setempat.
+
+Bukti asal Lesson 29–30 tersedia dalam [rekod SOW, TB, SB, WB dan audio](english_y5_l029_l030_original_sow_tb_sb_wb_audio_sources_20261105.json).
 
 ## Semakan RPH satu Lesson
 
@@ -171,3 +62,16 @@ Rujukan bercetak disemak pada [SOW Year 5 SK](https://www.teacherfiera.com/wp-co
 | 48 | 84 | 2.1.4 / 4.2.2 | SB 28 A4–6 / TB 42 | 27 Ex6, dialog rancangan dan cadangan | — |
 
 SOW Lesson 35 mencetak SK 1.1 bersama SP 1.2.1. [DSKP Year 5, halaman bercetak 22](https://www.teacherfiera.com/wp-content/uploads/2020/04/DSKP-ENGLISH-YEAR-5-SK-30-12-2020-Latest.pdf#page=36) meletakkan SP 1.2.1 di bawah SK 1.2. Penjana mengambil SK 1.2 daripada SP tersebut. [Rekod semakan kandungan audio](english_y4_y5_october_audio_content_20261117.md) merangkumi CD 1-21 hingga 1-24 dan CD 1-26. Penerbitan setiap RPH masih memerlukan rekod semakan guru dan ujian penghantaran.
+
+### Semakan 17 November bagi Lesson 49–50 dan 53–56
+
+| Lesson | SOW bercetak | SP utama / pelengkap | SB / TB bercetak | WB pilihan | Rujukan trek bercetak |
+| --- | ---: | --- | --- | --- | --- |
+| 49 | 85 | 3.2.3 / 2.3.1 | SB 29 A1–3 / TB 43 | 25 Ex3, teks World Book Day | Laluan bacaan bercetak |
+| 50 | 86 | 4.3.3 / 3.2.2 | SB 29 A4–5 / TB 43 | 25 Ex1, kedudukan also | — |
+| 53 | 90 | 1.2.2 / 2.2.1 | SB 32–33 A1–4 / TB 46–47 | 28 Ex2, kosa kata haiwan | CD1.28 dialog, CD1.29 tekanan ayat, CD1.30 semakan tekaan foto |
+| 54 | 91 | 2.1.5 / 3.2.3 | SB 33 A5–7 / TB 47 | 28 Ex3, teka haiwan daripada petunjuk | CD1.31, bunyi haiwan dalam A5 |
+| 55 | 92 | 3.2.3 / 3.3.1 | SB 34 A1–3 / TB 48 | 32 Ex5, kosa kata deskriptif | SB A2 turut menyenaraikan CD1.32. RPH menggunakan bacaan bercetak |
+| 56 | 93 | 4.3.2 / 2.1.5 | SB 34 teks, SB 35 A1–4 / TB 49 | 29 Ex4, ayat superlatif setempat | — |
+
+Semakan Lesson 53–54 mengesahkan nombor trek dalam sumber bercetak. Kandungan fail rakaman CD1.28–CD1.31 dan penghantaran akaun guru belum disahkan. Semakan ini tidak menambah rekod kelulusan pelepasan.

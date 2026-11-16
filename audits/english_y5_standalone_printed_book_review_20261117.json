@@ -33,6 +33,30 @@
     {
       "lesson": 48,
       "source_sha256": "788ba4694a868f97952fcbb625735b23d04d85b80455e2628812c758c75e3f43"
+    },
+    {
+      "lesson": 49,
+      "source_sha256": "39816a270cf3eef842049dce31509223714638b686ffed93e2ed74dd005c624b"
+    },
+    {
+      "lesson": 50,
+      "source_sha256": "91735cd3cce45cbfa0045557863ed3200f58a84f6dbdc251120c25504664ac73"
+    },
+    {
+      "lesson": 53,
+      "source_sha256": "4131150576713ac4b362392a6de68f716f148a32eeaaec3d8af0e82c0c8b47e9"
+    },
+    {
+      "lesson": 54,
+      "source_sha256": "61fbf0425acbd4c5d96b870f751a9e9c4e040cfab4ce49949afd26d958705fa4"
+    },
+    {
+      "lesson": 55,
+      "source_sha256": "cd42bde3189f50d80e0cbf2c9158e5fc6ebb25aa69446f3a2228d76c7e74f8b7"
+    },
+    {
+      "lesson": 56,
+      "source_sha256": "5166846a0ac83ed6a4d4bcf765c3122f1a6aeffa5f246bc494f10e69992ea665"
     }
   ]
 }
