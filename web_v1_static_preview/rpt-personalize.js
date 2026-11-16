@@ -79,13 +79,13 @@
     const dlp = /^(science|mathematics)_dlp:([2-6])$/.exec(key);
     const sjkc = /^bahasa_cina_sjkc:[2-6]$/.test(key);
     const bmSjk = /^bahasa_melayu_sjk:[2-6]$/.test(key);
-    const sainsSjkc = /^sains_sjkc:2$/.test(key);
+    const sainsSjkc = /^sains_sjkc:[23]$/.test(key);
     if(sainsSjkc)layout = layout?.sjkc_sains;
     if(bmSjk)layout = layout?.sjk_bahasa_melayu;
     if(dlp)layout = layout?.[`dlp_year${dlp[2]}`];
     if(sjkc)layout = layout?.sjkc_bahasa_cina;
     const status = sainsSjkc ? "SJKC_SAINS_PDF_COVER" : bmSjk ? "SJK_BAHASA_MELAYU_PDF_COVER" : sjkc ? "SJKC_BAHASA_CINA_PDF_COVER" : dlp ? `DLP_YEAR_${dlp[2]}_PDF_COVER` : "ORIGINAL_COVER_TEMPLATE_LOCKED_TO_56_SOURCE_PDF_SHA256";
-    const count = sainsSjkc ? 1 : bmSjk ? 5 : sjkc ? 5 : dlp ? 2 : 56;
+    const count = sainsSjkc ? 2 : bmSjk ? 5 : sjkc ? 5 : dlp ? 2 : 56;
     if(!layout||layout.version!==1||
        layout.status!==status||
        Object.keys(layout.source_sha256_by_subject_year||{}).length!==count||

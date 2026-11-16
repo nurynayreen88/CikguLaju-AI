@@ -119,20 +119,22 @@ async function main(){
     }
   }
 
-  const sainsKey="sains_sjkc:2";
-  const sainsRaw=fs.readFileSync(path.join(root,"..","sjkc","sains","RPT_2027_Sains_SJKC_Tahun_2.pdf"));
-  const sainsHash=crypto.createHash("sha256").update(sainsRaw).digest("hex");
-  const sainsLayout=validatedLayout(layout,sainsKey,sainsHash);
-  assert.throws(()=>validatedLayout(layout,sainsKey,"0".repeat(64)));
-  const sainsDoc=await PDF.PDFDocument.load(sainsRaw);
-  const sainsResult=await fillOriginalCover(sainsDoc,{display_name:"Cikgu Tan",school_name:"SJK(C) Contoh"},
-    tinyPng,sainsLayout,{PDFLib:PDF,textPng:async()=>tinyPng});
-  assert.ok(sainsResult.hasLogo&&sainsResult.hasSchool&&sainsResult.hasTeacher);
-  const sainsOutput=await sainsDoc.save();
-  assert.strictEqual((await PDF.PDFDocument.load(sainsOutput)).getPageCount(),11);
-  if(write){
-    fs.writeFileSync(path.join(outputDir,"sains-sjkc-2.pdf"),sainsOutput);
-    fs.writeFileSync(path.join(outputDir,"sains-sjkc-2.source.pdf"),sainsRaw);
+  for(const year of [2,3]){
+    const sainsKey="sains_sjkc:"+year;
+    const sainsRaw=fs.readFileSync(path.join(root,"..","sjkc","sains","RPT_2027_Sains_SJKC_Tahun_"+year+".pdf"));
+    const sainsHash=crypto.createHash("sha256").update(sainsRaw).digest("hex");
+    const sainsLayout=validatedLayout(layout,sainsKey,sainsHash);
+    assert.throws(()=>validatedLayout(layout,sainsKey,"0".repeat(64)));
+    const sainsDoc=await PDF.PDFDocument.load(sainsRaw);
+    const sainsResult=await fillOriginalCover(sainsDoc,{display_name:"Cikgu Tan",school_name:"SJK(C) Contoh"},
+      tinyPng,sainsLayout,{PDFLib:PDF,textPng:async()=>tinyPng});
+    assert.ok(sainsResult.hasLogo&&sainsResult.hasSchool&&sainsResult.hasTeacher);
+    const sainsOutput=await sainsDoc.save();
+    assert.strictEqual((await PDF.PDFDocument.load(sainsOutput)).getPageCount(),11);
+    if(write){
+      fs.writeFileSync(path.join(outputDir,"sains-sjkc-"+year+".pdf"),sainsOutput);
+      fs.writeFileSync(path.join(outputDir,"sains-sjkc-"+year+".source.pdf"),sainsRaw);
+    }
   }
 
   // Unfilled private profile must not create invented names or add a page.
