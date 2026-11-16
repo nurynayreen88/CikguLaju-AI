@@ -21,10 +21,10 @@ SOURCE = ROOT / "rpt_2027" / "english"
 CALENDAR = ROOT / "rpt_2027" / "takwim_pdp_2027_ab_draf.json"
 LESSON = re.compile(r"LESSON:\s*(\d+)\b")
 DEEPAVALI_WEEK = 39
-SHORT_WEEK_SESSIONS = {5: 3, 35: 3, DEEPAVALI_WEEK: 2}
-STOP_WEEK = 43
-LATE_TEACHING_WEEKS = range(40, STOP_WEEK + 1)
 JUNE_SHORT_WEEK = 20
+SHORT_WEEK_SESSIONS = {1: 3, 5: 3, JUNE_SHORT_WEEK: 3, 35: 3, DEEPAVALI_WEEK: 2}
+STOP_WEEK = DEEPAVALI_WEEK
+PAIR_PLAN = SOURCE / "october_lesson_pairs.json"
 WEEK_WITH_ASSESSMENT = 18
 CLOSED_WEEKS = {6, 19}
 WIDTH, HEIGHT = landscape(A4)
@@ -80,8 +80,9 @@ def span(values):
     return f"{start}–{last.day} {MONTHS[last.month - 1]}"
 
 
-def schedule():
+def schedule(year):
     calendar = json.loads(CALENDAR.read_text())
+    pairs = set(json.loads(PAIR_PLAN.read_text())[str(year)])
     first = 1
     weeks = []
     for row in calendar["minggu"]:
@@ -89,10 +90,14 @@ def schedule():
         count = 0
         if week <= STOP_WEEK and week not in CLOSED_WEEKS:
             count = SHORT_WEEK_SESSIONS.get(week, 4)
-        lessons = tuple(range(first, first + count))
-        weeks.append((week, span(row["A"]), span(row["B"]), lessons))
-        first += count
-    assert first == 161 and len(weeks) == 44
+        sessions = []
+        for _ in range(count):
+            length = 2 if first in pairs else 1
+            sessions.append(tuple(range(first, first + length)))
+            first += length
+        weeks.append((week, span(row["A"]), span(row["B"]), sessions))
+    paired_starts = {s[0] for _, _, _, sessions in weeks for s in sessions if len(s) == 2}
+    assert first == 161 and len(weeks) == 44 and pairs == paired_starts
     return weeks
 
 
@@ -123,7 +128,7 @@ def frame(canvas, year, section, title, detail):
     write_text(canvas, detail, 34, HEIGHT - 84, size=9, color=MUTED)
     canvas.setStrokeColor(LINE)
     canvas.line(34, 37, WIDTH - 34, 37)
-    write_text(canvas, "One planned Lesson is 60 minutes. Check the class timetable and local holidays.",
+    write_text(canvas, "One 60-minute session per teaching day. Paired Lessons share a session, 30 minutes each.",
                34, 22, size=7.5, color=MUTED)
     write_text(canvas, str(canvas.getPageNumber()), WIDTH - 50, 22, size=8, bold=True)
 
@@ -157,7 +162,7 @@ def draw_rows(canvas, rows):
 def cover(canvas, year):
     frame(canvas, year, "PLANNING COPY",
           f"Rancangan Pengajaran Tahunan 2027 · English SK Year {year}",
-          "Kumpulan A & B  /  160 planned Lessons  /  160 teaching hours")
+          "Kumpulan A & B  /  160 Lessons in 142 sessions")
     y = HEIGHT - 134
     labels = (
         ("SCHOOL", "TEACHER"),
@@ -171,15 +176,15 @@ def cover(canvas, year):
         y -= 65
     write_text(canvas, "2027 planning dates", 34, y - 5, size=13, bold=True)
     notes = (
-        "Group A (Kedah, Kelantan and Terengganu): teaching limit 25 November.",
-        "Group B (other states and federal territories): teaching limit 26 November.",
+        "Final teaching week: 24–28 October (A), 25–29 October (B). Use the school days available around Deepavali.",
+        "Weeks 40–43: revision, assessment or school activities. Week 44: final week reserved for school activities.",
         "Week 18: 9–13 May (A), 10–14 May (B). Use for school assessment or the available English sessions.",
         "Week 19 (Aidiladha and Wesak): 0 planned Lessons. Week 39 (Deepavali): up to two available sessions.",
-        "Week 20: place four English Lessons across the three available school days (2 + 1 + 1).",
-        "Plan eight 30-minute periods (four 60-minute Lessons) per full week, including weeks with one public holiday.",
-        "Weeks 40–43: confirm English slots before school assessment or UASA.",
-        "Week 44: 0 new Lessons. Reserve the final school week for school activities.",
-        "See the calendar notes for local adjustments. Sources: KPM calendar, BKPP holidays and English SK SOW.",
+        "Week 20: three sessions across three school days. Plan up to four sessions on different days in a full week.",
+        "Each paired session covers two consecutive SOW Lessons in order, with 30 minutes for each Lesson.",
+        "Use the main task and check learning for each half. Allow extra practice when pupils need it.",
+        "Confirm the plan against class slots, local holidays and the school's assessment dates.",
+        "Sources: KPM calendar, BKPP holidays and English SK SOW. Paired sessions are a teaching adaptation.",
     )
     for i, note in enumerate(notes):
         write_text(canvas, note, 34, y - 31 - 23 * i, size=9, color=MUTED)
@@ -202,25 +207,28 @@ def calendar_page(canvas, year, weeks, notes, title):
     for x, label in zip(columns, ("WEEK", "GROUP A", "GROUP B", "LESSON RANGE / SCHOOL ACTIVITY"), strict=True):
         write_text(canvas, label, x, y - 14, size=8, bold=True, color=white)
     y -= 21
-    for i, (week, group_a, group_b, numbers) in enumerate(weeks):
+    for i, (week, group_a, group_b, sessions) in enumerate(weeks):
         if i % 2 == 0:
             canvas.setFillColor(PALE)
             canvas.rect(left, y - 17, width, 17, fill=1, stroke=0)
         note = notes.get(week)
-        if numbers:
-            activity = f"{lesson_range(numbers)}  /  {note or f'{len(numbers)} Lessons'}"
+        if sessions:
+            pairs = [f"{s[0]:03d}+{s[1]:03d}" for s in sessions if len(s) == 2]
+            activity = f"{sessions[0][0]:03d}–{sessions[-1][-1]:03d}  /  {len(sessions)} sessions"
+            if pairs:
+                activity += f"  /  Pairs {' · '.join(pairs)}"
         else:
             activity = note
         for x, value in zip(columns, (str(week), group_a, group_b, activity), strict=True):
             write_text(canvas, value, x, y - 12, size=8.1, bold=x == left + 8)
         y -= 17
     local_notes = (
-        ("Week 5: use four sessions where there is only one closure or none. Some Federal Territories have two.",
-         "Week 20: place eight English periods across three school days. If only six fit, recover two before assessment.")
+        ("Weeks 1 and 5: three sessions in the shared plan. Check local school days and the English timetable.",
+         "Week 18: use available English slots before assessment. Week 20: three sessions on separate days.")
         if weeks[0][0] == 1 else
-        ("Week 35: use four sessions outside Kelantan, subject to local closures and the timetable.",
-         "Week 39: up to three in Group A, two in most of Group B and four in Sarawak.",
-         "When a local timetable adds a session, use the next Lesson in order and shift subsequent ranges.")
+        ("Week 35: three sessions in the shared plan. Week 39: two sessions around Deepavali.",
+         "A pair such as 021+022 is taught in one 60-minute session on a single school day.",
+         "Use the school's assessment timetable when assigning the final English sessions.")
     )
     for index, note in enumerate(local_notes):
         write_text(canvas, note, left, y - 14 - 11 * index, size=7.5, color=MUTED)
@@ -229,39 +237,44 @@ def calendar_page(canvas, year, weeks, notes, title):
 
 def build(year, out):
     rows = source_rows(year)
-    weeks = schedule()
-    numbered = [n for _, _, _, lessons in weeks for n in lessons]
-    assert numbered == list(range(1, len(numbered) + 1))
+    weeks = schedule(year)
+    numbered = [n for _, _, _, sessions in weeks for session in sessions for n in session]
+    assert numbered == list(range(1, 161))
     pdf = Canvas(str(out), pagesize=landscape(A4), pageCompression=1, invariant=1)
     pdf.setTitle(f"RPT English SK Year {year} 2027 / Kumpulan A & B")
     pdf.setAuthor("CikguLaju")
     cover(pdf, year)
     notes = {
-        5: "3 shared sessions / 4 where there is at most one closure",
         6: "Festival holidays / 0 planned Lessons",
-        WEEK_WITH_ASSESSMENT: "up to 4 sessions if slots are available around school assessment",
         19: "Aidiladha and Wesak / 0 planned Lessons",
-        JUNE_SHORT_WEEK: "4 sessions across 3 school days if timetable allows",
-        35: "3 shared sessions / 4 outside Kelantan, subject to local closures",
-        DEEPAVALI_WEEK: "2 sessions in the shared plan / local dates vary",
         44: "Year-end activities / 0 new Lessons",
     }
-    notes.update(dict.fromkeys(LATE_TEACHING_WEEKS, "up to 4 sessions before school assessment or UASA"))
+    notes.update(dict.fromkeys(range(STOP_WEEK + 1, 44), "Revision, assessment or school activities / 0 new Lessons"))
     calendar_page(pdf, year, weeks[:22], notes, "2027 calendar · January to June")
     calendar_page(pdf, year, weeks[22:], notes, "2027 calendar · June to December")
-    for week, group_a, group_b, lessons in weeks:
-        if lessons:
-            detail = f"Group A: {group_a}   /   Group B: {group_b}   /   {len(lessons)} Lessons"
-            if week == WEEK_WITH_ASSESSMENT:
-                detail += "   /   If English slots are available"
-            if week == JUNE_SHORT_WEEK:
-                detail += "   /   Four Lessons across three school days"
-            if week == DEEPAVALI_WEEK:
-                detail += "   /   On available school days"
-            if week in LATE_TEACHING_WEEKS:
-                detail += "   /   Before school assessment or UASA"
+    for week, group_a, group_b, sessions in weeks:
+        if not sessions:
+            continue
+        detail = f"Group A: {group_a}   /   Group B: {group_b}   /   {len(sessions)} sessions"
+        if week in {WEEK_WITH_ASSESSMENT, DEEPAVALI_WEEK}:
+            detail += "   /   Confirm teaching slots"
+        numbered_sessions = list(enumerate(sessions, 1))
+        groups = (
+            [numbered_sessions] if sum(map(len, sessions)) <= 4
+            else [numbered_sessions[:2], numbered_sessions[2:]]
+        )
+        for group in groups:
+            lessons = [n for _, session in group for n in session]
+            week_rows = []
+            for slot, session in group:
+                for half, n in enumerate(session):
+                    topic, standards, references = rows[n]
+                    label = f"Session {slot} · 60 min"
+                    if len(session) == 2:
+                        label = f"Session {slot} · {30 * half}–{30 * (half + 1)} min"
+                    week_rows.append(([topic[0], label, *topic[1:]], standards, references))
             frame(pdf, year, "DATED LESSONS", f"Week {week:02d}  ·  {lesson_range(lessons)}", detail)
-            draw_rows(pdf, (rows[n] for n in lessons))
+            draw_rows(pdf, week_rows)
             pdf.showPage()
     pdf.save()
 
