@@ -3,6 +3,9 @@ const fs = require("node:fs");
 const vm = require("node:vm");
 
 const script = fs.readFileSync("web_v1_static_preview/teacher-profile.js", "utf8");
+const html = fs.readFileSync("web_v1_static_preview/index.html", "utf8");
+const pickerCode = html.slice(html.indexOf("function selectSearchText("),
+  html.indexOf("const rptCurriculum="));
 const code = script.slice(script.indexOf("const schoolSelectData="),
   script.indexOf("async function getSchoolChoices("));
 class Element {
@@ -47,7 +50,7 @@ const runtime = {
   Option: class { constructor(textContent, value) { Object.assign(this, {textContent, value}); } },
   Event: class { constructor(type) { this.type = type; } },
 };
-vm.runInNewContext(code + "\nthis.populate = populateSchoolSelect;", runtime);
+vm.runInNewContext(pickerCode + code + "\nthis.populate = populateSchoolSelect;", runtime);
 const populate = (picker, placeholder, rows, saved) => runtime.populate(picker.control, placeholder, rows, saved);
 const type = (picker, value) => {
   picker.input.value = value;

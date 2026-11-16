@@ -632,138 +632,14 @@ let schoolCatalogOptions=[];
 
 const schoolSelectData=new Map();
 
-function schoolSearchText(value) {
-  return value.toLocaleUpperCase("ms-MY").normalize("NFKD")
-    .replace(/\p{M}/gu,"").replace(/[^A-Z0-9]+/g," ").trim();
-}
-
 function schoolOptionLabel(control,row) {
   return control===schoolChoiceField ? row.label+" ("+row.value+")" : row.label;
 }
 
-function initSchoolCombo(control,searchPlaceholder) {
-  const input=document.getElementById(control.id+"-input");
-  const list=document.getElementById(control.id+"-list");
-  const menu=list.parentElement;
-  const empty=menu.querySelector(".school-picker-empty");
-  const combo=input.parentElement;
-  let items=[];
-  let matches=[];
-  let active=-1;
-
-  function close() {
-    menu.hidden=true;
-    input.setAttribute("aria-expanded","false");
-    input.removeAttribute("aria-activedescendant");
-    input.placeholder=control.options[0]?.textContent||"";
-    input.value=control.value ? control.selectedOptions[0]?.textContent||"" : "";
-  }
-
-  function highlight(index) {
-    list.children[active]?.classList.remove("is-active");
-    active=index;
-    const option=list.children[active];
-    if(!option) {
-      input.removeAttribute("aria-activedescendant");
-      return;
-    }
-    option.classList.add("is-active");
-    input.setAttribute("aria-activedescendant",option.id);
-    option.scrollIntoView({block:"nearest"});
-  }
-
-  function filter() {
-    const words=schoolSearchText(input.value).split(" ").filter(Boolean);
-    matches=items.filter(row=>{
-      const label=schoolSearchText(row.label);
-      const value=schoolSearchText(row.value);
-      const initials=label.split(" ").map(word=>word[0]).join("");
-      const searchable=label+" "+value+" "+initials;
-      return words.every(word=>searchable.includes(word));
-    });
-    active=-1;
-    input.removeAttribute("aria-activedescendant");
-    list.replaceChildren(...matches.map((row,index)=>{
-      const option=document.createElement("li");
-      option.id=list.id+"-"+index;
-      option.setAttribute("role","option");
-      option.setAttribute("aria-selected",String(control.value===row.value));
-      option.dataset.index=index;
-      option.textContent=schoolOptionLabel(control,row);
-      return option;
-    }));
-    empty.hidden=matches.length>0;
-    list.scrollTop=0;
-  }
-
-  function open() {
-    if(input.disabled || !menu.hidden)return;
-    menu.hidden=false;
-    input.setAttribute("aria-expanded","true");
-    input.value="";
-    input.placeholder=searchPlaceholder;
-    filter();
-  }
-
-  function choose(row) {
-    if(!row)return;
-    const changed=control.value!==row.value;
-    control.value=row.value;
-    close();
-    if(changed)control.dispatchEvent(new Event("change",{bubbles:true}));
-  }
-
-  input.addEventListener("focus",open);
-  input.addEventListener("click",open);
-  input.addEventListener("blur",close);
-  input.addEventListener("input",()=>{
-    if(menu.hidden) {
-      const typed=input.value;
-      open();
-      input.value=typed;
-    }
-    filter();
-  });
-  input.addEventListener("keydown",event=>{
-    if(event.isComposing)return;
-    if(event.key==="Escape" && !menu.hidden) {
-      event.preventDefault();
-      close();
-    } else if(event.key==="ArrowDown" || event.key==="ArrowUp") {
-      event.preventDefault();
-      open();
-      if(matches.length)highlight(event.key==="ArrowDown"
-        ? Math.min(active+1,matches.length-1)
-        : active<0 ? matches.length-1 : Math.max(active-1,0));
-    } else if(event.key==="Enter") {
-      event.preventDefault();
-      if(menu.hidden)open();
-      else choose(matches[active]||(matches.length===1 ? matches[0] : null));
-    }
-  });
-  list.addEventListener("mousedown",event=>event.preventDefault());
-  list.addEventListener("click",event=>{
-    const option=event.target.closest('[role="option"]');
-    if(option)choose(matches[Number(option.dataset.index)]);
-  });
-
-  control.hidden=true;
-  combo.hidden=false;
-  document.getElementById(control.id+"-label").htmlFor=input.id;
-  return {
-    update(rows) {
-      items=rows;
-      input.disabled=!rows.length;
-      close();
-    },
-    input,
-  };
-}
-
 const schoolCombos=new Map([
-  [schoolStateField,initSchoolCombo(schoolStateField,"Taip nama negeri")],
-  [schoolDistrictField,initSchoolCombo(schoolDistrictField,"Taip nama PPD")],
-  [schoolChoiceField,initSchoolCombo(schoolChoiceField,"Taip nama atau kod sekolah")],
+  [schoolStateField,initSearchableSelect(schoolStateField,"Taip nama negeri")],
+  [schoolDistrictField,initSearchableSelect(schoolDistrictField,"Taip nama PPD")],
+  [schoolChoiceField,initSearchableSelect(schoolChoiceField,"Taip nama atau kod sekolah",row=>schoolOptionLabel(schoolChoiceField,row))],
 ]);
 
 function populateSchoolSelect(control, placeholder, items, saved="") {
