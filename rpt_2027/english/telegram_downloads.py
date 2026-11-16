@@ -7,6 +7,7 @@ from pathlib import Path
 from primary_language_subjects import PRIMARY_LANGUAGE_SUBJECTS
 from tempfile import TemporaryDirectory
 from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
+from rpt_2027.sjkc.bahasa_cina import documents as sjkc
 from rpt_2027.psv.telegram_downloads import pdf_ready as psv_pdf_ready, build_pdf as build_psv_pdf
 from rpt_2027.matematik.telegram_downloads import pdf_ready as math_pdf_ready
 from rpt_2027.bahasa_melayu.telegram_downloads import pdf_ready as bm_pdf_ready
@@ -60,7 +61,9 @@ def install(ns):
         is_psv = data.startswith("rpt2027_psv_pdf_")
         is_dlp = data.startswith("rpt2027_dlp:")
         is_language = data.startswith("rpt2027_language:")
-        if data != "rpt2027_home" and not is_year and not is_download and not is_psv and not is_dlp and not is_language:
+        is_sjkc = data.startswith("rpt2027_sjkc:")
+        if not (data == "rpt2027_home" or is_year or is_download or is_psv
+                or is_dlp or is_language or is_sjkc):
             return previous(cid, d)
         # Enforce entitlement again for stale/forged buttons and downloads.
         if not allowed(cid):
@@ -72,6 +75,28 @@ def install(ns):
                 return send(cid, "Pilihan RPT tidak sah.")
             return send(cid, f"<b>{label} · Tahun {year}</b>\n\nRPT 2027 dalam penyediaan.",
                         [[{"text": "⬅️ Pilih Subjek", "callback_data": f"rpt2027_year_{year}"}]])
+        if is_sjkc:
+            _, _, selection = data.partition(":")
+            year_text, _, fmt = selection.partition(":")
+            if year_text not in published_year_tokens or fmt not in ("pdf", "docx"):
+                return send(cid, "Pilihan RPT Bahasa Cina SJKC tidak sah.")
+            year = int(year_text)
+            path = sjkc.document_path(year, fmt)
+            if path is None:
+                return send(cid, "Fail RPT Bahasa Cina SJKC ini belum tersedia.")
+            try:
+                caption = f"RPT 2027 · {sjkc.LABEL} · Tahun {year} · {sjkc.CALENDAR}"
+                result = send_document(cid, str(path), caption)
+                verify = ns.get("_telegram_delivery_ok_v25279")
+                confirmed = verify(result) if callable(verify) else (
+                    getattr(result, "ok", False) and result.json().get("ok") is True
+                )
+                if not confirmed:
+                    return send(cid, "Telegram belum mengesahkan penghantaran RPT Bahasa Cina SJKC. Cuba lagi.")
+                return result
+            except Exception as exc:
+                print("SJKC RPT delivery failed:", type(exc).__name__, flush=True)
+                return send(cid, "Muat turun RPT Bahasa Cina SJKC gagal. Cuba lagi.")
         if is_dlp:
             parts = data.split(":")
             if len(parts) == 3:
@@ -140,6 +165,11 @@ def install(ns):
                 ]
                 if buttons:
                     kb.append(buttons)
+            if year in sjkc.PUBLISHED_YEARS:
+                for fmt, label in (("pdf", "PDF"), ("docx", "Word")):
+                    if sjkc.document_path(year, fmt):
+                        kb.append([{"text": f"📥 {sjkc.LABEL} ({label}) · Kuala Lumpur",
+                                    "callback_data": f"rpt2027_sjkc:{year}:{fmt}"}])
             kb.extend(
                 [{"text": f"{label} — Dalam Penyediaan",
                   "callback_data": f"rpt2027_language:{code}:{year}"}]
