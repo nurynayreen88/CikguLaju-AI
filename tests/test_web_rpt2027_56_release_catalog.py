@@ -133,12 +133,12 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
                         self.assertEqual(self.client.get(f"/api/rpt/2027/all/{CODE}/1.pdf").status_code, 404)
                         self.assertEqual(self.client.get("/api/rpt/2027/sjkc/bahasa-cina/2.zip").status_code, 404)
 
-    def test_bm_sjk_catalog_paid_only_and_years_two_through_five(self):
+    def test_bm_sjk_catalog_paid_only_and_years_two_through_six(self):
         from rpt_2027.sjkc.bahasa_melayu.documents import CODE, document_path
 
         folder = self.root / "sjkc" / "bahasa_melayu"
         folder.mkdir(parents=True)
-        years = (2, 3, 4, 5)
+        years = (2, 3, 4, 5, 6)
         for year in years:
             for fmt in ("pdf", "docx"):
                 original = document_path(year, fmt)
@@ -150,7 +150,7 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
                     self.assertEqual(self.client.get(f"/api/rpt/2027/all/{CODE}/{year}.pdf").status_code, 403)
             with patch("web.rpt_2027_all_http._has_paid_access", return_value=True):
                 data = self.client.get("/api/rpt/2027/catalog").get_json()
-                self.assertEqual(data["available_rpt"], 60)
+                self.assertEqual(data["available_rpt"], 61)
                 bm = next(subject for subject in data["subjects"] if subject["code"] == CODE)
                 self.assertEqual([item["year"] for item in bm["years"]], list(years))
                 for item in bm["years"]:
@@ -161,7 +161,7 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
                     with self.client.get(f"/api/rpt/2027/all/{CODE}/{year}.pdf") as pdf:
                         self.assertEqual(pdf.data, document_path(year).read_bytes())
                         self.assertEqual(pdf.headers["X-RPT-Source-SHA256"], hashlib.sha256(pdf.data).hexdigest())
-                self.assertEqual(self.client.get(f"/api/rpt/2027/all/{CODE}/6.pdf").status_code, 404)
+                self.assertEqual(self.client.get(f"/api/rpt/2027/all/{CODE}/7.pdf").status_code, 404)
                 self.assertEqual(self.client.get("/api/rpt/2027/sjkc/bahasa-melayu/3.zip").status_code, 404)
                 with self.client.get("/api/rpt/2027/all/bahasa_melayu/2.pdf") as old:
                     self.assertEqual(old.data, self.pdf)

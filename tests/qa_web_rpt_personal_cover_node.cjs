@@ -99,7 +99,7 @@ async function main(){
     }
   }
 
-  for(const year of [2,3,4,5]){
+  for(const year of [2,3,4,5,6]){
     const bmKey="bahasa_melayu_sjk:"+year;
     const filename="RPT_2027_Bahasa_Melayu_SJK_Tahun_"+year+".pdf";
     const bmRaw=fs.readFileSync(path.join(root,"..","sjkc","bahasa_melayu",filename));
