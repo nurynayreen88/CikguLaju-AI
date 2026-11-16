@@ -6,35 +6,14 @@ is independent of release_approvals_2027.json: nothing is marked READY, and
 the existing final-release sign-off/checksum gate is NEVER bypassed.
 Nine teacher-choice Lessons are handled by their own proposal adapter.
 """
-from pathlib import Path
 import re
 
 from web.english_y5_standalone_runtime import (
     _target, _gate, load_lesson, adapt_rows as _stage_rows,
-    approved_for_telegram, LESSON_ROOT, CHOICE_LESSONS,
+    approved_for_telegram, LESSON_ROOT, CHOICE_LESSONS, _BAD_QA,
 )
 
 _LS = re.compile(r"(?<!\d)[1-5]\.\d\.\d(?!\d)")
-_BAD_QA = re.compile(r"(?i)(?:NOT READY|QA status|source verification pending|"
-                     r"internal audit|do not publish|incomplete QA)")
-
-
-def _success_evidence(number, root):
-    """Use a source-authored success criterion or PBD evidence, never fabricate."""
-    path = Path(root) / ("lesson_%03d.md" % number)
-    try:
-        text = path.read_text(encoding="utf-8")
-    except (OSError, UnicodeError):
-        return None
-    for field in ("Success criteria", "Success criterion", "Success evidence", "PBD evidence"):
-        match = re.search(r"(?im)^\s*(?:\*\*)?" + re.escape(field) +
-                          r"(?:\*\*)?\s*:\s*([^\r\n]+)", text)
-        if not match:
-            continue
-        content = re.sub(r"\*\*([^*]+)\*\*", r"\1", match.group(1)).strip()
-        if content and not _BAD_QA.search(content):
-            return content
-    return None
 
 
 def preview_rows(state, rows, *, root=LESSON_ROOT):
@@ -76,16 +55,7 @@ def preview_rows(state, rows, *, root=LESSON_ROOT):
     # Explicitly distinguish a source-backed, classroom-useful draft from
     # a teacher-approved final RPH. Source page/audio verification is pending.
     result = dict(staged)
-    result["TAJUK"] = "CADANGAN CIKGULAJU (DRAF) — %s — %s" % (
-        str(expected.get("topic") or "").strip(),
-        str(expected.get("focus") or "").strip())
-    result["MAIN CONTENT STANDARD"] = main.rsplit(".", 1)[0]
-    result["MAIN LEARNING STANDARD"] = main
-    result["COMPLEMENTARY CONTENT STANDARD"] = comp.rsplit(".", 1)[0]
-    result["COMPLEMENTARY LEARNING STANDARD"] = comp
-    evidence = _success_evidence(number, root)
-    if evidence:
-        result["KRITERIA KEJAYAAN"] = evidence
+    result["TAJUK"] = "CADANGAN CIKGULAJU (DRAF) — " + staged["TAJUK"]
     # The fixed standard pair is sourced from the official lesson table,
     # but this alone does not approve printed-page references/audio.
     return result
