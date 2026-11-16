@@ -119,7 +119,7 @@ async function main(){
     }
   }
 
-  for(const year of [2,3,4]){
+  for(const year of [2,3,4,5,6]){
     const sainsKey="sains_sjkc:"+year;
     const sainsRaw=fs.readFileSync(path.join(root,"..","sjkc","sains","RPT_2027_Sains_SJKC_Tahun_"+year+".pdf"));
     const sainsHash=crypto.createHash("sha256").update(sainsRaw).digest("hex");
@@ -130,7 +130,7 @@ async function main(){
       tinyPng,sainsLayout,{PDFLib:PDF,textPng:async()=>tinyPng});
     assert.ok(sainsResult.hasLogo&&sainsResult.hasSchool&&sainsResult.hasTeacher);
     const sainsOutput=await sainsDoc.save();
-    assert.strictEqual((await PDF.PDFDocument.load(sainsOutput)).getPageCount(),11);
+    assert.strictEqual((await PDF.PDFDocument.load(sainsOutput)).getPageCount(),year===6?14:11);
     if(write){
       fs.writeFileSync(path.join(outputDir,"sains-sjkc-"+year+".pdf"),sainsOutput);
       fs.writeFileSync(path.join(outputDir,"sains-sjkc-"+year+".source.pdf"),sainsRaw);
