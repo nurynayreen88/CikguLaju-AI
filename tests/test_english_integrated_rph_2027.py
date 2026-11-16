@@ -46,6 +46,11 @@ class IntegratedRPHTests(TestCase):
                                          headers=headers).status_code, 404)
             self.assertEqual(client.post(path, json={**payload, "format": "metadata"},
                                          headers=headers).json, {"lessons": [13, 14]})
+            criteria = client.post(path, json={**payload, "format": "pbd"},
+                                   headers=headers).json
+            self.assertEqual(criteria["lesson"], "Lesson 013 + 014")
+            self.assertIn("3.2", criteria["sp"])
+            self.assertNotEqual(criteria["criteria1"], criteria["criteria2"])
             wrong_time = {**payload, "teacher": {**payload["teacher"], "time": "08:00 - 08:30"}}
             self.assertEqual(client.post(path, json=wrong_time, headers=headers).status_code, 400)
 
@@ -57,12 +62,15 @@ class IntegratedRPHTests(TestCase):
             return True
         def send(cid, path, caption):
             sent.append((rt.state[cid]["lesson_no"], Path(path).name))
-            return {"ok": bool(len(sent) == 2)}
+            ok = len(sent) == 2
+            if ok:
+                charges.append(True)
+            return {"ok": ok}
         rt._apply_verified_next_row_v25277 = prepare
         rt._credit_gate = lambda *_: True
+        rt._profile_class_record = lambda *_: {"students": 24}
         rt._telegram_delivery_ok_v25279 = lambda result: result["ok"]
         rt.send_document = send
-        rt._consume_free_after_success_v25282 = lambda *_: charges.append(True)
         args = (rt, 7, {"class_name": "3 Amanah"}, {}, (date(2027, 1, 18), 3, 13, (13, 14)))
         self.assertFalse(_generate_integrated(*args)["ok"])
         self.assertEqual(charges, [])

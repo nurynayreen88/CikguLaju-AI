@@ -110,9 +110,11 @@ def _generate_integrated(rt, cid, entry, row, plan):
             return {"ok": False, "reason": "RPH bersepadu belum tersedia"}
         if not rt._credit_gate(cid, state):
             return {"ok": False, "reason": "had FREE/VIP"}
+        profile_class = rt._profile_class_record(cid, entry["class_name"]) or {}
+        pupils = entry.get("students") or profile_class.get("students") or ""
         payload = {
             "class": entry["class_name"], "date": today.isoformat(),
-            "time": state.get("rph_time", ""), "students": str(state.get("rph_students") or ""),
+            "time": state.get("rph_time", ""), "students": str(pupils),
         }
         data = integrated.render(year, number, "pdf", payload)
         state["lesson_no"] = state["lesson"] = pair[-1]
@@ -124,7 +126,6 @@ def _generate_integrated(rt, cid, entry, row, plan):
             result = rt.send_document(cid, str(path), caption)
         if not rt._telegram_delivery_ok_v25279(result):
             return {"ok": False, "reason": "penghantaran belum disahkan"}
-        rt._consume_free_after_success_v25282(cid, "successful_integrated_rph_generation")
         return {"ok": True, "reason": caption}
     finally:
         state.clear()

@@ -348,7 +348,7 @@ def create_native_rph_blueprint(runtime):
                 raise ValueError("Invalid English source")
             unit = _require_text(unit, 300)
             fmt = body["format"]
-            if fmt not in ("word", "pdf", "metadata"):
+            if fmt not in ("word", "pdf", "metadata", "pbd"):
                 raise ValueError("Invalid format")
             from web.telegram_verified_rpt_rph_bridge import _teacher_metadata
             teacher = body["teacher"]
@@ -365,6 +365,8 @@ def create_native_rph_blueprint(runtime):
                 return jsonify({"error": "Paired English RPH unavailable"}), 404
             if fmt == "metadata":
                 return jsonify({"lessons": list(pair)})
+            if fmt == "pbd":
+                return jsonify(integrated.pbd_context(year, number))
             data = integrated.render(year, number, fmt, {
                 "class": cls, "date": raw_date, "time": raw_time, "students": pupils,
                 "reflection": clean_reflection(teacher.get("reflection", "")),

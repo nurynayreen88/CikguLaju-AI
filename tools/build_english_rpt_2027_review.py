@@ -160,34 +160,28 @@ def draw_rows(canvas, rows):
 
 
 def cover(canvas, year):
-    frame(canvas, year, "PLANNING COPY",
-          f"Rancangan Pengajaran Tahunan 2027 · English SK Year {year}",
-          "Kumpulan A & B  /  160 Lessons in 142 sessions")
-    y = HEIGHT - 134
-    labels = (
-        ("SCHOOL", "TEACHER"),
-        ("CLASS", "STATE / GROUP"),
-    )
-    for pair in labels:
-        for x, label in zip((34, 424), pair, strict=True):
-            write_text(canvas, label, x, y, size=8.4, bold=True, color=TEAL)
-            canvas.setStrokeColor(LINE)
-            canvas.line(x, y - 29, x + 355, y - 29)
-        y -= 65
-    write_text(canvas, "2027 planning dates", 34, y - 5, size=13, bold=True)
+    frame(canvas, year, "ENGLISH SK", f"Rancangan Pengajaran Tahunan 2027 · Year {year}",
+          "Kumpulan A & B  /  160 SOW Lessons in 142 teaching sessions")
+    canvas.setStrokeColor(LINE)
+    canvas.rect(WIDTH / 2 - 48, HEIGHT - 217, 96, 96, stroke=1, fill=0)
+    write_text(canvas, "LOGO SEKOLAH", WIDTH / 2 - 31, HEIGHT - 172, size=8, color=MUTED)
+    for top, label in ((232, "NAMA SEKOLAH"), (271, "NAMA GURU")):
+        write_text(canvas, label, 134, HEIGHT - top - 17, size=9, bold=True, color=TEAL)
+        canvas.setStrokeColor(LINE)
+        canvas.line(270, HEIGHT - top - 22, 708, HEIGHT - top - 22)
+    write_text(canvas, "2027 planning dates", 34, HEIGHT - 325, size=13, bold=True)
     notes = (
-        "Final teaching week: 24–28 October (A), 25–29 October (B). Use the school days available around Deepavali.",
-        "Weeks 40–43: revision, assessment or school activities. Week 44: final week reserved for school activities.",
-        "Week 18: 9–13 May (A), 10–14 May (B). Use for school assessment or the available English sessions.",
-        "Week 19 (Aidiladha and Wesak): 0 planned Lessons. Week 39 (Deepavali): up to two available sessions.",
-        "Week 20: three sessions across three school days. Plan up to four sessions on different days in a full week.",
-        "Each pair uses one 60-minute RPH with activities drawn from two consecutive SOW Lessons.",
-        "Use one introduction and one closure. Check evidence for both sets of learning standards.",
-        "Confirm the plan against class slots, local holidays and the school's assessment dates.",
-        "Sources: KPM calendar, BKPP holidays and English SK SOW. Paired sessions are a teaching adaptation.",
+        "Final teaching week: 24–28 October (A), 25–29 October (B). Check the school days around Deepavali.",
+        "Weeks 40–43: revision, assessment or school activities. Week 44: year-end school activities.",
+        "Week 18: 9–13 May (A), 10–14 May (B). Use available slots before school assessment.",
+        "Week 19 (Aidiladha and Wesak): no planned Lessons. Week 39: up to two shared sessions.",
+        "Plan up to four sessions on different days. Each pair uses one 60-minute RPH.",
+        "Teach both sets of learning standards with a shared introduction, assessment and closure.",
+        "The plan schedules 142 hours for SOW Lessons. Schools plan the remaining time within their annual allocation.",
+        "Sources: KPM calendar, BKPP holidays and English SK SOW.",
     )
     for i, note in enumerate(notes):
-        write_text(canvas, note, 34, y - 31 - 23 * i, size=9, color=MUTED)
+        write_text(canvas, note, 34, HEIGHT - 350 - 23 * i, size=9, color=MUTED)
     canvas.showPage()
 
 

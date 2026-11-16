@@ -47,6 +47,13 @@ def validate_payload(obj, *, root=ROOT):
     digest = obj["source_sha256"]
     if not isinstance(digest, str) or not re.fullmatch("[a-f0-9]{64}", digest):
         raise ValueError("Invalid RPT digest")
+    if obj["subject"] == "english":
+        # Accept both known editions while Web and Telegram deploy separately.
+        revised = path.with_name(f"RPT_English_SK_2027_Year_{obj['year']}_A_B.pdf")
+        if (not revised.is_symlink() and revised.is_file()
+                and revised.stat().st_size <= MAX_PDF
+                and hmac.compare_digest(sha256(revised.read_bytes()).hexdigest(), digest)):
+            path = revised
     original = path.read_bytes()
     if len(original) < 8000 or not original.startswith(b"%PDF-"):
         raise ValueError("Invalid source PDF")
@@ -101,7 +108,8 @@ def create_private_rpt_blueprint(*, root=ROOT):
             return jsonify({"error": "RPT source or identity does not match Telegram"}), 409
         try:
             from web.rpt_pdf_cover_renderer import personalized_pdf
-            document = personalized_pdf(path, subject + " — Tahun " + str(year), 2027, identity)
+            grade = "Year" if path.name.startswith("RPT_English_SK_2027_Year_") else "Tahun"
+            document = personalized_pdf(path, f"{subject} — {grade} {year}", 2027, identity)
             content = document.getvalue()
             if not content.startswith(b"%PDF-") or len(content) > MAX_PDF:
                 raise ValueError("Invalid resulting RPT")

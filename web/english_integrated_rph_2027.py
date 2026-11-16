@@ -70,6 +70,19 @@ def one_hour(start, end):
         return False
 
 
+def pbd_context(year, number):
+    lessons = paired_plan_index()[year, number][-1]
+    standards = tuple(code for _, row, *_ in lessons
+                      for code in (row["main_ls"], row["complementary_ls"]))
+    return {
+        "lesson": "Lesson " + " + ".join(f"{lesson[0]:03d}" for lesson in lessons),
+        "sk": " / ".join(dict.fromkeys(code.rsplit(".", 1)[0] for code in standards)),
+        "sp": " / ".join(dict.fromkeys(standards)),
+        "criteria1": lessons[0][3],
+        "criteria2": lessons[1][3],
+    }
+
+
 def filename(year, pair, fmt):
     a, b = pair
     suffix = "docx" if fmt == "word" else "pdf"
