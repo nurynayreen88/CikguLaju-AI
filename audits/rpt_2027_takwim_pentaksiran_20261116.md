@@ -2,6 +2,8 @@
 
 RPT menggunakan satu jadual dengan tarikh Kumpulan A dan B pada setiap baris minggu. Rujuk [Kalendar Akademik KPM 2027, Lampiran A–C](https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik) untuk hari persekolahan dan cuti. Had PdP ialah had perancangan CikguLaju. Guru mengikut tarikh pentaksiran, jadual waktu dan cuti sebenar sekolah.
 
+Jadual berikut ialah pembanding umum dalam audit pelbagai subjek. Untuk agihan English SK terkini, rujuk jadual khusus hingga Minggu 43 di bawah.
+
 | Kegunaan | Minggu takwim | Kumpulan A | Kumpulan B |
 | --- | --- | --- | --- |
 | Had PdP sebelum cuti pertengahan tahun | 18 | 9–13 Mei | 10–14 Mei |
@@ -23,7 +25,7 @@ Semakan meliputi 56 PDF SK, 16 PDF SJK/SJKC, 10 PDF DLP dan satu sumber draf Mat
 
 | Contoh | Semakan kapasiti |
 | --- | --- |
-| English SK Tahun 2–6 | Agihan khusus English hingga Minggu 41 (11/12 November) mengira sehingga 151 Lesson bersama A/B jika slot tersedia sebelum pentaksiran. CSV menggunakan had pembanding 4/5 November. |
+| English SK Tahun 2–6 | Draf English hingga Minggu 43 mengagihkan 160 Lesson bersama A/B jika slot tersedia sebelum pentaksiran. CSV menggunakan had pembanding 4/5 November. |
 | Matematik SK Tahun 2–6 | 117 Lesson dan 96 jam setahun. Had pembanding sedia ada memberi ruang untuk 104 Lesson. |
 | Pendidikan Seni Visual SK Tahun 2–6 | 42 PdP. Pola satu PdP seminggu memberi ruang untuk 38 PdP. |
 | Bahasa Cina SJKC Tahun 2–3 | 192 PdP. Had pembanding lima PdP seminggu memberi ruang untuk 190 PdP sebelum semakan cuti negeri dan jadual waktu. |
@@ -34,7 +36,20 @@ Draf Matematik SJKC Tahun 3 dan sembilan RPT SJK/SJKC mempunyai tarikh akhir yan
 
 ## English SK Year 2–6
 
-### Asas jadual waktu sekolah: 8 waktu × 30 minit
+### Agihan semakan terkini hingga Minggu 43
+
+Had PdP English SK Year 2–6 dilanjutkan hingga 25 November bagi Kumpulan A dan 26 November bagi Kumpulan B. Minggu 44 sahaja diperuntukkan untuk aktiviti sekolah sebelum cuti akhir tahun. Minggu 6 dan Minggu 19 kekal kosong. Had mingguan ialah lapan waktu 30 minit. Lesson bernombor diselesaikan sebelum pentaksiran atau UASA mengikut sekolah.
+
+| Pelarasan berbanding draf hingga Minggu 41 | Jam |
+| --- | ---: |
+| Asas hingga Minggu 41 | 151 |
+| Minggu 42 dan 43, maksimum empat jam setiap minggu | +8 |
+| Pulihkan dua waktu 30 minit pada Minggu 20 | +1 |
+| Jumlah | **160** |
+
+Dalam jadual bersama, Minggu 20 mempunyai tiga hari sekolah. Susun empat sesi 60 minit secara 2 + 1 + 1 pada tiga hari tersebut. Jika hanya tiga sesi tersedia, gantikan satu jam pada minggu yang masih di bawah lapan waktu dan mempunyai ruang sebenar. Contohnya, sekolah di Negeri Sembilan boleh menyasarkan empat sesi pada Minggu 5 kerana 5 Februari ialah satu-satunya cuti dalam julat sekolah minggu itu. Jika dua waktu tersebut dipulihkan di Minggu 5, kekalkan tiga sesi pada Minggu 20. Empat sesi Minggu 18 serta slot November masih tertakluk pada jadual kelas dan pentaksiran. [Takwim KPM, Lampiran C](https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik) · [Jadual Hari Kelepasan Am BKPP](https://www.kabinet.gov.my/hari-kelepasan-am/).
+
+### Asas jadual waktu sekolah dan pembanding sehingga Minggu 41
 
 Kiraan English menggunakan maksimum lapan waktu 30 minit seminggu, bersamaan 240 minit. Empat sesi 60 minit ialah cara menyusun peruntukan yang sama apabila waktu digabungkan berpasangan. Untuk agihan SOW, satu Lesson penuh menggunakan dua blok 30 minit. Jika satu blok sahaja masih tersedia, rancang bahagian pertama Lesson dan sambungkan baki 30 minit pada waktu English berikutnya, mengikut urutan SOW. [Contoh buku pengurusan SK Shah Alam](https://anyflip.com/ggvn/fbjr/basic/51-100) dan [panduan blok 30 minit dalam SOW Year 6 SK](https://www.teacherfiera.com/wp-content/uploads/2020/04/SoW-Primary-Year-6-SK.pdf).
 
@@ -48,7 +63,7 @@ Kiraan English menggunakan maksimum lapan waktu 30 minit seminggu, bersamaan 240
 
 Untuk minggu dengan satu hari cuti umum, kekalkan sasaran lapan waktu dan semak waktu yang boleh dialihkan dalam minggu tersebut. Jika baki sebenar tujuh waktu, gunakan 210 minit dan bawa baki Lesson ke waktu seterusnya. Jika tiada waktu dialihkan, kira kehilangan berdasarkan jadual English kelas pada hari cuti. Satu hari cuti boleh menjejaskan 0, 1 atau beberapa waktu, bergantung pada jadual.
 
-Draf bersama mempunyai enam waktu bersamaan tiga Lesson pada Minggu 5, 20 dan 35. Minggu 39 mempunyai empat waktu bersamaan dua Lesson. Minggu 6 dan 19 mempunyai sifar waktu. Nilai ini ialah andaian bersama. Contohnya, jika sekolah mempunyai tujuh waktu pada Minggu 20, 30 minit tambahan boleh digunakan untuk memulakan Lesson seterusnya, dengan baki disambung selepas itu. Sahkan agihan setiap kelas sebelum memindahkan nombor Lesson dalam RPT dan RPH Hari Ini.
+Draf terdahulu hingga Minggu 41 mempunyai enam waktu bersamaan tiga Lesson pada Minggu 5, 20 dan 35. Minggu 39 mempunyai empat waktu bersamaan dua Lesson. Minggu 6 dan 19 mempunyai sifar waktu. Nilai ini ialah andaian bersama. Contohnya, jika sekolah mempunyai tujuh waktu pada Minggu 20, 30 minit tambahan boleh digunakan untuk memulakan Lesson seterusnya, dengan baki disambung selepas itu. Sahkan agihan setiap kelas sebelum memindahkan nombor Lesson dalam RPT dan RPH Hari Ini.
 
 | Agihan hingga 11/12 November, tertakluk pada pentaksiran | Waktu 30 minit | Jam | Baki daripada 320 waktu |
 | --- | ---: | ---: | ---: |
@@ -64,9 +79,7 @@ RPT Rozayus Academy 2026 meletakkan Lesson 160 pada 18–22 Oktober (A) dan 19�
 
 ### Agihan draf 2027 mengikut Kumpulan A/B
 
-Had PdP baharu bagi English SK Year 2–6 ialah 11 November bagi Kumpulan A dan 12 November bagi Kumpulan B, tertakluk pada slot sebelum pentaksiran atau UASA sekolah. Minggu Deepavali menggunakan dua sesi dalam agihan bersama Kumpulan A/B. Kumpulan A boleh menggunakan sehingga tiga sesi dan Sarawak sehingga empat sesi jika jadual kelas membenarkan. Minggu 40 dan 41 masing-masing menggunakan sehingga empat sesi jika slot tersedia sebelum pentaksiran. Minggu 42–44 diperuntukkan untuk ulang kaji, pentaksiran atau aktiviti sekolah mengikut takwim sekolah.
-
-Agihan menggunakan maksimum empat sesi PdP seminggu, 60 minit setiap sesi. Minggu dengan hanya satu hari cuti umum mengekalkan empat sesi. Agihan bersama menggunakan tiga sesi pada Minggu 5, 20 dan 35 serta dua sesi pada Minggu 39. Jadual sebenar, tarikh pentaksiran dan cuti setempat menentukan sesi yang tersedia. SOW Year 3–6 menerangkan tempoh 60 minit bagi setiap Lesson. SOW Year 2 menyenaraikan 160 Lesson dan panduan English SK menetapkan 160 jam minimum setahun. Untuk kiraan ini, 60 minit ialah anggaran satu Lesson Year 2.
+Agihan bersama menggunakan tiga sesi pada Minggu 5 dan 35, dua sesi pada Minggu 39 dan empat sesi pada Minggu 20 jika semua slot dapat dijadualkan. Minggu 40–43 memerlukan pengesahan slot sebelum pentaksiran atau UASA. SOW Year 3–6 menerangkan tempoh 60 minit bagi setiap Lesson. SOW Year 2 menyenaraikan 160 Lesson dan kiraan ini menggunakan 60 minit sebagai tempoh satu Lesson.
 
 | Minggu | Kumpulan A | Kumpulan B | Sesi 60 minit | Lesson atau kegunaan |
 | ---: | --- | --- | ---: | --- |
@@ -89,44 +102,41 @@ Agihan menggunakan maksimum empat sesi PdP seminggu, 60 minit setiap sesi. Mingg
 | 17 | 2–6 Mei | 3–7 Mei | 4 | 060–063 |
 | 18 | 9–13 Mei | 10–14 Mei | 4 | 064–067 · Jika ada PdP sebelum pentaksiran. |
 | 19 | 16–20 Mei | 17–21 Mei | 0 | Raya Haji dan Wesak, kapasiti bersama sifar |
-| 20 | 6–10 Jun | 7–11 Jun | 3 | 068–070 · Awal Muharam dan Hari Keputeraan Agong. |
-| 21 | 13–17 Jun | 14–18 Jun | 4 | 071–074 |
-| 22 | 20–24 Jun | 21–25 Jun | 4 | 075–078 |
-| 23 | 27 Jun–1 Jul | 28 Jun–2 Jul | 4 | 079–082 |
-| 24 | 4–8 Jul | 5–9 Jul | 4 | 083–086 |
-| 25 | 11–15 Jul | 12–16 Jul | 4 | 087–090 |
-| 26 | 18–22 Jul | 19–23 Jul | 4 | 091–094 |
-| 27 | 25–29 Jul | 26–30 Jul | 4 | 095–098 |
-| 28 | 1–5 Ogos | 2–6 Ogos | 4 | 099–102 |
-| 29 | 8–12 Ogos | 9–13 Ogos | 4 | 103–106 |
-| 30 | 15–19 Ogos | 16–20 Ogos | 4 | 107–110 |
-| 31 | 22–26 Ogos | 23–27 Ogos | 4 | 111–114 |
-| 32 | 5–9 Sep | 6–10 Sep | 4 | 115–118 |
-| 33 | 12–16 Sep | 13–17 Sep | 4 | 119–122 |
-| 34 | 19–23 Sep | 20–24 Sep | 4 | 123–126 |
-| 35 | 26–30 Sep | 27 Sep–1 Okt | 3 | 127–129 · Dua hari cuti di Kelantan. Empat sesi jika ada paling banyak satu penutupan. |
-| 36 | 3–7 Okt | 4–8 Okt | 4 | 130–133 |
-| 37 | 10–14 Okt | 11–15 Okt | 4 | 134–137 |
-| 38 | 17–21 Okt | 18–22 Okt | 4 | 138–141 |
-| 39 | 24–28 Okt | 25–29 Okt | 2 | 142–143 · Minggu Deepavali. Pelarasan ikut negeri. |
-| 40 | 31 Okt–4 Nov | 1–5 Nov | 4 | 144–147 · Jika slot tersedia sebelum pentaksiran/UASA. |
-| 41 | 7–11 Nov | 8–12 Nov | Sehingga 4 | 148–151 · Jika slot tersedia sebelum pentaksiran/UASA. |
-| 42 | 14–18 Nov | 15–19 Nov | 0 | Aktiviti akhir tahun |
-| 43 | 21–25 Nov | 22–26 Nov | 0 | Aktiviti akhir tahun |
+| 20 | 6–10 Jun | 7–11 Jun | 4 | 068–071 · Empat sesi dalam tiga hari sekolah, tertakluk pada jadual kelas. |
+| 21 | 13–17 Jun | 14–18 Jun | 4 | 072–075 |
+| 22 | 20–24 Jun | 21–25 Jun | 4 | 076–079 |
+| 23 | 27 Jun–1 Jul | 28 Jun–2 Jul | 4 | 080–083 |
+| 24 | 4–8 Jul | 5–9 Jul | 4 | 084–087 |
+| 25 | 11–15 Jul | 12–16 Jul | 4 | 088–091 |
+| 26 | 18–22 Jul | 19–23 Jul | 4 | 092–095 |
+| 27 | 25–29 Jul | 26–30 Jul | 4 | 096–099 |
+| 28 | 1–5 Ogos | 2–6 Ogos | 4 | 100–103 |
+| 29 | 8–12 Ogos | 9–13 Ogos | 4 | 104–107 |
+| 30 | 15–19 Ogos | 16–20 Ogos | 4 | 108–111 |
+| 31 | 22–26 Ogos | 23–27 Ogos | 4 | 112–115 |
+| 32 | 5–9 Sep | 6–10 Sep | 4 | 116–119 |
+| 33 | 12–16 Sep | 13–17 Sep | 4 | 120–123 |
+| 34 | 19–23 Sep | 20–24 Sep | 4 | 124–127 |
+| 35 | 26–30 Sep | 27 Sep–1 Okt | 3 | 128–130 · Dua hari cuti di Kelantan. Empat sesi jika ada paling banyak satu penutupan. |
+| 36 | 3–7 Okt | 4–8 Okt | 4 | 131–134 |
+| 37 | 10–14 Okt | 11–15 Okt | 4 | 135–138 |
+| 38 | 17–21 Okt | 18–22 Okt | 4 | 139–142 |
+| 39 | 24–28 Okt | 25–29 Okt | 2 | 143–144 · Minggu Deepavali. Pelarasan ikut negeri. |
+| 40 | 31 Okt–4 Nov | 1–5 Nov | 4 | 145–148 · Jika slot tersedia sebelum pentaksiran/UASA. |
+| 41 | 7–11 Nov | 8–12 Nov | Sehingga 4 | 149–152 · Jika slot tersedia sebelum pentaksiran/UASA. |
+| 42 | 14–18 Nov | 15–19 Nov | Sehingga 4 | 153–156 · Jika slot tersedia sebelum pentaksiran/UASA. |
+| 43 | 21–25 Nov | 22–26 Nov | Sehingga 4 | 157–160 · Jika slot tersedia sebelum pentaksiran/UASA. |
 | 44 | 28 Nov–2 Dis | 29 Nov–3 Dis | 0 | Aktiviti akhir tahun |
 
-### Baki sebelum had November
-
-- Kapasiti bersama ialah **sehingga 151 sesi atau 151 jam**. **Lesson 152–160** memerlukan sembilan sesi tambahan. Jika Minggu 41 digunakan sepenuhnya untuk pentaksiran, kapasiti kembali kepada 147 sesi. Jika Minggu 18 juga digunakan sepenuhnya untuk pentaksiran, kapasiti turun lagi kepada 143 sesi. Kira sesi Minggu 40 berdasarkan baki slot sebelum pentaksiran.
-- Pada kadar empat sesi seminggu, 160 Lesson memerlukan 40 minggu dengan jadual penuh. Hingga 11/12 November terdapat 39 minggu calon apabila Minggu 6 dan 19 diletakkan pada kapasiti bersama sifar. Had teori ialah 156 sesi sebelum mengambil kira minggu pendek.
+Pelan ini menjadualkan 320 waktu. Jika Minggu 20 kekal tiga sesi dan tiada slot lain yang dipulihkan, jumlah menjadi 159 jam. Jika Minggu 43 digunakan sepenuhnya untuk UASA, jumlah dalam pelan bersama turun kepada 156 jam. Baki slot sebenar hendaklah dipulihkan sebelum pentaksiran.
 
 Minggu 1, 10 dan 11 meningkat daripada tiga kepada empat sesi. Minggu 1 bermula Isnin, 4 Januari, dengan empat hari dalam julat Kumpulan A. Israk dan Mikraj boleh mengurangkan bilangan hari sekolah kepada tiga di negeri Kumpulan A yang terlibat. Empat sesi ialah sasaran perancangan dan boleh memerlukan dua sesi pada satu hari jika jadual membenarkan. Minggu 10 mempunyai cuti tambahan Aidilfitri pada 14 Mac bagi Kumpulan A. Minggu 11 mempunyai cuti Johor atau Good Friday di negeri berkenaan. Minggu 5 kekal tiga sesi dalam agihan bersama kerana 1 Februari dan 5 Februari kedua-duanya menutup sekolah di Wilayah Persekutuan yang berkenaan. Minggu 20 mempunyai dua penutupan berkaitan Awal Muharam dan Hari Keputeraan Agong. Minggu 35 mempunyai dua hari cuti keputeraan di Kelantan. Minggu 39 mempunyai dua penutupan dalam Kumpulan A, tiga dalam kebanyakan negeri Kumpulan B dan satu di Sarawak. Apabila negeri atau sekolah mempunyai ruang tambahan, guru boleh menggunakan sesi seterusnya dalam turutan SOW. [Jadual Hari Kelepasan Am BKPP](https://www.kabinet.gov.my/hari-kelepasan-am/) · [Takwim KPM, Lampiran C](https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik).
 
-Lima salinan semakan boleh dibina dengan `python tools/build_english_rpt_2027_review.py <folder-keluaran>` menggunakan PyMuPDF, ReportLab dan font DejaVu Sans. Setiap salinan mempunyai 44 baris takwim A/B, sehingga 151 Lesson bertarikh dan lampiran Lesson 152–160 bersama SK/SP serta rujukan bahan sedia ada. Agihan penuh untuk Web dan Telegram masih dalam semakan.
+Lima salinan semakan boleh dibina dengan `python tools/build_english_rpt_2027_review.py <folder-keluaran>` menggunakan PyMuPDF, ReportLab dan font DejaVu Sans. Setiap salinan mempunyai 44 baris takwim A/B, 160 Lesson bertarikh bersama SK/SP serta rujukan bahan sedia ada. Agihan penuh untuk Web dan Telegram masih dalam semakan.
 
-### Sesi yang boleh dipulihkan mengikut negeri
+### Pembanding terdahulu bagi Minggu 41 dan sesi yang boleh dipulihkan mengikut negeri
 
-Kiraan bermula daripada 151 sesi dalam jadual bersama. Setiap sesi ialah 60 minit, dengan maksimum empat sesi seminggu. Had PdP English ialah 11 November (A) dan 12 November (B), atau lebih awal jika pentaksiran/UASA bermula dahulu.
+Kiraan bermula daripada 151 sesi dalam jadual bersama. Setiap sesi ialah 60 minit, dengan maksimum empat sesi seminggu. Had dalam pembanding ini ialah 11 November (A) dan 12 November (B), atau lebih awal jika pentaksiran/UASA bermula dahulu.
 
 | Minggu | Hari yang boleh digunakan dalam agihan | Sesi tambahan berbanding jadual bersama |
 | --- | --- | ---: |
@@ -161,11 +171,11 @@ English SK KSSR (Semakan 2017) memperuntukkan minimum 160 jam pengajaran setahun
 | Jumlah jika sekolah mengesahkan empat sesi Lesson pada Minggu 41 sebelum pentaksiran | 151 | 152–155 |
 | Baki jam selepas senario empat sesi tambahan | 9 | 5–8 |
 
-Minggu 41 boleh memuatkan Lesson baharu sebelum pentaksiran/UASA. Gunakan sehingga empat sesi yang tersedia dan susun turutan Lesson mengikut kelas. Kekalkan dua minggu selepas UASA dan tiga minggu terakhir dalam draf untuk kegunaan sekolah. Jadual kelas sebenar dan tarikh UASA belum disahkan. Rekodkan hanya minit pengajaran sebenar, termasuk PBD semasa PdP.
+Minggu 41 boleh memuatkan Lesson baharu sebelum pentaksiran/UASA. Gunakan sehingga empat sesi yang tersedia dan susun turutan Lesson mengikut kelas. Pembanding terdahulu memperuntukkan tiga minggu terakhir untuk kegunaan sekolah. Jadual kelas sebenar dan tarikh UASA belum disahkan. Rekodkan hanya minit pengajaran sebenar, termasuk PBD semasa PdP.
 
 Untuk Year 2–3, gunakan PBD sepanjang PdP dan takwim pentaksiran sekolah. Panduan PBS KPM meletakkan UASA sekolah rendah pada Year 4–6. Sekolah menentukan tarikh UASA. Jika UASA mengambil Minggu 41, kapasiti tambahan dalam jadual ialah sifar. [Panduan Pengurusan PBS KPM 2025](https://www.moe.gov.my/storage/files/shares/pekeliling_dan_garis_panduan/Panduan%20Pengurusan%20PBS%20Edisi%201%20Tahun%202025.pdf) dan [Panduan UASA KPM](https://www.moe.gov.my/storage/files/shares/pentaksiran-berasaskan-sekolah/5.%20Panduan%20Pengurusan%20dan%20Pentadbiran%20UASA%20%26%20FAQ%20UASA.pdf).
 
-### Pilihan mencapai 160 jam sebelum Minggu 41 berakhir
+### Simulasi terdahulu untuk cukup 160 jam hingga Minggu 41
 
 Dengan Minggu 6 dan 19 tanpa PdP, lapan waktu seminggu memberi had 312 waktu (156 jam) hingga Minggu 41, walaupun semua minggu calon penuh. Sasaran tahunan ialah 320 waktu. Sekurang-kurangnya lapan blok tambahan 30 minit diperlukan sebelum pentaksiran sekiranya had November hendak dikekalkan. Jika jadual sekolah menetapkan maksimum lapan waktu pada setiap minggu, sasaran 160 jam memerlukan satu lagi minggu PdP penuh sebelum pentaksiran, dengan semua minggu pendek dipulihkan.
 
@@ -181,7 +191,7 @@ Contoh pengiraan untuk Negeri Sembilan (Kumpulan B) bermula daripada 153 jam dal
 
 Jika sekolah memperuntukkan sembilan waktu pada minggu terpilih, 308 + 12 = 320 waktu atau 160 jam. Waktu kesembilan boleh memulakan atau menyambung Lesson mengikut turutan SOW. Pengiraan menempatkan Lesson 153–156 pada Minggu 40 dan Lesson 157–160 pada Minggu 41. Semak aktiviti dan SK/SP sebelum memilih titik pecahan 30 minit. [Panduan penyesuaian blok dalam SOW Year 6 SK](https://www.teacherfiera.com/wp-content/uploads/2020/04/SoW-Primary-Year-6-SK.pdf).
 
-Angka ini mengandaikan slot Minggu 18, 40 dan 41 tersedia sepenuhnya sebelum pentaksiran. Jika Minggu 20 kekal enam waktu, jumlah tambahan perlu menjadi 14 waktu. Jika pentaksiran mengambil keseluruhan Minggu 41, alihkan lapan waktu itu ke tarikh lebih awal sebelum UASA. Agihan sembilan waktu ialah pilihan tertakluk pada jadual sekolah. Lima PDF semakan masih menggunakan agihan bersama maksimum lapan waktu.
+Angka ini mengandaikan slot Minggu 18, 40 dan 41 tersedia sepenuhnya sebelum pentaksiran. Jika Minggu 20 kekal enam waktu, jumlah tambahan perlu menjadi 14 waktu. Jika pentaksiran mengambil keseluruhan Minggu 41, alihkan lapan waktu itu ke tarikh lebih awal sebelum UASA. Agihan sembilan waktu ialah pilihan tertakluk pada jadual sekolah. Lima PDF semakan terkini menggunakan agihan maksimum lapan waktu hingga Minggu 43.
 
 ### Semakan standard bagi Lesson akhir
 

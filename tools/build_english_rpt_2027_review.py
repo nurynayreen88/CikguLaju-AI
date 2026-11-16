@@ -21,9 +21,10 @@ SOURCE = ROOT / "rpt_2027" / "english"
 CALENDAR = ROOT / "rpt_2027" / "takwim_pdp_2027_ab_draf.json"
 LESSON = re.compile(r"LESSON:\s*(\d+)\b")
 DEEPAVALI_WEEK = 39
-SHORT_WEEK_SESSIONS = {5: 3, 20: 3, 35: 3, DEEPAVALI_WEEK: 2}
-STOP_WEEK = 41
-LATE_TEACHING_WEEKS = (40, STOP_WEEK)
+SHORT_WEEK_SESSIONS = {5: 3, 35: 3, DEEPAVALI_WEEK: 2}
+STOP_WEEK = 43
+LATE_TEACHING_WEEKS = range(40, STOP_WEEK + 1)
+JUNE_SHORT_WEEK = 20
 WEEK_WITH_ASSESSMENT = 18
 CLOSED_WEEKS = {6, 19}
 WIDTH, HEIGHT = landscape(A4)
@@ -91,7 +92,7 @@ def schedule():
         lessons = tuple(range(first, first + count))
         weeks.append((week, span(row["A"]), span(row["B"]), lessons))
         first += count
-    assert first == 152 and len(weeks) == 44
+    assert first == 161 and len(weeks) == 44
     return weeks
 
 
@@ -153,10 +154,10 @@ def draw_rows(canvas, rows):
         raise ValueError(f"Lesson table extends past the page area: {y:.1f}")
 
 
-def cover(canvas, year, scheduled_count):
+def cover(canvas, year):
     frame(canvas, year, "PLANNING COPY",
           f"Rancangan Pengajaran Tahunan 2027 · English SK Year {year}",
-          f"Kumpulan A & B  /  {scheduled_count} dated Lessons and {160 - scheduled_count} Lessons awaiting timetable slots")
+          "Kumpulan A & B  /  160 planned Lessons  /  160 teaching hours")
     y = HEIGHT - 134
     labels = (
         ("SCHOOL", "TEACHER"),
@@ -170,14 +171,14 @@ def cover(canvas, year, scheduled_count):
         y -= 65
     write_text(canvas, "2027 planning dates", 34, y - 5, size=13, bold=True)
     notes = (
-        "Group A (Kedah, Kelantan and Terengganu): teaching limit 11 November.",
-        "Group B (other states and federal territories): teaching limit 12 November.",
+        "Group A (Kedah, Kelantan and Terengganu): teaching limit 25 November.",
+        "Group B (other states and federal territories): teaching limit 26 November.",
         "Week 18: 9–13 May (A), 10–14 May (B). Use for school assessment or the available English sessions.",
         "Week 19 (Aidiladha and Wesak): 0 planned Lessons. Week 39 (Deepavali): up to two available sessions.",
-        "Weeks 40–41: use available English slots before school assessment or UASA.",
+        "Week 20: place four English Lessons across the three available school days (2 + 1 + 1).",
         "Plan eight 30-minute periods (four 60-minute Lessons) per full week, including weeks with one public holiday.",
-        f"Lessons {scheduled_count + 1:03d}–160 await placement before the school assessment or UASA.",
-        "Use the revision and assessment dates set by the school. Weeks 42–44 have 0 new Lessons.",
+        "Weeks 40–43: confirm English slots before school assessment or UASA.",
+        "Week 44: 0 new Lessons. Reserve the final school week for school activities.",
         "See the calendar notes for local adjustments. Sources: KPM calendar, BKPP holidays and English SK SOW.",
     )
     for i, note in enumerate(notes):
@@ -215,7 +216,7 @@ def calendar_page(canvas, year, weeks, notes, title):
         y -= 17
     local_notes = (
         ("Week 5: use four sessions where there is only one closure or none. Some Federal Territories have two.",
-         "Week 20: allow for the Agong's Birthday and Awal Muharram or its replacement holiday.")
+         "Week 20: place eight English periods across three school days. If only six fit, recover two before assessment.")
         if weeks[0][0] == 1 else
         ("Week 35: use four sessions outside Kelantan, subject to local closures and the timetable.",
          "Week 39: up to three in Group A, two in most of Group B and four in Sarawak.",
@@ -234,17 +235,15 @@ def build(year, out):
     pdf = Canvas(str(out), pagesize=landscape(A4), pageCompression=1, invariant=1)
     pdf.setTitle(f"RPT English SK Year {year} 2027 / Kumpulan A & B")
     pdf.setAuthor("CikguLaju")
-    cover(pdf, year, len(numbered))
+    cover(pdf, year)
     notes = {
         5: "3 shared sessions / 4 where there is at most one closure",
         6: "Festival holidays / 0 planned Lessons",
         WEEK_WITH_ASSESSMENT: "up to 4 sessions if slots are available around school assessment",
         19: "Aidiladha and Wesak / 0 planned Lessons",
-        20: "3 sessions / Awal Muharram and Agong's Birthday",
+        JUNE_SHORT_WEEK: "4 sessions across 3 school days if timetable allows",
         35: "3 shared sessions / 4 outside Kelantan, subject to local closures",
         DEEPAVALI_WEEK: "2 sessions in the shared plan / local dates vary",
-        42: "Year-end activities / 0 new Lessons",
-        43: "Year-end activities / 0 new Lessons",
         44: "Year-end activities / 0 new Lessons",
     }
     notes.update(dict.fromkeys(LATE_TEACHING_WEEKS, "up to 4 sessions before school assessment or UASA"))
@@ -255,6 +254,8 @@ def build(year, out):
             detail = f"Group A: {group_a}   /   Group B: {group_b}   /   {len(lessons)} Lessons"
             if week == WEEK_WITH_ASSESSMENT:
                 detail += "   /   If English slots are available"
+            if week == JUNE_SHORT_WEEK:
+                detail += "   /   Four Lessons across three school days"
             if week == DEEPAVALI_WEEK:
                 detail += "   /   On available school days"
             if week in LATE_TEACHING_WEEKS:
@@ -262,13 +263,6 @@ def build(year, out):
             frame(pdf, year, "DATED LESSONS", f"Week {week:02d}  ·  {lesson_range(lessons)}", detail)
             draw_rows(pdf, (rows[n] for n in lessons))
             pdf.showPage()
-    pending = list(range(len(numbered) + 1, 161))
-    for offset in range(0, len(pending), 4):
-        numbers = pending[offset:offset + 4]
-        frame(pdf, year, "TIMETABLE SLOTS NEEDED", f"Lessons {numbers[0]:03d}–{numbers[-1]:03d}",
-              "Arrange these Lessons within the teaching limit and before school assessment or UASA.")
-        draw_rows(pdf, (rows[n] for n in numbers))
-        pdf.showPage()
     pdf.save()
 
 
