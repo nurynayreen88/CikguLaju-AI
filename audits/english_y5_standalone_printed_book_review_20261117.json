@@ -1,0 +1,38 @@
+{
+  "evidence": "audits/english_y5_october_integrated_source_review_20261116.md",
+  "scope": "Standalone Word/PDF source text checked against the cited printed SOW, SB, TB and Workbook activities.",
+  "lessons": [
+    {
+      "lesson": 31,
+      "source_sha256": "db7e91d562eb139d287b346c2b99609c255eabe0fd2cabb721be7a2d123b776c"
+    },
+    {
+      "lesson": 32,
+      "source_sha256": "7d6b770988abb3bbe365fc5ddc2fa8f6ae0f98c172b953fe012a43e9227f05e7"
+    },
+    {
+      "lesson": 35,
+      "source_sha256": "03778459f3b155ac1d12859c62a8d2ff8825c0036ac4ca92be52e6938af7e8e1"
+    },
+    {
+      "lesson": 36,
+      "source_sha256": "8b8fd35c7665e5fe739f115299315738ba29e4086b96e80475cc21b2d6a87a37"
+    },
+    {
+      "lesson": 41,
+      "source_sha256": "d533ebe4e939d30784051285898785a7eb416d4176e92f87aee24f85e9edc732"
+    },
+    {
+      "lesson": 42,
+      "source_sha256": "bfdd317b0e2aecbe98429ceda3a4fdac0bfdbc5d52fa47e1a04b457393439083"
+    },
+    {
+      "lesson": 47,
+      "source_sha256": "64870d2fa8be4c2e30847d1cd79480bb14c8665266790edb53aeddf7424ae0b6"
+    },
+    {
+      "lesson": 48,
+      "source_sha256": "788ba4694a868f97952fcbb625735b23d04d85b80455e2628812c758c75e3f43"
+    }
+  ]
+}

@@ -8,7 +8,7 @@
 
 1. **Set induction (8 min):** Pairs recall one thing they usually do at weekends and one plan for next weekend.
 2. **Activity 1 (12 min):** Pupils use the Key Phrases to find the suggestions in SB Activity 4 and write a suitable reply to one.
-3. **Activity 2 (15 min):** Pairs practise SB Activity 5 with appropriate intonation. With a different partner, they adapt the dialogue using the film times in SB Activity 6.
+3. **Activity 2 (15 min):** Pairs practise SB Activity 5 with appropriate intonation. The teacher supplies local film titles and times. Pupils use these to adapt the SB Activity 6 dialogue with a new partner.
 4. **Activity 3 (17 min):** Pairs write a short exchange asking for a suggestion, giving one and replying, then say which film they plan to see and when.
 5. **Closure (8 min):** Groups combine their choices into a cinema programme. If time permits, pupils complete selected gaps from Workbook p.27 Exercise 6.
 

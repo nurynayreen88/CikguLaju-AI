@@ -36,8 +36,15 @@ def main():
         ROOT / "audits/english_y5_l029_l030_original_sow_tb_sb_wb_audio_sources_20261105.json"
     )
     book_review_hashes = {
-        row["lesson"]: row["source_sha256"] for row in book_sample["word_a4_ci_evidence"]["lessons"]
+        (row["lesson"], row["source_sha256"]):
+        "audits/english_y5_l029_l030_original_sow_tb_sb_wb_audio_sources_20261105.json"
+        for row in book_sample["word_a4_ci_evidence"]["lessons"]
     } if book_sample["gates"]["printed_book_activity_verified"] else {}
+    book_review = read_json(ROOT / "audits/english_y5_standalone_printed_book_review_20261117.json")
+    book_review_hashes.update({
+        (row["lesson"], row["source_sha256"]): book_review["evidence"]
+        for row in book_review["lessons"]
+    })
     citations = check_citations()
     missing_citations = set(citations["lessons_without_explicit_printed_page"])
     wrong_citations = {item["lesson"] for item in citations["mismatches"]}
@@ -56,7 +63,7 @@ def main():
         word_doc, pdf_doc = word[n], native[n]
         track_labels = audio_lessons.get(n, "")
         source_hash = sha256((LESSON_ROOT / f"lesson_{n:03d}.md").read_bytes()).hexdigest()
-        book_reviewed = book_review_hashes.get(n) == source_hash
+        book_evidence = book_review_hashes.get((n, source_hash), "")
         rows.append({
             "lesson": n,
             "topic": source["topic"],
@@ -74,13 +81,10 @@ def main():
             "trek_bernombor_dalam_sow": track_labels,
             "status_audio": "semak kandungan dan tugas" if track_labels else "semak keperluan dalam rancangan",
             "status_buku": (
-                "bukti semakan buku tersedia bagi sumber ini" if book_reviewed
+                "bukti semakan buku tersedia bagi sumber ini" if book_evidence
                 else "semak bukti aktiviti bagi versi satu Lesson"
             ),
-            "bukti_semakan_buku": (
-                "audits/english_y5_l029_l030_original_sow_tb_sb_wb_audio_sources_20261105.json"
-                if book_reviewed else ""
-            ),
+            "bukti_semakan_buku": book_evidence,
             "sumber_sha256": source_hash,
             "kelulusan_penerbitan_direkod": approved_for_telegram(n),
         })
