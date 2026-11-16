@@ -1,0 +1,1180 @@
+{
+  "academic_year": 2027,
+  "curriculum": "KSSR (Semakan 2017)",
+  "school_type": "SJKC",
+  "subject": "Sains",
+  "year": 4,
+  "state": "W.P. Kuala Lumpur",
+  "calendar_group": "B",
+  "time_allocation_hours": 64,
+  "calendar_model": "Cadangan 64 PdP × 60 minit untuk W.P. Kuala Lumpur, Kumpulan B. Laraskan mengikut jadual sekolah.",
+  "calendar_excluded_windows": [
+    [
+      "2027-03-06",
+      "2027-03-14"
+    ],
+    [
+      "2027-05-22",
+      "2027-06-06"
+    ],
+    [
+      "2027-08-28",
+      "2027-09-05"
+    ]
+  ],
+  "additional_calendar_exclusions": [
+    "2027-01-22",
+    "2027-02-01",
+    "2027-02-05",
+    "2027-02-08",
+    "2027-02-09",
+    "2027-02-10",
+    "2027-02-11",
+    "2027-02-12",
+    "2027-02-24",
+    "2027-05-17",
+    "2027-05-18",
+    "2027-05-19",
+    "2027-05-20",
+    "2027-05-21",
+    "2027-06-07",
+    "2027-06-08",
+    "2027-08-16",
+    "2027-08-31",
+    "2027-09-16",
+    "2027-10-27",
+    "2027-10-28",
+    "2027-10-29"
+  ],
+  "sources": {
+    "dskp": "https://anyflip.com/zkumo/wfmr/basic",
+    "rpt_2026": "https://www.scribd.com/document/1031395589/RPT-sn4",
+    "textbook": [
+      "https://anyflip.com/lvbkv/tqlu/basic/",
+      "https://anyflip.com/lvbkv/tqlu/basic/51-100",
+      "https://anyflip.com/lvbkv/tqlu/basic/101-150",
+      "https://anyflip.com/lvbkv/tqlu/basic/151-196"
+    ],
+    "calendar": "https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik",
+    "public_holidays": "https://kalendarmy.com/cuti-umum/w-p-kuala-lumpur/2027/",
+    "time_allocation": "https://www.scribd.com/document/370247315/1-2-SPI-Bil-8-2016-Perubahan-Jadual-KSSR-Semakan"
+  },
+  "lessons": [
+    {
+      "pdp": 1,
+      "date": "2027-01-12",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "用感官和工具观察",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1"
+      ],
+      "textbook_pages": "2–4",
+      "focus": "用感官及合适工具描述可见变化，区分观察结果与解释。"
+    },
+    {
+      "pdp": 2,
+      "date": "2027-01-14",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "分类并比较",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2"
+      ],
+      "textbook_pages": "2–4",
+      "focus": "根据相同特征分组，并比较两组物体的异同。"
+    },
+    {
+      "pdp": 3,
+      "date": "2027-01-19",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "测量和应用数目",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.3"
+      ],
+      "textbook_pages": "3–5",
+      "focus": "选择标准单位记录两项读数，说明如何正确使用测量工具。"
+    },
+    {
+      "pdp": 4,
+      "date": "2027-01-21",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "作出推断与预测",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.4",
+        "1.1.5"
+      ],
+      "textbook_pages": "5–7",
+      "focus": "从记录提出一个推断，并根据证据预测下一次观察的结果。"
+    },
+    {
+      "pdp": 5,
+      "date": "2027-01-26",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "沟通与按时间排序",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.6",
+        "1.1.7"
+      ],
+      "textbook_pages": "6–8",
+      "focus": "把三次观察按时间排序，以表格呈现并解释变化。"
+    },
+    {
+      "pdp": 6,
+      "date": "2027-02-02",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "诠释资料和操作性定义",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.8",
+        "1.1.9"
+      ],
+      "textbook_pages": "8–10",
+      "focus": "指出数据中的变化趋势，再用可观察的条件定义所研究的现象。"
+    },
+    {
+      "pdp": 7,
+      "date": "2027-02-04",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "控制变数和提出假设",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.10",
+        "1.1.11"
+      ],
+      "textbook_pages": "10–12",
+      "focus": "定出操纵、反应及固定变数，写出一项可以验证的假设。"
+    },
+    {
+      "pdp": 8,
+      "date": "2027-02-16",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "检验假设并写报告",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.12"
+      ],
+      "textbook_pages": "11–14",
+      "focus": "进行公平测试，记录结果并说明结果是否支持假设。"
+    },
+    {
+      "pdp": 9,
+      "date": "2027-02-23",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "辨认呼吸器官",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "textbook_pages": "18–19",
+      "focus": "指认人体图中的呼吸器官，标出空气进入和离开的通道。"
+    },
+    {
+      "pdp": 10,
+      "date": "2027-02-25",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "空气流动与气体交换",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "textbook_pages": "19–21",
+      "focus": "在示意图上用箭头标明空气的路径，并说明肺部气体交换。"
+    },
+    {
+      "pdp": 11,
+      "date": "2027-03-02",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "比较吸入和呼出的空气",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.3"
+      ],
+      "textbook_pages": "21–22",
+      "focus": "比较两张气体组成图，说明氧气和二氧化碳的含量变化。"
+    },
+    {
+      "pdp": 12,
+      "date": "2027-03-16",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "胸腔在呼吸时的变化",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.4"
+      ],
+      "textbook_pages": "23–24",
+      "focus": "观察吸气和呼气时的胸腔变化，以图和箭头表示。"
+    },
+    {
+      "pdp": 13,
+      "date": "2027-03-18",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "活动与呼吸率",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.5",
+        "2.1.6"
+      ],
+      "textbook_pages": "25–26",
+      "focus": "记录休息及轻松活动后一分钟内的呼吸次数，用图表汇报。"
+    },
+    {
+      "pdp": 14,
+      "date": "2027-03-23",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "区分排遗和排泄",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "textbook_pages": "27–28",
+      "focus": "分别用一个例子说明消化残渣排出与排泄废物的过程。"
+    },
+    {
+      "pdp": 15,
+      "date": "2027-03-25",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "排泄器官与排泄物",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.2"
+      ],
+      "textbook_pages": "28–29",
+      "focus": "把肺、皮肤和肾与相应排泄物配对。"
+    },
+    {
+      "pdp": 16,
+      "date": "2027-03-30",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "排出废物的重要性",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.3",
+        "2.2.4"
+      ],
+      "textbook_pages": "30–31",
+      "focus": "用图或短讲说明为什么人体需要排出不同类别的废物。"
+    },
+    {
+      "pdp": 17,
+      "date": "2027-04-06",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "感觉器官与外来刺激",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.1"
+      ],
+      "textbook_pages": "32–33",
+      "focus": "从情境图找出刺激、感官及作出反应的身体部位。"
+    },
+    {
+      "pdp": 18,
+      "date": "2027-04-08",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "解释反应及其作用",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.2",
+        "2.3.3"
+      ],
+      "textbook_pages": "33–35",
+      "focus": "用两个日常情境解释人如何作出反应，推断其中一种反应的作用。"
+    },
+    {
+      "pdp": 19,
+      "date": "2027-04-13",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "感官保健与汇报",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.4",
+        "2.3.5"
+      ],
+      "textbook_pages": "35–38",
+      "focus": "制作一张对照卡，说明一项影响感官的习惯和一种保护做法。"
+    },
+    {
+      "pdp": 20,
+      "date": "2027-04-20",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "动物",
+      "topic": "辨认动物的呼吸器官",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "textbook_pages": "42–44",
+      "focus": "根据图卡指认动物使用的呼吸器官，并标出两种不同的例子。"
+    },
+    {
+      "pdp": 21,
+      "date": "2027-04-22",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "动物",
+      "topic": "按呼吸器官分类",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.2"
+      ],
+      "textbook_pages": "44–45",
+      "focus": "为动物图卡分类并说明如何判断所属组别。"
+    },
+    {
+      "pdp": 22,
+      "date": "2027-04-27",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "动物",
+      "topic": "有多种呼吸器官的动物",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.3",
+        "3.1.4"
+      ],
+      "textbook_pages": "46–47",
+      "focus": "用一张示意图解释青蛙如何利用不止一种呼吸器官。"
+    },
+    {
+      "pdp": 23,
+      "date": "2027-05-04",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "动物",
+      "topic": "脊椎动物与无脊椎动物",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1",
+        "3.2.2"
+      ],
+      "textbook_pages": "48–49",
+      "focus": "根据是否有脊椎分类，给每组补充两个例子。"
+    },
+    {
+      "pdp": 24,
+      "date": "2027-05-06",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "动物",
+      "topic": "五类脊椎动物的特征",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.3"
+      ],
+      "textbook_pages": "49–54",
+      "focus": "根据各类别的专有特征把动物归类，并用一个特征解释分类。"
+    },
+    {
+      "pdp": 25,
+      "date": "2027-05-11",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "动物",
+      "topic": "汇报脊椎动物的观察",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.4"
+      ],
+      "textbook_pages": "54–56",
+      "focus": "用对照表整理两类脊椎动物的异同，口头说明归类理由。"
+    },
+    {
+      "pdp": 26,
+      "date": "2027-06-09",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "植物",
+      "topic": "观察植物对刺激的反应",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1"
+      ],
+      "textbook_pages": "60–61",
+      "focus": "观察含羞草或发芽植物的资料，说出它们怎样对刺激作出反应。"
+    },
+    {
+      "pdp": 27,
+      "date": "2027-06-10",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "植物",
+      "topic": "刺激与反应部位",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.2"
+      ],
+      "textbook_pages": "60–63",
+      "focus": "把叶、根和茎与其对光、水或触碰的反应配对。"
+    },
+    {
+      "pdp": 28,
+      "date": "2027-06-15",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "植物",
+      "topic": "研究植物的反应",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.3",
+        "4.1.4"
+      ],
+      "textbook_pages": "62–66",
+      "focus": "记录植物在两种条件下反应的位置，用标注图呈现结果。"
+    },
+    {
+      "pdp": 29,
+      "date": "2027-06-17",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "植物",
+      "topic": "光合作用的定义",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "textbook_pages": "67",
+      "focus": "用自己的话说明绿色植物怎样制造食物。"
+    },
+    {
+      "pdp": 30,
+      "date": "2027-06-22",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "植物",
+      "topic": "光合作用的条件和原料",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.2"
+      ],
+      "textbook_pages": "68–69",
+      "focus": "用流程图分别标出水、二氧化碳，以及光与叶绿素的作用。"
+    },
+    {
+      "pdp": 31,
+      "date": "2027-06-29",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "植物",
+      "topic": "光合作用的产物",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.3"
+      ],
+      "textbook_pages": "69–71",
+      "focus": "根据图示辨认糖和氧气，并说明植物如何利用或储存所制造的食物。"
+    },
+    {
+      "pdp": 32,
+      "date": "2027-07-01",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "植物",
+      "topic": "光合作用对生物的重要性",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.4",
+        "4.2.5"
+      ],
+      "textbook_pages": "71–74",
+      "focus": "用图解说明光合作用如何提供食物与氧气，并解释其中一个例子。"
+    },
+    {
+      "pdp": 33,
+      "date": "2027-07-06",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 5,
+      "unit": "光的特性",
+      "topic": "光沿着直线传播",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1"
+      ],
+      "textbook_pages": "78–79",
+      "focus": "排列带孔卡片，用观察说明光通过时的路线。"
+    },
+    {
+      "pdp": 34,
+      "date": "2027-07-13",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 5,
+      "unit": "光的特性",
+      "topic": "材料与影子",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.2"
+      ],
+      "textbook_pages": "80–81",
+      "focus": "比较透明、半透明和不透明材料所形成的影子并记录差异。"
+    },
+    {
+      "pdp": 35,
+      "date": "2027-07-15",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 5,
+      "unit": "光的特性",
+      "topic": "影子的大小和形状",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.3",
+        "5.1.4"
+      ],
+      "textbook_pages": "81–83",
+      "focus": "改变光源或物体的位置，记录影子大小或形状，并用图概括结果。"
+    },
+    {
+      "pdp": 36,
+      "date": "2027-07-20",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 5,
+      "unit": "光的特性",
+      "topic": "观察光的反射",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.1"
+      ],
+      "textbook_pages": "84–85",
+      "focus": "用镜子改变光束的方向，指出入射光和反射光。"
+    },
+    {
+      "pdp": 37,
+      "date": "2027-07-27",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 5,
+      "unit": "光的特性",
+      "topic": "反射的射线图和用途",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.2",
+        "5.2.3",
+        "5.2.4"
+      ],
+      "textbook_pages": "85–88",
+      "focus": "用箭头绘出镜面反射的路线，并解释一种日常用途。"
+    },
+    {
+      "pdp": 38,
+      "date": "2027-07-29",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 5,
+      "unit": "光的特性",
+      "topic": "观察光的折射",
+      "sk": [
+        "5.3"
+      ],
+      "sp": [
+        "5.3.1",
+        "5.3.2"
+      ],
+      "textbook_pages": "89–92",
+      "focus": "观察水中物体看似弯曲或偏移的情况，说出发生的位置。"
+    },
+    {
+      "pdp": 39,
+      "date": "2027-08-03",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 5,
+      "unit": "光的特性",
+      "topic": "彩虹的形成与解释",
+      "sk": [
+        "5.3"
+      ],
+      "sp": [
+        "5.3.3",
+        "5.3.4"
+      ],
+      "textbook_pages": "92–95",
+      "focus": "根据实验或示意图标明白光分成多种颜色时发生的变化。"
+    },
+    {
+      "pdp": 40,
+      "date": "2027-08-05",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "声音",
+      "topic": "振动产生声音",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.1"
+      ],
+      "textbook_pages": "100–102",
+      "focus": "观察发声物的变化，说明停止振动时声音如何改变。"
+    },
+    {
+      "pdp": 41,
+      "date": "2027-08-10",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "声音",
+      "topic": "声音传播的方向",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.2"
+      ],
+      "textbook_pages": "102–103",
+      "focus": "比较不同方向是否听见同一声源，并用箭头画出传播方向。"
+    },
+    {
+      "pdp": 42,
+      "date": "2027-08-17",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "声音",
+      "topic": "声音反射",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.3"
+      ],
+      "textbook_pages": "104–105",
+      "focus": "说明回声如何产生，并举出一个运用声音反射的例子。"
+    },
+    {
+      "pdp": 43,
+      "date": "2027-08-19",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "声音",
+      "topic": "乐音噪音及改善方法",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.4",
+        "6.1.5"
+      ],
+      "textbook_pages": "106–108",
+      "focus": "比较两个声音场景，并提出一个能减少噪音的做法。"
+    },
+    {
+      "pdp": 44,
+      "date": "2027-08-24",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 7,
+      "unit": "能",
+      "topic": "能的定义和来源",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.1",
+        "7.1.2"
+      ],
+      "textbook_pages": "112–113",
+      "focus": "说出能使物体发生变化的例子，并列出不同来源。"
+    },
+    {
+      "pdp": 45,
+      "date": "2027-09-07",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 7,
+      "unit": "能",
+      "topic": "辨认能的形式",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.3"
+      ],
+      "textbook_pages": "114–117",
+      "focus": "为日常物品的工作情境配对能的形式，并解释一项选择。"
+    },
+    {
+      "pdp": 46,
+      "date": "2027-09-09",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 7,
+      "unit": "能",
+      "topic": "能的转换",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.4"
+      ],
+      "textbook_pages": "118–120",
+      "focus": "为一个常用装置画出能量转换图，并标注输入和输出。"
+    },
+    {
+      "pdp": 47,
+      "date": "2027-09-14",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 7,
+      "unit": "能",
+      "topic": "说明能量转换的观察",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.5",
+        "7.1.6"
+      ],
+      "textbook_pages": "118–121",
+      "focus": "比较两个能量转换例子，说明观察到的是形式改变。"
+    },
+    {
+      "pdp": 48,
+      "date": "2027-09-21",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 7,
+      "unit": "能",
+      "topic": "可更新和不可更新的能源",
+      "sk": [
+        "7.2"
+      ],
+      "sp": [
+        "7.2.1"
+      ],
+      "textbook_pages": "122–125",
+      "focus": "把太阳、风及燃料等能源分类，并说明分类依据。"
+    },
+    {
+      "pdp": 49,
+      "date": "2027-09-23",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 7,
+      "unit": "能",
+      "topic": "节约能源及交流",
+      "sk": [
+        "7.2"
+      ],
+      "sp": [
+        "7.2.2",
+        "7.2.3"
+      ],
+      "textbook_pages": "125–127",
+      "focus": "设计两项节能做法，并向同伴说明它们怎样影响能源使用。"
+    },
+    {
+      "pdp": 50,
+      "date": "2027-09-28",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "材料",
+      "topic": "材料与来源",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1"
+      ],
+      "textbook_pages": "134–139",
+      "focus": "把木材、羊毛、金属和塑料与来源及物品配对。"
+    },
+    {
+      "pdp": 51,
+      "date": "2027-10-05",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "材料",
+      "topic": "按材料来源分类",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.2",
+        "8.1.3"
+      ],
+      "textbook_pages": "139–141",
+      "focus": "用图表给日常物品分类，向同伴解释一个由多种材料组成的例子。"
+    },
+    {
+      "pdp": 52,
+      "date": "2027-10-07",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "材料",
+      "topic": "测试材料的性质",
+      "sk": [
+        "8.2"
+      ],
+      "sp": [
+        "8.2.1"
+      ],
+      "textbook_pages": "141–146",
+      "focus": "进行两项性质测试，记录结果并说明采用的测试方法。"
+    },
+    {
+      "pdp": 53,
+      "date": "2027-10-12",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "材料",
+      "topic": "选择材料及制作物品",
+      "sk": [
+        "8.2"
+      ],
+      "sp": [
+        "8.2.2",
+        "8.2.3"
+      ],
+      "textbook_pages": "146–150",
+      "focus": "为制作一个物品选择材料，解释其性质怎样符合用途。"
+    },
+    {
+      "pdp": 54,
+      "date": "2027-10-14",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "材料",
+      "topic": "交流材料测试结果",
+      "sk": [
+        "8.2"
+      ],
+      "sp": [
+        "8.2.4"
+      ],
+      "textbook_pages": "146–150",
+      "focus": "用实验记录和标注图说明为什么不同部位可以选用不同的材料。"
+    },
+    {
+      "pdp": 55,
+      "date": "2027-10-19",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 9,
+      "unit": "地球",
+      "topic": "观察地心引力",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.1"
+      ],
+      "textbook_pages": "154–155",
+      "focus": "释放轻小物体并描述掉落方向，用观察说明地心引力。"
+    },
+    {
+      "pdp": 56,
+      "date": "2027-10-25",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 9,
+      "unit": "地球",
+      "topic": "地心引力及其作用",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.2",
+        "9.1.3"
+      ],
+      "textbook_pages": "155–157",
+      "focus": "在地球仪示意图上画出不同地点的地心引力方向，并解释其作用。"
+    },
+    {
+      "pdp": 57,
+      "date": "2027-10-26",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 9,
+      "unit": "地球",
+      "topic": "地球的自转和公转",
+      "sk": [
+        "9.2"
+      ],
+      "sp": [
+        "9.2.1",
+        "9.2.2"
+      ],
+      "textbook_pages": "158",
+      "focus": "用模型区分自转、公转，说明其方向和所需时间。"
+    },
+    {
+      "pdp": 58,
+      "date": "2027-11-02",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 9,
+      "unit": "地球",
+      "topic": "地球自转产生的现象",
+      "sk": [
+        "9.2"
+      ],
+      "sp": [
+        "9.2.3"
+      ],
+      "textbook_pages": "159–161",
+      "focus": "使用地球仪和光源演示昼夜，比较不同时段的影子。"
+    },
+    {
+      "pdp": 59,
+      "date": "2027-11-09",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 9,
+      "unit": "地球",
+      "topic": "汇报地球自转和公转",
+      "sk": [
+        "9.2"
+      ],
+      "sp": [
+        "9.2.4"
+      ],
+      "textbook_pages": "158–162",
+      "focus": "画出地球的轴和轨道，用两句说明图区分两种运动。"
+    },
+    {
+      "pdp": 60,
+      "date": "2027-11-11",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 10,
+      "unit": "机械",
+      "topic": "杠杆的三个作用点",
+      "sk": [
+        "10.1"
+      ],
+      "sp": [
+        "10.1.1"
+      ],
+      "textbook_pages": "166–167",
+      "focus": "在杠杆模型及一件日常工具上标出支点、动力点和阻力点。"
+    },
+    {
+      "pdp": 61,
+      "date": "2027-11-16",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 10,
+      "unit": "机械",
+      "topic": "杠杆距离和所需的力",
+      "sk": [
+        "10.1"
+      ],
+      "sp": [
+        "10.1.2",
+        "10.1.3"
+      ],
+      "textbook_pages": "168–170",
+      "focus": "改变阻力点至支点的距离，记录结果并结合示意图表达结论。"
+    },
+    {
+      "pdp": 62,
+      "date": "2027-11-23",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 10,
+      "unit": "机械",
+      "topic": "常见简单机械及用途",
+      "sk": [
+        "10.2"
+      ],
+      "sp": [
+        "10.2.1"
+      ],
+      "textbook_pages": "170–177",
+      "focus": "从实例辨认不同类型简单机械，分别说明一项用途。"
+    },
+    {
+      "pdp": 63,
+      "date": "2027-11-25",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 10,
+      "unit": "机械",
+      "topic": "辨认复杂机械",
+      "sk": [
+        "10.2"
+      ],
+      "sp": [
+        "10.2.3",
+        "10.2.4"
+      ],
+      "textbook_pages": "177–180",
+      "focus": "用结构图标出一件复杂机械内的两种简单机械并解释其分工。"
+    },
+    {
+      "pdp": 64,
+      "date": "2027-11-30",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 10,
+      "unit": "机械",
+      "topic": "利用两种机械解决问题",
+      "sk": [
+        "10.2"
+      ],
+      "sp": [
+        "10.2.2",
+        "10.2.4"
+      ],
+      "textbook_pages": "178–183",
+      "focus": "设计包含两种简单机械的模型，演示如何运送一个小物件。"
+    }
+  ]
+}
