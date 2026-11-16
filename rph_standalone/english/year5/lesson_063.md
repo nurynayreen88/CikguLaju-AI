@@ -1,25 +1,16 @@
-# English Year 5 — Lesson 63 (Language Arts 11)
+# English Year 5 Lesson 63 — Language Arts 11
 
-**Status:** DRAF — pending full source audit. **Topic:** And Something Weird Happened. **Main LS:** Language Arts 5.3.1. **Complementary LS:** Writing 4.2.4. **Time:** 60 minutes (suggested).
+**Official SOW topic:** And Something Weird Happened.
+**Official SOW:** Lesson 63, printed p.100. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Language Arts 5.3.1 and Writing 4.2.4.
+**Materials:** And Something Weird Happened by Pamela Rushby, Chapter 4 pp.25–32, the BPK Short Stories Teaching Guidebook, paper and pencils.
+**Learning objectives:** Pupils create an original ice cream and dinosaur inspired by Chapter 4 and describe each creation in a suitable written sentence.
 
-**Materials:** And Something Weird Happened, Pamela Rushby, Chapter 4 pp.25–32; BPK CCL Short Stories Guide. Workbook/audio contents are not independently verified; use only SOW-prescribed resources.
+1. **Set induction (8 min):** Play a brief letter-guessing game with words linked to the chapter. Pupils predict how two of the words might connect to Joel.
+2. **Activity 1 (12 min):** Groups read Chapter 4 and identify what makes Joel’s ice cream unusual. Invite pupils to point to a detail they can include in a quick sketch.
+3. **Activity 2 (15 min):** Pupils sketch an imagined dinosaur linked to the story. The teacher asks pupils to explain which details come from reading and which come from their imagination.
+4. **Activity 3 (17 min):** Pairs invent and name a new ice cream and dinosaur. Each pupil writes a caption for both designs describing a clear feature and reads one caption to a partner.
+5. **Closure (8 min):** Pupils share what they think might happen if Joel met their dinosaur. Partners identify one detail that makes the prediction fit the new design.
 
-**Learning objectives:** Main (Language Arts 5.3.1) — pupils respond imaginatively and intelligibly through creating simple role-plays and simple poems or another appropriate imaginative response in the And Something Weird Happened activities. Complementary (Writing 4.2.4) — pupils describe people, places and objects using suitable statements in the linked writing task.
-
-**Set induction (5 min):** Teacher plays Beat the Teacher with pizza, ice cream and dinosaur.
-
-**Activity 1 (15 min):** Small groups read Chapter 4 together and identify details of Joel's Jelly Baby ice cream and imagined dinosaurs.
-
-**Activity 2 (15 min):** Groups sketch the ice cream and dinosaur based on the story. Pairs invent a different version and give each creation a name and distinctive features.
-
-**Activity 3 (15 min):** Partners describe their inventions using The ice cream is/has… and The dinosaur is/has…; each pair shares its favourite idea.
-
-**PBD (5 min):** Teacher checks that descriptions refer to creations and contain intelligible descriptive details; pupils improve one sentence.
-
-**Closure (5 min):** Pupils predict how Joel will react when the dinosaurs meet him.
-
-**Differentiation:** Use picture prompts and sentence starters; challenge pupils to include contrasts and reasons.
-
-**Verification:** Official Year 5 SOW outline checked; full book, workbook, audio and teacher approval pending before READY.
-
-**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
+**PBD:** Check that the creations extend the story and that each pupil writes one suitable descriptive sentence for each creation.
+**Differentiation:** Provide sentence starters and a word bank. Ask confident pupils to add a reason for one design choice.

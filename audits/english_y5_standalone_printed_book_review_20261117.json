@@ -1,6 +1,6 @@
 {
   "evidence": "audits/english_y5_october_integrated_source_review_20261116.md",
-  "scope": "Standalone Word/PDF source text checked against the cited printed SOW, SB, TB and Workbook activities.",
+  "scope": "Standalone RPH source text checked against the printed SOW and applicable Student’s Book, Teacher’s Book, Workbook or BPK literature teaching guide. Recording content and release approval are separate.",
   "lessons": [
     {
       "lesson": 31,
@@ -57,6 +57,54 @@
     {
       "lesson": 56,
       "source_sha256": "5166846a0ac83ed6a4d4bcf765c3122f1a6aeffa5f246bc494f10e69992ea665"
+    },
+    {
+      "lesson": 57,
+      "source_sha256": "5c7537b30d442fb58bcb405c7cb431ffe26235e422d5ecfe613c82a913e06c11"
+    },
+    {
+      "lesson": 58,
+      "source_sha256": "f753f7d64a44a8effaaeac625bab8a6f800c6b71c19d6a260aceb23d3ce558e6"
+    },
+    {
+      "lesson": 59,
+      "source_sha256": "5263d292e3fbab0f77a58655b537c48c2d8989ca278b715feb34101fa8032c52"
+    },
+    {
+      "lesson": 60,
+      "source_sha256": "d0ac9fe77e6da86697dd2cdad9a0c8fc062f8830aebf3c4dcd61dd3b56d5bb01"
+    },
+    {
+      "lesson": 61,
+      "source_sha256": "80b7b6bbd7cccaa1226034e90baf9f978e71cadc518432c9e30ffa360c8d71f8"
+    },
+    {
+      "lesson": 62,
+      "source_sha256": "1df355430de96cd7d611ac08261433b71f8099115fd01d8068e07cce2c843933"
+    },
+    {
+      "lesson": 63,
+      "source_sha256": "a393bdb622171669f204464341ab010d5d6c3e251653f737adeb0df85bf3b089"
+    },
+    {
+      "lesson": 64,
+      "source_sha256": "2181fa37a1f4eae8f2b572c683647e20e5627f1b82f636add6bc141b3b329141"
+    },
+    {
+      "lesson": 65,
+      "source_sha256": "3834f62fdec41ffd8388bc3d6e9c831fab0ce9d6da5a0ad7e16598556250ad92"
+    },
+    {
+      "lesson": 66,
+      "source_sha256": "30fda0995f8267922b77eb3b6bb5aec04c47e3d8ff8d675a24c681331d76c2cb"
+    },
+    {
+      "lesson": 67,
+      "source_sha256": "7355efd2d49baabd758c538e89c917f7d5b97b8a8ea5e3de222a8f32922a73af"
+    },
+    {
+      "lesson": 68,
+      "source_sha256": "2eb1cd66eda992bb4351768e5b354243a002facde82e0849ac1c666e2e5044b0"
     }
   ]
 }

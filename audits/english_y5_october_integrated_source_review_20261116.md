@@ -75,3 +75,26 @@ SOW Lesson 35 mencetak SK 1.1 bersama SP 1.2.1. [DSKP Year 5, halaman bercetak 2
 | 56 | 93 | 4.3.2 / 2.1.5 | SB 34 teks, SB 35 A1–4 / TB 49 | 29 Ex4, ayat superlatif setempat | — |
 
 Semakan Lesson 53–54 mengesahkan nombor trek dalam sumber bercetak. Kandungan fail rakaman CD1.28–CD1.31 dan penghantaran akaun guru belum disahkan. Semakan ini tidak menambah rekod kelulusan pelepasan.
+
+### Semakan 17 November bagi Lesson 57–68
+
+Sumber Language Arts ialah [panduan BPK bagi ringkasan bab](https://anyflip.com/fwgfi/qjnq/basic) dan [aktiviti susulan mengikut bab](https://anyflip.com/tkejj/sqeb/basic/51-100). Rujukan lain menggunakan SOW, SB, TB dan WB English Plus 1 yang dipautkan di atas.
+
+| Lesson | SOW bercetak | SP utama / pelengkap | Sumber atau aktiviti bercetak | WB pilihan | Trek dalam RPH |
+| --- | ---: | --- | --- | --- | --- |
+| 57 | 94 | 5.3.1 / 3.2.2 | BPK Short Stories, Bab 2–3; bukti bacaan dan lakonan | — | — |
+| 58 | 95 | 1.2.1 / 2.2.1 | SB 94 A2–5 / TB 108, panggilan Holly dan dialog baharu | — | CD3.08–CD3.09 |
+| 59 | 96 | 1.2.5 / 3.2.4 | SB 36 A1–4 / TB 50, kuiz dan podcast kebolehan haiwan | 30 Ex2, kata kerja dalam dialog | CD1.33–CD1.34 |
+| 60 | 97 | 2.1.2 / 4.3.2 | SB 36 A5, 37 A1–3 / TB 50–51, kebolehan haiwan dan pengalaman murid | 30 Ex5, ayat kebolehan haiwan | — |
+| 61 | 98 | 3.2.2 / 4.2.4 | SB 39 A1–5 / TB 53, fakta helang Filipina dan contoh dalam ayat | 33 Ex1, ayat dengan contoh | — |
+| 62 | 99 | 4.3.3 / 3.2.2 | SB 39 A4–6 / TB 53, draf dan semakan risalah | 33 Ex4, rangka fail fakta pilihan | — |
+| 63 | 100 | 5.3.1 / 4.2.4 | BPK Short Stories, Bab 4 (buku cerita pp.25–32 menurut SOW), reka bentuk dan kapsyen | — | — |
+| 64 | 101 | 2.2.1 / 1.2.5 | SB 38 A2–5 / TB 52, dialog meminta izin | 35 Ex7, dialog meminta izin | CD1.36 |
+| 65 | 102 | 1.1.1 / 3.3.1 | SB 40 A1–3 dan A7 / TB 54, kontras bunyi dan fakta haiwan | 34 Ex1, ejaan nama haiwan | CD1.37 |
+| 66 | 103 | 2.2.1 / 4.3.2 | SB 40 A4–6 / TB 54, soalan kebolehan dan dialog Review | 35 Ex5, soalan dan jawapan pendek | — |
+| 67 | 104 | 3.3.1 / 1.2.1 | SB 117 A1–3 / TB 131, idea utama dan bacaan lirik lagu | 34 Ex3, ayat superlatif | CD3.34 |
+| 68 | 105 | 4.3.2 / 1.1.1 | SB 117 A4 / TB 131, ejaan dan bunyi rima | 31 Ex3, bina soalan can | CD3.34 |
+
+Untuk Lesson 58, langkah dialog baharu padan dengan TB p.108 Ex5. Untuk Lesson 66, dialog Review terdapat dalam Ex6 pada TB p.54. Lesson 60 turut menggunakan soalan tentang pengalaman murid untuk SP 2.1.2, seperti dalam RPH bersepadu 59–60. Sumber Language Arts disemak terhadap SOW dan panduan BPK. Nombor halaman buku cerita bagi Lesson 63 dirujuk kepada SOW.
+
+Padanan kandungan CD1.33–CD1.34 tersedia dalam [audit audio](english_y4_y5_october_audio_content_20261117.md). Untuk CD3.08, CD3.09, CD1.36, CD1.37 dan CD3.34, nombor trek disemak dalam buku. Kandungan fail audio tersebut dan penghantaran produksi masih perlu disahkan. Kelulusan pelepasan kekal berasingan.

@@ -1,25 +1,16 @@
-# English Year 5 — Standalone RPH — Lesson 066 (Speaking 12)
+# English Year 5 Lesson 66 — Speaking 12
 
-**Status:** DRAF (SOW activities revised; final visual and teacher QA pending). **Topic:** Wild Life. **Main LS:** 2.2.1. **Complementary LS:** 4.3.2. **Duration:** 60 min, suggested.
+**Official SOW topic:** Wild Life.
+**Official SOW:** Lesson 66, printed p.103. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Speaking 2.2.1 and Writing 4.3.2.
+**Materials:** English Plus 1 SB p.40 Activities 4–6, TB p.54 and Workbook p.35 Exercise 5.
+**Learning objectives:** Pupils ask a suitable follow-up question in a short borrowing exchange and spell two familiar words correctly in independently written questions.
 
-**Language focus:** Wild Life. **Materials (visually cross-checked):** English Plus 1 Student Book p.40 Activities 4–6 (Unit 3 Review); Teacher Book pp.53–54. This is textbook-based Speaking/Consolidation, not BPK literature.
+1. **Set induction (8 min):** Use a short stand-or-sit game with statements about what classmates can and can’t do. Pupils explain one choice.
+2. **Activity 1 (12 min):** Pupils complete SB Activity 4 with true statements and compare with a partner. The teacher shows how an ability statement becomes a question.
+3. **Activity 2 (15 min):** For SB Activity 5, pupils independently write two questions and short answers from the tick and cross cues. Partners check wording and spellings after writing.
+4. **Activity 3 (17 min):** Pupils complete the permission dialogue in SB Activity 6 and practise a polite refusal. Pairs then role-play borrowing a classroom item and ask a follow-up if the first request is refused.
+5. **Closure (8 min):** Pupils say one ability of a family member. If time permits, they write two further questions using Workbook p.35 Exercise 5.
 
-**Learning objectives:** Main (Speaking 2.2.1) — pupils keep interaction going in short exchanges by asking suitable questions in the Wild Life activities. Complementary (Writing 4.3.2) — pupils spell a range of high frequency words accurately in independent writing in the linked writing task.
-
-**Set induction (5 min):** Teacher uses Pre-lesson Task 5: Sit Down, Stand Up. Say true or false sentences about what you can and can’t do. How many did they guess correctly?
-
-**Activity 1 (15 min):** Pupils do p.40 Activity 4. Follow instructions in Teacher’s Book p.54 Exercise 4.
-
-**Activity 2 (15 min):** Pupils do Activity 5. Do number 1 as example. Explain that a cross means the answer is no; a tick means the answer is yes. Check answers. Pupils in pairs read questions and answers as a dialogue.
-
-**Activity 3 (15 min):** Pupils do Activity 6. Follow instructions in Teacher’s Book p.53 Exercise 6. Teacher models polite refusals on the board: 1) I’m afraid I can’t. 2) No, you can’t. 3) I’m sorry but you can’t… 4) No, I can’t. Read aloud. Ask: Which numbers use polite language? Do the questions have yes or no answers? CCE: Values – Explain the opposite of polite is rude. Ask: How do you feel when someone is rude to you? Choose pupils to ask you a question requesting permission. Can I…?
-
-**PBD (5 min):** Teacher records whether each pupil asks an appropriate permission question and gives an intelligible, polite answer, then checks the spelling of two key expressions in the pupil's written exchange.
-
-**Closure (5 min):** Pupils in small groups take turns to say something one of their family members can do and something they can’t do. Explain they can look at Activity 4 for ideas.
-
-**Workbook practice:** Workbook p.30-31, Unit 3 Amazing animals / can for ability practice, Ex1-5. Use as brief follow-up without replacing the SOW tasks.
-
-**Differentiation:** At Steps 3 and 4: Encourage pupils to keep going with dialogue and help them with gestures, smiles or by giving them prompts
-
-**QA:** Workbook mapping is historical QA. Physical book pages, audio content and A4 export not independently verified; not READY.
+**PBD:** Listen for a suitable follow-up in the borrowing exchange and check two target spellings in the independent questions.
+**Differentiation:** Display question frames and two polite responses. Ask confident pupils to suggest an alternative after a refusal.
