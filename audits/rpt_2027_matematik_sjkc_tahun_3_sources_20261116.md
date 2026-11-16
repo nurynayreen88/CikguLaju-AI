@@ -113,5 +113,5 @@ Status HOLD pada PR #828 sementara menunggu kelulusan kandungan dan ujian janaan
 ## Muat turun RPT dan pratonton satu PdP
 
 - Katalog RPT Tahun 3 disambungkan pada calon Telegram dalam PR ini dan pada [PR Web #829](https://github.com/nurynayreen88/CikguLaju-AI/pull/829). Ujian setempat mengesahkan Word/PDF Tahun 2 dan 3, akses berbayar, serta 44 baris A/B. Muka depan Web Tahun 3 mengisi ruang sekolah, guru dan logo. Kesemua 13 halaman isi sepadan secara piksel.
-- Pratonton dalaman RPH mengambil satu PdP daripada dokumen yang sudah dipadankan dengan data 2027. Semakan automatik menjana 96 Word dan 96 PDF, mengesahkan satu PdP setiap fail. Ujian Flask mengesahkan respons sebenar Word/PDF, penolakan tahun/unit/PdP yang tidak sepadan dan pelaksanaan semakan capaian dalaman.
+- Pratonton dalaman RPH mengambil satu PdP daripada dokumen yang sudah dipadankan dengan data 2027. Semakan automatik menjana 96 Word dan 96 PDF, mengesahkan satu PdP setiap fail. Ujian Flask mengesahkan respons sebenar Word/PDF, penolakan tahun/unit/PdP yang tidak sepadan, pengendalian dokumen hilang dan semakan capaian dalaman.
 - Pratonton dalaman belum disambungkan kepada pilihan RPH guru dalam Web dan Telegram. Muat turun RPT melalui akaun guru berbayar sebenar dan kelulusan kandungan masih belum disahkan.

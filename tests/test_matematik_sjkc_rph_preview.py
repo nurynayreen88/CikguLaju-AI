@@ -48,6 +48,18 @@ class MatematikSjkcRphPreviewTest(unittest.TestCase):
             with self.subTest(case=case):
                 self.assertEqual(self.request(**case).status_code, 404)
 
+    def test_missing_selected_document_returns_service_unavailable(self):
+        from pathlib import Path
+        from tempfile import TemporaryDirectory
+
+        with TemporaryDirectory() as tmp:
+            source = Path(tmp)
+            from staging.matematik_sjkc.tahun_3 import rph
+            (source / "year_3_2027.json").write_bytes((rph.ROOT / "year_3_2027.json").read_bytes())
+            with patch.object(rph, "ROOT", source), self.assertLogs(level="ERROR"):
+                response = self.request(format="pdf")
+            self.assertEqual(response.status_code, 503)
+
     def test_word_and_pdf_use_the_same_matching_pdp(self):
         for pdp in (1, 17, 35, 47, 96):
             lesson = lessons()[pdp - 1]

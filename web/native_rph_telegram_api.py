@@ -401,6 +401,9 @@ def create_native_rph_blueprint(runtime):
     @bp.post("/internal/rph/v1/matematik-sjkc/preview")
     def matematik_sjkc_preview():
         from flask import current_app
+        from zipfile import BadZipFile
+
+        from pypdf.errors import PdfReadError
         from staging.matematik_sjkc.tahun_3.rph import resolve, render
 
         allowed, status = _authorized()
@@ -423,7 +426,7 @@ def create_native_rph_blueprint(runtime):
             response = Response(document, mimetype=MIMES[body["format"]])
             response.headers["Content-Disposition"] = f'attachment; filename="{name}"'
             return response
-        except (OSError, ValueError, KeyError):
+        except (OSError, ValueError, KeyError, BadZipFile, PdfReadError):
             current_app.logger.exception("Matematik SJKC RPH preview failed")
             return jsonify({"error": "Matematik SJKC preview unavailable"}), 503
 

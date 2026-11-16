@@ -49,8 +49,9 @@ def _word(lesson, output):
     doc = Document(ROOT / f"{STEM}.docx")
     body = doc.element.body
     groups = [[]]
+    section = body.sectPr
     for element in body:
-        if element is body.sectPr:
+        if element is section:
             continue
         if (element.tag == qn("w:p") and
                 any(br.get(qn("w:type")) == "page" for br in element.iter(qn("w:br")))):
@@ -70,7 +71,7 @@ def _word(lesson, output):
         raise ValueError("Word page does not match requested PdP")
     selected = set(selected)
     for element in list(body):
-        if element is not body.sectPr and element not in selected:
+        if element is not section and element not in selected:
             body.remove(element)
     doc.save(output)
 
@@ -84,9 +85,8 @@ def _pdf(lesson, output):
     page = reader.pages[lesson["pdp"] - 1]
     source_text = page.extract_text()
     marker = f"PdP {lesson['pdp']:03}"
-    normalize = lambda value: re.sub(r"\s+", "", value)
     if (not re.search(rf"\b{marker}\b", source_text)
-            or normalize(lesson["topic"]) not in normalize(source_text)):
+            or "".join(lesson["topic"].split()) not in "".join(source_text.split())):
         raise ValueError("PDF page does not match requested PdP")
     writer = PdfWriter()
     writer.add_page(page)
