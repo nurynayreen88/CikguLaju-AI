@@ -56,6 +56,36 @@ class TelegramRPTTests(unittest.TestCase):
         callback(123, "rpt2027_dlp:science_dlp:1:pdf")
         self.assertEqual(len(self.documents), 21)
 
+    def test_sjkc_paid_users_receive_pdf_and_word_for_each_year(self):
+        from rpt_2027.sjkc.bahasa_cina.documents import document_path
+
+        callback = self.namespace["callback"]
+        callback(123, "rpt2027_sjkc:2:docx")
+        self.assertIn("Akses Terhad", self.messages[-1][1])
+        self.assertEqual(self.documents, [])
+        self.active = True
+        for year in range(2, 7):
+            callback(123, f"rpt2027_year_{year}")
+            buttons = {button["callback_data"]: button["text"]
+                       for row in self.messages[-1][2] for button in row}
+            self.assertIn(f"rpt2027_language:bahasa_cina_sk:{year}", buttons)
+            for fmt in ("pdf", "docx"):
+                key = f"rpt2027_sjkc:{year}:{fmt}"
+                self.assertIn("Bahasa Cina (SJKC)", buttons[key])
+                callback(123, key)
+                self.assertEqual(Path(self.documents[-1][1]), document_path(year, fmt))
+        for key in ("rpt2027_sjkc:1:pdf", "rpt2027_sjkc:6:../pdf", "rpt2027_sjkc:6:zip"):
+            callback(123, key)
+            self.assertIn("tidak sah", self.messages[-1][1])
+        self.assertEqual(len(self.documents), 10)
+
+    def test_sjkc_delivery_requires_telegram_confirmation(self):
+        self.active = True
+        self.namespace["_telegram_delivery_ok_v25279"] = lambda result: False
+        self.namespace["callback"](123, "rpt2027_sjkc:3:pdf")
+        self.assertEqual(len(self.documents), 1)
+        self.assertIn("belum mengesahkan", self.messages[-1][1])
+
     def test_other_callbacks_are_unchanged(self):
         self.assertEqual(self.namespace["callback"](123, "quick"), ("previous", 123, "quick"))
 
