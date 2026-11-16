@@ -41,7 +41,10 @@
     "workbook_2": "https://fliphtml5.com/lwll350595/BAHASA-MELAYU-T2-SJK-BA---JLD-2/BAHASA_MELAYU_T2_SJK_BA_-_JLD_2/",
     "takwim": "https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik",
     "kelepasan": "https://www.kabinet.gov.my/hari-kelepasan-am/",
-    "peruntukan": "https://www.moe.gov.my/index.php/surat-pekeliling-ikhtisas-bilangan-5-tahun-2019-pe"
+    "peruntukan": "https://www.moe.gov.my/index.php/surat-pekeliling-ikhtisas-bilangan-5-tahun-2019-pe",
+    "pkjr": "https://fliphtml5.com/hbtqv/kkcj/PKJR_TAHUN_2/",
+    "pkjr_teacher_guide": "https://fliphtml5.com/zwnvd/vxlv/PKJR_BPG_Tahun_2/",
+    "sivik": "https://www.moe.gov.my/index.php/pelaksanaan-pendidikan-sivik-oleh-kementerian-pendidikan-malaysia"
   },
   "lessons": [
     {
@@ -126,7 +129,13 @@
       "workbook_printed_sp": [
         "3.1.1(i)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 1,
+        "pages": "1–2",
+        "hp": "1.1.2",
+        "focus": "Baca penerangan dan nyatakan fungsi dua komponen keselamatan kenderaan."
+      }
     },
     {
       "pdp": 4,
@@ -266,7 +275,13 @@
       "workbook_printed_sp": [
         "3.1.1(ii)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 2,
+        "pages": "3",
+        "hp": "1.1.2",
+        "focus": "Baca ayat dan bandingkan ciri keselamatan bas dengan kereta."
+      }
     },
     {
       "pdp": 9,
@@ -434,7 +449,12 @@
       "workbook_printed_sp": [
         "4.1.1(i)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "sivik": {
+        "value": "Kasih sayang",
+        "focus": "Gunakan simpulan bahasa untuk menceritakan cara anggota keluarga saling membantu.",
+        "duration_minutes": 60
+      }
     },
     {
       "pdp": 15,
@@ -648,7 +668,13 @@
       "workbook_printed_sp": [
         "3.2.1(ii)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 3,
+        "pages": "4",
+        "hp": "2.2.1",
+        "focus": "Kenal pasti prasarana untuk pejalan kaki dan penunggang basikal daripada petikan."
+      }
     },
     {
       "pdp": 23,
@@ -732,7 +758,12 @@
       "workbook_printed_sp": [
         "1.1.1(iii)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "sivik": {
+        "value": "Hormat-menghormati",
+        "focus": "Lakonkan cara menziarahi jiran dengan sopan dan sebut ayat majmuk tentang tindakan yang menghormati tuan rumah.",
+        "duration_minutes": 60
+      }
     },
     {
       "pdp": 26,
@@ -760,7 +791,13 @@
       "workbook_printed_sp": [
         "2.1.1(iii)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 4,
+        "pages": "5",
+        "hp": "2.2.2",
+        "focus": "Jelaskan fungsi prasarana kepada rakan dan catat penerangan."
+      }
     },
     {
       "pdp": 27,
@@ -844,7 +881,13 @@
       "workbook_printed_sp": [
         "5.1.1(iv)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 5,
+        "pages": "6",
+        "hp": "2.3.2",
+        "focus": "Nyatakan urutan warna lampu isyarat dan fungsinya."
+      }
     },
     {
       "pdp": 30,
@@ -900,7 +943,13 @@
       "workbook_printed_sp": [
         "1.1.2(i)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 6,
+        "pages": "7",
+        "hp": "2.3.2",
+        "focus": "Betulkan ejaan dalam petikan tentang lampu isyarat dan salin bahagian yang dibaiki."
+      }
     },
     {
       "pdp": 32,
@@ -1012,7 +1061,18 @@
       "workbook_printed_sp": [
         "5.1.3(i)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 7,
+        "pages": "8–9",
+        "hp": "2.3.3",
+        "focus": "Padankan tanda isyarat dengan maksudnya, kemudian nyatakan fungsinya."
+      },
+      "sivik": {
+        "value": "Bertanggungjawab",
+        "focus": "Pilih kata adjektif untuk menggambarkan keadaan kelas dan huraikan tanggungjawab setiap ahli kumpulan.",
+        "duration_minutes": 60
+      }
     },
     {
       "pdp": 36,
@@ -1195,7 +1255,13 @@
       "workbook_printed_sp": [
         "3.2.1(iii)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 8,
+        "pages": "10–11",
+        "hp": "2.4.1",
+        "focus": "Baca petikan dan jawab soalan tentang arah lalu lintas sebelum melintas."
+      }
     },
     {
       "pdp": 43,
@@ -1307,7 +1373,13 @@
       "workbook_printed_sp": [
         "2.1.2(iv)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 9,
+        "pages": "12",
+        "hp": "2.4.2",
+        "focus": "Cari perbezaan pada gambar dan terangkan maksud isyarat yang dikenal pasti."
+      }
     },
     {
       "pdp": 47,
@@ -1503,7 +1575,12 @@
       "workbook_printed_sp": [
         "3.2.4(i)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "sivik": {
+        "value": "Kegembiraan",
+        "focus": "Imlak perkataan berkaitan sukan dan kongsi cara mengajak rakan menyertai aktiviti yang menggembirakan.",
+        "duration_minutes": 60
+      }
     },
     {
       "pdp": 54,
@@ -1688,7 +1765,13 @@
       "workbook_printed_sp": [
         "1.1.3(i)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 10,
+        "pages": "13",
+        "hp": "2.4.2",
+        "focus": "Bezakan maksud imej merah dan hijau pada lampu isyarat pejalan kaki."
+      }
     },
     {
       "pdp": 61,
@@ -1772,7 +1855,13 @@
       "workbook_printed_sp": [
         "4.3.3(i)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 11,
+        "pages": "14",
+        "hp": "3.1.2",
+        "focus": "Terangkan akibat tidak memakai tali pinggang keledar berdasarkan gambar."
+      }
     },
     {
       "pdp": 64,
@@ -1828,7 +1917,12 @@
       "workbook_printed_sp": [
         "1.1.3(ii)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "sivik": {
+        "value": "Kasih sayang",
+        "focus": "Tafsir pesanan keselamatan dan jelaskan bagaimana mengingatkan rakan dapat melindungi mereka.",
+        "duration_minutes": 60
+      }
     },
     {
       "pdp": 66,
@@ -1912,7 +2006,13 @@
       "workbook_printed_sp": [
         "4.3.2(i)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 12,
+        "pages": "15",
+        "hp": "3.1.2",
+        "focus": "Baca cerita dan tentukan pernyataan yang menepati peraturan jalan raya."
+      }
     },
     {
       "pdp": 69,
@@ -2080,7 +2180,13 @@
       "workbook_printed_sp": [
         "4.3.1(i)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 13,
+        "pages": "16",
+        "hp": "3.1.2",
+        "focus": "Padankan peraturan jalan raya dengan situasi dalam gambar."
+      }
     },
     {
       "pdp": 75,
@@ -2108,7 +2214,12 @@
       "workbook_printed_sp": [
         "5.1.4(ii)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "sivik": {
+        "value": "Hormat-menghormati",
+        "focus": "Gunakan kata sendi nama untuk menerangkan kedudukan pejalan kaki yang memberi laluan dengan tertib.",
+        "duration_minutes": 60
+      }
     },
     {
       "pdp": 76,
@@ -2160,7 +2271,13 @@
         "volume": 1,
         "page": 79
       },
-      "kind": "susulan_tema"
+      "kind": "susulan_tema",
+      "pkjr": {
+        "activity": 14,
+        "pages": "17–18",
+        "hp": "3.1.2",
+        "focus": "Bina ayat panduan keselamatan berdasarkan gambar dan frasa."
+      }
     },
     {
       "pdp": 78,
@@ -2398,7 +2515,13 @@
       "workbook_printed_sp": [
         "1.1.1(iii)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 15,
+        "pages": "19",
+        "hp": "4.1.1",
+        "focus": "Lengkapkan dan nyanyikan rangkap tentang melintas bersama orang dewasa."
+      }
     },
     {
       "pdp": 87,
@@ -2482,7 +2605,13 @@
       "workbook_printed_sp": [
         "4.3.1(ii)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 16,
+        "pages": "20",
+        "hp": "4.1.1",
+        "focus": "Baca petikan dan lengkapkan ayat tentang cara melintas dengan selamat."
+      }
     },
     {
       "pdp": 90,
@@ -2566,7 +2695,12 @@
       "workbook_printed_sp": [
         "1.1.2(i)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "sivik": {
+        "value": "Bertanggungjawab",
+        "focus": "Jawab soalan tentang cara menggunakan penyangkut tisu bersama dan menjaga peralatan kelas.",
+        "duration_minutes": 60
+      }
     },
     {
       "pdp": 93,
@@ -2729,7 +2863,13 @@
         "volume": 2,
         "page": 18
       },
-      "kind": "susulan_tema"
+      "kind": "susulan_tema",
+      "pkjr": {
+        "activity": 17,
+        "pages": "21",
+        "hp": "4.3.1",
+        "focus": "Susun perkataan untuk menerangkan cara meningkatkan kebolehlihatan ketika hujan atau pada waktu malam."
+      }
     },
     {
       "pdp": 99,
@@ -3001,7 +3141,13 @@
       "workbook_printed_sp": [
         "3.3.1(i)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 18,
+        "pages": "22",
+        "hp": "4.4.1",
+        "focus": "Baca pernyataan dan terangkan tempat sesuai untuk melintas dalam situasi diberikan."
+      }
     },
     {
       "pdp": 109,
@@ -3085,7 +3231,12 @@
       "workbook_printed_sp": [
         "5.1.4(v)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "sivik": {
+        "value": "Kegembiraan",
+        "focus": "Gunakan kata perintah yang santun untuk memberi arahan ketika bermain muzik bersama rakan.",
+        "duration_minutes": 60
+      }
     },
     {
       "pdp": 112,
@@ -3141,7 +3292,13 @@
       "workbook_printed_sp": [
         "2.3.2(ii)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 19,
+        "pages": "23",
+        "hp": "4.4.1",
+        "focus": "Pilih frasa yang sesuai bagi kemudahan dan peraturan pejalan kaki."
+      }
     },
     {
       "pdp": 114,
@@ -3225,7 +3382,13 @@
       "workbook_printed_sp": [
         "5.2.1(iii)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 20,
+        "pages": "24",
+        "hp": "5.1.2",
+        "focus": "Kenal pasti pakaian dan peralatan keselamatan berbasikal serta jelaskan kepentingannya."
+      }
     },
     {
       "pdp": 117,
@@ -3381,7 +3544,13 @@
       "workbook_printed_sp": [
         "2.2.1(iii)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 21,
+        "pages": "25–26",
+        "hp": "5.1.2",
+        "focus": "Dengar cerita dan catat jenis pakaian serta peralatan keselamatan berbasikal."
+      }
     },
     {
       "pdp": 123,
@@ -3409,7 +3578,12 @@
       "workbook_printed_sp": [
         "3.2.2(ii)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "sivik": {
+        "value": "Kasih sayang",
+        "focus": "Tulis jawapan tentang cara memberi galakan kepada rakan yang menyertai permainan bahasa.",
+        "duration_minutes": 60
+      }
     },
     {
       "pdp": 124,
@@ -3512,7 +3686,7 @@
         "2.3.1(ii)"
       ],
       "textbook_page": "122",
-      "textbook_printed_sp": "2.3.1",
+      "textbook_printed_sp": "2.3.1.(ii)",
       "workbook": {
         "volume": 2,
         "page": 49,
@@ -3549,7 +3723,13 @@
       "workbook_printed_sp": [
         "3.2.3"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 22,
+        "pages": "27–28",
+        "hp": "5.1.2 / 5.2.1",
+        "focus": "Baca dialog dan padankan peralatan keselamatan berbasikal dengan fungsi."
+      }
     },
     {
       "pdp": 129,
@@ -3717,7 +3897,13 @@
       "workbook_printed_sp": [
         "3.3.1(ii)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "pkjr": {
+        "activity": 23,
+        "pages": "29–30",
+        "hp": "6.2.1",
+        "focus": "Kenal pasti alat penahan dan tempat duduk yang dinyatakan dalam gambar."
+      }
     },
     {
       "pdp": 135,
@@ -3824,7 +4010,14 @@
         "volume": 2,
         "page": 60
       },
-      "kind": "susulan_tema"
+      "kind": "susulan_tema",
+      "pkjr": {
+        "activity": 24,
+        "pages": "31",
+        "hp": "6.2.2",
+        "focus": "Baca petikan dan jelaskan fungsi jenis alat penahan mengikut penumpang.",
+        "pupil_book_printed_hp": "6.6.2"
+      }
     },
     {
       "pdp": 139,
@@ -3847,7 +4040,12 @@
         "volume": 2,
         "page": 62
       },
-      "kind": "susulan_tema"
+      "kind": "susulan_tema",
+      "sivik": {
+        "value": "Hormat-menghormati",
+        "focus": "Pilih ayat tanya yang santun untuk meminta maklumat tentang bahan bacaan dan lawatan.",
+        "duration_minutes": 60
+      }
     },
     {
       "pdp": 140,
@@ -4319,7 +4517,12 @@
       "workbook_printed_sp": [
         "5.3.1(iii)"
       ],
-      "kind": "unit"
+      "kind": "unit",
+      "sivik": {
+        "value": "Bertanggungjawab",
+        "focus": "Bina ayat tanya untuk menyemak maklumat produk sebelum membuat keputusan pembelian.",
+        "duration_minutes": 60
+      }
     },
     {
       "pdp": 157,
