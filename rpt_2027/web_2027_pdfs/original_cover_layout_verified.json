@@ -328,5 +328,53 @@
       697,
       255
     ]
+  },
+  "sjkc_bahasa_cina": {
+    "version": 1,
+    "status": "SJKC_BAHASA_CINA_PDF_COVER",
+    "page_width": 841.89,
+    "page_height": 595.304,
+    "tolerance_pt": 0.5,
+    "identity_background_rgb": [
+      1,
+      1,
+      1
+    ],
+    "logo_background_rgb": [
+      0.9254901960784314,
+      0.9568627450980393,
+      0.9529411764705882
+    ],
+    "logo_interior_top_left": [
+      361,
+      57,
+      481,
+      81
+    ],
+    "logo_image_safe_top_left": [
+      385,
+      40,
+      457,
+      101
+    ],
+    "school_row_top_left": [
+      43,
+      308,
+      363,
+      337
+    ],
+    "teacher_row_top_left": [
+      372,
+      308,
+      641,
+      337
+    ],
+    "source_sha256_by_subject_year": {
+      "bahasa_cina_sjkc:2": "d1f377f199c5bd55dba19e19b9f68dd144911cf424fa642ea90f042d894197cd",
+      "bahasa_cina_sjkc:3": "e7d94e8c5813217e635667c0836b2ce20224be0acbe83083f443380afba9831e",
+      "bahasa_cina_sjkc:4": "945b7c0a471ec4de01ffc03eecdc34f332c00610ea8f7cc9798792c785f670fc",
+      "bahasa_cina_sjkc:5": "574be5a00fb22e4c8a23b251a41a67130da99bdf46cf207365fead155ad026cc",
+      "bahasa_cina_sjkc:6": "474a21d18848e97d03d4e9b62779c6820b87d40ec8ba56a404acd9d534fdaaec"
+    }
   }
 }

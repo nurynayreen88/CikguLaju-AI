@@ -77,9 +77,17 @@
   }
   function validatedLayout(layout,key,hash){
     const dlp = /^(science|mathematics)_dlp:([2-6])$/.exec(key);
-    if(dlp)layout = layout?.[`dlp_year${dlp[2]}`];
-    const status = dlp ? `DLP_YEAR_${dlp[2]}_PDF_COVER` : "ORIGINAL_COVER_TEMPLATE_LOCKED_TO_56_SOURCE_PDF_SHA256";
-    const count = dlp ? 2 : 56;
+    let status = "ORIGINAL_COVER_TEMPLATE_LOCKED_TO_56_SOURCE_PDF_SHA256";
+    let count = 56;
+    if(dlp){
+      layout = layout?.[`dlp_year${dlp[2]}`];
+      status = `DLP_YEAR_${dlp[2]}_PDF_COVER`;
+      count = 2;
+    }else if(/^bahasa_cina_sjkc:[2-6]$/.test(key)){
+      layout = layout?.sjkc_bahasa_cina;
+      status = "SJKC_BAHASA_CINA_PDF_COVER";
+      count = 5;
+    }
     if(!layout||layout.version!==1||
        layout.status!==status||
        Object.keys(layout.source_sha256_by_subject_year||{}).length!==count||
@@ -87,7 +95,10 @@
        !/^[a-f0-9]{64}$/.test(hash)||
        !Array.isArray(layout.identity_background_rgb)||
        layout.identity_background_rgb.length!==3||
-       !layout.identity_background_rgb.every(x=>typeof x==="number"&&x>=0&&x<=1)){
+       !layout.identity_background_rgb.every(x=>typeof x==="number"&&x>=0&&x<=1)||
+       (layout.logo_background_rgb!==undefined&&
+        (!Array.isArray(layout.logo_background_rgb)||layout.logo_background_rgb.length!==3||
+         !layout.logo_background_rgb.every(x=>typeof x==="number"&&x>=0&&x<=1)))){
       throw Error("Templat muka depan asal tidak sepadan dengan PDF RPT. Fail asal tidak diubah.");
     }
     for(const field of ["logo_interior_top_left","logo_image_safe_top_left",
@@ -115,11 +126,11 @@
       const scale=Math.min(maxW/image.width,maxH/image.height);
       if(!Number.isFinite(scale)||scale<=0)throw Error("Dimensi logo tidak sah.");
       const width=image.width*scale,height=image.height*scale;
-      // Cover only the words "LOGO SEKOLAH" inside its original frame,
-      // leaving all four outer frame lines entirely untouched.
+      // Replace the logo placeholder with its native cover background.
+      const background=layout.logo_background_rgb??[1,1,1];
       page.drawRectangle({x:interior[0],y:size.height-interior[3],
         width:interior[2]-interior[0],height:interior[3]-interior[1],
-        color:PDF.rgb(1,1,1)});
+        color:PDF.rgb(...background)});
       page.drawImage(image,{
         x:(region[0]+region[2]-width)/2,
         y:size.height-(region[1]+region[3]+height)/2,

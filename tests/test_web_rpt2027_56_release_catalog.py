@@ -69,6 +69,47 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
                     self.assertIn("attachment", response.headers["Content-Disposition"])
                 self.assertEqual(self.client.get(f"/api/rpt/2027/all/{code}/1.pdf").status_code, 404)
 
+    def test_sjkc_rpt_uses_exact_pdf_and_existing_account_policy(self):
+        folder = Path(__file__).resolve().parents[1] / "rpt_2027" / "sjkc" / "bahasa_cina"
+        destination = self.root / "sjkc" / "bahasa_cina"
+        destination.mkdir(parents=True)
+        layout = json.loads((folder.parents[1] / "web_2027_pdfs" /
+                             "original_cover_layout_verified.json").read_text("utf-8"))
+        hashes = layout["sjkc_bahasa_cina"]["source_sha256_by_subject_year"]
+        sources = {}
+        for year in range(2, 7):
+            path = folder / f"RPT_2027_Bahasa_Cina_SJKC_Tahun_{year}.pdf"
+            sources[year] = path.read_bytes()
+            (destination / path.name).write_bytes(sources[year])
+        with (patch("web.rpt_2027_all_http._account", return_value=({"authenticated": True}, None)),
+              patch("web.rpt_2027_all_http._has_paid_access") as paid):
+            paid.return_value = False
+            data = self.client.get("/api/rpt/2027/catalog").get_json()
+            self.assertEqual(data["available_rpt"], 61)
+            self.assertEqual(data["total_rpt"], 61)
+            self.assertEqual(len(expected_pairs()), 56)
+            subjects = {s["code"]: s for s in data["subjects"]}
+            self.assertTrue(subjects["bahasa_cina_sk"]["years"][0]["coming_soon"])
+            sjkc = subjects["bahasa_cina_sjkc"]
+            self.assertIn("Kuala Lumpur", sjkc["label"])
+            self.assertEqual([item["year"] for item in sjkc["years"]], list(range(2, 7)))
+            self.assertTrue(all(item["download_enabled"] for item in sjkc["years"]))
+            for entitled in (False, True):
+                paid.return_value = entitled
+                for year, source in sources.items():
+                    response = self.client.get(f"/api/rpt/2027/all/bahasa_cina_sjkc/{year}.pdf")
+                    with response:
+                        self.assertEqual(response.status_code, 200)
+                        self.assertEqual(response.data, source)
+                        self.assertEqual(response.headers["X-RPT-Personalization-Allowed"], str(int(entitled)))
+                        self.assertEqual(response.headers["X-RPT-Source-SHA256"],
+                                         hashes[f"bahasa_cina_sjkc:{year}"])
+                        self.assertIn(f"Tahun_{year}.pdf", response.headers["Content-Disposition"])
+            self.assertEqual(self.client.get("/api/rpt/2027/all/bahasa_cina_sjkc/1.pdf").status_code, 404)
+            self.assertEqual(self.client.get("/api/rpt/2027/all/bahasa_cina_sk/2.pdf").status_code, 404)
+        with patch("web.rpt_2027_all_http._account", return_value=(None, ("Log masuk", 401))):
+            self.assertEqual(self.client.get("/api/rpt/2027/all/bahasa_cina_sjkc/2.pdf").status_code, 401)
+
     def test_all_56_files_and_25_language_choices_in_preparation(self):
         data=catalog_data(root=self.root,allowed=True)
         self.assertEqual(len(data["subjects"]),17)

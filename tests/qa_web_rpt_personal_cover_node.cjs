@@ -89,6 +89,23 @@ async function main(){
     return {width:text.length*size*.56};
   }};
   assert.deepStrictEqual(fitText(context,"SEKOLAH LAJU",465,27,2).lines,["SEKOLAH LAJU"]);
+  const sjkcDir=path.join(root,"..","sjkc","bahasa_cina");
+  for(const year of [2,3,4,5,6]){
+    const key="bahasa_cina_sjkc:"+year;
+    const bytes=fs.readFileSync(path.join(sjkcDir,`RPT_2027_Bahasa_Cina_SJKC_Tahun_${year}.pdf`));
+    const sha=crypto.createHash("sha256").update(bytes).digest("hex");
+    assert.throws(()=>validatedLayout(layout,key,"0".repeat(64)));
+    const template=validatedLayout(layout,key,sha);
+    const original=await PDF.PDFDocument.load(bytes);
+    const pages=original.getPageCount();
+    const filled=await fillOriginalCover(original,{
+      display_name:"Cikgu Contoh",
+      school_name:"SJK(C) Sekolah Contoh"
+    },tinyPng,template,{PDFLib:PDF,textPng:async()=>tinyPng});
+    assert.ok(filled.hasLogo&&filled.hasSchool&&filled.hasTeacher);
+    const stamped=await PDF.PDFDocument.load(await original.save({useObjectStreams:false}));
+    assert.strictEqual(stamped.getPageCount(),pages);
+  }
   console.log("ORIGINAL_COVER_56_REAL_PDFS_ZERO_EXTRA_PAGES_SUCCESS",files,
     "PDFs",callCount,"label fills",outputs,"render samples");
 }

@@ -16,6 +16,7 @@ from flask import Blueprint, jsonify, send_file, request
 from primary_language_subjects import PRIMARY_LANGUAGE_SUBJECTS
 from web.english_rpt_2027_http import _account, _has_paid_access
 from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
+from rpt_2027.sjkc.bahasa_cina import documents as sjkc
 
 ROOT = Path(__file__).resolve().parents[1] / "rpt_2027"
 YEARS = tuple(range(2,7))
@@ -190,6 +191,24 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
         if entries:
             subjects.append({"code": code, "label": f"{label} (DLP)", "years": entries})
             dlp_count += len(entries)
+    sjkc_entries = [
+        {
+            "year": year,
+            "pdf_ready": True,
+            "status": "TERSEDIA",
+            "download_enabled": bool(allowed),
+            "note": f"{sjkc.CALENDAR}. Laraskan tarikh mengikut jadual sekolah.",
+            "is_draft": False,
+        }
+        for year in sjkc.PUBLISHED_YEARS
+        if sjkc.document_path(year, root=Path(root) / "sjkc" / "bahasa_cina") is not None
+    ]
+    if sjkc_entries:
+        subjects.append({
+            "code": sjkc.SUBJECT,
+            "label": f"{sjkc.LABEL} · Kuala Lumpur",
+            "years": sjkc_entries,
+        })
     for code, label in PRIMARY_LANGUAGE_SUBJECTS.items():
         subjects.append({
             "code": code,
@@ -210,10 +229,10 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
         "allowed":bool(allowed),
         "personalization_allowed":bool(personalization_allowed),
         "subjects":subjects,
-        "total_rpt":56+dlp_count,
+        "total_rpt":56+dlp_count+len(sjkc_entries),
         "total_display_choices":sum(len(item["years"]) for item in subjects),
         "year1_coming_soon":10,
-        "available_rpt":available+dlp_count,
+        "available_rpt":available+dlp_count+len(sjkc_entries),
         "note":"Tahun 1 KP2027 belum boleh dimuat turun. RPT Tahun 2–6 boleh dimuat turun oleh semua pengguna log masuk; nama dan logo hanya dicetak untuk akses berbayar yang masih aktif.",
     }
 
@@ -239,10 +258,13 @@ def create_all_rpt_blueprint(*,root=ROOT):
         account,error=_account()
         if error is not None:
             return error
-        if subject in DLP_SUBJECTS:
-            path = document_path(subject, year, root=Path(root)/"dlp")
+        if subject in DLP_SUBJECTS or subject == sjkc.SUBJECT:
+            if subject == sjkc.SUBJECT:
+                path = sjkc.document_path(year, root=Path(root) / "sjkc" / "bahasa_cina")
+            else:
+                path = document_path(subject, year, root=Path(root) / "dlp")
             if path is None:
-                return jsonify({"error":"Pilihan RPT DLP tidak tersedia"}),404
+                return jsonify({"error": "Pilihan RPT tidak tersedia"}), 404
             response = send_file(path, mimetype="application/pdf", as_attachment=True,
                                  download_name=path.name, conditional=False)
             response.headers["X-RPT-Source-SHA256"] = hashlib.sha256(path.read_bytes()).hexdigest()
