@@ -1,23 +1,16 @@
-# English Year 5 — Standalone RPH — Lesson 090 (Speaking 16)
+# English Year 5 Lesson 90 — Speaking 16
 
-**Status:** DRAF — SOW-aligned, awaiting source QA. **Topic:** Food and health. **Main LS:** 2.2.1. **Complementary LS:** 4.3.1. **Duration:** 60 minutes (suggested).
+**Official SOW topic:** Food and health.
+**Official SOW:** Lesson 90, printed p.129. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Speaking 2.2.1 and Writing 4.3.1.
+**Materials:** English Plus 1 SB pp.52–53 Activities 4–6 and Finished?, TB p.67, CD2.04, a preferences chart and Workbook p.44 Exercise 4.
+**Learning objectives:** Pupils sustain a short food-preference exchange and write two short menu descriptions with correctly punctuated lists and a question.
 
-**Language focus:** I like… I quite / really like... I don’t mind… I don’t like… I really don’t like… I hate. **Materials:** English Plus 1 Student’s Book Activities 4–6 p.52 and 53 Teacher’s Book p.67; Audio: CD2.04.
+1. **Set induction (8 min):** Elicit food items from the previous lesson and ask pupils how strongly they like two of them.
+2. **Activity 1 (12 min):** Play CD2.04 for SB Activity 4. Pupils note the foods the speakers like. In Activity 5, replay selected sections to check the preference phrases.
+3. **Activity 2 (15 min):** In SB Activity 6, partners exchange preferences. Each asks a follow-up about a food, a reason or an alternative choice.
+4. **Activity 3 (17 min):** Use Finished? for pupils to write a preferred and a less appealing lunch in short descriptions. Include a capital, a full stop, commas between list items and one question for a partner.
+5. **Closure (8 min):** Pairs read the question and respond. If time permits, pupils add a lunchbox idea using Workbook p.44 Exercise 4.
 
-**Learning objectives:** Main (Speaking 2.2.1) — pupils keep interaction going in short exchanges by asking suitable questions in the Food and health activities. Complementary (Writing 4.3.1) — pupils use capital letters, full stops, commas in lists and question marks in independent writing at discourse level in the linked writing task.
-
-**Set induction (5 min):** Brainstorm food items from previous lesson. Write on board and pupils put one hand up if they like the food, two hands if they really like it.
-
-**Activity 1 (15 min):** Pupils do Activity 4, CD2.04. Hand out worksheet for each pupil to complete. Explain they write in the table the food that the four students like. Follow instructions in Teacher’s Book p.67 Exercise 4. CCE – Science and Technology– Pupils look at list of food in table again. Ask: Which food is good for your health? (chicken salad, fish, vegetable soup).
-
-**Activity 2 (15 min):** Pupils do Activity 5, CD2.04. Follow the instructions in Teacher’s Book p.67 Exercise 5. Pupils read ‘School Food’ texts again. They find the person who doesn’t like vegetables; (girl from UK); who really likes pasta, chicken pieces and water (girl from Spain).
-
-**Activity 3 (15 min):** Pupils in pairs do Activity 6, Use it!. Follow instructions in Teacher’s Book p.67 Exercise 6. For the Finished? extension, divide the class into two halves, A and B. Pupils in A write a perfect school lunch; pupils in B write a horrible school lunch. When finished they find a partner from other half of class and compare lunches. Choose pairs to read different types of lunch. Ask: Which is the most perfect and the most horrible?
-
-**PBD (5 min):** Teacher observes whether pupils keep a pair exchange going using an appropriate food-preference phrase and a follow-up question. Pupils write one correctly punctuated sentence about a preferred lunch and improve it after feedback.
-
-**Closure (5 min):** Do Post-lesson Task 9: What about Me? Choose food items and pupils ask about your likes and dislikes.
-
-**Workbook practice (mapped):** p.44,51, Unit 5 food preferences + review speaking/order language, Ex1-4 / Ex6. Use briefly; do not replace SOW tasks.
-
-**Differentiation:** Give suitable vocabulary or sentence prompts; challenge confident pupils with independent responses. **Final check:** Full printed-page and audio-content audit, A4 export and teacher approval pending; not READY.
+**PBD:** Listen for a follow-up that keeps the exchange going and check the question mark, list commas, capitals and full stops in each pupil’s writing.
+**Differentiation:** Display a preference scale and a punctuation example. Ask confident pupils to follow up on a partner’s reason.

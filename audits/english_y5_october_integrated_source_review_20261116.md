@@ -120,3 +120,27 @@ Sumber Learning World menggunakan SOW serta buku English Plus 1 yang dipautkan d
 | 82 | 120 | 4.3.2 / 3.2.3 | SB 50 A3–5, 51 A2 / TB 64–65, ejaan dan petunjuk dalam blog | 43 Ex6 | — |
 
 Lesson 70 ialah cadangan pemilihan standard yang telah disediakan melalui semakan DSKP. RPH bersepadu 77–78 menggunakan satu sesi dan satu RPH berdasarkan jadual Oktober. Padanan kandungan CD1.42–CD1.43 tersedia dalam [audit audio](english_y4_y5_october_audio_content_20261117.md). Nombor CD1.38–CD1.41 dipadankan dengan buku, manakala kandungan fail rakaman perlu disahkan.
+
+### Semakan 17 November bagi Lesson 83–87 dan 89–96
+
+Sumber Learning World dan Food and health menggunakan SOW serta buku English Plus 1. Lesson 87 merujuk [My Dream Pet, panduan BPK p.101](https://fliphtml5.com/qifna/qfis/Year_5_Poems_Guidebook/113/) dan Lesson 93 merujuk [Food, Food, Food, panduan BPK p.113](https://fliphtml5.com/qifna/qfis/Year_5_Poems_Guidebook/128/). Nombor dalam pautan penampil berbeza daripada halaman tercetak.
+
+| Lesson | SOW bercetak | SP utama / pelengkap | Bahan dan aktiviti bercetak | WB pilihan | Trek dalam RPH |
+| --- | ---: | --- | --- | --- | --- |
+| 83 | 121 | 1.1.1 / 2.2.1 | SB 48 A1–2 / TB 62, sebutan huruf dan permintaan bantuan | 43 Ex7 | CD1.44–CD1.45 |
+| 84 | 122 | 2.1.5 / 1.2.4 | SB 48 A3–5 dan 42 / TB 62, ejaan, deskripsi dan arahan | — | — |
+| 85 | 123 | 3.2.1 / 2.1.1 | SB 49 A1–3 / TB 63, idea utama e-mel dan butiran peribadi | 41 Ex1 | — |
+| 86 | 124 | 4.3.3 / 3.2.2 | SB 49 A3–4 / TB 63, model e-mel, draf dan maklum balas | 43 Ex8 | — |
+| 87 | 125 | 5.3.1 / 4.3.3 | Anthology p.16; panduan BPK p.101 A5, draf dan semakan puisi | — | — |
+| 89 | 128 | 1.2.1 / 1.1.1 | SB 52–53 A1–3 / TB 66–67, makanan sekolah dan bunyi vokal | 44 Ex1 | CD2.02–CD2.03 |
+| 90 | 129 | 2.2.1 / 4.3.1 | SB 52–53 A4–6 dan Finished? / TB 67, pilihan makanan dan tanda baca | 44 Ex4 | CD2.04 |
+| 91 | 130 | 3.2.3 / 3.2.4 | SB 54 A1–3 / TB 68, temu bual ahli sumo, petunjuk dan kamus | 48 Ex5 | CD2.05 |
+| 92 | 131 | 4.3.1 / 3.2.4 | SB 54 A4, 55 A1–3 dan 52–53 / TB 68–69, pendapat bertulis dan rujukan | 45 Ex1 | — |
+| 93 | 132 | 5.2.1 / 2.1.4 | Anthology p.20; panduan BPK p.113 A1, respons puisi dan rancangan sarapan | — | — |
+| 94 | 133 | 4.2.3 / 2.2.2 | SB 55 A4–5 dan Finished? / TB 69, persetujuan langkah dan catatan pengalaman | 45 Ex4 | — |
+| 95 | 134 | 1.2.3 / 1.2.5 | SB 96 A1–3 / TB 110, urutan pembelian, berat dan harga | — | CD3.12–CD3.13 |
+| 96 | 135 | 2.2.1 / 2.2.2 | SB 96 A4–6 / TB 110, agihan peranan dan dialog jual beli | — | CD3.13–CD3.14 |
+
+Tajuk fokus dalam SOW Lesson 94 mencetak Reading, manakala lajur SK/SP utama menyenaraikan Writing 4.2/4.2.3. Objektif dan PBD menggunakan catatan ringkas tentang pengalaman makan sebenar bagi SP tersebut, bersama tugasan berbincang dan menyediakan senarai belian daripada SOW.
+
+Padanan kandungan CD1.44–CD1.45, CD2.05 dan CD3.12–CD3.14 tersedia dalam [audit audio](english_y4_y5_october_audio_content_20261117.md). Nombor CD2.02–CD2.04 dipadankan dengan buku. Kandungan tiga fail rakaman tersebut dan penghantaran melalui akaun guru produksi masih perlu disahkan. Pasangan 83–84, 91–92 dan 95–96 kekal dalam jadual Oktober dengan satu sesi untuk setiap pasangan.
