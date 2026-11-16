@@ -67,7 +67,9 @@ class MobileRptDownloadTests(unittest.TestCase):
                         {year:3,pdf_ready:true,download_enabled:true,docx_ready:true,
                          docx_url:"/api/rpt/2027/sjkc/bahasa-melayu/3.docx",note:"W.P. Kuala Lumpur"},
                         {year:4,pdf_ready:true,download_enabled:true,docx_ready:true,
-                         docx_url:"/api/rpt/2027/sjkc/bahasa-melayu/4.docx",note:"W.P. Kuala Lumpur"}]},
+                         docx_url:"/api/rpt/2027/sjkc/bahasa-melayu/4.docx",note:"W.P. Kuala Lumpur"},
+                        {year:5,pdf_ready:true,download_enabled:true,docx_ready:true,
+                         docx_url:"/api/rpt/2027/sjkc/bahasa-melayu/5.docx",note:"W.P. Kuala Lumpur"}]},
                     {code:"science_dlp",label:"Science (DLP)",years:[
                         {year:3,pdf_ready:true,download_enabled:true,year_label:"Year 3"}]}
                 ];
@@ -116,6 +118,10 @@ class MobileRptDownloadTests(unittest.TestCase):
             subject.select_option("bahasa_melayu_sjk")
             self.assertTrue(pdf.is_visible())
             self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/bahasa-melayu/4.docx")
+            year.select_option("5")
+            subject.select_option("bahasa_melayu_sjk")
+            self.assertTrue(pdf.is_visible())
+            self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/bahasa-melayu/5.docx")
             curriculum.select_option("kp2027")
             year.select_option("1")
             subject.select_option("english")
