@@ -136,7 +136,7 @@ def weekly_rpt_suggestion(state, target, subject, year):
 
 
 def english_week_capacity(rows, state, class_name, year, suggestion):
-    """Compare the saved class timetable with this week's 60-minute SOW Lessons."""
+    """Compare usable 60-minute sessions or legacy timetable minutes with the RPT."""
     offset = 0 if suggestion["group"] == "A" else 2
     span = suggestion.get("dates")
     if span is None:
@@ -146,7 +146,9 @@ def english_week_capacity(rows, state, class_name, year, suggestion):
     state = normalize_state(state)
     dates = (start + timedelta(days=step) for step in range((end - start).days + 1))
     school_days = {WEEKDAY[day.weekday()] for day in dates if is_school_day(state, day)}
-    required = 60 * len(suggestion.get("sessions", suggestion["lessons"][""]))
+    integrated = "sessions" in suggestion
+    required = 60 * len(suggestion["sessions"] if integrated else suggestion["lessons"][""])
+    session_days = set()
     scheduled = 0
     for row in rows:
         if not isinstance(row, dict) or row.get("day") not in school_days:
@@ -162,7 +164,14 @@ def english_week_capacity(rows, state, class_name, year, suggestion):
             return None
         hours, minutes = map(int, finish.split(":"))
         start_hours, start_minutes = map(int, begin.split(":"))
-        scheduled += (hours - start_hours) * 60 + minutes - start_minutes
+        duration = (hours - start_hours) * 60 + minutes - start_minutes
+        if integrated:
+            if duration == 60:
+                session_days.add(row["day"])
+        else:
+            scheduled += duration
+    if integrated:
+        scheduled = 60 * len(session_days)
     return {"scheduled_minutes": scheduled, "required_minutes": required}
 
 

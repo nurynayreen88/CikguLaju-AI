@@ -223,8 +223,11 @@
       : " — Tiada "+label+" untuk pilihan ini.");
   const capacity=c.slot.rpt_capacity;
   if(capacity&&capacity.scheduled_minutes<capacity.required_minutes){
-   c.weeklySuggestion.textContent+=". Jadual kelas ada "+capacity.scheduled_minutes+
-    " minit minggu ini. RPT memerlukan "+capacity.required_minutes+" minit.";
+   c.weeklySuggestion.textContent+=suggestion.sessions
+    ? ". Jadual kelas ada "+(capacity.scheduled_minutes/60)+" sesi 60 minit pada hari berbeza. "+
+      "RPT memerlukan "+suggestion.sessions.length+" sesi minggu ini."
+    : ". Jadual kelas ada "+capacity.scheduled_minutes+
+      " minit minggu ini. RPT memerlukan "+capacity.required_minutes+" minit.";
   }
  }
  function renderProgress(c){
