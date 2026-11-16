@@ -10,7 +10,7 @@ Skop ialah RPT 2027 Matematik SJKC Tahun 3 dalam bahasa Cina untuk sekolah Kumpu
 - Contoh Minggu 1: **A 4–7 Januari 2027**, **B 4–8 Januari 2027**. Minggu 2: **A 10–14 Januari 2027**, **B 11–15 Januari 2027**. Semua minggu lain mesti dijana daripada takwim rasmi KPM, bukan menambah tujuh hari secara automatik kerana cuti dan minggu persekolahan tidak semestinya bersambung.
 - **Jangan gandakan PdP**: satu baris PdP yang sama mempunyai dua tarikh kumpulan, bukan dua PdP berlainan. Agihan 96 jam setahun disemak berasingan daripada bilangan minggu.
 - Sekiranya tarikh cuti menyebabkan minggu tidak mempunyai PdP, nyatakan cuti/tiada PdP dan jangan mereka-reka SP untuk mengisi ruang.
-- **Status: spesifikasi audit sahaja.** Tahun 3 belum mempunyai fail Word/PDF siap atau diterbitkan; lengkapkan padanan Unit 3–9 sebelum penerbitan.
+- **Status semasa: HOLD untuk semakan akademik.** Draf Word/PDF RPT dan RPH tersedia pada PR #828.
 
 ## Indeks sumber setahun
 
@@ -47,7 +47,7 @@ DSKP m.s. 32 menyenaraikan 1.3.2 dan Buku Teks Jilid 1 m.s. 18–19 turut mencet
 
 ## Padanan Unit 2: Operasi asas
 
-Susunan berikut mengikut Buku Teks Jilid 1. Halaman Buku Aktiviti disemak melalui rujukan nota guru dalam buku teks. Semakan item di Buku Aktiviti dan penjadualan PdP menyusul.
+Susunan berikut mengikut Buku Teks Jilid 1. Halaman Buku Aktiviti dipadankan dengan nota guru dan disemak semula pada halaman bercetak buku.
 
 | SP | Fokus | Buku Teks Jilid 1 | Buku Aktiviti |
 | --- | --- | --- | --- |
@@ -55,11 +55,11 @@ Susunan berikut mengikut Buku Teks Jilid 1. Halaman Buku Aktiviti disemak melalu
 | 2.1.2 | Tambah tiga nombor dengan hasil tambah hingga 10 000 | 35–37 | 22–23 |
 | 2.2.1 | Tolak dua nombor dalam lingkungan 10 000 | 38–42 | 24–26 |
 | 2.2.2 | Tolak tiga nombor secara berturutan dalam lingkungan 10 000 | 43–45 | 27 |
-| 2.5.1 | Gabungkan operasi tambah dan tolak dalam lingkungan 10 000 tanpa pengumpulan semula | 46–47 | 28–30 |
+| 2.5.1 | Operasi tambah dan tolak dalam lingkungan 10 000 tanpa pengumpulan semula | 46–47 | 28 sebagai contoh format. Gunakan soalan guru yang sepadan dengan skop tanpa pengumpulan semula. |
 | 2.3.1 | Darab nombor hingga empat digit dengan nombor satu digit, 10, 100 atau 1 000 dengan hasil darab hingga 10 000 | 48–53 | 31–34 |
 | 2.3.1 | Kukuhkan darab melalui penguraian dan pengumpulan semula nombor dalam pola | 54 | 35 |
 | 2.4.1 | Bahagi nombor hingga 10 000 dengan nombor satu digit, 10, 100 atau 1 000 | 55–60 | 36–40 |
-| 2.4.1 | Pilih nombor yang memberikan baki yang ditetapkan | 61 | 41 |
+| 2.4.1 | Ujian kebolehbahagian dan pengelasan nombor | 61 | 41 untuk pengukuhan bahagi dengan baki. |
 | 2.6.1, 2.6.2 | Kenal pasti anu dan wakilkan situasi harian dengan ayat matematik satu operasi | 62–63 | 42 |
 | 2.7.1, 2.7.2 | Bina cerita daripada ayat matematik satu operasi atau operasi campuran tambah dan tolak | 64–65 | 43 |
 | 2.7.3 | Selesaikan masalah harian operasi asas dan operasi campuran tambah dan tolak | 66–73 | 44–48 |
@@ -78,4 +78,47 @@ Semua 12 SP Unit 2 diliputi. Bahagian pengukuhan merujuk SK yang telah diajar. S
 - [PPD Batu Pahat](https://sites.google.com/moe-dl.edu.my/ppd-batu-pahat-sains-matematik/buku-teks-digital-bidang-sains-matematik/buku-teks-sekolah-rendah/matematik-tahun-3) menyediakan [Buku Teks Jilid 1](https://drive.google.com/file/d/12iJbw8rlfzF0Y91v-aE5z1D440AiuIPm/view), [Buku Teks Jilid 2](https://drive.google.com/file/d/1HWMc4QH_SbjkREbL26o-WV3EOXsBYYLd/view) dan [Buku Aktiviti](https://drive.google.com/file/d/1HCvmazsZB73lwTvaUX6HXLRf5CoM0_Zq/view).
 - [Kalendar Akademik KPM 2027](https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik).
 
-Padanan lengkap mengikut PdP, agihan tarikh dan fail Word/PDF masih dalam penyediaan. Indeks ini khusus untuk semakan dalaman.
+## Draf RPT dan RPH Tahun 3 untuk semakan
+
+[Data padanan](../staging/matematik_sjkc/tahun_3/year_3_2027.json) memautkan 96 PdP RPT kepada 96 RPH berbahasa Cina. Pengiraan fail mengesahkan sembilan unit, 52 SK dan 102 kod induk SP. Agihan PdP mengikut unit ialah 12, 14, 15, 12, 10, 17, 7, 4 dan 5. Setiap PdP memperuntukkan 60 minit.
+
+| Bahan | Word | PDF |
+| --- | --- | --- |
+| RPT | [14 halaman](../staging/matematik_sjkc/tahun_3/RPT_2027_Matematik_SJKC_Tahun_3.docx) | [14 halaman](../staging/matematik_sjkc/tahun_3/RPT_2027_Matematik_SJKC_Tahun_3.pdf) |
+| RPH | [96 halaman](../staging/matematik_sjkc/tahun_3/RPH_2027_Matematik_SJKC_Tahun_3.docx) | [96 halaman](../staging/matematik_sjkc/tahun_3/RPH_2027_Matematik_SJKC_Tahun_3.pdf) |
+
+RPT menggunakan 44 baris minggu daripada takwim yang digunakan pada RPT SJKC Tahun 2, dengan dua julat tarikh per minggu di jadual yang sama. Agihan mengekalkan maksimum tiga PdP dalam satu minggu dan mengosongkan minggu 1, 6 dan 19. RPH diperiksa mengikut turutan 001–096, satu halaman A4 setiap PdP. Medan tarikh, masa dan kelas diisi mengikut jadual guru.
+
+## Semakan kedua bagi sembilan unit
+
+- Rujukan disemak pada halaman bercetak [Buku Teks Jilid 1](https://anyflip.com/pjzby/hjoz/basic), [Buku Teks Jilid 2](https://anyflip.com/fnchw/fipy/basic) dan [Buku Aktiviti](https://anyflip.com/pjzby/qxvo/basic). Kod induk SP dan halaman buku dikekalkan dalam data yang sama untuk RPT dan RPH. Pindaan mengekalkan nombor PdP dan minggu.
+- PdP 017 menggunakan BA m.s. 28 sebagai contoh format kerana latihan asal termasuk pengumpulan semula. RPH menyediakan empat soalan guru tanpa pengumpulan semula untuk SP 2.5.1. PdP 042–045 membezakan latihan tambah dua amaun, tambah tiga amaun, tolak dua amaun dan tolak tiga amaun pada BA m.s. 77, 78 C, 79 dan 80 C.
+- PdP 063 (masa), 080 (ukuran dan sukatan), 087 (ruang) dan 091 (koordinat) membezakan halaman aplikasi daripada bahagian permainan atau pengukuhan. PdP 065–066, 070–071 dan 075–076 menggunakan bahagian A/B yang tepat bagi tambah dan tolak pada BA m.s. 112, 116 dan 120.
+- PdP 050 menggunakan contoh lama pada BT m.s. 16 untuk menerangkan cara membaca jadual. Guru menggunakan jadual pertukaran bertarikh pada hari PdP bagi SP 4.6.2.
+- Lampiran A–C KPM disemak dengan 44 julat minggu kedua-dua kumpulan. Minggu 1 ialah ruang pengisian sekolah. Minggu 6 dan 19 mempunyai sifar PdP dalam agihan bersama. Jumlah 96 jam dan turutan PdP 001–096 lulus pada Word, PDF dan data. Setiap RPH mempunyai satu halaman A4, objektif yang boleh diukur, latihan bersumber dan tugasan PBD.
+
+## Semakan laluan aplikasi
+
+- 16 ujian katalog/penghantaran RPT Telegram dan 11 ujian katalog Web lulus pada kod asas. Simulasi dengan dokumen sebenar Tahun 2 dan Tahun 3 mengesahkan pilihan tahun, akses berbayar serta kandungan Word dan PDF, termasuk SHA-256 PDF di Web.
+- Katalog pengeluaran RPT masih menyenaraikan Tahun 2. Penjana RPH masih menggunakan laluan Matematik sedia ada dan memerlukan pengenalan sumber Matematik SJKC serta ujian pemilihan PdP dan janaan sebenar sebelum diterbitkan.
+
+## Semakan dokumen dan aktiviti
+
+- RPT dan RPH kini memaparkan BA m.s. 28 sebagai contoh susun atur bagi PdP 017, serta bahagian khusus untuk PdP 043, 045, 049–052 dan 082. Latihan campuran untuk SP 2.5.1 menggunakan empat soalan guru tanpa pengumpulan semula. Contoh PdP 022 kini menunjukkan pembahagian dengan 10, 100 dan 1 000. Objektif dan PBD pada PdP 035, 038, 053–055, 080 dan 082 diperjelas berdasarkan skop DSKP dan tugasan yang diperhatikan.
+- 44 julat Kumpulan A/B dibandingkan dengan [Lampiran A–C salinan surat siaran KPM](https://ecentral.my/wp-content/uploads/2026/10/Kalendar-Akademik-Tahun-2027.pdf). Minggu 6 dan 19 diperuntukkan sifar PdP dalam pelan bersama kerana cuti perayaan dan cuti tambahan berbeza mengikut negeri. Setiap minggu pengajaran lengkap pada halaman yang sama dalam RPT.
+- Tetapan tema fon Asia Timur dibuang daripada gaya yang menetapkan Noto Sans CJK SC bagi mengelakkan aksara Cina hilang semasa penukaran ke PDF. Semakan Word dan PDF mengesahkan 96 PdP, 96 jam, sembilan unit, 52 SK dan 102 SP. RPT mempunyai 14 halaman A4 melintang dengan 44 baris A/B. RPH mempunyai satu halaman A4 setiap PdP. Kesemua 96 halaman RPH PDF mempunyai tajuk, objektif, SK/SP, rujukan Buku Aktiviti, lima langkah pengajaran dan ruang refleksi yang sepadan dengan data.
+
+Status HOLD pada PR #828 sementara menunggu kelulusan kandungan dan ujian janaan sebenar melalui Web serta Telegram.
+
+## Muat turun RPT dan pratonton satu PdP
+
+- Katalog RPT Tahun 3 disambungkan pada calon Telegram dalam PR ini dan pada [PR Web #829](https://github.com/nurynayreen88/CikguLaju-AI/pull/829). Ujian setempat mengesahkan Word/PDF Tahun 2 dan 3, akses berbayar, serta 44 baris A/B. Muka depan Web Tahun 3 mengisi ruang sekolah, guru dan logo. Kesemua 13 halaman isi sepadan secara piksel.
+- Pratonton dalaman RPH mengambil satu PdP daripada dokumen yang sudah dipadankan dengan data 2027. Semakan automatik menjana 96 Word dan 96 PDF, mengesahkan satu PdP setiap fail. Ujian Flask mengesahkan respons sebenar Word/PDF, penolakan tahun/unit/PdP yang tidak sepadan, pengendalian dokumen hilang dan semakan capaian dalaman.
+- Muat turun RPT melalui akaun guru berbayar sebenar dan kelulusan kandungan masih belum disahkan.
+
+
+## Pemilihan guru dalam calon Web dan Telegram
+
+- Laluan RPH KSSR Tahun 3 menggunakan pilihan Matematik SJKC sendiri. Kedua-dua antara muka menggunakan padanan unit dan nombor PdP daripada sumber yang sama. PdP daripada unit lain ditolak.
+- Dokumen Word dan PDF menerima kelas, tarikh, masa dan bilangan murid. Web juga menerima refleksi guru. Ujian integrasi Web → penjana Telegram meliputi kesemua 96 Word dan 96 PDF dengan akaun simulasi. Telegram menggunakan aliran kelas, masa, pilihan bahan dan kredit sedia ada. Penghantaran dua format dalam satu SUBMIT menggunakan satu janaan. Jika hanya satu format berjaya dihantar, SUBMIT semula menyambung format yang tertinggal.
+- Calon kekal HOLD. Penjana SJKC hanya disediakan apabila `CIKGULAJU_MATEMATIK_SJKC_T3_RPH_ENABLED=1` pada Telegram. Kelulusan kandungan dan ujian janaan serta muat turun dengan akaun guru produksi masih diperlukan. RPT menggunakan jadual Kumpulan A dan B yang dikongsi.
