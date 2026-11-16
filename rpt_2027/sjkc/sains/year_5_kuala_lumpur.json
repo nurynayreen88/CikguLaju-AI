@@ -1,0 +1,1183 @@
+{
+  "academic_year": 2027,
+  "curriculum": "KSSR (Semakan 2017)",
+  "school_type": "SJKC",
+  "subject": "Sains",
+  "year": 5,
+  "state": "W.P. Kuala Lumpur",
+  "calendar_group": "B",
+  "time_allocation_hours": 64,
+  "calendar_model": "Cadangan 64 PdP × 60 minit untuk W.P. Kuala Lumpur, Kumpulan B. Laraskan mengikut jadual sekolah.",
+  "calendar_excluded_windows": [
+    [
+      "2027-03-06",
+      "2027-03-14"
+    ],
+    [
+      "2027-05-22",
+      "2027-06-06"
+    ],
+    [
+      "2027-08-28",
+      "2027-09-05"
+    ]
+  ],
+  "additional_calendar_exclusions": [
+    "2027-01-22",
+    "2027-02-01",
+    "2027-02-05",
+    "2027-02-08",
+    "2027-02-09",
+    "2027-02-10",
+    "2027-02-11",
+    "2027-02-12",
+    "2027-02-24",
+    "2027-05-17",
+    "2027-05-18",
+    "2027-05-19",
+    "2027-05-20",
+    "2027-05-21",
+    "2027-06-07",
+    "2027-06-08",
+    "2027-08-16",
+    "2027-08-31",
+    "2027-09-16",
+    "2027-10-27",
+    "2027-10-28",
+    "2027-10-29"
+  ],
+  "sources": {
+    "dskp": "https://anyflip.com/zkumo/ramt/basic",
+    "rpt_2026": "https://anyflip.com/tfbps/koco/basic",
+    "textbook": [
+      "https://fliphtml5.com/helug/ztjn"
+    ],
+    "calendar": "https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik",
+    "public_holidays": "https://kalendarmy.com/cuti-umum/w-p-kuala-lumpur/2027/",
+    "time_allocation": "https://www.scribd.com/document/370247315/1-2-SPI-Bil-8-2016-Perubahan-Jadual-KSSR-Semakan"
+  },
+  "lessons": [
+    {
+      "pdp": 1,
+      "date": "2027-01-12",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "观察与分类",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1",
+        "1.1.2"
+      ],
+      "textbook_pages": "1–2, 8",
+      "focus": "观察物品并按共同特征分组，说明分类依据。"
+    },
+    {
+      "pdp": 2,
+      "date": "2027-01-14",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "测量与推断",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.3",
+        "1.1.4"
+      ],
+      "textbook_pages": "3–6",
+      "focus": "记录模型的跳距，提出有证据支持的推断。"
+    },
+    {
+      "pdp": 3,
+      "date": "2027-01-19",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "预测与沟通",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.5",
+        "1.1.6"
+      ],
+      "textbook_pages": "5–7",
+      "focus": "先预测模型跳距，再以表格和口述报告观察结果。"
+    },
+    {
+      "pdp": 4,
+      "date": "2027-01-21",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "时空关系与诠释资料",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.7",
+        "1.1.8"
+      ],
+      "textbook_pages": "6–7",
+      "focus": "记录摆动次数随时间的变化，并解释数据趋势。"
+    },
+    {
+      "pdp": 5,
+      "date": "2027-01-26",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "操作性定义与控制变数",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.9",
+        "1.1.10"
+      ],
+      "textbook_pages": "3–7",
+      "focus": "以可量度的结果定义摆动快慢，区分三类变数。"
+    },
+    {
+      "pdp": 6,
+      "date": "2027-02-02",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "提出假设与实验报告",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.11",
+        "1.1.12"
+      ],
+      "textbook_pages": "7–10",
+      "focus": "提出一个可检验的假设，完成摆动实验并写出结论。"
+    },
+    {
+      "pdp": 7,
+      "date": "2027-02-04",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "人体主要骨骼",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1",
+        "2.1.2"
+      ],
+      "textbook_pages": "12–16",
+      "focus": "在骨骼图标出头骨、脊柱、肋骨和四肢骨，并说明功能。"
+    },
+    {
+      "pdp": 8,
+      "date": "2027-02-16",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "关节的位置与功能",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2",
+        "2.1.3"
+      ],
+      "textbook_pages": "16–18",
+      "focus": "用肢体动作或纸模型指出关节位置和活动方式。"
+    },
+    {
+      "pdp": 9,
+      "date": "2027-02-23",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "骨骼系统的重要性",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.4",
+        "2.1.5"
+      ],
+      "textbook_pages": "18–19, 40",
+      "focus": "以标注图解释骨骼对支撑、保护和运动的作用。"
+    },
+    {
+      "pdp": 10,
+      "date": "2027-02-25",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "血液循环的主要部分",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "textbook_pages": "20–22",
+      "focus": "配对心脏、血管、血液和肺与各自的功能。"
+    },
+    {
+      "pdp": 11,
+      "date": "2027-03-02",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "血液的循环路线",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.2"
+      ],
+      "textbook_pages": "22–26",
+      "focus": "用两色箭头画出含氧较多和含二氧化碳较多的血液路线。"
+    },
+    {
+      "pdp": 12,
+      "date": "2027-03-16",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "血液循环与人体需要",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.3",
+        "2.2.4"
+      ],
+      "textbook_pages": "27–29, 39",
+      "focus": "以循环图解释血液如何为身体运送氧气。"
+    },
+    {
+      "pdp": 13,
+      "date": "2027-03-18",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "人体系统之间的联系",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.1",
+        "2.3.2"
+      ],
+      "textbook_pages": "30–35",
+      "focus": "用关系图解释两个系统如何合作，并推论一处失常的影响。"
+    },
+    {
+      "pdp": 14,
+      "date": "2027-03-23",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "保护人体系统",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.3",
+        "2.3.4"
+      ],
+      "textbook_pages": "34–39",
+      "focus": "设计健康习惯卡，说明每项做法所保护的系统。"
+    },
+    {
+      "pdp": 15,
+      "date": "2027-03-25",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "动物",
+      "topic": "物种生存与身体特征",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1",
+        "3.1.2"
+      ],
+      "textbook_pages": "42–45",
+      "focus": "从图片说明物种生存的意思，并把外形特征与自卫功能配对。"
+    },
+    {
+      "pdp": 16,
+      "date": "2027-03-30",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "动物",
+      "topic": "动物的自卫本能",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.2",
+        "3.1.6"
+      ],
+      "textbook_pages": "45–49",
+      "focus": "用图卡解释断尾、喷墨等本能如何帮助动物脱离天敌。"
+    },
+    {
+      "pdp": 17,
+      "date": "2027-04-06",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "动物",
+      "topic": "适应恶劣气候",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.3"
+      ],
+      "textbook_pages": "50–56",
+      "focus": "比较寒冷和炎热环境中的动物，并以特征解释其适应方式。"
+    },
+    {
+      "pdp": 18,
+      "date": "2027-04-08",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "动物",
+      "topic": "保护卵与照顾幼儿",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.4",
+        "3.1.5"
+      ],
+      "textbook_pages": "57–61",
+      "focus": "把动物保护卵和照顾幼儿的不同做法分类，并举例说明。"
+    },
+    {
+      "pdp": 19,
+      "date": "2027-04-13",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "动物",
+      "topic": "设计动物模型",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1",
+        "3.2.2"
+      ],
+      "textbook_pages": "62–63",
+      "focus": "绘制适应指定环境的动物草图，标出自卫和耐候特征。"
+    },
+    {
+      "pdp": 20,
+      "date": "2027-04-20",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "动物",
+      "topic": "展示动物模型",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.3",
+        "3.2.4"
+      ],
+      "textbook_pages": "62–63",
+      "focus": "展示模型并解释其结构，比较不同设计对物种生存的作用。"
+    },
+    {
+      "pdp": 21,
+      "date": "2027-04-22",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "动物",
+      "topic": "食物链、生产者与消费者",
+      "sk": [
+        "3.3"
+      ],
+      "sp": [
+        "3.3.1",
+        "3.3.2"
+      ],
+      "textbook_pages": "64–68",
+      "focus": "排列生物卡组成食物链，标出生产者和各级消费者。"
+    },
+    {
+      "pdp": 22,
+      "date": "2027-04-27",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "动物",
+      "topic": "能量在食物链中的流动",
+      "sk": [
+        "3.3"
+      ],
+      "sp": [
+        "3.3.3"
+      ],
+      "textbook_pages": "68–70",
+      "focus": "画出能量传递方向，解释生产者如何通过光合作用进入食物链。"
+    },
+    {
+      "pdp": 23,
+      "date": "2027-05-04",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "动物",
+      "topic": "组成不同栖息地的食物网",
+      "sk": [
+        "3.3"
+      ],
+      "sp": [
+        "3.3.4",
+        "3.3.5"
+      ],
+      "textbook_pages": "71–73",
+      "focus": "把同一栖息地的食物链连成食物网，再比较另一个栖息地。"
+    },
+    {
+      "pdp": 24,
+      "date": "2027-05-06",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "动物",
+      "topic": "食物网中的数量变化",
+      "sk": [
+        "3.3"
+      ],
+      "sp": [
+        "3.3.6",
+        "3.3.7"
+      ],
+      "textbook_pages": "74–80",
+      "focus": "移除一张生物卡，预测相关种群的变化，并图示推理过程。"
+    },
+    {
+      "pdp": 25,
+      "date": "2027-05-11",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "植物",
+      "topic": "植物的自卫特征",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1"
+      ],
+      "textbook_pages": "82–85",
+      "focus": "用照片辨认尖刺、气味等特征，说明它们如何帮助自卫。"
+    },
+    {
+      "pdp": 26,
+      "date": "2027-06-09",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "植物",
+      "topic": "植物适应气候和季节",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.2"
+      ],
+      "textbook_pages": "86–91",
+      "focus": "比较不同环境中的植物，联系落叶、蜡质茎和叶形与环境。"
+    },
+    {
+      "pdp": 27,
+      "date": "2027-06-10",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "植物",
+      "topic": "表达植物的适应方式",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.3"
+      ],
+      "textbook_pages": "90–92, 102",
+      "focus": "绘制带注释的适应图，并用观察证据说明结论。"
+    },
+    {
+      "pdp": 28,
+      "date": "2027-06-15",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "植物",
+      "topic": "种子和果实的传播",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1",
+        "4.2.2"
+      ],
+      "textbook_pages": "93–99",
+      "focus": "观察样本或图片，按风、水、动物和自动爆裂方式分类。"
+    },
+    {
+      "pdp": 29,
+      "date": "2027-06-17",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "植物",
+      "topic": "由种子特征预测传播方式",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.3"
+      ],
+      "textbook_pages": "94–99",
+      "focus": "根据未知样本的形状、浮力或附着特征作出有依据的预测。"
+    },
+    {
+      "pdp": 30,
+      "date": "2027-06-22",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "植物",
+      "topic": "分享种子传播证据",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.4"
+      ],
+      "textbook_pages": "99–103",
+      "focus": "以图表呈现种子的特征与传播方式，并解释观察结果。"
+    },
+    {
+      "pdp": 31,
+      "date": "2027-06-29",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 5,
+      "unit": "电",
+      "topic": "生活中的电源",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1"
+      ],
+      "textbook_pages": "106–109",
+      "focus": "把器材与电源配对，说明不同电源在生活中的应用。"
+    },
+    {
+      "pdp": 32,
+      "date": "2027-07-01",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 5,
+      "unit": "电",
+      "topic": "组成串联和并联电路",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.1",
+        "5.2.2"
+      ],
+      "textbook_pages": "110–112",
+      "focus": "用低压干电池组装两种电路，并以符号绘图。"
+    },
+    {
+      "pdp": 33,
+      "date": "2027-07-06",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 5,
+      "unit": "电",
+      "topic": "两种电路的灯泡亮度",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.3"
+      ],
+      "textbook_pages": "112–113",
+      "focus": "用相同元件比较亮度，并在图上标记电流通路。"
+    },
+    {
+      "pdp": 34,
+      "date": "2027-07-13",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 5,
+      "unit": "电",
+      "topic": "灯泡数量与亮度",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.4"
+      ],
+      "textbook_pages": "114–115",
+      "focus": "固定电池数量，改变灯泡数量并记录相对亮度。"
+    },
+    {
+      "pdp": 35,
+      "date": "2027-07-15",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 5,
+      "unit": "电",
+      "topic": "干电池数量与亮度",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.5"
+      ],
+      "textbook_pages": "114–115",
+      "focus": "在元件额定范围内改变电池数量，比较记录并总结。"
+    },
+    {
+      "pdp": 36,
+      "date": "2027-07-20",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 5,
+      "unit": "电",
+      "topic": "开关与灯泡操作",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.6",
+        "5.2.7"
+      ],
+      "textbook_pages": "116–118",
+      "focus": "试开关的位置，绘图说明串联与并联灯泡的变化。"
+    },
+    {
+      "pdp": 37,
+      "date": "2027-07-27",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 5,
+      "unit": "电",
+      "topic": "影响日常用电量的因素",
+      "sk": [
+        "5.3"
+      ],
+      "sp": [
+        "5.3.1"
+      ],
+      "textbook_pages": "119–120",
+      "focus": "比较模拟电费资料，归纳功率、使用频率与时间的影响。"
+    },
+    {
+      "pdp": 38,
+      "date": "2027-07-29",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 5,
+      "unit": "电",
+      "topic": "安全用电与节省用电",
+      "sk": [
+        "5.3"
+      ],
+      "sp": [
+        "5.3.2",
+        "5.3.3",
+        "5.3.4"
+      ],
+      "textbook_pages": "121–128",
+      "focus": "分析用电情境并制作建议图卡，说明风险和相应做法。"
+    },
+    {
+      "pdp": 39,
+      "date": "2027-08-03",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "热",
+      "topic": "热和温度",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.1"
+      ],
+      "textbook_pages": "130–132",
+      "focus": "比较不同温度的水，用例子区分热与温度。"
+    },
+    {
+      "pdp": 40,
+      "date": "2027-08-05",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "热",
+      "topic": "使用温度计与记录读数",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.2"
+      ],
+      "textbook_pages": "131–132",
+      "focus": "用数码或无汞温度计测量，并以摄氏度记录读数。"
+    },
+    {
+      "pdp": 41,
+      "date": "2027-08-10",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "热",
+      "topic": "冰点、沸点和温度曲线",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.3"
+      ],
+      "textbook_pages": "133–134",
+      "focus": "观察教师示范及温度数据，绘图辨认冰点与沸点。"
+    },
+    {
+      "pdp": 42,
+      "date": "2027-08-17",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "热",
+      "topic": "热水冷却时的温度",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.4"
+      ],
+      "textbook_pages": "134–135",
+      "focus": "定时记录热水冷却至室温的读数，解释曲线趋稳的原因。"
+    },
+    {
+      "pdp": 43,
+      "date": "2027-08-19",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "热",
+      "topic": "热胀冷缩",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.5"
+      ],
+      "textbook_pages": "136–138",
+      "focus": "观察教师示范和不同材料的温度变化，归纳膨胀与收缩。"
+    },
+    {
+      "pdp": 44,
+      "date": "2027-08-24",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "热",
+      "topic": "热胀冷缩的应用",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.6",
+        "6.1.7"
+      ],
+      "textbook_pages": "139–145",
+      "focus": "用桥梁伸缩缝的示意图解释设计用途，分享观察结论。"
+    },
+    {
+      "pdp": 45,
+      "date": "2027-09-07",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 7,
+      "unit": "生锈",
+      "topic": "辨认会生锈的物品",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.1",
+        "7.1.2"
+      ],
+      "textbook_pages": "148–149",
+      "focus": "比较图片或样品，按材质和表面特征说明分类。"
+    },
+    {
+      "pdp": 46,
+      "date": "2027-09-09",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 7,
+      "unit": "生锈",
+      "topic": "探究铁生锈的条件",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.3"
+      ],
+      "textbook_pages": "150–152",
+      "focus": "在教师指导下比较铁钉的条件，记录空气和水的影响。"
+    },
+    {
+      "pdp": 47,
+      "date": "2027-09-14",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 7,
+      "unit": "生锈",
+      "topic": "日常防锈方法",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.4",
+        "7.1.5"
+      ],
+      "textbook_pages": "153–155",
+      "focus": "为不同用品选防锈方法，并说明保护的作用。"
+    },
+    {
+      "pdp": 48,
+      "date": "2027-09-21",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 7,
+      "unit": "生锈",
+      "topic": "呈现生锈实验结果",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.3",
+        "7.1.6"
+      ],
+      "textbook_pages": "150–156",
+      "focus": "比较不同条件的记录，以图表陈述实验结论。"
+    },
+    {
+      "pdp": 49,
+      "date": "2027-09-23",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "物质",
+      "topic": "固体、液体与气体",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1",
+        "8.1.2"
+      ],
+      "textbook_pages": "160–162",
+      "focus": "根据形态为生活物品分类，并说出分类理由。"
+    },
+    {
+      "pdp": 50,
+      "date": "2027-09-28",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "物质",
+      "topic": "三种物质形态的特征",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.3"
+      ],
+      "textbook_pages": "162–168",
+      "focus": "比较形状、质量、体积和所占空间，用表格记录。"
+    },
+    {
+      "pdp": 51,
+      "date": "2027-10-05",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "物质",
+      "topic": "水的三种形态",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.4",
+        "8.1.5"
+      ],
+      "textbook_pages": "169–170",
+      "focus": "按证据配对冰、水和水蒸气，绘制对照图。"
+    },
+    {
+      "pdp": 52,
+      "date": "2027-10-07",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "物质",
+      "topic": "水的形态变化",
+      "sk": [
+        "8.2"
+      ],
+      "sp": [
+        "8.2.1"
+      ],
+      "textbook_pages": "171–174",
+      "focus": "用流程图整理凝固、融化、蒸发、沸腾和凝聚。"
+    },
+    {
+      "pdp": 53,
+      "date": "2027-10-12",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "物质",
+      "topic": "受热或散热时的形态变化",
+      "sk": [
+        "8.2"
+      ],
+      "sp": [
+        "8.2.2"
+      ],
+      "textbook_pages": "174–178",
+      "focus": "观察融冰和凝聚示范，把生活实例归入受热或散热。"
+    },
+    {
+      "pdp": 54,
+      "date": "2027-10-14",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "物质",
+      "topic": "云、雨与水循环",
+      "sk": [
+        "8.2"
+      ],
+      "sp": [
+        "8.2.3",
+        "8.2.4"
+      ],
+      "textbook_pages": "179–184",
+      "focus": "画出水循环模型并解释蒸发、凝聚与降雨的关系。"
+    },
+    {
+      "pdp": 55,
+      "date": "2027-10-19",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 9,
+      "unit": "月相和星座",
+      "topic": "月球反射阳光",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.1"
+      ],
+      "textbook_pages": "188–189",
+      "focus": "用灯和球模拟光照，以观察证据说明月光的来源。"
+    },
+    {
+      "pdp": 56,
+      "date": "2027-10-25",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 9,
+      "unit": "月相和星座",
+      "topic": "月球自转与公转",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.2"
+      ],
+      "textbook_pages": "190–191",
+      "focus": "用标记球模拟两种运动，说明方向及周期。"
+    },
+    {
+      "pdp": 57,
+      "date": "2027-10-26",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 9,
+      "unit": "月相和星座",
+      "topic": "月相与农历",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.3",
+        "9.1.4"
+      ],
+      "textbook_pages": "192–195",
+      "focus": "按模拟和观察资料排列月相，并把月相与农历日期配对。"
+    },
+    {
+      "pdp": 58,
+      "date": "2027-11-02",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 9,
+      "unit": "月相和星座",
+      "topic": "辨认星座图形",
+      "sk": [
+        "9.2"
+      ],
+      "sp": [
+        "9.2.1"
+      ],
+      "textbook_pages": "196–197",
+      "focus": "依星图辨认并连线绘出常见星座。"
+    },
+    {
+      "pdp": 59,
+      "date": "2027-11-09",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 9,
+      "unit": "月相和星座",
+      "topic": "星座的用途与图解",
+      "sk": [
+        "9.2"
+      ],
+      "sp": [
+        "9.2.2",
+        "9.2.3"
+      ],
+      "textbook_pages": "198–203",
+      "focus": "比较辨方向和辨季节的实例，并说明所用的星图线索。"
+    },
+    {
+      "pdp": 60,
+      "date": "2027-11-11",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 10,
+      "unit": "机械",
+      "topic": "身边工具的用途",
+      "sk": [
+        "10.1"
+      ],
+      "sp": [
+        "10.1.1"
+      ],
+      "textbook_pages": "206–207",
+      "focus": "观察身边工具并解释工具如何帮助完成工作。"
+    },
+    {
+      "pdp": 61,
+      "date": "2027-11-16",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 10,
+      "unit": "机械",
+      "topic": "工具中的简单机械",
+      "sk": [
+        "10.1"
+      ],
+      "sp": [
+        "10.1.2"
+      ],
+      "textbook_pages": "207–209",
+      "focus": "标注工具内的简单机械，说明部件如何配合。"
+    },
+    {
+      "pdp": 62,
+      "date": "2027-11-23",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 10,
+      "unit": "机械",
+      "topic": "组合机械的重要性",
+      "sk": [
+        "10.1"
+      ],
+      "sp": [
+        "10.1.3"
+      ],
+      "textbook_pages": "209–211",
+      "focus": "用安全工具模型比较部件齐全与缺少时的操作表现。"
+    },
+    {
+      "pdp": 63,
+      "date": "2027-11-25",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 10,
+      "unit": "机械",
+      "topic": "优质工具的特征",
+      "sk": [
+        "10.1"
+      ],
+      "sp": [
+        "10.1.4"
+      ],
+      "textbook_pages": "211–213",
+      "focus": "以安全、耐用及易保养为准则比较两种工具方案。"
+    },
+    {
+      "pdp": 64,
+      "date": "2027-11-30",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 10,
+      "unit": "机械",
+      "topic": "工具设计与表达",
+      "sk": [
+        "10.1"
+      ],
+      "sp": [
+        "10.1.5"
+      ],
+      "textbook_pages": "213–215",
+      "focus": "展示工具设计图，并以标注说明机械组合的作用。"
+    }
+  ]
+}

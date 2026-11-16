@@ -1,0 +1,1182 @@
+{
+  "academic_year": 2027,
+  "curriculum": "KSSR (Semakan 2017)",
+  "school_type": "SJKC",
+  "subject": "Sains",
+  "year": 6,
+  "state": "W.P. Kuala Lumpur",
+  "calendar_group": "B",
+  "time_allocation_hours": 64,
+  "calendar_model": "Cadangan 64 PdP × 60 minit untuk W.P. Kuala Lumpur, Kumpulan B. Laraskan mengikut jadual sekolah.",
+  "calendar_excluded_windows": [
+    [
+      "2027-03-06",
+      "2027-03-14"
+    ],
+    [
+      "2027-05-22",
+      "2027-06-06"
+    ],
+    [
+      "2027-08-28",
+      "2027-09-05"
+    ]
+  ],
+  "additional_calendar_exclusions": [
+    "2027-01-22",
+    "2027-02-01",
+    "2027-02-05",
+    "2027-02-08",
+    "2027-02-09",
+    "2027-02-10",
+    "2027-02-11",
+    "2027-02-12",
+    "2027-02-24",
+    "2027-05-17",
+    "2027-05-18",
+    "2027-05-19",
+    "2027-05-20",
+    "2027-05-21",
+    "2027-06-07",
+    "2027-06-08",
+    "2027-08-16",
+    "2027-08-31",
+    "2027-09-16",
+    "2027-10-27",
+    "2027-10-28",
+    "2027-10-29"
+  ],
+  "sources": {
+    "dskp": "https://anyflip.com/mhwl/hmbd/basic",
+    "rpt_2026": "https://anyflip.com/tfbps/mned/basic",
+    "textbook": [
+      "https://fliphtml5.com/fclvo/spwb/"
+    ],
+    "calendar": "https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik",
+    "public_holidays": "https://kalendarmy.com/cuti-umum/w-p-kuala-lumpur/2027/",
+    "time_allocation": "https://www.scribd.com/document/370247315/1-2-SPI-Bil-8-2016-Perubahan-Jadual-KSSR-Semakan"
+  },
+  "lessons": [
+    {
+      "pdp": 1,
+      "date": "2027-01-12",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "观察与分类",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1",
+        "1.1.2"
+      ],
+      "textbook_pages": "2–5",
+      "focus": "观察物体的特征，并按可观察的共同特征分组。"
+    },
+    {
+      "pdp": 2,
+      "date": "2027-01-14",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "测量和作出推断",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.3",
+        "1.1.4"
+      ],
+      "textbook_pages": "2–5",
+      "focus": "量度模型在不同条件下的移动距离，用数据支持推断。"
+    },
+    {
+      "pdp": 3,
+      "date": "2027-01-19",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "预测和记录",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.5",
+        "1.1.6"
+      ],
+      "textbook_pages": "3–5",
+      "focus": "先预测模型的表现，再用表格及口述报告结果。"
+    },
+    {
+      "pdp": 4,
+      "date": "2027-01-21",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "时空关系和诠释资料",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.7",
+        "1.1.8"
+      ],
+      "textbook_pages": "4–5, 7–8",
+      "focus": "用距离与时间的数据画图，描述及解释变化趋势。"
+    },
+    {
+      "pdp": 5,
+      "date": "2027-01-26",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "操作性定义和变量",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.9",
+        "1.1.10"
+      ],
+      "textbook_pages": "3–7",
+      "focus": "以测量标准定义模型的表现，确定操纵、反应和固定变量。"
+    },
+    {
+      "pdp": 6,
+      "date": "2027-02-02",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "提出假设与实验",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.11",
+        "1.1.12"
+      ],
+      "textbook_pages": "4–10",
+      "focus": "用模型完成公平测试，检查假设，提交实验记录。"
+    },
+    {
+      "pdp": 7,
+      "date": "2027-02-04",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "人类生殖器官的功能",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "textbook_pages": "12–15",
+      "focus": "用教材图卡配对生殖器官与功能，使用恰当的科学词汇。"
+    },
+    {
+      "pdp": 8,
+      "date": "2027-02-16",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "从受精到出生",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "textbook_pages": "16–21",
+      "focus": "将主要发展阶段按顺序排列，说明受精到出生的过程。"
+    },
+    {
+      "pdp": 9,
+      "date": "2027-02-23",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "繁殖对人类的重要性",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.3",
+        "2.1.4"
+      ],
+      "textbook_pages": "19–22",
+      "focus": "用流程图总结人类繁殖，并解释延续世代的意义。"
+    },
+    {
+      "pdp": 10,
+      "date": "2027-02-25",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "神经系统的组成与功能",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1",
+        "2.2.2",
+        "2.2.3"
+      ],
+      "textbook_pages": "23–25",
+      "focus": "在人体图上标注脑、脊髓和周围神经，配对功能。"
+    },
+    {
+      "pdp": 11,
+      "date": "2027-03-02",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "神经信息与反应",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.4"
+      ],
+      "textbook_pages": "26–27",
+      "focus": "分析情境卡，预测周围神经受损对身体反应的影响。"
+    },
+    {
+      "pdp": 12,
+      "date": "2027-03-16",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 2,
+      "unit": "人类",
+      "topic": "照顾神经系统",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.5",
+        "2.2.6"
+      ],
+      "textbook_pages": "28–33",
+      "focus": "制作健康行为图表，说明护具及良好习惯如何保护神经系统。"
+    },
+    {
+      "pdp": 13,
+      "date": "2027-03-18",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "微生物",
+      "topic": "认识微生物及其种类",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1",
+        "3.1.2"
+      ],
+      "textbook_pages": "36–38",
+      "focus": "根据显微照片和资料卡分类，说明微生物通常须借助仪器观察。"
+    },
+    {
+      "pdp": 14,
+      "date": "2027-03-23",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "微生物",
+      "topic": "微生物的生命过程",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.3"
+      ],
+      "textbook_pages": "39–41",
+      "focus": "用教材图片和记录描述课堂实例中的生长、呼吸和繁殖现象。"
+    },
+    {
+      "pdp": 15,
+      "date": "2027-03-25",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "微生物",
+      "topic": "影响微生物生长的条件",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.4"
+      ],
+      "textbook_pages": "41–42",
+      "focus": "由教师以食用酵母作安全对照示范，学生记录结果并说明变量。"
+    },
+    {
+      "pdp": 16,
+      "date": "2027-03-30",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "微生物",
+      "topic": "微生物的益处和害处",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.5",
+        "3.1.6"
+      ],
+      "textbook_pages": "43–50",
+      "focus": "根据食物和卫生案例，制作图卡呈现应用、影响及证据。"
+    },
+    {
+      "pdp": 17,
+      "date": "2027-04-06",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "生物之间的相互关系",
+      "topic": "动物之间的关系",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1"
+      ],
+      "textbook_pages": "54–55",
+      "focus": "配对捕食者和猎物，辨认竞争和共生的例子。"
+    },
+    {
+      "pdp": 18,
+      "date": "2027-04-08",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "生物之间的相互关系",
+      "topic": "动物之间的竞争",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.2"
+      ],
+      "textbook_pages": "56–59",
+      "focus": "用案例说明同种与异种动物会因哪些资源发生竞争。"
+    },
+    {
+      "pdp": 19,
+      "date": "2027-04-13",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "生物之间的相互关系",
+      "topic": "动物的共生与沟通",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.3",
+        "4.1.4"
+      ],
+      "textbook_pages": "60–62",
+      "focus": "通过图解说明双方在互利、共栖或寄生关系中受到的影响。"
+    },
+    {
+      "pdp": 20,
+      "date": "2027-04-20",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "生物之间的相互关系",
+      "topic": "植物之间的竞争",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "textbook_pages": "63–65",
+      "focus": "分析不同种植条件的生长资料，解释光、水和空间的作用。"
+    },
+    {
+      "pdp": 21,
+      "date": "2027-04-22",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "生物之间的相互关系",
+      "topic": "植物之间的共生",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.2",
+        "4.2.3"
+      ],
+      "textbook_pages": "66–71",
+      "focus": "以图解比较植物共生实例，解释双方关系并陈述证据。"
+    },
+    {
+      "pdp": 22,
+      "date": "2027-04-27",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 5,
+      "unit": "保护和复育",
+      "topic": "保护与复育的意思",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1"
+      ],
+      "textbook_pages": "74–75",
+      "focus": "将行动卡配对至保护或复育，解释两种行动的目标。"
+    },
+    {
+      "pdp": 23,
+      "date": "2027-05-04",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 5,
+      "unit": "保护和复育",
+      "topic": "保护与复育的方法",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.2"
+      ],
+      "textbook_pages": "75–77",
+      "focus": "为本地物种拟定可行的保护措施，说明选择依据。"
+    },
+    {
+      "pdp": 24,
+      "date": "2027-05-06",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 5,
+      "unit": "保护和复育",
+      "topic": "绝种和濒临绝种",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.3",
+        "5.1.4"
+      ],
+      "textbook_pages": "78–84",
+      "focus": "比较物种资料卡，区分已绝种与濒临绝种并举例。"
+    },
+    {
+      "pdp": 25,
+      "date": "2027-05-11",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 5,
+      "unit": "保护和复育",
+      "topic": "物种受威胁的原因",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.5"
+      ],
+      "textbook_pages": "84–85",
+      "focus": "分析栖息地受破坏等案例，用因果图呈现威胁。"
+    },
+    {
+      "pdp": 26,
+      "date": "2027-06-09",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 5,
+      "unit": "保护和复育",
+      "topic": "自然平衡和保育行动",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.6",
+        "5.1.7"
+      ],
+      "textbook_pages": "86–90",
+      "focus": "用资料设计保育海报，解释保护物种和生态平衡的关系。"
+    },
+    {
+      "pdp": 27,
+      "date": "2027-06-10",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "力",
+      "topic": "推、拉与力的效应",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.1",
+        "6.1.2"
+      ],
+      "textbook_pages": "92–94",
+      "focus": "用小车和软材料示范推拉，记录运动或形状的变化。"
+    },
+    {
+      "pdp": 28,
+      "date": "2027-06-15",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "力",
+      "topic": "表达力的效应",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.2",
+        "6.1.3"
+      ],
+      "textbook_pages": "94–95",
+      "focus": "为实验图画力的方向，解释力改变物体运动或形状的证据。"
+    },
+    {
+      "pdp": 29,
+      "date": "2027-06-17",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "力",
+      "topic": "摩擦力的含义及效应",
+      "sk": [
+        "6.2"
+      ],
+      "sp": [
+        "6.2.1",
+        "6.2.2"
+      ],
+      "textbook_pages": "96–98",
+      "focus": "比较物体在不同表面移动的方式，解释摩擦阻碍相对运动。"
+    },
+    {
+      "pdp": 30,
+      "date": "2027-06-22",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "力",
+      "topic": "影响摩擦力的因素",
+      "sk": [
+        "6.2"
+      ],
+      "sp": [
+        "6.2.3"
+      ],
+      "textbook_pages": "99–100",
+      "focus": "以相同物体比较表面，记录公平测试数据。"
+    },
+    {
+      "pdp": 31,
+      "date": "2027-06-29",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "力",
+      "topic": "生活中的摩擦力问题",
+      "sk": [
+        "6.2"
+      ],
+      "sp": [
+        "6.2.4",
+        "6.2.5"
+      ],
+      "textbook_pages": "101–102",
+      "focus": "为防滑或减磨情境提出做法，以图说明理由。"
+    },
+    {
+      "pdp": 32,
+      "date": "2027-07-01",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "力",
+      "topic": "周围的气压",
+      "sk": [
+        "6.3"
+      ],
+      "sp": [
+        "6.3.1"
+      ],
+      "textbook_pages": "103–104",
+      "focus": "观察教师示范并用图说明空气能对物体施压。"
+    },
+    {
+      "pdp": 33,
+      "date": "2027-07-06",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "力",
+      "topic": "气压与高度",
+      "sk": [
+        "6.3"
+      ],
+      "sp": [
+        "6.3.2"
+      ],
+      "textbook_pages": "105–106",
+      "focus": "比较不同高度的气压资料，总结两者之间的关系。"
+    },
+    {
+      "pdp": 34,
+      "date": "2027-07-13",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "力",
+      "topic": "气压的应用",
+      "sk": [
+        "6.3"
+      ],
+      "sp": [
+        "6.3.3",
+        "6.3.4"
+      ],
+      "textbook_pages": "106–109",
+      "focus": "用吸盘等安全用具图示内外气压差，并解释观察结果。"
+    },
+    {
+      "pdp": 35,
+      "date": "2027-07-15",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 7,
+      "unit": "速度",
+      "topic": "认识速度和单位",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.1"
+      ],
+      "textbook_pages": "112–113",
+      "focus": "判读速度标示，区分米每秒与千米每小时。"
+    },
+    {
+      "pdp": 36,
+      "date": "2027-07-20",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 7,
+      "unit": "速度",
+      "topic": "速度、距离和时间",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.2"
+      ],
+      "textbook_pages": "114–115",
+      "focus": "量度移动距离和时间，用公正的比较找出三者关系。"
+    },
+    {
+      "pdp": 37,
+      "date": "2027-07-27",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 7,
+      "unit": "速度",
+      "topic": "以公式解决速度问题",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.3"
+      ],
+      "textbook_pages": "116–119",
+      "focus": "读题选取单位，用速度公式求距离、时间或速度。"
+    },
+    {
+      "pdp": 38,
+      "date": "2027-07-29",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 7,
+      "unit": "速度",
+      "topic": "速度的操作性定义",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.4",
+        "7.1.5"
+      ],
+      "textbook_pages": "119–122",
+      "focus": "根据固定距离的测量说明怎样判定快慢，展示数据和结论。"
+    },
+    {
+      "pdp": 39,
+      "date": "2027-08-03",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "食物保存技术",
+      "topic": "食物变质的特征",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1"
+      ],
+      "textbook_pages": "124–127",
+      "focus": "用照片辨认外观及质地变化，整理观察表。"
+    },
+    {
+      "pdp": 40,
+      "date": "2027-08-05",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "食物保存技术",
+      "topic": "食物变质的原因",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.2",
+        "8.1.3"
+      ],
+      "textbook_pages": "127–128",
+      "focus": "从图像与记录说明微生物与变质的关系，完成图解。"
+    },
+    {
+      "pdp": 41,
+      "date": "2027-08-10",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "食物保存技术",
+      "topic": "食物保存的目的与原理",
+      "sk": [
+        "8.2"
+      ],
+      "sp": [
+        "8.2.1",
+        "8.2.2"
+      ],
+      "textbook_pages": "129–135",
+      "focus": "比较冷藏、干燥等方法，解释它们怎样减缓食物变质。"
+    },
+    {
+      "pdp": 42,
+      "date": "2027-08-17",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "食物保存技术",
+      "topic": "为同一种食物选择保存法",
+      "sk": [
+        "8.2"
+      ],
+      "sp": [
+        "8.2.3",
+        "8.2.4"
+      ],
+      "textbook_pages": "136",
+      "focus": "以教师指导的食物保存项目比较可用方法，记录观察并总结。"
+    },
+    {
+      "pdp": 43,
+      "date": "2027-08-19",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "食物保存技术",
+      "topic": "组合保存方法",
+      "sk": [
+        "8.2"
+      ],
+      "sp": [
+        "8.2.5"
+      ],
+      "textbook_pages": "137",
+      "focus": "从食品标签和教材实例辨认两种结合使用的保存法，并说明其作用。"
+    },
+    {
+      "pdp": 44,
+      "date": "2027-08-24",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "食物保存技术",
+      "topic": "食物保存与科技",
+      "sk": [
+        "8.2"
+      ],
+      "sp": [
+        "8.2.6"
+      ],
+      "textbook_pages": "138–141",
+      "focus": "根据教材实例说明保存技术如何满足日常的食物需求。"
+    },
+    {
+      "pdp": 45,
+      "date": "2027-09-07",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "食物保存技术",
+      "topic": "食物保存项目汇报",
+      "sk": [
+        "8.2"
+      ],
+      "sp": [
+        "8.2.7"
+      ],
+      "textbook_pages": "136, 140–143",
+      "focus": "使用流程图和表格呈现项目的观察、判断与结论。"
+    },
+    {
+      "pdp": 46,
+      "date": "2027-09-09",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 9,
+      "unit": "废物",
+      "topic": "按材料辨认废物",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.1"
+      ],
+      "textbook_pages": "146–148",
+      "focus": "用洁净样品或图卡按纸、塑料、金属等材料分类。"
+    },
+    {
+      "pdp": 47,
+      "date": "2027-09-14",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 9,
+      "unit": "废物",
+      "topic": "可降解与不可降解废物",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.2",
+        "9.1.3"
+      ],
+      "textbook_pages": "149–152",
+      "focus": "比较资料卡中的分解现象，说明选用分类的依据。"
+    },
+    {
+      "pdp": 48,
+      "date": "2027-09-21",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 9,
+      "unit": "废物",
+      "topic": "明智使用与处置废物",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.4"
+      ],
+      "textbook_pages": "153–155",
+      "focus": "为学校的废物情境提出减量、再用或适当处置的做法。"
+    },
+    {
+      "pdp": 49,
+      "date": "2027-09-23",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 9,
+      "unit": "废物",
+      "topic": "妥善处理废物",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.5"
+      ],
+      "textbook_pages": "156–158",
+      "focus": "比较常见废物的后续处理，说明哪些做法适合校园。"
+    },
+    {
+      "pdp": 50,
+      "date": "2027-09-28",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 9,
+      "unit": "废物",
+      "topic": "校园废物行动报告",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.6"
+      ],
+      "textbook_pages": "158–161",
+      "focus": "以图表呈现校园废物处理建议，说明对环境的影响。"
+    },
+    {
+      "pdp": 51,
+      "date": "2027-10-05",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 10,
+      "unit": "月食与日食",
+      "topic": "模拟月食",
+      "sk": [
+        "10.1"
+      ],
+      "sp": [
+        "10.1.1"
+      ],
+      "textbook_pages": "164–167",
+      "focus": "用灯和球标出三者的位置，解释月球如何进入地影。"
+    },
+    {
+      "pdp": 52,
+      "date": "2027-10-07",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 10,
+      "unit": "月食与日食",
+      "topic": "模拟日食",
+      "sk": [
+        "10.1"
+      ],
+      "sp": [
+        "10.1.2"
+      ],
+      "textbook_pages": "168–170",
+      "focus": "用模型比较日食时的位置和影子，说明遮挡光的物体。"
+    },
+    {
+      "pdp": 53,
+      "date": "2027-10-12",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 10,
+      "unit": "月食与日食",
+      "topic": "用光的特性比较日月食",
+      "sk": [
+        "10.1"
+      ],
+      "sp": [
+        "10.1.3",
+        "10.1.4",
+        "10.1.5"
+      ],
+      "textbook_pages": "165–174",
+      "focus": "用模型判断何时形成食，绘图比较本影与半影并口述依据。"
+    },
+    {
+      "pdp": 54,
+      "date": "2027-10-14",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 11,
+      "unit": "星系",
+      "topic": "什么是星系",
+      "sk": [
+        "11.1"
+      ],
+      "sp": [
+        "11.1.1"
+      ],
+      "textbook_pages": "176–177",
+      "focus": "从星系图像找共同特征，归纳星系的基本组成。"
+    },
+    {
+      "pdp": 55,
+      "date": "2027-10-19",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 11,
+      "unit": "星系",
+      "topic": "银河系与太阳系",
+      "sk": [
+        "11.1"
+      ],
+      "sp": [
+        "11.1.2",
+        "11.1.3"
+      ],
+      "textbook_pages": "178–180",
+      "focus": "画出含太阳系位置的银河系示意图，区分结构与尺度。"
+    },
+    {
+      "pdp": 56,
+      "date": "2027-10-25",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 11,
+      "unit": "星系",
+      "topic": "模拟星系尺度与沟通",
+      "sk": [
+        "11.1"
+      ],
+      "sp": [
+        "11.1.4",
+        "11.1.5"
+      ],
+      "textbook_pages": "181–184",
+      "focus": "用比例示意说明太阳系在银河系内的相对大小，展示模型。"
+    },
+    {
+      "pdp": 57,
+      "date": "2027-10-26",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 12,
+      "unit": "稳度与强度",
+      "topic": "稳度、强度和结构",
+      "sk": [
+        "12.1"
+      ],
+      "sp": [
+        "12.1.1",
+        "12.1.2"
+      ],
+      "textbook_pages": "186–188",
+      "focus": "比较结构模型，举例解释稳度与承受力的区别。"
+    },
+    {
+      "pdp": 58,
+      "date": "2027-11-02",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 12,
+      "unit": "稳度与强度",
+      "topic": "影响物体稳度的因素",
+      "sk": [
+        "12.1"
+      ],
+      "sp": [
+        "12.1.3"
+      ],
+      "textbook_pages": "189–192",
+      "focus": "比较底面积或高度，记录哪个模型较难倾倒及原因。"
+    },
+    {
+      "pdp": 59,
+      "date": "2027-11-09",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 12,
+      "unit": "稳度与强度",
+      "topic": "影响结构强度的因素",
+      "sk": [
+        "12.1"
+      ],
+      "sp": [
+        "12.1.4"
+      ],
+      "textbook_pages": "193–196",
+      "focus": "比较形状或材料不同的纸制结构，用承载结果作推论。"
+    },
+    {
+      "pdp": 60,
+      "date": "2027-11-11",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 12,
+      "unit": "稳度与强度",
+      "topic": "稳固结构的重要性",
+      "sk": [
+        "12.1"
+      ],
+      "sp": [
+        "12.1.5"
+      ],
+      "textbook_pages": "197–198",
+      "focus": "从建筑案例解释稳度及强度对安全和耐用的作用。"
+    },
+    {
+      "pdp": 61,
+      "date": "2027-11-16",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 12,
+      "unit": "稳度与强度",
+      "topic": "制作与展示稳固模型",
+      "sk": [
+        "12.1"
+      ],
+      "sp": [
+        "12.1.6",
+        "12.1.7"
+      ],
+      "textbook_pages": "199–202",
+      "focus": "以环保材料制成模型，通过测试提出改良并分享证据。"
+    },
+    {
+      "pdp": 62,
+      "date": "2027-11-23",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 13,
+      "unit": "工艺",
+      "topic": "工艺的意思及作用",
+      "sk": [
+        "13.1"
+      ],
+      "sp": [
+        "13.1.1"
+      ],
+      "textbook_pages": "204",
+      "focus": "把生活问题与工艺应用配对，并说出解决了什么困难。"
+    },
+    {
+      "pdp": 63,
+      "date": "2027-11-25",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 13,
+      "unit": "工艺",
+      "topic": "不同领域的工艺发展",
+      "sk": [
+        "13.1"
+      ],
+      "sp": [
+        "13.1.2"
+      ],
+      "textbook_pages": "205–208",
+      "focus": "用时间线比较交通、农业、医药、通信或建筑的发展。"
+    },
+    {
+      "pdp": 64,
+      "date": "2027-11-30",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 13,
+      "unit": "工艺",
+      "topic": "工艺的利与弊",
+      "sk": [
+        "13.1"
+      ],
+      "sp": [
+        "13.1.3",
+        "13.1.4"
+      ],
+      "textbook_pages": "209–215",
+      "focus": "以图表比较一个工艺实例的好处和限制，汇报证据。"
+    }
+  ]
+}
