@@ -65,6 +65,11 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
                                      body=(WEB/"rpt-personalize.js").read_text("utf-8"))
             if path=="/assets/rpt-original-cover-layout.json":
                 return route.fulfill(status=200,content_type="application/json",body=LAYOUT)
+            if path=="/api/rpt/2027/catalog":
+                return route.fulfill(json={"personalization_allowed":paid,"subjects":[{
+                    "code":"pendidikan_islam","label":"Pendidikan Islam",
+                    "years":[{"year":4,"pdf_ready":True,"download_enabled":True}]
+                }]})
             if path=="/api/web/teacher/profile":
                 return route.fulfill(status=200,content_type="application/json",
                     body=json.dumps({"profile":{
@@ -93,23 +98,15 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
         popup=None
         try:
             page.goto(HOST+"/",wait_until="domcontentloaded")
-            page.evaluate("""() => {
+            page.evaluate("""async () => {
                 document.querySelector('main.panel').hidden=true;
                 document.querySelector('#workspace').hidden=false;
                 document.querySelector('#view-rpt').hidden=false;
-                rptCatalog={allowed:true,subjects:[{
-                    code:'pendidikan_islam',label:'Pendidikan Islam',
-                    years:[{year:4,status:'DRAF',pdf_ready:true,download_enabled:true}]
-                }]};
-                const s=document.querySelector('#rpt-subject');
-                s.replaceChildren(new Option('Pilih Subjek',''),
-                                  new Option('Pendidikan Islam','pendidikan_islam'));
-                s.value='pendidikan_islam';
-                const y=document.querySelector('#rpt-year');
-                y.replaceChildren(new Option('Tahun 4','4'));
-                y.value='4';
-                refreshRptDownload();
+                await loadRptCatalog();
             }""")
+            page.locator("#rpt-curriculum").select_option("kssr")
+            page.locator("#rpt-year").select_option("4")
+            page.locator("#rpt-subject").select_option("pendidikan_islam")
             with page.expect_popup(timeout=10000) as next_page:
                 page.locator("#rpt-download-mobile").tap()
             popup=next_page.value
