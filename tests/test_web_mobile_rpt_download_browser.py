@@ -104,7 +104,7 @@ class MobileRptDownloadTests(unittest.TestCase):
             curriculum.select_option("kssr")
             self.assertEqual(year.locator("option").all_text_contents(),["Pilih tahun","Tahun 2","Tahun 4"])
             year.select_option("2")
-            self.assertEqual(subject.locator("option").all_text_contents(),["Pilih subjek","English (SK)"])
+            self.assertEqual(subject.locator("option").all_text_contents(),["Pilih atau cari subjek","English (SK)"])
             choose_subject("English (SK)")
             self.assertTrue(pdf.is_visible())
             self.assertFalse(word.is_visible())
