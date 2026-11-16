@@ -99,7 +99,7 @@ async function main(){
     }
   }
 
-  for(const year of [2,3]){
+  for(const year of [2,3,4]){
     const bmKey="bahasa_melayu_sjk:"+year;
     const filename="RPT_2027_Bahasa_Melayu_SJK_Tahun_"+year+".pdf";
     const bmRaw=fs.readFileSync(path.join(root,"..","sjkc","bahasa_melayu",filename));
@@ -109,10 +109,10 @@ async function main(){
     const bmDoc=await PDF.PDFDocument.load(bmRaw);
     const bmResult=await fillOriginalCover(bmDoc,{display_name:"Cikgu Tan",school_name:"SJK(C) Contoh"},
       tinyPng,bmLayout,{PDFLib:PDF,textPng:async()=>tinyPng});
-    assert.strictEqual(bmResult.pages,20);
+    assert.strictEqual(bmResult.pages,year===4?22:20);
     assert.ok(bmResult.hasLogo&&bmResult.hasSchool&&bmResult.hasTeacher);
     const bmOutput=await bmDoc.save();
-    assert.strictEqual((await PDF.PDFDocument.load(bmOutput)).getPageCount(),20);
+    assert.strictEqual((await PDF.PDFDocument.load(bmOutput)).getPageCount(),year===4?22:20);
     if(write){
       fs.writeFileSync(path.join(outputDir,"bm-sjk-"+year+".pdf"),bmOutput);
       fs.writeFileSync(path.join(outputDir,"bm-sjk-"+year+".source.pdf"),bmRaw);
