@@ -34,4 +34,4 @@ Skop ialah KSSR (Semakan 2017), W.P. Kuala Lumpur, Kumpulan B. Perancangan guru 
 
 ## Status
 
-Fail Word dan PDF diuji dalam katalog Web dan penghantaran Telegram. Semakan akses berbayar dan cetakan nama guru, sekolah serta logo pada muka depan PDF Web lulus. Semakan sesi guru sebenar pada produksi masih belum dibuat.
+Fail Word dan PDF diuji dalam katalog Web dan penghantaran Telegram. Semakan akses berbayar dan cetakan nama guru, sekolah serta logo pada muka depan PDF Web lulus. Render mengesahkan [Web #789](https://github.com/nurynayreen88/CikguLaju-AI/pull/789) aktif pada 09:15 MYT dan [Telegram #787](https://github.com/nurynayreen88/CikguLaju-AI/pull/787) pada 09:18 MYT. Hash PDF pada aset Web sepadan dan muat turun Word/PDF tanpa sesi menerima HTTP 401. Semakan muat turun melalui akaun guru berbayar sebenar masih belum dibuat.
