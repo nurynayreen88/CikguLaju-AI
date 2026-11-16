@@ -18,46 +18,14 @@ from web.rph_today_progress import (
 )
 from web.teacher_profile_routes import _auth, _body
 from web.teacher_profile_store import (
-    ProfileUnavailable, ProfileValidation, STATES, TIME, get_profile, get_schedule,
+    ProfileUnavailable, ProfileValidation, TIME, get_profile, get_schedule,
 )
 from web.unified_rph_web import SUBJECT_LABELS
+from web.school_days_2027 import FRI_SAT, WEEKDAY, is_school_day, normalize_state
 
 bp = Blueprint("rph_hari_ini_web", __name__)
-WEEKDAY = ("Isnin", "Selasa", "Rabu", "Khamis", "Jumaat", "Sabtu", "Ahad")
-FRI_SAT = frozenset(("Kedah", "Kelantan", "Terengganu"))
 RPT_WEEKLY_CATALOG = Path(__file__).with_name("rpt_weekly_suggestions_2027.json")
 INTEGRATED_ENGLISH_CATALOG = Path(__file__).with_name("english_integrated_rph_weeks_2027.json")
-SCHOOL_STATES = {state.casefold(): state for state in STATES}
-# KPM 2027 Lampiran C and the federal/state public holiday schedule. Term
-# breaks fall outside the printed windows. Schools may add local closures.
-COMMON_CLOSURES = frozenset((
-    "02-08", "02-09", "02-10", "02-11", "05-17", "05-18", "05-19", "05-20",
-    "06-07", "09-16", "10-28",
-))
-GROUP_A_CLOSURES = frozenset(("02-07", "03-14", "05-16", "06-06", "08-15", "10-27"))
-GROUP_B_CLOSURES = frozenset(("02-05", "02-12", "05-21", "06-08", "08-16"))
-STATE_CLOSURES = {
-    "01-06": {"Kedah", "Negeri Sembilan", "Perlis", "Terengganu"},
-    "01-14": {"Negeri Sembilan"},
-    "01-22": {"Kuala Lumpur", "Putrajaya", "Johor", "Negeri Sembilan", "Perak", "Pulau Pinang", "Selangor"},
-    "02-01": {"Kuala Lumpur", "Labuan", "Putrajaya"},
-    "02-24": {"Kuala Lumpur", "Labuan", "Putrajaya", "Kelantan", "Pahang", "Perak", "Perlis", "Pulau Pinang", "Selangor", "Terengganu"},
-    "03-04": {"Terengganu"},
-    "03-23": {"Johor"},
-    "03-26": {"Sabah", "Sarawak"},
-    "03-30": {"Sabah"},
-    "04-26": {"Terengganu"},
-    "05-02": {"Kelantan", "Terengganu"},
-    "06-20": {"Kedah"},
-    "07-07": {"Pulau Pinang"},
-    "07-12": {"Johor"},
-    "07-22": {"Sarawak"},
-    "07-30": {"Pahang"},
-    "08-24": {"Melaka"},
-    "09-29": {"Kelantan"},
-    "09-30": {"Kelantan"},
-    "11-05": {"Perak"},
-}
 SUBJECTS = {
     "bahasa melayu": ("BM", None),
     "bm": ("BM", None),
@@ -136,23 +104,10 @@ def integrated_pair(year, lesson):
     return None
 
 
-def is_school_day(state, target):
-    group_a = state in FRI_SAT
-    day = target.strftime("%m-%d")
-    weekend = (4, 5) if group_a else (5, 6)
-    return not (target.weekday() in weekend
-                or day in COMMON_CLOSURES
-                or (group_a and day in GROUP_A_CLOSURES)
-                or (not group_a and day in GROUP_B_CLOSURES)
-                or state in STATE_CLOSURES.get(day, ())
-                or (not group_a and state != "Sarawak" and day in ("10-27", "10-29")))
-
-
 def weekly_rpt_suggestion(state, target, subject, year):
-    state = SCHOOL_STATES.get(state.strip().casefold()) if isinstance(state, str) else None
+    state = normalize_state(state)
     if target.year != 2027 or state is None:
         return None
-    state = state.removeprefix("W.P. ")
     group_a = state in FRI_SAT
     if not is_school_day(state, target):
         return None
@@ -188,7 +143,7 @@ def english_week_capacity(rows, state, class_name, year, suggestion):
         week = weekly_catalog()[f"ENGLISH:{year}"][str(suggestion["week"])]
         span = week[offset:offset + 2]
     start, end = map(date.fromisoformat, span)
-    state = SCHOOL_STATES[state.strip().casefold()].removeprefix("W.P. ")
+    state = normalize_state(state)
     dates = (start + timedelta(days=step) for step in range((end - start).days + 1))
     school_days = {WEEKDAY[day.weekday()] for day in dates if is_school_day(state, day)}
     required = 60 * len(suggestion.get("sessions", suggestion["lessons"][""]))
