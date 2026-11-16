@@ -9,6 +9,7 @@ from tempfile import TemporaryDirectory
 from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
 from rpt_2027.sjkc.bahasa_cina import documents as bahasa_cina_sjkc
 from rpt_2027.sjkc.bahasa_melayu import documents as bahasa_melayu_sjk
+from rpt_2027.sjkc.sains import documents as sains_sjkc
 from rpt_2027.psv.telegram_downloads import pdf_ready as psv_pdf_ready, build_pdf as build_psv_pdf
 from rpt_2027.matematik.telegram_downloads import pdf_ready as math_pdf_ready
 from rpt_2027.bahasa_melayu.telegram_downloads import pdf_ready as bm_pdf_ready
@@ -22,6 +23,7 @@ YEARS = frozenset(range(2, 7))
 SCHOOL_RPT_CALLBACKS = {
     "rpt2027_sjkc": bahasa_cina_sjkc,
     "rpt2027_bm_sjk": bahasa_melayu_sjk,
+    "rpt2027_sains_sjkc": sains_sjkc,
 }
 
 

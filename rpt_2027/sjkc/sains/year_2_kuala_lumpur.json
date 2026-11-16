@@ -1,0 +1,900 @@
+{
+  "academic_year": 2027,
+  "curriculum": "KSSR (Semakan 2017)",
+  "school_type": "SJKC",
+  "subject": "Sains",
+  "year": 2,
+  "state": "W.P. Kuala Lumpur",
+  "calendar_group": "B",
+  "time_allocation_hours": 48,
+  "calendar_model": "Cadangan 48 PdP × 60 minit untuk W.P. Kuala Lumpur, Kumpulan B. Laraskan mengikut jadual sekolah.",
+  "calendar_excluded_windows": [
+    [
+      "2027-03-06",
+      "2027-03-14"
+    ],
+    [
+      "2027-05-22",
+      "2027-06-06"
+    ],
+    [
+      "2027-08-28",
+      "2027-09-05"
+    ]
+  ],
+  "additional_calendar_exclusions": [
+    "2027-01-22",
+    "2027-02-01",
+    "2027-02-05",
+    "2027-02-08",
+    "2027-02-09",
+    "2027-02-10",
+    "2027-02-11",
+    "2027-02-12",
+    "2027-02-24",
+    "2027-05-17",
+    "2027-05-18",
+    "2027-05-19",
+    "2027-05-20",
+    "2027-05-21",
+    "2027-06-07",
+    "2027-06-08",
+    "2027-08-16",
+    "2027-08-31",
+    "2027-09-16",
+    "2027-10-27",
+    "2027-10-28",
+    "2027-10-29"
+  ],
+  "sources": {
+    "dskp": "https://fliphtml5.com/dsymy/nunm/DSKP_KSSR_Semakan_2017_Sains_Tahun_2_SJKC/",
+    "rpt_2026": "https://anyflip.com/tfbps/riff/basic",
+    "textbook": [
+      "https://anyflip.com/swdqu/xwtf/basic/",
+      "https://anyflip.com/swdqu/xwtf/basic/51-100",
+      "https://anyflip.com/swdqu/xwtf/basic/101-136"
+    ],
+    "calendar": "https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik",
+    "public_holidays": "https://kalendarmy.com/cuti-umum/w-p-kuala-lumpur/2027/",
+    "time_allocation": "https://www.scribd.com/document/370247315/1-2-SPI-Bil-8-2016-Perubahan-Jadual-KSSR-Semakan",
+    "curriculum_alignment_notice": "https://www.moe.gov.my/index.php/surat-siaran-kpm-bil-6-tahun-2024"
+  },
+  "lessons": [
+    {
+      "pdp": 1,
+      "date": "2027-01-12",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "观察",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1"
+      ],
+      "textbook_pages": "2–3",
+      "focus": "观察冰块和量筒的变化。记录两项现象，并说明各用了哪种感官。"
+    },
+    {
+      "pdp": 2,
+      "date": "2027-01-19",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "分类",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2"
+      ],
+      "textbook_pages": "4–6",
+      "focus": "以同一项特征把球或动物图卡分组，说明分组依据，再试用另一项特征。"
+    },
+    {
+      "pdp": 3,
+      "date": "2027-01-26",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "测量和应用数目",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.3"
+      ],
+      "textbook_pages": "7–9",
+      "focus": "为三项测量配对工具和单位。量出书本长度，以厘米记录读数。"
+    },
+    {
+      "pdp": 4,
+      "date": "2027-01-28",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "沟通",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.4"
+      ],
+      "textbook_pages": "10–11",
+      "focus": "把分类或测量结果整理成表格，向同伴说明表格可读出的一项信息。"
+    },
+    {
+      "pdp": 5,
+      "date": "2027-02-02",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "使用用具和处理标本",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.1",
+        "1.2.2"
+      ],
+      "textbook_pages": "12–13",
+      "focus": "示范如何使用搅拌用具和轻放标本。用观察清单核对两项操作。"
+    },
+    {
+      "pdp": 6,
+      "date": "2027-02-16",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "绘制标本和用具",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.3"
+      ],
+      "textbook_pages": "14",
+      "focus": "画出标本或用具，标出辨识所需的两项特征。"
+    },
+    {
+      "pdp": 7,
+      "date": "2027-02-23",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "清洗与存放科学用具",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.4",
+        "1.2.5"
+      ],
+      "textbook_pages": "14–16",
+      "focus": "练习清洗及归位，说明一项安全存放的理由。"
+    },
+    {
+      "pdp": 8,
+      "date": "2027-03-02",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 2,
+      "unit": "科学室规则",
+      "topic": "科学室规则",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "textbook_pages": "18–19",
+      "focus": "从情境图辨认两项违规行为，示范进入科学室时应采取的做法。"
+    },
+    {
+      "pdp": 9,
+      "date": "2027-03-04",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 2,
+      "unit": "科学室规则",
+      "topic": "实验前后遵守规则",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "textbook_pages": "20–22",
+      "focus": "按正确次序处理老师指定的材料并整理场地，说明遵守一项规则的理由。"
+    },
+    {
+      "pdp": 10,
+      "date": "2027-03-16",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "人类",
+      "topic": "人类的繁殖",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "textbook_pages": "24",
+      "focus": "根据图片说明人类如何延续后代。"
+    },
+    {
+      "pdp": 11,
+      "date": "2027-03-23",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "人类",
+      "topic": "从婴儿到成人",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.2",
+        "3.1.6"
+      ],
+      "textbook_pages": "25–27",
+      "focus": "根据匿名示例比较两个年龄阶段的体型、身高和体重，以表格呈现变化。"
+    },
+    {
+      "pdp": 12,
+      "date": "2027-03-30",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "人类",
+      "topic": "同龄儿童的成长差异",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.3",
+        "3.1.6"
+      ],
+      "textbook_pages": "28",
+      "focus": "用两组示例身高数据说明同龄儿童的成长也会有差异。"
+    },
+    {
+      "pdp": 13,
+      "date": "2027-04-06",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "人类",
+      "topic": "家族特征",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.4",
+        "3.1.5"
+      ],
+      "textbook_pages": "29–33",
+      "focus": "从虚构家族图辨认两项可遗传特征，说明这些特征可能来自哪些家人。"
+    },
+    {
+      "pdp": 14,
+      "date": "2027-04-13",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "人类",
+      "topic": "呈现成长和遗传的观察",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.6"
+      ],
+      "textbook_pages": "34–36",
+      "focus": "根据示例图区分成长变化与遗传特征，各举一例并口头说明依据。"
+    },
+    {
+      "pdp": 15,
+      "date": "2027-04-20",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "动物",
+      "topic": "动物的繁殖方式",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1",
+        "4.1.2"
+      ],
+      "textbook_pages": "40–41",
+      "focus": "把六张动物图卡按卵生或胎生分类，并说明两组的区别。"
+    },
+    {
+      "pdp": 16,
+      "date": "2027-04-22",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "动物",
+      "topic": "动物产卵数量的差异",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.3"
+      ],
+      "textbook_pages": "42–43",
+      "focus": "从图表找出两种产卵数量不同的动物，用数量资料解释比较。"
+    },
+    {
+      "pdp": 17,
+      "date": "2027-04-27",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "动物",
+      "topic": "动物产下幼儿数量的差异",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.4"
+      ],
+      "textbook_pages": "42–43",
+      "focus": "比较两种胎生动物的幼儿数量，用例子说明数量差异。"
+    },
+    {
+      "pdp": 18,
+      "date": "2027-05-04",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "动物",
+      "topic": "动物生命周期",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.5"
+      ],
+      "textbook_pages": "44–45",
+      "focus": "按次序排列蝴蝶或青蛙的成长图片，记录至少两项外形变化。"
+    },
+    {
+      "pdp": 19,
+      "date": "2027-05-11",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "动物",
+      "topic": "幼儿与母体的异同",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.6",
+        "4.1.7"
+      ],
+      "textbook_pages": "46–48",
+      "focus": "比较两组动物幼儿和母体图片，画出或说出一处相似及一处不同。"
+    },
+    {
+      "pdp": 20,
+      "date": "2027-06-10",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 5,
+      "unit": "植物",
+      "topic": "植物的重要性",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1"
+      ],
+      "textbook_pages": "55",
+      "focus": "举例说明植物如何为人类和动物提供食物、材料或栖息环境。"
+    },
+    {
+      "pdp": 21,
+      "date": "2027-06-15",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 5,
+      "unit": "植物",
+      "topic": "种子发芽的条件",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.2"
+      ],
+      "textbook_pages": "56–57",
+      "focus": "比较三组发芽情境，指出水、空气和适宜温度各有什么作用。"
+    },
+    {
+      "pdp": 22,
+      "date": "2027-06-22",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 5,
+      "unit": "植物",
+      "topic": "观察和记录植物生长",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.3"
+      ],
+      "textbook_pages": "58–59",
+      "focus": "设置种植观察，记录日期与初始状态。按后续观察补记株高或叶片数。"
+    },
+    {
+      "pdp": 23,
+      "date": "2027-06-24",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 5,
+      "unit": "植物",
+      "topic": "排列植物生长阶段",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.4"
+      ],
+      "textbook_pages": "60",
+      "focus": "根据图片排列四个生长阶段，并指出用于排列的特征。"
+    },
+    {
+      "pdp": 24,
+      "date": "2027-06-29",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 5,
+      "unit": "植物",
+      "topic": "调查植物生长所需条件",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.5"
+      ],
+      "textbook_pages": "62–63",
+      "focus": "比较两组只改变一个条件的植物，以观察记录说明该条件的影响。"
+    },
+    {
+      "pdp": 25,
+      "date": "2027-07-06",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 5,
+      "unit": "植物",
+      "topic": "汇报植物观察",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.6"
+      ],
+      "textbook_pages": "59–60, 63–64",
+      "focus": "用图表或短讲呈现种植观察，引用两项记录支持结论。"
+    },
+    {
+      "pdp": 26,
+      "date": "2027-07-13",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "光和暗",
+      "topic": "辨认光源",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.1"
+      ],
+      "textbook_pages": "68",
+      "focus": "辨认四幅图中的光源，说出其发出的光如何帮助观察。"
+    },
+    {
+      "pdp": 27,
+      "date": "2027-07-20",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "光和暗",
+      "topic": "比较光亮与黑暗的环境",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.2"
+      ],
+      "textbook_pages": "69–70",
+      "focus": "在明暗不同的条件下找物件，记录哪种条件较容易及原因。"
+    },
+    {
+      "pdp": 28,
+      "date": "2027-07-27",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "光和暗",
+      "topic": "影子的形成",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.3"
+      ],
+      "textbook_pages": "72–73",
+      "focus": "用手电筒和挡光物形成影子，并画出光源、物体和影子的相对位置。"
+    },
+    {
+      "pdp": 29,
+      "date": "2027-08-03",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "光和暗",
+      "topic": "比较影子的清晰度",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.4"
+      ],
+      "textbook_pages": "74–75",
+      "focus": "用三种透光程度不同的材料挡光，记录并比较各自的影子。"
+    },
+    {
+      "pdp": 30,
+      "date": "2027-08-10",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "光和暗",
+      "topic": "设计并解释影子游戏",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.5",
+        "6.1.6"
+      ],
+      "textbook_pages": "76",
+      "focus": "设计一个影子游戏并向同伴演示其中一处影子如何形成。"
+    },
+    {
+      "pdp": 31,
+      "date": "2027-08-12",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 7,
+      "unit": "电",
+      "topic": "电路元件和功能",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.1",
+        "7.1.2"
+      ],
+      "textbook_pages": "80–82",
+      "focus": "辨认电池、灯泡及开关，并说明各元件在闭合电路中的用途。"
+    },
+    {
+      "pdp": 32,
+      "date": "2027-08-17",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 7,
+      "unit": "电",
+      "topic": "组装完整电路",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.3"
+      ],
+      "textbook_pages": "80–81",
+      "focus": "用干电池、开关、灯泡和导线组装电路，以灯泡亮灭检查连接。"
+    },
+    {
+      "pdp": 33,
+      "date": "2027-08-24",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 7,
+      "unit": "电",
+      "topic": "灯泡不亮的原因",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.4"
+      ],
+      "textbook_pages": "83–84",
+      "focus": "根据两张电路图预测灯泡不亮的原因，并检查一项可能的故障。"
+    },
+    {
+      "pdp": 34,
+      "date": "2027-09-07",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 7,
+      "unit": "电",
+      "topic": "测试物品能否导电",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.5",
+        "7.1.6"
+      ],
+      "textbook_pages": "84–85",
+      "focus": "用低压干电池电路测试回形针和橡皮等物品，根据灯泡亮灭分类。"
+    },
+    {
+      "pdp": 35,
+      "date": "2027-09-14",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 7,
+      "unit": "电",
+      "topic": "汇报电路测试",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.7"
+      ],
+      "textbook_pages": "85–86",
+      "focus": "用表格或口头说明汇报两项电路测试结果，用观察证据解释其中一项。"
+    },
+    {
+      "pdp": 36,
+      "date": "2027-09-21",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "混合物",
+      "topic": "认识分离混合物的方法",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1"
+      ],
+      "textbook_pages": "90–92",
+      "focus": "尝试用筛子或磁铁分离混合物，描述分离时使用的物质特征。"
+    },
+    {
+      "pdp": 37,
+      "date": "2027-09-23",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "混合物",
+      "topic": "选择分离混合物的方法",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.2"
+      ],
+      "textbook_pages": "91–92, 96",
+      "focus": "为两种混合物选择方法，说明颗粒大小或磁性如何影响选择。"
+    },
+    {
+      "pdp": 38,
+      "date": "2027-09-28",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "混合物",
+      "topic": "辨认能溶解的物质",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.3"
+      ],
+      "textbook_pages": "93–94",
+      "focus": "用等量的水测试三种物质，以观察到的颗粒作为分类依据。"
+    },
+    {
+      "pdp": 39,
+      "date": "2027-10-05",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "混合物",
+      "topic": "比较溶解速度",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.4",
+        "8.1.5"
+      ],
+      "textbook_pages": "95–96",
+      "focus": "比较搅拌与不搅拌两杯糖水。保持其他条件相同，记录溶解所需的时间。"
+    },
+    {
+      "pdp": 40,
+      "date": "2027-10-12",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 9,
+      "unit": "地球",
+      "topic": "天然水源",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.1"
+      ],
+      "textbook_pages": "100–101",
+      "focus": "从图片举出三种天然水源，并说明一种节约用水的做法。"
+    },
+    {
+      "pdp": 41,
+      "date": "2027-10-19",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 9,
+      "unit": "地球",
+      "topic": "水流方向",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.2",
+        "9.1.3"
+      ],
+      "textbook_pages": "102–103",
+      "focus": "改变托盘的倾斜方向，再参照河流或瀑布图概括水的自然流向。"
+    },
+    {
+      "pdp": 42,
+      "date": "2027-10-21",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 9,
+      "unit": "地球",
+      "topic": "自然界的水循环",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.4",
+        "9.1.5"
+      ],
+      "textbook_pages": "104–107",
+      "focus": "排列蒸发、形成云、降雨和汇流图卡，并在图上标示流程。"
+    },
+    {
+      "pdp": 43,
+      "date": "2027-10-26",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 9,
+      "unit": "地球",
+      "topic": "空气的存在及组成",
+      "sk": [
+        "9.2"
+      ],
+      "sp": [
+        "9.2.1",
+        "9.2.2"
+      ],
+      "textbook_pages": "110–111",
+      "focus": "观察水中气泡作为空气存在的证据，并说出空气中的两种气体。"
+    },
+    {
+      "pdp": 44,
+      "date": "2027-11-02",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 9,
+      "unit": "地球",
+      "topic": "风及其对生活的影响",
+      "sk": [
+        "9.2"
+      ],
+      "sp": [
+        "9.2.3",
+        "9.2.4"
+      ],
+      "textbook_pages": "111–112",
+      "focus": "观察纸条在风中的变化，说明风是一种空气流动，并各举一个利弊例子。"
+    },
+    {
+      "pdp": 45,
+      "date": "2027-11-09",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 9,
+      "unit": "地球",
+      "topic": "利用风制作模型",
+      "sk": [
+        "9.2"
+      ],
+      "sp": [
+        "9.2.5",
+        "9.2.6"
+      ],
+      "textbook_pages": "113",
+      "focus": "制作一个简易风车，比较两种测试条件并说明空气如何使风车转动。"
+    },
+    {
+      "pdp": 46,
+      "date": "2027-11-16",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 10,
+      "unit": "工艺",
+      "topic": "选择模型和组件",
+      "sk": [
+        "10.1"
+      ],
+      "sp": [
+        "10.1.1",
+        "10.1.2"
+      ],
+      "textbook_pages": "117–120",
+      "focus": "从图册选一个模型，并逐项核对所需组件的形状与数量。"
+    },
+    {
+      "pdp": 47,
+      "date": "2027-11-23",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 10,
+      "unit": "工艺",
+      "topic": "组装和拆卸模型",
+      "sk": [
+        "10.1"
+      ],
+      "sp": [
+        "10.1.3",
+        "10.1.5"
+      ],
+      "textbook_pages": "121–126",
+      "focus": "按图册组装及测试模型，再依相反次序拆卸并清点零件。"
+    },
+    {
+      "pdp": 48,
+      "date": "2027-11-30",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 10,
+      "unit": "工艺",
+      "topic": "创造并介绍新模型",
+      "sk": [
+        "10.1"
+      ],
+      "sp": [
+        "10.1.4",
+        "10.1.5",
+        "10.1.6"
+      ],
+      "textbook_pages": "126–127",
+      "focus": "设计图册以外的模型，演示一项用途。听取同伴意见后调整，再拆卸和归位。"
+    }
+  ]
+}

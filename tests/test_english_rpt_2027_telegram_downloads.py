@@ -118,6 +118,29 @@ class TelegramRPTTests(unittest.TestCase):
         self.assertEqual(activities[8], "10–11")
         self.assertEqual(activities[9], "12")
 
+    def test_sains_sjkc_year_two_pdf_and_word_are_paid_only(self):
+        from rpt_2027.sjkc.sains.documents import document_path
+
+        callback = self.namespace["callback"]
+        callback(123, "rpt2027_sains_sjkc:2:docx")
+        self.assertIn("Akses Terhad", self.messages[-1][1])
+        self.assertEqual(self.documents, [])
+
+        self.active = True
+        callback(123, "rpt2027_year_2")
+        buttons = {b["callback_data"]: b["text"] for row in self.messages[-1][2] for b in row}
+        for fmt in ("pdf", "docx"):
+            key = f"rpt2027_sains_sjkc:2:{fmt}"
+            self.assertIn("Sains (SJKC)", buttons[key])
+            callback(123, key)
+            self.assertEqual(Path(self.documents[-1][1]), document_path(2, fmt))
+        callback(123, "rpt2027_year_3")
+        self.assertFalse(any(b["callback_data"].startswith("rpt2027_sains_sjkc:")
+                             for row in self.messages[-1][2] for b in row))
+        callback(123, "rpt2027_sains_sjkc:3:pdf")
+        self.assertIn("tidak sah", self.messages[-1][1])
+        self.assertEqual(len(self.documents), 2)
+
     def test_sjkc_delivery_requires_telegram_confirmation(self):
         self.active = True
         self.namespace["_telegram_delivery_ok_v25279"] = lambda result: False
