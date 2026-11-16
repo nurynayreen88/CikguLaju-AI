@@ -60,7 +60,7 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                         self.assertLessEqual(tab["right"],metrics["right"]+1,metrics)
                         self.assertGreaterEqual(tab["width"],60,metrics)
                     # Users must be able to navigate without a swipe.
-                    page.get_by_role("button",name="Profil & Akses").click()
+                    page.get_by_role("button",name="Profil & Akses",exact=True).click()
                     self.assertFalse(page.locator("#view-account").get_attribute("hidden") is not None)
                     self.assertEqual(page.locator('[data-web-view="account"]').get_attribute("aria-current"),"page")
                     page.get_by_role("button",name="Rakan Pembangun").click()
