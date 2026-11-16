@@ -98,6 +98,32 @@ Minggu 1, 10 dan 11 meningkat daripada tiga kepada empat sesi. Minggu 1 bermula 
 
 Lima salinan semakan boleh dibina dengan `python tools/build_english_rpt_2027_review.py <folder-keluaran>` menggunakan PyMuPDF, ReportLab dan font DejaVu Sans. Setiap salinan mempunyai 44 baris takwim A/B, 147 Lesson bertarikh dan lampiran Lesson 148–160 bersama SK/SP serta rujukan bahan sedia ada. Agihan penuh untuk Web dan Telegram masih dalam semakan.
 
+### Sesi yang boleh dipulihkan mengikut negeri
+
+Kiraan bermula daripada 147 sesi dalam jadual bersama. Setiap sesi ialah 60 minit, dengan maksimum empat sesi seminggu. Tarikh akhir kekal 4 November (A) dan 5 November (B), atau lebih awal jika pentaksiran/UASA bermula dahulu.
+
+| Minggu | Hari yang boleh digunakan dalam agihan | Sesi tambahan berbanding jadual bersama |
+| --- | --- | ---: |
+| 5 · 31 Jan–4 Feb (A), 1–5 Feb (B) | Empat sesi di Kumpulan A dan negeri Kumpulan B di luar WP. Kuala Lumpur, Labuan dan Putrajaya ada Hari Wilayah pada 1 Februari dan cuti tambahan KPM pada 5 Februari, jadi gunakan tiga sesi dalam jadual contoh. | +1 di luar tiga WP |
+| 35 · 26–30 Sep (A), 27 Sep–1 Okt (B) | Empat sesi di luar Kelantan. Kelantan mempunyai dua cuti negeri pada 29 dan 30 September, jadi gunakan tiga sesi dalam jadual contoh. | +1 di luar Kelantan |
+| 39 · 24–28 Okt (A), 25–29 Okt (B) | Kumpulan A boleh menggunakan 24–26 Oktober. Kebanyakan Kumpulan B boleh menggunakan 25–26 Oktober. Sarawak boleh menggunakan 25–27 dan 29 Oktober. | +1 A, +2 Sarawak |
+
+| Negeri atau wilayah | Lesson Minggu 5 | Lesson Minggu 35 | Lesson Minggu 39 | Lesson Minggu 40 | Jumlah | Baki sebelum UASA |
+| --- | --- | --- | --- | --- | ---: | --- |
+| Kedah dan Terengganu | 017–020 | 128–131 | 144–146 | 147–150 | 150 | 151–160 |
+| Kelantan | 017–020 | 128–130 | 143–145 | 146–149 | 149 | 150–160 |
+| WP Kuala Lumpur, Labuan dan Putrajaya | 017–019 | 127–130 | 143–144 | 145–148 | 148 | 149–160 |
+| Kumpulan B selain WP dan Sarawak | 017–020 | 128–131 | 144–145 | 146–149 | 149 | 150–160 |
+| Sarawak | 017–020 | 128–131 | 144–147 | 148–151 | 151 | 152–160 |
+
+Julat dalam jadual dikira semula secara berturutan. Angka mengandaikan semua sesi Minggu 18 dan 40 tersedia. Jika sesi pentaksiran menutup Minggu 18, tolak empat. Kedah dan Terengganu mungkin memerlukan dua sesi pada satu hari untuk mencapai empat sesi pada Minggu 1 kerana Israk dan Mikraj pada 6 Januari. Jika jadual sebenar hanya menyediakan tiga sesi, tolak satu daripada jumlah tersebut.
+
+Minggu 6 dan 19 mempunyai kapasiti sifar selepas mengambil kira cuti umum, cuti ganti dan cuti tambahan KPM. Minggu 20 mempunyai tiga hari sekolah kerana Awal Muharam dan Hari Keputeraan Agong, dengan cuti ganti Awal Muharam pada 8 Jun di Kumpulan B. Jika jadual membenarkan dua sesi 60 minit pada hari yang sama, Minggu 20 boleh mencapai empat sesi melalui susunan 2 + 1 + 1. Pilihan yang sama boleh menambah satu sesi di Kelantan pada Minggu 35 dan di Kumpulan A pada Minggu 39. Kebanyakan Kumpulan B mempunyai dua hari sekolah pada Minggu 39, jadi hanya jadual yang benar-benar memuatkan 2 + 2 boleh mencapai empat sesi pada minggu itu. Angka ini ialah pilihan jadual dan belum dimasukkan ke dalam jumlah negeri.
+
+Dengan 38 minggu calon, had teori ialah 152 sesi apabila semua minggu calon mencapai empat sesi. Masih ada sekurang-kurangnya lapan Lesson tanpa sesi sebelum UASA, walaupun semua pilihan jadual tersebut dapat dipenuhi.
+
+Sumber tarikh. [Jadual Hari Kelepasan Am BKPP 2027](https://www.kabinet.gov.my/hari-kelepasan-am/), [jadual tarikh dan negeri](https://kongsilah.my/wp-content/uploads/2026/10/Hari-Cuti-Umum-2027.pdf), [Lampiran C takwim KPM](https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik) dan [ringkasan tarikh cuti ganti Awal Muharam](https://kalendar.ecentral.my/peristiwa/cuti-ganti-awal-muharram).
+
 Rujukan 2026. [Year 2](https://www.scribd.com/document/989617346/Rpt-English-Year-2-Sk-2026-by-Rozayusacademy-Kump-a-b), [Year 3 (satu minggu ulang kaji)](https://www.scribd.com/document/1031590988/3-Rpt-English-Year-3-Sk-2026), [Year 3 (dua minggu ulang kaji)](https://www.scribd.com/document/1006654453/RPT-ENGLISH-YEAR-3-SK-2026-by-RozayusAcademy-Kump-A-B), [Year 4](https://www.scribd.com/document/1048941884/Rpt-English-Year-4-Sk-2026-by-Rozayusacademy-Kump-a-b), [Year 5](https://www.scribd.com/document/973840203/Rpt-English-Year-5-Sk-2026-by-Rozayusacademy-Kump-a-b) dan [Year 6](https://www.scribd.com/document/989617349/Rpt-English-Year-6-Sk-2026-by-Rozayusacademy-Kump-a-b).
 
 Rujukan kurikulum dan takwim. [Indeks SOW English SK Year 2–6](english_primary_2_6_official_sow_index_20261103.json), [SOW Year 2](https://padlet-uploads.storage.googleapis.com/214113651/3bcd8848911cb74a8c164ebcc18198bc/Primary_Year_2_SK_Scheme_of_Work.pdf), [SOW Year 3–6](https://sites.google.com/moe-dl.edu.my/bahasa-inggeris-2026/dokumen-standard-kurikulum), [panduan peruntukan masa English SK](https://anyflip.com/zsllg/ejcr/basic/) dan [Takwim KPM 2027](https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik).
