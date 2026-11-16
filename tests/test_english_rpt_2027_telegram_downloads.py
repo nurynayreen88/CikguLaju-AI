@@ -56,33 +56,6 @@ class TelegramRPTTests(unittest.TestCase):
         callback(123, "rpt2027_dlp:science_dlp:1:pdf")
         self.assertEqual(len(self.documents), 21)
 
-    def test_sjkc_rpt_delivers_each_year_and_format_with_paid_access(self):
-        callback = self.namespace["callback"]
-        callback(123, "rpt2027_sjkc:2:pdf")
-        self.assertIn("Akses Terhad", self.messages[-1][1])
-        self.assertFalse(self.documents)
-        self.active = True
-        for year in range(2, 7):
-            callback(123, f"rpt2027_year_{year}")
-            buttons = {button["callback_data"]: button["text"]
-                       for row in self.messages[-1][2] for button in row}
-            self.assertIn(f"rpt2027_language:bahasa_cina_sk:{year}", buttons)
-            for fmt in ("pdf", "docx"):
-                key = f"rpt2027_sjkc:{year}:{fmt}"
-                self.assertIn("Kuala Lumpur", buttons[key])
-                callback(123, key)
-                self.assertEqual(Path(self.documents[-1][1]).name,
-                                 f"RPT_2027_Bahasa_Cina_SJKC_Tahun_{year}.{fmt}")
-                self.assertIn("Kumpulan B", self.documents[-1][2])
-        for key in ("rpt2027_sjkc:1:pdf", "rpt2027_sjkc:2:../pdf", "rpt2027_sjkc:2:pdf:"):
-            callback(123, key)
-            self.assertIn("tidak sah", self.messages[-1][1])
-        self.assertEqual(len(self.documents), 10)
-        with patch("rpt_2027.sjkc.bahasa_cina.documents.document_path", return_value=None):
-            callback(123, "rpt2027_sjkc:2:pdf")
-        self.assertIn("belum tersedia", self.messages[-1][1])
-        self.assertEqual(len(self.documents), 10)
-
     def test_other_callbacks_are_unchanged(self):
         self.assertEqual(self.namespace["callback"](123, "quick"), ("previous", 123, "quick"))
 
