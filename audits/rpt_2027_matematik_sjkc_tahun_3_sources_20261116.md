@@ -78,4 +78,15 @@ Semua 12 SP Unit 2 diliputi. Bahagian pengukuhan merujuk SK yang telah diajar. S
 - [PPD Batu Pahat](https://sites.google.com/moe-dl.edu.my/ppd-batu-pahat-sains-matematik/buku-teks-digital-bidang-sains-matematik/buku-teks-sekolah-rendah/matematik-tahun-3) menyediakan [Buku Teks Jilid 1](https://drive.google.com/file/d/12iJbw8rlfzF0Y91v-aE5z1D440AiuIPm/view), [Buku Teks Jilid 2](https://drive.google.com/file/d/1HWMc4QH_SbjkREbL26o-WV3EOXsBYYLd/view) dan [Buku Aktiviti](https://drive.google.com/file/d/1HCvmazsZB73lwTvaUX6HXLRf5CoM0_Zq/view).
 - [Kalendar Akademik KPM 2027](https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik).
 
-Padanan lengkap mengikut PdP, agihan tarikh dan fail Word/PDF masih dalam penyediaan. Indeks ini khusus untuk semakan dalaman.
+## Draf RPT dan RPH Tahun 3 untuk semakan
+
+[Data padanan](../staging/matematik_sjkc/tahun_3/year_3_2027.json) memautkan 96 PdP RPT kepada 96 RPH berbahasa Cina. Pengiraan fail mengesahkan sembilan unit, 52 SK dan 102 kod induk SP. Agihan PdP mengikut unit ialah 12, 14, 15, 12, 10, 17, 7, 4 dan 5. Setiap PdP memperuntukkan 60 minit.
+
+| Bahan | Word | PDF |
+| --- | --- | --- |
+| RPT | [12 halaman](../staging/matematik_sjkc/tahun_3/RPT_2027_Matematik_SJKC_Tahun_3.docx) | [12 halaman](../staging/matematik_sjkc/tahun_3/RPT_2027_Matematik_SJKC_Tahun_3.pdf) |
+| RPH | [96 halaman](../staging/matematik_sjkc/tahun_3/RPH_2027_Matematik_SJKC_Tahun_3.docx) | [96 halaman](../staging/matematik_sjkc/tahun_3/RPH_2027_Matematik_SJKC_Tahun_3.pdf) |
+
+RPT menggunakan 44 baris minggu daripada takwim yang digunakan pada RPT SJKC Tahun 2, dengan dua julat tarikh per minggu di jadual yang sama. Agihan mengekalkan maksimum tiga PdP dalam satu minggu dan mengosongkan minggu 1, 6 dan 19. RPH diperiksa mengikut turutan 001–096, satu halaman A4 setiap PdP. Medan tarikh, masa dan kelas diisi mengikut jadual guru.
+
+Padanan kod dan rujukan muka surat menggunakan DSKP serta dua jilid Buku Teks, dengan halaman bercetak pada isi buku sebagai rujukan utama. Pada Unit 3, perpuluhan bermula pada m.s. 92–93 dan peratus pada m.s. 101. Rujukan Buku Aktiviti menggunakan item yang dapat dilihat dan, untuk baki halaman, nombor yang dicatat dalam nota guru Buku Teks. Semakan item yang berbaki, kelulusan kandungan dan pengesahan penjana melalui Web serta Telegram perlu dibuat sebelum status READY atau penerbitan.
