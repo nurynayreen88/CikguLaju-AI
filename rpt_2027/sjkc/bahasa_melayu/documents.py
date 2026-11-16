@@ -2,7 +2,7 @@ from pathlib import Path
 
 CODE = "bahasa_melayu_sjk"
 LABEL = "Bahasa Melayu (SJK)"
-YEARS = (2, 3, 4)
+YEARS = (2, 3, 4, 5)
 FORMATS = {"pdf": "PDF", "docx": "Word"}
 ROOT = Path(__file__).resolve().parent
 
