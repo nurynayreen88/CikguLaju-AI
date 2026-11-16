@@ -103,6 +103,28 @@ class TelegramRPTTests(unittest.TestCase):
             self.assertIn("tidak sah", self.messages[-1][1])
         self.assertEqual(len(self.documents), 10)
 
+    def test_sjk_word_has_one_shared_calendar_per_week(self):
+        from zipfile import ZipFile
+        from xml.etree import ElementTree
+
+        root = Path(__file__).resolve().parents[1] / "rpt_2027" / "sjkc"
+        docs = sorted(root.glob("*/*.docx"))
+        self.assertEqual(len(docs), 16)
+        ns = {"w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"}
+        for path in docs:
+            with self.subTest(document=path.name), ZipFile(path) as doc:
+                xml = ElementTree.fromstring(doc.read("word/document.xml"))
+                bands = [text.text for text in xml.findall(".//w:t", ns)
+                         if text.text and text.text.startswith("Minggu ") and " |   Kumpulan A" in text.text]
+                self.assertEqual(len(bands), 44)
+                for number, band in enumerate(bands, 1):
+                    self.assertRegex(band, rf"^Minggu {number:02d} +\| +Kumpulan A +")
+                    self.assertRegex(band, r"Kumpulan B +\d{2}/\d{2}–\d{2}/\d{2}")
+                self.assertIn("Kumpulan A  04/01–07/01", bands[0])
+                self.assertIn("Kumpulan B  04/01–08/01", bands[0])
+                self.assertIn("Kumpulan A  28/11–02/12", bands[-1])
+                self.assertIn("Kumpulan B  29/11–03/12", bands[-1])
+
     def test_bm_sjk_year_six_references_follow_printed_activity_pages(self):
         import json
 
