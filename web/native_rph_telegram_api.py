@@ -398,6 +398,35 @@ def create_native_rph_blueprint(runtime):
             current_app.logger.exception("DLP document generation failed for %s", lesson["id"])
             return jsonify({"error": "DLP document generation unavailable"}), 503
 
+    @bp.post("/internal/rph/v1/matematik-sjkc/preview")
+    def matematik_sjkc_preview():
+        from flask import current_app
+        from staging.matematik_sjkc.tahun_3.rph import resolve, render
+
+        allowed, status = _authorized()
+        if not allowed:
+            return jsonify({"error": "Unauthorized renderer"}), status
+        if not request.is_json or not 0 < (request.content_length or 0) <= 1000:
+            return jsonify({"error": "Invalid render body"}), 400
+        body = request.get_json(silent=True)
+        if (not isinstance(body, dict) or set(body) != {"year", "unit", "pdp", "format"} or
+                any(type(body[key]) is not int for key in ("year", "unit", "pdp")) or
+                not isinstance(body["format"], str) or body["format"] not in MIMES):
+            return jsonify({"error": "Invalid Matematik SJKC selection"}), 400
+        if body["year"] != 3:
+            return jsonify({"error": "Matematik SJKC lesson unavailable"}), 404
+        try:
+            lesson = resolve(body["unit"], body["pdp"])
+            if lesson is None:
+                return jsonify({"error": "Matematik SJKC lesson unavailable"}), 404
+            name, document = render(lesson, body["format"])
+            response = Response(document, mimetype=MIMES[body["format"]])
+            response.headers["Content-Disposition"] = f'attachment; filename="{name}"'
+            return response
+        except (OSError, ValueError, KeyError):
+            current_app.logger.exception("Matematik SJKC RPH preview failed")
+            return jsonify({"error": "Matematik SJKC preview unavailable"}), 503
+
     @bp.post("/internal/rph/v1/render")
     def render():
         allowed,status=_authorized()
