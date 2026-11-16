@@ -361,7 +361,7 @@ class DailyTimetableRouteTests(TestCase):
         self.assertIn('data-web-view="today"',page)
         self.assertIn('id="today-confirm-school-day"',page)
         self.assertIn("window.prepareRphFromToday",page)
-        self.assertIn('showWebView("today");window.rphTodayLoad?.()',page)
+        self.assertIn('if(button.dataset.webView==="today")window.rphTodayLoad?.();',page)
         self.assertIn('subject.dispatchEvent(new Event("change"))',page)
         self.assertIn('"/api/web/rph/hari-ini"',daily)
         self.assertIn("!confirm.checked",daily)

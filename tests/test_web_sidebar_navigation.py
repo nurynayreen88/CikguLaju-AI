@@ -52,19 +52,19 @@ class WebSidebarTabsTests(unittest.TestCase):
         self.assertIn('class="app-sidebar"',self.html)
         self.assertIn('class="sidebar-menu"',self.html)
 
-    def test_profile_first_in_desktop_and_mobile_navigation(self):
-        """Profil appears before all teaching tabs, but Today is still home."""
+    def test_guide_is_home_in_desktop_and_mobile_navigation(self):
         import re
         menu=re.search(r'<nav class="sidebar-menu"[^>]*>(.*?)</nav>',
                        self.html,flags=re.S)
         self.assertIsNotNone(menu)
         choices=re.findall(r'data-web-view="([^"]+)"',menu.group(1))
-        self.assertEqual(choices[0],"account")
-        self.assertEqual(choices[1],"today")
+        self.assertEqual(choices[:3],["guide","account","today"])
         self.assertEqual(len(choices),len(set(choices)))
         self.assertIn('data-web-view="account" aria-controls="view-account"',menu.group(1))
-        self.assertIn('data-web-view="today" aria-controls="view-today" aria-current="page"',menu.group(1))
-        self.assertIn('showWebView("today");window.rphTodayLoad?.();return;',self.html)
+        self.assertIn('data-web-view="guide" aria-controls="view-guide" aria-current="page"',menu.group(1))
+        self.assertEqual(menu.group(1).count('aria-current="page"'),1)
+        self.assertIn('showWebView("guide");',self.html)
+        self.assertIn('data-guide-view="today" aria-controls="view-today"',self.html)
         # Same markup is reused for mobile, no separate ordering is necessary.
         self.assertIn('.sidebar-menu{display:grid;grid-template-columns:',self.html)
 

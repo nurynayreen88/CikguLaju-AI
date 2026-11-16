@@ -2,6 +2,12 @@ name: Web mobile menu browser QA
 on:
   push:
     branches: [fix/web-mobile-menu-grid-20261106]
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'web_v1_static_preview/index.html'
+      - 'tests/test_web_mobile_menu_browser.py'
+      - '.github/workflows/web-mobile-menu-browser-qa.yml'
   workflow_dispatch:
 permissions:
   contents: read

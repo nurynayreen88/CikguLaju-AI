@@ -89,7 +89,6 @@ class SavedClassTests(unittest.TestCase):
         self.assertIn('toggleTeacherClassOther()',s)
         self.assertIn('choices.add(new Option(clean,clean))',s)
         self.assertIn('loadTeacherClasses();',s)
-        self.assertIn('showWebView("today");window.rphTodayLoad?.();return;',s)
         self.assertIn('if(!response.ok)return;',s)
         self.assertNotIn('list="saved-teacher-classes"',s)
         self.assertNotIn('id="teacher-class" type="text"',s)
