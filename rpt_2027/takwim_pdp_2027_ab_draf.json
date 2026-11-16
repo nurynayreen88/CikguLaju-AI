@@ -1,0 +1,628 @@
+{
+  "tahun": 2027,
+  "sumber_takwim": "https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik",
+  "status": "DRAF_PERANCANGAN_BERSAMA_A_B",
+  "bilangan_minggu_persekolahan": 44,
+  "bilangan_minggu_calon_pengajaran": 35,
+  "minggu_akhir_pengajaran": 38,
+  "cuti_penggal": [
+    {
+      "nama": "Cuti Penggal 1",
+      "A": [
+        "2027-03-05",
+        "2027-03-13"
+      ],
+      "B": [
+        "2027-03-06",
+        "2027-03-14"
+      ]
+    },
+    {
+      "nama": "Cuti Pertengahan Tahun",
+      "A": [
+        "2027-05-21",
+        "2027-06-05"
+      ],
+      "B": [
+        "2027-05-22",
+        "2027-06-06"
+      ]
+    },
+    {
+      "nama": "Cuti Penggal 2",
+      "A": [
+        "2027-08-27",
+        "2027-09-04"
+      ],
+      "B": [
+        "2027-08-28",
+        "2027-09-05"
+      ]
+    },
+    {
+      "nama": "Cuti Akhir Persekolahan",
+      "A": [
+        "2027-12-03",
+        "2027-12-31"
+      ],
+      "B": [
+        "2027-12-04",
+        "2027-12-31"
+      ]
+    }
+  ],
+  "minggu": [
+    {
+      "minggu": 1,
+      "A": [
+        "2027-01-04",
+        "2027-01-07"
+      ],
+      "B": [
+        "2027-01-04",
+        "2027-01-08"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 2,
+      "A": [
+        "2027-01-10",
+        "2027-01-14"
+      ],
+      "B": [
+        "2027-01-11",
+        "2027-01-15"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 3,
+      "A": [
+        "2027-01-17",
+        "2027-01-21"
+      ],
+      "B": [
+        "2027-01-18",
+        "2027-01-22"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 4,
+      "A": [
+        "2027-01-24",
+        "2027-01-28"
+      ],
+      "B": [
+        "2027-01-25",
+        "2027-01-29"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 5,
+      "A": [
+        "2027-01-31",
+        "2027-02-04"
+      ],
+      "B": [
+        "2027-02-01",
+        "2027-02-05"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 6,
+      "A": [
+        "2027-02-07",
+        "2027-02-11"
+      ],
+      "B": [
+        "2027-02-08",
+        "2027-02-12"
+      ],
+      "status": "cuti_perayaan_kapasiti_bersama_sifar",
+      "boleh_jadualkan_pdp": false
+    },
+    {
+      "minggu": 7,
+      "A": [
+        "2027-02-14",
+        "2027-02-18"
+      ],
+      "B": [
+        "2027-02-15",
+        "2027-02-19"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 8,
+      "A": [
+        "2027-02-21",
+        "2027-02-25"
+      ],
+      "B": [
+        "2027-02-22",
+        "2027-02-26"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 9,
+      "A": [
+        "2027-02-28",
+        "2027-03-04"
+      ],
+      "B": [
+        "2027-03-01",
+        "2027-03-05"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 10,
+      "A": [
+        "2027-03-14",
+        "2027-03-18"
+      ],
+      "B": [
+        "2027-03-15",
+        "2027-03-19"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 11,
+      "A": [
+        "2027-03-21",
+        "2027-03-25"
+      ],
+      "B": [
+        "2027-03-22",
+        "2027-03-26"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 12,
+      "A": [
+        "2027-03-28",
+        "2027-04-01"
+      ],
+      "B": [
+        "2027-03-29",
+        "2027-04-02"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 13,
+      "A": [
+        "2027-04-04",
+        "2027-04-08"
+      ],
+      "B": [
+        "2027-04-05",
+        "2027-04-09"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 14,
+      "A": [
+        "2027-04-11",
+        "2027-04-15"
+      ],
+      "B": [
+        "2027-04-12",
+        "2027-04-16"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 15,
+      "A": [
+        "2027-04-18",
+        "2027-04-22"
+      ],
+      "B": [
+        "2027-04-19",
+        "2027-04-23"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 16,
+      "A": [
+        "2027-04-25",
+        "2027-04-29"
+      ],
+      "B": [
+        "2027-04-26",
+        "2027-04-30"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 17,
+      "A": [
+        "2027-05-02",
+        "2027-05-06"
+      ],
+      "B": [
+        "2027-05-03",
+        "2027-05-07"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 18,
+      "A": [
+        "2027-05-09",
+        "2027-05-13"
+      ],
+      "B": [
+        "2027-05-10",
+        "2027-05-14"
+      ],
+      "status": "pentaksiran_pertengahan_tahun",
+      "boleh_jadualkan_pdp": false
+    },
+    {
+      "minggu": 19,
+      "A": [
+        "2027-05-16",
+        "2027-05-20"
+      ],
+      "B": [
+        "2027-05-17",
+        "2027-05-21"
+      ],
+      "status": "cuti_perayaan_kapasiti_bersama_sifar",
+      "boleh_jadualkan_pdp": false
+    },
+    {
+      "minggu": 20,
+      "A": [
+        "2027-06-06",
+        "2027-06-10"
+      ],
+      "B": [
+        "2027-06-07",
+        "2027-06-11"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 21,
+      "A": [
+        "2027-06-13",
+        "2027-06-17"
+      ],
+      "B": [
+        "2027-06-14",
+        "2027-06-18"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 22,
+      "A": [
+        "2027-06-20",
+        "2027-06-24"
+      ],
+      "B": [
+        "2027-06-21",
+        "2027-06-25"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 23,
+      "A": [
+        "2027-06-27",
+        "2027-07-01"
+      ],
+      "B": [
+        "2027-06-28",
+        "2027-07-02"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 24,
+      "A": [
+        "2027-07-04",
+        "2027-07-08"
+      ],
+      "B": [
+        "2027-07-05",
+        "2027-07-09"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 25,
+      "A": [
+        "2027-07-11",
+        "2027-07-15"
+      ],
+      "B": [
+        "2027-07-12",
+        "2027-07-16"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 26,
+      "A": [
+        "2027-07-18",
+        "2027-07-22"
+      ],
+      "B": [
+        "2027-07-19",
+        "2027-07-23"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 27,
+      "A": [
+        "2027-07-25",
+        "2027-07-29"
+      ],
+      "B": [
+        "2027-07-26",
+        "2027-07-30"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 28,
+      "A": [
+        "2027-08-01",
+        "2027-08-05"
+      ],
+      "B": [
+        "2027-08-02",
+        "2027-08-06"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 29,
+      "A": [
+        "2027-08-08",
+        "2027-08-12"
+      ],
+      "B": [
+        "2027-08-09",
+        "2027-08-13"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 30,
+      "A": [
+        "2027-08-15",
+        "2027-08-19"
+      ],
+      "B": [
+        "2027-08-16",
+        "2027-08-20"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 31,
+      "A": [
+        "2027-08-22",
+        "2027-08-26"
+      ],
+      "B": [
+        "2027-08-23",
+        "2027-08-27"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 32,
+      "A": [
+        "2027-09-05",
+        "2027-09-09"
+      ],
+      "B": [
+        "2027-09-06",
+        "2027-09-10"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 33,
+      "A": [
+        "2027-09-12",
+        "2027-09-16"
+      ],
+      "B": [
+        "2027-09-13",
+        "2027-09-17"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 34,
+      "A": [
+        "2027-09-19",
+        "2027-09-23"
+      ],
+      "B": [
+        "2027-09-20",
+        "2027-09-24"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 35,
+      "A": [
+        "2027-09-26",
+        "2027-09-30"
+      ],
+      "B": [
+        "2027-09-27",
+        "2027-10-01"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 36,
+      "A": [
+        "2027-10-03",
+        "2027-10-07"
+      ],
+      "B": [
+        "2027-10-04",
+        "2027-10-08"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 37,
+      "A": [
+        "2027-10-10",
+        "2027-10-14"
+      ],
+      "B": [
+        "2027-10-11",
+        "2027-10-15"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 38,
+      "A": [
+        "2027-10-17",
+        "2027-10-21"
+      ],
+      "B": [
+        "2027-10-18",
+        "2027-10-22"
+      ],
+      "status": "pengajaran",
+      "boleh_jadualkan_pdp": true
+    },
+    {
+      "minggu": 39,
+      "A": [
+        "2027-10-24",
+        "2027-10-28"
+      ],
+      "B": [
+        "2027-10-25",
+        "2027-10-29"
+      ],
+      "status": "persediaan_uasa_atau_uasa_mengikut_sekolah",
+      "boleh_jadualkan_pdp": false
+    },
+    {
+      "minggu": 40,
+      "A": [
+        "2027-10-31",
+        "2027-11-04"
+      ],
+      "B": [
+        "2027-11-01",
+        "2027-11-05"
+      ],
+      "status": "cadangan_ruang_uasa",
+      "boleh_jadualkan_pdp": false
+    },
+    {
+      "minggu": 41,
+      "A": [
+        "2027-11-07",
+        "2027-11-11"
+      ],
+      "B": [
+        "2027-11-08",
+        "2027-11-12"
+      ],
+      "status": "aktiviti_selepas_uasa",
+      "boleh_jadualkan_pdp": false
+    },
+    {
+      "minggu": 42,
+      "A": [
+        "2027-11-14",
+        "2027-11-18"
+      ],
+      "B": [
+        "2027-11-15",
+        "2027-11-19"
+      ],
+      "status": "aktiviti_selepas_uasa_akhir_tahun",
+      "boleh_jadualkan_pdp": false
+    },
+    {
+      "minggu": 43,
+      "A": [
+        "2027-11-21",
+        "2027-11-25"
+      ],
+      "B": [
+        "2027-11-22",
+        "2027-11-26"
+      ],
+      "status": "aktiviti_akhir_tahun",
+      "boleh_jadualkan_pdp": false
+    },
+    {
+      "minggu": 44,
+      "A": [
+        "2027-11-28",
+        "2027-12-02"
+      ],
+      "B": [
+        "2027-11-29",
+        "2027-12-03"
+      ],
+      "status": "aktiviti_akhir_tahun",
+      "boleh_jadualkan_pdp": false
+    }
+  ]
+}
