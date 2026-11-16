@@ -26,13 +26,14 @@ class IntegratedWebTests(TestCase):
     @patch("web.native_telegram_integrated_english_client.integrated_enabled", return_value=True)
     @patch("web.unified_rph_web._has_paid_access", return_value=True)
     @patch("web.unified_rph_web._account", return_value=({"telegram_user_id": 123}, None))
-    def test_aliases_both_download_one_pdf_through_telegram_without_local_fallback(self, *_):
+    def test_aliases_both_download_one_word_and_pdf_through_telegram(self, *_):
         app = Flask(__name__)
         app.register_blueprint(create_blueprint())
         client = app.test_client()
         rows = {r["lesson"]: r for r in source_records(3, "ENGLISH")}
         with patch("web.native_telegram_integrated_english_client.request_integrated",
                    side_effect=lambda selected, fmt: [13, 14] if fmt == "metadata"
+                   else BytesIO(b"PK\x03\x04word") if fmt == "word"
                    else BytesIO(b"%PDF-1.4\n" + b"0" * 1400)) as render:
             for n in (13, 14):
                 args = {"year": 3, "subject": "ENGLISH", "unit": rows[n]["unit"],
@@ -41,11 +42,14 @@ class IntegratedWebTests(TestCase):
                         "teacher_end": "09:00", "teacher_students": "24", "rph_context": "hari-ini"}
                 available = client.get("/api/web/rph/availability", query_string=args)
                 self.assertEqual(available.json["lessons"], [13, 14])
-                response = client.get("/api/web/rph/pdf", query_string=args)
-                self.assertEqual(response.status_code, 200, response.json)
-                self.assertIn("013-014.pdf", response.headers["Content-Disposition"])
+                for fmt, extension in (("word", "docx"), ("pdf", "pdf")):
+                    response = client.get(f"/api/web/rph/{fmt}", query_string=args)
+                    self.assertEqual(response.status_code, 200, response.json)
+                    self.assertIn(f"013-014.{extension}", response.headers["Content-Disposition"])
+                    self.assertEqual(response.headers["X-RPH-Generator"], "telegram-native")
+                    response.close()
             self.assertEqual([c.args[1] for c in render.call_args_list],
-                             ["metadata", "metadata", "pdf"] * 2)
+                             ["metadata", "metadata", "word", "metadata", "pdf"] * 2)
 
 
     def test_revised_rpt_requires_verified_bytes_and_preserves_cover_entitlement(self):
