@@ -98,3 +98,25 @@ Sumber Language Arts ialah [panduan BPK bagi ringkasan bab](https://anyflip.com/
 Untuk Lesson 58, langkah dialog baharu padan dengan TB p.108 Ex5. Untuk Lesson 66, dialog Review terdapat dalam Ex6 pada TB p.54. Lesson 60 turut menggunakan soalan tentang pengalaman murid untuk SP 2.1.2, seperti dalam RPH bersepadu 59–60. Sumber Language Arts disemak terhadap SOW dan panduan BPK. Nombor halaman buku cerita bagi Lesson 63 dirujuk kepada SOW.
 
 Padanan kandungan CD1.33–CD1.34 tersedia dalam [audit audio](english_y4_y5_october_audio_content_20261117.md). Untuk CD3.08, CD3.09, CD1.36, CD1.37 dan CD3.34, nombor trek disemak dalam buku. Kandungan fail audio tersebut dan penghantaran produksi masih perlu disahkan. Kelulusan pelepasan kekal berasingan.
+
+### Semakan 17 November bagi Lesson 69 dan 71–82
+
+Sumber Learning World menggunakan SOW serta buku English Plus 1 yang dipautkan di atas. Bahan Lesson 81 dipadankan dengan [teks Miss Antrobus](https://fliphtml5.com/vxqvm/cfzc/Miss_Antrobus/) dan [panduan Year 5 Poems](https://anyflip.com/vhpqy/oagt/basic/101-150). Lesson 69 dan 75 disemak mengikut SOW, termasuk nama aktiviti, halaman rujukan dan hasil pembelajaran. Salinan lengkap halaman BPK bagi kedua-dua Lesson tersebut masih perlu disemak.
+
+| Lesson | SOW bercetak | SP utama / pelengkap | Bahan dan aktiviti bercetak | WB pilihan | Trek dalam RPH |
+| --- | ---: | --- | --- | --- | --- |
+| 69 | 106 | 5.2.1 / 2.1.5 | And Something Weird Happened; kad watak BPK p.85 menurut SOW | — | — |
+| 71 | 109 | 1.3.1 / 3.3.1 | SB 42–43 A1–2 / TB 56, kuiz mata pelajaran | 36 Ex1 | CD1.38 |
+| 72 | 110 | 2.1.1 / 4.2.1 | SB 43 A3–5 / TB 57, temu bual dan maklumat peribadi | 36 Ex4 | CD1.39 |
+| 73 | 111 | 3.2.2 / 2.1.2 | SB 44 A1, A2, A4 / TB 58, teks sekolah dan pengalaman sendiri | 40 Ex2 | CD1.40 |
+| 74 | 112 | 4.3.2 / 1.3.1 | SB 45 A1–3 / TB 59, ejaan kata kerja dan petunjuk bunyi | 37 Ex2 | CD1.41 |
+| 75 | 113 | 5.3.1 / 4.3.3 | Writer block – making up, BPK pp.121–124 menurut SOW | — | — |
+| 76 | 114 | 4.2.4 / 2.2.1 | SB 45 A4–5 / TB 59, deskripsi gambar dan dialog jemputan | 37 Ex3 | — |
+| 77 | 115 | 1.2.5 / 1.2.2 | SB 46 A1–3 / TB 60, soalan kuiz dan butiran temu bual | 38 Ex1 | CD1.42–CD1.43 |
+| 78 | 116 | 2.1.2 / 2.2.1 | SB 46 A5–6 / TB 60, pengalaman belajar dan soalan susulan | 38 Ex5 | — |
+| 79 | 117 | 3.2.3 / 4.2.4 | SB 47 A1–4 / TB 61, petunjuk perkataan dan deskripsi | 39 Ex2 | — |
+| 80 | 118 | 4.2.4 / 2.2.2 | SB 47 A5–6 / TB 61, deskripsi rutin dan persetujuan urutan kumpulan | 39 Ex4 | — |
+| 81 | 119 | 5.2.1 / 3.2.2 | Anthology of Poems p.16, dua rangkap Miss Antrobus dan sebab pilihan | — | — |
+| 82 | 120 | 4.3.2 / 3.2.3 | SB 50 A3–5, 51 A2 / TB 64–65, ejaan dan petunjuk dalam blog | 43 Ex6 | — |
+
+Lesson 70 ialah cadangan pemilihan standard yang telah disediakan melalui semakan DSKP. RPH bersepadu 77–78 menggunakan satu sesi dan satu RPH berdasarkan jadual Oktober. Padanan kandungan CD1.42–CD1.43 tersedia dalam [audit audio](english_y4_y5_october_audio_content_20261117.md). Nombor CD1.38–CD1.41 dipadankan dengan buku, manakala kandungan fail rakaman perlu disahkan.

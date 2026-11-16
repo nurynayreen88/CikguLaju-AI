@@ -1,25 +1,16 @@
-# English Year 5 — Standalone RPH — Lesson 077 (Listening 14)
+# English Year 5 Lesson 77 — Listening 14
 
-**Status:** DRAF (SOW activities revised; final visual and teacher QA pending). **Topic:** Learning World. **Main LS:** 1.2.5. **Complementary LS:** 1.2.2. **Duration:** 60 min, suggested.
+**Official SOW topic:** Learning World.
+**Official SOW:** Lesson 77, printed p.115. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Listening 1.2.5 and Listening 1.2.2.
+**Materials:** English Plus 1 SB p.46 Activities 1–3, TB p.60, CD1.42, CD1.43 and Workbook p.38 Exercise 1.
+**Learning objectives:** Pupils respond in order to three supported quiz questions and identify two details about language learning from the recorded interviews.
 
-**Language focus:** Questions: Do you + verb, Do you usually/ever..? Verbs: concentrate, revise. **Materials:** English Plus 1 Student’s Book Activities 1, 2 and 3 p.46 Teacher’s Book p.60; audio CD1.42, CD1.43.
+1. **Set induction (8 min):** Pupils discuss how they practise a language and match two study actions to the pictures.
+2. **Activity 1 (12 min):** Use CD1.42 for SB Activity 1. Pupils respond to three questions in sequence and mark the picture clues that support their choices.
+3. **Activity 2 (15 min):** Pairs complete and discuss the SB Activity 2 quiz. Ask pupils to listen to a partner’s reason for choosing one strategy.
+4. **Activity 3 (17 min):** Play CD1.43 for SB Activity 3. Pupils match speakers to languages, then listen again and note two details they hear about the learners.
+5. **Closure (8 min):** Share one strategy that could work in class. If time permits, pupils complete two study verbs from Workbook p.38 Exercise 1.
 
-**Learning objectives:** Main (Listening 1.2.5) — pupils understand a sequence of supported questions in the Learning World activities. Complementary (Listening 1.2.2) — pupils understand with support specific information and details of longer simple texts on a range of familiar subjects in the linked listening task.
-
-**Set induction (5 min):** Pupils answer questions in Think! at top of p.46. Follow instructions in Teacher’s Book p.60.
-
-**Activity 1 (15 min):** Pupils do Activity 1, CD1.42. Explain that some pictures have more than one answer e.g. 1 e, b; 3 g, i; 5 a, c, h; 6 b, d, g, i; 8 b, d, g; 10 b, d, g, i.
-
-**Activity 2 (15 min):** Pupils in pairs do Activity 2. After answering, pupils add points for each yes answer and find out what the key says about their score. Check they understand the vocabulary in the key. Ask: Do you think the key is true or false for your score?
-
-**Activity 3 (15 min):** Pupils look at quiz questions again. Choose a few questions and ask: ‘Who answered ‘no’? and then explain why it is helpful for learning English. Pupils then look at the three photos in Activity 3. Explain that Mario is a footballer, Mark and Peter are policemen in London, Hannah is a student. Pupils do Activity 3, CD1.43. Follow instructions in Teacher’s Book p.60 Exercise 3. Find out which other language pupils would like to learn from those in the box.
-
-**PBD (5 min):** Teacher checks pupils' responses to two listening questions from Activities 1 and 3, including one specific detail heard, and notes who needs replay or vocabulary support.
-
-**Closure (5 min):** Use a short Section 3 post-lesson task; pupils share one study habit that helps them learn a language.
-
-**Workbook practice:** Workbook p.38, Unit 4 Vocabulary and Listening — Studying a language, Ex1-5. Use as brief follow-up without replacing the SOW tasks.
-
-**Differentiation:** At Step 2: Some pupils will need much longer to answer the questions after listening to them. Fast finishers write an additional question about language-learning habits for the quiz.
-
-**QA:** Workbook mapping is historical QA. Physical book pages, audio content and A4 export not independently verified; not READY.
+**PBD:** Check three supported responses in sequence and two details based on the interviews.
+**Differentiation:** Provide picture choices and replay short sections. Ask confident pupils to distinguish a language from the reason for learning it.

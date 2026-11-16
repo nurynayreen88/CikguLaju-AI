@@ -1,21 +1,16 @@
-# English Year 5 — Standalone RPH — Lesson 069 (Language Arts 12)
+# English Year 5 Lesson 69 — Language Arts 12
 
-**Status:** DRAF — source aligned, final QA pending. **Topic:** And Something Weird Happened. **Main LS:** Language Arts 5.2.1. **Complementary LS:** Speaking 2.1.5. **Time:** 60 minutes (suggested).
+**Official SOW topic:** And Something Weird Happened.
+**Official SOW:** Lesson 69, printed p.106. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Language Arts 5.2.1 and Speaking 2.1.5.
+**Materials:** BPK short-stories guide p.85 for the character cards, And Something Weird Happened by Pamela Rushby and a teacher-prepared character quiz.
+**Learning objectives:** Pupils describe a chosen character using two details from the story and explain why they like the character.
 
-**Materials:** And Something Weird Happened by Pamela Rushby; BPK Contemporary Children's Literature Short Stories Teaching Guidebook p.85; character picture cards and a short multiple-choice quiz. **Non-textbook:** No English Plus Student Book, Workbook or CD is prescribed.
+1. **Set induction (8 min):** Distribute character cards. Pupils identify their character and tell a partner one thing they remember.
+2. **Activity 1 (12 min):** Discuss what each character does in the story. Pupils choose a favourite and find two details they can use to describe that character.
+3. **Activity 2 (15 min):** Pupils who choose the same character compare their reasons. The teacher models how to connect an action from the story to a personal reason.
+4. **Activity 3 (17 min):** Partners take turns describing the character and giving their own reasons. Each asks another pair for a detail that supports its choice.
+5. **Closure (8 min):** Use a short character quiz to check recall. Ask pupils to give a different possible reason for liking one of the characters.
 
-**Objective:** Pupils express a preference for a character and give a relevant reason using information from the story.
-
-**Set induction (5 min):** Teacher distributes character pictures at random. Pupils identify their character and recall one action from the story.
-
-**Activity 1 — Recall characters (15 min):** Teacher leads a brief discussion of Joel and other characters, prompting pupils to describe actions or traits supported by the story.
-
-**Activity 2 — Choose and justify (15 min):** Pupils choose their favourite character and write or rehearse two relevant details. Pairs explain why they like the character, using “because”.
-
-**Activity 3 — Share and respond (15 min):** Pupils tell another pair their preference and respond to a follow-up question. Teacher encourages appropriate turn-taking and clearer reasons.
-
-**PBD (5 min):** Each pupil identifies one character, gives two accurate details and states at least one understandable reason for the preference.
-
-**Closure (5 min):** Pupils answer a short quiz on character details and correct a mistaken response using evidence from the story.
-
-**Differentiation:** Use character photos and sentence stems; extend by comparing two characters. **QA:** Literature page activities and A4 output require final approval before READY.
+**PBD:** Note two accurate details in each spoken description and one reason for the pupil’s preference.
+**Differentiation:** Use picture cues and a because sentence stem. Ask confident pupils to compare the actions of two characters.

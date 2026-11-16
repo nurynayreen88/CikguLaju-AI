@@ -105,6 +105,50 @@
     {
       "lesson": 68,
       "source_sha256": "2eb1cd66eda992bb4351768e5b354243a002facde82e0849ac1c666e2e5044b0"
+    },
+    {
+      "lesson": 71,
+      "source_sha256": "cdeff1352a8e7c24f1ccf8fce093e992c26f837e1b49f6121dceec903e5b44dd"
+    },
+    {
+      "lesson": 72,
+      "source_sha256": "6e96cae9190bdc69e9e6e4802e1cb8d56b06c07ab1e870747918d863cc7b4b87"
+    },
+    {
+      "lesson": 73,
+      "source_sha256": "c9fa4b6053694709c712fa93c4624a65051c3e290a38940846a7626c26d3c31c"
+    },
+    {
+      "lesson": 74,
+      "source_sha256": "8934cf4cd7bf4af6b6d340827c500a053ac93b8c1a06da0f251b4c4aeacb0a3d"
+    },
+    {
+      "lesson": 76,
+      "source_sha256": "885eaa28d0cb1788449d1bedc49617ee2be4b334628dd50a3d5142727dc1be1b"
+    },
+    {
+      "lesson": 77,
+      "source_sha256": "ca41e72c999105d9361333d087249d986aa5e5d42df8925d50bce5ff4a2a7f11"
+    },
+    {
+      "lesson": 78,
+      "source_sha256": "57f78f2923edf619f72b60b1dc410aaf01df15098d23195496adf68fcaef0be9"
+    },
+    {
+      "lesson": 79,
+      "source_sha256": "df0f345c7f85468c5ca8f091770a488d0c3d4934378aaf38005518fa7966e840"
+    },
+    {
+      "lesson": 80,
+      "source_sha256": "34964566f7e56d33e826373cf6c0c1acf192cbd14fee3b9a342c5268df9748b0"
+    },
+    {
+      "lesson": 81,
+      "source_sha256": "6c0e0270de6cfa0cea7cfb062dc92c0b16b3bceea3de0987af38149e6c8a50eb"
+    },
+    {
+      "lesson": 82,
+      "source_sha256": "908c0df24bd0836e8cbb30107ab9ae4dce588ed6860a5bc14374ea9efb2ce9ed"
     }
   ]
 }
