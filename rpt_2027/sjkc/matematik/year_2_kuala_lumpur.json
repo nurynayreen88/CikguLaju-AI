@@ -1,0 +1,1840 @@
+{
+  "academic_year": 2027,
+  "curriculum": "KSSR (Semakan 2017)",
+  "school_type": "SJKC",
+  "subject": "Matematik",
+  "year": 2,
+  "state": "W.P. Kuala Lumpur",
+  "calendar_group": "B",
+  "time_allocation_hours": 96,
+  "calendar_model": "Cadangan 96 PdP × 60 minit untuk W.P. Kuala Lumpur, Kumpulan B. Laraskan mengikut jadual sekolah.",
+  "calendar_excluded_windows": [
+    [
+      "2027-03-06",
+      "2027-03-14"
+    ],
+    [
+      "2027-05-22",
+      "2027-06-06"
+    ],
+    [
+      "2027-08-28",
+      "2027-09-05"
+    ]
+  ],
+  "additional_calendar_exclusions": [
+    "2027-01-22",
+    "2027-02-01",
+    "2027-02-05",
+    "2027-02-08",
+    "2027-02-09",
+    "2027-02-10",
+    "2027-02-11",
+    "2027-02-12",
+    "2027-02-24",
+    "2027-05-17",
+    "2027-05-18",
+    "2027-05-19",
+    "2027-05-20",
+    "2027-05-21",
+    "2027-06-07",
+    "2027-06-08",
+    "2027-08-16",
+    "2027-08-31",
+    "2027-09-16",
+    "2027-10-27",
+    "2027-10-28",
+    "2027-10-29"
+  ],
+  "sources": {
+    "dskp": "https://sites.google.com/moe-dl.edu.my/dskpstemsr/home",
+    "dskp_document": "https://drive.google.com/file/d/1htOHCXEI39BAYiwc_MyJUgX0klabvj-S/view",
+    "alignment_edition_3": "https://drive.google.com/file/d/1Km3tEnqC36GPK2pl9uUbzwfJKo6N8sTJ/view",
+    "rpt_2026": "https://www.scribd.com/document/985782200/RPT-FULL-Tahun-2-Matematik-2026",
+    "textbook_and_activity_book": "https://sites.google.com/moe-dl.edu.my/ppd-batu-pahat-sains-matematik/buku-teks-digital-bidang-sains-matematik/buku-teks-sekolah-rendah/matematik-tahun-2",
+    "calendar": "https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik",
+    "public_holidays": "https://kalendarmy.com/cuti-umum/w-p-kuala-lumpur/2027/",
+    "time_allocation": "https://www.parlimen.gov.my/files/jindex/pdf/JDR30072025.pdf"
+  },
+  "lessons": [
+    {
+      "pdp": 1,
+      "date": "2027-01-12",
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "1 000 以内的整数",
+      "topic": "读出及配对三位数",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "3–5",
+      "activity_book": "一 1–2",
+      "focus": "把四个数读出并配对数字卡，比较 407、470 和 704 中零的位置。"
+    },
+    {
+      "pdp": 2,
+      "date": "2027-01-14",
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "1 000 以内的整数",
+      "topic": "数量与数字配对",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "3–5",
+      "activity_book": "一 1–2",
+      "focus": "用百片、十条和个位方块拼出两个数量，再为它们选出数字卡。"
+    },
+    {
+      "pdp": 3,
+      "date": "2027-01-15",
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "1 000 以内的整数",
+      "topic": "用数字与文字写数",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "6–7",
+      "activity_book": "二 3–4",
+      "focus": "听写三个含零的数，再把其中两个改写成汉字。"
+    },
+    {
+      "pdp": 4,
+      "date": "2027-01-18",
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "1 000 以内的整数",
+      "topic": "指出数位与数值",
+      "sk": [
+        "1.4"
+      ],
+      "sp": [
+        "1.4.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "9–11",
+      "activity_book": "四 6",
+      "focus": "把数字卡放入数位表，为指定数字写出数位与数值。"
+    },
+    {
+      "pdp": 5,
+      "date": "2027-01-19",
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "1 000 以内的整数",
+      "topic": "分解与合成数目",
+      "sk": [
+        "1.4"
+      ],
+      "sp": [
+        "1.4.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "12–13",
+      "activity_book": "五 7",
+      "focus": "用两种方式分解三个数，再用加法合成其中一个。"
+    },
+    {
+      "pdp": 6,
+      "date": "2027-01-21",
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "1 000 以内的整数",
+      "topic": "比较两个数目",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "14–16",
+      "activity_book": "六 8–9",
+      "focus": "先比百位，再比十位和个位，用比较符号记录三组结果。"
+    },
+    {
+      "pdp": 7,
+      "date": "2027-01-26",
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "1 000 以内的整数",
+      "topic": "顺序与逆序排列",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "17–19",
+      "activity_book": "七 10",
+      "focus": "先用四组成组物体比数量，再把相应数字分别按顺序与逆序排列。"
+    },
+    {
+      "pdp": 8,
+      "date": "2027-01-28",
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "1 000 以内的整数",
+      "topic": "顺数与倒数",
+      "sk": [
+        "1.3"
+      ],
+      "sp": [
+        "1.3.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "23–25",
+      "activity_book": "八 11–14",
+      "focus": "从指定起点在数轴上每次移动一或二格，口述两段数列。"
+    },
+    {
+      "pdp": 9,
+      "date": "2027-01-29",
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "1 000 以内的整数",
+      "topic": "完成不同步长的数列",
+      "sk": [
+        "1.3"
+      ],
+      "sp": [
+        "1.3.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "26–31",
+      "activity_book": "八 15–19",
+      "focus": "利用数轴补全三条数列，其中一条逆序、一条以整百为步长。"
+    },
+    {
+      "pdp": 10,
+      "date": "2027-02-02",
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "1 000 以内的整数",
+      "topic": "用参照物估算",
+      "sk": [
+        "1.5"
+      ],
+      "sp": [
+        "1.5.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "32–35",
+      "activity_book": "九 20–22",
+      "focus": "用两盒已知数量的珠子找出估计范围，记录一个合理的估计并抽查。"
+    },
+    {
+      "pdp": 11,
+      "date": "2027-02-04",
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "1 000 以内的整数",
+      "topic": "从整十过渡到整百近似值",
+      "sk": [
+        "1.6"
+      ],
+      "sp": [
+        "1.6.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "36–39",
+      "activity_book": "十 23–25",
+      "focus": "先在数轴标出相邻整十，再用同一方法找两个数的百位近似值。"
+    },
+    {
+      "pdp": 12,
+      "date": "2027-02-16",
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "1 000 以内的整数",
+      "topic": "找百位近似值",
+      "sk": [
+        "1.6"
+      ],
+      "sp": [
+        "1.6.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "39–41",
+      "activity_book": "十 24–25",
+      "focus": "把四个数放在相邻整百之间，写出近似值并解释一个临界例。"
+    },
+    {
+      "pdp": 13,
+      "date": "2027-02-18",
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "1 000 以内的整数",
+      "topic": "辨认数列规律",
+      "sk": [
+        "1.7"
+      ],
+      "sp": [
+        "1.7.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "42–43",
+      "activity_book": "十一 26",
+      "focus": "比对相邻项，分别写出一个顺序及一个逆序数列的规律。"
+    },
+    {
+      "pdp": 14,
+      "date": "2027-02-23",
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "1 000 以内的整数",
+      "topic": "按规律补全数列",
+      "sk": [
+        "1.7"
+      ],
+      "sp": [
+        "1.7.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "43",
+      "activity_book": "十二 27",
+      "focus": "填出三条数列的缺项，交换检查一步增减是否一致。"
+    },
+    {
+      "pdp": 15,
+      "date": "2027-02-25",
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "1 000 以内的整数",
+      "topic": "处理整数应用题",
+      "sk": [
+        "1.8"
+      ],
+      "sp": [
+        "1.8.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "44–46",
+      "activity_book": "十三 28–29",
+      "focus": "画图整理题目中的数量，写出答案及一句检查理由。"
+    },
+    {
+      "pdp": 16,
+      "date": "2027-02-26",
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "1 000 以内的整数",
+      "topic": "说明整数题解法",
+      "sk": [
+        "1.8"
+      ],
+      "sp": [
+        "1.8.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "47–49",
+      "activity_book": "十三 29–30",
+      "focus": "比较两种排序或估算策略，用数轴核对一题并说明选择。"
+    },
+    {
+      "pdp": 17,
+      "date": "2027-03-02",
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "1 000 以内的整数",
+      "topic": "整数单元课堂评估",
+      "sk": [
+        "1.1",
+        "1.4",
+        "1.6",
+        "1.7"
+      ],
+      "sp": [
+        "1.1.2",
+        "1.4.2",
+        "1.6.1",
+        "1.7.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "12–19,39–43",
+      "activity_book": "复习 31–34",
+      "focus": "独立完成数值、排序、近似值与数列各一题，再口述其中一题。"
+    },
+    {
+      "pdp": 18,
+      "date": "2027-03-04",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "两个数相加",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "53–54",
+      "activity_book": "一 35–36",
+      "focus": "用方块或数轴表示两个加数，写出两个和在 1 000 内的算式。"
+    },
+    {
+      "pdp": 19,
+      "date": "2027-03-16",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "加法进位与验算",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "55–56",
+      "activity_book": "一 35–36",
+      "focus": "用数位表进行三题进位加法，再用估算核对一题。"
+    },
+    {
+      "pdp": 20,
+      "date": "2027-03-18",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "三个数连加",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "57–59",
+      "activity_book": "二 37–39",
+      "focus": "调整三个加数的计算先后，记录两种方法并核对总和。"
+    },
+    {
+      "pdp": 21,
+      "date": "2027-03-23",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "两个数相减",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "61–62",
+      "activity_book": "三 41–42",
+      "focus": "用方块进行退位，写出两道三位数减法及相应验算。"
+    },
+    {
+      "pdp": 22,
+      "date": "2027-03-25",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "比较数量差",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "63–64",
+      "activity_book": "三 42–43",
+      "focus": "沿数轴补数求两个数量的差，再用竖式检验结果。"
+    },
+    {
+      "pdp": 23,
+      "date": "2027-03-26",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "三个数连减",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "65–67",
+      "activity_book": "四 44–46",
+      "focus": "按情境分两步扣除数量，写出算式并检查中间结果。"
+    },
+    {
+      "pdp": 24,
+      "date": "2027-03-30",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "认识基本乘法",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "71–72",
+      "activity_book": "五 48",
+      "focus": "用等量分组写重复加法，再为两组图写出乘法算式。"
+    },
+    {
+      "pdp": 25,
+      "date": "2027-04-01",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "建构 2、4、8 的乘法",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "73–75",
+      "activity_book": "六 49–50",
+      "focus": "用阵列对折展示倍数关系，并补全三组乘积。"
+    },
+    {
+      "pdp": 26,
+      "date": "2027-04-06",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "建构 5 和 10 的乘法",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.1",
+        "2.3.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "76–77",
+      "activity_book": "六 50–51",
+      "focus": "用五格条和十格条计数，再直接求三个一位数乘 10 的结果。"
+    },
+    {
+      "pdp": 27,
+      "date": "2027-04-08",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "建构 3、6、9 的乘法",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "78–80",
+      "activity_book": "六 51–52",
+      "focus": "用阵列找出三组乘法的联系，并解释一项乘积。"
+    },
+    {
+      "pdp": 28,
+      "date": "2027-04-13",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "建构 7、1 和 0 的乘法",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "81–82",
+      "activity_book": "六 52、七 53",
+      "focus": "用分拆策略求两个 7 的乘积，并用空阵列说明乘 0。"
+    },
+    {
+      "pdp": 29,
+      "date": "2027-04-15",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "乘法表与交换律",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.1",
+        "2.3.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "83–86",
+      "activity_book": "八 54",
+      "focus": "交换阵列的行和列，写出对应算式并完成一组乘法提问。"
+    },
+    {
+      "pdp": 30,
+      "date": "2027-04-16",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "认识平分与等量分组",
+      "sk": [
+        "2.4"
+      ],
+      "sp": [
+        "2.4.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "88–89",
+      "activity_book": "九 57",
+      "focus": "用 12 个计数物做两种分配，用除法算式分别说明结果。"
+    },
+    {
+      "pdp": 31,
+      "date": "2027-04-20",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "除法与减法、乘法",
+      "sk": [
+        "2.4"
+      ],
+      "sp": [
+        "2.4.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "90–91",
+      "activity_book": "十 58",
+      "focus": "用连减记录分组次数，再以相关乘法检验两道除法。"
+    },
+    {
+      "pdp": 32,
+      "date": "2027-04-22",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "用 2、4、5、8 作除数",
+      "sk": [
+        "2.4"
+      ],
+      "sp": [
+        "2.4.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "92–94",
+      "activity_book": "十一 59–61",
+      "focus": "对四张分组图写除法算式，并说出相应乘法。"
+    },
+    {
+      "pdp": 33,
+      "date": "2027-04-27",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "两位数除以 10",
+      "sk": [
+        "2.4"
+      ],
+      "sp": [
+        "2.4.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "95、100",
+      "activity_book": "十一 61–62",
+      "focus": "把整十个物件平均分成十组，写出三道两位数除以 10 的算式。"
+    },
+    {
+      "pdp": 34,
+      "date": "2027-04-29",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "用 3、6、7、9 作除数",
+      "sk": [
+        "2.4"
+      ],
+      "sp": [
+        "2.4.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "96–98",
+      "activity_book": "十一 62–63",
+      "focus": "用乘法表找出四道除法的商，其中一道说明如何验算。"
+    },
+    {
+      "pdp": 35,
+      "date": "2027-05-04",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "含 1 或 0 的基本除法",
+      "sk": [
+        "2.4"
+      ],
+      "sp": [
+        "2.4.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "99–100",
+      "activity_book": "十二、十三 64",
+      "focus": "用分组图比较除以 1 和零作被除数的情形，写出结果。"
+    },
+    {
+      "pdp": 36,
+      "date": "2027-05-06",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "有余数的除法",
+      "sk": [
+        "2.4"
+      ],
+      "sp": [
+        "2.4.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "102–105",
+      "activity_book": "十四 65–66",
+      "focus": "分组后记录商和余数，用乘法加余数检验两题。"
+    },
+    {
+      "pdp": 37,
+      "date": "2027-05-07",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "为加减算式编故事",
+      "sk": [
+        "2.5"
+      ],
+      "sp": [
+        "2.5.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "106–107",
+      "activity_book": "十五 69–70",
+      "focus": "给两道加减算式各编一个短故事，并让同伴找出已知量。"
+    },
+    {
+      "pdp": 38,
+      "date": "2027-05-11",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "为乘除算式编故事",
+      "sk": [
+        "2.5"
+      ],
+      "sp": [
+        "2.5.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "108–109",
+      "activity_book": "十五 71–72",
+      "focus": "选一道乘法和一道除法编题，让同伴说明每个数字代表什么。"
+    },
+    {
+      "pdp": 39,
+      "date": "2027-05-13",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "解决加减应用题",
+      "sk": [
+        "2.5"
+      ],
+      "sp": [
+        "2.5.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "110–113",
+      "activity_book": "十六 73–77",
+      "focus": "画条形图标记已知量和未知量，计算后用反向运算检验。"
+    },
+    {
+      "pdp": 40,
+      "date": "2027-06-10",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "解决乘除应用题",
+      "sk": [
+        "2.5"
+      ],
+      "sp": [
+        "2.5.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "116–121",
+      "activity_book": "十七 78–82",
+      "focus": "区分等量分组与平分，完成两题并解释一题余数的意义。"
+    },
+    {
+      "pdp": 41,
+      "date": "2027-06-11",
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "基本运算课堂评估",
+      "sk": [
+        "2.1",
+        "2.2",
+        "2.4",
+        "2.5"
+      ],
+      "sp": [
+        "2.1.2",
+        "2.2.2",
+        "2.4.1",
+        "2.5.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "57–59,65–67,102–104,110–121",
+      "activity_book": "复习 83–84",
+      "focus": "独立完成连算、余数与应用题，标记一种需要复习的策略。"
+    },
+    {
+      "pdp": 42,
+      "date": "2027-06-15",
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数与小数",
+      "topic": "辨认单位分数",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "2–3",
+      "activity_book": "一 85–86",
+      "focus": "折出等份，指出其中一份，读出三张单位分数卡。"
+    },
+    {
+      "pdp": 43,
+      "date": "2027-06-17",
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数与小数",
+      "topic": "读写与表示真分数",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.2",
+        "3.1.3",
+        "3.1.4"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "3–4",
+      "activity_book": "一 85–86",
+      "focus": "为给定分数涂色，再根据两幅图写分数并说出分子和分母。"
+    },
+    {
+      "pdp": 44,
+      "date": "2027-06-18",
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数与小数",
+      "topic": "比较真分数",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.5"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "5",
+      "activity_book": "二 87",
+      "focus": "用同样大的分数板比较两对真分数，说明比较依据。"
+    },
+    {
+      "pdp": 45,
+      "date": "2027-06-22",
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数与小数",
+      "topic": "十分数化成一位小数",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1",
+        "3.2.2",
+        "3.2.3"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "6",
+      "activity_book": "三 88–89",
+      "focus": "将十等份图的阴影部分写成分数与小数，并读出三个小数。"
+    },
+    {
+      "pdp": 46,
+      "date": "2027-06-24",
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数与小数",
+      "topic": "用图表示与写小数",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.4",
+        "3.2.5"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "7",
+      "activity_book": "三 88–89",
+      "focus": "在十格图表示听到的小数，再读图写出两个小数。"
+    },
+    {
+      "pdp": 47,
+      "date": "2027-06-29",
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数与小数",
+      "topic": "比较一位小数",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.6"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "8",
+      "activity_book": "四 90",
+      "focus": "把三对小数标在数轴上，用符号记录大小并解释一对。"
+    },
+    {
+      "pdp": 48,
+      "date": "2027-07-01",
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数与小数",
+      "topic": "比较分数与小数",
+      "sk": [
+        "3.3"
+      ],
+      "sp": [
+        "3.3.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "9",
+      "activity_book": "五 90",
+      "focus": "用同一个十格图表示分数与小数，检验两组是否相等。"
+    },
+    {
+      "pdp": 49,
+      "date": "2027-07-06",
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数与小数",
+      "topic": "解决分数与小数应用题",
+      "sk": [
+        "3.4"
+      ],
+      "sp": [
+        "3.4.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "10–13",
+      "activity_book": "六 91–92",
+      "focus": "画等份图解决一题分数和一题小数问题，写出所指的整体。"
+    },
+    {
+      "pdp": 50,
+      "date": "2027-07-08",
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数与小数",
+      "topic": "分数与小数课堂评估",
+      "sk": [
+        "3.1",
+        "3.2",
+        "3.3",
+        "3.4"
+      ],
+      "sp": [
+        "3.1.5",
+        "3.2.5",
+        "3.3.1",
+        "3.4.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "5–13",
+      "activity_book": "复习 93–94",
+      "focus": "用同一大小的图形完成比较与表示题，另独立作答一题情境题。"
+    },
+    {
+      "pdp": 51,
+      "date": "2027-07-09",
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "辨认马来西亚钱币",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "16",
+      "activity_book": "一 95",
+      "focus": "将模拟纸币和硬币按面值分类，用 RM 或 sen 正确记录。"
+    },
+    {
+      "pdp": 52,
+      "date": "2027-07-13",
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "组成指定币值",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "17–19",
+      "activity_book": "二 96–97",
+      "focus": "用两种纸币和硬币组合表示同一价格，用加法核对总值。"
+    },
+    {
+      "pdp": 53,
+      "date": "2027-07-15",
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "两个币值相加",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "20–21",
+      "activity_book": "三 98–99",
+      "focus": "从模拟价目表任选两项，把令吉和仙的小数点对齐后求总价。"
+    },
+    {
+      "pdp": 54,
+      "date": "2027-07-20",
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "三个币值相加",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "22–23",
+      "activity_book": "四 100",
+      "focus": "在 RM100 内为三项物品算总价，用另一种顺序复核。"
+    },
+    {
+      "pdp": 55,
+      "date": "2027-07-22",
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "两个币值相减",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "24–25",
+      "activity_book": "五 101–102",
+      "focus": "用模拟付款和找钱说明一题，再用加法验算另两题。"
+    },
+    {
+      "pdp": 56,
+      "date": "2027-07-27",
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "三个币值连减",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "26–27",
+      "activity_book": "六 103",
+      "focus": "以预算扣除两笔消费，逐项记下余额与单位。"
+    },
+    {
+      "pdp": 57,
+      "date": "2027-07-29",
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "币值乘一位数或 10",
+      "sk": [
+        "4.4"
+      ],
+      "sp": [
+        "4.4.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "28–30",
+      "activity_book": "七 106",
+      "focus": "用单价乘数量求同价物品总价，写出两种不同数量的算式。"
+    },
+    {
+      "pdp": 58,
+      "date": "2027-07-30",
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "币值除以一位数或 10",
+      "sk": [
+        "4.5"
+      ],
+      "sp": [
+        "4.5.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "31–33",
+      "activity_book": "八 107",
+      "focus": "把两笔金额等分，说明每份多少并以乘法验算。"
+    },
+    {
+      "pdp": 59,
+      "date": "2027-08-03",
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "储蓄与消费记录",
+      "sk": [
+        "4.6"
+      ],
+      "sp": [
+        "4.6.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "34–38",
+      "activity_book": "九 108–109",
+      "focus": "按给定的模拟零用钱填写收支表，为储蓄目标作一个选择。"
+    },
+    {
+      "pdp": 60,
+      "date": "2027-08-05",
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "解决购物情境题",
+      "sk": [
+        "4.7"
+      ],
+      "sp": [
+        "4.7.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "39–41",
+      "activity_book": "十 110–111",
+      "focus": "从价格资料选择运算，记录总价或找回的钱及计算步骤。"
+    },
+    {
+      "pdp": 61,
+      "date": "2027-08-10",
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "比较购物方案",
+      "sk": [
+        "4.7"
+      ],
+      "sp": [
+        "4.7.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "42–43",
+      "activity_book": "十 111–112",
+      "focus": "在相同预算下比较两种购买组合，写出结余和取舍理由。"
+    },
+    {
+      "pdp": 62,
+      "date": "2027-08-12",
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "钱币单元课堂评估",
+      "sk": [
+        "4.2",
+        "4.3",
+        "4.6",
+        "4.7"
+      ],
+      "sp": [
+        "4.2.2",
+        "4.3.2",
+        "4.6.1",
+        "4.7.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "22–27,34–43",
+      "activity_book": "复习 104–105、113–114",
+      "focus": "独立整理小额预算，加总后扣除两笔消费并说明是否能达成储蓄目标。"
+    },
+    {
+      "pdp": 63,
+      "date": "2027-08-17",
+      "duration_minutes": 60,
+      "unit_number": 5,
+      "unit": "时间与时刻",
+      "topic": "钟面上的分钟刻度",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "46",
+      "activity_book": "一 115",
+      "focus": "转动模拟钟分针，逐格数到指定位置并记录两次移动分钟数。"
+    },
+    {
+      "pdp": 64,
+      "date": "2027-08-19",
+      "duration_minutes": 60,
+      "unit_number": 5,
+      "unit": "时间与时刻",
+      "topic": "读出与展示时刻",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "47–48",
+      "activity_book": "二 116",
+      "focus": "给定三个时刻，用模拟钟展示并读出时与分。"
+    },
+    {
+      "pdp": 65,
+      "date": "2027-08-20",
+      "duration_minutes": 60,
+      "unit_number": 5,
+      "unit": "时间与时刻",
+      "topic": "时刻的数词与数字写法",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.3"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "47–48",
+      "activity_book": "二 117",
+      "focus": "将三个时刻在文字和数字之间互换，包含一刻和半点。"
+    },
+    {
+      "pdp": 66,
+      "date": "2027-08-24",
+      "duration_minutes": 60,
+      "unit_number": 5,
+      "unit": "时间与时刻",
+      "topic": "记录日常活动时刻",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.4"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "49",
+      "activity_book": "三 118",
+      "focus": "为三项真实日常活动记录开始时刻，再正确排序。"
+    },
+    {
+      "pdp": 67,
+      "date": "2027-08-26",
+      "duration_minutes": 60,
+      "unit_number": 5,
+      "unit": "时间与时刻",
+      "topic": "小时、分钟与天",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "50–53",
+      "activity_book": "四 119",
+      "focus": "用模拟钟与时间线展示 60 分钟和 24 小时的关系，再比较两个日程。"
+    },
+    {
+      "pdp": 68,
+      "date": "2027-09-07",
+      "duration_minutes": 60,
+      "unit_number": 5,
+      "unit": "时间与时刻",
+      "topic": "解决时间应用题",
+      "sk": [
+        "5.3"
+      ],
+      "sp": [
+        "5.3.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "54–55",
+      "activity_book": "五 120",
+      "focus": "在时间线上标出起点与所经分钟，求两个情境的结束时刻。"
+    },
+    {
+      "pdp": 69,
+      "date": "2027-09-09",
+      "duration_minutes": 60,
+      "unit_number": 5,
+      "unit": "时间与时刻",
+      "topic": "时间单元课堂评估",
+      "sk": [
+        "5.1",
+        "5.2",
+        "5.3"
+      ],
+      "sp": [
+        "5.1.3",
+        "5.2.1",
+        "5.3.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "47–55",
+      "activity_book": "复习 121–122",
+      "focus": "独立读钟、换写时刻，并用时间线解答一题日常时刻题。"
+    },
+    {
+      "pdp": 70,
+      "date": "2027-09-13",
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "选择厘米或米",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "58–59",
+      "activity_book": "一 123",
+      "focus": "根据尺和卷尺刻度对三件物品选择单位，并用 cm 或 m 写数值。"
+    },
+    {
+      "pdp": 71,
+      "date": "2027-09-14",
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "测量长度与距离",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "60",
+      "activity_book": "二 124",
+      "focus": "对准尺的零点测量两件物品并用卷尺测一段距离，写单位。"
+    },
+    {
+      "pdp": 72,
+      "date": "2027-09-17",
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "画出指定长度的线段",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "61",
+      "activity_book": "三 125",
+      "focus": "用尺画两条指定长度线段，由同伴重新测量核对。"
+    },
+    {
+      "pdp": 73,
+      "date": "2027-09-21",
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "估算与核对长度",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.3"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "62",
+      "activity_book": "四 126",
+      "focus": "以已知物体作为参照，估两段长度后实测并比较。"
+    },
+    {
+      "pdp": 74,
+      "date": "2027-09-23",
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "选择克或公斤",
+      "sk": [
+        "6.2"
+      ],
+      "sp": [
+        "6.2.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "63–64",
+      "activity_book": "五 127",
+      "focus": "观察两种秤的刻度，为三件物品选择 g 或 kg 并记录。"
+    },
+    {
+      "pdp": 75,
+      "date": "2027-09-28",
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "称物体并记录质量",
+      "sk": [
+        "6.2"
+      ],
+      "sp": [
+        "6.2.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "65",
+      "activity_book": "六 128",
+      "focus": "确认空秤指针在零位，称两件物品并记录数值和单位。"
+    },
+    {
+      "pdp": 76,
+      "date": "2027-09-30",
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "估算与核对质量",
+      "sk": [
+        "6.2"
+      ],
+      "sp": [
+        "6.2.3"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "66",
+      "activity_book": "七 129",
+      "focus": "以已知质量作参照先估后称，写出哪次估测较接近。"
+    },
+    {
+      "pdp": 77,
+      "date": "2027-10-05",
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "选择毫升或升",
+      "sk": [
+        "6.3"
+      ],
+      "sp": [
+        "6.3.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "67–68",
+      "activity_book": "八 130",
+      "focus": "比较容器的标示容量，用 mL 或 L 写数值并说出适用单位。"
+    },
+    {
+      "pdp": 78,
+      "date": "2027-10-07",
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "测量液体体积",
+      "sk": [
+        "6.3"
+      ],
+      "sp": [
+        "6.3.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "69",
+      "activity_book": "九 131",
+      "focus": "把量杯放在平面，从视线平齐位置读出两次水量。"
+    },
+    {
+      "pdp": 79,
+      "date": "2027-10-08",
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "估算与核对液体体积",
+      "sk": [
+        "6.3"
+      ],
+      "sp": [
+        "6.3.3"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "70",
+      "activity_book": "十 132",
+      "focus": "先以量杯刻度作参照估计，再倒量核对并写出差距。"
+    },
+    {
+      "pdp": 80,
+      "date": "2027-10-12",
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "解决长度与容量应用题",
+      "sk": [
+        "6.4"
+      ],
+      "sp": [
+        "6.4.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "71–72",
+      "activity_book": "十一 133",
+      "focus": "从情境资料选择量具和单位，画图解决一题长度和一题容量问题。"
+    },
+    {
+      "pdp": 81,
+      "date": "2027-10-14",
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "解决质量与度量衡应用题",
+      "sk": [
+        "6.4"
+      ],
+      "sp": [
+        "6.4.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "73–74",
+      "activity_book": "十一 133–134",
+      "focus": "整理一题质量资料并列算式，再检验答案的单位是否合理。"
+    },
+    {
+      "pdp": 82,
+      "date": "2027-10-19",
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "度量衡课堂评估",
+      "sk": [
+        "6.1",
+        "6.2",
+        "6.3",
+        "6.4"
+      ],
+      "sp": [
+        "6.1.2",
+        "6.2.2",
+        "6.3.2",
+        "6.4.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "60–71",
+      "activity_book": "复习 135–136",
+      "focus": "在三个实作站读尺、秤和量杯，记录数值后解释单位的选择。"
+    },
+    {
+      "pdp": 83,
+      "date": "2027-10-21",
+      "duration_minutes": 60,
+      "unit_number": 7,
+      "unit": "空间",
+      "topic": "按特征辨认立体",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "78",
+      "activity_book": "一 137",
+      "focus": "触摸或观察立体模型，依据面和顶点的描述辨认三个模型。"
+    },
+    {
+      "pdp": 84,
+      "date": "2027-10-25",
+      "duration_minutes": 60,
+      "unit_number": 7,
+      "unit": "空间",
+      "topic": "立体的基本图形",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "79–80",
+      "activity_book": "二 138",
+      "focus": "观察立体的不同面，在记录表画出对应的平面图形。"
+    },
+    {
+      "pdp": 85,
+      "date": "2027-10-26",
+      "duration_minutes": 60,
+      "unit_number": 7,
+      "unit": "空间",
+      "topic": "从展开图建立立体",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.3"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "81",
+      "activity_book": "三 139",
+      "focus": "剪折长方体展开图，标记折叠后相邻的两个面。"
+    },
+    {
+      "pdp": 86,
+      "date": "2027-11-02",
+      "duration_minutes": 60,
+      "unit_number": 7,
+      "unit": "空间",
+      "topic": "辨认不同立体展开图",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.3"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "82–83",
+      "activity_book": "三 139–140",
+      "focus": "试折两个正方体候选展开图，另用基本图形拼出圆柱体展开图。"
+    },
+    {
+      "pdp": 87,
+      "date": "2027-11-04",
+      "duration_minutes": 60,
+      "unit_number": 7,
+      "unit": "空间",
+      "topic": "按特征辨认平面图形",
+      "sk": [
+        "7.2"
+      ],
+      "sp": [
+        "7.2.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "84",
+      "activity_book": "四 141",
+      "focus": "根据边和角的特征，从混合图卡挑出三种图形。"
+    },
+    {
+      "pdp": 88,
+      "date": "2027-11-09",
+      "duration_minutes": 60,
+      "unit_number": 7,
+      "unit": "空间",
+      "topic": "画出平面图形",
+      "sk": [
+        "7.2"
+      ],
+      "sp": [
+        "7.2.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "85",
+      "activity_book": "五 142",
+      "focus": "用直尺及圆形物件作辅助，画并标出四种基本平面图形。"
+    },
+    {
+      "pdp": 89,
+      "date": "2027-11-11",
+      "duration_minutes": 60,
+      "unit_number": 7,
+      "unit": "空间",
+      "topic": "解决空间应用题",
+      "sk": [
+        "7.3"
+      ],
+      "sp": [
+        "7.3.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "86–88",
+      "activity_book": "六 143–144",
+      "focus": "用模型或图形拼片解决一项铺排问题，写出数量与检验方法。"
+    },
+    {
+      "pdp": 90,
+      "date": "2027-11-16",
+      "duration_minutes": 60,
+      "unit_number": 7,
+      "unit": "空间",
+      "topic": "空间单元课堂评估",
+      "sk": [
+        "7.1",
+        "7.2",
+        "7.3"
+      ],
+      "sp": [
+        "7.1.3",
+        "7.2.1",
+        "7.3.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "81–88",
+      "activity_book": "复习 145–146",
+      "focus": "辨认一张展开图，画两个指定形状，并说明一道日常应用题。"
+    },
+    {
+      "pdp": 91,
+      "date": "2027-11-18",
+      "duration_minutes": 60,
+      "unit_number": 8,
+      "unit": "数据处理",
+      "topic": "收集、分类和整理资料",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "92–93",
+      "activity_book": "一 147–148",
+      "focus": "就班级偏好作一项小调查，用点算表分类并核对总人数。"
+    },
+    {
+      "pdp": 92,
+      "date": "2027-11-19",
+      "duration_minutes": 60,
+      "unit_number": 8,
+      "unit": "数据处理",
+      "topic": "读竖式条形统计图",
+      "sk": [
+        "8.2"
+      ],
+      "sp": [
+        "8.2.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "94",
+      "activity_book": "二 149–150",
+      "focus": "指出图题、类别与刻度，从竖式图读取三项数值。"
+    },
+    {
+      "pdp": 93,
+      "date": "2027-11-23",
+      "duration_minutes": 60,
+      "unit_number": 8,
+      "unit": "数据处理",
+      "topic": "读横式条形统计图",
+      "sk": [
+        "8.2"
+      ],
+      "sp": [
+        "8.2.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "95",
+      "activity_book": "二 150–151",
+      "focus": "从横式图找出两类数量，写出哪类较多及相差多少。"
+    },
+    {
+      "pdp": 94,
+      "date": "2027-11-25",
+      "duration_minutes": 60,
+      "unit_number": 8,
+      "unit": "数据处理",
+      "topic": "解决数据应用题",
+      "sk": [
+        "8.3"
+      ],
+      "sp": [
+        "8.3.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "96–97",
+      "activity_book": "三 152",
+      "focus": "根据条形图比较类别，并用图上两个数值支持结论。"
+    },
+    {
+      "pdp": 95,
+      "date": "2027-11-30",
+      "duration_minutes": 60,
+      "unit_number": 8,
+      "unit": "数据处理",
+      "topic": "数据单元课堂评估",
+      "sk": [
+        "8.2",
+        "8.3"
+      ],
+      "sp": [
+        "8.2.1",
+        "8.3.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "98–99",
+      "activity_book": "复习 153–154",
+      "focus": "读取两幅图并解释同一数据的表示方法，完成一题比较题。"
+    },
+    {
+      "pdp": 96,
+      "date": "2027-12-02",
+      "duration_minutes": 60,
+      "unit_number": 8,
+      "unit": "数据处理",
+      "topic": "数据整理与年度复习",
+      "sk": [
+        "8.1",
+        "8.2",
+        "8.3"
+      ],
+      "sp": [
+        "8.1.1",
+        "8.2.1",
+        "8.3.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "92–99",
+      "activity_book": "复习 153–154",
+      "focus": "整理小组调查资料，再从给定条形图提出并回答一个数学问题。"
+    }
+  ]
+}
