@@ -103,6 +103,21 @@ class TelegramRPTTests(unittest.TestCase):
             self.assertIn("tidak sah", self.messages[-1][1])
         self.assertEqual(len(self.documents), 10)
 
+    def test_bm_sjk_year_six_references_follow_printed_activity_pages(self):
+        import json
+
+        from rpt_2027.sjkc.bahasa_melayu.documents import document_path
+
+        source = document_path(6, "docx").with_name("year_6_kuala_lumpur.json")
+        lessons = json.loads(source.read_text(encoding="utf-8"))["lessons"]
+        topics = {lesson["topic"]: lesson["textbook_page"] for lesson in lessons}
+        self.assertEqual(topics["Jagalah Kesihatan Mental"], "33")
+        self.assertEqual(topics["Promosi Minda Sihat"], "34–35")
+        activities = {lesson["pkjr"]["activity"]: lesson["pkjr"]["pages"]
+                      for lesson in lessons if "pkjr" in lesson}
+        self.assertEqual(activities[8], "10–11")
+        self.assertEqual(activities[9], "12")
+
     def test_sjkc_delivery_requires_telegram_confirmation(self):
         self.active = True
         self.namespace["_telegram_delivery_ok_v25279"] = lambda result: False
