@@ -194,33 +194,42 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
                         self.assertEqual(pdf.headers["X-RPT-Source-SHA256"], hashlib.sha256(pdf.data).hexdigest())
                 self.assertEqual(self.client.get(f"/api/rpt/2027/all/{CODE}/1.pdf").status_code, 404)
 
-    def test_matematik_sjkc_has_separate_paid_word_and_pdf_for_year_two(self):
+    def test_matematik_sjkc_has_separate_paid_word_and_pdf_for_years_two_and_three(self):
         from rpt_2027.sjkc.matematik.documents import CODE, document_path
 
         folder = self.root / "sjkc" / "matematik"
         folder.mkdir(parents=True)
-        for fmt in ("pdf", "docx"):
-            source = document_path(2, fmt)
-            (folder / source.name).write_bytes(source.read_bytes())
-        word_url = "/api/rpt/2027/sjkc/matematik/2.docx"
-        pdf_url = f"/api/rpt/2027/all/{CODE}/2.pdf"
+        for year in (2, 3):
+            for fmt in ("pdf", "docx"):
+                source = document_path(year, fmt)
+                (folder / source.name).write_bytes(source.read_bytes())
+
         with patch("web.rpt_2027_all_http._account", return_value=({"telegram_user_id": 42}, None)):
-            with patch("web.rpt_2027_all_http._has_paid_access", return_value=False):
-                self.assertEqual(self.client.get(word_url).status_code, 403)
-                self.assertEqual(self.client.get(pdf_url).status_code, 403)
-            with patch("web.rpt_2027_all_http._has_paid_access", return_value=True):
-                subjects = self.client.get("/api/rpt/2027/catalog").get_json()["subjects"]
-                maths = next(subject for subject in subjects if subject["code"] == CODE)
-                self.assertEqual([item["year"] for item in maths["years"]], [2])
-                self.assertEqual(maths["years"][0]["docx_url"], word_url)
-                with self.client.get(word_url) as word, self.client.get(pdf_url) as pdf:
-                    self.assertEqual(word.data, document_path(2, "docx").read_bytes())
-                    self.assertEqual(pdf.data, document_path(2).read_bytes())
-                    self.assertEqual(pdf.headers["X-RPT-Source-SHA256"], hashlib.sha256(pdf.data).hexdigest())
-                self.assertEqual(self.client.get("/api/rpt/2027/sjkc/matematik/3.docx").status_code, 404)
-                with self.client.get("/api/rpt/2027/all/matematik/2.pdf") as sk:
-                    self.assertEqual(sk.status_code, 200)
-                    self.assertNotEqual(sk.data, document_path(2).read_bytes())
+            for paid in (False, True):
+                with patch("web.rpt_2027_all_http._has_paid_access", return_value=paid):
+                    subjects = self.client.get("/api/rpt/2027/catalog").get_json()["subjects"]
+                    maths = next(subject for subject in subjects if subject["code"] == CODE)
+                    self.assertEqual([item["year"] for item in maths["years"]], [2, 3])
+                    for item in maths["years"]:
+                        year = item["year"]
+                        word_url = f"/api/rpt/2027/sjkc/matematik/{year}.docx"
+                        pdf_url = f"/api/rpt/2027/all/{CODE}/{year}.pdf"
+                        self.assertEqual(item["download_enabled"], paid)
+                        self.assertEqual(item["docx_url"], word_url if paid else None)
+                        self.assertIn("Kumpulan A dan B", item["note"])
+                        with self.client.get(word_url) as word, self.client.get(pdf_url) as pdf:
+                            self.assertEqual(word.status_code, 200 if paid else 403)
+                            self.assertEqual(pdf.status_code, 200 if paid else 403)
+                            if paid:
+                                self.assertEqual(word.data, document_path(year, "docx").read_bytes())
+                                self.assertEqual(pdf.data, document_path(year).read_bytes())
+                                self.assertEqual(pdf.headers["X-RPT-Source-SHA256"],
+                                                 hashlib.sha256(pdf.data).hexdigest())
+                    if paid:
+                        self.assertEqual(self.client.get("/api/rpt/2027/sjkc/matematik/4.docx").status_code, 404)
+                        with self.client.get("/api/rpt/2027/all/matematik/2.pdf") as sk:
+                            self.assertEqual(sk.status_code, 200)
+                            self.assertNotEqual(sk.data, document_path(2).read_bytes())
 
     def test_manifest_sha_tampering_blocks_only_corrupt_pdf(self):
         self.manifest["files"]["sains:6"]["sha256"]="0"*64
