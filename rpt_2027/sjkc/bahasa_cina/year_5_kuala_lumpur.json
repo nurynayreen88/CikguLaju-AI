@@ -1,0 +1,3418 @@
+{
+  "academic_year": 2027,
+  "curriculum": "KSSR (Semakan 2017)",
+  "school_type": "SJKC",
+  "subject": "Bahasa Cina",
+  "year": 5,
+  "state": "Kuala Lumpur",
+  "calendar_group": "B",
+  "time_allocation_hours": 160,
+  "unit_count": 4,
+  "assessment_count": 4,
+  "calendar_model": "Proposed slots of 60 minutes based on the W.P. Kuala Lumpur school calendar. Adjust to the school timetable.",
+  "reserve_dates": [
+    "2027-01-06",
+    "2027-01-13",
+    "2027-01-27",
+    "2027-02-17",
+    "2027-03-03",
+    "2027-03-17",
+    "2027-03-24",
+    "2027-03-31",
+    "2027-04-02",
+    "2027-04-07",
+    "2027-04-14",
+    "2027-04-21",
+    "2027-04-28",
+    "2027-05-05",
+    "2027-05-12",
+    "2027-06-16",
+    "2027-06-18",
+    "2027-06-23",
+    "2027-06-30",
+    "2027-07-07",
+    "2027-07-14",
+    "2027-07-21",
+    "2027-07-28",
+    "2027-07-30",
+    "2027-08-04",
+    "2027-08-11",
+    "2027-08-25",
+    "2027-09-08",
+    "2027-09-22",
+    "2027-09-29",
+    "2027-10-06",
+    "2027-10-08",
+    "2027-10-13",
+    "2027-10-20",
+    "2027-11-03",
+    "2027-11-10",
+    "2027-11-17",
+    "2027-11-24",
+    "2027-12-01"
+  ],
+  "additional_calendar_exclusions": [
+    "2027-01-22",
+    "2027-02-01",
+    "2027-02-05",
+    "2027-02-08",
+    "2027-02-09",
+    "2027-02-10",
+    "2027-02-11",
+    "2027-02-12",
+    "2027-02-24",
+    "2027-05-17",
+    "2027-05-18",
+    "2027-05-19",
+    "2027-05-20",
+    "2027-05-21",
+    "2027-06-07",
+    "2027-06-08",
+    "2027-08-16",
+    "2027-09-16",
+    "2027-10-27",
+    "2027-10-28",
+    "2027-10-29"
+  ],
+  "sources": {
+    "rpt_reference": "https://www.scribd.com/document/1026064438/4-Bc-Tahun-5-Rpt-2026-Cps",
+    "dskp": "https://fliphtml5.com/dsymy/qcbg/DSKP_KSSR_SEMAKAN_2017_BAHASA_CINA_SJKC_TAHUN_5/",
+    "textbook": "https://fliphtml5.com/exqwm/gphc/%25E4%25BA%2594%25E5%25B9%25B4%25E7%25BA%25A7%25E5%258D%258E%25E8%25AF%25AD%25E8%25AF%25BE%25E6%259C%25ACKSSR_semakan_Bahasa_Cina_Tahun_5/",
+    "calendar": "https://www.moe.gov.my/storage/files/shares/pekeliling_dan_garis_panduan/surat_siaran/SS%20KPM%20Bil.%201%20Tahun%202026%20-%20Kalendar%20Akademik%20Tahun%202027.pdf",
+    "time_allocation": "https://www.moe.gov.my/pekeliling/surat-pekeliling-ikhtisas-bilangan-5-tahun-2019-pelaksanaan-kurikulum-standard-sekolah-rendah-kssr-semakan-2017-pendidikan-seni-visual-dan-kssr-semakan-2017-pendidikan-muzik-bagi-menggantikan-mata-pelajaran-pendidikan-kesenian-mulai-tahun-2020",
+    "public_holidays": "https://www.kabinet.gov.my/hari-kelepasan-am/"
+  },
+  "lessons": [
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "互动平台：什么是真实力",
+      "kind": "activity",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1"
+      ],
+      "focus": "讨论可观察的能力表现，引用同伴的观点后补充理由。",
+      "textbook_pages": "2",
+      "workbook": null,
+      "pdp": 1,
+      "date": "2027-01-04",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "1.1.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "实力会说话 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "随文认读词语并整理森林动物对蚯蚓和蛇的不同看法，以课文中的信息核对理解。",
+      "textbook_pages": "3–8",
+      "workbook": null,
+      "pdp": 2,
+      "date": "2027-01-05",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "实力会说话 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用具体词句作为证据，分析从两种动物的本领判断为什么不能只看外形。",
+      "textbook_pages": "3–8",
+      "workbook": null,
+      "pdp": 3,
+      "date": "2027-01-07",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "实力会说话 · 朗读",
+      "kind": "read_aloud",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "focus": "围绕森林动物对蚯蚓和蛇的不同看法挑选片段。选出表达方式不同的两处句子，调整语速语调，并说明朗读选择。",
+      "textbook_pages": "4",
+      "workbook": null,
+      "pdp": 4,
+      "date": "2027-01-08",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.2.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "实力会说话 · 写字",
+      "kind": "handwriting",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写与森林动物对蚯蚓和蛇的不同看法有关的生字，对照课内范字检查笔顺和间架。",
+      "textbook_pages": "3–8",
+      "workbook": null,
+      "pdp": 5,
+      "date": "2027-01-11",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.1.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "实力会说话 · 写作",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "以一项能够观察的表现说明自己的进步，并按内容顺序检查用词及句间联系。",
+      "textbook_pages": "3–8",
+      "workbook": null,
+      "pdp": 6,
+      "date": "2027-01-12",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "实力会说话 · 词语运用",
+      "kind": "language",
+      "sk": [
+        "5.3"
+      ],
+      "sp": [
+        "5.3.1"
+      ],
+      "focus": "从课后练习选词，比较其在不同句子中的含义，换一个情境准确使用。",
+      "textbook_pages": "8",
+      "workbook": null,
+      "pdp": 7,
+      "date": "2027-01-14",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "5.3.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "古诗 · 元日",
+      "kind": "poem",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "focus": "背诵古诗。按诗意找出辞旧迎新的习俗，并与今天的年俗比较。",
+      "textbook_pages": "8",
+      "workbook": null,
+      "pdp": 8,
+      "date": "2027-01-15",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "4.2.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "风中的树苗 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "随文认读词语并整理树苗面对的风势和成长条件，以课文中的信息核对理解。",
+      "textbook_pages": "9–14",
+      "workbook": null,
+      "pdp": 9,
+      "date": "2027-01-18",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "风中的树苗 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用具体词句作为证据，分析找出树苗的形象与成长经验之间的联系。",
+      "textbook_pages": "9–14",
+      "workbook": null,
+      "pdp": 10,
+      "date": "2027-01-19",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "风中的树苗 · 朗读",
+      "kind": "read_aloud",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "focus": "围绕树苗面对的风势和成长条件挑选片段。选出表达方式不同的两处句子，调整语速语调，并说明朗读选择。",
+      "textbook_pages": "9–14",
+      "workbook": null,
+      "pdp": 11,
+      "date": "2027-01-20",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "风中的树苗 · 写字",
+      "kind": "handwriting",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写与树苗面对的风势和成长条件有关的生字，对照课内范字检查笔顺和间架。",
+      "textbook_pages": "9–14",
+      "workbook": null,
+      "pdp": 12,
+      "date": "2027-01-21",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.1.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "风中的树苗 · 写作",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "用比喻写自己如何应付一项困难，并按内容顺序检查用词及句间联系。",
+      "textbook_pages": "9–14",
+      "workbook": null,
+      "pdp": 13,
+      "date": "2027-01-25",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "风中的树苗 · 书法",
+      "kind": "language",
+      "sk": [
+        "4.5"
+      ],
+      "sp": [
+        "4.5.1"
+      ],
+      "focus": "选课文字帖中的范字临写，比较笔画起收、结构和行距，圈出一个要调整的字。",
+      "textbook_pages": "14",
+      "workbook": null,
+      "pdp": 14,
+      "date": "2027-01-26",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "4.5.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "互动平台：网络使用",
+      "kind": "activity",
+      "sk": [
+        "1.1",
+        "1.2",
+        "1.3"
+      ],
+      "sp": [
+        "1.1.1",
+        "1.2.1",
+        "1.3.2"
+      ],
+      "focus": "讨论电子产品的使用，聆听同伴的说明，并呈现一种有益用法。",
+      "textbook_pages": "15",
+      "workbook": null,
+      "pdp": 15,
+      "date": "2027-01-28",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "1.1.1",
+        "1.2.1",
+        "1.3.2"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "告别网络游戏的汤姆 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "随文认读词语并整理汤姆使用网络游戏前后的生活变化，以课文中的信息核对理解。",
+      "textbook_pages": "16–22",
+      "workbook": null,
+      "pdp": 16,
+      "date": "2027-01-29",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "告别网络游戏的汤姆 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用具体词句作为证据，分析用关键决定和后果分析改变的原因。",
+      "textbook_pages": "16–22",
+      "workbook": null,
+      "pdp": 17,
+      "date": "2027-02-02",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "告别网络游戏的汤姆 · 朗读",
+      "kind": "read_aloud",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "focus": "围绕汤姆使用网络游戏前后的生活变化挑选片段。选出表达方式不同的两处句子，调整语速语调，并说明朗读选择。",
+      "textbook_pages": "16–22",
+      "workbook": null,
+      "pdp": 18,
+      "date": "2027-02-03",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "告别网络游戏的汤姆 · 写字",
+      "kind": "handwriting",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写与汤姆使用网络游戏前后的生活变化有关的生字，对照课内范字检查笔顺和间架。",
+      "textbook_pages": "16–22",
+      "workbook": null,
+      "pdp": 19,
+      "date": "2027-02-04",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.1.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "告别网络游戏的汤姆 · 写作",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "给同伴写三项可执行的健康用网计划，并按内容顺序检查用词及句间联系。",
+      "textbook_pages": "16–22",
+      "workbook": null,
+      "pdp": 20,
+      "date": "2027-02-15",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "古诗 · 芙蓉楼送辛渐",
+      "kind": "poem",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "focus": "背诵古诗。从雨、山和冰心的意象分析送别中的志趣。",
+      "textbook_pages": "22",
+      "workbook": null,
+      "pdp": 21,
+      "date": "2027-02-16",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "4.2.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "我诚实我守信 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "随文认读词语并整理课文中的守诺、失信和补救行为，以课文中的信息核对理解。",
+      "textbook_pages": "23–28",
+      "workbook": null,
+      "pdp": 22,
+      "date": "2027-02-18",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "我诚实我守信 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用具体词句作为证据，分析从一件事的后果说明诚信如何影响关系。",
+      "textbook_pages": "23–28",
+      "workbook": null,
+      "pdp": 23,
+      "date": "2027-02-19",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "我诚实我守信 · 朗读",
+      "kind": "read_aloud",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "focus": "围绕课文中的守诺、失信和补救行为挑选片段。选出表达方式不同的两处句子，调整语速语调，并说明朗读选择。",
+      "textbook_pages": "23–28",
+      "workbook": null,
+      "pdp": 24,
+      "date": "2027-02-22",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "我诚实我守信 · 写字",
+      "kind": "handwriting",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写与课文中的守诺、失信和补救行为有关的生字，对照课内范字检查笔顺和间架。",
+      "textbook_pages": "23–28",
+      "workbook": null,
+      "pdp": 25,
+      "date": "2027-02-23",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.1.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "我诚实我守信 · 写作",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.2"
+      ],
+      "focus": "写一封向朋友说明承诺及履行办法的私函，并按内容顺序检查用词及句间联系。",
+      "textbook_pages": "23–28",
+      "workbook": null,
+      "pdp": 26,
+      "date": "2027-02-25",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "互动平台：眼泪与情绪",
+      "kind": "activity",
+      "sk": [
+        "1.1",
+        "1.3"
+      ],
+      "sp": [
+        "1.1.1",
+        "1.3.2"
+      ],
+      "focus": "选择与眼泪有关的一个词语讲述事件，说明自己的看法。",
+      "textbook_pages": "29",
+      "workbook": null,
+      "pdp": 27,
+      "date": "2027-02-26",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "1.1.1",
+        "1.3.2"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "英雄有泪 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "随文认读词语并整理英雄面对的事情和显露的情绪，以课文中的信息核对理解。",
+      "textbook_pages": "30–35",
+      "workbook": null,
+      "pdp": 28,
+      "date": "2027-03-01",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "英雄有泪 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用具体词句作为证据，分析比较外在的勇敢行动和内心的感受。",
+      "textbook_pages": "30–35",
+      "workbook": null,
+      "pdp": 29,
+      "date": "2027-03-02",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "英雄有泪 · 朗读",
+      "kind": "read_aloud",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "focus": "围绕英雄面对的事情和显露的情绪挑选片段。选出表达方式不同的两处句子，调整语速语调，并说明朗读选择。",
+      "textbook_pages": "30–35",
+      "workbook": null,
+      "pdp": 30,
+      "date": "2027-03-04",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "英雄有泪 · 写字",
+      "kind": "handwriting",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写与英雄面对的事情和显露的情绪有关的生字，对照课内范字检查笔顺和间架。",
+      "textbook_pages": "30–35",
+      "workbook": null,
+      "pdp": 31,
+      "date": "2027-03-05",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.1.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "英雄有泪 · 写作",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "用一个动作和一处语言描写感动时刻，并按内容顺序检查用词及句间联系。",
+      "textbook_pages": "30–35",
+      "workbook": null,
+      "pdp": 32,
+      "date": "2027-03-15",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.2.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "英雄有泪 · 诵读演绎",
+      "kind": "language",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.1"
+      ],
+      "focus": "从人物语言或叙述中挑一段，配合语气和动作演绎，与同伴互评。",
+      "textbook_pages": "32",
+      "workbook": null,
+      "pdp": 33,
+      "date": "2027-03-16",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "4.3.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "古诗 · 夏日绝句",
+      "kind": "poem",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "focus": "背诵古诗。比较诗里两种英雄形象，解释诗人借项羽表达什么。",
+      "textbook_pages": "35",
+      "workbook": null,
+      "pdp": 34,
+      "date": "2027-03-18",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "4.2.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "妙笔写作一：人物特点",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.3"
+      ],
+      "focus": "从外貌、动作和事例中选出能突出人物特点的材料，完成提纲。",
+      "textbook_pages": "36–37",
+      "workbook": null,
+      "pdp": 35,
+      "date": "2027-03-19",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.2.3"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "妙笔写作一：成文与修改",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.3"
+      ],
+      "focus": "用分段方式描写一名熟悉的人，按同伴建议替换空泛形容词。",
+      "textbook_pages": "36–37",
+      "workbook": null,
+      "pdp": 36,
+      "date": "2027-03-22",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.2.3"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "语文堂一：轻声与词义",
+      "kind": "language",
+      "sk": [
+        "5.2",
+        "5.3"
+      ],
+      "sp": [
+        "5.2.1",
+        "5.3.1"
+      ],
+      "focus": "辨读带轻声的词，按语境区分词语的义项。",
+      "textbook_pages": "38",
+      "workbook": null,
+      "pdp": 37,
+      "date": "2027-03-23",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "5.2.1",
+        "5.3.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "语文堂一：关联与表达",
+      "kind": "language",
+      "sk": [
+        "5.4"
+      ],
+      "sp": [
+        "5.4.1"
+      ],
+      "focus": "比较关联词在不同句子里的功能，再用合适的词连接两句。",
+      "textbook_pages": "38",
+      "workbook": null,
+      "pdp": 38,
+      "date": "2027-03-25",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "5.4.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "蜕变之旅：课堂评估",
+      "kind": "assessment",
+      "sk": [
+        "2.1",
+        "3.2"
+      ],
+      "sp": [
+        "2.1.2",
+        "3.2.1"
+      ],
+      "focus": "选取两处人物行动作证据，写一段说明人物怎样改变。",
+      "textbook_pages": "3–38",
+      "workbook": null,
+      "pdp": 39,
+      "date": "2027-03-26",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2",
+        "3.2.1"
+      ]
+    },
+    {
+      "block": "U1",
+      "unit": "单元一 蜕变之旅",
+      "topic": "延伸阅读 · 差不多先生",
+      "kind": "extension",
+      "sk": [
+        "2.1",
+        "4.4"
+      ],
+      "sp": [
+        "2.1.2",
+        "4.4.1"
+      ],
+      "focus": "对比人物的几次选择和后果，说明作品讽刺的态度。",
+      "textbook_pages": "153–155",
+      "workbook": null,
+      "pdp": 40,
+      "date": "2027-03-29",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "互动平台：手指故事",
+      "kind": "activity",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.2"
+      ],
+      "focus": "听读手指故事，记下主要内容和补充细节。",
+      "textbook_pages": "40",
+      "workbook": null,
+      "pdp": 41,
+      "date": "2027-03-30",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "1.2.2"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "小老鼠与乌鸦 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "随文认读词语并整理小老鼠和乌鸦各自的行动与选择，以课文中的信息核对理解。",
+      "textbook_pages": "40–46",
+      "workbook": null,
+      "pdp": 42,
+      "date": "2027-04-01",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "小老鼠与乌鸦 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用具体词句作为证据，分析用故事转折说明互助或判断的重要。",
+      "textbook_pages": "40–46",
+      "workbook": null,
+      "pdp": 43,
+      "date": "2027-04-05",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "小老鼠与乌鸦 · 朗读",
+      "kind": "read_aloud",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "focus": "围绕小老鼠和乌鸦各自的行动与选择挑选片段。选出表达方式不同的两处句子，调整语速语调，并说明朗读选择。",
+      "textbook_pages": "40–46",
+      "workbook": null,
+      "pdp": 44,
+      "date": "2027-04-06",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "小老鼠与乌鸦 · 写字",
+      "kind": "handwriting",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写与小老鼠和乌鸦各自的行动与选择有关的生字，对照课内范字检查笔顺和间架。",
+      "textbook_pages": "40–46",
+      "workbook": null,
+      "pdp": 45,
+      "date": "2027-04-08",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.1.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "小老鼠与乌鸦 · 写作",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "从一个角色角度改写寓言中的关键决定，并按内容顺序检查用词及句间联系。",
+      "textbook_pages": "40–46",
+      "workbook": null,
+      "pdp": 46,
+      "date": "2027-04-09",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "小老鼠与乌鸦 · 书法",
+      "kind": "language",
+      "sk": [
+        "4.5"
+      ],
+      "sp": [
+        "4.5.1"
+      ],
+      "focus": "选课文字帖中的范字临写，比较笔画起收、结构和行距，圈出一个要调整的字。",
+      "textbook_pages": "46",
+      "workbook": null,
+      "pdp": 47,
+      "date": "2027-04-12",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "4.5.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "向牵牛花学习 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "随文认读词语并整理牵牛花的形态和生长动作，以课文中的信息核对理解。",
+      "textbook_pages": "48–53",
+      "workbook": null,
+      "pdp": 48,
+      "date": "2027-04-13",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "向牵牛花学习 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用具体词句作为证据，分析说明植物特点怎样引出做人做事的启示。",
+      "textbook_pages": "48–53",
+      "workbook": null,
+      "pdp": 49,
+      "date": "2027-04-15",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "向牵牛花学习 · 朗读",
+      "kind": "read_aloud",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "focus": "围绕牵牛花的形态和生长动作挑选片段。选出表达方式不同的两处句子，调整语速语调，并说明朗读选择。",
+      "textbook_pages": "48–53",
+      "workbook": null,
+      "pdp": 50,
+      "date": "2027-04-16",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "向牵牛花学习 · 写字",
+      "kind": "handwriting",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写与牵牛花的形态和生长动作有关的生字，对照课内范字检查笔顺和间架。",
+      "textbook_pages": "48–53",
+      "workbook": null,
+      "pdp": 51,
+      "date": "2027-04-19",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.1.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "向牵牛花学习 · 写作",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "以植物的一种可观察特点写一个比喻，并按内容顺序检查用词及句间联系。",
+      "textbook_pages": "48–53",
+      "workbook": null,
+      "pdp": 52,
+      "date": "2027-04-20",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "向牵牛花学习 · 语文游戏",
+      "kind": "language",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1"
+      ],
+      "focus": "用课文词汇设计词义或字形配对，说明某一组配对的依据。",
+      "textbook_pages": "53",
+      "workbook": null,
+      "pdp": 53,
+      "date": "2027-04-22",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "4.1.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "古诗 · 枫桥夜泊",
+      "kind": "poem",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "focus": "背诵古诗。通过夜景与钟声说明旅人的愁绪，并调整诵读节奏。",
+      "textbook_pages": "53",
+      "workbook": null,
+      "pdp": 54,
+      "date": "2027-04-23",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "4.2.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "互动平台：从线索提问",
+      "kind": "activity",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2"
+      ],
+      "focus": "根据所见痕迹提出可用证据回答的问题，并整理同伴的回答。",
+      "textbook_pages": "54",
+      "workbook": null,
+      "pdp": 55,
+      "date": "2027-04-26",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "1.1.2"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "雨后的线索 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "随文认读词语并整理雨过后能观察到的物件及痕迹，以课文中的信息核对理解。",
+      "textbook_pages": "54–60",
+      "workbook": null,
+      "pdp": 56,
+      "date": "2027-04-27",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "雨后的线索 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用具体词句作为证据，分析把证据和推断分栏，检查推断能否成立。",
+      "textbook_pages": "54–60",
+      "workbook": null,
+      "pdp": 57,
+      "date": "2027-04-29",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "雨后的线索 · 朗读",
+      "kind": "read_aloud",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "focus": "围绕雨过后能观察到的物件及痕迹挑选片段。选出表达方式不同的两处句子，调整语速语调，并说明朗读选择。",
+      "textbook_pages": "54–60",
+      "workbook": null,
+      "pdp": 58,
+      "date": "2027-04-30",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "雨后的线索 · 写字",
+      "kind": "handwriting",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写与雨过后能观察到的物件及痕迹有关的生字，对照课内范字检查笔顺和间架。",
+      "textbook_pages": "54–60",
+      "workbook": null,
+      "pdp": 59,
+      "date": "2027-05-03",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.1.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "雨后的线索 · 写作",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "为一次校园观察写一段有证据的推论，并按内容顺序检查用词及句间联系。",
+      "textbook_pages": "54–60",
+      "workbook": null,
+      "pdp": 60,
+      "date": "2027-05-04",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.2.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "雨后的线索 · 标点运用",
+      "kind": "language",
+      "sk": [
+        "5.5"
+      ],
+      "sp": [
+        "5.5.1"
+      ],
+      "focus": "比较课页中标点在不同语境的用法，给自拟例句加上合适的标点并说明理由。",
+      "textbook_pages": "60",
+      "workbook": null,
+      "pdp": 61,
+      "date": "2027-05-06",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "5.5.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "笑谈端午 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "随文认读词语并整理端午的食物、习俗及相关故事，以课文中的信息核对理解。",
+      "textbook_pages": "62–68",
+      "workbook": null,
+      "pdp": 62,
+      "date": "2027-05-07",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "笑谈端午 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用具体词句作为证据，分析比较传说叙述与今日过节做法。",
+      "textbook_pages": "62–68",
+      "workbook": null,
+      "pdp": 63,
+      "date": "2027-05-10",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "笑谈端午 · 朗读",
+      "kind": "read_aloud",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "focus": "围绕端午的食物、习俗及相关故事挑选片段。选出表达方式不同的两处句子，调整语速语调，并说明朗读选择。",
+      "textbook_pages": "67",
+      "workbook": null,
+      "pdp": 64,
+      "date": "2027-05-11",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.2.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "笑谈端午 · 写字",
+      "kind": "handwriting",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写与端午的食物、习俗及相关故事有关的生字，对照课内范字检查笔顺和间架。",
+      "textbook_pages": "62–68",
+      "workbook": null,
+      "pdp": 65,
+      "date": "2027-05-13",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.1.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "笑谈端午 · 写作",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "根据一种习俗为校园文化展写说明卡，并按内容顺序检查用词及句间联系。",
+      "textbook_pages": "62–68",
+      "workbook": null,
+      "pdp": 66,
+      "date": "2027-05-14",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "古诗 · 凉州词（王翰）",
+      "kind": "poem",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "focus": "背诵古诗。用诗中的酒、琵琶和战场说明复杂的出征心情。",
+      "textbook_pages": "68",
+      "workbook": null,
+      "pdp": 67,
+      "date": "2027-06-09",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "4.2.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "互动平台：克服生活障碍",
+      "kind": "activity",
+      "sk": [
+        "1.1",
+        "1.3"
+      ],
+      "sp": [
+        "1.1.1",
+        "1.3.1"
+      ],
+      "focus": "讨论残障人士面对的生活障碍，并讲述一项适切的帮助。",
+      "textbook_pages": "69",
+      "workbook": null,
+      "pdp": 68,
+      "date": "2027-06-10",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "1.1.1",
+        "1.3.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "无声合唱团 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "随文认读词语并整理成员如何参与训练和表演，以课文中的信息核对理解。",
+      "textbook_pages": "70–75",
+      "workbook": null,
+      "pdp": 69,
+      "date": "2027-06-11",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "无声合唱团 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用具体词句作为证据，分析通过动作和合作解释“无声”与“合唱”的关系。",
+      "textbook_pages": "70–75",
+      "workbook": null,
+      "pdp": 70,
+      "date": "2027-06-14",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "无声合唱团 · 朗读",
+      "kind": "read_aloud",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "focus": "围绕成员如何参与训练和表演挑选片段。选出表达方式不同的两处句子，调整语速语调，并说明朗读选择。",
+      "textbook_pages": "72",
+      "workbook": null,
+      "pdp": 71,
+      "date": "2027-06-15",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.2.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "无声合唱团 · 写字",
+      "kind": "handwriting",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写与成员如何参与训练和表演有关的生字，对照课内范字检查笔顺和间架。",
+      "textbook_pages": "70–75",
+      "workbook": null,
+      "pdp": 72,
+      "date": "2027-06-17",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.1.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "无声合唱团 · 写作",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "从观众角度记录让自己印象深刻的合作瞬间，并按内容顺序检查用词及句间联系。",
+      "textbook_pages": "70–75",
+      "workbook": null,
+      "pdp": 73,
+      "date": "2027-06-21",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.2.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "妙笔写作二：事件结构",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.3"
+      ],
+      "focus": "按时间、地点、人物、起因和结果编排一次参访记录。",
+      "textbook_pages": "76–77",
+      "workbook": null,
+      "pdp": 74,
+      "date": "2027-06-22",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.2.3"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "妙笔写作二：叙事修改",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.3"
+      ],
+      "focus": "补充关键对话及感想，检查叙事顺序是否容易跟随。",
+      "textbook_pages": "76–77",
+      "workbook": null,
+      "pdp": 75,
+      "date": "2027-06-24",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.2.3"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "语文堂二：儿化与近义词",
+      "kind": "language",
+      "sk": [
+        "5.2",
+        "5.3"
+      ],
+      "sp": [
+        "5.2.1",
+        "5.3.1"
+      ],
+      "focus": "读准儿化词，按语境辨别“工夫”和“功夫”等词。",
+      "textbook_pages": "78",
+      "workbook": null,
+      "pdp": 76,
+      "date": "2027-06-25",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "5.2.1",
+        "5.3.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "语文堂二：连接句子",
+      "kind": "language",
+      "sk": [
+        "5.4"
+      ],
+      "sp": [
+        "5.4.1"
+      ],
+      "focus": "从习俗或表演的话题选例，用合适的关联词写出前后关系。",
+      "textbook_pages": "78",
+      "workbook": null,
+      "pdp": 77,
+      "date": "2027-06-28",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "5.4.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "和谐之旅：课堂评估",
+      "kind": "assessment",
+      "sk": [
+        "2.1",
+        "3.2"
+      ],
+      "sp": [
+        "2.1.2",
+        "3.2.1"
+      ],
+      "focus": "以一处冲突或合作为例，用人物语言、行动和结果解释原因。",
+      "textbook_pages": "40–78",
+      "workbook": null,
+      "pdp": 78,
+      "date": "2027-06-29",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2",
+        "3.2.1"
+      ]
+    },
+    {
+      "block": "U2",
+      "unit": "单元二 和谐之旅",
+      "topic": "延伸阅读 · 童年的发现",
+      "kind": "extension",
+      "sk": [
+        "2.1",
+        "4.4"
+      ],
+      "sp": [
+        "2.1.2",
+        "4.4.1"
+      ],
+      "focus": "按观察、疑问和尝试整理情节，说明发现从哪里开始。",
+      "textbook_pages": "156–160",
+      "workbook": null,
+      "pdp": 79,
+      "date": "2027-07-01",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "互动平台：诗与画",
+      "kind": "activity",
+      "sk": [
+        "1.1",
+        "1.3"
+      ],
+      "sp": [
+        "1.1.1",
+        "1.3.1"
+      ],
+      "focus": "介绍一幅画的景物、位置及变化，并指出和诗句的联系。",
+      "textbook_pages": "80",
+      "workbook": null,
+      "pdp": 80,
+      "date": "2027-07-02",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "1.1.1",
+        "1.3.1"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "诗情画意的世界 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "随文认读词语并整理诗句和图画中的共同景物，以课文中的信息核对理解。",
+      "textbook_pages": "81–87",
+      "workbook": null,
+      "pdp": 81,
+      "date": "2027-07-05",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "诗情画意的世界 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用具体词句作为证据，分析比较文字和画面表达气氛的方法。",
+      "textbook_pages": "81–87",
+      "workbook": null,
+      "pdp": 82,
+      "date": "2027-07-06",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "诗情画意的世界 · 朗读",
+      "kind": "read_aloud",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "focus": "围绕诗句和图画中的共同景物挑选片段。选出表达方式不同的两处句子，调整语速语调，并说明朗读选择。",
+      "textbook_pages": "81–87",
+      "workbook": null,
+      "pdp": 83,
+      "date": "2027-07-08",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "诗情画意的世界 · 写字",
+      "kind": "handwriting",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写与诗句和图画中的共同景物有关的生字，对照课内范字检查笔顺和间架。",
+      "textbook_pages": "81–87",
+      "workbook": null,
+      "pdp": 84,
+      "date": "2027-07-09",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.1.1"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "诗情画意的世界 · 写作",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "给一幅图写有颜色和动作的短诗，并按内容顺序检查用词及句间联系。",
+      "textbook_pages": "81–87",
+      "workbook": null,
+      "pdp": 85,
+      "date": "2027-07-12",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "诗情画意的世界 · 诵读演绎",
+      "kind": "language",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.1"
+      ],
+      "focus": "从人物语言或叙述中挑一段，配合语气和动作演绎，与同伴互评。",
+      "textbook_pages": "83",
+      "workbook": null,
+      "pdp": 86,
+      "date": "2027-07-13",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "4.3.1"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "古诗 · 望洞庭",
+      "kind": "poem",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "focus": "背诵古诗。通过明月、湖面和青螺绘出诗人眼中的洞庭。",
+      "textbook_pages": "87",
+      "workbook": null,
+      "pdp": 87,
+      "date": "2027-07-15",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "4.2.1"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "走入传统马来屋 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "随文认读词语并整理传统马来屋的结构和设计细节，以课文中的信息核对理解。",
+      "textbook_pages": "88–93",
+      "workbook": null,
+      "pdp": 88,
+      "date": "2027-07-16",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "走入传统马来屋 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用具体词句作为证据，分析把建筑特点与用途、气候或生活方式联系起来。",
+      "textbook_pages": "88–93",
+      "workbook": null,
+      "pdp": 89,
+      "date": "2027-07-19",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "走入传统马来屋 · 朗读",
+      "kind": "read_aloud",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "focus": "围绕传统马来屋的结构和设计细节挑选片段。选出表达方式不同的两处句子，调整语速语调，并说明朗读选择。",
+      "textbook_pages": "88–93",
+      "workbook": null,
+      "pdp": 90,
+      "date": "2027-07-20",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "走入传统马来屋 · 写字",
+      "kind": "handwriting",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写与传统马来屋的结构和设计细节有关的生字，对照课内范字检查笔顺和间架。",
+      "textbook_pages": "88–93",
+      "workbook": null,
+      "pdp": 91,
+      "date": "2027-07-22",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.1.1"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "走入传统马来屋 · 写作",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "按参观路线写一段建筑导览，并按内容顺序检查用词及句间联系。",
+      "textbook_pages": "88–93",
+      "workbook": null,
+      "pdp": 92,
+      "date": "2027-07-23",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "鸡场街里的年轻梦 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "随文认读词语并整理街区活动与年轻人追求的目标，以课文中的信息核对理解。",
+      "textbook_pages": "95–100",
+      "workbook": null,
+      "pdp": 93,
+      "date": "2027-07-26",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "鸡场街里的年轻梦 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用具体词句作为证据，分析从环境和行动判断梦想得以发展的条件。",
+      "textbook_pages": "95–100",
+      "workbook": null,
+      "pdp": 94,
+      "date": "2027-07-27",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "鸡场街里的年轻梦 · 朗读",
+      "kind": "read_aloud",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "focus": "围绕街区活动与年轻人追求的目标挑选片段。选出表达方式不同的两处句子，调整语速语调，并说明朗读选择。",
+      "textbook_pages": "95–100",
+      "workbook": null,
+      "pdp": 95,
+      "date": "2027-07-29",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "鸡场街里的年轻梦 · 写字",
+      "kind": "handwriting",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写与街区活动与年轻人追求的目标有关的生字，对照课内范字检查笔顺和间架。",
+      "textbook_pages": "95–100",
+      "workbook": null,
+      "pdp": 96,
+      "date": "2027-08-02",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.1.1"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "鸡场街里的年轻梦 · 写作",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "规划一份鼓励年轻人参与地方文化的小提案，并按内容顺序检查用词及句间联系。",
+      "textbook_pages": "95–100",
+      "workbook": null,
+      "pdp": 97,
+      "date": "2027-08-03",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "鸡场街里的年轻梦 · 汉字的演变",
+      "kind": "language",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1"
+      ],
+      "focus": "观察字形的演变和部件，说明字形所表达的意思，再用现代字形构词。",
+      "textbook_pages": "100",
+      "workbook": null,
+      "pdp": 98,
+      "date": "2027-08-05",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "5.1.1"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "古诗 · 江南春",
+      "kind": "poem",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "focus": "背诵古诗。比较色彩、声音和烟雨，说明远近景如何结合。",
+      "textbook_pages": "100",
+      "workbook": null,
+      "pdp": 99,
+      "date": "2027-08-06",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "4.2.1"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "太空旅人 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "随文认读词语并整理太空旅程涉及的环境和装备，以课文中的信息核对理解。",
+      "textbook_pages": "101–106",
+      "workbook": null,
+      "pdp": 100,
+      "date": "2027-08-09",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "太空旅人 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用具体词句作为证据，分析比较地面和太空生活所需要的条件。",
+      "textbook_pages": "101–106",
+      "workbook": null,
+      "pdp": 101,
+      "date": "2027-08-10",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "太空旅人 · 朗读",
+      "kind": "read_aloud",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "focus": "围绕太空旅程涉及的环境和装备挑选片段。选出表达方式不同的两处句子，调整语速语调，并说明朗读选择。",
+      "textbook_pages": "101–106",
+      "workbook": null,
+      "pdp": 102,
+      "date": "2027-08-12",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "太空旅人 · 写字",
+      "kind": "handwriting",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写与太空旅程涉及的环境和装备有关的生字，对照课内范字检查笔顺和间架。",
+      "textbook_pages": "101–106",
+      "workbook": null,
+      "pdp": 103,
+      "date": "2027-08-13",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.1.1"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "太空旅人 · 写作",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "写一则太空生活问题和有依据的回答，并按内容顺序检查用词及句间联系。",
+      "textbook_pages": "101–106",
+      "workbook": null,
+      "pdp": 104,
+      "date": "2027-08-17",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "太空旅人 · 句式与关联词",
+      "kind": "language",
+      "sk": [
+        "5.4"
+      ],
+      "sp": [
+        "5.4.1"
+      ],
+      "focus": "读课页句式，辨别前后句的逻辑关系；用相同结构说明课文中的另一件事。",
+      "textbook_pages": "106",
+      "workbook": null,
+      "pdp": 105,
+      "date": "2027-08-18",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "5.4.1"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "探索生态公园 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "随文认读词语并整理生态公园的地点、生物及观察项目，以课文中的信息核对理解。",
+      "textbook_pages": "107–113",
+      "workbook": null,
+      "pdp": 106,
+      "date": "2027-08-19",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "探索生态公园 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用具体词句作为证据，分析从具体景物解释建设公园与保护环境的关系。",
+      "textbook_pages": "107–113",
+      "workbook": null,
+      "pdp": 107,
+      "date": "2027-08-20",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "探索生态公园 · 朗读",
+      "kind": "read_aloud",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "focus": "围绕生态公园的地点、生物及观察项目挑选片段。选出表达方式不同的两处句子，调整语速语调，并说明朗读选择。",
+      "textbook_pages": "107–113",
+      "workbook": null,
+      "pdp": 108,
+      "date": "2027-08-23",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "探索生态公园 · 写字",
+      "kind": "handwriting",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写与生态公园的地点、生物及观察项目有关的生字，对照课内范字检查笔顺和间架。",
+      "textbook_pages": "107–113",
+      "workbook": null,
+      "pdp": 109,
+      "date": "2027-08-24",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.1.1"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "探索生态公园 · 写作",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "为生态游览制订一份简短观察记录表，并按内容顺序检查用词及句间联系。",
+      "textbook_pages": "107–113",
+      "workbook": null,
+      "pdp": 110,
+      "date": "2027-08-26",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "古诗 · 渔歌子",
+      "kind": "poem",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "focus": "背诵古诗。用颜色与动作解释风雨中的渔人为何显得悠闲。",
+      "textbook_pages": "113",
+      "workbook": null,
+      "pdp": 111,
+      "date": "2027-08-27",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "4.2.1"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "妙笔写作三：事物的整体与部分",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.3"
+      ],
+      "focus": "按整体与部分组织建筑或景物特征，列出需要说明的依据。",
+      "textbook_pages": "114–115",
+      "workbook": null,
+      "pdp": 112,
+      "date": "2027-09-06",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.2.3"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "妙笔写作三：空间顺序",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.3"
+      ],
+      "focus": "以清楚的空间顺序写一份简短导览，核对位置词和段落重点。",
+      "textbook_pages": "114–115",
+      "workbook": null,
+      "pdp": 113,
+      "date": "2027-09-07",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.2.3"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "语文堂三：“啊”的读音",
+      "kind": "language",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.1"
+      ],
+      "focus": "比较“啊”跟在不同音节后面的读法，并正确朗读示例句。",
+      "textbook_pages": "116",
+      "workbook": null,
+      "pdp": 114,
+      "date": "2027-09-09",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "5.2.1"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "语文堂三：多音字与修辞",
+      "kind": "language",
+      "sk": [
+        "5.3",
+        "5.6"
+      ],
+      "sp": [
+        "5.3.1",
+        "5.6.1"
+      ],
+      "focus": "借上下文判定词语读音，再辨识所给句子的描写手法。",
+      "textbook_pages": "116",
+      "workbook": null,
+      "pdp": 115,
+      "date": "2027-09-10",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "5.3.1",
+        "5.6.1"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "知性之旅：课堂评估",
+      "kind": "assessment",
+      "sk": [
+        "2.1",
+        "3.2"
+      ],
+      "sp": [
+        "2.1.1",
+        "3.2.3"
+      ],
+      "focus": "从文章选出说明对象特征的事实，整理成有先后或空间顺序的文字。",
+      "textbook_pages": "81–116",
+      "workbook": null,
+      "pdp": 116,
+      "date": "2027-09-13",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1",
+        "3.2.3"
+      ]
+    },
+    {
+      "block": "U3",
+      "unit": "单元三 知性之旅",
+      "topic": "延伸阅读 · 祖父的院子",
+      "kind": "extension",
+      "sk": [
+        "2.1",
+        "4.4"
+      ],
+      "sp": [
+        "2.1.2",
+        "4.4.1"
+      ],
+      "focus": "用动作和景物线索说明院子里的自由及童趣。",
+      "textbook_pages": "161–165",
+      "workbook": null,
+      "pdp": 117,
+      "date": "2027-09-14",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "生命中的烙印 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "随文认读词语并整理人物记得的事件及其影响，以课文中的信息核对理解。",
+      "textbook_pages": "119–124",
+      "workbook": null,
+      "pdp": 118,
+      "date": "2027-09-15",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "生命中的烙印 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用具体词句作为证据，分析解释为什么某个经验能在生命中留下印记。",
+      "textbook_pages": "119–124",
+      "workbook": null,
+      "pdp": 119,
+      "date": "2027-09-17",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "生命中的烙印 · 朗读",
+      "kind": "read_aloud",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "focus": "围绕人物记得的事件及其影响挑选片段。选出表达方式不同的两处句子，调整语速语调，并说明朗读选择。",
+      "textbook_pages": "120",
+      "workbook": null,
+      "pdp": 120,
+      "date": "2027-09-20",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.2.1"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "生命中的烙印 · 写字",
+      "kind": "handwriting",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写与人物记得的事件及其影响有关的生字，对照课内范字检查笔顺和间架。",
+      "textbook_pages": "119–124",
+      "workbook": null,
+      "pdp": 121,
+      "date": "2027-09-21",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.1.1"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "生命中的烙印 · 写作",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "写一次让自己改变想法的真实经历，并按内容顺序检查用词及句间联系。",
+      "textbook_pages": "119–124",
+      "workbook": null,
+      "pdp": 122,
+      "date": "2027-09-23",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "生命中的烙印 · 修辞与表达",
+      "kind": "language",
+      "sk": [
+        "5.6"
+      ],
+      "sp": [
+        "5.6.1"
+      ],
+      "focus": "根据课页例句辨认修辞，改写一句课内主题的描写并比较两种表达效果。",
+      "textbook_pages": "123",
+      "workbook": null,
+      "pdp": 123,
+      "date": "2027-09-24",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "5.6.1"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "永不磨灭的幸福 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "随文认读词语并整理课文中表现幸福的事件和细节，以课文中的信息核对理解。",
+      "textbook_pages": "125–130",
+      "workbook": null,
+      "pdp": 124,
+      "date": "2027-09-27",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "永不磨灭的幸福 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用具体词句作为证据，分析用两个前后细节说明记忆为何持久。",
+      "textbook_pages": "125–130",
+      "workbook": null,
+      "pdp": 125,
+      "date": "2027-09-28",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "永不磨灭的幸福 · 朗读",
+      "kind": "read_aloud",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "focus": "围绕课文中表现幸福的事件和细节挑选片段。选出表达方式不同的两处句子，调整语速语调，并说明朗读选择。",
+      "textbook_pages": "125–130",
+      "workbook": null,
+      "pdp": 126,
+      "date": "2027-09-30",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "永不磨灭的幸福 · 写字",
+      "kind": "handwriting",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写与课文中表现幸福的事件和细节有关的生字，对照课内范字检查笔顺和间架。",
+      "textbook_pages": "125–130",
+      "workbook": null,
+      "pdp": 127,
+      "date": "2027-10-01",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.1.1"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "永不磨灭的幸福 · 写作",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "选一个日常片段写有具体细节的回忆，并按内容顺序检查用词及句间联系。",
+      "textbook_pages": "125–130",
+      "workbook": null,
+      "pdp": 128,
+      "date": "2027-10-04",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "永不磨灭的幸福 · 读音练习",
+      "kind": "language",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.1"
+      ],
+      "focus": "找出课页标注的读音变化，按课本词例朗读，互相听辨并订正。",
+      "textbook_pages": "129",
+      "workbook": null,
+      "pdp": 129,
+      "date": "2027-10-05",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "5.2.1"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "古诗 · 六月二十七日望湖楼醉书",
+      "kind": "poem",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "focus": "背诵古诗。按骤雨前后整理景象，找出两个表现变化的比喻。",
+      "textbook_pages": "130",
+      "workbook": null,
+      "pdp": 130,
+      "date": "2027-10-07",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "4.2.1"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "互动平台：义卖促销",
+      "kind": "activity",
+      "sk": [
+        "1.3"
+      ],
+      "sp": [
+        "1.3.2"
+      ],
+      "focus": "比较两种义卖促销做法，说明各自的用意和效果。",
+      "textbook_pages": "131",
+      "workbook": null,
+      "pdp": 131,
+      "date": "2027-10-11",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "1.3.2"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "棋盘里的智慧 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "随文认读词语并整理锡塔发明棋及格子里麦粒倍增的过程，以课文中的信息核对理解。",
+      "textbook_pages": "132–137",
+      "workbook": null,
+      "pdp": 132,
+      "date": "2027-10-12",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "棋盘里的智慧 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用具体词句作为证据，分析用棋盘上的数字解释国王为什么无法兑现赏赐。",
+      "textbook_pages": "132–137",
+      "workbook": null,
+      "pdp": 133,
+      "date": "2027-10-14",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "棋盘里的智慧 · 朗读",
+      "kind": "read_aloud",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "focus": "围绕锡塔发明棋及格子里麦粒倍增的过程挑选片段。选出表达方式不同的两处句子，调整语速语调，并说明朗读选择。",
+      "textbook_pages": "133",
+      "workbook": null,
+      "pdp": 134,
+      "date": "2027-10-15",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.2.1"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "棋盘里的智慧 · 写字",
+      "kind": "handwriting",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写与锡塔发明棋及格子里麦粒倍增的过程有关的生字，对照课内范字检查笔顺和间架。",
+      "textbook_pages": "132–137",
+      "workbook": null,
+      "pdp": 135,
+      "date": "2027-10-18",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.1.1"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "棋盘里的智慧 · 写作",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "画格子并写一段说明倍增如何改变结果，并按内容顺序检查用词及句间联系。",
+      "textbook_pages": "132–137",
+      "workbook": null,
+      "pdp": 136,
+      "date": "2027-10-19",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "棋盘里的智慧 · 语文游戏",
+      "kind": "language",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1"
+      ],
+      "focus": "用课文词汇设计词义或字形配对，说明某一组配对的依据。",
+      "textbook_pages": "137",
+      "workbook": null,
+      "pdp": 137,
+      "date": "2027-10-21",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "4.1.1"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "巨石载船 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "随文认读词语并整理课文描写巨石与船相关的现象及解释，以课文中的信息核对理解。",
+      "textbook_pages": "138–144",
+      "workbook": null,
+      "pdp": 138,
+      "date": "2027-10-22",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "巨石载船 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用具体词句作为证据，分析根据文中顺序区分看到的现象与原因。",
+      "textbook_pages": "138–144",
+      "workbook": null,
+      "pdp": 139,
+      "date": "2027-10-25",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "巨石载船 · 朗读",
+      "kind": "read_aloud",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "focus": "围绕课文描写巨石与船相关的现象及解释挑选片段。选出表达方式不同的两处句子，调整语速语调，并说明朗读选择。",
+      "textbook_pages": "138–144",
+      "workbook": null,
+      "pdp": 140,
+      "date": "2027-10-26",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "巨石载船 · 写字",
+      "kind": "handwriting",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写与课文描写巨石与船相关的现象及解释有关的生字，对照课内范字检查笔顺和间架。",
+      "textbook_pages": "138–144",
+      "workbook": null,
+      "pdp": 141,
+      "date": "2027-11-01",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.1.1"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "巨石载船 · 写作",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "用图和文字说明一个有趣的现象，并按内容顺序检查用词及句间联系。",
+      "textbook_pages": "138–144",
+      "workbook": null,
+      "pdp": 142,
+      "date": "2027-11-02",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "古诗 · 凉州词（王之涣）",
+      "kind": "poem",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "focus": "背诵古诗。把孤城、群山和羌笛与戍边人的感受联系起来。",
+      "textbook_pages": "144",
+      "workbook": null,
+      "pdp": 143,
+      "date": "2027-11-04",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "4.2.1"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "勇于抗战的斗士 · 识读",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "focus": "随文认读词语并整理伍连德面对疫情采取的行动及结果，以课文中的信息核对理解。",
+      "textbook_pages": "145–149",
+      "workbook": null,
+      "pdp": 144,
+      "date": "2027-11-05",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.1"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "勇于抗战的斗士 · 理解",
+      "kind": "reading",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "focus": "用具体词句作为证据，分析结合时代背景解释他的判断和坚持如何发挥作用。",
+      "textbook_pages": "145–149",
+      "workbook": null,
+      "pdp": 145,
+      "date": "2027-11-08",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "勇于抗战的斗士 · 朗读",
+      "kind": "read_aloud",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "focus": "围绕伍连德面对疫情采取的行动及结果挑选片段。选出表达方式不同的两处句子，调整语速语调，并说明朗读选择。",
+      "textbook_pages": "145–149",
+      "workbook": null,
+      "pdp": 146,
+      "date": "2027-11-09",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "勇于抗战的斗士 · 写字",
+      "kind": "handwriting",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "focus": "选写与伍连德面对疫情采取的行动及结果有关的生字，对照课内范字检查笔顺和间架。",
+      "textbook_pages": "145–149",
+      "workbook": null,
+      "pdp": 147,
+      "date": "2027-11-11",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.1.1"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "勇于抗战的斗士 · 写作",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1"
+      ],
+      "focus": "按时间和结果整理伍连德的一项贡献，并按内容顺序检查用词及句间联系。",
+      "textbook_pages": "145–149",
+      "workbook": null,
+      "pdp": 148,
+      "date": "2027-11-12",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "妙笔写作四：说明成因",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.3"
+      ],
+      "focus": "为一个自然或生活现象整理原因、现象和例证。",
+      "textbook_pages": "150–151",
+      "workbook": null,
+      "pdp": 149,
+      "date": "2027-11-15",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.2.3"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "妙笔写作四：解释与修订",
+      "kind": "writing",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.3"
+      ],
+      "focus": "按因果或推理顺序写说明文，检查每个结论是否有相关证据。",
+      "textbook_pages": "150–151",
+      "workbook": null,
+      "pdp": 150,
+      "date": "2027-11-16",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "3.2.3"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "语文堂四：词义与儿化",
+      "kind": "language",
+      "sk": [
+        "5.2",
+        "5.3"
+      ],
+      "sp": [
+        "5.2.1",
+        "5.3.1"
+      ],
+      "focus": "练习儿化发音，按语境选择能表现动作或状态的成语。",
+      "textbook_pages": "152",
+      "workbook": null,
+      "pdp": 151,
+      "date": "2027-11-18",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "5.2.1",
+        "5.3.1"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "语文堂四：修辞练习",
+      "kind": "language",
+      "sk": [
+        "5.6"
+      ],
+      "sp": [
+        "5.6.1"
+      ],
+      "focus": "辨析所给句子的修辞，并用课内主题写一句有具体画面的句子。",
+      "textbook_pages": "152",
+      "workbook": null,
+      "pdp": 152,
+      "date": "2027-11-19",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "5.6.1"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "永恒之旅：课堂评估",
+      "kind": "assessment",
+      "sk": [
+        "2.1",
+        "3.2"
+      ],
+      "sp": [
+        "2.1.2",
+        "3.2.3"
+      ],
+      "focus": "选一篇人物或说明课文写简短评述，根据证据和结构完成自评。",
+      "textbook_pages": "119–152",
+      "workbook": null,
+      "pdp": 153,
+      "date": "2027-11-22",
+      "duration_minutes": 60,
+      "textbook_printed_sp": [
+        "2.1.2",
+        "3.2.3"
+      ]
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "延伸阅读 · 巨人的花园",
+      "kind": "extension",
+      "sk": [
+        "2.1",
+        "4.4"
+      ],
+      "sp": [
+        "2.1.2",
+        "4.4.1"
+      ],
+      "focus": "对比花园前后的变化，从故事证据解释巨人的转变。",
+      "textbook_pages": "166–169",
+      "workbook": null,
+      "pdp": 154,
+      "date": "2027-11-23",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "延伸阅读 · 你一定会听见的",
+      "kind": "extension",
+      "sk": [
+        "2.1",
+        "4.4"
+      ],
+      "sp": [
+        "2.1.2",
+        "4.4.1"
+      ],
+      "focus": "从具体声音认识观察层次，记录身边常被忽略的一种声音。",
+      "textbook_pages": "170–174",
+      "workbook": null,
+      "pdp": 155,
+      "date": "2027-11-25",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "延伸阅读 · 兵士",
+      "kind": "extension",
+      "sk": [
+        "2.1",
+        "4.4"
+      ],
+      "sp": [
+        "2.1.2",
+        "4.4.1"
+      ],
+      "focus": "从人物的行为找勇气或责任的证据，比较自己的理解。",
+      "textbook_pages": "175–178",
+      "workbook": null,
+      "pdp": 156,
+      "date": "2027-11-26",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "延伸阅读 · 从“门”字说起",
+      "kind": "extension",
+      "sk": [
+        "2.1",
+        "4.4"
+      ],
+      "sp": [
+        "2.1.2",
+        "4.4.1"
+      ],
+      "focus": "用字形和词语例子说明一个汉字如何扩展出多种含义。",
+      "textbook_pages": "179–181",
+      "workbook": null,
+      "pdp": 157,
+      "date": "2027-11-29",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "延伸阅读 · 情怀诗",
+      "kind": "extension",
+      "sk": [
+        "2.1",
+        "4.4"
+      ],
+      "sp": [
+        "2.1.2",
+        "4.4.1"
+      ],
+      "focus": "找出两处情感意象，交流语言简短而能表达感情的原因。",
+      "textbook_pages": "182–184",
+      "workbook": null,
+      "pdp": 158,
+      "date": "2027-11-30",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "延伸阅读 · 越野竞跑",
+      "kind": "extension",
+      "sk": [
+        "2.1",
+        "4.4"
+      ],
+      "sp": [
+        "2.1.2",
+        "4.4.1"
+      ],
+      "focus": "按困难、选择和结果重建比赛经过，说明毅力如何体现。",
+      "textbook_pages": "185–188",
+      "workbook": null,
+      "pdp": 159,
+      "date": "2027-12-02",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    },
+    {
+      "block": "U4",
+      "unit": "单元四 永恒之旅",
+      "topic": "延伸阅读 · 生命的激情",
+      "kind": "extension",
+      "sk": [
+        "2.1",
+        "4.4"
+      ],
+      "sp": [
+        "2.1.2",
+        "4.4.1"
+      ],
+      "focus": "把具体经历与作者表达的价值联系起来，并分享一条证据。",
+      "textbook_pages": "189–192",
+      "workbook": null,
+      "pdp": 160,
+      "date": "2027-12-03",
+      "duration_minutes": 60,
+      "textbook_printed_sp": []
+    }
+  ]
+}
