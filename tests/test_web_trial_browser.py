@@ -77,8 +77,8 @@ class BrowserSharedTrialTests(unittest.TestCase):
         try:
             html=page.content()
             self.assertIn("10 janaan RPH percuma dikongsi antara Web dan Telegram",html)
-            self.assertIn("Muat turun RPT adalah",html)
-            self.assertIn("percuma untuk semua pengguna berdaftar",html)
+            self.assertIn("Muat turun RPT SK dan DLP percuma untuk pengguna log masuk.",html)
+            self.assertIn("RPT SJKC memerlukan akses berbayar aktif.",html)
             self.assertIn("Cetakan berprofil hanya untuk Rakan Pembangun atau langganan aktif",html)
         finally:page.close()
 
