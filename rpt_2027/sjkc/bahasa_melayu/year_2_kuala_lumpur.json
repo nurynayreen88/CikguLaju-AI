@@ -1,0 +1,4630 @@
+{
+  "academic_year": 2027,
+  "curriculum": "KSSR (Semakan 2017)",
+  "school_type": "SJK",
+  "subject": "Bahasa Melayu",
+  "year": 2,
+  "state": "W.P. Kuala Lumpur",
+  "calendar_group": "B",
+  "time_allocation_hours": 160,
+  "calendar_model": "Empat PdP pada kebanyakan minggu persekolahan. Tempoh 60 minit dan tarikh ialah cadangan mengikut jadual sekolah.",
+  "additional_calendar_exclusions": [
+    "2027-01-22",
+    "2027-02-01",
+    "2027-02-05",
+    "2027-02-08",
+    "2027-02-09",
+    "2027-02-10",
+    "2027-02-11",
+    "2027-02-12",
+    "2027-02-24",
+    "2027-05-17",
+    "2027-05-18",
+    "2027-05-19",
+    "2027-05-20",
+    "2027-05-21",
+    "2027-06-07",
+    "2027-06-08",
+    "2027-08-16",
+    "2027-09-16",
+    "2027-10-27",
+    "2027-10-28",
+    "2027-10-29"
+  ],
+  "sources": {
+    "rpt_2026": "https://id.scribd.com/document/974276690/1-Rpt-Sjk-Bm-Thn-2-2026",
+    "dskp": "https://asiemodel.net/wp-content/uploads/2022/08/2-DSKP-KSSR-SEMAKAN-2017-BAHASA-MELAYU-SJK-TAHUN-2.pdf",
+    "dokumen_penjajaran_2": "https://sumberpendidikan.com/wp-content/uploads/2017/11/02_DPK-2.0-Bahasa-Melayu-SJK-Tahun-2.pdf",
+    "dokumen_penjajaran": "https://sites.google.com/moe-dl.edu.my/dokumenpenjajarankurikulum/home",
+    "textbook": "https://fliphtml5.com/qttvb/domp/Buku_Teks_Bahasa_Melayu_Tahun_2_SJK/",
+    "workbook_1": "https://fliphtml5.com/lwll350595/BAHASA-MELAYU-SJK-T2-BA-JLD-1_compressed/BAHASA_MELAYU_SJK_T2_BA_JLD_1/",
+    "workbook_2": "https://fliphtml5.com/lwll350595/BAHASA-MELAYU-T2-SJK-BA---JLD-2/BAHASA_MELAYU_T2_SJK_BA_-_JLD_2/",
+    "takwim": "https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik",
+    "kelepasan": "https://www.kabinet.gov.my/hari-kelepasan-am/",
+    "peruntukan": "https://www.moe.gov.my/index.php/surat-pekeliling-ikhtisas-bilangan-5-tahun-2019-pe",
+    "pkjr": "https://fliphtml5.com/hbtqv/kkcj/PKJR_TAHUN_2/",
+    "pkjr_teacher_guide": "https://fliphtml5.com/zwnvd/vxlv/PKJR_BPG_Tahun_2/",
+    "sivik": "https://www.moe.gov.my/index.php/pelaksanaan-pendidikan-sivik-oleh-kementerian-pendidikan-malaysia"
+  },
+  "lessons": [
+    {
+      "pdp": 1,
+      "date": "2027-01-04",
+      "duration_minutes": 60,
+      "theme_number": 1,
+      "theme": "Keluarga Saya",
+      "unit_number": 1,
+      "unit": "Keluarga Guan Hong",
+      "topic": "Amalan Baik Guan Hong",
+      "focus": "Padankan frasa amalan baik dengan gambar, kemudian sebut dua frasa yang didengar.",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1(i)"
+      ],
+      "textbook_page": "2",
+      "textbook_printed_sp": "1.1.1(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 1,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.1.1(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 2,
+      "date": "2027-01-06",
+      "duration_minutes": 60,
+      "theme_number": 1,
+      "theme": "Keluarga Saya",
+      "unit_number": 1,
+      "unit": "Keluarga Guan Hong",
+      "topic": "Keluarga Saya Rajin",
+      "focus": "Baca perkataan tentang kerja rumah dan padankan empat perkataan dengan tindakan.",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1(i)"
+      ],
+      "textbook_page": "3",
+      "textbook_printed_sp": "2.1.1(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 2,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.1.1(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 3,
+      "date": "2027-01-08",
+      "duration_minutes": 60,
+      "theme_number": 1,
+      "theme": "Keluarga Saya",
+      "unit_number": 1,
+      "unit": "Keluarga Guan Hong",
+      "topic": "Cucu yang Prihatin",
+      "focus": "Salin perkataan tentang bantuan kepada datuk atau nenek dengan bentuk huruf yang kemas.",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1(i)"
+      ],
+      "textbook_page": "4",
+      "textbook_printed_sp": "3.1.1(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 3,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.1.1(i)"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 1,
+        "pages": "1–2",
+        "hp": "1.1.2",
+        "focus": "Baca penerangan dan nyatakan fungsi dua komponen keselamatan kenderaan."
+      }
+    },
+    {
+      "pdp": 4,
+      "date": "2027-01-11",
+      "duration_minutes": 60,
+      "theme_number": 1,
+      "theme": "Keluarga Saya",
+      "unit_number": 1,
+      "unit": "Keluarga Guan Hong",
+      "topic": "Sayangi Keluarga",
+      "focus": "Nyanyikan lagu mengikut melodi dan padankan aksi dengan maksud lirik.",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.2(i)"
+      ],
+      "textbook_page": "5",
+      "textbook_printed_sp": "4.2.2(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 4,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.2.2(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 5,
+      "date": "2027-01-12",
+      "duration_minutes": 60,
+      "theme_number": 1,
+      "theme": "Keluarga Saya",
+      "unit_number": 1,
+      "unit": "Keluarga Guan Hong",
+      "topic": "Aktiviti Keluarga",
+      "focus": "Kenal pasti kata nama am bagi barang dalam gambar dan gunakan dua dalam cerita lisan.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1(i)"
+      ],
+      "textbook_page": "6",
+      "textbook_printed_sp": "5.1.1(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 5,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.1.1(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 6,
+      "date": "2027-01-14",
+      "duration_minutes": 60,
+      "theme_number": 1,
+      "theme": "Keluarga Saya",
+      "unit_number": 2,
+      "unit": "Kami Gembira",
+      "topic": "Pergi Bercuti",
+      "focus": "Dengar dan sebut frasa persediaan bercuti, kemudian padankan dengan barang atau tindakan.",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1(i)"
+      ],
+      "textbook_page": "7",
+      "textbook_printed_sp": "1.1.1(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 6,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.1.1(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 7,
+      "date": "2027-01-15",
+      "duration_minutes": 60,
+      "theme_number": 1,
+      "theme": "Keluarga Saya",
+      "unit_number": 2,
+      "unit": "Kami Gembira",
+      "topic": "Wah Seronoknya",
+      "focus": "Baca ayat tentang percutian dengan jeda dan intonasi yang sesuai.",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1(ii)"
+      ],
+      "textbook_page": "8",
+      "textbook_printed_sp": "2.1.1(ii)",
+      "workbook": {
+        "volume": 1,
+        "page": 7,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.1.1(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 8,
+      "date": "2027-01-18",
+      "duration_minutes": 60,
+      "theme_number": 1,
+      "theme": "Keluarga Saya",
+      "unit_number": 2,
+      "unit": "Kami Gembira",
+      "topic": "Melawat ke Tokong Ular",
+      "focus": "Salin dua ayat lawatan dengan huruf besar, jarak dan noktah yang betul.",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1(ii)"
+      ],
+      "textbook_page": "9",
+      "textbook_printed_sp": "3.1.1(ii)",
+      "workbook": {
+        "volume": 1,
+        "page": 8,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.1.1(ii)"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 2,
+        "pages": "3",
+        "hp": "1.1.2",
+        "focus": "Baca ayat dan bandingkan ciri keselamatan bas dengan kereta."
+      }
+    },
+    {
+      "pdp": 9,
+      "date": "2027-01-19",
+      "duration_minutes": 60,
+      "theme_number": 1,
+      "theme": "Keluarga Saya",
+      "unit_number": 2,
+      "unit": "Kami Gembira",
+      "topic": "Naik Feri",
+      "focus": "Lakonkan dialog ringkas menggunakan bandingan semacam mengikut situasi perjalanan.",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1(i)"
+      ],
+      "textbook_page": "10",
+      "textbook_printed_sp": "4.1.1(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 9,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.1.1(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 10,
+      "date": "2027-01-20",
+      "duration_minutes": 60,
+      "theme_number": 1,
+      "theme": "Keluarga Saya",
+      "unit_number": 2,
+      "unit": "Kami Gembira",
+      "topic": "Hotel Batu Kawan",
+      "focus": "Kenal pasti kata nama khas dalam petikan dan betulkan huruf besar dalam contoh.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1(ii)"
+      ],
+      "textbook_page": "11",
+      "textbook_printed_sp": "5.1.1(ii)",
+      "workbook": {
+        "volume": 1,
+        "page": 10,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.1.1(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 11,
+      "date": "2027-01-21",
+      "duration_minutes": 60,
+      "theme_number": 1,
+      "theme": "Keluarga Saya",
+      "unit_number": 3,
+      "unit": "Saudara-mara Saya",
+      "topic": "Meriahnya Majlis Perkahwinan",
+      "focus": "Dengar frasa tentang majlis dan ulang sebut dalam simulasi ringkas.",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1(i)"
+      ],
+      "textbook_page": "12",
+      "textbook_printed_sp": "1.1.1(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 11,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.1.1(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 12,
+      "date": "2027-01-25",
+      "duration_minutes": 60,
+      "theme_number": 1,
+      "theme": "Keluarga Saya",
+      "unit_number": 3,
+      "unit": "Saudara-mara Saya",
+      "topic": "Sepupu Guan Hong",
+      "focus": "Baca perkataan dan tunjuk gambar atau tindakan yang sepadan dengan maksudnya.",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2(i)"
+      ],
+      "textbook_page": "13",
+      "textbook_printed_sp": "2.1.2(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 12,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.1.2(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 13,
+      "date": "2027-01-26",
+      "duration_minutes": 60,
+      "theme_number": 1,
+      "theme": "Keluarga Saya",
+      "unit_number": 3,
+      "unit": "Saudara-mara Saya",
+      "topic": "Album Ibu Saudara",
+      "focus": "Bina dan tulis perkataan yang menamakan butiran dalam gambar keluarga.",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1(i)"
+      ],
+      "textbook_page": "14",
+      "textbook_printed_sp": "3.2.1(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 13,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.2.1(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 14,
+      "date": "2027-01-28",
+      "duration_minutes": 60,
+      "theme_number": 1,
+      "theme": "Keluarga Saya",
+      "unit_number": 3,
+      "unit": "Saudara-mara Saya",
+      "topic": "Kolam Ikan Pak Cik Teoh",
+      "focus": "Gunakan simpulan bahasa yang sesuai dalam dialog dan terangkan maksudnya.",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1(i)"
+      ],
+      "textbook_page": "15",
+      "textbook_printed_sp": "4.1.1(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 14,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.1.1(i)"
+      ],
+      "kind": "unit",
+      "sivik": {
+        "value": "Kasih sayang",
+        "focus": "Gunakan simpulan bahasa untuk menceritakan cara anggota keluarga saling membantu.",
+        "duration_minutes": 60
+      }
+    },
+    {
+      "pdp": 15,
+      "date": "2027-01-29",
+      "duration_minutes": 60,
+      "theme_number": 1,
+      "theme": "Keluarga Saya",
+      "unit_number": 3,
+      "unit": "Saudara-mara Saya",
+      "topic": "Datuk dan Nenek Saya",
+      "focus": "Lengkapkan dialog dengan kata ganti nama diri pertama dan kedua mengikut penutur.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1(iii)"
+      ],
+      "textbook_page": "16",
+      "textbook_printed_sp": "5.1.1(iii)",
+      "workbook": {
+        "volume": 1,
+        "page": 15,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.1.1(iii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 16,
+      "date": "2027-02-02",
+      "duration_minutes": 60,
+      "theme_number": 1,
+      "theme": "Keluarga Saya",
+      "unit_number": 3,
+      "unit": "Saudara-mara Saya",
+      "topic": "Seronoknya Bergambar",
+      "focus": "Pilih penjodoh bilangan bagi benda dalam gambar dan gunakan dalam ayat.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1(iv)"
+      ],
+      "textbook_page": "17",
+      "textbook_printed_sp": "5.1.1(iv)",
+      "workbook": {
+        "volume": 1,
+        "page": 16,
+        "activity": 6
+      },
+      "workbook_printed_sp": [
+        "5.1.1(iv)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 17,
+      "date": "2027-02-03",
+      "duration_minutes": 60,
+      "theme_number": 1,
+      "theme": "Keluarga Saya",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pemulihan frasa keluarga",
+      "focus": "Padankan frasa berkaitan keluarga dengan gambar, kemudian sebut setiap padanan.",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1(i)"
+      ],
+      "textbook_page": null,
+      "workbook": {
+        "volume": 1,
+        "page": 17
+      },
+      "kind": "susulan_tema"
+    },
+    {
+      "pdp": 18,
+      "date": "2027-02-04",
+      "duration_minutes": 60,
+      "theme_number": 1,
+      "theme": "Keluarga Saya",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pengayaan ayat keluarga",
+      "focus": "Lengkapkan ayat tentang aktiviti keluarga dan baca ayat dengan intonasi yang sesuai.",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1(ii)"
+      ],
+      "textbook_page": null,
+      "workbook": {
+        "volume": 1,
+        "page": 18
+      },
+      "kind": "susulan_tema"
+    },
+    {
+      "pdp": 19,
+      "date": "2027-02-15",
+      "duration_minutes": 60,
+      "theme_number": 1,
+      "theme": "Keluarga Saya",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pentaksiran Tema 1",
+      "focus": "Semak sebutan frasa, salinan ayat serta pemilihan kata nama am dan khas.",
+      "sk": [
+        "1.1",
+        "2.1",
+        "3.1",
+        "5.1"
+      ],
+      "sp": [
+        "1.1.1(i)",
+        "2.1.1(ii)",
+        "3.1.1(ii)",
+        "5.1.1(i)",
+        "5.1.1(ii)"
+      ],
+      "textbook_page": "18",
+      "workbook": null,
+      "kind": "pentaksiran"
+    },
+    {
+      "pdp": 20,
+      "date": "2027-02-16",
+      "duration_minutes": 60,
+      "theme_number": 2,
+      "theme": "Rakan dan Jiran",
+      "unit_number": 4,
+      "unit": "Mari Berkawan",
+      "topic": "Kawan Baik Saya",
+      "focus": "Dengar dan sebut ayat tunggal semasa simulasi berkenalan dengan murid baharu.",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1(ii)"
+      ],
+      "textbook_page": "20",
+      "textbook_printed_sp": "1.1.1(ii)",
+      "workbook": {
+        "volume": 1,
+        "page": 20,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.1.1(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 21,
+      "date": "2027-02-18",
+      "duration_minutes": 60,
+      "theme_number": 2,
+      "theme": "Rakan dan Jiran",
+      "unit_number": 4,
+      "unit": "Mari Berkawan",
+      "topic": "Terima Kasih Kawan",
+      "focus": "Baca ayat tentang bekas air yang hilang dan jawab soalan tentang tindakan watak.",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2(ii)"
+      ],
+      "textbook_page": "21",
+      "textbook_printed_sp": "2.1.2(ii)",
+      "workbook": {
+        "volume": 1,
+        "page": 21,
+        "activity": 2,
+        "use": "Bacaan tambahan untuk kelancaran membaca"
+      },
+      "workbook_printed_sp": [
+        "2.1.1(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 22,
+      "date": "2027-02-19",
+      "duration_minutes": 60,
+      "theme_number": 2,
+      "theme": "Rakan dan Jiran",
+      "unit_number": 4,
+      "unit": "Mari Berkawan",
+      "topic": "Kawan Sekolah",
+      "focus": "Bina dan tulis frasa yang menerangkan tindakan kawan dalam gambar.",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1(ii)"
+      ],
+      "textbook_page": "22",
+      "textbook_printed_sp": "3.2.1(ii)",
+      "workbook": {
+        "volume": 1,
+        "page": 22,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.2.1(ii)"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 3,
+        "pages": "4",
+        "hp": "2.2.1",
+        "focus": "Kenal pasti prasarana untuk pejalan kaki dan penunggang basikal daripada petikan."
+      }
+    },
+    {
+      "pdp": 23,
+      "date": "2027-02-22",
+      "duration_minutes": 60,
+      "theme_number": 2,
+      "theme": "Rakan dan Jiran",
+      "unit_number": 4,
+      "unit": "Mari Berkawan",
+      "topic": "Kalau Berkawan",
+      "focus": "Nyanyikan lagu rakyat dengan sebutan jelas dan aksi yang sepadan dengan lirik.",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.2(ii)"
+      ],
+      "textbook_page": "23",
+      "textbook_printed_sp": "4.2.2(ii)",
+      "workbook": {
+        "volume": 1,
+        "page": 23,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.2.2(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 24,
+      "date": "2027-02-23",
+      "duration_minutes": 60,
+      "theme_number": 2,
+      "theme": "Rakan dan Jiran",
+      "unit_number": 4,
+      "unit": "Mari Berkawan",
+      "topic": "Merdunya Muzik",
+      "focus": "Pilih kata ganti nama diri ketiga bagi pemain alat muzik dan guru dalam petikan.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1(iii)"
+      ],
+      "textbook_page": "24",
+      "textbook_printed_sp": "5.1.1(iii)",
+      "workbook": {
+        "volume": 1,
+        "page": 24,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.1.1(iii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 25,
+      "date": "2027-02-25",
+      "duration_minutes": 60,
+      "theme_number": 2,
+      "theme": "Rakan dan Jiran",
+      "unit_number": 5,
+      "unit": "Hormati Jiran",
+      "topic": "Silalah Datang",
+      "focus": "Dengar dan sebut ayat majmuk dalam simulasi menjemput jiran.",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1(iii)"
+      ],
+      "textbook_page": "25",
+      "textbook_printed_sp": "1.1.1(iii)",
+      "workbook": {
+        "volume": 1,
+        "page": 25,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.1.1(iii)"
+      ],
+      "kind": "unit",
+      "sivik": {
+        "value": "Hormat-menghormati",
+        "focus": "Lakonkan cara menziarahi jiran dengan sopan dan sebut ayat majmuk tentang tindakan yang menghormati tuan rumah.",
+        "duration_minutes": 60
+      }
+    },
+    {
+      "pdp": 26,
+      "date": "2027-02-26",
+      "duration_minutes": 60,
+      "theme_number": 2,
+      "theme": "Rakan dan Jiran",
+      "unit_number": 5,
+      "unit": "Hormati Jiran",
+      "topic": "Jiran yang Sopan",
+      "focus": "Baca perenggan dengan intonasi sesuai dan tandakan jeda pada tanda baca.",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1(iii)"
+      ],
+      "textbook_page": "26",
+      "textbook_printed_sp": "2.1.1(iii)",
+      "workbook": {
+        "volume": 1,
+        "page": 26,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.1.1(iii)"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 4,
+        "pages": "5",
+        "hp": "2.2.2",
+        "focus": "Jelaskan fungsi prasarana kepada rakan dan catat penerangan."
+      }
+    },
+    {
+      "pdp": 27,
+      "date": "2027-03-01",
+      "duration_minutes": 60,
+      "theme_number": 2,
+      "theme": "Rakan dan Jiran",
+      "unit_number": 5,
+      "unit": "Hormati Jiran",
+      "topic": "Jiran yang Prihatin",
+      "focus": "Salin perenggan tentang tindakan jiran dengan ejaan dan tanda baca yang tepat.",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1(iii)"
+      ],
+      "textbook_page": "27",
+      "textbook_printed_sp": "3.1.1(iii)",
+      "workbook": {
+        "volume": 1,
+        "page": 27,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.1.1(iii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 28,
+      "date": "2027-03-02",
+      "duration_minutes": 60,
+      "theme_number": 2,
+      "theme": "Rakan dan Jiran",
+      "unit_number": 5,
+      "unit": "Hormati Jiran",
+      "topic": "Jiran yang Baik Hati",
+      "focus": "Persembahkan dialog tentang jiran yang menziarahi orang sakit dan jelaskan simpulan bahasa.",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1(i)"
+      ],
+      "textbook_page": "28",
+      "textbook_printed_sp": "4.1.1(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 28,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.1.1(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 29,
+      "date": "2027-03-04",
+      "duration_minutes": 60,
+      "theme_number": 2,
+      "theme": "Rakan dan Jiran",
+      "unit_number": 5,
+      "unit": "Hormati Jiran",
+      "topic": "Mesranya Jiran",
+      "focus": "Lengkapkan ayat dengan penjodoh bilangan bagi objek atau haiwan dalam gambar.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1(iv)"
+      ],
+      "textbook_page": "29",
+      "textbook_printed_sp": "5.1.1(iv)",
+      "workbook": {
+        "volume": 1,
+        "page": 29,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.1.1(iv)"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 5,
+        "pages": "6",
+        "hp": "2.3.2",
+        "focus": "Nyatakan urutan warna lampu isyarat dan fungsinya."
+      }
+    },
+    {
+      "pdp": 30,
+      "date": "2027-03-05",
+      "duration_minutes": 60,
+      "theme_number": 2,
+      "theme": "Rakan dan Jiran",
+      "unit_number": 5,
+      "unit": "Hormati Jiran",
+      "topic": "Kuih untuk Jiran",
+      "focus": "Gabungkan idea dalam ayat tentang pemberian kuih menggunakan kata hubung yang sesuai.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.4(i)"
+      ],
+      "textbook_page": "30",
+      "textbook_printed_sp": "5.1.4(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 30,
+        "activity": 6
+      },
+      "workbook_printed_sp": [
+        "5.1.4(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 31,
+      "date": "2027-03-15",
+      "duration_minutes": 60,
+      "theme_number": 2,
+      "theme": "Rakan dan Jiran",
+      "unit_number": 6,
+      "unit": "Bekerjasama",
+      "topic": "Tugasan Seni",
+      "focus": "Dengar soalan tentang membuat pasu dan beri jawapan yang menjelaskan bahan atau tindakan.",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2(i)"
+      ],
+      "textbook_page": "31",
+      "textbook_printed_sp": "1.1.2(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 31,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.1.2(i)"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 6,
+        "pages": "7",
+        "hp": "2.3.2",
+        "focus": "Betulkan ejaan dalam petikan tentang lampu isyarat dan salin bahagian yang dibaiki."
+      }
+    },
+    {
+      "pdp": 32,
+      "date": "2027-03-16",
+      "duration_minutes": 60,
+      "theme_number": 2,
+      "theme": "Rakan dan Jiran",
+      "unit_number": 6,
+      "unit": "Bekerjasama",
+      "topic": "Cantiknya Pasu",
+      "focus": "Baca petikan tentang membuat pasu dengan sebutan jelas dan jeda yang tepat.",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1(iv)"
+      ],
+      "textbook_page": "32",
+      "textbook_printed_sp": "2.1.1(iv)",
+      "workbook": {
+        "volume": 1,
+        "page": 32,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.1.1(iv)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 33,
+      "date": "2027-03-18",
+      "duration_minutes": 60,
+      "theme_number": 2,
+      "theme": "Rakan dan Jiran",
+      "unit_number": 6,
+      "unit": "Bekerjasama",
+      "topic": "Saling Membantu",
+      "focus": "Salin petikan tentang jiran bekerjasama dengan tulisan kemas dan tanda baca yang betul.",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1(iv)"
+      ],
+      "textbook_page": "33",
+      "textbook_printed_sp": "3.1.1(iv)",
+      "workbook": {
+        "volume": 1,
+        "page": 33,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.1.1(iv)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 34,
+      "date": "2027-03-19",
+      "duration_minutes": 60,
+      "theme_number": 2,
+      "theme": "Rakan dan Jiran",
+      "unit_number": 6,
+      "unit": "Bekerjasama",
+      "topic": "Amalan Murni",
+      "focus": "Lafazkan pantun dan bezakan baris pembayang dengan baris maksud.",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1(i)"
+      ],
+      "textbook_page": "34",
+      "textbook_printed_sp": "4.2.1(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 34,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.2.1(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 35,
+      "date": "2027-03-22",
+      "duration_minutes": 60,
+      "theme_number": 2,
+      "theme": "Rakan dan Jiran",
+      "unit_number": 6,
+      "unit": "Bekerjasama",
+      "topic": "Tahun 2 Mawar",
+      "focus": "Pilih kata adjektif sifat atau keadaan bagi murid dan bilik darjah dalam gambar.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.3(i)"
+      ],
+      "textbook_page": "35",
+      "textbook_printed_sp": "5.1.3(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 35,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.1.3(i)"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 7,
+        "pages": "8–9",
+        "hp": "2.3.3",
+        "focus": "Padankan tanda isyarat dengan maksudnya, kemudian nyatakan fungsinya."
+      },
+      "sivik": {
+        "value": "Bertanggungjawab",
+        "focus": "Pilih kata adjektif untuk menggambarkan keadaan kelas dan huraikan tanggungjawab setiap ahli kumpulan.",
+        "duration_minutes": 60
+      }
+    },
+    {
+      "pdp": 36,
+      "date": "2027-03-24",
+      "duration_minutes": 60,
+      "theme_number": 2,
+      "theme": "Rakan dan Jiran",
+      "unit_number": 6,
+      "unit": "Bekerjasama",
+      "topic": "Sahabat yang Baik",
+      "focus": "Lengkapkan ayat tentang sahabat dengan kata sendi nama yang menyatakan tempat atau arah.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.4(ii)"
+      ],
+      "textbook_page": "36",
+      "textbook_printed_sp": "5.1.4(ii)",
+      "workbook": {
+        "volume": 1,
+        "page": 36,
+        "activity": 6
+      },
+      "workbook_printed_sp": [
+        "5.1.4(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 37,
+      "date": "2027-03-26",
+      "duration_minutes": 60,
+      "theme_number": 2,
+      "theme": "Rakan dan Jiran",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pemulihan penjodoh bilangan",
+      "focus": "Tulis penjodoh bilangan bagi benda yang ditunjukkan dan terangkan pilihan bagi satu benda.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1(iv)"
+      ],
+      "textbook_page": null,
+      "workbook": {
+        "volume": 1,
+        "page": 37
+      },
+      "kind": "susulan_tema"
+    },
+    {
+      "pdp": 38,
+      "date": "2027-03-29",
+      "duration_minutes": 60,
+      "theme_number": 2,
+      "theme": "Rakan dan Jiran",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pengayaan kata sendi nama",
+      "focus": "Lengkapkan petikan tentang perjalanan ke sekolah dengan kata sendi nama.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.4(ii)"
+      ],
+      "textbook_page": null,
+      "workbook": {
+        "volume": 1,
+        "page": 38
+      },
+      "kind": "susulan_tema"
+    },
+    {
+      "pdp": 39,
+      "date": "2027-03-30",
+      "duration_minutes": 60,
+      "theme_number": 2,
+      "theme": "Rakan dan Jiran",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pentaksiran Tema 2",
+      "focus": "Semak salinan perenggan, pemahaman bacaan serta penggunaan kata hubung dan kata sendi.",
+      "sk": [
+        "3.1",
+        "2.1",
+        "5.1"
+      ],
+      "sp": [
+        "3.1.1(iii)",
+        "2.1.2(iii)",
+        "5.1.4(i)",
+        "5.1.4(ii)"
+      ],
+      "textbook_page": "37",
+      "workbook": null,
+      "kind": "pentaksiran"
+    },
+    {
+      "pdp": 40,
+      "date": "2027-04-01",
+      "duration_minutes": 60,
+      "theme_number": 3,
+      "theme": "Kita Bersih Kita Sihat",
+      "unit_number": 7,
+      "unit": "Bersih dan Ceria",
+      "topic": "Rambut Bersih",
+      "focus": "Dengar suruhan penjagaan rambut, ajuk dan beri respons yang menunjukkan tindakan tepat.",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2(ii)"
+      ],
+      "textbook_page": "39",
+      "textbook_printed_sp": "1.1.2(ii)",
+      "workbook": {
+        "volume": 1,
+        "page": 42,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.1.2(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 41,
+      "date": "2027-04-02",
+      "duration_minutes": 60,
+      "theme_number": 3,
+      "theme": "Kita Bersih Kita Sihat",
+      "unit_number": 7,
+      "unit": "Bersih dan Ceria",
+      "topic": "Gigi Bersih Wajah Ceria",
+      "focus": "Baca perenggan dan nyatakan dua langkah penjagaan gigi berdasarkan bacaan.",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2(iii)"
+      ],
+      "textbook_page": "40",
+      "textbook_printed_sp": "2.1.2(iii)",
+      "workbook": {
+        "volume": 1,
+        "page": 43,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.1.2(iii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 42,
+      "date": "2027-04-05",
+      "duration_minutes": 60,
+      "theme_number": 3,
+      "theme": "Kita Bersih Kita Sihat",
+      "unit_number": 7,
+      "unit": "Bersih dan Ceria",
+      "topic": "Rumah Bersih Kita Selesa",
+      "focus": "Bina ayat daripada gambar dan frasa tentang kerja mengemas ruang tamu.",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1(iii)"
+      ],
+      "textbook_page": "41",
+      "textbook_printed_sp": "3.2.1(iii)",
+      "workbook": {
+        "volume": 1,
+        "page": 44,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.2.1(iii)"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 8,
+        "pages": "10–11",
+        "hp": "2.4.1",
+        "focus": "Baca petikan dan jawab soalan tentang arah lalu lintas sebelum melintas."
+      }
+    },
+    {
+      "pdp": 43,
+      "date": "2027-04-06",
+      "duration_minutes": 60,
+      "theme_number": 3,
+      "theme": "Kita Bersih Kita Sihat",
+      "unit_number": 7,
+      "unit": "Bersih dan Ceria",
+      "topic": "Pak Pandir Sakit Perut",
+      "focus": "Persembahkan cerita jenaka tentang Pak Pandir dengan suara dan ekspresi yang sesuai.",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.2(ii)"
+      ],
+      "textbook_page": "42",
+      "textbook_printed_sp": "4.3.2(ii)",
+      "workbook": {
+        "volume": 1,
+        "page": 45,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.3.2(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 44,
+      "date": "2027-04-08",
+      "duration_minutes": 60,
+      "theme_number": 3,
+      "theme": "Kita Bersih Kita Sihat",
+      "unit_number": 7,
+      "unit": "Bersih dan Ceria",
+      "topic": "Cerianya Taman",
+      "focus": "Kenal pasti kata adjektif warna dan gunakan untuk menerangkan objek dalam gambar taman.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.3(ii)"
+      ],
+      "textbook_page": "43",
+      "textbook_printed_sp": "5.1.3(ii)",
+      "workbook": {
+        "volume": 1,
+        "page": 46,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.1.3(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 45,
+      "date": "2027-04-09",
+      "duration_minutes": 60,
+      "theme_number": 3,
+      "theme": "Kita Bersih Kita Sihat",
+      "unit_number": 8,
+      "unit": "Sekolah Bersih Murid Selesa",
+      "topic": "Kelas Bersih",
+      "focus": "Dengar pesanan tentang persediaan membersihkan kelas dan lakonkan respons yang sesuai.",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2(iii)"
+      ],
+      "textbook_page": "44",
+      "textbook_printed_sp": "1.1.2(iii)",
+      "workbook": {
+        "volume": 1,
+        "page": 47,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.1.2(iii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 46,
+      "date": "2027-04-12",
+      "duration_minutes": 60,
+      "theme_number": 3,
+      "theme": "Kita Bersih Kita Sihat",
+      "unit_number": 8,
+      "unit": "Sekolah Bersih Murid Selesa",
+      "topic": "Taman Bahasa Melayu",
+      "focus": "Baca petikan dan terangkan cara murid menceriakan taman kelas.",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2(iv)"
+      ],
+      "textbook_page": "45",
+      "textbook_printed_sp": "2.1.2(iv)",
+      "workbook": {
+        "volume": 1,
+        "page": 48,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.1.2(iv)"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 9,
+        "pages": "12",
+        "hp": "2.4.2",
+        "focus": "Cari perbezaan pada gambar dan terangkan maksud isyarat yang dikenal pasti."
+      }
+    },
+    {
+      "pdp": 47,
+      "date": "2027-04-13",
+      "duration_minutes": 60,
+      "theme_number": 3,
+      "theme": "Kita Bersih Kita Sihat",
+      "unit_number": 8,
+      "unit": "Sekolah Bersih Murid Selesa",
+      "topic": "Pusat Sumber Ceria",
+      "focus": "Tulis perenggan daripada gambar dan frasa tentang usaha menceriakan pusat sumber.",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1(iv)"
+      ],
+      "textbook_page": "46",
+      "textbook_printed_sp": "3.2.1(iv)",
+      "workbook": {
+        "volume": 1,
+        "page": 49,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.2.1(iv)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 48,
+      "date": "2027-04-15",
+      "duration_minutes": 60,
+      "theme_number": 3,
+      "theme": "Kita Bersih Kita Sihat",
+      "unit_number": 8,
+      "unit": "Sekolah Bersih Murid Selesa",
+      "topic": "Sekolah Bersih dan Ceria",
+      "focus": "Lafazkan pantun mengikut jeda dan kenal pasti bunyi rima pada hujung baris.",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1(ii)"
+      ],
+      "textbook_page": "47",
+      "textbook_printed_sp": "4.2.1(ii)",
+      "workbook": {
+        "volume": 1,
+        "page": 50,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.2.1(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 49,
+      "date": "2027-04-16",
+      "duration_minutes": 60,
+      "theme_number": 3,
+      "theme": "Kita Bersih Kita Sihat",
+      "unit_number": 8,
+      "unit": "Sekolah Bersih Murid Selesa",
+      "topic": "Taman Ilmu",
+      "focus": "Lengkapkan ayat dengan kata adjektif bentuk bagi objek yang diterangkan.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.3(iii)"
+      ],
+      "textbook_page": "48",
+      "textbook_printed_sp": "5.1.3(iii)",
+      "workbook": {
+        "volume": 1,
+        "page": 51,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.1.3(iii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 50,
+      "date": "2027-04-19",
+      "duration_minutes": 60,
+      "theme_number": 3,
+      "theme": "Kita Bersih Kita Sihat",
+      "unit_number": 8,
+      "unit": "Sekolah Bersih Murid Selesa",
+      "topic": "Bilik Sukan Sekolah",
+      "focus": "Nyatakan kedudukan alat sukan dengan kata arah yang sesuai dalam ayat.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.4(iii)"
+      ],
+      "textbook_page": "49",
+      "textbook_printed_sp": "5.1.4(iii)",
+      "workbook": {
+        "volume": 1,
+        "page": 52,
+        "activity": 6
+      },
+      "workbook_printed_sp": [
+        "5.1.4(iii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 51,
+      "date": "2027-04-20",
+      "duration_minutes": 60,
+      "theme_number": 3,
+      "theme": "Kita Bersih Kita Sihat",
+      "unit_number": 9,
+      "unit": "Hargailah Kesihatan",
+      "topic": "Enaknya Jus Lobak",
+      "focus": "Dengar permintaan dalam dialog dan beri respons sopan yang menyatakan tindakan.",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2(iv)"
+      ],
+      "textbook_page": "50",
+      "textbook_printed_sp": "1.1.2(iv)",
+      "workbook": {
+        "volume": 1,
+        "page": 53,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.1.2(iv)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 52,
+      "date": "2027-04-22",
+      "duration_minutes": 60,
+      "theme_number": 3,
+      "theme": "Kita Bersih Kita Sihat",
+      "unit_number": 9,
+      "unit": "Hargailah Kesihatan",
+      "topic": "Sihat dan Gembira",
+      "focus": "Baca seni kata lagu dan hubungkan dua amalan kesihatan dengan nilai yang ditunjukkan.",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.1(i)"
+      ],
+      "textbook_page": "51",
+      "textbook_printed_sp": "2.3.1(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 54,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.3.1(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 53,
+      "date": "2027-04-23",
+      "duration_minutes": 60,
+      "theme_number": 3,
+      "theme": "Kita Bersih Kita Sihat",
+      "unit_number": 9,
+      "unit": "Hargailah Kesihatan",
+      "topic": "Mari Bersukan",
+      "focus": "Tulis perkataan berkaitan sukan yang diimlakkan dan semak ejaan.",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.4(i)"
+      ],
+      "textbook_page": "52",
+      "textbook_printed_sp": "3.2.4(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 55,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.2.4(i)"
+      ],
+      "kind": "unit",
+      "sivik": {
+        "value": "Kegembiraan",
+        "focus": "Imlak perkataan berkaitan sukan dan kongsi cara mengajak rakan menyertai aktiviti yang menggembirakan.",
+        "duration_minutes": 60
+      }
+    },
+    {
+      "pdp": 54,
+      "date": "2027-04-26",
+      "duration_minutes": 60,
+      "theme_number": 3,
+      "theme": "Kita Bersih Kita Sihat",
+      "unit_number": 9,
+      "unit": "Hargailah Kesihatan",
+      "topic": "Menjaga Kesihatan",
+      "focus": "Lafazkan pantun, kenal pasti susunan baris dan salin semula mengikut formatnya.",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1(iii)"
+      ],
+      "textbook_page": "53",
+      "textbook_printed_sp": "4.2.1(iii)",
+      "workbook": {
+        "volume": 1,
+        "page": 56,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.2.1(iii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 55,
+      "date": "2027-04-27",
+      "duration_minutes": 60,
+      "theme_number": 3,
+      "theme": "Kita Bersih Kita Sihat",
+      "unit_number": 9,
+      "unit": "Hargailah Kesihatan",
+      "topic": "Tidurlah Secukupnya",
+      "focus": "Pilih kata adjektif waktu yang sesuai untuk melengkapkan cerita tentang rutin tidur.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.3(iv)"
+      ],
+      "textbook_page": "54",
+      "textbook_printed_sp": "5.1.3(iv)",
+      "workbook": {
+        "volume": 1,
+        "page": 57,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.1.3(iv)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 56,
+      "date": "2027-04-29",
+      "duration_minutes": 60,
+      "theme_number": 3,
+      "theme": "Kita Bersih Kita Sihat",
+      "unit_number": 9,
+      "unit": "Hargailah Kesihatan",
+      "topic": "Jururawat Pergigian",
+      "focus": "Guna kata tanya yang sesuai untuk mendapatkan maklumat tentang tugas jururawat.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.4(iv)"
+      ],
+      "textbook_page": "55",
+      "textbook_printed_sp": "5.1.4(iv)",
+      "workbook": {
+        "volume": 1,
+        "page": 58,
+        "activity": 6
+      },
+      "workbook_printed_sp": [
+        "5.1.4(iv)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 57,
+      "date": "2027-04-30",
+      "duration_minutes": 60,
+      "theme_number": 3,
+      "theme": "Kita Bersih Kita Sihat",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pemulihan ayat penjagaan kesihatan",
+      "focus": "Tulis ayat daripada gambar tentang kebersihan dan penjagaan kesihatan.",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1(iii)"
+      ],
+      "textbook_page": null,
+      "workbook": {
+        "volume": 1,
+        "page": 59
+      },
+      "kind": "susulan_tema"
+    },
+    {
+      "pdp": 58,
+      "date": "2027-05-03",
+      "duration_minutes": 60,
+      "theme_number": 3,
+      "theme": "Kita Bersih Kita Sihat",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pengayaan kata adjektif",
+      "focus": "Cari kata adjektif warna dan waktu, kemudian bina ayat menggunakan kedua-dua jenis kata.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.3(ii)",
+        "5.1.3(iv)"
+      ],
+      "textbook_page": null,
+      "workbook": {
+        "volume": 1,
+        "page": 60
+      },
+      "kind": "susulan_tema"
+    },
+    {
+      "pdp": 59,
+      "date": "2027-05-04",
+      "duration_minutes": 60,
+      "theme_number": 3,
+      "theme": "Kita Bersih Kita Sihat",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pentaksiran Tema 3",
+      "focus": "Semak kata adjektif yang dipilih dan catatan cara menjaga kesihatan pada peta alir.",
+      "sk": [
+        "2.1",
+        "3.2",
+        "5.1"
+      ],
+      "sp": [
+        "2.1.2(iii)",
+        "3.2.3",
+        "5.1.3(ii)",
+        "5.1.3(iii)",
+        "5.1.3(iv)"
+      ],
+      "textbook_page": "56",
+      "workbook": null,
+      "kind": "pentaksiran"
+    },
+    {
+      "pdp": 60,
+      "date": "2027-05-06",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": 10,
+      "unit": "Pentingnya Keselamatan",
+      "topic": "Pentingnya Keselamatan",
+      "focus": "Dengar soalan bercapah tentang bahaya bermain dan beri respons berserta alasan.",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.3(i)"
+      ],
+      "textbook_page": "58",
+      "textbook_printed_sp": "1.1.3(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 62,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.1.3(i)"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 10,
+        "pages": "13",
+        "hp": "2.4.2",
+        "focus": "Bezakan maksud imej merah dan hijau pada lampu isyarat pejalan kaki."
+      }
+    },
+    {
+      "pdp": 61,
+      "date": "2027-05-07",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": 10,
+      "unit": "Pentingnya Keselamatan",
+      "topic": "Gunakan Lif dengan Selamat",
+      "focus": "Kenal pasti nilai daripada tindakan watak semasa menggunakan lif dan beri bukti bacaan.",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.1(ii)"
+      ],
+      "textbook_page": "59",
+      "textbook_printed_sp": "2.3.1(ii)",
+      "workbook": {
+        "volume": 1,
+        "page": 63,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.3.1(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 62,
+      "date": "2027-05-10",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": 10,
+      "unit": "Pentingnya Keselamatan",
+      "topic": "Kita Patuh Kita Selamat",
+      "focus": "Tulis jawapan kepada soalan bertumpu berdasarkan situasi lantai yang basah.",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.2(i)"
+      ],
+      "textbook_page": "60",
+      "textbook_printed_sp": "3.2.2(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 64,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.2.2(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 63,
+      "date": "2027-05-11",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": 10,
+      "unit": "Pentingnya Keselamatan",
+      "topic": "Hati Hati Kawan",
+      "focus": "Persembahkan lagu kanak-kanak dan jelaskan satu peringatan semasa menggunakan tangga.",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.3(i)"
+      ],
+      "textbook_page": "61",
+      "textbook_printed_sp": "4.3.3(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 65,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.3.3(i)"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 11,
+        "pages": "14",
+        "hp": "3.1.2",
+        "focus": "Terangkan akibat tidak memakai tali pinggang keledar berdasarkan gambar."
+      }
+    },
+    {
+      "pdp": 64,
+      "date": "2027-05-13",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": 10,
+      "unit": "Pentingnya Keselamatan",
+      "topic": "Selamat Semasa Hujan",
+      "focus": "Kenal pasti kata kerja aktif transitif dan padankan setiap kata kerja dengan objek.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.2(i)"
+      ],
+      "textbook_page": "62",
+      "textbook_printed_sp": "5.1.2(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 66,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.1.2(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 65,
+      "date": "2027-05-14",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": 11,
+      "unit": "Keselamatan di Sekolah",
+      "topic": "Sentiasa Bersedia",
+      "focus": "Dengar pesanan keselamatan di sekolah dan beri respons dalam simulasi.",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.3(ii)"
+      ],
+      "textbook_page": "63",
+      "textbook_printed_sp": "1.1.3(ii)",
+      "workbook": {
+        "volume": 1,
+        "page": 67,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.1.3(ii)"
+      ],
+      "kind": "unit",
+      "sivik": {
+        "value": "Kasih sayang",
+        "focus": "Tafsir pesanan keselamatan dan jelaskan bagaimana mengingatkan rakan dapat melindungi mereka.",
+        "duration_minutes": 60
+      }
+    },
+    {
+      "pdp": 66,
+      "date": "2027-06-09",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": 11,
+      "unit": "Keselamatan di Sekolah",
+      "topic": "Keselamatan Murid",
+      "focus": "Baca pantun dan kenal pasti nilai daripada perlakuan yang dinyatakan.",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.1(iii)"
+      ],
+      "textbook_page": "64",
+      "textbook_printed_sp": "2.3.1(iii)",
+      "workbook": {
+        "volume": 1,
+        "page": 68,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.3.1(iii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 67,
+      "date": "2027-06-10",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": 11,
+      "unit": "Keselamatan di Sekolah",
+      "topic": "Patuhi Peraturan",
+      "focus": "Tulis frasa tentang kawasan berisiko yang diimlakkan dengan ejaan tepat.",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.4(ii)"
+      ],
+      "textbook_page": "65",
+      "textbook_printed_sp": "3.2.4(ii)",
+      "workbook": {
+        "volume": 1,
+        "page": 69,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.2.4(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 68,
+      "date": "2027-06-11",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": 11,
+      "unit": "Keselamatan di Sekolah",
+      "topic": "Pesan Merpati",
+      "focus": "Persembahkan cerita haiwan dan tunjukkan pesan keselamatan melalui tindakan watak.",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.2(i)"
+      ],
+      "textbook_page": "66",
+      "textbook_printed_sp": "4.3.2(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 70,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.3.2(i)"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 12,
+        "pages": "15",
+        "hp": "3.1.2",
+        "focus": "Baca cerita dan tentukan pernyataan yang menepati peraturan jalan raya."
+      }
+    },
+    {
+      "pdp": 69,
+      "date": "2027-06-14",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": 11,
+      "unit": "Keselamatan di Sekolah",
+      "topic": "Selamat Tiba di Sekolah",
+      "focus": "Kenal pasti kata kerja pasif dan gunakan satu daripadanya dalam ayat keselamatan.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.2(ii)"
+      ],
+      "textbook_page": "67",
+      "textbook_printed_sp": "5.1.2(ii)",
+      "workbook": {
+        "volume": 1,
+        "page": 71,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.1.2(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 70,
+      "date": "2027-06-15",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": 11,
+      "unit": "Keselamatan di Sekolah",
+      "topic": "Selamat di Taman Sains",
+      "focus": "Lengkapkan ayat tentang tindakan murid di taman sains menggunakan kata hubung.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.4(i)"
+      ],
+      "textbook_page": "68",
+      "textbook_printed_sp": "5.1.4(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 72,
+        "activity": 6
+      },
+      "workbook_printed_sp": [
+        "5.1.4(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 71,
+      "date": "2027-06-17",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": 12,
+      "unit": "Keselamatan di Jalan Raya",
+      "topic": "Poster Keselamatan",
+      "focus": "Terangkan pesanan pada poster keselamatan jalan raya secara bertatasusila.",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.1"
+      ],
+      "textbook_page": "69",
+      "textbook_printed_sp": "1.2.1",
+      "workbook": {
+        "volume": 1,
+        "page": 73,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.2.1"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 72,
+      "date": "2027-06-18",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": 12,
+      "unit": "Keselamatan di Jalan Raya",
+      "topic": "Berjalan ke Sekolah",
+      "focus": "Tentukan makna kosa kata tentang laluan pejalan kaki menggunakan petikan atau kamus.",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1(i)"
+      ],
+      "textbook_page": "70",
+      "textbook_printed_sp": "2.2.1(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 74,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.2.1(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 73,
+      "date": "2027-06-21",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": 12,
+      "unit": "Keselamatan di Jalan Raya",
+      "topic": "Ingat Sebelum Kena",
+      "focus": "Lengkapkan karangan tentang keselamatan penunggang motosikal menggunakan kosa kata sesuai.",
+      "sk": [
+        "3.3"
+      ],
+      "sp": [
+        "3.3.1(i)"
+      ],
+      "textbook_page": "71",
+      "textbook_printed_sp": "3.3.1(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 75,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.3.1(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 74,
+      "date": "2027-06-22",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": 12,
+      "unit": "Keselamatan di Jalan Raya",
+      "topic": "Waspada Selalu",
+      "focus": "Lengkapkan pantun dua kerat tentang keselamatan di jalan raya dan lafazkannya.",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.1(i)"
+      ],
+      "textbook_page": "72",
+      "textbook_printed_sp": "4.3.1(i)",
+      "workbook": {
+        "volume": 1,
+        "page": 76,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.3.1(i)"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 13,
+        "pages": "16",
+        "hp": "3.1.2",
+        "focus": "Padankan peraturan jalan raya dengan situasi dalam gambar."
+      }
+    },
+    {
+      "pdp": 75,
+      "date": "2027-06-24",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": 12,
+      "unit": "Keselamatan di Jalan Raya",
+      "topic": "Lampu Isyarat Jalan Raya",
+      "focus": "Gunakan kata sendi nama yang sesuai untuk menerangkan lokasi atau arah pergerakan.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.4(ii)"
+      ],
+      "textbook_page": "73",
+      "textbook_printed_sp": "5.1.4(ii)",
+      "workbook": {
+        "volume": 1,
+        "page": 77,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.1.4(ii)"
+      ],
+      "kind": "unit",
+      "sivik": {
+        "value": "Hormat-menghormati",
+        "focus": "Gunakan kata sendi nama untuk menerangkan kedudukan pejalan kaki yang memberi laluan dengan tertib.",
+        "duration_minutes": 60
+      }
+    },
+    {
+      "pdp": 76,
+      "date": "2027-06-25",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": 12,
+      "unit": "Keselamatan di Jalan Raya",
+      "topic": "Naik Bas Turun Bas",
+      "focus": "Kenal pasti kata berimbuhan awalan beR- dan gunakan dalam ayat tentang menaiki bas.",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.1(iii)"
+      ],
+      "textbook_page": "74",
+      "textbook_printed_sp": "5.2.1(iii)",
+      "workbook": {
+        "volume": 1,
+        "page": 78,
+        "activity": 6
+      },
+      "workbook_printed_sp": [
+        "5.2.1(iii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 77,
+      "date": "2027-06-28",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pemulihan kata kerja keselamatan",
+      "focus": "Padankan kata kerja dengan ayat tentang keselamatan sekolah dan tuliskan padanan.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.2(i)",
+        "5.1.2(ii)"
+      ],
+      "textbook_page": null,
+      "workbook": {
+        "volume": 1,
+        "page": 79
+      },
+      "kind": "susulan_tema",
+      "pkjr": {
+        "activity": 14,
+        "pages": "17–18",
+        "hp": "3.1.2",
+        "focus": "Bina ayat panduan keselamatan berdasarkan gambar dan frasa."
+      }
+    },
+    {
+      "pdp": 78,
+      "date": "2027-06-29",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pengayaan imbuhan dalam petikan keselamatan",
+      "focus": "Pilih kata berimbuhan awalan yang melengkapkan petikan tentang keselamatan di rumah.",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.1(iii)"
+      ],
+      "textbook_page": null,
+      "workbook": {
+        "volume": 1,
+        "page": 80
+      },
+      "kind": "susulan_tema"
+    },
+    {
+      "pdp": 79,
+      "date": "2027-07-01",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pentaksiran Tema 4",
+      "focus": "Jawab soalan daripada petikan dan pilih kata kerja aktif atau pasif yang sesuai dalam konteks.",
+      "sk": [
+        "2.1",
+        "3.2",
+        "5.1"
+      ],
+      "sp": [
+        "2.1.2(iv)",
+        "3.2.2(i)",
+        "5.1.2(i)",
+        "5.1.2(ii)"
+      ],
+      "textbook_page": "75",
+      "workbook": null,
+      "kind": "pentaksiran"
+    },
+    {
+      "pdp": 80,
+      "date": "2027-07-02",
+      "duration_minutes": 60,
+      "theme_number": 4,
+      "theme": "Kita Cermat Kita Selamat",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Bacaan luas keselamatan kebakaran",
+      "focus": "Baca teks Kelab 3K dan catat tiga maklumat tentang peranan kelab dalam keselamatan kebakaran.",
+      "sk": [
+        "2.2",
+        "3.2"
+      ],
+      "sp": [
+        "2.2.1(ii)",
+        "3.2.3"
+      ],
+      "textbook_page": "76",
+      "workbook": null,
+      "kind": "bacaan_luas"
+    },
+    {
+      "pdp": 81,
+      "date": "2027-07-05",
+      "duration_minutes": 60,
+      "theme_number": 5,
+      "theme": "Bijak Sains Teknologi dan Inovasi",
+      "unit_number": 13,
+      "unit": "Bijak Sains",
+      "topic": "Makan untuk Hidup",
+      "focus": "Terangkan maklumat yang dapat dilihat dan satu inferens daripada gambar tentang pemakanan.",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.2"
+      ],
+      "textbook_page": "78",
+      "textbook_printed_sp": "1.2.2",
+      "workbook": {
+        "volume": 2,
+        "page": 1,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.2.2"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 82,
+      "date": "2027-07-06",
+      "duration_minutes": 60,
+      "theme_number": 5,
+      "theme": "Bijak Sains Teknologi dan Inovasi",
+      "unit_number": 13,
+      "unit": "Bijak Sains",
+      "topic": "Gunakan Deria",
+      "focus": "Baca petikan dan senaraikan isi tersurat tentang kegunaan deria.",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1(ii)"
+      ],
+      "textbook_page": "79",
+      "textbook_printed_sp": "2.2.1(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 2,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.2.1(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 83,
+      "date": "2027-07-08",
+      "duration_minutes": 60,
+      "theme_number": 5,
+      "theme": "Bijak Sains Teknologi dan Inovasi",
+      "unit_number": 13,
+      "unit": "Bijak Sains",
+      "topic": "Timbul atau Tenggelam",
+      "focus": "Tulis ayat tentang model bot yang diimlakkan dengan tanda baca yang betul.",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.4(iii)"
+      ],
+      "textbook_page": "80",
+      "textbook_printed_sp": "3.2.4(iii)",
+      "workbook": {
+        "volume": 2,
+        "page": 3,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.2.4(iii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 84,
+      "date": "2027-07-09",
+      "duration_minutes": 60,
+      "theme_number": 5,
+      "theme": "Bijak Sains Teknologi dan Inovasi",
+      "unit_number": 13,
+      "unit": "Bijak Sains",
+      "topic": "Pantun Bijak Sains",
+      "focus": "Bezakan pembayang dan maksud pantun, kemudian jawab soalan pada rangkap.",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1(i)"
+      ],
+      "textbook_page": "81",
+      "textbook_printed_sp": "4.2.1(i)",
+      "workbook": {
+        "volume": 2,
+        "page": 4,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.2.1(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 85,
+      "date": "2027-07-12",
+      "duration_minutes": 60,
+      "theme_number": 5,
+      "theme": "Bijak Sains Teknologi dan Inovasi",
+      "unit_number": 13,
+      "unit": "Bijak Sains",
+      "topic": "Panasnya Cuaca",
+      "focus": "Tulis ayat menggunakan kata arah bagi kedudukan objek yang terdedah kepada cahaya.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.4(iii)"
+      ],
+      "textbook_page": "82",
+      "textbook_printed_sp": "5.1.4(iii)",
+      "workbook": {
+        "volume": 2,
+        "page": 5,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.1.4(iii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 86,
+      "date": "2027-07-13",
+      "duration_minutes": 60,
+      "theme_number": 5,
+      "theme": "Bijak Sains Teknologi dan Inovasi",
+      "unit_number": 14,
+      "unit": "Hebat dan Berguna",
+      "topic": "Buku Digital",
+      "focus": "Dengar dialog tentang buku digital dan sebut semula dua ayat majmuk.",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1(iii)"
+      ],
+      "textbook_page": "83",
+      "textbook_printed_sp": "1.1.1(iii)",
+      "workbook": {
+        "volume": 2,
+        "page": 6,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.1.1(iii)"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 15,
+        "pages": "19",
+        "hp": "4.1.1",
+        "focus": "Lengkapkan dan nyanyikan rangkap tentang melintas bersama orang dewasa."
+      }
+    },
+    {
+      "pdp": 87,
+      "date": "2027-07-15",
+      "duration_minutes": 60,
+      "theme_number": 5,
+      "theme": "Bijak Sains Teknologi dan Inovasi",
+      "unit_number": 14,
+      "unit": "Hebat dan Berguna",
+      "topic": "Gunakan dengan Bijak",
+      "focus": "Kenal pasti nilai daripada penggunaan televisyen dalam petikan dan catat buktinya.",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.1(iv)"
+      ],
+      "textbook_page": "84",
+      "textbook_printed_sp": "2.3.1(iv)",
+      "workbook": {
+        "volume": 2,
+        "page": 7,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.3.1(iv)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 88,
+      "date": "2027-07-16",
+      "duration_minutes": 60,
+      "theme_number": 5,
+      "theme": "Bijak Sains Teknologi dan Inovasi",
+      "unit_number": 14,
+      "unit": "Hebat dan Berguna",
+      "topic": "Tong Sampah Pintar",
+      "focus": "Bina karangan berpandu menggunakan gambar dan frasa tentang tong sampah pintar.",
+      "sk": [
+        "3.3"
+      ],
+      "sp": [
+        "3.3.1(ii)"
+      ],
+      "textbook_page": "85",
+      "textbook_printed_sp": "3.3.1(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 8,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.3.1(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 89,
+      "date": "2027-07-19",
+      "duration_minutes": 60,
+      "theme_number": 5,
+      "theme": "Bijak Sains Teknologi dan Inovasi",
+      "unit_number": 14,
+      "unit": "Hebat dan Berguna",
+      "topic": "Teknologi untuk Kita",
+      "focus": "Lengkapkan pantun empat kerat tentang teknologi dan persembahkannya mengikut jeda.",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.1(ii)"
+      ],
+      "textbook_page": "86",
+      "textbook_printed_sp": "4.3.1(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 9,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.3.1(ii)"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 16,
+        "pages": "20",
+        "hp": "4.1.1",
+        "focus": "Baca petikan dan lengkapkan ayat tentang cara melintas dengan selamat."
+      }
+    },
+    {
+      "pdp": 90,
+      "date": "2027-07-20",
+      "duration_minutes": 60,
+      "theme_number": 5,
+      "theme": "Bijak Sains Teknologi dan Inovasi",
+      "unit_number": 14,
+      "unit": "Hebat dan Berguna",
+      "topic": "Ciptaan Hebat",
+      "focus": "Pilih kata tanya mengikut maklumat tentang telefon pintar yang hendak diketahui.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.4(iv)"
+      ],
+      "textbook_page": "87",
+      "textbook_printed_sp": "5.1.4(iv)",
+      "workbook": {
+        "volume": 2,
+        "page": 10,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.1.4(iv)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 91,
+      "date": "2027-07-22",
+      "duration_minutes": 60,
+      "theme_number": 5,
+      "theme": "Bijak Sains Teknologi dan Inovasi",
+      "unit_number": 14,
+      "unit": "Hebat dan Berguna",
+      "topic": "Lampu Meja Istimewa",
+      "focus": "Pilih kata perintah bagi ayat arahan menggunakan alat dan baca semula dengan jelas.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.4(v)"
+      ],
+      "textbook_page": "88",
+      "textbook_printed_sp": "5.1.4(v)",
+      "workbook": {
+        "volume": 2,
+        "page": 11,
+        "activity": 6
+      },
+      "workbook_printed_sp": [
+        "5.1.4(v)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 92,
+      "date": "2027-07-23",
+      "duration_minutes": 60,
+      "theme_number": 5,
+      "theme": "Bijak Sains Teknologi dan Inovasi",
+      "unit_number": 15,
+      "unit": "Bijak Mencipta",
+      "topic": "Penyangkut Tisu",
+      "focus": "Dengar soalan tentang penyangkut tisu dan beri respons yang menjelaskan kegunaannya.",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2(i)"
+      ],
+      "textbook_page": "89",
+      "textbook_printed_sp": "1.1.2(i)",
+      "workbook": {
+        "volume": 2,
+        "page": 12,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.1.2(i)"
+      ],
+      "kind": "unit",
+      "sivik": {
+        "value": "Bertanggungjawab",
+        "focus": "Jawab soalan tentang cara menggunakan penyangkut tisu bersama dan menjaga peralatan kelas.",
+        "duration_minutes": 60
+      }
+    },
+    {
+      "pdp": 93,
+      "date": "2027-07-26",
+      "duration_minutes": 60,
+      "theme_number": 5,
+      "theme": "Bijak Sains Teknologi dan Inovasi",
+      "unit_number": 15,
+      "unit": "Bijak Mencipta",
+      "topic": "Pencipta Terkemuka",
+      "focus": "Baca seni kata tentang pencipta, kemudian persembahkannya mengikut melodi.",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.2(i)"
+      ],
+      "textbook_page": "90",
+      "textbook_printed_sp": "2.3.2(i)",
+      "workbook": {
+        "volume": 2,
+        "page": 13,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.3.2(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 94,
+      "date": "2027-07-27",
+      "duration_minutes": 60,
+      "theme_number": 5,
+      "theme": "Bijak Sains Teknologi dan Inovasi",
+      "unit_number": 15,
+      "unit": "Bijak Mencipta",
+      "topic": "Pembalut Hadiah",
+      "focus": "Bulatkan kesalahan ejaan dalam petikan dan tulis semula perkataan yang dibetulkan.",
+      "sk": [
+        "3.3"
+      ],
+      "sp": [
+        "3.3.2(i)"
+      ],
+      "textbook_page": "91",
+      "textbook_printed_sp": "3.3.2(i)",
+      "workbook": {
+        "volume": 2,
+        "page": 14,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.3.2(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 95,
+      "date": "2027-07-29",
+      "duration_minutes": 60,
+      "theme_number": 5,
+      "theme": "Bijak Sains Teknologi dan Inovasi",
+      "unit_number": 15,
+      "unit": "Bijak Mencipta",
+      "topic": "Cipta Hiasan",
+      "focus": "Persembahkan lagu tentang bahan kitar semula dengan sebutan jelas dan aksi sesuai.",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.3(ii)"
+      ],
+      "textbook_page": "92",
+      "textbook_printed_sp": "4.3.3(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 15,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.3.3(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 96,
+      "date": "2027-07-30",
+      "duration_minutes": 60,
+      "theme_number": 5,
+      "theme": "Bijak Sains Teknologi dan Inovasi",
+      "unit_number": 15,
+      "unit": "Bijak Mencipta",
+      "topic": "Beg Pintar",
+      "focus": "Gunakan kata seru yang sesuai untuk menyatakan reaksi terhadap ciri beg pintar.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.4(vi)"
+      ],
+      "textbook_page": "93",
+      "textbook_printed_sp": "5.1.4(vi)",
+      "workbook": {
+        "volume": 2,
+        "page": 16,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.1.4(vi)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 97,
+      "date": "2027-08-02",
+      "duration_minutes": 60,
+      "theme_number": 5,
+      "theme": "Bijak Sains Teknologi dan Inovasi",
+      "unit_number": 15,
+      "unit": "Bijak Mencipta",
+      "topic": "Mudahnya Mencipta",
+      "focus": "Kenal pasti kata ganda penuh dan bina ayat tentang bahan untuk mereka cipta.",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.3"
+      ],
+      "textbook_page": "94",
+      "textbook_printed_sp": "5.2.3",
+      "workbook": {
+        "volume": 2,
+        "page": 17,
+        "activity": 6
+      },
+      "workbook_printed_sp": [
+        "5.2.3"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 98,
+      "date": "2027-08-03",
+      "duration_minutes": 60,
+      "theme_number": 5,
+      "theme": "Bijak Sains Teknologi dan Inovasi",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pemulihan kata tanya alat digital",
+      "focus": "Lengkapkan soalan tentang tabung digital dengan kata tanya yang sesuai.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.4(iv)"
+      ],
+      "textbook_page": null,
+      "workbook": {
+        "volume": 2,
+        "page": 18
+      },
+      "kind": "susulan_tema",
+      "pkjr": {
+        "activity": 17,
+        "pages": "21",
+        "hp": "4.3.1",
+        "focus": "Susun perkataan untuk menerangkan cara meningkatkan kebolehlihatan ketika hujan atau pada waktu malam."
+      }
+    },
+    {
+      "pdp": 99,
+      "date": "2027-08-05",
+      "duration_minutes": 60,
+      "theme_number": 5,
+      "theme": "Bijak Sains Teknologi dan Inovasi",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pengukuhan isi tersurat",
+      "focus": "Baca petikan tentang lampu tidur ciptaan Zhi Ying dan tulis isi yang dinyatakan dalam teks.",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1(ii)"
+      ],
+      "textbook_page": null,
+      "workbook": {
+        "volume": 2,
+        "page": 20
+      },
+      "kind": "susulan_tema"
+    },
+    {
+      "pdp": 100,
+      "date": "2027-08-06",
+      "duration_minutes": 60,
+      "theme_number": 5,
+      "theme": "Bijak Sains Teknologi dan Inovasi",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pentaksiran Tema 5",
+      "focus": "Nyatakan nilai daripada petikan, betulkan ejaan dan bezakan kata perintah daripada kata seru dalam jawapan.",
+      "sk": [
+        "2.3",
+        "3.3",
+        "5.1"
+      ],
+      "sp": [
+        "2.3.1(iv)",
+        "3.3.2(i)",
+        "5.1.4(v)",
+        "5.1.4(vi)"
+      ],
+      "textbook_page": "95",
+      "workbook": null,
+      "kind": "pentaksiran"
+    },
+    {
+      "pdp": 101,
+      "date": "2027-08-09",
+      "duration_minutes": 60,
+      "theme_number": 6,
+      "theme": "Budaya Bangsa",
+      "unit_number": 16,
+      "unit": "Sambut Perayaan",
+      "topic": "Hidangan untuk Tetamu",
+      "focus": "Dengar suruhan menyediakan juadah dan beri respons sopan secara main peranan.",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2(ii)"
+      ],
+      "textbook_page": "97",
+      "textbook_printed_sp": "1.1.2(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 21,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.1.2(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 102,
+      "date": "2027-08-10",
+      "duration_minutes": 60,
+      "theme_number": 6,
+      "theme": "Budaya Bangsa",
+      "unit_number": 16,
+      "unit": "Sambut Perayaan",
+      "topic": "Pantun Hari Raya",
+      "focus": "Lafazkan pantun sambutan perayaan dengan sebutan dan intonasi yang sesuai.",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.2(iii)"
+      ],
+      "textbook_page": "98",
+      "textbook_printed_sp": "2.3.2(iii)",
+      "workbook": {
+        "volume": 2,
+        "page": 22,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.3.2(iii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 103,
+      "date": "2027-08-12",
+      "duration_minutes": 60,
+      "theme_number": 6,
+      "theme": "Budaya Bangsa",
+      "unit_number": 16,
+      "unit": "Sambut Perayaan",
+      "topic": "Yee Sang",
+      "focus": "Susun dan catat maklumat tentang hidangan Yee Sang dalam peta bulatan.",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.3"
+      ],
+      "textbook_page": "99",
+      "textbook_printed_sp": "3.2.3",
+      "workbook": {
+        "volume": 2,
+        "page": 23,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.2.3"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 104,
+      "date": "2027-08-13",
+      "duration_minutes": 60,
+      "theme_number": 6,
+      "theme": "Budaya Bangsa",
+      "unit_number": 16,
+      "unit": "Sambut Perayaan",
+      "topic": "Rayakan Bersama",
+      "focus": "Persembahkan lagu sambutan Hari Raya dengan melodi dan sebutan yang jelas.",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.3(i)"
+      ],
+      "textbook_page": "100",
+      "textbook_printed_sp": "4.3.3(i)",
+      "workbook": {
+        "volume": 2,
+        "page": 24,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.3.3(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 105,
+      "date": "2027-08-17",
+      "duration_minutes": 60,
+      "theme_number": 6,
+      "theme": "Budaya Bangsa",
+      "unit_number": 16,
+      "unit": "Sambut Perayaan",
+      "topic": "Selamat Hari Vaisakhi",
+      "focus": "Kenal pasti kata dasar dalam petikan tentang Vaisakhi dan bezakan daripada kata berimbuhan.",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.1(i)"
+      ],
+      "textbook_page": "101",
+      "textbook_printed_sp": "5.2.1(i)",
+      "workbook": {
+        "volume": 2,
+        "page": 25,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.2.1(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 106,
+      "date": "2027-08-18",
+      "duration_minutes": 60,
+      "theme_number": 6,
+      "theme": "Budaya Bangsa",
+      "unit_number": 17,
+      "unit": "Hargailah Seni",
+      "topic": "Taici",
+      "focus": "Dengar tentang senaman taici dan sebut semula ayat majmuk dengan tepat.",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1(iii)"
+      ],
+      "textbook_page": "102",
+      "textbook_printed_sp": "1.1.1(iii)",
+      "workbook": {
+        "volume": 2,
+        "page": 26,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.1.1(iii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 107,
+      "date": "2027-08-19",
+      "duration_minutes": 60,
+      "theme_number": 6,
+      "theme": "Budaya Bangsa",
+      "unit_number": 17,
+      "unit": "Hargailah Seni",
+      "topic": "Seni Sulaman",
+      "focus": "Baca petikan bukan sastera tentang sulaman dan nyatakan corak yang diterangkan.",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.2(iv)"
+      ],
+      "textbook_page": "103",
+      "textbook_printed_sp": "2.3.2(iv)",
+      "workbook": {
+        "volume": 2,
+        "page": 27,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.3.2(iv)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 108,
+      "date": "2027-08-20",
+      "duration_minutes": 60,
+      "theme_number": 6,
+      "theme": "Budaya Bangsa",
+      "unit_number": 17,
+      "unit": "Hargailah Seni",
+      "topic": "Bakul Siya",
+      "focus": "Lengkapkan karangan tentang bahan, rupa dan kegunaan bakul berdasarkan maklumat.",
+      "sk": [
+        "3.3"
+      ],
+      "sp": [
+        "3.3.1(i)"
+      ],
+      "textbook_page": "104",
+      "textbook_printed_sp": "3.3.1(i)",
+      "workbook": {
+        "volume": 2,
+        "page": 28,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.3.1(i)"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 18,
+        "pages": "22",
+        "hp": "4.4.1",
+        "focus": "Baca pernyataan dan terangkan tempat sesuai untuk melintas dalam situasi diberikan."
+      }
+    },
+    {
+      "pdp": 109,
+      "date": "2027-08-23",
+      "duration_minutes": 60,
+      "theme_number": 6,
+      "theme": "Budaya Bangsa",
+      "unit_number": 17,
+      "unit": "Hargailah Seni",
+      "topic": "Rumah Baharu Bayan",
+      "focus": "Persembahkan cerita haiwan dengan intonasi yang menggambarkan reaksi watak.",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.2(i)"
+      ],
+      "textbook_page": "105",
+      "textbook_printed_sp": "4.3.2(i)",
+      "workbook": {
+        "volume": 2,
+        "page": 29,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.3.2(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 110,
+      "date": "2027-08-24",
+      "duration_minutes": 60,
+      "theme_number": 6,
+      "theme": "Budaya Bangsa",
+      "unit_number": 17,
+      "unit": "Hargailah Seni",
+      "topic": "Seni Seramik",
+      "focus": "Kenal pasti kata tunggal dalam petikan tentang barangan seramik dan gunakan dalam ayat.",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.1(ii)"
+      ],
+      "textbook_page": "106",
+      "textbook_printed_sp": "5.2.1(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 30,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.2.1(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 111,
+      "date": "2027-08-26",
+      "duration_minutes": 60,
+      "theme_number": 6,
+      "theme": "Budaya Bangsa",
+      "unit_number": 17,
+      "unit": "Hargailah Seni",
+      "topic": "Alat Muzik Tradisional",
+      "focus": "Pilih kata perintah yang sesuai bagi situasi di muzium dalam petikan.",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.4(v)"
+      ],
+      "textbook_page": "107",
+      "textbook_printed_sp": "5.1.4(v)",
+      "workbook": {
+        "volume": 2,
+        "page": 31,
+        "activity": 6
+      },
+      "workbook_printed_sp": [
+        "5.1.4(v)"
+      ],
+      "kind": "unit",
+      "sivik": {
+        "value": "Kegembiraan",
+        "focus": "Gunakan kata perintah yang santun untuk memberi arahan ketika bermain muzik bersama rakan.",
+        "duration_minutes": 60
+      }
+    },
+    {
+      "pdp": 112,
+      "date": "2027-08-27",
+      "duration_minutes": 60,
+      "theme_number": 6,
+      "theme": "Budaya Bangsa",
+      "unit_number": 18,
+      "unit": "Indahnya Budi Bahasa",
+      "topic": "Saya Berbudi Bahasa",
+      "focus": "Dengar permintaan dalam dua situasi dan beri respons menggunakan bahasa yang sopan.",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2(iv)"
+      ],
+      "textbook_page": "108",
+      "textbook_printed_sp": "1.1.2(iv)",
+      "workbook": {
+        "volume": 2,
+        "page": 32,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.1.2(iv)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 113,
+      "date": "2027-09-06",
+      "duration_minutes": 60,
+      "theme_number": 6,
+      "theme": "Budaya Bangsa",
+      "unit_number": 18,
+      "unit": "Indahnya Budi Bahasa",
+      "topic": "Budi Pekerti",
+      "focus": "Baca cerita tentang Sandra dan persembahkan semula tindakan yang menunjukkan budi pekerti.",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.2(ii)"
+      ],
+      "textbook_page": "109",
+      "textbook_printed_sp": "2.3.2(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 33,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.3.2(ii)"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 19,
+        "pages": "23",
+        "hp": "4.4.1",
+        "focus": "Pilih frasa yang sesuai bagi kemudahan dan peraturan pejalan kaki."
+      }
+    },
+    {
+      "pdp": 114,
+      "date": "2027-09-08",
+      "duration_minutes": 60,
+      "theme_number": 6,
+      "theme": "Budaya Bangsa",
+      "unit_number": 18,
+      "unit": "Indahnya Budi Bahasa",
+      "topic": "Mari Membantu",
+      "focus": "Baiki tanda baca dalam petikan dan tulis semula ayat yang dimurnikan.",
+      "sk": [
+        "3.3"
+      ],
+      "sp": [
+        "3.3.2(ii)"
+      ],
+      "textbook_page": "110",
+      "textbook_printed_sp": "3.3.2(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 34,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.3.2(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 115,
+      "date": "2027-09-10",
+      "duration_minutes": 60,
+      "theme_number": 6,
+      "theme": "Budaya Bangsa",
+      "unit_number": 18,
+      "unit": "Indahnya Budi Bahasa",
+      "topic": "Budi Baik",
+      "focus": "Persembahkan lagu rakyat tentang budi dengan intonasi dan aksi yang sesuai.",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.3(ii)"
+      ],
+      "textbook_page": "111",
+      "textbook_printed_sp": "4.3.3(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 35,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.3.3(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 116,
+      "date": "2027-09-13",
+      "duration_minutes": 60,
+      "theme_number": 6,
+      "theme": "Budaya Bangsa",
+      "unit_number": 18,
+      "unit": "Indahnya Budi Bahasa",
+      "topic": "Amalan Mulia",
+      "focus": "Kenal pasti kata berimbuhan meN- dan beR- dan kelaskan mengikut awalan.",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.1(iii)"
+      ],
+      "textbook_page": "112",
+      "textbook_printed_sp": "5.2.1(iii)",
+      "workbook": {
+        "volume": 2,
+        "page": 36,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.2.1(iii)"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 20,
+        "pages": "24",
+        "hp": "5.1.2",
+        "focus": "Kenal pasti pakaian dan peralatan keselamatan berbasikal serta jelaskan kepentingannya."
+      }
+    },
+    {
+      "pdp": 117,
+      "date": "2027-09-14",
+      "duration_minutes": 60,
+      "theme_number": 6,
+      "theme": "Budaya Bangsa",
+      "unit_number": 18,
+      "unit": "Indahnya Budi Bahasa",
+      "topic": "Terima Kasih Cikgu",
+      "focus": "Senaraikan kata majmuk daripada petikan dan gunakan dua dalam ayat baharu.",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.2"
+      ],
+      "textbook_page": "113",
+      "textbook_printed_sp": "5.2.2",
+      "workbook": {
+        "volume": 2,
+        "page": 37,
+        "activity": 6
+      },
+      "workbook_printed_sp": [
+        "5.2.2"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 118,
+      "date": "2027-09-15",
+      "duration_minutes": 60,
+      "theme_number": 6,
+      "theme": "Budaya Bangsa",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pemulihan tanda baca",
+      "focus": "Betulkan tanda baca dalam ayat tentang budi bahasa dan tulis semula ayat yang lengkap.",
+      "sk": [
+        "3.3"
+      ],
+      "sp": [
+        "3.3.2(ii)"
+      ],
+      "textbook_page": null,
+      "workbook": {
+        "volume": 2,
+        "page": 38
+      },
+      "kind": "susulan_tema"
+    },
+    {
+      "pdp": 119,
+      "date": "2027-09-17",
+      "duration_minutes": 60,
+      "theme_number": 6,
+      "theme": "Budaya Bangsa",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pengayaan urutan maklumat",
+      "focus": "Baca teks hidangan nasi daun pisang dan lengkapkan peta alir mengikut urutan.",
+      "sk": [
+        "2.1",
+        "3.2"
+      ],
+      "sp": [
+        "2.1.2(iv)",
+        "3.2.3"
+      ],
+      "textbook_page": null,
+      "workbook": {
+        "volume": 2,
+        "page": 39
+      },
+      "kind": "susulan_tema"
+    },
+    {
+      "pdp": 120,
+      "date": "2027-09-20",
+      "duration_minutes": 60,
+      "theme_number": 6,
+      "theme": "Budaya Bangsa",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pentaksiran Tema 6",
+      "focus": "Bandingkan dua alat muzik dalam peta dan bina ayat penyata menggunakan kata majmuk.",
+      "sk": [
+        "3.2",
+        "5.2",
+        "5.3"
+      ],
+      "sp": [
+        "3.2.3",
+        "5.2.2",
+        "5.3.1(ii)"
+      ],
+      "textbook_page": "114",
+      "workbook": null,
+      "kind": "pentaksiran"
+    },
+    {
+      "pdp": 121,
+      "date": "2027-09-21",
+      "duration_minutes": 60,
+      "theme_number": 7,
+      "theme": "Sayangi Malaysia",
+      "unit_number": 19,
+      "unit": "Cintailah Bahasa Kita",
+      "topic": "Program Bahasa Melayu",
+      "focus": "Dengar soalan bercapah tentang program bahasa dan beri jawapan berserta sebab.",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.3(i)"
+      ],
+      "textbook_page": "116",
+      "textbook_printed_sp": "1.1.3(i)",
+      "workbook": {
+        "volume": 2,
+        "page": 43,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.1.3(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 122,
+      "date": "2027-09-23",
+      "duration_minutes": 60,
+      "theme_number": 7,
+      "theme": "Sayangi Malaysia",
+      "unit_number": 19,
+      "unit": "Cintailah Bahasa Kita",
+      "topic": "Tahniah Guan Hong",
+      "focus": "Nyatakan isi tersirat tentang persediaan Guan Hong dan tunjukkan petunjuk dalam teks.",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1(iii)"
+      ],
+      "textbook_page": "117",
+      "textbook_printed_sp": "2.2.1(iii)",
+      "workbook": {
+        "volume": 2,
+        "page": 44,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.2.1(iii)"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 21,
+        "pages": "25–26",
+        "hp": "5.1.2",
+        "focus": "Dengar cerita dan catat jenis pakaian serta peralatan keselamatan berbasikal."
+      }
+    },
+    {
+      "pdp": 123,
+      "date": "2027-09-24",
+      "duration_minutes": 60,
+      "theme_number": 7,
+      "theme": "Sayangi Malaysia",
+      "unit_number": 19,
+      "unit": "Cintailah Bahasa Kita",
+      "topic": "Permainan Bahasa",
+      "focus": "Bina jawapan bertulis kepada soalan bercapah tentang faedah permainan bahasa.",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.2(ii)"
+      ],
+      "textbook_page": "118",
+      "textbook_printed_sp": "3.2.2(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 45,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.2.2(ii)"
+      ],
+      "kind": "unit",
+      "sivik": {
+        "value": "Kasih sayang",
+        "focus": "Tulis jawapan tentang cara memberi galakan kepada rakan yang menyertai permainan bahasa.",
+        "duration_minutes": 60
+      }
+    },
+    {
+      "pdp": 124,
+      "date": "2027-09-27",
+      "duration_minutes": 60,
+      "theme_number": 7,
+      "theme": "Sayangi Malaysia",
+      "unit_number": 19,
+      "unit": "Cintailah Bahasa Kita",
+      "topic": "Udin yang Hebat",
+      "focus": "Ceritakan semula adegan perlumbaan menggunakan bandingan semacam yang sesuai.",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1(i)"
+      ],
+      "textbook_page": "119",
+      "textbook_printed_sp": "4.1.1(i)",
+      "workbook": {
+        "volume": 2,
+        "page": 46,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.1.1(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 125,
+      "date": "2027-09-28",
+      "duration_minutes": 60,
+      "theme_number": 7,
+      "theme": "Sayangi Malaysia",
+      "unit_number": 19,
+      "unit": "Cintailah Bahasa Kita",
+      "topic": "Kamus Bahasa Melayu",
+      "focus": "Kenal pasti kata ganda separa daripada contoh dan gunakan satu dalam ayat.",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.3"
+      ],
+      "textbook_page": "120",
+      "textbook_printed_sp": "5.2.3",
+      "workbook": {
+        "volume": 2,
+        "page": 47,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.2.3"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 126,
+      "date": "2027-09-30",
+      "duration_minutes": 60,
+      "theme_number": 7,
+      "theme": "Sayangi Malaysia",
+      "unit_number": 20,
+      "unit": "Malaysia Indah",
+      "topic": "Bercuti di Pulau Redang",
+      "focus": "Dengar pesanan sebelum bercuti dan beri respons yang menunjukkan tindakan yang wajar.",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.3(ii)"
+      ],
+      "textbook_page": "121",
+      "textbook_printed_sp": "1.1.3(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 48,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.1.3(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 127,
+      "date": "2027-10-01",
+      "duration_minutes": 60,
+      "theme_number": 7,
+      "theme": "Sayangi Malaysia",
+      "unit_number": 20,
+      "unit": "Malaysia Indah",
+      "topic": "Kisah Anak Helang",
+      "focus": "Baca cerita dan nyatakan nilai yang disokong oleh tindakan anak helang.",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.1(ii)"
+      ],
+      "textbook_page": "122",
+      "textbook_printed_sp": "2.3.1.(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 49,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.3.1(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 128,
+      "date": "2027-10-04",
+      "duration_minutes": 60,
+      "theme_number": 7,
+      "theme": "Sayangi Malaysia",
+      "unit_number": 20,
+      "unit": "Malaysia Indah",
+      "topic": "Indahnya Sabah",
+      "focus": "Catat lokasi dan tarikan pelancongan dalam peta pokok berdasarkan bacaan.",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.3"
+      ],
+      "textbook_page": "123",
+      "textbook_printed_sp": "3.2.3",
+      "workbook": {
+        "volume": 2,
+        "page": 50,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.2.3"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 22,
+        "pages": "27–28",
+        "hp": "5.1.2 / 5.2.1",
+        "focus": "Baca dialog dan padankan peralatan keselamatan berbasikal dengan fungsi."
+      }
+    },
+    {
+      "pdp": 129,
+      "date": "2027-10-05",
+      "duration_minutes": 60,
+      "theme_number": 7,
+      "theme": "Sayangi Malaysia",
+      "unit_number": 20,
+      "unit": "Malaysia Indah",
+      "topic": "Kunjungi Sarawak",
+      "focus": "Lafazkan pantun mengikut jeda dan nyatakan pola rima akhir rangkap.",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1(ii)"
+      ],
+      "textbook_page": "124",
+      "textbook_printed_sp": "4.2.1(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 51,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.2.1(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 130,
+      "date": "2027-10-07",
+      "duration_minutes": 60,
+      "theme_number": 7,
+      "theme": "Sayangi Malaysia",
+      "unit_number": 20,
+      "unit": "Malaysia Indah",
+      "topic": "Kenali Negeri Sembilan",
+      "focus": "Tandakan pola ayat yang dipelajari dalam petikan dan tulis semula contoh ayat.",
+      "sk": [
+        "5.3"
+      ],
+      "sp": [
+        "5.3.1(i)"
+      ],
+      "textbook_page": "125",
+      "textbook_printed_sp": "5.3.1(i)",
+      "workbook": {
+        "volume": 2,
+        "page": 52,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.3.1(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 131,
+      "date": "2027-10-08",
+      "duration_minutes": 60,
+      "theme_number": 7,
+      "theme": "Sayangi Malaysia",
+      "unit_number": 20,
+      "unit": "Malaysia Indah",
+      "topic": "Kampung Indah",
+      "focus": "Bina ayat penyata yang menerangkan keistimewaan kampung berdasarkan petikan.",
+      "sk": [
+        "5.3"
+      ],
+      "sp": [
+        "5.3.1(ii)"
+      ],
+      "textbook_page": "126",
+      "textbook_printed_sp": "5.3.1(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 53,
+        "activity": 6
+      },
+      "workbook_printed_sp": [
+        "5.3.1(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 132,
+      "date": "2027-10-11",
+      "duration_minutes": 60,
+      "theme_number": 7,
+      "theme": "Sayangi Malaysia",
+      "unit_number": 21,
+      "unit": "Negara Tercinta",
+      "topic": "Bunga Kebangsaan",
+      "focus": "Terangkan maklumat tentang bunga kebangsaan dengan bahasa yang bertatasusila.",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.1"
+      ],
+      "textbook_page": "127",
+      "textbook_printed_sp": "1.2.1",
+      "workbook": {
+        "volume": 2,
+        "page": 54,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.2.1"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 133,
+      "date": "2027-10-12",
+      "duration_minutes": 60,
+      "theme_number": 7,
+      "theme": "Sayangi Malaysia",
+      "unit_number": 21,
+      "unit": "Negara Tercinta",
+      "topic": "Lagu Kebangsaan",
+      "focus": "Baca dan persembahkan petikan tentang lagu kebangsaan dengan sebutan dan intonasi sesuai.",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.2(iv)"
+      ],
+      "textbook_page": "128",
+      "textbook_printed_sp": "2.3.2(iv)",
+      "workbook": {
+        "volume": 2,
+        "page": 55,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.3.2(iv)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 134,
+      "date": "2027-10-14",
+      "duration_minutes": 60,
+      "theme_number": 7,
+      "theme": "Sayangi Malaysia",
+      "unit_number": 21,
+      "unit": "Negara Tercinta",
+      "topic": "Bandar Bersejarah",
+      "focus": "Tulis cerita berpandu tentang lawatan ke bandar bersejarah mengikut urutan peristiwa.",
+      "sk": [
+        "3.3"
+      ],
+      "sp": [
+        "3.3.1(ii)"
+      ],
+      "textbook_page": "129",
+      "textbook_printed_sp": "3.3.1(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 56,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.3.1(ii)"
+      ],
+      "kind": "unit",
+      "pkjr": {
+        "activity": 23,
+        "pages": "29–30",
+        "hp": "6.2.1",
+        "focus": "Kenal pasti alat penahan dan tempat duduk yang dinyatakan dalam gambar."
+      }
+    },
+    {
+      "pdp": 135,
+      "date": "2027-10-15",
+      "duration_minutes": 60,
+      "theme_number": 7,
+      "theme": "Sayangi Malaysia",
+      "unit_number": 21,
+      "unit": "Negara Tercinta",
+      "topic": "Malaysia Harmoni",
+      "focus": "Kenal pasti struktur pantun dan salin satu rangkap mengikut format yang betul.",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1(iii)"
+      ],
+      "textbook_page": "130",
+      "textbook_printed_sp": "4.2.1(iii)",
+      "workbook": {
+        "volume": 2,
+        "page": 57,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.2.1(iii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 136,
+      "date": "2027-10-18",
+      "duration_minutes": 60,
+      "theme_number": 7,
+      "theme": "Sayangi Malaysia",
+      "unit_number": 21,
+      "unit": "Negara Tercinta",
+      "topic": "Merdeka",
+      "focus": "Bina ayat tanya dengan kata tanya untuk mendapatkan maklumat tentang kemerdekaan.",
+      "sk": [
+        "5.3"
+      ],
+      "sp": [
+        "5.3.1(iii)"
+      ],
+      "textbook_page": "131",
+      "textbook_printed_sp": "5.3.1(iii)",
+      "workbook": {
+        "volume": 2,
+        "page": 58,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.3.1(iii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 137,
+      "date": "2027-10-19",
+      "duration_minutes": 60,
+      "theme_number": 7,
+      "theme": "Sayangi Malaysia",
+      "unit_number": 21,
+      "unit": "Negara Tercinta",
+      "topic": "Semangat Patriotik",
+      "focus": "Kenal pasti ayat perintah dan nyatakan arahan untuk persediaan sambutan sekolah.",
+      "sk": [
+        "5.3"
+      ],
+      "sp": [
+        "5.3.1(iv)"
+      ],
+      "textbook_page": "132",
+      "textbook_printed_sp": "5.3.1(iv)",
+      "workbook": {
+        "volume": 2,
+        "page": 59,
+        "activity": 6
+      },
+      "workbook_printed_sp": [
+        "5.3.1(iv)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 138,
+      "date": "2027-10-21",
+      "duration_minutes": 60,
+      "theme_number": 7,
+      "theme": "Sayangi Malaysia",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pemulihan pemahaman Tugu Negara",
+      "focus": "Baca teks tentang Tugu Negara dan nilai ketepatan pernyataan berdasarkan maklumat dalam petikan.",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2(iv)"
+      ],
+      "textbook_page": null,
+      "workbook": {
+        "volume": 2,
+        "page": 60
+      },
+      "kind": "susulan_tema",
+      "pkjr": {
+        "activity": 24,
+        "pages": "31",
+        "hp": "6.2.2",
+        "focus": "Baca petikan dan jelaskan fungsi jenis alat penahan mengikut penumpang.",
+        "pupil_book_printed_hp": "6.6.2"
+      }
+    },
+    {
+      "pdp": 139,
+      "date": "2027-10-22",
+      "duration_minutes": 60,
+      "theme_number": 7,
+      "theme": "Sayangi Malaysia",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pengukuhan ayat tanya",
+      "focus": "Pilih ayat tanya yang sepadan dengan jawapan tentang buku dan lawatan ke muzium.",
+      "sk": [
+        "5.3"
+      ],
+      "sp": [
+        "5.3.1(iii)"
+      ],
+      "textbook_page": null,
+      "workbook": {
+        "volume": 2,
+        "page": 62
+      },
+      "kind": "susulan_tema",
+      "sivik": {
+        "value": "Hormat-menghormati",
+        "focus": "Pilih ayat tanya yang santun untuk meminta maklumat tentang bahan bacaan dan lawatan.",
+        "duration_minutes": 60
+      }
+    },
+    {
+      "pdp": 140,
+      "date": "2027-10-25",
+      "duration_minutes": 60,
+      "theme_number": 7,
+      "theme": "Sayangi Malaysia",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pentaksiran Tema 7",
+      "focus": "Berikan respons kepada pesanan, catat fakta tentang Malaysia dan lengkapkan ayat penyata.",
+      "sk": [
+        "1.1",
+        "3.2",
+        "5.3"
+      ],
+      "sp": [
+        "1.1.3(ii)",
+        "3.2.3",
+        "5.3.1(ii)"
+      ],
+      "textbook_page": "133",
+      "workbook": null,
+      "kind": "pentaksiran"
+    },
+    {
+      "pdp": 141,
+      "date": "2027-10-26",
+      "duration_minutes": 60,
+      "theme_number": 8,
+      "theme": "Wang dan Perbelanjaan",
+      "unit_number": 22,
+      "unit": "Urus Wang",
+      "topic": "Wang Belanja",
+      "focus": "Dengar pesanan tentang wang belanja dan lakonkan respons yang menunjukkan cara menyimpannya.",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.3(ii)"
+      ],
+      "textbook_page": "135",
+      "textbook_printed_sp": "1.1.3(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 63,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.1.3(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 142,
+      "date": "2027-11-01",
+      "duration_minutes": 60,
+      "theme_number": 8,
+      "theme": "Wang dan Perbelanjaan",
+      "unit_number": 22,
+      "unit": "Urus Wang",
+      "topic": "Rancang Belanja",
+      "focus": "Baca perenggan dan jawab soalan tentang cara mengurus wang yang dinyatakan.",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2(iii)"
+      ],
+      "textbook_page": "136",
+      "textbook_printed_sp": "2.1.2(iii)",
+      "workbook": {
+        "volume": 2,
+        "page": 64,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.1.2(iii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 143,
+      "date": "2027-11-02",
+      "duration_minutes": 60,
+      "theme_number": 8,
+      "theme": "Wang dan Perbelanjaan",
+      "unit_number": 22,
+      "unit": "Urus Wang",
+      "topic": "Berbelanja di Kantin",
+      "focus": "Tulis jawapan kepada soalan bertumpu berdasarkan maklumat belanja di kantin.",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.2(i)"
+      ],
+      "textbook_page": "137",
+      "textbook_printed_sp": "3.2.2(i)",
+      "workbook": {
+        "volume": 2,
+        "page": 65,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.2.2(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 144,
+      "date": "2027-11-04",
+      "duration_minutes": 60,
+      "theme_number": 8,
+      "theme": "Wang dan Perbelanjaan",
+      "unit_number": 22,
+      "unit": "Urus Wang",
+      "topic": "Wang Kami",
+      "focus": "Lengkapkan pantun empat kerat tentang wang belanja dan lafazkannya mengikut jeda.",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.1(ii)"
+      ],
+      "textbook_page": "138",
+      "textbook_printed_sp": "4.3.1(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 66,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.3.1(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 145,
+      "date": "2027-11-05",
+      "duration_minutes": 60,
+      "theme_number": 8,
+      "theme": "Wang dan Perbelanjaan",
+      "unit_number": 22,
+      "unit": "Urus Wang",
+      "topic": "Mata Wang Malaysia",
+      "focus": "Kenal pasti ayat dasar dan sebut semula contoh tentang simpanan wang.",
+      "sk": [
+        "5.3"
+      ],
+      "sp": [
+        "5.3.2(i)"
+      ],
+      "textbook_page": "139",
+      "textbook_printed_sp": "5.3.2(i)",
+      "workbook": {
+        "volume": 2,
+        "page": 67,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.3.2(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 146,
+      "date": "2027-11-08",
+      "duration_minutes": 60,
+      "theme_number": 8,
+      "theme": "Wang dan Perbelanjaan",
+      "unit_number": 23,
+      "unit": "Rajin Berusaha",
+      "topic": "Doktor Nandran",
+      "focus": "Terangkan secara bertatasusila satu sifat yang boleh dicontohi daripada bahan.",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.1"
+      ],
+      "textbook_page": "140",
+      "textbook_printed_sp": "1.2.1",
+      "workbook": {
+        "volume": 2,
+        "page": 68,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.2.1"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 147,
+      "date": "2027-11-09",
+      "duration_minutes": 60,
+      "theme_number": 8,
+      "theme": "Wang dan Perbelanjaan",
+      "unit_number": 23,
+      "unit": "Rajin Berusaha",
+      "topic": "Kedai Jam Tik Tok",
+      "focus": "Baca petikan dan nyatakan isi tersurat tentang sebab kedai itu dikunjungi.",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1(ii)"
+      ],
+      "textbook_page": "141",
+      "textbook_printed_sp": "2.2.1(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 69,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.2.1(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 148,
+      "date": "2027-11-11",
+      "duration_minutes": 60,
+      "theme_number": 8,
+      "theme": "Wang dan Perbelanjaan",
+      "unit_number": 23,
+      "unit": "Rajin Berusaha",
+      "topic": "Bijak Matematik",
+      "focus": "Jawab soalan bercapah secara bertulis tentang penggunaan Matematik di rumah.",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.2(ii)"
+      ],
+      "textbook_page": "142",
+      "textbook_printed_sp": "3.2.2(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 70,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.2.2(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 149,
+      "date": "2027-11-12",
+      "duration_minutes": 60,
+      "theme_number": 8,
+      "theme": "Wang dan Perbelanjaan",
+      "unit_number": 23,
+      "unit": "Rajin Berusaha",
+      "topic": "Pak Pandir di Kedai Runcit",
+      "focus": "Persembahkan cerita jenaka dengan sebutan, intonasi dan ekspresi yang sesuai.",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.2(ii)"
+      ],
+      "textbook_page": "143",
+      "textbook_printed_sp": "4.3.2(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 71,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.3.2(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 150,
+      "date": "2027-11-15",
+      "duration_minutes": 60,
+      "theme_number": 8,
+      "theme": "Wang dan Perbelanjaan",
+      "unit_number": 23,
+      "unit": "Rajin Berusaha",
+      "topic": "Cadar Buatan Nenek",
+      "focus": "Senaraikan ayat tunggal dalam petikan dan gunakannya untuk menerangkan pembuatan cadar.",
+      "sk": [
+        "5.3"
+      ],
+      "sp": [
+        "5.3.2(ii)"
+      ],
+      "textbook_page": "144",
+      "textbook_printed_sp": "5.3.2(ii)",
+      "workbook": {
+        "volume": 2,
+        "page": 72,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.3.2(ii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 151,
+      "date": "2027-11-16",
+      "duration_minutes": 60,
+      "theme_number": 8,
+      "theme": "Wang dan Perbelanjaan",
+      "unit_number": 23,
+      "unit": "Rajin Berusaha",
+      "topic": "Ternakan Datuk",
+      "focus": "Kenal pasti ayat majmuk dan bina satu ayat baharu tentang penjagaan ternakan.",
+      "sk": [
+        "5.3"
+      ],
+      "sp": [
+        "5.3.2(iii)"
+      ],
+      "textbook_page": "145",
+      "textbook_printed_sp": "5.3.2(iii)",
+      "workbook": {
+        "volume": 2,
+        "page": 73,
+        "activity": 6
+      },
+      "workbook_printed_sp": [
+        "5.3.2(iii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 152,
+      "date": "2027-11-18",
+      "duration_minutes": 60,
+      "theme_number": 8,
+      "theme": "Wang dan Perbelanjaan",
+      "unit_number": 24,
+      "unit": "Bijak Berbelanja",
+      "topic": "Tawaran Istimewa",
+      "focus": "Lakonkan perbualan untuk menjelaskan maklumat dan alasan memilih sesuatu produk.",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.2"
+      ],
+      "textbook_page": "146",
+      "textbook_printed_sp": "1.2.2",
+      "workbook": {
+        "volume": 2,
+        "page": 74,
+        "activity": 1
+      },
+      "workbook_printed_sp": [
+        "1.2.2"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 153,
+      "date": "2027-11-19",
+      "duration_minutes": 60,
+      "theme_number": 8,
+      "theme": "Wang dan Perbelanjaan",
+      "unit_number": 24,
+      "unit": "Bijak Berbelanja",
+      "topic": "Kasut Sama Harga Berbeza",
+      "focus": "Bandingkan butiran harga dan nyatakan isi tersirat dengan petunjuk daripada bacaan.",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1(iii)"
+      ],
+      "textbook_page": "147",
+      "textbook_printed_sp": "2.2.1(iii)",
+      "workbook": {
+        "volume": 2,
+        "page": 75,
+        "activity": 2
+      },
+      "workbook_printed_sp": [
+        "2.2.1(iii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 154,
+      "date": "2027-11-22",
+      "duration_minutes": 60,
+      "theme_number": 8,
+      "theme": "Wang dan Perbelanjaan",
+      "unit_number": 24,
+      "unit": "Bijak Berbelanja",
+      "topic": "Pembeli Bijak",
+      "focus": "Kenal pasti kata yang kurang tepat dalam petikan dan tulis semula ayat yang dimurnikan.",
+      "sk": [
+        "3.3"
+      ],
+      "sp": [
+        "3.3.2(iii)"
+      ],
+      "textbook_page": "148",
+      "textbook_printed_sp": "3.3.2(iii)",
+      "workbook": {
+        "volume": 2,
+        "page": 76,
+        "activity": 3
+      },
+      "workbook_printed_sp": [
+        "3.3.2(iii)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 155,
+      "date": "2027-11-23",
+      "duration_minutes": 60,
+      "theme_number": 8,
+      "theme": "Wang dan Perbelanjaan",
+      "unit_number": 24,
+      "unit": "Bijak Berbelanja",
+      "topic": "Jimat Belanja",
+      "focus": "Nyanyikan lagu, lakukan aksi mengikut lirik dan sebut cara watak menjimatkan wang.",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.2(i)"
+      ],
+      "textbook_page": "149",
+      "textbook_printed_sp": "4.2.2(i)",
+      "workbook": {
+        "volume": 2,
+        "page": 77,
+        "activity": 4
+      },
+      "workbook_printed_sp": [
+        "4.2.2(i)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 156,
+      "date": "2027-11-25",
+      "duration_minutes": 60,
+      "theme_number": 8,
+      "theme": "Wang dan Perbelanjaan",
+      "unit_number": 24,
+      "unit": "Bijak Berbelanja",
+      "topic": "Biskut Bijirin",
+      "focus": "Bina ayat tanya dengan kata tanya untuk mendapatkan maklumat daripada bungkusan.",
+      "sk": [
+        "5.3"
+      ],
+      "sp": [
+        "5.3.1(iii)"
+      ],
+      "textbook_page": "150",
+      "textbook_printed_sp": "5.3.1(iii)",
+      "workbook": {
+        "volume": 2,
+        "page": 78,
+        "activity": 5
+      },
+      "workbook_printed_sp": [
+        "5.3.1(iii)"
+      ],
+      "kind": "unit",
+      "sivik": {
+        "value": "Bertanggungjawab",
+        "focus": "Bina ayat tanya untuk menyemak maklumat produk sebelum membuat keputusan pembelian.",
+        "duration_minutes": 60
+      }
+    },
+    {
+      "pdp": 157,
+      "date": "2027-11-26",
+      "duration_minutes": 60,
+      "theme_number": 8,
+      "theme": "Wang dan Perbelanjaan",
+      "unit_number": 24,
+      "unit": "Bijak Berbelanja",
+      "topic": "Pilihlah yang Sesuai",
+      "focus": "Kenal pasti ayat perintah dalam dialog dan gunakan dalam situasi memilih pakaian.",
+      "sk": [
+        "5.3"
+      ],
+      "sp": [
+        "5.3.1(iv)"
+      ],
+      "textbook_page": "151",
+      "textbook_printed_sp": "5.3.1(iv)",
+      "workbook": {
+        "volume": 2,
+        "page": 79,
+        "activity": 6
+      },
+      "workbook_printed_sp": [
+        "5.3.1(iv)"
+      ],
+      "kind": "unit"
+    },
+    {
+      "pdp": 158,
+      "date": "2027-11-29",
+      "duration_minutes": 60,
+      "theme_number": 8,
+      "theme": "Wang dan Perbelanjaan",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pengayaan perbandingan harga",
+      "focus": "Baca iklan dan petikan, kemudian beza maklumat harga yang dinyatakan dengan kesimpulan tentang pilihan pembelian.",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1(ii)",
+        "2.2.1(iii)"
+      ],
+      "textbook_page": null,
+      "workbook": {
+        "volume": 2,
+        "page": 81
+      },
+      "kind": "susulan_tema"
+    },
+    {
+      "pdp": 159,
+      "date": "2027-12-01",
+      "duration_minutes": 60,
+      "theme_number": 8,
+      "theme": "Wang dan Perbelanjaan",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Pentaksiran Tema 8",
+      "focus": "Jelaskan maklumat poster, jawab soalan petikan dan betulkan kesalahan penggunaan kata serta ayat.",
+      "sk": [
+        "1.2",
+        "2.1",
+        "3.2",
+        "3.3",
+        "5.3"
+      ],
+      "sp": [
+        "1.2.2",
+        "2.1.2(iv)",
+        "3.2.2(i)",
+        "3.3.2(iii)",
+        "5.3.2(ii)"
+      ],
+      "textbook_page": "152–153",
+      "workbook": null,
+      "kind": "pentaksiran"
+    },
+    {
+      "pdp": 160,
+      "date": "2027-12-03",
+      "duration_minutes": 60,
+      "theme_number": 8,
+      "theme": "Wang dan Perbelanjaan",
+      "unit_number": null,
+      "unit": null,
+      "topic": "Bacaan luas galeri Bank Negara",
+      "focus": "Catat lokasi, bahan pameran dan perkara yang dapat dipelajari melalui lawatan ke muzium.",
+      "sk": [
+        "2.2",
+        "3.2"
+      ],
+      "sp": [
+        "2.2.1(ii)",
+        "3.2.3"
+      ],
+      "textbook_page": "154",
+      "workbook": null,
+      "kind": "bacaan_luas"
+    }
+  ]
+}
