@@ -77,7 +77,9 @@ class MobileRptDownloadTests(unittest.TestCase):
                          docx_url:"/api/rpt/2027/sjkc/sains/6.docx"}]},
                     {code:"matematik_sjkc",label:"Matematik (SJKC)",years:[
                         {year:2,pdf_ready:true,download_enabled:true,docx_ready:true,
-                         docx_url:"/api/rpt/2027/sjkc/matematik/2.docx"}]},
+                         docx_url:"/api/rpt/2027/sjkc/matematik/2.docx"},
+                        {year:3,pdf_ready:true,download_enabled:true,docx_ready:true,
+                         docx_url:"/api/rpt/2027/sjkc/matematik/3.docx",note:"Tarikh Kumpulan A dan B dalam satu RPT."}]},
                     {code:"science_dlp",label:"Science (DLP)",years:[
                         {year:3,pdf_ready:true,download_enabled:true,year_label:"Year 3"}]}
                 ];
@@ -125,6 +127,11 @@ class MobileRptDownloadTests(unittest.TestCase):
             subject.select_option("bahasa_melayu_sjk")
             self.assertTrue(pdf.is_visible())
             self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/bahasa-melayu/3.docx")
+            subject.select_option("matematik_sjkc")
+            self.assertTrue(pdf.is_visible())
+            self.assertTrue(word.is_visible())
+            self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/matematik/3.docx")
+            self.assertIn("Kumpulan A dan B",page.locator("#rpt-status").inner_text())
             year.select_option("4")
             subject.select_option("bahasa_melayu_sjk")
             self.assertTrue(pdf.is_visible())
