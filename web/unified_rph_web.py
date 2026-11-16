@@ -19,6 +19,7 @@ from zipfile import ZIP_DEFLATED, ZipFile
 
 from flask import Blueprint, g, jsonify, request, send_file
 
+from web import native_telegram_sjkc_math_client as sjkc
 from web.english_rpt_2027_http import _account, _has_paid_access
 from web.rph_teacher_reflection import clean_reflection
 
@@ -28,6 +29,7 @@ SUBJECT_LABELS = {
     "ENGLISH": "Bahasa Inggeris",
     "BM": "Bahasa Melayu",
     "MATH": "Matematik",
+    sjkc.SUBJECT: sjkc.LABEL,
     "SCIENCE": "Sains",
     "PI": "Pendidikan Islam",
     "PJPK": "PJPK",
@@ -640,6 +642,20 @@ def create_blueprint():
                 "year": year, "subject": subject, "unit": unit,
                 "lesson": token, "teacher": teacher,
             }, None
+        if subject == sjkc.SUBJECT:
+            try:
+                pdp = sjkc.verify(year, unit, token)
+            except ValueError:
+                return None, (jsonify({"error": "Pilihan Matematik SJKC tidak sah"}), 400)
+            except sjkc.NativeRPHUnavailable:
+                return None, (jsonify({
+                    "error": "PdP Matematik SJKC belum dapat disahkan melalui Telegram.",
+                    "code": "TELEGRAM_SJKC_MATH_RPH_NOT_READY",
+                }), 503)
+            return {
+                "source": sjkc.SOURCE, "year": year, "subject": subject, "unit": unit,
+                "lesson": pdp, "teacher": teacher,
+            }, None
         if subject == "RBT":
             if year not in (4,5,6) or component not in (None,""):
                 return None,(jsonify({"error":"RBT untuk Tahun 4–6 sahaja"}),400)
@@ -805,7 +821,9 @@ def create_blueprint():
         """
         from web.native_telegram_rph_client import request_native_rph, NativeRPHUnavailable
         try:
-            if selected.get("source") == "telegram-native-bm-pdp":
+            if selected.get("source") == sjkc.SOURCE:
+                document = sjkc.request_document(selected, fmt)
+            elif selected.get("source") == "telegram-native-bm-pdp":
                 from web.native_telegram_bm_rph_client import request_native_bm_rph
                 document = request_native_bm_rph(selected, fmt)
             elif selected.get("source") == "telegram-verified-rpt-master":
