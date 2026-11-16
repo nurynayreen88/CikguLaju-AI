@@ -20,8 +20,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "rpt_2027" / "english"
 CALENDAR = ROOT / "rpt_2027" / "takwim_pdp_2027_ab_draf.json"
 LESSON = re.compile(r"LESSON:\s*(\d+)\b")
-SHORT_WEEKS = {1, 5, 10, 11, 20, 35}
 DEEPAVALI_WEEK = 39
+SHORT_WEEK_SESSIONS = {5: 3, 20: 3, 35: 3, DEEPAVALI_WEEK: 2}
 STOP_WEEK = 40
 WEEK_WITH_ASSESSMENT = 18
 CLOSED_WEEKS = {6, 19}
@@ -86,11 +86,11 @@ def schedule():
         week = row["minggu"]
         count = 0
         if week <= STOP_WEEK and week not in CLOSED_WEEKS:
-            count = {DEEPAVALI_WEEK: 2}.get(week, 3 if week in SHORT_WEEKS else 4)
+            count = SHORT_WEEK_SESSIONS.get(week, 4)
         lessons = tuple(range(first, first + count))
         weeks.append((week, span(row["A"]), span(row["B"]), lessons))
         first += count
-    assert first == 145 and len(weeks) == 44
+    assert first == 148 and len(weeks) == 44
     return weeks
 
 
@@ -174,13 +174,18 @@ def cover(canvas, year, scheduled_count):
         "Week 18: 9–13 May (A), 10–14 May (B). Use for school assessment or the available English sessions.",
         "Week 19 (Aidiladha and Wesak): 0 planned Lessons. Week 39 (Deepavali): up to two available sessions.",
         "Week 40: teach up to the November limit if slots are available before school assessment or UASA.",
-        f"The plan uses up to four 60-minute sessions a week. Lessons {scheduled_count + 1:03d}–160 await placement.",
+        "Weeks with one public holiday retain four 60-minute sessions when the timetable permits.",
+        f"Lessons {scheduled_count + 1:03d}–160 await placement before the school assessment or UASA.",
         "Use the revision and assessment dates set by the school. Weeks 41–44 have 0 new Lessons.",
-        "Sources: KPM Academic Calendar 2027 and CikguLaju's KSSR English SK Scheme of Work index.",
+        "See the calendar notes for local adjustments. Sources: KPM calendar, BKPP holidays and English SK SOW.",
     )
     for i, note in enumerate(notes):
         write_text(canvas, note, 34, y - 31 - 23 * i, size=9, color=MUTED)
     canvas.showPage()
+
+
+def lesson_range(numbers):
+    return f"{numbers[0]:03d}–{numbers[-1]:03d}"
 
 
 def calendar_page(canvas, year, weeks, notes, title):
@@ -199,12 +204,24 @@ def calendar_page(canvas, year, weeks, notes, title):
         if i % 2 == 0:
             canvas.setFillColor(PALE)
             canvas.rect(left, y - 17, width, 17, fill=1, stroke=0)
-        activity = notes.get(week)
-        if activity is None:
-            activity = f"{numbers[0]:03d}–{numbers[-1]:03d}  /  {len(numbers)} Lessons"
+        note = notes.get(week)
+        if numbers:
+            activity = f"{lesson_range(numbers)}  /  {note or f'{len(numbers)} Lessons'}"
+        else:
+            activity = note
         for x, value in zip(columns, (str(week), group_a, group_b, activity), strict=True):
             write_text(canvas, value, x, y - 12, size=8.1, bold=x == left + 8)
         y -= 17
+    local_notes = (
+        ("Week 5: use four sessions where there is only one closure or none. Some Federal Territories have two.",
+         "Week 20: allow for the Agong's Birthday and Awal Muharram or its replacement holiday.")
+        if weeks[0][0] == 1 else
+        ("Week 35: use four sessions outside Kelantan, subject to local closures and the timetable.",
+         "Week 39: up to three in Group A, two in most of Group B and four in Sarawak.",
+         "When a local timetable adds a session, use the next Lesson in order and shift subsequent ranges.")
+    )
+    for index, note in enumerate(local_notes):
+        write_text(canvas, note, left, y - 14 - 11 * index, size=7.5, color=MUTED)
     canvas.showPage()
 
 
@@ -218,11 +235,14 @@ def build(year, out):
     pdf.setAuthor("CikguLaju")
     cover(pdf, year, len(numbered))
     notes = {
+        5: "3 shared sessions / 4 where there is at most one closure",
         6: "Festival holidays / 0 planned Lessons",
-        WEEK_WITH_ASSESSMENT: "061–064 if English slots are available / school assessment",
+        WEEK_WITH_ASSESSMENT: "up to 4 sessions if slots are available around school assessment",
         19: "Aidiladha and Wesak / 0 planned Lessons",
-        39: "139–140 / up to 2 sessions on available school days",
-        40: "141–144 / up to 4 sessions before school assessment or UASA",
+        20: "3 sessions / Awal Muharram and Agong's Birthday",
+        35: "3 shared sessions / 4 outside Kelantan, subject to local closures",
+        DEEPAVALI_WEEK: "2 sessions in the shared plan / local dates vary",
+        STOP_WEEK: "up to 4 sessions before school assessment or UASA",
         41: "School assessment or post-assessment activities / 0 new Lessons",
         42: "Year-end activities / 0 new Lessons",
         43: "Year-end activities / 0 new Lessons",
@@ -239,7 +259,7 @@ def build(year, out):
                 detail += "   /   On available school days"
             if week == STOP_WEEK:
                 detail += "   /   Before school assessment or UASA"
-            frame(pdf, year, "DATED LESSONS", f"Week {week:02d}  ·  {lessons[0]:03d}–{lessons[-1]:03d}", detail)
+            frame(pdf, year, "DATED LESSONS", f"Week {week:02d}  ·  {lesson_range(lessons)}", detail)
             draw_rows(pdf, (rows[n] for n in lessons))
             pdf.showPage()
     pending = list(range(len(numbered) + 1, 161))
