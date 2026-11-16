@@ -76,3 +76,28 @@ jobs:
           path: output/english-october-review/
           if-no-files-found: error
           retention-days: 30
+      - name: Render Year 5 RPT and nine selected-standard RPH
+        run: |
+          python -m unittest discover -s tests -p 'test_english_y5_full_preview_gate_20261105.py' -v
+          python -m tools.build_english_rpt_2027_review output/english-y5-standards --year 5
+          python tools/verify_english_y5_choice_word_a4.py
+          python - <<'PY'
+          from pathlib import Path
+          from base64 import b64encode
+          from hashlib import sha256
+          path = Path("output/english-y5-standards/RPT_English_SK_2027_Year_5_A_B.pdf")
+          data = path.read_bytes()
+          print("Y5_RPT_SHA256=" + sha256(data).hexdigest())
+          encoded = b64encode(data).decode("ascii")
+          for i in range(0, len(encoded), 4096):
+              print(f"Y5_RPT_PART_{i // 4096:03d}=" + encoded[i:i + 4096])
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: RPT_RPH_English_SK_2027_Year_5_SK_SP
+          path: |
+            output/english-y5-standards/*.pdf
+            output/english_y5_teacher_choice_a4_review/word/*.docx
+            output/english_y5_teacher_choice_a4_review/pdf/*.pdf
+          if-no-files-found: error
+          retention-days: 30

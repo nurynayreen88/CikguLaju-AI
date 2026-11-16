@@ -5,6 +5,7 @@ from html import escape
 import json
 from pathlib import Path
 import re
+import sys
 
 import fitz
 from reportlab.lib.colors import HexColor, white
@@ -17,6 +18,8 @@ from reportlab.platypus import Paragraph
 
 
 ROOT = Path(__file__).resolve().parents[1]
+if not __package__:
+    sys.path.insert(0, str(ROOT))
 SOURCE = ROOT / "rpt_2027" / "english"
 CALENDAR = ROOT / "rpt_2027" / "takwim_pdp_2027_ab_draf.json"
 LESSON = re.compile(r"LESSON:\s*(\d+)\b")
@@ -74,6 +77,19 @@ def source_rows(year):
         for number, activity in ((17, 1), (18, 3)):
             topic, standards, _ = rows[number]
             rows[number] = (topic, standards, [f"Get Smart Plus 4 SB p.15, Activity {activity}"])
+    if year == 5:
+        from web.english_y5_standalone_runtime import CHOICE_LESSONS
+        from web.english_y5_teacher_choice_runtime import DSKP_CODES, load_proposal, selected_standards
+
+        for number in sorted(CHOICE_LESSONS):
+            proposal = load_proposal(number)
+            if proposal is None:
+                raise ValueError(f"Missing Year 5 DSKP selection for Lesson {number}")
+            topic, _, references = rows[number]
+            standards = ["DSKP standards selected for this plan"]
+            for label, (sk, sp) in zip(("MAIN", "COMPLEMENTARY"), selected_standards(proposal), strict=True):
+                standards.extend((label, f"SK {sk} · {DSKP_CODES[sk]}", f"SP {sp} · {DSKP_CODES[sp]}"))
+            rows[number] = (topic, standards, references)
     return rows
 
 
@@ -281,12 +297,14 @@ def build(year, out):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("output", type=Path)
-    output = parser.parse_args().output
+    parser.add_argument("--year", type=int, choices=range(2, 7))
+    args = parser.parse_args()
+    output = args.output
     output.mkdir(parents=True, exist_ok=True)
     pdfmetrics.registerFont(TTFont("RPT", str(FONTS / "DejaVuSans.ttf")))
     pdfmetrics.registerFont(TTFont("RPTBold", str(FONTS / "DejaVuSans-Bold.ttf")))
     pdfmetrics.registerFontFamily("RPT", normal="RPT", bold="RPTBold")
-    for year in range(2, 7):
+    for year in (args.year,) if args.year else range(2, 7):
         build(year, output / f"RPT_English_SK_2027_Year_{year}_A_B.pdf")
 
 
