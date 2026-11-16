@@ -34,6 +34,32 @@ Draf Matematik SJKC Tahun 3 dan sembilan RPT SJK/SJKC mempunyai tarikh akhir yan
 
 ## English SK Year 2–6
 
+### Asas jadual waktu sekolah: 8 waktu × 30 minit
+
+Kiraan English menggunakan maksimum lapan waktu 30 minit seminggu, bersamaan 240 minit. Empat sesi 60 minit ialah cara menyusun peruntukan yang sama apabila waktu digabungkan berpasangan. Untuk agihan SOW, satu Lesson penuh menggunakan dua blok 30 minit. Jika satu blok sahaja masih tersedia, rancang bahagian pertama Lesson dan sambungkan baki 30 minit pada waktu English berikutnya, mengikut urutan SOW. [Contoh buku pengurusan SK Shah Alam](https://anyflip.com/ggvn/fbjr/basic/51-100) dan [panduan blok 30 minit dalam SOW Year 6 SK](https://www.teacherfiera.com/wp-content/uploads/2020/04/SoW-Primary-Year-6-SK.pdf).
+
+| Waktu English yang tersedia | Jumlah minit | Kapasiti jika bermula pada awal Lesson |
+| ---: | ---: | --- |
+| 8 | 240 | 4 Lesson penuh |
+| 7 | 210 | 3 Lesson penuh dan 30 minit pertama Lesson seterusnya |
+| 6 | 180 | 3 Lesson penuh |
+| 5 | 150 | 2 Lesson penuh dan 30 minit pertama Lesson seterusnya |
+| 4 | 120 | 2 Lesson penuh |
+
+Untuk minggu dengan satu hari cuti umum, kekalkan sasaran lapan waktu dan semak waktu yang boleh dialihkan dalam minggu tersebut. Jika baki sebenar tujuh waktu, gunakan 210 minit dan bawa baki Lesson ke waktu seterusnya. Jika tiada waktu dialihkan, kira kehilangan berdasarkan jadual English kelas pada hari cuti. Satu hari cuti boleh menjejaskan 0, 1 atau beberapa waktu, bergantung pada jadual.
+
+Draf bersama mempunyai enam waktu bersamaan tiga Lesson pada Minggu 5, 20 dan 35. Minggu 39 mempunyai empat waktu bersamaan dua Lesson. Minggu 6 dan 19 mempunyai sifar waktu. Nilai ini ialah andaian bersama. Contohnya, jika sekolah mempunyai tujuh waktu pada Minggu 20, 30 minit tambahan boleh digunakan untuk memulakan Lesson seterusnya, dengan baki disambung selepas itu. Sahkan agihan setiap kelas sebelum memindahkan nombor Lesson dalam RPT dan RPH Hari Ini.
+
+| Agihan hingga 4/5 November, tertakluk pada pentaksiran | Waktu 30 minit | Jam | Baki daripada 320 waktu |
+| --- | ---: | ---: | ---: |
+| Bersama Kumpulan A/B | 294 | 147 | 26 |
+| WP Kuala Lumpur, Labuan dan Putrajaya | 296 | 148 | 24 |
+| Kelantan dan kebanyakan negeri Kumpulan B | 298 | 149 | 22 |
+| Kedah dan Terengganu | 300 | 150 | 20 |
+| Sarawak | 302 | 151 | 18 |
+
+Had teori 38 minggu × 8 waktu ialah 304 waktu atau 152 jam. Penjadualan semula pada hari sekolah boleh memulihkan beberapa waktu yang terjejas sehingga had ini. Mencapai 320 waktu sebelum 4/5 November memerlukan sekurang-kurangnya 16 waktu lagi walaupun semua 38 minggu penuh. Jadual simulasi sesi 90 minit di bawah ialah perbandingan sejarah yang menggunakan peruntukan melebihi lapan waktu dalam minggu tertentu. Agihan semasa menggunakan lapan waktu sebagai had.
+
 RPT Rozayus Academy 2026 meletakkan Lesson 160 pada 18–22 Oktober (A) dan 19–23 Oktober (B) untuk Year 4–6, diikuti ulang kaji pada minggu terakhir Oktober. Satu salinan Year 3 mengikut tarikh itu. Satu lagi meletakkan Lesson 160 pada 11–15 Oktober (A) dan 12–16 Oktober (B), diikuti dua minggu ulang kaji. Year 2 meletakkan Lesson 156–160 pada 25–29 Oktober (A) dan 26–30 Oktober (B), dengan ulang kaji atau pentaksiran pada awal November. Contoh Year 3 menyenaraikan lima Lesson pada Minggu 2. Year 2 menyenaraikan lima pada minggu terakhir PdP. Tarikh tamat 2026 membantu menetapkan sasaran 2027. Bilangan Lesson setiap minggu mengikut jadual yang diluluskan untuk 2027.
 
 ### Agihan draf 2027 mengikut Kumpulan A/B
@@ -201,7 +227,7 @@ Satu contoh yang mengekalkan maksimum empat sesi dan tarikh akhir ialah memanjan
 | Kedah dan Terengganu | 150 | 10 | 20 |
 | Sarawak | 151 | 9 | 18 |
 
-[Jadual simulasi mengikut minggu, tarikh A/B dan pecahan Lesson](rpt_2027_english_senario_minit_tambahan_20261116.csv) meliputi enam agihan. Ia mengandaikan semua sesi asas tersedia, termasuk Minggu 18 dan 40 jika jadual pentaksiran mengizinkan. Input yang diperlukan sebelum pelaksanaan ialah jadual English kelas, tarikh pentaksiran/UASA dan pengesahan sekolah untuk menambah 30 minit pada sesi terpilih. Tetapan yang telah dipersetujui kekal empat sesi, 60 minit setiap satu. Simulasi ialah pilihan untuk keputusan pengguna tentang tempoh sesi, sementara PDF bersama A/B kekal dalam semakan.
+[Jadual simulasi mengikut minggu, tarikh A/B dan pecahan Lesson](rpt_2027_english_senario_minit_tambahan_20261116.csv) meliputi enam agihan. Ia mengandaikan semua sesi asas tersedia, termasuk Minggu 18 dan 40 jika jadual pentaksiran mengizinkan. Input yang diperlukan sebelum pelaksanaan ialah jadual English kelas, tarikh pentaksiran/UASA dan pengesahan sekolah untuk menambah 30 minit pada sesi terpilih. Pada asas terkini, lapan waktu 30 minit ialah had perancangan. Simulasi hanya menunjukkan masa tambahan yang diperlukan sekiranya sekolah mengubah peruntukan tersebut. PDF bersama A/B kekal dalam semakan.
 
 - [Takwim draf 44 minggu A/B](../rpt_2027/takwim_pdp_2027_ab_draf.json)
 - [Audit kapasiti semua RPT yang disemak](rpt_2027_kapasiti_sebelum_uasa_20261116.csv)
