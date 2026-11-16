@@ -115,6 +115,9 @@ def options():
             response.headers["Vary"] = "Cookie"
             return response
 
+    from web import native_telegram_sjkc_math_client as sjkc
+    from web.native_telegram_rph_client import NativeRPHUnavailable as SjkcSourceUnavailable
+
     try:
         year = int(request.args.get("year", ""))
         if year not in range(1, 7):
@@ -125,6 +128,16 @@ def options():
             return jsonify({"error": "invalid option kind"}), 400
         if kind == "components":
             return jsonify(component_options(request.args.get("subject", "")))
+        if request.args.get("subject") == sjkc.SUBJECT and kind in ("units", "pdp"):
+            if year != sjkc.YEAR or request.args.get("component"):
+                return jsonify({"error": "Pilihan Matematik SJKC tidak sah"}), 400
+            unit = request.args.get("unit", "") if kind == "pdp" else None
+            try:
+                return jsonify(sjkc.options(year, unit))
+            except ValueError:
+                return jsonify({"error": "Pilihan unit Matematik SJKC tidak sah"}), 400
+            except SjkcSourceUnavailable:
+                return jsonify({"error": "Sumber PdP Matematik SJKC belum tersedia."}), 503
         # A versioned Web copy is opt-in and is never misrepresented as the
         # active Telegram database. Accounts/quota still use shared Supabase.
         catalog_mode = os.environ.get("CIKGULAJU_WEB_CATALOG_MODE", "telegram-api")
@@ -211,6 +224,13 @@ def options():
                                                       "label":draft_label})
                                 except (NativeRPHUnavailable,ValueError):
                                     pass  # Never show an unavailable Telegram source.
+                        items = [row for row in items if row.get("value") != sjkc.SUBJECT]
+                        if year == sjkc.YEAR:
+                            try:
+                                if sjkc.options(year):
+                                    items.append({"value": sjkc.SUBJECT, "label": sjkc.LABEL})
+                            except SjkcSourceUnavailable:
+                                pass
                         return jsonify(items)
                     subject = request.args.get("subject", "")
                     component = request.args.get("component")

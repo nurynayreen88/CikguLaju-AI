@@ -80,8 +80,8 @@
     const sjkc = /^bahasa_cina_sjkc:[2-6]$/.test(key);
     const bmSjk = /^bahasa_melayu_sjk:[2-6]$/.test(key);
     const sainsSjkc = /^sains_sjkc:[2-6]$/.test(key);
-    const matematikSjkc = key === "matematik_sjkc:2";
-    if(matematikSjkc)layout = layout?.sjkc_matematik;
+    const matematikSjkc = /^matematik_sjkc:([23])$/.exec(key);
+    if(matematikSjkc)layout = matematikSjkc[1] === "3" ? layout?.sjkc_matematik_year3 : layout?.sjkc_matematik;
     if(sainsSjkc)layout = layout?.sjkc_sains;
     if(bmSjk)layout = layout?.sjk_bahasa_melayu;
     if(dlp)layout = layout?.[`dlp_year${dlp[2]}`];
