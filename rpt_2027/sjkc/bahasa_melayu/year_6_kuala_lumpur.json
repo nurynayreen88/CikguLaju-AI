@@ -44,7 +44,9 @@
     "pkjr_teacher_guide": "https://anyflip.com/jhmmk/jepw/basic",
     "pkjr_pelaksanaan": "https://anyflip.com/odjen/jsax/basic/101-150/1000",
     "sivik": "https://www.moe.gov.my/index.php/pelaksanaan-pendidikan-sivik-oleh-kementerian-pendidikan-malaysia",
-    "jawi": "https://www.moe.gov.my/storage/files/shares/pekeliling_dan_garis_panduan/surat_siaran/bahagian-pengurusan-sekolah-harian/SS%20Bil%2016%20Pelaksanaan%20Pengenalan%20Tulisan%20Jawi%20Dalam%20Kurikulum%20Mata%20Pelajaran%20Bahasa%20Melayu%20Tahun%202020.pdf"
+    "jawi": "https://www.moe.gov.my/storage/files/shares/pekeliling_dan_garis_panduan/surat_siaran/bahagian-pengurusan-sekolah-harian/SS%20Bil%2016%20Pelaksanaan%20Pengenalan%20Tulisan%20Jawi%20Dalam%20Kurikulum%20Mata%20Pelajaran%20Bahasa%20Melayu%20Tahun%202020.pdf",
+    "textbook_crosscheck": "https://fliphtml5.com/otlhk/fvze/Buku_Teks_BM_SJK_Tahun_6/",
+    "pkjr_page_crosscheck": "https://fliphtml5.com/hbtqv/lbes/PKJR_TAHUN_6/"
   },
   "lessons": [
     {
@@ -699,7 +701,7 @@
       ]
     },
     {
-      "textbook_page": "33–34",
+      "textbook_page": "33",
       "unit_number": 6,
       "unit": "Minda Sihat Emosi Terjaga",
       "kind": "unit",
@@ -721,12 +723,12 @@
       ]
     },
     {
-      "textbook_page": "35",
+      "textbook_page": "34–35",
       "unit_number": 6,
       "unit": "Minda Sihat Emosi Terjaga",
       "kind": "unit",
       "topic": "Promosi Minda Sihat",
-      "focus": "Analisis usaha sekolah dalam petikan dan ramalkan kesannya kepada murid.",
+      "focus": "Analisis maklumat Program Promosi Minda Sihat dan infografik. Ramalkan kesan amalan mengurus stres.",
       "sp": [
         "2.3.1"
       ],
@@ -911,7 +913,7 @@
       ],
       "pkjr": {
         "activity": 8,
-        "pages": "10",
+        "pages": "10–11",
         "hp": "3.1.6",
         "topic": "Kesalahan Pengguna Jalan Raya",
         "duration_minutes": 60,
@@ -1007,7 +1009,7 @@
       ],
       "pkjr": {
         "activity": 9,
-        "pages": "11–12",
+        "pages": "12",
         "hp": "3.1.4",
         "topic": "Kamu Patuh Kamu Selamat",
         "duration_minutes": 60,
@@ -2352,7 +2354,7 @@
       "unit": null,
       "kind": "pentaksiran",
       "topic": "Lawatan ke Muzium",
-      "focus": "Tulis karangan lawatan berpandukan urutan gambar dan frasa tentang pameran senjata.",
+      "focus": "Tulis karangan keperihalan dan laporan lawatan berpandukan gambar dan frasa tentang pameran.",
       "sp": [
         "3.3.1"
       ],
@@ -2966,7 +2968,7 @@
       "unit": "Pupuk Minat Keusahawanan",
       "kind": "unit",
       "topic": "Usahawan Desa",
-      "focus": "Tulis karangan fakta dan rangka syarahan berdasarkan grafik ciri usahawan yang berjaya.",
+      "focus": "Tulis teks syarahan tentang cara menjadi usahawan desa berdasarkan grafik dan rangka teks.",
       "sp": [
         "3.3.1"
       ],
