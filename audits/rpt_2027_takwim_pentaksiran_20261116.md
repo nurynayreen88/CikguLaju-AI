@@ -187,6 +187,22 @@ Bagi draf CikguLaju 2027, empat sesi 60 minit sebelum had tarikh masih memberi 1
 
 Rujukan kurikulum dan takwim. [Indeks SOW English SK Year 2–6](english_primary_2_6_official_sow_index_20261103.json), [SOW Year 2](https://padlet-uploads.storage.googleapis.com/214113651/3bcd8848911cb74a8c164ebcc18198bc/Primary_Year_2_SK_Scheme_of_Work.pdf), [SOW Year 3–6](https://sites.google.com/moe-dl.edu.my/bahasa-inggeris-2026/dokumen-standard-kurikulum), [panduan peruntukan masa English SK](https://anyflip.com/zsllg/ejcr/basic/) dan [Takwim KPM 2027](https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik).
 
+### Pelarasan yang diperlukan untuk 160 jam sebelum 4/5 November
+
+Dalam draf bersama, Minggu 5, 20 dan 35 mempunyai tiga sesi, Minggu 39 dua sesi dan Minggu 6 serta 19 sifar. Jadual setempat di atas memulihkan beberapa sesi. Minggu dengan hanya satu hari cuti kekal empat sesi apabila jadual kelas membenarkan. Pada had empat sesi 60 minit, 38 minggu calon memberi maksimum teori 152 jam. Jadual bersama sebenarnya menyediakan 147 jam. Jadual negeri dalam audit menyediakan 148–151 jam. Sasaran 160 jam dalam tempoh itu memerlukan perubahan pada tempoh sesi, bilangan sesi atau tarikh akhir.
+
+Satu contoh yang mengekalkan maksimum empat sesi dan tarikh akhir ialah memanjangkan satu sesi daripada 60 kepada 90 minit pada minggu terpilih. Sesi akhir minggu pertama mengandungi 60 minit untuk satu Lesson dan 30 minit pertama Lesson seterusnya. Sesi pertama minggu kedua menyambung 30 minit berbaki dahulu, kemudian menggunakan 60 minit untuk Lesson berikutnya. Setiap pasangan minggu memulihkan satu jam. Tiga sesi lain pada setiap minggu yang dipanjangkan kekal 60 minit. Jam dan urutan dikira semula daripada Lesson 001 supaya sambungan kekal berturutan. Semak aktiviti sebenar sebelum menetapkan titik pecahan 30 minit, terutama untuk arahan, pentaksiran dan projek. [SOW Primary Year 6 SK, panduan penyesuaian blok 30 minit](https://www.teacherfiera.com/wp-content/uploads/2020/04/SoW-Primary-Year-6-SK.pdf).
+
+| Agihan | Jam asas | Baki jam | Minggu yang memerlukan tambahan 30 minit |
+| --- | ---: | ---: | ---: |
+| Bersama Kumpulan A/B | 147 | 13 | 26 |
+| WP Kuala Lumpur, Labuan dan Putrajaya | 148 | 12 | 24 |
+| Kelantan dan kebanyakan Kumpulan B | 149 | 11 | 22 |
+| Kedah dan Terengganu | 150 | 10 | 20 |
+| Sarawak | 151 | 9 | 18 |
+
+[Jadual simulasi mengikut minggu, tarikh A/B dan pecahan Lesson](rpt_2027_english_senario_minit_tambahan_20261116.csv) meliputi enam agihan. Ia mengandaikan semua sesi asas tersedia, termasuk Minggu 18 dan 40 jika jadual pentaksiran mengizinkan. Input yang diperlukan sebelum pelaksanaan ialah jadual English kelas, tarikh pentaksiran/UASA dan pengesahan sekolah untuk menambah 30 minit pada sesi terpilih. Tetapan yang telah dipersetujui kekal empat sesi, 60 minit setiap satu. Simulasi ialah pilihan untuk keputusan pengguna tentang tempoh sesi, sementara PDF bersama A/B kekal dalam semakan.
+
 - [Takwim draf 44 minggu A/B](../rpt_2027/takwim_pdp_2027_ab_draf.json)
 - [Audit kapasiti semua RPT yang disemak](rpt_2027_kapasiti_sebelum_uasa_20261116.csv)
 - [Draf Matematik SJKC Tahun 3](https://github.com/nurynayreen88/CikguLaju-AI/pull/828)
