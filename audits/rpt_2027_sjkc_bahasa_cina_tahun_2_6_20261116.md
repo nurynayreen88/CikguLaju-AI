@@ -13,7 +13,7 @@ Takwim W.P. Kuala Lumpur (Kumpulan B) menggunakan tarikh dan cuti KPM 2027, dita
 - Tahun 3 merujuk Buku Aktiviti Jilid 1 dan 2. Tanda bintang pada fail guru menunjukkan julat unit. Tahun 4–6 menggunakan halaman Buku Teks dan pentaksiran bilik darjah yang dirancang berdasarkan unit. Tiada rujukan buku aktiviti tambahan disertakan bagi Tahun 4–6.
 - `textbook_printed_sp` menunjukkan SP yang dicetak pada halaman Buku Teks berkenaan. SP lain dalam `sp` ialah penerapan RPT berpandukan DSKP, termasuk latihan tulisan, penghasilan teks, dan kefahaman bagi bacaan peluasan.
 - Bulan, tarikh, turutan 864 PdP, integriti SK/SP, serta sempadan dan aksara bagi keseluruhan 73 halaman Word/PDF A4 disemak. Tahun 2 mengekalkan fail dan data yang telah disediakan.
-- Fail guru disediakan secara berasingan. Status Web dan Telegram belum diterbitkan. Sebelum penerbitan, semak pemadanan subjek SJKC dengan katalog RPT, akses akaun berbayar dan muka depan berprofil.
+- Fail guru diterbitkan ke katalog [Web #782](https://github.com/nurynayreen88/CikguLaju-AI/pull/782) dan [Telegram #783](https://github.com/nurynayreen88/CikguLaju-AI/pull/783). Render mengesahkan kedua-dua versi aktif. Muat turun menggunakan sesi guru berbayar sebenar belum disahkan.
 
 ## Rujukan utama
 
