@@ -3,7 +3,7 @@ from pathlib import Path
 
 CODE = "sains_sjkc"
 LABEL = "Sains (SJKC)"
-YEARS = (2,)
+YEARS = (2, 3)
 FORMATS = {"pdf": "PDF", "docx": "Word"}
 ROOT = Path(__file__).resolve().parent
 

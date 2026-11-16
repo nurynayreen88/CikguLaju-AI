@@ -1,0 +1,895 @@
+{
+  "academic_year": 2027,
+  "curriculum": "KSSR (Semakan 2017)",
+  "school_type": "SJKC",
+  "subject": "Sains",
+  "year": 3,
+  "state": "W.P. Kuala Lumpur",
+  "calendar_group": "B",
+  "time_allocation_hours": 48,
+  "calendar_model": "Cadangan 48 PdP × 60 minit untuk W.P. Kuala Lumpur, Kumpulan B. Laraskan mengikut jadual sekolah.",
+  "calendar_excluded_windows": [
+    [
+      "2027-03-06",
+      "2027-03-14"
+    ],
+    [
+      "2027-05-22",
+      "2027-06-06"
+    ],
+    [
+      "2027-08-28",
+      "2027-09-05"
+    ]
+  ],
+  "additional_calendar_exclusions": [
+    "2027-01-22",
+    "2027-02-01",
+    "2027-02-05",
+    "2027-02-08",
+    "2027-02-09",
+    "2027-02-10",
+    "2027-02-11",
+    "2027-02-12",
+    "2027-02-24",
+    "2027-05-17",
+    "2027-05-18",
+    "2027-05-19",
+    "2027-05-20",
+    "2027-05-21",
+    "2027-06-07",
+    "2027-06-08",
+    "2027-08-16",
+    "2027-08-31",
+    "2027-09-16",
+    "2027-10-27",
+    "2027-10-28",
+    "2027-10-29"
+  ],
+  "sources": {
+    "dskp": "https://anyflip.com/ceydd/ytcw/basic",
+    "rpt_2026": "https://anyflip.com/tfbps/dldj/basic",
+    "textbook": [
+      "https://anyflip.com/utdwq/evkv/basic/",
+      "https://anyflip.com/utdwq/evkv/basic/51-100",
+      "https://anyflip.com/utdwq/evkv/basic/101-148"
+    ],
+    "calendar": "https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik",
+    "public_holidays": "https://kalendarmy.com/cuti-umum/w-p-kuala-lumpur/2027/",
+    "time_allocation": "https://www.scribd.com/document/370247315/1-2-SPI-Bil-8-2016-Perubahan-Jadual-KSSR-Semakan",
+    "curriculum_alignment_notice": "https://www.moe.gov.my/index.php/surat-siaran-kpm-bil-6-tahun-2024"
+  },
+  "lessons": [
+    {
+      "pdp": 1,
+      "date": "2027-01-12",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "观察物体的特征",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1"
+      ],
+      "textbook_pages": "2",
+      "focus": "用视觉和触觉记录两种水果的颜色、形状或表面特征。"
+    },
+    {
+      "pdp": 2,
+      "date": "2027-01-19",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "根据特征分类",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2"
+      ],
+      "textbook_pages": "2, 4",
+      "focus": "按一种可观察特征把样本分组，再说明另一种可行的分法。"
+    },
+    {
+      "pdp": 3,
+      "date": "2027-01-26",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "测量和应用数目",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.3"
+      ],
+      "textbook_pages": "3",
+      "focus": "选择适合的测量工具和单位，把两项测量结果写入表格。"
+    },
+    {
+      "pdp": 4,
+      "date": "2027-01-28",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "观察与推断",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.4"
+      ],
+      "textbook_pages": "5–6",
+      "focus": "根据鞋底磨损图提出一个推断，并指出用来支持推断的观察。"
+    },
+    {
+      "pdp": 5,
+      "date": "2027-02-02",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "预测变化",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.5"
+      ],
+      "textbook_pages": "7–8",
+      "focus": "根据图示的发展规律对下一阶段作出预测，说明使用的依据。"
+    },
+    {
+      "pdp": 6,
+      "date": "2027-02-16",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "以记录说明推断和预测",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.4",
+        "1.1.5",
+        "1.1.6"
+      ],
+      "textbook_pages": "9",
+      "focus": "把观察、推断和预测分栏，向组员解释三者在同一个例子中的区别。"
+    },
+    {
+      "pdp": 7,
+      "date": "2027-02-23",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "使用用具和处理标本",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.1",
+        "1.2.2"
+      ],
+      "textbook_pages": "10–11, 13",
+      "focus": "使用漏斗和量筒完成指定操作，按示范安全处理样本。"
+    },
+    {
+      "pdp": 8,
+      "date": "2027-03-02",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 1,
+      "unit": "科学技能",
+      "topic": "绘制清洗与归位",
+      "sk": [
+        "1.2"
+      ],
+      "sp": [
+        "1.2.3",
+        "1.2.4",
+        "1.2.5"
+      ],
+      "textbook_pages": "12, 14",
+      "focus": "绘制并标明用具特征，完成清洗和归位后逐项核对。"
+    },
+    {
+      "pdp": 9,
+      "date": "2027-03-04",
+      "duration_minutes": 60,
+      "theme": "科学探究",
+      "unit_number": 2,
+      "unit": "科学室规则",
+      "topic": "遵守科学室规则",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "textbook_pages": "18–20",
+      "focus": "演示活动前、进行中和结束后的正确做法，说明一项违规行为的后果。"
+    },
+    {
+      "pdp": 10,
+      "date": "2027-03-16",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "人类",
+      "topic": "牙齿的种类和功能",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "textbook_pages": "24–25",
+      "focus": "根据图示指出门齿、犬齿和臼齿，为每类牙齿配对一个功能。"
+    },
+    {
+      "pdp": 11,
+      "date": "2027-03-23",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "人类",
+      "topic": "牙齿的结构",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.2"
+      ],
+      "textbook_pages": "26",
+      "focus": "标示牙齿横切图中的主要结构，并辨认保护牙齿表面的部分。"
+    },
+    {
+      "pdp": 12,
+      "date": "2027-03-30",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "人类",
+      "topic": "比较乳牙和恒牙",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.3"
+      ],
+      "textbook_pages": "27–28",
+      "focus": "从牙齿图表找出乳牙和恒牙在数目与种类上的异同。"
+    },
+    {
+      "pdp": 13,
+      "date": "2027-04-06",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "人类",
+      "topic": "保护牙齿并解释原因",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.4",
+        "3.1.5"
+      ],
+      "textbook_pages": "29–32",
+      "focus": "用流程图说明一项行为如何影响牙齿，并提出一项预防蛀牙的做法。"
+    },
+    {
+      "pdp": 14,
+      "date": "2027-04-13",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "人类",
+      "topic": "食物营养与身体功能",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1",
+        "3.2.2"
+      ],
+      "textbook_pages": "33–35",
+      "focus": "用食物卡为三种营养素配对食物及身体功能，说明一种食物可含多种营养素。"
+    },
+    {
+      "pdp": 15,
+      "date": "2027-04-20",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "人类",
+      "topic": "设计均衡的一餐",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.3",
+        "3.2.5"
+      ],
+      "textbook_pages": "36–37",
+      "focus": "参照食物金字塔画出一份菜单，说明不同食物类别如何搭配。"
+    },
+    {
+      "pdp": 16,
+      "date": "2027-04-22",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "人类",
+      "topic": "饮食不均衡的影响",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.4"
+      ],
+      "textbook_pages": "38–39",
+      "focus": "检查一份菜单，指出缺少或过量的食物并解释可能产生的一项问题。"
+    },
+    {
+      "pdp": 17,
+      "date": "2027-04-27",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "人类",
+      "topic": "食物的消化过程",
+      "sk": [
+        "3.3"
+      ],
+      "sp": [
+        "3.3.1"
+      ],
+      "textbook_pages": "40–41",
+      "focus": "参照图片说明食物在消化过程中如何被分解。"
+    },
+    {
+      "pdp": 18,
+      "date": "2027-05-04",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "人类",
+      "topic": "排列消化路径",
+      "sk": [
+        "3.3"
+      ],
+      "sp": [
+        "3.3.2"
+      ],
+      "textbook_pages": "41–43",
+      "focus": "按顺序排列消化器官图卡，并沿图示口述食物经过的路径。"
+    },
+    {
+      "pdp": 19,
+      "date": "2027-05-11",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 3,
+      "unit": "人类",
+      "topic": "营养吸收和排出残渣",
+      "sk": [
+        "3.3"
+      ],
+      "sp": [
+        "3.3.3",
+        "3.3.4"
+      ],
+      "textbook_pages": "42–44",
+      "focus": "用图示说明营养被吸收后残渣如何离开身体。"
+    },
+    {
+      "pdp": 20,
+      "date": "2027-06-10",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "动物",
+      "topic": "按动物的进食习性分类",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1"
+      ],
+      "textbook_pages": "52–53",
+      "focus": "把动物图卡按所吃的食物分组，并标明两张卡的分类依据。"
+    },
+    {
+      "pdp": 21,
+      "date": "2027-06-15",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "动物",
+      "topic": "草食肉食和杂食",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.2"
+      ],
+      "textbook_pages": "54–56",
+      "focus": "为三种进食习性各举一个动物及其常吃的食物。"
+    },
+    {
+      "pdp": 22,
+      "date": "2027-06-22",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "动物",
+      "topic": "根据食物推断动物组别",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.3",
+        "4.1.5"
+      ],
+      "textbook_pages": "53–56",
+      "focus": "根据食物记录推断陌生动物所属组别，并向同伴说明依据。"
+    },
+    {
+      "pdp": 23,
+      "date": "2027-06-24",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 4,
+      "unit": "动物",
+      "topic": "比较动物的牙齿结构",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.4",
+        "4.1.5"
+      ],
+      "textbook_pages": "57–60",
+      "focus": "比较三种动物的牙齿图，用口述或图表说明牙齿形状如何配合所吃的食物。"
+    },
+    {
+      "pdp": 24,
+      "date": "2027-06-29",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 5,
+      "unit": "植物",
+      "topic": "植物的繁殖方法",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1"
+      ],
+      "textbook_pages": "66–69",
+      "focus": "把植物图卡与对应的繁殖方法配对，口述两个例子。"
+    },
+    {
+      "pdp": 25,
+      "date": "2027-07-06",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 5,
+      "unit": "植物",
+      "topic": "植物繁殖对生物的重要性",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.2"
+      ],
+      "textbook_pages": "70–71",
+      "focus": "根据两种动物利用植物的情境，推断植物难以繁殖会带来的影响。"
+    },
+    {
+      "pdp": 26,
+      "date": "2027-07-13",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 5,
+      "unit": "植物",
+      "topic": "以两种方式繁殖一种植物",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.3"
+      ],
+      "textbook_pages": "72–74",
+      "focus": "比较蕹菜用种子及茎段繁殖的例子，记录两组起始材料和观察结果。"
+    },
+    {
+      "pdp": 27,
+      "date": "2027-07-20",
+      "duration_minutes": 60,
+      "theme": "生命科学",
+      "unit_number": 5,
+      "unit": "植物",
+      "topic": "交流植物繁殖观察",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.4"
+      ],
+      "textbook_pages": "73–76",
+      "focus": "用图画或观察记录说明一种繁殖方法，并指出观察到的变化。"
+    },
+    {
+      "pdp": 28,
+      "date": "2027-07-27",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "测量",
+      "topic": "面积和体积的单位",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.1"
+      ],
+      "textbook_pages": "80, 83",
+      "focus": "为书本封面、教室地面和空盒体积选择相应的单位。"
+    },
+    {
+      "pdp": 29,
+      "date": "2027-08-03",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "测量",
+      "topic": "测量规则图形的面积",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.2"
+      ],
+      "textbook_pages": "81",
+      "focus": "用一平方厘米方格覆盖规则图形，数出方格并记录面积。"
+    },
+    {
+      "pdp": 30,
+      "date": "2027-08-10",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "测量",
+      "topic": "估计不规则图形的面积",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.3"
+      ],
+      "textbook_pages": "82",
+      "focus": "数出完整方格并估计边缘部分，说明如何取得近似面积。"
+    },
+    {
+      "pdp": 31,
+      "date": "2027-08-12",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "测量",
+      "topic": "量出空盒子的体积",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.4"
+      ],
+      "textbook_pages": "83–85",
+      "focus": "用一立方厘米小方块填满空盒，记录所用方块数和体积。"
+    },
+    {
+      "pdp": 32,
+      "date": "2027-08-17",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "测量",
+      "topic": "测量液体的体积",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.5"
+      ],
+      "textbook_pages": "86–88",
+      "focus": "选用有刻度的量筒，把视线对准液面读数，以毫升记下结果。"
+    },
+    {
+      "pdp": 33,
+      "date": "2027-08-24",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "测量",
+      "topic": "排水法测量固体的体积",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.6"
+      ],
+      "textbook_pages": "89–90",
+      "focus": "记录物体放入水前后的体积读数，用差值计算固体的体积。"
+    },
+    {
+      "pdp": 34,
+      "date": "2027-09-07",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 6,
+      "unit": "测量",
+      "topic": "解释日常生活中的测量",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.7"
+      ],
+      "textbook_pages": "90–92",
+      "focus": "用例子说明面积和体积测量各有什么用途，并解释选用的工具与单位。"
+    },
+    {
+      "pdp": 35,
+      "date": "2027-09-14",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 7,
+      "unit": "密度",
+      "topic": "推断物体在水中的浮沉",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.1"
+      ],
+      "textbook_pages": "96–97",
+      "focus": "先预测几种物体的浮沉，再进行观察并比较实际结果。"
+    },
+    {
+      "pdp": 36,
+      "date": "2027-09-21",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 7,
+      "unit": "密度",
+      "topic": "联系浮沉和密度",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.2"
+      ],
+      "textbook_pages": "98",
+      "focus": "比较油、水与指定小物件的观察结果，说出浮沉如何反映相对密度。"
+    },
+    {
+      "pdp": 37,
+      "date": "2027-09-23",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 7,
+      "unit": "密度",
+      "topic": "增加水的密度",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.3"
+      ],
+      "textbook_pages": "99–101",
+      "focus": "逐次把食盐溶入水中，记录同一颗小番茄的浮沉变化。"
+    },
+    {
+      "pdp": 38,
+      "date": "2027-09-28",
+      "duration_minutes": 60,
+      "theme": "物理科学",
+      "unit_number": 7,
+      "unit": "密度",
+      "topic": "解释浮沉实验结果",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.4"
+      ],
+      "textbook_pages": "101–102",
+      "focus": "以标注图或表格呈现浮沉观察，引用一项记录支持解释。"
+    },
+    {
+      "pdp": 39,
+      "date": "2027-10-05",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "酸与碱",
+      "topic": "用石蕊试纸辨认酸碱中性",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1"
+      ],
+      "textbook_pages": "106–108",
+      "focus": "比较红、蓝石蕊试纸的变色情况，用记录判断教师准备的样品。"
+    },
+    {
+      "pdp": 40,
+      "date": "2027-10-12",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "酸与碱",
+      "topic": "感官描述与试纸证据",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.2"
+      ],
+      "textbook_pages": "109–111",
+      "focus": "根据课本提供的感官描述和试纸结果对照分类，指出仅凭感官描述的局限。"
+    },
+    {
+      "pdp": 41,
+      "date": "2027-10-19",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "酸与碱",
+      "topic": "探索其他酸碱指示材料",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.3"
+      ],
+      "textbook_pages": "113–114",
+      "focus": "使用教师准备的植物指示液和样品，记录颜色并与石蕊结果比较。"
+    },
+    {
+      "pdp": 42,
+      "date": "2027-10-21",
+      "duration_minutes": 60,
+      "theme": "材料科学",
+      "unit_number": 8,
+      "unit": "酸与碱",
+      "topic": "呈现酸碱测试结果",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.4"
+      ],
+      "textbook_pages": "110–114",
+      "focus": "用表格报告酸性、碱性和中性样品各一例，并说明分类证据。"
+    },
+    {
+      "pdp": 43,
+      "date": "2027-10-26",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 9,
+      "unit": "太阳系",
+      "topic": "辨认太阳系的成员",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.1"
+      ],
+      "textbook_pages": "118–120",
+      "focus": "根据图示说出太阳系中的太阳、行星与其他成员，并辨认各一个例子。"
+    },
+    {
+      "pdp": 44,
+      "date": "2027-11-02",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 9,
+      "unit": "太阳系",
+      "topic": "排列行星并比较温度",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.2"
+      ],
+      "textbook_pages": "121",
+      "focus": "从太阳向外排列八颗行星，依据书中资料比较行星表面温度。"
+    },
+    {
+      "pdp": 45,
+      "date": "2027-11-09",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 9,
+      "unit": "太阳系",
+      "topic": "轨道与公转时间",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.3",
+        "9.1.4"
+      ],
+      "textbook_pages": "122–124",
+      "focus": "用模型演示行星沿各自轨道绕太阳运转，并根据表格比较两颗行星的公转时间。"
+    },
+    {
+      "pdp": 46,
+      "date": "2027-11-16",
+      "duration_minutes": 60,
+      "theme": "地球与宇宙",
+      "unit_number": 9,
+      "unit": "太阳系",
+      "topic": "汇报太阳系的观察",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.5"
+      ],
+      "textbook_pages": "122–124",
+      "focus": "画出两条不同的轨道，标明行星并向同伴解释轨道与公转时间的关系。"
+    },
+    {
+      "pdp": 47,
+      "date": "2027-11-23",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 10,
+      "unit": "机械",
+      "topic": "定滑轮的用途与生活例子",
+      "sk": [
+        "10.1"
+      ],
+      "sp": [
+        "10.1.1",
+        "10.1.2",
+        "10.1.3"
+      ],
+      "textbook_pages": "129–132",
+      "focus": "使用定滑轮模型改变拉力的方向，举出一个生活中的应用。"
+    },
+    {
+      "pdp": 48,
+      "date": "2027-11-30",
+      "duration_minutes": 60,
+      "theme": "工艺与优质生活",
+      "unit_number": 10,
+      "unit": "机械",
+      "topic": "制作与说明滑轮模型",
+      "sk": [
+        "10.1"
+      ],
+      "sp": [
+        "10.1.4",
+        "10.1.5"
+      ],
+      "textbook_pages": "133–134",
+      "focus": "设计可运作的滑轮模型，用它提起小物件并说明绳子和滑轮如何配合。"
+    }
+  ]
+}
