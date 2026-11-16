@@ -37,6 +37,13 @@ def pair_numbers(year, number):
     return _pair_numbers().get((year, number))
 
 
+def sources_approved(year, pair):
+    if year != 5:
+        return True
+    from web.english_y5_standalone_runtime import approved_for_telegram
+    return all(approved_for_telegram(number) for number in pair)
+
+
 def teaching_date():
     return datetime.now(ZoneInfo("Asia/Kuala_Lumpur")).date()
 

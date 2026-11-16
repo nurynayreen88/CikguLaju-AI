@@ -363,6 +363,8 @@ def create_native_rph_blueprint(runtime):
             pair = integrated.plan_for_selection(year, number, unit)
             if pair is None:
                 return jsonify({"error": "Paired English RPH unavailable"}), 404
+            if not integrated.sources_approved(year, pair):
+                return jsonify({"error": "English Year 5 RPH sources pending approval"}), 503
             if fmt == "metadata":
                 return jsonify({"lessons": list(pair)})
             if fmt == "pbd":

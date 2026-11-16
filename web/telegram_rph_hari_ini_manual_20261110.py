@@ -103,6 +103,8 @@ def _integrated_plan(rt, cid, entry, row):
 def _generate_integrated(rt, cid, entry, row, plan):
     from web import english_integrated_rph_2027 as integrated
     today, year, number, pair = plan
+    if not integrated.sources_approved(year, pair):
+        return {"ok": False, "reason": "Sumber RPH English Year 5 belum diluluskan"}
     state = rt.state.setdefault(cid, {})
     snapshot = dict(state)
     try:
