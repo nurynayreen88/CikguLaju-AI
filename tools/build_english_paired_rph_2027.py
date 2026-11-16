@@ -131,30 +131,38 @@ def build_sheet(out, year, week, group_a, group_b, slot, lessons):
     run.font.size = Pt(9)
     run.font.color.rgb = RGBColor.from_string(TEAL)
     p = document.add_paragraph()
-    run = p.add_run(f"Lesson {a:03d} + {b:03d}")
+    run = p.add_run(topic)
     run.bold = True
     run.font.size = Pt(26)
     p.paragraph_format.space_after = Pt(3)
-    document.add_paragraph(topic).runs[0].bold = True
+    labelled(document.add_paragraph(), "SOW references", f"Lesson {a:03d} + {b:03d}")
     document.add_paragraph(f"Week {week:02d} · Session {slot} · 60 minutes   |   Group A {group_a} · Group B {group_b}")
     document.add_paragraph("Class ____________   Date ____________   Time ____________   Attendance ____ / ____")
-    for half, (number, row, task, evidence, materials) in enumerate(lessons):
-        start = 30 * half
-        band(document, f"Lesson {number:03d} · {row['focus']}", f"{start}–{start + 30} min")
+
+    band(document, "Curriculum and materials", "SOW")
+    for number, row, _, _, _ in lessons:
         main, complementary = row["main_ls"], row["complementary_ls"]
         p = document.add_paragraph()
-        p.paragraph_format.space_before = Pt(7)
-        labelled(p, "SK/SP", f"Main {main.rsplit('.',1)[0]} / {main}  ·  Complementary {complementary.rsplit('.',1)[0]} / {complementary}")
-        labelled(document.add_paragraph(), "Materials / reference", materials)
-        labelled(document.add_paragraph(), "Set induction (4 min)", "Model a brief example from the task and check understanding of the instruction.")
-        labelled(document.add_paragraph(), "Main activity (19 min)", task)
-        labelled(document.add_paragraph(), "PBD (5 min)", "Check during the task and confirm at the end. " + evidence)
-        close = "Keep the relevant picture, text or notes for the next Lesson."
-        if half == 1:
-            close = "Invite a pupil to share one answer and identify a point for follow-up."
-        labelled(document.add_paragraph(), "Closure (2 min)", close)
-    p = document.add_paragraph()
-    labelled(p, "Reflection", f"{a:03d} ____ / ____ met the target.   {b:03d} ____ / ____ met the target.")
+        labelled(
+            p, f"SK/SP · {number:03d}",
+            f"Main {main.rsplit('.', 1)[0]} / {main}  ·  Complementary {complementary.rsplit('.', 1)[0]} / {complementary}",
+        )
+    materials = " · ".join(dict.fromkeys(lesson[4] for lesson in lessons))
+    labelled(document.add_paragraph(), "Materials", materials)
+
+    band(document, "Teaching and learning", "60 minutes")
+    labelled(document.add_paragraph(), "Set induction (5 min)", f"Show a prompt from the {topic.rstrip('.!?')} materials. Elicit relevant words and model one response.")
+    p = document.add_paragraph("Main activities (43 min)")
+    p.runs[0].bold = True
+    for number, (_, _, task, _, _) in enumerate(lessons, 1):
+        labelled(document.add_paragraph(), f"Activity {number}", task)
+    p = document.add_paragraph("PBD (8 min)")
+    p.runs[0].bold = True
+    p.add_run("  Collect evidence across both activities and confirm one response from each pupil during the session.")
+    for number, (_, _, _, evidence, _) in enumerate(lessons, 1):
+        labelled(document.add_paragraph(), f"Activity {number}", evidence)
+    labelled(document.add_paragraph(), "Closure (4 min)", "Invite pupils to share a response from the activities and recap one useful example from the session.")
+    labelled(document.add_paragraph(), "Reflection", "Activity 1 ____ / ____ met the target.   Activity 2 ____ / ____ met the target.")
     document.add_paragraph("Follow-up _________________________________________________________________")
     document.save(out / f"RPH_English_SK_2027_Y{year}_L{a:03d}-{b:03d}.docx")
 

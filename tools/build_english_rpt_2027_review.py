@@ -128,7 +128,7 @@ def frame(canvas, year, section, title, detail):
     write_text(canvas, detail, 34, HEIGHT - 84, size=9, color=MUTED)
     canvas.setStrokeColor(LINE)
     canvas.line(34, 37, WIDTH - 34, 37)
-    write_text(canvas, "One 60-minute session per teaching day. Paired Lessons share a session, 30 minutes each.",
+    write_text(canvas, "One 60-minute session per teaching day. Paired SOW references share one integrated plan.",
                34, 22, size=7.5, color=MUTED)
     write_text(canvas, str(canvas.getPageNumber()), WIDTH - 50, 22, size=8, bold=True)
 
@@ -181,8 +181,8 @@ def cover(canvas, year):
         "Week 18: 9–13 May (A), 10–14 May (B). Use for school assessment or the available English sessions.",
         "Week 19 (Aidiladha and Wesak): 0 planned Lessons. Week 39 (Deepavali): up to two available sessions.",
         "Week 20: three sessions across three school days. Plan up to four sessions on different days in a full week.",
-        "Each paired session covers two consecutive SOW Lessons in order, with 30 minutes for each Lesson.",
-        "Use the main task and check learning for each half. Allow extra practice when pupils need it.",
+        "Each pair uses one 60-minute RPH with activities drawn from two consecutive SOW Lessons.",
+        "Use one introduction and one closure. Check evidence for both sets of learning standards.",
         "Confirm the plan against class slots, local holidays and the school's assessment dates.",
         "Sources: KPM calendar, BKPP holidays and English SK SOW. Paired sessions are a teaching adaptation.",
     )
@@ -227,7 +227,7 @@ def calendar_page(canvas, year, weeks, notes, title):
          "Week 18: use available English slots before assessment. Week 20: three sessions on separate days.")
         if weeks[0][0] == 1 else
         ("Week 35: three sessions in the shared plan. Week 39: two sessions around Deepavali.",
-         "A pair such as 021+022 is taught in one 60-minute session on a single school day.",
+         "A pair such as 021+022 refers to one RPH with combined activities in one session.",
          "Use the school's assessment timetable when assigning the final English sessions.")
     )
     for index, note in enumerate(local_notes):
@@ -267,11 +267,11 @@ def build(year, out):
             lessons = [n for _, session in group for n in session]
             week_rows = []
             for slot, session in group:
-                for half, n in enumerate(session):
+                for n in session:
                     topic, standards, references = rows[n]
                     label = f"Session {slot} · 60 min"
                     if len(session) == 2:
-                        label = f"Session {slot} · {30 * half}–{30 * (half + 1)} min"
+                        label = f"Session {slot} · RPH {session[0]:03d}+{session[1]:03d}"
                     week_rows.append(([topic[0], label, *topic[1:]], standards, references))
             frame(pdf, year, "DATED LESSONS", f"Week {week:02d}  ·  {lesson_range(lessons)}", detail)
             draw_rows(pdf, week_rows)
