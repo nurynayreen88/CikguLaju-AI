@@ -1415,8 +1415,11 @@ function currentRphLessonKey(){
                         currentLessonSourceUnit(),topic.value,lesson.value,
                         subject.value==="PJPK"?component.value:""]);
 }
+function dlpYear6Mathematics(){
+ return curriculum.value==="dlp"&&year.value==="6"&&subject.value==="MATH_DLP";
+}
 function currentRphParams(){
- if(curriculum.value!=="kssr"||!/^[1-6]$/.test(year.value)||!subject.value||!unit.value||!lesson.value)return null;
+ if((curriculum.value!=="kssr"&&!dlpYear6Mathematics())||!/^[1-6]$/.test(year.value)||!subject.value||!unit.value||!lesson.value)return null;
  if(subject.value==="BM"&&(!theme.value||!topic.value))return null;
  if(!teacherClass.checkValidity()||!teacherDate.checkValidity()||
     !teacherTimeStart.checkValidity()||!teacherTimeEnd.checkValidity()||
@@ -1442,7 +1445,7 @@ function resetRphPreview(){
   teacherReflection.value="";
   teacherReflection.closest("details").open=false;
  }
- document.getElementById("teacher-info").hidden=curriculum.value!=="kssr"||!lesson.value;
+ document.getElementById("teacher-info").hidden=(curriculum.value!=="kssr"&&!dlpYear6Mathematics())||!lesson.value;
  const actions=document.getElementById("rph-download-actions");
  const available=canGenerateRph()&&!!currentRphParams()&&verifiedRphKey===currentRphLessonKey();
  actions.hidden=!available;
@@ -1730,7 +1733,7 @@ year.addEventListener("change",async()=>{
  if(choice==="dlp"){
   if(!curriculumYears.dlp.some(option=>option.value===targetYear))return;
   fillSelect(subject,dlpSubjectOptions.map(({value,label})=>({
-   value,label:label+" — "+(targetYear==="2"?dlpReviewData[value].reduce((total,group)=>total+group.lessons.length,0)+" RPH":"Dalam Penyediaan")
+   value,label:label+" — "+(targetYear==="2"?dlpReviewData[value].reduce((total,group)=>total+group.lessons.length,0)+" RPH":targetYear==="6"&&value==="MATH_DLP"?"RPH 2027":"Dalam Penyediaan")
   })),"Pilih Subjek");
   showStep(subject,true);
   updateSelectionHelp(targetYear==="2"?"Pilih subjek untuk lihat RPH DLP Tahun 2.":"Pilih subjek DLP.");
@@ -1780,7 +1783,13 @@ subject.addEventListener("change",async()=>{
  if(curriculum.value==="dlp"){
   const selectedSubject=variant;
   if(!selectedSubject||!curriculumYears.dlp.some(option=>option.value===targetYear))return;
-  if(targetYear==="2"){
+  if(dlpYear6Mathematics()){
+   try{
+    await fillForSelection(unit,"units",{subject:code},"Pilih Unit",
+      ()=>dlpYear6Mathematics()&&year.value===targetYear&&subject.value===code);
+    if(dlpYear6Mathematics())showStep(unit,true);
+   }catch(error){if(dlpYear6Mathematics())catalogStatus.textContent=error.message;}
+  }else if(targetYear==="2"){
    fillSelect(unit,dlpReviewData[code].map(group=>({value:group.id,label:group.title})),"Pilih Unit");
    showStep(unit,true);
    updateSelectionHelp("Pilih unit dan tajuk untuk baca RPH.");
@@ -1838,7 +1847,7 @@ unit.addEventListener("change",async()=>{
  resetSelect(topic,"Pilih Tajuk");resetSelect(lesson,"Pilih Lesson/PdP");
  showStep(topic,code==="BM"&&!!selected);showStep(lesson,code!=="BM"&&!!selected);
  resetMaterials();resetRphPreview();displayBookReference();
- if(curriculum.value==="dlp"){
+ if(curriculum.value==="dlp"&&!dlpYear6Mathematics()){
   showDlpReview(null);
   const group=targetYear==="2"&&dlpReviewData[code]?.find(row=>row.id===selected);
   showStep(lesson,!!group);
@@ -1873,7 +1882,7 @@ topic.addEventListener("change",async()=>{
 });
 lesson.addEventListener("change",()=>{
  resetMaterials();resetRphPreview();showRphAction();displayBookReference();
- if(curriculum.value==="dlp"){
+ if(curriculum.value==="dlp"&&!dlpYear6Mathematics()){
   const group=year.value==="2"&&dlpReviewData[subject.value]?.find(row=>row.id===unit.value);
   showDlpReview(group?group.lessons.find(row=>row.id===lesson.value):null);
   updateSelectionHelp(lesson.value?"RPH untuk semakan guru.":"Pilih tajuk RPH.");

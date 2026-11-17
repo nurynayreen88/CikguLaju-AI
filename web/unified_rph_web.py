@@ -31,6 +31,7 @@ SUBJECT_LABELS = {
     "ENGLISH": "Bahasa Inggeris",
     "BM": "Bahasa Melayu",
     "MATH": "Matematik",
+    "MATH_DLP": "Mathematics (DLP)",
     "SCIENCE": "Sains",
     "PI": "Pendidikan Islam",
     "PJPK": "PJPK",
@@ -699,7 +700,7 @@ def create_blueprint():
                 "year": year, "subject": subject, "unit": unit,
                 "lesson": int(token), "teacher": teacher,
             }, None
-        if subject in ("MATH", "SCIENCE"):
+        if subject in ("MATH", "SCIENCE", "MATH_DLP"):
             from web.native_telegram_sequence_rph_client import (
                 verified_native_sequence_available, NativeRPHUnavailable,
             )

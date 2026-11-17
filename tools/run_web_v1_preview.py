@@ -136,6 +136,18 @@ def options():
             return jsonify({"error": "invalid option kind"}), 400
         if kind == "components":
             return jsonify(component_options(request.args.get("subject", "")))
+        if request.args.get("subject") == "MATH_DLP" and kind in ("units", "pdp"):
+            from web.native_telegram_sequence_rph_client import (
+                list_native_units, list_native_lessons, NativeRPHUnavailable,
+            )
+            if year != 6 or request.args.get("component"):
+                return jsonify({"error": "Invalid Mathematics DLP selection"}), 400
+            try:
+                options = (list_native_units(year, "MATH_DLP") if kind == "units"
+                           else list_native_lessons(year, "MATH_DLP", request.args.get("unit", "")))
+            except (NativeRPHUnavailable, ValueError):
+                return jsonify({"error": "Sumber Mathematics DLP Year 6 belum tersedia."}), 503
+            return jsonify(options)
         # A versioned Web copy is opt-in and is never misrepresented as the
         # active Telegram database. Accounts/quota still use shared Supabase.
         catalog_mode = os.environ.get("CIKGULAJU_WEB_CATALOG_MODE", "telegram-api")
@@ -307,7 +319,10 @@ def options():
                         if component not in (None, ""):
                             return jsonify({"error": "invalid component"}), 400
                         try:
-                            source_units = list_native_units(year, subject)
+                            source_units = (list_native_units(
+                                year, subject, current_unit=request.args.get("unit", ""))
+                                if (year, subject) == (5, "SCIENCE") and kind == "pdp"
+                                else list_native_units(year, subject))
                             if subject == "MATH":
                                 from web.math_unit_groups import (
                                     grouped_math_units, matched_math_tokens,
