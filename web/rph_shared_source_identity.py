@@ -12,9 +12,22 @@ PJPK_MANIFEST = "rpt_2027/pjpk/pjpk_2027_rpt_manifest.json"
 MAX_SOURCE_BYTES = 2_500_000
 
 
-def source_paths(year, subject, lesson, component=None):
+def source_paths(year, subject, lesson, component=None, *, variant=None):
     if type(year) is not int or type(lesson) is not int:
         return None
+    if variant is not None:
+        if subject != "MORAL" or component is not None:
+            return None
+        from web.moral_rpt_rph_source import VARIANT, load_plan
+        plan = load_plan(year, lesson) if variant == VARIANT else None
+        if plan is None:
+            return None
+        return (
+            plan["path"],
+            "web/moral_rpt_rph_source.py",
+            f"rpt_2027/pendidikan_moral/year{year}_sequence_96_2027_groupA_STAGING.csv",
+            f"rpt_2027/pendidikan_moral/year{year}_crosswalk_DSKP.json",
+        )
     if year == 1 and subject == "ENGLISH" and component is None:
         from web.english_y1_kssr_rph import PLANS
         if lesson in PLANS:
@@ -57,9 +70,9 @@ def source_paths(year, subject, lesson, component=None):
     return None
 
 
-def source_fingerprint(year, subject, lesson, component=None, *, root=ROOT):
+def source_fingerprint(year, subject, lesson, component=None, *, root=ROOT, variant=None):
     """A digest of exact source bytes, not a generic topic/RPT identifier."""
-    paths = source_paths(year, subject, lesson, component)
+    paths = source_paths(year, subject, lesson, component, variant=variant)
     if not paths:
         return None
     base = Path(root).resolve()

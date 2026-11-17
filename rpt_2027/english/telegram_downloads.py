@@ -164,7 +164,7 @@ def install(ns):
             if moral_combined_pdf_ready(year):
                 kb.append([{"text": "📥 Pendidikan Moral (PDF)",
                             "callback_data": "rpt2027_pm_ab_pdf_%d" % year}])
-                kb.append([{"text": "📘 Pendidikan Moral • RPH Pengukuhan",
+                kb.append([{"text": "📘 Pendidikan Moral • RPH mengikut RPT",
                             "callback_data": "moral_supp_menu_%d" % year}])
             if psv_pdf_ready(year):
                 kb.append([{"text": "📥 Pendidikan Seni Visual (PDF)",

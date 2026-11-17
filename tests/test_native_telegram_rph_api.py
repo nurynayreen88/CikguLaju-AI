@@ -109,6 +109,28 @@ class NativeRPHBridgeTests(unittest.TestCase):
         return self.client.post("/internal/rph/v1/render",json=p or payload(),
                                 headers={"Authorization":"Bearer "+token})
 
+    def test_moral_session_four_cannot_render_the_legacy_core_four(self):
+        from web.moral_rpt_rph_source import STATE_KEY, VARIANT, load_plan
+        from web.pendidikan_moral_80_runtime import adapt_rows
+        from web.rph_shared_source_identity import source_fingerprint
+
+        plan = load_plan(2, 4)
+        body = payload("pdf")
+        body.update(subject="MORAL", year=2, lesson=4, unit=plan["unit"], source_variant=VARIANT,
+                    source_digest=source_fingerprint(2, "MORAL", 4, variant=VARIANT))
+        body["layout"]["activity_header"] = [
+            "Fasa / Masa", "Aktiviti Pengajaran & Pembelajaran", "Catatan"]
+        self.runtime.CIKGULAJU_MORAL_80_ACTIVE = True
+        self.assertEqual(self._post(body).status_code, 200)
+        state = self.runtime.calls[-1][1]
+        self.assertEqual(state[STATE_KEY], 4)
+        rows = adapt_rows(state, {})
+        self.assertIn("Kepatuhan Kepada Ajaran Agama", rows["TAJUK"])
+        self.assertIn("1.1", rows["STANDARD PEMBELAJARAN"])
+        incompatible = dict(body, source_digest=source_fingerprint(2, "MORAL", 4))
+        self.assertEqual(self._post(incompatible).status_code, 400)
+        self.assertEqual(self._post(dict(body, unit=load_plan(2, 7)["unit"])).status_code, 400)
+
     def test_disabled_and_invalid_bearer_fail_closed(self):
         with patch.dict(os.environ,{"CIKGULAJU_WEB_NATIVE_RPH_ENABLED":"0"}):
             self.assertEqual(self._post().status_code,503)

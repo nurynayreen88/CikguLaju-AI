@@ -9,7 +9,8 @@ import csv
 import json
 import re
 from pathlib import Path
-from tempfile import TemporaryDirectory
+from tempfile import TemporaryDirectory, gettempdir
+from uuid import uuid4
 
 BASE = Path(__file__).resolve().parents[2]
 ROOT = Path(__file__).resolve().parent
@@ -18,6 +19,7 @@ RPT_PREFIX = "rpt2027_pm_96_"
 RPH_PDF_PREFIX = "rpt2027_pm_rph54_pdf_"
 RPH_DOCX_PREFIX = "rpt2027_pm_rph54_docx_"
 RPH_MENU_PREFIX = "moral_supp_menu_"
+RPT_RPH_PREFIX = "moral_rpt_rph:"
 PHASE_NAMES = ("Set induksi", "Aktiviti 1", "Aktiviti 2",
                "Pengukuhan/Pentaksiran PBD", "Penutup")
 
@@ -396,6 +398,89 @@ def build_rph_docx(year, destination):
     return dest
 
 
+def _rpt_session_callback(ns, cid, action):
+    from html import escape
+    from web.moral_rpt_rph_source import STATE_KEY, load_plan
+
+    send = ns["send"]
+    match = re.fullmatch(r"moral_rpt_rph:([2-6]):(\d{1,2}):(\d{1,2}):(menu|pdf|word)", action)
+    if not match:
+        return send(cid, "Pilihan sesi RPT Pendidikan Moral tidak sah.")
+    year, unit, number = map(int, match.groups()[:3])
+    fmt = match[4]
+    try:
+        allowed = bool(ns["_is_admin"](cid) or ns["_access_info"](cid).get("active"))
+    except Exception:
+        allowed = False
+    if not allowed:
+        return send(cid, "Pilihan RPH melalui RPT tersedia untuk Rakan Pembangun dan pelanggan aktif.")
+    def button(label, u=0, n=0, f="menu"):
+        return {"text": label, "callback_data": f"{RPT_RPH_PREFIX}{year}:{u}:{n}:{f}"}
+
+    if fmt == "menu":
+        plans = [p for n in range(1, 97) if (p := load_plan(year, n)) is not None]
+        if not plans:
+            return send(cid, "Sumber sesi RPT Pendidikan Moral tahun ini belum tersedia.")
+        if unit == number == 0:
+            units = {p["unit_no"]: p["unit"] for p in plans}
+            return send(cid, f"<b>RPH Pendidikan Moral Tahun {year} — RPT 2027</b>\nPilih unit.",
+                        [[button(title[:64], u)] for u, title in units.items()] +
+                        [[{"text": "Kembali", "callback_data": f"moral_supp_menu_{year}"}]])
+        if unit and not number:
+            options = [[button(p["label"][:64], unit, p["number"])] for p in plans if p["unit_no"] == unit]
+            if options:
+                return send(cid, "Pilih nombor PdP dalam RPT.", options + [[button("Kembali")]])
+        plan = load_plan(year, number)
+        if plan and plan["unit_no"] == unit:
+            return send(cid, escape(plan["label"]), [
+                [button("Word", unit, number, "word"), button("PDF", unit, number, "pdf")],
+                [button("Kembali", unit)],
+            ])
+        return send(cid, "PdP ini tidak sepadan dengan unit RPT.")
+    plan = load_plan(year, number)
+    if not plan or plan["unit_no"] != unit:
+        return send(cid, "PdP ini tidak sepadan dengan unit RPT.")
+    render = ns.get("create_word_file" if fmt == "word" else "create_pdf_file")
+    if not callable(render) or not ns.get("CIKGULAJU_MORAL_80_ACTIVE"):
+        return send(cid, "Penjana RPH Pendidikan Moral belum tersedia.")
+    state = {
+        STATE_KEY: number, "subject": "Pendidikan Moral", "year": f"Tahun {year}",
+        "topic": plan["title"], "lesson_no": number, "pdp_no": number,
+        "task": "rph",
+    }
+    ai_text = "\n".join(f"{key}:\n{value}\n" for key, value in plan["fields"].items())
+    prefix = "moral" + uuid4().hex
+    path = None
+    try:
+        path = Path(render(state, ai_text, prefix)).resolve(strict=True)
+        if path.parent != Path(gettempdir()).resolve() or not path.name.startswith(prefix + "_"):
+            raise ValueError("Unexpected Moral output path")
+        with path.open("rb") as result:
+            expected = b"%PDF" if fmt == "pdf" else b"PK\x03\x04"
+            if result.read(4) != expected or path.stat().st_size < 1000:
+                raise ValueError("Invalid Moral RPH output")
+        if fmt == "word":
+            from web.native_rph_telegram_api import compact_web_word_notes
+            path.write_bytes(compact_web_word_notes(path.read_bytes()))
+        with TemporaryDirectory(prefix="cikgulaju_moral_rpt_") as temp:
+            suffix = "docx" if fmt == "word" else "pdf"
+            target = Path(temp) / f"RPH_Pendidikan_Moral_Tahun_{year}_PdP_{number:03d}.{suffix}"
+            path.replace(target)
+            delivered = ns["send_document"](cid, str(target), plan["title"])
+            verify = ns.get("_telegram_delivery_ok_v25279")
+            ok = (bool(verify(delivered)) if callable(verify) else
+                  bool(getattr(delivered, "ok", False) and delivered.json().get("ok") is True))
+            if not ok:
+                return send(cid, "Telegram belum mengesahkan penghantaran RPH. Cuba lagi.")
+            return delivered
+    except (OSError, ValueError, TypeError, RuntimeError) as exc:
+        print("Moral RPT session download failed:", type(exc).__name__, flush=True)
+        return send(cid, "RPH bagi sesi RPT ini belum dapat dijana. Cuba lagi.")
+    finally:
+        if path and path.parent == Path(gettempdir()).resolve() and path.name.startswith(prefix + "_"):
+            path.unlink(missing_ok=True)
+
+
 def install(ns):
     """Wrap only new Moral actions and retain old callbacks and entitlements."""
     if ns.get("CIKGULAJU_MORAL_96_DOWNLOADS_INSTALLED"):
@@ -407,6 +492,8 @@ def install(ns):
     send = ns["send"]
     def callback(cid, data):
         action = str(data or "")
+        if action.startswith(RPT_RPH_PREFIX):
+            return _rpt_session_callback(ns, cid, action)
         kind, group, raw_year = None, None, None
         if action.startswith(RPH_MENU_PREFIX):
             raw_year = action[len(RPH_MENU_PREFIX):]
@@ -447,7 +534,9 @@ def install(ns):
                         "📘 <b>RPH Pengukuhan Pendidikan Moral Tahun %d</b>\n\n"
                         "54 sesi pengukuhan. Pilih format bahan yang ingin dimuat turun. "
                         "RPH teras masih dijana seperti biasa melalui Sediakan Bahan PdP." % year,
-                        [[{"text": "📄 Muat turun PDF", "callback_data": RPH_PDF_PREFIX + str(year)}],
+                        [[{"text": "Pilih PdP dalam RPT 2027",
+                           "callback_data": f"{RPT_RPH_PREFIX}{year}:0:0:menu"}],
+                         [{"text": "📄 Muat turun PDF", "callback_data": RPH_PDF_PREFIX + str(year)}],
                          [{"text": "📝 Muat turun Word", "callback_data": RPH_DOCX_PREFIX + str(year)}],
                          [{"text": "⬅️ Kembali ke Tahun %d" % year, "callback_data": "rpt2027_year_%d" % year}],
                          [{"text": "🏠 Menu Utama", "callback_data": "home"}]])
