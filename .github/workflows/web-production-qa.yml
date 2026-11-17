@@ -23,6 +23,9 @@ on:
       - 'rph_standalone/**'
   pull_request:
     paths:
+      - 'rph_standalone/english/year5/**'
+      - 'web/english_y5_standalone_runtime.py'
+      - 'web/english_y5_fixed_draft_preview_runtime.py'
       - 'web/pbd_*.py'
       - 'web_v1_static_preview/pbd.*'
       - 'tests/test_web_pbd.py'
@@ -53,6 +56,7 @@ jobs:
           node --check web_v1_static_preview/pbd.js
           python -m unittest discover -s tests -p 'test_web_production_inventory.py' -v
           python -m unittest discover -s tests -p 'test_web_unified_rph_preview.py' -v
+          python -m unittest discover -s tests -p 'test_web_english_integrated_rph_2027.py' -v
           python -m unittest discover -s tests -p 'test_web_v1_quick_preview.py' -v
           python -m unittest discover -s tests -p 'test_web_saved_classes.py' -v
           python -m unittest discover -s tests -p 'test_web_teacher_avatar_picker.py' -v
