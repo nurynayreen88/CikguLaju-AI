@@ -93,3 +93,7 @@ Semakan semula pada 17 November merujuk [Web produksi `f5668622472a`](https://gi
 - RPT Mathematics DLP Year 2–6 telah diterbitkan melalui [Web #908](https://github.com/nurynayreen88/CikguLaju-AI/pull/908) dan [Telegram #909](https://github.com/nurynayreen88/CikguLaju-AI/pull/909). Kesemua 378 sesi berakhir M38, dengan 96 jam setiap tahun. Dua siri RPT DLP Year 2–6 kini berakhir M38.
 - RPH DLP Year 2 mempunyai 63 Science dan 78 Mathematics. Draf Year 3 masih dalam semakan guru melalui [Science #886](https://github.com/nurynayreen88/CikguLaju-AI/pull/886) dan [Mathematics #773](https://github.com/nurynayreen88/CikguLaju-AI/pull/773).
 - [Science DLP Year 4 #911](https://github.com/nurynayreen88/CikguLaju-AI/pull/911) menyediakan kesemua 69 RPH untuk semakan guru. Set merangkumi 59 Lesson, 10 Review, 92 kod LS dan 64 jam, dengan semakan satu halaman A4 bagi Word dan PDF.
+
+### PJPK SK Tahun 2–6
+
+[Web #914](https://github.com/nurynayreen88/CikguLaju-AI/pull/914) dan [Telegram #913](https://github.com/nurynayreen88/CikguLaju-AI/pull/913) menyelaraskan kelima-lima RPT PJPK dan cadangan RPH Pantas. Semua 339 PdP mengekalkan nombor, komponen dan turutan asal. PdP berakhir M38. M18 dikhaskan untuk pentaksiran. Tahun 2 menggunakan dua slot PJ pada M17 dan M38, dan Tahun 3 pada M17, M37 dan M38. Kedua-dua binaan aktif dan ujian CI lulus. Baki kerja takwim SK ialah **25 RPT dengan 269 PdP bernombor selepas M39**.
