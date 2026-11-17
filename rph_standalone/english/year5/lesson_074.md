@@ -1,25 +1,16 @@
-# English Year 5 — Lesson 74 (Writing 13)
+# English Year 5 Lesson 74 — Writing 13
 
-**Status:** DRAF — pending full source audit. **Topic:** Learning World. **Main LS:** Writing 4.3.2. **Complementary LS:** Listening 1.3.1. **Time:** 60 minutes (suggested).
+**Official SOW topic:** Learning World.
+**Official SOW:** Lesson 74, printed p.112. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Writing 4.3.2 and Listening 1.3.1.
+**Materials:** English Plus 1 SB p.45 Activities 1–3, TB p.59, CD1.41, verb cards and Workbook p.37 Exercise 2.
+**Learning objectives:** Pupils infer two action words from what they hear and spell three -ing forms correctly in independently written descriptions.
 
-**Materials:** English Plus 1 SB p.45 Activities 1–3; TB p.59; CD1.41; verb flashcards. Workbook/audio contents are not independently verified; use only SOW-prescribed resources.
+1. **Set induction (8 min):** Recall actions from the school texts. Pupils use the models in SB Activity 1 to identify present continuous forms.
+2. **Activity 1 (12 min):** For SB Activity 2, pupils sort base verbs by spelling rule. The teacher checks why a final letter is dropped or doubled in selected examples.
+3. **Activity 2 (15 min):** Play CD1.41 for the sound effects in SB Activity 3. Use short spoken action descriptions if needed. Pupils infer two action words using the sounds and familiar words in the descriptions.
+4. **Activity 3 (17 min):** Pupils take turns miming actions. Observers independently write three sentences about what they see and check the -ing forms after writing.
+5. **Closure (8 min):** Compare two spellings and explain the rules. If time permits, pupils describe one picture in Workbook p.37 Exercise 2.
 
-**Learning objectives:** Main (Writing 4.3.2) — pupils spell a range of high-frequency words accurately in independent writing in the Learning World activities. Complementary (Listening 1.3.1) — pupils guess the meaning of unfamiliar words from clues provided by other known words in the linked listening task.
-
-**Set induction (5 min):** Pupils recall facts about schools around the world from the previous reading.
-
-**Activity 1 (15 min):** Pupils identify present continuous sentences from three school texts in Activity 1. Teacher guides pupils through affirmative, negative and spelling rules.
-
-**Activity 2 (15 min):** Using verb cards walk, skate, run, sing, dance and swim, pupils select the correct -ing spelling rules and complete Activity 2.
-
-**Activity 3 (15 min):** Pupils listen to CD1.41 for Activity 3 and infer actions from environmental sounds. Pairs mime and describe actions using present continuous sentences.
-
-**PBD (5 min):** Pupils write two accurate present continuous descriptions after listening or watching a mime. Teacher checks verb spelling and meaning.
-
-**Closure (5 min):** Pairs write and hold up present continuous sentences about a classmate's action.
-
-**Differentiation:** Offer verb-spelling rule cards; extend with correct negative sentences.
-
-**Verification:** Official Year 5 SOW outline checked; full material audit and teacher approval pending before READY.
-
-**Workbook (existing source QA map):** p.37, Unit 4 Language Focus — Present continuous affirmative/negative, Ex1-4. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Check two inferred words with a relevant hearing clue and three correct -ing spellings in the pupil’s own sentences.
+**Differentiation:** Show the verb endings in groups. Ask confident pupils to use a new verb and explain its spelling rule.

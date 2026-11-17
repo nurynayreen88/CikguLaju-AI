@@ -1,21 +1,17 @@
-# English Year 5 — Standalone RPH — Lesson 002 (Speaking 1)
+# English Year 5 Lesson 2 — Speaking 1
 
-**Status:** DRAF — final visual/audio and A4 QA pending. **Topic:** Free time (Starter Unit). **Main LS:** Speaking 2.1.1. **Complementary LS:** Writing 4.2.1. **Duration:** 60 minutes.
+**Official SOW topic:** Free time.
+**Official SOW:** Lesson 2, printed p.36. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Speaking 2.1.1 and Writing 4.2.1.
+**Materials:** English Plus 1 SB p.4 Activities 3–5 and p.5 Activities 1, 2 and 4, TB pp.18–19, CD1.04 and WB p.5 Ex6.
+**Learning objectives:** Pupils give detailed information about their hobbies and interests in a dialogue and in writing.
+**Success criteria:** Share three spoken details and write six relevant personal sentences about hobbies and interests.
 
-**Materials:** English Plus 1 Student's Book p.4 Activities 3–5, p.5 Activities 1, 2 and 4; Teacher's Book p.18; CD1.04; Workbook p.5 Starter Language Focus, Ex1–6 (existing QA mapping, optional).
+1. **Set induction (8 min):** Use a stand or sit game to check whether statements about hobbies are true for each pupil.
+2. **Activity 1 (12 min):** Play CD1.04 for SB p.4 Activity 3. Pupils complete the speakers’ phrases and compare which details they heard.
+3. **Activity 2 (14 min):** Pupils write six statements for SB p.4 Activity 4. Briefly review forms of be and possessive adjectives in SB p.5 Activities 1, 2 and 4 before pupils refine their sentences.
+4. **Activity 3 (18 min):** In SB p.4 Activity 5, pupils adapt the dialogue with their own details, ask a partner about another interest and switch roles. If time permits, pupils complete Workbook p.5 Exercise 6.
+5. **Closure (8 min):** Pupils share one fact they learned about a partner.
 
-**Objectives:** Pupils give detailed information about their own hobbies and interests orally and write a short set of accurate personal sentences using present simple and suitable pronouns.
-
-**Set induction (5 min):** Teacher makes statements about hobbies. Pupils stand for true statements and sit for false ones, then volunteer statements about the teacher.
-
-**Activity 1 — Listen for details (15 min):** Teacher numbers the statements in SB p.4 Activity 3 and models one response. Pupils use CD1.04 to complete the phrases about speakers' interests; pairs compare details and check answers.
-
-**Activity 2 — Write about oneself (15 min):** Pupils complete Activity 4 by writing six personal statements about hobbies and interests. Teacher models sentence beginnings and gives feedback on present-simple forms and pronouns.
-
-**Activity 3 — Speak and respond (15 min):** Pairs adapt SB p.4 Activity 5 speech bubbles to their own interests and practise asking questions. They review subject pronouns and possessive adjectives in SB p.5 Activities 1, 2 and 4 as appropriate; teacher prioritises the main speaking task.
-
-**PBD (5 min):** Each pupil gives at least two understandable personal statements orally and submits written sentences. Teacher records clarity, relevant detail and supported corrections.
-
-**Closure (5 min):** In pairs, pupils share one new fact about their partner and reflect on clear self-description.
-
-**Workbook:** Use selected p.5 language-focus items for brief reinforcement where suitable; do not replace SB tasks. **Differentiation:** Offer sentence frames or reduce initial sentence demands for pupils needing support; extend responses with reasons. **QA:** Audio content and A4 output still unverified.
+**PBD:** Hear each pupil share three relevant details. Check the written statements for clear and varied information about that pupil.
+**Differentiation:** Provide hobby pictures and sentence starters. Let pupils rehearse before changing partners.

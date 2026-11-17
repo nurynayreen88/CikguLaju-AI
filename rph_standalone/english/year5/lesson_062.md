@@ -1,23 +1,16 @@
-# English Year 5 — Standalone RPH — Lesson 062 (Writing 11)
+# English Year 5 Lesson 62 — Writing 11
 
-**Status:** DRAF — source aligned, final QA pending. **Topic:** Wild Life. **Main LS:** Writing 4.3.3. **Complementary LS:** Reading 3.2.2. **Time:** 60 minutes (suggested).
+**Official SOW topic:** Wild Life.
+**Official SOW:** Lesson 62, printed p.99. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Writing 4.3.3 and Reading 3.2.2.
+**Materials:** English Plus 1 SB p.39 Activities 4–6 and Writing Guide, TB p.53, a teacher-prepared fact sheet and Workbook p.33 Exercise 4.
+**Learning objectives:** Pupils locate two details in the model leaflet, plan and draft a short leaflet about an endangered Malaysian animal, and revise one part after feedback.
 
-**Materials:** English Plus 1 Student Book p.39 Activities 4–6 and Writing Guide; Teacher Book p.53; facts about an endangered Malaysian animal, such as a Malayan tiger or turtle; Workbook p.33 Unit 3 Writing, Animals in Danger Ex1–4 (historic QA mapping).
+1. **Set induction (8 min):** Pupils find one detail about the Philippine eagle and one about its threat in the model. The teacher reviews the example phrases in SB Activities 4–5.
+2. **Activity 1 (12 min):** Introduce a Malaysian animal from the supplied fact sheet. In pairs, pupils use the planning questions in SB Activity 6 to note its habitat, threats and how people can help.
+3. **Activity 2 (15 min):** Use Writing Guide C to organise the notes under question headings. Pupils independently write a short leaflet and include a fact from the sheet and one specific example.
+4. **Activity 3 (17 min):** Partners check for a clear description, an explained threat and a practical way to help. Pupils use one comment to revise their leaflet before adding a labelled illustration.
+5. **Closure (8 min):** Pupils share one revised sentence. If time permits, they use the prompt in Workbook p.33 Exercise 4 to outline a separate animal fact file.
 
-**Objective:** Pupils plan, draft and improve a short leaflet about an endangered Malaysian animal, using information from the model and feedback.
-
-**Set induction (5 min):** Pupils use “such as”, “like” and “for example” to state something an animal can or cannot do.
-
-**Activity 1 — Research and plan (15 min):** Teacher supplies age-appropriate facts about habitat, rarity, threats and protection. Pairs read Writing Guide B and make notes for the specified questions.
-
-**Activity 2 — Study and structure (15 min):** Pupils use the Philippine eagle text as a model, follow Activity 6 Writing Guide C and organise information into a description, a problem and a call to action. Teacher shows where reliable supporting information can be found.
-
-**Activity 3 — Write and revise (15 min):** Pupils draft the leaflet with question headings, can/can't, comparative or superlative adjectives and examples. Partners check content against a seven-point checklist and writers revise at least one part.
-
-**PBD (5 min):** Teacher checks a plan and revised leaflet for relevant facts, linked ideas and one change made in response to feedback.
-
-**Closure (5 min):** Pupils draw and label the animal and add “Help us to protect the…”.
-
-**Differentiation:** Provide a fact sheet and writing guide frame; extend with an additional sourced suggestion. **QA:** Source-book visual checks and A4 format remain pending before READY.
-
-**Workbook (existing source QA map):** p.33, Unit 3 Writing — Animals in danger, Ex1-4. Optional brief follow-up; the SOW activities remain the core lesson tasks.
+**PBD:** Check two details taken from the model, the pupil’s plan and draft, and one revision made after feedback.
+**Differentiation:** Offer a paragraph frame and selected facts. Ask confident pupils to cite the source of an additional detail.

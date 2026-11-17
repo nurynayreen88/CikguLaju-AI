@@ -1,23 +1,16 @@
-# English Year 5 — Lesson 101 (Listening 18)
+# English Year 5 Lesson 101 — Listening 18
 
-**Status:** DRAF — awaiting full book/audio QA. **Topic:** Food and health. **Main LS:** Listening 1.1.1; **Complementary LS:** Reading 3.2.3. **Time:** 60 minutes (suggested). **CCE:** Financial Education.
+**Official SOW topic:** Food and health.
+**Official SOW:** Lesson 101, printed p.140. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Listening 1.1.1 and Reading 3.2.3.
+**Materials:** English Plus 1 SB p.58 Activities 1–4, TB p.72, CD2.08–CD2.09 and café menu cards.
+**Learning objectives:** Pupils recognise and reproduce target sounds in four spoken prices and infer two unfamiliar words from the printed menu or café dialogue.
 
-**Materials:** English Plus 1 Student's Book p.58 Activities 1–4; Teacher's Book p.72; CD2.08 and CD2.09 (track references from SOW, playback unverified); board/menu price cards.
+1. **Set induction (8 min):** Show a café menu and ask pupils to identify familiar foods and currencies.
+2. **Activity 1 (12 min):** Use SB Activity 1 to review café vocabulary. Play CD2.08 for Activity 2 so pupils can recognise and say the pounds and pence amounts, attending to sounds in pound, pence and fifty.
+3. **Activity 2 (15 min):** Play CD2.09 for SB Activity 3. Pupils match prices to currencies, then say four selected amounts for a partner to identify without copying a spoken model.
+4. **Activity 3 (17 min):** Pupils read the café dialogue in SB Activity 4 and use the menu and nearby words to infer two unfamiliar terms. Pairs explain one clue before checking the meaning.
+5. **Closure (8 min):** Hold a short price-reading game. Ask a pupil to share one word meaning and the clue they used.
 
-**Objective:** Pupils recognise and reproduce stated prices in pounds, dollars and euros and use polite café phrases in guided interaction.
-
-**Set induction (5 min):** Teacher asks the Think! question on SB p.58; pupils name currencies they know.
-
-**Activity 1 — Read prices (10 min):** Teacher displays £10, £5, 50p and 25p and models pounds/pence. Pairs read prices aloud and complete SB Activity 1 with TB p.72 guidance.
-
-**Activity 2 — Listen for money amounts (15 min):** Pupils complete Activity 2 with CD2.08 and Activity 3 with CD2.09; listen, choose or write amounts, compare with partners and correct after replay. Teacher checks pronunciation of £, $, € amounts.
-
-**Activity 3 — Café language (15 min):** Teacher models “Would you like…?”, “I'll have… please” and “Anything else?”. Pupils complete Activity 4 and practise a short ordering exchange. Discuss why water and fruit can be healthier choices.
-
-**PBD (10 min):** Each pupil identifies three heard prices and reproduces two prices aloud. Teacher records pupils needing a repeat and provides corrections.
-
-**Closure (5 min):** Two teams read 9–10 written prices; pupils explain one currency difference.
-
-**Differentiation:** Price cards and repeat listening for support; varied multi-part amounts for confident pupils. **QA:** Workbook mapping and audio playback not yet verified.
-
-**Workbook (existing source QA map):** p.51, Unit 5 Speaking — In a cafe / Would you like...? Anything else?, Ex6. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Check four prices with intelligible target sounds and two inferred meanings supported by printed clues.
+**Differentiation:** Provide currency symbols and a first replay. Ask confident pupils to read a price with a new combination of digits.

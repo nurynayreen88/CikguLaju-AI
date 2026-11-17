@@ -1,25 +1,16 @@
-# English Year 5 — Lesson 53 (Listening 10)
+# English Year 5 Lesson 53 — Listening 10
 
-**Status:** DRAF — pending full source audit. **Topic:** Wild Life. **Main LS:** Listening 1.2.2. **Complementary LS:** Speaking 2.2.1. **Time:** 60 minutes (suggested).
+**Official SOW topic:** Wild Life.
+**Official SOW:** Lesson 53, printed p.90. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Listening 1.2.2 and Speaking 2.2.1.
+**Materials:** English Plus 1 SB pp.32–33 Activities 1–4, TB pp.46–47, CD1.28–CD1.30, animal photos and Workbook p.28 Exercise 2.
+**Learning objectives:** Pupils identify two details from the recorded animal-guessing exchanges and use a question to keep a short guessing exchange going.
 
-**Materials:** English Plus 1 SB pp.32–33 Activities 1–4; TB pp.46–47; CD1.28–1.30; animal photos. Workbook/audio contents are not independently verified; use only SOW-prescribed resources.
+1. **Set induction (8 min):** Show the unit pictures. Pairs name wild animals they recognise and predict which one they might recognise by sound.
+2. **Activity 1 (14 min):** Play CD1.28 for SB Activity 1. Pupils compare the animals identified, then replay the exchanges for Activity 2 and notice how the speakers make guesses. Pairs take turns drawing an animal or making its sound and ask a partner to guess.
+3. **Activity 2 (12 min):** Play CD1.29 for SB Activity 3. Pupils mark the stressed words and repeat one question and answer before trying them in pairs.
+4. **Activity 3 (18 min):** Teams look closely at the photographs in SB Activity 4 and agree on their guesses. Play CD1.30 so pupils can check their choices. Pupils explain one cue they used.
+5. **Closure (8 min):** Groups sort selected animals by type. If time permits, pupils label two animals from Workbook p.28 Exercise 2.
 
-**Learning objectives:** Main (Listening 1.2.2) — pupils understand with support specific information and details of longer simple texts on a range of familiar topics in the Wild Life activities. Complementary (Speaking 2.2.1) — pupils keep interaction going in short exchanges by asking suitable questions in the linked speaking task.
-
-**Set induction (5 min):** Teacher introduces wild animals and the Think! task; pupils name animals from around the world.
-
-**Activity 1 (15 min):** Pupils listen to CD1.28 for Activity 1 and practise identifying an animal using looks like and sounds like in Activity 2. Partners draw or imitate animals and respond.
-
-**Activity 2 (15 min):** Pupils listen to CD1.29 for Activity 3, compare answers, then study photos of ostrich, bat, eagle, scorpion, rat and octopus.
-
-**Activity 3 (15 min):** Four teams complete Activity 4 with CD1.30, identify animals from spoken details and explain their clues. Teacher checks unfamiliar vocabulary.
-
-**PBD (5 min):** Teacher records pupils who identify specific information after one or more listens and can explain a clue orally.
-
-**Closure (5 min):** Groups classify animals as fish, birds, mammals, reptiles or insects.
-
-**Differentiation:** Use image supports and replay; challenge confident pupils to explain classification.
-
-**Verification:** Official Year 5 SOW outline checked; full book, workbook, audio and teacher approval pending before READY.
-
-**Workbook (existing source QA map):** p.28, Unit 3 Vocabulary — Animals, Ex1-4. Optional brief follow-up; the SOW activities remain the core lesson tasks.
+**PBD:** Check two heard details from CD1.28 and listen for a suitable question and reply in the pair exchange.
+**Differentiation:** Replay CD1.28 and offer picture choices. Ask confident pupils to support a guess with an additional clue.

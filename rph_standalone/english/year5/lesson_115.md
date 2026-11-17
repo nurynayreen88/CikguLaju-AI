@@ -1,20 +1,16 @@
-# Year 5 Lesson 115 — Reading 20
+# English Year 5 Lesson 115 — Reading 20
 
-Status: DRAF. Unit 6. Topic: Sport. Official SOW p.155. Main LS 3.2.3; complementary LS 1.1.1.
-Materials: SB p.67 Activities 1–3; TB p.81; CD2-17. Workbook page not verified. Audio playback not tested.
+**Official SOW topic:** Sport.
+**Official SOW:** Lesson 115, printed p.155. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Reading 3.2.3 and Listening 1.1.1.
+**Materials:** English Plus 1 SB p.67 Activities 1–3, TB p.81, CD2.17 and past-verb cards.
+**Learning objectives:** Pupils infer two meanings from the athlete profiles and recognise and reproduce three types of final sound in regular past forms.
 
-Objectives: Pupils complete the stated lesson tasks and show evidence of both listed learning standards.
+1. **Set induction (8 min):** Review learn, go, start and do. Pupils predict which past forms they might read in the sports profiles.
+2. **Activity 1 (12 min):** Use SB Activity 1 to introduce the verb forms. Pupils read the profiles in Activity 2, infer two unfamiliar words from nearby clues, then compare meanings.
+3. **Activity 2 (15 min):** Pairs answer comparison questions about the two athletes and point to the phrases that support their meanings or answers.
+4. **Activity 3 (17 min):** Play CD2.17 for SB Activity 3. Pupils group regular past forms by final sound, then say one example from each group without a direct model.
+5. **Closure (8 min):** Pairs choose an athlete to interview and propose one question about a detail they read.
 
-Set induction (5 min): Review past forms of learn, go, start and do.
-
-Main activities (40 min): Pupils read Young Talent Superstars, infer meanings from title and context, and answer Abdul/Martin comparison questions. Play assigned CD2-17 for pronunciation of past-tense endings. Teacher models the task, monitors pair or group participation and provides corrective feedback.
-
-PBD (10 min): Check contextual vocabulary guesses and accurate /t/, /d/ and /ɪd/ recognition. Pupils improve an answer based on teacher feedback.
-
-Closure (5 min): Pupils share one new word, form or fact and complete an exit response.
-
-Differentiation: Provide vocabulary prompts, visuals or sentence starters for pupils needing support; ask proficient pupils to justify or extend their responses.
-
-Verification: Lesson sequence and page references drawn from official Year 5 SOW. Full book-page and audio-file audit pending; do not mark READY.
-
-**Workbook (existing source QA map):** p.54,56, Unit 6 past simple in context + Reading Paralympic sport, Ex1-5. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Check two inferred meanings with text clues and one accurately pronounced example of each final sound.
+**Differentiation:** Offer highlighted clues and a three-column sound chart. Ask confident pupils to add another example to a group.

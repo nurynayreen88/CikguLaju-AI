@@ -1,25 +1,16 @@
-# English Year 5 — Lesson 107 (Listening 19)
+# English Year 5 Lesson 107 — Listening 19
 
-**Status:** DRAF — pending full source QA. **Topic:** Sport. **Main LS:** Listening 1.3.1. **Complementary LS:** Reading 3.2.4. **Time:** 60 minutes (suggested).
+**Official SOW topic:** Sport.
+**Official SOW:** Lesson 107, printed p.147. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Listening 1.3.1 and Reading 3.2.4.
+**Materials:** English Plus 1 SB pp.62–63 Activities 1–3, TB pp.76–77, CD2.12, dictionaries and Workbook p.52 Exercise 3.
+**Learning objectives:** Pupils infer two sports words from familiar words in spoken clues and use a dictionary to check one chosen meaning.
 
-**Materials:** English Plus 1 SB pp.62–63 Activities 1–3; TB pp.76–77; CD2.12. Workbook mapping and audio content (where applicable) not independently verified.
+1. **Set induction (8 min):** Create a sports mind map. Pupils nominate sports and explain one feature that helps identify each example.
+2. **Activity 1 (12 min):** Use CD2.12 for SB Activity 1. Pupils check the sports names, then use the mime prompts in SB Activity 2 to describe and guess a sport.
+3. **Activity 2 (15 min):** Before SB Activity 3, read short spoken clues about quiz words such as team or race. Pairs infer two meanings, identify the familiar words that helped and compare answers.
+4. **Activity 3 (17 min):** Pupils read the sports quiz and check one unfamiliar word in a dictionary. They choose the meaning that fits the quiz and explain how they know.
+5. **Closure (8 min):** Share one supported guess and how it was checked. If time permits, pupils solve one word clue in Workbook p.52 Exercise 3.
 
-**Learning objectives:** Main (Listening 1.3.1) — pupils guess the meaning of unfamiliar words from clues provided by other known words in the Sport activities. Complementary (Reading 3.2.4) — pupils use with support familiar print and digital resources to check meaning in the linked reading task.
-
-**Set induction (5 min):** Teacher starts a Sports mind map. Pupils brainstorm familiar sports.
-
-**Activity 1 (15 min):** Pupils listen to CD2.12 for Activity 1, identify sports and count examples ending in -ball and -ing.
-
-**Activity 2 (15 min):** Pairs mime and guess sports using I think it's… and Is it…? Teacher monitors understanding of spoken instructions.
-
-**Activity 3 (15 min):** Pupils inspect photographs on pp.62–63, predict the sports quiz answers, and read Activities 2–3 to confirm facts. Discuss fan, competition, race, team and technology in sports.
-
-**PBD (5 min):** Teacher observes pupils' ability to follow spoken sports clues and justify one correct sports quiz response.
-
-**Closure (5 min):** Pupils name new sport terms and describe one benefit of technology in sports.
-
-**Differentiation:** Provide sport images and shorter listening segments; extend with explanations of quiz answers.
-
-**Verification:** Official Year 5 SOW outline checked. Full textbook, Workbook, audio and teacher approval pending before READY.
-
-**Workbook (existing source QA map):** p.52, Unit 6 Vocabulary — Sports, Ex1-4. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Check two meanings inferred from spoken clues and one dictionary meaning that fits the quiz.
+**Differentiation:** Show pictures after the first listen. Ask confident pupils to create a clue that helps a partner infer a new word.

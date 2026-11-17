@@ -1,20 +1,16 @@
-# Year 5 Lesson 126 — Speaking 22
+# English Year 5 Lesson 126 — Speaking 22
 
-Status: DRAF. Unit 7. Topic: Growing up. Official SOW p.167. Main LS 2.1.5; complementary LS 1.2.4.
-Materials: SB pp.72–73 Activity 4; TB p.87. Workbook page not verified. Audio playback not tested.
+**Official SOW topic:** Growing up.
+**Official SOW:** Lesson 126, printed p.167. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Speaking 2.1.5 and Listening 1.2.4.
+**Materials:** English Plus 1 SB pp.72–73 Activity 4 and Key Phrases, TB p.87, avatar cards and Workbook p.60 Exercise 5.
+**Learning objectives:** Pupils describe an avatar using three suitable details and follow three supported oral instructions to identify another avatar.
 
-Objectives: Pupils complete the stated tasks and demonstrate both prescribed standards.
+1. **Set induction (8 min):** Say the rhyming pairs from the source lesson and ask pupils to match words that end with the same sound.
+2. **Activity 1 (12 min):** In SB Activity 4, pupils draw and label an original avatar. Partners practise giving a detailed description using appearance words.
+3. **Activity 2 (15 min):** Give three oral steps to choose a group of cards, listen for clues and show the matching avatar number. Pupils complete the steps and identify a partner’s avatar.
+4. **Activity 3 (17 min):** Groups repeat the game using the Key Phrases on p.73 to express certainty or uncertainty. Each pupil describes a different avatar with three details.
+5. **Closure (8 min):** Invite one clear description. If time permits, pupils write a short description for Workbook p.60 Exercise 5.
 
-Set induction (5 min): Find rhyming words from hair, light, mouth, fair, ear, round, height, beard.
-
-Main activities (40 min): Pupils draw and label an original avatar, practise Key Phrases on p.73 (I'm sure, I'm not sure, perhaps), then describe numbered avatars while classmates follow instructions and identify them. Teacher models instructions, monitors work and gives feedback.
-
-PBD (10 min): Assess clear physical descriptions and comprehension of the avatar-game instructions. Pupils correct or improve one response.
-
-Closure (5 min): Pupils share one learning point and complete an exit response.
-
-Differentiation: Provide word banks, visual cues, shorter instructions and sentence frames as needed; extend confident pupils with explanations or more detailed output.
-
-Verification: Based on official Year 5 SOW. Full book-page, workbook and audio audit pending before READY.
-
-**Workbook (existing source QA map):** p.60, Unit 7 Vocabulary — describing people, Ex1-5. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Check three suitable details in the oral description and observe whether pupils carry out the instructions in order.
+**Differentiation:** Provide labelled picture options and a description stem. Ask confident pupils to add a detail that distinguishes two similar avatars.

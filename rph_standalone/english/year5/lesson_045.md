@@ -1,21 +1,17 @@
 # English Year 5 Lesson 45 — Language Arts 8
 
-Official Year 5 SOW Lesson 45, printed p.81. Topic: Watching a Bumble Bee. Suggested duration: 60 minutes.
-Main and complementary learning standards: Language Arts 5.3.1; Speaking 2.1.2.
-Materials: NON-TEXTBOOK: Watching a Bumble Bee, Anthology p.21; BPK Poetry Guidebook.
+**Official SOW topic:** Watching a Bumble Bee.
+**Official SOW:** Lesson 45, printed p.81. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Language Arts 5.3.1 and Speaking 2.1.2.
+**Materials:** Anthology of Poems p.21, Watching a Bumble Bee, BPK Poetry Guidebook, stanza cards and drawing paper.
+**Learning objectives:** Pupils create an imaginative stanza and ask about and describe an experience of noticing an insect.
+**Success criteria:** Create one coherent adapted stanza and exchange a question and answer about an insect observation.
 
-Objective: Pupils adapt a stanza of Watching a Bumble Bee with an imaginative insect change and explain that choice.
+1. **Set induction (8 min):** Place the original stanzas around the room. Pupils read and put them in sequence.
+2. **Activity 1 (12 min):** Pairs ask each other about an insect they have seen. Each pupil describes where it was and what it did.
+3. **Activity 2 (14 min):** Groups choose a different insect and adapt a stanza using an action or detail from the observations. Encourage imaginative changes that fit the new creature.
+4. **Activity 3 (18 min):** Pupils read their adaptation in a gallery walk and explain the observation behind one change.
+5. **Closure (8 min):** Pupils sketch a scene from their new stanza and label the insect’s action.
 
-1. Set induction (8 min): Place poem stanzas in mixed order around the room; pupils reconstruct sequence.
-2. Activity 1 (12 min): Reread the poem and discuss possible replacement insects.
-3. Activity 2 (15 min): Groups adapt one or more stanzas by changing insect names and characteristics.
-4. Activity 3 (17 min): Display adapted stanzas in a gallery walk; pupils explain their changes and respond to peers.
-5. Assessment and closure (8 min): Illustrate the adapted poem; assess imaginative response and speaking.
-
-PBD: Teacher checks an adapted stanza of Watching a Bumble Bee for a coherent imaginative change and observes pupils explaining one change to a peer.
-Differentiation: Differentiate by number of words changed and stanzas adapted.
-Workbook: Not prescribed for this Language Arts lesson.
-Audio: No English Plus CD track is prescribed for this non-textbook lesson.
-QA status: SOW-aligned draft; physical textbook page, audio playback and one-page Word/PDF checks outstanding.
-
-**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
+**PBD:** Check the stanza for a coherent imaginative change. Listen for a question about an experience and a relevant spoken observation from each pupil.
+**Differentiation:** Provide insect pictures and a stanza frame. Ask confident pupils to link two observations to different changes.

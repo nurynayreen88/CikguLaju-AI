@@ -1,20 +1,16 @@
-# Year 5 Lesson 121 — Reading 21
+# English Year 5 Lesson 121 — Reading 21
 
-Status: DRAF. Unit 6. Topic: Sport. Official SOW p.161. Main LS 3.2.2; complementary LS 3.3.1.
-Materials: SB p.69 Activities 1–3; TB p.83. Workbook page unverified; audio playback not tested.
+**Official SOW topic:** Sport.
+**Official SOW:** Lesson 121, printed p.161. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Reading 3.2.2 and Reading 3.3.1.
+**Materials:** English Plus 1 SB p.69 Activities 1–3, TB p.83 and Workbook p.57 Exercise 1.
+**Learning objectives:** Pupils find two specific details in different paragraphs of the profile and explain why one detail they read interests them.
 
-Objective: Pupils demonstrate learning through the specific tasks below, covering both selected or prescribed skills.
+1. **Set induction (8 min):** Use the photograph and Think! prompt to predict what information a sport profile usually contains.
+2. **Activity 1 (12 min):** Pupils read for SB Activity 1 and find the date and place of birth. They check which paragraph provided the information.
+3. **Activity 2 (15 min):** In SB Activity 2, pupils match key phrases to the relevant parts of the text. Pairs identify two details from different paragraphs and point to the evidence.
+4. **Activity 3 (17 min):** Use SB Activity 3 to classify details about the athlete’s life and achievements. Each pupil chooses a fact they find interesting and explains their choice.
+5. **Closure (8 min):** Pairs share one fact with their books closed. If time permits, pupils put two paragraphs in order in Workbook p.57 Exercise 1.
 
-Set induction (5 min): Answer the Think! question and predict facts about a sports star.
-
-Main activities (40 min): Read the Usain Bolt profile, identify birth date and place, locate details across three paragraphs and discuss difficulties and achievements. Pairs recall facts with books closed. Teacher models instructions and monitors pupil responses, giving actionable feedback.
-
-PBD (10 min): Check accurate retrieval of details and independent engagement with the profile. Pupils revise or explain one response.
-
-Closure (5 min): Pupils share a learning point and complete an exit response.
-
-Differentiation: Provide word banks, visual prompts and sentence frames for support; extend proficient pupils with independent explanations or richer outputs.
-
-Verification: Lesson outline and references checked against official Year 5 SOW. Full source-page, workbook and audio checks remain pending before READY.
-
-**Workbook (existing source QA map):** p.54,56, Unit 6 regular/irregular past verbs + Reading, Ex1-5. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Check two specific details from different paragraphs and one personal response tied to the reading.
+**Differentiation:** Provide paragraph labels and a question frame. Ask confident pupils to explain which detail helps them understand the person’s achievement.

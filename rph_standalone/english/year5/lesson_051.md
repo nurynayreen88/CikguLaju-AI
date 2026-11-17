@@ -1,21 +1,17 @@
 # English Year 5 Lesson 51 — Language Arts 9
 
-Official Year 5 SOW Lesson 51, printed p.87. Topic: And Something Weird Happened. Suggested duration: 60 minutes.
-Main and complementary standards: Language Arts 5.2.1; Reading 3.2.2.
-Materials: NON-TEXTBOOK: And Something Weird Happened by Pamela Rushby pp.5–8; BPK Short Stories Guidebook p.17.
+**Official SOW topic:** And Something Weird Happened.
+**Official SOW:** Lesson 51, printed p.87. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Language Arts 5.2.1 and Reading 3.2.2.
+**Materials:** And Something Weird Happened by Pamela Rushby pp.5–8, BPK Short Stories Guidebook pp.36–37 Match Me! and teacher-made activity cards.
+**Learning objectives:** Pupils locate specific details in Chapter 1 and explain a personal response to a character’s holiday activity.
+**Success criteria:** Match three character–activity details using evidence from at least two paragraphs and give one reason for a preference.
 
-Objective: Pupils identify characters and events in And Something Weird Happened and give a personal preference supported by a reason.
+1. **Set induction (8 min):** Make a prediction for tomorrow. Look at the title and blurb and predict what Joel’s holiday might be like.
+2. **Activity 1 (12 min):** Read story pp.5–8 in small groups. Pupils identify characters and mark a detail about what each one did.
+3. **Activity 2 (14 min):** Use the Match Me! format. Groups match activity cards to characters. Ask pupils to point to a passage that supports each match.
+4. **Activity 3 (18 min):** Pupils choose one character’s activity they like or dislike. They explain their reason to a group and listen to a different view.
+5. **Closure (8 min):** Each pupil writes one preference and reason anchored to an activity in the text.
 
-1. Set induction (8 min): Predict what may happen tomorrow.
-2. Activity 1 (12 min): Explore the story cover and blurb; read pages 5–8 in small groups.
-3. Activity 2 (15 min): Match guidebook word cards to characters and their activities.
-4. Activity 3 (17 min): Sort activities into likes and dislikes; explain choices using because.
-5. PBD and closure (8 min): Each pupil writes I like an activity because... and shares a reason.
-
-PBD: Teacher observes a relevant literary response and checks one pupil-written statement of preference supported by a reason using because.
-Differentiation: Encourage more than one reason where possible.
-Workbook: Not prescribed for this Language Arts lesson.
-Audio: No English Plus CD track is prescribed for this non-textbook lesson.
-QA: SOW-aligned draft; source-page, audio and one-page Word/PDF checks pending.
-
-**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
+**PBD:** Check three matches against at least two paragraphs and collect one personal response with a relevant reason.
+**Differentiation:** Provide names and page cues. Invite confident pupils to compare two characters’ activities using textual details.

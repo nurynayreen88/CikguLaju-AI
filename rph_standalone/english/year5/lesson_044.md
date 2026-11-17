@@ -1,21 +1,17 @@
 # English Year 5 Lesson 44 — Writing 8
 
-Official Year 5 SOW Lesson 44, printed p.80. Topic: Days. Suggested duration: 60 minutes.
-Main and complementary learning standards: Writing 4.2.1; Speaking 2.1.5.
-Materials: SB p.26 Activity 5; TB p.40; question-word cards.
+**Official SOW topic:** Days.
+**Official SOW:** Lesson 44, printed p.80. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Writing 4.2.1 and Speaking 2.1.5.
+**Materials:** English Plus 1 SB p.26 Happy Days! and Activity 5, TB p.40, WB p.22 Ex3 and question-word cards.
+**Learning objectives:** Pupils give written details about how they celebrate a special day and describe the celebration orally.
+**Success criteria:** Write three specific personal details and orally describe two features, such as the meal, decorations or activities.
 
-Objective: Pupils write three accurate details about a Malaysian celebration and ask a partner one relevant question.
+1. **Set induction (8 min):** Give groups question-word cards to reconstruct questions from Happy Days!.
+2. **Activity 1 (12 min):** Use the vocabulary task from TB p.40. Pupils choose a special day familiar to them and note suitable actions and frequency words.
+3. **Activity 2 (14 min):** Use SB Activity 5. Pupils write three answers about what they or their families do, with details about who, where or when.
+4. **Activity 3 (18 min):** Pairs use the written notes to describe features of their special days. Partners identify one similarity or difference. If time permits, pupils complete Workbook p.22 Exercise 3.
+5. **Closure (8 min):** Invite pupils to share a detail that makes their special day distinctive.
 
-1. Set induction (8 min): Groups arrange jumbled words into questions from Happy Days.
-2. Activity 1 (12 min): Use TB optional vocabulary activity and discuss Malaysian special days.
-3. Activity 2 (15 min): Write answers about one celebration using always, usually, sometimes and never.
-4. Activity 3 (17 min): Partners ask and answer questions about their celebrations, then swap partners.
-5. Assessment and closure (8 min): Review new vocabulary; assess detailed written information and oral descriptions.
-
-PBD: Teacher checks three written details about a celebration and observes one understandable oral comparison or question in the partner exchange.
-Differentiation: Accept three or four written answers for pupils needing support.
-Workbook: No exercise assigned until the exact page and activity are verified.
-Audio: Use only SOW-listed tracks; corresponding filenames exist in Drive where applicable, content not yet played.
-QA status: SOW-aligned draft; physical textbook page, audio playback and one-page Word/PDF checks outstanding.
-
-**Workbook (existing source QA map):** p.23, Unit 2 Language Focus — Present simple questions, Ex1-4. Optional brief practice after SOW activities; not a substitute for core tasks.
+**PBD:** Check three written details about the pupil’s own experience. Listen for two understandable descriptions of the celebration.
+**Differentiation:** Provide question stems and a word bank. Invite confident pupils to describe how a place or object looks on the chosen day.

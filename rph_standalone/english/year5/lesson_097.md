@@ -1,23 +1,16 @@
-# English Year 5 — Standalone RPH — Lesson 097 (Reading 17)
+# English Year 5 Lesson 97 — Reading 17
 
-**Status:** DRAF — SOW-aligned, awaiting source QA. **Topic:** Food and health. **Main LS:** 3.3.1. **Complementary LS:** 2.1.3. **Duration:** 60 minutes (suggested).
+**Official SOW topic:** Food and health.
+**Official SOW:** Lesson 97, printed p.136. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Reading 3.3.1 and Speaking 2.1.3.
+**Materials:** English Plus 1 SB p.56 Activities 1–3, TB p.70, CD2.06 and Workbook p.46 Exercise 2.
+**Learning objectives:** Pupils choose a question from the health quiz and explain why it interests them, then ask for, give and respond to one piece of simple advice.
 
-**Language focus:** Adjectives: fit, unfit, tired, lazy, hungry; Imperative verbs: Eat, Don’t eat, Go, Don’t go. **Materials:** English Plus 1 Student’s Book Activities 1, 2 and 3 p.56 Teacher’s Book p.70; Audio: CD2.06.
+1. **Set induction (8 min):** Use a letter-guessing game to introduce the word healthy. Pupils predict topics they may find in a health quiz.
+2. **Activity 1 (12 min):** Pairs use the clues in SB Activity 1 to choose adjectives. Play CD2.06 in Activity 2 so pupils can check the adjective forms and notice the effect of un-.
+3. **Activity 2 (15 min):** Pupils read and complete SB Activity 3. Each chooses a question they find interesting and tells their partner which part of the quiz made them choose it.
+4. **Activity 3 (17 min):** Using the quiz, pupils take turns asking a partner for advice about a daily habit. The partner gives one simple suggestion and the first pupil responds.
+5. **Closure (8 min):** Invite one pair to share an advice exchange. If time permits, pupils complete one adjective dialogue in Workbook p.46 Exercise 2.
 
-**Learning objectives:** Main (Reading 3.3.1) — pupils read and enjoy A2 fiction/non-fiction print and digital texts of interest in the Food and health activities. Complementary (Speaking 2.1.3) — pupils ask for, give and respond to simple advice in the linked speaking task.
-
-**Set induction (5 min):** See instructions in Section 3 Pre-lesson Task 7: Beat the Teacher. Use ‘healthy’ as the key topic word.
-
-**Activity 1 (15 min):** Ask pupils the Think! question on p.56. They can choose from the six ideas in box. Pre-teach: ‘active’, ‘fit’, ‘hungry’, ‘thirsty’, ‘tired’, ‘lazy’. Elicit type of word (adjectives). Pupils in pairs do Activity 1. Ask: Which words helped you to complete the sentences? e.g. 1) an – needs an adjective with a vowel; 2) eat – hungry; 3) good – healthy; 4) a – needs an adjective with a consonant; 5) don’t sleep – tired.
-
-**Activity 2 (15 min):** Pupils do Activity 2, CD2.06. Follow the instructions in Teacher’s Book p.70 Exercise 2. Say: Two letters are the same at the start of two adjectives. What are they? (un). Explain ‘un’ means not. Ask: Can they think of other adjectives starting with un? (unhappy, unpopular, untidy).
-
-**Activity 3 (15 min):** Pupils in pairs do Activity 3. Explain body temperature is about 37 degrees. Usain Bolt can run 100 metres in about 10 seconds. Follow instructions in Teacher’s Book p.70 Exercise 3. When checking 1, 2, 5 pupils say: It’s best to/healthiest to… Pupils look at the Health quiz again. They give advice to a partner about one of the things a, b or c that they shouldn’t do e.g. It’s not good to eat snacks because you can’t enjoy your meal.
-
-**PBD (5 min):** Teacher checks two reading answers against evidence from the health text and observes one understandable piece of advice with a reason. Pupils improve one answer after feedback.
-
-**Closure (5 min):** Pupils complete a short Section 3 post-lesson vocabulary task and state one healthy choice.
-
-**Workbook practice (mapped):** p.46-47, Unit 5 Health adjectives + Imperatives, Ex1-5 / Ex4. Use briefly; do not replace SOW tasks.
-
-**Differentiation:** Give suitable vocabulary or sentence prompts; challenge confident pupils with independent responses. **Final check:** Full printed-page and audio-content audit, A4 export and teacher approval pending; not READY.
+**PBD:** Check a personal response linked to the quiz and listen for a request, a relevant suggestion and a reply.
+**Differentiation:** Offer question cards and sample advice stems. Ask confident pupils to explain why their suggestion fits the situation.

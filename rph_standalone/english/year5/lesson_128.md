@@ -1,20 +1,16 @@
-# Year 5 Lesson 128 — Writing 22
+# English Year 5 Lesson 128 — Writing 22
 
-Status: DRAF. Unit 7. Topic: Growing up. Official SOW p.169. Main LS 4.2.1; complementary LS 3.2.1.
-Materials: SB p.75 Activities 5–8; TB p.89. Workbook page not verified. Audio playback not tested.
+**Official SOW topic:** Growing up.
+**Official SOW:** Lesson 128, printed p.169. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Writing 4.2.1 and Reading 3.2.1.
+**Materials:** English Plus 1 SB p.75 Activities 5–8 and Finished?, TB p.89, weekend prompts and Workbook p.61 Exercise 4.
+**Learning objectives:** Pupils identify the main idea of a short actor profile and write at least three specific details about their own weekend or a plausible imagined weekend.
 
-Objectives: Pupils complete the stated tasks and demonstrate both prescribed standards.
+1. **Set induction (8 min):** Recall characters from the film photos. Pupils predict what a short profile will tell them about the actor.
+2. **Activity 1 (12 min):** Use SB Activity 5 to review past forms. In Activity 6, pupils read through the actor profile and choose a main-idea statement, then point to one supporting detail.
+3. **Activity 2 (15 min):** In SB Activity 7, pupils write personal past-tense sentences and compare them orally in Activity 8. They add details of when, where or with whom.
+4. **Activity 3 (17 min):** Use Finished? for pupils to write a brief weekend account with at least three details. Partners read it and check that each detail gives clear information.
+5. **Closure (8 min):** Invite one pupil to read an account. If time permits, pupils add a past-tense contrast using Workbook p.61 Exercise 4.
 
-Set induction (5 min): Recall actors' appearance in film photographs.
-
-Main activities (40 min): Complete Activity 5; read the short actor profile in Activity 6 for main idea; write truthful or imagined past experiences using Activity 7 and discuss in Activity 8; draft a weekend story with past verbs. Teacher models instructions, monitors work and gives feedback.
-
-PBD (10 min): Check a coherent personal weekend account and correct past-tense forms. Pupils correct or improve one response.
-
-Closure (5 min): Pupils share one learning point and complete an exit response.
-
-Differentiation: Provide word banks, visual cues, shorter instructions and sentence frames as needed; extend confident pupils with explanations or more detailed output.
-
-Verification: Based on official Year 5 SOW. Full book-page, workbook and audio audit pending before READY.
-
-**Workbook (existing source QA map):** p.61, Unit 7 Language Focus — object pronouns; past simple affirmative/negative, Ex1-4. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Check one accurate main idea from the profile and three specific details in the pupil’s written account.
+**Differentiation:** Provide time and place prompts. Ask confident pupils to connect an activity to a result or reaction.

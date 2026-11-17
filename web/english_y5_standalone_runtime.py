@@ -110,6 +110,10 @@ def _gate(root):
         return None
 
 
+_BAD_QA = re.compile(r"(?i)(?:NOT READY|QA status|source verification pending|"
+                     r"internal audit|do not publish|incomplete QA)")
+
+
 def load_lesson(number, *, root=LESSON_ROOT):
     if type(number) is not int or number not in range(1, 161):
         return None
@@ -117,7 +121,8 @@ def load_lesson(number, *, root=LESSON_ROOT):
         text = (Path(root) / ("lesson_%03d.md" % number)).read_text(encoding="utf-8")
     except (OSError, UnicodeError):
         return None
-    if not re.search(r"(?i)\bLesson\s+0*%d\b" % number, text.splitlines()[0]):
+    lines = text.splitlines()
+    if not lines or not re.search(r"(?i)\bLesson\s+0*%d\b" % number, lines[0]):
         return None
     clean = "\n".join(_plain(line) for line in text.splitlines())
     blocks = _sections(text)
@@ -139,8 +144,11 @@ def load_lesson(number, *, root=LESSON_ROOT):
     before = re.split(r"(?im)^\s*(?:\d+\.\s*)?(?:\*\*)?Set induction\b", text, maxsplit=1)[0]
     # Only codes in source metadata/header count, not unrelated examples in later tasks.
     codes = frozenset(_LS.findall(before))
+    criteria = _field(clean, ("Success criteria", "Success criterion", "Success evidence", "PBD evidence"))
+    if _BAD_QA.search(criteria):
+        criteria = ""
     return {"source_codes": codes, "materials": materials, "objective": objective,
-            "intro": intro, "activities": activity, "pbd": pbd, "closure": closure,
+            "criteria": criteria, "intro": intro, "activities": activity, "pbd": pbd, "closure": closure,
             "differentiation": blocks.get("differentiation") or ""}
 
 
@@ -167,11 +175,19 @@ def adapt_rows(state, rows, *, root=LESSON_ROOT):
     # The official Lesson 141 lesson table takes precedence over its conflicting Appendix 1.
     # Codes are still required to match this exact lesson's source metadata.
     out = dict(rows)
+    main_cs, complementary_cs = main.rsplit(".", 1)[0], complementary.rsplit(".", 1)[0]
+    out["TAJUK"] = " — ".join(
+        value for key in ("topic", "focus") if (value := str(expected.get(key) or "").strip())
+    )
+    out["MAIN CONTENT STANDARD"] = main_cs
+    out["MAIN LEARNING STANDARD"] = main
+    out["COMPLEMENTARY CONTENT STANDARD"] = complementary_cs
+    out["COMPLEMENTARY LEARNING STANDARD"] = complementary
     out["STANDARD KANDUNGAN"] = ("Main: %s; Complementary: %s" %
-                                 (main.rsplit(".", 1)[0], complementary.rsplit(".", 1)[0]))
+                                 (main_cs, complementary_cs))
     out["STANDARD PEMBELAJARAN"] = "Main: %s; Complementary: %s" % (main, complementary)
     out["OBJEKTIF PEMBELAJARAN"] = lesson["objective"]
-    out["KRITERIA KEJAYAAN"] = lesson["objective"]
+    out["KRITERIA KEJAYAAN"] = lesson["criteria"] or lesson["objective"]
     out["BAHAN BANTU MENGAJAR"] = lesson["materials"]
     out["SET INDUKSI"] = lesson["intro"]
     out["AKTIVITI UTAMA"] = lesson["activities"]

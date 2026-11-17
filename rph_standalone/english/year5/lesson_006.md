@@ -1,22 +1,17 @@
-# English Year 5 — Lesson 006 — Listening 2
+# English Year 5 Lesson 6 — Listening 2
 
-**Official SOW:** Primary Year 5 SK Lesson 6, printed p.40; Starter Unit; **Theme:** World of Self, Family and Friends; **Topic:** Free time. **Suggested duration:** 60 minutes.
-**Main CS/LS:** Listening 1.1/1.1.1. **Complementary CS/LS:** Reading 3.2/3.2.1.
-**Language focus:** possessive 's; /s/ and /z/.
-**Learning objectives:** Main (Listening 1.1.1) — pupils recognise and reproduce with little or no support a wide range of target language phonemes in the Free time activities. Complementary (Reading 3.2.1) — pupils understand the main idea of simple texts of one or two paragraphs through the linked reading task.
-**Success criteria (teacher-set):** Complete the SOW-aligned core tasks and give observable spoken, written, listening, reading or creative evidence with appropriate support.
-**Materials:** SB p.7 Activities 1–4; TB p.21; CD 1-08.
+**Official SOW topic:** Free time.
+**Official SOW:** Lesson 6, printed p.40. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Listening 1.1.1 and Reading 3.2.1.
+**Materials:** English Plus 1 SB p.7 Activities 1–4, TB p.21, CD1.08, WB p.7 Ex2 and classroom objects.
+**Learning objectives:** Pupils distinguish and reproduce possessive endings and identify the main idea of the phone dialogue.
+**Success criteria:** Identify and say /s/ and /z/ in four familiar examples, then state the dialogue’s main purpose after reading.
 
-## Lesson sequence
-1. **Set induction (8 min):** Teacher starts circle ownership game ('That's ___'s desk').
-2. **Activity 1 (12 min):** Teacher models possessive apostrophe-s sounds with teacher's, Harry's, Eva's and asks pupils to hear /s/ versus /z/.
-3. **Activity 2 (15 min):** Pupils complete Activity 2, practise phrases in pairs, then listen to phone conversation CD 1-08 for final words in Activity 3; discuss parents knowing their location.
-4. **Activity 3 (17 min):** Pupils read and complete Activity 4 table, ask three place questions in pairs, and identify /z/ in speakers.
-5. **PBD and closure (8 min):** Groups identify owners of classroom objects and return them; teacher records phoneme discrimination and reading comprehension.
+1. **Set induction (8 min):** Play an ownership game using classroom objects and pupils’ names.
+2. **Activity 1 (12 min):** Use SB Activities 1–2 to introduce the possessive ending. Say examples such as Kate’s and Eva’s. Pupils sort the sounds and practise the phrases.
+3. **Activity 2 (14 min):** Play CD1.08 for SB Activity 3. Pupils select the missing words, listen for the final sound in speakers and read the dialogue to decide what the callers are trying to find.
+4. **Activity 3 (18 min):** Pairs use SB Activity 4 to complete the question table and exchange location questions. If time permits, pupils complete Workbook p.7 Exercise 2.
+5. **Closure (8 min):** Return objects to their owners using a spoken possessive phrase.
 
-## Assessment and differentiation
-**PBD:** Teacher listens for pupils distinguishing and reproducing the /s/ and /z/ possessive endings in named examples and checks their reading response to the related text; record the support needed. **Differentiation:** Replay CD 1-08 with pauses for pupils requiring listening support.
-**Reflection:** Pupils meeting objective __ / __; intervention __.
-**QA status:** SOURCE-PAIRED DRAFT — SOW sequence and standards verified; textbook/anthology page inspection, audible audio verification where applicable, and Word/PDF output QA pending. Do not present as fully READY.
-
-**Workbook (existing source QA map):** p.7, Starter Language Focus — Possessive 's; be questions, Ex1-5. Optional short practice after the SOW activities; do not substitute it for the lesson tasks.
+**PBD:** Check each pupil’s sound discrimination and pronunciation. Elicit the gist of the printed dialogue in a short response.
+**Differentiation:** Give a two-column sound card. Replay relevant parts of the dialogue and permit one supported rereading.

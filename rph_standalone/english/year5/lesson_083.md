@@ -1,25 +1,16 @@
-# English Year 5 — Lesson 83 (Listening 15)
+# English Year 5 Lesson 83 — Listening 15
 
-**Status:** DRAF — pending full source QA. **Topic:** Learning World. **Main LS:** Listening 1.1.1. **Complementary LS:** Speaking 2.2.1. **Time:** 60 minutes (suggested).
+**Official SOW topic:** Learning World.
+**Official SOW:** Lesson 83, printed p.121. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Listening 1.1.1 and Speaking 2.2.1.
+**Materials:** English Plus 1 SB p.48 Activities 1–2, TB p.62, CD1.44–CD1.45, alphabet cards and Workbook p.43 Exercise 7.
+**Learning objectives:** Pupils recognise and reproduce four target letter-name sounds and sustain a short exchange by asking for language help and a follow-up.
 
-**Materials:** English Plus 1 SB p.48 Activities 1–2; TB p.62; CD1.44–1.45; alphabet cards. Workbook mapping and any audio playback remain unverified.
+1. **Set induction (8 min):** Ask what pupils do when they cannot remember a word. Elicit a polite question they could use to ask for help.
+2. **Activity 1 (12 min):** Play CD1.44 for SB Activity 1. Pairs identify the request and response and practise a short exchange using the model.
+3. **Activity 2 (15 min):** Play CD1.45 for SB Activity 2. Pupils sort letter names by sound, then listen and say four examples without a spoken model.
+4. **Activity 3 (17 min):** Partners spell a name or word to each other. The listener asks for repetition or clarification and checks the letters against what they heard.
+5. **Closure (8 min):** Call out selected letter names for pupils to identify. If time permits, pupils match one request to a reply in Workbook p.43 Exercise 7.
 
-**Learning objectives:** Main (Listening 1.1.1) — pupils recognise and reproduce with little or no support a wide range of target language phonemes in the Learning World activities. Complementary (Speaking 2.2.1) — pupils keep interaction going in short exchanges by asking suitable questions in the linked speaking task.
-
-**Set induction (5 min):** Pupils answer the Think! question about getting help when they cannot remember words.
-
-**Activity 1 (15 min):** Pupils listen to CD1.44 in Activity 1 and identify phrases used when asking for language help. Pairs repeat dialogue with matching intonation.
-
-**Activity 2 (15 min):** Teacher contrasts capital and small letters and revises capital-letter uses. Pupils complete Activity 2 using CD1.45 and practise spelling names aloud.
-
-**Activity 3 (15 min):** Pairs listen, write and exchange spelled names and letters, checking sounds that are frequently confused.
-
-**PBD (5 min):** Teacher checks whether pupils recognise and reproduce six target letters and ask for repetition politely.
-
-**Closure (5 min):** Pairs hold up the correct A, E, I, O, U, S, C or Q cards to spoken letters.
-
-**Differentiation:** Repeat letter sounds and display alphabet chart; extend with unfamiliar names.
-
-**Verification:** Official Year 5 SOW outline checked. Full textbook, Workbook, audio and teacher approval pending before READY.
-
-**Workbook (existing source QA map):** p.38,42, Unit 4 Vocabulary and Listening — language study/listening practice, Ex1-5 / Review Ex4. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Check four letter sounds and listen for a relevant request and follow-up.
+**Differentiation:** Offer visible letter cards and a rehearsal. Ask confident pupils to spell an unfamiliar word from a short description.

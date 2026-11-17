@@ -1,20 +1,17 @@
-# English Year 5 Lesson 025 — Reading 5
+# English Year 5 Lesson 25 — Reading 5
 
-Source: Official SOW Lesson 25, printed p.60. Unit 1: Towns and cities. Duration: 60 minutes.
-Main CS/LS: Reading 3.2 / 3.2.2. Complementary CS/LS: Writing 4.3 / 4.3.2.
-Language focus: population, business, monument, castle, zoo; quite, really, very.
-Materials: English Plus 1 Student's Book p.19 Activities 1–4; Teacher's Book p.33; images of Malaysian buildings and a castle.
+**Official SOW topic:** Towns and cities.
+**Official SOW:** Lesson 25, printed p.60. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Reading 3.2.2 and Writing 4.3.2.
+**Materials:** English Plus 1 SB p.19 Activities 1–4, TB p.33, WB p.16 Ex4 and images of local buildings.
+**Learning objectives:** Pupils locate specific details in the Edinburgh text and spell familiar place words correctly in independent writing.
+**Success criteria:** Find three accurate facts across at least two paragraphs and spell four familiar target words in original descriptions.
 
-Objective: Pupils identify two details in the Edinburgh text and write two accurately described places using intensifiers.
+1. **Set induction (8 min):** Introduce Edinburgh and ask pupils to name familiar places shown in the pictures.
+2. **Activity 1 (12 min):** In SB Activities 1–2, pupils search different paragraphs for named facilities, locations and other details. They mark the relevant lines.
+3. **Activity 2 (14 min):** Use SB Activities 3–4 to practise the position of adjectives. Pupils then write two original descriptions of local places without copying the model.
+4. **Activity 3 (18 min):** Collect the descriptions before pupils check spellings. If time permits, pupils complete Workbook p.16 Exercise 4 using the different text about Miniland.
+5. **Closure (8 min):** Pupils share one Edinburgh fact and correct one spelling from their own work.
 
-1. Set induction (8 min): Introduce Edinburgh and vocabulary from Think!; show local examples of businesses, offices, factories and a castle.
-2. Activity 1 (12 min): Pupils read the text and find place words in Activity 1. Discuss which items are absent and which additional places are mentioned.
-3. Activity 2 (15 min): Pupils complete Activity 2, identifying descriptive vocabulary for towns and cities, and compare answers.
-4. Activity 3 (17 min): Follow TB p.33 Exercise 3 for Activity 3. Pupils write phrases with really, very or quite plus an adjective and noun. Complete Activity 4 by ordering jumbled words; partners create and solve a further descriptive sentence.
-5. PBD and closure (8 min): Use TB p.33 optional writing task; assess specific reading details, sentence order and accurate spelling.
-
-Differentiation: Allow additional time for word ordering; fast finishers create more jumbled sentences.
-Workbook: Not assigned until exact exercise is checked. Audio: None prescribed in SOW.
-QA: SOW-matched draft; final source-page and Word/PDF checks pending.
-
-**Workbook (existing source QA map):** p.16, Unit 1 Reading — A description of a place, Ex1-5. Optional short practice after SOW activities; not a replacement for the core tasks.
+**PBD:** Check that three facts come from at least two paragraphs. Mark four familiar target words in the independent sentences.
+**Differentiation:** Provide paragraph labels and an oral word bank. Remove written spelling models for the independent check.

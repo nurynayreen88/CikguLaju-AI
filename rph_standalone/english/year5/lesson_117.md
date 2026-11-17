@@ -1,20 +1,16 @@
-# Year 5 Lesson 117 — Language Arts 20
+# English Year 5 Lesson 117 — Language Arts 20
 
-Status: DRAF. Unit 6. Topic: The Dark. SOW p.157. Main LS 5.2.1; complementary LS 4.2.5.
-Materials: Anthology of Poems pp.22–23; BPK CCL Poetry guide. Workbook is not prescribed. No CD audio is prescribed by the SOW for this non-textbook lesson.
+**Official SOW topic:** The Dark.
+**Official SOW:** Lesson 117, printed p.157. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Language Arts 5.2.1 and Writing 4.2.5.
+**Materials:** Anthology of Poems pp.22–23, The Dark by Adrian Henri, BPK Poetry Guide and pictures of light and dark scenes.
+**Learning objectives:** Pupils explain a preference about the scene in the poem and write a short paragraph linking two reasons with a conjunction and a clear reference word.
 
-Objectives: Pupils demonstrate the main and complementary standards through the activities below.
+1. **Set induction (8 min):** Show a light and a dark bedroom. Pupils choose one and give an initial reason for their preference.
+2. **Activity 1 (12 min):** Pupils read the poem and mark recurring lines. Read the repeated parts together and discuss the change between the dim room and the speaker’s place of comfort.
+3. **Activity 2 (15 min):** Pairs each choose a part they like or dislike and explain why. Ask pupils to connect two reasons to a specific picture or action in the poem.
+4. **Activity 3 (17 min):** Each pupil writes a short paragraph joining their reasons with a conjunction such as and and using a clear reference word. Partners check that the reasons connect.
+5. **Closure (8 min):** Share one reason that changed after rereading the poem. Pupils reread their paragraph to check what each reference word refers to.
 
-Set induction (5 min): Compare pictures of bright and dark bedrooms and share preferences.
-
-Main activities (40 min): Read the poem The Dark; pupils identify repeated lines and contrast light/dark descriptions. Pairs explain two likes or dislikes, then join reasons with and and exchange sentences with other pairs. Teacher models task instructions, monitors pupils and gives corrective feedback.
-
-PBD (10 min): Check justified personal response and connected sentences using and. Pupils improve one response using feedback.
-
-Closure (5 min): Pupils share a learning point and submit a short exit response.
-
-Differentiation: Offer visual cues, word banks, shorter instructions and sentence stems as needed; extend proficient pupils with more detailed independent responses.
-
-Verification: Aligned to official Year 5 SOW outline; exact book-page content and audio playback still require final audit. Do not mark READY.
-
-**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
+**PBD:** Listen for a preference with a reason tied to the poem and check that the pupil’s short paragraph links two ideas coherently.
+**Differentiation:** Offer picture cues and a paragraph frame. Ask confident pupils to explain a contrast using but.

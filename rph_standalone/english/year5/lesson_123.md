@@ -1,20 +1,16 @@
-# Year 5 Lesson 123 — Language Arts 21
+# English Year 5 Lesson 123 — Language Arts 21
 
-Status: DRAF. Unit 6. Topic: The Dark. Official SOW p.163. Main LS 5.3.1; complementary LS 2.3.1.
-Materials: Anthology of Poems pp.22–23; BPK CCL Poetry guide. Workbook page unverified; audio playback not tested.
+**Official SOW topic:** The Dark.
+**Official SOW:** Lesson 123, printed p.163. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Language Arts 5.3.1 and Speaking 2.3.1.
+**Materials:** Anthology of Poems pp.22–23, The Dark by Adrian Henri, BPK Poetry Guide, pencils and paper.
+**Learning objectives:** Pupils adapt a stanza with imaginative details and narrate a short scene inspired by the adapted stanza in a clear order.
 
-Objective: Pupils demonstrate learning through the specific tasks below, covering both selected or prescribed skills.
+1. **Set induction (8 min):** Invite pupils to imagine a dark room and explain what they might notice first. Read the relevant stanza and discuss its mood.
+2. **Activity 1 (12 min):** Model how changing one detail can give a stanza a new setting or feeling. Pairs select a stanza and plan changes that keep the idea understandable.
+3. **Activity 2 (15 min):** Pairs write their adaptation in pen and shade over it in pencil for another pair to reveal. The receiving pair reads the revealed stanza and identifies two images.
+4. **Activity 3 (17 min):** The receiving pair uses those images to narrate what happens first and next in a short imagined scene. Then the writers read their stanza and explain one change.
+5. **Closure (8 min):** Pairs return the writing with one spelling or punctuation suggestion. The original writers make a correction.
 
-Set induction (5 min): Imagine being in a dark room and suggest ways to see.
-
-Main activities (40 min): Pairs adapt one stanza of The Dark by substituting suitable words, conceal the written stanza using pencil shading, exchange it for another pair to reveal and narrate, and guess its authors. Teacher models instructions and monitors pupil responses, giving actionable feedback.
-
-PBD (10 min): Assess meaningful substitutions, oral narration and spelling corrections. Pupils revise or explain one response.
-
-Closure (5 min): Pupils share a learning point and complete an exit response.
-
-Differentiation: Provide word banks, visual prompts and sentence frames for support; extend proficient pupils with independent explanations or richer outputs.
-
-Verification: Lesson outline and references checked against official Year 5 SOW. Full source-page, workbook and audio checks remain pending before READY.
-
-**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
+**PBD:** Check one imaginative change in the verse and listen for a short, intelligible narrative tied to its images.
+**Differentiation:** Provide a word bank and a simple sequence frame. Ask confident pupils to narrate how the mood changes.
