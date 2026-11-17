@@ -822,7 +822,6 @@
   weekMode.setAttribute("aria-pressed",String(weekly));
   dayMode.classList.toggle("secondary",weekly);
   weekMode.classList.toggle("secondary",!weekly);
-  document.getElementById("view-today-heading").textContent=weekly?"RPH Minggu Ini":"RPH Hari Ini";
   document.getElementById("today-instructions").textContent=weekly
    ?"Slot diambil daripada jadual guru. Semak cadangan RPT, pilih Lesson/PdP dan sediakan bahan untuk slot yang dipilih."
    :"Semak cadangan RPT, pilih Lesson/PdP mengikut kemajuan kelas dan catat Selesai PdP selepas mengajar.";
