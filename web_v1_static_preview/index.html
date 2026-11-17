@@ -687,6 +687,17 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <section id="today-results" class="daily-rph-output" aria-labelledby="today-results-heading" hidden>
     <h3 id="today-results-heading">Bahan RPH Hari Ini</h3>
     <p class="notice">Bahan disusun mengikut waktu mengajar. Tekan <strong>Download</strong> pada baris RPH Word atau RPH PDF bagi setiap slot.</p>
+    <div id="week-bundle-panel" hidden>
+      <p class="notice">Gabungkan semua RPH bagi slot yang dipilih dalam satu fail, mengikut turutan jadual.</p>
+      <div class="daily-rph-toolbar">
+        <div>
+          <label for="week-bundle-format">Format RPH seminggu</label>
+          <select id="week-bundle-format"><option value="pdf">PDF</option><option value="word">Word</option></select>
+        </div>
+        <button type="button" id="week-bundle-download" disabled>Download Semua RPH</button>
+      </div>
+      <p id="week-bundle-status" class="notice" role="status" aria-live="polite"></p>
+    </div>
     <div id="today-results-list" class="daily-rph-result-list" aria-label="Bahan mengikut kelas dan subjek" aria-live="polite"></div>
   </section>
   <div class="daily-rph-footer">
@@ -2351,8 +2362,13 @@ async function refreshSharedRphBalance(){
  try{
   const r=await fetch("/api/auth/telegram/session",{
    credentials:"same-origin",cache:"no-store",redirect:"error"});
-  if(r.ok)applyRphAccount(await r.json());
+  if(r.ok){
+   const account=await r.json();
+   applyRphAccount(account);
+   return account;
+  }
  }catch(_err){/* Keep current visible status; fail closed on next server request. */}
+ return null;
 }
 document.addEventListener("visibilitychange",()=>{
  if(!document.hidden&&document.getElementById("workspace")?.hidden===false)
@@ -2363,7 +2379,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
-<script src="/assets/rph-today.js?v=rph-pantas-cadangan-harian-20261117"></script>
+<script src="/assets/rph-today.js?v=rph-pantas-fail-mingguan-20261117"></script>
 <script src="/assets/teacher-profile.js?v=profile-search-select-20261116"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>

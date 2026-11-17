@@ -996,7 +996,64 @@ def create_blueprint():
             "paid" if g.cikgulaju_rph_paid else "trial")
         if trial_remaining is not None:
             response.headers["X-RPH-Trial-Remaining"] = str(trial_remaining)
+        if request.args.get("rph_context") == "hari-ini":
+            from web.rph_timetable_word_bundle import (
+                WORD_RECEIPT_HEADER, word_receipt_claim, word_receipt_signer,
+            )
+            from web_v1_telegram_auth_routes import _config
+            config = _config()
+            if config and config.get("CIKGULAJU_WEB_SESSION_SECRET"):
+                signer = word_receipt_signer(config["CIKGULAJU_WEB_SESSION_SECRET"])
+                uid = g.cikgulaju_rph_account["telegram_user_id"]
+                response.headers[WORD_RECEIPT_HEADER] = signer.dumps(
+                    word_receipt_claim(uid, document.getvalue()))
         return response
+
+    @bp.post("/api/web/rph/timetable/word-bundle")
+    def timetable_word_bundle():
+        from itsdangerous import BadSignature
+        from web.rph_timetable_word_bundle import (
+            MAX_BUNDLE_BYTES, MAX_SLOTS, WORD_MIME, compose_word_bundle,
+            word_receipt_claim, word_receipt_signer,
+        )
+        from web_v1_telegram_auth_routes import _config
+
+        account, error = _account()
+        if error is not None:
+            return error
+        if request.headers.get("Origin") != "https://" + request.host:
+            return jsonify({"error": "Asal permintaan tidak sah."}), 400
+        if (request.mimetype != "multipart/form-data"
+                or not 0 < (request.content_length or 0) <= MAX_BUNDLE_BYTES):
+            return jsonify({"error": "Saiz dokumen terlalu besar. Gabungkan lebih sedikit slot."}), 413
+        request.max_content_length = MAX_BUNDLE_BYTES
+        request.max_form_parts = MAX_SLOTS * 2
+        submitted = request.files.getlist("document")
+        receipts = request.form.getlist("receipt")
+        if (set(request.files) != {"document"} or set(request.form) != {"receipt"}
+                or not 1 <= len(submitted) == len(receipts) <= MAX_SLOTS):
+            return jsonify({"error": "Senarai fail RPH tidak sah."}), 400
+        config = _config()
+        if not config or not config.get("CIKGULAJU_WEB_SESSION_SECRET"):
+            return jsonify({"error": "Pengesahan dokumen Word belum tersedia."}), 503
+        signer = word_receipt_signer(config["CIKGULAJU_WEB_SESSION_SECRET"])
+        uid = account["telegram_user_id"]
+        parts = []
+        for upload, receipt in zip(submitted, receipts, strict=True):
+            data = upload.read()
+            try:
+                approved = signer.loads(receipt, max_age=8 * 60 * 60)
+            except BadSignature:
+                approved = None
+            if not data.startswith(b"PK\x03\x04") or approved != word_receipt_claim(uid, data):
+                return jsonify({"error": "Fail Word ini belum dapat disahkan untuk gabungan."}), 400
+            parts.append(data)
+        try:
+            bundle = compose_word_bundle(parts)
+        except (ValueError, KeyError, OSError, ImportError):
+            return jsonify({"error": "Gabungan Word belum berjaya. Cuba semula atau muat turun pada setiap slot."}), 503
+        return send_file(bundle, mimetype=WORD_MIME, as_attachment=True,
+                         download_name="CIKGULAJU_RPH_MINGGU_INI.docx", conditional=False)
 
     @bp.route("/api/web/rph/pdf", methods=["GET", "POST"])
     def pdf():

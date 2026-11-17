@@ -4,6 +4,10 @@ on:
     branches: [production/cikgulaju-web-20261105, feat/rph-hari-ini-web-20261106]
     paths:
       - 'web/rph_hari_ini_web.py'
+      - 'web/rph_timetable_word_bundle.py'
+      - 'web/unified_rph_web.py'
+      - 'tests/test_web_rph_timetable_word_bundle.py'
+      - 'requirements-web-v1.txt'
       - 'web/math_unit_groups.py'
       - 'tools/run_web_v1_preview.py'
       - 'tests/test_web_math_unit_grouping_20261106.py'
@@ -19,6 +23,10 @@ on:
   pull_request:
     paths:
       - 'web/rph_hari_ini_web.py'
+      - 'web/rph_timetable_word_bundle.py'
+      - 'web/unified_rph_web.py'
+      - 'tests/test_web_rph_timetable_word_bundle.py'
+      - 'requirements-web-v1.txt'
       - 'web/math_unit_groups.py'
       - 'tools/run_web_v1_preview.py'
       - 'tests/test_web_math_unit_grouping_20261106.py'
@@ -45,8 +53,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: pip install 'flask==3.1.3' 'python-docx==1.2.0' 'lxml==5.4.0'
+      - run: pip install 'flask==3.1.3' 'python-docx==1.2.0' 'docxcompose==2.2.0' 'lxml==5.4.0'
       - run: PYTHONPATH=tests:. python -m unittest -v tests.test_web_rph_hari_ini_20261106 tests.test_web_teacher_profile_timetable tests.test_web_saved_classes tests.test_web_math_unit_grouping_20261106
+      - run: PYTHONPATH=tests:. python -m unittest -v tests.test_web_rph_timetable_word_bundle
       - name: Verify October English RPT and paired Word/PDF downloads
         if: hashFiles('tests/test_web_english_integrated_rph_2027.py') != ''
         run: PYTHONPATH=tests:. python -m unittest -v tests.test_web_english_integrated_rph_2027

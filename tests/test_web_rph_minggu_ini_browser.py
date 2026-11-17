@@ -34,7 +34,9 @@ class WeeklyRphBrowserTest(TestCase):
             window.readPbdRosterCount = async () => 32;
             window.showWebView = () => {};
             window.rphDownloadOptions = () => ({credentials:"same-origin"});
+            window.refreshSharedRphBalance = async () => ({rph_access_mode:"paid"});
           </script>
+          <script src="/pdf-lib.min.js"></script>
           <script src="/rph-today.js"></script>
         """
         monday = slot("Isnin", "ENGLISH", "English", "2 Bestari")
@@ -52,6 +54,8 @@ class WeeklyRphBrowserTest(TestCase):
                     {"label": "PdP 002 — Sains", "value": "L2"}],
         }
         availability, downloads, errors = [], [], []
+        pdf_parts = {}
+        fail_tuesday = False
 
         def intercept(route):
             url = urlsplit(route.request.url)
@@ -60,6 +64,8 @@ class WeeklyRphBrowserTest(TestCase):
                 route.fulfill(content_type="text/html", body='<!DOCTYPE html><meta charset="UTF-8">' + markup + fixture)
             elif url.path == "/rph-today.js":
                 route.fulfill(content_type="application/javascript", body=script)
+            elif url.path == "/pdf-lib.min.js":
+                route.fulfill(content_type="application/javascript", body=(static / "pdf-lib.min.js").read_bytes())
             elif url.path == "/api/web/rph/hari-ini":
                 route.fulfill(json={"date": MONDAY, "day": "Isnin", "count": 1, "entries": [monday], "holiday_notice": ""})
             elif url.path == "/api/web/rph/minggu-ini":
@@ -73,8 +79,12 @@ class WeeklyRphBrowserTest(TestCase):
             elif url.path == "/api/web/rph/extra-materials":
                 route.fulfill(json={"items": []})
             elif url.path == "/api/web/rph/pdf":
+                nonlocal fail_tuesday
                 downloads.append(params)
-                route.fulfill(content_type="application/pdf", body="%PDF-" + "x" * 1100)
+                if fail_tuesday and params["teacher_date"] == TUESDAY:
+                    fail_tuesday = False
+                    return route.fulfill(status=503, json={"error": "Ujian slot tergendala"})
+                route.fulfill(content_type="application/pdf", body=pdf_parts[params["teacher_date"]])
             else:
                 route.fulfill(status=404)
 
@@ -84,6 +94,13 @@ class WeeklyRphBrowserTest(TestCase):
             page.on("pageerror", lambda error: errors.append(str(error)))
             page.route("https://week.test/**", intercept)
             page.goto("https://week.test/")
+            for day, width in ((MONDAY, 595), (TUESDAY, 600)):
+                raw = page.evaluate("""async width => {
+                    const pdf = await PDFLib.PDFDocument.create();
+                    pdf.addPage([width,842]);
+                    return Array.from(await pdf.save());
+                }""", width)
+                pdf_parts[day] = bytes(raw) + b" " * 1200
             page.evaluate("window.rphTodayLoad()")
             page.get_by_text("2 Bestari · English", exact=True).wait_for()
             self.assertEqual(page.locator("#view-today-heading").inner_text(), "RPH Pantas")
@@ -110,9 +127,27 @@ class WeeklyRphBrowserTest(TestCase):
             self.assertEqual(len(downloads), 1)
             self.assertEqual((downloads[0]["teacher_class"], downloads[0]["teacher_date"], downloads[0]["teacher_start"]),
                              ("2 Amanah", TUESDAY, "08:00"))
+            downloads.clear()
+            fail_tuesday = True
+            group_download = page.get_by_role("button", name="Download Semua RPH")
+            group_download.click()
+            page.get_by_text("1 RPH sudah disimpan dalam tab ini", exact=False).wait_for()
+            self.assertEqual([row["teacher_date"] for row in downloads], [MONDAY, TUESDAY])
+            with page.expect_download() as saved:
+                group_download.click()
+            bundled = saved.value
+            self.assertTrue(bundled.suggested_filename.endswith(".pdf"))
+            raw = bundled.path().read_bytes()
+            widths = page.evaluate("""async bytes => {
+                const doc = await PDFLib.PDFDocument.load(Uint8Array.from(bytes));
+                return doc.getPages().map(page => page.getWidth());
+            }""", list(raw))
+            self.assertEqual(widths, [595, 600])
+            self.assertEqual([row["teacher_date"] for row in downloads], [MONDAY, TUESDAY, TUESDAY])
             page.get_by_role("button", name="RPH Hari Ini", exact=True).click()
             page.locator("#today-list").get_by_text("2 Bestari · English", exact=True).wait_for()
             self.assertEqual(page.locator("#view-today-heading").inner_text(), "RPH Pantas")
             self.assertEqual(page.locator("#today-list .daily-rph-card").count(), 1)
+            self.assertFalse(group_download.is_visible())
             self.assertFalse(errors)
             browser.close()
