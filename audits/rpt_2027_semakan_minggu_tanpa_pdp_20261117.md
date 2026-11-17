@@ -65,3 +65,9 @@ Ujian setempat pada `a4eb291d6b32` meliputi RPT, RPH gabungan, pemetaan buku, au
 - Untuk SK, semak SHA-256, saiz dan halaman 56 fail manifest Web serta kira agihan dalam `web/rpt_weekly_suggestions_2027.json`. Silang semak nombor unik dan jumlah terhadap audit sumber, dengan PJ dan PK dikira berasingan.
 - Untuk SJK/SJKC, semak semua 44 tajuk minggu, tarikh A/B dan turutan nombor PdP dalam PDF. Untuk DLP, padankan tarikh A/B setiap baris PDF ke minggu induk dan asingkan baris Lesson daripada Review.
 - Untuk lima PDF English integrasi, semak SHA-256 dalam manifest muka depan, nombor Lesson 1–160, minggu kosong dan kesamaan fail Web dengan penjana. Semakan kapasiti subjek lain belum menjadi kelulusan bagi setiap SK/SP dan setiap slot sekolah.
+
+## Kemajuan selepas audit asas
+
+- **RBT Tahun 4–6:** 32 sesi 60 minit setahun berakhir M38. [Web #871](https://github.com/nurynayreen88/CikguLaju-AI/pull/871) dan [Telegram #870](https://github.com/nurynayreen88/CikguLaju-AI/pull/870) mengalihkan sembilan PdP sebelum UASA.
+- **Pendidikan Moral Tahun 2–6:** 96 sesi 60 minit setahun, 42 teras dan 54 pengukuhan, berakhir M38. [Web #873](https://github.com/nurynayreen88/CikguLaju-AI/pull/873) dan [Telegram #874](https://github.com/nurynayreen88/CikguLaju-AI/pull/874) mengalihkan 55 PdP sebelum UASA dan menyediakan M18 untuk pentaksiran. Tarikh sesi sepadan bagi Kumpulan A dan B di kedua-dua saluran.
+- Selepas kedua-dua pembetulan, baki daripada 77 RPT asal ialah 61 RPT dengan 608 PdP bernombor selepas M39. Angka audit asas di atas merujuk keadaan sebelum pembetulan.
