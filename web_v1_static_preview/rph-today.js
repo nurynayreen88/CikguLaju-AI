@@ -29,6 +29,7 @@
  };
  const TYPES=new Set(["textbook","workbook","audio"]);
  const musicLink=/^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]{10,100}\/view\?usp=drivesdk$/;
+ const englishBookView=/^https:\/\/online\.anyflip\.com\/(?:rmzft\/wwgq|hykyg\/rrpd)\/mobile\/index\.html\?pageIndex=[1-9][0-9]{0,2}$/;
 
  function create(tag,cls,value){
   const el=document.createElement(tag);
@@ -595,6 +596,7 @@
   if(!item||!TYPES.has(item.type)||typeof item.title!=="string"||
      typeof item.url!=="string"||!item.title.trim())return false;
   if(subject==="ENGLISH"&&/^\/api\/web\/rph\/english-paired-material\/(?:student-book|workbook|audio-[1-8])\?/.test(item.url))return true;
+  if(subject==="ENGLISH"&&item.action==="Buka Buku Asal"&&englishBookView.test(item.url))return true;
   if(item.type==="workbook")return item.url.startsWith("/api/web/rph/english-workbook?");
   if(item.type==="textbook")return item.url.startsWith("/api/web/rph/english-student-book?")||
     (subject==="SCIENCE"&&item.url.startsWith("/api/web/rph/science-textbook?"));
@@ -665,7 +667,8 @@
       }
       if(!readyMaterialLink(item,c.slot.subject_code))continue;
       const label=item.title;
-      const action=item.type==="audio"&&musicLink.test(item.url)?"Buka Audio Sumber":"Download";
+      const action=englishBookView.test(item.url)?"Buka Buku Asal":
+        item.type==="audio"&&musicLink.test(item.url)?"Buka Audio Sumber":"Download";
       const row=actionRow(label,action,item.url);
       c.resultList.append(row.li);found++;
      }

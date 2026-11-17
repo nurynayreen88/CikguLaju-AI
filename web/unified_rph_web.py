@@ -1047,24 +1047,32 @@ def create_blueprint():
             )
             if sub == "ENGLISH":
                 from urllib.parse import urlencode
+                from web.english_book_view_links import english_book_view_link
+
                 params = urlencode({"year": year, "subject": sub,
                                     "unit": unit, "lesson": token})
                 pair_note = ""
+                book_lessons = (number,)
                 if request.args.get("paired") == "1":
                     from web.native_telegram_extra_materials_20261106 import english_paired_materials
 
                     pair = _rpt_material_pair(year, number)
                     if pair is None:
                         return jsonify({"items": [], "status": "BELUM_TERSEDIA"}), 404
+                    book_lessons = pair
                     types = {"student-book": "textbook", "workbook": "workbook"}
                     paired_items = english_paired_materials(year, pair)
                     if paired_items is not None:
-                        return jsonify({"lessons": pair, "status": "SUMBER_ASAL", "items": [
+                        items = [
                             {"type": types.get(item["id"], "audio"), "title": item["title"],
                              "url": f"/api/web/rph/english-paired-material/{item['id']}?{params}",
                              "action": "Download"}
                             for item in paired_items
-                        ]})
+                        ]
+                        book = english_book_view_link(year, book_lessons, {item["type"] for item in items})
+                        if book:
+                            items.append(book)
+                        return jsonify({"lessons": pair, "status": "SUMBER_ASAL", "items": items})
                     pair_note = f"Bahan gabungan belum tersedia. Senarai ini untuk Lesson {number:03d}."
                 items, missing = [], []
                 # Each verified Workbook uses the existing Telegram route.
@@ -1098,6 +1106,9 @@ def create_blueprint():
                             })
                     except Exception:
                         missing.append("Audio")
+                book = english_book_view_link(year, book_lessons, {item["type"] for item in items})
+                if book:
+                    items.append(book)
                 if missing and not items:
                     return jsonify({"items": [], "error":
                                     "Sumber bahan English Telegram belum dapat disahkan."}), 503
