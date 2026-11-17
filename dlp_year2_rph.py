@@ -16,6 +16,13 @@ def catalog():
         return json.load(source)
 
 
+@lru_cache(maxsize=1)
+def science_rpt_lessons():
+    path = Path(__file__).resolve().parent / "rpt_2027" / "dlp" / "science_year2_rph_rpt_2027.json"
+    with path.open(encoding="utf-8") as source:
+        return json.load(source)
+
+
 def resolve(year, subject, unit_id, lesson_id):
     if type(year) is not int or year != 2 or subject not in SUBJECTS:
         return None
@@ -32,6 +39,18 @@ def filename(lesson_id, fmt):
 
 
 def render(subject, unit, lesson, fmt, teacher):
+    lesson_label = lesson["id"]
+    phases = lesson["phases"]
+    if subject == "SCIENCE_DLP":
+        scheduled = science_rpt_lessons()[lesson["id"]]
+        lesson_label = f"Lesson {scheduled['number']:02d} · {scheduled['minutes']} min"
+        if scheduled["minutes"] == 30:
+            phases = [
+                (f"{phase.split(' · ', 1)[0]} · {duration} min", teacher_action, pupils_action)
+                for (phase, teacher_action, pupils_action), duration in zip(
+                    phases, (3, 15, 9, 3), strict=True
+                )
+            ]
     heading = (
         "Daily Lesson Plan",
         f"{SUBJECTS[subject]} (DLP) · Year 2 SK",
@@ -45,7 +64,7 @@ def render(subject, unit, lesson, fmt, teacher):
     )
     details = [
         ("Unit", unit["title"]),
-        ("Lesson / PdP", lesson["id"]),
+        ("Lesson / PdP", lesson_label),
         ("Class / date / time", "   ·   ".join(
             f"{label}: {value or '________'}" for label, value in class_details)),
         ("Standards", lesson["standards"]),
@@ -53,7 +72,7 @@ def render(subject, unit, lesson, fmt, teacher):
         ("Learning objective", lesson["objective"]),
         ("Materials", lesson["materials"]),
     ]
-    activities = [("Phase", "Teacher", "Pupils"), *lesson["phases"]]
+    activities = [("Phase", "Teacher", "Pupils"), *phases]
     reflection = [("Reflection", teacher.get("reflection") or lesson["reflection"])]
     output = BytesIO()
     if fmt == "word":
