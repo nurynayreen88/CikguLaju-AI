@@ -168,3 +168,27 @@ Sumber Food and health dan Sport menggunakan SOW serta buku English Plus 1 yang 
 | 112 | 152 | 4.2.3 / 2.1.2 | SB 65 A4, A5, A6 dan A8 / TB 79, catatan peristiwa dan temu bual pengalaman | 53 Ex4 | — |
 
 Lesson 106 telah mempunyai cadangan SK/SP yang dipadankan dengan DSKP. Lesson 101–102 berkongsi satu RPH 60 minit dalam jadual Oktober. Kandungan CD2.08–CD2.09 tersedia dalam [audit audio](english_y4_y5_october_audio_content_20261117.md). Nombor CD2.06, CD2.12, CD2.13 dan CD2.14 dipadankan dengan buku, manakala kandungan fail rakaman dan penghantaran melalui akaun guru produksi masih perlu disahkan.
+
+### Semakan 17 November bagi Lesson 113–123 dan 125–128
+
+Sumber Sport dan Growing up menggunakan SOW serta buku English Plus 1. Lesson 117 dan 123 menggunakan [teks The Dark oleh Adrian Henri](https://www.adrianhenri.com/childrens-poem-the-dark) dan langkah aktiviti dalam SOW. Halaman antologi disenaraikan mengikut SOW.
+
+| Lesson | SOW bercetak | SP utama / pelengkap | Bahan dan aktiviti bercetak | WB pilihan | Trek dalam RPH |
+| --- | ---: | --- | --- | --- | --- |
+| 113 | 153 | 1.2.3 / 3.2.4 | SB 66 A1–3 / TB 80, urutan X Games dan carian makna | 54 Ex1 | CD2.15–CD2.16 |
+| 114 | 154 | 2.1.2 / 1.2.5 | SB 66 A4 / TB 80 dan skrip X Games 152, temu bual dan urutan soalan | — | Bacaan guru daripada skrip |
+| 115 | 155 | 3.2.3 / 1.1.1 | SB 67 A1–3 / TB 81, petunjuk dalam profil dan bunyi akhir | — | CD2.17 |
+| 116 | 156 | 4.3.2 / 2.1.1 | SB 67 A4–5 dan Finished? / TB 81, ejaan bebas dan butiran peribadi | 55 Ex4 | — |
+| 117 | 157 | 5.2.1 / 4.2.5 | Anthology pp.22–23, respons The Dark dan perenggan sebab berpaut | — | — |
+| 118 | 158 | 1.2.4 / 2.2.1 | SB 97 A1–4 / TB 111, susunan arahan dan soalan susulan | — | CD3.15–CD3.16 |
+| 119 | 159 | 1.3.1 / 3.2.1 | SB 68 A1–3 / TB 82, petunjuk pertuturan dan idea utama dialog | — | CD2.18–CD2.19 |
+| 120 | 160 | 2.3.1 / 4.3.1 | SB 68 A4–5 / TB 82, penceritaan hujung minggu dan notis bertanda baca | 59 Ex6 | — |
+| 121 | 161 | 3.2.2 / 3.3.1 | SB 69 A1–3 / TB 83, butiran berbilang perenggan dan respons pembaca | 57 Ex1 | — |
+| 122 | 162 | 4.3.3 / 4.2.5 | SB 69 A4 / TB 83, draf profil, kata hubung dan maklum balas | 57 Ex4 | — |
+| 123 | 163 | 5.3.1 / 2.3.1 | Anthology pp.22–23, olahan rangkap The Dark dan penceritaan daripada imej | — | — |
+| 125 | 166 | 1.1.1 / 2.1.1 | SB 72 A1–3 / TB 86–87, diftong dan butiran peribadi | 60 Ex1 | CD2.21–CD2.22 |
+| 126 | 167 | 2.1.5 / 1.2.4 | SB 72–73 A4 dan Key Phrases / TB 87, deskripsi avatar dan arahan | 60 Ex5 | — |
+| 127 | 168 | 3.2.4 / 2.1.5 | SB 73 A7 dan 61 A5 / TB 87, semakan makna dan deskripsi | — | — |
+| 128 | 169 | 4.2.1 / 3.2.1 | SB 75 A5–8 dan Finished? / TB 89, idea utama profil dan butiran hujung minggu | 61 Ex4 | — |
+
+SOW Lesson 114 menyebut TB p.151 untuk skrip, manakala latihan dan rujukan skrip CD2.16 dalam Teacher’s Book meletakkannya pada p.152. Lesson 124 sudah mempunyai cadangan SK/SP yang dipadankan dengan DSKP. Pasangan 113–114 dan 119–120 kekal menggunakan satu RPH bagi setiap sesi bersepadu. Kandungan CD2.15–CD2.16 dan CD2.18–CD2.19 telah dipadankan dalam [audit audio](english_y4_y5_october_audio_content_20261117.md). Nombor CD2.17, CD3.15–CD3.16 dan CD2.21–CD2.22 disemak dalam buku. Kandungan lima rakaman tersebut dan muat turun melalui akaun guru produksi masih perlu disahkan.

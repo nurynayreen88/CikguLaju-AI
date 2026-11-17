@@ -261,6 +261,66 @@
     {
       "lesson": 112,
       "source_sha256": "655accb3f8fe93b3a7e854c0516aa6883e48443be9aabf41f376d3d9db3447cf"
+    },
+    {
+      "lesson": 113,
+      "source_sha256": "0fb19ec1457902db17026707889794054520795ba270937eab2d96c0efcb89d8"
+    },
+    {
+      "lesson": 114,
+      "source_sha256": "64e1361b3fe9ff0f7391398d8b14974edad000584bcdaa5fa74083be55168ebb"
+    },
+    {
+      "lesson": 115,
+      "source_sha256": "8dcfc1f1e163669081cbb9858bd4b3c107cf6bd617a54e2d8edf167b8d8c72ab"
+    },
+    {
+      "lesson": 116,
+      "source_sha256": "db782abbe0b19110ac6266d83ad76c911f702a205739140ac80fc0e2a8a8b118"
+    },
+    {
+      "lesson": 117,
+      "source_sha256": "87689d00b748a7b23ee13994b2ba28104d6c69fcb8fc39d7fb2b0671360cc9ef"
+    },
+    {
+      "lesson": 118,
+      "source_sha256": "b466132a26366dc6877394bfb84e43d7155387de2d2aef6ee9bf5e6f38e28f7e"
+    },
+    {
+      "lesson": 119,
+      "source_sha256": "33c20743a251fe922f5564382dcc6ebddf6443b6ced900842fa8b9b96dadc8cf"
+    },
+    {
+      "lesson": 120,
+      "source_sha256": "81e426b246578257de5ba1657acedb50a0729a10da1f4bab24872bd7fa70e0d3"
+    },
+    {
+      "lesson": 121,
+      "source_sha256": "4b3e9e0fbd2c846daeb8373bb2dde158d8d60f427883bfc3a1cc09904e01b3cd"
+    },
+    {
+      "lesson": 122,
+      "source_sha256": "ede5b5aed65bd70b271d2a7dee017b9fd8cdff442d6eccc49fac7c59544c3e7b"
+    },
+    {
+      "lesson": 123,
+      "source_sha256": "fc32b8500dde0838d8996d3c0b4b2e2e48af375894cf103d9c7303b432d143d2"
+    },
+    {
+      "lesson": 125,
+      "source_sha256": "3574f3a26384ebc92652f7e5b3369492fd1c829daed0843df5c301fff18a4c44"
+    },
+    {
+      "lesson": 126,
+      "source_sha256": "19978fdbf439404f376db811593002525ad42d47b82a61fd8c74067fd3d96419"
+    },
+    {
+      "lesson": 127,
+      "source_sha256": "b0307526a7a0f1dae66cdceb800d7628a79b01c69c12a66c944508bcdd35f53f"
+    },
+    {
+      "lesson": 128,
+      "source_sha256": "df9ea917a53968cf6e88cf462023b84b7ff93c6340f0338388d498cd143dc031"
     }
   ]
 }
