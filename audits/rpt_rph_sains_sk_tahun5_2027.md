@@ -13,6 +13,7 @@ Kesemua 14 PdP yang berada pada M39–43 dalam RPT sumber dialihkan. PdP terakhi
 - 83 PdP kandungan menggunakan [bank Sains SK Tahun 5](../web/sains_y5_83_activity_bank_draf_20261107.py) dan [lejar 83 rujukan buku teks](../audits/sains_y5_83_full_textbook_printed_sp_pages_20261107.json). Edisi rujukan ialah [Buku Teks Sains Tahun 5 SK, DBP 2020](https://anyflip.com/mcde/rewa/basic/), ISBN 978-983-49-2831-5.
 - 12 PdP teras Kemahiran Proses Sains mempunyai tugasan khusus. Kesemua 21 PdP pengukuhan mempunyai bahan dan evidens individu yang berbeza daripada sesi teras dengan kod SP yang sama.
 - PdP 066 mengubah bilangan mentol, dengan rujukan m/s 125–126 dan 128. PdP 067 mengubah bilangan sel kering sambil mengekalkan susunan dan bilangan mentol dalam setiap perbandingan, dengan rujukan m/s 125–127. PdP 086 memulakan penyiasatan pengaratan dan PdP 087 menilai rekod susulan.
+- PdP 078 membina satu graf daripada sampel yang sama sepanjang pemanasan, dengan bacaan ketika ais melebur dan air mendidih. PdP 087 menggunakan jadual awal dan bacaan susulan PdP 086. Rekod bertarikh set rujukan guru digunakan jika set kelas tiada.
 - Nombor 001–116 merujuk kepada urutan RPT ini. Salinan pangkalan data v25.68 dan tambahan Unit 1 menghasilkan 88 kumpulan PdP lama bagi 95 SP. Kod lama `ST5-PDP-084` hingga `ST5-PDP-088` merujuk Kemahiran Proses Sains. Nombor 084–088 bagi RPT 2027 merujuk Pengaratan. Set 2027 menggunakan `SK27-SCI-Y5-PDP-001` hingga `SK27-SCI-Y5-PDP-116`, dengan tiada pertindihan ID tepat dengan 88 kumpulan sumber lama tersebut.
 
 ## Eksport dan status

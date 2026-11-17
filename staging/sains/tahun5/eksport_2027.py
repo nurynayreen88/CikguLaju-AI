@@ -70,6 +70,14 @@ ACTIVITY_UPDATES = {
         "pupil2": "merekod kecerahan bagi setiap bilangan sel dan membandingkan dapatan kedua-dua jenis litar",
         "pbd": "Jadual kecerahan dua bilangan sel kering bagi litar bersiri dan litar selari serta rumusan bersandarkan bacaan",
     },
+    "6.1.3": {
+        "teacher1": "menyelia bacaan awal campuran ais dan air serta menetapkan sela masa untuk rekod",
+        "pupil1": "merekod suhu awal dan masa secara seragam pada jadual",
+        "teacher2": "memanaskan campuran yang sama di meja guru dan menunjukkan bacaan semasa ais melebur dan air mendidih",
+        "pupil2": "memplot graf suhu melawan masa, melabel takat lebur ais yang sama dengan takat beku air dan menanda takat didih",
+        "pbd": "Graf dengan paksi dan unit tepat serta kedua-dua takat dikenal pasti daripada bacaan semasa perubahan keadaan.",
+        "materials": "Campuran ais dan air, termometer, jam randik, alat pemanas guru dan kertas graf",
+    },
     "6.1.4": {
         "teacher1": "menyediakan air suam dan termometer digital serta menunjukkan cara merekod suhu bilik",
         "pupil1": "mencatat suhu air pada sela masa tetap dan membandingkannya dengan suhu bilik",
@@ -89,8 +97,8 @@ ACTIVITY_UPDATES = {
     "7.1.3": {
         "teacher1": "menyelia pelabelan tiga set paku besi yang membezakan pendedahan kepada air dan udara",
         "pupil1": "mencatat keadaan awal, tiga jenis pemboleh ubah dan hipotesis pada jadual",
-        "teacher2": "menunjukkan set yang sudah disediakan beberapa hari lebih awal dan menerangkan cara menjadualkan pemerhatian susulan",
-        "pupil2": "merekod tanda karat daripada set rujukan dan merancang perbandingan ulangan bagi set sendiri",
+        "teacher2": "menunjukkan set rujukan yang disediakan awal dan menetapkan tarikh semakan set kelas dalam PdP 087",
+        "pupil2": "merekod tanda karat daripada set rujukan serta menyimpan jadual keadaan awal untuk dibandingkan dalam PdP 087",
         "pbd": "Rekod keadaan awal, kawalan yang sepadan serta rumusan berpandukan hasil perbandingan set rujukan",
     },
     "8.2.1": {

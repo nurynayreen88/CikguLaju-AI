@@ -243,13 +243,13 @@
     "pbd": "Udara lazimnya mengembang apabila menerima haba dan mengecut apabila kehilangan haba dalam susunan ini."
   },
   "87": {
-    "materials": "Foto tiga set ujian pengaratan, jadual keadaan",
-    "induction_teacher": "Tunjuk paku yang berubah warna dalam salah satu set.",
-    "induction_pupils": "Nyatakan pemerhatian sebelum membuat inferens.",
-    "guide_teacher": "Bandingkan pasangan yang berbeza dalam satu keadaan sahaja.",
-    "guide_pupils": "Lengkapkan jadual kehadiran air dan udara dengan tanda karat.",
-    "pbd_teacher": "Semak perbandingan yang menyokong rumusan.",
-    "pbd": "Karat dalam set udara dan air, bersama hasil kawalan, menyokong kesimpulan bahawa air dan oksigen diperlukan."
+    "materials": "Set bertutup dan jadual PdP 086 atau foto bertarikh set rujukan guru",
+    "induction_teacher": "Tunjuk keadaan awal dan semasa tiga set PdP 086. Jika ujian kelas tiada, gunakan rekod set rujukan.",
+    "induction_pupils": "Nyatakan satu perubahan pada paku tanpa membuka bekas.",
+    "guide_teacher": "Bimbing perbandingan antara set yang berbeza dalam satu faktor sahaja.",
+    "guide_pupils": "Tambah catatan karat pada jadual asal dan bandingkan dapatan awal dengan dapatan susulan.",
+    "pbd_teacher": "Semak dua perbandingan dan alasan yang menggunakan rekod pemerhatian.",
+    "pbd": "Bandingkan set air dan udara dengan setiap set kawalan. Gunakan rekod awal dan susulan untuk menyimpulkan peranan air dan oksigen."
   },
   "93": {
     "materials": "Kad batu, minyak, udara dalam beg dan kabus",
