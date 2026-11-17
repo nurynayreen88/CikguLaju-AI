@@ -6,6 +6,7 @@ all other subject callbacks. Class dates remain dependent on teacher timetable.
 from __future__ import annotations
 
 import csv
+import json
 import re
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -55,12 +56,41 @@ def source_rows(year, group):
         return []
 
 
+def _rpt_rows(year, group):
+    rows = source_rows(year, group)
+    if not rows:
+        return []
+    try:
+        schedule = json.loads((ROOT / "weekly_2027.json").read_text(encoding="utf-8"))
+        calendar = json.loads((ROOT / "induk_minggu_2027_ab.json").read_text(encoding="utf-8"))
+        counts = schedule["sessions_by_week"]
+        weeks = calendar["weeks"][group]
+        if (len(counts) != 38 or len(weeks) != 44
+                or any(type(count) is not int or not 0 <= count <= 3 for count in counts)
+                or sum(counts) != len(rows)
+                or {n for n, count in enumerate(counts, 1) if count == 0} != {6, 18, 19}):
+            return []
+        index = 0
+        for number, count in enumerate(counts, 1):
+            week = weeks[number - 1]
+            if week["week"] != f"M{number:02d}":
+                return []
+            for row in rows[index:index + count]:
+                row["Minggu_RPT"] = week["week"]
+                row["Tarikh_Minggu_Mula"] = week["start"]
+                row["Tarikh_Minggu_Tamat"] = week["end"]
+            index += count
+        return rows
+    except (OSError, ValueError, KeyError, TypeError):
+        return []
+
+
 def pdf_ready(year, group):
     try:
         from reportlab.pdfgen import canvas  # noqa
     except ImportError:
         return False
-    return bool(source_rows(year, group))
+    return bool(_rpt_rows(year, group))
 
 
 def rph_ready(year):
@@ -112,12 +142,12 @@ def _draw_lines(c, text, x, top, width, size=8, max_lines=4, line_height=10):
 
 
 def build_rpt_pdf(year, group, destination):
-    """RPT: each session receives its own row, grouped by source M01-M44."""
+    """RPT: each session receives its own row, grouped by the shared A/B schedule."""
     from reportlab.lib import colors
     from reportlab.lib.pagesizes import A4, landscape
     from reportlab.pdfgen.canvas import Canvas
 
-    rows = source_rows(year, group)
+    rows = _rpt_rows(year, group)
     if not rows:
         raise ValueError("Unavailable/incomplete Moral 96-session source")
     dest = Path(destination)
@@ -140,9 +170,9 @@ def build_rpt_pdf(year, group, destination):
         c.drawString(left, h - 51, "KUMPULAN %s | 96 SESI | 44 MINGGU RPT" % group)
         c.setFont("Helvetica", 8.2)
         c.drawString(left, h - 67,
-                     "42 PdP teras + 54 pengukuhan | 60 minit/sesi (agihan cadangan)")
+                     "42 PdP teras + 54 pengukuhan | 60 minit/sesi | PdP baharu hingga minggu 38")
         c.drawString(left, h - 81,
-                     "Tarikh di bawah ialah julat minggu; tarikh kelas sebenar ikut jadual guru dan cuti negeri.")
+                     "M18 dan M39-M44 untuk pentaksiran, ulang kaji atau aktiviti sekolah. Sahkan tarikh mengikut jadual kelas.")
         c.setFillColor(colors.HexColor("#E8EDF1"))
         c.rect(left, h - 127, right - left, 24, stroke=0, fill=1)
         c.setFillColor(colors.HexColor("#183047"))
