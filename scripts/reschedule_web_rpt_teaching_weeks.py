@@ -1,5 +1,6 @@
 """Align Web RPT teaching sequences with the 2027 calendar."""
 
+from argparse import ArgumentParser
 from collections import Counter, defaultdict
 from datetime import date
 from hashlib import sha256
@@ -18,6 +19,7 @@ from .build_web_rpt_weekly_suggestions import (
 
 SLUGS = ('bahasa_melayu', 'sains', 'pendidikan_islam', 'pendidikan_moral', 'pjpk', 'bahasa_arab')
 AUDIT = Path('audits/rpt_2027_weekly_allocation_20261115.csv')
+MORAL_SCHEDULE = CALENDAR.with_name('weekly_2027.json')
 TOP, BOTTOM = 78.7, 556
 LEFT, MARGIN = 35, 23
 CELL_WIDTH = 105
@@ -80,6 +82,23 @@ def allocate(subject, original):
         if count:
             result[week] = {'': list(range(start, start + count))}
             start += count
+    return result
+
+
+def moral_before_uasa_plan(original):
+    counts = json.loads(MORAL_SCHEDULE.read_text(encoding='utf-8'))['sessions_by_week']
+    source_ids = [n for week in original.values() for n in week['']]
+    if (source_ids != list(range(1, 97)) or len(counts) != 38 or sum(counts) != 96
+            or any(type(count) is not int or not 0 <= count <= weekly_capacity('MORAL', week)
+                   for week, count in enumerate(counts, 1))
+            or {week for week, count in enumerate(counts, 1) if count == 0} != {6, 18, 19}):
+        raise ValueError('Moral requires 96 consecutive PdP through M38')
+    result = {}
+    offset = 0
+    for week, count in enumerate(counts, 1):
+        if count:
+            result[week] = {'': source_ids[offset:offset + count]}
+            offset += count
     return result
 
 
@@ -261,7 +280,7 @@ def print_week(page, rect, week, dates, font, closed=False, lessons=None):
     for index, value in enumerate(lines):
         width = font.text_length(value, fontsize=7)
         x = rect.x1 - width - 5 if rect.x0 > 500 else rect.x0 + 7
-        page.insert_text((x, first + index * space), value, fontsize=7, fontname='RPTWeek', color=INK)
+        page.insert_text((x, first + index * space), value, fontsize=7, fontname='helv', color=INK)
 
 
 def isolate_clip(fragments, source, page_no, clip):
@@ -279,7 +298,7 @@ def isolate_clip(fragments, source, page_no, clip):
     return page.number
 
 
-def add_page(pdf, bands, path_font):
+def add_page(pdf, bands):
     original = bands[0]
     rect = original.rect
     page = pdf.new_page(width=rect.width, height=rect.height)
@@ -287,9 +306,8 @@ def add_page(pdf, bands, path_font):
     page.show_pdf_page(header, bands, 0, clip=header)
     footer = fitz.Rect(0, 558, 755, rect.height)
     page.show_pdf_page(footer, bands, 1, clip=footer)
-    page.insert_font(fontname='RPTWeek', fontfile=str(path_font))
     page.insert_text((775, 576), f'Halaman {page.number + 1}', fontsize=7,
-                     fontname='RPTWeek', color=INK)
+                     fontname='helv', color=INK)
     return page
 
 
@@ -312,8 +330,7 @@ def append_row(page, original, fragments, row_fragments, row, y, copied):
 
 
 def render(source, target, rtl, assignments, dates, *, show_numbered_range=False):
-    path_font = FONT_DIR / 'DejaVuSans.ttf'
-    font = fitz.Font(fontfile=str(path_font))
+    font = fitz.Font('helv')
     with fitz.open(source) as original, fitz.open() as output, fitz.open() as fragments:
         rows = pdf_rows(original, rtl)
         week_for_row = {(component, num): week for week, plan in assignments.items()
@@ -331,7 +348,7 @@ def render(source, target, rtl, assignments, dates, *, show_numbered_range=False
         isolate_clip(fragments, original, 1, fitz.Rect(0, 558, 755, rect.height))
         row_fragments = {identity: isolate_clip(fragments, original, page_no, clip)
                          for identity, page_no, clip in rows}
-        page = add_page(output, fragments, path_font)
+        page = add_page(output, fragments)
         y = TOP
         for week in sorted(assignments.keys() | HOLIDAY.keys()):
             body = body_rect(page, rtl)
@@ -339,10 +356,10 @@ def render(source, target, rtl, assignments, dates, *, show_numbered_range=False
             if week in HOLIDAY:
                 height = 59
                 if y + height > BOTTOM:
-                    page, y = add_page(output, fragments, path_font), TOP
+                    page, y = add_page(output, fragments), TOP
                 page.draw_rect(fitz.Rect(body.x0, y, body.x1, y + height), color=LINE, width=0.5)
                 page.insert_text((body.x0 + 9, y + 30), HOLIDAY[week], fontsize=9,
-                                 fontname='RPTWeek', color=INK)
+                                 fontname='helv', color=INK)
                 print_week(page, fitz.Rect(x, y, x + CELL_WIDTH, y + height),
                            week, dates[week], font, closed=True)
                 y += height
@@ -351,13 +368,13 @@ def render(source, target, rtl, assignments, dates, *, show_numbered_range=False
             lessons = assignments[week][''] if show_numbered_range else None
             height = sum(row[2].height for row in pending)
             if y > TOP and y + height > BOTTOM:
-                page, y = add_page(output, fragments, path_font), TOP
+                page, y = add_page(output, fragments), TOP
             start = y
             for row in pending:
                 if y + row[2].height > BOTTOM:
                     print_week(page, fitz.Rect(x, start, x + CELL_WIDTH, y), week, dates[week], font,
                                lessons=lessons)
-                    page, y = add_page(output, fragments, path_font), TOP
+                    page, y = add_page(output, fragments), TOP
                     start = y
                 if y + row[2].height > BOTTOM:
                     raise ValueError(f'{source}: one source row exceeds a page')
@@ -406,7 +423,7 @@ def update_audit(allocation):
         writer.writerows(records)
 
 
-def main():
+def main(*, moral_before_uasa=False):
     calendar = json.loads(CALENDAR.read_text(encoding='utf-8'))['weeks']
     iso = {n: tuple(g[n - 1][field] for g in (calendar['A'], calendar['B'])
                    for field in ('start', 'end')) for n in range(1, 45)}
@@ -417,11 +434,12 @@ def main():
     manifest = json.loads(manifest_path.read_text())
     cover = json.loads(cover_path.read_text())
     allocations = {}
+    slugs = ('pendidikan_moral',) if moral_before_uasa else (*SLUGS, 'matematik')
     with TemporaryDirectory(dir=ROOT) as folder:
         outputs = []
         for key, record in manifest['files'].items():
             slug, year = key.split(':')
-            if slug not in (*SLUGS, 'matematik'):
+            if slug not in slugs:
                 continue
             path = ROOT / record['path']
             code = SUBJECTS[slug]
@@ -429,7 +447,11 @@ def main():
             if digest != record['sha256'] or digest != cover['source_sha256_by_subject_year'][key]:
                 raise ValueError(f'Source and cover hashes disagree for {path}')
             _, old = read_weeks(path, code)
-            if code == 'MATH':
+            if moral_before_uasa:
+                new = moral_before_uasa_plan(old)
+                if old == new:
+                    continue
+            elif code == 'MATH':
                 new = math_telegram_plan(year, iso)
                 if old == new:
                     continue
@@ -443,7 +465,7 @@ def main():
                 source = Path(folder) / f'math_source_{year}.pdf'
                 clean_math_week_text(path, source, year)
             pages = render(source, candidate, code in RTL_SUBJECTS, new, dates,
-                           show_numbered_range=(code == 'MATH'))
+                           show_numbered_range=(code == 'MATH' or moral_before_uasa))
             published_dates, published = read_weeks(candidate, code)
             if published != new or published_dates != {w: iso[w] for w in new}:
                 raise ValueError(f'The new PDF does not match the proposed allocation for {path}')
@@ -463,8 +485,11 @@ def main():
                 candidate.replace(path)
             for path, data in ((manifest_path, manifest), (cover_path, cover)):
                 path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-            update_audit(allocations)
+            if not moral_before_uasa:
+                update_audit(allocations)
 
 
 if __name__ == '__main__':
-    main()
+    parser = ArgumentParser(description=__doc__)
+    parser.add_argument('--moral-before-uasa', action='store_true')
+    main(**vars(parser.parse_args()))
