@@ -1415,9 +1415,6 @@ function currentRphLessonKey(){
                         currentLessonSourceUnit(),topic.value,lesson.value,
                         subject.value==="PJPK"?component.value:""]);
 }
-function dlpYear6Mathematics(){
- return curriculum.value==="dlp"&&year.value==="6"&&subject.value==="MATH_DLP";
-}
 function currentRphParams(){
  if((curriculum.value!=="kssr"&&!dlpYear6Mathematics())||!/^[1-6]$/.test(year.value)||!subject.value||!unit.value||!lesson.value)return null;
  if(subject.value==="BM"&&(!theme.value||!topic.value))return null;
@@ -1467,6 +1464,9 @@ const dlpReviewData=JSON.parse(document.getElementById("dlp-review-data").textCo
 const dlpReviewHeading=document.getElementById("dlp-rph-heading");
 const dlpReviewContent=document.getElementById("dlp-rph-content");
 const subjectVariants=window.cikgulajuSubjectVariants||[];
+function dlpYear6Mathematics(){
+ return curriculum.value==="dlp"&&year.value==="6"&&subject.value==="MATH_DLP";
+}
 const subjectCollator=new Intl.Collator("ms-MY",{sensitivity:"base"});
 const dlpSubjectOptions=subjectVariants.filter(item=>item.curriculum==="dlp")
  .map(item=>({...item,value:item.rph_code}));
@@ -1489,7 +1489,7 @@ const curriculumYears={
  kp2027:[{value:"1",label:"Tahun 1 (KP Baharu)"}],
  dlp:primaryYears.map(({value,label})=>({
   value,
-  label:value==="2"?label+" — Untuk Semakan Guru":
+  label:value==="2"?label+" — Untuk Semakan Guru":value==="6"?label:
    label+(value==="1"?" (KP Baharu)":"")+" — Dalam Penyediaan"
  }))
 };

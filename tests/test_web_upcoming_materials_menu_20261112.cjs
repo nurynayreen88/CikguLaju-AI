@@ -107,7 +107,8 @@ const makeNode=()=>({textContent:"",children:[],append(...items){this.children.p
 const content=makeNode();
 const dlpReviewData=JSON.parse(source.match(/<script id="dlp-review-data" type="application\/json">([\s\S]*?)<\/script>/)[1]);
 assert.deepEqual(Object.values(dlpReviewData).map(groups=>groups.map(group=>group.lessons.length)),[[7,1,5,7,6,6,7,7,11,6],[12,21,8,11,6,10,6,4]]);
-const variantRpt={hidden:true,dataset:{}};
+const variantRpt={hidden:true,dataset:{}}, materials={hidden:true,disabled:true};
+let checkedRph=0;
 const variants=[
  {code:"science_dlp",label:"Science (DLP)",rph_code:"SCIENCE_DLP",curriculum:"dlp",rpt_years:[2,3,4,5,6]},
  {code:"mathematics_dlp",label:"Mathematics (DLP)",rph_code:"MATH_DLP",curriculum:"dlp",rpt_years:[2,3,4,5,6]},
@@ -121,7 +122,7 @@ const ctx={
  curriculum,year,subject,unit,lesson,theme,topic,component,catalogStatus:{textContent:""},
  dlpPreviewPanel:panel,dlpReviewHeading:heading,dlpReviewContent:content,dlpReviewData,
  window:{cikgulajuSubjectVariants:variants},rphSubjectPicker:{sync(){}},
- document:{createElement:makeNode,createTextNode:text=>({textContent:text}),getElementById:()=>variantRpt},
+ document:{createElement:makeNode,createTextNode:text=>({textContent:text}),getElementById:id=>id==="show-materials"?materials:variantRpt},
  resetSelect(el,label){el.value="";el.options=[{value:"",label}];el.disabled=true;},
  fillSelect(el,items,label){ctx.resetSelect(el,label);el.options.push(...items);el.disabled=!items.length;},
  resetCurriculumChoices(){ctx.showDlpReview(null);ctx.resetSelect(unit,"");ctx.resetSelect(lesson,"");unit.hidden=lesson.hidden=variantRpt.hidden=true;delete variantRpt.dataset.subject;},
@@ -130,7 +131,15 @@ const ctx={
  updateSelectionHelp(text){ctx.help=text;},
  async loadOptions(kind){catalogueCalls.push(kind);return [{value:"MATH",label:"Matematik"}];},
  showStep(el,visible){el.hidden=!visible;}, subjectNavLabel(){return "Unit";},
- async fillForSelection(_el,kind,extra){catalogueCalls.push(kind,extra.subject);},
+ async fillForSelection(el,kind,extra){
+  catalogueCalls.push(kind,extra.subject);
+  if(extra.subject==="MATH_DLP")ctx.fillSelect(el,[{value:"01",label:"Unit 1 Whole Numbers and Operations"}],"Pilih Unit");
+ },
+ async loadFinalLesson(kind,extra){
+  catalogueCalls.push(kind,extra.subject,extra.unit);
+  ctx.fillSelect(lesson,[{value:"DLP-MATH-Y6-L01",label:"Lesson 01 • Whole Numbers"}],"Pilih Lesson");
+ },
+ async checkRphAvailability(){checkedRph++;},
 };
 vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexOf("async function loadOptions("))
  +"\n"+code.slice(code.indexOf('curriculum.addEventListener("change"'),code.indexOf('const MATERIAL_CATEGORIES'))
@@ -165,7 +174,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  listeners["curriculum.change"]();
  assert.deepEqual(year.options.map(x=>x.label),[
   "Pilih Tahun","Tahun 1 (KP Baharu) — Dalam Penyediaan","Tahun 2 — Untuk Semakan Guru",
-  "Tahun 3 — Dalam Penyediaan","Tahun 4 — Dalam Penyediaan","Tahun 5 — Dalam Penyediaan","Tahun 6 — Dalam Penyediaan"
+  "Tahun 3 — Dalam Penyediaan","Tahun 4 — Dalam Penyediaan","Tahun 5 — Dalam Penyediaan","Tahun 6"
  ]);
  year.value="2";
  await listeners["year.change"]();
@@ -200,7 +209,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
   }
   assert.equal(lessonNumber,subjectCode==="MATH_DLP"?78:63);
  }
- for(const n of ["1","3","4","5","6"]){
+ for(const n of ["1","3","4","5"]){
   year.value=n;
   await listeners["year.change"]();
   assert.equal(panel.hidden,true);
@@ -216,6 +225,25 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
   }
  }
  assert.deepEqual(catalogueCalls,[]);
+ year.value="6";
+ await listeners["year.change"]();
+ subject.value="SCIENCE_DLP";
+ await listeners["subject.change"]();
+ assert.match(ctx.help,/Dalam Penyediaan/);
+ assert.equal(unit.hidden,true);
+ subject.value="MATH_DLP";
+ await listeners["subject.change"]();
+ assert.equal(unit.hidden,false);
+ assert.deepEqual(unit.options.map(x=>x.value),["","01"]);
+ unit.value="01";
+ await listeners["unit.change"]();
+ assert.deepEqual(lesson.options.map(x=>x.value),["","DLP-MATH-Y6-L01"]);
+ lesson.value="DLP-MATH-Y6-L01";
+ listeners["lesson.change"]();
+ assert.equal(panel.hidden,true);
+ assert.equal(materials.hidden,false);
+ assert.equal(checkedRph,1);
+ assert.deepEqual(catalogueCalls.splice(0),["units","MATH_DLP","pdp","MATH_DLP","01"]);
  curriculum.value="kssr";
  listeners["curriculum.change"]();
  assert.equal(panel.hidden,true);
