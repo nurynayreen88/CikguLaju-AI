@@ -157,13 +157,23 @@ vm.runInNewContext(code.slice(code.indexOf("const dlpSubjectOptions="),code.inde
    assert.equal(panel.hidden,true);
    assert.equal(lesson.options.length,group.lessons.length+1);
    for(const item of group.lessons){
+    const hasRpt = subjectCode==="SCIENCE_DLP";
+    const label = hasRpt ? "Lesson "+String(item.number).padStart(2,"0")+" — "+item.title : item.title;
+    assert.equal(lesson.options.find(option=>option.value===item.id).label,label);
     lesson.value=item.id;
     listeners["lesson.change"]();
-    assert.equal(heading.textContent,item.title);
+    assert.equal(heading.textContent,label);
     assert.equal(panel.hidden,false);
-    assert.equal(content.children.length,17);
-    assert.ok(content.children[0].children.some(node=>node.textContent===item.standards));
-    assert.ok(content.children[1].children.some(node=>node.textContent===item.references));
+    const standardsIndex = hasRpt ? 1 : 0;
+    if(hasRpt){
+     assert.ok(Number.isInteger(item.number));
+     assert.ok([30,60].includes(item.minutes));
+     assert.equal(item.phases.reduce((minutes,[phase])=>minutes+Number(phase.split(" ").at(-2)),0),item.minutes);
+     assert.ok(content.children[0].children.some(node=>node.textContent===item.minutes+" min"));
+    }
+    assert.equal(content.children.length,17+standardsIndex);
+    assert.ok(content.children[standardsIndex].children.some(node=>node.textContent===item.standards));
+    assert.ok(content.children[standardsIndex+1].children.some(node=>node.textContent===item.references));
    }
   }
  }
