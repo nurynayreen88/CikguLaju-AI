@@ -5,6 +5,7 @@
  const by=id=>document.getElementById(id);
  const kind=by("special-kind"), year=by("special-year");
  const phase=by("special-phase"), subject=by("special-subject");
+ const subjectPicker=initSearchableSelect(subject,"Taip untuk cari subjek");
  const activity=by("special-activity"), status=by("special-status");
  const action=by("special-show"), materials=by("special-materials");
  const list=by("special-materials-list"), note=by("special-materials-note");
@@ -14,11 +15,13 @@
 
  function optionList(el,values,label){
   el.replaceChildren(new Option(label,""));
-  for(const x of values){
-   if(!x || typeof x.label!=="string" || typeof x.value!=="string")continue;
+  const items=values.filter(x=>x && typeof x.label==="string" && typeof x.value==="string");
+  if(el===subject)items.sort((a,b)=>subjectCollator.compare(a.label,b.label));
+  for(const x of items){
    el.add(new Option(x.label,x.value));
   }
   el.disabled=el.options.length<=1;
+  if(el===subject)subjectPicker.update(items);
  }
  function show(el,visible){el.hidden=!visible;}
  function setStatus(message){status.textContent=message;}

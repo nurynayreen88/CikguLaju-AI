@@ -155,11 +155,14 @@
   if(!loading&&!reviewing&&resultsHost.hidden){
    const done=selectable.length-incomplete.length;
    if(weekly){
+    const pending=included.length-selectable.length;
     allStatus.textContent=selectable.length
      ?done+" daripada "+selectable.length+" slot sudah dipilih. "+
       (done?(confirm.checked?"Tekan Sediakan RPH Minggu Ini.":"Sahkan hari PdP sebelum menyemak bahan."):
        "Pilih Lesson/PdP untuk slot yang hendak disediakan.")
      :"";
+    if(pending)allStatus.textContent+=(selectable.length?" ":"")+pending+
+     " slot belum ada RPH untuk muat turun gabungan.";
     return;
    }
    if(!selectable.length){
@@ -487,6 +490,18 @@
   const c={slot,index,ticket,date:slotDate,card,rev:0,busy:false,controls:{}};
   if(!slot.can_prepare){
    card.append(create("p","notice",slot.reason||"Waktu ini tidak mempunyai padanan sumber yang disahkan."));
+   if(slot.rph_preview){
+    const preview=create("button","","Semak Pratonton RPH");
+    preview.type="button";
+    preview.addEventListener("click",()=>window.openScheduledRphPreview(slot.rph_preview,slot.year));
+    card.append(preview);
+   }
+   if(slot.rpt_subject){
+    const rpt=create("button","","Buka RPT 2027");
+    rpt.type="button";
+    rpt.addEventListener("click",()=>void window.openScheduledRpt(slot.rpt_subject,slot.year));
+    card.append(rpt);
+   }
    parent.append(card);
    return c;
   }

@@ -14,6 +14,7 @@ from zoneinfo import ZoneInfo
 from flask import Blueprint, jsonify, request
 from itsdangerous import BadSignature
 
+from web.primary_subject_choices import variants_by_name
 from web.rph_today_progress import (
     attach_progress, class_key, lesson_signer, read_progress, read_progress_summary, save_completion,
 )
@@ -33,7 +34,9 @@ SUBJECTS = {
     "bm": ("BM", None),
     "bahasa malaysia": ("BM", None),
     "english": ("ENGLISH", None),
+    "english (sk)": ("ENGLISH", None),
     "bahasa inggeris": ("ENGLISH", None),
+    "bahasa inggeris (sk)": ("ENGLISH", None),
     "bi": ("ENGLISH", None),
     "matematik": ("MATH", None),
     "mathematics": ("MATH", None),
@@ -207,6 +210,8 @@ def day_payload(profile, schedule, target, *, today=None):
             raise ProfileValidation("Maklumat waktu dalam jadual tidak sah")
         year = class_year(cls)
         code, component = subject_identity(subject)
+        subject_key = " ".join(subject.casefold().split())
+        variant = variants_by_name().get(subject_key)
         valid = bool(year and code)
         reason = ("" if valid else
                   "Tahun kelas belum jelas; semak nama kelas di Profil Guru."
@@ -218,6 +223,15 @@ def day_payload(profile, schedule, target, *, today=None):
                  "class_name":cls,"subject":subject,
                  "year":year,"subject_code":code,"component":component,
                  "can_prepare":can_prepare,"reason":closure or reason,"rpt_suggestion":suggestion}
+        if variant and year and not closure:
+            entry["reason"] = "RPH untuk subjek dan tahun ini dalam penyediaan."
+            if year in variant.get("rpt_years", ()):
+                entry["rpt_subject"] = variant["code"]
+            if year in variant.get("preview_years", ()):
+                entry["reason"] = "Pratonton RPH tersedia untuk semakan guru."
+                entry["rph_preview"] = variant["rph_code"]
+        elif subject_key in NON_TEACHING and not closure:
+            entry["reason"] = "Waktu tanpa PdP."
         if code == "ENGLISH" and suggestion:
             entry["rpt_capacity"] = english_week_capacity(rows, state, cls, year, suggestion)
         selected.append(entry)

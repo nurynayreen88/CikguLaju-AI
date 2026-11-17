@@ -48,6 +48,38 @@ class MobileRptDownloadTests(unittest.TestCase):
           };
         }""",{"allowed":allowed,"ready":ready})
 
+    def test_manual_rph_search_opens_matching_sjkc_rpt(self):
+        page=self.browser.new_page(viewport={"width":360,"height":840},has_touch=True)
+        try:
+            page.goto(HTML,wait_until="domcontentloaded")
+            page.evaluate("""async () => {
+                document.querySelector('main.panel').hidden=true;
+                document.querySelector('#workspace').hidden=false;
+                const row={code:"matematik_sjkc",label:"Matematik (SJKC)",curriculum:"sjkc"};
+                sjkcSubjectOptions.push({...row,value:row.code,rpt_years:[2]});
+                const realFetch=window.fetch;
+                window.fetch=async (url,options)=>url==='/api/rpt/2027/catalog'
+                  ?new Response(JSON.stringify({subjects:[{...row,years:[
+                       {year:2,pdf_ready:true,download_enabled:true}]}]}))
+                  :realFetch(url,options);
+                try { await loadRptCatalog(); } finally { window.fetch=realFetch; }
+                showWebView("rph");
+            }""")
+            page.locator("#curriculum").select_option("sjkc")
+            page.locator("#year").select_option("2")
+            search=page.locator("#subject-input")
+            search.fill("matematik sjkc")
+            search.press("Enter")
+            self.assertEqual(page.locator("#subject").input_value(),"matematik_sjkc")
+            self.assertIn("dalam penyediaan",page.locator("#selection-help").inner_text())
+            page.locator("#rph-variant-rpt").click()
+            self.assertTrue(page.locator("#view-rpt").is_visible())
+            self.assertEqual(page.locator("#rpt-curriculum").input_value(),"sjkc")
+            self.assertEqual(page.locator("#rpt-year").input_value(),"2")
+            self.assertEqual(page.locator("#rpt-subject").input_value(),"matematik_sjkc")
+        finally:
+            page.close()
+
     def test_cascading_dropdowns_filter_curriculum_and_clear_downloads(self):
         page=self.browser.new_page(viewport={"width":360,"height":840},has_touch=True)
         try:
@@ -119,7 +151,7 @@ class MobileRptDownloadTests(unittest.TestCase):
             subject_search.fill("melayu")
             self.assertEqual(subject_options.all_text_contents(),["Bahasa Melayu (SJK)"])
             subject_search.fill("tiada padanan")
-            self.assertTrue(page.get_by_text("Tiada subjek sepadan.").is_visible())
+            self.assertTrue(page.locator("#view-rpt").get_by_text("Tiada subjek sepadan.").is_visible())
             subject_search.fill("cInA")
             subject_search.press("ArrowDown")
             subject_search.press("Enter")

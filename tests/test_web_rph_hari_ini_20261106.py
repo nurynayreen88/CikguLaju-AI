@@ -324,6 +324,38 @@ class DailyTimetablePureTests(TestCase):
             date(2026,11,6),today=date(2026,11,6))
         self.assertTrue(all(not x["can_prepare"] for x in out["entries"]))
 
+    def test_sjk_and_dlp_timetable_use_only_their_own_catalogue(self):
+        target = date(2027, 1, 11)
+        profile = {"state_name": "Pahang"}
+        subjects = [
+            ("2 Amanah", "Sains"),
+            ("2 Amanah", "Sains (DLP)"),
+            ("2 Amanah", "Sains (SJKC)"),
+            ("3 Amanah", "Matematik (SJKC)"),
+            ("2 Amanah", "Bahasa Iban"),
+        ]
+        schedule = {"entries": [
+            {"day": "Isnin", "start": f"{7+i:02d}:00", "end": f"{7+i:02d}:30",
+             "class_name": cls, "subject": subject}
+            for i, (cls, subject) in enumerate(subjects)
+        ]}
+        day = day_payload(profile, schedule, target, today=target)
+        science, dlp, sjkc, math_sjkc, iban = day["entries"]
+        self.assertTrue(science["can_prepare"])
+        self.assertEqual(science["subject_code"], "SCIENCE")
+        for row in (dlp, sjkc, math_sjkc, iban):
+            self.assertFalse(row["can_prepare"])
+            self.assertIsNone(row["subject_code"])
+            self.assertIsNone(row["rpt_suggestion"])
+        self.assertEqual(dlp["rpt_subject"], "science_dlp")
+        self.assertEqual(dlp["rph_preview"], "SCIENCE_DLP")
+        self.assertEqual(sjkc["rpt_subject"], "sains_sjkc")
+        self.assertNotIn("rph_preview", sjkc)
+        self.assertNotIn("rpt_subject", math_sjkc)
+        self.assertIn("dalam penyediaan", iban["reason"])
+        week = week_payload(profile, schedule, target, today=target)
+        self.assertEqual(week["days"][0]["entries"], day["entries"])
+
 
 class DailyTimetableRouteTests(TestCase):
     def setUp(self):

@@ -439,6 +439,9 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .rpt-selectors label{margin-top:0}
 .rpt-selectors select,.rpt-selectors .school-picker-combo input{width:100%;min-width:0}
 .rpt-selectors .school-picker-combo input{border:1px solid #ceded8;border-radius:12px;padding:13px 36px 13px 13px;font:inherit}
+#rph-subject-search input,#special-subject-wrap .school-picker-combo input{width:100%;min-height:44px;border:1px solid #ceded8;border-radius:12px;padding:13px 36px 13px 13px;font:inherit}
+#subject[hidden],#special-subject[hidden],#rph-subject-search[hidden],#rph-variant-rpt[hidden]{display:none}
+#rph-variant-rpt{margin-top:10px}
 .rpt-actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .rpt-actions [hidden]{display:none!important}
 .rpt-actions #rpt-download,.rpt-actions .rpt-download-link{margin:0;min-height:46px}
@@ -712,9 +715,18 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </section>
 <section id="view-rph" class="app-view" aria-labelledby="view-rph-heading" hidden>
 <h2 id="view-rph-heading" tabindex="-1">Sediakan RPH</h2><p id="account-access" class="notice" role="status"></p><section class="rph-guide" aria-label="Cara menyediakan RPH"><h3>Cara menyediakan RPH</h3><p><strong>1.</strong> Pilih Kurikulum → Tahun → Subjek → Unit/Tajuk → Lesson/PdP.</p><p><strong>2.</strong> Pilih kelas, tarikh, waktu mula/tamat dan bilangan murid jika perlu.</p><p><strong>3.</strong> Tekan <strong>Jana Bahan</strong> untuk melihat RPH PDF, RPH Word, Buku Teks, Audio dan Buku Aktiviti yang tersedia bagi Lesson/PdP ini, kemudian muat turun bahan pilihan.</p><p class="notice">Hanya RPH yang mempunyai sumber lengkap tersedia. 10 janaan RPH percuma dikongsi antara Web dan Telegram. Rakan Pembangun yang aktif mendapat akses tanpa had.</p></section><p id="selection-help" class="selection-help" role="status">Mula dengan memilih kurikulum.</p>
-<label for="curriculum">Kurikulum</label><select id="curriculum"><option value="">Pilih Kurikulum</option><option value="kssr">KSSR</option><option value="kp2027">KP27 (KP Baharu)</option><option value="dlp">DLP</option></select>
+<label for="curriculum">Kurikulum</label><select id="curriculum"><option value="">Pilih Kurikulum</option><option value="kssr">KSSR (SK)</option><option value="sjkc">KSSR (SJKC)</option><option value="kp2027">KP27 (KP Baharu)</option><option value="dlp">DLP</option></select>
 <label for="year" id="year-label" hidden>Tahun</label><select id="year" hidden disabled><option value="">Pilih Kurikulum dahulu</option></select>
-<label for="subject" id="subject-label" hidden>Subjek</label><select id="subject" hidden disabled><option value="">Pilih Tahun dahulu</option></select><label for="component" id="component-label" hidden>Pilih komponen PJPK (PJ atau PK)</label><select id="component" hidden disabled><option value="">Pilih PJ atau PK</option></select><label for="theme" id="theme-label" hidden>Pilih Tema</label><select id="theme" hidden disabled><option value="">Pilih Tema</option></select><label for="unit" id="unit-label" hidden>Pilih Unit/Tajuk</label><select id="unit" hidden disabled><option value="">Pilih Subjek dahulu</option></select><label for="topic" id="topic-label" hidden>Pilih Tajuk</label><select id="topic" hidden disabled><option value="">Pilih Tajuk</option></select><label for="lesson" id="lesson-label" hidden>Pilih Lesson/PdP</label><select id="lesson" hidden disabled><option value="">Pilih Subjek dahulu</option></select>
+<label for="subject" id="subject-label" hidden>Subjek</label><select id="subject" hidden disabled><option value="">Pilih Tahun dahulu</option></select>
+<div id="rph-subject-search" class="school-picker-combo" hidden>
+ <input id="subject-input" type="text" role="combobox" aria-labelledby="subject-label" aria-controls="subject-list" aria-autocomplete="list" aria-expanded="false" autocomplete="off" spellcheck="false">
+ <div class="school-picker-menu" hidden>
+  <ul id="subject-list" role="listbox" aria-labelledby="subject-label"></ul>
+  <p class="school-picker-empty" role="status" hidden>Tiada subjek sepadan.</p>
+ </div>
+</div>
+<button type="button" id="rph-variant-rpt" hidden>Buka RPT 2027</button>
+<label for="component" id="component-label" hidden>Pilih komponen PJPK (PJ atau PK)</label><select id="component" hidden disabled><option value="">Pilih PJ atau PK</option></select><label for="theme" id="theme-label" hidden>Pilih Tema</label><select id="theme" hidden disabled><option value="">Pilih Tema</option></select><label for="unit" id="unit-label" hidden>Pilih Unit/Tajuk</label><select id="unit" hidden disabled><option value="">Pilih Subjek dahulu</option></select><label for="topic" id="topic-label" hidden>Pilih Tajuk</label><select id="topic" hidden disabled><option value="">Pilih Tajuk</option></select><label for="lesson" id="lesson-label" hidden>Pilih Lesson/PdP</label><select id="lesson" hidden disabled><option value="">Pilih Subjek dahulu</option></select>
 <section id="dlp-rph-preview" class="upcoming-examples" aria-labelledby="dlp-rph-heading" hidden>
  <h3 id="dlp-rph-heading"></h3>
  <div id="dlp-rph-content" lang="en"></div>
@@ -735,7 +747,17 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <div><label for="special-kind">Jenis Aktiviti</label><select id="special-kind"><option value="">Pilih Jenis</option><option value="TRANSISI_TAHUN_1">Minggu Transisi Tahun 1</option><option value="SELEPAS_TAMAT_SUKATAN">Selepas Tamat Sukatan</option></select></div>
   <div><label for="special-year">Tahun</label><select id="special-year" disabled><option value="">Pilih Jenis dahulu</option></select></div>
   <div id="special-phase-wrap" hidden><label for="special-phase">Fasa Transisi</label><select id="special-phase" disabled><option value="">Pilih Fasa</option></select></div>
-  <div id="special-subject-wrap" hidden><label for="special-subject">Subjek</label><select id="special-subject" disabled><option value="">Pilih Subjek</option></select></div>
+  <div id="special-subject-wrap" hidden>
+   <label for="special-subject" id="special-subject-label">Subjek</label>
+   <select id="special-subject" disabled><option value="">Pilih Subjek</option></select>
+   <div class="school-picker-combo" hidden>
+    <input id="special-subject-input" type="text" role="combobox" aria-labelledby="special-subject-label" aria-controls="special-subject-list" aria-autocomplete="list" aria-expanded="false" autocomplete="off" spellcheck="false">
+    <div class="school-picker-menu" hidden>
+     <ul id="special-subject-list" role="listbox" aria-labelledby="special-subject-label"></ul>
+     <p class="school-picker-empty" role="status" hidden>Tiada subjek sepadan.</p>
+    </div>
+   </div>
+  </div>
   <div id="special-activity-wrap" hidden><label for="special-activity">Aktiviti</label><select id="special-activity" disabled><option value="">Pilih Aktiviti</option></select></div>
  </div>
  <p id="special-status" class="notice" role="status" aria-live="polite">Pilih jenis aktiviti dan Tahun.</p>
@@ -1153,6 +1175,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </div>
 <script src="/assets/pdf-lib.min.js?v=1.17.1"></script>
 <script src="/assets/pdp-pdf-copy.js?v=science-copy-expanded-20261113"></script>
+<script src="/assets/primary-subjects.js?v=20261117"></script>
 <script src="/assets/rpt-personalize.js?v=20261116-english-integrated"></script>
 <script>
 "use strict";
@@ -1440,19 +1463,17 @@ const dlpPreviewPanel=document.getElementById("dlp-rph-preview");
 const dlpReviewData=JSON.parse(document.getElementById("dlp-review-data").textContent);
 const dlpReviewHeading=document.getElementById("dlp-rph-heading");
 const dlpReviewContent=document.getElementById("dlp-rph-content");
-const dlpSubjectOptions=[
- {value:"SCIENCE_DLP",label:"Science (DLP)"},
- {value:"MATH_DLP",label:"Mathematics (DLP)"}
-];
-const plannedKssrLanguages=[
- {value:"bahasa_iban",label:"Bahasa Iban"},
- {value:"bahasa_kadazandusun",label:"Bahasa Kadazandusun"},
- {value:"bahasa_semai",label:"Bahasa Semai"},
- {value:"bahasa_cina_sk",label:"Bahasa Cina (SK)"},
- {value:"bahasa_tamil_sk",label:"Bahasa Tamil (SK)"}
-];
+const subjectVariants=window.cikgulajuSubjectVariants||[];
+const subjectCollator=new Intl.Collator("ms-MY",{sensitivity:"base"});
+const dlpSubjectOptions=subjectVariants.filter(item=>item.curriculum==="dlp")
+ .map(item=>({...item,value:item.rph_code}));
+const sjkcSubjectOptions=subjectVariants.filter(item=>item.curriculum==="sjkc")
+ .map(item=>({...item,value:item.code}));
+const plannedKssrLanguages=subjectVariants.filter(item=>item.curriculum==="kssr")
+ .map(item=>({...item,value:item.code}));
+const rphVariantRpt=document.getElementById("rph-variant-rpt");
 function fillKssrSubjects(items){
- const available=new Set(items.map(item=>item.value));
+ const available=new Set(items.map(item=>String(item.value).toLowerCase()));
  const planned=plannedKssrLanguages.filter(item=>!available.has(item.value));
  fillSelect(subject,[...items,...planned.map(item=>({
   ...item,value:"planned:"+item.value,label:item.label+" — Dalam Penyediaan"
@@ -1461,6 +1482,7 @@ function fillKssrSubjects(items){
 const primaryYears=[1,2,3,4,5,6].map(n=>({value:String(n),label:"Tahun "+n}));
 const curriculumYears={
  kssr:primaryYears,
+ sjkc:primaryYears,
  kp2027:[{value:"1",label:"Tahun 1 (KP Baharu)"}],
  dlp:primaryYears.map(({value,label})=>({
   value,
@@ -1517,7 +1539,11 @@ async function loadOptions(kind,extra={}){
  if(!Array.isArray(items))throw new Error("Format katalog tidak sah.");
  return items;
 }
-function showStep(el,visible){el.hidden=!visible;document.getElementById(el.id+"-label").hidden=!visible;}
+function showStep(el,visible){
+ el.hidden=!visible||el===subject;
+ document.getElementById(el.id+"-label").hidden=!visible;
+ if(el===subject)document.getElementById("rph-subject-search").hidden=!visible;
+}
 function resetMaterials(){
  document.getElementById("show-materials").hidden=true;
  document.getElementById("show-materials").disabled=true;
@@ -1525,7 +1551,10 @@ function resetMaterials(){
  document.getElementById("materials-list").replaceChildren();
  document.getElementById("download-all").disabled=true;
 }
-function resetSelect(el,label){el.replaceChildren(new Option(label,""));el.disabled=true;}
+function resetSelect(el,label){
+ el.replaceChildren(new Option(label,""));el.disabled=true;
+ if(el===subject)rphSubjectPicker.update([]);
+}
 function subjectNavLabel(code){
  return ({
   BM:"Unit",ENGLISH:"Unit / Topic",PI:"Bidang / Tajuk",
@@ -1566,6 +1595,7 @@ function displayBookReference(){
 }
 function fillSelect(el,items,label){
  resetSelect(el,label);
+ if(el===subject)items=[...items].sort((a,b)=>subjectCollator.compare(a.label,b.label));
  for(const item of items){
   if(item.value==null||!item.label)continue;
   let text=String(item.label);
@@ -1587,6 +1617,9 @@ function fillSelect(el,items,label){
   el.add(opt);
  }
  el.disabled=el.options.length<=1;
+ if(el===subject)rphSubjectPicker.update([...el.options].slice(1).map(option=>({
+  label:option.text,value:option.value
+ })));
 }
 async function fillForSelection(el,kind,extra,label,unchanged){
  const items=await loadOptions(kind,extra);
@@ -1596,6 +1629,8 @@ async function fillForSelection(el,kind,extra,label,unchanged){
  return true;
 }
 function resetCurriculumChoices(){
+ rphVariantRpt.hidden=true;
+ delete rphVariantRpt.dataset.subject;
  for(const [el,label] of [[component,"Pilih PJ atau PK"],[theme,"Pilih Tema"],[unit,"Pilih Unit"],[topic,"Pilih Tajuk"],[lesson,"Pilih Lesson/PdP"]])
   resetSelect(el,label);
  for(const el of [component,theme,unit,topic,lesson])showStep(el,false);
@@ -1701,6 +1736,14 @@ year.addEventListener("change",async()=>{
   updateSelectionHelp(targetYear==="2"?"Pilih subjek untuk lihat RPH DLP Tahun 2.":"Pilih subjek DLP.");
   return;
  }
+ if(choice==="sjkc"){
+  fillSelect(subject,sjkcSubjectOptions.map(item=>({
+   value:item.value,label:item.label+" — "+(item.rpt_years.includes(Number(targetYear))?"RPT 2027":"Dalam Penyediaan")
+  })),"Pilih Subjek");
+  showStep(subject,true);
+  updateSelectionHelp("Pilih subjek SJKC.");
+  return;
+ }
  if(choice!=="kssr")return;
  showStep(subject,true);
  updateSelectionHelp("Pilih Subjek.");
@@ -1719,10 +1762,23 @@ year.addEventListener("change",async()=>{
 subject.addEventListener("change",async()=>{
  const code=subject.value,targetYear=year.value;
  resetCurriculumChoices();setSubjectNavigationLabels();
+ rphSubjectPicker.sync();
  catalogStatus.textContent="";
  if(!code)return;
+ const variant=[...sjkcSubjectOptions,...dlpSubjectOptions].find(item=>
+  item.curriculum===curriculum.value && item.value===code);
+ if(variant?.rpt_years.includes(Number(targetYear))){
+  rphVariantRpt.dataset.subject=variant.code;
+  rphVariantRpt.hidden=false;
+ }
+ if(curriculum.value==="sjkc"){
+  if(!variant)return;
+  updateSelectionHelp("RPH "+variant.label+" Tahun "+targetYear+" dalam penyediaan.");
+  if(!rphVariantRpt.hidden)catalogStatus.textContent="RPT 2027 tersedia untuk subjek dan tahun ini.";
+  return;
+ }
  if(curriculum.value==="dlp"){
-  const selectedSubject=dlpSubjectOptions.find(option=>option.value===code);
+  const selectedSubject=variant;
   if(!selectedSubject||!curriculumYears.dlp.some(option=>option.value===targetYear))return;
   if(targetYear==="2"){
    fillSelect(unit,dlpReviewData[code].map(group=>({value:group.id,label:group.title})),"Pilih Unit");
@@ -2078,10 +2134,11 @@ function initSearchableSelect(control,searchPlaceholder,optionLabel=row=>row.lab
 }
 
 const rptCurriculum=document.getElementById("rpt-curriculum");
+const rphSubjectPicker=initSearchableSelect(subject,"Taip untuk cari subjek");
+document.getElementById("rph-subject-search").hidden=true;
 const rptYear=document.getElementById("rpt-year");
 const rptSubject=document.getElementById("rpt-subject");
 const rptSubjectPicker=initSearchableSelect(rptSubject,"Taip untuk cari subjek",row=>row.option.text);
-const rptSubjectCollator=new Intl.Collator("ms-MY",{sensitivity:"base"});
 const rptDownload=document.getElementById("rpt-download");
 const rptMobileLink=document.getElementById("rpt-download-mobile");
 const rptWordLink=document.getElementById("rpt-download-word");
@@ -2215,7 +2272,7 @@ rptCurriculum.addEventListener("change",()=>{
 });
 rptYear.addEventListener("change",()=>{
  const rows=rptEntries(Number(rptYear.value))
-  .sort((a,b)=>rptSubjectCollator.compare(a.item.label,b.item.label))
+  .sort((a,b)=>subjectCollator.compare(a.item.label,b.item.label))
   .map(({item,year})=>{
    const status=year.year===1||year.coming_soon?" — Dalam Penyediaan":
     !year.pdf_ready?" — Belum tersedia":!year.download_enabled?" — Akses berbayar":"";
@@ -2228,6 +2285,34 @@ rptSubject.addEventListener("change",()=>{
  rptSubjectPicker.sync();
  refreshRptDownload();
 });
+window.openScheduledRpt=async function(code, targetYear){
+ showWebView("rpt");
+ if(!rptCatalog)await loadRptCatalog();
+ const entry=rptCatalog?.entries.find(({item,year})=>item.code===code&&year.year===targetYear);
+ if(!entry){
+  rptStatus.textContent="RPT untuk subjek dan tahun ini belum tersedia.";
+  return;
+ }
+ for(const [control,value] of [[rptCurriculum,entry.curriculum],[rptYear,String(targetYear)],[rptSubject,code]]){
+  control.value=value;
+  control.dispatchEvent(new Event("change"));
+ }
+ document.getElementById("rpt2027-heading").focus();
+};
+rphVariantRpt.addEventListener("click",()=>{
+ void window.openScheduledRpt(rphVariantRpt.dataset.subject,Number(year.value));
+});
+window.openScheduledRphPreview=function(code, targetYear){
+ if(!dlpSubjectOptions.some(item=>item.value===code&&item.preview_years.includes(targetYear)))return;
+ showWebView("rph");
+ curriculum.value="dlp";
+ selectCurriculum();
+ year.value=String(targetYear);
+ year.dispatchEvent(new Event("change"));
+ subject.value=code;
+ subject.dispatchEvent(new Event("change"));
+ document.getElementById("view-rph-heading").focus();
+};
 rptDownload.addEventListener("click",()=>{
  const selection=rptChoice();
  if(rptDownloading||!rptCanDownload(selection))return;
@@ -2384,12 +2469,12 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
-<script src="/assets/rph-today.js?v=rph-pantas-pilih-minggu-kuota-20261117"></script>
-<script src="/assets/teacher-profile.js?v=profile-search-select-20261116"></script>
+<script src="/assets/rph-today.js?v=pilihan-subjek-20261117"></script>
+<script src="/assets/teacher-profile.js?v=pilihan-subjek-20261117"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>
 <script src="/assets/admin-usage.js?v=payment-inbox-20261114"></script>
 <script src="/assets/web-feedback.js?v=comments-inbox-20261112"></script>
-<script src="/assets/special-activities.js?v=source-draft-20261106"></script>
+<script src="/assets/special-activities.js?v=pilihan-subjek-20261117"></script>
 </body>
 </html>

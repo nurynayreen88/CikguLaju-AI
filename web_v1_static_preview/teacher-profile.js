@@ -11,19 +11,30 @@ const teacherDays = ["Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu","Ahad"];
 // Previously the subject was a datalist text field: difficult to scroll and
 // inconsistent between mobile browsers. Keep legacy/custom values losslessly.
 const teacherSubjectGroups = [
-  { label:"Subjek utama", values:[
-    "Bahasa Melayu","English","Matematik","Sains","Pendidikan Islam"
+  { label:"Subjek sekolah rendah", values:[
+    {value:"Bahasa Arab",label:"Bahasa Arab"},
+    {value:"Bahasa Melayu",label:"Bahasa Melayu"},
+    {value:"English",label:"Bahasa Inggeris (SK)"},
+    {value:"Matematik",label:"Matematik"},
+    {value:"Pendidikan Islam",label:"Pendidikan Islam"},
+    {value:"Pendidikan Jasmani",label:"Pendidikan Jasmani (PJ)"},
+    {value:"Pendidikan Jasmani dan Pendidikan Kesihatan",label:"Pendidikan Jasmani dan Pendidikan Kesihatan (PJPK)"},
+    {value:"Pendidikan Kesihatan",label:"Pendidikan Kesihatan (PK)"},
+    {value:"Pendidikan Moral",label:"Pendidikan Moral"},
+    {value:"Pendidikan Muzik",label:"Pendidikan Muzik"},
+    {value:"Pendidikan Seni Visual",label:"Pendidikan Seni Visual (PSV)"},
+    {value:"Reka Bentuk dan Teknologi",label:"Reka Bentuk dan Teknologi (RBT)"},
+    {value:"Sains",label:"Sains"},
+    {value:"Sejarah",label:"Sejarah"},
+    ...(window.cikgulajuSubjectVariants || []).map(({label,code})=>({value:label,label,code})),
   ]},
-  { label:"Subjek sekolah rendah lain", values:[
-    "Pendidikan Moral","Pendidikan Seni Visual","Pendidikan Muzik",
-    "Pendidikan Jasmani","Pendidikan Kesihatan","Pendidikan Jasmani dan Pendidikan Kesihatan",
-    "Bahasa Arab","Sejarah","Reka Bentuk dan Teknologi"
-  ]},
-  { label:"Waktu bukan PdP", values:[
-    "Rehat","Perhimpunan","Kokurikulum"
-  ]},
+  { label:"Waktu bukan PdP", values:["Kokurikulum","Perhimpunan","Rehat"].map(label=>({value:label,label})) },
 ];
-const subjectNames = new Set(teacherSubjectGroups.flatMap(group => group.values));
+const timetableSubjectCollator = new Intl.Collator("ms-MY",{sensitivity:"base"});
+for(const group of teacherSubjectGroups){
+  group.values.sort((a,b)=>timetableSubjectCollator.compare(a.label,b.label));
+}
+const subjectNames = new Set(teacherSubjectGroups.flatMap(group=>group.values.map(row=>row.value)));
 const timetableOtherSubject = "__cikgulaju_custom_subject__";
 const profileForm = document.getElementById("teacher-profile-form");
 const teacherNameField = document.getElementById("profile-name");
@@ -472,22 +483,28 @@ function makeTimetableSubjectPicker(value, index) {
   const choose=document.createElement("select");
   choose.dataset.field="subject";
   choose.setAttribute("aria-label","Pilih subjek untuk waktu "+(index+1));
-  choose.add(new Option("Pilih subjek",""));
-  for(const group of teacherSubjectGroups){
-    const options=document.createElement("optgroup");
-    options.label=group.label;
-    for(const name of group.values){
-      const label=({
-        "English":"Bahasa Inggeris (English)",
-        "Pendidikan Jasmani":"Pendidikan Jasmani (PJ)",
-        "Pendidikan Kesihatan":"Pendidikan Kesihatan (PK)",
-        "Reka Bentuk dan Teknologi":"Reka Bentuk dan Teknologi (RBT)"
-      })[name] || name;
-      options.append(new Option(label,name));
+  const search=document.createElement("input");
+  search.type="search";
+  search.placeholder="Taip untuk cari subjek";
+  search.autocomplete="off";
+  search.setAttribute("aria-label","Cari subjek untuk waktu "+(index+1));
+
+  function renderOptions(selected){
+    const words=selectSearchText(search.value).split(" ").filter(Boolean);
+    const options=[];
+    for(const group of teacherSubjectGroups){
+      const matches=group.values.filter(({value,label,code})=>
+        value===selected || words.every(word=>selectSearchText(label+" "+value+" "+(code||"")).includes(word)));
+      if(!matches.length)continue;
+      const groupOptions=document.createElement("optgroup");
+      groupOptions.label=group.label;
+      groupOptions.append(...matches.map(({value,label})=>new Option(label,value)));
+      options.push(groupOptions);
     }
-    choose.append(options);
+    choose.replaceChildren(new Option(options.length?"Pilih subjek":"Tiada subjek sepadan",""),
+      ...options,new Option("Lain-lain — taip sendiri",timetableOtherSubject));
+    choose.value=selected;
   }
-  choose.add(new Option("Lain-lain — taip sendiri",timetableOtherSubject));
   const custom=document.createElement("input");
   custom.type="text";
   custom.dataset.field="subject_custom";
@@ -496,18 +513,27 @@ function makeTimetableSubjectPicker(value, index) {
   custom.setAttribute("aria-label","Nama subjek lain untuk waktu "+(index+1));
   const saved=typeof value==="string"?value:"";
   const isKnown=subjectNames.has(saved);
-  choose.value=isKnown?saved:(saved?timetableOtherSubject:"");
+  renderOptions(isKnown?saved:(saved?timetableOtherSubject:""));
   custom.value=isKnown?"":saved;
   custom.hidden=choose.value!==timetableOtherSubject;
   custom.disabled=custom.hidden;
   choose.addEventListener("change",()=>{
     const isCustom=choose.value===timetableOtherSubject;
+    search.value="";
+    renderOptions(choose.value);
     custom.hidden=!isCustom;
     custom.disabled=!isCustom;
     timetableMessage.textContent="Perubahan jadual belum disimpan.";
     if(isCustom)custom.focus();
   });
-  wrap.append(choose,custom);
+  search.addEventListener("input",()=>renderOptions(choose.value));
+  search.addEventListener("keydown",event=>{
+    if(event.key==="Enter"){
+      event.preventDefault();
+      choose.focus();
+    }
+  });
+  wrap.append(search,choose,custom);
   return wrap;
 }
 
