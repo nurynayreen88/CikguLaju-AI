@@ -1,0 +1,532 @@
+{
+  "rpt_sha256": "25ea3383f8faad6633d71a89f2adff00b10a262731a1b8ffe0286b8680373f9d",
+  "reference_corrections": {
+    "L12": "TB pp. 61-67",
+    "L23": "TB pp. 116-120",
+    "L26": "TB pp. 121-122",
+    "R03": "TB pp. 114, 133-136",
+    "R08": "TB pp. 223-224"
+  },
+  "review_standards": {
+    "R01": [
+      "1.2.1"
+    ],
+    "R02": [
+      "2.1.1",
+      "2.2.2",
+      "2.3.3"
+    ],
+    "R03": [
+      "3.1.2",
+      "3.3.1"
+    ],
+    "R04": [
+      "4.1.2",
+      "4.2.1"
+    ],
+    "R05": [
+      "5.1.1"
+    ],
+    "R06": [
+      "6.1.2",
+      "6.2.2"
+    ],
+    "R07": [
+      "7.1.1",
+      "7.3.1"
+    ],
+    "R08": [
+      "8.1.1",
+      "8.2.2",
+      "8.3.1"
+    ]
+  },
+  "activities": {
+    "L01": {
+      "materials": "Place-value mat, numeral cards, dictation slips",
+      "induction": "Show 8,050,006. Ask pupils which places are marked with zeros.",
+      "model": "Model grouping a numeral into millions, thousands and ones. Include 10,000,000 as the upper limit.",
+      "guided_practice": "Match word cards to numerals, read them to a partner and reconstruct one using place-value cards.",
+      "assessment": "Read 7,204,060 and 9,080,017. Write six million forty thousand and five using digits.",
+      "evidence": "Correct readings preserve the thousands groups. The dictated number is 6,040,005.",
+      "closure": "Ask pupils how the place values distinguish 3,000,040 from 3,040,000."
+    },
+    "L02": {
+      "materials": "Value cards, mini-whiteboards, number-line strips",
+      "induction": "Display 6,409,050 and 6,509,050. Ask which digit changes and by how much.",
+      "model": "Build 6,409,050 on a place chart. Write it as a sum, then demonstrate adding or subtracting a repeated place-value amount across a regrouping boundary.",
+      "guided_practice": "Make one increasing strip with a step of 100,000 and a decreasing one with a step of 10,000. Swap strips, find the gaps and explain how the rule works when a digit changes place.",
+      "assessment": "Expand 8,760,040. Find the missing term in 8,760,040, 8,740,040, blank, 8,700,040 and the next term. Explain both moves.",
+      "evidence": "8,000,000 + 700,000 + 60,000 + 40. The gap is 8,720,040 and the next term is 8,680,040. Subtract 20,000 each time.",
+      "closure": "Ask pupils to describe the regrouping in the last move."
+    },
+    "L03": {
+      "materials": "Fraction strips, reading cards, mock data labels",
+      "induction": "Show one million as eight equal parts. Ask how many parts a three-eighths label represents.",
+      "model": "Read fraction-of-a-million labels and show the numerator and denominator on the strip. Use whole and mixed numbers in context.",
+      "guided_practice": "Label mock records using halves, quarters, fifths, eighths and tenths, then exchange them for oral reading.",
+      "assessment": "Read 3/4 million and 2 3/5 million. Write one half million, one and five eighths million and four and three tenths million using fractions.",
+      "evidence": "Read three quarters of a million and two and three fifths million. Written answers are 1/2 million, 1 5/8 million and 4 3/10 million.",
+      "closure": "Ask how the denominator shows the number of equal parts in one million."
+    },
+    "L04": {
+      "materials": "Million place-value chart, report cards",
+      "induction": "Show 2.075 million and ask what each digit after the decimal point represents.",
+      "model": "Compare 1.025 million with 1.25 million. Model reading the decimal digits and using zeros as placeholders.",
+      "guided_practice": "Trade mock attendance reports and predict which value is greatest. Rewrite two whole-number entries in decimal millions.",
+      "assessment": "Express 4,006,000 and 8,250,000 in decimal millions. Write three point zero eight five million as a numeral in million form.",
+      "evidence": "4.006 million, 8.25 million and 3.085 million.",
+      "closure": "Ask why 0.06 million and 0.006 million denote different quantities."
+    },
+    "L05": {
+      "materials": "Million grids, conversion cards, place chart",
+      "induction": "Show a tally of 750,000 alongside 3/4 million. Ask how to show they match.",
+      "model": "Use one million as the whole for both fraction and decimal conversions. Divide by one million to reverse the direction.",
+      "guided_practice": "Sort triple-matching cards with whole-number, fraction-million and decimal-million forms. Build new triples and show one reversible conversion across equivalent forms.",
+      "assessment": "Convert 3 3/8 million and 2.048 million to whole numbers. Convert 2,750,000 to fraction millions and check it in decimal millions.",
+      "evidence": "3,375,000 and 2,048,000. The reverse pair is 2 3/4 million and 2.75 million.",
+      "closure": "Ask pupils to name the common whole used in each conversion."
+    },
+    "L06": {
+      "materials": "Number-line strips, stock cards, place chart",
+      "induction": "Show 1.4 million and 350,000. Ask how to put both in the same form.",
+      "model": "Convert quantities to the same unit before adding or subtracting. Demonstrate checking a difference by addition.",
+      "guided_practice": "Solve one stock total and one stock balance using whole numbers, then express the results in millions.",
+      "assessment": "Find 1.45 million + 325,000 and 2 1/2 million − 0.375 million. Give both answers as whole numbers and check the difference.",
+      "evidence": "1,775,000 and 2,125,000. Adding 375,000 back gives 2,500,000.",
+      "closure": "Ask when converting to whole numbers makes the alignment clearer."
+    },
+    "L07": {
+      "materials": "Group mats, meeting cards, multiplication and division grids",
+      "induction": "Ask how many groups of 0.25 million make one million.",
+      "model": "Represent multiplication as equal groups and division as finding group size or number of groups. Check one result through the inverse operation.",
+      "guided_practice": "Build both multiplication and division cards for matched groups. Compare calculations in whole numbers, fractions of a million and decimal millions.",
+      "assessment": "Find three times 0.625 million. Divide 2 1/2 million equally among five centres. Use multiplication to verify one centre's share.",
+      "evidence": "1,875,000 and 500,000 per centre. 500,000 × 5 = 2,500,000.",
+      "closure": "Ask which units belong to a total and to a share."
+    },
+    "L08": {
+      "materials": "Operation and bracket cards, mini-whiteboards",
+      "induction": "Show 3 × (0.45 + 0.2) million and ask which operation comes first.",
+      "model": "Compare the bracketed expression with 3 × 0.45 million + 0.2 million. Label the first operation in each.",
+      "guided_practice": "Mark the first operation in two expressions and explain their decision to a partner.",
+      "assessment": "Evaluate 2.7 million − 3 × 0.4 million and (2.7 million − 0.4 million) × 3. State the first step in each.",
+      "evidence": "1.5 million and 6.9 million. Multiply first in the first expression and subtract first in the second.",
+      "closure": "Ask how brackets move the subtraction before multiplication."
+    },
+    "L09": {
+      "materials": "Bar models, unknown-number cards",
+      "induction": "Show four equal groups and one unknown amount in each. Ask what the letter represents.",
+      "model": "Write 2 × (n + 0.35 million) = 2 million. Reverse the outer operation first and use substitution to check.",
+      "guided_practice": "Work through one multiplication-and-addition equation with the unknown inside brackets and another with the unknown outside.",
+      "assessment": "Solve 4 × (n + 0.125 million) = 1.8 million and 3 × p + 0.1 million = 1.3 million. Substitute to check both.",
+      "evidence": "n = 0.325 million and p = 0.4 million. Checks give 1.8 million and 1.3 million.",
+      "closure": "Ask why subtraction comes before division in solving the second equation."
+    },
+    "L10": {
+      "materials": "Counters, factor cards, hundred grid",
+      "induction": "Build one 3 × 3 array and one single row for nine counters. Ask what each shows.",
+      "model": "Compare factor pairs of 29, 49 and 45. Explain the definition of a prime and use it to explain the status of 1.",
+      "guided_practice": "Use factor ladders and arrays to classify numbers. Compare a prime near 100, a non-square composite and a square with an identical factor pair.",
+      "assessment": "Classify 43, 49, 51 and 1. List their factor pairs and identify which number has exactly two distinct factors.",
+      "evidence": "43 is prime (1 × 43). 49 and 51 are composite (1 × 49 and 7 × 7, 1 × 51 and 3 × 17). The number 1 has only one factor and is neither prime nor composite.",
+      "closure": "Ask why a product of two copies of 7 establishes that 49 is composite."
+    },
+    "L11": {
+      "materials": "Stock cards, group diagram, mixed-operation strips",
+      "induction": "Ask how a shipment count written as a fraction of a million can be compared with whole-number stock.",
+      "model": "Model finding a stock balance with different forms of a million. Then use factor pairs to decide how to split a small stock equally.",
+      "guided_practice": "Choose a calculation for a stock scenario and test the proposed group sizes in a second situation.",
+      "assessment": "A warehouse has 2 1/2 million pens, sends out 0.7 million and 3/8 million, and shares the remainder among five centres. Find each share. Choose 37 or 42 packs to split into equal groups with at least two groups of two or more.",
+      "evidence": "285,000 pens per centre. Choose 42, for example 6 × 7. The only factor pair for 37 is 1 × 37.",
+      "closure": "Ask pupils how they can verify one centre's share."
+    },
+    "R01": {
+      "materials": "Brackets cards, worked-error slips, place-value chart",
+      "induction": "Show the incorrect statement 8 − 2 × 3 = 18. Ask pupils to mark the first operation.",
+      "model": "Review marking the first operation in an expression and show how to check the result by reworking in whole numbers.",
+      "guided_practice": "Correct a worked example and explain the point where the calculations diverge.",
+      "assessment": "Correct 2.4 million − 0.6 million ÷ 3 if someone divides last. Then find (1.8 million − 0.3 million) ÷ 5 and check by multiplication.",
+      "evidence": "2.2 million and 0.3 million. The last check is 0.3 million × 5 = 1.5 million.",
+      "closure": "Ask under what condition subtraction would come first in the first example."
+    },
+    "L12": {
+      "materials": "Fraction bars, fraction cards, squared paper",
+      "induction": "Ask how many quarters are in three quarters.",
+      "model": "Show 3/4 ÷ 3 on a bar and explain sharing. Compare with 3/4 ÷ 1/4 as finding how many groups fit.",
+      "guided_practice": "Draw one sharing example and solve a mixed-number example by converting to an improper fraction first.",
+      "assessment": "Draw 3/4 ÷ 3. Find 2 2/3 ÷ 4/9 and verify the quotient by multiplication.",
+      "evidence": "1/4 and 6. The check is 6 × 4/9 = 8/3 = 2 2/3.",
+      "closure": "Ask how the meaning of the divisor changes between the two examples."
+    },
+    "L13": {
+      "materials": "Decimal grids, area models, mini-whiteboards",
+      "induction": "Ask whether 0.6 × 0.4 is more or less than half.",
+      "model": "Use the overlap of two decimal strips to explain hundredths. For a longer product, estimate and then calculate the exact decimal.",
+      "guided_practice": "Use grids for tenths and a written algorithm for longer decimals. Compare estimates and exact values and explain when removing a final zero preserves the value.",
+      "assessment": "Estimate and find 0.75 × 0.4, 1.25 × 0.6 and 0.35 × 0.14. Explain where the point is placed in one answer.",
+      "evidence": "Sample estimates: 0.32, 0.78 and 0.04. Exact products: 0.30, 0.75 and 0.049. In the last product, 35 × 14 gives 490 ten-thousandths, or 0.0490.",
+      "closure": "Ask why the first product is smaller than 0.75."
+    },
+    "L14": {
+      "materials": "Place-value charts, quotient cards, long-division grids",
+      "induction": "Show 4.2 ÷ 0.7 and ask how to make 0.7 a whole number without changing the quotient.",
+      "model": "Multiply both the dividend and divisor by the same power of ten. Demonstrate one calculation and verify the result by multiplying back.",
+      "guided_practice": "Sort equivalent divisions, then estimate and solve those with one- and two-place divisors. Compare work and check a quotient with three decimal places.",
+      "assessment": "Find 5.04 ÷ 0.12, 0.84 ÷ 0.4 and 3.45 ÷ 1.2. Record the equivalent divisions and verify the last result.",
+      "evidence": "42, 2.1 and 2.875. Equivalent divisions are 504 ÷ 12, 8.4 ÷ 4 and 34.5 ÷ 12. Check 2.875 × 1.2 = 3.45.",
+      "closure": "Ask pupils to explain why the power of ten must be the same for both numbers."
+    },
+    "L15": {
+      "materials": "Hundred grids, matching cards, place-value mats",
+      "induction": "Shade one full grid and 28% of a second. Ask how much is shown.",
+      "model": "Connect one whole to 100% and model changing 1.28 to 128%. Reverse by dividing the percentage number by 100.",
+      "guided_practice": "Match decimal and percentage cards. Justify one equivalence with a grid or a number line.",
+      "assessment": "Convert 2.075 and 1.28 to percentages, then 165% and 235.5% to decimals. Explain one match.",
+      "evidence": "207.5%, 128%, 1.65 and 2.355. The conversion uses the meaning of per hundred.",
+      "closure": "Ask pupils to show why any percentage above 100 gives a decimal above one."
+    },
+    "L16": {
+      "materials": "Percent strips, same-base scenario cards",
+      "induction": "Show two sectors labelled 35% and 27% on one chart. Ask which total they refer to.",
+      "model": "Add and subtract percentages referring to a common base. Distinguish a difference in percentage points from a percentage change.",
+      "guided_practice": "Write expressions for combining two categories and finding how much of the whole is unused.",
+      "assessment": "Find 85% + 42%, 178% − 36.5% and the difference between 35% and 27% as percentage points.",
+      "evidence": "127%, 141.5% and 8 percentage points.",
+      "closure": "Ask which starting quantity the percentages refer to."
+    },
+    "L17": {
+      "materials": "Double number lines, scale tables, quantity cards",
+      "induction": "Place 6.4 kg on the 100% line. Ask what quantity represents 25%.",
+      "model": "Find 125% by combining 100% with 25%. Reverse the method by dividing the comparison quantity by the reference quantity.",
+      "guided_practice": "Complete quantity and percent tables in both directions. Test examples below and above 100% and label the reference quantity in each.",
+      "assessment": "Find 125% of 6.4 kg and 75% of 4.8 L. Find the percentages represented by 7.5 L of 6 L and 1.26 kg of 1.8 kg.",
+      "evidence": "8 kg, 3.6 L, 125% and 70%. The reference quantity is correctly identified in each case.",
+      "closure": "Ask why comparing 7.5 L with 6 L gives a result greater than 100%."
+    },
+    "L18": {
+      "materials": "Bracket cards, fraction bars, operation strips",
+      "induction": "Compare 5.5 − (1 1/2 + 0.75) with the same expression without brackets.",
+      "model": "Convert between decimals and fractions where it simplifies a calculation. Show how brackets affect the first step and how to check the result by estimating.",
+      "guided_practice": "Solve paired examples with two distinct operations. Underline the first operation, compare routes and explain why a result is reasonable.",
+      "assessment": "Find 5.5 − (1 1/2 + 0.75), 3/4 + 2.4 × 0.5 and 2 ÷ (0.25 × 8). Show the first step for each.",
+      "evidence": "3.25, 1.95 and 1. The first steps give 2.25, 1.2 and 2 respectively.",
+      "closure": "Ask when writing 3/4 as a decimal makes a mixed calculation easier."
+    },
+    "L19": {
+      "materials": "Mixed-operation cards, estimation strips",
+      "induction": "Ask whether the result of 4 × (2.5 − 3/4) should be above or below 10.",
+      "model": "Estimate the value in brackets before multiplying. In a second example, identify division as the first operation before adding.",
+      "guided_practice": "Solve the same expression in fractions and decimals, then select the more efficient route and justify it.",
+      "assessment": "Find 4 × (2.5 − 3/4) and 3/4 + 2.4 ÷ 0.6. Show the first operation and a sensible estimate for one expression.",
+      "evidence": "First subtract inside the brackets to get 1.75, then multiply by 4 to get 7. In the second expression, divide first to get 4, then add 3/4 to get 4.75. Rounding 1.75 to 2 gives an estimate of 8 for the first answer.",
+      "closure": "Ask why the exact result differs from that estimate."
+    },
+    "L20": {
+      "materials": "Tank bars, fraction and percentage labels, measuring chart",
+      "induction": "Show a portion labelled 25% and ask which fraction gives the same amount.",
+      "model": "Represent a percent and a fraction on the same whole. Then show how to compare an equal share to a known capacity.",
+      "guided_practice": "Break two situations into known quantities and an unknown. Mark whether the percentage or fraction refers to the original quantity.",
+      "assessment": "From 48 kg, 25% is sold and 1/3 of the original mass is donated. Find the remainder. Divide 10.8 L among nine 1.5 L jugs. Give each amount as a percent of capacity.",
+      "evidence": "20 kg remains. Each jug holds 1.2 L, or 80% of capacity.",
+      "closure": "Ask why one problem uses 48 kg as the base and the other uses 1.5 L."
+    },
+    "R02": {
+      "materials": "Fraction error cards, percent charts, decimal grids",
+      "induction": "Show 120% labelled 0.12. Ask how a grid can help check it.",
+      "model": "Revisit dividing fractions and finding the reference quantity in a percentage comparison. Model identifying an error from its estimate.",
+      "guided_practice": "Rotate through fraction, decimal and percentage stations. Correct a partner's calculation and annotate the step that caused the error.",
+      "assessment": "Correct 5/6 ÷ 5/9 if shown as 25/54. Then compare 4.5 L with 3.6 L as a percent, and check 3.45 ÷ 1.2 by multiplication.",
+      "evidence": "1 1/2, 125% and 2.875. The first operation uses 9/5 as the reciprocal. 2.875 × 1.2 = 3.45.",
+      "closure": "Ask which two estimates help identify the fraction and percentage errors before solving."
+    },
+    "L21": {
+      "materials": "Fictional price tags, cost-and-selling-price cards",
+      "induction": "Show cost RM28 and selling price RM35. Ask what each amount describes.",
+      "model": "Label cost price and selling price. Use the direction of the difference to distinguish profit and loss.",
+      "guided_practice": "Sort sample transactions into profit and loss. Explain which figures show the amount paid for stock and the amount received from sales.",
+      "assessment": "A seller pays RM28 and receives RM35 for item A, and pays RM42 and receives RM39 for item B. Label both prices and identify each profit or loss.",
+      "evidence": "A has cost RM28, selling price RM35 and profit RM7. B has cost RM42, selling price RM39 and loss RM3.",
+      "closure": "Ask what happens when the cost and selling price are equal."
+    },
+    "L22": {
+      "materials": "Fictional offer cards, bill, receipt and invoice samples",
+      "induction": "Show an instant price reduction and cash returned after purchase. Ask when each reduction takes effect.",
+      "model": "Compare discounts, rebates and vouchers. Show a bill requesting payment, an invoice listing a transaction and a receipt acknowledging payment. Point out the example tax line.",
+      "guided_practice": "At stations, annotate the original price, offer type, document purpose and tax line. Justify why an invoice and a receipt convey different information.",
+      "assessment": "Name an instant 15% reduction, RM20 returned after purchase and a RM10 coupon. Match a monthly request, an itemised amount due and proof of payment with the three documents. Find the line marked service tax on the sample.",
+      "evidence": "Discount, rebate, voucher. Bill, invoice, receipt. The service tax is the labelled amount on the sample.",
+      "closure": "Ask why a receipt can help verify that a billed amount has been paid."
+    },
+    "L23": {
+      "materials": "Financial scenario cards, two-column sort sheet",
+      "induction": "Give examples of cash saved and an amount still owed on a loan. Ask how they differ.",
+      "model": "Distinguish assets and liabilities. Compare interest credited to a savings account with a distribution to holders of an investment.",
+      "guided_practice": "Sort examples of property, savings and unpaid obligations. Label returns on two fictional statements.",
+      "assessment": "Classify RM400 in savings and an RM80 unpaid borrowing balance. Identify a return paid on a savings balance and a distribution to shareholders.",
+      "evidence": "Savings are an asset and the unpaid balance is a liability. The returns are interest and a dividend respectively.",
+      "closure": "Ask which example represents money that still has to be paid."
+    },
+    "L24": {
+      "materials": "Price comparison table, fictional sale cards",
+      "induction": "Show a selling price and a profit. Ask how to recover the cost.",
+      "model": "Use the difference between selling and cost prices. Compare when a discount is deducted and when a rebate is returned.",
+      "guided_practice": "Find a missing price in a sale card. Record both the amount paid today and the effective cost for each offer.",
+      "assessment": "A seller receives RM92 and makes RM17 profit. Find the cost. For a RM200 item, compare 15% off immediately with RM36 rebated after paying full price.",
+      "evidence": "Cost RM75. Immediate discount gives RM170. The rebate gives an effective cost of RM164, with RM200 paid first.",
+      "closure": "Ask why the amount paid at the counter may differ from the effective cost."
+    },
+    "L25": {
+      "materials": "Fictional receipt, savings and dividend cards, percent strips",
+      "induction": "Show three sample rates. Ask which starting amount belongs to each calculation.",
+      "model": "Define a separate base for a tax on a service, interest for one year and a dividend on a fictional investment. Show how each value can be checked with a percent strip.",
+      "guided_practice": "Work through three fictional statements. Underline each base, write the amount produced by the rate, then contrast it with the ending or total amount.",
+      "assessment": "Use a sample rate of 6% on a RM95 service, 2% for one year on RM800 savings and 4% on a RM1,500 investment. Give tax, total service charge, interest and dividend.",
+      "evidence": "Tax RM5.70. Service total RM100.70. Interest RM16. Dividend RM60. Each percentage is applied to its stated base.",
+      "closure": "Ask why the tax is added to the service charge in the example."
+    },
+    "L26": {
+      "materials": "Fictional protection cards, risk and scenario matrix",
+      "induction": "Show a travel disruption and damage to a home. Ask what unexpected costs each could generate.",
+      "model": "Compare a fictional insurance premium paid to an insurer with a takaful contribution paid into a shared participants’ fund. Show that both can help cover specified risks.",
+      "guided_practice": "Sort examples by how the risk is borne. Match medical or fire protection to each case and identify one cost outside the stated scope.",
+      "assessment": "Identify the insurance card where the insurer bears the risk and the takaful card where participants share it. Match travel medical and house fire scenarios to suitable coverage. Explain one benefit and one coverage limit.",
+      "evidence": "Insurance: the insurer bears the insured risk. Takaful: participants share risk through a fund. Match travel medical expenses and house fire damage to the stated coverage. A limit caps the payment under the example terms.",
+      "closure": "Ask why checking the risk described on the card matters before relying on a benefit."
+    },
+    "L27": {
+      "materials": "Two fictional supplier quotes, budget worksheet",
+      "induction": "Show a supplier's item cost and a service charge. Ask what belongs in the complete comparison.",
+      "model": "Separate costs, one-time charges, stated example tax and any later rebate. Compare immediate cash outlay and effective cost with the budget.",
+      "guided_practice": "Evaluate two supplier cards, check totals independently and consider one practical risk such as a late rebate.",
+      "assessment": "A club has RM320 available now. Option A costs RM260 plus RM50 service taxed at 6%. Option B costs RM330 now and returns RM24 later. Find both initial and effective totals and justify an option.",
+      "evidence": "A costs RM313 now and in total. B costs RM330 initially and RM306 after rebate. A fits available funds today. B depends on extra upfront funds and later rebate.",
+      "closure": "Ask how a delayed rebate affects a budget decision even if the final cost is lower."
+    },
+    "R03": {
+      "materials": "Fictional receipt, budget and offer cards",
+      "induction": "Show a receipt with separate item, service and service-tax lines. Ask which base should be used.",
+      "model": "Review reading the receipt and verifying a stated rate. Compare the resulting total with available money.",
+      "guided_practice": "Check a partner's receipt and record which amount supports a budget conclusion.",
+      "assessment": "Goods cost RM185 and service costs RM50, with 6% tax on service. Check the receipt total against a RM250 budget. Can the buyer add a RM15 item? Show the difference.",
+      "evidence": "Tax RM3 on the RM50 service. The total is RM238 and RM12 is left. A RM15 item raises the total to RM253, which is RM3 over budget.",
+      "closure": "Ask when the goods price would belong in a different tax calculation."
+    },
+    "L28": {
+      "materials": "Time-zone map, UTC reference line, model clocks",
+      "induction": "Show two local clocks for the same event. Ask how their readings can differ.",
+      "model": "Use the Greenwich reference and explain positive and negative UTC offsets. Associate each offset with the local clock at the same instant.",
+      "guided_practice": "Locate two stated offsets on a simplified time-zone map. Set model clocks to show simultaneous local times.",
+      "assessment": "Locate labelled regions UTC+8 and UTC−3. If UTC is 12:00, give local times for both regions and explain the offset signs.",
+      "evidence": "20:00 and 09:00 on the same day. The plus sign indicates ahead of UTC and the minus sign indicates behind UTC.",
+      "closure": "Ask what UTC+0 shows for the same event."
+    },
+    "L29": {
+      "materials": "UTC cards, 24-hour number lines, clock models",
+      "induction": "Show UTC+8 and UTC−4. Ask how their signs affect the difference.",
+      "model": "Place both on a UTC number line. Model finding the difference and converting across midnight, including a half-hour offset.",
+      "guided_practice": "Solve three pairs using positive, negative and fractional offsets. Check each by converting both clocks to UTC.",
+      "assessment": "If Q at UTC−4 shows Tuesday 16:45, give the time and day at P at UTC+8. If A at UTC+9 shows 16:00, give the time at B at UTC+5:30.",
+      "evidence": "P is Wednesday 04:45, 12 hours ahead of Q. B is 12:30 on the same day, 3 hours 30 minutes behind A.",
+      "closure": "Ask how converting both local times to UTC checks the first answer."
+    },
+    "L30": {
+      "materials": "Two-city clocks, flight cards, weekly timeline",
+      "induction": "Show a flight departure and duration. Ask when the destination time-zone adjustment is applied.",
+      "model": "Add actual travel time first, then convert the resulting time to the destination zone. Show how to choose an overlapping daytime call time.",
+      "guided_practice": "Plan one journey and one call using fixed offsets. Recheck both day changes and whether the call meets each person's availability.",
+      "assessment": "A flight leaves UTC+8 Wednesday at 20:15, lasts 6 hours 40 minutes, and lands at UTC+3. Give local arrival. A call begins Monday 15:30 at UTC+8 for 75 minutes. Give start and end at UTC+1 and check a local 08:00–10:00 availability window.",
+      "evidence": "At departure it is Wednesday 15:15 at UTC+3. Add 6 h 40 min to reach Wednesday 21:55. The call is Monday 08:30 to 09:45 at UTC+1, within the availability window.",
+      "closure": "Ask pupils to distinguish the elapsed flight duration from the destination clock difference."
+    },
+    "R04": {
+      "materials": "Model clocks, fixed-time-zone schedule, error slip",
+      "induction": "Show a journey arriving just after midnight in its origin zone. Ask whether the destination must show the same date.",
+      "model": "Review marking day changes before and after converting time zones. Check a proposed entry on a two-city schedule.",
+      "guided_practice": "Correct the day or time on a partner's sample itinerary and identify the error.",
+      "assessment": "A call starts Tuesday 23:20 at UTC−2 and lasts 50 minutes. A schedule records it as Tuesday 06:20 to 07:10 at UTC+5. Correct the date and verify the time.",
+      "evidence": "The UTC+5 clock shows Wednesday 06:20 to 07:10. The zones differ by seven hours.",
+      "closure": "Ask what would change if the second zone were seven hours behind instead."
+    },
+    "L31": {
+      "materials": "Ribbon or wire samples, scale, metre ruler, measurement cards",
+      "induction": "Show two lengths of the same material. Ask how to compare their masses fairly.",
+      "model": "Use the stated uniform mass per metre to scale a length. Convert centimetres to metres before applying the rate.",
+      "guided_practice": "Complete a rate table for two lengths. Solve the reverse problem and check that the result is a length.",
+      "assessment": "Ribbon has a uniform mass of 24 g per 2 m. Find the mass of 750 cm. A wire sample weighs 300 g per 4 m. Find the length of 450 g in cm.",
+      "evidence": "Ribbon 90 g using 12 g per metre. Wire length 600 cm using 75 g per metre.",
+      "closure": "Ask which rate belongs to each material."
+    },
+    "L32": {
+      "materials": "Same-bore hose diagrams, measuring jug, litre table",
+      "induction": "Show equal sections cut from the same size hose. Ask why equal lengths can contain the same volume.",
+      "model": "Use volume per metre for a uniform hose. Check proportional scaling with a table and convert mL to L.",
+      "guided_practice": "Compare converting before and after multiplying. Solve one reverse question for length given a volume.",
+      "assessment": "A uniform hose holds 600 mL in 4 m. Find how many litres 7 m holds and how many metres hold 0.9 L.",
+      "evidence": "1.05 L for 7 m and 6 m for 0.9 L, using 150 mL per metre.",
+      "closure": "Ask why both hoses must have the same internal size for this comparison."
+    },
+    "L33": {
+      "materials": "Recipe cards, scale, measuring jug, proportional tables",
+      "induction": "Show a recipe quantity for one mix. Ask how the mass changes when the measured liquid triples.",
+      "model": "Use a given relationship for a specific mix. Compare scaling both quantities together with a unit-rate calculation.",
+      "guided_practice": "Build a mass-and-volume table for three batches. Check by converting grams to kilograms and solving one reverse quantity problem.",
+      "assessment": "A mix uses 240 g flour for 0.6 L of water. Find the mass for 1.5 L in g and kg. Then find the water volume required for 720 g at the same ratio.",
+      "evidence": "600 g or 0.6 kg. 720 g requires 1.8 L. Both quantities are scaled using the stated recipe.",
+      "closure": "Ask which assumption allows the same ratio to be applied to each batch."
+    },
+    "R05": {
+      "materials": "Error cards, metric conversion chart, rate table",
+      "induction": "Show a report that treats 750 cm as 0.75 m. Ask pupils to check the conversion.",
+      "model": "Review matching units before scaling. Model checking whether the final answer should be a length, mass or volume.",
+      "guided_practice": "Correct two worked errors, identifying the incorrect factor and writing the proper unit.",
+      "assessment": "Correct an estimate of 9 g for 750 cm of wire when 2 m weighs 24 g. Then find the water volume for 540 g if 180 g uses 0.45 L.",
+      "evidence": "750 cm is 7.5 m, so the wire weighs 90 g. Three batches use 1.35 L.",
+      "closure": "Ask why labelling the rate with both units can reveal a scaling mistake."
+    },
+    "L34": {
+      "materials": "Protractors, rulers, ray templates",
+      "induction": "Show a baseline and ask where the protractor centre and zero should align.",
+      "model": "Model a 65° angle, then rotate the starting ray and show how to choose the correct protractor scale.",
+      "guided_practice": "Draw an acute and an obtuse angle from rays in different directions. Trade and measure a partner's construction.",
+      "assessment": "Draw 45° and 130° with labelled vertices and rays. Measure both after construction.",
+      "evidence": "The angles are within 2° of the target. Each measurement starts from the zero aligned with its first ray.",
+      "closure": "Ask why choosing the other scale can turn an acute angle into an obtuse one."
+    },
+    "L35": {
+      "materials": "Triangular and square grids, protractors, geometry software",
+      "induction": "Show an equilateral triangle and a stretched hexagon. Ask how measurements can establish regularity.",
+      "model": "Build an equilateral triangle on a triangular grid and a square on a square grid. Use a regular-polygon tool for an octagon.",
+      "guided_practice": "Draw a triangle and a square on appropriate grids. Construct an octagon digitally, measure two sides and compare adjacent interior angles.",
+      "assessment": "Submit the three constructions. Label the number of sides, mark the equal sides and measure two interior angles of each.",
+      "evidence": "Equilateral triangle 60°, square 90° and regular octagon 135° within 2°. Check side lengths and correct number of sides.",
+      "closure": "Ask which checks still matter when a figure looks regular on screen."
+    },
+    "L36": {
+      "materials": "Circle templates, paper discs, rulers, labels",
+      "induction": "Fold a paper disc along two different diameters. Ask what the intersection represents.",
+      "model": "Label the centre, a segment from centre to circumference and a segment through the centre joining two points on the circumference. Compare radius and diameter.",
+      "guided_practice": "Measure radii and diameters of three circular templates. Draw a chord that misses the centre and explain why it is different.",
+      "assessment": "A, B, C and D are on the circumference of a circle centred at P. AB passes through P and CD does not. Label the centre, one radius and the diameter. Find the diameter if PA is 4.5 cm.",
+      "evidence": "Centre P, radius PA or PB, diameter AB. Diameter 9 cm. CD is a chord that does not go through P.",
+      "closure": "Ask what makes every diameter twice the radius."
+    },
+    "L37": {
+      "materials": "Compasses, rulers, paper, circle cards",
+      "induction": "Ask how far apart the compass legs should be for a radius of 3.2 cm.",
+      "model": "Set the distance with a ruler, keep the point fixed, and draw the circle. Label the centre and choose diameter endpoints on a line through it.",
+      "guided_practice": "Draw one circle and exchange it with a partner to check the radius and diameter. Construct a second circle from a different radius.",
+      "assessment": "Draw a circle of radius 3.2 cm. Label the centre O, radius OA and diameter AB. Measure and report the diameter.",
+      "evidence": "Radius 3.2 cm and diameter 6.4 cm within 1 mm. A, O and B lie on the same line.",
+      "closure": "Ask which measurement can catch an incorrect compass setting."
+    },
+    "L38": {
+      "materials": "Scale-free lid templates, compasses, rulers",
+      "induction": "Show a circular lid near a square opening. Ask which dimension determines whether it fits.",
+      "model": "Compare a circle's diameter with the width of the opening. Draw a simple scale sketch to explain the clearance.",
+      "guided_practice": "Sketch two width choices. Mark the widest part of the lid and compare it with both openings.",
+      "assessment": "A lid of radius 14 cm must fit in a 27 cm or 29 cm square opening. Pick the one that works and find the total spare width. Show it in a sketch.",
+      "evidence": "Diameter 28 cm. The 29 cm opening works and has 1 cm total spare width.",
+      "closure": "Ask how much clearance lies on each side if the lid is centred."
+    },
+    "R06": {
+      "materials": "Compasses, rulers, protractors, circle and ray cards",
+      "induction": "Show two circles with different radii. Ask what measurements allow a fair comparison.",
+      "model": "Review selecting a compass width and checking a diameter. Revisit placing the protractor zero on a starting ray.",
+      "guided_practice": "Swap labelled diagrams and verify a diameter or angle. Explain one correction using the correct instrument.",
+      "assessment": "Draw two circles with radii 2 cm and 3.5 cm. Compare their diameters. Draw a 110° angle and check it with a protractor.",
+      "evidence": "Diameters 4 cm and 7 cm, with difference 3 cm. The angle is within 2° of 110°.",
+      "closure": "Ask which measurement is checked with a ruler and which uses a protractor."
+    },
+    "L39": {
+      "materials": "First-quadrant maps, scale cards, rulers",
+      "induction": "Show a path with horizontal and vertical segments. Ask what the axes and grid scale tell us.",
+      "model": "Count coordinate intervals separately and multiply by distance per interval. Include a map whose scale gives the distance for two grid intervals.",
+      "guided_practice": "Plot routes for two scales. Find distances in different units and compare the effect of a changed scale on the same pair of points.",
+      "assessment": "Plot A(2, 3) and B(7, 6) at 20 m per unit. Then use 250 m per unit for C(2, 1) to D(2, 6). Give both components for each pair.",
+      "evidence": "A–B horizontally 100 m and vertically 60 m. C–D horizontally 0 m and vertically 1,250 m.",
+      "closure": "Ask pupils why a vertical movement leaves x unchanged."
+    },
+    "L40": {
+      "materials": "Two-colour counters, ratio strips, factor charts",
+      "induction": "Show 24 red and 36 white counters. Ask what group size could divide both counts exactly.",
+      "model": "Write the ordered ratio. Divide both terms by a common factor and check whether the resulting terms share another factor.",
+      "guided_practice": "Build equivalent ratios with counters, reduce them and swap the language of the quantities to see how the order changes.",
+      "assessment": "Simplify 24 red to 36 white, then 45 blue to 30 green. Check if 18 : 27 is equivalent to the first ratio.",
+      "evidence": "2 : 3 and 3 : 2. 18 : 27 also reduces to 2 : 3. Both terms have been divided by the same factor.",
+      "closure": "Ask which change would reverse the order without changing the quantities."
+    },
+    "L41": {
+      "materials": "Ratio tables, recipe cards, bar diagrams",
+      "induction": "Show three cups of concentrate for five of water. Ask how much water pairs with double the concentrate.",
+      "model": "Build a ratio table and apply the same factor to both columns. Model finding one part when a total and ratio are given.",
+      "guided_practice": "Complete two tables and compare unit-value and scale-factor methods. Use a bar model for a total split.",
+      "assessment": "For 3 cups concentrate to 5 cups water, find the water for 12 cups concentrate and the concentrate for 30 cups water. Split 64 pupils in the ratio 3 : 5.",
+      "evidence": "20 cups water and 18 cups concentrate. The groups are 24 and 40 pupils, with eight per part.",
+      "closure": "Ask how checking the original ratio detects a one-column scaling error."
+    },
+    "L42": {
+      "materials": "Scaled grid, recipe table, pencils",
+      "induction": "Show a two-segment route and a recipe table. Ask what the scale means in each.",
+      "model": "Work a horizontal and vertical distance using a given scale. Compare unit value with ratio parts in a daily mixing problem.",
+      "guided_practice": "Group the information on each problem card, choose a grid or ratio table and verify units.",
+      "assessment": "Travel from (1, 2) to (5, 7) horizontally then vertically at 30 m per unit. Give both distances. Mix 18 L in the ratio 2 parts concentrate to 7 parts water. Find both volumes.",
+      "evidence": "120 m horizontal and 150 m vertical. Mixture needs 4 L concentrate and 14 L water.",
+      "closure": "Ask pupils which totals check the two solutions."
+    },
+    "R07": {
+      "materials": "Coordinate grid, timeline ruler, ratio error cards",
+      "induction": "Show a grid whose scale is two intervals for 60 m. Ask the distance per interval.",
+      "model": "Review counting intervals instead of grid lines. Check proportional tables by comparing scale factors in both columns.",
+      "guided_practice": "Correct one grid distance and one table with a missing quantity. Describe the error and show a working check.",
+      "assessment": "A(2, 4) to B(8, 4) is listed as 60 m at 30 m per grid unit. Correct it. At a fixed rate, 6 books cost RM48. Find the cost of 15 books and show a ratio table.",
+      "evidence": "A–B is 180 m horizontal and 0 m vertical. Books cost RM120 using RM8 per book.",
+      "closure": "Ask how either answer can be verified by working backward."
+    },
+    "L43": {
+      "materials": "Blank circles marked at the centre, rulers, protractors, survey cards",
+      "induction": "Show a semicircle and a quarter circle. Ask what fraction of a survey each would represent.",
+      "model": "Use the given counts to find halves, quarters and eighths. Convert those fractions to 180°, 90° and 45° sectors.",
+      "guided_practice": "Complete two survey charts, label sectors and check that each angle total is 360°. Compare sectors using both angle and number of pupils.",
+      "assessment": "Of 40 pupils, 20 choose A, 10 B, five C and five D. Complete and label a pie chart and compare A with C.",
+      "evidence": "Sector angles 180°, 90°, 45° and 45°. A exceeds C by 15 pupils. The angles total 360°.",
+      "closure": "Ask what the equal sectors for C and D tell us about the counts."
+    },
+    "L44": {
+      "materials": "Opaque bags, coloured counters, prediction chart",
+      "induction": "Show seven blue counters and one green counter going into an opaque bag. Ask which colour is likely on one draw.",
+      "model": "Link relative numbers of equal-sized counters to likely and unlikely outcomes. Use one-draw conditions and compare predictions with trial results.",
+      "guided_practice": "Make predictions for two pictured bags. Draw with replacement, tally results and explain why a short trial may vary from a prediction.",
+      "assessment": "Bag A has seven blue and one green counter. Bag B has two blue and six green. For one random draw from each, state whether blue is likely or unlikely and explain.",
+      "evidence": "Blue is likely in A, where seven of eight are blue. Blue is unlikely in B, where only two of eight are blue.",
+      "closure": "Ask why an unlikely colour can still appear on a draw."
+    },
+    "L45": {
+      "materials": "Equal-sector spinner, labelled counter bags, likelihood scale",
+      "induction": "Show a spinner with equal sectors for two colours. Ask where that event belongs on a likelihood scale.",
+      "model": "Place impossible, less likely, equally likely, more likely and certain on a line. Use counts of equally possible outcomes to justify placement.",
+      "guided_practice": "Classify events from bags and dice. Compare a pair of events with the same likelihood from different models.",
+      "assessment": "A bag has three red and five blue counters. Classify drawing green, red, blue and either red or blue. For a fair six-face die, classify an even result compared with odd.",
+      "evidence": "Green impossible, red less likely, blue more likely and red or blue certain. Even and odd are equally likely, with three faces each.",
+      "closure": "Ask which wording signals a comparison with the other possible outcome."
+    },
+    "L46": {
+      "materials": "Bar chart of survey counts, comparison cards, probability strips",
+      "induction": "Show one category with the tallest bar. Ask what conclusion the chart supports.",
+      "model": "Read category counts and totals. Show how to compare a category across different sample sizes using its share of the total.",
+      "guided_practice": "Use two bar charts to make and explain predictions. Check whether a larger count always means a larger share.",
+      "assessment": "A survey shows 12 story, six comic and two atlas choices. Pick a response at random and describe atlas likelihood. Compare green selections of four out of eight in A and five out of 12 in B.",
+      "evidence": "Atlas is less likely than either other category, with two of 20 choices. Green is more likely in A because 4/8 exceeds 5/12.",
+      "closure": "Ask why the larger green count in B does not give the larger share."
+    },
+    "R08": {
+      "materials": "Pie-chart cards, matching survey labels, likelihood scale",
+      "induction": "Show a half-sector and an eighth-sector. Ask which responses would be more common in that survey.",
+      "model": "Review fractions of a full chart and compare likelihood when selecting one response. Verify that all sectors add to one whole.",
+      "guided_practice": "Interpret two teacher-made charts. Convert sector sizes to counts and correct one unsupported likelihood claim.",
+      "assessment": "A chart of 40 responses shows 180° for A, 90° for B and 45° each for C and D. Give all four counts. Explain whether A is more likely than all the others combined.",
+      "evidence": "20, 10, five and five. A and the three other categories together have 20 each, so they are equally likely.",
+      "closure": "Ask which category pairs have equal likelihood when one response is selected."
+    }
+  }
+}

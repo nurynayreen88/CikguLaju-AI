@@ -405,7 +405,26 @@ def create_native_rph_blueprint(runtime):
         year, subject, unit, lesson = (selection[key] for key in ("year", "subject", "unit", "lesson"))
         if any(not isinstance(value, str) or len(value) > 40 for value in (subject, unit, lesson)):
             raise ValueError("Invalid DLP selection")
+        if type(year) is int and (year, subject) == (6, "MATH_DLP"):
+            from staging.dlp.year6.render_mathematics import resolve_download
+            try:
+                return resolve_download(unit, lesson)
+            except (OSError, ValueError) as exc:
+                raise RuntimeError("DLP curriculum source unavailable") from exc
         return resolve(year, subject, unit, lesson)
+
+    @bp.get("/internal/rph/v1/dlp/year6-mathematics/catalogue")
+    def year6_dlp_catalogue():
+        allowed, status = _authorized()
+        if not allowed:
+            return jsonify({"error": "Unauthorized renderer"}), status
+        if request.args:
+            return jsonify({"error": "Invalid DLP catalogue query"}), 400
+        from staging.dlp.year6.render_mathematics import download_catalogue
+        try:
+            return jsonify({"year": 6, "subject": "MATH_DLP", "units": download_catalogue()})
+        except (OSError, ValueError):
+            return jsonify({"error": "DLP curriculum source unavailable"}), 503
 
     @bp.get("/internal/rph/v1/dlp/availability")
     def dlp_availability():
@@ -420,6 +439,8 @@ def create_native_rph_blueprint(runtime):
             plan = dlp_selection(selection)
         except ValueError:
             return jsonify({"error": "Invalid DLP selection"}), 400
+        except RuntimeError:
+            return jsonify({"error": "DLP curriculum source unavailable"}), 503
         if plan is None:
             return jsonify({"available": False}), 404
         return jsonify({"available": True, "formats": ["word", "pdf"]})
@@ -454,11 +475,17 @@ def create_native_rph_blueprint(runtime):
                 raise ValueError("Invalid teacher fields")
         except ValueError:
             return jsonify({"error": "Invalid DLP render request"}), 400
+        except RuntimeError:
+            return jsonify({"error": "DLP curriculum source unavailable"}), 503
         if plan is None:
             return jsonify({"error": "DLP lesson unavailable"}), 404
         unit, lesson = plan
         try:
-            document = render_dlp(body["selection"]["subject"], unit, lesson, fmt, teacher)
+            if body["selection"]["year"] == 6:
+                from staging.dlp.year6.render_mathematics import render_download
+                document = render_download(lesson, fmt, teacher)
+            else:
+                document = render_dlp(body["selection"]["subject"], unit, lesson, fmt, teacher)
             response = Response(document, mimetype=MIMES[fmt])
             response.headers["Content-Disposition"] = f'attachment; filename="{filename(lesson["id"], fmt)}"'
             return response
