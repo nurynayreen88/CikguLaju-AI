@@ -516,5 +516,48 @@
     "source_sha256_by_subject_year": {
       "matematik_sjkc:2": "02a85030cc42eb7625aca754c84bf86bd61f14be074bee335f74bc878e31ef4f"
     }
+  },
+  "english_integrated": {
+    "version": 1,
+    "status": "ENGLISH_INTEGRATED_RPT_COVER",
+    "page_width": 841.8898,
+    "page_height": 595.2756,
+    "tolerance_pt": 0.3,
+    "identity_background_rgb": [
+      1,
+      1,
+      1
+    ],
+    "logo_interior_top_left": [
+      373.5,
+      122,
+      468.4,
+      216
+    ],
+    "logo_image_safe_top_left": [
+      380,
+      128,
+      462,
+      210
+    ],
+    "school_row_top_left": [
+      268,
+      228,
+      710,
+      257
+    ],
+    "teacher_row_top_left": [
+      268,
+      267,
+      710,
+      296
+    ],
+    "source_sha256_by_subject_year": {
+      "english:2": "7cd4dd1eabd568dcaa9de3faba1fa0de3c4f8469ed69c3df7101b7c74a8600e9",
+      "english:3": "55528e8481f9af52386d6f7b898458aad80dcf1996f70c6b424a10da89515eb2",
+      "english:4": "0e72c8e993c9ef9e0d8112872b343cf58efcb512400a76d355d65bfdb4cb347e",
+      "english:5": "5a58b042920643d342060a7d9634481c57e67261245ca6b98b416aa470020019",
+      "english:6": "f9c8ca388328f123aad9202e26397eeb1fae5359ac1e9b1fbda1004541fda34f"
+    }
   }
 }

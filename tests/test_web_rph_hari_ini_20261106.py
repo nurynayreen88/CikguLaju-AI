@@ -145,6 +145,25 @@ class DailyTimetablePureTests(TestCase):
         result = day_payload({"state_name": "Selangor"}, schedule, holiday, today=holiday)
         self.assertNotIn("rpt_capacity", result["entries"][0])
 
+    @patch("web.native_telegram_integrated_english_client.integrated_enabled", return_value=True)
+    def test_integrated_english_capacity_counts_one_hour_slot_per_open_day(self, _enabled):
+        english = dict(EXAMPLE["entries"][0], class_name="3 Cemerlang")
+        schedule = {"entries": [
+            dict(english, day="Isnin", start="08:00", end="09:00"),
+            dict(english, day="Isnin", start="10:00", end="11:00"),
+            dict(english, day="Selasa", start="08:00", end="08:30"),
+            dict(english, day="Rabu", start="08:00", end="08:30"),
+            dict(english, day="Khamis", start="08:00", end="09:00", subject="BI"),
+            dict(english, day="Jumaat", start="08:00", end="09:00"),
+        ]}
+        date_in_school = date(2027, 1, 18)
+        for state, minutes in [("Selangor", 120), ("Pahang", 180)]:
+            with self.subTest(state=state):
+                day = day_payload({"state_name": state}, schedule, date_in_school, today=date_in_school)
+                self.assertEqual(day["entries"][0]["rpt_capacity"], {
+                    "scheduled_minutes": minutes, "required_minutes": 240,
+                })
+
     def test_math_weekly_suggestions_follow_the_same_117_pdp_plan_as_telegram(self):
         short = {1, 5, 8, 10, 20, 30, 33, 35, 39}
         for year in range(2, 7):

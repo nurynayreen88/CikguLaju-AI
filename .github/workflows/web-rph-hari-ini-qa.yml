@@ -11,6 +11,9 @@ on:
       - 'web_v1_static_preview/index.html'
       - 'tools/run_web_production.py'
       - 'tests/test_web_rph_hari_ini_20261106.py'
+      - 'tests/test_web_english_integrated_rph_2027.py'
+      - 'web/native_telegram_integrated_english_client.py'
+      - 'web/english_integrated_rph_weeks_2027.json'
       - 'tests/test_web_saved_classes.py'
       - '.github/workflows/web-rph-hari-ini-qa.yml'
   pull_request:
@@ -23,6 +26,9 @@ on:
       - 'web_v1_static_preview/index.html'
       - 'tools/run_web_production.py'
       - 'tests/test_web_rph_hari_ini_20261106.py'
+      - 'tests/test_web_english_integrated_rph_2027.py'
+      - 'web/native_telegram_integrated_english_client.py'
+      - 'web/english_integrated_rph_weeks_2027.json'
       - 'tests/test_web_saved_classes.py'
       - '.github/workflows/web-rph-hari-ini-qa.yml'
 permissions:
@@ -41,6 +47,9 @@ jobs:
           node-version: '22'
       - run: pip install 'flask==3.1.3' 'python-docx==1.2.0' 'lxml==5.4.0'
       - run: PYTHONPATH=tests:. python -m unittest -v tests.test_web_rph_hari_ini_20261106 tests.test_web_teacher_profile_timetable tests.test_web_saved_classes tests.test_web_math_unit_grouping_20261106
+      - name: Verify October English RPT and paired Word/PDF downloads
+        if: hashFiles('tests/test_web_english_integrated_rph_2027.py') != ''
+        run: PYTHONPATH=tests:. python -m unittest -v tests.test_web_english_integrated_rph_2027
       - run: node --check web_v1_static_preview/rph-today.js
       - name: Syntax-check existing main Web script after embedding daily handoff
         run: |

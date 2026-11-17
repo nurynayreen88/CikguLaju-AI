@@ -18,6 +18,13 @@ def pdf_path(root, year):
     return Path(root) / ("RPT_ENGLISH_TAHUN_%d_2027_UNTUK_GURU.pdf" % year)
 
 
+def integrated_pdf_path(root, year):
+    from web.native_telegram_integrated_english_client import integrated_enabled
+    if not integrated_enabled() or type(year) is not int or year not in YEARS:
+        return None
+    return Path(root) / f"RPT_English_SK_2027_Year_{year}_A_B.pdf"
+
+
 def _has_paid_access(account):
     """Only confirmed lifetime or unexpired paid access; free RPH credits do not qualify."""
     if not isinstance(account, dict):
@@ -83,7 +90,7 @@ def create_english_rpt_blueprint(root=ROOT):
             return error
         if year not in YEARS:
             return jsonify({"error": "RPT English year unavailable"}), 404
-        path = pdf_path(root, year)
+        path = integrated_pdf_path(root, year) or pdf_path(root, year)
         if not path.is_file():
             return jsonify({"error": "Verified RPT PDF not present on Web service"}), 503
         paid_cover = _has_paid_access(account)

@@ -18,45 +18,14 @@ from web.rph_today_progress import (
 )
 from web.teacher_profile_routes import _auth, _body
 from web.teacher_profile_store import (
-    ProfileUnavailable, ProfileValidation, STATES, TIME, get_profile, get_schedule,
+    ProfileUnavailable, ProfileValidation, TIME, get_profile, get_schedule,
 )
 from web.unified_rph_web import SUBJECT_LABELS
+from web.school_days_2027 import FRI_SAT, WEEKDAY, is_school_day, normalize_state
 
 bp = Blueprint("rph_hari_ini_web", __name__)
-WEEKDAY = ("Isnin", "Selasa", "Rabu", "Khamis", "Jumaat", "Sabtu", "Ahad")
-FRI_SAT = frozenset(("Kedah", "Kelantan", "Terengganu"))
 RPT_WEEKLY_CATALOG = Path(__file__).with_name("rpt_weekly_suggestions_2027.json")
-SCHOOL_STATES = {state.casefold(): state for state in STATES}
-# KPM 2027 Lampiran C and the federal/state public holiday schedule. Term
-# breaks fall outside the printed windows. Schools may add local closures.
-COMMON_CLOSURES = frozenset((
-    "02-08", "02-09", "02-10", "02-11", "05-17", "05-18", "05-19", "05-20",
-    "06-07", "09-16", "10-28",
-))
-GROUP_A_CLOSURES = frozenset(("02-07", "03-14", "05-16", "06-06", "08-15", "10-27"))
-GROUP_B_CLOSURES = frozenset(("02-05", "02-12", "05-21", "06-08", "08-16"))
-STATE_CLOSURES = {
-    "01-06": {"Kedah", "Negeri Sembilan", "Perlis", "Terengganu"},
-    "01-14": {"Negeri Sembilan"},
-    "01-22": {"Kuala Lumpur", "Putrajaya", "Johor", "Negeri Sembilan", "Perak", "Pulau Pinang", "Selangor"},
-    "02-01": {"Kuala Lumpur", "Labuan", "Putrajaya"},
-    "02-24": {"Kuala Lumpur", "Labuan", "Putrajaya", "Kelantan", "Pahang", "Perak", "Perlis", "Pulau Pinang", "Selangor", "Terengganu"},
-    "03-04": {"Terengganu"},
-    "03-23": {"Johor"},
-    "03-26": {"Sabah", "Sarawak"},
-    "03-30": {"Sabah"},
-    "04-26": {"Terengganu"},
-    "05-02": {"Kelantan", "Terengganu"},
-    "06-20": {"Kedah"},
-    "07-07": {"Pulau Pinang"},
-    "07-12": {"Johor"},
-    "07-22": {"Sarawak"},
-    "07-30": {"Pahang"},
-    "08-24": {"Melaka"},
-    "09-29": {"Kelantan"},
-    "09-30": {"Kelantan"},
-    "11-05": {"Perak"},
-}
+INTEGRATED_ENGLISH_CATALOG = Path(__file__).with_name("english_integrated_rph_weeks_2027.json")
 SUBJECTS = {
     "bahasa melayu": ("BM", None),
     "bm": ("BM", None),
@@ -122,27 +91,38 @@ def weekly_catalog():
     return json.loads(RPT_WEEKLY_CATALOG.read_text(encoding="utf-8"))
 
 
-def is_school_day(state, target):
-    group_a = state in FRI_SAT
-    day = target.strftime("%m-%d")
-    weekend = (4, 5) if group_a else (5, 6)
-    return not (target.weekday() in weekend
-                or day in COMMON_CLOSURES
-                or (group_a and day in GROUP_A_CLOSURES)
-                or (not group_a and day in GROUP_B_CLOSURES)
-                or state in STATE_CLOSURES.get(day, ())
-                or (not group_a and state != "Sarawak" and day in ("10-27", "10-29")))
+@lru_cache(maxsize=1)
+def integrated_english_calendar():
+    return json.loads(INTEGRATED_ENGLISH_CATALOG.read_text(encoding="utf-8"))
+
+
+def integrated_pair(year, lesson):
+    for row in integrated_english_calendar().get(str(year), {}).values():
+        for session in row[4]:
+            if len(session) == 2 and lesson in session:
+                return session
+    return None
 
 
 def weekly_rpt_suggestion(state, target, subject, year):
-    state = SCHOOL_STATES.get(state.strip().casefold()) if isinstance(state, str) else None
+    state = normalize_state(state)
     if target.year != 2027 or state is None:
         return None
-    state = state.removeprefix("W.P. ")
     group_a = state in FRI_SAT
     if not is_school_day(state, target):
         return None
     try:
+        from web.native_telegram_integrated_english_client import integrated_enabled
+        if subject == "ENGLISH" and 2 <= year <= 6 and integrated_enabled():
+            index = 0 if group_a else 2
+            for week, row in integrated_english_calendar()[str(year)].items():
+                if row[index] <= target.isoformat() <= row[index + 1]:
+                    return {
+                        "week": int(week), "group": "A" if group_a else "B",
+                        "lessons": {"": [number for session in row[4] for number in session]},
+                        "sessions": row[4], "dates": row[index:index + 2],
+                    }
+            return None
         weeks = weekly_catalog().get(f"{subject}:{year}", {})
     except (OSError, ValueError):
         return None
@@ -156,14 +136,19 @@ def weekly_rpt_suggestion(state, target, subject, year):
 
 
 def english_week_capacity(rows, state, class_name, year, suggestion):
-    """Compare the saved class timetable with this week's 60-minute SOW Lessons."""
+    """Compare usable 60-minute sessions or legacy timetable minutes with the RPT."""
     offset = 0 if suggestion["group"] == "A" else 2
-    week = weekly_catalog()[f"ENGLISH:{year}"][str(suggestion["week"])]
-    start, end = map(date.fromisoformat, week[offset:offset + 2])
-    state = SCHOOL_STATES[state.strip().casefold()].removeprefix("W.P. ")
+    span = suggestion.get("dates")
+    if span is None:
+        week = weekly_catalog()[f"ENGLISH:{year}"][str(suggestion["week"])]
+        span = week[offset:offset + 2]
+    start, end = map(date.fromisoformat, span)
+    state = normalize_state(state)
     dates = (start + timedelta(days=step) for step in range((end - start).days + 1))
     school_days = {WEEKDAY[day.weekday()] for day in dates if is_school_day(state, day)}
-    required = 60 * len(suggestion["lessons"][""])
+    integrated = "sessions" in suggestion
+    required = 60 * len(suggestion["sessions"] if integrated else suggestion["lessons"][""])
+    session_days = set()
     scheduled = 0
     for row in rows:
         if not isinstance(row, dict) or row.get("day") not in school_days:
@@ -179,7 +164,14 @@ def english_week_capacity(rows, state, class_name, year, suggestion):
             return None
         hours, minutes = map(int, finish.split(":"))
         start_hours, start_minutes = map(int, begin.split(":"))
-        scheduled += (hours - start_hours) * 60 + minutes - start_minutes
+        duration = (hours - start_hours) * 60 + minutes - start_minutes
+        if integrated:
+            if duration == 60:
+                session_days.add(row["day"])
+        else:
+            scheduled += duration
+    if integrated:
+        scheduled = 60 * len(session_days)
     return {"scheduled_minutes": scheduled, "required_minutes": required}
 
 
@@ -355,6 +347,17 @@ def complete_pdp():
                     or type(record[4]) is not int or not 1 <= record[4] <= 999):
                 raise ProfileValidation("Lesson/PdP ini tidak sepadan dengan slot jadual")
             number = record[4]
+            if (slot["subject_code"] == "ENGLISH" and target.year == 2027
+                    and 2 <= slot["year"] <= 6):
+                from web.native_telegram_integrated_english_client import integrated_enabled
+                from datetime import time
+                if integrated_enabled() and (
+                    datetime.combine(target, time.fromisoformat(slot["end"]))
+                    - datetime.combine(target, time.fromisoformat(slot["start"]))
+                ) == timedelta(hours=1):
+                    pair = integrated_pair(slot["year"], number)
+                    if pair is not None:
+                        number = pair[-1]
         save_completion(config, uid, result["date"], slot, component, number)
         attach_progress(result, read_progress(config, uid, result["date"]))
     except ProfileValidation as exc:

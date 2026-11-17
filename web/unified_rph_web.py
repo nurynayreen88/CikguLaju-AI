@@ -8,7 +8,7 @@ and PJPK 339-PdP manifest. Missing or contradictory source files fail closed.
 For other subjects, keep existing database navigation; no invented preview.
 """
 import csv
-from datetime import date
+from datetime import date, datetime, timedelta
 from functools import lru_cache
 from io import BytesIO
 import json
@@ -438,7 +438,7 @@ def _selection():
     extras = {"teacher_class", "teacher_date", "teacher_time",
               "teacher_start", "teacher_end", "teacher_students"}
     keys = set(request.args)
-    if not required.issubset(keys) or not keys.issubset(required | extras | {"component"}):
+    if not required.issubset(keys) or not keys.issubset(required | extras | {"component", "rph_context"}):
         raise ValueError("Unexpected selection keys")
     if any(len(request.args.getlist(key)) != 1 for key in keys):
         raise ValueError("Ambiguous selection")
@@ -454,6 +454,8 @@ def _selection():
         raise ValueError("Missing PJPK component")
     if subject != "PJPK" and component is not None:
         raise ValueError("Unexpected component")
+    if request.args.get("rph_context", "hari-ini") != "hari-ini":
+        raise ValueError("Unexpected RPH context")
     return year, subject, unit, lesson, component
 
 
@@ -589,6 +591,36 @@ def create_blueprint():
                 teacher["reflection"] = reflection
         if for_download:
             _fill_roster_count(teacher, account)
+        if (subject == "ENGLISH" and 2 <= year <= 6 and teacher["date"].startswith("2027-")
+                and request.args.get("rph_context") == "hari-ini"):
+            from web.native_telegram_integrated_english_client import (
+                NativeRPHUnavailable, integrated_enabled, request_integrated,
+            )
+            if integrated_enabled():
+                times = teacher["time"].split(" - ")
+                if len(times) == 2:
+                    start, end = (datetime.strptime(clock, "%H:%M") for clock in times)
+                    if end - start == timedelta(hours=1):
+                        from web.rph_hari_ini_web import integrated_pair
+                        row = next((row for row in _english_records(year)
+                                    if row["unit"] == unit and row["token"] == token), None)
+                        expected = integrated_pair(year, row["lesson"]) if row else None
+                        if expected:
+                            candidate = {
+                                "source": "telegram-integrated-english-2027",
+                                "year": year, "subject": subject, "unit": unit,
+                                "lesson": row["lesson"], "teacher": teacher,
+                            }
+                            try:
+                                pair = request_integrated(candidate, "metadata")
+                                if pair != expected:
+                                    raise NativeRPHUnavailable("English pair disagrees with the RPT")
+                            except NativeRPHUnavailable:
+                                return None, (jsonify({
+                                    "error": "Semakan RPH English bersepadu belum tersedia. Cuba semula.",
+                                    "code": "TELEGRAM_ENGLISH_INTEGRATED_UNAVAILABLE",
+                                }), 503)
+                            return {**candidate, "lessons": pair, "status": "SEMAKAN GURU"}, None
         # BM's REAL Telegram flow uses verified_pdp_sequence, NOT rpt_entries.
         # Never reinterpret an opaque BM PdP token as an RPT row ID.
         if subject == "BM":
@@ -761,6 +793,8 @@ def create_blueprint():
         if selected.get("source")=="telegram-provisional-subjects-2027":
             result.update({"status": selected["status"],
                            "formats": selected["formats"]})
+        if selected.get("source") == "telegram-integrated-english-2027":
+            result.update({"status": selected["status"], "lessons": selected["lessons"]})
         return jsonify(result)
 
     @bp.get("/api/web/rph/pbd-context")
@@ -771,6 +805,12 @@ def create_blueprint():
             return err
         if not g.cikgulaju_rph_paid:
             return jsonify({})
+        if selected.get("source") == "telegram-integrated-english-2027":
+            from web.native_telegram_integrated_english_client import NativeRPHUnavailable, request_integrated
+            try:
+                return jsonify(request_integrated(selected, "pbd"))
+            except NativeRPHUnavailable:
+                return jsonify({"error": "Kriteria PBD RPH English belum tersedia."}), 503
         header = {item["label"]: item["value"]
                   for item in selected.get("telegram_layout", {}).get("header", [])}
         def field(*labels, limit):
@@ -828,6 +868,9 @@ def create_blueprint():
             elif selected.get("source") == "telegram-native-pdp-sequence":
                 from web.native_telegram_sequence_rph_client import request_native_sequence_rph
                 document = request_native_sequence_rph(selected, fmt)
+            elif selected.get("source") == "telegram-integrated-english-2027":
+                from web.native_telegram_integrated_english_client import request_integrated
+                document = request_integrated(selected, fmt)
             else:
                 document = request_native_rph(selected, fmt)
         except (NativeRPHUnavailable, ValueError):
@@ -891,7 +934,8 @@ def create_blueprint():
         document, error, trial_remaining = _native_document(selected, "word")
         if error is not None:
             return error
-        lesson_tag = (f"{selected['lesson']:03d}" if type(selected["lesson"]) is int
+        lesson_tag = ("-".join(f"{n:03d}" for n in selected["lessons"]) if selected.get("lessons")
+                      else f"{selected['lesson']:03d}" if type(selected["lesson"]) is int
                       else re.sub(r"[^A-Za-z0-9_-]", "_", selected["lesson"])[:80])
         filename = f"CIKGULAJU_RPH_{selected['subject']}_TAHUN_{selected['year']}_{lesson_tag}.docx"
         response = send_file(document,
@@ -912,7 +956,8 @@ def create_blueprint():
         document, error, trial_remaining = _native_document(selected, "pdf")
         if error is not None:
             return error
-        lesson_tag = (f"{selected['lesson']:03d}" if type(selected["lesson"]) is int
+        lesson_tag = ("-".join(f"{n:03d}" for n in selected["lessons"]) if selected.get("lessons")
+                      else f"{selected['lesson']:03d}" if type(selected["lesson"]) is int
                       else re.sub(r"[^A-Za-z0-9_-]", "_", selected["lesson"])[:80])
         filename = f"CIKGULAJU_RPH_{selected['subject']}_TAHUN_{selected['year']}_{lesson_tag}.pdf"
         response = send_file(document,mimetype="application/pdf",

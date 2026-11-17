@@ -213,15 +213,21 @@
   const label=c.slot.subject_code==="ENGLISH"?"Lesson":"PdP";
   const numbers=suggestedLessonNumbers(c);
   const prefix="Cadangan RPT · Minggu "+suggestion.week+" (Kumpulan "+suggestion.group+")";
+  const lessonLabels=suggestion.sessions
+   ? suggestion.sessions.map(session=>session.map(n=>String(n).padStart(3,"0")).join(" + "))
+   : numbers.map(n=>String(n).padStart(3,"0"));
   c.weeklySuggestion.textContent=numbers.length
-   ? prefix+" — "+label+" "+numbers.map(number=>String(number).padStart(3,"0")).join(", ")
+   ? prefix+" — "+label+" "+lessonLabels.join(", ")
    : prefix+(c.slot.subject_code==="PJPK"&&!c.controls.component.value
       ? " — Pilih PJ atau PK untuk melihat cadangan."
       : " — Tiada "+label+" untuk pilihan ini.");
   const capacity=c.slot.rpt_capacity;
   if(capacity&&capacity.scheduled_minutes<capacity.required_minutes){
-   c.weeklySuggestion.textContent+=". Jadual kelas ada "+capacity.scheduled_minutes+
-    " minit minggu ini. RPT memerlukan "+capacity.required_minutes+" minit.";
+   c.weeklySuggestion.textContent+=suggestion.sessions
+    ? ". Jadual kelas ada "+(capacity.scheduled_minutes/60)+" sesi 60 minit pada hari berbeza. "+
+      "RPT memerlukan "+suggestion.sessions.length+" sesi minggu ini."
+    : ". Jadual kelas ada "+capacity.scheduled_minutes+
+      " minit minggu ini. RPT memerlukan "+capacity.required_minutes+" minit.";
   }
  }
  function renderProgress(c){
@@ -231,6 +237,8 @@
   const describe=number=>label+" "+String(number).padStart(3,"0");
   const previous=progress?.previous;
   const completed=progress?.completed;
+  const completedNumber=number=>c.slot.rpt_suggestion?.sessions
+   ?.find(session=>session.includes(number))?.at(-1)??number;
   let next=previous&&previous<999?previous+1:null;
   if(c.slot.subject_code==="SCIENCE"&&c.slot.year===6){
    if(previous===89)next=1;
@@ -254,10 +262,10 @@
   }
   if(!completed&&nextAvailable)c.progressHint.textContent+=" Sambungan kelas: "+describe(next)+".";
   c.complete.hidden=Boolean(completed)&&
-    (!selection?.dataset.completionToken||lessonNumber(selection.dataset.lessonLabel)===completed);
+    (!selection?.dataset.completionToken||completedNumber(lessonNumber(selection.dataset.lessonLabel))===completed);
   c.complete.textContent=completed?"Betulkan rekod PdP":"Selesai PdP";
   c.complete.disabled=savingProgress||reviewing||!confirm.checked||
-    !selection?.dataset.completionToken||lessonNumber(selection.dataset.lessonLabel)===completed;
+    !selection?.dataset.completionToken||completedNumber(lessonNumber(selection.dataset.lessonLabel))===completed;
   c.undoCompletion.hidden=!completed;
   c.undoCompletion.disabled=savingProgress||reviewing||!confirm.checked;
  }
@@ -594,6 +602,12 @@
  }
  async function inspectOne(c,epoch){
   const key=selectedKey(c),args=selection(c),qs=new URLSearchParams(args);
+  if(c.slot.subject_code==="ENGLISH"){
+   qs.set("rph_context","hari-ini");
+   qs.set("teacher_date",loadedDate);
+   qs.set("teacher_start",c.slot.start);
+   qs.set("teacher_end",c.slot.end);
+  }
   c.result.hidden=false;c.resultList.replaceChildren();
   c.downloadStatus.textContent="Menyemak bahan yang tersedia…";
   let found=0, errors=[];
@@ -604,16 +618,17 @@
    const data=await availability.json().catch(()=>({}));
    if(epoch!==batchEpoch||key!==selectedKey(c))return;
    if(availability.ok&&data.available===true&&data.generator==="telegram-native"){
+    const pair=Array.isArray(data.lessons)?data.lessons.map(n=>String(n).padStart(3,"0")).join(" + "):"";
     const pbd=actionRow("Pentaksiran Bilik Darjah","Rekod PBD");
     pbd.button.addEventListener("click",()=>window.cikgulajuPbdFromRph?.({
       className:c.slot.class_name,date:loadedDate,subject:c.slot.subject,
-      lesson:c.controls.lesson.selectedOptions[0]?.textContent||""
-    },args));
+      lesson:pair?"Lesson "+pair:c.controls.lesson.selectedOptions[0]?.textContent||""
+    },Object.fromEntries(qs)));
     c.resultList.append(pbd.li);found++;
     const formats=Array.isArray(data.formats)?data.formats.filter(f=>["pdf","word"].includes(f)):["pdf","word"];
     for(const format of ["pdf","word"]){
      if(!formats.includes(format))continue;
-     const label=format==="pdf"?"RPH PDF":"RPH Word";
+     const label=(format==="pdf"?"RPH PDF":"RPH Word")+(pair?" · Lesson "+pair:"");
      const row=actionRow(label,data.download_allowed===false?"Akses diperlukan":"Download");
      if(data.download_allowed===false){row.button.disabled=true;}
      else row.button.addEventListener("click",()=>{void downloadRph(c,format,key,row.button);});
@@ -671,6 +686,7 @@
    teacher_start:c.slot.start,teacher_end:c.slot.end,teacher_students:students
   });
   if(args.component)params.set("component",args.component);
+  if(args.subject==="ENGLISH")params.set("rph_context","hari-ini");
   const expected=params.toString();
   button.disabled=true;
   c.downloadStatus.textContent="Menjana RPH "+format.toUpperCase()+" menggunakan penjana Telegram…";
@@ -688,7 +704,8 @@
    if(key!==selectedKey(c))throw Error("Pilihan Lesson telah berubah. Semak semula sebelum muat turun.");
    const url=URL.createObjectURL(blob),anchor=document.createElement("a");
    const safeClass=c.slot.class_name.replace(/[^a-z0-9_-]+/gi,"_").slice(0,45);
-   anchor.href=url;anchor.download="CIKGULAJU_RPH_"+safeClass+"_"+args.subject+"_"+format+"."+(format==="pdf"?"pdf":"docx");
+   const name=response.headers.get("Content-Disposition")?.match(/filename="?([A-Za-z0-9_-]+\.(?:pdf|docx))"?/i)?.[1];
+   anchor.href=url;anchor.download=name||"CIKGULAJU_RPH_"+safeClass+"_"+args.subject+"_"+format+"."+(format==="pdf"?"pdf":"docx");
    document.body.append(anchor);anchor.click();anchor.remove();
    setTimeout(()=>URL.revokeObjectURL(url),30000);
    c.downloadStatus.textContent="RPH "+format.toUpperCase()+" disediakan untuk "+c.slot.class_name+".";

@@ -1,0 +1,81 @@
+from datetime import date
+import os
+from io import BytesIO
+from unittest import TestCase
+from unittest.mock import patch
+
+from flask import Flask
+
+from web.rph_hari_ini_web import day_payload, weekly_rpt_suggestion
+from web.unified_rph_web import create_blueprint, source_records
+
+
+class IntegratedWebTests(TestCase):
+    @patch("web.native_telegram_integrated_english_client.integrated_enabled", return_value=True)
+    def test_one_pair_is_one_hour_in_capacity_and_last_week_is_october(self, _flag):
+        now = date(2027, 1, 4)
+        entry = {"day": "Isnin", "class_name": "2 Amanah", "subject": "English",
+                 "start": "08:00", "end": "09:00"}
+        day = day_payload({"state_name": "Selangor"}, {"entries": [entry]}, now, today=now)
+        first = day["entries"][0]
+        self.assertEqual(first["rpt_suggestion"]["sessions"], [[1], [2, 3], [4]])
+        self.assertEqual(first["rpt_capacity"]["required_minutes"], 180)
+        late = weekly_rpt_suggestion("Selangor", date(2027, 11, 1), "ENGLISH", 2)
+        self.assertEqual(late["sessions"], [])
+
+    @patch("web.native_telegram_integrated_english_client.integrated_enabled", return_value=True)
+    @patch("web.unified_rph_web._has_paid_access", return_value=True)
+    @patch("web.unified_rph_web._account", return_value=({"telegram_user_id": 123}, None))
+    def test_aliases_both_download_one_word_and_pdf_through_telegram(self, *_):
+        app = Flask(__name__)
+        app.register_blueprint(create_blueprint())
+        client = app.test_client()
+        rows = {r["lesson"]: r for r in source_records(3, "ENGLISH")}
+        with patch("web.native_telegram_integrated_english_client.request_integrated",
+                   side_effect=lambda selected, fmt: [13, 14] if fmt == "metadata"
+                   else BytesIO(b"PK\x03\x04word") if fmt == "word"
+                   else BytesIO(b"%PDF-1.4\n" + b"0" * 1400)) as render:
+            for n in (13, 14):
+                args = {"year": 3, "subject": "ENGLISH", "unit": rows[n]["unit"],
+                        "lesson": rows[n]["token"], "teacher_class": "3 Amanah",
+                        "teacher_date": "2027-01-18", "teacher_start": "08:00",
+                        "teacher_end": "09:00", "teacher_students": "24", "rph_context": "hari-ini"}
+                available = client.get("/api/web/rph/availability", query_string=args)
+                self.assertEqual(available.json["lessons"], [13, 14])
+                for fmt, extension in (("word", "docx"), ("pdf", "pdf")):
+                    response = client.get(f"/api/web/rph/{fmt}", query_string=args)
+                    self.assertEqual(response.status_code, 200, response.json)
+                    self.assertIn(f"013-014.{extension}", response.headers["Content-Disposition"])
+                    self.assertEqual(response.headers["X-RPH-Generator"], "telegram-native")
+                    response.close()
+            self.assertEqual([c.args[1] for c in render.call_args_list],
+                             ["metadata", "metadata", "word", "metadata", "pdf"] * 2)
+
+
+    def test_revised_rpt_requires_verified_bytes_and_preserves_cover_entitlement(self):
+        from web.rpt_2027_all_http import ROOT, create_all_rpt_blueprint
+        from web_v1_sessions import issue_session_ticket
+        from web_v1_telegram_auth_routes import COOKIE
+
+        app = Flask(__name__)
+        app.register_blueprint(create_all_rpt_blueprint())
+        client = app.test_client()
+        conf = {"CIKGULAJU_WEB_SESSION_SECRET": "local-test-session-" * 3}
+        secret = conf["CIKGULAJU_WEB_SESSION_SECRET"]
+        access = {"telegram_user_id": 123, "authenticated": True, "rakan_pembangun": True}
+        with patch.dict(os.environ, {"CIKGULAJU_ENGLISH_2027_INTEGRATED_RPH_ENABLED": "1"}), \
+                patch("web_v1_telegram_auth_routes._config", return_value=conf), \
+                patch("web_v1_telegram_auth_routes._lookup", return_value=access):
+            url = "/api/rpt/2027/all/english/2.pdf"
+            self.assertEqual(client.get(url).status_code, 401)
+            client.set_cookie(COOKIE, issue_session_ticket(123, secret))
+            response = client.get(url)
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.headers["X-RPT-Personalization-Allowed"], "1")
+            path = ROOT / "english" / "RPT_English_SK_2027_Year_2_A_B.pdf"
+            self.assertEqual(response.data, path.read_bytes())
+            response.close()
+            access["rakan_pembangun"] = False
+            response = client.get(url)
+            self.assertEqual(response.headers["X-RPT-Personalization-Allowed"], "0")
+            response.close()
