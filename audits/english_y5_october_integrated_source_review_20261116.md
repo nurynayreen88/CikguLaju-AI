@@ -297,3 +297,42 @@ Unit 1 disemak pada SOW SK bercetak pp.52–63, Student’s Book pp.12–20 sert
 Lesson 18 menilai penulisan butiran diri secara individu. Lesson 24 menambah perbualan tentang tempat yang pernah dilawati sebagai bukti SP 2.1.2. Lesson 25 mengumpul tulisan bebas sebelum murid menyemak ejaan. Lesson 26 mengekalkan susunan idea dalam Writing Guide dan menggunakan dua perenggan untuk bukti SP 4.2.5.
 
 Jadual RPT Oktober menggunakan Lesson 17–28 sebagai sesi tunggal. Nombor CD1.13–CD1.18 telah dipadankan dalam buku dengan aktiviti yang digunakan. Kandungan keenam-enam fail rakaman dan penghantaran melalui akaun guru produksi masih perlu disahkan.
+
+### Semakan 17 November bagi baki 12 Lesson
+
+SOW Year 5 SK digunakan mengikut halaman bercetak. Latihan WB dipadankan dengan skema jawapan dalam Teacher’s Book. Bahan sastera disemak melalui panduan puisi BPK bagi [Orchestra](https://fliphtml5.com/qifna/qfis/Year_5_Poems_Guidebook/66/) dan [A Bee’s Life](https://fliphtml5.com/qifna/qfis/Year_5_Poems_Guidebook/76/), serta salinan panduan cerpen BPK yang memaparkan [Match Me!](https://anyflip.com/tkejj/sqeb/basic), [Handout 1 untuk Who Am I?](https://anyflip.com/tkejj/sqeb/basic/51-100) dan [Writer’s Block](https://anyflip.com/tkejj/sqeb/basic/101-150). Halaman buku cerita dan antologi dirujuk kepada SOW dan panduan BPK.
+
+| Lesson | SOW bercetak | SP utama / pelengkap | Bahan dan aktiviti bercetak | WB pilihan | Trek dalam RPH |
+| --- | ---: | --- | --- | --- | --- |
+| 33 | 68 | 5.3.1 / 2.1.5 | Serenade, Anthology p.17 dan BPK p.63, bina dan terangkan alat muzik | — | — |
+| 37 | 73 | 3.3.1 / 4.3.2 | SB 22 A4 dan 23 A5–6 / TB 37, pilihan bacaan dan ejaan dalam ayat sendiri | 20 Ex2 | — |
+| 38 | 74 | 4.2.4 / 2.3.1 | SB 23 A7 dan Finished? / TB 37, deskripsi dan naratif rutin mengikut urutan | 20 Ex3 | — |
+| 39 | 75 | 5.2.1 / 3.2.2 | Watching a Bumble Bee, Anthology p.21 dan BPK p.73, bukti beberapa rangkap dan sebab pilihan | — | — |
+| 40 | 76 | 1.2.2 / 2.1.4 | SB 93 A1–5 / TB 107, butiran jadual dan soal jawab tentang rancangan | 27 Ex5 | CD3.05–CD3.07 |
+| 43 | 79 | 3.2.3 / 1.2.5 | SB 26 A1–4 / TB 40, petunjuk perkataan dan tiga arahan berurutan | 22 Ex2 | CD1.25 |
+| 44 | 80 | 4.2.1 / 2.1.5 | SB 26 A5 / TB 40, butiran sambutan sendiri dan deskripsi lisan | 22 Ex3 | — |
+| 45 | 81 | 5.3.1 / 2.1.2 | Watching a Bumble Bee, Anthology p.21, adaptasi rangkap dan pengalaman melihat serangga | — | — |
+| 46 | 82 | 2.2.1 / 4.2.1 | SB 27 A1–6 / TB 41, soalan susulan dan catatan rutin diri | 23 Ex3 | — |
+| 51 | 87 | 5.2.1 / 3.2.2 | Cerpen pp.5–8 dan BPK pp.36–37, padanan watak dan aktiviti serta sebab pilihan | — | — |
+| 69 | 106 | 5.2.1 / 2.1.5 | BPK p.73 Handout 1, deskripsi watak dan sebab pilihan | — | — |
+| 75 | 113 | 5.3.1 / 4.3.3 | BPK pp.105–108 dan cerpen pp.12–14 serta 16, versi baharu cerita dan semakan draf | — | — |
+
+Dalam salinan panduan yang disemak, p.17 memperkenalkan bahagian *Revolving Around the Text*. Aktiviti padanan watak dan perbuatan untuk Lesson 51 berada pada pp.36–37. Halaman 85 memuatkan *Town Planner*, manakala gambar watak untuk Lesson 69 terdapat dalam Handout 1 pada p.73. Aktiviti *Writer’s Block* dan lembarannya berada pada pp.105–108 bagi Lesson 75. Rancangan menggunakan nombor halaman bahan yang sepadan dalam salinan tersebut. Semua Lesson dalam jadual ini ialah sesi tunggal dalam RPT Oktober.
+
+#### Padanan rakaman tambahan
+
+Kesemua 11 fail di bawah berjaya dinyahkod hingga akhir. Sampel pembukaan sepanjang hingga 25 saat dibandingkan dengan Student’s Book, Teacher’s Book atau skrip. Untuk CD1.17, sampel dan skrip p.148 sama-sama menyebut pusat beli-belah sebagai tempat pilihan Emma. Aktiviti 3 meminta topik perbualan. Status penghantaran audio melalui akaun guru produksi masih belum disahkan.
+
+| Lesson | Trek | Bukti kandungan daripada sampel | SHA-256 |
+| --- | --- | --- | --- |
+| 3 | [CD1.05](https://drive.google.com/file/d/1teVj-V8NNFaiA5wwreNZzlngiStImVDY/view) | SB 5 A7 / TB 19, dialog memperkenalkan Yasmin dan minatnya. | `37421fb625986a36bdbb3494a4718d4366a0c07232b3e484d5880de6f4a7e2b7` |
+| 17 | [CD1.13](https://drive.google.com/file/d/1m0MKsa3jG0unwDu-0h2rNR1xO_RFO3z9/view) | SB 12–13 A1 / TB 26, senarai tempat pada peta London. | `7c49cd45efee85d8393a37f5e2fe43bcad3b9a12b863454b410c52034e60094d` |
+| 17 | [CD1.14](https://drive.google.com/file/d/12zQ-KjDh12ehSFVEpeOrbclekD-LFhJy/view) | SB 12–13 A2–3 / TB 27, temu bual tentang kemudahan setempat. | `ca9e5d3c304928fe13a34ed4d11fd9ad9d117e4e4b27cd637afbc8592beaee97` |
+| 19 | [CD1.15](https://drive.google.com/file/d/1mVjVwyqnsPu98sdETPmZIXHPDC9hwzw0/view) | SB 14 A2 / TB 28, teks City on the Sea. | `5fd39fbd004851d5922e907728704f41713790738ddabeeb40228d589b46243f` |
+| 23 | [CD1.16](https://drive.google.com/file/d/1qX-TIsIPU3KgpPg1uC44LKiITTj1ul5O/view) | SB 16 A1 / TB 30, pasangan kata adjektif berlawanan. | `1b5526ee7dba11caaebb50cd1df713dee14df2f8be54eff27e62e45cce4f018f` |
+| 23 | [CD1.17](https://drive.google.com/file/d/1lt6jAaSg-Y5fyalpu_TdQuUbqSjw8NhC/view) | SB 16 A3–4 / TB 30 dan skrip p.148, pembukaan temu bual Emma tentang tempat di bandar. | `f8de187d7fbe65f56d01bc772da4827fdfc6861cfea2a50e63450fe237c19156` |
+| 24 | [CD1.18](https://drive.google.com/file/d/1X1FzjdHZaCg3ZVxt_3iuT95Sw8lD7PhS/view) | SB 17 A4 / TB 31, perkataan dan ayat contoh kata bandingan. | `3211b066480fd2a20e6eb3c687830710783a6da532428ebd3c2183297c5b732a` |
+| 40 | [CD3.05](https://drive.google.com/file/d/1flOJbhgGAAyZs-b9MHbAPMtf3KZB8tdy/view) | SB 93 A2 / TB 107, sebutan waktu untuk ditulis dalam bentuk digital. | `ade1a32ce2c15bab3bb6d580e8d69612591ef327dc7ee6d76ebbda5eff010931` |
+| 40 | [CD3.06](https://drive.google.com/file/d/1ewXieRQlfQme_aF2Cqyb04JWC4-5bGC7/view) | SB 93 A3–4 / TB 107, panggilan untuk bertanya jadual pusat sukan. | `e114367d1c34028e641054989b1b221da9faacd59e56c5b7b8cc4684ed6396e3` |
+| 40 | [CD3.07](https://drive.google.com/file/d/1IBY4EtoZt_888i4uq5UZGL73DzaW7XGK/view) | SB 93 A5 / TB 107, dialog tentang masa kolam renang dan aktiviti sukan. | `873cf2a38b48bd48be6479fc6f867367e73137392e4b10a39cd9171bfd012124` |
+| 43 | [CD1.25](https://drive.google.com/file/d/1RzoP0gRCLP0CRz08Uu1Dw3j4nDJGotvX/view) | SB 26 A3–4 / TB 40, pasar Tahun Baru Cina dan sampul merah. | `c7bbaf4a42564aa6011858669c974d27aaddcd2ec4715b75543789bd66a4ac9c` |
