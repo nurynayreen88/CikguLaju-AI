@@ -1,6 +1,8 @@
 """Check the private Telegram DLP file endpoint and published lesson binding."""
 
 from io import BytesIO
+from pathlib import Path
+import re
 from types import SimpleNamespace
 import unittest
 from unittest.mock import patch
@@ -8,7 +10,7 @@ from unittest.mock import patch
 from docx import Document
 from flask import Flask
 
-from dlp_year2_rph import catalog, resolve
+from dlp_year2_rph import catalog, render, resolve, science_rpt_lessons
 from web.native_rph_telegram_api import create_native_rph_blueprint
 
 
@@ -71,3 +73,32 @@ class DlpDownloadTests(unittest.TestCase):
         self.assertEqual(self.download("pdf", teacher=self.teacher | {"class": "X" * 41}).status_code, 400)
         self.assertEqual(self.download("pdf", teacher=self.teacher | {"reflection": "x\ny\nz\n1\n2\n3\n4"}).status_code, 400)
         self.assertEqual(self.client.post(self.path + "/render", json={}).status_code, 401)
+
+    def test_science_lesson_numbers_standards_and_minutes_match_the_rpt(self):
+        planned = Path(__file__).resolve().parents[1] / "rpt_2027" / "dlp"
+        rpt = Document(planned / "CikguLaju_RPT_DLP_2027_Science_Year_2.docx")
+        rows = [row for row in rpt.tables[2].rows[1:] if row.cells[1].text.startswith("Lesson ")]
+        lessons = [(unit, lesson) for unit in catalog()["SCIENCE_DLP"] for lesson in unit["lessons"]]
+        self.assertEqual(len(science_rpt_lessons()), len(rows))
+        for row, (unit, lesson) in zip(rows, lessons, strict=True):
+            with self.subTest(lesson=lesson["id"]):
+                title, unit_title = row.cells[1].text.splitlines()
+                number = int(title.split()[1])
+                minutes = int(row.cells[4].text.splitlines()[-1].split()[0])
+                self.assertEqual(unit_title, unit["title"])
+                self.assertEqual(title, f"Lesson {number:02d}  {lesson['title']}")
+                codes = r"\b\d+(?:\.\d+)+\b"
+                self.assertEqual(re.findall(codes, row.cells[2].text),
+                                 re.findall(codes, lesson["standards"]))
+                references = (row.cells[4].text.rsplit("\n", 1)[0]
+                              .replace("TB ", "Textbook ").replace("AB ", "Activity Book ")
+                              .replace("\n", " · "))
+                self.assertEqual(references, lesson["references"])
+                word = Document(BytesIO(render("SCIENCE_DLP", unit, lesson, "word", self.teacher)))
+                self.assertEqual(word.tables[0].cell(1, 1).text, f"Lesson {number:02d} · {minutes} min")
+                activities = word.tables[1].rows[1:]
+                self.assertEqual(sum(int(r.cells[0].text.split()[-2]) for r in activities), minutes)
+                self.assertEqual(
+                    [[cell.text for cell in r.cells[1:]] for r in activities],
+                    [phase[1:] for phase in lesson["phases"]],
+                )
