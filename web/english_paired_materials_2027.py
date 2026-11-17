@@ -28,7 +28,7 @@ def verified_pair(year, lesson):
 
 def _student_book(runtime, year, pair, options):
     return [(n, selection) for n in pair
-            if (selection := _book_selection(runtime, year, n, **options))]
+            if (selection := _book_selection(runtime, year, n, paired_reference=True, **options))]
 
 
 def _workbook(year, pair):

@@ -5,6 +5,7 @@ from unittest.mock import Mock, patch
 from flask import Flask
 from pypdf import PdfReader, PdfWriter
 
+from resources.english.y3.student_book_repaired_source import YEAR3_SB_DRIVE_FILE_ID
 from web import english_paired_materials_2027 as materials
 
 
@@ -93,3 +94,24 @@ def test_year3_download_includes_verified_workbook_reference_once_per_pair():
         data, mime, _ = materials.download(None, 3, pair, "workbook")
         assert mime == "application/pdf"
         assert len(PdfReader(BytesIO(data), strict=True).pages) == 1
+
+
+def test_paired_year3_uses_sow_references_instead_of_old_page_metadata():
+    pairs = [((22, 23), [17]), ((65, 66), [45, 47]), ((81, 82), [55]), ((91, 92), [59])]
+    numbers = [number for pair, _ in pairs for number in pair]
+    runtime = SimpleNamespace(
+        _en97_units=lambda _: ([{"lesson_no": n, "subject": "Bahasa Inggeris"} for n in numbers], []),
+        _en_book_source_v25232=Mock(return_value=(YEAR3_SB_DRIVE_FILE_ID, "Student’s Book")),
+        _en_book_pages_v25232=Mock(return_value=[15]),
+    )
+    with patch.object(materials, "_pdf", side_effect=lambda _r, _s, pages: excerpt(pages)):
+        for pair, pages in pairs:
+            selected = materials._student_book(runtime, 3, pair, {})
+            assert [n for n, _ in selected] == list(pair)
+            data, mime, _ = materials.download(runtime, 3, pair, "student-book")
+            assert mime == "application/pdf"
+            assert [float(p.mediabox.width) for p in PdfReader(BytesIO(data)).pages] == [
+                100 + number for number in pages]
+    assert materials._book_selection(runtime, 3, 22)[1] == [15]
+    runtime._en_book_source_v25232.return_value = ("old-edition", "Student’s Book")
+    assert materials._student_book(runtime, 3, (81, 82), {}) == []
