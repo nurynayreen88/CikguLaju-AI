@@ -44,7 +44,7 @@ def weekly_capacity(subject, week):
     return REGULAR_CAP[subject]
 
 
-def allocate(subject, original):
+def allocate(subject, original, *, last_week=44, reserved=()):
     if subject == 'PJPK':
         result = {}
         next_week = 1
@@ -63,12 +63,13 @@ def allocate(subject, original):
     total = sum(len(ids['']) for ids in original.values())
     ideal_position = 0
     candidates = {0: (0, ())}
-    for week in range(1, 45):
+    for week in range(1, last_week + 1):
+        limit = 0 if week in reserved else weekly_capacity(subject, week)
         old_count = len(original.get(week, {}).get('', ()))
         ideal_position += old_count
         revised = {}
         for start, (cost, counts) in candidates.items():
-            for count in range(min(weekly_capacity(subject, week), total - start) + 1):
+            for count in range(min(limit, total - start) + 1):
                 end = start + count
                 score = cost + abs(ideal_position - end) + 3 * abs(count - old_count)
                 if end not in revised or score < revised[end][0]:
@@ -400,6 +401,29 @@ def render(source, target, rtl, assignments, dates, *, show_numbered_range=False
             return reopened.page_count
 
 
+def label_arabic_source_links(path, expected_count):
+    """Make the verified DSKP annotations discoverable on the page."""
+    label = 'Buka DSKP asal'
+    color = (0.08, 0.29, 0.53)
+    with fitz.open(path) as pdf:
+        links = [(page.number, link) for page in pdf for link in page.get_links()]
+        if (len(links) != expected_count or any(
+                link['kind'] != fitz.LINK_URI or not link['uri'].startswith('https://')
+                or link['from'].height < 9 or link['from'].width < 60
+                for _, link in links)):
+            raise ValueError(f'{path}: missing or invalid Arabic DSKP links')
+        changed = False
+        for page_number, link in links:
+            page = pdf[page_number]
+            rect = link['from']
+            if label not in page.get_text(clip=rect):
+                page.insert_text((rect.x0 + 1, rect.y0 + 7.5), label, fontsize=7,
+                                 fontname='helv', color=color)
+                changed = True
+        if changed:
+            pdf.saveIncr()
+
+
 def update_audit(allocation):
     with AUDIT.open(encoding='utf-8', newline='') as file:
         reader = csv.DictReader(file)
@@ -423,7 +447,7 @@ def update_audit(allocation):
         writer.writerows(records)
 
 
-def main(*, moral_before_uasa=False):
+def main(*, moral_before_uasa=False, arab_before_uasa=False):
     calendar = json.loads(CALENDAR.read_text(encoding='utf-8'))['weeks']
     iso = {n: tuple(g[n - 1][field] for g in (calendar['A'], calendar['B'])
                    for field in ('start', 'end')) for n in range(1, 45)}
@@ -434,7 +458,11 @@ def main(*, moral_before_uasa=False):
     manifest = json.loads(manifest_path.read_text())
     cover = json.loads(cover_path.read_text())
     allocations = {}
-    slugs = ('pendidikan_moral',) if moral_before_uasa else (*SLUGS, 'matematik')
+    slugs = (*SLUGS, 'matematik')
+    if moral_before_uasa:
+        slugs = ('pendidikan_moral',)
+    elif arab_before_uasa:
+        slugs = ('bahasa_arab',)
     with TemporaryDirectory(dir=ROOT) as folder:
         outputs = []
         for key, record in manifest['files'].items():
@@ -451,6 +479,13 @@ def main(*, moral_before_uasa=False):
                 new = moral_before_uasa_plan(old)
                 if old == new:
                     continue
+            elif arab_before_uasa:
+                new = allocate(code, old, last_week=38, reserved=(18,))
+                if old == new:
+                    continue
+                expected_count = 58 if year == '4' else 60
+                if sum(len(row['']) for row in new.values()) != expected_count or max(new) != 38:
+                    raise ValueError(f'Arabic Year {year}: incomplete pre-UASA allocation')
             elif code == 'MATH':
                 new = math_telegram_plan(year, iso)
                 if old == new:
@@ -469,6 +504,8 @@ def main(*, moral_before_uasa=False):
             published_dates, published = read_weeks(candidate, code)
             if published != new or published_dates != {w: iso[w] for w in new}:
                 raise ValueError(f'The new PDF does not match the proposed allocation for {path}')
+            if arab_before_uasa:
+                label_arabic_source_links(candidate, expected_count)
             data = candidate.read_bytes()
             digest = sha256(data).hexdigest()
             manifest['pages'] += pages - record['pages']
@@ -485,11 +522,13 @@ def main(*, moral_before_uasa=False):
                 candidate.replace(path)
             for path, data in ((manifest_path, manifest), (cover_path, cover)):
                 path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-            if not moral_before_uasa:
+            if not (moral_before_uasa or arab_before_uasa):
                 update_audit(allocations)
 
 
 if __name__ == '__main__':
     parser = ArgumentParser(description=__doc__)
-    parser.add_argument('--moral-before-uasa', action='store_true')
+    subject = parser.add_mutually_exclusive_group()
+    subject.add_argument('--moral-before-uasa', action='store_true')
+    subject.add_argument('--arab-before-uasa', action='store_true')
     main(**vars(parser.parse_args()))
