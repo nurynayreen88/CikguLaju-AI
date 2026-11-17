@@ -1,20 +1,17 @@
 # English Year 5 Lesson 24 — Speaking 5
 
-**Official SOW:** Lesson 24, printed p.59. **Topic:** Towns and cities. **Duration:** 60 minutes (suggested).
-**Main and complementary CS/LS:** Speaking 2.1/2.1.2; Listening 1.1/1.1.1.
-**Materials:** SB p.17 Activities 1,4,5; TB p.31; CD 1-18.
-**Learning objectives:** Main (Speaking 2.1.2) — pupils find out about and describe experiences up to now in the Towns and cities activities. Complementary (Listening 1.1.1) — pupils recognise and reproduce with little or no support a wide range of target language phonemes in the linked listening task.
+**Official SOW topic:** Towns and cities.
+**Official SOW:** Lesson 24, printed p.59. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Speaking 2.1.2 and Listening 1.1.1.
+**Materials:** English Plus 1 SB p.17 Activities 1, 4–5 and Finished?, TB p.31, CD1.18 and WB p.15 Ex2.
+**Learning objectives:** Pupils ask about and describe real experiences of local places and recognise and reproduce the weak vowel in comparatives.
+**Success criteria:** Ask about a visit and describe an experience, then identify and reproduce the weak vowel in two heard examples.
 
-1. **Set induction (8 min):** Brainstorm six to ten adjectives and review comparatives using TB p.31 warm-up.
-2. **Activity 1 (12 min):** Complete Activity 1; form and spell comparative adjectives on the board.
-3. **Activity 2 (15 min):** Listen to CD 1-18 for Activity 4 and repeat -er endings and than, chorally and individually.
-4. **Activity 3 (17 min):** Discuss fact versus opinion; use Activity 5 Key Phrases to compare opinions in pairs.
-5. **Assessment and closure (8 min):** Groups invent comparative puzzle sentences for others to guess; assess speaking and pronunciation.
+1. **Set induction (8 min):** Brainstorm adjectives to describe two familiar places. Pupils recall where they have been.
+2. **Activity 1 (12 min):** Use SB Activity 1 to review comparative forms. Play CD1.18 for Activity 4. Pupils identify the weak sound in the ending -er and in than, then repeat selected examples.
+3. **Activity 2 (14 min):** Use the opinion exchange in SB Activity 5. Partners ask about a real visit, describe what they did or noticed and compare it with another familiar place.
+4. **Activity 3 (18 min):** Pairs swap partners and repeat with a different experience. If time permits, pupils complete Workbook p.15 Exercise 2.
+5. **Closure (8 min):** Use the Finished? format for a short comparison riddle.
 
-**PBD:** Teacher observes each pair's comparison of places using a relevant comparative form and checks intelligible pronunciation of the target expressions.
-**Differentiation:** Less confident pupils compare two items; proficient pupils compare six.
-**Workbook:** Optional only after verifying exact exercise page and activity; no unverified Workbook assignment.
-**Audio / lesson type:** Audio file identified by name, content not listened.
-**QA status:** SOW-aligned draft; textbook page, audio playback and one-page Word/PDF output not yet independently verified.
-
-**Workbook (existing source QA map):** p.15, Unit 1 Language Focus — Comparative adjectives, Ex1-4. Optional short practice after SOW activities; not a replacement for the core tasks.
+**PBD:** Listen for an experience question and a relevant detail from a real visit. Ask each pupil to identify and say two of the heard sound examples.
+**Differentiation:** Offer pictures of local places and a question frame. Replay the recording and model one example before individual responses.
