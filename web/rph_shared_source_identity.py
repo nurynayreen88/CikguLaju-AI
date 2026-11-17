@@ -32,7 +32,10 @@ def source_paths(year, subject, lesson, component=None):
         if year == 3:
             paths.append("rph_standalone/english/year3/source_task_objectives_20261104.json")
         elif year == 5:
+            from web.english_y5_standalone_runtime import CHOICE_LESSONS
             paths.append("rph_standalone/english/year5/release_approvals_2027.json")
+            if lesson in CHOICE_LESSONS:
+                paths.append("rph_standalone/english/year5/teacher_choice_proposals_2027.json")
         elif year == 6:
             paths.append("rph_standalone/english/year6/sow_task_overlay_2027.json")
         return tuple(paths)

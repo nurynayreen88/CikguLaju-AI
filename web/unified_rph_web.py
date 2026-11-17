@@ -417,6 +417,13 @@ def verified_preview(year, subject, unit, token, component=None):
         fields = row["fields"]
     elif row["path"] is None:
         return None
+    elif subject == "ENGLISH" and year == 5 and row["lesson"] in CHOICE_LESSONS:
+        from web.english_y5_teacher_choice_runtime import adapt_rows as choice_rows
+
+        state = {"subject": subject, "year": year, "lesson_no": row["lesson"]}
+        fields = [{"label": label, "value": value} for label, value in choice_rows(state, {}).items()]
+        if not fields:
+            return None
     elif subject == "ENGLISH" and year == 6:
         # Same strict official SOW + overlay source already used by Web's
         # existing Year 6 RPH reader, not a generic RPT template.
@@ -757,14 +764,15 @@ def create_blueprint():
             from web.english_y5_fixed_draft_preview_runtime import preview_rows
             from web.english_y5_standalone_runtime import approved_for_telegram, verified_draft_for_web
             if not approved_for_telegram(result["lesson"]):
-                state = {"subject": subject, "year": year, "lesson_no": result["lesson"]}
-                draft = preview_rows(state, {}) if verified_draft_for_web(result["lesson"]) else {}
-                if not draft:
-                    return None, (jsonify({
-                        "error": "RPH English Year 5 ini belum diluluskan untuk penjana Telegram. Tiada RPH berbeza digunakan di Web.",
-                        "code": "TELEGRAM_RPH_PARITY_NOT_READY"
-                    }), 503)
-                result["fields"] = [{"label": label, "value": value} for label, value in draft.items()]
+                if result["lesson"] not in CHOICE_LESSONS:
+                    state = {"subject": subject, "year": year, "lesson_no": result["lesson"]}
+                    draft = preview_rows(state, {}) if verified_draft_for_web(result["lesson"]) else {}
+                    if not draft:
+                        return None, (jsonify({
+                            "error": "RPH English Year 5 ini belum diluluskan untuk penjana Telegram. Tiada RPH berbeza digunakan di Web.",
+                            "code": "TELEGRAM_RPH_PARITY_NOT_READY"
+                        }), 503)
+                    result["fields"] = [{"label": label, "value": value} for label, value in draft.items()]
                 result["status"] = "DRAF UNTUK SEMAKAN GURU"
         result["teacher"] = teacher
         try:

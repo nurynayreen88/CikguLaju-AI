@@ -140,7 +140,8 @@ class UnifiedWebRPHTests(unittest.TestCase):
                         self.assertEqual(download.status_code, 200, download.get_json())
                         self.assertEqual(download.headers["X-RPH-Generator"], "telegram-native")
                     other = {**query, "unit": records[1]["unit"], "lesson": records[1]["token"]}
-                    held = self.client.get("/api/web/rph/word", query_string=other)
+                    with patch("web.english_y5_standalone_runtime.verified_draft_for_web", return_value=False):
+                        held = self.client.get("/api/web/rph/word", query_string=other)
                     self.assertEqual(held.status_code, 503)
                     self.assertEqual(held.get_json()["code"], "TELEGRAM_RPH_PARITY_NOT_READY")
                 with patch("web.english_y5_standalone_runtime.approved_for_telegram",

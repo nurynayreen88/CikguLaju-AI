@@ -81,10 +81,25 @@ class ReadinessTests(unittest.TestCase):
         self.assertEqual(response.status_code, 200, response.get_json())
         self.assertEqual(response.get_json()["status"], "DRAF UNTUK SEMAKAN GURU")
         self.assertEqual(response.get_json()["formats"], ["word", "pdf"])
-        response = self.client.get("/api/web/rph/availability",
-                                   query_string={**query, "unit": held["unit"], "lesson": held["token"]})
+        with patch("web.english_y5_standalone_runtime.verified_draft_for_web", return_value=False):
+            response = self.client.get("/api/web/rph/availability",
+                                       query_string={**query, "unit": held["unit"], "lesson": held["token"]})
         self.assertEqual(response.status_code, 503)
         self.assertEqual(response.get_json()["code"], "TELEGRAM_RPH_PARITY_NOT_READY")
+
+    @patch("web.unified_rph_web._account", return_value=(
+        {"authenticated": True, "telegram_user_id": 123, "free_remaining": 10}, None))
+    def test_all_year5_lessons_offer_word_and_pdf_to_a_signed_in_teacher(self, *_):
+        rows = source_records(5, "ENGLISH")
+        self.assertEqual([row["lesson"] for row in rows], list(range(1, 161)))
+        for row in rows:
+            with self.subTest(lesson=row["lesson"]):
+                response = self.client.get("/api/web/rph/availability", query_string={
+                    "year": 5, "subject": "ENGLISH", "unit": row["unit"], "lesson": row["token"],
+                })
+                self.assertEqual(response.status_code, 200, response.get_json())
+                self.assertTrue(response.get_json()["download_allowed"])
+                self.assertEqual(response.get_json()["formats"], ["word", "pdf"])
 
     def test_browser_hides_download_until_verified_and_shows_failures(self):
         page=(ROOT/"web_v1_static_preview"/"index.html").read_text("utf8")

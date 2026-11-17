@@ -9,8 +9,8 @@
       "topic": "Free Time — Starter Unit Review",
       "source_marker": "this, that, these and those",
       "materials": "English Plus 1 SB p.9 Activities 1,2,4,5; TB p.23; Starter Unit self-assessment; classroom objects",
-      "objective": "Distinguish this/that/these/those in four near/far examples and identify one Starter Unit area to practise",
-      "criteria": "Four contextual demonstrative responses, two checked answers and an individual review target",
+      "objective": "Describe classroom objects orally and in writing using suitable near/far demonstratives.",
+      "criteria": "Four accurate oral descriptions and two written descriptions with suitable demonstratives.",
       "phases": [
         {
           "label": "Set Induction",
@@ -34,28 +34,30 @@
           "label": "Activity 3",
           "minutes": 15,
           "teacher": "Guide SB Activities 4–5; check responses and reteach a specific misconception.",
-          "pupils": "Complete review tasks and correct inaccurate answers"
+          "pupils": "Complete Activities 4–5, then write two new descriptions using suitable demonstratives."
         }
       ],
       "pbd": {
         "minutes": 5,
-        "teacher": "Check two individual responses and note demonstrative errors.",
-        "pupils": "Explain and correct one answer"
+        "teacher": "Listen for accurate oral descriptions and check two written statements.",
+        "pupils": "Read a written description and correct its demonstrative."
       },
       "closure": {
         "minutes": 5,
         "teacher": "Collect Great/OK/A little self-assessment and identify follow-up.",
         "pupils": "State a strength and one learning target"
       },
-      "differentiation": "Use real objects and visual cues; extend pupils with singular/plural near/far contrasts"
+      "differentiation": "Use real objects and visual cues; extend pupils with singular/plural near/far contrasts",
+      "main_sp": "2.1.5",
+      "complementary_sp": "4.2.4"
     },
     "34": {
       "kind": "Language Awareness 2",
       "topic": "Towns and Cities — Unit 1 Review",
       "source_marker": "Max's city",
       "materials": "English Plus 1 SB p.20 Activities 3–4 and p.21 Activity 5; TB pp.34–35; Unit 1 self-assessment",
-      "objective": "Review city language, exchange questions about Max's city, and complete the Unit 1 self-assessment",
-      "criteria": "Completed city task, one correct pair question/answer and one review target",
+      "objective": "Ask a follow-up question and answer supported spoken questions about Max’s city in order.",
+      "criteria": "One suitable follow-up question and two accurate answers from three spoken prompts.",
       "phases": [
         {
           "label": "Set Induction",
@@ -73,7 +75,7 @@
           "label": "Activity 2",
           "minutes": 15,
           "teacher": "Guide p.20 Activity 4 about Max's city.",
-          "pupils": "Write and answer city questions with a partner"
+          "pupils": "Ask and answer city questions, then add one question based on the partner’s answer."
         },
         {
           "label": "Activity 3",
@@ -84,23 +86,25 @@
       ],
       "pbd": {
         "minutes": 4,
-        "teacher": "Check responses and record one language gap.",
-        "pupils": "Correct an answer and explain it"
+        "teacher": "Read three supported city questions in order and listen for a follow-up question.",
+        "pupils": "Answer the prompts and ask one question to continue the exchange."
       },
       "closure": {
         "minutes": 4,
         "teacher": "Collect Unit 1 Great/OK/A little review.",
         "pupils": "Record a strength and next step"
       },
-      "differentiation": "Give place-word and question frames; extend confident pupils with reasons"
+      "differentiation": "Give place-word and question frames; extend confident pupils with reasons",
+      "main_sp": "2.2.1",
+      "complementary_sp": "1.2.5"
     },
     "52": {
       "kind": "Language Awareness 3",
       "topic": "Days — Unit 2 Review",
       "source_marker": "p.30 Activity 6",
       "materials": "English Plus 1 SB p.30 Activities 3–6 and p.31 Activity 3; TB pp.44–45; Unit 2 self-assessment",
-      "objective": "Complete Unit 2 review, use paired questions and identify a language target",
-      "criteria": "Completed review exercises, a pair exchange, an error correction and self-assessment",
+      "objective": "Give two details about a daily routine and answer a sequence of supported questions.",
+      "criteria": "Two specific personal details and two accurate responses to three supported questions.",
       "phases": [
         {
           "label": "Set Induction",
@@ -118,7 +122,7 @@
           "label": "Activity 2",
           "minutes": 15,
           "teacher": "Organise SB p.30 Activity 6 in pairs.",
-          "pupils": "Ask and answer review questions"
+          "pupils": "Ask about a partner’s daily routine and answer with a time and an activity before swapping roles."
         },
         {
           "label": "Activity 3",
@@ -129,23 +133,25 @@
       ],
       "pbd": {
         "minutes": 5,
-        "teacher": "Sample written work and a pair response.",
-        "pupils": "Show the work and correct an error"
+        "teacher": "Use three spoken prompts with visual support and listen for personal details.",
+        "pupils": "Answer the questions in order and tell a partner two things about your routine."
       },
       "closure": {
         "minutes": 5,
         "teacher": "Collect a short Unit 2 self-assessment.",
         "pupils": "Identify a strength and next step"
       },
-      "differentiation": "Provide sentence prompts and paired explanation; extend with an additional question"
+      "differentiation": "Provide sentence prompts and paired explanation; extend with an additional question",
+      "main_sp": "2.1.1",
+      "complementary_sp": "1.2.5"
     },
     "70": {
       "kind": "Language Awareness 4",
       "topic": "Wild Life — Unit 3 Review",
       "source_marker": "What am I?",
       "materials": "English Plus 1 SB p.41 Activities 3–5; TB p.55; animal word cards; Unit 3 self-assessment",
-      "objective": "Complete animal-language review, explain a clue and identify a learning gap",
-      "criteria": "Completed Activities 3–5, one animal-clue explanation, one corrected response and self-assessment",
+      "objective": "Describe an animal orally and write two suitable statements about it.",
+      "criteria": "Two useful oral clues and two written descriptions that help identify the animal.",
       "phases": [
         {
           "label": "Set Induction",
@@ -162,29 +168,31 @@
         {
           "label": "Activity 2",
           "minutes": 23,
-          "teacher": "Guide 'What am I?' in Activity 5; invite advanced pupils to make three clue sets.",
-          "pupils": "Guess animals, explain choices and write clues if ready"
+          "teacher": "Model oral and written clues for Activity 5, then support pairs as needed.",
+          "pupils": "Write two animal clues, read them to a partner and guess the animal from the partner’s clues."
         }
       ],
       "pbd": {
         "minutes": 5,
-        "teacher": "Check Activities 3–5 individually and note common errors.",
-        "pupils": "Correct and explain one answer"
+        "teacher": "Check the written clues and listen for two oral descriptions of the animal.",
+        "pupils": "Share two clues and improve any clue that is unclear."
       },
       "closure": {
         "minutes": 5,
         "teacher": "Collect Unit 3 self-assessment.",
         "pupils": "State one strength and area for practice"
       },
-      "differentiation": "Model clues and give word banks; extend pupils with original clues"
+      "differentiation": "Model clues and give word banks; extend pupils with original clues",
+      "main_sp": "2.1.5",
+      "complementary_sp": "4.2.4"
     },
     "88": {
       "kind": "Project-Based Learning 1",
       "topic": "My Dream School Day — CikguLaju Project Proposal",
       "source_marker": "My Dream School Day",
       "materials": "Sample school timetable, A4 paper, drawing tools and subject word bank; no mandatory SB/WB/audio",
-      "objective": "Create a timetable with at least four periods, explain two choices and present a group proposal",
-      "criteria": "Four labelled periods, two clear reasons, participation and one answered question",
+      "objective": "Agree on steps for making a timetable and answer a question about the planned school day.",
+      "criteria": "An agreed three-step plan, a timetable with four or more periods and two spoken details about the planned day.",
       "phases": [
         {
           "label": "Set Induction",
@@ -195,8 +203,8 @@
         {
           "label": "Activity 1",
           "minutes": 15,
-          "teacher": "Organise groups of 3–4; check order, periods and shared roles.",
-          "pupils": "Plan 4–6 periods and assign tasks"
+          "teacher": "Have groups agree three steps and roles before making their timetable.",
+          "pupils": "Agree three steps, assign roles and plan 4–6 periods."
         },
         {
           "label": "Activity 2",
@@ -208,28 +216,30 @@
           "label": "Activity 3",
           "minutes": 10,
           "teacher": "Organise presentations and one question per group.",
-          "pupils": "Present the school day, answer a question and justify a choice"
+          "pupils": "Present two details using going to, give two reasons and answer another group’s question."
         }
       ],
       "pbd": {
         "minutes": 5,
-        "teacher": "Check timetable completeness, language, reasons and group contribution.",
-        "pupils": "Improve one identified weakness"
+        "teacher": "Check the agreed steps and listen for two details about the planned day.",
+        "pupils": "Explain the group’s plan and name a step the group agreed to follow."
       },
       "closure": {
         "minutes": 5,
         "teacher": "Discuss one feasible idea from the presentations.",
         "pupils": "Share one useful school-day idea"
       },
-      "differentiation": "Provide timetable and sentence frames; extend with extra justification"
+      "differentiation": "Provide timetable and sentence frames; extend with extra justification",
+      "main_sp": "2.1.4",
+      "complementary_sp": "2.2.2"
     },
     "106": {
       "kind": "Language Awareness 5",
       "topic": "Food and Health — Unit 5 Review",
       "source_marker": "Food and health",
       "materials": "English Plus 1 SB p.60 Activities 3,5,6 and p.61 Activity 6; TB pp.74–75; Unit 5 review sheet",
-      "objective": "Complete Food and Health review, justify a response and identify a learning need",
-      "criteria": "Reviewed tasks, one explanation, one corrected response and self-assessment",
+      "objective": "Ask for and respond to simple food or health advice, then write one helpful reply.",
+      "criteria": "One intelligible advice exchange and one written reply that gives relevant advice.",
       "phases": [
         {
           "label": "Set Induction",
@@ -247,7 +257,7 @@
           "label": "Activity 2",
           "minutes": 15,
           "teacher": "Guide p.60 Activities 5–6 and p.61 Activity 6.",
-          "pupils": "Complete tasks and compare selected responses"
+          "pupils": "Complete the book tasks, then ask a partner about a food or health problem and respond to their advice."
         },
         {
           "label": "Activity 3",
@@ -258,23 +268,25 @@
       ],
       "pbd": {
         "minutes": 10,
-        "teacher": "Check individual review work and record follow-up needs.",
-        "pupils": "Explain a correction"
+        "teacher": "Check an oral advice exchange and prompt an independent written reply to a health question.",
+        "pupils": "Respond to a partner’s advice and write one relevant suggestion."
       },
       "closure": {
         "minutes": 5,
         "teacher": "Invite one useful skill and an improvement target.",
         "pupils": "Share one strength and next step"
       },
-      "differentiation": "Use vocabulary cues and partnered rehearsal; extend with independent explanations"
+      "differentiation": "Use vocabulary cues and partnered rehearsal; extend with independent explanations",
+      "main_sp": "2.1.3",
+      "complementary_sp": "4.2.2"
     },
     "124": {
       "kind": "Language Awareness 6",
       "topic": "Sport — Unit 6 Review",
       "source_marker": "Sport Art",
       "materials": "English Plus 1 SB p.70 Activities 2,3,6 and p.71 Activity 2 Sport Art; TB pp.84–85; Unit 6 self-assessment",
-      "objective": "Complete Sport review, contribute to Sport Art and identify a language need",
-      "criteria": "Individual review work, group artwork, a corrected response and self-assessment",
+      "objective": "Ask a follow-up sports question and write a caption describing equipment or a place in the Sport Art output.",
+      "criteria": "One relevant follow-up question and one caption with two suitable descriptive details.",
       "phases": [
         {
           "label": "Set Induction",
@@ -298,28 +310,30 @@
           "label": "Activity 3",
           "minutes": 10,
           "teacher": "Guide SB p.71 Activity 2 Sport Art.",
-          "pupils": "Create the group Sport Art output"
+          "pupils": "Create the Sport Art output and write a caption describing a place or piece of equipment."
         }
       ],
       "pbd": {
         "minutes": 10,
-        "teacher": "Check language responses, group effort and self-assessment.",
-        "pupils": "Correct one answer and state a practice need"
+        "teacher": "Listen for a follow-up question and check each pupil’s descriptive caption.",
+        "pupils": "Ask a further sports question and read your caption to a partner."
       },
       "closure": {
         "minutes": 5,
         "teacher": "Collect an exit response and recap Unit 6.",
         "pupils": "Share one useful expression and a next step"
       },
-      "differentiation": "Give sport visuals and sentence frames; extend with richer descriptions"
+      "differentiation": "Give sport visuals and sentence frames; extend with richer descriptions",
+      "main_sp": "2.2.1",
+      "complementary_sp": "4.2.4"
     },
     "142": {
       "kind": "Language Awareness 7",
       "topic": "Growing Up — Unit 7 Review",
       "source_marker": "three-boy table",
       "materials": "English Plus 1 SB p.81 Activities 1,2,5; TB p.95; Unit 7 self-assessment",
-      "objective": "Complete the three-boy table and Unit 7 review, then identify a learning target",
-      "criteria": "A completed reading table, pair/individual answers, a correction and self-assessment",
+      "objective": "Find facts in the three profiles and describe one boy orally using details from the text.",
+      "criteria": "Three accurate details in the table and a spoken description with two supported details.",
       "phases": [
         {
           "label": "Set Induction",
@@ -337,7 +351,7 @@
           "label": "Activity 2",
           "minutes": 15,
           "teacher": "Organise SB Activity 2 in pairs and Activity 5 individually.",
-          "pupils": "Discuss pair answers and complete individual tasks"
+          "pupils": "Discuss the table, describe one boy with two details, then complete the individual review."
         },
         {
           "label": "Activity 3",
@@ -348,23 +362,25 @@
       ],
       "pbd": {
         "minutes": 10,
-        "teacher": "Review the table, individual responses and self-assessment.",
-        "pupils": "Correct one answer"
+        "teacher": "Check three facts against the profiles and listen for two details in the oral description.",
+        "pupils": "Check the table against the text and describe one boy to a partner."
       },
       "closure": {
         "minutes": 5,
         "teacher": "Collect an exit response on Unit 7 language.",
         "pupils": "Share an expression and next step"
       },
-      "differentiation": "Provide picture cues and a sample table; extend with detailed descriptions"
+      "differentiation": "Provide picture cues and a sample table; extend with detailed descriptions",
+      "main_sp": "3.2.2",
+      "complementary_sp": "2.1.5"
     },
     "160": {
       "kind": "Project-Based Learning 2",
       "topic": "Eco-Holiday Brochure — CikguLaju Project Proposal",
       "source_marker": "Eco-Holiday Brochure",
       "materials": "Teacher-approved destination facts, brochure template and drawing tools; no mandatory SB/WB/audio",
-      "objective": "Design a factual brochure with transport/packing facts and two eco-actions, then justify one choice",
-      "criteria": "A labelled brochure, accurate facts, two eco-friendly actions, contribution and one answered question",
+      "objective": "Describe a destination in writing and give and respond to advice about responsible travel.",
+      "criteria": "Two accurate descriptions in the brochure and a relevant oral suggestion with a response.",
       "phases": [
         {
           "label": "Set Induction",
@@ -382,26 +398,28 @@
           "label": "Activity 2",
           "minutes": 15,
           "teacher": "Review draft layout, facts and language.",
-          "pupils": "Produce labelled brochure sections and illustrations"
+          "pupils": "Write two factual descriptions and add transport, packing and eco-action details."
         },
         {
           "label": "Activity 3",
           "minutes": 10,
           "teacher": "Organise presentations and audience questions.",
-          "pupils": "Present the brochure and justify an eco-action"
+          "pupils": "Present the brochure, give an eco-friendly suggestion and respond to another group’s advice."
         }
       ],
       "pbd": {
         "minutes": 10,
-        "teacher": "Assess facts, eco-actions, language, participation and response to a question.",
-        "pupils": "Use feedback to improve one brochure element"
+        "teacher": "Check two factual descriptions and listen for a relevant advice exchange.",
+        "pupils": "Improve one brochure description and respond to another group’s advice."
       },
       "closure": {
         "minutes": 5,
         "teacher": "Invite one realistic responsible-travel action.",
         "pupils": "Share a useful idea and possible improvement"
       },
-      "differentiation": "Use picture prompts and sentence frames; extend with environmental-impact reasoning"
+      "differentiation": "Use picture prompts and sentence frames; extend with environmental-impact reasoning",
+      "main_sp": "4.2.4",
+      "complementary_sp": "2.1.3"
     }
   }
 }
