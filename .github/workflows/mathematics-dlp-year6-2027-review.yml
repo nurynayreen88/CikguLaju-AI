@@ -1,0 +1,27 @@
+name: Mathematics DLP Year 6 Word and PDF review
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/mathematics-dlp-year6-2027-review.yml'
+      - 'staging/dlp/year6/mathematics_2027.json'
+      - 'staging/dlp/year6/render_mathematics.py'
+      - 'tests/test_dlp_year6_mathematics_2027_review.py'
+      - 'rpt_2027/dlp/CikguLaju_RPT_DLP_2027_Mathematics_Year_6.docx'
+      - 'dlp_year2_rph.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render-and-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install python-docx==1.2.0 reportlab==4.2.5 pypdf==5.1.0
+      - run: python -m unittest discover -s tests -p 'test_dlp_year6_mathematics_2027_review.py' -v

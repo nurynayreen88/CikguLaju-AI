@@ -165,7 +165,7 @@
       "model": "Use the overlap of two decimal strips to explain hundredths. For a longer product, estimate and then calculate the exact decimal.",
       "guided_practice": "Use grids for tenths and a written algorithm for longer decimals. Compare estimates and exact values and explain when removing a final zero preserves the value.",
       "assessment": "Estimate and find 0.75 × 0.4, 1.25 × 0.6 and 0.35 × 0.14. Explain where the point is placed in one answer.",
-      "evidence": "0.3, 0.75 and 0.049. 0.35 × 0.14 gives 0.0490 before dropping the final zero.",
+      "evidence": "Sample estimates: 0.32, 0.78 and 0.04. Exact products: 0.30, 0.75 and 0.049. In the last product, 35 × 14 gives 490 ten-thousandths, or 0.0490.",
       "closure": "Ask why the first product is smaller than 0.75."
     },
     "L14": {
@@ -216,10 +216,10 @@
     "L19": {
       "materials": "Mixed-operation cards, estimation strips",
       "induction": "Ask whether the result of 4 × (2.5 − 3/4) should be above or below 10.",
-      "model": "Compare an estimate with the exact result. Then model checking a mixed division and multiplication by estimating both factors.",
+      "model": "Estimate the value in brackets before multiplying. In a second example, identify division as the first operation before adding.",
       "guided_practice": "Solve the same expression in fractions and decimals, then select the more efficient route and justify it.",
       "assessment": "Find 4 × (2.5 − 3/4) and 3/4 + 2.4 ÷ 0.6. Show the first operation and a sensible estimate for one expression.",
-      "evidence": "7 and 4.75. Rounding 2.5 − 3/4 to about 2 gives an estimate near 8 for the first expression.",
+      "evidence": "First subtract inside the brackets to get 1.75, then multiply by 4 to get 7. In the second expression, divide first to get 4, then add 3/4 to get 4.75. Rounding 1.75 to 2 gives an estimate of 8 for the first answer.",
       "closure": "Ask why the exact result differs from that estimate."
     },
     "L20": {
@@ -288,10 +288,10 @@
     "L26": {
       "materials": "Fictional protection cards, risk and scenario matrix",
       "induction": "Show a travel disruption and damage to a home. Ask what unexpected costs each could generate.",
-      "model": "Introduce insurance and takaful as protection arrangements with specified risks, limits and terms. Describe a takaful contribution to a shared fund.",
-      "guided_practice": "Match fictional arrangements to risks, compare the benefits and limits on sample cards, and identify one situation outside each example's stated scope.",
-      "assessment": "Match a travel card covering specified medical costs and a home card covering fire damage with their two scenarios. Explain one purpose of protection and what a stated limit means.",
-      "evidence": "Match travel medical expenses to the travel card and fire damage to the home card. Protection helps with specified financial costs. A limit is the maximum under the example terms.",
+      "model": "Compare a fictional insurance premium paid to an insurer with a takaful contribution paid into a shared participants’ fund. Show that both can help cover specified risks.",
+      "guided_practice": "Sort examples by how the risk is borne. Match medical or fire protection to each case and identify one cost outside the stated scope.",
+      "assessment": "Identify the insurance card where the insurer bears the risk and the takaful card where participants share it. Match travel medical and house fire scenarios to suitable coverage. Explain one benefit and one coverage limit.",
+      "evidence": "Insurance: the insurer bears the insured risk. Takaful: participants share risk through a fund. Match travel medical expenses and house fire damage to the stated coverage. A limit caps the payment under the example terms.",
       "closure": "Ask why checking the risk described on the card matters before relying on a benefit."
     },
     "L27": {
@@ -308,8 +308,8 @@
       "induction": "Show a receipt with separate item, service and service-tax lines. Ask which base should be used.",
       "model": "Review reading the receipt and verifying a stated rate. Compare the resulting total with available money.",
       "guided_practice": "Check a partner's receipt and record which amount supports a budget conclusion.",
-      "assessment": "A sample receipt shows RM185 for goods and RM50 service with 6% tax on service. Check the total and the balance from RM250.",
-      "evidence": "Tax RM3, total RM238 and balance RM12. The base is RM50.",
+      "assessment": "Goods cost RM185 and service costs RM50, with 6% tax on service. Check the receipt total against a RM250 budget. Can the buyer add a RM15 item? Show the difference.",
+      "evidence": "Tax RM3 on the RM50 service. The total is RM238 and RM12 is left. A RM15 item raises the total to RM253, which is RM3 over budget.",
       "closure": "Ask when the goods price would belong in a different tax calculation."
     },
     "L28": {
@@ -407,7 +407,7 @@
       "induction": "Fold a paper disc along two different diameters. Ask what the intersection represents.",
       "model": "Label the centre, a segment from centre to circumference and a segment through the centre joining two points on the circumference. Compare radius and diameter.",
       "guided_practice": "Measure radii and diameters of three circular templates. Draw a chord that misses the centre and explain why it is different.",
-      "assessment": "On the teacher's diagram, P is the centre, AB goes through P, and CD misses P. Label centre, a radius and diameter. Calculate the diameter if PA is 4.5 cm.",
+      "assessment": "A, B, C and D are on the circumference of a circle centred at P. AB passes through P and CD does not. Label the centre, one radius and the diameter. Find the diameter if PA is 4.5 cm.",
       "evidence": "Centre P, radius PA or PB, diameter AB. Diameter 9 cm. CD is a chord that does not go through P.",
       "closure": "Ask what makes every diameter twice the radius."
     },

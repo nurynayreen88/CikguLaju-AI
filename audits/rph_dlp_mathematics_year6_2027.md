@@ -10,8 +10,15 @@ Kesemua 38 kod LS sepadan dengan DSKP KSSR Semakan 2017 edisi Inggeris Januari 2
 - Terdapat satu sesi 30 minit, 12 sesi 60 minit, 19 sesi 90 minit dan 22 sesi 150 minit. Semua RPH mempunyai tindakan guru dan murid, tugasan individu serta contoh jawapan PBD. Sesi 150 minit memperuntukkan fasa berasingan untuk demonstrasi dan aplikasi berpandu. Review menggunakan kod LS yang telah diajar dalam unit.
 - Lesson 29–30 menggunakan zon masa yang dinyatakan dalam soalan, termasuk perubahan hari. Lesson 39 menggunakan skala untuk mengira jarak mengufuk dan mencancang. Lesson 43 menilai sektor 45°, 90° dan 180°, dan Lesson 44–46 membezakan kebolehjadian daripada keputusan satu percubaan.
 
+## Semakan PBD selepas eksport awal
+
+- Lesson 13 dan 19 menyertakan contoh anggaran, jawapan tepat dan langkah operasi yang diminta.
+- Lesson 26 menilai model perkongsian risiko takaful dan tanggungan risiko insurans, di samping pemadanan perlindungan dengan situasi. Rujukan kekal m/s 121–122.
+- Review 03 menilai keputusan belian berdasarkan resit dan bajet. Lesson 36 menyatakan kedudukan semua titik pada lilitan supaya murid boleh menentukan jejari dan diameter.
+
 ## Pengesahan dan eksport
 
 - Kesemua 54 baris sepadan antara draf RPT dan RPH pada urutan, tempoh, tarikh A/B, standard, rujukan buku dan fokus PBD. Semua 54 RPH Word yang dirender dan 54 PDF asli muat satu halaman A4. RPT semakan dirender sebagai tujuh halaman A4 landskap.
 - Jalankan `PYTHONPATH=. python -m staging.dlp.year6.render_mathematics --output /tmp/rph-dlp-y6` untuk menyemak RPT sumber dan mengeksport RPT Word semakan serta kesemua 54 RPH dalam Word dan PDF.
+- Ujian eksport dalam CI menyemak 54 Word, 54 PDF, jadual RPT semakan dan lima rujukan halaman yang berubah. Semakan setempat melalui LibreOffice turut mengesahkan satu halaman A4 bagi setiap Word.
 - **HOLD semakan guru.** Draf tersedia untuk semakan. Penerbitan di Web dan Telegram menunggu pengesahan akademik, CI dan ujian muat turun pengguna.
