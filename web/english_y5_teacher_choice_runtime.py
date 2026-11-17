@@ -22,7 +22,32 @@ VERSION = "english-y5-9-teacher-choice-proposals-20261104"
 PROJECTS = frozenset((88, 160))
 _FIXED_PAIR = re.compile(r"(?<!\d)[1-5]\.\d\.\d(?!\d)")
 _DRAFT_MARKER = re.compile(r"\b(?:DRAF|draft)\b", re.I)
-_LS_PENDING = "Teacher to choose Year 5 DSKP standard (not fixed by SOW)"
+# Abridged Year 5 SK DSKP descriptions (printed pp. 22, 26, 31 and 35).
+DSKP_CODES = {
+    "2.1": "Share simple information clearly",
+    "2.2": "Use strategies to manage communication",
+    "3.2": "Use strategies to understand written texts",
+    "4.2": "Communicate basic information in writing",
+    "1.2": "Understand familiar spoken language",
+    "2.1.1": "Give details about oneself",
+    "2.1.3": "Ask for, offer and respond to simple advice",
+    "2.1.4": "Ask about and describe future plans",
+    "2.1.5": "Describe people, places or objects in speech",
+    "2.2.1": "Ask relevant questions to sustain a short exchange",
+    "2.2.2": "Agree on steps for a short classroom task",
+    "1.2.5": "Understand a sequence of supported questions",
+    "3.2.2": "Find specific details in a text of at least two paragraphs",
+    "4.2.2": "Exchange simple advice in writing",
+    "4.2.4": "Describe people, places or objects in writing",
+}
+
+
+def selected_standards(proposal):
+    """Return ordered (SK, SP) pairs for the selected DSKP standards."""
+    return tuple(
+        (code.rsplit(".", 1)[0], code)
+        for code in (proposal["main_sp"], proposal["complementary_sp"])
+    )
 
 
 def _data(path=PROPOSAL_PATH):
@@ -80,6 +105,10 @@ def load_proposal(number, *, root=LESSON_ROOT, proposal_path=PROPOSAL_PATH):
         # This lesson has no official fixed CS/LS. A proposal must not
         # smuggle an invented official learning-standard code into Word/PDF.
         return None
+    codes = (proposal.get("main_sp"), proposal.get("complementary_sp"))
+    if any(not isinstance(code, str) or not _FIXED_PAIR.fullmatch(code)
+           or code not in DSKP_CODES for code in codes) or codes[0] == codes[1]:
+        return None
     phases = proposal.get("phases")
     if not isinstance(phases, list) or not 3 <= len(phases) <= 5:
         return None
@@ -130,14 +159,13 @@ def adapt_rows(state, rows, *, root=LESSON_ROOT, proposal_path=PROPOSAL_PATH):
 
     result = dict(rows)
     result["TAJUK"] = "CADANGAN CIKGULAJU (DRAF) — " + proposal["topic"]
-    # Explicitly replace any inherited legacy codes, not assert false
-    # authoritative standards for teacher-choice SOW lessons.
-    result["MAIN CONTENT STANDARD"] = _LS_PENDING
-    result["MAIN LEARNING STANDARD"] = _LS_PENDING
-    result["COMPLEMENTARY CONTENT STANDARD"] = _LS_PENDING
-    result["COMPLEMENTARY LEARNING STANDARD"] = _LS_PENDING
-    result["STANDARD KANDUNGAN"] = _LS_PENDING
-    result["STANDARD PEMBELAJARAN"] = _LS_PENDING
+    (main_sk, main_sp), (comp_sk, comp_sp) = selected_standards(proposal)
+    result["MAIN CONTENT STANDARD"] = main_sk
+    result["MAIN LEARNING STANDARD"] = main_sp
+    result["COMPLEMENTARY CONTENT STANDARD"] = comp_sk
+    result["COMPLEMENTARY LEARNING STANDARD"] = comp_sp
+    result["STANDARD KANDUNGAN"] = " / ".join(dict.fromkeys((main_sk, comp_sk)))
+    result["STANDARD PEMBELAJARAN"] = f"{main_sp} / {comp_sp}"
     result["OBJEKTIF PEMBELAJARAN"] = "Suggested: " + proposal["objective"]
     result["KRITERIA KEJAYAAN"] = "Suggested evidence: " + proposal["criteria"]
     result["BAHAN BANTU MENGAJAR"] = proposal["materials"]
