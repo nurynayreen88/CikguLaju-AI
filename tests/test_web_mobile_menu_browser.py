@@ -114,7 +114,7 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                         ("Buka Profil & Akses","account","view-account-heading"),
                         ("Buka Sediakan RPH","rph","view-rph-heading"),
                         ("Buka RPT 2027","rpt","rpt2027-heading"),
-                        ("Buka RPH Hari Ini","today","view-today-heading"),
+                        ("Buka RPH Pantas","today","view-today-heading"),
                     ]:
                         if view=="today":
                             with page.expect_request(HOST+"/api/web/rph/hari-ini*"):
@@ -124,6 +124,9 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                         expect(guide).to_be_hidden()
                         expect(page.locator("#"+heading_id)).to_be_focused()
                         expect(nav.locator('[data-web-view="'+view+'"]')).to_have_attribute("aria-current","page")
+                        if view=="today":
+                            expect(nav.get_by_role("button", name="RPH Pantas")).to_be_visible()
+                            expect(nav.locator('[data-web-view="today"] [aria-hidden="true"]')).to_have_text("⚡")
                         nav.get_by_role("button",name="Panduan").click()
                         expect(guide).to_be_visible()
                 finally:
