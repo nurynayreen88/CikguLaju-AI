@@ -1,22 +1,17 @@
-# English Year 5 — Standalone RPH — Lesson 015 (Language Arts 3)
+# English Year 5 Lesson 15 — Language Arts 3
 
-**Source:** Official Primary Year 5 SK Scheme of Work Lesson 15, printed p.49. **Theme:** World of Stories. **Topic:** Cats. **Duration:** 60 minutes suggested.
-**Main CS/LS:** Language Arts 5.2/5.2.1. **Complementary CS/LS:** Listening 1.2/1.2.2. **Language focus:** continuous-tense verbs.
-**Learning objectives:** Main (Language Arts 5.2.1) — pupils explain in simple language why they like or dislike an event, description or character in a text in the Cats activities. Complementary (Listening 1.2.2) — pupils understand with support specific information and details of longer simple texts on a range of familiar topics through the linked listening task.
-**Success criteria (teacher-set):** Pupils complete the core activities and demonstrate an observable response for each skill.
-**Materials:** NON-TEXTBOOK: Anthology of Poems p.15 'Cats'; BPK Poetry Guidebook.
+**Official SOW topic:** Cats.
+**Official SOW:** Lesson 15, printed p.49. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Language Arts 5.2.1 and Listening 1.2.2.
+**Materials:** Anthology of Poems p.15, Cats by John Kitching, BPK Poetry Guidebook and action picture cards.
+**Learning objectives:** Pupils identify specific actions from stanzas read aloud and explain a personal response to one action.
+**Success criteria:** Match at least three heard details to the correct pictures and explain a like or dislike with one reason.
 
-## Teaching and learning
-1. **Set induction (8 min):** Teacher sketches pet animals and pupils predict the category.
-2. **Activity 1 (12 min):** Teacher introduces Cats and discusses its illustrations.
-3. **Activity 2 (15 min):** Four groups read assigned stanzas; other groups point to matching pictures of cats' actions.
-4. **Activity 3 (17 min):** Pairs discuss what they would do in response to cat actions; Hot Seat pairs respond to questions about scratching backdoor/gate/beehive or napping.
-5. **PBD and closure (8 min):** After viewing poem pictures, pupils close books and nod/shake heads to judge teacher's statements; teacher observes responses and reasons.
+1. **Set induction (8 min):** Show outlines of pets and invite pupils to predict the topic.
+2. **Activity 1 (12 min):** Introduce Cats using the illustrations. Assign one stanza to each of four groups and give them time to practise reading aloud.
+3. **Activity 2 (14 min):** Groups take turns reading. Other pupils mark the picture that matches the action and place they hear. Replay a stanza orally if needed.
+4. **Activity 3 (18 min):** In a Hot Seat exchange, pairs choose one action and say whether they like it and why. Ask listeners to identify the action being discussed.
+5. **Closure (8 min):** Close the books and give short statements about the cats. Pupils signal whether each detail matches what they heard.
 
-**PBD:** Teacher checks pupils' matching of Cats stanzas to illustrations and listens to one relevant response during the Hot Seat questions.
-**Differentiation:** Accept short phrases and incomplete sentences from pupils still developing reasons.
-**Reflection:** Objective met __/__; follow-up __.
-**Workbook:** Not prescribed for this Language Arts lesson.
-**QA status:** SOURCE-PAIRED DRAFT. Official SOW lesson and references checked; physical source-page/audio content and Word/PDF layout not yet independently verified.
-
-**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
+**PBD:** Check each pupil’s three listening matches and one reason tied to the chosen action.
+**Differentiation:** Offer picture choices and a because stem. Accept a short reason from pupils who need support.

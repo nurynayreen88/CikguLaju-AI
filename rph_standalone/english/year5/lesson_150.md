@@ -1,20 +1,17 @@
-# Year 5 Lesson 150 — Speaking 26
+# English Year 5 Lesson 150 — Speaking 26
 
-Status: DRAF. Unit 8; topic: Going away. Official SOW Lesson 150. Main LS 2.2.2; complementary LS 1.2.5.
-Materials: SB p.86 Activities 4–6; TB p.100; CD2-34; world map. Workbook mapping and audio playback not yet verified.
+**Official SOW topic:** Going away.
+**Official SOW:** Lesson 150, printed p.192. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Speaking 2.2.2 and Listening 1.2.5.
+**Materials:** English Plus 1 SB p.86 Activities 4–6, TB p.100, CD2.34 and a world map.
+**Learning objectives:** Pupils follow a sequence of classroom instructions and agree on steps for a short pair discussion about weather.
+**Success criteria:** Follow three spoken instructions in sequence and agree who starts, which weather questions to ask and how to respond.
 
-Objective: Pupils complete the specified activities and demonstrate the relevant learning standards.
+1. **Set induction (8 min):** Show Antarctica on the map and ask pupils to recall two details about the explorer.
+2. **Activity 1 (12 min):** Give three oral instructions for SB Activity 4. Pairs read the options, predict answers and compare guesses in that order.
+3. **Activity 2 (14 min):** Play CD2.34 for SB Activity 5. Pupils check their guesses and correct details after a replay.
+4. **Activity 3 (18 min):** Before SB Activity 6, pairs agree who will start, choose questions and decide how to respond politely. They carry out the discussion and swap roles.
+5. **Closure (8 min):** Ask pupils to describe one step that helped their discussion work.
 
-Set induction (5 min): Review Antarctica and weather vocabulary.
-
-Main activities (40 min): Complete Activity 4, listen to CD2-34 for details in Activity 5, then agree steps for Activity 6 pair work including turn-taking, questions and polite agreement/disagreement. Teacher models instructions, monitors and supports pupils.
-
-PBD (10 min): Observe agreement on task steps and understanding of instructions. Pupils revise one response after feedback.
-
-Closure (5 min): Pupils share a learning point and complete an exit response.
-
-Differentiation: Provide visual cues, word banks and sentence frames as needed; extend confident pupils with detailed independent answers.
-
-Verification: Official SOW checked; full book-page, workbook and audio audit pending before READY.
-
-**Workbook (existing source QA map):** p.70, Unit 8 Weather conditions / holiday plans listening, Ex1-5. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Observe whether pupils follow the three classroom instructions in order and hear both partners agree on the discussion steps.
+**Differentiation:** Give numbered cue cards if needed. Ask confident pairs to agree on a follow-up question and include it in their discussion.

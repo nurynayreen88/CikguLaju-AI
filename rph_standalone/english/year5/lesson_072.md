@@ -1,25 +1,16 @@
-# English Year 5 — Lesson 72 (Speaking 13)
+# English Year 5 Lesson 72 — Speaking 13
 
-**Status:** DRAF — pending full source audit. **Topic:** Learning World. **Main LS:** Speaking 2.1.1. **Complementary LS:** Writing 4.2.1. **Time:** 60 minutes (suggested).
+**Official SOW topic:** Learning World.
+**Official SOW:** Lesson 72, printed p.110. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Speaking 2.1.1 and Writing 4.2.1.
+**Materials:** English Plus 1 SB p.43 Activities 3–5, TB p.57, CD1.39, timetable paper and Workbook p.36 Exercise 4.
+**Learning objectives:** Pupils give two specific details about their school preferences orally and write two sentences about their strengths or interests with a reason.
 
-**Materials:** English Plus 1 SB p.43 Activities 3–5; TB p.57; CD1.39; timetable paper. Workbook/audio contents are not independently verified; use only SOW-prescribed resources.
+1. **Set induction (8 min):** Pupils name school subjects and tell a partner which subject they most look forward to.
+2. **Activity 1 (12 min):** Use CD1.39 for SB Activity 3. Pairs listen to the five interviews and identify the school preferences referred to in the questions.
+3. **Activity 2 (15 min):** Replay the interview for SB Activity 4. Pupils check key phrases and select two they can use to talk about their own school experience.
+4. **Activity 3 (17 min):** In SB Activity 5, pupils write two personal sentences before sharing them with a partner. The listener asks for one extra detail or a reason.
+5. **Closure (8 min):** Groups agree on a timetable for a special school day. If time permits, pupils add one reason for a preference in Workbook p.36 Exercise 4.
 
-**Learning objectives:** Main (Speaking 2.1.1) — pupils give detailed information about themselves in the Learning World activities. Complementary (Writing 4.2.1) — pupils give detailed information about themselves in the linked writing task.
-
-**Set induction (5 min):** Pupils recall school subjects in the ABCs task.
-
-**Activity 1 (15 min):** Teacher pre-teaches strict and definitely. Pupils listen to five students in Activity 3 with CD1.39 and note opinions about school days and languages.
-
-**Activity 2 (15 min):** Pairs discuss which speaker likes or dislikes subjects; they listen again for Activity 4 and give reasons using because.
-
-**Activity 3 (15 min):** Pupils complete Activity 5, write short statements about preferences, and share them with partners using intelligible details.
-
-**PBD (5 min):** Teacher records whether each pupil gives a specific preference and reason, and writes one accurate sentence about a school subject.
-
-**Closure (5 min):** Groups plan a special school-day timetable and compare it with another group.
-
-**Differentiation:** Provide subject word banks and sentence starters; extend with contrasting preferences.
-
-**Verification:** Official Year 5 SOW outline checked; full material audit and teacher approval pending before READY.
-
-**Workbook (existing source QA map):** p.36, Unit 4 Vocabulary — school subjects/preferences, Ex2-4. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Check two personal details in the exchange and two clear written sentences with a relevant reason.
+**Differentiation:** Provide key phrases for ability and preference. Ask confident pupils to explain how their preferences have changed.

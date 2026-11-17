@@ -1,23 +1,17 @@
-# English Year 5 — Standalone RPH — Lesson 038 (Writing 7)
+# English Year 5 Lesson 38 — Writing 7
 
-**Status:** DRAF — SOW-aligned revision, pending final visual/audio and teacher QA. **Topic:** Days. **Main LS:** 4.2.4. **Complementary LS:** 2.3.1. **Duration:** 60 minutes (suggested).
+**Official SOW topic:** Days.
+**Official SOW:** Lesson 38, printed p.74. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Writing 4.2.4 and Speaking 2.3.1.
+**Materials:** English Plus 1 SB p.23 Activity 7 and Finished?, TB p.37, WB p.20 Ex3 and a routine fact-file sheet.
+**Learning objectives:** Pupils write a description of an imagined daily routine and narrate three events in order.
+**Success criteria:** Write three clear routine statements and narrate three linked events using time or sequence markers.
 
-**Language focus:** Adverbs of frequency: always, usually, normally, often, sometimes, never. **Materials:** English Plus 1 Student’s Book Activity 7 and Finished? p.23 Teacher’s Book p.37.
+1. **Set induction (8 min):** Review frequency adverbs with a quick finger-writing round.
+2. **Activity 1 (12 min):** Use SB Activity 7. Pupils write true or false sentences about their routines, then ask a partner to guess which are true.
+3. **Activity 2 (14 min):** Use Finished? to plan an imagined day for a celebrity. Groups prepare a fact file. Each pupil writes three statements about the routine.
+4. **Activity 3 (18 min):** Each pupil uses the fact file to narrate three events in order to a partner. Pairs then add one caption to their fact file. If time permits, pupils complete Workbook p.20 Exercise 3.
+5. **Closure (8 min):** Invite pupils to guess the celebrity from one group’s imagined routine.
 
-**Learning objective:** Pupils use Days language to complete the prescribed Writing 7 tasks and demonstrate main LS 4.2.4 and complementary LS 2.3.1.
-
-**Set induction (5 min):** See Pre-lesson Task 6: Finger Writing. Pupils use six frequency adverbs from previous lesson. Hold up a flashcard for each finger writing action: never, sometimes, often, usually, normally, always.
-
-**Activity 1 (15 min):** Write on board: sports stars, music stars, film stars, artists, other stars. Tell pupils some people are celebrities because they are famous. Pupils brainstorm favourite celebrities from the different groups on board. Add names pupils say on board.
-
-**Activity 2 (15 min):** Pupils in small groups do Finished?. Hand out worksheet to each group. They agree on a celebrity and imagine her/his daily routines. They think of what she/he never, sometimes, often, usually and always does and make notes in fact file: Name of celebrity… Famous for… (sport, music etc.) Always… (e.g. swims before breakfast) Usually… Often… Sometimes… Never….
-
-**Activity 3 (15 min):** Pupils agree on who will narrate the imagined life of their celebrity to whole class. The group’s representative uses notes from fact file to narrate the daily routine. Note pupils who describe imagined routines of people well and those who needed support.
-
-**PBD (5 min):** Teacher observes and records: Pupils who describe imagined routines of people well and those who needed support.
-
-**Closure (5 min):** Pupils in same groups draw routines of their celebrity to cut and stick on fact file. They write a caption below drawing to describe what celebrity is doing.
-
-**Workbook link (from existing verified mapping):** Workbook p.25, Unit 2 Writing — A special day / also, Ex1-4. Use as brief practice or evidence without replacing the SOW tasks.
-
-**Differentiation:** Provide visual models or paired support for pupils who need help; extend confident pupils through independent responses. **QA note:** Workbook mapping is a prior source QA result; Student Book, Teacher Book, audio-content and A4 layout have not all been independently verified.
+**PBD:** Read each pupil’s three descriptions and listen for three routine events in chronological order.
+**Differentiation:** Provide a morning, afternoon and evening organiser. Invite confident pupils to connect events with varied time markers.

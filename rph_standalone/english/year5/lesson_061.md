@@ -1,19 +1,16 @@
-# English Year 5 Lesson 61: Reading 11
+# English Year 5 Lesson 61 — Reading 11
 
-Official SOW Lesson 61, printed p.98. Topic: Wild Life. Suggested duration: 60 minutes.
-Standards: Reading 3.2.2; Writing 4.2.4.
-Sources: SB p.39 Activities 1–5; TB p.53; Philippines map.
+**Official SOW topic:** Wild Life.
+**Official SOW:** Lesson 61, printed p.98. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Reading 3.2.2 and Writing 4.2.4.
+**Materials:** English Plus 1 SB p.39 Activities 1–5, TB p.53, a map of the Philippines and Workbook p.33 Exercise 1.
+**Learning objectives:** Pupils locate two details in the Philippine eagle leaflet and write a suitable description of an animal that includes an example.
 
-Objective: Pupils find two facts in the animal leaflet and write a clear animal description using such as, like or for example.
+1. **Set induction (8 min):** Show the Philippines on a map. Pupils predict which of the problems in the activity might affect an eagle living in its forests.
+2. **Activity 1 (12 min):** In SB Activity 1, pupils read the leaflet to check their prediction. The teacher clarifies the meaning of unfamiliar words that affect comprehension.
+3. **Activity 2 (15 min):** Pairs reread the leaflet for SB Activity 2 and point to the sentences supporting two answers. They use details from the text to complete the key phrases in Activity 3.
+4. **Activity 3 (17 min):** Use SB Activity 4 to compare how the author introduces examples. Pupils complete Activity 5 and write one clear animal description with an example.
+5. **Closure (8 min):** Partners swap descriptions and underline the phrase that introduces the example. If time permits, pupils rewrite one sentence in Workbook p.33 Exercise 1.
 
-1. Set induction (8 min): Answer the Think question and locate the Philippines.
-2. Activity 1 (12 min): Read the leaflet and complete Activity 1; learn adopt, weigh and Foundation.
-3. Activity 2 (15 min): Read again for Activity 2 and cite sentences supporting answers.
-4. Activity 3 (17 min): Complete Activity 3 Key Phrases and Activity 4 using such as, like and for example.
-5. PBD and closure (8 min): Write animal descriptions in Activity 5 and review new vocabulary.
-
-PBD: Teacher checks two details from the reading about animals and one clear written description using such as, like or for example, with a correction where necessary.
-Differentiation: Allow extra reading time and ask fast finishers about threats to eagles.
-Workbook exercise not yet verified. Audio content not independently played. QA: SOW-aligned draft pending book and Word/PDF checks.
-
-**Workbook (existing source QA map):** p.33, Unit 3 Writing — Giving examples (for example/such as/like), Ex1-4. Optional brief follow-up; the SOW activities remain the core lesson tasks.
+**PBD:** Check two facts supported by the leaflet and one suitable descriptive sentence with an example.
+**Differentiation:** Mark the relevant paragraph for pupils who need help. Ask confident pupils to explain which fact best supports a conservation message.

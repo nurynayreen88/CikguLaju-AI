@@ -123,13 +123,23 @@ class UnifiedWebRPHTests(unittest.TestCase):
                      "teacher_time": "08:30"}
             result = self.client.get("/api/web/rph/preview", query_string=query)
             if year == 5:
-                # The source file exists but Telegram's per-lesson release
-                # manifest has no approvals. Never silently serve a different
-                # Web-only Year 5 draft while Telegram uses another version.
+                for extra in (r for r in records if r["lesson"] in (29, 30)):
+                    self.assertIsNotNone(verified_preview(year, "ENGLISH", extra["unit"], extra["token"]))
+                # The audited lesson is held until Telegram delivery is verified.
                 self.assertEqual(result.status_code, 503)
                 self.assertEqual(result.get_json()["code"], "TELEGRAM_RPH_PARITY_NOT_READY")
                 self.assertEqual(
                     self.client.get("/api/web/rph/word", query_string=query).status_code, 503)
+                with patch("web.english_y5_standalone_runtime.approved_for_telegram",
+                           return_value=True):
+                    approved = self.client.get("/api/web/rph/preview", query_string=query)
+                    self.assertEqual(approved.status_code, 200, approved.get_json())
+                    layout = approved.get_json()["telegram_layout"]
+                    header = {item["label"]: item["value"] for item in layout["header"]}
+                    self.assertEqual(header["Main Learning Standard"], "1.2.1")
+                    self.assertEqual(header["Complementary Learning Standard"], "3.2.1")
+                    self.assertIn("missing words", layout["phases"][1]["activity"])
+                    self.assertIn("one clue", header["Assessment"])
                 continue
             self.assertEqual(result.status_code, 200, result.get_json())
             self.assertEqual(result.get_json()["teacher"], {

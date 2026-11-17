@@ -1,22 +1,16 @@
 # English Year 5 Lesson 32 — Writing 6
 
 **Official SOW topic:** Towns and cities.
-
 **Official SOW:** Lesson 32, printed p.67. **Suggested duration:** 60 minutes.
-**Main/complementary CS and LS:** Writing 4.2.5; Speaking 2.1.5.
-**Materials:** SB p.106 Activities 3–4; TB p.120; Malaysia map.
-**Learning objectives:** Main (Writing 4.2.5) — pupils connect sentences into one or two coherent paragraphs using basic coordinating conjunctions and reference pronouns in the Towns and cities activities. Complementary (Speaking 2.1.5) — pupils describe people, places and objects using suitable statements in the linked speaking task.
+**Main and complementary learning standards:** Writing 4.2.5 and Speaking 2.1.5.
+**Materials:** English Plus 1 SB p.106 Activities 3–4 and Key Phrases p.19, TB p.120, Workbook p.19 Exercise 7 and a Malaysia map.
+**Learning objectives:** Pairs write a coherent paragraph describing a Malaysian city using a conjunction and a reference pronoun. Each pupil describes two features aloud.
 
-1. **Set induction (8 min):** Use Sit Down, Stand Up with true/false statements from p.106.
-2. **Activity 1 (12 min):** Complete Your Culture Activity 3 about places in Malaysia using a map.
-3. **Activity 2 (15 min):** In pairs select a Malaysian city for Activity 4 and plan its description using Key Phrases.
-4. **Activity 3 (17 min):** Write a coherent city description and self-check places, adjectives, there is/are, location and conjunctions.
-5. **PBD and closure (8 min):** Read descriptions aloud; close with Correct the Mistake and assess coherent writing.
+1. **Set induction (8 min):** Use true-or-false statements about the SB p.106 text in Sit Down, Stand Up.
+2. **Activity 1 (12 min):** Pupils answer SB Activity 3 about places in Malaysia and discuss their answers using the map.
+3. **Activity 2 (15 min):** Pairs choose a city for SB Activity 4, reread the model paragraph and plan the description using the Key Phrases.
+4. **Activity 3 (17 min):** Pairs write a paragraph and use a checklist for place, location, adjectives, there is/are, linking words and pronoun references. Each pupil shares two features.
+5. **Closure (8 min):** Use Correct the Mistake to review one sentence. If time permits, pupils complete two items from Workbook p.19 Exercise 7 to practise sentence order.
 
-**Differentiation:** Provide printed Key Phrases for pupils needing support.
-**PBD:** Teacher checks whether a pupil's city description has a clear topic sentence, linked details and suitable there is/are; pupil revises one sentence for accuracy.
-**Workbook:** No activity assigned without page-and-exercise verification.
-**Audio:** Only tracks explicitly identified in the SOW; filenames found in Drive where applicable, playback not verified.
-**QA:** SOW-aligned draft, pending physical book-page checks and one-page Word/PDF verification.
-
-**Workbook (existing source QA map):** p.17,19, Unit 1 Writing — description of a town/city, Ex1-4; Progress Review Writing Ex7. Optional short practice after SOW activities; not a replacement for the core tasks.
+**PBD:** Check that a conjunction links two details and a pronoun clearly refers to a place. Listen to two accurate spoken details per pupil.
+**Differentiation:** Provide Key Phrases and a sentence starter.

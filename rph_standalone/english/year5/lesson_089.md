@@ -1,23 +1,16 @@
-# English Year 5 — Standalone RPH — Lesson 089 (Listening 16)
+# English Year 5 Lesson 89 — Listening 16
 
-**Status:** DRAF — SOW-aligned, awaiting source QA. **Topic:** Food and health. **Main LS:** 1.2.1. **Complementary LS:** 1.1.1. **Duration:** 60 minutes (suggested).
+**Official SOW topic:** Food and health.
+**Official SOW:** Lesson 89, printed p.128. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Listening 1.2.1 and Listening 1.1.1.
+**Materials:** English Plus 1 SB pp.52–53 Activities 1–3, TB pp.66–67, CD2.02 and CD2.03, a food word web and Workbook p.44 Exercise 1.
+**Learning objectives:** Pupils identify the main idea of the recorded school-food texts and recognise and reproduce the two target vowel sounds in four words.
 
-**Language focus:** I like… I quite / really like... I don’t mind… I don’t like… I really don’t like… I hate…. **Materials:** English Plus 1 Student’s Book Activities 1, 2, 3 p.52 and 53 Teacher’s Book p.66; Audio: CD2.02, CD2.03.
+1. **Set induction (8 min):** Ask what pupils usually eat at school. They predict what the school-food recordings will have in common.
+2. **Activity 1 (12 min):** In SB Activity 1, pupils read the short texts and listen to CD2.02 to check food choices. Ask each pair to identify the overall topic and name one supporting detail.
+3. **Activity 2 (15 min):** Pairs organise the foods from SB Activity 2 into a word web. The teacher replays one section so pupils can check a detail before refining their main-idea statement.
+4. **Activity 3 (17 min):** Play CD2.03 for SB Activity 3. Pupils distinguish the short and long vowel sounds in the examples, then sort and say four target words.
+5. **Closure (8 min):** Ask pupils to share the main idea in one sentence. If time permits, they identify one food from a clue in Workbook p.44 Exercise 1.
 
-**Learning objectives:** Main (Listening 1.2.1) — pupils understand with support the main idea of longer simple texts on a range of familiar topics in the Food and health activities. Complementary (Listening 1.1.1) — pupils recognise and reproduce with little or no support a wide range of target language phonemes in the linked listening task.
-
-**Set induction (5 min):** Pupils answer Think! question, top of Student’s Book p.52. Follow instructions in Teacher’s Book p.66.
-
-**Activity 1 (15 min):** Pupils do Activity 2. Follow instructions in Teacher’s Book p.66 Exercise 2. Ask: Why is it helpful to organise topic vocabulary in a word web? (to remember it, to understand how to group words, to make links between new vocabulary) CCE – Science and Technology – Draw the word web on board but change snacks to carbohydrates.
-
-**Activity 2 (15 min):** Pupils do Activity 3, CD2.03. Follow the instructions in Teacher’s Book p.67 Exercise 3. Can they think of some more food words with short /i/ and long /i:/ sounds? (milk, peach, peas). Ask: Where is the short /i/ in biscuit, olive and apricot?
-
-**Activity 3 (15 min):** Pupils do Optional Activity: Vocabulary. Follow instructions for first Optional Activity: Vocabulary in Teacher’s Book p.66. Note how well pupils understand the texts about food.
-
-**PBD (5 min):** Teacher checks the listening task answers and records who needs a repeated listening.
-
-**Closure (5 min):** See instructions in Post-lesson Task 6: Make a Word Ladder. Use the topic of food.
-
-**Workbook practice (mapped):** p.44, Unit 5 Vocabulary — Food, Ex1-4. Use briefly; do not replace SOW tasks.
-
-**Differentiation:** Give suitable vocabulary or sentence prompts; challenge confident pupils with independent responses. **Final check:** Full printed-page and audio-content audit, A4 export and teacher approval pending; not READY.
+**PBD:** Check one accurate main-idea statement and four examples with the correct target vowel.
+**Differentiation:** Offer picture groups and short replays. Ask confident pupils to compare the main point with an interesting detail.

@@ -1,25 +1,16 @@
-# English Year 5 — Lesson 82 (Consolidation 8)
+# English Year 5 Lesson 82 — Consolidation 8
 
-**Status:** DRAF — pending full source QA. **Topic:** Learning World. **Main LS:** Writing 4.3.2. **Complementary LS:** Reading 3.2.3. **Time:** 60 minutes (suggested).
+**Official SOW topic:** Learning World.
+**Official SOW:** Lesson 82, printed p.120. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Writing 4.3.2 and Reading 3.2.3.
+**Materials:** English Plus 1 SB p.50 Activities 3–5 and p.51 Activity 2, TB pp.64–65 and Workbook p.43 Exercise 6.
+**Learning objectives:** Pupils spell three familiar words correctly in independent descriptions and infer the meanings of two words in a short blog using printed clues.
 
-**Materials:** English Plus 1 SB p.50 Activities 3–5 and p.51 Activity 2; TB pp.64–65. Workbook mapping and any audio playback remain unverified.
+1. **Set induction (8 min):** Show affirmative and negative examples of the present continuous. Pupils explain which word shows what someone is doing now.
+2. **Activity 1 (12 min):** In SB p.50 Activities 3–4, pupils write sentences about themselves and use question-and-answer cues to check the verb forms with a partner.
+3. **Activity 2 (15 min):** In SB Activity 5, pupils read the blog and use nearby words to infer two meanings before selecting verb forms. They explain which part of the blog gave them a clue.
+4. **Activity 3 (17 min):** Pupils independently write one routine and one current-action sentence using the review vocabulary. The teacher collects responses and prompts a spelling check.
+5. **Closure (8 min):** Use the rock–paper–scissors task in SB p.51 Activity 2. If time permits, pupils complete two contrasting items in Workbook p.43 Exercise 6.
 
-**Learning objectives:** Main (Writing 4.3.2) — pupils spell a range of high frequency words accurately in independent writing in the Learning World activities. Complementary (Reading 3.2.3) — pupils guess the meaning of unfamiliar words from clues provided by title, topic and other known words in the linked reading task.
-
-**Set induction (5 min):** Teacher models affirmative and negative present continuous examples and pupils contribute their own.
-
-**Activity 1 (15 min):** Pupils complete Activity 3 and write truthful affirmative and negative sentences about themselves.
-
-**Activity 2 (15 min):** Teacher models present continuous questions and answers (Am I…?, Are they…?). Pupils complete Activity 4 and check with partners.
-
-**Activity 3 (15 min):** Pupils complete Activity 5, deciding between present simple and present continuous using now, today, tonight and at the moment. Teacher checks difficult cases.
-
-**PBD (5 min):** Pupils write two contrasting accurate sentences and justify their tense choice using context clues.
-
-**Closure (5 min):** Pairs play the rock–paper–scissors task from TB p.65.
-
-**Differentiation:** Offer verb form charts and timelines; challenge with paired statements using both tenses.
-
-**Verification:** Official Year 5 SOW outline checked. Full textbook, Workbook, audio and teacher approval pending before READY.
-
-**Workbook (existing source QA map):** p.42-43, Unit 4 Progress Review — complete unit review, Ex1-8. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Check three accurate spellings in the independent sentences and a printed clue for each of the two inferred meanings.
+**Differentiation:** Highlight the relevant phrases for pupils who need support. Ask confident pupils to include a second time cue in an original example.

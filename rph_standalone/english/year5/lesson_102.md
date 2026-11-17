@@ -1,23 +1,16 @@
-# English Year 5 — Lesson 102 (Speaking 18)
+# English Year 5 Lesson 102 — Speaking 18
 
-**Status:** DRAF — awaiting full book QA. **Topic:** Food and health. **Main LS:** Speaking 2.1.1; **Complementary LS:** Listening 1.2.5. **Time:** 60 minutes (suggested). **CCE:** Financial Education.
+**Official SOW topic:** Food and health.
+**Official SOW:** Lesson 102, printed p.141. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Speaking 2.1.1 and Listening 1.2.5.
+**Materials:** English Plus 1 SB p.58 Activities 5–6, TB p.72, café menus and play money. Workbook p.51 Exercise 6.
+**Learning objectives:** Pupils give two specific details about their own order or preferences and answer three supported questions about a café order in sequence.
 
-**Materials:** English Plus 1 Student's Book p.58 Activities 5–6; Teacher's Book p.72; simple café menu and price list.
+1. **Set induction (8 min):** Review a few menu prices and ask pupils to identify what they would like to order.
+2. **Activity 1 (12 min):** Use SB Activity 5 to complete the key phrases, then practise the model exchange. Pupils change the food and drink to match their own choices and explain one preference.
+3. **Activity 2 (15 min):** In SB Activity 6, pairs use the menu and a spending limit. The server asks three supported questions in order about food, drink and a final choice. The customer gives a clear answer to each.
+4. **Activity 3 (17 min):** Partners swap roles and repeat the exchange with their own order. They check whether the order fits the budget and say the total.
+5. **Closure (8 min):** Ask pupils to share one detail of their own order. If time permits, pupils put two adjacent turns in order in Workbook p.51 Exercise 6.
 
-**Objective:** Pupils order food and drinks politely with intelligible details, listen to a partner's order and calculate a basic total and change.
-
-**Set induction (5 min):** Teacher revises money vocabulary and asks pupils to read sample prices.
-
-**Activity 1 — Model dialogue (10 min):** Teacher demonstrates “Would you like…?”, “I'll have… please”, and “Anything else?”. Pupils identify the item, drink and price in a short model exchange.
-
-**Activity 2 — Café role-play (20 min):** In pairs pupils complete SB p.58 Activity 5, changing sandwich and drink choices; swap customer and server roles. Listeners report what their partner ordered. Teacher checks clarity and accuracy.
-
-**Activity 3 — Pay the bill (15 min):** Pupils do Activity 6 with menu prices; customers check their money while servers add totals and work out change. Pupils compare prices of vegetarian and other choices and discuss possible reasons.
-
-**PBD (5 min):** Each pair performs a short exchange with a request, response, price and total. Teacher notes whether the listener can report the order correctly.
-
-**Closure (5 min):** Pupils state whether they prefer being a customer or server and why.
-
-**Differentiation:** Provide dialogue frames and number cards; extend by including dessert and two orders. **QA:** Workbook reference not prescribed in this SOW outline and has not been independently mapped.
-
-**Workbook (existing source QA map):** p.51, Unit 5 Speaking — ordering food and drink, Ex6. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Listen for two specific personal order details and three responses that match the sequence of questions.
+**Differentiation:** Use picture menus and a written prompt strip. Ask confident pupils to explain a change they made to fit their budget.

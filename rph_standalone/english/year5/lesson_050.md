@@ -1,21 +1,16 @@
 # English Year 5 Lesson 50 — Writing 9
 
-Official SOW Lesson 50, printed p.86. Topic: Days. Suggested duration: 60 minutes.
-Main and complementary learning standards: Writing 4.3.3; Reading 3.2.2.
-Materials: SB p.29 Activities 4–5; TB p.43; peer-feedback checklist.
+**Official SOW topic:** Days.
+**Official SOW:** Lesson 50, printed p.86. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Writing 4.3.3 and Reading 3.2.2.
+**Materials:** English Plus 1 SB p.29 Activities 4–5 and the preceding model text, TB p.43, a peer-review checklist and Workbook p.25 Exercise 1.
+**Learning objectives:** Pupils find two details in the model and draft a description of a local celebration, then improve it using peer feedback.
 
-Objective: Pupils draft and revise a description of a celebration including where and when it happens, an activity and one linking word.
+1. **Set induction (8 min):** Pupils reread the carnival model and locate one detail about when it takes place and one about what people do there.
+2. **Activity 1 (12 min):** In SB Activity 4, pairs practise placing also in sentences. The teacher models where it goes with be and with other verbs.
+3. **Activity 2 (15 min):** Pupils use SB Activity 5 to plan and draft one or two short paragraphs. They include the place and time, what people do and what they usually do themselves.
+4. **Activity 3 (17 min):** Partners read one another’s drafts. They check the celebration details, the pupil’s own routine, an adjective and the position of also. Each writer revises one part using the feedback.
+5. **Closure (8 min):** Pupils share one revised sentence and explain their change. If time permits, they check the position of also in two items from Workbook p.25 Exercise 1.
 
-1. Set induction (8 min): Recall Notting Hill carnival vocabulary.
-2. Activity 1 (12 min): Practise the placement of also in Activity 4.
-3. Activity 2 (15 min): Plan and draft a description of a celebration using Activity 5.
-4. Activity 3 (17 min): Pairs exchange drafts and check where/when, activities, personal routine, also and adjectives.
-5. PBD and closure (8 min): Revise writing after peer feedback and share a description; reflect on improvement.
-
-PBD: Teacher checks a revised carnival description for where/when information, an activity and the appropriate use of a linking word; pupils identify one improvement from peer feedback.
-Differentiation: Allow shorter descriptions for pupils needing support.
-Workbook: Exact page and exercise not verified; do not assign an invented activity.
-Audio: Use only SOW-specified track if applicable; audio playback not yet verified.
-QA: SOW-aligned draft pending physical book-page and one-page Word/PDF verification.
-
-**Workbook (existing source QA map):** p.25,27, Unit 2 Writing — also, Ex1-4; Progress Review Writing Ex7-8. Optional brief follow-up; the SOW activities remain the core lesson tasks.
+**PBD:** Check two details located in the model and compare each pupil’s original and revised sentence for a relevant improvement.
+**Differentiation:** Offer a planning frame. Ask confident pupils to vary the adjectives and explain the purpose of their revision.

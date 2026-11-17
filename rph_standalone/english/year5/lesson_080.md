@@ -1,23 +1,16 @@
-# English Year 5 — Standalone RPH — Lesson 080 (Writing 14)
+# English Year 5 Lesson 80 — Writing 14
 
-**Status:** DRAF — source aligned, final QA pending. **Topic:** Learning World. **Main LS:** Writing 4.2.4. **Complementary LS:** Speaking 2.2.2. **Time:** 60 minutes (suggested).
+**Official SOW topic:** Learning World.
+**Official SOW:** Lesson 80, printed p.118. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Writing 4.2.4 and Speaking 2.2.2.
+**Materials:** English Plus 1 SB p.47 Activities 5–6 and Finished?, TB p.61 and Workbook p.39 Exercise 4.
+**Learning objectives:** Pupils write descriptions of what someone usually does and is doing now, and help a group agree on an order for a short reading task.
 
-**Materials:** English Plus 1 Student Book p.47 Activities 5–6 and Finished?; Teacher Book p.61; Workbook pp.39 and 41, Unit 4 Present Continuous/Simple and Writing Email (historic QA mapping).
+1. **Set induction (8 min):** Use finger writing to recall verbs. Pupils decide which examples refer to habits and which refer to actions happening now.
+2. **Activity 1 (12 min):** In SB Activity 5, pupils choose the correct forms in the three short texts and explain their choices using the context.
+3. **Activity 2 (15 min):** In groups of three, pupils agree who will read each text and the order for taking turns. Each prepares a question and asks it when their turn comes.
+4. **Activity 3 (17 min):** In SB Activity 6, pupils imagine they have won the lottery and write one sentence about a routine and one about an action now. Partners read the sentences and check the time clues.
+5. **Closure (8 min):** Use Finished? to ask one photo question. If time permits, pupils write an additional description from Workbook p.39 Exercise 4.
 
-**Objective:** Pupils produce accurate sentences using present simple or present continuous and agree on steps to carry out a short group task.
-
-**Set induction (5 min):** Teacher runs Finger Writing using play, speak, chat, relax and practise.
-
-**Activity 1 — Choose the tense (15 min):** Teacher contrasts present simple with present continuous using examples. Pupils signal the tense they hear, then complete SB Activity 5 and explain time clues such as “at the moment”.
-
-**Activity 2 — Collaborative reading (15 min):** Groups of three select different texts about Charlotte, Pat and Melanie. They agree who will read first, prepare one question each, and take turns reading and questioning.
-
-**Activity 3 — Personalise (15 min):** Pupils complete Activity 6 by imagining how they would live as a lottery winner. Pairs compare choices and write questions about selected book photographs for partners to answer.
-
-**PBD (5 min):** Teacher checks two accurate sentences using the appropriate tense and observes whether each group agrees task order and participates.
-
-**Closure (5 min):** Pupils state one difference between the two tenses and one successful way their group worked together.
-
-**Differentiation:** Provide a tense timeline and model sentences; extend independent pupils with contrasting examples. **QA:** Final source images and A4 pagination remain pending before READY.
-
-**Workbook (existing source QA map):** p.39,41, Unit 4 present continuous/simple + Writing email, Ex3-4 / Ex1-4. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Collect the two written descriptions and observe one proposal or response that helps the group agree on the order.
+**Differentiation:** Give a turn-taking and tense prompt. Ask confident pupils to negotiate a different order when two members want the same text.

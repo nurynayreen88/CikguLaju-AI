@@ -1,25 +1,16 @@
-# English Year 5 — Lesson 54 (Speaking 10)
+# English Year 5 Lesson 54 — Speaking 10
 
-**Status:** DRAF — pending full source audit. **Topic:** Wild Life. **Main LS:** Speaking 2.1.5. **Complementary LS:** Reading 3.2.3. **Time:** 60 minutes (suggested).
+**Official SOW topic:** Wild Life.
+**Official SOW:** Lesson 54, printed p.91. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Speaking 2.1.5 and Reading 3.2.3.
+**Materials:** English Plus 1 SB p.33 Activities 5–7, TB p.47, CD1.31, a Venn diagram and Workbook p.28 Exercise 3.
+**Learning objectives:** Pupils use two suitable statements to describe an animal and infer the meaning of two words from the model questions.
 
-**Materials:** English Plus 1 SB p.33 Activities 5–7; TB p.47; Venn diagram worksheets. Workbook/audio contents are not independently verified; use only SOW-prescribed resources.
+1. **Set induction (8 min):** Pairs recall animals from the previous lesson and compare their list with SB Activity 4.
+2. **Activity 1 (12 min):** Play the sounds in CD1.31 for SB Activity 5. Pause so pairs can compare their guesses and say what made an animal easy or difficult to identify.
+3. **Activity 2 (15 min):** In SB Activity 6, pupils use the model questions and answers to infer meanings of words such as land, wings and tail. Pupils point to a clue before the teacher confirms the meaning.
+4. **Activity 3 (17 min):** In SB Activity 7, partners ask and answer questions to identify each other’s chosen animal. Each then gives two complete statements about the animal’s appearance or habitat.
+5. **Closure (8 min):** Pairs place an animal on a land–water Venn diagram and explain where it lives. If time permits, pupils solve one animal clue in Workbook p.28 Exercise 3.
 
-**Learning objectives:** Main (Speaking 2.1.5) — pupils describe people, places and objects using suitable statements in the Wild Life activities. Complementary (Reading 3.2.3) — pupils guess the meaning of unfamiliar words from clues provided by title, topic and other known words in the linked reading task.
-
-**Set induction (5 min):** Pairs recall animal names from SB p.32 and check how many they remember.
-
-**Activity 1 (15 min):** Pupils complete Activity 5 and discuss which animals are easy or difficult to identify; teacher models questions about size and appearance.
-
-**Activity 2 (15 min):** Pupils infer land, wings and tail in Activity 6. Using Does it…?, Has it got…?, How many…? and What colour…?, partners complete Activity 7 by guessing each other's chosen animals.
-
-**Activity 3 (15 min):** Teacher draws a water–land Venn diagram. Pairs classify animals according to where they live and explain choices.
-
-**PBD (5 min):** Teacher observes use of clear descriptive questions, answers and topic vocabulary; collect one completed classification diagram.
-
-**Closure (5 min):** Pupils make a fly–swim Venn diagram and compare it with another pair.
-
-**Differentiation:** Offer question strips and animal images; extend by comparing two animals independently.
-
-**Verification:** Official Year 5 SOW outline checked; full book, workbook, audio and teacher approval pending before READY.
-
-**Workbook (existing source QA map):** p.28, Unit 3 Vocabulary — Animals, Ex2-4 descriptive animal practice. Optional brief follow-up; the SOW activities remain the core lesson tasks.
+**PBD:** Listen for two accurate descriptive statements and ask pupils to explain the clues for two word meanings.
+**Differentiation:** Offer question stems and pictures. Ask confident pupils to add a comparison with another animal.

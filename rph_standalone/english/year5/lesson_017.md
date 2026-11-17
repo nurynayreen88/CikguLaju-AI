@@ -1,19 +1,17 @@
 # English Year 5 Lesson 17 — Listening 4
 
-Official SOW: Lesson 17, printed p.52. Unit 1: Towns and cities. Suggested time: 60 minutes.
-Standards: Listening 1.2/1.2.1; Writing 4.2/4.2.4.
-Learning objective: Pupils demonstrate the stated skills through SOW-prescribed tasks.
-Materials: SB pp.12–13 Activities 1–4; TB pp.26–27; CD 1-13, 1-14.
+**Official SOW topic:** Towns and cities.
+**Official SOW:** Lesson 17, printed p.52. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Listening 1.2.1 and Writing 4.2.4.
+**Materials:** English Plus 1 SB pp.12–13 Activities 1–4, TB pp.26–27, CD1.13–CD1.14 and WB p.12 Ex1.
+**Learning objectives:** Pupils identify the main idea of interviews about places and write descriptions of places in their own area.
+**Success criteria:** State what the interviews are mainly about and write three clear statements about places in a familiar area.
 
-1. Set induction (8 min): Compare towns and cities in Malaysia and describe pupils' hometowns.
-2. Activity 1 (12 min): Study London Guide pictures, practise places vocabulary and complete SB Activity 1 using CD 1-13.
-3. Activity 2 (15 min): Listen to CD 1-14 for SB Activity 2, identifying the ten mentioned places; replay for Activity 3 sentence completion.
-4. Activity 3 (17 min): Complete SB Activity 4 using TB p.27 Exercise 4; pupils write descriptions using there is/are, some/any.
-5. Assessment and closure (8 min): Use Word Ladder to review vocabulary; teacher assesses listening for main ideas and written place descriptions.
+1. **Set induction (8 min):** Use the London Guide photographs to introduce towns and cities. Pupils name one well-known place near home.
+2. **Activity 1 (12 min):** Match places on the London map in SB Activity 1. Play CD1.13 to check the vocabulary.
+3. **Activity 2 (14 min):** Play CD1.14 for SB Activity 2. Pupils state what the speakers mainly talk about, then replay for the details in Activity 3.
+4. **Activity 3 (18 min):** Use SB Activity 4 to review a, an, some and any. Pupils describe three places or facilities in their area in writing. If time permits, pupils complete Workbook p.12 Exercise 1.
+5. **Closure (8 min):** Make a short word ladder with the place names pupils used.
 
-PBD: Collect task-specific spoken, written, listening or reading evidence. Record Independent / With support / Needs reteaching.
-Differentiation: Give specific positive feedback and replay audio for pupils who need listening support.
-Workbook: No exercise assigned until Workbook page and activity are verified. Audio: Only SOW-specified tracks listed above.
-QA: SOW-aligned draft; final page, audio-content and Word/PDF checks pending.
-
-**Workbook (existing source QA map):** p.13, Unit 1 Language Focus — there's/there are + a/an/some/any; Is/Are there; How many, Ex1-5. Optional short practice after the SOW activities; do not substitute it for the lesson tasks.
+**PBD:** Check the gist response from the first listen and read the three written statements for clear and accurate place descriptions.
+**Differentiation:** Give a labelled map and replay the interviews one at a time. Offer sentence starters for singular and plural places.

@@ -20,6 +20,7 @@ from zipfile import ZIP_DEFLATED, ZipFile
 from flask import Blueprint, g, jsonify, request, send_file
 
 from web.english_rpt_2027_http import _account, _has_paid_access
+from web.english_y5_standalone_runtime import CHOICE_LESSONS, adapt_rows as year5_rows
 from web.rph_teacher_reflection import clean_reflection
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -343,7 +344,12 @@ def _read_source(row, year, subject):
         return None
     n = row["lesson"]
     if subject == "ENGLISH":
-        if not re.search(r"(?m)^# English Year %d [—–-] (?:Standalone RPH [—–-] )?Lesson 0*%d(?:\b|[:—])" % (year, n), text):
+        separator = r"[—–-] (?:Standalone RPH [—–-] )?"
+        prefix = rf"English Year {year} {separator}"
+        if year == 5:
+            prefix = rf"(?:English Year 5 (?:{separator})?|Year 5 English )"
+        heading = rf"(?m)^# {prefix}Lesson 0*{n}\b"
+        if not re.search(heading, text):
             return None
     elif subject == "MORAL":
         if not text.startswith(f"# RPH Pendidikan Moral Tahun {year} — PdP {n:03d}"):
@@ -424,7 +430,12 @@ def verified_preview(year, subject, unit, token, component=None):
         raw = _read_source(row, year, subject)
         if raw is None:
             return None
-        fields = _fields_from_markdown(raw)
+        if subject == "ENGLISH" and year == 5 and row["lesson"] not in CHOICE_LESSONS:
+            state = {"subject": subject, "year": year, "lesson_no": row["lesson"]}
+            fields = [{"label": label, "value": value}
+                      for label, value in year5_rows(state, {}).items()]
+        else:
+            fields = _fields_from_markdown(raw)
         if not fields:
             return None
     return {"year": year, "subject": subject, "unit": unit,
