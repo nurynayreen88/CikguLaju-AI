@@ -1046,7 +1046,7 @@ def create_blueprint():
                                       "action": "Download"})
                 except Exception:
                     missing.append("Workbook")
-                if year in range(1, 6):
+                if year in range(1, 7):
                     # The additional APIs are optional until Telegram deploys
                     # them. A missing new route must not hide existing Workbook.
                     try:
@@ -1151,7 +1151,7 @@ def create_blueprint():
             return error
         try:
             year, sub, unit, token, number = _extra_selection()
-            if sub != "ENGLISH" or year not in range(1, 6):
+            if sub != "ENGLISH" or year not in range(1, 7):
                 raise ValueError("Wrong Student Book source")
         except (ValueError, TypeError):
             return jsonify({"error": "Pilihan Student Book tidak sah"}), 400
@@ -1171,7 +1171,7 @@ def create_blueprint():
             return error
         try:
             year, sub, unit, token, number = _extra_selection()
-            if sub != "ENGLISH" or year not in range(1, 6) or not 1 <= track <= 4:
+            if sub != "ENGLISH" or year not in range(1, 7) or not 1 <= track <= 4:
                 raise ValueError("Invalid track")
         except (ValueError, TypeError):
             return jsonify({"error": "Pilihan trek audio tidak sah"}), 400

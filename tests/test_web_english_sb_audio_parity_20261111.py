@@ -177,6 +177,28 @@ class WebEnglishSourceTests(unittest.TestCase):
                 book.assert_called_once_with(year, number)
                 audio.assert_called_once_with(year, number)
 
+    def test_year_six_mp3_uses_the_verified_lesson_selection(self):
+        bridge = "web.native_telegram_extra_materials_20261106."
+        row = next(r for r in source_records(6, "ENGLISH") if r["lesson"] == 14)
+        query = dict(year=6, subject="ENGLISH", unit=row["unit"], lesson=row["token"])
+        track = {"index": 1, "title": "English Year 6 Lesson 014 CD1 Track 5",
+                 "reference": "CD1 Track 5"}
+        data = {"source": ENGLISH_ASSET_SOURCE, "available": True, "year": 6, "lesson": 14,
+                "status": "VERIFIED_SOURCE", "tracks": [track]}
+        raw = b"ID3" + b"A" * 1600
+        with (self.account(), patch(bridge + "english_workbook_metadata", return_value=None),
+              patch(bridge + "english_student_book_metadata", return_value=None),
+              patch(bridge + "_json", return_value=data),
+              patch(bridge + "_get", return_value=raw) as fetch):
+            listed = self.client.get("/api/web/rph/extra-materials", query_string=query)
+            item, = listed.json["items"]
+            self.assertEqual(item["type"], "audio")
+            reply = self.client.get(item["url"])
+        self.assertEqual(reply.status_code, 200)
+        self.assertEqual(reply.mimetype, "audio/mpeg")
+        self.assertEqual(reply.data, raw)
+        self.assertEqual(fetch.call_args.args[1], {"year": 6, "lesson": 14, "track": 1})
+
     def test_browser_does_not_expose_unverified_or_unrelated_audio(self):
         html = (ROOT / "web_v1_static_preview" / "index.html").read_text("utf8")
         self.assertIn("ownStudentBook", html)
