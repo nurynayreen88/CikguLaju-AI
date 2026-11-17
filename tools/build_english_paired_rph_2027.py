@@ -71,7 +71,7 @@ def paired_lessons():
                     if materials == "non-textbook / SOW task":
                         materials = "Teacher-prepared materials listed in the original RPH"
                     if key == "4/103":
-                        materials = "TB p.111, Activity 5 (CD2 Track 26 in the source RPH)"
+                        materials = "SB p.73, Activity 5 · TB p.111 · CD2 Track 26"
                     lessons.append((n, row, task, evidence, materials))
                 if lessons[0][1]["topic"] != lessons[1][1]["topic"]:
                     raise ValueError(f"Paired lessons cross topics for Year {year}, week {week}")
@@ -158,8 +158,12 @@ def make_sheet(year, week, group_a, group_b, slot, lessons, teacher=None):
             p, f"SK/SP · {number:03d}",
             f"Main {main.rsplit('.', 1)[0]} / {main}  ·  Complementary {complementary.rsplit('.', 1)[0]} / {complementary}",
         )
-    materials = " · ".join(dict.fromkeys(lesson[4] for lesson in lessons))
-    labelled(document.add_paragraph(), "Materials", materials)
+    first_materials, second_materials = (lesson[4] for lesson in lessons)
+    if first_materials == second_materials:
+        labelled(document.add_paragraph(), "Materials", first_materials)
+    else:
+        labelled(document.add_paragraph(), "Materials",
+                 f"{a:03d} – {first_materials}\n{b:03d} – {second_materials}")
 
     band(document, "Teaching and learning", "60 minutes")
     labelled(document.add_paragraph(), "Set induction (5 min)", f"Show a prompt from the {topic.rstrip('.!?')} materials. Elicit relevant words and model one response.")

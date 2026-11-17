@@ -549,6 +549,13 @@ except Exception as exc:
           type(exc).__name__, flush=True)
 
 
+try:
+    from web.english_paired_materials_2027 import create_blueprint as create_english_paired_materials
+    telegram_runtime.app.register_blueprint(create_english_paired_materials(telegram_runtime))
+except Exception as exc:
+    print("English paired materials unavailable:", type(exc).__name__, flush=True)
+
+
 # RBT: Web uses the same Telegram curriculum and native Word/PDF engine.
 # Token-authenticated, opt-in, no database, subscription or quota changes.
 try:
