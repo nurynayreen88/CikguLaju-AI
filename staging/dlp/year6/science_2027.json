@@ -1,0 +1,699 @@
+{
+  "rpt_sha256": "e40df591010d8102bf3a181b224f958302df66460bf92b77f0d4666a32c63fb7",
+  "schedule_corrections": {
+    "L04": {
+      "reference": "TB pp. 5-7"
+    },
+    "L05": {
+      "reference": "TB pp. 4, 7-8"
+    },
+    "L06": {
+      "objective": "Predict how changing the mass of a balloon car affects the distance it travels. Test fairly, record the results and report the conclusion.",
+      "reference": "TB p. 8"
+    },
+    "R01": {
+      "reference": "TB pp. 11-12"
+    },
+    "R04": {
+      "reference": "TB pp. 85-86"
+    },
+    "L46": {
+      "objective": "Use a model to locate the Solar System in the Milky Way and explain its relative size using a labelled inset."
+    },
+    "L50": {
+      "objective": "Build a model from recyclable material, use stability and load tests to justify a design choice and explain why durability matters."
+    }
+  },
+  "review_standards": {
+    "R01": [
+      "1.1.8",
+      "1.1.10",
+      "1.1.11",
+      "1.1.12"
+    ],
+    "R02": [
+      "2.1.1",
+      "2.1.2",
+      "2.2.3"
+    ],
+    "R03": [
+      "3.1.3",
+      "3.1.4",
+      "3.1.5"
+    ],
+    "R04": [
+      "5.1.2",
+      "5.1.5",
+      "5.1.6"
+    ],
+    "R05": [
+      "6.1.2",
+      "6.2.2",
+      "6.3.3"
+    ],
+    "R06": [
+      "8.2.1",
+      "8.2.2",
+      "8.2.5"
+    ],
+    "R07": [
+      "10.1.1",
+      "10.1.2",
+      "10.1.3"
+    ],
+    "R08": [
+      "12.1.3",
+      "12.1.4",
+      "12.1.7"
+    ],
+    "R09": [
+      "13.1.3",
+      "13.1.4"
+    ]
+  },
+  "activities": {
+    "L01": {
+      "materials": "Clean shells, card, sponges, plastic caps, sorting trays",
+      "induction": "Display a smooth cap and a rough shell. Ask for properties pupils can observe directly.",
+      "teach": "Compare texture, shape and flexibility. Model sorting by one stated property and checking the rule against each item.",
+      "practice": "Observe four objects and record three features. Sort twice, changing the classification rule on the second attempt.",
+      "assessment": "Describe three observable features and classify two unfamiliar items using one rule.",
+      "evidence": "A shell may be hard, rough and curved. Use one stated rule, such as flexible or rigid, consistently for both items.",
+      "closure": "Ask why the same object can be grouped differently when the rule changes."
+    },
+    "L02": {
+      "materials": "Rulers, three labelled objects, measurement grid",
+      "induction": "Show a ruler and ask where the object's end should meet the scale.",
+      "teach": "Model reading the scale at eye level, using zero or subtracting the start reading when necessary.",
+      "practice": "Measure three objects and record one consistent unit in a table. Compare one reading with a partner.",
+      "assessment": "Measure three labelled objects and submit a table with a column heading and units.",
+      "evidence": "The three rows match the object labels. Length is the difference between the end and start readings and uses a stated unit such as cm.",
+      "closure": "Ask what to do when the ruler's zero mark is damaged."
+    },
+    "L03": {
+      "materials": "Three prepared sets of ramp observations, toy car, prediction slips",
+      "induction": "Show the same toy car stopping at different points on two surfaces.",
+      "teach": "Separate observation from inference. Use a measured contrast to propose friction as a possible explanation and to predict a repeat result.",
+      "practice": "Compare distances from repeated runs. Write a plausible explanation and predict a further run under unchanged conditions.",
+      "assessment": "A car travels 95, 100 and 98 cm on smooth card and 55, 52 and 58 cm on felt. Explain one possible cause and predict the longer run on repetition.",
+      "evidence": "The car may travel farther on smooth card because it experiences less rolling resistance. Previous results support that prediction but do not determine an exact distance.",
+      "closure": "Ask which sentence reports an observation and which offers an explanation."
+    },
+    "L04": {
+      "materials": "Balloon-car snapshot cards, time labels, graph grids, rulers",
+      "induction": "Show two time-stamped pictures of the same moving car. Ask which one came first.",
+      "teach": "Model pairing position with elapsed time and plotting it. Compare intervals of equal duration on a distance-from-start graph.",
+      "practice": "Order snapshots, plot data and annotate changes in distance over time. Compare graphs with another group.",
+      "assessment": "Plot 0, 0.8, 1.3 and 1.3 m at 0, 1, 2 and 3 s. Identify the greatest gain and the interval with no change.",
+      "evidence": "The first interval gains 0.8 m, the second 0.5 m, and the last gains 0 m. A flat segment shows no change along the lane.",
+      "closure": "Ask how the graph would change if the car rolled back towards the start line."
+    },
+    "L05": {
+      "materials": "Prepared balloon cars, floor marks, variable cards, measuring tape",
+      "induction": "Ask where the distance reading ends if a car rolls after the air escapes.",
+      "teach": "Define distance as start line to stopping mark in a straight lane. Model identifying changed, measured and controlled factors.",
+      "practice": "Draft a fair comparison for the same car with two securely attached loads. Label the start line, endpoint and control conditions.",
+      "assessment": "Define the distance measured, name the changed factor, and list two controls.",
+      "evidence": "Measure between the start line and the stopped car's reference mark. Added mass changes. Use the same car, inflation and floor surface.",
+      "closure": "Ask why a common stopping rule improves the comparison."
+    },
+    "L06": {
+      "materials": "Matched balloon car and loads, tape measure, lane markers, report sheet",
+      "induction": "Show the same prepared car with and without an added load. Ask for a testable prediction.",
+      "teach": "Demonstrate repeated trials with the same inflation and lane. Check that the load remains secure and other factors are controlled.",
+      "practice": "Test two added masses, recording repeat distances. Compare results and write an evidence-based conclusion with the variables.",
+      "assessment": "Submit a hypothesis, results table and short report. State whether the data support the predicted difference and cite two readings.",
+      "evidence": "The hypothesis connects mass to distance. The table records both conditions with units, and the conclusion cites measured results. Report inconsistencies if present.",
+      "closure": "Ask which factor the class would control more closely on a repeat test."
+    },
+    "R01": {
+      "materials": "Worked investigation card, results grid, correction slips",
+      "induction": "Show an investigation that changed both a car's load and its starting point. Ask what prevents a clear conclusion.",
+      "teach": "Model rewriting the hypothesis and identifying a confounded comparison. Show how to cite two results when interpreting a fair test.",
+      "practice": "Correct a sample plan, compare a fresh set of results and rewrite a conclusion to match the evidence.",
+      "assessment": "For a test of load versus distance, identify the responding variable and two controls. Rewrite a conclusion that claims one trial proves all future results.",
+      "evidence": "Distance is the responding variable. Same car and launch point are controls. A sound conclusion refers to the observed condition and evidence.",
+      "closure": "Ask what extra repeat would strengthen the conclusion."
+    },
+    "L07": {
+      "materials": "Curriculum diagrams, six organ labels, function cards",
+      "induction": "Show the two curriculum diagrams and explain that the labels describe biological functions.",
+      "teach": "Teach organ locations and functions using standard terminology. Model matching an organ name, location and role on each diagram.",
+      "practice": "Label the six organs on blank diagrams, then match each label to a description using a partner check.",
+      "assessment": "Label testis, penis, vagina, ovary, Fallopian tube and uterus. Match each label with its biological function.",
+      "evidence": "Testes produce sperm, and the penis transfers sperm. The vagina receives sperm and forms the birth canal. An ovary releases an ovum, fertilisation usually occurs in a Fallopian tube, and the uterus supports development.",
+      "closure": "Ask pupils to distinguish where fertilisation usually occurs from where development takes place."
+    },
+    "L08": {
+      "materials": "Fertilisation-to-birth sequence cards, labelled pathway diagram",
+      "induction": "Show an ovum and sperm diagram. Ask what forms when they join.",
+      "teach": "Place fertilisation in a Fallopian tube, then trace early development, implantation in the uterus and birth.",
+      "practice": "Arrange the four stage cards and draw an arrow between each stage. Label where the first two events occur.",
+      "assessment": "Sequence fertilisation, implantation, development in the uterus and birth. State where fertilisation usually happens.",
+      "evidence": "Fertilisation in the Fallopian tube precedes implantation in the uterus. Development continues in the uterus before birth.",
+      "closure": "Ask which organ supports the embryo and later the foetus."
+    },
+    "L09": {
+      "materials": "Life-cycle images, labelled stage cards, diagram sheets",
+      "induction": "Ask pupils what happens to a population over time when individuals grow older and die.",
+      "teach": "Use a generational diagram to link births to population continuity. Distinguish an individual's growth from reproduction.",
+      "practice": "Draw a diagram across three generations and annotate the role of reproduction in continuing the population.",
+      "assessment": "Use the diagram to explain why human reproduction matters for the continuity of the population.",
+      "evidence": "Births add new individuals as earlier generations age and die. The visual identifies separate generations with a clear connection.",
+      "closure": "Ask pupils to point to the generation in which a new population member enters the diagram."
+    },
+    "L10": {
+      "materials": "Nervous system outline, response cards, two-column chart",
+      "induction": "Describe hearing the school bell and deciding to pack up. Ask which part interprets the sound.",
+      "teach": "Map the central and peripheral divisions. Explain brain coordination and the spinal cord's role in conveying signals and coordinating some reflexes.",
+      "practice": "Label a body outline, pass signal cards through a path, and compare a voluntary response with a simple reflex example.",
+      "assessment": "Label brain and spinal cord and place nerves outside them in the correct division. State one function of each central structure.",
+      "evidence": "The brain processes information and coordinates responses. The spinal cord carries signals and coordinates some reflexes. Peripheral nerves are outside the brain and cord.",
+      "closure": "Ask which structure can coordinate a quick reflex before the person consciously reacts."
+    },
+    "L11": {
+      "materials": "Signal arrows, hand-and-spinal-cord cards, response slips",
+      "induction": "Show a hand touching a cool object. Ask how the information reaches the central nervous system.",
+      "teach": "Model arrows from a sense receptor towards the central nervous system and from it to a muscle.",
+      "practice": "Trace a signal route and predict one possible effect if a pathway to either direction is interrupted.",
+      "assessment": "Trace a sensory and a motor signal for a hand movement. Predict one effect if the sensory pathway fails.",
+      "evidence": "A sensory nerve carries input towards the central nervous system. Motor pathways carry instructions towards muscles. The person may not sense the stimulus normally.",
+      "closure": "Ask which arrow carries a message towards the hand muscle."
+    },
+    "L12": {
+      "materials": "Helmet and posture pictures, body outline, guide template",
+      "induction": "Show a helmet and ask what delicate structure it helps protect.",
+      "teach": "Connect each safe habit to a body structure and its function. Model an icon with a short reason.",
+      "practice": "Create an illustrated guide with three protective habits and sketch a nervous system signal route.",
+      "assessment": "Give two protective habits with reasons and mark how one stimulus is communicated in the body.",
+      "evidence": "A helmet helps protect the brain during cycling. Proper posture reduces strain from everyday tasks. A sensory signal travels towards the central nervous system.",
+      "closure": "Ask pupils how a picture and its caption together explain a habit."
+    },
+    "R02": {
+      "materials": "Partial organ labels, reproduction stage cards, signal diagrams",
+      "induction": "Reveal one misplaced reproductive label and one reversed nerve arrow. Ask pupils to spot the errors.",
+      "teach": "Retell fertilisation through birth using a four-card sequence, then trace a simple sensory pathway.",
+      "practice": "Correct two diagrams, add a short explanation for each correction and verify both with a partner.",
+      "assessment": "Locate the ovary and uterus, state where fertilisation usually happens and fix a sensory arrow directed away from the spinal cord.",
+      "evidence": "The ovary releases an ovum; the uterus supports development. Fertilisation usually occurs in a Fallopian tube. A sensory signal travels towards the central nervous system.",
+      "closure": "Ask which correction shows a location and which shows a direction."
+    },
+    "L13": {
+      "materials": "Labelled image cards, scale-bar examples, classifying grid",
+      "induction": "Show a micrograph with a scale bar and ask why the object appears large on screen.",
+      "teach": "Distinguish fungi, algae, protozoa, bacteria and viruses in the textbook classification. Note that viruses rely on host cells to multiply.",
+      "practice": "Sort supplied examples and compare what each image and caption can tell the observer.",
+      "assessment": "Match yeast, a unicellular alga, a protozoan, a bacterium and a virus image to their labels. Explain microscopic.",
+      "evidence": "The labels follow the supplied examples. Microscopic describes something too small for ordinary unaided viewing in this context.",
+      "closure": "Ask why a large image does not mean the organism is large."
+    },
+    "L14": {
+      "materials": "Prepared micrographs and time-lapse clips, observation–inference grid",
+      "induction": "Show two images from a supplied sequence. Ask pupils to state what changed before interpreting it.",
+      "teach": "Introduce supplied records showing movement, a visible area change and gas from yeast activity. Distinguish an observation from its interpretation.",
+      "practice": "Compare three records and draw or write the visible evidence for movement, growth or gas production.",
+      "assessment": "Match each highlighted change to the process it supports and explain one limit of the evidence.",
+      "evidence": "Position change supports movement, expanding visible coverage supports growth, and gas production supports activity in the yeast example. These records do not establish the same behaviour in all types.",
+      "closure": "Ask what an image sequence shows that a single image cannot."
+    },
+    "L15": {
+      "materials": "Prepared coded records, day-by-day images, blank graph, variable cards",
+      "induction": "Show two prepared observational records and ask what pupils would need to know before comparing them.",
+      "teach": "Model looking for a single changed condition and identical observation intervals. Compare matches and mismatches in supplied data.",
+      "practice": "Use coded records to identify variables, graph a reported indicator over time and compare observations with a prediction. Critique one confounded record.",
+      "assessment": "In a sample record, refrigerated A scores 0 and 1, while room-stored B scores 0 and 4 at Days 1 and 3 on the same visible-change scale. Identify the factor and explain the result.",
+      "evidence": "Storage temperature is the changed condition. Between Day 1 and Day 3, B shows a score increase of four and A of one. The conclusion applies to the supplied records.",
+      "closure": "Ask which conclusion the data support and which claim requires additional evidence."
+    },
+    "L16": {
+      "materials": "Food and health case cards, two-column chart, captions",
+      "induction": "Show packaged yoghurt and a picture of spoiled food. Ask how related processes can have different effects.",
+      "teach": "Compare an intended food use such as yoghurt production with spoilage or illness, using cases rather than specimens.",
+      "practice": "Sort case cards, add how each effect arises and explain one match to a partner.",
+      "assessment": "Classify using bacteria to make yoghurt and microorganisms spoiling stored food. Explain the different outcomes.",
+      "evidence": "Selected bacteria help produce yoghurt under controlled production. Spoilage changes food quality and can make food unsafe.",
+      "closure": "Ask why a benefit depends on the context and type involved."
+    },
+    "R03": {
+      "materials": "Prepared observation records, effect cards, evidence slips",
+      "induction": "Reveal a movement sequence and a food-use image. Ask what each can support as evidence.",
+      "teach": "Model pairing a claim with one feature of a supplied record or case card.",
+      "practice": "Match cases to helpful or harmful effects and choose one indicator from a time sequence to support a growth claim.",
+      "assessment": "Explain one helpful effect, one harmful effect and one piece of evidence from a prepared record.",
+      "evidence": "For example, yoghurt production is helpful and food spoilage is harmful. Increasing visible coverage supports growth in an image sequence.",
+      "closure": "Ask how the two observations differ from the interpretations."
+    },
+    "L17": {
+      "materials": "Habitat scenarios, same-species and mixed-species cards, role charts",
+      "induction": "Show two birds using the same feeding area and ask what limited resource they might share.",
+      "teach": "Contrast prey–predator, competition and symbiosis. Model distinguishing competition within a species from competition across species.",
+      "practice": "Sort scenario cards and place likely contested resources beside competition examples. Stage one scenario and explain the classification.",
+      "assessment": "Classify a hawk hunting a rat, two stags competing for a mate, and two bird species competing for nesting sites.",
+      "evidence": "The hawk and rat illustrate predation, the stags illustrate intraspecies competition, and different bird species illustrate interspecies competition.",
+      "closure": "Ask which evidence in a scenario shows it is competition."
+    },
+    "L18": {
+      "materials": "Symbiosis case cards, plus-zero-minus chart, arrows",
+      "induction": "Show a cattle egret feeding on insects disturbed by cattle. Ask who benefits in this example.",
+      "teach": "Model benefit, harm and no clear effect. Demonstrate using the two partners' outcomes to name the relationship.",
+      "practice": "Annotate three given pairs with the effect on each animal, then classify each relationship.",
+      "assessment": "Classify cleaner fish and its client fish, egret and cattle, and tick and dog using the case descriptions.",
+      "evidence": "Cleaner fish and client both benefit, egret benefits with little effect on cattle, and a tick benefits while harming its host.",
+      "closure": "Ask how a positive effect on one partner can still describe three different relationships."
+    },
+    "L19": {
+      "materials": "Pre-grown comparison seedlings, photos, rulers, establishment records",
+      "induction": "Show dense and sparse sets of the same seedlings. Ask which other conditions need checking.",
+      "teach": "Set up or use pre-planted groups with the same seed type, medium, watering and light while varying spacing. Demonstrate measuring from soil level.",
+      "practice": "Measure selected seedlings and compare height plus leaf condition across groups. Note baseline conditions and report what crowding may change.",
+      "assessment": "Identify the spacing variable, one control, and an observed difference. Explain how competition could cause it.",
+      "evidence": "Spacing or density changes. A valid control is seed type or light. Record the measured difference and link crowding to competition for resources.",
+      "closure": "Ask why one seedling is weaker evidence than a comparison of several."
+    },
+    "L20": {
+      "materials": "Photographs of an epiphyte and a parasitic plant, plant interaction maps",
+      "induction": "Show an orchid perched on a tree. Ask where it grows and whether it takes food from its host.",
+      "teach": "Compare competition, commensalism and parasitism among plants. Model connecting a plant relationship to an ecosystem observation.",
+      "practice": "Annotate an orchid–tree scene and a dodder–host scene. Add an effect on the relationship or habitat and explain it to peers.",
+      "assessment": "Explain how the orchid example differs from dodder on a host. Draw arrows or labels for the effects of both.",
+      "evidence": "The orchid gains support with little effect on the tree. Dodder draws resources from its host, which can be harmed.",
+      "closure": "Ask which observation would indicate resource loss by a host."
+    },
+    "L21": {
+      "materials": "Extinction and threat case cards, timeline strips, classification mat",
+      "induction": "Show a dodo illustration and a Malayan tiger case card. Ask which represents a living species.",
+      "teach": "Distinguish extinction from extinction risk using verified or historical cases. Include one threatened plant card.",
+      "practice": "Place cases on an extinct versus at-risk mat and explain one difference in a caption.",
+      "assessment": "Classify the dodo, Malayan tiger and a threatened dipterocarp case from the class cards. Give a reason for each category.",
+      "evidence": "The dodo is extinct. The tiger and the example plant still exist but face documented risk. Use the case evidence rather than appearance.",
+      "closure": "Ask why low numbers and no surviving individuals are different claims."
+    },
+    "L22": {
+      "materials": "Fictional habitat maps, pressure cards, cause–effect strips",
+      "induction": "Show maps before and after a road divides a forest. Ask what changed for animals.",
+      "teach": "Model evidence linking activities to population risk. Compare habitat destruction with illegal hunting or pollution in separate cases.",
+      "practice": "Trace a cause–effect chain and select a map or record detail that supports it.",
+      "assessment": "Explain one likely effect of forest fragmentation and give one distinct threat from the case cards.",
+      "evidence": "Fragmentation can cut access to mates or food. Hunting can directly remove animals from a population. Both claims link to their stated evidence.",
+      "closure": "Ask which detail directly supports each link in the explanation."
+    },
+    "L23": {
+      "materials": "Protection measure cards, species pictures, proposal slips",
+      "induction": "Show an undisturbed reserve and a managed population recovery project. Ask what each tries to achieve.",
+      "teach": "Explain preservation as protecting existing natural conditions and conservation as managing or restoring populations and resources for continuity.",
+      "practice": "Classify proposed actions in context and propose a suitable measure for a named species. Explain where approaches overlap.",
+      "assessment": "Classify protecting an intact nesting beach and restoring a degraded nesting site. Explain how one action helps marine turtles.",
+      "evidence": "Protecting existing habitat exemplifies preservation. Restoring habitat exemplifies conservation. Either action can help provide suitable nesting conditions.",
+      "closure": "Ask pupils what would make a protection action appropriate for the chosen species."
+    },
+    "L24": {
+      "materials": "Habitat case sheet, proposal cards, monitoring diagram, peer rubric",
+      "induction": "Present a threatened species map and ask where intervention would address the identified pressure.",
+      "teach": "Model evaluating one short-term and one long-term effect. Include a way to monitor whether the proposal helps.",
+      "practice": "Compare two actions, annotate predicted effects, and present a proposal informed by the stronger evidence.",
+      "assessment": "For a nesting beach, predict a likely result of limiting vehicle access and of restoring vegetation. Suggest one observation to monitor.",
+      "evidence": "Less traffic can reduce nest damage or disturbance. Appropriate vegetation restoration can protect habitat. Nest counts over time can help assess outcomes.",
+      "closure": "Ask which indicator the group would continue recording after the lesson."
+    },
+    "R04": {
+      "materials": "Species case cards, risk labels, strategy cards",
+      "induction": "Show a forest clearing and ask what it removes from the habitat.",
+      "teach": "Review one example of an extinct animal and one action that protects a species still at risk.",
+      "practice": "Match three threats to suitable actions and choose one match to justify.",
+      "assessment": "Link habitat clearing to an appropriate protection strategy and explain the expected benefit.",
+      "evidence": "Protecting or restoring forest habitat retains shelter and food sources and can support survival of the species.",
+      "closure": "Ask which clue connects the threat to the strategy."
+    },
+    "L25": {
+      "materials": "Toy cart, string, modelling clay, force arrows",
+      "induction": "Push a toy cart and pull the same cart with string. Ask pupils to show the direction of each action.",
+      "teach": "Demonstrate changes in shape, speed and direction, starting and stopping. Model placing arrows on the object acted on.",
+      "practice": "Work through cart and clay stations. Sketch three actions and the observed effect of each.",
+      "assessment": "Give examples of starting, stopping and changing shape by applying a push or pull. Add force arrows.",
+      "evidence": "A push can start or stop a cart depending on direction. A push can change the clay's shape. Arrows show the applied force.",
+      "closure": "Ask whether a force can change direction while an object keeps moving."
+    },
+    "L26": {
+      "materials": "Identical blocks, smooth card, felt, spring scales, everyday-use cards",
+      "induction": "Slide a block on two surfaces and ask why it slows.",
+      "teach": "Model friction opposing relative motion. Use a steady pull and spring-scale readings to compare surfaces. Discuss one benefit and one drawback.",
+      "practice": "Repeat pulls with a matched block, log typical readings in N, then sort grip, wear and energy-loss scenarios.",
+      "assessment": "Use the measurements to compare the surfaces and explain one useful and one unwanted effect of friction.",
+      "evidence": "Greater force is needed to sustain the slide on the higher-friction surface. Friction can help shoes grip and can wear rubbing parts.",
+      "closure": "Ask how the fair comparison establishes a link with the surface."
+    },
+    "L27": {
+      "materials": "Prepared block-and-scale stations, felt and card, two secured loads",
+      "induction": "Show two setups. Ask which isolates surface and which isolates load.",
+      "teach": "Demonstrate a steady horizontal pull. Keep contact surface and pull technique fixed while changing load, and use the same load when changing surface.",
+      "practice": "Rotate through two prepared comparisons. Record repeat readings at each station and compare within each pair.",
+      "assessment": "State the changed factor and one control for each comparison. Compare both sets of readings and report their trends.",
+      "evidence": "Change surface at constant load, then load at constant surface. A heavier load usually needs a greater steady pull on the same surface. Cite the measured differences.",
+      "closure": "Ask why the two investigations use separate comparisons."
+    },
+    "L28": {
+      "materials": "Shoe sole pictures, slider samples, wheeled block, drawing cards",
+      "induction": "Show skidding footwear and a difficult-to-move box. Ask whether both need the same change.",
+      "teach": "Compare adding grip with reducing drag. Model selecting a surface or wheels and explaining the intended effect.",
+      "practice": "Sketch a design for an everyday friction problem and annotate where friction changes. Compare designs in pairs.",
+      "assessment": "Propose one change for a slippery shoe and one for a drawer that sticks. Explain why the desired effects differ.",
+      "evidence": "A grippy sole increases friction at the floor. A roller or suitable low-friction guide reduces resistance to drawer movement.",
+      "closure": "Ask where friction should stay high even if another part is designed to slide."
+    },
+    "L29": {
+      "materials": "Clear plastic cup, water, firm card, tray, needle-free syringes",
+      "induction": "Show a sealed syringe containing air. Ask whether the air can push back.",
+      "teach": "Use a plastic cup and card above a tray. Compare with a small air gap and model air particles pushing on surfaces.",
+      "practice": "Observe the cup comparison and feel the push-back in a sealed syringe. Sketch arrows showing air pressure in each case.",
+      "assessment": "Describe what happens to the card in the demonstration and when air enters. Explain the role of outside air pressure.",
+      "evidence": "With a good seal the card stays briefly as outside air pushes upward. When air enters the cup the pressure difference is reduced and water can spill.",
+      "closure": "Ask how an unsealed setup helps test the explanation."
+    },
+    "L30": {
+      "materials": "Altitude diagram, suction cup, picture of a drinking straw",
+      "induction": "Show a suction cup on a smooth tile and ask why it stays attached.",
+      "teach": "Compare pressure at the base and top of a mountain. Draw high-to-low pressure arrows for one device.",
+      "practice": "Annotate two altitude positions and one familiar device using the pressure arrows.",
+      "assessment": "Identify the higher-pressure altitude position and explain how a suction cup can be held against a tile.",
+      "evidence": "Pressure is usually higher at the mountain base. Lower pressure inside and higher outside air pressure help push the suction cup against the tile.",
+      "closure": "Ask what happens when air is let in beneath the cup."
+    },
+    "R05": {
+      "materials": "Force arrows, surface scenarios, cup demonstration image",
+      "induction": "Show a toy cart, shoe and suction cup. Ask which example relies on friction.",
+      "teach": "Review force direction, opposing friction and the idea that air pushes on surfaces.",
+      "practice": "Match scenario cards to each concept and justify one from each column.",
+      "assessment": "Explain how a push moves a cart, why shoe tread helps, and why a closed suction cup sticks.",
+      "evidence": "A push can start a cart. Tread can increase grip. Outside air presses a well-sealed cup towards the surface.",
+      "closure": "Ask pupils to underline the evidence in each explanation."
+    },
+    "L31": {
+      "materials": "Vehicle and animal cards, unit labels, classroom movement scenarios",
+      "induction": "Show a crawling insect and a highway speed sign. Ask why the same unit may be impractical for both.",
+      "teach": "Read cm/s, m/s and km/h as distance per unit time. Model selecting a unit that makes the scale easy to communicate.",
+      "practice": "Match example measurements to units, create new examples and peer-check the units against the context.",
+      "assessment": "Choose a convenient unit for a small toy car, a school sprint and a highway journey. Justify one choice.",
+      "evidence": "Examples are cm/s, m/s and km/h respectively. A sensible explanation matches the size of distances and times in the context.",
+      "closure": "Ask what the slash means in m/s."
+    },
+    "L32": {
+      "materials": "Toy car, prepared ramp, tape measure, marked lanes, stopwatches",
+      "induction": "Show two cars at equal distance markers and ask which could get there sooner.",
+      "teach": "Model two comparisons: time for a fixed distance and distance in a fixed time. Keep the measuring method consistent.",
+      "practice": "Measure repeated runs using lane marks and timers. Compare both relationships and state an operational definition.",
+      "assessment": "Use two observations to describe how changing speed affects time or distance in the recorded trials.",
+      "evidence": "At a fixed distance, the faster car takes less time. In equal time it travels farther. Operationally, average speed is measured distance divided by elapsed time.",
+      "closure": "Ask which quantity must be fixed before saying less time means greater speed."
+    },
+    "L33": {
+      "materials": "Distance–time cards, calculation slips, comparison tables",
+      "induction": "Ask how far a car travelling at 2 m/s would go in three seconds at constant speed.",
+      "teach": "Derive distance and time expressions from speed = distance ÷ time. Use compatible units in the worked examples.",
+      "practice": "Solve one example for each unknown, then write a short explanation comparing two journeys.",
+      "assessment": "Find the speed for 24 m in 6 s, distance at 3 m/s in 5 s, and time for 30 m at 5 m/s.",
+      "evidence": "The answers are 4 m/s, 15 m and 6 s. All three use compatible units and a correct relation.",
+      "closure": "Ask how the answer unit identifies the unknown."
+    },
+    "L34": {
+      "materials": "Dated photo sequence, fictional food records, cause–evidence chart",
+      "induction": "Show photographs of the same food before and after visible changes. Ask which details changed.",
+      "teach": "Compare colour, texture and visible growth using supplied records. Explain how bacteria and fungi can cause spoilage.",
+      "practice": "Create an annotated photo comparison. Match one observed sign to an explanation and explain why appearance alone gives limited information.",
+      "assessment": "Name two visible indicators in the records and explain how microorganisms can cause spoilage.",
+      "evidence": "Examples include discolouration, texture changes and mould. Microorganisms can break down food and change its appearance or condition.",
+      "closure": "Ask whether food can look unchanged even when it is unsafe."
+    },
+    "L35": {
+      "materials": "Food packaging pictures, preservation cards, matching chart",
+      "induction": "Show dried fruit beside a refrigerated product. Ask what each method changes.",
+      "teach": "Model linking low moisture, low temperature and acidity to slowed spoilage. Use ordinary food examples.",
+      "practice": "Match drying, refrigeration and pickling to their effects on the food environment.",
+      "assessment": "Explain the purpose of preserving food and why both drying and refrigeration can help.",
+      "evidence": "Preserving slows spoilage. Drying reduces available moisture, and refrigeration lowers temperature to slow many spoilage processes.",
+      "closure": "Ask why a refrigerated food can still spoil eventually."
+    },
+    "L36": {
+      "materials": "Teacher-prepared food samples, sealed containers, balance, observation log",
+      "induction": "Show two prepared samples of the same fruit preserved in different ways. Ask what evidence can be compared.",
+      "teach": "Use a school-approved project with supervised drying and freezing of the same fruit. Demonstrate labelling and recording the sample condition.",
+      "practice": "Set up the two school-approved treatments, record baseline mass and appearance, then compare with teacher-provided dated follow-up records. Leave all samples for disposal.",
+      "assessment": "List both methods, one controlled starting condition and one difference in the resulting evidence.",
+      "evidence": "Begin with comparable portions of the same food. Drying typically reduces mass through moisture loss. Frozen samples are compared using their dated appearance and mass records.",
+      "closure": "Ask why a separate record is needed for changes that take several days."
+    },
+    "L37": {
+      "materials": "Food labels, method cards, sequence strips, comparison table",
+      "induction": "Show plain frozen fish and dried packaged fish labels. Ask what methods the labels show.",
+      "teach": "Compare single methods with consecutive combined methods. Model a sequence chart for salted, dried and packaged fish.",
+      "practice": "Classify illustrative products and explain how different methods can address different conditions.",
+      "assessment": "Give two alternative methods for the same food, then describe an example that combines more than one in the same product.",
+      "evidence": "Fish can be frozen or dried. Salted dried fish combines salting and drying. Some products also use sealed packaging.",
+      "closure": "Ask pupils to distinguish a list of alternatives from a sequence of combined methods."
+    },
+    "L38": {
+      "materials": "Seasonal fruit calendar, supply snapshots, response slips",
+      "induction": "Show plenty of fruit during harvest and little in the off-season.",
+      "teach": "Connect longer storage life with reducing waste and availability beyond harvest, using a labelled flow diagram.",
+      "practice": "Sequence harvest, preservation, storage and later use in a two-season scenario.",
+      "assessment": "Explain two reasons preservation can help a school canteen during and after a fruit harvest.",
+      "evidence": "Some surplus can be kept for later use, reducing waste at harvest and improving availability out of season.",
+      "closure": "Ask which benefit relates most directly to off-season supply."
+    },
+    "R06": {
+      "materials": "Food method cards, storage scenarios, reasoning slips",
+      "induction": "Show a picture of a food and ask pupils to name one possible preservation method.",
+      "teach": "Review the purpose of slowing spoilage and one link between a method and a condition.",
+      "practice": "Match foods to methods and explain when a single or combined method fits.",
+      "assessment": "Recommend one method for surplus fruit and explain the condition it changes.",
+      "evidence": "Drying is one option. Reducing available moisture slows many spoilage processes. Other appropriate methods are accepted with a valid reason.",
+      "closure": "Ask pupils to link their answer to a condition rather than only a method name."
+    },
+    "L39": {
+      "materials": "Clean picture cards for food, paper, plastic, glass and batteries, sorting mat",
+      "induction": "Show a banana peel and a plastic lid. Ask what could happen to each over time.",
+      "teach": "Distinguish sorting by material from sorting by biodegradability. Discuss when a waste item needs a separate collection route.",
+      "practice": "Sort the cards by type, then classify them by whether microorganisms can break them down under suitable conditions.",
+      "assessment": "Classify a banana peel, plain paper, a plastic lid and a glass jar. Define biodegradable using one of the examples.",
+      "evidence": "Banana peel and plain paper can biodegrade. Conventional plastic and glass are not readily biodegradable. Microorganisms can break down biodegradable waste under suitable conditions.",
+      "closure": "Ask why a glass item may be recyclable even though it is not biodegradable."
+    },
+    "L40": {
+      "materials": "Clean waste cards, reuse and recovery choices, reason slips",
+      "induction": "Show a clean plastic container and vegetable trimmings. Ask how each could be used appropriately.",
+      "teach": "Compare reuse and recovery with disposal. Model linking a choice to the material and intended use.",
+      "practice": "Match four clean waste examples to a use or recovery route, explaining why the materials suit that route.",
+      "assessment": "Justify a useful route for vegetable trimmings and an intact plastic container.",
+      "evidence": "Suitable trimmings can go into an approved composting stream. A clean intact container can be reused for a compatible purpose.",
+      "closure": "Ask why damaged or unsafe items may need a different route."
+    },
+    "L41": {
+      "materials": "Fictional class waste counts, 5R action cards, planning chart",
+      "induction": "Show a tally of single-use packaging from one day. Ask which number the class could reduce.",
+      "teach": "Model choosing a 5R action and comparing counts gathered over equal periods.",
+      "practice": "Plan one change, assign tracking responsibilities, and present a baseline and proposed follow-up measure.",
+      "assessment": "Propose one action and an indicator that can tell whether it reduced waste.",
+      "evidence": "For example, replace disposable drink cups with reusable ones and compare the count of discarded cups over two equal school periods.",
+      "closure": "Ask how comparing equal time windows makes the evidence easier to interpret."
+    },
+    "L42": {
+      "materials": "Lamp, Earth and Moon balls, screen, shadow sketch sheet",
+      "induction": "Show three models and ask which must be in the middle for a lunar eclipse.",
+      "teach": "Keep the lamp fixed. Put Earth between the light and the Moon to model the Moon entering Earth's shadow.",
+      "practice": "Model the three-body order, then trace Earth's shadow and sketch where the Moon passes through it.",
+      "assessment": "Draw and label the lunar-eclipse alignment, including the shadowed object and the full-Moon phase.",
+      "evidence": "Sun–Earth–Moon. The Moon enters Earth's shadow. A lunar eclipse can occur at full Moon when the alignment is close enough.",
+      "closure": "Ask why being at full Moon alone does not guarantee an eclipse."
+    },
+    "L43": {
+      "materials": "Fixed lamp, small Moon ball, Earth globe and screen, ray rulers",
+      "induction": "Show a small ball casting a patch of shadow on a larger model. Ask which body blocks the light.",
+      "teach": "Use indoor models to place the Moon between Sun and Earth. Trace light rays at the edge of the Moon model and compare the resulting shadow with Lesson 42.",
+      "practice": "Move the Moon model, locate the shadow on Earth and add straight rays to both eclipse sketches.",
+      "assessment": "Draw Sun–Moon–Earth and show why only some locations are in the Moon's shadow. Contrast with the lunar alignment.",
+      "evidence": "In a solar eclipse the Moon blocks direct light along a narrow part of Earth's surface. In a lunar eclipse Earth blocks sunlight reaching the Moon.",
+      "closure": "Ask where partial shadow is represented on the globe."
+    },
+    "L44": {
+      "materials": "Comparison diagrams, observer location cards, light-level picture cards",
+      "induction": "Show a small shadow patch on a globe and ask who can observe it from the surface.",
+      "teach": "Compare a location under the Moon's shadow with a night-side observer watching the Moon in Earth's shadow.",
+      "practice": "Annotate where observers are located and describe what changes in their view for each eclipse.",
+      "assessment": "Predict what an observer might notice during a solar eclipse and a lunar eclipse. Explain which dip in brightness is local.",
+      "evidence": "A location under the Moon's shadow experiences reduced daylight. During a lunar eclipse an observer on Earth's night side may see the Moon darken or turn reddish.",
+      "closure": "Ask which event can darken a small area on the daytime side of Earth."
+    },
+    "R07": {
+      "materials": "Eclipse alignments, straight-ray cards, correction slips",
+      "induction": "Reveal a diagram labelled lunar eclipse with the Moon in the middle. Ask pupils to verify it.",
+      "teach": "Review which body casts the shadow and use straight lines to show where its light is blocked.",
+      "practice": "Correct two mixed-up eclipse diagrams and label the location of each shadow.",
+      "assessment": "Give the three-body order and shadowed object for each eclipse.",
+      "evidence": "Lunar is Sun–Earth–Moon with the Moon in Earth's shadow. Solar is Sun–Moon–Earth with the Moon's shadow falling on part of Earth.",
+      "closure": "Ask which alignment puts Earth in the middle."
+    },
+    "L45": {
+      "materials": "Galaxy images from a school-approved source, shape cards, comparison grid",
+      "induction": "Show a star field and a galaxy image. Ask how the two views differ in scale and content.",
+      "teach": "Explain galaxies as systems containing stars, gas and dust. Compare representative spiral, elliptical and irregular images and locate the Milky Way example.",
+      "practice": "Sort sample images by observed shape. Annotate a Milky Way image and compare it with two other examples.",
+      "assessment": "Define a galaxy, identify the Milky Way as a barred spiral and support two other classifications with visible features.",
+      "evidence": "A galaxy contains many stars, gas and dust held together by gravity. Elliptical galaxies look rounded and irregular galaxies lack a clear regular shape in the sample images.",
+      "closure": "Ask why a photograph of a galaxy is different from a map of our Solar System."
+    },
+    "L46": {
+      "materials": "Milky Way schematic, Solar System inset, coarse scale cards",
+      "induction": "Show a tiny dot on a galaxy sketch and ask what can fit within that marker.",
+      "teach": "Model using an inset and distinguishing a location marker from a drawing at true scale. Place the Solar System away from the centre in the Milky Way disc.",
+      "practice": "Create a main galaxy diagram and a magnified Solar System inset. Explain the relative scale during a gallery walk.",
+      "assessment": "Locate the Solar System in the Milky Way and explain why an inset is used to depict it.",
+      "evidence": "The Solar System is within the Milky Way disc. It is tiny relative to the galaxy, so showing its internal structure requires magnification.",
+      "closure": "Ask which label tells readers that the inset uses a different scale."
+    },
+    "L47": {
+      "materials": "Card towers, simple paper beams, light counters",
+      "induction": "Push each tower lightly and then apply a small load to a supported beam. Ask how the tests differ.",
+      "teach": "Model stability as resisting tipping and strength as resisting failure under force. Apply each test separately.",
+      "practice": "Compare results for two simple models and label whether each observation is about stability or strength.",
+      "assessment": "Explain the difference using a tower that tips easily and a beam that supports several counters.",
+      "evidence": "Stability concerns tipping or staying upright. Strength concerns supporting force or load without failing. The two results measure different properties.",
+      "closure": "Ask if a strong model can still tip over easily."
+    },
+    "L48": {
+      "materials": "Low card structures, tilt board, angle markers, recording grid",
+      "induction": "Show two models of the same height with different bases. Ask which may tip first.",
+      "teach": "Set up separate base-area and height comparisons. Model tilting slowly and recording the angle at first tip.",
+      "practice": "Run both comparisons with prepared light models. Repeat each trial and explain the observed effect of the changed factor.",
+      "assessment": "Name the altered and controlled factors in both comparisons. Decide which model was more stable from the angle readings.",
+      "evidence": "A wider base or lower centre of gravity typically requires a larger tilt before tipping. Base area and height are changed in different trials.",
+      "closure": "Ask why comparing larger base and shorter height at once cannot separate their effects."
+    },
+    "L49": {
+      "materials": "Paper beam blanks, equal supports, light counters, load chart",
+      "induction": "Show a flat strip and a folded strip made from the same paper.",
+      "teach": "Model changing beam shape while holding paper, support span and load position constant. Repeat with equal geometry and different card materials.",
+      "practice": "Compare flat and folded beams plus the material pair. Add light counters centrally and record the load before marked bending or collapse.",
+      "assessment": "Use two tables to compare shape and material. Name the controlled factors and explain one outcome.",
+      "evidence": "Support span and load position stay fixed. Shape is changed in one comparison, material in the other. Evidence cites the observed maximum loads.",
+      "closure": "Ask which beam data compare strength rather than stability."
+    },
+    "L50": {
+      "materials": "Pre-cut clean recycled card, tape, light counters, low push board",
+      "induction": "Show the material kit and explain the push and load tests pupils will use.",
+      "teach": "Model a quick assembly with two supports and a braced base. Explain that durability can reduce replacement.",
+      "practice": "Assemble a small model from prepared parts. Test for tipping and load, then annotate one design choice with an observed result.",
+      "assessment": "Show one change that improves stability or strength, and explain the benefit of a durable structure.",
+      "evidence": "A wider base can resist tipping, and a folded support can carry more load. Cite a classroom test result and link durability to less repair or waste.",
+      "closure": "Ask which evidence supports keeping a particular feature."
+    },
+    "R08": {
+      "materials": "Short model test records, card structure sketches, fix cards",
+      "induction": "Show a model that tips easily and one with a bending beam. Ask if the failures have the same cause.",
+      "teach": "Review testing stability with a small tilt and strength with a recorded load.",
+      "practice": "Match failures to possible improvements and use the test records to justify the connection.",
+      "assessment": "For a narrow model that tips and a flat beam that bends, suggest separate improvements and predict what each test would show.",
+      "evidence": "A wider base can increase the tilt needed for tipping. Folding or bracing a beam may increase the load it supports.",
+      "closure": "Ask which change should be judged using a load rather than a tilt."
+    },
+    "L51": {
+      "materials": "Tool timelines, field cards, archive pictures, investigation sheets",
+      "induction": "Show a hand tool and a modern counterpart. Ask what task both accomplish.",
+      "teach": "Model how scientific knowledge becomes a tool that addresses a limitation. Compare changes in communication, agriculture and transport.",
+      "practice": "Build a three-stage timeline for one field, then compare its development with another field in a gallery walk.",
+      "assessment": "Define technology and use two tool examples to explain which human limitation each addresses.",
+      "evidence": "Technology applies scientific knowledge to overcome practical limitations. A telescope extends distant viewing, and modern communication tools transmit messages over long distances.",
+      "closure": "Ask how a new feature changes what humans can do."
+    },
+    "L52": {
+      "materials": "Technology case cards, benefit–drawback chart, decision slips",
+      "induction": "Show navigation on a phone and ask for one benefit and one cost.",
+      "teach": "Model weighing a trade-off in a concrete situation. Ask what responsible action addresses the drawback.",
+      "practice": "Complete a comparison using one case and present a use choice with a reason.",
+      "assessment": "Explain a benefit and a drawback of a navigation app, then give a responsible choice.",
+      "evidence": "Navigation helps find routes. Sharing location can reduce privacy. Use location only when needed or limit unnecessary access.",
+      "closure": "Ask how the chosen action addresses the drawback while preserving the benefit."
+    },
+    "R09": {
+      "materials": "Technology cards, choice matrix, response strips",
+      "induction": "Show an online communication example and ask whose task it changes.",
+      "teach": "Review matching benefits, costs and actions using one worked case.",
+      "practice": "Select a familiar technology, compare effects and present one reasoned choice to a group.",
+      "assessment": "Give a benefit and a drawback of video calls and suggest one responsible practice.",
+      "evidence": "Video calls allow distant meetings but require equipment and connectivity. Protect meeting access or use a suitable alternative when access is limited.",
+      "closure": "Ask which evidence would help judge the choice in a real situation."
+    }
+  },
+  "extended_practice": {
+    "L04": [
+      "Present a second time series from a car that stops sooner. Check axes and scaling before comparing the two runs.",
+      "Plot a second run on the same axes. Explain which interval has the greatest distance change in each run."
+    ],
+    "L07": [
+      "Provide silent label checks and a card set showing the path of an ovum. Clarify terms using the two diagrams.",
+      "Trace the ovum from an ovary towards a Fallopian tube and identify which organ supports development. Review all six functions."
+    ],
+    "L10": [
+      "Use a second scenario involving awareness of touch and contrast it with the reflex example.",
+      "Build both signal paths with arrows and label central and peripheral structures on each path."
+    ],
+    "R02": [
+      "Provide two corrected examples with one label hidden in each. Model how to give a reason for a correction.",
+      "Rebuild both sequences from partial cues and explain one corrected relationship to a partner before the individual task."
+    ],
+    "L15": [
+      "Reveal a confounded record and a second pair with repeated readings. Ask which comparisons are defensible.",
+      "Check the observation key, plot the new results and note where confounding or limited repetition weakens the claim."
+    ],
+    "L17": [
+      "Assign groups a common resource and vary its availability in the scenario.",
+      "Compare scenarios with scarce and abundant resources, then explain when competition is expected."
+    ],
+    "L20": [
+      "Introduce a crowded seedling group as a third case and ask how it differs from both symbioses.",
+      "Make a comparison chart showing resource competition, support and resource loss in the three plant cases."
+    ],
+    "L24": [
+      "Provide a second location or pressure card to test whether the preferred proposal still fits.",
+      "Revise the proposal for the new scenario and justify which evidence changed the choice."
+    ],
+    "L26": [
+      "Offer a second set of surface samples and a new real-life trade-off. Check repeatability at each station.",
+      "Compare repeated readings and choose a material where greater grip matters. Explain what an unusually high reading could mean."
+    ],
+    "L29": [
+      "Run a second comparison with air in a sealed syringe. Model how the two demonstrations support the same general idea.",
+      "Sketch and compare how the syringe pushes back and how air holds the card. Mark which observation supports each explanation."
+    ],
+    "L31": [
+      "Give speed cards containing mixed units and everyday contexts. Model reading one numerical speed aloud.",
+      "Write a contextual example for each unit and explain why comparing the numerical values alone could mislead."
+    ],
+    "L34": [
+      "Add a case with incomplete visual evidence and ask what can reasonably be concluded.",
+      "Annotate limits of the available evidence and explain why the records cannot establish that a food is safe."
+    ],
+    "L37": [
+      "Provide two different labels for the same kind of food. Ask pupils to read the processing information.",
+      "Build a method diagram showing alternatives for one product and a sequence for the combined product."
+    ],
+    "L39": [
+      "Show a recycling symbol and a compostable-label example. Discuss why the sorting criteria answer different questions.",
+      "Reclassify the material cards and annotate which can be reused, recycled or sent to an approved organics stream."
+    ],
+    "L43": [
+      "Vary the observer position relative to the model shadow and model partial versus deeper shadow.",
+      "Predict the view at three globe locations and revise the shadow sketch after checking the model."
+    ],
+    "L45": [
+      "Show two different views of a spiral structure. Discuss how position and viewing direction change the image.",
+      "Make a labelled Milky Way schematic, then compare features with another galaxy and annotate limits of the images."
+    ],
+    "L49": [
+      "Ask teams to exchange recorded tables and check test conditions before comparing outcomes.",
+      "Use a second group’s data to check consistency and suggest one improvement to control the load position or span."
+    ],
+    "L51": [
+      "Assign two fields for comparison and model checking a date, purpose and new feature on each timeline.",
+      "Present timelines in groups and explain how two different tools extend a capability such as reach, speed or observation."
+    ]
+  }
+}
