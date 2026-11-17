@@ -3,14 +3,15 @@
 **Official SOW topic:** And Something Weird Happened.
 **Official SOW:** Lesson 75, printed p.113. **Suggested duration:** 60 minutes.
 **Main and complementary learning standards:** Language Arts 5.3.1 and Writing 4.3.3.
-**Materials:** And Something Weird Happened by Pamela Rushby, BPK short-stories guide pp.121–124 (Writer block – making up), paper for a booklet and a peer-review slip.
-**Learning objectives:** Pupils create a new version of an event from Joel’s holiday, draft one or two short paragraphs and revise one part using feedback.
+**Materials:** And Something Weird Happened by Pamela Rushby pp.12–14 and 16, BPK Short Stories Guidebook pp.105–108 Writer’s Block, booklet paper and feedback slips.
+**Learning objectives:** Pupils invent a new version of an event in Joel’s holiday and revise a short draft after receiving feedback.
+**Success criteria:** Create one coherent imaginative change, draft one or two paragraphs and make one meaningful revision based on a partner’s comment.
 
-1. **Set induction (8 min):** Start a memory chain in which pupils retell and add events they remember from Joel’s holiday.
-2. **Activity 1 (12 min):** Introduce the guide’s Writer block – making up activity. Following its prompts, pairs choose an event and plan what changes, who reacts and what happens next.
-3. **Activity 2 (15 min):** Pairs use the guide to develop their ideas. Each pupil drafts one or two short paragraphs and checks that the new event can follow from their plan.
-4. **Activity 3 (17 min):** Partners exchange drafts and point to one place where an action, sequence or reaction could be clearer. Each pupil revises at least one sentence.
-5. **Closure (8 min):** Pupils copy the revised version into a small booklet and tell a partner which detail they changed.
+1. **Set induction (8 min):** Use a memory chain to recall events from Joel’s holiday.
+2. **Activity 1 (12 min):** Pairs skim the selected story pages and list the events. Using the Writer’s Block prompts, choose one event and agree what will change.
+3. **Activity 2 (14 min):** Each pupil drafts one or two short paragraphs of the new version. Partners ask one question about an action or sequence and give a specific suggestion.
+4. **Activity 3 (18 min):** Pupils revise the draft in response to feedback and transfer their revised story to a small booklet.
+5. **Closure (8 min):** Pupils read a revised sentence to a partner and explain how their change improved the story.
 
-**PBD:** Check for one coherent imaginative change and compare the draft and revision to see how the pupil acted on a comment.
-**Differentiation:** Provide a story sequence organiser. Ask confident pupils to develop a character’s reaction to the new event.
+**PBD:** Check that the new event makes sense within the story. Compare drafts and record one revision linked to peer feedback.
+**Differentiation:** Provide an event organiser and a feedback stem. Invite confident pupils to develop how a character reacts to the change.
