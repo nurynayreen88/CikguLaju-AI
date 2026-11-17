@@ -198,7 +198,7 @@ def install(ns):
                 "📅 <b>RPT 2027 — Tahun %d</b>\n\n"
                 "Pilih subjek untuk memuat turun RPT.\n"
                 "English: 160 Lesson; Kumpulan A/B dalam satu PDF.\nBahasa Melayu: RPT 2027 DRAF untuk semakan guru, jika tersedia.\n"
-                "Matematik v28: DRAF/SEMENTARA, jika fail tersedia.\nPendidikan Islam: cadangan untuk semakan guru, jika fail tersedia.\nPJPK: RPT cadangan PdP 2027 (DRAF), jika tersedia.\nPendidikan Moral: RPT PDF Kumpulan A dan B (96 sesi) serta RPH Pengukuhan (54 sesi, PDF/Word).\n\n"
+                "Matematik v28: DRAF/SEMENTARA, jika fail tersedia.\nPendidikan Islam: cadangan untuk semakan guru, jika fail tersedia.\nPJPK: RPT cadangan PdP 2027 (DRAF), jika tersedia.\nPendidikan Moral: RPT PDF Kumpulan A dan B dan RPH Word/PDF bagi setiap PdP (96 sesi).\n\n"
                 "PSV: 42 PdP cadangan (PDF A4 landscape).\n\nTarikh individu bergantung kepada jadual kelas serta cuti negeri." % year,
                 kb)
         if is_psv:

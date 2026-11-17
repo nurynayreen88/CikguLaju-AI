@@ -531,9 +531,8 @@ def install(ns):
             if not rph_ready(year):
                 return send(cid, "Sumber RPH pengukuhan Pendidikan Moral tahun ini belum tersedia.")
             return send(cid,
-                        "📘 <b>RPH Pengukuhan Pendidikan Moral Tahun %d</b>\n\n"
-                        "54 sesi pengukuhan. Pilih format bahan yang ingin dimuat turun. "
-                        "RPH teras masih dijana seperti biasa melalui Sediakan Bahan PdP." % year,
+                        "📘 <b>RPH Pendidikan Moral Tahun %d</b>\n\n"
+                        "Pilih satu daripada 96 PdP dalam RPT 2027 atau muat turun pakej 54 sesi pengukuhan." % year,
                         [[{"text": "Pilih PdP dalam RPT 2027",
                            "callback_data": f"{RPT_RPH_PREFIX}{year}:0:0:menu"}],
                          [{"text": "📄 Muat turun PDF", "callback_data": RPH_PDF_PREFIX + str(year)}],
