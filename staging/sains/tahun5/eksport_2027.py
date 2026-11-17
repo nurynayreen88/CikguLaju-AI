@@ -292,13 +292,22 @@ def export_rpt(path, weeks, rows):
     doc.save(path)
 
 
-def export_rph(output, row):
+def render_rph(stream, row, renderer, *, teacher=None):
+    teacher = teacher or {}
+    session = "  ".join(
+        f"{label}: {teacher.get(key) or '______'}"
+        for key, label in (("rph_class", "Kelas"), ("rph_date", "Tarikh"),
+                           ("rph_time", "Masa"), ("rph_students", "Bil. murid"))
+    )
+    reflection = teacher.get("rph_teacher_reflection") or (
+        "___ daripada ___ murid mencapai objektif. Tindakan susulan: ____________________"
+    )
     heading = ("Rancangan Pengajaran Harian", "Sains · Tahun 5 SK · 2027", row["title"])
     details = [
         ("Unit", row["unit"]),
         ("Nombor dan tempoh", f"PdP {row['id']:03d} · {row['minutes']} minit"),
         ("Julat RPT", row["dates"]),
-        ("Kelas, tarikh dan masa", "Kelas: ______  Tarikh: ______  Masa: ______  Bil. murid: ______"),
+        ("Kelas, tarikh dan masa", session),
         ("Standard", f"SK {row['sk']} · SP {row['sp']}"),
         ("Buku teks", f"Buku Teks Sains Tahun 5 SK, m/s {row['pages']}"),
         ("Objektif", row["objective"]),
@@ -309,12 +318,16 @@ def export_rph(output, row):
     activities = [("Fasa", "Guru", "Murid"), *row["phases"]]
     evidence = [
         ("Evidens PBD", row["pbd"]),
-        ("Refleksi", "___ daripada ___ murid mencapai objektif. Tindakan susulan: ____________________"),
+        ("Refleksi", reflection),
     ]
+    renderer(stream, heading, details, activities, evidence)
+
+
+def export_rph(output, row):
     stem = f"CikguLaju_RPH_Sains_SK_T5_PdP_{row['id']:03d}"
     for suffix, renderer in (("docx", _word), ("pdf", _pdf)):
         with (output / f"{stem}.{suffix}").open("wb") as stream:
-            renderer(stream, heading, details, activities, evidence)
+            render_rph(stream, row, renderer)
 
 
 def main():
