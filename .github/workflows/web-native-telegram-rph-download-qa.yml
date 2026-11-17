@@ -1,5 +1,14 @@
 name: Web Native Telegram RPH Download QA
 on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'web/native_telegram_sequence_rph_client.py'
+      - 'web/unified_rph_web.py'
+      - 'web_v1_static_preview/index.html'
+      - 'tools/run_web_v1_preview.py'
+      - 'tests/test_web_native_sequence_rph_bridge.py'
+      - '.github/workflows/web-native-telegram-rph-download-qa.yml'
   push:
     branches: [feature/web-direct-rph-telegram-engine-20261105, feature/web-db-rph-bridge-bm-pi-20261106]
   workflow_dispatch:
