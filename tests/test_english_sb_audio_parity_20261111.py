@@ -11,7 +11,7 @@ from pypdf import PdfReader, PdfWriter
 from pypdf.generic import NameObject, NumberObject
 from web.telegram_english_sb_audio_api_20261111 import (
     create_english_book_audio_blueprint, _book_selection, _audio_rows, YEAR2_AUDIO,
-    YEAR2_AUDIO_BOOK_EVIDENCE, WMA_HEADER,
+    YEAR2_AUDIO_BOOK_EVIDENCE, WMA_HEADER, install_telegram_extras,
 )
 
 
@@ -105,6 +105,59 @@ class EnglishSourceParityTests(unittest.TestCase):
         env.start()
         self.addCleanup(env.stop)
         self.headers = {"Authorization": "Bearer " + self.token}
+
+    def test_year_six_uses_the_same_original_audio_in_api_and_telegram(self):
+        from hashlib import sha256
+
+        state = {"year": "Tahun 6", "subject": "Bahasa Inggeris", "lesson_no": 14}
+        rows = _audio_rows(self.runtime, 6, 14)
+        self.assertEqual([row["reference"] for row in rows], ["CD1 Track 5", "CD1 Track 6"])
+        raw = b"ID3" + b"x" * (rows[0]["size_bytes"] - 3)
+        params = {"year": 6, "lesson": 14}
+        base = "/internal/rph/v1/english-extras/audio"
+        response = self.client.get(base, query_string=params, headers=self.headers)
+        self.assertEqual(response.status_code, 200)
+        self.assertNotIn("publisher_url", response.get_data(as_text=True))
+        self.assertEqual(self.client.get(
+            base, query_string={"year": 6, "lesson": 3}, headers=self.headers,
+        ).status_code, 404)
+        download = Mock(status_code=200, headers={"Content-Type": "audio/mpeg"})
+        download.iter_content.return_value = [raw]
+        with patch("requests.get", return_value=download) as fetch:
+            self.assertEqual(self.client.get(base + ".mp3", headers=self.headers,
+                                             query_string={**params, "track": 1}).status_code, 503)
+            self.assertEqual(fetch.call_args.args[0], rows[0]["publisher_url"])
+            self.assertFalse(fetch.call_args.kwargs["allow_redirects"])
+            published = [{**row, "sha256": sha256(raw).hexdigest(),
+                          "size_bytes": len(raw)} for row in rows]
+            with patch("web.telegram_english_sb_audio_api_20261111._year6_publisher_audio",
+                       return_value={14: published}):
+                reply = self.client.get(base + ".mp3", headers=self.headers,
+                                        query_string={**params, "track": 1})
+                self.assertEqual(reply.status_code, 200)
+                self.assertEqual(reply.data, raw)
+                self.runtime._available_materials_v2528 = Mock(return_value=["workbook", "media"])
+                self.runtime._send_reference_material_v2528 = Mock(return_value=True)
+                self.runtime.send_document = Mock(
+                    side_effect=lambda cid, path, title: Path(path).read_bytes() == raw)
+                self.runtime._telegram_delivery_ok_v25279 = bool
+                install_telegram_extras(self.runtime)
+                self.assertEqual(self.runtime._available_materials_v2528(state),
+                                 ["workbook", "media"])
+                self.assertEqual(self.runtime._available_materials_v2528(
+                    {**state, "lesson_no": 3}), ["workbook"])
+                self.assertTrue(self.runtime._send_reference_material_v2528(1, state, "media"))
+                self.assertEqual(self.runtime.send_document.call_count, 2)
+
+    def test_year_six_book_selection_requires_a_verified_local_source(self):
+        with patch.dict(os.environ, {"CIKGULAJU_Y6_PUPIL_BOOK_PATH": "/missing/book.pdf"}):
+            self.assertIsNone(_book_selection(self.runtime, 6, 19))
+        with patch("web.telegram_english_sb_audio_api_20261111._year6_book_path",
+                   return_value=Path("/private/book.pdf")):
+            state, pages = _book_selection(self.runtime, 6, 19)
+            self.assertEqual(state["year"], "Tahun 6")
+            self.assertEqual(pages, [24, 26])
+            self.assertIsNone(_book_selection(self.runtime, 6, 16))
 
     def test_student_book_only_verified_selected_pages(self):
         params = {"year": "4", "lesson": "18"}

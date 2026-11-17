@@ -537,11 +537,11 @@ except Exception as exc:
 # The Web API requires a service bearer. Telegram uses its existing picker.
 try:
     from web.telegram_english_sb_audio_api_20261111 import (
-        create_english_book_audio_blueprint, install_year5_telegram_extras,
+        create_english_book_audio_blueprint, install_telegram_extras,
     )
     telegram_runtime.app.register_blueprint(
         create_english_book_audio_blueprint(telegram_runtime))
-    install_year5_telegram_extras(telegram_runtime)
+    install_telegram_extras(telegram_runtime)
     ENGLISH_EXTRA_SB_AUDIO_SOURCE_REGISTERED = True
 except Exception as exc:
     ENGLISH_EXTRA_SB_AUDIO_SOURCE_REGISTERED = False
