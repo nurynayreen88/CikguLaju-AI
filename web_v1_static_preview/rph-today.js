@@ -18,11 +18,18 @@
  const resultsList=document.getElementById("today-results-list");
  const dayMode=document.getElementById("rph-day-mode");
  const weekMode=document.getElementById("rph-week-mode");
+ const bundlePanel=document.getElementById("week-bundle-panel");
+ const bundleFormat=document.getElementById("week-bundle-format");
+ const bundleDownload=document.getElementById("week-bundle-download");
+ const bundleStatus=document.getElementById("week-bundle-status");
  if(!dateInput||!refresh||!state||!list||!confirm||!generateAll||
     !allStatus||!resultsHost||!resultsList)return;
  let requestId=0,loadedDate="",loading=false,reviewing=false,savingProgress=false,choices=[],batchEpoch=0;
  let weekly=false;
  const cache=new Map(),rosterCounts=new Map();
+ const bundleParts=new Map();
+ let bundleBusy=false,bundleSlots=[],singleDownloads=0;
+ const WORD_MIME="application/vnd.openxmlformats-officedocument.wordprocessingml.document";
  const TAGS=["component","theme","unit","topic","lesson"];
  const SOURCE_NAMES={
   BM:"Unit",ENGLISH:"Unit / Topic",PI:"Bidang / Tajuk",
@@ -168,6 +175,8 @@
  }
  function clearResults(){
   batchEpoch++;
+  bundleSlots=[];
+  if(bundlePanel)bundlePanel.hidden=true;
   resultsHost.hidden=true;
   resultsList.replaceChildren();
   for(const c of choices){
@@ -598,9 +607,13 @@
   updateAll();
  }
  async function load(date=""){
+  if(bundleBusy)return;
   const ticket=++requestId;
   cache.clear();
   rosterCounts.clear();
+  if(bundlePanel)bundlePanel.hidden=true;
+  bundleSlots=[];
+  bundleParts.clear();
   batchEpoch++;
   loading=true;reviewing=false;choices=[];
   resultsHost.hidden=true;
@@ -668,6 +681,7 @@
    qs.set("teacher_end",c.slot.end);
   }
   c.result.hidden=false;c.resultList.replaceChildren();
+  c.downloadFormats=[];
   c.downloadStatus.textContent="Menyemak bahan yang tersedia…";
   let found=0, errors=[], paired=false;
   try{
@@ -687,6 +701,7 @@
     },Object.fromEntries(qs)));
     c.resultList.append(pbd.li);found++;
     const formats=Array.isArray(data.formats)?data.formats.filter(f=>["pdf","word"].includes(f)):["pdf","word"];
+    c.downloadFormats=formats;
     for(const format of ["pdf","word"]){
      if(!formats.includes(format))continue;
      const label=(format==="pdf"?"RPH PDF":"RPH Word")+(pair?" · Lesson "+pair:"");
@@ -735,48 +750,170 @@
   c.downloadStatus.textContent=errors.join(" ")||
    (found?"Hanya bahan yang telah disahkan tersedia dipaparkan.":"Tiada bahan yang disahkan tersedia untuk Lesson/PdP ini.");
  }
- async function downloadRph(c,format,key,button){
-  if(c.ticket!==requestId||reviewing||key!==selectedKey(c)||!confirm.checked)return;
+ function rphFileRequest(c,format){
   const students=c.students.value.trim();
   if(!c.students.checkValidity()||(students&&!/^[1-9][0-9]{0,2}$/.test(students))){
-   c.downloadStatus.textContent="Masukkan bilangan murid antara 1 hingga 200.";
    c.students.reportValidity();
-   return;
+   throw Error("Masukkan bilangan murid antara 1 hingga 200 untuk "+c.slot.class_name+".");
   }
+  const reflection=c.reflection.value.trim();
+  if(reflection.length>500||reflection.split(/\r\n|\r|\n/).length>6)
+   throw Error("Semak refleksi untuk "+c.slot.class_name+". Hadnya 500 aksara dan 6 baris.");
   const args=selection(c);
   const params=new URLSearchParams({
    year:args.year,subject:args.subject,unit:args.unit,lesson:args.lesson,
    teacher_class:c.slot.class_name,teacher_date:c.date,
-   teacher_start:c.slot.start,teacher_end:c.slot.end,teacher_students:students
+   teacher_start:c.slot.start,teacher_end:c.slot.end,teacher_students:students,
+   rph_context:"hari-ini"
   });
   if(args.component)params.set("component",args.component);
-  if(args.subject==="ENGLISH")params.set("rph_context","hari-ini");
-  const expected=params.toString();
+  const query=params.toString(),options=rphDownloadOptions(reflection);
+  const key=JSON.stringify([format,query,options.body||""]);
+  const safeClass=c.slot.class_name.replace(/[^a-z0-9_-]+/gi,"_").slice(0,45);
+  const fallback="CIKGULAJU_RPH_"+safeClass+"_"+args.subject+"_"+format+"."+(format==="pdf"?"pdf":"docx");
+  return {c,format,query,options,key,fallback};
+ }
+ function saveRphFile(blob,name){
+  const url=URL.createObjectURL(blob),anchor=document.createElement("a");
+  anchor.href=url;anchor.download=name;
+  document.body.append(anchor);anchor.click();anchor.remove();
+  setTimeout(()=>URL.revokeObjectURL(url),30000);
+ }
+ async function fetchRphPart({format,query,options,fallback}){
+  const response=await fetch("/api/web/rph/"+format+"?"+query,options);
+  if(!response.ok){
+   const body=await response.json().catch(()=>({}));
+   throw Error(body.error||"Muat turun RPH gagal (HTTP "+response.status+").");
+  }
+  const mime=(response.headers.get("content-type")||"").toLowerCase();
+  const blob=await response.blob();
+  if(!mime.includes(format==="pdf"?"application/pdf":WORD_MIME)||blob.size<1000)
+   throw Error("Fail RPH yang diterima tidak sah.");
+  const name=response.headers.get("Content-Disposition")?.match(/filename="?([A-Za-z0-9_-]+\.(?:pdf|docx))"?/i)?.[1];
+  return {blob,name:name||fallback,receipt:response.headers.get("X-RPH-Word-Receipt")};
+ }
+ async function downloadRph(c,format,key,button){
+  if(c.ticket!==requestId||reviewing||bundleBusy||key!==selectedKey(c)||!confirm.checked)return;
+  singleDownloads++;
   button.disabled=true;
-  c.downloadStatus.textContent="Menjana RPH "+format.toUpperCase()+" menggunakan penjana Telegram…";
+  updateBundle();
   try{
-   const response=await fetch("/api/web/rph/"+format+"?"+expected,rphDownloadOptions(c.reflection.value));
-   if(!response.ok){
-    const body=await response.json().catch(()=>({}));
-    throw Error(body.error||"Muat turun RPH gagal (HTTP "+response.status+").");
-   }
-   const mime=(response.headers.get("content-type")||"").toLowerCase();
-   const okMime=format==="pdf"?mime.includes("application/pdf"):
-    mime.includes("application/vnd.openxmlformats-officedocument.wordprocessingml.document");
-   const blob=await response.blob();
-   if(!okMime||blob.size<1000)throw Error("Fail RPH yang diterima tidak sah.");
+   const plan=rphFileRequest(c,format);
+   c.downloadStatus.textContent="Menyediakan RPH "+format.toUpperCase()+"…";
+   const part=bundleParts.get(plan.key)||await fetchRphPart(plan);
    if(c.ticket!==requestId||key!==selectedKey(c))
     throw Error("Pilihan Lesson telah berubah. Semak semula sebelum muat turun.");
-   const url=URL.createObjectURL(blob),anchor=document.createElement("a");
-   const safeClass=c.slot.class_name.replace(/[^a-z0-9_-]+/gi,"_").slice(0,45);
-   const name=response.headers.get("Content-Disposition")?.match(/filename="?([A-Za-z0-9_-]+\.(?:pdf|docx))"?/i)?.[1];
-   anchor.href=url;anchor.download=name||"CIKGULAJU_RPH_"+safeClass+"_"+args.subject+"_"+format+"."+(format==="pdf"?"pdf":"docx");
-   document.body.append(anchor);anchor.click();anchor.remove();
-   setTimeout(()=>URL.revokeObjectURL(url),30000);
+   saveRphFile(part.blob,part.name);
    c.downloadStatus.textContent="RPH "+format.toUpperCase()+" disediakan untuk "+c.slot.class_name+".";
    window.refreshSharedRphBalance?.();
   }catch(error){c.downloadStatus.textContent=error.message;}
-  finally{button.disabled=false;}
+  finally{button.disabled=false;singleDownloads--;updateBundle();}
+ }
+ function updateBundle(){
+  if(!bundlePanel)return;
+  bundlePanel.hidden=!weekly||resultsHost.hidden||!bundleSlots.length;
+  if(bundlePanel.hidden)return;
+  for(const option of bundleFormat.options){
+   option.disabled=!bundleSlots.every(c=>c.downloadFormats?.includes(option.value));
+  }
+  if(bundleFormat.selectedOptions[0]?.disabled){
+   const available=[...bundleFormat.options].find(option=>!option.disabled);
+   if(available)bundleFormat.value=available.value;
+  }
+  const supported=Boolean(bundleFormat.selectedOptions[0]&&!bundleFormat.selectedOptions[0].disabled);
+  bundleFormat.disabled=bundleBusy||!supported;
+  bundleDownload.disabled=bundleBusy||Boolean(singleDownloads)||reviewing||!confirm.checked||!supported;
+  if(!supported)
+   bundleStatus.textContent="Pilih slot yang semuanya mempunyai format RPH yang sama untuk digabungkan.";
+ }
+ async function combineWeeklyFiles(parts,format){
+  if(format==="pdf"){
+   const pdf=await window.PDFLib.PDFDocument.create();
+   for(const {blob} of parts){
+    const source=await window.PDFLib.PDFDocument.load(await blob.arrayBuffer());
+   if(!source.getPageCount())throw Error("Salah satu RPH PDF tidak mempunyai muka surat.");
+    for(const page of await pdf.copyPages(source,source.getPageIndices()))pdf.addPage(page);
+   }
+   return new Blob([await pdf.save()],{type:"application/pdf"});
+  }
+  const form=new FormData();
+  for(const {blob,receipt,name} of parts){
+   if(!receipt)throw Error("Pengesahan Word belum tersedia bagi salah satu slot.");
+   form.append("document",blob,name);
+   form.append("receipt",receipt);
+  }
+  const response=await fetch("/api/web/rph/timetable/word-bundle",{
+   method:"POST",body:form,credentials:"same-origin",cache:"no-store",redirect:"error"});
+  if(!response.ok){
+   const error=await response.json().catch(()=>({}));
+   throw Error(error.error||"Gabungan Word belum berjaya.");
+  }
+  const blob=await response.blob();
+  if(!blob.type.includes(WORD_MIME)||blob.size<1000)throw Error("Fail gabungan Word tidak sah.");
+  return blob;
+ }
+ async function downloadBundle(){
+  if(bundleDownload.disabled)return;
+  const format=bundleFormat.value;
+  let plans;
+  try{
+   if(format==="pdf"&&!window.PDFLib?.PDFDocument)throw Error("Gabungan PDF belum tersedia. Muat semula halaman.");
+   plans=bundleSlots.map(c=>rphFileRequest(c,format));
+  }catch(error){bundleStatus.textContent=error.message;return;}
+  bundleBusy=true;
+  updateBundle();
+  const lock=[dateInput,refresh,confirm,dayMode,weekMode,generateAll,manual,
+   ...choices.flatMap(c=>c.editor?[...c.editor.querySelectorAll("select,input,textarea")]:[])]
+   .filter(control=>control&&!control.disabled);
+  for(const control of lock)control.disabled=true;
+  let ready=plans.filter(plan=>bundleParts.has(plan.key)).length;
+  try{
+   if(format==="word"){
+    bundleStatus.textContent="Menyemak gabungan Word…";
+    const response=await fetch("/api/web/rph/timetable/word-bundle",{
+     credentials:"same-origin",cache:"no-store",redirect:"error"});
+    const data=await response.json().catch(()=>({}));
+    if(!response.ok||data.available!==true)throw Error(data.error||"Gabungan Word belum tersedia.");
+   }
+   const missing=plans.length-ready;
+   if(missing){
+    bundleStatus.textContent="Menyemak akses untuk "+missing+" slot…";
+    const account=await window.refreshSharedRphBalance();
+    if(!account)throw Error("Baki janaan belum dapat disemak. Cuba semula.");
+    if(account.rph_access_mode!=="paid"){
+     const balance=account.rph_trial_remaining;
+     if(!Number.isInteger(balance))throw Error("Baki janaan belum dapat disahkan.");
+     if(balance<missing)throw Error("Gabungan ini memerlukan "+missing+
+      " janaan. Baki semasa ialah "+balance+".");
+    }
+   }
+   const parts=[];
+   for(const plan of plans){
+    let part=bundleParts.get(plan.key);
+    if(!part){
+     bundleStatus.textContent="RPH siap "+ready+"/"+plans.length+" · Menyediakan "+plan.c.slot.class_name+"…";
+     try{part=await fetchRphPart(plan);}
+     catch(error){throw Error(plan.c.slot.class_name+" ("+plan.c.slot.subject+"): "+error.message);}
+     bundleParts.set(plan.key,part);
+     ready++;
+    }
+    parts.push(part);
+   }
+   bundleStatus.textContent="Menggabungkan "+ready+" RPH dalam satu fail…";
+   const blob=await combineWeeklyFiles(parts,format);
+   if(!confirm.checked||bundlePanel.hidden)return;
+   saveRphFile(blob,"CIKGULAJU_RPH_MINGGU_INI_"+loadedDate+(format==="pdf"?".pdf":".docx"));
+   bundleStatus.textContent=ready+" RPH disusun dalam satu fail "+(format==="pdf"?"PDF":"Word")+".";
+  }catch(error){
+   bundleStatus.textContent=error.message+
+    (ready?" "+ready+" RPH sudah disimpan dalam tab ini untuk percubaan semula.":"");
+  }finally{
+   bundleBusy=false;
+   for(const control of lock)control.disabled=false;
+   updateAll();
+   updateBundle();
+   void window.refreshSharedRphBalance?.();
+  }
  }
  async function generate(){
   if(generateAll.disabled)return;
@@ -812,6 +949,9 @@
   finally{
    if(epoch===batchEpoch){
     reviewing=false;
+    bundleSlots=weekly?selected:[];
+    if(bundleStatus)bundleStatus.textContent="";
+    updateBundle();
     allStatus.textContent="Semakan bahan selesai. Semua bahan dipaparkan di bawah mengikut kelas dan subjek.";
     updateAll();
     resultsHost.scrollIntoView({behavior:"smooth",block:"start"});
@@ -823,7 +963,7 @@
   updateAll();
  });
  function setWeekMode(next){
-  if(weekly===next)return;
+  if(weekly===next||bundleBusy)return;
   weekly=next;
   dayMode.setAttribute("aria-pressed",String(!weekly));
   weekMode.setAttribute("aria-pressed",String(weekly));
@@ -845,6 +985,8 @@
  }
  dayMode?.addEventListener("click",()=>setWeekMode(false));
  weekMode?.addEventListener("click",()=>setWeekMode(true));
+ bundleFormat?.addEventListener("change",()=>{bundleStatus.textContent="";updateBundle();});
+ bundleDownload?.addEventListener("click",()=>{void downloadBundle();});
  refresh.addEventListener("click",()=>{void load(dateInput.value);});
  dateInput.addEventListener("change",()=>{void load(dateInput.value);});
  generateAll.addEventListener("click",()=>{void generate();});
