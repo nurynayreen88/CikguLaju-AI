@@ -171,6 +171,7 @@ jobs:
           python -m unittest discover -s tests -p 'test_web_google_payments_staging.py' -v
           python -m unittest discover -s tests -p 'test_web_google_payment_store.py' -v
           python -m unittest discover -s tests -p 'test_web_google_staging_wsgi.py' -v
+          python -m unittest discover -s tests -p 'test_english_y5_release_preview.py' -v
 
   postgres-payment-integration:
     runs-on: ubuntu-latest
