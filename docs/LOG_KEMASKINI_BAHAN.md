@@ -184,3 +184,8 @@ Setiap sesi pembaikan baharu perlu merekodkan jenis bahan, rujukan PR, keputusan
 
 - **HOLD** dalam [PR #833](https://github.com/nurynayreen88/CikguLaju-AI/pull/833). Perincikan 12 RPH Unit 1 melalui padanan SOW, buku atau panduan puisi, WB dan bukti PBD bagi kedua-dua SP. Lesson 17–28 ialah sesi tunggal dalam RPT Oktober. [Padanan sumber](../audits/english_y5_october_integrated_source_review_20261116.md#semakan-17-november-bagi-lesson-1728).
 - CI menguji dokumen Word dan PDF A4 melalui PR. Kandungan CD1.13–CD1.18, baki semakan buku bagi 12 Lesson, kelulusan guru dan pengesahan muat turun Web serta Telegram produksi masih dalam semakan.
+
+## 17 November 2026 — RPH English Year 5, semakan 12 Lesson terakhir
+
+- **HOLD** dalam [PR #833](https://github.com/nurynayreen88/CikguLaju-AI/pull/833). Semak Lesson 33, 37–40, 43–46, 51, 69 dan 75. Kemas kini bukti PBD bagi kedua-dua SP serta rujukan sebenar bahan BPK yang digunakan. [Semakan sumber dan audio](../audits/english_y5_october_integrated_source_review_20261116.md#semakan-17-november-bagi-baki-12-lesson).
+- Padankan 11 sampel rakaman dengan buku atau skrip dan sahkan semua fail tersebut boleh dinyahkod hingga akhir. Kelulusan guru, padanan rakaman lain dan muat turun melalui akaun guru Web serta Telegram produksi kekal dalam semakan.
