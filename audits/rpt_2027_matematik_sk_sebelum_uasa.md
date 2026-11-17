@@ -1,6 +1,6 @@
 # Agihan Matematik SK Tahun 2–6 sebelum UASA
 
-Semakan pada 17 November 2026 meliputi 585 Lesson. Setiap tahun mempunyai 117 Lesson dengan urutan, kod SK dan kod SP yang sama dalam RPT Web, PDF Telegram v28 dan bank RPH v60. Agihan RPT produksi dan indeks RPH Pantas sepadan. Setiap tahun ada 15 Lesson selepas Minggu 39. Kesemua fasa RPH v60 berjumlah 60 minit bagi setiap Lesson. Sumber ialah [RPT Web dan indeks produksi](https://github.com/nurynayreen88/CikguLaju-AI/tree/57aa5be4c9c0cc8511a545ee88dfb4423df50cb9), [RPT Telegram v28](../rpt_2027/matematik) dan [bank RPH v60](../rph_standalone/matematik/README_v60_MAIN_SOURCE.md).
+Semakan pada 17 November 2026 meliputi 585 Lesson. Setiap tahun mempunyai 117 Lesson dengan urutan dan nombor asas kod SK dan SP yang sama dalam RPT Web, PDF Telegram v28 dan bank RPH v60. Agihan RPT produksi dan indeks RPH Pantas sepadan. Setiap tahun ada 15 Lesson selepas Minggu 39. Kesemua fasa RPH v60 berjumlah 60 minit bagi setiap Lesson. Sumber ialah [RPT Web dan indeks produksi](https://github.com/nurynayreen88/CikguLaju-AI/tree/57aa5be4c9c0cc8511a545ee88dfb4423df50cb9), [RPT Telegram v28](../rpt_2027/matematik) dan [bank RPH v60](../rph_standalone/matematik/README_v60_MAIN_SOURCE.md).
 
 ## Draf takwim 96 jam
 
@@ -27,6 +27,12 @@ Perbandingan awal dengan [Dokumen Penjajaran Matematik Tahap I Edisi 3, hlm. 19�
 | 3 | 004–005 | 1.4.1 dan 1.1.2, hlm. 40–42 | Padankan sebutan pola serta melengkapkan turutan dengan objektif masing-masing. Semak pertindihan dengan Lesson 010–011. |
 | 3 | 008–011 | 1.2.1, 1.3.1, 1.4.1 dan 1.4.2, hlm. 42 | Asingkan anggaran, pembundaran, sebutan pola dan melengkapkan pola. Sahkan skop sehingga enam nombor bagi tugasan pola. |
 | 3 | 012–013 | 2.1.1 untuk contoh tolak, hlm. 43 | Ambil kira turutan pengajaran operasi sebelum latihan situasi harian, atau sediakan tugasan nombor bulat yang sepadan untuk slot ini. |
+
+### RPH Unit 1 Tahun 2
+
+[Draf 14 RPH](../staging/matematik/tahun2/unit_01.json) meliputi lapan kod SP termasuk kedua-dua subbutir 1.1.1. Lesson 004 menyediakan perbandingan nilai dua nombor. Lesson 013 dan 014 menggunakan perbandingan nilai tempat dalam situasi harian supaya murid boleh menyelesaikannya sebelum operasi tolak diajar. Aktiviti Lesson 014 mengambil 30 minit, dengan 12 minit untuk empat respons individu dan satu alasan. Ketiga belas Lesson lain mengambil 60 minit, dengan tarikh A/B mengikut draf RPT. Setiap RPH menyediakan halaman rujukan [Buku Teks Matematik Tahun 2 Jilid 1, DBP 2017](https://fliphtml5.com/lwbmp/epdf) dan Dokumen Penjajaran Edisi 3.
+
+Kesemua 14 Word dan 14 PDF lulus semakan satu halaman A4, liputan kod, tempoh setiap fasa dan ruang kandungan. Eksport semula dengan `PYTHONPATH=. python staging/matematik/tahun2/eksport_unit_01.py --output /tmp/RPH_Matematik_Tahun_2_Unit_1`. Semakan guru masih diperlukan. Baki 209 slot 30 minit belum mempunyai RPH yang disesuaikan.
 
 ## Hasil ujian dan status
 
