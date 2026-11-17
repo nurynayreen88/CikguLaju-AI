@@ -56,10 +56,18 @@ Set kod asas SP dalam 117 rekod v60 sepadan dengan set penuh 85 kod dalam [DSKP 
 
 Semakan setempat mengesahkan 42 Word dan 42 PDF satu halaman A4, tarikh Kumpulan A/B dan tempoh fasa berjumlah 30 minit bagi setiap RPH. Jalankan `PYTHONPATH=. python staging/matematik/tahun4/eksport_slot_30.py --output /tmp/RPH_Matematik_Tahun_4_30_Minit`.
 
+### RPT dan RPH Tahun 4 lengkap untuk semakan guru
+
+RPT dan RPH Tahun 4 merangkumi 117 Lesson dalam lapan unit dengan 85 kod asas SP DSKP KSSR (Semakan 2017). Bagi [75 slot 60 minit](../staging/matematik/tahun4/slot_60_minit.tsv), gunakan aktiviti daripada bank RPH v60 dan tugasan PBD individu bersama kriteria yang sepadan. Halaman bercetak disemak mengikut Buku Teks Matematik SK Tahun 4, DBP 2019. Rujukan Lesson 011, 017, 019, 021 dan 023 dalam set 30 minit turut diperincikan. Lesson 023 kini meliputi penolakan dua nombor serta penolakan dua nombor daripada satu nombor.
+
+- 42 Lesson × 30 minit dan 75 Lesson × 60 minit memberi 96 jam sehingga M38. Semua 117 baris RPT sepadan dengan RPH pada tajuk, tarikh A/B, tempoh, SP, halaman buku dan evidens PBD. RPT PDF mengandungi 14 halaman dan 44 minggu.
+- Semua 117 Word dan 117 PDF individu muat satu halaman A4. Set Word dan PDF gabungan masing-masing mengandungi tepat 117 halaman.
+- Ulang eksport dengan `PYTHONPATH=. python -m staging.matematik.tahun4.eksport_tahun4 --output /tmp/Matematik_SK_Tahun_4`.
+
 ### Semakan awal kod Tahun 5 dan 6
 
 Kesemua 72 kod asas SP Tahun 5 dan 38 kod asas SP Tahun 6 antara bank v60 dan edisi DSKP masing-masing sepadan. Semakan ini meliputi 117 rekod setiap tahun dan mengesahkan kewujudan kod. Semakan skop aktiviti serta rujukan buku bagi setiap Lesson masih diperlukan. [DSKP Tahun 5, bahagian awal](https://anyflip.com/tggsl/bshm/basic/) dan [bahagian akhir](https://anyflip.com/tggsl/bshm/basic/51-84) · [DSKP Tahun 6, bahagian awal](https://anyflip.com/iqjtv/gpzb/basic/) dan [bahagian akhir](https://anyflip.com/iqjtv/gpzb/basic/51-82).
 
 ## Hasil ujian dan status
 
-Semakan setempat mengesahkan kesemua 585 Lesson dan 175 jumlah minit mingguan, serta 44 baris tarikh bagi setiap tahun dalam PDF 10 halaman. Jalankan `python staging/matematik/eksport_agihan.py --output /tmp/Agihan_Matematik_SK_2027.pdf` dengan ReportLab dan DejaVu Sans untuk mengulang eksport. Dua set lengkap Tahun 2 dan 3 serta set 30 minit Tahun 4 masih **HOLD semakan guru**. Penyelarasan RPT penuh Tahun 4 dengan RPH 60 minit masih terbuka. Tahun 5–6 memerlukan 84 RPH yang disesuaikan untuk slot 30 minit. Audit akademik Tahun 6 dalam [PR #460](https://github.com/nurynayreen88/CikguLaju-AI/pull/460) melibatkan sumber RPH native dan kekal sebagai semakan berasingan. Agihan ini belum diterbitkan di Web atau Telegram.
+Semakan setempat mengesahkan kesemua 585 Lesson dan 175 jumlah minit mingguan, serta 44 baris tarikh bagi setiap tahun dalam PDF 10 halaman. Jalankan `python staging/matematik/eksport_agihan.py --output /tmp/Agihan_Matematik_SK_2027.pdf` dengan ReportLab dan DejaVu Sans untuk mengulang eksport. Tiga set lengkap Tahun 2–4 masih **HOLD semakan guru**. Tahun 5–6 memerlukan 84 RPH yang disesuaikan untuk slot 30 minit. Audit akademik Tahun 6 dalam [PR #460](https://github.com/nurynayreen88/CikguLaju-AI/pull/460) melibatkan sumber RPH native dan kekal sebagai semakan berasingan. Agihan ini belum diterbitkan di Web atau Telegram.

@@ -1,4 +1,4 @@
-"""Render a full SK Mathematics RPT from verified yearly DPK lesson details."""
+"""Render a full SK Mathematics RPT from scheduled lesson details."""
 
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -21,7 +21,7 @@ INK = colors.HexColor('#153449')
 GRID = colors.HexColor('#D6E1E5')
 
 
-def export_table(output, year, details):
+def export_table(output, year, details, *, kssr_dskp=False):
     pdfmetrics.registerFont(TTFont(REGULAR, str(FONT_DIR / 'DejaVuSans.ttf')))
     pdfmetrics.registerFont(TTFont(BOLD, str(FONT_DIR / 'DejaVuSans-Bold.ttf')))
     body = ParagraphStyle('RPT body', fontName=REGULAR, fontSize=8.5, leading=12, textColor=INK)
@@ -49,7 +49,11 @@ def export_table(output, year, details):
             data.append([pair(label, bold), pair(week['catatan']), '', '', ''])
         for number, time in sessions:
             unit, unit_name, topic, sk, sp, dpk, volume, textbook, evidence = details[number]
-            reference = f'SK {sk}\nSP {sp}\nDPK hlm. {dpk} · BT Jilid {volume}, hlm. {textbook}'
+            if kssr_dskp:
+                books = f'Buku Teks hlm. {textbook}' if textbook else 'Rujukan halaman Buku Teks dalam semakan'
+            else:
+                books = f'DPK hlm. {dpk} · BT Jilid {volume}, hlm. {textbook}'
+            reference = f'SK {sk}\nSP {sp}\n{books}'
             data.append([
                 pair(label), pair(f'{number:03d}\n{time} min', bold),
                 pair(f'Unit {unit} {unit_name}\n{topic}'), pair(reference), pair(evidence),
@@ -80,9 +84,12 @@ def export_table(output, year, details):
     output.parent.mkdir(parents=True, exist_ok=True)
     pdf = SimpleDocTemplate(str(output), pagesize=landscape(A4), leftMargin=35, rightMargin=35,
                             topMargin=32, bottomMargin=42, title=f'RPT Matematik SK Tahun {year} 2027')
-    pdf.build([
+    curriculum = 'DSKP KSSR (Semakan 2017)' if kssr_dskp else 'Dokumen Penjajaran Edisi 3'
+    opening = [
         pair(f'RPT Matematik SK Tahun {year} 2027', title),
-        pair('117 Lesson · 96 jam · Draf semakan guru · Dokumen Penjajaran Edisi 3', summary),
+        pair(f'117 Lesson · 96 jam · Draf semakan guru · {curriculum}', summary),
         pair('Gunakan julat Kumpulan A atau B mengikut sekolah. PdP terakhir dijadualkan pada Minggu 38.', summary),
-        Spacer(1, 10), table,
-    ], onFirstPage=footer, onLaterPages=footer)
+    ]
+    if kssr_dskp:
+        opening.append(pair('42 sesi 30 minit dan 75 sesi 60 minit sepadan dengan set RPH.', summary))
+    pdf.build([*opening, Spacer(1, 10), table], onFirstPage=footer, onLaterPages=footer)
