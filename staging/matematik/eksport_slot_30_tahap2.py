@@ -85,8 +85,7 @@ def rpt_details(year, plans, sources):
     return details
 
 
-def export(year, output):
-    plans, schedule, sources = load(year)
+def export_plans(year, plans, schedule, sources, output):
     output.mkdir(parents=True, exist_ok=True)
     for plan in plans:
         week = schedule[plan.lesson]
@@ -118,6 +117,11 @@ def export(year, output):
         for extension, renderer in (('docx', _word), ('pdf', _pdf)):
             with (output / f'{stem}.{extension}').open('wb') as stream:
                 renderer(stream, heading, details, activities, reflection)
+
+
+def export(year, output):
+    plans, schedule, sources = load(year)
+    export_plans(year, plans, schedule, sources, output)
     export_table(
         output / f'CikguLaju_RPT_Matematik_SK_Tahun_{year}_2027_Semakan.pdf',
         year, rpt_details(year, plans, sources), kssr_dskp=True,
