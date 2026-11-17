@@ -151,7 +151,7 @@ class MobileRptDownloadTests(unittest.TestCase):
             subject_search.fill("melayu")
             self.assertEqual(subject_options.all_text_contents(),["Bahasa Melayu (SJK)"])
             subject_search.fill("tiada padanan")
-            self.assertTrue(page.get_by_text("Tiada subjek sepadan.").is_visible())
+            self.assertTrue(page.locator("#view-rpt").get_by_text("Tiada subjek sepadan.").is_visible())
             subject_search.fill("cInA")
             subject_search.press("ArrowDown")
             subject_search.press("Enter")

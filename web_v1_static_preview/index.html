@@ -2133,9 +2133,9 @@ function initSearchableSelect(control,searchPlaceholder,optionLabel=row=>row.lab
   };
 }
 
+const rptCurriculum=document.getElementById("rpt-curriculum");
 const rphSubjectPicker=initSearchableSelect(subject,"Taip untuk cari subjek");
 document.getElementById("rph-subject-search").hidden=true;
-const rptCurriculum=document.getElementById("rpt-curriculum");
 const rptYear=document.getElementById("rpt-year");
 const rptSubject=document.getElementById("rpt-subject");
 const rptSubjectPicker=initSearchableSelect(rptSubject,"Taip untuk cari subjek",row=>row.option.text);
