@@ -171,6 +171,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  await listeners["year.change"]();
  assert.deepEqual(subject.options.map(x=>x.value),["","SCIENCE_DLP","MATH_DLP"]);
  for(const [subjectCode,groups] of Object.entries(dlpReviewData)){
+  let lessonNumber=0;
   subject.value=subjectCode;
   await listeners["subject.change"]();
   assert.equal(panel.hidden,true);
@@ -181,25 +182,23 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
    assert.equal(panel.hidden,true);
    assert.equal(lesson.options.length,group.lessons.length+1);
    for(const item of group.lessons){
-    const hasRpt = subjectCode==="SCIENCE_DLP";
-    const label = hasRpt ? "Lesson "+String(item.number).padStart(2,"0")+" — "+item.title : item.title;
+    assert.equal(item.number,++lessonNumber);
+    const label = "Lesson "+String(lessonNumber).padStart(2,"0")+" — "+item.title;
     assert.equal(lesson.options.find(option=>option.value===item.id).label,label);
     lesson.value=item.id;
     listeners["lesson.change"]();
     assert.equal(heading.textContent,label);
     assert.equal(panel.hidden,false);
-    const standardsIndex = hasRpt ? 1 : 0;
-    if(hasRpt){
-     assert.ok(Number.isInteger(item.number));
-     assert.ok([30,60].includes(item.minutes));
-     assert.equal(item.phases.reduce((minutes,[phase])=>minutes+Number(phase.split(" ").at(-2)),0),item.minutes);
-     assert.ok(content.children[0].children.some(node=>node.textContent===item.minutes+" min"));
-    }
-    assert.equal(content.children.length,17+standardsIndex);
-    assert.ok(content.children[standardsIndex].children.some(node=>node.textContent===item.standards));
-    assert.ok(content.children[standardsIndex+1].children.some(node=>node.textContent===item.references));
+    const allowedMinutes=subjectCode==="MATH_DLP"?[60]:[30,60];
+    assert.ok(allowedMinutes.includes(item.minutes));
+    assert.equal(item.phases.reduce((minutes,[phase])=>minutes+Number(phase.split(" ").at(-2)),0),item.minutes);
+    assert.ok(content.children[0].children.some(node=>node.textContent===item.minutes+" min"));
+    assert.equal(content.children.length,18);
+    assert.ok(content.children[1].children.some(node=>node.textContent===item.standards));
+    assert.ok(content.children[2].children.some(node=>node.textContent===item.references));
    }
   }
+  assert.equal(lessonNumber,subjectCode==="MATH_DLP"?78:63);
  }
  for(const n of ["1","3","4","5","6"]){
   year.value=n;
