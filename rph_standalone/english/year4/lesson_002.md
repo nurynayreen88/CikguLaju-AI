@@ -14,8 +14,8 @@
 **Pupils:** Match each displayed country flag to its name and follow the teacher's spoken instructions.
 
 ## Activity 1 (15 minutes)
-**Teacher:** Follow Teacher's Book p.18 Activity 3 with CD1 Track 4; pupils listen to the country dialogue, practise asking where someone is from and give appropriate spoken responses.
-**Pupils:** Listen to CD1 Track 4, point to the correct picture and practise 'Where are you from?' / 'I'm from ...' in pairs.
+**Teacher:** Play the memory-game model on CD1 Track 4 (Student's Book p.5 Activity 3). Demonstrate how to describe a person using their country and ask a partner to identify the person.
+**Pupils:** Repeat the recorded exchange, then take turns describing one person and guessing who their partner has described.
 
 ## Activity 2 (20 minutes)
 **Teacher:** Set a strict short drawing time; pupils select a country flag and practise Activity 2 in pairs using introductions and descriptions. Keep flags for later lessons.
@@ -41,8 +41,8 @@ Provide visual cues, demonstration and paired rehearsal for pupils needing suppo
 - **Verification:** SOW lesson sequence and cited book/audio references checked. Exact textbook activities and audio content have not all been independently verified; Word/PDF output not tested. **CONTENT DRAFT COMPLETE; RELEASE QA PENDING.**
 
 ## Direct textbook verification (30 October 2026)
-**Direct Teacher's Book p.18 check:** Activity 3 uses **CD1 Track 4** for the country dialogue, in addition to **CD1 Track 3** for the optional song recap. Activity 3 includes an exchange introducing oneself and asking where another person is from. Activity 2 is the speaking flag dialogue on the same page. Teacher's Book PDF page 4 shows printed page 18. Lesson materials and playback updated.
-**Remaining:** Confirm corresponding Student's Book page, audio sound content and export formatting before READY.
+**Direct Teacher's Book p.18 check:** Activity 3 uses **CD1 Track 4** for the country dialogue, in addition to **CD1 Track 3** for the optional song recap. Activity 3 models how to describe a person by their country and guess who it is. The flag role-play in Activity 2 gives pupils practice introducing themselves. Teacher's Book PDF page 4 shows printed page 18. Lesson materials and playback updated.
+**Follow-up (17 November 2026):** Class CD1 Track 4 matches the memory-game exchange in Student’s Book p.5 Activity 3. Delivery through a production teacher account remains to be checked.
 
 ## Batch audio-file QA
 - **CD1 Track 4:** [04 Track 4.mp3](https://drive.google.com/file/d/1s82R_1vLLNvadMBwuqieGbIz0uwlo_O4/view); FFprobe decoded MP3 header and measured duration **10.303 seconds**. This does **not** verify spoken/sung content.
@@ -52,6 +52,6 @@ Provide visual cues, demonstration and paired rehearsal for pupils needing suppo
 ## Verified source audio links
 - CD1 Track 3: https://drive.google.com/file/d/1Y1dlDrMq6ufg-t5pcH_6HY3ZeMtIBLKG/view
 - CD1 Track 4: https://drive.google.com/file/d/1s82R_1vLLNvadMBwuqieGbIz0uwlo_O4/view
-Audio file presence checked; listening-content verification pending.
+The Activity 3 exchange and the closure song were matched to the original recordings on 17 November 2026.
 
 **QA status:** READY — provisional, pending teacher's final review. Existing source/audio and Word/PDF verification notes below remain applicable.

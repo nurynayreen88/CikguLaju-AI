@@ -30,3 +30,23 @@ SOW m/s 66 mencetak CD2 Track 29. Teacher’s Book m/s 39 menetapkan CD1 Track 2
 ## Penghantaran
 
 API Web, pemilih bahan Telegram dan panggilan terus Telegram merujuk padanan yang sama bagi Lesson yang disemak. Panggilan terus bagi bahan lain terus melalui penghantar asal. Fail yang gagal semakan SHA-256 ditolak. Ujian penghantaran menggunakan akaun guru di produksi masih terbuka.
+
+## Padanan daripada pemetaan Telegram terdahulu
+
+Pemeriksaan kedua meliputi 13 Lesson. Sebanyak 20 MP3 asal lulus nyahkod penuh dan mempunyai cap jari SHA-256. Kandungan dipadankan dengan aktiviti atau kosa kata dalam Teacher’s Book dan fail asal disenaraikan dalam pemetaan runtime.
+
+| Lesson | Halaman TB bercetak | Rakaman dan petunjuk kandungan |
+| --- | --- | --- |
+| 001 | 18 | CD1 Track 2 menyebut nama negara sebelum lagu pada Track 3. |
+| 002 | 18 | CD1 Track 4 menunjukkan permainan meneka orang berdasarkan negara asal. Track 3 ialah lagu penutup. RPH menerangkan permainan kenal pasti orang untuk Aktiviti 3. |
+| 038 | 51 | CD1 Track 40 menyoal peristiwa sebelum majlis hari lahir John. Track 41 menyediakan model soal jawab tentang peristiwa dalam cerita. |
+| 065 | 78 | CD1 Track 70 memperkenalkan kosa kata makanan. Track 71 ialah lagu tentang senarai bahan yang perlu dibeli di pasar. |
+| 066 | 79 | CD1 Track 72 menunjukkan soal jawab tentang bahan untuk membuat telur dadar. |
+| 068 | 81 | CD1 Track 75 meminta murid mengenal pasti barang yang hendak dibeli. Track 76 memberi contoh perbualan untuk menulis senarai barangan berkelah. |
+| 070 | 82–83 | CD1 Track 77 memperkenalkan ungkapan sukatan makanan dan minuman. Track 79 ialah soal selidik tabiat makanan dan minuman. |
+| 076 | 84 | CD1 Track 81 menyebut nama peralatan makan. |
+| 081 | 92 | CD2 Track 2 memperkenalkan kosa kata keselamatan jalan raya. Track 3 ialah lagu *Street Safety* bagi Student’s Book p.59 Aktiviti 1. SOW mencetak Track 4 untuk aktiviti itu. Track 4 merakam satu contoh arahan keselamatan untuk aktiviti lukis dan sebut. RPH dan penghantaran menggunakan lagu Track 3. |
+| 105 | 113 | CD2 Track 29 ialah contoh perbualan tentang gambar dan kata ganti tak tentu untuk Aktiviti 4. |
+| 145 | 152 | CD2 Track 68 memperkenalkan kosa kata masalah kesihatan. |
+| 147 | 155 | CD2 Track 72 ialah cerita Anna di hospital selepas kakinya patah. |
+| 152 | 156 | CD2 Track 75 memperkenalkan kosa kata bahaya di rumah. Track 76 ialah bacaan dan panduan keselamatan di rumah. |

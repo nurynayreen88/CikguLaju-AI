@@ -243,9 +243,13 @@ class EnglishSourceParityTests(unittest.TestCase):
         from web.english_y4_wrong_book_audio_hold_20261105 import HOLD_LESSONS
 
         self.assertLessEqual(HOLD_LESSONS, LESSON_TRACKS.keys())
+        self.assertEqual(LESSON_TRACKS[2], ("CD1 Track 4", "CD1 Track 3"))
         self.assertEqual(LESSON_TRACKS[29], ("CD3 Track 35", "CD3 Track 36"))
+        self.assertNotIn(30, LESSON_TRACKS)
+        self.assertEqual(LESSON_TRACKS[81], ("CD2 Track 2", "CD2 Track 3"))
         self.assertEqual(LESSON_TRACKS[103], ("CD2 Track 26",))
         self.assertEqual(LESSON_TRACKS[104], ("CD2 Track 27", "CD2 Track 28"))
+        self.assertEqual(LESSON_TRACKS[105], ("CD2 Track 29",))
         for lesson, tracks in LESSON_TRACKS.items():
             with self.subTest(lesson=lesson):
                 rows = _audio_rows(self.runtime, 4, lesson)
