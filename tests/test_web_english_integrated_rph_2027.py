@@ -79,3 +79,47 @@ class IntegratedWebTests(TestCase):
             response = client.get(url)
             self.assertEqual(response.headers["X-RPT-Personalization-Allowed"], "0")
             response.close()
+
+
+    @patch("web.native_telegram_integrated_english_client.integrated_enabled", return_value=True)
+    @patch("web.unified_rph_web._account", return_value=({"telegram_user_id": 123}, None))
+    def test_both_aliases_list_and_download_the_same_pair_materials(self, *_):
+        app = Flask(__name__)
+        app.register_blueprint(create_blueprint())
+        client = app.test_client()
+        rows = {row["lesson"]: row for row in source_records(3, "ENGLISH")}
+        bridge = "web.native_telegram_extra_materials_20261106."
+        original = b"ID3" + b"x" * 1000
+        listing = {"source": "telegram-english-paired-materials-2027", "year": 3,
+                   "lessons": [13, 14], "items": [
+                       {"id": "student-book", "title": "Student’s Book • Lesson 013 + 014"},
+                       {"id": "audio-1", "title": "Audio • Lesson 014"}]}
+        with patch(bridge + "_json", return_value=listing) as source, patch(
+            bridge + "_get", return_value=original,
+        ) as fetch:
+            for lesson in (13, 14):
+                args = {"year": 3, "subject": "ENGLISH", "unit": rows[lesson]["unit"],
+                        "lesson": rows[lesson]["token"], "paired": 1}
+                response = client.get("/api/web/rph/extra-materials", query_string=args)
+                assert response.status_code == 200
+                assert response.json["lessons"] == [13, 14]
+                assert [item["type"] for item in response.json["items"]] == ["textbook", "audio"]
+                source.assert_called_with("/internal/rph/v1/english-paired-materials",
+                                          {"year": 3, "lesson": 13, "partner": 14})
+                audio = client.get(response.json["items"][1]["url"])
+                assert audio.status_code == 200
+                assert audio.data == original
+                assert "L013-014_audio-1.mp3" in audio.headers["Content-Disposition"]
+                fetch.assert_called_with("/internal/rph/v1/english-paired-materials/audio-1",
+                                         {"year": 3, "lesson": 13, "partner": 14},
+                                         accept="audio/mpeg", limit=12 * 1024 * 1024)
+            with patch(bridge + "_json", return_value={**listing, "lessons": [12, 13]}):
+                assert client.get("/api/web/rph/extra-materials", query_string=args).status_code == 503
+            assert client.get("/api/web/rph/english-paired-material/audio-9", query_string=args).status_code == 404
+            with (patch(bridge + "_json", return_value=None),
+                  patch(bridge + "english_workbook_metadata", return_value="Activity Book • Lesson 014"),
+                  patch(bridge + "english_student_book_metadata", return_value=None),
+                  patch(bridge + "english_audio_tracks", return_value=[])):
+                fallback = client.get("/api/web/rph/extra-materials", query_string=args)
+                assert "Lesson 014" in fallback.json["pair_note"]
+                assert fallback.json["items"][0]["url"].startswith("/api/web/rph/english-workbook?")

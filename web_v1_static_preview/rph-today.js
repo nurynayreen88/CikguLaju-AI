@@ -594,6 +594,7 @@
  function readyMaterialLink(item,subject){
   if(!item||!TYPES.has(item.type)||typeof item.title!=="string"||
      typeof item.url!=="string"||!item.title.trim())return false;
+  if(subject==="ENGLISH"&&/^\/api\/web\/rph\/english-paired-material\/(?:student-book|workbook|audio-[1-8])\?/.test(item.url))return true;
   if(item.type==="workbook")return item.url.startsWith("/api/web/rph/english-workbook?");
   if(item.type==="textbook")return item.url.startsWith("/api/web/rph/english-student-book?")||
     (subject==="SCIENCE"&&item.url.startsWith("/api/web/rph/science-textbook?"));
@@ -610,15 +611,17 @@
   }
   c.result.hidden=false;c.resultList.replaceChildren();
   c.downloadStatus.textContent="Menyemak bahan yang tersedia…";
-  let found=0, errors=[];
+  let found=0, errors=[], paired=false;
   try{
    const availability=await fetch("/api/web/rph/availability?"+qs,{
     credentials:"same-origin",cache:"no-store",redirect:"error"
    });
    const data=await availability.json().catch(()=>({}));
    if(epoch!==batchEpoch||key!==selectedKey(c))return;
+   paired=data.code==="TELEGRAM_ENGLISH_INTEGRATED_UNAVAILABLE";
    if(availability.ok&&data.available===true&&data.generator==="telegram-native"){
     const pair=Array.isArray(data.lessons)?data.lessons.map(n=>String(n).padStart(3,"0")).join(" + "):"";
+    paired=Boolean(pair);
     const pbd=actionRow("Pentaksiran Bilik Darjah","Rekod PBD");
     pbd.button.addEventListener("click",()=>window.cikgulajuPbdFromRph?.({
       className:c.slot.class_name,date:loadedDate,subject:c.slot.subject,
@@ -642,12 +645,14 @@
       c.slot.subject_code==="MUZIK"||(c.slot.subject_code==="SCIENCE"&&[1,2,3,5,6].includes(c.slot.year))){
    try{
     const params=new URLSearchParams({year:args.year,subject:args.subject,unit:args.unit,lesson:args.lesson});
+    if(paired)params.set("paired","1");
     const response=await fetch("/api/web/rph/extra-materials?"+params,{
       credentials:"same-origin",cache:"no-store",redirect:"error"
     });
     const data=await response.json().catch(()=>({}));
     if(epoch!==batchEpoch||key!==selectedKey(c))return;
     if(response.ok&&Array.isArray(data.items)&&data.items.length<=30){
+     if(typeof data.pair_note==="string")errors.push(data.pair_note);
      for(const item of data.items){
       if(c.slot.subject_code==="SCIENCE"&&item?.action==="local-pdf"){
        const copy=window.cikgulajuPdpPdfCopy?.(item,c.downloadStatus);

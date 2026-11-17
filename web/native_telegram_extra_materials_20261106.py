@@ -18,6 +18,49 @@ WORKBOOK_SOURCE = "telegram-verified-english-workbook-v1"
 DRIVE_VIEW = re.compile(r"^https://drive\.google\.com/file/d/[A-Za-z0-9_-]{10,100}/view\?usp=drivesdk$")
 MUSIC_UNIT = re.compile(r"^(?:u(?:0[1-9]|[1-9][0-9])|x[a-f0-9]{12})$")
 MAX_PDF = 8 * 1024 * 1024
+PAIRED_SOURCE = "telegram-english-paired-materials-2027"
+PAIRED_ASSET = re.compile(r"(?:student-book|workbook|audio-[1-8])")
+PAIRED_PATH = "/internal/rph/v1/english-paired-materials"
+
+
+def english_paired_materials(year, pair):
+    data = _json(PAIRED_PATH, {"year": year, "lesson": pair[0], "partner": pair[1]})
+    if data is None:
+        return None
+    if (data.get("source") != PAIRED_SOURCE
+            or data.get("year") != year or data.get("lessons") != list(pair)):
+        raise NativeRPHUnavailable("Paired material identity mismatch")
+    items = data.get("items")
+    if not isinstance(items, list) or len(items) > 10:
+        raise NativeRPHUnavailable("Invalid paired material inventory")
+    ids = set()
+    for item in items:
+        if (not isinstance(item, dict) or set(item) != {"id", "title"}
+                or not isinstance(item["id"], str) or not PAIRED_ASSET.fullmatch(item["id"])
+                or item["id"] in ids or not isinstance(item["title"], str)
+                or not 1 <= len(item["title"]) <= 260):
+            raise NativeRPHUnavailable("Invalid paired material item")
+        ids.add(item["id"])
+    return items
+
+
+def english_paired_download(year, pair, asset):
+    if not PAIRED_ASSET.fullmatch(asset):
+        raise ValueError("Invalid paired material")
+    if asset in {"student-book", "workbook"}:
+        extension, mime, limit, prefix = "pdf", "application/pdf", 32 * 1024 * 1024, b"%PDF-"
+    elif year == 2:
+        extension, mime, limit, prefix = "wma", "audio/x-ms-wma", MAX_AUDIO, WMA_HEADER
+    else:
+        extension, mime, limit, prefix = "mp3", "audio/mpeg", MAX_AUDIO, b"ID3"
+    data = _get(f"{PAIRED_PATH}/{asset}", {"year": year, "lesson": pair[0], "partner": pair[1]},
+                accept=mime, limit=limit)
+    if data is None:
+        return None
+    mp3_frame = extension == "mp3" and len(data) >= 2 and data[0] == 0xff and data[1] & 0xe0 == 0xe0
+    if len(data) < 450 or not (data.startswith(prefix) or mp3_frame):
+        raise NativeRPHUnavailable("Invalid paired material content")
+    return data, mime, extension
 
 
 def _get(path, args, *, accept="application/json", limit=130000, opener=None):
