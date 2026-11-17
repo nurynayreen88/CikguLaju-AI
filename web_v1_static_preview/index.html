@@ -665,7 +665,11 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 
 <section id="view-today" class="app-view" aria-labelledby="view-today-heading" hidden>
   <h2 id="view-today-heading" tabindex="-1">RPH Hari Ini</h2>
-  <p>Semak cadangan minggu daripada RPT, kemudian pilih Lesson/PdP mengikut kemajuan kelas. Tekan <strong>Jana Bahan Semua Lesson</strong> untuk melihat bahan di bawah. Selepas mengajar, tekan <strong>Selesai PdP</strong> pada slot berkenaan.</p>
+  <div class="daily-rph-toolbar" aria-label="Paparan jadual RPH">
+    <button type="button" id="rph-day-mode" aria-pressed="true">RPH Hari Ini</button>
+    <button type="button" id="rph-week-mode" class="secondary" aria-pressed="false">RPH Minggu Ini</button>
+  </div>
+  <p id="today-instructions">Semak cadangan minggu daripada RPT, kemudian pilih Lesson/PdP mengikut kemajuan kelas. Selepas mengajar, tekan <strong>Selesai PdP</strong> pada slot berkenaan.</p>
   <div class="daily-rph-toolbar">
     <div><label for="today-date">Tarikh PdP</label><input id="today-date" type="date" aria-label="Tarikh RPH Hari Ini"></div>
     <button type="button" id="today-refresh">Muat Semula Jadual</button>
@@ -674,10 +678,10 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <p id="today-status" class="notice" role="status" aria-live="polite">Menyemak jadual waktu…</p>
   <label id="today-confirm-wrap" class="daily-rph-confirm" hidden>
     <input type="checkbox" id="today-confirm-school-day">
-    Saya sahkan tarikh ini hari PdP sebenar (bukan cuti sekolah atau cuti umum).
+    <span id="today-confirm-label">Saya sahkan tarikh ini hari PdP sebenar.</span>
   </label>
   <div id="today-list" class="daily-rph-list" aria-label="Senarai waktu mengajar hari ini"></div>
-  <div class="daily-rph-batch"><button type="button" id="today-generate-all" disabled>Jana Bahan Semua Lesson</button><span class="notice">Pilih Lesson/PdP untuk semua kelas terlebih dahulu.</span></div>
+  <div class="daily-rph-batch"><button type="button" id="today-generate-all" disabled>Jana Bahan Semua Lesson</button><span id="today-generate-hint" class="notice">Pilih Lesson/PdP untuk semua kelas terlebih dahulu.</span></div>
   <p id="today-generate-status" class="notice" role="status" aria-live="polite"></p>
   <section id="today-results" class="daily-rph-output" aria-labelledby="today-results-heading" hidden>
     <h3 id="today-results-heading">Bahan RPH Hari Ini</h3>
@@ -2358,7 +2362,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
-<script src="/assets/rph-today.js?v=english-book-views-20261117"></script>
+<script src="/assets/rph-today.js?v=rph-minggu-ini-20261117"></script>
 <script src="/assets/teacher-profile.js?v=profile-search-select-20261116"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>

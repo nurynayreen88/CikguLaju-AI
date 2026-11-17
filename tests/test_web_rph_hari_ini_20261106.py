@@ -8,7 +8,8 @@ from unittest.mock import patch
 
 from flask import Flask, jsonify
 from web.rph_hari_ini_web import (
-    bp, class_year, day_payload, subject_identity, weekly_catalog, weekly_rpt_suggestion,
+    assign_week_suggestions, bp, class_year, day_payload, subject_identity, week_payload,
+    weekly_catalog, weekly_rpt_suggestion,
 )
 
 from web.rph_today_progress import attach_progress, lesson_signer, read_progress_summary
@@ -47,6 +48,54 @@ class DailyTimetablePureTests(TestCase):
         self.assertIsNone(class_year("Bestari 4"))
         self.assertIsNone(class_year("Tingkatan 4"))
         self.assertIsNone(class_year("10 Bestari"))
+
+    def test_week_expands_profile_and_skips_calendar_closures(self):
+        rows = [{"day": day, "start": "08:00", "end": "09:00",
+                 "class_name": "2 Amanah", "subject": "English"}
+                for day in ("Ahad", "Isnin", "Selasa", "Rabu", "Khamis", "Jumaat", "Sabtu")]
+        schedule = {"entries": rows + [dict(rows[1], subject="Rehat")]}
+        snapshot = deepcopy(schedule)
+        target = date(2027, 2, 9)
+        group_a = week_payload({"state_name": "Kedah"}, schedule, target, today=target)
+        group_b = week_payload({"state_name": "W.P. Kuala Lumpur"}, schedule, target, today=target)
+        self.assertEqual((group_a["group"], group_a["start"], group_a["end"], group_a["count"]),
+                         ("A", "2027-02-07", "2027-02-13", 0))
+        self.assertEqual((group_b["group"], group_b["start"], group_b["end"], group_b["count"]),
+                         ("B", "2027-02-08", "2027-02-14", 0))
+        target = date(2026, 11, 17)
+        current = week_payload({"state_name": "Pahang"}, schedule, target, today=target)
+        self.assertEqual((current["start"], current["end"], current["count"]),
+                         ("2026-11-16", "2026-11-22", 5))
+        self.assertEqual(current["days"][0]["entries"][0]["class_name"], "2 Amanah")
+        self.assertIsNone(current["days"][0]["entries"][0]["rpt_suggestion"])
+        self.assertEqual(snapshot, schedule)
+
+    def test_week_assigns_english_pairs_in_slot_order_for_each_class(self):
+        rows = [{"day": day, "start": "08:00", "end": "09:00",
+                 "class_name": name, "subject": "English"}
+                for name in ("2 Amanah", "2 Bestari") for day in ("Isnin", "Rabu", "Jumaat")]
+        target = date(2027, 1, 4)
+        with patch("web.native_telegram_integrated_english_client.integrated_enabled", return_value=True):
+            days = week_payload({"state_name": "Pahang"}, {"entries": rows}, target, today=target)["days"]
+        for day in days:
+            attach_progress(day, [])
+        assign_week_suggestions(days)
+        self.assertEqual([[s["suggested_session"] for s in d["entries"]] for d in days if d["entries"]],
+                         [[[1], [1]], [[2, 3], [2, 3]], [[4], [4]]])
+
+    def test_week_leaves_mismatched_progress_or_duration_for_teacher_selection(self):
+        rows = [{"day": day, "start": "08:00", "end": "09:00",
+                 "class_name": name, "subject": "English"}
+                for name in ("2 Amanah", "2 Bestari") for day in ("Isnin", "Rabu", "Jumaat")]
+        rows[-1]["end"] = "08:30"
+        target = date(2027, 1, 11)
+        with patch("web.native_telegram_integrated_english_client.integrated_enabled", return_value=True):
+            days = week_payload({"state_name": "Pahang"}, {"entries": rows}, target, today=target)["days"]
+        for day in days:
+            attach_progress(day, [{"class_key": "2 amanah", "subject_code": "ENGLISH", "component": "",
+                                   "pdp_date": "2027-01-08", "start_time": "08:00", "sequence_no": 2}])
+        assign_week_suggestions(days)
+        self.assertFalse(any(slot.get("suggested_session") for d in days for slot in d["entries"]))
 
     def test_sorted_today_and_correct_timezone_independent_day(self):
         data=deepcopy(EXAMPLE)
@@ -264,6 +313,30 @@ class DailyTimetableRouteTests(TestCase):
                     self.assertEqual(self.client.get("/api/web/rph/hari-ini",
                                                       query_string=qs).status_code,400)
 
+    def test_week_route_uses_the_authenticated_timetable_once(self):
+        path = "/api/web/rph/minggu-ini"
+        with self.app.app_context():
+            unauthenticated = (jsonify({"error": "login"}), 401)
+        with patch("web.rph_hari_ini_web._auth", return_value=(None, None, unauthenticated)):
+            self.assertEqual(self.client.get(path).status_code, 401)
+        with ExitStack() as stack:
+            mocks = {name: stack.enter_context(patch("web.rph_hari_ini_web." + name, return_value=value))
+                     for name, value in {"_auth": (self.conf, 123, None), "get_schedule": EXAMPLE,
+                                         "get_profile": {"state_name": "Selangor"}, "read_progress": [],
+                                         "malaysia_today": date(2026, 11, 6)}.items()}
+            self.assertEqual(self.client.get(path + "?uid=456").status_code, 400)
+            self.assertEqual(self.client.get(path + "?date=2026-11-06&date=2026-11-07").status_code, 400)
+            response = self.client.get(path)
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.headers["Cache-Control"], "no-store, private")
+        self.assertEqual(response.json["count"], 4)
+        self.assertEqual(response.json["date"], "2026-11-06")
+        self.assertEqual(response.json["start"], "2026-11-02")
+        for name in ("get_profile", "get_schedule"):
+            mocks[name].assert_called_once_with(self.conf["supabase_url"], self.conf["supabase_key"], 123)
+        self.assertEqual({call.args[2] for call in mocks["read_progress"].call_args_list},
+                         {"2026-11-05", "2026-11-06"})
+
     def test_completion_requires_owned_slot_current_date_and_signed_source_choice(self):
         signed = lesson_signer(self.conf).dumps([123, 3, "ENGLISH", "", 11])
         foreign = lesson_signer(self.conf).dumps([456, 3, "ENGLISH", "", 11])
@@ -413,7 +486,7 @@ class DailyTimetableRouteTests(TestCase):
         self.assertIn('selectable.some(c=>c.busy||!c.controls.lesson.value)',daily)
         self.assertIn('generateAll.disabled=loading||reviewing||!confirm.checked',daily)
         self.assertIn('generateAll.addEventListener("click",()=>{void generate();})',daily)
-        self.assertIn('const selected=choices.filter(c=>c.slot.can_prepare)',daily)
+        self.assertIn('choices.filter(c=>c.slot.can_prepare&&(!weekly||c.controls.lesson.value))',daily)
         self.assertIn('await inspectOne(c,epoch)',daily)
         self.assertIn('const queue=selected.slice()',daily)
         self.assertIn('Math.min(3,queue.length)',daily)
@@ -445,7 +518,7 @@ class DailyTimetableRouteTests(TestCase):
         self.assertNotIn('list.append(c.result)',daily)
         self.assertIn('resultsHost.hidden=false',daily)
         self.assertIn('resultsHost.scrollIntoView(',daily)
-        self.assertIn('const selected=choices.filter(c=>c.slot.can_prepare)',daily)
+        self.assertIn('choices.filter(c=>c.slot.can_prepare&&(!weekly||c.controls.lesson.value))',daily)
         self.assertIn('const queue=selected.slice()',daily)
         # The same per-slot Download actions and source/quota path remain.
         self.assertIn('row.button.addEventListener("click",()=>{void downloadRph(',daily)

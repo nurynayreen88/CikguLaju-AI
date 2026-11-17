@@ -4,6 +4,7 @@ The schedule comes only from authenticated teacher_profiles.class_profiles.
 Weekly suggestions come from the published Web RPT. Teachers still select
 the exact Lesson/PdP in the existing native RPH flow.
 """
+from concurrent.futures import ThreadPoolExecutor
 from datetime import date, datetime, timedelta
 from functools import lru_cache
 import json
@@ -63,6 +64,22 @@ SUBJECTS = {
 }
 NON_TEACHING = frozenset(("rehat", "perhimpunan", "perhimpunan rasmi",
                           "kokurikulum", "masa rehat"))
+# KPM academic calendars, appendices A–C.
+# https://www.moe.gov.my/kalendar-akademik-semasa
+TERM_BREAKS = {
+    (2026, "A"): (("01-01", "01-10"), ("03-20", "03-28"), ("05-22", "06-06"),
+                  ("08-28", "09-05"), ("12-04", "12-31")),
+    (2026, "B"): (("01-01", "01-11"), ("03-21", "03-29"), ("05-23", "06-07"),
+                  ("08-29", "09-06"), ("12-05", "12-31")),
+    (2027, "A"): (("01-01", "01-03"), ("03-05", "03-13"), ("05-21", "06-05"),
+                  ("08-27", "09-04"), ("12-03", "12-31")),
+    (2027, "B"): (("01-01", "01-03"), ("03-06", "03-14"), ("05-22", "06-06"),
+                  ("08-28", "09-05"), ("12-04", "12-31")),
+}
+FESTIVAL_CLOSURES_2026 = {
+    "A": frozenset(("02-15", "02-16", "02-17", "02-18", "02-19", "03-19", "11-08", "11-09")),
+    "B": frozenset(("02-16", "02-17", "02-18", "02-19", "02-20", "03-19", "03-20", "11-09")),
+}
 
 
 def subject_identity(value):
@@ -231,6 +248,99 @@ def day_payload(profile, schedule, target, *, today=None):
     }
 
 
+def week_closure(state, group, target):
+    if not state:
+        return ""
+    if target.weekday() in ((4, 5) if group == "A" else (5, 6)):
+        return "Hujung minggu"
+    day = target.strftime("%m-%d")
+    if any(first <= day <= last for first, last in TERM_BREAKS.get((target.year, group), ())):
+        return "Cuti persekolahan KPM"
+    if target.year == 2027 and not is_school_day(state, target):
+        return "Cuti dalam takwim"
+    if target.year == 2026 and (
+        day in FESTIVAL_CLOSURES_2026[group]
+        or (group == "B" and state != "Sarawak" and day == "11-10")
+    ):
+        return "Cuti perayaan KPM"
+    return ""
+
+
+def week_payload(profile, schedule, target, *, today):
+    """Read the repeating timetable once and expand it in school-week order."""
+    if not isinstance(profile, dict) or not isinstance(schedule, dict):
+        raise ProfileValidation("Maklumat jadual tidak sah")
+    if not isinstance(target, date) or abs((target - today).days) > 400:
+        raise ProfileValidation("Tarikh mesti dalam lingkungan 400 hari")
+    state = normalize_state(profile.get("state_name"))
+    group = "A" if state in FRI_SAT else "B" if state else None
+    offset = (target.weekday() + 1) % 7 if group == "A" else target.weekday()
+    start = target - timedelta(days=offset)
+    days = []
+    for step in range(7):
+        selected = start + timedelta(days=step)
+        closure = week_closure(state, group, selected)
+        day = {"date": selected.isoformat(), "day": WEEKDAY[selected.weekday()],
+               "closure": closure, "entries": []}
+        if not closure:
+            slots = day_payload(profile, schedule, selected, today=target)["entries"]
+            day["entries"] = [slot for slot in slots
+                              if " ".join(slot["subject"].casefold().split()) not in NON_TEACHING]
+        days.append(day)
+    notice = ("Cuti dalam takwim tersedia telah dilangkau. Sahkan juga perubahan jadual dan cuti sekolah setempat."
+              if state else
+              "Isi negeri sekolah di Profil Guru untuk semakan cuti. Sahkan hari PdP yang dipaparkan.")
+    return {"date": target.isoformat(), "start": days[0]["date"], "end": days[-1]["date"],
+            "group": group, "days": days, "count": sum(len(day["entries"]) for day in days),
+            "holiday_notice": notice}
+
+
+def assign_week_suggestions(days):
+    """Assign only a complete, unambiguous RPT sequence to a class timetable."""
+    groups = {}
+    for day in days:
+        for slot in day["entries"]:
+            if not slot["can_prepare"]:
+                continue
+            key = class_key(slot["class_name"]), slot["subject_code"], slot["component"] or ""
+            groups.setdefault(key, []).append((day["date"], slot))
+    for (_, code, component), entries in groups.items():
+        first = entries[0][1]
+        suggestion = first.get("rpt_suggestion")
+        # A generic PJPK period still needs the teacher to choose PJ or PK.
+        if not suggestion or (code == "PJPK" and not component):
+            continue
+        if any(slot.get("rpt_suggestion") != suggestion or "progress" not in slot for _, slot in entries):
+            continue
+        sessions = suggestion.get("sessions")
+        if sessions:
+            if (len({day for day, _ in entries}) != len(entries)
+                    or any(datetime.strptime(slot["end"], "%H:%M")
+                           - datetime.strptime(slot["start"], "%H:%M")
+                           != timedelta(hours=1) for _, slot in entries)):
+                continue
+        else:
+            sessions = [[number] for number in suggestion["lessons"].get(component, [])]
+        if len(sessions) != len(entries) or len({n for row in sessions for n in row}) != sum(map(len, sessions)):
+            continue
+        # A class that is ahead or behind its RPT needs an explicit choice.
+        compatible = True
+        for index, ((_, slot), numbers) in enumerate(zip(entries, sessions, strict=True)):
+            record = slot["progress"].get(component, {})
+            completed = record.get("completed")
+            previous = record.get("previous")
+            if completed is not None and completed != numbers[-1]:
+                compatible = False
+            if previous is not None:
+                expected = sessions[index - 1][-1] if index else numbers[0] - 1
+                already_completed = {row[-1] for row in sessions[:index]}
+                if previous != expected and previous not in already_completed:
+                    compatible = False
+        if compatible:
+            for (_, slot), numbers in zip(entries, sessions, strict=True):
+                slot["suggested_session"] = numbers
+
+
 @bp.after_request
 def private(resp):
     resp.headers["Cache-Control"] = "no-store, private"
@@ -272,6 +382,45 @@ def hari_ini():
             attach_progress(result, read_progress(config, uid, result["date"]))
         except ProfileUnavailable:
             result["progress_unavailable"] = True
+    return jsonify(result)
+
+
+@bp.get("/api/web/rph/minggu-ini")
+def minggu_ini():
+    config, uid, error = _auth()
+    if error is not None:
+        return error
+    if set(request.args) - {"date"} or len(request.args.getlist("date")) > 1:
+        return jsonify({"error": "Parameter tarikh tidak sah"}), 400
+    today = malaysia_today()
+    try:
+        raw = request.args.get("date", today.isoformat())
+        if not re.fullmatch(r"20\d{2}-\d{2}-\d{2}", raw):
+            raise ValueError("Invalid ISO date")
+        target = date.fromisoformat(raw)
+    except ValueError:
+        return jsonify({"error": "Format tarikh tidak sah"}), 400
+    try:
+        profile = get_profile(config["supabase_url"], config["supabase_key"], uid)
+        schedule = get_schedule(config["supabase_url"], config["supabase_key"], uid)
+        result = week_payload(profile, schedule, target, today=today)
+    except ProfileValidation as exc:
+        return jsonify({"error": str(exc)}), 400
+    except ProfileUnavailable:
+        return jsonify({"error": "Jadual guru belum dapat dibaca."}), 503
+
+    def add_progress(day):
+        try:
+            attach_progress(day, read_progress(config, uid, day["date"]))
+            return True
+        except ProfileUnavailable:
+            return False
+
+    eligible = [day for day in result["days"] if any(slot["can_prepare"] for slot in day["entries"])]
+    if eligible:
+        with ThreadPoolExecutor(max_workers=5) as workers:
+            result["progress_unavailable"] = not all(list(workers.map(add_progress, eligible)))
+    assign_week_suggestions(result["days"])
     return jsonify(result)
 
 

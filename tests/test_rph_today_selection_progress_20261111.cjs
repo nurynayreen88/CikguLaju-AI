@@ -23,7 +23,7 @@ function slot(class_name, subject) {
 const a = slot("4 Bestari", "Matematik");
 const b = slot("5 Amanah", "Sains");
 const ctx = {
-  choices: [], loading: false, reviewing: false,
+  choices: [], loading: false, reviewing: false, weekly: false,
   confirm: {checked: false}, generateAll: {disabled: true},
   resultsHost: {hidden: true}, allStatus: {textContent: ""},
   TAGS: ["component", "theme", "unit", "topic", "lesson"],
