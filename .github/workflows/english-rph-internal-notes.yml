@@ -27,4 +27,5 @@ jobs:
       - run: python -m unittest discover -s tests -p 'test_english_rph_internal_notes.py' -v
       - run: python -m unittest discover -s tests -p 'test_english_y2_workbook_download_router.py' -v
       - run: python -m unittest discover -s tests -p 'test_english_y2_workbook_telegram_delivery.py' -v
+      - run: python -m pip install 'Flask==3.1.0' 'pypdf==5.1.0'
       - run: python -m unittest discover -s tests -p 'test_english_y2_workbook_runtime_bridge.py' -v
