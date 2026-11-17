@@ -25,4 +25,6 @@ Jalankan `PYTHONDONTWRITEBYTECODE=1 python -m staging.sains.tahun5.eksport_2027 
 - Kesemua 116 PDF dan 116 Word yang ditukar menggunakan LibreOffice muat satu halaman A4. Sebanyak 116 PDF tambahan dengan sampel refleksi 500 aksara juga kekal satu halaman.
 - Ujian yang boleh dijalankan semula ialah `python -m unittest discover -s tests -p 'test_sains_sk_tahun5_2027_review_sequence.py'`. Penyesuai set 2027 hanya dimuatkan oleh ujian ini.
 
-**HOLD semakan guru dan CI.** Ujian muat turun melalui akaun guru di Web dan Telegram produksi belum dijalankan. Guru perlu mengesahkan liputan SK/SP dan pelaksanaan setiap RPH dalam set 2027, termasuk amali dan pemerhatian susulan.
+CI bagi laluan Word/PDF lulus pada kod `03a53f207f8d`. [Keputusan GitHub Actions](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/44193953055).
+
+**HOLD semakan guru.** Ujian muat turun melalui akaun guru di Web dan Telegram produksi belum dijalankan. Guru perlu mengesahkan liputan SK/SP dan pelaksanaan setiap RPH dalam set 2027, termasuk amali dan pemerhatian susulan.
