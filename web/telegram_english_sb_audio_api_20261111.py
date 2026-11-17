@@ -19,7 +19,7 @@ from resources.english.y4.verified_class_audio import (
     LESSON_TRACKS as YEAR4_VERIFIED_LESSONS, RECORDINGS as YEAR4_RECORDINGS,
 )
 from resources.english.y3.student_book_repaired_source import (
-    YEAR3_SB_DRIVE_FILE_ID, YEAR3_SB_PAGE_COUNT,
+    YEAR3_SB_DRIVE_FILE_ID, YEAR3_SB_PAGE_COUNT, YEAR3_SB_PAIRED_PAGES,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -198,7 +198,7 @@ def _lesson_state(row, year, lesson):
             "_en98_selected_staging_row": row}
 
 
-def _book_selection(runtime, year, lesson, *, year2_rows=None):
+def _book_selection(runtime, year, lesson, *, year2_rows=None, paired_reference=False):
     if year == 1:
         from web.english_y1_kssr_rph import PLANS
 
@@ -217,6 +217,11 @@ def _book_selection(runtime, year, lesson, *, year2_rows=None):
     if row is None:
         return None
     state = _lesson_state(row, year, lesson)
+    if year == 3 and paired_reference and lesson in YEAR3_SB_PAIRED_PAGES:
+        source = runtime._en_book_source_v25232(state, "textbook")
+        if source and source[0] == YEAR3_SB_DRIVE_FILE_ID:
+            return state, list(YEAR3_SB_PAIRED_PAGES[lesson])
+        return None
     if year == 2:
         state["textbook_page_start"] = row.get("textbook_page_start")
         state["textbook_page_end"] = row.get("textbook_page_end")
