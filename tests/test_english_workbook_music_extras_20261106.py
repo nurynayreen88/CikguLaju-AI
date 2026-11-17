@@ -15,8 +15,8 @@ from web.telegram_provisional_arab_music_api import (
 
 
 class EnglishWorkbookMaterials(unittest.TestCase):
-    def test_source_only_verified_year2_to_6(self):
-        for year, lesson in ((2,2),(3,8),(4,30),(5,29),(6,1)):
+    def test_source_only_verified_year1_to_6(self):
+        for year, lesson in ((1,18),(2,2),(3,8),(4,30),(5,29),(6,1)):
             with self.subTest(year=year):
                 source=_material(year,lesson)
                 self.assertIsNotNone(source)
@@ -30,6 +30,13 @@ class EnglishWorkbookMaterials(unittest.TestCase):
         self.assertIsNone(_material(6,16))
         self.assertIsNone(_material(3,1))
         self.assertIsNone(_material(4,999))
+        self.assertIsNone(_material(1,17))
+
+    def test_year4_workbook_uses_checked_printed_coordinates(self):
+        mapping = _material(4, 73)
+        path, index = mapping["pages"][0]
+        self.assertEqual((path.name, index), ("y4_workbook_002_060.pdf", 42))
+        self.assertTrue(mapping["label"].endswith("43"))
 
     def test_upper_primary_excerpts_match_original_pdf_pages(self):
         for year, lesson, expected in ((5, 29, (18, 19)), (6, 13, (8, 16))):

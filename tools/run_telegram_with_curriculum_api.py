@@ -533,14 +533,15 @@ except Exception as exc:
     print("English extra workbook route unavailable:", type(exc).__name__, flush=True)
 
 
-# English Years 2–4: existing Student Book pages and verified audio tracks.
-# Read-only, bearer-protected; no Telegram callback/credit/database mutation.
+# Selected Student Book pages and original English audio shared with Web.
+# The Web API requires a service bearer. Telegram uses its existing picker.
 try:
     from web.telegram_english_sb_audio_api_20261111 import (
-        create_english_book_audio_blueprint,
+        create_english_book_audio_blueprint, install_year5_telegram_extras,
     )
     telegram_runtime.app.register_blueprint(
         create_english_book_audio_blueprint(telegram_runtime))
+    install_year5_telegram_extras(telegram_runtime)
     ENGLISH_EXTRA_SB_AUDIO_SOURCE_REGISTERED = True
 except Exception as exc:
     ENGLISH_EXTRA_SB_AUDIO_SOURCE_REGISTERED = False
