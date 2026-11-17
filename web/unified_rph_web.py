@@ -451,28 +451,30 @@ def verified_preview(year, subject, unit, token, component=None):
             "fields": fields, "source": "existing-standalone-rph",
             "notice": "Pratonton RPH daripada sumber CikguLaju; pastikan maklumat kelas, aktiviti dan rujukan sesuai sebelum cetak."}
 
-def _selection():
+def _selection(args=None):
+    if args is None:
+        args = request.args
     required = {"year", "subject", "unit", "lesson"}
     extras = {"teacher_class", "teacher_date", "teacher_time",
               "teacher_start", "teacher_end", "teacher_students"}
-    keys = set(request.args)
+    keys = set(args)
     if not required.issubset(keys) or not keys.issubset(required | extras | {"component", "rph_context"}):
         raise ValueError("Unexpected selection keys")
-    if any(len(request.args.getlist(key)) != 1 for key in keys):
+    if any(len(args.getlist(key)) != 1 for key in keys):
         raise ValueError("Ambiguous selection")
-    raw_year = request.args["year"]
+    raw_year = args["year"]
     if len(raw_year) != 1 or raw_year not in "123456":
         raise ValueError("Invalid year")
     year = int(raw_year)
-    subject, unit, lesson = (request.args[key] for key in ("subject", "unit", "lesson"))
-    component = request.args.get("component")
+    subject, unit, lesson = (args[key] for key in ("subject", "unit", "lesson"))
+    component = args.get("component")
     if subject not in SUBJECT_LABELS or not _safe_text(unit) or not _safe_text(lesson, MAX_TOKEN):
         raise ValueError("Invalid subject or lesson")
     if subject == "PJPK" and component not in ("PJ", "PK"):
         raise ValueError("Missing PJPK component")
     if subject != "PJPK" and component is not None:
         raise ValueError("Unexpected component")
-    if request.args.get("rph_context", "hari-ini") != "hari-ini":
+    if args.get("rph_context", "hari-ini") != "hari-ini":
         raise ValueError("Unexpected RPH context")
     return year, subject, unit, lesson, component
 
@@ -998,10 +1000,15 @@ def create_blueprint():
     # Selection is still bound to the exact logged-in user's source catalog.
     # The Web never guesses an RPT ID, exposes Telegram credentials or
     # copies files from an unsynchronized Web-side legacy database.
-    def _extra_selection():
-        if set(request.args) != {"year", "subject", "unit", "lesson"}:
+    def _extra_selection(*, allow_paired=False):
+        args = request.args.copy()
+        if "paired" in args:
+            if not allow_paired or args.getlist("paired") != ["1"] or args.get("subject") != "ENGLISH":
+                raise ValueError("Invalid paired material request")
+            args.pop("paired")
+        if set(args) != {"year", "subject", "unit", "lesson"}:
             raise ValueError("Unexpected extra resource selection")
-        year, sub, unit, lesson, component = _selection()
+        year, sub, unit, lesson, component = _selection(args)
         if component is not None:
             raise ValueError("Unsupported extra resource component")
         if sub == "ENGLISH" and year in range(1, 7):
@@ -1018,13 +1025,19 @@ def create_blueprint():
                 return year, sub, unit, lesson, None
         raise ValueError("No verified source for optional resources")
 
+    def _rpt_material_pair(year, number):
+        from web.native_telegram_integrated_english_client import integrated_enabled
+        from web.rph_hari_ini_web import integrated_pair
+
+        return integrated_pair(year, number) if integrated_enabled() else None
+
     @bp.get("/api/web/rph/extra-materials")
     def extra_materials():
         account, error = _account()
         if error is not None:
             return error
         try:
-            year, sub, unit, token, number = _extra_selection()
+            year, sub, unit, token, number = _extra_selection(allow_paired=True)
         except (ValueError, TypeError):
             return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
         try:
@@ -1036,6 +1049,23 @@ def create_blueprint():
                 from urllib.parse import urlencode
                 params = urlencode({"year": year, "subject": sub,
                                     "unit": unit, "lesson": token})
+                pair_note = ""
+                if request.args.get("paired") == "1":
+                    from web.native_telegram_extra_materials_20261106 import english_paired_materials
+
+                    pair = _rpt_material_pair(year, number)
+                    if pair is None:
+                        return jsonify({"items": [], "status": "BELUM_TERSEDIA"}), 404
+                    types = {"student-book": "textbook", "workbook": "workbook"}
+                    paired_items = english_paired_materials(year, pair)
+                    if paired_items is not None:
+                        return jsonify({"lessons": pair, "status": "SUMBER_ASAL", "items": [
+                            {"type": types.get(item["id"], "audio"), "title": item["title"],
+                             "url": f"/api/web/rph/english-paired-material/{item['id']}?{params}",
+                             "action": "Download"}
+                            for item in paired_items
+                        ]})
+                    pair_note = f"Bahan gabungan belum tersedia. Senarai ini untuk Lesson {number:03d}."
                 items, missing = [], []
                 # Each verified Workbook uses the existing Telegram route.
                 try:
@@ -1074,7 +1104,8 @@ def create_blueprint():
                 note = ("Bahan mengikut halaman dan trek Lesson asal; tiada janaan RPH digunakan."
                         + (" Sumber lain belum dapat disahkan: " + ", ".join(missing)
                            if missing else ""))
-                return jsonify({"items": items, "status": "SUMBER_ASAL", "note": note})
+                return jsonify({"items": items, "status": "SUMBER_ASAL", "note": note,
+                                **({"pair_note": pair_note} if pair_note else {})})
             if sub == "SCIENCE":
                 from urllib.parse import urlencode
                 from web.native_textbook_references import local_science_copy, private_textbook_pdf, textbook_reference
@@ -1123,6 +1154,33 @@ def create_blueprint():
         return send_file(BytesIO(content), mimetype="application/pdf",
                          as_attachment=True, conditional=False,
                          download_name=f"CikguLaju_Sains_T{year}_{lesson}_Buku_Teks_ms_{pages}.pdf")
+
+    @bp.get("/api/web/rph/english-paired-material/<asset>")
+    def english_paired_material(asset):
+        _, error = _account()
+        if error is not None:
+            return error
+        from web.native_telegram_extra_materials_20261106 import (
+            PAIRED_ASSET, english_paired_download,
+        )
+
+        try:
+            year, sub, _, _, number = _extra_selection()
+            pair = _rpt_material_pair(year, number) if sub == "ENGLISH" else None
+        except (ValueError, TypeError):
+            pair = None
+        if pair is None or not PAIRED_ASSET.fullmatch(asset):
+            return jsonify({"error": "Pilihan bahan English gabungan tidak sah."}), 404
+        try:
+            result = english_paired_download(year, pair, asset)
+        except Exception:
+            return jsonify({"error": "Bahan English gabungan belum dapat dihubungi."}), 503
+        if result is None:
+            return jsonify({"error": "Bahan English gabungan belum tersedia."}), 404
+        data, mime, extension = result
+        name = f"CikguLaju_English_Y{year}_L{pair[0]:03d}-{pair[1]:03d}_{asset}.{extension}"
+        return send_file(BytesIO(data), mimetype=mime, as_attachment=True,
+                         conditional=False, download_name=name)
 
     @bp.get("/api/web/rph/english-workbook")
     def english_workbook():
