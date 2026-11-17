@@ -114,6 +114,21 @@ def _english_records(year):
     return result
 
 def _moral_records(year):
+    from web.moral_rpt_rph_source import VARIANT, load_plan
+    entries = []
+    for n in range(1, 97):
+        plan = load_plan(year, n)
+        if plan is not None:
+            entries.append({
+                "unit": plan["unit"], "label": plan["label"], "lesson": n,
+                "token": f"m96-{year}-{n:03d}", "status": "DRAF UNTUK SEMAKAN GURU",
+                "source_variant": VARIANT,
+                "fields": [{"label": k, "value": v} for k, v in plan["fields"].items()],
+            })
+    return entries
+
+
+def _legacy_moral_records(year):
     from web.pendidikan_moral_80_runtime import load_candidate
     crosswalk = ROOT / "rpt_2027" / "pendidikan_moral" / f"year{year}_crosswalk_DSKP.json"
     try:
@@ -408,12 +423,15 @@ def verified_preview(year, subject, unit, token, component=None):
     """Every selection is bound to a known source catalog row, never an RPT ID guess."""
     if subject not in SUBJECT_LABELS or not _safe_text(unit) or not _safe_text(token, MAX_TOKEN):
         return None
-    matching = [row for row in source_records(year, subject, component)
-                if row["token"] == token and row["unit"] == unit]
+    records = (_legacy_moral_records(year) if subject == "MORAL"
+               and component in (None, "") and type(year) is int and 2 <= year <= 6
+               and token.startswith("m-") else source_records(year, subject, component))
+    matching = [row for row in records if row["token"] == token and row["unit"] == unit]
     if len(matching) != 1:
         return None
     row = matching[0]
-    if subject == "ENGLISH" and year == 1:
+    variant = row.get("source_variant")
+    if variant or (subject == "ENGLISH" and year == 1):
         fields = row["fields"]
     elif row["path"] is None:
         return None
@@ -445,11 +463,14 @@ def verified_preview(year, subject, unit, token, component=None):
             fields = _fields_from_markdown(raw)
         if not fields:
             return None
-    return {"year": year, "subject": subject, "unit": unit,
+    result = {"year": year, "subject": subject, "unit": unit,
             "lesson": row["lesson"], "selection": token,
             "title": row["label"], "status": row["status"],
             "fields": fields, "source": "existing-standalone-rph",
             "notice": "Pratonton RPH daripada sumber CikguLaju; pastikan maklumat kelas, aktiviti dan rujukan sesuai sebelum cetak."}
+    if variant:
+        result["source_variant"] = variant
+    return result
 
 def _selection(args=None):
     if args is None:
@@ -757,7 +778,9 @@ def create_blueprint():
         from web.rph_shared_source_identity import source_fingerprint
         # Verify exact source/mapping bytes again at request time; the native
         # Telegram endpoint checks this same fingerprint against its own tree.
-        digest = source_fingerprint(year, subject, result["lesson"], component)
+        variant = result.get("source_variant")
+        digest = (source_fingerprint(year, subject, result["lesson"], component, variant=variant)
+                  if variant else source_fingerprint(year, subject, result["lesson"], component))
         if digest is None:
             return None, (jsonify({"error": "RPH tidak dapat disahkan dengan sumber Telegram.",
                                    "code": "RPH_SOURCE_NOT_VERIFIED"}), 503)

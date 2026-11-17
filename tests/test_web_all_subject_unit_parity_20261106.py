@@ -11,7 +11,7 @@ from web.unified_rph_web import source_records, unit_options, pdp_options
 class PrimarySourceUnitParity(unittest.TestCase):
     EXPECTED={
         ("ENGLISH",None):{2:160,3:160,4:160,5:160,6:160},
-        ("MORAL",None):{2:42,3:42,4:42,5:42,6:42},
+        ("MORAL",None):{2:96,3:96,4:96,5:96,6:96},
         ("PJPK","PJ"):{2:37,3:38,4:34,5:33,6:34},
         ("PJPK","PK"):{2:35,3:32,4:32,5:32,6:32},
         ("PSV",None):{2:42,3:42,4:42,5:42,6:42},
@@ -49,6 +49,22 @@ class PrimarySourceUnitParity(unittest.TestCase):
                     self.assertEqual(sorted(found),sorted(tokens),
                                      f"Missing/duplicate PdP: {subject}/{component}/{year}")
                     self.assertEqual(len(found),len(set(found)))
+
+    def test_moral_rph_uses_every_number_from_the_rpt(self):
+        from web.rph_hari_ini_web import weekly_catalog
+        from web.unified_rph_web import verified_preview
+
+        for year in range(2, 7):
+            rows = source_records(year, "MORAL")
+            weekly = weekly_catalog()[f"MORAL:{year}"]
+            numbers = [n for week in weekly.values() for n in week[4][""]]
+            self.assertEqual([row["lesson"] for row in rows], numbers)
+            if year == 2:
+                supplement, core = rows[3], rows[6]
+                self.assertIn("Unit 01", supplement["unit"])
+                self.assertIn("Pengukuhan", supplement["label"])
+                self.assertIn("Unit 02", core["unit"])
+                self.assertIsNone(verified_preview(year, "MORAL", core["unit"], supplement["token"]))
 
     def test_pk_uses_domain_not_each_pdp_as_unit(self):
         for year in range(2,7):
