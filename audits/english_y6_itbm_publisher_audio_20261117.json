@@ -1,0 +1,527 @@
+{
+  "date": "2026-11-17",
+  "status": "OFFICIAL_SOURCE_VERIFIED_RELEASE_PENDING",
+  "year": 6,
+  "book": "Academy Stars Year 6 Pupil’s Book",
+  "isbn": "9789674608743",
+  "publisher": "Institut Terjemahan & Buku Malaysia",
+  "source": "https://itbm.com.my/AcademyStarsYear6/pupilresources.html",
+  "validation": [
+    "Downloaded the audio/mpeg file linked by the publisher for each track.",
+    "Verified MP3 signature and decoded each complete file with ffmpeg.",
+    "Recorded SHA-256 of the original binary.",
+    "Lesson checks below compare the specified SOW reference or Pupil’s Book activity. No automatic mapping for other publisher tracks."
+  ],
+  "lesson_reference_checks": [
+    {
+      "lesson": 1,
+      "track": "1.1",
+      "pupil_book_pages": [
+        5
+      ],
+      "basis": "Pupil’s Book Welcome Activity 1 and SOW Teacher’s Book p.18. Publication filename matches."
+    },
+    {
+      "lesson": 89,
+      "track": "1.28",
+      "pupil_book_pages": [
+        75
+      ],
+      "basis": "SOW explicit audio reference and Pupil’s Book adverts."
+    },
+    {
+      "lesson": 93,
+      "track": "1.29",
+      "pupil_book_pages": [
+        78
+      ],
+      "basis": "SOW explicit audio reference and Pupil’s Book product description."
+    },
+    {
+      "lesson": 99,
+      "track": "2.2",
+      "pupil_book_pages": [
+        86
+      ],
+      "basis": "SOW explicit audio reference and Pupil’s Book Music and song dialogue."
+    },
+    {
+      "lesson": 109,
+      "track": "2.6",
+      "pupil_book_pages": [
+        92,
+        93,
+        94,
+        95
+      ],
+      "basis": "SOW explicit audio reference for the Reading time 3 play and follow-up."
+    },
+    {
+      "lesson": 131,
+      "track": "2.14",
+      "pupil_book_pages": [
+        112
+      ],
+      "basis": "SOW explicit audio reference and Pupil’s Book opinion dialogue."
+    },
+    {
+      "lesson": 136,
+      "track": "2.15",
+      "pupil_book_pages": [
+        113
+      ],
+      "basis": "SOW explicit audio reference and Pupil’s Book multi-tasking debate."
+    },
+    {
+      "lesson": 152,
+      "track": "2.19",
+      "pupil_book_pages": [
+        127
+      ],
+      "basis": "SOW explicit audio reference and Pupil’s Book Nazca Lines listening."
+    }
+  ],
+  "tracks": [
+    {
+      "unit": 0,
+      "track": "1.1",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit0.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/01_1-1%20Lesson%201%2C%20Activity%201.mp3",
+      "filename": "01_1-1 Lesson 1, Activity 1.mp3",
+      "size_bytes": 2638091,
+      "sha256": "a735d0878c67dc64dcdbe30fe0d4abe08c7f792a60918bc27a84454a1d338bc4"
+    },
+    {
+      "unit": 1,
+      "track": "1.2",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit1.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/01_1-2%20Lesson%201%2C%20Activity%203.mp3",
+      "filename": "01_1-2 Lesson 1, Activity 3.mp3",
+      "size_bytes": 2805725,
+      "sha256": "4dddb2ffec91f9146f568ceb18f2202e2efcc8935f910ee7981633ded55903ce"
+    },
+    {
+      "unit": 1,
+      "track": "1.3",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit1.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/01_1-3%20Lesson%204%2C%20Activity%201.mp3",
+      "filename": "01_1-3 Lesson 4, Activity 1.mp3",
+      "size_bytes": 914213,
+      "sha256": "4f3b675b17a882196b3643b1b374698e3dadc2833f79fefbba27af28f13362f8"
+    },
+    {
+      "unit": 1,
+      "track": "1.4",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit1.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/01_1-4%20Lesson%205%2C%20Activities%202%2C%203%20and%204.mp3",
+      "filename": "01_1-4 Lesson 5, Activities 2, 3 and 4.mp3",
+      "size_bytes": 3186029,
+      "sha256": "10f5d353025a84ae5e9332700f0fd8422b72fa6913e9681cd38529cee8e1baa0"
+    },
+    {
+      "unit": 1,
+      "track": "1.5",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit1.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/01_1-5%20Lesson%207%2C%20Activities%202%20and%203.mp3",
+      "filename": "01_1-5 Lesson 7, Activities 2 and 3.mp3",
+      "size_bytes": 680693,
+      "sha256": "d2d3a9c9c02f7ca6930d42b33a6f06f0db09457f1a3591c73bdef49fd3675ca1"
+    },
+    {
+      "unit": 1,
+      "track": "1.6",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit1.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/01_1-6%20Lesson%207%2C%20Activity%205.mp3",
+      "filename": "01_1-6 Lesson 7, Activity 5.mp3",
+      "size_bytes": 1021799,
+      "sha256": "aaaeeb2016c8de86940c068f912c55d70309003dd8b2a689cf1700f1110995de"
+    },
+    {
+      "unit": 1,
+      "track": "1.7",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit1.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/01_1-7%20Lesson%208%2C%20Activity%203.mp3",
+      "filename": "01_1-7 Lesson 8, Activity 3.mp3",
+      "size_bytes": 1140644,
+      "sha256": "b9d494dd7a267c8b766a5a7ed1c80a885380b68f695946f606ab52a70fe42985"
+    },
+    {
+      "unit": 1,
+      "track": "1.8",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit1.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/01_1-8%20Activity%201.mp3",
+      "filename": "01_1-8 Activity 1.mp3",
+      "size_bytes": 4700990,
+      "sha256": "f911805a4dfc0a3deaaebea554f1ecdf8b1971e2783b39cc43ad47efbc6f356a"
+    },
+    {
+      "unit": 2,
+      "track": "1.9",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit2.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/02_1-9%20Lesson%201%2C%20Activity%203.mp3",
+      "filename": "02_1-9 Lesson 1, Activity 3.mp3",
+      "size_bytes": 3300704,
+      "sha256": "0206ebc5a8fe05e245567585731ac7f4ce942e1f2d814a7fe1b81a13f6cf7861"
+    },
+    {
+      "unit": 2,
+      "track": "1.10",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit2.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/02_1-10%20Lesson%204%2C%20Activity%201.mp3",
+      "filename": "02_1-10 Lesson 4, Activity 1.mp3",
+      "size_bytes": 846242,
+      "sha256": "b6784896d3aef00e609a774898e63b8cf0975cff6a5b5fa4c80fc39901f2d865"
+    },
+    {
+      "unit": 2,
+      "track": "1.11",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit2.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/02_1-11%20Lesson%205%2C%20Activities%202%20and%203.mp3",
+      "filename": "02_1-11 Lesson 5, Activities 2 and 3.mp3",
+      "size_bytes": 1949624,
+      "sha256": "012228ee4bd3768defc1b37fcb8f6b92d4f29e1c5b866d8b48ca5ebed7ba5971"
+    },
+    {
+      "unit": 3,
+      "track": "1.12",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit3.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/03_1-12%20Lesson%201%2C%20Activity%202.mp3",
+      "filename": "03_1-12 Lesson 1, Activity 2.mp3",
+      "size_bytes": 3436229,
+      "sha256": "ce4ae8dd4fba9084b3c7b9d43e056b37e398f7a2af5bb703d3ecd228ccd01c4f"
+    },
+    {
+      "unit": 3,
+      "track": "1.13",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit3.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/03_1-13%20Lesson%204%2C%20Activity%201.mp3",
+      "filename": "03_1-13 Lesson 4, Activity 1.mp3",
+      "size_bytes": 1051823,
+      "sha256": "2cc3b6c0c683126bba7782ba333c7407755ee67a391fc805bfd9d19ac4488fb1"
+    },
+    {
+      "unit": 3,
+      "track": "1.14",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit3.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/03_1-14%20Lesson%205%2C%20Activities%201%2C%202%20and%203.mp3",
+      "filename": "03_1-14 Lesson 5, Activities 1, 2 and 3.mp3",
+      "size_bytes": 2632253,
+      "sha256": "76dd89498343d1443d35382500702b48f47e1d1688f47df3f2abbf8bd9bd7f9e"
+    },
+    {
+      "unit": 3,
+      "track": "1.15",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit3.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/03_1-15%20Lesson%208%2C%20Activity%203.mp3",
+      "filename": "03_1-15 Lesson 8, Activity 3.mp3",
+      "size_bytes": 2369960,
+      "sha256": "9c812cac67741679aa8878dfe8e15945545918f55d95ef94fd900b880f74d3d7"
+    },
+    {
+      "unit": 3,
+      "track": "1.16",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit3.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/03_1-16%20Activity%201.mp3",
+      "filename": "03_1-16 Activity 1.mp3",
+      "size_bytes": 4811078,
+      "sha256": "b20dc4bb013389aa83da1a8925379fd7730423345d729b50f943b1f315c24a0c"
+    },
+    {
+      "unit": 4,
+      "track": "1.17",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit4.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/04_1-17%20Lesson%201%2C%20Activity%201.mp3",
+      "filename": "04_1-17 Lesson 1, Activity 1.mp3",
+      "size_bytes": 3396614,
+      "sha256": "8d2bb3bfabef2109bf22bcacd809203c2de0550370527c048c53eb6f7ee44664"
+    },
+    {
+      "unit": 4,
+      "track": "1.18",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit4.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/04_1-18%20Lesson%204%2C%20Activity%201.mp3",
+      "filename": "04_1-18 Lesson 4, Activity 1.mp3",
+      "size_bytes": 847076,
+      "sha256": "3a7faf8b6914415c89d486135545693ac03e119ae5f684168190f389ed1ec3d0"
+    },
+    {
+      "unit": 4,
+      "track": "1.19",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit4.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/04_1-19%20Lesson%205%2C%20Activities%202%2C%203%20and%204.mp3",
+      "filename": "04_1-19 Lesson 5, Activities 2, 3 and 4.mp3",
+      "size_bytes": 3029237,
+      "sha256": "22d1966749b57c25dd80ca2ab9b73919e64992fae97899364fb27cd30cbe2338"
+    },
+    {
+      "unit": 4,
+      "track": "1.20",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit4.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/04_1-20%20Lesson%207%2C%20Activity%203.mp3",
+      "filename": "04_1-20 Lesson 7, Activity 3.mp3",
+      "size_bytes": 680693,
+      "sha256": "e698c021f97c96d8575c2503d76183d6d2e833226ca99e2a9c47188b3e7aeda2"
+    },
+    {
+      "unit": 4,
+      "track": "1.21",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit4.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/04_1-21%20Activity%205.mp3",
+      "filename": "04_1-21 Activity 5.mp3",
+      "size_bytes": 2756102,
+      "sha256": "2abdf4948daa86344802a37594a925a62ea66c7a21a94f792d9808ac97517ff2"
+    },
+    {
+      "unit": 5,
+      "track": "1.22",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit5.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/05_1-22%20Lesson%201%2C%20Activity%202.mp3",
+      "filename": "05_1-22 Lesson 1, Activity 2.mp3",
+      "size_bytes": 4144712,
+      "sha256": "a4c6a28055e893a53f9c7f954ecb0ba3e535389b3e08d435c89f5525603a62c9"
+    },
+    {
+      "unit": 5,
+      "track": "1.23",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit5.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/05_1-23%20Lesson%204%2C%20Activity%201.mp3",
+      "filename": "05_1-23 Lesson 4, Activity 1.mp3",
+      "size_bytes": 1053908,
+      "sha256": "88aa6851cd4de0359591b88528e4df67cb9998c29b6ae2d9209c2cedf300824c"
+    },
+    {
+      "unit": 5,
+      "track": "1.24",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit5.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/05_1-24%20Lesson%205%2C%20Activities%202%20and%203.mp3",
+      "filename": "05_1-24 Lesson 5, Activities 2 and 3.mp3",
+      "size_bytes": 2475878,
+      "sha256": "8ce91d851039cdc8992e7bd0d103e906ce2dcd50b693e238e377ce63e76a6547"
+    },
+    {
+      "unit": 5,
+      "track": "1.25",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit5.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/05_1-25%20Lesson%207%2C%20Activity%202.mp3",
+      "filename": "05_1-25 Lesson 7, Activity 2.mp3",
+      "size_bytes": 818303,
+      "sha256": "3a5801a978dd803fbc3fd3295973343830dc5593f7867c2e7f2472fa3d9a8e75"
+    },
+    {
+      "unit": 6,
+      "track": "1.26",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit6.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/06_1-26%20Lesson%201%2C%20Activity%202.mp3",
+      "filename": "06_1-26 Lesson 1, Activity 2.mp3",
+      "size_bytes": 3312380,
+      "sha256": "82db032b9a17f15874e15971b556c03a6e7b80f05997b771ccc34ecdb7c103ec"
+    },
+    {
+      "unit": 6,
+      "track": "1.27",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit6.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/06_1-27%20Lesson%204%2C%20Activity%201.mp3",
+      "filename": "06_1-27 Lesson 4, Activity 1.mp3",
+      "size_bytes": 888359,
+      "sha256": "1b6d56bb93f188e09f0a8a7000e7609c73d622bb5c8a3f8cdab56ef77155e282"
+    },
+    {
+      "unit": 6,
+      "track": "1.28",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit6.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/06_1-28%20Lesson%205%2C%20Activities%202%20and%204.mp3",
+      "filename": "06_1-28 Lesson 5, Activities 2 and 4.mp3",
+      "size_bytes": 3219389,
+      "sha256": "8355080a198f43184d377ad5bccdda9cbfea5f7d90e5ccad32edb5c7aff82723"
+    },
+    {
+      "unit": 6,
+      "track": "1.29",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit6.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/06_1-29%20Lesson%207%2C%20Activity%201.mp3",
+      "filename": "06_1-29 Lesson 7, Activity 1.mp3",
+      "size_bytes": 938816,
+      "sha256": "3ff68ee83d6ef612c6ea484cd921ca01b7f06d36a9b045d847094c91f19c9be9"
+    },
+    {
+      "unit": 7,
+      "track": "2.1",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit7.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/07_2-1%20Lesson%201%2C%20Activity%202.mp3",
+      "filename": "07_2-1 Lesson 1, Activity 2.mp3",
+      "size_bytes": 4649443,
+      "sha256": "ad9cf73e5a4af999b2fa1d6a10c00796cfce3e7ff96191102558edffb6f9520f"
+    },
+    {
+      "unit": 7,
+      "track": "2.2",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit7.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/07_2-2%20Lesson%204%2C%20Activity%201.mp3",
+      "filename": "07_2-2 Lesson 4, Activity 1.mp3",
+      "size_bytes": 1017790,
+      "sha256": "d5e244b326317fa6dac21822bfc3b409974498e4f7abe700b484907391c43b7f"
+    },
+    {
+      "unit": 7,
+      "track": "2.3",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit7.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/07_2-3%20Lesson%205%2C%20Activities%202%2C%203%20and%204.mp3",
+      "filename": "07_2-3 Lesson 5, Activities 2, 3 and 4.mp3",
+      "size_bytes": 2302567,
+      "sha256": "a514d9cc4b9ff663159def693dd766b95ebb886fa12531803dec2ff35428b5d7"
+    },
+    {
+      "unit": 7,
+      "track": "2.4",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit7.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/07_2-4%20Lesson%206%2C%20Activities%201%20and%205.mp3",
+      "filename": "07_2-4 Lesson 6, Activities 1 and 5.mp3",
+      "size_bytes": 1487332,
+      "sha256": "97ede49d31b779ef5a7a9ac407879b79950eb80ca313c1840c9473b0249a5a8c"
+    },
+    {
+      "unit": 7,
+      "track": "2.5",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit7.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/07_2-5%20Lesson%208%2C%20Activities%202%20and%203.mp3",
+      "filename": "07_2-5 Lesson 8, Activities 2 and 3.mp3",
+      "size_bytes": 2015254,
+      "sha256": "327b811c3a19c7a52b557c4ea452e383b548809502a93729b65d2fff4f474288"
+    },
+    {
+      "unit": 7,
+      "track": "2.6",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit7.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/07_2-6%20Activity%201.mp3",
+      "filename": "07_2-6 Activity 1.mp3",
+      "size_bytes": 5231992,
+      "sha256": "d203d00aebde24f41d073f585fecc1c851c7dad868792feb7c9db5dff2a89a9b"
+    },
+    {
+      "unit": 8,
+      "track": "2.7",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit8.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/08_2-7%20Lesson%201%2C%20Activity%202.mp3",
+      "filename": "08_2-7 Lesson 1, Activity 2.mp3",
+      "size_bytes": 4278313,
+      "sha256": "7af26935fc7b82811350f7ea64b7586ba151933fa8ba4f214717c2d972706c36"
+    },
+    {
+      "unit": 8,
+      "track": "2.8",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit8.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/08_2-8%20Lesson%204%2C%20Activity%201.mp3",
+      "filename": "08_2-8 Lesson 4, Activity 1.mp3",
+      "size_bytes": 1001527,
+      "sha256": "f8f40863ffd1b8ceabba9f6581a26b3a638719fb490ffcd44409793446c2c9e3"
+    },
+    {
+      "unit": 8,
+      "track": "2.9",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit8.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/08_2-9%20Lesson%205%2C%20Activities%202%20and%203.mp3",
+      "filename": "08_2-9 Lesson 5, Activities 2 and 3.mp3",
+      "size_bytes": 3265837,
+      "sha256": "9f2f8adeaabc6a1a588bc3765cccb7d50122fc1b3b9705d48d0ba7ea65e221eb"
+    },
+    {
+      "unit": 8,
+      "track": "2.10",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit8.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/08_2-10%20Lesson%207%2C%20Activity%201.mp3",
+      "filename": "08_2-10 Lesson 7, Activity 1.mp3",
+      "size_bytes": 1592416,
+      "sha256": "1168681ee3523243d1407bca258ab698c5fc7d6cc09b1e11645880972a514d12"
+    },
+    {
+      "unit": 8,
+      "track": "2.11",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit8.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/08_2-11%20Lesson%208%2C%20Activity%203.mp3",
+      "filename": "08_2-11 Lesson 8, Activity 3.mp3",
+      "size_bytes": 981511,
+      "sha256": "efbc902fbe4c16f889ca1ad21ed0100291bcfb2314f42e213874cfe33cdafaa4"
+    },
+    {
+      "unit": 8,
+      "track": "2.12",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit8.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/08_2-12%20Activity%206.mp3",
+      "filename": "08_2-12 Activity 6.mp3",
+      "size_bytes": 4355041,
+      "sha256": "03e66fef587104e199801f71da6aeadd3537fa1c49265249cbe08b36a030de89"
+    },
+    {
+      "unit": 9,
+      "track": "2.13",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit9.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/09_2-13%20Lesson%201%2C%20Activity%202.mp3",
+      "filename": "09_2-13 Lesson 1, Activity 2.mp3",
+      "size_bytes": 3248323,
+      "sha256": "27fd3f338a21a14f77d94303d8acdb28fe3417f4ba1439c5d32c00a688c27683"
+    },
+    {
+      "unit": 9,
+      "track": "2.14",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit9.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/09_2-14%20Lesson%204%2C%20Activity%201.mp3",
+      "filename": "09_2-14 Lesson 4, Activity 1.mp3",
+      "size_bytes": 1045729,
+      "sha256": "a64279a7de7bf7576bbea004013eba10a12f371bdc4c5e426534f9ae982ea906"
+    },
+    {
+      "unit": 9,
+      "track": "2.15",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit9.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/09_2-15%20Lesson%205%2C%20Activities%203%20and%204.mp3",
+      "filename": "09_2-15 Lesson 5, Activities 3 and 4.mp3",
+      "size_bytes": 3176599,
+      "sha256": "eb40b38173f9350a17f3da41996dae12ef47e732a96b34a5123b343b7ed628c1"
+    },
+    {
+      "unit": 9,
+      "track": "2.16",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit9.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/09_2-16%20Activity%201.mp3",
+      "filename": "09_2-16 Activity 1.mp3",
+      "size_bytes": 5273692,
+      "sha256": "11bb574ce40331e081c86499106c28ec75b297a287f047887d9df277c3f02dc3"
+    },
+    {
+      "unit": 10,
+      "track": "2.17",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit10.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/10_2-17%20Lesson%201%2C%20Activity%202.mp3",
+      "filename": "10_2-17 Lesson 1, Activity 2.mp3",
+      "size_bytes": 3498106,
+      "sha256": "16b51b82db8a8e276053e28a61402acd5d30af355bc12b0b3a16d83ca495d630"
+    },
+    {
+      "unit": 10,
+      "track": "2.18",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit10.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/10_2-18%20Lesson%204%2C%20Activity%201.mp3",
+      "filename": "10_2-18 Lesson 4, Activity 1.mp3",
+      "size_bytes": 981511,
+      "sha256": "077481de15e6d5980a7e4e056ac0792b9bd1b0241b4473ba6268670ced8f116b"
+    },
+    {
+      "unit": 10,
+      "track": "2.19",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit10.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/10_2-19%20Lesson%205%2C%20Activities%201%2C%202%20and%203.mp3",
+      "filename": "10_2-19 Lesson 5, Activities 1, 2 and 3.mp3",
+      "size_bytes": 2978107,
+      "sha256": "285ff25b069b6d9c1f04e88c497082556f05ade085275cccd608e9017d04ff37"
+    },
+    {
+      "unit": 10,
+      "track": "2.20",
+      "source": "https://itbm.com.my/AcademyStarsYear6/unit10.html",
+      "url": "https://itbm.com.my/AcademyStarsYear6/audio/10_2-20%20Lesson%207%2C%20Activity%201.mp3",
+      "filename": "10_2-20 Lesson 7, Activity 1.mp3",
+      "size_bytes": 1293010,
+      "sha256": "51da81d9aad664540ed9619c46b3316b0cc4c55939a2a4bd5f3d4c016b5d872b"
+    }
+  ]
+}
