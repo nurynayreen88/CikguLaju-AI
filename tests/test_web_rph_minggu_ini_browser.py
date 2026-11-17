@@ -10,6 +10,8 @@ from playwright.sync_api import sync_playwright
 ROOT = Path(__file__).resolve().parents[1]
 MONDAY = "2027-01-04"
 TUESDAY = "2027-01-05"
+HOLIDAY = "2027-01-06"
+CLOSURE = "Cuti negeri · Israk dan Mikraj"
 
 
 def slot(day, code, subject, class_name):
@@ -45,7 +47,7 @@ class WeeklyRphBrowserTest(TestCase):
         week_days = [
             {"date": MONDAY, "day": "Isnin", "entries": [monday]},
             {"date": TUESDAY, "day": "Selasa", "entries": [tuesday]},
-            {"date": "2027-01-06", "day": "Rabu", "entries": [], "closure": "Cuti dalam takwim"},
+            {"date": HOLIDAY, "day": "Rabu", "entries": [], "closure": CLOSURE},
         ]
         dropdown = {
             "subjects": [{"label": "English", "value": "ENGLISH"}, {"label": "Sains", "value": "SCIENCE"}],
@@ -67,7 +69,12 @@ class WeeklyRphBrowserTest(TestCase):
             elif url.path == "/pdf-lib.min.js":
                 route.fulfill(content_type="application/javascript", body=(static / "pdf-lib.min.js").read_bytes())
             elif url.path == "/api/web/rph/hari-ini":
-                route.fulfill(json={"date": MONDAY, "day": "Isnin", "count": 1, "entries": [monday], "holiday_notice": ""})
+                if params.get("date") == HOLIDAY:
+                    route.fulfill(json={"date": HOLIDAY, "day": "Rabu", "count": 1, "entries": [monday],
+                                        "closure": CLOSURE, "holiday_notice": ""})
+                else:
+                    route.fulfill(json={"date": MONDAY, "day": "Isnin", "count": 1,
+                                        "entries": [monday], "holiday_notice": ""})
             elif url.path == "/api/web/rph/minggu-ini":
                 route.fulfill(json={"date": MONDAY, "start": MONDAY, "end": "2027-01-10",
                                     "count": 2, "days": week_days, "holiday_notice": "Sahkan PdP."})
@@ -107,7 +114,7 @@ class WeeklyRphBrowserTest(TestCase):
             page.get_by_text("Cadangan slot ini: Lesson 001.", exact=True).wait_for()
             self.assertEqual(page.get_by_text("Cadangan RPT · Minggu", exact=False).count(), 0)
             page.get_by_role("button", name="RPH Minggu Ini", exact=True).click()
-            page.get_by_text("Cuti dalam takwim", exact=True).wait_for()
+            page.get_by_text(CLOSURE, exact=True).wait_for()
             self.assertEqual(page.locator("#view-today-heading").inner_text(), "RPH Pantas")
             page.get_by_text("Cadangan slot ini: Lesson 001", exact=False).wait_for()
             for index, lesson in enumerate(("L1", "L2")):
@@ -149,5 +156,11 @@ class WeeklyRphBrowserTest(TestCase):
             self.assertEqual(page.locator("#view-today-heading").inner_text(), "RPH Pantas")
             self.assertEqual(page.locator("#today-list .daily-rph-card").count(), 1)
             self.assertFalse(group_download.is_visible())
+            page.locator("#today-date").fill(HOLIDAY)
+            page.locator("#today-refresh").click()
+            page.get_by_text(CLOSURE + ". Tiada slot RPH untuk tarikh ini.", exact=True).wait_for()
+            self.assertEqual(page.locator("#today-list .daily-rph-card").count(), 0)
+            self.assertFalse(page.locator("#today-confirm-wrap").is_visible())
+            self.assertTrue(page.locator("#today-generate-all").is_disabled())
             self.assertFalse(errors)
             browser.close()
