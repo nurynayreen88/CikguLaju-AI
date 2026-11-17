@@ -248,3 +248,29 @@ Edisi Oktober menggunakan satu RPH 60 minit bagi setiap pasangan 149–150 dan 1
 | [CD2.32](https://drive.google.com/file/d/1Is0GwlbevVk3lC9hcHwBIFnUEpE7RxA6/view) | SB p.85 A5, TB p.99 | Transkripsi penuh mengandungi contoh dan empat soalan latihan tekanan kata. | `3e60574839c356764cadb2ea9642e1f9215c8a9574ab5341e42e178f33f259e4` |
 | [CD2.37](https://drive.google.com/file/d/1AhgPcX4mVQb9u41epfBeLdSoQ3vGi2ZY/view) | SB p.90 A7, TB pp.104 dan 154 | Sampel pembukaan dipadankan dengan perbualan Ruby dan Imogen tentang percutian ke Perancis dan soalan pengangkutan. | `11096752284072ab77808fd564be29ea6e9fec2a4a25e27da5691838800c9d60` |
 | [CD3.32](https://drive.google.com/file/d/1jg37pGROzRuW-81ATU4yXKqNuSicTYcH/view) | SB p.111 A3, TB p.125 | Sampel pembukaan memadankan nombor latihan, tajuk taman tema di AS dan keterangan tentang tunggangan. | `4c73870520258d5619147972321187c93031e8afa29645430d0472ec43d151ba` |
+
+### Semakan 17 November bagi Lesson 1–15
+
+Bahan Starter Unit disemak pada SOW SK bercetak pp.35–49, Student’s Book pp.4–11 dan Teacher’s Book pp.18–25. Nombor latihan WB disemak menggunakan skema jawapan buku pada TB pp.134–135. *This Tooth* dan *Cats* disemak dalam [panduan puisi Year 5](https://anyflip.com/xaxr/sgxc/basic/). Halaman antologi dirujuk kepada SOW.
+
+| Lesson | SOW bercetak | SP utama / pelengkap | Bahan dan aktiviti bercetak | WB pilihan | Trek dalam RPH |
+| --- | ---: | --- | --- | --- | --- |
+| 1 | 35 | 1.2.1 / 3.2.1 | SB 4 A1–2 / TB 18, kosa kata dan idea utama teks Kate | 4 Ex2 | CD1.02–CD1.03 |
+| 2 | 36 | 2.1.1 / 4.2.1 | SB 4 A3–5 dan 5 A1, A2, A4 / TB 18–19, hobi lisan dan bertulis | 5 Ex6 | CD1.04 |
+| 3 | 37 | 3.2.1 / 2.2.1 | SB 5 A6–8 / TB 19, idea utama dialog dan soalan susulan | 5 Ex5 | CD1.05 |
+| 4 | 38 | 4.2.4 / 1.2.4 | SB 6 A1–5 / TB 20, gambar meja, deskripsi dan arahan meletakkan objek | 6 Ex3 | — |
+| 5 | 39 | 5.2.1 / 3.2.3 | Anthology p.18, This Tooth, petunjuk makna dan respons kepada peristiwa | — | — |
+| 6 | 40 | 1.1.1 / 3.2.1 | SB 7 A1–4 / TB 21, bunyi akhiran dan tujuan perbualan telefon | 7 Ex2 | CD1.08 |
+| 7 | 41 | 2.1.1 / 4.2.1 | SB 7 A5–6 / TB 21, soal jawab kedudukan dan butiran diri | 7 Ex5 | — |
+| 8 | 42 | 3.2.2 / 4.2.4 | SB 8 A1–2 / TB 22, dua perenggan dan deskripsi objek | 8 Ex2 | CD1.09 |
+| 9 | 43 | 4.2.4 / 2.1.5 | SB 8 A1, A3–4 dan 9 A3 / TB 22–23, deskripsi bertulis dan lisan | 9 Ex3 | — |
+| 10 | 44 | 5.3.1 / 2.3.1 | Anthology p.18, This Tooth, topeng watak dan cerita tiga peristiwa | — | — |
+| 11 | 45 | 1.2.5 / 3.2.3 | SB 10 A1–2 dan 11 A1–3 / TB 24–25, arahan berurutan dan petunjuk dalam kuiz | 10 Ex2 | CD1.12 |
+| 12 | 46 | 2.1.1 / 4.3.2 | SB 10 A2 dan 11 A3–4 / TB 25, butiran peribadi dan ejaan dalam soalan sendiri | 10 Ex3 | — |
+| 13 | 47 | 3.3.1 / 4.3.1 | SB 11 A5–7 / TB 25, respons kepada e-mel Beth dan tanda baca dalam balasan | 11 Ex4 | — |
+| 14 | 48 | 4.2.1 / 3.2.1 | SB 11 A5 dan A8 / TB 25, idea utama e-mel dan empat butiran peribadi | 11 Ex5 | — |
+| 15 | 49 | 5.2.1 / 1.2.2 | Anthology p.15, Cats, butiran rangkap yang didengar dan sebab pilihan | — | — |
+
+Lesson 1 memeriksa idea utama daripada bacaan dan pendengaran secara berasingan. Lesson 11 memeriksa urutan tindakan semasa murid mengikut arahan kelas. Lesson 13 menambah balasan ringkas supaya tanda baca dinilai melalui penulisan bebas. Edisi Oktober memperuntukkan satu RPH 60 minit bagi setiap pasangan 1–2, 6–7, 8–9 dan 11–12.
+
+Bukti kandungan CD1.02, CD1.03, CD1.04, CD1.08, CD1.09 dan CD1.12 direkodkan dalam [audit audio](english_y4_y5_october_audio_content_20261117.md). Nombor CD1.05 dan aktiviti pengenalan Yasmin sepadan dalam SB p.5 dan TB p.19. Kandungan fail rakaman CD1.05 dan penghantaran melalui akaun guru produksi masih perlu disahkan.
