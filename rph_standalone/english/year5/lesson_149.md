@@ -1,20 +1,17 @@
-# Year 5 Lesson 149 — Listening 26
+# English Year 5 Lesson 149 — Listening 26
 
-Status: DRAF. Unit 8; topic: Going away. Official SOW Lesson 149. Main LS 1.3.1; complementary LS 1.2.3.
-Materials: SB p.86 Activities 1–3; TB p.100; CD2-33/34; world map. Workbook mapping and audio playback not yet verified.
+**Official SOW topic:** Going away.
+**Official SOW:** Lesson 149, printed p.191. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Listening 1.3.1 and Listening 1.2.3.
+**Materials:** English Plus 1 SB p.86 Activities 1–3, TB p.100, CD2.33–CD2.34, WB p.70 Ex1 and a world map.
+**Learning objectives:** Pupils infer weather vocabulary from spoken clues and follow the main thread of an explorer’s interview.
+**Success criteria:** Match two unfamiliar weather words to spoken clues and identify what the explorer plans to do and why.
 
-Objective: Pupils complete the specified activities and demonstrate the relevant learning standards.
+1. **Set induction (8 min):** Elicit extreme weather and point to the four photos in SB p.86.
+2. **Activity 1 (12 min):** Give short oral clues using familiar words. Pupils choose and justify weather words, match the photos in Activity 1 and check with CD2.33.
+3. **Activity 2 (14 min):** Pupils locate the four places on the world map and use the descriptions in SB Activity 2 to confirm weather conditions.
+4. **Activity 3 (18 min):** Play CD2.34 for SB Activity 3. Pupils match the speaker’s destination, planned action and reason on a three-box route. If time permits, pupils complete Workbook p.70 Exercise 1.
+5. **Closure (8 min):** Pupils say whether they would like to be an explorer and give one reason.
 
-Set induction (5 min): Discuss extreme weather.
-
-Main activities (40 min): Match weather adjectives to photos using CD2-33; locate India, California, Antarctica and Newfoundland; listen to CD2-34 for the main idea of an Antarctic explorer's account. Teacher models instructions, monitors and supports pupils.
-
-PBD (10 min): Check contextual weather vocabulary and listening understanding. Pupils revise one response after feedback.
-
-Closure (5 min): Pupils share a learning point and complete an exit response.
-
-Differentiation: Provide visual cues, word banks and sentence frames as needed; extend confident pupils with detailed independent answers.
-
-Verification: Official SOW checked; full book-page, workbook and audio audit pending before READY.
-
-**Workbook (existing source QA map):** p.70, Unit 8 Vocabulary and Listening — Weather conditions, Ex1-5. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Record two weather inferences with the clues pupils heard. Check the planned action and its purpose against the interview.
+**Differentiation:** Provide a map and optional word choices. Replay the interview in sections and ask confident pupils to explain an extra clue.
