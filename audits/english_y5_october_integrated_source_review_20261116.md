@@ -218,3 +218,27 @@ Bahan Growing up dan Going away menggunakan SOW serta buku English Plus 1. Lesso
 | 146 | 188 | 4.3.2 / 2.3.1 | SB 84 A4 dan 85 A1–3 / TB 98–99, ejaan bebas dan penceritaan | 69 Ex3 | — |
 
 Lesson 132 menggunakan SB p.76 Activities 4–5 untuk riwayat hidup dan merujuk p.73 bagi Key Phrases seperti dalam langkah penyampaian SOW. Lesson 142 sudah mempunyai cadangan SK/SP berasaskan DSKP. Nombor trek bagi sembilan rakaman di atas disemak dalam buku. Kandungan fail dan penghantaran ke akaun guru produksi masih perlu disahkan.
+
+### Semakan 17 November bagi Lesson 147–159
+
+Bahan Going away dipadankan dengan SOW SK, halaman bercetak English Plus 1 dan latihan Workbook dalam salinan buku repositori. Bahan Language Arts menggunakan [panduan BPK Gulliver’s Travels](https://anyflip.com/mfacn/xswq/basic/51-100) dan langkah dalam SOW.
+
+| Lesson | SOW bercetak | SP utama / pelengkap | Bahan dan aktiviti bercetak | WB pilihan | Trek dalam RPH |
+| --- | ---: | --- | --- | --- | --- |
+| 147 | 189 | 5.2.1 / 2.1.5 | Novel grafik Bab 5, gambar watak, deskripsi dan sebab pilihan | — | — |
+| 148 | 190 | 4.3.1 / 4.2.3 | SB 85 A4–6 dan Finished? / TB 99, rancangan percutian dan tanda baca | — | CD2.32 |
+| 149 | 191 | 1.3.1 / 1.2.3 | SB 86 A1–3 / TB 100, petunjuk cuaca dan tujuan perjalanan penjelajah | 70 Ex1 | CD2.33–CD2.34 |
+| 150 | 192 | 2.2.2 / 1.2.5 | SB 86 A4–6 / TB 100, arahan berurutan dan persetujuan langkah tugasan | — | CD2.34 |
+| 151 | 193 | 3.2.3 / 4.2.5 | SB 87 A1, A2, A5 dan A6 / TB 101, petunjuk bacaan dan perenggan ramalan | 71 Ex2 | — |
+| 152 | 194 | 4.3.3 / 3.2.2 | SB 89 A1, A2 dan A4 / TB 103, butiran e-mel Natalie dan semakan draf | 73 Ex2 | — |
+| 153 | 195 | 5.3.1 / 4.3.1 | BPK Join the Pieces, adaptasi dua panel dan tanda baca dialog | — | — |
+| 154 | 196 | 1.2.2 / 2.1.4 | SB 90 A3–5 dan A7 / TB 104, butiran perjalanan dan soal jawab rancangan | 74 Ex3 | CD2.37 |
+| 155 | 197 | 1.2.3 / 1.2.2 | SB 99 A1–3 / TB 113, urutan ramalan cuaca dan butiran suhu | 74 Ex4, rakaman WB bagi ramalan lain | CD3.19 |
+| 156 | 198 | 2.2.2 / 2.3.1 | SB 99 A4–5 / TB 113, persetujuan tugas dan laporan lisan | — | CD3.20 |
+| 157 | 199 | 3.3.1 / 3.2.2 | SB 111 A1–3 / TB 125, pilihan bacaan dan butiran daripada beberapa perenggan | — | CD3.32 |
+| 158 | 200 | 4.2.3 / 2.1.2 | SB 111 A4–5 / TB 125, fakta taman tema dan pertukaran pengalaman | — | — |
+| 159 | 201 | 5.3.1 / 2.3.1 | BPK Spot Me, lakonan panel dan penceritaan semula | — | — |
+
+SB p.89 dan TB p.103 mengesahkan Natalie ialah penulis e-mel dan Gemma penerima. Lesson 148 mengekalkan rancangan percutian daripada SOW dan menambah catatan pengalaman sebenar untuk menilai SP 4.2.3. Lesson 158 memasukkan soal jawab tentang pengalaman sebenar untuk SP 2.1.2. Bagi Lesson 159, SP 2.3.1 ialah Speaking seperti dalam Lampiran 1 SOW. Aktiviti panduan BPK dikenal pasti melalui tajuk kerana penomboran salinan panduan berbeza daripada rujukan SOW.
+
+Edisi Oktober menggunakan satu RPH 60 minit bagi setiap pasangan 149–150 dan 155–156. Kandungan CD2.33–CD2.34 dan CD3.19–CD3.20 telah dipadankan dalam [audit audio](english_y4_y5_october_audio_content_20261117.md). Nombor CD2.32, CD2.37 dan CD3.32 disemak dalam buku. Padanan kandungan tiga fail audio tersebut dan ujian muat turun melalui akaun guru produksi masih diperlukan. Lesson 160 sudah mempunyai cadangan SK/SP yang dipadankan dengan DSKP.

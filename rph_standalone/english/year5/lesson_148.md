@@ -1,20 +1,17 @@
-# Year 5 Lesson 148 — Consolidation 15
+# English Year 5 Lesson 148 — Consolidation 15
 
-Status: DRAF. Unit 8; topic: Going away. Official SOW Lesson 148. Main LS 4.3.1; complementary LS 4.2.3.
-Materials: SB p.85 Activities 4–6 and Finished?; TB p.99; CD2-32. CD2-32 referenced in SOW for Activity 5; playback untested. Workbook mapping unverified.
+**Official SOW topic:** Going away.
+**Official SOW:** Lesson 148, printed p.190. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Writing 4.3.1 and Writing 4.2.3.
+**Materials:** English Plus 1 SB p.85 Activities 4–6 and Finished?, TB p.99, CD2.32 and photos of heritage sites.
+**Learning objectives:** Pupils punctuate an independent holiday plan and recount a factual event from a trip or visit.
+**Success criteria:** Use capital letters, full stops, a list comma and a question mark correctly. Recount two related facts from a real outing in order.
 
-Objective: Pupils complete the specified activities and demonstrate the relevant learning standards.
+1. **Set induction (8 min):** Pupils set a punctuation goal and tell a partner one plan for the weekend.
+2. **Activity 1 (12 min):** Show the Colosseum and elicit one Malaysian heritage site. Pupils form travel questions in SB Activity 4 and tap the stressed words with CD2.32 in Activity 5.
+3. **Activity 2 (14 min):** Pairs use SB Activity 6 to ask about destination, transport and accommodation. Pupils independently draft the Finished? plan, including one question and a list of things to take.
+4. **Activity 3 (18 min):** Pupils add two short sentences about what happened on a real outing, using an actual local visit as a shared example if needed. Each pupil checks punctuation in both pieces.
+5. **Closure (8 min):** Pupils read one plan and one fact to a partner, then correct one punctuation mark.
 
-Set induction (5 min): Set a writing goal and say two weekend plans.
-
-Main activities (40 min): Use be going to for plans; practise questions and stress with CD2-32; write an imagined summer holiday itinerary covering companions, destination, transport, accommodation and activities. Teacher models instructions, monitors and supports pupils.
-
-PBD (10 min): Check punctuation and clear narration of holiday plans. Pupils revise one response after feedback.
-
-Closure (5 min): Pupils share a learning point and complete an exit response.
-
-Differentiation: Provide visual cues, word banks and sentence frames as needed; extend confident pupils with detailed independent answers.
-
-Verification: Official SOW checked; full book-page, workbook and audio audit pending before READY.
-
-**Workbook (existing source QA map):** p.69,74, Unit 8 be going to + Progress Review, Ex1-5 / Ex1-4. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Check the four punctuation features in the independent writing and two factual events or details in a sensible sequence.
+**Differentiation:** Provide a five-box plan. Ask confident pupils to link the two factual sentences with a time connector.
