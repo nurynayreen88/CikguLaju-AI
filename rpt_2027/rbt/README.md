@@ -20,7 +20,7 @@
 - Buku teks Tahun 4 dalam folder yang sama. Padanan kod SP ke halaman bercetak telah dibuat untuk **57/57 SP dan 32/32 PdP** melalui teks PDF. Calon halaman disimpan dalam setiap RPH dan `audits/rbt_t4_textbook_sp_page_map_20261106.json`. Ini **belum kelulusan visual aktiviti atau guru**.
 - Buku teks Tahun 5–6 belum ditemui dalam folder RBT Drive. Pautan awam telah dikenal pasti, tetapi halaman dan aktiviti belum dipadankan. Tahun 6 **wajib guna edisi KSSR Semakan 2017 cetakan 2021 (ISBN 978-983-49-3283-1)**, bukan buku lama ber-ISBN 978-983-49-0275-9 (2015).
 - RPT 2026 awam wujud; belum dimasukkan sebagai sumber penjadualan terverifikasi.
-- Pemetaan tema/Unit/PdP adalah editorial CikguLaju. Kumpulan A/B tarikh dan cuti negeri dibiarkan kosong untuk mengelak tarikh palsu.
+- PDF menyenaraikan minggu dan tarikh Kumpulan A/B mengikut jadual induk 2027 serta [agihan RBT](weekly_2027.json). Tiga puluh dua sesi 60 minit tamat pada Minggu 38. Minggu 6, 18, 19 dan 39 hingga 44 tidak mempunyai PdP baharu. Guru menyemak slot kelas dan cuti negeri.
 
 ## Semakan wajib sebelum pengguna boleh akses
 1. Semak setiap RPH secara individu dengan aktiviti DSKP, buku teks Tahun 4–6 (terutama halaman dicetak), alatan tersedia dan keselamatan murid.
