@@ -2,7 +2,8 @@
 # Sources: Primary Year 3 staging/SOW + Get Smart Plus 3 Teacher's Book + original Workbook PDF.
 # Rule: only direct TB Workbook-box -> visible Workbook-page content matches are promoted.
 # printed = teacher-facing Workbook page; pdf = 1-based physical page in source PDF.
-# NOTE: printed pp.2-3 are absent from the available Workbook PDF and are not promoted here.
+# The Welcome excerpt supplies the two pages missing from the legacy PDF parts.
+Y3_WB_WELCOME_PART = "y3_workbook_welcome_002_003.pdf"
 
 # Teacher's Book Workbook blocks matched to the original printed pages. These
 # are reference downloads for the shared session; the individual RPH keep their
@@ -18,11 +19,11 @@ Y3_WB_PAIRED_REFERENCE_MAP = {
 
 Y3_WB_VERIFIED_LESSON_MAP = {
 
-    1:  {"printed": 2, "pdf": None, "tb_page": 18, "evidence": "TB p.18 Workbook block explicitly covers Welcome Workbook opening activity; source PDF page missing"},
-    2:  {"printed": 2, "pdf": None, "tb_page": 19, "evidence": "TB p.19 Workbook Activities 1-3; printed p.2 absent from available source PDF"},
-    3:  {"printed": 3, "pdf": None, "tb_page": 20, "evidence": "TB p.20 Workbook block continues Welcome opening spread; printed p.3 absent from available source PDF"},
-    6:  {"printed": 3, "pdf": None, "tb_page": 21, "evidence": "TB p.21 Workbook block on Welcome opening spread; printed p.3 absent from available source PDF"},
-    7:  {"printed": 3, "pdf": None, "tb_page": 21, "evidence": "Same verified TB p.21 Workbook block; source PDF p.3 missing"},
+    1:  {"printed": 2, "pdf": 1, "part": Y3_WB_WELCOME_PART, "tb_page": 18, "evidence": "Welcome Workbook opening activity"},
+    2:  {"printed": 2, "pdf": 1, "part": Y3_WB_WELCOME_PART, "tb_page": 19, "evidence": "Workbook p.2 Activities 1–3: appearance and have got"},
+    3:  {"printed": 3, "pdf": 2, "part": Y3_WB_WELCOME_PART, "tb_page": 20, "evidence": "Workbook p.3 Smart kids: toys and numbers"},
+    6:  {"printed": 3, "pdf": 2, "part": Y3_WB_WELCOME_PART, "tb_page": 21, "evidence": "Workbook p.3 Smart kids: have/has got and short answers"},
+    7:  {"printed": 3, "pdf": 2, "part": Y3_WB_WELCOME_PART, "tb_page": 21, "evidence": "Same verified TB p.21 Workbook block"},
     8:  {"printed": 4, "pdf": 3, "tb_page": 22, "evidence": "TB p.22 Workbook block aligns with available WB p.4"},
     12: {"printed": 5, "pdf": 4, "tb_page": 25, "evidence": "TB pp.24-25 Workbook block aligns with WB p.5"},
     17: {"printed": 10, "pdf": 9, "tb_page": 32, "evidence": "TB p.32 Workbook opening block aligns with WB Unit 2 p.10"},

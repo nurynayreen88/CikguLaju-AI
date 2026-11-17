@@ -1,9 +1,12 @@
 """No live Telegram requests; verify the real menu hooks are patched safely."""
 import unittest
+from io import BytesIO
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from types import SimpleNamespace
-from unittest.mock import patch
+from unittest.mock import Mock, patch
+
+from pypdf import PdfReader
 
 from web.english_y2_verified_workbook_runtime import install
 
@@ -37,9 +40,31 @@ class WorkbookRuntimeBridgeTests(unittest.TestCase):
             self.assertNotIn("activity", self.runtime._available_materials_v2528(ss))
 
     def test_year3_missing_pdf_is_not_offered(self):
-        install(self.runtime)
         ss = {"year": "Tahun 3", "subject": "English", "lesson_no": 1}
-        self.assertNotIn("activity", self.runtime._available_materials_v2528(ss))
+        with patch("web.english_y2_verified_workbook_runtime._REPO_ROOT", Path(self.tmp.name)):
+            install(self.runtime)
+            self.assertNotIn("activity", self.runtime._available_materials_v2528(ss))
+
+    def test_year3_welcome_sends_verified_page_through_both_handlers(self):
+        def capture(cid, path, label):
+            self.assertEqual(cid, 12)
+            self.assertTrue(label.endswith("m/s 3"))
+            self.assertEqual(len(PdfReader(BytesIO(Path(path).read_bytes())).pages), 1)
+            return {"ok": True}
+
+        legacy = Mock(return_value=False)
+        self.runtime._send_reference_material_v2528 = legacy
+        self.runtime._send_reference_material = legacy
+        self.runtime._send_document_before_v25277 = Mock(side_effect=capture)
+        self.runtime._telegram_delivery_ok_v25279 = lambda result: result["ok"]
+        install(self.runtime)
+        ss = {"year": "Tahun 3", "subject": "English", "lesson_no": 7}
+        self.assertIn("activity", self.runtime._available_materials_v2528(ss))
+        self.assertTrue(self.runtime._send_reference_material_v2528(12, ss, "activity"))
+        self.assertTrue(self.runtime._send_reference_material(12, ss, "activity"))
+        self.assertFalse(self.runtime._send_reference_material(12, ss, "textbook"))
+        legacy.assert_called_once_with(12, ss, "textbook")
+        self.assertEqual(self.runtime._send_document_before_v25277.call_count, 2)
 
     def test_year4_verified_pdf_page_is_used(self):
         install(self.runtime)
