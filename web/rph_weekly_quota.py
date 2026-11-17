@@ -24,7 +24,8 @@ def weekly_usage(config, teacher_id, *, export_id=None, content_hash=None):
         start = date.fromisoformat(row["usage_week_start"])
         remaining = row["remaining"]
         allowed = row["allowed"]
-        if start.weekday() != 0 or type(remaining) is not int or not 0 <= remaining <= 2 or type(allowed) is not bool:
+        # The quota period comes from the database so Web and SQL can roll out independently.
+        if type(remaining) is not int or not 0 <= remaining <= 2 or type(allowed) is not bool:
             raise ValueError("Invalid quota response")
     except (ProfileUnavailable, KeyError, TypeError, ValueError) as exc:
         raise WeeklyQuotaUnavailable("Weekly quota could not be confirmed") from exc
