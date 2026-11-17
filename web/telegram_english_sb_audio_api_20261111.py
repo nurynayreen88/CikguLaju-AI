@@ -683,6 +683,7 @@ def install_telegram_extras(runtime):
 
     available_before = runtime._available_materials_v2528
     send_before = runtime._send_reference_material_v2528
+    direct_before = getattr(runtime, "_send_reference_material", None)
 
     def selection(state):
         lesson = _selected_y4_lesson(state)
@@ -733,3 +734,10 @@ def install_telegram_extras(runtime):
 
     runtime._available_materials_v2528 = available
     runtime._send_reference_material_v2528 = send
+    if callable(direct_before):
+        def send_direct(cid, state, key, *args, **kwargs):
+            if key == "media" and _selected_y4_lesson(state) in YEAR4_VERIFIED_LESSONS:
+                return send(cid, state, key)
+            return direct_before(cid, state, key, *args, **kwargs)
+
+        runtime._send_reference_material = send_direct
