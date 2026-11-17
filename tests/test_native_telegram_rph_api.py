@@ -241,7 +241,7 @@ class NativeRPHBridgeTests(unittest.TestCase):
             self.assertEqual(self._post(body).status_code,200)
         self.assertEqual(len(self.runtime.calls),1)
 
-    def test_only_audited_lesson_001_can_use_the_active_year5_draft_renderer(self):
+    def test_audited_fixed_and_teacher_choice_lessons_use_their_year5_renderers(self):
         from web.rph_shared_source_identity import source_fingerprint
 
         body = payload()
@@ -253,8 +253,15 @@ class NativeRPHBridgeTests(unittest.TestCase):
                 response = self._post({**body, "format": fmt})
                 self.assertEqual(response.status_code, 200, response.get_json())
             body.update(lesson=2, source_digest=source_fingerprint(5, "ENGLISH", 2))
+            self.assertEqual(self._post(body).status_code, 200)
+            with patch("web.english_y5_standalone_runtime.verified_draft_for_web", return_value=False):
+                self.assertEqual(self._post(body).status_code, 503)
+            body.update(lesson=16, source_digest=source_fingerprint(5, "ENGLISH", 16))
             self.assertEqual(self._post(body).status_code, 503)
-        self.assertEqual([call[0] for call in self.runtime.calls], ["word", "pdf"])
+            self.runtime.CIKGULAJU_ENGLISH_Y5_CHOICE_PROPOSALS_ACTIVE = True
+            self.assertEqual(self._post(body).status_code, 200)
+            self.assertEqual(self._post({**body, "source_digest": "0" * 64}).status_code, 400)
+        self.assertEqual([call[1]["lesson_no"] for call in self.runtime.calls], [1, 1, 2, 16])
 
     def test_selection_state_matches_pjpk_and_psv_telegram_callbacks(self):
         from web.rph_shared_source_identity import source_fingerprint

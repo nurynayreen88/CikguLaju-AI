@@ -52,15 +52,13 @@ class IntegratedRPHTests(TestCase):
             self.assertIn("3.2", criteria["sp"])
             self.assertNotEqual(criteria["criteria1"], criteria["criteria2"])
             year_five = {**payload, "year": 5, "lesson": 1, "unit": "Free time", "format": "metadata"}
-            blocked = client.post(path, json=year_five, headers=headers)
-            self.assertEqual(blocked.status_code, 503)
-            self.assertIn("pending approval", blocked.json["error"])
-            with patch("web.english_y5_standalone_runtime.approved_for_telegram",
+            self.assertEqual(client.post(path, json=year_five, headers=headers).json,
+                             {"lessons": [1, 2]})
+            with patch("web.english_y5_standalone_runtime.verified_draft_for_web",
                        side_effect=lambda number: number == 1):
-                self.assertEqual(client.post(path, json=year_five, headers=headers).status_code, 503)
-            with patch("web.english_y5_standalone_runtime.approved_for_telegram", return_value=True):
-                self.assertEqual(client.post(path, json=year_five, headers=headers).json,
-                                 {"lessons": [1, 2]})
+                blocked = client.post(path, json=year_five, headers=headers)
+                self.assertEqual(blocked.status_code, 503)
+                self.assertIn("sources unavailable", blocked.json["error"])
             wrong_time = {**payload, "teacher": {**payload["teacher"], "time": "08:00 - 08:30"}}
             self.assertEqual(client.post(path, json=wrong_time, headers=headers).status_code, 400)
 

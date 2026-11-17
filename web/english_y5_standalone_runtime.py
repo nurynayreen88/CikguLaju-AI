@@ -249,8 +249,8 @@ def approved_for_telegram(number, *, root=LESSON_ROOT):
 
 
 def verified_draft_for_web(number, *, root=LESSON_ROOT):
-    """Expose the audited Lesson 001 Telegram draft for teacher review on Web."""
-    return number == 1 and _passes_qa(number, root, _CONTENT_QA_GATES)
+    """Verify an audited fixed-standard draft against its exact source revision."""
+    return _passes_qa(number, root, _CONTENT_QA_GATES)
 
 
 def install(runtime, *, enabled=None):

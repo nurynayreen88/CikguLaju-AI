@@ -368,8 +368,8 @@ def create_native_rph_blueprint(runtime):
             pair = integrated.plan_for_selection(year, number, unit)
             if pair is None:
                 return jsonify({"error": "Paired English RPH unavailable"}), 404
-            if not integrated.sources_approved(year, pair):
-                return jsonify({"error": "English Year 5 RPH sources pending approval"}), 503
+            if not integrated.sources_available(year, pair):
+                return jsonify({"error": "Audited English Year 5 RPH sources unavailable"}), 503
             if fmt == "metadata":
                 return jsonify({"lessons": list(pair)})
             if fmt == "pbd":
@@ -479,10 +479,16 @@ def create_native_rph_blueprint(runtime):
                 and not getattr(runtime,"PSV_2027_PROVISIONAL_TELEGRAM_ACTIVE",False)):
             return jsonify({"error":"Telegram PSV RPH source unavailable"}),503
         if body["subject"]=="ENGLISH" and body["year"]==5:
-            from web.english_y5_standalone_runtime import approved_for_telegram, verified_draft_for_web
+            from web.english_y5_standalone_runtime import (
+                CHOICE_LESSONS, approved_for_telegram, verified_draft_for_web,
+            )
             number = body["lesson"]
             if approved_for_telegram(number):
                 available = getattr(runtime, "CIKGULAJU_ENGLISH_Y5_DRAFT_RPH_ACTIVE", False)
+            elif number in CHOICE_LESSONS:
+                from web.english_y5_teacher_choice_runtime import load_proposal
+                available = (getattr(runtime, "CIKGULAJU_ENGLISH_Y5_CHOICE_PROPOSALS_ACTIVE", False)
+                             and load_proposal(number) is not None)
             else:
                 available = (getattr(runtime, "CIKGULAJU_ENGLISH_Y5_FIXED_DRAFT_PREVIEW_ACTIVE", False)
                              and verified_draft_for_web(number))
