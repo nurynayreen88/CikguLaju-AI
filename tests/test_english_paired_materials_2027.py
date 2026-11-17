@@ -66,7 +66,7 @@ def test_missing_materials_and_year4_shared_song():
         patch.object(materials.integrated, "enabled", return_value=True),
         patch.object(materials, "_book_selection", return_value=None),
         patch.object(materials, "_material", return_value=None),
-        patch.object(materials, "_audio_rows", side_effect=lambda _r, _y, n, **_: [track] if n == 98 else []),
+        patch.object(materials, "_audio_rows", return_value=[track]),
     ):
         materials.telegram_callback(rt, 12, "en27materials:4:98")
         assert rt.send.call_args.args[2] == [[{

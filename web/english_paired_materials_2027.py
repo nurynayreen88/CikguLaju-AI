@@ -37,13 +37,8 @@ def _workbook(year, pair):
 
 def _audio(runtime, year, pair, options):
     unique = {}
-    tracks = {lesson: _audio_rows(runtime, year, lesson, **options) for lesson in pair}
-    if (year, pair) == (4, (97, 98)):
-        # The integrated task plays the verified song at SB p.71 for both
-        # Lessons. Lesson 97's standalone vocabulary recording stays withheld.
-        tracks[97] = [row for row in tracks[98] if row["reference"] == "CD2 Track 21"]
-    for lesson, rows in tracks.items():
-        for row in rows:
+    for lesson in pair:
+        for row in _audio_rows(runtime, year, lesson, **options):
             key = row.get("id") or row["publisher_url"]
             if key not in unique:
                 unique[key] = (row, [])
