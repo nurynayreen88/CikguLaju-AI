@@ -5,27 +5,25 @@
 **Main SK/SP:** 3.2 / 3.2.2  
 **Complementary SK/SP:** 3.2 / 3.2.3  
 **Duration:** 60 minutes  
-**Materials / references:** SB p.6 Activity 1 and p.7 Activity 2; TB p.20; number and shell flashcards; CD 1 Track 5 (numbers vocabulary) and Track 6 (story); pupils bring notebooks for Lesson 4 learning diaries.  
+**Materials / references:** SB p.6 Activity 1 and p.7 Activity 2; Workbook p.3 Activity 1; TB pp.20–21; number and shell flashcards; CD 1 Tracks 5–6.
 **Source:** KPM Primary Year 3 SK Scheme of Work, Lesson 3. Lesson outline adapted for classroom use.
 
 ## Set Induction (5 minutes)
 **Teacher:** Guess Who review and numbers 1–100. **Pupils:** Respond and recall relevant language.
 
 ## Activity 1 — Guided preparation (15 minutes)
-**Teacher:** Use the TB p.20 warm-up to review numbers 1–100. Show the story pictures and invite predictions before pupils read and listen. **Pupils:** Count aloud, identify pictured characters and predict what happens.
+**Teacher:** Review numbers 1–100 and model one read-and-match item from Workbook p.3 Activity 1. Show the story pictures and invite predictions. **Pupils:** Match two written number-and-toy phrases to pictures in the Workbook and use the story pictures to predict what happens.
 
 ## Activity 2 — Core lesson task (25 minutes)
 **Teacher:** Play CD 1 Track 6 for SB p.6 Activity 1 and guide pupils to track words while listening; guide SB p.7 Activity 2, using pictures to infer unfamiliar words. **Pupils:** Track words while listening to the story, answer Activity 1 questions and use pictures to infer unfamiliar words in Activity 2.
 
 ## Reinforcement / PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.7, Activities 1–2; explain the task, check individual responses and record evidence against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.7, Activities 1–2, to match story characters and check details from the story.
 **Teacher:** Check pupils' answers for two story details and one visually inferred word. **Pupils:** Answer two story-detail questions and identify one unfamiliar word using a picture clue.
 
 ## Closure (5 minutes)
 **Teacher:** Play stand-up true/false using have/has got. **Pupils:** Summarise one thing learned.
 
-**QA:** Teacher's Book p.20 directly inspected: numbers 10–100, shell vocabulary, CD 1 Tracks 5–6 and guided read-along confirmed; Year 3 SOW Lesson 3 confirms the story/picture-clue sequence. Teacher's Book p.21 Activity 2 details and generated Word/PDF rendering still pending. NOT READY FOR RELEASE.
+**QA:** Teacher's Book pp.20–21 confirms numbers 10–100, shell vocabulary, CD 1 Tracks 5–6 and the Workbook p.3 matching task. Year 3 SOW Lesson 3 confirms the story and picture-clue sequence. Teacher account delivery verification remains pending. NOT READY FOR RELEASE.
 
 ## Resource access — pending bot integration
 - **Audio CD1 Track 5 (original WMA):** https://drive.google.com/file/d/1qFvwFau16xp4A5ESKh864J6a8kAcj4_C/view

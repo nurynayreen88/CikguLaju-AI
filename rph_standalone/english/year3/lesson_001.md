@@ -6,7 +6,7 @@
 **Complementary SK/SP:** Speaking 2.1 / 2.1.5 — Describe people and objects using suitable words and phrases.  
 **Duration:** 60 minutes  
 **Objective:** Pupils identify three adjectives from oral prompts with visual support and describe one person using a suitable adjective.  
-**Materials:** Get Smart plus 3 Student's Book p.5 Activity 1; Teacher's Book p.18; adjective and character flashcards; CD 1 Track 2 (vocabulary) and Track 3 (song); pupils' friend pictures (optional).
+**Materials:** Get Smart plus 3 Student's Book p.5 Activity 1; Workbook p.2 Activity 1; Teacher's Book p.18; adjective and character flashcards; CD 1 Tracks 2–3.
 
 ## Set Induction (10 minutes)
 **Teacher:** Organise a name circle; model 'My name's...' and 'His/Her name's...'; lead a short memory game.
@@ -17,8 +17,8 @@
 **Pupils:** Listen, point to matching pictures and describe a pictured person.
 
 ## Activity 2 — Student's Book (20 minutes)
-**Teacher:** Guide Vocabulary and Activity 1 on Student's Book p.5, following the SOW reference to Teacher's Book p.18; observe responses during the song.
-**Pupils:** Listen, respond to the song and match spoken adjectives to visuals.
+**Teacher:** Guide the song and picture prompts on Student's Book p.5 Activity 1. Model one picture item from Workbook p.2 Activity 1.
+**Pupils:** Listen and match adjectives to the visuals. Complete two picture items on Workbook p.2 Activity 1 and say an adjective for each picture.
 
 ## PBD / Reinforcement (10 minutes)
 **Teacher:** Give three oral adjective prompts and ask each pupil to describe one person; record evidence for both SPs.
