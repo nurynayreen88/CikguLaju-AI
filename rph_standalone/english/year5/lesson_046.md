@@ -1,21 +1,17 @@
 # English Year 5 Lesson 46 — Consolidation 4
 
-Official SOW Lesson 46, printed p.82. Topic: Days. Suggested duration: 60 minutes.
-Main and complementary learning standards: Speaking 2.2.1; Writing 4.2.1.
-Materials: SB p.27 Activities 1–6; TB p.41.
+**Official SOW topic:** Days.
+**Official SOW:** Lesson 46, printed p.82. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Speaking 2.2.1 and Writing 4.2.1.
+**Materials:** English Plus 1 SB p.27 Activities 1–6, TB p.41, WB p.23 Ex3 and routine prompts.
+**Learning objectives:** Pupils sustain a routine interview and give detailed information about their own routines in writing.
+**Success criteria:** Ask a follow-up question linked to a reply and write three personal statements with details about time, place or frequency.
 
-Objective: Pupils ask and answer three appropriate questions about daily routines and continue a partner exchange with a follow-up.
+1. **Set induction (8 min):** Use the TB warm-up to revisit present simple questions about special days or routines.
+2. **Activity 1 (12 min):** Pupils complete SB Activities 1–2 and compare question forms and answers with a partner.
+3. **Activity 2 (14 min):** For SB Activities 3–4, pairs prepare and ask questions. Each pupil adds one follow-up that develops the partner’s answer.
+4. **Activity 3 (18 min):** Use SB Activities 5–6 to practise time phrases and continue the exchange. Each pupil writes three detailed answers about their own routines. If time permits, pupils complete Workbook p.23 Exercise 3.
+5. **Closure (8 min):** Groups choose a routine question to ask the teacher and compare possible answers.
 
-1. Set induction (8 min): Do TB warm-up with books closed.
-2. Activity 1 (12 min): Complete Activity 1 and review present-simple question rules.
-3. Activity 2 (15 min): Pairs complete Activity 2 and practise questions and answers.
-4. Activity 3 (17 min): Change partners for Activities 3–4; write questions using When, Where, How often, Do and Does.
-5. PBD and closure (8 min): Complete Activities 5–6; groups write questions about teacher's daily, weekly and yearly routines.
-
-PBD: Assess task-specific spoken, listening, reading or written evidence and note pupils needing support.
-Differentiation: Give feedback on turn-taking, question word order and fluency.
-Workbook: Exact page and exercise not verified; do not assign an invented activity.
-Audio: Use only SOW-specified track if applicable; audio playback not yet verified.
-QA: SOW-aligned draft pending physical book-page and one-page Word/PDF verification.
-
-**Workbook (existing source QA map):** p.26-27, Unit 2 Progress Review — present simple questions/time-related unit review, Ex1-8. Optional brief practice after SOW activities; not a substitute for core tasks.
+**PBD:** Hear a relevant follow-up tied to a partner’s reply. Check three independent written statements for personal detail.
+**Differentiation:** Give a question grid and time-word prompts. Invite confident pupils to vary follow-ups without repeating earlier questions.
