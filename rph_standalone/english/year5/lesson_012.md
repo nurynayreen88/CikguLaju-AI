@@ -1,22 +1,17 @@
-# English Year 5 — Standalone RPH — Lesson 012 (Speaking 3)
+# English Year 5 Lesson 12 — Speaking 3
 
-**Source:** Official Primary Year 5 SK Scheme of Work Lesson 12, printed p.46. **Theme:** World of Self, Family and Friends. **Topic:** Free time. **Duration:** 60 minutes suggested.
-**Main CS/LS:** Speaking 2.1/2.1.1. **Complementary CS/LS:** Writing 4.3/4.3.2. **Language focus:** question words; nationality adjectives.
-**Learning objectives:** Main (Speaking 2.1.1) — pupils give detailed information about themselves in the Free time activities. Complementary (Writing 4.3.2) — pupils spell a range of high frequency words accurately in independent writing through the linked writing task.
-**Success criteria (teacher-set):** Pupils complete the core activities and demonstrate an observable response for each skill.
-**Materials:** SB p.10 Activity 2; p.11 Key Phrases Activity 3 and Activity 4; TB p.25.
+**Official SOW topic:** Free time.
+**Official SOW:** Lesson 12, printed p.46. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Speaking 2.1.1 and Writing 4.3.2.
+**Materials:** English Plus 1 SB p.10 Activity 2 and p.11 Activities 3–4, TB p.25, WB p.10 Ex3 and quiz slips.
+**Learning objectives:** Pupils give details about themselves in a conversation and spell frequent words in independently written quiz questions.
+**Success criteria:** Give three personal details and spell at least four familiar words correctly across two original questions.
 
-## Teaching and learning
-1. **Set induction (8 min):** Teacher writes Where/What/Who and pupils select question words matching teacher's personal statements.
-2. **Activity 1 (12 min):** Partners exchange three facts about where they live, what they like and who they like; ask matching questions.
-3. **Activity 2 (15 min):** Pairs describe two photos from SB p.10 using I think that's / I'm not sure / I don't know phrases.
-4. **Activity 3 (17 min):** Mixed-ability groups create a quiz with SB p.11 Activity 4; select and display best questions, discussing positive facts about Malaysia.
-5. **PBD and closure (8 min):** Review vocabulary orally; teacher checks self-description and spelling of know, think, sure, right, write.
+1. **Set induction (8 min):** Match teacher’s personal statements to the question words Where, What and Who.
+2. **Activity 1 (12 min):** Pairs ask each other about where they live and what and who they like. Each pupil answers with three details.
+3. **Activity 2 (14 min):** Pairs choose two SB p.10 photos and discuss them using SB p.11 Activity 3 Key Phrases. Move to the group quiz in Activity 4.
+4. **Activity 3 (18 min):** Each pupil writes two original questions independently before the group selects questions to display. If time permits, pupils complete Workbook p.10 Exercise 3.
+5. **Closure (8 min):** Read one quiz question from a different group and give a reason for the answer.
 
-**PBD:** Teacher observes a partner exchange using suitable facts about photos and checks one correctly formed question from the group quiz.
-**Differentiation:** Use mixed-ability small groups so every pupil can contribute.
-**Reflection:** Objective met __/__; follow-up __.
-**Workbook:** Optional only after exercise-level verification against Year 5 Workbook; do not invent page/activity numbers.
-**QA status:** SOURCE-PAIRED DRAFT. Official SOW lesson and references checked; physical source-page/audio content and Word/PDF layout not yet independently verified.
-
-**Workbook (existing source QA map):** p.10, Starter Vocabulary — countries/nationalities introduction practice, Ex1-4. Optional short practice after the SOW activities; do not substitute it for the lesson tasks.
+**PBD:** Listen for three spoken facts about the pupil and check spelling in their independently written questions before peer editing.
+**Differentiation:** Provide question-word prompts. Hide the example questions during the independent spelling check.
