@@ -52,6 +52,15 @@ class WorkbookInActivityTests(unittest.TestCase):
         self.assertIs(apply({"subject": "English", "year": "Year 2",
                              "lesson_no": 11}, original), original)
 
+    def test_welcome_workbook_matches_main_activities_and_materials(self):
+        for lesson, page, activity in ((1, 2, 1), (2, 2, 2), (3, 3, 1), (6, 3, 2), (7, 3, 3)):
+            with self.subTest(lesson=lesson):
+                rows = apply({"subject": "English", "year": "Year 3", "lesson_no": lesson}, {})
+                reference = f"Workbook p.{page} Activity {activity}"
+                self.assertIn(reference, rows["BAHAN BANTU MENGAJAR"])
+                self.assertIn(reference, rows["AKTIVITI UTAMA"])
+                self.assertNotRegex(rows["PENTAKSIRAN"], r"Workbook\s+p\.")
+
 
 if __name__ == "__main__":
     unittest.main()
