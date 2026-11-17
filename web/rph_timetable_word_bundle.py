@@ -43,3 +43,27 @@ def compose_word_bundle(parts):
     composer.save(output)
     output.seek(0)
     return output
+
+
+def pdf_receipt_signer(secret):
+    return URLSafeTimedSerializer(secret, salt="cikgulaju-rph-timetable-pdf-v1")
+
+
+def compose_pdf_bundle(parts):
+    from pypdf import PdfReader, PdfWriter
+    from pypdf.errors import PdfReadError
+
+    output = BytesIO()
+    writer = PdfWriter()
+    try:
+        for part in parts:
+            reader = PdfReader(BytesIO(part))
+            if reader.is_encrypted or not reader.pages:
+                raise ValueError("Invalid RPH PDF")
+            for page in reader.pages:
+                writer.add_page(page)
+        writer.write(output)
+    except PdfReadError as exc:
+        raise ValueError("Invalid RPH PDF") from exc
+    output.seek(0)
+    return output

@@ -1,5 +1,7 @@
 """Exercise the weekly timetable controls and native RPH handoff in Chromium."""
 
+from email import policy
+from email.parser import BytesParser
 from pathlib import Path
 from unittest import TestCase
 from urllib.parse import parse_qs, urlsplit
@@ -12,6 +14,7 @@ MONDAY = "2027-01-04"
 TUESDAY = "2027-01-05"
 HOLIDAY = "2027-01-06"
 THURSDAY = "2027-01-07"
+NEXT_MONDAY = "2027-01-11"
 CLOSURE = "Cuti negeri · Israk dan Mikraj"
 
 
@@ -60,7 +63,13 @@ class WeeklyRphBrowserTest(TestCase):
         }
         availability, downloads, errors = [], [], []
         pdf_parts = {}
+        bundles = []
         fail_tuesday = False
+        combined_pdf = b""
+        weeks = [
+            {"start": MONDAY, "end": "2027-01-10", "value": MONDAY, "current": True},
+            {"start": NEXT_MONDAY, "end": "2027-01-17", "value": NEXT_MONDAY, "current": False},
+        ]
 
         def intercept(route):
             url = urlsplit(route.request.url)
@@ -82,8 +91,12 @@ class WeeklyRphBrowserTest(TestCase):
                     route.fulfill(json={"date": MONDAY, "day": "Isnin", "count": 1,
                                         "entries": [monday], "holiday_notice": ""})
             elif url.path == "/api/web/rph/minggu-ini":
-                route.fulfill(json={"date": MONDAY, "start": MONDAY, "end": "2027-01-10",
-                                    "count": 3, "days": week_days, "holiday_notice": "Sahkan PdP."})
+                chosen = params.get("date", MONDAY)
+                showing_next = chosen == NEXT_MONDAY
+                route.fulfill(json={"date": chosen, "start": chosen,
+                                    "end": weeks[showing_next]["end"], "weeks": weeks,
+                                    "count": 0 if showing_next else 3,
+                                    "days": [] if showing_next else week_days, "holiday_notice": "Sahkan PdP."})
             elif url.path == "/api/options":
                 route.fulfill(json=dropdown[params["kind"]])
             elif url.path == "/api/web/rph/availability":
@@ -97,7 +110,27 @@ class WeeklyRphBrowserTest(TestCase):
                 if fail_tuesday and params["teacher_date"] == TUESDAY:
                     fail_tuesday = False
                     return route.fulfill(status=503, json={"error": "Ujian slot tergendala"})
-                route.fulfill(content_type="application/pdf", body=pdf_parts[params["teacher_date"]])
+                route.fulfill(content_type="application/pdf", body=pdf_parts[params["teacher_date"]],
+                              headers={"X-RPH-PDF-Receipt": params["teacher_date"]})
+            elif url.path == "/api/web/rph/timetable/pdf-bundle":
+                if route.request.method == "GET":
+                    route.fulfill(json={"access_mode": "subscription", "available": len(bundles) < 2,
+                                        "remaining": 2 - len(bundles), "usage_week_start": MONDAY,
+                                        "usage_week_end": "2027-01-10"})
+                    return
+                headers = route.request.headers
+                message = BytesParser(policy=policy.default).parsebytes(
+                    ("Content-Type: " + headers["content-type"] + "\r\n\r\n").encode()
+                    + route.request.post_data_buffer
+                )
+                receipt_values = [part.get_content() for part in message.iter_parts()
+                                  if part.get_param("name", header="content-disposition") == "receipt"]
+                self.assertEqual(receipt_values, [MONDAY, TUESDAY])
+                bundles.append(headers["x-rph-weekly-export"])
+                route.fulfill(content_type="application/pdf", body=combined_pdf, headers={
+                    "X-RPH-Weekly-Remaining": str(2 - len(bundles)),
+                    "X-RPH-Weekly-Start": MONDAY, "X-RPH-Weekly-End": "2027-01-10",
+                })
             else:
                 route.fulfill(status=404)
 
@@ -114,12 +147,24 @@ class WeeklyRphBrowserTest(TestCase):
                     return Array.from(await pdf.save());
                 }""", width)
                 pdf_parts[day] = bytes(raw) + b" " * 1200
+            combined_pdf = bytes(page.evaluate("""async () => {
+                const pdf = await PDFLib.PDFDocument.create();
+                pdf.addPage([595,842]);
+                pdf.addPage([600,842]);
+                return Array.from(await pdf.save());
+            }""")) + b" " * 1200
             page.evaluate("window.rphTodayLoad()")
             page.get_by_text("2 Bestari · English", exact=True).wait_for()
             self.assertEqual(page.locator("#view-today-heading").inner_text(), "RPH Pantas")
             page.get_by_text("Cadangan slot ini: Lesson 001.", exact=True).wait_for()
             self.assertEqual(page.get_by_text("Cadangan RPT · Minggu", exact=False).count(), 0)
             page.get_by_role("button", name="RPH Minggu Ini", exact=True).click()
+            week_select = page.get_by_label("Pilih minggu", exact=True)
+            expect(week_select).to_have_value(MONDAY)
+            self.assertIn("Jan", week_select.locator("option").first.inner_text())
+            week_select.select_option(NEXT_MONDAY)
+            page.get_by_text("Tiada waktu PdP minggu ini.", exact=False).wait_for()
+            week_select.select_option(MONDAY)
             page.get_by_text(CLOSURE, exact=True).wait_for()
             self.assertEqual(page.locator("#view-today-heading").inner_text(), "RPH Pantas")
             page.get_by_text("Cadangan slot ini: Lesson 001", exact=False).wait_for()
@@ -168,6 +213,14 @@ class WeeklyRphBrowserTest(TestCase):
             }""", list(raw))
             self.assertEqual(widths, [595, 600])
             self.assertEqual([row["teacher_date"] for row in downloads], [MONDAY, TUESDAY, TUESDAY])
+            expect(page.locator("#week-bundle-quota")).to_contain_text("1 daripada 2")
+            with page.expect_download():
+                group_download.click()
+            expect(page.locator("#week-bundle-quota")).to_contain_text("0 daripada 2")
+            group_download.click()
+            page.get_by_text("Had dua muat turun RPH mingguan telah dicapai.", exact=False).wait_for()
+            self.assertEqual(len(set(bundles)), 2)
+            self.assertEqual(len(downloads), 3)
             page.get_by_role("button", name="RPH Hari Ini", exact=True).click()
             page.locator("#today-list").get_by_text("2 Bestari · English", exact=True).wait_for()
             self.assertEqual(page.locator("#view-today-heading").inner_text(), "RPH Pantas")

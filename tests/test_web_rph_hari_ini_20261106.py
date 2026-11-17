@@ -9,7 +9,7 @@ from unittest.mock import patch
 from flask import Flask, jsonify
 from web.rph_hari_ini_web import (
     assign_week_suggestions, bp, class_year, day_payload, subject_identity, week_payload,
-    weekly_catalog, weekly_rpt_suggestion,
+    week_choices, weekly_catalog, weekly_rpt_suggestion,
 )
 
 from web.rph_today_progress import attach_progress, lesson_signer, read_progress_summary
@@ -69,6 +69,17 @@ class DailyTimetablePureTests(TestCase):
         self.assertEqual(current["days"][0]["entries"][0]["class_name"], "2 Amanah")
         self.assertIsNone(current["days"][0]["entries"][0]["rpt_suggestion"])
         self.assertEqual(snapshot, schedule)
+
+    def test_week_choices_include_date_ranges_for_both_school_groups(self):
+        today = date(2026, 11, 17)
+        for group, first, last in (("A", "2026-11-15", "2026-11-21"),
+                                   ("B", "2026-11-16", "2026-11-22")):
+            with self.subTest(group=group):
+                options = week_choices(today, group)
+                self.assertEqual([row for row in options if row["current"]],
+                                 [{"start": first, "end": last, "value": first, "current": True}])
+                self.assertTrue(all(abs((date.fromisoformat(o["value"]) - today).days) <= 400
+                                    for o in options))
 
     def test_holiday_closure_controls_both_daily_and_weekly_slots(self):
         cases = (

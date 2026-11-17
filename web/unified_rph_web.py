@@ -10,9 +10,11 @@ For other subjects, keep existing database navigation; no invented preview.
 import csv
 from datetime import date, datetime, timedelta
 from functools import lru_cache
+from hashlib import sha256
 from io import BytesIO
 import json
 from pathlib import Path
+from uuid import UUID
 import re
 from xml.sax.saxutils import escape
 from zipfile import ZIP_DEFLATED, ZipFile
@@ -996,39 +998,67 @@ def create_blueprint():
             "paid" if g.cikgulaju_rph_paid else "trial")
         if trial_remaining is not None:
             response.headers["X-RPH-Trial-Remaining"] = str(trial_remaining)
+        return attach_bundle_receipt(response, document, "word")
+
+    def attach_bundle_receipt(response, document, fmt):
         if request.args.get("rph_context") == "hari-ini":
             from web.rph_timetable_word_bundle import (
-                WORD_RECEIPT_HEADER, word_receipt_claim, word_receipt_signer,
+                WORD_RECEIPT_HEADER, pdf_receipt_signer, word_receipt_claim, word_receipt_signer,
             )
             from web_v1_telegram_auth_routes import _config
             config = _config()
             if config and config.get("CIKGULAJU_WEB_SESSION_SECRET"):
-                signer = word_receipt_signer(config["CIKGULAJU_WEB_SESSION_SECRET"])
+                header, factory = (("X-RPH-PDF-Receipt", pdf_receipt_signer) if fmt == "pdf"
+                                   else (WORD_RECEIPT_HEADER, word_receipt_signer))
+                signer = factory(config["CIKGULAJU_WEB_SESSION_SECRET"])
                 uid = g.cikgulaju_rph_account["telegram_user_id"]
-                response.headers[WORD_RECEIPT_HEADER] = signer.dumps(
-                    word_receipt_claim(uid, document.getvalue()))
+                response.headers[header] = signer.dumps(word_receipt_claim(uid, document.getvalue()))
         return response
 
-    @bp.route("/api/web/rph/timetable/word-bundle", methods=["GET", "POST"])
-    def timetable_word_bundle():
+    @bp.route("/api/web/rph/timetable/word-bundle", methods=["GET", "POST"], defaults={"fmt": "word"})
+    @bp.route("/api/web/rph/timetable/pdf-bundle", methods=["GET", "POST"], defaults={"fmt": "pdf"})
+    def timetable_bundle(fmt):
         from itsdangerous import BadSignature
         from web.rph_timetable_word_bundle import (
-            MAX_BUNDLE_BYTES, MAX_SLOTS, WORD_MIME, compose_word_bundle,
-            word_receipt_claim, word_receipt_signer,
+            MAX_BUNDLE_BYTES, MAX_SLOTS, WORD_MIME, compose_pdf_bundle, compose_word_bundle,
+            pdf_receipt_signer, word_receipt_claim, word_receipt_signer,
         )
+        from web.rph_weekly_quota import WeeklyQuotaUnavailable, weekly_usage
         from web_v1_telegram_auth_routes import _config
 
         account, error = _account()
         if error is not None:
             return error
+        uid = account["telegram_user_id"]
+        partner = account.get("rakan_pembangun") is True
+        subscription = not partner and _has_paid_access(account)
+        mode = "partner" if partner else "subscription" if subscription else "trial"
+        config = _config()
+        error_quota = {"error": "Baki RPH mingguan belum dapat disahkan. Cuba semula.",
+                       "code": "RPH_WEEKLY_QUOTA_UNAVAILABLE"}
         if request.method == "GET":
             try:
-                from docxcompose.composer import Composer
+                if fmt == "pdf":
+                    from pypdf import PdfReader as composer
+                else:
+                    from docxcompose.composer import Composer as composer
+                status = weekly_usage(config, uid) if subscription else {"available": callable(composer)}
             except ImportError:
-                return jsonify({"error": "Gabungan Word belum tersedia."}), 503
-            return jsonify({"available": callable(Composer)})
+                return jsonify({"error": "Format gabungan belum tersedia."}), 503
+            except WeeklyQuotaUnavailable:
+                return jsonify(error_quota), 503
+            return jsonify({"access_mode": mode, **status})
         if request.headers.get("Origin") != "https://" + request.host:
             return jsonify({"error": "Asal permintaan tidak sah."}), 400
+        export_id = None
+        if subscription:
+            raw = request.headers.get("X-RPH-Weekly-Export", "")
+            try:
+                export_id = UUID(raw)
+                if raw != str(export_id) or export_id.version != 4:
+                    raise ValueError("Invalid export UUID")
+            except ValueError:
+                return jsonify({"error": "Muat semula halaman untuk menyediakan RPH mingguan."}), 400
         if (request.mimetype != "multipart/form-data"
                 or not 0 < (request.content_length or 0) <= MAX_BUNDLE_BYTES):
             return jsonify({"error": "Saiz dokumen terlalu besar. Gabungkan lebih sedikit slot."}), 413
@@ -1039,27 +1069,48 @@ def create_blueprint():
         if (set(request.files) != {"document"} or set(request.form) != {"receipt"}
                 or not 1 <= len(submitted) == len(receipts) <= MAX_SLOTS):
             return jsonify({"error": "Senarai fail RPH tidak sah."}), 400
-        config = _config()
         if not config or not config.get("CIKGULAJU_WEB_SESSION_SECRET"):
-            return jsonify({"error": "Pengesahan dokumen Word belum tersedia."}), 503
-        signer = word_receipt_signer(config["CIKGULAJU_WEB_SESSION_SECRET"])
-        uid = account["telegram_user_id"]
-        parts = []
+            return jsonify({"error": "Pengesahan fail RPH belum tersedia."}), 503
+        signature, factory, compose, mime, extension = (
+            (b"%PDF-", pdf_receipt_signer, compose_pdf_bundle, "application/pdf", "pdf") if fmt == "pdf"
+            else (b"PK\x03\x04", word_receipt_signer, compose_word_bundle, WORD_MIME, "docx")
+        )
+        signer = factory(config["CIKGULAJU_WEB_SESSION_SECRET"])
+        parts, hashes = [], []
         for upload, receipt in zip(submitted, receipts, strict=True):
             data = upload.read()
             try:
                 approved = signer.loads(receipt, max_age=8 * 60 * 60)
             except BadSignature:
                 approved = None
-            if not data.startswith(b"PK\x03\x04") or approved != word_receipt_claim(uid, data):
-                return jsonify({"error": "Fail Word ini belum dapat disahkan untuk gabungan."}), 400
+            claim = word_receipt_claim(uid, data)
+            if not data.startswith(signature) or approved != claim:
+                return jsonify({"error": "Fail ini belum dapat disahkan untuk gabungan RPH."}), 400
             parts.append(data)
+            hashes.append(claim[1])
         try:
-            bundle = compose_word_bundle(parts)
+            bundle = compose(parts)
         except (ValueError, TypeError, KeyError, IndexError, OSError, ImportError):
-            return jsonify({"error": "Gabungan Word belum berjaya. Cuba semula atau muat turun pada setiap slot."}), 503
-        return send_file(bundle, mimetype=WORD_MIME, as_attachment=True,
-                         download_name="CIKGULAJU_RPH_MINGGU_INI.docx", conditional=False)
+            return jsonify({"error": "Gabungan RPH belum berjaya. Cuba semula."}), 503
+
+        usage = None
+        if subscription:
+            # Formats share one allowance. A retry can replay only the same ordered parts.
+            content_hash = sha256((fmt + ":" + "".join(hashes)).encode("ascii")).hexdigest()
+            try:
+                usage = weekly_usage(config, uid, export_id=export_id, content_hash=content_hash)
+            except WeeklyQuotaUnavailable:
+                return jsonify(error_quota), 503
+            if not usage["available"]:
+                return jsonify({"error": "Had dua muat turun RPH mingguan telah dicapai.",
+                                "code": "RPH_WEEKLY_LIMIT", "access_mode": mode, **usage}), 429
+        response = send_file(bundle, mimetype=mime, as_attachment=True,
+                             download_name="CIKGULAJU_RPH_MINGGU_INI." + extension, conditional=False)
+        if usage is not None:
+            response.headers["X-RPH-Weekly-Remaining"] = str(usage["remaining"])
+            response.headers["X-RPH-Weekly-Start"] = usage["usage_week_start"]
+            response.headers["X-RPH-Weekly-End"] = usage["usage_week_end"]
+        return response
 
     @bp.route("/api/web/rph/pdf", methods=["GET", "POST"])
     def pdf():
@@ -1080,7 +1131,7 @@ def create_blueprint():
             "paid" if g.cikgulaju_rph_paid else "trial")
         if trial_remaining is not None:
             response.headers["X-RPH-Trial-Remaining"] = str(trial_remaining)
-        return response
+        return attach_bundle_receipt(response, document, "pdf")
 
     # Extra teaching resources are independent of RPH generation credits.
     # Selection is still bound to the exact logged-in user's source catalog.

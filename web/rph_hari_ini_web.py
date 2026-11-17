@@ -232,6 +232,27 @@ def day_payload(profile, schedule, target, *, today=None):
     }
 
 
+def school_week_start(target, group):
+    offset = (target.weekday() + 1) % 7 if group == "A" else target.weekday()
+    return target - timedelta(days=offset)
+
+
+def week_choices(today, group):
+    """Calendar ranges using the same boundaries as the saved school timetable."""
+    first = today - timedelta(days=400)
+    last = today + timedelta(days=400)
+    start = school_week_start(first, group)
+    current = school_week_start(today, group)
+    choices = []
+    while start <= last:
+        choices.append({
+            "start": start.isoformat(), "end": (start + timedelta(days=6)).isoformat(),
+            "value": max(first, start).isoformat(), "current": start == current,
+        })
+        start += timedelta(days=7)
+    return choices
+
+
 def week_payload(profile, schedule, target, *, today):
     """Read the repeating timetable once and expand it in school-week order."""
     if not isinstance(profile, dict) or not isinstance(schedule, dict):
@@ -240,8 +261,7 @@ def week_payload(profile, schedule, target, *, today):
         raise ProfileValidation("Tarikh mesti dalam lingkungan 400 hari")
     state = normalize_state(profile.get("state_name"))
     group = "A" if state in FRI_SAT else "B" if state else None
-    offset = (target.weekday() + 1) % 7 if group == "A" else target.weekday()
-    start = target - timedelta(days=offset)
+    start = school_week_start(target, group)
     dates = [start + timedelta(days=step) for step in range(7)]
     days = []
     for selected in dates:
@@ -410,6 +430,7 @@ def minggu_ini():
     except ProfileUnavailable:
         return jsonify({"error": "Jadual guru belum dapat dibaca."}), 503
 
+    result["weeks"] = week_choices(today, result["group"])
     attach_week_suggestions(result, config, uid)
     return jsonify(result)
 

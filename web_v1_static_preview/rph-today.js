@@ -6,6 +6,7 @@
 (()=>{
  "use strict";
  const dateInput=document.getElementById("today-date");
+ const weekSelect=document.getElementById("today-week");
  const refresh=document.getElementById("today-refresh");
  const state=document.getElementById("today-status");
  const list=document.getElementById("today-list");
@@ -22,13 +23,14 @@
  const bundleFormat=document.getElementById("week-bundle-format");
  const bundleDownload=document.getElementById("week-bundle-download");
  const bundleStatus=document.getElementById("week-bundle-status");
+ const bundleQuota=document.getElementById("week-bundle-quota");
  if(!dateInput||!refresh||!state||!list||!confirm||!generateAll||
     !allStatus||!resultsHost||!resultsList)return;
  let requestId=0,loadedDate="",loading=false,reviewing=false,savingProgress=false,choices=[],batchEpoch=0;
  let weekly=false,weekSlotCount=null;
  const noPdpDates=new Set();
  const cache=new Map(),rosterCounts=new Map();
- const bundleParts=new Map();
+ const bundleParts=new Map(),bundleAttempts=new Map();
  let bundleBusy=false,bundleSlots=[],singleDownloads=0;
  const WORD_MIME="application/vnd.openxmlformats-officedocument.wordprocessingml.document";
  const TAGS=["component","theme","unit","topic","lesson"];
@@ -623,6 +625,14 @@
  function renderWeek(data,ticket){
   loadedDate=data.date;
   dateInput.value=data.date;
+  if(weekSelect){
+   const ranges=Array.isArray(data.weeks)?data.weeks:[{start:data.start,end:data.end,value:data.date}];
+   weekSelect.replaceChildren(...ranges.map(range=>new Option(
+    (range.current?"Minggu ini · ":"")+formatSlotDate(range.start)+" – "+formatSlotDate(range.end),
+    range.value)));
+   const shown=ranges.find(range=>range.start===data.start);
+   if(shown)weekSelect.value=shown.value;
+  }
   for(const day of data.days){
    if(!day.entries.length&&(!day.closure||day.closure==="Hujung minggu"))continue;
    list.append(create("h3","",day.day+" · "+formatSlotDate(day.date)));
@@ -648,6 +658,8 @@
   if(bundlePanel)bundlePanel.hidden=true;
   bundleSlots=[];
   bundleParts.clear();
+  bundleAttempts.clear();
+  if(bundleQuota)bundleQuota.hidden=true;
   batchEpoch++;
   loading=true;reviewing=false;choices=[];weekSlotCount=null;
   resultsHost.hidden=true;
@@ -655,6 +667,7 @@
   list.replaceChildren();
   confirm.checked=false;confirmWrap.hidden=true;
   refresh.disabled=true;
+  if(weekSelect)weekSelect.disabled=true;
   generateAll.disabled=true;
   allStatus.textContent="";
   state.textContent="Membaca jadual waktu daripada Profil Guru…";
@@ -675,7 +688,11 @@
    if(ticket!==requestId)return;
    choices=[];state.textContent=error.message;
   }finally{
-   if(ticket===requestId){loading=false;refresh.disabled=false;updateAll();}
+   if(ticket===requestId){
+    loading=false;refresh.disabled=false;
+    if(weekSelect)weekSelect.disabled=!weekSelect.options.length;
+    updateAll();
+   }
   }
  }
  function selection(c){
@@ -824,7 +841,8 @@
   if(!mime.includes(format==="pdf"?"application/pdf":WORD_MIME)||blob.size<1000)
    throw Error("Fail RPH yang diterima tidak sah.");
   const name=response.headers.get("Content-Disposition")?.match(/filename="?([A-Za-z0-9_-]+\.(?:pdf|docx))"?/i)?.[1];
-  return {blob,name:name||fallback,receipt:response.headers.get("X-RPH-Word-Receipt")};
+  return {blob,name:name||fallback,receipt:response.headers.get(
+   format==="pdf"?"X-RPH-PDF-Receipt":"X-RPH-Word-Receipt")};
  }
  async function downloadRph(c,format,key,button){
   if(c.ticket!==requestId||reviewing||bundleBusy||key!==selectedKey(c)||!confirm.checked||
@@ -862,30 +880,44 @@
   if(!supported)
    bundleStatus.textContent="Pilih slot yang semuanya mempunyai format RPH yang sama untuk digabungkan.";
  }
- async function combineWeeklyFiles(parts,format){
-  if(format==="pdf"){
-   const pdf=await window.PDFLib.PDFDocument.create();
-   for(const {blob} of parts){
-    const source=await window.PDFLib.PDFDocument.load(await blob.arrayBuffer());
-   if(!source.getPageCount())throw Error("Salah satu RPH PDF tidak mempunyai muka surat.");
-    for(const page of await pdf.copyPages(source,source.getPageIndices()))pdf.addPage(page);
-   }
-   return new Blob([await pdf.save()],{type:"application/pdf"});
+ function showBundleQuota(data){
+  if(!bundleQuota)return;
+  if(data.access_mode==="partner"){
+   bundleQuota.textContent="Rakan Pembangun · Tanpa had";
+  }else if(data.access_mode==="subscription"&&Number.isInteger(data.remaining)
+           &&data.usage_week_start&&data.usage_week_end){
+   bundleQuota.textContent="Baki muat turun mingguan "+data.remaining+" daripada 2 · "+
+    formatSlotDate(data.usage_week_start)+" – "+formatSlotDate(data.usage_week_end);
+  }else{
+   bundleQuota.hidden=true;
+   return;
   }
+  bundleQuota.hidden=false;
+ }
+ async function combineWeeklyFiles(parts,format,exportId){
   const form=new FormData();
   for(const {blob,receipt,name} of parts){
-   if(!receipt)throw Error("Pengesahan Word belum tersedia bagi salah satu slot.");
+   if(!receipt)throw Error("Pengesahan fail belum tersedia bagi salah satu slot.");
    form.append("document",blob,name);
    form.append("receipt",receipt);
   }
-  const response=await fetch("/api/web/rph/timetable/word-bundle",{
-   method:"POST",body:form,credentials:"same-origin",cache:"no-store",redirect:"error"});
+  const response=await fetch("/api/web/rph/timetable/"+format+"-bundle",{
+   method:"POST",body:form,headers:{"X-RPH-Weekly-Export":exportId},
+   credentials:"same-origin",cache:"no-store",redirect:"error"});
   if(!response.ok){
    const error=await response.json().catch(()=>({}));
-   throw Error(error.error||"Gabungan Word belum berjaya.");
+   if(error.code==="RPH_WEEKLY_LIMIT")showBundleQuota(error);
+   throw Error(error.error||"Gabungan RPH belum berjaya.");
   }
   const blob=await response.blob();
-  if(!blob.type.includes(WORD_MIME)||blob.size<1000)throw Error("Fail gabungan Word tidak sah.");
+  const mime=format==="pdf"?"application/pdf":WORD_MIME;
+  if(!blob.type.includes(mime)||blob.size<1000)throw Error("Fail gabungan RPH tidak sah.");
+  const remaining=response.headers.get("X-RPH-Weekly-Remaining");
+  if(remaining!==null)showBundleQuota({
+   access_mode:"subscription",remaining:Number(remaining),
+   usage_week_start:response.headers.get("X-RPH-Weekly-Start"),
+   usage_week_end:response.headers.get("X-RPH-Weekly-End"),
+  });
   return blob;
  }
  async function downloadBundle(){
@@ -893,24 +925,28 @@
   const format=bundleFormat.value;
   let plans;
   try{
-   if(format==="pdf"&&!window.PDFLib?.PDFDocument)throw Error("Gabungan PDF belum tersedia. Muat semula halaman.");
    plans=bundleSlots.map(c=>rphFileRequest(c,format));
   }catch(error){bundleStatus.textContent=error.message;return;}
   bundleBusy=true;
   updateAll();
   updateBundle();
-  const lock=[dateInput,refresh,confirm,dayMode,weekMode,generateAll,manual,
+  const lock=[dateInput,weekSelect,refresh,confirm,dayMode,weekMode,generateAll,manual,
    ...choices.flatMap(c=>c.editor?[...c.editor.querySelectorAll("select,input,textarea")]:[])]
    .filter(control=>control&&!control.disabled);
   for(const control of lock)control.disabled=true;
   let ready=plans.filter(plan=>bundleParts.has(plan.key)).length;
   try{
-   if(format==="word"){
-    bundleStatus.textContent="Menyemak gabungan Word…";
-    const response=await fetch("/api/web/rph/timetable/word-bundle",{
+   const key=JSON.stringify(plans.map(plan=>plan.key));
+   let exportId=bundleAttempts.get(key);
+   if(!exportId){
+    bundleStatus.textContent="Menyemak baki muat turun mingguan…";
+    const response=await fetch("/api/web/rph/timetable/"+format+"-bundle",{
      credentials:"same-origin",cache:"no-store",redirect:"error"});
     const data=await response.json().catch(()=>({}));
-    if(!response.ok||data.available!==true)throw Error(data.error||"Gabungan Word belum tersedia.");
+    if(!response.ok)throw Error(data.error||"Gabungan RPH belum tersedia.");
+    showBundleQuota(data);
+    if(data.available!==true)throw Error("Had dua muat turun RPH mingguan telah dicapai.");
+    exportId=crypto.randomUUID();
    }
    const missing=plans.length-ready;
    if(missing){
@@ -937,7 +973,10 @@
     parts.push(part);
    }
    bundleStatus.textContent="Menggabungkan "+ready+" RPH dalam satu fail…";
-   const blob=await combineWeeklyFiles(parts,format);
+   // Keep the same reference if the response is lost after the server counts the export.
+   bundleAttempts.set(key,exportId);
+   const blob=await combineWeeklyFiles(parts,format,exportId);
+   bundleAttempts.delete(key);
    if(!confirm.checked||bundlePanel.hidden)return;
    saveRphFile(blob,"CIKGULAJU_RPH_MINGGU_INI_"+loadedDate+(format==="pdf"?".pdf":".docx"));
    bundleStatus.textContent=ready+" RPH disusun dalam satu fail "+(format==="pdf"?"PDF":"Word")+".";
@@ -1002,6 +1041,8 @@
  function setWeekMode(next){
   if(weekly===next||bundleBusy)return;
   weekly=next;
+  document.getElementById("today-date-wrap").hidden=weekly;
+  document.getElementById("today-week-wrap").hidden=!weekly;
   dayMode.setAttribute("aria-pressed",String(!weekly));
   weekMode.setAttribute("aria-pressed",String(weekly));
   dayMode.classList.toggle("secondary",weekly);
@@ -1026,6 +1067,7 @@
  bundleDownload?.addEventListener("click",()=>{void downloadBundle();});
  refresh.addEventListener("click",()=>{void load(dateInput.value);});
  dateInput.addEventListener("change",()=>{void load(dateInput.value);});
+ weekSelect?.addEventListener("change",()=>{void load(weekSelect.value);});
  generateAll.addEventListener("click",()=>{void generate();});
  manual.addEventListener("click",()=>showWebView("rph"));
  summaryRetry?.addEventListener("click",()=>{void loadProgressSummary();});
