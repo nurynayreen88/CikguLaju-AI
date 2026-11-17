@@ -61,7 +61,9 @@ def test_two_lesson_aliases_deliver_one_copy_of_each_source():
 
 def test_missing_materials_and_year4_shared_song():
     track = {"id": "song", "reference": "CD2 Track 21"}
-    rt = SimpleNamespace(send=Mock())
+    rt = SimpleNamespace(send=Mock(), send_document=Mock(),
+                         _send_document_before_v25277=Mock(return_value={"ok": True}),
+                         _telegram_delivery_ok_v25279=Mock(return_value=True))
     with (
         patch.object(materials.integrated, "enabled", return_value=True),
         patch.object(materials, "_book_selection", return_value=None),
@@ -72,3 +74,8 @@ def test_missing_materials_and_year4_shared_song():
         assert rt.send.call_args.args[2] == [[{
             "text": "Audio • Lesson 097 + 098 • CD2 Track 21",
             "callback_data": "en27materials:4:97:audio-1"}]]
+        with patch.object(materials, "_verified_audio", return_value=b"recording"):
+            result = materials.telegram_callback(rt, 12, "en27materials:4:98:audio-1")
+            assert result == {"ok": True}
+        rt._send_document_before_v25277.assert_called_once()
+        rt.send_document.assert_not_called()

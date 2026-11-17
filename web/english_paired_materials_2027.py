@@ -179,7 +179,10 @@ def telegram_callback(runtime, cid, code):
             with TemporaryDirectory(prefix="english-paired-") as folder:
                 path = Path(folder) / name
                 path.write_bytes(data)
-                sent = runtime.send_document(cid, str(path), _label("Bahan English", pair))
+                # The public sender may settle a pending RPH trial. This is a
+                # reference document and must use the pre-RPH delivery path.
+                sent = runtime._send_document_before_v25277(
+                    cid, str(path), _label("Bahan English", pair))
             if runtime._telegram_delivery_ok_v25279(sent):
                 return sent
     except Exception:
