@@ -21,7 +21,13 @@ _SECTION = re.compile(
 _STOP = re.compile(
     r"^(?:QA(?: status| note)?|Status|Verification|Workbook(?: practice| link)?|Audio|"
     r"Source(?: rule| verification)?|Teacher reflection|Reflection|"
-    r"Non-textbook source rule|Final check|Materials)(?:\s*\([^)]*\))?\s*:", re.I)
+    r"Non-textbook source rule|Final check|Materials|Induction notes|Main activities notes|"
+    r"Closure notes)(?:\s*\([^)]*\))?\s*:", re.I)
+_PHASE_NOTES = {
+    "SET INDUKSI": "Induction notes",
+    "AKTIVITI UTAMA": "Main activities notes",
+    "PENUTUP": "Closure notes",
+}
 _LS = re.compile(r"(?<!\d)[1-5]\.\d\.\d(?!\d)")
 _STRIP = re.compile(r"\*\*(.*?)\*\*")
 
@@ -68,6 +74,9 @@ def _sections(text):
     current = None
     for raw in text.splitlines():
         line = _plain(raw)
+        if _STOP.match(line):
+            current = None
+            continue
         found = _SECTION.match(line)
         if found:
             label = found.group(1).casefold()
@@ -89,8 +98,6 @@ def _sections(text):
             if text_part:
                 parts.setdefault(current, []).append(text_part)
             continue
-        if _STOP.match(line):
-            current = None
         if current is not None and line:
             parts.setdefault(current, []).append(line)
     return {name: "\n".join(value).strip() for name, value in parts.items()}
@@ -149,7 +156,8 @@ def load_lesson(number, *, root=LESSON_ROOT):
         criteria = ""
     return {"source_codes": codes, "materials": materials, "objective": objective,
             "criteria": criteria, "intro": intro, "activities": activity, "pbd": pbd, "closure": closure,
-            "differentiation": blocks.get("differentiation") or ""}
+            "differentiation": blocks.get("differentiation") or "",
+            "phase_notes": {key: _field(clean, (label,)) for key, label in _PHASE_NOTES.items()}}
 
 
 def adapt_rows(state, rows, *, root=LESSON_ROOT):
@@ -193,6 +201,9 @@ def adapt_rows(state, rows, *, root=LESSON_ROOT):
     out["AKTIVITI UTAMA"] = lesson["activities"]
     out["PENTAKSIRAN"] = lesson["pbd"]
     out["PENUTUP"] = lesson["closure"]
+    for phase, note in lesson["phase_notes"].items():
+        if note:
+            out[f"CATATAN {phase}"] = note
     if lesson["differentiation"]:
         out["PEMULIHAN / PENGAYAAN"] = lesson["differentiation"]
     return out

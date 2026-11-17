@@ -21,6 +21,7 @@ from qa.english_word_builder_snapshot import _create_rph_word
 from web.english_y4_pending_draft_preview_runtime import PENDING, adapt_rows as y4
 from web.english_y5_fixed_draft_preview_runtime import preview_rows as y5
 from web.english_y5_standalone_runtime import CHOICE_LESSONS
+from web.english_y4_y5_draft_word_a4_runtime import _target as needs_compaction
 from web.english_y6_word_a4_runtime import compact_word_file
 
 OUT = ROOT / "output" / "english_y4_y5_full_draft_a4"
@@ -75,7 +76,7 @@ def _build(year, number, file):
     doc.styles["Normal"].font.size=Pt(10.5)
     _create_rph_word(doc, sec, state, rendered, str(file))
     before=_get_text(file)
-    if not compact_word_file(file):
+    if needs_compaction(state) and not compact_word_file(file):
         raise RuntimeError("Compactor refused Year %d Lesson %d" % (year,number))
     after=_get_text(file)
     if before != after:

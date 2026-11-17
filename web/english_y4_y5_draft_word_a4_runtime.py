@@ -20,7 +20,7 @@ def _target(state):
     if n4 in Y4_PENDING:
         return True
     n5 = _year5_lesson(state)
-    if n5 is not None and n5 not in Y5_CHOICES:
+    if n5 is not None and n5 != 1 and n5 not in Y5_CHOICES:
         return True
     return False
 

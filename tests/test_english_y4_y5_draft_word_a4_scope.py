@@ -36,12 +36,12 @@ class Y4Y5DraftWordA4Scope(unittest.TestCase):
         t.cell(1,1).text="Teacher checks individual evidence"
         d.save(self.file)
 
-    def test_matching_162_only(self):
-        for year, n in ((4,16),(4,30),(4,160),(5,1),(5,90),(5,141),(5,159)):
+    def test_compaction_scope_preserves_native_lesson_001_layout(self):
+        for year, n in ((4,16),(4,30),(4,160),(5,90),(5,141),(5,159)):
             self.assertTrue(_target({"year":f"Year {year}","subject":"English",
                                      "lesson_no":n,"task":"rph"}),(year,n))
         for year, n in ((4,1),(4,15),(4,31),(4,159),
-                        (5,16),(5,34),(5,88),(5,160),(6,30),(1,30),(3,30)):
+                        (5,1),(5,16),(5,34),(5,88),(5,160),(6,30),(1,30),(3,30)):
             self.assertFalse(_target({"year":f"Year {year}","subject":"English",
                                       "lesson_no":n,"task":"rph"}),(year,n))
         for st in ({"year":"Year 4","subject":"Matematik","lesson_no":16,"task":"rph"},

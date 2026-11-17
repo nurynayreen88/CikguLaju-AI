@@ -46,6 +46,14 @@ Enam trek daripada dua folder Class CD Get Smart Plus 4 telah diperiksa terhadap
 
 Bukti asal Lesson 29–30 tersedia dalam [rekod SOW, TB, SB, WB dan audio](english_y5_l029_l030_original_sow_tb_sb_wb_audio_sources_20261105.json).
 
+## Ujian produksi RPH tunggal Lesson 001 — 17 November 2026
+
+PDF A4 satu halaman diterima melalui Telegram dengan label DRAF. Kod SP 1.2.1 dan 3.2.1, SB p.4, TB p.18 dan CD1.02–CD1.03 sepadan. SHA-256 PDF: `17c4f5a3c69ea9314739d581ae8c3013e6a5c2703e37654bf79e7dcfde86190e`.
+
+Versi pembetulan mengagihkan slot 60 minit kepada 8 + 10 + 12 + 22 + 8 minit. Enam minit terakhir Aktiviti 3 digunakan untuk Workbook p.4 Exercise 2, rujukan latihan tambahan pada TB p.18. Ruang Notes menunjukkan masa dan bahan setiap fasa. Word dan PDF calon muktamad masing-masing satu halaman A4 dalam semakan setempat. RPH gabungan 001 + 002 ialah laluan berasingan dalam RPT Oktober.
+
+Lejar Lesson 001 menggunakan SHA-256 sumber yang disemak semula. Kelulusan versi baharu dan penghantaran Word/PDF akaun guru masih menunggu pengesahan.
+
 ## Semakan RPH satu Lesson
 
 Rujukan bercetak disemak pada [SOW Year 5 SK](https://www.teacherfiera.com/wp-content/uploads/2020/04/Primary-Year-5-SoW-SK.pdf), [Student’s Book](https://fliphtml5.com/fjgja/bhcg/English_Plus_1_%282nd_Edition%29_Student%27s_Book/), [Teacher’s Book](https://fliphtml5.com/emiyy/dhtt/English_Plus_1_Teacher%26%2339%3Bs_Book/) dan [Workbook](https://fliphtml5.com/lpufu/atbn/English_Plus_1_Year_5_Workbook_2nd_Edition/). Latihan WB ialah pilihan singkat selepas aktiviti teras SOW. RPH bersepadu 60 minit menggunakan aktiviti yang telah disemak dalam jadual di atas.

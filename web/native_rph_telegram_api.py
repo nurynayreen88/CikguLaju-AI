@@ -280,6 +280,11 @@ def compact_web_word_notes(document):
         if len(tables)!=3:
             raise ValueError('Expected 3 native RPH tables')
         activity=tables[1]
+        # Keep native column widths when the source supplies teaching notes.
+        for row in activity.findall(w('tr'))[1:]:
+            cells=row.findall(w('tc'))
+            if len(cells)==3 and any((t.text or '').strip() for t in cells[2].iter(w('t'))):
+                return document
         grid=activity.find(w('tblGrid'))
         columns=grid.findall(w('gridCol')) if grid is not None else []
         if len(columns)!=3:
