@@ -129,7 +129,7 @@
       "model": "Compare factor pairs of 29, 49 and 45. Explain the definition of a prime and use it to explain the status of 1.",
       "guided_practice": "Use factor ladders and arrays to classify numbers. Compare a prime near 100, a non-square composite and a square with an identical factor pair.",
       "assessment": "Classify 43, 49, 51 and 1. List their factor pairs and identify which number has exactly two distinct factors.",
-      "evidence": "43 has 1 × 43 and is prime. 49 has 1 × 49 and 7 × 7. 51 has 1 × 51 and 3 × 17. The number 1 has only one factor.",
+      "evidence": "43 is prime (1 × 43). 49 and 51 are composite (1 × 49 and 7 × 7, 1 × 51 and 3 × 17). The number 1 has only one factor and is neither prime nor composite.",
       "closure": "Ask why a product of two copies of 7 establishes that 49 is composite."
     },
     "L11": {
@@ -174,7 +174,7 @@
       "model": "Multiply both the dividend and divisor by the same power of ten. Demonstrate one calculation and verify the result by multiplying back.",
       "guided_practice": "Sort equivalent divisions, then estimate and solve those with one- and two-place divisors. Compare work and check a quotient with three decimal places.",
       "assessment": "Find 5.04 ÷ 0.12, 0.84 ÷ 0.4 and 3.45 ÷ 1.2. Record the equivalent divisions and verify the last result.",
-      "evidence": "42, 2.1 and 2.875. Equivalent equations include 504 ÷ 12 and 34.5 ÷ 12. Check 2.875 × 1.2 = 3.45.",
+      "evidence": "42, 2.1 and 2.875. Equivalent divisions are 504 ÷ 12, 8.4 ÷ 4 and 34.5 ÷ 12. Check 2.875 × 1.2 = 3.45.",
       "closure": "Ask pupils to explain why the power of ten must be the same for both numbers."
     },
     "L15": {
@@ -336,7 +336,7 @@
       "model": "Add actual travel time first, then convert the resulting time to the destination zone. Show how to choose an overlapping daytime call time.",
       "guided_practice": "Plan one journey and one call using fixed offsets. Recheck both day changes and whether the call meets each person's availability.",
       "assessment": "A flight leaves UTC+8 Wednesday at 20:15, lasts 6 hours 40 minutes, and lands at UTC+3. Give local arrival. A call begins Monday 15:30 at UTC+8 for 75 minutes. Give start and end at UTC+1 and check a local 08:00–10:00 availability window.",
-      "evidence": "Flight arrives Wednesday 21:55 locally. The call is Monday 08:30 to 09:45 at UTC+1, within the availability window.",
+      "evidence": "At departure it is Wednesday 15:15 at UTC+3. Add 6 h 40 min to reach Wednesday 21:55. The call is Monday 08:30 to 09:45 at UTC+1, within the availability window.",
       "closure": "Ask pupils to distinguish the elapsed flight duration from the destination clock difference."
     },
     "R04": {
