@@ -1,22 +1,17 @@
-# English Year 5 — Lesson 009 — Writing 2
+# English Year 5 Lesson 9 — Writing 2
 
-**Official SOW:** Primary Year 5 SK Lesson 9, printed p.43; Starter Unit; **Theme:** World of Self, Family and Friends; **Topic:** Free time. **Suggested duration:** 60 minutes.
-**Main CS/LS:** Writing 4.2/4.2.4. **Complementary CS/LS:** Speaking 2.1/2.1.5.
-**Language focus:** adjectives; very/really/quite; have got.
-**Learning objectives:** Main (Writing 4.2.4) — pupils describe people, places and objects using suitable statements in the Free time activities. Complementary (Speaking 2.1.5) — pupils describe people, places and objects using suitable statements through the linked speaking task.
-**Success criteria (teacher-set):** Complete the SOW-aligned core tasks and give observable spoken, written, listening, reading or creative evidence with appropriate support.
-**Materials:** SB p.8 Activities 3–4 and reread Activity 1; SB p.9 Activity 3; TB pp.22–23; illustrated phone-price handout.
+**Official SOW topic:** Free time.
+**Official SOW:** Lesson 9, printed p.43. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Writing 4.2.4 and Speaking 2.1.5.
+**Materials:** English Plus 1 SB p.8 Activities 1, 3 and 4 and p.9 Activity 3, TB pp.22–23, WB p.9 Ex3 and illustrated price cards.
+**Learning objectives:** Pupils describe familiar people, places or objects in writing and give understandable descriptions aloud.
+**Success criteria:** Write three clear descriptions and say two that a partner can identify, using suitable adjectives.
 
-## Lesson sequence
-1. **Set induction (8 min):** Teacher revises adjective opposites using a mind map.
-2. **Activity 1 (12 min):** Teacher models very, really and quite; pupils read Key Phrases on SB p.8.
-3. **Activity 2 (15 min):** Pupils write descriptive sentences for TV programmes, places, people, games or films in Activity 3 and memorise two for partner exchange in Activity 4; compare phone prices (Financial Education).
-4. **Activity 3 (17 min):** Pupils reread SB p.8 Activity 1 and locate has got, have got, hasn't got and haven't got, then complete SB p.9 Activity 3 table.
-5. **PBD and closure (8 min):** Groups prepare three or four questions about teacher's belongings and ask without repeating peers' questions; teacher assesses written descriptions.
+1. **Set induction (8 min):** Use an adjective mind map to recall opposite meanings from the previous lesson.
+2. **Activity 1 (12 min):** Review very, really and quite with the Key Phrases. Pupils write descriptions for SB p.8 Activity 3.
+3. **Activity 2 (14 min):** In SB p.8 Activity 4, pairs exchange descriptions and identify the person, place or object. Apply the phrases again to two phone pictures and compare their prices.
+4. **Activity 3 (18 min):** Reread SB p.8 Activity 1 for have got forms and complete SB p.9 Activity 3. If time permits, pupils complete Workbook p.9 Exercise 3.
+5. **Closure (8 min):** Each pupil says one new description. Partners identify the intended subject.
 
-## Assessment and differentiation
-**PBD:** Teacher collects two descriptive sentences using very/really/quite and have got and listens to pupils exchange them; check adjective use and understandable spoken descriptions. **Differentiation:** Reduce eight target sentences to four–six where necessary.
-**Reflection:** Pupils meeting objective __ / __; intervention __.
-**QA status:** SOURCE-PAIRED DRAFT — SOW sequence and standards verified; textbook/anthology page inspection, audible audio verification where applicable, and Word/PDF output QA pending. Do not present as fully READY.
-
-**Workbook (existing source QA map):** p.9, Starter Language Focus — this/that/these/those; have got, Ex1-5. Optional short practice after the SOW activities; do not substitute it for the lesson tasks.
+**PBD:** Check three independent written descriptions and listen for two clear spoken descriptions with appropriate adjectives.
+**Differentiation:** Provide picture prompts and degree words. Ask confident pupils to compare two items using precise details.
