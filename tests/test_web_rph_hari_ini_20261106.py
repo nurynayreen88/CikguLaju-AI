@@ -284,6 +284,17 @@ class DailyTimetablePureTests(TestCase):
                     {"week": 2, "group": "B", "lessons": {"": [3, 4, 5]}},
                 )
 
+    def test_pjpk_year3_suggests_two_pj_and_one_pk_before_assessment(self):
+        expected = {"PJ": [37, 38], "PK": [32]}
+        for state, group in (("Kedah", "A"), ("Johor", "B")):
+            with self.subTest(state=state):
+                self.assertEqual(
+                    weekly_rpt_suggestion(state, date(2027, 10, 19), "PJPK", 3),
+                    {"week": 38, "group": group, "lessons": expected},
+                )
+                for no_pdp in (date(2027, 5, 11), date(2027, 10, 26)):
+                    self.assertIsNone(weekly_rpt_suggestion(state, no_pdp, "PJPK", 3))
+
     def test_science_year6_suggests_opening_unit_before_existing_lessons(self):
         weeks = weekly_catalog()["SCIENCE:6"]
         self.assertEqual(set(map(int, weeks)), set(range(1, 45)) - {6, 19})

@@ -3,7 +3,7 @@
   "year": 2027,
   "status": "DRAF_USER_VISIBLE_NOT_ACADEMIC_FINAL",
   "count": 56,
-  "pages": 1502,
+  "pages": 1508,
   "files": {
     "bahasa_arab:2": {
       "path": "bahasa_arab/tahun_2.pdf",
@@ -317,17 +317,17 @@
     },
     "pjpk:2": {
       "path": "pjpk/tahun_2.pdf",
-      "sha256": "7568cdf0b50c9e536456f9f623e2815fbbfa19fd99f6e3b567095b7f77be70b4",
-      "bytes": 560930,
-      "pages": 26,
+      "sha256": "6b4896600a55b9c6ef9e759eafc5243c16fea7da1b30a7857b0d2ff447015705",
+      "bytes": 209772,
+      "pages": 28,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
       "full_school_closures_rescheduled": true
     },
     "pjpk:3": {
       "path": "pjpk/tahun_3.pdf",
-      "sha256": "c57ea9a64282a10e8f498d12f97eed49a1bc3ca18f03bc2ffa7d45b56d164059",
-      "bytes": 570212,
+      "sha256": "33aa07b8347a15aae8955d2151c046eeb9c77b5f34014e6ff597258d68e45be3",
+      "bytes": 214621,
       "pages": 35,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
@@ -335,27 +335,27 @@
     },
     "pjpk:4": {
       "path": "pjpk/tahun_4.pdf",
-      "sha256": "10b6d401209a5273acfce782b4766bcbe29bfab0e21681be04abcb0ae0d0b3fd",
-      "bytes": 554207,
-      "pages": 26,
+      "sha256": "4d635dcc07f8ddb85723390a5f3c6d42142965c070205aead0ff788afa388504",
+      "bytes": 196994,
+      "pages": 27,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
       "full_school_closures_rescheduled": true
     },
     "pjpk:5": {
       "path": "pjpk/tahun_5.pdf",
-      "sha256": "c9998a99c0099baef76ff6f844d878ebb73763cd93deca276cf7979b59716a27",
-      "bytes": 551136,
-      "pages": 22,
+      "sha256": "2a3d3a905f19001e3ddbe15a79dbd876be3e9e4298f6ab4602d5a610508386e7",
+      "bytes": 193426,
+      "pages": 23,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
       "full_school_closures_rescheduled": true
     },
     "pjpk:6": {
       "path": "pjpk/tahun_6.pdf",
-      "sha256": "f5493dcc3e8ff74443955a6fa23024e5dbe8f6540597f32d51e2a6cbc7b4a4df",
-      "bytes": 553460,
-      "pages": 25,
+      "sha256": "df2a8a1bf6276d652c6c924887fbf8e02695a1d67e81eac241f8c513f49fc0d0",
+      "bytes": 196813,
+      "pages": 27,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
       "full_school_closures_rescheduled": true
