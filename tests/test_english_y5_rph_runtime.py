@@ -1,6 +1,7 @@
 """Offline English Year 5 release gate checks, without importing app.py or touching credits."""
 import json
 from hashlib import sha256
+import re
 import tempfile
 import types
 import unittest
@@ -30,6 +31,19 @@ class EnglishY5IntegrationTests(unittest.TestCase):
     def test_documented_draft_preserved(self):
         self.assertIn("DRAF", (LESSON_ROOT / "lesson_088.md").read_text(encoding="utf-8"))
         self.assertIn("DRAF", (LESSON_ROOT / "lesson_160.md").read_text(encoding="utf-8"))
+
+    def test_lesson_001_workbook_and_phase_notes_are_scheduled(self):
+        source = (LESSON_ROOT / "lesson_001.md").read_text(encoding="utf-8")
+        durations = re.findall(r"\*\*[^\n]+?\((\d+) min\):\*\*", source)
+        self.assertEqual(sum(map(int, durations)), 60)
+        rows = adapt_rows({"subject": "English", "year": 5, "lesson_no": 1}, {})
+        self.assertIn("final six minutes, pupils complete Workbook p.4 Exercise 2",
+                      rows["AKTIVITI UTAMA"])
+        self.assertIn("44 min", rows["CATATAN AKTIVITI UTAMA"])
+        self.assertEqual(rows["CATATAN PENUTUP"], "8 min · Oral recap")
+        self.assertNotIn("notes", rows["PENUTUP"].lower())
+        self.assertEqual(rows["MAIN LEARNING STANDARD"], "1.2.1")
+        self.assertEqual(rows["COMPLEMENTARY LEARNING STANDARD"], "3.2.1")
 
     def test_target_and_fallback_are_nondestructive(self):
         rows = {"OBJEKTIF PEMBELAJARAN": "original", "TARIKH": "03/11"}

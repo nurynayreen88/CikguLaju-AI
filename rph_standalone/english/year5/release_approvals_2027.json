@@ -3,8 +3,8 @@
   "year": 5,
   "approved_lessons": {
     "1": {
-      "source_sha256": "c5ae6d7a65db27cf72d7fbee3066e32c1a31c42d546be80c6fc8f5c0d89d92f1",
-      "teacher_approved": true,
+      "source_sha256": "7aabaaa29ff8445d2b6f87c3181bbeef0fdf47979d649f79da59b3162afbe7b8",
+      "teacher_approved": false,
       "official_sow_pair_verified": true,
       "printed_book_activity_verified": true,
       "audio_content_verified_or_not_applicable": true,

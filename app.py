@@ -10191,6 +10191,7 @@ def _rph_display_value(s,key,value):
 def _rph_title(s): return 'DAILY LESSON PLAN' if _is_english_subject(s) else 'RANCANGAN PENGAJARAN HARIAN'
 def _create_rph_word(doc, section, s, ai_text, path):
     rph = _rph_rows(s, ai_text)
+    body_size = 9.25 if rph.get('CATATAN AKTIVITI UTAMA') else 8.5
     p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     rr = p.add_run(_rph_title(s)); rr.bold=True; rr.font.size=Pt(15)
     p.paragraph_format.space_after = Pt(6)
@@ -10214,9 +10215,21 @@ def _create_rph_word(doc, section, s, ai_text, path):
     t2=doc.add_table(rows=1, cols=3); t2.alignment=WD_TABLE_ALIGNMENT.CENTER
     for i,h in enumerate((['Phase / Time','Teaching and Learning Activities','Notes'] if _is_english_subject(s) else ['Fasa / Masa','Aktiviti Pengajaran & Pembelajaran','Catatan'])):
         q=t2.rows[0].cells[i].paragraphs[0]; q.alignment=WD_ALIGN_PARAGRAPH.CENTER; z=q.add_run(h); z.bold=True
-    phases=([('Set Induction',rph.get('SET INDUKSI','')),('Main Activities',rph.get('AKTIVITI UTAMA','')),('Closure',rph.get('PENUTUP',''))] if _is_english_subject(s) else [('Set Induksi',rph.get('SET INDUKSI','')),('Aktiviti Utama',rph.get('AKTIVITI UTAMA','')),('Penutup',rph.get('PENUTUP',''))])
-    for phase,text in phases:
-        cells=t2.add_row().cells; cells[0].text=phase; cells[1].text=_rph_format_activity_lines(text) if text else '—'; cells[2].text=''
+    phase_labels = ('Set Induction', 'Main Activities', 'Closure') if _is_english_subject(s) else ('Set Induksi', 'Aktiviti Utama', 'Penutup')
+    for phase, key in zip(phase_labels, ('SET INDUKSI', 'AKTIVITI UTAMA', 'PENUTUP')):
+        cells = t2.add_row().cells
+        cells[0].text = phase
+        activity = _rph_format_activity_lines(rph.get(key, '')) or '—'
+        note = rph.get(f'CATATAN {key}', '')
+        if note:
+            paragraph = cells[1].paragraphs[0]
+            for index, line in enumerate(activity.splitlines()):
+                if index:
+                    paragraph.add_run().add_break()
+                paragraph.add_run(line).bold = line in ('Activity 1', 'Activity 2', 'Activity 3')
+        else:
+            cells[1].text = activity
+        cells[2].text = note
     for row in t2.rows:
         for c in row.cells:
             _word_set_cell_border(c, top={'val':'single','sz':'6','color':'666666'}, bottom={'val':'single','sz':'6','color':'666666'}, left={'val':'single','sz':'6','color':'666666'}, right={'val':'single','sz':'6','color':'666666'})
@@ -10234,7 +10247,7 @@ def _create_rph_word(doc, section, s, ai_text, path):
     section.left_margin = Cm(1.1)
     section.right_margin = Cm(1.1)
     section.footer_distance = Cm(0.3)
-    doc.styles['Normal'].font.size = Pt(8.5)
+    doc.styles['Normal'].font.size = Pt(body_size)
     doc.styles['Normal'].paragraph_format.space_after = Pt(0)
     doc.styles['Normal'].paragraph_format.space_before = Pt(0)
     doc.styles['Normal'].paragraph_format.line_spacing = 1.0
@@ -10259,7 +10272,12 @@ def _create_rph_word(doc, section, s, ai_text, path):
                     para.paragraph_format.space_after = Pt(0)
                     para.paragraph_format.line_spacing = 1.0
                     for run in para.runs:
-                        run.font.size = Pt(8.5)
+                        run.font.size = Pt(body_size)
+    # Keep the same Word grid and cell widths for RPH with populated Notes.
+    if rph.get('CATATAN AKTIVITI UTAMA'):
+        for tbl, widths in ((t2, (2.65, 12.65, 3.45)), (table, (5.3, 13.45)), (t3, (5.3, 13.45))):
+            for column, width in zip(tbl.columns, widths):
+                column.width = Cm(width)
     # Give activity text most of the page width; Notes remains available.
     for row in t2.rows:
         for cell, width in zip(row.cells, (Cm(2.65), Cm(12.65), Cm(3.45))):
@@ -10729,9 +10747,10 @@ def create_pdf_file(s, ai_text, cid):
     # RPH uses a professional table layout rather than plain paragraphs.
     if s.get('task') == 'rph':
         # v23.61: compact professional RPH; worksheet design remains untouched.
-        body_style.fontSize=7.75; body_style.leading=8.85
-        section_style.fontSize=8.8; section_style.leading=9.8
         rph = _rph_rows(s, ai_text)
+        body_style.fontSize, body_style.leading = (
+            (9.25, 11) if rph.get('CATATAN AKTIVITI UTAMA') else (7.75, 8.85))
+        section_style.fontSize=8.8; section_style.leading=9.8
         story = [Paragraph(_rph_title(s), title_style), Spacer(1,2*mm)]
         rows=[]
         info_labels=(['MATA PELAJARAN','TAHUN/TINGKATAN','TARIKH','HARI','MASA','KELAS','BILANGAN MURID','TAJUK','MAIN CONTENT STANDARD','MAIN LEARNING STANDARD','COMPLEMENTARY CONTENT STANDARD','COMPLEMENTARY LEARNING STANDARD','OBJEKTIF PEMBELAJARAN','KRITERIA KEJAYAAN','PENGETAHUAN SEDIA ADA','BAHAN BANTU MENGAJAR','EMK / NILAI','KBAT / PAK21','PENTAKSIRAN'] if _is_english_subject(s) else ['MATA PELAJARAN','TAHUN/TINGKATAN','TARIKH','HARI','MASA','KELAS','BILANGAN MURID','TAJUK','STANDARD KANDUNGAN','STANDARD PEMBELAJARAN','OBJEKTIF PEMBELAJARAN','KRITERIA KEJAYAAN','PENGETAHUAN SEDIA ADA','BAHAN BANTU MENGAJAR','EMK / NILAI','KBAT / PAK21','PENTAKSIRAN'])
@@ -10769,7 +10788,8 @@ def create_pdf_file(s, ai_text, cid):
         for phase,key in ([('Set Induction','SET INDUKSI'),('Main Activities','AKTIVITI UTAMA'),('Closure','PENUTUP')] if _is_english_subject(s) else ([('ست ايندوکسي','SET INDUKSI'),('اکتيۏيتي اوتام','AKTIVITI UTAMA'),('ڤنوتوڤ','PENUTUP')] if _pi_primary_v25210(s) else [('Set Induksi','SET INDUKSI'),('Aktiviti Utama','AKTIVITI UTAMA'),('Penutup','PENUTUP')])):
             phase_label, phase_text = _rph_phase_time_v25179(phase, rph.get(key) or '—')
             val=_rph_activity_heading_markup_v25184(phase_text or '—')
-            phase_rows.append([Paragraph('<b>'+phase_label+'</b>',body_style),Paragraph(val,body_style),Paragraph('',body_style)])
+            note = escape(rph.get(f'CATATAN {key}', '')).replace('\n', '<br/>')
+            phase_rows.append([Paragraph('<b>'+phase_label+'</b>',body_style),Paragraph(val,body_style),Paragraph(note,body_style)])
         pt=Table(phase_rows,colWidths=[32*mm,112*mm,28*mm],repeatRows=1)
         pt.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.black),('BACKGROUND',(0,0),(-1,0),colors.white),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),3),('BOTTOMPADDING',(0,0),(-1,-1),3)]))
         story.extend([pt,Spacer(1,3*mm)])

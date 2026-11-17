@@ -8,10 +8,14 @@
 **Success criteria:** State what Kate’s text is mainly about before listening and identify the main idea heard on CD1.03.
 
 1. **Set induction (8 min):** Start a free-time word chain. Ask pupils to group the words into things they do alone or with friends.
-2. **Activity 1 (12 min):** Use SB Activity 1 and CD1.02 to match words with pictures. Model the different word stress in photograph and photography.
-3. **Activity 2 (14 min):** In SB Activity 2, pupils read the text, write its main idea and predict the missing words with a partner.
-4. **Activity 3 (18 min):** Play CD1.03 with the passage covered for the first listen. Pupils note the main idea they hear, then uncover the passage and check the gaps on replay. If time permits, pupils complete Workbook p.4 Exercise 2.
+2. **Activity 1 (10 min):** Use SB Activity 1 and CD1.02 to match words with pictures. Model the different word stress in photograph and photography.
+3. **Activity 2 (12 min):** In SB Activity 2, pupils read the text, write its main idea and predict the missing words with a partner.
+4. **Activity 3 (22 min):** Play CD1.03 with the passage covered. Pupils note the main idea, then uncover the passage and check the gaps on replay. In the final six minutes, pupils complete Workbook p.4 Exercise 2.
 5. **Closure (8 min):** Ask pupils to share a free-time activity and one way to stay safe when chatting online.
 
 **PBD:** Check the main idea from reading and from listening separately. Ask pupils to identify one clue that supports each response.
 **Differentiation:** Offer picture cues and two gist choices. Replay the track for pupils who need support.
+
+**Induction notes:** 8 min · Word chain
+**Main activities notes:** 44 min · SB p.4, CD1.02–03, WB p.4 Ex2
+**Closure notes:** 8 min · Oral recap
