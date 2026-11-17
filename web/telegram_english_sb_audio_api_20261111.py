@@ -15,6 +15,9 @@ import re
 from flask import Blueprint, Response, jsonify, request
 from web.telegram_verified_rpt_rph_bridge import _authorization
 from web.english_y4_wrong_book_audio_hold_20261105 import HOLD_LESSONS
+from resources.english.y4.verified_class_audio import (
+    LESSON_TRACKS as YEAR4_VERIFIED_LESSONS, RECORDINGS as YEAR4_RECORDINGS,
+)
 from resources.english.y3.student_book_repaired_source import (
     YEAR3_SB_DRIVE_FILE_ID, YEAR3_SB_PAGE_COUNT,
 )
@@ -438,10 +441,20 @@ def _audio_rows(runtime, year, lesson, *, year2_rows=None):
             entries.append({"title": title, "reference": reference, "id": file_id})
         return entries
     state = _lesson_state(row, year, lesson)
-    if year == 4 and (lesson == 30 or lesson in HOLD_LESSONS
-            or not getattr(runtime, "CIKGULAJU_Y4_WRONG_BOOK_AUDIO_HOLD_ACTIVE", False)
-            or not getattr(runtime, "CIKGULAJU_Y4_L030_AUDIO_CONFLICT_GUARD_ACTIVE", False)):
-        return []
+    if year == 4:
+        if (lesson == 30
+                or not getattr(runtime, "CIKGULAJU_Y4_WRONG_BOOK_AUDIO_HOLD_ACTIVE", False)
+                or not getattr(runtime, "CIKGULAJU_Y4_L030_AUDIO_CONFLICT_GUARD_ACTIVE", False)):
+            return []
+        if lesson in YEAR4_VERIFIED_LESSONS:
+            return [
+                {"title": f"English Tahun 4 • Lesson {lesson:03d} • {reference}",
+                 "reference": reference, "id": YEAR4_RECORDINGS[reference][0],
+                 "sha256": YEAR4_RECORDINGS[reference][1]}
+                for reference in YEAR4_VERIFIED_LESSONS[lesson]
+            ]
+        if lesson in HOLD_LESSONS:
+            return []
     # These are the same resolvers used by Telegram's selected-material sender.
     entries = (runtime._en4_audio_rows_v25257(state) if year == 4
                else runtime._lesson_media_rows_v2407(state))
@@ -664,6 +677,7 @@ def create_english_book_audio_blueprint(runtime, *, root=ROOT):
 
 def install_telegram_extras(runtime):
     """Use the same audited material in the Telegram picker and Web API."""
+    from web.english_y4_standalone_runtime import _selected_y4_lesson
     from web.english_y5_standalone_runtime import _target as year5_lesson
     from web.english_y6_standalone_runtime import _target as year6_lesson
 
@@ -671,6 +685,9 @@ def install_telegram_extras(runtime):
     send_before = runtime._send_reference_material_v2528
 
     def selection(state):
+        lesson = _selected_y4_lesson(state)
+        if lesson in YEAR4_VERIFIED_LESSONS:
+            return 4, lesson
         lesson = year5_lesson(state)
         if lesson is not None:
             return 5, lesson
@@ -682,7 +699,8 @@ def install_telegram_extras(runtime):
         if lesson is None:
             return items
         choices = {"media": _audio_rows(runtime, year, lesson)}
-        choices["textbook"] = _book_selection(runtime, year, lesson)
+        if year != 4:
+            choices["textbook"] = _book_selection(runtime, year, lesson)
         for key, exists in choices.items():
             if exists and key not in items:
                 items.append(key)
@@ -692,7 +710,7 @@ def install_telegram_extras(runtime):
 
     def send(cid, state, key):
         year, lesson = selection(state)
-        if lesson is None or key not in ("textbook", "media"):
+        if lesson is None or (key != "media" and (key != "textbook" or year == 4)):
             return send_before(cid, state, key)
         prefix = f"English_Y{year}_Lesson_{lesson:03d}"
         with TemporaryDirectory(prefix="cikgulaju-english-extras-") as folder:
