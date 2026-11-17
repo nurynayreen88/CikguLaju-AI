@@ -73,10 +73,16 @@ class ReadinessTests(unittest.TestCase):
 
     @patch("web.unified_rph_web._has_paid_access", return_value=True)
     @patch("web.unified_rph_web._account", return_value=({"telegram_user_id":123}, None))
-    def test_unapproved_year5_is_not_misrepresented_as_telegram_rph(self, *_):
-        row = source_records(5, "ENGLISH")[0]
+    @patch("web.english_y5_standalone_runtime.approved_for_telegram", return_value=False)
+    def test_year5_availability_distinguishes_audited_draft_from_held_lessons(self, *_):
+        row, held = source_records(5, "ENGLISH")[:2]
         query = {"year":5, "subject":"ENGLISH", "unit":row["unit"], "lesson":row["token"]}
         response = self.client.get("/api/web/rph/availability", query_string=query)
+        self.assertEqual(response.status_code, 200, response.get_json())
+        self.assertEqual(response.get_json()["status"], "DRAF UNTUK SEMAKAN GURU")
+        self.assertEqual(response.get_json()["formats"], ["word", "pdf"])
+        response = self.client.get("/api/web/rph/availability",
+                                   query_string={**query, "unit": held["unit"], "lesson": held["token"]})
         self.assertEqual(response.status_code, 503)
         self.assertEqual(response.get_json()["code"], "TELEGRAM_RPH_PARITY_NOT_READY")
 

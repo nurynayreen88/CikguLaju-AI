@@ -809,6 +809,9 @@ def create_blueprint():
                            "formats": selected["formats"]})
         if selected.get("source") == "telegram-integrated-english-2027":
             result.update({"status": selected["status"], "lessons": selected["lessons"]})
+        if (selected.get("source") == "existing-standalone-rph"
+                and selected.get("status") == "DRAF UNTUK SEMAKAN GURU"):
+            result.update({"status": selected["status"], "formats": ["word", "pdf"]})
         return jsonify(result)
 
     @bp.get("/api/web/rph/pbd-context")

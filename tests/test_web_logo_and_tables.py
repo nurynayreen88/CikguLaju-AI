@@ -135,7 +135,7 @@ class WebLogoAndTables(unittest.TestCase):
             (3,"ENGLISH",None,"MAIN LEARNING STANDARD","1.3.1",
              "Student's Book"),
             (5,"ENGLISH",None,"MAIN LEARNING STANDARD","1.2.1",
-             "Listen and identify"),
+             "Workbook p.4 Exercise 2"),
             (6,"ENGLISH",None,"PENTAKSIRAN","—",
              "Main Activities"),
             (2,"MORAL",None,"STANDARD PEMBELAJARAN","1.1",
@@ -147,10 +147,6 @@ class WebLogoAndTables(unittest.TestCase):
             if component: query["component"]=component
             with self.subTest(year=year,subject=subject):
                 response=self.client.get("/api/web/rph/preview",query_string=query)
-                if year==5 and subject=="ENGLISH":
-                    self.assertEqual(response.status_code,503)
-                    self.assertEqual(response.get_json()["code"],"TELEGRAM_RPH_PARITY_NOT_READY")
-                    continue
                 self.assertEqual(response.status_code,200,response.get_json())
                 layout=response.get_json()["telegram_layout"]
                 info="\n".join(str(entry["value"]) for entry in layout["header"])
