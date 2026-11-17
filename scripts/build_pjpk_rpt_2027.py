@@ -87,11 +87,13 @@ def _data():
             raise ValueError(f"Duplicated: {key}")
         seen.add(key)
         week = int(rec["week"])
-        if week < 1 or week > 38:
+        if week < 1 or week > 38 or week in (6, 18, 19):
             raise ValueError(f"Invalid week: {key}")
-        if rec["subject"] in by_year[rec["year"]].setdefault(week, {}):
-            raise ValueError(f"Duplicate subject within week: {key}")
-        by_year[rec["year"]][week][rec["subject"]] = dict(rec)
+        slots = by_year[rec["year"]].setdefault(week, {}).setdefault(rec["subject"], [])
+        limit = 2 if rec["subject"] == "PJ" and rec["year"] in (2, 3) else 1
+        if len(slots) >= limit:
+            raise ValueError(f"Too many sessions for this component and week: {key}")
+        slots.append(rec)
     for year in YEARS:
         count = {k: sum(1 for r in records if r["year"] == year and r["subject"] == k)
                  for k in ("PJ", "PK")}
@@ -99,7 +101,6 @@ def _data():
                          "PK": 35 if year == 2 else 32}
     for rec in records:
         rec["activity"], rec["assessment"] = _record_activity(rec)
-        by_year[rec["year"]][rec["week"]][rec["subject"]] = rec
     return obj, by_year
 
 
@@ -142,10 +143,8 @@ def _pdf(year, out, weeks, records):
                  f"Kumpulan B: {week['groupB']}  |  Tahun 2027")
         header = [_p(x, bold) for x in COL_HEADERS]
         data = [header]
-        for kind in ("PJ", "PK"):
-            rec = chunk.get(kind)
-            if not rec:
-                continue
+        for rec in [*chunk.get("PJ", ()), *chunk.get("PK", ())]:
+            kind = rec["subject"]
             notes = f"Aktiviti: {rec['activity']}\nPBD: {rec['assessment']}"
             if rec["status"] == "BLOK_KONFLIK_SK_SP":
                 notes += "\nBLOK - konflik sumber SP 5.2.2, jangan jana RPH PdP ini."
@@ -165,8 +164,9 @@ def _pdf(year, out, weeks, records):
             ]
             data.append(entry)
         if len(data) == 1:
+            use = "Pentaksiran pertengahan tahun" if number == 18 else "Tiada PdP baharu"
             data.append([_p("—", regular), _p("Pelarasan", small),
-                         _p("Tiada PdP baharu untuk slot ini.", regular),
+                         _p(use, regular),
                          _p("—", regular), _p("—", regular),
                          _p("Tentukan pengukuhan berdasarkan keperluan sekolah.", small)])
         t = Table(data, colWidths=COL_WIDTH, repeatRows=1, hAlign="LEFT")
@@ -240,10 +240,9 @@ def _docx(year, out, weeks, records):
             cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.TOP
             run = cell.paragraphs[0].add_run(label)
             run.bold, run.font.size = True, Pt(8)
-        for kind in ("PJ", "PK"):
-            rec = records.get(num, {}).get(kind)
-            if not rec:
-                continue
+        chunk = records.get(num, {})
+        for rec in [*chunk.get("PJ", ()), *chunk.get("PK", ())]:
+            kind = rec["subject"]
             info = [
                 f"{kind} {rec['pdp']:03d}", NAMES[kind], rec["title"],
                 "SK: "+", ".join(rec["sk"])+"\nSP: "+", ".join(rec["sp"]),
@@ -259,6 +258,8 @@ def _docx(year, out, weeks, records):
                 paragraph.paragraph_format.line_spacing = 1.0
                 rr = paragraph.add_run(str(value))
                 rr.font.size = Pt(7.5)
+        if num == 18:
+            table.add_row().cells[2].text = "Pentaksiran pertengahan tahun"
         doc.add_paragraph("")
     doc.add_paragraph("CATATAN: Tarikh A/B hanya cadangan slot; semak jadual, "
                       "cuti negeri dan sumber asal. Tahun 1 dan sisipan Akuatik T2 "
