@@ -143,9 +143,14 @@ class EnglishSourceParityTests(unittest.TestCase):
                 self.runtime._telegram_delivery_ok_v25279 = bool
                 install_telegram_extras(self.runtime)
                 self.assertEqual(self.runtime._available_materials_v2528(state),
-                                 ["workbook", "media"])
+                                 ["workbook", "media", "textbook"])
+                self.runtime.send = Mock(return_value=True)
+                self.assertTrue(self.runtime._send_reference_material_v2528(123, state, "textbook"))
+                book_buttons = self.runtime.send.call_args.args[2]
+                self.assertEqual(book_buttons[0][0]["text"], "Buka Buku Asal")
+                self.assertIn("/hykyg/rrpd/", book_buttons[0][0]["url"])
                 self.assertEqual(self.runtime._available_materials_v2528(
-                    {**state, "lesson_no": 3}), ["workbook"])
+                    {**state, "lesson_no": 3}), ["workbook", "textbook"])
                 self.assertTrue(self.runtime._send_reference_material_v2528(1, state, "media"))
                 self.assertEqual(self.runtime.send_document.call_count, 2)
 

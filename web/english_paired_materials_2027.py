@@ -8,6 +8,7 @@ from flask import Blueprint, Response, jsonify, request
 from pypdf import PdfReader, PdfWriter
 
 from web import english_integrated_rph_2027 as integrated
+from web.english_book_view_links import english_book_view_link
 from web.telegram_english_sb_audio_api_20261111 import (
     _audio_rows, _book_selection, _pdf, _pdf_bytes, _verified_audio,
 )
@@ -170,6 +171,10 @@ def telegram_callback(runtime, cid, code):
             items = inventory(runtime, year, pair)
             buttons = [[{"text": item["title"], "callback_data":
                          f"en27materials:{year}:{pair[0]}:{item['id']}"}] for item in items]
+            pdf_types = {"textbook" if item["id"] == "student-book" else item["id"] for item in items}
+            book = english_book_view_link(year, pair, pdf_types)
+            if book:
+                buttons.append([{"text": book["title"], "url": book["url"]}])
             if buttons:
                 return runtime.send(cid, _label("Bahan English", pair), buttons)
             return runtime.send(cid, "Bahan sumber untuk pasangan ini belum tersedia.")
