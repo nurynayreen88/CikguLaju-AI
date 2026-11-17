@@ -337,6 +337,31 @@ class DailyTimetableRouteTests(TestCase):
         self.assertEqual({call.args[2] for call in mocks["read_progress"].call_args_list},
                          {"2026-11-05", "2026-11-06"})
 
+    def test_daily_reuses_only_its_slot_suggestion_from_the_week(self):
+        schedule = {"entries": [
+            {"day": day, "start": "08:00", "end": "09:00",
+             "class_name": "2 Amanah", "subject": "English"}
+            for day in ("Isnin", "Rabu", "Jumaat")
+        ]}
+        target = "2027-01-06"
+        with ExitStack() as stack:
+            for name, value in {"_auth": (self.conf, 123, None), "get_schedule": schedule,
+                                "get_profile": {"state_name": "Pahang"}, "read_progress": [],
+                                "malaysia_today": date(2027, 1, 6)}.items():
+                stack.enter_context(patch("web.rph_hari_ini_web." + name, return_value=value))
+            stack.enter_context(patch("web.native_telegram_integrated_english_client.integrated_enabled",
+                                      return_value=True))
+            query = {"date": target}
+            week = self.client.get("/api/web/rph/minggu-ini", query_string=query)
+            today = self.client.get("/api/web/rph/hari-ini", query_string=query)
+            self.assertEqual(week.status_code, 200)
+            self.assertEqual(today.status_code, 200)
+            week_day = next(day for day in week.json["days"] if day["date"] == target)
+            self.assertEqual(today.json["entries"], week_day["entries"])
+            self.assertEqual([slot["suggested_session"] for slot in today.json["entries"]], [[2, 3]])
+            self.assertEqual([slot["suggested_session"] for day in week.json["days"]
+                              for slot in day["entries"]], [[1], [2, 3], [4]])
+
     def test_completion_requires_owned_slot_current_date_and_signed_source_choice(self):
         signed = lesson_signer(self.conf).dumps([123, 3, "ENGLISH", "", 11])
         foreign = lesson_signer(self.conf).dumps([456, 3, "ENGLISH", "", 11])

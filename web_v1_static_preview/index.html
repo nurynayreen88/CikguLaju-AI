@@ -669,7 +669,8 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
     <button type="button" id="rph-day-mode" aria-pressed="true">RPH Hari Ini</button>
     <button type="button" id="rph-week-mode" class="secondary" aria-pressed="false">RPH Minggu Ini</button>
   </div>
-  <p id="today-instructions">Semak cadangan minggu daripada RPT, kemudian pilih Lesson/PdP mengikut kemajuan kelas. Selepas mengajar, tekan <strong>Selesai PdP</strong> pada slot berkenaan.</p>
+  <p>Isi dan simpan hari, masa, kelas dan subjek di <strong>Profil &amp; Akses → Jadual Waktu Mengajar</strong> untuk menggunakan RPH Pantas.</p>
+  <p id="today-instructions">RPH Hari Ini menunjukkan cadangan daripada RPH Minggu Ini untuk tarikh yang dipilih. Semak Lesson/PdP mengikut kemajuan kelas, kemudian catat Selesai PdP selepas mengajar.</p>
   <div class="daily-rph-toolbar">
     <div><label for="today-date">Tarikh PdP</label><input id="today-date" type="date" aria-label="Tarikh RPH Hari Ini"></div>
     <button type="button" id="today-refresh">Muat Semula Jadual</button>
@@ -685,7 +686,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <p id="today-generate-status" class="notice" role="status" aria-live="polite"></p>
   <section id="today-results" class="daily-rph-output" aria-labelledby="today-results-heading" hidden>
     <h3 id="today-results-heading">Bahan RPH Hari Ini</h3>
-    <p class="notice">Hasil disusun mengikut urutan waktu mengajar di atas. Setiap kelas dan subjek mempunyai bahan serta butang muat turun masing-masing.</p>
+    <p class="notice">Bahan disusun mengikut waktu mengajar. Tekan <strong>Download</strong> pada baris RPH Word atau RPH PDF bagi setiap slot.</p>
     <div id="today-results-list" class="daily-rph-result-list" aria-label="Bahan mengikut kelas dan subjek" aria-live="polite"></div>
   </section>
   <div class="daily-rph-footer">
@@ -1103,7 +1104,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   </section>
   <section class="guide-step">
    <h3>RPH Pantas</h3>
-   <p>Pilih tab <strong>RPH Hari Ini</strong> atau <strong>RPH Minggu Ini</strong> untuk membuka jadual yang disimpan. Pilih Lesson/PdP bagi setiap slot. Dalam tab <strong>RPH Hari Ini</strong>, tekan <strong>Selesai PdP</strong> selepas mengajar.</p>
+   <p>Simpan <strong>Jadual Waktu Mengajar</strong> di <strong>Profil &amp; Akses</strong> dahulu. <strong>RPH Minggu Ini</strong> memaparkan cadangan seminggu dan <strong>RPH Hari Ini</strong> menunjukkan cadangan bagi tarikh yang dipilih. Selepas semak Lesson/PdP, muat turun fail Word atau PDF pada slot berkenaan.</p>
    <button type="button" data-guide-view="today" aria-controls="view-today">Buka RPH Pantas</button>
   </section>
   <section class="guide-step">
@@ -2362,7 +2363,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
-<script src="/assets/rph-today.js?v=rph-pantas-20261117"></script>
+<script src="/assets/rph-today.js?v=rph-pantas-cadangan-harian-20261117"></script>
 <script src="/assets/teacher-profile.js?v=profile-search-select-20261116"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>

@@ -38,6 +38,7 @@ class WeeklyRphBrowserTest(TestCase):
           <script src="/rph-today.js"></script>
         """
         monday = slot("Isnin", "ENGLISH", "English", "2 Bestari")
+        monday["rpt_suggestion"]["lessons"][""] = [1, 2, 3, 4]
         tuesday = slot("Selasa", "SCIENCE", "Sains", "2 Amanah")
         week_days = [
             {"date": MONDAY, "day": "Isnin", "entries": [monday]},
@@ -86,6 +87,8 @@ class WeeklyRphBrowserTest(TestCase):
             page.evaluate("window.rphTodayLoad()")
             page.get_by_text("2 Bestari · English", exact=True).wait_for()
             self.assertEqual(page.locator("#view-today-heading").inner_text(), "RPH Pantas")
+            page.get_by_text("Cadangan slot ini: Lesson 001.", exact=True).wait_for()
+            self.assertEqual(page.get_by_text("Cadangan RPT · Minggu", exact=False).count(), 0)
             page.get_by_role("button", name="RPH Minggu Ini", exact=True).click()
             page.get_by_text("Cuti dalam takwim", exact=True).wait_for()
             self.assertEqual(page.locator("#view-today-heading").inner_text(), "RPH Pantas")
