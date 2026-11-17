@@ -154,7 +154,8 @@ class WebEnglishSourceTests(unittest.TestCase):
                         bridge + "english_workbook_pdf", return_value=b"%PDF-1.7\n" + b"A" * 600) as pdf:
                     reply = self.client.get("/api/web/rph/extra-materials", query_string=params)
                     self.assertEqual(reply.status_code, 200)
-                    self.assertEqual([r["type"] for r in reply.json["items"]], ["workbook"])
+                    expected = ["workbook", "textbook"] if year == 6 else ["workbook"]
+                    self.assertEqual([r["type"] for r in reply.json["items"]], expected)
                     download = self.client.get(reply.json["items"][0]["url"])
                 metadata.assert_called_once_with(year, lesson)
                 pdf.assert_called_once_with(year, lesson)
@@ -191,8 +192,10 @@ class WebEnglishSourceTests(unittest.TestCase):
               patch(bridge + "_json", return_value=data),
               patch(bridge + "_get", return_value=raw) as fetch):
             listed = self.client.get("/api/web/rph/extra-materials", query_string=query)
-            item, = listed.json["items"]
+            item, book = listed.json["items"]
             self.assertEqual(item["type"], "audio")
+            self.assertEqual(book["action"], "Buka Buku Asal")
+            self.assertIn("/hykyg/rrpd/", book["url"])
             reply = self.client.get(item["url"])
         self.assertEqual(reply.status_code, 200)
         self.assertEqual(reply.mimetype, "audio/mpeg")
