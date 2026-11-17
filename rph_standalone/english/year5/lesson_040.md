@@ -1,21 +1,17 @@
-# English Year 5 — Standalone RPH — Lesson 040 (Consolidation 3)
+# English Year 5 Lesson 40 — Consolidation 3
 
-**Status:** DRAF — source aligned, final QA pending. **Topic:** Days. **Main LS:** Listening 1.2.2. **Complementary LS:** Speaking 2.1.4. **Time:** 60 minutes (suggested).
+**Official SOW topic:** Days.
+**Official SOW:** Lesson 40, printed p.76. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Listening 1.2.2 and Speaking 2.1.4.
+**Materials:** English Plus 1 SB p.93 Activities 1–5, TB p.107, CD3.05–CD3.07, WB p.27 Ex5 and a movable clock.
+**Learning objectives:** Pupils retrieve specific times and activities from spoken timetables and ask about and describe future plans.
+**Success criteria:** Record at least three accurate details from the clips and exchange a question and an answer about a future activity with a day and time.
 
-**Materials:** English Plus 1 Student Book p.93 Activities 1–5; Teacher Book p.107; CD3.05, CD3.06 and CD3.07 (Drive files located, audio not independently checked); movable clock; Workbook pp.26–27 Unit 2 Progress Review (historic QA mapping).
+1. **Set induction (8 min):** Review times of day with a movable clock and match clocks in SB Activity 1.
+2. **Activity 1 (12 min):** Play CD3.05 for SB Activity 2. Pupils note heard times and check them with the clock.
+3. **Activity 2 (14 min):** Use CD3.06 for SB Activities 3–4. Pupils identify activities and complete timetable details, then listen to CD3.07 for the model dialogue in Activity 5.
+4. **Activity 3 (18 min):** Pairs adapt the Activity 5 dialogue to make a future plan with a different day, time and activity. If time permits, pupils complete Workbook p.27 Exercise 5.
+5. **Closure (8 min):** Pupils tell the class one plan they agreed on and when it will happen.
 
-**Objective:** Pupils identify specific details about times and daily activities from recordings and describe plans using digital or spoken times.
-
-**Set induction (5 min):** Pupils brainstorm activities in the morning, afternoon, evening and at night; teacher models 11 a.m. and 11.00.
-
-**Activity 1 — Telling time (15 min):** Teacher revises quarter past, half past and quarter to on a movable clock. Pupils say the equivalent digital times and complete Activity 1.
-
-**Activity 2 — Listen for details (15 min):** Pupils complete Activity 2 using CD3.05 and Activity 3 using CD3.06. Teacher replays the recordings for pupils to confirm specific sports and time details.
-
-**Activity 3 — Dialogue and times (15 min):** Pupils complete Activity 4, giving two ways of saying selected times, then listen to CD3.07 for Activity 5. Pairs practise the dialogue, altering days, sports and times.
-
-**PBD (5 min):** Pupils write four heard times in digital form and give two accurate spoken equivalents. Teacher records pupils requiring additional listening support.
-
-**Closure (5 min):** Pairs exchange one new schedule question and answer.
-
-**Differentiation:** Replay or pause audio and provide a clock face as needed; extend with a full daily schedule. **QA:** Audio contents and final A4 output require verification before READY.
+**PBD:** Check three specific listening details and hear each pupil ask about and describe a future plan.
+**Differentiation:** Offer a partly completed timetable and replay short sections. Give question stems for making plans.
