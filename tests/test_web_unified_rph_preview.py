@@ -125,17 +125,31 @@ class UnifiedWebRPHTests(unittest.TestCase):
             if year == 5:
                 for extra in (r for r in records if r["lesson"] in (29, 30)):
                     self.assertIsNotNone(verified_preview(year, "ENGLISH", extra["unit"], extra["token"]))
-                # The audited lesson is held until Telegram delivery is verified.
-                self.assertEqual(result.status_code, 503)
-                self.assertEqual(result.get_json()["code"], "TELEGRAM_RPH_PARITY_NOT_READY")
-                self.assertEqual(
-                    self.client.get("/api/web/rph/word", query_string=query).status_code, 503)
+                with patch("web.english_y5_standalone_runtime.approved_for_telegram",
+                           return_value=False):
+                    draft = self.client.get("/api/web/rph/preview", query_string=query)
+                    self.assertEqual(draft.status_code, 200, draft.get_json())
+                    self.assertEqual(draft.get_json()["status"], "DRAF UNTUK SEMAKAN GURU")
+                    layout = draft.get_json()["telegram_layout"]
+                    header = {item["label"]: item["value"] for item in layout["header"]}
+                    self.assertIn("DRAF", header["Topic"])
+                    self.assertIn("44 min", layout["phases"][1]["notes"])
+                    self.assertIn("Workbook p.4 Exercise 2", layout["phases"][1]["activity"])
+                    for fmt in ("word", "pdf"):
+                        download = self.client.get("/api/web/rph/" + fmt, query_string=query)
+                        self.assertEqual(download.status_code, 200, download.get_json())
+                        self.assertEqual(download.headers["X-RPH-Generator"], "telegram-native")
+                    other = {**query, "unit": records[1]["unit"], "lesson": records[1]["token"]}
+                    held = self.client.get("/api/web/rph/word", query_string=other)
+                    self.assertEqual(held.status_code, 503)
+                    self.assertEqual(held.get_json()["code"], "TELEGRAM_RPH_PARITY_NOT_READY")
                 with patch("web.english_y5_standalone_runtime.approved_for_telegram",
                            return_value=True):
                     approved = self.client.get("/api/web/rph/preview", query_string=query)
                     self.assertEqual(approved.status_code, 200, approved.get_json())
                     layout = approved.get_json()["telegram_layout"]
                     header = {item["label"]: item["value"] for item in layout["header"]}
+                    self.assertNotIn("DRAF", header["Topic"])
                     self.assertEqual(header["Main Learning Standard"], "1.2.1")
                     self.assertEqual(header["Complementary Learning Standard"], "3.2.1")
                     self.assertIn("missing words", layout["phases"][1]["activity"])
