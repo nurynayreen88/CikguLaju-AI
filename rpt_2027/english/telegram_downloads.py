@@ -8,6 +8,7 @@ from primary_language_subjects import PRIMARY_LANGUAGE_SUBJECTS
 from tempfile import TemporaryDirectory
 import os
 from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
+from rpt_2027.bahasa_arab import documents as bahasa_arab
 from rpt_2027.sjkc.bahasa_cina import documents as bahasa_cina_sjkc
 from rpt_2027.sjkc.bahasa_melayu import documents as bahasa_melayu_sjk
 from rpt_2027.sjkc.sains import documents as sains_sjkc
@@ -23,6 +24,7 @@ from rpt_2027.pendidikan_moral.complete_96_downloads import combined_pdf_ready a
 PDF_ROOT = Path(__file__).resolve().parent
 YEARS = frozenset(range(2, 7))
 SCHOOL_RPT_CALLBACKS = {
+    "rpt2027_bahasa_arab": bahasa_arab,
     "rpt2027_sjkc": bahasa_cina_sjkc,
     "rpt2027_bm_sjk": bahasa_melayu_sjk,
     "rpt2027_sains_sjkc": sains_sjkc,

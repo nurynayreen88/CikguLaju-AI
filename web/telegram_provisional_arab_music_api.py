@@ -164,12 +164,18 @@ def _selected(year,subject,unit,lesson):
         raise ValueError("Stale draft PdP selection")
     n=int(lesson)
     if subject=="ARAB":
-        from scripts.render_bahasa_arab_staging import fields,first,display_sk_sp
+        from scripts.render_bahasa_arab_staging import SECTIONS, display_sk_sp, fields, first
         row=_arab_index()[(year,n)]
         raw=row["source_path"].read_text("utf8")
         title,f=fields(raw)
-        display_sk_sp(first(f,"DSKP SK/SP","Kod SK/SP","SK/SP cadangan"))
-        if "DRAF" not in raw or len(raw)<650 or len(first(f,"Aktiviti 1"))<60:
+        standards=display_sk_sp(first(f,"DSKP SK/SP","Kod SK/SP","SK/SP cadangan"))
+        if title!=f"RPH Bahasa Arab Tahun {year} — PdP {n:03d}" or standards!=f"{row['sk']} / {row['sp']}":
+            raise ValueError("Arabic draft source differs from the RPT index")
+        if ("DRAF" not in raw or len(raw)<650
+                or not all(first(f,*names).strip() for _,names in SECTIONS)
+                or not first(f,"BBM").strip()
+                or not first(f,"Objektif PdP","Objektif pembelajaran","Objektif").strip()
+                or not first(f,"Kriteria kejayaan").strip()):
             raise ValueError("Arabic draft content incomplete")
         return {"year":year,"subject":subject,"unit":unit,"lesson":n,
                 "title":title,"source":raw,"fields":f,"formats":["word"],

@@ -7,6 +7,13 @@ on:
       - 'tools/run_telegram_with_curriculum_api.py'
       - 'tools/other_draft_actual_smoke_20261106.py'
       - '.github/workflows/arabic-music-provisional-source-qa-20261106.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'web/telegram_provisional_arab_music_api.py'
+      - 'tools/other_draft_actual_smoke_20261106.py'
+      - 'rpt_2027/bahasa_arab/**'
+      - '.github/workflows/arabic-music-provisional-source-qa-20261106.yml'
   workflow_dispatch:
 permissions:
   contents: read
