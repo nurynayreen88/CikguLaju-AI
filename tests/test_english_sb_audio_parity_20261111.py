@@ -44,7 +44,7 @@ class FakeRuntime:
         if year not in ("Tahun 3", "Tahun 4"):
             return [], []
         return [{"lesson_no": n, "unit_name": "Our World"}
-                for n in (18, 30, 7, 43, 93, 103, 157)], ["Our World"]
+                for n in (7, 8, 17, 18, 30, 43, 93, 97, 98, 102, 103, 157)], ["Our World"]
 
     def _en34_verified_sb_pages_v25230(self, row, year):
         return {18: "15, 16", 30: "110–133", 43: "27, 28, 29, 30, 31",
@@ -228,7 +228,7 @@ class EnglishSourceParityTests(unittest.TestCase):
         self.assertTrue(response.close.called)
 
     def test_wrong_book_and_conflicting_audio_stay_hidden(self):
-        for number in (7, 30):
+        for number in (8, 30, 97):
             self.assertEqual(_audio_rows(self.runtime, 4, number), [])
             denied = self.client.get("/internal/rph/v1/english-extras/audio",
                                      headers=self.headers,
@@ -236,6 +236,28 @@ class EnglishSourceParityTests(unittest.TestCase):
             self.assertEqual(denied.status_code, 404)
         self.runtime.CIKGULAJU_Y4_WRONG_BOOK_AUDIO_HOLD_ACTIVE = False
         self.assertEqual(_audio_rows(self.runtime, 4, 93), [])
+
+    def test_year_four_replacements_have_exact_lesson_and_file_identity(self):
+        from resources.english.y4.verified_class_audio import LESSON_TRACKS, RECORDINGS
+
+        for lesson, tracks in LESSON_TRACKS.items():
+            with self.subTest(lesson=lesson):
+                rows = _audio_rows(self.runtime, 4, lesson)
+                self.assertEqual(tuple(row["reference"] for row in rows), tracks)
+                for row in rows:
+                    self.assertEqual((row["id"], row["sha256"]), RECORDINGS[row["reference"]])
+        self.assertNotEqual(_audio_rows(self.runtime, 4, 7)[0]["id"],
+                            self.runtime.Y4_AUDIO[7][0]["storage_file_id"])
+        self.runtime._available_materials_v2528 = Mock(return_value=["textbook"])
+        original_sender = Mock(return_value=True)
+        self.runtime._send_reference_material_v2528 = original_sender
+        install_telegram_extras(self.runtime)
+        state = {"year": "Tahun 4", "subject": "Bahasa Inggeris", "lesson_no": 98}
+        self.assertEqual(self.runtime._available_materials_v2528(state), ["textbook", "media"])
+        self.assertEqual(self.runtime._available_materials_v2528(
+            {**state, "lesson_no": 97}), ["textbook"])
+        self.assertTrue(self.runtime._send_reference_material_v2528(1, state, "textbook"))
+        original_sender.assert_called_once_with(1, state, "textbook")
 
     def test_year_three_uses_repaired_book_and_original_track(self):
         params = {"year": "3", "lesson": "93"}
