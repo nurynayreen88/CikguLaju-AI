@@ -11,4 +11,5 @@ Set semakan guru mengandungi 69 Lesson bernombor dan lapan sesi Review dalam lap
 
 - Aktiviti menggunakan contoh khusus, tindakan guru dan murid, soalan penilaian individu dan susulan. Lesson 09 dan 11 menggunakan operasi anu dalam lingkungan dua digit. Lesson 45–47 membezakan unit masa dan penukaran yang ditetapkan oleh DSKP. Lesson 59 memberi panjang sisi bagi satu contoh rajah bentuk L.
 - Penjanaan setempat meliputi 77 Word dan 77 PDF. Semua hasil muat satu halaman A4, termasuk sesi 90 minit. Tajuk, maklumat RPT dan minit setiap fasa disahkan.
+- Jalankan `PYTHONPATH=. python staging/dlp/year4/render_mathematics.py --output /tmp/rph-matematik-year4` untuk menyemak draf unit terhadap RPT sumber dan menghasilkan Word serta PDF semakan.
 - Status set ialah **HOLD semakan guru**. Laluan muat turun Mathematics Year 4 di Web dan Telegram belum diaktifkan.
