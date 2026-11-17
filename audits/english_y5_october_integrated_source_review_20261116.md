@@ -42,7 +42,7 @@ Enam trek daripada dua folder Class CD Get Smart Plus 4 telah diperiksa terhadap
 
 ## Status pelepasan
 
-Pakej kekal dalam semakan guru. Lejar kelulusan per Lesson Year 5 kekal sebagai sumber keputusan pelepasan. Uji penghantaran audio Year 4 sebelum mengaktifkan pakej. Jadual RPT dan syarat akses sedia ada masih digunakan dalam semakan setempat.
+**HOLD.** Semakan sumber, rakaman dan fail RPH Year 5 selesai pada 17 November 2026. Lejar pelepasan merekodkan 0/151 kelulusan guru. Penghantaran melalui akaun guru produksi bagi Word, PDF dan audio masih perlu disahkan. Lihat [keputusan semakan akhir](#keputusan-semakan-akhir-17-november-2026) di bawah.
 
 Bukti asal Lesson 29–30 tersedia dalam [rekod SOW, TB, SB, WB dan audio](english_y5_l029_l030_original_sow_tb_sb_wb_audio_sources_20261105.json).
 
@@ -52,7 +52,7 @@ Rujukan bercetak disemak pada [SOW Year 5 SK](https://www.teacherfiera.com/wp-co
 
 | Lesson | SOW bercetak | SP utama / pelengkap | SB / TB bercetak | WB dalam langkah RPH | Audio |
 | --- | ---: | --- | --- | --- | --- |
-| 31 | 66 | 3.2.4 / 4.2.4 | SB 106 A1–2 / TB 120 | 18 Ex2, bacaan kapal persiaran | CD 3-27, nombor dipadankan kepada SB dan TB. Kandungan fail Drive belum disahkan |
+| 31 | 66 | 3.2.4 / 4.2.4 | SB 106 A1–2 / TB 120 | 18 Ex2, bacaan kapal persiaran | CD 3-27, [padanan sampel dan hash](english_y4_y5_october_audio_content_20261117.md#year-5) |
 | 32 | 67 | 4.2.5 / 2.1.5 | SB 106 A3–4, 19 Key Phrases / TB 120 | 19 Ex7, susunan ayat mengenai bandar | — |
 | 35 | 71 | 1.2.1 / 4.3.2 | SB 22 A1, A3–4 / TB 36 | 21 Ex1, susunan adverba kekerapan | CD 1-21 dan CD 1-22, semakan kandungan sedia ada |
 | 36 | 72 | 2.2.1 / 3.2.3 | SB 22 A2 / TB 36 | 20 Ex3, kata kerja rutin | — |
@@ -336,3 +336,60 @@ Kesemua 11 fail di bawah berjaya dinyahkod hingga akhir. Sampel pembukaan sepanj
 | 40 | [CD3.06](https://drive.google.com/file/d/1ewXieRQlfQme_aF2Cqyb04JWC4-5bGC7/view) | SB 93 A3–4 / TB 107, panggilan untuk bertanya jadual pusat sukan. | `e114367d1c34028e641054989b1b221da9faacd59e56c5b7b8cc4684ed6396e3` |
 | 40 | [CD3.07](https://drive.google.com/file/d/1IBY4EtoZt_888i4uq5UZGL73DzaW7XGK/view) | SB 93 A5 / TB 107, dialog tentang masa kolam renang dan aktiviti sukan. | `873cf2a38b48bd48be6479fc6f867367e73137392e4b10a39cd9171bfd012124` |
 | 43 | [CD1.25](https://drive.google.com/file/d/1RzoP0gRCLP0CRz08Uu1Dw3j4nDJGotvX/view) | SB 26 A3–4 / TB 40, pasar Tahun Baru Cina dan sampul merah. | `c7bbaf4a42564aa6011858669c974d27aaddcd2ec4715b75543789bd66a4ac9c` |
+
+## Keputusan semakan akhir 17 November 2026
+
+- Kandungan Year 5 pada `5883240` melepasi CI untuk 151/151 rancangan SP tetap yang sepadan dengan SOW dan bukti buku atau panduan, serta 151/151 fail Word dan 151/151 PDF satu halaman A4. Sembilan Lesson pilihan guru disediakan sebagai cadangan berlabel. Lima RPT dan 90 pasangan Lesson Year 2–6 melepasi CI eksport. [Fail Year 5](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/43993429848/artifacts/14288437887) · [Fail Year 2–6](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/43993429760/artifacts/14288129688).
+- Padanan sampel audio meliputi semua 82 trek berbeza dalam [82 trek dan 87 rujukan Lesson yang diindeks](english_y5_all_87_sow_audio_refs_to_drive_file_ids_20261105.json), serta CD1.31 daripada aktiviti buku yang digunakan Lesson 054. Jumlah keseluruhan ialah 83 trek merentas RPH Year 5. Bukti terdahulu ada dalam [audit audio Year 4 dan Year 5](english_y4_y5_october_audio_content_20261117.md), [rekod Lesson 29–30](english_y5_l029_l030_original_sow_tb_sb_wb_audio_sources_20261105.json) dan catatan semakan RPH di atas.
+- Semakan akhir membaca 38 fail bagi 37 trek termasuk dua salinan CD2.12. Semua fail dinyahkod hingga akhir. Sampel pembukaan sehingga 28 saat dibandingkan dengan nombor aktiviti, topik atau skrip bercetak. Sampel CD3.34 turut diperiksa sehingga saat ke-77 untuk memadankan tajuk dan tema lagu pada SB 117. Kedua-dua salinan CD2.12 mempunyai saiz dan SHA-256 yang sama.
+
+| Lesson | Trek | Padanan sampel dengan sumber bercetak | SHA-256 |
+| --- | --- | --- | --- |
+| 029 | [CD3.02](https://drive.google.com/file/d/1T-HBLwsQ2C4eC3egNFZ9ZgDLsOxDRO6N/view) | SB 92 A1 / TB 106, Kate Brown memberikan butiran peribadi. | `f435ae7c336a1e573b950e3f5a6f9799388a2b74d34ace56e2ad9a3520e13fa8` |
+| 029 | [CD3.03](https://drive.google.com/file/d/16N8fUyxWYYyzmeEIYyB7_f1MzLS2i5Zf/view) | SB 92 A2–3 / TB 106, Luke menyambut murid baharu di Brighton. | `0c3ad06c99b9b219c2566b64df767c8ea587942c8b6b0a95960df31e778fd6ca` |
+| 030 | [CD3.04](https://drive.google.com/file/d/1e4xl-R1CYY3t0XGiWhr8sKxVRzBrTNcX/view) | SB 92 A4 / TB 106, Sarah menyambut Lily di Manchester. | `28b105375e3eeef4d04c2f1233b60673b28c98b686d4d4576a9224f9e5504301` |
+| 053 | [CD1.28](https://drive.google.com/file/d/1c1MGrgWNE73kKXipiLHGP1pLvCjMvFPz/view) | SB 32–33 A1–2 / TB 46–47, Simon meneka haiwan daripada foto. | `b74932c6647d4535d7af7aa38e4d6255ec0bacaf9337ee2f13197f7025e83f21` |
+| 053 | [CD1.29](https://drive.google.com/file/d/1XBVE6mmDhJDbFEVpIhgZczby20ei3hon/view) | SB 33 A3 / TB 47, soalan tekaan haiwan dan ayat contoh tentang rupa serta bunyi. | `34c527a1bffab64f6a8ce7f86d4a978a096253593000a7a3c5f8137743447868` |
+| 053 | [CD1.30](https://drive.google.com/file/d/1AkLps5UW0f4Z04DS0j8cjKaw-sAYIt08/view) | SB 33 A4 / TB 47, senarai sebutan nama haiwan. | `96b02caeca4d6770574c1b2b3ba577d597eafef5efccf594adb205106d71c82c` |
+| 054 | [CD1.31](https://drive.google.com/file/d/1fZH3Td4SOrAM9UpusH8YoVyGc-ileUQj/view) | SB 33 A5 / TB 47, rakaman bunyi untuk meneka haiwan. | `6a2e66a8f137c722bba49d55c6be10dcc591444c8e1c3a2eccfa68b8fc3576ac` |
+| 058 | [CD3.08](https://drive.google.com/file/d/1GVOiY5gyesbMWtaQxYo9rJBX0SFu5E7J/view) | SB 94 A2–3 / TB 108, panggilan Holly dengan Dylan mengenai akuarium. | `8528f7bdc05562211e0cc2b52ace9e5bb1e81d46deb1eb832a3f2df7d3036395` |
+| 058 | [CD3.09](https://drive.google.com/file/d/1EqLr6uas9lMF1eYpWYy9lBwhQ6I-oiMa/view) | SB 94 A4 / TB 108, Anna memberitahu Steve bahawa dia di taman papan selaju. | `eda93091715bcafa0e26906c5b650637ded08acc6f600854ebf5257805e2301a` |
+| 064 | [CD1.36](https://drive.google.com/file/d/14CrzfyoDH3qizONIHL0lpxY5Wgxa9OtV/view) | SB 38 A2 / TB 52, meminta izin ayah untuk menonton rancangan hidupan liar. | `5c6e58d568eb4a2d90a1c1085c7c3550559f310ee93d260b8a99511acfbbc65c` |
+| 065 | [CD1.37](https://drive.google.com/file/d/1t96NlMmNnpWQGOeZAIHHdf6v7zzKOdwC/view) | SB 40 A7 / TB 54, rancangan tentang panda gergasi. | `86a5ebd6ac07bbda8f85b07eea2ed53953b76460f74ac5d0a1d6ccae837f0b30` |
+| 067, 068 | [CD3.34](https://drive.google.com/file/d/1G0SscIC6eeIqIVjOkYcJUDZRE0R8mPXO/view) | SB 117 A1–2 / TB 131, lagu *I Can Tell You* tentang haiwan. | `88cad93abe4955e8199398b03609fe6ac191b4a88db675bfacad5ba89b96ee5c` |
+| 071 | [CD1.38](https://drive.google.com/file/d/19sKFFfl2b33kEQhMHus5BjUzEV5EiMW0/view) | SB 42–43 A1 / TB 56, soalan kuiz tentang mata pelajaran sekolah. | `a535e73e52322aec7df746a95cbbef1de47c5dc7095757d435207a2748c8ccf3` |
+| 072 | [CD1.39](https://drive.google.com/file/d/1veuNpcHfs84O7xWwufHg763Y8SdJyVKn/view) | SB 43 A3–4 / TB 57, Georgia menjelaskan hari persekolahan pilihannya. | `455d8d74d1c5452264b7e5aacd7bbf00a519de922d57284b310e31b9feeee64b` |
+| 073 | [CD1.40](https://drive.google.com/file/d/1FLyx-2yXk-pLnerWF9WPBzdI_fAHz_1P/view) | SB 44 A2 / TB 58, *World Class* memperkenalkan kelas di atas bot di Bangladesh. | `53601417e824958a92b88e4c108be5c72d90d906d365eefcf84998f7b02c2a05` |
+| 074 | [CD1.41](https://drive.google.com/file/d/10b3U6m6AUzGLxigHbX8qhSNpLDENE6Rm/view) | SB 45 A3 / TB 59, contoh sebutan seperti *doggy* dan *lovely*. | `3b287c8549aa6edd3c24b3dd0350bfa1c10a2187f2bd3c928dc62a1de2c29a17` |
+| 089 | [CD2.02](https://drive.google.com/file/d/13FhVo6FXZEKaHhGuYmftCiRxXy3CvaiK/view) | SB 52–53 A1 / TB 66–67, senarai makanan dan minuman sekolah. | `076b6191480e6fb56306fdcac07b05945cb51c884210ddeb3bfe93d09f1710d5` |
+| 089 | [CD2.03](https://drive.google.com/file/d/1s09eP6RfHQzPSXruET8eUFxBWVFMmlQY/view) | SB 53 A3 / TB 67, kontras bunyi vokal pendek dan panjang dalam perkataan makanan. | `f9eb537b504b3da674cccc789c234161d50b8d8e22d3c5980b53750b0718218e` |
+| 090 | [CD2.04](https://drive.google.com/file/d/1KF1KUstzuIrYdk4knJSinRORzXKO1_w4/view) | SB 53 A4–5 / TB 67, murid berbual tentang makan tengah hari pilihan mereka. | `7357ee28ed63d07c40d44794207b1eb9f62fdcb9a801f5d77da05ed1a0b22df4` |
+| 097 | [CD2.06](https://drive.google.com/file/d/1vkJeaH8SOBWxDLUspG05rjEHO5tTpdMu/view) | SB 56 A2 / TB 70, pasangan berlawanan seperti *ill/well* dan *active/lazy*. | `824513a7d7d391a3e4aa2c20595499e8c0989e730cdbd55464da808617764979` |
+| 107 | [CD2.12](https://drive.google.com/file/d/1nYL5y51YIIntcAWOvYK_TFhv2bmbPIcl/view), [salinan kedua](https://drive.google.com/file/d/18yfuGjVNdkfNCidGZ3ICtl7VE4HuVHFt/view) | SB 62–63 A1 / TB 76–77, senarai sukan daripada bola sepak hingga olahraga. | `447d6aab706f91a8949218af09edc05765ee7b5446807e0a9d747b0e0a773cf4` |
+| 108 | [CD2.13](https://drive.google.com/file/d/1Dmx9BxMaU5p70hLPxXTZwZDgRNQTDA93/view) | SB 63 A4–5 / TB 77, seorang murid menceritakan minat terhadap renang. | `0076fb80b4d68800837869e1f947ea22d826981d30d9bd6b3b4663fff082f758` |
+| 109 | [CD2.14](https://drive.google.com/file/d/1OXDllxlGGKI_3Rr1M7Ruf0PO6Ef2a9uf/view) | SB 64 A2 / TB 78, *Olympics Timeline* bermula dengan Sukan Olimpik moden di Greece. | `25de723a92ac3b87594fcdabf5b3f462ae443f5fb2aad826a0ac4cb904984832` |
+| 115 | [CD2.17](https://drive.google.com/file/d/1A2WLIrFQRPoO6nKnGpw2w9hhp7fTJlmt/view) | SB 67 A3 / TB 81, tiga sebutan akhiran kata kerja lampau *-ed*. | `ff61827e9672567ff62195c76043bae645f6c76809b12e5c714696ae4f0af8b0` |
+| 118 | [CD3.15](https://drive.google.com/file/d/179U0T1m3CHkKbRb59xD1b91-lVs1BWDK/view) | SB 97 A2–3 / TB 111, Elsa memperkenalkan permainan simulasi *My World*. | `a273cca8315e7a793918d5e8015c0294b6fae7fddba8eeac88bdc1d7bbf8bf47` |
+| 118 | [CD3.16](https://drive.google.com/file/d/1Yp14etxItptowG5yNlxkSeY756LybdVB/view) | SB 97 A4 / TB 111, contoh dialog tentang permainan bola sepak. | `24266726ae983cc50c0ea43d216b13b1202de7bb30a60ac56f54497a35755b91` |
+| 125 | [CD2.21](https://drive.google.com/file/d/1ZS1fAjRHwutg76EmsxNN_r0mBoZNKJkH/view) | SB 72–73 A2 / TB 86–87, kosa kata ketinggian, bentuk badan dan rambut. | `c22fd33d874504b2b495c1557bc2d01713fbd36a8534b39351d14593707014c3` |
+| 125 | [CD2.22](https://drive.google.com/file/d/1JPK3Egc3LBxyLK5WkIlex_zzlSXkIYJF/view) | SB 73 A3 / TB 87, contoh diftong seperti *light/height* dan *round/brown*. | `632ae763ddcafe8b531270cd25acc270a33014cbb6fc290e32ceb2697df5ec30` |
+| 130 | [CD3.17](https://drive.google.com/file/d/191mrSNzdTpkt7ARRKwmiARkXrbnt-9gx/view) | SB 98 A2–3 / TB 112, Mark dan Susie berbual tentang kelab masakan. | `b898f330ea7ae6f23d22159de0655fe9e1a6b71825586abb591c6e8a4ab746b8` |
+| 130 | [CD3.18](https://drive.google.com/file/d/1Zg_qgfOtrBZtvl32A-ZPm6PiWwQiIAeR/view) | SB 98 A4 / TB 112, dialog tentang individu dalam foto lawatan sekolah. | `2012a9e5b1da6088b9470082564b1f07789a765e07a7cbe9b20ac927e8fe9000` |
+| 131 | [CD2.25](https://drive.google.com/file/d/1v_PFvs1D4fmEPK2yRndkkWUFpkKzkHjG/view) | SB 76 A1 / TB 90, frasa peristiwa hidup dan bentuk kata kerja lampau. | `e308ffcb3aa89e583d5ad6c38aeaecaf1833d5f9fefb2235d26d87e1b7a84c31` |
+| 131 | [CD2.26](https://drive.google.com/file/d/1c7ltkDGJcRnJzOrCnRGHTMJsMnrUIP4p/view) | SB 76 A2–3 / TB 90, rakaman riwayat hidup Robert Wadlow. | `7e3f3f9b05081381faa2b12ee889ffd5d6cdb382e1b0b2d5965fe6efd18acdc0` |
+| 137 | [CD2.27](https://drive.google.com/file/d/1R5zBgVc-zYjl4gz0WBkBU5EJ9cEnByrI/view) | SB 78 A1–2 / TB 92, Jasmine dan Gareth memainkan watak penyanyi dan wartawan. | `7e31ab94685c7a2fb04b6485ca6fe9c42f9e93aaf17ef9c155a30bb3c3fff8f1` |
+| 139, 140 | [CD3.36](https://drive.google.com/file/d/1a2upbM7Irs5mMB8r5Um8crJUNTV-YdZg/view) | SB 119 A1–2 / TB 133, lagu *The Story of Your Life*. | `eaa4886ffff67a2c79c811b38b1c70a2744878200a9fb1a92852ddac78aaa9e2` |
+| 143 | [CD2.29](https://drive.google.com/file/d/1VzufD2N-iSNtAq_pFS3K9A0pakyCXPLL/view) | SB 82–83 A1 / TB 96–97, kosa kata barangan untuk dibawa bercuti. | `af182c21fdd27226907f66954f99b5b5722d74fd204a50e5963aa6f0b77249ef` |
+| 143, 144 | [CD2.30](https://drive.google.com/file/d/1qpPCD7TuSxnHelpltCuUenfijLzuIVZ3/view) | SB 83 A4–5 / TB 97, penutur menyebut barangan yang biasa dibawa bercuti. | `ed7f9d7171bb10a158333a8e9c56592342f5c5e35e4facbe15584485c22a0cec` |
+| 145 | [CD2.31](https://drive.google.com/file/d/1l9njfpa6Fva6zsqytNXoTei-gr2WLNOb/view) | SB 84 A2 / TB 98, *Class News* tentang rancangan cuti musim panas. | `23b7513c63c24352df2224cc756afc0ee1703ae48375d9d9c3f08d90798c4026` |
+
+### Ujian Web dan penjana Telegram
+
+Ujian setempat menghubungkan PR Web #837 pada `7facae8` dengan endpoint HTTP penjana Telegram PR #833 pada `5883240`. Akaun ujian menggunakan sesi bertandatangan. Empat ujian unit Telegram dan tiga ujian unit Web berkaitan lulus.
+
+- Lejar asal menyekat 36 pilihan Lesson Year 5 bagi semakan ketersediaan dan muat turun Word/PDF. Kesemua 108 permintaan memulangkan HTTP 503 dan pengurangan kredit tidak dipanggil. Permintaan tanpa sesi Web ditolak dengan HTTP 401.
+- Dalam persekitaran ujian, lejar sementara mengandungi SHA-256 sumber tepat bagi 36 Lesson yang diuji. Kedua-dua pilihan Lesson bagi kesemua 18 pasangan menghasilkan PBD dan kandungan Word/PDF yang sepadan. Sebanyak 36 fail Word A4 dan 36 PDF satu halaman A4 dimuat turun melalui laluan sebenar penjana. Lima PDF RPT pada Web sepadan byte demi byte dengan fail pada cabang Telegram.
+- Akaun berbayar ujian tidak menggunakan kredit. Bagi satu permintaan percubaan, rutin pengurangan kredit ujian dipanggil sekali selepas fail Word sah diterima. Ujian ini memulangkan baki 8 daripada 9 melalui respons Web.
+- Laman [CikguLaju produksi](https://cikgulaju-web.onrender.com/) memulangkan HTTP 200. Laluan Word, PDF dan RPT Year 5 memulangkan HTTP 401 tanpa sesi. Status produksi edisi Oktober kekal belum disahkan.
+
+Kelulusan pedagogi untuk versi sumber ini perlu direkodkan dalam [lejar pelepasan](../rph_standalone/english/year5/release_approvals_2027.json), diikuti pengesahan penghantaran sebenar menggunakan akaun guru pada Web dan Telegram. Fail audio sumber Year 4 dan Year 5 telah dipadankan. Laluan audio Web pada cabang ini menerima Year 2–4; penghantaran audio Year 5 pada Web berada di luar pakej RPT/RPH ini. Semak penghantaran audio Year 4 yang dirujuk dan penghantaran Year 5 pada Telegram dalam ujian produksi.
