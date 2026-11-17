@@ -29,7 +29,13 @@ def main():
     for y,count in {2:60,3:60,4:58,5:60,6:60}.items():
         unit=_unit_rows(y,"ARAB")
         assert len(unit)==4
-        lessons=sum(len(_lesson_rows(y,"ARAB",u["value"])) for u in unit)
+        lessons=0
+        for u in unit:
+            options=_lesson_rows(y,"ARAB",u["value"])
+            lessons+=len(options)
+            for option in options:
+                plan=_selected(y,"ARAB",u["value"],option["value"])
+                assert plan["lesson"]==int(option["value"]), (y,u,option)
         assert lessons==count,(y,lessons)
         print("ARAB DRAF catalog",y,"unit",len(unit),"pdp",lessons,flush=True)
     for y in range(2,7):
@@ -64,7 +70,7 @@ def main():
             assert avail.json["status"]=="DRAF"
             formats=avail.json["formats"]
             if subject=="MUZIK":
-                from web.telegram_provisional_arab_music_api import _selected,_music_state
+                from web.telegram_provisional_arab_music_api import _music_state
                 src=_selected(year,subject,first["value"],lesson)
                 state,text=_music_state(src,{"class":"2 Bestari","date":"2026-11-06",
                                         "time":"08:00 - 09:00","students":"30"})
@@ -101,6 +107,17 @@ def main():
                         "teacher":{"class":"","date":"","time":"","students":""},
                         "format":"pdf"})
                 assert bad.status_code==503,bad.json
+    year6={"year":6,"subject":"ARAB","unit":"u03","lesson":"030"}
+    assert c.get("/internal/rph/v1/other-drafts/availability",query_string=year6,headers=auth).status_code==200
+    result=c.post("/internal/rph/v1/other-drafts/render",headers=auth,json={
+        "selection":year6,"teacher":{"class":"6 Amanah","date":"2027-06-14",
+                                     "time":"08:00 - 09:00","students":"30"},
+        "format":"word",
+    })
+    assert result.status_code==200,result.json if result.is_json else None
+    with ZipFile(io.BytesIO(result.data)) as document:
+        text=document.read("word/document.xml").decode()
+        assert "PdP 030" in text and "1.1 / 1.1.4" in text and "h63" in text
     print("DRAFT_SOURCE_CATALOG_AND_NATIVE_WORD_PDF_SMOKE_PASS",flush=True)
 
 

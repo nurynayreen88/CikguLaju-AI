@@ -35,6 +35,26 @@ class TelegramRPTTests(unittest.TestCase):
         }
         self.assertTrue(telegram_downloads.install(self.namespace))
 
+    def test_arabic_rpt_draft_pdfs_use_the_existing_access_gate(self):
+        from rpt_2027.bahasa_arab.documents import document_path
+
+        callback = self.namespace["callback"]
+        callback(123, "rpt2027_bahasa_arab:6:pdf")
+        self.assertIn("Akses Terhad", self.messages[-1][1])
+        self.assertEqual(self.documents, [])
+        self.active = True
+        for year in range(2, 7):
+            key = f"rpt2027_bahasa_arab:{year}:pdf"
+            callback(123, f"rpt2027_year_{year}")
+            buttons = {b["callback_data"]: b["text"] for row in self.messages[-1][2] for b in row}
+            self.assertIn("Bahasa Arab (PDF • DRAF)", buttons[key])
+            callback(123, key)
+            self.assertEqual(Path(self.documents[-1][1]), document_path(year))
+            self.assertIn("DRAF", self.documents[-1][2])
+        callback(123, "rpt2027_bahasa_arab:1:pdf")
+        self.assertIn("tidak sah", self.messages[-1][1])
+        self.assertEqual(len(self.documents), 5)
+
     def test_dlp_menu_and_pdf_word_delivery_for_published_years(self):
         callback = self.namespace["callback"]
         callback(123, "rpt2027_dlp:science_dlp:3:pdf")
