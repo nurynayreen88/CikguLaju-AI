@@ -794,6 +794,14 @@ except Exception as _rph_entry_choices_error:
           type(_rph_entry_choices_error).__name__, flush=True)
 
 
+try:
+    from web.telegram_sk_rph_2027 import install as install_sk_rph_2027
+    SK_RPH_2027_MENU_ACTIVE = install_sk_rph_2027(telegram_runtime)
+except Exception as exc:
+    SK_RPH_2027_MENU_ACTIVE = False
+    print("RPH SK 2027 menu unavailable:", type(exc).__name__, flush=True)
+
+
 # Apply Web teacher text after the native subject adapters set default rows.
 from web.english_y1_kssr_rph import install as install_english_y1_kssr
 from web.rph_teacher_reflection import install as install_teacher_reflection
