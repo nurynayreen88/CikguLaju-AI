@@ -675,7 +675,8 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <p>Isi negeri sekolah dan simpan jadual waktu mengajar di <strong>Profil &amp; Akses</strong> untuk memadankan slot PdP dengan takwim cuti.</p>
   <p id="today-instructions">RPH Hari Ini menunjukkan cadangan daripada RPH Minggu Ini untuk tarikh yang dipilih. Semak Lesson/PdP mengikut kemajuan kelas, kemudian catat Selesai PdP selepas mengajar.</p>
   <div class="daily-rph-toolbar">
-    <div><label for="today-date">Tarikh PdP</label><input id="today-date" type="date" aria-label="Tarikh RPH Hari Ini"></div>
+    <div id="today-date-wrap"><label for="today-date">Tarikh PdP</label><input id="today-date" type="date" aria-label="Tarikh RPH Hari Ini"></div>
+    <div id="today-week-wrap" hidden><label for="today-week">Pilih minggu</label><select id="today-week" disabled></select></div>
     <button type="button" id="today-refresh">Muat Semula Jadual</button>
     <button type="button" id="today-profile-progress" class="secondary">Lihat Kemajuan PdP</button>
   </div>
@@ -699,6 +700,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
         </div>
         <button type="button" id="week-bundle-download" disabled>Download Semua RPH</button>
       </div>
+      <p id="week-bundle-quota" class="notice" hidden></p>
       <p id="week-bundle-status" class="notice" role="status" aria-live="polite"></p>
     </div>
     <div id="today-results-list" class="daily-rph-result-list" aria-label="Bahan mengikut kelas dan subjek" aria-live="polite"></div>
@@ -2382,7 +2384,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
-<script src="/assets/rph-today.js?v=rph-pantas-sahkan-tiada-pdp-20261117"></script>
+<script src="/assets/rph-today.js?v=rph-pantas-pilih-minggu-kuota-20261117"></script>
 <script src="/assets/teacher-profile.js?v=profile-search-select-20261116"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>

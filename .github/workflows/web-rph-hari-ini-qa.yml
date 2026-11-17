@@ -6,6 +6,8 @@ on:
       - 'web/rph_hari_ini_web.py'
       - 'web/school_day_calendar.py'
       - 'web/rph_timetable_word_bundle.py'
+      - 'web/rph_weekly_quota.py'
+      - 'supabase/migrations/20261117120500_web_rph_weekly_exports.sql'
       - 'web/unified_rph_web.py'
       - 'tests/test_web_rph_timetable_word_bundle.py'
       - 'requirements-web-v1.txt'
@@ -27,6 +29,8 @@ on:
       - 'web/rph_hari_ini_web.py'
       - 'web/school_day_calendar.py'
       - 'web/rph_timetable_word_bundle.py'
+      - 'web/rph_weekly_quota.py'
+      - 'supabase/migrations/20261117120500_web_rph_weekly_exports.sql'
       - 'web/unified_rph_web.py'
       - 'tests/test_web_rph_timetable_word_bundle.py'
       - 'requirements-web-v1.txt'
@@ -75,3 +79,53 @@ jobs:
           Path("/tmp/cikgulaju-rph-today-inline.js").write_text('"use strict";'+raw)
           PY
           node --check /tmp/cikgulaju-rph-today-inline.js
+
+  verify-weekly-quota:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      PGHOST: 127.0.0.1
+      PGUSER: postgres
+      PGPASSWORD: postgres
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate database permissions, retries, and atomic subscription quota
+        shell: bash
+        run: |
+          set -euo pipefail
+          psql -v ON_ERROR_STOP=1 -c 'create role anon; create role authenticated; create role service_role bypassrls;'
+          psql -v ON_ERROR_STOP=1 -f supabase/migrations/20261117120500_web_rph_weekly_exports.sql
+          quota() {
+            psql -v ON_ERROR_STOP=1 -Atq -c "set role service_role; select allowed,remaining from public.web_rph_weekly_usage($1);"
+          }
+          test "$(quota 11)" = "t|2"
+          test "$(quota "11,'00000000-0000-4000-8000-000000000001',repeat('a',64)")" = "t|1"
+          test "$(quota "11,'00000000-0000-4000-8000-000000000002',repeat('b',64)")" = "t|0"
+          test "$(quota "11,'00000000-0000-4000-8000-000000000003',repeat('c',64)")" = "f|0"
+          test "$(quota "11,'00000000-0000-4000-8000-000000000001',repeat('a',64)")" = "t|0"
+          test "$(quota "11,'00000000-0000-4000-8000-000000000001',repeat('c',64)")" = "f|0"
+          test "$(quota 12)" = "t|2"
+          scratch="$(mktemp -d)"
+          quota "12,'00000000-0000-4000-8000-000000000001',repeat('a',64)" > "$scratch/1" &
+          a=$!
+          quota "12,'00000000-0000-4000-8000-000000000002',repeat('b',64)" > "$scratch/2" &
+          b=$!
+          quota "12,'00000000-0000-4000-8000-000000000003',repeat('c',64)" > "$scratch/3" &
+          c=$!
+          wait "$a"
+          wait "$b"
+          wait "$c"
+          test "$(cat "$scratch"/{1,2,3} | sort)" = "$(printf 'f|0\nt|0\nt|1')"
+          test "$(psql -Atq -c "select has_function_privilege('anon','public.web_rph_weekly_usage(bigint,uuid,text)','EXECUTE'), has_function_privilege('authenticated','public.web_rph_weekly_usage(bigint,uuid,text)','EXECUTE'), has_table_privilege('anon','public.web_rph_weekly_exports','SELECT')")" = "f|f|f"
