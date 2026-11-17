@@ -58,6 +58,8 @@ def request_native_rph(data, fmt, *, opener=None):
         "layout":layout,
         "format":fmt,
     }
+    if data.get("source_variant"):
+        body["source_variant"] = data["source_variant"]
     raw=json.dumps(body,ensure_ascii=False,separators=(",",":")).encode("utf-8")
     if len(raw)>100000:
         raise NativeRPHUnavailable("RPH source exceeds safe limit")

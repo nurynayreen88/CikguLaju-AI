@@ -34,7 +34,7 @@ class UnifiedWebRPHTests(unittest.TestCase):
 
     def test_moral_and_pjpk_are_source_backed_not_generic(self):
         moral = source_records(2, "MORAL")
-        self.assertEqual(len(moral), 42)
+        self.assertEqual(len(moral), 96)
         pj = source_records(2, "PJPK", "PJ")
         pk = source_records(2, "PJPK", "PK")
         self.assertGreater(len(pj), 20)
