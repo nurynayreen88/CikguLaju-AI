@@ -24,7 +24,7 @@ Jalankan `PYTHONDONTWRITEBYTECODE=1 python -m staging.sains.tahun5.eksport_2027 
 
 - Klien Flask menggunakan laluan dalaman Web ke penjana Telegram dengan sumber semakan. Kesemua 10 unit dan 116 pilihan memadankan nombor PdP, tajuk, SK/SP, halaman buku, PBD dan butiran kelas dalam respons Word/PDF. Permintaan tanpa token, unit yang salah dan ID lama ditolak oleh laluan semakan.
 - Kesemua 116 PDF dan 116 Word yang ditukar menggunakan LibreOffice muat satu halaman A4. Sebanyak 116 PDF tambahan dengan sampel refleksi 500 aksara juga kekal satu halaman.
-- Ujian yang boleh dijalankan semula ialah `python -m unittest discover -s tests -p 'test_sains_sk_tahun5_2027_review_sequence.py'`. Penyesuai set 2027 hanya dimuatkan oleh ujian ini.
+- Ujian yang boleh dijalankan semula ialah `python -m unittest discover -s tests -p 'test_sains_sk_tahun5_2027_review_sequence.py'`. Pada cabang draf, penyesuai didaftarkan melalui penjana Telegram di laluan dalaman `/internal/rph/v1/sains-sk-y5-2027`. Ujian mengesahkan laluan lama terus menggunakan ID dan pilihan asal.
 
 CI bagi laluan Word/PDF lulus pada kod `03a53f207f8d`. [Keputusan GitHub Actions](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/44193953055).
 

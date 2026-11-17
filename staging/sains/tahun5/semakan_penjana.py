@@ -1,4 +1,4 @@
-"""Source adapter for local review of the Year 5 SK Science 2027 sequence."""
+"""Exact 2027 Year 5 SK Science source for the private RPH download service."""
 
 import tempfile
 from pathlib import Path
@@ -10,9 +10,9 @@ from web.sains_unit_awal import PROCESS
 
 
 class ReviewRuntime:
-    """Exercise the Telegram sequence contract with the 2027 review set."""
+    """Serve the 2027 sequence independently of legacy Science identifiers."""
 
-    CIKGULAJU_DB_V2600_ACTIVE = True  # Required inside the isolated Flask test.
+    CIKGULAJU_DB_V2600_ACTIVE = True  # build_source validates the independent RPT and DSKP source.
 
     def __init__(self):
         _, plans = build_source()
@@ -80,3 +80,15 @@ class ReviewRuntime:
 
     def create_pdf_file(self, state, _text, cid):
         return self._create_document(state, cid, _pdf, ".pdf")
+
+
+ROUTE = "/internal/rph/v1/sains-sk-y5-2027"
+
+
+def register_downloads(app):
+    from web.telegram_verified_sequence_rph_bridge import create_native_sequence_rph_blueprint
+
+    app.register_blueprint(
+        create_native_sequence_rph_blueprint(ReviewRuntime(), url_prefix=ROUTE),
+        name="sains_sk_tahun5_2027",
+    )

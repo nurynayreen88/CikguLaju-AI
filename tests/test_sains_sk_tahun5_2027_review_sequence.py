@@ -11,11 +11,21 @@ from flask import Flask
 from pypdf import PdfReader
 
 from staging.sains.tahun5.eksport_2027 import SOURCE
-from staging.sains.tahun5.semakan_penjana import ReviewRuntime
+from staging.sains.tahun5.semakan_penjana import ROUTE, ReviewRuntime, register_downloads
 from web.telegram_verified_sequence_rph_bridge import create_native_sequence_rph_blueprint
 
-ROUTE = "/internal/rph/v1/sequence"
 TOKEN = "sains-sk-tahun5-review-only-token-for-flask"
+
+
+class LegacyScienceRuntime(ReviewRuntime):
+    def __init__(self):
+        super().__init__()
+        self.catalog = [{
+            **self.catalog[0],
+            "unit_code": "",
+            "unit_title": "Kemahiran Saintifik",
+            "pdp_sequence_code": "ST5-PDP-084",
+        }]
 
 
 class ReviewSequenceTests(unittest.TestCase):
@@ -24,7 +34,8 @@ class ReviewSequenceTests(unittest.TestCase):
         cls.runtime = ReviewRuntime()
         cls.source = json.loads(SOURCE.read_text(encoding="utf-8"))["pdp"]
         app = Flask(__name__)
-        app.register_blueprint(create_native_sequence_rph_blueprint(cls.runtime))
+        app.register_blueprint(create_native_sequence_rph_blueprint(LegacyScienceRuntime()))
+        register_downloads(app)
         cls.client = app.test_client()
         cls.headers = {"Authorization": f"Bearer {TOKEN}"}
 
@@ -102,6 +113,20 @@ class ReviewSequenceTests(unittest.TestCase):
                                  "Murid membentangkan dapatan."):
                     self.assertIn(" ".join(expected.split()), compact)
 
+    def test_legacy_science_units_have_their_original_endpoint_and_identity(self):
+        params = {"year": 5, "subject": "SCIENCE"}
+        legacy = "/internal/rph/v1/sequence"
+        existing = self.client.get(legacy + "/units", query_string=params, headers=self.headers)
+        self.assertEqual(existing.status_code, 200)
+        unit, = existing.json["items"]
+        self.assertEqual(unit["label"], "Kemahiran Saintifik")
+        lessons = self.client.get(legacy + "/lessons", query_string={**params, "unit": unit["value"]},
+                                  headers=self.headers)
+        self.assertEqual(lessons.status_code, 200)
+        self.assertEqual([item["value"] for item in lessons.json["items"]], ["ST5-PDP-084"])
+        cross = {**params, "unit": unit["value"], "lesson": "SK27-SCI-Y5-PDP-001"}
+        self.assertEqual(self.client.get(legacy + "/availability", query_string=cross,
+                                         headers=self.headers).status_code, 404)
     def test_wrong_unit_legacy_ids_and_unauthorized_requests_fail(self):
         params = {"year": 5, "subject": "SCIENCE"}
         self.assertEqual(self.client.get(f"{ROUTE}/units", query_string=params).status_code, 401)

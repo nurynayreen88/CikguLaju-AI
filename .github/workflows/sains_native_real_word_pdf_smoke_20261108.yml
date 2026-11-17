@@ -7,6 +7,7 @@ on:
       - "tools/sains_native_internal_real_documents_smoke_20261108.py"
       - "tests/test_sains_native_real_word_pdf_internal_20261108.py"
       - "tools/run_telegram_with_curriculum_api.py"
+      - "web/telegram_verified_sequence_rph_bridge.py"
       - "staging/sains/tahun5/**"
       - "tests/test_sains_sk_tahun5_2027_review_sequence.py"
       - ".github/workflows/sains_native_real_word_pdf_smoke_20261108.yml"
