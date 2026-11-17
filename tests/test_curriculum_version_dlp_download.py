@@ -10,7 +10,7 @@ from unittest.mock import patch
 from docx import Document
 from flask import Flask
 
-from dlp_year2_rph import catalog, render, resolve, science_rpt_lessons
+from dlp_year2_rph import catalog, render, resolve, rpt_lessons, science_rpt_lessons
 from web.native_rph_telegram_api import create_native_rph_blueprint
 
 
@@ -102,3 +102,34 @@ class DlpDownloadTests(unittest.TestCase):
                     [[cell.text for cell in r.cells[1:]] for r in activities],
                     [phase[1:] for phase in lesson["phases"]],
                 )
+
+    def test_mathematics_lessons_match_the_year_two_rpt(self):
+        folder = Path(__file__).resolve().parents[1] / "rpt_2027" / "dlp"
+        rpt = Document(folder / "CikguLaju_RPT_DLP_2027_Mathematics_Year_2.docx")
+        rows = [row for row in rpt.tables[2].rows[1:] if row.cells[1].text.startswith("Lesson ")]
+        lessons = [(unit, lesson) for unit in catalog()["MATH_DLP"] for lesson in unit["lessons"]]
+        schedule = rpt_lessons("MATH_DLP")
+        self.assertEqual(len(schedule), 78)
+        for number, (row, (unit, lesson)) in enumerate(zip(rows, lessons, strict=True), 1):
+            with self.subTest(lesson=lesson["id"]):
+                self.assertEqual(row.cells[1].text, f"Lesson {number:02d}  {lesson['title']}\n{unit['title']}")
+                self.assertEqual(row.cells[2].text, lesson["standards"].replace(" · ", "\n"))
+                self.assertEqual(row.cells[3].text, lesson["objective"])
+                references = lesson["references"].replace("Textbook ", "TB ").replace("Activity Book ", "AB ")
+                self.assertEqual(row.cells[4].text, references.replace(" · ", "\n") + "\n60 min")
+                self.assertEqual(schedule[lesson["id"]], {"number": number, "minutes": 60})
+                doc = Document(BytesIO(render("MATH_DLP", unit, lesson, "word", self.teacher)))
+                self.assertEqual(doc.tables[0].cell(1, 1).text, f"Lesson {number:02d} · 60 min")
+
+    def test_mathematics_rpt_keeps_96_hours_before_assessment(self):
+        folder = Path(__file__).resolve().parents[1] / "rpt_2027" / "dlp"
+        for year, row_count in ((2, 96), (3, 82), (4, 77), (5, 69), (6, 54)):
+            with self.subTest(year=year):
+                rpt = Document(folder / f"CikguLaju_RPT_DLP_2027_Mathematics_Year_{year}.docx")
+                rows = rpt.tables[2].rows[1:]
+                self.assertEqual(len(rows), row_count)
+                self.assertEqual(sum(int(row.cells[4].text.splitlines()[-1].split()[0]) for row in rows), 5760)
+                windows = list(dict.fromkeys(row.cells[0].text for row in rows))
+                self.assertEqual(len(windows), 35)
+                self.assertEqual(windows[-1], "A  17-21 Oct\nB  18-22 Oct")
+                self.assertFalse(any(re.search(r"\b(?:9-13|10-14|16-20|17-21) May\b", dates) for dates in windows))
