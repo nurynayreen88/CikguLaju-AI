@@ -210,23 +210,17 @@ def adapt_rows(state, rows, *, root=LESSON_ROOT):
 
 
 _RELEASE_MANIFEST_VERSION = "english-year5-per-lesson-release-v1"
-_RELEASE_QA_GATES = (
-    "teacher_approved",
+_CONTENT_QA_GATES = (
     "official_sow_pair_verified",
     "printed_book_activity_verified",
     "audio_content_verified_or_not_applicable",
     "word_a4_verified",
     "pdf_a4_verified",
-    "telegram_delivery_verified",
 )
+_RELEASE_QA_GATES = ("teacher_approved", *_CONTENT_QA_GATES, "telegram_delivery_verified")
 
 
-def approved_for_telegram(number, *, root=LESSON_ROOT):
-    """Only explicitly approved, byte-identical Year 5 lessons may be released.
-
-    The stage-only adapt_rows() remains callable by offline audits. This extra
-    production gate is enforced by the installed live Word/PDF adapter.
-    """
+def _passes_qa(number, root, gates):
     if type(number) is not int or not 1 <= number <= 160 or number in CHOICE_LESSONS:
         return False
     try:
@@ -240,13 +234,23 @@ def approved_for_telegram(number, *, root=LESSON_ROOT):
         entry = approved.get(str(number))
         if not isinstance(entry, dict):
             return False
-        if any(entry.get(key) is not True for key in _RELEASE_QA_GATES):
+        if any(entry.get(key) is not True for key in gates):
             return False
         source = (Path(root) / ("lesson_%03d.md" % number)).read_bytes()
         actual = sha256(source).hexdigest()
         return entry.get("source_sha256") == actual
     except (OSError, ValueError, TypeError):
         return False
+
+
+def approved_for_telegram(number, *, root=LESSON_ROOT):
+    """Require all per-lesson checks on the exact source revision for final RPH."""
+    return _passes_qa(number, root, _RELEASE_QA_GATES)
+
+
+def verified_draft_for_web(number, *, root=LESSON_ROOT):
+    """Expose the audited Lesson 001 Telegram draft for teacher review on Web."""
+    return number == 1 and _passes_qa(number, root, _CONTENT_QA_GATES)
 
 
 def install(runtime, *, enabled=None):
