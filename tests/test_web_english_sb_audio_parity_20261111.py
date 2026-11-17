@@ -136,7 +136,7 @@ class WebEnglishSourceTests(unittest.TestCase):
             reply = self.client.get("/api/web/rph/extra-materials", query_string=params)
             self.assertEqual([item["type"] for item in reply.json["items"]], ["textbook", "audio"])
             response = self.client.get(reply.json["items"][1]["url"])
-        source.assert_called_once_with(26, 1)
+        source.assert_called_once_with(26, 1, year=2)
         self.assertEqual(response.data, audio)
         self.assertEqual(response.mimetype, "audio/x-ms-wma")
         self.assertTrue(response.headers["Content-Disposition"].endswith(".wma"))
@@ -163,7 +163,7 @@ class WebEnglishSourceTests(unittest.TestCase):
 
     def test_year1_books_and_year5_audio_keep_the_original_lesson(self):
         bridge = "web.native_telegram_extra_materials_20261106."
-        for year, number, expected in ((1, 18, ["textbook", "workbook"]),
+        for year, number, expected in ((1, 18, ["textbook", "workbook", "audio"]),
                                        (5, 1, ["textbook", "workbook", "audio"])):
             with self.subTest(year=year):
                 row = next(r for r in source_records(year, "ENGLISH") if r["lesson"] == number)
@@ -175,10 +175,7 @@ class WebEnglishSourceTests(unittest.TestCase):
                     result = self.client.get("/api/web/rph/extra-materials", query_string=query)
                 self.assertEqual([r["type"] for r in result.json["items"]], expected)
                 book.assert_called_once_with(year, number)
-                if year == 1:
-                    audio.assert_not_called()
-                else:
-                    audio.assert_called_once_with(year, number)
+                audio.assert_called_once_with(year, number)
 
     def test_browser_does_not_expose_unverified_or_unrelated_audio(self):
         html = (ROOT / "web_v1_static_preview" / "index.html").read_text("utf8")

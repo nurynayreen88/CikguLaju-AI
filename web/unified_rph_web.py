@@ -1057,7 +1057,6 @@ def create_blueprint():
                                              "action": "Download"})
                     except Exception:
                         missing.append("Student Book")
-                if year in range(2, 6):
                     try:
                         tracks = english_audio_tracks(year, number)
                         for track in tracks:
@@ -1172,14 +1171,14 @@ def create_blueprint():
             return error
         try:
             year, sub, unit, token, number = _extra_selection()
-            if sub != "ENGLISH" or year not in range(2, 6) or not 1 <= track <= 4:
+            if sub != "ENGLISH" or year not in range(1, 6) or not 1 <= track <= 4:
                 raise ValueError("Invalid track")
         except (ValueError, TypeError):
             return jsonify({"error": "Pilihan trek audio tidak sah"}), 400
         try:
             from web.native_telegram_extra_materials_20261106 import english_audio_mp3, english_audio_wma
-            if year == 2:
-                data = english_audio_wma(number, track)
+            if year in (1, 2):
+                data = english_audio_wma(number, track, year=year)
                 mime, extension = "audio/x-ms-wma", "wma"
             else:
                 data = english_audio_mp3(year, number, track)

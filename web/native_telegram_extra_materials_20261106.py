@@ -160,7 +160,7 @@ def english_student_book_pdf(year, lesson, *, opener=None):
 
 
 def english_audio_tracks(year, lesson, *, opener=None):
-    _english_asset_selection(year, lesson, range(2, 6))
+    _english_asset_selection(year, lesson, range(1, 6))
     data = _json("/internal/rph/v1/english-extras/audio",
                  {"year": year, "lesson": lesson}, opener=opener)
     if data is None:
@@ -198,12 +198,12 @@ def english_audio_mp3(year, lesson, index, *, opener=None):
     return raw
 
 
-def english_audio_wma(lesson, index, *, opener=None):
-    _english_asset_selection(2, lesson, (2,))
+def english_audio_wma(lesson, index, *, year=2, opener=None):
+    _english_asset_selection(year, lesson, (1, 2))
     if type(index) is not int or not 1 <= index <= 4:
         raise ValueError("Invalid verified track")
     raw = _get("/internal/rph/v1/english-extras/audio.wma",
-               {"year": 2, "lesson": lesson, "track": index},
+               {"year": year, "lesson": lesson, "track": index},
                accept="audio/x-ms-wma", limit=MAX_AUDIO, opener=opener)
     if raw is None or len(raw) < 1000 or not raw.startswith(WMA_HEADER):
         raise NativeRPHUnavailable("Original WMA unavailable")
