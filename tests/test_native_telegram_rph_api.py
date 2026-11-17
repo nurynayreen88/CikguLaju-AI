@@ -241,6 +241,21 @@ class NativeRPHBridgeTests(unittest.TestCase):
             self.assertEqual(self._post(body).status_code,200)
         self.assertEqual(len(self.runtime.calls),1)
 
+    def test_only_audited_lesson_001_can_use_the_active_year5_draft_renderer(self):
+        from web.rph_shared_source_identity import source_fingerprint
+
+        body = payload()
+        body.update(year=5, unit="Free time", source_digest=source_fingerprint(5, "ENGLISH", 1))
+        with patch("web.english_y5_standalone_runtime.approved_for_telegram", return_value=False):
+            self.assertEqual(self._post(body).status_code, 503)
+            self.runtime.CIKGULAJU_ENGLISH_Y5_FIXED_DRAFT_PREVIEW_ACTIVE = True
+            for fmt in ("word", "pdf"):
+                response = self._post({**body, "format": fmt})
+                self.assertEqual(response.status_code, 200, response.get_json())
+            body.update(lesson=2, source_digest=source_fingerprint(5, "ENGLISH", 2))
+            self.assertEqual(self._post(body).status_code, 503)
+        self.assertEqual([call[0] for call in self.runtime.calls], ["word", "pdf"])
+
     def test_selection_state_matches_pjpk_and_psv_telegram_callbacks(self):
         from web.rph_shared_source_identity import source_fingerprint
         from web.native_rph_telegram_api import build_native_input

@@ -10,7 +10,7 @@ from pathlib import Path
 
 from web.english_y5_standalone_runtime import (
     CHOICE_LESSONS, LESSON_ROOT, RELEASE_FLAG, adapt_rows, install, load_lesson,
-    approved_for_telegram, _RELEASE_QA_GATES,
+    approved_for_telegram, verified_draft_for_web, _RELEASE_QA_GATES,
 )
 
 
@@ -185,14 +185,19 @@ class EnglishY5IntegrationTests(unittest.TestCase):
             path = root / "release_approvals_2027.json"
             path.write_text(json.dumps(manifest), encoding="utf-8")
             self.assertTrue(approved_for_telegram(1, root=root))
+            self.assertTrue(verified_draft_for_web(1, root=root))
+            self.assertFalse(verified_draft_for_web(2, root=root))
             (root / "lesson_001.md").write_bytes(data + b"modified")
             self.assertFalse(approved_for_telegram(1, root=root))
+            self.assertFalse(verified_draft_for_web(1, root=root))
             (root / "lesson_001.md").write_bytes(data)
             for key in _RELEASE_QA_GATES:
                 bad = json.loads(json.dumps(manifest))
                 bad["approved_lessons"]["1"][key] = False
                 path.write_text(json.dumps(bad), encoding="utf-8")
                 self.assertFalse(approved_for_telegram(1, root=root), key)
+                self.assertEqual(verified_draft_for_web(1, root=root),
+                                 key in ("teacher_approved", "telegram_delivery_verified"), key)
             path.write_text('{"version":"unknown"}', encoding="utf-8")
             self.assertFalse(approved_for_telegram(1, root=root))
 
