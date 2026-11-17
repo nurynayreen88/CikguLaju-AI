@@ -217,6 +217,7 @@
   return c.controls.component.value||c.slot.component||"";
  }
  function suggestedLessonNumbers(c){
+  if(!weekly)return c.slot.suggested_session||[];
   const component=selectedComponent(c);
   return c.slot.rpt_suggestion?.lessons?.[component]||[];
  }
@@ -225,6 +226,13 @@
   if(!suggestion)return;
   const label=c.slot.subject_code==="ENGLISH"?"Lesson":"PdP";
   const numbers=suggestedLessonNumbers(c);
+  const assigned=c.slot.suggested_session?.map(n=>String(n).padStart(3,"0")).join(" + ");
+  if(!weekly){
+   c.weeklySuggestion.textContent=assigned
+    ?"Cadangan slot ini: "+label+" "+assigned+"."
+    :"Pilih Lesson/PdP mengikut kemajuan kelas.";
+   return;
+  }
   const prefix="Cadangan RPT · Minggu "+suggestion.week+" (Kumpulan "+suggestion.group+")";
   const lessonLabels=suggestion.sessions
    ? suggestion.sessions.map(session=>session.map(n=>String(n).padStart(3,"0")).join(" + "))
@@ -242,8 +250,7 @@
     : ". Jadual kelas ada "+capacity.scheduled_minutes+
       " minit minggu ini. RPT memerlukan "+capacity.required_minutes+" minit.";
   }
-  if(weekly&&c.slot.suggested_session?.length){
-   const assigned=c.slot.suggested_session.map(n=>String(n).padStart(3,"0")).join(" + ");
+  if(assigned){
    c.weeklySuggestion.textContent+=" Cadangan slot ini: "+label+" "+assigned+".";
   }
  }
@@ -272,7 +279,7 @@
    if(!option.dataset.lessonLabel)continue;
    const number=lessonNumber(option.dataset.lessonLabel);
    if(number===next)nextAvailable=true;
-   const badge=weekly&&c.slot.suggested_session?.includes(number)?" · Cadangan slot ini":
+   const badge=c.slot.suggested_session?.includes(number)?" · Cadangan slot ini":
      !completed&&number===next?" · Sambungan kelas":
      suggestedLessonNumbers(c).includes(number)?" · Cadangan minggu ini":"";
    const title=option.dataset.lessonLabel+badge;
@@ -330,7 +337,7 @@
    if(name==="lesson"){
      option.dataset.lessonLabel=title;
      option.dataset.completionToken=String(item.completion_token||"");
-     if(weekly&&c.slot.suggested_session?.includes(lessonNumber(title)))
+     if(c.slot.suggested_session?.includes(lessonNumber(title)))
       option.textContent+=" · Cadangan slot ini";
      else if(!c.progressHint&&suggestedLessonNumbers(c).includes(lessonNumber(title)))
       option.textContent+=" · Cadangan minggu ini";
@@ -823,8 +830,8 @@
   dayMode.classList.toggle("secondary",weekly);
   weekMode.classList.toggle("secondary",!weekly);
   document.getElementById("today-instructions").textContent=weekly
-   ?"Slot diambil daripada jadual guru. Semak cadangan RPT, pilih Lesson/PdP dan sediakan bahan untuk slot yang dipilih."
-   :"Semak cadangan RPT, pilih Lesson/PdP mengikut kemajuan kelas dan catat Selesai PdP selepas mengajar.";
+   ?"Semak cadangan bagi semua hari dalam jadual minggu ini dan pilih Lesson/PdP untuk slot yang hendak disediakan."
+   :"RPH Hari Ini menunjukkan cadangan daripada RPH Minggu Ini untuk tarikh yang dipilih. Semak Lesson/PdP mengikut kemajuan kelas, kemudian catat Selesai PdP selepas mengajar.";
   document.getElementById("today-confirm-label").textContent=weekly
    ?"Saya sahkan slot yang dipilih berlangsung pada hari PdP."
    :"Saya sahkan tarikh ini hari PdP sebenar.";

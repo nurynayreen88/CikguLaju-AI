@@ -341,6 +341,33 @@ def assign_week_suggestions(days):
                 slot["suggested_session"] = numbers
 
 
+def attach_week_suggestions(result, config, uid, *, known_date=None, known_progress=None):
+    def add_progress(day):
+        try:
+            rows = known_progress if day["date"] == known_date else read_progress(config, uid, day["date"])
+            attach_progress(day, rows)
+            return True
+        except ProfileUnavailable:
+            return False
+
+    eligible = [day for day in result["days"] if any(slot["can_prepare"] for slot in day["entries"])]
+    if eligible:
+        with ThreadPoolExecutor(max_workers=5) as workers:
+            result["progress_unavailable"] = not all(list(workers.map(add_progress, eligible)))
+    assign_week_suggestions(result["days"])
+
+
+def copy_day_suggestions(result, week):
+    matching_day = next(day for day in week["days"] if day["date"] == result["date"])
+    fields = ("start", "end", "class_name", "subject")
+    suggestions = {tuple(slot[field] for field in fields): slot["suggested_session"]
+                   for slot in matching_day["entries"] if "suggested_session" in slot}
+    for slot in result["entries"]:
+        assigned = suggestions.get(tuple(slot[field] for field in fields))
+        if assigned:
+            slot["suggested_session"] = assigned
+
+
 @bp.after_request
 def private(resp):
     resp.headers["Cache-Control"] = "no-store, private"
@@ -379,9 +406,20 @@ def hari_ini():
     result["progress_editable"] = target <= today
     if any(slot["can_prepare"] for slot in result["entries"]):
         try:
-            attach_progress(result, read_progress(config, uid, result["date"]))
+            progress = read_progress(config, uid, result["date"])
+            attach_progress(result, progress)
         except ProfileUnavailable:
             result["progress_unavailable"] = True
+        else:
+            if any(slot["rpt_suggestion"] for slot in result["entries"]):
+                try:
+                    week = week_payload(profile, schedule, target, today=today)
+                except ProfileValidation:
+                    # An invalid entry on another day must not hide this day's timetable.
+                    week = None
+                if week is not None:
+                    attach_week_suggestions(week, config, uid, known_date=result["date"], known_progress=progress)
+                    copy_day_suggestions(result, week)
     return jsonify(result)
 
 
@@ -409,18 +447,7 @@ def minggu_ini():
     except ProfileUnavailable:
         return jsonify({"error": "Jadual guru belum dapat dibaca."}), 503
 
-    def add_progress(day):
-        try:
-            attach_progress(day, read_progress(config, uid, day["date"]))
-            return True
-        except ProfileUnavailable:
-            return False
-
-    eligible = [day for day in result["days"] if any(slot["can_prepare"] for slot in day["entries"])]
-    if eligible:
-        with ThreadPoolExecutor(max_workers=5) as workers:
-            result["progress_unavailable"] = not all(list(workers.map(add_progress, eligible)))
-    assign_week_suggestions(result["days"])
+    attach_week_suggestions(result, config, uid)
     return jsonify(result)
 
 
