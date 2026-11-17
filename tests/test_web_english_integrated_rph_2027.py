@@ -123,3 +123,33 @@ class IntegratedWebTests(TestCase):
                 fallback = client.get("/api/web/rph/extra-materials", query_string=args)
                 assert "Lesson 014" in fallback.json["pair_note"]
                 assert fallback.json["items"][0]["url"].startswith("/api/web/rph/english-workbook?")
+
+    @patch("web.native_telegram_integrated_english_client.integrated_enabled", return_value=True)
+    @patch("web.unified_rph_web._account", return_value=({"telegram_user_id": 123}, None))
+    def test_verified_online_book_view_for_both_pair_aliases_without_pdf(self, *_):
+        app = Flask(__name__)
+        app.register_blueprint(create_blueprint())
+        client = app.test_client()
+        bridge = "web.native_telegram_extra_materials_20261106.english_paired_materials"
+        cases = [(3, (1, 2), "workbook", "rmzft/wwgq", 3, "2"),
+                 (3, (6, 7), "workbook", "rmzft/wwgq", 4, "3"),
+                 (6, (88, 89), "student-book", "hykyg/rrpd", 75, "75, 78")]
+        for year, pair, asset, viewer, leaf, pages in cases:
+            with self.subTest(year=year, pair=pair):
+                rows = {row["lesson"]: row for row in source_records(year, "ENGLISH")}
+                results = []
+                for lesson in pair:
+                    args = {"year": year, "subject": "ENGLISH", "unit": rows[lesson]["unit"],
+                            "lesson": rows[lesson]["token"], "paired": 1}
+                    with patch(bridge, return_value=[]):
+                        result = client.get("/api/web/rph/extra-materials", query_string=args)
+                    self.assertEqual(result.status_code, 200)
+                    item, = result.json["items"]
+                    self.assertEqual(item["action"], "Buka Buku Asal")
+                    self.assertEqual(item["url"], f"https://online.anyflip.com/{viewer}/mobile/index.html?pageIndex={leaf}")
+                    self.assertTrue(item["title"].endswith(f"m/s {pages}"))
+                    results.append(item)
+                    with patch(bridge, return_value=[{"id": asset, "title": "Buku PDF"}]):
+                        result = client.get("/api/web/rph/extra-materials", query_string=args)
+                    self.assertEqual([item["action"] for item in result.json["items"]], ["Download"])
+                self.assertEqual(*results)

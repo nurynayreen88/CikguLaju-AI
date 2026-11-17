@@ -54,3 +54,7 @@ Year 1 uses separately evolving KP2027 content and must not be silently mapped t
 - Web staging one-click preview and saved classes: PR #323 and PR #324 (both merged to original Web staging branch).
 
 **Never label the site fully FINAL READY solely because Render reports LIVE.**
+
+## Nota rujukan buku English (17 November 2026)
+
+Paparan bahan menggunakan pautan bacaan untuk Workbook Year 3 m/s 2–3 dan Pupil’s Book Year 6 jika petikan PDF berpadanan tiada. Halaman ditentukan daripada padanan asal dan SOW, termasuk kedua-dua Lesson bagi sesi gabungan. Tiada kandungan buku ditambah pada repositori.
