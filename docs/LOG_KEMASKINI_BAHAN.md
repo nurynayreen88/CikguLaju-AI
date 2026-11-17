@@ -179,3 +179,8 @@ Setiap sesi pembaikan baharu perlu merekodkan jenis bahan, rujukan PR, keputusan
 
 - **HOLD** dalam [PR #833](https://github.com/nurynayreen88/CikguLaju-AI/pull/833). Perincikan 15 RPH Starter Unit, termasuk padanan SP, halaman SOW, buku atau panduan puisi, latihan WB dan bukti PBD. Edisi Oktober memperuntukkan satu RPH 60 minit bagi setiap pasangan 1–2, 6–7, 8–9 dan 11–12. [Padanan sumber](../audits/english_y5_october_integrated_source_review_20261116.md#semakan-17-november-bagi-lesson-115).
 - CI pada PR menguji keluaran Word dan PDF A4. Kandungan CD1.05, baki semakan 24 Lesson, kelulusan guru dan muat turun melalui akaun guru Web dan Telegram produksi masih perlu disahkan.
+
+## 17 November 2026 — RPH English Year 5, Lesson 17–28
+
+- **HOLD** dalam [PR #833](https://github.com/nurynayreen88/CikguLaju-AI/pull/833). Perincikan 12 RPH Unit 1 melalui padanan SOW, buku atau panduan puisi, WB dan bukti PBD bagi kedua-dua SP. Lesson 17–28 ialah sesi tunggal dalam RPT Oktober. [Padanan sumber](../audits/english_y5_october_integrated_source_review_20261116.md#semakan-17-november-bagi-lesson-1728).
+- CI menguji dokumen Word dan PDF A4 melalui PR. Kandungan CD1.13–CD1.18, baki semakan buku bagi 12 Lesson, kelulusan guru dan pengesahan muat turun Web serta Telegram produksi masih dalam semakan.
