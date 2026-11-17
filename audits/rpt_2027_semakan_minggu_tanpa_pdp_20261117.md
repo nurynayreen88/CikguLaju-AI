@@ -74,3 +74,22 @@ Ujian setempat pada `a4eb291d6b32` meliputi RPT, RPH gabungan, pemetaan buku, au
 - **Pendidikan Muzik Tahun 2–6:** kesemua 175 nombor PdP dan kod SP dalam sumber RPH wujud dalam RPT sumber Web. Setiap tahun tamat M37. Semakan ini merekod padanan RPH dan RPT.
 - **DLP Science Year 2–6:** [Telegram #882](https://github.com/nurynayreen88/CikguLaju-AI/pull/882) dan [Web #883](https://github.com/nurynayreen88/CikguLaju-AI/pull/883) memindahkan 32 Lesson dan lapan Review dari selepas M39. Kesemua 286 Lesson dan 37 Review berakhir M38. M06, M18, M19 dan M39–44 kosong. Setiap tahun kekal pada 48 jam (Year 2–3) atau 64 jam (Year 4–6), dengan enam minggu 150 minit bagi Year 6. Nombor, CS/LS, rujukan buku, evidens PBD dan tempoh setiap 63 RPH Year 2 sepadan dengan RPT. [Pratonton Web #884](https://github.com/nurynayreen88/CikguLaju-AI/pull/884) memaparkan nombor dan tempoh sama. Sumber RPH untuk Lesson Year 3–6 dan Review masih diperlukan.
 - Selepas pembetulan RBT, Pendidikan Moral, Bahasa Arab dan DLP Science, baki daripada 77 RPT asal ialah **51 RPT dengan 542 PdP bernombor selepas M39**.
+
+
+## Skop SK dan DLP selepas pelepasan Mathematics DLP
+
+Semakan semula pada 17 November merujuk [Web produksi `f5668622472a`](https://github.com/nurynayreen88/CikguLaju-AI/tree/f5668622472a8862c46f7df657da4f98b1d74671). Indeks cadangan `web/rpt_weekly_suggestions_2027.json` dan agihan English integrasi `web/english_integrated_rph_weeks_2027.json` diperiksa mengikut laluan RPH Pantas. Agihan English integrasi bagi Year 2–6 kekal 142 sesi, 160 Lesson dan tamat M39 untuk setiap tahun.
+
+| Siri SK | RPT dengan PdP bernombor selepas M39 | PdP bernombor selepas M39 |
+| --- | ---: | ---: |
+| Pendidikan Islam Tahun 2–6 | 5 | 77 |
+| Matematik Tahun 2–6 | 5 | 75 |
+| Sains Tahun 2–6 | 5 | 52 |
+| Bahasa Melayu Tahun 2–6 | 5 | 40 |
+| Pendidikan Seni Visual Tahun 2–6 | 5 | 25 |
+| PJPK Tahun 2–6 | 5 | 6 |
+| **Jumlah** | **30** | **275** |
+
+- RPT Mathematics DLP Year 2–6 telah diterbitkan melalui [Web #908](https://github.com/nurynayreen88/CikguLaju-AI/pull/908) dan [Telegram #909](https://github.com/nurynayreen88/CikguLaju-AI/pull/909). Kesemua 378 sesi berakhir M38, dengan 96 jam setiap tahun. Dua siri RPT DLP Year 2–6 kini berakhir M38.
+- RPH DLP Year 2 mempunyai 63 Science dan 78 Mathematics. Draf Year 3 masih dalam semakan guru melalui [Science #886](https://github.com/nurynayreen88/CikguLaju-AI/pull/886) dan [Mathematics #773](https://github.com/nurynayreen88/CikguLaju-AI/pull/773).
+- [Science DLP Year 4 #911](https://github.com/nurynayreen88/CikguLaju-AI/pull/911) menyediakan kesemua 69 RPH untuk semakan guru. Set merangkumi 59 Lesson, 10 Review, 92 kod LS dan 64 jam, dengan semakan satu halaman A4 bagi Word dan PDF.

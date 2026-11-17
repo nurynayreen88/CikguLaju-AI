@@ -1,4 +1,4 @@
-"""Resolve and render the published SK DLP lesson plans."""
+"""Resolve and render the published Year 2 SK DLP lesson plans."""
 
 from functools import lru_cache
 from io import BytesIO
@@ -17,11 +17,16 @@ def catalog():
         return json.load(source)
 
 
-@lru_cache(maxsize=1)
-def science_rpt_lessons():
-    path = Path(__file__).resolve().parent / "rpt_2027" / "dlp" / "science_year2_rph_rpt_2027.json"
+@lru_cache(maxsize=2)
+def rpt_lessons(subject):
+    subject_name = SUBJECTS[subject].lower()
+    path = Path(__file__).resolve().parent / "rpt_2027" / "dlp" / f"{subject_name}_year2_rph_rpt_2027.json"
     with path.open(encoding="utf-8") as source:
         return json.load(source)
+
+
+def science_rpt_lessons():
+    return rpt_lessons("SCIENCE_DLP")
 
 
 @lru_cache(maxsize=1)
@@ -78,15 +83,15 @@ def filename(lesson_id, fmt):
 
 
 def render(subject, unit, lesson, fmt, teacher):
-    lesson_label = lesson["id"]
-    phases = lesson["phases"]
     year = lesson.get("year", 2)
     if year == 3:
         lesson_label = f"{lesson['numbered_label']} · {lesson['minutes']} min"
-    elif subject == "SCIENCE_DLP":
-        scheduled = science_rpt_lessons()[lesson["id"]]
+        phases = lesson["phases"]
+    else:
+        scheduled = rpt_lessons(subject)[lesson["id"]]
         lesson_label = f"Lesson {scheduled['number']:02d} · {scheduled['minutes']} min"
-        if scheduled["minutes"] == 30:
+        phases = lesson["phases"]
+        if subject == "SCIENCE_DLP" and scheduled["minutes"] == 30:
             phases = [
                 (f"{phase.split(' · ', 1)[0]} · {duration} min", teacher_action, pupils_action)
                 for (phase, teacher_action, pupils_action), duration in zip(
