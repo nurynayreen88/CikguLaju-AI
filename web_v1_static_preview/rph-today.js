@@ -16,9 +16,12 @@
  const allStatus=document.getElementById("today-generate-status");
  const resultsHost=document.getElementById("today-results");
  const resultsList=document.getElementById("today-results-list");
+ const dayMode=document.getElementById("rph-day-mode");
+ const weekMode=document.getElementById("rph-week-mode");
  if(!dateInput||!refresh||!state||!list||!confirm||!generateAll||
     !allStatus||!resultsHost||!resultsList)return;
  let requestId=0,loadedDate="",loading=false,reviewing=false,savingProgress=false,choices=[],batchEpoch=0;
+ let weekly=false;
  const cache=new Map(),rosterCounts=new Map();
  const TAGS=["component","theme","unit","topic","lesson"];
  const SOURCE_NAMES={
@@ -116,7 +119,8 @@
   const busy=selectable.some(c=>c.busy);
   // Keep the original all-slots guard, covered by existing RPH Hari Ini QA.
   generateAll.disabled=loading||reviewing||!confirm.checked||!selectable.length||
-   selectable.some(c=>c.busy||!c.controls.lesson.value);
+   (weekly?busy||selectable.every(c=>!c.controls.lesson.value):
+    selectable.some(c=>c.busy||!c.controls.lesson.value));
   for(const c of choices){
    for(const name of TAGS){
     const select=c.controls[name];
@@ -130,6 +134,14 @@
   // Only saved timetable slot labels and source-backed selection states appear.
   if(!loading&&!reviewing&&resultsHost.hidden){
    const done=selectable.length-incomplete.length;
+   if(weekly){
+    allStatus.textContent=selectable.length
+     ?done+" daripada "+selectable.length+" slot sudah dipilih. "+
+      (done?(confirm.checked?"Tekan Sediakan RPH Minggu Ini.":"Sahkan hari PdP sebelum menyemak bahan."):
+       "Pilih Lesson/PdP untuk slot yang hendak disediakan.")
+     :"";
+    return;
+   }
    if(!selectable.length){
     allStatus.textContent=choices.length
      ?"Tiada slot dengan bahan disahkan untuk disediakan pada tarikh ini.":"";
@@ -230,6 +242,10 @@
     : ". Jadual kelas ada "+capacity.scheduled_minutes+
       " minit minggu ini. RPT memerlukan "+capacity.required_minutes+" minit.";
   }
+  if(weekly&&c.slot.suggested_session?.length){
+   const assigned=c.slot.suggested_session.map(n=>String(n).padStart(3,"0")).join(" + ");
+   c.weeklySuggestion.textContent+=" Cadangan slot ini: "+label+" "+assigned+".";
+  }
  }
  function renderProgress(c){
   const component=selectedComponent(c);
@@ -256,7 +272,8 @@
    if(!option.dataset.lessonLabel)continue;
    const number=lessonNumber(option.dataset.lessonLabel);
    if(number===next)nextAvailable=true;
-   const badge=!completed&&number===next?" · Sambungan kelas":
+   const badge=weekly&&c.slot.suggested_session?.includes(number)?" · Cadangan slot ini":
+     !completed&&number===next?" · Sambungan kelas":
      suggestedLessonNumbers(c).includes(number)?" · Cadangan minggu ini":"";
    const title=option.dataset.lessonLabel+badge;
    if(option.textContent!==title)option.textContent=title;
@@ -313,7 +330,9 @@
    if(name==="lesson"){
      option.dataset.lessonLabel=title;
      option.dataset.completionToken=String(item.completion_token||"");
-     if(!c.progressHint&&suggestedLessonNumbers(c).includes(lessonNumber(title)))
+     if(weekly&&c.slot.suggested_session?.includes(lessonNumber(title)))
+      option.textContent+=" · Cadangan slot ini";
+     else if(!c.progressHint&&suggestedLessonNumbers(c).includes(lessonNumber(title)))
       option.textContent+=" · Cadangan minggu ini";
      option.dataset.bookRef=String(item.textbook_ref||item.student_book_ref||"").trim();
      option.dataset.originUnit=String(item.origin_unit||"");
@@ -427,19 +446,19 @@
   }catch(error){if(c.ticket===requestId)c.message.textContent=error.message;}
   finally{c.busy=false;updateAll();}
  }
- function makeChoice(slot,index,ticket,progressEditable){
+ function makeChoice(slot,index,ticket,progressEditable,parent=list,slotDate=loadedDate){
   const card=create("article","daily-rph-card");
   const heading=create("div","daily-rph-card-top");
   heading.append(create("strong","",slot.class_name+" · "+slot.subject),
                  create("span","daily-rph-time",slot.start+" – "+slot.end));
   card.append(heading);
   const subjectLabel=slot.subject_code==="ENGLISH"?"Bahasa Inggeris (SK)":slot.subject;
-  const info=create("p","daily-rph-note","Tahun "+slot.year+" · "+subjectLabel);
+  const info=create("p","daily-rph-note",slot.year?"Tahun "+slot.year+" · "+subjectLabel:subjectLabel);
   card.append(info);
-  const c={slot,index,ticket,card,rev:0,busy:false,controls:{}};
+  const c={slot,index,ticket,date:slotDate,card,rev:0,busy:false,controls:{}};
   if(!slot.can_prepare){
    card.append(create("p","notice",slot.reason||"Waktu ini tidak mempunyai padanan sumber yang disahkan."));
-   list.append(card);
+   parent.append(card);
    return c;
   }
   c.editor=create("div","daily-rph-editor");
@@ -483,11 +502,11 @@
   countHint.id=c.students.id+"-hint";
   c.students.setAttribute("aria-describedby",countHint.id);
   c.students.placeholder="Ikut Rekod PBD";
-  const schoolYear=loadedDate.slice(0,4);
-  if(!rosterCounts.has(slot.class_name)){
-   rosterCounts.set(slot.class_name,readPbdRosterCount(slot.class_name,schoolYear).catch(()=>null));
+  const schoolYear=c.date.slice(0,4),rosterKey=schoolYear+"\n"+slot.class_name;
+  if(!rosterCounts.has(rosterKey)){
+   rosterCounts.set(rosterKey,readPbdRosterCount(slot.class_name,schoolYear).catch(()=>null));
   }
-  void rosterCounts.get(slot.class_name).then(count=>{
+  void rosterCounts.get(rosterKey).then(count=>{
    if(ticket!==requestId)return;
    if(count)c.students.placeholder=String(count)+" daripada Rekod PBD";
    else countHint.textContent=count===0?"Senarai murid sesi "+schoolYear+" masih kosong. Guru boleh isi jumlah di sini.":
@@ -521,7 +540,7 @@
   c.resultList=create("ul","daily-rph-materials");
   c.downloadStatus=create("p","notice");
   c.result.append(c.resultList,c.downloadStatus);
-  list.append(card);
+  parent.append(card);
   void initialize(c);
   return c;
  }
@@ -544,6 +563,33 @@
    (data.progress_unavailable?" Rekod PdP belum dapat disemak.":"");
   updateAll();
  }
+ const weekDateFormatter=new Intl.DateTimeFormat("ms-MY",{
+  timeZone:"Asia/Kuala_Lumpur",day:"numeric",month:"short",year:"numeric"
+ });
+ function formatSlotDate(value){
+  return weekDateFormatter.format(new Date(value+"T12:00:00+08:00"));
+ }
+ function renderWeek(data,ticket){
+  loadedDate=data.date;
+  dateInput.value=data.date;
+  confirmWrap.hidden=!data.count;
+  for(const day of data.days){
+   if(!day.entries.length&&(!day.closure||day.closure==="Hujung minggu"))continue;
+   list.append(create("h3","",day.day+" · "+formatSlotDate(day.date)));
+   if(day.closure){
+    list.append(create("p","notice",day.closure));
+    continue;
+   }
+   for(const slot of day.entries)
+    choices.push(makeChoice(slot,choices.length,ticket,false,list,day.date));
+  }
+  if(!data.count)list.append(create("p","notice",
+   "Tiada waktu PdP minggu ini. Pilih tarikh lain atau semak Jadual Waktu di Profil Guru."));
+  state.textContent=formatSlotDate(data.start)+" hingga "+formatSlotDate(data.end)+
+   " · "+data.count+" slot PdP. "+data.holiday_notice+
+   (data.progress_unavailable?" Rekod kemajuan kelas belum dapat disemak.":"");
+  updateAll();
+ }
  async function load(date=""){
   const ticket=++requestId;
   cache.clear();
@@ -560,14 +606,17 @@
   state.textContent="Membaca jadual waktu daripada Profil Guru…";
   try{
    const qs=date?"?"+new URLSearchParams({date}):"";
-   const response=await fetch("/api/web/rph/hari-ini"+qs,{
+   const endpoint=weekly?"/api/web/rph/minggu-ini":"/api/web/rph/hari-ini";
+   const response=await fetch(endpoint+qs,{
     credentials:"same-origin",cache:"no-store",redirect:"error"
    });
    const data=await response.json().catch(()=>({}));
    if(ticket!==requestId)return;
    if(!response.ok)throw Error(data.error||"Jadual belum tersedia (HTTP "+response.status+").");
-   if(!Array.isArray(data.entries)||typeof data.date!=="string")throw Error("Format jadual tidak sah.");
-   render(data,ticket);
+   if(typeof data.date!=="string"||(weekly?!Array.isArray(data.days):!Array.isArray(data.entries)))
+    throw Error("Format jadual tidak sah.");
+   if(weekly)renderWeek(data,ticket);
+   else render(data,ticket);
   }catch(error){
    if(ticket!==requestId)return;
    choices=[];state.textContent=error.message;
@@ -583,7 +632,7 @@
   if(c.slot.subject_code==="PJPK")params.component=v.component.value;
   return params;
  }
- function selectedKey(c){return JSON.stringify({date:loadedDate,...selection(c)});}
+ function selectedKey(c){return JSON.stringify({date:c.date,start:c.slot.start,...selection(c)});}
  function actionRow(name,action,url=null){
   const li=create("li","material-download-row");
   li.append(create("span","material-download-name",name));
@@ -607,7 +656,7 @@
   const key=selectedKey(c),args=selection(c),qs=new URLSearchParams(args);
   if(c.slot.subject_code==="ENGLISH"){
    qs.set("rph_context","hari-ini");
-   qs.set("teacher_date",loadedDate);
+   qs.set("teacher_date",c.date);
    qs.set("teacher_start",c.slot.start);
    qs.set("teacher_end",c.slot.end);
   }
@@ -626,7 +675,7 @@
     paired=Boolean(pair);
     const pbd=actionRow("Pentaksiran Bilik Darjah","Rekod PBD");
     pbd.button.addEventListener("click",()=>window.cikgulajuPbdFromRph?.({
-      className:c.slot.class_name,date:loadedDate,subject:c.slot.subject,
+      className:c.slot.class_name,date:c.date,subject:c.slot.subject,
       lesson:pair?"Lesson "+pair:c.controls.lesson.selectedOptions[0]?.textContent||""
     },Object.fromEntries(qs)));
     c.resultList.append(pbd.li);found++;
@@ -680,7 +729,7 @@
    (found?"Hanya bahan yang telah disahkan tersedia dipaparkan.":"Tiada bahan yang disahkan tersedia untuk Lesson/PdP ini.");
  }
  async function downloadRph(c,format,key,button){
-  if(reviewing||key!==selectedKey(c)||!confirm.checked)return;
+  if(c.ticket!==requestId||reviewing||key!==selectedKey(c)||!confirm.checked)return;
   const students=c.students.value.trim();
   if(!c.students.checkValidity()||(students&&!/^[1-9][0-9]{0,2}$/.test(students))){
    c.downloadStatus.textContent="Masukkan bilangan murid antara 1 hingga 200.";
@@ -690,7 +739,7 @@
   const args=selection(c);
   const params=new URLSearchParams({
    year:args.year,subject:args.subject,unit:args.unit,lesson:args.lesson,
-   teacher_class:c.slot.class_name,teacher_date:loadedDate,
+   teacher_class:c.slot.class_name,teacher_date:c.date,
    teacher_start:c.slot.start,teacher_end:c.slot.end,teacher_students:students
   });
   if(args.component)params.set("component",args.component);
@@ -709,7 +758,8 @@
     mime.includes("application/vnd.openxmlformats-officedocument.wordprocessingml.document");
    const blob=await response.blob();
    if(!okMime||blob.size<1000)throw Error("Fail RPH yang diterima tidak sah.");
-   if(key!==selectedKey(c))throw Error("Pilihan Lesson telah berubah. Semak semula sebelum muat turun.");
+   if(c.ticket!==requestId||key!==selectedKey(c))
+    throw Error("Pilihan Lesson telah berubah. Semak semula sebelum muat turun.");
    const url=URL.createObjectURL(blob),anchor=document.createElement("a");
    const safeClass=c.slot.class_name.replace(/[^a-z0-9_-]+/gi,"_").slice(0,45);
    const name=response.headers.get("Content-Disposition")?.match(/filename="?([A-Za-z0-9_-]+\.(?:pdf|docx))"?/i)?.[1];
@@ -723,14 +773,19 @@
  }
  async function generate(){
   if(generateAll.disabled)return;
-  const selected=choices.filter(c=>c.slot.can_prepare);
+  const selected=choices.filter(c=>c.slot.can_prepare&&(!weekly||c.controls.lesson.value));
   if(!selected.length||selected.some(c=>!c.controls.lesson.value))return;
   reviewing=true;generateAll.disabled=true;updateAll();
   const epoch=++batchEpoch;
   // Keep the same chronological subject/class ordering as the upper cards.
   // Output is one grouped section beneath all subject selectors, not inline.
   resultsList.replaceChildren();
+  let previousDate="";
   for(const c of selected){
+   if(weekly&&c.date!==previousDate){
+    resultsList.append(create("h4","",c.slot.day+" · "+formatSlotDate(c.date)));
+    previousDate=c.date;
+   }
    const chosen=c.controls.lesson.selectedOptions[0];
    c.resultSelection.textContent="Tahun "+c.slot.year+
      " · "+(chosen?.textContent||"Lesson/PdP dipilih");
@@ -760,6 +815,30 @@
   if(!confirm.checked){reviewing=false;clearResults();}
   updateAll();
  });
+ function setWeekMode(next){
+  if(weekly===next)return;
+  weekly=next;
+  dayMode.setAttribute("aria-pressed",String(!weekly));
+  weekMode.setAttribute("aria-pressed",String(weekly));
+  dayMode.classList.toggle("secondary",weekly);
+  weekMode.classList.toggle("secondary",!weekly);
+  document.getElementById("view-today-heading").textContent=weekly?"RPH Minggu Ini":"RPH Hari Ini";
+  document.getElementById("today-instructions").textContent=weekly
+   ?"Slot diambil daripada jadual guru. Semak cadangan RPT, pilih Lesson/PdP dan sediakan bahan untuk slot yang dipilih."
+   :"Semak cadangan RPT, pilih Lesson/PdP mengikut kemajuan kelas dan catat Selesai PdP selepas mengajar.";
+  document.getElementById("today-confirm-label").textContent=weekly
+   ?"Saya sahkan slot yang dipilih berlangsung pada hari PdP."
+   :"Saya sahkan tarikh ini hari PdP sebenar.";
+  document.getElementById("today-generate-hint").textContent=weekly
+   ?"Bahan disediakan untuk slot yang sudah dipilih."
+   :"Pilih Lesson/PdP untuk semua kelas terlebih dahulu.";
+  document.getElementById("today-results-heading").textContent=weekly?"Bahan RPH Minggu Ini":"Bahan RPH Hari Ini";
+  generateAll.textContent=weekly?"Sediakan RPH Minggu Ini":"Jana Bahan Semua Lesson";
+  list.setAttribute("aria-label",weekly?"Senarai waktu mengajar minggu ini":"Senarai waktu mengajar hari ini");
+  void load(dateInput.value);
+ }
+ dayMode?.addEventListener("click",()=>setWeekMode(false));
+ weekMode?.addEventListener("click",()=>setWeekMode(true));
  refresh.addEventListener("click",()=>{void load(dateInput.value);});
  dateInput.addEventListener("change",()=>{void load(dateInput.value);});
  generateAll.addEventListener("click",()=>{void generate();});

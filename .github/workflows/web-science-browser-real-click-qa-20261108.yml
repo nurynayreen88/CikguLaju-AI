@@ -5,7 +5,9 @@ on:
     branches: [production/cikgulaju-web-20261105]
     paths:
       - "tests/test_web_science_download_click_browser_20261108.py"
+      - "tests/test_web_rph_minggu_ini_browser.py"
       - "web_v1_static_preview/index.html"
+      - "web_v1_static_preview/rph-today.js"
       - ".github/workflows/web-science-browser-real-click-qa-20261108.yml"
   workflow_dispatch:
 
@@ -29,3 +31,5 @@ jobs:
         run: python -m unittest discover -s tests -p "test_web_science_download_click_browser_20261108.py" -v
       - name: Retain previous 10-credit Web UI behavior
         run: python -m unittest discover -s tests -p "test_web_trial_browser.py" -v
+      - name: Prepare and download the weekly timetable with synthetic slots
+        run: python -m unittest discover -s tests -p "test_web_rph_minggu_ini_browser.py" -v
