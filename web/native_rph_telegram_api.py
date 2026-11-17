@@ -97,8 +97,7 @@ def build_native_input(payload):
     entitlement; this private endpoint only renders, never chooses a source.
     """
     legacy_keys={"subject","component","year","lesson","unit","teacher","layout","format"}
-    if not isinstance(payload,dict) or set(payload) not in (
-            legacy_keys, legacy_keys | {"source_digest"}):
+    if not isinstance(payload,dict) or set(payload) - {"source_digest", "source_variant"} != legacy_keys:
         raise ValueError("Unexpected RPH input")
     subject=payload["subject"]
     component=payload["component"]
@@ -123,12 +122,21 @@ def build_native_input(payload):
     # Web and Telegram deploy independently. A live Web must not render a
     # stale lesson when the Telegram source/mapping was updated.
     source_digest=payload.get("source_digest")
+    variant=payload.get("source_variant")
+    moral_plan=None
+    if "source_variant" in payload:
+        from web.moral_rpt_rph_source import VARIANT, load_plan
+        if subject != "MORAL" or variant != VARIANT:
+            raise ValueError("Invalid Moral source variant")
+        moral_plan=load_plan(year,lesson)
+        if moral_plan is None or moral_plan["unit"] != unit:
+            raise ValueError("Moral RPT session does not match")
     require_parity=os.environ.get("CIKGULAJU_WEB_RPH_SOURCE_PARITY_REQUIRED")=="1"
-    if source_digest is not None or require_parity or year == 1:
+    if source_digest is not None or require_parity or year == 1 or moral_plan:
         if not isinstance(source_digest,str) or not re.fullmatch(r"[a-f0-9]{64}",source_digest):
             raise ValueError("Missing source identity")
         from web.rph_shared_source_identity import source_fingerprint
-        expected=source_fingerprint(year,subject,lesson,component)
+        expected=source_fingerprint(year,subject,lesson,component,variant=variant)
         if expected is None or not hmac.compare_digest(expected,source_digest):
             raise ValueError("Web/Telegram RPH source mismatch")
     if not isinstance(unit,str) or not 0<len(unit)<=300:
@@ -265,6 +273,9 @@ def build_native_input(payload):
             "quick_content_v2391":selected["title"],
             SESSION_KEY:{"year":year,"number":lesson,"subject":SUBJECT},
         })
+    if moral_plan:
+        from web.moral_rpt_rph_source import STATE_KEY
+        s.update({STATE_KEY: lesson, "topic": moral_plan["title"], "pdp_no":lesson})
     return s,ai_text,fmt
 
 

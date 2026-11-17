@@ -118,6 +118,40 @@ class PSVandMoralRPTTests(unittest.TestCase):
         self.assertIn("tidak sah",sent[-1][1])
         self.assertEqual(ns["callback"](1,"other"),("original","other"))
 
+    def test_moral_rpt_single_session_menu_and_receipt(self):
+        from tempfile import gettempdir
+        from web.moral_rpt_rph_source import STATE_KEY
+
+        calls = []
+        def create_pdf(state, text, prefix):
+            path = Path(gettempdir()) / (prefix + "_moral.pdf")
+            path.write_bytes(b"%PDF" + text.encode("utf-8"))
+            self.assertEqual(state[STATE_KEY], 4)
+            return path
+
+        def send_document(cid, path, caption):
+            source = Path(path).read_text(encoding="utf-8")
+            self.assertIn("PdP 004", caption)
+            self.assertIn("Kepatuhan Kepada Ajaran Agama", source)
+            calls.append(Path(path).name)
+            return SimpleNamespace(ok=True, json=lambda: {"ok": True})
+
+        ns = {
+            "callback": lambda cid, data: None,
+            "send": lambda cid, msg, buttons=None: (msg, buttons),
+            "send_document": send_document, "_access_info": lambda cid: {"active": cid == 2},
+            "_is_admin": lambda cid: False, "create_pdf_file": create_pdf,
+            "CIKGULAJU_MORAL_80_ACTIVE": True,
+        }
+        self.assertTrue(moral_downloads.install(ns))
+        callback = ns["callback"]
+        self.assertIn("Pilih unit", callback(2, "moral_rpt_rph:2:0:0:menu")[0])
+        self.assertIn("moral_rpt_rph:2:1:4:menu", str(callback(2, "moral_rpt_rph:2:1:0:menu")))
+        self.assertIn("tidak sepadan", callback(2, "moral_rpt_rph:2:2:4:pdf")[0])
+        self.assertIn("pelanggan aktif", callback(1, "moral_rpt_rph:2:1:4:pdf")[0])
+        callback(2, "moral_rpt_rph:2:1:4:pdf")
+        self.assertEqual(calls, ["RPH_Pendidikan_Moral_Tahun_2_PdP_004.pdf"])
+
     def test_paid_psv_and_legacy_callback_isolation(self):
         records=[]
         def send(cid,msg,buttons=None):

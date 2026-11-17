@@ -98,6 +98,15 @@ def adapt_rows(state, rows):
     if state.get("subject") != SUBJECT:
         return rows
     year = _year(state.get("year") or state.get("year_label"))
+    from web.moral_rpt_rph_source import STATE_KEY, load_plan
+    if STATE_KEY in state:
+        plan = load_plan(year, state[STATE_KEY])
+        if plan is None or str(state.get("lesson_no")) != str(plan["number"]):
+            raise ValueError("Invalid Moral RPT session")
+        return {
+            **rows, **plan["fields"], "MATA PELAJARAN": SUBJECT,
+            "TAHUN/TINGKATAN": f"Tahun {year}",
+        }
     raw = str(state.get("lesson_no") or state.get("pdp_no") or "").strip()
     if year is None or not raw.isascii() or not raw.isdecimal():
         return rows
@@ -143,6 +152,9 @@ def install(runtime):
 
     def rows(state, *args, **kwargs):
         base = original(state, *args, **kwargs)
+        from web.moral_rpt_rph_source import STATE_KEY
+        if isinstance(state, dict) and STATE_KEY in state:
+            return adapt_rows(state, base)
         try:
             return adapt_rows(state, base)
         except Exception as exc:
