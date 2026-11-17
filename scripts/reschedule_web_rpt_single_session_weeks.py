@@ -1,4 +1,5 @@
-"""Move single-session Muzik and RBT plans off fully closed weeks."""
+"""Apply the reviewed week allocation to single-session Muzik and RBT PDFs."""
+from argparse import ArgumentParser
 from datetime import date
 from hashlib import sha256
 import json
@@ -14,6 +15,7 @@ from .build_web_rpt_weekly_suggestions import ROOT, read_weeks
 
 SUBJECTS = {"muzik": ("MUZIK", range(2, 7), 35), "rbt": ("RBT", range(4, 7), 32)}
 WEEK_COLUMN = fitz.Rect(35, 78.6, 140, 558)
+RBT_SCHEDULE = Path("rpt_2027/rbt/weekly_2027.json")
 
 
 def move_from_holidays(weeks):
@@ -32,11 +34,12 @@ def date_label(value):
     return date.fromisoformat(value).strftime("%d/%m/%Y")
 
 
-def revise(source, target, code, total, calendar):
+def revise(source, target, code, total, calendar, week_numbers=None):
     _, original = read_weeks(source, code)
     if list(original.values()) != [{"": [n]} for n in range(1, total + 1)]:
         raise ValueError(f"{source}: expected a single PdP per row, in order")
-    reassigned = move_from_holidays(original)
+    reassigned = (move_from_holidays(original) if week_numbers is None
+                  else dict(zip(original, week_numbers, strict=True)))
     with fitz.open(source) as pdf:
         for page in list(pdf)[1:]:
             changes = []
@@ -47,6 +50,7 @@ def revise(source, target, code, total, calendar):
                     continue
                 items = [s for b in page.get_text("dict", clip=rect)["blocks"]
                          for line in b.get("lines", ()) for s in line["spans"]]
+                items.sort(key=lambda span: (span["origin"][1], span["origin"][0]))
                 old = int(items[0]["text"][1:])
                 new = reassigned[old]
                 if old == new:
@@ -62,10 +66,14 @@ def revise(source, target, code, total, calendar):
             for span, _ in changes:
                 page.add_redact_annot(span["bbox"], fill=False)
             page.apply_redactions(images=0, graphics=0, text=0)
-            page.insert_font(fontname="RPTWeek", fontfile=str(FONT_DIR / "DejaVuSans.ttf"))
+            font_name = "RPTWeek"
+            page_fonts = {font[4] for font in page.get_fonts()}
+            while font_name in page_fonts:
+                font_name += "Next"
+            page.insert_font(fontname=font_name, fontfile=str(FONT_DIR / "DejaVuSans.ttf"))
             for span, text in changes:
                 color = tuple(((span["color"] >> shift) & 255) / 255 for shift in (16, 8, 0))
-                page.insert_text(span["origin"], text, fontsize=span["size"], fontname="RPTWeek", color=color)
+                page.insert_text(span["origin"], text, fontsize=span["size"], fontname=font_name, color=color)
         pdf.subset_fonts()
         pdf.save(target, deflate=True, garbage=4)
     dates, updated = read_weeks(target, code)
@@ -86,15 +94,23 @@ def revise(source, target, code, total, calendar):
                 raise ValueError(f"{source}, p{original_page.number + 1}: teaching content changed")
 
 
-def main():
+def main(*, rbt_before_assessment=False):
     calendar = json.loads(CALENDAR.read_text(encoding="utf-8"))["weeks"]
     manifest_file = ROOT / "manifest.json"
     cover_file = ROOT / "original_cover_layout_verified.json"
     manifest = json.loads(manifest_file.read_text(encoding="utf-8"))
     cover = json.loads(cover_file.read_text(encoding="utf-8"))
+    subjects, week_numbers = SUBJECTS, None
+    if rbt_before_assessment:
+        subjects = {"rbt": SUBJECTS["rbt"]}
+        week_numbers = json.loads(RBT_SCHEDULE.read_text(encoding="utf-8"))["week_by_pdp"]
+        if (len(week_numbers) != 32 or week_numbers != sorted(set(week_numbers))
+                or any(type(n) is not int or n not in range(1, 39) or n in {6, 18, 19}
+                       for n in week_numbers)):
+            raise ValueError("RBT requires 32 approved weeks through M38")
     with TemporaryDirectory(dir=ROOT) as temp:
         targets = []
-        for subject, (code, years, total) in SUBJECTS.items():
+        for subject, (code, years, total) in subjects.items():
             for year in years:
                 key = f"{subject}:{year}"
                 record = manifest["files"][key]
@@ -102,10 +118,12 @@ def main():
                 raw = source.read_bytes()
                 if sha256(raw).hexdigest() != record["sha256"] or record["sha256"] != cover["source_sha256_by_subject_year"][key]:
                     raise ValueError(f"Source and cover hashes disagree for {source}")
-                if record.get("full_school_closures_rescheduled"):
+                if week_numbers is None and record.get("full_school_closures_rescheduled"):
+                    continue
+                if week_numbers is not None and list(read_weeks(source, code)[1]) == week_numbers:
                     continue
                 target = Path(temp) / f"{subject}_{year}.pdf"
-                revise(source, target, code, total, calendar)
+                revise(source, target, code, total, calendar, week_numbers)
                 raw = target.read_bytes()
                 record.update(bytes=len(raw), sha256=sha256(raw).hexdigest(), full_school_closures_rescheduled=True)
                 cover["source_sha256_by_subject_year"][key] = record["sha256"]
@@ -118,4 +136,6 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    parser = ArgumentParser(description=__doc__)
+    parser.add_argument("--rbt-before-assessment", action="store_true")
+    main(**vars(parser.parse_args()))
