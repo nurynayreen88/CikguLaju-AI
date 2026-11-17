@@ -4,26 +4,30 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const vm = require("node:vm");
 const source = fs.readFileSync("web_v1_static_preview/rph-today.js", "utf8");
-const start = source.indexOf(" function updateAll(){");
+const start = source.indexOf(" function includedChoices(){");
 const end = source.indexOf(" function clearResults(){", start);
 assert.ok(start > -1 && end > start, "Expected isolated updateAll function");
 const body = source.slice(start, end);
 assert.ok(!/\b(fetch|credit|debit|localStorage)\s*\(/.test(body),
   "Status indicator must not make network, credit, or browser storage calls");
 
-function slot(class_name, subject) {
+function slot(class_name, subject, date) {
   return {
     slot: {can_prepare: true, class_name, subject},
+    date,
     busy: false,
     message: {textContent: ""},
     controls: {lesson: {value: "", hidden: false,
       dataset: {ready: "1", hasOptions: "1"}, disabled: false}},
   };
 }
-const a = slot("4 Bestari", "Matematik");
-const b = slot("5 Amanah", "Sains");
+const a = slot("4 Bestari", "Matematik", "2027-01-04");
+const b = slot("5 Amanah", "Sains", "2027-01-05");
 const ctx = {
   choices: [], loading: false, reviewing: false, weekly: false,
+  bundleBusy: false, singleDownloads: 0, savingProgress: false,
+  noPdpDates: new Set(), weekSlotCount: {textContent: ""},
+  list: {querySelectorAll: () => []}, confirmWrap: {hidden: true},
   confirm: {checked: false}, generateAll: {disabled: true},
   resultsHost: {hidden: true}, allStatus: {textContent: ""},
   TAGS: ["component", "theme", "unit", "topic", "lesson"],
@@ -81,6 +85,15 @@ assert.equal(ctx.generateAll.disabled, true);
 assert.equal(ctx.allStatus.textContent, "Menyemak bahan bagi dua kelas");
 
 ctx.reviewing = false;
+ctx.noPdpDates.add(a.date);
+update();
+assert.equal(ctx.weekSlotCount.textContent, "1");
+ctx.noPdpDates.add(b.date);
+update();
+assert.equal(ctx.confirmWrap.hidden, true);
+assert.equal(ctx.generateAll.disabled, true);
+assert.equal(ctx.weekSlotCount.textContent, "0");
+ctx.noPdpDates.clear();
 ctx.choices = [{slot: {can_prepare: false}, controls: {}}];
 ctx.resultsHost.hidden = true;
 update();
