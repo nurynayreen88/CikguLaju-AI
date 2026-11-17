@@ -42,6 +42,17 @@ def preview():
     return response
 
 
+@app.get("/assets/primary-subjects.js")
+def primary_subjects_script():
+    import json
+    from web.primary_subject_choices import subject_variants
+
+    return app.response_class(
+        "window.cikgulajuSubjectVariants=" + json.dumps(subject_variants()) + ";",
+        mimetype="application/javascript",
+    )
+
+
 @app.get("/health")
 def health():
     mode = os.environ.get("CIKGULAJU_WEB_CATALOG_MODE", "telegram-api")

@@ -18,6 +18,7 @@ class Element {
  }
  append(...items){this.children.push(...items);}
  add(item){this.children.push(item);}
+ replaceChildren(...items){this.children=items;}
  setAttribute(k,v){this[k]=v;}
  addEventListener(n,fn){this.listeners[n]=fn;}
  focus(){this.focused=true;}
@@ -30,9 +31,18 @@ const timetableBody={querySelectorAll:()=>rows};
 const declarations=between("const teacherSubjectGroups = ","const profileForm = ");
 const picker=between("function makeTimetableSubjectPicker(","function makeTimetableInput(");
 const reader=between("function timetableValueRows()","function renderTeacherTimetable(");
-const context={document,Option,timetableBody,timetableMessage};
+const html=fs.readFileSync("web_v1_static_preview/index.html","utf8");
+const searchText=html.slice(html.indexOf("function selectSearchText("),html.indexOf("function initSearchableSelect("));
+const window={cikgulajuSubjectVariants:[
+ {label:"Bahasa Cina (SK)",code:"bahasa_cina_sk"},
+ {label:"Bahasa Cina (SJKC)",code:"bahasa_cina_sjkc"},
+ {label:"Sains (SJKC)",code:"sains_sjkc"},
+ {label:"Science (DLP)",code:"science_dlp"},
+ {label:"Mathematics (DLP)",code:"mathematics_dlp"},
+]};
+const context={document,Option,timetableBody,timetableMessage,window};
 vm.createContext(context);
-vm.runInContext(declarations+picker+reader,context);
+vm.runInContext(searchText+declarations+picker+reader,context);
 const OTHER=vm.runInContext("timetableOtherSubject",context);
 
 function readSubject(select,custom){
@@ -50,9 +60,10 @@ for(const saved of ["Matematik","English","Bahasa Melayu","Pendidikan Islam",
                     "Pendidikan Moral","Pendidikan Jasmani","Pendidikan Kesihatan",
                     "Pendidikan Muzik","Bahasa Arab","Sejarah","Reka Bentuk dan Teknologi",
                     "RBT","PJ","Perhimpunan Rasmi","Rehat","Kokurikulum",
-                    "Bahasa Inggeris"]){
+                    "Bahasa Inggeris","Bahasa Cina (SK)","Bahasa Cina (SJKC)",
+                    "Sains (SJKC)","Science (DLP)","Mathematics (DLP)"]){
  const wrap=context.makeTimetableSubjectPicker(saved,0);
- const [select,custom]=wrap.children;
+ const [,select,custom]=wrap.children;
  assert.equal(select.dataset.field,"subject");
  assert.equal(custom.dataset.field,"subject_custom");
  assert.equal(readSubject(select,custom),saved,"round-trip "+saved);
@@ -62,9 +73,19 @@ for(const saved of ["Matematik","English","Bahasa Melayu","Pendidikan Islam",
  checks++;
 }
 const wrap=context.makeTimetableSubjectPicker("",7);
-const [select,custom]=wrap.children;
+const [search,select,custom]=wrap.children;
 assert.equal(select.value,"");
 assert.equal(readSubject(select,custom),"");
+search.value="sains sjkc";
+search.listeners.input();
+assert.deepEqual(select.children[1].children.map(row=>row.value),["Sains (SJKC)"]);
+select.value="Sains (SJKC)";
+select.listeners.change();
+search.value="dlp";
+search.listeners.input();
+assert.deepEqual(select.children[1].children.map(row=>row.value),
+ ["Mathematics (DLP)","Sains (SJKC)","Science (DLP)"]);
+assert.equal(readSubject(select,custom),"Sains (SJKC)");
 select.value="Sains";
 select.listeners.change();
 assert.equal(readSubject(select,custom),"Sains");
@@ -78,16 +99,18 @@ custom.value="RPH Peralihan";
 assert.equal(readSubject(select,custom),"RPH Peralihan");
 assert.match(timetableMessage.textContent,/belum disimpan/);
 const groups=select.children.filter(x=>x.tag==="optgroup");
-assert.equal(groups.length,3);
-assert(groups.some(g=>g.label==="Subjek utama"));
+assert.equal(groups.length,2);
+assert(groups.some(g=>g.label==="Subjek sekolah rendah"));
 assert(groups.some(g=>g.label==="Waktu bukan PdP"));
+const subjects=groups[0].children.map(item=>item.label);
+assert.deepEqual(subjects,[...subjects].sort(new Intl.Collator("ms-MY").compare));
 assert(select.children.some(x=>x.value===OTHER));
 console.log("PASS: "+checks+" existing subjects/aliases preserve exact value, custom choice, grouped options");
 
 // Missing OCR class labels show their location and can be left out of import.
 const reviewFields=new Element("div");
 const reviewContext={
-  document, Option, timetableReaderFields:reviewFields,
+  document, Option, window, timetableReaderFields:reviewFields,
   teacherProfileState:{classAliases:{}},
   teacherDays:["Isnin","Selasa"],
   makeTimetableSelect:()=>new Element("select"),
@@ -100,7 +123,7 @@ const reviewContext={
   },
 };
 vm.createContext(reviewContext);
-vm.runInContext(declarations+picker+
+vm.runInContext(searchText+declarations+picker+
   between("function timetableReviewGroup(","function renderTimetableReadReport("),reviewContext);
 reviewContext.renderTimetableMappings("class_name");
 let [legend,input]=reviewFields.children[0].children;
