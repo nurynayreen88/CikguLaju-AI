@@ -128,13 +128,14 @@ def _english_asset_selection(year, lesson, years):
 
 
 def english_student_book_metadata(year, lesson, *, opener=None):
-    _english_asset_selection(year, lesson, range(1, 6))
+    _english_asset_selection(year, lesson, range(1, 7))
     data = _json("/internal/rph/v1/english-extras/student-book",
                  {"year": year, "lesson": lesson}, opener=opener)
     if data is None:
         return None
     pages = data.get("pages")
-    minimum, maximum = {1: (10, 11), 2: (58, 117), 3: (1, 135), 4: (1, 177), 5: (4, 119)}[year]
+    minimum, maximum = {1: (10, 11), 2: (58, 117), 3: (1, 135),
+                        4: (1, 177), 5: (4, 119), 6: (4, 131)}[year]
     if (data.get("source") != ENGLISH_ASSET_SOURCE or data.get("available") is not True
             or data.get("year") != year or data.get("lesson") != lesson
             or data.get("type") != "textbook" or data.get("format") != "pdf"
@@ -142,7 +143,7 @@ def english_student_book_metadata(year, lesson, *, opener=None):
             or not isinstance(pages, list) or not 1 <= len(pages) <= 4
             or not all(type(p) is int and minimum <= p <= maximum for p in pages)
             or pages != sorted(set(pages))
-            or (year != 5 and pages != list(range(pages[0], pages[-1] + 1)))
+            or (year not in (5, 6) and pages != list(range(pages[0], pages[-1] + 1)))
             or not isinstance(data.get("title"), str)
             or not 10 <= len(data["title"]) <= 220):
         raise NativeRPHUnavailable("Student Book source mismatch")
@@ -150,17 +151,17 @@ def english_student_book_metadata(year, lesson, *, opener=None):
 
 
 def english_student_book_pdf(year, lesson, *, opener=None):
-    _english_asset_selection(year, lesson, range(1, 6))
+    _english_asset_selection(year, lesson, range(1, 7))
     raw = _get("/internal/rph/v1/english-extras/student-book.pdf",
                {"year": year, "lesson": lesson}, accept="application/pdf",
-               limit=MAX_PDF, opener=opener)
+               limit=16 * 1024 * 1024 if year == 6 else MAX_PDF, opener=opener)
     if raw is None or len(raw) < 450 or not raw.startswith(b"%PDF-"):
         raise NativeRPHUnavailable("Student Book pages unavailable")
     return raw
 
 
 def english_audio_tracks(year, lesson, *, opener=None):
-    _english_asset_selection(year, lesson, range(1, 6))
+    _english_asset_selection(year, lesson, range(1, 7))
     data = _json("/internal/rph/v1/english-extras/audio",
                  {"year": year, "lesson": lesson}, opener=opener)
     if data is None:
@@ -186,7 +187,7 @@ def english_audio_tracks(year, lesson, *, opener=None):
 
 
 def english_audio_mp3(year, lesson, index, *, opener=None):
-    _english_asset_selection(year, lesson, (3, 4, 5))
+    _english_asset_selection(year, lesson, (3, 4, 5, 6))
     if type(index) is not int or not 1 <= index <= 4:
         raise ValueError("Invalid verified track")
     raw = _get("/internal/rph/v1/english-extras/audio.mp3",
