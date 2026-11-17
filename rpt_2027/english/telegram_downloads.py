@@ -6,6 +6,7 @@ entrypoint. It never alters RPH credit accounting, subscriptions or the DB.
 from pathlib import Path
 from primary_language_subjects import PRIMARY_LANGUAGE_SUBJECTS
 from tempfile import TemporaryDirectory
+import os
 from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
 from rpt_2027.sjkc.bahasa_cina import documents as bahasa_cina_sjkc
 from rpt_2027.sjkc.bahasa_melayu import documents as bahasa_melayu_sjk
@@ -32,6 +33,8 @@ SCHOOL_RPT_CALLBACKS = {
 def pdf_path(year):
     if type(year) is not int or year not in YEARS:
         raise ValueError("Unsupported RPT English year")
+    if os.environ.get("CIKGULAJU_ENGLISH_2027_INTEGRATED_RPH_ENABLED") == "1":
+        return PDF_ROOT / f"RPT_English_SK_2027_Year_{year}_A_B.pdf"
     return PDF_ROOT / ("RPT_ENGLISH_TAHUN_%d_2027_UNTUK_GURU.pdf" % year)
 
 
@@ -233,7 +236,7 @@ def install(ns):
                 "⚠️ PDF RPT English Tahun %d belum tersedia pada pelayan. "
                 "Tiada fail lain dihantar sebagai pengganti." % year)
         try:
-            result = send_document(cid, str(path), "RPT English Tahun %d — 2027 (PDF)" % year)
+            result = send_document(cid, str(path), "RPT English Year %d — 2027 (PDF)" % year)
             check = ns.get("_telegram_delivery_ok_v25279")
             if callable(check):
                 confirmed = bool(check(result))

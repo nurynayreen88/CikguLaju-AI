@@ -1,23 +1,16 @@
-# English Year 5 — Standalone RPH — Lesson 086 (Writing 15)
+# English Year 5 Lesson 86 — Writing 15
 
-**Status:** DRAF — SOW-aligned, awaiting source QA. **Topic:** Learning World. **Main LS:** 4.3.3. **Complementary LS:** 3.2.2. **Duration:** 60 minutes (suggested).
+**Official SOW topic:** Learning World.
+**Official SOW:** Lesson 86, printed p.124. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Writing 4.3.3 and Reading 3.2.2.
+**Materials:** English Plus 1 SB p.49 model email and Activities 3–4, TB p.63, peer-review slip and Workbook p.43 Exercise 8.
+**Learning objectives:** Pupils find two details in a model email and draft one or two paragraphs about school, then revise one part using peer feedback.
 
-**Language focus:** Present continuous and simple tenses; Conjunction: so; Such as, for example, like. **Materials:** English Plus 1 Student’s Book Activities 3 and 4 p.49 Teacher’s Book p.63.
+1. **Set induction (8 min):** Brainstorm details an exchange pupil might ask about. Each pupil notes one useful detail from their own school.
+2. **Activity 1 (12 min):** Pupils reread Danny’s email and find two pieces of information, such as a school time and a subject. Use SB Activity 3 to review how so links ideas.
+3. **Activity 2 (15 min):** In SB Activity 4, pupils plan and independently draft one or two short paragraphs about their school. They include details that would help a visiting pupil.
+4. **Activity 3 (17 min):** Partners check the email for a clear school detail, a link between ideas and an appropriate closing. The writer makes one meaningful revision.
+5. **Closure (8 min):** Ask pupils to read a revised sentence. If time permits, they complete one school detail in the model email in Workbook p.43 Exercise 8.
 
-**Learning objectives:** Main (Writing 4.3.3) — pupils produce a plan or draft of one or two paragraphs for a familiar topic and modify this appropriately in response to feedback in the Learning World activities. Complementary (Reading 3.2.2) — pupils understand specific information and details of simple longer texts in the linked reading task.
-
-**Set induction (5 min):** Brainstorm pupils’ ideas about what they would write in an email to a pupil in a school in Britain. Write ideas on board. Give prompts e.g. subjects, school day, family, hobbies.
-
-**Activity 1 (15 min):** Pupils read email at top of p.49 again. Ask: Who is the writer? (Danny) Who is he writing to? (Ela) What’s at the start and end of the email? (Hi / Write soon.).
-
-**Activity 2 (15 min):** Tell pupils they are going to write an email to a pupil from another country. They do Activity 4, Use It! Follow instructions in Teacher’s Book p.63 Exercise 4.
-
-**Activity 3 (15 min):** In pairs, pupils read partner’s email and draw a smiley face for: A. writing name of visitor at start and name of writer at end B. writing information about school – where it is, times of break, snack and lunch C. Paragraph 1 I’m happy about…; Paragraph 2 size of school, old or new; Paragraph 3 school subjects and timetable; Paragraph 4 description of photo Find out who has 3–5 smiley faces and who has more than 5.
-
-**PBD (5 min):** Teacher checks the plan, first draft and revised writing for a clear improvement based on feedback.
-
-**Closure (5 min):** Pupils think about their learning and performance in this unit. They complete self- assessment worksheet (see end of Unit 4). Collect worksheets from pupils and review them to note pupils’ responses.
-
-**Workbook practice (mapped):** p.41,43, Unit 4 Writing — so / email about school, Ex1-4 / Review Ex8. Use briefly; do not replace SOW tasks.
-
-**Differentiation:** Give suitable vocabulary or sentence prompts; challenge confident pupils with independent responses. **Final check:** Full printed-page and audio-content audit, A4 export and teacher approval pending; not READY.
+**PBD:** Check two details found in the model and compare the plan, draft and one change made after feedback.
+**Differentiation:** Provide a paragraph organiser and a phrase bank. Ask confident pupils to add an optional subject and explain why they take it.

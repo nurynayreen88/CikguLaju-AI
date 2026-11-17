@@ -1,20 +1,16 @@
-# Year 5 Lesson 116 — Writing 20
+# English Year 5 Lesson 116 — Writing 20
 
-Status: DRAF. Unit 6. Topic: Sport. SOW p.156. Main LS 4.3.2; complementary LS 2.1.1.
-Materials: SB p.67 Activities 4–5; TB p.81. Workbook mapping unverified. Listed audio is assigned by SOW but playback is not tested.
+**Official SOW topic:** Sport.
+**Official SOW:** Lesson 116, printed p.156. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Writing 4.3.2 and Speaking 2.1.1.
+**Materials:** English Plus 1 SB p.67 Activities 4–5 and Finished?, TB p.81 and Workbook p.55 Exercise 4.
+**Learning objectives:** Pupils spell three common words accurately in independently written past-event sentences and give two specific details about themselves orally.
 
-Objectives: Pupils demonstrate the main and complementary standards through the activities below.
+1. **Set induction (8 min):** Review days, months and ages. Pupils use one time expression to say when something happened.
+2. **Activity 1 (12 min):** Use SB Activity 4 to match time expressions with the examples. Model how one time phrase and one past verb can introduce a specific experience.
+3. **Activity 2 (15 min):** Pupils independently write three true sentences about their past activities, with details such as time, place or companions. Partners check the spellings after writing.
+4. **Activity 3 (17 min):** Use SB Activity 5 and Finished? for pairs to share two personal details and respond to a follow-up question. Pupils compare one true and one invented statement.
+5. **Closure (8 min):** Invite a pupil to share a past activity. If time permits, pupils write another true sentence using Workbook p.55 Exercise 4.
 
-Set induction (5 min): Play Beat the Teacher with compete.
-
-Main activities (40 min): Review days, months and years. Complete Activity 4 on past-time expressions. Pupils orally finish Last weekend I..., In (month) I..., On (day) I... and When I was...; write three true sentences, then complete Activity 5. Partners guess true/false statements and groups role-play interviews with sports stars. Teacher models task instructions, monitors pupils and gives corrective feedback.
-
-PBD (10 min): Check accurate spelling of high-frequency words and past verbs in independent sentences. Pupils improve one response using feedback.
-
-Closure (5 min): Pupils share a learning point and submit a short exit response.
-
-Differentiation: Offer visual cues, word banks, shorter instructions and sentence stems as needed; extend proficient pupils with more detailed independent responses.
-
-Verification: Aligned to official Year 5 SOW outline; exact book-page content and audio playback still require final audit. Do not mark READY.
-
-**Workbook (existing source QA map):** p.55,59, Unit 6 Past time expressions Ex3-4 + Writing sports star Ex7. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Check three target spellings in the independent sentences and listen for two clear personal details.
+**Differentiation:** Provide time and verb cards. Ask confident pupils to add a reason or result to a personal account.

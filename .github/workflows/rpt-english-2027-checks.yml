@@ -11,6 +11,9 @@ on:
       - 'tools/run_web_v1_preview.py'
       - 'web_v1_static_preview/index.html'
       - 'tests/test_english_rpt_2027_*.py'
+      - 'tests/test_english_integrated_rph_2027.py'
+      - 'tools/build_english_*_2027*.py'
+      - 'web/english_integrated_rph_2027.py'
       - '.github/workflows/rpt-english-2027-checks.yml'
   push:
     branches:
@@ -46,3 +49,46 @@ jobs:
               assert path.stat().st_size > 100000, str(path)
           print('English RPT PDFs 5/5 are present and valid headers')
           PY
+
+  october-review:
+    if: github.head_ref == 'audit/rpt-2027-takwim-pentaksiran-20261116'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install rendering dependencies
+        run: |
+          python -m pip install Flask==3.1.0 requests==2.32.3 python-docx==1.1.2 reportlab==4.2.5 pypdf==5.1.0 PyMuPDF
+          if ! command -v libreoffice >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq libreoffice-writer fonts-dejavu-core >/dev/null
+          fi
+      - name: Check integrated RPH and assemble review package
+        run: |
+          python -m unittest discover -s tests -p 'test_english_integrated_rph_2027.py' -v
+          python -m tools.build_english_october_review_bundle_2027 output/english-october-review
+      - uses: actions/upload-artifact@v4
+        with:
+          name: RPT_RPH_English_SK_2027_Year_2-6_Semakan
+          path: output/english-october-review/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Render Year 5 RPT and nine selected-standard RPH
+        run: |
+          python -m unittest discover -s tests -p 'test_english_y5_full_preview_gate_20261105.py' -v
+          python -m tools.build_english_rpt_2027_review output/english-y5-standards --year 5
+          python tools/verify_english_y5_choice_word_a4.py
+          cmp output/english-y5-standards/RPT_English_SK_2027_Year_5_A_B.pdf \
+            rpt_2027/english/RPT_English_SK_2027_Year_5_A_B.pdf
+      - uses: actions/upload-artifact@v4
+        with:
+          name: RPT_RPH_English_SK_2027_Year_5_SK_SP
+          path: |
+            output/english-y5-standards/*.pdf
+            output/english_y5_teacher_choice_a4_review/word/*.docx
+            output/english_y5_teacher_choice_a4_review/pdf/*.pdf
+          if-no-files-found: error
+          retention-days: 30

@@ -1,22 +1,17 @@
-# Year 5 Lesson 159 — Language Arts 27
+# English Year 5 Lesson 159 — Language Arts 27
 
-**Official SOW topic:** Gulliver's Travels.
+**Official SOW topic:** Gulliver’s Travels.
+**Official SOW:** Lesson 159, printed p.201. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Language Arts 5.3.1 and Speaking 2.3.1.
+**Materials:** Gulliver’s Travels graphic novel, BPK Graphic Novel Teaching Guide Spot Me worksheet and page-number cards for panels with dialogue.
+**Learning objectives:** Pupils adapt and perform a graphic novel scene and orally narrate the event it depicts.
+**Success criteria:** Perform a recognisable scene with intelligible speech and gestures, then narrate two events in order.
 
-Status: DRAF. Unit 8. Main LS 5.3.1; complementary LS 2.3.1.
-Materials: Gulliver's Travels graphic novel; BPK CCL guide pp.63–64. Non-textbook Language Arts lesson: no Student Book, Workbook or audio reference prescribed by SOW. Appendix 1 identifies complementary Speaking 2.3.1; the lesson table incorrectly labels the complementary skill as Writing.
+1. **Set induction (8 min):** Pupils complete Spot Me and use one word they found to describe a relationship in the story.
+2. **Activity 1 (12 min):** Pairs draw a page number, identify the event and divide the dialogue. Model how to use a gesture or change in voice to show a character’s reaction.
+3. **Activity 2 (14 min):** Pairs rehearse and check pronunciation. Each pair plans a two-event oral recap using a time connector.
+4. **Activity 3 (18 min):** Call pairs in page order. They perform their scene and narrate what happened first and next.
+5. **Closure (8 min):** Pupils write three relevant takeaways in their journals and share one with a partner.
 
-Objective: Pupils rehearse and perform a chosen Gulliver's Travels panel in pairs with intelligible pronunciation, gestures and appropriate dialogue, then write three takeaways from the story.
-
-Set induction (5 min): Complete Spot me from the guide.
-
-Main activities (40 min): Pairs draw a graphic-novel page number, divide the dialogue, rehearse pronunciation and gestures, then perform selected scenes in sequence. Write three lessons learned. Teacher models instructions and provides feedback.
-
-PBD (10 min): Teacher observes pronunciation, intelligible dialogue and appropriate gestures during the pair role-play, and checks three relevant lessons learned in pupils' journals.
-
-Closure (5 min): Pupils share a learning point and submit an exit response.
-
-Differentiation: Use visuals, sentence frames and paired support where needed; extend confident pupils with detailed independent work.
-
-Verification: Checked against official Year 5 SOW. Full source-page, Workbook and audio audit pending before READY.
-
-**Non-textbook source rule:** Follow the SOW-designated literature and BPK CCL teaching guide. Do not assign English Plus Student Book, Workbook or CD exercises for this lesson.
+**PBD:** Record whether the pair brings the panel to life with clear speech and suitable gestures. Check each pupil’s brief oral narration in rehearsal or performance.
+**Differentiation:** Provide dialogue cues and a recap frame. Ask confident pupils to add a line that fits the character and event.

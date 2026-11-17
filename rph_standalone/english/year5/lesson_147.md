@@ -1,20 +1,17 @@
-# Year 5 Lesson 147 — Language Arts 25
+# English Year 5 Lesson 147 — Language Arts 25
 
-Status: DRAF. Unit 8; topic: Gulliver's Travels. Official SOW Lesson 147. Main LS 5.2.1; complementary LS 2.1.5.
-Materials: Gulliver's Travels Chapter 5; BPK CCL Graphic Novel guide pp.56–60. No Student Book, Workbook or English Plus audio prescribed by this non-textbook Language Arts lesson.
+**Official SOW topic:** Gulliver’s Travels.
+**Official SOW:** Lesson 147, printed p.189. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Language Arts 5.2.1 and Speaking 2.1.5.
+**Materials:** Gulliver’s Travels Chapter 5, BPK Graphic Novel Teaching Guide character pictures and a short quiz.
+**Learning objectives:** Pupils describe a character from the graphic novel and explain why they like that character.
+**Success criteria:** One spoken character description with two accurate details and one reason linked to an action in Chapter 5.
 
-Objective: Pupils complete the specified activities and demonstrate the relevant learning standards.
+1. **Set induction (8 min):** Distribute character pictures from the guide. Pupils name their character or recall one detail.
+2. **Activity 1 (12 min):** Pairs read Chapter 5. Ask pupils to identify two actions and match each action to the character who did it.
+3. **Activity 2 (14 min):** Each pupil chooses a favourite character and prepares two details. Pupils with the same choice compare their descriptions.
+4. **Activity 3 (18 min):** Pairs use because to explain their choices. Ask each pupil to connect one reason to an event or action in the chapter.
+5. **Closure (8 min):** Use a short quiz on characters and settings. Ask pupils to explain one answer using the story.
 
-Set induction (5 min): Recall character details using pictures.
-
-Main activities (40 min): Read Chapter 5 in pairs; choose a favourite character, describe their actions and explain a preference using because. Compare reasons with others who chose the same character. Teacher models instructions, monitors and supports pupils.
-
-PBD (10 min): Assess supported personal response and character description. Pupils revise one response after feedback.
-
-Closure (5 min): Pupils share a learning point and complete an exit response.
-
-Differentiation: Provide visual cues, word banks and sentence frames as needed; extend confident pupils with detailed independent answers.
-
-Verification: Official SOW checked; full book-page, workbook and audio audit pending before READY.
-
-**Non-textbook source rule:** Follow the SOW-designated literature and BPK CCL teaching guide. Do not assign English Plus Student Book, Workbook or CD exercises for this lesson.
+**PBD:** Listen to each pupil describe a character and justify a preference with a story detail. Record the description and reason separately.
+**Differentiation:** Provide a picture and sentence starter. Ask confident pupils to explain why another reader might choose differently.

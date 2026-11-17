@@ -1,21 +1,16 @@
-# English Year 5 — Standalone RPH — Lesson 087 (Language Arts 15)
+# English Year 5 Lesson 87 — Language Arts 15
 
-**Status:** DRAF — SOW-aligned, awaiting source QA. **Topic:** Miss Antrobus. **Main LS:** 5.3.1. **Complementary LS:** 4.3.3. **Duration:** 60 minutes (suggested).
+**Official SOW topic:** Miss Antrobus.
+**Official SOW:** Lesson 87, printed p.125. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Language Arts 5.3.1 and Writing 4.3.3.
+**Materials:** Anthology of Poems p.16, Miss Antrobus by Richard Edwards, BPK Poetry Guide p.101 Activity 5, paper and feedback slips.
+**Learning objectives:** Pupils create a short poem about an imagined pet and revise at least one line after receiving a specific comment.
 
-**Language focus:** Reasoning (the use of because). **Materials:** Anthology of Poems p.16, Miss Antrobus; BPK CCL Poetry Guide Activity 5 p.101.
+1. **Set induction (8 min):** Use a brief true-or-false activity about the octopus in the poem. Pupils explain one answer using what they remember.
+2. **Activity 1 (12 min):** Recite Miss Antrobus with actions. Pupils choose a dream pet and give a reason. The teacher uses the guide’s example to show how one action can become a line in a new poem.
+3. **Activity 2 (15 min):** Pupils plan two actions their imagined pet can do and draft a short poem. They can use an acrostic to organise their ideas.
+4. **Activity 3 (17 min):** Partners read drafts aloud and give one suggestion to make a line clearer or more imaginative. Pupils revise a line and read the changed version.
+5. **Closure (8 min):** Each pupil shares a line they improved and explains which comment helped them change it.
 
-**Learning objectives:** Main (Language Arts 5.3.1) — pupils respond imaginatively and intelligibly through creating simple role-plays and simple poems or another appropriate imaginative response in the Miss Antrobus activities. Complementary (Writing 4.3.3) — pupils produce a plan or draft of one or two paragraphs for a familiar topic and modify this appropriately in response to feedback in the linked writing task.
-
-**Set induction (5 min):** Teacher reads a sentence based the poem and pupils will stand if the sentence is correct or they will sit down if the sentence is false.
-
-**Activity 1 (22 min):** Follow Step 1 until Step 4 (Activity 5) from the guidebook. Note: Pupils of lower proficiency can write acrostic poem instead (e.g. C – Cute, A – Adorable, T – Tame as in cat).
-
-**Activity 2 (23 min):** Teacher provides assistance when needed.
-
-**PBD (5 min):** Teacher checks a creative response linked to the literary work and a relevant reason.
-
-**Closure (5 min):** Prepare an illustration for their newly adapted poem. Anthology of Poems Page 16 Contemporary Children’s Literature Teaching Guidebook (BPK) – Poetry Activity 5 Page 101 Differentiate learning according to the needs of your pupils and class.
-
-**Literature route:** No English Plus Student Book, Workbook or CD activity is prescribed.
-
-**Differentiation:** Give suitable vocabulary or sentence prompts; challenge confident pupils with independent responses. **Final check:** Full printed-page and audio-content audit, A4 export and teacher approval pending; not READY.
+**PBD:** Check an imaginative pet detail, a short draft and one visible revision in response to feedback.
+**Differentiation:** Offer a choice of pet pictures and an acrostic frame. Ask confident pupils to experiment with a repeated phrase.

@@ -1,19 +1,16 @@
-# Year 5 Lesson 111 — Language Arts 19
+# English Year 5 Lesson 111 — Language Arts 19
 
-Status: DRAF. Unit 6, Seaside. SOW p.151. Main LS 5.3.1; complementary LS 2.2.2. Materials: Anthology of Poems p.19 and BPK Contemporary Children's Literature Poetry guide. No textbook or audio prescribed.
+**Official SOW topic:** Seaside.
+**Official SOW:** Lesson 111, printed p.151. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Language Arts 5.3.1 and Speaking 2.2.2.
+**Materials:** Anthology of Poems p.19, Seaside by Shirley Hughes, BPK Poetry Guide, instruction cards and drawing paper.
+**Learning objectives:** Pupils agree on an order for four instructions and create an imaginative, labelled seaside scene using two details from the poem.
 
-Objective: Pupils agree on the order of instructions and create an imaginative labelled seaside scene based on the poem.
+1. **Set induction (8 min):** Pupils suggest what to take to the beach and decide a useful order for preparing for the trip.
+2. **Activity 1 (12 min):** Read Seaside and ask groups to identify objects or actions they could use in an illustration. Each group explains one chosen detail.
+3. **Activity 2 (15 min):** Give groups the instruction cards in mixed order. Pupils propose and agree on an order for circling, listing, drawing and labelling the items before starting work.
+4. **Activity 3 (17 min):** Groups follow their plan and draw a seaside scene. Each includes two details from the poem and adds a feature that makes their version distinctive.
+5. **Closure (8 min):** Groups display the scenes. A representative explains one decision the group made and identifies a feature inspired by the poem.
 
-Set induction (5 min): Teacher writes 'Going to the beach'. Pupils brainstorm ideas and arrange them into a plan.
-
-Main activities (40 min): In groups, pupils read the relevant poem, then negotiate the order of randomly arranged instructions: circle, list, draw and label items. They produce a seaside scene containing the poem's items. Groups display work and check one another's scenes against the poem. Teacher monitors agreement on steps and use of labels.
-
-PBD (10 min): Teacher uses a checklist for logical sequence, participation and poem-based labels; pupils correct missing items after peer feedback.
-
-Closure (5 min): Each pupil writes an exit ticket stating what they learned.
-
-Differentiation: Supply picture and word prompts to pupils needing support; invite confident pupils to add and explain more poem-based details.
-
-Verification: SOW checked. Anthology and BPK page-level audit pending; remain DRAF.
-
-**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
+**PBD:** Observe pupils proposing or agreeing to a sequence and check the two poem details and one imaginative addition in the scene.
+**Differentiation:** Provide picture cues and four action cards. Ask confident pupils to explain why their sequence makes sense.

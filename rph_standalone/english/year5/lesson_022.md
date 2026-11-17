@@ -1,20 +1,17 @@
 # English Year 5 Lesson 22 — Consolidation 1
 
-**Official SOW:** Lesson 22, printed p.57. **Topic:** Towns and cities. **Duration:** 60 minutes (suggested).
-**Main and complementary CS/LS:** Speaking 2.2/2.2.1; Writing 4.2/4.2.4.
-**Materials:** SB p.15 Activities 2–4; TB p.29.
-**Learning objectives:** Main (Speaking 2.2.1) — pupils keep interaction going in short exchanges by asking suitable questions in the Towns and cities activities. Complementary (Writing 4.2.4) — pupils describe people, places and objects using suitable statements in the linked writing task.
+**Official SOW topic:** Towns and cities.
+**Official SOW:** Lesson 22, printed p.57. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Speaking 2.2.1 and Writing 4.2.4.
+**Materials:** English Plus 1 SB p.15 Activities 2–4, TB p.29 and WB p.18 Ex3.
+**Learning objectives:** Pupils sustain an exchange about local facilities and write suitable descriptions of two places their area could have.
+**Success criteria:** Ask one follow-up question linked to a reply and write two clear statements describing proposed places.
 
-1. **Set induction (8 min):** Review there is/are with TB p.29 warm-up.
-2. **Activity 1 (12 min):** Pupils complete Activity 2 and explain correct forms from grammar rules.
-3. **Activity 2 (15 min):** Pupils practise questions and answers about where they live in Activity 3.
-4. **Activity 3 (17 min):** Pairs complete Activity 4 and compare answers; if time repeat for a chosen city.
-5. **Assessment and closure (8 min):** Groups propose two improvements for their town or village and write them down; assess short exchanges.
+1. **Set induction (8 min):** Review there is and there are with familiar local places.
+2. **Activity 1 (12 min):** Use SB Activity 2 to check question and answer rules. In Activity 3, partners ask about facilities near home and compare answers.
+3. **Activity 2 (14 min):** Use SB Activity 4 to practise the questions in a new exchange. Pupils ask a relevant follow-up about a place a partner mentions.
+4. **Activity 3 (18 min):** Groups choose two places they would like in their area. Each pupil writes a sentence describing each place. If time permits, pupils complete Workbook p.18 Exercise 3.
+5. **Closure (8 min):** Vote for one proposed place after listening to the groups’ descriptions.
 
-**PBD:** Teacher observes a short exchange with a follow-up question about places and checks two accurate written town-improvement sentences; pupils refine one response.
-**Differentiation:** Rotate partners for support and confidence.
-**Workbook:** Optional only after verifying exact exercise page and activity; no unverified Workbook assignment.
-**Audio / lesson type:** No SOW audio.
-**QA status:** SOW-aligned draft; textbook page, audio playback and one-page Word/PDF output not yet independently verified.
-
-**Workbook (existing source QA map):** p.13,18, Unit 1 there is/are, some/any + Progress Review place questions, Ex1-5 / Ex1-4. Optional short practice after SOW activities; not a replacement for the core tasks.
+**PBD:** Listen for a follow-up that builds on the previous answer. Check two written descriptions for a specific detail about each place.
+**Differentiation:** Provide a question ladder and model descriptive sentence. Invite confident pupils to explain why each place is needed.

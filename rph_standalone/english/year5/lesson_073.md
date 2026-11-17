@@ -1,21 +1,16 @@
-# English Year 5 — Standalone RPH — Lesson 073 (Reading 13)
+# English Year 5 Lesson 73 — Reading 13
 
-**Status:** DRAF — final source/audio and A4 checks pending. **Topic:** Learning World. **Main LS:** 3.2.2. **Complementary LS:** 2.1.2. **Duration:** 60 minutes.
+**Official SOW topic:** Learning World.
+**Official SOW:** Lesson 73, printed p.111. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Reading 3.2.2 and Speaking 2.1.2.
+**Materials:** English Plus 1 SB p.44 Activities 1, 2 and 4, TB p.58, CD1.40, a world map and Workbook p.40 Exercise 2.
+**Learning objectives:** Pupils locate two details across school texts and find out about a partner’s school experience, then relate one experience of their own.
 
-**Materials:** English Plus 1 Student Book p.44 Activities 1, 2 and 4; Teacher Book p.58; audio CD1-40; map and school photo prompts. Workbook p.40 (prior mapping, optional).
+1. **Set induction (8 min):** Show the four school photographs. Pupils use the pictures and map to predict where each school is.
+2. **Activity 1 (12 min):** Pupils read the texts in SB Activity 1 while listening to CD1.40. Pause between texts so they can check their predictions and note one feature.
+3. **Activity 2 (15 min):** For SB Activity 2, pairs find two specific details in different texts and point to the sentences that support their answers. Discuss one clue that shows a writer’s opinion.
+4. **Activity 3 (17 min):** In SB Activity 4, pairs compare what they have done at school with an activity in one of the texts. Each asks a question and describes their own experience.
+5. **Closure (8 min):** Invite pupils to share one difference between their experience and a school in the texts. If time permits, pupils match one detail to a paragraph in Workbook p.40 Exercise 2.
 
-**Objective:** Pupils locate relevant details and opinions in texts about different schools and tell a partner one supported comparison with their own school experience.
-
-**Set induction (5 min):** Teacher elicits school subjects; pupils respond to the Think! prompt on SB p.44.
-
-**Activity 1 — Predict and read (15 min):** Teacher shows the four photos and locates China, Britain, Bangladesh and Ireland on the map. Pupils predict the school locations, then read and listen to CD1-40 to test their predictions.
-
-**Activity 2 — Find details (15 min):** Teacher clarifies primary, secondary, private, public and boarding schools. Pupils complete SB p.44 Activity 1 and identify the words in the texts supporting their answers.
-
-**Activity 3 — Identify opinions (15 min):** Pupils complete Activity 2 with TB p.58 guidance and find opinion expressions such as 'It's a great idea' and 'It's a lot of fun'. In pairs, they complete Activity 4 (Use It!) and compare a school described with their experience.
-
-**PBD (5 min):** Teacher checks two text-supported answers from each pupil and observes one relevant oral comparison. Pupils correct or improve one answer.
-
-**Closure (5 min):** Each pupil states a school detail learned and one difference from their own experience.
-
-**Differentiation:** Provide a short glossary and highlight a relevant paragraph for support; extend with an additional evidence-based comparison. **Workbook:** WB p.40 Unit 4 Reading is optional aligned reinforcement. **QA:** Printed activities, audio contents and A4 layout still require verification.
+**PBD:** Check two details tied to the texts and listen for a question about experience and an intelligible description of an experience.
+**Differentiation:** Mark the paragraph to reread and offer a question stem. Ask confident pupils to explain what makes one school experience unusual.

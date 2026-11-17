@@ -1,6 +1,1525 @@
 {
   "version": "english-year5-per-lesson-release-v1",
   "year": 5,
-  "approved_lessons": {},
-  "notes": "No lesson released by default. Approve each fixed-SOW lesson manually with source SHA256 and all QA gates verified. Teacher-choice requires separate standard selection, and cannot be released through fixed-standard bridge."
+  "approved_lessons": {
+    "1": {
+      "source_sha256": "c5ae6d7a65db27cf72d7fbee3066e32c1a31c42d546be80c6fc8f5c0d89d92f1",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "2": {
+      "source_sha256": "2022f495b840b56c340292752ebaeaa3ddfa7df5389732bdcf5e105d3ef5ef0c",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "3": {
+      "source_sha256": "20c821f3bb2ada9f44a44b29a2785655700ba4f1c7d536d1cf98822f1b07b212",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "4": {
+      "source_sha256": "e17e340a6dcda49e41885d4b648b146c1b3c1cbcfeb1917333e9a6c2d9da26ef",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "5": {
+      "source_sha256": "3e3379903d1119ed2c208b88ac9fc92a9dec833765e608eba56654aadfb79699",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "6": {
+      "source_sha256": "6fe171635f02525a850dcaf773489d789f5c7fc8625b91236ada5df5f91bb3ec",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "7": {
+      "source_sha256": "553305f42192fe4c639354d8feab064913b65c95a07cc195456af8aa041f2960",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "8": {
+      "source_sha256": "8af4a58477154ff1cd6aa9f9534a532bc34f95a5f622668257940859108b5033",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "9": {
+      "source_sha256": "25a4fcfa71e3480b94abbdc7663fa924f0e797f48275e34778593c11828cf3dd",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "10": {
+      "source_sha256": "77c7c7cf400df40cf431fa37a728c5414bc9167b8c99cdbe2ee2500dbb17a5fc",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "11": {
+      "source_sha256": "d00ae8514277f94426bc87e93b61e169e0e4ce3fc236927ecb520b49c9a069d0",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "12": {
+      "source_sha256": "5fb75da01e8b113379a6ca5c2db1b2875b63733c42c8802d81f5d7a35d7a4512",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "13": {
+      "source_sha256": "dfedcf2a440d9bbe3f092aba36ee64fb882a88ba9fffd1b9b2c11df03e8b8f81",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "14": {
+      "source_sha256": "36c1eed60fce87900db31c720b674eced49a23fa58ef187bb1191796c9bacafe",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "15": {
+      "source_sha256": "15184db7cca209db8649a194c7b4cfc4dbdfeace815c32c3d6d9159de8a2b436",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "17": {
+      "source_sha256": "1d2074b37f2813960e235508de14a6ff08d72d38e0535ae9b55343c884d9315a",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "18": {
+      "source_sha256": "ccc39fbbab878072f13f591aa13391d898798936be3df0f4a699d8d03b80886c",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "19": {
+      "source_sha256": "55d26fc98965e084d34a12b39adfaa5f496aa29a61c966b320e0efc59d2e3e26",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "20": {
+      "source_sha256": "bbb30f0fc3dcbfd71cef19bc87d7e385ea79148ad8c8cd5d7acab6feb08aa70b",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "21": {
+      "source_sha256": "c546ebf1fa1d21d4962ebdb1a37215149736343b71f6fb1e4d3ecae09ef9ac54",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "22": {
+      "source_sha256": "09ff60e2f4b3abd9f0fa0ccb9aaf27dda513182e0baa6c1591106fa1c8847737",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "23": {
+      "source_sha256": "2501de2064e2a68f4ccb73e787a5a938a563b33197a2418537db763bd0cd659c",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "24": {
+      "source_sha256": "c7619d2c0f367fe47786c4b0fe8b040b461afa3212aff387634cda47c81a6df9",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "25": {
+      "source_sha256": "43162c668070ea670c83d9bad06fac473594cee953b0ba5e0351cfb1aa67a736",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "26": {
+      "source_sha256": "011667f98683658c8e7d08a04f9e72daeecfe10a0247ecd6b4bd144aac41c18e",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "27": {
+      "source_sha256": "0c10bd8f7789d6b185e847a78d1268da90906736d32ba069a4ae5ff969c500dc",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "28": {
+      "source_sha256": "20e3b28967a4b760ec893de1a5eec07d81b7594d7f8d1ccd4ea592a4fb1f2c90",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "29": {
+      "source_sha256": "a9f47f75a9b57b5550df0bcc5e32069cd28d1030c288cff5a711971d9a5ea9d9",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "30": {
+      "source_sha256": "1caaa14e5dd65654fe98a622e4c0509d2c1597e862a64a7a8830a559433ee0a6",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "31": {
+      "source_sha256": "db7e91d562eb139d287b346c2b99609c255eabe0fd2cabb721be7a2d123b776c",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "32": {
+      "source_sha256": "7d6b770988abb3bbe365fc5ddc2fa8f6ae0f98c172b953fe012a43e9227f05e7",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "33": {
+      "source_sha256": "642e52098712679f9f1432f99f6f714d06840367925d20b9b69f46adc9b1add0",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "35": {
+      "source_sha256": "03778459f3b155ac1d12859c62a8d2ff8825c0036ac4ca92be52e6938af7e8e1",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "36": {
+      "source_sha256": "8b8fd35c7665e5fe739f115299315738ba29e4086b96e80475cc21b2d6a87a37",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "37": {
+      "source_sha256": "735e8f9ade41795fd6556f863efde390c14d3bcfd14a92cba77960d18912146b",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "38": {
+      "source_sha256": "37b0cf10055f5f61588122462545ad2e3a7513393750c62974efa5ce4d721e9c",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "39": {
+      "source_sha256": "98d7c2d0fe4e7de1b0200ace8eeac028089b9a2d1af6b5431785646579eac089",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "40": {
+      "source_sha256": "ea7a2d8185641471431cec6e17e24dcff907b235d2a1ce1c2666e65c7a341f20",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "41": {
+      "source_sha256": "d533ebe4e939d30784051285898785a7eb416d4176e92f87aee24f85e9edc732",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "42": {
+      "source_sha256": "bfdd317b0e2aecbe98429ceda3a4fdac0bfdbc5d52fa47e1a04b457393439083",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "43": {
+      "source_sha256": "1fbba095ae4c2bc1423b2fa7b74044c5a25273108cd49a4ad091b15e6cb4c346",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "44": {
+      "source_sha256": "387fa01da603223c0615dee0435c3ca3028208f9a66eee91050cd711977bf3d6",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "45": {
+      "source_sha256": "f9126d4ad4a0bb5e336226bd65d08ffcae19f401b971dc77ce2c1278e0accf71",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "46": {
+      "source_sha256": "95aaf11ab4d5fb2948935580f44f42b1ef5fe0677741c1252bdd238ae8d7636c",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "47": {
+      "source_sha256": "64870d2fa8be4c2e30847d1cd79480bb14c8665266790edb53aeddf7424ae0b6",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "48": {
+      "source_sha256": "788ba4694a868f97952fcbb625735b23d04d85b80455e2628812c758c75e3f43",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "49": {
+      "source_sha256": "39816a270cf3eef842049dce31509223714638b686ffed93e2ed74dd005c624b",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "50": {
+      "source_sha256": "91735cd3cce45cbfa0045557863ed3200f58a84f6dbdc251120c25504664ac73",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "51": {
+      "source_sha256": "4bc985915c63c9ab455ffce73b98410b51b2be4986b0e2f5f2fedf356d7b7784",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "53": {
+      "source_sha256": "4131150576713ac4b362392a6de68f716f148a32eeaaec3d8af0e82c0c8b47e9",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "54": {
+      "source_sha256": "61fbf0425acbd4c5d96b870f751a9e9c4e040cfab4ce49949afd26d958705fa4",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "55": {
+      "source_sha256": "cd42bde3189f50d80e0cbf2c9158e5fc6ebb25aa69446f3a2228d76c7e74f8b7",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "56": {
+      "source_sha256": "5166846a0ac83ed6a4d4bcf765c3122f1a6aeffa5f246bc494f10e69992ea665",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "57": {
+      "source_sha256": "5c7537b30d442fb58bcb405c7cb431ffe26235e422d5ecfe613c82a913e06c11",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "58": {
+      "source_sha256": "f753f7d64a44a8effaaeac625bab8a6f800c6b71c19d6a260aceb23d3ce558e6",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "59": {
+      "source_sha256": "5263d292e3fbab0f77a58655b537c48c2d8989ca278b715feb34101fa8032c52",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "60": {
+      "source_sha256": "d0ac9fe77e6da86697dd2cdad9a0c8fc062f8830aebf3c4dcd61dd3b56d5bb01",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "61": {
+      "source_sha256": "80b7b6bbd7cccaa1226034e90baf9f978e71cadc518432c9e30ffa360c8d71f8",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "62": {
+      "source_sha256": "1df355430de96cd7d611ac08261433b71f8099115fd01d8068e07cce2c843933",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "63": {
+      "source_sha256": "a393bdb622171669f204464341ab010d5d6c3e251653f737adeb0df85bf3b089",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "64": {
+      "source_sha256": "2181fa37a1f4eae8f2b572c683647e20e5627f1b82f636add6bc141b3b329141",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "65": {
+      "source_sha256": "3834f62fdec41ffd8388bc3d6e9c831fab0ce9d6da5a0ad7e16598556250ad92",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "66": {
+      "source_sha256": "30fda0995f8267922b77eb3b6bb5aec04c47e3d8ff8d675a24c681331d76c2cb",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "67": {
+      "source_sha256": "7355efd2d49baabd758c538e89c917f7d5b97b8a8ea5e3de222a8f32922a73af",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "68": {
+      "source_sha256": "2eb1cd66eda992bb4351768e5b354243a002facde82e0849ac1c666e2e5044b0",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "69": {
+      "source_sha256": "415ef38bcd15a4c8f3c6c9708d2d603d3d7b39f4ef27087a4654e3e25d6a70ed",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "71": {
+      "source_sha256": "cdeff1352a8e7c24f1ccf8fce093e992c26f837e1b49f6121dceec903e5b44dd",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "72": {
+      "source_sha256": "6e96cae9190bdc69e9e6e4802e1cb8d56b06c07ab1e870747918d863cc7b4b87",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "73": {
+      "source_sha256": "c9fa4b6053694709c712fa93c4624a65051c3e290a38940846a7626c26d3c31c",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "74": {
+      "source_sha256": "8934cf4cd7bf4af6b6d340827c500a053ac93b8c1a06da0f251b4c4aeacb0a3d",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "75": {
+      "source_sha256": "d9a9bd85e65e6defa5cf80ac773050586f2c6bc371fab514f3af4de0669c5329",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "76": {
+      "source_sha256": "885eaa28d0cb1788449d1bedc49617ee2be4b334628dd50a3d5142727dc1be1b",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "77": {
+      "source_sha256": "ca41e72c999105d9361333d087249d986aa5e5d42df8925d50bce5ff4a2a7f11",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "78": {
+      "source_sha256": "57f78f2923edf619f72b60b1dc410aaf01df15098d23195496adf68fcaef0be9",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "79": {
+      "source_sha256": "df0f345c7f85468c5ca8f091770a488d0c3d4934378aaf38005518fa7966e840",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "80": {
+      "source_sha256": "34964566f7e56d33e826373cf6c0c1acf192cbd14fee3b9a342c5268df9748b0",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "81": {
+      "source_sha256": "6c0e0270de6cfa0cea7cfb062dc92c0b16b3bceea3de0987af38149e6c8a50eb",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "82": {
+      "source_sha256": "908c0df24bd0836e8cbb30107ab9ae4dce588ed6860a5bc14374ea9efb2ce9ed",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "83": {
+      "source_sha256": "d4e01acd5aff0ca511ac084ad94a618df45a28d3cbfec4f1e3c06eb4ff3b718e",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "84": {
+      "source_sha256": "f2e2749a755b273dc229fc50193025d5ff61bff2464f646d7f3423c7524ac90b",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "85": {
+      "source_sha256": "837d4879fab10449faf0aa5f5787c8464d880cb888d304fb675d6e391c24cb1a",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "86": {
+      "source_sha256": "6d5de45e6e4e84a0261922a2f41094b9c814012d8c321d9b9682632fc0982f5f",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "87": {
+      "source_sha256": "8d4487220df15ec7783e8ff6063c85182bbd8ff9a1c4f37c6a13153066aaf2e5",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "89": {
+      "source_sha256": "a98a345c844299552cce7669f7ee16f8dc03beb5178f0610b8fdbea5661bebfa",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "90": {
+      "source_sha256": "56febe9d2693a2e382e1fa9c6e0c3cb13eece3429fe51c03399bd4842272e6a8",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "91": {
+      "source_sha256": "9b2cd1d3d0819b0fccd43e778e92c654139c4351370846ceaad413dba2e66780",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "92": {
+      "source_sha256": "772b1fbc3d1e27956dfc014d4679ea0bf179bf3b07e316cc26574749a8e9ba63",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "93": {
+      "source_sha256": "765057a14a39abfd1f4c33906aa838bdc748f6abbe1877e245b5f8381cd4859e",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "94": {
+      "source_sha256": "06d16de52caaa1984508bdb4100ffcfffb7ce25bfbe2d68b2633eb090e7fb43b",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "95": {
+      "source_sha256": "ae1055c7c692432b373b16e98dbb82b0871665f6976f7f4938efa340fa852146",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "96": {
+      "source_sha256": "d713612e1dec0970770a1c711d37261dc7f7cd8b119a0192110987b61d52495c",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "97": {
+      "source_sha256": "ed143ab4a4c36550184890d4626ca40204bb8c3b565660a66923e3e3ce6c88d8",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "98": {
+      "source_sha256": "c334ebd54f5b62ddd1b7aaf319251d3fc36bfabb8b4caab05ae29b0b3d71dc0d",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "99": {
+      "source_sha256": "374b1da1d49520479717a385e7788486a9f16454ebe52d9689c339d1d2d5d3a2",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "100": {
+      "source_sha256": "4840387b4e60f20d549ee0ee085f48e7ae2fc0888d246a3c72505b67c338a1a4",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "101": {
+      "source_sha256": "b3739f940748f7e8ccdc519a3c78ca6ac2b521c8d1701406b9c6cc8c968f6dc4",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "102": {
+      "source_sha256": "d3406c486dc5c1aa9eb19fe40a63262a157b9abb20df4f1b67e24c107c030685",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "103": {
+      "source_sha256": "2997fdbb5212ef59c071b71148413c94bce07a74e648299bec662f15b20cb99d",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "104": {
+      "source_sha256": "0ab900bda7d13495d7688b529b8075fec64a00bd1c7d3fd661f4650cf508f5a7",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "105": {
+      "source_sha256": "0a32a3f0c03989a3bca613f9119f7c25ce47c038185cd093fc84a283db9d66e4",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "107": {
+      "source_sha256": "3ebc739d4b28cf44353716c00374a4e1240ae3a805fa87bd35238ed177c5726a",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "108": {
+      "source_sha256": "54663d0808c0ecabcbacf4bda42ae71a7af51bec25cbd7f2d399db1959f359b5",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "109": {
+      "source_sha256": "a7a6b87fe5359e7db5a543c4b31154d08b09fd56d7bd9fbe267d4b2041ad48ea",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "110": {
+      "source_sha256": "a410310389e14467352a2b41396d9fd265295a2d818afd57ec283e532bc3ff67",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "111": {
+      "source_sha256": "2326d018046992d4dc0285c4ecf1419bf46b1dc6ef55f7bb9765ab3ba3f5f85a",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "112": {
+      "source_sha256": "655accb3f8fe93b3a7e854c0516aa6883e48443be9aabf41f376d3d9db3447cf",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "113": {
+      "source_sha256": "0fb19ec1457902db17026707889794054520795ba270937eab2d96c0efcb89d8",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "114": {
+      "source_sha256": "64e1361b3fe9ff0f7391398d8b14974edad000584bcdaa5fa74083be55168ebb",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "115": {
+      "source_sha256": "8dcfc1f1e163669081cbb9858bd4b3c107cf6bd617a54e2d8edf167b8d8c72ab",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "116": {
+      "source_sha256": "db782abbe0b19110ac6266d83ad76c911f702a205739140ac80fc0e2a8a8b118",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "117": {
+      "source_sha256": "87689d00b748a7b23ee13994b2ba28104d6c69fcb8fc39d7fb2b0671360cc9ef",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "118": {
+      "source_sha256": "b466132a26366dc6877394bfb84e43d7155387de2d2aef6ee9bf5e6f38e28f7e",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "119": {
+      "source_sha256": "33c20743a251fe922f5564382dcc6ebddf6443b6ced900842fa8b9b96dadc8cf",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "120": {
+      "source_sha256": "81e426b246578257de5ba1657acedb50a0729a10da1f4bab24872bd7fa70e0d3",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "121": {
+      "source_sha256": "4b3e9e0fbd2c846daeb8373bb2dde158d8d60f427883bfc3a1cc09904e01b3cd",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "122": {
+      "source_sha256": "ede5b5aed65bd70b271d2a7dee017b9fd8cdff442d6eccc49fac7c59544c3e7b",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "123": {
+      "source_sha256": "fc32b8500dde0838d8996d3c0b4b2e2e48af375894cf103d9c7303b432d143d2",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "125": {
+      "source_sha256": "3574f3a26384ebc92652f7e5b3369492fd1c829daed0843df5c301fff18a4c44",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "126": {
+      "source_sha256": "19978fdbf439404f376db811593002525ad42d47b82a61fd8c74067fd3d96419",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "127": {
+      "source_sha256": "b0307526a7a0f1dae66cdceb800d7628a79b01c69c12a66c944508bcdd35f53f",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "128": {
+      "source_sha256": "df9ea917a53968cf6e88cf462023b84b7ff93c6340f0338388d498cd143dc031",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "129": {
+      "source_sha256": "29cebe1ebfb92487214d6bdbdcf9c474b6d4d3af86ae0bee5ab96348a1abc9e5",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "130": {
+      "source_sha256": "bb4cb6368a8b34f34172dd0f7021fe1af2e1e1ef6c9458d368a9d23769db4f92",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "131": {
+      "source_sha256": "7370d472be1116cad65eb66b5e7f7224c3a6f44b274c63c9025574fecfe0a10d",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "132": {
+      "source_sha256": "d50b19d21f987e021c30af3fd6ef73b707a117f68fe9fc7efe855ebbcbc7e210",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "133": {
+      "source_sha256": "22f9c28567ecbe6a446162bb6add7f6add17d1bdf52fb1c4294b134500b6b7af",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "134": {
+      "source_sha256": "c1ab8cdf00f8d2a9467cbe7dbf10b994816dff7f38de51c059239a5d289b6579",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "135": {
+      "source_sha256": "ac6448124cd3fe1716d78054702421c7b2f0c7ee5f9d17909141384155c8607e",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "136": {
+      "source_sha256": "5f778c6c06380cd2b0559d8ab04679396cc484a4c2511d2e619502743abe0a3a",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "137": {
+      "source_sha256": "2c1e52c657c989ff22ada326045ae1de2a01603440976025d50ca7093b54623b",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "138": {
+      "source_sha256": "7529909f5ff452e81f81e47be2e901d6ff7d36ef70d54c83da79a9bfdef89a32",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "139": {
+      "source_sha256": "df9edadfc5f1bebf91c04aff2400285997bbaac215c5cb0564e3c79e42506239",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "140": {
+      "source_sha256": "10e6b4d63fa1e09687cfb4464da0d19a6ddfd21eaeeeea425bbc5486688ee705",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "141": {
+      "source_sha256": "64a1f68ed4d956ec9f585202b3945dee14294b4e8227551d4b7ad2a1a1257aaf",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "143": {
+      "source_sha256": "a6f3e92d63a9e2b7daf5bd84c139106efd173222ca0d9b9f7f2cf998f89df8f5",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "144": {
+      "source_sha256": "c6f5acf82e8c2581d8452a8495fbe6a7bd1b1fd6f6b869b3488275940f3559aa",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "145": {
+      "source_sha256": "95b0c61f95708b191b8db8986c3ae72076326c6ccfdd2336da053f659bc3c92d",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "146": {
+      "source_sha256": "214d4c6cd6424f1f356ef3ba7dcd164251a6816d6ef2efb62095e5d7ef6c1c1e",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "147": {
+      "source_sha256": "906932e8d038ab9801e1d2ea57a6c29823a0387ea988e381d74c7470c1170945",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "148": {
+      "source_sha256": "910fb14c80464a3f4db152033d3ed59ad2b5a263b99329a77f7256d6e29aa0aa",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "149": {
+      "source_sha256": "1a247acaff9d265262f1923bf92ca2b4c4b633af2ce214808d354189bea47658",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "150": {
+      "source_sha256": "74dcf25a6fc8acaaf58244bac51c7f5ec39d33c5bee68e8de5ce716f6d80bccd",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "151": {
+      "source_sha256": "e71a61df2421ccbf6ddf46c572c04ed7d0629d72d1cb5f5676d02efaed6c7a1e",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "152": {
+      "source_sha256": "3fc6c2655da2906cc4c0b2d2b8bb1f6795fc956fd5e110e6c742afdd25f35c01",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "153": {
+      "source_sha256": "c5489d874533a82c647cb44800a1ea8202262d10e0ff0dda13f678b9cc8936e9",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "154": {
+      "source_sha256": "3f505c13bceb06935acdc0b8b50f3189cb90c4b458f0e781f6757854b0ec9a0c",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "155": {
+      "source_sha256": "08533a3ecb80d4415ec780dfd06815a3f4658360f09878e20216da3ad961c5ae",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "156": {
+      "source_sha256": "a0c155ed398342c1443d6d26fa0b8545eb8634afc39374171287a405d17c1bd4",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "157": {
+      "source_sha256": "3f874926aafad9f8571669cc24f719d597739eca91059d8267ac4935c3b6c5bf",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "158": {
+      "source_sha256": "3517a7db3d02c8fc1a798636d3e1584257ac3d43d0dd15a009b76667f7b3798c",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    },
+    "159": {
+      "source_sha256": "06993647297d46209dc7f83fb098d6aefb4d68ca4b7b412183d5bde2bb17aa93",
+      "teacher_approved": true,
+      "official_sow_pair_verified": true,
+      "printed_book_activity_verified": true,
+      "audio_content_verified_or_not_applicable": true,
+      "word_a4_verified": true,
+      "pdf_a4_verified": true,
+      "telegram_delivery_verified": false
+    }
+  },
+  "notes": "The project owner approved the exact fixed-SOW sources audited at the recorded commit. Release remains gated per lesson until teacher-account Telegram delivery is verified. Teacher-choice proposals use a separate bridge.",
+  "approval_evidence": {
+    "owner_confirmation_date_myt": "2026-11-17",
+    "owner_confirmation": "Proceed",
+    "reviewed_source_commit": "5883240b61975fd5026ffc94ff26428b46a1c9c7",
+    "audit_commit": "a6e53b52b3c335a59eb373e0434650ab764ea0ec",
+    "year5_document_ci_run": 43993429848,
+    "telegram_delivery": "pending_real_teacher_account"
+  }
 }

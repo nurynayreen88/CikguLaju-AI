@@ -1,21 +1,16 @@
 # English Year 5 Lesson 47 — Listening 9
 
-Official SOW Lesson 47, printed p.83. Topic: Days. Suggested duration: 60 minutes.
-Main and complementary learning standards: Listening 1.3.1; Reading 3.2.4.
-Materials: SB p.28 Activities 1–3; TB p.42; CD 1-26.
+**Official SOW topic:** Days.
+**Official SOW:** Lesson 47, printed p.83. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Listening 1.3.1 and Reading 3.2.4.
+**Materials:** English Plus 1 SB p.28 Activities 1–3, TB p.42, CD 1-26, Workbook p.22 Exercise 1 and a dictionary.
+**Learning objectives:** Pupils infer the meanings of two words from the spoken dialogue and check one meaning using a familiar dictionary.
 
-Objective: Pupils identify two details from the weekend dialogue and use one suitable spoken reaction in a short exchange.
+1. **Set induction (8 min):** Pupils name activities they would join on a school special day.
+2. **Activity 1 (12 min):** Use SB Activity 1 to look over the programme. Pairs note words that sound similar in English and Malay.
+3. **Activity 2 (15 min):** Play CD 1-26 for SB Activity 2. Pupils use nearby words in the dialogue to infer two meanings, then check one in a dictionary.
+4. **Activity 3 (17 min):** Pairs sort dialogue reactions by purpose. Replay the recording to compare pronunciation, then pupils practise the dialogue in SB Activity 3.
+5. **Closure (8 min):** Pairs agree on a morning and an afternoon activity. If time permits, pupils complete two clues in Workbook p.22 Exercise 1.
 
-1. Set induction (8 min): Discuss weekend activities.
-2. Activity 1 (12 min): Complete Activity 1 and compare cognates such as concert and konsert.
-3. Activity 2 (15 min): Listen to CD 1-26 for Activity 2 and check dialogue details.
-4. Activity 3 (17 min): Sort Right, Yes, OK, Mmm, Well and No? by communicative function.
-5. PBD and closure (8 min): Replay CD 1-26 to practise pronunciation; pairs read dialogue and choose programme activities.
-
-PBD: Teacher checks two details heard from CD1-26 and observes a pair using one appropriate reaction (Right, Yes, OK, Mmm, Well or No?) with understandable intonation.
-Differentiation: Pause track for pupils who need extra writing time.
-Workbook: Exact page and exercise not verified; do not assign an invented activity.
-Audio: Use only SOW-specified track if applicable; audio playback not yet verified.
-QA: SOW-aligned draft pending physical book-page and one-page Word/PDF verification.
-
-**Workbook (existing source QA map):** p.22,27, Unit 2 Special days listening Ex3-4 + Progress Review speaking/plans Ex6. Optional brief practice after SOW activities; not a substitute for core tasks.
+**PBD:** Check two inferred meanings and one spoken clue per pupil. Ask pupils to show the dictionary entry used to confirm a meaning.
+**Differentiation:** Pause the track and provide two possible meanings after the first listen.

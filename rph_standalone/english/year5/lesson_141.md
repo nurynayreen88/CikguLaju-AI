@@ -1,39 +1,17 @@
-# English Year 5 — Lesson 141: Gulliver's Travels (Language Arts 24)
+# English Year 5 Lesson 141 — Language Arts 24
 
-**Status:** DRAF — official Lesson-page standards aligned; CCL source-page and A4 teacher review pending.
-**Topic:** Gulliver's Travels, Chapter 4; Liliput and the Land of Giants.
-**Main CS/LS:** Language Arts 5.3/5.3.1
-**Complementary CS/LS:** Writing 4.2/4.2.4
-**Duration:** 60 minutes
-**Materials:** *Gulliver's Travels* graphic novel Chapter 4; BPK CCL Graphic Novel guide; A4 drawing sheets and pencils. Non-textbook lesson: no mandatory English Plus Student Book, Workbook or audio.
-**Learning objective:** Pupils create two imaginative scenes showing themselves as giant/tiny characters and describe people, places or objects in at least two accurate *There is / There are* sentences.
-**Success criteria:** Two distinct illustrated scenes; two clear descriptive sentences linked to the drawings; one reasoned prediction of the next chapter.
+**Official SOW topic:** Gulliver’s Travels.
+**Official SOW:** Lesson 141, printed p.182. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Language Arts 5.3.1 and Writing 4.2.4.
+**Materials:** Gulliver’s Travels Chapter 4, the BPK Graphic Novel Teaching Guide, paper and drawing materials.
+**Learning objectives:** Pupils create two contrasting scenes inspired by the graphic novel and write suitable descriptions of both settings.
+**Success criteria:** Two distinct illustrated scenes, one clear descriptive sentence per scene, and one prediction with a reason.
 
-## Set induction (5 minutes)
-**Teacher:** Play SOW Pre-lesson Task 7, Beat the Teacher, using the words *giant*, *Liliput* and *Belfuscu*.
-**Pupils:** Guess the words, then predict the scale of the story's characters.
+1. **Set induction (8 min):** Use three key words to recall what pupils know about Lilliput and the Land of Giants.
+2. **Activity 1 (12 min):** Groups read Chapter 4. They identify a detail that makes Gulliver seem small and recall an earlier scene in which he seems large.
+3. **Activity 2 (15 min):** Pupils design paired scenes in Lilliput and the Land of Giants. They draw themselves at a scale that makes sense in each setting and add one imaginative detail.
+4. **Activity 3 (17 min):** Each pupil writes a clear description of both scenes using there is or there are where suitable. Partners match the descriptions to the drawings.
+5. **Closure (8 min):** Invite pupils to explain a difference between their drawings and give a reason for one prediction about Gulliver’s next adventure.
 
-## Activity 1 — Read and discuss (15 minutes)
-**Teacher:** Guide groups through Chapter 4 and ask pupils to find visual evidence of the different sizes and places.
-**Pupils:** Read in small groups; describe how Gulliver looks in Liliput and the Land of Giants.
-
-## Activity 2 — Draw two imaginative scenes (15 minutes)
-**Teacher:** Explain the SOW task: one scene in Liliput and one in the Land of Giants; model an original placement of pupils in each drawing.
-**Pupils:** Draw both scenes, showing themselves as giant in Liliput and tiny in the Land of Giants.
-
-## Activity 3 — Write descriptions (10 minutes)
-**Teacher:** Model *There is / There are* without supplying a copied response; monitor agreement and relevant nouns.
-**Pupils:** Write at least two meaningful scene descriptions about people, places or objects; compare them with a partner.
-
-## Reinforcement / PBD (10 minutes)
-**Teacher:** Check both illustrations and record at least two statements meeting Writing 4.2.4; note the imaginative response for Language Arts 5.3.1.
-**Pupils:** Read one sentence aloud, correct one agreement or vocabulary error and justify a creative choice.
-
-## Closure (5 minutes)
-**Teacher:** Use the SOW Shout Out activity to elicit predictions for Gulliver's next chapter.
-**Pupils:** Predict one possible event and briefly explain why.
-
-## Differentiation and follow-up
-Support: accept words, phrases or full sentences when appropriate to the pupil's stage, as permitted by SOW Strategy 3. Extension: add descriptive details with an accurate reason.
-
-**Source precedence:** KPM Primary Year 5 SK SOW *Lesson 141 lesson table* gives Complementary Writing **4.2.4** ('Describe people, places and objects using suitable statements'), which matches this task and the 2027 RPT. The same SOW's Appendix 1 lists 4.2.2. The discrepancy remains recorded for curriculum provenance; the lesson-specific table is used operationally. Final teacher approval is still required before READY.
+**PBD:** Check two imaginative, recognisably different settings and one suitable written description of each. Listen for one reason that supports the prediction.
+**Differentiation:** Provide labelled picture cues and sentence stems. Ask confident pupils to describe the same object at two different scales.

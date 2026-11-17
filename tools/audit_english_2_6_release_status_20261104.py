@@ -25,7 +25,9 @@ from web.english_y4_pending_draft_preview_runtime import (
     adapt_rows as y4_draft, PENDING as Y4_DRAFT, AUDIO_CONFLICT,
 )
 from web.english_y5_fixed_draft_preview_runtime import preview_rows as y5_fixed
-from web.english_y5_teacher_choice_runtime import adapt_rows as y5_choice
+from web.english_y5_teacher_choice_runtime import (
+    adapt_rows as y5_choice, load_proposal as y5_proposal, selected_standards,
+)
 from web.english_y5_standalone_runtime import CHOICE_LESSONS as Y5_CHOICE
 from web.english_y6_standalone_runtime import (
     adapt_rows as y6_rows, Y6_TEACHER_CHOICES as Y6_CHOICE,
@@ -37,6 +39,7 @@ OFFICIAL_INDEX = ROOT / "audits" / "english_primary_2_6_official_sow_index_20261
 REPORT_PATH = ROOT / "output" / "english_2_6_release_audit_20261104.json"
 STATUS_MAPPED = "SOURCE_MAPPING_PASS_FINAL_QA_PENDING"
 STATUS_CHOICE = "TEACHER_CHOICE_DRAFT_DSKP_SELECTION_PENDING"
+STATUS_SELECTED = "TEACHER_CHOICE_DSKP_SELECTED_DRAFT"
 STATUS_CONFLICT = "AUDIO_SOURCE_CONFLICT_DRAFT"
 STATUS_FAIL = "TECHNICAL_BLOCKER"
 NEEDED = ("TAJUK", "OBJEKTIF PEMBELAJARAN", "SET INDUKSI",
@@ -119,12 +122,19 @@ def _check(year, number, sow):
                 "DRAF" not in str(output.get("TAJUK") or "")):
             failures.append("Y4 Lesson30 audio conflict notice missing")
     elif sow["teacher_selected"]:
-        category = STATUS_CHOICE
-        for label in ("MAIN CONTENT STANDARD","MAIN LEARNING STANDARD",
-                      "COMPLEMENTARY CONTENT STANDARD","COMPLEMENTARY LEARNING STANDARD"):
-            value = output.get(label)
-            if not isinstance(value,str) or "not fixed by SOW" not in value:
-                failures.append("Teacher-choice field improperly asserts official standard: " + label)
+        category = STATUS_SELECTED if year == 5 else STATUS_CHOICE
+        labels = ("MAIN CONTENT STANDARD", "MAIN LEARNING STANDARD",
+                  "COMPLEMENTARY CONTENT STANDARD", "COMPLEMENTARY LEARNING STANDARD")
+        if year == 5:
+            proposal = y5_proposal(number)
+            if proposal is None or tuple(output.get(k) for k in labels) != tuple(
+                    code for pair in selected_standards(proposal) for code in pair):
+                failures.append("Year 5 selected DSKP codes do not match the proposal")
+        else:
+            for label in labels:
+                value = output.get(label)
+                if not isinstance(value, str) or "not fixed by SOW" not in value:
+                    failures.append("Unexpected value for teacher-choice field: " + label)
         if "DRAF" not in str(output.get("TAJUK") or ""):
             failures.append("Teacher-choice DRAF label missing")
     else:
@@ -188,7 +198,7 @@ def main():
         for row in report["technical_blocker_lessons"][:30]:
             print("BLOCKED", row,flush=True)
         raise SystemExit("English Word/PDF offline audit found technical blockers")
-    expected={STATUS_MAPPED:766,STATUS_CHOICE:33,STATUS_CONFLICT:1}
+    expected={STATUS_MAPPED:766,STATUS_CHOICE:24,STATUS_SELECTED:9,STATUS_CONFLICT:1}
     if report["status_counts"] != expected:
         raise SystemExit("Unexpected status categories: "+str(report["status_counts"]))
     print("TECHNICAL_800_OF_800_PASS_FINAL_READY_NOT_CLAIMED",flush=True)

@@ -1,25 +1,16 @@
-# English Year 5 — Standalone RPH — Lesson 068 (Writing 12)
+# English Year 5 Lesson 68 — Writing 12
 
-**Status:** DRAF (SOW activities revised; final visual and teacher QA pending). **Topic:** Wild Life. **Main LS:** 4.3.2. **Complementary LS:** 1.1.1. **Duration:** 60 min, suggested.
+**Official SOW topic:** Wild Life.
+**Official SOW:** Lesson 68, printed p.105. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Writing 4.3.2 and Listening 1.1.1.
+**Materials:** English Plus 1 SB p.117 Activity 4 and the song lyrics, TB p.131, CD3.34, a word-sorting sheet and Workbook p.31 Exercise 3.
+**Learning objectives:** Pupils spell three familiar words accurately in independently written animal questions and recognise and say two rhyming pairs with little support.
 
-**Language focus:** Present simple tense interrogatives: Is it (adjective)? Can it (verb)?. **Materials:** English Plus 1 Student’s Book Activity 4 p.117 Teacher’s Book p.131; audio CD3.34.
+1. **Set induction (8 min):** Pupils recall animal nouns, action verbs and adjectives from the song. The teacher introduces three columns for pupils to sort their examples.
+2. **Activity 1 (12 min):** Play CD3.34. Pupils independently note words they recognise, then check their spellings in the lyrics. The teacher uses two sound examples for pupils to find and say rhyming words.
+3. **Activity 2 (15 min):** Model one SB Activity 4 question. Pupils choose an animal and independently write six to eight questions with yes-or-no answers.
+4. **Activity 3 (17 min):** Partners take turns guessing the animal using their questions. Pupils mark how many questions they needed, then check three familiar spellings in their written questions.
+5. **Closure (8 min):** Ask pupils to say two rhyming pairs. If time permits, they write one more can question using Workbook p.31 Exercise 3.
 
-**Learning objectives:** Main (Writing 4.3.2) — pupils spell a range of high-frequency words accurately in independent writing in the Wild Life activities. Complementary (Listening 1.1.1) — pupils recognise and reproduce with little or no support a wide range of target language phonemes in the linked listening task.
-
-**Set induction (5 min):** 1. Brainstorm nouns, verbs and adjectives pupils remember from song, I Can Tell You. Write on board.
-
-**Activity 1 (15 min):** Hand out worksheet to each pupil. They listen to the song again and write 3–5 nouns, verbs and adjectives they hear in the three worksheet columns. Play CD3.34. When finished, pupils check spelling by looking at song words on p.117. Ask for examples of words they didn’t spell correctly.
-
-**Activity 2 (15 min):** Pupils look at song gap fill 1. Ask: Which word in the song has the same sound as grow? (go). Explain these words rhyme and songs often have rhyming words. Pupils find words to rhyme with: see (me), name (tame), frog (dog), tail (snail), drink (think), bat (cat, rat, that) .
-
-**Activity 3 (15 min):** Read aloud first bullet point in Activity 4. Explain that after choosing an animal, pupils write 6–8 questions with yes/no answers. Do an example using words in speech bubbles. Say additional questions e.g. Can it fly? Is it colourful? Does it live in hot countries? Choose an animal for pupils to identify. They ask you up to 8 questions. How many questions did pupils ask to identify your animal? 5.
-
-**PBD (5 min):** Teacher checks each written task for accuracy and records a specific correction pupils can make.
-
-**Closure (5 min):** 6. Choose a post-lesson task from Section 3.
-
-**Workbook practice:** Workbook p.31, Unit 3 Language Focus — questions with can / How...?, Ex3-5. Use as brief follow-up without replacing the SOW tasks.
-
-**Differentiation:** At Step 2, write words that are difficult to spell in a word bank on board. Learners who need support can then copy them more easily in the.
-
-**QA:** Workbook mapping is historical QA. Physical book pages, audio content and A4 export not independently verified; not READY.
+**PBD:** Check three accurate spellings in the pupil’s own questions and listen for two correctly identified and pronounced rhyme pairs.
+**Differentiation:** Use a small picture bank and model one rhyme. Ask confident pupils to add another word with the same ending sound.

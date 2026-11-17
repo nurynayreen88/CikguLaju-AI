@@ -4,6 +4,7 @@ from hashlib import sha256
 import tempfile
 import types
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 from web.english_y5_standalone_runtime import (
@@ -140,6 +141,23 @@ class EnglishY5IntegrationTests(unittest.TestCase):
         self.assertFalse(approved_for_telegram(1))
         self.assertFalse(approved_for_telegram(88))
         self.assertFalse(approved_for_telegram(0))
+
+    def test_approved_renderer_keeps_official_standard_fields_and_success_criteria(self):
+        old = {"TAJUK": "Old title", "MAIN LEARNING STANDARD": "9.9.9",
+               "COMPLEMENTARY LEARNING STANDARD": "9.9.9", "REFLEKSI": "Teacher notes"}
+        runtime = types.SimpleNamespace(_rph_rows=lambda *_: old)
+        self.assertTrue(install(runtime, enabled=True))
+        state = {"subject": "English", "year": "Year 5", "lesson_no": 141}
+        with patch("web.english_y5_standalone_runtime.approved_for_telegram", return_value=True):
+            rows = runtime._rph_rows(state, "")
+        self.assertEqual(rows["MAIN CONTENT STANDARD"], "5.3")
+        self.assertEqual(rows["MAIN LEARNING STANDARD"], "5.3.1")
+        self.assertEqual(rows["COMPLEMENTARY CONTENT STANDARD"], "4.2")
+        self.assertEqual(rows["COMPLEMENTARY LEARNING STANDARD"], "4.2.4")
+        self.assertIn("Gulliver", rows["TAJUK"])
+        self.assertIn("Two distinct illustrated scenes", rows["KRITERIA KEJAYAAN"])
+        self.assertEqual(rows["REFLEKSI"], "Teacher notes")
+        self.assertEqual(old["MAIN LEARNING STANDARD"], "9.9.9")
 
     def test_release_manifest_requires_matching_source_hash_and_all_qa(self):
         with tempfile.TemporaryDirectory() as tmp:

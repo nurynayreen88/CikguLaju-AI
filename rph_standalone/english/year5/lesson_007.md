@@ -1,22 +1,17 @@
-# English Year 5 — Lesson 007 — Speaking 2
+# English Year 5 Lesson 7 — Speaking 2
 
-**Official SOW:** Primary Year 5 SK Lesson 7, printed p.41; Starter Unit; **Theme:** World of Self, Family and Friends; **Topic:** Free time. **Suggested duration:** 60 minutes.
-**Main CS/LS:** Speaking 2.1/2.1.1. **Complementary CS/LS:** Writing 4.2/4.2.1.
-**Language focus:** interrogatives with be; prepositions of place.
-**Learning objectives:** Main (Speaking 2.1.1) — pupils give detailed information about themselves in the Free time activities. Complementary (Writing 4.2.1) — pupils give detailed information about themselves through the linked writing task.
-**Success criteria (teacher-set):** Complete the SOW-aligned core tasks and give observable spoken, written, listening, reading or creative evidence with appropriate support.
-**Materials:** SB p.7 Activities 5–6; TB p.21.
+**Official SOW topic:** Free time.
+**Official SOW:** Lesson 7, printed p.41. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Speaking 2.1.1 and Writing 4.2.1.
+**Materials:** English Plus 1 SB p.7 Activities 5–6, TB p.21 and WB p.7 Ex5.
+**Learning objectives:** Pupils give details about themselves and their current position through speech and independent writing.
+**Success criteria:** Share three personal location or possession details in an exchange and write two accurate statements about themselves.
 
-## Lesson sequence
-1. **Set induction (8 min):** Teacher elicits location sentences using near, between, opposite and next to.
-2. **Activity 1 (12 min):** Pupils follow TB p.21 Exercise 5, asking partners questions and recording yes/no counts.
-3. **Activity 2 (15 min):** Teacher introduces Activity 6 table of people, cities and places; pupils identify countries of Rio, New York, London and Cairo.
-4. **Activity 3 (17 min):** Pupils follow TB p.21 Exercise 6, using different people, cities and places; optional pair question writing if time.
-5. **PBD and closure (8 min):** Teacher plays Who am I? as a famous Malaysian person; pupils ask Are you...? questions; teacher assesses self-description and questions.
+1. **Set induction (8 min):** Elicit precise positions in the classroom using near, between, opposite and next to.
+2. **Activity 1 (12 min):** Pairs complete SB Activity 5, ask questions and tally yes and no answers. Ask pupils to expand two answers with a personal detail.
+3. **Activity 2 (14 min):** Use the person, city and place table in SB Activity 6 to model a guessing exchange. Pairs change roles and choose new combinations.
+4. **Activity 3 (18 min):** Pupils return to their real classroom context and write two statements about where they are or what they have with them. If time permits, pupils complete Workbook p.7 Exercise 5.
+5. **Closure (8 min):** Play a short guessing round in which pupils use be questions.
 
-## Assessment and differentiation
-**PBD:** Teacher checks the clarity of pupils' oral answers about locations and personal positions and one corresponding written statement; note accurate questions and prepositions. **Differentiation:** Provide 'Are you in ...?' and 'Are you at ...?' question starters.
-**Reflection:** Pupils meeting objective __ / __; intervention __.
-**QA status:** SOURCE-PAIRED DRAFT — SOW sequence and standards verified; textbook/anthology page inspection, audible audio verification where applicable, and Word/PDF output QA pending. Do not present as fully READY.
-
-**Workbook (existing source QA map):** p.7, Starter Language Focus — be questions, Ex3-5. Optional short practice after the SOW activities; do not substitute it for the lesson tasks.
+**PBD:** Listen for three intelligible spoken details about the pupil. Check that both written statements give clear personal information.
+**Differentiation:** Provide picture cues and be question starters. Encourage pupils to extend yes or no answers with an extra detail.

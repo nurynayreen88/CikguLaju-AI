@@ -6,7 +6,7 @@ teacher-choice suggestions, NOT pedagogical approval or live Telegram delivery.
 import unittest
 
 from web.english_y5_fixed_draft_preview_runtime import preview_rows
-from web.english_y5_teacher_choice_runtime import adapt_rows as choice_rows
+from web.english_y5_teacher_choice_runtime import adapt_rows as choice_rows, load_proposal
 from web.english_y5_standalone_runtime import (
     CHOICE_LESSONS, _gate, LESSON_ROOT, approved_for_telegram,
 )
@@ -50,8 +50,11 @@ class Year5FinalisationGate(unittest.TestCase):
                     output=choice_rows(state(number),original)
                     self.assertIsNot(output,original)
                     self.assertIn("DRAF",output["TAJUK"])
-                    for key in STANDARD_KEYS:
-                        self.assertIn("Teacher to choose",output[key])
+                    proposal = load_proposal(number)
+                    main, comp = proposal["main_sp"], proposal["complementary_sp"]
+                    self.assertEqual(tuple(output[key] for key in STANDARD_KEYS), (
+                        main.rsplit(".", 1)[0], main, comp.rsplit(".", 1)[0], comp,
+                    ))
                     selected.add(number)
                 else:
                     self.assertIs(rec["teacher_choice"], False)
@@ -86,16 +89,13 @@ class Year5FinalisationGate(unittest.TestCase):
                     self.assertIs(choice_rows(value,original),original)
 
         # A teacher-choice Lesson has no official fixed SOW code. The
-        # proposal adapter is deliberately allowed to replace *stale*
-        # upstream skill fields with a pending-teacher-selection notice,
-        # but must never print the stale numeric value as official.
+        # proposal adapter uses the selected DSKP standards despite stale upstream fields.
         invalid=state(88,sp_code="9.9.9")
         self.assertIs(preview_rows(invalid,START), START)
         safe=choice_rows(invalid,START)
         self.assertIsNot(safe,START)
         self.assertIn("DRAF",safe["TAJUK"])
         for key in STANDARD_KEYS:
-            self.assertIn("Teacher to choose",safe[key])
             self.assertNotIn("9.9.9",safe[key])
 
 

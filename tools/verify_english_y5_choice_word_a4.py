@@ -95,14 +95,15 @@ def main():
             raise RuntimeError("Compactor lost source text for Lesson " + str(n))
         if "CADANGAN CIKGULAJU (DRAF)" not in after:
             raise RuntimeError("Draft label absent from document for Lesson " + str(n))
-        if "Teacher to choose Year 5 DSKP standard" not in after:
-            raise RuntimeError("Teacher-choice standard notice missing for Lesson " + str(n))
+        standards = (rows["MAIN LEARNING STANDARD"], rows["COMPLEMENTARY LEARNING STANDARD"])
+        if any(code not in after for code in standards):
+            raise RuntimeError(f"Selected DSKP standard missing for Lesson {n}")
         if "Teacher:" not in after or "Pupils:" not in after:
             raise RuntimeError("Missing distinct teacher/pupil actions for Lesson " + str(n))
         if "Generic RPH" in after:
             raise RuntimeError("Legacy generic RPH leaked for Lesson " + str(n))
         files.append(path)
-        records.append({"lesson":n,"word":path.name,"chars":len(after),
+        records.append({"lesson":n,"word":path.name,"chars":len(after),"standards":standards,
                         "phase_chars":sum(len(rows[k]) for k in
                             ("SET INDUKSI","AKTIVITI UTAMA","PENTAKSIRAN","PENUTUP"))})
     profile = OUT / "lo-profile"
@@ -124,6 +125,7 @@ def main():
         r["pdf_contains_draft_notice"]="CADANGAN CIKGULAJU" in text_content
         r["pdf_contains_teacher_actions"]="Teacher:" in text_content
         r["pdf_contains_pupil_actions"]="Pupils:" in text_content
+        r["pdf_contains_standards"] = all(code in text_content for code in r["standards"])
     OUT.joinpath("report.json").write_text(
         json.dumps({"status":"offline Word one-page A4 only",
                     "lesson_count":len(records),"lessons":records},
@@ -132,7 +134,7 @@ def main():
     if any(not (r["pages"]==1 and r["a4"] and
                 r["pdf_contains_draft_notice"] and
                 r["pdf_contains_teacher_actions"] and
-                r["pdf_contains_pupil_actions"]) for r in records):
+                r["pdf_contains_pupil_actions"] and r["pdf_contains_standards"]) for r in records):
         raise SystemExit("One or more Year5 teacher-choice RPH did not fit 1-page A4 or lost text")
 
 

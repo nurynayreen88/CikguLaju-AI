@@ -1,23 +1,16 @@
-# English Year 5 — Standalone RPH — Lesson 110 (Writing 19)
+# English Year 5 Lesson 110 — Writing 19
 
-**Status:** DRAF — SOW-aligned, awaiting source QA. **Topic:** Sport. **Main LS:** 4.2.3. **Complementary LS:** 3.3.1. **Duration:** 60 minutes (suggested).
+**Official SOW topic:** Sport.
+**Official SOW:** Lesson 110, printed p.150. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Writing 4.2.3 and Reading 3.3.1.
+**Materials:** English Plus 1 SB p.64 Activity 4 and p.65 Activities 1–2, TB pp.78–79 and Workbook p.53 Exercise 2.
+**Learning objectives:** Pupils choose an Olympic event that interests them and write a factual account with three details from the timeline in a clear order.
 
-**Language focus:** Simple past tense of verb ‘to be’ affirmative and negative: there was / wasn’t, there were / weren’t. **Materials:** English Plus 1 Student’s Book p.64 Activity 4 and p.65 Activities 1–2; Teacher’s Book pp.78–79.
+1. **Set induction (8 min):** Ask pupils which sports they enjoy watching. They look back at the Olympics timeline and select an event or athlete they want to read about.
+2. **Activity 1 (12 min):** In SB p.64 Activity 4, pupils reread a chosen entry and tell a partner why it interests them. Each notes three facts they could use in a short account.
+3. **Activity 2 (15 min):** Use SB p.65 Activities 1–2 to review there was and there were. Pupils check two facts against the timeline before deciding the order for their account.
+4. **Activity 3 (17 min):** Each pupil writes a short factual account using the details they found. Partners compare one detail with the printed timeline and suggest a correction if needed.
+5. **Closure (8 min):** Invite pupils to read one event detail they found interesting. If time permits, they describe the crowd or venue using Workbook p.53 Exercise 2.
 
-**Learning objectives:** Main (Writing 4.2.3) — pupils narrate factual events and experiences of interest in the Sport activities. Complementary (Reading 3.3.1) — pupils read and enjoy A2 fiction/non-fiction print and digital texts of interest in the linked reading task.
-
-**Set induction (5 min):** Explain that pupils are going to write about sports they like watching. Pupils do Pre-lesson Task 4: I’m Going To... Relate the task to writing skills e.g. topic vocabulary, spelling, punctuation.
-
-**Activity 1 (15 min):** Pupils in pairs do p.64, Activity 4, Use It!. Pupils compare with partners which piece of information they thought was the most interesting. Find out how many pairs had the same piece of information.
-
-**Activity 2 (15 min):** Write on board sentence starters e.g. ‘I really like watching…’, ‘I prefer watching…’, ‘I sometimes/usually like watching…’. Pupils write two or three sentences about sports they like watching. They exchange with a partner and compare sentences. Ask pairs: Are any sports the same? Choose pupils to read their sentences aloud. Find out the sport most pupils like watching.
-
-**Activity 3 (15 min):** Pupils look at Rules p.65, Activity 1. Write on board: ‘was’, ‘wasn’t’, ‘were’, ‘weren’t’. Pupils look at years on the Olympics Timeline again and write down past verbs in them. (1896-were, 1900-weren’t, were, 1912-was, 1916-weren’t, 1920- wasn’t, 1924-were, 1936-was, 1960-was 1988-wasn’t, 2012-was, 2016-were) Teacher introduces the short reading about the Marathon. They do Activity 2. Follow instructions in Teacher’s Book p.79 Exercise 2. Note how well pupils wrote factual information about sports of interest.
-
-**PBD (5 min):** Teacher checks two or three pupil-written factual sentences about sport for meaning, appropriate past forms and punctuation; pupils revise one sentence using feedback.
-
-**Closure (5 min):** For a brief creative extension, write on board ‘Imagine!’ ‘In (date)… I was in a …team. There was… There were…’ Pupils in pairs use sentence starters to make up an imaginary sport story.
-
-**Workbook practice (mapped):** p.53, Unit 6 Language Focus — there was/there were; was/were, Ex1-4. Use briefly; do not replace SOW tasks.
-
-**Differentiation:** Give suitable vocabulary or sentence prompts; challenge confident pupils with independent responses. **Final check:** Full printed-page and audio-content audit, A4 export and teacher approval pending; not READY.
+**PBD:** Check three supported, logically ordered facts and a personal response to an entry the pupil chose and read.
+**Differentiation:** Give a fact organiser and past-tense stems. Ask confident pupils to link two details without changing the facts.

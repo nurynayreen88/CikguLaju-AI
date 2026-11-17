@@ -1,20 +1,16 @@
-# Year 5 Lesson 113 — Listening 20
+# English Year 5 Lesson 113 — Listening 20
 
-Status: DRAF. Unit 6. Topic: Sport. Official SOW p.153. Main LS 1.2.3; complementary LS 3.2.4.
-Materials: SB p.66 Activities 1–3; TB p.80; CD2-15 and CD2-16. Workbook page not verified. Audio playback not tested.
+**Official SOW topic:** Sport.
+**Official SOW:** Lesson 113, printed p.153. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Listening 1.2.3 and Reading 3.2.4.
+**Materials:** English Plus 1 SB p.66 Activities 1–3, TB p.80, CD2.15–CD2.16, dictionaries and Workbook p.54 Exercise 1.
+**Learning objectives:** Pupils follow and order three events from the X Games programme and use a familiar reference to check one unfamiliar word.
 
-Objectives: Pupils complete the stated lesson tasks and show evidence of both listed learning standards.
+1. **Set induction (8 min):** Show the skateboarding photos and ask what pupils think the programme will tell them about the two athletes.
+2. **Activity 1 (12 min):** Use CD2.15 for SB Activity 1. Pupils match the verbs with their past forms and use the examples to predict an event they might hear.
+3. **Activity 2 (15 min):** Play CD2.16 for SB Activity 2. Pupils identify the speaker and the relevant topic. In Activity 3, they match facts to Alana or Tom and order three events about one of them.
+4. **Activity 3 (17 min):** Pairs use a dictionary to check one word such as trick or compete, then explain how the chosen meaning fits an event in the programme.
+5. **Closure (8 min):** Pairs compare their event order. If time permits, pupils write two past forms from Workbook p.54 Exercise 1.
 
-Set induction (5 min): Elicit difficult and dangerous sports and predict the topic.
-
-Main activities (40 min): Play assigned CD2-15 for Activity 1 on past verbs; preteach twist and trick; play CD2-16 for Activities 2 and 3. Pupils classify interview answers under Alana or Tom and use reference resources to check unfamiliar words. Teacher models the task, monitors pair or group participation and provides corrective feedback.
-
-PBD (10 min): Check listening responses and note support needed after each replay. Pupils improve an answer based on teacher feedback.
-
-Closure (5 min): Pupils share one new word, form or fact and complete an exit response.
-
-Differentiation: Provide vocabulary prompts, visuals or sentence starters for pupils needing support; ask proficient pupils to justify or extend their responses.
-
-Verification: Lesson sequence and page references drawn from official Year 5 SOW. Full book-page and audio-file audit pending; do not mark READY.
-
-**Workbook (existing source QA map):** p.54-55, Unit 6 regular/irregular past simple + past affirmative, Ex1-5 / Ex1-4. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Check three events in the order heard and one accurate meaning from the selected reference.
+**Differentiation:** Provide athlete name cards and a timeline with one event marked. Ask confident pupils to distinguish two events that happened at different ages.

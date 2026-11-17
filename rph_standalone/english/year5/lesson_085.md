@@ -1,25 +1,16 @@
-# English Year 5 — Lesson 85 (Reading 15)
+# English Year 5 Lesson 85 — Reading 15
 
-**Status:** DRAF — pending full source QA. **Topic:** Learning World. **Main LS:** Reading 3.2.1. **Complementary LS:** Speaking 2.1.1. **Time:** 60 minutes (suggested).
+**Official SOW topic:** Learning World.
+**Official SOW:** Lesson 85, printed p.123. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Reading 3.2.1 and Speaking 2.1.1.
+**Materials:** English Plus 1 SB p.49 Activities 1–3, TB p.63 and Workbook p.41 Exercise 1.
+**Learning objectives:** Pupils identify the main idea of Danny’s email across two or more paragraphs and share two specific details about themselves at school.
 
-**Materials:** English Plus 1 SB p.49 Activities 1–3; TB p.63. Workbook mapping and any audio playback remain unverified.
+1. **Set induction (8 min):** Discuss what an exchange pupil might want to know about a school. Pupils predict the email’s purpose from the heading and photo.
+2. **Activity 1 (12 min):** Pupils read the full email and answer the SB Activity 1 questions. The teacher offers two summaries. Pairs select the better one and point to two supporting paragraphs.
+3. **Activity 2 (15 min):** Pupils complete SB Activity 2 and identify phrases about the school day and subjects. They adapt two phrases to talk about their own school life.
+4. **Activity 3 (17 min):** In SB Activity 3, pairs practise joining a situation and its result with so. Each pupil tells a partner two details about their own school life.
+5. **Closure (8 min):** Pairs share their best summary in one sentence. If time permits, pupils select the appropriate connector in one item in Workbook p.41 Exercise 1.
 
-**Learning objectives:** Main (Reading 3.2.1) — pupils understand the main idea of simple texts of two paragraphs or more in the Learning World activities. Complementary (Speaking 2.1.1) — pupils give detailed information about themselves in the linked speaking task.
-
-**Set induction (5 min):** Pupils respond to the Think! prompt about schools.
-
-**Activity 1 (15 min):** Teacher clarifies exchange programme, compulsory, optional, medium-sized and woodwork. Pupils read the email and complete Activity 1.
-
-**Activity 2 (15 min):** Pupils do Activity 2, then compare details with partners. Teacher clarifies how photos are uploaded in an email and identifies key phrases about schools.
-
-**Activity 3 (15 min):** Pupils practise school descriptions in pairs. Teacher models so as a conjunction and pupils complete Activity 3, orally finishing two reasons about learning.
-
-**PBD (5 min):** Each pupil identifies the email's main idea and states two accurate details about the school.
-
-**Closure (5 min):** Pupils identify changed details using Spot the Differences.
-
-**Differentiation:** Provide a word glossary; extend by explaining differences between schools using so.
-
-**Verification:** Official Year 5 SOW outline checked. Full textbook, Workbook, audio and teacher approval pending before READY.
-
-**Workbook (existing source QA map):** p.40,43, Unit 4 Reading school types + review writing vocabulary, Ex1-5 / Ex8. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Check an accurate main idea supported by two paragraphs and two specific personal details spoken by each pupil.
+**Differentiation:** Offer two summary options and phrase stems. Ask confident pupils to give a reason for one of their school preferences.

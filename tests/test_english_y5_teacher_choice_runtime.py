@@ -71,8 +71,11 @@ class Year5NineTeacherChoiceProposals(unittest.TestCase):
                 self.assertEqual(old, OLD)
                 self.assertIn("CADANGAN CIKGULAJU (DRAF)", out["TAJUK"])
                 self.assertNotIn("LEGACY", out["MAIN LEARNING STANDARD"])
-                self.assertIn("not fixed by SOW", out["MAIN LEARNING STANDARD"])
-                self.assertIn("not fixed by SOW", out["COMPLEMENTARY LEARNING STANDARD"])
+                proposal = load_proposal(number)
+                for prefix, field in (("MAIN", "main_sp"), ("COMPLEMENTARY", "complementary_sp")):
+                    sp = proposal[field]
+                    self.assertEqual(out[f"{prefix} LEARNING STANDARD"], sp)
+                    self.assertEqual(out[f"{prefix} CONTENT STANDARD"], sp.rsplit(".", 1)[0])
                 self.assertIn("Teacher:", out["SET INDUKSI"])
                 self.assertIn("Pupils:", out["SET INDUKSI"])
                 self.assertIn("Teacher:", out["AKTIVITI UTAMA"])
@@ -86,7 +89,6 @@ class Year5NineTeacherChoiceProposals(unittest.TestCase):
                 self.assertNotIn("_DRAFT.md", "\n".join(str(v) for v in out.values()))
                 for field in ("TARIKH","MASA","KELAS","BILANGAN MURID","REFLEKSI"):
                     self.assertEqual(out[field], OLD[field])
-                self.assertNotRegex(out["MAIN LEARNING STANDARD"], r"\d\.\d\.\d")
 
     def test_language_awareness_not_mislabeled_as_project(self):
         for number in CHOICE_LESSONS - PROJECTS:
@@ -132,6 +134,10 @@ class Year5NineTeacherChoiceProposals(unittest.TestCase):
             file = root / "proposals.json"
             file.write_text(json.dumps(data), encoding="utf-8")
             self.assertIsNone(load_proposal(16,root=root,proposal_path=file))
+            data["lessons"]["16"]["main_sp"] = "2.1.9"
+            file.write_text(json.dumps(data), encoding="utf-8")
+            self.assertIsNone(load_proposal(16, proposal_path=file))
+            data["lessons"]["16"]["main_sp"] = "2.1.5"
             data["lessons"]["16"]["phases"][0]["minutes"] = 20
             file.write_text(json.dumps(data), encoding="utf-8")
             self.assertIsNone(load_proposal(16, proposal_path=file))

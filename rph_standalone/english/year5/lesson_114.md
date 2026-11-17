@@ -1,20 +1,16 @@
-# Year 5 Lesson 114 — Speaking 20
+# English Year 5 Lesson 114 — Speaking 20
 
-Status: DRAF. Unit 6. Topic: Sport. Official SOW p.154. Main LS 2.1.2; complementary LS 1.2.5.
-Materials: SB p.66 Activity 4; TB p.80; optional teacher-read script p.151. Workbook page not verified. Audio playback not tested.
+**Official SOW topic:** Sport.
+**Official SOW:** Lesson 114, printed p.154. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Speaking 2.1.2 and Listening 1.2.5.
+**Materials:** English Plus 1 SB p.66 Activity 4, TB p.80 and X Games transcript p.152, and interview cue cards.
+**Learning objectives:** Pupils find out about and describe a partner’s sport experience and answer three supported spoken questions in order.
 
-Objectives: Pupils complete the stated lesson tasks and show evidence of both listed learning standards.
+1. **Set induction (8 min):** Recall one event from the X Games programme. Ask pupils for one sport they have tried, seen or learned about.
+2. **Activity 1 (12 min):** In SB Activity 4, pairs complete and practise the interview prompts. The teacher models a question about an experience and a reply with a specific detail.
+3. **Activity 2 (15 min):** Partners interview each other and ask a follow-up. Then they change partners and report something the first partner did, watched or learned.
+4. **Activity 3 (17 min):** Read a short excerpt from the TB transcript. Ask three supported questions in order about the athlete. Pupils answer and use the excerpt to correct one detail from the optional TB task.
+5. **Closure (8 min):** Invite a pupil to report one partner experience and the detail that made it memorable.
 
-Set induction (5 min): Recall facts from X Games Superstars.
-
-Main activities (40 min): Model questions from Activity 4; pairs interview one another about sport experiences, then change partners and report the first partner's responses. If time allows, read TB optional sentences and pupils detect errors. Teacher models the task, monitors pair or group participation and provides corrective feedback.
-
-PBD (10 min): Use checklist for comprehending questions, asking and reporting accurately. Pupils improve an answer based on teacher feedback.
-
-Closure (5 min): Pupils share one new word, form or fact and complete an exit response.
-
-Differentiation: Provide vocabulary prompts, visuals or sentence starters for pupils needing support; ask proficient pupils to justify or extend their responses.
-
-Verification: Lesson sequence and page references drawn from official Year 5 SOW. Full book-page and audio-file audit pending; do not mark READY.
-
-**Workbook (existing source QA map):** p.54,59, Unit 6 past simple practice + Speaking Last weekend, Ex1-5 / Ex6. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Check three answers in the spoken question sequence and an intelligible description of one partner’s experience.
+**Differentiation:** Provide question starters and a three-box prompt strip. Ask confident pupils to report when or where the experience happened.

@@ -1,22 +1,17 @@
-# Year 5 Lesson 157 — Reading 27
+# English Year 5 Lesson 157 — Reading 27
 
 **Official SOW topic:** Going away.
+**Official SOW:** Lesson 157, printed p.199. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Reading 3.3.1 and Reading 3.2.2.
+**Materials:** English Plus 1 SB p.111 Activities 1–3, TB p.125 and CD3.32.
+**Learning objectives:** Pupils choose a section of a non-fiction text for enjoyment and locate specific information in the theme park article.
+**Success criteria:** Explain a personal reading choice and locate two facts in different paragraphs.
 
-Status: DRAF. Unit 8. Main LS 3.3.1; complementary LS 3.2.2.
-Materials: Student Book p.111 Activities 1–3; Teacher Book p.125; CD3-32. Workbook mapping and audio playback remain unverified.
+1. **Set induction (8 min):** Ask pupils which rides they would choose and match the ride names to photos in SB Activity 1.
+2. **Activity 1 (12 min):** Read SB Activity 2 to find which facilities the article mentions. Pupils choose a paragraph to reread because it interests them.
+3. **Activity 2 (14 min):** Pupils identify which paragraph answers each selected question from SB Activity 3. Play CD3.32 after pupils have marked their evidence.
+4. **Activity 3 (18 min):** Pairs compare facts from different paragraphs and choose one ride using the Key Phrases and a reason from the text.
+5. **Closure (8 min):** Invite pupils to say which paragraph they would show a friend and why.
 
-Objective: Pupils read the theme-park text, retrieve at least two relevant factual details, and give one reasoned opinion about a ride using information from the text.
-
-Set induction (5 min): Discuss favourite theme park rides.
-
-Main activities (40 min): Read a non-fiction text about theme parks, retrieve details about rides and discuss safety and technology. Listen to CD3-32 for Activity 3 and compare answers. Teacher models instructions and provides feedback.
-
-PBD (10 min): Teacher asks for two evidence-based answers from the theme-park reading and one explained preference; pupils improve an inaccurate detail.
-
-Closure (5 min): Pupils share a learning point and submit an exit response.
-
-Differentiation: Use visuals, sentence frames and paired support where needed; extend confident pupils with detailed independent work.
-
-Verification: Checked against official Year 5 SOW. Full source-page, Workbook and audio audit pending before READY.
-
-**Workbook (existing source QA map):** p.72, Unit 8 Reading — An adventure day + Vocabulary Plus, Ex1-5. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Ask each pupil to give a choice with a personal reason and point to two accurate facts in different paragraphs.
+**Differentiation:** Offer paragraph headings and numbered questions. Ask confident pupils to compare what two paragraphs say about the parks.
