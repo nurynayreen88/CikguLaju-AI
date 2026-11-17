@@ -40,12 +40,21 @@ def _workbook_pages(year, lesson, root):
 
 
 def _material(year: int, lesson: int, *, root=ROOT):
-    if type(year) is not int or year not in range(2, 7):
+    if type(year) is not int or year not in range(1, 7):
         return None
     if type(lesson) is not int or not 1 <= lesson <= 160:
         return None
 
-    if year in (5, 6):
+    if year == 1:
+        from web.english_y1_kssr_rph import PLANS
+        from resources.english.y1.workbook_verified_map import Y1_WB_VERIFIED_LESSON_MAP
+
+        plan = PLANS.get(lesson)
+        if not plan or Y1_WB_VERIFIED_LESSON_MAP.get(lesson) != (plan.page, plan.page):
+            return None
+        pages = [(Path(root) / "books" / "english" / "y12_workbook_001_040.pdf", plan.page)]
+        printed = str(plan.page)
+    elif year in (5, 6):
         found = _workbook_pages(year, lesson, root)
         if not found:
             return None
@@ -68,7 +77,11 @@ def _material(year: int, lesson: int, *, root=ROOT):
         rec = verified.get(lesson)
         if not isinstance(rec, dict) or type(rec.get("pdf")) is not int:
             return None
-        page = rec["pdf"]
+        # Year 4 chunks are named using printed coordinates, as in Telegram's
+        # Workbook sender. The legacy source's PDF coordinate is one lower.
+        page = rec["printed"] if year == 4 else rec["pdf"]
+        if type(page) is not int:
+            return None
         parts = [v for v in PDF_PARTS[year] if v[0] <= page <= v[1]]
         if len(parts) != 1:
             return None
@@ -133,7 +146,7 @@ def create_english_workbook_blueprint():
                 or any(len(request.args.getlist(k)) != 1 for k in request.args)):
             return None, None, None
         raw_year, raw_lesson = request.args["year"], request.args["lesson"]
-        if (not re.fullmatch(r"[2-6]", raw_year)
+        if (not re.fullmatch(r"[1-6]", raw_year)
                 or not re.fullmatch(r"[1-9][0-9]{0,2}", raw_lesson)):
             return None, None, None
         year, lesson = int(raw_year), int(raw_lesson)

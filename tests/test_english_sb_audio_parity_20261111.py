@@ -335,10 +335,42 @@ class EnglishSourceParityTests(unittest.TestCase):
         self.assertEqual(bare.status_code, 401)
         for query in ({"year": "2", "lesson": "93"},
                       {"year": "4", "lesson": "93", "extra": "x"},
-                      {"year": "4", "lesson": "093"}):
+                      {"year": "4", "lesson": "093"},
+                      {"year": "23", "lesson": "93"},
+                      {"year": "", "lesson": "93"}):
             resp = self.client.get("/internal/rph/v1/english-extras/audio",
                                    headers=self.headers, query_string=query)
             self.assertEqual(resp.status_code, 404)
+
+    def test_year5_uses_the_audited_lesson_pages_and_tracks(self):
+        from resources.english.y5.verified_extras_20261117 import AUDIO, LESSON_AUDIO, STUDENT_BOOK_PAGES
+
+        self.assertEqual((len(AUDIO), len(LESSON_AUDIO), len(STUDENT_BOOK_PAGES)), (83, 63, 131))
+        base = "/internal/rph/v1/english-extras/"
+        q = {"year": 5, "lesson": 1}
+        book = self.client.get(base + "student-book", headers=self.headers, query_string=q)
+        self.assertEqual(book.json["pages"], [4])
+        self.assertEqual(self.client.get(base + "student-book", headers=self.headers,
+                                         query_string={**q, "lesson": 5}).status_code, 404)
+        audio = self.client.get(base + "audio", headers=self.headers, query_string=q)
+        self.assertEqual([x["reference"] for x in audio.json["tracks"]], ["CD1 Track 2", "CD1 Track 3"])
+        self.assertNotIn("sha256", str(audio.json))
+        self.assertNotIn(AUDIO["CD1 Track 2"][0], str(audio.json))
+        with patch("web.telegram_english_sb_audio_api_20261111._original_audio",
+                   return_value=b"ID3" + b"x" * 2000):
+            wrong = self.client.get(base + "audio.mp3", headers=self.headers,
+                                    query_string={**q, "track": 1})
+        self.assertEqual(wrong.status_code, 503)
+
+    def test_year1_exposes_only_the_original_tracks_for_reviewed_lessons(self):
+        base = "/internal/rph/v1/english-extras/"
+        query = {"year": 1, "lesson": 18}
+        response = self.client.get(base + "audio", headers=self.headers, query_string=query)
+        self.assertEqual([x["reference"] for x in response.json["tracks"]], ["CD1 Track 12", "CD1 Track 13"])
+        self.assertEqual(self.client.get(base + "audio.mp3", headers=self.headers,
+                                         query_string={**query, "track": 1}).status_code, 404)
+        self.assertEqual(self.client.get(base + "audio", headers=self.headers,
+                                         query_string={**query, "lesson": 17}).status_code, 404)
 
 
 if __name__ == "__main__":
