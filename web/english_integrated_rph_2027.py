@@ -37,11 +37,11 @@ def pair_numbers(year, number):
     return _pair_numbers().get((year, number))
 
 
-def sources_approved(year, pair):
+def sources_available(year, pair):
     if year != 5:
         return True
-    from web.english_y5_standalone_runtime import approved_for_telegram
-    return all(approved_for_telegram(number) for number in pair)
+    from web.english_y5_standalone_runtime import verified_draft_for_web
+    return all(verified_draft_for_web(number) for number in pair)
 
 
 def teaching_date():
