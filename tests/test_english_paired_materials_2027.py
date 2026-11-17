@@ -115,3 +115,22 @@ def test_paired_year3_uses_sow_references_instead_of_old_page_metadata():
     assert materials._book_selection(runtime, 3, 22)[1] == [15]
     runtime._en_book_source_v25232.return_value = ("old-edition", "Student’s Book")
     assert materials._student_book(runtime, 3, (81, 82), {}) == []
+
+
+def test_paired_year4_uses_verified_textbook_pages_from_both_lessons():
+    pairs = [((19, 20), [16, 17]), ((33, 34), [27, 118]), ((38, 39), [29]),
+             ((65, 66), [49, 120]), ((139, 140), [97, 98])]
+    numbers = [number for pair, _ in pairs for number in pair]
+    runtime = SimpleNamespace(
+        _en97_units=lambda _: ([{"lesson_no": n, "subject": "Bahasa Inggeris"} for n in numbers], []),
+        _en34_verified_sb_pages_v25230=Mock(return_value="21"),
+        _en_book_pages_v25232=Mock(return_value=[21]),
+    )
+    with patch.object(materials, "_pdf", side_effect=lambda _r, _s, pages: excerpt(pages)):
+        for pair, pages in pairs:
+            data, mime, _ = materials.download(runtime, 4, pair, "student-book")
+            assert mime == "application/pdf"
+            assert [float(p.mediabox.width) for p in PdfReader(BytesIO(data)).pages] == [
+                100 + number for number in pages]
+    assert materials._book_selection(runtime, 4, 19)[1] == [21]
+    assert materials._book_selection(runtime, 4, 39, paired_reference=True) is None
