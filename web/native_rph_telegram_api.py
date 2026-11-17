@@ -479,9 +479,14 @@ def create_native_rph_blueprint(runtime):
                 and not getattr(runtime,"PSV_2027_PROVISIONAL_TELEGRAM_ACTIVE",False)):
             return jsonify({"error":"Telegram PSV RPH source unavailable"}),503
         if body["subject"]=="ENGLISH" and body["year"]==5:
-            from web.english_y5_standalone_runtime import approved_for_telegram
-            if not (getattr(runtime,"CIKGULAJU_ENGLISH_Y5_DRAFT_RPH_ACTIVE",False)
-                    and approved_for_telegram(body["lesson"])):
+            from web.english_y5_standalone_runtime import approved_for_telegram, verified_draft_for_web
+            number = body["lesson"]
+            if approved_for_telegram(number):
+                available = getattr(runtime, "CIKGULAJU_ENGLISH_Y5_DRAFT_RPH_ACTIVE", False)
+            else:
+                available = (getattr(runtime, "CIKGULAJU_ENGLISH_Y5_FIXED_DRAFT_PREVIEW_ACTIVE", False)
+                             and verified_draft_for_web(number))
+            if not available:
                 return jsonify({"error":"English Year 5 RPH not approved in Telegram"}),503
         if body["year"] == 1 and not getattr(runtime, "ENGLISH_Y1_KSSR_WEB_ACTIVE", False):
             return jsonify({"error": "English Year 1 renderer unavailable"}), 503
