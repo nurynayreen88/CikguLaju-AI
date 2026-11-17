@@ -9,7 +9,9 @@ import re
 import unicodedata
 import unittest
 import fitz
-from web.rpt_2027_all_http import catalog_data
+from web.rpt_2027_all_http import catalog_data, expected_pairs
+from scripts.build_web_rpt_weekly_suggestions import read_weeks
+from web.rph_hari_ini_web import weekly_catalog
 
 BASE=Path(__file__).resolve().parents[1]/"rpt_2027/web_2027_pdfs"
 COUNTS={2:(60,58),3:(60,54),4:(58,54),5:(60,60),6:(60,60)}
@@ -25,7 +27,8 @@ class ArabicWeb2027SourceSPDraft(unittest.TestCase):
         self.assertEqual(set(manifest["files"]),set(cover["source_sha256_by_subject_year"]))
         catalog=catalog_data(allowed=True)
         self.assertEqual(catalog["total_rpt"],catalog["available_rpt"])
-        self.assertEqual(catalog["total_rpt"],56)
+        self.assertEqual(set(manifest["files"]),expected_pairs())
+        self.assertGreaterEqual(catalog["total_rpt"],56)
         arabic=next(x for x in catalog["subjects"] if x["code"]=="bahasa_arab")
         self.assertIn("290/298",next(x for x in arabic["years"] if x["year"]==2)["note"])
         for year,(pdp,minvisual) in COUNTS.items():
@@ -39,6 +42,16 @@ class ArabicWeb2027SourceSPDraft(unittest.TestCase):
                 self.assertTrue(pdf.startswith(b"%PDF-"))
                 self.assertEqual(len(pdf),entry["bytes"])
                 self.assertEqual(hashlib.sha256(pdf).hexdigest(),entry["sha256"])
+                path=BASE/entry["path"]
+                dates,weeks=read_weeks(path,"ARAB")
+                self.assertEqual(list(range(1,pdp+1)),[n for row in weeks.values() for n in row[""]])
+                self.assertTrue(all(len(row[""])<=2 for row in weeks.values()))
+                self.assertTrue({6,18,19}.isdisjoint(weeks))
+                self.assertEqual(max(weeks),38)
+                self.assertEqual(dates[38],("2027-10-17","2027-10-21","2027-10-18","2027-10-22"))
+                self.assertEqual(weekly_catalog()[f"ARAB:{year}"],{
+                    str(week):[*dates[week],ids] for week,ids in weeks.items()
+                })
                 with fitz.open(stream=pdf,filetype="pdf") as document:
                     self.assertEqual(document.page_count,entry["pages"])
                     cover_text=document[0].get_text()
@@ -48,6 +61,9 @@ class ArabicWeb2027SourceSPDraft(unittest.TestCase):
                     text=unicodedata.normalize("NFKC","\n".join(page.get_text() for page in document))
                     self.assertEqual(text.count("PdP "),pdp)
                     self.assertEqual(text.count("Buka DSKP asal"),pdp)
+                    links=[link for page in document for link in page.get_links()]
+                    self.assertEqual(len(links),pdp)
+                    self.assertTrue(all(link["uri"].startswith("https://") for link in links))
                     self.assertGreaterEqual(text.count("القدرة"),minvisual)
                     for token in ("Pernyataan penuh","teks belum disahkan","AMARAN:"):
                         self.assertNotIn(token,text)
