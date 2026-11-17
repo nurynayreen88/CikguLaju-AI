@@ -44,7 +44,7 @@ class FakeRuntime:
         if year not in ("Tahun 3", "Tahun 4"):
             return [], []
         return [{"lesson_no": n, "unit_name": "Our World"}
-                for n in (7, 8, 17, 18, 30, 43, 93, 97, 98, 102, 103, 157)], ["Our World"]
+                for n in range(1, 161)], ["Our World"]
 
     def _en34_verified_sb_pages_v25230(self, row, year):
         return {18: "15, 16", 30: "110–133", 43: "27, 28, 29, 30, 31",
@@ -228,7 +228,7 @@ class EnglishSourceParityTests(unittest.TestCase):
         self.assertTrue(response.close.called)
 
     def test_wrong_book_and_conflicting_audio_stay_hidden(self):
-        for number in (8, 30, 97):
+        for number in (30, 31):
             self.assertEqual(_audio_rows(self.runtime, 4, number), [])
             denied = self.client.get("/internal/rph/v1/english-extras/audio",
                                      headers=self.headers,
@@ -236,10 +236,16 @@ class EnglishSourceParityTests(unittest.TestCase):
             self.assertEqual(denied.status_code, 404)
         self.runtime.CIKGULAJU_Y4_WRONG_BOOK_AUDIO_HOLD_ACTIVE = False
         self.assertEqual(_audio_rows(self.runtime, 4, 93), [])
+        self.assertEqual(_audio_rows(self.runtime, 4, 7), [])
 
     def test_year_four_replacements_have_exact_lesson_and_file_identity(self):
         from resources.english.y4.verified_class_audio import LESSON_TRACKS, RECORDINGS
+        from web.english_y4_wrong_book_audio_hold_20261105 import HOLD_LESSONS
 
+        self.assertLessEqual(HOLD_LESSONS, LESSON_TRACKS.keys())
+        self.assertEqual(LESSON_TRACKS[29], ("CD3 Track 35", "CD3 Track 36"))
+        self.assertEqual(LESSON_TRACKS[103], ("CD2 Track 26",))
+        self.assertEqual(LESSON_TRACKS[104], ("CD2 Track 27", "CD2 Track 28"))
         for lesson, tracks in LESSON_TRACKS.items():
             with self.subTest(lesson=lesson):
                 rows = _audio_rows(self.runtime, 4, lesson)
@@ -255,9 +261,37 @@ class EnglishSourceParityTests(unittest.TestCase):
         state = {"year": "Tahun 4", "subject": "Bahasa Inggeris", "lesson_no": 98}
         self.assertEqual(self.runtime._available_materials_v2528(state), ["textbook", "media"])
         self.assertEqual(self.runtime._available_materials_v2528(
-            {**state, "lesson_no": 97}), ["textbook"])
+            {**state, "lesson_no": 30}), ["textbook"])
         self.assertTrue(self.runtime._send_reference_material_v2528(1, state, "textbook"))
         original_sender.assert_called_once_with(1, state, "textbook")
+
+    def test_telegram_direct_media_uses_same_verified_year_four_file_as_picker(self):
+        original_direct = Mock(return_value=False)
+        self.runtime._send_reference_material = original_direct
+        self.runtime._available_materials_v2528 = Mock(return_value=["textbook"])
+        self.runtime._send_reference_material_v2528 = Mock(return_value=True)
+        self.runtime._telegram_delivery_ok_v25279 = bool
+        self.runtime.send_document = Mock(side_effect=lambda _, path, label: (
+            Path(path).read_bytes() == b"verified audio" and "CD1 Track 11" in label
+        ))
+        state = {"year": "Tahun 4", "subject": "Bahasa Inggeris", "lesson_no": 8}
+        install_telegram_extras(self.runtime)
+
+        api = self.client.get("/internal/rph/v1/english-extras/audio",
+                              headers=self.headers, query_string={"year": 4, "lesson": 8})
+        self.assertEqual(api.status_code, 200)
+        self.assertEqual([row["reference"] for row in api.json["tracks"]], ["CD1 Track 11"])
+        self.assertEqual(self.runtime._available_materials_v2528(state), ["textbook", "media"])
+        with patch("web.telegram_english_sb_audio_api_20261111._verified_audio",
+                   return_value=b"verified audio") as verified:
+            self.assertTrue(self.runtime._send_reference_material_v2528(1, state, "media"))
+            self.assertTrue(self.runtime._send_reference_material(1, state, "media"))
+        self.assertEqual(verified.call_count, 2)
+        self.assertEqual(verified.call_args_list[0], verified.call_args_list[1])
+        self.assertEqual(verified.call_args.args[0]["id"], "10kXQb3-RghrTcCchRpaX70e4vhZlVuZt")
+        original_direct.assert_not_called()
+        self.assertFalse(self.runtime._send_reference_material(1, state, "textbook"))
+        original_direct.assert_called_once_with(1, state, "textbook")
 
     def test_year_three_uses_repaired_book_and_original_track(self):
         params = {"year": "3", "lesson": "93"}
