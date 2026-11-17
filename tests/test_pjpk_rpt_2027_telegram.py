@@ -1,5 +1,6 @@
 """Isolated RPT PJPK 2027 PDF and Telegram entitlement tests."""
 import json
+from collections import Counter
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -32,6 +33,23 @@ class PJPKRPT2027Tests(unittest.TestCase):
         self.assertEqual(rec["sp"],["3.5.1","4.5.1","4.5.2","5.3.2"])
         self.assertEqual(rec["bt"],"78-79")
         self.assertEqual(rec["status"],"DRAF_CADANGAN")
+
+    def test_schedule_preserves_component_order_and_assessment_week(self):
+        data = json.loads((pjpk.PDF_ROOT / "pjpk_2027_rpt_manifest.json").read_text(encoding="utf-8"))
+        reservations = {6, 18, 19}
+        for year in range(2, 7):
+            for component in ("PJ", "PK"):
+                with self.subTest(year=year, component=component):
+                    records = [item for item in data["records"]
+                               if item["year"] == year and item["subject"] == component]
+                    by_week = Counter(item["week"] for item in records)
+                    self.assertFalse(reservations & by_week.keys())
+                    self.assertLessEqual(max(by_week), 38)
+                    self.assertEqual([r["pdp"] for r in sorted(records, key=lambda r: (r["week"], r["pdp"]))],
+                                     list(range(1, len(records) + 1)))
+                    self.assertLessEqual(max(by_week.values()), 2 if component == "PJ" and year <= 3 else 1)
+                    if component == "PJ":
+                        self.assertEqual(sum(count == 2 for count in by_week.values()), {2: 2, 3: 3}.get(year, 0))
 
     def test_paid_and_admin_download_only_exact_year_and_preserve_other_callbacks(self):
         sent=[]; docs=[]; previous=[]

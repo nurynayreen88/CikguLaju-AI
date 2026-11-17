@@ -14,7 +14,7 @@
     "PJ6_textbook": "https://drive.google.com/file/d/1Y87xc3kHS4D0mSRxNQ8syYS8B-Y9CVmZ/view",
     "DSKP6": "https://drive.google.com/file/d/1AK0F5GLkhTkAPyhNkFBG6sHP6JgAU3Jv/view"
   },
-  "note": "Takwim: slot calon A/B dari RPT PJ3 2027 dan PJ4-6 v57; cuti negeri/cuti gantian perlu guru sahkan; PK PdP ditempatkan sekata sebagai cadangan, bukan jadual rasmi.",
+  "note": "Agihan bersama Kumpulan A/B hingga Minggu 38. Minggu 6 dan 19 tiada PdP. Minggu 18 diperuntukkan untuk pentaksiran pertengahan tahun. Dua slot PJ pada minggu terpilih untuk Tahun 2 dan Tahun 3 boleh dijadualkan pada hari berbeza.",
   "exceptions": {
     "year1": "KP2027 DK belum disahkan; tidak dimasukkan",
     "PJ2_aquatic_inserts": "4 sisipan belum disahkan; tidak dimasukkan",
@@ -355,7 +355,7 @@
         "5.4.3"
       ],
       "bt": "12-13",
-      "week": 6,
+      "week": 7,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Dalam kumpulan kecil, murid menyusun dan mempersembahkan rangkaian gerak berirama; rakan memberi maklum balas berdasarkan contoh guru.",
       "assessment_source": "Rubrik: urutan gerak, keselarasan tempo, kawalan ruang dan kerjasama kumpulan. Bukti kefahaman (soal jawab): Mengapa ruang pergerakan perlu dikawal ketika bergerak berkumpulan?",
@@ -381,7 +381,7 @@
         "5.4.1"
       ],
       "bt": "15-17",
-      "week": 7,
+      "week": 8,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Permainan kecil 3 lawan 3: hantaran kepada rakan di ruang kosong sambil pihak lawan cuba memintas tanpa kontak badan.",
       "assessment_source": "Senarai semak: hantaran tepat, bergerak ke ruang, percubaan memintas secara selamat dan komunikasi pasukan. Bukti kefahaman (soal jawab): Mengapa hantaran dibuat ke ruang kosong?",
@@ -407,7 +407,7 @@
         "5.4.1"
       ],
       "bt": "15-17",
-      "week": 8,
+      "week": 9,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Permainan 3 lawan 3 di ruang bertanda: murid bergerak mencari ruang kosong, melakukan hantaran tepat kepada rakan dan mengubah kedudukan selepas menghantar. Pasukan lawan cuba memintas tanpa sentuhan fizikal. Ulang dengan pertukaran peranan.",
       "assessment_source": "Senarai semak: hantaran sampai kepada rakan, bergerak ke ruang kosong selepas menghantar, mengelak pintasan dan bekerjasama mengikut peraturan. Bukti kefahaman (soal jawab): Apakah tindakan selepas menghantar untuk mengelak pintasan?",
@@ -434,7 +434,7 @@
         "5.3.1"
       ],
       "bt": "18-19",
-      "week": 9,
+      "week": 10,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Permainan kecil kategori serangan: murid mengelecek bola melalui ruang, menukar arah dan membuat jaringan; pemain bertahan cuba mengadang secara terkawal.",
       "assessment_source": "Pemerhatian: kawalan bola ketika mengelecek, pemilihan ruang, ketepatan jaringan dan keputusan mengadang tanpa sentuhan berbahaya. Bukti kefahaman (soal jawab): Bilakah sesuai menukar arah ketika mengelecek sebelum menjaring?",
@@ -458,7 +458,7 @@
         "5.4.2"
       ],
       "bt": "21-22",
-      "week": 10,
+      "week": 11,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Stesen berpasangan: murid bergerak ke ruang terbuka, menghantar objek ke sasaran pada jarak berbeza dan menerima dengan posisi sedia; tukar peranan setiap pusingan.",
       "assessment_source": "Pemerhatian: kedudukan sedia, hantaran ke sasaran dan penerimaan terkawal. Bukti kefahaman (soal jawab): Mengapa posisi sedia penting semasa menerima objek?",
@@ -482,7 +482,7 @@
         "5.1.3"
       ],
       "bt": "23",
-      "week": 11,
+      "week": 12,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Stesen pukulan: latihan pegangan alat, ayunan tanpa objek, kemudian memukul objek lembut ke zon sasaran; rakan mengutip hanya selepas isyarat guru.",
       "assessment_source": "Rekod percubaan: pegangan alat, ayunan terkawal dan sentuhan objek. Bukti kefahaman (soal jawab): Bagaimana arah ayunan mempengaruhi pukulan?",
@@ -506,7 +506,7 @@
         "5.4.3"
       ],
       "bt": "24-25",
-      "week": 12,
+      "week": 13,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Servis berperingkat dari garisan dekat ke jauh menuju zon sasaran; murid mengubah arah dan daya mengikut maklum balas pasangan.",
       "assessment_source": "Bilangan servis sah ke kawasan sasaran serta pematuhan giliran. Bukti kefahaman (soal jawab): Bagaimana perubahan daya mengubah jarak servis?",
@@ -530,7 +530,7 @@
         "5.4.3"
       ],
       "bt": "24-25",
-      "week": 13,
+      "week": 14,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Stesen servis dari dua jarak: murid melakukan servis ke petak sasaran kiri dan kanan, kemudian menyertai permainan mini dengan giliran servis bergilir. Rakan mencatat servis sah dan mencadangkan pembetulan arah atau daya.",
       "assessment_source": "Rekod bilangan servis sah ke zon sasaran; pemerhatian teknik servis, kawalan arah dan kepatuhan giliran/peraturan. Bukti kefahaman (soal jawab): Apakah pelarasan arah atau daya apabila servis tersasar?",
@@ -555,7 +555,7 @@
         "5.1.2"
       ],
       "bt": "28-29",
-      "week": 14,
+      "week": 15,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Permainan memadang mini: lakukan balingan tepat ke zon, tangkapan objek lembut dan pergerakan mencari ruang memadang. Murid bertukar peranan pembaling, pemukul dan pemadang; guru menyoal sebab pemilihan posisi.",
       "assessment_source": "Senarai semak individu: balingan tepat, tangkapan selamat, gerak ke ruang memadang dan alasan ringkas pemilihan posisi. Bukti kefahaman (soal jawab): Mengapa pemadang memilih ruang tertentu untuk menangkap bola?",
@@ -578,7 +578,7 @@
         "5.1.4"
       ],
       "bt": "30",
-      "week": 15,
+      "week": 16,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Stesen pukulan objek lembut: tunjuk cara pegangan, kedudukan sisi dan ayunan; murid memukul ke zon sasaran serta membanding arah pukulan apabila kedudukan badan berubah. Pastikan zon menunggu di belakang garisan.",
       "assessment_source": "Pemerhatian individu: pegangan dan ayunan terkawal, kontak objek, arah pukulan serta penerangan mudah kesan kedudukan badan. Bukti kefahaman (soal jawab): Bagaimana kedudukan badan mempengaruhi arah pukulan?",
@@ -602,7 +602,7 @@
         "5.1.2"
       ],
       "bt": "31",
-      "week": 16,
+      "week": 17,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Permainan memadang ubah suai: murid menerima bola lembut, memutar badan dan membuat hantaran ke sasaran berbeza. Banding putaran dengan dan tanpa langkah kaki; bertukar peranan dengan jarak selamat.",
       "assessment_source": "Senarai semak: putaran badan dan langkah kaki seimbang, hantaran tepat selepas putaran, serta sebab memilih arah hantaran. Bukti kefahaman (soal jawab): Mengapa langkah kaki membantu hantaran selepas putaran?",
@@ -652,7 +652,7 @@
         "5.1.2"
       ],
       "bt": "33-35",
-      "week": 18,
+      "week": 20,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Larian ulangan dalam kumpulan kecil: murid merancang rentak bagi jarak pendek dan lebih panjang, melaksanakannya secara bergilir serta membanding catatan masa sendiri tanpa mewujudkan persaingan tidak sihat.",
       "assessment_source": "Rekod peningkatan kendiri bagi rentak dan kawalan larian; murid menyatakan satu pembaikan teknik serta mematuhi giliran. Bukti kefahaman (soal jawab): Apakah perbezaan rentak yang diperhatikan antara dua jarak?",
@@ -677,7 +677,7 @@
         "5.2.2"
       ],
       "bt": "36-37",
-      "week": 19,
+      "week": 21,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Stesen lompat: bandingkan lonjakan daripada berdiri dan selepas larian awalan pendek; murid mengayun tangan, memilih kaki lonjak mengikut tugasan, mendarat dengan kedua-dua kaki dan lutut dibengkokkan di kawasan pasir atau tikar yang selamat. Rakan mencatat jarak dari garisan lonjak ke kesan mendarat paling hampir.",
       "assessment_source": "Rekod tiga cubaan: koordinasi awalan-lonjakan, ayunan tangan, pendaratan dua kaki dengan lutut fleksi dan ukuran jarak yang konsisten. Bukti kefahaman (soal jawab): Bagaimana awalan dan ayunan tangan membantu jarak lompatan?",
@@ -700,7 +700,7 @@
         "5.2.2"
       ],
       "bt": "38",
-      "week": 20,
+      "week": 22,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Litar halangan rendah: murid menentukan jarak awalan, melonjak melepasi halangan lembut mengikut aras kemampuan, dan mendarat seimbang. Guru memastikan laluan sehala, ruang mendarat kosong dan halangan tidak keras.",
       "assessment_source": "Senarai semak: awalan terkawal, lonjakan sesuai, tidak menyentuh halangan, pendaratan stabil dan patuh giliran. Bukti kefahaman (soal jawab): Mengapa jarak awalan perlu sesuai dengan halangan?",
@@ -727,7 +727,7 @@
         "5.1.4"
       ],
       "bt": "39",
-      "week": 21,
+      "week": 23,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Stesen lontaran objek lembut: murid mencuba lontaran daripada kedudukan statik dan selepas langkah awalan, menggunakan putaran badan serta pelepasan ke arah kawasan bertanda. Semua murid menunggu di belakang garisan sehingga arahan mengambil objek.",
       "assessment_source": "Pemerhatian dan catatan zon jatuhan: pegangan, koordinasi langkah dan putaran, sudut pelepasan serta pematuhan keselamatan. Bukti kefahaman (soal jawab): Bagaimana langkah dan sudut pelepasan mempengaruhi lontaran?",
@@ -750,7 +750,7 @@
         "5.1.1"
       ],
       "bt": "41-43",
-      "week": 22,
+      "week": 24,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Di kolam yang diluluskan sahaja: guru atau jurulatih kompeten menerangkan prosedur keselamatan, murid berlatih kawalan pernafasan dan kemahiran menyelam cetek mengikut tahap keupayaan dengan pengawasan rapat. Jika fasiliti/pengawasan tiada, jalankan pengenalan keselamatan di darat dan jadualkan semula penilaian kemahir",
       "assessment_source": "Pentaksiran kemahiran air hanya apabila aktiviti benar-benar dilaksanakan dalam air dengan pengawasan kompeten; catat kawalan nafas, pematuhan arahan dan keselamatan. Penerangan di darat tidak dikira bukti penguasaan kemahiran air. Bukti kefahaman (soal jawab): Apakah langkah kes",
@@ -775,7 +775,7 @@
         "5.2.2"
       ],
       "bt": "44-45",
-      "week": 23,
+      "week": 25,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Di kolam yang diluluskan sahaja: murid berlatih tendangan keribas secara progresif menggunakan sokongan tepi kolam atau alat apungan, secara meniarap dan telentang mengikut kemampuan. Guru/jurulatih kompeten memantau posisi badan dan keselamatan. Jika tiada kemudahan, tangguhkan penilaian kemahiran air.",
       "assessment_source": "Senarai semak dalam air: posisi badan, pergerakan kaki bergilir dan pematuhan arahan keselamatan; latihan simulasi di darat bukan bukti penguasaan berenang. Bukti kefahaman (soal jawab): Bagaimana tendangan keribas membantu pergerakan badan di air?",
@@ -800,7 +800,7 @@
         "5.4.2"
       ],
       "bt": "47-48",
-      "week": 24,
+      "week": 26,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Permainan tradisional kekuatan dan daya tahan otot seperti Tarik Upih atau Batak Lampung, hanya jika peralatan, ruang dan pengawasan sesuai. Guru menerangkan peraturan serta teknik mengawal daya; murid bermain secara bergilir, mengamalkan keselamatan dan menjelaskan cara permainan menguji kekuatan serta daya tahan otot",
       "assessment_source": "A: 04/07–08/07",
@@ -823,7 +823,7 @@
         "5.2.1"
       ],
       "bt": "49",
-      "week": 25,
+      "week": 27,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Karom dalam kumpulan kecil: murid berlatih jentikan dengan daya berbeza ke sasaran, memilih sudut mudah, mematuhi giliran dan menerangkan strategi pilihan.",
       "assessment_source": "Rekod percubaan: jentikan terkawal, ketepatan sasaran, pemilihan strategi dan pematuhan peraturan. Bukti kefahaman (soal jawab): Bagaimana sudut dan daya jentikan mengubah gerakan buah karom?",
@@ -846,7 +846,7 @@
         "5.2.1"
       ],
       "bt": "50",
-      "week": 26,
+      "week": 28,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Batu seremban berperingkat: lambung, kutip dan sambut mengikut urutan permainan; pasangan mengira kejayaan percubaan dan mencadangkan penambahbaikan koordinasi tangan-mata.",
       "assessment_source": "Rekod individu: urutan yang berjaya, koordinasi lambung-kutip-sambut, giliran dan penerangan pembetulan gerakan. Bukti kefahaman (soal jawab): Bagaimana lambungan mempengaruhi peluang mengutip batu?",
@@ -869,7 +869,7 @@
         "5.2.1"
       ],
       "bt": "51",
-      "week": 27,
+      "week": 29,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Dam berpasangan: kenal pasti langkah sah dan situasi menangkap buah, rancang satu langkah serta jelaskan keputusan; tukar giliran mengikut peraturan.",
       "assessment_source": "Senarai semak: langkah sah, keputusan strategi mudah, penjelasan pilihan dan amalan giliran. Bukti kefahaman (soal jawab): Mengapa satu langkah dam lebih sesuai daripada langkah lain?",
@@ -892,7 +892,7 @@
         "5.2.1"
       ],
       "bt": "51",
-      "week": 28,
+      "week": 30,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Catur asas berpasangan: demonstrasi gerakan buah terpilih, pilih langkah sah dalam situasi ringkas dan jelaskan kesannya terhadap kedudukan; amalkan giliran dan hormat rakan.",
       "assessment_source": "Pemerhatian: mengenal gerakan buah, memilih langkah sah, menerangkan sebab pilihan dan mematuhi peraturan. Bukti kefahaman (soal jawab): Mengapa gerakan buah catur perlu dirancang sebelum dimainkan?",
@@ -916,7 +916,7 @@
         "5.2.2"
       ],
       "bt": "53-54",
-      "week": 29,
+      "week": 31,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Murid melakukan pemanasan badan beransur-ansur dan menerangkan kaitan aktiviti dengan persediaan tubuh sebelum senaman.",
       "assessment_source": "Pemerhatian: urutan pemanasan badan, peningkatan intensiti beransur-ansur dan penerangan tujuan pemanasan. Bukti kefahaman (soal jawab): Mengapa pemanasan badan dilakukan secara beransur-ansur?",
@@ -941,7 +941,7 @@
         "5.2.1"
       ],
       "bt": "55",
-      "week": 30,
+      "week": 32,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Murid melakukan aktiviti menyejukkan badan dan regangan ringan selepas pergerakan aktif serta menjelaskan kepentingan pemulihan.",
       "assessment_source": "Pemerhatian: urutan menyejukkan badan, pernafasan terkawal dan penerangan kepentingan aktiviti selepas senaman. Bukti kefahaman (soal jawab): Mengapa aktiviti menyejukkan badan dilakukan selepas senaman?",
@@ -965,7 +965,7 @@
         "5.2.1"
       ],
       "bt": "57-58",
-      "week": 31,
+      "week": 33,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Litar aerobik intensiti sederhana: berjalan pantas, langkah sisi dan gerak berirama pada sela masa sesuai. Murid merekod tempoh serta membanding denyutan nadi atau pernafasan sebelum dan selepas aktiviti.",
       "assessment_source": "Rekod individu: tempoh aktiviti aerobik, perubahan respons jantung/pernafasan dan penerangan kaitan aktiviti dengan kecergasan. Bukti kefahaman (soal jawab): Apakah perubahan pada pernafasan atau nadi selepas aktiviti aerobik?",
@@ -989,7 +989,7 @@
         "5.2.1"
       ],
       "bt": "57-58",
-      "week": 32,
+      "week": 34,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Pengukuhan aerobik: ulang litar dengan tempoh yang ditetapkan, semak kebolehan bercakap semasa bergerak dan rekod respons nadi/pernafasan. Murid menerangkan sebab perubahan selepas aktiviti.",
       "assessment_source": "Semak rekod tempoh, pemerhatian intensiti selamat dan penjelasan perubahan respons badan sebelum dan selepas. Bukti kefahaman (soal jawab): Mengapa pernafasan menjadi lebih cepat semasa aktiviti aerobik?",
@@ -1013,7 +1013,7 @@
         "5.4.2"
       ],
       "bt": "59",
-      "week": 33,
+      "week": 35,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Stesen kelenturan: lakukan regangan dinamik bahu, pinggul dan kaki, kemudian regangan statik dengan tempoh tahan terkawal. Murid mengenal pasti perbezaan pergerakan dan sebab tidak memaksa sendi.",
       "assessment_source": "Senarai semak: regangan dinamik dan statik, tempoh tahan, postur serta penerangan tujuan kedua-dua kaedah. Bukti kefahaman (soal jawab): Apakah perbezaan regangan dinamik dengan regangan statik?",
@@ -1037,7 +1037,7 @@
         "5.4.2"
       ],
       "bt": "59",
-      "week": 34,
+      "week": 36,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Secara berpasangan di stesen, murid melakukan regangan dinamik bahu, pinggul dan kaki dengan julat gerak selamat, kemudian regangan statik otot utama dengan tempoh tahan terkawal. Rakan memerhati postur dan mengingatkan supaya tidak melantun atau memaksa sendi.",
       "assessment_source": "Senarai semak: mengenal regangan dinamik/statik, melakukan postur selamat, mengekalkan regangan statik mengikut tempoh yang diarahkan dan memberi maklum balas kepada rakan. Bukti kefahaman (soal jawab): Mengapa regangan tidak dilakukan secara melantun?",
@@ -1061,7 +1061,7 @@
         "5.1.2"
       ],
       "bt": "60",
-      "week": 35,
+      "week": 37,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Regangan statik berpasangan: kenal pasti kumpulan otot utama, capai julat selesa dan tahan mengikut kiraan guru tanpa melantun; rakan mencatat tempoh dan memerhati postur. Guru membezakan secara ringkas regangan statik daripada dinamik sebelum murid membuat perbandingan.",
       "assessment_source": "Rekod tempoh tahan dan postur selamat, pengenalpastian otot serta penerangan perbezaan regangan statik dan dinamik. Bukti kefahaman: Mengapa regangan statik perlu ditahan dan tidak dilantun?",
@@ -1087,7 +1087,7 @@
         "5.2.1"
       ],
       "bt": "61",
-      "week": 36,
+      "week": 37,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Litar kekuatan dan daya tahan otot: murid melakukan separa cangkung, jengkit kaki dan tekan tubi ubah suai selama 10–15 saat setiap stesen mengikut kemampuan, dengan rehat dan demonstrasi postur. Bezakan ulangan terkawal daripada pergerakan tergesa-gesa.",
       "assessment_source": "Catat ulangan yang betul dalam 10–15 saat; murid menamakan otot besar yang digunakan dalam separa cangkung, jengkit kaki dan tekan tubi ubah suai, kemudian membezakan kekuatan otot dengan daya tahan otot. Semak ruang selamat dan penglibatan aktif.",
@@ -1113,7 +1113,7 @@
         "5.3.1"
       ],
       "bt": "62-63",
-      "week": 37,
+      "week": 38,
       "origin": "PJ3_2027_RPT",
       "activity_source": "Ukur tinggi dan timbang berat badan secara individu dengan privasi; rekod tarikh dan unit. Gunakan carta pertumbuhan normal secara sensitif tanpa mengumumkan bacaan murid. Murid mengenal pasti nutrien yang memberi tenaga dan menyokong tumbesaran serta berbincang hubungan senaman dengan pengurusan berat badan secara tid",
       "assessment_source": "A: 10/10–14/10",
@@ -1270,7 +1270,7 @@
         "5.2.1"
       ],
       "bt": "12",
-      "week": 6,
+      "week": 7,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1291,7 +1291,7 @@
         "5.1.2"
       ],
       "bt": "13",
-      "week": 7,
+      "week": 8,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1312,7 +1312,7 @@
         "5.4.3"
       ],
       "bt": "15",
-      "week": 8,
+      "week": 9,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1333,7 +1333,7 @@
         "5.2.3"
       ],
       "bt": "16",
-      "week": 9,
+      "week": 10,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1354,7 +1354,7 @@
         "5.2.2"
       ],
       "bt": "17",
-      "week": 10,
+      "week": 11,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1375,7 +1375,7 @@
         "5.3.1"
       ],
       "bt": "18-19",
-      "week": 11,
+      "week": 12,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1397,7 +1397,7 @@
         "5.4.2"
       ],
       "bt": "20",
-      "week": 12,
+      "week": 13,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1418,7 +1418,7 @@
         "5.4.2"
       ],
       "bt": "21",
-      "week": 13,
+      "week": 14,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1440,7 +1440,7 @@
         "5.4.1"
       ],
       "bt": "22-23",
-      "week": 14,
+      "week": 15,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1462,7 +1462,7 @@
         "5.1.3"
       ],
       "bt": "24-25",
-      "week": 15,
+      "week": 16,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1483,7 +1483,7 @@
         "5.4.2"
       ],
       "bt": "26",
-      "week": 16,
+      "week": 17,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1525,7 +1525,7 @@
         "5.2.1"
       ],
       "bt": "29-30",
-      "week": 18,
+      "week": 20,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1546,7 +1546,7 @@
         "5.4.3"
       ],
       "bt": "31",
-      "week": 19,
+      "week": 21,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1567,7 +1567,7 @@
         "5.1.2"
       ],
       "bt": "33-34",
-      "week": 20,
+      "week": 22,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1590,7 +1590,7 @@
         "5.2.1"
       ],
       "bt": "35",
-      "week": 21,
+      "week": 23,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1613,7 +1613,7 @@
         "5.4.2"
       ],
       "bt": "36",
-      "week": 22,
+      "week": 24,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1634,7 +1634,7 @@
         "5.1.1"
       ],
       "bt": "37",
-      "week": 23,
+      "week": 25,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1655,7 +1655,7 @@
         "5.1.2"
       ],
       "bt": "38",
-      "week": 24,
+      "week": 26,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1676,7 +1676,7 @@
         "5.2.2"
       ],
       "bt": "39",
-      "week": 25,
+      "week": 27,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1698,7 +1698,7 @@
         "5.1.5"
       ],
       "bt": "40-41",
-      "week": 26,
+      "week": 28,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1720,7 +1720,7 @@
         "5.1.5"
       ],
       "bt": "42-43",
-      "week": 27,
+      "week": 29,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1742,7 +1742,7 @@
         "5.4.3"
       ],
       "bt": "49-50",
-      "week": 28,
+      "week": 30,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1763,7 +1763,7 @@
         "5.4.1"
       ],
       "bt": "51",
-      "week": 29,
+      "week": 31,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1786,7 +1786,7 @@
         "5.1.1"
       ],
       "bt": "53-54",
-      "week": 30,
+      "week": 32,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1809,7 +1809,7 @@
         "5.2.1"
       ],
       "bt": "57-58",
-      "week": 31,
+      "week": 33,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1830,7 +1830,7 @@
         "5.1.1"
       ],
       "bt": "59",
-      "week": 32,
+      "week": 34,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1851,7 +1851,7 @@
         "5.1.4"
       ],
       "bt": "60-61",
-      "week": 33,
+      "week": 35,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1872,7 +1872,7 @@
         "5.2.2"
       ],
       "bt": "62",
-      "week": 34,
+      "week": 36,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1895,7 +1895,7 @@
         "5.4.3"
       ],
       "bt": "63",
-      "week": 35,
+      "week": 37,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1917,7 +1917,7 @@
         "5.2.1"
       ],
       "bt": "64",
-      "week": 36,
+      "week": 38,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -1938,7 +1938,7 @@
         "5.2.1"
       ],
       "bt": "65",
-      "week": 37,
+      "week": 38,
       "origin": "PJ2_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2065,7 +2065,7 @@
         "5.1.1"
       ],
       "bt": "8",
-      "week": 7,
+      "week": 8,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2086,7 +2086,7 @@
         "5.1.4"
       ],
       "bt": "9-10",
-      "week": 8,
+      "week": 9,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2108,7 +2108,7 @@
         "5.2.2"
       ],
       "bt": "11-14",
-      "week": 9,
+      "week": 10,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2131,7 +2131,7 @@
         "5.4.1"
       ],
       "bt": "15",
-      "week": 10,
+      "week": 11,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2156,7 +2156,7 @@
         "5.3.1"
       ],
       "bt": "17",
-      "week": 11,
+      "week": 12,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2180,7 +2180,7 @@
         "5.2.2"
       ],
       "bt": "18",
-      "week": 12,
+      "week": 13,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2201,7 +2201,7 @@
         "5.4.3"
       ],
       "bt": "19-20",
-      "week": 13,
+      "week": 14,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2224,7 +2224,7 @@
         "5.3.2"
       ],
       "bt": "21-23",
-      "week": 14,
+      "week": 15,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2245,7 +2245,7 @@
         "5.1.5"
       ],
       "bt": "24-25",
-      "week": 15,
+      "week": 16,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2266,7 +2266,7 @@
         "5.2.2"
       ],
       "bt": "26",
-      "week": 16,
+      "week": 17,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2287,7 +2287,7 @@
         "5.4.2"
       ],
       "bt": "27-28",
-      "week": 17,
+      "week": 20,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2312,7 +2312,7 @@
         "5.2.5"
       ],
       "bt": "29-31",
-      "week": 18,
+      "week": 21,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2335,7 +2335,7 @@
         "5.3.1"
       ],
       "bt": "32-34",
-      "week": 20,
+      "week": 22,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2359,7 +2359,7 @@
         "5.3.3"
       ],
       "bt": "35-37",
-      "week": 21,
+      "week": 23,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2380,7 +2380,7 @@
         "5.2.4"
       ],
       "bt": "38",
-      "week": 22,
+      "week": 24,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2401,7 +2401,7 @@
         "5.1.3"
       ],
       "bt": "39",
-      "week": 23,
+      "week": 25,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2422,7 +2422,7 @@
         "5.1.4"
       ],
       "bt": "40-41",
-      "week": 24,
+      "week": 26,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2443,7 +2443,7 @@
         "5.2.2"
       ],
       "bt": "42-43",
-      "week": 25,
+      "week": 27,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2467,7 +2467,7 @@
         "2.11.2"
       ],
       "bt": "44-47",
-      "week": 26,
+      "week": 28,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2489,7 +2489,7 @@
         "5.2.2"
       ],
       "bt": "49-51",
-      "week": 27,
+      "week": 29,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2511,7 +2511,7 @@
         "5.2.4"
       ],
       "bt": "52-54",
-      "week": 28,
+      "week": 30,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2533,7 +2533,7 @@
         "5.4.2"
       ],
       "bt": "55-57",
-      "week": 29,
+      "week": 31,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2556,7 +2556,7 @@
         "5.2.4"
       ],
       "bt": "58-59",
-      "week": 30,
+      "week": 32,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2581,7 +2581,7 @@
         "5.2.1"
       ],
       "bt": "61-63",
-      "week": 31,
+      "week": 33,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2603,7 +2603,7 @@
         "5.2.4"
       ],
       "bt": "65-66",
-      "week": 32,
+      "week": 34,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2625,7 +2625,7 @@
         "4.3.3"
       ],
       "bt": "67",
-      "week": 33,
+      "week": 35,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2646,7 +2646,7 @@
         "4.4.2"
       ],
       "bt": "68-69",
-      "week": 34,
+      "week": 36,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2669,7 +2669,7 @@
         "5.2.1"
       ],
       "bt": "70-71",
-      "week": 35,
+      "week": 37,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2693,7 +2693,7 @@
         "5.2.1"
       ],
       "bt": "72-73",
-      "week": 36,
+      "week": 38,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2819,7 +2819,7 @@
         "5.2.1"
       ],
       "bt": "7",
-      "week": 7,
+      "week": 8,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2840,7 +2840,7 @@
         "5.1.4"
       ],
       "bt": "8",
-      "week": 8,
+      "week": 9,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2862,7 +2862,7 @@
         "5.2.1"
       ],
       "bt": "9",
-      "week": 9,
+      "week": 10,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2884,7 +2884,7 @@
         "5.4.7"
       ],
       "bt": "12-13",
-      "week": 10,
+      "week": 11,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2906,7 +2906,7 @@
         "5.4.7"
       ],
       "bt": "12-13",
-      "week": 11,
+      "week": 12,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2931,7 +2931,7 @@
         "5.4.1"
       ],
       "bt": "16-17",
-      "week": 12,
+      "week": 13,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2956,7 +2956,7 @@
         "5.4.1"
       ],
       "bt": "16-17",
-      "week": 13,
+      "week": 14,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -2979,7 +2979,7 @@
         "5.4.7"
       ],
       "bt": "18",
-      "week": 14,
+      "week": 15,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3001,7 +3001,7 @@
         "5.4.3"
       ],
       "bt": "19",
-      "week": 15,
+      "week": 16,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3024,7 +3024,7 @@
         "5.2.3"
       ],
       "bt": "22",
-      "week": 16,
+      "week": 17,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3045,7 +3045,7 @@
         "5.4.3"
       ],
       "bt": "23",
-      "week": 17,
+      "week": 20,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3071,7 +3071,7 @@
         "5.4.4"
       ],
       "bt": "24-25",
-      "week": 18,
+      "week": 21,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3093,7 +3093,7 @@
         "5.4.2"
       ],
       "bt": "28",
-      "week": 20,
+      "week": 22,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3115,7 +3115,7 @@
         "5.3.1"
       ],
       "bt": "29",
-      "week": 21,
+      "week": 23,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3136,7 +3136,7 @@
         "5.4.7"
       ],
       "bt": "30",
-      "week": 22,
+      "week": 24,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3157,7 +3157,7 @@
         "5.1.3"
       ],
       "bt": "31",
-      "week": 23,
+      "week": 25,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3181,7 +3181,7 @@
         "5.4.3"
       ],
       "bt": "34-35",
-      "week": 24,
+      "week": 26,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3202,7 +3202,7 @@
         "5.3.3"
       ],
       "bt": "36-37",
-      "week": 25,
+      "week": 27,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3223,7 +3223,7 @@
         "5.2.1"
       ],
       "bt": "38-39",
-      "week": 26,
+      "week": 28,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3244,7 +3244,7 @@
         "5.1.4"
       ],
       "bt": "40-41",
-      "week": 27,
+      "week": 29,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3265,7 +3265,7 @@
         "5.1.2"
       ],
       "bt": "42-43",
-      "week": 28,
+      "week": 30,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3287,7 +3287,7 @@
         "5.1.4"
       ],
       "bt": "44-46",
-      "week": 29,
+      "week": 31,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3308,7 +3308,7 @@
         "5.4.1"
       ],
       "bt": "54-55",
-      "week": 30,
+      "week": 32,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3329,7 +3329,7 @@
         "5.4.1"
       ],
       "bt": "54-55",
-      "week": 31,
+      "week": 33,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3350,7 +3350,7 @@
         "5.4.6"
       ],
       "bt": "56",
-      "week": 32,
+      "week": 34,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3371,7 +3371,7 @@
         "5.2.4"
       ],
       "bt": "57",
-      "week": 33,
+      "week": 35,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3399,7 +3399,7 @@
         "5.4.5"
       ],
       "bt": "60-61",
-      "week": 34,
+      "week": 36,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3421,7 +3421,7 @@
         "5.1.3"
       ],
       "bt": "64-65",
-      "week": 35,
+      "week": 37,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3548,7 +3548,7 @@
         "5.2.4"
       ],
       "bt": "8",
-      "week": 7,
+      "week": 8,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3569,7 +3569,7 @@
         "5.1.1"
       ],
       "bt": "9",
-      "week": 8,
+      "week": 9,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3592,7 +3592,7 @@
         "5.3.4"
       ],
       "bt": "11-12",
-      "week": 9,
+      "week": 10,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3613,7 +3613,7 @@
         "5.1.4"
       ],
       "bt": "12-13",
-      "week": 10,
+      "week": 11,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3636,7 +3636,7 @@
         "5.4.2"
       ],
       "bt": "16",
-      "week": 11,
+      "week": 12,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3657,7 +3657,7 @@
         "5.2.2"
       ],
       "bt": "17",
-      "week": 12,
+      "week": 13,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3681,7 +3681,7 @@
         "5.4.1"
       ],
       "bt": "18-19",
-      "week": 13,
+      "week": 14,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3705,7 +3705,7 @@
         "5.4.5"
       ],
       "bt": "18",
-      "week": 14,
+      "week": 15,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3726,7 +3726,7 @@
         "5.3.4"
       ],
       "bt": "19",
-      "week": 15,
+      "week": 16,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3748,7 +3748,7 @@
         "5.3.2"
       ],
       "bt": "22",
-      "week": 16,
+      "week": 17,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3769,7 +3769,7 @@
         "5.2.2"
       ],
       "bt": "23",
-      "week": 17,
+      "week": 20,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3790,7 +3790,7 @@
         "5.1.1"
       ],
       "bt": "24-25",
-      "week": 18,
+      "week": 21,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3811,7 +3811,7 @@
         "5.3.4"
       ],
       "bt": "28",
-      "week": 20,
+      "week": 22,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3832,7 +3832,7 @@
         "5.4.1"
       ],
       "bt": "29",
-      "week": 21,
+      "week": 23,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3853,7 +3853,7 @@
         "5.4.1"
       ],
       "bt": "33-35",
-      "week": 22,
+      "week": 24,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3874,7 +3874,7 @@
         "5.1.1"
       ],
       "bt": "31",
-      "week": 23,
+      "week": 25,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3895,7 +3895,7 @@
         "5.2.2"
       ],
       "bt": "34-35",
-      "week": 24,
+      "week": 26,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3917,7 +3917,7 @@
         "5.1.4"
       ],
       "bt": "36-37",
-      "week": 25,
+      "week": 27,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3939,7 +3939,7 @@
         "5.1.4"
       ],
       "bt": "38-39",
-      "week": 26,
+      "week": 28,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3962,7 +3962,7 @@
         "5.2.4"
       ],
       "bt": "40-41",
-      "week": 27,
+      "week": 29,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -3985,7 +3985,7 @@
         "5.2.4"
       ],
       "bt": "42-43",
-      "week": 28,
+      "week": 30,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -4007,7 +4007,7 @@
         "5.2.1"
       ],
       "bt": "44-47",
-      "week": 29,
+      "week": 31,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -4030,7 +4030,7 @@
         "5.2.1"
       ],
       "bt": "54-55",
-      "week": 30,
+      "week": 32,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -4053,7 +4053,7 @@
         "5.2.1"
       ],
       "bt": "54-55",
-      "week": 31,
+      "week": 33,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -4075,7 +4075,7 @@
         "5.2.1"
       ],
       "bt": "56",
-      "week": 32,
+      "week": 34,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -4097,7 +4097,7 @@
         "5.2.4"
       ],
       "bt": "57",
-      "week": 33,
+      "week": 35,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -4119,7 +4119,7 @@
         "5.2.2"
       ],
       "bt": "74-75",
-      "week": 34,
+      "week": 36,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -4141,7 +4141,7 @@
         "5.3.2"
       ],
       "bt": "78-79",
-      "week": 35,
+      "week": 37,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false,
@@ -4167,7 +4167,7 @@
         "5.3.4"
       ],
       "bt": "80-81",
-      "week": 36,
+      "week": 38,
       "origin": "PJ456_2027_RPT",
       "status": "DRAF_CADANGAN",
       "ready": false
@@ -4282,7 +4282,7 @@
         "2.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 6,
+      "week": 7,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -4497,7 +4497,7 @@
         "5.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 18,
+      "week": 20,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -4516,7 +4516,7 @@
         "5.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 20,
+      "week": 21,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -4535,7 +4535,7 @@
         "5.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 21,
+      "week": 22,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -4554,7 +4554,7 @@
         "6.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 22,
+      "week": 23,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -4573,7 +4573,7 @@
         "6.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 23,
+      "week": 24,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -4592,7 +4592,7 @@
         "6.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 24,
+      "week": 25,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -4613,7 +4613,7 @@
         "6.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 25,
+      "week": 26,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -4632,7 +4632,7 @@
         "7.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 26,
+      "week": 27,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -4651,7 +4651,7 @@
         "7.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 27,
+      "week": 28,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -4670,7 +4670,7 @@
         "7.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 28,
+      "week": 29,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -4689,7 +4689,7 @@
         "8.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 29,
+      "week": 30,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -4708,7 +4708,7 @@
         "8.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 30,
+      "week": 31,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -4727,7 +4727,7 @@
         "8.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 31,
+      "week": 32,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -4944,7 +4944,7 @@
         "2.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 6,
+      "week": 7,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -4963,7 +4963,7 @@
         "2.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 7,
+      "week": 8,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -4982,7 +4982,7 @@
         "2.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 8,
+      "week": 9,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5003,7 +5003,7 @@
         "2.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 9,
+      "week": 10,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5022,7 +5022,7 @@
         "3.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 11,
+      "week": 12,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5041,7 +5041,7 @@
         "3.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 12,
+      "week": 13,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5060,7 +5060,7 @@
         "3.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 13,
+      "week": 14,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5081,7 +5081,7 @@
         "3.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 14,
+      "week": 15,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5100,7 +5100,7 @@
         "4.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 15,
+      "week": 16,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5138,7 +5138,7 @@
         "4.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 18,
+      "week": 20,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5159,7 +5159,7 @@
         "4.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 19,
+      "week": 21,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5178,7 +5178,7 @@
         "5.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 20,
+      "week": 22,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5197,7 +5197,7 @@
         "5.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 21,
+      "week": 23,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5216,7 +5216,7 @@
         "5.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 22,
+      "week": 24,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5237,7 +5237,7 @@
         "5.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 24,
+      "week": 26,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5256,7 +5256,7 @@
         "6.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 25,
+      "week": 27,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5275,7 +5275,7 @@
         "6.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 26,
+      "week": 28,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5294,7 +5294,7 @@
         "6.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 27,
+      "week": 29,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5313,7 +5313,7 @@
         "7.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 28,
+      "week": 30,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5332,7 +5332,7 @@
         "7.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 30,
+      "week": 31,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5352,7 +5352,7 @@
         "7.1.4"
       ],
       "bt": "Rujuk DSKP",
-      "week": 31,
+      "week": 32,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5371,7 +5371,7 @@
         "8.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 32,
+      "week": 33,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5390,7 +5390,7 @@
         "8.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 33,
+      "week": 34,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5409,7 +5409,7 @@
         "8.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 34,
+      "week": 35,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5564,7 +5564,7 @@
         "1.2.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 6,
+      "week": 7,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5583,7 +5583,7 @@
         "1.2.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 7,
+      "week": 8,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5602,7 +5602,7 @@
         "2.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 8,
+      "week": 9,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5621,7 +5621,7 @@
         "2.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 9,
+      "week": 10,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5640,7 +5640,7 @@
         "2.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 11,
+      "week": 12,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5659,7 +5659,7 @@
         "3.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 12,
+      "week": 13,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5678,7 +5678,7 @@
         "3.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 13,
+      "week": 14,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5698,7 +5698,7 @@
         "3.1.4"
       ],
       "bt": "Rujuk DSKP",
-      "week": 14,
+      "week": 15,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5717,7 +5717,7 @@
         "4.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 15,
+      "week": 16,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5755,7 +5755,7 @@
         "4.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 18,
+      "week": 20,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5774,7 +5774,7 @@
         "5.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 19,
+      "week": 21,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5793,7 +5793,7 @@
         "5.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 20,
+      "week": 22,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5812,7 +5812,7 @@
         "5.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 21,
+      "week": 23,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5831,7 +5831,7 @@
         "6.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 22,
+      "week": 24,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5850,7 +5850,7 @@
         "6.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 24,
+      "week": 26,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5869,7 +5869,7 @@
         "6.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 25,
+      "week": 27,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5888,7 +5888,7 @@
         "7.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 26,
+      "week": 28,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5907,7 +5907,7 @@
         "7.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 27,
+      "week": 29,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5927,7 +5927,7 @@
         "7.1.4"
       ],
       "bt": "Rujuk DSKP",
-      "week": 28,
+      "week": 30,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5946,7 +5946,7 @@
         "8.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 30,
+      "week": 31,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5965,7 +5965,7 @@
         "8.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 31,
+      "week": 32,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -5984,7 +5984,7 @@
         "8.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 32,
+      "week": 33,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6005,7 +6005,7 @@
         "8.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 33,
+      "week": 34,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6026,7 +6026,7 @@
         "8.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 34,
+      "week": 35,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6178,7 +6178,7 @@
         "1.2.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 6,
+      "week": 7,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6197,7 +6197,7 @@
         "1.2.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 7,
+      "week": 8,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6216,7 +6216,7 @@
         "1.2.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 8,
+      "week": 9,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6235,7 +6235,7 @@
         "2.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 9,
+      "week": 10,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6254,7 +6254,7 @@
         "2.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 11,
+      "week": 12,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6274,7 +6274,7 @@
         "2.1.4"
       ],
       "bt": "Rujuk DSKP",
-      "week": 12,
+      "week": 13,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6293,7 +6293,7 @@
         "3.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 13,
+      "week": 14,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6312,7 +6312,7 @@
         "3.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 14,
+      "week": 15,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6331,7 +6331,7 @@
         "3.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 15,
+      "week": 16,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6369,7 +6369,7 @@
         "4.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 18,
+      "week": 20,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6388,7 +6388,7 @@
         "4.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 19,
+      "week": 21,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6407,7 +6407,7 @@
         "5.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 20,
+      "week": 22,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6426,7 +6426,7 @@
         "5.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 21,
+      "week": 23,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6445,7 +6445,7 @@
         "5.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 22,
+      "week": 24,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6464,7 +6464,7 @@
         "6.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 24,
+      "week": 26,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6483,7 +6483,7 @@
         "6.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 25,
+      "week": 27,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6503,7 +6503,7 @@
         "6.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 26,
+      "week": 28,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6522,7 +6522,7 @@
         "7.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 27,
+      "week": 29,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6542,7 +6542,7 @@
         "7.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 28,
+      "week": 30,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6561,7 +6561,7 @@
         "8.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 30,
+      "week": 31,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6580,7 +6580,7 @@
         "8.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 31,
+      "week": 32,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6599,7 +6599,7 @@
         "8.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 32,
+      "week": 33,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6620,7 +6620,7 @@
         "8.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 33,
+      "week": 34,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6641,7 +6641,7 @@
         "8.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 34,
+      "week": 35,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6795,7 +6795,7 @@
         "1.2.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 6,
+      "week": 7,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6814,7 +6814,7 @@
         "1.2.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 7,
+      "week": 8,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6833,7 +6833,7 @@
         "1.2.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 8,
+      "week": 9,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6852,7 +6852,7 @@
         "1.2.4"
       ],
       "bt": "Rujuk DSKP",
-      "week": 9,
+      "week": 10,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6871,7 +6871,7 @@
         "2.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 11,
+      "week": 12,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6890,7 +6890,7 @@
         "2.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 12,
+      "week": 13,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6910,7 +6910,7 @@
         "2.1.4"
       ],
       "bt": "Rujuk DSKP",
-      "week": 13,
+      "week": 14,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6929,7 +6929,7 @@
         "3.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 14,
+      "week": 15,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6948,7 +6948,7 @@
         "3.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 15,
+      "week": 16,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -6986,7 +6986,7 @@
         "4.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 18,
+      "week": 20,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -7005,7 +7005,7 @@
         "4.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 19,
+      "week": 21,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -7024,7 +7024,7 @@
         "4.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 20,
+      "week": 22,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -7043,7 +7043,7 @@
         "5.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 21,
+      "week": 23,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -7062,7 +7062,7 @@
         "5.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 22,
+      "week": 24,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -7081,7 +7081,7 @@
         "5.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 24,
+      "week": 26,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -7100,7 +7100,7 @@
         "6.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 25,
+      "week": 27,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -7120,7 +7120,7 @@
         "6.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 26,
+      "week": 28,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -7139,7 +7139,7 @@
         "7.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 27,
+      "week": 29,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -7159,7 +7159,7 @@
         "7.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 28,
+      "week": 30,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -7178,7 +7178,7 @@
         "8.1.1"
       ],
       "bt": "Rujuk DSKP",
-      "week": 30,
+      "week": 31,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -7197,7 +7197,7 @@
         "8.1.2"
       ],
       "bt": "Rujuk DSKP",
-      "week": 31,
+      "week": 32,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -7216,7 +7216,7 @@
         "8.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 32,
+      "week": 33,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -7237,7 +7237,7 @@
         "8.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 33,
+      "week": 34,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
@@ -7258,7 +7258,7 @@
         "8.1.3"
       ],
       "bt": "Rujuk DSKP",
-      "week": 34,
+      "week": 35,
       "origin": "PK_2027_STAGING_30MIN",
       "duration_min": 30,
       "status": "DRAF_CADANGAN",
