@@ -31,7 +31,7 @@ def test_two_lesson_aliases_deliver_one_copy_of_each_source():
         patch.object(materials, "_book_selection", side_effect=lambda _r, _y, n, **_: (
             {"year": "Tahun 2"}, [58, 59] if n == 2 else [59, 60])),
         patch.object(materials, "_pdf", side_effect=lambda _r, _s, pages: excerpt(pages)),
-        patch.object(materials, "_material", side_effect=lambda _y, n: {
+        patch.object(materials, "_material", side_effect=lambda _y, n, **_: {
             "pages": workbook[n], "label": f"English • Buku Aktiviti m/s {n}"}),
         patch.object(materials, "_extract", side_effect=lambda m: excerpt(m["pages"])),
         patch.object(materials, "_audio_rows", side_effect=lambda _r, _y, n, **_: (
@@ -79,3 +79,17 @@ def test_missing_materials_and_year4_shared_song():
             assert result == {"ok": True}
         rt._send_document_before_v25277.assert_called_once()
         rt.send_document.assert_not_called()
+
+
+def test_year3_download_includes_verified_workbook_reference_once_per_pair():
+    for pair, printed, physical in (((86, 87), 45, 46), ((91, 92), 46, 47), ((102, 103), 53, 53)):
+        workbook = materials._workbook(3, pair)
+        assert [lesson for lesson, _ in workbook] == list(pair)
+        for lesson, reference in workbook:
+            assert reference["label"].endswith(f"m/s {printed}")
+            assert [(path.name, page) for path, page in reference["pages"]] == [
+                ("y3_workbook_001_080.pdf", physical)]
+            assert materials._material(3, lesson) is None
+        data, mime, _ = materials.download(None, 3, pair, "workbook")
+        assert mime == "application/pdf"
+        assert len(PdfReader(BytesIO(data), strict=True).pages) == 1

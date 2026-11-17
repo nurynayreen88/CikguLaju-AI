@@ -39,7 +39,7 @@ def _workbook_pages(year, lesson, root):
     return pages, printed
 
 
-def _material(year: int, lesson: int, *, root=ROOT):
+def _material(year: int, lesson: int, *, root=ROOT, paired_reference=False):
     if type(year) is not int or year not in range(1, 7):
         return None
     if type(lesson) is not int or not 1 <= lesson <= 160:
@@ -71,10 +71,17 @@ def _material(year: int, lesson: int, *, root=ROOT):
         pages = [(path, number) for number in range(first, last + 1)]
     else:
         if year == 3:
-            from resources.english.y3.workbook_verified_map import Y3_WB_VERIFIED_LESSON_MAP as verified
+            from resources.english.y3.workbook_verified_map import (
+                Y3_WB_PAIRED_REFERENCE_MAP, Y3_WB_VERIFIED_LESSON_MAP,
+            )
+
+            rec = Y3_WB_VERIFIED_LESSON_MAP.get(lesson)
+            if rec is None and paired_reference:
+                rec = Y3_WB_PAIRED_REFERENCE_MAP.get(lesson)
         else:
-            from resources.english.y4.workbook_verified_map import EN4_WB_VERIFIED as verified
-        rec = verified.get(lesson)
+            from resources.english.y4.workbook_verified_map import EN4_WB_VERIFIED
+
+            rec = EN4_WB_VERIFIED.get(lesson)
         if not isinstance(rec, dict) or type(rec.get("pdf")) is not int:
             return None
         # Year 4 chunks are named using printed coordinates, as in Telegram's

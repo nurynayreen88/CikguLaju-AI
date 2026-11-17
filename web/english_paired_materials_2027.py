@@ -32,7 +32,7 @@ def _student_book(runtime, year, pair, options):
 
 
 def _workbook(year, pair):
-    return [(n, material) for n in pair if (material := _material(year, n))]
+    return [(n, material) for n in pair if (material := _material(year, n, paired_reference=True))]
 
 
 def _audio(runtime, year, pair, options):

@@ -4,6 +4,18 @@
 # printed = teacher-facing Workbook page; pdf = 1-based physical page in source PDF.
 # NOTE: printed pp.2-3 are absent from the available Workbook PDF and are not promoted here.
 
+# Teacher's Book Workbook blocks matched to the original printed pages. These
+# are reference downloads for the shared session; the individual RPH keep their
+# existing activities, including the separate listening and speaking materials.
+Y3_WB_PAIRED_REFERENCE_MAP = {
+    86: {"printed": 45, "pdf": 46, "tb_page": 91},
+    87: {"printed": 45, "pdf": 46, "tb_page": 91},
+    91: {"printed": 46, "pdf": 47, "tb_page": 93},
+    92: {"printed": 46, "pdf": 47, "tb_page": 93},
+    102: {"printed": 53, "pdf": 53, "tb_page": 105},
+    103: {"printed": 53, "pdf": 53, "tb_page": 105},
+}
+
 Y3_WB_VERIFIED_LESSON_MAP = {
 
     1:  {"printed": 2, "pdf": None, "tb_page": 18, "evidence": "TB p.18 Workbook block explicitly covers Welcome Workbook opening activity; source PDF page missing"},
