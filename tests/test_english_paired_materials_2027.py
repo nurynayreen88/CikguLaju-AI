@@ -134,3 +134,18 @@ def test_paired_year4_uses_verified_textbook_pages_from_both_lessons():
                 100 + number for number in pages]
     assert materials._book_selection(runtime, 4, 19)[1] == [21]
     assert materials._book_selection(runtime, 4, 39, paired_reference=True) is None
+
+
+def test_telegram_book_view_when_verified_pdf_is_unavailable():
+    rt = SimpleNamespace(send=Mock())
+    with (patch.object(materials.integrated, "enabled", return_value=True),
+          patch.object(materials, "inventory", return_value=[])):
+        for code, ending in (("en27materials:3:2", "rmzft/wwgq/mobile/index.html?pageIndex=3"),
+                             ("en27materials:3:7", "rmzft/wwgq/mobile/index.html?pageIndex=4"),
+                             ("en27materials:6:89", "hykyg/rrpd/mobile/index.html?pageIndex=75")):
+            materials.telegram_callback(rt, 1, code)
+            assert rt.send.call_args.args[2][0][0]["url"] == "https://online.anyflip.com/" + ending
+    with (patch.object(materials.integrated, "enabled", return_value=True),
+          patch.object(materials, "inventory", return_value=[{"id": "student-book", "title": "PDF"}])):
+        materials.telegram_callback(rt, 1, "en27materials:6:89")
+        assert rt.send.call_args.args[2] == [[{"text": "PDF", "callback_data": "en27materials:6:88:student-book"}]]
