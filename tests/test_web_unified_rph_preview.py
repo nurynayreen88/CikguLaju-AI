@@ -139,6 +139,8 @@ class UnifiedWebRPHTests(unittest.TestCase):
                     self.assertEqual(header["Main Learning Standard"], "1.2.1")
                     self.assertEqual(header["Complementary Learning Standard"], "3.2.1")
                     self.assertIn("missing words", layout["phases"][1]["activity"])
+                    self.assertIn("44 min", layout["phases"][1]["notes"])
+                    self.assertIn("Workbook p.4 Exercise 2", layout["phases"][1]["activity"])
                     self.assertIn("one clue", header["Assessment"])
                 continue
             self.assertEqual(result.status_code, 200, result.get_json())

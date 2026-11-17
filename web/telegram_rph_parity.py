@@ -131,10 +131,14 @@ def build_layout(data,subject_labels):
     else:
         meta["HARI"]="________________"
     phases={"induction":[],"main":[],"closure":[]}
+    notes={"CATATAN SET INDUKSI":"","CATATAN AKTIVITI UTAMA":"","CATATAN PENUTUP":""}
     labels_for={}
     supports=[];reflection=[];extra=[]
     for label,value in _source_items(data["fields"]):
         if not value or len(value)>18000:
+            continue
+        if label in notes:
+            notes[label]=value
             continue
         category=classify(label)
         if category in phases:
@@ -192,11 +196,11 @@ def build_layout(data,subject_labels):
             ["Fasa / Masa","Aktiviti Pengajaran & Pembelajaran","Catatan"]),
         "phases":[
             {"label":labels_for.get("induction","Set Induction" if english else "Set Induksi"),
-             "activity":"\n\n".join(phases["induction"]) or "—","notes":""},
+             "activity":"\n\n".join(phases["induction"]) or "—","notes":notes["CATATAN SET INDUKSI"]},
             {"label":"Main Activities" if english else "Aktiviti Utama",
-             "activity":"\n\n".join(phases["main"]) or "—","notes":""},
+             "activity":"\n\n".join(phases["main"]) or "—","notes":notes["CATATAN AKTIVITI UTAMA"]},
             {"label":labels_for.get("closure","Closure" if english else "Penutup"),
-             "activity":"\n\n".join(phases["closure"]) or "—","notes":""},
+             "activity":"\n\n".join(phases["closure"]) or "—","notes":notes["CATATAN PENUTUP"]},
         ],
         "footer":[
             {"label":"Remedial / Enrichment" if english else "Pemulihan / Pengayaan",
