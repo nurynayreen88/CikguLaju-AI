@@ -274,3 +274,26 @@ Bahan Starter Unit disemak pada SOW SK bercetak pp.35–49, Student’s Book pp.
 Lesson 1 memeriksa idea utama daripada bacaan dan pendengaran secara berasingan. Lesson 11 memeriksa urutan tindakan semasa murid mengikut arahan kelas. Lesson 13 menambah balasan ringkas supaya tanda baca dinilai melalui penulisan bebas. Edisi Oktober memperuntukkan satu RPH 60 minit bagi setiap pasangan 1–2, 6–7, 8–9 dan 11–12.
 
 Bukti kandungan CD1.02, CD1.03, CD1.04, CD1.08, CD1.09 dan CD1.12 direkodkan dalam [audit audio](english_y4_y5_october_audio_content_20261117.md). Nombor CD1.05 dan aktiviti pengenalan Yasmin sepadan dalam SB p.5 dan TB p.19. Kandungan fail rakaman CD1.05 dan penghantaran melalui akaun guru produksi masih perlu disahkan.
+
+### Semakan 17 November bagi Lesson 17–28
+
+Unit 1 disemak pada SOW SK bercetak pp.52–63, Student’s Book pp.12–20 serta Teacher’s Book pp.26–34. Latihan WB dipadankan pada skema jawapan dalam TB pp.135–136. Lesson 21 menggunakan [aktiviti Collage Shape Poem, BPK p.35](https://fliphtml5.com/qifna/qfis/Year_5_Poems_Guidebook/38/). Lesson 27 menggunakan bunyi dan peristiwa dalam [Serenade](https://sasbadisb.com/download/literature-component-practices-year-51.pdf), dengan rujukan antologi daripada SOW.
+
+| Lesson | SOW bercetak | SP utama / pelengkap | Bahan dan aktiviti bercetak | WB pilihan | Trek dalam RPH |
+| --- | ---: | --- | --- | --- | --- |
+| 17 | 52 | 1.2.1 / 4.2.4 | SB 12–13 A1–4 / TB 26–27, idea utama temu bual dan deskripsi tempat | 12 Ex1 | CD1.13–CD1.14 |
+| 18 | 53 | 2.1.5 / 4.2.1 | SB 13 A5–6 / TB 27, deskripsi kawasan dan butiran diri secara bertulis | 13 Ex2 | — |
+| 19 | 54 | 3.2.4 / 2.1.5 | SB 14 A1–3 / TB 28, carian makna dan deskripsi kapal persiaran | 16 Ex5 | CD1.15 |
+| 20 | 55 | 4.2.4 / 2.2.1 | SB 15 A1, A5–6 dan Finished? / TB 29, deskripsi taman percutian dan soalan susulan | 13 Ex4 | — |
+| 21 | 56 | 5.3.1 / 4.2.4 | Anthology p.15, Cats, puisi berbentuk kucing dengan dua baris deskriptif | — | — |
+| 22 | 57 | 2.2.1 / 4.2.4 | SB 15 A2–4 / TB 29, soalan susulan dan deskripsi kemudahan setempat | 18 Ex3 | — |
+| 23 | 58 | 1.2.2 / 4.3.2 | SB 16 A1–4 / TB 30, butiran temu bual dan ejaan tanpa menyalin | 14 Ex1 | CD1.16–CD1.17 |
+| 24 | 59 | 2.1.2 / 1.1.1 | SB 17 A1, A4–5 dan Finished? / TB 31, pengalaman sebenar dan sebutan kata bandingan | 15 Ex2 | CD1.18 |
+| 25 | 60 | 3.2.2 / 4.3.2 | SB 19 A1–4 / TB 33, bukti daripada perenggan berbeza dan ejaan dalam ayat sendiri | 16 Ex4, teks Miniland | — |
+| 26 | 61 | 4.2.5 / 3.2.1 | SB 19 A5 dan Writing Guide / TB 33, perenggan berpaut dan idea utama teks Edinburgh | 17 Ex4 | — |
+| 27 | 62 | 5.2.1 / 3.3.1 | Anthology p.17, Serenade, bacaan pilihan dan sebab respons terhadap bunyi atau peristiwa | — | — |
+| 28 | 63 | 4.3.2 / 2.2.1 | SB 20 A2, A5–6 / TB 34, ejaan kata bandingan dan soalan susulan arah | 19 Ex5 | — |
+
+Lesson 18 menilai penulisan butiran diri secara individu. Lesson 24 menambah perbualan tentang tempat yang pernah dilawati sebagai bukti SP 2.1.2. Lesson 25 mengumpul tulisan bebas sebelum murid menyemak ejaan. Lesson 26 mengekalkan susunan idea dalam Writing Guide dan menggunakan dua perenggan untuk bukti SP 4.2.5.
+
+Jadual RPT Oktober menggunakan Lesson 17–28 sebagai sesi tunggal. Nombor CD1.13–CD1.18 telah dipadankan dalam buku dengan aktiviti yang digunakan. Kandungan keenam-enam fail rakaman dan penghantaran melalui akaun guru produksi masih perlu disahkan.
