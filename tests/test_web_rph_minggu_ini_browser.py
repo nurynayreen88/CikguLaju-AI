@@ -4,13 +4,14 @@ from pathlib import Path
 from unittest import TestCase
 from urllib.parse import parse_qs, urlsplit
 
-from playwright.sync_api import sync_playwright
+from playwright.sync_api import expect, sync_playwright
 
 
 ROOT = Path(__file__).resolve().parents[1]
 MONDAY = "2027-01-04"
 TUESDAY = "2027-01-05"
 HOLIDAY = "2027-01-06"
+THURSDAY = "2027-01-07"
 CLOSURE = "Cuti negeri · Israk dan Mikraj"
 
 
@@ -44,10 +45,12 @@ class WeeklyRphBrowserTest(TestCase):
         monday = slot("Isnin", "ENGLISH", "English", "2 Bestari")
         monday["rpt_suggestion"]["lessons"][""] = [1, 2, 3, 4]
         tuesday = slot("Selasa", "SCIENCE", "Sains", "2 Amanah")
+        thursday = slot("Khamis", "SCIENCE", "Sains", "2 Cemerlang")
         week_days = [
             {"date": MONDAY, "day": "Isnin", "entries": [monday]},
             {"date": TUESDAY, "day": "Selasa", "entries": [tuesday]},
             {"date": HOLIDAY, "day": "Rabu", "entries": [], "closure": CLOSURE},
+            {"date": THURSDAY, "day": "Khamis", "entries": [thursday]},
         ]
         dropdown = {
             "subjects": [{"label": "English", "value": "ENGLISH"}, {"label": "Sains", "value": "SCIENCE"}],
@@ -72,12 +75,15 @@ class WeeklyRphBrowserTest(TestCase):
                 if params.get("date") == HOLIDAY:
                     route.fulfill(json={"date": HOLIDAY, "day": "Rabu", "count": 1, "entries": [monday],
                                         "closure": CLOSURE, "holiday_notice": ""})
+                elif params.get("date") == THURSDAY:
+                    route.fulfill(json={"date": THURSDAY, "day": "Khamis", "count": 1,
+                                        "entries": [thursday], "holiday_notice": ""})
                 else:
                     route.fulfill(json={"date": MONDAY, "day": "Isnin", "count": 1,
                                         "entries": [monday], "holiday_notice": ""})
             elif url.path == "/api/web/rph/minggu-ini":
                 route.fulfill(json={"date": MONDAY, "start": MONDAY, "end": "2027-01-10",
-                                    "count": 2, "days": week_days, "holiday_notice": "Sahkan PdP."})
+                                    "count": 3, "days": week_days, "holiday_notice": "Sahkan PdP."})
             elif url.path == "/api/options":
                 route.fulfill(json=dropdown[params["kind"]])
             elif url.path == "/api/web/rph/availability":
@@ -117,15 +123,25 @@ class WeeklyRphBrowserTest(TestCase):
             page.get_by_text(CLOSURE, exact=True).wait_for()
             self.assertEqual(page.locator("#view-today-heading").inner_text(), "RPH Pantas")
             page.get_by_text("Cadangan slot ini: Lesson 001", exact=False).wait_for()
-            for index, lesson in enumerate(("L1", "L2")):
+            for index, lesson in enumerate(("L1", "L2", "L2")):
                 page.locator(f"#today-{index}-unit").select_option("U1")
                 page.locator(f"#today-{index}-lesson").select_option(lesson)
             prepare = page.get_by_role("button", name="Sediakan RPH Minggu Ini")
             self.assertTrue(prepare.is_disabled())
-            page.locator("#today-confirm-school-day").check()
+            confirm = page.locator("#today-confirm-school-day")
+            confirm.check()
+            excluded = page.get_by_role("checkbox", name="Tiada PdP pada Khamis", exact=False)
+            excluded.check()
+            self.assertFalse(confirm.is_checked())
+            self.assertTrue(prepare.is_disabled())
+            self.assertFalse(page.locator("#today-2-lesson").is_visible())
+            expect(page.locator("#today-status")).to_contain_text("2 slot PdP.")
+            self.assertFalse(page.get_by_role("checkbox", name="Tiada PdP pada Rabu", exact=False).count())
+            confirm.check()
             prepare.click()
             page.get_by_text("Semakan bahan selesai", exact=False).wait_for()
             self.assertFalse(downloads)
+            self.assertEqual({row["teacher_date"] for row in availability}, {MONDAY, TUESDAY})
             english = next(row for row in availability if row["subject"] == "ENGLISH")
             self.assertEqual(english["teacher_date"], MONDAY)
             result = page.locator("#today-results-list .daily-rph-result-card").filter(has_text="2 Amanah")
@@ -156,6 +172,15 @@ class WeeklyRphBrowserTest(TestCase):
             self.assertEqual(page.locator("#view-today-heading").inner_text(), "RPH Pantas")
             self.assertEqual(page.locator("#today-list .daily-rph-card").count(), 1)
             self.assertFalse(group_download.is_visible())
+            page.locator("#today-date").fill(THURSDAY)
+            page.locator("#today-refresh").click()
+            page.get_by_text("Slot hari ini dikecualikan sehingga halaman dimuat semula.", exact=True).wait_for()
+            self.assertTrue(excluded.is_checked())
+            self.assertFalse(page.locator("#today-confirm-wrap").is_visible())
+            self.assertTrue(page.locator("#today-generate-all").is_disabled())
+            excluded.uncheck()
+            page.get_by_text("2 Cemerlang · Sains", exact=True).wait_for()
+            self.assertTrue(page.locator("#today-confirm-wrap").is_visible())
             page.locator("#today-date").fill(HOLIDAY)
             page.locator("#today-refresh").click()
             page.get_by_text(CLOSURE + ". Tiada slot RPH untuk tarikh ini.", exact=True).wait_for()

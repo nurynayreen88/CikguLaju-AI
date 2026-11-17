@@ -25,7 +25,8 @@
  if(!dateInput||!refresh||!state||!list||!confirm||!generateAll||
     !allStatus||!resultsHost||!resultsList)return;
  let requestId=0,loadedDate="",loading=false,reviewing=false,savingProgress=false,choices=[],batchEpoch=0;
- let weekly=false;
+ let weekly=false,weekSlotCount=null;
+ const noPdpDates=new Set();
  const cache=new Map(),rosterCounts=new Map();
  const bundleParts=new Map();
  let bundleBusy=false,bundleSlots=[],singleDownloads=0;
@@ -120,8 +121,18 @@
   }
  }
 
+ function includedChoices(){
+  return choices.filter(c=>!noPdpDates.has(c.date));
+ }
  function updateAll(){
-  const selectable=choices.filter(c=>c.slot.can_prepare);
+  const included=includedChoices();
+  const selectable=included.filter(c=>c.slot.can_prepare);
+  confirmWrap.hidden=!included.length;
+  if(weekSlotCount&&weekSlotCount.textContent!==String(included.length))
+   weekSlotCount.textContent=String(included.length);
+  for(const checkbox of list.querySelectorAll(".daily-rph-no-pdp")){
+   checkbox.disabled=loading||reviewing||bundleBusy||Boolean(singleDownloads)||savingProgress;
+  }
   const incomplete=selectable.filter(c=>!c.controls.lesson.value);
   const busy=selectable.some(c=>c.busy);
   // Keep the original all-slots guard, covered by existing RPH Hari Ini QA.
@@ -150,7 +161,7 @@
     return;
    }
    if(!selectable.length){
-    allStatus.textContent=choices.length
+    allStatus.textContent=included.length
      ?"Tiada slot dengan bahan disahkan untuk disediakan pada tarikh ini.":"";
    }else if(busy){
     allStatus.textContent=done+" daripada "+selectable.length+
@@ -305,7 +316,7 @@
  }
  async function changeCompletion(c,undo=false){
   const button=undo?c.undoCompletion:c.complete;
-  if(button.disabled||savingProgress)return;
+  if(button.disabled||savingProgress||noPdpDates.has(c.date))return;
   const token=undo?null:c.controls.lesson.selectedOptions[0]?.dataset.completionToken;
   const body={date:loadedDate,start:c.slot.start,class_name:c.slot.class_name,
    subject_code:c.slot.subject_code,component:selectedComponent(c),token};
@@ -462,7 +473,7 @@
   }catch(error){if(c.ticket===requestId)c.message.textContent=error.message;}
   finally{c.busy=false;updateAll();}
  }
- function makeChoice(slot,index,ticket,progressEditable,parent=list,slotDate=loadedDate){
+ function makeChoice(slot,index,ticket,progressEditable,parent,slotDate){
   const card=create("article","daily-rph-card");
   const heading=create("div","daily-rph-card-top");
   heading.append(create("strong","",slot.class_name+" · "+slot.subject),
@@ -560,11 +571,34 @@
   void initialize(c);
   return c;
  }
+ function renderDaySlots(day,ticket,progressEditable){
+  const caption=create("label","daily-rph-day-confirm");
+  const checkbox=create("input","daily-rph-no-pdp");
+  checkbox.type="checkbox";
+  checkbox.checked=noPdpDates.has(day.date);
+  caption.append(checkbox,create("span","","Tiada PdP pada "+day.day+", "+formatSlotDate(day.date)));
+  const notice=create("p","notice","Slot hari ini dikecualikan sehingga halaman dimuat semula.");
+  notice.setAttribute("role","status");
+  const slots=create("div","daily-rph-day-slots");
+  notice.hidden=!checkbox.checked;
+  slots.hidden=checkbox.checked;
+  if(day.entries.some(slot=>slot.can_prepare))list.append(caption,notice);
+  list.append(slots);
+  for(const slot of day.entries)
+   choices.push(makeChoice(slot,choices.length,ticket,progressEditable,slots,day.date));
+  checkbox.addEventListener("change",()=>{
+   if(checkbox.checked)noPdpDates.add(day.date);
+   else noPdpDates.delete(day.date);
+   slots.hidden=checkbox.checked;
+   notice.hidden=!checkbox.checked;
+   confirm.checked=false;
+   clearResults();
+  });
+ }
  function render(data,ticket){
   loadedDate=data.date;
   dateInput.value=data.date;
   confirm.checked=false;
-  confirmWrap.hidden=!data.count||Boolean(data.closure);
   resultsHost.hidden=true;
   resultsList.replaceChildren();
   list.replaceChildren();
@@ -572,8 +606,7 @@
   if(data.closure)list.append(create("p","notice",data.closure+". Tiada slot RPH untuk tarikh ini."));
   else if(!data.count)list.append(create("p","notice",
    "Tiada waktu mengajar pada "+data.day+". Pilih tarikh lain atau kemas kini Jadual Waktu di Profil Guru."));
-  else for(const [i,slot] of data.entries.entries())
-   choices.push(makeChoice(slot,i,ticket,data.progress_editable));
+  else renderDaySlots(data,ticket,data.progress_editable);
   state.textContent=data.day+", "+new Intl.DateTimeFormat("ms-MY",{
    timeZone:"Asia/Kuala_Lumpur",day:"numeric",month:"long",year:"numeric"
   }).format(new Date(data.date+"T12:00:00+08:00"))+
@@ -590,7 +623,6 @@
  function renderWeek(data,ticket){
   loadedDate=data.date;
   dateInput.value=data.date;
-  confirmWrap.hidden=!data.count;
   for(const day of data.days){
    if(!day.entries.length&&(!day.closure||day.closure==="Hujung minggu"))continue;
    list.append(create("h3","",day.day+" · "+formatSlotDate(day.date)));
@@ -598,14 +630,14 @@
     list.append(create("p","notice",day.closure));
     continue;
    }
-   for(const slot of day.entries)
-    choices.push(makeChoice(slot,choices.length,ticket,false,list,day.date));
+   renderDaySlots(day,ticket,false);
   }
   if(!data.count)list.append(create("p","notice",
    "Tiada waktu PdP minggu ini. Pilih tarikh lain atau semak Jadual Waktu di Profil Guru."));
-  state.textContent=formatSlotDate(data.start)+" hingga "+formatSlotDate(data.end)+
-   " · "+data.count+" slot PdP. "+data.holiday_notice+
-   (data.progress_unavailable?" Rekod kemajuan kelas belum dapat disemak.":"");
+  weekSlotCount=create("span");
+  state.replaceChildren(formatSlotDate(data.start)+" hingga "+formatSlotDate(data.end)+" · ",
+   weekSlotCount," slot PdP. "+data.holiday_notice+
+   (data.progress_unavailable?" Rekod kemajuan kelas belum dapat disemak.":""));
   updateAll();
  }
  async function load(date=""){
@@ -617,7 +649,7 @@
   bundleSlots=[];
   bundleParts.clear();
   batchEpoch++;
-  loading=true;reviewing=false;choices=[];
+  loading=true;reviewing=false;choices=[];weekSlotCount=null;
   resultsHost.hidden=true;
   resultsList.replaceChildren();
   list.replaceChildren();
@@ -795,9 +827,11 @@
   return {blob,name:name||fallback,receipt:response.headers.get("X-RPH-Word-Receipt")};
  }
  async function downloadRph(c,format,key,button){
-  if(c.ticket!==requestId||reviewing||bundleBusy||key!==selectedKey(c)||!confirm.checked)return;
+  if(c.ticket!==requestId||reviewing||bundleBusy||key!==selectedKey(c)||!confirm.checked||
+     noPdpDates.has(c.date))return;
   singleDownloads++;
   button.disabled=true;
+  updateAll();
   updateBundle();
   try{
    const plan=rphFileRequest(c,format);
@@ -809,7 +843,7 @@
    c.downloadStatus.textContent="RPH "+format.toUpperCase()+" disediakan untuk "+c.slot.class_name+".";
    window.refreshSharedRphBalance?.();
   }catch(error){c.downloadStatus.textContent=error.message;}
-  finally{button.disabled=false;singleDownloads--;updateBundle();}
+  finally{button.disabled=false;singleDownloads--;updateAll();updateBundle();}
  }
  function updateBundle(){
   if(!bundlePanel)return;
@@ -863,6 +897,7 @@
    plans=bundleSlots.map(c=>rphFileRequest(c,format));
   }catch(error){bundleStatus.textContent=error.message;return;}
   bundleBusy=true;
+  updateAll();
   updateBundle();
   const lock=[dateInput,refresh,confirm,dayMode,weekMode,generateAll,manual,
    ...choices.flatMap(c=>c.editor?[...c.editor.querySelectorAll("select,input,textarea")]:[])]
@@ -919,7 +954,7 @@
  }
  async function generate(){
   if(generateAll.disabled)return;
-  const selected=choices.filter(c=>c.slot.can_prepare&&(!weekly||c.controls.lesson.value));
+  const selected=includedChoices().filter(c=>c.slot.can_prepare&&(!weekly||c.controls.lesson.value));
   if(!selected.length||selected.some(c=>!c.controls.lesson.value))return;
   reviewing=true;generateAll.disabled=true;updateAll();
   const epoch=++batchEpoch;
@@ -972,7 +1007,7 @@
   dayMode.classList.toggle("secondary",weekly);
   weekMode.classList.toggle("secondary",!weekly);
   document.getElementById("today-instructions").textContent=weekly
-   ?"Semak cadangan bagi semua hari dalam jadual minggu ini dan pilih Lesson/PdP untuk slot yang hendak disediakan."
+   ?"Tandakan Tiada PdP jika sekolah membatalkan kelas sepanjang hari. Pilih Lesson/PdP bagi slot yang hendak disediakan."
    :"RPH Hari Ini menunjukkan cadangan daripada RPH Minggu Ini untuk tarikh yang dipilih. Semak Lesson/PdP mengikut kemajuan kelas, kemudian catat Selesai PdP selepas mengajar.";
   document.getElementById("today-confirm-label").textContent=weekly
    ?"Saya sahkan slot yang dipilih berlangsung pada hari PdP."
