@@ -192,3 +192,29 @@ Sumber Sport dan Growing up menggunakan SOW serta buku English Plus 1. Lesson 11
 | 128 | 169 | 4.2.1 / 3.2.1 | SB 75 A5–8 dan Finished? / TB 89, idea utama profil dan butiran hujung minggu | 61 Ex4 | — |
 
 SOW Lesson 114 menyebut TB p.151 untuk skrip, manakala latihan dan rujukan skrip CD2.16 dalam Teacher’s Book meletakkannya pada p.152. Lesson 124 sudah mempunyai cadangan SK/SP yang dipadankan dengan DSKP. Pasangan 113–114 dan 119–120 kekal menggunakan satu RPH bagi setiap sesi bersepadu. Kandungan CD2.15–CD2.16 dan CD2.18–CD2.19 telah dipadankan dalam [audit audio](english_y4_y5_october_audio_content_20261117.md). Nombor CD2.17, CD3.15–CD3.16 dan CD2.21–CD2.22 disemak dalam buku. Kandungan lima rakaman tersebut dan muat turun melalui akaun guru produksi masih perlu disahkan.
+
+### Semakan 17 November bagi Lesson 129–141 dan 143–146
+
+Bahan Growing up dan Going away menggunakan SOW serta buku English Plus 1. Lesson 129, 135 dan 141 menggunakan [panduan BPK Gulliver’s Travels](https://anyflip.com/jzvps/hqga/basic) bersama rujukan halaman dan bab dalam SOW.
+
+| Lesson | SOW bercetak | SP utama / pelengkap | Bahan dan aktiviti bercetak | WB pilihan | Trek dalam RPH |
+| --- | ---: | --- | --- | --- | --- |
+| 129 | 170 | 5.2.1 / 3.3.1 | Novel grafik pp.6–13, pilihan panel dan sebab | — | — |
+| 130 | 171 | 1.2.2 / 1.2.5 | SB 98 A1–5 / TB 112, butiran dan urutan soalan foto | — | CD3.17–CD3.18 |
+| 131 | 172 | 1.2.3 / 3.2.3 | SB 76 A1–3 / TB 90, urutan peristiwa dan petunjuk bahan bercetak | — | CD2.25–CD2.26 |
+| 132 | 173 | 2.1.1 / 4.2.1 | SB 76 A4–5 dan Key Phrases 73 / TB 90, maklumat peribadi lisan dan bertulis | — | — |
+| 133 | 174 | 3.2.3 / 4.3.2 | SB 76 petikan A1 dan 77 A1–3 / TB 91, makna dan ejaan soalan | 63 Ex2 | — |
+| 134 | 175 | 4.2.1 / 2.3.1 | SB 77 A4–5 dan Finished? / TB 91, butiran diri dan penceritaan | 63 Ex4 | — |
+| 135 | 176 | 5.3.1 / 3.2.2 | Novel grafik Bab 3, bukti bacaan dan lakonan | — | — |
+| 136 | 177 | 3.2.4 / 4.3.2 | SB 80 A1, A2, A4 dan A5 / TB 94, semakan makna dan ejaan | — | — |
+| 137 | 178 | 1.2.4 / 2.1.2 | SB 78 A1–3 / TB 92, arahan berturutan dan laporan pengalaman | — | CD2.27 |
+| 138 | 179 | 2.1.3 / 4.2.2 | SB 78 A4 / TB 92, nasihat lisan dan bertulis | 67 Ex6 | — |
+| 139 | 180 | 3.3.1 / 4.3.1 | SB 119 A1–3 / TB 133, respons bacaan dan tanda baca | — | CD3.36 |
+| 140 | 181 | 4.2.5 / 1.1.1 | SB 119 A5 / TB 133, perenggan berpaut dan bunyi rima | — | CD3.36 |
+| 141 | 182 | 5.3.1 / 4.2.4 | Novel grafik Bab 4, dua latar berskala berbeza dan deskripsi | — | — |
+| 143 | 185 | 1.3.1 / 1.2.2 | SB 82–83 A1–4 / TB 96–97, petunjuk lisan dan butiran rakaman | 68 Ex3 | CD2.29–CD2.30 |
+| 144 | 186 | 2.1.4 / 4.2.3 | SB 83 A5–6 / TB 97, rancangan percutian dan catatan peristiwa lalu | — | CD2.30 |
+| 145 | 187 | 3.2.2 / 1.2.3 | SB 84 A1–2 / TB 98, butiran Class News dan urutan dalam cerita lisan | — | CD2.31 |
+| 146 | 188 | 4.3.2 / 2.3.1 | SB 84 A4 dan 85 A1–3 / TB 98–99, ejaan bebas dan penceritaan | 69 Ex3 | — |
+
+Lesson 132 menggunakan SB p.76 Activities 4–5 untuk riwayat hidup dan merujuk p.73 bagi Key Phrases seperti dalam langkah penyampaian SOW. Lesson 142 sudah mempunyai cadangan SK/SP berasaskan DSKP. Nombor trek bagi sembilan rakaman di atas disemak dalam buku. Kandungan fail dan penghantaran ke akaun guru produksi masih perlu disahkan.

@@ -1,23 +1,16 @@
-# English Year 5 — Standalone RPH — Lesson 139 (Reading 24)
+# English Year 5 Lesson 139 — Reading 24
 
-**Status:** DRAF — final material QA pending. **Topic:** Growing up. **Main LS:** Reading 3.3.1. **Complementary LS:** Writing 4.3.1. **Duration:** 60 minutes (suggested).
+**Official SOW topic:** Growing up.
+**Official SOW:** Lesson 139, printed p.180. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Reading 3.3.1 and Writing 4.3.1.
+**Materials:** English Plus 1 SB p.119 Activities 1–3, TB p.133 and CD3.36.
+**Learning objectives:** Pupils explain why a detail from the song story interests them and use capitals, full stops, list commas and a question mark in their own short text.
 
-**Materials:** English Plus 1 Student's Book p.119 Activities 1–3; Teacher's Book p.133; audio CD3.36 (file exists, content not independently checked); Workbook pp.63–64, Unit 7 Past Simple Questions and Reading A True Story, Ex1–4 / Ex1–5 (historic QA mapping).
+1. **Set induction (8 min):** Use the pictures to predict whose life the song might describe.
+2. **Activity 1 (12 min):** Use CD3.36 for SB Activity 1, then read the song text for Activity 2 and check predictions. Each pupil chooses a detail from the story and explains why it interests them.
+3. **Activity 2 (15 min):** Pupils independently rewrite a short part of the story in the third person. They include a punctuated list of details and a question for a reader.
+4. **Activity 3 (17 min):** Use SB Activity 3 to match the question halves. Pupils return to their own text and check capitals, full stops, list commas and the question mark.
+5. **Closure (8 min):** Pairs exchange the writing and share one detail they enjoyed reading.
 
-**Objective:** Pupils engage with a story song, identify details about a character and write two connected short paragraphs using correct pronouns and past tense.
-
-**Set induction (5 min):** Teacher writes “The story of your life”. Pupils discuss events they remember from their own or a fictional person's life.
-
-**Activity 1 — Read and listen (15 min):** Pupils study the illustrations, predict the topic, read the song text in Student Book p.119 and listen to CD3.36 for Activity 1. Teacher asks pupils to describe the boy in a photograph.
-
-**Activity 2 — Interpret the song (15 min):** Pairs complete Activity 2, rereading or relistening for details. They identify the two verses that describe the boy, then discuss whether the song tells a good story and give a reason.
-
-**Activity 3 — Rewrite the story (15 min):** Teacher models using he/his and past verbs. Pupils draft two short paragraphs about the boy, based on the relevant verses without copying the entire song. Pairs check pronouns, verbs and conjunctions and revise their writing. Complete Activity 3 questions as time permits.
-
-**PBD (5 min):** Teacher checks that pupils identify relevant story details and produce two ordered paragraphs with suitable pronouns, verbs and conjunctions. Pupils correct one aspect after feedback.
-
-**Closure (5 min):** Pairs imagine three additional events in the boy's life and share one idea with the class.
-
-**Differentiation:** Provide a paragraph frame and key past-tense verbs; extend confident writers with extra details. **Workbook:** Mapped Unit 7 practice may be completed briefly after the principal tasks. **QA:** Track content, exact printed pages and A4 layout pending before READY.
-
-**Workbook (existing source QA map):** p.63-64, Unit 7 Past simple questions + Reading A true story, Ex1-4 / Ex1-5. Optional brief follow-up; do not replace the SOW tasks.
+**PBD:** Check one personal response to the reading and the four punctuation features in the pupil’s independent text.
+**Differentiation:** Offer a third-person model and a punctuation checklist. Ask confident pupils to organise details across two short paragraphs.

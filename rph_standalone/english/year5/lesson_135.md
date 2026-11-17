@@ -1,20 +1,16 @@
-# Year 5 Lesson 135 — Language Arts 23
+# English Year 5 Lesson 135 — Language Arts 23
 
-Status: DRAF. Unit 7; topic: Growing up / Gulliver's Travels. SOW lesson 135. Main LS 5.3.1; complementary LS 3.2.2.
-Materials: Gulliver's Travels Chapter 3; BPK CCL Graphic Novel guide. Workbook page unverified; listed audio not playback-tested.
+**Official SOW topic:** Gulliver’s Travels.
+**Official SOW:** Lesson 135, printed p.176. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Language Arts 5.3.1 and Reading 3.2.2.
+**Materials:** Gulliver’s Travels graphic novel Chapter 3 and the BPK Graphic Novel Teaching Guide, plus teacher-prepared statement cards.
+**Learning objectives:** Pupils verify two statements against details from different parts of Chapter 3 and act out one episode so classmates can recognise it.
 
-Objectives: Pupils perform the lesson task and show evidence of both prescribed standards.
+1. **Set induction (8 min):** Use a brief stand-or-sit game with statements pupils can check from the earlier chapters.
+2. **Activity 1 (12 min):** Pairs predict whether statements about Chapter 3 are true or false. They underline a detail that they will need to check while reading.
+3. **Activity 2 (15 min):** Pupils read Chapter 3 and verify their predictions. Pairs record evidence from two separate parts of the chapter and correct one initial guess.
+4. **Activity 3 (17 min):** Each pair chooses an episode and creates a short role-play with an action or line that makes the episode recognisable. Classmates identify the corresponding statement.
+5. **Closure (8 min):** Pupils rewrite one false statement and point to the panel that supports the correction.
 
-Set induction (5 min): Play true/false stand-or-sit with Gulliver facts.
-
-Main activities (40 min): Pairs predict whether statements about Chapter 3 are true, read to verify, then role-play a selected statement while peers judge its truth. Teacher models instructions, monitors work and gives feedback.
-
-PBD (10 min): Check chapter details and imaginative enactment; rewrite false statements correctly. Pupils revise one response after feedback.
-
-Closure (5 min): Pupils state one learning point and complete a brief exit response.
-
-Differentiation: Use visuals, sentence frames and paired rehearsal for support; extend proficient pupils with fuller explanations and independent work.
-
-Verification: Official Year 5 SOW checked. Full page-by-page book, workbook and audio audit pending before READY.
-
-**Non-textbook source rule:** Use the SOW-designated literature and CCL teaching guide. Do not assign an English Plus Student Book, Workbook or CD track to this Language Arts lesson.
+**PBD:** Check two details supported by separate parts of the chapter and one intelligible, imaginative role-play tied to the text.
+**Differentiation:** Use short statement cards and mark a starting panel. Ask confident pupils to include a character’s reaction in their role-play.
