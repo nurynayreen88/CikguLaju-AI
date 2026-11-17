@@ -664,7 +664,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </section>
 
 <section id="view-today" class="app-view" aria-labelledby="view-today-heading" hidden>
-  <h2 id="view-today-heading" tabindex="-1">RPH Hari Ini</h2>
+  <h2 id="view-today-heading" tabindex="-1">RPH Pantas</h2>
   <div class="daily-rph-toolbar" aria-label="Paparan jadual RPH">
     <button type="button" id="rph-day-mode" aria-pressed="true">RPH Hari Ini</button>
     <button type="button" id="rph-week-mode" class="secondary" aria-pressed="false">RPH Minggu Ini</button>
@@ -2362,7 +2362,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
-<script src="/assets/rph-today.js?v=rph-minggu-ini-20261117"></script>
+<script src="/assets/rph-today.js?v=rph-pantas-20261117"></script>
 <script src="/assets/teacher-profile.js?v=profile-search-select-20261116"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>

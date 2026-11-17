@@ -85,8 +85,10 @@ class WeeklyRphBrowserTest(TestCase):
             page.goto("https://week.test/")
             page.evaluate("window.rphTodayLoad()")
             page.get_by_text("2 Bestari · English", exact=True).wait_for()
+            self.assertEqual(page.locator("#view-today-heading").inner_text(), "RPH Pantas")
             page.get_by_role("button", name="RPH Minggu Ini", exact=True).click()
             page.get_by_text("Cuti dalam takwim", exact=True).wait_for()
+            self.assertEqual(page.locator("#view-today-heading").inner_text(), "RPH Pantas")
             page.get_by_text("Cadangan slot ini: Lesson 001", exact=False).wait_for()
             for index, lesson in enumerate(("L1", "L2")):
                 page.locator(f"#today-{index}-unit").select_option("U1")
@@ -107,6 +109,7 @@ class WeeklyRphBrowserTest(TestCase):
                              ("2 Amanah", TUESDAY, "08:00"))
             page.get_by_role("button", name="RPH Hari Ini", exact=True).click()
             page.locator("#today-list").get_by_text("2 Bestari · English", exact=True).wait_for()
+            self.assertEqual(page.locator("#view-today-heading").inner_text(), "RPH Pantas")
             self.assertEqual(page.locator("#today-list .daily-rph-card").count(), 1)
             self.assertFalse(errors)
             browser.close()
