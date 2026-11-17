@@ -36,6 +36,16 @@ YEAR5_BOOK_SHA = "0f1b0263ccec6689e896ba375690e4d0cb900e00f52a86832e16411c759eff
 YEAR5_BOOK_SIZE = 44_060_870
 YEAR5_BOOK_PDF_PAGES = 122
 _year5_book_lock = Lock()
+# Super Minds 1 KSSR BOT_READY index, original Telegram sender IDs, and
+# SHA-256 of the original WMA files for the two reviewed Web lessons.
+YEAR1_AUDIO = {
+    18: (("CD1 Track 12", "1eaoHB3Mv1yZWj53KaVJNY_9q7M3ag3C1",
+          "54b8781eb3ea70333c3ad4ec7867a8e7454764aed871a9686bf4bd9683968e85"),
+         ("CD1 Track 13", "1XHx5n_Ajd8uhnm-0kV7TzGcOu510_WBH",
+          "3d36a6efe970d745e4ef57c2c55606b92ed108a954a17594806949a21bc8816c")),
+    19: (("CD1 Track 14", "1y6f44jqrqq2sBSRk54qvlbntWmfx7GaK",
+          "565c237f4a0bde1f2c712542a09564e1835530af9ff29867b8bae2112712e3eb"),),
+}
 # Primary Year 4 SK SOW, printed pp. 81, 145 and 203. Match the exact
 # legacy reference so a future correction cannot be silently overridden.
 YEAR4_STUDENT_BOOK_CORRECTIONS = {
@@ -310,6 +320,12 @@ def _pdf_bytes(writer):
 
 
 def _audio_rows(runtime, year, lesson, *, year2_rows=None):
+    if year == 1:
+        return [
+            {"title": f"English Tahun 1 • Lesson {lesson:03d} • {reference}",
+             "reference": reference, "id": ident, "sha256": digest}
+            for reference, ident, digest in YEAR1_AUDIO.get(lesson, ())
+        ]
     if year == 5:
         from resources.english.y5.verified_extras_20261117 import AUDIO, LESSON_AUDIO
 
@@ -497,7 +513,7 @@ def create_english_book_audio_blueprint(runtime, *, root=ROOT):
 
     @bp.get("/internal/rph/v1/english-extras/audio")
     def audio_metadata():
-        selected = selection("2345")
+        selected = selection("12345")
         if not selected:
             return jsonify({"available": False}), 404
         rows = _audio_rows(runtime, *selected, **source_options(selected[0]))
@@ -512,11 +528,11 @@ def create_english_book_audio_blueprint(runtime, *, root=ROOT):
 
     @bp.get("/internal/rph/v1/english-extras/audio.<extension>")
     def audio_download(extension):
-        selected = selection("2345", with_track=True)
+        selected = selection("12345", with_track=True)
         if not selected:
             return jsonify({"error": "Invalid track"}), 404
         year, lesson, index = selected
-        expected, mime = ("wma", "audio/x-ms-wma") if year == 2 else ("mp3", "audio/mpeg")
+        expected, mime = ("wma", "audio/x-ms-wma") if year in (1, 2) else ("mp3", "audio/mpeg")
         if extension != expected:
             return jsonify({"error": "Wrong original audio format"}), 404
         rows = _audio_rows(runtime, year, lesson, **source_options(year))
@@ -524,7 +540,7 @@ def create_english_book_audio_blueprint(runtime, *, root=ROOT):
             return jsonify({"error": "Unverified track"}), 404
         row = rows[index - 1]
         try:
-            raw = _verified_audio(row, wma=year == 2)
+            raw = _verified_audio(row, wma=year in (1, 2))
         except Exception:
             return jsonify({"error": "Original audio unavailable"}), 503
         name = re.sub(r"[^A-Za-z0-9_-]", "_", row["reference"])

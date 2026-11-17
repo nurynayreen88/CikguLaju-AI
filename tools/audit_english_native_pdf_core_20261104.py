@@ -149,9 +149,17 @@ def run(year, *, all_lessons=False):
                           abs(float(p.mediabox.height)-841.89)<2 for p in pdf.pages)
             extracted="\n".join(p.extract_text() or "" for p in pdf.pages)
             row["text_characters"]=len(extracted)
-            row["sow_main_in_pdf"]=(
-                "not fixed by SOW" in extracted if record["teacher_selected"] else
-                str(record["main_ls"]) in extracted)
+            if record["teacher_selected"] and year == 5:
+                from web.english_y5_teacher_choice_runtime import load_proposal, selected_standards
+
+                proposal = load_proposal(lesson)
+                row["sow_main_in_pdf"] = bool(proposal) and all(
+                    code in extracted for _, code in selected_standards(proposal)
+                )
+            else:
+                row["sow_main_in_pdf"]=(
+                    "not fixed by SOW" in extracted if record["teacher_selected"] else
+                    str(record["main_ls"]) in extracted)
             row["draft_label_in_pdf"]=(
                 "DRAF" in extracted if record["teacher_selected"] or
                    year==4 and lesson==30 or year==5 else None)

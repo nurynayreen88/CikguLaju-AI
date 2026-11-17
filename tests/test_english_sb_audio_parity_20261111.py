@@ -362,6 +362,16 @@ class EnglishSourceParityTests(unittest.TestCase):
                                     query_string={**q, "track": 1})
         self.assertEqual(wrong.status_code, 503)
 
+    def test_year1_exposes_only_the_original_tracks_for_reviewed_lessons(self):
+        base = "/internal/rph/v1/english-extras/"
+        query = {"year": 1, "lesson": 18}
+        response = self.client.get(base + "audio", headers=self.headers, query_string=query)
+        self.assertEqual([x["reference"] for x in response.json["tracks"]], ["CD1 Track 12", "CD1 Track 13"])
+        self.assertEqual(self.client.get(base + "audio.mp3", headers=self.headers,
+                                         query_string={**query, "track": 1}).status_code, 404)
+        self.assertEqual(self.client.get(base + "audio", headers=self.headers,
+                                         query_string={**query, "lesson": 17}).status_code, 404)
+
 
 if __name__ == "__main__":
     unittest.main()
