@@ -11,7 +11,7 @@
 
 - [DSKP Mathematics Year 3 edisi Inggeris](https://sites.google.com/moe.gov.my/ruaidlp-ppdkapit/buku-panduan-dskpp), [SOW DLP 2026](https://www.scribd.com/document/1027534630/Rpt-Math-Dlp-Year-3-Sk-2026-by-Rozayus-Academy-Kump-a-Kump-b), [Textbook Part 1 BT083006](https://anyflip.com/zqlz/bggt/basic) dan [Activity Book BA083005](https://anyflip.com/dswck/yuiv/basic).
 - 10 Lesson dan satu ulang kaji merangkumi 12 kod LS dan 750 minit mengikut RPT 2027. Lesson 03 menggunakan 1.1.2 (i) dan (ii) bagi perwakilan, manakala Lesson 05 menggunakan (iii) dan (iv) bagi perbandingan dan susunan. Padanan buku aktiviti ialah halaman 3 dan 6–7 masing-masing.
-- Rujukan Lesson 01 menggunakan TB 1–2 dan BA 1 bagi sebut dan padan. Lesson 04 menggunakan TB 7–8 dan BA 4–5 bagi nilai tempat, nilai digit dan cerakinan.
+- Rujukan Lesson 01 menggunakan TB 2–3 dan BA 1 bagi sebut dan padan, selaras dengan RPT #909. Halaman 1 ialah pengenalan unit. Halaman 2 memperkenalkan nombor dalam angka dan perkataan, diikuti Mind Challenge pada halaman 3. Lesson 04 menggunakan TB 7–8 dan BA 4–5 bagi nilai tempat, nilai digit dan cerakinan.
 
 ## Mathematics Year 3 Unit 2
 
@@ -27,3 +27,8 @@
 - Lesson 41 menambah Timor-Leste pada kunci guru berdasarkan [keanggotaan ASEAN](https://asean.org/forging-a-new-era-Timor-Leste-admitted-into-asean/). Lesson 42 menggunakan [jadual kadar Bank Negara Malaysia](https://financialmarkets.bnm.gov.my/data-download-exchange-rates) bertarikh yang disediakan guru sebagai nilai mata wang asing bersamaan RM1. Guru menyediakan nilai seunit terlebih dahulu jika jadual sumber menyebut unit yang lebih besar.
 - Lesson 62 merujuk TB 85–86 dan BA 129–130 untuk pengecaman dan label prisma. Lesson 63 merujuk TB 86–87 dan BA 131 untuk perbandingan prisma dan bukan prisma.
 - Set lengkap Mathematics diteliti untuk 73 Lesson bernombor, 9 sesi ulang kaji, 102 LS unik dan 5,760 minit. Aktiviti PBD ditulis untuk guru, dengan bahan serta peranan guru dan murid. Set ini untuk semakan akademik sebelum muat turun melalui Web dan Telegram.
+
+## Padanan dengan RPT Mathematics 2027 yang dikemas kini
+
+- Kesemua 82 sesi sepadan dengan turutan dan tempoh RPT #909. Semua 73 Lesson bernombor sepadan pada kod CS dan LS. Lesson 04, 05, 62 dan 63 menggunakan sebahagian halaman buku dalam julat RPT untuk memfokuskan aktiviti.
+- Semakan guru bagi RPH Year 3 dan pengesahan muat turun pengguna masih diperlukan.

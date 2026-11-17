@@ -3,7 +3,7 @@
 ## DLP-MAT-Y3-U01-01 · Read and match numbers to 10,000
 
 **Standards** · CS 1.1 · LS 1.1.1
-**References** · Textbook Part 1 pp. 1–2 · Activity Book pp. 1
+**References** · Textbook Part 1 pp. 2–3 · Activity Book p. 1
 **Learning objective** · Read three numbers aloud and match each numeral to the correct words.
 **Materials** · Four-digit numeral cards, matching word cards and place-value headings.
 
