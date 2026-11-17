@@ -22,7 +22,8 @@ from web.teacher_profile_store import (
     ProfileUnavailable, ProfileValidation, TIME, get_profile, get_schedule,
 )
 from web.unified_rph_web import SUBJECT_LABELS
-from web.school_days_2027 import FRI_SAT, WEEKDAY, is_school_day, normalize_state
+from web.school_day_calendar import calendar_available, calendar_notice, is_weekend, school_closure
+from web.school_days_2027 import FRI_SAT, WEEKDAY, normalize_state
 
 bp = Blueprint("rph_hari_ini_web", __name__)
 RPT_WEEKLY_CATALOG = Path(__file__).with_name("rpt_weekly_suggestions_2027.json")
@@ -64,22 +65,6 @@ SUBJECTS = {
 }
 NON_TEACHING = frozenset(("rehat", "perhimpunan", "perhimpunan rasmi",
                           "kokurikulum", "masa rehat"))
-# KPM academic calendars, appendices A–C.
-# https://www.moe.gov.my/kalendar-akademik-semasa
-TERM_BREAKS = {
-    (2026, "A"): (("01-01", "01-10"), ("03-20", "03-28"), ("05-22", "06-06"),
-                  ("08-28", "09-05"), ("12-04", "12-31")),
-    (2026, "B"): (("01-01", "01-11"), ("03-21", "03-29"), ("05-23", "06-07"),
-                  ("08-29", "09-06"), ("12-05", "12-31")),
-    (2027, "A"): (("01-01", "01-03"), ("03-05", "03-13"), ("05-21", "06-05"),
-                  ("08-27", "09-04"), ("12-03", "12-31")),
-    (2027, "B"): (("01-01", "01-03"), ("03-06", "03-14"), ("05-22", "06-06"),
-                  ("08-28", "09-05"), ("12-04", "12-31")),
-}
-FESTIVAL_CLOSURES_2026 = {
-    "A": frozenset(("02-15", "02-16", "02-17", "02-18", "02-19", "03-19", "11-08", "11-09")),
-    "B": frozenset(("02-16", "02-17", "02-18", "02-19", "02-20", "03-19", "03-20", "11-09")),
-}
 
 
 def subject_identity(value):
@@ -126,7 +111,7 @@ def weekly_rpt_suggestion(state, target, subject, year):
     if target.year != 2027 or state is None:
         return None
     group_a = state in FRI_SAT
-    if not is_school_day(state, target):
+    if school_closure(state, target):
         return None
     try:
         from web.native_telegram_integrated_english_client import integrated_enabled
@@ -162,7 +147,7 @@ def english_week_capacity(rows, state, class_name, year, suggestion):
     start, end = map(date.fromisoformat, span)
     state = normalize_state(state)
     dates = (start + timedelta(days=step) for step in range((end - start).days + 1))
-    school_days = {WEEKDAY[day.weekday()] for day in dates if is_school_day(state, day)}
+    school_days = {WEEKDAY[day.weekday()] for day in dates if not school_closure(state, day)}
     integrated = "sessions" in suggestion
     required = 60 * len(suggestion["sessions"] if integrated else suggestion["lessons"][""])
     session_days = set()
@@ -204,7 +189,9 @@ def day_payload(profile, schedule, target, *, today=None):
         raise ProfileValidation("Tarikh mesti dalam lingkungan 400 hari")
     day = WEEKDAY[target.weekday()]
     state = profile.get("state_name") or ""
-    weekend = target.weekday() in ((4, 5) if str(state).strip().title() in FRI_SAT else (5, 6))
+    school_state = normalize_state(state)
+    weekend = is_weekend(school_state, target)
+    closure = school_closure(school_state, target)
     selected = []
     for row in rows:
         if not isinstance(row, dict) or row.get("day") != day:
@@ -225,11 +212,12 @@ def day_payload(profile, schedule, target, *, today=None):
                   "Tahun kelas belum jelas; semak nama kelas di Profil Guru."
                   if year is None else
                   "Subjek belum dapat dipadankan; semak nama subjek di Profil Guru.")
-        suggestion = weekly_rpt_suggestion(state, target, code, year) if valid and not weekend else None
+        can_prepare = valid and not closure
+        suggestion = weekly_rpt_suggestion(school_state, target, code, year) if can_prepare else None
         entry = {"day":day,"start":start,"end":end,
                  "class_name":cls,"subject":subject,
                  "year":year,"subject_code":code,"component":component,
-                 "can_prepare":valid,"reason":reason,"rpt_suggestion":suggestion}
+                 "can_prepare":can_prepare,"reason":closure or reason,"rpt_suggestion":suggestion}
         if code == "ENGLISH" and suggestion:
             entry["rpt_capacity"] = english_week_capacity(rows, state, cls, year, suggestion)
         selected.append(entry)
@@ -237,33 +225,11 @@ def day_payload(profile, schedule, target, *, today=None):
     return {
         "date":target.isoformat(),"day":day,"state":state,
         "entries":selected,"count":len(selected),"weekend":weekend,
-        "holiday_verified":False,
-        "holiday_notice":(
-            "Jadual ini menunjukkan hari hujung minggu negeri; "
-            "sahkan PdP sebenar sebelum menyediakan RPH." if weekend else
-            "Semakan cuti sekolah, cuti umum dan cuti tambahan belum automatik. "
-            "Sahkan hari persekolahan sebelum menyediakan RPH."
-        ),
+        "closure":closure,
+        "holiday_verified":calendar_available(school_state, target.year),
+        "holiday_notice":calendar_notice(school_state, (target,)),
         "lesson_note":"Cadangan minggu merujuk RPT 2027. Pilih Lesson/PdP daripada katalog mengikut kemajuan kelas.",
     }
-
-
-def week_closure(state, group, target):
-    if not state:
-        return ""
-    if target.weekday() in ((4, 5) if group == "A" else (5, 6)):
-        return "Hujung minggu"
-    day = target.strftime("%m-%d")
-    if any(first <= day <= last for first, last in TERM_BREAKS.get((target.year, group), ())):
-        return "Cuti persekolahan KPM"
-    if target.year == 2027 and not is_school_day(state, target):
-        return "Cuti dalam takwim"
-    if target.year == 2026 and (
-        day in FESTIVAL_CLOSURES_2026[group]
-        or (group == "B" and state != "Sarawak" and day == "11-10")
-    ):
-        return "Cuti perayaan KPM"
-    return ""
 
 
 def week_payload(profile, schedule, target, *, today):
@@ -276,10 +242,10 @@ def week_payload(profile, schedule, target, *, today):
     group = "A" if state in FRI_SAT else "B" if state else None
     offset = (target.weekday() + 1) % 7 if group == "A" else target.weekday()
     start = target - timedelta(days=offset)
+    dates = [start + timedelta(days=step) for step in range(7)]
     days = []
-    for step in range(7):
-        selected = start + timedelta(days=step)
-        closure = week_closure(state, group, selected)
+    for selected in dates:
+        closure = school_closure(state, selected)
         day = {"date": selected.isoformat(), "day": WEEKDAY[selected.weekday()],
                "closure": closure, "entries": []}
         if not closure:
@@ -287,12 +253,9 @@ def week_payload(profile, schedule, target, *, today):
             day["entries"] = [slot for slot in slots
                               if " ".join(slot["subject"].casefold().split()) not in NON_TEACHING]
         days.append(day)
-    notice = ("Cuti dalam takwim tersedia telah dilangkau. Sahkan juga perubahan jadual dan cuti sekolah setempat."
-              if state else
-              "Isi negeri sekolah di Profil Guru untuk semakan cuti. Sahkan hari PdP yang dipaparkan.")
     return {"date": target.isoformat(), "start": days[0]["date"], "end": days[-1]["date"],
             "group": group, "days": days, "count": sum(len(day["entries"]) for day in days),
-            "holiday_notice": notice}
+            "holiday_notice": calendar_notice(state, dates)}
 
 
 def assign_week_suggestions(days):

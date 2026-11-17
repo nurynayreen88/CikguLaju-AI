@@ -70,6 +70,48 @@ class DailyTimetablePureTests(TestCase):
         self.assertIsNone(current["days"][0]["entries"][0]["rpt_suggestion"])
         self.assertEqual(snapshot, schedule)
 
+    def test_holiday_closure_controls_both_daily_and_weekly_slots(self):
+        cases = (
+            (date(2026, 8, 31), "Pahang", "Cuti umum · Hari Kebangsaan", None),
+            (date(2026, 11, 6), "Perak", "Cuti negeri · Hari Keputeraan Sultan Perak", "Pahang"),
+            (date(2027, 7, 30), "Pahang", "Cuti negeri · Hari Keputeraan Sultan Pahang", "Selangor"),
+            (date(2027, 2, 1), "W.P. Kuala Lumpur", "Cuti negeri · Hari Wilayah Persekutuan", "Pahang"),
+            (date(2027, 8, 16), "Pahang", "Cuti ganti · Maulidur Rasul", "Kedah"),
+            (date(2027, 10, 28), "Sarawak", "Cuti perayaan KPM · Deepavali", None),
+        )
+        for target, state, label, other_state in cases:
+            with self.subTest(date=target, state=state):
+                days = ("Isnin", "Selasa", "Rabu", "Khamis", "Jumaat", "Sabtu", "Ahad")
+                schedule = {"entries": [dict(EXAMPLE["entries"][0], day=days[target.weekday()])]}
+                profile = {"state_name": state}
+                daily = day_payload(profile, schedule, target, today=target)
+                week = week_payload(profile, schedule, target, today=target)
+                day = next(entry for entry in week["days"] if entry["date"] == target.isoformat())
+                self.assertEqual(daily["closure"], label)
+                self.assertTrue(daily["holiday_verified"])
+                self.assertFalse(daily["entries"][0]["can_prepare"])
+                self.assertIsNone(daily["entries"][0]["rpt_suggestion"])
+                self.assertEqual(day["closure"], label)
+                self.assertEqual(day["entries"], [])
+                self.assertEqual(week["count"], 0)
+                if other_state:
+                    profile = {"state_name": other_state}
+                    other = day_payload(profile, schedule, target, today=target)
+                    self.assertEqual(other["closure"], "")
+                    self.assertTrue(other["entries"][0]["can_prepare"])
+
+    def test_holiday_confirmation_when_state_or_calendar_is_missing(self):
+        cases = ((date(2027, 8, 31), "", "Isi negeri sekolah"),
+                 (date(2028, 1, 3), "Pahang", "belum tersedia sepenuhnya"))
+        for target, state, notice in cases:
+            with self.subTest(date=target, state=state):
+                daily = day_payload({"state_name": state}, EXAMPLE, target, today=target)
+                weekly = week_payload({"state_name": state}, EXAMPLE, target, today=target)
+                self.assertFalse(daily["holiday_verified"])
+                self.assertEqual(daily["closure"], "")
+                self.assertIn(notice, daily["holiday_notice"])
+                self.assertIn(notice, weekly["holiday_notice"])
+
     def test_week_assigns_english_pairs_in_slot_order_for_each_class(self):
         rows = [{"day": day, "start": "08:00", "end": "09:00",
                  "class_name": name, "subject": "English"}
@@ -109,7 +151,7 @@ class DailyTimetablePureTests(TestCase):
         self.assertEqual(out["day"],"Jumaat")
         self.assertEqual(out["date"],"2026-11-06")
         self.assertEqual(out["count"],3)
-        self.assertFalse(out["holiday_verified"])
+        self.assertTrue(out["holiday_verified"])
         self.assertFalse(out["weekend"])
         self.assertEqual(data,original)
 
@@ -117,7 +159,8 @@ class DailyTimetablePureTests(TestCase):
         out=day_payload({"state_name":"Kedah"},EXAMPLE,date(2026,11,6),
                         today=date(2026,11,6))
         self.assertTrue(out["weekend"])
-        self.assertIn("hujung minggu",out["holiday_notice"])
+        self.assertEqual(out["closure"], "Hujung minggu")
+        self.assertFalse(any(slot["can_prepare"] for slot in out["entries"]))
         self.assertEqual(out["count"],3) # no silent deletion
 
     def test_weekly_recommendations_use_published_subject_and_group_dates(self):

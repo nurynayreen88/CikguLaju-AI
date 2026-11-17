@@ -4,6 +4,7 @@ on:
     branches: [production/cikgulaju-web-20261105, feat/rph-hari-ini-web-20261106]
     paths:
       - 'web/rph_hari_ini_web.py'
+      - 'web/school_day_calendar.py'
       - 'web/rph_timetable_word_bundle.py'
       - 'web/unified_rph_web.py'
       - 'tests/test_web_rph_timetable_word_bundle.py'
@@ -24,6 +25,7 @@ on:
   pull_request:
     paths:
       - 'web/rph_hari_ini_web.py'
+      - 'web/school_day_calendar.py'
       - 'web/rph_timetable_word_bundle.py'
       - 'web/unified_rph_web.py'
       - 'tests/test_web_rph_timetable_word_bundle.py'

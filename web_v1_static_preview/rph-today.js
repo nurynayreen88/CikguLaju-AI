@@ -564,18 +564,20 @@
   loadedDate=data.date;
   dateInput.value=data.date;
   confirm.checked=false;
-  confirmWrap.hidden=!data.count;
+  confirmWrap.hidden=!data.count||Boolean(data.closure);
   resultsHost.hidden=true;
   resultsList.replaceChildren();
   list.replaceChildren();
   choices=[];
-  if(!data.count)list.append(create("p","notice",
+  if(data.closure)list.append(create("p","notice",data.closure+". Tiada slot RPH untuk tarikh ini."));
+  else if(!data.count)list.append(create("p","notice",
    "Tiada waktu mengajar pada "+data.day+". Pilih tarikh lain atau kemas kini Jadual Waktu di Profil Guru."));
-  for(const [i,slot] of data.entries.entries())choices.push(makeChoice(slot,i,ticket,data.progress_editable));
+  else for(const [i,slot] of data.entries.entries())
+   choices.push(makeChoice(slot,i,ticket,data.progress_editable));
   state.textContent=data.day+", "+new Intl.DateTimeFormat("ms-MY",{
    timeZone:"Asia/Kuala_Lumpur",day:"numeric",month:"long",year:"numeric"
   }).format(new Date(data.date+"T12:00:00+08:00"))+
-   " · "+data.count+" waktu dalam jadual. "+data.holiday_notice+
+   (data.closure?". ":" · "+data.count+" waktu dalam jadual. ")+data.holiday_notice+
    (data.progress_unavailable?" Rekod PdP belum dapat disemak.":"");
   updateAll();
  }
