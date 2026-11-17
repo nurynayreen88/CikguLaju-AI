@@ -201,7 +201,7 @@ def install(rt):
         valid = {(str(e.get("day") or ""), str(e.get("start") or ""),
                   str(e.get("end") or ""), str(e.get("class_name") or ""),
                   str(e.get("subject") or "")) for _i, e in current_rows}
-        results = []
+        results, material_buttons = [], {}
         seen_slots, successful_lessons, english_classes = set(), set(), set()
         try:
             for item in selected:
@@ -257,6 +257,12 @@ def install(rt):
                     successful_lessons.add(lesson_key)
                     if row.get("_english_2027_date"):
                         english_classes.add(cls_key)
+                    if integrated_plan:
+                        _, year, _, (a, b) = integrated_plan
+                        material_buttons[year, a] = [{
+                            "text": f"Bahan English Year {year} • Lesson {a:03d} + {b:03d}",
+                            "callback_data": f"en27materials:{year}:{a}",
+                        }]
                 results.append((canonical, bool(outcome.get("ok")),
                                 str(outcome.get("reason") or "")))
         finally:
@@ -274,7 +280,8 @@ def install(rt):
                 lines.append("   " + html.escape(reason)[:140])
         lines.extend(["", "Kemajuan PdP hanya disimpan selepas penghantaran RPH berjaya."])
         return rt.send(cid, "\n".join(lines),
-                       [[{"text": "⚡ Semak Hari Ini", "callback_data": "todayrph272"}],
+                       [*material_buttons.values(),
+                        [{"text": "⚡ Semak Hari Ini", "callback_data": "todayrph272"}],
                         [{"text": "🏠 Menu Utama", "callback_data": "home"}]])
 
     def callback(cid, data):
@@ -283,6 +290,10 @@ def install(rt):
             return rt._today_rpt_suggestions_v25292(cid)
         if code == "daily292_generate":
             return generate_daily(cid)
+        if code.startswith("en27materials:"):
+            from web.english_paired_materials_2027 import telegram_callback
+
+            return telegram_callback(rt, cid, code)
         if code == "timetable":
             return timetable(cid)
         # Old inline keyboards are still clickable in Telegram histories.
