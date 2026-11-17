@@ -15,6 +15,7 @@ import re
 from flask import Blueprint, Response, jsonify, request
 from web.telegram_verified_rpt_rph_bridge import _authorization
 from web.english_y4_wrong_book_audio_hold_20261105 import HOLD_LESSONS
+from resources.english.y4.paired_student_book import YEAR4_SB_PAIRED_PAGES
 from resources.english.y4.verified_class_audio import (
     LESSON_TRACKS as YEAR4_VERIFIED_LESSONS, RECORDINGS as YEAR4_RECORDINGS,
 )
@@ -217,6 +218,9 @@ def _book_selection(runtime, year, lesson, *, year2_rows=None, paired_reference=
     if row is None:
         return None
     state = _lesson_state(row, year, lesson)
+    if year == 4 and paired_reference:
+        verified_pages = YEAR4_SB_PAIRED_PAGES.get(lesson)
+        return (state, list(verified_pages)) if verified_pages else None
     if year == 3 and paired_reference and lesson in YEAR3_SB_PAIRED_PAGES:
         source = runtime._en_book_source_v25232(state, "textbook")
         if source and source[0] == YEAR3_SB_DRIVE_FILE_ID:
