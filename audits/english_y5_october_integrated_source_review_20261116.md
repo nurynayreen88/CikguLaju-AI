@@ -42,7 +42,7 @@ Enam trek daripada dua folder Class CD Get Smart Plus 4 telah diperiksa terhadap
 
 ## Status pelepasan
 
-**HOLD.** Semakan sumber, rakaman dan fail RPH Year 5 selesai pada 17 November 2026. Lejar pelepasan merekodkan 0/151 kelulusan guru. Penghantaran melalui akaun guru produksi bagi Word, PDF dan audio masih perlu disahkan. Lihat [keputusan semakan akhir](#keputusan-semakan-akhir-17-november-2026) di bawah.
+**HOLD untuk penerbitan.** Pemilik telah meluluskan kandungan 151/151 RPH Year 5. Lejar menyimpan kelulusan dan SHA-256 setiap Lesson. Penghantaran melalui akaun guru belum disahkan. Lihat [keputusan semakan akhir](#keputusan-semakan-akhir-17-november-2026) dan [kelulusan pemilik](#kelulusan-pemilik-17-november-2026).
 
 Bukti asal Lesson 29–30 tersedia dalam [rekod SOW, TB, SB, WB dan audio](english_y5_l029_l030_original_sow_tb_sb_wb_audio_sources_20261105.json).
 
@@ -393,3 +393,9 @@ Ujian setempat menghubungkan PR Web #837 pada `7facae8` dengan endpoint HTTP pen
 - Laman [CikguLaju produksi](https://cikgulaju-web.onrender.com/) memulangkan HTTP 200. Laluan Word, PDF dan RPT Year 5 memulangkan HTTP 401 tanpa sesi. Status produksi edisi Oktober kekal belum disahkan.
 
 Kelulusan pedagogi untuk versi sumber ini perlu direkodkan dalam [lejar pelepasan](../rph_standalone/english/year5/release_approvals_2027.json), diikuti pengesahan penghantaran sebenar menggunakan akaun guru pada Web dan Telegram. Fail audio sumber Year 4 dan Year 5 telah dipadankan. Laluan audio Web pada cabang ini menerima Year 2–4; penghantaran audio Year 5 pada Web berada di luar pakej RPT/RPH ini. Semak penghantaran audio Year 4 yang dirujuk dan penghantaran Year 5 pada Telegram dalam ujian produksi.
+
+### Kelulusan pemilik 17 November 2026
+
+Pemilik projek mengesahkan `Proceed` selepas menerima pakej semakan di atas. [Lejar](../rph_standalone/english/year5/release_approvals_2027.json) merekodkan kelulusan bagi 151 Lesson SP tetap. Setiap SHA-256 sepadan dengan sumber asal dalam komit `5883240` dan indeks semakan buku. Sembilan Lesson pilihan guru kekal sebagai cadangan.
+
+Bukti Web ke penjana Telegram daripada akaun ujian setempat digunakan untuk semakan teknikal. `telegram_delivery_verified` masih `false` bagi setiap Lesson sehingga penghantaran melalui akaun guru dapat disahkan. Ujian produksi untuk versi baharu memerlukan persekitaran calon yang menggunakan binaan PR #833 dan #837 serta sesi ujian guru. Kedua-dua PR kekal draf.
