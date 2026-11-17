@@ -13,6 +13,7 @@ import os
 import re
 
 from flask import Blueprint, Response, jsonify, request
+from web.english_book_view_links import english_book_view_link, year6_sow_book_pages
 from web.telegram_verified_rpt_rph_bridge import _authorization
 from web.english_y4_wrong_book_audio_hold_20261105 import HOLD_LESSONS
 from resources.english.y4.paired_student_book import YEAR4_SB_PAIRED_PAGES
@@ -211,7 +212,7 @@ def _book_selection(runtime, year, lesson, *, year2_rows=None, paired_reference=
         pages = STUDENT_BOOK_PAGES.get(lesson)
         return ({"year": "Tahun 5"}, list(pages)) if pages else None
     if year == 6:
-        pages = _year6_sow_book_pages().get(lesson)
+        pages = year6_sow_book_pages().get(lesson)
         path = _year6_book_path() if pages else None
         return ({"year": "Tahun 6", "book_path": path}, pages) if path else None
     row = _source_row(runtime, year, lesson, year2_rows=year2_rows)
@@ -275,31 +276,6 @@ def _verified_year5_book(download):
         return cache
     finally:
         path.unlink(missing_ok=True)
-
-
-@lru_cache(maxsize=1)
-def _year6_sow_book_pages():
-    path = ROOT / "rph_standalone/english/year6/sow_task_overlay_2027.json"
-    overlay = json.loads(path.read_text(encoding="utf-8"))
-    if overlay["version"] != "y6-sow-20261103":
-        return {}
-    result = {}
-    for lesson, row in overlay["lessons"].items():
-        source_pages = row["sow_pupil_book_pages"].strip().rstrip(",")
-        if not source_pages:
-            continue
-        pages = set()
-        for part in re.split(r"\s*[,&]\s*", source_pages):
-            match = re.fullmatch(r"(\d{1,3})(?:\s*[-–]\s*(\d{1,3}))?", part)
-            if not match:
-                raise ValueError("Unexpected Year 6 SOW book page reference")
-            first, last = int(match[1]), int(match[2] or match[1])
-            if not 4 <= first <= last <= 131:
-                raise ValueError("Year 6 SOW reference outside the Pupil's Book")
-            pages.update(range(first, last + 1))
-        if len(pages) <= 4:
-            result[int(lesson)] = sorted(pages)
-    return result
 
 
 @lru_cache(maxsize=1)
@@ -710,7 +686,8 @@ def install_telegram_extras(runtime):
             return items
         choices = {"media": _audio_rows(runtime, year, lesson)}
         if year != 4:
-            choices["textbook"] = _book_selection(runtime, year, lesson)
+            choices["textbook"] = (_book_selection(runtime, year, lesson)
+                                   or english_book_view_link(year, (lesson,), ()))
         for key, exists in choices.items():
             if exists and key not in items:
                 items.append(key)
@@ -727,7 +704,11 @@ def install_telegram_extras(runtime):
             if key == "textbook":
                 picked = _book_selection(runtime, year, lesson)
                 if not picked:
-                    return False
+                    book = english_book_view_link(year, (lesson,), ())
+                    if not book:
+                        return False
+                    result = runtime.send(cid, book["title"], [[{"text": book["action"], "url": book["url"]}]])
+                    return runtime._telegram_delivery_ok_v25279(result)
                 path = Path(folder) / f"{prefix}_Student_Book.pdf"
                 path.write_bytes(_pdf(runtime, *picked))
                 result = runtime.send_document(cid, str(path), f"📘 English Year {year} • Student’s Book")
