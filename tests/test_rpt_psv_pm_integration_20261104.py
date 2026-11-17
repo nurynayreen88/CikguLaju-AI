@@ -64,8 +64,17 @@ class PSVandMoralRPTTests(unittest.TestCase):
                 self.assertIn("KUMPULAN A/B",reader.pages[0].extract_text())
                 self.assertIn("KUMPULAN A",reader.pages[1].extract_text())
                 self.assertIn("KUMPULAN B",reader.pages[15].extract_text())
-                self.assertIn("096",reader.pages[14].extract_text())
-                self.assertIn("096",reader.pages[28].extract_text())
+                for last_page, dates in (
+                    (14, ("2027-10-17", "2027-10-21")),
+                    (28, ("2027-10-18", "2027-10-22")),
+                ):
+                    last = reader.pages[last_page].extract_text()
+                    self.assertIn("096", last)
+                    self.assertIn("M38", last)
+                    self.assertTrue(all(day in last for day in dates))
+                for group_pages in (reader.pages[1:15], reader.pages[15:29]):
+                    text = "\n".join(page.extract_text() for page in group_pages)
+                    self.assertNotRegex(text, r"(?m)^M(?:06|18|19|39|4[0-4])$")
         self.assertFalse(combined_pdf_ready(1))
         self.assertFalse(combined_pdf_ready(7))
 

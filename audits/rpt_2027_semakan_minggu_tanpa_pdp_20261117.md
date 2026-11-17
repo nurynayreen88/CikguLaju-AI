@@ -44,7 +44,7 @@ Nombor di lajur PdP lewat menunjukkan bilangan PdP bernombor selepas M39. Rujuk 
 | SK Pendidikan Seni Visual | 2–6 | 25 | Minimum 32 jam dan sesi satu jam. Semua lima RPT mempunyai 42 PdP pada pola satu seminggu. Semak penggabungan fasa projek yang serasi dengan sesi sejam. Kekalkan SK/SP dan hasil kerja. |
 | SK Pendidikan Muzik | 2–6 | 0 | Minimum 16 jam dan sesi 30 minit. 35 sesi setahun memberi 17 jam 30 minit pada tempoh ini. PdP terakhir M37. Semak lagu, audio dan aktiviti muzik sebelum pengesahan penuh. |
 | SK RBT | 4–6 | 9 | 32 jam, 32 sesi 60 minit. Alihkan tiga sesi setiap tahun sebelum M40 sambil memelihara urutan projek dan penggunaan alatan. |
-| SK Sejarah | 4–6 | 0 | Minimum 32 jam. 36 PdP setiap tahun berakhir M38. Sahkan minit dan julat A pada M10. Katalog bermula 15 Mac, jadual induk bermula 14 Mac. |
+| SK Sejarah | 4–6 | 0 | Minimum 32 jam. 36 PdP × 60 minit setiap tahun berakhir M38. Semua 108 PdP sepadan antara sumber Telegram, PDF Web dan cadangan RPH Hari Ini. Pada M10, Kumpulan A menggunakan 15–18 Mac kerana 14 Mac ialah cuti tambahan Aidilfitri dalam Lampiran C KPM. Kumpulan B menggunakan 15–19 Mac. |
 | SJK Bahasa Melayu | 2–6 | 83 | 160 jam Tahap I dan 128 jam Tahap II. Tahun 2 dan 3 masing-masing kurang 12 sesi 60 minit jika maksimum empat seminggu dikekalkan. Semak sumber sekolah dan slot sebenar. |
 | SJKC Bahasa Cina | 2–6 | 108 | 192 jam Tahap I dan 160 jam Tahap II. Sesi 60 minit memerlukan sekurang-kurangnya tujuh slot lagi setiap Tahun 2–3 dan 12 slot setiap Tahun 4–6 pada pola ini, sebelum minggu pendek. |
 | SJKC Matematik | 2 | 11 | 96 jam. Kekalkan urutan buku teks dan buku aktiviti. Alih slot selepas M39 dan semak semula jam tahunannya. |
