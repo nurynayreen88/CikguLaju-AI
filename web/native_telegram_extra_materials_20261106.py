@@ -56,7 +56,7 @@ def _json(path, args, *, opener=None):
 
 
 def english_workbook_metadata(year, lesson, *, opener=None):
-    if type(year) is not int or year not in range(2, 7) or type(lesson) is not int or not 1 <= lesson <= 160:
+    if type(year) is not int or year not in range(1, 7) or type(lesson) is not int or not 1 <= lesson <= 160:
         raise ValueError("Unsupported verified Workbook selection")
     data = _json("/internal/rph/v1/english-extras/workbook",
                  {"year": year, "lesson": lesson}, opener=opener)
@@ -74,7 +74,7 @@ def english_workbook_metadata(year, lesson, *, opener=None):
 
 def english_workbook_pdf(year, lesson, *, opener=None):
     # A PDF request is authorized and re-verified independently of metadata.
-    if type(year) is not int or year not in range(2, 7) or type(lesson) is not int or not 1 <= lesson <= 160:
+    if type(year) is not int or year not in range(1, 7) or type(lesson) is not int or not 1 <= lesson <= 160:
         raise ValueError("Unsupported verified Workbook selection")
     raw = _get("/internal/rph/v1/english-extras/workbook.pdf",
                {"year": year, "lesson": lesson}, accept="application/pdf",
@@ -122,26 +122,27 @@ MAX_AUDIO = 12 * 1024 * 1024
 WMA_HEADER = bytes.fromhex("3026b2758e66cf11a6d900aa0062ce6c")
 
 
-def _english_asset_selection(year, lesson):
-    if type(year) is not int or year not in (2, 3, 4) or type(lesson) is not int or not 1 <= lesson <= 160:
+def _english_asset_selection(year, lesson, years):
+    if type(year) is not int or year not in years or type(lesson) is not int or not 1 <= lesson <= 160:
         raise ValueError("Unsupported English material selection")
 
 
 def english_student_book_metadata(year, lesson, *, opener=None):
-    _english_asset_selection(year, lesson)
+    _english_asset_selection(year, lesson, range(1, 6))
     data = _json("/internal/rph/v1/english-extras/student-book",
                  {"year": year, "lesson": lesson}, opener=opener)
     if data is None:
         return None
     pages = data.get("pages")
-    minimum, maximum = {2: (58, 117), 3: (1, 135), 4: (1, 177)}[year]
+    minimum, maximum = {1: (10, 11), 2: (58, 117), 3: (1, 135), 4: (1, 177), 5: (4, 119)}[year]
     if (data.get("source") != ENGLISH_ASSET_SOURCE or data.get("available") is not True
             or data.get("year") != year or data.get("lesson") != lesson
             or data.get("type") != "textbook" or data.get("format") != "pdf"
             or data.get("status") != "VERIFIED_SOURCE"
             or not isinstance(pages, list) or not 1 <= len(pages) <= 4
             or not all(type(p) is int and minimum <= p <= maximum for p in pages)
-            or pages != list(range(pages[0], pages[-1] + 1))
+            or pages != sorted(set(pages))
+            or (year != 5 and pages != list(range(pages[0], pages[-1] + 1)))
             or not isinstance(data.get("title"), str)
             or not 10 <= len(data["title"]) <= 220):
         raise NativeRPHUnavailable("Student Book source mismatch")
@@ -149,7 +150,7 @@ def english_student_book_metadata(year, lesson, *, opener=None):
 
 
 def english_student_book_pdf(year, lesson, *, opener=None):
-    _english_asset_selection(year, lesson)
+    _english_asset_selection(year, lesson, range(1, 6))
     raw = _get("/internal/rph/v1/english-extras/student-book.pdf",
                {"year": year, "lesson": lesson}, accept="application/pdf",
                limit=MAX_PDF, opener=opener)
@@ -159,7 +160,7 @@ def english_student_book_pdf(year, lesson, *, opener=None):
 
 
 def english_audio_tracks(year, lesson, *, opener=None):
-    _english_asset_selection(year, lesson)
+    _english_asset_selection(year, lesson, range(2, 6))
     data = _json("/internal/rph/v1/english-extras/audio",
                  {"year": year, "lesson": lesson}, opener=opener)
     if data is None:
@@ -185,7 +186,7 @@ def english_audio_tracks(year, lesson, *, opener=None):
 
 
 def english_audio_mp3(year, lesson, index, *, opener=None):
-    _english_asset_selection(year, lesson)
+    _english_asset_selection(year, lesson, (3, 4, 5))
     if type(index) is not int or not 1 <= index <= 4:
         raise ValueError("Invalid verified track")
     raw = _get("/internal/rph/v1/english-extras/audio.mp3",
@@ -198,7 +199,7 @@ def english_audio_mp3(year, lesson, index, *, opener=None):
 
 
 def english_audio_wma(lesson, index, *, opener=None):
-    _english_asset_selection(2, lesson)
+    _english_asset_selection(2, lesson, (2,))
     if type(index) is not int or not 1 <= index <= 4:
         raise ValueError("Invalid verified track")
     raw = _get("/internal/rph/v1/english-extras/audio.wma",

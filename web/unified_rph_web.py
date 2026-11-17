@@ -1004,7 +1004,7 @@ def create_blueprint():
         year, sub, unit, lesson, component = _selection()
         if component is not None:
             raise ValueError("Unsupported extra resource component")
-        if sub == "ENGLISH" and year in range(2, 7):
+        if sub == "ENGLISH" and year in range(1, 7):
             found = [row for row in source_records(year, sub)
                      if row["unit"] == unit and row["token"] == lesson]
             if len(found) != 1:
@@ -1046,7 +1046,7 @@ def create_blueprint():
                                       "action": "Download"})
                 except Exception:
                     missing.append("Workbook")
-                if year in (2, 3, 4):
+                if year in range(1, 6):
                     # The additional APIs are optional until Telegram deploys
                     # them. A missing new route must not hide existing Workbook.
                     try:
@@ -1057,6 +1057,7 @@ def create_blueprint():
                                              "action": "Download"})
                     except Exception:
                         missing.append("Student Book")
+                if year in range(2, 6):
                     try:
                         tracks = english_audio_tracks(year, number)
                         for track in tracks:
@@ -1151,7 +1152,7 @@ def create_blueprint():
             return error
         try:
             year, sub, unit, token, number = _extra_selection()
-            if sub != "ENGLISH" or year not in (2, 3, 4):
+            if sub != "ENGLISH" or year not in range(1, 6):
                 raise ValueError("Wrong Student Book source")
         except (ValueError, TypeError):
             return jsonify({"error": "Pilihan Student Book tidak sah"}), 400
@@ -1171,7 +1172,7 @@ def create_blueprint():
             return error
         try:
             year, sub, unit, token, number = _extra_selection()
-            if sub != "ENGLISH" or year not in (2, 3, 4) or not 1 <= track <= 4:
+            if sub != "ENGLISH" or year not in range(2, 6) or not 1 <= track <= 4:
                 raise ValueError("Invalid track")
         except (ValueError, TypeError):
             return jsonify({"error": "Pilihan trek audio tidak sah"}), 400

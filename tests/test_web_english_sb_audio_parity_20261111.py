@@ -141,7 +141,7 @@ class WebEnglishSourceTests(unittest.TestCase):
         self.assertEqual(response.mimetype, "audio/x-ms-wma")
         self.assertTrue(response.headers["Content-Disposition"].endswith(".wma"))
 
-    def test_year_five_and_six_workbook_only_for_exact_lesson(self):
+    def test_workbook_download_resolves_exact_lesson(self):
         bridge = "web.native_telegram_extra_materials_20261106."
         for year, lesson in ((5, 29), (6, 13)):
             with self.subTest(year=year, lesson=lesson):
@@ -149,6 +149,8 @@ class WebEnglishSourceTests(unittest.TestCase):
                 params = {"year": year, "subject": "ENGLISH", "unit": row["unit"], "lesson": row["token"]}
                 with self.account(), patch(bridge + "english_workbook_metadata",
                         return_value="Buku Aktiviti muka surat disahkan") as metadata, patch(
+                        bridge + "english_student_book_metadata", return_value=None), patch(
+                        bridge + "english_audio_tracks", return_value=[]), patch(
                         bridge + "english_workbook_pdf", return_value=b"%PDF-1.7\n" + b"A" * 600) as pdf:
                     reply = self.client.get("/api/web/rph/extra-materials", query_string=params)
                     self.assertEqual(reply.status_code, 200)
@@ -158,6 +160,25 @@ class WebEnglishSourceTests(unittest.TestCase):
                 pdf.assert_called_once_with(year, lesson)
                 self.assertEqual(download.status_code, 200)
                 self.assertIn(f"Y{year}_Lesson_{lesson:03d}", download.headers["Content-Disposition"])
+
+    def test_year1_books_and_year5_audio_keep_the_original_lesson(self):
+        bridge = "web.native_telegram_extra_materials_20261106."
+        for year, number, expected in ((1, 18, ["textbook", "workbook"]),
+                                       (5, 1, ["textbook", "workbook", "audio"])):
+            with self.subTest(year=year):
+                row = next(r for r in source_records(year, "ENGLISH") if r["lesson"] == number)
+                query = dict(year=year, subject="ENGLISH", unit=row["unit"], lesson=row["token"])
+                with (self.account(), patch(bridge + "english_workbook_metadata", return_value="Workbook"),
+                      patch(bridge + "english_student_book_metadata", return_value="Student Book") as book,
+                      patch(bridge + "english_audio_tracks",
+                            return_value=[{"index": 1, "title": "CD1 Track 2"}]) as audio):
+                    result = self.client.get("/api/web/rph/extra-materials", query_string=query)
+                self.assertEqual([r["type"] for r in result.json["items"]], expected)
+                book.assert_called_once_with(year, number)
+                if year == 1:
+                    audio.assert_not_called()
+                else:
+                    audio.assert_called_once_with(year, number)
 
     def test_browser_does_not_expose_unverified_or_unrelated_audio(self):
         html = (ROOT / "web_v1_static_preview" / "index.html").read_text("utf8")
