@@ -4,15 +4,17 @@
   "status": "DRAF SEMAKAN GURU",
   "sumber_web": "57aa5be4c9c0cc8511a545ee88dfb4423df50cb9",
   "sumber_telegram": "538aa25fe4003eb3460a3073b063b8baa41dbbe9",
+  "sumber_telegram_semakan": "ed4946ed428ffd47fe7467de2164df442b0ff91c",
   "semakan_sumber": {
     "Tahun 2": {
       "pdp": 112,
       "lewat_web": 13,
       "lewat_telegram": 12,
       "pdp_berbeza_minggu": 13,
-      "minit_tercetak": 6660,
+      "minit_tercetak_produksi": 6660,
       "minit_tasmik_dinyatakan_berasingan": 0,
-      "pdp_tanpa_minit": [],
+      "pdp_tanpa_minit_dalam_produksi": [],
+      "minit_dipulihkan": {},
       "pdp_rph_hold": [
         35
       ]
@@ -22,9 +24,10 @@
       "lewat_web": 16,
       "lewat_telegram": 16,
       "pdp_berbeza_minggu": 38,
-      "minit_tercetak": 8850,
+      "minit_tercetak_produksi": 8850,
       "minit_tasmik_dinyatakan_berasingan": 2220,
-      "pdp_tanpa_minit": [],
+      "pdp_tanpa_minit_dalam_produksi": [],
+      "minit_dipulihkan": {},
       "pdp_rph_hold": []
     },
     "Tahun 4": {
@@ -32,9 +35,10 @@
       "lewat_web": 16,
       "lewat_telegram": 16,
       "pdp_berbeza_minggu": 40,
-      "minit_tercetak": 9090,
+      "minit_tercetak_produksi": 9090,
       "minit_tasmik_dinyatakan_berasingan": 2280,
-      "pdp_tanpa_minit": [],
+      "pdp_tanpa_minit_dalam_produksi": [],
+      "minit_dipulihkan": {},
       "pdp_rph_hold": []
     },
     "Tahun 5": {
@@ -42,9 +46,10 @@
       "lewat_web": 16,
       "lewat_telegram": 16,
       "pdp_berbeza_minggu": 19,
-      "minit_tercetak": 8610,
+      "minit_tercetak_produksi": 8610,
       "minit_tasmik_dinyatakan_berasingan": 2160,
-      "pdp_tanpa_minit": [],
+      "pdp_tanpa_minit_dalam_produksi": [],
+      "minit_dipulihkan": {},
       "pdp_rph_hold": []
     },
     "Tahun 6": {
@@ -52,12 +57,16 @@
       "lewat_web": 16,
       "lewat_telegram": 16,
       "pdp_berbeza_minggu": 19,
-      "minit_tercetak": 8520,
+      "minit_tercetak_produksi": 8520,
       "minit_tasmik_dinyatakan_berasingan": 2160,
-      "pdp_tanpa_minit": [
+      "pdp_tanpa_minit_dalam_produksi": [
         60,
         87
       ],
+      "minit_dipulihkan": {
+        "60": 60,
+        "87": 60
+      },
       "pdp_rph_hold": [
         6,
         14,
@@ -68,8 +77,52 @@
     }
   },
   "cadangan": {
+    "Tahun 2": {
+      "rpt_telegram_produksi_sha256": "86a8e6fb599eb0f65f3a0a888cb29d636223c75896718d058886076a95f6c05d",
+      "rpt_telegram_semakan_sha256": "71820baf1a4e726070270d10831c84c9c2f2200683cfb1486cc07de0ff65cb26",
+      "minit_pengajaran": 6660,
+      "minit_tasmik": 1920,
+      "minggu": [
+        {"minggu": 1, "A": ["2027-01-04", "2027-01-07"], "B": ["2027-01-04", "2027-01-08"], "pdp": [1, 2], "pengajaran_minit": 150, "tasmik_minit": 60, "tasmik_rujukan_khatam": [1], "tasmik_semakan_bacaan": false},
+        {"minggu": 2, "A": ["2027-01-10", "2027-01-14"], "B": ["2027-01-11", "2027-01-15"], "pdp": [3, 4, 5], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [4], "tasmik_semakan_bacaan": false},
+        {"minggu": 3, "A": ["2027-01-17", "2027-01-21"], "B": ["2027-01-18", "2027-01-22"], "pdp": [6, 7, 8], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [7], "tasmik_semakan_bacaan": false},
+        {"minggu": 4, "A": ["2027-01-24", "2027-01-28"], "B": ["2027-01-25", "2027-01-29"], "pdp": [9, 10, 11], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [10], "tasmik_semakan_bacaan": false},
+        {"minggu": 5, "A": ["2027-01-31", "2027-02-04"], "B": ["2027-02-01", "2027-02-05"], "pdp": [12, 13, 14], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [13], "tasmik_semakan_bacaan": false},
+        {"minggu": 7, "A": ["2027-02-14", "2027-02-18"], "B": ["2027-02-15", "2027-02-19"], "pdp": [15, 16, 17, 18], "pengajaran_minit": 210, "tasmik_minit": 60, "tasmik_rujukan_khatam": [16], "tasmik_semakan_bacaan": false},
+        {"minggu": 8, "A": ["2027-02-21", "2027-02-25"], "B": ["2027-02-22", "2027-02-26"], "pdp": [19, 20, 21, 22], "pengajaran_minit": 240, "tasmik_minit": 60, "tasmik_rujukan_khatam": [19], "tasmik_semakan_bacaan": false},
+        {"minggu": 9, "A": ["2027-02-28", "2027-03-04"], "B": ["2027-03-01", "2027-03-05"], "pdp": [23, 24, 25, 26], "pengajaran_minit": 210, "tasmik_minit": 0, "tasmik_rujukan_khatam": [], "tasmik_semakan_bacaan": false},
+        {"minggu": 10, "A": ["2027-03-15", "2027-03-18"], "B": ["2027-03-15", "2027-03-19"], "pdp": [27, 28, 29], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [29], "tasmik_semakan_bacaan": false},
+        {"minggu": 11, "A": ["2027-03-21", "2027-03-25"], "B": ["2027-03-22", "2027-03-26"], "pdp": [30, 31, 32], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [32], "tasmik_semakan_bacaan": false},
+        {"minggu": 12, "A": ["2027-03-28", "2027-04-01"], "B": ["2027-03-29", "2027-04-02"], "pdp": [33, 34, 35], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [35], "tasmik_semakan_bacaan": false},
+        {"minggu": 13, "A": ["2027-04-04", "2027-04-08"], "B": ["2027-04-05", "2027-04-09"], "pdp": [36, 37, 38, 39], "pengajaran_minit": 240, "tasmik_minit": 60, "tasmik_rujukan_khatam": [38], "tasmik_semakan_bacaan": false},
+        {"minggu": 14, "A": ["2027-04-11", "2027-04-15"], "B": ["2027-04-12", "2027-04-16"], "pdp": [40, 41, 42, 43], "pengajaran_minit": 210, "tasmik_minit": 60, "tasmik_rujukan_khatam": [41], "tasmik_semakan_bacaan": false},
+        {"minggu": 15, "A": ["2027-04-18", "2027-04-22"], "B": ["2027-04-19", "2027-04-23"], "pdp": [44, 45, 46, 47], "pengajaran_minit": 270, "tasmik_minit": 0, "tasmik_rujukan_khatam": [], "tasmik_semakan_bacaan": false},
+        {"minggu": 16, "A": ["2027-04-25", "2027-04-29"], "B": ["2027-04-26", "2027-04-30"], "pdp": [48, 49, 50], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [50], "tasmik_semakan_bacaan": false},
+        {"minggu": 17, "A": ["2027-05-02", "2027-05-06"], "B": ["2027-05-03", "2027-05-07"], "pdp": [51, 52, 53], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [53], "tasmik_semakan_bacaan": false},
+        {"minggu": 20, "A": ["2027-06-06", "2027-06-10"], "B": ["2027-06-07", "2027-06-11"], "pdp": [54, 55, 56], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [56], "tasmik_semakan_bacaan": false},
+        {"minggu": 21, "A": ["2027-06-13", "2027-06-17"], "B": ["2027-06-14", "2027-06-18"], "pdp": [57, 58, 59], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [59], "tasmik_semakan_bacaan": false},
+        {"minggu": 22, "A": ["2027-06-20", "2027-06-24"], "B": ["2027-06-21", "2027-06-25"], "pdp": [60, 61, 62], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [62], "tasmik_semakan_bacaan": false},
+        {"minggu": 23, "A": ["2027-06-27", "2027-07-01"], "B": ["2027-06-28", "2027-07-02"], "pdp": [63, 64, 65], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [65], "tasmik_semakan_bacaan": false},
+        {"minggu": 24, "A": ["2027-07-04", "2027-07-08"], "B": ["2027-07-05", "2027-07-09"], "pdp": [66, 67, 68], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [68], "tasmik_semakan_bacaan": false},
+        {"minggu": 25, "A": ["2027-07-11", "2027-07-15"], "B": ["2027-07-12", "2027-07-16"], "pdp": [69, 70, 71], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [71], "tasmik_semakan_bacaan": false},
+        {"minggu": 26, "A": ["2027-07-18", "2027-07-22"], "B": ["2027-07-19", "2027-07-23"], "pdp": [72, 73, 74], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [74], "tasmik_semakan_bacaan": false},
+        {"minggu": 27, "A": ["2027-07-25", "2027-07-29"], "B": ["2027-07-26", "2027-07-30"], "pdp": [75, 76, 77], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [77], "tasmik_semakan_bacaan": false},
+        {"minggu": 28, "A": ["2027-08-01", "2027-08-05"], "B": ["2027-08-02", "2027-08-06"], "pdp": [78, 79, 80, 81], "pengajaran_minit": 240, "tasmik_minit": 0, "tasmik_rujukan_khatam": [], "tasmik_semakan_bacaan": false},
+        {"minggu": 29, "A": ["2027-08-08", "2027-08-12"], "B": ["2027-08-09", "2027-08-13"], "pdp": [82, 83, 84], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [83], "tasmik_semakan_bacaan": false},
+        {"minggu": 30, "A": ["2027-08-15", "2027-08-19"], "B": ["2027-08-16", "2027-08-20"], "pdp": [85, 86, 87], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [86], "tasmik_semakan_bacaan": false},
+        {"minggu": 31, "A": ["2027-08-22", "2027-08-26"], "B": ["2027-08-23", "2027-08-27"], "pdp": [88, 89, 90], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [89], "tasmik_semakan_bacaan": false},
+        {"minggu": 32, "A": ["2027-09-05", "2027-09-09"], "B": ["2027-09-06", "2027-09-10"], "pdp": [91, 92, 93], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [92], "tasmik_semakan_bacaan": false},
+        {"minggu": 33, "A": ["2027-09-12", "2027-09-16"], "B": ["2027-09-13", "2027-09-17"], "pdp": [94, 95, 96], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [95], "tasmik_semakan_bacaan": false},
+        {"minggu": 34, "A": ["2027-09-19", "2027-09-23"], "B": ["2027-09-20", "2027-09-24"], "pdp": [97, 98, 99], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [98], "tasmik_semakan_bacaan": false},
+        {"minggu": 35, "A": ["2027-09-26", "2027-09-30"], "B": ["2027-09-27", "2027-10-01"], "pdp": [100, 101, 102], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [101], "tasmik_semakan_bacaan": false},
+        {"minggu": 36, "A": ["2027-10-03", "2027-10-07"], "B": ["2027-10-04", "2027-10-08"], "pdp": [103, 104, 105], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [104], "tasmik_semakan_bacaan": false},
+        {"minggu": 37, "A": ["2027-10-10", "2027-10-14"], "B": ["2027-10-11", "2027-10-15"], "pdp": [106, 107, 108], "pengajaran_minit": 180, "tasmik_minit": 60, "tasmik_rujukan_khatam": [107], "tasmik_semakan_bacaan": false},
+        {"minggu": 38, "A": ["2027-10-17", "2027-10-21"], "B": ["2027-10-18", "2027-10-22"], "pdp": [109, 110, 111, 112], "pengajaran_minit": 210, "tasmik_minit": 60, "tasmik_rujukan_khatam": [], "tasmik_semakan_bacaan": true}
+      ]
+    },
     "Tahun 3": {
-      "rpt_telegram_sha256": "79d3747081649278798155ff437fa5e5cee550160ddd760197c2c763e0229629",
+      "rpt_telegram_produksi_sha256": "79d3747081649278798155ff437fa5e5cee550160ddd760197c2c763e0229629",
+      "rpt_telegram_semakan_sha256": "795a5f65d348bbf8bf33bfe07da6d166a0eeed798e174af8c6d020f810946790",
       "minit_pengajaran": 6630,
       "minit_tasmik": 2220,
       "minggu": [
@@ -111,7 +164,8 @@
       ]
     },
     "Tahun 4": {
-      "rpt_telegram_sha256": "1e5208202081040e6220d2775b33e588090fd9677d5004e5947df8d4f6ec3e46",
+      "rpt_telegram_produksi_sha256": "1e5208202081040e6220d2775b33e588090fd9677d5004e5947df8d4f6ec3e46",
+      "rpt_telegram_semakan_sha256": "b3ba111d2ba8d0396532ac9353b6071e8947a0c4ef4a16001168aa6014b3d4be",
       "minit_pengajaran": 6810,
       "minit_tasmik": 2280,
       "minggu": [
@@ -153,7 +207,8 @@
       ]
     },
     "Tahun 5": {
-      "rpt_telegram_sha256": "0046f5891344c7e130d66b2121b3cd8c28b45a5f2be5398e0780d8c2331bd9e1",
+      "rpt_telegram_produksi_sha256": "0046f5891344c7e130d66b2121b3cd8c28b45a5f2be5398e0780d8c2331bd9e1",
+      "rpt_telegram_semakan_sha256": "699209f8f4f6f47237726bea6677b1516382754e623433bc01947c4fe1b3c648",
       "minit_pengajaran": 6450,
       "minit_tasmik": 2160,
       "minggu": [
@@ -172,6 +227,49 @@
         {"minggu": 14, "A": ["2027-04-11", "2027-04-15"], "B": ["2027-04-12", "2027-04-16"], "pdp": [49, 50, 51, 52], "pengajaran_minit": 180, "tasmik_minit": 60},
         {"minggu": 15, "A": ["2027-04-18", "2027-04-22"], "B": ["2027-04-19", "2027-04-23"], "pdp": [53, 54, 55, 56], "pengajaran_minit": 180, "tasmik_minit": 60},
         {"minggu": 16, "A": ["2027-04-25", "2027-04-29"], "B": ["2027-04-26", "2027-04-30"], "pdp": [57, 58, 59, 60], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 17, "A": ["2027-05-02", "2027-05-06"], "B": ["2027-05-03", "2027-05-07"], "pdp": [61, 62, 63, 64], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 20, "A": ["2027-06-06", "2027-06-10"], "B": ["2027-06-07", "2027-06-11"], "pdp": [65, 66, 67, 68], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 21, "A": ["2027-06-13", "2027-06-17"], "B": ["2027-06-14", "2027-06-18"], "pdp": [69, 70, 71, 72], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 22, "A": ["2027-06-20", "2027-06-24"], "B": ["2027-06-21", "2027-06-25"], "pdp": [73, 74, 75, 76], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 23, "A": ["2027-06-27", "2027-07-01"], "B": ["2027-06-28", "2027-07-02"], "pdp": [77, 78, 79, 80], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 24, "A": ["2027-07-04", "2027-07-08"], "B": ["2027-07-05", "2027-07-09"], "pdp": [81, 82, 83, 84], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 25, "A": ["2027-07-11", "2027-07-15"], "B": ["2027-07-12", "2027-07-16"], "pdp": [85, 86, 87, 88], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 26, "A": ["2027-07-18", "2027-07-22"], "B": ["2027-07-19", "2027-07-23"], "pdp": [89, 90, 91, 92], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 27, "A": ["2027-07-25", "2027-07-29"], "B": ["2027-07-26", "2027-07-30"], "pdp": [93, 94, 95, 96], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 28, "A": ["2027-08-01", "2027-08-05"], "B": ["2027-08-02", "2027-08-06"], "pdp": [97, 98, 99, 100], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 29, "A": ["2027-08-08", "2027-08-12"], "B": ["2027-08-09", "2027-08-13"], "pdp": [101, 102, 103, 104], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 30, "A": ["2027-08-15", "2027-08-19"], "B": ["2027-08-16", "2027-08-20"], "pdp": [105, 106, 107, 108], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 31, "A": ["2027-08-22", "2027-08-26"], "B": ["2027-08-23", "2027-08-27"], "pdp": [109, 110, 111, 112], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 32, "A": ["2027-09-05", "2027-09-09"], "B": ["2027-09-06", "2027-09-10"], "pdp": [113, 114, 115, 116], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 33, "A": ["2027-09-12", "2027-09-16"], "B": ["2027-09-13", "2027-09-17"], "pdp": [117, 118, 119, 120], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 34, "A": ["2027-09-19", "2027-09-23"], "B": ["2027-09-20", "2027-09-24"], "pdp": [121, 122, 123, 124], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 35, "A": ["2027-09-26", "2027-09-30"], "B": ["2027-09-27", "2027-10-01"], "pdp": [125, 126, 127, 128], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 36, "A": ["2027-10-03", "2027-10-07"], "B": ["2027-10-04", "2027-10-08"], "pdp": [129, 130, 131, 132, 133], "pengajaran_minit": 240, "tasmik_minit": 120},
+        {"minggu": 37, "A": ["2027-10-10", "2027-10-14"], "B": ["2027-10-11", "2027-10-15"], "pdp": [134, 135, 136, 137, 138], "pengajaran_minit": 240, "tasmik_minit": 60},
+        {"minggu": 38, "A": ["2027-10-17", "2027-10-21"], "B": ["2027-10-18", "2027-10-22"], "pdp": [139, 140, 141, 142, 143], "pengajaran_minit": 210, "tasmik_minit": 60}
+      ]
+    },
+    "Tahun 6": {
+      "rpt_telegram_produksi_sha256": "b39a07b2dd7ef6062912f12fd43e63f87a98b13bde3885c925e88a37dac70e5b",
+      "rpt_telegram_semakan_sha256": "482f278f027921d3e6825a06ea593650b93f2bbe9a82f238c421364d19438418",
+      "minit_pengajaran": 6480,
+      "minit_tasmik": 2160,
+      "minggu": [
+        {"minggu": 1, "A": ["2027-01-04", "2027-01-07"], "B": ["2027-01-04", "2027-01-08"], "pdp": [1, 2, 3, 4], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 2, "A": ["2027-01-10", "2027-01-14"], "B": ["2027-01-11", "2027-01-15"], "pdp": [5, 6, 7, 8], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 3, "A": ["2027-01-17", "2027-01-21"], "B": ["2027-01-18", "2027-01-22"], "pdp": [9, 10, 11, 12], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 4, "A": ["2027-01-24", "2027-01-28"], "B": ["2027-01-25", "2027-01-29"], "pdp": [13, 14, 15, 16], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 5, "A": ["2027-01-31", "2027-02-04"], "B": ["2027-02-01", "2027-02-05"], "pdp": [17, 18, 19, 20], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 7, "A": ["2027-02-14", "2027-02-18"], "B": ["2027-02-15", "2027-02-19"], "pdp": [21, 22, 23, 24], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 8, "A": ["2027-02-21", "2027-02-25"], "B": ["2027-02-22", "2027-02-26"], "pdp": [25, 26, 27, 28], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 9, "A": ["2027-02-28", "2027-03-04"], "B": ["2027-03-01", "2027-03-05"], "pdp": [29, 30, 31, 32], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 10, "A": ["2027-03-15", "2027-03-18"], "B": ["2027-03-15", "2027-03-19"], "pdp": [33, 34, 35, 36], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 11, "A": ["2027-03-21", "2027-03-25"], "B": ["2027-03-22", "2027-03-26"], "pdp": [37, 38, 39, 40], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 12, "A": ["2027-03-28", "2027-04-01"], "B": ["2027-03-29", "2027-04-02"], "pdp": [41, 42, 43, 44], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 13, "A": ["2027-04-04", "2027-04-08"], "B": ["2027-04-05", "2027-04-09"], "pdp": [45, 46, 47, 48], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 14, "A": ["2027-04-11", "2027-04-15"], "B": ["2027-04-12", "2027-04-16"], "pdp": [49, 50, 51, 52], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 15, "A": ["2027-04-18", "2027-04-22"], "B": ["2027-04-19", "2027-04-23"], "pdp": [53, 54, 55, 56], "pengajaran_minit": 180, "tasmik_minit": 60},
+        {"minggu": 16, "A": ["2027-04-25", "2027-04-29"], "B": ["2027-04-26", "2027-04-30"], "pdp": [57, 58, 59, 60], "pengajaran_minit": 210, "tasmik_minit": 60},
         {"minggu": 17, "A": ["2027-05-02", "2027-05-06"], "B": ["2027-05-03", "2027-05-07"], "pdp": [61, 62, 63, 64], "pengajaran_minit": 180, "tasmik_minit": 60},
         {"minggu": 20, "A": ["2027-06-06", "2027-06-10"], "B": ["2027-06-07", "2027-06-11"], "pdp": [65, 66, 67, 68], "pengajaran_minit": 180, "tasmik_minit": 60},
         {"minggu": 21, "A": ["2027-06-13", "2027-06-17"], "B": ["2027-06-14", "2027-06-18"], "pdp": [69, 70, 71, 72], "pengajaran_minit": 180, "tasmik_minit": 60},
