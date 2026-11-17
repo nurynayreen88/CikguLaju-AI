@@ -3,7 +3,7 @@
   "year": 2027,
   "status": "DRAF_USER_VISIBLE_NOT_ACADEMIC_FINAL",
   "count": 56,
-  "pages": 1528,
+  "pages": 1503,
   "files": {
     "bahasa_arab:2": {
       "path": "bahasa_arab/tahun_2.pdf",
@@ -272,45 +272,45 @@
     },
     "pendidikan_moral:2": {
       "path": "pendidikan_moral/tahun_2.pdf",
-      "sha256": "f9dc518e0907d4f4c6442db5dcc13373cb3860cc8d727b6ec055dbf726d7d2b1",
-      "bytes": 594994,
-      "pages": 40,
+      "sha256": "77f60c620a84775eaf946e199da8870c6e0923274ea2b5680aa1fc06a93e272a",
+      "bytes": 247256,
+      "pages": 35,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
       "full_school_closures_rescheduled": true
     },
     "pendidikan_moral:3": {
       "path": "pendidikan_moral/tahun_3.pdf",
-      "sha256": "3bf2c780470f8055b34e27affa8619cc57a7d7351b4114dabdce53f2c280594d",
-      "bytes": 596728,
-      "pages": 40,
+      "sha256": "546a4bb5b25a5c84f5db5006697bd8af22e8765dc8cf1e0561cf5481f4506cb4",
+      "bytes": 250041,
+      "pages": 35,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
       "full_school_closures_rescheduled": true
     },
     "pendidikan_moral:4": {
       "path": "pendidikan_moral/tahun_4.pdf",
-      "sha256": "456759411e8d8f81618faf2c4a4327e7a4b2d96e87a6920c5acf36bede47fa22",
-      "bytes": 595708,
-      "pages": 39,
+      "sha256": "485c98504de7a24c8f82194713db1c8c5686bf22b2a0e7f9e905655d7459ca03",
+      "bytes": 252225,
+      "pages": 34,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
       "full_school_closures_rescheduled": true
     },
     "pendidikan_moral:5": {
       "path": "pendidikan_moral/tahun_5.pdf",
-      "sha256": "ac8436dc7e4894f59fb388e593b7d7fda084aad5a4b696850bf6a3c2399f5143",
-      "bytes": 597403,
-      "pages": 39,
+      "sha256": "b06700f5a39576638fbc490a8a351efbcf2cc62022f09e1299ce751a4d04c1a6",
+      "bytes": 252333,
+      "pages": 34,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
       "full_school_closures_rescheduled": true
     },
     "pendidikan_moral:6": {
       "path": "pendidikan_moral/tahun_6.pdf",
-      "sha256": "480053b2f0df83177ba47b838721dbdb3228cc9d670cd1ca7eb18aab8eb32070",
-      "bytes": 595668,
-      "pages": 39,
+      "sha256": "8ef07730b1d50e8f36e61497b3b87ddb6a833a7bbf04f1d540f05f460ea4294d",
+      "bytes": 251482,
+      "pages": 34,
       "status": "DRAF",
       "source_stage": "RPT2027_PR441_20261108_CLEAN_TEACHER_TEXT",
       "full_school_closures_rescheduled": true
