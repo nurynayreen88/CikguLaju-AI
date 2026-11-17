@@ -23,7 +23,7 @@
 ## Closure (5 minutes)
 **Teacher:** Unjumble a mixed-up sentence and punctuation as a class. **Pupils:** Summarise one thing learned.
 
-**QA:** Year 3 SOW and Teacher's Book p.21 confirm SB Activity 3 and CD 1 Track 7. Workbook p.3 Activity 2 matches the contraction practice. Teacher account delivery verification remains pending.
+**QA:** Year 3 SOW and Teacher's Book p.21 confirm SB Activity 3 and CD 1 Track 7. Workbook p.3 Activity 2 matches the contraction practice. Teacher account delivery verification remains pending. NOT READY FOR RELEASE.
 
 ## Lesson-specific resource mapping (staging)
 - **Student's Book:** printed p.7, Activity 3 (referenced by SOW). Original PDF: https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view

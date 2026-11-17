@@ -23,7 +23,7 @@
 ## Closure (5 minutes)
 **Teacher:** Play stand-up true/false using have/has got. **Pupils:** Summarise one thing learned.
 
-**QA:** Teacher's Book pp.20–21 confirms numbers 10–100, shell vocabulary, CD 1 Tracks 5–6 and the Workbook p.3 matching task. Year 3 SOW Lesson 3 confirms the story and picture-clue sequence. Teacher account delivery verification remains pending.
+**QA:** Teacher's Book pp.20–21 confirms numbers 10–100, shell vocabulary, CD 1 Tracks 5–6 and the Workbook p.3 matching task. Year 3 SOW Lesson 3 confirms the story and picture-clue sequence. Teacher account delivery verification remains pending. NOT READY FOR RELEASE.
 
 ## Resource access — pending bot integration
 - **Audio CD1 Track 5 (original WMA):** https://drive.google.com/file/d/1qFvwFau16xp4A5ESKh864J6a8kAcj4_C/view

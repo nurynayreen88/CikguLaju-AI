@@ -23,7 +23,7 @@
 ## Closure (5 minutes)
 **Teacher:** Share an interesting fact about a friend. **Pupils:** State one thing learned.
 
-**QA:** Year 3 SOW and Teacher's Book p.21 confirm SB Activity 4 and CD 1 Track 8. Workbook p.3 Activity 3 matches the questions and short answers. Teacher account delivery verification remains pending.
+**QA:** Year 3 SOW and Teacher's Book p.21 confirm SB Activity 4 and CD 1 Track 8. Workbook p.3 Activity 3 matches the questions and short answers. Teacher account delivery verification remains pending. NOT READY FOR RELEASE.
 
 ## Original book and audio access (bot integration pending)
 - Student's Book PDF: https://drive.google.com/file/d/1wjLG0BJBmnrIp2hsTNA5NIxJh68Dad_Q/view
