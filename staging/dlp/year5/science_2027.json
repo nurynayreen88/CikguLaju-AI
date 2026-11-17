@@ -1,0 +1,712 @@
+{
+  "rpt_sha256": "13cec75acf62ea38726ade72718a13bb78bfd6fc1bc49708efdce9712bdf12ae",
+  "schedule_corrections": {
+    "L04": {
+      "title": "Relate elapsed time to flight distance",
+      "objective": "Pair flight positions with elapsed times and explain the change in distance over successive intervals."
+    },
+    "R01": {
+      "reference": "TB pp. 15-18"
+    },
+    "L14": {
+      "objective": "Explain how two systems work together and why taking care of one supports the functioning of the other."
+    },
+    "L34": {
+      "title": "Test how the number of bulbs affects brightness",
+      "objective": "Change the number of bulbs in series and parallel circuits, holding the cell supply constant. Record the effect on brightness.",
+      "reference": "TB pp. 126, 128"
+    },
+    "L35": {
+      "title": "Test how the number of dry cells affects brightness",
+      "objective": "Change the number of dry cells and observe bulb brightness in each circuit type. Identify the factors kept constant.",
+      "reference": "TB pp. 125-127"
+    },
+    "L40": {
+      "title": "Measure temperature from ice to boiling",
+      "objective": "Record the temperature of water over time and use the data to identify its freezing and boiling points."
+    },
+    "L54": {
+      "objective": "Model reflected sunlight and show the direction and approximate duration of the Moon's rotation and revolution."
+    },
+    "L60": {
+      "title": "Propose and explain a sustainable tool",
+      "objective": "Label the simple machines in a tool for a daily problem and justify a feature that makes it last longer or easier to maintain."
+    }
+  },
+  "review_standards": {
+    "R01": [
+      "1.1.3",
+      "1.1.8",
+      "1.1.10"
+    ],
+    "R02": [
+      "2.1.2",
+      "2.2.2",
+      "2.3.1"
+    ],
+    "R03": [
+      "3.1.2",
+      "3.3.6"
+    ],
+    "R04": [
+      "4.1.2",
+      "4.2.3"
+    ],
+    "R05": [
+      "5.2.6",
+      "5.3.3"
+    ],
+    "R06": [
+      "6.1.2",
+      "6.1.6"
+    ],
+    "R07": [
+      "7.1.3",
+      "7.1.4"
+    ],
+    "R08": [
+      "8.2.1",
+      "8.2.3"
+    ],
+    "R09": [
+      "9.1.3",
+      "9.2.2"
+    ],
+    "R10": [
+      "10.1.1",
+      "10.1.2"
+    ]
+  },
+  "activities": {
+    "L01": {
+      "materials": "Two folded paper planes, observation grid",
+      "induction": "Show one narrow-wing and one broad-wing plane. Ask pupils what they can see before either plane flies.",
+      "teach": "Model comparing the same feature on both planes. Ask groups to explain their sorting rule.",
+      "practice": "Describe two visible differences and regroup four planes by wing width or nose shape.",
+      "assessment": "Describe P and Q using the same two features. Give a rule for sorting and classify both.",
+      "evidence": "P has broader wings and a blunt nose. Q has narrow wings and a pointed nose. Either stated feature works as a consistent sorting rule.",
+      "closure": "Ask one pupil to distinguish an observation from a guess about flight."
+    },
+    "L02": {
+      "materials": "Paper planes, tape measure, floor markers, results grid",
+      "induction": "Point out the start line and a landing marker. Ask where the zero mark belongs.",
+      "teach": "Demonstrate measuring straight from the start line to first contact, with zero aligned. Assign a clear flight lane.",
+      "practice": "Launch three times from the same line. Mark first contact and record distance in centimetres under Trial 1, 2 and 3.",
+      "assessment": "Submit three labelled readings and demonstrate how one reading was obtained.",
+      "evidence": "All readings use cm and refer to the distance from the fixed launch line to the first landing point.",
+      "closure": "Ask why start points and units have to agree before distances can be compared."
+    },
+    "L03": {
+      "materials": "Paper planes, trial-distance cards, inference slips",
+      "induction": "Show a trial where a paper plane nosedives. Elicit what pupils saw and one possible explanation.",
+      "teach": "Compare the observed distance with a plausible reason. Ask which follow-up comparison would test the inference.",
+      "practice": "Compare three trials for each plane. Write an inference and a prediction for a fourth flight under the same conditions.",
+      "assessment": "A reaches 210, 225 and 220 cm. B reaches 105, 110 and 112 cm. Predict which will go farther in the next trial and suggest why.",
+      "evidence": "A is a reasonable prediction because it flew farther in all three trials. A feature such as wing shape is a possible explanation to test.",
+      "closure": "Ask which statement is a prediction and which is an inference."
+    },
+    "L04": {
+      "materials": "Flight snapshot cards, timer, tape measure, data sheets",
+      "induction": "Show two pictures of the same moving plane. Ask which came first and what evidence helps.",
+      "teach": "Model pairing distance with elapsed time. Show why ordering snapshots by distance alone could fail if the plane turns.",
+      "practice": "Arrange timed snapshots. Tabulate time and distance from the start line, then describe how the distance changes.",
+      "assessment": "Order the given 0, 1 and 2 second cards. Interpret the paired distances 0, 120 and 200 cm. Which one-second interval adds more distance?",
+      "evidence": "Distance increases in both intervals. It increases by 120 cm in the first second and 80 cm in the second.",
+      "closure": "Ask how a timestamp helps when two photographs show similar positions."
+    },
+    "L05": {
+      "materials": "Bubble solution, two labelled mixtures, matching wands, timer cards",
+      "induction": "Ask what observable event should stop a bubble timer.",
+      "teach": "Model a measurable start and end. Change only the mixture and elicit how to keep the bubble test fair.",
+      "practice": "Write a definition, identify variables and draft a hypothesis that can be tested by timed trials.",
+      "assessment": "Define bubble duration. Name the changed, measured and one controlled variable. Write an if–then hypothesis.",
+      "evidence": "Duration runs from detachment from the wand to bursting. Mixture changes, duration is measured in seconds, and wand size or airflow stays the same.",
+      "closure": "Ask pupils to point to the exact event that starts and stops the timer."
+    },
+    "L06": {
+      "materials": "Two pre-mixed solutions, identical wands, protective trays, timers",
+      "induction": "Show one empty results grid and ask how many trials would compare two mixtures fairly.",
+      "teach": "Demonstrate start and stop cues. Organise groups to repeat the same test three times for each mixture without changing wands or position.",
+      "practice": "Time bubbles from detachment to bursting. Record all six observations, then compare the results before writing a provisional claim.",
+      "assessment": "Submit the six timed trials with units. Identify the variable kept constant and state what the readings suggest.",
+      "evidence": "The table contains three times for each mixture. The claim uses the observed results and names the controlled condition.",
+      "closure": "Ask how a missed timing cue could change one result."
+    },
+    "L07": {
+      "materials": "Completed bubble trial sheets, report frames, comparison data",
+      "induction": "Display two groups' results. Ask whether a single long-lasting bubble is enough to support a claim.",
+      "teach": "Model linking the problem, variables, method, table and conclusion. Discuss what to report if trials disagree.",
+      "practice": "Write a short investigation report and swap it with a partner to check that the conclusion cites measured times.",
+      "assessment": "For mixture A at 6, 8 and 7 s and B at 11, 10 and 12 s, state whether the hypothesis that B lasts longer is supported.",
+      "evidence": "B lasts longer in every example trial. A usable report names the variables, records the timings and cites this comparison in the conclusion.",
+      "closure": "Ask what should be repeated if one trial contradicts the general pattern."
+    },
+    "R01": {
+      "materials": "Flight results cards, rulers, mini-whiteboards",
+      "induction": "Show two plane result columns and ask which factor could have been changed.",
+      "teach": "Work through one practice card on keeping the launch height constant.",
+      "practice": "Read a fresh comparison card and annotate what changes, what is measured and what stays constant.",
+      "assessment": "Compare 90 and 130 cm. Name the outcome measured, a controlled factor and an evidence-based conclusion. Use the scenario card to identify what was changed.",
+      "evidence": "Distance is measured in cm. Start line or height can be held constant. The changed factor comes from the scenario. The second trial travelled 40 cm farther.",
+      "closure": "Ask one pupil to give the evidence before stating the conclusion."
+    },
+    "L08": {
+      "materials": "Body outline, skeleton diagram, label cards",
+      "induction": "Ask pupils to touch the side of their head and locate the hard structure beneath.",
+      "teach": "Point out the skull, backbone, ribs and limb bones on the diagram. Model linking a structure to its function.",
+      "practice": "Place bone labels on outlines. Explain to a partner how one structure protects, supports or helps movement.",
+      "assessment": "Label the four main skeletal parts. Explain what the skull and ribs protect.",
+      "evidence": "Skull protects the brain, ribs protect organs such as the heart and lungs, and backbone and limb labels are correctly positioned.",
+      "closure": "Ask which bone structure supports the trunk."
+    },
+    "L09": {
+      "materials": "Skeleton outline, joint markers, paper hinge",
+      "induction": "Bend the elbow and ask pupils to point to the place where the movement happens.",
+      "teach": "Show the elbow, knee and shoulder on a model. Compare a bend-and-straighten movement with the wider shoulder movement.",
+      "practice": "Mark the joints and demonstrate one movement at each location without forcing it.",
+      "assessment": "Label elbow and knee and describe what each joint does during bending.",
+      "evidence": "Each mark sits where bones meet. The elbow allows the forearm to bend, and the knee lets the lower leg bend during movement.",
+      "closure": "Ask how the joint in the paper hinge resembles the elbow."
+    },
+    "L10": {
+      "materials": "Card strips, fasteners, skeleton outlines",
+      "induction": "Show a paper arm with its joint fixed. Ask what movement is lost.",
+      "teach": "Model using a fastener to join two bones and compare rigid support with a movable join.",
+      "practice": "Build and label a paper skeleton with a movable elbow or knee. Explain the need for support and protection.",
+      "assessment": "Show one motion in the model and explain why a skull and backbone matter in the body.",
+      "evidence": "The marked joint moves between labelled bones. The skull protects the brain, and the backbone helps support the body.",
+      "closure": "Ask which feature of the paper model represents a joint."
+    },
+    "L11": {
+      "materials": "Heart and lung diagram, arrow cards, role labels",
+      "induction": "Ask what makes a pulse detectable after movement.",
+      "teach": "Trace a circuit of heart, vessels, lungs and body. Explain pumping, transport and gas exchange.",
+      "practice": "Place the four part cards and assign one role to each in a diagram.",
+      "assessment": "Label heart, vessels, lungs and blood. Write the role of each.",
+      "evidence": "The heart pumps, vessels carry blood, lungs exchange gases, and blood carries oxygen and other substances.",
+      "closure": "Ask which organ pumps blood through both pathways."
+    },
+    "L12": {
+      "materials": "Heart, lungs and body cards, solid and dashed arrows",
+      "induction": "Show an incomplete heart–lung loop and ask where the return arrow goes.",
+      "teach": "Model both loops. Use arrow labels to distinguish blood richer in oxygen from blood richer in carbon dioxide.",
+      "practice": "Build the two loops with cards. Trace each route aloud before drawing the diagram.",
+      "assessment": "Draw arrows for heart–lungs–heart and heart–body–heart. Label the oxygen-rich return from the lungs and the carbon-dioxide-rich return from the body.",
+      "evidence": "Both loops start and return to the heart. The return from the lungs is oxygen rich and the return from the body is richer in carbon dioxide.",
+      "closure": "Ask why the heart appears in both loops."
+    },
+    "L13": {
+      "materials": "Cell delivery cards, pathway arrows, short scenario sheet",
+      "induction": "Ask how oxygen from the lungs reaches a leg muscle.",
+      "teach": "Model a route for oxygen and for nutrients. Follow a waste example from the cells towards removal.",
+      "practice": "Sort delivery and removal cards. Explain how the flows support one body part.",
+      "assessment": "Explain why an active muscle needs circulation. Include one substance delivered and one removed.",
+      "evidence": "Blood brings oxygen or nutrients to muscle cells and carries carbon dioxide or other wastes away.",
+      "closure": "Ask learners to name one delivery and one removal in the same sentence."
+    },
+    "L14": {
+      "materials": "Body-system labels, route cards, scenario pictures",
+      "induction": "Ask pupils where oxygen and nutrients enter the body's transport routes.",
+      "teach": "Connect lungs or digestive tract to nearby blood vessels. Ask how care for one system supports another.",
+      "practice": "Make a two-system flow chart and explain a healthy habit that supports efficient functioning.",
+      "assessment": "Show how the respiratory and circulatory systems work together. Explain why protecting the lungs matters to the rest of the body.",
+      "evidence": "Oxygen enters blood in the lungs and is carried to tissues. Healthy lungs support oxygen supply for the body.",
+      "closure": "Ask pupils to show which arrows cross from one system to another."
+    },
+    "L15": {
+      "materials": "Habit cards, body-system mat, foldable checklist",
+      "induction": "Show pictures of regular activity, a balanced meal and good posture. Ask which systems each supports.",
+      "teach": "Model linking a habit to a clear reason and to more than one system when appropriate.",
+      "practice": "Design a three-item checklist. Add one labelled diagram showing how two systems contribute during an everyday activity.",
+      "assessment": "Submit three habits with reasons and point out two related systems in the diagram.",
+      "evidence": "Balanced meals supply nutrients, regular activity supports fitness, and safe posture reduces strain. Each reason connects to a named system.",
+      "closure": "Ask which checklist item can be practised at school."
+    },
+    "R02": {
+      "materials": "Skeleton outline, body-system cards, route arrows",
+      "induction": "Show an elbow marker and an unlabeled lung card. Ask which systems they belong to.",
+      "teach": "Review one bone protection example and model the start of a blood flow diagram.",
+      "practice": "Use arrow cards to complete the lung pathway and add one related system.",
+      "assessment": "Mark the elbow, complete heart–lungs–heart and describe how the respiratory and circulatory systems work together.",
+      "evidence": "Elbow joins upper and lower arm. Blood goes from the heart to the lungs and back. Oxygen passes into the blood at the lungs.",
+      "closure": "Ask pupils to check both arrowheads on the loop."
+    },
+    "L16": {
+      "materials": "Tortoise, porcupine and camouflage picture cards",
+      "induction": "Show the outline of a camouflaged animal and ask why it is hard to spot.",
+      "teach": "Distinguish the continued existence of a species from one animal's immediate escape. Link shell and spines to protection.",
+      "practice": "Sort physical defences and illustrate the threat reduced by each.",
+      "assessment": "Define survival of a species and explain why a shell and spines can help an animal survive.",
+      "evidence": "A species survives when successive generations continue and avoid extinction. Shell covers soft parts and spines deter attacks.",
+      "closure": "Ask which trait offers cover and which deters contact."
+    },
+    "L17": {
+      "materials": "Lizard, squid and moth picture sequences",
+      "induction": "Reveal the last frame of a lizard escape sequence and ask what distracted the predator.",
+      "teach": "Distinguish a defensive action from a body feature. Model the chain of threat, response and escape.",
+      "practice": "Draw two three-frame sequences, using examples such as tail detachment or release of ink.",
+      "assessment": "Explain one behaviour in each of two animals and identify the threat it counters.",
+      "evidence": "A lizard's released tail distracts a predator. A squid's ink clouds the water and helps it escape a predator.",
+      "closure": "Ask pupils to locate the exact frame in which the defence helps."
+    },
+    "L18": {
+      "materials": "Weather cards, animal images, comparison chart",
+      "induction": "Show a hot afternoon and freezing winter picture. Ask what difficulties an animal faces in each.",
+      "teach": "Model linking temperature or scarcity to an action, using a buffalo wallowing and a hibernating animal.",
+      "practice": "Make a cold versus hot comparison with one behaviour and reason in each column.",
+      "assessment": "Explain how wallowing helps a buffalo in hot conditions and how hibernation helps an animal in a cold season.",
+      "evidence": "Wallowing helps cool the buffalo. Hibernation reduces activity and energy use when conditions are cold and food is scarce.",
+      "closure": "Ask why the same response would not solve both weather problems."
+    },
+    "L19": {
+      "materials": "Egg and nest pictures, shelter cards, role-play prompts",
+      "induction": "Show an exposed egg model and ask what could threaten it.",
+      "teach": "Compare hidden eggs with eggs kept warm by an adult. Supply examples of crocodile nesting and penguin incubation.",
+      "practice": "Use cards to enact one behaviour, then draw a labelled sketch linking it to egg survival.",
+      "assessment": "Explain how hiding a nest and keeping an egg warm solve different risks.",
+      "evidence": "Covering a nest can reduce detection. Incubation helps maintain a suitable temperature for development.",
+      "closure": "Ask which protective action addresses a change in temperature."
+    },
+    "L20": {
+      "materials": "Kangaroo, crocodile and hen photo cards, folded chart",
+      "induction": "Ask which dangers a young animal encounters when it first leaves its shelter.",
+      "teach": "Model comparing two ways parents protect young, noting what each behaviour protects against.",
+      "practice": "Use a folded chart to compare one shelter behaviour and one defence or transport behaviour.",
+      "assessment": "Explain how a kangaroo pouch and a hen's response can improve the survival of young.",
+      "evidence": "The pouch shelters and carries the joey. A hen may drive away a threat from her chicks.",
+      "closure": "Ask pupils to name the risk reduced by their chosen example."
+    },
+    "L21": {
+      "materials": "Habitat cards, paper, modelling clay, defence cards",
+      "induction": "Show a windy cold habitat with a predator card. Ask which problems the design must solve.",
+      "teach": "Model turning two observed animal traits into labelled features that meet different threats.",
+      "practice": "Draw and construct a model with one enemy defence and one feature for the chosen extreme weather.",
+      "assessment": "Attach two labels and explain how each feature addresses a different challenge.",
+      "evidence": "For example, thicker fur helps reduce heat loss, and a hard shell protects vulnerable body parts from a predator.",
+      "closure": "Ask which feature would need changing for a hot habitat."
+    },
+    "L22": {
+      "materials": "Models from Lesson 21, explanation cards, peer feedback slips",
+      "induction": "Ask pupils to match one model feature to a real animal feature.",
+      "teach": "Demonstrate presenting a model through claim and reason. Discuss a predator's role in a balanced habitat.",
+      "practice": "Present the model and respond to one peer challenge. Add a connection to a real adaptation and habitat balance.",
+      "assessment": "Name one real adaptation and explain how a model feature responds to a threat. Add one reason species relationships matter.",
+      "evidence": "For example, body covering reduces heat loss. A predator–prey link can help keep populations in balance.",
+      "closure": "Ask which evidence changed an explanation during the presentation."
+    },
+    "L23": {
+      "materials": "Rice plant, grasshopper and frog cards, arrow strips",
+      "induction": "Ask which organism can make its own food.",
+      "teach": "Use arrows from food to feeder. Model labelling the green plant as producer and animals as consumers.",
+      "practice": "Arrange cards into two chains beginning with a producer and read the arrows as energy transfer.",
+      "assessment": "Draw rice plant, grasshopper and frog as a chain. Label producer and consumers.",
+      "evidence": "Rice plant → grasshopper → frog. Rice is the producer, and the animals are consumers.",
+      "closure": "Ask pupils to say what moves in the direction of an arrow."
+    },
+    "L24": {
+      "materials": "Sun, green plant, caterpillar and bird cards, diagram paper",
+      "induction": "Ask why a food chain usually begins with a green plant.",
+      "teach": "Distinguish sunlight as energy from the plant as producer. Link light to the food made by photosynthesis.",
+      "practice": "Annotate one plant-based chain to show where light is used and how energy reaches two consumers.",
+      "assessment": "Explain the roles of sunlight and a leaf in a leaf–caterpillar–bird chain.",
+      "evidence": "The plant uses light energy to make food. Energy in that food passes to the caterpillar and then to the bird.",
+      "closure": "Ask learners to point to the first living part of the chain."
+    },
+    "L25": {
+      "materials": "Rice-field organism cards, arrows, large paper",
+      "induction": "Show two chains that both start with rice. Ask whether the two rice cards represent different producers.",
+      "teach": "Model joining chains at a shared organism, preserving the direction from food to feeder.",
+      "practice": "Build three linked chains using rice, grasshopper, frog, rat, snake and owl. Use the supplied feeding links to identify shared nodes.",
+      "assessment": "Draw three connected routes with one producer and at least one shared consumer. Explain why the diagram is a food web.",
+      "evidence": "Example: rice → rat → owl, rice → rat → snake and rice → grasshopper → frog → snake. Rice, rat and snake each connect more than one chain.",
+      "closure": "Ask whether one consumer can belong to more than one chain."
+    },
+    "L26": {
+      "materials": "Rice-field food web, population change cards",
+      "induction": "Cover the frog card and ask which other organism loses a food source.",
+      "teach": "Model following arrows towards an eater and back towards its prey. Label predictions as possible effects.",
+      "practice": "Use rice → grasshopper → frog → snake to mark one direct and one further effect of fewer frogs.",
+      "assessment": "Predict one effect on grasshoppers and one on snakes after the frog population drops. Explain both.",
+      "evidence": "Grasshoppers may increase because fewer frogs eat them. Snakes may decline if frogs are an important food source.",
+      "closure": "Ask why another food source could change the predicted outcome."
+    },
+    "R03": {
+      "materials": "Defence cards, small food web, exit tickets",
+      "induction": "Ask learners to choose an enemy defence and name the threat it reduces.",
+      "teach": "Refresh the meaning of an arrow using one producer–consumer link.",
+      "practice": "Annotate a web and write a cause-and-effect statement from a change card.",
+      "assessment": "Justify a tortoise's shell and predict an effect of fewer insects on a bird that eats them.",
+      "evidence": "The shell protects soft body parts. The bird may have less food and its population could decline.",
+      "closure": "Ask pupils to check that their reason matches the threat or food link."
+    },
+    "L27": {
+      "materials": "Plant photographs, tongs, feature cards",
+      "induction": "Display a thorny plant photograph and ask why an animal might avoid it.",
+      "teach": "Model feature-to-effect links using thorns and irritating hairs. Use pictures for irritants.",
+      "practice": "Match two plants to protective features, then annotate a sketch for each.",
+      "assessment": "Explain how thorns and irritating hairs discourage animals.",
+      "evidence": "Thorns hinder or deter feeding. Irritating hairs cause discomfort and can deter contact.",
+      "closure": "Ask how a feature can help a plant survive being eaten."
+    },
+    "L28": {
+      "materials": "Cactus and deciduous tree photos, season cards, postcard paper",
+      "induction": "Ask what a plant in a dry habitat has to conserve.",
+      "teach": "Compare a water-storing stem and leaf loss during unsuitable seasons. Link each trait to its environmental challenge.",
+      "practice": "Create two postcards from different climates with drawings and feature–benefit notes.",
+      "assessment": "Compare how a cactus stem and seasonal leaf fall can help plants survive.",
+      "evidence": "A fleshy stem stores water. Shedding leaves can reduce water loss or damage in unfavourable conditions.",
+      "closure": "Ask which environmental clue supports each explanation."
+    },
+    "L29": {
+      "materials": "Pictures of coconut, winged seed, burr and dry pod, shallow tray",
+      "induction": "Show a hooked fruit and ask what its hooks might attach to.",
+      "teach": "Model feature-to-mechanism reasoning for wind, water, animals or people, and splitting pods.",
+      "practice": "Sort four examples. Test a paper wing model, then explain the role of hooks, flotation or splitting.",
+      "assessment": "Match coconut, winged seed, burr and splitting pod to dispersal methods. Explain two placements.",
+      "evidence": "Water for the floating coconut, wind for the winged seed, animals or people for the burr, and explosive mechanism for the splitting pod.",
+      "closure": "Ask why a feature is better evidence than the colour of the fruit."
+    },
+    "L30": {
+      "materials": "Unfamiliar seed photos, prediction chart, distance sketch",
+      "induction": "Show a light seed with fine hairs without naming it. Ask what the hairs could do.",
+      "teach": "Model a claim from an observable feature. Link dispersal away from the parent plant to reduced competition.",
+      "practice": "Compare a hairy seed and a seed with hooks. Sketch a route away from the parent for one of them.",
+      "assessment": "Predict the dispersal method for the hairy seed, defend it with a visible feature and describe a benefit to the plant.",
+      "evidence": "Wind is a reasonable prediction because hairs help the light seed stay aloft. Movement can reduce crowding near the parent.",
+      "closure": "Ask which feature could instead support animal dispersal."
+    },
+    "R04": {
+      "materials": "Climate photo cards, seed pictures, mini-whiteboards",
+      "induction": "Present a cactus and a floating fruit and ask which picture concerns dispersal.",
+      "teach": "Review one feature-to-benefit sentence about a dry habitat.",
+      "practice": "Pair one habitat clue with a plant feature and one seed feature with its dispersal route.",
+      "assessment": "Give a dry-habitat adaptation and predict the route of a hooked fruit.",
+      "evidence": "A fleshy stem can store water. A hooked fruit may attach to fur or clothing and travel with animals or people.",
+      "closure": "Ask pupils to name the evidence used in each prediction."
+    },
+    "L31": {
+      "materials": "Energy source and device cards, source–use chart",
+      "induction": "Show a torch and a solar garden light. Ask where each gets electrical energy.",
+      "teach": "Connect a dry cell, solar cell, generator and rechargeable battery to specific devices. Distinguish conversion from use.",
+      "practice": "Match source cards to devices and explain one way electricity is produced or supplied.",
+      "assessment": "Match a torch, solar garden light, bicycle lamp and cordless drill to their sources. Explain the solar match.",
+      "evidence": "Examples are a dry cell, solar cell, dynamo and rechargeable battery respectively. The solar cell converts light energy into electrical energy.",
+      "closure": "Ask which source relies on a moving wheel."
+    },
+    "L32": {
+      "materials": "Dry cells, matching bulbs, low-voltage leads, circuit symbol cards",
+      "induction": "Show a one-path diagram and a branching diagram without labels.",
+      "teach": "Model tracing from one battery terminal to the other. Sketch one closed path then two branches using standard symbols.",
+      "practice": "Build and trace both circuits with dry cells. Sketch them and label bulb arrangement.",
+      "assessment": "Sketch a complete series circuit and a complete parallel circuit with two bulbs. Explain how the arrangements differ.",
+      "evidence": "Both sketches include a cell and two bulb symbols. Series bulbs lie on one path. Parallel bulbs sit on separate branches.",
+      "closure": "Ask a pupil to trace one complete route in each sketch."
+    },
+    "L33": {
+      "materials": "Matched bulbs, dry cells, bulb holders, brightness record",
+      "induction": "Show both circuit diagrams and ask whether their bulbs will appear equally bright.",
+      "teach": "Set up a matched comparison with the same type and count of cells and bulbs. Model using the same observation scale.",
+      "practice": "Build both circuits, record their brightness and compare observations with another group.",
+      "assessment": "State which bulbs appear brighter with the given setup and identify two quantities kept the same.",
+      "evidence": "Usually the parallel bulbs look brighter with this setup. Both circuits use the same number and type of cells and identical bulbs. Report actual observations.",
+      "closure": "Ask which uncontrolled change would make the comparison hard to interpret."
+    },
+    "L34": {
+      "materials": "Dry cells, identical rated bulbs, two low-voltage circuit boards, results grid",
+      "induction": "Show a second bulb being added. Ask which quantity this investigation will change.",
+      "teach": "Model a safe comparison with the same cell supply, changing only the number of bulbs within each arrangement.",
+      "practice": "Compare one and two bulbs in each circuit arrangement. Record the brightness of an individual bulb and label each trial.",
+      "assessment": "Identify the variable changed and state what happens when a second bulb is added in series and in parallel.",
+      "evidence": "The number of bulbs changes. With the same supply, a series bulb generally dims. A parallel bulb usually changes less. Record and explain any observed variation.",
+      "closure": "Ask why changing the cell count during this test would obscure the result."
+    },
+    "L35": {
+      "materials": "Matching bulbs, one- and two-cell holders, low-voltage leads, results grid",
+      "induction": "Show one cell beside two matched cells. Ask what must stay unchanged to compare brightness.",
+      "teach": "Use components rated for the selected cell supply. Demonstrate adding a second dry cell in series with the first and leaving both bulbs in place.",
+      "practice": "Compare one and two supply cells in the same bulb layout. Repeat for the other layout and summarise the results.",
+      "assessment": "Name the variable changed, one factor held constant and the observed effect when a second supply cell is added.",
+      "evidence": "The cell count changes. The same bulbs and layout are kept within each comparison. Bulbs generally brighten with the added cell within their ratings.",
+      "closure": "Ask how this investigation differs from changing the number of bulbs."
+    },
+    "L36": {
+      "materials": "Low-voltage boards with switches, circuit maps, prediction chart",
+      "induction": "Open one branch switch and ask pupils to predict which lamp will go out.",
+      "teach": "Compare a switch in the common supply path with a switch in one branch. Include a switch anywhere in a series loop.",
+      "practice": "Predict and test three open-switch scenarios. Mark conducting paths and verify which bulbs light.",
+      "assessment": "Predict the effect of opening a switch in a series loop, one parallel branch and the common supply path.",
+      "evidence": "Both bulbs go out in series. Only the affected branch goes out for a branch switch. Both go out when the common supply path is opened.",
+      "closure": "Ask pupils which switch controls all branches."
+    },
+    "L37": {
+      "materials": "Fictional appliance-use cards, sample bill totals, comparison chart",
+      "induction": "Show identical fans used for different times. Ask which is likely to use more electrical energy.",
+      "teach": "Compare duration and power rating one factor at a time. Demonstrate using a fictional bill without household data.",
+      "practice": "Compare two appliance-use scenarios and propose a conservation step based on a factor that changed.",
+      "assessment": "Compare a 50 W fan used for two hours with the same fan used for six hours. Give a way to reduce its energy use.",
+      "evidence": "Six hours uses three times as much energy because the power is the same. Switching off the fan when the space is empty reduces running time.",
+      "closure": "Ask which comparison would isolate the effect of appliance power."
+    },
+    "L38": {
+      "materials": "Printed hazard scenarios, picture cards, safety-rule labels",
+      "induction": "Display an overloaded plug illustration. Ask pupils to spot the unsafe action.",
+      "teach": "Work through a printed wet-hands case. Model naming the hazard, possible consequence and safe action.",
+      "practice": "Sort printed examples, then write safety advice for two cases. Discuss one conservation habit from Lesson 37.",
+      "assessment": "Explain the risk from wet hands and from a damaged cord. State what a pupil should do in each situation.",
+      "evidence": "Wet hands raise shock risk. A damaged lead can expose live parts. Keep hands dry, avoid the damaged appliance and tell a responsible adult.",
+      "closure": "Ask pupils to distinguish energy saving from an electrical safety action."
+    },
+    "R05": {
+      "materials": "Circuit diagrams, hazard cards, mini-whiteboards",
+      "induction": "Show two parallel branches and point to a switch in just one branch.",
+      "teach": "Trace the shared supply path and one branch. Check a sample hazard response.",
+      "practice": "Predict whether a lamp lights and match a hazard with its safe response.",
+      "assessment": "Predict the effect of opening a branch switch and explain what to do on seeing a damaged plug.",
+      "evidence": "The affected bulb goes out and the other branch stays lit if its path remains closed. Keep away from the plug and tell an adult.",
+      "closure": "Ask which part of the other branch stays complete."
+    },
+    "L39": {
+      "materials": "Digital probe thermometer, cool and warm water, reading cards",
+      "induction": "Show two water samples and ask how to establish which is warmer without touching them.",
+      "teach": "Model holding the probe in the water away from the container, waiting for a stable reading and recording °C.",
+      "practice": "Take readings of both samples with the correct technique and compare temperatures.",
+      "assessment": "Explain heat and temperature briefly. Record a water reading with its unit and demonstrate probe placement.",
+      "evidence": "Heat is energy transferred because of a temperature difference. Temperature measures hotness or coldness. The reading includes °C.",
+      "closure": "Ask why comparing readings requires the same temperature unit."
+    },
+    "L40": {
+      "materials": "Teacher-run heating setup, digital thermometer, timer, graph grid, ice",
+      "induction": "Show a sample ice-to-boil graph without values. Ask where the line might flatten.",
+      "teach": "Use a guarded teacher demonstration or data replay. Model recording at regular times and identifying phase-change plateaus.",
+      "practice": "Record temperatures against time from ice to heated water. Plot the data and mark the ice-melting and boiling stages.",
+      "assessment": "Read the freezing and boiling temperatures from the supplied graph and explain what the axes show.",
+      "evidence": "Pure water at standard pressure freezes near 0°C and boils near 100°C. The graph plots temperature against elapsed time. Report the observed values.",
+      "closure": "Ask when adding energy can change state while temperature stays nearly steady."
+    },
+    "L41": {
+      "materials": "Teacher-prepared warm and cool water, digital thermometer, room thermometer, timers",
+      "induction": "Ask what will happen to warm and cool water left in the same room.",
+      "teach": "Demonstrate measuring room temperature and tracking both samples without changing container type.",
+      "practice": "Measure each water sample at equal time intervals. Draw arrows to show heat transfer between the samples and the surroundings.",
+      "assessment": "Given a room at 27°C, predict the trends for water at 40°C and at 18°C. Explain the direction of heat transfer.",
+      "evidence": "The warmer water loses heat and cools towards 27°C. The cooler water gains heat and warms towards 27°C.",
+      "closure": "Ask which reading shows the surroundings' temperature."
+    },
+    "L42": {
+      "materials": "Plastic bottle, balloon, trays of warm and cool water, diagram strips",
+      "induction": "Show a deflated balloon on a bottle. Ask what warm air inside the bottle might do.",
+      "teach": "Compare the same bottle in warm then cool water under supervision. Keep the opening covered by the same balloon.",
+      "practice": "Observe the balloon, record each change and use sketches to explain what happens to the air volume.",
+      "assessment": "Explain the different balloon shapes after warming and cooling the same bottle.",
+      "evidence": "Warming makes the enclosed air take up more space and the balloon expand. Cooling reduces the air volume and the balloon shrinks.",
+      "closure": "Ask pupils to link one observation to heat gain and one to heat loss."
+    },
+    "L43": {
+      "materials": "Bridge-joint and overhead-line pictures, spaced paper strips",
+      "induction": "Show a gap in a bridge joint and ask why builders leave it.",
+      "teach": "Model paper strips that meet when they expand. Compare a bridge joint with slack in an overhead line.",
+      "practice": "Annotate two designs with arrows or labels that show movement as temperatures change.",
+      "assessment": "Explain how a bridge joint gap and slack in a cable handle expansion or contraction.",
+      "evidence": "The gap allows a bridge material to expand without pressing hard against its neighbour. Cable slack allows for contraction in cooler weather.",
+      "closure": "Ask pupils what could happen if a bridge had no movement space."
+    },
+    "R06": {
+      "materials": "Thermometer display cards, bridge sketch, answer slips",
+      "induction": "Show a temperature display and ask for its reading to the marked precision.",
+      "teach": "Revisit temperature units and a single expansion example.",
+      "practice": "Read a display and annotate the space in a bridge sketch.",
+      "assessment": "Read a 32°C display, then explain why a bridge joint includes a gap.",
+      "evidence": "The temperature is 32°C. The gap allows material to expand when heated.",
+      "closure": "Ask pupils to name the unit and one design feature."
+    },
+    "L44": {
+      "materials": "Photos of rusted iron and clean objects, magnet, known material samples",
+      "induction": "Show pictures of rough brown iron and a clean metal surface. Ask what is observable.",
+      "teach": "Compare iron with plastic and aluminium under the same recorded conditions. Distinguish rust from other surface changes.",
+      "practice": "Record colour and texture for each sample and identify which confirmed iron objects developed rust.",
+      "assessment": "Describe two visible signs of rust and explain what material the examples identify as capable of rusting.",
+      "evidence": "Rust commonly forms a rough reddish-brown layer on iron or steel. Compare the observed iron sample with the other materials.",
+      "closure": "Ask whether every brown surface is evidence of rust."
+    },
+    "L45": {
+      "materials": "Identical uncoated iron nails, labelled clear jars, water, teacher-prepared controls",
+      "induction": "Show three identical iron nails and ask which conditions must differ.",
+      "teach": "Provide air-and-water, dry-air and pre-prepared deoxygenated-water controls. Explain which factor each comparison isolates.",
+      "practice": "Label jars, sketch the conditions, record the initial appearance and predict which nail will rust.",
+      "assessment": "Name which setup contains both conditions and explain why equal nails are used.",
+      "evidence": "The nail exposed to air and water is expected to rust. Using identical nails controls the material and size.",
+      "closure": "Ask which two setups isolate the role of water."
+    },
+    "L46": {
+      "materials": "Prepared jars from Lesson 45, baseline photos, recording grid",
+      "induction": "Show the jars and ask what has changed since the baseline.",
+      "teach": "Have pupils compare without opening the controls. Model distinguishing an observation from a conclusion.",
+      "practice": "Record signs of rust in each jar and use the two comparisons to infer which conditions are needed.",
+      "assessment": "Use the observations to explain the importance of both air and water in rusting.",
+      "evidence": "Rust in air plus water alongside little or no rust in the other conditions supports the conclusion that both oxygen from air and water are needed.",
+      "closure": "Ask what a leaky or wet control could do to the result."
+    },
+    "L47": {
+      "materials": "Photos of painted railings and lubricated tools, prevention cards",
+      "induction": "Show a patch of chipped paint on iron and ask why rust may start there.",
+      "teach": "Compare barriers such as paint and oil with the choice of a rust-resistant material. Link protection to durability.",
+      "practice": "Choose prevention methods for two objects and explain why each method is suited to the object's use.",
+      "assessment": "Choose a method for an outdoor iron gate and an iron hinge. Explain how each method works.",
+      "evidence": "Paint can protect a gate and a suitable lubricant can protect a hinge. A continuous barrier reduces contact with air and water.",
+      "closure": "Ask why a coating has to be maintained."
+    },
+    "R07": {
+      "materials": "Rusting-condition cards, gate photograph, mini-whiteboards",
+      "induction": "Ask which of two nails is more likely to rust: one in dry air or one in damp air.",
+      "teach": "Review the condition comparison and one way to stop water reaching iron.",
+      "practice": "Match a protective coating to an object and write a reason.",
+      "assessment": "Name both requirements for rusting and explain how painting a clean iron gate helps.",
+      "evidence": "Iron needs water and oxygen to rust. Paint forms a barrier that reduces contact with both.",
+      "closure": "Ask why bare scratches are more vulnerable."
+    },
+    "L48": {
+      "materials": "Stone, water, inflated bag, material picture cards",
+      "induction": "Show a sealed bag of air. Ask whether the air counts as matter.",
+      "teach": "Compare familiar solid, liquid and gas examples. Use a filled bag to show that gas takes up space.",
+      "practice": "Sort material cards and justify two placements using properties pupils can see or test.",
+      "assessment": "Sort ice, water and air. Give one reason that a bag of air contains matter.",
+      "evidence": "Ice is solid, water is liquid in the example, and air is gas. Air takes up space in the bag.",
+      "closure": "Ask which material changes its outline when poured."
+    },
+    "L49": {
+      "materials": "Block, water, two measuring cups, sealed needle-free syringes",
+      "induction": "Show a block and equal measured liquid in differently shaped cups.",
+      "teach": "Model observing shape and volume separately. Compare equal-volume samples of air and water gently in sealed syringes.",
+      "practice": "Record which materials keep shape, keep volume or compress, and compare the observations.",
+      "assessment": "Complete the three-state comparison and explain what the syringe demonstrates.",
+      "evidence": "Solids keep shape and volume. Liquids keep volume and take the container's shape. Gases spread to fill space and compress more readily.",
+      "closure": "Ask whether pouring the liquid changes its measured volume."
+    },
+    "L50": {
+      "materials": "Ice, liquid water, cold lid, water vapour diagram",
+      "induction": "Show an ice cube and a wet surface and ask what substance they share.",
+      "teach": "Link ice and liquid water to the invisible gas state. Distinguish visible mist droplets from water vapour.",
+      "practice": "Make a three-panel record. Use droplets forming on the cold lid as indirect evidence of water vapour condensing.",
+      "assessment": "Name the three states of water and explain where the droplets on the lid came from.",
+      "evidence": "Ice is solid, liquid water flows and water vapour is an invisible gas. Cooling vapour at the lid forms liquid droplets.",
+      "closure": "Ask why a visible white mist is not the gas state itself."
+    },
+    "L51": {
+      "materials": "Ice, cold lid, cup, teacher-prepared observation sequence, state cards",
+      "induction": "Show droplets on a cold lid and ask which state change might explain them.",
+      "teach": "Demonstrate melting and condensation, then show prepared examples of freezing, evaporation and teacher-observed boiling.",
+      "practice": "Arrange evidence cards around a state diagram and label all five processes.",
+      "assessment": "Label solid to liquid, liquid to solid, liquid to gas and gas to liquid. Name both routes from liquid to gas.",
+      "evidence": "Melting, freezing, evaporation or boiling, and condensation respectively. Boiling occurs throughout a liquid at its boiling point.",
+      "closure": "Ask which process can occur from a liquid surface below its boiling point."
+    },
+    "L52": {
+      "materials": "Ice, sealed cooling samples, state cards, heat-transfer arrows",
+      "induction": "Ask whether drops forming on a chilled surface gained or lost heat.",
+      "teach": "Model energy arrows for melting, freezing, evaporation, boiling and condensation. Use supervised demonstrations or prepared evidence.",
+      "practice": "Compare before-and-after evidence and attach heat arrows to each state change.",
+      "assessment": "Classify all five processes as heat gain or loss and explain one with observed evidence.",
+      "evidence": "Melting, evaporation and boiling involve heat gain. Freezing and condensation involve heat loss. For example, cooling vapour makes liquid droplets.",
+      "closure": "Ask which reverse process releases energy."
+    },
+    "L53": {
+      "materials": "Clear container, warm water, cold lid, cloud-cycle sketch",
+      "induction": "Ask how droplets can appear above the water level inside a covered container.",
+      "teach": "Model evaporation from warm water and condensation on the cold lid. Link growing drops to precipitation.",
+      "practice": "Observe the covered model and label evaporation, cooling, condensation and falling droplets.",
+      "assessment": "Explain how a cloud forms from water vapour and why some droplets later fall as rain.",
+      "evidence": "Air containing vapour cools and vapour condenses into cloud droplets. Drops grow and fall when large enough.",
+      "closure": "Ask where the lid model differs from a real cloud."
+    },
+    "R08": {
+      "materials": "Water state cards, cloud sequence diagram, blank arrows",
+      "induction": "Ask pupils to choose the process that makes liquid droplets from water vapour.",
+      "teach": "Review one state change and organise one cloud-model picture.",
+      "practice": "Match water processes to state arrows and put the rain sequence in order.",
+      "assessment": "Label liquid to gas at the surface and gas to liquid. Explain one step from cloud droplets to rain.",
+      "evidence": "Evaporation makes vapour and condensation makes liquid droplets. Drops can grow and then fall as rain.",
+      "closure": "Ask which step happens when vapour cools."
+    },
+    "L54": {
+      "materials": "Fixed lamp, marked Moon ball, Earth marker, timing cards",
+      "induction": "Shine light on a Moon ball and ask what makes one half appear bright.",
+      "teach": "Model reflection, then an orbit while the marked face stays oriented towards Earth. Show anticlockwise movement viewed from above the north side and about 27 days per turn or orbit.",
+      "practice": "Use the model to show one rotation per revolution. Record direction and explain which light source is required.",
+      "assessment": "Demonstrate both motions, state their approximate durations and explain why the Moon is visible.",
+      "evidence": "The Moon reflects sunlight. Viewed from the north side, it rotates and orbits anticlockwise, taking about 27 days for each relative to the stars.",
+      "closure": "Ask which movement is around Earth's position and which is about the Moon's own axis."
+    },
+    "L55": {
+      "materials": "Moon-phase cards, lamp and ball, sample lunar calendar",
+      "induction": "Show first and last quarter drawings and ask which appears before full Moon.",
+      "teach": "Model the visible lit part from Earth's position and distinguish the approximately 29.5-day phase cycle from the orbit period relative to stars.",
+      "practice": "Arrange the phases from new Moon to the next new Moon. Mark four positions on a circular calendar.",
+      "assessment": "Order new Moon, first quarter, full Moon and last quarter. Explain how the sequence marks a lunar month.",
+      "evidence": "New → first quarter → full → last quarter → new. The changing visible lit portion repeats in about 29.5 days.",
+      "closure": "Ask why Earth's shadow does not explain the ordinary phases."
+    },
+    "L56": {
+      "materials": "Star-pattern cards, named reference sheet, direction arrows",
+      "induction": "Reveal a cross pattern and ask how it differs from the Big Dipper pattern.",
+      "teach": "Compare Orion, Big Dipper, Southern Cross and Scorpion. Model one direction or seasonal use without implying that patterns are always visible.",
+      "practice": "Match outlines to names and annotate one use for a selected pattern.",
+      "assessment": "Identify two given patterns and give one use of a named constellation.",
+      "evidence": "For example, the Southern Cross can help find south. A pattern's seasonal appearance can also be used as a calendar clue.",
+      "closure": "Ask how repeated observation helps recognise a pattern."
+    },
+    "L57": {
+      "materials": "Star-chart extracts, stickers, dark card, labels",
+      "induction": "Show two similar outlines and ask which feature helps distinguish them.",
+      "teach": "Model placing stars relative to each other and connecting only enough lines to recognise the pattern.",
+      "practice": "Make and label a star map for Orion, Southern Cross, Big Dipper or Scorpion. Explain one use or identifying feature.",
+      "assessment": "Present a correctly labelled pattern and support the identification with one feature and a use.",
+      "evidence": "For example, Orion has three prominent belt stars in a line. Its appearance can be used as a seasonal reference.",
+      "closure": "Ask whether rotating the paper changes the relative positions of its stars."
+    },
+    "R09": {
+      "materials": "Moon-phase cards, constellation diagrams, response slips",
+      "induction": "Show full Moon and half-visible Moon cards. Ask which can follow a new Moon first.",
+      "teach": "Review a four-phase cycle and compare two named star patterns.",
+      "practice": "Sequence phase cards and annotate one constellation with its use.",
+      "assessment": "Put the four main phases in order and state one use of the Southern Cross.",
+      "evidence": "New, first quarter, full, last quarter, then new again. The Southern Cross helps locate south.",
+      "closure": "Ask which phase precedes the full Moon in the sequence."
+    },
+    "L58": {
+      "materials": "Blunt school scissors, tool photos, simple-machine cards",
+      "induction": "Show school scissors and ask what pressing the handles does at the blades.",
+      "teach": "Model identifying lever arms and the wedge shape of the blade edges on a real pair of scissors.",
+      "practice": "Observe the tool and annotate the pivot, handles and cutting edges. Link each component to cutting paper.",
+      "assessment": "Label the two simple machines in scissors and state what each contributes.",
+      "evidence": "The handles and blades pivot as levers. Blade edges act as wedges that separate the material.",
+      "closure": "Ask why the pivot helps move both blades."
+    },
+    "L59": {
+      "materials": "Blunt scissors, hand-crank pencil sharpener, action cards",
+      "induction": "Ask what each tool needs to do before paper or pencil material can be cut.",
+      "teach": "Compare pressing a lever with turning a crank, then trace how each movement drives the cutting part.",
+      "practice": "Make a two-column comparison: input movement, mechanism and useful output for each tool.",
+      "assessment": "Explain why scissors combine levers and wedges, and how a crank and cutting edge cooperate in the sharpener.",
+      "evidence": "The levers move and press the scissors' wedges through paper. The sharpener crank turns the mechanism so a cutting edge removes material.",
+      "closure": "Ask which parts would still move if the cutting edge were removed."
+    },
+    "L60": {
+      "materials": "Design cards, paper, recycled cardboard, sample labels",
+      "induction": "Show a tool that breaks when a handle wears out. Ask what makes it easier to maintain.",
+      "teach": "Model a hand-operated tool concept. Link a machine feature to the task and a sustainable feature to service life or repair.",
+      "practice": "Propose a tool for a daily problem, label its simple machines and explain one design choice for maintenance, material or safety.",
+      "assessment": "Sketch the tool. Explain how two simple machines help it work and justify one sustainable feature.",
+      "evidence": "For example, lever handles and wedge edges help a reusable paper cutter work. A replaceable worn part can extend the service life.",
+      "closure": "Ask which single feature would reduce the need to replace the whole tool."
+    },
+    "R10": {
+      "materials": "Scissors diagram, simple-machine labels, mini-whiteboards",
+      "induction": "Show the handle, pivot and blade of a tool without labels.",
+      "teach": "Review how the blade edge and handle movement work together.",
+      "practice": "Complete the labels and explain what each simple machine contributes.",
+      "assessment": "Label the lever and wedge in scissors and explain each function.",
+      "evidence": "The lever pivots to press the blades and the wedge-shaped edges separate the paper.",
+      "closure": "Ask what function would be lost if the pivot could not move."
+    }
+  }
+}
