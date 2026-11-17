@@ -3,6 +3,66 @@
   "scope": "Standalone RPH source text checked against the printed SOW and applicable Student’s Book, Teacher’s Book, Workbook or BPK literature teaching guide. Recording content and release approval are separate.",
   "lessons": [
     {
+      "lesson": 1,
+      "source_sha256": "c5ae6d7a65db27cf72d7fbee3066e32c1a31c42d546be80c6fc8f5c0d89d92f1"
+    },
+    {
+      "lesson": 2,
+      "source_sha256": "2022f495b840b56c340292752ebaeaa3ddfa7df5389732bdcf5e105d3ef5ef0c"
+    },
+    {
+      "lesson": 3,
+      "source_sha256": "20c821f3bb2ada9f44a44b29a2785655700ba4f1c7d536d1cf98822f1b07b212"
+    },
+    {
+      "lesson": 4,
+      "source_sha256": "e17e340a6dcda49e41885d4b648b146c1b3c1cbcfeb1917333e9a6c2d9da26ef"
+    },
+    {
+      "lesson": 5,
+      "source_sha256": "3e3379903d1119ed2c208b88ac9fc92a9dec833765e608eba56654aadfb79699"
+    },
+    {
+      "lesson": 6,
+      "source_sha256": "6fe171635f02525a850dcaf773489d789f5c7fc8625b91236ada5df5f91bb3ec"
+    },
+    {
+      "lesson": 7,
+      "source_sha256": "553305f42192fe4c639354d8feab064913b65c95a07cc195456af8aa041f2960"
+    },
+    {
+      "lesson": 8,
+      "source_sha256": "8af4a58477154ff1cd6aa9f9534a532bc34f95a5f622668257940859108b5033"
+    },
+    {
+      "lesson": 9,
+      "source_sha256": "25a4fcfa71e3480b94abbdc7663fa924f0e797f48275e34778593c11828cf3dd"
+    },
+    {
+      "lesson": 10,
+      "source_sha256": "77c7c7cf400df40cf431fa37a728c5414bc9167b8c99cdbe2ee2500dbb17a5fc"
+    },
+    {
+      "lesson": 11,
+      "source_sha256": "d00ae8514277f94426bc87e93b61e169e0e4ce3fc236927ecb520b49c9a069d0"
+    },
+    {
+      "lesson": 12,
+      "source_sha256": "5fb75da01e8b113379a6ca5c2db1b2875b63733c42c8802d81f5d7a35d7a4512"
+    },
+    {
+      "lesson": 13,
+      "source_sha256": "dfedcf2a440d9bbe3f092aba36ee64fb882a88ba9fffd1b9b2c11df03e8b8f81"
+    },
+    {
+      "lesson": 14,
+      "source_sha256": "36c1eed60fce87900db31c720b674eced49a23fa58ef187bb1191796c9bacafe"
+    },
+    {
+      "lesson": 15,
+      "source_sha256": "15184db7cca209db8649a194c7b4cfc4dbdfeace815c32c3d6d9159de8a2b436"
+    },
+    {
       "lesson": 31,
       "source_sha256": "db7e91d562eb139d287b346c2b99609c255eabe0fd2cabb721be7a2d123b776c"
     },
