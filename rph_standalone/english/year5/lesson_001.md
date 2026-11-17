@@ -1,21 +1,17 @@
-# English Year 5 — Standalone RPH — Lesson 001 (Listening 1)
+# English Year 5 Lesson 1 — Listening 1
 
-**Status:** DRAF — final visual/audio and A4 QA pending. **Topic:** Free time (Starter Unit). **Main LS:** Listening 1.2.1. **Complementary LS:** Reading 3.2.1. **Duration:** 60 minutes.
+**Official SOW topic:** Free time.
+**Official SOW:** Lesson 1, printed p.35. **Suggested duration:** 60 minutes.
+**Main and complementary learning standards:** Listening 1.2.1 and Reading 3.2.1.
+**Materials:** English Plus 1 SB p.4 Activities 1–2, TB p.18, CD1.02–CD1.03 and WB p.4 Ex2.
+**Learning objectives:** Pupils identify the main idea of a short text about free time through reading and through supported listening.
+**Success criteria:** State what Kate’s text is mainly about before listening and identify the main idea heard on CD1.03.
 
-**Materials:** English Plus 1 Student's Book p.4 Activities 1–2; Teacher's Book p.18 Exercise 1; CD1.02 and CD1.03; Workbook p.4 Starter Vocabulary, Ex1–5 (existing QA mapping, optional practice).
+1. **Set induction (8 min):** Start a free-time word chain. Ask pupils to group the words into things they do alone or with friends.
+2. **Activity 1 (12 min):** Use SB Activity 1 and CD1.02 to match words with pictures. Model the different word stress in photograph and photography.
+3. **Activity 2 (14 min):** In SB Activity 2, pupils read the text, write its main idea and predict the missing words with a partner.
+4. **Activity 3 (18 min):** Play CD1.03 with the passage covered for the first listen. Pupils note the main idea they hear, then uncover the passage and check the gaps on replay. If time permits, pupils complete Workbook p.4 Exercise 2.
+5. **Closure (8 min):** Ask pupils to share a free-time activity and one way to stay safe when chatting online.
 
-**Objectives:** Pupils identify the main idea of a longer simple audio text about free time with support, and identify the main idea of a two-paragraph reading passage. They recognise relevant free-time vocabulary in context.
-
-**Set induction (8 min):** Teacher introduces *free time*. In a circle, pupils form a memory chain of familiar free-time words; teacher clarifies the topic using the pupils' examples.
-
-**Activity 1 — Listen and identify (12 min):** Teacher follows TB p.18 Exercise 1 and plays CD1.02. Pupils listen, then match spoken vocabulary with words in SB p.4 Activity 1. Teacher checks pronunciation and meaning.
-
-**Activity 2 — Predict and read (15 min):** Pairs read the passage in SB p.4 Activity 2, inspect pictures, discuss its main idea, and predict suitable words for gaps. Teacher models the pronunciation difference between *photograph* and *photography*.
-
-**Activity 3 — Listen to check (15 min):** Teacher plays CD1.03; pupils check predictions and explain corrections. Pairs compare the girl's free-time activities with their own. Teacher prompts a brief discussion of safe online chatting.
-
-**PBD (5 min):** Teacher asks each pupil for the listening and reading main ideas, then checks one contextual clue supporting an answer. Record independent / supported / needs reteaching.
-
-**Closure (5 min):** Pupils recall three free-time words and share one personal free-time sentence.
-
-**Workbook:** Select a brief relevant task from p.4 Ex1–5 only if time permits; it does not replace SB/audio activities. **Differentiation:** Use visuals and repeat listening for support; extend by comparing routines independently. **QA:** Recorded audio content and one-page layout not yet independently verified.
+**PBD:** Check the main idea from reading and from listening separately. Ask pupils to identify one clue that supports each response.
+**Differentiation:** Offer picture cues and two gist choices. Replay the track for pupils who need support.
