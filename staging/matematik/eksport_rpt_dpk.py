@@ -21,7 +21,7 @@ INK = colors.HexColor('#153449')
 GRID = colors.HexColor('#D6E1E5')
 
 
-def export_table(output, year, details, *, kssr_dskp=False):
+def export_table(output, year, details, *, kssr_dskp=False, review_note=None):
     pdfmetrics.registerFont(TTFont(REGULAR, str(FONT_DIR / 'DejaVuSans.ttf')))
     pdfmetrics.registerFont(TTFont(BOLD, str(FONT_DIR / 'DejaVuSans-Bold.ttf')))
     body = ParagraphStyle('RPT body', fontName=REGULAR, fontSize=8.5, leading=12, textColor=INK)
@@ -60,11 +60,12 @@ def export_table(output, year, details, *, kssr_dskp=False):
             ])
 
     table = LongTable(data, colWidths=(100, 57, 172, 206, 235), repeatRows=1, hAlign='LEFT')
+    row_padding = 4.5 if review_note else 5
     commands = [
         ('BACKGROUND', (0, 0), (-1, 0), TEAL),
         ('VALIGN', (0, 0), (-1, -1), 'TOP'),
-        ('TOPPADDING', (0, 0), (-1, -1), 5),
-        ('BOTTOMPADDING', (0, 0), (-1, -1), 5),
+        ('TOPPADDING', (0, 0), (-1, -1), row_padding),
+        ('BOTTOMPADDING', (0, 0), (-1, -1), row_padding),
         ('ROWBACKGROUNDS', (0, 1), (-1, -1), (colors.white, colors.HexColor('#F5F8F9'))),
         ('LINEBELOW', (0, 1), (-1, -1), 0.35, GRID),
     ]
@@ -90,6 +91,8 @@ def export_table(output, year, details, *, kssr_dskp=False):
         pair(f'117 Lesson · 96 jam · Draf semakan guru · {curriculum}', summary),
         pair('Gunakan julat Kumpulan A atau B mengikut sekolah. PdP terakhir dijadualkan pada Minggu 38.', summary),
     ]
-    if kssr_dskp:
+    if review_note:
+        opening.append(pair(review_note, summary))
+    elif kssr_dskp:
         opening.append(pair('42 sesi 30 minit dan 75 sesi 60 minit sepadan dengan set RPH.', summary))
     pdf.build([*opening, Spacer(1, 10), table], onFirstPage=footer, onLaterPages=footer)
