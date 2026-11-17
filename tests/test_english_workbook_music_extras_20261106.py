@@ -28,9 +28,22 @@ class EnglishWorkbookMaterials(unittest.TestCase):
                 self.assertLess(len(data),8*1024*1024)
         self.assertIsNone(_material(5,16))
         self.assertIsNone(_material(6,16))
-        self.assertIsNone(_material(3,1))
+        self.assertIsNone(_material(3,4))
         self.assertIsNone(_material(4,999))
         self.assertIsNone(_material(1,17))
+
+    def test_year3_welcome_uses_the_restored_printed_pages(self):
+        for lesson, printed in ((1, 2), (2, 2), (3, 3), (6, 3), (7, 3)):
+            with self.subTest(lesson=lesson):
+                source = _material(3, lesson)
+                path, index = source["pages"][0]
+                self.assertEqual((path.name, index), ("y3_workbook_welcome_002_003.pdf", printed - 1))
+                self.assertTrue(source["label"].endswith(f"m/s {printed}"))
+                excerpt = PdfReader(BytesIO(_extract(source)), strict=True)
+                original = PdfReader(path, strict=True)
+                self.assertEqual(len(excerpt.pages), 1)
+                self.assertEqual(excerpt.pages[0].get_contents().get_data(),
+                                 original.pages[index - 1].get_contents().get_data())
 
     def test_year4_workbook_uses_checked_printed_coordinates(self):
         mapping = _material(4, 73)

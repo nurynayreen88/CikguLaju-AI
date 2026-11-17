@@ -96,6 +96,17 @@ def test_year3_download_includes_verified_workbook_reference_once_per_pair():
         assert len(PdfReader(BytesIO(data), strict=True).pages) == 1
 
 
+def test_year3_welcome_pairs_share_the_printed_workbook_page():
+    for pair, printed in (((1, 2), 2), ((6, 7), 3)):
+        workbook = materials._workbook(3, pair)
+        assert [lesson for lesson, _ in workbook] == list(pair)
+        assert len({tuple(item["pages"]) for _, item in workbook}) == 1
+        assert all(item["label"].endswith(f"m/s {printed}") for _, item in workbook)
+        data, mime, _ = materials.download(None, 3, pair, "workbook")
+        assert mime == "application/pdf"
+        assert len(PdfReader(BytesIO(data), strict=True).pages) == 1
+
+
 def test_paired_year3_uses_sow_references_instead_of_old_page_metadata():
     pairs = [((22, 23), [17]), ((65, 66), [45, 47]), ((81, 82), [55]), ((91, 92), [59])]
     numbers = [number for pair, _ in pairs for number in pair]

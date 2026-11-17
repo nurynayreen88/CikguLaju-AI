@@ -72,7 +72,7 @@ def _material(year: int, lesson: int, *, root=ROOT, paired_reference=False):
     else:
         if year == 3:
             from resources.english.y3.workbook_verified_map import (
-                Y3_WB_PAIRED_REFERENCE_MAP, Y3_WB_VERIFIED_LESSON_MAP,
+                Y3_WB_PAIRED_REFERENCE_MAP, Y3_WB_VERIFIED_LESSON_MAP, Y3_WB_WELCOME_PART,
             )
 
             rec = Y3_WB_VERIFIED_LESSON_MAP.get(lesson)
@@ -89,14 +89,16 @@ def _material(year: int, lesson: int, *, root=ROOT, paired_reference=False):
         page = rec["printed"] if year == 4 else rec["pdf"]
         if type(page) is not int:
             return None
-        parts = [v for v in PDF_PARTS[year] if v[0] <= page <= v[1]]
-        if len(parts) != 1:
-            return None
-        start, _, filename = parts[0]
+        if year == 3 and rec.get("part") == Y3_WB_WELCOME_PART:
+            start, filename = 1, Y3_WB_WELCOME_PART
+        else:
+            parts = [v for v in PDF_PARTS[year] if v[0] <= page <= v[1]]
+            if len(parts) != 1:
+                return None
+            start, _, filename = parts[0]
         path = Path(root) / "books" / "english" / filename
-        first = last = page - start + 1
         printed = str(rec.get("printed") or "?")
-        pages = [(path, first)]
+        pages = [(path, page - start + 1)]
     root_books = (Path(root) / "books" / "english").resolve()
     try:
         if not 1 <= len(pages) <= 4 or any(
