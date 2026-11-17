@@ -1009,7 +1009,7 @@ def create_blueprint():
                     word_receipt_claim(uid, document.getvalue()))
         return response
 
-    @bp.post("/api/web/rph/timetable/word-bundle")
+    @bp.route("/api/web/rph/timetable/word-bundle", methods=["GET", "POST"])
     def timetable_word_bundle():
         from itsdangerous import BadSignature
         from web.rph_timetable_word_bundle import (
@@ -1021,6 +1021,12 @@ def create_blueprint():
         account, error = _account()
         if error is not None:
             return error
+        if request.method == "GET":
+            try:
+                from docxcompose.composer import Composer
+            except ImportError:
+                return jsonify({"error": "Gabungan Word belum tersedia."}), 503
+            return jsonify({"available": callable(Composer)})
         if request.headers.get("Origin") != "https://" + request.host:
             return jsonify({"error": "Asal permintaan tidak sah."}), 400
         if (request.mimetype != "multipart/form-data"
@@ -1050,7 +1056,7 @@ def create_blueprint():
             parts.append(data)
         try:
             bundle = compose_word_bundle(parts)
-        except (ValueError, KeyError, OSError, ImportError):
+        except (ValueError, TypeError, KeyError, IndexError, OSError, ImportError):
             return jsonify({"error": "Gabungan Word belum berjaya. Cuba semula atau muat turun pada setiap slot."}), 503
         return send_file(bundle, mimetype=WORD_MIME, as_attachment=True,
                          download_name="CIKGULAJU_RPH_MINGGU_INI.docx", conditional=False)

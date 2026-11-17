@@ -868,6 +868,13 @@
   for(const control of lock)control.disabled=true;
   let ready=plans.filter(plan=>bundleParts.has(plan.key)).length;
   try{
+   if(format==="word"){
+    bundleStatus.textContent="Menyemak gabungan Word…";
+    const response=await fetch("/api/web/rph/timetable/word-bundle",{
+     credentials:"same-origin",cache:"no-store",redirect:"error"});
+    const data=await response.json().catch(()=>({}));
+    if(!response.ok||data.available!==true)throw Error(data.error||"Gabungan Word belum tersedia.");
+   }
    const missing=plans.length-ready;
    if(missing){
     bundleStatus.textContent="Menyemak akses untuk "+missing+" slot…";

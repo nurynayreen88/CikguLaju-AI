@@ -63,6 +63,7 @@ class TimetableWordBundleTests(TestCase):
         self.assertEqual(len(result.sections), 2)
         self.assertEqual(result.sections[1].start_type, WD_SECTION_START.NEW_PAGE)
         self.assertEqual([round(section.left_margin.mm) for section in result.sections], [14, 10])
+        self.assertEqual(self.client.get(self.bundle_url).json, {"available": True})
 
     def test_requires_a_receipt_bound_to_the_same_bytes_and_account(self):
         original = self.document("RPH asal", 14)
