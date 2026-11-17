@@ -8,6 +8,7 @@ on:
       - 'web/rph_timetable_word_bundle.py'
       - 'web/rph_weekly_quota.py'
       - 'supabase/migrations/20261117120500_web_rph_weekly_exports.sql'
+      - 'supabase/migrations/20261117123500_web_rph_weekly_exports_sunday.sql'
       - 'web/unified_rph_web.py'
       - 'tests/test_web_rph_timetable_word_bundle.py'
       - 'requirements-web-v1.txt'
@@ -31,6 +32,7 @@ on:
       - 'web/rph_timetable_word_bundle.py'
       - 'web/rph_weekly_quota.py'
       - 'supabase/migrations/20261117120500_web_rph_weekly_exports.sql'
+      - 'supabase/migrations/20261117123500_web_rph_weekly_exports_sunday.sql'
       - 'web/unified_rph_web.py'
       - 'tests/test_web_rph_timetable_word_bundle.py'
       - 'requirements-web-v1.txt'
@@ -110,6 +112,13 @@ jobs:
           quota() {
             psql -v ON_ERROR_STOP=1 -Atq -c "set role service_role; select allowed,remaining from public.web_rph_weekly_usage($1);"
           }
+          test "$(quota "20,'00000000-0000-4000-8000-000000000020',repeat('a',64)")" = "t|1"
+          shifted="$(psql -Atq -c 'select week_start - 1 from public.web_rph_weekly_exports where teacher_id=20')"
+          psql -v ON_ERROR_STOP=1 -f supabase/migrations/20261117123500_web_rph_weekly_exports_sunday.sql
+          test "$(psql -Atq -c 'select week_start from public.web_rph_weekly_exports where teacher_id=20')" = "$shifted"
+          balance="$(quota 20)"
+          test "$(quota "20,'00000000-0000-4000-8000-000000000020',repeat('a',64)")" = "$balance"
+          test "$(psql -Atq -c "select extract(isodow from usage_week_start)::int from public.web_rph_weekly_usage(20)")" = "7"
           test "$(quota 11)" = "t|2"
           test "$(quota "11,'00000000-0000-4000-8000-000000000001',repeat('a',64)")" = "t|1"
           test "$(quota "11,'00000000-0000-4000-8000-000000000002',repeat('b',64)")" = "t|0"

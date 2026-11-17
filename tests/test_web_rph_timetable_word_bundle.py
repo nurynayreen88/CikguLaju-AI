@@ -14,6 +14,7 @@ from pypdf import PdfReader, PdfWriter
 from web.rph_timetable_word_bundle import (
     WORD_RECEIPT_HEADER, pdf_receipt_signer, word_receipt_claim, word_receipt_signer,
 )
+from web.rph_weekly_quota import weekly_usage
 from web.unified_rph_web import create_blueprint
 
 
@@ -110,8 +111,8 @@ class TimetableWordBundleTests(TestCase):
             pdfs.append(output.getvalue())
         pdf_signer = pdf_receipt_signer(self.secret)
         pdf_receipts = [pdf_signer.dumps(word_receipt_claim(123, doc)) for doc in pdfs]
-        status = {"available": True, "remaining": 2, "usage_week_start": "2026-11-16",
-                  "usage_week_end": "2026-11-22", "limit": 2}
+        status = {"available": True, "remaining": 2, "usage_week_start": "2026-11-15",
+                  "usage_week_end": "2026-11-21", "limit": 2}
         used = {}
 
         def debit(_config, uid, *, export_id=None, content_hash=None):
@@ -173,3 +174,12 @@ class TimetableWordBundleTests(TestCase):
         self.assertEqual(result.status_code, 200)
         claim = pdf_receipt_signer(self.secret).loads(result.headers["X-RPH-PDF-Receipt"])
         self.assertEqual(claim, word_receipt_claim(123, result.data))
+
+
+    def test_weekly_usage_preserves_the_quota_period_from_the_database(self):
+        for start, end in (("2026-11-15", "2026-11-21"), ("2026-11-16", "2026-11-22")):
+            with self.subTest(start=start), patch("web.rph_weekly_quota._request", return_value=[
+                {"allowed": True, "remaining": 2, "usage_week_start": start},
+            ]):
+                status = weekly_usage({"account_backend": "supabase"}, 123)
+                self.assertEqual((status["usage_week_start"], status["usage_week_end"]), (start, end))
