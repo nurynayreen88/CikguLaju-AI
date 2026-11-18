@@ -1829,7 +1829,7 @@
         "TB pp. 102-104"
       ],
       "objective": "Record the colours observed when white light passes through water and relate the result to a rainbow.",
-      "materials": "White light source, water tray and acrylic mirror, white card, rainbow photo",
+      "materials": "Low-power torch, water tray, acrylic mirror, white card, rainbow photo; never use direct sunlight or look into the beam.",
       "phases": [
         {
           "phase": "Set induction",
@@ -1840,7 +1840,7 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Use a teacher-led white-light demonstration with water, acrylic mirror and white card. Supply an observed result photo if lighting prevents a clear display.",
+          "teacher": "Use a teacher-positioned low-power torch, water and acrylic mirror to project white light onto the card. Pupils observe the card, not the light source or reflected beam. Supply an observed-result photo if lighting prevents a clear display.",
           "pupils": "Record visible colours and connect the water demonstration to light interacting with raindrops."
         },
         {
