@@ -12,11 +12,16 @@ Kesemua 96 kod LS, termasuk 12 kod Scientific Skills, sepadan dengan [DSKP Scien
 | Lesson 05 | Gunakan hlm. 4, 7–8 untuk pemboleh ubah dan takrif operasi jarak. |
 | Lesson 06 | Gunakan ujian jisim kereta belon pada hlm. 8 sebagai penyiasatan adil. Murid mengulang bacaan jarak dan menulis kesimpulan berdasarkan hasil. |
 | Review 01 | Gunakan soalan tafsiran, ramalan dan pemboleh ubah pada hlm. 11–12. |
+| Lesson 13 | Nyatakan jenis dan maksud mikroorganisma pada tajuk, selaras dengan LS 3.1.1–3.1.2. |
+| Lesson 14 | Murid mengambil empat bacaan lilitan belon dalam penyiasatan yis pembakar pada hlm. 36–37. Gunakan rakaman pergerakan dan foto pertumbuhan bertarikh bagi pemerhatian pada hlm. 37–39. |
+| Lesson 15 | Uji kesan nutrien mengikut fokus hlm. 43. Murid menyediakan dua keadaan dan membandingkan perubahan kiraan sel dalam grid setara. |
+| Lesson 16 | Murid menghuraikan kesan dalam kehidupan harian dan melaporkan satu pemerhatian kelas melalui lakaran berlabel. |
+| Review 03 | Gunakan log Lesson 14–15 dan contoh daripada ulasan buku teks untuk menilai ketiga-tiga LS. |
 | Review 04 | Gunakan rumusan dan soalan pemeliharaan pada hlm. 85–86. |
 | Lesson 46 | Gunakan model dan inset berlabel untuk menjelaskan kedudukan dan saiz relatif Sistem Suria. |
 | Lesson 50 | Bina daripada bahan kitar semula. Gunakan bukti ujian kestabilan dan beban untuk mewajarkan reka bentuk. |
 
-Lesson 14–15 menilai kemahiran tafsiran melalui rekod pemerhatian yang dibekalkan, mengikut RPT semasa. Semakan guru perlu menetapkan bagaimana evidens pelaksanaan penyiasatan dan eksperimen bagi LS 3.1.3–3.1.4 akan direkodkan. Lampu dan model dalaman digunakan untuk simulasi gerhana. Projek pengawetan Lesson 36 menggunakan sampel dan rekod susulan yang diselia oleh guru.
+Lesson 14–15 merekod penyiasatan, pemboleh ubah dan bacaan murid bagi LS 3.1.3–3.1.4. Guru menyemak kemudahan mikroskop dan selang masa untuk bacaan susulan Lesson 15. Lampu dan model dalaman digunakan untuk simulasi gerhana. Projek pengawetan Lesson 36 menggunakan sampel dan rekod susulan yang diselia oleh guru.
 
 ## Pengesahan dan eksport
 

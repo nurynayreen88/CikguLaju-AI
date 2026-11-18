@@ -14,6 +14,24 @@
     "R01": {
       "reference": "TB pp. 11-12"
     },
+    "L13": {
+      "title": "Types and meaning of microorganisms"
+    },
+    "L14": {
+      "title": "Investigate life processes of microorganisms",
+      "objective": "Investigate gas release from baker's yeast and use one observation each to describe respiration, movement and growth."
+    },
+    "L15": {
+      "title": "Test a factor affecting microorganism growth",
+      "objective": "Test how added sugar affects baker's yeast growth and use changes in cell counts to evaluate a prediction."
+    },
+    "L16": {
+      "title": "Explain effects and present observations",
+      "objective": "Explain one helpful and one harmful effect and present one observation from the class investigations in a captioned sketch."
+    },
+    "R03": {
+      "objective": "Use class results to explain one life process and one growth factor, and describe helpful and harmful effects in daily life."
+    },
     "R04": {
       "reference": "TB pp. 85-86"
     },
@@ -208,40 +226,40 @@
       "closure": "Ask why a large image does not mean the organism is large."
     },
     "L14": {
-      "materials": "Prepared micrographs and time-lapse clips, observation–inference grid",
-      "induction": "Show two images from a supplied sequence. Ask pupils to state what changed before interpreting it.",
-      "teach": "Introduce supplied records showing movement, a visible area change and gas from yeast activity. Distinguish an observation from its interpretation.",
-      "practice": "Compare three records and draw or write the visible evidence for movement, growth or gas production.",
-      "assessment": "Match each highlighted change to the process it supports and explain one limit of the evidence.",
-      "evidence": "Position change supports movement, expanding visible coverage supports growth, and gas production supports activity in the yeast example. These records do not establish the same behaviour in all types.",
-      "closure": "Ask what an image sequence shows that a single image cannot."
+      "materials": "Food-grade baker's yeast kit, balloons, string, ruler, timer, protozoan clip and dated mould photos",
+      "induction": "Show a balloon on a bottle. Ask pupils what they could measure to tell if it changes.",
+      "teach": "Set out kits before class. Guide Activity 1 with food-grade baker's yeast, supervise warm water and start the timer.",
+      "practice": "Start the test and record balloon circumference at 0, 10, 20 and 30 minutes. Between readings, sketch protozoan movement and compare mould coverage in dated photos.",
+      "assessment": "Submit the four readings and use one observation each to explain respiration, movement and growth.",
+      "evidence": "A change in balloon circumference indicates gas release. A change in position shows movement, and increased mould coverage shows growth.",
+      "closure": "Ask pupils which of their own readings supports the inference about gas release."
     },
     "L15": {
-      "materials": "Prepared coded records, day-by-day images, blank graph, variable cards",
-      "induction": "Show two prepared observational records and ask what pupils would need to know before comparing them.",
-      "teach": "Model looking for a single changed condition and identical observation intervals. Compare matches and mismatches in supplied data.",
-      "practice": "Use coded records to identify variables, graph a reported indicator over time and compare observations with a prediction. Critique one confounded record.",
-      "assessment": "In a sample record, refrigerated A scores 0 and 1, while room-stored B scores 0 and 4 at Days 1 and 3 on the same visible-change scale. Identify the factor and explain the result.",
-      "evidence": "Storage temperature is the changed condition. Between Day 1 and Day 3, B shows a score increase of four and A of one. The conclusion applies to the supplied records.",
-      "closure": "Ask which conclusion the data support and which claim requires additional evidence."
+      "materials": "Food-grade baker's yeast, sugar, labelled containers, teacher-prepared gridded microscope images, recording sheets",
+      "induction": "Use the nutrient prompt on textbook page 43. Ask what would count as a change in yeast cell numbers.",
+      "teach": "Supervise a comparison with and without added sugar. Check equal starting amounts of yeast, liquid volume, temperature and observation times. Prepare the microscope images.",
+      "practice": "Record a hypothesis and identify the variables. Set up the labelled samples and count cells in matched grid areas at the start of the test.",
+      "assessment": "Submit the hypothesis, variables and paired counts. Compare the change from baseline in both samples and use the results to evaluate the hypothesis.",
+      "evidence": "The table shows initial and follow-up counts for each condition. Cite both observed changes, and state if a further reading is needed for a conclusion.",
+      "closure": "Ask pupils how counting cells supports a conclusion about growth."
     },
     "L16": {
-      "materials": "Food and health case cards, two-column chart, captions",
+      "materials": "Food and health case cards, captioned sketch template, class investigation logs",
       "induction": "Show packaged yoghurt and a picture of spoiled food. Ask how related processes can have different effects.",
-      "teach": "Compare an intended food use such as yoghurt production with spoilage or illness, using cases rather than specimens.",
-      "practice": "Sort case cards, add how each effect arises and explain one match to a partner.",
-      "assessment": "Classify using bacteria to make yoghurt and microorganisms spoiling stored food. Explain the different outcomes.",
-      "evidence": "Selected bacteria help produce yoghurt under controlled production. Spoilage changes food quality and can make food unsafe.",
-      "closure": "Ask why a benefit depends on the context and type involved."
+      "teach": "Compare yoghurt production with food spoilage. Model a caption that cites an observation from a class investigation.",
+      "practice": "Sort the cases by effect. Use the class log to sketch and label one observed change, then explain it to a partner.",
+      "assessment": "Submit a captioned sketch and explain one helpful and one harmful effect of microorganisms.",
+      "evidence": "The caption cites an observed change. Selected bacteria help make yoghurt, and food spoilage changes food quality.",
+      "closure": "Ask a pupil to read a caption and identify the evidence it uses."
     },
     "R03": {
-      "materials": "Prepared observation records, effect cards, evidence slips",
-      "induction": "Reveal a movement sequence and a food-use image. Ask what each can support as evidence.",
-      "teach": "Model pairing a claim with one feature of a supplied record or case card.",
-      "practice": "Match cases to helpful or harmful effects and choose one indicator from a time sequence to support a growth claim.",
-      "assessment": "Explain one helpful effect, one harmful effect and one piece of evidence from a prepared record.",
-      "evidence": "For example, yoghurt production is helpful and food spoilage is harmful. Increasing visible coverage supports growth in an image sequence.",
-      "closure": "Ask how the two observations differ from the interpretations."
+      "materials": "Lesson 14 and 15 class logs, textbook review pp. 48-50, evidence slips",
+      "induction": "Show a balloon reading and a yeast cell count. Ask which question each measurement helps answer.",
+      "teach": "Use the textbook review and class logs to model pairing a claim with one measurement or example.",
+      "practice": "Explain a life process using Lesson 14 evidence. Compare cell count changes from Lesson 15, then sort two textbook examples by their effects.",
+      "assessment": "Use the logs to explain one life process and the tested growth factor. Give one helpful and one harmful example.",
+      "evidence": "Cite an observation from Lesson 14 and counts from both Lesson 15 conditions. Examples include yoghurt production and food spoilage.",
+      "closure": "Ask which two pieces of evidence came from separate investigations."
     },
     "L17": {
       "materials": "Habitat scenarios, same-species and mixed-species cards, role charts",
@@ -640,8 +658,8 @@
       "Rebuild both sequences from partial cues and explain one corrected relationship to a partner before the individual task."
     ],
     "L15": [
-      "Reveal a confounded record and a second pair with repeated readings. Ask which comparisons are defensible.",
-      "Check the observation key, plot the new results and note where confounding or limited repetition weakens the claim."
+      "Guide pupils in checking a second matched grid area. Capture the follow-up images at the same agreed time for both conditions.",
+      "Count both samples at follow-up. Compare the change in matched areas and check whether both sets support the same conclusion."
     ],
     "L17": [
       "Assign groups a common resource and vary its availability in the scenario.",

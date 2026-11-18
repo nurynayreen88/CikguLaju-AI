@@ -88,6 +88,9 @@ def load_plans():
             standards = f"{content_standard} · {learning_standards}"
 
         correction = data["schedule_corrections"].get(plan_id, {})
+        if "title" in correction:
+            title = correction["title"]
+            replace_cell_line(row.cells[1], heading, f"{label}  {title}")
         apply_corrections(row, objective, reference, correction)
         reference = correction.get("reference", reference)
         if not re.fullmatch(r"TB pp?\. \d+(?:-\d+)?(?:, ?\d+(?:-\d+)?)*", reference):
