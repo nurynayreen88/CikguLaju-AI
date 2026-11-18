@@ -36,7 +36,7 @@
  const TAGS=["component","theme","unit","topic","lesson"];
  const SOURCE_NAMES={
   BM:"Unit",ENGLISH:"Unit / Topic",PI:"Bidang / Tajuk",
-  MATH:"Bidang / Unit",MATH_SJKC:"Unit",SCIENCE:"Tema / Unit",MORAL:"Unit / Nilai",
+  MATH:"Bidang / Unit",MATH_SJKC:"Unit",MATH_SJKT:"Unit",SCIENCE:"Tema / Unit",MORAL:"Unit / Nilai",
   PSV:"Bidang / Unit",PJPK:"Unit / Tajuk",ARAB:"Unit",
   MUZIK:"Unit / Tajuk",SEJARAH:"Unit",RBT:"Unit"
  };
@@ -468,7 +468,7 @@
  async function initialize(c){
   c.busy=true;updateAll();
   try{
-   const extra=c.slot.curriculum==="sjkc"?{curriculum:"sjkc"}:{};
+   const extra=["sjkc","sjkt"].includes(c.slot.curriculum)?{curriculum:c.slot.curriculum}:{};
    const items=await sourceOptions(c.slot.year,"subjects",extra);
    if(c.ticket!==requestId)return;
    if(!items.some(x=>x.value===c.slot.subject_code)){

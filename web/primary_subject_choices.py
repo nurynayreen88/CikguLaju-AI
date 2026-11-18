@@ -16,6 +16,7 @@ def subject_variants():
             "code": definition.CODE, "label": definition.LABEL, "curriculum": "sjkc",
             "rpt_years": [year for year in definition.YEARS if definition.document_path(year)],
         })
+    rows.append({"code": "matematik_sjkt", "label": "Matematik (SJKT)", "curriculum": "sjkt"})
     for code, label in DLP_SUBJECTS.items():
         rows.append({
             "code": code, "label": f"{label} (DLP)", "curriculum": "dlp",
@@ -33,6 +34,7 @@ def variants_by_name():
         ("sains (dlp)", "science (dlp)"),
         ("matematik (dlp)", "mathematics (dlp)"),
         ("matematik sjkc", "matematik (sjkc)"),
+        ("matematik sjkt", "matematik (sjkt)"),
         ("bahasa melayu (sjkc)", "bahasa melayu (sjk)"),
     ):
         rows[alias] = rows[label]

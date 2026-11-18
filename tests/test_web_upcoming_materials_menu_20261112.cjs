@@ -40,7 +40,7 @@ assert.ok(pos("rph")<pos("worksheet") && pos("worksheet")<pos("bbm") &&
  pos("bbm")<pos("uasa") && pos("uasa")<pos("pbd") &&
  pos("pbd")<pos("special"),"Teaching-material features should follow Sediakan RPH");
 assert.doesNotMatch(source,/id="view-kp2027"|data-web-view="kp2027"/);
-assert.match(source,/<select id="curriculum">.*<option value="kssr">KSSR \(SK\)<\/option><option value="sjkc">KSSR \(SJKC\)<\/option><option value="sjkt">KSSR \(SJKT\) — Dalam Penyediaan<\/option><option value="kp2027">KP27 \(KP Baharu\)<\/option><option value="dlp">DLP<\/option><\/select>/);
+assert.match(source,/<select id="curriculum">.*<option value="kssr">KSSR \(SK\)<\/option><option value="sjkc">KSSR \(SJKC\)<\/option><option value="sjkt">KSSR \(SJKT\)<\/option><option value="kp2027">KP27 \(KP Baharu\)<\/option><option value="dlp">DLP<\/option><\/select>/);
 assert.match(source,/<select id="year" hidden disabled>/);
 assert.match(source,/<select id="subject" hidden disabled>/);
 assert.match(source,/year===1\?"Tahun 1 \(KP Baharu\)"/);
@@ -113,6 +113,7 @@ const variants=[
  {code:"science_dlp",label:"Science (DLP)",rph_code:"SCIENCE_DLP",curriculum:"dlp",rpt_years:[2,3,4,5,6]},
  {code:"mathematics_dlp",label:"Mathematics (DLP)",rph_code:"MATH_DLP",curriculum:"dlp",rpt_years:[2,3,4,5,6]},
  {code:"matematik_sjkc",label:"Matematik (SJKC)",curriculum:"sjkc",rpt_years:[2]},
+ {code:"matematik_sjkt",label:"Matematik (SJKT)",curriculum:"sjkt"},
  ...[
   ["bahasa_iban","Bahasa Iban"],["bahasa_kadazandusun","Bahasa Kadazandusun"],
   ["bahasa_semai","Bahasa Semai"],["bahasa_cina_sk","Bahasa Cina (SK)"],["bahasa_tamil_sk","Bahasa Tamil (SK)"]
@@ -132,6 +133,7 @@ const ctx={
  async loadOptions(kind,extra={}){
   catalogueCalls.push(kind);
   if(extra.curriculum==="sjkc")return ctx.sjkcReady?[{value:"MATH_SJKC",label:"Matematik SJKC"}]:[];
+  if(extra.curriculum==="sjkt")return ctx.sjktReady?[{value:"MATH_SJKT",label:"Matematik SJKT"}]:[];
   return [{value:"MATH",label:"Matematik"}];
  },
  showStep(el,visible){el.hidden=!visible;}, subjectNavLabel(){return "Unit";},
@@ -140,11 +142,16 @@ const ctx={
   if(extra.subject==="MATH_DLP")ctx.fillSelect(el,[{value:"01",label:"Unit 1 Whole Numbers and Operations"}],"Pilih Unit");
   if(extra.subject==="SCIENCE_DLP")ctx.fillSelect(el,[{value:"01",label:"Unit 1 Scientific Skills"}],"Pilih Unit");
   if(extra.subject==="MATH_SJKC")ctx.fillSelect(el,[{value:"2",label:"Unit 2 · 基本运算"}],"Pilih Unit");
+  if(extra.subject==="MATH_SJKT")ctx.fillSelect(el,[{value:"5",label:"Unit 5 · Masa dan waktu"}],"Pilih Unit");
  },
  async loadFinalLesson(kind,extra){
   catalogueCalls.push(kind,extra.subject,extra.unit);
   if(extra.subject==="MATH_SJKC"){
    ctx.fillSelect(lesson,[{value:"17",label:"PdP 017 · 无进退位的加减混合运算"}],"Pilih PdP");
+   return;
+  }
+  if(extra.subject==="MATH_SJKT"){
+   ctx.fillSelect(lesson,[{value:"71",label:"PdP 071 · Masa"}],"Pilih PdP");
    return;
   }
   const science=extra.subject==="SCIENCE_DLP";
@@ -198,11 +205,27 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  assert.deepEqual(catalogueCalls.splice(0),["subjects","units","MATH_SJKC","pdp","MATH_SJKC","2"]);
  curriculum.value="sjkt";
  listeners["curriculum.change"]();
- assert.equal(year.hidden,true);
+ assert.deepEqual(year.options.map(x=>x.label),["Pilih Tahun","Tahun 2"]);
  assert.equal(subject.hidden,true);
  assert.equal(variantRpt.hidden,true);
- assert.match(ctx.help,/RPH SJKT masih dalam penyediaan/);
- assert.deepEqual(catalogueCalls,[]);
+ year.value="2";
+ await listeners["year.change"]();
+ assert.equal(subject.options[1].label,"Matematik (SJKT) — RPH Dalam Penyediaan");
+ subject.value="matematik_sjkt";
+ await listeners["subject.change"]();
+ assert.match(ctx.help,/dalam penyediaan/i);
+ assert.equal(unit.hidden,true);
+ ctx.sjktReady=true;
+ await listeners["year.change"]();
+ assert.equal(subject.options[1].value,"MATH_SJKT");
+ subject.value="MATH_SJKT";
+ await listeners["subject.change"]();
+ assert.deepEqual(unit.options.map(x=>x.value),["","5"]);
+ assert.equal(variantRpt.hidden,true);
+ unit.value="5";
+ await listeners["unit.change"]();
+ assert.deepEqual(lesson.options.map(x=>x.value),["","71"]);
+ assert.deepEqual(catalogueCalls.splice(0),["subjects","subjects","units","MATH_SJKT","pdp","MATH_SJKT","5"]);
  curriculum.value="dlp";
  listeners["curriculum.change"]();
  assert.deepEqual(year.options.map(x=>x.label),[

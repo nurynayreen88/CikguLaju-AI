@@ -715,7 +715,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </section>
 <section id="view-rph" class="app-view" aria-labelledby="view-rph-heading" hidden>
 <h2 id="view-rph-heading" tabindex="-1">Sediakan RPH</h2><p id="account-access" class="notice" role="status"></p><section class="rph-guide" aria-label="Cara menyediakan RPH"><h3>Cara menyediakan RPH</h3><p><strong>1.</strong> Pilih Kurikulum → Tahun → Subjek → Unit/Tajuk → Lesson/PdP.</p><p><strong>2.</strong> Pilih kelas, tarikh, waktu mula/tamat dan bilangan murid jika perlu.</p><p><strong>3.</strong> Tekan <strong>Jana Bahan</strong> untuk melihat RPH PDF, RPH Word, Buku Teks, Audio dan Buku Aktiviti yang tersedia bagi Lesson/PdP ini, kemudian muat turun bahan pilihan.</p><p class="notice">Hanya RPH yang mempunyai sumber lengkap tersedia. 10 janaan RPH percuma dikongsi antara Web dan Telegram. Rakan Pembangun yang aktif mendapat akses tanpa had.</p></section><p id="selection-help" class="selection-help" role="status">Mula dengan memilih kurikulum.</p>
-<label for="curriculum">Kurikulum</label><select id="curriculum"><option value="">Pilih Kurikulum</option><option value="kssr">KSSR (SK)</option><option value="sjkc">KSSR (SJKC)</option><option value="sjkt">KSSR (SJKT) — Dalam Penyediaan</option><option value="kp2027">KP27 (KP Baharu)</option><option value="dlp">DLP</option></select>
+<label for="curriculum">Kurikulum</label><select id="curriculum"><option value="">Pilih Kurikulum</option><option value="kssr">KSSR (SK)</option><option value="sjkc">KSSR (SJKC)</option><option value="sjkt">KSSR (SJKT)</option><option value="kp2027">KP27 (KP Baharu)</option><option value="dlp">DLP</option></select>
 <label for="year" id="year-label" hidden>Tahun</label><select id="year" hidden disabled><option value="">Pilih Kurikulum dahulu</option></select>
 <label for="subject" id="subject-label" hidden>Subjek</label><select id="subject" hidden disabled><option value="">Pilih Tahun dahulu</option></select>
 <div id="rph-subject-search" class="school-picker-combo" hidden>
@@ -1098,6 +1098,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <p class="notice" id="web-admin-rph-note">Rekod janaan lama mungkin belum lengkap.</p>
 <p class="admin-stats-caption" id="web-admin-updated"></p>
 <button type="button" id="web-admin-refresh">🔄 Muat Semula Statistik</button>
+<a href="/admin/semakan/matematik-sjkt-tahun-2">Semak RPH Matematik SJKT Tahun 2</a>
 <section id="affiliate-admin" class="teacher-timetable-section" aria-labelledby="affiliate-admin-heading" hidden>
  <h3 id="affiliate-admin-heading">Pengurusan Affiliate</h3>
  <h4>Senarai Affiliate dan Baki Mata</h4>
@@ -1179,7 +1180,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </div>
 <script src="/assets/pdf-lib.min.js?v=1.17.1"></script>
 <script src="/assets/pdp-pdf-copy.js?v=science-copy-expanded-20261113"></script>
-<script src="/assets/primary-subjects.js?v=20261117"></script>
+<script src="/assets/primary-subjects.js?v=sjkt-tahun2-20261119"></script>
 <script src="/assets/rpt-personalize.js?v=20261116-english-integrated"></script>
 <script>
 "use strict";
@@ -1470,7 +1471,8 @@ const dlpReviewContent=document.getElementById("dlp-rph-content");
 const subjectVariants=window.cikgulajuSubjectVariants||[];
 function canSelectRph(){
  return curriculum.value==="kssr"||dlpRphDownload()||
-  (curriculum.value==="sjkc"&&year.value==="3"&&subject.value==="MATH_SJKC");
+  (curriculum.value==="sjkc"&&year.value==="3"&&subject.value==="MATH_SJKC")||
+  (curriculum.value==="sjkt"&&year.value==="2"&&subject.value==="MATH_SJKT");
 }
 function dlpRphDownload(){
  return curriculum.value==="dlp"&&["5","6"].includes(year.value)&&["MATH_DLP","SCIENCE_DLP"].includes(subject.value);
@@ -1479,6 +1481,8 @@ const subjectCollator=new Intl.Collator("ms-MY",{sensitivity:"base"});
 const dlpSubjectOptions=subjectVariants.filter(item=>item.curriculum==="dlp")
  .map(item=>({...item,value:item.rph_code}));
 const sjkcSubjectOptions=subjectVariants.filter(item=>item.curriculum==="sjkc")
+ .map(item=>({...item,value:item.code}));
+const sjktSubjectOptions=subjectVariants.filter(item=>item.curriculum==="sjkt")
  .map(item=>({...item,value:item.code}));
 const plannedKssrLanguages=subjectVariants.filter(item=>item.curriculum==="kssr")
  .map(item=>({...item,value:item.code}));
@@ -1494,6 +1498,7 @@ const primaryYears=[1,2,3,4,5,6].map(n=>({value:String(n),label:"Tahun "+n}));
 const curriculumYears={
  kssr:primaryYears,
  sjkc:primaryYears,
+ sjkt:primaryYears.filter(option=>option.value==="2"),
  kp2027:[{value:"1",label:"Tahun 1 (KP Baharu)"}],
  dlp:primaryYears.map(({value,label})=>({
   value,
@@ -1511,8 +1516,7 @@ function selectCurriculum(){
  resetSelect(subject,"Pilih Tahun dahulu");
  resetCurriculumChoices();
  catalogStatus.textContent="";
- updateSelectionHelp(curriculum.value==="sjkt"?"RPH SJKT masih dalam penyediaan.":
-   years.length?"Pilih Tahun.":"Mula dengan memilih kurikulum.");
+ updateSelectionHelp(years.length?"Pilih Tahun.":"Mula dengan memilih kurikulum.");
 }
 function showDlpReview(record){
  dlpPreviewPanel.hidden=!record;
@@ -1570,7 +1574,7 @@ function resetSelect(el,label){
 function subjectNavLabel(code){
  return ({
   BM:"Unit",ENGLISH:"Unit / Topic",PI:"Bidang / Tajuk",
-  MATH:"Bidang / Unit",MATH_SJKC:"Unit",SCIENCE:"Tema / Unit",
+  MATH:"Bidang / Unit",MATH_SJKC:"Unit",MATH_SJKT:"Unit",SCIENCE:"Tema / Unit",
   MORAL:"Unit / Nilai",PSV:"Bidang / Unit",PJPK:"Unit / Tajuk",
   ARAB:"Unit",MUZIK:"Unit / Tajuk",SEJARAH:"Unit",RBT:"Unit"
  })[code]||"Unit / Tajuk";
@@ -1688,13 +1692,14 @@ window.prepareRphFromToday=async function(slot,dateIso,inlineHost=null){
    for(const {node} of inlineRphAnchors)inlineHost.appendChild(node);
   }else showWebView("rph");
   const selectionEpoch=++todaySelectionEpoch;
-  curriculum.value=slot.curriculum==="sjkc"?"sjkc":"kssr";
+  const schoolCurriculum=["sjkc","sjkt"].includes(slot.curriculum)?slot.curriculum:"";
+  curriculum.value=schoolCurriculum||"kssr";
   selectCurriculum();
   year.value=String(slot.year);
   showStep(subject,true);
   const expectedYear=year.value;
   const expectedRevision=subjectLoadRevision;
-  const subjects=await loadOptions("subjects",slot.curriculum==="sjkc"?{curriculum:"sjkc"}:{});
+  const subjects=await loadOptions("subjects",schoolCurriculum?{curriculum:schoolCurriculum}:{});
   if(selectionEpoch!==todaySelectionEpoch)return false;
   if(expectedRevision!==subjectLoadRevision)throw Error("Pilihan ditukar semasa bacaan jadual.");
   fillSelect(subject,subjects,"Pilih Subjek");
@@ -1748,21 +1753,24 @@ year.addEventListener("change",async()=>{
   updateSelectionHelp(targetYear==="2"?"Pilih subjek untuk lihat RPH DLP Tahun 2.":"Pilih subjek DLP.");
   return;
  }
- if(choice==="sjkc"){
+ if(choice==="sjkc"||choice==="sjkt"){
+  const sjkt=choice==="sjkt", school=sjkt?"SJKT":"SJKC";
+  const mathCode="MATH_"+school, mathVariant="matematik_"+choice;
   let mathReady=false;
-  if(targetYear==="3"){
+  if(targetYear===(sjkt?"2":"3")){
    try{
-    const items=await loadOptions("subjects",{curriculum:"sjkc"});
-    mathReady=items.some(item=>item.value==="MATH_SJKC");
+    const items=await loadOptions("subjects",{curriculum:choice});
+    mathReady=items.some(item=>item.value===mathCode);
    }catch(_error){}
    if(revision!==subjectLoadRevision)return;
   }
-  fillSelect(subject,sjkcSubjectOptions.map(item=>({
-   value:mathReady&&item.value==="matematik_sjkc"?"MATH_SJKC":item.value,
-   label:mathReady&&item.value==="matematik_sjkc"?item.label:item.label+" — RPH Dalam Penyediaan"
+  const variants=sjkt?sjktSubjectOptions:sjkcSubjectOptions;
+  fillSelect(subject,variants.map(item=>({
+   value:mathReady&&item.value===mathVariant?mathCode:item.value,
+   label:mathReady&&item.value===mathVariant?item.label:item.label+" — RPH Dalam Penyediaan"
   })),"Pilih Subjek");
   showStep(subject,true);
-  updateSelectionHelp("Pilih subjek SJKC.");
+  updateSelectionHelp("Pilih subjek "+school+".");
   return;
  }
  if(choice!=="kssr")return;
@@ -1786,8 +1794,9 @@ subject.addEventListener("change",async()=>{
  rphSubjectPicker.sync();
  catalogStatus.textContent="";
  if(!code)return;
- if(curriculum.value==="sjkc"&&!canSelectRph()){
-  const variant=sjkcSubjectOptions.find(item=>item.value===code);
+ if(["sjkc","sjkt"].includes(curriculum.value)&&!canSelectRph()){
+  const variants=curriculum.value==="sjkt"?sjktSubjectOptions:sjkcSubjectOptions;
+  const variant=variants.find(item=>item.value===code);
   if(!variant)return;
   updateSelectionHelp("RPH "+variant.label+" Tahun "+targetYear+" dalam penyediaan.");
   return;
@@ -2494,7 +2503,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
-<script src="/assets/rph-today.js?v=sjkc-tahun3-20261119"></script>
+<script src="/assets/rph-today.js?v=sjkt-tahun2-20261119"></script>
 <script src="/assets/teacher-profile.js?v=pilihan-subjek-20261117"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>

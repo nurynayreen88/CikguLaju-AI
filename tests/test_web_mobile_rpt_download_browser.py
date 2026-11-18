@@ -57,6 +57,8 @@ class MobileRptDownloadTests(unittest.TestCase):
                 document.querySelector('#workspace').hidden=false;
                 const row={code:"matematik_sjkc",label:"Matematik (SJKC)",curriculum:"sjkc"};
                 sjkcSubjectOptions.push({...row,value:row.code,rpt_years:[2]});
+                sjktSubjectOptions.splice(0,sjktSubjectOptions.length,
+                    {code:"matematik_sjkt",value:"matematik_sjkt",label:"Matematik (SJKT)",curriculum:"sjkt"});
                 const realFetch=window.fetch;
                 window.fetch=async (url,options)=>url==='/api/rpt/2027/catalog'
                   ?new Response(JSON.stringify({subjects:[{...row,years:[
@@ -76,8 +78,13 @@ class MobileRptDownloadTests(unittest.TestCase):
             self.assertTrue(page.locator("#view-rph").is_visible())
             self.assertTrue(page.locator("#view-rpt").is_hidden())
             page.locator("#curriculum").select_option("sjkt")
-            self.assertIn("RPH SJKT masih dalam penyediaan",page.locator("#selection-help").inner_text())
-            self.assertTrue(page.locator("#year").is_hidden())
+            self.assertFalse(page.locator("#year").is_hidden())
+            page.locator("#year").select_option("2")
+            page.locator("#subject option[value='matematik_sjkt']").wait_for(state="attached")
+            search.fill("matematik sjkt")
+            search.press("Enter")
+            self.assertEqual(page.locator("#subject").input_value(),"matematik_sjkt")
+            self.assertIn("dalam penyediaan",page.locator("#selection-help").inner_text())
             self.assertTrue(page.locator("#view-rpt").is_hidden())
             page.locator('[data-web-view="rpt"]').click()
             self.assertTrue(page.locator("#view-rpt").is_visible())
