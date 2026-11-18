@@ -8,6 +8,7 @@ Important: the GitHub repository is public, so PDF files stored there are
 publicly readable even though the Telegram menu is paid-only.
 """
 from pathlib import Path
+from rpt_2027.matematik import sk_documents
 
 PDF_ROOT = Path(__file__).resolve().parent
 YEARS = frozenset(range(2, 7))
@@ -17,11 +18,15 @@ FILE_TEMPLATE = "RPT_Matematik_Tahun_%d_2027_v28_SEMENTARA.pdf"
 def pdf_path(year):
     if type(year) is not int or year not in YEARS:
         raise ValueError("Unsupported RPT Matematik year")
+    if year in sk_documents.DIGESTS:
+        return PDF_ROOT / (sk_documents.FILE_TEMPLATE % year)
     return PDF_ROOT / (FILE_TEMPLATE % year)
 
 
 def pdf_ready(year, ns=None):
     """Keep ns optional for compatibility with the English RPT menu."""
+    if year in sk_documents.DIGESTS:
+        return sk_documents.document_path(year, root=PDF_ROOT) is not None
     try:
         path = pdf_path(year)
         if not path.is_file() or path.stat().st_size < 100000:
@@ -72,14 +77,15 @@ def install(ns):
         if not pdf_ready(year):
             return send(
                 cid,
-                "⚠️ PDF RPT Matematik Tahun %d v28 belum tersedia pada pelayan. "
+                "⚠️ PDF RPT Matematik Tahun %d belum tersedia pada pelayan. "
                 "Tiada fail tahun lain dihantar sebagai pengganti." % year,
             )
 
         try:
+            version = "Kumpulan A/B · 117 Lesson · 96 jam" if year in sk_documents.DIGESTS else "v28 (DRAF/SEMENTARA)"
             result = send_document(
                 cid, str(pdf_path(year)),
-                "RPT Matematik Tahun %d — 2027 v28 (DRAF/SEMENTARA)" % year,
+                f"RPT Matematik Tahun {year} — 2027 {version}",
             )
             verify = ns.get("_telegram_delivery_ok_v25279")
             if callable(verify):

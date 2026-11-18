@@ -10,6 +10,7 @@ from tempfile import TemporaryDirectory
 from dlp_year2_rph import _pdf, _word
 from staging.dlp.year5 import downloads as year5_dlp
 from staging.dlp.year6 import render_mathematics, render_science
+from staging.matematik.documents_2027 import Downloads as MathSKDownloads
 from staging.sains.tahun5.eksport_2027 import render_rph as render_sains_year5
 from staging.sains.tahun5.semakan_penjana import ReviewRuntime
 from staging.sains.tahun6.eksport_2027 import render_rph as render_sains_year6
@@ -18,6 +19,8 @@ from staging.sains.tahun6.penjana_2027 import ScienceYear6Runtime
 PREFIX = "sk27:"
 STATE_KEY = "_sk_rph_2027"
 SETS = {"s": ("Sains SK Tahun 5", "Sains", "Tahun 5"),
+        "mt5": ("Matematik SK Tahun 5", "Matematik", "Tahun 5"),
+        "mt6": ("Matematik SK Tahun 6", "Matematik", "Tahun 6"),
         "m5": ("Mathematics DLP Year 5", "Mathematics (DLP)", "Tahun 5"),
         "d5": ("Science DLP Year 5", "Science (DLP)", "Tahun 5"),
         "m": ("Mathematics DLP Year 6", "Mathematics (DLP)", "Tahun 6"),
@@ -51,11 +54,12 @@ def install(runtime):
         return True
     science = {"s": (ReviewRuntime(), render_sains_year5),
                "s6": (ScienceYear6Runtime(), render_sains_year6)}
-    dlp = {"m": render_mathematics, "d6": render_science,
-           "m5": year5_dlp.MATHEMATICS, "d5": year5_dlp.SCIENCE}
+    documents = {"m": render_mathematics, "d6": render_science,
+                 "m5": year5_dlp.MATHEMATICS, "d5": year5_dlp.SCIENCE,
+                 "mt5": MathSKDownloads(5), "mt6": MathSKDownloads(6)}
     catalogues = {scope: _science_catalogue(source) for scope, (source, _) in science.items()}
     catalogues.update({scope: {group["id"]: group for group in module.download_catalogue()}
-                       for scope, module in dlp.items()})
+                       for scope, module in documents.items()})
     old_callback = runtime.callback
     old_continue = runtime._continue_after_rph_time
 
@@ -101,7 +105,7 @@ def install(runtime):
                 render_rph(stream, plan, _word if fmt == "word" else _pdf, teacher=data)
                 content = stream.getvalue()
             else:
-                module = dlp[scope]
+                module = documents[scope]
                 _, plan = module.resolve_download(choice["unit"], choice["id"])
                 content = module.render_download(plan, fmt, teacher)
             if not content.startswith(magic) or len(content) < 1000:

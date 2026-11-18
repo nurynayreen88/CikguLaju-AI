@@ -6,10 +6,13 @@ from pathlib import Path
 from threading import Lock
 from types import SimpleNamespace
 import unittest
+from unittest.mock import patch
 
 from docx import Document
+from flask import Flask
 from pypdf import PdfReader
 
+from staging.matematik.penjana_2027 import ROUTE, register_downloads
 from web.telegram_sk_rph_2027 import install
 from web.telegram_rph_entry_choices_20261110 import install as install_entry
 
@@ -82,9 +85,10 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                         self.assertEqual(self.documents[-1][0], f"CikguLaju_RPH_{code}.pdf")
                         self.assertEqual(len(PdfReader(BytesIO(self.documents[-1][1])).pages), 1)
                         counts[set_id] += 1
-        self.assertEqual(counts, {"s": 116, "m": 54, "s6": 89, "d6": 61, "m5": 69, "d5": 70})
-        self.assertEqual(len(self.documents), 918)
-        self.assertEqual(self.credits, 459)
+        self.assertEqual(counts, {"s": 116, "m": 54, "s6": 89, "d6": 61, "m5": 69,
+                                  "d5": 70, "mt5": 117, "mt6": 117})
+        self.assertEqual(len(self.documents), 1386)
+        self.assertEqual(self.credits, 693)
 
     def test_wrong_set_old_buttons_and_failed_delivery_cannot_charge(self):
         word, _ = self._select("s", "01", "SK27-SCI-Y5-PDP-001")
@@ -94,6 +98,7 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         self.allow_delivery = True
         self.click(word)
         self.assertEqual(self.credits, 1)
+
         doc = Document(BytesIO(self.documents[-1][1]))
         self.assertEqual(doc.paragraphs[2].text, "Pemerhatian kualitatif dengan deria")
         self.assertIn("Bestari", doc.tables[0].rows[3].cells[1].text)
@@ -104,3 +109,35 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         self.click(next_word)
         self.assertEqual(len(self.documents), 2)
         self.assertEqual(self.credits, 1)
+
+    def test_private_web_render_matches_telegram_for_year_six_ratio(self):
+        app = Flask(__name__)
+        register_downloads(app)
+        client = app.test_client()
+        token = "math-sk-2027-test-token-for-local-app"
+        headers = {"Authorization": f"Bearer {token}"}
+        query = {"year": 6, "subject": "MATH"}
+        lesson = "SK27-MATH-Y6-L097"
+        with patch.dict("os.environ", {"CIKGULAJU_WEB_NATIVE_RPH_ENABLED": "1",
+                                     "CIKGULAJU_AUTHORITATIVE_API_TOKEN": token}):
+            self.assertEqual(client.get(ROUTE + "/units", query_string=query).status_code, 401)
+            units = client.get(ROUTE + "/units", query_string=query, headers=headers).json["items"]
+            self.assertEqual(len(units), 8)
+            selection = {**query, "unit": units[6]["value"], "lesson": lesson}
+            wrong_unit = {**selection, "unit": units[0]["value"]}
+            self.assertEqual(client.get(ROUTE + "/availability", query_string=wrong_unit,
+                                        headers=headers).status_code, 404)
+            teacher = {"class": "Bestari", "date": "2027-10-18", "time": "08:00-09:00", "students": "32"}
+            response = client.post(ROUTE + "/render", headers=headers, json={
+                "selection": selection, "teacher": teacher, "format": "word",
+            })
+            self.assertEqual(response.status_code, 200)
+        word, _ = self._select("mt6", "07", lesson)
+        self.click(word)
+        native, telegram = (Document(BytesIO(data)) for data in
+                            (response.data, self.documents[-1][1]))
+        self.assertEqual(native.paragraphs[2].text, telegram.paragraphs[2].text)
+        native_header = native.tables[0].rows
+        telegram_header = telegram.tables[0].rows
+        self.assertEqual(native_header[4].cells[1].text, telegram_header[4].cells[1].text)
+        self.assertIn("SK 7.2", native_header[4].cells[1].text)

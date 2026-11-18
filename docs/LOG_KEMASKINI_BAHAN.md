@@ -242,3 +242,10 @@ Setiap sesi pembaikan baharu perlu merekodkan jenis bahan, rujukan PR, keputusan
 
 - **HOLD** dalam [PR #833](https://github.com/nurynayreen88/CikguLaju-AI/pull/833). Semak Lesson 33, 37–40, 43–46, 51, 69 dan 75. Kemas kini bukti PBD bagi kedua-dua SP serta rujukan sebenar bahan BPK yang digunakan. [Semakan sumber dan audio](../audits/english_y5_october_integrated_source_review_20261116.md#semakan-17-november-bagi-baki-12-lesson).
 - Padankan 11 sampel rakaman dengan buku atau skrip dan sahkan semua fail tersebut boleh dinyahkod hingga akhir. Kelulusan guru, padanan rakaman lain dan muat turun melalui akaun guru Web serta Telegram produksi kekal dalam semakan.
+
+## 18 November 2026 — Pelepasan RPT/RPH Matematik SK Tahun 5 dan 6
+
+- **HOLD untuk pelepasan.** Kandidat mengambil set Tahun 5 dan 6 yang diaudit daripada [PR #918](https://github.com/nurynayreen88/CikguLaju-AI/pull/918) pada komit `2130fc731fc289ddea7b24ca44a6e958098a031f`. Setiap tahun meliputi 117 Lesson, 96 jam, Kumpulan A/B dan PdP hingga Minggu 38.
+- Dua PDF RPT menggunakan muka depan Web asal dan jadual baharu. Katalog Telegram dan penjana untuk Web menggunakan kod Lesson 2027 yang sepadan dengan RPT. Muat turun Word/PDF menerima maklumat kelas guru melalui laluan sedia ada.
+- Ujian setempat penjana persendirian menjana kesemua 234 Word dan 234 PDF, mengesahkan SK/SP dan maklumat guru. Semua PDF RPH dan hasil render Word ialah satu halaman A4. Permintaan tanpa token dan pilihan Lesson daripada unit yang salah ditolak.
+- Padanan RPT dan RPH Web bergantung pada pelepasan penjana Telegram serta cabang Web produksi. Keputusan CI dan penghantaran sebenar dengan sesi guru produksi masih menunggu pengesahan.

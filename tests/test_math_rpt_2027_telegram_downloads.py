@@ -8,6 +8,7 @@ from unittest.mock import patch
 
 from rpt_2027.english import telegram_downloads as english
 from rpt_2027.matematik import telegram_downloads as math
+from rpt_2027.matematik.sk_documents import DIGESTS
 
 
 # Exact Drive originals; these assets are intentionally shipped in GitHub.
@@ -61,12 +62,20 @@ class MatematikRPTTests(unittest.TestCase):
     def test_all_five_committed_pdfs_match_drive_originals(self):
         for year, (expected_size, expected_sha256) in ASSETS.items():
             with self.subTest(year=year):
-                path = math.pdf_path(year)
+                path = math.PDF_ROOT / (math.FILE_TEMPLATE % year)
                 self.assertEqual(path.parent, math.PDF_ROOT)
                 self.assertTrue(math.pdf_ready(year))
                 self.assertEqual(path.stat().st_size, expected_size)
                 self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), expected_sha256)
                 self.assertIn("v28_SEMENTARA.pdf", path.name)
+
+    def test_years_five_and_six_deliver_the_matching_editions(self):
+        for year, digest in DIGESTS.items():
+            with self.subTest(year=year):
+                path = math.pdf_path(year)
+                self.assertTrue(math.pdf_ready(year))
+                self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), digest)
+                self.assertNotIn("v28", path.name)
 
     def test_legacy_callback_untouched(self):
         self.assertEqual(self.ns["callback"](9, "home"), ("legacy", 9, "home"))
@@ -86,7 +95,7 @@ class MatematikRPTTests(unittest.TestCase):
         self.assertTrue(result.ok)
         self.assertEqual(self.documents, [
             (9, str(math.pdf_path(5)),
-             "RPT Matematik Tahun 5 — 2027 v28 (DRAF/SEMENTARA)")
+             "RPT Matematik Tahun 5 — 2027 Kumpulan A/B · 117 Lesson · 96 jam")
         ])
 
     def test_admin_can_download(self):
