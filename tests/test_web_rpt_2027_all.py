@@ -38,24 +38,31 @@ class AllSubjectRPTTests(unittest.TestCase):
 
     @patch("web.rpt_2027_all_http._has_paid_access", return_value=True)
     @patch("web.rpt_2027_all_http._account", return_value=({"authenticated": True}, None))
-    def test_year_six_science_uses_aligned_pdf_and_signed_cover_source(self, *_mocks):
+    def test_approved_rpt_uses_aligned_pdf_and_signed_cover_source(self, *_mocks):
         root = Path(__file__).resolve().parents[1] / "rpt_2027"
         app = Flask(__name__)
         app.register_blueprint(create_all_rpt_blueprint(root=root))
         client = app.test_client()
         from json import loads
 
-        layouts = loads((root / "web_2027_pdfs/original_cover_layout_verified.json").read_text())["science_year6_covers"]
-        for subject in ("sains", "science_dlp"):
-            with self.subTest(subject=subject):
-                response = client.get(f"/api/rpt/2027/all/{subject}/6.pdf")
+        config = loads((root / "web_2027_pdfs/original_cover_layout_verified.json").read_text())
+        layouts = config["science_year6_covers"] | config["aligned_rpt_covers"]
+        catalog = client.get("/api/rpt/2027/catalog").get_json()
+        for subject, year in (("sains", 5), ("sains", 6), ("science_dlp", 6), ("mathematics_dlp", 6)):
+            with self.subTest(subject=subject, year=year):
+                choice = next(item for item in catalog["subjects"] if item["code"] == subject)
+                entry = next(item for item in choice["years"] if item["year"] == year)
+                self.assertEqual(entry["status"], "TERSEDIA")
+                self.assertFalse(entry["is_draft"])
+                response = client.get(f"/api/rpt/2027/all/{subject}/{year}.pdf")
                 self.addCleanup(response.close)
                 self.assertEqual(response.status_code, 200)
+                self.assertNotIn("DRAF", response.headers["Content-Disposition"].upper())
                 digest = sha256(response.data).hexdigest()
                 self.assertEqual(response.headers["X-RPT-Source-SHA256"], digest)
                 self.assertEqual(response.headers["X-RPT-Personalization-Allowed"], "1")
-                layout = layouts[f"{subject}:6"]
-                self.assertEqual(layout["source_sha256_by_subject_year"], {f"{subject}:6": digest})
+                layout = layouts[f"{subject}:{year}"]
+                self.assertEqual(layout["source_sha256_by_subject_year"], {f"{subject}:{year}": digest})
 
     @patch("web.rpt_2027_all_http._has_paid_access", return_value=False)
     @patch("web.rpt_2027_all_http._account", return_value=({"authenticated": True}, None))

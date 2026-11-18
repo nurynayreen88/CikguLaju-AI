@@ -78,6 +78,8 @@
   function validatedLayout(layout,key,hash){
     const scienceYear6 = layout?.science_year6_covers?.[key];
     const alignedScience = Boolean(scienceYear6&&scienceYear6.source_sha256_by_subject_year?.[key]===hash);
+    const alignedCover = layout?.aligned_rpt_covers?.[key];
+    const alignedRPT = Boolean(alignedCover&&alignedCover.source_sha256_by_subject_year?.[key]===hash);
     const dlp = /^(science|mathematics)_dlp:([2-6])$/.exec(key);
     const sjkc = /^bahasa_cina_sjkc:[2-6]$/.test(key);
     const bmSjk = /^bahasa_melayu_sjk:[2-6]$/.test(key);
@@ -92,8 +94,9 @@
     if(dlp)layout = layout?.[`dlp_year${dlp[2]}`];
     if(sjkc)layout = layout?.sjkc_bahasa_cina;
     if(alignedScience)layout = scienceYear6;
-    const status = alignedScience ? "SCIENCE_YEAR_6_PDF_COVER" : integratedEnglish ? "ENGLISH_INTEGRATED_RPT_COVER" : matematikSjkc ? "SJKC_MATEMATIK_PDF_COVER" : sainsSjkc ? "SJKC_SAINS_PDF_COVER" : bmSjk ? "SJK_BAHASA_MELAYU_PDF_COVER" : sjkc ? "SJKC_BAHASA_CINA_PDF_COVER" : dlp ? `DLP_YEAR_${dlp[2]}_PDF_COVER` : "ORIGINAL_COVER_TEMPLATE_LOCKED_TO_56_SOURCE_PDF_SHA256";
-    const count = alignedScience ? 1 : integratedEnglish ? 5 : matematikSjkc ? 1 : sainsSjkc ? 5 : bmSjk ? 5 : sjkc ? 5 : dlp ? 2 : 56;
+    if(alignedRPT)layout = alignedCover;
+    const status = alignedRPT ? "ALIGNED_RPT_PDF_COVER" : alignedScience ? "SCIENCE_YEAR_6_PDF_COVER" : integratedEnglish ? "ENGLISH_INTEGRATED_RPT_COVER" : matematikSjkc ? "SJKC_MATEMATIK_PDF_COVER" : sainsSjkc ? "SJKC_SAINS_PDF_COVER" : bmSjk ? "SJK_BAHASA_MELAYU_PDF_COVER" : sjkc ? "SJKC_BAHASA_CINA_PDF_COVER" : dlp ? `DLP_YEAR_${dlp[2]}_PDF_COVER` : "ORIGINAL_COVER_TEMPLATE_LOCKED_TO_56_SOURCE_PDF_SHA256";
+    const count = alignedRPT||alignedScience ? 1 : integratedEnglish ? 5 : matematikSjkc ? 1 : sainsSjkc ? 5 : bmSjk ? 5 : sjkc ? 5 : dlp ? 2 : 56;
     if(!layout||layout.version!==1||
        layout.status!==status||
        Object.keys(layout.source_sha256_by_subject_year||{}).length!==count||
