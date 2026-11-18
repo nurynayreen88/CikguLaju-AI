@@ -7,6 +7,8 @@ import os
 from flask import jsonify
 from tools.run_web_v1_preview import app
 from web_v1_telegram_auth_routes import _config
+from web_v1_email_auth_routes import email_auth_blueprint
+app.register_blueprint(email_auth_blueprint)
 from web.teacher_profile_routes import bp as teacher_profile_bp
 app.register_blueprint(teacher_profile_bp)
 from web.rph_hari_ini_web import bp as rph_hari_ini_bp
@@ -49,6 +51,14 @@ def web_brand_logo():
     from flask import send_file
     path = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "cikgulaju-logo.svg"
     return send_file(path, mimetype="image/svg+xml", conditional=True, max_age=86400)
+
+
+@app.get("/assets/web-email-auth.js")
+def web_email_auth_script():
+    from pathlib import Path
+    from flask import send_file
+    path = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "web-email-auth.js"
+    return send_file(path, mimetype="application/javascript", max_age=1800, conditional=True)
 
 
 @app.get("/assets/pbd.js")

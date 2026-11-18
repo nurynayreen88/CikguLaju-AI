@@ -479,9 +479,36 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <img class="login-brand" src="/assets/cikgulaju-logo.svg" width="118" height="118" alt="CikguLaju AI" decoding="async">
 <span class="pill">Versi Web</span>
 <h1>Sediakan RPH langkah demi langkah</h1>
-<p>Log masuk dengan akaun Telegram CikguLaju. Pilih Tahun, Subjek, Unit/Tajuk dan Lesson/PdP, kemudian jana RPH Word atau PDF terus menggunakan penjana Telegram.</p>
+<p>Log masuk menggunakan Telegram atau e-mel. Pengguna baharu boleh daftar dengan e-mel dan kata laluan tanpa Telegram. Pilih Tahun, Subjek, Unit/Tajuk dan Lesson/PdP untuk menyediakan RPH.</p>
 <div id="telegram-widget" aria-label="Log masuk Telegram"></div>
 <p class="notice" role="status" id="login-status">Menyemak sambungan log masuk…</p>
+<section id="email-auth-panel" class="teacher-profile-section" hidden aria-labelledby="email-auth-heading">
+ <h2 id="email-auth-heading">Log masuk atau daftar dengan e-mel</h2>
+ <form id="email-login-form" class="teacher-profile-form" autocomplete="on">
+  <label for="email-login-address">Alamat e-mel</label>
+  <input id="email-login-address" name="email" type="email" autocomplete="username" maxlength="254" required>
+  <label for="email-login-password">Kata laluan</label>
+  <input id="email-login-password" name="password" type="password" autocomplete="current-password" minlength="8" maxlength="128" required>
+  <div class="profile-actions"><button type="submit">Log Masuk E-mel</button><button type="button" id="email-password-reset" class="secondary">Lupa Kata Laluan</button></div>
+ </form>
+ <details>
+  <summary>Daftar akaun baharu dengan e-mel</summary>
+  <form id="email-signup-form" class="teacher-profile-form" autocomplete="on">
+   <label for="email-signup-address">Alamat e-mel</label>
+   <input id="email-signup-address" name="email" type="email" autocomplete="email" maxlength="254" required>
+   <label for="email-signup-password">Cipta kata laluan (sekurang-kurangnya 8 aksara)</label>
+   <input id="email-signup-password" name="password" type="password" autocomplete="new-password" minlength="8" maxlength="128" required>
+   <div class="profile-actions"><button type="submit">Daftar dengan E-mel</button></div>
+  </form>
+ </details>
+ <form id="email-password-change-form" class="teacher-profile-form" hidden>
+  <h3>Tetapkan Kata Laluan Baharu</h3>
+  <label for="email-password-change">Kata laluan baharu (sekurang-kurangnya 8 aksara)</label>
+  <input id="email-password-change" type="password" autocomplete="new-password" minlength="8" maxlength="128" required>
+  <div class="profile-actions"><button type="submit">Simpan Kata Laluan Baharu</button></div>
+ </form>
+ <p id="email-auth-status" class="notice" role="status" aria-live="polite"></p>
+</section>
 </main>
 <section id="workspace" class="panel" hidden>
 <div class="app-shell">
@@ -816,6 +843,19 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <h2 id="view-account-heading" tabindex="-1">Profil Guru</h2>
 <p>Maklumat guru yang sama boleh dilihat dan dikemas kini melalui Telegram atau Web. Isi sekali untuk memudahkan penyediaan RPH.</p>
 <p id="profile-access-summary" class="profile-access-status" role="status">Memuatkan status akaun…</p><p><button type="button" id="profile-refresh" class="profile-refresh" aria-label="Refresh profil dari Telegram atau Web">🔄 Refresh Profil &amp; Jadual</button></p>
+<section id="email-link-section" class="teacher-profile-section" aria-labelledby="email-link-heading" hidden>
+ <h3 id="email-link-heading">Log masuk menggunakan e-mel</h3>
+ <p>Tambah e-mel dan kata laluan pada akaun Telegram ini. Selepas pengesahan, kedua-dua cara log masuk akan membuka profil dan baki yang sama.</p>
+ <form id="email-link-form" class="teacher-profile-form" autocomplete="on">
+  <label for="email-link-address">Alamat e-mel</label>
+  <input id="email-link-address" name="email" type="email" autocomplete="email" maxlength="254" required>
+  <label for="email-link-password">Kata laluan e-mel (sekurang-kurangnya 8 aksara)</label>
+  <input id="email-link-password" name="password" type="password" autocomplete="current-password" minlength="8" maxlength="128" required>
+  <p>Jika e-mel ini belum berdaftar, kami akan menghantar pautan pengesahan. Jika sudah berdaftar, masukkan kata laluan sedia ada.</p>
+  <div class="profile-actions"><button type="submit">Pautkan E-mel</button></div>
+ </form>
+ <p id="email-link-status" class="notice" role="status" aria-live="polite"></p>
+</section>
 <section id="pdp-summary" class="profile-setup-guide" aria-labelledby="pdp-summary-heading">
   <h3 id="pdp-summary-heading" tabindex="-1">Kemajuan PdP</h3>
   <p id="pdp-summary-status" class="notice" role="status"></p>
@@ -2485,5 +2525,6 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/admin-usage.js?v=payment-inbox-20261114"></script>
 <script src="/assets/web-feedback.js?v=comments-inbox-20261112"></script>
 <script src="/assets/special-activities.js?v=pilihan-subjek-20261117"></script>
+<script src="/assets/web-email-auth.js?v=20261118-email-password"></script>
 </body>
 </html>
