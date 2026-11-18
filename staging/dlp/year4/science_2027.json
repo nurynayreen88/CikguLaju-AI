@@ -1,0 +1,3297 @@
+{
+  "year": 4,
+  "planning_year": 2027,
+  "subject": "SCIENCE_DLP",
+  "rpt_file": "CikguLaju_RPT_DLP_2027_Science_Year_4.docx",
+  "rpt_sha256": "b2fb5326544fc33923815fe951e502c2a4ccdce69e3105e3e9c07d5e63ad6e7c",
+  "plans": [
+    {
+      "id": "DLP-SCI-Y4-L01",
+      "label": "Lesson 01",
+      "title": "Observe and describe",
+      "unit": "Unit 1 Scientific Skills",
+      "rpt_dates": [
+        "A  4-7 Jan",
+        "B  4-8 Jan"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 1.1",
+        "LS 1.1.1"
+      ],
+      "references": [
+        "TB p. 2"
+      ],
+      "objective": "Record two observations of a classroom object and identify the sense or tool used.",
+      "materials": "Leaf, hand lens, observation slip",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a leaf and ask for one feature another pupil could check.",
+          "pupils": "Inspect the leaf and name a visible feature."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model recording colour and texture with a sense or hand lens, then hand out two leaves.",
+          "pupils": "Examine one leaf, record two observations and name the sense or tool used for each."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check that each statement describes a property visible or detectable on the leaf.",
+          "pupils": "Individually record two observations with their sense or tool."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask how a partner could check an observation about the edge.",
+          "pupils": "Point to the edge and describe what to look for."
+        }
+      ],
+      "follow_up": "Practise turning opinions about an object into checkable observations."
+    },
+    {
+      "id": "DLP-SCI-Y4-L02",
+      "label": "Lesson 02",
+      "title": "Classify by a shared feature",
+      "unit": "Unit 1 Scientific Skills",
+      "rpt_dates": [
+        "A  4-7 Jan",
+        "B  4-8 Jan"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 1.1",
+        "LS 1.1.2"
+      ],
+      "references": [
+        "TB p. 3"
+      ],
+      "objective": "Sort a set of leaves into two groups and state the rule used.",
+      "materials": "Six fallen leaves, sorting mats, exit slips",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show two leaves with different edges and ask how they differ.",
+          "pupils": "Describe each edge using a visible characteristic."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model a two-group sort by smooth or toothed edge. Give six leaves with clear edges.",
+          "pupils": "Agree a rule, place each leaf once and compare the groups."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check an individual sort of the same six leaves and the written rule.",
+          "pupils": "Sort all six independently and write the rule."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Show an unfamiliar leaf with a toothed edge.",
+          "pupils": "Place it in the toothed group and name the evidence."
+        }
+      ],
+      "follow_up": "Re-sort a set using one feature consistently."
+    },
+    {
+      "id": "DLP-SCI-Y4-L03",
+      "label": "Lesson 03",
+      "title": "Measure using standard units",
+      "unit": "Unit 1 Scientific Skills",
+      "rpt_dates": [
+        "A  10-14 Jan",
+        "B  11-15 Jan"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 1.1",
+        "LS 1.1.3"
+      ],
+      "references": [
+        "TB pp. 3-4"
+      ],
+      "objective": "Measure three objects with a ruler and record each result in centimetres.",
+      "materials": "Rulers marked in centimetres, eraser, pencil, card strip",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Place a strip at the 1 cm mark and ask where it should begin.",
+          "pupils": "Point to zero and explain the alignment."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Demonstrate reading a ruler from above. Set out objects shorter than each ruler.",
+          "pupils": "Measure the eraser, pencil and strip from zero and record each length."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Observe one check measurement per pupil and verify all three readings and units.",
+          "pupils": "Submit three lengths in cm and demonstrate one reading."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Show a ruler with a gap before zero.",
+          "pupils": "Explain why the scale start and ruler edge differ."
+        }
+      ],
+      "follow_up": "Repeat one reading with the object correctly aligned."
+    },
+    {
+      "id": "DLP-SCI-Y4-L04",
+      "label": "Lesson 04",
+      "title": "Infer and predict",
+      "unit": "Unit 1 Scientific Skills",
+      "rpt_dates": [
+        "A  10-14 Jan",
+        "B  11-15 Jan"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 1.1",
+        "LS 1.1.4, 1.1.5"
+      ],
+      "references": [
+        "TB pp. 4-5"
+      ],
+      "objective": "Separate an observation from its inference and justify a prediction using the available evidence.",
+      "materials": "Before-and-after puddle pictures with times, comparison cards",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a large puddle at 9 a.m. and a smaller one at 10 a.m.",
+          "pupils": "State one visible change."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Separate a recorded detail from an inference. Compare equal cups of water kept in shade and sun using picture data.",
+          "pupils": "Mark the difference, infer why it occurred and predict which level will fall more by noon."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check three labelled responses and a prediction that cites the trend shown.",
+          "pupils": "Write an observation, an inference and an evidence-based prediction."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask which statement could be checked at noon.",
+          "pupils": "Identify the prediction and say what to measure."
+        }
+      ],
+      "follow_up": "Give another example of a recorded fact and a possible explanation."
+    },
+    {
+      "id": "DLP-SCI-Y4-L05",
+      "label": "Lesson 05",
+      "title": "Present observations in time order",
+      "unit": "Unit 1 Scientific Skills",
+      "rpt_dates": [
+        "A  17-21 Jan",
+        "B  18-22 Jan"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 1.1",
+        "LS 1.1.6, 1.1.7"
+      ],
+      "references": [
+        "TB pp. 5-7"
+      ],
+      "objective": "Sequence the changes in an observation and communicate the sequence in a labelled table.",
+      "materials": "Four timestamped pictures of an ice cube melting, table slips",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show the first and last images with times covered.",
+          "pupils": "Suggest which came earlier and give one clue."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Reveal times and model a table with time and visible change as headings.",
+          "pupils": "Order all four pictures and enter one observable change for each time."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check sequence and headings on each pupil's own table.",
+          "pupils": "Submit a labelled time table covering all four pictures."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Show a mixed-up pair of images.",
+          "pupils": "Correct their order using a timestamp and a visible clue."
+        }
+      ],
+      "follow_up": "Practise matching time labels to changes in a new sequence."
+    },
+    {
+      "id": "DLP-SCI-Y4-L06",
+      "label": "Lesson 06",
+      "title": "Interpret an observed trend",
+      "unit": "Unit 1 Scientific Skills",
+      "rpt_dates": [
+        "A  24-28 Jan",
+        "B  25-29 Jan"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 1.1",
+        "LS 1.1.8"
+      ],
+      "references": [
+        "TB pp. 8-9"
+      ],
+      "objective": "Use two values from a results table to explain how the measured outcome changes.",
+      "materials": "Plant height table, rulers, slips",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Display heights of 4 cm and 7 cm taken a week apart.",
+          "pupils": "State which measurement is greater and by how much."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Use a table for four weeks showing 4, 7, 9 and 11 cm. Model a trend statement supported by two readings.",
+          "pupils": "Compare pairs of readings and explain the overall change to a partner."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check a trend statement with two values and their units.",
+          "pupils": "Individually cite weeks 1 and 4 and explain the 7 cm increase."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask if every interval had the same increase.",
+          "pupils": "Compare 3 cm between weeks 1 and 2 with 2 cm between weeks 2 and 3."
+        }
+      ],
+      "follow_up": "Ask pupils to cite exact evidence before stating a trend."
+    },
+    {
+      "id": "DLP-SCI-Y4-L07",
+      "label": "Lesson 07",
+      "title": "Define an outcome operationally",
+      "unit": "Unit 1 Scientific Skills",
+      "rpt_dates": [
+        "A  24-28 Jan",
+        "B  25-29 Jan"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 1.1",
+        "LS 1.1.9"
+      ],
+      "references": [
+        "TB pp. 10-11"
+      ],
+      "objective": "Write an observable test for a property and use it consistently on two examples.",
+      "materials": "Paper towel, waxed paper, equal drops of water, timer",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show water beading on waxed paper.",
+          "pupils": "Suggest a visible test for whether a material absorbs water."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Agree an operational rule. Place one drop on each material and check for a surface droplet after ten seconds.",
+          "pupils": "Apply the same rule and time to paper towel and waxed paper, then record results."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check whether pupils define the procedure and record both visible outcomes.",
+          "pupils": "Individually describe the agreed test and classify both samples from their observations."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask why the wait time must stay fixed.",
+          "pupils": "Explain how changing the time could change the result."
+        }
+      ],
+      "follow_up": "Ask pupils to replace broad descriptors with observable criteria."
+    },
+    {
+      "id": "DLP-SCI-Y4-L08",
+      "label": "Lesson 08",
+      "title": "Choose variables and test a prediction",
+      "unit": "Unit 1 Scientific Skills",
+      "rpt_dates": [
+        "A  31 Jan-4 Feb",
+        "B  2-4 Feb"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 1.1",
+        "LS 1.1.10, 1.1.11"
+      ],
+      "references": [
+        "TB pp. 12-15"
+      ],
+      "objective": "Identify the three variable types and write a testable hypothesis linking two of them.",
+      "materials": "Card, toy car, ramp supports, measuring tape, planning sheet",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Raise one end of a toy-car ramp and ask what changes.",
+          "pupils": "Name ramp height and suggest a result to measure."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Keep one car and track. Model a statement linking ramp height and travel distance, then show a pair of proposed trials.",
+          "pupils": "Name the height, distance and two controls. Write a prediction that can be checked in class."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Use a planning slip to check all three variable types and a hypothesis linking height and distance.",
+          "pupils": "Submit one named variable of each type and a testable hypothesis."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask if swapping the car would test ramp height fairly.",
+          "pupils": "Identify the problem and name the control."
+        }
+      ],
+      "follow_up": "Rewrite the hypothesis using a variable that can be measured."
+    },
+    {
+      "id": "DLP-SCI-Y4-L09",
+      "label": "Lesson 09",
+      "title": "Plan a fair investigation",
+      "unit": "Unit 1 Scientific Skills",
+      "rpt_dates": [
+        "A  31 Jan-4 Feb",
+        "B  1-5 Feb"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 1.1",
+        "LS 1.1.12"
+      ],
+      "references": [
+        "TB pp. 16-20"
+      ],
+      "objective": "Write the aim, materials, steps and results-table headings for a fair test.",
+      "materials": "Toy car, ramp, blocks, tape measure, experiment planner",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show two ramp runs that use different cars and heights.",
+          "pupils": "Identify why the results cannot isolate height."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Show available equipment. Model marking the same release line and measuring from the ramp end.",
+          "pupils": "Plan two ramp heights with three repeats per height, a fixed release point and a results table."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check each plan includes an aim, equipment, steps and headings with a distance unit.",
+          "pupils": "Submit an individual plan that changes only ramp height and records travel distance."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask where measurements begin if the car rolls beyond the ramp.",
+          "pupils": "Point to the fixed ramp-end mark and explain its use."
+        }
+      ],
+      "follow_up": "Flag a missing control or unclear measurement start before Lesson 10."
+    },
+    {
+      "id": "DLP-SCI-Y4-L10",
+      "label": "Lesson 10",
+      "title": "Collect data and report a conclusion",
+      "unit": "Unit 1 Scientific Skills",
+      "rpt_dates": [
+        "A  14-18 Feb",
+        "B  15-19 Feb"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 1.1",
+        "LS 1.1.12"
+      ],
+      "references": [
+        "TB pp. 16-20"
+      ],
+      "objective": "Carry out the planned investigation and compare the measured results with the hypothesis in a short report.",
+      "materials": "Lesson 09 planner, ramp, toy car, blocks, tape, report slip",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Ask the class to recall its hypothesis and measurement start.",
+          "pupils": "Restate the hypothesis and point to the ramp-end mark."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Supervise three runs at each height. Remind groups to release without pushing and keep the path clear.",
+          "pupils": "Run the trial, measure six distances and look for a repeated pattern."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check the table and a conclusion that cites results and addresses the hypothesis.",
+          "pupils": "Submit a short report with results for both heights and a data-supported conclusion."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask how to handle a run in which the car veered off track.",
+          "pupils": "Describe the problem, record it and repeat the run with the same controls."
+        }
+      ],
+      "follow_up": "Repeat a trial or revise the conclusion when the evidence is mixed."
+    },
+    {
+      "id": "DLP-SCI-Y4-R01",
+      "label": "Review 01",
+      "title": "Scientific Skills Review",
+      "unit": "Unit 1 Scientific Skills",
+      "rpt_dates": [
+        "A  14-18 Feb",
+        "B  15-19 Feb"
+      ],
+      "minutes": 30,
+      "standards": [
+        "Consolidation",
+        "Review taught standards"
+      ],
+      "references": [
+        "TB p. 22"
+      ],
+      "objective": "Use a results table to identify the variables, state a trend and rewrite a conclusion.",
+      "materials": "Ramp results table, conclusion cards",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show two distances and ask what was changed.",
+          "pupils": "Identify the trial condition from the headings."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Provide a table comparing two ramp heights and three runs each.",
+          "pupils": "Mark the variable and say whether the results show a consistent trend."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Check a conclusion rewritten to include one measured comparison.",
+          "pupils": "Individually identify a variable, state the trend and rewrite the conclusion using two values."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask how many variables should change in one fair comparison.",
+          "pupils": "Name one change and one control."
+        }
+      ],
+      "follow_up": "Revisit any science process skill not shown independently.",
+      "review_lss": [
+        "1.1.8",
+        "1.1.10",
+        "1.1.12"
+      ]
+    },
+    {
+      "id": "DLP-SCI-Y4-L11",
+      "label": "Lesson 11",
+      "title": "Trace the path of air",
+      "unit": "Unit 2 Humans",
+      "rpt_dates": [
+        "A  21-25 Feb",
+        "B  22-26 Feb"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 2.1",
+        "LS 2.1.1, 2.1.2"
+      ],
+      "references": [
+        "TB pp. 24-28"
+      ],
+      "objective": "Label the nose, trachea and lungs, then trace air during inhalation and exhalation.",
+      "materials": "Airway diagram, organ labels, arrow strips",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Ask pupils where air goes after it enters the nose.",
+          "pupils": "Point towards the lungs on a silhouette."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Trace the route on a diagram and reverse the arrows for exhalation.",
+          "pupils": "Label nose, trachea and lungs, then trace both directions to a partner."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check three correctly placed labels and both arrow routes on a fresh diagram.",
+          "pupils": "Complete and label both routes independently."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask which tube carries air between the nose and lungs.",
+          "pupils": "Name the trachea and point to it."
+        }
+      ],
+      "follow_up": "Repeat tracing using arrows of two colours."
+    },
+    {
+      "id": "DLP-SCI-Y4-L12",
+      "label": "Lesson 12",
+      "title": "Compare inhaled and exhaled air",
+      "unit": "Unit 2 Humans",
+      "rpt_dates": [
+        "A  21-25 Feb",
+        "B  22-26 Feb"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 2.1",
+        "LS 2.1.3"
+      ],
+      "references": [
+        "TB pp. 29-30"
+      ],
+      "objective": "Compare oxygen and carbon dioxide in the two air samples using a two-column diagram.",
+      "materials": "Textbook air-composition diagrams, oxygen and carbon dioxide labels",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show the two air-sample headings and ask what they mean.",
+          "pupils": "Identify air entering and leaving the body."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Use the textbook diagrams to compare the two gases. Give arrows to represent more or less of each gas.",
+          "pupils": "Construct a two-column comparison and explain the direction of change for each gas."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check both changes and whether pupils recognise both gases in both samples.",
+          "pupils": "Label the two columns and compare oxygen and carbon dioxide independently."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask if exhaled air still contains oxygen.",
+          "pupils": "Use the comparison to answer yes and explain."
+        }
+      ],
+      "follow_up": "Practise describing relative amounts using the diagrams."
+    },
+    {
+      "id": "DLP-SCI-Y4-L13",
+      "label": "Lesson 13",
+      "title": "Observe chest movement",
+      "unit": "Unit 2 Humans",
+      "rpt_dates": [
+        "A  28 Feb-4 Mar",
+        "B  1-5 Mar"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 2.1",
+        "LS 2.1.4"
+      ],
+      "references": [
+        "TB pp. 31-32"
+      ],
+      "objective": "Use a diagram to explain what happens to the chest during inhalation and exhalation.",
+      "materials": "Chest diagrams, arrow stickers, observation slips",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Ask pupils to place hands lightly on their own ribs and breathe normally.",
+          "pupils": "Notice whether the chest moves outwards or inwards."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Show paired chest diagrams. Model arrows for chest movement during a calm breath.",
+          "pupils": "Observe a normal breath and mark outward and inward movement on the two diagrams."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check pupils explain both directions of chest movement.",
+          "pupils": "Individually label inhalation and exhalation and explain the movement in each."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Show an outward arrow without a label.",
+          "pupils": "Identify inhalation and explain the clue."
+        }
+      ],
+      "follow_up": "Pair each chest movement with the correct air-flow arrow."
+    },
+    {
+      "id": "DLP-SCI-Y4-L14",
+      "label": "Lesson 14",
+      "title": "Compare breathing rates",
+      "unit": "Unit 2 Humans",
+      "rpt_dates": [
+        "A  28 Feb-4 Mar",
+        "B  1-5 Mar"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 2.1",
+        "LS 2.1.5, 2.1.6"
+      ],
+      "references": [
+        "TB pp. 33-36"
+      ],
+      "objective": "Count breaths at rest and after light movement, then use the results to explain the difference.",
+      "materials": "Timer, breathing-count table, light-movement alternative dataset",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Ask what one breath means for counting.",
+          "pupils": "Describe one complete inhalation and exhalation."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Time a resting count and another after 30 seconds of gentle marching. Provide sample data to pupils who sit out.",
+          "pupils": "Record counts for equal time intervals and compare the two results."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check a comparison using two numbers and an explanation connected to activity.",
+          "pupils": "Write both counts and explain the difference using the recorded evidence."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask why the same count duration matters.",
+          "pupils": "Explain how different count durations affect comparison."
+        }
+      ],
+      "follow_up": "Use a worked example to connect equal counting time with a fair comparison."
+    },
+    {
+      "id": "DLP-SCI-Y4-L15",
+      "label": "Lesson 15",
+      "title": "Excretion and defecation",
+      "unit": "Unit 2 Humans",
+      "rpt_dates": [
+        "A  14-18 Mar",
+        "B  15-19 Mar"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 2.2",
+        "LS 2.2.1, 2.2.2"
+      ],
+      "references": [
+        "TB pp. 37-40"
+      ],
+      "objective": "Match organs to excretory products and explain the difference between excretion and defecation.",
+      "materials": "Cards for lungs, skin, kidneys and intestines; product cards",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a sweat droplet icon and a faeces icon.",
+          "pupils": "Name two things the body removes."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model the distinction between removing waste made by the body and removing undigested food.",
+          "pupils": "Match lungs to carbon dioxide and water vapour, kidneys to urine, and skin to sweat. Place faeces under defecation."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check the organ-product matches and the written distinction between the two processes.",
+          "pupils": "Submit matches and explain the distinction in one sentence."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask whether faeces is an example of excretion.",
+          "pupils": "Identify defecation and explain using undigested food."
+        }
+      ],
+      "follow_up": "Revisit the origin of each waste product with the organ cards."
+    },
+    {
+      "id": "DLP-SCI-Y4-L16",
+      "label": "Lesson 16",
+      "title": "Why the body removes waste",
+      "unit": "Unit 2 Humans",
+      "rpt_dates": [
+        "A  14-18 Mar",
+        "B  15-19 Mar"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 2.2",
+        "LS 2.2.3, 2.2.4"
+      ],
+      "references": [
+        "TB p. 40"
+      ],
+      "objective": "Use a body diagram and one example to explain why removal of waste matters.",
+      "materials": "Body outline, urine and faeces route cards, response slips",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Ask what happens to waste after the body produces it.",
+          "pupils": "Suggest why waste needs a way out."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Trace urine formation and removal using a simple diagram, then contrast the route of undigested food.",
+          "pupils": "Label the exit routes and discuss why the two removal processes are needed."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check each pupil's diagram and one supported explanation of why removal matters.",
+          "pupils": "Annotate a route and explain why the body must remove the material."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask pupils to name the two processes from the diagrams.",
+          "pupils": "Identify each process from the material being removed."
+        }
+      ],
+      "follow_up": "Review waste routes separately with pupils who conflate them."
+    },
+    {
+      "id": "DLP-SCI-Y4-L17",
+      "label": "Lesson 17",
+      "title": "Identify a stimulus and response",
+      "unit": "Unit 2 Humans",
+      "rpt_dates": [
+        "A  21-25 Mar",
+        "B  22-26 Mar"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 2.3",
+        "LS 2.3.1, 2.3.2"
+      ],
+      "references": [
+        "TB pp. 41-43"
+      ],
+      "objective": "Match three stimuli to their sensory organs and the corresponding responses.",
+      "materials": "Scenario cards, stimulus–organ–response table",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Tap a desk softly and ask what caused a pupil to look.",
+          "pupils": "Name the sound and the response."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model the table with sound, ear and turning the head. Provide light, sound and touch scenarios.",
+          "pupils": "Complete three scenarios and trace each link aloud with a partner."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check all three chains for a plausible organ and response.",
+          "pupils": "Submit three complete stimulus–organ–response matches."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Show a cool object touching skin in a picture.",
+          "pupils": "Identify the skin and describe a plausible response."
+        }
+      ],
+      "follow_up": "Practise distinguishing an external stimulus from the action it causes."
+    },
+    {
+      "id": "DLP-SCI-Y4-L18",
+      "label": "Lesson 18",
+      "title": "Explain how responses protect people",
+      "unit": "Unit 2 Humans",
+      "rpt_dates": [
+        "A  21-25 Mar",
+        "B  22-26 Mar"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 2.3",
+        "LS 2.3.3, 2.3.4, 2.3.5"
+      ],
+      "references": [
+        "TB pp. 44-47"
+      ],
+      "objective": "Explain a protective response and show how one habit can interfere with it.",
+      "materials": "Protective response and distraction scenario cards, exit slips",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a picture of a pupil blinking when dust approaches.",
+          "pupils": "Describe what the blink protects."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Compare blinking with turning towards a warning sound. Discuss how loud headphones can mask a warning sound.",
+          "pupils": "Draw a stimulus-to-response chain and explain the protective effect, then annotate how the habit interferes."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check a protective example and a separate explanation of the effect of the habit.",
+          "pupils": "Submit both explanations with the stimulus and response identified."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask pupils to recommend one safer habit near traffic.",
+          "pupils": "Explain how making warning sounds easier to hear helps."
+        }
+      ],
+      "follow_up": "Revisit a scenario where the habit changes detection of the stimulus."
+    },
+    {
+      "id": "DLP-SCI-Y4-R02",
+      "label": "Review 02",
+      "title": "Humans Review",
+      "unit": "Unit 2 Humans",
+      "rpt_dates": [
+        "A  28 Mar-1 Apr",
+        "B  29 Mar-2 Apr"
+      ],
+      "minutes": 30,
+      "standards": [
+        "Consolidation",
+        "Review taught standards"
+      ],
+      "references": [
+        "TB p. 50"
+      ],
+      "objective": "Label the breathing organs, then link one sensory response and one waste-removal process to their functions.",
+      "materials": "Blank airway chart, response and waste cards",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show one unlabeled airway picture.",
+          "pupils": "Identify one organ based on its location."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Set three short tasks covering air flow, sensory response and waste removal.",
+          "pupils": "Complete all three tasks, then check labels against the textbook."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Check each pupil's airway labels and functional explanation for one response and one waste process.",
+          "pupils": "Submit the completed review slip independently."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask how recognising a stimulus can protect the body.",
+          "pupils": "Give one example and explain the protection."
+        }
+      ],
+      "follow_up": "Use review slips to identify which of the three ideas needs practice.",
+      "review_lss": [
+        "2.1.1",
+        "2.1.2",
+        "2.2.3",
+        "2.3.3"
+      ]
+    },
+    {
+      "id": "DLP-SCI-Y4-L19",
+      "label": "Lesson 19",
+      "title": "Sort animals by breathing organ",
+      "unit": "Unit 3 Animals",
+      "rpt_dates": [
+        "A  28 Mar-1 Apr",
+        "B  29 Mar-2 Apr"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 3.1",
+        "LS 3.1.1, 3.1.2"
+      ],
+      "references": [
+        "TB pp. 54-56"
+      ],
+      "objective": "Label four breathing organs and classify example animals by the organ used.",
+      "materials": "Pictures of fish, adult mammals, insects and earthworms; organ labels",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Display a fish and ask which organ takes oxygen from water.",
+          "pupils": "Identify the gills."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model a sort for gills, lungs, breathing tubes and moist skin. Give two example cards per group.",
+          "pupils": "Sort examples and match each breathing organ to its diagram."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check four organ labels and one accurate animal match for each.",
+          "pupils": "Label and classify one example for each of the four organs."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask where an earthworm belongs and why.",
+          "pupils": "Name moist skin and explain the visible grouping rule."
+        }
+      ],
+      "follow_up": "Pair unfamiliar animals with textbook diagrams to check the organ."
+    },
+    {
+      "id": "DLP-SCI-Y4-L20",
+      "label": "Lesson 20",
+      "title": "Breathing in water and on land",
+      "unit": "Unit 3 Animals",
+      "rpt_dates": [
+        "A  4-8 Apr",
+        "B  5-9 Apr"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 3.1",
+        "LS 3.1.3, 3.1.4"
+      ],
+      "references": [
+        "TB p. 57"
+      ],
+      "objective": "Compare a frog with another animal and explain the role of each organ in its habitat.",
+      "materials": "Adult frog and fish diagrams, habitat cards",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a frog partly submerged at a pond edge.",
+          "pupils": "Suggest where the animal can obtain oxygen."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Compare the adult frog's lungs and moist skin with a fish's gills. Distinguish adult frogs from tadpoles if asked.",
+          "pupils": "Match the adult frog's breathing routes to land or water, then compare with the fish."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check a two-animal comparison with an explanation of the organs in each setting.",
+          "pupils": "Write how the adult frog can breathe on land and in water and how the fish differs."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask why a fish cannot use a frog's lungs.",
+          "pupils": "Point to the different organs and state how each is used."
+        }
+      ],
+      "follow_up": "Practise labeling the adult life stage in an animal comparison."
+    },
+    {
+      "id": "DLP-SCI-Y4-L21",
+      "label": "Lesson 21",
+      "title": "Vertebrates and invertebrates",
+      "unit": "Unit 3 Animals",
+      "rpt_dates": [
+        "A  4-8 Apr",
+        "B  5-9 Apr"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 3.2",
+        "LS 3.2.1, 3.2.2"
+      ],
+      "references": [
+        "TB pp. 58-59"
+      ],
+      "objective": "Classify unfamiliar animals by presence of a backbone and justify two choices.",
+      "materials": "Animal picture cards, diagram cards showing internal structures",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show an animal silhouette and ask what hidden clue might help classify it.",
+          "pupils": "Suggest looking for a backbone."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model the backbone rule using a fish skeleton and a snail picture. Give unfamiliar examples with structure cards.",
+          "pupils": "Group the examples and link each choice to the evidence supplied."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check all four individual placements and justification for two.",
+          "pupils": "Individually sort four examples and explain two using the backbone rule."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask whether a hard shell is evidence of a backbone.",
+          "pupils": "Use the snail example to explain the difference."
+        }
+      ],
+      "follow_up": "Revisit internal structure instead of external covering when sorting."
+    },
+    {
+      "id": "DLP-SCI-Y4-L22",
+      "label": "Lesson 22",
+      "title": "Compare vertebrate groups",
+      "unit": "Unit 3 Animals",
+      "rpt_dates": [
+        "A  11-15 Apr",
+        "B  12-16 Apr"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 3.2",
+        "LS 3.2.3, 3.2.4"
+      ],
+      "references": [
+        "TB pp. 60-65"
+      ],
+      "objective": "Use body coverings, breathing organs and reproduction to identify examples from the five vertebrate groups.",
+      "materials": "Vertebrate group cards, example and feature cards",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Compare a bird and a fish with pictures.",
+          "pupils": "Name one observable difference."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Build a five-group chart using selected examples and features of fish, amphibians, reptiles, birds and mammals.",
+          "pupils": "Use body covering, breathing and reproduction clues to classify the given examples."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check five individual group matches and an evidence-based explanation for two.",
+          "pupils": "Classify five examples and cite a feature for two choices."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask why a whale remains a mammal though it lives in water.",
+          "pupils": "Cite breathing lungs and feeding young with milk."
+        }
+      ],
+      "follow_up": "Give one example for a group that was confused on the exit slip."
+    },
+    {
+      "id": "DLP-SCI-Y4-R03",
+      "label": "Review 03",
+      "title": "Animals Review",
+      "unit": "Unit 3 Animals",
+      "rpt_dates": [
+        "A  11-15 Apr",
+        "B  12-16 Apr"
+      ],
+      "minutes": 30,
+      "standards": [
+        "Consolidation",
+        "Review taught standards"
+      ],
+      "references": [
+        "TB p. 67"
+      ],
+      "objective": "Identify a vertebrate group from its characteristics and explain the breathing organs of two animals.",
+      "materials": "Three animal cards, feature chart, individual slip",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show a feather and ask which vertebrate group it suggests.",
+          "pupils": "Name birds and cite the feather."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Provide one unfamiliar vertebrate clue set and two animal breathing examples.",
+          "pupils": "Identify a group, then match both animals to their breathing organs."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Check group reasoning and the two organ explanations.",
+          "pupils": "Submit an independently labelled review slip."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask how breathing and backbone grouping differ.",
+          "pupils": "Give one example showing the distinction."
+        }
+      ],
+      "follow_up": "Target the classification or breathing clue that needs revision.",
+      "review_lss": [
+        "3.1.1",
+        "3.2.3"
+      ]
+    },
+    {
+      "id": "DLP-SCI-Y4-L23",
+      "label": "Lesson 23",
+      "title": "Match plant parts to stimuli",
+      "unit": "Unit 4 Plants",
+      "rpt_dates": [
+        "A  18-22 Apr",
+        "B  19-23 Apr"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 4.1",
+        "LS 4.1.1, 4.1.2"
+      ],
+      "references": [
+        "TB pp. 70-72"
+      ],
+      "objective": "Match roots, shoots or leaves to a stimulus and predict the direction or type of response.",
+      "materials": "Photos of seedlings and Mimosa, stimulus labels",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show Mimosa leaves before and after touch.",
+          "pupils": "Describe the change without guessing the cause."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Compare images or clips for light, gravity, moisture and touch. Model linking one plant part to one stimulus.",
+          "pupils": "Match roots, shoots and leaves to cards and predict the response for each pictured setup."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check matches and one predicted direction or movement with a reason.",
+          "pupils": "Individually label three examples and explain one predicted change."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask which part grows towards a light opening in a box.",
+          "pupils": "Name the shoot and indicate the direction of growth."
+        }
+      ],
+      "follow_up": "Use new diagrams to distinguish plant part, stimulus and response."
+    },
+    {
+      "id": "DLP-SCI-Y4-L24",
+      "label": "Lesson 24",
+      "title": "Investigate a plant response",
+      "unit": "Unit 4 Plants",
+      "rpt_dates": [
+        "A  18-22 Apr",
+        "B  19-23 Apr"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 4.1",
+        "LS 4.1.3"
+      ],
+      "references": [
+        "TB pp. 73-75"
+      ],
+      "objective": "Set up a comparison for one stimulus and record the initial position and conditions.",
+      "materials": "Two similar seedlings, two boxes, watering measure, dated observation cards",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show two boxes, one with side light and one with overhead light.",
+          "pupils": "Predict how the direction of light may affect the shoots."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Set up matched seedlings and agree constant watering and observation times. Mark initial shoot directions.",
+          "pupils": "Prepare both setups, label the light direction and draw the starting shoots."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check individual diagrams and labels for the variable and initial conditions.",
+          "pupils": "Submit a dated diagram for both seedlings and a prediction."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Agree when the class will next look at the plants.",
+          "pupils": "Record one recurring observation time."
+        }
+      ],
+      "follow_up": "Use class observations between Lessons 24 and 26. Keep teacher-prepared examples for comparison."
+    },
+    {
+      "id": "DLP-SCI-Y4-L25",
+      "label": "Lesson 25",
+      "title": "Inputs and products of photosynthesis",
+      "unit": "Unit 4 Plants",
+      "rpt_dates": [
+        "A  25-29 Apr",
+        "B  26-30 Apr"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 4.2",
+        "LS 4.2.1, 4.2.2, 4.2.3"
+      ],
+      "references": [
+        "TB pp. 76-79"
+      ],
+      "objective": "Label a flow diagram showing what a plant needs to make food and what the process produces.",
+      "materials": "Photosynthesis input/output labels, arrows, leaf diagram",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Ask where the material for a plant's food comes from.",
+          "pupils": "Offer possible inputs for the class to sort."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model sunlight as the energy source, chlorophyll as the pigment and water and carbon dioxide as inputs. Trace sugar and oxygen as products.",
+          "pupils": "Build and explain an input–process–output diagram with cards."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check whether each pupil assigns all labels and defines photosynthesis in simple language.",
+          "pupils": "Complete the diagram independently and state that plants make their own food."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Point to chlorophyll and ask where it is found.",
+          "pupils": "Identify the green leaf as the location in this model."
+        }
+      ],
+      "follow_up": "Re-sort requirements and products with pupils who mix the two sides."
+    },
+    {
+      "id": "DLP-SCI-Y4-L26",
+      "label": "Lesson 26",
+      "title": "Explain the plant investigation",
+      "unit": "Unit 4 Plants",
+      "rpt_dates": [
+        "A  25-29 Apr",
+        "B  26-30 Apr"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 4.1",
+        "LS 4.1.3, 4.1.4"
+      ],
+      "references": [
+        "TB pp. 73-75"
+      ],
+      "objective": "Use dated observations from the two setups to draw a conclusion about the chosen stimulus.",
+      "materials": "Lesson 24 drawings, dated seedling observations, photos",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Compare the starting and latest shoot pictures without labels.",
+          "pupils": "Describe one change in the shoot direction."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Lay out the dated records for both conditions. Ask groups what stayed the same and which evidence supports the result.",
+          "pupils": "Order the records and compare the growth direction of the paired seedlings."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check a conclusion using two dated observations, including both setups.",
+          "pupils": "Write a conclusion about shoot growth towards light and cite the recorded comparison."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask why a single photograph gives weaker evidence.",
+          "pupils": "Explain why the starting conditions and another setup support the conclusion."
+        }
+      ],
+      "follow_up": "Provide the dated class example to any group with incomplete observations."
+    },
+    {
+      "id": "DLP-SCI-Y4-L27",
+      "label": "Lesson 27",
+      "title": "Photosynthesis and living things",
+      "unit": "Unit 4 Plants",
+      "rpt_dates": [
+        "A  2-6 May",
+        "B  3-7 May"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 4.2",
+        "LS 4.2.4, 4.2.5"
+      ],
+      "references": [
+        "TB pp. 80-84"
+      ],
+      "objective": "Use a food-and-oxygen diagram to explain two ways living things depend on photosynthesis.",
+      "materials": "Food-chain cards, oxygen arrows, plant-to-animal diagram",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a grass–rabbit relationship and ask where the rabbit gets food.",
+          "pupils": "Identify the plant as the source."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model how plant-produced food supports feeding relationships and how oxygen produced by plants supports breathing.",
+          "pupils": "Use arrows to explain a local plant–animal food link and the role of oxygen."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check both dependency explanations with correctly directed arrows.",
+          "pupils": "Submit an annotated diagram explaining one food link and one oxygen link."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask pupils how a plant can support an animal that does not eat plants.",
+          "pupils": "Trace an indirect food link through a plant-eating animal."
+        }
+      ],
+      "follow_up": "Revisit the arrows in one three-organism chain."
+    },
+    {
+      "id": "DLP-SCI-Y4-R04",
+      "label": "Review 04",
+      "title": "Plants Review",
+      "unit": "Unit 4 Plants",
+      "rpt_dates": [
+        "A  2-6 May",
+        "B  3-7 May"
+      ],
+      "minutes": 30,
+      "standards": [
+        "Consolidation",
+        "Review taught standards"
+      ],
+      "references": [
+        "TB p. 85"
+      ],
+      "objective": "Link two plant stimuli to responses and explain which inputs a plant needs for photosynthesis.",
+      "materials": "Four plant pictures, blank photosynthesis diagram, review slips",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show a paired image of a shoot bending and a Mimosa leaf closing.",
+          "pupils": "Name one stimulus for each picture."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Set two response questions and one photosynthesis diagram task.",
+          "pupils": "Match the stimuli and plant responses and place the diagram labels."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Check two correct stimulus links and the photosynthesis inputs.",
+          "pupils": "Submit both matches and state the role of sunlight in the diagram."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask which labels identify products.",
+          "pupils": "Name sugar and oxygen."
+        }
+      ],
+      "follow_up": "Review stimuli and photosynthesis separately where answers overlap.",
+      "review_lss": [
+        "4.1.1",
+        "4.1.2",
+        "4.2.2"
+      ]
+    },
+    {
+      "id": "DLP-SCI-Y4-L28",
+      "label": "Lesson 28",
+      "title": "Trace a straight path of light",
+      "unit": "Unit 5 Properties of Light",
+      "rpt_dates": [
+        "A  6-10 Jun",
+        "B  7-11 Jun"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 5.1",
+        "LS 5.1.1"
+      ],
+      "references": [
+        "TB pp. 88-89"
+      ],
+      "objective": "Align holes in three cards and use the observation to explain why a light spot disappears when one card moves.",
+      "materials": "Three holed cards, stands, LED torch, white screen",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a spot on the screen and cover one card hole.",
+          "pupils": "Predict what will happen when the hole is covered."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Align the three holes and use an LED torch facing the screen. Move the middle card sideways for a comparison.",
+          "pupils": "Observe and record the aligned and moved results. Sketch the path with arrows."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check two observations and an explanation linking the loss of the spot to the straight path.",
+          "pupils": "Sketch both setups and explain why the spot disappears."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask how to make the spot return.",
+          "pupils": "Realign the card with the other holes."
+        }
+      ],
+      "follow_up": "Repeat the comparison with the torch aimed only at the screen."
+    },
+    {
+      "id": "DLP-SCI-Y4-L29",
+      "label": "Lesson 29",
+      "title": "Compare the clarity of shadows",
+      "unit": "Unit 5 Properties of Light",
+      "rpt_dates": [
+        "A  6-10 Jun",
+        "B  7-11 Jun"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 5.1",
+        "LS 5.1.2"
+      ],
+      "references": [
+        "TB pp. 90-91"
+      ],
+      "objective": "Test three materials under the same light and classify them using the shadows observed.",
+      "materials": "Clear plastic, tracing paper, card, LED torch and screen",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Hold three samples up and ask which allows the most light through.",
+          "pupils": "Make a prediction for the three samples."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Fix lamp, sample and screen positions. Test each sample in the same frame.",
+          "pupils": "Compare the clarity and darkness of the shadows and record the light transmitted."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check three classifications using observed shadow differences.",
+          "pupils": "Individually classify the samples as transparent, translucent or opaque with evidence."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask why tracing paper makes a different shadow from clear plastic.",
+          "pupils": "Refer to light passing through and scattering in the tracing paper."
+        }
+      ],
+      "follow_up": "Repeat one comparison using equal source and screen distances."
+    },
+    {
+      "id": "DLP-SCI-Y4-L30",
+      "label": "Lesson 30",
+      "title": "Investigate shadow size",
+      "unit": "Unit 5 Properties of Light",
+      "rpt_dates": [
+        "A  13-17 Jun",
+        "B  14-18 Jun"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 5.1",
+        "LS 5.1.3"
+      ],
+      "references": [
+        "TB p. 92"
+      ],
+      "objective": "Change one distance and record how the shadow size changes while keeping the other distance fixed.",
+      "materials": "Torch, opaque shape, screen, ruler, distance marks",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show two shadows of one object and ask how the sizes can differ.",
+          "pupils": "Suggest a change in position while keeping the object unchanged."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Fix the object and screen and mark two torch positions. For a second comparison, fix the torch and object and mark two screen positions.",
+          "pupils": "Keep the object facing the same way. Test two positions in each comparison and record the distances and shadow widths in cm."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check two comparisons and the distance held fixed in each. Use the observed readings as the answer key.",
+          "pupils": "Use two readings to explain which torch position made the larger shadow. Use the second comparison to explain the effect of moving the screen."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask what to keep fixed in a repeat trial.",
+          "pupils": "Name the object and screen positions or object orientation."
+        }
+      ],
+      "follow_up": "Use a setup sketch to distinguish the distance changed from the distance kept fixed."
+    },
+    {
+      "id": "DLP-SCI-Y4-L31",
+      "label": "Lesson 31",
+      "title": "Investigate shadow shape",
+      "unit": "Unit 5 Properties of Light",
+      "rpt_dates": [
+        "A  13-17 Jun",
+        "B  14-18 Jun"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 5.1",
+        "LS 5.1.3, 5.1.4"
+      ],
+      "references": [
+        "TB p. 93"
+      ],
+      "objective": "Alter the position or orientation of an object and explain the resulting shadow using labelled sketches.",
+      "materials": "Opaque rectangular card, torch, fixed stand, screen, tracing paper",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Hold a card face-on and edge-on without changing its centre position.",
+          "pupils": "Predict how the shadow outline changes."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Fix the torch and screen while rotating the card. Then fix the card and screen and compare a torch in front with a torch off to one side.",
+          "pupils": "Trace and label two outlines for each comparison. Mark the orientation of the card or the position of the torch on each sketch."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check a pair of labelled outlines and ask pupils to trace a straight path from the torch past an edge of the card to the screen.",
+          "pupils": "Compare the two outlines in one pair. Explain how changing the card orientation or torch position changes where the card blocks the light."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask whether replacing the object would answer the same question.",
+          "pupils": "Explain why the same object should be used to test orientation."
+        }
+      ],
+      "follow_up": "Repeat with another object only after explaining the first comparison."
+    },
+    {
+      "id": "DLP-SCI-Y4-L32",
+      "label": "Lesson 32",
+      "title": "Reflect light with a mirror",
+      "unit": "Unit 5 Properties of Light",
+      "rpt_dates": [
+        "A  20-24 Jun",
+        "B  21-25 Jun"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 5.2",
+        "LS 5.2.1, 5.2.2"
+      ],
+      "references": [
+        "TB pp. 94-97"
+      ],
+      "objective": "Redirect a beam with a mirror and identify a daily use of the same property.",
+      "materials": "Flat acrylic mirror, torch, white screen, road-mirror pictures",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a mirror near a white screen and ask how to move the light spot.",
+          "pupils": "Suggest changing the mirror's angle."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Aim the torch away from faces, towards the mirror. Rotate the mirror to redirect the beam to two marks.",
+          "pupils": "Observe the change in spot position and match the principle to a road mirror or periscope picture."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check one observed redirection and one daily use with an explanation.",
+          "pupils": "Draw the torch, mirror and screen and identify a use of reflected light."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask what the mirror changes in the setup.",
+          "pupils": "State that it changes the direction of the light."
+        }
+      ],
+      "follow_up": "Practise linking the use to the reflected path shown in the diagram."
+    },
+    {
+      "id": "DLP-SCI-Y4-L33",
+      "label": "Lesson 33",
+      "title": "Draw a reflected light path",
+      "unit": "Unit 5 Properties of Light",
+      "rpt_dates": [
+        "A  20-24 Jun",
+        "B  21-25 Jun"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 5.2",
+        "LS 5.2.3, 5.2.4"
+      ],
+      "references": [
+        "TB pp. 98-99"
+      ],
+      "objective": "Draw a ray diagram with arrows and use it to explain where light travels after striking a mirror.",
+      "materials": "Mirror, ray-path tracing sheet, rulers, pencils",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show two rays drawn without arrowheads.",
+          "pupils": "Identify which ray should point towards the mirror."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Use the mirror setup and trace source-to-mirror and mirror-to-screen segments. Place arrows on both segments.",
+          "pupils": "Mark where light reaches the mirror, then draw and explain both paths."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check a labelled diagram with two directional arrows and a correct explanation.",
+          "pupils": "Independently draw a different mirror placement using a supplied reflected spot."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask where a light ray begins on each diagram.",
+          "pupils": "Point to the source and follow the arrow directions."
+        }
+      ],
+      "follow_up": "Recheck arrow directions before adding labels."
+    },
+    {
+      "id": "DLP-SCI-Y4-L34",
+      "label": "Lesson 34",
+      "title": "Observe refraction in water",
+      "unit": "Unit 5 Properties of Light",
+      "rpt_dates": [
+        "A  27 Jun-1 Jul",
+        "B  28 Jun-2 Jul"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 5.3",
+        "LS 5.3.1, 5.3.2"
+      ],
+      "references": [
+        "TB pp. 100-101"
+      ],
+      "objective": "Sketch how a pencil or coin appears through water and identify a second example of refraction.",
+      "materials": "Clear cup, water, pencil, printed coin example",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a pencil in an empty cup from the side.",
+          "pupils": "Sketch its straight appearance."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Add water and keep the viewing position fixed. Show the coin example as a separate case.",
+          "pupils": "Compare and sketch the pencil in air and water, then identify refraction in the coin example."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check an annotated before-and-after sketch and the second example.",
+          "pupils": "Submit a sketch and explain that light changes direction at the boundary."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask whether the pencil itself changed shape.",
+          "pupils": "Use the original object and viewing evidence to explain."
+        }
+      ],
+      "follow_up": "Revisit the boundary where the light changes direction."
+    },
+    {
+      "id": "DLP-SCI-Y4-L35",
+      "label": "Lesson 35",
+      "title": "Explain rainbow formation",
+      "unit": "Unit 5 Properties of Light",
+      "rpt_dates": [
+        "A  27 Jun-1 Jul",
+        "B  28 Jun-2 Jul"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 5.3",
+        "LS 5.3.3, 5.3.4"
+      ],
+      "references": [
+        "TB pp. 102-104"
+      ],
+      "objective": "Record the colours observed when white light passes through water and relate the result to a rainbow.",
+      "materials": "White light source, water tray and acrylic mirror, white card, rainbow photo",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a rainbow photo and ask why many colours appear.",
+          "pupils": "Suggest a link to sunlight and raindrops."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Use a teacher-led white-light demonstration with water, acrylic mirror and white card. Supply an observed result photo if lighting prevents a clear display.",
+          "pupils": "Record visible colours and connect the water demonstration to light interacting with raindrops."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check a colour record and an explanation linking white light and water to the rainbow.",
+          "pupils": "Individually explain the connection using an annotated diagram."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask where the colours begin in the demonstration.",
+          "pupils": "Identify white light as the source and water as part of the setup."
+        }
+      ],
+      "follow_up": "Use a recorded photo to check the observation under better lighting."
+    },
+    {
+      "id": "DLP-SCI-Y4-R05",
+      "label": "Review 05",
+      "title": "Properties of Light Review",
+      "unit": "Unit 5 Properties of Light",
+      "rpt_dates": [
+        "A  4-8 Jul",
+        "B  5-9 Jul"
+      ],
+      "minutes": 30,
+      "standards": [
+        "Consolidation",
+        "Review taught standards"
+      ],
+      "references": [
+        "TB p. 109"
+      ],
+      "objective": "Explain a shadow change and use a ray diagram to distinguish reflection from refraction.",
+      "materials": "Shadow sketches, mirror diagram, pencil-in-water image",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show two shadow drawings with different widths.",
+          "pupils": "Name one position change that could explain the difference."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Give one shadow comparison, one mirror diagram and one water-boundary diagram.",
+          "pupils": "Annotate the three examples using labels for the behaviours of light."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Check the shadow explanation and two distinct ray sketches.",
+          "pupils": "Submit an explanation of the shadow change and distinguish reflection from refraction."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask which case involves light changing direction at a boundary into water.",
+          "pupils": "Identify the refraction example."
+        }
+      ],
+      "follow_up": "Assign the diagram with the least secure explanation for follow-up.",
+      "review_lss": [
+        "5.1.3",
+        "5.2.3",
+        "5.3.1"
+      ]
+    },
+    {
+      "id": "DLP-SCI-Y4-L36",
+      "label": "Lesson 36",
+      "title": "Vibrations and sound direction",
+      "unit": "Unit 6 Sound",
+      "rpt_dates": [
+        "A  4-8 Jul",
+        "B  5-9 Jul"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 6.1",
+        "LS 6.1.1, 6.1.2"
+      ],
+      "references": [
+        "TB pp. 112-114"
+      ],
+      "objective": "Show a vibrating source and use observations from different positions to describe how sound travels.",
+      "materials": "Rubber bands on boxes, rice on a membrane, observation table",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Pluck a rubber band gently and then stop its motion.",
+          "pupils": "Compare sound while vibrating and while stopped."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Set a low-volume vibration demonstration and assign listening positions on different sides.",
+          "pupils": "Observe the vibrating source, then record where the sound can be heard."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check one observation of vibration and observations from at least two sides.",
+          "pupils": "Explain the source of sound and use two observations to describe its spread."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask what to expect once the band stops moving.",
+          "pupils": "Predict that the sound stops and explain the link."
+        }
+      ],
+      "follow_up": "Repeat with a second source to reinforce the vibration link."
+    },
+    {
+      "id": "DLP-SCI-Y4-L37",
+      "label": "Lesson 37",
+      "title": "Recognise reflected sound",
+      "unit": "Unit 6 Sound",
+      "rpt_dates": [
+        "A  11-15 Jul",
+        "B  12-16 Jul"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 6.1",
+        "LS 6.1.3"
+      ],
+      "references": [
+        "TB pp. 115-117"
+      ],
+      "objective": "Use two examples to explain why an echo is a reflection of sound.",
+      "materials": "Echo scenario cards, soft sound source, hard and soft surfaces, comparison diagram",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Tell a short scenario about hearing a repeated voice in a large hall.",
+          "pupils": "Describe the repeated sound as an echo."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Demonstrate a quiet sound directed at a hard surface and compare with a soft covering. Use recorded examples if needed.",
+          "pupils": "Trace outgoing and returning sound for a large hall and a cave."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check a diagram and an explanation for both examples.",
+          "pupils": "Independently explain that sound reflects back from a surface in each situation."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask why the echoed sound is heard after the first sound.",
+          "pupils": "Explain that the reflected sound travels a longer route."
+        }
+      ],
+      "follow_up": "Add arrows to distinguish outgoing and reflected sound."
+    },
+    {
+      "id": "DLP-SCI-Y4-L38",
+      "label": "Lesson 38",
+      "title": "Compare useful and harmful sounds",
+      "unit": "Unit 6 Sound",
+      "rpt_dates": [
+        "A  11-15 Jul",
+        "B  12-16 Jul"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 6.1",
+        "LS 6.1.4"
+      ],
+      "references": [
+        "TB pp. 118-119"
+      ],
+      "objective": "Sort familiar sounds by their effects and explain why one sound may be useful in one context.",
+      "materials": "Pictures of alarms, music and traffic; context cards",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a school bell card and ask when it helps.",
+          "pupils": "Name a time a bell is useful."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Present familiar sound cards and vary their purpose, timing and level using scenario descriptions.",
+          "pupils": "Sort the sounds and discuss how one changes from helpful to disruptive across situations."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check individual classifications and one explanation based on context.",
+          "pupils": "Submit two useful and two harmful or disruptive examples and explain a context change."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask when recorded music may disturb a lesson.",
+          "pupils": "Explain using the task and sound level."
+        }
+      ],
+      "follow_up": "Use a second context to check reasoning on a borderline example."
+    },
+    {
+      "id": "DLP-SCI-Y4-L39",
+      "label": "Lesson 39",
+      "title": "Reduce noise pollution",
+      "unit": "Unit 6 Sound",
+      "rpt_dates": [
+        "A  18-22 Jul",
+        "B  19-23 Jul"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 6.1",
+        "LS 6.1.5, 6.1.6"
+      ],
+      "references": [
+        "TB pp. 120-121"
+      ],
+      "objective": "Propose a change for a noisy setting and explain how the change would help.",
+      "materials": "Classroom noise scenario, cloth pads, chair model, planning slip",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Describe chair noise while a class is reading quietly.",
+          "pupils": "Identify the noise source and whose activity it affects."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Compare a chair scraping on a surface with the sound when pads are added. Discuss distance and barriers as other options.",
+          "pupils": "Record the observation, choose one change for a named setting and explain how it reduces noise."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check a source-specific proposal supported by an observation or explanation.",
+          "pupils": "Independently submit one action and describe its effect on that setting."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask which solution acts closest to the source.",
+          "pupils": "Identify a source-level change and say why it helps."
+        }
+      ],
+      "follow_up": "Revisit proposals that only restate that the classroom should be quieter."
+    },
+    {
+      "id": "DLP-SCI-Y4-R06",
+      "label": "Review 06",
+      "title": "Sound Review",
+      "unit": "Unit 6 Sound",
+      "rpt_dates": [
+        "A  18-22 Jul",
+        "B  19-23 Jul"
+      ],
+      "minutes": 30,
+      "standards": [
+        "Consolidation",
+        "Review taught standards"
+      ],
+      "references": [
+        "TB p. 122"
+      ],
+      "objective": "Explain an echo and propose a change to reduce sound pollution in a familiar setting.",
+      "materials": "Echo diagram, noise scenario slips, arrows",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Ask for an example of an echo.",
+          "pupils": "Name a setting with a suitable reflecting surface."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Provide a sound path diagram and a second scenario about library noise.",
+          "pupils": "Add arrows for the reflected sound and suggest a practical noise reduction measure."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Check both the returning path and the explanation of the measure.",
+          "pupils": "Submit an echo explanation and a noise solution independently."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask why a soft covering can change a sound in a room.",
+          "pupils": "Explain that it reduces reflection or absorbs some sound."
+        }
+      ],
+      "follow_up": "Review the chosen measure using a familiar noise source.",
+      "review_lss": [
+        "6.1.3",
+        "6.1.5"
+      ]
+    },
+    {
+      "id": "DLP-SCI-Y4-L40",
+      "label": "Lesson 40",
+      "title": "Identify sources of energy",
+      "unit": "Unit 7 Energy",
+      "rpt_dates": [
+        "A  25-29 Jul",
+        "B  26-30 Jul"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 7.1",
+        "LS 7.1.1, 7.1.2"
+      ],
+      "references": [
+        "TB pp. 124-125"
+      ],
+      "objective": "Explain energy in terms of doing work and match four devices or organisms to an energy source.",
+      "materials": "Pictures of a solar lamp, hydroelectric turbine, windmill and cooking stove",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a solar lamp and ask what enables it to work.",
+          "pupils": "Identify sunlight as a source."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Connect the ability to do work with a moving or operating device. Compare several textbook energy-source pictures.",
+          "pupils": "Match four pictured devices to sources and explain one pairing."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check four individual matches and a simple definition of energy.",
+          "pupils": "Submit the four matches and explain energy as the ability to do work."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Show an unfamiliar wind-powered water pump.",
+          "pupils": "Name the source and the work done."
+        }
+      ],
+      "follow_up": "Explain the difference between a source and a device using another picture."
+    },
+    {
+      "id": "DLP-SCI-Y4-L41",
+      "label": "Lesson 41",
+      "title": "Recognise forms of energy",
+      "unit": "Unit 7 Energy",
+      "rpt_dates": [
+        "A  25-29 Jul",
+        "B  26-30 Jul"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 7.1",
+        "LS 7.1.3"
+      ],
+      "references": [
+        "TB pp. 126-127"
+      ],
+      "objective": "Identify two forms of energy present in a working device and give evidence for each.",
+      "materials": "Low-voltage torch, working fan video, energy form cards",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Switch on a torch and point to the illuminated screen.",
+          "pupils": "Identify light as an observable output."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Compare light and electrical energy in the torch, then observe movement and sound in a working fan.",
+          "pupils": "Match forms of energy to observations or device features."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check two correctly named forms and specific evidence for each.",
+          "pupils": "Independently label two energy forms in a device and state the two clues."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask what evidence shows kinetic energy in the fan.",
+          "pupils": "Point to rotating blades and link the motion to kinetic energy."
+        }
+      ],
+      "follow_up": "Use an annotated device picture to reinforce the difference between form and source."
+    },
+    {
+      "id": "DLP-SCI-Y4-L42",
+      "label": "Lesson 42",
+      "title": "Trace an energy transformation",
+      "unit": "Unit 7 Energy",
+      "rpt_dates": [
+        "A  1-5 Aug",
+        "B  2-6 Aug"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 7.1",
+        "LS 7.1.4"
+      ],
+      "references": [
+        "TB pp. 128-131"
+      ],
+      "objective": "Represent energy changes in two devices with arrows from input to output.",
+      "materials": "Battery torch, hand-crank fan model or video, arrow strips",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Ask where energy comes from when a torch is switched on.",
+          "pupils": "Identify the battery as the starting point."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model chemical to electrical to light and heat in a battery torch. Show a hand-driven device as a contrast.",
+          "pupils": "Build arrow chains for both examples and explain the labels."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check that input and output forms are in the correct order for two devices.",
+          "pupils": "Draw and label both transformations independently."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask why an arrow is needed between the energy forms.",
+          "pupils": "Explain that the arrow represents a change from one form to another."
+        }
+      ],
+      "follow_up": "Reconstruct a mixed-up transformation sequence."
+    },
+    {
+      "id": "DLP-SCI-Y4-L43",
+      "label": "Lesson 43",
+      "title": "Explain conservation through transformations",
+      "unit": "Unit 7 Energy",
+      "rpt_dates": [
+        "A  1-5 Aug",
+        "B  2-6 Aug"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 7.1",
+        "LS 7.1.5, 7.1.6"
+      ],
+      "references": [
+        "TB pp. 132-133"
+      ],
+      "objective": "Annotate a transformation diagram to account for useful output and heat or sound.",
+      "materials": "Illustrations of lamp and fan, energy arrow cards",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a picture of a lit lamp that is also warm.",
+          "pupils": "Identify the light and heat outputs."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Trace electrical energy into light and heat, then show the fan turning with accompanying sound.",
+          "pupils": "Annotate useful and other outputs. Explain that energy is transferred or changes form."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check a diagram that accounts for useful output and heat or sound.",
+          "pupils": "Submit one complete transformation and explain where the energy goes."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask what happens to output energy that is not useful for the task.",
+          "pupils": "Identify an output such as heat transferred to the surroundings."
+        }
+      ],
+      "follow_up": "Avoid language that suggests energy disappears when a device runs."
+    },
+    {
+      "id": "DLP-SCI-Y4-L44",
+      "label": "Lesson 44",
+      "title": "Compare renewable and non-renewable sources",
+      "unit": "Unit 7 Energy",
+      "rpt_dates": [
+        "A  8-12 Aug",
+        "B  9-13 Aug"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 7.2",
+        "LS 7.2.1"
+      ],
+      "references": [
+        "TB pp. 134-135"
+      ],
+      "objective": "Sort examples and explain how replenishment distinguishes the two groups.",
+      "materials": "Cards for sunlight, wind, flowing water, coal, oil and gas",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show pictures of a wind turbine and a coal mine.",
+          "pupils": "Name the energy source associated with each."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model how a source can be replenished on a useful timescale. Provide six classification cards.",
+          "pupils": "Sort the cards by replenishment and defend one example from each group."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check classifications and both explanations of replenishment.",
+          "pupils": "Submit a two-column sort with one reason per group."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask whether coal can be replaced as quickly as it is used.",
+          "pupils": "Explain that it takes much longer to form."
+        }
+      ],
+      "follow_up": "Practise using replenishment as the classification rule."
+    },
+    {
+      "id": "DLP-SCI-Y4-L45",
+      "label": "Lesson 45",
+      "title": "Use energy wisely",
+      "unit": "Unit 7 Energy",
+      "rpt_dates": [
+        "A  8-12 Aug",
+        "B  9-13 Aug"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 7.2",
+        "LS 7.2.2, 7.2.3"
+      ],
+      "references": [
+        "TB pp. 136-139"
+      ],
+      "objective": "Choose two actions that reduce wasted energy and explain how each works.",
+      "materials": "Illustrated school energy-use scenarios, planning slips",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show classroom lights on in an empty room.",
+          "pupils": "Identify the energy use and suggest one response."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Compare scenarios involving unnecessary lighting, cooling and electronic devices. Discuss actions that preserve the needed service.",
+          "pupils": "Choose two practical changes and explain which demand each change reduces."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check two actions and a specific reason for each.",
+          "pupils": "Write two actions that reduce wasted energy and explain how they help."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask when switching off a light is appropriate.",
+          "pupils": "Use room occupancy or daylight as the deciding evidence."
+        }
+      ],
+      "follow_up": "Refine proposals that omit how the action saves energy."
+    },
+    {
+      "id": "DLP-SCI-Y4-R07",
+      "label": "Review 07",
+      "title": "Energy Review",
+      "unit": "Unit 7 Energy",
+      "rpt_dates": [
+        "A  15-19 Aug",
+        "B  16-20 Aug"
+      ],
+      "minutes": 30,
+      "standards": [
+        "Consolidation",
+        "Review taught standards"
+      ],
+      "references": [
+        "TB p. 140"
+      ],
+      "objective": "Classify sources of energy and label the energy changes in a familiar device.",
+      "materials": "Energy source cards, fan and torch pictures, arrow strips",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show a wind turbine and ask how its source is replenished.",
+          "pupils": "Explain why wind can be treated as renewable."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Set a source-sort task and a separate device transformation task.",
+          "pupils": "Classify examples, then label the input and outputs of one device."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Check both categories and arrows with names of the energy forms.",
+          "pupils": "Submit the sort and the labelled transformation independently."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask which output helps the device do its intended job.",
+          "pupils": "Name the useful output from the selected example."
+        }
+      ],
+      "follow_up": "Use one further device to distinguish input from output.",
+      "review_lss": [
+        "7.1.4",
+        "7.2.1"
+      ]
+    },
+    {
+      "id": "DLP-SCI-Y4-L46",
+      "label": "Lesson 46",
+      "title": "Trace materials to their sources",
+      "unit": "Unit 8 Materials",
+      "rpt_dates": [
+        "A  15-19 Aug",
+        "B  16-20 Aug"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 8.1",
+        "LS 8.1.1, 8.1.2, 8.1.3"
+      ],
+      "references": [
+        "TB pp. 142-144"
+      ],
+      "objective": "Sort objects by plant, animal, rock or petroleum source and explain a difficult example.",
+      "materials": "Objects made of wood, wool, stone and plastic, source cards",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a plastic ruler and a wooden pencil barrel.",
+          "pupils": "Suggest where each material comes from."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Explain the four source categories. Discuss wool as animal fibre and most classroom plastics as petroleum-derived examples.",
+          "pupils": "Sort objects, then distinguish the source material from the finished object."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check four classifications and an explanation for plastic or another difficult example.",
+          "pupils": "Independently classify the four objects and justify one."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask why two objects can share a source even when one is soft.",
+          "pupils": "Name a source and distinguish it from the object's properties."
+        }
+      ],
+      "follow_up": "Use a source label and a material label for each tricky example."
+    },
+    {
+      "id": "DLP-SCI-Y4-L47",
+      "label": "Lesson 47",
+      "title": "Test absorbency and flotation",
+      "unit": "Unit 8 Materials",
+      "rpt_dates": [
+        "A  22-26 Aug",
+        "B  23-27 Aug"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 8.2",
+        "LS 8.2.1"
+      ],
+      "references": [
+        "TB pp. 145-146"
+      ],
+      "objective": "Record the response of four materials to equal quantities of water and use the results to order them.",
+      "materials": "Paper towel, foil, sponge, plastic lid, water drops, basin, table",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a sponge and plastic lid and ask what might happen after the same water drop.",
+          "pupils": "Predict an outcome for each without using the float test as the reason."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Test equal drops and a fixed wait time for absorbency, then test whether dry samples float in separate trials.",
+          "pupils": "Record both results for each material in separate columns."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check individual records of four samples and a ranking based on one property.",
+          "pupils": "Rank samples by observed absorbency and state each float result separately."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask if a floating object must absorb water.",
+          "pupils": "Use two observations from the tests to answer."
+        }
+      ],
+      "follow_up": "Recheck the distinction between floating and absorbing."
+    },
+    {
+      "id": "DLP-SCI-Y4-L48",
+      "label": "Lesson 48",
+      "title": "Compare conductivity and light transmission",
+      "unit": "Unit 8 Materials",
+      "rpt_dates": [
+        "A  22-26 Aug",
+        "B  23-27 Aug"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 8.2",
+        "LS 8.2.1"
+      ],
+      "references": [
+        "TB pp. 147-149"
+      ],
+      "objective": "Use a low-voltage circuit and a light source to compare materials and record the results separately.",
+      "materials": "School low-voltage battery circuit with test gap, LED, metal and plastic samples, torch and screen",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a closed circuit and ask what happens if the test gap is opened.",
+          "pupils": "Predict what happens to the indicator."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model inserting a sample in a teacher-prepared battery circuit. Compare light transmission separately using the same torch and screen.",
+          "pupils": "Record electrical and light-transmission observations in different columns."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check whether each pupil labels the properties and gives one comparison supported by both tests.",
+          "pupils": "Submit an individual table and explain one result from each test."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask whether letting light through means conducting electricity.",
+          "pupils": "Use the results to separate the two properties."
+        }
+      ],
+      "follow_up": "Revisit the purpose and evidence of each test."
+    },
+    {
+      "id": "DLP-SCI-Y4-L49",
+      "label": "Lesson 49",
+      "title": "Compare heat conduction and elasticity",
+      "unit": "Unit 8 Materials",
+      "rpt_dates": [
+        "A  5-9 Sep",
+        "B  6-10 Sep"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 8.2",
+        "LS 8.2.1"
+      ],
+      "references": [
+        "TB pp. 149-150"
+      ],
+      "objective": "Compare teacher-prepared heat-conduction observations and test how two materials recover after stretching.",
+      "materials": "Teacher-prepared heat comparison results, two elastic classroom materials, ruler",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a pair of teacher-recorded heat-test measurements and ask which changed first.",
+          "pupils": "Name one observable difference used for comparison."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Interpret teacher-prepared results for materials exposed to the same warming conditions. Compare recovery of two materials after a gentle stretch.",
+          "pupils": "Record which sample transfers heat faster and compare each sample's length before, during and after stretching."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check a conclusion for each property with supporting observations.",
+          "pupils": "Individually name the better heat conductor and the material that recovered more completely."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask what shows elasticity after the force is removed.",
+          "pupils": "Use the final length relative to the original length."
+        }
+      ],
+      "follow_up": "Provide new data to reinforce that heat conduction and elasticity describe different properties."
+    },
+    {
+      "id": "DLP-SCI-Y4-L50",
+      "label": "Lesson 50",
+      "title": "Design an object for a purpose",
+      "unit": "Unit 8 Materials",
+      "rpt_dates": [
+        "A  5-9 Sep",
+        "B  6-10 Sep"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 8.2",
+        "LS 8.2.2, 8.2.3, 8.2.4"
+      ],
+      "references": [
+        "TB pp. 151-153"
+      ],
+      "objective": "Build a simple object, test it against one criterion and justify the material choice using measured properties.",
+      "materials": "Paper, card, plastic sheet, tape, measured water drops",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a model container that must protect a paper insert from a splash.",
+          "pupils": "Name a relevant material property."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Set a criterion that the insert stays dry after an equal measured splash. Guide pupils to select and assemble a cover.",
+          "pupils": "Make a small model, perform the agreed test and record whether the insert stayed dry."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check a test result and a material choice justified by prior property observations.",
+          "pupils": "Individually draw the result and defend one material choice using the test evidence."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask which change could be tested fairly next.",
+          "pupils": "Suggest one change and one fixed condition."
+        }
+      ],
+      "follow_up": "Revise the proposal when the material choice lacks measured evidence."
+    },
+    {
+      "id": "DLP-SCI-Y4-R08",
+      "label": "Review 08",
+      "title": "Materials Review",
+      "unit": "Unit 8 Materials",
+      "rpt_dates": [
+        "A  12-16 Sep",
+        "B  13-17 Sep"
+      ],
+      "minutes": 30,
+      "standards": [
+        "Consolidation",
+        "Review taught standards"
+      ],
+      "references": [
+        "TB p. 154"
+      ],
+      "objective": "Select a material for a specified purpose and support the choice with two observations.",
+      "materials": "Property results chart, cards for a bag, a curtain and a handle",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show a handle card and ask which property would matter.",
+          "pupils": "Suggest a property relevant to the handle."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Assign one purpose and give a chart with two sources of evidence about each candidate material.",
+          "pupils": "Compare choices and connect two observations to the stated use."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Check an individual recommendation supported by two results.",
+          "pupils": "Write a material choice and two pieces of evidence."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask how the choice might change for a transparent cover.",
+          "pupils": "Name a relevant property and identify suitable evidence."
+        }
+      ],
+      "follow_up": "Revisit any justification based only on appearance.",
+      "review_lss": [
+        "8.2.1",
+        "8.2.2"
+      ]
+    },
+    {
+      "id": "DLP-SCI-Y4-L51",
+      "label": "Lesson 51",
+      "title": "Explain the effect of gravity",
+      "unit": "Unit 9 Earth",
+      "rpt_dates": [
+        "A  12-16 Sep",
+        "B  13-17 Sep"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 9.1",
+        "LS 9.1.1, 9.1.2, 9.1.3"
+      ],
+      "references": [
+        "TB pp. 156-159"
+      ],
+      "objective": "Sketch falling and stationary objects and explain why both are subject to Earth's gravity.",
+      "materials": "Soft foam ball, paper sketch slips, picture of an object resting on a table",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Release a foam ball and ask what is observed.",
+          "pupils": "Describe its downward movement."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Compare the falling ball and the same ball at rest on a table. Explain that gravity acts in both cases and that the table supports the resting ball.",
+          "pupils": "Draw both situations and show the downward pull of gravity."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check two drawings and a statement explaining the supported object.",
+          "pupils": "Individually label gravity for both examples and explain why the resting object does not fall through the table."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask whether the ball has to move to be affected by gravity.",
+          "pupils": "Use the resting example as evidence for the explanation."
+        }
+      ],
+      "follow_up": "Use a familiar supported object to practise applying the same reasoning."
+    },
+    {
+      "id": "DLP-SCI-Y4-L52",
+      "label": "Lesson 52",
+      "title": "Model Earth's rotation and revolution",
+      "unit": "Unit 9 Earth",
+      "rpt_dates": [
+        "A  19-23 Sep",
+        "B  20-24 Sep"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 9.2",
+        "LS 9.2.1, 9.2.2"
+      ],
+      "references": [
+        "TB pp. 160-162"
+      ],
+      "objective": "Demonstrate both movements with a globe and state their directions and durations.",
+      "materials": "Globe, marked axis, lamp or labelled Sun model",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Ask what can move when the globe spins in place.",
+          "pupils": "Describe the globe turning about its axis."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Demonstrate west-to-east rotation and revolution around the model Sun. Use the view above the North Pole to show direction and compare typical durations.",
+          "pupils": "Model the two movements and label about one day for rotation and about one year for revolution."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check the movement, direction and duration of each on an individual diagram.",
+          "pupils": "Draw and label one rotation and one revolution independently."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask which movement returns a place to facing the Sun the next day.",
+          "pupils": "Identify rotation."
+        }
+      ],
+      "follow_up": "Repeat the model from the same viewing direction to avoid reversing arrows."
+    },
+    {
+      "id": "DLP-SCI-Y4-L53",
+      "label": "Lesson 53",
+      "title": "Explain day, night and shadows",
+      "unit": "Unit 9 Earth",
+      "rpt_dates": [
+        "A  19-23 Sep",
+        "B  20-24 Sep"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 9.2",
+        "LS 9.2.3"
+      ],
+      "references": [
+        "TB pp. 163-165"
+      ],
+      "objective": "Use a globe and lamp to explain day and night, then link shadow direction or length to observed changes.",
+      "materials": "Globe with a marked location, lamp, shadow photo sequence",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Light one side of the globe and ask what the marked place experiences.",
+          "pupils": "Identify day or night from the light reaching the mark."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Rotate the globe under the fixed lamp. Compare shadow photos for different times using a fixed marker.",
+          "pupils": "Identify when the mark enters or leaves the illuminated side and explain one shadow change."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check a labelled day/night diagram and an explanation of a change in shadow direction or length.",
+          "pupils": "Submit the diagram and explain a shadow change using the Sun's apparent position."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask whether the lamp or globe was moved for day and night.",
+          "pupils": "Identify the globe and explain the model."
+        }
+      ],
+      "follow_up": "Revisit the link between Earth's rotation and the apparent movement of the Sun."
+    },
+    {
+      "id": "DLP-SCI-Y4-L54",
+      "label": "Lesson 54",
+      "title": "Present evidence of Earth's motions",
+      "unit": "Unit 9 Earth",
+      "rpt_dates": [
+        "A  26-30 Sep",
+        "B  27 Sep-1 Oct"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 9.2",
+        "LS 9.2.4"
+      ],
+      "references": [
+        "TB pp. 160-165"
+      ],
+      "objective": "Use a labelled model or diagram to communicate one observation of each motion.",
+      "materials": "Globe, lamp or Sun marker, poster paper and arrows",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Give two sketches of Earth's motion and ask which is about an axis.",
+          "pupils": "Identify the rotation sketch."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Ask teams to prepare distinct arrows and model observations for rotation and revolution.",
+          "pupils": "Display both motions on a labelled model or diagram and explain one observation for each."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check one accurate observation from each model and whether the motion labels and arrows agree.",
+          "pupils": "Individually annotate two sketches and write one observation for each."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask which movement the orbit arrow represents.",
+          "pupils": "Name revolution and distinguish it from spinning."
+        }
+      ],
+      "follow_up": "Provide one motion sketch for pupils who still mix the two."
+    },
+    {
+      "id": "DLP-SCI-Y4-R09",
+      "label": "Review 09",
+      "title": "Earth Review",
+      "unit": "Unit 9 Earth",
+      "rpt_dates": [
+        "A  26-30 Sep",
+        "B  27 Sep-1 Oct"
+      ],
+      "minutes": 30,
+      "standards": [
+        "Consolidation",
+        "Review taught standards"
+      ],
+      "references": [
+        "TB p. 168"
+      ],
+      "objective": "Explain day and night using a globe and identify the role of gravity in a separate example.",
+      "materials": "Marked globe, lamp, gravity picture and review slips",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show a marked location on the illuminated side.",
+          "pupils": "Identify what the marked place experiences."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Assign two tasks: model day and night and explain one gravity scenario involving a falling or supported object.",
+          "pupils": "Demonstrate the rotation and annotate an arrow for gravity on the diagram."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Check the rotation explanation and why gravity acts in the second example.",
+          "pupils": "Independently submit the two labelled diagrams."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask why Earth's motion and gravity are different explanations.",
+          "pupils": "Link each explanation to its own observation."
+        }
+      ],
+      "follow_up": "Reteach the example that lacked a clear causal explanation.",
+      "review_lss": [
+        "9.1.1",
+        "9.2.3"
+      ]
+    },
+    {
+      "id": "DLP-SCI-Y4-L55",
+      "label": "Lesson 55",
+      "title": "Identify the parts of a lever",
+      "unit": "Unit 10 Machines",
+      "rpt_dates": [
+        "A  3-7 Oct",
+        "B  4-8 Oct"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 10.1",
+        "LS 10.1.1"
+      ],
+      "references": [
+        "TB pp. 170-171"
+      ],
+      "objective": "Label effort, load and fulcrum on two everyday examples and explain where effort is applied.",
+      "materials": "Toy seesaw, diagram of a bottle opener, effort/load/fulcrum labels",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a seesaw and ask which part stays at the pivot.",
+          "pupils": "Identify the support beneath the board."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model labelling the pivot, object being moved and point where effort acts. Compare a second lever diagram.",
+          "pupils": "Mark load, fulcrum and effort on both examples."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check all labels and the direction or location of effort.",
+          "pupils": "Individually label two lever diagrams and explain where the effort is applied."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask pupils to point to the part that turns about the fulcrum.",
+          "pupils": "Trace the movement of the lever arm."
+        }
+      ],
+      "follow_up": "Repeat labelling on an unfamiliar lever picture."
+    },
+    {
+      "id": "DLP-SCI-Y4-L56",
+      "label": "Lesson 56",
+      "title": "Investigate a lever",
+      "unit": "Unit 10 Machines",
+      "rpt_dates": [
+        "A  3-7 Oct",
+        "B  4-8 Oct"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 10.1",
+        "LS 10.1.2, 10.1.3"
+      ],
+      "references": [
+        "TB pp. 172-173"
+      ],
+      "objective": "Compare the effort needed for two load positions and explain the change using recorded observations.",
+      "materials": "Ruler lever, secured pivot, small load, capped spring scale, results slips",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show one load position near the pivot and one farther away.",
+          "pupils": "Predict which will require more effort when the effort point is fixed."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Keep the pivot, load mass and effort point fixed while changing the load position. Measure the effort for both positions with a spring scale.",
+          "pupils": "Record both readings and compare the effect of the load distance."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check two readings with units and a conclusion supported by the comparison.",
+          "pupils": "Individually state which position needed less effort and cite the observations."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask why the load mass was kept constant.",
+          "pupils": "Explain that the test aims to compare position."
+        }
+      ],
+      "follow_up": "Use a labelled diagram when pupils confuse load distance and effort distance."
+    },
+    {
+      "id": "DLP-SCI-Y4-L57",
+      "label": "Lesson 57",
+      "title": "Recognise the seven simple machines",
+      "unit": "Unit 10 Machines",
+      "rpt_dates": [
+        "A  10-14 Oct",
+        "B  11-15 Oct"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 10.2",
+        "LS 10.2.1"
+      ],
+      "references": [
+        "TB pp. 174-176"
+      ],
+      "objective": "Identify examples of simple machines and explain the use of three of them.",
+      "materials": "Pictures or samples of seven simple machines, labels and matching cards",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a ramp and a toy wheel and ask how each helps.",
+          "pupils": "Suggest what each changes about a task."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model identifying the lever, wedge, screw, pulley, inclined plane, wheel and axle, and gear using examples.",
+          "pupils": "Classify seven examples and explain three functions to a partner."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check the seven matches and uses of three distinct machines.",
+          "pupils": "Independently match the examples and describe how three make a task easier."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask how a wheel with teeth differs from a smooth wheel in use.",
+          "pupils": "Identify the gear and describe how it can transfer movement."
+        }
+      ],
+      "follow_up": "Compare examples for the categories most often confused."
+    },
+    {
+      "id": "DLP-SCI-Y4-L58",
+      "label": "Lesson 58",
+      "title": "Combine simple machines to solve a problem",
+      "unit": "Unit 10 Machines",
+      "rpt_dates": [
+        "A  10-14 Oct",
+        "B  11-15 Oct"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 10.2",
+        "LS 10.2.2"
+      ],
+      "references": [
+        "TB pp. 177-179"
+      ],
+      "objective": "Build or model a way to move a load using at least two simple machines and show how each helps.",
+      "materials": "Toy load, ramp, model cart, ruler, tape and planning slip",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a small box and a low platform.",
+          "pupils": "Suggest a safe way to move the box up."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Set the challenge of using two simple machines. Guide groups to test a ramp with a wheeled cart and record the result.",
+          "pupils": "Build or sketch the arrangement, move the model load and identify how the incline and wheels help."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check that two simple machines are named and that each contribution is independently explained.",
+          "pupils": "Submit a labelled model sketch and explain the roles of the ramp and wheel and axle."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask what evidence shows each machine helped.",
+          "pupils": "Cite the raised path and the rolling movement observed."
+        }
+      ],
+      "follow_up": "Improve the model by changing one feature and testing the result."
+    },
+    {
+      "id": "DLP-SCI-Y4-L59",
+      "label": "Lesson 59",
+      "title": "Explain a complex machine",
+      "unit": "Unit 10 Machines",
+      "rpt_dates": [
+        "A  17-21 Oct",
+        "B  18-22 Oct"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 10.2",
+        "LS 10.2.3, 10.2.4"
+      ],
+      "references": [
+        "TB pp. 180-183"
+      ],
+      "objective": "Identify at least two simple machines in a complex machine and show how they work together.",
+      "materials": "Hand egg-beater photo or classroom demonstration, gear and axle labels, arrows",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a hand egg beater and ask how turning its handle moves the whisk.",
+          "pupils": "Point to the input handle and output whisk."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Trace rotation from the handle and its axle through meshing gears to the whisks. Ask groups to annotate the components they can see.",
+          "pupils": "Identify the wheel and axle and gears and show how rotation passes between them."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check two labelled mechanisms and a clear linked description of the movement.",
+          "pupils": "Individually annotate the mechanism and explain how both simple machines work together."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask what happens if the gears do not mesh.",
+          "pupils": "Explain why the input cannot transfer rotation to the whisk as intended."
+        }
+      ],
+      "follow_up": "Recheck the path of movement using arrows from the handle to the output."
+    },
+    {
+      "id": "DLP-SCI-Y4-R10",
+      "label": "Review 10",
+      "title": "Machines Review",
+      "unit": "Unit 10 Machines",
+      "rpt_dates": [
+        "A  17-21 Oct",
+        "B  18-22 Oct"
+      ],
+      "minutes": 30,
+      "standards": [
+        "Consolidation",
+        "Review taught standards"
+      ],
+      "references": [
+        "TB p. 184"
+      ],
+      "objective": "Compare two lever setups and identify the simple machines in an everyday device.",
+      "materials": "Two lever sketches with identical loads, everyday-device diagram, review slip",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show two lever setups and ask which positions differ.",
+          "pupils": "Compare load position and name what is kept fixed."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Assign a lever comparison and a device-identification task using labelled drawings.",
+          "pupils": "Predict which setup needs less effort and identify two simple machines in the device."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Check an individual effort prediction with a reason and the correctly named mechanisms.",
+          "pupils": "Submit one lever comparison and label two mechanisms in the device."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask why knowing the pivot position matters.",
+          "pupils": "Explain that it determines the distances used in the comparison."
+        }
+      ],
+      "follow_up": "Practise the question for which the exit slip lacked a reason.",
+      "review_lss": [
+        "10.1.2",
+        "10.2.3"
+      ]
+    }
+  ]
+}
