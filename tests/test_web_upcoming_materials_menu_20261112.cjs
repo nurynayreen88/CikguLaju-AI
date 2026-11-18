@@ -40,7 +40,7 @@ assert.ok(pos("rph")<pos("worksheet") && pos("worksheet")<pos("bbm") &&
  pos("bbm")<pos("uasa") && pos("uasa")<pos("pbd") &&
  pos("pbd")<pos("special"),"Teaching-material features should follow Sediakan RPH");
 assert.doesNotMatch(source,/id="view-kp2027"|data-web-view="kp2027"/);
-assert.match(source,/<select id="curriculum">.*<option value="kssr">KSSR \(SK\)<\/option><option value="sjkc">KSSR \(SJKC\)<\/option><option value="kp2027">KP27 \(KP Baharu\)<\/option><option value="dlp">DLP<\/option><\/select>/);
+assert.match(source,/<select id="curriculum">.*<option value="kssr">KSSR \(SK\)<\/option><option value="sjkc">KSSR \(SJKC\)<\/option><option value="sjkt">KSSR \(SJKT\) — Dalam Penyediaan<\/option><option value="kp2027">KP27 \(KP Baharu\)<\/option><option value="dlp">DLP<\/option><\/select>/);
 assert.match(source,/<select id="year" hidden disabled>/);
 assert.match(source,/<select id="subject" hidden disabled>/);
 assert.match(source,/year===1\?"Tahun 1 \(KP Baharu\)"/);
@@ -165,13 +165,21 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  for(const yearNumber of ["2","3"]){
   year.value=yearNumber;
   await listeners["year.change"]();
-  assert.equal(subject.options[1].label,"Matematik (SJKC) — "+(yearNumber==="2"?"RPT 2027":"Dalam Penyediaan"));
+  assert.equal(subject.options[1].label,"Matematik (SJKC) — RPH Dalam Penyediaan");
   subject.value="matematik_sjkc";
   await listeners["subject.change"]();
-  assert.equal(variantRpt.hidden,yearNumber!=="2");
+  assert.equal(variantRpt.hidden,true);
+  assert.equal(variantRpt.dataset.subject,undefined);
   assert.equal(unit.hidden,true);
+  assert.equal(lesson.hidden,true);
   assert.match(ctx.help,/dalam penyediaan/i);
  }
+ curriculum.value="sjkt";
+ listeners["curriculum.change"]();
+ assert.equal(year.hidden,true);
+ assert.equal(subject.hidden,true);
+ assert.equal(variantRpt.hidden,true);
+ assert.match(ctx.help,/RPH SJKT masih dalam penyediaan/);
  assert.deepEqual(catalogueCalls,[]);
  curriculum.value="dlp";
  listeners["curriculum.change"]();
@@ -186,6 +194,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
   let lessonNumber=0;
   subject.value=subjectCode;
   await listeners["subject.change"]();
+  assert.equal(variantRpt.hidden,false);
   assert.equal(panel.hidden,true);
   assert.deepEqual(unit.options.map(x=>x.value),["",...groups.map(group=>group.id)]);
   for(const group of groups){
