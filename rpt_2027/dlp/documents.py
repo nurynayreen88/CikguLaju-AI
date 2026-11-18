@@ -13,7 +13,7 @@ def document_path(subject, year, fmt="pdf", *, root=ROOT):
         return None
     name = f"CikguLaju_RPT_DLP_2027_{SUBJECTS[subject]}_Year_{year}.{fmt}"
     path = Path(root) / name
-    if (subject, year) == ("science_dlp", 6):
+    if year == 6:
         aligned = path.with_name(f"{path.stem}_Selaras.{fmt}")
         if aligned.is_file():
             path = aligned

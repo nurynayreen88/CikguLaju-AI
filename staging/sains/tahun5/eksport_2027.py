@@ -254,9 +254,10 @@ def export_rpt(path, weeks, rows):
         line.cells[0].text = label
         if label == "Logo sekolah":
             line.height = Mm(24)
-            line.height_rule = WD_ROW_HEIGHT_RULE.AT_LEAST
         else:
+            line.height = Mm(11)
             line.cells[1].text = "__________________________________"
+        line.height_rule = WD_ROW_HEIGHT_RULE.AT_LEAST
     doc.add_heading("Peruntukan PdP", 1)
     doc.add_paragraph("116 PdP dalam 10 unit, dengan 104 sesi 30 minit dan 12 sesi 60 minit. Jumlah 64 jam.")
     doc.add_paragraph("Gunakan julat Kumpulan A atau B mengikut sekolah. Pilih slot PdP sebenar mengikut jadual waktu, cuti negeri dan tarikh UASA sekolah.")
