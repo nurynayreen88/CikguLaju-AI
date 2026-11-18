@@ -50,4 +50,4 @@ Simulasi menu guru Web menghasilkan 96 Word dan 96 PDF. Ujian Telegram mengesahk
 
 ## Status
 
-Pemilik meluluskan penerbitan tanpa menunggu semakan guru SJKT pada 19 November 2026. Pengaktifan pilihan guru dan ujian muat turun dengan akaun sebenar di produksi masih perlu disahkan.
+Pemilik meluluskan penerbitan tanpa menunggu semakan guru SJKT pada 19 November 2026. RPH diaktifkan dalam produksi Telegram dan Web melalui [PR Telegram #950](https://github.com/nurynayreen88/CikguLaju-AI/pull/950) dan [PR Web #951](https://github.com/nurynayreen88/CikguLaju-AI/pull/951). Log permulaan Telegram mengesahkan penjana SJKT aktif. Ujian produksi mengesahkan kesediaan Web serta keperluan log masuk untuk laluan katalog dan muat turun. Muat turun dengan akaun guru produksi belum disahkan.
