@@ -66,7 +66,7 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         return buttons[:2]
 
     def test_every_exact_selection_can_send_word_and_pdf(self):
-        keys = self.buttons(self.click("sk27:home"))[:2]
+        keys = [key for key in self.buttons(self.click("sk27:home")) if key.startswith("sk27:set:")]
         counts = Counter()
         for scope in keys:
             units = [key for key in self.buttons(self.click(scope)) if key.startswith("sk27:unit:")]
@@ -82,9 +82,9 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                         self.assertEqual(self.documents[-1][0], f"CikguLaju_RPH_{code}.pdf")
                         self.assertEqual(len(PdfReader(BytesIO(self.documents[-1][1])).pages), 1)
                         counts[set_id] += 1
-        self.assertEqual(counts, {"s": 116, "m": 54})
-        self.assertEqual(len(self.documents), 340)
-        self.assertEqual(self.credits, 170)
+        self.assertEqual(counts, {"s": 116, "m": 54, "s6": 89, "d6": 61})
+        self.assertEqual(len(self.documents), 640)
+        self.assertEqual(self.credits, 320)
 
     def test_wrong_set_old_buttons_and_failed_delivery_cannot_charge(self):
         word, _ = self._select("s", "01", "SK27-SCI-Y5-PDP-001")
