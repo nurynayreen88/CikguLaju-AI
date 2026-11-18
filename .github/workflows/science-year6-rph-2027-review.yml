@@ -1,0 +1,33 @@
+name: Year 6 Science RPT and RPH review
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'staging/sains/tahun6/**'
+      - 'staging/dlp/year6/render_science.py'
+      - 'staging/dlp/year6/science_2027.json'
+      - 'rpt_2027/dlp/CikguLaju_RPT_DLP_2027_Science_Year_6.docx'
+      - 'tests/test_science_year6_rph_2027_exports.py'
+      - '.github/workflows/science-year6-rph-2027-review.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  review-exports:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install python-docx==1.2.0 reportlab==4.2.5 pypdf==5.1.0
+      - name: Install the Word conversion tools
+        run: |
+          if ! command -v soffice >/dev/null; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq --no-install-recommends libreoffice-writer fonts-crosextra-carlito
+          fi
+      - run: python -m unittest discover -s tests -p 'test_science_year6_rph_2027_exports.py' -v
