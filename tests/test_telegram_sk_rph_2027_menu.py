@@ -6,10 +6,13 @@ from pathlib import Path
 from threading import Lock
 from types import SimpleNamespace
 import unittest
+from unittest.mock import patch
 
 from docx import Document
+from flask import Flask
 from pypdf import PdfReader
 
+from web.native_rph_telegram_api import create_native_rph_blueprint
 from web.telegram_sk_rph_2027 import install
 from web.telegram_rph_entry_choices_20261110 import install as install_entry
 
@@ -82,9 +85,49 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                         self.assertEqual(self.documents[-1][0], f"CikguLaju_RPH_{code}.pdf")
                         self.assertEqual(len(PdfReader(BytesIO(self.documents[-1][1])).pages), 1)
                         counts[set_id] += 1
-        self.assertEqual(counts, {"s": 116, "m": 54, "s6": 89, "d6": 61, "m5": 69, "d5": 70})
-        self.assertEqual(len(self.documents), 918)
-        self.assertEqual(self.credits, 459)
+        self.assertEqual(counts, {"d4": 69, "s": 116, "m": 54, "s6": 89, "d6": 61, "m5": 69, "d5": 70})
+        self.assertEqual(len(self.documents), 1056)
+        self.assertEqual(self.credits, 528)
+
+    def test_science_year4_api_returns_the_exact_catalogue_and_files(self):
+        app = Flask(__name__)
+        runtime = SimpleNamespace(create_word_file=lambda *_: None, create_pdf_file=lambda *_: None)
+        app.register_blueprint(create_native_rph_blueprint(runtime))
+        client = app.test_client()
+        path = "/internal/rph/v1/dlp"
+        token = "cikgulaju-local-test-token-for-science-y4"
+        headers = {"Authorization": f"Bearer {token}"}
+        with patch.dict("os.environ", {"CIKGULAJU_WEB_NATIVE_RPH_ENABLED": "1",
+                                      "CIKGULAJU_AUTHORITATIVE_API_TOKEN": token}):
+            self.assertEqual(client.get(path + "/year4-science/catalogue").status_code, 401)
+            response = client.get(path + "/year4-science/catalogue", headers=headers)
+            self.assertEqual(response.status_code, 200)
+            catalogue = response.get_json()
+            self.assertEqual((catalogue["year"], catalogue["subject"]), (4, "SCIENCE_DLP"))
+            self.assertEqual(len(catalogue["units"]), 10)
+            self.assertEqual(sum(len(unit["lessons"]) for unit in catalogue["units"]), 69)
+            teacher = {"class": "4 Bestari", "date": "22/08/2027", "time": "08:00 - 09:00",
+                       "students": "32", "reflection": "Check the evidence in the next lesson."}
+            for unit, lesson in (("08", "DLP-SCI-Y4-L46"), ("10", "DLP-SCI-Y4-R10")):
+                selection = {"year": 4, "subject": "SCIENCE_DLP", "unit": unit, "lesson": lesson}
+                available = client.get(path + "/availability", query_string=selection, headers=headers)
+                self.assertEqual(available.get_json(), {"available": True, "formats": ["word", "pdf"]})
+                for fmt, suffix in (("word", "docx"), ("pdf", "pdf")):
+                    result = client.post(path + "/render", headers=headers,
+                                         json={"selection": selection, "teacher": teacher, "format": fmt})
+                    self.assertEqual(result.status_code, 200)
+                    self.assertIn(f"{lesson}.{suffix}", result.headers["Content-Disposition"])
+                    if fmt == "word":
+                        doc = Document(BytesIO(result.data))
+                        self.assertIn(teacher["class"], doc.tables[0].rows[3].cells[1].text)
+                        self.assertEqual(doc.tables[-1].rows[0].cells[1].text, teacher["reflection"])
+                    else:
+                        page, = PdfReader(BytesIO(result.data)).pages
+                        self.assertIn(teacher["class"], page.extract_text())
+                wrong = client.get(path + "/availability", query_string={**selection, "unit": "01"},
+                                   headers=headers)
+                self.assertEqual(wrong.status_code, 404)
+            self.assertEqual(client.get(path + "/year4-mathematics/catalogue", headers=headers).status_code, 404)
 
     def test_wrong_set_old_buttons_and_failed_delivery_cannot_charge(self):
         word, _ = self._select("s", "01", "SK27-SCI-Y5-PDP-001")
