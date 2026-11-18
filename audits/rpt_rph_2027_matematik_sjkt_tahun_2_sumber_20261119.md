@@ -10,7 +10,8 @@
 | [Buku Teks Jilid 1](https://drive.google.com/file/d/1RNzJ3Q_Cqgjr3jcUOJ_Xs-p8HfIg2Pcb/view) | KPM 2017, ET082002, ISBN 978-967-2046-05-9. Halaman bercetak 1–122, PDF 7–128. |
 | [Buku Teks Jilid 2](https://drive.google.com/file/d/1-YTDDtgBpNBvXMMMdhy1_ehzcuYGF1uC/view) | KPM 2017, ET082003, ISBN 978-967-2046-06-6. Halaman bercetak 1–100, PDF 5–104. |
 | [Buku Aktiviti](https://drive.google.com/file/d/1M3jB5nU_mg4vzQ7qmXSo-gCnZq8IGwi7/view) · [Indeks buku PPD Batu Pahat](https://sites.google.com/moe-dl.edu.my/ppd-batu-pahat-sains-matematik/buku-teks-digital-bidang-sains-matematik/buku-teks-sekolah-rendah/matematik-tahun-2) | KPM 2017, EA082001, ISBN 978-967-2046-07-3. Halaman bercetak 1–156, PDF 6–161. |
-| [RPT Matematik Tahun 2 SJKT Ladang Sungai Raya](https://drive.google.com/file/d/1TSS1I75kwwCVNavb-Ch5VCABLDkLBn5Z/view) · [Panitia Matematik](https://sites.google.com/moe-dl.edu.my/kbd6019-sjktlsr/kurikulum/panitia/matematik/20242025/dskp) | Tahun 2024/2025, edisi Tamil, digunakan sebagai rujukan urutan unit dan format. Contoh RPT 2026 bagi edisi SJKT belum dapat disahkan. |
+| [RPT Matematik Tahun 2 SJKT Ladang Sungai Raya](https://drive.google.com/file/d/1TSS1I75kwwCVNavb-Ch5VCABLDkLBn5Z/view) · [Panitia Matematik](https://sites.google.com/moe-dl.edu.my/kbd6019-sjktlsr/kurikulum/panitia/matematik/20242025/dskp) | Tahun 2024/2025, edisi Tamil, digunakan sebagai rujukan urutan unit dan format. |
+| [RPT 2026 Matematik Tahun 2 SJKT Jalan Meru, Klang](https://www.scribd.com/document/1009584132/RPT-MATH-THN-2-2026) | Salinan rujukan sekolah dalam bahasa Tamil. Digunakan untuk menyemak urutan lapan unit dan 70 kod SP unik. |
 | [Surat Siaran KPM Bil. 1 Tahun 2027, Kalendar Akademik](https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik) | Asas tarikh Kumpulan A dan B 2027. Semak cuti mengikut negeri ketika memperuntukkan slot. |
 
 ## Pemetaan kurikulum dan halaman
@@ -22,6 +23,8 @@
 - Halaman pertama sebenar bagi unit 3–8 dalam BA masing-masing 89, 102, 121, 129, 144 dan 151. Pemetaan menggunakan nombor bercetak pada halaman latihan.
 
 ## Agihan pengajaran 2027
+
+Turutan 70 SP teras dalam RPT 2027 sepadan dengan kemunculan pertama semua 70 kod SP dalam contoh SJKT Jalan Meru 2026. Contoh itu menyenaraikan 5.3.1 bagi penyelesaian masalah masa dan mengulang 8.3.1 dalam dua minggu. Draf 2027 menggunakan tarikh Kumpulan A/B daripada takwim KPM 2027 dan menyediakan dua PdP bagi SP 8.3.1, iaitu satu teras dan satu pengukuhan.
 
 [Data RPT](matematik_sjkt_tahun_2/rpt_2027.json) mempunyai 44 baris minggu Kumpulan A/B dan 96 PdP 60 minit. Daripada 96 PdP, 70 ialah teras dan 26 pengukuhan. Agihan unit ialah 16, 22, 15, 12, 7, 12, 8 dan 4 PdP. Semua 70 SP dipadankan dengan kod DSKP, setiap halaman diuji dalam julat unit edisi SJKT dan kapasiti hari pengajaran disemak merentas 16 negeri atau wilayah.
 
