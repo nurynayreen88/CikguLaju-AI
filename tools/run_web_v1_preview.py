@@ -141,13 +141,13 @@ def options():
             from web.native_telegram_sequence_rph_client import (
                 list_native_units, list_native_lessons, NativeRPHUnavailable,
             )
-            if year != 6 or request.args.get("component"):
+            if year not in (5, 6) or request.args.get("component"):
                 return jsonify({"error": "Invalid DLP selection"}), 400
             try:
                 options = (list_native_units(year, dlp_subject) if kind == "units"
                            else list_native_lessons(year, dlp_subject, request.args.get("unit", "")))
             except (NativeRPHUnavailable, ValueError):
-                return jsonify({"error": "Sumber DLP Year 6 belum tersedia."}), 503
+                return jsonify({"error": f"Sumber DLP Year {year} belum tersedia."}), 503
             return jsonify(options)
         # A versioned Web copy is opt-in and is never misrepresented as the
         # active Telegram database. Accounts/quota still use shared Supabase.

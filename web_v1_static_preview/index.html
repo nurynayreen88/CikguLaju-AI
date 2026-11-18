@@ -1416,7 +1416,7 @@ function currentRphLessonKey(){
                         subject.value==="PJPK"?component.value:""]);
 }
 function currentRphParams(){
- if((curriculum.value!=="kssr"&&!dlpYear6Download())||!/^[1-6]$/.test(year.value)||!subject.value||!unit.value||!lesson.value)return null;
+ if((curriculum.value!=="kssr"&&!dlpRphDownload())||!/^[1-6]$/.test(year.value)||!subject.value||!unit.value||!lesson.value)return null;
  if(subject.value==="BM"&&(!theme.value||!topic.value))return null;
  if(!teacherClass.checkValidity()||!teacherDate.checkValidity()||
     !teacherTimeStart.checkValidity()||!teacherTimeEnd.checkValidity()||
@@ -1442,7 +1442,7 @@ function resetRphPreview(){
   teacherReflection.value="";
   teacherReflection.closest("details").open=false;
  }
- document.getElementById("teacher-info").hidden=(curriculum.value!=="kssr"&&!dlpYear6Download())||!lesson.value;
+ document.getElementById("teacher-info").hidden=(curriculum.value!=="kssr"&&!dlpRphDownload())||!lesson.value;
  const actions=document.getElementById("rph-download-actions");
  const available=canGenerateRph()&&!!currentRphParams()&&verifiedRphKey===currentRphLessonKey();
  actions.hidden=!available;
@@ -1464,8 +1464,8 @@ const dlpReviewData=JSON.parse(document.getElementById("dlp-review-data").textCo
 const dlpReviewHeading=document.getElementById("dlp-rph-heading");
 const dlpReviewContent=document.getElementById("dlp-rph-content");
 const subjectVariants=window.cikgulajuSubjectVariants||[];
-function dlpYear6Download(){
- return curriculum.value==="dlp"&&year.value==="6"&&["MATH_DLP","SCIENCE_DLP"].includes(subject.value);
+function dlpRphDownload(){
+ return curriculum.value==="dlp"&&["5","6"].includes(year.value)&&["MATH_DLP","SCIENCE_DLP"].includes(subject.value);
 }
 const subjectCollator=new Intl.Collator("ms-MY",{sensitivity:"base"});
 const dlpSubjectOptions=subjectVariants.filter(item=>item.curriculum==="dlp")
@@ -1489,7 +1489,7 @@ const curriculumYears={
  kp2027:[{value:"1",label:"Tahun 1 (KP Baharu)"}],
  dlp:primaryYears.map(({value,label})=>({
   value,
-  label:value==="2"?label+" — Untuk Semakan Guru":value==="6"?label:
+  label:value==="2"?label+" — Untuk Semakan Guru":["5","6"].includes(value)?label:
    label+(value==="1"?" (KP Baharu)":"")+" — Dalam Penyediaan"
  }))
 };
@@ -1733,7 +1733,7 @@ year.addEventListener("change",async()=>{
  if(choice==="dlp"){
   if(!curriculumYears.dlp.some(option=>option.value===targetYear))return;
   fillSelect(subject,dlpSubjectOptions.map(({value,label})=>({
-   value,label:label+" — "+(targetYear==="2"?dlpReviewData[value].reduce((total,group)=>total+group.lessons.length,0)+" RPH":targetYear==="6"?"RPH 2027":"Dalam Penyediaan")
+   value,label:label+" — "+(targetYear==="2"?dlpReviewData[value].reduce((total,group)=>total+group.lessons.length,0)+" RPH":["5","6"].includes(targetYear)?"RPH 2027":"Dalam Penyediaan")
   })),"Pilih Subjek");
   showStep(subject,true);
   updateSelectionHelp(targetYear==="2"?"Pilih subjek untuk lihat RPH DLP Tahun 2.":"Pilih subjek DLP.");
@@ -1783,12 +1783,12 @@ subject.addEventListener("change",async()=>{
  if(curriculum.value==="dlp"){
   const selectedSubject=variant;
   if(!selectedSubject||!curriculumYears.dlp.some(option=>option.value===targetYear))return;
-  if(dlpYear6Download()){
+  if(dlpRphDownload()){
    try{
     await fillForSelection(unit,"units",{subject:code},"Pilih Unit",
-      ()=>dlpYear6Download()&&year.value===targetYear&&subject.value===code);
-    if(dlpYear6Download())showStep(unit,true);
-   }catch(error){if(dlpYear6Download())catalogStatus.textContent=error.message;}
+      ()=>dlpRphDownload()&&year.value===targetYear&&subject.value===code);
+    if(dlpRphDownload())showStep(unit,true);
+   }catch(error){if(dlpRphDownload())catalogStatus.textContent=error.message;}
   }else if(targetYear==="2"){
    fillSelect(unit,dlpReviewData[code].map(group=>({value:group.id,label:group.title})),"Pilih Unit");
    showStep(unit,true);
@@ -1847,7 +1847,7 @@ unit.addEventListener("change",async()=>{
  resetSelect(topic,"Pilih Tajuk");resetSelect(lesson,"Pilih Lesson/PdP");
  showStep(topic,code==="BM"&&!!selected);showStep(lesson,code!=="BM"&&!!selected);
  resetMaterials();resetRphPreview();displayBookReference();
- if(curriculum.value==="dlp"&&!dlpYear6Download()){
+ if(curriculum.value==="dlp"&&!dlpRphDownload()){
   showDlpReview(null);
   const group=targetYear==="2"&&dlpReviewData[code]?.find(row=>row.id===selected);
   showStep(lesson,!!group);
@@ -1882,7 +1882,7 @@ topic.addEventListener("change",async()=>{
 });
 lesson.addEventListener("change",()=>{
  resetMaterials();resetRphPreview();showRphAction();displayBookReference();
- if(curriculum.value==="dlp"&&!dlpYear6Download()){
+ if(curriculum.value==="dlp"&&!dlpRphDownload()){
   const group=year.value==="2"&&dlpReviewData[subject.value]?.find(row=>row.id===unit.value);
   showDlpReview(group?group.lessons.find(row=>row.id===lesson.value):null);
   updateSelectionHelp(lesson.value?"RPH untuk semakan guru.":"Pilih tajuk RPH.");
