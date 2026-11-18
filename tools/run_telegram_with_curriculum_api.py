@@ -838,3 +838,7 @@ MATEMATIK_SJKC_T3_RPH_ACTIVE = install_matematik_sjkc_t3(telegram_runtime)
 
 from web.matematik_sjkt_t2_review import install as install_matematik_sjkt_t2_review
 install_matematik_sjkt_t2_review(telegram_runtime)
+
+
+from web.matematik_sjkt_t2_telegram import install as install_matematik_sjkt_t2
+MATEMATIK_SJKT_T2_RPH_ACTIVE = install_matematik_sjkt_t2(telegram_runtime)

@@ -551,6 +551,78 @@ def create_native_rph_blueprint(runtime):
             current_app.logger.exception("Matematik SJKT review source unavailable")
             return jsonify({"error": "Matematik SJKT review source unavailable"}), 503
 
+    @bp.get("/internal/rph/v1/matematik-sjkt-t2/options")
+    def matematik_sjkt_options():
+        from flask import current_app
+        from web import matematik_sjkt_t2_release as sjkt
+        from web.matematik_sjkt_t2_review import RENDER_ERRORS
+
+        allowed, status = _authorized()
+        if not allowed:
+            return jsonify({"error": "Unauthorized renderer"}), status
+        if not sjkt.enabled():
+            return jsonify({"error": "Matematik SJKT unavailable"}), 404
+        keys = set(request.args)
+        if (keys not in ({"year"}, {"year", "unit"}, {"year", "unit", "pdp"})
+                or any(len(values) != 1 for _, values in request.args.lists())
+                or any(not re.fullmatch(r"[1-9][0-9]?", value) for value in request.args.values())):
+            return jsonify({"error": "Invalid Matematik SJKT selection"}), 400
+        unit = int(request.args["unit"]) if "unit" in keys else None
+        if request.args["year"] != str(sjkt.YEAR) or unit is not None and not 1 <= unit <= len(sjkt.UNIT_NAMES):
+            return jsonify({"error": "Matematik SJKT unavailable"}), 404
+        try:
+            if "pdp" in keys:
+                available = sjkt.resolve(unit, int(request.args["pdp"])) is not None
+                return jsonify({"available": available}), 200 if available else 404
+            if unit is None:
+                return jsonify([{"value": str(number), "label": f"Unit {number} · {label}"}
+                                for number, label in sjkt.units()])
+            return jsonify([{
+                "value": str(row["pdp"]), "label": f"PdP {row['pdp']:03} · {row['topic']}",
+                "lesson_no": row["pdp"],
+                "textbook_ref": f"BT {row['buku_teks']} · BA {row['buku_aktiviti']}",
+            } for row in sjkt.lessons() if row["unit_number"] == unit])
+        except RENDER_ERRORS:
+            current_app.logger.exception("Matematik SJKT catalogue unavailable")
+            return jsonify({"error": "Matematik SJKT unavailable"}), 503
+
+    @bp.post("/internal/rph/v1/matematik-sjkt-t2/render")
+    def matematik_sjkt_render():
+        from flask import current_app
+        from audits.matematik_sjkt_tahun_2.eksport_rph import teacher_context
+        from web import matematik_sjkt_t2_release as sjkt
+        from web.matematik_sjkt_t2_review import RENDER_ERRORS
+
+        allowed, status = _authorized()
+        if not allowed:
+            return jsonify({"error": "Unauthorized renderer"}), status
+        if not sjkt.enabled():
+            return jsonify({"error": "Matematik SJKT unavailable"}), 404
+        body = request.get_json(silent=True) if 0 < (request.content_length or 0) <= 7000 else None
+        if (not isinstance(body, dict) or set(body) != {"year", "unit", "pdp", "format", "teacher"}
+                or any(type(body[key]) is not int for key in ("year", "unit", "pdp"))
+                or not isinstance(body["format"], str) or body["format"] not in MIMES
+                or not isinstance(body["teacher"], dict)):
+            return jsonify({"error": "Invalid Matematik SJKT selection"}), 400
+        try:
+            teacher_context(body["teacher"])
+        except ValueError:
+            return jsonify({"error": "Invalid teacher fields"}), 400
+        if body["year"] != sjkt.YEAR:
+            return jsonify({"error": "Matematik SJKT unavailable"}), 404
+        try:
+            row = sjkt.resolve(body["unit"], body["pdp"])
+            if row is None:
+                return jsonify({"error": "Matematik SJKT PdP unavailable"}), 404
+            fmt = body["format"]
+            name, document = sjkt.render(row, fmt, body["teacher"])
+            response = Response(document, mimetype=MIMES[fmt])
+            response.headers["Content-Disposition"] = f'attachment; filename="{name}"'
+            return response
+        except RENDER_ERRORS:
+            current_app.logger.exception("Matematik SJKT RPH unavailable")
+            return jsonify({"error": "Matematik SJKT RPH unavailable"}), 503
+
     @bp.get("/internal/rph/v1/matematik-sjkc/options")
     def matematik_sjkc_options():
         from staging.matematik_sjkc.tahun_3.rph import PDP_COUNT, YEAR, enabled, lessons, resolve, units

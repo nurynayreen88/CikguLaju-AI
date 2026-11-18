@@ -58,21 +58,21 @@ def teacher_context(teacher):
     return (context if any(value for _, value in fields) else ""), reflection
 
 
-def render(unit, pdp, extension, teacher=None):
+def render(unit, pdp, extension, teacher=None, *, review=True):
     row = resolve(unit, pdp)
     if row is None:
         raise ValueError("PdP tiada dalam unit yang dipilih.")
     context, reflection = teacher_context(teacher)
     if extension == "docx":
-        content = _word(row, context, reflection)
+        content = _word(row, context, reflection, review)
     elif extension == "pdf":
-        content = _pdf(row, context, reflection)
+        content = _pdf(row, context, reflection, review)
     else:
         raise ValueError("Format perlu docx atau pdf.")
     return f"{STEM}_PdP_{pdp:03}.{extension}", content
 
 
-def _word(row, context, reflection):
+def _word(row, context, reflection, review):
     from docx import Document
     from docx.oxml.ns import qn
 
@@ -107,12 +107,16 @@ def _word(row, context, reflection):
         lines[0].runs[0].text = reflection
         for paragraph in lines[1:]:
             body.remove(paragraph._p)
+    if not review:
+        for paragraph in document.sections[0].footer.paragraphs:
+            for run in paragraph.runs:
+                run.text = run.text.replace("  ·  Draf semakan", "")
     output = BytesIO()
     document.save(output)
     return output.getvalue()
 
 
-def _pdf(row, context, reflection):
+def _pdf(row, context, reflection, review):
     import pymupdf as fitz
 
     with fitz.open(ROOT / (STEM + ".pdf")) as document, fitz.open() as output:
@@ -124,12 +128,12 @@ def _pdf(row, context, reflection):
         if not marker.search(text) or row["sp"] not in text:
             raise ValueError("Halaman PDF tidak sepadan dengan PdP.")
         output.insert_pdf(document, from_page=index, to_page=index)
-        if context or reflection:
-            _personalize_pdf(output[0], context, reflection)
+        if context or reflection or not review:
+            _personalize_pdf(output[0], context, reflection, review)
         return output.tobytes(garbage=1, deflate=True, use_objstms=1)
 
 
-def _personalize_pdf(page, context, reflection):
+def _personalize_pdf(page, context, reflection, review):
     import pymupdf as fitz
 
     lines = [
@@ -153,7 +157,15 @@ def _personalize_pdf(page, context, reflection):
         start = blanks[0]
         blocks.append((fitz.Rect(start.x0, start.y0 - 1, page.rect.width - start.x0,
                                 page.rect.height - 60), _reflection_soft_breaks(reflection)))
+    if not review:
+        footer = fitz.Rect(35, page.rect.height - 34, page.rect.width - 35, page.rect.height - 12)
+        page.add_redact_annot(footer, fill=False, cross_out=False)
     page.apply_redactions(images=0, graphics=0)
+    if not review:
+        page.insert_textbox(
+            footer, "Matematik SJKT Tahun 2  ·  RPH 2027", fontsize=8,
+            align=fitz.TEXT_ALIGN_RIGHT, color=(.31, .39, .46),
+        )
     for box, text in blocks:
         html = "<div>" + escape(text).replace("\n", "<br>") + "</div>"
         spare, _ = page.insert_htmlbox(

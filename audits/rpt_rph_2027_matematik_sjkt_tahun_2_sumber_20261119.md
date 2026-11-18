@@ -42,6 +42,12 @@ Laluan semakan admin Web dan Telegram menggunakan sumber PdP dan eksport dokumen
 
 Borang semakan Web boleh menambah kelas, tarikh, masa, bilangan murid dan refleksi dalam fail individu. Penjana Telegram menggunakan butiran yang sama untuk kedua-dua format. Simulasi menguji 96 Word dan 96 PDF daripada borang ini, termasuk penolakan bilangan murid yang tidak sah. Contoh dengan enam baris refleksi diuji dalam kedua-dua format.
 
+## Menu guru dan RPH Hari Ini
+
+Pilihan Matematik SJKT Tahun 2 disambungkan kepada sumber 96 PdP yang sama dalam menu guru Web dan Telegram. RPH Hari Ini mengenal pasti subjek SJKT secara khusus. Selepas guru memilih slot, unit dan PdP, penjana menerima kelas, tarikh, masa dan bilangan murid melalui aliran sedia ada. Telegram menyemak semula slot sebelum penghantaran supaya pilihan lama tidak menggunakan slot yang sudah berubah.
+
+Simulasi menu guru Web menghasilkan 96 Word dan 96 PDF. Ujian Telegram mengesahkan pilihan guru dan RPH Hari Ini, termasuk butiran kelas, penolakan unit/PdP yang salah, dan pemotongan satu kredit selepas penghantaran. Dokumen menu guru menggunakan tajuk dan footer pengguna. Laluan semakan admin kekal boleh diuji ketika pilihan guru belum diaktifkan.
+
 ## Status
 
-**HOLD** untuk semakan guru bagi istilah, aktiviti dan padanan bahan. Sambungan ke pilihan dan jadual waktu guru serta ujian muat turun produksi masih berbaki.
+**HOLD** untuk semakan guru SJKT bagi istilah, aktiviti dan padanan bahan. Pengaktifan pilihan guru dan ujian muat turun dengan akaun sebenar di produksi masih diperlukan.
