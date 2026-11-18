@@ -1,6 +1,6 @@
 # RPT dan RPH Sains SK Tahun 6 2027 sebelum UASA
 
-Sumber ialah [RPT dan indeks Web](https://github.com/nurynayreen88/CikguLaju-AI/tree/57aa5be4c9c0cc8511a545ee88dfb4423df50cb9). Semua 89 PdP mengekalkan nombor, urutan, padanan SK/SP dan tempoh asal. PdP 085–089 dalam Unit 1 diajar dahulu. PdP 001–084 menyusul dalam Unit 2–13. Kesemua 96 kod SP meliputi [DSKP Sains Tahun 6 KSSR Semakan 2017, BPK September 2021](https://anyflip.com/qqfu/esbw/basic/51-94). Rujukan halaman bercetak dalam draf diambil daripada [Buku Teks Sains Tahun 6 SK edisi Bahasa Melayu, DBP 2021](https://anyflip.com/ukjk/xril/basic/), ISBN 978-983-49-3278-7.
+Sumber ialah [RPT dan indeks Web](https://github.com/nurynayreen88/CikguLaju-AI/tree/57aa5be4c9c0cc8511a545ee88dfb4423df50cb9). Semua 89 PdP mengekalkan nombor, urutan, padanan SK/SP dan tempoh asal. Tajuk PdP 012–015 dalam Unit 3 diperbetulkan mengikut SP 3.1.2–3.1.5. PdP 085–089 dalam Unit 1 diajar dahulu. PdP 001–084 menyusul dalam Unit 2–13. Kesemua 96 kod SP meliputi [DSKP Sains Tahun 6 KSSR Semakan 2017, BPK September 2021](https://anyflip.com/qqfu/esbw/basic/51-94). Rujukan halaman bercetak dalam draf diambil daripada [Buku Teks Sains Tahun 6 SK edisi Bahasa Melayu, DBP 2021](https://anyflip.com/ukjk/xril/basic/), ISBN 978-983-49-3278-7.
 
 ## Agihan 64 jam
 
@@ -12,12 +12,13 @@ PdP terakhir ialah 17–21 Oktober bagi Kumpulan A dan 18–22 Oktober bagi Kump
 
 - Lima RPH Unit 1 menggunakan sumber [Kemahiran Saintifik](../docs/SAINS_UNIT_AWAL_20261113.md). Baki 84 RPH menggunakan [bank aktiviti Sains Tahun 6 sedia ada](../web/sains_y6_84_activity_bank_draf_20261107.py). Setiap RPH mempunyai tugasan PBD individu serta tempoh untuk tindakan guru dan murid.
 - PdP 021 menggunakan anak pokok yang disediakan lebih awal. PdP 036 memisahkan ujian geseran mengikut permukaan dan jisim. PdP 053 membandingkan dua kaedah untuk buah yang sama dengan rekod susulan bertarikh. PdP 077 dan 079 menggunakan bahan yang siap dipotong untuk amali 30 minit.
-- PdP 013–014 menilai tafsiran foto dan data pemerhatian. Evidens pelaksanaan penyiasatan dan eksperimen bagi SP 3.1.3–3.1.4 memerlukan pengesahan guru. Halaman buku berfungsi sebagai rujukan topik dan amali, dengan kesesuaian tugasan masih dalam semakan guru.
+- PdP 013 mengukur perubahan lilitan belon dalam penyiasatan yis pembakar berpandukan Aktiviti 1, m/s 36–37. Murid melengkapkan pemerhatian pergerakan dan pertumbuhan dengan rakaman serta foto bertarikh mengikut fokus m/s 37–39.
+- PdP 014 menggunakan faktor nutrien pada m/s 43. Murid memulakan eksperimen yis pembakar dengan gula sebagai pemboleh ubah dan merekod kiraan sel awal. PdP 016 melengkapkan bacaan susulan serta laporan individu. Kiraan sel pada grid yang sama saiz digunakan sebagai evidens pertumbuhan. Guru menyemak selang masa bacaan dan kemudahan mikroskop ketika menyemak draf.
 
 ## Eksport dan status
 
 Jalankan `PYTHONDONTWRITEBYTECODE=1 python -m staging.sains.tahun6.eksport_2027 --output /tmp/Sains_SK_Tahun_6`. Eksport menghasilkan RPT Word serta 89 RPH Word dan PDF. RPT Word dan PDF semakan mempunyai 13 halaman A4 landskap. Ujian setempat membandingkan identiti serta minit semua rekod terhadap RPT sumber, menyemak 44 julat A/B dan mengesahkan setiap RPH satu halaman A4 dalam kedua-dua format.
 
-Ujian integrasi lama memerlukan Flask dan keluaran binaan sejarah yang tiada dalam persekitaran ini. Semakan khusus 2027 dijalankan terus terhadap RPT sumber dan fail yang baru dieksport.
+Dua set ujian setempat untuk takwim Sains dan bank Sains Tahun 6 lulus 16/16 selepas keluaran rujukan dibina semula. Semakan khusus Unit 3 mengesahkan tajuk, padanan SP, amali PdP 013–014 dan penyambungan bacaan ke PdP 016 pada fail yang baru dieksport.
 
 **HOLD semakan guru dan CI.** Fail ini sedia untuk semakan. Penerbitan dan muat turun melalui akaun guru di Web dan Telegram belum diuji.

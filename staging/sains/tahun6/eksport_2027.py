@@ -67,24 +67,34 @@ OPENING_ACTIONS = {
 # Penyesuaian aktiviti amali dan penggunaan rekod pemerhatian.
 ACTIVITY_UPDATES = {
     "3.1.3": {
-        "hook": "Tiga rekod foto atau video tentang perubahan kedudukan, keluasan dan pembentukan gas",
-        "teacher1": "membimbing murid mencatat perubahan kedudukan, keluasan dan pembentukan gas daripada rekod yang berbeza",
-        "pupil1": "menulis satu pemerhatian bagi setiap rekod dan menandakan bukti dalam gambar",
-        "teacher2": "menunjukkan cara mengaitkan pemerhatian dengan pergerakan, pertumbuhan dan aktiviti yis dalam contoh yang dibekalkan",
-        "pupil2": "memadankan perubahan dengan proses yang berkaitan dan menyatakan batas tafsiran daripada foto",
-        "pbd": "Tiga padanan antara rekod dengan proses hidup dan satu penerangan berdasarkan pemerhatian",
-        "materials": "Rakaman atau gambar mikroskop, foto bersiri dan jadual pemerhatian",
-        "safety": "Pemerhatian menggunakan foto dan rekod sedia ada.",
+        "hook": "Belon pada botol dan imej protozoa",
+        "teacher1": "menyelia ujian yis pembakar makanan mengikut Aktiviti 1 buku teks dan menanda masa mula",
+        "pupil1": "memasang belon pada botol dan mengukur lilitannya pada minit 0 dan 10",
+        "teacher2": "menyediakan rakaman protozoa dan foto kulapuk bertarikh untuk pemerhatian semasa menunggu bacaan",
+        "pupil2": "melakar perubahan kedudukan dan membandingkan keluasan tompok pada foto. Lengkapkan ukuran belon pada minit 20 dan 30",
+        "pbd": "Huraikan pernafasan, pergerakan dan pertumbuhan dengan satu bukti pemerhatian bagi setiap proses",
+        "materials": "Kit yis pembakar makanan, jadual masa, rakaman protozoa dan foto kulapuk",
+        "safety": "Guru menyelia penggunaan air suam dan yis pembakar makanan.",
     },
     "3.1.4": {
-        "hook": "Rekod bergambar perubahan yang diperhatikan pada dua sampel",
-        "teacher1": "menunjukkan rekod pemerhatian dan meminta murid membezakan satu keadaan yang berubah daripada keadaan yang sama",
-        "pupil1": "menyatakan satu hipotesis dan melabel tiga jenis pemboleh ubah",
-        "teacher2": "membimbing perbandingan bacaan yang direkod pada selang masa sama",
-        "pupil2": "memplot data dan menerangkan dapatan dengan satu perbandingan kuantitatif",
-        "pbd": "Pemboleh ubah, satu hipotesis, graf ringkas dan rumusan yang merujuk dua bacaan",
-        "materials": "Rekod pemerhatian yang disediakan guru, kad pemboleh ubah dan kertas graf",
-        "safety": "Pemerhatian menggunakan foto dan rekod sedia ada.",
+        "hook": "Dua sampel yis pembakar dan kad ramalan",
+        "teacher1": "membimbing ujian dua sampel yis, satu dengan gula dan satu tanpa gula. Jisim yis awal, suhu, isipadu dan tempoh dipadankan",
+        "pupil1": "menulis hipotesis, melabel kedua-dua sampel dan memulakan eksperimen di bawah seliaan guru",
+        "teacher2": "memaparkan imej mikroskop kedua-dua sampel pada masa mula dan menetapkan masa bacaan susulan",
+        "pupil2": "merekod kiraan awal sel yis pada grid yang sama saiz. Ulang kiraan pada masa susulan dan bandingkan perubahan",
+        "pbd": "Catat hipotesis dan tiga pemboleh ubah, kemudian rumuskan perubahan kiraan sel yis bagi kedua-dua sampel",
+        "materials": "Yis pembakar makanan, dua sampel berlabel, imej mikroskop bergrid dan jadual kiraan",
+        "safety": "Guru menyediakan slaid dan mengendalikan sampel yis pembakar makanan.",
+    },
+    "3.1.6": {
+        "hook": "Jadual penyiasatan PdP 013 dan eksperimen PdP 014",
+        "teacher1": "memaparkan imej mikroskop susulan bagi kedua-dua sampel yis dengan grid yang sama saiz",
+        "pupil1": "melengkapkan kiraan susulan dan mengira perubahan bersama kumpulan",
+        "teacher2": "membimbing murid menghubungkan satu dapatan proses hidup dan satu dapatan faktor pertumbuhan dengan bukti",
+        "pupil2": "menyediakan lakaran berlabel atau laporan ringkas dan berkongsi dapatan dengan rakan",
+        "pbd": "Satu lakaran atau laporan individu dengan satu pemerhatian proses hidup dan satu perbandingan kiraan sel yis",
+        "materials": "Log PdP 013 dan 014, imej mikroskop susulan bergrid dan kertas laporan",
+        "safety": "Pemerhatian menggunakan imej mikroskop yang disediakan guru.",
     },
     "4.2.1": {
         "teacher1": "menunjukkan dua set anak pokok sama spesies yang sudah disediakan pada kepadatan berbeza",
@@ -138,11 +148,14 @@ def ordinary_plan(row):
     standard, = row["standards"]
     lesson = {**BANK[standard], **ACTIVITY_UPDATES.get(standard, {})}
     hook = lesson["hook"]
+    assessment = f"Serahkan hasil individu. {lesson['pbd']}."
+    if standard == "3.1.4":
+        assessment = "Serahkan hipotesis, pemboleh ubah dan kiraan awal. Lengkapkan rumusan pada PdP 016."
     activities = (
         (f"Tunjukkan {hook[0].lower() + hook[1:]}.", "Nyatakan satu pemerhatian atau jangkaan."),
         (sentence(lesson["teacher1"]), sentence(lesson["pupil1"])),
         (sentence(lesson["teacher2"]), sentence(lesson["pupil2"])),
-        ("Semak hasil individu mengikut kriteria PBD.", f"Serahkan hasil individu. {lesson['pbd']}."),
+        ("Semak hasil individu mengikut kriteria PBD.", assessment),
         ("Minta murid mengaitkan bukti dengan tajuk.", "Jelaskan satu dapatan dengan bukti daripada aktiviti."),
     )
     return lesson["pbd"], lesson["materials"], lesson["safety"], activities
