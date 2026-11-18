@@ -405,8 +405,11 @@ def create_native_rph_blueprint(runtime):
         year, subject, unit, lesson = (selection[key] for key in ("year", "subject", "unit", "lesson"))
         if any(not isinstance(value, str) or len(value) > 40 for value in (subject, unit, lesson)):
             raise ValueError("Invalid DLP selection")
-        if type(year) is int and (year, subject) == (6, "MATH_DLP"):
-            from staging.dlp.year6.render_mathematics import resolve_download
+        if type(year) is int and year == 6 and subject in ("MATH_DLP", "SCIENCE_DLP"):
+            if subject == "MATH_DLP":
+                from staging.dlp.year6.render_mathematics import resolve_download
+            else:
+                from staging.dlp.year6.render_science import resolve_download
             try:
                 return resolve_download(unit, lesson)
             except (OSError, ValueError) as exc:
@@ -423,6 +426,19 @@ def create_native_rph_blueprint(runtime):
         from staging.dlp.year6.render_mathematics import download_catalogue
         try:
             return jsonify({"year": 6, "subject": "MATH_DLP", "units": download_catalogue()})
+        except (OSError, ValueError):
+            return jsonify({"error": "DLP curriculum source unavailable"}), 503
+
+    @bp.get("/internal/rph/v1/dlp/year6-science/catalogue")
+    def year6_science_dlp_catalogue():
+        allowed, status = _authorized()
+        if not allowed:
+            return jsonify({"error": "Unauthorized renderer"}), status
+        if request.args:
+            return jsonify({"error": "Invalid DLP catalogue query"}), 400
+        from staging.dlp.year6.render_science import download_catalogue
+        try:
+            return jsonify({"year": 6, "subject": "SCIENCE_DLP", "units": download_catalogue()})
         except (OSError, ValueError):
             return jsonify({"error": "DLP curriculum source unavailable"}), 503
 
@@ -482,7 +498,10 @@ def create_native_rph_blueprint(runtime):
         unit, lesson = plan
         try:
             if body["selection"]["year"] == 6:
-                from staging.dlp.year6.render_mathematics import render_download
+                if body["selection"]["subject"] == "MATH_DLP":
+                    from staging.dlp.year6.render_mathematics import render_download
+                else:
+                    from staging.dlp.year6.render_science import render_download
                 document = render_download(lesson, fmt, teacher)
             else:
                 document = render_dlp(body["selection"]["subject"], unit, lesson, fmt, teacher)

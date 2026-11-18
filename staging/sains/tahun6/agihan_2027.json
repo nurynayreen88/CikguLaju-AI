@@ -1,0 +1,1577 @@
+{
+  "sumber_rpt": {
+    "commit": "57aa5be4c9c0cc8511a545ee88dfb4423df50cb9",
+    "sha256_pdf": "b5a60790595f5e3da950a3342e1f9448d3808d7a963a04066840fdb1c6707150"
+  },
+  "minggu_pendek": [
+    1,
+    5,
+    10,
+    20,
+    30,
+    33,
+    35
+  ],
+  "minggu": [
+    {
+      "minggu": 1,
+      "A": [
+        "2027-01-04",
+        "2027-01-07"
+      ],
+      "B": [
+        "2027-01-04",
+        "2027-01-08"
+      ],
+      "pdp": [
+        85,
+        86
+      ]
+    },
+    {
+      "minggu": 2,
+      "A": [
+        "2027-01-10",
+        "2027-01-14"
+      ],
+      "B": [
+        "2027-01-11",
+        "2027-01-15"
+      ],
+      "pdp": [
+        87,
+        88
+      ]
+    },
+    {
+      "minggu": 3,
+      "A": [
+        "2027-01-17",
+        "2027-01-21"
+      ],
+      "B": [
+        "2027-01-18",
+        "2027-01-22"
+      ],
+      "pdp": [
+        89,
+        1,
+        2
+      ]
+    },
+    {
+      "minggu": 4,
+      "A": [
+        "2027-01-24",
+        "2027-01-28"
+      ],
+      "B": [
+        "2027-01-25",
+        "2027-01-29"
+      ],
+      "pdp": [
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "minggu": 5,
+      "A": [
+        "2027-01-31",
+        "2027-02-04"
+      ],
+      "B": [
+        "2027-02-01",
+        "2027-02-05"
+      ],
+      "pdp": [
+        6,
+        7
+      ]
+    },
+    {
+      "minggu": 6,
+      "A": [
+        "2027-02-07",
+        "2027-02-11"
+      ],
+      "B": [
+        "2027-02-08",
+        "2027-02-12"
+      ],
+      "catatan": "Cuti perayaan",
+      "pdp": []
+    },
+    {
+      "minggu": 7,
+      "A": [
+        "2027-02-14",
+        "2027-02-18"
+      ],
+      "B": [
+        "2027-02-15",
+        "2027-02-19"
+      ],
+      "pdp": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "minggu": 8,
+      "A": [
+        "2027-02-21",
+        "2027-02-25"
+      ],
+      "B": [
+        "2027-02-22",
+        "2027-02-26"
+      ],
+      "pdp": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "minggu": 9,
+      "A": [
+        "2027-02-28",
+        "2027-03-04"
+      ],
+      "B": [
+        "2027-03-01",
+        "2027-03-05"
+      ],
+      "pdp": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "minggu": 10,
+      "A": [
+        "2027-03-15",
+        "2027-03-18"
+      ],
+      "B": [
+        "2027-03-15",
+        "2027-03-19"
+      ],
+      "pdp": [
+        17,
+        18
+      ]
+    },
+    {
+      "minggu": 11,
+      "A": [
+        "2027-03-21",
+        "2027-03-25"
+      ],
+      "B": [
+        "2027-03-22",
+        "2027-03-26"
+      ],
+      "pdp": [
+        19,
+        20
+      ]
+    },
+    {
+      "minggu": 12,
+      "A": [
+        "2027-03-28",
+        "2027-04-01"
+      ],
+      "B": [
+        "2027-03-29",
+        "2027-04-02"
+      ],
+      "pdp": [
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "minggu": 13,
+      "A": [
+        "2027-04-04",
+        "2027-04-08"
+      ],
+      "B": [
+        "2027-04-05",
+        "2027-04-09"
+      ],
+      "pdp": [
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "minggu": 14,
+      "A": [
+        "2027-04-11",
+        "2027-04-15"
+      ],
+      "B": [
+        "2027-04-12",
+        "2027-04-16"
+      ],
+      "pdp": [
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "minggu": 15,
+      "A": [
+        "2027-04-18",
+        "2027-04-22"
+      ],
+      "B": [
+        "2027-04-19",
+        "2027-04-23"
+      ],
+      "pdp": [
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "minggu": 16,
+      "A": [
+        "2027-04-25",
+        "2027-04-29"
+      ],
+      "B": [
+        "2027-04-26",
+        "2027-04-30"
+      ],
+      "pdp": [
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "minggu": 17,
+      "A": [
+        "2027-05-02",
+        "2027-05-06"
+      ],
+      "B": [
+        "2027-05-03",
+        "2027-05-07"
+      ],
+      "pdp": [
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "minggu": 18,
+      "A": [
+        "2027-05-09",
+        "2027-05-13"
+      ],
+      "B": [
+        "2027-05-10",
+        "2027-05-14"
+      ],
+      "catatan": "Pentaksiran pertengahan tahun",
+      "pdp": []
+    },
+    {
+      "minggu": 19,
+      "A": [
+        "2027-05-16",
+        "2027-05-20"
+      ],
+      "B": [
+        "2027-05-17",
+        "2027-05-21"
+      ],
+      "catatan": "Cuti perayaan",
+      "pdp": []
+    },
+    {
+      "minggu": 20,
+      "A": [
+        "2027-06-06",
+        "2027-06-10"
+      ],
+      "B": [
+        "2027-06-07",
+        "2027-06-11"
+      ],
+      "pdp": [
+        39,
+        40
+      ]
+    },
+    {
+      "minggu": 21,
+      "A": [
+        "2027-06-13",
+        "2027-06-17"
+      ],
+      "B": [
+        "2027-06-14",
+        "2027-06-18"
+      ],
+      "pdp": [
+        41,
+        42
+      ]
+    },
+    {
+      "minggu": 22,
+      "A": [
+        "2027-06-20",
+        "2027-06-24"
+      ],
+      "B": [
+        "2027-06-21",
+        "2027-06-25"
+      ],
+      "pdp": [
+        43,
+        44
+      ]
+    },
+    {
+      "minggu": 23,
+      "A": [
+        "2027-06-27",
+        "2027-07-01"
+      ],
+      "B": [
+        "2027-06-28",
+        "2027-07-02"
+      ],
+      "pdp": [
+        45,
+        46,
+        47
+      ]
+    },
+    {
+      "minggu": 24,
+      "A": [
+        "2027-07-04",
+        "2027-07-08"
+      ],
+      "B": [
+        "2027-07-05",
+        "2027-07-09"
+      ],
+      "pdp": [
+        48,
+        49
+      ]
+    },
+    {
+      "minggu": 25,
+      "A": [
+        "2027-07-11",
+        "2027-07-15"
+      ],
+      "B": [
+        "2027-07-12",
+        "2027-07-16"
+      ],
+      "pdp": [
+        50,
+        51
+      ]
+    },
+    {
+      "minggu": 26,
+      "A": [
+        "2027-07-18",
+        "2027-07-22"
+      ],
+      "B": [
+        "2027-07-19",
+        "2027-07-23"
+      ],
+      "pdp": [
+        52,
+        53,
+        54
+      ]
+    },
+    {
+      "minggu": 27,
+      "A": [
+        "2027-07-25",
+        "2027-07-29"
+      ],
+      "B": [
+        "2027-07-26",
+        "2027-07-30"
+      ],
+      "pdp": [
+        55,
+        56,
+        57
+      ]
+    },
+    {
+      "minggu": 28,
+      "A": [
+        "2027-08-01",
+        "2027-08-05"
+      ],
+      "B": [
+        "2027-08-02",
+        "2027-08-06"
+      ],
+      "pdp": [
+        58,
+        59
+      ]
+    },
+    {
+      "minggu": 29,
+      "A": [
+        "2027-08-08",
+        "2027-08-12"
+      ],
+      "B": [
+        "2027-08-09",
+        "2027-08-13"
+      ],
+      "pdp": [
+        60,
+        61
+      ]
+    },
+    {
+      "minggu": 30,
+      "A": [
+        "2027-08-15",
+        "2027-08-19"
+      ],
+      "B": [
+        "2027-08-16",
+        "2027-08-20"
+      ],
+      "pdp": [
+        62,
+        63
+      ]
+    },
+    {
+      "minggu": 31,
+      "A": [
+        "2027-08-22",
+        "2027-08-26"
+      ],
+      "B": [
+        "2027-08-23",
+        "2027-08-27"
+      ],
+      "pdp": [
+        64,
+        65,
+        66
+      ]
+    },
+    {
+      "minggu": 32,
+      "A": [
+        "2027-09-05",
+        "2027-09-09"
+      ],
+      "B": [
+        "2027-09-06",
+        "2027-09-10"
+      ],
+      "pdp": [
+        67,
+        68
+      ]
+    },
+    {
+      "minggu": 33,
+      "A": [
+        "2027-09-12",
+        "2027-09-16"
+      ],
+      "B": [
+        "2027-09-13",
+        "2027-09-17"
+      ],
+      "pdp": [
+        69,
+        70
+      ]
+    },
+    {
+      "minggu": 34,
+      "A": [
+        "2027-09-19",
+        "2027-09-23"
+      ],
+      "B": [
+        "2027-09-20",
+        "2027-09-24"
+      ],
+      "pdp": [
+        71,
+        72,
+        73
+      ]
+    },
+    {
+      "minggu": 35,
+      "A": [
+        "2027-09-26",
+        "2027-09-30"
+      ],
+      "B": [
+        "2027-09-27",
+        "2027-10-01"
+      ],
+      "pdp": [
+        74,
+        75
+      ]
+    },
+    {
+      "minggu": 36,
+      "A": [
+        "2027-10-03",
+        "2027-10-07"
+      ],
+      "B": [
+        "2027-10-04",
+        "2027-10-08"
+      ],
+      "pdp": [
+        76,
+        77,
+        78
+      ]
+    },
+    {
+      "minggu": 37,
+      "A": [
+        "2027-10-10",
+        "2027-10-14"
+      ],
+      "B": [
+        "2027-10-11",
+        "2027-10-15"
+      ],
+      "pdp": [
+        79,
+        80,
+        81
+      ]
+    },
+    {
+      "minggu": 38,
+      "A": [
+        "2027-10-17",
+        "2027-10-21"
+      ],
+      "B": [
+        "2027-10-18",
+        "2027-10-22"
+      ],
+      "pdp": [
+        82,
+        83,
+        84
+      ]
+    },
+    {
+      "minggu": 39,
+      "A": [
+        "2027-10-24",
+        "2027-10-28"
+      ],
+      "B": [
+        "2027-10-25",
+        "2027-10-29"
+      ],
+      "catatan": "Ulang kaji dan persediaan UASA mengikut takwim sekolah",
+      "pdp": []
+    },
+    {
+      "minggu": 40,
+      "A": [
+        "2027-10-31",
+        "2027-11-04"
+      ],
+      "B": [
+        "2027-11-01",
+        "2027-11-05"
+      ],
+      "catatan": "Pentaksiran atau aktiviti selepas UASA mengikut takwim sekolah",
+      "pdp": []
+    },
+    {
+      "minggu": 41,
+      "A": [
+        "2027-11-07",
+        "2027-11-11"
+      ],
+      "B": [
+        "2027-11-08",
+        "2027-11-12"
+      ],
+      "catatan": "Pentaksiran atau aktiviti selepas UASA mengikut takwim sekolah",
+      "pdp": []
+    },
+    {
+      "minggu": 42,
+      "A": [
+        "2027-11-14",
+        "2027-11-18"
+      ],
+      "B": [
+        "2027-11-15",
+        "2027-11-19"
+      ],
+      "catatan": "Pentaksiran atau aktiviti selepas UASA mengikut takwim sekolah",
+      "pdp": []
+    },
+    {
+      "minggu": 43,
+      "A": [
+        "2027-11-21",
+        "2027-11-25"
+      ],
+      "B": [
+        "2027-11-22",
+        "2027-11-26"
+      ],
+      "catatan": "Pentaksiran atau aktiviti selepas UASA mengikut takwim sekolah",
+      "pdp": []
+    },
+    {
+      "minggu": 44,
+      "A": [
+        "2027-11-28",
+        "2027-12-02"
+      ],
+      "B": [
+        "2027-11-29",
+        "2027-12-03"
+      ],
+      "catatan": "Aktiviti akhir tahun",
+      "pdp": []
+    }
+  ],
+  "pdp": [
+    {
+      "id": 85,
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Memerhati, mengelas dan mengukur kereta model",
+      "standards": [
+        "1.1.1",
+        "1.1.2",
+        "1.1.3"
+      ],
+      "minutes": 30,
+      "pages": "2-5"
+    },
+    {
+      "id": 86,
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Membentangkan sebab dan jangkaan pergerakan model",
+      "standards": [
+        "1.1.4",
+        "1.1.5",
+        "1.1.6"
+      ],
+      "minutes": 30,
+      "pages": "5-7"
+    },
+    {
+      "id": 87,
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Mentafsir pergerakan model mengikut masa",
+      "standards": [
+        "1.1.7",
+        "1.1.8",
+        "1.1.9"
+      ],
+      "minutes": 60,
+      "pages": "6-7"
+    },
+    {
+      "id": 88,
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Mereka bentuk ujian jisim kereta model",
+      "standards": [
+        "1.1.10",
+        "1.1.11"
+      ],
+      "minutes": 30,
+      "pages": "7-8"
+    },
+    {
+      "id": 89,
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Menguji kesan jisim pada jarak pergerakan",
+      "standards": [
+        "1.1.12"
+      ],
+      "minutes": 60,
+      "pages": "7-8"
+    },
+    {
+      "id": 1,
+      "unit": "Unit 2: Manusia",
+      "title": "Memerihalkan fungsi organ pembiakan lelaki dan perempuan.",
+      "standards": [
+        "2.1.1"
+      ],
+      "minutes": 30,
+      "pages": "14-15"
+    },
+    {
+      "id": 2,
+      "unit": "Unit 2: Manusia",
+      "title": "Menjelaskan proses persenyawaan manusia sehingga bayi dilahirkan.",
+      "standards": [
+        "2.1.2"
+      ],
+      "minutes": 30,
+      "pages": "16-17"
+    },
+    {
+      "id": 3,
+      "unit": "Unit 2: Manusia",
+      "title": "Menaakul kepentingan pembiakan kepada manusia.",
+      "standards": [
+        "2.1.3"
+      ],
+      "minutes": 60,
+      "pages": "18"
+    },
+    {
+      "id": 4,
+      "unit": "Unit 2: Manusia",
+      "title": "Menjelaskan pemerhatian tentang pembiakan manusia melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "standards": [
+        "2.1.4"
+      ],
+      "minutes": 30,
+      "pages": "19"
+    },
+    {
+      "id": 5,
+      "unit": "Unit 2: Manusia",
+      "title": "Mengenal pasti jenis sistem saraf manusia.",
+      "standards": [
+        "2.2.1"
+      ],
+      "minutes": 30,
+      "pages": "20-21"
+    },
+    {
+      "id": 6,
+      "unit": "Unit 2: Manusia",
+      "title": "Memerihalkan fungsi sistem saraf pusat dan sistem saraf periferi.",
+      "standards": [
+        "2.2.2"
+      ],
+      "minutes": 30,
+      "pages": "21-22"
+    },
+    {
+      "id": 7,
+      "unit": "Unit 2: Manusia",
+      "title": "Menyatakan fungsi bahagian utama sistem saraf pusat.",
+      "standards": [
+        "2.2.3"
+      ],
+      "minutes": 60,
+      "pages": "25"
+    },
+    {
+      "id": 8,
+      "unit": "Unit 2: Manusia",
+      "title": "Meramalkan keadaan yang berlaku jika sistem saraf periferi tidak berfungsi.",
+      "standards": [
+        "2.2.4"
+      ],
+      "minutes": 30,
+      "pages": "25"
+    },
+    {
+      "id": 9,
+      "unit": "Unit 2: Manusia",
+      "title": "Menjana idea tentang cara menjaga sistem saraf.",
+      "standards": [
+        "2.2.5"
+      ],
+      "minutes": 60,
+      "pages": "26-27"
+    },
+    {
+      "id": 10,
+      "unit": "Unit 2: Manusia",
+      "title": "Menjelaskan pemerhatian tentang sistem saraf melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "standards": [
+        "2.2.6"
+      ],
+      "minutes": 30,
+      "pages": "28"
+    },
+    {
+      "id": 11,
+      "unit": "Unit 3: Mikroorganisma",
+      "title": "Menjelaskan dengan contoh jenis mikroorganisma.",
+      "standards": [
+        "3.1.1"
+      ],
+      "minutes": 60,
+      "pages": "34-35"
+    },
+    {
+      "id": 12,
+      "unit": "Unit 3: Mikroorganisma",
+      "title": "Mengitlak maksud mikroorganisma.",
+      "standards": [
+        "3.1.2"
+      ],
+      "minutes": 30,
+      "pages": "33-35"
+    },
+    {
+      "id": 13,
+      "unit": "Unit 3: Mikroorganisma",
+      "title": "Menyiasat proses hidup mikroorganisma.",
+      "standards": [
+        "3.1.3"
+      ],
+      "minutes": 60,
+      "pages": "36-39"
+    },
+    {
+      "id": 14,
+      "unit": "Unit 3: Mikroorganisma",
+      "title": "Mengeksperimen faktor pertumbuhan mikroorganisma.",
+      "standards": [
+        "3.1.4"
+      ],
+      "minutes": 30,
+      "pages": "40-43"
+    },
+    {
+      "id": 15,
+      "unit": "Unit 3: Mikroorganisma",
+      "title": "Memerihalkan kesan mikroorganisma dalam kehidupan harian.",
+      "standards": [
+        "3.1.5"
+      ],
+      "minutes": 60,
+      "pages": "44-46"
+    },
+    {
+      "id": 16,
+      "unit": "Unit 3: Mikroorganisma",
+      "title": "Menjelaskan pemerhatian tentang mikroorganisma melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "standards": [
+        "3.1.6"
+      ],
+      "minutes": 30,
+      "pages": "47"
+    },
+    {
+      "id": 17,
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "title": "Memerihalkan jenis interaksi antara hidupan.",
+      "standards": [
+        "4.1.1"
+      ],
+      "minutes": 60,
+      "pages": "52-53"
+    },
+    {
+      "id": 18,
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "title": "Menjelas dengan contoh faktor persaingan bagi haiwan intraspesies dan interspesies.",
+      "standards": [
+        "4.1.2"
+      ],
+      "minutes": 30,
+      "pages": "54-55"
+    },
+    {
+      "id": 19,
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "title": "Menjelaskan melalui contoh jenis interaksi simbiosis antara haiwan.",
+      "standards": [
+        "4.1.3"
+      ],
+      "minutes": 60,
+      "pages": "56-58"
+    },
+    {
+      "id": 20,
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "title": "Menjelaskan pemerhatian tentang interaksi antara haiwan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "standards": [
+        "4.1.4"
+      ],
+      "minutes": 30,
+      "pages": "58"
+    },
+    {
+      "id": 21,
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "title": "Interaksi antara Hidupan — Memerihalkan faktor persaingan antara tumbuhan dengan menjalankan penyiasatan.",
+      "standards": [
+        "4.2.1"
+      ],
+      "minutes": 30,
+      "pages": "59-60"
+    },
+    {
+      "id": 22,
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "title": "Interaksi antara Hidupan — Menjelas dengan contoh jenis interaksi antara tumbuhan.",
+      "standards": [
+        "4.2.2"
+      ],
+      "minutes": 60,
+      "pages": "61-62"
+    },
+    {
+      "id": 23,
+      "unit": "Unit 4: Interaksi Antara Hidupan",
+      "title": "Interaksi antara Hidupan — Menjelaskan pemerhatian tentang interaksi antara tumbuhan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "standards": [
+        "4.2.3"
+      ],
+      "minutes": 30,
+      "pages": "64"
+    },
+    {
+      "id": 24,
+      "unit": "Unit 5: Pemeliharaan dan",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menyatakan maksud pemeliharaan dan pemuliharaan haiwan dan tumbuhan.",
+      "standards": [
+        "5.1.1"
+      ],
+      "minutes": 60,
+      "pages": "75-76"
+    },
+    {
+      "id": 25,
+      "unit": "Unit 5: Pemeliharaan dan",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjana idea cara pemeliharaan dan pemuliharaan haiwan dan tumbuhan.",
+      "standards": [
+        "5.1.2"
+      ],
+      "minutes": 30,
+      "pages": "76-79"
+    },
+    {
+      "id": 26,
+      "unit": "Unit 5: Pemeliharaan dan",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelas dengan contoh haiwan yang pupus.",
+      "standards": [
+        "5.1.3"
+      ],
+      "minutes": 60,
+      "pages": "68-69"
+    },
+    {
+      "id": 27,
+      "unit": "Unit 5: Pemeliharaan dan",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelas dengan contoh haiwan dan tumbuhan yang diancam kepupusan.",
+      "standards": [
+        "5.1.4"
+      ],
+      "minutes": 30,
+      "pages": "70-71"
+    },
+    {
+      "id": 28,
+      "unit": "Unit 5: Pemeliharaan dan",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelaskan melalui contoh faktor yang menyebabkan kepupusan haiwan dan tumbuhan.",
+      "standards": [
+        "5.1.5"
+      ],
+      "minutes": 60,
+      "pages": "72-74"
+    },
+    {
+      "id": 29,
+      "unit": "Unit 5: Pemeliharaan dan",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menaakul kepentingan pemeliharaan dan pemuliharaan haiwan dan tumbuhan.",
+      "standards": [
+        "5.1.6"
+      ],
+      "minutes": 30,
+      "pages": "80-81"
+    },
+    {
+      "id": 30,
+      "unit": "Unit 5: Pemeliharaan dan",
+      "title": "Pemuliharaan Pemeliharaan dan Pemuliharaan — Menjelaskan pemerhatian tentang pemeliharaan dan pemuliharaan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "standards": [
+        "5.1.7"
+      ],
+      "minutes": 60,
+      "pages": "82-83"
+    },
+    {
+      "id": 31,
+      "unit": "Unit 6: Daya",
+      "title": "Menyatakan maksud daya dengan menjalankan aktiviti.",
+      "standards": [
+        "6.1.1"
+      ],
+      "minutes": 30,
+      "pages": "88-89"
+    },
+    {
+      "id": 32,
+      "unit": "Unit 6: Daya",
+      "title": "Menjelas dengan contoh kesan daya terhadap objek.",
+      "standards": [
+        "6.1.2"
+      ],
+      "minutes": 30,
+      "pages": "90-92"
+    },
+    {
+      "id": 33,
+      "unit": "Unit 6: Daya",
+      "title": "Menjelaskan pemerhatian tentang daya melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "standards": [
+        "6.1.3"
+      ],
+      "minutes": 30,
+      "pages": "92"
+    },
+    {
+      "id": 34,
+      "unit": "Unit 6: Daya",
+      "title": "Menyatakan maksud daya geseran.",
+      "standards": [
+        "6.2.1"
+      ],
+      "minutes": 30,
+      "pages": "93-94"
+    },
+    {
+      "id": 35,
+      "unit": "Unit 6: Daya",
+      "title": "Kesan daya geseran",
+      "standards": [
+        "6.2.2"
+      ],
+      "minutes": 60,
+      "pages": "95-96"
+    },
+    {
+      "id": 36,
+      "unit": "Unit 6: Daya",
+      "title": "Eksperimen faktor yang mempengaruhi daya geseran",
+      "standards": [
+        "6.2.3"
+      ],
+      "minutes": 30,
+      "pages": "97-98"
+    },
+    {
+      "id": 37,
+      "unit": "Unit 6: Daya",
+      "title": "Menjana idea untuk meningkatkan atau mengurangkan daya geseran bagi menyelesaikan masalah dalam kehidupan harian.",
+      "standards": [
+        "6.2.4"
+      ],
+      "minutes": 30,
+      "pages": "99-100"
+    },
+    {
+      "id": 38,
+      "unit": "Unit 6: Daya",
+      "title": "Menjelaskan pemerhatian tentang daya geseran melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "standards": [
+        "6.2.5"
+      ],
+      "minutes": 60,
+      "pages": "100"
+    },
+    {
+      "id": 39,
+      "unit": "Unit 6: Daya",
+      "title": "Memerihalkan kewujudan tekanan udara di sekeliling dengan menjalankan aktiviti.",
+      "standards": [
+        "6.3.1"
+      ],
+      "minutes": 30,
+      "pages": "101-104"
+    },
+    {
+      "id": 40,
+      "unit": "Unit 6: Daya",
+      "title": "Menghubungkaitkan antara tekanan udara dengan aras ketinggian.",
+      "standards": [
+        "6.3.2"
+      ],
+      "minutes": 60,
+      "pages": "105-106"
+    },
+    {
+      "id": 41,
+      "unit": "Unit 6: Daya",
+      "title": "Menjelaskan melalui contoh aplikasi tekanan udara dalam kehidupan harian.",
+      "standards": [
+        "6.3.3"
+      ],
+      "minutes": 30,
+      "pages": "107-108"
+    },
+    {
+      "id": 42,
+      "unit": "Unit 6: Daya",
+      "title": "Menjelaskan pemerhatian tentang tekanan udara melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "standards": [
+        "6.3.4"
+      ],
+      "minutes": 60,
+      "pages": "108"
+    },
+    {
+      "id": 43,
+      "unit": "Unit 7: Kelajuan",
+      "title": "Unit bagi kelajuan",
+      "standards": [
+        "7.1.1"
+      ],
+      "minutes": 30,
+      "pages": "114-115"
+    },
+    {
+      "id": 44,
+      "unit": "Unit 7: Kelajuan",
+      "title": "Eksperimen hubungan kelajuan, jarak dan masa",
+      "standards": [
+        "7.1.2"
+      ],
+      "minutes": 60,
+      "pages": "116-118"
+    },
+    {
+      "id": 45,
+      "unit": "Unit 7: Kelajuan",
+      "title": "Menentukan kelajuan, jarak atau masa menggunakan formula.",
+      "standards": [
+        "7.1.3"
+      ],
+      "minutes": 30,
+      "pages": "119-121"
+    },
+    {
+      "id": 46,
+      "unit": "Unit 7: Kelajuan",
+      "title": "Definisi secara operasi melalui aktiviti",
+      "standards": [
+        "7.1.4"
+      ],
+      "minutes": 60,
+      "pages": "122"
+    },
+    {
+      "id": 47,
+      "unit": "Unit 7: Kelajuan",
+      "title": "Menjelaskan pemerhatian tentang kelajuan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "standards": [
+        "7.1.5"
+      ],
+      "minutes": 30,
+      "pages": "122"
+    },
+    {
+      "id": 48,
+      "unit": "Unit 8: Pengawetan Makanan",
+      "title": "Menjelaskan dengan contoh ciri makanan yang telah rosak.",
+      "standards": [
+        "8.1.1"
+      ],
+      "minutes": 60,
+      "pages": "128-129"
+    },
+    {
+      "id": 49,
+      "unit": "Unit 8: Pengawetan Makanan",
+      "title": "Menyatakan bahawa kerosakan makanan disebabkan oleh tindakan mikroorganisma.",
+      "standards": [
+        "8.1.2"
+      ],
+      "minutes": 30,
+      "pages": "128-130"
+    },
+    {
+      "id": 50,
+      "unit": "Unit 8: Pengawetan Makanan",
+      "title": "Menjelaskan pemerhatian tentang kerosakan makanan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "standards": [
+        "8.1.3"
+      ],
+      "minutes": 60,
+      "pages": "130"
+    },
+    {
+      "id": 51,
+      "unit": "Unit 8: Pengawetan Makanan",
+      "title": "Memerihalkan tujuan pengawetan makanan.",
+      "standards": [
+        "8.2.1"
+      ],
+      "minutes": 60,
+      "pages": "131"
+    },
+    {
+      "id": 52,
+      "unit": "Unit 8: Pengawetan Makanan",
+      "title": "Menghubungkait kaedah pengawetan makanan dengan faktor yang mempengaruhi pertumbuhan mikroorganisma.",
+      "standards": [
+        "8.2.2"
+      ],
+      "minutes": 60,
+      "pages": "131-134"
+    },
+    {
+      "id": 53,
+      "unit": "Unit 8: Pengawetan Makanan",
+      "title": "Menjalankan projek pengawetan sejenis makanan dengan pelbagai kaedah.",
+      "standards": [
+        "8.2.3"
+      ],
+      "minutes": 30,
+      "pages": "135-138"
+    },
+    {
+      "id": 54,
+      "unit": "Unit 8: Pengawetan Makanan",
+      "title": "Merumuskan terdapat makanan yang boleh diawet lebih daripada satu kaedah pengawetan.",
+      "standards": [
+        "8.2.4"
+      ],
+      "minutes": 60,
+      "pages": "135-138"
+    },
+    {
+      "id": 55,
+      "unit": "Unit 8: Pengawetan Makanan",
+      "title": "Mengitlak terdapat makanan boleh diawet dengan menggabungkan lebih daripada satu kaedah pengawetan.",
+      "standards": [
+        "8.2.5"
+      ],
+      "minutes": 30,
+      "pages": "139"
+    },
+    {
+      "id": 56,
+      "unit": "Unit 8: Pengawetan Makanan",
+      "title": "Memerihalkan kepentingan teknologi pengawetan makanan bagi memenuhi keperluan bekalan makanan.",
+      "standards": [
+        "8.2.6"
+      ],
+      "minutes": 60,
+      "pages": "140-141"
+    },
+    {
+      "id": 57,
+      "unit": "Unit 8: Pengawetan Makanan",
+      "title": "Menjelaskan pemerhatian tentang pengawetan makanan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "standards": [
+        "8.2.7"
+      ],
+      "minutes": 30,
+      "pages": "143"
+    },
+    {
+      "id": 58,
+      "unit": "Unit 9: Bahan Buangan",
+      "title": "Mengenal pasti bahan buangan berdasarkan jenis bahan.",
+      "standards": [
+        "9.1.1"
+      ],
+      "minutes": 60,
+      "pages": "148-149"
+    },
+    {
+      "id": 59,
+      "unit": "Unit 9: Bahan Buangan",
+      "title": "Menyatakan maksud bahan buangan terbiodegradasi dan tidak terbiodegradasi.",
+      "standards": [
+        "9.1.2"
+      ],
+      "minutes": 30,
+      "pages": "150-151"
+    },
+    {
+      "id": 60,
+      "unit": "Unit 9: Bahan Buangan",
+      "title": "Mengelaskan bahan buangan kepada bahan terbiodegradasi dan tidak terbiodegradasi.",
+      "standards": [
+        "9.1.3"
+      ],
+      "minutes": 60,
+      "pages": "150-151"
+    },
+    {
+      "id": 61,
+      "unit": "Unit 9: Bahan Buangan",
+      "title": "Menaakul penggunaan bahan terbiodegradasi dan tidak terbiodegradasi secara berhemah.",
+      "standards": [
+        "9.1.4"
+      ],
+      "minutes": 30,
+      "pages": "152-155"
+    },
+    {
+      "id": 62,
+      "unit": "Unit 9: Bahan Buangan",
+      "title": "Memerihalkan pengurusan bahan buangan secara terancang untuk kehidupan lestari.",
+      "standards": [
+        "9.1.5"
+      ],
+      "minutes": 60,
+      "pages": "156-161"
+    },
+    {
+      "id": 63,
+      "unit": "Unit 9: Bahan Buangan",
+      "title": "Menjelaskan pemerhatian tentang pengurusan bahan buangan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "standards": [
+        "9.1.6"
+      ],
+      "minutes": 30,
+      "pages": "161"
+    },
+    {
+      "id": 64,
+      "unit": "Unit 10: Gerhana",
+      "title": "Memerihalkan fenomena gerhana Bulan berdasarkan kedudukan Bulan, Bumi dan Matahari dengan menjalankan simulasi.",
+      "standards": [
+        "10.1.1"
+      ],
+      "minutes": 30,
+      "pages": "166-167"
+    },
+    {
+      "id": 65,
+      "unit": "Unit 10: Gerhana",
+      "title": "Memerihalkan fenomena gerhana Matahari berdasarkan kedudukan Bulan, Bumi dan Matahari dengan menjalankan simulasi.",
+      "standards": [
+        "10.1.2"
+      ],
+      "minutes": 30,
+      "pages": "168-170"
+    },
+    {
+      "id": 66,
+      "unit": "Unit 10: Gerhana",
+      "title": "Menghubungkaitkan fenomena gerhana Bulan dan gerhana Matahari dengan sifat cahaya.",
+      "standards": [
+        "10.1.3"
+      ],
+      "minutes": 60,
+      "pages": "171-173"
+    },
+    {
+      "id": 67,
+      "unit": "Unit 10: Gerhana",
+      "title": "Meramalkan keadaan di Bumi semasa kejadian gerhana Bulan dan gerhana Matahari.",
+      "standards": [
+        "10.1.4"
+      ],
+      "minutes": 30,
+      "pages": "174-175"
+    },
+    {
+      "id": 68,
+      "unit": "Unit 10: Gerhana",
+      "title": "Menjelaskan pemerhatian tentang fenomena gerhana Bulan dan gerhana Matahari melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "standards": [
+        "10.1.5"
+      ],
+      "minutes": 60,
+      "pages": "170,173"
+    },
+    {
+      "id": 69,
+      "unit": "Unit 11: Bumi dan Angkasa",
+      "title": "Menyatakan maksud galaksi.",
+      "standards": [
+        "11.1.1"
+      ],
+      "minutes": 30,
+      "pages": "180-182"
+    },
+    {
+      "id": 70,
+      "unit": "Unit 11: Bumi dan Angkasa",
+      "title": "Memerihalkan galaksi Bima Sakti.",
+      "standards": [
+        "11.1.2"
+      ],
+      "minutes": 60,
+      "pages": "183-185"
+    },
+    {
+      "id": 71,
+      "unit": "Unit 11: Bumi dan Angkasa",
+      "title": "Merumuskan Sistem Suria berada dalam galaksi Bima Sakti.",
+      "standards": [
+        "11.1.3"
+      ],
+      "minutes": 60,
+      "pages": "183-186"
+    },
+    {
+      "id": 72,
+      "unit": "Unit 11: Bumi dan Angkasa",
+      "title": "Menjalankan simulasi untuk menggambarkan saiz Sistem Suria dalam galaksi Bima Sakti dan mengagumi ciptaan Tuhan.",
+      "standards": [
+        "11.1.4"
+      ],
+      "minutes": 30,
+      "pages": "187-188"
+    },
+    {
+      "id": 73,
+      "unit": "Unit 11: Bumi dan Angkasa",
+      "title": "Menjelaskan pemerhatian tentang galaksi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "standards": [
+        "11.1.5"
+      ],
+      "minutes": 30,
+      "pages": "188"
+    },
+    {
+      "id": 74,
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "title": "Teknologi dan Kehidupan Lestari — Memerihalkan maksud kestabilan dan kekuatan dengan menjalankan aktiviti.",
+      "standards": [
+        "12.1.1"
+      ],
+      "minutes": 60,
+      "pages": "194,199,205"
+    },
+    {
+      "id": 75,
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "title": "Teknologi dan Kehidupan Lestari — Menjelaskan dengan contoh struktur yang kuat dan stabil.",
+      "standards": [
+        "12.1.2"
+      ],
+      "minutes": 30,
+      "pages": "194,199,205"
+    },
+    {
+      "id": 76,
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "title": "Teknologi dan Kehidupan Lestari — Mengeksperimen untuk menentukan faktor yang mempengaruhi kestabilan objek.",
+      "standards": [
+        "12.1.3"
+      ],
+      "minutes": 60,
+      "pages": "195-198"
+    },
+    {
+      "id": 77,
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "title": "Teknologi dan Kehidupan Lestari — Mengeksperimen untuk menentukan faktor yang mempengaruhi kekuatan binaan.",
+      "standards": [
+        "12.1.4"
+      ],
+      "minutes": 30,
+      "pages": "199-205"
+    },
+    {
+      "id": 78,
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "title": "Teknologi dan Kehidupan Lestari — Menjana idea kepentingan binaan yang kuat dan stabil bagi kehidupan lestari.",
+      "standards": [
+        "12.1.5"
+      ],
+      "minutes": 60,
+      "pages": "206"
+    },
+    {
+      "id": 79,
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "title": "Mencipta model binaan yang kuat dan stabil dengan menggunakan bahan kitar semula yang sesuai.",
+      "standards": [
+        "12.1.6"
+      ],
+      "minutes": 30,
+      "pages": "207"
+    },
+    {
+      "id": 80,
+      "unit": "Unit 12: Kestabilan dan Kekuatan",
+      "title": "Teknologi dan Kehidupan Lestari — Menjelaskan pemerhatian tentang kestabilan dan kekuatan melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "standards": [
+        "12.1.7"
+      ],
+      "minutes": 60,
+      "pages": "205,207"
+    },
+    {
+      "id": 81,
+      "unit": "Unit 13: Teknologi",
+      "title": "Menyatakan maksud teknologi dan kepentingannya.",
+      "standards": [
+        "13.1.1"
+      ],
+      "minutes": 30,
+      "pages": "212-213"
+    },
+    {
+      "id": 82,
+      "unit": "Unit 13: Teknologi",
+      "title": "Memerihalkan perkembangan teknologi dalam pelbagai bidang.",
+      "standards": [
+        "13.1.2"
+      ],
+      "minutes": 30,
+      "pages": "214-217"
+    },
+    {
+      "id": 83,
+      "unit": "Unit 13: Teknologi",
+      "title": "Menjelaskan melalui contoh kebaikan dan keburukan teknologi dalam kehidupan harian.",
+      "standards": [
+        "13.1.3"
+      ],
+      "minutes": 60,
+      "pages": "218-219"
+    },
+    {
+      "id": 84,
+      "unit": "Unit 13: Teknologi",
+      "title": "Menjelaskan pemerhatian tentang kebaikan dan keburukan teknologi melalui lakaran, TMK, penulisan atau lisan secara kreatif.",
+      "standards": [
+        "13.1.4"
+      ],
+      "minutes": 30,
+      "pages": "219"
+    }
+  ]
+}

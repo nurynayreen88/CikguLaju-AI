@@ -505,6 +505,13 @@ except (OSError, ValueError, ImportError) as _sains_2027_exc:
     print("Sains SK Year 5 2027 reader unavailable:",
           type(_sains_2027_exc).__name__, flush=True)
 
+try:
+    from staging.sains.tahun6.penjana_2027 import register_downloads as register_sains_year6
+    register_sains_year6(telegram_runtime.app)
+except (OSError, ValueError, ImportError) as _sains_year6_exc:
+    print("Sains SK Year 6 2027 reader unavailable:",
+          type(_sains_year6_exc).__name__, flush=True)
+
 
 # Sejarah: register private source reader for the dedicated Web client.
 try:

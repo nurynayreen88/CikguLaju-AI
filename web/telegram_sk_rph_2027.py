@@ -1,4 +1,4 @@
-"""Use the native Telegram class/time and credit flows for the two 2027 sets."""
+"""Use the native Telegram class/time and credit flows for 2027 sets."""
 
 from collections import defaultdict
 from html import escape
@@ -8,14 +8,18 @@ from secrets import token_hex
 from tempfile import TemporaryDirectory
 
 from dlp_year2_rph import _pdf, _word
-from staging.dlp.year6.render_mathematics import download_catalogue, render_download, resolve_download
-from staging.sains.tahun5.eksport_2027 import render_rph
+from staging.dlp.year6 import render_mathematics, render_science
+from staging.sains.tahun5.eksport_2027 import render_rph as render_sains_year5
 from staging.sains.tahun5.semakan_penjana import ReviewRuntime
+from staging.sains.tahun6.eksport_2027 import render_rph as render_sains_year6
+from staging.sains.tahun6.penjana_2027 import ScienceYear6Runtime
 
 PREFIX = "sk27:"
 STATE_KEY = "_sk_rph_2027"
 SETS = {"s": ("Sains SK Tahun 5", "Sains", "Tahun 5"),
-        "m": ("Mathematics DLP Year 6", "Mathematics (DLP)", "Tahun 6")}
+        "m": ("Mathematics DLP Year 6", "Mathematics (DLP)", "Tahun 6"),
+        "s6": ("Sains SK Tahun 6", "Sains", "Tahun 6"),
+        "d6": ("Science DLP Year 6", "Science (DLP)", "Tahun 6")}
 FORMATS = {"word": (".docx", b"PK\x03\x04"), "pdf": (".pdf", b"%PDF-")}
 
 
@@ -23,25 +27,31 @@ def _button(text, code):
     return [{"text": text[:64], "callback_data": PREFIX + code}]
 
 
-def _catalogues(science):
+def _science_catalogue(source):
     units = defaultdict(list)
-    for row in science.catalog:
+    seen = set()
+    for row in source.catalog:
+        code = row["pdp_sequence_code"]
+        if code in seen:
+            continue
+        seen.add(code)
         units[row["unit_title"]].append({
-            "id": row["pdp_sequence_code"], "title": row["pdp_title"],
+            "id": code, "title": row["pdp_title"],
             "label": f"PdP {row['source_sequence_no']}",
         })
-    return {
-        "s": {f"{i:02d}": {"title": title, "lessons": lessons}
-              for i, (title, lessons) in enumerate(units.items(), 1)},
-        "m": {group["id"]: group for group in download_catalogue()},
-    }
+    return {f"{i:02d}": {"title": title, "lessons": lessons}
+            for i, (title, lessons) in enumerate(units.items(), 1)}
 
 
 def install(runtime):
     if getattr(runtime, "CIKGULAJU_SK_2027_RPH_MENU", False):
         return True
-    science = ReviewRuntime()
-    catalogues = _catalogues(science)
+    science = {"s": (ReviewRuntime(), render_sains_year5),
+               "s6": (ScienceYear6Runtime(), render_sains_year6)}
+    dlp = {"m": render_mathematics, "d6": render_science}
+    catalogues = {scope: _science_catalogue(source) for scope, (source, _) in science.items()}
+    catalogues.update({scope: {group["id"]: group for group in module.download_catalogue()}
+                       for scope, module in dlp.items()})
     old_callback = runtime.callback
     old_continue = runtime._continue_after_rph_time
 
@@ -76,17 +86,20 @@ def install(runtime):
             if new_generation and not runtime._credit_gate(cid, dict(st, task="rph")):
                 return None
             suffix, magic = FORMATS[fmt]
-            if choice["scope"] == "s":
-                plan = science.plans[choice["id"]]
+            teacher = {key: st.get(f"rph_{key}") for key in ("class", "date", "time", "students")}
+            teacher["reflection"] = st.get("rph_teacher_reflection")
+            scope = choice["scope"]
+            if scope in science:
+                source, render_rph = science[scope]
+                plan = source.plans[choice["id"]]
                 stream = BytesIO()
-                render_rph(stream, plan, _word if fmt == "word" else _pdf, teacher=st)
+                data = st if scope == "s" else teacher
+                render_rph(stream, plan, _word if fmt == "word" else _pdf, teacher=data)
                 content = stream.getvalue()
             else:
-                _, plan = resolve_download(choice["unit"], choice["id"])
-                teacher = {"class": st.get("rph_class"), "date": st.get("rph_date"),
-                           "time": st.get("rph_time"), "students": st.get("rph_students"),
-                           "reflection": st.get("rph_teacher_reflection")}
-                content = render_download(plan, fmt, teacher)
+                module = dlp[scope]
+                _, plan = module.resolve_download(choice["unit"], choice["id"])
+                content = module.render_download(plan, fmt, teacher)
             if not content.startswith(magic) or len(content) < 1000:
                 raise ValueError("Invalid RPH document")
             with TemporaryDirectory(prefix="cikgulaju_rph_2027_") as directory:
