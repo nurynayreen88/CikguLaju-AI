@@ -17,6 +17,7 @@ from flask import Blueprint, jsonify, send_file, request
 from primary_language_subjects import PRIMARY_LANGUAGE_SUBJECTS
 from web.english_rpt_2027_http import _account, _has_paid_access, integrated_pdf_path
 from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
+from rpt_2027.matematik import sk_documents as matematik_sk
 from rpt_2027.sains import sk_documents as sains_sk
 
 from rpt_2027.sjkc.bahasa_cina import documents as bahasa_cina_sjkc
@@ -156,6 +157,8 @@ def pdf_path(subject,year,*,root=ROOT):
     """Exact intended path, including legacy path before its PDF is installed."""
     if type(year) is not int or subject not in SUBJECTS or year not in SUBJECTS[subject][1]:
         raise ValueError("Unsupported RPT selection")
+    if subject == "matematik" and year in matematik_sk.DIGESTS:
+        return Path(root) / "matematik" / (matematik_sk.FILE_TEMPLATE % year)
     staged=_approved_sk_science_file(subject, year, root) or _staged_file(subject,year,root=root)
     if staged is not None:
         return staged
@@ -166,6 +169,8 @@ def pdf_path(subject,year,*,root=ROOT):
 
 def pdf_ready(subject,year,*,root=ROOT):
     try:
+        if subject == "matematik" and year in matematik_sk.DIGESTS:
+            return matematik_sk.document_path(year, root=Path(root) / "matematik") is not None
         return (_approved_sk_science_file(subject, year, root) is not None
                 or _staged_file(subject,year,root=root) is not None
                 or _legacy_file(subject,year,root=root) is not None)
@@ -215,6 +220,14 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
                 entries.append({"year": year, "pdf_ready": True, "status": "TERSEDIA",
                                 "download_enabled": bool(allowed), "is_draft": False,
                                 "note": f"Kumpulan A dan B. {sains_sk.PDP_COUNTS[year]} PdP dalam 64 jam."})
+                continue
+            if code == "matematik" and year in matematik_sk.DIGESTS:
+                ready = pdf_ready(code, year, root=root)
+                available += int(ready)
+                entries.append({"year": year, "pdf_ready": ready,
+                                "status": "TERSEDIA" if ready else "PDF BELUM DIPASANG",
+                                "download_enabled": bool(ready and allowed), "is_draft": False,
+                                "note": "Kumpulan A dan B. 117 Lesson dalam 96 jam hingga Minggu 38."})
                 continue
             current=_staged_file(code,year,root=root)
             legacy=_legacy_file(code,year,root=root) if current is None else None
@@ -343,9 +356,15 @@ def create_all_rpt_blueprint(*,root=ROOT):
         account,error=_account()
         if error is not None:
             return error
+        math_sk = subject == "matematik" and year in matematik_sk.DIGESTS
         approved_sains = _approved_sk_science_file(subject, year, root)
-        if subject in DLP_SUBJECTS or approved_sains is not None:
-            path = approved_sains or document_path(subject, year, root=Path(root)/"dlp")
+        if math_sk or subject in DLP_SUBJECTS or approved_sains is not None:
+            if math_sk:
+                path = matematik_sk.document_path(year, root=Path(root) / "matematik")
+                if path is None:
+                    return jsonify({"error": "PDF RPT Matematik SK belum dapat disahkan."}), 503
+            else:
+                path = approved_sains or document_path(subject, year, root=Path(root)/"dlp")
             if path is None:
                 return jsonify({"error":"Pilihan RPT DLP tidak tersedia"}),404
             response = send_file(path, mimetype="application/pdf", as_attachment=True,

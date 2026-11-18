@@ -135,8 +135,11 @@ def weekly_rpt_suggestion(state, target, subject, year):
     selected = target.isoformat()
     for week, row in weeks.items():
         if row[offset] <= selected <= row[offset + 1]:
-            return {"week": int(week), "group": "A" if group_a else "B",
-                    "lessons": row[4]}
+            suggestion = {"week": int(week), "group": "A" if group_a else "B",
+                          "lessons": row[4]}
+            if subject == "MATH" and year in (5, 6) and len(row) == 6:
+                suggestion["slot_minutes"] = row[5]
+            return suggestion
     return None
 
 
@@ -318,6 +321,15 @@ def assign_week_suggestions(days):
                 continue
         else:
             sessions = [[number] for number in suggestion["lessons"].get(component, [])]
+        slot_minutes = suggestion.get("slot_minutes")
+        if slot_minutes is not None:
+            actual_minutes = [
+                (datetime.strptime(slot["end"], "%H:%M")
+                 - datetime.strptime(slot["start"], "%H:%M")) // timedelta(minutes=1)
+                for _, slot in entries
+            ]
+            if actual_minutes != slot_minutes:
+                continue
         if len(sessions) != len(entries) or len({n for row in sessions for n in row}) != sum(map(len, sessions)):
             continue
         # A class that is ahead or behind its RPT needs an explicit choice.

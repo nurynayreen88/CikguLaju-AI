@@ -269,7 +269,7 @@ class DailyTimetablePureTests(TestCase):
 
     def test_math_weekly_suggestions_follow_the_same_117_pdp_plan_as_telegram(self):
         short = {1, 5, 8, 10, 20, 30, 33, 35, 39}
-        for year in range(2, 7):
+        for year in range(2, 5):
             with self.subTest(year=year):
                 weeks = weekly_catalog()[f"MATH:{year}"]
                 self.assertEqual(set(map(int, weeks)), set(range(1, 45)) - {6, 19})
@@ -283,6 +283,39 @@ class DailyTimetablePureTests(TestCase):
                     weekly_rpt_suggestion("Pahang", date(2027, 1, 11), "MATH", year),
                     {"week": 2, "group": "B", "lessons": {"": [3, 4, 5]}},
                 )
+
+    def test_aligned_math_years_finish_in_week_38_with_the_audited_slot_lengths(self):
+        for year, final_slots in ((5, [30, 60, 60, 30]), (6, [60, 30, 60, 30])):
+            with self.subTest(year=year):
+                weeks = weekly_catalog()[f"MATH:{year}"]
+                self.assertEqual(set(map(int, weeks)), set(range(1, 39)) - {6, 18, 19})
+                ordered = [weeks[str(n)] for n in sorted(map(int, weeks))]
+                self.assertEqual([lesson for row in ordered for lesson in row[4][""]], list(range(1, 118)))
+                lengths = [minutes for row in ordered for minutes in row[5]]
+                self.assertEqual(sorted(lengths), [30] * 42 + [60] * 75)
+                self.assertEqual(sum(lengths), 5760)
+                self.assertEqual(
+                    weekly_rpt_suggestion("Pahang", date(2027, 10, 19), "MATH", year),
+                    {"week": 38, "group": "B", "lessons": {"": [114, 115, 116, 117]},
+                     "slot_minutes": final_slots},
+                )
+                self.assertIsNone(weekly_rpt_suggestion("Pahang", date(2027, 10, 26), "MATH", year))
+
+    def test_aligned_math_auto_assigns_only_when_the_timetable_matches_slot_lengths(self):
+        schedule = {"entries": [
+            {"day": day, "start": "08:00", "end": end, "class_name": "5 Bestari", "subject": "Matematik"}
+            for day, end in (("Isnin", "08:30"), ("Selasa", "09:00"),
+                             ("Rabu", "09:00"), ("Khamis", "08:30"))
+        ]}
+        target = date(2027, 10, 18)
+        for last_end in ("08:30", "09:00"):
+            schedule["entries"][-1]["end"] = last_end
+            days = week_payload({"state_name": "Pahang"}, schedule, target, today=target)["days"]
+            for day in days:
+                attach_progress(day, [])
+            assign_week_suggestions(days)
+            self.assertEqual([s.get("suggested_session") for day in days for s in day["entries"]],
+                             [[114], [115], [116], [117]] if last_end == "08:30" else [None] * 4)
 
     def test_pjpk_year3_suggests_two_pj_and_one_pk_before_assessment(self):
         expected = {"PJ": [37, 38], "PK": [32]}
