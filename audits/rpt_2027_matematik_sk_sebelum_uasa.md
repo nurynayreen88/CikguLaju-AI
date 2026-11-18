@@ -92,6 +92,20 @@ Semakan DSKP Matematik Tahun 6, hlm. 56, memadankan Lesson 097 dan 099 dengan SP
 
 Semakan setempat meliputi semua 585 padanan Lesson antara lima RPT, PDF dan Word, termasuk tajuk, SK/SP, tarikh A/B, tempoh, halaman buku serta evidens PBD. Setiap PDF individu dan PDF yang ditukar daripada Word mempunyai satu halaman A4. Pemeriksaan visual meliputi kelima-lima pindaan Tahun 6 dalam kedua-dua format. Lima ujian integriti bank v60 turut lulus.
 
+### Semakan Unit 1–5 Tahun 6
+
+Semak Lesson 001–078 dengan [DSKP Matematik Tahun 6, hlm. 32–48](https://www.eprema.com.my/SKDocs/DSKP/Tahun6/9.DSKP_KSSR_T6_Semakan_Matematik.pdf) dan [Buku Teks Matematik Tahun 6, Unit 1–5](https://fliphtml5.com/zekyp/yjwf/BUKU_TEKS_MATEMATIK_TAHUN_6_SEMAKAN_2017/). Pinda 48 RPH yang memerlukan contoh berpandu, tugasan PBD, evidens atau halaman rujukan yang lebih tepat.
+
+| Lesson | Unit | Semakan akademik |
+| --- | --- | --- |
+| 001–020 | Nombor Bulat dan Operasi | Asingkan bacaan pecahan wajar, nombor bercampur dan perpuluhan juta. Tunjuk kesan kurungan dan semak anu dengan penggantian. Kelaskan 0 dan 1 di luar kategori perdana dan gubahan. |
+| 021–047 | Pecahan, Perpuluhan dan Peratus | Bezakan pembahagi nombor bulat dan pecahan wajar, dan gunakan ayat bahagi setara sehingga tiga tempat perpuluhan. Padankan operasi bergabung dengan halaman sebenar bagi tambah/tolak, darab/bahagi dan tambah/darab. Tunjukkan peratus seperti 205 1/2% dalam bentuk perpuluhan. |
+| 048–062 | Wang | Bezakan diskaun, rebat dan baucar menggunakan cara nilai digunakan. Bezakan invois, bil dan resit mengikut butiran dokumen. Kira amaun rebat dan cukai berdasarkan kadar yang diberi. Nyatakan skop dan risiko pada setiap kad insurans atau takaful. |
+| 063–074 | Masa dan Waktu | Lengkapkan jalur UTC dengan bandar dan label yang diberi. Semak beza zon sejam penuh dan setengah jam, waktu hadir awal dan pertukaran hari bagi siaran atau penerbangan. |
+| 075–078 | Ukuran dan Sukatan | Padankan 075 dan 078 dengan panjang serta isi padu, 076 dengan panjang serta jisim, dan 077 dengan jisim serta isi padu. Aktiviti menggunakan jadual dengan kedua-dua ukuran dan penukaran unit yang sepadan. |
+
+Semakan bagi Unit 1–5 melengkapkan liputan kandungan 117 Lesson Matematik SK Tahun 6 bersama rekod Unit 6–8 di bawah. Kod SK/SP, nombor Lesson, rujukan buku, tempoh, tarikh Kumpulan A/B dan evidens PBD sepadan dengan RPT 2027. RPT mempunyai 14 halaman, dengan Minggu 39–44 pada halaman akhir. Kesemua 117 PDF individu dan Word selepas penukaran mempunyai satu halaman A4. Lima ujian integriti v60 dan semakan pengiraan PBD terpilih lulus. Semakan guru bagi pelepasan dan pengesahan operasi Web/Telegram masih diperlukan.
+
 ### Semakan Unit 6 dan 7 Tahun 6
 
 Semak 29 Lesson bernombor 079–107 terhadap [DSKP Matematik Tahun 6, hlm. 52–57](https://www.eprema.com.my/SKDocs/DSKP/Tahun6/9.DSKP_KSSR_T6_Semakan_Matematik.pdf) dan [Buku Teks Matematik Tahun 6, Unit 6 dan 7](https://anyflip.com/samxl/dlrk/basic/). Padanan dalam jadual merujuk kepada edisi RPT 2027 SK.
