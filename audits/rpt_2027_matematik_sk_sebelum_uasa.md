@@ -92,6 +92,21 @@ Semakan DSKP Matematik Tahun 6, hlm. 56, memadankan Lesson 097 dan 099 dengan SP
 
 Semakan setempat meliputi semua 585 padanan Lesson antara lima RPT, PDF dan Word, termasuk tajuk, SK/SP, tarikh A/B, tempoh, halaman buku serta evidens PBD. Setiap PDF individu dan PDF yang ditukar daripada Word mempunyai satu halaman A4. Pemeriksaan visual meliputi kelima-lima pindaan Tahun 6 dalam kedua-dua format. Lima ujian integriti bank v60 turut lulus.
 
+### Semakan Unit 8 Tahun 6
+
+Semak Lesson 108–117 terhadap [DSKP Matematik Tahun 6, hlm. 60–61](https://www.eprema.com.my/SKDocs/DSKP/Tahun6/9.DSKP_KSSR_T6_Semakan_Matematik.pdf) dan [Buku Teks Matematik Tahun 6, hlm. 207–223](https://anyflip.com/fzatu/cwgr/basic/201-242).
+
+| Lesson | SP | Aktiviti dan evidens PBD |
+| --- | --- | --- |
+| 108–109 | 8.1.1 | Lengkapkan dan label carta pada bulatan berpusat, semak jumlah sudut 360°, dan tafsir pilihan serta beza bilangan. Lesson 109 merangkumi sudut 45°, 90° dan 180°. |
+| 110–111 | 8.2.1 | Tentukan kemungkinan peristiwa dengan merujuk warna token atau jenis kad yang ada. Beri sebab bagi peristiwa yang mungkin dan tidak mungkin. |
+| 112–113 | 8.2.2 | Jelaskan kategori kebolehjadian menggunakan komposisi token sama saiz. Bagi satu lontaran dadu adil, kelaskan kelima-lima kategori dengan 0, 1, 3, 4 dan 6 hasil yang memenuhi peristiwa masing-masing. |
+| 114–117 | 8.3.1 | Bina carta palang dan tafsir pilihan, bandingkan kekerapan kad, bandingkan bahagian hijau apabila jumlah token berbeza dan semak perubahan peluang sebelum dan selepas token ditambah. |
+
+Rujukan Lesson 109 diperincikan kepada hlm. 209–212. Lesson 110 berhenti pada hlm. 215 sebelum perbincangan skala kebolehjadian, manakala Lesson 114 dan 116 menggunakan hlm. 220–223 untuk penyelesaian masalah. Tarikh A/B, kod standard, urutan serta tempoh setiap Lesson disemak dengan RPT. Format 30 dan 60 minit dikekalkan.
+
+Eksport keseluruhan Tahun 6 mengesahkan 117 padanan RPT dan RPH dengan 96 jam sehingga Minggu 38. Kesemua 117 PDF individu dan 117 Word selepas penukaran mempunyai satu halaman A4. Periksa secara visual kesemua 10 RPH Unit 8 dalam kedua-dua format dan tiga halaman RPT yang memuatkan Unit 8. Lima ujian integriti v60 lulus.
+
 ## Hasil ujian dan status
 
 Semakan setempat mengesahkan kesemua 585 Lesson dan 175 jumlah minit mingguan, serta 44 baris tarikh bagi setiap tahun dalam PDF 10 halaman. Jalankan `python staging/matematik/eksport_agihan.py --output /tmp/Agihan_Matematik_SK_2027.pdf` dengan ReportLab dan DejaVu Sans untuk mengulang eksport. Kelima-lima set lengkap Tahun 2–6 menunggu semakan guru dalam [PR #918](https://github.com/nurynayreen88/CikguLaju-AI/pull/918). Audit akademik Tahun 6 dalam [PR #460](https://github.com/nurynayreen88/CikguLaju-AI/pull/460) merujuk sumber RPH native dengan nombor PdP tersendiri. Draf agihan kekal HOLD sehingga semakan guru, CI dan pengesahan laluan Web serta Telegram.
