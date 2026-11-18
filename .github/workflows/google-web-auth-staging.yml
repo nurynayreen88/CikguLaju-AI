@@ -95,6 +95,9 @@ on:
       - 'tests/test_web_provider_neutral_payment.py'
       - 'tests/test_web_google_auth_staging.py'
       - 'tools/run_web_v1_preview.py'
+      - 'web/science_y4_release_preview.py'
+      - 'web/science_y4_release_preview_samples.json'
+      - 'tests/test_science_y4_release_preview.py'
       - 'tools/run_google_payments_staging.py'
       - 'tools/smoke_google_staging_http.py'
       - 'tests/test_web_google_staging_wsgi.py'
@@ -172,6 +175,7 @@ jobs:
           python -m unittest discover -s tests -p 'test_web_google_payment_store.py' -v
           python -m unittest discover -s tests -p 'test_web_google_staging_wsgi.py' -v
           python -m unittest discover -s tests -p 'test_english_y5_release_preview.py' -v
+          python -m unittest discover -s tests -p 'test_science_y4_release_preview.py' -v
 
   postgres-payment-integration:
     runs-on: ubuntu-latest
