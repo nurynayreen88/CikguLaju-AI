@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Semakan RPH Matematik SJKT Tahun 2</title>
+  <style>
+    body { margin: 0; background: #f5f7fa; color: #182b3a; font: 1rem/1.5 system-ui, sans-serif; }
+    main { max-width: 46rem; margin: auto; padding: 2rem 1.25rem; }
+    a { color: #0a568f; }
+    a:focus-visible { outline: 2px solid #0a568f; outline-offset: 4px; }
+    h1 { font-size: clamp(1.65rem, 4vw, 2.25rem); margin: 1.1rem 0 .25rem; }
+    h2 { font-size: 1.15rem; margin: 1.5rem 0 .75rem; }
+    ul { list-style: none; padding: 0; }
+    li { background: white; border: 1px solid #dce4eb; border-radius: .5rem; margin-bottom: .6rem; padding: .75rem 1rem; }
+    .refs { color: #40586a; margin: .15rem 0 .5rem; }
+    .formats { display: flex; gap: 1.25rem; }
+  </style>
+</head>
+<body>
+<main>
+  {% if unit is not none %}
+    <a href="{{ url_for('.catalogue') }}">Kembali ke senarai unit</a>
+  {% else %}
+    <a href="/">Kembali ke CikguLaju</a>
+  {% endif %}
+  <h1>Semakan RPH Matematik SJKT Tahun 2</h1>
+  <h2>{{ 'PdP Unit ' ~ unit if unit is not none else 'Pilih unit' }}</h2>
+  <ul>
+  {% for row in options %}
+    <li>
+    {% if unit is not none %}
+      <strong>{{ row.label }}</strong>
+      <p class="refs">SP {{ row.sp }} · BT {{ row.buku_teks }} · BA {{ row.buku_aktiviti }}</p>
+      <div class="formats">
+        <a href="{{ url_for('.document', unit=unit, pdp=row.value, fmt='word') }}"
+           aria-label="Muat turun Word PdP {{ row.value }}">Word</a>
+        <a href="{{ url_for('.document', unit=unit, pdp=row.value, fmt='pdf') }}"
+           aria-label="Muat turun PDF PdP {{ row.value }}">PDF</a>
+      </div>
+    {% else %}
+      <a href="{{ url_for('.catalogue', unit=row.value) }}">{{ row.label }}</a>
+    {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+</main>
+</body>
+</html>
