@@ -92,6 +92,24 @@ Semakan DSKP Matematik Tahun 6, hlm. 56, memadankan Lesson 097 dan 099 dengan SP
 
 Semakan setempat meliputi semua 585 padanan Lesson antara lima RPT, PDF dan Word, termasuk tajuk, SK/SP, tarikh A/B, tempoh, halaman buku serta evidens PBD. Setiap PDF individu dan PDF yang ditukar daripada Word mempunyai satu halaman A4. Pemeriksaan visual meliputi kelima-lima pindaan Tahun 6 dalam kedua-dua format. Lima ujian integriti bank v60 turut lulus.
 
+### Semakan Unit 6 dan 7 Tahun 6
+
+Semak 29 Lesson bernombor 079–107 terhadap [DSKP Matematik Tahun 6, hlm. 52–57](https://www.eprema.com.my/SKDocs/DSKP/Tahun6/9.DSKP_KSSR_T6_Semakan_Matematik.pdf) dan [Buku Teks Matematik Tahun 6, Unit 6 dan 7](https://anyflip.com/samxl/dlrk/basic/). Padanan dalam jadual merujuk kepada edisi RPT 2027 SK.
+
+| Lesson | SP | Fokus tugasan dan semakan |
+| --- | --- | --- |
+| 079–080 | 6.1.1 | Lukis dan ukur sudut poligon sekata pada grid serta dalam perisian. Evidens meliputi sudut 60° pada segi tiga sama sisi dan 135° pada oktagon sekata. |
+| 081–083 | 6.1.2 | Bina sudut dengan sinar awal dalam dua arah dan semak skala sifar pada protraktor. Lesson 083 merangkumi 180°. |
+| 084–088 | 6.2.1 dan 6.2.2 | Bezakan jejari, diameter dan segmen yang tidak melalui pusat. Lukis dan ukur bulatan menggunakan jejari daripada soalan. |
+| 089–092 | 6.3.1 | Jejak perimeter luar, tentukan baki sudut daripada 360° dan gunakan ukuran diameter untuk menilai sela serta muatan. |
+| 093–096 | 7.1.1 | Tentukan jarak mengufuk dan mencancang dengan skala bertulis, skala nisbah atau garis skala. Nyatakan 0 apabila tiada perpindahan pada salah satu paksi. |
+| 097–103 | 7.2.1 dan 7.3.1 | Semak bentuk termudah dan urutan nisbah nombor bulat. Sahkan hasil kaedah unitari dan faktor skala. |
+| 104–107 | 7.4.1 | Kira laluan mengikut segmen, semak jumlah dalam model nisbah atau bandingkan bekalan. Lesson 107 memilih antara laluan 10 km dan 14 km dengan had 12 km. |
+
+Perincikan 21 RPH, termasuk keempat-empat sesi koordinat. Lesson 090 menggunakan dua sudut 90° dan satu sudut 60° untuk menentukan baki 120° pada susunan jubin. Kekalkan nombor Lesson, tempoh 30/60 minit dan tarikh Kumpulan A/B. Rujukan poligon sekata pada Lesson 080 turut meliputi latihan pada hlm. 177.
+
+Eksport Tahun 6 mengesahkan 117 padanan RPT dan RPH. Semua 117 PDF dan 117 Word selepas penukaran muat satu halaman A4. Periksa secara visual kedua-dua format bagi 21 RPH pindaan dan empat halaman RPT yang memuatkan Unit 6–7. Lima ujian integriti v60 lulus.
+
 ### Semakan Unit 8 Tahun 6
 
 Semak Lesson 108–117 terhadap [DSKP Matematik Tahun 6, hlm. 60–61](https://www.eprema.com.my/SKDocs/DSKP/Tahun6/9.DSKP_KSSR_T6_Semakan_Matematik.pdf) dan [Buku Teks Matematik Tahun 6, hlm. 207–223](https://anyflip.com/fzatu/cwgr/basic/201-242).
