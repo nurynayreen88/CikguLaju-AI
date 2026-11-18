@@ -1,9 +1,11 @@
-"""Verify and export the Year 4 Science DLP review pack outside production."""
+"""Verify and render the Year 4 Science DLP lessons against RPT 2027."""
 
 import argparse
 import hashlib
 import json
 from collections import Counter, defaultdict
+from functools import lru_cache
+from io import BytesIO
 from pathlib import Path
 import re
 
@@ -73,33 +75,82 @@ def load_plans():
     return plans
 
 
+@lru_cache(maxsize=1)
+def _download_units():
+    units = {}
+    for plan in load_plans():
+        unit_id = f"{int(plan['unit'].split()[1]):02d}"
+        unit = units.setdefault(unit_id, {"id": unit_id, "title": plan["unit"], "lessons": {}})
+        unit["lessons"][plan["id"]] = plan
+    return units
+
+
+def _book_references(plan):
+    return " · ".join(plan["references"]).replace("TB ", "Textbook ")
+
+
+def download_catalogue():
+    return [
+        {"id": unit["id"], "title": unit["title"], "lessons": [
+            {"id": plan["id"], "title": plan["title"], "label": plan["label"],
+             "book_reference": _book_references(plan), "minutes": plan["minutes"]}
+            for plan in unit["lessons"].values()
+        ]}
+        for unit in _download_units().values()
+    ]
+
+
+def resolve_download(unit_id, lesson_id):
+    unit = _download_units().get(unit_id)
+    if unit is None or lesson_id not in unit["lessons"]:
+        return None
+    return unit, unit["lessons"][lesson_id]
+
+
+def render_download(plan, fmt, teacher):
+    output = BytesIO()
+    render_plan(output, plan, {"word": _word, "pdf": _pdf}[fmt], teacher=teacher)
+    return output.getvalue()
+
+
+def render_plan(stream, plan, renderer, *, teacher=None):
+    teacher = teacher or {}
+    session = " · ".join(
+        f"{label}: {teacher.get(key) or '______'}"
+        for key, label in (("class", "Class"), ("date", "Date"), ("time", "Time"),
+                           ("students", "Pupils"))
+    )
+    heading = ("Daily Lesson Plan", "Science (DLP) · Year 4 SK", plan["title"])
+    if "review_lss" in plan:
+        standards = "Review LS " + ", ".join(plan["review_lss"])
+    else:
+        standards = " · ".join(plan["standards"])
+    details = [
+        ("Unit", plan["unit"]),
+        ("Lesson / PdP", f"{plan['label']} · {plan['minutes']} min"),
+        ("RPT 2027 dates", " · ".join(plan["rpt_dates"])),
+        ("Class / date / time", session),
+        ("Standards", standards),
+        ("Book references", _book_references(plan)),
+        ("Learning objective", plan["objective"]),
+        ("Materials", plan["materials"]),
+    ]
+    activities = [("Phase", "Teacher", "Pupils")]
+    activities.extend(
+        (f"{phase['phase']} · {phase['minutes']} min", phase["teacher"], phase["pupils"])
+        for phase in plan["phases"]
+    )
+    reflection = [("Reflection", teacher.get("reflection") or
+                   f"___ / ___ pupils met the objective. {plan['follow_up']}")]
+    renderer(stream, heading, details, activities, reflection)
+
+
 def export(plans, output):
     output.mkdir(parents=True, exist_ok=True)
     for plan in plans:
-        heading = ("Daily Lesson Plan", "Science (DLP) · Year 4 SK", plan["title"])
-        if "review_lss" in plan:
-            standards = "Review LS " + ", ".join(plan["review_lss"])
-        else:
-            standards = " · ".join(plan["standards"])
-        details = [
-            ("Unit", plan["unit"]),
-            ("Lesson / PdP", f"{plan['label']} · {plan['minutes']} min"),
-            ("RPT 2027 dates", " · ".join(plan["rpt_dates"])),
-            ("Class / date / time", "Class: ______ · Date: ______ · Time: ______ · Pupils: ______"),
-            ("Standards", standards),
-            ("Book references", " · ".join(plan["references"]).replace("TB ", "Textbook ")),
-            ("Learning objective", plan["objective"]),
-            ("Materials", plan["materials"]),
-        ]
-        activities = [("Phase", "Teacher", "Pupils")]
-        activities.extend(
-            (f"{phase['phase']} · {phase['minutes']} min", phase["teacher"], phase["pupils"])
-            for phase in plan["phases"]
-        )
-        reflection = [("Reflection", f"___ / ___ pupils met the objective. {plan['follow_up']}")]
-        for suffix, render in (("docx", _word), ("pdf", _pdf)):
+        for suffix, renderer in (("docx", _word), ("pdf", _pdf)):
             with (output / f"{plan['id']}.{suffix}").open("wb") as stream:
-                render(stream, heading, details, activities, reflection)
+                render_plan(stream, plan, renderer)
 
 
 def main():

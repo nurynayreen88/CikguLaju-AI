@@ -2,8 +2,8 @@
   "year": 4,
   "planning_year": 2027,
   "subject": "SCIENCE_DLP",
-  "rpt_file": "CikguLaju_RPT_DLP_2027_Science_Year_4_review_sources.docx",
-  "rpt_sha256": "acdf0c953e41e6b381af21bde49c91bba43a5d11aad0c50a4d2507ee7d9a3283",
+  "rpt_file": "CikguLaju_RPT_DLP_2027_Science_Year_4.docx",
+  "rpt_sha256": "b2fb5326544fc33923815fe951e502c2a4ccdce69e3105e3e9c07d5e63ad6e7c",
   "plans": [
     {
       "id": "DLP-SCI-Y4-L01",
@@ -545,7 +545,7 @@
         "TB pp. 24-28"
       ],
       "objective": "Label the nose, trachea and lungs, then trace air during inhalation and exhalation.",
-      "materials": "Airway diagram, organ labels, arrow strips",
+      "materials": "Airway diagram, labels, arrows, close-up diagram of an air sac and nearby blood vessels",
       "phases": [
         {
           "phase": "Set induction",
@@ -556,23 +556,23 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Trace the route on a diagram and reverse the arrows for exhalation.",
-          "pupils": "Label nose, trachea and lungs, then trace both directions to a partner."
+          "teacher": "Trace inhaled and exhaled air on the airway diagram. Use the close-up to show oxygen moving from air into blood and carbon dioxide moving from blood into the air in the lungs.",
+          "pupils": "Label the nose, trachea and lungs. Trace both air routes and add arrows for oxygen and carbon dioxide between the air sac and blood."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Check three correctly placed labels and both arrow routes on a fresh diagram.",
-          "pupils": "Complete and label both routes independently."
+          "teacher": "Check the three organ labels, both air routes and the directions of the gas exchange arrows.",
+          "pupils": "Complete both routes independently. On the close-up, label which gas enters the blood and which leaves it."
         },
         {
           "phase": "Closure",
           "minutes": 5,
-          "teacher": "Ask which tube carries air between the nose and lungs.",
-          "pupils": "Name the trachea and point to it."
+          "teacher": "Ask what happens to carbon dioxide after it moves from the blood into the air in the lungs.",
+          "pupils": "Trace the route it takes out of the body during exhalation."
         }
       ],
-      "follow_up": "Repeat tracing using arrows of two colours."
+      "follow_up": "Use separate colours for air movement through the airway and gas exchange in the lungs."
     },
     {
       "id": "DLP-SCI-Y4-L12",
@@ -1641,7 +1641,7 @@
         "TB p. 93"
       ],
       "objective": "Alter the position or orientation of an object and explain the resulting shadow using labelled sketches.",
-      "materials": "Opaque rectangular card, torch, fixed stand, screen, tracing paper",
+      "materials": "Rectangular card, short opaque cylinder, LED torch, stands, ruler, screen and tracing paper",
       "phases": [
         {
           "phase": "Set induction",
@@ -1652,14 +1652,14 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Fix the torch and screen while rotating the card. Then fix the card and screen and compare a torch in front with a torch off to one side.",
-          "pupils": "Trace and label two outlines for each comparison. Mark the orientation of the card or the position of the torch on each sketch."
+          "teacher": "Fix the torch and screen while rotating the card around its centre. Then lay the cylinder on its side with one round end facing the screen. Compare a torch in line with the cylinder with a torch off to one side at the same distance from the cylinder. Keep beams below eye level.",
+          "pupils": "Trace two outlines for each test. Label the card orientation in the first pair and the torch position in the second pair."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Check a pair of labelled outlines and ask pupils to trace a straight path from the torch past an edge of the card to the screen.",
-          "pupils": "Compare the two outlines in one pair. Explain how changing the card orientation or torch position changes where the card blocks the light."
+          "teacher": "Check both pairs of labelled outlines. Ask pupils to trace a straight path from the torch past an edge of the object to the screen.",
+          "pupils": "Explain one change in each pair and mark where the object blocks the straight path of light."
         },
         {
           "phase": "Closure",
@@ -1668,7 +1668,7 @@
           "pupils": "Explain why the same object should be used to test orientation."
         }
       ],
-      "follow_up": "Repeat with another object only after explaining the first comparison."
+      "follow_up": "If an outline is faint, adjust the room lighting and repeat both positions with the same setup."
     },
     {
       "id": "DLP-SCI-Y4-L32",
@@ -1829,7 +1829,7 @@
         "TB pp. 102-104"
       ],
       "objective": "Record the colours observed when white light passes through water and relate the result to a rainbow.",
-      "materials": "Low-power torch, water tray, acrylic mirror, white card, rainbow photo; never use direct sunlight or look into the beam.",
+      "materials": "Low-power white battery torch, shallow water tray, acrylic mirror, white card, raindrop diagram and photos of a rainbow and the demo result",
       "phases": [
         {
           "phase": "Set induction",
@@ -1840,23 +1840,23 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Use a teacher-positioned low-power torch, water and acrylic mirror to project white light onto the card. Pupils observe the card, not the light source or reflected beam. Supply an observed-result photo if lighting prevents a clear display.",
-          "pupils": "Record visible colours and connect the water demonstration to light interacting with raindrops."
+          "teacher": "Use the torch as the sole light source. Tilt the acrylic mirror partly under water. Keep the torch dry and aim it so the reflected light falls on the card away from faces. Have pupils observe the card. Show the recorded result if the colours are faint.",
+          "pupils": "Record the colours visible on the card or in the photo. Use the diagram to trace how sunlight bends, separates into colours and reflects inside a raindrop."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Check a colour record and an explanation linking white light and water to the rainbow.",
-          "pupils": "Individually explain the connection using an annotated diagram."
+          "teacher": "Check the colour record and the annotated ray path through a raindrop.",
+          "pupils": "Draw and explain how sunlight bends and splits into colours as it passes through a raindrop."
         },
         {
           "phase": "Closure",
           "minutes": 5,
-          "teacher": "Ask where the colours begin in the demonstration.",
-          "pupils": "Identify white light as the source and water as part of the setup."
+          "teacher": "Ask what provides the light in the demo and in the sky.",
+          "pupils": "Name the white torch light and sunlight and explain how water reveals their colours."
         }
       ],
-      "follow_up": "Use a recorded photo to check the observation under better lighting."
+      "follow_up": "Compare the colour band with a photo of a rainbow and label the light source in each."
     },
     {
       "id": "DLP-SCI-Y4-R05",
@@ -2499,35 +2499,35 @@
       "references": [
         "TB pp. 142-144"
       ],
-      "objective": "Classify objects by plant, animal, rock, soil or petroleum source and justify one classification.",
-      "materials": "Picture cards for wooden chair, wool sweater, metal nail, glass bottle and plastic bottle; transfer cards for cotton shirt, leather shoes, metal coin, mirror and synthetic raincoat; five basic-source labels and source–material–object arrows. Use pictures, not loose glass or sharp nails.",
+      "objective": "Sort objects by plant, animal, rock or petroleum source and explain a difficult example.",
+      "materials": "Four source labels and object picture cards for group sorting and individual assessment",
       "phases": [
         {
           "phase": "Set induction",
           "minutes": 5,
-          "teacher": "Show picture cards of a wooden chair, wool sweater, metal nail, glass bottle and plastic bottle. Ask pupils to name each material before identifying its source.",
-          "pupils": "Name the material shown and predict one possible basic source."
+          "teacher": "Show a glass bottle and a plastic bottle in pictures. Ask which material each bottle is made of.",
+          "pupils": "Name each material and predict its basic source."
         },
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Introduce the five basic sources. Model textbook examples: plants → wood → wooden chair; animals → wool → sweater; rocks → metal → nail; soil → sand → glass bottle; petroleum → plastic → plastic bottle. Explain the difference between source, material and object.",
-          "pupils": "Sort picture cards under all five source labels, then arrange each source–material–object chain. Explain the soil–sand–glass example using the textbook chart."
+          "teacher": "Label the four groups: plants, animals, rocks and petroleum. Model wood from plants, wool from animals, metal and sand under rocks, and plastic from petroleum. Show how sand is used to make glass.",
+          "pupils": "Sort pictures of a wooden chair, wool sweater, metal coin, glass bottle and plastic bottle. Record an object, the material used to make it and its basic source."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Use a fresh set of picture cards: cotton shirt, leather shoes, metal coin, mirror and synthetic raincoat. Check all five classifications and one written source–material–object explanation.",
-          "pupils": "Independently label the basic source for each new object, then write one complete chain, for example petroleum → synthetic cloth → raincoat."
+          "teacher": "Give new cards for a cotton shirt, leather shoes, a steel nail, a glass mirror and a raincoat made of synthetic fabric. Check the five placements and one reason.",
+          "pupils": "Group the five cards independently and use one example to explain how the object's material links it to its source."
         },
         {
           "phase": "Closure",
           "minutes": 5,
-          "teacher": "Ask pupils to identify the source, material and object in the glass-bottle example, then compare it with the plastic-bottle example.",
-          "pupils": "State soil → sand → glass bottle and petroleum → plastic → plastic bottle, distinguishing each source from its material and object."
+          "teacher": "Ask why the glass mirror and steel nail go in the same group.",
+          "pupils": "Explain that sand used for glass and metals belong with rocks in the textbook classification."
         }
       ],
-      "follow_up": "For pupils who confuse source and material, revisit soil → sand → mirror, then ask them to complete petroleum → synthetic cloth → raincoat."
+      "follow_up": "Match a clay bowl and a glass bottle to their materials and place both in the rocks group."
     },
     {
       "id": "DLP-SCI-Y4-L47",
@@ -2547,7 +2547,7 @@
         "TB pp. 145-146"
       ],
       "objective": "Record the response of four materials to equal quantities of water and use the results to order them.",
-      "materials": "Paper towel, foil, sponge, plastic lid, water drops, basin, table",
+      "materials": "Paper towel, sponge, plastic lid and smooth metal strip, two dry sets, dropper, basin, timer and recording table",
       "phases": [
         {
           "phase": "Set induction",
@@ -2558,14 +2558,14 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Test equal drops and a fixed wait time for absorbency, then test whether dry samples float in separate trials.",
-          "pupils": "Record both results for each material in separate columns."
+          "teacher": "Place three equal drops on separate spots on each level sample. Check which drops have soaked in after two minutes. Place a fresh dry set on water and check if each sample floats or sinks after one minute.",
+          "pupils": "Record the number of drops absorbed and the result of the float test for each sample in separate columns."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Check individual records of four samples and a ranking based on one property.",
-          "pupils": "Rank samples by observed absorbency and state each float result separately."
+          "teacher": "Check both results for four samples and accept ties where counts match.",
+          "pupils": "Order the four samples by drops absorbed, then use one float result to explain why the two tests describe different properties."
         },
         {
           "phase": "Closure",
@@ -2594,25 +2594,25 @@
         "TB pp. 147-149"
       ],
       "objective": "Use a low-voltage circuit and a light source to compare materials and record the results separately.",
-      "materials": "School low-voltage battery circuit with test gap, LED, metal and plastic samples, torch and screen",
+      "materials": "School battery circuit with switch and LED indicator, smooth metal strip, clear plastic strip, white torch and screen",
       "phases": [
         {
           "phase": "Set induction",
           "minutes": 5,
-          "teacher": "Show a closed circuit and ask what happens if the test gap is opened.",
-          "pupils": "Predict what happens to the indicator."
+          "teacher": "Show that the LED lights when the test gap is bridged and goes out when it is open.",
+          "pupils": "Predict what happens when each sample bridges the gap."
         },
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Use only a low-voltage battery circuit prepared and checked by the teacher; never connect to mains electricity. Model inserting a sample in the test gap. Compare light transmission separately using the same torch and screen.",
-          "pupils": "Record electrical and light-transmission observations in different columns."
+          "teacher": "Use only a dry, teacher-checked low-voltage battery circuit. Keep it off while changing samples. Record the LED result for each. Use a separate torch and screen at fixed positions to compare how much light passes through.",
+          "pupils": "Record whether the LED lights and whether the screen shows a light spot for each sample."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Check whether each pupil labels the properties and gives one comparison supported by both tests.",
-          "pupils": "Submit an individual table and explain one result from each test."
+          "teacher": "Check the two results for each sample. Ask pupils to use the clear plastic result to distinguish the properties.",
+          "pupils": "Submit the results table and explain how a sample can let light through while leaving the LED off."
         },
         {
           "phase": "Closure",
@@ -2621,7 +2621,7 @@
           "pupils": "Use the results to separate the two properties."
         }
       ],
-      "follow_up": "Revisit the purpose and evidence of each test."
+      "follow_up": "Repeat one result for each property and ask pupils to name the observation that supports it."
     },
     {
       "id": "DLP-SCI-Y4-L49",
@@ -2641,34 +2641,34 @@
         "TB pp. 149-150"
       ],
       "objective": "Compare teacher-prepared heat-conduction observations and test how two materials recover after stretching.",
-      "materials": "Teacher-prepared heat comparison results, two elastic classroom materials, ruler",
+      "materials": "Teacher heat-test readings for equal-sized metal and wood samples, elastic fabric, plain ribbon, stand, light clip and ruler",
       "phases": [
         {
           "phase": "Set induction",
           "minutes": 5,
-          "teacher": "Show a pair of teacher-recorded heat-test measurements and ask which changed first.",
-          "pupils": "Name one observable difference used for comparison."
+          "teacher": "Show a chart of temperatures at the far ends of the two samples before warming and after the same time.",
+          "pupils": "Find the start and end temperature for each sample."
         },
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Interpret teacher-prepared results for materials exposed to the same warming conditions. Compare recovery of two materials after a gentle stretch.",
-          "pupils": "Record which sample transfers heat faster and compare each sample's length before, during and after stretching."
+          "teacher": "Use recorded heat data from matched samples warmed under the same conditions. Keep hot equipment away from pupils. Attach the same light clip to each strip in turn and compare the change in length and its recovery.",
+          "pupils": "Compare the temperature rises. Measure each strip before adding the clip, with the clip in place and after removing it."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Check a conclusion for each property with supporting observations.",
-          "pupils": "Individually name the better heat conductor and the material that recovered more completely."
+          "teacher": "Check a heat conclusion with readings and an elasticity conclusion with measured lengths.",
+          "pupils": "Use the readings to say which sample transferred heat more readily. Use the three lengths to identify which strip stretched and recovered."
         },
         {
           "phase": "Closure",
           "minutes": 5,
-          "teacher": "Ask what shows elasticity after the force is removed.",
-          "pupils": "Use the final length relative to the original length."
+          "teacher": "Ask what the three lengths reveal about the strip.",
+          "pupils": "Explain that the strip must stretch and return close to its starting length to show elastic recovery."
         }
       ],
-      "follow_up": "Provide new data to reinforce that heat conduction and elasticity describe different properties."
+      "follow_up": "Use a new set of readings to practise justifying both conclusions separately."
     },
     {
       "id": "DLP-SCI-Y4-L50",
@@ -2844,14 +2844,14 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Demonstrate west-to-east rotation and revolution around the model Sun. Use the view above the North Pole to show direction and compare typical durations.",
-          "pupils": "Model the two movements and label about one day for rotation and about one year for revolution."
+          "teacher": "Turn the globe from west to east on its axis while moving it around the model Sun. From above the North Pole, show that both movements go anticlockwise. Compare about 24 hours for one turn and about 365¼ days for one orbit.",
+          "pupils": "Model both movements, then draw a rotation arrow at the axis and a revolution arrow on the orbit from the same viewpoint."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Check the movement, direction and duration of each on an individual diagram.",
-          "pupils": "Draw and label one rotation and one revolution independently."
+          "teacher": "Check that each arrow shows the correct movement and direction and is labelled with its duration.",
+          "pupils": "Draw and label the direction and duration of both movements on an individual diagram."
         },
         {
           "phase": "Closure",

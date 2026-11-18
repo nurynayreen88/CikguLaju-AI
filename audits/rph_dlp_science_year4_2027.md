@@ -1,21 +1,29 @@
 # RPH Science DLP Year 4 SK 2027
 
-Set semakan guru merangkumi semua 59 Lesson dalam 10 unit dan 10 sesi Review. Lesson diperuntukkan 60 minit dan Review 30 minit, menjadikan 3,840 minit atau 64 jam. Setiap RPH menyimpan julat tarikh Kumpulan A/B, unit, tajuk, kod, halaman bercetak dan evidens PBD daripada RPT. Review menggunakan kod yang telah diajar dalam unit berkenaan.
+Set ini mengandungi 59 Lesson dan 10 Review dalam 10 unit. Lesson menggunakan 60 minit dan Review menggunakan 30 minit, dengan jumlah 3,840 minit atau 64 jam. Setiap RPH memaparkan tarikh Kumpulan A/B, tajuk, CS/LS, rujukan buku bercetak, langkah guru dan murid serta evidens pentaksiran. Sesi Review menggunakan LS yang telah diajar dalam unitnya.
 
-## Sumber dan semakan
+## Sumber
 
-- Agihan dan tarikh bersumber daripada [RPT Science DLP Year 4 2027 asal](../rpt_2027/dlp/CikguLaju_RPT_DLP_2027_Science_Year_4.docx), diterbitkan melalui #882 dan #883 serta dikekalkan tanpa perubahan. Salinan semakan [RPT Science DLP Year 4 2027](../rpt_2027/dlp/CikguLaju_RPT_DLP_2027_Science_Year_4_review_sources.docx) dibuat khusus untuk set ini; hanya objektif Lesson 46 diperjelas supaya merangkumi kelima-lima sumber bahan. Semua 69 baris RPH dibandingkan dengan salinan semakan bagi tarikh, tajuk, unit, standard, objektif dan halaman buku. SHA-256 salinan semakan disimpan bersama data RPH.
-- Salinan RPT semakan menghasilkan tujuh halaman; halaman 6 diperiksa semula selepas pindaan. Objektif Lesson 46 muat dengan jelas dalam sel jadual dan tidak mengubah tarikh, standard atau rujukan baris lain.
-- Semua 92 kod LS daripada pelan dipadankan dengan [DSKP KSSR Science Year 4 (Revised 2017), edisi DLP](https://anyflip.com/gohfh/tymh/basic/51-94). Pemetaan mengikut cetakan [Science Year 4 BT074003](https://anyflip.com/yjsfa/rjal/basic/) yang turut disenaraikan dalam [E-Katalog KPM](https://moe.gov.my/storage/files/shares/Banner/E-Katalog%20Buku%20Teks%20KPM.pdf). Halaman dalam pelan merujuk kepada buku teks bercetak.
-- Aktiviti ditulis khusus untuk setiap sesi dengan tindakan guru dan murid serta hasil penilaian individu. Lesson 09–10 berkongsi reka bentuk ujian adil. Lesson 24 dan 26 menggunakan rekod bertarikh daripada penyiasatan yang sama.
-- Unit 5, Lesson 30–31, LS 5.1.3 dan 5.1.4, halaman 92–93. Lesson 30 membandingkan jarak sumber cahaya ke objek dan jarak objek ke skrin melalui dua ujian berasingan. Murid merekod lebar bayang dalam cm. Lesson 31 membandingkan orientasi objek dan kedudukan sumber cahaya melalui lakaran berlabel, kemudian menerangkan bagaimana cahaya bergerak lurus dan dihalang oleh objek.
-- Unit 5, Lesson 35, LS 5.3.3–5.3.4. Demonstrasi pelangi menggunakan lampu suluh berkuasa rendah dan dikawal guru; murid melihat kad yang menerima cahaya, bukan sumber atau pantulan. Arahan kini melarang cahaya matahari terus dan melihat ke dalam pancaran. Objektif dan pemetaan RPT dikekalkan.
-- Unit 8, Lesson 48, LS 8.2.1. Arahan amali elektrik kini mengehadkan litar kepada bateri voltan rendah yang disediakan dan diperiksa guru serta melarang sambungan ke bekalan utama. Ujian penghantaran cahaya dijalankan berasingan.
-- Unit 8, Lesson 46, LS 8.1.1–8.1.3, halaman 142–144. Semakan khusus mendapati objektif RPT asal dan draf RPH tertinggal sumber tanah; salinan RPT semakan menambah sumber tersebut. Lesson kini mengelaskan kelima-lima sumber asas (tumbuhan, haiwan, batuan, tanah dan petroleum) serta menggunakan rantaian buku teks: tanah → pasir → botol kaca dan petroleum → plastik → botol plastik. Murid menyusun lima contoh, kemudian mengelaskan set baharu (baju kapas, kasut kulit, syiling logam, cermin dan baju hujan kain sintetik) untuk menilai pemindahan serta menulis satu rantaian secara individu. Aktiviti menggunakan kad bergambar, bukan kaca atau paku sebenar. Rujukan: [DSKP Science Year 4 DLP](https://anyflip.com/gohfh/tymh/basic/51-94) dan [buku teks Science Year 4 DLP, halaman bercetak 142–143](https://anyflip.com/ejbrb/wxvo/basic/151-198).
-- Selepas pembetulan Lesson 46 dan arahan keselamatan Lesson 35 serta 48, kesemua 69 PDF penjana dan 69 Word yang dirender menjadi PDF dijana semula. [CI review run #23](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/44273741790) lulus untuk kedua-dua format: satu halaman A4 setiap fail dan kandungan objektif, tarikh serta rujukan sepadan. Semakan visual penuh yang terdahulu kekal sah untuk fail lain; Lesson 35, 46 dan 48 diperiksa semula pada PDF penjana dan Word→PDF untuk kebolehbacaan, isi dan sempadan halaman.
+- [RPT Science DLP Year 4 2027](../rpt_2027/dlp/CikguLaju_RPT_DLP_2027_Science_Year_4.docx) ialah RPT asal yang diterbitkan melalui #882 dan #883. Penjana memadankan kesemua 69 baris pada tarikh, tajuk, unit, CS/LS, objektif, halaman buku dan tempoh. SHA-256 RPT asal digunakan untuk mengesan pindaan.
+- 92 kod LS dipadankan dengan [DSKP KSSR Science Year 4 (Revised 2017), edisi DLP](https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Science-Year-4.pdf). Rujukan buku mengikut nombor halaman bercetak dalam [Science Year 4 BT074003](https://anyflip.com/yjsfa/rjal/basic/), yang disenaraikan dalam [E-Katalog KPM](https://moe.gov.my/storage/files/shares/Banner/E-Katalog%20Buku%20Teks%20KPM.pdf).
 
-## Fail semakan
+## Evidens dan perubahan
 
-Jalankan `python -m staging.dlp.year4.render_science` untuk mengesahkan data dengan RPT. Gunakan `--output <folder>` untuk mendapatkan fail Word dan PDF. Penjana menggunakan format jadual DLP sedia ada.
+| Lesson | Rujukan | Evidens murid |
+| --- | --- | --- |
+| 11 | LS 2.1.1–2.1.2, hlm. 24–28 | Label laluan udara masuk dan keluar. Lukis arah oksigen masuk ke darah dan karbon dioksida keluar daripada darah di paru-paru. |
+| 30–31 | LS 5.1.3–5.1.4, hlm. 92–93 | Catat lebar bayang dalam cm. Bandingkan kedudukan lampu dan skrin dalam dua ujian saiz. Bandingkan orientasi kad dan kedudukan lampu terhadap silinder dalam dua ujian bentuk. Label lakaran dan terangkan laluan lurus cahaya. |
+| 35 | LS 5.3.3–5.3.4, hlm. 102–104 | Rekod jalur warna pada kad atau foto hasil demonstrasi. Terangkan bagaimana cahaya putih berpisah kepada warna dalam titisan hujan. Guru mengawal lampu suluh bateri dan memantulkan cahaya ke kad jauh daripada wajah. |
+| 46 | LS 8.1.1–8.1.3, hlm. 142–144 | Susun kad di bawah tumbuhan, haiwan, batuan atau petroleum. Gunakan pasir sebagai bahan untuk kaca dalam kumpulan batuan. Kelaskan lima kad baharu secara individu dan jelaskan satu padanan objek, bahan dan sumber. |
+| 47–49 | LS 8.2.1, hlm. 145–150 | Catat serapan dan apungan berasingan. Bandingkan nyalaan LED litar bateri dengan cahaya yang melepasi sampel. Gunakan bacaan haba yang disediakan guru dan ukuran panjang untuk menyokong kesimpulan tentang pengaliran haba dan keanjalan. |
+| 52 | LS 9.2.1–9.2.2, hlm. 160–162 | Lukis arah dan nyatakan tempoh putaran serta peredaran Bumi dari sudut pandang yang sama. |
 
-Status set ialah **HOLD semakan guru**. Menu dan muat turun Year 4 melalui Web dan Telegram belum dibuka.
+Pembetulan Lesson 46 menggantikan tafsiran awal tentang lima sumber. Nota DSKP hlm. 64 menyenaraikan tanah di bawah batuan. [Buku teks hlm. 142–144](https://anyflip.com/ejbrb/wxvo/basic/151-198) menggunakan pasir dan botol kaca sebagai contoh dalam kumpulan itu. Objektif daripada RPT asal menyenaraikan empat sumber dan digunakan dalam RPH.
+
+## Fail dan status
+
+Jalankan `python -m staging.dlp.year4.render_science --output <folder>` untuk menghasilkan Word dan PDF. Semakan setempat meliputi kesemua 69 fail Word yang ditukar ke PDF dan 69 PDF penjana. Setiap RPH muat satu halaman A4.
+
+Draf laluan aplikasi menggunakan penjana yang sama, dengan medan kelas, tarikh, masa, bilangan murid dan refleksi daripada aliran sedia ada. Katalog menyemak pasangan unit dan ID pelajaran.
+
+**HOLD semakan guru.** Set menunggu kelulusan kandungan guru dan ujian muat turun Word/PDF menggunakan akaun guru sebenar sebelum penerbitan.
