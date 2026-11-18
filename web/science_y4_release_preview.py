@@ -15,7 +15,7 @@ bp.after_request(private_download)
 
 BASE = "/google-staging/science-dlp-year4-2027"
 DATA = Path(__file__).with_name("science_y4_release_preview_samples.json")
-SOURCE_COMMIT = "786f6980fc3ab067ef99efbdb7b1c0ed677030e9"
+SOURCE_COMMIT = "64f0a50996c2e699094a51f53c2efc1f2831e1dc"
 LESSONS = {
     "lesson-46": ("DLP-SCI-Y4-L46", "Lesson 46 · Trace materials to their sources"),
     "review-08": ("DLP-SCI-Y4-R08", "Review 08 · Materials Review"),
