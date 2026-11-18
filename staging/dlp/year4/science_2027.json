@@ -2605,7 +2605,7 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Model inserting a sample in a teacher-prepared battery circuit. Compare light transmission separately using the same torch and screen.",
+          "teacher": "Use only a low-voltage battery circuit prepared and checked by the teacher; never connect to mains electricity. Model inserting a sample in the test gap. Compare light transmission separately using the same torch and screen.",
           "pupils": "Record electrical and light-transmission observations in different columns."
         },
         {
