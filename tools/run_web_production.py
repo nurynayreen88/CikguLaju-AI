@@ -30,6 +30,10 @@ from web.admin_usage_web import bp as admin_usage_bp
 app.register_blueprint(admin_usage_bp)
 from web.web_feedback_routes import bp as web_feedback_bp
 app.register_blueprint(web_feedback_bp)
+from web_v1_email_auth_routes import bp as web_email_auth_bp
+app.register_blueprint(web_email_auth_bp)
+from web_v1_email_auth_ui import install as install_email_auth_ui
+install_email_auth_ui(app)
 
 
 
