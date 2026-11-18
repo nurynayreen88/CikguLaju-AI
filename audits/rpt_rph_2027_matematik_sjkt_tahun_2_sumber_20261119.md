@@ -29,6 +29,10 @@ Slot M07, M12 dan M13 ditambah daripada dua kepada tiga berbanding jadual asas b
 
 Draf RPT boleh disemak dalam [Word](matematik_sjkt_tahun_2/RPT_2027_Matematik_SJKT_Tahun_2.docx) dan [PDF](matematik_sjkt_tahun_2/RPT_2027_Matematik_SJKT_Tahun_2.pdf). Kedua-dua format sepadan bagi kesemua 96 nombor PdP, SK dan SP. PDF dieksport sebagai tujuh halaman A4 landskap.
 
+## RPH dan semakan dokumen
+
+Set lengkap 96 RPH tersedia dalam [Word](matematik_sjkt_tahun_2/RPH_2027_Matematik_SJKT_Tahun_2.docx) dan [PDF](matematik_sjkt_tahun_2/RPH_2027_Matematik_SJKT_Tahun_2.pdf). Aktiviti guru dan murid, bahan serta kriteria PBD ditulis dalam bahasa Tamil. Data aktiviti disusun mengikut unit dalam fail rph_unit_1.tsv hingga rph_unit_8.tsv. Dokumen dan agihan disemak bagi semua ID PdP, urutan, pertindihan halaman dan saiz A4. Eksport PDF menunjukkan satu halaman bagi setiap RPH.
+
 ## Status
 
-**HOLD** untuk semakan guru dan penyediaan RPH. Jadual dan pemetaan ini menjadi asas bersama bagi rancangan harian. Set penuh RPH, ujian dokumen satu halaman A4 setiap PdP dan ujian Web/Telegram belum disahkan.
+**HOLD** untuk semakan guru bagi istilah, aktiviti dan padanan bahan. Penjanaan dan muat turun mengikut PdP di Web dan Telegram belum disahkan.
