@@ -2499,35 +2499,35 @@
       "references": [
         "TB pp. 142-144"
       ],
-      "objective": "Sort objects by plant, animal, rock or petroleum source and explain a difficult example.",
-      "materials": "Objects made of wood, wool, stone and plastic, source cards",
+      "objective": "Classify objects using all five basic sources—plants, animals, rocks, soil and petroleum—and explain one source–material–object link.",
+      "materials": "Picture cards: wooden chair, wool sweater, metal nail, glass bottle and plastic bottle; five basic-source labels; source–material–object arrow cards. Use pictures, not loose glass or sharp nails.",
       "phases": [
         {
           "phase": "Set induction",
           "minutes": 5,
-          "teacher": "Show a plastic ruler and a wooden pencil barrel.",
-          "pupils": "Suggest where each material comes from."
+          "teacher": "Show picture cards of a wooden chair, wool sweater, metal nail, glass bottle and plastic bottle. Ask pupils to name each material before identifying its source.",
+          "pupils": "Name the material shown and predict one possible basic source."
         },
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Explain the four source categories. Discuss wool as animal fibre and most classroom plastics as petroleum-derived examples.",
-          "pupils": "Sort objects, then distinguish the source material from the finished object."
+          "teacher": "Introduce the five basic sources. Model textbook examples: plants → wood → wooden chair; animals → wool → sweater; rocks → metal → nail; soil → sand → glass bottle; petroleum → plastic → plastic bottle. Explain the difference between source, material and object.",
+          "pupils": "Sort picture cards under all five source labels, then arrange each source–material–object chain. Explain the soil–sand–glass example using the textbook chart."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Check four classifications and an explanation for plastic or another difficult example.",
-          "pupils": "Independently classify the four objects and justify one."
+          "teacher": "Give each pupil five new picture cards, one for each source. Check all five classifications and one written source–material–object explanation.",
+          "pupils": "Independently label the source for five objects, then write one complete chain such as soil → sand → glass bottle."
         },
         {
           "phase": "Closure",
           "minutes": 5,
-          "teacher": "Ask why two objects can share a source even when one is soft.",
-          "pupils": "Name a source and distinguish it from the object's properties."
+          "teacher": "Ask pupils to identify the source, material and object in the glass-bottle example, then compare it with the plastic-bottle example.",
+          "pupils": "State soil → sand → glass bottle and petroleum → plastic → plastic bottle, distinguishing each source from its material and object."
         }
       ],
-      "follow_up": "Use a source label and a material label for each tricky example."
+      "follow_up": "For pupils who confuse source and material, revisit the picture sequence soil → sand → glass bottle, then ask them to complete petroleum → plastic → plastic bottle."
     },
     {
       "id": "DLP-SCI-Y4-L47",
