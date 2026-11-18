@@ -9,7 +9,7 @@ import os
 import re
 import uuid
 from urllib.error import HTTPError
-from urllib.parse import urlsplit
+from urllib.parse import quote, urlsplit
 from urllib.request import Request, urlopen
 
 from flask import Blueprint, current_app, jsonify, make_response, request
@@ -261,6 +261,96 @@ def email_login():
         current_app.logger.warning("Web email login unavailable: %s",
                                    type(exc).__name__)
         return _reply({"error": "Log masuk emel tergendala. Cuba lagi sebentar lagi."}, 503)
+
+
+
+@bp.post("/api/auth/email/recover")
+def email_recover():
+    """Send a generic password-recovery response to avoid revealing account existence."""
+    if not _same_origin():
+        return _reply({"error": "Permintaan tidak sah."}, 403)
+    payload = _request_payload()
+    email = payload.get("email") if isinstance(payload, dict) else None
+    if not isinstance(email, str):
+        return _reply({"error": "Masukkan alamat emel yang sah."}, 400)
+    email = email.strip().casefold()
+    if (len(email) > 254 or email.count("@") != 1
+            or not re.fullmatch(r"[^\s@]{1,64}@[^\\s@]{1,189}", email)):
+        return _reply({"error": "Masukkan alamat emel yang sah."}, 400)
+    try:
+        auth = _auth_configuration()
+        if auth is None:
+            return _reply({"error": "Pemulihan kata laluan belum tersedia."}, 503)
+        redirect_to = quote(WEB_ORIGIN, safe="")
+        status, _result = _auth_post(
+            auth, "recover?redirect_to=" + redirect_to, {"email": email})
+        if status >= 500:
+            return _reply({
+                "error": "Emel pemulihan tidak dapat dihantar sekarang. Cuba lagi sebentar lagi."
+            }, 503)
+        return _reply({
+            "sent": True,
+            "message": "Jika akaun dengan emel ini wujud, pautan pemulihan akan dihantar. Semak peti masuk dan folder spam."
+        })
+    except Exception as exc:
+        current_app.logger.warning("Web email recovery unavailable: %s",
+                                   type(exc).__name__)
+        return _reply({
+            "error": "Emel pemulihan tidak dapat dihantar sekarang. Cuba lagi sebentar lagi."
+        }, 503)
+
+
+@bp.post("/api/auth/email/reset")
+def email_reset_password():
+    """Change the password using a short-lived Supabase recovery access token."""
+    if not _same_origin():
+        return _reply({"error": "Permintaan tidak sah."}, 403)
+    payload = _request_payload()
+    token = payload.get("access_token") if isinstance(payload, dict) else None
+    password = payload.get("password") if isinstance(payload, dict) else None
+    if (not isinstance(token, str) or len(token) < 80 or len(token) > 4096
+            or token.count(".") != 2 or any(char.isspace() for char in token)):
+        return _reply({
+            "error": "Pautan pemulihan tidak sah atau telah tamat tempoh. Minta pautan baharu."
+        }, 400)
+    if not isinstance(password, str):
+        return _reply({"error": "Masukkan kata laluan baharu."}, 400)
+    try:
+        password_bytes = password.encode("utf-8")
+    except UnicodeEncodeError:
+        return _reply({"error": "Kata laluan tidak sah."}, 400)
+    if len(password_bytes) < 8 or len(password_bytes) > MAX_PASSWORD_BYTES:
+        return _reply({
+            "error": "Kata laluan baharu perlu sekurang-kurangnya 8 aksara."
+        }, 400)
+    try:
+        auth = _auth_configuration()
+        if auth is None:
+            return _reply({"error": "Pemulihan kata laluan belum tersedia."}, 503)
+        body = json.dumps({"password": password}, separators=(",", ":")).encode("utf-8")
+        req = Request(auth["base"] + "/auth/v1/user", data=body, method="PUT", headers={
+            "apikey": auth["publishable_key"],
+            "Authorization": "Bearer " + token,
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "X-Client-Info": "cikgulaju-web-email-auth/1",
+        })
+        try:
+            with urlopen(req, timeout=10) as response:
+                status = response.status
+        except HTTPError as exc:
+            status = exc.code
+        if 200 <= status < 300:
+            return _reply({"updated": True})
+        if status < 500:
+            return _reply({
+                "error": "Pautan pemulihan tidak sah atau telah tamat tempoh. Minta pautan baharu."
+            }, 400)
+        return _reply({"error": "Kata laluan belum dapat dikemas kini. Cuba lagi."}, 503)
+    except Exception as exc:
+        current_app.logger.warning("Web password reset unavailable: %s",
+                                   type(exc).__name__)
+        return _reply({"error": "Kata laluan belum dapat dikemas kini. Cuba lagi."}, 503)
 
 
 @bp.post("/api/auth/email/link")

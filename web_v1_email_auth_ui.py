@@ -23,6 +23,7 @@ LOGIN_HTML = """
     <button id="email-register-button" type="button">Daftar Akaun Emel</button>
     <button id="email-login-button" type="button">Log Masuk Emel</button>
   </div>
+  <button id="email-forgot-button" class="email-forgot-button" type="button">Lupa kata laluan?</button>
   <p class="email-auth-help">Jika diminta, sahkan emel melalui pautan yang dihantar. Akaun Telegram sedia ada boleh dipautkan kemudian.</p>
   <p id="email-login-status" class="notice" role="status" aria-live="polite"></p>
 </div>
@@ -42,6 +43,8 @@ LOGIN_HTML = """
 .email-auth-actions button:disabled,.email-link-card button:disabled{opacity:.55;cursor:wait}
 .email-auth-actions button:last-child{background:#e6f5ee;color:#087568;border:1px solid #cfe9dd}
 .email-auth-help{font-size:.82rem;color:#60766d;line-height:1.5}
+.email-forgot-button{display:block;margin:8px 0 0 auto;padding:5px 2px;border:0;background:transparent;color:#087568;font:inherit;font-size:.86rem;font-weight:700;text-decoration:underline;cursor:pointer}
+.email-auth-reset{padding:4px 0}.email-auth-reset h2{margin:0 0 8px;color:#173d37}.email-auth-reset p{line-height:1.55}.email-auth-reset input{margin:8px 0 12px}
 .email-auth-telegram-note{text-align:center;font-size:.88rem;margin:14px 0 4px!important}
 .email-auth-divider{text-align:center;color:#718178;font-size:.73rem;font-weight:800;letter-spacing:.06em;margin:8px 0}
 #telegram-widget{display:flex;justify-content:center;margin:8px 0}
