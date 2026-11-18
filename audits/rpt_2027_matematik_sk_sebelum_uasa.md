@@ -86,6 +86,19 @@ Tambahan 75 RPH 60 minit bagi setiap tahun melengkapkan set 117 Lesson. Set 60 m
 - Kesemua 234 Word dan 234 PDF individu muat satu halaman A4. Kedua-dua RPT PDF mempunyai 14 halaman, 44 minggu dan 117 Lesson. Tajuk, SK/SP, tarikh Kumpulan A/B, tempoh, halaman buku teks dan evidens PBD sepadan pada kesemua 234 pasangan RPT/RPH. Lima ujian integriti bank v60 lulus.
 - Jalankan `PYTHONPATH=. python -m staging.matematik.eksport_tahap2 --tahun 5 --output /tmp/Matematik_SK_Tahun_5` untuk mengeksport satu PDF RPT dan 117 RPH Word/PDF. Gunakan `--tahun 6 --output /tmp/Matematik_SK_Tahun_6` untuk set kedua.
 
+### Semakan Unit 1–4 Tahun 5
+
+Semak 67 Lesson bernombor 001–067 dengan [DSKP Matematik Tahun 5, hlm. 32–47](https://asiemodel.net/wp-content/uploads/2022/08/009_DSKP_KSSR_Semakan_2017_Matematik_Thn5-print.pdf) dan [Buku Teks Matematik Tahun 5](https://fliphtml5.com/vonxr/isqr/BUKU_TEKS_MATEMATIK_TAHUN_5/). Pinda 35 RPH melalui contoh, jawapan PBD, tugasan atau halaman rujukan yang dikemas kini.
+
+| Lesson | Unit | Semakan akademik |
+| --- | --- | --- |
+| 001–024 | Nombor Bulat dan Operasi | Bezakan nilai digit dan nilai tempat. Sahkan faktor nombor perdana, titik tengah pembundaran dan operasi songsang bagi anu. Betulkan contoh Lesson 014 kepada 186 dan 231. Latihan tanpa kurungan atau dengan kurungan meliputi tambah/darab, tolak/darab, tambah/bahagi dan tolak/bahagi. |
+| 025–040 | Pecahan, Perpuluhan dan Peratus | Semak model pendaraban, pembundaran titik tengah dan hasil bahagi hingga tiga tempat perpuluhan. Bezakan nilai asas 100% semasa mengira kuantiti atau peratus. |
+| 041–056 | Wang | Lesson 047–048 sepadan dengan empat pasangan operasi SP 3.2.1 dan hlm. 99–103. Bezakan asas faedah mudah dan kompaun pada tahun kedua. Sahkan pengiraan tunai, ansuran dan baki peruntukan dalam contoh pembelajaran. |
+| 057–067 | Masa dan Waktu | Selaras Lesson 057–058 dengan SP 4.1.1 dan hlm. 123–126. Tempoh merentas bulan atau tahun dikira dalam hari, dengan kedua-dua tarikh bagi program. Semak Februari 29 hari untuk tahun lompat. Lengkapkan enam pasangan unit bagi pecahan dan perpuluhan dalam Lesson 059–065. |
+
+Semakan Unit 1–4 bersama rekod Unit 5–8 melengkapkan audit kandungan semua 117 Lesson Matematik SK Tahun 5. Nombor Lesson, SK/SP, tarikh Kumpulan A/B, tempoh 30/60 minit, halaman rujukan dan evidens PBD sepadan dengan RPT 2027. RPT mempunyai 14 halaman. Kesemua 117 PDF dan Word selepas penukaran muat satu halaman A4. Lima ujian integriti v60 dan semakan pengiraan terpilih lulus. Pengesahan guru dan ujian operasi Web serta Telegram diperlukan untuk pelepasan.
+
 ### Semakan Unit 5–8 Tahun 5
 
 Semak 50 Lesson bernombor 068–117 dengan [DSKP Matematik Tahun 5, hlm. 50–64](https://asiemodel.net/wp-content/uploads/2022/08/009_DSKP_KSSR_Semakan_2017_Matematik_Thn5-print.pdf) dan Buku Teks Matematik Tahun 5, hlm. 177–262. Pinda 38 RPH bagi memperincikan contoh, tugasan dan jawapan PBD.
@@ -97,7 +110,7 @@ Semak 50 Lesson bernombor 068–117 dengan [DSKP Matematik Tahun 5, hlm. 50–64
 | 105–112 | Koordinat, Nisbah dan Kadaran | Nyatakan jarak dua paksi dalam unit grid, termasuk sifar, dan label arah. Seragamkan ukuran sebelum menulis tiga bentuk nisbah. Bezakan kadaran melalui faktor skala dan kaedah unitari. |
 | 113–117 | Pengurusan Data | Lesson 113–114 menggunakan carta pai asal pada [hlm. 252–253](https://anyflip.com/zvyxx/ijeu/basic/251-282). Semak sektor tidak berlabel, bilangan daripada peratus, dua mod dalam data, median bilangan genap, perbandingan julat dan pengiraan purata sasaran. |
 
-Nombor Lesson, tempoh 30/60 minit, SK/SP dan tarikh Kumpulan A/B dikekalkan ketika RPT dan RPH diselaraskan. Semua 117 padanan RPT dan RPH lulus untuk tajuk, rujukan halaman, tarikh, tempoh dan evidens PBD. RPT mempunyai 14 halaman. Kesemua PDF individu dan Word selepas penukaran muat satu halaman A4. Lima ujian integriti v60 dan semakan pengiraan PBD terpilih lulus. Unit 1–4 menunggu semakan kandungan terperinci. Pengesahan guru dan ujian muat turun Web serta Telegram masih diperlukan untuk pelepasan.
+Nombor Lesson, tempoh 30/60 minit, SK/SP dan tarikh Kumpulan A/B dikekalkan ketika RPT dan RPH diselaraskan. Semua 117 padanan RPT dan RPH lulus untuk tajuk, rujukan halaman, tarikh, tempoh dan evidens PBD. RPT mempunyai 14 halaman. Kesemua PDF individu dan Word selepas penukaran muat satu halaman A4. Lima ujian integriti v60 dan semakan pengiraan PBD terpilih lulus.
 
 ### Semakan Unit 7 Tahun 6
 
