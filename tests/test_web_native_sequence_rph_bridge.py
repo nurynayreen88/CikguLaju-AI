@@ -74,6 +74,8 @@ class WebNativePdPBridgeTests(unittest.TestCase):
             _selection(5, "SCIENCE", year6["value"])
 
     def test_dlp_exact_ids_keep_year_and_subject(self):
+        self.assertEqual(_selection(5, "MATH_DLP", "08", "DLP-MATH-Y5-L61")[0], DLP_ROUTE)
+        self.assertEqual(_selection(5, "SCIENCE_DLP", "10", "DLP-SCI-Y5-R10")[0], DLP_ROUTE)
         self.assertEqual(_selection(6, "MATH_DLP", "01", "DLP-MATH-Y6-L01")[0], DLP_ROUTE)
         self.assertEqual(_selection(6, "SCIENCE_DLP", "13", "DLP-SCI-Y6-R09")[0], DLP_ROUTE)
         for unit, lesson in (("14", "DLP-SCI-Y6-L14"), ("01", "DLP-MATH-Y6-L01"),
@@ -90,8 +92,10 @@ class WebNativePdPBridgeTests(unittest.TestCase):
     def test_web_availability_uses_verified_dlp_service(self, *_):
         app = Flask(__name__)
         app.register_blueprint(create_blueprint())
-        for subject, lesson in (("MATH_DLP", "DLP-MATH-Y6-L01"), ("SCIENCE_DLP", "DLP-SCI-Y6-L01")):
-            selection = {"year": 6, "subject": subject, "unit": "01", "lesson": lesson}
+        for year, subject, prefix in ((5, "MATH_DLP", "MATH"), (5, "SCIENCE_DLP", "SCI"),
+                                      (6, "MATH_DLP", "MATH"), (6, "SCIENCE_DLP", "SCI")):
+            selection = {"year": year, "subject": subject, "unit": "01",
+                         "lesson": f"DLP-{prefix}-Y{year}-L01"}
             with patch("web.native_telegram_sequence_rph_client._read", return_value={"available": True}) as remote:
                 result = app.test_client().get("/api/web/rph/availability", query_string=selection)
                 self.assertEqual(result.status_code, 200)
