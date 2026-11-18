@@ -93,7 +93,7 @@ def install(app):
             'status.textContent="Log masuk Telegram belum diaktifkan pada pelayan web.";',
             'status.textContent="Log masuk Telegram belum tersedia. Akaun emel boleh digunakan melalui borang di atas.";')
         page = page.replace(
-            'status.textContent=error.name==="AbortError"?"Semakan log masuk mengambil masa terlalu lama. Sila muat semula halaman.":"Sambungan log masuk belum tersedia. Sila cuba kemudian."; ',
+            'status.textContent=error.name==="AbortError"?"Semakan Telegram mengambil masa terlalu lama. Akaun emel boleh digunakan melalui borang di atas.":"Sambungan Telegram belum tersedia. Akaun emel boleh digunakan melalui borang di atas."; ',
             'status.textContent=error.name==="AbortError"?"Semakan Telegram mengambil masa terlalu lama. Akaun emel boleh digunakan melalui borang di atas.":"Sambungan Telegram belum tersedia. Akaun emel boleh digunakan melalui borang di atas.";')
         page = page.replace(LOGIN_MARKER, LOGIN_HTML + LOGIN_MARKER, 1)
         script_tag = '<script src="/assets/email-auth.js" defer></script>'
