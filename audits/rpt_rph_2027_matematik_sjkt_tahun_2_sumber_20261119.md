@@ -50,4 +50,4 @@ Simulasi menu guru Web menghasilkan 96 Word dan 96 PDF. Ujian Telegram mengesahk
 
 ## Status
 
-**HOLD** untuk semakan guru SJKT bagi istilah, aktiviti dan padanan bahan. Pengaktifan pilihan guru dan ujian muat turun dengan akaun sebenar di produksi masih diperlukan.
+Pemilik meluluskan penerbitan tanpa menunggu semakan guru SJKT pada 19 November 2026. Pengaktifan pilihan guru dan ujian muat turun dengan akaun sebenar di produksi masih perlu disahkan.
