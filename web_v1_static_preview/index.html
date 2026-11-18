@@ -1067,6 +1067,20 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <div class="profile-actions"><button type="button" id="admin-payment-close">Tutup</button></div>
  </dialog>
 </section>
+<section class="teacher-timetable-section" aria-labelledby="web-feedback-admin-heading">
+ <h3 id="web-feedback-admin-heading">💬 Komen &amp; Cadangan Pengguna</h3>
+ <p class="notice">Komen daripada Web dan Telegram disatukan dalam rekod CikguLaju; hanya admin boleh melihat senarai ini.</p>
+ <label for="web-feedback-admin-filter">Paparkan komen</label>
+ <select id="web-feedback-admin-filter" aria-label="Tapis komen mengikut status">
+  <option value="semua">Semua status</option>
+  <option value="baru">Baharu</option>
+  <option value="dibaca">Dibaca</option>
+  <option value="selesai">Selesai</option>
+ </select>
+ <button id="web-feedback-admin-refresh" type="button" class="profile-refresh">🔄 Muat Semula Komen</button>
+ <div id="web-feedback-admin-list" aria-live="polite">Buka panel admin untuk melihat komen.</div>
+ <button id="web-feedback-admin-more" type="button" class="profile-refresh" hidden>Muat Komen Terdahulu</button>
+</section>
 <p class="notice">Statistik penggunaan dikira berdasarkan akaun berbeza yang log masuk ke Web.</p>
 <div class="admin-stats-grid" aria-label="Ringkasan penggunaan CikguLaju">
  <div class="admin-stats-card"><span>Pengguna berdaftar</span><strong id="web-admin-users">—</strong></div>
@@ -1116,20 +1130,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <button id="affiliate-admin-more" type="button" hidden>Lagi Tuntutan</button>
  </div>
 </section>
-<section class="teacher-timetable-section" aria-labelledby="web-feedback-admin-heading">
- <h3 id="web-feedback-admin-heading">💬 Komen &amp; Cadangan Pengguna</h3>
- <p class="notice">Komen daripada Web dan Telegram disatukan dalam rekod CikguLaju; hanya admin boleh melihat senarai ini.</p>
- <label for="web-feedback-admin-filter">Paparkan komen</label>
- <select id="web-feedback-admin-filter" aria-label="Tapis komen mengikut status">
-  <option value="semua">Semua status</option>
-  <option value="baru">Baharu</option>
-  <option value="dibaca">Dibaca</option>
-  <option value="selesai">Selesai</option>
- </select>
- <button id="web-feedback-admin-refresh" type="button" class="profile-refresh">🔄 Muat Semula Komen</button>
- <div id="web-feedback-admin-list" aria-live="polite">Buka panel admin untuk melihat komen.</div>
- <button id="web-feedback-admin-more" type="button" class="profile-refresh" hidden>Muat Komen Terdahulu</button>
-</section>
+
 </section>
 <section id="view-guide" class="app-view" aria-labelledby="view-guide-heading">
  <h2 id="view-guide-heading">Panduan Penggunaan</h2>
