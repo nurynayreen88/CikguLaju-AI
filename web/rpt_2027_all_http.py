@@ -17,7 +17,7 @@ from flask import Blueprint, jsonify, send_file, request
 from primary_language_subjects import PRIMARY_LANGUAGE_SUBJECTS
 from web.english_rpt_2027_http import _account, _has_paid_access, integrated_pdf_path
 from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
-from rpt_2027.sains import tahun6_documents as sains_sk_tahun6
+from rpt_2027.sains import sk_documents as sains_sk
 
 from rpt_2027.sjkc.bahasa_cina import documents as bahasa_cina_sjkc
 from rpt_2027.sjkc.bahasa_melayu import documents as bahasa_melayu_sjk
@@ -156,7 +156,7 @@ def pdf_path(subject,year,*,root=ROOT):
     """Exact intended path, including legacy path before its PDF is installed."""
     if type(year) is not int or subject not in SUBJECTS or year not in SUBJECTS[subject][1]:
         raise ValueError("Unsupported RPT selection")
-    staged=_sains_tahun6_file(subject, year, root) or _staged_file(subject,year,root=root)
+    staged=_approved_sk_science_file(subject, year, root) or _staged_file(subject,year,root=root)
     if staged is not None:
         return staged
     spec=SUBJECTS[subject]
@@ -166,16 +166,16 @@ def pdf_path(subject,year,*,root=ROOT):
 
 def pdf_ready(subject,year,*,root=ROOT):
     try:
-        return (_sains_tahun6_file(subject, year, root) is not None
+        return (_approved_sk_science_file(subject, year, root) is not None
                 or _staged_file(subject,year,root=root) is not None
                 or _legacy_file(subject,year,root=root) is not None)
     except ValueError:
         return False
 
 
-def _sains_tahun6_file(subject, year, root):
+def _approved_sk_science_file(subject, year, root):
     if subject == "sains":
-        return sains_sk_tahun6.document_path(year, root=Path(root) / "sains")
+        return sains_sk.document_path(year, root=Path(root) / "sains")
     return None
 
 def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
@@ -209,12 +209,12 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
                     "note": "Kumpulan A dan B. 160 rujukan SOW dalam 142 sesi hingga akhir Oktober.",
                 })
                 continue
-            approved = _sains_tahun6_file(code, year, root)
+            approved = _approved_sk_science_file(code, year, root)
             if approved is not None:
                 available += 1
                 entries.append({"year": year, "pdf_ready": True, "status": "TERSEDIA",
                                 "download_enabled": bool(allowed), "is_draft": False,
-                                "note": "Kumpulan A dan B. 89 PdP dalam 64 jam."})
+                                "note": f"Kumpulan A dan B. {sains_sk.PDP_COUNTS[year]} PdP dalam 64 jam."})
                 continue
             current=_staged_file(code,year,root=root)
             legacy=_legacy_file(code,year,root=root) if current is None else None
@@ -343,7 +343,7 @@ def create_all_rpt_blueprint(*,root=ROOT):
         account,error=_account()
         if error is not None:
             return error
-        approved_sains = _sains_tahun6_file(subject, year, root)
+        approved_sains = _approved_sk_science_file(subject, year, root)
         if subject in DLP_SUBJECTS or approved_sains is not None:
             path = approved_sains or document_path(subject, year, root=Path(root)/"dlp")
             if path is None:
