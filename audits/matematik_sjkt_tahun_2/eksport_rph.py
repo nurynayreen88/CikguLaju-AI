@@ -119,18 +119,21 @@ def _word(row, context, reflection, review):
 def _pdf(row, context, reflection, review):
     import pymupdf as fitz
 
-    with fitz.open(ROOT / (STEM + ".pdf")) as document, fitz.open() as output:
-        if len(document) != COUNT:
-            raise ValueError("Jumlah halaman PDF tidak sepadan.")
-        index = row["pdp"] - 1
-        text = document[index].get_text(sort=True)
-        marker = re.compile(rf"\bPdP\s+{row['pdp']:03}\b")
-        if not marker.search(text) or row["sp"] not in text:
-            raise ValueError("Halaman PDF tidak sepadan dengan PdP.")
-        output.insert_pdf(document, from_page=index, to_page=index)
-        if context or reflection or not review:
-            _personalize_pdf(output[0], context, reflection, review)
-        return output.tobytes(garbage=1, deflate=True, use_objstms=1)
+    try:
+        with fitz.open(ROOT / (STEM + ".pdf")) as document, fitz.open() as output:
+            if len(document) != COUNT:
+                raise ValueError("Jumlah halaman PDF tidak sepadan.")
+            index = row["pdp"] - 1
+            text = document[index].get_text(sort=True)
+            marker = re.compile(rf"\bPdP\s+{row['pdp']:03}\b")
+            if not marker.search(text) or row["sp"] not in text:
+                raise ValueError("Halaman PDF tidak sepadan dengan PdP.")
+            output.insert_pdf(document, from_page=index, to_page=index)
+            if context or reflection or not review:
+                _personalize_pdf(output[0], context, reflection, review)
+            return output.tobytes(garbage=1, deflate=True, use_objstms=1)
+    except fitz.FileDataError as exc:
+        raise ValueError("Fail sumber RPH PDF tidak dapat dibaca.") from exc
 
 
 def _personalize_pdf(page, context, reflection, review):

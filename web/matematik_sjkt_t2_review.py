@@ -4,7 +4,6 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 from zipfile import BadZipFile
 
-from pymupdf import FileDataError
 
 from audits.matematik_sjkt_tahun_2.eksport_rph import lessons, render, resolve
 
@@ -15,7 +14,7 @@ UNIT_NAMES = (
     "Masa dan waktu", "Ukuran dan sukatan", "Ruang", "Pengurusan data",
 )
 FORMATS = {"word": "docx", "pdf": "pdf"}
-RENDER_ERRORS = (OSError, ValueError, KeyError, BadZipFile, FileDataError)
+RENDER_ERRORS = (OSError, ValueError, KeyError, BadZipFile, ImportError)
 CALLBACK = "admin_sjkt2"
 BUTTON = {"text": "Semak RPH Matematik SJKT Tahun 2", "callback_data": CALLBACK}
 
@@ -39,7 +38,9 @@ def options(unit=None):
 
 
 def install(runtime):
-    previous = runtime.callback
+    previous = getattr(runtime, "callback", None)
+    if not callable(previous):
+        return False
 
     def callback(cid, data):
         if not isinstance(data, str) or (data != CALLBACK and not data.startswith(CALLBACK + ":")):
