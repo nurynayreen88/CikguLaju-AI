@@ -11,3 +11,7 @@
 
 - **MERGED PRODUKSI WEB.** [PR #946](https://github.com/nurynayreen88/CikguLaju-AI/pull/946) aktif pada Render `dep-dbuq78ajnfac73btrcq0` pada 21:11 MYT. Pemilih RPH SJKC dan kad RPH Pantas tidak lagi menawarkan butang RPT apabila RPH masih dalam penyediaan. Pilihan SJKT memaparkan status penyediaannya. Katalog RPT 2027 terus menggunakan laluan muat turun sedia ada.
 - Ujian pemilih Web dan jadual mengesahkan status RPH yang betul apabila RPT SJKC sudah tersedia. RPH SJKC dan SJKT masih dalam penyediaan. Ujian pelayar bagi pilihan SJKC dikemas kini supaya menegaskan laluan RPH dan RPT masing-masing.
+## 19 November 2026 — Matematik SJKC Tahun 3
+
+- **DALAM SEMAKAN.** Calon Web menyambungkan Sediakan RPH dan RPH Pantas kepada katalog Matematik SJKC Tahun 3 apabila penjana Telegram menyenaraikan sembilan unit. Fail RPT 2027 Word/PDF mempunyai 44 baris minggu A/B dan 96 PdP. [Calon asal #829](https://github.com/nurynayreen88/CikguLaju-AI/pull/829).
+- Ujian Web tempatan meliputi unit/PdP, jadual, akses dan kuota. Semakan 56 PDF asal turut lulus, termasuk pengisian muka depan bagi RPT Matematik SJKC Tahun 3. CI pelayar dan muat turun akaun guru produksi masih perlu disahkan. Tanda selesai PdP untuk subjek ini memerlukan sokongan rekod kurikulum SJKC.

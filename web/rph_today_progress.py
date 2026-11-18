@@ -111,7 +111,7 @@ def attach_progress(day, rows):
         scope = row["class_key"], row["subject_code"], row["component"]
         by_scope.setdefault(scope, {})[(row["pdp_date"], row["start_time"][:5])] = row["sequence_no"]
     for slot in day["entries"]:
-        if not slot["can_prepare"]:
+        if not slot["can_prepare"] or slot.get("curriculum") == "sjkc":
             continue
         slot_date = day["date"], slot["start"]
         recorded = {}

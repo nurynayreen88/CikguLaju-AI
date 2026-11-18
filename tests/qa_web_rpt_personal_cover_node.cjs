@@ -139,21 +139,23 @@ async function main(){
     }
   }
 
-  const mathsKey="matematik_sjkc:2";
-  const mathsRaw=fs.readFileSync(path.join(root,"..","sjkc","matematik","RPT_2027_Matematik_SJKC_Tahun_2.pdf"));
-  const mathsHash=crypto.createHash("sha256").update(mathsRaw).digest("hex");
-  const mathsLayout=validatedLayout(layout,mathsKey,mathsHash);
-  assert.throws(()=>validatedLayout(layout,mathsKey,"0".repeat(64)));
-  const mathsDoc=await PDF.PDFDocument.load(mathsRaw);
-  const mathsPages=mathsDoc.getPageCount();
-  const mathsResult=await fillOriginalCover(mathsDoc,{display_name:"Cikgu Tan",school_name:"SJK(C) Contoh"},
-    tinyPng,mathsLayout,{PDFLib:PDF,textPng:async()=>tinyPng});
-  assert.ok(mathsResult.hasLogo&&mathsResult.hasSchool&&mathsResult.hasTeacher);
-  const mathsOutput=await mathsDoc.save();
-  assert.strictEqual((await PDF.PDFDocument.load(mathsOutput)).getPageCount(),mathsPages);
-  if(write){
-    fs.writeFileSync(path.join(outputDir,"matematik-sjkc-2.pdf"),mathsOutput);
-    fs.writeFileSync(path.join(outputDir,"matematik-sjkc-2.source.pdf"),mathsRaw);
+  for(const year of [2,3]){
+    const mathsKey="matematik_sjkc:"+year;
+    const mathsRaw=fs.readFileSync(path.join(root,"..","sjkc","matematik","RPT_2027_Matematik_SJKC_Tahun_"+year+".pdf"));
+    const mathsHash=crypto.createHash("sha256").update(mathsRaw).digest("hex");
+    const mathsLayout=validatedLayout(layout,mathsKey,mathsHash);
+    assert.throws(()=>validatedLayout(layout,mathsKey,"0".repeat(64)));
+    const mathsDoc=await PDF.PDFDocument.load(mathsRaw);
+    const mathsPages=mathsDoc.getPageCount();
+    const mathsResult=await fillOriginalCover(mathsDoc,{display_name:"Cikgu Tan",school_name:"SJK(C) Contoh"},
+      tinyPng,mathsLayout,{PDFLib:PDF,textPng:async()=>tinyPng});
+    assert.ok(mathsResult.hasLogo&&mathsResult.hasSchool&&mathsResult.hasTeacher);
+    const mathsOutput=await mathsDoc.save();
+    assert.strictEqual((await PDF.PDFDocument.load(mathsOutput)).getPageCount(),mathsPages);
+    if(write){
+      fs.writeFileSync(path.join(outputDir,"matematik-sjkc-"+year+".pdf"),mathsOutput);
+      fs.writeFileSync(path.join(outputDir,"matematik-sjkc-"+year+".source.pdf"),mathsRaw);
+    }
   }
 
   // Unfilled private profile must not create invented names or add a page.

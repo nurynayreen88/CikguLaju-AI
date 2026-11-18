@@ -14,6 +14,7 @@ from zoneinfo import ZoneInfo
 from flask import Blueprint, jsonify, request
 from itsdangerous import BadSignature
 
+from web import native_telegram_sjkc_math_client as sjkc
 from web.primary_subject_choices import variants_by_name
 from web.rph_today_progress import (
     attach_progress, class_key, lesson_signer, read_progress, read_progress_summary, save_completion,
@@ -183,7 +184,7 @@ def english_week_capacity(rows, state, class_name, year, suggestion):
     return {"scheduled_minutes": scheduled, "required_minutes": required}
 
 
-def day_payload(profile, schedule, target, *, today=None):
+def day_payload(profile, schedule, target, *, today=None, sjkc_catalogue=None):
     """Pure computation. Never modifies the stored timetable."""
     if not isinstance(profile, dict) or not isinstance(schedule, dict):
         raise ProfileValidation("Maklumat jadual tidak sah")
@@ -199,6 +200,7 @@ def day_payload(profile, schedule, target, *, today=None):
     weekend = is_weekend(school_state, target)
     closure = school_closure(school_state, target)
     selected = []
+    sjkc_ready = None
     for row in rows:
         if not isinstance(row, dict) or row.get("day") != day:
             continue
@@ -215,6 +217,12 @@ def day_payload(profile, schedule, target, *, today=None):
         code, component = subject_identity(subject)
         subject_key = " ".join(subject.casefold().split())
         variant = variants_by_name().get(subject_key)
+        if (not closure and year == sjkc.YEAR and sjkc_catalogue is not None
+                and variant and variant["code"] == "matematik_sjkc"):
+            if sjkc_ready is None:
+                sjkc_ready = sjkc_catalogue(year)
+            if sjkc_ready:
+                code = sjkc.SUBJECT
         valid = bool(year and code)
         reason = ("" if valid else
                   "Tahun kelas belum jelas; semak nama kelas di Profil Guru."
@@ -226,7 +234,9 @@ def day_payload(profile, schedule, target, *, today=None):
                  "class_name":cls,"subject":subject,
                  "year":year,"subject_code":code,"component":component,
                  "can_prepare":can_prepare,"reason":closure or reason,"rpt_suggestion":suggestion}
-        if variant and year and not closure:
+        if code == sjkc.SUBJECT:
+            entry["curriculum"] = "sjkc"
+        elif variant and year and not closure:
             entry["reason"] = "RPH untuk subjek dan tahun ini dalam penyediaan."
             if variant["curriculum"] == "dlp" and year in variant.get("rpt_years", ()):
                 entry["rpt_subject"] = variant["code"]
@@ -270,7 +280,7 @@ def week_choices(today, group):
     return choices
 
 
-def week_payload(profile, schedule, target, *, today):
+def week_payload(profile, schedule, target, *, today, sjkc_catalogue=None):
     """Read the repeating timetable once and expand it in school-week order."""
     if not isinstance(profile, dict) or not isinstance(schedule, dict):
         raise ProfileValidation("Maklumat jadual tidak sah")
@@ -281,12 +291,15 @@ def week_payload(profile, schedule, target, *, today):
     start = school_week_start(target, group)
     dates = [start + timedelta(days=step) for step in range(7)]
     days = []
+    if sjkc_catalogue is not None:
+        sjkc_catalogue = lru_cache(maxsize=1)(sjkc_catalogue)
     for selected in dates:
         closure = school_closure(state, selected)
         day = {"date": selected.isoformat(), "day": WEEKDAY[selected.weekday()],
                "closure": closure, "entries": []}
         if not closure:
-            slots = day_payload(profile, schedule, selected, today=target)["entries"]
+            slots = day_payload(profile, schedule, selected, today=target,
+                                sjkc_catalogue=sjkc_catalogue)["entries"]
             day["entries"] = [slot for slot in slots
                               if " ".join(slot["subject"].casefold().split()) not in NON_TEACHING]
         days.append(day)
@@ -407,7 +420,7 @@ def hari_ini():
     try:
         profile = get_profile(config["supabase_url"],config["supabase_key"],uid)
         schedule = get_schedule(config["supabase_url"],config["supabase_key"],uid)
-        result = day_payload(profile,schedule,target,today=today)
+        result = day_payload(profile, schedule, target, today=today, sjkc_catalogue=sjkc.available)
     except ProfileValidation as exc:
         return jsonify({"error":str(exc)}),400
     except ProfileUnavailable:
@@ -450,7 +463,7 @@ def minggu_ini():
     try:
         profile = get_profile(config["supabase_url"], config["supabase_key"], uid)
         schedule = get_schedule(config["supabase_url"], config["supabase_key"], uid)
-        result = week_payload(profile, schedule, target, today=today)
+        result = week_payload(profile, schedule, target, today=today, sjkc_catalogue=sjkc.available)
     except ProfileValidation as exc:
         return jsonify({"error": str(exc)}), 400
     except ProfileUnavailable:

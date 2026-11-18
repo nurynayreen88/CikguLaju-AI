@@ -9,6 +9,8 @@ on:
       - web/special_activities_web.py
       - web_v1_telegram_auth_routes.py
       - tests/test_web_rph_download_credit_boundary_20261111.py
+      - tests/test_web_matematik_sjkc_rph.py
+      - web/native_telegram_sjkc_math_client.py
       - tests/test_web_rph_availability.py
       - tests/test_web_special_activities_20261106.py
       - .github/workflows/web-rph-credit-boundary-20261111.yml
@@ -20,6 +22,8 @@ on:
       - web/native_telegram_rph_client.py
       - web/special_activities_web.py
       - tests/test_web_rph_download_credit_boundary_20261111.py
+      - tests/test_web_matematik_sjkc_rph.py
+      - web/native_telegram_sjkc_math_client.py
       - .github/workflows/web-rph-credit-boundary-20261111.yml
   workflow_dispatch:
 permissions:
@@ -40,5 +44,6 @@ jobs:
       - name: Verify Web Word PDF render-then-charge and failure protections
         run: |
           python -m unittest discover -s tests -p 'test_web_rph_download_credit_boundary_20261111.py' -v
+          python -m unittest discover -s tests -p 'test_web_matematik_sjkc_rph.py' -v
           python -m unittest discover -s tests -p 'test_web_rph_availability.py' -v
           python -m unittest discover -s tests -p 'test_web_special_activities_20261106.py' -v

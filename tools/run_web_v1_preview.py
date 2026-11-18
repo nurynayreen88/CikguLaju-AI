@@ -126,6 +126,8 @@ def options():
             response.headers["Vary"] = "Cookie"
             return response
 
+    from web import native_telegram_sjkc_math_client as sjkc
+
     try:
         year = int(request.args.get("year", ""))
         if year not in range(1, 7):
@@ -136,6 +138,8 @@ def options():
             return jsonify({"error": "invalid option kind"}), 400
         if kind == "components":
             return jsonify(component_options(request.args.get("subject", "")))
+        if kind == "subjects" and request.args.get("curriculum") == "sjkc":
+            return jsonify([{"value": sjkc.SUBJECT, "label": sjkc.LABEL}] if sjkc.available(year) else [])
         dlp_subject = request.args.get("subject")
         if dlp_subject in ("MATH_DLP", "SCIENCE_DLP") and kind in ("units", "pdp"):
             from web.native_telegram_sequence_rph_client import (
@@ -149,6 +153,16 @@ def options():
             except (NativeRPHUnavailable, ValueError):
                 return jsonify({"error": f"Sumber DLP Year {year} belum tersedia."}), 503
             return jsonify(options)
+        if request.args.get("subject") == sjkc.SUBJECT and kind in ("units", "pdp"):
+            if year != sjkc.YEAR or request.args.get("component"):
+                return jsonify({"error": "Pilihan Matematik SJKC tidak sah"}), 400
+            unit = request.args.get("unit", "") if kind == "pdp" else None
+            try:
+                return jsonify(sjkc.options(year, unit))
+            except ValueError:
+                return jsonify({"error": "Pilihan unit Matematik SJKC tidak sah"}), 400
+            except sjkc.NativeRPHUnavailable:
+                return jsonify({"error": "Sumber PdP Matematik SJKC belum tersedia."}), 503
         # A versioned Web copy is opt-in and is never misrepresented as the
         # active Telegram database. Accounts/quota still use shared Supabase.
         catalog_mode = os.environ.get("CIKGULAJU_WEB_CATALOG_MODE", "telegram-api")
@@ -235,7 +249,7 @@ def options():
                                                       "label":draft_label})
                                 except (NativeRPHUnavailable,ValueError):
                                     pass  # Never show an unavailable Telegram source.
-                        return jsonify(items)
+                        return jsonify([row for row in items if row.get("value") != sjkc.SUBJECT])
                     subject = request.args.get("subject", "")
                     component = request.args.get("component")
                     if kind.startswith("bm-"):
