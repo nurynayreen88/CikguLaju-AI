@@ -9,5 +9,5 @@
 
 ## 18 November 2026 — Navigasi RPH SJKC dan SJKT di Web
 
-- **DALAM SEMAKAN.** Pemilih RPH SJKC dan kad RPH Pantas tidak lagi menawarkan butang RPT apabila RPH masih dalam penyediaan. Pilihan SJKT memaparkan status penyediaannya. Katalog RPT 2027 terus menggunakan laluan muat turun sedia ada.
-- Ujian pemilih Web dan jadual mengesahkan status RPH yang betul apabila RPT SJKC sudah tersedia. RPH SJKC dan SJKT kekal dalam penyediaan.
+- **MERGED PRODUKSI WEB.** [PR #946](https://github.com/nurynayreen88/CikguLaju-AI/pull/946) aktif pada Render `dep-dbuq78ajnfac73btrcq0` pada 21:11 MYT. Pemilih RPH SJKC dan kad RPH Pantas tidak lagi menawarkan butang RPT apabila RPH masih dalam penyediaan. Pilihan SJKT memaparkan status penyediaannya. Katalog RPT 2027 terus menggunakan laluan muat turun sedia ada.
+- Ujian pemilih Web dan jadual mengesahkan status RPH yang betul apabila RPT SJKC sudah tersedia. RPH SJKC dan SJKT masih dalam penyediaan. Ujian pelayar bagi pilihan SJKC dikemas kini supaya menegaskan laluan RPH dan RPT masing-masing.

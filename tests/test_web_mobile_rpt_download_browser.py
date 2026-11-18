@@ -48,7 +48,7 @@ class MobileRptDownloadTests(unittest.TestCase):
           };
         }""",{"allowed":allowed,"ready":ready})
 
-    def test_manual_rph_search_opens_matching_sjkc_rpt(self):
+    def test_sjkc_rph_stays_in_rph_and_rpt_uses_its_own_menu(self):
         page=self.browser.new_page(viewport={"width":360,"height":840},has_touch=True)
         try:
             page.goto(HTML,wait_until="domcontentloaded")
@@ -72,10 +72,20 @@ class MobileRptDownloadTests(unittest.TestCase):
             search.press("Enter")
             self.assertEqual(page.locator("#subject").input_value(),"matematik_sjkc")
             self.assertIn("dalam penyediaan",page.locator("#selection-help").inner_text())
-            page.locator("#rph-variant-rpt").click()
+            self.assertTrue(page.locator("#rph-variant-rpt").is_hidden())
+            self.assertTrue(page.locator("#view-rph").is_visible())
+            self.assertTrue(page.locator("#view-rpt").is_hidden())
+            page.locator("#curriculum").select_option("sjkt")
+            self.assertIn("RPH SJKT masih dalam penyediaan",page.locator("#selection-help").inner_text())
+            self.assertTrue(page.locator("#year").is_hidden())
+            self.assertTrue(page.locator("#view-rpt").is_hidden())
+            page.locator('[data-web-view="rpt"]').click()
             self.assertTrue(page.locator("#view-rpt").is_visible())
-            self.assertEqual(page.locator("#rpt-curriculum").input_value(),"sjkc")
-            self.assertEqual(page.locator("#rpt-year").input_value(),"2")
+            page.locator("#rpt-curriculum").select_option("sjkc")
+            page.locator("#rpt-year").select_option("2")
+            rpt_search=page.locator("#rpt-subject-input")
+            rpt_search.fill("matematik sjkc")
+            rpt_search.press("Enter")
             self.assertEqual(page.locator("#rpt-subject").input_value(),"matematik_sjkc")
         finally:
             page.close()
