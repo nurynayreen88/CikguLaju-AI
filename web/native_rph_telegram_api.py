@@ -397,6 +397,17 @@ def create_native_rph_blueprint(runtime):
         except (KeyError, OSError, ValueError):
             return jsonify({"error": "Paired English RPH source unavailable"}), 503
 
+    def aligned_dlp(year, subject):
+        if type(year) is not int or subject not in ("MATH_DLP", "SCIENCE_DLP"):
+            return None
+        if year == 5:
+            from staging.dlp.year5 import downloads
+            return downloads.MATHEMATICS if subject == "MATH_DLP" else downloads.SCIENCE
+        if year == 6:
+            from staging.dlp.year6 import render_mathematics, render_science
+            return render_mathematics if subject == "MATH_DLP" else render_science
+        return None
+
     def dlp_selection(selection):
         from dlp_year2_rph import resolve
 
@@ -405,40 +416,27 @@ def create_native_rph_blueprint(runtime):
         year, subject, unit, lesson = (selection[key] for key in ("year", "subject", "unit", "lesson"))
         if any(not isinstance(value, str) or len(value) > 40 for value in (subject, unit, lesson)):
             raise ValueError("Invalid DLP selection")
-        if type(year) is int and year == 6 and subject in ("MATH_DLP", "SCIENCE_DLP"):
-            if subject == "MATH_DLP":
-                from staging.dlp.year6.render_mathematics import resolve_download
-            else:
-                from staging.dlp.year6.render_science import resolve_download
-            try:
-                return resolve_download(unit, lesson)
-            except (OSError, ValueError) as exc:
-                raise RuntimeError("DLP curriculum source unavailable") from exc
-        return resolve(year, subject, unit, lesson)
+        renderer = aligned_dlp(year, subject)
+        if renderer is None:
+            return resolve(year, subject, unit, lesson)
+        try:
+            return renderer.resolve_download(unit, lesson)
+        except (OSError, ValueError) as exc:
+            raise RuntimeError("DLP curriculum source unavailable") from exc
 
-    @bp.get("/internal/rph/v1/dlp/year6-mathematics/catalogue")
-    def year6_dlp_catalogue():
+    @bp.get("/internal/rph/v1/dlp/year<int:year>-<subject_slug>/catalogue")
+    def aligned_dlp_catalogue(year, subject_slug):
         allowed, status = _authorized()
         if not allowed:
             return jsonify({"error": "Unauthorized renderer"}), status
         if request.args:
             return jsonify({"error": "Invalid DLP catalogue query"}), 400
-        from staging.dlp.year6.render_mathematics import download_catalogue
+        subject = {"mathematics": "MATH_DLP", "science": "SCIENCE_DLP"}.get(subject_slug)
+        renderer = aligned_dlp(year, subject)
+        if renderer is None:
+            return jsonify({"error": "DLP catalogue unavailable"}), 404
         try:
-            return jsonify({"year": 6, "subject": "MATH_DLP", "units": download_catalogue()})
-        except (OSError, ValueError):
-            return jsonify({"error": "DLP curriculum source unavailable"}), 503
-
-    @bp.get("/internal/rph/v1/dlp/year6-science/catalogue")
-    def year6_science_dlp_catalogue():
-        allowed, status = _authorized()
-        if not allowed:
-            return jsonify({"error": "Unauthorized renderer"}), status
-        if request.args:
-            return jsonify({"error": "Invalid DLP catalogue query"}), 400
-        from staging.dlp.year6.render_science import download_catalogue
-        try:
-            return jsonify({"year": 6, "subject": "SCIENCE_DLP", "units": download_catalogue()})
+            return jsonify({"year": year, "subject": subject, "units": renderer.download_catalogue()})
         except (OSError, ValueError):
             return jsonify({"error": "DLP curriculum source unavailable"}), 503
 
@@ -497,14 +495,12 @@ def create_native_rph_blueprint(runtime):
             return jsonify({"error": "DLP lesson unavailable"}), 404
         unit, lesson = plan
         try:
-            if body["selection"]["year"] == 6:
-                if body["selection"]["subject"] == "MATH_DLP":
-                    from staging.dlp.year6.render_mathematics import render_download
-                else:
-                    from staging.dlp.year6.render_science import render_download
-                document = render_download(lesson, fmt, teacher)
+            selection = body["selection"]
+            renderer = aligned_dlp(selection["year"], selection["subject"])
+            if renderer:
+                document = renderer.render_download(lesson, fmt, teacher)
             else:
-                document = render_dlp(body["selection"]["subject"], unit, lesson, fmt, teacher)
+                document = render_dlp(selection["subject"], unit, lesson, fmt, teacher)
             response = Response(document, mimetype=MIMES[fmt])
             response.headers["Content-Disposition"] = f'attachment; filename="{filename(lesson["id"], fmt)}"'
             return response
