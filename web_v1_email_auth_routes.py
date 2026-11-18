@@ -173,6 +173,12 @@ def _authenticated_response(auth, uid):
     account = _lookup(_config(), uid)
     if not account or account.get("telegram_user_id") != uid:
         raise RuntimeError("Account identity could not be verified")
+    try:
+        from web.web_referral_routes import capture_after_verified_login
+        capture_after_verified_login(uid)
+    except Exception as exc:
+        current_app.logger.warning("Web email referral capture unavailable: %s",
+                                   type(exc).__name__)
     ticket = issue_session_ticket(uid, auth["session_secret"])
     response = _reply({"authenticated": True})
     response.set_cookie(COOKIE, ticket, secure=True, httponly=True,
