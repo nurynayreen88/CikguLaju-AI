@@ -157,6 +157,8 @@ def pdf_path(subject,year,*,root=ROOT):
     """Exact intended path, including legacy path before its PDF is installed."""
     if type(year) is not int or subject not in SUBJECTS or year not in SUBJECTS[subject][1]:
         raise ValueError("Unsupported RPT selection")
+    if subject == "matematik" and year in matematik_sk.DIGESTS:
+        return Path(root) / "matematik" / (matematik_sk.FILE_TEMPLATE % year)
     staged=_approved_sk_science_file(subject, year, root) or _staged_file(subject,year,root=root)
     if staged is not None:
         return staged
@@ -167,6 +169,8 @@ def pdf_path(subject,year,*,root=ROOT):
 
 def pdf_ready(subject,year,*,root=ROOT):
     try:
+        if subject == "matematik" and year in matematik_sk.DIGESTS:
+            return matematik_sk.document_path(year, root=Path(root) / "matematik") is not None
         return (_approved_sk_science_file(subject, year, root) is not None
                 or _staged_file(subject,year,root=root) is not None
                 or _legacy_file(subject,year,root=root) is not None)
@@ -218,7 +222,7 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
                                 "note": f"Kumpulan A dan B. {sains_sk.PDP_COUNTS[year]} PdP dalam 64 jam."})
                 continue
             if code == "matematik" and year in matematik_sk.DIGESTS:
-                ready = matematik_sk.document_path(year, root=Path(root) / "matematik") is not None
+                ready = pdf_ready(code, year, root=root)
                 available += int(ready)
                 entries.append({"year": year, "pdf_ready": ready,
                                 "status": "TERSEDIA" if ready else "PDF BELUM DIPASANG",

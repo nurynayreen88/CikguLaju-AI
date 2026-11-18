@@ -11,6 +11,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from flask import Flask
+from rpt_2027.matematik import sk_documents as math_sk
 from web.rpt_2027_all_http import (
     SUBJECTS,expected_pairs,catalog_data,create_all_rpt_blueprint,pdf_path,pdf_ready
 )
@@ -36,6 +37,11 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
             "count":56,"files":files,
         }
         self._save()
+        math_root = self.root / "matematik"
+        math_root.mkdir()
+        for year in math_sk.DIGESTS:
+            original = math_sk.document_path(year)
+            (math_root / original.name).write_bytes(original.read_bytes())
         self.app=Flask(__name__)
         self.app.register_blueprint(create_all_rpt_blueprint(root=self.root))
         self.client=self.app.test_client()
@@ -233,7 +239,23 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
     def test_incomplete_manifest_not_misrepresented_as_56_ready(self):
         del self.manifest["files"]["english:3"]
         self._save()
-        self.assertEqual(catalog_data(root=self.root,allowed=True)["available_rpt"],0)
+        self.assertEqual(catalog_data(root=self.root,allowed=True)["available_rpt"],len(math_sk.DIGESTS))
+
+    @patch("web.rpt_2027_all_http._account", return_value=({"telegram_user_id": 42}, None))
+    def test_aligned_math_rpt_preserves_bytes_and_paid_cover_gate(self, _):
+        for year, digest in math_sk.DIGESTS.items():
+            path = math_sk.document_path(year, root=self.root / "matematik")
+            self.assertEqual(pdf_path("matematik", year, root=self.root), path)
+            url = f"/api/rpt/2027/all/matematik/{year}.pdf"
+            for paid in (False, True):
+                with patch("web.rpt_2027_all_http._has_paid_access", return_value=paid):
+                    with self.client.get(url) as response:
+                        self.assertEqual(response.data, path.read_bytes())
+                        self.assertEqual(response.headers["X-RPT-Source-SHA256"], digest)
+                        self.assertEqual(response.headers["X-RPT-Personalization-Allowed"], str(int(paid)))
+            path.write_bytes(self.pdf)
+            self.assertFalse(pdf_ready("matematik", year, root=self.root))
+            self.assertEqual(self.client.get(url).status_code, 503)
 
     def test_paid_user_downloads_exact_pdf_no_trial_credit_change(self):
         paid={"telegram_user_id":42,"authenticated":True,"rakan_pembangun":True}
