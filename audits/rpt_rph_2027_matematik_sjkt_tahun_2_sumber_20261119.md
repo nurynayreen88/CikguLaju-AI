@@ -1,22 +1,34 @@
 # Audit sumber Matematik SJKT Tahun 2
 
-19 November 2026
+19 November 2026 · Draf untuk semakan guru
 
-## Sumber untuk RPT dan RPH 2027
+## Dokumen rujukan
 
-| Sumber | Bukti | Status semakan |
-| --- | --- | --- |
-| DSKP KSSR Semakan 2017 Matematik Tahun 2 SJKT | [DSKP STEM Sekolah Rendah](https://sites.google.com/moe-dl.edu.my/dskpstemsr/home), [SJK(T) Changkat](https://sites.google.com/moe-dl.edu.my/sjktchangkat/kurikulum/warga-pendidik/bahan-tahun-2) | Edisi SJKT dikenal pasti. SK 1.1 dan SP 1.1.1–1.1.2 dapat dirujuk pada halaman DSKP 36. |
-| Buku Teks Jilid 1 dan 2 dan Buku Aktiviti | [Indeks Matematik Tahun 2 PPD Batu Pahat](https://sites.google.com/moe-dl.edu.my/ppd-batu-pahat-sains-matematik/buku-teks-digital-bidang-sains-matematik/buku-teks-sekolah-rendah/matematik-tahun-2) | Indeks menyenaraikan ketiga-tiga fail berlabel SJKT. Padanan semua halaman cetakan masih dalam semakan. |
-| Buku Teks Jilid 2 | [Perpustakaan Digital SJKT Karak](https://fliphtml5.com/odfmn/lhhy/MATEMATIK_TAHUN_2_SJKT_JILID_2/) | Edisi KPM 2017, ISBN 978-967-2046-06-6. SP 4.7.1 muncul pada halaman bercetak 51–52 dengan nota guru yang merujuk halaman 119–120 Buku Aktiviti. |
-| RPT 2026 Matematik SJKT Tahun 2 | Belum dikenal pasti | RPT umum KSSR dan DLP yang ditemukan belum disahkan sepadan dengan edisi SJKT. |
+| Sumber | Edisi dan halaman |
+| --- | --- |
+| [DSKP KSSR Semakan 2017 Matematik Tahun 2 SJKT](https://drive.google.com/file/d/1BBEdEtCC9iImzLSZuSl-GjCJbTgtqNBS/view) · [Indeks DSKP STEM BPK](https://sites.google.com/moe-dl.edu.my/dskpstemsr/home) | 37 SK dan 70 SP. Halaman bercetak 36–37, 40–41, 44–45, 48, 52, 56–57, 60 dan 64. |
+| [Buku Teks Jilid 1](https://drive.google.com/file/d/1RNzJ3Q_Cqgjr3jcUOJ_Xs-p8HfIg2Pcb/view) | KPM 2017, ET082002, ISBN 978-967-2046-05-9. Halaman bercetak 1–122, PDF 7–128. |
+| [Buku Teks Jilid 2](https://drive.google.com/file/d/1-YTDDtgBpNBvXMMMdhy1_ehzcuYGF1uC/view) | KPM 2017, ET082003, ISBN 978-967-2046-06-6. Halaman bercetak 1–100, PDF 5–104. |
+| [Buku Aktiviti](https://drive.google.com/file/d/1M3jB5nU_mg4vzQ7qmXSo-gCnZq8IGwi7/view) · [Indeks buku PPD Batu Pahat](https://sites.google.com/moe-dl.edu.my/ppd-batu-pahat-sains-matematik/buku-teks-digital-bidang-sains-matematik/buku-teks-sekolah-rendah/matematik-tahun-2) | KPM 2017, EA082001, ISBN 978-967-2046-07-3. Halaman bercetak 1–156, PDF 6–161. |
+| [RPT Matematik Tahun 2 SJKT Ladang Sungai Raya](https://drive.google.com/file/d/1TSS1I75kwwCVNavb-Ch5VCABLDkLBn5Z/view) · [Panitia Matematik](https://sites.google.com/moe-dl.edu.my/kbd6019-sjktlsr/kurikulum/panitia/matematik/20242025/dskp) | Tahun 2024/2025, edisi Tamil, digunakan sebagai rujukan urutan unit dan format. Contoh RPT 2026 bagi edisi SJKT belum dapat disahkan. |
+| [Surat Siaran KPM Bil. 1 Tahun 2027, Kalendar Akademik](https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik) | Asas tarikh Kumpulan A dan B 2027. Semak cuti mengikut negeri ketika memperuntukkan slot. |
 
-## Padanan awal
+## Pemetaan kurikulum dan halaman
 
-| SK | SP | Fokus PdP | Buku Teks SJKT | Buku Aktiviti SJKT |
-| --- | --- | --- | --- | --- |
-| 1.1 | 1.1.1 | Membaca, menyebut dan memadankan nombor hingga 1 000. | Jilid 1, halaman dalam semakan. | Halaman dalam semakan. |
-| 1.1 | 1.1.2 | Menunjukkan kuantiti, memadankan objek dengan nombor, membandingkan dan menyusun nombor hingga 1 000. | Jilid 1, halaman dalam semakan. | Halaman dalam semakan. |
-| 4.7 | 4.7.1 | Menyelesaikan masalah harian yang melibatkan wang. | Jilid 2, halaman 51–52. | Halaman 119–120 dirujuk dalam nota guru. Item sebenar masih dalam semakan. |
+- [Pemetaan penuh](matematik_sjkt_tahun_2/pemetaan_sp.tsv) merangkumi satu rekod bagi setiap SP dengan SK, halaman DSKP, jilid dan halaman bercetak BT dan BA. Fokus Tamil dan Melayu ialah rumusan pengajaran. Nota menerangkan rujukan konteks dan aktiviti guru jika perlu.
+- RPT SJKT 2024/2025 yang disemak menyenaraikan 5.2.1 dua kali. Draf 2027 memasukkan SP 5.3.1 penyelesaian masalah masa dengan BT Jilid 2 halaman 62–63 dan BA halaman 126–128.
+- BT Jilid 2 halaman 74 mencetak 6..2.2 pada kaki halaman. Kod DSKP 6.2.2 dipadankan dengan aktiviti menimbang dan merekod jisim dalam BA 134–135. Bagi 7.2.2, BT Jilid 2 halaman 93 menerangkan bentuk 2D dan BA halaman 148 mengandungi tugas melukis.
+- Bagi tambah dengan pengumpulan semula, BT Jilid 1 halaman 37 memaparkan rujukan BA 36. Aktiviti penambahan untuk SP 2.1.1 tersedia pada BA 28–29. Pengenalan wang bagi SP 4.1.1 bermula pada BA 102. BA 101 meliputi penyelesaian masalah pecahan dan perpuluhan.
+- Halaman pertama sebenar bagi unit 3–8 dalam BA masing-masing 89, 102, 121, 129, 144 dan 151. Pemetaan menggunakan nombor bercetak pada halaman latihan.
 
-Rujukan halaman DSKP ialah [salinan Matematik Tahun 2 SJKT, halaman bercetak 36](https://www.slideshare.net/slideshow/44-dskp-kssr-semakan-2017-matematik-tahun-2-sjktpdf/258281583). RPT 2027 dan RPH akan menggunakan data PdP dan padanan buku yang sama. Bahan kekal dalam penyediaan sementara sumber buku mengikut halaman dan agihan PdP ditentusahkan.
+## Agihan pengajaran 2027
+
+[Data RPT](matematik_sjkt_tahun_2/rpt_2027.json) mempunyai 44 baris minggu Kumpulan A/B dan 96 PdP 60 minit. Daripada 96 PdP, 70 ialah teras dan 26 pengukuhan. Agihan unit ialah 16, 22, 15, 12, 7, 12, 8 dan 4 PdP. Semua 70 SP dipadankan dengan kod DSKP, setiap halaman diuji dalam julat unit edisi SJKT dan kapasiti hari pengajaran disemak merentas 16 negeri atau wilayah.
+
+Slot M07, M12 dan M13 ditambah daripada dua kepada tiga berbanding jadual asas bersama. M18 dikhaskan untuk pentaksiran atau pengukuhan mengikut sekolah. Draf tamat pada M38 iaitu 17–21 Oktober Kumpulan A dan 18–22 Oktober Kumpulan B. Guru menetapkan hari sebenar berpandukan jadual waktu sekolah.
+
+Draf RPT boleh disemak dalam [Word](matematik_sjkt_tahun_2/RPT_2027_Matematik_SJKT_Tahun_2.docx) dan [PDF](matematik_sjkt_tahun_2/RPT_2027_Matematik_SJKT_Tahun_2.pdf). Kedua-dua format sepadan bagi kesemua 96 nombor PdP, SK dan SP. PDF dieksport sebagai tujuh halaman A4 landskap.
+
+## Status
+
+**HOLD** untuk semakan guru dan penyediaan RPH. Jadual dan pemetaan ini menjadi asas bersama bagi rancangan harian. Set penuh RPH, ujian dokumen satu halaman A4 setiap PdP dan ujian Web/Telegram belum disahkan.
