@@ -36,7 +36,7 @@
  const TAGS=["component","theme","unit","topic","lesson"];
  const SOURCE_NAMES={
   BM:"Unit",ENGLISH:"Unit / Topic",PI:"Bidang / Tajuk",
-  MATH:"Bidang / Unit",SCIENCE:"Tema / Unit",MORAL:"Unit / Nilai",
+  MATH:"Bidang / Unit",MATH_SJKC:"Unit",SCIENCE:"Tema / Unit",MORAL:"Unit / Nilai",
   PSV:"Bidang / Unit",PJPK:"Unit / Tajuk",ARAB:"Unit",
   MUZIK:"Unit / Tajuk",SEJARAH:"Unit",RBT:"Unit"
  };
@@ -468,7 +468,8 @@
  async function initialize(c){
   c.busy=true;updateAll();
   try{
-   const items=await sourceOptions(c.slot.year,"subjects");
+   const extra=c.slot.curriculum==="sjkc"?{curriculum:"sjkc"}:{};
+   const items=await sourceOptions(c.slot.year,"subjects",extra);
    if(c.ticket!==requestId)return;
    if(!items.some(x=>x.value===c.slot.subject_code)){
     c.message.textContent="Subjek jadual belum tersedia dalam katalog sumber untuk Tahun "+c.slot.year+".";

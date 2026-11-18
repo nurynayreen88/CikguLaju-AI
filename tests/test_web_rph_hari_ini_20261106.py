@@ -400,6 +400,13 @@ class DailyTimetablePureTests(TestCase):
         self.assertIn("dalam penyediaan", iban["reason"])
         week = week_payload(profile, schedule, target, today=target)
         self.assertEqual(week["days"][0]["entries"], day["entries"])
+        ready = day_payload(profile, schedule, target, today=target,
+                            sjkc_catalogue=lambda year: year == 3)["entries"]
+        self.assertEqual(ready[2], sjkc)
+        self.assertTrue(ready[3]["can_prepare"])
+        self.assertEqual(ready[3]["subject_code"], "MATH_SJKC")
+        self.assertEqual(ready[3]["curriculum"], "sjkc")
+        self.assertNotIn("rpt_subject", ready[3])
 
 
 class DailyTimetableRouteTests(TestCase):

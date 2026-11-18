@@ -278,7 +278,7 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
                 "download_enabled": ready,
                 "docx_ready": word_ready,
                 "docx_url": f"/api/rpt/2027/sjkc/{slug}/{year}.docx" if word_ready else None,
-                "note": "Tarikh cadangan W.P. Kuala Lumpur, Kumpulan B.",
+                "note": "Tarikh Kumpulan A dan B dalam satu RPT.",
                 "is_draft": False,
             })
         if entries:

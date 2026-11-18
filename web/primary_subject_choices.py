@@ -32,6 +32,7 @@ def variants_by_name():
     for alias, label in (
         ("sains (dlp)", "science (dlp)"),
         ("matematik (dlp)", "mathematics (dlp)"),
+        ("matematik sjkc", "matematik (sjkc)"),
         ("bahasa melayu (sjkc)", "bahasa melayu (sjk)"),
     ):
         rows[alias] = rows[label]

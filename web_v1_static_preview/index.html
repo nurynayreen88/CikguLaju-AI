@@ -1420,7 +1420,7 @@ function currentRphLessonKey(){
                         subject.value==="PJPK"?component.value:""]);
 }
 function currentRphParams(){
- if((curriculum.value!=="kssr"&&!dlpRphDownload())||!/^[1-6]$/.test(year.value)||!subject.value||!unit.value||!lesson.value)return null;
+ if(!canSelectRph()||!/^[1-6]$/.test(year.value)||!subject.value||!unit.value||!lesson.value)return null;
  if(subject.value==="BM"&&(!theme.value||!topic.value))return null;
  if(!teacherClass.checkValidity()||!teacherDate.checkValidity()||
     !teacherTimeStart.checkValidity()||!teacherTimeEnd.checkValidity()||
@@ -1446,7 +1446,7 @@ function resetRphPreview(){
   teacherReflection.value="";
   teacherReflection.closest("details").open=false;
  }
- document.getElementById("teacher-info").hidden=(curriculum.value!=="kssr"&&!dlpRphDownload())||!lesson.value;
+ document.getElementById("teacher-info").hidden=!canSelectRph()||!lesson.value;
  const actions=document.getElementById("rph-download-actions");
  const available=canGenerateRph()&&!!currentRphParams()&&verifiedRphKey===currentRphLessonKey();
  actions.hidden=!available;
@@ -1468,6 +1468,10 @@ const dlpReviewData=JSON.parse(document.getElementById("dlp-review-data").textCo
 const dlpReviewHeading=document.getElementById("dlp-rph-heading");
 const dlpReviewContent=document.getElementById("dlp-rph-content");
 const subjectVariants=window.cikgulajuSubjectVariants||[];
+function canSelectRph(){
+ return curriculum.value==="kssr"||dlpRphDownload()||
+  (curriculum.value==="sjkc"&&year.value==="3"&&subject.value==="MATH_SJKC");
+}
 function dlpRphDownload(){
  return curriculum.value==="dlp"&&["5","6"].includes(year.value)&&["MATH_DLP","SCIENCE_DLP"].includes(subject.value);
 }
@@ -1566,7 +1570,7 @@ function resetSelect(el,label){
 function subjectNavLabel(code){
  return ({
   BM:"Unit",ENGLISH:"Unit / Topic",PI:"Bidang / Tajuk",
-  MATH:"Bidang / Unit",SCIENCE:"Tema / Unit",
+  MATH:"Bidang / Unit",MATH_SJKC:"Unit",SCIENCE:"Tema / Unit",
   MORAL:"Unit / Nilai",PSV:"Bidang / Unit",PJPK:"Unit / Tajuk",
   ARAB:"Unit",MUZIK:"Unit / Tajuk",SEJARAH:"Unit",RBT:"Unit"
  })[code]||"Unit / Tajuk";
@@ -1684,13 +1688,13 @@ window.prepareRphFromToday=async function(slot,dateIso,inlineHost=null){
    for(const {node} of inlineRphAnchors)inlineHost.appendChild(node);
   }else showWebView("rph");
   const selectionEpoch=++todaySelectionEpoch;
-  curriculum.value="kssr";
+  curriculum.value=slot.curriculum==="sjkc"?"sjkc":"kssr";
   selectCurriculum();
   year.value=String(slot.year);
   showStep(subject,true);
   const expectedYear=year.value;
   const expectedRevision=subjectLoadRevision;
-  const subjects=await loadOptions("subjects");
+  const subjects=await loadOptions("subjects",slot.curriculum==="sjkc"?{curriculum:"sjkc"}:{});
   if(selectionEpoch!==todaySelectionEpoch)return false;
   if(expectedRevision!==subjectLoadRevision)throw Error("Pilihan ditukar semasa bacaan jadual.");
   fillSelect(subject,subjects,"Pilih Subjek");
@@ -1745,8 +1749,17 @@ year.addEventListener("change",async()=>{
   return;
  }
  if(choice==="sjkc"){
+  let mathReady=false;
+  if(targetYear==="3"){
+   try{
+    const items=await loadOptions("subjects",{curriculum:"sjkc"});
+    mathReady=items.some(item=>item.value==="MATH_SJKC");
+   }catch(_error){}
+   if(revision!==subjectLoadRevision)return;
+  }
   fillSelect(subject,sjkcSubjectOptions.map(item=>({
-   value:item.value,label:item.label+" — RPH Dalam Penyediaan"
+   value:mathReady&&item.value==="matematik_sjkc"?"MATH_SJKC":item.value,
+   label:mathReady&&item.value==="matematik_sjkc"?item.label:item.label+" — RPH Dalam Penyediaan"
   })),"Pilih Subjek");
   showStep(subject,true);
   updateSelectionHelp("Pilih subjek SJKC.");
@@ -1773,7 +1786,7 @@ subject.addEventListener("change",async()=>{
  rphSubjectPicker.sync();
  catalogStatus.textContent="";
  if(!code)return;
- if(curriculum.value==="sjkc"){
+ if(curriculum.value==="sjkc"&&!canSelectRph()){
   const variant=sjkcSubjectOptions.find(item=>item.value===code);
   if(!variant)return;
   updateSelectionHelp("RPH "+variant.label+" Tahun "+targetYear+" dalam penyediaan.");
@@ -1803,7 +1816,7 @@ subject.addEventListener("change",async()=>{
   }
   return;
  }
- if(curriculum.value!=="kssr")return;
+ if(!canSelectRph())return;
  const planned=plannedKssrLanguages.find(item=>"planned:"+item.value===code);
  if(planned){
   catalogStatus.textContent=planned.label+" Tahun "+targetYear+" — Dalam Penyediaan.";
@@ -2481,7 +2494,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
-<script src="/assets/rph-today.js?v=pilihan-subjek-20261117"></script>
+<script src="/assets/rph-today.js?v=sjkc-tahun3-20261119"></script>
 <script src="/assets/teacher-profile.js?v=pilihan-subjek-20261117"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>

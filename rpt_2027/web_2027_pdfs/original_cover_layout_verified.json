@@ -951,5 +951,49 @@
         "matematik:6": "1eda26ae8a13fda98535ce95e62e0f94ebfe7924106127df3581c21a55720847"
       }
     }
+  },
+  "sjkc_matematik_year3": {
+    "version": 1,
+    "status": "SJKC_MATEMATIK_PDF_COVER",
+    "page_width": 841.89,
+    "page_height": 595.3,
+    "tolerance_pt": 0.25,
+    "identity_background_rgb": [
+      1,
+      1,
+      1
+    ],
+    "logo_background_rgb": [
+      1,
+      1,
+      1
+    ],
+    "logo_interior_top_left": [
+      665,
+      54,
+      795,
+      159
+    ],
+    "logo_image_safe_top_left": [
+      671,
+      60,
+      789,
+      153
+    ],
+    "school_row_top_left": [
+      114,
+      181,
+      250,
+      198
+    ],
+    "teacher_row_top_left": [
+      317,
+      181,
+      453,
+      198
+    ],
+    "source_sha256_by_subject_year": {
+      "matematik_sjkc:3": "c51aec85dfa0aa7f57b72128152b51c14e189cdb4c276d7fe28d271009ca9e7b"
+    }
   }
 }

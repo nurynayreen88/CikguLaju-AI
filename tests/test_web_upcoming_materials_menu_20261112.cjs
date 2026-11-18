@@ -129,15 +129,24 @@ const ctx={
  setSubjectNavigationLabels(){},
  resetMaterials(){},resetRphPreview(){},showRphAction(){},displayBookReference(){},
  updateSelectionHelp(text){ctx.help=text;},
- async loadOptions(kind){catalogueCalls.push(kind);return [{value:"MATH",label:"Matematik"}];},
+ async loadOptions(kind,extra={}){
+  catalogueCalls.push(kind);
+  if(extra.curriculum==="sjkc")return ctx.sjkcReady?[{value:"MATH_SJKC",label:"Matematik SJKC"}]:[];
+  return [{value:"MATH",label:"Matematik"}];
+ },
  showStep(el,visible){el.hidden=!visible;}, subjectNavLabel(){return "Unit";},
  async fillForSelection(el,kind,extra){
   catalogueCalls.push(kind,extra.subject);
   if(extra.subject==="MATH_DLP")ctx.fillSelect(el,[{value:"01",label:"Unit 1 Whole Numbers and Operations"}],"Pilih Unit");
   if(extra.subject==="SCIENCE_DLP")ctx.fillSelect(el,[{value:"01",label:"Unit 1 Scientific Skills"}],"Pilih Unit");
+  if(extra.subject==="MATH_SJKC")ctx.fillSelect(el,[{value:"2",label:"Unit 2 · 基本运算"}],"Pilih Unit");
  },
  async loadFinalLesson(kind,extra){
   catalogueCalls.push(kind,extra.subject,extra.unit);
+  if(extra.subject==="MATH_SJKC"){
+   ctx.fillSelect(lesson,[{value:"17",label:"PdP 017 · 无进退位的加减混合运算"}],"Pilih PdP");
+   return;
+  }
   const science=extra.subject==="SCIENCE_DLP";
   ctx.fillSelect(lesson,[{value:`DLP-${science?"SCI":"MATH"}-Y${year.value}-L01`,
     label:science?"Lesson 01 • Observe":"Lesson 01 • Whole Numbers"}],"Pilih Lesson");
@@ -174,6 +183,19 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
   assert.equal(lesson.hidden,true);
   assert.match(ctx.help,/dalam penyediaan/i);
  }
+ assert.deepEqual(catalogueCalls.splice(0),["subjects"]);
+ ctx.sjkcReady=true;
+ await listeners["year.change"]();
+ assert.equal(subject.options[1].value,"MATH_SJKC");
+ assert.equal(subject.options[1].label,"Matematik (SJKC)");
+ subject.value="MATH_SJKC";
+ await listeners["subject.change"]();
+ assert.deepEqual(unit.options.map(x=>x.value),["","2"]);
+ assert.equal(variantRpt.hidden,true);
+ unit.value="2";
+ await listeners["unit.change"]();
+ assert.deepEqual(lesson.options.map(x=>x.value),["","17"]);
+ assert.deepEqual(catalogueCalls.splice(0),["subjects","units","MATH_SJKC","pdp","MATH_SJKC","2"]);
  curriculum.value="sjkt";
  listeners["curriculum.change"]();
  assert.equal(year.hidden,true);
