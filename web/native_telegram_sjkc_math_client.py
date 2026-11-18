@@ -1,8 +1,9 @@
-"""Proxy Matematik SJKC Tahun 3 selections to the shared Telegram source."""
+"""Proxy school Mathematics selections to the shared Telegram source."""
 
 from io import BytesIO
 import json
 import re
+from typing import NamedTuple
 from urllib.error import URLError
 from urllib.parse import urlencode
 from urllib.request import Request, HTTPSHandler, build_opener
@@ -18,26 +19,37 @@ SOURCE = "telegram-native-math-sjkc"
 PREFIX = "/internal/rph/v1/matematik-sjkc/"
 
 
+class SchoolMath(NamedTuple):
+    label: str
+    year: int
+    unit_count: int
+    source: str
+    prefix: str
+
+
+SJKC = SchoolMath(LABEL, YEAR, 9, SOURCE, PREFIX)
+
+
 def _number(value, limit):
     if not isinstance(value, str) or not re.fullmatch(r"[1-9][0-9]?", value) or int(value) > limit:
-        raise ValueError("Invalid Matematik SJKC selection")
+        raise ValueError("Invalid school Mathematics selection")
     return int(value)
 
 
-def _selection(year, unit=None, pdp=None):
-    if type(year) is not int or year != YEAR:
-        raise ValueError("Wrong Matematik SJKC year")
+def _selection(year, unit=None, pdp=None, *, school=SJKC):
+    if type(year) is not int or year != school.year:
+        raise ValueError(f"Wrong {school.label} year")
     selection = {"year": year}
     if unit is not None:
-        selection["unit"] = _number(unit, 9)
+        selection["unit"] = _number(unit, school.unit_count)
     if pdp is not None:
         selection["pdp"] = _number(pdp, 96)
     return selection
 
 
-def _request(endpoint, *, params=None, payload=None, mime="application/json", limit=32000, opener=None):
+def _request(endpoint, *, params=None, payload=None, mime="application/json", limit=32000, opener=None, school=SJKC):
     base, token = _backend()
-    url = base + PREFIX + endpoint
+    url = base + school.prefix + endpoint
     if params is not None:
         url += "?" + urlencode(params)
     body = json.dumps(payload, ensure_ascii=False).encode("utf-8") if payload is not None else None
@@ -48,25 +60,25 @@ def _request(endpoint, *, params=None, payload=None, mime="application/json", li
     try:
         with transport.open(Request(url, data=body, headers=headers), timeout=15) as response:
             if response.status != 200 or response.headers.get_content_type() != mime:
-                raise NativeRPHUnavailable("Matematik SJKC response unavailable")
+                raise NativeRPHUnavailable(f"{school.label} response unavailable")
             result = response.read(limit + 1)
     except (URLError, OSError):
-        raise NativeRPHUnavailable("Matematik SJKC source unavailable") from None
+        raise NativeRPHUnavailable(f"{school.label} source unavailable") from None
     if len(result) > limit:
-        raise NativeRPHUnavailable("Oversized Matematik SJKC response")
+        raise NativeRPHUnavailable(f"Oversized {school.label} response")
     return result
 
 
-def _query(selection, *, opener):
+def _query(selection, *, opener, school):
     try:
-        return json.loads(_request("options", params=selection, opener=opener))
+        return json.loads(_request("options", params=selection, opener=opener, school=school))
     except (UnicodeError, ValueError):
-        raise NativeRPHUnavailable("Invalid Matematik SJKC response") from None
+        raise NativeRPHUnavailable(f"Invalid {school.label} response") from None
 
 
-def options(year, unit=None, *, opener=None):
-    items = _query(_selection(year, unit), opener=opener)
-    limit = 9 if unit is None else 96
+def options(year, unit=None, *, opener=None, school=SJKC):
+    items = _query(_selection(year, unit, school=school), opener=opener, school=school)
+    limit = school.unit_count if unit is None else 96
     try:
         if not isinstance(items, list) or not 1 <= len(items) <= limit:
             raise ValueError("Invalid options")
@@ -80,7 +92,7 @@ def options(year, unit=None, *, opener=None):
                 or (unit is not None and any(item.get("lesson_no") != n for item, n in zip(items, numbers)))):
             raise ValueError("Invalid options")
     except (KeyError, TypeError, ValueError):
-        raise NativeRPHUnavailable("Invalid Matematik SJKC options") from None
+        raise NativeRPHUnavailable(f"Invalid {school.label} options") from None
     return items
 
 
@@ -93,21 +105,21 @@ def available(year):
         return False
 
 
-def verify(year, unit, pdp, *, opener=None):
-    selection = _selection(year, unit, pdp)
-    if _query(selection, opener=opener) != {"available": True}:
-        raise NativeRPHUnavailable("Matematik SJKC PdP unavailable")
+def verify(year, unit, pdp, *, opener=None, school=SJKC):
+    selection = _selection(year, unit, pdp, school=school)
+    if _query(selection, opener=opener, school=school) != {"available": True}:
+        raise NativeRPHUnavailable(f"{school.label} PdP unavailable")
     return selection["pdp"]
 
 
-def request_document(selected, fmt, *, opener=None):
-    if selected.get("source") != SOURCE or fmt not in MIMES:
-        raise ValueError("Invalid Matematik SJKC render")
-    selection = _selection(selected["year"], selected["unit"], str(selected["lesson"]))
+def request_document(selected, fmt, *, opener=None, school=SJKC):
+    if selected.get("source") != school.source or fmt not in MIMES:
+        raise ValueError(f"Invalid {school.label} render")
+    selection = _selection(selected["year"], selected["unit"], str(selected["lesson"]), school=school)
     payload = dict(selection, teacher=selected["teacher"], format=fmt)
-    content = _request("render", payload=payload, mime=MIMES[fmt], limit=MAX_DOCUMENT, opener=opener)
+    content = _request("render", payload=payload, mime=MIMES[fmt], limit=MAX_DOCUMENT, opener=opener, school=school)
     if fmt == "word":
         validate_word_document(content)
     elif len(content) < 1000 or not content.startswith(b"%PDF-") or not content.rstrip().endswith(b"%%EOF"):
-        raise NativeRPHUnavailable("Invalid Matematik SJKC PDF")
+        raise NativeRPHUnavailable(f"Invalid {school.label} PDF")
     return BytesIO(content)

@@ -127,6 +127,7 @@ def options():
             return response
 
     from web import native_telegram_sjkc_math_client as sjkc
+    from web import native_telegram_sjkt_math_client as sjkt
 
     try:
         year = int(request.args.get("year", ""))
@@ -138,8 +139,9 @@ def options():
             return jsonify({"error": "invalid option kind"}), 400
         if kind == "components":
             return jsonify(component_options(request.args.get("subject", "")))
-        if kind == "subjects" and request.args.get("curriculum") == "sjkc":
-            return jsonify([{"value": sjkc.SUBJECT, "label": sjkc.LABEL}] if sjkc.available(year) else [])
+        school = {"sjkc": sjkc, "sjkt": sjkt}.get(request.args.get("curriculum"))
+        if kind == "subjects" and school is not None:
+            return jsonify([{"value": school.SUBJECT, "label": school.LABEL}] if school.available(year) else [])
         dlp_subject = request.args.get("subject")
         if dlp_subject in ("MATH_DLP", "SCIENCE_DLP") and kind in ("units", "pdp"):
             from web.native_telegram_sequence_rph_client import (
@@ -153,16 +155,17 @@ def options():
             except (NativeRPHUnavailable, ValueError):
                 return jsonify({"error": f"Sumber DLP Year {year} belum tersedia."}), 503
             return jsonify(options)
-        if request.args.get("subject") == sjkc.SUBJECT and kind in ("units", "pdp"):
-            if year != sjkc.YEAR or request.args.get("component"):
-                return jsonify({"error": "Pilihan Matematik SJKC tidak sah"}), 400
+        school = {sjkc.SUBJECT: sjkc, sjkt.SUBJECT: sjkt}.get(request.args.get("subject"))
+        if school is not None and kind in ("units", "pdp"):
+            if year != school.YEAR or request.args.get("component"):
+                return jsonify({"error": f"Pilihan {school.LABEL} tidak sah"}), 400
             unit = request.args.get("unit", "") if kind == "pdp" else None
             try:
-                return jsonify(sjkc.options(year, unit))
+                return jsonify(school.options(year, unit))
             except ValueError:
-                return jsonify({"error": "Pilihan unit Matematik SJKC tidak sah"}), 400
-            except sjkc.NativeRPHUnavailable:
-                return jsonify({"error": "Sumber PdP Matematik SJKC belum tersedia."}), 503
+                return jsonify({"error": f"Pilihan unit {school.LABEL} tidak sah"}), 400
+            except school.NativeRPHUnavailable:
+                return jsonify({"error": f"Sumber PdP {school.LABEL} belum tersedia."}), 503
         # A versioned Web copy is opt-in and is never misrepresented as the
         # active Telegram database. Accounts/quota still use shared Supabase.
         catalog_mode = os.environ.get("CIKGULAJU_WEB_CATALOG_MODE", "telegram-api")
@@ -249,7 +252,7 @@ def options():
                                                       "label":draft_label})
                                 except (NativeRPHUnavailable,ValueError):
                                     pass  # Never show an unavailable Telegram source.
-                        return jsonify([row for row in items if row.get("value") != sjkc.SUBJECT])
+                        return jsonify([row for row in items if row.get("value") not in {sjkc.SUBJECT, sjkt.SUBJECT}])
                     subject = request.args.get("subject", "")
                     component = request.args.get("component")
                     if kind.startswith("bm-"):

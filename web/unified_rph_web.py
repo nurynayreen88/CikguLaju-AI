@@ -16,12 +16,14 @@ import json
 from pathlib import Path
 from uuid import UUID
 import re
+import unicodedata
 from xml.sax.saxutils import escape
 from zipfile import ZIP_DEFLATED, ZipFile
 
 from flask import Blueprint, g, jsonify, request, send_file
 
 from web import native_telegram_sjkc_math_client as sjkc
+from web import native_telegram_sjkt_math_client as sjkt
 from web.english_rpt_2027_http import _account, _has_paid_access
 from web.english_y5_standalone_runtime import CHOICE_LESSONS, adapt_rows as year5_rows
 from web.rph_teacher_reflection import clean_reflection
@@ -35,6 +37,7 @@ SUBJECT_LABELS = {
     "MATH_DLP": "Mathematics (DLP)",
     "SCIENCE_DLP": "Science (DLP)",
     sjkc.SUBJECT: sjkc.LABEL,
+    sjkt.SUBJECT: sjkt.LABEL,
     "SCIENCE": "Sains",
     "PI": "Pendidikan Islam",
     "PJPK": "PJPK",
@@ -516,8 +519,12 @@ def _teacher_context():
     students = request.args.get("teacher_students", "")
     if any(not isinstance(x, str) for x in (cls, dt, old_time, start, end, students)):
         raise ValueError("Invalid printable fields")
-    if cls and (len(cls) > 40 or not re.fullmatch(r"[\w .\-/()]+", cls, re.UNICODE)
-                or not cls.strip()):
+    if request.args.get("subject") == sjkt.SUBJECT:
+        allowed_class = all(c.isalnum() or c in "_ .-/()" or unicodedata.category(c).startswith("M")
+                            for c in cls)
+    else:
+        allowed_class = bool(re.fullmatch(r"[\w .\-/()]+", cls, re.UNICODE))
+    if cls and (len(cls) > 40 or not allowed_class or not cls.strip()):
         raise ValueError("Invalid class")
     if dt:
         if len(dt) != 10 or not re.fullmatch(r"20\d{2}-\d{2}-\d{2}", dt):
@@ -719,18 +726,20 @@ def create_blueprint():
                 "year": year, "subject": subject, "unit": unit,
                 "lesson": token, "teacher": teacher,
             }, None
-        if subject == sjkc.SUBJECT:
+        school = {sjkc.SUBJECT: sjkc, sjkt.SUBJECT: sjkt}.get(subject)
+        if school is not None:
             try:
-                pdp = sjkc.verify(year, unit, token)
+                pdp = school.verify(year, unit, token)
             except ValueError:
-                return None, (jsonify({"error": "Pilihan Matematik SJKC tidak sah"}), 400)
-            except sjkc.NativeRPHUnavailable:
+                return None, (jsonify({"error": f"Pilihan {school.LABEL} tidak sah"}), 400)
+            except school.NativeRPHUnavailable:
+                school_type = "SJKC" if school is sjkc else "SJKT"
                 return None, (jsonify({
-                    "error": "PdP Matematik SJKC belum dapat disahkan melalui Telegram.",
-                    "code": "TELEGRAM_SJKC_MATH_RPH_NOT_READY",
+                    "error": f"PdP {school.LABEL} belum dapat disahkan melalui Telegram.",
+                    "code": f"TELEGRAM_{school_type}_MATH_RPH_NOT_READY",
                 }), 503)
             return {
-                "source": sjkc.SOURCE, "year": year, "subject": subject, "unit": unit,
+                "source": school.SOURCE, "year": year, "subject": subject, "unit": unit,
                 "lesson": pdp, "teacher": teacher,
             }, None
         if subject == "RBT":
@@ -915,8 +924,9 @@ def create_blueprint():
         """
         from web.native_telegram_rph_client import request_native_rph, NativeRPHUnavailable
         try:
-            if selected.get("source") == sjkc.SOURCE:
-                document = sjkc.request_document(selected, fmt)
+            school = {sjkc.SOURCE: sjkc, sjkt.SOURCE: sjkt}.get(selected.get("source"))
+            if school is not None:
+                document = school.request_document(selected, fmt)
             elif selected.get("source") == "telegram-native-bm-pdp":
                 from web.native_telegram_bm_rph_client import request_native_bm_rph
                 document = request_native_bm_rph(selected, fmt)
