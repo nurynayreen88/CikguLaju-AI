@@ -7,7 +7,7 @@ from pathlib import Path
 
 from web.native_telegram_sequence_rph_client import (
     _selection, list_native_units, NativeRPHUnavailable,
-    SCIENCE_2027_ROUTE, DLP_ROUTE,
+    SCIENCE_2027_ROUTE, DLP_ROUTE, MATH_SK_2027_ROUTE, SEQUENCE_ROUTE,
 )
 from web.unified_rph_web import create_blueprint
 from web.native_verified_rpt_rph_client import _selection as _rpt_selection
@@ -86,6 +86,26 @@ class WebNativePdPBridgeTests(unittest.TestCase):
                                    (6, "01", "DLP-MATH-Y6-R09"), (6, "01", "DLP-MATH-Y2-L01")):
             with self.subTest(year=year, unit=unit, lesson=lesson), self.assertRaises(ValueError):
                 _selection(year, "MATH_DLP", unit, lesson)
+
+    def test_math_sk_2027_routes_keep_legacy_and_dlp_selections_intact(self):
+        unit = "u" + "a" * 24
+        data = {"source": "telegram-runtime-v1", "items": [
+            {"value": unit, "label": "Unit 7 • Koordinat, nisbah dan kadaran"}]}
+        with patch("web.native_telegram_sequence_rph_client._read", return_value=data) as read:
+            for year in (5, 6):
+                new, = list_native_units(year, "MATH")
+                self.assertEqual(new["value"], "m" + unit[1:])
+                self.assertEqual(read.call_args.kwargs, {"route": MATH_SK_2027_ROUTE})
+                route, selection = _selection(year, "MATH", new["value"], f"SK27-MATH-Y{year}-L097")
+                self.assertEqual(route, MATH_SK_2027_ROUTE)
+                self.assertEqual(selection["unit"], unit)
+                self.assertEqual(list_native_units(year, "MATH", current_unit=unit), data["items"])
+                self.assertEqual(read.call_args.kwargs, {})
+            self.assertEqual(_selection(6, "MATH", unit, "MT6-PDP-097")[0], SEQUENCE_ROUTE)
+            with self.assertRaises(ValueError):
+                _selection(4, "MATH", new["value"])
+            with self.assertRaises(ValueError):
+                _selection(6, "MATH_DLP", new["value"])
 
     @patch("web.unified_rph_web._has_paid_access", return_value=True)
     @patch("web.unified_rph_web._account", return_value=({"telegram_user_id": 123}, None))

@@ -24,6 +24,8 @@ SCIENCE_2027_ROUTES = {
     5: ("v", SCIENCE_2027_ROUTE),
     6: ("w", "/internal/rph/v1/sains-sk-y6-2027"),
 }
+MATH_SK_2027_ROUTE = "/internal/rph/v1/matematik-sk-2027"
+MATH_SK_2027_YEARS = (5, 6)
 SEQUENCE_ROUTE = "/internal/rph/v1/sequence"
 DLP_ROUTE = "/internal/rph/v1/dlp"
 DLP_UNIT = re.compile(r"0[1-8]")
@@ -57,6 +59,9 @@ def _selection(year, subject, unit, lesson=None):
     route = SEQUENCE_ROUTE
     if subject in DLP_SUBJECTS and DLP_CATALOGUES[year, subject][1].fullmatch(unit):
         route = DLP_ROUTE
+    elif subject == "MATH" and year in MATH_SK_2027_YEARS and re.fullmatch(r"m[a-f0-9]{24}", unit):
+        route = MATH_SK_2027_ROUTE
+        unit = "u" + unit[1:]
     elif science and re.fullmatch(science[0] + r"[a-f0-9]{24}", unit):
         route = science[1]
         unit = "u" + unit[1:]
@@ -140,6 +145,11 @@ def list_native_units(year, subject, *, current_unit=""):
     if subject in DLP_SUBJECTS:
         return [{"value": key, "label": unit["title"]} for key, unit in _dlp_catalogue(year, subject).items()]
     params = {"year": year, "subject": subject}
+    if subject == "MATH" and year in MATH_SK_2027_YEARS and not UNITS.fullmatch(current_unit):
+        items = _units(_read("units", params, route=MATH_SK_2027_ROUTE))
+        if not items:
+            raise NativeRPHUnavailable("SK Mathematics 2027 catalogue unavailable")
+        return [{**item, "value": "m" + item["value"][1:]} for item in items]
     if subject == "SCIENCE" and year in SCIENCE_2027_ROUTES and not UNITS.fullmatch(current_unit):
         prefix, route = SCIENCE_2027_ROUTES[year]
         try:

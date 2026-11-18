@@ -322,7 +322,7 @@ def options():
                         try:
                             source_units = (list_native_units(
                                 year, subject, current_unit=request.args.get("unit", ""))
-                                if year in (5, 6) and subject == "SCIENCE" and kind == "pdp"
+                                if year in (5, 6) and kind == "pdp"
                                 else list_native_units(year, subject))
                             if subject == "MATH":
                                 from web.math_unit_groups import (
