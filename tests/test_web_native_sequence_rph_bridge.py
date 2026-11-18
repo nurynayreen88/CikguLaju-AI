@@ -74,6 +74,15 @@ class WebNativePdPBridgeTests(unittest.TestCase):
             _selection(5, "SCIENCE", year6["value"])
 
     def test_dlp_exact_ids_keep_year_and_subject(self):
+        self.assertEqual(_selection(4, "SCIENCE_DLP", "10", "DLP-SCI-Y4-L59")[0], DLP_ROUTE)
+        self.assertEqual(_selection(4, "SCIENCE_DLP", "10", "DLP-SCI-Y4-R10")[0], DLP_ROUTE)
+        for subject, unit, lesson in (("MATH_DLP", "01", "DLP-SCI-Y4-L01"),
+                                      ("SCIENCE_DLP", "11", "DLP-SCI-Y4-L59"),
+                                      ("SCIENCE_DLP", "10", "DLP-SCI-Y4-L60"),
+                                      ("SCIENCE_DLP", "10", "DLP-SCI-Y4-R11"),
+                                      ("SCIENCE_DLP", "10", "DLP-SCI-Y5-R10")):
+            with self.subTest(subject=subject, unit=unit, lesson=lesson), self.assertRaises(ValueError):
+                _selection(4, subject, unit, lesson)
         self.assertEqual(_selection(5, "MATH_DLP", "08", "DLP-MATH-Y5-L61")[0], DLP_ROUTE)
         self.assertEqual(_selection(5, "SCIENCE_DLP", "10", "DLP-SCI-Y5-R10")[0], DLP_ROUTE)
         self.assertEqual(_selection(6, "MATH_DLP", "01", "DLP-MATH-Y6-L01")[0], DLP_ROUTE)
@@ -92,7 +101,8 @@ class WebNativePdPBridgeTests(unittest.TestCase):
     def test_web_availability_uses_verified_dlp_service(self, *_):
         app = Flask(__name__)
         app.register_blueprint(create_blueprint())
-        for year, subject, prefix in ((5, "MATH_DLP", "MATH"), (5, "SCIENCE_DLP", "SCI"),
+        for year, subject, prefix in ((4, "SCIENCE_DLP", "SCI"),
+                                      (5, "MATH_DLP", "MATH"), (5, "SCIENCE_DLP", "SCI"),
                                       (6, "MATH_DLP", "MATH"), (6, "SCIENCE_DLP", "SCI")):
             selection = {"year": year, "subject": subject, "unit": "01",
                          "lesson": f"DLP-{prefix}-Y{year}-L01"}
