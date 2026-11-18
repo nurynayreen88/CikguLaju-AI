@@ -26,6 +26,9 @@ on:
   workflow_dispatch:
   pull_request:
     paths:
+      - audits/matematik_sjkt_tahun_2/**
+      - web/matematik_sjkt_t2_*.py
+      - tests/test_matematik_sjkt_rph_release.py
       - web/matematik_sjkc_t3_telegram.py
       - tests/test_matematik_sjkc_rph_flow.py
       - web/rph_teacher_reflection.py
@@ -68,6 +71,7 @@ jobs:
           python -m py_compile web/native_rph_telegram_api.py tools/run_telegram_with_curriculum_api.py
           python -m unittest discover -s tests -p test_native_telegram_rph_api.py -v
           python -m unittest discover -s tests -p 'test_matematik_sjkc_rph_*.py' -v
+          python -m unittest discover -s tests -p test_matematik_sjkt_rph_release.py -v
           python -m py_compile web/telegram_verified_rpt_rph_bridge.py web/telegram_verified_sequence_rph_bridge.py
           python -m unittest discover -s tests -p test_telegram_verified_rpt_rph_bridge.py -v
           python -m unittest discover -s tests -p test_telegram_verified_sequence_rph_bridge.py -v

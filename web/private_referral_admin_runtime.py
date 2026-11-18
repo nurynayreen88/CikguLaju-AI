@@ -147,6 +147,10 @@ def install(runtime):
         response = original_panel(cid)
         if not runtime._is_admin(cid):
             return response
+        review_button = getattr(runtime, "MATEMATIK_SJKT_T2_REVIEW_BUTTON", None)
+        panel_buttons = [_PANEL_BUTTON]
+        if review_button is not None:
+            panel_buttons.append(review_button)
         try:
             data = response.json() if response is not None else {}
             result = data.get("result") or {}
@@ -154,15 +158,16 @@ def install(runtime):
             keyboard = (result.get("reply_markup") or {}).get("inline_keyboard") or []
             if not mid or not keyboard:
                 raise ValueError("No admin panel inline keyboard")
-            if any(button.get("callback_data") == _PANEL_BUTTON["callback_data"]
-                   for row in keyboard for button in row):
+            present = {button.get("callback_data") for row in keyboard for button in row}
+            missing = [button for button in panel_buttons if button["callback_data"] not in present]
+            if not missing:
                 return response
             updated = [list(row) for row in keyboard]
             # Insert before system status/refresh, preserving existing panel actions.
             before = next((i for i, row in enumerate(updated)
                            if any(b.get("callback_data") == "admin_system"
                                   for b in row)), len(updated))
-            updated.insert(before, [dict(_PANEL_BUTTON)])
+            updated[before:before] = [[dict(button)] for button in missing]
             res = requests.post(str(runtime.API) + "/editMessageReplyMarkup",
                                 json={"chat_id": cid, "message_id": mid,
                                       "reply_markup": {"inline_keyboard": updated}},
@@ -174,8 +179,8 @@ def install(runtime):
             print("PRIVATE REFERRAL admin panel button fallback:",
                   type(exc).__name__, flush=True)
             try:
-                send(cid, "📊 <b>Semakan Mata Referral</b>",
-                     [[dict(_PANEL_BUTTON)]])
+                title = "Pilihan Panel Admin" if review_button else "📊 <b>Semakan Mata Referral</b>"
+                send(cid, title, [[dict(button)] for button in panel_buttons])
             except Exception:
                 pass
         return response
