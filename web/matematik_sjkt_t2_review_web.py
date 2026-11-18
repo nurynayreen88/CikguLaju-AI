@@ -16,6 +16,7 @@ from web.teacher_profile_routes import _auth
 bp = Blueprint("matematik_sjkt_t2_review_web", __name__, template_folder="templates")
 WEB_PATH = "/admin/semakan/matematik-sjkt-tahun-2"
 SOURCE_PATH = "/internal/rph/v1/matematik-sjkt-t2/review"
+TEACHER_LENGTHS = {"class": 40, "date": 10, "time": 13, "students": 3, "reflection": 500}
 
 
 @bp.before_request
@@ -37,12 +38,15 @@ def _private_headers(response):
     return response
 
 
-def _request_source(suffix, mime, limit):
+def _request_source(suffix, mime, limit, *, teacher=None):
     try:
         base, token = _backend()
-        req = Request(base + SOURCE_PATH + suffix, headers={
-            "Authorization": "Bearer " + token, "Accept": mime,
-        })
+        headers = {"Authorization": "Bearer " + token, "Accept": mime}
+        data = None
+        if teacher is not None:
+            data = json.dumps(teacher, ensure_ascii=False).encode("utf-8")
+            headers["Content-Type"] = "application/json"
+        req = Request(base + SOURCE_PATH + suffix, data=data, headers=headers)
         with build_opener(HTTPSHandler(), BlockRedirects()).open(req, timeout=15) as response:
             if response.status != 200 or response.headers.get_content_type() != mime:
                 raise NativeRPHUnavailable("Unexpected review response")
@@ -53,6 +57,8 @@ def _request_source(suffix, mime, limit):
     except HTTPError as exc:
         if exc.code == 404:
             abort(404)
+        if exc.code == 400 and teacher is not None:
+            abort(400, description="Butiran guru tidak sah.")
         abort(503, description="Sumber semakan Telegram belum tersedia.")
     except (URLError, OSError, NativeRPHUnavailable, ValueError):
         abort(503, description="Sumber semakan Telegram belum tersedia.")
@@ -87,11 +93,35 @@ def catalogue(unit=None):
     return render_template("matematik_sjkt_t2_review.html", unit=unit, options=_options(unit))
 
 
-@bp.get(WEB_PATH + "/<int:unit>/<int:pdp>/<fmt>")
+@bp.get(WEB_PATH + "/<int:unit>/<int:pdp>")
+def teacher_fields(unit, pdp):
+    if not 1 <= unit <= 8 or not 1 <= pdp <= 96:
+        abort(404)
+    selected = next((row for row in _options(unit) if row["value"] == pdp), None)
+    if selected is None:
+        abort(404)
+    return render_template("matematik_sjkt_t2_review.html", unit=unit, selected=selected)
+
+
+@bp.route(WEB_PATH + "/<int:unit>/<int:pdp>/<fmt>", methods=("GET", "POST"))
 def document(unit, pdp, fmt):
     if not 1 <= unit <= 8 or not 1 <= pdp <= 96 or fmt not in MIMES:
         abort(404)
-    content = _request_source(f"/{unit}/{pdp}/{fmt}", MIMES[fmt], MAX_DOCUMENT)
+    teacher = None
+    if request.method == "POST":
+        origin = request.headers.get("Origin")
+        if origin not in ("https://" + request.host, request.host_url.rstrip("/")):
+            abort(403)
+        if request.mimetype != "application/x-www-form-urlencoded" or not 0 < (request.content_length or 0) <= 8000:
+            abort(400)
+        fields = request.form
+        if set(fields) != set(TEACHER_LENGTHS) or any(
+            len(fields.getlist(key)) != 1 or len(fields[key]) > limit
+            for key, limit in TEACHER_LENGTHS.items()
+        ):
+            abort(400, description="Butiran guru tidak sah.")
+        teacher = fields.to_dict()
+    content = _request_source(f"/{unit}/{pdp}/{fmt}", MIMES[fmt], MAX_DOCUMENT, teacher=teacher)
     if fmt == "word":
         try:
             validate_word_document(content)
