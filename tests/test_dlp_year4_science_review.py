@@ -10,6 +10,7 @@ from docx import Document
 from pypdf import PdfReader
 
 from staging.dlp.year4.render_science import export, load_plans
+from staging.dlp.year4.annual_plan import make_annual_plan, standards_for
 
 
 INTERNAL_LABEL = re.compile(
@@ -43,6 +44,7 @@ class ScienceDLPYear4Review(unittest.TestCase):
                     self.assertNotRegex(word.core_properties.title or "", INTERNAL_LABEL)
                     fields = {row.cells[0].text: row.cells[1].text for row in word.tables[0].rows}
                     self.assertEqual(fields["Learning objective"], plan["objective"])
+                    self.assertEqual(fields["Success criteria"], plan["success_criteria"])
                     self.assertEqual(fields["RPT 2027 dates"], " · ".join(plan["rpt_dates"]))
                     for folder in (output, word_pdf):
                         file = PdfReader(folder / f"{stem}.pdf")
@@ -55,6 +57,31 @@ class ScienceDLPYear4Review(unittest.TestCase):
                         self.assertIn(" ".join(plan["objective"].split()), content)
                         self.assertIn(" ".join(fields["Book references"].split()), content)
                         self.assertNotRegex(content, INTERNAL_LABEL)
+
+    def test_annual_and_daily_plans_use_the_same_evidence(self):
+        plans = load_plans()
+        with TemporaryDirectory() as directory:
+            out = Path(directory) / "rpt.docx"
+            make_annual_plan(out)
+            annual = Document(out)
+            rows = [row for table in annual.tables[2:-1] for row in table.rows[1:]]
+            for plan, row in zip(plans, rows, strict=True):
+                dates, session, standards, objective, evidence, book = (
+                    cell.text for cell in row.cells
+                )
+                self.assertEqual(dates.replace("–", "-").splitlines(), plan["rpt_dates"])
+                self.assertEqual(session.splitlines(), [plan["label"], plan["title"]])
+                self.assertEqual(standards.splitlines(), list(standards_for(plan)))
+                self.assertEqual(objective, plan["objective"])
+                self.assertEqual(evidence, plan["success_criteria"])
+                self.assertEqual(book.splitlines(), [
+                    plan["references"][0].removeprefix("TB "), f"{plan['minutes']} min",
+                ])
+            self.assertEqual(len(annual.tables[-1].rows) - 1, 7)
+        by_id = {p["id"][-3:]: p for p in plans}
+        self.assertEqual(by_id["L09"]["rpt_dates"], by_id["L08"]["rpt_dates"])
+        self.assertIn("spiracles", by_id["L19"]["success_criteria"])
+        self.assertIn("starch", by_id["L25"]["success_criteria"])
 
     def test_shadow_lessons_cover_both_size_and_shape_factors(self):
         plans = {plan["id"]: plan for plan in load_plans()}

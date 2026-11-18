@@ -50,7 +50,8 @@
           "pupils": "Point to the edge and describe what to look for."
         }
       ],
-      "follow_up": "Practise turning opinions about an object into checkable observations."
+      "follow_up": "Practise turning opinions about an object into checkable observations.",
+      "success_criteria": "Two statements describe features another pupil can check. Each names a suitable sense or tool."
     },
     {
       "id": "DLP-SCI-Y4-L02",
@@ -97,7 +98,8 @@
           "pupils": "Place it in the toothed group and name the evidence."
         }
       ],
-      "follow_up": "Re-sort a set using one feature consistently."
+      "follow_up": "Re-sort a set using one feature consistently.",
+      "success_criteria": "All six leaves appear once. One stated feature, such as a smooth or toothed edge, explains both groups."
     },
     {
       "id": "DLP-SCI-Y4-L03",
@@ -144,7 +146,8 @@
           "pupils": "Explain why the scale start and ruler edge differ."
         }
       ],
-      "follow_up": "Repeat one reading with the object correctly aligned."
+      "follow_up": "Repeat one reading with the object correctly aligned.",
+      "success_criteria": "Three lengths include cm. The pupil aligns one end with zero and reads the scale from directly above."
     },
     {
       "id": "DLP-SCI-Y4-L04",
@@ -191,7 +194,8 @@
           "pupils": "Identify the prediction and say what to measure."
         }
       ],
-      "follow_up": "Give another example of a recorded fact and a possible explanation."
+      "follow_up": "Give another example of a recorded fact and a possible explanation.",
+      "success_criteria": "The account separates what was seen, a possible cause and a prediction supported by a change in water level."
     },
     {
       "id": "DLP-SCI-Y4-L05",
@@ -229,7 +233,7 @@
           "phase": "Practice and assessment",
           "minutes": 20,
           "teacher": "Check sequence and headings on each pupil's own table.",
-          "pupils": "Submit a labelled time table covering all four pictures."
+          "pupils": "Submit a labelled table with a time and an observed change for each of the four pictures."
         },
         {
           "phase": "Closure",
@@ -238,7 +242,8 @@
           "pupils": "Correct their order using a timestamp and a visible clue."
         }
       ],
-      "follow_up": "Practise matching time labels to changes in a new sequence."
+      "follow_up": "Practise matching time labels to changes in a new sequence.",
+      "success_criteria": "The table pairs all four times with visible changes in the correct order and labels both columns."
     },
     {
       "id": "DLP-SCI-Y4-L06",
@@ -285,7 +290,8 @@
           "pupils": "Compare 3 cm between weeks 1 and 2 with 2 cm between weeks 2 and 3."
         }
       ],
-      "follow_up": "Ask pupils to cite exact evidence before stating a trend."
+      "follow_up": "Ask pupils to cite exact evidence before stating a trend.",
+      "success_criteria": "The pupil uses 4 cm and 11 cm to show a 7 cm increase from week 1 to week 4."
     },
     {
       "id": "DLP-SCI-Y4-L07",
@@ -332,7 +338,8 @@
           "pupils": "Explain how changing the time could change the result."
         }
       ],
-      "follow_up": "Ask pupils to replace broad descriptors with observable criteria."
+      "follow_up": "Ask pupils to replace broad descriptors with observable criteria.",
+      "success_criteria": "One drop and a ten-second wait are used for both samples. The rule classifies each by what is left on its surface."
     },
     {
       "id": "DLP-SCI-Y4-L08",
@@ -379,7 +386,8 @@
           "pupils": "Identify the problem and name the control."
         }
       ],
-      "follow_up": "Rewrite the hypothesis using a variable that can be measured."
+      "follow_up": "Rewrite the hypothesis using a variable that can be measured.",
+      "success_criteria": "The pupil names ramp height, travel distance and a control, then predicts how distance will change with height."
     },
     {
       "id": "DLP-SCI-Y4-L09",
@@ -388,7 +396,7 @@
       "unit": "Unit 1 Scientific Skills",
       "rpt_dates": [
         "A  31 Jan-4 Feb",
-        "B  1-5 Feb"
+        "B  2-4 Feb"
       ],
       "minutes": 60,
       "standards": [
@@ -426,7 +434,12 @@
           "pupils": "Point to the fixed ramp-end mark and explain its use."
         }
       ],
-      "follow_up": "Flag a missing control or unclear measurement start before Lesson 10."
+      "follow_up": "Flag a missing control or unclear measurement start before Lesson 10.",
+      "success_criteria": "The plan specifies two heights, three runs each, the same release point and a distance column with a unit.",
+      "source_rpt_dates": [
+        "A  31 Jan-4 Feb",
+        "B  1-5 Feb"
+      ]
     },
     {
       "id": "DLP-SCI-Y4-L10",
@@ -473,7 +486,8 @@
           "pupils": "Describe the problem, record it and repeat the run with the same controls."
         }
       ],
-      "follow_up": "Repeat a trial or revise the conclusion when the evidence is mixed."
+      "follow_up": "Repeat a trial or revise the conclusion when the evidence is mixed.",
+      "success_criteria": "Six measured distances have units. The conclusion says whether the pupil’s own results support the prediction."
     },
     {
       "id": "DLP-SCI-Y4-R01",
@@ -493,7 +507,7 @@
         "TB p. 22"
       ],
       "objective": "Use a results table to identify the variables, state a trend and rewrite a conclusion.",
-      "materials": "Ramp results table, conclusion cards",
+      "materials": "Ramp measurements in the main activity, paper and pencil",
       "phases": [
         {
           "phase": "Set induction",
@@ -504,14 +518,14 @@
         {
           "phase": "Main activity",
           "minutes": 15,
-          "teacher": "Provide a table comparing two ramp heights and three runs each.",
+          "teacher": "Give this example set. At ramp height 5 cm, the same car travels 28, 30 and 29 cm. At 10 cm it travels 47, 45 and 46 cm. Ask what changed, what was measured, what stayed the same and whether the higher ramp sent the car farther.",
           "pupils": "Mark the variable and say whether the results show a consistent trend."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 9,
           "teacher": "Check a conclusion rewritten to include one measured comparison.",
-          "pupils": "Individually identify a variable, state the trend and rewrite the conclusion using two values."
+          "pupils": "Individually name both variables and one control. Use one result from each height to support the conclusion."
         },
         {
           "phase": "Closure",
@@ -525,7 +539,8 @@
         "1.1.8",
         "1.1.10",
         "1.1.12"
-      ]
+      ],
+      "success_criteria": "The response names ramp height and travel distance, identifies a control and cites a distance from each height."
     },
     {
       "id": "DLP-SCI-Y4-L11",
@@ -572,7 +587,8 @@
           "pupils": "Trace the route it takes out of the body during exhalation."
         }
       ],
-      "follow_up": "Use separate colours for air movement through the airway and gas exchange in the lungs."
+      "follow_up": "Use separate colours for air movement through the airway and gas exchange in the lungs.",
+      "success_criteria": "Both air paths connect nose, trachea and lungs. Gas arrows show oxygen entering blood and carbon dioxide leaving it."
     },
     {
       "id": "DLP-SCI-Y4-L12",
@@ -619,7 +635,8 @@
           "pupils": "Use the comparison to answer yes and explain."
         }
       ],
-      "follow_up": "Practise describing relative amounts using the diagrams."
+      "follow_up": "Practise describing relative amounts using the diagrams.",
+      "success_criteria": "The comparison shows more oxygen in inhaled air and more carbon dioxide in exhaled air. Both samples contain both gases."
     },
     {
       "id": "DLP-SCI-Y4-L13",
@@ -666,7 +683,8 @@
           "pupils": "Identify inhalation and explain the clue."
         }
       ],
-      "follow_up": "Pair each chest movement with the correct air-flow arrow."
+      "follow_up": "Pair each chest movement with the correct air-flow arrow.",
+      "success_criteria": "The diagram links an expanding chest with air moving in and a smaller chest with air moving out."
     },
     {
       "id": "DLP-SCI-Y4-L14",
@@ -697,7 +715,7 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Time a resting count and another after 30 seconds of gentle marching. Provide sample data to pupils who sit out.",
+          "teacher": "Time one 30-second breathing count at rest and one after gentle marching. Offer a seated observer role and an example pair of 8 and 12 breaths in equal 30-second intervals.",
           "pupils": "Record counts for equal time intervals and compare the two results."
         },
         {
@@ -713,7 +731,8 @@
           "pupils": "Explain how different count durations affect comparison."
         }
       ],
-      "follow_up": "Use a worked example to connect equal counting time with a fair comparison."
+      "follow_up": "Use a worked example to connect equal counting time with a fair comparison.",
+      "success_criteria": "Two counts use equal time intervals. The explanation relates the measured change to activity and the body’s need for oxygen."
     },
     {
       "id": "DLP-SCI-Y4-L15",
@@ -760,7 +779,8 @@
           "pupils": "Identify defecation and explain using undigested food."
         }
       ],
-      "follow_up": "Revisit the origin of each waste product with the organ cards."
+      "follow_up": "Revisit the origin of each waste product with the organ cards.",
+      "success_criteria": "Lungs, skin and kidneys match their wastes. The pupil identifies faeces as undigested material removed by defecation."
     },
     {
       "id": "DLP-SCI-Y4-L16",
@@ -807,7 +827,8 @@
           "pupils": "Identify each process from the material being removed."
         }
       ],
-      "follow_up": "Review waste routes separately with pupils who conflate them."
+      "follow_up": "Review waste routes separately with pupils who conflate them.",
+      "success_criteria": "A labelled route shows how one waste leaves the body. The pupil explains one consequence if it accumulates."
     },
     {
       "id": "DLP-SCI-Y4-L17",
@@ -854,7 +875,8 @@
           "pupils": "Identify the skin and describe a plausible response."
         }
       ],
-      "follow_up": "Practise distinguishing an external stimulus from the action it causes."
+      "follow_up": "Practise distinguishing an external stimulus from the action it causes.",
+      "success_criteria": "Three chains each name the stimulus, the organ that detects it and the action that follows."
     },
     {
       "id": "DLP-SCI-Y4-L18",
@@ -885,8 +907,8 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Compare blinking with turning towards a warning sound. Discuss how loud headphones can mask a warning sound.",
-          "pupils": "Draw a stimulus-to-response chain and explain the protective effect, then annotate how the habit interferes."
+          "teacher": "Use a picture of a blink to trace how the eye is protected. Read a scenario in which a driver who has consumed alcohol responds late to a warning. Ask what a late response could mean.",
+          "pupils": "Draw the protective chain. Explain how a delayed response to a warning increases the risk of harm."
         },
         {
           "phase": "Practice and assessment",
@@ -897,11 +919,12 @@
         {
           "phase": "Closure",
           "minutes": 5,
-          "teacher": "Ask pupils to recommend one safer habit near traffic.",
-          "pupils": "Explain how making warning sounds easier to hear helps."
+          "teacher": "Ask how a sober, alert adult can respond to a warning while driving.",
+          "pupils": "Explain why a prompt response helps the adult avoid danger."
         }
       ],
-      "follow_up": "Revisit a scenario where the habit changes detection of the stimulus."
+      "follow_up": "Revisit a scenario where the habit changes detection of the stimulus.",
+      "success_criteria": "The pupil links one protective response to avoiding harm and explains how alcohol can delay a response to danger."
     },
     {
       "id": "DLP-SCI-Y4-R02",
@@ -921,7 +944,7 @@
         "TB p. 50"
       ],
       "objective": "Label the breathing organs, then link one sensory response and one waste-removal process to their functions.",
-      "materials": "Blank airway chart, response and waste cards",
+      "materials": "Blank body outline, airway labels and individual answer slips",
       "phases": [
         {
           "phase": "Set induction",
@@ -932,7 +955,7 @@
         {
           "phase": "Main activity",
           "minutes": 15,
-          "teacher": "Set three short tasks covering air flow, sensory response and waste removal.",
+          "teacher": "Ask pupils to trace air into and out of the lungs, explain how blinking protects an eye from dust, and use urine as an example to explain why waste must leave the body.",
           "pupils": "Complete all three tasks, then check labels against the textbook."
         },
         {
@@ -954,7 +977,8 @@
         "2.1.2",
         "2.2.3",
         "2.3.3"
-      ]
+      ],
+      "success_criteria": "Both air paths are labelled. One response protects the body and one example explains why waste must be removed."
     },
     {
       "id": "DLP-SCI-Y4-L19",
@@ -985,7 +1009,7 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Model a sort for gills, lungs, breathing tubes and moist skin. Give two example cards per group.",
+          "teacher": "Show fish gills, mammal lungs, an earthworm’s moist skin and a grasshopper’s spiracles. Explain that spiracles are the openings leading to the insect’s breathing tubes. Give two example cards per group.",
           "pupils": "Sort examples and match each breathing organ to its diagram."
         },
         {
@@ -1001,7 +1025,8 @@
           "pupils": "Name moist skin and explain the visible grouping rule."
         }
       ],
-      "follow_up": "Pair unfamiliar animals with textbook diagrams to check the organ."
+      "follow_up": "Pair unfamiliar animals with textbook diagrams to check the organ.",
+      "success_criteria": "Four matches are correct. Fish use gills, mammals use lungs, grasshoppers use spiracles and earthworms use moist skin."
     },
     {
       "id": "DLP-SCI-Y4-L20",
@@ -1048,7 +1073,8 @@
           "pupils": "Point to the different organs and state how each is used."
         }
       ],
-      "follow_up": "Practise labeling the adult life stage in an animal comparison."
+      "follow_up": "Label the adult life stage before comparing a frog’s breathing organs with those of another animal.",
+      "success_criteria": "The comparison names lungs and moist skin in an adult frog and gills in a fish. It explains how the frog takes in oxygen in water."
     },
     {
       "id": "DLP-SCI-Y4-L21",
@@ -1095,7 +1121,8 @@
           "pupils": "Use the snail example to explain the difference."
         }
       ],
-      "follow_up": "Revisit internal structure instead of external covering when sorting."
+      "follow_up": "Revisit internal structure instead of external covering when sorting.",
+      "success_criteria": "All four animals are sorted. Two reasons refer to the presence or absence of a backbone."
     },
     {
       "id": "DLP-SCI-Y4-L22",
@@ -1126,7 +1153,7 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Build a five-group chart using selected examples and features of fish, amphibians, reptiles, birds and mammals.",
+          "teacher": "Give cards for a tilapia, adult frog, lizard, chicken and cat. Build a five-group chart. Use each card’s body covering, breathing organs and reproduction to check the match.",
           "pupils": "Use body covering, breathing and reproduction clues to classify the given examples."
         },
         {
@@ -1142,7 +1169,8 @@
           "pupils": "Cite breathing lungs and feeding young with milk."
         }
       ],
-      "follow_up": "Give one example for a group that was confused on the exit slip."
+      "follow_up": "Give one example for a group that was confused on the exit slip.",
+      "success_criteria": "Five examples go into the five vertebrate groups. Two explanations use distinguishing features from the cards."
     },
     {
       "id": "DLP-SCI-Y4-R03",
@@ -1162,7 +1190,7 @@
         "TB p. 67"
       ],
       "objective": "Identify a vertebrate group from its characteristics and explain the breathing organs of two animals.",
-      "materials": "Three animal cards, feature chart, individual slip",
+      "materials": "Animal clues, fish and grasshopper cards, individual answer slips",
       "phases": [
         {
           "phase": "Set induction",
@@ -1173,14 +1201,14 @@
         {
           "phase": "Main activity",
           "minutes": 15,
-          "teacher": "Provide one unfamiliar vertebrate clue set and two animal breathing examples.",
+          "teacher": "Give three clues for an unfamiliar animal with feathers, lungs and eggs with shells. Ask for its vertebrate group and one reason. Ask how a fish and a grasshopper take in oxygen.",
           "pupils": "Identify a group, then match both animals to their breathing organs."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 9,
           "teacher": "Check group reasoning and the two organ explanations.",
-          "pupils": "Submit an independently labelled review slip."
+          "pupils": "Name the vertebrate group and one feature supporting it. Label how the fish and grasshopper breathe."
         },
         {
           "phase": "Closure",
@@ -1193,7 +1221,8 @@
       "review_lss": [
         "3.1.1",
         "3.2.3"
-      ]
+      ],
+      "success_criteria": "Feathers support the choice of bird. The pupil matches gills to fish and spiracles to grasshopper."
     },
     {
       "id": "DLP-SCI-Y4-L23",
@@ -1240,7 +1269,8 @@
           "pupils": "Name the shoot and indicate the direction of growth."
         }
       ],
-      "follow_up": "Use new diagrams to distinguish plant part, stimulus and response."
+      "follow_up": "Use new diagrams to distinguish plant part, stimulus and response.",
+      "success_criteria": "Three matches identify plant part, stimulus and response. One prediction gives the direction or type of change."
     },
     {
       "id": "DLP-SCI-Y4-L24",
@@ -1287,7 +1317,8 @@
           "pupils": "Record one recurring observation time."
         }
       ],
-      "follow_up": "Use class observations between Lessons 24 and 26. Keep teacher-prepared examples for comparison."
+      "follow_up": "Use class observations between Lessons 24 and 26. Keep teacher-prepared examples for comparison.",
+      "success_criteria": "Two dated starting sketches show the light direction and shoots. The plan keeps watering and observation times alike."
     },
     {
       "id": "DLP-SCI-Y4-L25",
@@ -1307,7 +1338,7 @@
         "TB pp. 76-79"
       ],
       "objective": "Label a flow diagram showing what a plant needs to make food and what the process produces.",
-      "materials": "Photosynthesis input/output labels, arrows, leaf diagram",
+      "materials": "Leaf diagram or photo, water and gas labels, sunlight, chlorophyll, glucose, starch and oxygen cards",
       "phases": [
         {
           "phase": "Set induction",
@@ -1318,14 +1349,14 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Model sunlight as the energy source, chlorophyll as the pigment and water and carbon dioxide as inputs. Trace sugar and oxygen as products.",
-          "pupils": "Build and explain an input–process–output diagram with cards."
+          "teacher": "Trace water and carbon dioxide into a green leaf. Show where chlorophyll absorbs sunlight. Label the glucose produced, how it can be stored as starch, and the oxygen released.",
+          "pupils": "Build the diagram. Add an arrow from glucose to stored starch and an arrow showing oxygen leaving the leaf."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
           "teacher": "Check whether each pupil assigns all labels and defines photosynthesis in simple language.",
-          "pupils": "Complete the diagram independently and state that plants make their own food."
+          "pupils": "Individually label the needs and products, show how food is stored and explain photosynthesis in one sentence."
         },
         {
           "phase": "Closure",
@@ -1334,7 +1365,8 @@
           "pupils": "Identify the green leaf as the location in this model."
         }
       ],
-      "follow_up": "Re-sort requirements and products with pupils who mix the two sides."
+      "follow_up": "Re-sort requirements and products with pupils who mix the two sides.",
+      "success_criteria": "The diagram distinguishes water and carbon dioxide from sunlight and chlorophyll. It shows oxygen released and glucose made and stored as starch."
     },
     {
       "id": "DLP-SCI-Y4-L26",
@@ -1381,7 +1413,8 @@
           "pupils": "Explain why the starting conditions and another setup support the conclusion."
         }
       ],
-      "follow_up": "Provide the dated class example to any group with incomplete observations."
+      "follow_up": "Provide the dated class example to any group with incomplete observations.",
+      "success_criteria": "The conclusion compares dated records from both seedlings and uses their shoot directions as evidence."
     },
     {
       "id": "DLP-SCI-Y4-L27",
@@ -1428,7 +1461,8 @@
           "pupils": "Trace an indirect food link through a plant-eating animal."
         }
       ],
-      "follow_up": "Revisit the arrows in one three-organism chain."
+      "follow_up": "Revisit the arrows in one three-organism chain.",
+      "success_criteria": "One arrow links a plant to an animal that eats it. A second shows how oxygen released by plants supports breathing."
     },
     {
       "id": "DLP-SCI-Y4-R04",
@@ -1448,7 +1482,7 @@
         "TB p. 85"
       ],
       "objective": "Link two plant stimuli to responses and explain which inputs a plant needs for photosynthesis.",
-      "materials": "Four plant pictures, blank photosynthesis diagram, review slips",
+      "materials": "Shoot and Mimosa pictures, blank leaf outline and labels",
       "phases": [
         {
           "phase": "Set induction",
@@ -1459,14 +1493,14 @@
         {
           "phase": "Main activity",
           "minutes": 15,
-          "teacher": "Set two response questions and one photosynthesis diagram task.",
+          "teacher": "Show a shoot bending towards a side window and a Mimosa leaf closing when touched. Ask pupils to identify each stimulus and response, then draw what a green leaf needs to make food.",
           "pupils": "Match the stimuli and plant responses and place the diagram labels."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 9,
           "teacher": "Check two correct stimulus links and the photosynthesis inputs.",
-          "pupils": "Submit both matches and state the role of sunlight in the diagram."
+          "pupils": "Independently explain both plant responses and label water, carbon dioxide, sunlight and chlorophyll on the leaf diagram."
         },
         {
           "phase": "Closure",
@@ -1480,7 +1514,8 @@
         "4.1.1",
         "4.1.2",
         "4.2.2"
-      ]
+      ],
+      "success_criteria": "The pupil explains the shoot and leaf responses, names water and carbon dioxide, and places sunlight and chlorophyll at the leaf."
     },
     {
       "id": "DLP-SCI-Y4-L28",
@@ -1527,7 +1562,8 @@
           "pupils": "Realign the card with the other holes."
         }
       ],
-      "follow_up": "Repeat the comparison with the torch aimed only at the screen."
+      "follow_up": "Repeat the comparison with the torch aimed only at the screen.",
+      "success_criteria": "The two sketches show a light spot only when the holes line up. A straight arrow explains the result."
     },
     {
       "id": "DLP-SCI-Y4-L29",
@@ -1574,7 +1610,8 @@
           "pupils": "Refer to light passing through and scattering in the tracing paper."
         }
       ],
-      "follow_up": "Repeat one comparison using equal source and screen distances."
+      "follow_up": "Repeat one comparison using equal source and screen distances.",
+      "success_criteria": "Three samples are classified from their observed shadows. The pupil uses a result from the fixed setup to justify each choice."
     },
     {
       "id": "DLP-SCI-Y4-L30",
@@ -1621,7 +1658,8 @@
           "pupils": "Name the object and screen positions or object orientation."
         }
       ],
-      "follow_up": "Use a setup sketch to distinguish the distance changed from the distance kept fixed."
+      "follow_up": "Use a setup sketch to distinguish the distance changed from the distance kept fixed.",
+      "success_criteria": "The pupil uses measured widths to compare torch positions, then screen positions. Each comparison changes one distance."
     },
     {
       "id": "DLP-SCI-Y4-L31",
@@ -1668,7 +1706,8 @@
           "pupils": "Explain why the same object should be used to test orientation."
         }
       ],
-      "follow_up": "If an outline is faint, adjust the room lighting and repeat both positions with the same setup."
+      "follow_up": "If an outline is faint, adjust the room lighting and repeat both positions with the same setup.",
+      "success_criteria": "Two pairs of outlines distinguish turning the object from moving the torch. One sketch shows where the object blocks light."
     },
     {
       "id": "DLP-SCI-Y4-L32",
@@ -1715,7 +1754,8 @@
           "pupils": "State that it changes the direction of the light."
         }
       ],
-      "follow_up": "Practise linking the use to the reflected path shown in the diagram."
+      "follow_up": "Practise linking the use to the reflected path shown in the diagram.",
+      "success_criteria": "The diagram traces light from torch to mirror to screen, and the pupil explains one everyday use of reflection."
     },
     {
       "id": "DLP-SCI-Y4-L33",
@@ -1762,7 +1802,8 @@
           "pupils": "Point to the source and follow the arrow directions."
         }
       ],
-      "follow_up": "Recheck arrow directions before adding labels."
+      "follow_up": "Recheck arrow directions before adding labels.",
+      "success_criteria": "Two straight segments meet on the mirror. Arrows lead from the source to the mirror and onwards to the marked spot."
     },
     {
       "id": "DLP-SCI-Y4-L34",
@@ -1809,7 +1850,8 @@
           "pupils": "Use the original object and viewing evidence to explain."
         }
       ],
-      "follow_up": "Revisit the boundary where the light changes direction."
+      "follow_up": "Revisit the boundary where the light changes direction.",
+      "success_criteria": "The sketch shows the apparent shift at the air–water boundary. The second example also involves light changing direction across a boundary."
     },
     {
       "id": "DLP-SCI-Y4-L35",
@@ -1856,7 +1898,8 @@
           "pupils": "Name the white torch light and sunlight and explain how water reveals their colours."
         }
       ],
-      "follow_up": "Compare the colour band with a photo of a rainbow and label the light source in each."
+      "follow_up": "Compare the colour band with a photo of a rainbow and label the light source in each.",
+      "success_criteria": "The pupil records colours actually seen, then uses a raindrop sketch to explain how white sunlight separates into colours."
     },
     {
       "id": "DLP-SCI-Y4-R05",
@@ -1876,7 +1919,7 @@
         "TB p. 109"
       ],
       "objective": "Explain a shadow change and use a ray diagram to distinguish reflection from refraction.",
-      "materials": "Shadow sketches, mirror diagram, pencil-in-water image",
+      "materials": "Torch, opaque object, screen, mirror and air–water ray outlines",
       "phases": [
         {
           "phase": "Set induction",
@@ -1887,7 +1930,7 @@
         {
           "phase": "Main activity",
           "minutes": 15,
-          "teacher": "Give one shadow comparison, one mirror diagram and one water-boundary diagram.",
+          "teacher": "Fix an object and screen; move a torch closer to the object. Ask how the shadow size changes. Have pupils sketch one ray reflected by a mirror and one passing at a slant from air into water.",
           "pupils": "Annotate the three examples using labels for the behaviours of light."
         },
         {
@@ -1908,7 +1951,8 @@
         "5.1.3",
         "5.2.3",
         "5.3.1"
-      ]
+      ],
+      "success_criteria": "A fixed object casts a larger shadow with the torch nearer it. The two ray sketches show reflection at a mirror and refraction at water."
     },
     {
       "id": "DLP-SCI-Y4-L36",
@@ -1955,7 +1999,8 @@
           "pupils": "Predict that the sound stops and explain the link."
         }
       ],
-      "follow_up": "Repeat with a second source to reinforce the vibration link."
+      "follow_up": "Repeat with a second source to reinforce the vibration link.",
+      "success_criteria": "A vibrating part is identified. Observations from at least two sides show that sound spreads beyond a single direction."
     },
     {
       "id": "DLP-SCI-Y4-L37",
@@ -2002,7 +2047,8 @@
           "pupils": "Explain that the reflected sound travels a longer route."
         }
       ],
-      "follow_up": "Add arrows to distinguish outgoing and reflected sound."
+      "follow_up": "Add arrows to distinguish outgoing and reflected sound.",
+      "success_criteria": "Each example traces sound to a surface and back to the listener. The returned sound is identified as the echo."
     },
     {
       "id": "DLP-SCI-Y4-L38",
@@ -2049,7 +2095,8 @@
           "pupils": "Explain using the task and sound level."
         }
       ],
-      "follow_up": "Use a second context to check reasoning on a borderline example."
+      "follow_up": "Use a second context to check reasoning on a borderline example.",
+      "success_criteria": "Four examples are sorted by effect. One explanation shows how the same sound can help or disturb in different settings."
     },
     {
       "id": "DLP-SCI-Y4-L39",
@@ -2096,7 +2143,8 @@
           "pupils": "Identify a source-level change and say why it helps."
         }
       ],
-      "follow_up": "Revisit proposals that only restate that the classroom should be quieter."
+      "follow_up": "Revisit proposals that only restate that the classroom should be quieter.",
+      "success_criteria": "One change addresses the named noise source. The explanation tells how the change would lower the noise reaching listeners."
     },
     {
       "id": "DLP-SCI-Y4-R06",
@@ -2116,7 +2164,7 @@
         "TB p. 122"
       ],
       "objective": "Explain an echo and propose a change to reduce sound pollution in a familiar setting.",
-      "materials": "Echo diagram, noise scenario slips, arrows",
+      "materials": "Paper, pencil, wall-echo and library-chair scenarios",
       "phases": [
         {
           "phase": "Set induction",
@@ -2127,7 +2175,7 @@
         {
           "phase": "Main activity",
           "minutes": 15,
-          "teacher": "Provide a sound path diagram and a second scenario about library noise.",
+          "teacher": "A pupil claps and hears the sound again after it reaches a distant wall. Ask for an arrow diagram. In a library, chair legs scrape the floor. Ask for one change at the chairs and why it would help.",
           "pupils": "Add arrows for the reflected sound and suggest a practical noise reduction measure."
         },
         {
@@ -2147,7 +2195,8 @@
       "review_lss": [
         "6.1.3",
         "6.1.5"
-      ]
+      ],
+      "success_criteria": "Two arrows trace an echo to the wall and back. A practical change at the library chairs explains how the scraping is reduced."
     },
     {
       "id": "DLP-SCI-Y4-L40",
@@ -2194,7 +2243,8 @@
           "pupils": "Name the source and the work done."
         }
       ],
-      "follow_up": "Explain the difference between a source and a device using another picture."
+      "follow_up": "Explain the difference between a source and a device using another picture.",
+      "success_criteria": "Four sources match the pictured devices. One explanation links an energy source to the work the device can do."
     },
     {
       "id": "DLP-SCI-Y4-L41",
@@ -2241,7 +2291,8 @@
           "pupils": "Point to rotating blades and link the motion to kinetic energy."
         }
       ],
-      "follow_up": "Use an annotated device picture to reinforce the difference between form and source."
+      "follow_up": "Use an annotated device picture to reinforce the difference between form and source.",
+      "success_criteria": "The pupil names two forms of energy in one device and gives a distinct clue, such as a moving blade or an audible sound, for each."
     },
     {
       "id": "DLP-SCI-Y4-L42",
@@ -2288,7 +2339,8 @@
           "pupils": "Explain that the arrow represents a change from one form to another."
         }
       ],
-      "follow_up": "Reconstruct a mixed-up transformation sequence."
+      "follow_up": "Reconstruct a mixed-up transformation sequence.",
+      "success_criteria": "Both chains identify the input and output. The torch chain shows chemical energy in the battery changing through electrical energy."
     },
     {
       "id": "DLP-SCI-Y4-L43",
@@ -2335,7 +2387,8 @@
           "pupils": "Identify an output such as heat transferred to the surroundings."
         }
       ],
-      "follow_up": "Add a missing output arrow and trace where that energy goes."
+      "follow_up": "Add a missing output arrow and trace where that energy goes.",
+      "success_criteria": "The diagram traces the useful output and heat or sound to the surroundings. The explanation accounts for conservation of energy."
     },
     {
       "id": "DLP-SCI-Y4-L44",
@@ -2382,7 +2435,8 @@
           "pupils": "Explain that it takes much longer to form."
         }
       ],
-      "follow_up": "Practise using replenishment as the classification rule."
+      "follow_up": "Practise using replenishment as the classification rule.",
+      "success_criteria": "Sunlight, wind and flowing water form one group. Coal, oil and gas form the other. The reason refers to how quickly each is replaced."
     },
     {
       "id": "DLP-SCI-Y4-L45",
@@ -2429,7 +2483,8 @@
           "pupils": "Use room occupancy or daylight as the deciding evidence."
         }
       ],
-      "follow_up": "Refine proposals that omit how the action saves energy."
+      "follow_up": "Refine proposals that omit how the action saves energy.",
+      "success_criteria": "Each of two actions identifies an avoidable use of energy and explains the demand it reduces."
     },
     {
       "id": "DLP-SCI-Y4-R07",
@@ -2449,7 +2504,7 @@
         "TB p. 140"
       ],
       "objective": "Classify sources of energy and label the energy changes in a familiar device.",
-      "materials": "Energy source cards, fan and torch pictures, arrow strips",
+      "materials": "Four energy source cards, battery torch or drawing, arrow strips",
       "phases": [
         {
           "phase": "Set induction",
@@ -2460,7 +2515,7 @@
         {
           "phase": "Main activity",
           "minutes": 15,
-          "teacher": "Set a source-sort task and a separate device transformation task.",
+          "teacher": "Give four source cards showing sunlight, wind, coal and oil. Ask pupils to sort them by how quickly each is replaced. Use a battery torch to trace energy from the battery to the light and heat it produces.",
           "pupils": "Classify examples, then label the input and outputs of one device."
         },
         {
@@ -2480,7 +2535,8 @@
       "review_lss": [
         "7.1.4",
         "7.2.1"
-      ]
+      ],
+      "success_criteria": "Sunlight and wind are grouped together, coal and oil together. The torch arrows trace battery energy to light and heat."
     },
     {
       "id": "DLP-SCI-Y4-L46",
@@ -2527,7 +2583,8 @@
           "pupils": "Explain that sand used for glass and metals belong with rocks in the textbook classification."
         }
       ],
-      "follow_up": "Match a clay bowl and a glass bottle to their materials and place both in the rocks group."
+      "follow_up": "Match a clay bowl and a glass bottle to their materials and place both in the rocks group.",
+      "success_criteria": "The five objects are grouped by their four sources. One explanation traces a glass bottle through sand to the rocks group."
     },
     {
       "id": "DLP-SCI-Y4-L47",
@@ -2574,7 +2631,8 @@
           "pupils": "Use two observations from the tests to answer."
         }
       ],
-      "follow_up": "Recheck the distinction between floating and absorbing."
+      "follow_up": "Recheck the distinction between floating and absorbing.",
+      "success_criteria": "Four absorption counts are ordered, including any ties. A float or sink observation is recorded separately for each sample."
     },
     {
       "id": "DLP-SCI-Y4-L48",
@@ -2621,7 +2679,8 @@
           "pupils": "Use the results to separate the two properties."
         }
       ],
-      "follow_up": "Repeat one result for each property and ask pupils to name the observation that supports it."
+      "follow_up": "Repeat one result for each property and ask pupils to name the observation that supports it.",
+      "success_criteria": "The table keeps the LED and screen observations separate. The clear plastic can transmit light while leaving the circuit open."
     },
     {
       "id": "DLP-SCI-Y4-L49",
@@ -2646,7 +2705,7 @@
         {
           "phase": "Set induction",
           "minutes": 5,
-          "teacher": "Show a chart of temperatures at the far ends of the two samples before warming and after the same time.",
+          "teacher": "Show example readings at the far ends of equal-sized samples after equal warming times. Metal rises from 24 to 36 °C and wood from 24 to 26 °C. Ask pupils to compare the rises.",
           "pupils": "Find the start and end temperature for each sample."
         },
         {
@@ -2668,7 +2727,8 @@
           "pupils": "Explain that the strip must stretch and return close to its starting length to show elastic recovery."
         }
       ],
-      "follow_up": "Use a new set of readings to practise justifying both conclusions separately."
+      "follow_up": "Use a new set of readings to practise justifying both conclusions separately.",
+      "success_criteria": "A temperature rise supports the heat comparison. Three length readings show whether a strip returns close to its starting length."
     },
     {
       "id": "DLP-SCI-Y4-L50",
@@ -2715,7 +2775,8 @@
           "pupils": "Suggest one change and one fixed condition."
         }
       ],
-      "follow_up": "Revise the proposal when the material choice lacks measured evidence."
+      "follow_up": "Revise the proposal when the material choice lacks measured evidence.",
+      "success_criteria": "The drawing shows the cover and chosen material. The pupil uses the measured splash and the state of the insert to justify a revision or choice."
     },
     {
       "id": "DLP-SCI-Y4-R08",
@@ -2735,18 +2796,18 @@
         "TB p. 154"
       ],
       "objective": "Select a material for a specified purpose and support the choice with two observations.",
-      "materials": "Property results chart, cards for a bag, a curtain and a handle",
+      "materials": "Name card, clear plastic, tissue and foil, or the example results in the main activity",
       "phases": [
         {
           "phase": "Set induction",
           "minutes": 3,
-          "teacher": "Show a handle card and ask which property would matter.",
-          "pupils": "Suggest a property relevant to the handle."
+          "teacher": "Show a name card and ask which features it needs when it is displayed outdoors.",
+          "pupils": "Identify the need to read the name and protect it from water."
         },
         {
           "phase": "Main activity",
           "minutes": 15,
-          "teacher": "Assign one purpose and give a chart with two sources of evidence about each candidate material.",
+          "teacher": "Choose a cover that keeps a name card visible and dry. With five drops on each cover, the card under clear plastic was readable and dry, under tissue blurred and wet, and under foil hidden and dry. These are example results. Ask for a choice backed by two observations.",
           "pupils": "Compare choices and connect two observations to the stated use."
         },
         {
@@ -2766,7 +2827,8 @@
       "review_lss": [
         "8.2.1",
         "8.2.2"
-      ]
+      ],
+      "success_criteria": "The choice keeps a card visible and dry. The pupil cites the visibility result and the water result for the same material."
     },
     {
       "id": "DLP-SCI-Y4-L51",
@@ -2813,7 +2875,8 @@
           "pupils": "Use the resting example as evidence for the explanation."
         }
       ],
-      "follow_up": "Use a familiar supported object to practise applying the same reasoning."
+      "follow_up": "Use a familiar supported object to practise applying the same reasoning.",
+      "success_criteria": "Both diagrams show gravity towards Earth. The pupil explains that the table supports the stationary ball."
     },
     {
       "id": "DLP-SCI-Y4-L52",
@@ -2860,7 +2923,8 @@
           "pupils": "Identify rotation."
         }
       ],
-      "follow_up": "Repeat the model from the same viewing direction to avoid reversing arrows."
+      "follow_up": "Repeat the model from the same viewing direction to avoid reversing arrows.",
+      "success_criteria": "From above the North Pole both arrows go anticlockwise. One spin takes about 24 hours and one orbit about 365¼ days."
     },
     {
       "id": "DLP-SCI-Y4-L53",
@@ -2891,14 +2955,14 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Rotate the globe under the fixed lamp. Compare shadow photos for different times using a fixed marker.",
-          "pupils": "Identify when the mark enters or leaves the illuminated side and explain one shadow change."
+          "teacher": "Turn a marked globe from west to east under a fixed lamp. Use morning, midday and afternoon photos of one upright stick to compare shadow direction and length with the Sun’s apparent position.",
+          "pupils": "Follow the town from light into darkness. Sketch two shadow outlines for the same stick and label the apparent Sun position for each."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Check a labelled day/night diagram and an explanation of a change in shadow direction or length.",
-          "pupils": "Submit the diagram and explain a shadow change using the Sun's apparent position."
+          "teacher": "Check how rotation explains day and night, the apparent motion of the Sun and the changing length and direction of shadows.",
+          "pupils": "Label day and night on the globe, then use the two outlines to explain what changed in the shadows."
         },
         {
           "phase": "Closure",
@@ -2907,7 +2971,8 @@
           "pupils": "Identify the globe and explain the model."
         }
       ],
-      "follow_up": "Revisit the link between Earth's rotation and the apparent movement of the Sun."
+      "follow_up": "Revisit the link between Earth's rotation and the apparent movement of the Sun.",
+      "success_criteria": "The model explains day and night. Two shadow outlines show changes in length and direction as the Sun appears to cross the sky."
     },
     {
       "id": "DLP-SCI-Y4-L54",
@@ -2954,7 +3019,8 @@
           "pupils": "Name revolution and distinguish it from spinning."
         }
       ],
-      "follow_up": "Provide one motion sketch for pupils who still mix the two."
+      "follow_up": "Provide one motion sketch for pupils who still mix the two.",
+      "success_criteria": "The diagrams distinguish a spin on an axis from an orbit around the Sun. Each caption describes what the model shows."
     },
     {
       "id": "DLP-SCI-Y4-R09",
@@ -2974,7 +3040,7 @@
         "TB p. 168"
       ],
       "objective": "Explain day and night using a globe and identify the role of gravity in a separate example.",
-      "materials": "Marked globe, lamp, gravity picture and review slips",
+      "materials": "Globe, lamp, soft ball, table and individual drawing slips",
       "phases": [
         {
           "phase": "Set induction",
@@ -2985,14 +3051,14 @@
         {
           "phase": "Main activity",
           "minutes": 15,
-          "teacher": "Assign two tasks: model day and night and explain one gravity scenario involving a falling or supported object.",
+          "teacher": "Mark a town on a globe facing the lamp. Turn the globe until the town faces away. Ask why night falls. Then compare a falling ball with one resting on a table and draw the gravity arrow in each case.",
           "pupils": "Demonstrate the rotation and annotate an arrow for gravity on the diagram."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 9,
           "teacher": "Check the rotation explanation and why gravity acts in the second example.",
-          "pupils": "Independently submit the two labelled diagrams."
+          "pupils": "Submit a day/night sketch and a second sketch comparing gravity on the falling and supported ball."
         },
         {
           "phase": "Closure",
@@ -3005,7 +3071,8 @@
       "review_lss": [
         "9.1.1",
         "9.2.3"
-      ]
+      ],
+      "success_criteria": "The marked point enters darkness as the globe turns. Both ball sketches show gravity towards Earth and one shows the table’s support."
     },
     {
       "id": "DLP-SCI-Y4-L55",
@@ -3052,7 +3119,8 @@
           "pupils": "Trace the movement of the lever arm."
         }
       ],
-      "follow_up": "Repeat labelling on an unfamiliar lever picture."
+      "follow_up": "Repeat labelling on an unfamiliar lever picture.",
+      "success_criteria": "Each diagram identifies the pivot, the load and where the effort acts. The pupil points to the effort on both levers."
     },
     {
       "id": "DLP-SCI-Y4-L56",
@@ -3099,7 +3167,8 @@
           "pupils": "Explain that the test aims to compare position."
         }
       ],
-      "follow_up": "Use a labelled diagram when pupils confuse load distance and effort distance."
+      "follow_up": "Use a labelled diagram when pupils confuse load distance and effort distance.",
+      "success_criteria": "The pupil compares two force readings with equal loads. The nearer load requires less effort when the effort point is fixed."
     },
     {
       "id": "DLP-SCI-Y4-L57",
@@ -3146,7 +3215,8 @@
           "pupils": "Identify the gear and describe how it can transfer movement."
         }
       ],
-      "follow_up": "Compare examples for the categories most often confused."
+      "follow_up": "Compare examples for the categories most often confused.",
+      "success_criteria": "Seven examples match the seven machine types. Three explanations say how the machine helps someone do a specific task."
     },
     {
       "id": "DLP-SCI-Y4-L58",
@@ -3193,7 +3263,8 @@
           "pupils": "Cite the raised path and the rolling movement observed."
         }
       ],
-      "follow_up": "Improve the model by changing one feature and testing the result."
+      "follow_up": "Improve the model by changing one feature and testing the result.",
+      "success_criteria": "A labelled sketch identifies the inclined plane and the wheel and axle. The pupil explains how each helps move the load."
     },
     {
       "id": "DLP-SCI-Y4-L59",
@@ -3231,7 +3302,7 @@
           "phase": "Practice and assessment",
           "minutes": 20,
           "teacher": "Check two labelled mechanisms and a clear linked description of the movement.",
-          "pupils": "Individually annotate the mechanism and explain how both simple machines work together."
+          "pupils": "Label the two simple machines, trace how movement reaches the whisks and give a one-sentence definition of a complex machine."
         },
         {
           "phase": "Closure",
@@ -3240,7 +3311,8 @@
           "pupils": "Explain why the input cannot transfer rotation to the whisk as intended."
         }
       ],
-      "follow_up": "Recheck the path of movement using arrows from the handle to the output."
+      "follow_up": "Trace the turning parts in another hand tool and explain what makes it a complex machine.",
+      "success_criteria": "The sketch traces movement from handle and axle through gears to the whisks. The pupil explains how the simple machines work together."
     },
     {
       "id": "DLP-SCI-Y4-R10",
@@ -3260,7 +3332,7 @@
         "TB p. 184"
       ],
       "objective": "Compare two lever setups and identify the simple machines in an everyday device.",
-      "materials": "Two lever sketches with identical loads, everyday-device diagram, review slip",
+      "materials": "Ruler lever, pivot, small load and picture of a hand-operated egg beater",
       "phases": [
         {
           "phase": "Set induction",
@@ -3271,7 +3343,7 @@
         {
           "phase": "Main activity",
           "minutes": 15,
-          "teacher": "Assign a lever comparison and a device-identification task using labelled drawings.",
+          "teacher": "Keep the same load and effort point. Put the load first 2 cm, then 6 cm from the pivot. Ask which position takes less effort and why. On a hand-operated egg beater, identify the handle and axle, gears and the part that turns.",
           "pupils": "Predict which setup needs less effort and identify two simple machines in the device."
         },
         {
@@ -3291,7 +3363,8 @@
       "review_lss": [
         "10.1.2",
         "10.2.3"
-      ]
+      ],
+      "success_criteria": "With the effort point fixed, the nearer load needs less effort. Two labels identify the wheel and axle and the gears in a hand mixer."
     }
   ]
 }

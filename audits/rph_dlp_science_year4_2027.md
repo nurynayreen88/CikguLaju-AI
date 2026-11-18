@@ -34,3 +34,14 @@ Draf laluan aplikasi menggunakan penjana yang sama, dengan medan kelas, tarikh, 
 - [PR ujian akaun guru #940](https://github.com/nurynayreen88/CikguLaju-AI/pull/940) lulus ujian akses dan cap SHA-256 untuk empat fail Lesson 46 dan Review 08. Deploy Google staging `dep-dbunhdqjnfac73dq1hu0` aktif pada 18:08 MYT dengan binaan `3fe5fee38407`. Pelayar sampai ke halaman log masuk. Sesi guru dan muat turun sebenar belum disahkan.
 
 **HOLD ujian akaun guru.** Set menunggu pengesahan muat turun Word/PDF menggunakan akaun guru sebenar sebelum penerbitan.
+
+## Edisi bilik darjah
+
+Pakej edisi bilik darjah menggunakan turutan dan objektif bagi 69 sesi dalam RPT asal. RPT memadankan setiap sesi dengan RPH melalui tajuk, tarikh Kumpulan A/B, CS/LS, halaman buku, tempoh, objektif dan kriteria kejayaan murid. Sepuluh Review mempunyai nombor dan kod LS khusus daripada pelajaran yang telah diajar. Tujuh minggu fleksibel mempunyai cadangan tindakan mengikut rekod PBD sekolah. Perancangan teras kekal 3,840 minit.
+
+- Lesson 08 dan 09 menggunakan julat yang sama bagi Kumpulan B, 2–4 Februari. Lampiran C memperuntukkan 5 Februari sebagai cuti tambahan KPM. [Kalendar akademik KPM 2027, Lampiran A–C](https://www.moe.gov.my/storage/files/shares/pekeliling_dan_garis_panduan/surat_siaran/SS%20KPM%20Bil.%201%20Tahun%202026%20-%20Kalendar%20Akademik%20Tahun%202027.pdf)
+- Lesson 18 menghubungkan pengambilan alkohol dengan respons yang lambat. Lesson 19 menamakan spirakel pada serangga. Lesson 25 menerangkan glukosa, penyimpanannya sebagai kanji dan pelepasan oksigen. [Buku teks BT074003, hlm. 46, 54 dan 78](https://anyflip.com/ejbrb/wxvo/basic/51-100)
+- Lesson 53 menghubungkan putaran Bumi dengan siang dan malam, perubahan ketara kedudukan Matahari serta perubahan panjang dan arah bayang. [DSKP Science Year 4, hlm. 69](https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Science-Year-4.pdf#page=81)
+- Contoh data guru dalam Review 01 dan Review 08 membolehkan murid mengemukakan bukti tanpa perlu mencari jadual tambahan. Data contoh khusus turut disediakan untuk murid yang memerlukan pilihan duduk dalam Lesson 14 dan untuk perbandingan haba dalam Lesson 49.
+
+[Word dan PDF edisi bilik darjah](../staging/dlp/year4/bahan_guru) mengandungi buku RPT dan buku RPH. Untuk menjana semula kedua-dua buku serta folder satu fail bagi setiap sesi dan format, jalankan `python -m staging.dlp.year4.teacher_pack <folder>`. Penerbitan aplikasi direkodkan berasingan daripada penyerahan bahan terus kepada guru. Kelulusan versi `786f698` merujuk kepada edisi terdahulu.
