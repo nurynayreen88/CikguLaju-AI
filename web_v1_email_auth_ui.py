@@ -15,7 +15,7 @@ LOGIN_HTML = """
   </div>
   <label for="email-login-address">Alamat emel</label>
   <input id="email-login-address" type="email" autocomplete="email"
-         placeholder="nama@sekolah.edu.my" maxlength="254" required>
+         placeholder="nama@gmail.com" maxlength="254" required>
   <label for="email-login-password">Kata laluan</label>
   <input id="email-login-password" type="password" autocomplete="current-password"
          placeholder="Sekurang-kurangnya 8 aksara" minlength="8" maxlength="72" required>
