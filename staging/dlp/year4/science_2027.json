@@ -3,7 +3,7 @@
   "planning_year": 2027,
   "subject": "SCIENCE_DLP",
   "rpt_file": "CikguLaju_RPT_DLP_2027_Science_Year_4_review_sources.docx",
-  "rpt_sha256": "f2b6f0a3958073abf1341239b812e2a8a476d8080ded499a9518dbbdad5a19fd",
+  "rpt_sha256": "acdf0c953e41e6b381af21bde49c91bba43a5d11aad0c50a4d2507ee7d9a3283",
   "plans": [
     {
       "id": "DLP-SCI-Y4-L01",
@@ -2499,7 +2499,7 @@
       "references": [
         "TB pp. 142-144"
       ],
-      "objective": "Classify objects by their plant, animal, rock, soil or petroleum source and explain one source–material–object link.",
+      "objective": "Classify objects by plant, animal, rock, soil or petroleum source and justify one classification.",
       "materials": "Picture cards for wooden chair, wool sweater, metal nail, glass bottle and plastic bottle; transfer cards for cotton shirt, leather shoes, metal coin, mirror and synthetic raincoat; five basic-source labels and source–material–object arrows. Use pictures, not loose glass or sharp nails.",
       "phases": [
         {
