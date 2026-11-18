@@ -2500,7 +2500,7 @@
         "TB pp. 142-144"
       ],
       "objective": "Classify objects using all five basic sources—plants, animals, rocks, soil and petroleum—and explain one source–material–object link.",
-      "materials": "Picture cards: wooden chair, wool sweater, metal nail, glass bottle and plastic bottle; five basic-source labels; source–material–object arrow cards. Use pictures, not loose glass or sharp nails.",
+      "materials": "Picture cards for wooden chair, wool sweater, metal nail, glass bottle and plastic bottle; transfer cards for cotton shirt, leather shoes, metal coin, mirror and synthetic raincoat; five basic-source labels and source–material–object arrows. Use pictures, not loose glass or sharp nails.",
       "phases": [
         {
           "phase": "Set induction",
@@ -2517,8 +2517,8 @@
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Give each pupil five new picture cards, one for each source. Check all five classifications and one written source–material–object explanation.",
-          "pupils": "Independently label the source for five objects, then write one complete chain such as soil → sand → glass bottle."
+          "teacher": "Use a fresh set of picture cards: cotton shirt, leather shoes, metal coin, mirror and synthetic raincoat. Check all five classifications and one written source–material–object explanation.",
+          "pupils": "Independently label the basic source for each new object, then write one complete chain, for example petroleum → synthetic cloth → raincoat."
         },
         {
           "phase": "Closure",
@@ -2527,7 +2527,7 @@
           "pupils": "State soil → sand → glass bottle and petroleum → plastic → plastic bottle, distinguishing each source from its material and object."
         }
       ],
-      "follow_up": "For pupils who confuse source and material, revisit the picture sequence soil → sand → glass bottle, then ask them to complete petroleum → plastic → plastic bottle."
+      "follow_up": "For pupils who confuse source and material, revisit soil → sand → mirror, then ask them to complete petroleum → synthetic cloth → raincoat."
     },
     {
       "id": "DLP-SCI-Y4-L47",
