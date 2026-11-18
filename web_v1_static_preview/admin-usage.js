@@ -22,6 +22,9 @@
 
   function show(data) {
     text("web-admin-users", number(data.registered_users));
+    text("web-admin-new-users-today", number(data.new_users_today));
+    text("web-admin-new-users-7d", number(data.new_users_7d));
+    text("web-admin-new-users-30d", number(data.new_users_30d));
     text("web-admin-rakan", number(data.rakan_pembangun));
     text("web-admin-today", number(data.users_today));
     text("web-admin-week", number(data.users_7d));
