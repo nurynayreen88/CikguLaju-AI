@@ -16,6 +16,7 @@ from rpt_2027.sjkc.sains import documents as sains_sjkc
 from rpt_2027.sjkc.matematik import documents as matematik_sjkc
 from rpt_2027.psv.telegram_downloads import pdf_ready as psv_pdf_ready, build_pdf as build_psv_pdf
 from rpt_2027.matematik.telegram_downloads import pdf_ready as math_pdf_ready
+from rpt_2027.matematik.sk_documents import DIGESTS as math_sk_editions
 from rpt_2027.bahasa_melayu.telegram_downloads import pdf_ready as bm_pdf_ready
 from rpt_2027.pendidikan_islam.telegram_downloads import pdf_ready as pi_pdf_ready
 from rpt_2027.pjpk.telegram_downloads import pdf_ready as pjpk_pdf_ready
@@ -145,7 +146,7 @@ def install(ns):
             return send(cid,
                 "📅 <b>RPT 2027</b>\n\n"
                 "English Tahun 2–6 tersedia dalam PDF (160 Lesson/tahun). Bahasa Melayu: RPT DRAF untuk semakan, jika tersedia. Pendidikan Islam: RPT cadangan, jika tersedia. "
-                "Matematik v28 dipaparkan hanya apabila PDF DRAF/SEMENTARA tersedia. PJPK Tahun 2–6: RPT DRAF (jika tersedia). Pendidikan Moral: satu PDF RPT merangkumi Kumpulan A/B (96 sesi/tahun). PSV: 42 PdP cadangan bagi Tahun 2–6.",
+                "Matematik SK Tahun 5–6: 117 Lesson dan 96 jam bagi setiap tahun. PJPK Tahun 2–6: RPT DRAF (jika tersedia). Pendidikan Moral: satu PDF RPT merangkumi Kumpulan A/B (96 sesi/tahun). PSV: 42 PdP cadangan bagi Tahun 2–6.",
                 kb)
         if is_year:
             suffix = data[len("rpt2027_year_"):]
@@ -156,9 +157,10 @@ def install(ns):
             if bm_pdf_ready(year):
                 kb.append([{"text": "📥 Bahasa Melayu (PDF • DRAF)",
                             "callback_data": "rpt2027_bm_pdf_%d" % year}])
-            # Do not advertise temporary PDFs until mounted and header-checked.
+            math_label = ("Matematik SK (PDF • Kumpulan A/B)" if year in math_sk_editions
+                          else "Matematik (PDF v28 • DRAF/SEMENTARA)")
             if math_pdf_ready(year, ns=ns):
-                kb.append([{"text": "📥 Matematik (PDF v28 • DRAF/SEMENTARA)",
+                kb.append([{"text": f"📥 {math_label}",
                             "callback_data": "rpt2027_math_pdf_%d" % year}])
             if pi_pdf_ready(year):
                 kb.append([{"text": "📥 Pendidikan Islam (PDF • Cadangan)",
@@ -203,7 +205,7 @@ def install(ns):
                 "📅 <b>RPT 2027 — Tahun %d</b>\n\n"
                 "Pilih subjek untuk memuat turun RPT.\n"
                 "English: 160 Lesson; Kumpulan A/B dalam satu PDF.\nBahasa Melayu: RPT 2027 DRAF untuk semakan guru, jika tersedia.\n"
-                "Matematik v28: DRAF/SEMENTARA, jika fail tersedia.\nPendidikan Islam: cadangan untuk semakan guru, jika fail tersedia.\nPJPK: RPT cadangan PdP 2027 (DRAF), jika tersedia.\nPendidikan Moral: RPT PDF Kumpulan A dan B dan RPH Word/PDF bagi setiap PdP (96 sesi).\n\n"
+                f"{math_label}, jika fail tersedia.\nPendidikan Islam: cadangan untuk semakan guru, jika fail tersedia.\nPJPK: RPT cadangan PdP 2027 (DRAF), jika tersedia.\nPendidikan Moral: RPT PDF Kumpulan A dan B dan RPH Word/PDF bagi setiap PdP (96 sesi).\n\n"
                 "PSV: 42 PdP cadangan (PDF A4 landscape).\n\nTarikh individu bergantung kepada jadual kelas serta cuti negeri." % year,
                 kb)
         if is_psv:

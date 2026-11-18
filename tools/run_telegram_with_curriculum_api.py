@@ -513,6 +513,13 @@ except (OSError, ValueError, ImportError) as _sains_year6_exc:
           type(_sains_year6_exc).__name__, flush=True)
 
 
+try:
+    from staging.matematik.penjana_2027 import register_downloads as register_math_sk_2027
+    register_math_sk_2027(telegram_runtime.app)
+except (OSError, ValueError, ImportError, RuntimeError) as exc:
+    print("Matematik SK 2027 reader unavailable:", type(exc).__name__, flush=True)
+
+
 # Sejarah: register private source reader for the dedicated Web client.
 try:
     from web.sejarah_2027_native_api import create_sejarah_2027_native_blueprint
