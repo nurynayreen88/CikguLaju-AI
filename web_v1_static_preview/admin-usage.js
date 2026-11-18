@@ -13,6 +13,21 @@
   view.hidden = true;
   let busy = false;
 
+  // Keep a dedicated refresh control with the user registration metrics.
+  const registrationMetric = document.getElementById("web-admin-new-users-30d");
+  const registrationCard = registrationMetric && registrationMetric.closest(".admin-stats-card");
+  const statsGrid = view.querySelector(".admin-stats-grid");
+  if (registrationCard && statsGrid) {
+    const refreshRow = document.createElement("div");
+    refreshRow.className = "admin-users-refresh-row";
+    refreshRow.style.gridColumn = "1 / -1";
+    refreshRow.style.padding = "0 0 4px";
+    refresh.textContent = "🔄 Muat Semula Analisis Pengguna";
+    refresh.classList.add("profile-refresh");
+    refreshRow.appendChild(refresh);
+    registrationCard.insertAdjacentElement("afterend", refreshRow);
+  }
+
   const text = (id, value) => {
     const node = document.getElementById(id);
     if (node) node.textContent = value;
