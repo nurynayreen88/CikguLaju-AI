@@ -165,6 +165,25 @@ def _login_metrics(conf, now, opener=None):
     }
 
 
+def _new_user_metrics(conf, now, opener=None):
+    """Count newly created accounts from the authoritative user table."""
+    today_local = now.astimezone(MYT).replace(
+        hour=0, minute=0, second=0, microsecond=0)
+    windows = {
+        "new_users_today": today_local.astimezone(timezone.utc),
+        "new_users_7d": now - timedelta(days=7),
+        "new_users_30d": now - timedelta(days=30),
+    }
+    metrics = {}
+    for key, since in windows.items():
+        metrics[key] = _fetch(conf, "cikgulaju_users", {
+            "select": "telegram_user_id",
+            "created_at": "gte." + since.isoformat(),
+            "limit": "1",
+        }, count=True, opener=opener)
+    return metrics
+
+
 def summarize_admin_usage(conf, *, now=None, opener=None):
     now = now or datetime.now(timezone.utc)
     if now.tzinfo is None:
@@ -183,8 +202,10 @@ def summarize_admin_usage(conf, *, now=None, opener=None):
         "select": "telegram_user_id", "limit": "1"
     }, count=True, opener=opener)
     login = _login_metrics(conf, now, opener=opener)
+    new_users = _new_user_metrics(conf, now, opener=opener)
     return {
         "registered_users": users, "rakan_pembangun": pioneers,
+        **new_users,
         "trial_credit_debits": credit_usage,
         # The historic delivery ledger is not backfilled. Zero rows MUST NOT
         # be represented as zero generated RPH across the whole product.
