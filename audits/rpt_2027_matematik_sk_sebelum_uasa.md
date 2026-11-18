@@ -86,6 +86,19 @@ Tambahan 75 RPH 60 minit bagi setiap tahun melengkapkan set 117 Lesson. Set 60 m
 - Kesemua 234 Word dan 234 PDF individu muat satu halaman A4. Kedua-dua RPT PDF mempunyai 14 halaman, 44 minggu dan 117 Lesson. Tajuk, SK/SP, tarikh Kumpulan A/B, tempoh, halaman buku teks dan evidens PBD sepadan pada kesemua 234 pasangan RPT/RPH. Lima ujian integriti bank v60 lulus.
 - Jalankan `PYTHONPATH=. python -m staging.matematik.eksport_tahap2 --tahun 5 --output /tmp/Matematik_SK_Tahun_5` untuk mengeksport satu PDF RPT dan 117 RPH Word/PDF. Gunakan `--tahun 6 --output /tmp/Matematik_SK_Tahun_6` untuk set kedua.
 
+### Semakan Unit 5–8 Tahun 5
+
+Semak 50 Lesson bernombor 068–117 dengan [DSKP Matematik Tahun 5, hlm. 50–64](https://asiemodel.net/wp-content/uploads/2022/08/009_DSKP_KSSR_Semakan_2017_Matematik_Thn5-print.pdf) dan Buku Teks Matematik Tahun 5, hlm. 177–262. Pinda 38 RPH bagi memperincikan contoh, tugasan dan jawapan PBD.
+
+| Lesson | Unit | Semakan akademik |
+| --- | --- | --- |
+| 068–095 | Ukuran dan Sukatan | Seragamkan unit sebelum mengira. Bezakan darab dan bahagi dengan bilangan dua digit daripada operasi dengan 100 dan 1 000. Semak kecukupan baki dan jawapan dengan operasi songsang. |
+| 096–104 | Ruang | Tanda ciri poligon sekata termasuk sudut pedalaman. Perincikan bentuk gabungan tanpa pertindihan, bahagian sisi yang dikongsi dan beza unit panjang, luas dan isi padu. Lesson 104 menggunakan model kubus dan kuboid untuk mencari isi padu. |
+| 105–112 | Koordinat, Nisbah dan Kadaran | Nyatakan jarak dua paksi dalam unit grid, termasuk sifar, dan label arah. Seragamkan ukuran sebelum menulis tiga bentuk nisbah. Bezakan kadaran melalui faktor skala dan kaedah unitari. |
+| 113–117 | Pengurusan Data | Lesson 113–114 menggunakan carta pai asal pada [hlm. 252–253](https://anyflip.com/zvyxx/ijeu/basic/251-282). Semak sektor tidak berlabel, bilangan daripada peratus, dua mod dalam data, median bilangan genap, perbandingan julat dan pengiraan purata sasaran. |
+
+Nombor Lesson, tempoh 30/60 minit, SK/SP dan tarikh Kumpulan A/B dikekalkan ketika RPT dan RPH diselaraskan. Semua 117 padanan RPT dan RPH lulus untuk tajuk, rujukan halaman, tarikh, tempoh dan evidens PBD. RPT mempunyai 14 halaman. Kesemua PDF individu dan Word selepas penukaran muat satu halaman A4. Lima ujian integriti v60 dan semakan pengiraan PBD terpilih lulus. Unit 1–4 menunggu semakan kandungan terperinci. Pengesahan guru dan ujian muat turun Web serta Telegram masih diperlukan untuk pelepasan.
+
 ### Semakan Unit 7 Tahun 6
 
 Semakan DSKP Matematik Tahun 6, hlm. 56, memadankan Lesson 097 dan 099 dengan SP 7.2.1, Lesson 100 dan 102 dengan SP 7.3.1 serta Lesson 106 dengan SP 7.4.1. Lesson 097 menggunakan faktor sepunya dan urutan nisbah. Lesson 099 menguji nisbah setara melalui bentuk termudah. Lesson 100 menggunakan kaedah unitari dan Lesson 102 menggunakan faktor skala. Lesson 106 mengira kuantiti sepeket dan membandingkan stok dengan jumlah yang diperlukan. Set induksi dan kedua-dua aktiviti utama menggunakan contoh khusus untuk guru dan murid. RPT dan RPH mengekalkan halaman buku, tugasan PBD, evidens, tempoh serta tarikh A/B yang sepadan.
