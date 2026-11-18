@@ -136,17 +136,18 @@ def options():
             return jsonify({"error": "invalid option kind"}), 400
         if kind == "components":
             return jsonify(component_options(request.args.get("subject", "")))
-        if request.args.get("subject") == "MATH_DLP" and kind in ("units", "pdp"):
+        dlp_subject = request.args.get("subject")
+        if dlp_subject in ("MATH_DLP", "SCIENCE_DLP") and kind in ("units", "pdp"):
             from web.native_telegram_sequence_rph_client import (
                 list_native_units, list_native_lessons, NativeRPHUnavailable,
             )
             if year != 6 or request.args.get("component"):
-                return jsonify({"error": "Invalid Mathematics DLP selection"}), 400
+                return jsonify({"error": "Invalid DLP selection"}), 400
             try:
-                options = (list_native_units(year, "MATH_DLP") if kind == "units"
-                           else list_native_lessons(year, "MATH_DLP", request.args.get("unit", "")))
+                options = (list_native_units(year, dlp_subject) if kind == "units"
+                           else list_native_lessons(year, dlp_subject, request.args.get("unit", "")))
             except (NativeRPHUnavailable, ValueError):
-                return jsonify({"error": "Sumber Mathematics DLP Year 6 belum tersedia."}), 503
+                return jsonify({"error": "Sumber DLP Year 6 belum tersedia."}), 503
             return jsonify(options)
         # A versioned Web copy is opt-in and is never misrepresented as the
         # active Telegram database. Accounts/quota still use shared Supabase.
@@ -321,7 +322,7 @@ def options():
                         try:
                             source_units = (list_native_units(
                                 year, subject, current_unit=request.args.get("unit", ""))
-                                if (year, subject) == (5, "SCIENCE") and kind == "pdp"
+                                if year in (5, 6) and subject == "SCIENCE" and kind == "pdp"
                                 else list_native_units(year, subject))
                             if subject == "MATH":
                                 from web.math_unit_groups import (

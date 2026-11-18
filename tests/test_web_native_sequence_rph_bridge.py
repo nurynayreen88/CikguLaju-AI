@@ -30,7 +30,7 @@ class WebNativePdPBridgeTests(unittest.TestCase):
 
     def test_web_rph_proxies_only_to_native_telegram_engine(self):
         code=(ROOT/"web"/"unified_rph_web.py").read_text("utf-8")
-        self.assertIn('if subject in ("MATH", "SCIENCE", "MATH_DLP"):',code)
+        self.assertIn('if subject in ("MATH", "SCIENCE", "MATH_DLP", "SCIENCE_DLP"):',code)
         self.assertIn('verified_native_sequence_available(year, subject, unit, token)',code)
         self.assertIn('request_native_sequence_rph(selected, fmt)',code)
         self.assertIn('source": "telegram-native-pdp-sequence"',code)
@@ -63,9 +63,23 @@ class WebNativePdPBridgeTests(unittest.TestCase):
             self.assertEqual(list_native_units(5, "SCIENCE"), verified["items"])
         with self.assertRaises(ValueError):
             _selection(6, "SCIENCE", new["value"])
+        with patch("web.native_telegram_sequence_rph_client._read", return_value=verified) as read:
+            year6, = list_native_units(6, "SCIENCE")
+            self.assertEqual(year6["value"], "w" + "a" * 24)
+            route, selection = _selection(6, "SCIENCE", year6["value"], "SK27-SCI-Y6-PDP-013")
+            self.assertEqual(route, "/internal/rph/v1/sains-sk-y6-2027")
+            self.assertEqual(selection["unit"], "u" + "a" * 24)
+            self.assertEqual(read.call_args.kwargs, {"route": route})
+        with self.assertRaises(ValueError):
+            _selection(5, "SCIENCE", year6["value"])
 
     def test_dlp_exact_ids_keep_year_and_subject(self):
         self.assertEqual(_selection(6, "MATH_DLP", "01", "DLP-MATH-Y6-L01")[0], DLP_ROUTE)
+        self.assertEqual(_selection(6, "SCIENCE_DLP", "13", "DLP-SCI-Y6-R09")[0], DLP_ROUTE)
+        for unit, lesson in (("14", "DLP-SCI-Y6-L14"), ("01", "DLP-MATH-Y6-L01"),
+                             ("01", "DLP-SCI-Y6-L53"), ("01", "DLP-SCI-Y2-L01")):
+            with self.subTest(unit=unit, lesson=lesson), self.assertRaises(ValueError):
+                _selection(6, "SCIENCE_DLP", unit, lesson)
         for year, unit, lesson in ((5, "01", "DLP-MATH-Y6-L01"), (6, "09", "DLP-MATH-Y6-L01"),
                                    (6, "01", "DLP-MATH-Y6-R09"), (6, "01", "DLP-MATH-Y2-L01")):
             with self.subTest(year=year, unit=unit, lesson=lesson), self.assertRaises(ValueError):
@@ -76,12 +90,13 @@ class WebNativePdPBridgeTests(unittest.TestCase):
     def test_web_availability_uses_verified_dlp_service(self, *_):
         app = Flask(__name__)
         app.register_blueprint(create_blueprint())
-        selection = {"year": 6, "subject": "MATH_DLP", "unit": "01", "lesson": "DLP-MATH-Y6-L01"}
-        with patch("web.native_telegram_sequence_rph_client._read", return_value={"available": True}) as remote:
-            result = app.test_client().get("/api/web/rph/availability", query_string=selection)
-            self.assertEqual(result.status_code, 200)
-            self.assertEqual(result.json["generator"], "telegram-native")
-            remote.assert_called_once_with("availability", selection, route=DLP_ROUTE)
+        for subject, lesson in (("MATH_DLP", "DLP-MATH-Y6-L01"), ("SCIENCE_DLP", "DLP-SCI-Y6-L01")):
+            selection = {"year": 6, "subject": subject, "unit": "01", "lesson": lesson}
+            with patch("web.native_telegram_sequence_rph_client._read", return_value={"available": True}) as remote:
+                result = app.test_client().get("/api/web/rph/availability", query_string=selection)
+                self.assertEqual(result.status_code, 200)
+                self.assertEqual(result.json["generator"], "telegram-native")
+                remote.assert_called_once_with("availability", selection, route=DLP_ROUTE)
 
 
 if __name__=="__main__":

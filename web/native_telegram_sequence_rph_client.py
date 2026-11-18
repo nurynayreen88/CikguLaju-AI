@@ -17,20 +17,29 @@ from web.native_telegram_rph_client import (
 )
 from web.native_verified_rpt_rph_client import _backend
 
-SUBJECTS = frozenset(("MATH", "SCIENCE", "MATH_DLP"))
+SUBJECTS = frozenset(("MATH", "SCIENCE", "MATH_DLP", "SCIENCE_DLP"))
 UNITS = re.compile(r"u[a-f0-9]{24}")
-SCIENCE_2027_UNIT = re.compile(r"v[a-f0-9]{24}")
 SCIENCE_2027_ROUTE = "/internal/rph/v1/sains-sk-y5-2027"
+SCIENCE_2027_ROUTES = {
+    5: ("v", SCIENCE_2027_ROUTE),
+    6: ("w", "/internal/rph/v1/sains-sk-y6-2027"),
+}
 SEQUENCE_ROUTE = "/internal/rph/v1/sequence"
 DLP_ROUTE = "/internal/rph/v1/dlp"
 DLP_UNIT = re.compile(r"0[1-8]")
 DLP_LESSON = re.compile(r"DLP-MATH-Y6-(?:L(?:0[1-9]|[1-3][0-9]|4[0-6])|R0[1-8])")
+DLP_SCIENCE_UNIT = re.compile(r"(?:0[1-9]|1[0-3])")
+DLP_SCIENCE_LESSON = re.compile(r"DLP-SCI-Y6-(?:L(?:0[1-9]|[1-4][0-9]|5[0-2])|R0[1-9])")
+DLP_CATALOGUES = {
+    "MATH_DLP": ("year6-mathematics/catalogue", DLP_UNIT, DLP_LESSON, 8, 54),
+    "SCIENCE_DLP": ("year6-science/catalogue", DLP_SCIENCE_UNIT, DLP_SCIENCE_LESSON, 13, 61),
+}
 
 
 def _year_subject(year, subject):
     if type(year) is not int or year not in range(1, 7):
         raise ValueError("Invalid school year")
-    if subject not in SUBJECTS or (subject == "MATH_DLP" and year != 6):
+    if subject not in SUBJECTS or (subject in DLP_CATALOGUES and year != 6):
         raise ValueError("No Telegram native PdP sequence for subject")
     return year, subject
 
@@ -39,21 +48,22 @@ def _selection(year, subject, unit, lesson=None):
     _year_subject(year, subject)
     if not isinstance(unit, str):
         raise ValueError("Unverified native unit token")
+    science = SCIENCE_2027_ROUTES.get(year) if subject == "SCIENCE" else None
     route = SEQUENCE_ROUTE
-    if subject == "MATH_DLP" and DLP_UNIT.fullmatch(unit):
+    if subject in DLP_CATALOGUES and DLP_CATALOGUES[subject][1].fullmatch(unit):
         route = DLP_ROUTE
-    elif (year, subject) == (5, "SCIENCE") and SCIENCE_2027_UNIT.fullmatch(unit):
-        route = SCIENCE_2027_ROUTE
+    elif science and re.fullmatch(science[0] + r"[a-f0-9]{24}", unit):
+        route = science[1]
         unit = "u" + unit[1:]
-    elif subject == "MATH_DLP" or not UNITS.fullmatch(unit):
+    elif subject in DLP_CATALOGUES or not UNITS.fullmatch(unit):
         raise ValueError("Unverified native unit token")
     result = {"year":year, "subject":subject, "unit":unit}
     if lesson is not None:
         if (not isinstance(lesson, str) or not 0 < len(lesson) <= 100
                 or any(ord(c) < 32 for c in lesson)):
             raise ValueError("Invalid native PdP code")
-        if route == DLP_ROUTE and not DLP_LESSON.fullmatch(lesson):
-            raise ValueError("Invalid Mathematics DLP lesson code")
+        if route == DLP_ROUTE and not DLP_CATALOGUES[subject][2].fullmatch(lesson):
+            raise ValueError("Invalid DLP lesson code")
         result["lesson"] = lesson
     return route, result
 
@@ -92,43 +102,45 @@ def _units(data):
     return result
 
 
-def _dlp_catalogue():
-    data = _read("year6-mathematics/catalogue", {}, route=DLP_ROUTE)
-    if not isinstance(data, dict) or (data.get("year"), data.get("subject")) != (6, "MATH_DLP"):
-        raise NativeRPHUnavailable("Invalid Mathematics DLP catalogue")
+def _dlp_catalogue(subject):
+    endpoint, unit_pattern, lesson_pattern, unit_count, lesson_count = DLP_CATALOGUES[subject]
+    data = _read(endpoint, {}, route=DLP_ROUTE)
+    if not isinstance(data, dict) or (data.get("year"), data.get("subject")) != (6, subject):
+        raise NativeRPHUnavailable("Invalid DLP catalogue")
     units = data.get("units")
-    if not isinstance(units, list) or len(units) != 8:
-        raise NativeRPHUnavailable("Incomplete Mathematics DLP catalogue")
+    if not isinstance(units, list) or len(units) != unit_count:
+        raise NativeRPHUnavailable("Incomplete DLP catalogue")
     found = {}
     lesson_ids = set()
     for unit in units:
-        if (not isinstance(unit, dict) or not DLP_UNIT.fullmatch(str(unit.get("id", "")))
+        if (not isinstance(unit, dict) or not unit_pattern.fullmatch(str(unit.get("id", "")))
                 or unit["id"] in found or not isinstance(unit.get("title"), str)
                 or not unit["title"].strip() or not isinstance(unit.get("lessons"), list)):
-            raise NativeRPHUnavailable("Invalid Mathematics DLP unit")
+            raise NativeRPHUnavailable("Invalid DLP unit")
         found[unit["id"]] = unit
         for lesson in unit["lessons"]:
-            if (not isinstance(lesson, dict) or not DLP_LESSON.fullmatch(str(lesson.get("id", "")))
+            if (not isinstance(lesson, dict) or not lesson_pattern.fullmatch(str(lesson.get("id", "")))
                     or lesson["id"] in lesson_ids or not isinstance(lesson.get("title"), str)
                     or not isinstance(lesson.get("label"), str)
                     or not isinstance(lesson.get("book_reference"), str)):
-                raise NativeRPHUnavailable("Invalid Mathematics DLP lesson")
+                raise NativeRPHUnavailable("Invalid DLP lesson")
             lesson_ids.add(lesson["id"])
-    if len(lesson_ids) != 54:
-        raise NativeRPHUnavailable("Incomplete Mathematics DLP lessons")
+    if len(lesson_ids) != lesson_count:
+        raise NativeRPHUnavailable("Incomplete DLP lessons")
     return found
 
 
 def list_native_units(year, subject, *, current_unit=""):
     _year_subject(year, subject)
-    if subject == "MATH_DLP":
-        return [{"value": key, "label": unit["title"]} for key, unit in _dlp_catalogue().items()]
+    if subject in DLP_CATALOGUES:
+        return [{"value": key, "label": unit["title"]} for key, unit in _dlp_catalogue(subject).items()]
     params = {"year": year, "subject": subject}
-    if (year, subject) == (5, "SCIENCE") and not UNITS.fullmatch(current_unit):
+    if subject == "SCIENCE" and year in SCIENCE_2027_ROUTES and not UNITS.fullmatch(current_unit):
+        prefix, route = SCIENCE_2027_ROUTES[year]
         try:
-            items = _units(_read("units", params, route=SCIENCE_2027_ROUTE))
+            items = _units(_read("units", params, route=route))
             if items:
-                return [{**x, "value": "v" + x["value"][1:]} for x in items]
+                return [{**x, "value": prefix + x["value"][1:]} for x in items]
         except NativeRPHUnavailable:
             if current_unit:
                 raise
@@ -138,9 +150,9 @@ def list_native_units(year, subject, *, current_unit=""):
 def list_native_lessons(year, subject, unit):
     route, args = _selection(year, subject, unit)
     if route == DLP_ROUTE:
-        group = _dlp_catalogue().get(unit)
+        group = _dlp_catalogue(subject).get(unit)
         if group is None:
-            raise NativeRPHUnavailable("Unknown Mathematics DLP unit")
+            raise NativeRPHUnavailable("Unknown DLP unit")
         return [{"value": row["id"], "label": row["label"].split(" · ", 1)[0] + " • " + row["title"],
                  "textbook_ref": row["book_reference"]} for row in group["lessons"]]
     data = (_read("lessons", args) if route == SEQUENCE_ROUTE else _read("lessons", args, route=route))
