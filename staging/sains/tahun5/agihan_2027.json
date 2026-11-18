@@ -1,0 +1,1751 @@
+{
+  "sumber_rpt": {
+    "commit": "57aa5be4c9c0cc8511a545ee88dfb4423df50cb9",
+    "sha256_pdf": "87159f934d6c138d40777c96ea3c60e40664aef771cb408026e9f8fcaace90a8"
+  },
+  "minggu_pendek": [
+    1,
+    5,
+    10,
+    20,
+    30,
+    33,
+    35
+  ],
+  "minggu": [
+    {
+      "minggu": 1,
+      "A": [
+        "2027-01-04",
+        "2027-01-07"
+      ],
+      "B": [
+        "2027-01-04",
+        "2027-01-08"
+      ],
+      "pdp": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "minggu": 2,
+      "A": [
+        "2027-01-10",
+        "2027-01-14"
+      ],
+      "B": [
+        "2027-01-11",
+        "2027-01-15"
+      ],
+      "pdp": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "minggu": 3,
+      "A": [
+        "2027-01-17",
+        "2027-01-21"
+      ],
+      "B": [
+        "2027-01-18",
+        "2027-01-22"
+      ],
+      "pdp": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "minggu": 4,
+      "A": [
+        "2027-01-24",
+        "2027-01-28"
+      ],
+      "B": [
+        "2027-01-25",
+        "2027-01-29"
+      ],
+      "pdp": [
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "minggu": 5,
+      "A": [
+        "2027-01-31",
+        "2027-02-04"
+      ],
+      "B": [
+        "2027-02-01",
+        "2027-02-05"
+      ],
+      "pdp": [
+        14,
+        15
+      ]
+    },
+    {
+      "minggu": 6,
+      "A": [
+        "2027-02-07",
+        "2027-02-11"
+      ],
+      "B": [
+        "2027-02-08",
+        "2027-02-12"
+      ],
+      "catatan": "Cuti perayaan",
+      "pdp": []
+    },
+    {
+      "minggu": 7,
+      "A": [
+        "2027-02-14",
+        "2027-02-18"
+      ],
+      "B": [
+        "2027-02-15",
+        "2027-02-19"
+      ],
+      "pdp": [
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "minggu": 8,
+      "A": [
+        "2027-02-21",
+        "2027-02-25"
+      ],
+      "B": [
+        "2027-02-22",
+        "2027-02-26"
+      ],
+      "pdp": [
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "minggu": 9,
+      "A": [
+        "2027-02-28",
+        "2027-03-04"
+      ],
+      "B": [
+        "2027-03-01",
+        "2027-03-05"
+      ],
+      "pdp": [
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "minggu": 10,
+      "A": [
+        "2027-03-15",
+        "2027-03-18"
+      ],
+      "B": [
+        "2027-03-15",
+        "2027-03-19"
+      ],
+      "pdp": [
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "minggu": 11,
+      "A": [
+        "2027-03-21",
+        "2027-03-25"
+      ],
+      "B": [
+        "2027-03-22",
+        "2027-03-26"
+      ],
+      "pdp": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "minggu": 12,
+      "A": [
+        "2027-03-28",
+        "2027-04-01"
+      ],
+      "B": [
+        "2027-03-29",
+        "2027-04-02"
+      ],
+      "pdp": [
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "minggu": 13,
+      "A": [
+        "2027-04-04",
+        "2027-04-08"
+      ],
+      "B": [
+        "2027-04-05",
+        "2027-04-09"
+      ],
+      "pdp": [
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "minggu": 14,
+      "A": [
+        "2027-04-11",
+        "2027-04-15"
+      ],
+      "B": [
+        "2027-04-12",
+        "2027-04-16"
+      ],
+      "pdp": [
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "minggu": 15,
+      "A": [
+        "2027-04-18",
+        "2027-04-22"
+      ],
+      "B": [
+        "2027-04-19",
+        "2027-04-23"
+      ],
+      "pdp": [
+        45,
+        46,
+        47,
+        48
+      ]
+    },
+    {
+      "minggu": 16,
+      "A": [
+        "2027-04-25",
+        "2027-04-29"
+      ],
+      "B": [
+        "2027-04-26",
+        "2027-04-30"
+      ],
+      "pdp": [
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "minggu": 17,
+      "A": [
+        "2027-05-02",
+        "2027-05-06"
+      ],
+      "B": [
+        "2027-05-03",
+        "2027-05-07"
+      ],
+      "pdp": [
+        52,
+        53,
+        54,
+        55
+      ]
+    },
+    {
+      "minggu": 18,
+      "A": [
+        "2027-05-09",
+        "2027-05-13"
+      ],
+      "B": [
+        "2027-05-10",
+        "2027-05-14"
+      ],
+      "catatan": "Pentaksiran pertengahan tahun",
+      "pdp": []
+    },
+    {
+      "minggu": 19,
+      "A": [
+        "2027-05-16",
+        "2027-05-20"
+      ],
+      "B": [
+        "2027-05-17",
+        "2027-05-21"
+      ],
+      "catatan": "Cuti perayaan",
+      "pdp": []
+    },
+    {
+      "minggu": 20,
+      "A": [
+        "2027-06-06",
+        "2027-06-10"
+      ],
+      "B": [
+        "2027-06-07",
+        "2027-06-11"
+      ],
+      "pdp": [
+        56,
+        57,
+        58
+      ]
+    },
+    {
+      "minggu": 21,
+      "A": [
+        "2027-06-13",
+        "2027-06-17"
+      ],
+      "B": [
+        "2027-06-14",
+        "2027-06-18"
+      ],
+      "pdp": [
+        59,
+        60,
+        61,
+        62
+      ]
+    },
+    {
+      "minggu": 22,
+      "A": [
+        "2027-06-20",
+        "2027-06-24"
+      ],
+      "B": [
+        "2027-06-21",
+        "2027-06-25"
+      ],
+      "pdp": [
+        63,
+        64,
+        65
+      ]
+    },
+    {
+      "minggu": 23,
+      "A": [
+        "2027-06-27",
+        "2027-07-01"
+      ],
+      "B": [
+        "2027-06-28",
+        "2027-07-02"
+      ],
+      "pdp": [
+        66,
+        67
+      ]
+    },
+    {
+      "minggu": 24,
+      "A": [
+        "2027-07-04",
+        "2027-07-08"
+      ],
+      "B": [
+        "2027-07-05",
+        "2027-07-09"
+      ],
+      "pdp": [
+        68,
+        69,
+        70
+      ]
+    },
+    {
+      "minggu": 25,
+      "A": [
+        "2027-07-11",
+        "2027-07-15"
+      ],
+      "B": [
+        "2027-07-12",
+        "2027-07-16"
+      ],
+      "pdp": [
+        71,
+        72,
+        73,
+        74
+      ]
+    },
+    {
+      "minggu": 26,
+      "A": [
+        "2027-07-18",
+        "2027-07-22"
+      ],
+      "B": [
+        "2027-07-19",
+        "2027-07-23"
+      ],
+      "pdp": [
+        75,
+        76,
+        77
+      ]
+    },
+    {
+      "minggu": 27,
+      "A": [
+        "2027-07-25",
+        "2027-07-29"
+      ],
+      "B": [
+        "2027-07-26",
+        "2027-07-30"
+      ],
+      "pdp": [
+        78,
+        79
+      ]
+    },
+    {
+      "minggu": 28,
+      "A": [
+        "2027-08-01",
+        "2027-08-05"
+      ],
+      "B": [
+        "2027-08-02",
+        "2027-08-06"
+      ],
+      "pdp": [
+        80,
+        81,
+        82,
+        83
+      ]
+    },
+    {
+      "minggu": 29,
+      "A": [
+        "2027-08-08",
+        "2027-08-12"
+      ],
+      "B": [
+        "2027-08-09",
+        "2027-08-13"
+      ],
+      "pdp": [
+        84,
+        85,
+        86
+      ]
+    },
+    {
+      "minggu": 30,
+      "A": [
+        "2027-08-15",
+        "2027-08-19"
+      ],
+      "B": [
+        "2027-08-16",
+        "2027-08-20"
+      ],
+      "pdp": [
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "minggu": 31,
+      "A": [
+        "2027-08-22",
+        "2027-08-26"
+      ],
+      "B": [
+        "2027-08-23",
+        "2027-08-27"
+      ],
+      "pdp": [
+        90,
+        91,
+        92
+      ]
+    },
+    {
+      "minggu": 32,
+      "A": [
+        "2027-09-05",
+        "2027-09-09"
+      ],
+      "B": [
+        "2027-09-06",
+        "2027-09-10"
+      ],
+      "pdp": [
+        93,
+        94,
+        95
+      ]
+    },
+    {
+      "minggu": 33,
+      "A": [
+        "2027-09-12",
+        "2027-09-16"
+      ],
+      "B": [
+        "2027-09-13",
+        "2027-09-17"
+      ],
+      "pdp": [
+        96,
+        97
+      ]
+    },
+    {
+      "minggu": 34,
+      "A": [
+        "2027-09-19",
+        "2027-09-23"
+      ],
+      "B": [
+        "2027-09-20",
+        "2027-09-24"
+      ],
+      "pdp": [
+        98,
+        99,
+        100,
+        101
+      ]
+    },
+    {
+      "minggu": 35,
+      "A": [
+        "2027-09-26",
+        "2027-09-30"
+      ],
+      "B": [
+        "2027-09-27",
+        "2027-10-01"
+      ],
+      "pdp": [
+        102,
+        103,
+        104
+      ]
+    },
+    {
+      "minggu": 36,
+      "A": [
+        "2027-10-03",
+        "2027-10-07"
+      ],
+      "B": [
+        "2027-10-04",
+        "2027-10-08"
+      ],
+      "pdp": [
+        105,
+        106,
+        107,
+        108
+      ]
+    },
+    {
+      "minggu": 37,
+      "A": [
+        "2027-10-10",
+        "2027-10-14"
+      ],
+      "B": [
+        "2027-10-11",
+        "2027-10-15"
+      ],
+      "pdp": [
+        109,
+        110,
+        111,
+        112
+      ]
+    },
+    {
+      "minggu": 38,
+      "A": [
+        "2027-10-17",
+        "2027-10-21"
+      ],
+      "B": [
+        "2027-10-18",
+        "2027-10-22"
+      ],
+      "pdp": [
+        113,
+        114,
+        115,
+        116
+      ]
+    },
+    {
+      "minggu": 39,
+      "A": [
+        "2027-10-24",
+        "2027-10-28"
+      ],
+      "B": [
+        "2027-10-25",
+        "2027-10-29"
+      ],
+      "catatan": "Ulang kaji dan persediaan UASA mengikut takwim sekolah",
+      "pdp": []
+    },
+    {
+      "minggu": 40,
+      "A": [
+        "2027-10-31",
+        "2027-11-04"
+      ],
+      "B": [
+        "2027-11-01",
+        "2027-11-05"
+      ],
+      "catatan": "Pentaksiran atau aktiviti selepas UASA mengikut takwim sekolah",
+      "pdp": []
+    },
+    {
+      "minggu": 41,
+      "A": [
+        "2027-11-07",
+        "2027-11-11"
+      ],
+      "B": [
+        "2027-11-08",
+        "2027-11-12"
+      ],
+      "catatan": "Pentaksiran atau aktiviti selepas UASA mengikut takwim sekolah",
+      "pdp": []
+    },
+    {
+      "minggu": 42,
+      "A": [
+        "2027-11-14",
+        "2027-11-18"
+      ],
+      "B": [
+        "2027-11-15",
+        "2027-11-19"
+      ],
+      "catatan": "Pentaksiran atau aktiviti selepas UASA mengikut takwim sekolah",
+      "pdp": []
+    },
+    {
+      "minggu": 43,
+      "A": [
+        "2027-11-21",
+        "2027-11-25"
+      ],
+      "B": [
+        "2027-11-22",
+        "2027-11-26"
+      ],
+      "catatan": "Pentaksiran atau aktiviti selepas UASA mengikut takwim sekolah",
+      "pdp": []
+    },
+    {
+      "minggu": 44,
+      "A": [
+        "2027-11-28",
+        "2027-12-02"
+      ],
+      "B": [
+        "2027-11-29",
+        "2027-12-03"
+      ],
+      "catatan": "Aktiviti akhir tahun",
+      "pdp": []
+    }
+  ],
+  "pdp": [
+    {
+      "id": 1,
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Pemerhatian kualitatif dengan deria",
+      "sp": "1.1.1",
+      "minutes": 30,
+      "review": false,
+      "pages": "2-3"
+    },
+    {
+      "id": 2,
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Pengukuhan pemerhatian sebelum dan selepas",
+      "sp": "1.1.1",
+      "minutes": 30,
+      "review": true,
+      "pages": "5-7"
+    },
+    {
+      "id": 3,
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Pengelasan berdasarkan ciri sepunya",
+      "sp": "1.1.2",
+      "minutes": 30,
+      "review": false,
+      "pages": "2-5"
+    },
+    {
+      "id": 4,
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Pengukuran suhu dengan unit piawai",
+      "sp": "1.1.3",
+      "minutes": 30,
+      "review": false,
+      "pages": "5-7,146-149"
+    },
+    {
+      "id": 5,
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Inferens daripada bacaan suhu",
+      "sp": "1.1.4",
+      "minutes": 30,
+      "review": false,
+      "pages": "5-7,152-153"
+    },
+    {
+      "id": 6,
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Ramalan perubahan suhu",
+      "sp": "1.1.5",
+      "minutes": 30,
+      "review": false,
+      "pages": "5-7,15"
+    },
+    {
+      "id": 7,
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Pengukuhan ramalan berdasarkan data baharu",
+      "sp": "1.1.5",
+      "minutes": 30,
+      "review": true,
+      "pages": "11-12,15"
+    },
+    {
+      "id": 8,
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Menyampaikan dapatan dalam jadual",
+      "sp": "1.1.6",
+      "minutes": 30,
+      "review": false,
+      "pages": "5-7,10-12"
+    },
+    {
+      "id": 9,
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Menyusun perubahan buih mengikut masa",
+      "sp": "1.1.7",
+      "minutes": 30,
+      "review": false,
+      "pages": "8-13"
+    },
+    {
+      "id": 10,
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Mentafsir data tempoh buih",
+      "sp": "1.1.8",
+      "minutes": 30,
+      "review": false,
+      "pages": "8-13"
+    },
+    {
+      "id": 11,
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Takrif operasi tempoh buih",
+      "sp": "1.1.9",
+      "minutes": 30,
+      "review": false,
+      "pages": "8-13"
+    },
+    {
+      "id": 12,
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Pemboleh ubah dalam ujian buih",
+      "sp": "1.1.10",
+      "minutes": 30,
+      "review": false,
+      "pages": "8-13,18"
+    },
+    {
+      "id": 13,
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Pengukuhan pemboleh ubah ujian adil",
+      "sp": "1.1.10",
+      "minutes": 30,
+      "review": true,
+      "pages": "8-13,18"
+    },
+    {
+      "id": 14,
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Hipotesis dalam ujian buih",
+      "sp": "1.1.11",
+      "minutes": 30,
+      "review": false,
+      "pages": "8-13,18"
+    },
+    {
+      "id": 15,
+      "unit": "Unit 1: Kemahiran Saintifik",
+      "title": "Eksperimen tempoh buih bertahan",
+      "sp": "1.1.12",
+      "minutes": 60,
+      "review": false,
+      "pages": "10-13"
+    },
+    {
+      "id": 16,
+      "unit": "Unit 2: Manusia",
+      "title": "Fungsi rangka utama manusia",
+      "sp": "2.1.1",
+      "minutes": 30,
+      "review": false,
+      "pages": "20,27"
+    },
+    {
+      "id": 17,
+      "unit": "Unit 2: Manusia",
+      "title": "Kedudukan tulang dan sendi",
+      "sp": "2.1.2",
+      "minutes": 30,
+      "review": false,
+      "pages": "22,27"
+    },
+    {
+      "id": 18,
+      "unit": "Unit 2: Manusia",
+      "title": "Fungsi sendi dalam pergerakan",
+      "sp": "2.1.3",
+      "minutes": 30,
+      "review": false,
+      "pages": "23,27"
+    },
+    {
+      "id": 19,
+      "unit": "Unit 2: Manusia",
+      "title": "Pengukuhan padanan sendi dan pergerakan",
+      "sp": "2.1.3",
+      "minutes": 30,
+      "review": true,
+      "pages": "22-24"
+    },
+    {
+      "id": 20,
+      "unit": "Unit 2: Manusia",
+      "title": "Kepentingan sistem rangka",
+      "sp": "2.1.4",
+      "minutes": 30,
+      "review": false,
+      "pages": "25"
+    },
+    {
+      "id": 21,
+      "unit": "Unit 2: Manusia",
+      "title": "Lakaran dan penerangan sistem rangka",
+      "sp": "2.1.5",
+      "minutes": 30,
+      "review": false,
+      "pages": "27"
+    },
+    {
+      "id": 22,
+      "unit": "Unit 2: Manusia",
+      "title": "Bahagian utama sistem peredaran darah",
+      "sp": "2.2.1",
+      "minutes": 30,
+      "review": false,
+      "pages": "28-29"
+    },
+    {
+      "id": 23,
+      "unit": "Unit 2: Manusia",
+      "title": "Dua laluan peredaran darah",
+      "sp": "2.2.2",
+      "minutes": 30,
+      "review": false,
+      "pages": "30-32"
+    },
+    {
+      "id": 24,
+      "unit": "Unit 2: Manusia",
+      "title": "Pengukuhan arah aliran darah",
+      "sp": "2.2.2",
+      "minutes": 30,
+      "review": true,
+      "pages": "30-32"
+    },
+    {
+      "id": 25,
+      "unit": "Unit 2: Manusia",
+      "title": "Kepentingan peredaran darah",
+      "sp": "2.2.3",
+      "minutes": 30,
+      "review": false,
+      "pages": "33"
+    },
+    {
+      "id": 26,
+      "unit": "Unit 2: Manusia",
+      "title": "Penerangan pemerhatian peredaran darah",
+      "sp": "2.2.4",
+      "minutes": 30,
+      "review": false,
+      "pages": "32"
+    },
+    {
+      "id": 27,
+      "unit": "Unit 2: Manusia",
+      "title": "Perkaitan antara sistem tubuh",
+      "sp": "2.3.1",
+      "minutes": 30,
+      "review": false,
+      "pages": "34,42"
+    },
+    {
+      "id": 28,
+      "unit": "Unit 2: Manusia",
+      "title": "Kepentingan menjaga sistem tubuh",
+      "sp": "2.3.2",
+      "minutes": 30,
+      "review": false,
+      "pages": "38"
+    },
+    {
+      "id": 29,
+      "unit": "Unit 2: Manusia",
+      "title": "Cara memelihara sistem tubuh",
+      "sp": "2.3.3",
+      "minutes": 30,
+      "review": false,
+      "pages": "40"
+    },
+    {
+      "id": 30,
+      "unit": "Unit 2: Manusia",
+      "title": "Pengukuhan pilihan amalan penjagaan",
+      "sp": "2.3.3",
+      "minutes": 30,
+      "review": true,
+      "pages": "38-42"
+    },
+    {
+      "id": 31,
+      "unit": "Unit 2: Manusia",
+      "title": "Lakaran hubungan antara sistem tubuh",
+      "sp": "2.3.4",
+      "minutes": 30,
+      "review": false,
+      "pages": "42"
+    },
+    {
+      "id": 32,
+      "unit": "Unit 3: Haiwan",
+      "title": "Maksud kemandirian spesies",
+      "sp": "3.1.1",
+      "minutes": 30,
+      "review": false,
+      "pages": "50"
+    },
+    {
+      "id": 33,
+      "unit": "Unit 3: Haiwan",
+      "title": "Perlindungan haiwan daripada musuh",
+      "sp": "3.1.2",
+      "minutes": 30,
+      "review": false,
+      "pages": "51,54,57"
+    },
+    {
+      "id": 34,
+      "unit": "Unit 3: Haiwan",
+      "title": "Cara haiwan menghadapi cuaca melampau",
+      "sp": "3.1.3",
+      "minutes": 30,
+      "review": false,
+      "pages": "63"
+    },
+    {
+      "id": 35,
+      "unit": "Unit 3: Haiwan",
+      "title": "Cara haiwan melindungi telur",
+      "sp": "3.1.4",
+      "minutes": 30,
+      "review": false,
+      "pages": "64,66"
+    },
+    {
+      "id": 36,
+      "unit": "Unit 3: Haiwan",
+      "title": "Pengukuhan perlindungan telur daripada ancaman",
+      "sp": "3.1.4",
+      "minutes": 30,
+      "review": true,
+      "pages": "64-66"
+    },
+    {
+      "id": 37,
+      "unit": "Unit 3: Haiwan",
+      "title": "Cara haiwan menjaga anak",
+      "sp": "3.1.5",
+      "minutes": 30,
+      "review": false,
+      "pages": "67,69"
+    },
+    {
+      "id": 38,
+      "unit": "Unit 3: Haiwan",
+      "title": "Komunikasi tentang kemandirian haiwan",
+      "sp": "3.1.6",
+      "minutes": 30,
+      "review": false,
+      "pages": "57,63,66,69"
+    },
+    {
+      "id": 39,
+      "unit": "Unit 3: Haiwan",
+      "title": "Mereka cipta model haiwan imaginasi",
+      "sp": "3.2.1",
+      "minutes": 60,
+      "review": false,
+      "pages": "70-73"
+    },
+    {
+      "id": 40,
+      "unit": "Unit 3: Haiwan",
+      "title": "Menaakul ciri model haiwan",
+      "sp": "3.2.2",
+      "minutes": 30,
+      "review": false,
+      "pages": "70,73"
+    },
+    {
+      "id": 41,
+      "unit": "Unit 3: Haiwan",
+      "title": "Pengukuhan reka bentuk mengikut ancaman",
+      "sp": "3.2.2",
+      "minutes": 30,
+      "review": true,
+      "pages": "70-73"
+    },
+    {
+      "id": 42,
+      "unit": "Unit 3: Haiwan",
+      "title": "Ciri haiwan dan keseimbangan alam",
+      "sp": "3.2.3",
+      "minutes": 30,
+      "review": false,
+      "pages": "70,73"
+    },
+    {
+      "id": 43,
+      "unit": "Unit 3: Haiwan",
+      "title": "Lakaran dan penerangan model haiwan",
+      "sp": "3.2.4",
+      "minutes": 30,
+      "review": false,
+      "pages": "73"
+    },
+    {
+      "id": 44,
+      "unit": "Unit 3: Haiwan",
+      "title": "Maksud rantai makanan",
+      "sp": "3.3.1",
+      "minutes": 30,
+      "review": false,
+      "pages": "74,76"
+    },
+    {
+      "id": 45,
+      "unit": "Unit 3: Haiwan",
+      "title": "Pengeluar dan pengguna",
+      "sp": "3.3.2",
+      "minutes": 30,
+      "review": false,
+      "pages": "77,78"
+    },
+    {
+      "id": 46,
+      "unit": "Unit 3: Haiwan",
+      "title": "Hubungan makanan dengan fotosintesis",
+      "sp": "3.3.3",
+      "minutes": 30,
+      "review": false,
+      "pages": "79"
+    },
+    {
+      "id": 47,
+      "unit": "Unit 3: Haiwan",
+      "title": "Pengukuhan aliran tenaga daripada pengeluar",
+      "sp": "3.3.3",
+      "minutes": 30,
+      "review": true,
+      "pages": "79-81"
+    },
+    {
+      "id": 48,
+      "unit": "Unit 3: Haiwan",
+      "title": "Maksud siratan makanan",
+      "sp": "3.3.4",
+      "minutes": 30,
+      "review": false,
+      "pages": "82,85"
+    },
+    {
+      "id": 49,
+      "unit": "Unit 3: Haiwan",
+      "title": "Membina siratan makanan di habitat berbeza",
+      "sp": "3.3.5",
+      "minutes": 60,
+      "review": false,
+      "pages": "82-85"
+    },
+    {
+      "id": 50,
+      "unit": "Unit 3: Haiwan",
+      "title": "Meramal kesan perubahan populasi",
+      "sp": "3.3.6",
+      "minutes": 30,
+      "review": false,
+      "pages": "87"
+    },
+    {
+      "id": 51,
+      "unit": "Unit 3: Haiwan",
+      "title": "Penerangan pemerhatian hubungan makanan",
+      "sp": "3.3.7",
+      "minutes": 30,
+      "review": false,
+      "pages": "85"
+    },
+    {
+      "id": 52,
+      "unit": "Unit 4: Tumbuhan",
+      "title": "Ciri perlindungan tumbuhan",
+      "sp": "4.1.1",
+      "minutes": 30,
+      "review": false,
+      "pages": "94,97"
+    },
+    {
+      "id": 53,
+      "unit": "Unit 4: Tumbuhan",
+      "title": "Pengukuhan ciri pertahanan tumbuhan",
+      "sp": "4.1.1",
+      "minutes": 30,
+      "review": true,
+      "pages": "94-97"
+    },
+    {
+      "id": 54,
+      "unit": "Unit 4: Tumbuhan",
+      "title": "Penyesuaian tumbuhan terhadap iklim",
+      "sp": "4.1.2",
+      "minutes": 30,
+      "review": false,
+      "pages": "98,103"
+    },
+    {
+      "id": 55,
+      "unit": "Unit 4: Tumbuhan",
+      "title": "Penerangan kemandirian tumbuhan",
+      "sp": "4.1.3",
+      "minutes": 30,
+      "review": false,
+      "pages": "103"
+    },
+    {
+      "id": 56,
+      "unit": "Unit 4: Tumbuhan",
+      "title": "Cara pencaran biji benih dan buah",
+      "sp": "4.2.1",
+      "minutes": 30,
+      "review": false,
+      "pages": "104,109,111"
+    },
+    {
+      "id": 57,
+      "unit": "Unit 4: Tumbuhan",
+      "title": "Ciri biji benih dan cara pencaran",
+      "sp": "4.2.2",
+      "minutes": 30,
+      "review": false,
+      "pages": "104,109,110,111"
+    },
+    {
+      "id": 58,
+      "unit": "Unit 4: Tumbuhan",
+      "title": "Meramal cara pencaran",
+      "sp": "4.2.3",
+      "minutes": 30,
+      "review": false,
+      "pages": "104,109,111"
+    },
+    {
+      "id": 59,
+      "unit": "Unit 4: Tumbuhan",
+      "title": "Pengukuhan ramalan untuk biji benih baharu",
+      "sp": "4.2.3",
+      "minutes": 30,
+      "review": true,
+      "pages": "104-108"
+    },
+    {
+      "id": 60,
+      "unit": "Unit 4: Tumbuhan",
+      "title": "Komunikasi pemerhatian pencaran",
+      "sp": "4.2.4",
+      "minutes": 30,
+      "review": false,
+      "pages": "104,109,110,111"
+    },
+    {
+      "id": 61,
+      "unit": "Unit 5: Elektrik",
+      "title": "Sumber tenaga elektrik",
+      "sp": "5.1.1",
+      "minutes": 30,
+      "review": false,
+      "pages": "116"
+    },
+    {
+      "id": 62,
+      "unit": "Unit 5: Elektrik",
+      "title": "Susunan mentol bersiri dan selari",
+      "sp": "5.2.1",
+      "minutes": 30,
+      "review": false,
+      "pages": "118"
+    },
+    {
+      "id": 63,
+      "unit": "Unit 5: Elektrik",
+      "title": "Lakaran litar dengan simbol",
+      "sp": "5.2.2",
+      "minutes": 30,
+      "review": false,
+      "pages": "120,122"
+    },
+    {
+      "id": 64,
+      "unit": "Unit 5: Elektrik",
+      "title": "Pengukuhan membetulkan rajah litar",
+      "sp": "5.2.2",
+      "minutes": 30,
+      "review": true,
+      "pages": "118-122"
+    },
+    {
+      "id": 65,
+      "unit": "Unit 5: Elektrik",
+      "title": "Perbandingan kecerahan dua jenis litar",
+      "sp": "5.2.3",
+      "minutes": 60,
+      "review": false,
+      "pages": "123-124"
+    },
+    {
+      "id": 66,
+      "unit": "Unit 5: Elektrik",
+      "title": "Kesan bilangan mentol terhadap kecerahan",
+      "sp": "5.2.4",
+      "minutes": 60,
+      "review": false,
+      "pages": "125-126,128"
+    },
+    {
+      "id": 67,
+      "unit": "Unit 5: Elektrik",
+      "title": "Kesan bilangan sel kering terhadap kecerahan",
+      "sp": "5.2.5",
+      "minutes": 60,
+      "review": false,
+      "pages": "125-127"
+    },
+    {
+      "id": 68,
+      "unit": "Unit 5: Elektrik",
+      "title": "Kesan suis pada nyalaan mentol",
+      "sp": "5.2.6",
+      "minutes": 60,
+      "review": false,
+      "pages": "129-131"
+    },
+    {
+      "id": 69,
+      "unit": "Unit 5: Elektrik",
+      "title": "Penerangan pemerhatian litar",
+      "sp": "5.2.7",
+      "minutes": 30,
+      "review": false,
+      "pages": "122,124,131"
+    },
+    {
+      "id": 70,
+      "unit": "Unit 5: Elektrik",
+      "title": "Pengukuhan menerangkan keputusan ujian suis",
+      "sp": "5.2.7",
+      "minutes": 30,
+      "review": true,
+      "pages": "129-131"
+    },
+    {
+      "id": 71,
+      "unit": "Unit 5: Elektrik",
+      "title": "Faktor penggunaan tenaga elektrik",
+      "sp": "5.3.1",
+      "minutes": 30,
+      "review": false,
+      "pages": "132,134"
+    },
+    {
+      "id": 72,
+      "unit": "Unit 5: Elektrik",
+      "title": "Kesan salah pengendalian peralatan elektrik",
+      "sp": "5.3.2",
+      "minutes": 30,
+      "review": false,
+      "pages": "135"
+    },
+    {
+      "id": 73,
+      "unit": "Unit 5: Elektrik",
+      "title": "Langkah keselamatan peralatan elektrik",
+      "sp": "5.3.3",
+      "minutes": 30,
+      "review": false,
+      "pages": "137,139"
+    },
+    {
+      "id": 74,
+      "unit": "Unit 5: Elektrik",
+      "title": "Komunikasi keselamatan dan penjimatan elektrik",
+      "sp": "5.3.4",
+      "minutes": 30,
+      "review": false,
+      "pages": "134,139"
+    },
+    {
+      "id": 75,
+      "unit": "Unit 6: Haba",
+      "title": "Maksud haba dan suhu",
+      "sp": "6.1.1",
+      "minutes": 30,
+      "review": false,
+      "pages": "146"
+    },
+    {
+      "id": 76,
+      "unit": "Unit 6: Haba",
+      "title": "Pengukuhan haba dan suhu dalam situasi harian",
+      "sp": "6.1.1",
+      "minutes": 30,
+      "review": true,
+      "pages": "146-149"
+    },
+    {
+      "id": 77,
+      "unit": "Unit 6: Haba",
+      "title": "Teknik menyukat suhu",
+      "sp": "6.1.2",
+      "minutes": 30,
+      "review": false,
+      "pages": "147,149"
+    },
+    {
+      "id": 78,
+      "unit": "Unit 6: Haba",
+      "title": "Perubahan suhu ais hingga air mendidih",
+      "sp": "6.1.3",
+      "minutes": 60,
+      "review": false,
+      "pages": "150-151"
+    },
+    {
+      "id": 79,
+      "unit": "Unit 6: Haba",
+      "title": "Penyejukan air ke suhu bilik",
+      "sp": "6.1.4",
+      "minutes": 60,
+      "review": false,
+      "pages": "152-153"
+    },
+    {
+      "id": 80,
+      "unit": "Unit 6: Haba",
+      "title": "Kesan penerimaan dan kehilangan haba",
+      "sp": "6.1.5",
+      "minutes": 30,
+      "review": false,
+      "pages": "154-157"
+    },
+    {
+      "id": 81,
+      "unit": "Unit 6: Haba",
+      "title": "Pengukuhan pengembangan dan pengecutan",
+      "sp": "6.1.5",
+      "minutes": 30,
+      "review": true,
+      "pages": "154-159"
+    },
+    {
+      "id": 82,
+      "unit": "Unit 6: Haba",
+      "title": "Aplikasi pengembangan dan pengecutan",
+      "sp": "6.1.6",
+      "minutes": 30,
+      "review": false,
+      "pages": "158,159"
+    },
+    {
+      "id": 83,
+      "unit": "Unit 6: Haba",
+      "title": "Penerangan pemerhatian haba dan suhu",
+      "sp": "6.1.7",
+      "minutes": 30,
+      "review": false,
+      "pages": "151,153,155,156,157,159"
+    },
+    {
+      "id": 84,
+      "unit": "Unit 7: Pengaratan",
+      "title": "Ciri objek yang berkarat",
+      "sp": "7.1.1",
+      "minutes": 30,
+      "review": false,
+      "pages": "164,165"
+    },
+    {
+      "id": 85,
+      "unit": "Unit 7: Pengaratan",
+      "title": "Bahan yang boleh berkarat",
+      "sp": "7.1.2",
+      "minutes": 30,
+      "review": false,
+      "pages": "166,167"
+    },
+    {
+      "id": 86,
+      "unit": "Unit 7: Pengaratan",
+      "title": "Faktor yang menyebabkan pengaratan",
+      "sp": "7.1.3",
+      "minutes": 60,
+      "review": false,
+      "pages": "168-169"
+    },
+    {
+      "id": 87,
+      "unit": "Unit 7: Pengaratan",
+      "title": "Pengukuhan tafsiran ujian pengaratan",
+      "sp": "7.1.3",
+      "minutes": 30,
+      "review": true,
+      "pages": "168-169"
+    },
+    {
+      "id": 88,
+      "unit": "Unit 7: Pengaratan",
+      "title": "Cara mencegah pengaratan",
+      "sp": "7.1.4",
+      "minutes": 30,
+      "review": false,
+      "pages": "170,173"
+    },
+    {
+      "id": 89,
+      "unit": "Unit 7: Pengaratan",
+      "title": "Kepentingan mencegah pengaratan",
+      "sp": "7.1.5",
+      "minutes": 30,
+      "review": false,
+      "pages": "171,173"
+    },
+    {
+      "id": 90,
+      "unit": "Unit 7: Pengaratan",
+      "title": "Penerangan pemerhatian pengaratan",
+      "sp": "7.1.6",
+      "minutes": 30,
+      "review": false,
+      "pages": "165,167"
+    },
+    {
+      "id": 91,
+      "unit": "Unit 8: Jirim",
+      "title": "Tiga keadaan jirim",
+      "sp": "8.1.1",
+      "minutes": 30,
+      "review": false,
+      "pages": "178"
+    },
+    {
+      "id": 92,
+      "unit": "Unit 8: Jirim",
+      "title": "Pengelasan bahan mengikut keadaan jirim",
+      "sp": "8.1.2",
+      "minutes": 30,
+      "review": false,
+      "pages": "179"
+    },
+    {
+      "id": 93,
+      "unit": "Unit 8: Jirim",
+      "title": "Pengukuhan pengelasan objek baharu",
+      "sp": "8.1.2",
+      "minutes": 30,
+      "review": true,
+      "pages": "178-183"
+    },
+    {
+      "id": 94,
+      "unit": "Unit 8: Jirim",
+      "title": "Sifat pepejal, cecair dan gas",
+      "sp": "8.1.3",
+      "minutes": 60,
+      "review": false,
+      "pages": "180-183"
+    },
+    {
+      "id": 95,
+      "unit": "Unit 8: Jirim",
+      "title": "Tiga keadaan air",
+      "sp": "8.1.4",
+      "minutes": 30,
+      "review": false,
+      "pages": "184,185"
+    },
+    {
+      "id": 96,
+      "unit": "Unit 8: Jirim",
+      "title": "Penerangan pemerhatian keadaan jirim",
+      "sp": "8.1.5",
+      "minutes": 30,
+      "review": false,
+      "pages": "179,180,181,182,184,185"
+    },
+    {
+      "id": 97,
+      "unit": "Unit 8: Jirim",
+      "title": "Proses perubahan keadaan air",
+      "sp": "8.2.1",
+      "minutes": 60,
+      "review": false,
+      "pages": "186-190"
+    },
+    {
+      "id": 98,
+      "unit": "Unit 8: Jirim",
+      "title": "Pengukuhan menamakan perubahan keadaan air",
+      "sp": "8.2.1",
+      "minutes": 30,
+      "review": true,
+      "pages": "186-191"
+    },
+    {
+      "id": 99,
+      "unit": "Unit 8: Jirim",
+      "title": "Perubahan keadaan air dan pemindahan haba",
+      "sp": "8.2.2",
+      "minutes": 30,
+      "review": false,
+      "pages": "186-191"
+    },
+    {
+      "id": 100,
+      "unit": "Unit 8: Jirim",
+      "title": "Pembentukan awan dan hujan",
+      "sp": "8.2.3",
+      "minutes": 30,
+      "review": false,
+      "pages": "192,194"
+    },
+    {
+      "id": 101,
+      "unit": "Unit 8: Jirim",
+      "title": "Lakaran dan penerangan perubahan keadaan air",
+      "sp": "8.2.4",
+      "minutes": 30,
+      "review": false,
+      "pages": "188,189,190,191,194"
+    },
+    {
+      "id": 102,
+      "unit": "Unit 9: Fasa Bulan dan Buruj",
+      "title": "Cahaya Bulan yang dipantulkan",
+      "sp": "9.1.1",
+      "minutes": 30,
+      "review": false,
+      "pages": "200"
+    },
+    {
+      "id": 103,
+      "unit": "Unit 9: Fasa Bulan dan Buruj",
+      "title": "Putaran dan peredaran Bulan",
+      "sp": "9.1.2",
+      "minutes": 30,
+      "review": false,
+      "pages": "201,203"
+    },
+    {
+      "id": 104,
+      "unit": "Unit 9: Fasa Bulan dan Buruj",
+      "title": "Pengukuhan arah dan tempoh gerakan Bulan",
+      "sp": "9.1.2",
+      "minutes": 30,
+      "review": true,
+      "pages": "201-203"
+    },
+    {
+      "id": 105,
+      "unit": "Unit 9: Fasa Bulan dan Buruj",
+      "title": "Urutan fasa Bulan dan takwim Qamari",
+      "sp": "9.1.3",
+      "minutes": 30,
+      "review": false,
+      "pages": "204,206"
+    },
+    {
+      "id": 106,
+      "unit": "Unit 9: Fasa Bulan dan Buruj",
+      "title": "Pemerhatian dan lakaran fasa Bulan",
+      "sp": "9.1.4",
+      "minutes": 30,
+      "review": false,
+      "pages": "206"
+    },
+    {
+      "id": 107,
+      "unit": "Unit 9: Fasa Bulan dan Buruj",
+      "title": "Pengenalpastian corak buruj",
+      "sp": "9.2.1",
+      "minutes": 30,
+      "review": false,
+      "pages": "208,213"
+    },
+    {
+      "id": 108,
+      "unit": "Unit 9: Fasa Bulan dan Buruj",
+      "title": "Kegunaan buruj",
+      "sp": "9.2.2",
+      "minutes": 30,
+      "review": false,
+      "pages": "211,213"
+    },
+    {
+      "id": 109,
+      "unit": "Unit 9: Fasa Bulan dan Buruj",
+      "title": "Pemerhatian dan lakaran buruj",
+      "sp": "9.2.3",
+      "minutes": 30,
+      "review": false,
+      "pages": "213"
+    },
+    {
+      "id": 110,
+      "unit": "Unit 9: Fasa Bulan dan Buruj",
+      "title": "Pengukuhan mengenal buruj daripada lakaran",
+      "sp": "9.2.3",
+      "minutes": 30,
+      "review": true,
+      "pages": "208-213"
+    },
+    {
+      "id": 111,
+      "unit": "Unit 10: Mesin",
+      "title": "Kegunaan alat di sekeliling",
+      "sp": "10.1.1",
+      "minutes": 30,
+      "review": false,
+      "pages": "218,219"
+    },
+    {
+      "id": 112,
+      "unit": "Unit 10: Mesin",
+      "title": "Gabungan mesin ringkas pada alat",
+      "sp": "10.1.2",
+      "minutes": 30,
+      "review": false,
+      "pages": "220"
+    },
+    {
+      "id": 113,
+      "unit": "Unit 10: Mesin",
+      "title": "Kepentingan gabungan mesin ringkas",
+      "sp": "10.1.3",
+      "minutes": 30,
+      "review": false,
+      "pages": "222"
+    },
+    {
+      "id": 114,
+      "unit": "Unit 10: Mesin",
+      "title": "Ciri penciptaan alat lestari",
+      "sp": "10.1.4",
+      "minutes": 30,
+      "review": false,
+      "pages": "223,226"
+    },
+    {
+      "id": 115,
+      "unit": "Unit 10: Mesin",
+      "title": "Penerangan fungsi alat harian",
+      "sp": "10.1.5",
+      "minutes": 30,
+      "review": false,
+      "pages": "219,226"
+    },
+    {
+      "id": 116,
+      "unit": "Unit 10: Mesin",
+      "title": "Pengukuhan lakaran fungsi alat baharu",
+      "sp": "10.1.5",
+      "minutes": 30,
+      "review": true,
+      "pages": "218-226"
+    }
+  ]
+}

@@ -43,6 +43,8 @@ def install(runtime):
             [
                 [{"text": "📝 RPH Harian", "callback_data": "choose_grade"}],
                 [{"text": "🌱 RPH Aktiviti Khas", "callback_data": "ak26:home"}],
+                *([[{"text": "📘 RPH 2027", "callback_data": "sk27:home"}]]
+                  if getattr(runtime, "CIKGULAJU_SK_2027_RPH_MENU", False) else []),
                 [{"text": "🏠 Menu Utama", "callback_data": "home"}],
             ],
         )
