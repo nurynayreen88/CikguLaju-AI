@@ -2319,14 +2319,14 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Trace electrical energy into light and heat, then show the fan turning with accompanying sound.",
-          "pupils": "Annotate useful and other outputs. Explain that energy is transferred or changes form."
+          "teacher": "Trace electrical energy into light and heat in a lamp. For a fan, trace movement, sound and heat. Draw arrows to show energy spreading to the surroundings.",
+          "pupils": "Label the input and outputs for both devices. Explain that energy changes form or is transferred and the total energy is conserved."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Check a diagram that accounts for useful output and heat or sound.",
-          "pupils": "Submit one complete transformation and explain where the energy goes."
+          "teacher": "Check a diagram with the useful output and at least one other output. Ask for a statement of energy conservation.",
+          "pupils": "Submit an annotated diagram for one device. State that energy cannot be created or destroyed and trace where the heat or sound goes."
         },
         {
           "phase": "Closure",
@@ -2335,7 +2335,7 @@
           "pupils": "Identify an output such as heat transferred to the surroundings."
         }
       ],
-      "follow_up": "Avoid language that suggests energy disappears when a device runs."
+      "follow_up": "Add a missing output arrow and trace where that energy goes."
     },
     {
       "id": "DLP-SCI-Y4-L44",
