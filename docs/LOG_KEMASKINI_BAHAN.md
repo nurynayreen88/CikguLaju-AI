@@ -245,7 +245,8 @@ Setiap sesi pembaikan baharu perlu merekodkan jenis bahan, rujukan PR, keputusan
 
 ## 18 November 2026 — Pelepasan RPT/RPH Matematik SK Tahun 5 dan 6
 
-- **HOLD untuk pelepasan.** Kandidat mengambil set Tahun 5 dan 6 yang diaudit daripada [PR #918](https://github.com/nurynayreen88/CikguLaju-AI/pull/918) pada komit `2130fc731fc289ddea7b24ca44a6e958098a031f`. Setiap tahun meliputi 117 Lesson, 96 jam, Kumpulan A/B dan PdP hingga Minggu 38.
+- Set Tahun 5 dan 6 mengambil kandungan yang diaudit daripada [PR #918](https://github.com/nurynayreen88/CikguLaju-AI/pull/918) pada komit `2130fc731fc289ddea7b24ca44a6e958098a031f`. Setiap tahun meliputi 117 Lesson, 96 jam, Kumpulan A/B dan PdP hingga Minggu 38.
 - Dua PDF RPT menggunakan muka depan Web asal dan jadual baharu. Katalog Telegram dan penjana untuk Web menggunakan kod Lesson 2027 yang sepadan dengan RPT. Muat turun Word/PDF menerima maklumat kelas guru melalui laluan sedia ada.
 - Ujian setempat penjana persendirian menjana kesemua 234 Word dan 234 PDF, mengesahkan SK/SP dan maklumat guru. Semua PDF RPH dan hasil render Word ialah satu halaman A4. Permintaan tanpa token dan pilihan Lesson daripada unit yang salah ditolak.
-- Padanan RPT dan RPH Web bergantung pada pelepasan penjana Telegram serta cabang Web produksi. Keputusan CI dan penghantaran sebenar dengan sesi guru produksi masih menunggu pengesahan.
+- **MERGED MAIN DAN WEB PRODUKSI.** [PR #943](https://github.com/nurynayreen88/CikguLaju-AI/pull/943) digabung pada `6fe8ebaffbff2ac829945abcdb7bb5730cc6acb5` dan aktif di Render pada 20:56 MYT. [PR #944](https://github.com/nurynayreen88/CikguLaju-AI/pull/944) digabung pada `88f56348295b262a6c92f98eff3ee2e76ee7a5d6` dan aktif di Render pada 20:58 MYT. Ujian CI penjana, penghantaran Telegram, muka depan RPT dan RPH Pantas lulus.
+- Web produksi memberi respons pada pemeriksaan kesediaan dan menerbitkan dua SHA-256 muka depan RPT yang sepadan. Laluan penjana di Telegram menolak permintaan tanpa token. Penghantaran dan muat turun melalui sesi guru produksi masih belum disahkan.
