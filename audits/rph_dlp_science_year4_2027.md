@@ -27,4 +27,10 @@ Jalankan `python -m staging.dlp.year4.render_science --output <folder>` untuk me
 
 Draf laluan aplikasi menggunakan penjana yang sama, dengan medan kelas, tarikh, masa, bilangan murid dan refleksi daripada aliran sedia ada. Katalog menyemak pasangan unit dan ID pelajaran.
 
-**HOLD semakan guru.** Set menunggu kelulusan kandungan guru dan ujian muat turun Word/PDF menggunakan akaun guru sebenar sebelum penerbitan.
+## Keputusan penerbitan
+
+- Kelulusan guru bagi komit `786f6980fc3a` direkodkan pada 18 November 2026 selepas pengesahan pemilik dalam perbualan.
+- [CI eksport Word/PDF](https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/44279407083) lulus pada percubaan semula. Semakan aplikasi juga lulus dengan sesi simulasi pada [#933](https://github.com/nurynayreen88/CikguLaju-AI/pull/933) dan [#939](https://github.com/nurynayreen88/CikguLaju-AI/pull/939).
+- [PR ujian akaun guru #940](https://github.com/nurynayreen88/CikguLaju-AI/pull/940) lulus ujian akses dan cap SHA-256 untuk empat fail Lesson 46 dan Review 08. Deploy Google staging `dep-dbunhdqjnfac73dq1hu0` aktif pada 18:08 MYT dengan binaan `3fe5fee38407`. Pelayar sampai ke halaman log masuk. Sesi guru dan muat turun sebenar belum disahkan.
+
+**HOLD ujian akaun guru.** Set menunggu pengesahan muat turun Word/PDF menggunakan akaun guru sebenar sebelum penerbitan.
