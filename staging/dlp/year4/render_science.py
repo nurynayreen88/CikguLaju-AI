@@ -55,7 +55,8 @@ def load_plans():
                 raise ValueError(f"Review standards appear in a numbered lesson: {plan_id}")
 
         expected = (plan_id, label, title, unit, dates.splitlines(), standards.splitlines(), objective, book.splitlines())
-        observed = (plan["id"], plan["label"], plan["title"], plan["unit"], plan["rpt_dates"],
+        source_dates = plan.get("source_rpt_dates", plan["rpt_dates"])
+        observed = (plan["id"], plan["label"], plan["title"], plan["unit"], source_dates,
                     plan["standards"], plan["objective"], [*plan["references"], f"{plan['minutes']} min"])
         if observed != expected:
             raise ValueError(f"Plan does not match the RPT row: {plan_id}")
@@ -63,7 +64,7 @@ def load_plans():
             phase["minutes"] for phase in plan["phases"]
         ) != DURATIONS[plan["minutes"]]:
             raise ValueError(f"Incorrect phases or time allocation: {plan_id}")
-        if not plan["materials"] or not plan["follow_up"] or any(
+        if not plan["materials"] or not plan["follow_up"] or not plan["success_criteria"] or any(
             not phase["teacher"] or not phase["pupils"] for phase in plan["phases"]
         ):
             raise ValueError(f"Incomplete teaching details: {plan_id}")
@@ -133,6 +134,7 @@ def render_plan(stream, plan, renderer, *, teacher=None):
         ("Standards", standards),
         ("Book references", _book_references(plan)),
         ("Learning objective", plan["objective"]),
+        ("Success criteria", plan["success_criteria"]),
         ("Materials", plan["materials"]),
     ]
     activities = [("Phase", "Teacher", "Pupils")]
@@ -141,7 +143,8 @@ def render_plan(stream, plan, renderer, *, teacher=None):
         for phase in plan["phases"]
     )
     reflection = [("Reflection", teacher.get("reflection") or
-                   f"___ / ___ pupils met the objective. {plan['follow_up']}")]
+                   f"___ / ___ pupils met the objective. {plan['follow_up']}\n"
+                   "Teacher’s note __________________________________________________")]
     renderer(stream, heading, details, activities, reflection)
 
 
