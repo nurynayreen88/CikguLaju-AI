@@ -134,10 +134,13 @@ const ctx={
  async fillForSelection(el,kind,extra){
   catalogueCalls.push(kind,extra.subject);
   if(extra.subject==="MATH_DLP")ctx.fillSelect(el,[{value:"01",label:"Unit 1 Whole Numbers and Operations"}],"Pilih Unit");
+  if(extra.subject==="SCIENCE_DLP")ctx.fillSelect(el,[{value:"01",label:"Unit 1 Scientific Skills"}],"Pilih Unit");
  },
  async loadFinalLesson(kind,extra){
   catalogueCalls.push(kind,extra.subject,extra.unit);
-  ctx.fillSelect(lesson,[{value:"DLP-MATH-Y6-L01",label:"Lesson 01 • Whole Numbers"}],"Pilih Lesson");
+  const science=extra.subject==="SCIENCE_DLP";
+  ctx.fillSelect(lesson,[{value:science?"DLP-SCI-Y6-L01":"DLP-MATH-Y6-L01",
+    label:science?"Lesson 01 • Observe":"Lesson 01 • Whole Numbers"}],"Pilih Lesson");
  },
  async checkRphAvailability(){checkedRph++;},
 };
@@ -227,23 +230,21 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  assert.deepEqual(catalogueCalls,[]);
  year.value="6";
  await listeners["year.change"]();
- subject.value="SCIENCE_DLP";
- await listeners["subject.change"]();
- assert.match(ctx.help,/Dalam Penyediaan/);
- assert.equal(unit.hidden,true);
- subject.value="MATH_DLP";
- await listeners["subject.change"]();
- assert.equal(unit.hidden,false);
- assert.deepEqual(unit.options.map(x=>x.value),["","01"]);
- unit.value="01";
- await listeners["unit.change"]();
- assert.deepEqual(lesson.options.map(x=>x.value),["","DLP-MATH-Y6-L01"]);
- lesson.value="DLP-MATH-Y6-L01";
- listeners["lesson.change"]();
- assert.equal(panel.hidden,true);
- assert.equal(materials.hidden,false);
- assert.equal(checkedRph,1);
- assert.deepEqual(catalogueCalls.splice(0),["units","MATH_DLP","pdp","MATH_DLP","01"]);
+ for(const [code,id] of [["SCIENCE_DLP","DLP-SCI-Y6-L01"],["MATH_DLP","DLP-MATH-Y6-L01"]]){
+  subject.value=code;
+  await listeners["subject.change"]();
+  assert.equal(unit.hidden,false);
+  assert.deepEqual(unit.options.map(x=>x.value),["","01"]);
+  unit.value="01";
+  await listeners["unit.change"]();
+  assert.deepEqual(lesson.options.map(x=>x.value),["",id]);
+  lesson.value=id;
+  listeners["lesson.change"]();
+  assert.equal(panel.hidden,true);
+  assert.equal(materials.hidden,false);
+  assert.deepEqual(catalogueCalls.splice(0),["units",code,"pdp",code,"01"]);
+ }
+ assert.equal(checkedRph,2);
  curriculum.value="kssr";
  listeners["curriculum.change"]();
  assert.equal(panel.hidden,true);
