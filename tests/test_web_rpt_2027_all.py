@@ -1,4 +1,5 @@
 """Isolated Web staging RPT 2027 tests: no Telegram import, no user DB writes."""
+from hashlib import sha256
 import tempfile
 import unittest
 from pathlib import Path
@@ -34,6 +35,27 @@ class AllSubjectRPTTests(unittest.TestCase):
         self.assertFalse(pdf_ready("bahasa_melayu", 3, root=self.root))
         self.assertFalse(pdf_ready("sains", 2, root=self.root))
         self.assertFalse(pdf_ready("../private", 2, root=self.root))
+
+    @patch("web.rpt_2027_all_http._has_paid_access", return_value=True)
+    @patch("web.rpt_2027_all_http._account", return_value=({"authenticated": True}, None))
+    def test_year_six_science_uses_aligned_pdf_and_signed_cover_source(self, *_mocks):
+        root = Path(__file__).resolve().parents[1] / "rpt_2027"
+        app = Flask(__name__)
+        app.register_blueprint(create_all_rpt_blueprint(root=root))
+        client = app.test_client()
+        from json import loads
+
+        layouts = loads((root / "web_2027_pdfs/original_cover_layout_verified.json").read_text())["science_year6_covers"]
+        for subject in ("sains", "science_dlp"):
+            with self.subTest(subject=subject):
+                response = client.get(f"/api/rpt/2027/all/{subject}/6.pdf")
+                self.addCleanup(response.close)
+                self.assertEqual(response.status_code, 200)
+                digest = sha256(response.data).hexdigest()
+                self.assertEqual(response.headers["X-RPT-Source-SHA256"], digest)
+                self.assertEqual(response.headers["X-RPT-Personalization-Allowed"], "1")
+                layout = layouts[f"{subject}:6"]
+                self.assertEqual(layout["source_sha256_by_subject_year"], {f"{subject}:6": digest})
 
     @patch("web.rpt_2027_all_http._has_paid_access", return_value=False)
     @patch("web.rpt_2027_all_http._account", return_value=({"authenticated": True}, None))

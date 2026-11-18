@@ -559,5 +559,85 @@
       "english:5": "5a58b042920643d342060a7d9634481c57e67261245ca6b98b416aa470020019",
       "english:6": "f9c8ca388328f123aad9202e26397eeb1fae5359ac1e9b1fbda1004541fda34f"
     }
+  },
+  "science_year6_covers": {
+    "sains:6": {
+      "version": 1,
+      "status": "SCIENCE_YEAR_6_PDF_COVER",
+      "page_width": 841.89,
+      "page_height": 595.304,
+      "tolerance_pt": 0.3,
+      "identity_background_rgb": [
+        1,
+        1,
+        1
+      ],
+      "source_sha256_by_subject_year": {
+        "sains:6": "0f168595c8c6259c455f143aeeb98489152a85cc599e5c1d60db88d19503d477"
+      },
+      "logo_interior_top_left": [
+        418,
+        162,
+        797,
+        226
+      ],
+      "logo_image_safe_top_left": [
+        551,
+        165,
+        664,
+        222
+      ],
+      "school_row_top_left": [
+        418,
+        98,
+        797,
+        126
+      ],
+      "teacher_row_top_left": [
+        418,
+        130,
+        797,
+        158
+      ]
+    },
+    "science_dlp:6": {
+      "version": 1,
+      "status": "SCIENCE_YEAR_6_PDF_COVER",
+      "page_width": 841.89,
+      "page_height": 595.304,
+      "tolerance_pt": 0.3,
+      "identity_background_rgb": [
+        1,
+        1,
+        1
+      ],
+      "source_sha256_by_subject_year": {
+        "science_dlp:6": "991465fcfacc1b1925f9ded6cf12b8da7a9ac220c9321ef4011537900bdd97db"
+      },
+      "logo_interior_top_left": [
+        700,
+        194,
+        805,
+        256
+      ],
+      "logo_image_safe_top_left": [
+        705,
+        198,
+        800,
+        252
+      ],
+      "school_row_top_left": [
+        156,
+        194,
+        697,
+        223
+      ],
+      "teacher_row_top_left": [
+        156,
+        227,
+        697,
+        255
+      ]
+    }
   }
 }
