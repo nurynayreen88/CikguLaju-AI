@@ -68,7 +68,7 @@ class TelegramRPTTests(unittest.TestCase):
                     key = f"rpt2027_dlp:{code}:{year}:{fmt}"
                     self.assertIn(key, buttons)
                     callback(123, key)
-                    revision = "_Selaras" if year == 6 else ""
+                    revision = "_Selaras" if year in (5, 6) else ""
                     self.assertTrue(self.documents[-1][1].endswith(f"_Year_{year}{revision}.{fmt}"))
                     self.assertIn(f"Year {year}", self.documents[-1][2])
         callback(123, "rpt2027_dlp:science_dlp:pdf")

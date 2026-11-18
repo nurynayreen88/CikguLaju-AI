@@ -130,30 +130,39 @@ def load_plans():
     return rpt, plans
 
 
+def render_plan(stream, plan, renderer, *, teacher=None):
+    teacher = teacher or {}
+    session = "  ".join(
+        f"{label}: {teacher.get(key) or '_______'}"
+        for key, label in (("class", "Class"), ("date", "Date"), ("time", "Time"), ("students", "Pupils"))
+    )
+    heading = ("Daily Lesson Plan", "Science (DLP) · Year 5 SK", plan["title"])
+    details = [
+        ("Unit", plan["unit"]),
+        ("Lesson / PdP", plan["label"]),
+        ("RPT date ranges", plan["dates"]),
+        ("Class / date / time", session),
+        ("Standards", plan["standards"]),
+        ("Book reference", plan["reference"]),
+        ("Learning objective", plan["objective"]),
+        ("Materials", plan["materials"]),
+    ]
+    activities = [("Phase", "Teacher", "Pupils"), *plan["phases"]]
+    reflection = [
+        ("PBD evidence", plan["evidence"]),
+        ("Reflection", teacher.get("reflection") or "___ of ___ pupils met the objective. Follow-up: ____________________."),
+    ]
+    renderer(stream, heading, details, activities, reflection)
+
+
 def export(output, rpt, plans):
     output.mkdir(parents=True, exist_ok=True)
     rpt.save(output / f"{RPT_NAME}_Teacher_Review.docx")
     for plan in plans:
-        heading = ("Daily Lesson Plan", "Science (DLP) · Year 5 SK", plan["title"])
-        details = [
-            ("Unit", plan["unit"]),
-            ("Lesson / PdP", plan["label"]),
-            ("RPT date ranges", plan["dates"]),
-            ("Class / date / time", "Class: _______  Date: _______  Time: _______  Pupils: _______"),
-            ("Standards", plan["standards"]),
-            ("Book reference", plan["reference"]),
-            ("Learning objective", plan["objective"]),
-            ("Materials", plan["materials"]),
-        ]
-        activities = [("Phase", "Teacher", "Pupils"), *plan["phases"]]
-        reflection = [
-            ("PBD evidence", plan["evidence"]),
-            ("Reflection", "___ of ___ pupils met the objective. Follow-up: ____________________."),
-        ]
         stem = f"CikguLaju_RPH_Science_DLP_Y5_{plan['id']}"
         for extension, render in (("docx", _word), ("pdf", _pdf)):
             with (output / f"{stem}.{extension}").open("wb") as stream:
-                render(stream, heading, details, activities, reflection)
+                render_plan(stream, plan, render)
 
 
 def main():

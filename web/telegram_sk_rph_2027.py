@@ -8,6 +8,7 @@ from secrets import token_hex
 from tempfile import TemporaryDirectory
 
 from dlp_year2_rph import _pdf, _word
+from staging.dlp.year5 import downloads as year5_dlp
 from staging.dlp.year6 import render_mathematics, render_science
 from staging.sains.tahun5.eksport_2027 import render_rph as render_sains_year5
 from staging.sains.tahun5.semakan_penjana import ReviewRuntime
@@ -17,6 +18,8 @@ from staging.sains.tahun6.penjana_2027 import ScienceYear6Runtime
 PREFIX = "sk27:"
 STATE_KEY = "_sk_rph_2027"
 SETS = {"s": ("Sains SK Tahun 5", "Sains", "Tahun 5"),
+        "m5": ("Mathematics DLP Year 5", "Mathematics (DLP)", "Tahun 5"),
+        "d5": ("Science DLP Year 5", "Science (DLP)", "Tahun 5"),
         "m": ("Mathematics DLP Year 6", "Mathematics (DLP)", "Tahun 6"),
         "s6": ("Sains SK Tahun 6", "Sains", "Tahun 6"),
         "d6": ("Science DLP Year 6", "Science (DLP)", "Tahun 6")}
@@ -48,7 +51,8 @@ def install(runtime):
         return True
     science = {"s": (ReviewRuntime(), render_sains_year5),
                "s6": (ScienceYear6Runtime(), render_sains_year6)}
-    dlp = {"m": render_mathematics, "d6": render_science}
+    dlp = {"m": render_mathematics, "d6": render_science,
+           "m5": year5_dlp.MATHEMATICS, "d5": year5_dlp.SCIENCE}
     catalogues = {scope: _science_catalogue(source) for scope, (source, _) in science.items()}
     catalogues.update({scope: {group["id"]: group for group in module.download_catalogue()}
                        for scope, module in dlp.items()})

@@ -82,9 +82,9 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                         self.assertEqual(self.documents[-1][0], f"CikguLaju_RPH_{code}.pdf")
                         self.assertEqual(len(PdfReader(BytesIO(self.documents[-1][1])).pages), 1)
                         counts[set_id] += 1
-        self.assertEqual(counts, {"s": 116, "m": 54, "s6": 89, "d6": 61})
-        self.assertEqual(len(self.documents), 640)
-        self.assertEqual(self.credits, 320)
+        self.assertEqual(counts, {"s": 116, "m": 54, "s6": 89, "d6": 61, "m5": 69, "d5": 70})
+        self.assertEqual(len(self.documents), 918)
+        self.assertEqual(self.credits, 459)
 
     def test_wrong_set_old_buttons_and_failed_delivery_cannot_charge(self):
         word, _ = self._select("s", "01", "SK27-SCI-Y5-PDP-001")

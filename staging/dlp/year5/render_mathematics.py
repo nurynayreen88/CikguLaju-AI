@@ -92,6 +92,7 @@ def load_plans():
             "unit": unit,
             "title": title,
             "label": f"{label} · {minutes} min",
+            "minutes": minutes,
             "dates": " · ".join(" ".join(line.split()) for line in dates.splitlines()),
             "standards": standards,
             "reference": reference.replace("TB ", "Textbook ", 1),
@@ -106,37 +107,48 @@ def load_plans():
     all_codes = set().union(*standards_taught.values())
     if (lesson_count, review_count, len(standards_taught), len(all_codes)) != (61, 8, 8, 72):
         raise ValueError("Expected 61 lessons, 8 reviews, 8 units and 72 learning standards")
-    if plan_ids != data["activities"].keys() or not data["reference_corrections"].keys() <= plan_ids:
+    review_ids = {plan_id for plan_id in plan_ids if plan_id.startswith("R")}
+    if (plan_ids != data["activities"].keys() or review_ids != data["review_standards"].keys()
+            or not data["reference_corrections"].keys() <= plan_ids):
         raise ValueError("Activity keys and reference corrections must match the RPT")
-    if sum(int(plan["label"].split()[-2]) for plan in plans) != 5760:
+    if sum(plan["minutes"] for plan in plans) != 5760:
         raise ValueError("Year 5 Mathematics must have 96 hours")
     return rpt, plans
+
+
+def render_plan(stream, plan, renderer, *, teacher=None):
+    teacher = teacher or {}
+    session = "  ".join(
+        f"{label}: {teacher.get(key) or '_______'}"
+        for key, label in (("class", "Class"), ("date", "Date"), ("time", "Time"), ("students", "Pupils"))
+    )
+    heading = ("Daily Lesson Plan", "Mathematics (DLP) · Year 5 SK", plan["title"])
+    details = [
+        ("Unit", plan["unit"]),
+        ("Lesson / PdP", plan["label"]),
+        ("RPT date ranges", plan["dates"]),
+        ("Class / date / time", session),
+        ("Standards", plan["standards"]),
+        ("Book reference", plan["reference"]),
+        ("Learning objective", plan["objective"]),
+        ("Materials", plan["materials"]),
+    ]
+    activities = [("Phase", "Teacher", "Pupils"), *plan["phases"]]
+    reflection = [
+        ("PBD evidence", plan["evidence"]),
+        ("Reflection", teacher.get("reflection") or "___ of ___ pupils met the objective. Follow-up: ____________________."),
+    ]
+    renderer(stream, heading, details, activities, reflection)
 
 
 def export(output, rpt, plans):
     output.mkdir(parents=True, exist_ok=True)
     rpt.save(output / f"{RPT_NAME}_Teacher_Review.docx")
     for plan in plans:
-        heading = ("Daily Lesson Plan", "Mathematics (DLP) · Year 5 SK", plan["title"])
-        details = [
-            ("Unit", plan["unit"]),
-            ("Lesson / PdP", plan["label"]),
-            ("RPT date ranges", plan["dates"]),
-            ("Class / date / time", "Class: _______  Date: _______  Time: _______  Pupils: _______"),
-            ("Standards", plan["standards"]),
-            ("Book reference", plan["reference"]),
-            ("Learning objective", plan["objective"]),
-            ("Materials", plan["materials"]),
-        ]
-        activities = [("Phase", "Teacher", "Pupils"), *plan["phases"]]
-        reflection = [
-            ("PBD evidence", plan["evidence"]),
-            ("Reflection", "___ of ___ pupils met the objective. Follow-up: ____________________."),
-        ]
         stem = f"CikguLaju_RPH_Mathematics_DLP_Y5_{plan['id']}"
         for extension, render in (("docx", _word), ("pdf", _pdf)):
             with (output / f"{stem}.{extension}").open("wb") as stream:
-                render(stream, heading, details, activities, reflection)
+                render_plan(stream, plan, render)
 
 
 def main():
