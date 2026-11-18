@@ -8,6 +8,7 @@ from primary_language_subjects import PRIMARY_LANGUAGE_SUBJECTS
 from tempfile import TemporaryDirectory
 import os
 from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
+from rpt_2027.sains import tahun5_documents as sains_sk_tahun5, tahun6_documents as sains_sk_tahun6
 from rpt_2027.bahasa_arab import documents as bahasa_arab
 from rpt_2027.sjkc.bahasa_cina import documents as bahasa_cina_sjkc
 from rpt_2027.sjkc.bahasa_melayu import documents as bahasa_melayu_sjk
@@ -28,6 +29,8 @@ SCHOOL_RPT_CALLBACKS = {
     "rpt2027_sjkc": bahasa_cina_sjkc,
     "rpt2027_bm_sjk": bahasa_melayu_sjk,
     "rpt2027_sains_sjkc": sains_sjkc,
+    "rpt2027_sains_sk5": sains_sk_tahun5,
+    "rpt2027_sains_sk6": sains_sk_tahun6,
     "rpt2027_matematik_sjkc": matematik_sjkc,
 }
 

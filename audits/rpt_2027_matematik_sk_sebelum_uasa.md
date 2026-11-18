@@ -86,6 +86,12 @@ Tambahan 75 RPH 60 minit bagi setiap tahun melengkapkan set 117 Lesson. Set 60 m
 - Kesemua 234 Word dan 234 PDF individu muat satu halaman A4. Kedua-dua RPT PDF mempunyai 14 halaman, 44 minggu dan 117 Lesson. Tajuk, SK/SP, tarikh Kumpulan A/B, tempoh, halaman buku teks dan evidens PBD sepadan pada kesemua 234 pasangan RPT/RPH. Lima ujian integriti bank v60 lulus.
 - Jalankan `PYTHONPATH=. python -m staging.matematik.eksport_tahap2 --tahun 5 --output /tmp/Matematik_SK_Tahun_5` untuk mengeksport satu PDF RPT dan 117 RPH Word/PDF. Gunakan `--tahun 6 --output /tmp/Matematik_SK_Tahun_6` untuk set kedua.
 
+### Semakan Unit 7 Tahun 6
+
+Semakan DSKP Matematik Tahun 6, hlm. 56, memadankan Lesson 097 dan 099 dengan SP 7.2.1, Lesson 100 dan 102 dengan SP 7.3.1 serta Lesson 106 dengan SP 7.4.1. Lesson 097 menggunakan faktor sepunya dan urutan nisbah. Lesson 099 menguji nisbah setara melalui bentuk termudah. Lesson 100 menggunakan kaedah unitari dan Lesson 102 menggunakan faktor skala. Lesson 106 mengira kuantiti sepeket dan membandingkan stok dengan jumlah yang diperlukan. Set induksi dan kedua-dua aktiviti utama menggunakan contoh khusus untuk guru dan murid. RPT dan RPH mengekalkan halaman buku, tugasan PBD, evidens, tempoh serta tarikh A/B yang sepadan.
+
+Semakan setempat meliputi semua 585 padanan Lesson antara lima RPT, PDF dan Word, termasuk tajuk, SK/SP, tarikh A/B, tempoh, halaman buku serta evidens PBD. Setiap PDF individu dan PDF yang ditukar daripada Word mempunyai satu halaman A4. Pemeriksaan visual meliputi kelima-lima pindaan Tahun 6 dalam kedua-dua format. Lima ujian integriti bank v60 turut lulus.
+
 ## Hasil ujian dan status
 
 Semakan setempat mengesahkan kesemua 585 Lesson dan 175 jumlah minit mingguan, serta 44 baris tarikh bagi setiap tahun dalam PDF 10 halaman. Jalankan `python staging/matematik/eksport_agihan.py --output /tmp/Agihan_Matematik_SK_2027.pdf` dengan ReportLab dan DejaVu Sans untuk mengulang eksport. Kelima-lima set lengkap Tahun 2–6 menunggu semakan guru dalam [PR #918](https://github.com/nurynayreen88/CikguLaju-AI/pull/918). Audit akademik Tahun 6 dalam [PR #460](https://github.com/nurynayreen88/CikguLaju-AI/pull/460) merujuk sumber RPH native dengan nombor PdP tersendiri. Draf agihan kekal HOLD sehingga semakan guru, CI dan pengesahan laluan Web serta Telegram.

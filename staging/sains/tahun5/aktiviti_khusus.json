@@ -1,0 +1,299 @@
+{
+  "1": {
+    "materials": "Dua model pesawat kertas, kad ciri dan jadual",
+    "induction_teacher": "Tunjuk dua pesawat kertas berlainan bentuk.",
+    "induction_pupils": "Nyatakan ciri yang boleh diperhatikan sebelum diterbangkan.",
+    "guide_teacher": "Bandingkan bentuk muncung, lebar sayap dan lipatan pada kedudukan yang sama.",
+    "guide_pupils": "Catat tiga ciri yang boleh dibandingkan antara kedua-dua model.",
+    "pbd_teacher": "Semak pemerhatian visual atau sentuhan yang selamat dan skop pernyataan murid.",
+    "pbd": "Tulis dua pemerhatian untuk satu model dengan rujukan pada bahagian yang dilihat."
+  },
+  "2": {
+    "materials": "Gambar pesawat kertas semasa dan selepas mendarat, kad pernyataan",
+    "induction_teacher": "Tunjuk gambar yang diambil sebelum dan selepas pesawat mendarat.",
+    "induction_pupils": "Nyatakan satu perubahan kedudukan yang dapat dilihat.",
+    "guide_teacher": "Minta murid membezakan catatan yang dilihat daripada sebab yang dijangka.",
+    "guide_pupils": "Asingkan kad pemerhatian daripada kad inferens.",
+    "pbd_teacher": "Minta catatan individu yang membezakan kedua-dua gambar.",
+    "pbd": "Dua pernyataan yang hanya menyebut perubahan atau ciri yang terlihat, contohnya muncung menyentuh lantai selepas mendarat."
+  },
+  "3": {
+    "materials": "Kad pesawat kertas, alas pengelasan, pembaris",
+    "induction_teacher": "Tunjuk dua pesawat dengan muncung berlainan.",
+    "induction_pupils": "Sebut satu persamaan dan satu perbezaan.",
+    "guide_teacher": "Modelkan pengelasan berasaskan satu ciri yang sama.",
+    "guide_pupils": "Asingkan empat gambar mengikut lebar sayap atau bentuk muncung.",
+    "pbd_teacher": "Beri dua kad baharu dan semak konsistensi peraturan.",
+    "pbd": "Dua kad baharu dikelaskan dengan betul menggunakan satu ciri yang dinyatakan."
+  },
+  "4": {
+    "materials": "Termometer digital, cawan air, jadual bacaan",
+    "induction_teacher": "Tunjuk air sejuk dan air suhu bilik.",
+    "induction_pupils": "Anggarkan sampel yang mempunyai suhu lebih rendah.",
+    "guide_teacher": "Tunjuk kedudukan prob di tengah cawan dan tunggu bacaan stabil.",
+    "guide_pupils": "Sukat kedua-dua sampel dan rekod bacaan dalam °C.",
+    "pbd_teacher": "Perhatikan teknik murid dan semak unit pada jadual.",
+    "pbd": "Dua bacaan suhu menggunakan °C dan prob diletakkan tanpa menyentuh dasar bekas."
+  },
+  "5": {
+    "materials": "Kad data suhu air yang menyejuk, kad pemerhatian dan inferens",
+    "induction_teacher": "Paparkan carta suhu daripada dua waktu.",
+    "induction_pupils": "Nyatakan perubahan yang dapat dibaca pada carta.",
+    "guide_teacher": "Modelkan beza antara bacaan yang diperhatikan dengan penerangan yang munasabah.",
+    "guide_pupils": "Padankan dua bacaan dengan satu inferens yang disokong bukti.",
+    "pbd_teacher": "Minta murid memberi bacaan yang menyokong cadangan masing-masing.",
+    "pbd": "Satu inferens yang munasabah, seperti air kehilangan haba kepada persekitaran, dengan dua bacaan suhu sebagai bukti."
+  },
+  "6": {
+    "materials": "Jadual tiga bacaan suhu mengikut masa, anak panah pola",
+    "induction_teacher": "Tunjuk dua bacaan pertama.",
+    "induction_pupils": "Cadangkan arah perubahan pada bacaan berikutnya.",
+    "guide_teacher": "Terangkan cara menggunakan pola, tanpa meneka nilai tepat daripada data yang terhad.",
+    "guide_pupils": "Susun tiga bacaan dan beri jangkaan bagi waktu berikutnya.",
+    "pbd_teacher": "Bandingkan jangkaan dengan bacaan baharu apabila ditunjukkan.",
+    "pbd": "Ramalan suhu seterusnya menyatakan arah perubahan serta nilai terdahulu yang menyokongnya."
+  },
+  "7": {
+    "materials": "Kad bacaan jarak percubaan, slip ramalan",
+    "induction_teacher": "Tunjuk jarak daripada dua percubaan pesawat.",
+    "induction_pupils": "Sebut trend yang kelihatan pada bacaan ulangan.",
+    "guide_teacher": "Minta murid membandingkan siri data dua pesawat dalam keadaan sama.",
+    "guide_pupils": "Pilih pesawat yang dijangka bergerak lebih jauh dalam ulangan dan beri sebab.",
+    "pbd_teacher": "Beri set tiga bacaan yang berbeza untuk respons individu.",
+    "pbd": "Ramalan merujuk data set baharu dan menerangkan satu batas, contohnya jarak tepat boleh berbeza."
+  },
+  "8": {
+    "materials": "Kad bacaan, jadual kosong, kertas",
+    "induction_teacher": "Bentangkan rekod yang belum berlabel.",
+    "induction_pupils": "Cadangkan tajuk dan unit yang memudahkan bacaan.",
+    "guide_teacher": "Modelkan jadual berlabel serta cara menyebut satu perbandingan.",
+    "guide_pupils": "Isi tiga baris dan bentangkan satu perbandingan kepada pasangan.",
+    "pbd_teacher": "Semak data, unit dan pernyataan yang menyebut nilai.",
+    "pbd": "Jadual tiga bacaan dengan tajuk, unit dan satu perbandingan berasaskan nombor."
+  },
+  "9": {
+    "materials": "Rakaman buih, empat kad masa, jam randik",
+    "induction_teacher": "Jeda rakaman pada dua masa.",
+    "induction_pupils": "Tentukan urutan kedua-dua gambar.",
+    "guide_teacher": "Modelkan cara memadankan peristiwa pada rakaman dengan masa sejak buih terlepas.",
+    "guide_pupils": "Susun empat kad dan label peristiwa yang berlaku pada setiap masa.",
+    "pbd_teacher": "Beri satu urutan bercampur untuk disusun semula.",
+    "pbd": "Empat kedudukan atau keadaan buih disusun mengikut masa dan dikaitkan dengan label saat."
+  },
+  "10": {
+    "materials": "Carta tempoh dua larutan buih, kad bacaan",
+    "induction_teacher": "Tunjuk carta dengan dua kumpulan bacaan.",
+    "induction_pupils": "Nyatakan bacaan tertinggi yang boleh dilihat.",
+    "guide_teacher": "Tunjuk cara memilih dua nilai relevan dan membanding dalam unit sama.",
+    "guide_pupils": "Gunakan dua nilai untuk menjelaskan satu pola dalam carta.",
+    "pbd_teacher": "Beri satu pernyataan tanpa bukti dan semak pembetulan murid.",
+    "pbd": "Satu tafsiran pada carta yang menggunakan sekurang-kurangnya dua bacaan dalam saat."
+  },
+  "11": {
+    "materials": "Dua klip pendek buih sabun, kertas, jam randik",
+    "induction_teacher": "Mainkan klip buih terlepas dan pecah.",
+    "induction_pupils": "Pilih peristiwa yang sesuai untuk memulakan dan menghentikan ukuran.",
+    "guide_teacher": "Modelkan takrif yang menyatakan tindakan serta pemerhatian yang boleh diulang.",
+    "guide_pupils": "Ukur satu klip mengikut takrif dan bandingkan bacaan dengan rakan.",
+    "pbd_teacher": "Semak takrif murid dapat digunakan pada klip baharu.",
+    "pbd": "Takrif tempoh bermula apabila buih terlepas dari alat dan berakhir apabila buih pecah, dengan tempoh dalam saat."
+  },
+  "12": {
+    "materials": "Jadual ujian dua larutan, kad alat dan pemboleh ubah",
+    "induction_teacher": "Tunjuk dua larutan buih yang dilabel.",
+    "induction_pupils": "Cadangkan satu keadaan yang boleh diubah.",
+    "guide_teacher": "Tetapkan larutan sebagai pemboleh ubah yang diubah dan minta murid pilih ukuran yang sesuai.",
+    "guide_pupils": "Lengkapkan jadual dengan tempoh buih dan dua keadaan dimalarkan.",
+    "pbd_teacher": "Semak setiap jenis pemboleh ubah pada satu kad situasi.",
+    "pbd": "Larutan diubah, tempoh buih diukur dan alat serta tempat ujian dimalarkan."
+  },
+  "13": {
+    "materials": "Dua rancangan ujian bercacat, kad pembetulan",
+    "induction_teacher": "Tunjuk ujian yang menukar larutan dan alat pembentuk buih serentak.",
+    "induction_pupils": "Tandakan dua perkara yang berubah.",
+    "guide_teacher": "Modelkan cara mengekalkan alat dan memilih bacaan yang menjawab soalan.",
+    "guide_pupils": "Baiki satu rancangan supaya hanya larutan berubah.",
+    "pbd_teacher": "Semak faktor diubah, ukuran dan kawalan pada rancangan individu.",
+    "pbd": "Rancangan pembetulan yang menyatakan satu faktor ubah, tempoh dalam saat dan sekurang-kurangnya dua kawalan."
+  },
+  "14": {
+    "materials": "Kad situasi dan rangka hipotesis",
+    "induction_teacher": "Tunjuk dua keadaan yang boleh dibandingkan.",
+    "induction_pupils": "Nyatakan apa yang akan diukur.",
+    "guide_teacher": "Bina contoh hipotesis menggunakan hubungan antara larutan dan tempoh.",
+    "guide_pupils": "Tulis hipotesis sendiri dengan dua pemboleh ubah yang jelas.",
+    "pbd_teacher": "Semak hipotesis menyatakan arah jangkaan yang boleh diuji.",
+    "pbd": "Satu hipotesis berarah tentang larutan dan tempoh buih yang dapat diperiksa dengan ukuran."
+  },
+  "15": {
+    "materials": "Dua larutan buih disediakan guru, alat buih serupa, dulang dan jam randik",
+    "induction_teacher": "Semak soalan ujian, kaedah ukuran dan peranan kumpulan.",
+    "induction_pupils": "Nyatakan hipotesis dan satu pemboleh ubah yang dimalarkan.",
+    "guide_teacher": "Selia dua ulangan bagi setiap larutan dengan alat dan lokasi yang sama.",
+    "guide_pupils": "Ukur dari buih terlepas hingga pecah dan catat keempat-empat bacaan.",
+    "pbd_teacher": "Bimbing perbandingan bacaan dan semak rumusan murid merujuk bukti.",
+    "pbd": "Laporan individu dengan empat bacaan, pemboleh ubah, perbandingan dan rumusan sama ada hipotesis disokong."
+  },
+  "19": {
+    "materials": "Kad gambar melangkah, menoleh dan membaling, rajah rangka",
+    "induction_teacher": "Tunjuk lutut yang membengkok semasa melangkah.",
+    "induction_pupils": "Tunjuk sendi yang terlibat pada rajah.",
+    "guide_teacher": "Bandingkan gerakan yang dibenarkan oleh sendi lutut dan bahu.",
+    "guide_pupils": "Padankan setiap gerakan dengan sendi yang membolehkannya.",
+    "pbd_teacher": "Semak lokasi tanda dan penerangan gerakan pada gambar baharu.",
+    "pbd": "Dua padanan sendi–pergerakan yang tepat serta satu sebab sendi membolehkan gerakan."
+  },
+  "24": {
+    "materials": "Dua rajah tanpa anak panah, label jantung, peparu dan badan",
+    "induction_teacher": "Tunjuk satu anak panah aliran yang terbalik.",
+    "induction_pupils": "Kenal pasti anak panah yang perlu diubah.",
+    "guide_teacher": "Jejak jantung–peparu–jantung serta jantung–badan–jantung pada model.",
+    "guide_pupils": "Isi kedua-dua laluan dan tandakan aliran balik dari peparu.",
+    "pbd_teacher": "Semak anak panah dan label pada rajah individu.",
+    "pbd": "Dua gelung bermula dan berakhir pada jantung. Darah kaya oksigen kembali dari peparu dan darah lebih karbon dioksida kembali dari badan."
+  },
+  "30": {
+    "materials": "Kad amalan harian, rajah sistem tubuh dan log pilihan",
+    "induction_teacher": "Tunjuk pilihan memakai beg pada satu bahu atau menggunakan dua tali.",
+    "induction_pupils": "Cadangkan amalan yang lebih sesuai untuk watak dalam kad.",
+    "guide_teacher": "Modelkan bagaimana satu amalan dikaitkan dengan fungsi satu sistem.",
+    "guide_pupils": "Cadang dua amalan untuk watak rekaan, masing-masing dengan sebab.",
+    "pbd_teacher": "Semak dua pilihan dan sistem tubuh yang dinamakan.",
+    "pbd": "Dua amalan yang boleh dilakukan serta alasan yang menghubungkan setiap amalan dengan fungsi sistem berkaitan."
+  },
+  "36": {
+    "materials": "Kad telur penguin dan buaya, gambar sarang, jadual ancaman",
+    "induction_teacher": "Tunjuk telur model yang terdedah kepada sejuk atau ancaman pemangsa.",
+    "induction_pupils": "Nyatakan perbezaan antara dua ancaman.",
+    "guide_teacher": "Bandingkan mengeram untuk mengekalkan suhu dengan menyembunyikan telur.",
+    "guide_pupils": "Padankan kedua-dua tingkah laku kepada ancaman yang berbeza.",
+    "pbd_teacher": "Semak padanan dan alasan untuk dua contoh individu.",
+    "pbd": "Penguin mengeram untuk membantu mengekalkan suhu. Buaya boleh melindungi telur dengan menutup sarang daripada ancaman."
+  },
+  "41": {
+    "materials": "Lakaran model haiwan, kad cuaca dan pemangsa",
+    "induction_teacher": "Tukar kad habitat model daripada sejuk kepada panas.",
+    "induction_pupils": "Pilih satu ciri model yang perlu diperiksa semula.",
+    "guide_teacher": "Tanya bagaimana setiap ciri menangani musuh atau cuaca.",
+    "guide_pupils": "Baiki dua label pada lakaran dan jelaskan sebab setiap pilihan.",
+    "pbd_teacher": "Semak ciri, ancaman dan kesan dalam lakaran individu.",
+    "pbd": "Satu ciri perlindungan daripada musuh dan satu ciri berkaitan cuaca dengan alasan yang sepadan."
+  },
+  "47": {
+    "materials": "Kad Matahari, daun, ulat dan burung, anak panah",
+    "induction_teacher": "Tunjuk rantai daun–ulat–burung dengan anak panah yang hilang.",
+    "induction_pupils": "Nyatakan sumber tenaga bagi pengeluar.",
+    "guide_teacher": "Bezakan cahaya sebagai sumber tenaga daripada tumbuhan sebagai pengeluar.",
+    "guide_pupils": "Isi anak panah dari makanan kepada pemakan dan jelaskan di mana tumbuhan menggunakan cahaya.",
+    "pbd_teacher": "Semak satu rantai lain secara individu.",
+    "pbd": "Tumbuhan menggunakan tenaga cahaya untuk menghasilkan makanan. Tenaga dalam makanan berpindah mengikut arah anak panah kepada pengguna."
+  },
+  "53": {
+    "materials": "Gambar duri dan bulu halus tumbuhan, kad ancaman",
+    "induction_teacher": "Tunjuk dua ciri tumbuhan tanpa menyebut fungsinya.",
+    "induction_pupils": "Nyatakan ciri yang boleh dilihat pada kedua-dua gambar.",
+    "guide_teacher": "Bimbing padanan ciri fizikal dengan kesan terhadap haiwan pemakan tumbuhan.",
+    "guide_pupils": "Anotasi satu gambar berduri dan satu gambar berbulu halus.",
+    "pbd_teacher": "Semak dua ciri dengan alasan yang berkait dengan ancaman.",
+    "pbd": "Duri membantu menghalang haiwan daripada memakan bahagian tumbuhan. Bulu tertentu boleh merengsakan dan mengurangkan sentuhan."
+  },
+  "59": {
+    "materials": "Kad buah berkait, biji bersayap dan buah apung",
+    "induction_teacher": "Tunjuk biji ringan yang mempunyai sayap.",
+    "induction_pupils": "Ramalkan cara ia bergerak dari pokok induk.",
+    "guide_teacher": "Bandingkan bukti bagi pencaran angin, air dan haiwan.",
+    "guide_pupils": "Beri alasan berasaskan ciri bagi dua contoh yang belum dinamakan.",
+    "pbd_teacher": "Semak dua ramalan dan kaitannya dengan ciri.",
+    "pbd": "Biji bersayap boleh dibawa angin, sementara buah berkait boleh melekat pada bulu haiwan atau pakaian. Terima ramalan bersebab daripada ciri."
+  },
+  "64": {
+    "materials": "Rajah litar tidak lengkap, kad simbol sel, mentol dan suis",
+    "induction_teacher": "Tunjuk satu lakaran dengan sambungan yang tiada.",
+    "induction_pupils": "Kenal pasti bahagian yang perlu diperiksa.",
+    "guide_teacher": "Jejak laluan lengkap daripada satu terminal ke terminal lain.",
+    "guide_pupils": "Betulkan simbol dan lukis satu litar bersiri serta satu litar selari.",
+    "pbd_teacher": "Semak setiap lakaran daripada tugasan baharu.",
+    "pbd": "Dua rajah lengkap, menggunakan simbol yang betul. Bersiri satu laluan dan selari dua cabang."
+  },
+  "70": {
+    "materials": "Rajah dua suis dan jadual nyalaan",
+    "induction_teacher": "Tunjuk litar dengan satu suis di cabang selari.",
+    "induction_pupils": "Ramalkan mentol yang masih menyala apabila suis cabang dibuka.",
+    "guide_teacher": "Minta murid menjejak laluan arus bagi suis cabang dan suis utama.",
+    "guide_pupils": "Lengkapkan jadual dan terangkan dua kesan yang berbeza.",
+    "pbd_teacher": "Semak jadual dengan merujuk rajah yang diberi.",
+    "pbd": "Suis cabang hanya memutuskan laluan cabang itu. Suis utama yang terbuka memutuskan bekalan kepada kedua-dua cabang."
+  },
+  "76": {
+    "materials": "Kad bacaan dua cawan dan anak panah arah pemindahan haba",
+    "induction_teacher": "Tunjuk cawan suam diletakkan dalam air lebih sejuk.",
+    "induction_pupils": "Sebut sampel yang bersuhu lebih tinggi.",
+    "guide_teacher": "Tunjuk cara membezakan bacaan suhu daripada pemindahan tenaga.",
+    "guide_pupils": "Letak anak panah arah pemindahan haba dan label nilai suhu.",
+    "pbd_teacher": "Semak istilah dan arah anak panah secara individu.",
+    "pbd": "Suhu ialah ukuran darjah panas atau sejuk. Haba berpindah dari keadaan bersuhu lebih tinggi kepada yang lebih rendah."
+  },
+  "81": {
+    "materials": "Rajah botol berbelon sebelum dan selepas, kad haba",
+    "induction_teacher": "Tunjuk belon pada botol selepas dimasukkan dalam air suam dan sejuk.",
+    "induction_pupils": "Catat perubahan saiz yang dilihat.",
+    "guide_teacher": "Bandingkan kesan penerimaan dan kehilangan haba pada udara dalam botol.",
+    "guide_pupils": "Label dua keadaan dan arah perubahan isipadu.",
+    "pbd_teacher": "Semak sebab setiap perubahan pada rajah baharu.",
+    "pbd": "Udara lazimnya mengembang apabila menerima haba dan mengecut apabila kehilangan haba dalam susunan ini."
+  },
+  "87": {
+    "materials": "Set bertutup dan jadual PdP 086 atau foto bertarikh set rujukan guru",
+    "induction_teacher": "Tunjuk keadaan awal dan semasa tiga set PdP 086. Jika ujian kelas tiada, gunakan rekod set rujukan.",
+    "induction_pupils": "Nyatakan satu perubahan pada paku tanpa membuka bekas.",
+    "guide_teacher": "Bimbing perbandingan antara set yang berbeza dalam satu faktor sahaja.",
+    "guide_pupils": "Tambah catatan karat pada jadual asal dan bandingkan dapatan awal dengan dapatan susulan.",
+    "pbd_teacher": "Semak dua perbandingan dan alasan yang menggunakan rekod pemerhatian.",
+    "pbd": "Bandingkan set air dan udara dengan setiap set kawalan. Gunakan rekod awal dan susulan untuk menyimpulkan peranan air dan oksigen."
+  },
+  "93": {
+    "materials": "Kad batu, minyak, udara dalam beg dan kabus",
+    "induction_teacher": "Tunjuk minyak dalam bekas serta udara dalam beg.",
+    "induction_pupils": "Nyatakan sama ada kedua-duanya mengambil bentuk bekas.",
+    "guide_teacher": "Bezakan isipadu air yang kekal daripada gas yang memenuhi ruang tersedia.",
+    "guide_pupils": "Klasifikasikan empat contoh dengan satu ciri pembeza bagi setiap kategori.",
+    "pbd_teacher": "Semak pengelasan kabus menggunakan keterangan pada kad.",
+    "pbd": "Batu pepejal, minyak cecair, udara gas. Kabus ialah titisan air halus dan bukan wap air yang tidak kelihatan."
+  },
+  "98": {
+    "materials": "Rajah anak panah antara ais, air dan wap air, kad proses",
+    "induction_teacher": "Tunjuk titisan pada penutup yang sejuk.",
+    "induction_pupils": "Cadangkan proses yang menghasilkan titisan.",
+    "guide_teacher": "Padankan lima proses dengan perubahan keadaan yang sepadan.",
+    "guide_pupils": "Label anak panah peleburan, pembekuan, penyejatan, pendidihan dan kondensasi.",
+    "pbd_teacher": "Semak lima padanan pada rajah individu.",
+    "pbd": "Penyejatan dan pendidihan ialah dua cara perubahan cecair kepada gas. Tiga proses lain dipadankan dengan arah perubahan yang tepat."
+  },
+  "104": {
+    "materials": "Bumi dan Bulan model bertanda, kad arah dan masa",
+    "induction_teacher": "Tunjuk titik pada bola Bulan yang menghadap Bumi.",
+    "induction_pupils": "Ramalkan kedudukannya selepas satu peredaran.",
+    "guide_teacher": "Jejak putaran pada paksi dan peredaran di sekeliling Bumi dengan model.",
+    "guide_pupils": "Lakar laluan dan label arah serta tempoh anggaran setiap gerakan.",
+    "pbd_teacher": "Semak dua arah dan penerangan tempoh relatif kepada bintang.",
+    "pbd": "Satu putaran dan satu peredaran mengambil kira-kira 27 hari relatif kepada bintang. Arah lawan jam dilihat dari sebelah utara."
+  },
+  "110": {
+    "materials": "Peta titik Belantik, Biduk, Pari dan Skorpio, kad penerangan",
+    "induction_teacher": "Tunjuk corak titik yang diputar pada kertas.",
+    "induction_pupils": "Kenal pasti satu ciri yang masih sama.",
+    "guide_teacher": "Bimbing murid menggunakan kedudukan relatif bintang untuk mengenal nama corak.",
+    "guide_pupils": "Lakar satu buruj daripada peta pilihan dan beri keterangan pengenalannya.",
+    "pbd_teacher": "Semak nama dan struktur corak pada lakaran individu.",
+    "pbd": "Lakaran berpandukan peta dengan nama yang tepat dan satu ciri seperti tiga bintang sebaris pada Belantik."
+  },
+  "116": {
+    "materials": "Foto penyepit atau gunting sekolah, kad tuas dan baji, lembaran lakaran",
+    "induction_teacher": "Tunjuk gunting tertutup dan minta murid cari titik pangsi.",
+    "induction_pupils": "Kenal pasti dua bahagian yang bekerjasama.",
+    "guide_teacher": "Modelkan hubungan antara tindakan menekan pemegang dengan gerakan mata gunting.",
+    "guide_pupils": "Lakar alat dan label fungsi tuas dan baji pada bahagian yang sesuai.",
+    "pbd_teacher": "Semak lakaran dan sebab bagi satu ciri reka bentuk mesra penyelenggaraan.",
+    "pbd": "Lakaran menunjukkan tuas bergerak pada pangsi dan baji memisahkan bahan. Murid menerangkan satu penambahbaikan seperti bahagian yang boleh diganti."
+  }
+}

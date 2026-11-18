@@ -496,6 +496,23 @@ except Exception as _native_sequence_exc:
           type(_native_sequence_exc).__name__, flush=True)
 
 
+# Sains SK Tahun 5 2027 has its own private sequence. Legacy Science and
+# Mathematics remain available through the existing sequence above.
+try:
+    from staging.sains.tahun5.semakan_penjana import register_downloads as register_sains_2027
+    register_sains_2027(telegram_runtime.app)
+except (OSError, ValueError, ImportError) as _sains_2027_exc:
+    print("Sains SK Year 5 2027 reader unavailable:",
+          type(_sains_2027_exc).__name__, flush=True)
+
+try:
+    from staging.sains.tahun6.penjana_2027 import register_downloads as register_sains_year6
+    register_sains_year6(telegram_runtime.app)
+except (OSError, ValueError, ImportError) as _sains_year6_exc:
+    print("Sains SK Year 6 2027 reader unavailable:",
+          type(_sains_year6_exc).__name__, flush=True)
+
+
 # Sejarah: register private source reader for the dedicated Web client.
 try:
     from web.sejarah_2027_native_api import create_sejarah_2027_native_blueprint
@@ -782,6 +799,14 @@ except Exception as _rph_entry_choices_error:
     TELEGRAM_RPH_ENTRY_CHOICES_ACTIVE = False
     print("Telegram RPH entry choices unavailable:",
           type(_rph_entry_choices_error).__name__, flush=True)
+
+
+try:
+    from web.telegram_sk_rph_2027 import install as install_sk_rph_2027
+    SK_RPH_2027_MENU_ACTIVE = install_sk_rph_2027(telegram_runtime)
+except Exception as exc:
+    SK_RPH_2027_MENU_ACTIVE = False
+    print("RPH SK 2027 menu unavailable:", type(exc).__name__, flush=True)
 
 
 # Apply Web teacher text after the native subject adapters set default rows.
