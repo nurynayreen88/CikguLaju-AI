@@ -1,7 +1,7 @@
 name: DLP Science Year 4 and DLP Year 5 Word and PDF review
 on:
   pull_request:
-    branches: [main]
+    branches: [main, draft/science-dlp-year4-2027-source-review]
     paths:
       - 'staging/dlp/year5/**'
       - 'staging/dlp/year4/**'
