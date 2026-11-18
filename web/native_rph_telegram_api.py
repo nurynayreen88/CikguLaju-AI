@@ -508,6 +508,34 @@ def create_native_rph_blueprint(runtime):
             current_app.logger.exception("DLP document generation failed for %s", lesson["id"])
             return jsonify({"error": "DLP document generation unavailable"}), 503
 
+    @bp.get("/internal/rph/v1/matematik-sjkt-t2/review")
+    @bp.get("/internal/rph/v1/matematik-sjkt-t2/review/<int:unit>")
+    @bp.get("/internal/rph/v1/matematik-sjkt-t2/review/<int:unit>/<int:pdp>/<fmt>")
+    def matematik_sjkt_t2_review(unit=None, pdp=None, fmt=None):
+        from flask import current_app
+        from web.matematik_sjkt_t2_review import FORMATS, RENDER_ERRORS, UNIT_NAMES, options, render, resolve
+
+        allowed, status = _authorized()
+        if not allowed:
+            return jsonify({"error": "Unauthorized renderer"}), status
+        if request.args:
+            return jsonify({"error": "Invalid review selection"}), 400
+        if ((unit is not None and not 1 <= unit <= len(UNIT_NAMES))
+                or (fmt is not None and fmt not in FORMATS)):
+            return jsonify({"error": "Matematik SJKT selection unavailable"}), 404
+        try:
+            if pdp is None:
+                return jsonify(options(unit))
+            if resolve(unit, pdp) is None:
+                return jsonify({"error": "Matematik SJKT PdP unavailable"}), 404
+            name, document = render(unit, pdp, FORMATS[fmt])
+            response = Response(document, mimetype=MIMES[fmt])
+            response.headers["Content-Disposition"] = f'attachment; filename="{name}"'
+            return response
+        except RENDER_ERRORS:
+            current_app.logger.exception("Matematik SJKT review source unavailable")
+            return jsonify({"error": "Matematik SJKT review source unavailable"}), 503
+
     @bp.get("/internal/rph/v1/matematik-sjkc/options")
     def matematik_sjkc_options():
         from staging.matematik_sjkc.tahun_3.rph import PDP_COUNT, YEAR, enabled, lessons, resolve, units

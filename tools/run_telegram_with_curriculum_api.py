@@ -834,3 +834,7 @@ TELEGRAM_SUBSCRIPTION_PRICE_GUARD_ACTIVE = install_subscription_price_guard(tele
 
 from web.matematik_sjkc_t3_telegram import install as install_matematik_sjkc_t3
 MATEMATIK_SJKC_T3_RPH_ACTIVE = install_matematik_sjkc_t3(telegram_runtime)
+
+
+from web.matematik_sjkt_t2_review import install as install_matematik_sjkt_t2_review
+install_matematik_sjkt_t2_review(telegram_runtime)
