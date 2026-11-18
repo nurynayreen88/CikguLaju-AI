@@ -228,7 +228,7 @@ def day_payload(profile, schedule, target, *, today=None):
                  "can_prepare":can_prepare,"reason":closure or reason,"rpt_suggestion":suggestion}
         if variant and year and not closure:
             entry["reason"] = "RPH untuk subjek dan tahun ini dalam penyediaan."
-            if year in variant.get("rpt_years", ()):
+            if variant["curriculum"] == "dlp" and year in variant.get("rpt_years", ()):
                 entry["rpt_subject"] = variant["code"]
             if year in variant.get("preview_years", ()):
                 entry["reason"] = "Pratonton RPH tersedia untuk semakan guru."
