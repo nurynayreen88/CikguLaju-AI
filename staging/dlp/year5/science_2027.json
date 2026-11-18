@@ -118,9 +118,9 @@
       "materials": "Bubble solution, two labelled mixtures, matching wands, timer cards",
       "induction": "Ask what observable event should stop a bubble timer.",
       "teach": "Model a measurable start and end. Change only the mixture and elicit how to keep the bubble test fair.",
-      "practice": "Write a definition, identify variables and draft a hypothesis that can be tested by timed trials.",
+      "practice": "Define the duration, identify the variables and write a hypothesis that can be tested by timed trials.",
       "assessment": "Define bubble duration. Name the changed, measured and one controlled variable. Write an if–then hypothesis.",
-      "evidence": "Duration runs from detachment from the wand to bursting. Mixture changes, duration is measured in seconds, and wand size or airflow stays the same.",
+      "evidence": "Time from bubble detachment to bursting in seconds. Change the mixture and keep the wand size fixed. Hypothesis: If mixture A is used, its bubbles will last longer than those from mixture B.",
       "closure": "Ask pupils to point to the exact event that starts and stops the timer."
     },
     "L06": {

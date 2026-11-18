@@ -17,6 +17,8 @@ Kesemua 95 kod LS sepadan dengan [DSKP KSSR Semakan 2017 Science Year 5, edisi I
 | Lesson 54 | Masukkan arah dan anggaran tempoh putaran serta peredaran Bulan pada model. |
 | Lesson 60 | Murid menjelaskan bagaimana mesin ringkas berfungsi bersama dan mewajarkan satu ciri yang menyokong ketahanan atau penyelenggaraan alat. |
 
+RPH Lesson 05 (LS 1.1.9–1.1.11) menggunakan tempoh dari gelembung terlepas hingga pecah sebagai ukuran dalam saat. Contoh jawapan PBD membezakan campuran yang diubah daripada saiz peniup yang dimalarkan dan menunjukkan hipotesis yang boleh diuji tanpa meneka hasil sebenar.
+
 ## Pengesahan dan eksport
 
 Jalankan `PYTHONPATH=. python -m staging.dlp.year5.render_science --output /tmp/rph-science-dlp-y5` dari akar repositori. Penjana menyemak versi RPT sumber dan mengeksport RPT semakan Word serta 70 RPH Word/PDF. Semakan setempat meliputi 58 sesi 60 minit dan 12 sesi 30 minit. Setiap RPH memuatkan tindakan guru dan murid, PBD dengan contoh jawapan dan refleksi dalam satu halaman A4.
