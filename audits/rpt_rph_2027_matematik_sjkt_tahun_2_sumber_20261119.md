@@ -34,8 +34,8 @@ Draf RPT boleh disemak dalam [Word](matematik_sjkt_tahun_2/RPT_2027_Matematik_SJ
 
 ## RPH dan semakan dokumen
 
-Set lengkap 96 RPH tersedia dalam [Word](matematik_sjkt_tahun_2/RPH_2027_Matematik_SJKT_Tahun_2.docx) dan [PDF](matematik_sjkt_tahun_2/RPH_2027_Matematik_SJKT_Tahun_2.pdf). Aktiviti guru dan murid, bahan serta kriteria PBD ditulis dalam bahasa Tamil. Data aktiviti disusun mengikut unit dalam fail rph_unit_1.tsv hingga rph_unit_8.tsv. Dokumen dan agihan disemak bagi semua ID PdP, urutan, pertindihan halaman dan saiz A4. Eksport PDF menunjukkan satu halaman bagi setiap RPH.
+Set lengkap 96 RPH tersedia dalam [Word](matematik_sjkt_tahun_2/RPH_2027_Matematik_SJKT_Tahun_2.docx) dan [PDF](matematik_sjkt_tahun_2/RPH_2027_Matematik_SJKT_Tahun_2.pdf). Aktiviti guru dan murid, bahan serta kriteria PBD ditulis dalam bahasa Tamil. Data aktiviti disusun mengikut unit dalam fail rph_unit_1.tsv hingga rph_unit_8.tsv. Dokumen dan agihan disemak bagi semua ID PdP, urutan, pertindihan halaman dan saiz A4. Eksport PDF menunjukkan satu halaman bagi setiap RPH. [Eksport setempat](matematik_sjkt_tahun_2/eksport_rph.py) diuji untuk 96 Word dan 96 PDF individu. Semua hasil satu halaman A4 dan pemilihan nombor di luar unit ditolak.
 
 ## Status
 
-**HOLD** untuk semakan guru bagi istilah, aktiviti dan padanan bahan. Penjanaan dan muat turun mengikut PdP di Web dan Telegram belum disahkan.
+**HOLD** untuk semakan guru bagi istilah, aktiviti dan padanan bahan. Eksport setempat mengikut PdP disahkan. Penyambungan Web dan Telegram serta muat turun pengguna belum disahkan.
