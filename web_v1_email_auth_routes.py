@@ -9,7 +9,7 @@ import os
 import re
 import uuid
 from urllib.error import HTTPError
-from urllib.parse import quote, urlsplit
+from urllib.parse import urlsplit
 from urllib.request import Request, urlopen
 
 from flask import Blueprint, current_app, jsonify, make_response, request
@@ -281,9 +281,8 @@ def email_recover():
         auth = _auth_configuration()
         if auth is None:
             return _reply({"error": "Pemulihan kata laluan belum tersedia."}, 503)
-        redirect_to = quote(WEB_ORIGIN, safe="")
         status, _result = _auth_post(
-            auth, "recover?redirect_to=" + redirect_to, {"email": email})
+            auth, "recover", {"email": email})
         if status >= 500:
             return _reply({
                 "error": "Emel pemulihan tidak dapat dihantar sekarang. Cuba lagi sebentar lagi."
