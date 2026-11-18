@@ -40,6 +40,8 @@ Set lengkap 96 RPH tersedia dalam [Word](matematik_sjkt_tahun_2/RPH_2027_Matemat
 
 Laluan semakan admin Web dan Telegram menggunakan sumber PdP dan eksport dokumen yang sama. Simulasi menguji lapan unit, 96 pilihan PdP dan kedua-dua format pada setiap saluran. Permintaan tanpa kebenaran serta padanan PdP dan unit yang salah ditolak.
 
+Borang semakan Web boleh menambah kelas, tarikh, masa, bilangan murid dan refleksi dalam fail individu. Penjana Telegram menggunakan butiran yang sama untuk kedua-dua format. Simulasi menguji 96 Word dan 96 PDF daripada borang ini, termasuk penolakan bilangan murid yang tidak sah. Contoh dengan enam baris refleksi diuji dalam kedua-dua format.
+
 ## Status
 
-**HOLD** untuk semakan guru bagi istilah, aktiviti dan padanan bahan. Menu guru, pengisian maklumat kelas dan ujian muat turun produksi masih berbaki.
+**HOLD** untuk semakan guru bagi istilah, aktiviti dan padanan bahan. Sambungan ke pilihan dan jadual waktu guru serta ujian muat turun produksi masih berbaki.

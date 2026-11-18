@@ -510,10 +510,14 @@ def create_native_rph_blueprint(runtime):
 
     @bp.get("/internal/rph/v1/matematik-sjkt-t2/review")
     @bp.get("/internal/rph/v1/matematik-sjkt-t2/review/<int:unit>")
-    @bp.get("/internal/rph/v1/matematik-sjkt-t2/review/<int:unit>/<int:pdp>/<fmt>")
+    @bp.route("/internal/rph/v1/matematik-sjkt-t2/review/<int:unit>/<int:pdp>/<fmt>",
+              methods=("GET", "POST"))
     def matematik_sjkt_t2_review(unit=None, pdp=None, fmt=None):
         from flask import current_app
-        from web.matematik_sjkt_t2_review import FORMATS, RENDER_ERRORS, UNIT_NAMES, options, render, resolve
+        from audits.matematik_sjkt_tahun_2.eksport_rph import teacher_context
+        from web.matematik_sjkt_t2_review import (
+            FORMATS, RENDER_ERRORS, UNIT_NAMES, options, render, resolve,
+        )
 
         allowed, status = _authorized()
         if not allowed:
@@ -523,12 +527,23 @@ def create_native_rph_blueprint(runtime):
         if ((unit is not None and not 1 <= unit <= len(UNIT_NAMES))
                 or (fmt is not None and fmt not in FORMATS)):
             return jsonify({"error": "Matematik SJKT selection unavailable"}), 404
+        teacher = None
+        if request.method == "POST":
+            if not request.is_json or not 0 < (request.content_length or 0) <= 7000:
+                return jsonify({"error": "Butiran guru tidak sah"}), 400
+            teacher = request.get_json(silent=True)
+            try:
+                if teacher is None:
+                    raise ValueError("Missing teacher fields")
+                teacher_context(teacher)
+            except ValueError:
+                return jsonify({"error": "Butiran guru tidak sah"}), 400
         try:
             if pdp is None:
                 return jsonify(options(unit))
             if resolve(unit, pdp) is None:
                 return jsonify({"error": "Matematik SJKT PdP unavailable"}), 404
-            name, document = render(unit, pdp, FORMATS[fmt])
+            name, document = render(unit, pdp, FORMATS[fmt], teacher)
             response = Response(document, mimetype=MIMES[fmt])
             response.headers["Content-Disposition"] = f'attachment; filename="{name}"'
             return response
