@@ -119,6 +119,10 @@ const variants=[
   ["bahasa_semai","Bahasa Semai"],["bahasa_cina_sk","Bahasa Cina (SK)"],["bahasa_tamil_sk","Bahasa Tamil (SK)"]
  ].map(([code,label])=>({code,label,curriculum:"kssr"})),
 ];
+function dlpId(science,n){
+ if(n==="3")return science?"DLP-SCI-Y3-01":"DLP-MAT-Y3-U01-01";
+ return `DLP-${science?"SCI":n==="4"?"MAT":"MATH"}-Y${n}-L01`;
+}
 const ctx={
  curriculum,year,subject,unit,lesson,theme,topic,component,catalogStatus:{textContent:""},
  dlpPreviewPanel:panel,dlpReviewHeading:heading,dlpReviewContent:content,dlpReviewData,
@@ -155,7 +159,7 @@ const ctx={
    return;
   }
   const science=extra.subject==="SCIENCE_DLP";
-  ctx.fillSelect(lesson,[{value:`DLP-${science?"SCI":(year.value==="4"?"MAT":"MATH")}-Y${year.value}-L01`,
+  ctx.fillSelect(lesson,[{value:dlpId(science,year.value),
     label:science?"Lesson 01 • Observe":"Lesson 01 • Whole Numbers"}],"Pilih Lesson");
  },
  async checkRphAvailability(){checkedRph++;},
@@ -233,7 +237,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  listeners["curriculum.change"]();
  assert.deepEqual(year.options.map(x=>x.label),[
   "Pilih Tahun","Tahun 1 (KP Baharu) — Dalam Penyediaan","Tahun 2 — Untuk Semakan Guru",
-  "Tahun 3 — Dalam Penyediaan","Tahun 4","Tahun 5","Tahun 6"
+  "Tahun 3","Tahun 4","Tahun 5","Tahun 6"
  ]);
  year.value="2";
  await listeners["year.change"]();
@@ -269,7 +273,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
   }
   assert.equal(lessonNumber,subjectCode==="MATH_DLP"?78:63);
  }
- for(const n of ["1","3"]){
+ for(const n of ["1"]){
   year.value=n;
   await listeners["year.change"]();
   assert.equal(panel.hidden,true);
@@ -285,16 +289,15 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
   }
  }
  assert.deepEqual(catalogueCalls,[]);
- for(const n of ["4","5","6"]){
+ for(const n of ["3","4","5","6"]){
   year.value=n;
   await listeners["year.change"]();
   assert.deepEqual(subject.options.map(x=>x.label),[
    "Pilih Subjek","Science (DLP) — RPH 2027",
    "Mathematics (DLP) — RPH 2027"
   ]);
-  const subjects=[["SCIENCE_DLP","SCI"],["MATH_DLP",n==="4"?"MAT":"MATH"]];
-  for(const [code,prefix] of subjects){
-   const id=`DLP-${prefix}-Y${n}-L01`;
+  for(const code of ["SCIENCE_DLP","MATH_DLP"]){
+   const id=dlpId(code==="SCIENCE_DLP",n);
    subject.value=code;
    await listeners["subject.change"]();
    assert.equal(unit.hidden,false);
@@ -309,7 +312,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
    assert.deepEqual(catalogueCalls.splice(0),["units",code,"pdp",code,"01"]);
   }
  }
- assert.equal(checkedRph,6);
+ assert.equal(checkedRph,8);
  curriculum.value="kssr";
  listeners["curriculum.change"]();
  assert.equal(panel.hidden,true);

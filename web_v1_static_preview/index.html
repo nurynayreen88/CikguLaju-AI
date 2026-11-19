@@ -1492,7 +1492,7 @@ function canSelectRph(){
   (curriculum.value==="sjkt"&&year.value==="2"&&subject.value==="MATH_SJKT");
 }
 function dlpRphAvailable(targetYear,code){
- return ["SCIENCE_DLP","MATH_DLP"].includes(code)&&["4","5","6"].includes(targetYear);
+ return ["SCIENCE_DLP","MATH_DLP"].includes(code)&&["3","4","5","6"].includes(targetYear);
 }
 function dlpRphDownload(){
  return curriculum.value==="dlp"&&dlpRphAvailable(year.value,subject.value);
@@ -1522,7 +1522,7 @@ const curriculumYears={
  kp2027:[{value:"1",label:"Tahun 1 (KP Baharu)"}],
  dlp:primaryYears.map(({value,label})=>({
   value,
-  label:value==="2"?label+" — Untuk Semakan Guru":["4","5","6"].includes(value)?label:
+  label:value==="2"?label+" — Untuk Semakan Guru":["3","4","5","6"].includes(value)?label:
    label+(value==="1"?" (KP Baharu)":"")+" — Dalam Penyediaan"
  }))
 };
@@ -2526,7 +2526,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
-<script src="/assets/rph-today.js?v=selesai-math-dlp-y4-20261119"></script>
+<script src="/assets/rph-today.js?v=dlp-y3-20261119"></script>
 <script src="/assets/teacher-profile.js?v=pilihan-subjek-20261117"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>
