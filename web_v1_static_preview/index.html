@@ -1492,8 +1492,7 @@ function canSelectRph(){
   (curriculum.value==="sjkt"&&year.value==="2"&&subject.value==="MATH_SJKT");
 }
 function dlpRphAvailable(targetYear,code){
- if(code==="SCIENCE_DLP")return ["4","5","6"].includes(targetYear);
- return code==="MATH_DLP"&&["5","6"].includes(targetYear);
+ return ["SCIENCE_DLP","MATH_DLP"].includes(code)&&["4","5","6"].includes(targetYear);
 }
 function dlpRphDownload(){
  return curriculum.value==="dlp"&&dlpRphAvailable(year.value,subject.value);
