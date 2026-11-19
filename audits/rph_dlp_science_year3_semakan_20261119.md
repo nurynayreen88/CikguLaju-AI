@@ -20,3 +20,16 @@ Rujukan halaman diperiksa mengikut unit dalam [buku teks BT073005](https://anyfl
 Sebanyak 40 sesi 60 minit dan 16 sesi 30 minit memberikan 2,880 minit. Kesemua 56 eksport Word selepas penukaran LibreOffice dan 56 PDF penjana diperiksa sebagai satu halaman A4. Semakan visual meliputi contoh halaman bagi kedua-dua format. Kesemua 19 ujian tempatan untuk pemilih kurikulum, menu Telegram, penjana Tahun 2 dan padanan RPT Tahun 3 lulus.
 
 Kesesuaian aktiviti amali dan evidens PBD disemak untuk pelepasan muat turun di Web dan Telegram.
+
+## Deskripsi Content Standards dan Learning Standards
+
+Semakan 20 November 2026 memadankan 13 CS dan 60 LS dengan DSKP edisi bahasa Inggeris, halaman 34–62. Kesemua 52 Lesson memaparkan kod RPT bersama deskripsi ringkas dalam bahasa Inggeris. Empat sesi Review memaparkan standard yang sudah diajar dan dinilai melalui tugasan sesi berkenaan. Bagi Review 03, murid menyemak bacaan isi padu dan memilih bukti daripada rekod ketumpatan atau litmus.
+
+| Sesi | Kod LS yang dirujuk |
+| --- | --- |
+| Review 01 | 3.1.1, 3.2.3, 3.3.1 |
+| Review 02 | 4.1.1, 5.1.1 |
+| Review 03 | 6.1.5, 7.1.2, 8.1.1 |
+| Review 04 | 9.1.3, 10.1.2 |
+
+Kesemua 112 respons Word/PDF lulus ujian setempat pada laluan penjana Web. Sebanyak 56 PDF terus dan 56 Word selepas penukaran ke PDF disahkan satu halaman A4. Semakan teks mengesahkan kod dan deskripsi, rujukan buku, butiran kelas dan refleksi. Semakan visual meliputi Lesson 08 dan Review 03.

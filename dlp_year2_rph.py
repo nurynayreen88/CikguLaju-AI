@@ -39,12 +39,24 @@ def year3_science_catalog():
     rpt = path.parents[3] / "rpt_2027" / "dlp" / "CikguLaju_RPT_DLP_2027_Science_Year_3.docx"
     if sha256(rpt.read_bytes()).hexdigest() != data["rpt_sha256"]:
         raise ValueError("The Science Year 3 RPT has changed.")
+    descriptions = json.loads(path.with_name("science_standard_descriptions.json").read_text(encoding="utf-8"))
     plans = data["plans"]
     units = {}
     for plan in plans:
         title = plan["unit"]
         unit_number = re.match(r"Unit (\d+) ", title)
         unit_id = unit_number[1].zfill(2) if unit_number else "review"
+        if unit_id == "review":
+            ls_codes = descriptions["review_ls"][plan["id"]]
+            cs_codes = list(dict.fromkeys(code.rsplit(".", 1)[0] for code in ls_codes))
+        else:
+            content, learning = plan["standards"]
+            cs_codes = content.removeprefix("CS ").split(", ")
+            ls_codes = learning.removeprefix("LS ").split(", ")
+        standards = [
+            ("Content Standards", "\n".join(f"{code} {descriptions['cs'][code]}" for code in cs_codes)),
+            ("Learning Standards", "\n".join(f"{code} {descriptions['ls'][code]}" for code in ls_codes)),
+        ]
         unit = units.setdefault(unit_id, {"id": unit_id, "title": title, "lessons": []})
         unit["lessons"].append({
             "id": plan["id"],
@@ -55,6 +67,7 @@ def year3_science_catalog():
             "minutes": plan["minutes"],
             "rpt_dates": plan["rpt_dates"],
             "standards": " · ".join(plan["standards"]),
+            "standard_rows": standards,
             "references": " · ".join(line.replace("TB ", "Textbook ").replace("AB ", "Activity Book ")
                                      for line in plan["references"]),
             "objective": plan["objective"],
@@ -106,12 +119,13 @@ def render(subject, unit, lesson, fmt, teacher):
         ("Time", teacher["time"]),
         ("Pupils", teacher["students"]),
     )
+    standards = lesson.get("standard_rows", [("Standards", lesson["standards"])])
     details = [
         ("Unit", unit["title"]),
         ("Lesson / PdP", lesson_label),
         ("Class / date / time", "   ·   ".join(
             f"{label}: {value or '________'}" for label, value in class_details)),
-        ("Standards", lesson["standards"]),
+        *standards,
         ("Teaching source" if lesson_label.startswith("Review ") and year == 2 else "Book references",
          lesson["references"]),
         ("Learning objective", lesson["objective"]),
