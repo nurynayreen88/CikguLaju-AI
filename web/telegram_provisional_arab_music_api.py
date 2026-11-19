@@ -1,14 +1,9 @@
-"""Private source-linked preview of Bahasa Arab and Pendidikan Muzik RPH.
-
-These are DRAF materials for teacher review, NEVER official approved content.
-Sources are immutable copies from distinct reviewed staging branches, co-located
-with Telegram, not Web-side rewrites. No DB access, token leaks, AI, audio,
-student data or quota mutation. All user-facing documents display DRAF.
-"""
+"""Private RPH routes for provisional sources and the reviewed Arabic PdP 001."""
 from __future__ import annotations
 import csv
 import hashlib
 import io
+import json
 import os
 import re
 import tempfile
@@ -33,6 +28,7 @@ NUM = re.compile(r"(?:00[1-9]|0[1-9]\d|[1-2]\d\d|3\d\d)")
 UNIT = re.compile(r"u(?:0[1-9]|[1-9][0-9])|x[a-f0-9]{12}")
 EXPECTED = {2:60,3:60,4:58,5:60,6:60}
 SUBJECTS = {"ARAB":"Bahasa Arab", "MUZIK":"Pendidikan Muzik"}
+REVIEWED_ARABIC = (2, 1)
 
 
 def _check(year, subject, unit=None, lesson=None):
@@ -123,7 +119,13 @@ def _unit_rows(year, subject):
                 rows.append((code,label))
     if not rows or len(set(k for k,_ in rows))!=len(rows):
         raise ValueError("Unavailable draft units")
-    return [{"value":u,"label":label,"status":"DRAF"} for u,label in rows]
+    units = [{"value":u,"label":label,"status":"DRAF"} for u,label in rows]
+    if subject == "ARAB" and year == REVIEWED_ARABIC[0]:
+        row = _arab_index()[REVIEWED_ARABIC]
+        plan = _reviewed_arabic(row)
+        unit = next(item for item in units if item["value"] == f"u{plan['unit']:02d}")
+        unit["has_ready_lessons"] = True
+    return units
 
 
 def _lesson_rows(year,subject,unit):
@@ -141,6 +143,10 @@ def _lesson_rows(year,subject,unit):
             # Source mapping is preliminary. Never call it visually verified.
             if row["halaman_buku"].strip():
                 item["textbook_ref"]="Buku Teks m/s "+row["halaman_buku"]+" (rujukan DRAF)"
+            if (year, pdp) == REVIEWED_ARABIC:
+                plan = _reviewed_arabic(row)
+                item.update(status="READY", label=f"PdP {pdp:03d} — {plan['focus']}",
+                            textbook_ref="Buku Teks m/s " + plan["pages"])
             rows.append(item)
     else:
         for row in _music_index(year):
@@ -158,6 +164,22 @@ def _lesson_rows(year,subject,unit):
     return rows
 
 
+@lru_cache(maxsize=1)
+def _reviewed_arabic_source():
+    return json.loads((AR / "year2" / "pdp_001_ar.json").read_text(encoding="utf-8"))
+
+
+def _reviewed_arabic(row):
+    plan = _reviewed_arabic_source()
+    if ((plan["year"], plan["lesson"]) != REVIEWED_ARABIC
+            or plan["unit"] != int(row["unit"])
+            or plan["topic"] != row["unit_name"]
+            or (plan["sk"], plan["sp"], plan["pages"]) !=
+               (row["sk"], row["sp"], row["halaman_buku"])):
+        raise ValueError("Reviewed Arabic PdP does not match the source index")
+    return plan
+
+
 def _selected(year,subject,unit,lesson):
     _check(year,subject,unit,lesson)
     if lesson not in {x["value"] for x in _lesson_rows(year,subject,unit)}:
@@ -171,6 +193,10 @@ def _selected(year,subject,unit,lesson):
         standards=display_sk_sp(first(f,"DSKP SK/SP","Kod SK/SP","SK/SP cadangan"))
         if title!=f"RPH Bahasa Arab Tahun {year} — PdP {n:03d}" or standards!=f"{row['sk']} / {row['sp']}":
             raise ValueError("Arabic draft source differs from the RPT index")
+        if (year, n) == REVIEWED_ARABIC:
+            return {"year":year, "subject":subject, "unit":unit, "lesson":n,
+                    "title":title, "arabic":_reviewed_arabic(row),
+                    "status":"READY", "formats":["word"]}
         if ("DRAF" not in raw or len(raw)<650
                 or not all(first(f,*names).strip() for _,names in SECTIONS)
                 or not first(f,"BBM").strip()
@@ -241,7 +267,13 @@ def _arab_word(selected,teacher,dest):
     from scripts.render_bahasa_arab_staging import render_one
     from docx import Document
     from docx.shared import Pt
-    cls,dt,tm,pupils,day=_teacher_metadata(teacher,"ARAB")
+    metadata = _teacher_metadata(teacher, "ARAB")
+    reflection = clean_reflection(teacher.get("reflection", ""))
+    if selected.get("status") == "READY":
+        from web.arabic_rph_word import render_arabic_word
+        render_arabic_word(selected["arabic"], metadata, reflection, dest)
+        return dest
+    cls,dt,tm,pupils,day = metadata
     generated=render_one(selected["source"],dest)
     if not generated["valid_struct"] or not generated["arabic"]:
         raise ValueError("Arabic Word source failed quality guard")
@@ -249,7 +281,6 @@ def _arab_word(selected,teacher,dest):
     if len(doc.tables)!=1 or not doc.paragraphs:
         raise ValueError("Arabic Word structure invalid")
     doc.paragraphs[0].add_run(" • DRAF UNTUK SEMAKAN GURU").bold=True
-    reflection = clean_reflection(teacher.get("reflection", ""))
     for row in doc.tables[0].rows:
         caption = row.cells[0].text.strip()
         if caption=="Tarikh / Masa / Kelas":
@@ -321,7 +352,7 @@ def create_provisional_subjects_blueprint(runtime):
         except (OSError,ValueError,KeyError,ImportError):
             return jsonify({"available":False}),404
         return jsonify({"available":True,"generator":"telegram-native",
-                        "status":"DRAF","formats":selected["formats"]})
+                        "status":selected.get("status","DRAF"),"formats":selected["formats"]})
 
     @bp.get("/internal/rph/v1/other-drafts/audio-links")
     def audio_links():
@@ -372,7 +403,7 @@ def create_provisional_subjects_blueprint(runtime):
         output=None
         try:
             if src["subject"]=="ARAB":
-                output=Path(tempfile.gettempdir())/(unique+"_Bahasa_Arab_DRAF.docx")
+                output=Path(tempfile.gettempdir())/(unique+"_Bahasa_Arab.docx")
                 _arab_word(selected,data["teacher"],output)
             else:
                 state,text=_music_state(selected,data["teacher"])
@@ -408,9 +439,10 @@ def create_provisional_subjects_blueprint(runtime):
             elif not body.startswith(b"%PDF-"):
                 raise ValueError("Invalid PDF")
             resp=Response(body,mimetype=MIMES[fmt])
-            resp.headers["Content-Disposition"]=(
-                'attachment; filename="CikguLaju_'+src["subject"]+'_DRAF.'
-                +("docx" if fmt=="word" else "pdf")+'"')
+            name = ("CIKGULAJU_RPH_ARAB_TAHUN_2_001" if selected.get("status") == "READY"
+                    else "CikguLaju_" + src["subject"] + "_DRAF")
+            extension = "docx" if fmt == "word" else "pdf"
+            resp.headers["Content-Disposition"] = f'attachment; filename="{name}.{extension}"'
             return resp
         except (Exception,) as exc:
             print("Draft source render unavailable:",type(exc).__name__,flush=True)
