@@ -8,6 +8,8 @@ on:
       - tests/test_english_y1_kssr_native.py
       - web/telegram_verified_rpt_rph_bridge.py
       - web/telegram_verified_sequence_rph_bridge.py
+      - web/math_sk_year1_kssr_references.py
+      - tests/test_math_sk_year1_kssr_references.py
       - web/sains_y3_unit_awal.py
       - tests/test_sains_y3_unit_awal.py
       - web/sains_unit_awal.py
@@ -37,6 +39,8 @@ on:
       - tests/test_english_y1_kssr_native.py
       - web/telegram_verified_rpt_rph_bridge.py
       - web/telegram_verified_sequence_rph_bridge.py
+      - web/math_sk_year1_kssr_references.py
+      - tests/test_math_sk_year1_kssr_references.py
       - web/sains_y3_unit_awal.py
       - tests/test_sains_y3_unit_awal.py
       - web/sains_unit_awal.py
@@ -75,6 +79,7 @@ jobs:
           python -m py_compile web/telegram_verified_rpt_rph_bridge.py web/telegram_verified_sequence_rph_bridge.py
           python -m unittest discover -s tests -p test_telegram_verified_rpt_rph_bridge.py -v
           python -m unittest discover -s tests -p test_telegram_verified_sequence_rph_bridge.py -v
+          python -m unittest discover -s tests -p test_math_sk_year1_kssr_references.py -v
           python -m unittest discover -s tests -p test_telegram_bm_hierarchy_web.py -v
           python -m unittest discover -s tests -p test_telegram_unit_navigation.py -v
           python -m unittest discover -s tests -p test_sains_y3_unit_awal.py -v

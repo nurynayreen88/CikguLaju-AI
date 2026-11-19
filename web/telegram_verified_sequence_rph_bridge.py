@@ -314,6 +314,10 @@ def create_native_sequence_rph_blueprint(runtime, *, url_prefix="/internal/rph/v
                 entry = {"value": code, "label": label}
                 if refs:
                     entry["textbook_ref"] = " • ".join(refs[:3])
+                if (year, sub) == (1, "MATH"):
+                    activitybook = str(r.get("activitybook_ref") or "").strip()
+                    if activitybook and len(activitybook) <= 120:
+                        entry["activitybook_ref"] = activitybook
                 if sub == "SCIENCE":
                     checked_pages = _science_textbook_pages(year, code, rows)
                     if checked_pages and (not refs or refs == [f"Buku Teks m/s {checked_pages}"]):
