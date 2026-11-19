@@ -132,13 +132,19 @@ def save_completion(config, uid, day, slot, component, number):
                  prefer="resolution=merge-duplicates,return=minimal")
 
 
+def supports_completion(slot):
+    return slot.get("curriculum") != "dlp" or (
+        slot["year"] == 4 and slot["subject_code"] in DLP_Y4_COMPLETION
+    )
+
+
 def attach_progress(day, rows):
     by_scope = {}
     for row in rows:
         scope = row["class_key"], row["subject_code"], row["component"]
         by_scope.setdefault(scope, {})[(row["pdp_date"], row["start_time"][:5])] = row["sequence_no"]
     for slot in day["entries"]:
-        if not slot["can_prepare"] or slot.get("curriculum") == "sjkc":
+        if not slot["can_prepare"] or slot.get("curriculum") == "sjkc" or not supports_completion(slot):
             continue
         slot_date = day["date"], slot["start"]
         recorded = {}
