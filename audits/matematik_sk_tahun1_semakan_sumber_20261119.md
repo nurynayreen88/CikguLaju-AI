@@ -15,6 +15,8 @@ Semakan 19 November 2026 meliputi 56 rekod PdP sedia ada dalam `verified_pdp_seq
 
 Unit 1 muncul sekali dalam katalog sumber. Ujian semak respons unit, kesemua 13 PdP Unit 1 dan pengelompokan unit Web. Kod asal setiap PdP terus digunakan untuk semakan fail. Senarai rujukan mengikut PdP disimpan di [modul rujukan KSSR](../web/math_sk_year1_kssr_references.py).
 
+Dalam Telegram, pilihan Buku Teks dan Buku Aktiviti menghantar halaman rujukan bagi PdP yang dipilih serta pautan ke jilid asal. Ujian memeriksa kedua-dua jenis buku dan kedua-dua jilid. Web memaparkan kedua-dua rujukan selepas guru memilih PdP.
+
 **Tolak berturut-turut (PdP 24).** DSKP cetakan pertama Mei 2015, halaman 39, mencetak SP 2.6.2. Buku Teks Jilid 1, halaman 111–113, mencetak 2.6.1 bagi kemahiran yang sama. Buku Aktiviti Jilid 1, halaman 120–122, menyediakan latihan tolak berturut-turut termasuk melengkapkan ayat matematik. Pilihan KSSR mengekalkan kod DSKP 2.6.2, dengan rujukan halaman berdasarkan isi dan latihan. DPK Edisi 3 menggunakan penomboran berasingan untuk kemahiran ini.
 
 Sumber untuk semakan ialah [DSKP KSSR Matematik Tahun 1, Bahagian Pembangunan Kurikulum](https://sites.google.com/moe-dl.edu.my/dskpstemsr/home), [kedua-dua jilid Buku Teks dan Buku Aktiviti Matematik SK Tahun 1, PPD Batu Pahat](https://sites.google.com/moe-dl.edu.my/ppd-batu-pahat-sains-matematik/buku-teks-digital-bidang-sains-matematik/buku-teks-sekolah-rendah/matematik-tahun-1) dan [Dokumen Penjajaran Matematik Tahap I Edisi 3](https://sites.google.com/moe-dl.edu.my/dskpskfp1/tahun-1).

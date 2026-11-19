@@ -3,6 +3,16 @@
 Each row pairs a legacy lesson and SP with the 2016 textbook and matching
 activity-book pages. See audits/matematik_sk_tahun1_semakan_sumber_20261119.md.
 """
+from html import escape
+
+_BOOKS = {
+    "textbook": ("Buku Teks", "textbook_ref", (
+        "1qHCANAAfTMumCAFbfHvTkMwYpygI18Sc", "13ItVMRsMFmbbQaNYmu2XrWzCYy6pgN0m",
+    )),
+    "activity": ("Buku Aktiviti", "activitybook_ref", (
+        "13KvDy6r8-NbLy-4aNF1EWQfuQU-QiyRC", "1zxRzmN_iF3fcpXINIoRfaKXaQV3d7_B4",
+    )),
+}
 
 _REFERENCES = {
     "PDP1": ("1.1.1", "Banding kuantiti melalui padanan", 1, "1–4", "1–5"),
@@ -95,3 +105,25 @@ def install(runtime):
         return rows
 
     runtime._sm2542_rows = read_with_references
+    send_next = getattr(runtime, "_send_reference_material_v2528", None)
+    delivery_ok = getattr(runtime, "_telegram_delivery_ok_v25279", None)
+    if not callable(send_next) or not callable(delivery_ok):
+        return
+
+    def send_reference(cid, state, key):
+        if (state.get("year"), state.get("subject")) != ("Tahun 1", "Matematik") or key not in _BOOKS:
+            return send_next(cid, state, key)
+        entry = _REFERENCES.get(state.get("pdp_sequence_code"))
+        if not entry or state.get("sp_code") != entry[0]:
+            return send_next(cid, state, key)
+        name, field, files = _BOOKS[key]
+        reference = state.get(field)
+        if not reference:
+            return send_next(cid, state, key)
+        volume = entry[2]
+        url = f"https://drive.google.com/file/d/{files[volume - 1]}/view"
+        return delivery_ok(runtime.send(cid, escape(str(reference)), [
+            [{"text": f"Buka {name} Jilid {volume}", "url": url}],
+        ]))
+
+    runtime._send_reference_material_v2528 = send_reference
