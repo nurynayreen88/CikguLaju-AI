@@ -155,6 +155,38 @@ class WebNativePdPBridgeTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 _selection(6, "MATH_DLP", new["value"])
 
+    def test_web_options_list_one_sk_math_and_accept_it_in_rph_pantas(self):
+        from tools.run_web_v1_preview import app
+
+        config = {"CIKGULAJU_WEB_SESSION_SECRET": "local-test-secret", "account_backend": "supabase"}
+        subjects = [{"value": code, "label": label} for code, label in (
+            ("MATH", "Matematik"), ("MORAL", "Pendidikan Moral"), ("PJPK", "PJPK"),
+            ("PSV", "Pendidikan Seni Visual"), ("ARAB", "Bahasa Arab"), ("MUZIK", "Pendidikan Muzik"),
+        )]
+        lesson = {"value": "SK27-DPK3-MATH-Y2-L015", "label": "PdP 015 • Tambah dua nombor"}
+        with (
+            patch.dict("os.environ", {"CIKGULAJU_WEB_CATALOG_MODE": "telegram-api",
+                                      "CIKGULAJU_AUTHORITATIVE_API_URL": "https://example.test",
+                                      "CIKGULAJU_AUTHORITATIVE_API_TOKEN": "test-token-for-local-request-simulation"}),
+            patch("web_v1_telegram_auth_routes._config", return_value=config),
+            patch("web_v1_sessions.verify_session_ticket", return_value=123),
+            patch("web_v1_telegram_auth_routes._lookup", return_value={"telegram_user_id": 123}),
+            patch("web.authoritative_http_source.AuthoritativeHttpCurriculumSource.list_subjects", return_value=subjects),
+            patch("web.native_telegram_sequence_rph_client.list_native_lessons", return_value=[lesson]) as lessons,
+        ):
+            client = app.test_client()
+            for year in (2, 3):
+                response = client.get("/api/options", query_string={"kind": "subjects", "year": year})
+                self.assertEqual(response.status_code, 200, response.json)
+                self.assertEqual([row for row in response.json if row["label"] == "Matematik"],
+                                 [{"value": "MATH_DPK3", "label": "Matematik"}])
+            response = client.get("/api/options", query_string={
+                "kind": "pdp", "year": 2, "subject": "MATH_DPK3", "unit": "d123", "rph_today": "1",
+            })
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.json, [lesson])
+            lessons.assert_called_once_with(2, "MATH_DPK3", "d123")
+
     def test_web_options_sign_only_valid_dlp_sessions_for_the_exact_year_and_subject(self):
         from tools.run_web_v1_preview import app
 

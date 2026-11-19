@@ -221,7 +221,7 @@ def day_payload(profile, schedule, target, *, today=None, sjkc_catalogue=None, s
             raise ProfileValidation("Maklumat waktu dalam jadual tidak sah")
         year = class_year(cls)
         code, component = subject_identity(subject, year)
-        if code == "MATH" and year in DPK_YEARS:
+        if code == "MATH" and target.year == 2027 and year in DPK_YEARS:
             code = DPK_SUBJECT
         subject_key = " ".join(subject.casefold().split())
         variant = variants_by_name().get(subject_key)
