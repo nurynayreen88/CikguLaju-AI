@@ -84,7 +84,9 @@ def _with_references(row):
 
 
 def install(runtime):
-    read_rows = runtime._sm2542_rows
+    read_rows = getattr(runtime, "_sm2542_rows", None)
+    if not callable(read_rows):
+        return
 
     def read_with_references(year_label, subject):
         rows = read_rows(year_label, subject)

@@ -73,6 +73,11 @@ class MathSKYear1ReferencesTests(unittest.TestCase):
         install(runtime)
         self.assertEqual(runtime._sm2542_rows("Tahun 1", "Matematik"), [changed, reviewed])
 
+    def test_runtime_without_native_maths_still_starts(self):
+        runtime = SimpleNamespace()
+        install(runtime)
+        self.assertFalse(hasattr(runtime, "_sm2542_rows"))
+
     def test_web_options_keep_one_unit_one_and_both_references(self):
         app = Flask(__name__)
         app.register_blueprint(create_native_sequence_rph_blueprint(self.runtime))
