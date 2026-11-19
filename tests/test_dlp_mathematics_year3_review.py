@@ -19,8 +19,8 @@ class MathematicsYear3DlpReviewTests(unittest.TestCase):
                 word = BytesIO()
                 render_plan(word, draft, _word)
                 document = Document(word)
-                self.assertEqual(document.paragraphs[2].text, title)
                 details = {row.cells[0].text: row.cells[1].text for row in document.tables[0].rows}
+                self.assertEqual(details["Topic"], title)
                 self.assertEqual(details["RPT 2027 dates"], dates)
                 self.assertEqual(details["Lesson / PdP"], f"{label} · {duration}")
                 self.assertAlmostEqual(document.sections[0].page_width.mm, 210, places=1)

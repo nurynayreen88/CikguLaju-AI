@@ -109,19 +109,13 @@ def export_rpt(year, path, *, dpk=False):
 def render_download(plan, fmt, teacher):
     renderer = RENDERERS[fmt]
     heading, fields, activities, reflection = plan.parts
-    class_line = " · ".join(
-        f"{label} {teacher.get(key) or '______'}"
-        for key, label in (("class", "Kelas"), ("date", "Tarikh"), ("time", "Masa"),
-                           ("students", "Murid"))
-    )
     notes = clean_reflection(teacher.get("reflection") or "")
-    fields = [(label, class_line if label == "Maklumat kelas" else value)
-              for label, value in fields]
     reflection = [(label, notes if label == "Refleksi" and notes else value)
                   for label, value in reflection]
     stream = BytesIO()
     renderer(stream, heading, fields, activities, reflection,
-             compact=plan.dpk and plan.year == 2 and plan.number == 17)
+             compact=plan.dpk and plan.year == 2 and plan.number == 17,
+             mathematics=True, teacher=teacher)
     return stream.getvalue()
 
 

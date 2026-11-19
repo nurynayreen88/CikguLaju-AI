@@ -56,8 +56,8 @@ class MathematicsDLPYear6ReviewTests(unittest.TestCase):
                 section = word.sections[0]
                 self.assertAlmostEqual(section.page_width.mm, 210, places=1)
                 self.assertAlmostEqual(section.page_height.mm, 297, places=1)
-                self.assertEqual(word.paragraphs[2].text, plan["title"])
                 details = {row.cells[0].text: row.cells[1].text for row in word.tables[0].rows}
+                self.assertEqual(details["Topic"], plan["title"])
                 for label, key in (("Lesson / PdP", "label"), ("RPT date ranges", "dates"),
                                    ("Standards", "standards"), ("Book reference", "reference"),
                                    ("Learning objective", "objective")):
@@ -65,10 +65,11 @@ class MathematicsDLPYear6ReviewTests(unittest.TestCase):
                 self.assertEqual(word.tables[2].rows[0].cells[1].text, plan["evidence"])
                 self.assertEqual(sum(int(phase.split()[-2]) for phase, *_ in plan["phases"]),
                                  plan["minutes"])
-                self.assertEqual(
-                    [tuple(cell.text for cell in row.cells) for row in word.tables[1].rows[1:]],
-                    plan["phases"],
-                )
+                table = word.tables[1]
+                self.assertEqual(len(table.rows), 4)
+                activities = "\n".join(row.cells[1].text for row in table.rows[1:])
+                for _, teacher, pupils in plan["phases"]:
+                    self.assertIn(f"Teacher: {teacher}\nPupils: {pupils}", activities)
 
                 pdf = PdfReader(self.output / f"{stem}.pdf")
                 self.assertEqual(len(pdf.pages), 1)
@@ -134,19 +135,19 @@ class MathematicsDLPYear6DownloadTests(unittest.TestCase):
                         self.assertIn(f"CIKGULAJU_RPH_{key}.{suffix}", response.headers["Content-Disposition"])
                         if fmt == "word":
                             doc = Document(BytesIO(response.data))
-                            self.assertEqual(doc.paragraphs[2].text, plan["title"])
+                            details = {a.text: b.text for a, b in (row.cells for row in doc.tables[0].rows)}
+                            self.assertEqual(details["Topic"], plan["title"])
                             self.assertEqual(doc.tables[2].rows[0].cells[1].text, plan["evidence"])
                             self.assertEqual(doc.tables[2].rows[1].cells[1].text, self.teacher["reflection"])
-                            text = doc.tables[0].rows[3].cells[1].text
+                            text = " ".join(details.values())
                         else:
                             pdf = PdfReader(BytesIO(response.data))
                             self.assertEqual(len(pdf.pages), 1)
                             text = " ".join(pdf.pages[0].extract_text().split())
                             for field in ("title", "label", "standards", "reference", "evidence"):
                                 self.assertIn(" ".join(plan[field].split()), text)
-                        for value in self.teacher.values():
-                            if value != self.teacher["reflection"]:
-                                self.assertIn(value, text)
+                        for value in ("6 Bestari", "18/10/2027", "08:00 - 09:30", "30"):
+                            self.assertIn(value, text)
         self.assertEqual(ids, list(expected))
 
     def test_wrong_unit_lesson_subject_and_year_do_not_render(self):

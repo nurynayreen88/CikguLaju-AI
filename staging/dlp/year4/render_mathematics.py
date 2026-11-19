@@ -137,24 +137,18 @@ def resolve_download(unit_id, lesson_id):
 def render_plan(stream, draft, renderer, *, teacher=None):
     _, title, unit, label, details, activities = draft
     teacher = teacher or {}
-    session = " · ".join(
-        f"{caption}: {teacher.get(key) or '______'}"
-        for key, caption in (("class", "Class"), ("date", "Date"), ("time", "Time"),
-                             ("students", "Pupils"))
-    )
     heading = ("Daily Lesson Plan", "Mathematics (DLP) · Year 4 SK", title)
     fields = [
         ("Unit", unit),
         ("Lesson / PdP", f"{label} · {details['Duration']}"),
         ("RPT 2027 dates", details["RPT 2027 dates"]),
-        ("Class / date / time", session),
         ("Standards", details["Standards"]),
         ("Book references", details["References"]),
         ("Learning objective", details["Learning objective"]),
         ("Materials", details["Materials"]),
     ]
     reflection = [("Reflection", teacher.get("reflection") or details["Reflection"])]
-    renderer(stream, heading, fields, [TABLE_HEADER, *activities], reflection)
+    renderer(stream, heading, fields, [TABLE_HEADER, *activities], reflection, mathematics=True, teacher=teacher)
 
 
 def render_download(lesson, fmt, teacher):
