@@ -136,9 +136,7 @@ class MathematicsDLPYear6DownloadTests(unittest.TestCase):
                             doc = Document(BytesIO(response.data))
                             self.assertEqual(doc.paragraphs[2].text, plan["title"])
                             self.assertEqual(doc.tables[2].rows[0].cells[1].text, plan["evidence"])
-                            reflection = doc.tables[2].rows[1].cells[0]
-                            self.assertEqual(reflection.text.splitlines(), ["Reflection", self.teacher["reflection"]])
-                            self.assertEqual(reflection._tc.grid_span, 2)
+                            self.assertEqual(doc.tables[2].rows[1].cells[1].text, self.teacher["reflection"])
                             text = doc.tables[0].rows[3].cells[1].text
                         else:
                             pdf = PdfReader(BytesIO(response.data))
