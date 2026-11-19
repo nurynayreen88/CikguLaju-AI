@@ -87,11 +87,11 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                         self.assertEqual(self.documents[-1][0], f"CikguLaju_RPH_{code}.pdf")
                         self.assertEqual(len(PdfReader(BytesIO(self.documents[-1][1])).pages), 1)
                         counts[set_id] += 1
-        self.assertEqual(counts, {"d4": 69, "s": 116, "m": 54, "s6": 89, "d6": 61, "m5": 69,
+        self.assertEqual(counts, {"d4": 69, "m4": 77, "s": 116, "m": 54, "s6": 89, "d6": 61, "m5": 69,
                                   "d5": 70, "mt4": 117, "mt5": 117, "mt6": 117,
                                   "dp2": 117, "dp3": 117})
-        self.assertEqual(len(self.documents), 2226)
-        self.assertEqual(self.credits, 1113)
+        self.assertEqual(len(self.documents), 2380)
+        self.assertEqual(self.credits, 1190)
 
     def test_dpk_private_route_keeps_edition_year_and_grouped_standards(self):
         app = Flask(__name__)
@@ -122,7 +122,7 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                 self.assertIn("SP " + codes, document.tables[0].rows[4].cells[1].text)
                 self.assertIn("Semak sekali lagi.", document.tables[-1].rows[1].cells[1].text)
 
-    def test_science_year4_api_returns_the_exact_catalogue_and_files(self):
+    def test_dlp_year4_api_returns_the_exact_catalogues_and_files(self):
         app = Flask(__name__)
         runtime = SimpleNamespace(create_word_file=lambda *_: None, create_pdf_file=lambda *_: None)
         app.register_blueprint(create_native_rph_blueprint(runtime))
@@ -160,7 +160,21 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                 wrong = client.get(path + "/availability", query_string={**selection, "unit": "01"},
                                    headers=headers)
                 self.assertEqual(wrong.status_code, 404)
-            self.assertEqual(client.get(path + "/year4-mathematics/catalogue", headers=headers).status_code, 404)
+            maths = client.get(path + "/year4-mathematics/catalogue", headers=headers)
+            self.assertEqual(maths.status_code, 200)
+            maths_units = maths.json["units"]
+            self.assertEqual((maths.json["year"], maths.json["subject"]), (4, "MATH_DLP"))
+            self.assertEqual(len(maths_units), 8)
+            self.assertEqual(sum(len(group["lessons"]) for group in maths_units), 77)
+            maths_selection = {"year": 4, "subject": "MATH_DLP", "unit": "08", "lesson": "DLP-MAT-Y4-R08"}
+            result = client.post(path + "/render", headers=headers,
+                                 json={"selection": maths_selection, "teacher": teacher, "format": "word"})
+            self.assertEqual(result.status_code, 200)
+            self.assertIn("DLP-MAT-Y4-R08.docx", result.headers["Content-Disposition"])
+            self.assertEqual(Document(BytesIO(result.data)).tables[-1].cell(0, 1).text, teacher["reflection"])
+            for bad in ({**maths_selection, "unit": "01"},
+                        {**maths_selection, "lesson": "DLP-SCI-Y4-R08"}):
+                self.assertEqual(client.get(path + "/availability", query_string=bad, headers=headers).status_code, 404)
 
     def test_wrong_set_old_buttons_and_failed_delivery_cannot_charge(self):
         word, _ = self._select("s", "01", "SK27-SCI-Y5-PDP-001")

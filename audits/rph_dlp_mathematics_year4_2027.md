@@ -32,3 +32,7 @@ Bandingkan set kod bagi 69 Lesson dengan jadual standard edisi Inggeris. Kedua-d
 Eksport semula kesemua 77 fail Word dan 77 PDF. Word yang ditukar ke PDF dan PDF asal masing-masing satu halaman A4. Tajuk, tempoh dan refleksi akhir ditemui dalam setiap fail. Paparan sampel yang dipinda diperiksa dalam kedua-dua format.
 
 **HOLD semakan guru.** Pembetulan direkodkan bersama set semakan. Laluan muat turun RPH di Web dan Telegram menunggu kelulusan kandungan.
+
+## Ujian sambungan Web dan Telegram
+
+Pemilih menggunakan lapan unit, Lesson 01–69 dan Review 01–08 daripada penjana set ini. Laluan Word dan PDF menerima kelas, tarikh, masa, bilangan murid dan refleksi guru. Semakan setempat melalui Web menghasilkan 154 fail, dan ujian menu Telegram memeriksa semua 77 pilihan bersama set sedia ada. Laluan menolak gabungan unit/ID yang salah. Rekod pelepasan produksi dirujuk dalam log bahan.

@@ -1,8 +1,10 @@
-"""Check and export the Year 4 Mathematics DLP teacher-review drafts."""
+"""Verify the published Year 4 Mathematics DLP source and render Word/PDF."""
 
 import argparse
 from collections import Counter, defaultdict
+from functools import lru_cache
 from hashlib import sha256
+from io import BytesIO
 from pathlib import Path
 import re
 
@@ -100,24 +102,73 @@ def verify_drafts():
     return checked
 
 
+@lru_cache(maxsize=1)
+def _download_units():
+    units = {}
+    for draft in verify_drafts():
+        identifier, title, unit, label, details, _ = draft
+        unit_id = f"{int(unit.split()[1]):02d}"
+        group = units.setdefault(unit_id, {"id": unit_id, "title": unit, "lessons": {}})
+        group["lessons"][identifier] = {
+            "id": identifier, "title": title, "label": label,
+            "book_reference": details["References"],
+            "minutes": int(details["Duration"].split()[0]), "draft": draft,
+        }
+    return units
+
+
+def download_catalogue():
+    return [
+        {"id": group["id"], "title": group["title"], "lessons": [
+            {key: value for key, value in lesson.items() if key != "draft"}
+            for lesson in group["lessons"].values()
+        ]}
+        for group in _download_units().values()
+    ]
+
+
+def resolve_download(unit_id, lesson_id):
+    unit = _download_units().get(unit_id)
+    if unit is None or lesson_id not in unit["lessons"]:
+        return None
+    return unit, unit["lessons"][lesson_id]
+
+
+def render_plan(stream, draft, renderer, *, teacher=None):
+    _, title, unit, label, details, activities = draft
+    teacher = teacher or {}
+    session = " · ".join(
+        f"{caption}: {teacher.get(key) or '______'}"
+        for key, caption in (("class", "Class"), ("date", "Date"), ("time", "Time"),
+                             ("students", "Pupils"))
+    )
+    heading = ("Daily Lesson Plan", "Mathematics (DLP) · Year 4 SK", title)
+    fields = [
+        ("Unit", unit),
+        ("Lesson / PdP", f"{label} · {details['Duration']}"),
+        ("RPT 2027 dates", details["RPT 2027 dates"]),
+        ("Class / date / time", session),
+        ("Standards", details["Standards"]),
+        ("Book references", details["References"]),
+        ("Learning objective", details["Learning objective"]),
+        ("Materials", details["Materials"]),
+    ]
+    reflection = [("Reflection", teacher.get("reflection") or details["Reflection"])]
+    renderer(stream, heading, fields, [TABLE_HEADER, *activities], reflection)
+
+
+def render_download(lesson, fmt, teacher):
+    output = BytesIO()
+    render_plan(output, lesson["draft"], {"word": _word, "pdf": _pdf}[fmt], teacher=teacher)
+    return output.getvalue()
+
+
 def export(drafts, output):
     output.mkdir(parents=True, exist_ok=True)
-    for identifier, title, unit, label, details, activities in drafts:
-        heading = ("Daily Lesson Plan", "Mathematics (DLP) · Year 4 SK", title)
-        fields = [
-            ("Unit", unit),
-            ("Lesson / PdP", f"{label} · {details['Duration']}"),
-            ("RPT 2027 dates", details["RPT 2027 dates"]),
-            ("Class / date / time", "Class: ______ · Date: ______ · Time: ______ · Pupils: ______"),
-            ("Standards", details["Standards"]),
-            ("Book references", details["References"]),
-            ("Learning objective", details["Learning objective"]),
-            ("Materials", details["Materials"]),
-        ]
-        reflection = [("Reflection", details["Reflection"])]
+    for draft in drafts:
         for suffix, render in (("docx", _word), ("pdf", _pdf)):
-            with (output / f"{identifier}.{suffix}").open("wb") as stream:
-                render(stream, heading, fields, [TABLE_HEADER, *activities], reflection)
+            with (output / f"{draft[0]}.{suffix}").open("wb") as stream:
+                render_plan(stream, draft, render)
 
 
 def main():
