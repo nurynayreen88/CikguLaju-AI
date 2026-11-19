@@ -9,6 +9,7 @@ from xml.etree import ElementTree
 from docx import Document
 from PIL import Image
 from flask import Flask
+from web.telegram_rph_parity import build_layout
 from web.unified_rph_web import create_blueprint, source_records, _docx
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -52,6 +53,23 @@ class WebLogoAndTables(unittest.TestCase):
         self.assertIn('generateRphFile("word")',html)
         self.assertIn('generateRphFile("pdf")',html)
         self.assertNotIn('window.print()',html)
+
+    def test_phase_minutes_are_removed_without_losing_class_time_or_lesson_content(self):
+        layout = build_layout({
+            "subject": "ENGLISH", "year": 4, "teacher": {"time": "09:00 - 09:30"},
+            "fields": [
+                {"label": "Set Induction (5 minutes)", "value": "Show the class clock."},
+                {"label": "Activity 1 (15 minutes)",
+                 "value": "15 minutes\nPupils work out which task takes 15 minutes."},
+                {"label": "Closure (10 minutes)", "value": "Ask pupils to explain."},
+            ],
+        }, {"ENGLISH": "Bahasa Inggeris"})
+        self.assertEqual(layout["activity_header"][0], "Phase")
+        self.assertEqual([phase["label"] for phase in layout["phases"]],
+                         ["Set Induction", "Main Activities", "Closure"])
+        self.assertEqual(layout["phases"][1]["activity"],
+                         "Activity 1:\nPupils work out which task takes 15 minutes.")
+        self.assertIn({"label": "Time", "value": "09:00 - 09:30"}, layout["header"])
 
     @patch("web.unified_rph_web._has_paid_access",return_value=True)
     @patch("web.unified_rph_web._account",return_value=({"telegram_user_id":123},None))
@@ -121,7 +139,7 @@ class WebLogoAndTables(unittest.TestCase):
                 layout=response.get_json()["telegram_layout"]
                 self.assertNotEqual(layout["phases"][1]["activity"],"—")
                 self.assertEqual(layout["activity_header"],
-                                 ["Fasa / Masa","Aktiviti Pengajaran & Pembelajaran","Catatan"])
+                                 ["Fasa","Aktiviti Pengajaran & Pembelajaran","Catatan"])
                 word=self.client.get("/api/web/rph/word",query_string=query)
                 self.assertEqual(word.status_code,200)
                 self.assertEqual(len(Document(BytesIO(word.data)).tables),3)

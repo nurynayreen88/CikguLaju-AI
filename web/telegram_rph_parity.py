@@ -6,6 +6,8 @@ curriculum standards. One contract powers print preview and Word downloads.
 from datetime import date
 import re
 
+from web.rph_phase_display import activity_without_schedule, phase_heading
+
 COMMON = ("MATA PELAJARAN","TAHUN/TINGKATAN","TARIKH","HARI","MASA","KELAS",
           "BILANGAN MURID","TAJUK")
 ENDING = ("OBJEKTIF PEMBELAJARAN","KRITERIA KEJAYAAN","PENGETAHUAN SEDIA ADA",
@@ -28,7 +30,6 @@ AUDIT_PREFIXES = ("qa","status","source classification","resource status",
     "rujukan","source qa","verified mapping","original source","original book",
     "resource access")
 BOLD = re.compile(r"\*\*([^*\n]{1,155})\*\*")
-TIME = re.compile(r"\(\s*(\d{1,3})\s*(?:min|minutes|minute|minit)\b[^)]*\)",re.I)
 
 def clean(value):
     value = str(value or "").strip()
@@ -101,12 +102,6 @@ def _standard_pair(value):
     return ((before+" " if before else "")+match.group(1)).strip(), (
         match.group(2)+(" "+after if after else "")).strip()
 
-def _phase_label(name,kind,english):
-    base=({"induction":"Set Induction","closure":"Closure"} if english else
-          {"induction":"Set Induksi","closure":"Penutup"})[kind]
-    found=TIME.search(name)
-    return base+(" ("+found.group(1)+" min)" if found else "")
-
 def build_layout(data,subject_labels):
     if not isinstance(data,dict) or not isinstance(data.get("fields"),list):
         raise ValueError("Verified RPH fields missing")
@@ -132,7 +127,6 @@ def build_layout(data,subject_labels):
         meta["HARI"]="________________"
     phases={"induction":[],"main":[],"closure":[]}
     notes={"CATATAN SET INDUKSI":"","CATATAN AKTIVITI UTAMA":"","CATATAN PENUTUP":""}
-    labels_for={}
     supports=[];reflection=[];extra=[]
     for label,value in _source_items(data["fields"]):
         if not value or len(value)>18000:
@@ -142,9 +136,8 @@ def build_layout(data,subject_labels):
             continue
         category=classify(label)
         if category in phases:
-            if category!="main":
-                labels_for.setdefault(category,_phase_label(label,category,english))
-            text=clean(label)+":\n"+value if category=="main" else value
+            activity=activity_without_schedule(value)
+            text=phase_heading(clean(label))+":\n"+activity if category=="main" else activity
             phases[category].append(text)
             if category=="main" and ("pbd" in norm(label) or "pentaksiran" in norm(label)):
                 if meta["PENTAKSIRAN"]=="—":
@@ -192,14 +185,14 @@ def build_layout(data,subject_labels):
         "header":[{"label":ENGLISH_LABELS.get(k,k.title()) if english else k.title(),
                    "value":meta[k]} for k in labels],
         "activity_header":(
-            ["Phase / Time","Teaching and Learning Activities","Notes"] if english else
-            ["Fasa / Masa","Aktiviti Pengajaran & Pembelajaran","Catatan"]),
+            ["Phase","Teaching and Learning Activities","Notes"] if english else
+            ["Fasa","Aktiviti Pengajaran & Pembelajaran","Catatan"]),
         "phases":[
-            {"label":labels_for.get("induction","Set Induction" if english else "Set Induksi"),
+            {"label":"Set Induction" if english else "Set Induksi",
              "activity":"\n\n".join(phases["induction"]) or "—","notes":notes["CATATAN SET INDUKSI"]},
             {"label":"Main Activities" if english else "Aktiviti Utama",
              "activity":"\n\n".join(phases["main"]) or "—","notes":notes["CATATAN AKTIVITI UTAMA"]},
-            {"label":labels_for.get("closure","Closure" if english else "Penutup"),
+            {"label":"Closure" if english else "Penutup",
              "activity":"\n\n".join(phases["closure"]) or "—","notes":notes["CATATAN PENUTUP"]},
         ],
         "footer":[
