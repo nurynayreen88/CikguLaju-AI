@@ -176,6 +176,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  assert.equal(subject.disabled,true);
  assert.equal(subject.hidden,true);
  assert.match(ctx.help,/KP Baharu.*Akan Datang/i);
+ assert.match(ctx.catalogStatus.textContent,/Alam dan Manusia/);
  assert.deepEqual(catalogueCalls,[]);
  curriculum.value="sjkc";
  listeners["curriculum.change"]();
@@ -247,6 +248,9 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
    subject.value=option.value;
    await listeners["subject.change"]();
    assert.match(ctx.help,/Dalam Penyediaan/);
+   assert.match(ctx.catalogStatus.textContent,/Alam dan Manusia/);
+   assert.equal(variantRpt.hidden,true);
+   assert.equal(unit.hidden,true);
    assert.ok(ctx.catalogStatus.textContent.includes(n==="1"?"Tahun 1 (KP Baharu)":"Tahun "+n));
   }
  }
