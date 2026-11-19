@@ -25,3 +25,13 @@ Rujukan sebelum kemas kini ialah [set audit draf Tahun 4](https://github.com/nur
 - Set 30 minit memberi tindakan murid khusus bagi setiap Lesson serta mengekalkan semua kod bagi satu Lesson, termasuk gabungan SP 1.5.1 dan 1.5.2 pada Lesson 005.
 
 [RPT Tahun 4](../rpt_2027/matematik/CikguLaju_RPT_Matematik_SK_Tahun4_2027.pdf) menggunakan muka depan Web asal dan 14 halaman jadual. Sumber RPH [30 minit](../staging/matematik/tahun4/slot_30_minit.tsv) dan [60 minit](../staging/matematik/tahun4/slot_60_minit.tsv) digunakan oleh penjana yang sama untuk Web dan Telegram.
+
+## Penerbitan Tahun 4
+
+[Penjana dan Telegram #956](https://github.com/nurynayreen88/CikguLaju-AI/pull/956) aktif pada 09:22 MYT. [Web #957](https://github.com/nurynayreen88/CikguLaju-AI/pull/957) aktif pada 09:24 MYT. Kesemua 117 baris PDF RPT disemak terhadap tajuk, tempoh, kod SP dan rujukan RPH. Semua 117 Word selepas dirender dan 117 PDF individu menggunakan satu halaman A4 dengan butiran guru dan enam baris refleksi ujian. Pengisian nama guru, sekolah dan logo pada muka depan lulus. Ujian Telegram mengesahkan bahawa Word dan PDF bagi pilihan yang sama menggunakan satu kredit selepas penghantaran. Semakan akses produksi tanpa sesi ditolak seperti dijangka. Muat turun dengan akaun guru produksi belum disahkan.
+
+## Dapatan awal subjek SK lain
+
+Perbandingan indeks RPH Pantas dan agihan Sains SK yang sudah diterbitkan menemukan 12 cadangan PdP selepas minggu 39 untuk Tahun 5 (PdP 105–116) dan 11 untuk Tahun 6 (PdP 074–084). Agihan sebenar kedua-dua RPT berakhir pada minggu 38. Tahun 6 turut memulakan agihan baharu dengan PdP 085 dan 086, jadi pembetulan perlu menyelaraskan urutan sepanjang tahun selain tarikh akhir. [Sumber Tahun 5](../staging/sains/tahun5/agihan_2027.json) · [Sumber Tahun 6](../staging/sains/tahun6/agihan_2027.json)
+
+Kiraan awal indeks yang sama menunjukkan 40 cadangan lewat Bahasa Melayu, 77 Pendidikan Islam dan 25 PSV bagi Tahun 2–6. Angka ini menunjukkan skop semakan lanjut. Setiap subjek perlu dibandingkan dengan RPT aktif dan kandungannya sebelum pindaan.
