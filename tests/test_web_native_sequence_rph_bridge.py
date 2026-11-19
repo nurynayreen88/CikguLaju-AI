@@ -92,6 +92,15 @@ class WebNativePdPBridgeTests(unittest.TestCase):
             _selection(5, "SCIENCE", year6["value"])
 
     def test_dlp_exact_ids_keep_year_and_subject(self):
+        self.assertEqual(_selection(4, "SCIENCE_DLP", "10", "DLP-SCI-Y4-L59")[0], DLP_ROUTE)
+        self.assertEqual(_selection(4, "SCIENCE_DLP", "10", "DLP-SCI-Y4-R10")[0], DLP_ROUTE)
+        for subject, unit, lesson in (("MATH_DLP", "01", "DLP-SCI-Y4-L01"),
+                                      ("SCIENCE_DLP", "11", "DLP-SCI-Y4-L59"),
+                                      ("SCIENCE_DLP", "10", "DLP-SCI-Y4-L60"),
+                                      ("SCIENCE_DLP", "10", "DLP-SCI-Y4-R11"),
+                                      ("SCIENCE_DLP", "10", "DLP-SCI-Y5-R10")):
+            with self.subTest(subject=subject, unit=unit, lesson=lesson), self.assertRaises(ValueError):
+                _selection(4, subject, unit, lesson)
         self.assertEqual(_selection(5, "MATH_DLP", "08", "DLP-MATH-Y5-L61")[0], DLP_ROUTE)
         self.assertEqual(_selection(5, "SCIENCE_DLP", "10", "DLP-SCI-Y5-R10")[0], DLP_ROUTE)
         self.assertEqual(_selection(6, "MATH_DLP", "01", "DLP-MATH-Y6-L01")[0], DLP_ROUTE)
@@ -125,12 +134,39 @@ class WebNativePdPBridgeTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 _selection(6, "MATH_DLP", new["value"])
 
+    def test_web_options_expose_science_only_in_dlp_year4(self):
+        from tools.run_web_v1_preview import app
+
+        config = {"CIKGULAJU_WEB_SESSION_SECRET": "local-test-secret"}
+        unit = {"value": "08", "label": "Unit 8 Materials"}
+        lesson = {"value": "DLP-SCI-Y4-L46", "label": "Lesson 46 Sources of Basic Materials"}
+        with (
+            patch("web_v1_telegram_auth_routes._config", return_value=config),
+            patch("web_v1_sessions.verify_session_ticket", return_value=123),
+            patch("web_v1_telegram_auth_routes._lookup", return_value={"telegram_user_id": 123}),
+            patch("web.native_telegram_sequence_rph_client.list_native_units", return_value=[unit]) as units,
+            patch("web.native_telegram_sequence_rph_client.list_native_lessons", return_value=[lesson]) as lessons,
+        ):
+            client = app.test_client()
+            selection = {"curriculum": "dlp", "year": 4, "subject": "SCIENCE_DLP"}
+            response = client.get("/api/options", query_string={**selection, "kind": "units"})
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.json, [unit])
+            response = client.get("/api/options", query_string={**selection, "kind": "pdp", "unit": "08"})
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.json, [lesson])
+            response = client.get("/api/options", query_string={**selection, "kind": "units", "subject": "MATH_DLP"})
+            self.assertEqual(response.status_code, 400)
+            units.assert_called_once_with(4, "SCIENCE_DLP")
+            lessons.assert_called_once_with(4, "SCIENCE_DLP", "08")
+
     @patch("web.unified_rph_web._has_paid_access", return_value=True)
     @patch("web.unified_rph_web._account", return_value=({"telegram_user_id": 123}, None))
     def test_web_availability_uses_verified_dlp_service(self, *_):
         app = Flask(__name__)
         app.register_blueprint(create_blueprint())
-        for year, subject, prefix in ((5, "MATH_DLP", "MATH"), (5, "SCIENCE_DLP", "SCI"),
+        for year, subject, prefix in ((4, "SCIENCE_DLP", "SCI"),
+                                      (5, "MATH_DLP", "MATH"), (5, "SCIENCE_DLP", "SCI"),
                                       (6, "MATH_DLP", "MATH"), (6, "SCIENCE_DLP", "SCI")):
             selection = {"year": year, "subject": subject, "unit": "01",
                          "lesson": f"DLP-{prefix}-Y{year}-L01"}
