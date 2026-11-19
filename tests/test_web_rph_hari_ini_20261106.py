@@ -329,16 +329,50 @@ class DailyTimetablePureTests(TestCase):
                 for no_pdp in (date(2027, 5, 11), date(2027, 10, 26)):
                     self.assertIsNone(weekly_rpt_suggestion(state, no_pdp, "PJPK", 3))
 
-    def test_science_year6_suggests_opening_unit_before_existing_lessons(self):
-        weeks = weekly_catalog()["SCIENCE:6"]
-        self.assertEqual(set(map(int, weeks)), set(range(1, 45)) - {6, 19})
-        numbers = [number for row in weeks.values() for number in row[4][""]]
-        self.assertEqual(numbers, [85, 86, 87, 88, 89, *range(1, 85)])
-        self.assertEqual(
-            weekly_rpt_suggestion("Pahang", date(2027, 1, 4), "SCIENCE", 6),
-            {"week": 1, "group": "B", "lessons": {"": [85, 86]}},
-        )
-        self.assertEqual(len(weeks["39"][4][""]), 2)
+    def test_aligned_science_weeks_match_the_approved_pdfs(self):
+        from scripts.build_web_rpt_weekly_suggestions import approved_science_weeks
+
+        for year, numbers, final, minutes in (
+            (5, list(range(1, 117)), [113, 114, 115, 116], [30, 30, 30, 30]),
+            (6, [85, 86, 87, 88, 89, *range(1, 85)], [82, 83, 84], [30, 60, 30]),
+        ):
+            with self.subTest(year=year):
+                path = ROOT / "rpt_2027" / "sains" / f"CikguLaju_RPT_Sains_SK_Tahun{year}_2027.pdf"
+                weeks = weekly_catalog()[f"SCIENCE:{year}"]
+                self.assertEqual(weeks, approved_science_weeks(path, year))
+                self.assertEqual([n for row in weeks.values() for n in row[4][""]], numbers)
+                self.assertEqual(sum(m for row in weeks.values() for m in row[5]), 3840)
+                self.assertEqual(set(map(int, weeks)), set(range(1, 39)) - {6, 18, 19})
+                for state, group in (("Kedah", "A"), ("Pahang", "B")):
+                    self.assertEqual(
+                        weekly_rpt_suggestion(state, date(2027, 10, 19), "SCIENCE", year),
+                        {"week": 38, "group": group, "lessons": {"": final}, "slot_minutes": minutes},
+                    )
+                    for blank in (date(2027, 5, 11), date(2027, 10, 26), date(2027, 11, 9)):
+                        self.assertIsNone(weekly_rpt_suggestion(state, blank, "SCIENCE", year))
+
+    def test_science_slot_suggestions_follow_rpt_duration_and_class_progress(self):
+        target = date(2027, 1, 18)
+        schedule = {"entries": [
+            {"day": day, "start": "08:00", "end": end, "class_name": "6 Amanah", "subject": "Sains"}
+            for day, end in (("Isnin", "09:00"), ("Selasa", "08:30"), ("Rabu", "08:30"))
+        ]}
+        for previous, third_end, expected in (
+            (88, "08:30", [[89], [1], [2]]),
+            (88, "09:00", [None] * 3),
+            (87, "08:30", [None] * 3),
+        ):
+            with self.subTest(previous=previous, third_end=third_end):
+                schedule["entries"][-1]["end"] = third_end
+                days = week_payload({"state_name": "Pahang"}, schedule, target, today=target)["days"]
+                for day in days:
+                    attach_progress(day, [{
+                        "class_key": "6 amanah", "subject_code": "SCIENCE", "component": "",
+                        "pdp_date": "2027-01-14", "start_time": "08:00:00", "sequence_no": previous,
+                    }])
+                assign_week_suggestions(days)
+                self.assertEqual([slot.get("suggested_session") for day in days for slot in day["entries"]],
+                                 expected)
 
     def test_public_and_state_holidays_apply_to_other_subjects(self):
         for state, day in [("W.P. Kuala Lumpur", (2, 1)), ("Terengganu", (3, 4)),
