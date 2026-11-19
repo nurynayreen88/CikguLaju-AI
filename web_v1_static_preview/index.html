@@ -1492,7 +1492,7 @@ function canSelectRph(){
   (curriculum.value==="sjkt"&&year.value==="2"&&subject.value==="MATH_SJKT");
 }
 function dlpRphAvailable(targetYear,code){
- return ["SCIENCE_DLP","MATH_DLP"].includes(code)&&["4","5","6"].includes(targetYear);
+ return ["SCIENCE_DLP","MATH_DLP"].includes(code)&&["3","4","5","6"].includes(targetYear);
 }
 function dlpRphDownload(){
  return curriculum.value==="dlp"&&dlpRphAvailable(year.value,subject.value);
@@ -1522,7 +1522,7 @@ const curriculumYears={
  kp2027:[{value:"1",label:"Tahun 1 (KP Baharu)"}],
  dlp:primaryYears.map(({value,label})=>({
   value,
-  label:value==="2"?label+" — Untuk Semakan Guru":["4","5","6"].includes(value)?label:
+  label:value==="2"?label+" — Untuk Semakan Guru":["3","4","5","6"].includes(value)?label:
    label+(value==="1"?" (KP Baharu)":"")+" — Dalam Penyediaan"
  }))
 };

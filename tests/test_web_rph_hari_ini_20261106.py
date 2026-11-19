@@ -514,9 +514,10 @@ class DailyTimetableRouteTests(TestCase):
                     self.assertIsNone(slot["rpt_suggestion"])
                     self.assertEqual(slot["progress"], {"": {"completed": None, "previous": None}})
                 self.assertEqual(slots[5]["subject_code"], "MATH")
-                for slot in slots[6:]:
-                    self.assertFalse(slot["can_prepare"])
-                    self.assertIn("rpt_subject", slot)
+                for slot, code in zip(slots[6:], ("SCIENCE_DLP", "MATH_DLP"), strict=True):
+                    self.assertTrue(slot["can_prepare"])
+                    self.assertEqual((slot["subject_code"], slot["curriculum"]), (code, "dlp"))
+                    self.assertIsNone(slot["rpt_suggestion"])
 
             path = "/api/web/rph/hari-ini/completion"
             headers = {"Origin": "https://localhost"}
