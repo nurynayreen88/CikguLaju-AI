@@ -97,6 +97,44 @@ class MobileRptDownloadTests(unittest.TestCase):
         finally:
             page.close()
 
+    def test_released_sjkc_year_two_opens_rph_units(self):
+        page = self.browser.new_page(viewport={"width": 360, "height": 840}, has_touch=True)
+        try:
+            page.goto(HTML, wait_until="domcontentloaded")
+            page.evaluate("""() => {
+                document.querySelector('main.panel').hidden = true;
+                document.querySelector('#workspace').hidden = false;
+                if (!sjkcSubjectOptions.some(row => row.value === 'matematik_sjkc')) {
+                    sjkcSubjectOptions.push({value:'matematik_sjkc',label:'Matematik (SJKC)'});
+                }
+                const previousFetch = window.fetch;
+                window.fetch = (url, options) => {
+                    const params = new URL(url, 'https://local.example').searchParams;
+                    if (params.get('kind') === 'subjects' && params.get('year') === '2'
+                        && params.get('curriculum') === 'sjkc') {
+                        return Promise.resolve(new Response(JSON.stringify([
+                            {value:'MATH_SJKC',label:'Matematik SJKC'}
+                        ])));
+                    }
+                    if (params.get('kind') === 'units' && params.get('subject') === 'MATH_SJKC') {
+                        return Promise.resolve(new Response(JSON.stringify([
+                            {value:'1',label:'Unit 1 · 1 000 以内的整数'}
+                        ])));
+                    }
+                    return previousFetch(url, options);
+                };
+                showWebView('rph');
+            }""")
+            page.locator("#curriculum").select_option("sjkc")
+            page.locator("#year").select_option("2")
+            page.locator("#subject").select_option("MATH_SJKC")
+            page.locator("#unit option[value='1']").wait_for(state="attached")
+            self.assertTrue(page.locator("#view-rph").is_visible())
+            self.assertTrue(page.locator("#view-rpt").is_hidden())
+            self.assertTrue(page.locator("#rph-variant-rpt").is_hidden())
+        finally:
+            page.close()
+
     def test_cascading_dropdowns_filter_curriculum_and_clear_downloads(self):
         page=self.browser.new_page(viewport={"width":360,"height":840},has_touch=True)
         try:

@@ -1757,7 +1757,7 @@ year.addEventListener("change",async()=>{
   const sjkt=choice==="sjkt", school=sjkt?"SJKT":"SJKC";
   const mathCode="MATH_"+school, mathVariant="matematik_"+choice;
   let mathReady=false;
-  if(targetYear===(sjkt?"2":"3")){
+  if(targetYear==="2"||(!sjkt&&targetYear==="3")){
    try{
     const items=await loadOptions("subjects",{curriculum:choice});
     mathReady=items.some(item=>item.value===mathCode);

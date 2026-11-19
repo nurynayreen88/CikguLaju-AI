@@ -190,19 +190,22 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
   assert.equal(lesson.hidden,true);
   assert.match(ctx.help,/dalam penyediaan/i);
  }
- assert.deepEqual(catalogueCalls.splice(0),["subjects"]);
+ assert.deepEqual(catalogueCalls.splice(0),["subjects","subjects"]);
  ctx.sjkcReady=true;
- await listeners["year.change"]();
- assert.equal(subject.options[1].value,"MATH_SJKC");
- assert.equal(subject.options[1].label,"Matematik (SJKC)");
- subject.value="MATH_SJKC";
- await listeners["subject.change"]();
- assert.deepEqual(unit.options.map(x=>x.value),["","2"]);
- assert.equal(variantRpt.hidden,true);
- unit.value="2";
- await listeners["unit.change"]();
- assert.deepEqual(lesson.options.map(x=>x.value),["","17"]);
- assert.deepEqual(catalogueCalls.splice(0),["subjects","units","MATH_SJKC","pdp","MATH_SJKC","2"]);
+ for(const yearNumber of ["2","3"]){
+  year.value=yearNumber;
+  await listeners["year.change"]();
+  assert.equal(subject.options[1].value,"MATH_SJKC");
+  assert.equal(subject.options[1].label,"Matematik (SJKC)");
+  subject.value="MATH_SJKC";
+  await listeners["subject.change"]();
+  assert.deepEqual(unit.options.map(x=>x.value),["","2"]);
+  assert.equal(variantRpt.hidden,true);
+  unit.value="2";
+  await listeners["unit.change"]();
+  assert.deepEqual(lesson.options.map(x=>x.value),["","17"]);
+  assert.deepEqual(catalogueCalls.splice(0),["subjects","units","MATH_SJKC","pdp","MATH_SJKC","2"]);
+ }
  curriculum.value="sjkt";
  listeners["curriculum.change"]();
  assert.deepEqual(year.options.map(x=>x.label),["Pilih Tahun","Tahun 2"]);
