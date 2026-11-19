@@ -199,7 +199,8 @@ def _math_layout(heading, details, activities, teacher):
     induction, *main, closure = activities[1:]
     blocks = []
     for phase, teacher_action, pupil_action in main:
-        blocks.extend(((phase.replace(" · ", " – "), True),
+        activity_title = phase.replace("\n", " – ").replace(" · ", " – ")
+        blocks.extend(((activity_title, True),
                        (actions(teacher_action, pupil_action), False)))
     phases = [header, (induction[0], actions(*induction[1:]), ""),
               (main_heading, tuple(blocks), ""),

@@ -152,12 +152,12 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         phases = doc.tables[1]
         main = phases.cell(2, 1).paragraphs[0]
         headings = [run.text for run in main.runs if run.bold]
-        expected = ["Aktiviti 1 – Demonstrasi (15 minit)",
-                    "Aktiviti 2 – Latihan Berpandu (15 minit)",
-                    "Aktiviti 3 – PBD Individu (20 minit)"]
+        expected = ["Aktiviti 1 – Demonstrasi",
+                    "Aktiviti 2 – Latihan Berpandu",
+                    "Aktiviti 3 – PBD Individu"]
         self.assertEqual(headings, expected)
-        self.assertIn("(5 minit)", phases.cell(1, 0).text)
-        self.assertIn("(5 minit)", phases.cell(3, 0).text)
+        self.assertEqual(phases.cell(1, 0).text, "Set Induksi")
+        self.assertEqual(phases.cell(3, 0).text, "Penutup")
         self.assertIn("14 puluh dan 12 sa", main.text)
         self.assertIn("531 − 247 dan 620 − 156", main.text)
         page, = PdfReader(BytesIO(self.documents[1][1])).pages
