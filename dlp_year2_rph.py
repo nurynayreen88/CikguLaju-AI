@@ -10,6 +10,7 @@ import re
 from xml.sax.saxutils import escape
 
 SUBJECTS = {"SCIENCE_DLP": "Science", "MATH_DLP": "Mathematics"}
+_DLP_SOURCES = Path(__file__).resolve().parent / "staging" / "dlp"
 
 
 @lru_cache(maxsize=1)
@@ -31,15 +32,29 @@ def science_rpt_lessons():
     return rpt_lessons("SCIENCE_DLP")
 
 
+@lru_cache(maxsize=2)
+def _science_descriptions(year):
+    source = _DLP_SOURCES / f"year{year}" / "science_standard_descriptions.json"
+    return json.loads(source.read_text(encoding="utf-8"))
+
+
+def _science_standard_rows(descriptions, ls_codes):
+    cs_codes = list(dict.fromkeys(code.rsplit(".", 1)[0] for code in ls_codes))
+    return [
+        ("Content Standards", "\n".join(f"{code} {descriptions['cs'][code]}" for code in cs_codes)),
+        ("Learning Standards", "\n".join(f"{code} {descriptions['ls'][code]}" for code in ls_codes)),
+    ]
+
+
 @lru_cache(maxsize=1)
 def year3_science_catalog():
-    path = Path(__file__).resolve().parent / "staging" / "dlp" / "year3" / "science_2027.json"
+    path = _DLP_SOURCES / "year3" / "science_2027.json"
     with path.open(encoding="utf-8") as source:
         data = json.load(source)
     rpt = path.parents[3] / "rpt_2027" / "dlp" / "CikguLaju_RPT_DLP_2027_Science_Year_3.docx"
     if sha256(rpt.read_bytes()).hexdigest() != data["rpt_sha256"]:
         raise ValueError("The Science Year 3 RPT has changed.")
-    descriptions = json.loads(path.with_name("science_standard_descriptions.json").read_text(encoding="utf-8"))
+    descriptions = _science_descriptions(3)
     plans = data["plans"]
     units = {}
     for plan in plans:
@@ -48,15 +63,8 @@ def year3_science_catalog():
         unit_id = unit_number[1].zfill(2) if unit_number else "review"
         if unit_id == "review":
             ls_codes = descriptions["review_ls"][plan["id"]]
-            cs_codes = list(dict.fromkeys(code.rsplit(".", 1)[0] for code in ls_codes))
         else:
-            content, learning = plan["standards"]
-            cs_codes = content.removeprefix("CS ").split(", ")
-            ls_codes = learning.removeprefix("LS ").split(", ")
-        standards = [
-            ("Content Standards", "\n".join(f"{code} {descriptions['cs'][code]}" for code in cs_codes)),
-            ("Learning Standards", "\n".join(f"{code} {descriptions['ls'][code]}" for code in ls_codes)),
-        ]
+            ls_codes = re.findall(r"\b\d+\.\d+\.\d+\b", plan["standards"][1])
         unit = units.setdefault(unit_id, {"id": unit_id, "title": title, "lessons": []})
         unit["lessons"].append({
             "id": plan["id"],
@@ -67,7 +75,7 @@ def year3_science_catalog():
             "minutes": plan["minutes"],
             "rpt_dates": plan["rpt_dates"],
             "standards": " · ".join(plan["standards"]),
-            "standard_rows": standards,
+            "standard_rows": _science_standard_rows(descriptions, ls_codes),
             "references": " · ".join(line.replace("TB ", "Textbook ").replace("AB ", "Activity Book ")
                                      for line in plan["references"]),
             "objective": plan["objective"],
@@ -119,7 +127,11 @@ def render(subject, unit, lesson, fmt, teacher):
         ("Time", teacher["time"]),
         ("Pupils", teacher["students"]),
     )
-    standards = lesson.get("standard_rows", [("Standards", lesson["standards"])])
+    if subject == "SCIENCE_DLP" and year == 2:
+        ls_codes = re.findall(r"\b\d+\.\d+\.\d+\b", lesson["standards"])
+        standards = _science_standard_rows(_science_descriptions(2), ls_codes)
+    else:
+        standards = lesson.get("standard_rows", [("Standards", lesson["standards"])])
     details = [
         ("Unit", unit["title"]),
         ("Lesson / PdP", lesson_label),

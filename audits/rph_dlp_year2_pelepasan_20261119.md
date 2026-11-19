@@ -7,3 +7,9 @@ Semakan pada 19 November 2026 meliputi 163 sesi. Padankan 63 Lesson dan empat Re
 - Review menggunakan tindakan guru dan murid bagi empat fasa, tugasan individu dan tindakan susulan. Contohnya Science Review 03 memeriksa susunan objek untuk membentuk bayang-bayang, sambungan litar dan alasan memilih ayak. Mathematics Review 18 memeriksa bacaan carta, perbezaan harga RM0.30 dan baki RM5.70 melalui pengiraan berasingan.
 - Semua 163 PDF dan 163 hasil cetakan Word disahkan satu halaman A4. Ujian bersepadu mengesahkan fail sebenar bagi setiap Lesson dan Review, butiran jadual dan gabungan mingguan. Pada Chromium telefon dengan akaun simulasi, kedua-dua subjek boleh dimuat turun dari Sediakan RPH dan RPH Pantas dalam Word dan PDF.
 - Pratonton lama di Web digantikan dengan katalog muat turun yang sama dengan penjana Telegram. ID asal bagi 141 Lesson dikekalkan.
+
+## Deskripsi standard Science
+
+Pada 20 November 2026, semua 63 Lesson dan empat Review Science ditambah kod dan deskripsi ringkas daripada DSKP edisi bahasa Inggeris, halaman 30–52. Semakan memadankan 12 Content Standards dan 64 Learning Standards. Empat sesi Review menggunakan kod LS dalam RPT bersama CS induk masing-masing.
+
+Kesemua 134 respons Word dan PDF lulus ujian setempat pada laluan penjana Web. Semua PDF dan semua Word selepas penukaran disahkan satu halaman A4. Semakan visual meliputi Lesson 12 dan Review 01. Ujian regresi muat turun Science dan Mathematics Year 2–3 lulus.

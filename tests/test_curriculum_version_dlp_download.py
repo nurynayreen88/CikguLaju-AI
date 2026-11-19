@@ -65,7 +65,9 @@ class DlpDownloadTests(unittest.TestCase):
         self.assertEqual(doc.paragraphs[2].text, "Explain Observations About a Built Model")
         fields = {left.text: right.text for left, right in (row.cells for row in doc.tables[0].rows)}
         self.assertIn("2 Bestari", fields["Class / date / time"])
-        self.assertIn("LS 10.1.6", fields["Standards"])
+        self.assertEqual(fields["Content Standards"], "10.1 Building sets")
+        self.assertEqual(fields["Learning Standards"],
+                         "10.1.6 Explain observations about a finished structure using drawings, digital tools, writing or speech")
         self.assertEqual(doc.tables[-1].cell(0, 1).text, self.teacher["reflection"])
         self.assertEqual(len(doc.tables[1].rows), 5)
         pdf = self.download("pdf")
@@ -178,6 +180,15 @@ class DlpDownloadTests(unittest.TestCase):
                         page, = PdfReader(BytesIO(pdf.data)).pages
                         self.assertAlmostEqual(float(page.mediabox.width), 595.28, delta=1)
                         self.assertAlmostEqual(float(page.mediabox.height), 841.89, delta=1)
+                        if subject == "SCIENCE_DLP":
+                            ls_codes = re.findall(r"\b\d+\.\d+\.\d+\b", plan["standards"])
+                            cs_codes = list(dict.fromkeys(code.rsplit(".", 1)[0] for code in ls_codes))
+                            pdf_text = " ".join(page.extract_text().split())
+                            for label, codes in (("Content Standards", cs_codes), ("Learning Standards", ls_codes)):
+                                lines = [line.split(maxsplit=1) for line in fields[label].splitlines()]
+                                self.assertEqual([code for code, _ in lines], codes)
+                                self.assertTrue(all(description.strip() for _, description in lines))
+                                self.assertIn(" ".join(fields[label].split()), pdf_text)
 
     def test_mathematics_rpt_keeps_96_hours_before_assessment(self):
         folder = Path(__file__).resolve().parents[1] / "rpt_2027" / "dlp"
