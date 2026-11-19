@@ -159,7 +159,7 @@ class NativeMathQualityTests(unittest.TestCase):
         self.assertEqual(res.status_code, 401)
 
 
-class MathYear2Pdp21Tests(unittest.TestCase):
+class MathYear2AdditionTests(unittest.TestCase):
     def test_plan_fits_teacher_slot_and_applies_to_the_verified_lesson_only(self):
         original = {"OBJEKTIF PEMBELAJARAN": "Objektif PdP lain", "REFLEKSI": "Refleksi guru"}
         runtime = SimpleNamespace(_rph_rows=lambda state, text: original)
@@ -168,21 +168,29 @@ class MathYear2Pdp21Tests(unittest.TestCase):
             "subject": "Matematik", "pdp_sequence_code": "MT2-PDP-021",
             "sk_code": "2.1", "sp_code": "2.1.2",
         }
-        for end, duration in (("07:30", 30), ("08:00", 60), ("08:30", 90)):
-            with self.subTest(duration=duration):
-                rows = runtime._rph_rows({**state, "rph_time": f"07:00 - {end}"}, "")
-                phases = _explicit_phase_minutes(
-                    "Set Induksi " + rows["SET INDUKSI"] + "\n"
-                    + rows["AKTIVITI UTAMA"] + "\n"
-                    + "Penutup " + rows["PENUTUP"]
-                )
-                self.assertEqual(len(phases), 5)
-                self.assertEqual(sum(phases.values()), duration)
-                self.assertIn("3 daripada 4", rows["OBJEKTIF PEMBELAJARAN"])
-                self.assertEqual(rows["REFLEKSI"], original["REFLEKSI"])
-        for mismatch in ({"pdp_sequence_code": "MT2-PDP-020"}, {"sp_code": "2.1.1"},
-                         {"subject": "Sains"}):
-            self.assertIs(runtime._rph_rows({**state, **mismatch}, ""), original)
+        for number, standard, focus, pages in (
+            ("020", "2.1.1", "dua nombor", "48–57"),
+            ("021", "2.1.2", "tiga nombor", "58–61"),
+        ):
+            selected = {**state, "pdp_sequence_code": f"MT2-PDP-{number}", "sp_code": standard}
+            for end, duration in (("07:30", 30), ("08:00", 60), ("08:30", 90)):
+                with self.subTest(pdp=number, duration=duration):
+                    rows = runtime._rph_rows({**selected, "rph_time": f"07:00 - {end}"}, "")
+                    phases = _explicit_phase_minutes(
+                        "Set Induksi " + rows["SET INDUKSI"] + "\n"
+                        + rows["AKTIVITI UTAMA"] + "\n"
+                        + "Penutup " + rows["PENUTUP"]
+                    )
+                    self.assertEqual(len(phases), 5)
+                    self.assertEqual(sum(phases.values()), duration)
+                    self.assertIn(focus, rows["OBJEKTIF PEMBELAJARAN"])
+                    self.assertIn("3 daripada 4", rows["OBJEKTIF PEMBELAJARAN"])
+                    self.assertIn(pages, rows["BAHAN BANTU MENGAJAR"])
+                    self.assertTrue(rows["STANDARD PEMBELAJARAN"].startswith(standard + " "))
+                    self.assertEqual(rows["REFLEKSI"], original["REFLEKSI"])
+            for mismatch in ({"pdp_sequence_code": "MT2-PDP-019"}, {"sp_code": "2.2.1"},
+                             {"sk_code": "2.2"}, {"subject": "Sains"}):
+                self.assertIs(runtime._rph_rows({**selected, **mismatch}, ""), original)
 
 
 if __name__ == "__main__":
