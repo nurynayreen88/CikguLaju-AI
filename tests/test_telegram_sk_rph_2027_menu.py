@@ -449,8 +449,11 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         self.click(word)
         native, telegram = (Document(BytesIO(data)) for data in
                             (response.data, self.documents[-1][1]))
-        self.assertEqual(native.paragraphs[2].text, telegram.paragraphs[2].text)
-        native_header = native.tables[0].rows
-        telegram_header = telegram.tables[0].rows
-        self.assertEqual(native_header[4].cells[1].text, telegram_header[4].cells[1].text)
-        self.assertIn("SK 7.2", native_header[4].cells[1].text)
+        native_fields, telegram_fields = (
+            {a.text: b.text for a, b in (row.cells for row in doc.tables[0].rows)}
+            for doc in (native, telegram)
+        )
+        self.assertEqual(native_fields, telegram_fields)
+        self.assertEqual(native_fields["Tarikh"], "18/10/2027")
+        self.assertEqual(native_fields["Masa"], "08:00 - 09:00")
+        self.assertIn("SK 7.2", native_fields["Standard Kandungan"])

@@ -150,19 +150,21 @@ def _math_layout(heading, details, activities, teacher):
     title = heading[0].upper()
     teacher = teacher or {}
     day = ""
-    raw_date = teacher.get("date") or ""
+    display_date = teacher.get("date") or ""
     try:
-        year, month, number = (raw_date.split("-") if "-" in raw_date
-                               else reversed(raw_date.split("/")))
-        weekday = date(int(year), int(month), int(number)).weekday()
+        year, month, number = (display_date.split("-") if "-" in display_date
+                               else reversed(display_date.split("/")))
+        lesson_date = date(int(year), int(month), int(number))
+        display_date = lesson_date.strftime("%d/%m/%Y")
         days = (("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
                 if english else ("Isnin", "Selasa", "Rabu", "Khamis", "Jumaat", "Sabtu", "Ahad"))
-        day = days[weekday]
+        day = days[lesson_date.weekday()]
     except ValueError:
         pass
     labels = (("Date", "Day", "Time", "Class", "Number of pupils", "Topic") if english
               else ("Tarikh", "Hari", "Masa", "Kelas", "Bilangan Murid", "Tajuk"))
-    values = (raw_date, day, teacher.get("time"), teacher.get("class"),
+    time = re.sub(r"\s*[-–—]\s*", " - ", teacher.get("time") or "")
+    values = (display_date, day, time, teacher.get("class"),
               teacher.get("students"), heading[2])
     year_label = re.search(r"\b(?:Year|Tahun) [1-6](?: SK)?\b", heading[1])[0]
     fields = [("Subject" if english else "Mata Pelajaran",

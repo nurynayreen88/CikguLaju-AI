@@ -146,9 +146,8 @@ class MathematicsDLPYear6DownloadTests(unittest.TestCase):
                             text = " ".join(pdf.pages[0].extract_text().split())
                             for field in ("title", "label", "standards", "reference", "evidence"):
                                 self.assertIn(" ".join(plan[field].split()), text)
-                        for value in self.teacher.values():
-                            if value != self.teacher["reflection"]:
-                                self.assertIn(value, text)
+                        for value in ("6 Bestari", "18/10/2027", "08:00 - 09:30", "30"):
+                            self.assertIn(value, text)
         self.assertEqual(ids, list(expected))
 
     def test_wrong_unit_lesson_subject_and_year_do_not_render(self):
