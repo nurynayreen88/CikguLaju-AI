@@ -58,6 +58,10 @@ class ScienceYear6ReviewExports(unittest.TestCase):
         self.assertEqual([n for row in weeks for n in row["pdp"]], [*range(85, 90), *range(1, 85)])
         self.assertEqual(Counter(plan["minutes"] for plan in plans.values()), {30: 50, 60: 39})
         self.assertEqual(len({sp for plan in plans.values() for sp in plan["standards"]}), 96)
+        self.assertEqual(plans[6]["sp_texts"], ["Memerihalkan sistem saraf pusat dan fungsinya."])
+        self.assertEqual(plans[7]["sp_texts"], ["Menyatakan fungsi sistem saraf periferi."])
+        self.assertEqual(plans[35]["sp_texts"], ["Memerihalkan kesan daya geseran."])
+        self.assertIn("Mengeksperimen", plans[36]["sp_texts"][0])
         self.assertIn("lilitannya", plans[13]["phases"][1][2])
         self.assertIn("kiraan awal", plans[14]["phases"][2][2])
         self.assertIn("kiraan susulan", plans[16]["phases"][1][2])
@@ -67,6 +71,14 @@ class ScienceYear6ReviewExports(unittest.TestCase):
             export_rpt(folder / f"{RPT_STEM}.docx", weeks, plans)
             for plan in plans.values():
                 export_rph(folder, plan)
+                stem = f"CikguLaju_RPH_Sains_SK_T6_PdP_{plan['id']:03d}"
+                word = Document(folder / f"{stem}.docx")
+                fields = {row.cells[0].text: row.cells[1].text for row in word.tables[0].rows}
+                self.assertEqual(fields["Standard Kandungan"], f"{plan['sk']} {plan['sk_text']}")
+                pdf = " ".join(PdfReader(folder / f"{stem}.pdf").pages[0].extract_text().split())
+                for code, description in zip(plan["standards"], plan["sp_texts"], strict=True):
+                    self.assertIn(f"{code} {description}", fields["Standard Pembelajaran"])
+                    self.assertIn(f"{code} {description}", pdf)
             titles = {f"CikguLaju_RPH_Sains_SK_T6_PdP_{number:03d}": plan["title"]
                       for number, plan in plans.items()}
             self.check_exports(folder, titles, RPT_STEM, 13)
