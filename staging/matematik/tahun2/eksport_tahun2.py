@@ -124,37 +124,46 @@ def standards(codes):
     return sk, pages, materials
 
 
+def document(unit, info, plan, slot):
+    if unit == 1:
+        return unit_one.document(plan, slot)
+    unit_name, book, _ = info
+    number, codes, textbook, title, model, task, evidence = plan
+    week, minutes = slot
+    sk, dpk, materials = standards(codes)
+    heading = ('Rancangan Pengajaran Harian', unit_one.SUBTITLE, title)
+    details = [
+        ('Unit', f'Unit {unit} {unit_name}'),
+        ('Lesson / tempoh', f'Lesson {number:03d} · {minutes} minit'),
+        ('Tarikh RPT', f"M{week['minggu']:02d} · A {display_dates(week['A'])} · B {display_dates(week['B'])}"),
+        ('Maklumat kelas', 'Kelas ______ · Tarikh ______ · Masa ______ · Murid ______'),
+        ('SK / SP', f"SK {sk} · SP {', '.join(codes)}"),
+        ('Rujukan', f'DPK Edisi 3, hlm. {dpk} · Buku Teks Jilid {book}, hlm. {textbook}'),
+        ('Objektif', f'Murid dapat {title[0].lower() + title[1:]} dan menunjukkan hasil yang sepadan dalam tugasan PBD.'),
+        ('Bahan', materials),
+    ]
+    activities = [('Fasa', 'Tindakan guru', 'Tindakan murid')]
+    actions = (
+        INTRO[unit],
+        (model, 'Ikuti contoh dengan bahan yang disediakan. Tunjukkan satu langkah atau padanan kepada rakan.'),
+        (task, 'Jawab atau tunjuk hasil secara individu. Semak unit, model atau label sebelum dihantar.'),
+        CHECK[unit],
+    )
+    activities.extend((f'{phase} · {time} minit', *action)
+                      for phase, time, action in zip(unit_one.PHASES, PHASE_MINUTES[minutes], actions, strict=True))
+    reflection = [('Evidens PBD', evidence), ('Refleksi', '___ / ___ murid mencapai objektif. Ulang item yang belum dikuasai bersama murid berkaitan.')]
+    return heading, details, activities, reflection
+
+
 def export(chapters, schedule, output):
     output.mkdir(parents=True, exist_ok=True)
-    unit_one.export(chapters[0][2], schedule, output)
-    for unit, (unit_name, book, _), rows in chapters[1:]:
-        for number, codes, textbook, title, model, task, evidence in rows:
-            week, minutes = schedule[number]
-            sk, dpk, materials = standards(codes)
-            heading = ('Rancangan Pengajaran Harian', unit_one.SUBTITLE, title)
-            details = [
-                ('Unit', f'Unit {unit} {unit_name}'),
-                ('Lesson / tempoh', f'Lesson {number:03d} · {minutes} minit'),
-                ('Tarikh RPT', f"M{week['minggu']:02d} · A {display_dates(week['A'])} · B {display_dates(week['B'])}"),
-                ('Maklumat kelas', 'Kelas ______ · Tarikh ______ · Masa ______ · Murid ______'),
-                ('SK / SP', f"SK {sk} · SP {', '.join(codes)}"),
-                ('Rujukan', f'DPK Edisi 3, hlm. {dpk} · Buku Teks Jilid {book}, hlm. {textbook}'),
-                ('Objektif', f'Murid dapat {title[0].lower() + title[1:]} dan menunjukkan hasil yang sepadan dalam tugasan PBD.'),
-                ('Bahan', materials),
-            ]
-            activities = [('Fasa', 'Tindakan guru', 'Tindakan murid')]
-            actions = (
-                INTRO[unit],
-                (model, 'Ikuti contoh dengan bahan yang disediakan. Tunjukkan satu langkah atau padanan kepada rakan.'),
-                (task, 'Jawab atau tunjuk hasil secara individu. Semak unit, model atau label sebelum dihantar.'),
-                CHECK[unit],
-            )
-            activities.extend((f'{phase} · {time} minit', *action)
-                              for phase, time, action in zip(unit_one.PHASES, PHASE_MINUTES[minutes], actions, strict=True))
-            reflection = [('Evidens PBD', evidence), ('Refleksi', '___ / ___ murid mencapai objektif. Ulang item yang belum dikuasai bersama murid berkaitan.')]
+    for unit, info, plans in chapters:
+        for plan in plans:
+            number = plan['lesson'] if unit == 1 else plan[0]
+            parts = document(unit, info, plan, schedule[number])
             for extension, renderer in (('docx', _word), ('pdf', _pdf)):
                 with (output / f'CikguLaju_Matematik_T2_Lesson_{number:03d}.{extension}').open('wb') as stream:
-                    renderer(stream, heading, details, activities, reflection)
+                    renderer(stream, *parts)
 
 
 def main():

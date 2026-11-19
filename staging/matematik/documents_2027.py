@@ -1,4 +1,4 @@
-"""Shared Years 4 to 6 SK Mathematics source for 2027 RPT and RPH delivery."""
+"""Shared SK Mathematics source for 2027 RPT and RPH delivery."""
 
 from dataclasses import dataclass
 from functools import lru_cache
@@ -13,6 +13,7 @@ from web.rph_teacher_reflection import clean_reflection
 
 
 YEARS = (4, 5, 6)
+DPK_YEARS = (2, 3)
 RENDERERS = {"word": _word, "pdf": _pdf}
 
 
@@ -28,10 +29,12 @@ class Lesson:
     pages: str
     minutes: int
     parts: tuple
+    dpk: bool = False
 
     @property
     def code(self):
-        return f"SK27-MATH-Y{self.year}-L{self.number:03d}"
+        edition = "DPK3-" if self.dpk else ""
+        return f"SK27-{edition}MATH-Y{self.year}-L{self.number:03d}"
 
 
 @lru_cache(maxsize=len(YEARS))
@@ -56,14 +59,50 @@ def _build_year(year):
     return tuple(lessons), details
 
 
-def lessons_for_year(year):
-    return _build_year(year)[0]
+@lru_cache(maxsize=len(DPK_YEARS))
+def _build_dpk_year(year):
+    if type(year) is not int or year not in DPK_YEARS:
+        raise ValueError("Unsupported SK Mathematics DPK Edisi 3 year")
+    if year == 2:
+        from staging.matematik.tahun2 import eksport_rpt as rpt, eksport_tahun2 as rph
+
+        chapters, schedule = rph.load()
+        details = rpt.lessons_by_id(chapters)
+        documents = []
+        for unit, info, records in chapters:
+            for record in records:
+                number = record["lesson"] if unit == 1 else record[0]
+                documents.append((number, rph.document(unit, info, record, schedule[number])))
+    else:
+        from staging.matematik.tahun3 import eksport_rpt as rpt, eksport_tahun3 as rph
+
+        records, schedule = rph.load()
+        details = rpt.lessons_by_id(records)
+        documents = ((record[0], rph.document(record, schedule[record[0]])) for record in records)
+    lessons = []
+    for number, parts in documents:
+        unit, name, title, _, sp_text, _, volume, pages, _ = details[number]
+        standards = tuple(sp_text.split(", "))
+        lessons.append(Lesson(year, number, unit, name, title, standards[0].rsplit(".", 1)[0],
+                              standards, f"Jilid {volume}, hlm. {pages}",
+                              schedule[number][1], parts, dpk=True))
+    return tuple(lessons), details
 
 
-def export_rpt(year, path):
+def lessons_for_year(year, *, dpk=False):
+    return (_build_dpk_year(year) if dpk else _build_year(year))[0]
+
+
+def export_rpt(year, path, *, dpk=False):
     path = Path(path)
-    _, details = _build_year(year)
-    export_table(path, year, details, kssr_dskp=True, edition='Kumpulan A dan B')
+    if dpk:
+        _, details = _build_dpk_year(year)
+        export_table(path, year, details, edition="Pilihan guru",
+                     review_note="42 sesi 30 minit dan 75 sesi 60 minit sepadan dengan set RPH.",
+                     profile_cover=True)
+    else:
+        _, details = _build_year(year)
+        export_table(path, year, details, kssr_dskp=True, edition='Kumpulan A dan B')
     return path
 
 
@@ -86,9 +125,9 @@ def render_download(plan, fmt, teacher):
 
 
 class Downloads:
-    def __init__(self, year):
+    def __init__(self, year, *, dpk=False):
         self._units = {}
-        for lesson in lessons_for_year(year):
+        for lesson in lessons_for_year(year, dpk=dpk):
             unit = f"{lesson.unit:02d}"
             title, members = self._units.setdefault(unit, (lesson.unit_title, {}))
             members[lesson.code] = lesson

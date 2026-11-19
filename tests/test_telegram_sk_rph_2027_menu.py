@@ -12,7 +12,7 @@ from docx import Document
 from flask import Flask
 from pypdf import PdfReader
 
-from staging.matematik.penjana_2027 import ROUTE, register_downloads
+from staging.matematik.penjana_2027 import DPK_ROUTE, ROUTE, register_downloads
 from web.telegram_sk_rph_2027 import install
 from web.telegram_rph_entry_choices_20261110 import install as install_entry
 
@@ -86,9 +86,39 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                         self.assertEqual(len(PdfReader(BytesIO(self.documents[-1][1])).pages), 1)
                         counts[set_id] += 1
         self.assertEqual(counts, {"s": 116, "m": 54, "s6": 89, "d6": 61, "m5": 69,
-                                  "d5": 70, "mt4": 117, "mt5": 117, "mt6": 117})
-        self.assertEqual(len(self.documents), 1620)
-        self.assertEqual(self.credits, 810)
+                                  "d5": 70, "mt4": 117, "mt5": 117, "mt6": 117,
+                                  "dp2": 117, "dp3": 117})
+        self.assertEqual(len(self.documents), 2088)
+        self.assertEqual(self.credits, 1044)
+
+    def test_dpk_private_route_keeps_edition_year_and_grouped_standards(self):
+        app = Flask(__name__)
+        register_downloads(app)
+        client = app.test_client()
+        token = "math-dpk-2027-test-token-for-local-app"
+        headers = {"Authorization": f"Bearer {token}"}
+        teacher = {"class": "Bestari", "date": "2027-10-18",
+                   "students": "32", "reflection": "Semak sekali lagi."}
+        with patch.dict("os.environ", {"CIKGULAJU_WEB_NATIVE_RPH_ENABLED": "1",
+                                     "CIKGULAJU_AUTHORITATIVE_API_TOKEN": token}):
+            for year, unit_id, number, codes in ((2, 7, 111, "7.1.2, 7.2.1"), (3, 9, 117, "9.2.2")):
+                query = {"year": year, "subject": "MATH"}
+                units = client.get(DPK_ROUTE + "/units", query_string=query, headers=headers).json["items"]
+                lesson = f"SK27-DPK3-MATH-Y{year}-L{number:03d}"
+                selection = {**query, "unit": units[unit_id-1]["value"], "lesson": lesson}
+                self.assertEqual(client.get(ROUTE + "/availability", query_string=selection,
+                                            headers=headers).status_code, 404)
+                self.assertEqual(client.get(DPK_ROUTE + "/availability", query_string=selection).status_code, 401)
+                response = client.post(DPK_ROUTE + "/render", headers=headers, json={
+                    "selection": selection,
+                    "teacher": {**teacher, "time": "08:00-09:00" if year == 2 else "08:00-08:30"},
+                    "format": "word",
+                })
+                self.assertEqual(response.status_code, 200, response.get_json(silent=True))
+                document = Document(BytesIO(response.data))
+                self.assertIn("DPK Edisi 3", document.paragraphs[1].text)
+                self.assertIn("SP " + codes, document.tables[0].rows[4].cells[1].text)
+                self.assertIn("Semak sekali lagi.", document.tables[-1].rows[1].cells[1].text)
 
     def test_wrong_set_old_buttons_and_failed_delivery_cannot_charge(self):
         word, _ = self._select("s", "01", "SK27-SCI-Y5-PDP-001")

@@ -44,34 +44,40 @@ def load():
     return plans, schedule
 
 
+def document(plan, slot):
+    week, minutes = slot
+    number = plan['lesson']
+    heading = ('Rancangan Pengajaran Harian', SUBTITLE, plan['tajuk'])
+    standard_code = plan['sp'][0].rsplit('.', 1)[0]
+    details = [
+        ('Unit', 'Unit 1 Nombor hingga 1000'),
+        ('Lesson / tempoh', f'Lesson {number:03d} · {minutes} minit'),
+        ('Tarikh RPT', f"M{week['minggu']:02d} · A {display_dates(week['A'])} · B {display_dates(week['B'])}"),
+        ('Maklumat kelas', 'Kelas ______ · Tarikh ______ · Masa ______ · Murid ______'),
+        ('SK / SP', f"SK {standard_code} {STANDARDS[standard_code]} · SP {', '.join(plan['sp'])}"),
+        ('Rujukan', f"DPK Edisi 3, hlm. {plan['dpk']} · Buku Teks Jilid 1, hlm. {plan['bt']}"),
+        ('Objektif', plan['objektif']),
+        ('Bahan', plan['bbm']),
+    ]
+    activities = [('Fasa', 'Tindakan guru', 'Tindakan murid')]
+    activities.extend((f'{phase} · {length} minit', teacher, pupils)
+                      for phase, length, (teacher, pupils) in zip(PHASES, MINUTES[minutes], plan['aktiviti'], strict=True))
+    reflection = [
+        ('Evidens PBD', plan['evidens']),
+        ('Refleksi', '___ / ___ murid mencapai objektif.'),
+        ('Susulan', plan['susulan']),
+    ]
+    return heading, details, activities, reflection
+
+
 def export(plans, schedule, output):
     output.mkdir(parents=True, exist_ok=True)
     for plan in plans:
         number = plan['lesson']
-        week, minutes = schedule[number]
-        heading = ('Rancangan Pengajaran Harian', SUBTITLE, plan['tajuk'])
-        standard_code = plan['sp'][0].rsplit('.', 1)[0]
-        details = [
-            ('Unit', 'Unit 1 Nombor hingga 1000'),
-            ('Lesson / tempoh', f'Lesson {number:03d} · {minutes} minit'),
-            ('Tarikh RPT', f"M{week['minggu']:02d} · A {display_dates(week['A'])} · B {display_dates(week['B'])}"),
-            ('Maklumat kelas', 'Kelas ______ · Tarikh ______ · Masa ______ · Murid ______'),
-            ('SK / SP', f"SK {standard_code} {STANDARDS[standard_code]} · SP {', '.join(plan['sp'])}"),
-            ('Rujukan', f"DPK Edisi 3, hlm. {plan['dpk']} · Buku Teks Jilid 1, hlm. {plan['bt']}"),
-            ('Objektif', plan['objektif']),
-            ('Bahan', plan['bbm']),
-        ]
-        activities = [('Fasa', 'Tindakan guru', 'Tindakan murid')]
-        activities.extend((f'{phase} · {length} minit', teacher, pupils)
-                          for phase, length, (teacher, pupils) in zip(PHASES, MINUTES[minutes], plan['aktiviti'], strict=True))
-        reflection = [
-            ('Evidens PBD', plan['evidens']),
-            ('Refleksi', '___ / ___ murid mencapai objektif.'),
-            ('Susulan', plan['susulan']),
-        ]
+        parts = document(plan, schedule[number])
         for extension, renderer in (('docx', _word), ('pdf', _pdf)):
             with (output / f'CikguLaju_Matematik_T2_Lesson_{number:03d}.{extension}').open('wb') as stream:
-                renderer(stream, heading, details, activities, reflection)
+                renderer(stream, *parts)
 
 
 def main():

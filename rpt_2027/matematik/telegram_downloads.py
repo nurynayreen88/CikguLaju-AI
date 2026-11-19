@@ -51,7 +51,8 @@ def install(ns):
 
     def callback(cid, d):
         data = str(d or "")
-        prefix = "rpt2027_math_pdf_"
+        dpk = data.startswith("rpt2027_math_dpk_pdf_")
+        prefix = "rpt2027_math_dpk_pdf_" if dpk else "rpt2027_math_pdf_"
         if not data.startswith(prefix):
             return previous(cid, d)
 
@@ -71,10 +72,12 @@ def install(ns):
             )
 
         suffix = data[len(prefix):]
-        if suffix not in ("2", "3", "4", "5", "6"):
+        if suffix not in (("2", "3") if dpk else ("2", "3", "4", "5", "6")):
             return send(cid, "Pilihan tahun RPT Matematik tidak sah.")
         year = int(suffix)
-        if not pdf_ready(year):
+        path = (sk_documents.document_path(year, root=PDF_ROOT, dpk=True) if dpk
+                else pdf_path(year) if pdf_ready(year) else None)
+        if path is None:
             return send(
                 cid,
                 "⚠️ PDF RPT Matematik Tahun %d belum tersedia pada pelayan. "
@@ -82,9 +85,11 @@ def install(ns):
             )
 
         try:
-            version = "Kumpulan A/B · 117 Lesson · 96 jam" if year in sk_documents.DIGESTS else "v28 (DRAF/SEMENTARA)"
+            version = "Kumpulan A/B · 117 Lesson · 96 jam" if dpk or year in sk_documents.DIGESTS else "v28 (DRAF/SEMENTARA)"
+            if dpk:
+                version = f"DPK Edisi 3 · {version}"
             result = send_document(
-                cid, str(pdf_path(year)),
+                cid, str(path),
                 f"RPT Matematik Tahun {year} — 2027 {version}",
             )
             verify = ns.get("_telegram_delivery_ok_v25279")
