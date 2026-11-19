@@ -11,6 +11,7 @@ from xml.sax.saxutils import escape
 
 SUBJECTS = {"SCIENCE_DLP": "Science", "MATH_DLP": "Mathematics"}
 _DLP_SOURCES = Path(__file__).resolve().parent / "staging" / "dlp"
+_LEARNING_STANDARD = re.compile(r"\b(\d+\.\d+\.\d+)(\([iv]+\)(?:, \([iv]+\))*)?")
 
 
 @lru_cache(maxsize=1)
@@ -32,17 +33,18 @@ def science_rpt_lessons():
     return rpt_lessons("SCIENCE_DLP")
 
 
-@lru_cache(maxsize=2)
-def _science_descriptions(year):
-    source = _DLP_SOURCES / f"year{year}" / "science_standard_descriptions.json"
+@lru_cache(maxsize=3)
+def _standard_descriptions(year, subject):
+    source = _DLP_SOURCES / f"year{year}" / f"{SUBJECTS[subject].lower()}_standard_descriptions.json"
     return json.loads(source.read_text(encoding="utf-8"))
 
 
-def _science_standard_rows(descriptions, ls_codes):
-    cs_codes = list(dict.fromkeys(code.rsplit(".", 1)[0] for code in ls_codes))
+def _standard_rows(descriptions, ls_codes):
+    cs_codes = dict.fromkeys(code.rsplit(".", 1)[0] for code in ls_codes)
+    learning = descriptions["ls"] | descriptions.get("parts", {})
     return [
         ("Content Standards", "\n".join(f"{code} {descriptions['cs'][code]}" for code in cs_codes)),
-        ("Learning Standards", "\n".join(f"{code} {descriptions['ls'][code]}" for code in ls_codes)),
+        ("Learning Standards", "\n".join(f"{code} {learning[code]}" for code in ls_codes)),
     ]
 
 
@@ -54,7 +56,7 @@ def year3_science_catalog():
     rpt = path.parents[3] / "rpt_2027" / "dlp" / "CikguLaju_RPT_DLP_2027_Science_Year_3.docx"
     if sha256(rpt.read_bytes()).hexdigest() != data["rpt_sha256"]:
         raise ValueError("The Science Year 3 RPT has changed.")
-    descriptions = _science_descriptions(3)
+    descriptions = _standard_descriptions(3, "SCIENCE_DLP")
     plans = data["plans"]
     units = {}
     for plan in plans:
@@ -75,7 +77,7 @@ def year3_science_catalog():
             "minutes": plan["minutes"],
             "rpt_dates": plan["rpt_dates"],
             "standards": " · ".join(plan["standards"]),
-            "standard_rows": _science_standard_rows(descriptions, ls_codes),
+            "standard_rows": _standard_rows(descriptions, ls_codes),
             "references": " · ".join(line.replace("TB ", "Textbook ").replace("AB ", "Activity Book ")
                                      for line in plan["references"]),
             "objective": plan["objective"],
@@ -127,9 +129,10 @@ def render(subject, unit, lesson, fmt, teacher):
         ("Time", teacher["time"]),
         ("Pupils", teacher["students"]),
     )
-    if subject == "SCIENCE_DLP" and year == 2:
-        ls_codes = re.findall(r"\b\d+\.\d+\.\d+\b", lesson["standards"])
-        standards = _science_standard_rows(_science_descriptions(2), ls_codes)
+    if year == 2:
+        ls_codes = [f"{code}{part}" for code, parts in _LEARNING_STANDARD.findall(lesson["standards"])
+                    for part in parts.split(", ")]
+        standards = _standard_rows(_standard_descriptions(year, subject), ls_codes)
     else:
         standards = lesson.get("standard_rows", [("Standards", lesson["standards"])])
     details = [

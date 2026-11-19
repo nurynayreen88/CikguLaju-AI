@@ -13,3 +13,9 @@ Semakan pada 19 November 2026 meliputi 163 sesi. Padankan 63 Lesson dan empat Re
 Pada 20 November 2026, semua 63 Lesson dan empat Review Science ditambah kod dan deskripsi ringkas daripada DSKP edisi bahasa Inggeris, halaman 30–52. Semakan memadankan 12 Content Standards dan 64 Learning Standards. Empat sesi Review menggunakan kod LS dalam RPT bersama CS induk masing-masing.
 
 Kesemua 134 respons Word dan PDF lulus ujian setempat pada laluan penjana Web. Semua PDF dan semua Word selepas penukaran disahkan satu halaman A4. Semakan visual meliputi Lesson 12 dan Review 01. Ujian regresi muat turun Science dan Mathematics Year 2–3 lulus.
+
+## Deskripsi standard Mathematics
+
+Semakan 20 November 2026 meliputi 78 Lesson dan 18 Review. Deskripsi 37 CS, 70 LS dan tujuh subitem bernombor Rom dipadankan dengan [DSKP edisi bahasa Inggeris halaman 34–62](https://anyflip.com/nuzm/dryx/basic) dan RPT 2027. Bagi Lesson 76, Lesson 77 dan Review 17, kod 8.2.1 mengikut DSKP edisi bahasa Melayu dan rekod padanan carta palang dalam buku teks serta buku aktiviti. DSKP edisi Inggeris mencetak 8.1.2 bagi deskripsi yang sama pada halaman 62.
+
+Ujian setempat meluluskan 192 respons Word dan PDF daripada laluan penjana Web. Semua 96 PDF dan 96 Word selepas penukaran muat satu halaman A4. Semakan visual meliputi Lesson 01 dan Review 17. Lapan ujian muat turun dan regresi Tahun 2–3 lulus.
