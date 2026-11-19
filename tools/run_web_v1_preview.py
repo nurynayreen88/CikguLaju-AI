@@ -114,12 +114,10 @@ def options():
             if not isinstance(items, list):
                 return response
             subject = request.args.get("subject", "")
-            if subject == "SCIENCE_DLP":
-                return response
             signer = lesson_signer(config)
             component = request.args.get("component", "")
             for item in items:
-                number = lesson_number(item)
+                number = lesson_number(item, subject)
                 if number is not None:
                     item["completion_token"] = signer.dumps([uid, int(request.args["year"]),
                                                                subject, component, number])

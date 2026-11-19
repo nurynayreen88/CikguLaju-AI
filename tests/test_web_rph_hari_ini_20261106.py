@@ -505,19 +505,47 @@ class DailyTimetableRouteTests(TestCase):
                     self.assertTrue(slot["can_prepare"])
                     self.assertEqual((slot["subject_code"], slot["curriculum"]), ("SCIENCE_DLP", "dlp"))
                     self.assertIsNone(slot["rpt_suggestion"])
-                    self.assertNotIn("progress", slot)
+                    self.assertEqual(slot["progress"], {"": {"completed": None, "previous": None}})
                 self.assertEqual(slots[2]["subject_code"], "SCIENCE")
                 for slot in slots[3:]:
                     self.assertFalse(slot["can_prepare"])
                     self.assertIn("rpt_subject", slot)
 
-            result = self.client.post("/api/web/rph/hari-ini/completion", json={
+            path = "/api/web/rph/hari-ini/completion"
+            headers = {"Origin": "https://localhost"}
+            request = {
                 "date": target.isoformat(), "start": "08:00", "class_name": "4 Bestari",
                 "subject_code": "SCIENCE_DLP", "component": "",
-                "token": lesson_signer(self.conf).dumps([123, 4, "SCIENCE_DLP", "", 1]),
-            })
-            self.assertEqual(result.status_code, 400)
-            save.assert_not_called()
+            }
+            signer = lesson_signer(self.conf)
+            for number in (8, 108, None):
+                with self.subTest(number=number):
+                    token = signer.dumps([123, 4, "SCIENCE_DLP", "", number]) if number else None
+                    result = self.client.post(path, headers=headers, json={**request, "token": token})
+                    self.assertEqual(result.status_code, 200, result.get_json())
+                    self.assertEqual(save.call_args.args[-1], number)
+
+            for claim in ([123, 4, "SCIENCE_DLP", "", 100], [123, 4, "SCIENCE_DLP", "", 60],
+                          [123, 4, "SCIENCE_DLP", "", 111], [123, 4, "SCIENCE", "", 8],
+                          [456, 4, "SCIENCE_DLP", "", 108], [123, 3, "SCIENCE_DLP", "", 108]):
+                with self.subTest(claim=claim):
+                    result = self.client.post(path, headers=headers, json={**request, "token": signer.dumps(claim)})
+                    self.assertEqual(result.status_code, 400)
+            future = self.client.post(path, headers=headers, json={**request, "date": "2027-01-12", "token": None})
+            self.assertEqual(future.status_code, 400)
+            self.assertEqual(save.call_count, 3)
+
+            summary = {("4 bestari", "SCIENCE_DLP", ""): {
+                "completed": 2, "last_number": 108, "last_date": target.isoformat(),
+            }}
+            with patch("web.rph_hari_ini_web.read_progress_summary", return_value=summary):
+                overview = self.client.get("/api/web/rph/hari-ini/progress")
+            self.assertEqual(overview.status_code, 200)
+            items = {(row["class_name"], row["subject"]): row for row in overview.json["entries"]}
+            self.assertEqual(items["4 Bestari", "Science (DLP)"]["last_label"], "Review 08")
+            self.assertEqual(items["4 Bestari", "Science (DLP)"]["completed"], 2)
+            self.assertEqual(items["4 Amanah", "Science (DLP)"]["completed"], 0)
+            self.assertNotIn(("3 Bestari", "Science (DLP)"), items)
 
     def test_invalid_date_and_unknown_params_fail_closed(self):
         with patch("web.rph_hari_ini_web._auth",return_value=(self.conf,123,None)):
