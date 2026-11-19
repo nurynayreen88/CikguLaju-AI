@@ -67,7 +67,8 @@ def main():
             avail=c.get("/internal/rph/v1/other-drafts/availability",
                         query_string=query,headers=auth)
             assert avail.status_code==200,(subject,year,avail.status_code,avail.json)
-            assert avail.json["status"]=="DRAF"
+            reviewed = (subject, year, first["value"], lesson) == ("ARAB", 2, "u01", "001")
+            assert avail.json["status"] == ("READY" if reviewed else "DRAF")
             formats=avail.json["formats"]
             if subject=="MUZIK":
                 from web.telegram_provisional_arab_music_api import _music_state
@@ -95,7 +96,18 @@ def main():
                     with ZipFile(io.BytesIO(body)) as z:
                         assert "word/document.xml" in z.namelist()
                         assert z.testzip() is None
-                        assert b"DRAF" in z.read("word/document.xml")
+                        xml = z.read("word/document.xml")
+                        assert (b"DRAF" not in xml) == reviewed
+                        if reviewed:
+                            from docx import Document
+
+                            doc = Document(io.BytesIO(body))
+                            assert [len(t.columns) for t in doc.tables] == [2, 3, 2]
+                            assert "خطة التدريس اليومية" in doc.paragraphs[0].text
+                            assert "1.1.1" in doc.tables[0].cell(7, 1).text
+                            assert "2 Bestari" in doc.tables[0].cell(5, 1).text
+                            assert b'w:cs="Amiri"' in xml and b"w:bidiVisual" in xml
+                            assert "CIKGULAJU_RPH_ARAB_TAHUN_2_001.docx" in result.headers["Content-Disposition"]
                 else:
                     assert body.startswith(b"%PDF-")
                 print("PASS",subject,year,lesson,fmt,len(body),flush=True)
