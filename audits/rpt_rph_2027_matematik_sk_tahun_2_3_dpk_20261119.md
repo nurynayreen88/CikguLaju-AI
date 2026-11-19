@@ -22,7 +22,19 @@ Setiap tahun mempunyai 42 sesi 30 minit dan 75 sesi 60 minit. RPT menyenaraikan 
 | Tahun 3, 069–071 | Nyatakan penanda pagi atau petang pada Lesson 069. Lesson 070–071 menggunakan 1 minit bersamaan 60 saat. Kekalkan nilai ini kerana contoh ketiga bercetak pada DPK hlm. 52 tersilap menyamakan 60 minit dengan 60 saat. |
 | Tahun 3, 117 | Minta murid memadankan set data yang sama pada piktograf, carta palang dan carta pai. Ketiga-tiganya tertera dalam SP 9.2.2 pada DPK hlm. 61. |
 
-Rujukan buku teks sedia ada menggunakan halaman bercetak. Semakan sumber set ini mengutamakan kod dan halaman DPK serta tugasan yang dipinda. Pengesahan setiap halaman buku teks dan penilaian pelaksanaan masa di bilik darjah masih terbuka. [Tahun 2 Jilid 1](https://fliphtml5.com/lwbmp/epdf) · [Tahun 2 Jilid 2](https://pubhtml5.com/qtnz/fvhe/basic/) · [Tahun 3 Jilid 1](https://anyflip.com/mkqv/kqav/basic) · [Tahun 3 Jilid 2](https://fliphtml5.com/jfuhh/feev/Buku_Teks_Matematik_Tahun_3_Jilid_2/).
+## Semakan halaman buku teks SK
+
+Keempat-empat jilid diperiksa menggunakan tajuk bab, subtopik dan nombor halaman bercetak. Semak halaman yang disebut untuk kesemua 234 Lesson dan pastikan sekurang-kurangnya satu halaman menyokong setiap SP. Buku Jilid 2 Tahun 3 daripada PPD Batu Pahat mengandungi tiga bahagian berturutan dengan halaman bercetak 1–116 dalam Bahasa Melayu. Salinan awal dari satu laman pusat sumber mengandungi halaman DLP dan bab yang disusun semula. [Jilid 1 dan 2 Tahun 2 serta Jilid 1 Tahun 3](https://sites.google.com/moe-dl.edu.my/pusatsumberalkhawarizmi/buku-teks-digital) · [Jilid 2 Tahun 3, PPD Batu Pahat](https://sites.google.com/moe-dl.edu.my/ppd-batu-pahat-sains-matematik/buku-teks-digital-bidang-sains-matematik/buku-teks-sekolah-rendah/matematik-tahun-3).
+
+| Tahun dan Lesson | Halaman bercetak yang diselaraskan |
+| --- | --- |
+| Tahun 2, 111 | Hlm. 80 untuk bentuk asas pepejal dan hlm. 84–85 untuk ciri bentuk dua dimensi. |
+| Tahun 2, 113–114 | Hlm. 92–93 untuk mengumpul, mengelas dan menggundal data. |
+| Tahun 2, 115–117 | Rujuk pengenalan carta palang di hlm. 94. Pilih contoh bacaan dan soalan pada hlm. 95–96 dan 98 mengikut tugasan. |
+| Tahun 3, 114 dan 116 | Hlm. 109 untuk bacaan carta pai. Lesson 116 turut merujuk latihan carta pai pada hlm. 113 dan 115. |
+| Tahun 3, 117 | Hlm. 110–112 dan 114 untuk padanan tiga perwakilan daripada data yang sama. |
+
+Kod SK/SP, masa dan evidens PBD kekal sepadan antara RPT dengan RPH. Penilaian tempoh mengajar menggunakan set ini di bilik darjah masih terbuka.
 
 ## Pengesahan setempat
 
