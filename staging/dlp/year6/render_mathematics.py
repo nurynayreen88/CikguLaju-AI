@@ -167,16 +167,11 @@ def render_download(plan, fmt, teacher):
 
 def render_plan(stream, plan, renderer, *, teacher=None):
     teacher = teacher or {}
-    session = "  ".join(
-        f"{label}: {teacher.get(key) or '_______'}"
-        for key, label in (("class", "Class"), ("date", "Date"), ("time", "Time"), ("students", "Pupils"))
-    )
     heading = ("Daily Lesson Plan", "Mathematics (DLP) · Year 6 SK", plan["title"])
     details = [
         ("Unit", plan["unit"]),
         ("Lesson / PdP", plan["label"]),
         ("RPT date ranges", plan["dates"]),
-        ("Class / date / time", session),
         ("Standards", plan["standards"]),
         ("Book reference", plan["reference"]),
         ("Learning objective", plan["objective"]),
@@ -188,7 +183,7 @@ def render_plan(stream, plan, renderer, *, teacher=None):
         ("Reflection", teacher.get("reflection") or
          "___ of ___ pupils met the objective. Follow-up: ____________________."),
     ]
-    renderer(stream, heading, details, activities, reflection)
+    renderer(stream, heading, details, activities, reflection, mathematics=True, teacher=teacher)
 
 
 def export(output, rpt, plans):

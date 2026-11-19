@@ -165,7 +165,7 @@ def export(chapters, schedule, output):
             parts = document(unit, info, plan, schedule[number])
             for extension, renderer in (('docx', _word), ('pdf', _pdf)):
                 with (output / f'CikguLaju_Matematik_T2_Lesson_{number:03d}.{extension}').open('wb') as stream:
-                    renderer(stream, *parts, compact=number == 17)
+                    renderer(stream, *parts, compact=number == 17, mathematics=True)
 
 
 def main():

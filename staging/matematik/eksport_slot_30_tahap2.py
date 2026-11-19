@@ -122,7 +122,7 @@ def export_plans(year, plans, schedule, sources, output):
         stem = f'CikguLaju_Matematik_T{year}_Lesson_{plan.lesson:03d}'
         for extension, renderer in (('docx', _word), ('pdf', _pdf)):
             with (output / f'{stem}.{extension}').open('wb') as stream:
-                renderer(stream, *parts)
+                renderer(stream, *parts, mathematics=True)
 
 
 def export(year, output):

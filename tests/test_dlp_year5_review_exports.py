@@ -78,10 +78,18 @@ class DLPYear5ReviewExports(unittest.TestCase):
                 with self.subTest(subject=subject, lesson=plan["id"]):
                     stem = f"CikguLaju_RPH_{subject}_DLP_Y5_{plan['id']}"
                     word = Document(folder / f"{stem}.docx")
-                    self.assertEqual(word.paragraphs[2].text, plan["title"])
                     self.assertEqual(word.tables[2].rows[0].cells[1].text, plan["evidence"])
-                    self.assertEqual([tuple(cell.text for cell in row.cells)
-                                      for row in word.tables[1].rows[1:]], plan["phases"])
+                    table = word.tables[1]
+                    if subject == "Mathematics":
+                        fields = {a.text: b.text for a, b in (row.cells for row in word.tables[0].rows)}
+                        self.assertEqual(fields["Topic"], plan["title"])
+                        text = "\n".join(row.cells[1].text for row in table.rows[1:])
+                        for _, teacher, pupils in plan["phases"]:
+                            self.assertIn(f"Teacher: {teacher}\nPupils: {pupils}", text)
+                    else:
+                        self.assertEqual(word.paragraphs[2].text, plan["title"])
+                        self.assertEqual([tuple(cell.text for cell in row.cells)
+                                          for row in table.rows[1:]], plan["phases"])
                     for pdf_folder in (folder, word_pdfs) if word_pdfs.exists() else (folder,):
                         self.assertNotRegex(stem.replace("_", " "), INTERNAL_LABEL)
                         content = self.check_pdf(pdf_folder / f"{stem}.pdf", 1, (595, 842))

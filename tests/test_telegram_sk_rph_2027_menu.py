@@ -131,13 +131,14 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         self.click(word)
         self.click(pdf)
         document = Document(BytesIO(self.documents[0][1]))
-        self.assertEqual(document.styles["Normal"].font.name, "Calibri")
-        self.assertEqual(document.paragraphs[0].text, "Rancangan Pengajaran Harian")
+        self.assertEqual(document.styles["Normal"].font.name, "Arial")
+        self.assertEqual(document.paragraphs[0].text, "RANCANGAN PENGAJARAN HARIAN")
         self.assertEqual([len(table.columns) for table in document.tables], [2, 3, 2])
         reflection = next(row for row in document.tables[2].rows if row.cells[0].text == "Refleksi")
         self.assertIn("murid mencapai objektif", reflection.cells[1].text)
         page, = PdfReader(BytesIO(self.documents[1][1])).pages
         self.assertNotIn("MAKLUMAT PENGAJARAN", page.extract_text())
+        self.assertIn("Aktiviti Pengajaran & Pembelajaran", page.extract_text())
 
     def test_math_year2_pdp017_has_a_full_subtraction_lesson(self):
         word, pdf = self._select("dp2", "02", "SK27-DPK3-MATH-Y2-L017")
@@ -148,10 +149,17 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         self.assertIn("SP 2.2.1 Menolak hingga tiga nombor", fields["Standard Pembelajaran"])
         self.assertIn("Buku Aktiviti, hlm. 44–48", fields["Rujukan"])
         self.assertIn("2 daripada 2", fields["Kriteria Kejayaan"])
-        stages = doc.tables[1].rows[1:]
-        self.assertEqual(sum(int(row.cells[0].text.splitlines()[-1].split()[0]) for row in stages), 60)
-        self.assertIn("14 puluh dan 12 sa", stages[1].cells[2].text)
-        self.assertIn("531 − 247 dan 620 − 156", stages[3].cells[1].text)
+        phases = doc.tables[1]
+        main = phases.cell(2, 1).paragraphs[0]
+        headings = [run.text for run in main.runs if run.bold]
+        expected = ["Aktiviti 1 – Demonstrasi (15 minit)",
+                    "Aktiviti 2 – Latihan Berpandu (15 minit)",
+                    "Aktiviti 3 – PBD Individu (20 minit)"]
+        self.assertEqual(headings, expected)
+        self.assertIn("(5 minit)", phases.cell(1, 0).text)
+        self.assertIn("(5 minit)", phases.cell(3, 0).text)
+        self.assertIn("14 puluh dan 12 sa", main.text)
+        self.assertIn("531 − 247 dan 620 − 156", main.text)
         page, = PdfReader(BytesIO(self.documents[1][1])).pages
         text = " ".join(page.extract_text().split())
         for fragment in ("Hasil 284 dan 464", "Pemulihan", "Pengayaan", "Fokus susulan"):
@@ -205,9 +213,10 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                 })
                 self.assertEqual(response.status_code, 200, response.get_json(silent=True))
                 document = Document(BytesIO(response.data))
-                self.assertEqual(document.paragraphs[1].text, f"Matematik SK Tahun {year} · 2027")
-                self.assertIn("DPK Edisi 3", document.tables[0].rows[5].cells[1].text)
-                self.assertIn("SP " + codes, document.tables[0].rows[4].cells[1].text)
+                fields = {a.text: b.text for a, b in (row.cells for row in document.tables[0].rows)}
+                self.assertEqual(fields["Tahun/Tingkatan"], f"Tahun {year}")
+                self.assertIn("DPK Edisi 3", fields["Rujukan"])
+                self.assertIn("SP " + codes, fields["Standard Pembelajaran"])
                 self.assertIn("Semak sekali lagi.", document.tables[-1].rows[1].cells[1].text)
 
     def test_dlp_year3_api_downloads_every_exact_lesson(self):
@@ -368,7 +377,7 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         self.click(pdf)
         doc = Document(BytesIO(self.documents[0][1]))
         fields = {row.cells[0].text: row.cells[1].text for row in doc.tables[0].rows}
-        self.assertIn("SP 7.2.1", fields["SK / SP"])
+        self.assertIn("SP 7.2.1", fields["Standard Pembelajaran"])
         self.assertEqual(len(PdfReader(BytesIO(self.documents[1][1])).pages), 1)
         self.assertEqual(self.credits, 1)
 
@@ -412,7 +421,7 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
             doc = Document(BytesIO(data))
             fields = {row.cells[0].text: row.cells[1].text for row in doc.tables[0].rows}
             self.assertIn("30 minit", fields["Lesson / tempoh"])
-            self.assertIn("SP 1.5.1, 1.5.2", fields["SK / SP"])
+            self.assertIn("SP 1.5.1, 1.5.2", fields["Standard Pembelajaran"])
 
     def test_private_web_render_matches_telegram_for_year_six_ratio(self):
         app = Flask(__name__)

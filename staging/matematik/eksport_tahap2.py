@@ -84,7 +84,7 @@ def export_hour(year, sources, schedule, lessons, output):
         stem = f'CikguLaju_Matematik_T{year}_Lesson_{number:03d}'
         for extension, render in (('docx', _word), ('pdf', _pdf)):
             with (output / f'{stem}.{extension}').open('wb') as stream:
-                render(stream, *parts)
+                render(stream, *parts, mathematics=True)
 
 
 def full_schedule(year):
