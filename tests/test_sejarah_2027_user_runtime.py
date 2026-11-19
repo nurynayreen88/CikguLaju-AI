@@ -44,7 +44,9 @@ class SejarahUserRuntimeTest(unittest.TestCase):
                 self.assertEqual(outcome["KELAS"], "5 Bestari")
                 self.assertEqual(outcome["TARIKH"], "22/03/2027")
                 self.assertEqual(outcome["MASA"], "08:00-09:00")
-                self.assertEqual(outcome["STANDARD PEMBELAJARAN"], ", ".join(r["sp_codes"]))
+                sp_text = {item["code"]: item["text"] for item in r["core_sp"] + r["values_sp"]}
+                self.assertEqual(outcome["STANDARD PEMBELAJARAN"],
+                                 " · ".join(f"{code} {sp_text[code]}" for code in r["sp_codes"]))
                 self.assertEqual(outcome["SET INDUKSI"], r["set_induksi"]["activity"])
                 self.assertEqual(outcome["PENTAKSIRAN"], r["pengukuhan_pbd"]["activity"])
                 self.assertEqual(outcome["PENUTUP"], r["penutup"]["activity"])

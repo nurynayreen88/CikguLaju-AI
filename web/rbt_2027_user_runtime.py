@@ -7,8 +7,10 @@ Telegram native row generator and class/date flow.
 """
 from __future__ import annotations
 
+import json
 import os
 import re
+from functools import lru_cache
 from pathlib import Path
 from web.rbt_2027_staging_source import (
     RBTSourceUnavailable, internal_review, menu_pdp, menu_units, source_fingerprint,
@@ -19,11 +21,22 @@ FLAG = "CIKGULAJU_RBT_2027_DRAFT_USER_ENABLED"
 SUBJECT = "Reka Bentuk dan Teknologi"
 YEARS = (4, 5, 6)
 SELECTION = "_rbt_2027_selected_pdp"
+STANDARD_DESCRIPTIONS = "rph_standalone/rbt/kssr_standard_descriptions.json"
+WORD_OVERFLOW = {
+    4: {1, 3, 4, 5, 6, 9, 13, 14, 16, 17, 18, 19, 20, 22, 23, 27, 30, 31},
+    5: {1, 7, 10, 13, 14},
+}
+WORD_TIGHT_OVERFLOW = {(4, 3), (4, 14), (4, 23)}
 
 
 def year_number(value):
     m = re.fullmatch(r"(?i)(?:Tahun\s*)?([4-6])", str(value or "").strip())
     return int(m[1]) if m else None
+
+
+@lru_cache(maxsize=4)
+def _standard_descriptions(root):
+    return json.loads((Path(root) / STANDARD_DESCRIPTIONS).read_text(encoding="utf-8"))
 
 
 def _lesson(year, pdp, *, root=ROOT):
@@ -35,8 +48,16 @@ def _lesson(year, pdp, *, root=ROOT):
         if (row["review"]["release_ready"] is not False
                 or len(row["sp_codes"]) < 1 or not row["unit_label"].startswith("Unit ")):
             return None
+        standards = _standard_descriptions(str(Path(root).resolve()))[str(year)]
+        for kind, codes in (("sk", row["sk"]), ("sp", row["sp_codes"])):
+            descriptions = [standards[kind][code] for code in codes]
+            if any(not text.strip() for text in descriptions):
+                return None
+            row[f"{kind}_description"] = " · ".join(
+                f"{code} {text}" for code, text in zip(codes, descriptions, strict=True)
+            )
         return row
-    except (RBTSourceUnavailable, ValueError, TypeError, KeyError, OSError):
+    except (RBTSourceUnavailable, ValueError, TypeError, KeyError, OSError, AttributeError):
         return None
 
 
@@ -75,8 +96,8 @@ def adapt_rows(state, previous, *, root=ROOT):
         "MATA PELAJARAN": SUBJECT,
         "TAHUN/TINGKATAN": f'Tahun {row["tahun"]}',
         "TAJUK": f'{row["unit_label"]} — {row["tajuk"]} (DRAF UNTUK SEMAKAN)',
-        "STANDARD KANDUNGAN": ", ".join(row["sk"]),
-        "STANDARD PEMBELAJARAN": ", ".join(row["sp_codes"]),
+        "STANDARD KANDUNGAN": row["sk_description"],
+        "STANDARD PEMBELAJARAN": row["sp_description"],
         "OBJEKTIF PEMBELAJARAN": row["objektif"],
         "KRITERIA KEJAYAAN": row["kriteria_kejayaan"],
         "PENGETAHUAN SEDIA ADA": f'Pengalaman murid berkaitan {row["unit_label"]}.',
@@ -87,9 +108,9 @@ def adapt_rows(state, previous, *, root=ROOT):
         "KBAT / PAK21": "Penyelesaian masalah reka bentuk; menilai fungsi; komunikasi.",
         "SET INDUKSI": l["set_induksi"]["aktiviti"],
         "AKTIVITI UTAMA": (
-            "Aktiviti 1 (15 minit) — " + l["aktiviti_1"]["aktiviti"] + "\n"
-            "Aktiviti 2 (25 minit) — " + l["aktiviti_2"]["aktiviti"] + "\n"
-            "PBD / Pengukuhan (10 minit) — " + l["pengukuhan_penilaian"]["aktiviti"]
+            "Aktiviti 1\n" + l["aktiviti_1"]["aktiviti"] + "\n"
+            "Aktiviti 2\n" + l["aktiviti_2"]["aktiviti"] + "\n"
+            "PBD / Pengukuhan\n" + l["pengukuhan_penilaian"]["aktiviti"]
         ),
         "PENTAKSIRAN": row["pbd_evidens"],
         "PENUTUP": l["penutup"]["aktiviti"],
@@ -217,5 +238,19 @@ def install(ns, *, enabled=None, root=ROOT):
 
     ns["callback"]=callback
     ns["_rph_rows"]=rows
+    previous_word = ns.get("create_word_file")
+    if callable(previous_word):
+        def word(state_value, *args, **kwargs):
+            path = previous_word(state_value, *args, **kwargs)
+            if isinstance(state_value, dict) and state_value.get("task") == "rph":
+                row = _selected(state_value, root=root)
+                if row and row["pdp"] in WORD_OVERFLOW.get(row["tahun"], ()):
+                    from web.english_y6_word_a4_runtime import compact_word_file
+
+                    key = (row["tahun"], row["pdp"])
+                    compact_word_file(path, point_size=8.0 if key in WORD_TIGHT_OVERFLOW else 8.5)
+            return path
+
+        ns["create_word_file"] = word
     ns["RBT_2027_DRAFT_USER_BRIDGE_ACTIVE"]=True
     return True
