@@ -266,7 +266,7 @@ def build_native_input(payload):
         sk=selected["sk"].split("; ")
         sp=selected["sp"].split("; ")
         s.update({
-            "subject":SUBJECT,"task":"quick_material","quick_material_flow":True,
+            "subject":SUBJECT,"quick_material_flow":True,
             "assessment_mode":"formative","rph_mode":"fast_rpt",
             "pdp_no":lesson,"topic":selected["title"],
             "unit":selected["title"],"unit_title":selected["title"],

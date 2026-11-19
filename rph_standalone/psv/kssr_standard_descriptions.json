@@ -1,0 +1,196 @@
+{
+  "2": {
+    "sk": {
+      "1.1": "Bahasa Seni Visual",
+      "2.1": "Kemahiran Seni Visual",
+      "3.1": "Penghasilan karya kreatif",
+      "4.1": "Penghayatan karya Seni Visual",
+      "5.1": "Persembahan hasil karya"
+    },
+    "sp": {
+      "1.1.1": "Mengenal dan menerangkan bahasa seni visual dalam Bidang Menggambar.",
+      "1.1.2": "Mengenal dan menerangkan bahasa seni visual dalam Bidang Membuat Corak dan Rekaan.",
+      "1.1.3": "Mengenal dan menerangkan bahasa seni visual dalam Bidang Membentuk dan Membuat Binaan.",
+      "1.1.4": "Mengenal dan menerangkan bahasa seni visual dalam Bidang Mengenal Kraf Tradisional.",
+      "2.1.1": "Mengaplikasikan pengetahuan bahasa seni visual melalui media dan proses untuk menghasilkan karya dalam Bidang Menggambar.",
+      "2.1.2": "Mengaplikasikan pengetahuan bahasa seni visual melalui media dan proses untuk menghasilkan karya dalam Bidang Membuat Corak dan Rekaan.",
+      "2.1.3": "Mengaplikasikan pengetahuan bahasa seni visual melalui media dan proses untuk menghasilkan karya dalam Bidang Membentuk dan Membuat Binaan.",
+      "3.1.1": "Menghasilkan karya yang kreatif.",
+      "3.3.1": "Mempersembahkan hasil karya secara berkumpulan mengikut kreativiti.",
+      "4.1.1": "Mempamerkan karya yang dihasilkan.",
+      "4.1.2": "Membuat apresiasi karya sendiri dan rakan berpandukan bahasa seni visual, teknik dan proses serta menghubungkaitkan seni dengan diri sendiri dan alam sekitar."
+    },
+    "sp_parent": {
+      "3.3.1": "5.1"
+    },
+    "pdp_overrides": {
+      "13": {
+        "2.1.3": "Mengaplikasikan pengetahuan bahasa seni visual melalui media dan proses untuk menghasilkan karya dalam Bidang Mengenal Kraf Tradisional."
+      },
+      "14": {
+        "2.1.3": "Mengaplikasikan pengetahuan bahasa seni visual melalui media dan proses untuk menghasilkan karya dalam Bidang Mengenal Kraf Tradisional."
+      },
+      "30": {
+        "2.1.3": "Mengaplikasikan pengetahuan bahasa seni visual melalui media dan proses untuk menghasilkan karya dalam Bidang Mengenal Kraf Tradisional."
+      },
+      "31": {
+        "2.1.3": "Mengaplikasikan pengetahuan bahasa seni visual melalui media dan proses untuk menghasilkan karya dalam Bidang Mengenal Kraf Tradisional."
+      }
+    }
+  },
+  "3": {
+    "sk": {
+      "1.1": "Bahasa Seni Visual",
+      "2.1": "Kemahiran Seni Visual",
+      "3.1": "Penghasilan karya kreatif",
+      "4.1": "Penghayatan karya Seni Visual",
+      "5.1": "Persembahan hasil karya"
+    },
+    "sp": {
+      "1.1.1": "Mengenal pasti dan menghubungkait penggunaan garisan, ruang, kepelbagaian serta ritma dan pergerakan melalui karya lukisan dalam Bidang Menggambar.",
+      "1.1.10": "Mengecam dan menjelaskan penggunaan jalinan, bentuk, imbangan dan kepelbagaian melalui karya alat pertahanan diri dalam Bidang Mengenal Kraf Tradisional.",
+      "1.1.2": "Mengenal pasti dan menyatakan penggunaan bentuk, ruang, imbangan dan kesatuan melalui karya montaj dalam Bidang Menggambar.",
+      "1.1.3": "Menghuraikan dan menghubungkaitkan penggunaan jalinan, warna, kontra dan kepelbagaian melalui karya kolaj dalam Bidang Menggambar.",
+      "1.1.4": "Mengecam dan menjelaskan penggunaan garisan, rupa, kepelbagaian serta harmoni. melalui karya gurisan dalam Bidang Menggambar.",
+      "1.1.5": "Mengenal pasti dan mengkelaskan penggunaan rupa, jalinan, kontra dan kepelbagaian melalui karya capan dalam Bidang Membuat Corak dan Rekaan.",
+      "1.1.6": "Menyatakan dan menjelaskan penggunaan jalinan, warna, harmoni dan kontra melalui karya renjisan dan percikan dalam Bidang Membuat Corak dan Rekaan.",
+      "1.1.7": "Menghuraikan dan membezakan penggunaan bentuk, warna, kepelbagaian serta ritma dan pergerakan melalui karya mobail dalam Bidang Membentuk dan Membuat Binaan.",
+      "1.1.8": "Menunjukkan dan menjelaskan penggunaan bentuk, jalinan, imbangan dan penegasan melalui karya boneka dalam Bidang Membentuk dan Membuat Binaan.",
+      "1.1.9": "Menyenaraikan dan menghubungkait penggunaan garisan, jalinan, kontra dan harmoni melalui karya anyaman dalam Mengenal Kraf Tradisional.",
+      "2.1.1": "Mengaplikasikan pengetahuan bahasa seni visual melalui penerokaan media, teknik dan proses dalam penghasilan karya Bidang Menggambar.",
+      "2.1.2": "Mengaplikasikan pengetahuan bahasa seni visual melalui penerokaan media, teknik dan proses dalam penghasilan karya Bidang Membuat Corak dan Rekaan.",
+      "2.1.3": "Mengaplikasikan pengetahuan bahasa seni visual melalui penerokaan media, teknik dan proses dalam penghasilan karya Bidang Membentuk dan Membuat Binaan.",
+      "2.1.4": "Mengaplikasikan pengetahuan bahasa seni visual melalui penerokaan media, teknik dan proses dalam penghasilan karya Bidang Mengenal Kraf Tradisional.",
+      "3.1.1": "Menghasilkan karya kreatif dalam Bidang Menggambar.",
+      "3.1.2": "Menghasilkan corak rekaan kreatif dalam Bidang Membuat Corak dan Rekaan.",
+      "3.1.4": "Menghasilkan karya kreatif dalam Bidang Membentuk dan Membuat Binaan.",
+      "3.1.5": "Menghasilkan kraf kreatif dalam Bidang Mengenal Kraf Tradisional.",
+      "3.3.1": "Merancang persediaan pameran seni visual dalam kumpulan.",
+      "3.3.2": "Menjalankan proses persediaan pameran seni visual berdasarkan perancangan.",
+      "3.3.3": "Menceritakan karya sendiri dan memberi pandangan karya rakan semasa pameran.",
+      "3.3.4": "Memastikan karya dan alat pameran selamat dan terpelihara semasa pameran dijalankan.",
+      "3.3.5": "Menyusun bahan dan alatan pameran seni serta memastikan ruang pameran bersih selepas pameran dilaksanakan.",
+      "4.1.1": "Mempamerkan karya yang dihasilkan.",
+      "4.1.2": "Membuat ulasan karya sendiri dan rakan berpandukan bahasa seni visual, teknik dan proses serta menghubungkaitkan seni dengan diri sendiri, alam sekitar dan disiplin ilmu yang lain."
+    },
+    "sp_parent": {
+      "3.3.1": "5.1",
+      "3.3.2": "5.1",
+      "3.3.3": "5.1",
+      "3.3.4": "5.1",
+      "3.3.5": "5.1"
+    }
+  },
+  "4": {
+    "sk": {
+      "1.1": "Bahasa Seni Visual",
+      "2.1": "Kemahiran Seni Visual",
+      "3.1": "Penghasilan karya kreatif",
+      "4.1": "Penghayatan karya Seni Visual",
+      "5.1": "Persembahan hasil karya"
+    },
+    "sp": {
+      "1.1.1": "Mengenal pasti dan membanding beza bahasa seni visual yang ada pada karya dalam Bidang Menggambar: (i) catan (ii) mozek (iii) poster (iv) cetakan.",
+      "1.1.2": "Mengenal pasti dan membanding beza bahasa seni visual yang ada pada karya dalam Bidang Membuat Corak dan Rekaan: (i) pualaman (ii) stensilan.",
+      "1.1.3": "Mengenal pasti dan membanding beza bahasa seni visual yang ada pada karya dalam Bidang Membentuk dan Membuat Binaan: (i) arca (ii) diorama.",
+      "1.1.4": "Mengenal pasti dan membanding beza bahasa seni visual yang ada pada karya dalam Bidang Mengenal Kraf Tradisional: (i) ukiran (ii) alat domestik.",
+      "2.1.1": "Mengaplikasikan bahasa seni visual pada karya catan dalam Bidang Menggambar melalui penerokaan teknik basah atas basah.",
+      "2.1.10": "Mengaplikasikan bahasa seni visual pada karya alat domestik dalam Bidang Mengenal Kraf Tradisional melalui penerokaan teknik papier mache.",
+      "2.1.2": "Mengaplikasikan bahasa seni visual pada karya mozek dalam Bidang Menggambar melalui penerokaan teknik susunan bahan.",
+      "2.1.3": "Mengaplikasikan bahasa seni visual pada karya poster dalam Bidang Menggambar melalui penerokaan teknik menggunakan gabungan lukisan dan montaj.",
+      "2.1.4": "Mengaplikasikan bahasa seni visual pada karya cetakan dalam Bidang Menggambar melalui penerokaan teknik kolograf.",
+      "2.1.5": "Mengaplikasikan bahasa seni visual pada karya pualaman dalam Bidang Membuat Corak dan Rekaan melalui penerokaan teknik pualaman.",
+      "2.1.6": "Mengaplikasikan bahasa seni visual pada karya stensilan dalam Bidang Membuat Corak dan Rekaan melalui penerokaan teknik stensilan.",
+      "2.1.7": "Mengaplikasikan bahasa seni visual pada karya arca dalam Bidang Membentuk dan Membuat Binaan melalui penerokaan teknik asemblaj.",
+      "2.1.8": "Mengaplikasikan bahasa seni visual pada karya diorama dalam Bidang Membentuk dan Membuat Binaan melalui penerokaan teknik binaan.",
+      "2.1.9": "Mengaplikasikan bahasa seni visual pada karya ukiran dalam Bidang Mengenal Kraf Tradisional melalui penerokaan teknik ukiran bunga timbul.",
+      "3.1.1": "Menghasilkan karya kreatif dalam Bidang Menggambar.",
+      "3.1.3": "Menghasilkan produk rekaan kreatif dalam Bidang Membuat Corak dan Rekaan menggunakan corak yang telah dihasilkan.",
+      "3.1.4": "Menghasilkan produk kreatif dalam Bidang Membentuk dan Membuat Binaan.",
+      "3.1.5": "Menghasilkan kraf kreatif dalam Bidang Mengenal Kraf Tradisional.",
+      "3.3.1": "Merancang persediaan pameran seni visual dalam kumpulan.",
+      "3.3.2": "Menjalankan proses persediaan pameran seni visual berdasarkan perancangan.",
+      "3.3.3": "Menceritakan karya sendiri dan memberi pandangan karya rakan semasa pameran.",
+      "3.3.4": "Memastikan karya dan alat pameran selamat dan terpelihara semasa pameran dijalankan.",
+      "3.3.5": "Menyusun bahan dan alatan pameran seni serta memastikan ruang pameran bersih selepas pameran dilaksanakan.",
+      "4.1.1": "Mempamerkan karya yang dihasilkan.",
+      "4.1.2": "Membuat penyataan lisan secara kritis karya sendiri dan rakan berpandukan bahasa seni visual, teknik dan proses serta menghubungkaitkan seni dengan kehidupan seharian."
+    },
+    "sp_parent": {
+      "3.3.1": "5.1",
+      "3.3.2": "5.1",
+      "3.3.3": "5.1",
+      "3.3.4": "5.1",
+      "3.3.5": "5.1"
+    }
+  },
+  "5": {
+    "sk": {
+      "1.1": "Bahasa Seni Visual",
+      "2.1": "Kemahiran Seni Visual",
+      "3.1": "Penghasilan karya kreatif",
+      "4.1": "Penghayatan karya Seni Visual",
+      "5.1": "Persembahan hasil karya"
+    },
+    "sp": {
+      "1.1.1": "Menginterpretasi bahasa seni visual yang ada pada karya dalam bidang menggambar.",
+      "1.1.2": "Menginterpretasi bahasa seni visual yang ada pada karya dalam bidang membuat corak dan rekaan: (i) titisan (ii) kolaj.",
+      "1.1.3": "Menginterpretasi bahasa seni visual yang ada pada karya dalam bidang membentuk dan membuat binaan: (i) stabail (ii) model.",
+      "1.1.4": "Menginterpretasi bahasa seni visual yang ada pada karya dalam bidang mengenal kraf tradisional: (i) tembikar (ii) tekat.",
+      "2.1.1": "Meneroka penghasilan karya gabungan kolaj dan gurisan dalam bidang menggambar.",
+      "2.1.10": "Meneroka penghasilan tekat atau tenunan dalam bidang mengenal kraf tradisional.",
+      "2.1.2": "Meneroka penghasilan karya gabungan poster dan montaj dalam bidang menggambar.",
+      "2.1.3": "Meneroka penghasilan karya gabungan mozek dan catan dalam bidang menggambar.",
+      "2.1.4": "Meneroka penghasilan karya gabungan lukisan dan capan dalam bidang menggambar.",
+      "2.1.5": "Meneroka penghasilan corak teknik titisan dalam bidang membuat corak dan rekaan.",
+      "2.1.6": "Meneroka penghasilan corak teknik kolaj dalam bidang membuat corak dan rekaan.",
+      "2.1.7": "Meneroka penghasilan stabail dalam Bidang membentuk dan membuat binaan dari aspek: (i) bahasa seni visual (ii) pelbagai media (iii) teknik dan proses.",
+      "2.1.8": "Meneroka penghasilan model dalam Bidang membentuk dan membuat binaan dari aspek: (i) bahasa seni visual (ii) pelbagai media (iii) teknik dan proses.",
+      "2.1.9": "Meneroka penghasilan tembikar dalam bidang mengenal kraf tradisional dari aspek: (i) bahasa seni visual (ii) pelbagai media (iii) teknik dan proses.",
+      "3.1.1": "Menghasilkan karya gabungan dalam bidang menggambar.",
+      "3.1.3": "Menghasilkan produk rekaan dalam bidang membuat corak dan rekaan menggunakan corak yang telah dihasilkan.",
+      "3.1.4": "Menghasilkan karya atau produk dalam bidang membentuk dan membuat binaan.",
+      "3.1.5": "Menghasilkan kraf mudah dalam Bidang mengenal kraf tradisional.",
+      "4.1.1": "Memerihal secara kritis berpandukan bahasa seni visual, teknik dan proses bagi: (i) karya sendiri (ii) karya rakan.",
+      "4.1.2": "Menghubungkaitkan karya yang dihasilkan dengan kehidupan seharian dan masyarakat.",
+      "5.1.1": "Merancang persediaan pameran seni visual dalam kumpulan.",
+      "5.1.2": "Menjalankan proses persediaan pameran seni visual berdasarkan perancangan.",
+      "5.1.3": "Membuat pameran seni visual.",
+      "5.1.4": "Menceritakan tentang karya sendiri dan memberi pandangan tentang karya rakan semasa pameran.",
+      "5.1.5": "Menguruskan karya dan alatan pameran supaya selamat dan terpelihara semasa pameran dijalankan.",
+      "5.1.6": "Menyusun alatan dan bahan pameran seni serta memastikan ruang pameran bersih selepas pameran dilaksanakan."
+    }
+  },
+  "6": {
+    "sk": {
+      "1.1": "Bahasa Seni Visual",
+      "2.1": "Kemahiran Seni Visual",
+      "3.1": "Penghasilan karya seni visual",
+      "4.1": "Penghayatan karya seni visual",
+      "5.1": "Persembahan hasil karya"
+    },
+    "sp": {
+      "1.1.1": "Menyatakan istilah dan pengertian bahasa seni visual.",
+      "1.1.2": "Mencirikan bahasa seni visual yang terdapat pada alam semula jadi, objek buatan manusia dan karya seni berdasarkan: (i) jenis (ii) fungsi.",
+      "1.1.3": "Mencerakinkan bahasa seni visual dalam aktiviti mengikut bidang seni visual.",
+      "2.1.1": "Meneroka media berpandukan bahasa seni visual.",
+      "2.1.2": "Mengaplikasikan bahasa seni visual melalui lakaran berdasarkan: (i) jenis (ii) fungsi.",
+      "2.1.3": "Mengeksplorasi media dan teknik gabungan antara bidang untuk penghasilan karya atau produk.",
+      "3.1.1": "Menghasilkan folio bahasa seni visual berdasarkan: (i) Modul Bahasa Seni Visual (ii) Modul Kemahiran Seni Visual.",
+      "3.2.1": "Menghasilkan lakaran idea karya atau produk gabungan bidang.",
+      "3.2.2": "Menghasilkan karya atau produk gabungan bidang.",
+      "3.2.3": "Menghasilkan gambar karya atau produk akhir secara manual atau digital.",
+      "4.1.1": "Membuat ulasan secara kritis terhadap karya atau produk sendiri dan rakan.",
+      "5.1.1": "Merancang dan menjalankan proses persediaan pameran seni visual dalam kumpulan.",
+      "5.1.2": "Membuat pameran seni visual.",
+      "5.1.3": "Menceritakan tentang karya sendiri dan memberi pandangan tentang karya rakan semasa pameran.",
+      "5.1.4": "Menguruskan karya dan alatan pameran supaya selamat serta terpelihara semasa pameran dijalankan.",
+      "5.1.5": "Menyusun alatan dan bahan pameran seni serta memastikan ruang pameran bersih selepas pameran dilaksanakan."
+    },
+    "sp_parent": {
+      "3.2.1": "3.1",
+      "3.2.2": "3.1",
+      "3.2.3": "3.1"
+    }
+  }
+}

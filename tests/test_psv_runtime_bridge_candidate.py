@@ -115,7 +115,7 @@ class PSVBridgeTests(unittest.TestCase):
                 row = runtime._rph_rows(state)
                 self.assertEqual(row["MATA PELAJARAN"], psv.SUBJECT)
                 self.assertEqual(row["STANDARD PEMBELAJARAN"],
-                                 psv.load_candidate(y, n, preview=True)["sp"])
+                                 psv.load_candidate(y, n, preview=True)["standard_descriptions"]["sp"])
                 self.assertEqual(row["REFLEKSI"], base["REFLEKSI"])
                 self.assertEqual(row["TARIKH"], base["TARIKH"])
                 self.assertTrue(row["AKTIVITI UTAMA"])
@@ -151,6 +151,7 @@ class PSVBridgeTests(unittest.TestCase):
             source = ROOT / "rph_standalone" / "psv" / "year5" / "lesson_039.md"
             path = root / "rph_standalone" / "psv" / "year5" / "lesson_039.md"
             path.parent.mkdir(parents=True)
+            shutil.copy(ROOT / psv.STANDARD_DESCRIPTIONS, root / psv.STANDARD_DESCRIPTIONS)
             value = source.read_text(encoding="utf-8")
             path.write_text(value, encoding="utf-8")
             self.assertIsNotNone(psv.load_candidate(5, 39, preview=True, root=root))
