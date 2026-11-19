@@ -15,6 +15,7 @@ from web.native_verified_rpt_rph_client import _backend
 SUBJECT = "MATH_SJKC"
 LABEL = "Matematik SJKC"
 YEAR = 3
+YEARS = (2, YEAR)
 SOURCE = "telegram-native-math-sjkc"
 PREFIX = "/internal/rph/v1/matematik-sjkc/"
 
@@ -28,6 +29,7 @@ class SchoolMath(NamedTuple):
 
 
 SJKC = SchoolMath(LABEL, YEAR, 9, SOURCE, PREFIX)
+SCHOOLS = {2: SchoolMath(LABEL, 2, 8, SOURCE, PREFIX), 3: SJKC}
 
 
 def _number(value, limit):
@@ -76,7 +78,8 @@ def _query(selection, *, opener, school):
         raise NativeRPHUnavailable(f"Invalid {school.label} response") from None
 
 
-def options(year, unit=None, *, opener=None, school=SJKC):
+def options(year, unit=None, *, opener=None, school=None):
+    school = school or SCHOOLS.get(year, SJKC)
     items = _query(_selection(year, unit, school=school), opener=opener, school=school)
     limit = school.unit_count if unit is None else 96
     try:
@@ -97,7 +100,7 @@ def options(year, unit=None, *, opener=None, school=SJKC):
 
 
 def available(year):
-    if year != YEAR:
+    if year not in YEARS:
         return False
     try:
         return bool(options(year))
@@ -105,14 +108,16 @@ def available(year):
         return False
 
 
-def verify(year, unit, pdp, *, opener=None, school=SJKC):
+def verify(year, unit, pdp, *, opener=None, school=None):
+    school = school or SCHOOLS.get(year, SJKC)
     selection = _selection(year, unit, pdp, school=school)
     if _query(selection, opener=opener, school=school) != {"available": True}:
         raise NativeRPHUnavailable(f"{school.label} PdP unavailable")
     return selection["pdp"]
 
 
-def request_document(selected, fmt, *, opener=None, school=SJKC):
+def request_document(selected, fmt, *, opener=None, school=None):
+    school = school or SCHOOLS.get(selected.get("year"), SJKC)
     if selected.get("source") != school.source or fmt not in MIMES:
         raise ValueError(f"Invalid {school.label} render")
     selection = _selection(selected["year"], selected["unit"], str(selected["lesson"]), school=school)

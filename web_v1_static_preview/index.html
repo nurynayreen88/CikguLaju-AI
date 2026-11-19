@@ -1471,7 +1471,7 @@ const dlpReviewContent=document.getElementById("dlp-rph-content");
 const subjectVariants=window.cikgulajuSubjectVariants||[];
 function canSelectRph(){
  return curriculum.value==="kssr"||dlpRphDownload()||
-  (curriculum.value==="sjkc"&&year.value==="3"&&subject.value==="MATH_SJKC")||
+  (curriculum.value==="sjkc"&&["2","3"].includes(year.value)&&subject.value==="MATH_SJKC")||
   (curriculum.value==="sjkt"&&year.value==="2"&&subject.value==="MATH_SJKT");
 }
 function dlpRphDownload(){

@@ -157,7 +157,7 @@ def options():
             return jsonify(options)
         school = {sjkc.SUBJECT: sjkc, sjkt.SUBJECT: sjkt}.get(request.args.get("subject"))
         if school is not None and kind in ("units", "pdp"):
-            if year != school.YEAR or request.args.get("component"):
+            if year not in school.YEARS or request.args.get("component"):
                 return jsonify({"error": f"Pilihan {school.LABEL} tidak sah"}), 400
             unit = request.args.get("unit", "") if kind == "pdp" else None
             try:

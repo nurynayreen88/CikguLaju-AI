@@ -225,10 +225,11 @@ def day_payload(profile, schedule, target, *, today=None, sjkc_catalogue=None, s
                 "matematik_sjkc": (sjkc, sjkc_catalogue),
                 "matematik_sjkt": (sjkt, sjkt_catalogue),
             }.get(variant_key)
-            if match and year == match[0].YEAR and match[1] is not None:
-                if variant_key not in school_ready:
-                    school_ready[variant_key] = match[1](year)
-                if school_ready[variant_key]:
+            if match and year in match[0].YEARS and match[1] is not None:
+                school_key = variant_key, year
+                if school_key not in school_ready:
+                    school_ready[school_key] = match[1](year)
+                if school_ready[school_key]:
                     school = variant["curriculum"]
                     code = match[0].SUBJECT
         valid = bool(year and code)
@@ -544,7 +545,8 @@ def complete_pdp():
             raise ProfileValidation("Pilihan PdP tidak sah")
         profile = get_profile(config["supabase_url"], config["supabase_key"], uid)
         schedule = get_schedule(config["supabase_url"], config["supabase_key"], uid)
-        result = day_payload(profile, schedule, target, today=today, sjkt_catalogue=sjkt.available)
+        result = day_payload(profile, schedule, target, today=today, sjkc_catalogue=sjkc.available,
+                             sjkt_catalogue=sjkt.available)
         slot = next((entry for entry in result["entries"] if entry["can_prepare"]
                      and all(entry[key] == body[key] for key in ("start", "class_name", "subject_code"))), None)
         if (slot is None or (slot["subject_code"] == "PJPK") != bool(component)
