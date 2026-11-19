@@ -18,6 +18,8 @@ DLP_COMPLETION_LIMITS = {
     (4, "SCIENCE_DLP"): (59, 10),
     (5, "MATH_DLP"): (61, 8),
     (5, "SCIENCE_DLP"): (60, 10),
+    (6, "MATH_DLP"): (46, 8),
+    (6, "SCIENCE_DLP"): (52, 9),
 }
 NUMBER = re.compile(r"^(?:Lesson|PdP)\s*(\d{1,3})\b", re.IGNORECASE)
 

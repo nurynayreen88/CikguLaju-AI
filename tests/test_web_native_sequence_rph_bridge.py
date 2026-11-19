@@ -195,25 +195,24 @@ class WebNativePdPBridgeTests(unittest.TestCase):
             for row in invalid_math:
                 self.assertNotIn("completion_token", row)
             lessons.assert_called_with(4, "MATH_DLP", "08")
-            for subject, prefix, last, review in (("MATH_DLP", "MATH", 61, 8), ("SCIENCE_DLP", "SCI", 60, 10)):
-                with self.subTest(subject=subject):
-                    query = {**selection, "year": 5, "subject": subject, "kind": "pdp",
+            for year, subject, prefix, last, review in (
+                (5, "MATH_DLP", "MATH", 61, 8), (5, "SCIENCE_DLP", "SCI", 60, 10),
+                (6, "MATH_DLP", "MATH", 46, 8), (6, "SCIENCE_DLP", "SCI", 52, 9),
+            ):
+                with self.subTest(year=year, subject=subject):
+                    query = {**selection, "year": year, "subject": subject, "kind": "pdp",
                              "unit": "08", "rph_today": "1"}
-                    ids = [f"DLP-{prefix}-Y5-L{last:02}", f"DLP-{prefix}-Y5-R{review:02}",
-                           f"DLP-{prefix}-Y5-L{last+1:02}", f"DLP-{prefix}-Y5-R{review+1:02}",
+                    ids = [f"DLP-{prefix}-Y{year}-L{last:02}", f"DLP-{prefix}-Y{year}-R{review:02}",
+                           f"DLP-{prefix}-Y{year}-L{last+1:02}", f"DLP-{prefix}-Y{year}-R{review+1:02}",
                            "DLP-MAT-Y4-R08"]
                     lessons.return_value = [{"value": code, "label": code} for code in ids]
                     response = client.get("/api/options", query_string=query)
                     self.assertEqual(response.status_code, 200)
-                    first, second, *invalid_5 = response.json
-                    self.assertEqual(signer.loads(first["completion_token"]), [123, 5, subject, "", last])
-                    self.assertEqual(signer.loads(second["completion_token"]), [123, 5, subject, "", 100 + review])
-                    for row in invalid_5:
+                    first, second, *invalid_rows = response.json
+                    self.assertEqual(signer.loads(first["completion_token"]), [123, year, subject, "", last])
+                    self.assertEqual(signer.loads(second["completion_token"]), [123, year, subject, "", 100 + review])
+                    for row in invalid_rows:
                         self.assertNotIn("completion_token", row)
-                    lessons.return_value = [{"value": f"DLP-{prefix}-Y6-R08", "label": "Review 08"}]
-                    response = client.get("/api/options", query_string={**query, "year": 6})
-                    self.assertEqual(response.status_code, 200)
-                    self.assertNotIn("completion_token", response.json[0])
 
     @patch("web.unified_rph_web._has_paid_access", return_value=True)
     @patch("web.unified_rph_web._account", return_value=({"telegram_user_id": 123}, None))

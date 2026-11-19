@@ -579,11 +579,18 @@ class DailyTimetableRouteTests(TestCase):
             self.assertNotIn(("3 Bestari", "Mathematics (DLP)"), items)
 
     def test_year5_dlp_records_both_subjects_with_their_own_limits(self):
+        self._assert_dlp_completion(5, {"SCIENCE_DLP": (60, 10), "MATH_DLP": (61, 8)})
+
+    def test_year6_dlp_records_both_subjects_with_their_own_limits(self):
+        self._assert_dlp_completion(6, {"SCIENCE_DLP": (52, 9), "MATH_DLP": (46, 8)})
+
+    def _assert_dlp_completion(self, year, limits):
         target = date(2027, 1, 11)
-        rows = [("5 Bestari", "Science (DLP)", "SCIENCE_DLP"),
-                ("5 Amanah", "Sains (DLP)", "SCIENCE_DLP"),
-                ("5 Bestari", "Mathematics (DLP)", "MATH_DLP"),
-                ("5 Amanah", "Matematik (DLP)", "MATH_DLP")]
+        bestari, amanah = f"{year} Bestari", f"{year} Amanah"
+        rows = [(bestari, "Science (DLP)", "SCIENCE_DLP"),
+                (amanah, "Sains (DLP)", "SCIENCE_DLP"),
+                (bestari, "Mathematics (DLP)", "MATH_DLP"),
+                (amanah, "Matematik (DLP)", "MATH_DLP")]
         schedule = {"entries": [
             {"day": "Isnin", "start": f"{8 + i:02}:00", "end": f"{8 + i:02}:30",
              "class_name": cls, "subject": subject}
@@ -606,80 +613,42 @@ class DailyTimetableRouteTests(TestCase):
             headers = {"Origin": "https://localhost"}
             for slot in slots:
                 self.assertTrue(slot["can_prepare"])
-                self.assertEqual(slot["curriculum"], "dlp")
+                self.assertEqual((slot["year"], slot["curriculum"]), (year, "dlp"))
                 self.assertIsNone(slot["rpt_suggestion"])
                 self.assertEqual(slot["progress"], {"": {"completed": None, "previous": None}})
                 selection = {key: slot[key] for key in ("start", "class_name", "subject_code")}
                 body = {**selection, "date": target.isoformat(), "component": ""}
                 subject = slot["subject_code"]
-                lesson, review, other_subject = ((60, 110, "MATH_DLP") if subject == "SCIENCE_DLP"
-                                                  else (61, 108, "SCIENCE_DLP"))
-                for number in (lesson, review, None):
-                    token = None if number is None else signer.dumps([123, 5, subject, "", number])
+                lesson, review = limits[subject]
+                review_number = 100 + review
+                other_subject = "MATH_DLP" if subject == "SCIENCE_DLP" else "SCIENCE_DLP"
+                for number in (lesson, review_number, None):
+                    token = None if number is None else signer.dumps([123, year, subject, "", number])
                     reply = self.client.post(path, headers=headers, json={**body, "token": token})
                     self.assertEqual(reply.status_code, 200, reply.json)
                     self.assertEqual((save.call_args.args[3]["subject_code"], save.call_args.args[-1]),
                                      (subject, number))
-                for claim in ([123, 5, subject, "", lesson + 1], [123, 5, subject, "", review + 1],
-                              [123, 4, subject, "", review], [123, 5, other_subject, "", 108],
-                              [456, 5, subject, "", review]):
+                for claim in ([123, year, subject, "", lesson + 1], [123, year, subject, "", review_number + 1],
+                              [123, year - 1, subject, "", review_number], [123, year, other_subject, "", 108],
+                              [456, year, subject, "", review_number]):
                     reply = self.client.post(path, headers=headers, json={**body, "token": signer.dumps(claim)})
                     self.assertEqual(reply.status_code, 400)
             self.assertEqual(save.call_count, 12)
             summary = {
-                ("5 bestari", "SCIENCE_DLP", ""): {
-                    "completed": 2, "last_number": 110, "last_date": target.isoformat(),
+                (bestari.casefold(), "SCIENCE_DLP", ""): {
+                    "completed": 2, "last_number": 100 + limits["SCIENCE_DLP"][1], "last_date": target.isoformat(),
                 },
-                ("5 bestari", "MATH_DLP", ""): {
-                    "completed": 1, "last_number": 108, "last_date": target.isoformat(),
+                (bestari.casefold(), "MATH_DLP", ""): {
+                    "completed": 1, "last_number": 100 + limits["MATH_DLP"][1], "last_date": target.isoformat(),
                 },
             }
             with patch("web.rph_hari_ini_web.read_progress_summary", return_value=summary):
                 overview = self.client.get("/api/web/rph/hari-ini/progress")
             self.assertEqual(overview.status_code, 200)
             items = {(row["class_name"], row["subject"]): row for row in overview.json["entries"]}
-            self.assertEqual(items["5 Bestari", "Science (DLP)"]["last_label"], "Review 10")
-            self.assertEqual(items["5 Bestari", "Mathematics (DLP)"]["last_label"], "Review 08")
-            self.assertEqual(items["5 Amanah", "Science (DLP)"]["completed"], 0)
-
-    def test_year6_dlp_day_and_week_use_their_own_catalogues(self):
-        target = date(2027, 1, 11)
-        subjects = [("Science (DLP)", "SCIENCE_DLP"), ("Sains (DLP)", "SCIENCE_DLP"),
-                    ("Mathematics (DLP)", "MATH_DLP"), ("Matematik (DLP)", "MATH_DLP")]
-        schedule = {"entries": [
-            {"day": "Isnin", "start": f"{8 + i:02}:00", "end": f"{8 + i:02}:30",
-             "class_name": "6 Bestari", "subject": subject}
-            for i, (subject, _) in enumerate(subjects)
-        ]}
-        with ExitStack() as stack:
-            for name, value in {"_auth": (self.conf, 123, None), "get_schedule": schedule,
-                                "get_profile": {"state_name": "Pahang"}, "malaysia_today": target,
-                                "read_progress": [], "read_progress_summary": {}}.items():
-                stack.enter_context(patch("web.rph_hari_ini_web." + name, return_value=value))
-            save = stack.enter_context(patch("web.rph_hari_ini_web.save_completion"))
-            day = self.client.get("/api/web/rph/hari-ini")
-            week = self.client.get("/api/web/rph/minggu-ini")
-            self.assertEqual((day.status_code, week.status_code), (200, 200))
-            slots = day.json["entries"]
-            self.assertEqual(slots, week.json["days"][0]["entries"])
-            self.assertEqual([slot["subject_code"] for slot in slots], [code for _, code in subjects])
-            for slot in slots:
-                self.assertTrue(slot["can_prepare"])
-                self.assertEqual((slot["year"], slot["curriculum"]), (6, "dlp"))
-                self.assertNotIn("progress", slot)
-                selection = {key: slot[key] for key in ("start", "class_name", "subject_code")}
-                token = lesson_signer(self.conf).dumps([123, 6, slot["subject_code"], "", 108])
-                for action in (token, None):
-                    result = self.client.post("/api/web/rph/hari-ini/completion",
-                                              headers={"Origin": "https://localhost"}, json={
-                        **selection, "date": target.isoformat(), "component": "", "token": action,
-                    })
-                    self.assertEqual(result.status_code, 400)
-                    self.assertIn("Rekod Selesai PdP belum tersedia", result.json["error"])
-            save.assert_not_called()
-            overview = self.client.get("/api/web/rph/hari-ini/progress")
-            self.assertEqual(overview.status_code, 200)
-            self.assertEqual(overview.json["entries"], [])
+            for label, code in (("Science (DLP)", "SCIENCE_DLP"), ("Mathematics (DLP)", "MATH_DLP")):
+                self.assertEqual(items[bestari, label]["last_label"], f"Review {limits[code][1]:02}")
+                self.assertEqual(items[amanah, label]["completed"], 0)
 
     def test_invalid_date_and_unknown_params_fail_closed(self):
         with patch("web.rph_hari_ini_web._auth",return_value=(self.conf,123,None)):
