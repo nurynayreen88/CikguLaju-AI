@@ -14,6 +14,7 @@ from dlp_year2_rph import _pdf, _word
 
 ROOT = Path(__file__).resolve().parents[3]
 DATA = Path(__file__).with_name("science_2027.json")
+STANDARD_DESCRIPTIONS = Path(__file__).with_name("science_standard_descriptions.json")
 RPT_NAME = "CikguLaju_RPT_DLP_2027_Science_Year_5"
 RPT = ROOT / "rpt_2027" / "dlp" / f"{RPT_NAME}.docx"
 DURATIONS = {30: (3, 13, 11, 3), 60: (5, 32, 18, 5)}
@@ -50,6 +51,7 @@ def apply_corrections(row, heading, label, objective, reference, correction):
 
 def load_plans():
     data = json.loads(DATA.read_text(encoding="utf-8"))
+    descriptions = json.loads(STANDARD_DESCRIPTIONS.read_text(encoding="utf-8"))
     if sha256(RPT.read_bytes()).hexdigest() != data["rpt_sha256"]:
         raise ValueError("Science Year 5 RPT changed. Verify the source before exporting.")
     rpt = Document(RPT)
@@ -102,6 +104,7 @@ def load_plans():
             (f"{name} · {time} min", teacher, pupils)
             for (name, teacher, pupils), time in zip(steps, DURATIONS[minutes], strict=True)
         ]
+        content_codes = tuple(dict.fromkeys(code.rsplit(".", 1)[0] for code in codes))
         plans.append({
             "id": plan_id,
             "title": correction.get("title", title),
@@ -109,6 +112,12 @@ def load_plans():
             "label": f"{label} · {duration}",
             "dates": dates.replace("\n", " · "),
             "standards": standards,
+            "content_standards": " · ".join(
+                f"{code} {descriptions['cs'][code]}" for code in content_codes
+            ),
+            "learning_standards": " · ".join(
+                f"{code} {descriptions['ls'][code]}" for code in codes
+            ),
             "reference": reference.replace("TB ", "Textbook ", 1),
             "objective": correction.get("objective", objective),
             "materials": activity["materials"],
@@ -123,8 +132,13 @@ def load_plans():
         raise ValueError("Activity or review IDs differ from the RPT")
     if not data["schedule_corrections"].keys() <= ids:
         raise ValueError("An RPT correction has no matching session")
-    if (lesson_count, review_count, len(taught), len(set().union(*taught.values()))) != (60, 10, 10, 95):
+    learning_codes = set().union(*taught.values())
+    if (lesson_count, review_count, len(taught), len(learning_codes)) != (60, 10, 10, 95):
         raise ValueError("Expected 60 lessons, 10 reviews, 10 units and 95 learning standards")
+    if (set(descriptions["ls"]) != learning_codes
+            or set(descriptions["cs"]) != {code.rsplit(".", 1)[0] for code in learning_codes}
+            or any(not text.strip() for group in descriptions.values() for text in group.values())):
+        raise ValueError("Incomplete Science Year 5 DLP standard descriptions")
     if sum(plan["minutes"] for plan in plans) != 3840:
         raise ValueError("Year 5 Science must have 64 hours")
     return rpt, plans
@@ -142,7 +156,8 @@ def render_plan(stream, plan, renderer, *, teacher=None):
         ("Lesson / PdP", plan["label"]),
         ("RPT date ranges", plan["dates"]),
         ("Class / date / time", session),
-        ("Standards", plan["standards"]),
+        ("Content Standards", plan["content_standards"]),
+        ("Learning Standards", plan["learning_standards"]),
         ("Book reference", plan["reference"]),
         ("Learning objective", plan["objective"]),
         ("Materials", plan["materials"]),
