@@ -25,6 +25,10 @@ UNIT = re.compile(r"u(?:0[1-9]|[1-9][0-9])|x[a-f0-9]{12}")
 PDP = re.compile(r"0[0-9][0-9]")
 
 
+def _reviewed_arabic_selection(year, subject, unit, lesson):
+    return (year, subject, unit, lesson) == (2, "ARAB", "u01", "001")
+
+
 def _check(year, subject, unit=None, lesson=None):
     if type(year) is not int or year not in range(2, 7) or subject not in SUBJECTS:
         raise ValueError("Unsupported draft subject")
@@ -63,7 +67,11 @@ def _options(endpoint,args,*,opener=None):
         raise NativeRPHUnavailable("Draft source signature unavailable")
     items=out.get("items")
     if (not isinstance(items,list) or not 1<=len(items)<=100
-            or any(not isinstance(x,dict) or x.get("status")!="DRAF"
+            or any(not isinstance(x,dict)
+                   or (x.get("status") != "DRAF"
+                       and not (x.get("status") == "READY" and endpoint == "lessons"
+                                and _reviewed_arabic_selection(
+                                    args["year"], args["subject"], args["unit"], x.get("value"))))
                    or not isinstance(x.get("value"),str) or not isinstance(x.get("label"),str)
                    or not 4<=len(x["label"])<=360 for x in items)
             or len({x["value"] for x in items})!=len(items)):
@@ -87,8 +95,9 @@ def list_draft_lessons(year,subject,unit,*,opener=None):
             _check(year,subject,unit,item["value"])
         except ValueError:
             raise NativeRPHUnavailable("Unverified draft PdP token") from None
-        if not item["label"].startswith("PdP ") or "(DRAF)" not in item["label"]:
-            raise NativeRPHUnavailable("Draft PdP label required")
+        if (not item["label"].startswith("PdP ")
+                or ("(DRAF)" in item["label"]) != (item["status"] == "DRAF")):
+            raise NativeRPHUnavailable("Invalid source PdP label")
         fmts=item.get("formats")
         if not isinstance(fmts,list) or not fmts or not set(fmts).issubset(MIMES):
             raise NativeRPHUnavailable("Invalid draft RPH formats")
@@ -101,7 +110,10 @@ def draft_available(year,subject,unit,lesson,*,opener=None):
     _check(year,subject,unit,lesson)
     data=_read("availability",{"year":year,"subject":subject,
                                "unit":unit,"lesson":lesson},opener=opener)
-    if (data.get("available") is not True or data.get("status")!="DRAF"
+    status = data.get("status")
+    if (data.get("available") is not True
+            or (status != "DRAF" and not (status == "READY"
+                    and _reviewed_arabic_selection(year, subject, unit, lesson)))
             or data.get("generator")!="telegram-native"):
         raise NativeRPHUnavailable("Draft RPH source not available")
     fmts=data.get("formats")
@@ -109,7 +121,7 @@ def draft_available(year,subject,unit,lesson,*,opener=None):
         raise NativeRPHUnavailable("No validated formats")
     if subject=="ARAB" and fmts!=["word"]:
         raise NativeRPHUnavailable("Arabic PDF not certified")
-    return tuple(fmts)
+    return tuple(fmts), status
 
 
 def request_draft_rph(selection, fmt, *, opener=None):

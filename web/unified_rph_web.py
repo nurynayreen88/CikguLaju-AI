@@ -788,7 +788,7 @@ def create_blueprint():
                 draft_available, NativeRPHUnavailable,
             )
             try:
-                formats = draft_available(year, subject, unit, token)
+                formats, status = draft_available(year, subject, unit, token)
             except (NativeRPHUnavailable, ValueError):
                 return None, (jsonify({
                     "error":"RPH DRAF belum boleh disahkan dengan sumber asal Telegram.",
@@ -798,7 +798,7 @@ def create_blueprint():
                 "source":"telegram-provisional-subjects-2027",
                 "year":year,"subject":subject,"unit":unit,
                 "lesson":token,"teacher":teacher,
-                "status":"DRAF UNTUK SEMAKAN GURU",
+                "status":"READY" if status == "READY" else "DRAF UNTUK SEMAKAN GURU",
                 "formats":list(formats),
             },None
         result = verified_preview(year, subject, unit, token, component)

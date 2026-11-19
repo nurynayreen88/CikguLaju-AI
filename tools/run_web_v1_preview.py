@@ -267,9 +267,13 @@ def options():
                                 if any(row.get("value")==draft_code for row in items):
                                     continue
                                 try:
-                                    if list_draft_units(year,draft_code):
+                                    units = list_draft_units(year,draft_code)
+                                    if units:
+                                        has_ready_arabic = (year == 2 and draft_code == "ARAB"
+                                            and any(unit["value"] == "u01" and unit.get("has_ready_lessons") is True
+                                                    for unit in units))
                                         items.append({"value":draft_code,
-                                                      "label":draft_label})
+                                                      "label":"Bahasa Arab" if has_ready_arabic else draft_label})
                                 except (NativeRPHUnavailable,ValueError):
                                     pass  # Never show an unavailable Telegram source.
                         return jsonify([row for row in items if row.get("value") not in {sjkc.SUBJECT, sjkt.SUBJECT}])
