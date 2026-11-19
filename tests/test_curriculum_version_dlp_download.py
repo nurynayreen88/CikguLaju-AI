@@ -66,7 +66,9 @@ class DlpDownloadTests(unittest.TestCase):
         fields = {left.text: right.text for left, right in (row.cells for row in doc.tables[0].rows)}
         self.assertIn("2 Bestari", fields["Class / date / time"])
         self.assertIn("LS 10.1.6", fields["Standards"])
-        self.assertEqual(doc.tables[-1].cell(0, 1).text, self.teacher["reflection"])
+        reflection = doc.tables[-1].cell(0, 0)
+        self.assertEqual(reflection.text.splitlines(), ["Reflection", self.teacher["reflection"]])
+        self.assertEqual(reflection._tc.grid_span, 2)
         self.assertEqual(len(doc.tables[1].rows), 5)
         pdf = self.download("pdf")
         self.assertEqual(pdf.status_code, 200)
