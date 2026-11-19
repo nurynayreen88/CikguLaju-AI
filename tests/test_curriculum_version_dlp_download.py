@@ -98,9 +98,11 @@ class DlpDownloadTests(unittest.TestCase):
                               .replace("\n", " · "))
                 self.assertEqual(references, lesson["references"])
                 word = Document(BytesIO(render("SCIENCE_DLP", unit, lesson, "word", self.teacher)))
-                self.assertEqual(word.tables[0].cell(1, 1).text, f"Lesson {number:02d} · {minutes} min")
+                self.assertEqual(word.tables[0].cell(1, 1).text, f"Lesson {number:02d}")
                 activities = word.tables[1].rows[1:]
-                self.assertEqual(sum(int(r.cells[0].text.split()[-2]) for r in activities), minutes)
+                self.assertEqual(science_rpt_lessons()[lesson["id"]]["minutes"], minutes)
+                self.assertEqual([r.cells[0].text for r in activities],
+                                 [phase[0].rsplit(" · ", 1)[0] for phase in lesson["phases"]])
                 self.assertEqual(
                     [[cell.text for cell in r.cells[1:]] for r in activities],
                     [phase[1:] for phase in lesson["phases"]],
@@ -123,7 +125,7 @@ class DlpDownloadTests(unittest.TestCase):
                 self.assertEqual(schedule[lesson["id"]], {"number": number, "minutes": 60})
                 doc = Document(BytesIO(render("MATH_DLP", unit, lesson, "word", self.teacher)))
                 fields = {a.text: b.text for a, b in (row.cells for row in doc.tables[0].rows)}
-                self.assertEqual(fields["Lesson / PdP"], f"Lesson {number:02d} · 60 min")
+                self.assertEqual(fields["Lesson / PdP"], f"Lesson {number:02d}")
 
     def test_year_two_catalogues_download_all_lessons_and_reviews(self):
         for slug, subject, units_count, count in (
@@ -143,8 +145,7 @@ class DlpDownloadTests(unittest.TestCase):
                         selection = {"year": 2, "subject": subject, "unit": unit["id"],
                                      "lesson": item["id"]}
                         _, plan = BY_SUBJECT[subject].resolve_download(unit["id"], item["id"])
-                        teacher = self.teacher | {"time": ""} if subject == "MATH_DLP" else self.teacher
-                        word = self.download("word", selection=selection, teacher=teacher)
+                        word = self.download("word", selection=selection)
                         self.assertEqual(word.status_code, 200)
                         doc = Document(BytesIO(word.data))
                         fields = {a.text: b.text for a, b in (row.cells for row in doc.tables[0].rows)}
@@ -152,26 +153,27 @@ class DlpDownloadTests(unittest.TestCase):
                         self.assertIn("2 Bestari", fields[teacher_field])
                         self.assertEqual(fields["Learning objective"], plan["objective"])
                         self.assertEqual(fields["RPT 2027 dates"], " · ".join(plan["rpt_dates"]))
-                        self.assertEqual(fields["Lesson / PdP"], f"{item['label']} · {item['minutes']} min")
+                        self.assertEqual(fields["Lesson / PdP"], item["label"])
                         table = doc.tables[1]
                         if subject == "MATH_DLP":
                             self.assertEqual(len(table.rows), 4)
                             self.assertEqual([cell.text for cell in table.rows[0].cells],
-                                             ["Phase / Time", "Teaching and Learning Activities", "Notes"])
+                                             ["Phase", "Teaching and Learning Activities", "Notes"])
                             headings = [run.text for run in table.cell(2, 1).paragraphs[0].runs
                                         if run.bold]
                             self.assertEqual(len(headings), len(plan["phases"]) - 2)
-                            timed = [table.cell(1, 0).text, *headings, table.cell(3, 0).text]
-                            minutes = sum(int(re.search(r"\((\d+) min\)$", phase)[1]) for phase in timed)
+                            phase_names = [table.cell(1, 0).text, *headings, table.cell(3, 0).text]
+                            self.assertEqual(fields["Time"], self.teacher["time"])
                             activity_text = "\n".join(row.cells[1].text for row in table.rows[1:])
                             for _, teacher_action, pupil_action in plan["phases"]:
                                 self.assertIn(f"Teacher: {teacher_action}\nPupils: {pupil_action}",
                                               activity_text)
                         else:
                             self.assertEqual(len(table.rows), 5)
-                            minutes = sum(int(row.cells[0].text.split()[-2]) for row in table.rows[1:])
-                        self.assertEqual(minutes, item["minutes"])
-                        pdf = self.download("pdf", selection=selection, teacher=teacher)
+                            phase_names = [row.cells[0].text for row in table.rows[1:]]
+                        for name in phase_names:
+                            self.assertNotRegex(name, r"\d+ min(?:it)?\b")
+                        pdf = self.download("pdf", selection=selection)
                         self.assertEqual(pdf.status_code, 200)
                         page, = PdfReader(BytesIO(pdf.data)).pages
                         self.assertAlmostEqual(float(page.mediabox.width), 595.28, delta=1)
