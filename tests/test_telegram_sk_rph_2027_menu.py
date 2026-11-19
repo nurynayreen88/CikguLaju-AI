@@ -35,6 +35,7 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
             _telegram_delivery_ok_v25279=lambda result: result is True,
             _consume_free_after_success_v25282=self._debit,
             _lesson_to_class_v2439=lambda cid: "existing class picker",
+            _temporary_auto_pack_v2386=lambda cid: "existing material picker",
             CIKGULAJU_TELEGRAM_SPECIAL_RPH_MENU_ACTIVE=True,
             quick=lambda cid: None,
         )
@@ -139,6 +140,49 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         self.click(next_word)
         self.assertEqual(len(self.documents), 2)
         self.assertEqual(self.credits, 1)
+
+    def test_legacy_ratio_choices_open_verified_unit_without_charging(self):
+        for number in range(79, 85):
+            with self.subTest(number=number):
+                state = {
+                    "subject": "Matematik",
+                    "year": "Tahun 6",
+                    "pdp_sequence_code": f"MT6-PDP-{number:03d}",
+                }
+                self.runtime.state[123] = state
+                for result in (self.runtime._lesson_to_class_v2439(123),
+                               self.runtime._temporary_auto_pack_v2386(123),
+                               self.runtime._continue_after_rph_time(123, state),
+                               self.click("matsubmit2528")):
+                    self.assertIn("sk27:unit:mt6:07", self.buttons(result))
+                menu = self.buttons(self.click("sk27:unit:mt6:07"))
+                self.assertIn("sk27:pick:mt6:07:SK27-MATH-Y6-L097", menu)
+                self.assertNotIn(f"sk27:pick:mt6:07:{state['pdp_sequence_code']}", menu)
+        self.assertEqual(self.documents, [])
+        self.assertEqual(self.credits, 0)
+
+        self.assertEqual(self.click("sk27:pick:mt6:07:SK27-MATH-Y6-L097"), "existing class picker")
+        state = self.runtime.state[123]
+        state.update(rph_class="Bestari", rph_date="18/10/2027", rph_time="08:00 - 09:00",
+                     rph_students="32")
+        word, pdf = self.buttons(self.runtime._continue_after_rph_time(123, state))[:2]
+        self.click(word)
+        self.click(pdf)
+        doc = Document(BytesIO(self.documents[0][1]))
+        fields = {row.cells[0].text: row.cells[1].text for row in doc.tables[0].rows}
+        self.assertIn("SP 7.2.1", fields["SK / SP"])
+        self.assertEqual(len(PdfReader(BytesIO(self.documents[1][1])).pages), 1)
+        self.assertEqual(self.credits, 1)
+
+        for subject, year, code in (("Matematik", "Tahun 6", "MT6-PDP-085"),
+                                    ("Matematik", "Tahun 5", "MT6-PDP-079"),
+                                    ("Sains", "Tahun 6", "MT6-PDP-079")):
+            state = {"subject": subject, "year": year, "pdp_sequence_code": code}
+            self.runtime.state[123] = state
+            self.assertEqual(self.runtime._lesson_to_class_v2439(123), "existing class picker")
+            self.assertEqual(self.runtime._temporary_auto_pack_v2386(123), "existing material picker")
+            self.assertEqual(self.runtime._continue_after_rph_time(123, state), "legacy materials")
+            self.assertEqual(self.click("matsubmit2528"), ("legacy", "matsubmit2528"))
 
     def test_year_four_preserves_grouped_standards_and_thirty_minute_plan(self):
         app = Flask(__name__)

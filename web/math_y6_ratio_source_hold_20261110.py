@@ -1,14 +1,11 @@
-"""Protect native Web Mathematics Year 6 downloads from known false SK/SP.
+"""Identify legacy Mathematics Year 6 selections with conflicting SK/SP.
 
 Exact legacy Telegram source identities were audited against the September
 2021 KPM KSSR DSKP Mathematics Year 6 p.56: 7.2 Nisbah, 7.3 Kadaran,
 7.4 Penyelesaian masalah. 8.x covers data/probability, not ratio.
 
-This module does NOT correct SK/SP by guess, edit the primary database,
-affect Telegram's direct bot flow, touch credits, or release academic drafts.
-Only the six already-audited sequence IDs are held until explicit academic
-signoff. Changing the codes alone does NOT automatically release an RPH:
-objectives, worked exercises and book references must also be verified.
+Only the six audited legacy sequence IDs are held. The 2027 plans carry
+their own lesson codes and independently reviewed SK/SP and activities.
 """
 from __future__ import annotations
 
@@ -24,6 +21,13 @@ _BAD_SP_SETS = {
     "MT6-PDP-083": frozenset({"8.1.1", "8.2.1"}),          # Aplikasi
     "MT6-PDP-084": frozenset({"8.3.1"}),                  # Bukan rutin
 }
+
+
+def held_math_y6_ratio_identity(year, subject, pdp_code):
+    return (type(year) is int and year == 6 and subject == "MATH"
+            and isinstance(pdp_code, str) and pdp_code in _BAD_SP_SETS)
+
+
 def held_math_y6_ratio_source(year, subject, pdp_code, rows):
     """True for the six confirmed problematic Year 6 lesson identities.
 
@@ -32,9 +36,7 @@ def held_math_y6_ratio_source(year, subject, pdp_code, rows):
     content, objective, activities, PBD and textbook must pass signoff.
     Explicitly un-hold a code only in a reviewed future PR.
     """
-    if type(year) is not int or year != 6 or subject != "MATH":
-        return False
-    if pdp_code not in _BAD_SP_SETS or not isinstance(rows, list) or not rows:
+    if not held_math_y6_ratio_identity(year, subject, pdp_code) or not isinstance(rows, list) or not rows:
         return False
     return all(
         isinstance(row, dict)
