@@ -245,12 +245,15 @@ def _cell_lines(value, bold):
 
 def _word(output, heading, details, activities, reflection, *, compact=False,
           mathematics=False, teacher=None):
+    from copy import deepcopy
+
     from docx import Document
     from docx.enum.table import WD_TABLE_ALIGNMENT
     from docx.enum.text import WD_ALIGN_PARAGRAPH
     from docx.oxml import OxmlElement
     from docx.oxml.ns import qn
     from docx.shared import Mm, Pt, RGBColor
+    from web.rph_document_style import word_gap
 
     details, activities = _rph_display_rows(details, activities)
     if mathematics:
@@ -276,23 +279,40 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
         normal.paragraph_format.space_after = Pt(0)
         normal.paragraph_format.line_spacing = 1.0
     title = doc.styles["Title"]
-    title.font.name, title.font.size = "Calibri", Pt(20)
+    title.font.name, title.font.size = "Calibri", Pt(15)
     title.font.bold, title.font.color.rgb = True, RGBColor(0, 0, 0)
-    title.paragraph_format.space_after = Pt(3)
+    title.paragraph_format.space_before = Pt(0)
+    title.paragraph_format.line_spacing = 1.0
     properties = title.element.get_or_add_pPr()
     border = properties.find(qn("w:pBdr"))
     if border is not None:
         properties.remove(border)
     title_paragraph = doc.add_paragraph(heading[0], "Title")
+    opening = [title_paragraph]
     if mathematics:
-        title_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        title.font.name, title.font.size = "Arial", Pt(12)
-        title_paragraph.paragraph_format.space_after = Pt(5)
+        title.font.name, title.font.size = "Arial", Pt(14)
     else:
-        doc.add_paragraph(heading[1])
+        opening.append(doc.add_paragraph(heading[1]))
         topic = doc.add_paragraph()
         topic.add_run(heading[2]).bold = True
-        topic.paragraph_format.space_after = Pt(8)
+        opening.append(topic)
+
+    border = OxmlElement("w:pBdr")
+    for edge in ("top", "left", "bottom", "right"):
+        line = OxmlElement(f"w:{edge}")
+        line.set(qn("w:val"), "single")
+        line.set(qn("w:sz"), "6")
+        line.set(qn("w:space"), "0")
+        line.set(qn("w:color"), "000000")
+        border.append(line)
+    for index, paragraph in enumerate(opening):
+        paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        layout = paragraph.paragraph_format
+        layout.left_indent = layout.right_indent = Mm(3 if mathematics else 0)
+        layout.space_before = Pt(4 if index == 0 else 0)
+        layout.space_after = Pt(4 if index == len(opening) - 1 else 0)
+        layout.keep_with_next = True
+        paragraph._p.get_or_add_pPr().insert_element_before(deepcopy(border), "w:spacing", "w:ind", "w:jc")
 
     def table(rows, widths, header=False):
         element = doc.add_table(rows=0, cols=len(widths))
@@ -307,17 +327,13 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
             for j, (cell, value, width) in enumerate(zip(line.cells, row, widths)):
                 cell.width = Mm(width)
                 bold = j == 0 or (header and i == 0)
-                if bold and not mathematics:
-                    shading = OxmlElement("w:shd")
-                    shading.set(qn("w:fill"), "E8F0F2")
-                    cell._tc.get_or_add_tcPr().append(shading)
                 paragraph = cell.paragraphs[0]
                 padding = 1 if mathematics else (2 if compact else 3)
                 paragraph.paragraph_format.space_before = Pt(padding)
                 paragraph.paragraph_format.space_after = Pt(padding)
+                if header and i == 0:
+                    paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
                 if mathematics:
-                    if header and i == 0:
-                        paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
                     for index, (line, strong) in enumerate(_cell_lines(value, bold)):
                         if index:
                             paragraph.add_run().add_break()
@@ -325,17 +341,13 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
                 else:
                     paragraph.add_run(value).bold = bold
 
-    def gap():
-        paragraph = doc.add_paragraph()
-        paragraph.paragraph_format.space_after = Pt(0)
-        paragraph.paragraph_format.line_spacing = Pt(8)
-
-    fields_width = (48, 124) if mathematics else (36, 146)
-    steps_width = (32, 112, 28) if mathematics else (36, 73, 73)
+    fields_width = (48, 134) if mathematics else (36, 146)
+    steps_width = (32, 122, 28) if mathematics else (36, 73, 73)
+    word_gap(doc)
     table(details, fields_width)
-    gap()
+    word_gap(doc)
     table(activities, steps_width, header=True)
-    gap()
+    word_gap(doc)
     table(reflection, fields_width)
     if mathematics:
         footer = section.footer.paragraphs[0]
@@ -347,24 +359,6 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
     doc.save(output)
 
 
-@lru_cache(maxsize=1)
-def _pdf_fonts():
-    from reportlab import rl_config
-    from reportlab.pdfbase.pdfmetrics import registerFont
-    from reportlab.pdfbase.ttfonts import TTFont
-
-    paths = (
-        Path("/usr/share/fonts/truetype/dejavu"),
-        *(Path(directory) for directory in rl_config.TTFSearchPath),
-    )
-    for directory in paths:
-        if (directory / "DejaVuSans.ttf").is_file() and (directory / "DejaVuSans-Bold.ttf").is_file():
-            registerFont(TTFont("DLP-Regular", str(directory / "DejaVuSans.ttf")))
-            registerFont(TTFont("DLP-Bold", str(directory / "DejaVuSans-Bold.ttf")))
-            return "DLP-Regular", "DLP-Bold"
-    return "Helvetica", "Helvetica-Bold"
-
-
 def _pdf(output, heading, details, activities, reflection, *, compact=False,
          mathematics=False, teacher=None):
     from reportlab.lib import colors
@@ -373,57 +367,40 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
     from reportlab.lib.styles import ParagraphStyle
     from reportlab.lib.units import mm
     from reportlab.platypus import BaseDocTemplate, Frame, KeepInFrame, PageTemplate, Paragraph, Spacer, Table
+    from web.rph_document_style import pdf_box_style, pdf_fonts
 
     details, activities = _rph_display_rows(details, activities)
     if mathematics:
         heading, details, activities = _math_layout(heading, details, activities, teacher)
-    fallback_regular, fallback_bold = _pdf_fonts()
-    regular, bold = ("Helvetica", "Helvetica-Bold") if mathematics else (fallback_regular, fallback_bold)
-    font_size = 8.25 if mathematics else 9
+    regular, bold, _ = pdf_fonts()
+    font_size = 9 if mathematics else 9.5
     leading = (9.35 if compact else 9.9) if mathematics else (11 if compact else 12)
     body = ParagraphStyle("DLP body", fontName=regular, fontSize=font_size, leading=leading)
     label = ParagraphStyle("DLP label", parent=body, fontName=bold)
-    title = ParagraphStyle("DLP title", parent=label, fontSize=19, leading=23, spaceAfter=3)
-    topic = ParagraphStyle("DLP topic", parent=label, fontSize=12, leading=16, spaceBefore=2)
-    if mathematics:
-        title.fontSize, title.leading, title.alignment = 12, 15, TA_CENTER
+    table_heading = ParagraphStyle("DLP table heading", parent=label, alignment=TA_CENTER)
+    title = ParagraphStyle("DLP title", parent=table_heading, fontSize=14 if mathematics else 15, leading=17)
+    subtitle = ParagraphStyle("DLP subtitle", parent=body, alignment=TA_CENTER)
+
     def paragraph(value, style):
         lines = _cell_lines(value, False)
         formatted = []
         for line, strong in lines:
-            font = bold if strong else style.fontName
-            if mathematics and fallback_regular != "Helvetica" and not line.isascii():
-                try:
-                    line.encode("cp1252")
-                except UnicodeEncodeError:
-                    font = fallback_bold if strong or style.fontName == bold else fallback_regular
-            elif regular == "Helvetica":
-                line = line.replace("ℓ", "L").replace("−", "–")
             line = escape(line)
-            formatted.append(f'<font name="{font}">{line}</font>' if font != style.fontName else line)
+            formatted.append(f'<b>{line}</b>' if strong else line)
         return Paragraph("<br/>".join(formatted), style)
 
     def table(rows, widths, header=False):
-        cells = [[paragraph(value, label if j == 0 or (header and i == 0) else body)
-                  for j, value in enumerate(row)] for i, row in enumerate(rows)]
+        cells = [[paragraph(row[0], label), *(paragraph(value, body) for value in row[1:])]
+                 for row in rows]
+        if header:
+            cells[0] = [paragraph(value, table_heading) for value in rows[0]]
         result = Table(cells, colWidths=[width * mm for width in widths], repeatRows=int(header))
         padding = 2.5 if mathematics else (3 if compact else 4)
-        commands = [
-            ("GRID", (0, 0), (-1, -1), 0.5 if mathematics else 0.45,
-             colors.black if mathematics else colors.HexColor("#859298")),
-            ("VALIGN", (0, 0), (-1, -1), "TOP"),
-            ("TOPPADDING", (0, 0), (-1, -1), padding),
-            ("BOTTOMPADDING", (0, 0), (-1, -1), padding),
-        ]
-        if not mathematics:
-            commands.append(("BACKGROUND", (0, 0), (0, -1), colors.HexColor("#E8F0F2")))
-            if header:
-                commands.append(("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#E8F0F2")))
-        result.setStyle(commands)
+        result.setStyle(pdf_box_style(padding))
         return result
 
     def footer(canvas, document):
-        canvas.setFont("Helvetica", 7.5)
+        canvas.setFont(regular, 7.5)
         canvas.drawCentredString(A4[0] / 2, 5 * mm, f"CikguLaju AI  •  {document.page}")
 
     doc = BaseDocTemplate(output, pagesize=A4, title=f"{heading[0]} · {heading[2]}")
@@ -436,16 +413,21 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
         doc.addPageTemplates(PageTemplate("DLP A4", frames=[frame]))
     opening = [paragraph(heading[0], title)]
     if not mathematics:
-        opening.extend([paragraph(heading[1], body), paragraph(heading[2], topic)])
-    fields_width = (48, 124) if mathematics else (36, 146)
-    steps_width = (32, 112, 28) if mathematics else (36, 73, 73)
+        opening.extend([paragraph(heading[1], subtitle), paragraph(heading[2], table_heading)])
+    title_panel = Table([[opening]], colWidths=[182 * mm], style=[
+        ("BOX", (0, 0), (-1, -1), 0.75, colors.black),
+        ("TOPPADDING", (0, 0), (-1, -1), 4),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
+    ])
+    fields_width = (48, 134) if mathematics else (36, 146)
+    steps_width = (32, 122, 28) if mathematics else (36, 73, 73)
     story = [
-        *opening,
-        Spacer(1, 8),
+        title_panel,
+        Spacer(1, 6),
         table(details, fields_width),
-        Spacer(1, 8),
+        Spacer(1, 6),
         table(activities, steps_width, header=True),
-        Spacer(1, 8),
+        Spacer(1, 6),
         table(reflection, fields_width),
     ]
     if mathematics:
