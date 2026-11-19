@@ -112,6 +112,11 @@ assert.equal(ctx.nativeLessonLabel({label: "Review 08 • Materials Review"}, "S
   "Review 08 • Materials Review");
 assert.equal(ctx.nativeLessonLabel({label: "Review 08 • Materials Review"}, "SCIENCE"), "");
 assert.equal(ctx.nativeLessonLabel({label: "Review 11 • Unknown review"}, "SCIENCE_DLP"), "");
+assert.equal(ctx.lessonPickerLabel("MATH_DLP"), "Lesson");
+assert.equal(ctx.nativeLessonLabel({label: "Review 08 • Data Handling Review",
+  textbook_ref: "Textbook p. 242"}, "MATH_DLP"),
+  "Review 08 • Data Handling Review • Textbook p. 242");
+assert.equal(ctx.nativeLessonLabel({label: "Review 09 • Unknown review"}, "MATH_DLP"), "");
 
 const initialize = source.slice(source.indexOf(" async function initialize("),
   source.indexOf(" function makeChoice("));
@@ -124,13 +129,13 @@ Object.assign(ctx, {
 });
 vm.runInNewContext(initialize, ctx);
 (async () => {
-  for (const [subject_code, curriculum] of [["SCIENCE_DLP", "dlp"], ["SCIENCE", "kssr"]]) {
+  for (const [subject_code, curriculum] of [["SCIENCE_DLP", "dlp"], ["MATH_DLP", "dlp"], ["SCIENCE", "kssr"]]) {
     const choice = {slot: {year: 4, subject_code, curriculum},
       message: {textContent: ""}, ticket: 3};
     await ctx.initialize(choice);
     assert.equal(choice.busy, false);
   }
-  assert.deepEqual(selected, [["SCIENCE_DLP", "subject"], ["SCIENCE", "subject"]]);
+  assert.deepEqual(selected, [["SCIENCE_DLP", "subject"], ["MATH_DLP", "subject"], ["SCIENCE", "subject"]]);
   assert.equal(requested.length, 1);
   assert.equal(requested[0][1], "subjects");
 })().catch(error => { console.error(error); process.exitCode = 1; });

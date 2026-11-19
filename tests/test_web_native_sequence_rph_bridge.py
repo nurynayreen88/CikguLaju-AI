@@ -148,6 +148,8 @@ class WebNativePdPBridgeTests(unittest.TestCase):
         lesson = {"value": "DLP-SCI-Y4-L46", "label": "Lesson 46 Sources of Basic Materials"}
         review = {"value": "DLP-SCI-Y4-R08", "label": "Review 08 Materials Review"}
         invalid = {"value": "DLP-SCI-Y4-R11", "label": "Review 11"}
+        math_lessons = [{"value": "DLP-MAT-Y4-L69", "label": "Lesson 69"},
+                        {"value": "DLP-MAT-Y4-R08", "label": "Review 08"}]
         with (
             patch("web_v1_telegram_auth_routes._config", return_value=config),
             patch("web_v1_sessions.verify_session_ticket", return_value=123),
@@ -176,6 +178,14 @@ class WebNativePdPBridgeTests(unittest.TestCase):
             self.assertEqual([args.args for args in units.call_args_list],
                              [(4, "SCIENCE_DLP"), (4, "MATH_DLP")])
             lessons.assert_called_once_with(4, "SCIENCE_DLP", "08")
+            lessons.return_value = math_lessons
+            response = client.get("/api/options", query_string={
+                **selection, "subject": "MATH_DLP", "kind": "pdp", "unit": "08", "rph_today": "1",
+            })
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.json, math_lessons)
+            self.assertNotIn("completion_token", response.json[0])
+            lessons.assert_called_with(4, "MATH_DLP", "08")
 
     @patch("web.unified_rph_web._has_paid_access", return_value=True)
     @patch("web.unified_rph_web._account", return_value=({"telegram_user_id": 123}, None))

@@ -37,7 +37,8 @@
  const TAGS=["component","theme","unit","topic","lesson"];
  const SOURCE_NAMES={
   BM:"Unit",ENGLISH:"Unit / Topic",PI:"Bidang / Tajuk",
-  MATH:"Bidang / Unit",MATH_SJKC:"Unit",MATH_SJKT:"Unit",SCIENCE:"Tema / Unit",SCIENCE_DLP:"Unit",MORAL:"Unit / Nilai",
+  MATH:"Bidang / Unit",MATH_DLP:"Unit",MATH_SJKC:"Unit",MATH_SJKT:"Unit",
+  SCIENCE:"Tema / Unit",SCIENCE_DLP:"Unit",MORAL:"Unit / Nilai",
   PSV:"Bidang / Unit",PJPK:"Unit / Tajuk",ARAB:"Unit",
   MUZIK:"Unit / Tajuk",SEJARAH:"Unit",RBT:"Unit"
  };
@@ -60,7 +61,7 @@
   return value;
  }
  function lessonPickerLabel(code){
-  return ["ENGLISH","SCIENCE_DLP"].includes(code)?"Lesson":"PdP";
+  return ["ENGLISH","SCIENCE_DLP","MATH_DLP"].includes(code)?"Lesson":"PdP";
  }
  function nativeLessonLabel(item,code){
   let text=String(item.label||"").trim();
@@ -69,7 +70,11 @@
    if(Number.isInteger(n)&&n>0&&n<10000)
     text=lessonPickerLabel(code)+" "+String(n).padStart(3,"0")+" — "+text;
   }
-  const review=code==="SCIENCE_DLP"&&/^Review\s+(?:0[1-9]|10)\s+•\s+\S/.test(text);
+  const reviewLabel={
+   SCIENCE_DLP:/^Review\s+(?:0[1-9]|10)\s+•\s+\S/,
+   MATH_DLP:/^Review\s+0[1-8]\s+•\s+\S/
+  };
+  const review=["SCIENCE_DLP","MATH_DLP"].includes(code)&&reviewLabel[code].test(text);
   if(!review&&!/^(?:Lesson|PdP)\s*0*[1-9][0-9]*(?:\b|\s|[•—–:-])/i.test(text))return "";
   const book=String(item.textbook_ref||item.student_book_ref||"").trim();
   if(book&&!text.includes(book))text+=" • "+book;

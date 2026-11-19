@@ -478,12 +478,13 @@ class DailyTimetableRouteTests(TestCase):
         schedule.assert_called_once_with(self.conf["supabase_url"],self.conf["supabase_key"],123)
         self.assertEqual(reply.headers["Cache-Control"],"no-store, private")
 
-    def test_science_dlp_year4_day_and_week_pick_from_the_native_catalogue(self):
+    def test_dlp_year4_day_and_week_pick_from_the_native_catalogue(self):
         target = date(2027, 1, 11)
         rows = [
             ("4 Bestari", "Science (DLP)"), ("4 Amanah", "Sains (DLP)"),
             ("4 Bestari", "Sains"), ("4 Bestari", "Mathematics (DLP)"),
-            ("3 Bestari", "Science (DLP)"),
+            ("4 Amanah", "Matematik (DLP)"), ("4 Bestari", "Matematik"),
+            ("3 Bestari", "Science (DLP)"), ("5 Bestari", "Mathematics (DLP)"),
         ]
         schedule = {"entries": [
             {"day": "Isnin", "start": f"{8 + i:02}:00", "end": f"{8 + i:02}:30",
@@ -507,7 +508,13 @@ class DailyTimetableRouteTests(TestCase):
                     self.assertIsNone(slot["rpt_suggestion"])
                     self.assertEqual(slot["progress"], {"": {"completed": None, "previous": None}})
                 self.assertEqual(slots[2]["subject_code"], "SCIENCE")
-                for slot in slots[3:]:
+                for slot in slots[3:5]:
+                    self.assertTrue(slot["can_prepare"])
+                    self.assertEqual((slot["subject_code"], slot["curriculum"]), ("MATH_DLP", "dlp"))
+                    self.assertIsNone(slot["rpt_suggestion"])
+                    self.assertNotIn("progress", slot)
+                self.assertEqual(slots[5]["subject_code"], "MATH")
+                for slot in slots[6:]:
                     self.assertFalse(slot["can_prepare"])
                     self.assertIn("rpt_subject", slot)
 
@@ -533,6 +540,12 @@ class DailyTimetableRouteTests(TestCase):
                     self.assertEqual(result.status_code, 400)
             future = self.client.post(path, headers=headers, json={**request, "date": "2027-01-12", "token": None})
             self.assertEqual(future.status_code, 400)
+            for token in (None, signer.dumps([123, 4, "MATH_DLP", "", 8])):
+                math = self.client.post(path, headers=headers, json={
+                    **request, "start": "11:00", "subject_code": "MATH_DLP", "token": token,
+                })
+                self.assertEqual(math.status_code, 400)
+                self.assertIn("Rekod Selesai PdP belum tersedia", math.json["error"])
             self.assertEqual(save.call_count, 3)
 
             summary = {("4 bestari", "SCIENCE_DLP", ""): {
@@ -546,6 +559,7 @@ class DailyTimetableRouteTests(TestCase):
             self.assertEqual(items["4 Bestari", "Science (DLP)"]["completed"], 2)
             self.assertEqual(items["4 Amanah", "Science (DLP)"]["completed"], 0)
             self.assertNotIn(("3 Bestari", "Science (DLP)"), items)
+            self.assertNotIn(("4 Bestari", "Mathematics (DLP)"), items)
 
     def test_invalid_date_and_unknown_params_fail_closed(self):
         with patch("web.rph_hari_ini_web._auth",return_value=(self.conf,123,None)):

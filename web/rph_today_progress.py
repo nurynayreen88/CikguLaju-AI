@@ -11,6 +11,7 @@ from web.teacher_profile_store import NoRedirect, ProfileUnavailable
 
 TABLE = "web_timetable_pdp_completion"
 RPC = "rpc/web_timetable_pdp_progress"
+DLP_MATH = "MATH_DLP"
 DLP_SCIENCE = "SCIENCE_DLP"
 DLP_REVIEW_OFFSET = 100
 DLP_Y4_SESSION = re.compile(r"DLP-SCI-Y4-([LR])([0-9]{2})")
@@ -36,6 +37,8 @@ def dlp_completion_label(number):
 
 
 def lesson_number(item, subject=None):
+    if subject == DLP_MATH:
+        return None
     if subject == DLP_SCIENCE:
         match = DLP_Y4_SESSION.fullmatch(str(item.get("value", "")))
         if not match:
@@ -134,7 +137,8 @@ def attach_progress(day, rows):
         scope = row["class_key"], row["subject_code"], row["component"]
         by_scope.setdefault(scope, {})[(row["pdp_date"], row["start_time"][:5])] = row["sequence_no"]
     for slot in day["entries"]:
-        if not slot["can_prepare"] or slot.get("curriculum") == "sjkc":
+        if (not slot["can_prepare"] or slot.get("curriculum") == "sjkc"
+                or slot["subject_code"] == DLP_MATH):
             continue
         slot_date = day["date"], slot["start"]
         recorded = {}
