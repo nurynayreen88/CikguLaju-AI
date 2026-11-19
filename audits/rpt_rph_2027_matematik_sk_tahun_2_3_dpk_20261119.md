@@ -1,6 +1,6 @@
 # Audit Matematik SK Tahun 2 dan 3 DPK Edisi 3 2027
 
-Set pilihan ini menggunakan Dokumen Penjajaran KSSR (Semakan 2017) Edisi 3 untuk Matematik Tahap I. Perenggan 4 Surat Siaran KPM Bil. 6 Tahun 2024 memberi guru pilihan menggunakan DPK Edisi 3 atau DSKP KSSR (Semakan 2017). Pilihan ini dilabel dalam RPT dan RPH. Pemetaan DSKP yang digunakan oleh Web dan Telegram dikekalkan. [Surat siaran KPM](https://www.moe.gov.my/index.php/surat-siaran-kpm-bil-6-tahun-2024) · [Halaman rasmi DPK Edisi 3](https://sites.google.com/moe-dl.edu.my/dokumenpenjajarankurikulum/home) · [Dokumen Matematik Tahap I](https://drive.google.com/file/d/1vjNjPj_rWoEHugtdtMu1c8pNj7MtLVxn/view).
+Set pilihan ini menggunakan Dokumen Penjajaran KSSR (Semakan 2017) Edisi 3 untuk Matematik Tahap I. Perenggan 4 Surat Siaran KPM Bil. 6 Tahun 2024 menyediakan DPK Edisi 3 sebagai pilihan kepada guru dan membenarkan penggunaannya bersama DSKP (Semakan 2017). Pilihan ini dilabel dalam RPT dan RPH. Pemetaan DSKP yang digunakan oleh Web dan Telegram dikekalkan. [Surat siaran KPM](https://www.moe.gov.my/index.php/surat-siaran-kpm-bil-6-tahun-2024) · [Halaman rasmi DPK Edisi 3](https://sites.google.com/moe-dl.edu.my/dokumenpenjajarankurikulum/home) · [Dokumen Matematik Tahap I](https://drive.google.com/file/d/1vjNjPj_rWoEHugtdtMu1c8pNj7MtLVxn/view).
 
 | Set | Kod asas SP disahkan | Rujukan DPK bercetak | Agihan |
 | --- | ---: | --- | --- |
