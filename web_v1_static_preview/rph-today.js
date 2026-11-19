@@ -367,6 +367,7 @@
      else if(!c.progressHint&&suggestedLessonNumbers(c).includes(lessonNumber(title)))
       option.textContent+=" · Cadangan minggu ini";
      option.dataset.bookRef=String(item.textbook_ref||item.student_book_ref||"").trim();
+     option.dataset.activityBookRef=String(item.activitybook_ref||"").trim();
      option.dataset.originUnit=String(item.origin_unit||"");
     }
    select.add(option);
@@ -426,7 +427,8 @@
   const code=c.slot.subject_code,control=c.controls;
   if(from==="lesson"){
    const chosen=control.lesson.selectedOptions[0];
-   c.bookRef.textContent=chosen?.dataset.bookRef?"Rujukan buku: "+chosen.dataset.bookRef:"";
+   const references=[chosen?.dataset.bookRef,chosen?.dataset.activityBookRef].filter(Boolean).join(" • ");
+   c.bookRef.textContent=references?"Rujukan buku: "+references:"";
    c.message.textContent=control.lesson.value?"Lesson/PdP telah dipilih.":"";
    updateAll();return;
   }

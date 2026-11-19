@@ -1622,7 +1622,8 @@ function numberedPdpLabel(item){
 }
 function displayBookReference(){
  const ref=document.getElementById("lesson-source-pages");
- const value=lesson.selectedOptions[0]?.dataset.bookReference||"";
+ const selected=lesson.selectedOptions[0]?.dataset;
+ const value=[selected?.bookReference,selected?.activityBookReference].filter(Boolean).join(" • ");
  ref.textContent=value?"Rujukan buku: "+value:"";
  ref.hidden=!value;
 }
@@ -1644,6 +1645,7 @@ function fillSelect(el,items,label){
   if(el===lesson&&book&&!text.includes(book))text+=" • "+book;
   const opt=new Option(text,String(item.value));
   opt.dataset.bookReference=el===lesson?book:"";
+  opt.dataset.activityBookReference=el===lesson?String(item.activitybook_ref||"").trim():"";
    opt.dataset.originUnit=el===lesson?String(item.origin_unit||""):"";
   opt.dataset.approved=item.approved===true&&item.download_enabled===true&&item.standalone_rph_verified===true?"1":"0";
   if(Number.isInteger(item.lesson_no)&&item.lesson_no>0&&item.lesson_no<=160)opt.dataset.lessonNo=String(item.lesson_no);
@@ -2521,7 +2523,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
-<script src="/assets/rph-today.js?v=sjkt-tahun2-20261119"></script>
+<script src="/assets/rph-today.js?v=book-refs-20261119"></script>
 <script src="/assets/teacher-profile.js?v=pilihan-subjek-20261117"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>
