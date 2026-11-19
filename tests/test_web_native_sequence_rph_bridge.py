@@ -92,6 +92,12 @@ class WebNativePdPBridgeTests(unittest.TestCase):
             _selection(5, "SCIENCE", year6["value"])
 
     def test_dlp_exact_ids_keep_year_and_subject(self):
+        self.assertEqual(_selection(2, "SCIENCE_DLP", "10", "DLP-SCI-Y2-R04")[0], DLP_ROUTE)
+        self.assertEqual(_selection(2, "MATH_DLP", "08", "DLP-MAT-Y2-R18")[0], DLP_ROUTE)
+        self.assertEqual(_selection(2, "SCIENCE_DLP", "09", "DLP-SCI-Y2-U09-11")[0], DLP_ROUTE)
+        self.assertEqual(_selection(2, "MATH_DLP", "02", "DLP-MAT-Y2-U02-21")[0], DLP_ROUTE)
+        with self.assertRaises(ValueError):
+            _selection(2, "MATH_DLP", "08", "DLP-MAT-Y2-R19")
         self.assertEqual(_selection(3, "SCIENCE_DLP", "10", "DLP-SCI-Y3-52")[0], DLP_ROUTE)
         self.assertEqual(_selection(3, "SCIENCE_DLP", "review", "DLP-SCI-Y3-R04")[0], DLP_ROUTE)
         self.assertEqual(_selection(3, "MATH_DLP", "09", "DLP-MAT-Y3-U09-73")[0], DLP_ROUTE)

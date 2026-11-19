@@ -64,8 +64,8 @@
   return ["ENGLISH","SCIENCE_DLP","MATH_DLP"].includes(code)?"Lesson":"PdP";
  }
  function dlpReviewNumber(title,code,year){
-  const limits=year===3?{SCIENCE_DLP:4,MATH_DLP:9}:{SCIENCE_DLP:10,MATH_DLP:8};
-  const limit=limits[code];
+  const byYear={2:{SCIENCE_DLP:4,MATH_DLP:18},3:{SCIENCE_DLP:4,MATH_DLP:9}};
+  const limit=(byYear[year]||{SCIENCE_DLP:10,MATH_DLP:8})[code];
   const match=/^Review\s+([0-9]{2})\b/i.exec(title);
   const number=Number(match?.[1]);
   return number>=1&&number<=limit?number:null;
@@ -521,12 +521,6 @@
   const c={slot,index,ticket,date:slotDate,card,rev:0,busy:false,controls:{}};
   if(!slot.can_prepare){
    card.append(create("p","notice",slot.reason||"Waktu ini tidak mempunyai padanan sumber yang disahkan."));
-   if(slot.rph_preview){
-    const preview=create("button","","Semak Pratonton RPH");
-    preview.type="button";
-    preview.addEventListener("click",()=>window.openScheduledRphPreview(slot.rph_preview,slot.year));
-    card.append(preview);
-   }
    if(slot.rpt_subject){
     const rpt=create("button","","Buka RPT 2027");
     rpt.type="button";

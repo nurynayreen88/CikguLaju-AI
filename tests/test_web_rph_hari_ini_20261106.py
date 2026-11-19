@@ -422,12 +422,13 @@ class DailyTimetablePureTests(TestCase):
         science, dlp, sjkc, math_sjkc, iban = day["entries"]
         self.assertTrue(science["can_prepare"])
         self.assertEqual(science["subject_code"], "SCIENCE")
-        for row in (dlp, sjkc, math_sjkc, iban):
+        for row in (sjkc, math_sjkc, iban):
             self.assertFalse(row["can_prepare"])
             self.assertIsNone(row["subject_code"])
             self.assertIsNone(row["rpt_suggestion"])
-        self.assertEqual(dlp["rpt_subject"], "science_dlp")
-        self.assertEqual(dlp["rph_preview"], "SCIENCE_DLP")
+        self.assertTrue(dlp["can_prepare"])
+        self.assertEqual((dlp["subject_code"], dlp["curriculum"]), ("SCIENCE_DLP", "dlp"))
+        self.assertNotIn("rph_preview", dlp)
         self.assertNotIn("rpt_subject", sjkc)
         self.assertIn("dalam penyediaan", sjkc["reason"])
         self.assertNotIn("rph_preview", sjkc)

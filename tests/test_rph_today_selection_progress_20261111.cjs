@@ -118,6 +118,9 @@ assert.equal(ctx.nativeLessonLabel({label: "Review 08 • Data Handling Review",
   "Review 08 • Data Handling Review • Textbook p. 242");
 assert.equal(ctx.nativeLessonLabel({label: "Review 09 • Unknown review"}, "MATH_DLP"), "");
 assert.equal(ctx.nativeLessonLabel({label: "Review 09 • Data"}, "MATH_DLP", 3), "Review 09 • Data");
+assert.equal(ctx.nativeLessonLabel({label: "Review 18 • Year-end task"}, "MATH_DLP", 2), "Review 18 • Year-end task");
+assert.equal(ctx.nativeLessonLabel({label: "Review 19 • Invalid"}, "MATH_DLP", 2), "");
+
 assert.equal(ctx.nativeLessonLabel({label: "Review 09 • Data"}, "MATH_DLP", 4), "");
 assert.equal(ctx.nativeLessonLabel({label: "Review 05 • Unknown review"}, "SCIENCE_DLP", 3), "");
 
