@@ -40,7 +40,7 @@ assert.ok(pos("rph")<pos("worksheet") && pos("worksheet")<pos("bbm") &&
  pos("bbm")<pos("uasa") && pos("uasa")<pos("pbd") &&
  pos("pbd")<pos("special"),"Teaching-material features should follow Sediakan RPH");
 assert.doesNotMatch(source,/id="view-kp2027"|data-web-view="kp2027"/);
-assert.match(source,/<select id="curriculum">.*<option value="kssr">KSSR \(SK\)<\/option><option value="sjkc">KSSR \(SJKC\)<\/option><option value="sjkt">KSSR \(SJKT\)<\/option><option value="kp2027">KP27 \(KP Baharu\)<\/option><option value="dlp">DLP<\/option><\/select>/);
+assert.match(source,/<select id="curriculum">.*<option value="kssr">KSSR \(SK\)<\/option><option value="sjkc">KSSR \(SJKC\)<\/option><option value="sjkt">KSSR \(SJKT\)<\/option><option value="kp2027">KP2027<\/option><\/select>/);
 assert.match(source,/<select id="year" hidden disabled>/);
 assert.match(source,/<select id="subject" hidden disabled>/);
 assert.match(source,/year===1\?"Tahun 1 \(KP Baharu\)"/);
@@ -95,6 +95,14 @@ const scripts=[...source.matchAll(/<script>([\s\S]*?)<\/script>/g)];
 assert.equal(scripts.length,1,"Keep one native inline JS script");
 new vm.Script(scripts[0][1],"web JS must parse");
 const code=scripts[0][1];
+const rptRouting=code.slice(code.indexOf("const rptCurricula="),code.indexOf("function rptYearLabel("));
+const rptContext=vm.runInNewContext(rptRouting+"\n({rptCurricula,rptCurriculumFor})");
+assert.ok(rptContext.rptCurricula.every(([key])=>key!=="dlp"));
+for(const n of [2,3,4,5,6]){
+ assert.equal(rptContext.rptCurriculumFor("science_dlp",n),"kssr");
+ assert.equal(rptContext.rptCurriculumFor("mathematics_dlp",n),"kssr");
+}
+
 const listeners={};
 function mockSelect(name){
  return {value:"",options:[],addEventListener(event,fn){listeners[name+"."+event]=fn;}};
@@ -144,6 +152,7 @@ const ctx={
   if(extra.subject==="SCIENCE_DLP")ctx.fillSelect(el,[{value:"01",label:"Unit 1 Scientific Skills"}],"Pilih Unit");
   if(extra.subject==="MATH_SJKC")ctx.fillSelect(el,[{value:"2",label:"Unit 2 · 基本运算"}],"Pilih Unit");
   if(extra.subject==="MATH_SJKT")ctx.fillSelect(el,[{value:"5",label:"Unit 5 · Masa dan waktu"}],"Pilih Unit");
+  return true;
  },
  async loadFinalLesson(kind,extra){
   catalogueCalls.push(kind,extra.subject,extra.unit);
@@ -231,42 +240,32 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  await listeners["unit.change"]();
  assert.deepEqual(lesson.options.map(x=>x.value),["","71"]);
  assert.deepEqual(catalogueCalls.splice(0),["subjects","subjects","units","MATH_SJKT","pdp","MATH_SJKT","5"]);
- curriculum.value="dlp";
+ curriculum.value="kssr";
  listeners["curriculum.change"]();
- assert.deepEqual(year.options.map(x=>x.label),[
-  "Pilih Tahun","Tahun 1 (KP Baharu) — Dalam Penyediaan","Tahun 2",
-  "Tahun 3","Tahun 4","Tahun 5","Tahun 6"
- ]);
- for(const n of ["1"]){
-  year.value=n;
-  await listeners["year.change"]();
-  assert.deepEqual(subject.options.map(x=>x.label),[
-   "Pilih Subjek","Mathematics (DLP) — Dalam Penyediaan"
-  ]);
-  assert.match(ctx.catalogStatus.textContent,/Alam dan Manusia/);
-  for(const option of subject.options.slice(1)){
-   subject.value=option.value;
-   await listeners["subject.change"]();
-   assert.match(ctx.help,/Dalam Penyediaan/);
-   assert.match(ctx.catalogStatus.textContent,/Alam dan Manusia/);
-   assert.equal(variantRpt.hidden,true);
-   assert.equal(unit.hidden,true);
-   assert.ok(ctx.catalogStatus.textContent.includes(n==="1"?"Tahun 1 (KP Baharu)":"Tahun "+n));
-  }
- }
- assert.deepEqual(catalogueCalls,[]);
+ assert.deepEqual(year.options.map(x=>x.value),["","1","2","3","4","5","6"]);
+ year.value="1";
+ await listeners["year.change"]();
+ assert.ok(subject.options.every(item=>!item.value.endsWith("_DLP")));
+ subject.value="MATH_DLP";
+ await listeners["subject.change"]();
+ assert.equal(variantRpt.hidden,true);
+ assert.equal(unit.hidden,true);
+ assert.deepEqual(catalogueCalls.splice(0),["subjects"]);
  for(const n of ["2","3","4","5","6"]){
   year.value=n;
   await listeners["year.change"]();
-  assert.deepEqual(subject.options.map(x=>x.label),[
-   "Pilih Subjek","Science (DLP) — RPH 2027",
-   "Mathematics (DLP) — RPH 2027"
-  ]);
+  assert.deepEqual(subject.options.filter(x=>x.value.endsWith("_DLP")).map(x=>x.label),
+   ["Science (DLP)","Mathematics (DLP)"]);
+  assert.ok(subject.options.some(item=>item.value==="MATH"));
+  assert.deepEqual(catalogueCalls.splice(0),["subjects"]);
   for(const code of ["SCIENCE_DLP","MATH_DLP"]){
    const id=dlpId(code==="SCIENCE_DLP",n);
    subject.value=code;
    await listeners["subject.change"]();
    assert.equal(unit.hidden,false);
+   assert.equal(variantRpt.hidden,false);
+   assert.equal(variantRpt.dataset.subject,code==="SCIENCE_DLP"?"science_dlp":"mathematics_dlp");
+   assert.doesNotMatch(ctx.catalogStatus.textContent,/Alam dan Manusia/);
    assert.deepEqual(unit.options.map(x=>x.value),["","01"]);
    unit.value="01";
    await listeners["unit.change"]();
@@ -284,9 +283,9 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  assert.deepEqual(year.options.map(x=>x.value),["","1","2","3","4","5","6"]);
  year.value="2";
  await listeners["year.change"]();
- assert.deepEqual(subject.options.map(x=>x.value),["","MATH","planned:bahasa_iban",
+ assert.deepEqual(subject.options.map(x=>x.value),["","MATH","SCIENCE_DLP","MATH_DLP","planned:bahasa_iban",
   "planned:bahasa_kadazandusun","planned:bahasa_semai","planned:bahasa_cina_sk","planned:bahasa_tamil_sk"]);
- for(const option of subject.options.slice(2)){
+ for(const option of subject.options.filter(item=>item.value.startsWith("planned:"))){
   subject.value=option.value;
   await listeners["subject.change"]();
   assert.match(ctx.catalogStatus.textContent,/Tahun 2 — Dalam Penyediaan/);
@@ -300,12 +299,13 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  let resolveOldSubjects;
  ctx.loadOptions=()=>new Promise(resolve=>{resolveOldSubjects=resolve;});
  const pending=listeners["year.change"]();
- curriculum.value="dlp";
+ curriculum.value="kp2027";
  listeners["curriculum.change"]();
- year.value="2";
+ year.value="1";
  await listeners["year.change"]();
  resolveOldSubjects([{value:"MATH",label:"Matematik"}]);
  await pending;
- assert.deepEqual(subject.options.map(x=>x.value),["","SCIENCE_DLP","MATH_DLP"]);
+ assert.deepEqual(subject.options.map(x=>x.value),[""]);
+ assert.match(ctx.catalogStatus.textContent,/Alam dan Manusia/);
  console.log("WEB_PLANNED_MENUS: PASS (curriculum first, scoped years and subjects, stale request discarded)");
 })().catch(error=>{console.error(error);process.exitCode=1;});
