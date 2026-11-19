@@ -512,7 +512,7 @@ class DailyTimetableRouteTests(TestCase):
                     self.assertTrue(slot["can_prepare"])
                     self.assertEqual((slot["subject_code"], slot["curriculum"]), ("MATH_DLP", "dlp"))
                     self.assertIsNone(slot["rpt_suggestion"])
-                    self.assertNotIn("progress", slot)
+                    self.assertEqual(slot["progress"], {"": {"completed": None, "previous": None}})
                 self.assertEqual(slots[5]["subject_code"], "MATH")
                 for slot in slots[6:]:
                     self.assertFalse(slot["can_prepare"])
@@ -540,17 +540,30 @@ class DailyTimetableRouteTests(TestCase):
                     self.assertEqual(result.status_code, 400)
             future = self.client.post(path, headers=headers, json={**request, "date": "2027-01-12", "token": None})
             self.assertEqual(future.status_code, 400)
-            for token in (None, signer.dumps([123, 4, "MATH_DLP", "", 8])):
-                math = self.client.post(path, headers=headers, json={
-                    **request, "start": "11:00", "subject_code": "MATH_DLP", "token": token,
-                })
-                self.assertEqual(math.status_code, 400)
-                self.assertIn("Rekod Selesai PdP belum tersedia", math.json["error"])
-            self.assertEqual(save.call_count, 3)
+            math_request = {**request, "start": "11:00", "subject_code": "MATH_DLP"}
+            for number in (8, 69, 108, None):
+                with self.subTest(number=number):
+                    token = signer.dumps([123, 4, "MATH_DLP", "", number]) if number else None
+                    result = self.client.post(path, headers=headers, json={**math_request, "token": token})
+                    self.assertEqual(result.status_code, 200, result.get_json())
+                    self.assertEqual(save.call_args.args[3]["subject_code"], "MATH_DLP")
+                    self.assertEqual(save.call_args.args[-1], number)
+            for claim in ([123, 4, "MATH_DLP", "", 70], [123, 4, "MATH_DLP", "", 100],
+                          [123, 4, "MATH_DLP", "", 109], [123, 4, "SCIENCE_DLP", "", 108],
+                          [456, 4, "MATH_DLP", "", 108], [123, 5, "MATH_DLP", "", 108]):
+                with self.subTest(claim=claim):
+                    result = self.client.post(path, headers=headers, json={**math_request, "token": signer.dumps(claim)})
+                    self.assertEqual(result.status_code, 400)
+            self.assertEqual(save.call_count, 7)
 
-            summary = {("4 bestari", "SCIENCE_DLP", ""): {
-                "completed": 2, "last_number": 108, "last_date": target.isoformat(),
-            }}
+            summary = {
+                ("4 bestari", "SCIENCE_DLP", ""): {
+                    "completed": 2, "last_number": 108, "last_date": target.isoformat(),
+                },
+                ("4 bestari", "MATH_DLP", ""): {
+                    "completed": 1, "last_number": 108, "last_date": target.isoformat(),
+                },
+            }
             with patch("web.rph_hari_ini_web.read_progress_summary", return_value=summary):
                 overview = self.client.get("/api/web/rph/hari-ini/progress")
             self.assertEqual(overview.status_code, 200)
@@ -559,7 +572,11 @@ class DailyTimetableRouteTests(TestCase):
             self.assertEqual(items["4 Bestari", "Science (DLP)"]["completed"], 2)
             self.assertEqual(items["4 Amanah", "Science (DLP)"]["completed"], 0)
             self.assertNotIn(("3 Bestari", "Science (DLP)"), items)
-            self.assertNotIn(("4 Bestari", "Mathematics (DLP)"), items)
+            math_progress = items["4 Bestari", "Mathematics (DLP)"]
+            self.assertEqual((math_progress["label"], math_progress["completed"], math_progress["last_label"]),
+                             ("sesi", 1, "Review 08"))
+            self.assertEqual(items["4 Amanah", "Mathematics (DLP)"]["completed"], 0)
+            self.assertNotIn(("5 Bestari", "Mathematics (DLP)"), items)
 
     def test_invalid_date_and_unknown_params_fail_closed(self):
         with patch("web.rph_hari_ini_web._auth",return_value=(self.conf,123,None)):

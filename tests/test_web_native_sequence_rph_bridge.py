@@ -138,7 +138,7 @@ class WebNativePdPBridgeTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 _selection(6, "MATH_DLP", new["value"])
 
-    def test_web_options_preserve_science_completion_and_enable_mathematics_in_dlp_year4(self):
+    def test_web_options_sign_only_valid_year4_dlp_sessions_for_the_exact_subject(self):
         from tools.run_web_v1_preview import app
 
         from web.rph_today_progress import lesson_signer
@@ -148,8 +148,14 @@ class WebNativePdPBridgeTests(unittest.TestCase):
         lesson = {"value": "DLP-SCI-Y4-L46", "label": "Lesson 46 Sources of Basic Materials"}
         review = {"value": "DLP-SCI-Y4-R08", "label": "Review 08 Materials Review"}
         invalid = {"value": "DLP-SCI-Y4-R11", "label": "Review 11"}
-        math_lessons = [{"value": "DLP-MAT-Y4-L69", "label": "Lesson 69"},
-                        {"value": "DLP-MAT-Y4-R08", "label": "Review 08"}]
+        math_lessons = [
+            {"value": "DLP-MAT-Y4-L69", "label": "Lesson 69"},
+            {"value": "DLP-MAT-Y4-R08", "label": "Review 08"},
+            {"value": "DLP-MAT-Y4-L70", "label": "Lesson 70"},
+            {"value": "DLP-MAT-Y4-R09", "label": "Review 09"},
+            {"value": "DLP-SCI-Y4-R08", "label": "Review 08"},
+            {"value": "DLP-MATH-Y5-R08", "label": "Review 08"},
+        ]
         with (
             patch("web_v1_telegram_auth_routes._config", return_value=config),
             patch("web_v1_sessions.verify_session_ticket", return_value=123),
@@ -183,9 +189,18 @@ class WebNativePdPBridgeTests(unittest.TestCase):
                 **selection, "subject": "MATH_DLP", "kind": "pdp", "unit": "08", "rph_today": "1",
             })
             self.assertEqual(response.status_code, 200)
-            self.assertEqual(response.json, math_lessons)
-            self.assertNotIn("completion_token", response.json[0])
+            first, second, *invalid_math = response.json
+            self.assertEqual(signer.loads(first["completion_token"]), [123, 4, "MATH_DLP", "", 69])
+            self.assertEqual(signer.loads(second["completion_token"]), [123, 4, "MATH_DLP", "", 108])
+            for row in invalid_math:
+                self.assertNotIn("completion_token", row)
             lessons.assert_called_with(4, "MATH_DLP", "08")
+            lessons.return_value = [{"value": "DLP-MAT-Y4-R08", "label": "Review 08"}]
+            response = client.get("/api/options", query_string={
+                **selection, "year": 5, "subject": "MATH_DLP", "kind": "pdp", "unit": "08", "rph_today": "1",
+            })
+            self.assertEqual(response.status_code, 200)
+            self.assertNotIn("completion_token", response.json[0])
 
     @patch("web.unified_rph_web._has_paid_access", return_value=True)
     @patch("web.unified_rph_web._account", return_value=({"telegram_user_id": 123}, None))

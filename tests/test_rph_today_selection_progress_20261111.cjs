@@ -146,4 +146,8 @@ ctx.DLP_REVIEW_OFFSET=100;
 vm.runInNewContext(numberFunction, ctx);
 assert.equal(ctx.lessonNumber("Lesson 08 • Observe", "SCIENCE_DLP"), 8);
 assert.equal(ctx.lessonNumber("Review 08 • Materials Review", "SCIENCE_DLP"), 108);
+assert.equal(ctx.lessonNumber("Review 10 • Science", "SCIENCE_DLP"), 110);
+assert.equal(ctx.lessonNumber("Lesson 08 • Problem solving", "MATH_DLP"), 8);
+assert.equal(ctx.lessonNumber("Review 08 • Data Handling Review", "MATH_DLP"), 108);
+assert.equal(ctx.lessonNumber("Review 09 • Unknown review", "MATH_DLP"), null);
 assert.equal(ctx.lessonNumber("Review 08 • Materials Review", "SCIENCE"), null);
