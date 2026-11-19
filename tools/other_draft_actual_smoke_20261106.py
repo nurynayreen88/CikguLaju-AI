@@ -5,20 +5,63 @@ database writes. Tests original staging source preservation, downloads and
 document signatures; DOES NOT assert teacher approval or release status.
 """
 import io
+import json
+from pathlib import Path
 import os
 from unittest.mock import patch
 from zipfile import ZipFile
 
 from flask import Flask
 
+from staging.pendidikan_muzik.rpt_rph_2027.legacy_doc_text_safe_staging import (
+    normalize_for_legacy_doc,
+)
+from staging.pendidikan_muzik.rpt_rph_2027.music_native_route_candidate import (
+    ROOT as MUSIC_ROOT,
+    load as load_music,
+)
+from staging.pendidikan_muzik.rpt_rph_2027.native_layout_preview_staging import (
+    STANDARD_DESCRIPTIONS,
+)
 from web.telegram_provisional_arab_music_api import (
-    _arab_index,_music_index,_unit_rows,_lesson_rows,_selected,
+    _arab_index,_music_index,_unit_rows,_lesson_rows,_music_state,_selected,
     create_provisional_subjects_blueprint,
 )
 
 
+def _assert_music_standards(runtime):
+    bank = json.loads((MUSIC_ROOT / STANDARD_DESCRIPTIONS).read_text(encoding="utf-8"))
+    assert bank["2"]["sp"]["1.1.1"]["sk"] == "1.1"
+    assert bank["4"]["sp"]["3.2.2"]["sk"] == "3.1"
+    assert bank["4"]["sp"]["4.2.1"]["sk"] == "4.1"
+    teacher = dict.fromkeys(("class", "date", "time", "students"), "")
+    for year in range(2, 7):
+        standard = bank[str(year)]
+        lesson_codes = set()
+        for pdp in range(1, 36):
+            music = load_music(year, pdp)
+            assert music is not None
+            lesson_codes.update(music["sp"])
+            entries = [standard["sp"][code] for code in music["sp"]]
+            assert music["sk"] == list(dict.fromkeys(entry["sk"] for entry in entries))
+            selection = {"year": year, "lesson": pdp, "music": music, "title": music["title"]}
+            state, text = _music_state(selection, teacher)
+            rendered = runtime._rph_rows(state, text)
+            expected_sk = [f"{code} {standard['sk'][code]}" for code in music["sk"]]
+            expected_sp = [f"{code} {entry['description']}" for code, entry in zip(music["sp"], entries, strict=True)]
+            assert all(standard["sk"][code].strip() for code in music["sk"])
+            assert all(entry["description"].strip() for entry in entries)
+            assert rendered["STANDARD KANDUNGAN"] == normalize_for_legacy_doc("; ".join(expected_sk))
+            assert rendered["STANDARD PEMBELAJARAN"] == normalize_for_legacy_doc("; ".join(expected_sp))
+        assert lesson_codes == set(standard["sp"])
+    assert load_music(2, 24)["sp"] == ["2.2.1", "2.3.2"]
+    assert load_music(2, 32)["sp"] == ["3.1.2", "3.1.3"]
+    assert load_music(4, 5)["sp"] == ["2.2.1", "2.2.2"]
+    assert load_music(5, 17)["sp"] == ["2.4.1", "2.4.2"]
+    print("MUSIC_DSKP_DESCRIPTIONS_ALL_175_PASS", flush=True)
+
+
 def main():
-    from pathlib import Path
     entry=(Path(__file__).resolve().parents[1]/
            "tools/run_telegram_with_curriculum_api.py").read_text("utf8")
     assert entry.count("create_provisional_subjects_blueprint(telegram_runtime)")==1
@@ -53,6 +96,7 @@ def main():
         raise AssertionError("Network prohibited in offline QA")
     with patch.object(requests.sessions.Session,"request",new=block_network):
         import app as runtime
+    _assert_music_standards(runtime)
     web=Flask("other-draft-smoke")
     web.register_blueprint(create_provisional_subjects_blueprint(runtime))
     c=web.test_client()
@@ -71,7 +115,6 @@ def main():
             assert avail.json["status"] == ("READY" if reviewed else "DRAF")
             formats=avail.json["formats"]
             if subject=="MUZIK":
-                from web.telegram_provisional_arab_music_api import _music_state
                 src=_selected(year,subject,first["value"],lesson)
                 state,text=_music_state(src,{"class":"2 Bestari","date":"2026-11-06",
                                         "time":"08:00 - 09:00","students":"30"})

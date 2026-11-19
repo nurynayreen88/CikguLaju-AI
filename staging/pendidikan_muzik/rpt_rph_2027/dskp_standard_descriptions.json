@@ -1,0 +1,460 @@
+{
+  "2": {
+    "sk": {
+      "1.1": "Elemen muzik",
+      "2.1": "Nyanyian",
+      "2.2": "Permainan alat perkusi",
+      "2.3": "Bergerak mengikut muzik",
+      "3.1": "Pengkaryaan muzik",
+      "4.1": "Penghayatan karya muzik",
+      "5.1": "Persembahan muzik"
+    },
+    "sp": {
+      "1.1.1": {
+        "sk": "1.1",
+        "description": "Mengecam dan membezakan tempo cepat dengan tempo lambat"
+      },
+      "1.1.2": {
+        "sk": "1.1",
+        "description": "Membezakan melodi yang bergerak secara bertangga dengan melodi mendatar"
+      },
+      "1.1.3": {
+        "sk": "1.1",
+        "description": "Menggunakan perbezaan tempo cepat dan lambat dalam aktiviti muzik"
+      },
+      "1.1.4": {
+        "sk": "1.1",
+        "description": "Menggunakan pengetahuan tentang arah pergerakan melodi dalam aktiviti muzik"
+      },
+      "2.1.1": {
+        "sk": "2.1",
+        "description": "Menyanyi dengan postur badan yang betul"
+      },
+      "2.1.2": {
+        "sk": "2.1",
+        "description": "Menyanyikan melodi pada pic yang tepat"
+      },
+      "2.1.3": {
+        "sk": "2.1",
+        "description": "Menyanyi selaras dengan tempo lagu"
+      },
+      "2.1.4": {
+        "sk": "2.1",
+        "description": "Menyesuaikan nyanyian apabila tempo berubah"
+      },
+      "2.2.1": {
+        "sk": "2.2",
+        "description": "Menyesuaikan permainan perkusi dengan tempo muzik"
+      },
+      "2.2.2": {
+        "sk": "2.2",
+        "description": "Memainkan detik lagu dengan alat perkusi berpandukan skor ikon"
+      },
+      "2.2.3": {
+        "sk": "2.2",
+        "description": "Memainkan corak irama pada alat perkusi menggunakan skor ikon bagi nilai not"
+      },
+      "2.3.2": {
+        "sk": "2.3",
+        "description": "Menyesuaikan gerakan dengan tempo cepat atau lambat"
+      },
+      "3.1.1": {
+        "sk": "3.1",
+        "description": "Meneroka dan menghasilkan pelbagai bunyi dengan bahan improvisasi"
+      },
+      "3.1.2": {
+        "sk": "3.1",
+        "description": "Menggubah corak irama mudah menggunakan ikon bagi nilai krocet dan kuaver"
+      },
+      "3.1.3": {
+        "sk": "3.1",
+        "description": "Memainkan corak atau hasil muzik ciptaan sendiri"
+      },
+      "4.1.1": {
+        "sk": "4.1",
+        "description": "Mengulas muzik masyarakat Malaysia dari segi jenis, masyarakat yang mengamalkannya dan fungsinya"
+      },
+      "5.1.1": {
+        "sk": "5.1",
+        "description": "Merancang persembahan muzik"
+      },
+      "5.1.2": {
+        "sk": "5.1",
+        "description": "Melaksanakan persembahan muzik"
+      },
+      "5.1.3": {
+        "sk": "5.1",
+        "description": "Menunjukkan nilai murni semasa aktiviti muzik"
+      }
+    }
+  },
+  "3": {
+    "sk": {
+      "1.1": "Elemen muzik",
+      "1.2": "Notasi muzik",
+      "2.1": "Nyanyian",
+      "2.2": "Permainan alat perkusi",
+      "2.3": "Bergerak mengikut muzik",
+      "2.4": "Rekoder",
+      "3.1": "Pengkaryaan muzik",
+      "4.1": "Penghayatan karya muzik",
+      "5.1": "Persembahan muzik"
+    },
+    "sp": {
+      "1.1.1": {
+        "sk": "1.1",
+        "description": "Mengecam serta membezakan tekstur muzik yang tebal atau nipis"
+      },
+      "1.1.2": {
+        "sk": "1.1",
+        "description": "Menggunakan perbezaan tekstur tebal dan nipis dalam aktiviti muzik"
+      },
+      "1.2.1": {
+        "sk": "1.2",
+        "description": "Membaca not G, A dan B pada baluk serta nilai semibrif, minim dan krocet"
+      },
+      "1.2.2": {
+        "sk": "1.2",
+        "description": "Menggunakan notasi yang dibaca semasa bermain rekoder"
+      },
+      "2.1.1": {
+        "sk": "2.1",
+        "description": "Menggunakan teknik pernafasan yang betul ketika menyanyi"
+      },
+      "2.1.2": {
+        "sk": "2.1",
+        "description": "Menyanyikan melodi pada pic yang tepat"
+      },
+      "2.1.3": {
+        "sk": "2.1",
+        "description": "Menyanyi selaras dengan tempo lagu"
+      },
+      "2.2.1": {
+        "sk": "2.2",
+        "description": "Menyesuaikan permainan perkusi dengan tempo muzik"
+      },
+      "2.2.2": {
+        "sk": "2.2",
+        "description": "Memainkan corak irama pada alat perkusi menggunakan skor ikon bagi nilai not"
+      },
+      "2.3.1": {
+        "sk": "2.3",
+        "description": "Menghasilkan gerak berdasarkan corak irama yang didengar"
+      },
+      "2.3.2": {
+        "sk": "2.3",
+        "description": "Menghasilkan gerak dengan berpandukan tempo muzik"
+      },
+      "2.3.3": {
+        "sk": "2.3",
+        "description": "Merancang gerak yang sesuai dengan muzik yang didengar"
+      },
+      "2.4.1": {
+        "sk": "2.4",
+        "description": "Mengenal bahagian rekoder, cara menjaganya dan penjarian asas"
+      },
+      "2.4.2": {
+        "sk": "2.4",
+        "description": "Memainkan rekoder pada tempo yang ditetapkan dengan ton baik, not B, A dan G, serta teknik yang betul"
+      },
+      "3.1.1": {
+        "sk": "3.1",
+        "description": "Menghasilkan kesan bunyi bagi mengiringi suatu persembahan"
+      },
+      "3.1.2": {
+        "sk": "3.1",
+        "description": "Menggubah corak irama mudah menggunakan ikon bagi nilai not"
+      },
+      "3.1.3": {
+        "sk": "3.1",
+        "description": "Mempersembahkan karya muzik ciptaan sendiri"
+      },
+      "4.1.1": {
+        "sk": "4.1",
+        "description": "Mengulas muzik popular yang didengar berdasarkan jenis muzik dan nama penyanyi atau kumpulan"
+      },
+      "5.1.1": {
+        "sk": "5.1",
+        "description": "Merancang persembahan muzik"
+      },
+      "5.1.2": {
+        "sk": "5.1",
+        "description": "Melaksanakan persembahan muzik"
+      },
+      "5.1.3": {
+        "sk": "5.1",
+        "description": "Menunjukkan nilai murni semasa aktiviti muzik"
+      }
+    }
+  },
+  "4": {
+    "sk": {
+      "1.1": "Notasi muzik",
+      "2.1": "Nyanyian",
+      "2.2": "Permainan alat perkusi",
+      "2.3": "Bergerak mengikut muzik",
+      "2.4": "Rekoder",
+      "3.1": "Pengkaryaan muzik",
+      "4.1": "Penghayatan karya muzik",
+      "5.1": "Persembahan muzik"
+    },
+    "sp": {
+      "1.1.1": {
+        "sk": "1.1",
+        "description": "Membaca dan mencatat not G, A, B, C’ dan D’ serta tanda rehat pada baluk"
+      },
+      "1.1.2": {
+        "sk": "1.1",
+        "description": "Membaca dan menulis baluk, garis bar, klef trebel, garis penamat, ulangan dan meter"
+      },
+      "1.1.3": {
+        "sk": "1.1",
+        "description": "Menggunakan kemahiran membaca notasi dalam aktiviti muzik"
+      },
+      "2.1.1": {
+        "sk": "2.1",
+        "description": "Menyanyikan lagu secara pusingan"
+      },
+      "2.1.2": {
+        "sk": "2.1",
+        "description": "Menyanyikan melodi pada pic yang tepat"
+      },
+      "2.1.3": {
+        "sk": "2.1",
+        "description": "Menyanyi selaras dengan tempo lagu"
+      },
+      "2.1.4": {
+        "sk": "2.1",
+        "description": "Menggunakan cara nyanyian legato dan staccato"
+      },
+      "2.2.1": {
+        "sk": "2.2",
+        "description": "Menyesuaikan permainan perkusi dengan tempo muzik"
+      },
+      "2.2.2": {
+        "sk": "2.2",
+        "description": "Memainkan corak irama pada alat perkusi berpandukan skor"
+      },
+      "2.3.1": {
+        "sk": "2.3",
+        "description": "Merancang dan melakukan gerak berpandukan bentuk lagu dan tempo"
+      },
+      "2.4.1": {
+        "sk": "2.4",
+        "description": "Memainkan rekoder dengan ton baik mengikut tempo, menggunakan not G, A, B, C’ dan D’, tanda rehat dan teknik yang betul"
+      },
+      "2.4.2": {
+        "sk": "2.4",
+        "description": "Memainkan melodi kaunter berpandukan skor muzik"
+      },
+      "3.2.1": {
+        "sk": "3.1",
+        "description": "Menggubah corak irama mudah menggunakan nilai not dan tanda rehat"
+      },
+      "3.2.2": {
+        "sk": "3.1",
+        "description": "Menggubah melodi ringkas dalam skop not B, A dan G"
+      },
+      "3.2.3": {
+        "sk": "3.1",
+        "description": "Mempersembahkan karya muzik ciptaan sendiri"
+      },
+      "4.2.1": {
+        "sk": "4.1",
+        "description": "Mengulas muzik masyarakat Malaysia dengan mengenal nama ensembel, keluarga alat dan alat muziknya"
+      },
+      "5.1.1": {
+        "sk": "5.1",
+        "description": "Merancang persembahan muzik"
+      },
+      "5.1.2": {
+        "sk": "5.1",
+        "description": "Melaksanakan persembahan muzik"
+      },
+      "5.1.3": {
+        "sk": "5.1",
+        "description": "Menunjukkan nilai murni semasa aktiviti muzik"
+      }
+    }
+  },
+  "5": {
+    "sk": {
+      "1.1": "Notasi muzik",
+      "2.1": "Nyanyian",
+      "2.2": "Permainan alat perkusi",
+      "2.3": "Bergerak mengikut muzik",
+      "2.4": "Rekoder",
+      "3.1": "Pengkaryaan muzik",
+      "4.1": "Penghayatan karya muzik",
+      "5.1": "Persembahan muzik"
+    },
+    "sp": {
+      "1.1.1": {
+        "sk": "1.1",
+        "description": "Membaca dan mencatat not E, F, G, A, B, C’ dan D’ serta tanda rehat pada baluk"
+      },
+      "1.1.2": {
+        "sk": "1.1",
+        "description": "Membaca, menulis dan memahami piano (p), forte (f), staccato dan legato"
+      },
+      "1.1.3": {
+        "sk": "1.1",
+        "description": "Menggunakan kemahiran membaca notasi dalam aktiviti muzik"
+      },
+      "2.1.1": {
+        "sk": "2.1",
+        "description": "Menyanyikan melodi pada pic yang tepat"
+      },
+      "2.1.2": {
+        "sk": "2.1",
+        "description": "Menyanyikan bahagian masing-masing apabila dua melodi lagu berkembar dinyanyikan serentak"
+      },
+      "2.1.3": {
+        "sk": "2.1",
+        "description": "Menyanyi selaras dengan tempo lagu"
+      },
+      "2.1.4": {
+        "sk": "2.1",
+        "description": "Menggunakan dinamik kuat (f) dan lembut (p) ketika menyanyi"
+      },
+      "2.2.1": {
+        "sk": "2.2",
+        "description": "Memainkan alat perkusi mengikut tempo berdasarkan not dan tanda rehat dalam skor"
+      },
+      "2.2.2": {
+        "sk": "2.2",
+        "description": "Menggunakan dinamik kuat (f) dan lembut (p) ketika bermain alat perkusi"
+      },
+      "2.3.1": {
+        "sk": "2.3",
+        "description": "Merancang dan melakukan gerak berdasarkan tempo serta meter 2/4 dan 3/4"
+      },
+      "2.4.1": {
+        "sk": "2.4",
+        "description": "Memainkan not E, F, G, A, B, C’ dan D’ pada rekoder dengan ton baik, tempo dan teknik yang betul"
+      },
+      "2.4.2": {
+        "sk": "2.4",
+        "description": "Memainkan melodi kaunter dalam ensembel berpandukan skor muzik"
+      },
+      "3.1.1": {
+        "sk": "3.1",
+        "description": "Menggubah melodi ringkas menggunakan not B, A dan G"
+      },
+      "3.1.2": {
+        "sk": "3.1",
+        "description": "Mempersembahkan karya muzik ciptaan sendiri"
+      },
+      "4.1.1": {
+        "sk": "4.1",
+        "description": "Menyatakan julat tahun zaman Baroque dalam muzik Klasik Barat"
+      },
+      "4.1.2": {
+        "sk": "4.1",
+        "description": "Mengulas karya Baroque yang didengar berdasarkan komposer, negara asal dan judul karya"
+      },
+      "5.1.1": {
+        "sk": "5.1",
+        "description": "Merancang persembahan muzik"
+      },
+      "5.1.2": {
+        "sk": "5.1",
+        "description": "Menyediakan keperluan bagi persembahan muzik"
+      },
+      "5.1.3": {
+        "sk": "5.1",
+        "description": "Melaksanakan persembahan muzik"
+      },
+      "5.1.4": {
+        "sk": "5.1",
+        "description": "Menunjukkan nilai murni semasa aktiviti muzik"
+      }
+    }
+  },
+  "6": {
+    "sk": {
+      "1.1": "Notasi muzik",
+      "2.1": "Nyanyian",
+      "2.2": "Permainan alat perkusi",
+      "2.3": "Bergerak mengikut muzik",
+      "2.4": "Rekoder",
+      "3.1": "Pengkaryaan muzik",
+      "4.1": "Penghayatan karya muzik",
+      "5.1": "Persembahan muzik"
+    },
+    "sp": {
+      "1.1.1": {
+        "sk": "1.1",
+        "description": "Membaca dan mencatat not C hingga D’ serta tanda rehat pada baluk"
+      },
+      "1.1.2": {
+        "sk": "1.1",
+        "description": "Membaca, menulis dan memahami fermata, crescendo dan decrescendo"
+      },
+      "1.1.3": {
+        "sk": "1.1",
+        "description": "Menggunakan kemahiran membaca notasi dalam aktiviti muzik"
+      },
+      "2.1.1": {
+        "sk": "2.1",
+        "description": "Menyanyikan lagu dengan pic tepat dan tempo yang sesuai"
+      },
+      "2.1.2": {
+        "sk": "2.1",
+        "description": "Menggunakan dinamik lembut, kuat, crescendo dan decrescendo dalam nyanyian"
+      },
+      "2.2.1": {
+        "sk": "2.2",
+        "description": "Memainkan alat perkusi mengikut tempo berdasarkan not dan tanda rehat dalam skor"
+      },
+      "2.2.2": {
+        "sk": "2.2",
+        "description": "Menggunakan dinamik lembut, kuat, crescendo dan decrescendo ketika bermain perkusi"
+      },
+      "2.3.1": {
+        "sk": "2.3",
+        "description": "Merancang dan melakukan gerak berdasarkan tema dan tempo muzik yang didengar"
+      },
+      "2.4.1": {
+        "sk": "2.4",
+        "description": "Memainkan not C hingga D’ pada rekoder dengan ton baik, tempo dan teknik yang betul"
+      },
+      "2.4.2": {
+        "sk": "2.4",
+        "description": "Memainkan melodi kaunter dalam ensembel berpandukan skor muzik"
+      },
+      "3.1.1": {
+        "sk": "3.1",
+        "description": "Menggubah melodi ringkas menggunakan not B, A, G, C’ dan D’"
+      },
+      "3.1.2": {
+        "sk": "3.1",
+        "description": "Mempersembahkan karya muzik ciptaan sendiri"
+      },
+      "4.1.1": {
+        "sk": "4.1",
+        "description": "Menyatakan julat tahun zaman Classical dalam muzik Klasik Barat"
+      },
+      "4.1.2": {
+        "sk": "4.1",
+        "description": "Mengulas karya zaman Classical yang didengar berdasarkan komposer, negara asal dan judul karya"
+      },
+      "5.1.1": {
+        "sk": "5.1",
+        "description": "Merancang persembahan muzik"
+      },
+      "5.1.2": {
+        "sk": "5.1",
+        "description": "Menyediakan keperluan bagi persembahan muzik"
+      },
+      "5.1.3": {
+        "sk": "5.1",
+        "description": "Melaksanakan persembahan muzik"
+      },
+      "5.1.4": {
+        "sk": "5.1",
+        "description": "Menunjukkan nilai murni semasa aktiviti muzik"
+      }
+    }
+  }
+}
