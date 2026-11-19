@@ -39,8 +39,8 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
         self._save()
         math_root = self.root / "matematik"
         math_root.mkdir()
-        for year in math_sk.DIGESTS:
-            original = math_sk.document_path(year)
+        for year in (*math_sk.DIGESTS, *math_sk.DPK_DIGESTS):
+            original = math_sk.document_path(year, dpk=year in math_sk.DPK_DIGESTS)
             (math_root / original.name).write_bytes(original.read_bytes())
         self.app=Flask(__name__)
         self.app.register_blueprint(create_all_rpt_blueprint(root=self.root))
@@ -77,11 +77,15 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
 
     def test_all_56_files_and_25_language_choices_in_preparation(self):
         data=catalog_data(root=self.root,allowed=True)
-        self.assertEqual(len(data["subjects"]),17)
+        self.assertEqual(len(data["subjects"]),18)
         self.assertEqual(data["total_rpt"],56)
         self.assertEqual(data["available_rpt"],56)
         self.assertEqual(sum(len(x["years"]) for x in data["subjects"]),91)
         self.assertEqual(data["total_display_choices"],91)
+        for year in (2, 3):
+            choices = [row["code"] for row in data["subjects"]
+                       if row["label"] == "Matematik" and any(y["year"] == year for y in row["years"])]
+            self.assertEqual(choices, ["matematik_dpk"])
         self.assertEqual(sum(y.get("coming_soon",False) and y["year"]>=2
                              for s in data["subjects"] for y in s["years"]),25)
         self.assertEqual(data["year1_coming_soon"],10)
@@ -276,7 +280,7 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
     def test_incomplete_manifest_not_misrepresented_as_56_ready(self):
         del self.manifest["files"]["english:3"]
         self._save()
-        self.assertEqual(catalog_data(root=self.root,allowed=True)["available_rpt"],len(math_sk.DIGESTS))
+        self.assertEqual(catalog_data(root=self.root,allowed=True)["available_rpt"],len(math_sk.DIGESTS) + len(math_sk.DPK_DIGESTS))
 
     @patch("web.rpt_2027_all_http._account", return_value=({"telegram_user_id": 42}, None))
     def test_aligned_math_rpt_preserves_bytes_and_paid_cover_gate(self, _):

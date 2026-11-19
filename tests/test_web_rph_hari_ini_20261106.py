@@ -302,6 +302,29 @@ class DailyTimetablePureTests(TestCase):
                 )
                 self.assertIsNone(weekly_rpt_suggestion("Pahang", date(2027, 10, 26), "MATH", year))
 
+    def test_math_2027_uses_approved_rpt_without_reusing_legacy_progress(self):
+        schedule = {"entries": [
+            {"day": day, "start": "08:00", "end": "09:00", "class_name": "2 Bestari", "subject": "Matematik"}
+            for day in ("Isnin", "Selasa", "Rabu")
+        ]}
+        profile = {"state_name": "Pahang"}
+        legacy_date = date(2026, 11, 16)
+        legacy = day_payload(profile, schedule, legacy_date, today=legacy_date)
+        self.assertEqual(legacy["entries"][0]["subject_code"], "MATH")
+        legacy_progress = [{"class_key": "2 bestari", "subject_code": "MATH", "component": "",
+                            "pdp_date": "2026-11-16", "start_time": "08:00:00", "sequence_no": 93}]
+        attach_progress(legacy, legacy_progress)
+        self.assertEqual(legacy["entries"][0]["progress"][""]["completed"], 93)
+        target = date(2027, 1, 11)
+        week = week_payload(profile, schedule, target, today=target)
+        for day in week["days"]:
+            attach_progress(day, legacy_progress)
+        assign_week_suggestions(week["days"])
+        entries = [slot for day in week["days"] for slot in day["entries"]]
+        self.assertEqual([slot["suggested_session"] for slot in entries], [[3], [4], [5]])
+        self.assertTrue(all(slot["subject_code"] == "MATH_DPK3" for slot in entries))
+        self.assertTrue(all("progress" not in slot for slot in entries))
+
     def test_aligned_math_auto_assigns_only_when_the_timetable_matches_slot_lengths(self):
         schedule = {"entries": [
             {"day": day, "start": "08:00", "end": end, "class_name": "5 Bestari", "subject": "Matematik"}

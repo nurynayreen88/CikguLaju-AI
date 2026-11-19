@@ -197,6 +197,8 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
         entries=[]
         display_years=((1,)+years) if code in YEAR1_KP2027_CODES else years
         for year in display_years:
+            if code == "matematik" and year in matematik_sk.DPK_DIGESTS:
+                continue
             # Tahun 1 follows the KP2027 curriculum, a separate source from
             # the old KSSR/2017 PDF. Explicit non-downloadable placeholder.
             if year==1:
@@ -309,12 +311,12 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
     dpk_entries = [
         {"year": year, "pdf_ready": True, "status": "TERSEDIA",
          "download_enabled": bool(allowed), "is_draft": False,
-         "note": "Pilihan DPK Edisi 3. Kumpulan A dan B, 117 Lesson dalam 96 jam."}
+         "note": "Kumpulan A dan B. 117 Lesson dalam 96 jam."}
         for year in matematik_sk.DPK_DIGESTS
         if matematik_sk.document_path(year, root=Path(root) / "matematik", dpk=True)
     ]
     if dpk_entries:
-        subjects.append({"code": MATH_DPK_CODE, "label": "Matematik (DPK Edisi 3)",
+        subjects.append({"code": MATH_DPK_CODE, "label": "Matematik",
                          "years": dpk_entries})
     return {
         "year":2027,
@@ -322,7 +324,7 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
         "allowed":bool(allowed),
         "personalization_allowed":bool(personalization_allowed),
         "subjects":subjects,
-        "total_rpt":56+dlp_count+sjk_count+len(dpk_entries),
+        "total_rpt":56+dlp_count+sjk_count,
         "total_display_choices":sum(len(item["years"]) for item in subjects),
         "year1_coming_soon":10,
         "available_rpt":available+dlp_count+sjk_count+len(dpk_entries),
