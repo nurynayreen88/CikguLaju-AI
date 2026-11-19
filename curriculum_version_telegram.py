@@ -4,7 +4,8 @@ from logging import getLogger
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
-from dlp_year2_rph import catalog, filename, render, resolve
+from dlp_year2_rph import filename
+from staging.dlp.year2.downloads import BY_SUBJECT
 
 from curriculum_version_selector import KP2027, LEGACY, resolve_curriculum
 from primary_language_subjects import PRIMARY_LANGUAGE_SUBJECTS
@@ -44,7 +45,7 @@ def install(namespace):
     dev_subjects = namespace.get("_CIKGULAJU_DEV_SUBJECTS_V2617")
     if dev_subjects is not None:
         dev_subjects.update(dict.fromkeys(PRIMARY_LANGUAGE_SUBJECTS.values(), tuple(range(1, 7))))
-    dlp_catalog = catalog()
+    dlp_catalog = {code: module.units for code, module in BY_SUBJECT.items()}
     downloading = set()
 
     def curriculum_menu(cid):
@@ -122,7 +123,8 @@ def install(namespace):
     def dlp_lessons(cid, subject_key, unit):
         state[cid]["dlp_unit"] = unit["id"]
         state[cid].pop("dlp_lesson", None)
-        keyboard = [[{"text": lesson["title"], "callback_data": "cv_dlp_rph_" + lesson["id"]}]
+        keyboard = [[{"text": f"{lesson['numbered_label']} · {lesson['title']}"[:64],
+                      "callback_data": "cv_dlp_rph_" + lesson["id"]}]
                     for lesson in unit["lessons"]]
         keyboard.append([{"text": "⬅️ Pilih Unit", "callback_data": subject_key}])
         return send(cid, f"<b>{escape(unit['title'])}</b>\nPilih tajuk RPH.", keyboard)
@@ -144,7 +146,8 @@ def install(namespace):
         if subject_key not in DLP_SUBJECTS:
             return send(cid, "Sila pilih subjek DLP semula.")
         code, _ = DLP_SUBJECTS[subject_key]
-        plan = resolve(2, code, st.get("dlp_unit"), lesson_id)
+        module = BY_SUBJECT[code]
+        plan = module.resolve_download(st.get("dlp_unit"), lesson_id)
         if plan is None:
             return send(cid, "RPH DLP ini tidak tersedia. Sila pilih tajuk semula.")
         if cid in downloading:
@@ -153,11 +156,11 @@ def install(namespace):
         try:
             if not namespace["_credit_gate"](cid, st):
                 return
-            unit, lesson = plan
+            _, lesson = plan
             teacher = {"class": "", "date": "", "time": "", "students": ""}
             with TemporaryDirectory(prefix="cikgulaju-dlp-") as directory:
                 path = Path(directory) / filename(lesson_id, fmt)
-                path.write_bytes(render(code, unit, lesson, fmt, teacher))
+                path.write_bytes(module.render_download(lesson, fmt, teacher))
                 result = namespace["send_document"](cid, str(path), escape(lesson["title"]))
             if namespace["_telegram_delivery_ok_v25279"](result):
                 return result

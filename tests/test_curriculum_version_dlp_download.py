@@ -9,8 +9,10 @@ from unittest.mock import patch
 
 from docx import Document
 from flask import Flask
+from pypdf import PdfReader
 
 from dlp_year2_rph import catalog, render, resolve, rpt_lessons, science_rpt_lessons
+from staging.dlp.year2.downloads import BY_SUBJECT
 from web.native_rph_telegram_api import create_native_rph_blueprint
 
 
@@ -61,8 +63,9 @@ class DlpDownloadTests(unittest.TestCase):
                       word.headers["Content-Disposition"])
         doc = Document(BytesIO(word.data))
         self.assertEqual(doc.paragraphs[2].text, "Explain Observations About a Built Model")
-        self.assertIn("2 Bestari", doc.tables[0].cell(2, 1).text)
-        self.assertIn("LS 10.1.6", doc.tables[0].cell(3, 1).text)
+        fields = {left.text: right.text for left, right in (row.cells for row in doc.tables[0].rows)}
+        self.assertIn("2 Bestari", fields["Class / date / time"])
+        self.assertIn("LS 10.1.6", fields["Standards"])
         self.assertEqual(doc.tables[-1].cell(0, 1).text, self.teacher["reflection"])
         self.assertEqual(len(doc.tables[1].rows), 5)
         pdf = self.download("pdf")
@@ -120,6 +123,41 @@ class DlpDownloadTests(unittest.TestCase):
                 self.assertEqual(schedule[lesson["id"]], {"number": number, "minutes": 60})
                 doc = Document(BytesIO(render("MATH_DLP", unit, lesson, "word", self.teacher)))
                 self.assertEqual(doc.tables[0].cell(1, 1).text, f"Lesson {number:02d} · 60 min")
+
+    def test_year_two_catalogues_download_all_lessons_and_reviews(self):
+        for slug, subject, units_count, count in (
+            ("science", "SCIENCE_DLP", 10, 67), ("mathematics", "MATH_DLP", 8, 96),
+        ):
+            catalogue = f"{self.path}/year2-{slug}/catalogue"
+            self.assertEqual(self.client.get(catalogue).status_code, 401)
+            reply = self.client.get(catalogue, headers=self.headers)
+            self.assertEqual(reply.status_code, 200)
+            units = reply.json["units"]
+            self.assertEqual((reply.json["year"], reply.json["subject"]), (2, subject))
+            self.assertEqual(len(units), units_count)
+            self.assertEqual(sum(len(unit["lessons"]) for unit in units), count)
+            for unit in units:
+                for item in unit["lessons"]:
+                    with self.subTest(lesson=item["id"]):
+                        selection = {"year": 2, "subject": subject, "unit": unit["id"],
+                                     "lesson": item["id"]}
+                        _, plan = BY_SUBJECT[subject].resolve_download(unit["id"], item["id"])
+                        word = self.download("word", selection=selection)
+                        self.assertEqual(word.status_code, 200)
+                        doc = Document(BytesIO(word.data))
+                        fields = {a.text: b.text for a, b in (row.cells for row in doc.tables[0].rows)}
+                        self.assertIn("2 Bestari", fields["Class / date / time"])
+                        self.assertEqual(fields["Learning objective"], plan["objective"])
+                        self.assertEqual(fields["RPT 2027 dates"], " · ".join(plan["rpt_dates"]))
+                        self.assertEqual(fields["Lesson / PdP"], f"{item['label']} · {item['minutes']} min")
+                        self.assertEqual(len(doc.tables[1].rows), 5)
+                        minutes = sum(int(row.cells[0].text.split()[-2]) for row in doc.tables[1].rows[1:])
+                        self.assertEqual(minutes, item["minutes"])
+                        pdf = self.download("pdf", selection=selection)
+                        self.assertEqual(pdf.status_code, 200)
+                        page, = PdfReader(BytesIO(pdf.data)).pages
+                        self.assertAlmostEqual(float(page.mediabox.width), 595.28, delta=1)
+                        self.assertAlmostEqual(float(page.mediabox.height), 841.89, delta=1)
 
     def test_mathematics_rpt_keeps_96_hours_before_assessment(self):
         folder = Path(__file__).resolve().parents[1] / "rpt_2027" / "dlp"
