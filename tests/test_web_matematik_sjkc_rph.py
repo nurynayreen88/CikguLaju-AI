@@ -39,13 +39,13 @@ class WebMatematikSjkcRph(unittest.TestCase):
                       "teacher_class": "3 智慧班", "teacher_date": "2027-01-17",
                       "teacher_start": "09:00", "teacher_end": "10:00", "teacher_students": "32"}
 
-    def test_catalog_lists_year_3_only_when_telegram_source_answers(self):
+    def test_catalog_lists_years_two_and_three_when_telegram_source_answers(self):
         with patch.object(sjkc, "options", return_value=[{"value": "1", "label": "Unit 1"}]):
             for year in (2, 3, 4):
                 result = self.client.get("/api/options", query_string={
                     "kind": "subjects", "year": year, "curriculum": "sjkc",
                 })
-                self.assertEqual(any(row["value"] == sjkc.SUBJECT for row in result.get_json()), year == 3)
+                self.assertEqual(any(row["value"] == sjkc.SUBJECT for row in result.get_json()), year in (2, 3))
             sk = self.client.get("/api/options?kind=subjects&year=3")
             self.assertEqual(sk.status_code, 200)
             self.assertNotIn(sjkc.SUBJECT, {row["value"] for row in sk.get_json()})
@@ -63,6 +63,24 @@ class WebMatematikSjkcRph(unittest.TestCase):
             result = self.client.get("/api/options", query_string=params)
             self.assertEqual(result.get_json()[0]["value"], "17")
             options.assert_called_once_with(3, "2")
+
+    def test_year_two_uses_eight_units_and_the_same_authenticated_delivery(self):
+        self.query.update(year=2, unit="8", lesson="96")
+        with patch.object(sjkc, "_query") as query:
+            query.return_value = [{"value": str(n), "label": f"Unit {n}"} for n in range(1, 9)]
+            response = self.client.get("/api/options", query_string={
+                "kind": "units", "subject": sjkc.SUBJECT, "year": 2,
+            })
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(len(response.get_json()), 8)
+            self.assertEqual(query.call_args.kwargs["school"].unit_count, 8)
+            query.return_value = {"available": True}
+            with patch.object(sjkc, "_request", return_value=b"%PDF-" + b"x" * 1000 + b"%%EOF") as render:
+                response = self.client.get("/api/web/rph/pdf", query_string=self.query)
+            self.assertEqual(response.status_code, 200)
+            self.assertIn("MATH_SJKC_TAHUN_2_096", response.headers["Content-Disposition"])
+            self.assertEqual(render.call_args.kwargs["payload"]["year"], 2)
+            self.assertEqual(render.call_args.kwargs["payload"]["pdp"], 96)
 
     def test_invalid_unit_returns_bad_request(self):
         response = self.client.get("/api/options", query_string={

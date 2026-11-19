@@ -1471,7 +1471,7 @@ const dlpReviewContent=document.getElementById("dlp-rph-content");
 const subjectVariants=window.cikgulajuSubjectVariants||[];
 function canSelectRph(){
  return curriculum.value==="kssr"||dlpRphDownload()||
-  (curriculum.value==="sjkc"&&year.value==="3"&&subject.value==="MATH_SJKC")||
+  (curriculum.value==="sjkc"&&["2","3"].includes(year.value)&&subject.value==="MATH_SJKC")||
   (curriculum.value==="sjkt"&&year.value==="2"&&subject.value==="MATH_SJKT");
 }
 function dlpRphDownload(){
@@ -1757,7 +1757,7 @@ year.addEventListener("change",async()=>{
   const sjkt=choice==="sjkt", school=sjkt?"SJKT":"SJKC";
   const mathCode="MATH_"+school, mathVariant="matematik_"+choice;
   let mathReady=false;
-  if(targetYear===(sjkt?"2":"3")){
+  if(targetYear==="2"||(!sjkt&&targetYear==="3")){
    try{
     const items=await loadOptions("subjects",{curriculum:choice});
     mathReady=items.some(item=>item.value===mathCode);
