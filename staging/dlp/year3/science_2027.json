@@ -600,7 +600,7 @@
         "AB pp. 22-25"
       ],
       "objective": "Use a labelled diagram to explain how one dental care practice protects the tooth.",
-      "materials": "Tooth model, large demonstration brush, care routine cards and tooth outlines.",
+      "materials": "Tooth model, washable food-residue marks, demonstration brush and tooth outlines.",
       "phases": [
         {
           "phase": "Set induction",
@@ -611,14 +611,14 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Use a model to demonstrate where a brush reaches and how a care routine applies to the tooth surface. Offer ordinary scenarios to discuss.",
-          "pupils": "Practise on the model, then mark which part of a tooth the chosen care action protects."
+          "teacher": "Mark the chewing surface and gumline on the model. Demonstrate gentle brushing and compare the marks before and after.",
+          "pupils": "Practise on the model. On a tooth outline, mark where a simulated residue mark changed after brushing."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Check each pupil’s diagram and explanation for a correct part, practice and reason.",
-          "pupils": "Label the tooth area, show one care practice and explain how it helps protect the tooth."
+          "teacher": "Check for a labelled part, a before-and-after observation and a care action linked to that part.",
+          "pupils": "Annotate the tooth outline with one observed change and explain how brushing helps clean that area."
         },
         {
           "phase": "Closure",
@@ -627,7 +627,7 @@
           "pupils": "Give a care action and link it to the tooth or gum area shown."
         }
       ],
-      "follow_up": "Help pupils connect the care action to the part protected."
+      "follow_up": "Have pupils point to the model area that supports their explanation."
     },
     {
       "id": "DLP-SCI-Y3-14",
@@ -803,14 +803,14 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Guide groups to compare variety and proportion, then model linking one repeated imbalance to a likely effect without judging individuals.",
-          "pupils": "Mark strengths and gaps in each menu, then discuss realistic changes the less balanced menu could make."
+          "teacher": "Guide groups to label the food classes represented in two menus. Model tying a repeated imbalance to one effect.",
+          "pupils": "Annotate each menu with examples of food classes. Use the pyramid to compare the two menus over time."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Check each pupil identifies an evidence-based difference, one possible effect and one specific improvement.",
-          "pupils": "Compare the two menus and state one likely effect and one change for the less balanced menu."
+          "teacher": "Check a labelled food example, one possible effect of a repeated imbalance and a realistic change.",
+          "pupils": "Label one food class in each menu. Explain one likely effect of the less balanced pattern and one change that addresses it."
         },
         {
           "phase": "Closure",
@@ -819,7 +819,7 @@
           "pupils": "Explain that repeated patterns affect the body over time."
         }
       ],
-      "follow_up": "Check changes address an identified imbalance in the menu."
+      "follow_up": "Ask pupils to revise an improvement that does not address the class or proportion they identified."
     },
     {
       "id": "DLP-SCI-Y3-18",
@@ -947,14 +947,14 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Model arrows from the small intestine to the blood and along the digestive tract toward the exit. Use cards to contrast what each route carries.",
-          "pupils": "Place nutrient and waste cards on the diagram, trace the arrows and explain the two processes to a partner."
+          "teacher": "Model two routes: nutrients through the wall of the small intestine into the blood, and remaining undigested food toward the exit.",
+          "pupils": "Place nutrient and remaining-food cards on the two routes. Explain what each arrow carries."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Check individual diagrams use two correctly labelled routes with a phrase for each process.",
-          "pupils": "Draw and label nutrient absorption and the removal of undigested waste using different arrows."
+          "teacher": "Check arrows and a conclusion that the remaining undigested food goes through the large intestine and leaves as faeces.",
+          "pupils": "Draw and label the two routes. Add a sentence about what happens to the material the body does not use."
         },
         {
           "phase": "Closure",
@@ -963,7 +963,7 @@
           "pupils": "Point to the route toward the blood and explain why the routes differ."
         }
       ],
-      "follow_up": "Correct confusion about absorption and the route out of the body."
+      "follow_up": "Use the diagram to revisit any answer that sends both nutrients and remaining food along the same route."
     },
     {
       "id": "DLP-SCI-Y3-R01",
@@ -1224,7 +1224,7 @@
         "AB pp. 45-46"
       ],
       "objective": "Match at least four familiar plants to a method of reproduction using specimen cards.",
-      "materials": "Specimen photos or cards of seeds, stem cuttings, leaf plantlets and other verified examples.",
+      "materials": "Six specimen photos: chilli, banana, potato, fern, cassava and snake plant. Six method cards.",
       "phases": [
         {
           "phase": "Set induction",
@@ -1235,14 +1235,14 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Model matching a plant to a method using an observed clue. Give groups at least four vetted specimens or clear photos with method cards.",
-          "pupils": "Identify the visible clue and match each plant to its method of reproduction."
+          "teacher": "Model matching chilli to seeds. Offer one specimen for each remaining method and ask groups to identify the relevant part or clue.",
+          "pupils": "Match all six examples: seed, sucker, underground stem, spore, stem cutting and leaf. Point to the relevant clue."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Shuffle the same examples and check each pupil can independently match at least four.",
-          "pupils": "Match four familiar plants to their reproduction methods using the cards."
+          "teacher": "Shuffle the cards. Check four independent matches and ask each pupil to explain one of them.",
+          "pupils": "Match at least four specimens to their methods. Name or point to the plant part that supports one match."
         },
         {
           "phase": "Closure",
@@ -1251,7 +1251,7 @@
           "pupils": "Point to the observable plant part and name its method."
         }
       ],
-      "follow_up": "Recheck examples where the growing part was overlooked."
+      "follow_up": "Revisit the method for any example a pupil matched to the wrong part."
     },
     {
       "id": "DLP-SCI-Y3-26",
@@ -1320,25 +1320,25 @@
         "AB pp. 49-50"
       ],
       "objective": "Set up two teacher-approved methods for one suitable plant and start a dated observation log.",
-      "materials": "Teacher-prepared sweet potato material for two growth methods, labelled containers and observation logs.",
+      "materials": "Water spinach seeds, rooted water spinach stem cuttings, labelled containers, soil, water and dated logs.",
       "phases": [
         {
           "phase": "Set induction",
           "minutes": 5,
-          "teacher": "Show a teacher-held stem cutting and a sprouting tuber from the same kind of plant.",
-          "pupils": "Identify the part being used in each method."
+          "teacher": "Show water spinach seeds and a rooted cutting from the same species. Ask where new shoots might appear.",
+          "pupils": "Identify which setup starts with a seed and which starts with a cutting."
         },
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Prepare compatible containers, label each method and demonstrate starting both using teacher-approved material. Guide pupils to document initial conditions and agree a safe observation routine.",
-          "pupils": "Set up or assist at two supervised stations, label both methods and record the date and starting observations for each."
+          "teacher": "Use the water spinach project on textbook p. 76. Set up the seeds in soil and the rooted cuttings in water. Agree a daily observation time.",
+          "pupils": "Label the two setups and log the date and starting appearance. Plan to record any new shoot at each daily check."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Check each pair has both labelled setups, a dated baseline and a named feature to follow. Ask each pupil to explain a label.",
-          "pupils": "Make the initial entries for both methods and state one visible change to look for in follow-up observations."
+          "teacher": "Check both setups and each pupil’s baseline. Ask what evidence would count as a new shoot.",
+          "pupils": "Record the initial condition for each method and state one visible change to look for."
         },
         {
           "phase": "Closure",
@@ -1347,7 +1347,7 @@
           "pupils": "Refer to the method and date labels and agree when to check them."
         }
       ],
-      "follow_up": "Check both methods are logged from the start and follow-up is arranged."
+      "follow_up": "Check the two labels and reading times before beginning the daily log."
     },
     {
       "id": "DLP-SCI-Y3-28",
@@ -1368,7 +1368,7 @@
         "AB pp. 50-52"
       ],
       "objective": "Compare dated records from both propagation methods and support one conclusion using class records or mature samples.",
-      "materials": "Dated records from Lesson 27, prepared comparison records or mature samples and a chart template.",
+      "materials": "Dated water spinach logs from Lesson 27, labelled teacher comparison photos and a two-column chart.",
       "phases": [
         {
           "phase": "Set induction",
@@ -1379,14 +1379,14 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Model aligning observations by date. If growth is incomplete, give clearly labelled teacher records or mature samples alongside the class log.",
-          "pupils": "Compare both methods, cite dated details and explain what can or cannot yet be concluded."
+          "teacher": "Show how to compare seed and cutting entries by elapsed day. Supply labelled photos from an earlier setup if the class logs are incomplete.",
+          "pupils": "Compare new shoots in both logs. Label each observation as class evidence or an earlier teacher example."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Check each pupil’s conclusion cites an observation from both methods or names the prepared comparison source.",
-          "pupils": "Summarise two dated observations and support one conclusion using the records or mature samples."
+          "teacher": "Check two dated entries and a conclusion supported by both methods. Accept a pending result if one has yet to show growth.",
+          "pupils": "Cite one dated observation for each method. State whether the evidence so far supports growth by both methods."
         },
         {
           "phase": "Closure",
@@ -1395,7 +1395,7 @@
           "pupils": "Explain how dates make a comparison fairer to interpret."
         }
       ],
-      "follow_up": "Revisit conclusions that assume unobserved growth."
+      "follow_up": "Continue the log for any method without visible growth before drawing a class conclusion."
     },
     {
       "id": "DLP-SCI-Y3-R02",
@@ -1715,14 +1715,14 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Model choosing a suitable object, reading the initial level and lowering it fully without overflow or air bubbles. Record both levels before subtracting.",
-          "pupils": "Repeat the paired readings with a teacher-approved object, list them in order and calculate the difference."
+          "teacher": "Read at eye level before and after fully submerging a fitting object. Check for trapped air. Model final reading minus initial reading.",
+          "pupils": "Record the two readings for the same object and calculate the difference. Repeat if the readings are unclear."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Check each pupil records initial and final mL values, subtracts in the correct order and identifies displaced volume.",
-          "pupils": "Measure or interpret the two readings and calculate the displaced volume with a unit."
+          "teacher": "Provide a separate card with 25 mL before and 38 mL after. Check subtraction and the unit for solid volume.",
+          "pupils": "Show 38 mL minus 25 mL and report the solid’s volume as 13 cm³. Compare the method with the group measurement."
         },
         {
           "phase": "Closure",
@@ -1731,7 +1731,7 @@
           "pupils": "Use the readings to explain why the change is needed."
         }
       ],
-      "follow_up": "Recheck readings and the order of subtraction."
+      "follow_up": "Revisit that an increase of 1 mL in water level represents 1 cm³ of submerged solid."
     },
     {
       "id": "DLP-SCI-Y3-35",
@@ -1896,25 +1896,25 @@
         "AB pp. 68"
       ],
       "objective": "Compare an object's behaviour in fresh and salt water and explain the change using density.",
-      "materials": "Two transparent cups, fresh water, teacher-prepared salt solution, small potato pieces and trays.",
+      "materials": "Fresh water, teacher-pretested salt solution, equal cups, one pretested potato piece per group and trays.",
       "phases": [
         {
           "phase": "Set induction",
           "minutes": 5,
-          "teacher": "Show two similar cups and ask what can be changed while using the same type of test object.",
-          "pupils": "Suggest comparing plain water with dissolved salt while keeping the object consistent."
+          "teacher": "Show a potato piece sinking in fresh water. Challenge groups to make that piece float by changing the water.",
+          "pupils": "Suggest what to change in the water and what to keep the same."
         },
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Guide a pre-tested demonstration with water and salt solution. Ask the class to observe the same object placed gently in both liquids.",
-          "pupils": "Record its behaviour in fresh and salt water and compare the two outcomes using the class observations."
+          "teacher": "Offer fresh water and a pretested salt solution. Ask groups to plan two trials with the same piece and record each outcome.",
+          "pupils": "Compare the same piece in the two cups. Keep the amount of liquid similar and record whether the piece floats."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Check each pupil records both outcomes and explains that dissolving salt increased the water’s density.",
-          "pupils": "Submit a comparison and connect a change in floating or sinking to the denser solution."
+          "teacher": "Check one comparison from the table and an explanation of how the solution changed.",
+          "pupils": "Use the two observations to explain how dissolving salt made the water denser and changed what happened to the piece."
         },
         {
           "phase": "Closure",
@@ -1923,7 +1923,7 @@
           "pupils": "Explain that the same test object helps isolate the difference between the liquids."
         }
       ],
-      "follow_up": "Recheck the density comparison of the liquids and what the results show."
+      "follow_up": "If both results are the same, review the pretest and record what actually happened."
     },
     {
       "id": "DLP-SCI-Y3-39",
@@ -1992,7 +1992,7 @@
         "AB pp. 69-71"
       ],
       "objective": "Record changes to red and blue litmus for three teacher-prepared samples and classify each sample.",
-      "materials": "Red and blue litmus, droppers, trays, water and teacher-prepared dilute sample cups.",
+      "materials": "Red and blue litmus, separate droppers, trays and teacher-prechecked acidic, alkaline and neutral samples.",
       "phases": [
         {
           "phase": "Set induction",
@@ -2003,14 +2003,14 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Demonstrate one drop on each colour of litmus. Give three teacher-prepared samples with separate droppers and provide a colour key.",
-          "pupils": "Observe changes for both indicators, record initial and final colours and classify each sample with the key."
+          "teacher": "Test a prechecked neutral water sample and show how to use a fresh red and blue strip for each labelled sample.",
+          "pupils": "Record the starting and final colours of both strips for three samples. Classify the samples from the paired results."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Check each pupil records both indicators for all three samples and gives a classification supported by the observed pattern.",
-          "pupils": "Submit the three-row table and explain what the paired colours show for one sample."
+          "teacher": "Check the paired results. Blue turning red supports acidic. Red turning blue supports alkaline. Both unchanged supports neutral in this test.",
+          "pupils": "Submit the three-row table. For one sample, use both of its strip outcomes to explain the classification."
         },
         {
           "phase": "Closure",
@@ -2019,7 +2019,7 @@
           "pupils": "Explain that both red and blue strips need to be considered."
         }
       ],
-      "follow_up": "Recheck paired readings and the definition of neutral."
+      "follow_up": "Repeat both strips with a prechecked comparison sample if the two results conflict."
     },
     {
       "id": "DLP-SCI-Y3-41",
@@ -2040,7 +2040,7 @@
         "AB pp. 72-74"
       ],
       "objective": "Use teacher-provided descriptions to compare examples and explain why taste or touch cannot identify an unknown substance.",
-      "materials": "Teacher-supplied descriptions of familiar examples, property comparison table and safety cards.",
+      "materials": "Teacher description cards for known acidic, alkaline and neutral examples, litmus records and a comparison chart.",
       "phases": [
         {
           "phase": "Set induction",
@@ -2051,14 +2051,14 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Provide descriptions of known materials. Guide pupils to distinguish a reported property from a tested result and model the safety response to an unknown sample.",
-          "pupils": "Compare two described examples on a chart and propose a safe method when a substance is unknown."
+          "teacher": "Compare descriptions of familiar examples and show the separate litmus record for each. Discuss which evidence to use for an unknown sample.",
+          "pupils": "Use the cards to compare two examples. Identify the wording that comes from a description and the colour evidence from the test."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Check each pupil compares examples using the descriptions and explains why tasting or touching unknowns is unsafe and inconclusive.",
-          "pupils": "Submit two comparisons and a safety reason with a safer source of evidence."
+          "teacher": "Check two comparisons based on the supplied descriptions. Ask how a pupil would respond to an unlabelled sample.",
+          "pupils": "Submit two comparisons. Tell the teacher about an unlabelled sample and explain the value of the documented indicator results."
         },
         {
           "phase": "Closure",
@@ -2067,7 +2067,7 @@
           "pupils": "Explain the class safety rule and identify a safer evidence source."
         }
       ],
-      "follow_up": "Recheck descriptions are cited as reported properties, without asking pupils to test sensations."
+      "follow_up": "Check pupils distinguish reported sensations from the indicator results they use as evidence."
     },
     {
       "id": "DLP-SCI-Y3-42",
@@ -2099,14 +2099,14 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Demonstrate the procedures and guide pupils to compare results using a teacher-provided colour reference for the plant indicator.",
-          "pupils": "Record both indicators for the same labelled samples. Note a similarity and a difference between the ways results are shown."
+          "teacher": "Show the plant-indicator colour reference made with known samples. Test labelled samples alongside litmus using separate clean droppers.",
+          "pupils": "Use the same sample labels in both columns. Record the observed colour and interpret each test with its own key."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Check each pupil has paired observations for the same samples and gives one accurate comparison.",
-          "pupils": "Complete the grid and describe one observed similarity or difference supported by the colour records."
+          "teacher": "Check two paired records and one claim about agreement or difference supported by the colour keys.",
+          "pupils": "Compare the two indicator results for one sample and explain your claim using its recorded colours and the two keys."
         },
         {
           "phase": "Closure",
@@ -2115,7 +2115,7 @@
           "pupils": "Explain that different indicators can show different colours for the same type of substance."
         }
       ],
-      "follow_up": "Correct classifications that assume plant indicator and litmus use identical colours."
+      "follow_up": "Revisit any conclusion that uses litmus colours to interpret the plant indicator."
     },
     {
       "id": "DLP-SCI-Y3-43",
@@ -2184,7 +2184,7 @@
         "Teacher-selected prompts"
       ],
       "objective": "Correct one measurement and explain a result from a density or litmus table.",
-      "materials": "A misread scale card, a measured-area record and two short density or litmus tables.",
+      "materials": "Cylinder drawing with 20, 25 and 30 mL marks. Recorded results for a cork or a sample tested with two litmus strips.",
       "phases": [
         {
           "phase": "Set induction",
@@ -2195,14 +2195,14 @@
         {
           "phase": "Main activity",
           "minutes": 15,
-          "teacher": "Review units and one method from Unit 6. Offer a choice of a density and a litmus evidence table from the taught units.",
-          "pupils": "Correct a sample measurement and circle the table evidence explaining a separate result."
+          "teacher": "Show a reading of 30 mL written for a meniscus at 25 mL. Provide a cork-float record and a litmus result to choose from.",
+          "pupils": "Correct the reading, then choose either the float record or the paired litmus record and locate its evidence."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 9,
-          "teacher": "Check each pupil has one corrected measurement and one valid interpretation linked to a table entry.",
-          "pupils": "Submit the corrected reading with units and one evidence-based explanation from a density or litmus table."
+          "teacher": "Check 25 mL. Accept a cork-density inference or a litmus classification when supported by the selected record.",
+          "pupils": "Write the corrected reading with its unit and justify one inference using a value or observation in your chosen record."
         },
         {
           "phase": "Closure",
@@ -2211,7 +2211,7 @@
           "pupils": "Name a unit, a scale mark or a relevant table entry."
         }
       ],
-      "follow_up": "Recheck the specific method or interpretation that produced the error."
+      "follow_up": "Use the wrong scale mark or evidence entry to select a short follow-up question."
     },
     {
       "id": "DLP-SCI-Y3-44",
@@ -2537,17 +2537,17 @@
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Ask each pupil to show the two directions on a fresh model sketch and explain the change observed.",
-          "pupils": "Draw a downward pull arrow and an upward load arrow for the demonstrated setup."
+          "teacher": "Check the pull and load arrows on a new sketch. Ask what the single fixed pulley changes in this demonstration.",
+          "pupils": "Draw a downward pull arrow and an upward load arrow. Explain that the pulley changes the direction of the pull."
         },
         {
           "phase": "Closure",
           "minutes": 5,
-          "teacher": "Ask what the fixed pulley changes in the observed setup.",
-          "pupils": "Describe the direction of the applied pull relative to the rising load."
+          "teacher": "Ask what the direction arrows can show about this model.",
+          "pupils": "State the two directions indicated by the labelled arrows."
         }
       ],
-      "follow_up": "Check pupils keep pull and load arrows distinct."
+      "follow_up": "Have pupils replay the pull and trace the cord if their two arrows point the same way."
     },
     {
       "id": "DLP-SCI-Y3-51",
@@ -2627,14 +2627,14 @@
         {
           "phase": "Main activity",
           "minutes": 30,
-          "teacher": "Model a safe setup under teacher supervision. Check supports, allow pairs to test a very light load and ask for one adjustment if needed.",
-          "pupils": "Assemble the model with guidance, test one pull and revise the rope path as needed. Make a labelled sketch with motion arrows."
+          "teacher": "Check support and rope placement before testing. Assign a builder and an observer, then switch roles for a second test.",
+          "pupils": "Assemble and test the model with a light load. Record the observed motion, then swap roles and check the rope path."
         },
         {
           "phase": "Practice and assessment",
           "minutes": 20,
-          "teacher": "Observe each pupil demonstrate the working model or explain the paired test. Check the drawing labels the parts and directions correctly.",
-          "pupils": "Raise the test load and use the wheel, rope, load and labelled arrows in an explanation."
+          "teacher": "Observe the pair lift the load. Ask each pupil for an individual sketch with a supported explanation.",
+          "pupils": "Show the load rise in the test. Draw the wheel, rope and load with arrows for pull and load motion."
         },
         {
           "phase": "Closure",
@@ -2643,7 +2643,7 @@
           "pupils": "Describe an adjustment and the observed result."
         }
       ],
-      "follow_up": "Recheck the safe assembly test and which arrows explain the direction change."
+      "follow_up": "Ask a pupil to correct the rope path or the two arrows and demonstrate the result."
     },
     {
       "id": "DLP-SCI-Y3-R04",
