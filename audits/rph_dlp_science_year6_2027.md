@@ -28,3 +28,7 @@ Lesson 14–15 merekod penyiasatan, pemboleh ubah dan bacaan murid bagi LS 3.1.3
 Jalankan `PYTHONPATH=. python -m staging.dlp.year6.render_science --output /tmp/rph-science-dlp-y6` dari akar repositori. Penjana menyemak versi RPT sumber sebelum mengeksport RPT semakan Word dan 61 RPH Word/PDF. Terdapat 16 sesi 30 minit, 27 sesi 60 minit, 14 sesi 90 minit dan empat sesi 120 minit. Sesi 90 dan 120 minit mempunyai aplikasi berpandu yang sepadan dengan tugasan setiap sesi.
 
 Semakan setempat membandingkan 61 baris RPT menggunakan tarikh, minit, turutan, standard, rujukan dan PBD. Setiap RPH Word dan PDF muat satu halaman A4. RPT semakan dihasilkan sebagai salinan. **HOLD semakan guru dan CI.** Muat turun set ini melalui akaun guru di Web dan Telegram belum diuji.
+
+## Deskripsi Content Standards dan Learning Standards
+
+Sebanyak 18 CS dan 96 LS dipadankan dengan DSKP Sains Tahun 6 Edisi Bahasa Inggeris KPM 2021. RPH memaparkan penerangan bahasa Inggeris yang diringkaskan daripada maksud standard. Setiap sesi Review menggunakan CS induk dan LS daripada pelajaran yang sudah diajar dalam unitnya. Ujian memeriksa teks dalam semua 61 Word dan PDF serta cetakan satu halaman A4. [DSKP Edisi Bahasa Inggeris](https://asiemodel.net/wp-content/uploads/2022/08/DLP_DSKP-KSSR-Revised-2017-Science-Year-6.pdf)

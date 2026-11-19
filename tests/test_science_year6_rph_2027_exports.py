@@ -106,9 +106,22 @@ class ScienceYear6ReviewExports(unittest.TestCase):
         self.assertIn("balloon circumference", by_id["L14"]["phases"][1][2])
         self.assertIn("Count both samples", by_id["L15"]["phases"][2][2])
         self.assertIn("captioned sketch", by_id["L16"]["phases"][2][2])
+        self.assertIn("2.1 Human reproduction", by_id["R02"]["content_standards"])
+        self.assertIn("2.2 Nervous system", by_id["R02"]["content_standards"])
+        self.assertIn("2.2.3 State what the peripheral nervous system does.",
+                      by_id["R02"]["learning_standards"])
 
         with TemporaryDirectory(prefix="science_dlp_year6_review_") as directory:
             folder = Path(directory)
             export(folder, rpt, plans)
             titles = {f"CikguLaju_RPH_Science_DLP_Y6_{plan['id']}": plan["title"] for plan in plans}
+            for plan in plans:
+                stem = f"CikguLaju_RPH_Science_DLP_Y6_{plan['id']}"
+                word = Document(folder / f"{stem}.docx")
+                fields = {row.cells[0].text: row.cells[1].text for row in word.tables[0].rows}
+                self.assertEqual(fields["Content Standards"], plan["content_standards"])
+                self.assertEqual(fields["Learning Standards"], plan["learning_standards"])
+                pdf_text = " ".join(PdfReader(folder / f"{stem}.pdf").pages[0].extract_text().split())
+                for entry in plan["learning_standards"].split(" · "):
+                    self.assertIn(entry, pdf_text)
             self.check_exports(folder, titles, f"{RPT_NAME}_Teacher_Review", 7)
