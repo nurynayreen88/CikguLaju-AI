@@ -142,16 +142,30 @@ def options():
         school = {"sjkc": sjkc, "sjkt": sjkt}.get(request.args.get("curriculum"))
         if kind == "subjects" and school is not None:
             return jsonify([{"value": school.SUBJECT, "label": school.LABEL}] if school.available(year) else [])
-        dlp_subject = request.args.get("subject")
-        if dlp_subject in ("MATH_DLP", "SCIENCE_DLP") and kind in ("units", "pdp"):
+        native_subject = request.args.get("subject")
+        if native_subject == "MATH_DPK3" and kind in ("units", "pdp"):
+            from web.native_telegram_sequence_rph_client import (
+                list_native_units, list_native_lessons, NativeRPHUnavailable,
+            )
+            if year not in (2, 3) or request.args.get("component") or request.args.get("rph_today"):
+                return jsonify({"error": "Pilihan DPK Edisi 3 tidak sah."}), 400
+            try:
+                options = (list_native_units(year, native_subject) if kind == "units"
+                           else list_native_lessons(year, native_subject, request.args.get("unit", "")))
+            except ValueError:
+                return jsonify({"error": "Pilihan unit DPK Edisi 3 tidak sah."}), 400
+            except NativeRPHUnavailable:
+                return jsonify({"error": "Set DPK Edisi 3 belum dapat dihubungi."}), 503
+            return jsonify(options)
+        if native_subject in ("MATH_DLP", "SCIENCE_DLP") and kind in ("units", "pdp"):
             from web.native_telegram_sequence_rph_client import (
                 list_native_units, list_native_lessons, NativeRPHUnavailable,
             )
             if year not in (5, 6) or request.args.get("component"):
                 return jsonify({"error": "Invalid DLP selection"}), 400
             try:
-                options = (list_native_units(year, dlp_subject) if kind == "units"
-                           else list_native_lessons(year, dlp_subject, request.args.get("unit", "")))
+                options = (list_native_units(year, native_subject) if kind == "units"
+                           else list_native_lessons(year, native_subject, request.args.get("unit", "")))
             except (NativeRPHUnavailable, ValueError):
                 return jsonify({"error": f"Sumber DLP Year {year} belum tersedia."}), 503
             return jsonify(options)
@@ -201,6 +215,14 @@ def options():
                             if row.get("value") == "ENGLISH" else row
                             for row in shared_subjects
                         ]
+                        if year in (2, 3) and request.args.get("curriculum", "kssr") == "kssr":
+                            from web.native_telegram_sequence_rph_client import list_native_units, NativeRPHUnavailable
+
+                            try:
+                                if list_native_units(year, "MATH_DPK3"):
+                                    items.append({"value": "MATH_DPK3", "label": "Matematik (DPK Edisi 3)"})
+                            except (NativeRPHUnavailable, ValueError):
+                                pass
                         if year in range(2, 7):
                             from web.unified_rph_web import source_records
                             for code, label in (("MORAL", "Pendidikan Moral"),

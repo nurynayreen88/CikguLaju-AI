@@ -1071,6 +1071,160 @@
         674,
         394
       ]
+    },
+    "matematik_dpk:2": {
+      "version": 1,
+      "format": "PDF A4 landscape, original page 1; coordinates measured from PyMuPDF",
+      "page_width": 841.8898,
+      "page_height": 595.2756,
+      "tolerance_pt": 0.3,
+      "logo_frame_top_left": [
+        355.9449,
+        69,
+        485.9449,
+        199
+      ],
+      "logo_placeholder_text": "LOGO SEKOLAH",
+      "logo_interior_top_left": [
+        357.3,
+        70.4,
+        484.6,
+        197.6
+      ],
+      "logo_image_safe_top_left": [
+        365,
+        77,
+        477,
+        190
+      ],
+      "identity_panel_top_left": [
+        90.9449,
+        318,
+        750.9449,
+        430
+      ],
+      "identity_background_rgb": [
+        0.960784,
+        0.972549,
+        0.964706
+      ],
+      "school_label": "NAMA SEKOLAH",
+      "school_row_top_left": [
+        274,
+        332.5,
+        742,
+        359.5
+      ],
+      "school_underscores_top_left": [
+        276.9,
+        340.4,
+        486.9,
+        350.4
+      ],
+      "teacher_label": "NAMA GURU",
+      "teacher_row_top_left": [
+        274,
+        388.5,
+        742,
+        415.5
+      ],
+      "teacher_underscores_top_left": [
+        276.9,
+        396.4,
+        486.9,
+        406.4
+      ],
+      "target_spans": [
+        "LOGO SEKOLAH",
+        "NAMA SEKOLAH",
+        "NAMA GURU",
+        "__________________________________________"
+      ],
+      "expected_underscore_lines_per_cover": 2,
+      "created_for": "Teacher profile values overlay only at original placeholders. No extra page.",
+      "rtl_pi_arabic_pdf_hashes_updated_without_cover_geometry_changes": true,
+      "cover_hash_synced_to_manifest_after_20261110_pdf_updates": true,
+      "status": "ALIGNED_RPT_PDF_COVER",
+      "source_sha256_by_subject_year": {
+        "matematik_dpk:2": "04f5e56caf8f942a2d9e7fc55e0b5c2fc3371702505a0c756c46d403c4bc32c9"
+      }
+    },
+    "matematik_dpk:3": {
+      "version": 1,
+      "format": "PDF A4 landscape, original page 1; coordinates measured from PyMuPDF",
+      "page_width": 841.8898,
+      "page_height": 595.2756,
+      "tolerance_pt": 0.3,
+      "logo_frame_top_left": [
+        355.9449,
+        69,
+        485.9449,
+        199
+      ],
+      "logo_placeholder_text": "LOGO SEKOLAH",
+      "logo_interior_top_left": [
+        357.3,
+        70.4,
+        484.6,
+        197.6
+      ],
+      "logo_image_safe_top_left": [
+        365,
+        77,
+        477,
+        190
+      ],
+      "identity_panel_top_left": [
+        90.9449,
+        318,
+        750.9449,
+        430
+      ],
+      "identity_background_rgb": [
+        0.960784,
+        0.972549,
+        0.964706
+      ],
+      "school_label": "NAMA SEKOLAH",
+      "school_row_top_left": [
+        274,
+        332.5,
+        742,
+        359.5
+      ],
+      "school_underscores_top_left": [
+        276.9,
+        340.4,
+        486.9,
+        350.4
+      ],
+      "teacher_label": "NAMA GURU",
+      "teacher_row_top_left": [
+        274,
+        388.5,
+        742,
+        415.5
+      ],
+      "teacher_underscores_top_left": [
+        276.9,
+        396.4,
+        486.9,
+        406.4
+      ],
+      "target_spans": [
+        "LOGO SEKOLAH",
+        "NAMA SEKOLAH",
+        "NAMA GURU",
+        "__________________________________________"
+      ],
+      "expected_underscore_lines_per_cover": 2,
+      "created_for": "Teacher profile values overlay only at original placeholders. No extra page.",
+      "rtl_pi_arabic_pdf_hashes_updated_without_cover_geometry_changes": true,
+      "cover_hash_synced_to_manifest_after_20261110_pdf_updates": true,
+      "status": "ALIGNED_RPT_PDF_COVER",
+      "source_sha256_by_subject_year": {
+        "matematik_dpk:3": "2727448464d17996e29d10143d585bfb36517acc3ba7d5c0bc72c8f71ddcf5c6"
+      }
     }
   },
   "sjkc_matematik_year3": {

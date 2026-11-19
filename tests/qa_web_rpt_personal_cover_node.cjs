@@ -152,6 +152,19 @@ async function main(){
   }
 
   for(const year of [2,3]){
+    const dpkKey="matematik_dpk:"+year;
+    const dpkRaw=fs.readFileSync(path.join(root,"..","matematik",
+      "CikguLaju_RPT_Matematik_SK_Tahun"+year+"_DPK_Edisi3_2027.pdf"));
+    const dpkHash=crypto.createHash("sha256").update(dpkRaw).digest("hex");
+    const dpkCover=validatedLayout(layout,dpkKey,dpkHash);
+    assert.throws(()=>validatedLayout(layout,dpkKey,"0".repeat(64)));
+    const dpkDoc=await PDF.PDFDocument.load(dpkRaw);
+    const dpkResult=await fillOriginalCover(dpkDoc,{display_name:"Cikgu Matematik",school_name:"SK Contoh"},
+      tinyPng,dpkCover,{PDFLib:PDF,textPng:async()=>tinyPng});
+    assert.ok(dpkResult.hasLogo&&dpkResult.hasSchool&&dpkResult.hasTeacher);
+    const dpkOutput=await dpkDoc.save();
+    assert.strictEqual((await PDF.PDFDocument.load(dpkOutput)).getPageCount(),15);
+
     const mathsKey="matematik_sjkc:"+year;
     const mathsRaw=fs.readFileSync(path.join(root,"..","sjkc","matematik","RPT_2027_Matematik_SJKC_Tahun_"+year+".pdf"));
     const mathsHash=crypto.createHash("sha256").update(mathsRaw).digest("hex");

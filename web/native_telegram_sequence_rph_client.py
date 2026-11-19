@@ -17,7 +17,9 @@ from web.native_telegram_rph_client import (
 )
 from web.native_verified_rpt_rph_client import _backend
 
-SUBJECTS = frozenset(("MATH", "SCIENCE", "MATH_DLP", "SCIENCE_DLP"))
+DPK_SUBJECT = "MATH_DPK3"
+DPK_YEARS = (2, 3)
+SUBJECTS = frozenset(("MATH", "SCIENCE", "MATH_DLP", "SCIENCE_DLP", DPK_SUBJECT))
 UNITS = re.compile(r"u[a-f0-9]{24}")
 SCIENCE_2027_ROUTE = "/internal/rph/v1/sains-sk-y5-2027"
 SCIENCE_2027_ROUTES = {
@@ -25,6 +27,7 @@ SCIENCE_2027_ROUTES = {
     6: ("w", "/internal/rph/v1/sains-sk-y6-2027"),
 }
 MATH_SK_2027_ROUTE = "/internal/rph/v1/matematik-sk-2027"
+MATH_SK_DPK_2027_ROUTE = "/internal/rph/v1/matematik-sk-dpk-2027"
 MATH_SK_2027_YEARS = (4, 5, 6)
 SEQUENCE_ROUTE = "/internal/rph/v1/sequence"
 DLP_ROUTE = "/internal/rph/v1/dlp"
@@ -48,6 +51,8 @@ def _year_subject(year, subject):
         raise ValueError("Invalid school year")
     if subject not in SUBJECTS or (subject in DLP_SUBJECTS and (year, subject) not in DLP_CATALOGUES):
         raise ValueError("No Telegram native PdP sequence for subject")
+    if subject == DPK_SUBJECT and year not in DPK_YEARS:
+        raise ValueError("No DPK Edisi 3 Mathematics for year")
     return year, subject
 
 
@@ -59,6 +64,13 @@ def _selection(year, subject, unit, lesson=None):
     route = SEQUENCE_ROUTE
     if subject in DLP_SUBJECTS and DLP_CATALOGUES[year, subject][1].fullmatch(unit):
         route = DLP_ROUTE
+    elif subject == DPK_SUBJECT:
+        if not re.fullmatch(r"d[a-f0-9]{24}", unit):
+            raise ValueError("Unverified DPK unit")
+        if lesson is not None and (not isinstance(lesson, str) or
+                not re.fullmatch(rf"SK27-DPK3-MATH-Y{year}-L(?:00[1-9]|0[1-9][0-9]|10[0-9]|11[0-7])", lesson)):
+            raise ValueError("Unverified DPK lesson")
+        route, unit, subject = MATH_SK_DPK_2027_ROUTE, "u" + unit[1:], "MATH"
     elif subject == "MATH" and year in MATH_SK_2027_YEARS and re.fullmatch(r"m[a-f0-9]{24}", unit):
         route = MATH_SK_2027_ROUTE
         unit = "u" + unit[1:]
@@ -142,6 +154,11 @@ def _dlp_catalogue(year, subject):
 
 def list_native_units(year, subject, *, current_unit=""):
     _year_subject(year, subject)
+    if subject == DPK_SUBJECT:
+        items = _units(_read("units", {"year":year, "subject":"MATH"}, route=MATH_SK_DPK_2027_ROUTE))
+        if len(items) != (8 if year == 2 else 9):
+            raise NativeRPHUnavailable("Incomplete DPK Mathematics catalogue")
+        return [{**item, "value": "d" + item["value"][1:]} for item in items]
     if subject in DLP_SUBJECTS:
         return [{"value": key, "label": unit["title"]} for key, unit in _dlp_catalogue(year, subject).items()]
     params = {"year": year, "subject": subject}
@@ -183,6 +200,9 @@ def list_native_lessons(year, subject, unit):
            or not isinstance(x.get("label"),str) or not x["label"].strip()
            for x in result):
         raise NativeRPHUnavailable("Unverified Telegram PdP entries")
+    if subject == DPK_SUBJECT:
+        for item in result:
+            _selection(year, subject, unit, item["value"])
     return result
 
 
