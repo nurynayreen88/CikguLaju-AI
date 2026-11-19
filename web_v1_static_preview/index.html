@@ -99,10 +99,20 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 .sidebar-menu{display:flex;flex-direction:column;gap:7px}
 .sidebar-menu .sidebar-tab[hidden]{display:none!important}
 .sidebar-tab{font:inherit;font-size:.93rem;display:flex;gap:11px;align-items:center;text-align:left;width:100%;padding:13px 11px;background:transparent;border:1px solid transparent;border-radius:11px;color:#2b485d;font-weight:650;cursor:pointer}
+.sidebar-tab .sidebar-tab-label{min-width:0}
+.sidebar-tab-label small{display:block;margin-top:3px;color:#506c79;font-size:.73rem;font-weight:500}
 .sidebar-tab:hover{background:#eef5f9}
 .sidebar-tab.is-active,.sidebar-tab[aria-current="page"]{background:#e7f1fa;border-color:#c7deed;color:#0b4e7d}
-.sidebar-tab:focus-visible,.sidebar-logout:focus-visible{outline:3px solid #f7bc31;outline-offset:2px}
-.sidebar-logout{margin-top:28px;width:100%;text-align:center;border:1px solid #d5dfe6;background:white;border-radius:11px;padding:11px 13px;font:inherit;font-weight:700;color:#43576b;cursor:pointer}
+.sidebar-tab:focus-visible,.sidebar-more>summary:focus-visible,.sidebar-logout:focus-visible{outline:3px solid #f7bc31;outline-offset:2px}
+.sidebar-more{border-top:1px solid #e2eaf0;margin-top:5px;padding-top:5px}
+.sidebar-more>summary{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:44px;padding:8px 11px;border-radius:11px;color:#2b485d;font-size:.9rem;font-weight:700;list-style:none;cursor:pointer}
+.sidebar-more>summary::-webkit-details-marker{display:none}
+.sidebar-more>summary::after{content:"";width:7px;height:7px;margin-right:3px;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.sidebar-more[open]>summary::after{transform:rotate(225deg)}
+.sidebar-more>summary:hover,.sidebar-more[open]>summary{background:#eef5f9}
+.sidebar-more-list{display:flex;flex-direction:column;gap:5px;margin-top:6px}
+.sidebar-more:not([open])>.sidebar-more-list{display:none}
+.sidebar-logout{margin-top:12px;min-height:44px;width:100%;text-align:center;border:1px solid #d5dfe6;background:white;border-radius:11px;padding:9px 12px;font:inherit;font-weight:650;color:#43576b;cursor:pointer}
 .app-main{min-width:0;background:#fff;border:1px solid #d7e5e9;border-radius:18px;padding:clamp(20px,4vw,36px);box-shadow:0 8px 28px #153b5b0b}
 .app-view{min-width:0}
 .app-view h2{margin:0 0 13px;color:#113e60}
@@ -127,9 +137,6 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
  .app-shell{grid-template-columns:minmax(0,1fr);gap:12px}
  .app-sidebar{position:static;padding:12px}
  .sidebar-brand{padding:4px 8px 10px;margin-bottom:10px}
- .sidebar-menu{display:flex;flex-direction:row;gap:7px;overflow-x:auto;padding-bottom:4px;scrollbar-width:thin}
- .sidebar-tab{flex:0 0 auto;white-space:nowrap;width:auto;padding:11px 12px;font-size:.88rem}
- .sidebar-logout{margin-top:8px;width:auto;min-width:130px;padding:9px 12px}
  .app-main{padding:18px 16px}
 }
 @media print{
@@ -312,7 +319,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 #rakan-progress-fill{height:100%;width:0%;background:#168f82;border-radius:100px;transition:width .3s ease}
 .rakan-only-plan{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-weight:750;color:#174b47;padding:15px;border:1px solid #b8dad3;background:#eaf7f2;border-radius:12px;margin-bottom:12px}
 .rakan-only-plan strong{font-size:1.15rem}
-/* Phone navigation: every tab remains visible without horizontal swiping. */
+/* Phone navigation keeps the main choices in view and expands the rest on demand. */
 @media screen and (max-width:760px){
   .wrap{width:100%;max-width:100%;padding:12px 12px 24px}
   #workspace.panel{margin:14px auto 12px;width:100%;max-width:100%}
@@ -323,10 +330,11 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   #sidebar-teacher-name,#sidebar-school-name{max-width:calc(100vw - 115px)}
   .sidebar-menu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;overflow:visible;max-width:100%;padding:0;scrollbar-width:auto}
   .sidebar-tab{display:flex;align-items:center;justify-content:flex-start;gap:7px;min-width:0;width:100%;min-height:48px;white-space:normal;overflow-wrap:anywhere;line-height:1.25;padding:10px 9px;font-size:.85rem;text-align:left;transform:none}
-  .sidebar-tab>span{flex:0 0 auto}
-  .sidebar-tab:last-child{grid-column:1/-1}
+  .sidebar-tab>[aria-hidden="true"]{flex:none}
+  .sidebar-more{grid-column:1/-1}
+  .sidebar-more-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
   .sidebar-tab:hover{transform:none}
-  .sidebar-logout{display:block;min-width:0;width:100%;margin-top:10px;min-height:44px}
+  .sidebar-logout{display:block;width:auto;margin:6px 0 0 auto;border-color:transparent;font-size:.82rem}
   .app-main{min-width:0;padding:17px 13px}
   .site-header{min-width:0;gap:8px;padding:11px 12px}
   .site-header-brand{min-width:0;gap:9px}
@@ -490,18 +498,23 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <nav class="sidebar-menu" aria-label="Menu utama">
     <button type="button" class="sidebar-tab is-active" data-web-view="guide" aria-controls="view-guide" aria-current="page"><span aria-hidden="true">📖</span> Panduan</button>
     <button type="button" class="sidebar-tab" data-web-view="account" aria-controls="view-account"><span aria-hidden="true">👤</span> Profil &amp; Akses</button>
-    <button type="button" class="sidebar-tab" data-web-view="today" aria-controls="view-today"><span aria-hidden="true">⚡</span> RPH Pantas</button>
+    <button type="button" class="sidebar-tab" data-web-view="today" aria-controls="view-today"><span aria-hidden="true">⚡</span><span class="sidebar-tab-label">RPH Pantas <small>Hari Ini &amp; Minggu Ini</small></span></button>
     <button type="button" class="sidebar-tab" data-web-view="rph" aria-controls="view-rph"><span aria-hidden="true">📘</span> Sediakan RPH</button>
-    <button type="button" class="sidebar-tab sidebar-tab--planned" data-web-view="worksheet" aria-controls="view-worksheet"><span aria-hidden="true">📄</span> Lembaran Kerja <span class="sidebar-coming-status">Akan Datang</span></button>
-    <button type="button" class="sidebar-tab sidebar-tab--planned" data-web-view="bbm" aria-controls="view-bbm"><span aria-hidden="true">🧩</span> BBM &amp; Aktiviti <span class="sidebar-coming-status">Akan Datang</span></button>
-    <button type="button" class="sidebar-tab sidebar-tab--planned" data-web-view="uasa" aria-controls="view-uasa"><span aria-hidden="true">📝</span> Latihan UASA <span class="sidebar-coming-status">Akan Datang</span></button>
-    <button type="button" class="sidebar-tab" data-web-view="pbd" aria-controls="view-pbd"><span aria-hidden="true">📊</span> Rekod PBD</button>
-    <button type="button" class="sidebar-tab" data-web-view="special" aria-controls="view-special"><span aria-hidden="true">🌱</span> RPH Aktiviti Khas</button>
     <button type="button" class="sidebar-tab" data-web-view="rpt" aria-controls="view-rpt"><span aria-hidden="true">📅</span> RPT 2027</button>
     <button type="button" class="sidebar-tab" data-web-view="payment" aria-controls="view-payment"><span aria-hidden="true">🏆</span> Rakan Pembangun</button>
-    <button type="button" id="web-referral-tab" class="sidebar-tab" data-web-view="referral" aria-controls="view-referral" hidden><span aria-hidden="true">🎁</span> Affiliate Saya</button>
-    <button type="button" class="sidebar-tab" data-web-view="feedback" aria-controls="view-feedback"><span aria-hidden="true">💬</span> Komen &amp; Cadangan</button>
-    <button type="button" id="web-admin-tab" class="sidebar-tab" data-web-view="admin" aria-controls="view-admin" hidden><span aria-hidden="true">📊</span> Analisis Admin</button>
+    <details class="sidebar-more" id="sidebar-more">
+      <summary>Menu lain</summary>
+      <div class="sidebar-more-list">
+        <button type="button" class="sidebar-tab sidebar-tab--planned" data-web-view="worksheet" aria-controls="view-worksheet"><span aria-hidden="true">📄</span> Lembaran Kerja <span class="sidebar-coming-status">Akan Datang</span></button>
+        <button type="button" class="sidebar-tab sidebar-tab--planned" data-web-view="bbm" aria-controls="view-bbm"><span aria-hidden="true">🧩</span> BBM &amp; Aktiviti <span class="sidebar-coming-status">Akan Datang</span></button>
+        <button type="button" class="sidebar-tab sidebar-tab--planned" data-web-view="uasa" aria-controls="view-uasa"><span aria-hidden="true">📝</span> Latihan UASA <span class="sidebar-coming-status">Akan Datang</span></button>
+        <button type="button" class="sidebar-tab" data-web-view="pbd" aria-controls="view-pbd"><span aria-hidden="true">📊</span> Rekod PBD</button>
+        <button type="button" class="sidebar-tab" data-web-view="special" aria-controls="view-special"><span aria-hidden="true">🌱</span> RPH Aktiviti Khas</button>
+        <button type="button" class="sidebar-tab" data-web-view="feedback" aria-controls="view-feedback"><span aria-hidden="true">💬</span> Komen &amp; Cadangan</button>
+        <button type="button" id="web-referral-tab" class="sidebar-tab" data-web-view="referral" aria-controls="view-referral" hidden><span aria-hidden="true">🎁</span> Affiliate Saya</button>
+        <button type="button" id="web-admin-tab" class="sidebar-tab" data-web-view="admin" aria-controls="view-admin" hidden><span aria-hidden="true">📊</span> Analisis Admin</button>
+      </div>
+    </details>
   </nav>
   <button id="logout" type="button" class="sidebar-logout">Log keluar</button>
 </aside>
@@ -1220,6 +1233,7 @@ function canGenerateRph(){
   (rphAccessMode==="trial"&&rphTrialRemaining!==null&&rphTrialRemaining>0);
 }
 const webViewButtons=Array.from(document.querySelectorAll("[data-web-view]"));
+const sidebarMore=document.getElementById("sidebar-more");
 const webViews=new Map([["today","view-today"],["rph","view-rph"],["worksheet","view-worksheet"],["bbm","view-bbm"],["uasa","view-uasa"],["pbd","view-pbd"],["special","view-special"],["rpt","view-rpt"],["account","view-account"],["payment","view-payment"],["referral","view-referral"],["feedback","view-feedback"],["admin","view-admin"],["guide","view-guide"]]);
 /* Only the original curriculum dropdowns and material actions are moved
  * into a timetable card. The "Sediakan RPH" page itself NEVER moves, opens
@@ -1255,6 +1269,7 @@ function showWebView(name){
  if(!webViews.has(name))return;
  const targetButton=webViewButtons.find(button=>button.dataset.webView===name);
  if(targetButton?.hidden)return;
+ sidebarMore.open=sidebarMore.contains(targetButton);
  if(name!=="today")restoreRphEditor();
  for(const [key,id] of webViews){
   document.getElementById(id).hidden=key!==name;
@@ -1269,6 +1284,10 @@ function showWebView(name){
 }
 webViewButtons.forEach(button=>button.addEventListener("click",()=>{
  showWebView(button.dataset.webView);
+ const view=document.getElementById(button.getAttribute("aria-controls"));
+ const heading=document.getElementById(view.getAttribute("aria-labelledby"));
+ heading.tabIndex=-1;
+ heading.focus();
  if(button.dataset.webView==="rph")void loadTeacherClasses();
  if(button.dataset.webView==="today")window.rphTodayLoad?.();
  if(button.dataset.webView==="pbd")window.cikgulajuPbdLoad?.();
@@ -1276,9 +1295,7 @@ webViewButtons.forEach(button=>button.addEventListener("click",()=>{
  if(button.dataset.webView==="admin"){window.cikgulajuFeedbackAdminLoad?.();window.cikgulajuPaymentsAdminLoad?.();}
 }));
 document.querySelectorAll("[data-guide-view]").forEach(button=>button.addEventListener("click",()=>{
- const view=document.getElementById(button.getAttribute("aria-controls"));
  webViewButtons.find(tab=>tab.dataset.webView===button.dataset.guideView)?.click();
- document.getElementById(view.getAttribute("aria-labelledby")).focus();
 }));
 
 (async()=>{

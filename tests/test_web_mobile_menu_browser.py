@@ -23,7 +23,7 @@ class PhoneMenuLayoutTests(unittest.TestCase):
         cls.browser.close()
         cls.playwright.stop()
 
-    def test_all_tabs_visible_without_horizontal_scrolling_on_phones(self):
+    def test_main_menu_is_compact_and_other_tabs_fit_when_expanded(self):
         for width in (320, 360, 375, 390, 430, 600, 760):
             with self.subTest(width=width):
                 page=self.browser.new_page(viewport={"width":width,"height":820})
@@ -36,7 +36,7 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                     metrics=page.evaluate("""() => {
                       const menu=document.querySelector('.sidebar-menu');
                       const box=menu.getBoundingClientRect();
-                      const tabs=[...menu.querySelectorAll('.sidebar-tab:not([hidden])')];
+                      const tabs=[...menu.querySelectorAll('.sidebar-tab')].filter(tab=>tab.getClientRects().length);
                       return {
                         display:getComputedStyle(menu).display,
                         columns:getComputedStyle(menu).gridTemplateColumns,
@@ -52,7 +52,7 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                       };
                     }""")
                     self.assertEqual(metrics["display"],"grid",metrics)
-                    self.assertEqual(len(metrics["tabs"]),12,metrics)
+                    self.assertEqual(len(metrics["tabs"]),6,metrics)
                     self.assertLessEqual(metrics["scroll"],metrics["client"]+1,metrics)
                     self.assertLessEqual(metrics["body"],width+1,metrics)
                     for tab in metrics["tabs"]:
@@ -66,6 +66,26 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                     page.get_by_role("button",name="Rakan Pembangun").click()
                     self.assertFalse(page.locator("#view-payment").get_attribute("hidden") is not None)
                     self.assertEqual(page.locator('[data-web-view="payment"]').get_attribute("aria-current"),"page")
+                    more=page.locator("#sidebar-more")
+                    self.assertFalse(more.evaluate("(node)=>node.open"))
+                    expect(page.get_by_role("button",name="Rekod PBD")).to_be_hidden()
+                    more.locator("summary").focus()
+                    page.keyboard.press("Enter")
+                    self.assertTrue(more.evaluate("(node)=>node.open"))
+                    self.assertLessEqual(more.evaluate("(node)=>node.scrollWidth"),width)
+                    for tab in more.locator('.sidebar-tab:not([hidden])').all():
+                        expect(tab).to_be_visible()
+                        box=tab.bounding_box()
+                        self.assertGreaterEqual(box["x"],0)
+                        self.assertLessEqual(box["x"]+box["width"],width+1)
+                    expect(more.get_by_text("Akan Datang",exact=True)).to_have_count(3)
+                    expect(more.locator("#web-admin-tab")).to_be_hidden()
+                    expect(more.locator("#web-referral-tab")).to_be_hidden()
+                    more.get_by_role("button",name="Rekod PBD").click()
+                    expect(page.locator("#view-pbd-heading")).to_be_focused()
+                    expect(more.get_by_role("button",name="Rekod PBD")).to_have_attribute("aria-current","page")
+                    page.get_by_role("button",name="Panduan",exact=True).click()
+                    self.assertFalse(more.evaluate("(node)=>node.open"))
                 finally:
                     page.close()
 
@@ -126,6 +146,7 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                         expect(nav.locator('[data-web-view="'+view+'"]')).to_have_attribute("aria-current","page")
                         if view=="today":
                             expect(nav.get_by_role("button", name="RPH Pantas")).to_be_visible()
+                            expect(nav.get_by_text("Hari Ini & Minggu Ini",exact=True)).to_be_visible()
                             expect(nav.locator('[data-web-view="today"] [aria-hidden="true"]')).to_have_text("⚡")
                         nav.get_by_role("button",name="Panduan").click()
                         expect(guide).to_be_visible()
@@ -146,6 +167,14 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                       direction:getComputedStyle(menu).flexDirection};
             }""")
             self.assertEqual(m,{"display":"flex","direction":"column"})
+            self.assertFalse(page.locator("#sidebar-more").evaluate("(node)=>node.open"))
+            page.evaluate("""() => {
+              const admin=document.getElementById("web-admin-tab");
+              admin.hidden=false;
+              admin.click();
+            }""")
+            expect(page.get_by_role("button",name="Analisis Admin")).to_have_attribute("aria-current","page")
+            expect(page.locator("#web-admin-heading")).to_be_focused()
         finally:
             page.close()
 

@@ -58,7 +58,7 @@ class WebSidebarTabsTests(unittest.TestCase):
                        self.html,flags=re.S)
         self.assertIsNotNone(menu)
         choices=re.findall(r'data-web-view="([^"]+)"',menu.group(1))
-        self.assertEqual(choices[:3],["guide","account","today"])
+        self.assertEqual(choices[:6],["guide","account","today","rph","rpt","payment"])
         self.assertEqual(len(choices),len(set(choices)))
         self.assertIn('data-web-view="account" aria-controls="view-account"',menu.group(1))
         self.assertIn('data-web-view="guide" aria-controls="view-guide" aria-current="page"',menu.group(1))
@@ -112,7 +112,7 @@ class WebSidebarTabsTests(unittest.TestCase):
 
     def test_mobile_and_print_sidebar_not_in_document(self):
         self.assertIn('@media(max-width:760px)',self.html)
-        self.assertIn('.sidebar-menu{display:flex;flex-direction:row;',self.html)
+        self.assertIn('.sidebar-more{grid-column:1/-1}',self.html)
         self.assertIn('#workspace .app-sidebar,#workspace #view-rpt',self.html)
         self.assertIn('id="rph-download-actions"',self.html)
         self.assertIn('id="rph-word"',self.html)
