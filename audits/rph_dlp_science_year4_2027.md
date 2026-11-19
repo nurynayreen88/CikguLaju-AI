@@ -28,3 +28,9 @@ Jalankan `python -m staging.dlp.year4.render_science --output <folder>` untuk me
 Laluan Web dan Telegram menggunakan penjana yang sama, dengan medan kelas, tarikh, masa, bilangan murid dan refleksi daripada aliran sedia ada. Katalog menyemak pasangan unit dan ID pelajaran.
 
 Pemilik meluluskan kandungan komit `786f6980fc3a` pada 18 November 2026. Pelepasan ini menggunakan set yang diluluskan. RPT asal kekal sebagai sumber jadual. Log kemas kini merekod penerbitan dan jenis ujian akses.
+
+## Deskripsi Content Standards dan Learning Standards
+
+20 November 2026. Lengkapkan deskripsi Inggeris bagi **20 CS dan 92 LS** untuk semua 59 Lesson dan 10 Review. Semua kod disemak terhadap jadual standard [DSKP KSSR Science Year 4 edisi Inggeris](https://anyflip.com/fehd/kgpy/basic/51-94). Sesi Review memaparkan kod dan deskripsi bagi standard yang telah diajar dalam unit yang sama.
+
+Semakan 138 respons Word/PDF melalui laluan penjana Web setempat mengesahkan medan standard, tajuk, rujukan buku dan butiran kelas. Kesemua 69 PDF dan cetakan 69 Word satu halaman A4 dengan format jadual sedia ada.

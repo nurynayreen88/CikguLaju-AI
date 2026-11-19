@@ -16,6 +16,7 @@ from dlp_year2_rph import _pdf, _word
 
 ROOT = Path(__file__).resolve().parents[3]
 SOURCE = Path(__file__).with_name("science_2027.json")
+STANDARD_DESCRIPTIONS = Path(__file__).with_name("science_standard_descriptions.json")
 PHASES = ("Set induction", "Main activity", "Practice and assessment", "Closure")
 DURATIONS = {30: (3, 15, 9, 3), 60: (5, 30, 20, 5)}
 LS_CODE = re.compile(r"\d+\.\d+\.\d+")
@@ -23,6 +24,7 @@ LS_CODE = re.compile(r"\d+\.\d+\.\d+")
 
 def load_plans():
     data = json.loads(SOURCE.read_text(encoding="utf-8"))
+    descriptions = json.loads(STANDARD_DESCRIPTIONS.read_text(encoding="utf-8"))
     rpt = ROOT / "rpt_2027" / "dlp" / data["rpt_file"]
     if (data["year"], data["planning_year"], data["subject"]) != (4, 2027, "SCIENCE_DLP"):
         raise ValueError("Unexpected year or subject")
@@ -41,8 +43,8 @@ def load_plans():
             label = f"Review {review_number:02d}"
             plan_id = f"DLP-SCI-Y4-R{review_number:02d}"
             title = f"{unit.split(' ', 2)[2]} Review"
-            review_codes = set(plan["review_lss"])
-            if not review_codes or not review_codes <= standards_taught[unit]:
+            codes = plan["review_lss"]
+            if not codes or not set(codes) <= standards_taught[unit]:
                 raise ValueError(f"Review uses an untaught standard: {plan_id}")
         else:
             lesson_number += 1
@@ -50,7 +52,12 @@ def load_plans():
             plan_id = f"DLP-SCI-Y4-L{lesson_number:02d}"
             if label != f"Lesson {lesson_number:02d}":
                 raise ValueError(f"Lesson out of sequence: {plan_id}")
-            standards_taught[unit].update(LS_CODE.findall(standards))
+            content_standard, learning_standards = standards.splitlines()
+            prefix = content_standard.removeprefix("CS ") + "."
+            codes = LS_CODE.findall(learning_standards)
+            if not codes or not all(code.startswith(prefix) for code in codes):
+                raise ValueError(f"Learning standards must belong to the stated CS: {plan_id}")
+            standards_taught[unit].update(codes)
             if "review_lss" in plan:
                 raise ValueError(f"Review standards appear in a numbered lesson: {plan_id}")
 
@@ -68,8 +75,21 @@ def load_plans():
         ):
             raise ValueError(f"Incomplete teaching details: {plan_id}")
 
-    if (lesson_number, review_number) != (59, 10) or len(set().union(*standards_taught.values())) != 92:
+        content_codes = tuple(dict.fromkeys(code.rsplit(".", 1)[0] for code in codes))
+        plan["content_standards"] = " · ".join(
+            f"{code} {descriptions['cs'][code]}" for code in content_codes
+        )
+        plan["learning_standards"] = " · ".join(
+            f"{code} {descriptions['ls'][code]}" for code in codes
+        )
+
+    learning_codes = set().union(*standards_taught.values())
+    if (lesson_number, review_number) != (59, 10) or len(learning_codes) != 92:
         raise ValueError("Year 4 Science coverage changed")
+    if (set(descriptions["ls"]) != learning_codes
+            or set(descriptions["cs"]) != {code.rsplit(".", 1)[0] for code in learning_codes}
+            or any(not text.strip() for group in descriptions.values() for text in group.values())):
+        raise ValueError("Incomplete Science Year 4 DLP standard descriptions")
     if Counter(plan["minutes"] for plan in plans) != {60: 59, 30: 10}:
         raise ValueError("Year 4 Science must cover 3,840 minutes")
     return plans
@@ -121,16 +141,13 @@ def render_plan(stream, plan, renderer, *, teacher=None):
                            ("students", "Pupils"))
     )
     heading = ("Daily Lesson Plan", "Science (DLP) · Year 4 SK", plan["title"])
-    if "review_lss" in plan:
-        standards = "Review LS " + ", ".join(plan["review_lss"])
-    else:
-        standards = " · ".join(plan["standards"])
     details = [
         ("Unit", plan["unit"]),
         ("Lesson / PdP", f"{plan['label']} · {plan['minutes']} min"),
         ("RPT 2027 dates", " · ".join(plan["rpt_dates"])),
         ("Class / date / time", session),
-        ("Standards", standards),
+        ("Content Standards", plan["content_standards"]),
+        ("Learning Standards", plan["learning_standards"]),
         ("Book references", _book_references(plan)),
         ("Learning objective", plan["objective"]),
         ("Materials", plan["materials"]),
