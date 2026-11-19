@@ -7,7 +7,7 @@ from pathlib import Path
 
 from web.native_telegram_sequence_rph_client import (
     _selection, list_native_units, NativeRPHUnavailable,
-    SCIENCE_2027_ROUTE, DLP_ROUTE, MATH_SK_2027_ROUTE, SEQUENCE_ROUTE,
+    SCIENCE_2027_ROUTE, DLP_ROUTE, MATH_SK_2027_ROUTE, MATH_SK_DPK_2027_ROUTE, SEQUENCE_ROUTE,
 )
 from web.unified_rph_web import create_blueprint
 from web.native_verified_rpt_rph_client import _selection as _rpt_selection
@@ -30,7 +30,7 @@ class WebNativePdPBridgeTests(unittest.TestCase):
 
     def test_web_rph_proxies_only_to_native_telegram_engine(self):
         code=(ROOT/"web"/"unified_rph_web.py").read_text("utf-8")
-        self.assertIn('if subject in ("MATH", "SCIENCE", "MATH_DLP", "SCIENCE_DLP"):',code)
+        self.assertIn('if subject in ("MATH", "SCIENCE", "MATH_DLP", "SCIENCE_DLP", "MATH_DPK3"):',code)
         self.assertIn('verified_native_sequence_available(year, subject, unit, token)',code)
         self.assertIn('request_native_sequence_rph(selected, fmt)',code)
         self.assertIn('source": "telegram-native-pdp-sequence"',code)
@@ -43,6 +43,24 @@ class WebNativePdPBridgeTests(unittest.TestCase):
         self.assertIn("list_native_units(year, subject)",code)
         self.assertIn("list_native_lessons(",code)
         self.assertIn("TELEGRAM_NATIVE_PDP_UNAVAILABLE",code)
+
+    def test_dpk_units_and_lessons_do_not_use_legacy_route(self):
+        units = {"source": "telegram-runtime-v1", "items": [
+            {"value": f"u{i:024x}", "label": f"Unit {i}"} for i in range(8)
+        ]}
+        with patch("web.native_telegram_sequence_rph_client._read", return_value=units) as read:
+            unit = list_native_units(2, "MATH_DPK3")[0]["value"]
+            self.assertEqual(read.call_args.kwargs, {"route": MATH_SK_DPK_2027_ROUTE})
+        route, selection = _selection(2, "MATH_DPK3", unit, "SK27-DPK3-MATH-Y2-L117")
+        self.assertEqual((route, selection["subject"]), (MATH_SK_DPK_2027_ROUTE, "MATH"))
+        for year, subject, selected_unit, lesson in (
+            (2, "MATH", unit, "SK27-DPK3-MATH-Y2-L117"),
+            (2, "MATH_DPK3", unit, "SK27-DPK3-MATH-Y3-L117"),
+            (3, "MATH_DPK3", unit, "MT3-PDP-117"),
+            (4, "MATH_DPK3", unit, "SK27-DPK3-MATH-Y4-L117"),
+        ):
+            with self.assertRaises(ValueError):
+                _selection(year, subject, selected_unit, lesson)
 
 
     def test_new_science_catalogue_cannot_relabel_legacy_choices(self):

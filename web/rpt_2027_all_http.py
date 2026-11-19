@@ -28,6 +28,7 @@ from rpt_2027.sjkt.matematik import documents as matematik_sjkt
 
 ROOT = Path(__file__).resolve().parents[1] / "rpt_2027"
 YEARS = tuple(range(2,7))
+MATH_DPK_CODE = "matematik_dpk3"
 V2 = "web_2027_pdfs"
 SJK_RPTS = {
     "bahasa-cina": bahasa_cina_sjkc,
@@ -305,16 +306,26 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
                 "coming_soon": True,
             } for year in YEARS],
         })
+    dpk_entries = [
+        {"year": year, "pdf_ready": True, "status": "TERSEDIA",
+         "download_enabled": bool(allowed), "is_draft": False,
+         "note": "Pilihan DPK Edisi 3. Kumpulan A dan B, 117 Lesson dalam 96 jam."}
+        for year in matematik_sk.DPK_DIGESTS
+        if matematik_sk.document_path(year, root=Path(root) / "matematik", dpk=True)
+    ]
+    if dpk_entries:
+        subjects.append({"code": MATH_DPK_CODE, "label": "Matematik (DPK Edisi 3)",
+                         "years": dpk_entries})
     return {
         "year":2027,
         "format":"pdf",
         "allowed":bool(allowed),
         "personalization_allowed":bool(personalization_allowed),
         "subjects":subjects,
-        "total_rpt":56+dlp_count+sjk_count,
+        "total_rpt":56+dlp_count+sjk_count+len(dpk_entries),
         "total_display_choices":sum(len(item["years"]) for item in subjects),
         "year1_coming_soon":10,
-        "available_rpt":available+dlp_count+sjk_count,
+        "available_rpt":available+dlp_count+sjk_count+len(dpk_entries),
         "note":"Tahun 1 KP2027 belum boleh dimuat turun. RPT SK dan DLP tersedia kepada pengguna log masuk. RPT SJK dan cetakan berprofil memerlukan akses berbayar aktif.",
     }
 
@@ -365,11 +376,12 @@ def create_all_rpt_blueprint(*,root=ROOT):
         account,error=_account()
         if error is not None:
             return error
+        math_dpk = subject == MATH_DPK_CODE and year in matematik_sk.DPK_DIGESTS
         math_sk = subject == "matematik" and year in matematik_sk.DIGESTS
         approved_sains = _approved_sk_science_file(subject, year, root)
-        if math_sk or subject in DLP_SUBJECTS or approved_sains is not None:
-            if math_sk:
-                path = matematik_sk.document_path(year, root=Path(root) / "matematik")
+        if math_dpk or math_sk or subject in DLP_SUBJECTS or approved_sains is not None:
+            if math_dpk or math_sk:
+                path = matematik_sk.document_path(year, root=Path(root) / "matematik", dpk=math_dpk)
                 if path is None:
                     return jsonify({"error": "PDF RPT Matematik SK belum dapat disahkan."}), 503
             else:
