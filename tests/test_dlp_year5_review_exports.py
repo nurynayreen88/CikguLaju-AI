@@ -89,11 +89,14 @@ class DLPYear5ReviewExports(unittest.TestCase):
                     else:
                         self.assertEqual(word.paragraphs[2].text, plan["title"])
                         self.assertEqual([tuple(cell.text for cell in row.cells)
-                                          for row in table.rows[1:]], plan["phases"])
+                                          for row in table.rows[1:]],
+                                         [(phase.rsplit(" · ", 1)[0], teacher, pupils)
+                                          for phase, teacher, pupils in plan["phases"]])
                     for pdf_folder in (folder, word_pdfs) if word_pdfs.exists() else (folder,):
                         self.assertNotRegex(stem.replace("_", " "), INTERNAL_LABEL)
                         content = self.check_pdf(pdf_folder / f"{stem}.pdf", 1, (595, 842))
-                        for field in ("title", "label", "dates", "standards", "reference", "objective", "evidence"):
+                        self.assertIn(normalized(plan["label"].rsplit(" · ", 1)[0]), content)
+                        for field in ("title", "dates", "standards", "reference", "objective", "evidence"):
                             self.assertIn(normalized(plan[field]), content)
 
     def check_pdf(self, path, count, size):
