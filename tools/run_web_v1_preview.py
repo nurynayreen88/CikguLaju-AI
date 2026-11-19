@@ -159,9 +159,9 @@ def options():
             return jsonify(options)
         if native_subject in ("MATH_DLP", "SCIENCE_DLP") and kind in ("units", "pdp"):
             from web.native_telegram_sequence_rph_client import (
-                list_native_units, list_native_lessons, NativeRPHUnavailable,
+                DLP_CATALOGUES, list_native_units, list_native_lessons, NativeRPHUnavailable,
             )
-            if year not in (5, 6) or request.args.get("component"):
+            if (year, native_subject) not in DLP_CATALOGUES or request.args.get("component"):
                 return jsonify({"error": "Invalid DLP selection"}), 400
             try:
                 options = (list_native_units(year, native_subject) if kind == "units"

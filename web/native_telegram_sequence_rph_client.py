@@ -36,6 +36,8 @@ DLP_LESSON = re.compile(r"DLP-MATH-Y6-(?:L(?:0[1-9]|[1-3][0-9]|4[0-6])|R0[1-8])"
 DLP_SCIENCE_UNIT = re.compile(r"(?:0[1-9]|1[0-3])")
 DLP_SCIENCE_LESSON = re.compile(r"DLP-SCI-Y6-(?:L(?:0[1-9]|[1-4][0-9]|5[0-2])|R0[1-9])")
 DLP_CATALOGUES = {
+    (4, "SCIENCE_DLP"): ("year4-science/catalogue", re.compile(r"(?:0[1-9]|10)"),
+                         re.compile(r"DLP-SCI-Y4-(?:L(?:0[1-9]|[1-5][0-9])|R(?:0[1-9]|10))"), 10, 69),
     (5, "MATH_DLP"): ("year5-mathematics/catalogue", DLP_UNIT,
                       re.compile(r"DLP-MATH-Y5-(?:L(?:0[1-9]|[1-5][0-9]|6[01])|R0[1-8])"), 8, 69),
     (5, "SCIENCE_DLP"): ("year5-science/catalogue", re.compile(r"(?:0[1-9]|10)"),

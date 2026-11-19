@@ -233,7 +233,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  listeners["curriculum.change"]();
  assert.deepEqual(year.options.map(x=>x.label),[
   "Pilih Tahun","Tahun 1 (KP Baharu) — Dalam Penyediaan","Tahun 2 — Untuk Semakan Guru",
-  "Tahun 3 — Dalam Penyediaan","Tahun 4 — Dalam Penyediaan","Tahun 5","Tahun 6"
+  "Tahun 3 — Dalam Penyediaan","Tahun 4","Tahun 5","Tahun 6"
  ]);
  year.value="2";
  await listeners["year.change"]();
@@ -269,7 +269,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
   }
   assert.equal(lessonNumber,subjectCode==="MATH_DLP"?78:63);
  }
- for(const n of ["1","3","4"]){
+ for(const n of ["1","3"]){
   year.value=n;
   await listeners["year.change"]();
   assert.equal(panel.hidden,true);
@@ -285,13 +285,22 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
   }
  }
  assert.deepEqual(catalogueCalls,[]);
- for(const n of ["5","6"]){
+ for(const n of ["4","5","6"]){
   year.value=n;
   await listeners["year.change"]();
   assert.deepEqual(subject.options.map(x=>x.label),[
-   "Pilih Subjek","Science (DLP) — RPH 2027","Mathematics (DLP) — RPH 2027"
+   "Pilih Subjek","Science (DLP) — RPH 2027",
+   "Mathematics (DLP) — "+(n==="4"?"Dalam Penyediaan":"RPH 2027")
   ]);
-  for(const [code,prefix] of [["SCIENCE_DLP","SCI"],["MATH_DLP","MATH"]]){
+  if(n==="4"){
+   subject.value="MATH_DLP";
+   await listeners["subject.change"]();
+   assert.equal(unit.hidden,true);
+   assert.match(ctx.help,/Dalam Penyediaan/);
+   assert.deepEqual(catalogueCalls,[]);
+  }
+  const subjects=n==="4"?[["SCIENCE_DLP","SCI"]]:[["SCIENCE_DLP","SCI"],["MATH_DLP","MATH"]];
+  for(const [code,prefix] of subjects){
    const id=`DLP-${prefix}-Y${n}-L01`;
    subject.value=code;
    await listeners["subject.change"]();
@@ -307,7 +316,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
    assert.deepEqual(catalogueCalls.splice(0),["units",code,"pdp",code,"01"]);
   }
  }
- assert.equal(checkedRph,4);
+ assert.equal(checkedRph,5);
  curriculum.value="kssr";
  listeners["curriculum.change"]();
  assert.equal(panel.hidden,true);
