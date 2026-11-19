@@ -1,6 +1,6 @@
 # Audit sumber Matematik SJKT Tahun 2
 
-19 November 2026 · Draf untuk semakan guru
+19 November 2026 · Audit sumber dan rekod penerbitan
 
 ## Dokumen rujukan
 
@@ -51,3 +51,9 @@ Simulasi menu guru Web menghasilkan 96 Word dan 96 PDF. Ujian Telegram mengesahk
 ## Status
 
 Pemilik meluluskan penerbitan tanpa menunggu semakan guru SJKT pada 19 November 2026. RPH diaktifkan dalam produksi Telegram dan Web melalui [PR Telegram #950](https://github.com/nurynayreen88/CikguLaju-AI/pull/950) dan [PR Web #951](https://github.com/nurynayreen88/CikguLaju-AI/pull/951). Log permulaan Telegram mengesahkan penjana SJKT aktif. Ujian produksi mengesahkan kesediaan Web serta keperluan log masuk untuk laluan katalog dan muat turun. Muat turun dengan akaun guru produksi belum disahkan.
+
+## Penerbitan RPT
+
+[RPT Word](../rpt_2027/sjkt/matematik/RPT_2027_Matematik_SJKT_Tahun_2.docx) dan [RPT PDF](../rpt_2027/sjkt/matematik/RPT_2027_Matematik_SJKT_Tahun_2.pdf) diterbitkan melalui [Telegram #953](https://github.com/nurynayreen88/CikguLaju-AI/pull/953) dan [Web #952](https://github.com/nurynayreen88/CikguLaju-AI/pull/952). Kedua-dua format mengandungi 96 PdP dengan tarikh Kumpulan A dan Kumpulan B. PDF mengandungi satu muka depan dan tujuh halaman jadual A4 landskap. Web mengisi logo sekolah, nama sekolah dan nama guru pada muka depan PDF daripada Profil Guru apabila maklumat berkenaan tersedia.
+
+Ujian automatik Web dan Telegram mengesahkan muat turun serta kelayakan akses menggunakan akaun ujian. Pengisian muka depan dengan profil ujian mengekalkan kandungan dan kedudukan teks pada tujuh halaman jadual. Dalam produksi, semakan kesediaan Web, templat muka depan SJKT dan sekatan log masuk untuk katalog, Word dan PDF lulus. Kedua-dua pemasangan aktif. Muat turun menggunakan akaun guru produksi belum disahkan.
