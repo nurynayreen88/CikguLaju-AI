@@ -623,37 +623,40 @@ def create_native_rph_blueprint(runtime):
             current_app.logger.exception("Matematik SJKT RPH unavailable")
             return jsonify({"error": "Matematik SJKT RPH unavailable"}), 503
 
+    def _matematik_sjkc_source(year):
+        from staging.matematik_sjkc.tahun_2 import rph as year_two
+        from staging.matematik_sjkc.tahun_3 import rph as year_three
+
+        return {"2": year_two, "3": year_three}.get(str(year))
+
     @bp.get("/internal/rph/v1/matematik-sjkc/options")
     def matematik_sjkc_options():
-        from staging.matematik_sjkc.tahun_3.rph import PDP_COUNT, YEAR, enabled, lessons, resolve, units
-
         allowed, status = _authorized()
         if not allowed:
             return jsonify({"error": "Unauthorized renderer"}), status
-        if not enabled():
-            return jsonify({"error": "Matematik SJKC unavailable"}), 404
         keys = set(request.args)
         if (keys not in ({"year"}, {"year", "unit"}, {"year", "unit", "pdp"})
                 or any(len(values) != 1 for _, values in request.args.lists())):
             return jsonify({"error": "Invalid Matematik SJKC selection"}), 400
-        if request.args["year"] != str(YEAR):
+        source = _matematik_sjkc_source(request.args["year"])
+        if source is None or not source.enabled():
             return jsonify({"error": "Matematik SJKC unavailable"}), 404
         if any(not re.fullmatch(r"[1-9][0-9]?", request.args[key]) for key in keys - {"year"}):
             return jsonify({"error": "Invalid Matematik SJKC selection"}), 400
         unit = int(request.args["unit"]) if "unit" in keys else None
         pdp = int(request.args["pdp"]) if "pdp" in keys else None
         try:
-            unit_rows = units()
+            unit_rows = source.units()
         except (OSError, ValueError, KeyError, TypeError):
             from flask import current_app
 
             current_app.logger.exception("Matematik SJKC RPH catalog failed")
             return jsonify({"error": "Matematik SJKC unavailable"}), 503
         if (unit is not None and not 1 <= unit <= len(unit_rows)
-                or pdp is not None and not 1 <= pdp <= PDP_COUNT):
+                or pdp is not None and not 1 <= pdp <= source.PDP_COUNT):
             return jsonify({"error": "Matematik SJKC lesson unavailable"}), 404
         if pdp is not None:
-            return (jsonify({"available": True}) if resolve(unit, pdp) else
+            return (jsonify({"available": True}) if source.resolve(unit, pdp) else
                     (jsonify({"available": False}), 404))
         if unit is None:
             return jsonify([{"value": str(number), "label": f"Unit {number} · {title}"}
@@ -662,31 +665,26 @@ def create_native_rph_blueprint(runtime):
                          "label": f"PdP {row['pdp']:03} · {row['topic']}",
                          "lesson_no": row["pdp"],
                          "textbook_ref": f"BT J{row['textbook_volume']} m.s. {row['textbook_pages']}"}
-                        for row in lessons() if row["unit_number"] == unit])
+                        for row in source.lessons() if row["unit_number"] == unit])
 
     @bp.post("/internal/rph/v1/matematik-sjkc/render")
     def matematik_sjkc_render():
-        from staging.matematik_sjkc.tahun_3.rph import enabled
-
-        return _matematik_sjkc_document(release=enabled)
+        return _matematik_sjkc_document(release=True)
 
     @bp.post("/internal/rph/v1/matematik-sjkc/preview")
     def matematik_sjkc_preview():
         return _matematik_sjkc_document()
 
-    def _matematik_sjkc_document(release=None):
+    def _matematik_sjkc_document(*, release=False):
         from flask import current_app
         from pypdf.errors import PdfReadError
         from zipfile import BadZipFile
-        from staging.matematik_sjkc.tahun_3.rph import YEAR, resolve, render
 
         allowed, status = _authorized()
         if not allowed:
             return jsonify({"error": "Unauthorized renderer"}), status
-        if release is not None and not release():
-            return jsonify({"error": "Matematik SJKC unavailable"}), 404
         keys = {"year", "unit", "pdp", "format"}
-        if release is not None:
+        if release:
             keys.add("teacher")
         if not request.is_json or not 0 < (request.content_length or 0) <= 7000:
             return jsonify({"error": "Invalid render body"}), 400
@@ -695,10 +693,11 @@ def create_native_rph_blueprint(runtime):
                 any(type(body[key]) is not int for key in ("year", "unit", "pdp")) or
                 not isinstance(body["format"], str) or body["format"] not in MIMES):
             return jsonify({"error": "Invalid Matematik SJKC selection"}), 400
-        if body["year"] != YEAR:
+        source = _matematik_sjkc_source(body["year"])
+        if source is None or (release and not source.enabled()) or (not release and source.YEAR != 3):
             return jsonify({"error": "Matematik SJKC lesson unavailable"}), 404
         teacher = None
-        if release is not None:
+        if release:
             try:
                 teacher = body["teacher"]
                 if not valid_teacher_fields(teacher):
@@ -713,10 +712,10 @@ def create_native_rph_blueprint(runtime):
             except ValueError:
                 return jsonify({"error": "Invalid teacher fields"}), 400
         try:
-            lesson = resolve(body["unit"], body["pdp"])
+            lesson = source.resolve(body["unit"], body["pdp"])
             if lesson is None:
                 return jsonify({"error": "Matematik SJKC lesson unavailable"}), 404
-            name, document = render(lesson, body["format"], teacher)
+            name, document = source.render(lesson, body["format"], teacher)
             response = Response(document, mimetype=MIMES[body["format"]])
             response.headers["Content-Disposition"] = f'attachment; filename="{name}"'
             return response
