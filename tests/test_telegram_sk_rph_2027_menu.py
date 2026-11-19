@@ -87,11 +87,11 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                         self.assertEqual(self.documents[-1][0], f"CikguLaju_RPH_{code}.pdf")
                         self.assertEqual(len(PdfReader(BytesIO(self.documents[-1][1])).pages), 1)
                         counts[set_id] += 1
-        self.assertEqual(counts, {"d4": 69, "m4": 77, "s": 116, "m": 54, "s6": 89, "d6": 61, "m5": 69,
+        self.assertEqual(counts, {"d3": 56, "m3": 82, "d4": 69, "m4": 77, "s": 116, "m": 54, "s6": 89, "d6": 61, "m5": 69,
                                   "d5": 70, "mt4": 117, "mt5": 117, "mt6": 117,
                                   "dp2": 117, "dp3": 117})
-        self.assertEqual(len(self.documents), 2380)
-        self.assertEqual(self.credits, 1190)
+        self.assertEqual(len(self.documents), 2656)
+        self.assertEqual(self.credits, 1328)
 
     def test_dpk_private_route_keeps_edition_year_and_grouped_standards(self):
         app = Flask(__name__)
@@ -121,6 +121,54 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                 self.assertIn("DPK Edisi 3", document.paragraphs[1].text)
                 self.assertIn("SP " + codes, document.tables[0].rows[4].cells[1].text)
                 self.assertIn("Semak sekali lagi.", document.tables[-1].rows[1].cells[1].text)
+
+    def test_dlp_year3_api_downloads_every_exact_lesson(self):
+        app = Flask(__name__)
+        runtime = SimpleNamespace(create_word_file=lambda *_: None, create_pdf_file=lambda *_: None)
+        app.register_blueprint(create_native_rph_blueprint(runtime))
+        client = app.test_client()
+        path = "/internal/rph/v1/dlp"
+        token = "dlp-year-3-test-token-for-local-app"
+        headers = {"Authorization": f"Bearer {token}"}
+        teacher = {"class": "3 Bestari", "date": "2027-01-07", "time": "08:00–09:00",
+                   "students": "29", "reflection": ""}
+        with patch.dict("os.environ", {"CIKGULAJU_WEB_NATIVE_RPH_ENABLED": "1",
+                                     "CIKGULAJU_AUTHORITATIVE_API_TOKEN": token}):
+            for slug, subject, unit_count, lesson_count in (
+                ("science", "SCIENCE_DLP", 11, 56), ("mathematics", "MATH_DLP", 9, 82),
+            ):
+                url = f"{path}/year3-{slug}/catalogue"
+                self.assertEqual(client.get(url).status_code, 401)
+                response = client.get(url, headers=headers)
+                self.assertEqual(response.status_code, 200)
+                catalogue = response.get_json()
+                self.assertEqual((catalogue["year"], catalogue["subject"]), (3, subject))
+                self.assertEqual(len(catalogue["units"]), unit_count)
+                self.assertEqual(sum(len(unit["lessons"]) for unit in catalogue["units"]), lesson_count)
+                for unit in catalogue["units"]:
+                    for lesson in unit["lessons"]:
+                        with self.subTest(lesson=lesson["id"]):
+                            selection = {"year": 3, "subject": subject, "unit": unit["id"],
+                                         "lesson": lesson["id"]}
+                            available = client.get(path + "/availability", query_string=selection, headers=headers)
+                            self.assertEqual(available.status_code, 200)
+                            for fmt in ("word", "pdf"):
+                                file = client.post(path + "/render", headers=headers,
+                                                   json={"selection": selection, "teacher": teacher, "format": fmt})
+                                self.assertEqual(file.status_code, 200)
+                                self.assertIn(lesson["id"], file.headers["Content-Disposition"])
+                                if fmt == "word":
+                                    document = Document(BytesIO(file.data))
+                                    text = " ".join(cell.text for row in document.tables[0].rows for cell in row.cells)
+                                    self.assertIn("3 Bestari", text)
+                                    self.assertIn(lesson["label"], text)
+                                else:
+                                    pages = PdfReader(BytesIO(file.data)).pages
+                                    self.assertEqual(len(pages), 1)
+                                    self.assertIn("3 Bestari", pages[0].extract_text())
+                wrong_unit = {**selection, "unit": "01"}
+                self.assertEqual(client.get(path + "/availability", query_string=wrong_unit,
+                                            headers=headers).status_code, 404)
 
     def test_dlp_year4_api_returns_the_exact_catalogues_and_files(self):
         app = Flask(__name__)

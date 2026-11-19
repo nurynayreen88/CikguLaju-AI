@@ -1,9 +1,11 @@
 """Resolve and render the published Year 2 SK DLP lesson plans."""
 
 from functools import lru_cache
+from hashlib import sha256
 from io import BytesIO
 import json
 from pathlib import Path
+import re
 from xml.sax.saxutils import escape
 
 SUBJECTS = {"SCIENCE_DLP": "Science", "MATH_DLP": "Mathematics"}
@@ -28,10 +30,53 @@ def science_rpt_lessons():
     return rpt_lessons("SCIENCE_DLP")
 
 
+@lru_cache(maxsize=1)
+def year3_science_catalog():
+    path = Path(__file__).resolve().parent / "staging" / "dlp" / "year3" / "science_2027.json"
+    with path.open(encoding="utf-8") as source:
+        data = json.load(source)
+    rpt = path.parents[3] / "rpt_2027" / "dlp" / "CikguLaju_RPT_DLP_2027_Science_Year_3.docx"
+    if sha256(rpt.read_bytes()).hexdigest() != data["rpt_sha256"]:
+        raise ValueError("The Science Year 3 RPT has changed.")
+    plans = data["plans"]
+    units = {}
+    for plan in plans:
+        title = plan["unit"]
+        unit_number = re.match(r"Unit (\d+) ", title)
+        unit_id = unit_number[1].zfill(2) if unit_number else "review"
+        unit = units.setdefault(unit_id, {"id": unit_id, "title": title, "lessons": []})
+        unit["lessons"].append({
+            "id": plan["id"],
+            "title": plan["title"],
+            "year": 3,
+            "unit_title": title,
+            "numbered_label": plan["label"],
+            "minutes": plan["minutes"],
+            "rpt_dates": plan["rpt_dates"],
+            "standards": " · ".join(plan["standards"]),
+            "references": " · ".join(line.replace("TB ", "Textbook ").replace("AB ", "Activity Book ")
+                                     for line in plan["references"]),
+            "objective": plan["objective"],
+            "materials": plan["materials"],
+            "phases": [[f"{phase['phase']} · {phase['minutes']} min", phase["teacher"], phase["pupils"]]
+                       for phase in plan["phases"]],
+            "reflection": f"___ / ___ pupils met the objective. {plan['follow_up']}",
+        })
+    return [*(units[key] for key in sorted(units) if key != "review"), units["review"]]
+
+
+def subject_units(year, subject):
+    if type(year) is not int or subject not in SUBJECTS:
+        return ()
+    if year == 2:
+        return catalog()[subject]
+    if year == 3 and subject == "SCIENCE_DLP":
+        return year3_science_catalog()
+    return ()
+
+
 def resolve(year, subject, unit_id, lesson_id):
-    if type(year) is not int or year != 2 or subject not in SUBJECTS:
-        return None
-    for unit in catalog()[subject]:
+    for unit in subject_units(year, subject):
         if unit["id"] == unit_id:
             for lesson in unit["lessons"]:
                 if lesson["id"] == lesson_id:
@@ -44,19 +89,24 @@ def filename(lesson_id, fmt):
 
 
 def render(subject, unit, lesson, fmt, teacher):
-    scheduled = rpt_lessons(subject)[lesson["id"]]
-    lesson_label = f"Lesson {scheduled['number']:02d} · {scheduled['minutes']} min"
-    phases = lesson["phases"]
-    if subject == "SCIENCE_DLP" and scheduled["minutes"] == 30:
-        phases = [
-            (f"{phase.split(' · ', 1)[0]} · {duration} min", teacher_action, pupils_action)
-            for (phase, teacher_action, pupils_action), duration in zip(
-                phases, (3, 15, 9, 3), strict=True
-            )
-        ]
+    year = lesson.get("year", 2)
+    if year == 3:
+        lesson_label = f"{lesson['numbered_label']} · {lesson['minutes']} min"
+        phases = lesson["phases"]
+    else:
+        scheduled = rpt_lessons(subject)[lesson["id"]]
+        lesson_label = f"Lesson {scheduled['number']:02d} · {scheduled['minutes']} min"
+        phases = lesson["phases"]
+        if subject == "SCIENCE_DLP" and scheduled["minutes"] == 30:
+            phases = [
+                (f"{phase.split(' · ', 1)[0]} · {duration} min", teacher_action, pupils_action)
+                for (phase, teacher_action, pupils_action), duration in zip(
+                    phases, (3, 15, 9, 3), strict=True
+                )
+            ]
     heading = (
         "Daily Lesson Plan",
-        f"{SUBJECTS[subject]} (DLP) · Year 2 SK",
+        f"{SUBJECTS[subject]} (DLP) · Year {year} SK",
         lesson["title"],
     )
     class_details = (
@@ -75,6 +125,8 @@ def render(subject, unit, lesson, fmt, teacher):
         ("Learning objective", lesson["objective"]),
         ("Materials", lesson["materials"]),
     ]
+    if year == 3:
+        details.insert(2, ("RPT 2027 dates", " · ".join(lesson["rpt_dates"])))
     activities = [("Phase", "Teacher", "Pupils"), *phases]
     reflection = [("Reflection", teacher.get("reflection") or lesson["reflection"])]
     output = BytesIO()

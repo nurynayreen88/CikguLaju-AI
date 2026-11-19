@@ -400,6 +400,9 @@ def create_native_rph_blueprint(runtime):
     def aligned_dlp(year, subject):
         if type(year) is not int or subject not in ("MATH_DLP", "SCIENCE_DLP"):
             return None
+        if year == 3:
+            from staging.dlp.year3 import render_mathematics, render_science
+            return render_mathematics if subject == "MATH_DLP" else render_science
         if year == 4:
             from staging.dlp.year4 import render_mathematics, render_science
             return render_mathematics if subject == "MATH_DLP" else render_science
