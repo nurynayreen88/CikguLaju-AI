@@ -78,6 +78,32 @@ class MathSKYear1ReferencesTests(unittest.TestCase):
         install(runtime)
         self.assertFalse(hasattr(runtime, "_sm2542_rows"))
 
+    def test_telegram_sends_both_book_references_with_correct_volumes(self):
+        messages = []
+        runtime = SimpleNamespace(
+            _sm2542_rows=lambda year, subject: self.source,
+            _send_reference_material_v2528=lambda cid, state, key: "legacy",
+            _telegram_delivery_ok_v25279=lambda response: response is not None,
+            send=lambda cid, text, keyboard: messages.append((cid, text, keyboard)) or True,
+        )
+        install(runtime)
+        by_id = {row["pdp_sequence_code"]: row for row in runtime._sm2542_rows("Tahun 1", "Matematik")}
+        for code, book_key, volume, file_id, pages in (
+                ("PDP1", "textbook", 1, "1qHCANAAfTMumCAFbfHvTkMwYpygI18Sc", "1–4"),
+                ("PDP24", "activity", 1, "13KvDy6r8-NbLy-4aNF1EWQfuQU-QiyRC", "120–122"),
+                ("PDP55", "textbook", 2, "13ItVMRsMFmbbQaNYmu2XrWzCYy6pgN0m", "78–80"),
+                ("PDP55", "activity", 2, "1zxRzmN_iF3fcpXINIoRfaKXaQV3d7_B4", "84–85")):
+            state = dict(by_id[code], year="Tahun 1")
+            self.assertTrue(runtime._send_reference_material_v2528(42, state, book_key))
+            cid, text, keyboard = messages[-1]
+            self.assertEqual(cid, 42)
+            self.assertIn(f"Jilid {volume}, hlm. {pages}", text)
+            self.assertEqual(keyboard[0][0]["url"], f"https://drive.google.com/file/d/{file_id}/view")
+        self.assertEqual(runtime._send_reference_material_v2528(42, state, "rph"), "legacy")
+        self.assertEqual(runtime._send_reference_material_v2528(42, dict(state, year="Tahun 2"), "activity"), "legacy")
+        runtime.send = lambda *args: None
+        self.assertFalse(runtime._send_reference_material_v2528(42, state, "activity"))
+
     def test_web_options_keep_one_unit_one_and_both_references(self):
         app = Flask(__name__)
         app.register_blueprint(create_native_sequence_rph_blueprint(self.runtime))
