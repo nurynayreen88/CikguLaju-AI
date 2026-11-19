@@ -148,9 +148,25 @@ class TelegramCurriculumTests(unittest.TestCase):
         self.assertIn("belum berjaya dihantar", self.messages[-1][0])
         self.assertNotIn("_free_generation_pending_v25282", self.ns["state"][1])
 
+    def test_kp2027_dlp_lists_mathematics_and_explains_integrated_science(self):
+        call = self.ns["callback"]
+        call(1, "cv_primary_dlp")
+        call(1, "cv_year1_dlp")
+        message, keyboard = self.messages[-1]
+        self.assertIn("Tahun 1 (KP Baharu)", message)
+        self.assertIn("Komponen Sains berada dalam Alam dan Manusia", message)
+        buttons = {button["callback_data"]: button["text"] for row in keyboard for button in row}
+        self.assertNotIn("cv_dlp_science", buttons)
+        self.assertEqual(buttons["cv_dlp_math"], "Mathematics (DLP) — Dalam Penyediaan")
+        call(1, "cv_dlp_science")
+        self.assertIn("Alam dan Manusia", self.messages[-1][0])
+        call(1, "cv_dlp_math")
+        self.assertIn("Dalam Penyediaan", self.messages[-1][0])
+        self.assertEqual(self.calls, [])
+
     def test_dlp_other_years_show_subject_status_without_using_year_two(self):
         self.ns["callback"](1,"cv_primary_dlp")
-        for n in (1,3,4,5,6):
+        for n in (3,4,5,6):
             with self.subTest(year=n):
                 self.ns["callback"](1,f"cv_year{n}_dlp")
                 year_label = f"Tahun {n}" + (" (KP Baharu)" if n == 1 else "")

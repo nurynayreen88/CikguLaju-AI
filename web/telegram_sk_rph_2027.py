@@ -173,23 +173,31 @@ def install(runtime):
                 return deliver(cid, st, parts[1], parts[2])
             scope = parts[1]
             units = catalogues[scope]
-            if action == "set" and len(parts) == 2:
-                st[STATE_KEY] = {"scope": scope}
+            if action in ("set", "dlp") and len(parts) == 2:
+                _, subject, year = SETS[scope]
+                curriculum = st.get("curriculum_version")
+                if action == "dlp":
+                    if curriculum != "dlp" or st.get("year") != year or not subject.endswith(" (DLP)"):
+                        raise ValueError("Wrong DLP curriculum or year")
+                    back = [{"text": "Pilih Subjek DLP", "callback_data": f"cv_year{year.split()[-1]}_dlp"}]
+                else:
+                    back = _button("Pilih set", "home")
+                st[STATE_KEY] = {"scope": scope, "from_dlp": action == "dlp"}
                 return send(cid, "<b>" + escape(SETS[scope][0]) + "</b>\nPilih unit.",
                             [_button(unit["title"], f"unit:{scope}:{key}") for key, unit in units.items()]
-                            + [_button("Pilih set", "home")])
+                            + [back])
             choice = st.get(STATE_KEY, {})
             if choice.get("scope") != scope:
                 raise ValueError("Wrong curriculum set")
             unit_id = parts[2]
             unit = units[unit_id]
             if action == "unit" and len(parts) == 3:
-                st[STATE_KEY] = {"scope": scope, "unit": unit_id}
+                st[STATE_KEY] = {"scope": scope, "unit": unit_id, "from_dlp": choice.get("from_dlp", False)}
                 return send(cid, "<b>" + escape(unit["title"]) + "</b>\nPilih Lesson/PdP.",
                             [_button((row["label"] if scope in ("dp2", "dp3") else row["label"].split(" · ", 1)[0])
                                      + " • " + row["title"],
                                      f"pick:{scope}:{unit_id}:{row['id']}") for row in unit["lessons"]]
-                            + [_button("Pilih unit", f"set:{scope}")])
+                            + [_button("Pilih unit", f"{'dlp' if choice.get('from_dlp') else 'set'}:{scope}")])
             if action != "pick" or len(parts) != 4 or choice.get("unit") != unit_id:
                 raise ValueError("Wrong unit")
             lesson = next((r for r in unit["lessons"] if r["id"] == parts[3]), None)
@@ -201,8 +209,11 @@ def install(runtime):
                 "assessment_mode": "formative", "year": year, "year_label": year,
                 "subject": subject, "unit": unit["title"], "unit_title": unit["title"],
                 "topic": lesson["title"], "lesson_no": lesson["id"],
-                STATE_KEY: {"scope": scope, "unit": unit_id, "nonce": token_hex(6), **lesson},
+                STATE_KEY: {"scope": scope, "unit": unit_id, "nonce": token_hex(6),
+                            "from_dlp": choice.get("from_dlp", False), **lesson},
             }
+            if choice.get("from_dlp"):
+                runtime.state[cid]["curriculum_version"] = "dlp"
             return runtime._lesson_to_class_v2439(cid)
         except (KeyError, TypeError, ValueError, IndexError):
             return send(cid, "Pilihan RPH 2027 tidak sah. Pilih semula.", [_button("RPH 2027", "home")])

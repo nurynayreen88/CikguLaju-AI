@@ -12,6 +12,7 @@ from docx import Document
 from flask import Flask
 from pypdf import PdfReader
 
+from curriculum_version_telegram import install as install_curriculum
 from staging.matematik.penjana_2027 import DPK_ROUTE, ROUTE, register_downloads
 from web.native_rph_telegram_api import create_native_rph_blueprint
 from web.telegram_sk_rph_2027 import install
@@ -38,8 +39,12 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
             _lesson_to_class_v2439=lambda cid: "existing class picker",
             _temporary_auto_pack_v2386=lambda cid: "existing material picker",
             CIKGULAJU_TELEGRAM_SPECIAL_RPH_MENU_ACTIVE=True,
+            SUBJECTS_BY_GRADE={}, SUBJECT_LABEL={},
+            subjects=lambda cid, label: ("legacy subjects", label),
+            year=lambda cid, level: ("legacy year", level),
             quick=lambda cid: None,
         )
+        self.assertTrue(install_curriculum(r.__dict__))
         self.assertTrue(install_entry(r))
         self.assertTrue(install(r))
         self.assertEqual(self.click("choose_grade"), ("legacy", "choose_grade"))
@@ -69,6 +74,39 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                      rph_students="32")
         buttons = self.buttons(self.runtime._continue_after_rph_time(123, state))
         return buttons[:2]
+
+    def test_primary_dlp_path_opens_all_year_three_to_six_download_sets(self):
+        scopes = {3: ("d3", "m3"), 4: ("d4", "m4"), 5: ("d5", "m5"), 6: ("d6", "m")}
+        self.runtime.state[123] = {"task": "rph"}
+        self.click("cv_primary_dlp")
+        for year, subject_scopes in scopes.items():
+            year_button = f"cv_year{year}_dlp"
+            for name, scope in zip(("science", "math"), subject_scopes, strict=True):
+                with self.subTest(year=year, subject=name):
+                    subjects = self.click(year_button)
+                    self.assertIn("RPH 2027", subjects[0][0]["text"])
+                    units = self.buttons(self.click(f"cv_dlp_{name}"))
+                    self.assertIn(year_button, units)
+                    unit = next(button for button in units if button.startswith(f"sk27:unit:{scope}:"))
+                    lessons = self.buttons(self.click(unit))
+                    self.assertIn(f"sk27:dlp:{scope}", lessons)
+                    lesson = next(button for button in lessons if button.startswith(f"sk27:pick:{scope}:"))
+                    self.assertEqual(self.click(lesson), "existing class picker")
+                    state = self.runtime.state[123]
+                    self.assertEqual(state["year"], f"Tahun {year}")
+                    self.assertEqual(state["curriculum_version"], "dlp")
+                    state.update(rph_class="Bestari", rph_date="18/10/2027",
+                                 rph_time="08:00 - 09:00", rph_students="32")
+                    word, pdf, back, *_ = self.buttons(self.runtime._continue_after_rph_time(123, state))
+                    self.click(word)
+                    self.click(pdf)
+                    self.assertTrue(self.documents[-1][0].endswith(lesson.split(":")[-1] + ".pdf"))
+                    self.assertEqual(len(PdfReader(BytesIO(self.documents[-1][1])).pages), 1)
+                    return_to_units = f"sk27:dlp:{scope}"
+                    self.assertIn(return_to_units, self.buttons(self.click(back)))
+                    self.assertIn(year_button, self.buttons(self.click(return_to_units)))
+        self.assertEqual(len(self.documents), 16)
+        self.assertEqual(self.credits, 8)
 
     def test_every_exact_selection_can_send_word_and_pdf(self):
         keys = [key for key in self.buttons(self.click("sk27:home")) if key.startswith("sk27:set:")]
