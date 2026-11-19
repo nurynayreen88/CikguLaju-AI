@@ -204,7 +204,7 @@ Unit 2 Fractions, Decimals, and Percentages
 | --- | --- | --- |
 | Set induction · 10 min | Show 48.6 units shared into ten equal groups. | Estimate one share at about five units. |
 | Main activity · 45 min | Model shifting places for powers of ten and exchanging tenths when dividing by a digit. | Represent the quotient on a place-value mat and multiply to check. |
-| Practice and assessment · 25 min | Ask for 7.56 ÷ 3 and 48.6 ÷ 10, with one inverse check. | Find 2.52 and 4.86 and show a multiplication check for either result. |
+| Practice and assessment · 25 min | Give 7.56 ÷ 3, 48.6 ÷ 10, 480.6 ÷ 100 and 725 ÷ 1,000. Ask for one inverse check. | Find 2.52, 4.86, 4.806 and 0.725. Verify one quotient by multiplying by its divisor. |
 | Closure · 10 min | Ask why a quotient of 48.6 ÷ 10 cannot exceed 48.6. | Explain it is one of ten equal parts. |
 
 **Reflection** · ___ / ___ pupils met the objective. Check a new quotient by multiplying back to the dividend.
@@ -273,7 +273,7 @@ Unit 2 Fractions, Decimals, and Percentages
 | --- | --- | --- |
 | Set induction · 10 min | Show a story mentioning one quarter and ask what the whole is. | Identify the total to which the fraction refers. |
 | Main activity · 45 min | Compare a fraction story, a decimal measurement story and a percentage story. Highlight the operation and a reasonable range for each answer. | Represent each situation and choose a matching calculation before solving. |
-| Practice and assessment · 25 min | Give 25% of 80 tickets sold and a reel of 6.25 m minus 1.8 m used. | Find 20 tickets and 4.45 m, with a model and reasonableness check for each. |
+| Practice and assessment · 25 min | Give three short tasks: 3/5 of 35 books, 25% of 80 tickets, and 6.25 m of ribbon less 1.8 m. Ask for a check. | Find 21 books, 20 tickets and 4.45 m. Use a bar for one task and an estimate or inverse check for another. |
 | Closure · 10 min | Ask whether 25% of 80 can be more than 40. | Compare one quarter with one half of the same total. |
 
 **Reflection** · ___ / ___ pupils met the objective. Underline the whole and the quantities before forming a new calculation.

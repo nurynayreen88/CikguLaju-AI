@@ -60,13 +60,13 @@ Unit 4 Time
 
 **Learning objective** · Estimate a familiar activity's duration, measure it and compare the two values.
 
-**Materials** · Stopwatch, pencil-sorting activity, record slips
+**Materials** · Classroom timer or clock, timed reference card, estimation record
 
 | Phase | Teacher | Pupils |
 | --- | --- | --- |
-| Set induction · 5 min | Ask how long it may take to sort six pencils. | Make a timed estimate before starting. |
-| Main activity · 30 min | Model consistent start and finish signals and ask pupils to record their estimates first. | Time a brief familiar sorting task and compare measured durations with estimates. |
-| Practice and assessment · 20 min | Check each estimate, actual result and the numerical difference in seconds. | Submit both values with units and state whether the estimate was high or low. |
+| Set induction · 5 min | Give the measured time to sort five sets of cards. Ask for a reasonable range in minutes for ten sets with slightly different contents. | Use the timed set as a reference. Record an estimate and one factor that could make the task faster or slower. |
+| Main activity · 30 min | Set the ten-set sorting task and record actual start and finish times with the same signals. Let pupils compare elapsed minutes with their estimates. | Measure the time, convert it to whole minutes and compare it with the estimate. |
+| Practice and assessment · 20 min | Check the sorting estimates. Give the measured duration of a previous school event as a reference for a comparable event, then reveal its actual time log. | Record the sorting difference in minutes. Estimate the event in hours and minutes and compare with the actual duration. |
 | Closure · 5 min | Ask what could improve the next estimate. | Use the measured duration as a reference. |
 
 **Reflection** · ___ / ___ pupils met the objective. Repeat with a different familiar short task and compare again.

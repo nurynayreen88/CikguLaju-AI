@@ -88,8 +88,8 @@ Unit 6 Space
 | Phase | Teacher | Pupils |
 | --- | --- | --- |
 | Set induction · 10 min | Show a 6-by-4 grid rectangle and ask how to count squares efficiently. | Count rows of four or columns of six. |
-| Main activity · 45 min | Model area from the grid and pair two right triangles to make a rectangle. Show the base and perpendicular height on isosceles and equilateral examples. | Draw the rectangle and a right triangle, count or pair grid units, and compare with formulas. |
-| Practice and assessment · 25 min | Use a 6 cm × 4 cm rectangle and a right triangle with base 6 cm and height 4 cm. | Find 24 cm² and 12 cm² and use two matching triangles to justify the second area. |
+| Main activity · 45 min | Count unit squares for a square and a rectangle. Pair right triangles and mark the perpendicular heights of isosceles and equilateral triangles. | Compare grid counts with formulas, then mark the base and perpendicular height on each triangle. |
+| Practice and assessment · 25 min | Give a 6 cm × 4 cm rectangle and right and isosceles triangles with base 6 cm and height 4 cm. Check formula and square units. | Find 24 cm² for the rectangle and 12 cm² for each triangle. Explain why equal base and perpendicular height give equal areas. |
 | Closure · 10 min | Ask why area uses square centimetres. | Link each grid square to one square centimetre. |
 
 **Reflection** · ___ / ___ pupils met the objective. Use a labelled base and perpendicular height to avoid choosing the slanted side.
@@ -112,7 +112,7 @@ Unit 6 Space
 | --- | --- | --- |
 | Set induction · 5 min | Show one layer with three rows of four cubes. | Count twelve cubes. |
 | Main activity · 30 min | Model repeating the same layer and label length, width and height of the resulting cuboid. | Build two layers and show that the multiplication and layer counts agree. |
-| Practice and assessment · 20 min | Ask for the volume of a 4 cm × 3 cm × 2 cm cuboid built from 1 cm cubes. | Find 24 cm³ and explain two layers of twelve cubes. |
+| Practice and assessment · 20 min | Ask for the volume of a 4 cm × 3 cm × 2 cm cuboid and a cube with 3 cm edges. Check layer counts and the formula. | Find 24 cm³ from two layers of 12 and 27 cm³ from three layers of 9. Verify both with length × width × height. |
 | Closure · 5 min | Ask why volume uses cubic and not square units. | Point to a unit cube and identify all three dimensions. |
 
 **Reflection** · ___ / ___ pupils met the objective. Ask pupils to sketch layers before applying the formula.

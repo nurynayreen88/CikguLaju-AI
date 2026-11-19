@@ -18,9 +18,9 @@ Unit 5 Length, Mass, and Volume of Liquid
 
 | Phase | Teacher | Pupils |
 | --- | --- | --- |
-| Set induction · 5 min | Show a paper clip and a classroom wall. | Choose sensible units for their lengths. |
+| Set induction · 5 min | Show a paper clip and a road route between two villages. Ask for the suitable units. | Use millimetres for the clip and kilometres for the route. |
 | Main activity · 30 min | Model aligning a small object with zero and reading millimetre divisions from above. | Measure three small items and record each reading and unit. |
-| Practice and assessment · 20 min | Check a suitable unit for a pencil and school corridor and observe one measurement from each pupil. | Select centimetres or millimetres for the pencil and metres for the corridor, then record three measured lengths in mm. |
+| Practice and assessment · 20 min | Ask which units fit a paper clip and a 6-kilometre route. Observe one ruler measurement from each pupil. | Select mm and km respectively, then record all three measured object lengths in mm. |
 | Closure · 5 min | Ask why starting at the ruler's edge may give an incorrect reading. | Point to the actual zero mark. |
 
 **Reflection** · ___ / ___ pupils met the objective. Repeat with a small object starting at a marked non-zero value and calculate the difference.
@@ -87,12 +87,12 @@ Unit 5 Length, Mass, and Volume of Liquid
 
 | Phase | Teacher | Pupils |
 | --- | --- | --- |
-| Set induction · 5 min | Show lengths 2 m 75 cm and 1 m 80 cm. | Predict whether the total exceeds 4 m. |
-| Main activity · 30 min | Model adding centimetres and exchanging 100 cm for 1 m. Model borrowing a metre in a separate subtraction. | Use drawings or conversions to solve two mixed-unit operations. |
-| Practice and assessment · 20 min | Give 2 m 75 cm + 1 m 80 cm and 5 m 20 cm − 2 m 85 cm. | Find 4 m 55 cm and 2 m 35 cm, showing each exchange. |
-| Closure · 5 min | Ask how adding the difference back checks the subtraction. | Recover 5 m 20 cm. |
+| Set induction · 5 min | Show 2 cm 7 mm and 1 cm 8 mm. Ask where an exchange is needed when adding. | Predict that the millimetres add to more than 1 cm. |
+| Main activity · 30 min | Use a ruler to exchange 10 mm for 1 cm. Use a distance strip to model exchanging 1 km for 1,000 m in a subtraction. | Write each exchange and keep mm with cm and m with km. |
+| Practice and assessment · 20 min | Give 2 cm 7 mm + 1 cm 8 mm + 6 mm and 5 km 200 m − 2 km 850 m − 350 m. | Find 5 cm 1 mm and 2 km. Show regrouping in both calculations and verify the subtraction by adding back the distances. |
+| Closure · 5 min | Ask what the remainder and the two distances removed add up to. | Recover 5 km 200 m by adding 2 km + 2 km 850 m + 350 m. |
 
-**Reflection** · ___ / ___ pupils met the objective. Practise a problem with centimetres exceeding or falling below a full metre.
+**Reflection** · ___ / ___ pupils met the objective. Practise an exchange between mm and cm or between m and km.
 
 ## DLP-MAT-Y4-L53 · Lesson 53 · Multiply and divide lengths
 
@@ -204,7 +204,7 @@ Unit 5 Length, Mass, and Volume of Liquid
 | --- | --- | --- |
 | Set induction · 5 min | Show a road sign, a small bottle and a sack. | Choose a suitable unit for each context. |
 | Main activity · 30 min | Set one conversion error and one mixed-unit length calculation for correction. | Correct both examples using conversion factors and label the results. |
-| Practice and assessment · 20 min | Give 2.3 km wrongly converted to 230 m and 3 m 20 cm − 85 cm. | Correct to 2,300 m and 2 m 35 cm, and choose a suitable unit for a water bottle. |
-| Closure · 5 min | Ask how a unit can reveal an unreasonable value. | Use the road distance or water bottle to explain. |
+| Practice and assessment · 20 min | Give 2.3 km wrongly converted to 230 m and 3 cm 2 mm − 8 mm. Ask which unit fits the width of a small bottle cap. | Correct to 2,300 m and 2 cm 4 mm. Name a suitable unit for the cap width and justify the choice. |
+| Closure · 5 min | Ask how a unit can reveal an unreasonable value. | Use the road distance or bottle cap width to explain. |
 
 **Reflection** · ___ / ___ pupils met the objective. Repeat the correction with a different metric factor.

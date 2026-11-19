@@ -68,13 +68,35 @@ class TelegramRPTTests(unittest.TestCase):
                     key = f"rpt2027_dlp:{code}:{year}:{fmt}"
                     self.assertIn(key, buttons)
                     callback(123, key)
-                    self.assertTrue(self.documents[-1][1].endswith(f"_Year_{year}.{fmt}"))
+                    revision = "_Selaras" if year in (5, 6) else ""
+                    self.assertTrue(self.documents[-1][1].endswith(f"_Year_{year}{revision}.{fmt}"))
                     self.assertIn(f"Year {year}", self.documents[-1][2])
         callback(123, "rpt2027_dlp:science_dlp:pdf")
         self.assertTrue(self.documents[-1][1].endswith("_Year_2.pdf"))
         callback(123, "rpt2027_dlp:science_dlp:3:../pdf")
         callback(123, "rpt2027_dlp:science_dlp:1:pdf")
         self.assertEqual(len(self.documents), 21)
+
+    def test_sains_sk_year_five_and_six_word_pdf_use_existing_access_gate(self):
+        from rpt_2027.sains.sk_documents import document_path
+
+        callback = self.namespace["callback"]
+        for year in (5, 6):
+            callback(123, f"rpt2027_sains_sk{year}:{year}:pdf")
+            self.assertIn("Akses Terhad", self.messages[-1][1])
+        self.assertEqual(self.documents, [])
+        self.active = True
+        for year in (5, 6):
+            callback(123, f"rpt2027_year_{year}")
+            buttons = [button["callback_data"] for row in self.messages[-1][2] for button in row]
+            for fmt in ("pdf", "docx"):
+                key = f"rpt2027_sains_sk{year}:{year}:{fmt}"
+                self.assertIn(key, buttons)
+                callback(123, key)
+                self.assertEqual(Path(self.documents[-1][1]), document_path(year, fmt))
+        callback(123, "rpt2027_sains_sk6:5:pdf")
+        self.assertIn("tidak sah", self.messages[-1][1])
+        self.assertEqual(len(self.documents), 4)
 
     def test_sjkc_paid_users_receive_pdf_and_word_for_each_year(self):
         from rpt_2027.sjkc.bahasa_cina.documents import document_path
@@ -129,7 +151,7 @@ class TelegramRPTTests(unittest.TestCase):
 
         root = Path(__file__).resolve().parents[1] / "rpt_2027" / "sjkc"
         docs = sorted(root.glob("*/*.docx"))
-        self.assertEqual(len(docs), 16)
+        self.assertEqual(len(docs), 17)
         ns = {"w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"}
         for path in docs:
             with self.subTest(document=path.name), ZipFile(path) as doc:
@@ -182,30 +204,48 @@ class TelegramRPTTests(unittest.TestCase):
         self.assertIn("tidak sah", self.messages[-1][1])
         self.assertEqual(len(self.documents), 10)
 
-    def test_matematik_sjkc_year_two_only_has_word_and_pdf(self):
-        from rpt_2027.sjkc.matematik.documents import document_path
+    def test_matematik_sjkt_year_two_word_and_pdf_use_paid_rpt_menu(self):
+        from rpt_2027.sjkt.matematik.documents import document_path
 
         callback = self.namespace["callback"]
-        callback(123, "rpt2027_matematik_sjkc:2:docx")
+        callback(123, "rpt2027_matematik_sjkt:2:pdf")
         self.assertIn("Akses Terhad", self.messages[-1][1])
         self.assertEqual(self.documents, [])
-
         self.active = True
         callback(123, "rpt2027_year_2")
         buttons = {button["callback_data"]: button["text"]
                    for row in self.messages[-1][2] for button in row}
         for fmt in ("pdf", "docx"):
-            key = f"rpt2027_matematik_sjkc:2:{fmt}"
-            self.assertIn("Matematik (SJKC)", buttons[key])
+            key = f"rpt2027_matematik_sjkt:2:{fmt}"
+            self.assertIn("Matematik (SJKT)", buttons[key])
             callback(123, key)
             self.assertEqual(Path(self.documents[-1][1]), document_path(2, fmt))
-
-        callback(123, "rpt2027_year_3")
-        buttons = {button["callback_data"] for row in self.messages[-1][2] for button in row}
-        self.assertNotIn("rpt2027_matematik_sjkc:3:docx", buttons)
-        callback(123, "rpt2027_matematik_sjkc:3:pdf")
+        callback(123, "rpt2027_matematik_sjkt:3:pdf")
         self.assertIn("tidak sah", self.messages[-1][1])
         self.assertEqual(len(self.documents), 2)
+
+    def test_matematik_sjkc_year_two_and_three_have_word_and_pdf(self):
+        from rpt_2027.sjkc.matematik.documents import document_path
+
+        callback = self.namespace["callback"]
+        for year in (2, 3):
+            callback(123, f"rpt2027_matematik_sjkc:{year}:docx")
+            self.assertIn("Akses Terhad", self.messages[-1][1])
+        self.assertEqual(self.documents, [])
+
+        self.active = True
+        for year in (2, 3):
+            callback(123, f"rpt2027_year_{year}")
+            buttons = {button["callback_data"]: button["text"]
+                       for row in self.messages[-1][2] for button in row}
+            for fmt in ("pdf", "docx"):
+                key = f"rpt2027_matematik_sjkc:{year}:{fmt}"
+                self.assertIn("Matematik (SJKC)", buttons[key])
+                callback(123, key)
+                self.assertEqual(Path(self.documents[-1][1]), document_path(year, fmt))
+        callback(123, "rpt2027_matematik_sjkc:4:pdf")
+        self.assertIn("tidak sah", self.messages[-1][1])
+        self.assertEqual(len(self.documents), 4)
 
     def test_sjkc_delivery_requires_telegram_confirmation(self):
         self.active = True

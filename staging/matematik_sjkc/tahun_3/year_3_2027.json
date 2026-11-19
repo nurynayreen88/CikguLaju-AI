@@ -1,0 +1,5048 @@
+{
+  "academic_year": 2027,
+  "year": 3,
+  "school_type": "SJKC",
+  "subject": "Matematik",
+  "calendar_groups": [
+    "A",
+    "B"
+  ],
+  "time_allocation_hours": 96,
+  "sources": {
+    "dskp": "https://drive.google.com/file/d/1ujIni6EPzr5N-wMPvw14-bqTEKxaBMVZ/view",
+    "textbook_and_activity_book": "https://sites.google.com/moe-dl.edu.my/ppd-batu-pahat-sains-matematik/buku-teks-digital-bidang-sains-matematik/buku-teks-sekolah-rendah/matematik-tahun-3",
+    "rpt_2026": "https://www.scribd.com/document/985486038/",
+    "calendar": "https://www.moe.gov.my/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik"
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "group_a": [
+        "2027-01-04",
+        "2027-01-07"
+      ],
+      "group_b": [
+        "2027-01-04",
+        "2027-01-08"
+      ],
+      "pdp_count": 0,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 2,
+      "group_a": [
+        "2027-01-10",
+        "2027-01-14"
+      ],
+      "group_b": [
+        "2027-01-11",
+        "2027-01-15"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 3,
+      "group_a": [
+        "2027-01-17",
+        "2027-01-21"
+      ],
+      "group_b": [
+        "2027-01-18",
+        "2027-01-22"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 4,
+      "group_a": [
+        "2027-01-24",
+        "2027-01-28"
+      ],
+      "group_b": [
+        "2027-01-25",
+        "2027-01-29"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 5,
+      "group_a": [
+        "2027-01-31",
+        "2027-02-04"
+      ],
+      "group_b": [
+        "2027-02-01",
+        "2027-02-05"
+      ],
+      "pdp_count": 2,
+      "calendar_note": "05/02 cuti tambahan Tahun Baharu Cina (B)",
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 6,
+      "group_a": [
+        "2027-02-07",
+        "2027-02-11"
+      ],
+      "group_b": [
+        "2027-02-08",
+        "2027-02-12"
+      ],
+      "pdp_count": 0,
+      "calendar_note": "Cuti Tahun Baharu Cina dan cuti tambahan mengikut negeri",
+      "calendar_status": "cuti_perayaan_kapasiti_bersama_sifar"
+    },
+    {
+      "week": 7,
+      "group_a": [
+        "2027-02-14",
+        "2027-02-18"
+      ],
+      "group_b": [
+        "2027-02-15",
+        "2027-02-19"
+      ],
+      "pdp_count": 2,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 8,
+      "group_a": [
+        "2027-02-21",
+        "2027-02-25"
+      ],
+      "group_b": [
+        "2027-02-22",
+        "2027-02-26"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 9,
+      "group_a": [
+        "2027-02-28",
+        "2027-03-04"
+      ],
+      "group_b": [
+        "2027-03-01",
+        "2027-03-05"
+      ],
+      "pdp_count": 2,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 10,
+      "group_a": [
+        "2027-03-14",
+        "2027-03-18"
+      ],
+      "group_b": [
+        "2027-03-15",
+        "2027-03-19"
+      ],
+      "pdp_count": 2,
+      "calendar_note": "14/03 cuti tambahan Aidilfitri (A)",
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 11,
+      "group_a": [
+        "2027-03-21",
+        "2027-03-25"
+      ],
+      "group_b": [
+        "2027-03-22",
+        "2027-03-26"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 12,
+      "group_a": [
+        "2027-03-28",
+        "2027-04-01"
+      ],
+      "group_b": [
+        "2027-03-29",
+        "2027-04-02"
+      ],
+      "pdp_count": 2,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 13,
+      "group_a": [
+        "2027-04-04",
+        "2027-04-08"
+      ],
+      "group_b": [
+        "2027-04-05",
+        "2027-04-09"
+      ],
+      "pdp_count": 2,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 14,
+      "group_a": [
+        "2027-04-11",
+        "2027-04-15"
+      ],
+      "group_b": [
+        "2027-04-12",
+        "2027-04-16"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 15,
+      "group_a": [
+        "2027-04-18",
+        "2027-04-22"
+      ],
+      "group_b": [
+        "2027-04-19",
+        "2027-04-23"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 16,
+      "group_a": [
+        "2027-04-25",
+        "2027-04-29"
+      ],
+      "group_b": [
+        "2027-04-26",
+        "2027-04-30"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 17,
+      "group_a": [
+        "2027-05-02",
+        "2027-05-06"
+      ],
+      "group_b": [
+        "2027-05-03",
+        "2027-05-07"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 18,
+      "group_a": [
+        "2027-05-09",
+        "2027-05-13"
+      ],
+      "group_b": [
+        "2027-05-10",
+        "2027-05-14"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran_atau_pentaksiran_mengikut_sekolah",
+      "calendar_note": "PdP atau pentaksiran pertengahan tahun mengikut takwim sekolah"
+    },
+    {
+      "week": 19,
+      "group_a": [
+        "2027-05-16",
+        "2027-05-20"
+      ],
+      "group_b": [
+        "2027-05-17",
+        "2027-05-21"
+      ],
+      "pdp_count": 0,
+      "calendar_note": "Minggu PdP Raya Haji, Wesak dan cuti tambahan",
+      "calendar_status": "minggu_pdp_raya_haji_wesak_kapasiti_bersama_sifar"
+    },
+    {
+      "week": 20,
+      "group_a": [
+        "2027-06-06",
+        "2027-06-10"
+      ],
+      "group_b": [
+        "2027-06-07",
+        "2027-06-11"
+      ],
+      "pdp_count": 2,
+      "calendar_note": "Awal Muharam dan Hari Keputeraan Yang di-Pertuan Agong",
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 21,
+      "group_a": [
+        "2027-06-13",
+        "2027-06-17"
+      ],
+      "group_b": [
+        "2027-06-14",
+        "2027-06-18"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 22,
+      "group_a": [
+        "2027-06-20",
+        "2027-06-24"
+      ],
+      "group_b": [
+        "2027-06-21",
+        "2027-06-25"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 23,
+      "group_a": [
+        "2027-06-27",
+        "2027-07-01"
+      ],
+      "group_b": [
+        "2027-06-28",
+        "2027-07-02"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 24,
+      "group_a": [
+        "2027-07-04",
+        "2027-07-08"
+      ],
+      "group_b": [
+        "2027-07-05",
+        "2027-07-09"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 25,
+      "group_a": [
+        "2027-07-11",
+        "2027-07-15"
+      ],
+      "group_b": [
+        "2027-07-12",
+        "2027-07-16"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 26,
+      "group_a": [
+        "2027-07-18",
+        "2027-07-22"
+      ],
+      "group_b": [
+        "2027-07-19",
+        "2027-07-23"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 27,
+      "group_a": [
+        "2027-07-25",
+        "2027-07-29"
+      ],
+      "group_b": [
+        "2027-07-26",
+        "2027-07-30"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 28,
+      "group_a": [
+        "2027-08-01",
+        "2027-08-05"
+      ],
+      "group_b": [
+        "2027-08-02",
+        "2027-08-06"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 29,
+      "group_a": [
+        "2027-08-08",
+        "2027-08-12"
+      ],
+      "group_b": [
+        "2027-08-09",
+        "2027-08-13"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 30,
+      "group_a": [
+        "2027-08-15",
+        "2027-08-19"
+      ],
+      "group_b": [
+        "2027-08-16",
+        "2027-08-20"
+      ],
+      "pdp_count": 3,
+      "calendar_note": "Maulidur Rasul dan cuti ganti mengikut negeri",
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 31,
+      "group_a": [
+        "2027-08-22",
+        "2027-08-26"
+      ],
+      "group_b": [
+        "2027-08-23",
+        "2027-08-27"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 32,
+      "group_a": [
+        "2027-09-05",
+        "2027-09-09"
+      ],
+      "group_b": [
+        "2027-09-06",
+        "2027-09-10"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 33,
+      "group_a": [
+        "2027-09-12",
+        "2027-09-16"
+      ],
+      "group_b": [
+        "2027-09-13",
+        "2027-09-17"
+      ],
+      "pdp_count": 2,
+      "calendar_note": "16/09 Hari Malaysia",
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 34,
+      "group_a": [
+        "2027-09-19",
+        "2027-09-23"
+      ],
+      "group_b": [
+        "2027-09-20",
+        "2027-09-24"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 35,
+      "group_a": [
+        "2027-09-26",
+        "2027-09-30"
+      ],
+      "group_b": [
+        "2027-09-27",
+        "2027-10-01"
+      ],
+      "pdp_count": 2,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 36,
+      "group_a": [
+        "2027-10-03",
+        "2027-10-07"
+      ],
+      "group_b": [
+        "2027-10-04",
+        "2027-10-08"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 37,
+      "group_a": [
+        "2027-10-10",
+        "2027-10-14"
+      ],
+      "group_b": [
+        "2027-10-11",
+        "2027-10-15"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 38,
+      "group_a": [
+        "2027-10-17",
+        "2027-10-21"
+      ],
+      "group_b": [
+        "2027-10-18",
+        "2027-10-22"
+      ],
+      "pdp_count": 3,
+      "calendar_status": "pengajaran"
+    },
+    {
+      "week": 39,
+      "group_a": [
+        "2027-10-24",
+        "2027-10-28"
+      ],
+      "group_b": [
+        "2027-10-25",
+        "2027-10-29"
+      ],
+      "pdp_count": 0,
+      "calendar_note": "Ruang pentaksiran akhir tahun mengikut takwim sekolah; minggu pendek Deepavali",
+      "calendar_status": "pengajaran_minggu_pendek_atau_pentaksiran_akhir_tahun_mengikut_sekolah"
+    },
+    {
+      "week": 40,
+      "group_a": [
+        "2027-10-31",
+        "2027-11-04"
+      ],
+      "group_b": [
+        "2027-11-01",
+        "2027-11-05"
+      ],
+      "pdp_count": 0,
+      "calendar_status": "minggu_akhir_pengajaran_atau_pentaksiran_akhir_tahun_mengikut_sekolah",
+      "calendar_note": "Ruang pentaksiran akhir tahun mengikut takwim sekolah"
+    },
+    {
+      "week": 41,
+      "group_a": [
+        "2027-11-07",
+        "2027-11-11"
+      ],
+      "group_b": [
+        "2027-11-08",
+        "2027-11-12"
+      ],
+      "pdp_count": 0,
+      "calendar_status": "ruang_pentaksiran_akhir_tahun_atau_aktiviti_akhir_tahun",
+      "calendar_note": "Pentaksiran akhir tahun atau aktiviti sekolah mengikut takwim sekolah"
+    },
+    {
+      "week": 42,
+      "group_a": [
+        "2027-11-14",
+        "2027-11-18"
+      ],
+      "group_b": [
+        "2027-11-15",
+        "2027-11-19"
+      ],
+      "pdp_count": 0,
+      "calendar_status": "ruang_pentaksiran_akhir_tahun_atau_aktiviti_akhir_tahun",
+      "calendar_note": "Aktiviti akhir tahun"
+    },
+    {
+      "week": 43,
+      "group_a": [
+        "2027-11-21",
+        "2027-11-25"
+      ],
+      "group_b": [
+        "2027-11-22",
+        "2027-11-26"
+      ],
+      "pdp_count": 0,
+      "calendar_status": "ruang_pentaksiran_akhir_tahun_atau_aktiviti_akhir_tahun",
+      "calendar_note": "Aktiviti akhir tahun"
+    },
+    {
+      "week": 44,
+      "group_a": [
+        "2027-11-28",
+        "2027-12-02"
+      ],
+      "group_b": [
+        "2027-11-29",
+        "2027-12-03"
+      ],
+      "pdp_count": 0,
+      "calendar_status": "ruang_pentaksiran_akhir_tahun_atau_aktiviti_akhir_tahun",
+      "calendar_note": "Aktiviti akhir tahun"
+    }
+  ],
+  "lessons": [
+    {
+      "pdp": 1,
+      "week": 2,
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "10 000以内的整数",
+      "topic": "读写配对万以内的数",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "2–3",
+      "activity_book_pages": "1",
+      "objective": "正确读出并配对五组数字与文字中的四组，读对一组含零的数",
+      "materials": "数字卡和文字卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "出示 4 008 和 4 080，让学生先猜两张卡的读法。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范从千位读起及中间零的读法。学生轮流读 4 008、4 080 和 10 000。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "两人一组把数字卡和文字卡配对，互读核对，并说明为什么两个含零的数读法不同。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生完成第 1 页的配对练习。教师用五组新数检查读法和配对。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "请学生选一张有零的数字卡，读给同伴听并说出零的位置。"
+        }
+      ]
+    },
+    {
+      "pdp": 2,
+      "week": 2,
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "10 000以内的整数",
+      "topic": "用实物表示和配对数量",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "4–5",
+      "activity_book_pages": "2",
+      "objective": "用积木正确表示四个数中的三个，并将模型配对到正确数卡",
+      "materials": "十进制积木和数位表",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师摆出 2 个千块、3 个百片和 5 个小方块，学生猜数量。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师把模型按数位分组。学生在数位表摆出 2 305，说明为什么十位是 0。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "一人按数卡摆积木，一人按模型选卡。交换后用数位表核对，特别检查空位。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生用第 2 页看图写数量。教师另出四个数，核对模型和数卡。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "教师拿走一个百片并放入一个千块。学生指出 2 305 变成 3 205，并说明数值增加了 900。"
+        }
+      ]
+    },
+    {
+      "pdp": 3,
+      "week": 2,
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "10 000以内的整数",
+      "topic": "用数字和文字写数",
+      "sk": [
+        "1.1",
+        "1.2"
+      ],
+      "sp": [
+        "1.1.2",
+        "1.2.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "5",
+      "activity_book_pages": "3",
+      "objective": "五项任务中至少正确完成四项，包含一道由模型写数的题",
+      "materials": "小白板和数卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师写出“三千零二十”，学生在白板写相应数字。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范按千、百、十、个定位。学生比较 3 020 与 3 002 的写法。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生先从积木模型确定数量，再分别用数字和文字写出数目。交换作品后检查零的位置。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 3 页的数字与文字转换。教师另测五题，包含 10 000 和中间有零的数。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生口述一条写数时检查零的位置的方法。"
+        }
+      ]
+    },
+    {
+      "pdp": 4,
+      "week": 3,
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "10 000以内的整数",
+      "topic": "辨认数位和数值",
+      "sk": [
+        "1.4"
+      ],
+      "sp": [
+        "1.4.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "6",
+      "activity_book_pages": "4",
+      "objective": "从五张数卡中至少正确指出四张指定数字的数位及数值",
+      "materials": "数位表和磁贴",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示 5 052，用相同颜色标出两个 5，学生猜哪个值较大。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师移动数字磁贴，示范同一数字因位置不同而有不同数值。学生分别说出两个 5 所在的数位和数值。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同伴在数位表摆 6 606，一人指数字，另一人说数位和数值。用 0 的位置追问核对。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 4 页的数位与数值练习。教师逐一检查五张出口卡。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生用 5 052 说明“数字、数位、数值”各指什么。"
+        }
+      ]
+    },
+    {
+      "pdp": 5,
+      "week": 3,
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "10 000以内的整数",
+      "topic": "按数位和数值分解数目",
+      "sk": [
+        "1.4"
+      ],
+      "sp": [
+        "1.4.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "7",
+      "activity_book_pages": "5",
+      "objective": "正确用数位组成和数值展开式表示四个数中的三个",
+      "materials": "数位卡和展开式卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师给出 7 000＋300＋4，学生选出对应数卡。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师以 7 304 示范用“7 个千、3 个百、0 个十、4 个一”和展开式表示同一个数。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生将混排的展开式卡复原，再为同伴设计一个有空位的数并互换分解。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 5 页两种分解练习。教师抽查四个数的两种写法。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明展开式为什么可以略写值为零的一项。"
+        }
+      ]
+    },
+    {
+      "pdp": 6,
+      "week": 3,
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "10 000以内的整数",
+      "topic": "比较万以内的两个数",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "8–9",
+      "activity_book_pages": "6",
+      "objective": "五组比较题至少做对四组，并能说明一组首个不同数位",
+      "materials": "数位表和比较符号卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师出示 3 908 和 3 980，学生投票哪一个较大。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范由高位逐位比较，学生指出要在哪个数位才分出大小。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌用同四张数字卡组成两个四位数，交换放置比较符号并说明理由。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "完成第 6 页的比较练习。教师检查五组新数，包含一组相等的数。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生用一句话复述怎样找到决定大小的数位。"
+        }
+      ]
+    },
+    {
+      "pdp": 7,
+      "week": 4,
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "10 000以内的整数",
+      "topic": "顺序和逆序排列数目",
+      "sk": [
+        "1.1"
+      ],
+      "sp": [
+        "1.1.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "10–11",
+      "activity_book_pages": "7",
+      "objective": "把五个数按递增和递减顺序各排一遍，两次均正确",
+      "materials": "数卡和地面数轴",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "发给五名学生接近 8 000 的数卡，请他们站成一列。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范先比较千位再比较低位。学生用指读核对跨过 8 000 时的次序。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "小组将 7 998、8 003、8 030、8 000、7 980 排在数轴上，再把次序倒过来读。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生完成第 7 页的排列练习，并独立完成一组双向排序。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生解释为何 8 003 排在 8 030 前面。"
+        }
+      ]
+    },
+    {
+      "pdp": 8,
+      "week": 4,
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "10 000以内的整数",
+      "topic": "用参照物估算数量",
+      "sk": [
+        "1.5"
+      ],
+      "sp": [
+        "1.5.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "13–14",
+      "activity_book_pages": "8–9",
+      "objective": "四次估算中至少三次能正确使用“大约”“少于”或“多于”，并核对至少一次实际数量",
+      "materials": "成组方格图和计数片",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师给出一张标记为 100 格的图，再展示一张较大的方格图，请学生估计。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范用参照图分段比对。学生先说估算结果，再说明依据。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "小组比较不同面积的点阵，记录估计范围，再通过按百和按十计数验证一组。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 8–9 页的估算练习。教师检查四份判断及一次实际计数。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明改变参照量会怎样影响估算。"
+        }
+      ]
+    },
+    {
+      "pdp": 9,
+      "week": 4,
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "10 000以内的整数",
+      "topic": "求十位百位和千位近似值",
+      "sk": [
+        "1.6"
+      ],
+      "sp": [
+        "1.6.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "15–17",
+      "activity_book_pages": "10",
+      "objective": "六道近似值题中至少答对五道，包含至少一道中点题",
+      "materials": "数轴条和标签",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师显示 4 650 与两个相邻的整百数，学生标出哪边更近。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师分别标出两端和中点。学生在十位、百位和千位三种数轴上放置数卡。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌用 4 650 与 4 499 比较不同要求下的近似值，并说明正好在中点时向哪边取整。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生完成第 10 页的近似值练习。教师按三种单位各出两题。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说出取近似值前须先确定的数位。"
+        }
+      ]
+    },
+    {
+      "pdp": 10,
+      "week": 5,
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "10 000以内的整数",
+      "topic": "按指定间隔数数和补全数列",
+      "sk": [
+        "1.3"
+      ],
+      "sp": [
+        "1.3.1",
+        "1.3.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "18–19",
+      "activity_book_pages": "11–12",
+      "objective": "四个顺序或逆序数列中至少正确补全三个，并口述间隔",
+      "materials": "数轴和可擦写数条",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师用 4 800、4 900、空格引出跨千的数列。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范在数轴上向右和向左跳。学生按 1、2 至 10 的指定间隔，以及 100、1 000 数数。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生用数条抽取起点及间隔，用箭头标明方向，再与同伴互填空格。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生完成第 11–12 页的数列练习。教师用四个新数列检查间隔和方向。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说出从 5 200 每次减 1 000 后的前三个数。"
+        }
+      ]
+    },
+    {
+      "pdp": 11,
+      "week": 5,
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "10 000以内的整数",
+      "topic": "找出并补全数列规律",
+      "sk": [
+        "1.7"
+      ],
+      "sp": [
+        "1.7.1",
+        "1.7.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "20–22",
+      "activity_book_pages": "13",
+      "objective": "正确找出四个数列中的三个规律，并填对相应空格",
+      "materials": "数列卡和小白板",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示 4 006、4 003、4 000，学生猜下一项。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师用相邻两项之差验证规律。学生写出共同增量或减量，检查所有相邻项。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌交换各自设计的一个上升数列和一个下降数列，在前端或中间补空。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生完成第 13 页的数列规律练习。教师检查四组新数列的规则和答案。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明仅凭两项猜规律后还要检查什么。"
+        }
+      ]
+    },
+    {
+      "pdp": 12,
+      "week": 7,
+      "duration_minutes": 60,
+      "unit_number": 1,
+      "unit": "10 000以内的整数",
+      "topic": "解决万以内整数的生活问题",
+      "sk": [
+        "1.8"
+      ],
+      "sp": [
+        "1.8.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "23–27",
+      "activity_book_pages": "14–16",
+      "objective": "三道情境题至少正确解决两道，每道写出依据和带单位的答案",
+      "materials": "库存图和数轴",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示学校活动物资的需求表，让学生判断多少才算足够。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师用简图分出所知、所求。学生分别示范用比较数目或数列推断的策略。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "小组解决库存数量、估算及座位编号三类情境，用实际数或数轴验证。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生从第 14–16 页选做相应问题。教师另用三题检查解释和答案单位。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生分享一题的检查方法，说明答案如何回答原问题。"
+        }
+      ]
+    },
+    {
+      "pdp": 13,
+      "week": 7,
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "以两个数的加法求总数",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "30–34",
+      "activity_book_pages": "19–21",
+      "objective": "四道题至少答对三道，能在一道进位题标明换组",
+      "materials": "位值板、积木、白板",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "出示两个班的回收物数量，学生先估计总数。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师先用数位表演示 2 143＋1 026，再用积木演示 2 786＋1 457 的换组。学生在竖式标记进位。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌各做一道不进位和一道进位题，交换竖式核对对齐和进位，再估计总和。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生选做第 19–21 页对应题。教师另给四题，检查总数、数位对齐和进位。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明某一位凑满十时怎样记录。"
+        }
+      ]
+    },
+    {
+      "pdp": 14,
+      "week": 8,
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "三个数的连加",
+      "sk": [
+        "2.1"
+      ],
+      "sp": [
+        "2.1.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "35–37",
+      "activity_book_pages": "22–23",
+      "objective": "四道连加题至少答对三道，并能说出一组便于先加的数",
+      "materials": "金额标签和小白板",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "出示三箱练习簿的标签，请学生找哪两箱可以凑成整百。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范三行竖式与先凑整两种方法。学生比较 1 250＋3 180＋750 的步骤。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生两人一组重排加数，选择简便的先加组合，再独立用竖式验算。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 22 页连加和第 23 页估算复核。教师另用四题记录正确率。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生解释改变连加的次序为何不改变总和。"
+        }
+      ]
+    },
+    {
+      "pdp": 15,
+      "week": 8,
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "以两个数的减法求差",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "38–42",
+      "activity_book_pages": "24–26",
+      "objective": "四道题至少答对三道，含一道跨零退位题",
+      "materials": "位值板、积木",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "拿出库存和领走数量标签，学生说应使用哪种运算。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师先演示逐位相减，再用积木示范 5 003－1 286 的跨零换组。学生在竖式标记数字变化。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌轮流用模型或竖式计算，交换检查换组前后总值及加法验算。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "选做第 24–26 页对应题。教师用四题检查计算及跨零退位。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说出经过零的数位为什么会变成 9。"
+        }
+      ]
+    },
+    {
+      "pdp": 16,
+      "week": 8,
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "三个数的连减",
+      "sk": [
+        "2.2"
+      ],
+      "sp": [
+        "2.2.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "43–45",
+      "activity_book_pages": "27",
+      "objective": "四道连减题至少答对三道，并正确保留两步中间结果",
+      "materials": "库存流程卡和小白板",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师用两张发货卡展示同一批货物分两次发出，学生预测剩量。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师据库存时间线示范 8 420－1 750－2 300。学生记录第一次发货后的余额。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌根据两组发货卡各列一道题，把中间结果标在时间线上后交换核对。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生完成第 27 页的连减练习。教师抽查四道题的中间结果和最后答案。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明连减的第一步要用哪两个数。"
+        }
+      ]
+    },
+    {
+      "pdp": 17,
+      "week": 9,
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "无进退位的加减混合运算",
+      "sk": [
+        "2.5"
+      ],
+      "sp": [
+        "2.5.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "46–47",
+      "activity_book_pages": "28（列式参考）",
+      "objective": "四道万以内加减混合题至少答对三道，能标出依次进行的两步",
+      "materials": "数量变化卡和数轴",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示图书先增加再借出的情境，学生口述两次变化。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师用数轴和竖式演示 2 130＋1 240－1 120；学生按从左至右记录每一步。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "小组将数量变化卡排成顺序，换一张卡制作无进退位的加减混合题给另一组。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "参看第 28 页的列式格式。学生独立计算 2 413＋1 264－1 322、4 628－1 214＋2 031、3 125＋1 462－2 574 和 7 648－2 316＋1 203。教师检查两步顺序。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生画出加法向右、减法向左的两次移动，解释最终位置。"
+        }
+      ]
+    },
+    {
+      "pdp": 18,
+      "week": 9,
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "两三位数乘一位数",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "48–50",
+      "activity_book_pages": "31–32",
+      "objective": "四道题至少答对三道，能用分解说明一道进位题",
+      "materials": "方格纸、积木",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "展示四组各 23 格的阵列，学生预测总格数。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师把 23 分为 20 和 3，再将方法迁移到 213×3。学生对照分解式及竖式。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌用不同颜色标记部分积，合并后相互核对。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生完成第 31–32 页相应题，三位数题由教师另出。教师共用四题记录结果。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生以 28×3 解释进位后为什么要继续处理十位。"
+        }
+      ]
+    },
+    {
+      "pdp": 19,
+      "week": 10,
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "四位数乘一位数及乘以 10 100 和 1 000",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "51–53",
+      "activity_book_pages": "33–34",
+      "objective": "五题至少答对四题，包含四位数乘一位数及指定倍数",
+      "materials": "位值表、倍数卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师问四箱各 1 206 件是否少于 5 000 件，再请学生预测 26×100 的数位。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师对比分解和竖式计算 1 206×4，再用数位卡示范乘以 10、100 和 1 000。学生解释各位数值怎样改变。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌各解一道四位数乘一位数题及三种指定倍数题，互查乘积是否在 10 000 以内。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "选做第 33 页及第 34 页活动八。教师另用五题检查算法与结果。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生用数位变化解释 8×1 000。"
+        }
+      ]
+    },
+    {
+      "pdp": 20,
+      "week": 10,
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "用分解和重组巩固乘法",
+      "sk": [
+        "2.3"
+      ],
+      "sp": [
+        "2.3.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "54",
+      "activity_book_pages": "35",
+      "objective": "正确解出两组相关乘法，并解释怎样由已知积得到新积",
+      "materials": "模式条、方格纸",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "出示 24×3 与 25×3，学生猜两个积相差多少。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师用阵列把 24×3 补上一列成为 25×3，学生用连加和分解式核对差。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌自选相邻两乘式，画阵列、写部分积并互换检查。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 35 页一步一步来及按能力选做拓展。教师检查两组新题的式子及解释。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说出乘数增加 1 时积增加多少。"
+        }
+      ]
+    },
+    {
+      "pdp": 21,
+      "week": 11,
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "多位数除以一位数",
+      "sk": [
+        "2.4"
+      ],
+      "sp": [
+        "2.4.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "55–59",
+      "activity_book_pages": "36–39",
+      "objective": "五道题至少答对四道，正确验算一道有余数的题",
+      "materials": "筹码、分组盘",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "把 26 张贴纸按每包 4 张分给小组，请学生观察余下数量。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师先用分组和乘法联系除法，再示范 935÷4 的竖式。学生检查余数小于除数。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌各解一道整除和一道有余数题，交换后用乘回加余数核对。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生从第 36–39 页选做与能力相符的题。教师另用五题检查商、余数和验算。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生口述如何用商、除数与余数还原被除数。"
+        }
+      ]
+    },
+    {
+      "pdp": 22,
+      "week": 11,
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "除以 10、100 和 1 000",
+      "sk": [
+        "2.4"
+      ],
+      "sp": [
+        "2.4.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "60–61",
+      "activity_book_pages": "40–41",
+      "objective": "五道题至少答对四道，并用乘法验证一道带余数的题",
+      "materials": "分装标签和数位表",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "老师提问 3 200 张贴纸每 100 张装一盒，可以装几盒。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师比较 3 200÷10、3 200÷100 和 3 000÷1 000，再用 3 205÷100 说明商和余数。学生用乘法验算。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌按包装规格分类可整除和有余数的数卡，再从课本第 61 页的除法活动选做整除性挑战。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生完成第 40 页相关题，并选做第 41 页的除法巩固。教师用五题检查。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生根据包装实例说明为什么余数必须少于每盒容量。"
+        }
+      ]
+    },
+    {
+      "pdp": 23,
+      "week": 11,
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "找出未知数并列式",
+      "sk": [
+        "2.6"
+      ],
+      "sp": [
+        "2.6.1",
+        "2.6.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "62–63",
+      "activity_book_pages": "42",
+      "objective": "在四个一步情境中至少三个能正确标出未知量并列式",
+      "materials": "条形图和未知数卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师说总共有 56 张贴纸，已知其中一组 24 张，学生指出哪一量未知。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师用空格表示未知量，区分它在算式左边或右边时的意义。学生根据条形图列出一道算式。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌抽取加、减、乘或除的一步情境，画图标未知量，再互换检查运算和空格位置。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生用第 42 页识别未知数。教师另以四个生活情境检查能否独立列式。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "请学生说明题目问的是哪个量，以及算式中的空格为何放在那里。"
+        }
+      ]
+    },
+    {
+      "pdp": 24,
+      "week": 12,
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "看算式编故事",
+      "sk": [
+        "2.7"
+      ],
+      "sp": [
+        "2.7.1",
+        "2.7.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "64–65",
+      "activity_book_pages": "43",
+      "objective": "能编写两则与算式一致的故事，分别涵盖一步运算和加减混合",
+      "materials": "算式卡和故事框",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师出示 420＋130－220，学生说数量可能发生了哪两次变化。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师用一张情境图示范如何让数字、运算、单位和问题彼此对应。学生指出故事的起点与变化。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌各抽一步和混合算式卡，编写后交换并从故事反写算式。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生用第 43 页练习一步算式编故事。教师另用自拟混合算式检查两则作品。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生读出一句能明确表示“减少”的话，并指认对应运算符号。"
+        }
+      ]
+    },
+    {
+      "pdp": 25,
+      "week": 12,
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "解决基本运算与加减混合问题",
+      "sk": [
+        "2.7"
+      ],
+      "sp": [
+        "2.7.3"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "66–73",
+      "activity_book_pages": "44–48",
+      "objective": "三道情境题至少答对两道，其中一道为两步题并写出验算",
+      "materials": "四步解题表、线段图",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "展示两次调拨物品的简表，让学生预测最终存量是否增加。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范用条形图解一步题，再用数量变化表列两步题。学生标出已知、未知和单位。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌各解一道一步题和一道混合题，分别说明选择运算的理由，并交换验算。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生从第 44–48 页选做对应题。教师用三道新题检查列式、答案单位与验算。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明哪一种验算方法能检查中间结果。"
+        }
+      ]
+    },
+    {
+      "pdp": 26,
+      "week": 13,
+      "duration_minutes": 60,
+      "unit_number": 2,
+      "unit": "基本运算",
+      "topic": "基本运算复习与课堂评估",
+      "sk": [
+        "2.1",
+        "2.4",
+        "2.7"
+      ],
+      "sp": [
+        "2.1.1",
+        "2.4.1",
+        "2.7.3"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "74–76",
+      "activity_book_pages": "49–50",
+      "objective": "五道综合题至少答对四道，并订正一道错题的关键步骤",
+      "materials": "原创检查题、对照卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师出示一份错置进位和一份余数过大的样例，学生先找错误位置。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师带学生用估算检查加法、用乘法检查除法，再示范把生活问题的已知量列成简表。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生用第 49 页做分步复习。先独立完成，再向同桌解释一个步骤，第 50 页供拓展。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "教师以五道新题评估加法、除法及应用题，记录需要补练的项目。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生写下一种可用来检查自己答案的做法。"
+        }
+      ]
+    },
+    {
+      "pdp": 27,
+      "week": 13,
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数、小数与百分比",
+      "topic": "用真分数表示一组的一部分",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.1"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "78",
+      "activity_book_pages": "51",
+      "objective": "四组模型至少三组正确写出真分数，并能指出分母代表的总数",
+      "materials": "双色计数片和分数卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师摆出 8 个计数片，其中 3 个为蓝色，学生说蓝色占多少。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范用 3/8 表示指定部分与总数。学生更换指定颜色并重新写出真分数。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌一人摆模型，一人写分数并用语言说明分子与分母，之后互换。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生用第 51 页圈选及涂色。教师另展示四组模型检查答案。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生以 3/8 说明为什么分母不是另一种颜色的数量。"
+        }
+      ]
+    },
+    {
+      "pdp": 28,
+      "week": 14,
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数、小数与百分比",
+      "topic": "找出分母至 10 的等值分数",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "79–80",
+      "activity_book_pages": "52",
+      "objective": "四组分数至少正确配对三组，并用图或等比例变化解释一组",
+      "materials": "等长分数纸条和数轴",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示等长纸条的 1/2 和 2/4，请学生重叠检查。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范用同一单位比较 1/3、2/6 与 3/9。学生在数轴标出三者位置。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌用分数条配对卡片，再写出分子和分母同乘或同除的关系。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 52 页。教师另以四组分母不超过 10 的数检查。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明比较涂色面积时为什么纸条必须等长。"
+        }
+      ]
+    },
+    {
+      "pdp": 29,
+      "week": 14,
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数、小数与百分比",
+      "topic": "把真分数化成最简分数",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.3"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "81",
+      "activity_book_pages": "53",
+      "objective": "在五题中至少正确化简四题，并指出一道已是最简的分数",
+      "materials": "分数卡和因数表",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师并列 4/8、2/4、1/2，请学生找还能同时约分的分数。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师用图与算式演示分子和分母同除 4。学生用小因数表确认是否还可约分。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生给同伴辨认可化简与已最简的卡片，并把每步的共同除数写出。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 53 页。教师以五道分母至 10 的题检查步骤与结果。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生解释为什么只除分子会改变分数的值。"
+        }
+      ]
+    },
+    {
+      "pdp": 30,
+      "week": 14,
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数、小数与百分比",
+      "topic": "同分母真分数加法",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.5"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "82",
+      "activity_book_pages": "54",
+      "objective": "五题至少正确四题，且答案保持真分数并约至最简",
+      "materials": "等分纸片和小白板",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示同一张纸的 1/8 与 3/8，学生估计合起来占多少。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师用等分纸片示范相加相同单位的份数。学生写出算式并把 4/8 化为 1/2。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌为三条同分母算式画图，互查没有把分母相加且和小于 1。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 54 页对应练习。教师另用五题检查结果与化简。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明同分母相加时留下原分母的原因。"
+        }
+      ]
+    },
+    {
+      "pdp": 31,
+      "week": 15,
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数、小数与百分比",
+      "topic": "相关异分母真分数加法",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.5"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "83–84",
+      "activity_book_pages": "55–56",
+      "objective": "五组规定分母配对的加法题至少答对四组，并正确通分",
+      "materials": "等长分数条和通分表",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示 1/3＋1/6，请学生用纸条找出能直接相加的同名份。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师以分数条示范改写 1/3，学生练习辨认 2 与 4、6、8、10，以及 3 与 6、9、4 与 8、5 与 10 的关系。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "小组按分母家族轮换练习，先写等值分数再相加，彼此检查和小于 1。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 55–56 页。教师给五题覆盖各类分母组合。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生用 1/4＋1/8 示范为何先通分。"
+        }
+      ]
+    },
+    {
+      "pdp": 32,
+      "week": 15,
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数、小数与百分比",
+      "topic": "同分母真分数减法",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.6"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "85",
+      "activity_book_pages": "57",
+      "objective": "五道题至少答对四道，并把需要化简的差写成最简分数",
+      "materials": "等分图和可擦写笔",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示 7/10 的涂色图，请学生划去其中 3/10。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范只减分子，再化简差。学生用图对照 7/10－3/10 的每一步。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生同桌自拟两个同分母减法题，用涂色与划线检查，差保留合理范围。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生练习第 57 页。教师再用五题记录计算及化简情况。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生解释为什么划掉的份数不会改变原来的等分总数。"
+        }
+      ]
+    },
+    {
+      "pdp": 33,
+      "week": 15,
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数、小数与百分比",
+      "topic": "相关异分母真分数减法",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.6"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "86–87",
+      "activity_book_pages": "58–59",
+      "objective": "五道题至少答对四道，能用图验证其中一道的差",
+      "materials": "分数条和通分表",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师给出 5/8－1/4，学生判断能否直接减分子。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师把 1/4 改成 2/8。学生用同一把分数条核对常见分母倍数关系。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "小组轮换计算分母 2 与 4、6、8、10，3 与 6、9，4 与 8，以及 5 与 10 的配对题，先写等值分数。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生完成第 58–59 页的相应题。教师用五题观察通分、相减和化简。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生把差与减去的真分数相加，检查是否等于原来的真分数。"
+        }
+      ]
+    },
+    {
+      "pdp": 34,
+      "week": 16,
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数、小数与百分比",
+      "topic": "辨认假分数和带分数",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.7"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "88–90",
+      "activity_book_pages": "60",
+      "objective": "六张卡中至少正确分类五张，并能用图表示一个假分数或带分数",
+      "materials": "等分纸盘和分类卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师用四等分纸盘摆出 5 片，请学生说它超过几个整盘。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师区分小于 1、等于 1 和大于 1 的图示。学生找出 4/4、5/4 与 1 又 1/4 对应的模型。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌用纸盘匹配分数卡，分类后说明 4/4 为什么属于假分数。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 60 页分类与看图写数。教师另用六张卡记录结果。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生举出一个分母不超过 10 的假分数，并画出对应的完整单位。"
+        }
+      ]
+    },
+    {
+      "pdp": 35,
+      "week": 16,
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数、小数与百分比",
+      "topic": "认识分母为 100 的分数",
+      "sk": [
+        "3.1"
+      ],
+      "sp": [
+        "3.1.4"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "91",
+      "activity_book_pages": "61",
+      "objective": "根据五张百格图至少正确写出四个分母为 100 的分数，并正确完成一道涂色题",
+      "materials": "百格图、颜色笔",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "展示涂 7 格和 70 格的两张百格图，学生说出各自涂格数。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师用 7/100 解释分子和分母，示范读作百分之七，再由图写出分母为 100 的分数。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌轮流报出以 100 为分母的分数，用百格纸表示并互查数目。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "完成第 61 页的图与分数配对。教师再以五张图及一项涂格任务检查。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生把涂了 25 格的百格图写成 25/100，并读作百分之二十五。"
+        }
+      ]
+    },
+    {
+      "pdp": 36,
+      "week": 16,
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数、小数与百分比",
+      "topic": "读写小数并用百格图表示",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.1",
+        "3.2.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "92–93",
+      "activity_book_pages": "62",
+      "objective": "五题至少答对四题，包含数字、文字与百格图的双向转换",
+      "materials": "百格图、位值卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师出示 0.7 与 0.07，学生分别指出应该涂几格。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师比较十分位和百分位，用百格图示范读写零点七及零点零七。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌从 0.01 至 0.99 的数卡抽题，轮流从数字写华文读法或由图写数字。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "完成第 62 页的小数练习。教师补充百格涂色题，检查五项转换。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生指出 0.07 的 7 位于哪一位，并说明它占多少格。"
+        }
+      ]
+    },
+    {
+      "pdp": 37,
+      "week": 17,
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数、小数与百分比",
+      "topic": "用百格图和数轴比较小数",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.3"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "94–95",
+      "activity_book_pages": "63",
+      "objective": "五组两位以内的小数至少比较对四组，能用图说明一组",
+      "materials": "百格图和数轴条",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示 0.6 与 0.56，邀请学生预测较大者。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范把 0.6 写作 0.60，学生用相同大小的百格图和数轴核对大小。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌交换两张小数卡，分别用涂格与标数轴的方法比较，并检查符号方向。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 63 页。教师另用五组小数检查比较，含一组等值表示。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生解释为什么小数点后数字较多不能直接决定数值大小。"
+        }
+      ]
+    },
+    {
+      "pdp": 38,
+      "week": 17,
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数、小数与百分比",
+      "topic": "小数的加法和减法",
+      "sk": [
+        "3.2"
+      ],
+      "sp": [
+        "3.2.4",
+        "3.2.5"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "96–100",
+      "activity_book_pages": "64–67",
+      "objective": "六道小数加减题至少答对五道，并用百格图验算一题。加法的和及减法的被减数均不超过 0.99",
+      "materials": "百格纸和小数数位表",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师用百格图展示 0.43 和 0.2，请学生预测两数的和与差。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范把 0.2 写成 0.20，使十分位和百分位分别对齐。学生用百格图拼合和划去格子比较加、减。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌各设计一题和不超过 0.99 的加法，以及一题被减数不超过 0.99、差为非负数的减法，交换用竖式解答。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生选做第 64–67 页加、减各一组。教师用三加三减新题检查。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说出小数竖式对齐小数点之后还要检查什么。"
+        }
+      ]
+    },
+    {
+      "pdp": 39,
+      "week": 17,
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数、小数与百分比",
+      "topic": "认识百分号和百分比",
+      "sk": [
+        "3.3"
+      ],
+      "sp": [
+        "3.3.1",
+        "3.3.2",
+        "3.3.3",
+        "3.3.4"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "101",
+      "activity_book_pages": "68",
+      "objective": "五项读写与图示题至少答对四项，正确使用百分号",
+      "materials": "百格图和百分比卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示活动完成进度为 35%，请学生解释符号所表示的单位。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师用百格图示范 35% 表示每 100 格里的 35 格。学生读写含 1% 和 100% 的例子。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "两人一组抽取百分比卡，交替填写百格图、读出数值及核对已涂格数。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生完成第 68 页。教师检查五项从读写到图示的任务。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生用一句话解释 100% 和整个图之间的关系。"
+        }
+      ]
+    },
+    {
+      "pdp": 40,
+      "week": 18,
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数、小数与百分比",
+      "topic": "转换百分数小数和百分比",
+      "sk": [
+        "3.4"
+      ],
+      "sp": [
+        "3.4.1",
+        "3.4.2",
+        "3.4.3"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "102–104",
+      "activity_book_pages": "69",
+      "objective": "六项双向转换至少正确五项，并以同一张图证明一组三种写法等值",
+      "materials": "三栏卡和百格纸",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示 35/100、0.35、35%，学生把它们贴到同一百格图旁。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师以 0.4 示范先用 40 个百格表示，再写成 40/100 和 40%。学生口述逆向转换。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌抽取 0.1 至 0.99 范围内的数值，轮流填三栏卡并解释 0.4 可写成 40/100。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 69 页的等值转换。教师分别以三种表示出六题，覆盖双向。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生选一个数值并用三种形式表示，再说明图中的涂格数。"
+        }
+      ]
+    },
+    {
+      "pdp": 41,
+      "week": 18,
+      "duration_minutes": 60,
+      "unit_number": 3,
+      "unit": "分数、小数与百分比",
+      "topic": "编写和解决分数小数与百分比问题",
+      "sk": [
+        "3.5"
+      ],
+      "sp": [
+        "3.5.1",
+        "3.5.2"
+      ],
+      "textbook_volume": 1,
+      "textbook_pages": "106–113",
+      "activity_book_pages": "70–76",
+      "objective": "能写出一则与给定算式相符的故事，并在两道应用题中至少答对一道且写出验算",
+      "materials": "情境卡、百格图、四步表",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "出示 0.24＋0.36＝0.60 和一张进度图，学生说每个数可以表示什么。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师以彩带合长示范从算式补全情境，再用百格图示范如何从应用题找整体与部分。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌从分数、小数及百分比情境中选题编故事，交换后反写算式，并解决另一类应用题。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "第 70–71 页选做编故事，第 72–74 页选做应用题，第 75–76 页供巩固。教师分别检查故事与解题证据。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明故事中的问题句怎样与算式结果对应。"
+        }
+      ]
+    },
+    {
+      "pdp": 42,
+      "week": 18,
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "两个币值相加",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "2–4",
+      "activity_book_pages": "77",
+      "objective": "正确完成4题中的3题并写出RM单位",
+      "materials": "价签、代币",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师列出两件用品的价钱，请估计总额。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范令吉和仙对齐，核对总额低于RM10000。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生用代币模拟购物，再写出竖式。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "从第 77 页选做两个币值相加的练习。教师另给四份账单，检查金额及 RM 单位。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生用一笔整数令吉加含仙金额说明为什么小数点要对齐。"
+        }
+      ]
+    },
+    {
+      "pdp": 43,
+      "week": 20,
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "三个币值连加",
+      "sk": [
+        "4.1"
+      ],
+      "sp": [
+        "4.1.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "2–4",
+      "activity_book_pages": "78 C",
+      "objective": "正确算出3份清单中的2份总价并说明一个简算",
+      "materials": "购物清单、价签",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示三张可以凑成整令吉的价格卡。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范先凑整再加第三项并估算。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生拟三件物品的账单、交换并核对。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生完成第 78 页 C 的连加练习。教师用三份新清单检查三个币值和简算过程。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生为一组三项金额圈出可以先凑整的两项。"
+        }
+      ]
+    },
+    {
+      "pdp": 44,
+      "week": 20,
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "两个币值相减",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "5–7",
+      "activity_book_pages": "79",
+      "objective": "正确算出四笔余额中的三笔",
+      "materials": "代币、收据",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师问付款后要怎样知道找零。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范从令吉借1换100仙。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生配对购物卡及现金卡，计算余额。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生完成第 79 页减法练习。教师另用四道余额题检查减数、算式及单位。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生用差加减数还原原有金额。"
+        }
+      ]
+    },
+    {
+      "pdp": 45,
+      "week": 21,
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "连续减去两个支出",
+      "sk": [
+        "4.2"
+      ],
+      "sp": [
+        "4.2.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "5–7",
+      "activity_book_pages": "80 C",
+      "objective": "正确完成3题中的2题并记录中间余额",
+      "materials": "账本卡、模拟现金",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示一次存入和两次支出记录。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师演示每笔支出后的余额以及验算顺序。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生完成一页账本并交换检查。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "第 80 页选做 C 的连减练习。教师以三题检查两次扣款及首次扣款后的余额。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说出第二次扣款使用哪个余额。"
+        }
+      ]
+    },
+    {
+      "pdp": 46,
+      "week": 21,
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "钱币加减混合运算",
+      "sk": [
+        "4.3"
+      ],
+      "sp": [
+        "4.3.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "8",
+      "activity_book_pages": "81",
+      "objective": "正确完成4题中的3题并解释符号选择",
+      "materials": "折扣卡、收据",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师分别出示折扣和额外收费。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师把收费、折扣、余额转成运算式。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生按事件顺序列式并解释每个加减符号。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 81 页对应练习。教师另测四题，观察正负变化怎样转换为符号。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生把退款和付款各对应到一个运算符号。"
+        }
+      ]
+    },
+    {
+      "pdp": 47,
+      "week": 21,
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "将币值乘一位数、10、100或1000",
+      "sk": [
+        "4.4"
+      ],
+      "sp": [
+        "4.4.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "9–10",
+      "activity_book_pages": "82",
+      "objective": "正确完成5题中的4题并估算一题",
+      "materials": "模拟价签、位值表",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示同价商品的多件订单。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范用令吉与仙分拆并控制总值。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生计算批量订单，换另一策略验证。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 82 页乘法，教师另给 10、100、1 000 倍题，共五题并查一题估算。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生解释 100 套每套 RM6.25 如何得到总价。"
+        }
+      ]
+    },
+    {
+      "pdp": 48,
+      "week": 22,
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "将币值除以一位数、10、100或1000",
+      "sk": [
+        "4.5"
+      ],
+      "sp": [
+        "4.5.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "11–12",
+      "activity_book_pages": "83–84",
+      "objective": "正确完成5题中的4题并验算一题",
+      "materials": "模拟纸币、分组袋",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示同一笔钱平均分给数人。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范把部分币值换算成仙再分。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生按组平均分，并用乘法核验每份。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生选做第 83–84 页。教师补足除以 10、100、1 000 的题，共五题并检查一题验算。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生把一份分得的钱乘回份数，核对原金额。"
+        }
+      ]
+    },
+    {
+      "pdp": 49,
+      "week": 22,
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "认识东盟国家的货币",
+      "sk": [
+        "4.6"
+      ],
+      "sp": [
+        "4.6.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "14–15",
+      "activity_book_pages": "85 A、B",
+      "objective": "配对5组国家与货币中的4组",
+      "materials": "地图、货币名称卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示无金额的不同货币标志。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师定位国家并读出货币名称。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生以地图核对，轮流配对国名与货币卡。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 85 页 A、B，教师用五张新的国家及货币卡检查配对。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生分别说出一张货币卡上的国家名与货币名称。"
+        }
+      ]
+    },
+    {
+      "pdp": 50,
+      "week": 22,
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "读出一令吉对外币的兑换率",
+      "sk": [
+        "4.6"
+      ],
+      "sp": [
+        "4.6.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "16",
+      "activity_book_pages": "85 C",
+      "objective": "从教师准备的有日期汇率表正确读取3项中的2项",
+      "materials": "有日期的汇率表、标示卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师比较两个日期的同一币种栏。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师用课本第 16 页的旧例示范读法，再展示当天带日期的可靠汇率表。学生指出一令吉所对应的外币值。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生根据所给汇率表读出三种币种，标明日期。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生完成第 85 页 C，记录日期。教师用三个国家的当日资料检查币种、单位和读值。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明为什么汇率表必须标日期。"
+        }
+      ]
+    },
+    {
+      "pdp": 51,
+      "week": 23,
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "分清需要与想要并安排开支",
+      "sk": [
+        "4.7"
+      ],
+      "sp": [
+        "4.7.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "17",
+      "activity_book_pages": "86 A",
+      "objective": "为四项开支正确分类三项并说出一个选择理由",
+      "materials": "开支卡、小额预算单",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师用水壶和新玩具区分用途。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范先安排必需支出，再决定可推迟项目。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生小组用预算单排序开支并保留储蓄。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 86 页 A。教师给四项新支出并让学生解释其中一项归类。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说出购买用品前可以问自己的一个问题。"
+        }
+      ]
+    },
+    {
+      "pdp": 52,
+      "week": 23,
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "说明储蓄与投资的用途",
+      "sk": [
+        "4.7"
+      ],
+      "sp": [
+        "4.7.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "18",
+      "activity_book_pages": "86 B",
+      "objective": "用自己的话说明两者用途并各举一个合适例子",
+      "materials": "目标卡、储蓄图",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示两个不同期限的目标。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师用简单情境说明储蓄备急与投资可能有风险。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生根据情境说出理由并记下长期及短期目标。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生用第 86 页 B 复习储蓄的用途。教师检查学生另写的投资例子和理由。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生为一个未来目标写下储蓄理由，并说明投资收益可能变化。"
+        }
+      ]
+    },
+    {
+      "pdp": 53,
+      "week": 23,
+      "duration_minutes": 60,
+      "unit_number": 4,
+      "unit": "钱币",
+      "topic": "编写和解决钱币问题",
+      "sk": [
+        "4.8"
+      ],
+      "sp": [
+        "4.8.1",
+        "4.8.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "19–23",
+      "activity_book_pages": "87–92",
+      "objective": "编写一则符合算式的故事并完成两题中的一题",
+      "materials": "模拟收据、四步表",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示一张缺少合计的价单。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范根据条件选择基本运算或加减混合运算。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "同桌先按给定的钱币算式各写一则故事，交换后从故事还原算式。再用账本或图表解两道应用题并验算。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "第 87 页选编故事，第 88–90 页选做应用题，第 91–92 页供巩固。教师检查故事是否符合算式，以及两道应用题中是否至少答对一道。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生挑一题用估算判断金额是否合理。"
+        }
+      ]
+    },
+    {
+      "pdp": 54,
+      "week": 24,
+      "duration_minutes": 60,
+      "unit_number": 5,
+      "unit": "时间与时刻",
+      "topic": "读时间表并记录活动时刻",
+      "sk": [
+        "5.1"
+      ],
+      "sp": [
+        "5.1.1",
+        "5.1.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "26",
+      "activity_book_pages": "93",
+      "objective": "四项读表任务至少答对三项，并正确记录指定活动之前、进行时及之后的时刻",
+      "materials": "活动时间表、钟面卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示两堂活动的开始时刻。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范按先后找出活动之前、进行时及之后的时刻。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生从班级时间表找资料并在钟面标示。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生完成第 93 页的时间表题。教师另给四项读表任务，其中一项要求完整记录活动之前、进行时及之后的时刻。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生在时间表指出一项活动之前和之后的两个时刻。"
+        }
+      ]
+    },
+    {
+      "pdp": 55,
+      "week": 24,
+      "duration_minutes": 60,
+      "unit_number": 5,
+      "unit": "时间与时刻",
+      "topic": "时间单位关系和换算",
+      "sk": [
+        "5.2"
+      ],
+      "sp": [
+        "5.2.1",
+        "5.2.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "27–28",
+      "activity_book_pages": "94",
+      "objective": "正确完成5项中的4项时间单位关系或换算",
+      "materials": "日历卡、秒表、单位卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师计时一分钟并读秒表。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师用日历与秒表建立星期、天、年、月、小时、分、秒的关系。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生在配对卡上写等值并解释乘或除。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生练习第 94 页。教师另出五项任务，检查星期与天、年与月、分与秒的关系，以及小时与分钟、分钟与秒的换算。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生口述如何把 2 分 10 秒写成秒。"
+        }
+      ]
+    },
+    {
+      "pdp": 56,
+      "week": 24,
+      "duration_minutes": 60,
+      "unit_number": 5,
+      "unit": "时间与时刻",
+      "topic": "读公历和制作简易活动表",
+      "sk": [
+        "5.3"
+      ],
+      "sp": [
+        "5.3.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "29–30",
+      "activity_book_pages": "95",
+      "objective": "从月历正确回答4项中的3项",
+      "materials": "公历月历、活动卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师问某个日期是星期几。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范跨行和跨月寻找日期。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生在月历找日期并填一周活动表。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 95 页。教师另给一张当月月历，从日期、星期及相邻日期出四题。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生解释怎样用月历找下一个星期的同一天。"
+        }
+      ]
+    },
+    {
+      "pdp": 57,
+      "week": 25,
+      "duration_minutes": 60,
+      "unit_number": 5,
+      "unit": "时间与时刻",
+      "topic": "时间的加法",
+      "sk": [
+        "5.4"
+      ],
+      "sp": [
+        "5.4.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "31–34",
+      "activity_book_pages": "96–97",
+      "objective": "正确完成5题中的4题，包含复名数",
+      "materials": "时间轴、单位卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师问两段活动各用多久及合计。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范最多三个时量相加，并进位60分或60秒。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生在时间轴上核对此类加法并练五种单位组合。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 96–97 页相关题。教师以五题检查同单位相加和含两个单位的进位。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生写出 60 分钟进为 1 小时后的记录。"
+        }
+      ]
+    },
+    {
+      "pdp": 58,
+      "week": 25,
+      "duration_minutes": 60,
+      "unit_number": 5,
+      "unit": "时间与时刻",
+      "topic": "时间的减法",
+      "sk": [
+        "5.5"
+      ],
+      "sp": [
+        "5.5.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "35–38",
+      "activity_book_pages": "98–99",
+      "objective": "正确完成5题中的4题并说明一次借位",
+      "materials": "秒表、单位卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师比较两位选手完成的时长。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范借1小时或1分钟换成60较小单位。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生写两种单位范围内的减式并交换验算。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 98–99 页对应题。教师用五题检查借位，并要求解释其中一次。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明为什么借 1 分钟须加 60 秒。"
+        }
+      ]
+    },
+    {
+      "pdp": 59,
+      "week": 25,
+      "duration_minutes": 60,
+      "unit_number": 5,
+      "unit": "时间与时刻",
+      "topic": "时间加减混合运算",
+      "sk": [
+        "5.6"
+      ],
+      "sp": [
+        "5.6.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "39–41",
+      "activity_book_pages": "100",
+      "objective": "正确计算4个情境中的3个",
+      "materials": "活动时长条、算式卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师列出原定时间、加时和扣减时间。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师按事件顺序列式，处理同单位与复名数。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生小组重排时长条，再独立书写混合算式。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 100 页。教师以四个情境检查列式、运算顺序及单位。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生用时间线标出两次变化的先后。"
+        }
+      ]
+    },
+    {
+      "pdp": 60,
+      "week": 26,
+      "duration_minutes": 60,
+      "unit_number": 5,
+      "unit": "时间与时刻",
+      "topic": "时间乘以一位数",
+      "sk": [
+        "5.7"
+      ],
+      "sp": [
+        "5.7.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "42–44",
+      "activity_book_pages": "101–102",
+      "objective": "正确完成5题中的4题并写出单位",
+      "materials": "单位表、行程卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师问4次同样长的练习共需多久。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师比较逐项相加和乘法，示范复名数规范化。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生练习各类单位及两种复名数组合。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生选做第 101–102 页。教师以五题检查乘法和必要的时间单位换算。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生解释 3×25 分钟如何写成小时和分钟。"
+        }
+      ]
+    },
+    {
+      "pdp": 61,
+      "week": 26,
+      "duration_minutes": 60,
+      "unit_number": 5,
+      "unit": "时间与时刻",
+      "topic": "时间除以一位数",
+      "sk": [
+        "5.8"
+      ],
+      "sp": [
+        "5.8.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "45–47",
+      "activity_book_pages": "103–104",
+      "objective": "正确完成5题中的4题并验算一题",
+      "materials": "分配卡、时分秒换算表",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师把24分钟分给4项活动。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师演示较大单位有余数时先换小单位。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生分配小时、分与秒，再以乘法验算。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 103–104 页。教师另用五题检查整除、先换算和乘回验算。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生用乘法核对 1 小时 15 分钟平均分三段的结果。"
+        }
+      ]
+    },
+    {
+      "pdp": 62,
+      "week": 26,
+      "duration_minutes": 60,
+      "unit_number": 5,
+      "unit": "时间与时刻",
+      "topic": "根据时间算式编故事",
+      "sk": [
+        "5.9"
+      ],
+      "sp": [
+        "5.9.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "48",
+      "activity_book_pages": "105",
+      "objective": "编写两则与时间算式一致的短故事",
+      "materials": "时间算式卡、行程图",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师辨别时刻和时长。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师以不同运算各示范一个故事框架。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生写故事并用同伴的故事还原算式。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 105 页编故事。教师另给两个时间算式，检查故事保留了单位和所求。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生让同伴指出故事中哪一句说明要求的是时长。"
+        }
+      ]
+    },
+    {
+      "pdp": 63,
+      "week": 27,
+      "duration_minutes": 60,
+      "unit_number": 5,
+      "unit": "时间与时刻",
+      "topic": "解决时间与时刻问题",
+      "sk": [
+        "5.9"
+      ],
+      "sp": [
+        "5.9.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "49–51",
+      "activity_book_pages": "106–110",
+      "objective": "完成两道情境题并写出至少一种检查方法",
+      "materials": "钟面、时间轴、练习卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师比较有加时与无加时两个规则。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师用时间轴分清先后和经过时长。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生解比赛与日程问题并说明取舍的资料。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生从第 106–108 页选做情境题，第 109–110 页供练习。教师检查两题及至少一种验算方法。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生回到行程图核对答案的时刻或时长。"
+        }
+      ]
+    },
+    {
+      "pdp": 64,
+      "week": 27,
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "米与厘米的换算",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "54–55",
+      "activity_book_pages": "111",
+      "objective": "正确完成5个换算中的4个",
+      "materials": "米尺、软尺、位值卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师量桌长并换成厘米。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范100厘米等于1米，再转换复名数。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生实测物件并以两种单位记录。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 111 页并回答五道双向换算题，教师查米与厘米的单位书写。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明 205 cm 应换成多少米多少厘米。"
+        }
+      ]
+    },
+    {
+      "pdp": 65,
+      "week": 27,
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "最多三项长度相加",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "56",
+      "activity_book_pages": "112 A",
+      "objective": "正确完成4题中的3题",
+      "materials": "地图线段、软尺",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师在地图上指两段连续的路线。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范米与厘米按单位相加并进位。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生合计三段距离后用数轴检查。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 112 页 A。教师另出四题，检查两项或三项相加与进位。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明厘米数相加达到 100 时怎样换成米并记录。"
+        }
+      ]
+    },
+    {
+      "pdp": 66,
+      "week": 28,
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "最多三项长度的减法",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.3"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "57",
+      "activity_book_pages": "112 B",
+      "objective": "正确完成4题中的3题并解释一次借位",
+      "materials": "长度条、换算卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师比较两根不同长度的绳子。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范把1米换成100厘米后再减。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生依剪去的长度列表计算并用加法检验。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 112 页 B。教师以四题抽查分步计算及借 1 m 的理由。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生用加法还原一道长度减法的起始值。"
+        }
+      ]
+    },
+    {
+      "pdp": 67,
+      "week": 28,
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "长度乘以一位数",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.4"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "58",
+      "activity_book_pages": "113",
+      "objective": "正确完成4题中的3题，包含米和厘米",
+      "materials": "跑道图、测量记录",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师问同样长的跑道走三圈共多远。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师从连加转乘法，再换算结果。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生用数轴或竖式解决多圈距离。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 113 页。教师用四题检查米、厘米及混合单位的乘积。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生用等长绳段说明为什么要乘每个单位。"
+        }
+      ]
+    },
+    {
+      "pdp": 68,
+      "week": 28,
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "长度除以一位数",
+      "sk": [
+        "6.1"
+      ],
+      "sp": [
+        "6.1.5"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "59",
+      "activity_book_pages": "114",
+      "objective": "正确完成4题中的3题并验算一题",
+      "materials": "绳段图、尺",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示一根绳分成均等段。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范把米的余量换成厘米再继续除。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生计算每段长度，画切割示意图。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 114 页。教师以四题检查平均分配，并要求其中一题用乘法验算。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明当米数不能整除时怎样先换成厘米。"
+        }
+      ]
+    },
+    {
+      "pdp": 69,
+      "week": 29,
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "千克与克的换算",
+      "sk": [
+        "6.2"
+      ],
+      "sp": [
+        "6.2.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "60–61",
+      "activity_book_pages": "115",
+      "objective": "正确完成5个换算中的4个",
+      "materials": "电子秤、质量标签",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师比较1千克与1000克标签。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范按千克和克读数再合为克。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生称量或读取图示后用两种形式记录。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 115 页。教师以五题检查千克与克的双向换算，包含一项 2 kg 5 g。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生解释为什么 2 kg 5 g 是 2 005 g。"
+        }
+      ]
+    },
+    {
+      "pdp": 70,
+      "week": 29,
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "最多三项质量相加",
+      "sk": [
+        "6.2"
+      ],
+      "sp": [
+        "6.2.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "62",
+      "activity_book_pages": "116 A",
+      "objective": "正确完成4题中的3题",
+      "materials": "质量标签、秤图",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师估计三袋农产品的总质量。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范各单位分别相加并进位。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生将三类物品的质量合计，先估后算。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 116 页 A。教师另给四题检查最多三项相加和千克进位。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生把 1 350 g 写成千克和克以核对答案。"
+        }
+      ]
+    },
+    {
+      "pdp": 71,
+      "week": 29,
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "最多三项质量的减法",
+      "sk": [
+        "6.2"
+      ],
+      "sp": [
+        "6.2.3"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "63",
+      "activity_book_pages": "116 B",
+      "objective": "正确完成4题中的3题并验算一题",
+      "materials": "货重卡、单位表",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师比较总重与空车质量。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范逐项扣减及克数不足时借位。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生根据装卸记录算剩余质量。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 116 页 B。教师用四题检查退位，抽一道让学生用加法验算。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明借出 1 kg 后应在克栏增加多少。"
+        }
+      ]
+    },
+    {
+      "pdp": 72,
+      "week": 30,
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "质量乘以一位数",
+      "sk": [
+        "6.2"
+      ],
+      "sp": [
+        "6.2.4"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "64",
+      "activity_book_pages": "117",
+      "objective": "正确完成4题中的3题",
+      "materials": "成箱货物图、单位卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示数箱相同质量的物品。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范克与千克部分分别乘再重组。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生按不同箱数填写运输质量表。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 117 页。教师另用四题检查质量乘一位数和单位。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生用同质量包裹说明乘积在生活中表示什么。"
+        }
+      ]
+    },
+    {
+      "pdp": 73,
+      "week": 30,
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "质量除以一位数",
+      "sk": [
+        "6.2"
+      ],
+      "sp": [
+        "6.2.5"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "65",
+      "activity_book_pages": "118",
+      "objective": "正确完成4题中的3题并乘回一题",
+      "materials": "分装袋、质量标签",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师设一包原料平均分成几份。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范将千克换成克后进行等分。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生用两种写法记录每份质量。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 118 页。教师以四题检查分装结果，并核对一题乘回是否等于原质量。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明先把部分千克换成克的情形。"
+        }
+      ]
+    },
+    {
+      "pdp": 74,
+      "week": 30,
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "升与毫升的换算",
+      "sk": [
+        "6.3"
+      ],
+      "sp": [
+        "6.3.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "66–67",
+      "activity_book_pages": "119",
+      "objective": "正确完成5项换算中的4项",
+      "materials": "量杯、量壶标尺",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师比较同量的1升与1000毫升。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范读量杯刻度，写单名数和复名数。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生模拟倒水，记录三种刻度与等值写法。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 119 页，再完成五项双向换算，教师核对单位 l 与 ml。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生解释量杯显示 1 025 ml 时怎样读成升和毫升。"
+        }
+      ]
+    },
+    {
+      "pdp": 75,
+      "week": 31,
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "最多三项液体体积相加",
+      "sk": [
+        "6.3"
+      ],
+      "sp": [
+        "6.3.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "68",
+      "activity_book_pages": "120 A",
+      "objective": "正确完成4题中的3题",
+      "materials": "量壶图、体积卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师预估三份果汁合在一起的量。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范按升与毫升相加及进位。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生将不同容器读数汇总后用刻度图验证。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 120 页 A。教师用四题检查多项相加，要求写出升与毫升。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明毫升相加达到 1 000 时怎样进位。"
+        }
+      ]
+    },
+    {
+      "pdp": 76,
+      "week": 31,
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "最多三项液体体积的减法",
+      "sk": [
+        "6.3"
+      ],
+      "sp": [
+        "6.3.3"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "69",
+      "activity_book_pages": "120 B",
+      "objective": "正确完成4题中的3题并说明一次借位",
+      "materials": "量杯图、记录卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师观察从壶中倒出水后液面变化。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范借1升换成1000毫升。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生列倒出或消耗后的剩余量并验算。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 120 页 B。教师用四题检查减法及一次借位解释。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生在容量表上示范借 1 l 后应怎样记录。"
+        }
+      ]
+    },
+    {
+      "pdp": 77,
+      "week": 31,
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "液体体积乘以一位数",
+      "sk": [
+        "6.3"
+      ],
+      "sp": [
+        "6.3.4"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "70",
+      "activity_book_pages": "121",
+      "objective": "正确完成4题中的3题并估算一题",
+      "materials": "瓶子标签、单位卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师比较数瓶相同容量的液体。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师用分拆演示乘法后整理毫升。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生依订单数量计算总量并估算核对。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 121 页。教师用四题检查乘积，并观察一项估算是否合理。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生解释六份 250 ml 为什么超过一升。"
+        }
+      ]
+    },
+    {
+      "pdp": 78,
+      "week": 32,
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "液体体积除以一位数",
+      "sk": [
+        "6.3"
+      ],
+      "sp": [
+        "6.3.5"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "71",
+      "activity_book_pages": "122",
+      "objective": "正确完成4题中的3题并验算一题",
+      "materials": "量杯、分装图",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师提问固定体积可怎样平均分装。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范把不足整除的升换成毫升。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生列分装算式，用乘回法核对。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 122 页。教师以四题检查等分容量，并要求以乘法验证一题。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明把整升换成毫升后为何较容易分。"
+        }
+      ]
+    },
+    {
+      "pdp": 79,
+      "week": 32,
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "根据度量衡算式编故事",
+      "sk": [
+        "6.4"
+      ],
+      "sp": [
+        "6.4.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "73–74",
+      "activity_book_pages": "123",
+      "objective": "写出两则有单位且符合指定算式的故事",
+      "materials": "测量算式卡、情境卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师比较米、千克和升适用的物品。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范以量、变化、问题三部分组织故事。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生互换故事并还原算式，检验单位合理性。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 123 页编故事。教师另给两个算式，检查故事单位、数量变化及问题。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生把同伴的一则故事重新写成算式。"
+        }
+      ]
+    },
+    {
+      "pdp": 80,
+      "week": 32,
+      "duration_minutes": 60,
+      "unit_number": 6,
+      "unit": "度量衡",
+      "topic": "解决长度、质量与体积问题",
+      "sk": [
+        "6.4"
+      ],
+      "sp": [
+        "6.4.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "75–81",
+      "activity_book_pages": "124–130",
+      "objective": "长度、质量和液体体积应用题各一题，至少答对两题并写出验算",
+      "materials": "四步表、仪器图、复习卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师辨认身高、包装和饮料情境该用的单位。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范先统一单位、再决定运算。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生分站解题，用表格或图表示关系。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "第 124–128 页选做应用题，第 129–130 页供巩固。教师给长度、质量和容量各一题并检查验算。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明在哪一步必须先统一单位。"
+        }
+      ]
+    },
+    {
+      "pdp": 81,
+      "week": 33,
+      "duration_minutes": 60,
+      "unit_number": 7,
+      "unit": "空间",
+      "topic": "认识并命名棱柱体",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "84–85",
+      "activity_book_pages": "131 A",
+      "objective": "正确命名三种模型并指出各自底面",
+      "materials": "三类棱柱模型",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师转动同一模型，问名称会不会变。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范以底面形状辨认正方、长方及三角棱柱。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生从不同方向观察，再配对模型与名称。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生用第 131 页 A 的名称及底面栏练习。教师展示三个实物模型，逐一检查名称与底面。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生举起一个模型，指着底面说它为何这样命名。"
+        }
+      ]
+    },
+    {
+      "pdp": 82,
+      "week": 33,
+      "duration_minutes": 60,
+      "unit_number": 7,
+      "unit": "空间",
+      "topic": "描述棱柱体的面、顶点和棱",
+      "sk": [
+        "7.1"
+      ],
+      "sp": [
+        "7.1.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "86",
+      "activity_book_pages": "131 A（特征栏）、B",
+      "objective": "三种棱柱体中至少正确记录两种的底面、侧面、顶点和棱",
+      "materials": "立体模型、贴纸",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师在模型贴一个点，问它叫什么。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师逐项示范标示面、底面、顶点、棱。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生用不同颜色标记并填写特征表。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 131 页 A 特征栏和 B。教师用三个模型检查底面、侧面、顶点及棱的记录。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生用一个三角棱柱指出底面和侧面。"
+        }
+      ]
+    },
+    {
+      "pdp": 83,
+      "week": 34,
+      "duration_minutes": 60,
+      "unit_number": 7,
+      "unit": "空间",
+      "topic": "比较棱柱体与非棱柱体",
+      "sk": [
+        "7.2"
+      ],
+      "sp": [
+        "7.2.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "87",
+      "activity_book_pages": "132",
+      "objective": "正确分类5个模型中的4个并说明理由",
+      "materials": "立体模型、分类卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师同时拿起一个圆柱和一个三角棱柱。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师引导比较侧面及两底面、边和顶点。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生分类常见物件并用特征支持理由。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 132 页。教师另给五个模型，检查归类及底面或侧面的理由。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生选一个非棱柱体并说出一个可观察的区别。"
+        }
+      ]
+    },
+    {
+      "pdp": 84,
+      "week": 34,
+      "duration_minutes": 60,
+      "unit_number": 7,
+      "unit": "空间",
+      "topic": "认识正五边形至正八边形",
+      "sk": [
+        "7.3"
+      ],
+      "sp": [
+        "7.3.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "88",
+      "activity_book_pages": "133",
+      "objective": "正确辨认6个平面图形中的5个",
+      "materials": "多边形卡、直尺",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师呈现边长不等和相等的五边形。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范数边和顶点，同时检查等边等角。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生挑出正多边形，再按边数命名。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 133 页。教师用六张图卡检查能否辨认正五、六、七、八边形。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明边数相同的两张卡为何只有一张是正多边形。"
+        }
+      ]
+    },
+    {
+      "pdp": 85,
+      "week": 34,
+      "duration_minutes": 60,
+      "unit_number": 7,
+      "unit": "空间",
+      "topic": "用正多边形设计图案",
+      "sk": [
+        "7.3"
+      ],
+      "sp": [
+        "7.3.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "89",
+      "activity_book_pages": "134",
+      "objective": "用两种正多边形完成一幅有规律的设计并命名",
+      "materials": "正多边形纸片、方格纸",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示由相同图形重复组成的边框。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师演示旋转、排列及重复一组图案。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生设计图案，标示使用的正多边形。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生依第 134 页完成图案。教师检查图案至少用了两种正多边形，并请学生命名。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生指出图案在哪里重复，并说明下一个形状。"
+        }
+      ]
+    },
+    {
+      "pdp": 86,
+      "week": 35,
+      "duration_minutes": 60,
+      "unit_number": 7,
+      "unit": "空间",
+      "topic": "找出和画出对称轴",
+      "sk": [
+        "7.4"
+      ],
+      "sp": [
+        "7.4.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "90–91",
+      "activity_book_pages": "135",
+      "objective": "在4个图形中正确画出3个的对称轴",
+      "materials": "折纸、镜子、图卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师把纸形沿一条线对折并展示重合。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范检验候选线，再画另一条可能的轴。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生用折叠或镜子验证不同方向的对称轴。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 135 页。教师用四个新图形检查对称轴的位置和条数。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生用折纸或镜面对照一条自己画的对称轴。"
+        }
+      ]
+    },
+    {
+      "pdp": 87,
+      "week": 35,
+      "duration_minutes": 60,
+      "unit_number": 7,
+      "unit": "空间",
+      "topic": "解决棱柱体与对称轴问题",
+      "sk": [
+        "7.5"
+      ],
+      "sp": [
+        "7.5.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "92–95",
+      "activity_book_pages": "136–140",
+      "objective": "正确解决两个情境中的至少一个并说明做法",
+      "materials": "海绵模型、图案纸、镜子",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师只展示纹样的一半让学生预测全图。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师以模型与折纸分解一个空间情境。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生分类图形并解决棱柱或对称图案问题。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "选择第 136–138 页的棱柱或对称题，第 139–140 页供巩固。教师以两道新情境检查解释。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明用实际模型或折纸怎样验证答案。"
+        }
+      ]
+    },
+    {
+      "pdp": 88,
+      "week": 36,
+      "duration_minutes": 60,
+      "unit_number": 8,
+      "unit": "坐标",
+      "topic": "以参考点描述物体位置",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "98–99",
+      "activity_book_pages": "141–142",
+      "objective": "正确描述4个位置中的3个并写清参考点",
+      "materials": "地图、方位卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师让学生以教室门口描述一个物体。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师演示更换参考点如何改变说法。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生用方向及格数从两个参考点描述位置。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 141–142 页方向练习。教师核对四个说法是否同时写明参照点和方向。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生换一个参照点，再描述同一物体的位置。"
+        }
+      ]
+    },
+    {
+      "pdp": 89,
+      "week": 36,
+      "duration_minutes": 60,
+      "unit_number": 8,
+      "unit": "坐标",
+      "topic": "根据横轴与纵轴读出物体",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.2"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "100–101",
+      "activity_book_pages": "143",
+      "objective": "正确找出5个位置中的4个物体",
+      "materials": "第一象限网格、标记物",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示两个横轴位置相同、纵轴位置不同的点，学生分别说出各点上的物体。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范先定位横轴再沿纵向找交点。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生同伴轮流报点与找图标。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "选择第 143 页由位置找物体的题。教师另报五个点，记录学生读出的物体名称。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生用两个同横轴但纵轴不同的点说明读法。"
+        }
+      ]
+    },
+    {
+      "pdp": 90,
+      "week": 36,
+      "duration_minutes": 60,
+      "unit_number": 8,
+      "unit": "坐标",
+      "topic": "确定物体的横轴与纵轴位置",
+      "sk": [
+        "8.1"
+      ],
+      "sp": [
+        "8.1.3"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "100–101",
+      "activity_book_pages": "143",
+      "objective": "正确记录5个物体中的4个位置",
+      "materials": "方格板、棋子",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师在网格放一枚棋子，请学生说明位置。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范把位置沿两轴投影，先横后纵记录。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生互换棋子位置并把结果写入记录表。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "选择第 143 页由物体找位置的题。教师另给五个物体，让学生记录各自的横纵位置。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生交换位置卡，验证先横后纵时能找回原物体。"
+        }
+      ]
+    },
+    {
+      "pdp": 91,
+      "week": 37,
+      "duration_minutes": 60,
+      "unit_number": 8,
+      "unit": "坐标",
+      "topic": "解决坐标情境问题",
+      "sk": [
+        "8.2"
+      ],
+      "sp": [
+        "8.2.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "102–103",
+      "activity_book_pages": "144–146",
+      "objective": "写出一条可行路线并用两步说明",
+      "materials": "校园方格地图、路线卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师指出地图上的两个目的地。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范比较路线距离与方向，并标明出发点。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生按条件设计路线再由同伴检验终点。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生从第 144–146 页选做相应题。教师检查一条路线的起点、两项移动及终点。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生请同伴照指示重走路线，核对能否到达同一格。"
+        }
+      ]
+    },
+    {
+      "pdp": 92,
+      "week": 37,
+      "duration_minutes": 60,
+      "unit_number": 9,
+      "unit": "数据处理",
+      "topic": "收集、分类和整理数据",
+      "sk": [
+        "9.1"
+      ],
+      "sp": [
+        "9.1.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "106",
+      "activity_book_pages": "147–148",
+      "objective": "分组调查后正确整理至少4个类别并核对总数",
+      "materials": "调查表、点算表",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师询问全班选择的点心种类。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范一人一票及以记号记录频数。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生收集小样本，分类并在表中核对总数。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 147 页表格和第 148 页调查。教师核对至少四类频数与调查人数。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生用频数总和复核有无漏记或重复记录。"
+        }
+      ]
+    },
+    {
+      "pdp": 93,
+      "week": 37,
+      "duration_minutes": 60,
+      "unit_number": 9,
+      "unit": "数据处理",
+      "topic": "读懂饼分图",
+      "sk": [
+        "9.2"
+      ],
+      "sp": [
+        "9.2.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "107–108",
+      "activity_book_pages": "149–150",
+      "objective": "从图中正确读取4项中的3项资料",
+      "materials": "饼分图卡、图例卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师让学生指出哪个扇形表示最多。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师说明标题、图例与扇形标值怎样对应。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生找到各类的数量并口述两组比较。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 149–150 页。教师另用四问检查标题、最大类别、人数与部分所占的比例。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说明怎样从图例找到一个扇区所代表的类别。"
+        }
+      ]
+    },
+    {
+      "pdp": 94,
+      "week": 38,
+      "duration_minutes": 60,
+      "unit_number": 9,
+      "unit": "数据处理",
+      "topic": "联系象形图、条形图与饼分图",
+      "sk": [
+        "9.3"
+      ],
+      "sp": [
+        "9.3.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "109–110",
+      "activity_book_pages": "151–152",
+      "objective": "用同组数据正确配对三种图，并说出一项差异",
+      "materials": "三种统计图、数据卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师展示同一组票数的两种图。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范从各图读取同一类别并比较表达方式。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生小组核对三种图的总数和资料。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 151–152 页。教师给同一组数据的三张图，检查配对及选择合适图表的理由。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生说出哪种图最方便显示部分与整体，并举例。"
+        }
+      ]
+    },
+    {
+      "pdp": 95,
+      "week": 38,
+      "duration_minutes": 60,
+      "unit_number": 9,
+      "unit": "数据处理",
+      "topic": "解决数据处理问题",
+      "sk": [
+        "9.4"
+      ],
+      "sp": [
+        "9.4.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "111–113",
+      "activity_book_pages": "153–154",
+      "objective": "正确解决两题中的至少一题并说明推理",
+      "materials": "数据表、图卡、四步表",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师提出图中缺一类资料的问题。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范从总数减去已知量并核对图例。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生用表或图找缺项，写下推导过程。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生做第 153–154 页相应题。教师另用两题检查能否从统计图提取数据并解释推理。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生在图上标出支持答案的两个数据。"
+        }
+      ]
+    },
+    {
+      "pdp": 96,
+      "week": 38,
+      "duration_minutes": 60,
+      "unit_number": 9,
+      "unit": "数据处理",
+      "topic": "掷币记录与数据处理复习",
+      "sk": [
+        "9.1",
+        "9.3",
+        "9.4"
+      ],
+      "sp": [
+        "9.1.1",
+        "9.3.1",
+        "9.4.1"
+      ],
+      "textbook_volume": 2,
+      "textbook_pages": "114–116",
+      "activity_book_pages": "155–156",
+      "objective": "完成一份掷币记录及一项独立的数据解释",
+      "materials": "硬币、记录表、图表卡",
+      "stages": [
+        {
+          "name": "导入",
+          "minutes": 5,
+          "activity": "教师用少量抛掷结果引出样本记录。"
+        },
+        {
+          "name": "活动 1 示范与引导",
+          "minutes": 15,
+          "activity": "教师示范用记号表记录并比较两组结果。"
+        },
+        {
+          "name": "活动 2 学生练习",
+          "minutes": 25,
+          "activity": "学生小组整理数据，个人选择图表并解释一个结论。"
+        },
+        {
+          "name": "活动 3 课堂评估",
+          "minutes": 10,
+          "activity": "学生完成掷币调查后做第 155–156 页选题。教师检查频数总和、图表标记及一条有数据依据的结论。"
+        },
+        {
+          "name": "总结",
+          "minutes": 5,
+          "activity": "学生根据两组图表说出一项相同或不同之处。"
+        }
+      ]
+    }
+  ]
+}

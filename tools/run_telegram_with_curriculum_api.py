@@ -496,6 +496,30 @@ except Exception as _native_sequence_exc:
           type(_native_sequence_exc).__name__, flush=True)
 
 
+# Sains SK Tahun 5 2027 has its own private sequence. Legacy Science and
+# Mathematics remain available through the existing sequence above.
+try:
+    from staging.sains.tahun5.semakan_penjana import register_downloads as register_sains_2027
+    register_sains_2027(telegram_runtime.app)
+except (OSError, ValueError, ImportError) as _sains_2027_exc:
+    print("Sains SK Year 5 2027 reader unavailable:",
+          type(_sains_2027_exc).__name__, flush=True)
+
+try:
+    from staging.sains.tahun6.penjana_2027 import register_downloads as register_sains_year6
+    register_sains_year6(telegram_runtime.app)
+except (OSError, ValueError, ImportError) as _sains_year6_exc:
+    print("Sains SK Year 6 2027 reader unavailable:",
+          type(_sains_year6_exc).__name__, flush=True)
+
+
+try:
+    from staging.matematik.penjana_2027 import register_downloads as register_math_sk_2027
+    register_math_sk_2027(telegram_runtime.app)
+except (OSError, ValueError, ImportError, RuntimeError) as exc:
+    print("Matematik SK 2027 reader unavailable:", type(exc).__name__, flush=True)
+
+
 # Sejarah: register private source reader for the dedicated Web client.
 try:
     from web.sejarah_2027_native_api import create_sejarah_2027_native_blueprint
@@ -687,8 +711,10 @@ except Exception as _web_broadcast_exc:
 # All 342 newly authored Science RPH remain DRAF/HOLD until per-PdP signoff.
 from web.sains_y3_unit_awal import install as install_sains_y3_opening_units
 from web.sains_unit_awal import install as install_sains_opening_units
+from web.math_sk_year1_kssr_references import install as install_math_sk_year1_kssr_references
 install_sains_y3_opening_units(telegram_runtime)
 install_sains_opening_units(telegram_runtime)
+install_math_sk_year1_kssr_references(telegram_runtime)
 
 try:
     from tools.sains_native_runtime_readiness_probe_20261108 import (
@@ -784,6 +810,14 @@ except Exception as _rph_entry_choices_error:
           type(_rph_entry_choices_error).__name__, flush=True)
 
 
+try:
+    from web.telegram_sk_rph_2027 import install as install_sk_rph_2027
+    SK_RPH_2027_MENU_ACTIVE = install_sk_rph_2027(telegram_runtime)
+except Exception as exc:
+    SK_RPH_2027_MENU_ACTIVE = False
+    print("RPH SK 2027 menu unavailable:", type(exc).__name__, flush=True)
+
+
 # Apply Web teacher text after the native subject adapters set default rows.
 from web.english_y1_kssr_rph import install as install_english_y1_kssr
 from web.rph_teacher_reflection import install as install_teacher_reflection
@@ -798,3 +832,24 @@ RPH_TEACHER_REFLECTION_ACTIVE = install_teacher_reflection(telegram_runtime)
 # No change to payment amount, entitlement, callbacks or user records.
 from web.telegram_subscription_price_guard import install as install_subscription_price_guard
 TELEGRAM_SUBSCRIPTION_PRICE_GUARD_ACTIVE = install_subscription_price_guard(telegram_runtime)
+
+
+from web.matematik_sjkc_t3_telegram import install as install_matematik_sjkc_t3
+MATEMATIK_SJKC_T3_RPH_ACTIVE = install_matematik_sjkc_t3(telegram_runtime)
+
+
+from web.matematik_sjkt_t2_review import install as install_matematik_sjkt_t2_review
+install_matematik_sjkt_t2_review(telegram_runtime)
+
+
+from web.matematik_sjkt_t2_telegram import install as install_matematik_sjkt_t2
+MATEMATIK_SJKT_T2_RPH_ACTIVE = install_matematik_sjkt_t2(telegram_runtime)
+print("Matematik SJKT Tahun 2 RPH active:", MATEMATIK_SJKT_T2_RPH_ACTIVE, flush=True)
+
+from staging.matematik_sjkc.tahun_2 import rph as matematik_sjkc_t2
+from web.matematik_sjkt_t2_telegram import install_year_two
+
+MATEMATIK_SJKC_T2_RPH_ACTIVE = install_year_two(
+    telegram_runtime, matematik_sjkc_t2, "sjkc2", "MATEMATIK_SJKC_T2_RPH_ACTIVE",
+)
+print("Matematik SJKC Tahun 2 RPH active:", MATEMATIK_SJKC_T2_RPH_ACTIVE, flush=True)

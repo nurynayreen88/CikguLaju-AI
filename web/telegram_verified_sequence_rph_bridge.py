@@ -125,16 +125,14 @@ def _available_groups(rows, unit, year, subject):
                 and str(row.get("sp_code") or "").strip() for row in items)
     }
     if year == 6 and subject == "MATH":
-        # Six source-backed Year 6 ratio lessons currently carry *Data* 8.x
-        # codes (DSKP 2021 requires 7.2/7.3/7.4). Hide only the exact
-        # known-bad codes. This also protects stale availability/render URLs
-        # before the Web can debit a user's free trial credit.
+        # Apply the same audited legacy hold as the Telegram menu, including
+        # stale availability/render URLs before the Web can debit credit.
         from web.math_y6_ratio_source_hold_20261110 import (
-            held_math_y6_ratio_source,
+            held_math_y6_legacy_source,
         )
         groups = {
             code: items for code, items in groups.items()
-            if not held_math_y6_ratio_source(year, subject, code, items)
+            if not held_math_y6_legacy_source(year, subject, code, items)
         }
     return groups
 
@@ -242,12 +240,12 @@ def _source_text(runtime, state):
     return text
 
 
-def create_native_sequence_rph_blueprint(runtime):
+def create_native_sequence_rph_blueprint(runtime, *, url_prefix="/internal/rph/v1/sequence"):
     if not all(callable(getattr(runtime, x, None)) for x in (
             "_sm2542_rows", "_sm2542_unique_units", "_commit_multi_sp",
             "_local_rph_text", "create_word_file", "create_pdf_file")):
         raise TypeError("Native Telegram Maths/Science RPH engine incomplete")
-    bp = Blueprint("telegram_native_sequence_rph", __name__)
+    bp = Blueprint("telegram_native_sequence_rph", __name__, url_prefix=url_prefix)
 
     @bp.after_request
     def private(resp):
@@ -275,7 +273,7 @@ def create_native_sequence_rph_blueprint(runtime):
             raise ValueError("Invalid subject")
         return int(raw), subject
 
-    @bp.get("/internal/rph/v1/sequence/units")
+    @bp.get("/units")
     def units():
         try:
             year, sub = _query({"year", "subject"})
@@ -290,7 +288,7 @@ def create_native_sequence_rph_blueprint(runtime):
                         "items": [{"value": u["value"], "label": u["label"]}
                                   for u in catalog]})
 
-    @bp.get("/internal/rph/v1/sequence/lessons")
+    @bp.get("/lessons")
     def lessons():
         try:
             year, sub = _query({"year", "subject", "unit"})
@@ -302,6 +300,8 @@ def create_native_sequence_rph_blueprint(runtime):
                 title = str(r.get("pdp_title") or code).strip()
                 label = ("PdP " + str(seq) + " • " if seq not in (None, "") else
                          "PdP • ") + title
+                if r.get("dpk_minutes") in (30, 60):
+                    label += f" · {r['dpk_minutes']} minit"
                 if len(code) > 100 or not code or len(label) > 300:
                     continue
                 # Keep only lesson-specific textbook references recorded by
@@ -314,6 +314,10 @@ def create_native_sequence_rph_blueprint(runtime):
                 entry = {"value": code, "label": label}
                 if refs:
                     entry["textbook_ref"] = " • ".join(refs[:3])
+                if (year, sub) == (1, "MATH"):
+                    activitybook = str(r.get("activitybook_ref") or "").strip()
+                    if activitybook and len(activitybook) <= 120:
+                        entry["activitybook_ref"] = activitybook
                 if sub == "SCIENCE":
                     checked_pages = _science_textbook_pages(year, code, rows)
                     if checked_pages and (not refs or refs == [f"Buku Teks m/s {checked_pages}"]):
@@ -324,7 +328,7 @@ def create_native_sequence_rph_blueprint(runtime):
             return jsonify({"error": "Native PdP choices unavailable"}), 503
         return jsonify({"source": "telegram-runtime-v1", "items": items})
 
-    @bp.get("/internal/rph/v1/sequence/availability")
+    @bp.get("/availability")
     def availability():
         try:
             year, sub = _query({"year", "subject", "unit", "lesson"})
@@ -336,7 +340,7 @@ def create_native_sequence_rph_blueprint(runtime):
             return jsonify({"available": False}), 404
         return jsonify({"available": True, "generator": "telegram-native"})
 
-    @bp.post("/internal/rph/v1/sequence/render")
+    @bp.post("/render")
     def render():
         if (not request.is_json or request.content_length is None
                 or request.content_length > 7000):

@@ -43,7 +43,7 @@ Unit 7 Coordinates, Ratio, and Proportion
 | --- | --- | --- |
 | Set induction · 5 min | Show one red counter and five blue counters. | State the relationship from red to blue. |
 | Main activity · 30 min | Model writing a ratio of one to several in the named order. Group 2 red and 10 blue counters into equal groups to show 1:5, then model a scale of 1:100. | Represent two comparisons as ratios and interpret a simple plan distance. |
-| Practice and assessment · 20 min | Ask for the ratio of red to blue for two red and ten blue counters and the real distance represented by 3 cm at 1:100. | Write 1:5 with a grouping explanation and find 300 cm or 3 m for the distance. |
+| Practice and assessment · 20 min | Ask for red to blue for two red and ten blue counters. Give 3 cm at 1:100 and 2 cm at 1:1,000 for scale readings. | Give 1:5 with a grouping explanation, then find 300 cm (3 m) and 2,000 cm (20 m). |
 | Closure · 5 min | Ask why a scale ratio needs the same unit on both sides before conversion. | Explain matching centimetres to centimetres. |
 
 **Reflection** · ___ / ___ pupils met the objective. Practise naming each quantity before writing a ratio.

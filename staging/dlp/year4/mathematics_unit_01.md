@@ -64,7 +64,7 @@ Unit 1 Numbers and Operations
 
 | Phase | Teacher | Pupils |
 | --- | --- | --- |
-| Set induction · 10 min | Show 47,997 and 48,001 and ask which is greater. | Compare starting at the ten-thousands place. |
+| Set induction · 10 min | Show 47,997 and 48,001. Ask pupils to compare from the left and identify the first differing place. | Both numbers have 4 ten-thousands. Compare 7 and 8 thousands and identify 48,001 as the greater number. |
 | Main activity · 45 min | Model ordering five cards with similar leading digits. Then build a sequence that crosses 49,999 in steps of 2. | Order the cards, explain the first differing digit and complete a missing sequence term. |
 | Practice and assessment · 25 min | Use cards 50,032, 49,988, 50,302, 49,998 and 50,023. Give the sequence 49,996, 49,998, __, 50,002. | Order the five numbers, insert 50,000 and explain the tens comparison between 50,023 and 50,032. |
 | Closure · 10 min | Ask why the last digit alone cannot decide which number is larger. | Use an example where the first difference is further left. |
@@ -411,7 +411,7 @@ Unit 1 Numbers and Operations
 | --- | --- | --- |
 | Set induction · 10 min | Describe 36 packets of 24 counters. | Predict which operation can find the total. |
 | Main activity · 45 min | Draw a repeated-part model and compare it with a difference model from a second situation. | Choose operations for both situations and explain the model and quantities. |
-| Practice and assessment · 25 min | Give 36 packets of 24 counters, of which 185 are used, and ask how many remain. | Draw a bar model, calculate 679 remaining and justify multiplication then subtraction. |
+| Practice and assessment · 25 min | Give a class 864 counters. It receives 275 and uses 185. Ask pupils to model the changes and find the number left. | Draw a bar model, calculate 864 + 275 − 185 = 954, and explain why the delivery is added and the use is subtracted. |
 | Closure · 10 min | Ask what each bar segment represents. | Identify the total, used amount and remainder on the model. |
 
 **Reflection** · ___ / ___ pupils met the objective. Provide a new problem that swaps a starting amount for a missing one.
@@ -434,8 +434,8 @@ Unit 1 Numbers and Operations
 | --- | --- | --- |
 | Set induction · 10 min | Show a delivery record and a question on a missing shipment. | Distinguish a total calculation from an unknown quantity. |
 | Main activity · 45 min | Model calculating a mixed stock change and checking a missing amount by substituting it into its equation. | Solve one story and one missing-value example in pairs, then check both against the context. |
-| Practice and assessment · 25 min | Use 28,600 items with six boxes of 750 added and 1,285 sold. Separately ask how many counters were added to 42 to make 60. | Find 31,815 items remaining and show 42 + x = 60, so x = 18. Check both answers. |
-| Closure · 10 min | Ask how a check can show that each result makes sense in its story. | Compare the stock change with the starting amount and substitute 18 in the counters equation. |
+| Practice and assessment · 25 min | Ask how many counters each of five groups gets if they share eight boxes of 75. Separately ask how many were added to 42 to make 60. | Calculate 8 × 75 ÷ 5 = 120 per group. Write 42 + x = 60, so x = 18. Check the total by multiplication and the unknown by substitution. |
+| Closure · 10 min | Ask how a check can show that each result makes sense in its story. | Multiply 120 by 5 to recover 600 and substitute 18 into 42 + x = 60. |
 
 **Reflection** · ___ / ___ pupils met the objective. Revisit writing a number sentence before calculating.
 

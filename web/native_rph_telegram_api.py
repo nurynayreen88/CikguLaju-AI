@@ -397,6 +397,20 @@ def create_native_rph_blueprint(runtime):
         except (KeyError, OSError, ValueError):
             return jsonify({"error": "Paired English RPH source unavailable"}), 503
 
+    def aligned_dlp(year, subject):
+        if type(year) is not int or subject not in ("MATH_DLP", "SCIENCE_DLP"):
+            return None
+        if year == 4 and subject == "SCIENCE_DLP":
+            from staging.dlp.year4 import render_science
+            return render_science
+        if year == 5:
+            from staging.dlp.year5 import downloads
+            return downloads.MATHEMATICS if subject == "MATH_DLP" else downloads.SCIENCE
+        if year == 6:
+            from staging.dlp.year6 import render_mathematics, render_science
+            return render_mathematics if subject == "MATH_DLP" else render_science
+        return None
+
     def dlp_selection(selection):
         from dlp_year2_rph import resolve
 
@@ -405,7 +419,29 @@ def create_native_rph_blueprint(runtime):
         year, subject, unit, lesson = (selection[key] for key in ("year", "subject", "unit", "lesson"))
         if any(not isinstance(value, str) or len(value) > 40 for value in (subject, unit, lesson)):
             raise ValueError("Invalid DLP selection")
-        return resolve(year, subject, unit, lesson)
+        renderer = aligned_dlp(year, subject)
+        if renderer is None:
+            return resolve(year, subject, unit, lesson)
+        try:
+            return renderer.resolve_download(unit, lesson)
+        except (OSError, ValueError) as exc:
+            raise RuntimeError("DLP curriculum source unavailable") from exc
+
+    @bp.get("/internal/rph/v1/dlp/year<int:year>-<subject_slug>/catalogue")
+    def aligned_dlp_catalogue(year, subject_slug):
+        allowed, status = _authorized()
+        if not allowed:
+            return jsonify({"error": "Unauthorized renderer"}), status
+        if request.args:
+            return jsonify({"error": "Invalid DLP catalogue query"}), 400
+        subject = {"mathematics": "MATH_DLP", "science": "SCIENCE_DLP"}.get(subject_slug)
+        renderer = aligned_dlp(year, subject)
+        if renderer is None:
+            return jsonify({"error": "DLP catalogue unavailable"}), 404
+        try:
+            return jsonify({"year": year, "subject": subject, "units": renderer.download_catalogue()})
+        except (OSError, ValueError):
+            return jsonify({"error": "DLP curriculum source unavailable"}), 503
 
     @bp.get("/internal/rph/v1/dlp/availability")
     def dlp_availability():
@@ -420,6 +456,8 @@ def create_native_rph_blueprint(runtime):
             plan = dlp_selection(selection)
         except ValueError:
             return jsonify({"error": "Invalid DLP selection"}), 400
+        except RuntimeError:
+            return jsonify({"error": "DLP curriculum source unavailable"}), 503
         if plan is None:
             return jsonify({"available": False}), 404
         return jsonify({"available": True, "formats": ["word", "pdf"]})
@@ -454,17 +492,239 @@ def create_native_rph_blueprint(runtime):
                 raise ValueError("Invalid teacher fields")
         except ValueError:
             return jsonify({"error": "Invalid DLP render request"}), 400
+        except RuntimeError:
+            return jsonify({"error": "DLP curriculum source unavailable"}), 503
         if plan is None:
             return jsonify({"error": "DLP lesson unavailable"}), 404
         unit, lesson = plan
         try:
-            document = render_dlp(body["selection"]["subject"], unit, lesson, fmt, teacher)
+            selection = body["selection"]
+            renderer = aligned_dlp(selection["year"], selection["subject"])
+            if renderer:
+                document = renderer.render_download(lesson, fmt, teacher)
+            else:
+                document = render_dlp(selection["subject"], unit, lesson, fmt, teacher)
             response = Response(document, mimetype=MIMES[fmt])
             response.headers["Content-Disposition"] = f'attachment; filename="{filename(lesson["id"], fmt)}"'
             return response
         except Exception:
             current_app.logger.exception("DLP document generation failed for %s", lesson["id"])
             return jsonify({"error": "DLP document generation unavailable"}), 503
+
+    @bp.get("/internal/rph/v1/matematik-sjkt-t2/review")
+    @bp.get("/internal/rph/v1/matematik-sjkt-t2/review/<int:unit>")
+    @bp.route("/internal/rph/v1/matematik-sjkt-t2/review/<int:unit>/<int:pdp>/<fmt>",
+              methods=("GET", "POST"))
+    def matematik_sjkt_t2_review(unit=None, pdp=None, fmt=None):
+        from flask import current_app
+        from audits.matematik_sjkt_tahun_2.eksport_rph import teacher_context
+        from web.matematik_sjkt_t2_review import (
+            FORMATS, RENDER_ERRORS, UNIT_NAMES, options, render, resolve,
+        )
+
+        allowed, status = _authorized()
+        if not allowed:
+            return jsonify({"error": "Unauthorized renderer"}), status
+        if request.args:
+            return jsonify({"error": "Invalid review selection"}), 400
+        if ((unit is not None and not 1 <= unit <= len(UNIT_NAMES))
+                or (fmt is not None and fmt not in FORMATS)):
+            return jsonify({"error": "Matematik SJKT selection unavailable"}), 404
+        teacher = None
+        if request.method == "POST":
+            if not request.is_json or not 0 < (request.content_length or 0) <= 7000:
+                return jsonify({"error": "Butiran guru tidak sah"}), 400
+            teacher = request.get_json(silent=True)
+            try:
+                if teacher is None:
+                    raise ValueError("Missing teacher fields")
+                teacher_context(teacher)
+            except ValueError:
+                return jsonify({"error": "Butiran guru tidak sah"}), 400
+        try:
+            if pdp is None:
+                return jsonify(options(unit))
+            if resolve(unit, pdp) is None:
+                return jsonify({"error": "Matematik SJKT PdP unavailable"}), 404
+            name, document = render(unit, pdp, FORMATS[fmt], teacher)
+            response = Response(document, mimetype=MIMES[fmt])
+            response.headers["Content-Disposition"] = f'attachment; filename="{name}"'
+            return response
+        except RENDER_ERRORS:
+            current_app.logger.exception("Matematik SJKT review source unavailable")
+            return jsonify({"error": "Matematik SJKT review source unavailable"}), 503
+
+    @bp.get("/internal/rph/v1/matematik-sjkt-t2/options")
+    def matematik_sjkt_options():
+        from flask import current_app
+        from web import matematik_sjkt_t2_release as sjkt
+        from web.matematik_sjkt_t2_review import RENDER_ERRORS
+
+        allowed, status = _authorized()
+        if not allowed:
+            return jsonify({"error": "Unauthorized renderer"}), status
+        if not sjkt.enabled():
+            return jsonify({"error": "Matematik SJKT unavailable"}), 404
+        keys = set(request.args)
+        if (keys not in ({"year"}, {"year", "unit"}, {"year", "unit", "pdp"})
+                or any(len(values) != 1 for _, values in request.args.lists())
+                or any(not re.fullmatch(r"[1-9][0-9]?", value) for value in request.args.values())):
+            return jsonify({"error": "Invalid Matematik SJKT selection"}), 400
+        unit = int(request.args["unit"]) if "unit" in keys else None
+        if request.args["year"] != str(sjkt.YEAR) or unit is not None and not 1 <= unit <= len(sjkt.UNIT_NAMES):
+            return jsonify({"error": "Matematik SJKT unavailable"}), 404
+        try:
+            if "pdp" in keys:
+                available = sjkt.resolve(unit, int(request.args["pdp"])) is not None
+                return jsonify({"available": available}), 200 if available else 404
+            if unit is None:
+                return jsonify([{"value": str(number), "label": f"Unit {number} · {label}"}
+                                for number, label in sjkt.units()])
+            return jsonify([{
+                "value": str(row["pdp"]), "label": f"PdP {row['pdp']:03} · {row['topic']}",
+                "lesson_no": row["pdp"],
+                "textbook_ref": f"BT {row['buku_teks']} · BA {row['buku_aktiviti']}",
+            } for row in sjkt.lessons() if row["unit_number"] == unit])
+        except RENDER_ERRORS:
+            current_app.logger.exception("Matematik SJKT catalogue unavailable")
+            return jsonify({"error": "Matematik SJKT unavailable"}), 503
+
+    @bp.post("/internal/rph/v1/matematik-sjkt-t2/render")
+    def matematik_sjkt_render():
+        from flask import current_app
+        from audits.matematik_sjkt_tahun_2.eksport_rph import teacher_context
+        from web import matematik_sjkt_t2_release as sjkt
+        from web.matematik_sjkt_t2_review import RENDER_ERRORS
+
+        allowed, status = _authorized()
+        if not allowed:
+            return jsonify({"error": "Unauthorized renderer"}), status
+        if not sjkt.enabled():
+            return jsonify({"error": "Matematik SJKT unavailable"}), 404
+        body = request.get_json(silent=True) if 0 < (request.content_length or 0) <= 7000 else None
+        if (not isinstance(body, dict) or set(body) != {"year", "unit", "pdp", "format", "teacher"}
+                or any(type(body[key]) is not int for key in ("year", "unit", "pdp"))
+                or not isinstance(body["format"], str) or body["format"] not in MIMES
+                or not isinstance(body["teacher"], dict)):
+            return jsonify({"error": "Invalid Matematik SJKT selection"}), 400
+        try:
+            teacher_context(body["teacher"])
+        except ValueError:
+            return jsonify({"error": "Invalid teacher fields"}), 400
+        if body["year"] != sjkt.YEAR:
+            return jsonify({"error": "Matematik SJKT unavailable"}), 404
+        try:
+            row = sjkt.resolve(body["unit"], body["pdp"])
+            if row is None:
+                return jsonify({"error": "Matematik SJKT PdP unavailable"}), 404
+            fmt = body["format"]
+            name, document = sjkt.render(row, fmt, body["teacher"])
+            response = Response(document, mimetype=MIMES[fmt])
+            response.headers["Content-Disposition"] = f'attachment; filename="{name}"'
+            return response
+        except RENDER_ERRORS:
+            current_app.logger.exception("Matematik SJKT RPH unavailable")
+            return jsonify({"error": "Matematik SJKT RPH unavailable"}), 503
+
+    def _matematik_sjkc_source(year):
+        from staging.matematik_sjkc.tahun_2 import rph as year_two
+        from staging.matematik_sjkc.tahun_3 import rph as year_three
+
+        return {"2": year_two, "3": year_three}.get(str(year))
+
+    @bp.get("/internal/rph/v1/matematik-sjkc/options")
+    def matematik_sjkc_options():
+        allowed, status = _authorized()
+        if not allowed:
+            return jsonify({"error": "Unauthorized renderer"}), status
+        keys = set(request.args)
+        if (keys not in ({"year"}, {"year", "unit"}, {"year", "unit", "pdp"})
+                or any(len(values) != 1 for _, values in request.args.lists())):
+            return jsonify({"error": "Invalid Matematik SJKC selection"}), 400
+        source = _matematik_sjkc_source(request.args["year"])
+        if source is None or not source.enabled():
+            return jsonify({"error": "Matematik SJKC unavailable"}), 404
+        if any(not re.fullmatch(r"[1-9][0-9]?", request.args[key]) for key in keys - {"year"}):
+            return jsonify({"error": "Invalid Matematik SJKC selection"}), 400
+        unit = int(request.args["unit"]) if "unit" in keys else None
+        pdp = int(request.args["pdp"]) if "pdp" in keys else None
+        try:
+            unit_rows = source.units()
+        except (OSError, ValueError, KeyError, TypeError):
+            from flask import current_app
+
+            current_app.logger.exception("Matematik SJKC RPH catalog failed")
+            return jsonify({"error": "Matematik SJKC unavailable"}), 503
+        if (unit is not None and not 1 <= unit <= len(unit_rows)
+                or pdp is not None and not 1 <= pdp <= source.PDP_COUNT):
+            return jsonify({"error": "Matematik SJKC lesson unavailable"}), 404
+        if pdp is not None:
+            return (jsonify({"available": True}) if source.resolve(unit, pdp) else
+                    (jsonify({"available": False}), 404))
+        if unit is None:
+            return jsonify([{"value": str(number), "label": f"Unit {number} · {title}"}
+                            for number, title in unit_rows])
+        return jsonify([{"value": str(row["pdp"]),
+                         "label": f"PdP {row['pdp']:03} · {row['topic']}",
+                         "lesson_no": row["pdp"],
+                         "textbook_ref": f"BT J{row['textbook_volume']} m.s. {row['textbook_pages']}"}
+                        for row in source.lessons() if row["unit_number"] == unit])
+
+    @bp.post("/internal/rph/v1/matematik-sjkc/render")
+    def matematik_sjkc_render():
+        return _matematik_sjkc_document(release=True)
+
+    @bp.post("/internal/rph/v1/matematik-sjkc/preview")
+    def matematik_sjkc_preview():
+        return _matematik_sjkc_document()
+
+    def _matematik_sjkc_document(*, release=False):
+        from flask import current_app
+        from pypdf.errors import PdfReadError
+        from zipfile import BadZipFile
+
+        allowed, status = _authorized()
+        if not allowed:
+            return jsonify({"error": "Unauthorized renderer"}), status
+        keys = {"year", "unit", "pdp", "format"}
+        if release:
+            keys.add("teacher")
+        if not request.is_json or not 0 < (request.content_length or 0) <= 7000:
+            return jsonify({"error": "Invalid render body"}), 400
+        body = request.get_json(silent=True)
+        if (not isinstance(body, dict) or set(body) != keys or
+                any(type(body[key]) is not int for key in ("year", "unit", "pdp")) or
+                not isinstance(body["format"], str) or body["format"] not in MIMES):
+            return jsonify({"error": "Invalid Matematik SJKC selection"}), 400
+        source = _matematik_sjkc_source(body["year"])
+        if source is None or (release and not source.enabled()) or (not release and source.YEAR != 3):
+            return jsonify({"error": "Matematik SJKC lesson unavailable"}), 404
+        teacher = None
+        if release:
+            try:
+                teacher = body["teacher"]
+                if not valid_teacher_fields(teacher):
+                    raise ValueError("Invalid teacher fields")
+                limits = {"class": 40, "date": 10, "time": 13, "students": 3}
+                teacher = {key: _require_text(teacher[key], limit, allow_empty=True)
+                           for key, limit in limits.items()} | {
+                               "reflection": clean_reflection(teacher.get("reflection", "")),
+                           }
+                if any(not teacher[key].isprintable() for key in limits if teacher[key]):
+                    raise ValueError("Invalid teacher fields")
+            except ValueError:
+                return jsonify({"error": "Invalid teacher fields"}), 400
+        try:
+            lesson = source.resolve(body["unit"], body["pdp"])
+            if lesson is None:
+                return jsonify({"error": "Matematik SJKC lesson unavailable"}), 404
+            name, document = source.render(lesson, body["format"], teacher)
+            response = Response(document, mimetype=MIMES[body["format"]])
+            response.headers["Content-Disposition"] = f'attachment; filename="{name}"'
+            return response
+        except (OSError, ValueError, KeyError, BadZipFile, PdfReadError):
+            current_app.logger.exception("Matematik SJKC RPH generation failed")
+            return jsonify({"error": "Matematik SJKC RPH unavailable"}), 503
 
     @bp.post("/internal/rph/v1/render")
     def render():

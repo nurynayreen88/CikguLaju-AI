@@ -1,0 +1,1880 @@
+{
+  "tahun": 2,
+  "tahun_ajaran": 2027,
+  "sekolah": "SJKT",
+  "subjek": "Matematik",
+  "status": "Draf semakan",
+  "jumlah_jam": 96,
+  "minggu": [
+    {
+      "week": 1,
+      "group_a": [
+        "2027-01-04",
+        "2027-01-07"
+      ],
+      "group_b": [
+        "2027-01-04",
+        "2027-01-08"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": []
+    },
+    {
+      "week": 2,
+      "group_a": [
+        "2027-01-10",
+        "2027-01-14"
+      ],
+      "group_b": [
+        "2027-01-11",
+        "2027-01-15"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "week": 3,
+      "group_a": [
+        "2027-01-17",
+        "2027-01-21"
+      ],
+      "group_b": [
+        "2027-01-18",
+        "2027-01-22"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "week": 4,
+      "group_a": [
+        "2027-01-24",
+        "2027-01-28"
+      ],
+      "group_b": [
+        "2027-01-25",
+        "2027-01-29"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "week": 5,
+      "group_a": [
+        "2027-01-31",
+        "2027-02-04"
+      ],
+      "group_b": [
+        "2027-02-01",
+        "2027-02-05"
+      ],
+      "calendar_note": "05/02 cuti tambahan Tahun Baharu Cina (B)",
+      "calendar_status": "pengajaran",
+      "sesi": [
+        10,
+        11
+      ]
+    },
+    {
+      "week": 6,
+      "group_a": [
+        "2027-02-07",
+        "2027-02-11"
+      ],
+      "group_b": [
+        "2027-02-08",
+        "2027-02-12"
+      ],
+      "calendar_note": "Cuti Tahun Baharu Cina dan cuti tambahan mengikut negeri",
+      "calendar_status": "cuti_perayaan_kapasiti_bersama_sifar",
+      "sesi": []
+    },
+    {
+      "week": 7,
+      "group_a": [
+        "2027-02-14",
+        "2027-02-18"
+      ],
+      "group_b": [
+        "2027-02-15",
+        "2027-02-19"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "week": 8,
+      "group_a": [
+        "2027-02-21",
+        "2027-02-25"
+      ],
+      "group_b": [
+        "2027-02-22",
+        "2027-02-26"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "week": 9,
+      "group_a": [
+        "2027-02-28",
+        "2027-03-04"
+      ],
+      "group_b": [
+        "2027-03-01",
+        "2027-03-05"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        18,
+        19
+      ]
+    },
+    {
+      "week": 10,
+      "group_a": [
+        "2027-03-14",
+        "2027-03-18"
+      ],
+      "group_b": [
+        "2027-03-15",
+        "2027-03-19"
+      ],
+      "calendar_note": "14/03 cuti tambahan Aidilfitri (A)",
+      "calendar_status": "pengajaran",
+      "sesi": [
+        20,
+        21
+      ]
+    },
+    {
+      "week": 11,
+      "group_a": [
+        "2027-03-21",
+        "2027-03-25"
+      ],
+      "group_b": [
+        "2027-03-22",
+        "2027-03-26"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "week": 12,
+      "group_a": [
+        "2027-03-28",
+        "2027-04-01"
+      ],
+      "group_b": [
+        "2027-03-29",
+        "2027-04-02"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "week": 13,
+      "group_a": [
+        "2027-04-04",
+        "2027-04-08"
+      ],
+      "group_b": [
+        "2027-04-05",
+        "2027-04-09"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "week": 14,
+      "group_a": [
+        "2027-04-11",
+        "2027-04-15"
+      ],
+      "group_b": [
+        "2027-04-12",
+        "2027-04-16"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "week": 15,
+      "group_a": [
+        "2027-04-18",
+        "2027-04-22"
+      ],
+      "group_b": [
+        "2027-04-19",
+        "2027-04-23"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        34,
+        35,
+        36
+      ]
+    },
+    {
+      "week": 16,
+      "group_a": [
+        "2027-04-25",
+        "2027-04-29"
+      ],
+      "group_b": [
+        "2027-04-26",
+        "2027-04-30"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "week": 17,
+      "group_a": [
+        "2027-05-02",
+        "2027-05-06"
+      ],
+      "group_b": [
+        "2027-05-03",
+        "2027-05-07"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "week": 18,
+      "group_a": [
+        "2027-05-09",
+        "2027-05-13"
+      ],
+      "group_b": [
+        "2027-05-10",
+        "2027-05-14"
+      ],
+      "calendar_status": "ruang_pentaksiran_atau_pengukuhan_mengikut_sekolah",
+      "calendar_note": "PdP atau pentaksiran pertengahan tahun mengikut takwim sekolah",
+      "sesi": []
+    },
+    {
+      "week": 19,
+      "group_a": [
+        "2027-05-16",
+        "2027-05-20"
+      ],
+      "group_b": [
+        "2027-05-17",
+        "2027-05-21"
+      ],
+      "calendar_note": "Minggu PdP Raya Haji, Wesak dan cuti tambahan",
+      "calendar_status": "minggu_pdp_raya_haji_wesak_kapasiti_bersama_sifar",
+      "sesi": []
+    },
+    {
+      "week": 20,
+      "group_a": [
+        "2027-06-06",
+        "2027-06-10"
+      ],
+      "group_b": [
+        "2027-06-07",
+        "2027-06-11"
+      ],
+      "calendar_note": "Awal Muharam dan Hari Keputeraan Yang di-Pertuan Agong",
+      "calendar_status": "pengajaran",
+      "sesi": [
+        43,
+        44
+      ]
+    },
+    {
+      "week": 21,
+      "group_a": [
+        "2027-06-13",
+        "2027-06-17"
+      ],
+      "group_b": [
+        "2027-06-14",
+        "2027-06-18"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        45,
+        46,
+        47
+      ]
+    },
+    {
+      "week": 22,
+      "group_a": [
+        "2027-06-20",
+        "2027-06-24"
+      ],
+      "group_b": [
+        "2027-06-21",
+        "2027-06-25"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "week": 23,
+      "group_a": [
+        "2027-06-27",
+        "2027-07-01"
+      ],
+      "group_b": [
+        "2027-06-28",
+        "2027-07-02"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "week": 24,
+      "group_a": [
+        "2027-07-04",
+        "2027-07-08"
+      ],
+      "group_b": [
+        "2027-07-05",
+        "2027-07-09"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "week": 25,
+      "group_a": [
+        "2027-07-11",
+        "2027-07-15"
+      ],
+      "group_b": [
+        "2027-07-12",
+        "2027-07-16"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "week": 26,
+      "group_a": [
+        "2027-07-18",
+        "2027-07-22"
+      ],
+      "group_b": [
+        "2027-07-19",
+        "2027-07-23"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        60,
+        61,
+        62
+      ]
+    },
+    {
+      "week": 27,
+      "group_a": [
+        "2027-07-25",
+        "2027-07-29"
+      ],
+      "group_b": [
+        "2027-07-26",
+        "2027-07-30"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        63,
+        64,
+        65
+      ]
+    },
+    {
+      "week": 28,
+      "group_a": [
+        "2027-08-01",
+        "2027-08-05"
+      ],
+      "group_b": [
+        "2027-08-02",
+        "2027-08-06"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "week": 29,
+      "group_a": [
+        "2027-08-08",
+        "2027-08-12"
+      ],
+      "group_b": [
+        "2027-08-09",
+        "2027-08-13"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        69,
+        70,
+        71
+      ]
+    },
+    {
+      "week": 30,
+      "group_a": [
+        "2027-08-15",
+        "2027-08-19"
+      ],
+      "group_b": [
+        "2027-08-16",
+        "2027-08-20"
+      ],
+      "calendar_note": "Maulidur Rasul dan cuti ganti mengikut negeri",
+      "calendar_status": "pengajaran",
+      "sesi": [
+        72,
+        73,
+        74
+      ]
+    },
+    {
+      "week": 31,
+      "group_a": [
+        "2027-08-22",
+        "2027-08-26"
+      ],
+      "group_b": [
+        "2027-08-23",
+        "2027-08-27"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        75,
+        76,
+        77
+      ]
+    },
+    {
+      "week": 32,
+      "group_a": [
+        "2027-09-05",
+        "2027-09-09"
+      ],
+      "group_b": [
+        "2027-09-06",
+        "2027-09-10"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        78,
+        79,
+        80
+      ]
+    },
+    {
+      "week": 33,
+      "group_a": [
+        "2027-09-12",
+        "2027-09-16"
+      ],
+      "group_b": [
+        "2027-09-13",
+        "2027-09-17"
+      ],
+      "calendar_note": "16/09 Hari Malaysia",
+      "calendar_status": "pengajaran",
+      "sesi": [
+        81,
+        82
+      ]
+    },
+    {
+      "week": 34,
+      "group_a": [
+        "2027-09-19",
+        "2027-09-23"
+      ],
+      "group_b": [
+        "2027-09-20",
+        "2027-09-24"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        83,
+        84,
+        85
+      ]
+    },
+    {
+      "week": 35,
+      "group_a": [
+        "2027-09-26",
+        "2027-09-30"
+      ],
+      "group_b": [
+        "2027-09-27",
+        "2027-10-01"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        86,
+        87
+      ]
+    },
+    {
+      "week": 36,
+      "group_a": [
+        "2027-10-03",
+        "2027-10-07"
+      ],
+      "group_b": [
+        "2027-10-04",
+        "2027-10-08"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "week": 37,
+      "group_a": [
+        "2027-10-10",
+        "2027-10-14"
+      ],
+      "group_b": [
+        "2027-10-11",
+        "2027-10-15"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        91,
+        92,
+        93
+      ]
+    },
+    {
+      "week": 38,
+      "group_a": [
+        "2027-10-17",
+        "2027-10-21"
+      ],
+      "group_b": [
+        "2027-10-18",
+        "2027-10-22"
+      ],
+      "calendar_status": "pengajaran",
+      "sesi": [
+        94,
+        95,
+        96
+      ]
+    },
+    {
+      "week": 39,
+      "group_a": [
+        "2027-10-24",
+        "2027-10-28"
+      ],
+      "group_b": [
+        "2027-10-25",
+        "2027-10-29"
+      ],
+      "calendar_note": "Ruang pentaksiran akhir tahun mengikut takwim sekolah; minggu pendek Deepavali",
+      "calendar_status": "pengajaran_minggu_pendek_atau_pentaksiran_akhir_tahun_mengikut_sekolah",
+      "sesi": []
+    },
+    {
+      "week": 40,
+      "group_a": [
+        "2027-10-31",
+        "2027-11-04"
+      ],
+      "group_b": [
+        "2027-11-01",
+        "2027-11-05"
+      ],
+      "calendar_status": "minggu_akhir_pengajaran_atau_pentaksiran_akhir_tahun_mengikut_sekolah",
+      "calendar_note": "Ruang pentaksiran akhir tahun mengikut takwim sekolah",
+      "sesi": []
+    },
+    {
+      "week": 41,
+      "group_a": [
+        "2027-11-07",
+        "2027-11-11"
+      ],
+      "group_b": [
+        "2027-11-08",
+        "2027-11-12"
+      ],
+      "calendar_status": "ruang_pentaksiran_akhir_tahun_atau_aktiviti_akhir_tahun",
+      "calendar_note": "Pentaksiran akhir tahun atau aktiviti sekolah mengikut takwim sekolah",
+      "sesi": []
+    },
+    {
+      "week": 42,
+      "group_a": [
+        "2027-11-14",
+        "2027-11-18"
+      ],
+      "group_b": [
+        "2027-11-15",
+        "2027-11-19"
+      ],
+      "calendar_status": "ruang_pentaksiran_akhir_tahun_atau_aktiviti_akhir_tahun",
+      "calendar_note": "Aktiviti akhir tahun",
+      "sesi": []
+    },
+    {
+      "week": 43,
+      "group_a": [
+        "2027-11-21",
+        "2027-11-25"
+      ],
+      "group_b": [
+        "2027-11-22",
+        "2027-11-26"
+      ],
+      "calendar_status": "ruang_pentaksiran_akhir_tahun_atau_aktiviti_akhir_tahun",
+      "calendar_note": "Aktiviti akhir tahun",
+      "sesi": []
+    },
+    {
+      "week": 44,
+      "group_a": [
+        "2027-11-28",
+        "2027-12-02"
+      ],
+      "group_b": [
+        "2027-11-29",
+        "2027-12-03"
+      ],
+      "calendar_status": "ruang_pentaksiran_akhir_tahun_atau_aktiviti_akhir_tahun",
+      "calendar_note": "Aktiviti akhir tahun",
+      "sesi": []
+    }
+  ],
+  "pdp": [
+    {
+      "pdp": 1,
+      "unit": 1,
+      "sk": "1.1",
+      "sp": "1.1.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "1000 வரையிலான எண்களைப் படித்தல்",
+      "minit": 60,
+      "buku_teks": "J1 2-4,6",
+      "buku_aktiviti": "1-3",
+      "minggu": 2
+    },
+    {
+      "pdp": 2,
+      "unit": 1,
+      "sk": "1.1",
+      "sp": "1.1.1",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "எண் அட்டைகளையும் எண் பெயர்களையும் இணைத்தல்",
+      "minit": 60,
+      "buku_teks": "J1 4,6",
+      "buku_aktiviti": "2-3",
+      "minggu": 2
+    },
+    {
+      "pdp": 3,
+      "unit": 1,
+      "sk": "1.1",
+      "sp": "1.1.2",
+      "jenis": "Teras",
+      "tajuk_tamil": "1000 வரையிலான எண்களின் மதிப்பை நிர்ணயித்தல்",
+      "minit": 60,
+      "buku_teks": "J1 7-8",
+      "buku_aktiviti": "5-8",
+      "minggu": 2
+    },
+    {
+      "pdp": 4,
+      "unit": 1,
+      "sk": "1.1",
+      "sp": "1.1.2",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "பொருட்களைக் குழுவாக்கி எண்களைக் காட்டுதல்",
+      "minit": 60,
+      "buku_teks": "J1 7-9",
+      "buku_aktiviti": "5-9",
+      "minggu": 3
+    },
+    {
+      "pdp": 5,
+      "unit": 1,
+      "sk": "1.1",
+      "sp": "1.1.2",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "மூன்று இலக்க எண்களை ஒப்பிட்டு வரிசைப்படுத்துதல்",
+      "minit": 60,
+      "buku_teks": "J1 10-13",
+      "buku_aktiviti": "10-13",
+      "minggu": 3
+    },
+    {
+      "pdp": 6,
+      "unit": 1,
+      "sk": "1.2",
+      "sp": "1.2.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "எண்ணையும் அதன் பெயரையும் எழுதுதல்",
+      "minit": 60,
+      "buku_teks": "J1 5",
+      "buku_aktiviti": "2-4",
+      "minggu": 3
+    },
+    {
+      "pdp": 7,
+      "unit": 1,
+      "sk": "1.3",
+      "sp": "1.3.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "குறிப்பிட்ட இடைவெளியில் எண்ணுதல்",
+      "minit": 60,
+      "buku_teks": "J1 14",
+      "buku_aktiviti": "14-15",
+      "minggu": 4
+    },
+    {
+      "pdp": 8,
+      "unit": 1,
+      "sk": "1.3",
+      "sp": "1.3.2",
+      "jenis": "Teras",
+      "tajuk_tamil": "விடுபட்ட எண்களை நிரப்புதல்",
+      "minit": 60,
+      "buku_teks": "J1 14",
+      "buku_aktiviti": "14-15",
+      "minggu": 4
+    },
+    {
+      "pdp": 9,
+      "unit": 1,
+      "sk": "1.4",
+      "sp": "1.4.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "இடமதிப்பும் இலக்க மதிப்பும்",
+      "minit": 60,
+      "buku_teks": "J1 15-19",
+      "buku_aktiviti": "16-19",
+      "minggu": 4
+    },
+    {
+      "pdp": 10,
+      "unit": 1,
+      "sk": "1.4",
+      "sp": "1.4.1",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "இட அட்டவணையில் மூன்று இலக்க எண்களை அமைத்தல்",
+      "minit": 60,
+      "buku_teks": "J1 18-19",
+      "buku_aktiviti": "18-19",
+      "minggu": 5
+    },
+    {
+      "pdp": 11,
+      "unit": 1,
+      "sk": "1.4",
+      "sp": "1.4.2",
+      "jenis": "Teras",
+      "tajuk_tamil": "எண்களை விரித்து எழுதுதல்",
+      "minit": 60,
+      "buku_teks": "J1 20-21",
+      "buku_aktiviti": "20",
+      "minggu": 5
+    },
+    {
+      "pdp": 12,
+      "unit": 1,
+      "sk": "1.5",
+      "sp": "1.5.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "பொருள்களின் எண்ணிக்கையை அனுமானித்தல்",
+      "minit": 60,
+      "buku_teks": "J1 22-23",
+      "buku_aktiviti": "21",
+      "minggu": 7
+    },
+    {
+      "pdp": 13,
+      "unit": 1,
+      "sk": "1.6",
+      "sp": "1.6.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "அண்மித்த நூறுக்கு முழுமைப்படுத்துதல்",
+      "minit": 60,
+      "buku_teks": "J1 26",
+      "buku_aktiviti": "22",
+      "minggu": 7
+    },
+    {
+      "pdp": 14,
+      "unit": 1,
+      "sk": "1.7",
+      "sp": "1.7.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "எண் தோரணியின் விதியைக் கண்டறிதல்",
+      "minit": 60,
+      "buku_teks": "J1 27",
+      "buku_aktiviti": "14-15",
+      "minggu": 7
+    },
+    {
+      "pdp": 15,
+      "unit": 1,
+      "sk": "1.7",
+      "sp": "1.7.2",
+      "jenis": "Teras",
+      "tajuk_tamil": "எண் தோரணியை நிறைவு செய்தல்",
+      "minit": 60,
+      "buku_teks": "J1 27",
+      "buku_aktiviti": "14-15",
+      "minggu": 8
+    },
+    {
+      "pdp": 16,
+      "unit": 1,
+      "sk": "1.8",
+      "sp": "1.8.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "முழு எண்களைப் பயன்படுத்திப் பிரச்சனைகளைத் தீர்த்தல்",
+      "minit": 60,
+      "buku_teks": "J1 28-29",
+      "buku_aktiviti": "23",
+      "minggu": 8
+    },
+    {
+      "pdp": 17,
+      "unit": 2,
+      "sk": "2.1",
+      "sp": "2.1.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "இரு எண்களைக் கூட்டுதல்",
+      "minit": 60,
+      "buku_teks": "J1 31-33",
+      "buku_aktiviti": "24-25",
+      "minggu": 8
+    },
+    {
+      "pdp": 18,
+      "unit": 2,
+      "sk": "2.1",
+      "sp": "2.1.1",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "மறுகுழுவாக்கமின்றி இரு எண்களைக் கூட்டுதல்",
+      "minit": 60,
+      "buku_teks": "J1 32-35",
+      "buku_aktiviti": "24-27",
+      "minggu": 9
+    },
+    {
+      "pdp": 19,
+      "unit": 2,
+      "sk": "2.1",
+      "sp": "2.1.1",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "மறுகுழுவாக்கத்துடன் இரு எண்களைக் கூட்டுதல்",
+      "minit": 60,
+      "buku_teks": "J1 36-39",
+      "buku_aktiviti": "28-29",
+      "minggu": 9
+    },
+    {
+      "pdp": 20,
+      "unit": 2,
+      "sk": "2.1",
+      "sp": "2.1.2",
+      "jenis": "Teras",
+      "tajuk_tamil": "மூன்று எண்களைக் கூட்டுதல்",
+      "minit": 60,
+      "buku_teks": "J1 40-42",
+      "buku_aktiviti": "30-31",
+      "minggu": 10
+    },
+    {
+      "pdp": 21,
+      "unit": 2,
+      "sk": "2.1",
+      "sp": "2.1.2",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "மூன்று எண்களைக் கலந்து கூட்டிப் பார்த்தல்",
+      "minit": 60,
+      "buku_teks": "J1 43-45",
+      "buku_aktiviti": "32-33",
+      "minggu": 10
+    },
+    {
+      "pdp": 22,
+      "unit": 2,
+      "sk": "2.2",
+      "sp": "2.2.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "இரு எண்களைக் கழித்தல்",
+      "minit": 60,
+      "buku_teks": "J1 48-49",
+      "buku_aktiviti": "34-35",
+      "minggu": 11
+    },
+    {
+      "pdp": 23,
+      "unit": 2,
+      "sk": "2.2",
+      "sp": "2.2.1",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "மறுகுழுவாக்கமின்றிக் கழிக்கும் பயிற்சி",
+      "minit": 60,
+      "buku_teks": "J1 48-49",
+      "buku_aktiviti": "34-35",
+      "minggu": 11
+    },
+    {
+      "pdp": 24,
+      "unit": 2,
+      "sk": "2.2",
+      "sp": "2.2.1",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "மறுகுழுவாக்கத்துடன் கழிக்கும் பயிற்சி",
+      "minit": 60,
+      "buku_teks": "J1 50-56",
+      "buku_aktiviti": "36-41",
+      "minggu": 11
+    },
+    {
+      "pdp": 25,
+      "unit": 2,
+      "sk": "2.2",
+      "sp": "2.2.2",
+      "jenis": "Teras",
+      "tajuk_tamil": "ஒரு எண்ணிலிருந்து இரண்டு எண்களைக் கழித்தல்",
+      "minit": 60,
+      "buku_teks": "J1 57-58",
+      "buku_aktiviti": "42-45",
+      "minggu": 12
+    },
+    {
+      "pdp": 26,
+      "unit": 2,
+      "sk": "2.2",
+      "sp": "2.2.2",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "தொடர்ச்சியாக இருமுறை கழித்தல் பயிற்சி",
+      "minit": 60,
+      "buku_teks": "J1 58-62",
+      "buku_aktiviti": "45-47",
+      "minggu": 12
+    },
+    {
+      "pdp": 27,
+      "unit": 2,
+      "sk": "2.3",
+      "sp": "2.3.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "அடிப்படைப் பெருக்கல் வாய்ப்பாடு",
+      "minit": 60,
+      "buku_teks": "J1 65,67-68",
+      "buku_aktiviti": "48-49",
+      "minggu": 12
+    },
+    {
+      "pdp": 28,
+      "unit": 2,
+      "sk": "2.3",
+      "sp": "2.3.1",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "சமமான குழுக்களிலிருந்து பெருக்கல் வாய்ப்பாடுகளை உருவாக்குதல்",
+      "minit": 60,
+      "buku_teks": "J1 65,67-70",
+      "buku_aktiviti": "48-52",
+      "minggu": 13
+    },
+    {
+      "pdp": 29,
+      "unit": 2,
+      "sk": "2.3",
+      "sp": "2.3.1",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "பெருக்கல் வாய்ப்பாடுகளைப் பயன்படுத்திப் பயிற்சி செய்தல்",
+      "minit": 60,
+      "buku_teks": "J1 71-72,74-76",
+      "buku_aktiviti": "55-57,60-63",
+      "minggu": 13
+    },
+    {
+      "pdp": 30,
+      "unit": 2,
+      "sk": "2.3",
+      "sp": "2.3.2",
+      "jenis": "Teras",
+      "tajuk_tamil": "ஓரிலக்க எண்ணை 10 ஆல் பெருக்குதல்",
+      "minit": 60,
+      "buku_teks": "J1 73",
+      "buku_aktiviti": "58-59",
+      "minggu": 13
+    },
+    {
+      "pdp": 31,
+      "unit": 2,
+      "sk": "2.4",
+      "sp": "2.4.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "அடிப்படை வகுத்தல்",
+      "minit": 60,
+      "buku_teks": "J1 77-79",
+      "buku_aktiviti": "64-65",
+      "minggu": 14
+    },
+    {
+      "pdp": 32,
+      "unit": 2,
+      "sk": "2.4",
+      "sp": "2.4.1",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "சமமாகப் பகிர்ந்தும் குழுவாக்கியும் வகுத்தல்",
+      "minit": 60,
+      "buku_teks": "J1 77-80",
+      "buku_aktiviti": "64-66",
+      "minggu": 14
+    },
+    {
+      "pdp": 33,
+      "unit": 2,
+      "sk": "2.4",
+      "sp": "2.4.1",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "பெருக்கலைப் பயன்படுத்தி வகுத்தலைச் சரிபார்த்தல்",
+      "minit": 60,
+      "buku_teks": "J1 85-88,90-91",
+      "buku_aktiviti": "70-74,77-78",
+      "minggu": 14
+    },
+    {
+      "pdp": 34,
+      "unit": 2,
+      "sk": "2.4",
+      "sp": "2.4.2",
+      "jenis": "Teras",
+      "tajuk_tamil": "ஈரிலக்க எண்ணை 10 ஆல் வகுத்தல்",
+      "minit": 60,
+      "buku_teks": "J1 92-94",
+      "buku_aktiviti": "79",
+      "minggu": 15
+    },
+    {
+      "pdp": 35,
+      "unit": 2,
+      "sk": "2.5",
+      "sp": "2.5.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "நான்கு அடிப்படைச் செயலி நிலைகளை உருவாக்குதல்",
+      "minit": 60,
+      "buku_teks": "J1 97-105",
+      "buku_aktiviti": "80-83",
+      "minggu": 15
+    },
+    {
+      "pdp": 36,
+      "unit": 2,
+      "sk": "2.5",
+      "sp": "2.5.2",
+      "jenis": "Teras",
+      "tajuk_tamil": "நான்கு அடிப்படைச் செயலிகளைக் கொண்ட பிரச்சனைகள்",
+      "minit": 60,
+      "buku_teks": "J1 106-109",
+      "buku_aktiviti": "84-85",
+      "minggu": 15
+    },
+    {
+      "pdp": 37,
+      "unit": 2,
+      "sk": "2.5",
+      "sp": "2.5.2",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "கூட்டல் மற்றும் கழித்தல் சார்ந்த பிரச்சனைகள்",
+      "minit": 60,
+      "buku_teks": "J1 106-110",
+      "buku_aktiviti": "84-85",
+      "minggu": 16
+    },
+    {
+      "pdp": 38,
+      "unit": 2,
+      "sk": "2.5",
+      "sp": "2.5.2",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "பெருக்கல் மற்றும் வகுத்தல் சார்ந்த பிரச்சனைகள்",
+      "minit": 60,
+      "buku_teks": "J1 113-114,116-120",
+      "buku_aktiviti": "86-88",
+      "minggu": 16
+    },
+    {
+      "pdp": 39,
+      "unit": 3,
+      "sk": "3.1",
+      "sp": "3.1.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "தொகுதி 1 கொண்ட பின்னங்கள்",
+      "minit": 60,
+      "buku_teks": "J2 1-2,6,15",
+      "buku_aktiviti": "89-90",
+      "minggu": 16
+    },
+    {
+      "pdp": 40,
+      "unit": 3,
+      "sk": "3.1",
+      "sp": "3.1.2",
+      "jenis": "Teras",
+      "tajuk_tamil": "தகு பின்னங்களைப் படித்தல்",
+      "minit": 60,
+      "buku_teks": "J2 2-3,7",
+      "buku_aktiviti": "89,93",
+      "minggu": 17
+    },
+    {
+      "pdp": 41,
+      "unit": 3,
+      "sk": "3.1",
+      "sp": "3.1.3",
+      "jenis": "Teras",
+      "tajuk_tamil": "பின்னத்தைப் படத்தில் காட்டுதல்",
+      "minit": 60,
+      "buku_teks": "J2 4-6,8-9",
+      "buku_aktiviti": "90,94",
+      "minggu": 17
+    },
+    {
+      "pdp": 42,
+      "unit": 3,
+      "sk": "3.1",
+      "sp": "3.1.4",
+      "jenis": "Teras",
+      "tajuk_tamil": "தகு பின்னங்களை எழுதுதல்",
+      "minit": 60,
+      "buku_teks": "J2 10",
+      "buku_aktiviti": "94-95",
+      "minggu": 17
+    },
+    {
+      "pdp": 43,
+      "unit": 3,
+      "sk": "3.1",
+      "sp": "3.1.5",
+      "jenis": "Teras",
+      "tajuk_tamil": "இரு தகு பின்னங்களை ஒப்பிடுதல்",
+      "minit": 60,
+      "buku_teks": "J2 11-13",
+      "buku_aktiviti": "95-96",
+      "minggu": 20
+    },
+    {
+      "pdp": 44,
+      "unit": 3,
+      "sk": "3.1",
+      "sp": "3.1.5",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "ஒரே அளவிலான பின்னப் பட்டைகளில் மதிப்புகளை ஒப்பிடுதல்",
+      "minit": 60,
+      "buku_teks": "J2 12-13",
+      "buku_aktiviti": "95-96",
+      "minggu": 20
+    },
+    {
+      "pdp": 45,
+      "unit": 3,
+      "sk": "3.2",
+      "sp": "3.2.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "பத்துப் பகுதியுடைய பின்னத்தைத் தசமமாக மாற்றுதல்",
+      "minit": 60,
+      "buku_teks": "J2 16-17",
+      "buku_aktiviti": "97-98",
+      "minggu": 21
+    },
+    {
+      "pdp": 46,
+      "unit": 3,
+      "sk": "3.2",
+      "sp": "3.2.2",
+      "jenis": "Teras",
+      "tajuk_tamil": "0.1 முதல் 0.9 வரை வாசித்தல்",
+      "minit": 60,
+      "buku_teks": "J2 18",
+      "buku_aktiviti": "98-99",
+      "minggu": 21
+    },
+    {
+      "pdp": 47,
+      "unit": 3,
+      "sk": "3.2",
+      "sp": "3.2.3",
+      "jenis": "Teras",
+      "tajuk_tamil": "தசமத்தை எண்கோட்டில் காட்டுதல்",
+      "minit": 60,
+      "buku_teks": "J2 18-19",
+      "buku_aktiviti": "98-99",
+      "minggu": 21
+    },
+    {
+      "pdp": 48,
+      "unit": 3,
+      "sk": "3.2",
+      "sp": "3.2.4",
+      "jenis": "Teras",
+      "tajuk_tamil": "தசமத்தைப் படத்தில் காட்டுதல்",
+      "minit": 60,
+      "buku_teks": "J2 19",
+      "buku_aktiviti": "99",
+      "minggu": 22
+    },
+    {
+      "pdp": 49,
+      "unit": 3,
+      "sk": "3.2",
+      "sp": "3.2.5",
+      "jenis": "Teras",
+      "tajuk_tamil": "தசம எண்களை எழுதுதல்",
+      "minit": 60,
+      "buku_teks": "J2 20-21",
+      "buku_aktiviti": "97-99",
+      "minggu": 22
+    },
+    {
+      "pdp": 50,
+      "unit": 3,
+      "sk": "3.2",
+      "sp": "3.2.6",
+      "jenis": "Teras",
+      "tajuk_tamil": "தசம மதிப்புகளை ஒப்பிடுதல்",
+      "minit": 60,
+      "buku_teks": "J2 22-23,28",
+      "buku_aktiviti": "100",
+      "minggu": 22
+    },
+    {
+      "pdp": 51,
+      "unit": 3,
+      "sk": "3.3",
+      "sp": "3.3.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "பின்ன மதிப்பையும் தசம மதிப்பையும் ஒப்பிடுதல்",
+      "minit": 60,
+      "buku_teks": "J2 24",
+      "buku_aktiviti": "100",
+      "minggu": 23
+    },
+    {
+      "pdp": 52,
+      "unit": 3,
+      "sk": "3.4",
+      "sp": "3.4.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "பின்னமும் தசமமும் சார்ந்த பிரச்சனைகள்",
+      "minit": 60,
+      "buku_teks": "J2 25-27",
+      "buku_aktiviti": "101",
+      "minggu": 23
+    },
+    {
+      "pdp": 53,
+      "unit": 3,
+      "sk": "3.4",
+      "sp": "3.4.1",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "பின்னம் மற்றும் தசமப் படங்களால் தீர்வை விளக்குதல்",
+      "minit": 60,
+      "buku_teks": "J2 25-27",
+      "buku_aktiviti": "101",
+      "minggu": 23
+    },
+    {
+      "pdp": 54,
+      "unit": 4,
+      "sk": "4.1",
+      "sp": "4.1.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "மலேசிய நோட்டுகளையும் நாணயங்களையும் அடையாளம் காணுதல்",
+      "minit": 60,
+      "buku_teks": "J2 32",
+      "buku_aktiviti": "102",
+      "minggu": 24
+    },
+    {
+      "pdp": 55,
+      "unit": 4,
+      "sk": "4.1",
+      "sp": "4.1.2",
+      "jenis": "Teras",
+      "tajuk_tamil": "பணத்தின் மதிப்பைக் குறிப்பிடுதல்",
+      "minit": 60,
+      "buku_teks": "J2 33-35",
+      "buku_aktiviti": "102-103",
+      "minggu": 24
+    },
+    {
+      "pdp": 56,
+      "unit": 4,
+      "sk": "4.2",
+      "sp": "4.2.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "இரு பண மதிப்புகளைக் கூட்டுதல்",
+      "minit": 60,
+      "buku_teks": "J2 36-38",
+      "buku_aktiviti": "104-106",
+      "minggu": 24
+    },
+    {
+      "pdp": 57,
+      "unit": 4,
+      "sk": "4.2",
+      "sp": "4.2.2",
+      "jenis": "Teras",
+      "tajuk_tamil": "மூன்று பண மதிப்புகளைக் கூட்டுதல்",
+      "minit": 60,
+      "buku_teks": "J2 39-40",
+      "buku_aktiviti": "107-109",
+      "minggu": 25
+    },
+    {
+      "pdp": 58,
+      "unit": 4,
+      "sk": "4.3",
+      "sp": "4.3.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "இரு பண மதிப்புகளைக் கழித்தல்",
+      "minit": 60,
+      "buku_teks": "J2 41-42",
+      "buku_aktiviti": "110-112",
+      "minggu": 25
+    },
+    {
+      "pdp": 59,
+      "unit": 4,
+      "sk": "4.3",
+      "sp": "4.3.1",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "பொருள் வாங்கிய பிறகு மீதிப் பணத்தைக் கணக்கிடுதல்",
+      "minit": 60,
+      "buku_teks": "J2 41-42",
+      "buku_aktiviti": "110-112",
+      "minggu": 25
+    },
+    {
+      "pdp": 60,
+      "unit": 4,
+      "sk": "4.3",
+      "sp": "4.3.2",
+      "jenis": "Teras",
+      "tajuk_tamil": "ஒரு பண மதிப்பிலிருந்து இரு மதிப்புகளைக் கழித்தல்",
+      "minit": 60,
+      "buku_teks": "J2 43-44",
+      "buku_aktiviti": "113-114",
+      "minggu": 26
+    },
+    {
+      "pdp": 61,
+      "unit": 4,
+      "sk": "4.4",
+      "sp": "4.4.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "பண மதிப்பைப் பெருக்குதல்",
+      "minit": 60,
+      "buku_teks": "J2 45-46",
+      "buku_aktiviti": "115-116",
+      "minggu": 26
+    },
+    {
+      "pdp": 62,
+      "unit": 4,
+      "sk": "4.5",
+      "sp": "4.5.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "பணத்தைச் சமமாகப் பகிர்தல்",
+      "minit": 60,
+      "buku_teks": "J2 47-48",
+      "buku_aktiviti": "116-117",
+      "minggu": 26
+    },
+    {
+      "pdp": 63,
+      "unit": 4,
+      "sk": "4.6",
+      "sp": "4.6.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "சேமிப்பும் முதலீடும்",
+      "minit": 60,
+      "buku_teks": "J2 49-50",
+      "buku_aktiviti": "118",
+      "minggu": 27
+    },
+    {
+      "pdp": 64,
+      "unit": 4,
+      "sk": "4.7",
+      "sp": "4.7.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "பணம் சார்ந்த நாளாந்தப் பிரச்சனைகள்",
+      "minit": 60,
+      "buku_teks": "J2 51-52,54",
+      "buku_aktiviti": "119-120",
+      "minggu": 27
+    },
+    {
+      "pdp": 65,
+      "unit": 4,
+      "sk": "4.7",
+      "sp": "4.7.1",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "வாங்குதல், மீதிப் பணம், சமப் பகிர்வு",
+      "minit": 60,
+      "buku_teks": "J2 51-52",
+      "buku_aktiviti": "119-120",
+      "minggu": 27
+    },
+    {
+      "pdp": 66,
+      "unit": 5,
+      "sk": "5.1",
+      "sp": "5.1.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "கடிகாரத்தின் நிமிடக் குறிகளைக் கண்டறிதல்",
+      "minit": 60,
+      "buku_teks": "J2 55-57",
+      "buku_aktiviti": "121",
+      "minggu": 28
+    },
+    {
+      "pdp": 67,
+      "unit": 5,
+      "sk": "5.1",
+      "sp": "5.1.2",
+      "jenis": "Teras",
+      "tajuk_tamil": "மணியிலும் நிமிடத்திலும் நேரம் கூறுதல்",
+      "minit": 60,
+      "buku_teks": "J2 58",
+      "buku_aktiviti": "123-124",
+      "minggu": 28
+    },
+    {
+      "pdp": 68,
+      "unit": 5,
+      "sk": "5.1",
+      "sp": "5.1.3",
+      "jenis": "Teras",
+      "tajuk_tamil": "நேரத்தை எண்களுக்கும் சொற்களுக்கும் இடையே மாற்றுதல்",
+      "minit": 60,
+      "buku_teks": "J2 59",
+      "buku_aktiviti": "123-124",
+      "minggu": 28
+    },
+    {
+      "pdp": 69,
+      "unit": 5,
+      "sk": "5.1",
+      "sp": "5.1.4",
+      "jenis": "Teras",
+      "tajuk_tamil": "நேரத்தை மணியிலும் நிமிடத்திலும் பதிவு செய்தல்",
+      "minit": 60,
+      "buku_teks": "J2 60",
+      "buku_aktiviti": "125",
+      "minggu": 29
+    },
+    {
+      "pdp": 70,
+      "unit": 5,
+      "sk": "5.2",
+      "sp": "5.2.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "நாள், மணி, நிமிடம் ஆகியவற்றின் தொடர்பு",
+      "minit": 60,
+      "buku_teks": "J2 61",
+      "buku_aktiviti": "125",
+      "minggu": 29
+    },
+    {
+      "pdp": 71,
+      "unit": 5,
+      "sk": "5.3",
+      "sp": "5.3.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "அன்றாட நேரப் பிரச்சனைகளைத் தீர்த்தல்",
+      "minit": 60,
+      "buku_teks": "J2 62-63",
+      "buku_aktiviti": "126-128",
+      "minggu": 29
+    },
+    {
+      "pdp": 72,
+      "unit": 5,
+      "sk": "5.3",
+      "sp": "5.3.1",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "நாளாந்த அட்டவணையில் நேர இடைவெளிகளைக் கண்டறிதல்",
+      "minit": 60,
+      "buku_teks": "J2 62-63",
+      "buku_aktiviti": "126-128",
+      "minggu": 30
+    },
+    {
+      "pdp": 73,
+      "unit": 6,
+      "sk": "6.1",
+      "sp": "6.1.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "நீளத்தின் அளவுக் குறிகளை அடையாளம் காணுதல்",
+      "minit": 60,
+      "buku_teks": "J2 67-69",
+      "buku_aktiviti": "129",
+      "minggu": 30
+    },
+    {
+      "pdp": 74,
+      "unit": 6,
+      "sk": "6.1",
+      "sp": "6.1.2",
+      "jenis": "Teras",
+      "tajuk_tamil": "நீளத்தை அளந்து பதிவு செய்தல்",
+      "minit": 60,
+      "buku_teks": "J2 70",
+      "buku_aktiviti": "129-130",
+      "minggu": 30
+    },
+    {
+      "pdp": 75,
+      "unit": 6,
+      "sk": "6.1",
+      "sp": "6.1.3",
+      "jenis": "Teras",
+      "tajuk_tamil": "நீளத்தை அனுமானித்துச் சரிபார்த்தல்",
+      "minit": 60,
+      "buku_teks": "J2 71",
+      "buku_aktiviti": "131-132",
+      "minggu": 31
+    },
+    {
+      "pdp": 76,
+      "unit": 6,
+      "sk": "6.2",
+      "sp": "6.2.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "நிறையின் அளவுக் குறிகளை அடையாளம் காணுதல்",
+      "minit": 60,
+      "buku_teks": "J2 72-73",
+      "buku_aktiviti": "133",
+      "minggu": 31
+    },
+    {
+      "pdp": 77,
+      "unit": 6,
+      "sk": "6.2",
+      "sp": "6.2.2",
+      "jenis": "Teras",
+      "tajuk_tamil": "நிறையை அளந்து பதிவு செய்தல்",
+      "minit": 60,
+      "buku_teks": "J2 74",
+      "buku_aktiviti": "134-135",
+      "minggu": 31
+    },
+    {
+      "pdp": 78,
+      "unit": 6,
+      "sk": "6.2",
+      "sp": "6.2.3",
+      "jenis": "Teras",
+      "tajuk_tamil": "நிறையை அனுமானித்துச் சரிபார்த்தல்",
+      "minit": 60,
+      "buku_teks": "J2 75-76",
+      "buku_aktiviti": "137",
+      "minggu": 32
+    },
+    {
+      "pdp": 79,
+      "unit": 6,
+      "sk": "6.3",
+      "sp": "6.3.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "கொள்ளளவின் அளவுக் குறிகளை அடையாளம் காணுதல்",
+      "minit": 60,
+      "buku_teks": "J2 77-78",
+      "buku_aktiviti": "138-139",
+      "minggu": 32
+    },
+    {
+      "pdp": 80,
+      "unit": 6,
+      "sk": "6.3",
+      "sp": "6.3.2",
+      "jenis": "Teras",
+      "tajuk_tamil": "கொள்ளளவை அளந்து பதிவு செய்தல்",
+      "minit": 60,
+      "buku_teks": "J2 79",
+      "buku_aktiviti": "140-141",
+      "minggu": 32
+    },
+    {
+      "pdp": 81,
+      "unit": 6,
+      "sk": "6.3",
+      "sp": "6.3.2",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "அளவுக் குடுவையில் நீரை அளந்து பதிவு செய்தல்",
+      "minit": 60,
+      "buku_teks": "J2 79",
+      "buku_aktiviti": "140-141",
+      "minggu": 33
+    },
+    {
+      "pdp": 82,
+      "unit": 6,
+      "sk": "6.3",
+      "sp": "6.3.3",
+      "jenis": "Teras",
+      "tajuk_tamil": "கொள்ளளவை அனுமானித்துச் சரிபார்த்தல்",
+      "minit": 60,
+      "buku_teks": "J2 80",
+      "buku_aktiviti": "142",
+      "minggu": 33
+    },
+    {
+      "pdp": 83,
+      "unit": 6,
+      "sk": "6.4",
+      "sp": "6.4.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "நீளம், நிறை, கொள்ளளவு சார்ந்த பிரச்சனைகள்",
+      "minit": 60,
+      "buku_teks": "J2 81-83",
+      "buku_aktiviti": "143",
+      "minggu": 34
+    },
+    {
+      "pdp": 84,
+      "unit": 6,
+      "sk": "6.4",
+      "sp": "6.4.1",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "பொருத்தமான அளவுக் கருவியைத் தேர்ந்தெடுத்து விளக்குதல்",
+      "minit": 60,
+      "buku_teks": "J2 81-83",
+      "buku_aktiviti": "143",
+      "minggu": 34
+    },
+    {
+      "pdp": 85,
+      "unit": 7,
+      "sk": "7.1",
+      "sp": "7.1.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "பண்புகளைக் கொண்டு முப்பரிமாண வடிவங்களை அடையாளம் காணுதல்",
+      "minit": 60,
+      "buku_teks": "J2 85-87",
+      "buku_aktiviti": "144-145",
+      "minggu": 34
+    },
+    {
+      "pdp": 86,
+      "unit": 7,
+      "sk": "7.1",
+      "sp": "7.1.2",
+      "jenis": "Teras",
+      "tajuk_tamil": "முப்பரிமாண வடிவங்களின் அடிப்படை உருவங்கள்",
+      "minit": 60,
+      "buku_teks": "J2 90",
+      "buku_aktiviti": "146",
+      "minggu": 35
+    },
+    {
+      "pdp": 87,
+      "unit": 7,
+      "sk": "7.1",
+      "sp": "7.1.3",
+      "jenis": "Teras",
+      "tajuk_tamil": "முப்பரிமாண வடிவங்களின் பல்வேறு விரிவலைகள்",
+      "minit": 60,
+      "buku_teks": "J2 89,91-92",
+      "buku_aktiviti": "146-147",
+      "minggu": 35
+    },
+    {
+      "pdp": 88,
+      "unit": 7,
+      "sk": "7.1",
+      "sp": "7.1.3",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "கனச்சதுர விரிவலைகளை மடித்துச் சரிபார்த்தல்",
+      "minit": 60,
+      "buku_teks": "J2 89,91-92",
+      "buku_aktiviti": "146-147",
+      "minggu": 36
+    },
+    {
+      "pdp": 89,
+      "unit": 7,
+      "sk": "7.2",
+      "sp": "7.2.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "பண்புகளைக் கொண்டு இருபரிமாண வடிவங்களை அடையாளம் காணுதல்",
+      "minit": 60,
+      "buku_teks": "J2 88,93",
+      "buku_aktiviti": "148-149",
+      "minggu": 36
+    },
+    {
+      "pdp": 90,
+      "unit": 7,
+      "sk": "7.2",
+      "sp": "7.2.2",
+      "jenis": "Teras",
+      "tajuk_tamil": "அடிப்படை இருபரிமாண வடிவங்களை வரைதல்",
+      "minit": 60,
+      "buku_teks": "J2 93",
+      "buku_aktiviti": "148",
+      "minggu": 36
+    },
+    {
+      "pdp": 91,
+      "unit": 7,
+      "sk": "7.2",
+      "sp": "7.2.2",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "பக்கங்களையும் முனைகளையும் சரிபார்த்தபடி வடிவங்களை வரைதல்",
+      "minit": 60,
+      "buku_teks": "J2 93",
+      "buku_aktiviti": "148",
+      "minggu": 37
+    },
+    {
+      "pdp": 92,
+      "unit": 7,
+      "sk": "7.3",
+      "sp": "7.3.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "வடிவங்களைப் பயன்படுத்திப் பிரச்சனைகளைத் தீர்த்தல்",
+      "minit": 60,
+      "buku_teks": "J2 94",
+      "buku_aktiviti": "150",
+      "minggu": 37
+    },
+    {
+      "pdp": 93,
+      "unit": 8,
+      "sk": "8.1",
+      "sp": "8.1.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "தரவுகளைத் திரட்டுதல், வகைப்படுத்துதல், பதிவு செய்தல்",
+      "minit": 60,
+      "buku_teks": "J2 96-98",
+      "buku_aktiviti": "151-153",
+      "minggu": 37
+    },
+    {
+      "pdp": 94,
+      "unit": 8,
+      "sk": "8.2",
+      "sp": "8.2.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "பட்டைக் குறிவரைவுகளைப் படித்து விளக்குதல்",
+      "minit": 60,
+      "buku_teks": "J2 99",
+      "buku_aktiviti": "154-155",
+      "minggu": 38
+    },
+    {
+      "pdp": 95,
+      "unit": 8,
+      "sk": "8.3",
+      "sp": "8.3.1",
+      "jenis": "Teras",
+      "tajuk_tamil": "தரவுகளைப் பயன்படுத்திப் பிரச்சனைகளைத் தீர்த்தல்",
+      "minit": 60,
+      "buku_teks": "J2 100",
+      "buku_aktiviti": "156",
+      "minggu": 38
+    },
+    {
+      "pdp": 96,
+      "unit": 8,
+      "sk": "8.3",
+      "sp": "8.3.1",
+      "jenis": "Pengukuhan",
+      "tajuk_tamil": "வரைபடத்திலிருந்து அதிகம், குறைவு, வேறுபாடு ஆகியவற்றைக் கண்டறிதல்",
+      "minit": 60,
+      "buku_teks": "J2 100",
+      "buku_aktiviti": "156",
+      "minggu": 38
+    }
+  ]
+}

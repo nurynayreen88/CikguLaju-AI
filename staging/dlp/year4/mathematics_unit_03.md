@@ -66,7 +66,7 @@ Unit 3 Money
 | --- | --- | --- |
 | Set induction · 10 min | Display one pack at RM7.85 and ask how to find the cost of four. | Explain multiplication or repeated addition. |
 | Main activity · 45 min | Show when to multiply the unit price and when equal sharing requires division. Model keeping two decimal places. | Calculate a group purchase and share a different bill equally. |
-| Practice and assessment · 25 min | Give four packs at RM7.85 and RM45.60 shared among three pupils. | Show RM31.40 and RM15.20 with working in RM and sen. |
+| Practice and assessment · 25 min | Give 12 packs at RM7.85 each and share RM45.60 equally among 12 pupils. Check the working in RM and sen. | Find RM94.20 and RM3.80 per pupil. Check one answer by the inverse operation. |
 | Closure · 10 min | Ask whether multiplying the share by three returns the total. | Show the inverse check. |
 
 **Reflection** · ___ / ___ pupils met the objective. Recheck the sen column before writing currency notation.
@@ -135,7 +135,7 @@ Unit 3 Money
 | --- | --- | --- |
 | Set induction · 5 min | Show an empty record and ask which columns make it useful. | Suggest date, amount in, amount out and balance. |
 | Main activity · 30 min | Model writing a starting balance, one deposit and one expense while updating the running total. | Enter sample transactions and compare the balance with the goal. |
-| Practice and assessment · 20 min | Give RM12 saved, RM5 deposited and RM3.75 spent, then ask what remains toward a RM20 goal. | Record RM13.25 balance and RM6.75 remaining to save. |
+| Practice and assessment · 20 min | Give RM12 saved, RM5 deposited and RM3.75 spent. Ask what remains to save for a RM20 target and why the record matters. | Record RM13.25 balance and RM6.75 still to save. Explain how the entries reveal what spending did to the target. |
 | Closure · 5 min | Ask how the ledger helps the pupil plan the next deposit. | Use the gap to estimate the needed deposit. |
 
 **Reflection** · ___ / ___ pupils met the objective. Revise one entry where the sign or balance is wrong.
@@ -158,7 +158,7 @@ Unit 3 Money
 | --- | --- | --- |
 | Set induction · 10 min | Show a school notebook and decorative stickers with only enough money for one. | Explain which is the immediate need and why. |
 | Main activity · 45 min | Compare a dated price list with an advertisement. Discuss availability and which source shows the exact price. | Use both cards to prioritise a purchase and explain an effect on the remaining budget. |
-| Practice and assessment · 25 min | Give a RM12 budget, notebook price RM8 and fictional sticker price RM5. Ask pupils to cite two pieces of information. | Choose the notebook, state RM4 remaining and explain why buying both exceeds the budget. |
+| Practice and assessment · 25 min | Give a RM12 budget, a needed notebook priced RM8 at one shop and RM7 at another, and optional RM5 stickers. Ask for both sources and the effect on savings. | Choose the RM7 notebook after comparing both price cards. Explain that skipping the stickers leaves RM5 to save. |
 | Closure · 10 min | Ask what would make a price claim easier to check. | Name a date, quantity or clearly stated total price. |
 
 **Reflection** · ___ / ___ pupils met the objective. Check whether a choice is supported by the actual budget and source details.
@@ -175,13 +175,13 @@ Unit 3 Money
 
 **Learning objective** · Match currency names to countries and read the equivalent of RM1 from a dated sample rate table.
 
-**Materials** · Currency and country cards, dated fictional classroom rate table
+**Materials** · World map, currency cards, dated Bank Negara Malaysia currency-converter table for RM1
 
 | Phase | Teacher | Pupils |
 | --- | --- | --- |
 | Set induction · 5 min | Show the RM mark and a foreign currency code. | Name one country connected to each currency shown. |
-| Main activity · 30 min | Match currencies to countries and model reading the row headed RM1 in an explicitly fictional classroom table dated 15 January 2027. | Read the table heading and report one equivalent amount in its proper unit. |
-| Practice and assessment · 20 min | Provide RM1 = SGD0.30 and THB7.50 as sample values and ask for both equivalents. | Match RM, SGD and THB to Malaysia, Singapore and Thailand and read the two sample values. |
+| Main activity · 30 min | Prepare the latest dated Bank Negara Malaysia converter readings for RM1 in SGD and THB. Model locating the date and reading the value beside each currency code. | Match ringgit, Singapore dollars and Thai baht to their countries. Identify the rate date and read the two equivalents for RM1. |
+| Practice and assessment · 20 min | Give each pupil a copy of the dated RM1 table. Ask for both currency names, both equivalent amounts and the date of the rates. | Write the two values directly from the table beside SGD and THB. Include the rate date and check both are for RM1. |
 | Closure · 5 min | Ask why the date and currency units matter in a table. | Explain that entries refer to a time and to specific currencies. |
 
 **Reflection** · ___ / ___ pupils met the objective. Revisit reading across the correct row and preserving the currency code.
@@ -250,7 +250,7 @@ Unit 3 Money
 | --- | --- | --- |
 | Set induction · 5 min | Show two purchase plans with a common RM30 budget. | Predict which plan leaves more money. |
 | Main activity · 30 min | Have pupils work out both totals and verify one remaining balance by addition. | Compare their totals and discuss if each plan stays within the budget. |
-| Practice and assessment · 20 min | Use plan A RM18.95 + RM6.40 and plan B RM14.80 + RM12.35. | Find RM25.35 and RM27.15 and check plan A using RM4.65 change. |
+| Practice and assessment · 20 min | Compare plan A: a required workbook at RM18.95 and pencils at RM6.40; plan B: a toy at RM14.80 and game at RM12.35. The budget is RM30. | Find RM25.35 and RM27.15. Choose plan A because it covers a need, then verify RM4.65 change. |
 | Closure · 5 min | Ask how to prove a plan fits the budget. | Compare its total numerically with RM30. |
 
 **Reflection** · ___ / ___ pupils met the objective. Correct a ledger entry for a pupil who confused cost and balance.
