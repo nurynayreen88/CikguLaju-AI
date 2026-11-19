@@ -578,7 +578,7 @@ class DailyTimetableRouteTests(TestCase):
             self.assertEqual(items["4 Amanah", "Mathematics (DLP)"]["completed"], 0)
             self.assertNotIn(("6 Bestari", "Mathematics (DLP)"), items)
 
-    def test_year5_dlp_day_and_week_prepare_both_subjects_and_aliases(self):
+    def test_year5_dlp_records_both_subjects_with_their_own_limits(self):
         target = date(2027, 1, 11)
         rows = [("5 Bestari", "Science (DLP)", "SCIENCE_DLP"),
                 ("5 Amanah", "Sains (DLP)", "SCIENCE_DLP"),
@@ -601,24 +601,46 @@ class DailyTimetableRouteTests(TestCase):
             slots = day.json["entries"]
             self.assertEqual(week.json["days"][0]["entries"], slots)
             self.assertEqual([slot["subject_code"] for slot in slots], [code for _, _, code in rows])
+            signer = lesson_signer(self.conf)
+            path = "/api/web/rph/hari-ini/completion"
+            headers = {"Origin": "https://localhost"}
             for slot in slots:
                 self.assertTrue(slot["can_prepare"])
                 self.assertEqual(slot["curriculum"], "dlp")
                 self.assertIsNone(slot["rpt_suggestion"])
-                self.assertNotIn("progress", slot)
+                self.assertEqual(slot["progress"], {"": {"completed": None, "previous": None}})
                 selection = {key: slot[key] for key in ("start", "class_name", "subject_code")}
-                token = lesson_signer(self.conf).dumps([123, 5, slot["subject_code"], "", 8])
-                for action in (token, None):
-                    reply = self.client.post("/api/web/rph/hari-ini/completion",
-                                             headers={"Origin": "https://localhost"}, json={
-                        **selection, "date": target.isoformat(), "component": "", "token": action,
-                    })
+                body = {**selection, "date": target.isoformat(), "component": ""}
+                subject = slot["subject_code"]
+                lesson, review, other_subject = ((60, 110, "MATH_DLP") if subject == "SCIENCE_DLP"
+                                                  else (61, 108, "SCIENCE_DLP"))
+                for number in (lesson, review, None):
+                    token = None if number is None else signer.dumps([123, 5, subject, "", number])
+                    reply = self.client.post(path, headers=headers, json={**body, "token": token})
+                    self.assertEqual(reply.status_code, 200, reply.json)
+                    self.assertEqual((save.call_args.args[3]["subject_code"], save.call_args.args[-1]),
+                                     (subject, number))
+                for claim in ([123, 5, subject, "", lesson + 1], [123, 5, subject, "", review + 1],
+                              [123, 4, subject, "", review], [123, 5, other_subject, "", 108],
+                              [456, 5, subject, "", review]):
+                    reply = self.client.post(path, headers=headers, json={**body, "token": signer.dumps(claim)})
                     self.assertEqual(reply.status_code, 400)
-                    self.assertIn("Rekod Selesai PdP belum tersedia", reply.json["error"])
-            save.assert_not_called()
-            overview = self.client.get("/api/web/rph/hari-ini/progress")
+            self.assertEqual(save.call_count, 12)
+            summary = {
+                ("5 bestari", "SCIENCE_DLP", ""): {
+                    "completed": 2, "last_number": 110, "last_date": target.isoformat(),
+                },
+                ("5 bestari", "MATH_DLP", ""): {
+                    "completed": 1, "last_number": 108, "last_date": target.isoformat(),
+                },
+            }
+            with patch("web.rph_hari_ini_web.read_progress_summary", return_value=summary):
+                overview = self.client.get("/api/web/rph/hari-ini/progress")
             self.assertEqual(overview.status_code, 200)
-            self.assertEqual(overview.json["entries"], [])
+            items = {(row["class_name"], row["subject"]): row for row in overview.json["entries"]}
+            self.assertEqual(items["5 Bestari", "Science (DLP)"]["last_label"], "Review 10")
+            self.assertEqual(items["5 Bestari", "Mathematics (DLP)"]["last_label"], "Review 08")
+            self.assertEqual(items["5 Amanah", "Science (DLP)"]["completed"], 0)
 
     def test_invalid_date_and_unknown_params_fail_closed(self):
         with patch("web.rph_hari_ini_web._auth",return_value=(self.conf,123,None)):
