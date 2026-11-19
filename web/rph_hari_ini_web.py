@@ -139,7 +139,7 @@ def weekly_rpt_suggestion(state, target, subject, year):
         if row[offset] <= selected <= row[offset + 1]:
             suggestion = {"week": int(week), "group": "A" if group_a else "B",
                           "lessons": row[4]}
-            if subject == "MATH" and year in (5, 6) and len(row) == 6:
+            if subject == "MATH" and year in (4, 5, 6) and len(row) == 6:
                 suggestion["slot_minutes"] = row[5]
             return suggestion
     return None
