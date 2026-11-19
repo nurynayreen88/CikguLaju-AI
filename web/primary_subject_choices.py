@@ -21,7 +21,6 @@ def subject_variants():
         rows.append({
             "code": code, "label": f"{label} (DLP)", "curriculum": "dlp",
             "rpt_years": [year for year in PUBLISHED_YEARS if document_path(code, year)],
-            "preview_years": [2],
             "rph_code": "SCIENCE_DLP" if code == "science_dlp" else "MATH_DLP",
         })
     return rows

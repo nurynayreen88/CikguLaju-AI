@@ -258,9 +258,6 @@ def day_payload(profile, schedule, target, *, today=None, sjkc_catalogue=None, s
             entry["reason"] = "RPH untuk subjek dan tahun ini dalam penyediaan."
             if variant["curriculum"] == "dlp" and year in variant.get("rpt_years", ()):
                 entry["rpt_subject"] = variant["code"]
-            if year in variant.get("preview_years", ()):
-                entry["reason"] = "Pratonton RPH tersedia untuk semakan guru."
-                entry["rph_preview"] = variant["rph_code"]
         elif subject_key in NON_TEACHING and not closure:
             entry["reason"] = "Waktu tanpa PdP."
         if code == "ENGLISH" and suggestion:
