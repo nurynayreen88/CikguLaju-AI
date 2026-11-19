@@ -1,6 +1,6 @@
 # Audit Matematik SK Tahun 2 dan 3 DPK Edisi 3 2027
 
-Set pilihan ini menggunakan Dokumen Penjajaran KSSR (Semakan 2017) Edisi 3 untuk Matematik Tahap I. Perenggan 4 Surat Siaran KPM Bil. 6 Tahun 2024 memberi guru pilihan menggunakan DPK Edisi 3 atau DSKP KSSR (Semakan 2017). Pilihan ini dilabel dalam RPT dan RPH. Pemetaan DSKP yang digunakan oleh Web dan Telegram dikekalkan. [Surat siaran KPM](https://www.moe.gov.my/surat-siaran-kpm-bil-6-tahun-2024) · [Halaman rasmi DPK Edisi 3](https://www.moe.gov.my/dokumen-penjajaran-kurikulum-standard-sekolah-rendah-kssr-semakan-2017-edisi-3-bm-bi-sains-matematik-tahap-i) · [Dokumen Matematik Tahap I](https://drive.google.com/file/d/1vjNjPj_rWoEHugtdtMu1c8pNj7MtLVxn/view).
+Set pilihan ini menggunakan Dokumen Penjajaran KSSR (Semakan 2017) Edisi 3 untuk Matematik Tahap I. Perenggan 4 Surat Siaran KPM Bil. 6 Tahun 2024 memberi guru pilihan menggunakan DPK Edisi 3 atau DSKP KSSR (Semakan 2017). Pilihan ini dilabel dalam RPT dan RPH. Pemetaan DSKP yang digunakan oleh Web dan Telegram dikekalkan. [Surat siaran KPM](https://www.moe.gov.my/index.php/surat-siaran-kpm-bil-6-tahun-2024) · [Halaman rasmi DPK Edisi 3](https://sites.google.com/moe-dl.edu.my/dokumenpenjajarankurikulum/home) · [Dokumen Matematik Tahap I](https://drive.google.com/file/d/1vjNjPj_rWoEHugtdtMu1c8pNj7MtLVxn/view).
 
 | Set | Kod asas SP disahkan | Rujukan DPK bercetak | Agihan |
 | --- | ---: | --- | --- |
@@ -18,6 +18,7 @@ Setiap tahun mempunyai 42 sesi 30 minit dan 75 sesi 60 minit. RPT menyenaraikan 
 | Tahun 2, 013 | Sediakan pilihan nombor bagi tempat kosong supaya setiap tugas susunan mempunyai satu jawapan tepat. Kekalkan kedua-dua SP 1.1.2 dan 1.1.3 pada hlm. 20. |
 | Tahun 2, 111 | Gunakan SP 7.1.2 bagi bentuk asas pada permukaan pepejal. Nilai juga satu ciri bentuk rata di bawah SP 7.2.1. DPK hlm. 34. |
 | Tahun 3, 052 | Kedua-dua item menilai penambahan tiga nilai wang dan menggunakan jumlah RM971 serta RM1 575. DPK hlm. 49. |
+| Tahun 3, 068 | Tambah tugasan kalendar yang menyepadukan tarikh, waktu dan perkaitan minggu dengan hari serta tahun dengan bulan. DPK hlm. 51 dan Buku Teks Jilid 2 hlm. 26–29. |
 | Tahun 3, 069–071 | Nyatakan penanda pagi atau petang pada Lesson 069. Lesson 070–071 menggunakan 1 minit bersamaan 60 saat. Kekalkan nilai ini kerana contoh ketiga bercetak pada DPK hlm. 52 tersilap menyamakan 60 minit dengan 60 saat. |
 | Tahun 3, 117 | Minta murid memadankan set data yang sama pada piktograf, carta palang dan carta pai. Ketiga-tiganya tertera dalam SP 9.2.2 pada DPK hlm. 61. |
 

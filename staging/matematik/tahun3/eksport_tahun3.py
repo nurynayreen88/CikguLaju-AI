@@ -14,7 +14,7 @@ UNITS = (
     (27, 'Operasi asas', 'Kad cerita, pembilang dan jadual nilai tempat'),
     (50, 'Pecahan, perpuluhan dan peratus', 'Jalur pecahan, petak seratus dan kad nombor'),
     (67, 'Wang', 'Kad harga, label wang dan jadual transaksi'),
-    (80, 'Masa dan waktu', 'Jam model, garis masa dan kad situasi'),
+    (80, 'Masa dan waktu', 'Jam model, kalendar, jadual waktu dan kad situasi'),
     (99, 'Ukuran dan sukatan', 'Alat ukur, bekas penyukat dan model bergambar'),
     (107, 'Bentuk', 'Kad bentuk, model kertas dan pembaris'),
     (112, 'Kedudukan', 'Grid paksi, kad objek dan penanda'),
