@@ -14,6 +14,7 @@ from rpt_2027.sjkc.bahasa_cina import documents as bahasa_cina_sjkc
 from rpt_2027.sjkc.bahasa_melayu import documents as bahasa_melayu_sjk
 from rpt_2027.sjkc.sains import documents as sains_sjkc
 from rpt_2027.sjkc.matematik import documents as matematik_sjkc
+from rpt_2027.sjkt.matematik import documents as matematik_sjkt
 from rpt_2027.psv.telegram_downloads import pdf_ready as psv_pdf_ready, build_pdf as build_psv_pdf
 from rpt_2027.matematik.telegram_downloads import pdf_ready as math_pdf_ready
 from rpt_2027.matematik.sk_documents import DIGESTS as math_sk_editions
@@ -33,6 +34,7 @@ SCHOOL_RPT_CALLBACKS = {
     "rpt2027_sains_sk5": sains_sk_tahun5,
     "rpt2027_sains_sk6": sains_sk_tahun6,
     "rpt2027_matematik_sjkc": matematik_sjkc,
+    "rpt2027_matematik_sjkt": matematik_sjkt,
 }
 
 

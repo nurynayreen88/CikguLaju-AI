@@ -204,6 +204,26 @@ class TelegramRPTTests(unittest.TestCase):
         self.assertIn("tidak sah", self.messages[-1][1])
         self.assertEqual(len(self.documents), 10)
 
+    def test_matematik_sjkt_year_two_word_and_pdf_use_paid_rpt_menu(self):
+        from rpt_2027.sjkt.matematik.documents import document_path
+
+        callback = self.namespace["callback"]
+        callback(123, "rpt2027_matematik_sjkt:2:pdf")
+        self.assertIn("Akses Terhad", self.messages[-1][1])
+        self.assertEqual(self.documents, [])
+        self.active = True
+        callback(123, "rpt2027_year_2")
+        buttons = {button["callback_data"]: button["text"]
+                   for row in self.messages[-1][2] for button in row}
+        for fmt in ("pdf", "docx"):
+            key = f"rpt2027_matematik_sjkt:2:{fmt}"
+            self.assertIn("Matematik (SJKT)", buttons[key])
+            callback(123, key)
+            self.assertEqual(Path(self.documents[-1][1]), document_path(2, fmt))
+        callback(123, "rpt2027_matematik_sjkt:3:pdf")
+        self.assertIn("tidak sah", self.messages[-1][1])
+        self.assertEqual(len(self.documents), 2)
+
     def test_matematik_sjkc_year_two_and_three_have_word_and_pdf(self):
         from rpt_2027.sjkc.matematik.documents import document_path
 
