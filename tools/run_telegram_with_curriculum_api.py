@@ -843,3 +843,11 @@ install_matematik_sjkt_t2_review(telegram_runtime)
 from web.matematik_sjkt_t2_telegram import install as install_matematik_sjkt_t2
 MATEMATIK_SJKT_T2_RPH_ACTIVE = install_matematik_sjkt_t2(telegram_runtime)
 print("Matematik SJKT Tahun 2 RPH active:", MATEMATIK_SJKT_T2_RPH_ACTIVE, flush=True)
+
+from staging.matematik_sjkc.tahun_2 import rph as matematik_sjkc_t2
+from web.matematik_sjkt_t2_telegram import install_year_two
+
+MATEMATIK_SJKC_T2_RPH_ACTIVE = install_year_two(
+    telegram_runtime, matematik_sjkc_t2, "sjkc2", "MATEMATIK_SJKC_T2_RPH_ACTIVE",
+)
+print("Matematik SJKC Tahun 2 RPH active:", MATEMATIK_SJKC_T2_RPH_ACTIVE, flush=True)

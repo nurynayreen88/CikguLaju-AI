@@ -74,6 +74,8 @@ def install_school_math(runtime, source, key, active_attr, *, slot_picker=None, 
         if not isinstance(data, str) or (data != pick_subject and not data.startswith((unit_prefix, pdp_prefix))):
             return previous_callback(cid, data)
         state = runtime.state.setdefault(cid, {})
+        if data == pick_subject and state.get("year") != year_label:
+            return previous_callback(cid, data)
         if not in_flow(state):
             return runtime.send(cid, f"Sila pilih KSSR → {year_label} → {subject} semula.")
         if data == pick_subject:
@@ -111,13 +113,13 @@ def install_school_math(runtime, source, key, active_attr, *, slot_picker=None, 
         return runtime._lesson_to_class_v2439(cid)
 
     def available(state):
-        if state.get("subject") != subject:
+        if state.get("subject") != subject or state.get("year") != year_label:
             return previous_available(state)
         return list(MATERIAL_FORMATS) if selected(state) else []
 
     def submit(cid):
         state = runtime.state.setdefault(cid, {})
-        if state.get("subject") != subject:
+        if state.get("subject") != subject or state.get("year") != year_label:
             return previous_submit(cid)
         row = selected(state)
         if row is None:

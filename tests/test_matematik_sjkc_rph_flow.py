@@ -121,6 +121,38 @@ class MatematikSjkcRphFlow(unittest.TestCase):
         self.runtime._credit_gate.assert_called_once()
         self.runtime._consume_free_after_success_v25282.assert_called_once()
 
+    def test_year_two_uses_its_own_units_and_keeps_year_three_available(self):
+        from staging.matematik_sjkc.tahun_2 import rph as year_two
+        from web.matematik_sjkt_t2_telegram import install_year_two
+
+        self.runtime.SUBJECTS_BY_GRADE["Tahun 2"] = ["Matematik"]
+        self.runtime._daily_candidate_v25292 = Mock()
+        self.assertTrue(install(self.runtime))
+        params = {"year": 2}
+        url = self.base + "options"
+        self.assertEqual(self.client.get(url, headers=self.auth, query_string=params).status_code, 404)
+        with patch.dict(os.environ, {year_two.RELEASE_FLAG: "1"}):
+            self.assertTrue(install_year_two(self.runtime, year_two, "sjkc2", "TEST_SJKC_T2_ACTIVE"))
+            for year, unit_count in ((2, 8), (3, 9)):
+                self.state.update(year=f"Tahun {year}")
+                self.runtime.callback(5, "sub_Matematik SJKC")
+                unit_buttons = self.runtime.send.call_args.args[2]
+                self.assertEqual(len(unit_buttons) - 1, unit_count)
+                self.assertTrue(unit_buttons[0][0]["callback_data"].startswith(f"msjkc{year}u:"))
+                self.runtime.callback(5, f"msjkc{year}u:1")
+                self.runtime.callback(5, f"msjkc{year}p:1")
+                self.assertEqual(self.runtime._available_materials_v2528(self.state), ["rph", "rph_word"])
+                units = self.client.get(url, headers=self.auth, query_string={"year": year}).get_json()
+                self.assertEqual(len(units), unit_count)
+                for fmt in ("word", "pdf"):
+                    reply = self.client.post(self.base + "render", headers=self.auth, json={
+                        "year": year, "unit": 1, "pdp": 1, "format": fmt, "teacher": self.metadata,
+                    })
+                    self.assertEqual(reply.status_code, 200)
+                    self.assertIn(f"_Tahun_{year}_PdP_001.", reply.headers["Content-Disposition"])
+            self.assertEqual(self.client.get(url, headers=self.auth,
+                                            query_string={"year": 2, "unit": 8, "pdp": 1}).status_code, 404)
+
     def test_existing_subject_delegates(self):
         self.assertTrue(install(self.runtime))
         self.state.update(subject="Matematik")

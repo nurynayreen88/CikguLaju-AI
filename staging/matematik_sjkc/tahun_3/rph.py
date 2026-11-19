@@ -69,13 +69,13 @@ def render(lesson, fmt, teacher=None):
     return f"{STEM}_PdP_{pdp:03}.{ext}", output.getvalue()
 
 
-def _word(lesson, output, lines, reflection):
+def _word(lesson, output, lines, reflection, *, path=None):
     from docx import Document
     from docx.oxml import OxmlElement
     from docx.oxml.ns import qn
     from docx.shared import Pt
 
-    doc = Document(ROOT / f"{STEM}.docx")
+    doc = Document(path if path is not None else ROOT / f"{STEM}.docx")
     body = doc.element.body
     groups = [[]]
     section = body.sectPr
@@ -121,10 +121,10 @@ def _word(lesson, output, lines, reflection):
     doc.save(output)
 
 
-def _pdf(lesson, output, lines, reflection):
+def _pdf(lesson, output, lines, reflection, *, path=None):
     from pypdf import PdfReader, PdfWriter
 
-    reader = PdfReader(ROOT / f"{STEM}.pdf")
+    reader = PdfReader(path if path is not None else ROOT / f"{STEM}.pdf")
     if len(reader.pages) != PDP_COUNT:
         raise ValueError("PDF sequence count does not match the data")
     page = reader.pages[lesson["pdp"] - 1]
