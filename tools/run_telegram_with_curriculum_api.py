@@ -711,8 +711,10 @@ except Exception as _web_broadcast_exc:
 # All 342 newly authored Science RPH remain DRAF/HOLD until per-PdP signoff.
 from web.sains_y3_unit_awal import install as install_sains_y3_opening_units
 from web.sains_unit_awal import install as install_sains_opening_units
+from web.math_sk_year1_kssr_references import install as install_math_sk_year1_kssr_references
 install_sains_y3_opening_units(telegram_runtime)
 install_sains_opening_units(telegram_runtime)
+install_math_sk_year1_kssr_references(telegram_runtime)
 
 try:
     from tools.sains_native_runtime_readiness_probe_20261108 import (
