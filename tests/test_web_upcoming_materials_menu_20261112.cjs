@@ -155,7 +155,7 @@ const ctx={
    return;
   }
   const science=extra.subject==="SCIENCE_DLP";
-  ctx.fillSelect(lesson,[{value:`DLP-${science?"SCI":"MATH"}-Y${year.value}-L01`,
+  ctx.fillSelect(lesson,[{value:`DLP-${science?"SCI":(year.value==="4"?"MAT":"MATH")}-Y${year.value}-L01`,
     label:science?"Lesson 01 • Observe":"Lesson 01 • Whole Numbers"}],"Pilih Lesson");
  },
  async checkRphAvailability(){checkedRph++;},
@@ -290,16 +290,9 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
   await listeners["year.change"]();
   assert.deepEqual(subject.options.map(x=>x.label),[
    "Pilih Subjek","Science (DLP) — RPH 2027",
-   "Mathematics (DLP) — "+(n==="4"?"Dalam Penyediaan":"RPH 2027")
+   "Mathematics (DLP) — RPH 2027"
   ]);
-  if(n==="4"){
-   subject.value="MATH_DLP";
-   await listeners["subject.change"]();
-   assert.equal(unit.hidden,true);
-   assert.match(ctx.help,/Dalam Penyediaan/);
-   assert.deepEqual(catalogueCalls,[]);
-  }
-  const subjects=n==="4"?[["SCIENCE_DLP","SCI"]]:[["SCIENCE_DLP","SCI"],["MATH_DLP","MATH"]];
+  const subjects=[["SCIENCE_DLP","SCI"],["MATH_DLP",n==="4"?"MAT":"MATH"]];
   for(const [code,prefix] of subjects){
    const id=`DLP-${prefix}-Y${n}-L01`;
    subject.value=code;
@@ -316,7 +309,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
    assert.deepEqual(catalogueCalls.splice(0),["units",code,"pdp",code,"01"]);
   }
  }
- assert.equal(checkedRph,5);
+ assert.equal(checkedRph,6);
  curriculum.value="kssr";
  listeners["curriculum.change"]();
  assert.equal(panel.hidden,true);

@@ -94,7 +94,11 @@ class WebNativePdPBridgeTests(unittest.TestCase):
     def test_dlp_exact_ids_keep_year_and_subject(self):
         self.assertEqual(_selection(4, "SCIENCE_DLP", "10", "DLP-SCI-Y4-L59")[0], DLP_ROUTE)
         self.assertEqual(_selection(4, "SCIENCE_DLP", "10", "DLP-SCI-Y4-R10")[0], DLP_ROUTE)
+        self.assertEqual(_selection(4, "MATH_DLP", "08", "DLP-MAT-Y4-L69")[0], DLP_ROUTE)
+        self.assertEqual(_selection(4, "MATH_DLP", "08", "DLP-MAT-Y4-R08")[0], DLP_ROUTE)
         for subject, unit, lesson in (("MATH_DLP", "01", "DLP-SCI-Y4-L01"),
+                                      ("MATH_DLP", "08", "DLP-MAT-Y4-L70"),
+                                      ("MATH_DLP", "08", "DLP-MAT-Y4-R09"),
                                       ("SCIENCE_DLP", "11", "DLP-SCI-Y4-L59"),
                                       ("SCIENCE_DLP", "10", "DLP-SCI-Y4-L60"),
                                       ("SCIENCE_DLP", "10", "DLP-SCI-Y4-R11"),
@@ -134,7 +138,7 @@ class WebNativePdPBridgeTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 _selection(6, "MATH_DLP", new["value"])
 
-    def test_web_options_expose_science_only_in_dlp_year4(self):
+    def test_web_options_preserve_science_completion_and_enable_mathematics_in_dlp_year4(self):
         from tools.run_web_v1_preview import app
 
         from web.rph_today_progress import lesson_signer
@@ -167,8 +171,10 @@ class WebNativePdPBridgeTests(unittest.TestCase):
             self.assertEqual(signer.loads(second["completion_token"]), [123, 4, "SCIENCE_DLP", "", 108])
             self.assertNotIn("completion_token", bad)
             response = client.get("/api/options", query_string={**selection, "kind": "units", "subject": "MATH_DLP"})
-            self.assertEqual(response.status_code, 400)
-            units.assert_called_once_with(4, "SCIENCE_DLP")
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.json, [unit])
+            self.assertEqual([args.args for args in units.call_args_list],
+                             [(4, "SCIENCE_DLP"), (4, "MATH_DLP")])
             lessons.assert_called_once_with(4, "SCIENCE_DLP", "08")
 
     @patch("web.unified_rph_web._has_paid_access", return_value=True)
@@ -176,7 +182,7 @@ class WebNativePdPBridgeTests(unittest.TestCase):
     def test_web_availability_uses_verified_dlp_service(self, *_):
         app = Flask(__name__)
         app.register_blueprint(create_blueprint())
-        for year, subject, prefix in ((4, "SCIENCE_DLP", "SCI"),
+        for year, subject, prefix in ((4, "SCIENCE_DLP", "SCI"), (4, "MATH_DLP", "MAT"),
                                       (5, "MATH_DLP", "MATH"), (5, "SCIENCE_DLP", "SCI"),
                                       (6, "MATH_DLP", "MATH"), (6, "SCIENCE_DLP", "SCI")):
             selection = {"year": year, "subject": subject, "unit": "01",
