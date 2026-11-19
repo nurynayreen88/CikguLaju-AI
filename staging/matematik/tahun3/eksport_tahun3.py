@@ -108,7 +108,7 @@ def export(plans, schedule, output):
         parts = document(plan, schedule[number])
         for extension, renderer in (('docx', _word), ('pdf', _pdf)):
             with (output / f'CikguLaju_Matematik_T3_Lesson_{number:03d}.{extension}').open('wb') as stream:
-                renderer(stream, *parts)
+                renderer(stream, *parts, formal=True)
 
 
 def main():
