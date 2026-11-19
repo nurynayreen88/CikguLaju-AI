@@ -35,3 +35,13 @@ Rujukan sebelum kemas kini ialah [set audit draf Tahun 4](https://github.com/nur
 Perbandingan indeks RPH Pantas dan agihan Sains SK yang sudah diterbitkan menemukan 12 cadangan PdP selepas minggu 39 untuk Tahun 5 (PdP 105–116) dan 11 untuk Tahun 6 (PdP 074–084). Agihan sebenar kedua-dua RPT berakhir pada minggu 38. Tahun 6 turut memulakan agihan baharu dengan PdP 085 dan 086, jadi pembetulan perlu menyelaraskan urutan sepanjang tahun selain tarikh akhir. [Sumber Tahun 5](../staging/sains/tahun5/agihan_2027.json) · [Sumber Tahun 6](../staging/sains/tahun6/agihan_2027.json)
 
 Kiraan awal indeks yang sama menunjukkan 40 cadangan lewat Bahasa Melayu, 77 Pendidikan Islam dan 25 PSV bagi Tahun 2–6. Angka ini menunjukkan skop semakan lanjut. Setiap subjek perlu dibandingkan dengan RPT aktif dan kandungannya sebelum pindaan.
+
+## Penyelarasan RPH Pantas Sains SK
+
+[Web #958](https://github.com/nurynayreen88/CikguLaju-AI/pull/958) aktif pada 19 November 2026, 09:51 MYT. Indeks Web dibina daripada dua PDF RPT Sains SK yang telah diterbitkan. Semua 205 padanan nombor, tarikh Kumpulan A/B dan tempoh disahkan terhadap kedua-dua PDF dan sumber agihan penjana. Setiap tahun berjumlah 64 jam.
+
+- Tahun 5 mempunyai 116 PdP. Minggu terakhir mencadangkan PdP 113–116, masing-masing 30 minit.
+- Tahun 6 mempunyai 89 PdP. Unit awal kekal PdP 085–089, diikuti PdP 001–084. Minggu terakhir mencadangkan PdP 082–084, mengikut urutan tempoh 30, 60 dan 30 minit.
+- Kedua-dua tahun tamat pada minggu 38, 17–21 Oktober bagi Kumpulan A dan 18–22 Oktober bagi Kumpulan B. Minggu 18 kekal untuk pentaksiran.
+
+Ujian meliputi kedua-dua laluan RPH Pantas, kelas dengan rekod PdP 088 yang akan mengikuti slot 089, 001 dan 002, serta penolakan cadangan automatik apabila tempoh atau kemajuan kelas tidak sepadan. Binaan produksi aktif dan laluan jadual memerlukan log masuk. Ujian pada jadual akaun guru sebenar belum dilakukan.
