@@ -10190,8 +10190,12 @@ def _rph_display_value(s,key,value):
 
 def _rph_title(s): return 'DAILY LESSON PLAN' if _is_english_subject(s) else 'RANCANGAN PENGAJARAN HARIAN'
 def _create_rph_word(doc, section, s, ai_text, path):
+    from docx.oxml import OxmlElement
+    from docx.oxml.ns import qn
+
     rph = _rph_rows(s, ai_text)
     body_size = 9.25 if rph.get('CATATAN AKTIVITI UTAMA') else 8.5
+    pi_primary = _pi_primary_v25210(s)
     p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     rr = p.add_run(_rph_title(s)); rr.bold=True; rr.font.size=Pt(15)
     p.paragraph_format.space_after = Pt(6)
@@ -10221,7 +10225,20 @@ def _create_rph_word(doc, section, s, ai_text, path):
         cells[0].text = phase
         activity = _rph_format_activity_lines(rph.get(key, '')) or '—'
         note = rph.get(f'CATATAN {key}', '')
-        if note:
+        if key == 'AKTIVITI UTAMA' and pi_primary:
+            paragraph = cells[1].paragraphs[0]
+            props = paragraph._p.get_or_add_pPr()
+            props.insert_element_before(OxmlElement('w:bidi'), 'w:jc')
+            props.get_or_add_jc().set(qn('w:val'), 'start')
+            for index, (line, heading) in enumerate(_pi_rph_activity_lines(activity)):
+                if index:
+                    paragraph.add_run().add_break()
+                run = paragraph.add_run(line)
+                run.font.rtl = True
+                if heading:
+                    run.bold = True
+                    run.font.cs_bold = True
+        elif note:
             paragraph = cells[1].paragraphs[0]
             for index, line in enumerate(activity.splitlines()):
                 if index:
@@ -10238,8 +10255,6 @@ def _create_rph_word(doc, section, s, ai_text, path):
     add_row(t3,('Reflection' if _is_english_subject(s) else 'Refleksi'),rph.get('REFLEKSI','') or ('____ / ____ pupils achieved the lesson objectives.\n____ / ____ pupils require further support.\nFollow-up action: ______________________________' if _is_english_subject(s) else '____ / ____ murid mencapai objektif.\n____ / ____ murid belum mencapai objektif.\nTindakan susulan: ______________________________'))
     footer=section.footer; fp=footer.paragraphs[0]; fp.alignment=WD_ALIGN_PARAGRAPH.CENTER; fr=fp.add_run('CikguLaju AI  •  '); fr.font.size=Pt(7.5); _word_page_number(fp)
     # Compact the active (second) Word RPH renderer, preserving all content.
-    from docx.oxml import OxmlElement
-    from docx.oxml.ns import qn
     section.page_width = Cm(21)
     section.page_height = Cm(29.7)
     section.top_margin = Cm(0.75)
@@ -10248,6 +10263,13 @@ def _create_rph_word(doc, section, s, ai_text, path):
     section.right_margin = Cm(1.1)
     section.footer_distance = Cm(0.3)
     doc.styles['Normal'].font.size = Pt(body_size)
+    if pi_primary:
+        rpr = doc.styles['Normal'].element.get_or_add_rPr()
+        size_cs = rpr.find(qn('w:szCs'))
+        if size_cs is None:
+            size_cs = OxmlElement('w:szCs')
+            rpr.append(size_cs)
+        size_cs.set(qn('w:val'), '20')
     doc.styles['Normal'].paragraph_format.space_after = Pt(0)
     doc.styles['Normal'].paragraph_format.space_before = Pt(0)
     doc.styles['Normal'].paragraph_format.line_spacing = 1.0
@@ -10274,7 +10296,7 @@ def _create_rph_word(doc, section, s, ai_text, path):
                     for run in para.runs:
                         run.font.size = Pt(body_size)
     # Keep the same Word grid and cell widths for RPH with populated Notes.
-    if rph.get('CATATAN AKTIVITI UTAMA'):
+    if pi_primary or rph.get('CATATAN AKTIVITI UTAMA'):
         for tbl, widths in ((t2, (2.65, 12.65, 3.45)), (table, (5.3, 13.45)), (t3, (5.3, 13.45))):
             for column, width in zip(tbl.columns, widths):
                 column.width = Cm(width)
@@ -10787,9 +10809,18 @@ def create_pdf_file(s, ai_text, cid):
         phase_rows=[[Paragraph('<b>'+('Phase / Time' if _is_english_subject(s) else ('فاسا / ماس' if _pi_primary_v25210(s) else 'Fasa / Masa'))+'</b>',body_style),Paragraph('<b>'+('Teaching and Learning Activities' if _is_english_subject(s) else ('اکتيۏيتي ڤڠاجرن دان ڤمبلاجرن' if _pi_primary_v25210(s) else 'Aktiviti Pengajaran & Pembelajaran'))+'</b>',body_style),Paragraph('<b>'+('Notes' if _is_english_subject(s) else ('چاتتن' if _pi_primary_v25210(s) else 'Catatan'))+'</b>',body_style)]]
         for phase,key in ([('Set Induction','SET INDUKSI'),('Main Activities','AKTIVITI UTAMA'),('Closure','PENUTUP')] if _is_english_subject(s) else ([('ست ايندوکسي','SET INDUKSI'),('اکتيۏيتي اوتام','AKTIVITI UTAMA'),('ڤنوتوڤ','PENUTUP')] if _pi_primary_v25210(s) else [('Set Induksi','SET INDUKSI'),('Aktiviti Utama','AKTIVITI UTAMA'),('Penutup','PENUTUP')])):
             phase_label, phase_text = _rph_phase_time_v25179(phase, rph.get(key) or '—')
-            val=_rph_activity_heading_markup_v25184(phase_text or '—')
+            if key == 'AKTIVITI UTAMA' and _pi_primary_v25210(s):
+                lines = _pi_rph_activity_lines(phase_text or '—')
+                # The generic numbered-list formatter flattens Jawi headings into
+                # the preceding step. Pass the activity cell directly to the RTL raster.
+                cell = _JawiRasterParagraph_v25213(
+                    '<br/>'.join(escape(line) for line, _ in lines), body_style)
+                cell.bold_lines = {i for i, (_, heading) in enumerate(lines) if heading}
+            else:
+                val = _rph_activity_heading_markup_v25184(phase_text or '—')
+                cell = Paragraph(val, body_style)
             note = escape(rph.get(f'CATATAN {key}', '')).replace('\n', '<br/>')
-            phase_rows.append([Paragraph('<b>'+phase_label+'</b>',body_style),Paragraph(val,body_style),Paragraph(note,body_style)])
+            phase_rows.append([Paragraph('<b>'+phase_label+'</b>',body_style),cell,Paragraph(note,body_style)])
         pt=Table(phase_rows,colWidths=[32*mm,112*mm,28*mm],repeatRows=1)
         pt.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.black),('BACKGROUND',(0,0),(-1,0),colors.white),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),3),('BOTTOMPADDING',(0,0),(-1,-1),3)]))
         story.extend([pt,Spacer(1,3*mm)])
@@ -33791,6 +33822,8 @@ def _has_jawi_v25213(text):
     return bool(re.search(r'[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]',plain))
 
 class _JawiRasterParagraph_v25213(Flowable):
+    bold_lines = frozenset()
+
     def __init__(self,text,style):
         Flowable.__init__(self)
         import html as _html, re
@@ -33830,18 +33863,27 @@ class _JawiRasterParagraph_v25213(Flowable):
         scale=3.0
         fs=max(7.0,float(getattr(self.style,'fontSize',9.5)))
         leading=max(fs*1.25,float(getattr(self.style,'leading',fs*1.3)))
-        font=self._font(max(18,int(fs*scale)))
+        font_size = max(18, int(fs * scale))
+        regular_font = self._font(font_size)
+        logical_lines = self.text.split('\n')
+        bold_font = regular_font
+        if self.bold_lines:
+            from PIL import ImageFont
+            headings = '\n'.join(logical_lines[i] for i in sorted(self.bold_lines))
+            bold_path = _pi_exact_jawi_font_v2604(headings, bold=True)
+            bold_font = ImageFont.truetype(
+                bold_path, font_size, layout_engine=ImageFont.Layout.RAQM)
         dummy=Image.new('RGBA',(16,16),(255,255,255,0)); d=ImageDraw.Draw(dummy)
         maxpx=max(10,int(availWidth*scale)-8)
         lines=[]
-        for logical in self.text.split('\n'):
-            lines.extend(self._wrap_line(d,logical,font,maxpx))
-        if not lines: lines=['']
+        for i, logical in enumerate(logical_lines):
+            font = bold_font if i in self.bold_lines else regular_font
+            lines.extend((line, font) for line in self._wrap_line(d, logical, font, maxpx))
         hpx=max(1,int(len(lines)*leading*scale+8))
         wpx=max(1,int(availWidth*scale))
         im=Image.new('RGBA',(wpx,hpx),(255,255,255,0)); dr=ImageDraw.Draw(im)
         y=0
-        for line in lines:
+        for line, font in lines:
             try:
                 dr.text((wpx-4,y),line,font=font,fill=(0,0,0,255),anchor='ra',
                         direction='rtl',language='ms')
@@ -44312,6 +44354,28 @@ _pi2639_prev_activity_markup=_rph_activity_heading_markup_v25184
 def _rph_activity_heading_markup_v25184(text):
     raw=_pi2639_split_existing_activity_labels(text)
     return _pi2639_prev_activity_markup(raw)
+
+_PI_ACTIVITY_NUMBER = r'[1-9١-٩][0-9٠-٩]*'
+_PI_ACTIVITY_LABEL = rf'(?:Aktiviti|اکتيۏيتي)[ \t]+{_PI_ACTIVITY_NUMBER}'
+_PI_ACTIVITY_INLINE = re.compile(rf'[ \t]+(?={_PI_ACTIVITY_LABEL}[ \t]*[-–—:])', re.I)
+_PI_ACTIVITY_HEADING = re.compile(rf'^{_PI_ACTIVITY_LABEL}(?:[ \t]*[-–—:].*)?$', re.I)
+_PI_ACTIVITY_FIRST_STEP = re.compile(r'[ \t]+(?=[1١][.)][ \t]+)')
+
+def _pi_rph_activity_lines(text):
+    # Keep PI headings and numbered steps in the same cell on separate lines.
+    lines = []
+    for raw_line in str(text).splitlines():
+        for part in _PI_ACTIVITY_INLINE.split(raw_line.strip()):
+            if not part:
+                continue
+            heading, *body = _PI_ACTIVITY_FIRST_STEP.split(part, maxsplit=1)
+            if _PI_ACTIVITY_HEADING.fullmatch(heading):
+                lines.append((heading, True))
+                lines.extend((step, False) for step in body)
+            else:
+                lines.append((part, False))
+    return lines
+
 
 CIKGULAJU_PATCH_V2639='PI_EXACT_JAWI_FONT_AND_EXISTING_ACTIVITY_LABEL_DELIMITERS'
 # ===== END v26.39 =====
