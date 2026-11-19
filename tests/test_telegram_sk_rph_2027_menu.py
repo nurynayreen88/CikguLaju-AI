@@ -302,7 +302,9 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                                  json={"selection": maths_selection, "teacher": teacher, "format": "word"})
             self.assertEqual(result.status_code, 200)
             self.assertIn("DLP-MAT-Y4-R08.docx", result.headers["Content-Disposition"])
-            self.assertEqual(Document(BytesIO(result.data)).tables[-1].cell(0, 1).text, teacher["reflection"])
+            reflection = Document(BytesIO(result.data)).tables[-1].cell(0, 0)
+            self.assertEqual(reflection.text.splitlines(), ["Reflection", teacher["reflection"]])
+            self.assertEqual(reflection._tc.grid_span, 2)
             for bad in ({**maths_selection, "unit": "01"},
                         {**maths_selection, "lesson": "DLP-SCI-Y4-R08"}):
                 self.assertEqual(client.get(path + "/availability", query_string=bad, headers=headers).status_code, 404)
