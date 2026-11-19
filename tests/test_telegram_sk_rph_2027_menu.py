@@ -125,6 +125,31 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
             self.assertEqual(self.runtime.state[123]["curriculum_version"], "existing")
             self.assertTrue(self.runtime.state[123]["lesson_no"].startswith(f"SK27-DPK3-MATH-Y{year}-"))
 
+    def test_math_render_embeds_monochrome_type_and_keeps_reflection_full_width(self):
+        from zipfile import ZipFile
+
+        lesson = "SK27-DPK3-MATH-Y2-L015"
+        word, pdf = self._select("dp2", "02", lesson)
+        self.click(word)
+        self.click(pdf)
+        with ZipFile(BytesIO(self.documents[0][1])) as package:
+            fonts = {name.rsplit("/", 1)[-1] for name in package.namelist() if name.startswith("word/fonts/")}
+            self.assertEqual(fonts, {"SourceSans3-Regular.odttf", "SourceSans3-Bold.odttf", "SourceSerif4-Semibold.odttf"})
+        document = Document(BytesIO(self.documents[0][1]))
+        self.assertEqual(document.styles["Title"].font.name, "Source Serif 4 Semibold")
+        self.assertEqual(document.styles["Normal"].font.name, "Source Sans 3")
+        self.assertEqual(document.paragraphs[2].style.name, "Title")
+        reflection = next(row for row in document.tables[-1].rows if row.cells[0].text.startswith("Refleksi"))
+        self.assertIn("murid mencapai objektif", reflection.cells[0].text)
+        self.assertEqual(reflection.cells[0]._tc.grid_span, 2)
+        page = PdfReader(BytesIO(self.documents[1][1])).pages[0]
+        font_names = [str(font.get_object()["/BaseFont"]) for font in page["/Resources"]["/Font"].values()]
+        self.assertTrue(any("SourceSerif4-Semibold" in font for font in font_names))
+        self.assertTrue(any("SourceSans3-Regular" in font for font in font_names))
+        for operands, operator in page.get_contents().operations:
+            if operator in (b"rg", b"RG"):
+                self.assertIn(tuple(operands), ((0, 0, 0), (1, 1, 1)))
+
     def test_every_exact_selection_can_send_word_and_pdf(self):
         keys = [key for key in self.buttons(self.click("sk27:home")) if key.startswith("sk27:set:")]
         counts = Counter()
@@ -257,7 +282,9 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                     if fmt == "word":
                         doc = Document(BytesIO(result.data))
                         self.assertIn(teacher["class"], doc.tables[0].rows[3].cells[1].text)
-                        self.assertEqual(doc.tables[-1].rows[0].cells[1].text, teacher["reflection"])
+                        reflection = doc.tables[-1].rows[0].cells[0]
+                        self.assertEqual(reflection.text.splitlines(), ["Reflection", teacher["reflection"]])
+                        self.assertEqual(reflection._tc.grid_span, 2)
                     else:
                         page, = PdfReader(BytesIO(result.data)).pages
                         self.assertIn(teacher["class"], page.extract_text())
@@ -275,7 +302,9 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                                  json={"selection": maths_selection, "teacher": teacher, "format": "word"})
             self.assertEqual(result.status_code, 200)
             self.assertIn("DLP-MAT-Y4-R08.docx", result.headers["Content-Disposition"])
-            self.assertEqual(Document(BytesIO(result.data)).tables[-1].cell(0, 1).text, teacher["reflection"])
+            reflection = Document(BytesIO(result.data)).tables[-1].cell(0, 0)
+            self.assertEqual(reflection.text.splitlines(), ["Reflection", teacher["reflection"]])
+            self.assertEqual(reflection._tc.grid_span, 2)
             for bad in ({**maths_selection, "unit": "01"},
                         {**maths_selection, "lesson": "DLP-SCI-Y4-R08"}):
                 self.assertEqual(client.get(path + "/availability", query_string=bad, headers=headers).status_code, 404)

@@ -3,6 +3,10 @@ on:
   pull_request:
     branches: [main]
     paths:
+      - 'app.py'
+      - 'dlp_year2_rph.py'
+      - 'fonts/rph/**'
+      - 'web/rph_document_style.py'
       - 'curriculum_version_telegram.py'
       - 'tests/test_curriculum_version_telegram.py'
       - 'web/telegram_sk_rph_2027.py'
