@@ -238,6 +238,8 @@ def build_native_input(payload):
     # document even though a source file exists on both servers.
     if year == 1:
         s["_web_english_y1_kssr_lesson"] = lesson
+    elif subject == "ENGLISH":
+        s["_web_english_standard_lesson"] = lesson
     if subject=="PJPK":
         from web.pjpk_2027_preview_runtime import _source
         selected=_source(year,component.lower(),lesson)

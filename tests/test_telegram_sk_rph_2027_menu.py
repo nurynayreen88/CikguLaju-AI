@@ -248,7 +248,9 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                 fields = {a.text: b.text for a, b in (row.cells for row in document.tables[0].rows)}
                 self.assertEqual(fields["Tahun/Tingkatan"], f"Tahun {year}")
                 self.assertIn("DPK Edisi 3", fields["Rujukan"])
-                self.assertIn("SP " + codes, fields["Standard Pembelajaran"])
+                learning = fields["Standard Pembelajaran"].removeprefix("SP ").splitlines()
+                self.assertEqual([line.split()[0] for line in learning], codes.split(", "))
+                self.assertTrue(all(len(line.split()) > 3 for line in learning))
                 self.assertIn("Semak sekali lagi.", document.tables[-1].rows[1].cells[1].text)
 
     def test_dlp_year3_api_downloads_every_exact_lesson(self):
@@ -454,7 +456,8 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
             doc = Document(BytesIO(data))
             fields = {row.cells[0].text: row.cells[1].text for row in doc.tables[0].rows}
             self.assertEqual(fields["Masa"], "08:00 - 08:30")
-            self.assertIn("SP 1.5.1, 1.5.2", fields["Standard Pembelajaran"])
+            self.assertIn("SP 1.5.1 — Mengenal pasti pola", fields["Standard Pembelajaran"])
+            self.assertIn("1.5.2 — Melengkapkan pelbagai pola", fields["Standard Pembelajaran"])
 
     def test_private_web_render_matches_telegram_for_year_six_ratio(self):
         app = Flask(__name__)

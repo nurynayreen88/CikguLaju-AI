@@ -6,9 +6,10 @@ actual row contracts used by both English Word and PDF document generators.
 import json
 import os
 from pathlib import Path
+import sys
 import types
 import unittest
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 from english_y2_standalone_render import apply as year2_activities
 from english_y3_standalone_render import apply as year3_activities
@@ -16,6 +17,7 @@ from web.english_y2_y3_standard_runtime import (
     SOW_INDEX, enrich_rows, install as install_y2_y3, _year_and_lesson,
 )
 from web.english_y4_standalone_runtime import adapt_rows as year4_rows
+from web.english_rph_standard_descriptions import describe_rows, install as install_standard_descriptions
 from web.english_y5_standalone_runtime import (
     CHOICE_LESSONS as Y5_TEACHER_CHOICES,
     RELEASE_FLAG as Y5_RELEASE_FLAG,
@@ -37,6 +39,35 @@ BASE = {
 
 
 class CrossYearEnglishDocumentRows(unittest.TestCase):
+    def test_display_matches_year_and_does_not_assign_teacher_choice(self):
+        rows = {"MAIN LEARNING STANDARD": "4.2.1", "COMPLEMENTARY LEARNING STANDARD": "5.1.2"}
+        y2, y3 = (describe_rows(year, rows) for year in (2, 3))
+        self.assertIn("Ask for and give basic personal information", y2["MAIN LEARNING STANDARD"])
+        self.assertIn("Express simple opinions", y3["MAIN LEARNING STANDARD"])
+        self.assertIn("simple poems", y3["COMPLEMENTARY LEARNING STANDARD"])
+        self.assertIn("4.2 Communicate", y2["MAIN CONTENT STANDARD"])
+        choice = next(row["n"] for key, row in DATA["lessons"].items()
+                      if key.startswith("6/") and row["teacher_selected"])
+        teacher_choice = {"MAIN LEARNING STANDARD": "Teacher-selected"}
+        self.assertEqual(describe_rows(6, teacher_choice, fixed_lesson=choice), teacher_choice)
+        inconsistent = {"MAIN LEARNING STANDARD": "4.2.1", "MAIN CONTENT STANDARD": "5.1"}
+        self.assertEqual(describe_rows(2, inconsistent), inconsistent)
+
+    def test_word_compaction_is_limited_to_four_a4_overflows(self):
+        runtime = types.SimpleNamespace(
+            _rph_rows=lambda *_: {},
+            create_word_file=lambda *_: "lesson.docx",
+            _is_english_subject=lambda state: state.get("subject") == "English",
+        )
+        install_standard_descriptions(runtime)
+        compact = Mock()
+        module = types.SimpleNamespace(compact_word_file=compact)
+        with patch.dict(sys.modules, {"web.english_y6_word_a4_runtime": module}):
+            for year, lesson in ((2, 15), (2, 20), (4, 25), (4, 29), (2, 19), (5, 25)):
+                state = {"task": "rph", "subject": "English", "year": f"Tahun {year}", "lesson_no": lesson}
+                self.assertEqual(runtime.create_word_file(state), "lesson.docx")
+            self.assertEqual(compact.call_count, 4)
+
     def test_year2_year3_paired_sow_document_coverage(self):
         counts = {}
         for year, renderer in ((2, year2_activities), (3, year3_activities)):

@@ -5,8 +5,6 @@ from pathlib import Path
 
 from dlp_year2_rph import _pdf, _word
 from staging.sains.tahun5.eksport_2027 import build_source, render_rph
-from tools.sains_y5_kssr2017_official_sp_statements_20261107 import checked_statements
-from web.sains_unit_awal import PROCESS
 
 
 class ReviewRuntime:
@@ -16,13 +14,10 @@ class ReviewRuntime:
 
     def __init__(self):
         _, plans = build_source()
-        statements = checked_statements()
         self.plans = {}
         self.catalog = []
         for number, plan in plans.items():
             code = f"SK27-SCI-Y5-PDP-{number:03d}"
-            standard = ({"sk_title": "Kemahiran Proses Sains", "sp_text": PROCESS[plan["sp"]]}
-                        if plan["sk"] == "1.1" else statements[plan["sp"]])
             self.plans[code] = plan
             self.catalog.append({
                 "unit_code": "",
@@ -31,9 +26,9 @@ class ReviewRuntime:
                 "source_sequence_no": f"{number:03d}",
                 "pdp_title": plan["title"],
                 "sk_code": plan["sk"],
-                "sk_text": standard["sk_title"],
+                "sk_text": plan["sk_text"],
                 "sp_code": plan["sp"],
-                "sp_text": standard["sp_text"],
+                "sp_text": plan["sp_text"],
                 "textbook_ref": f"Buku Teks m/s {plan['pages']}",
             })
 

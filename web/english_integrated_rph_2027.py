@@ -16,6 +16,7 @@ from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer
 
 from tools.build_english_paired_rph_2027 import INK, TEAL, make_sheet, paired_plan_index
 from tools.build_english_rpt_2027_review import CALENDAR, PAIR_PLAN, schedule
+from web.english_rph_standard_descriptions import describe_rows
 from web.school_days_2027 import FRI_SAT, is_school_day
 
 
@@ -115,6 +116,8 @@ def _pdf_for_sheet(sheet, output):
         elif index == 1:
             style = ParagraphStyle("Topic", parent=body, fontSize=24, leading=28)
         if block.text:
+            if block.style.name == "Curriculum Standard":
+                style = ParagraphStyle("Standard", parent=body, fontSize=9, leading=10, spaceAfter=4)
             text = "".join(
                 ("<b>" + escape(run.text) + "</b>") if run.bold else escape(run.text)
                 for run in block.runs
@@ -132,6 +135,24 @@ def render(year, number, fmt, teacher):
     plan = paired_plan_index()[year, number]
     output = io.BytesIO()
     sheet = make_sheet(*plan, teacher=teacher)
+    from docx.enum.style import WD_STYLE_TYPE
+    from docx.shared import Pt
+
+    style = sheet.styles.add_style("Curriculum Standard", WD_STYLE_TYPE.PARAGRAPH)
+    style.base_style = sheet.styles["Normal"]
+    style.font.size = Pt(9)
+    style.paragraph_format.line_spacing = 1.0
+    style.paragraph_format.space_after = Pt(4)
+    for lesson_no, sow, *_ in plan[-1]:
+        source_rows = {"MAIN LEARNING STANDARD": sow["main_ls"],
+                       "COMPLEMENTARY LEARNING STANDARD": sow["complementary_ls"]}
+        standards = describe_rows(year, source_rows)
+        paragraph = next(p for p in sheet.paragraphs if p.text.startswith(f"SK/SP · {lesson_no:03d}  "))
+        paragraph.style = style
+        paragraph.runs[-1].text = "\n".join(
+            f"{role.title()} {kind.lower()} standard · {standards[f'{role} {kind} STANDARD']}"
+            for role in ("MAIN", "COMPLEMENTARY") for kind in ("CONTENT", "LEARNING")
+        )
     if fmt == "word":
         sheet.save(output)
     else:
