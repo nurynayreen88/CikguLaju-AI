@@ -103,6 +103,34 @@ class WebRPT2027FiftySixQA(unittest.TestCase):
         with self.assertRaises(ValueError):
             pdf_path("rbt",2,root=self.root)
 
+    def test_matematik_sjkt_catalog_has_year_two_and_paid_word_pdf(self):
+        from rpt_2027.sjkt.matematik.documents import CODE, document_path
+
+        folder = self.root / "sjkt" / "matematik"
+        folder.mkdir(parents=True)
+        for fmt in ("pdf", "docx"):
+            original = document_path(2, fmt)
+            (folder / original.name).write_bytes(original.read_bytes())
+        pdf_url = f"/api/rpt/2027/all/{CODE}/2.pdf"
+        word_url = "/api/rpt/2027/sjkt/matematik/2.docx"
+        with patch("web.rpt_2027_all_http._account", return_value=(None, ({"error": "Login"}, 401))):
+            self.assertEqual(self.client.get(word_url).status_code, 401)
+        with patch("web.rpt_2027_all_http._account", return_value=({"telegram_user_id": 42}, None)):
+            with patch("web.rpt_2027_all_http._has_paid_access", return_value=False):
+                self.assertEqual(self.client.get(pdf_url).status_code, 403)
+                self.assertEqual(self.client.get(word_url).status_code, 403)
+            with patch("web.rpt_2027_all_http._has_paid_access", return_value=True):
+                catalogue = self.client.get("/api/rpt/2027/catalog").get_json()
+                record = next(row for row in catalogue["subjects"] if row["code"] == CODE)
+                self.assertEqual([row["year"] for row in record["years"]], [2])
+                self.assertEqual(record["years"][0]["docx_url"], word_url)
+                pdf = self.client.get(pdf_url)
+                self.assertEqual(pdf.data, document_path(2).read_bytes())
+                self.assertEqual(pdf.headers["X-RPT-Source-SHA256"], hashlib.sha256(pdf.data).hexdigest())
+                self.assertEqual(pdf.headers["X-RPT-Personalization-Allowed"], "1")
+                self.assertEqual(self.client.get(word_url).data, document_path(2, "docx").read_bytes())
+                self.assertEqual(self.client.get(f"/api/rpt/2027/all/{CODE}/3.pdf").status_code, 404)
+
     def test_sjkc_catalog_and_download_require_paid_access_for_every_year(self):
         from rpt_2027.sjkc.bahasa_cina.documents import CODE, ROOT, YEARS, document_path
 
