@@ -128,6 +128,9 @@ class DlpDownloadTests(unittest.TestCase):
                 doc = Document(BytesIO(render("MATH_DLP", unit, lesson, "word", self.teacher)))
                 fields = {a.text: b.text for a, b in (row.cells for row in doc.tables[0].rows)}
                 self.assertEqual(fields["Lesson / PdP"], f"Lesson {number:02d}")
+                if lesson["id"] == "DLP-MAT-Y2-U01-07":
+                    self.assertEqual(fields["Learning Standards"],
+                                     "1.1.2(iv) Arrange groups by quantity in ascending or descending order")
 
     def test_year_two_catalogues_download_all_lessons_and_reviews(self):
         for slug, subject, units_count, count in (
@@ -180,15 +183,15 @@ class DlpDownloadTests(unittest.TestCase):
                         page, = PdfReader(BytesIO(pdf.data)).pages
                         self.assertAlmostEqual(float(page.mediabox.width), 595.28, delta=1)
                         self.assertAlmostEqual(float(page.mediabox.height), 841.89, delta=1)
-                        if subject == "SCIENCE_DLP":
-                            ls_codes = re.findall(r"\b\d+\.\d+\.\d+\b", plan["standards"])
-                            cs_codes = list(dict.fromkeys(code.rsplit(".", 1)[0] for code in ls_codes))
-                            pdf_text = " ".join(page.extract_text().split())
-                            for label, codes in (("Content Standards", cs_codes), ("Learning Standards", ls_codes)):
-                                lines = [line.split(maxsplit=1) for line in fields[label].splitlines()]
-                                self.assertEqual([code for code, _ in lines], codes)
-                                self.assertTrue(all(description.strip() for _, description in lines))
-                                self.assertIn(" ".join(fields[label].split()), pdf_text)
+                        ls_codes = re.findall(r"\b\d+\.\d+\.\d+\b", plan["standards"])
+                        cs_codes = list(dict.fromkeys(code.rsplit(".", 1)[0] for code in ls_codes))
+                        pdf_text = " ".join(page.extract_text().split())
+                        for label, codes in (("Content Standards", cs_codes), ("Learning Standards", ls_codes)):
+                            lines = [line.split(maxsplit=1) for line in fields[label].splitlines()]
+                            shown = list(dict.fromkeys(code.split("(")[0] for code, _ in lines))
+                            self.assertEqual(shown, codes)
+                            self.assertTrue(all(description.strip() for _, description in lines))
+                            self.assertIn(" ".join(fields[label].split()), pdf_text)
 
     def test_mathematics_rpt_keeps_96_hours_before_assessment(self):
         folder = Path(__file__).resolve().parents[1] / "rpt_2027" / "dlp"
