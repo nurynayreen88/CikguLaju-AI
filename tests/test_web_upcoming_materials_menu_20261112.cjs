@@ -240,8 +240,9 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
   year.value=n;
   await listeners["year.change"]();
   assert.deepEqual(subject.options.map(x=>x.label),[
-   "Pilih Subjek","Science (DLP) — Dalam Penyediaan","Mathematics (DLP) — Dalam Penyediaan"
+   "Pilih Subjek","Mathematics (DLP) — Dalam Penyediaan"
   ]);
+  assert.match(ctx.catalogStatus.textContent,/Alam dan Manusia/);
   for(const option of subject.options.slice(1)){
    subject.value=option.value;
    await listeners["subject.change"]();

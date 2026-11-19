@@ -1727,10 +1727,14 @@ year.addEventListener("change",async()=>{
  }
  if(choice==="dlp"){
   if(!curriculumYears.dlp.some(option=>option.value===targetYear))return;
-  fillSelect(subject,dlpSubjectOptions.map(({value,label})=>({
+  const options=targetYear==="1"?dlpSubjectOptions.filter(item=>item.value==="MATH_DLP"):dlpSubjectOptions;
+  fillSelect(subject,options.map(({value,label})=>({
    value,label:label+" — "+(dlpRphAvailable(targetYear,value)?"RPH 2027":"Dalam Penyediaan")
   })),"Pilih Subjek");
   showStep(subject,true);
+  if(targetYear==="1"){
+   catalogStatus.textContent="Komponen Sains Tahun 1 KP2027 berada dalam Alam dan Manusia.";
+  }
   updateSelectionHelp("Pilih subjek DLP.");
   return;
  }
@@ -1785,6 +1789,7 @@ subject.addEventListener("change",async()=>{
  if(curriculum.value==="dlp"){
   const selectedSubject=dlpSubjectOptions.find(item=>item.value===code);
   if(!selectedSubject||!curriculumYears.dlp.some(option=>option.value===targetYear))return;
+  if(targetYear==="1"&&code!=="MATH_DLP")return;
   if(selectedSubject.rpt_years.includes(Number(targetYear))){
    rphVariantRpt.dataset.subject=selectedSubject.code;
    rphVariantRpt.hidden=false;
