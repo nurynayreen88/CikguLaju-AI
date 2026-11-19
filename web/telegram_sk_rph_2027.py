@@ -196,15 +196,16 @@ def install(runtime):
             choice = st.get(STATE_KEY, {})
             if choice.get("scope") != scope:
                 raise ValueError("Wrong curriculum set")
+            entry = choice.get("entry", "dlp" if choice.get("from_dlp") else "set")
             unit_id = parts[2]
             unit = units[unit_id]
             if action == "unit" and len(parts) == 3:
-                st[STATE_KEY] = {"scope": scope, "unit": unit_id, "entry": choice["entry"]}
+                st[STATE_KEY] = {"scope": scope, "unit": unit_id, "entry": entry}
                 return send(cid, "<b>" + escape(unit["title"]) + "</b>\nPilih Lesson/PdP.",
                             [_button((row["label"] if scope in ("dp2", "dp3") else row["label"].split(" · ", 1)[0])
                                      + " • " + row["title"],
                                      f"pick:{scope}:{unit_id}:{row['id']}") for row in unit["lessons"]]
-                            + [_button("Pilih unit", f"{choice['entry']}:{scope}")])
+                            + [_button("Pilih unit", f"{entry}:{scope}")])
             if action != "pick" or len(parts) != 4 or choice.get("unit") != unit_id:
                 raise ValueError("Wrong unit")
             lesson = next((r for r in unit["lessons"] if r["id"] == parts[3]), None)
@@ -217,10 +218,10 @@ def install(runtime):
                 "subject": subject, "unit": unit["title"], "unit_title": unit["title"],
                 "topic": lesson["title"], "lesson_no": lesson["id"],
                 STATE_KEY: {"scope": scope, "unit": unit_id, "nonce": token_hex(6),
-                            "entry": choice["entry"], **lesson},
+                            "entry": entry, **lesson},
             }
-            if choice["entry"] in ("dlp", "kssr"):
-                runtime.state[cid]["curriculum_version"] = "dlp" if choice["entry"] == "dlp" else "existing"
+            if entry in ("dlp", "kssr"):
+                runtime.state[cid]["curriculum_version"] = "dlp" if entry == "dlp" else "existing"
             return runtime._lesson_to_class_v2439(cid)
         except (KeyError, TypeError, ValueError, IndexError):
             return send(cid, "Pilihan RPH 2027 tidak sah. Pilih semula.", [_button("RPH 2027", "home")])

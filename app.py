@@ -10755,9 +10755,11 @@ def create_pdf_file(s, ai_text, cid):
         table_rule = colors.HexColor("#" + GRID)
         table_label = colors.HexColor("#" + MIST)
         table_accent = colors.HexColor("#" + TEAL)
-        table_header = colors.HexColor("#" + NAVY)
+        jawi_header = _pi_primary_v25210(s)
+        table_header = table_label if jawi_header else colors.HexColor("#" + NAVY)
         header_style = ParagraphStyle("RPH phase header", parent=body_style,
-                                      fontName="Helvetica-Bold", textColor=colors.white)
+                                      fontName="Helvetica-Bold",
+                                      textColor=body_style.textColor if jawi_header else colors.white)
         story = [Paragraph(_rph_title(s), title_style), Spacer(1,2*mm)]
         rows=[]
         info_labels=(['MATA PELAJARAN','TAHUN/TINGKATAN','TARIKH','HARI','MASA','KELAS','BILANGAN MURID','TAJUK','MAIN CONTENT STANDARD','MAIN LEARNING STANDARD','COMPLEMENTARY CONTENT STANDARD','COMPLEMENTARY LEARNING STANDARD','OBJEKTIF PEMBELAJARAN','KRITERIA KEJAYAAN','PENGETAHUAN SEDIA ADA','BAHAN BANTU MENGAJAR','EMK / NILAI','KBAT / PAK21','PENTAKSIRAN'] if _is_english_subject(s) else ['MATA PELAJARAN','TAHUN/TINGKATAN','TARIKH','HARI','MASA','KELAS','BILANGAN MURID','TAJUK','STANDARD KANDUNGAN','STANDARD PEMBELAJARAN','OBJEKTIF PEMBELAJARAN','KRITERIA KEJAYAAN','PENGETAHUAN SEDIA ADA','BAHAN BANTU MENGAJAR','EMK / NILAI','KBAT / PAK21','PENTAKSIRAN'])
