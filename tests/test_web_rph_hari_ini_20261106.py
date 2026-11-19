@@ -848,7 +848,7 @@ class DailyTimetableRouteTests(TestCase):
         self.assertIn('"components"',daily)
         self.assertIn('"units"',daily)
         self.assertIn('"pdp"',daily)
-        self.assertIn('nativeLessonLabel(item,c.slot.subject_code)',daily)
+        self.assertIn('nativeLessonLabel(item,c.slot.subject_code,c.slot.year)',daily)
         self.assertNotIn('prepareRphFromToday(',daily)
         self.assertNotIn('Pilih Tajuk / Lesson',daily)
         self.assertNotIn('daily-rph-prepare',daily)
