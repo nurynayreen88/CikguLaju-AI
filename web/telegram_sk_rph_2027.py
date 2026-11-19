@@ -15,7 +15,7 @@ from staging.sains.tahun5.eksport_2027 import render_rph as render_sains_year5
 from staging.sains.tahun5.semakan_penjana import ReviewRuntime
 from staging.sains.tahun6.eksport_2027 import render_rph as render_sains_year6
 from staging.sains.tahun6.penjana_2027 import ScienceYear6Runtime
-from web.math_y6_ratio_source_hold_20261110 import held_math_y6_ratio_identity
+from web.math_y6_ratio_source_hold_20261110 import reviewed_math_y6_unit
 
 PREFIX = "sk27:"
 STATE_KEY = "_sk_rph_2027"
@@ -77,14 +77,16 @@ def install(runtime):
                      _button("Muat turun PDF", f"download:pdf:{selection['nonce']}"),
                      _button("Pilih PdP lain", f"unit:{selection['scope']}:{selection['unit']}")])
 
-    def held_legacy_ratio(st):
-        return (st.get("year") == "Tahun 6" and st.get("subject") == "Matematik"
-                and held_math_y6_ratio_identity(6, "MATH", st.get("pdp_sequence_code")))
+    def legacy_math_unit(st):
+        if st.get("year") == "Tahun 6" and st.get("subject") == "Matematik":
+            return reviewed_math_y6_unit(6, "MATH", st.get("pdp_sequence_code"))
+        return None
 
-    def send_ratio_unit(cid, st):
+    def send_reviewed_math_unit(cid, st, unit):
         st[STATE_KEY] = {"scope": "mt6"}
-        return send(cid, "Untuk Nisbah dan Kadaran, pilih Lesson dalam Unit 7 Matematik SK Tahun 6 di RPH 2027.",
-                    [_button("Buka Unit 7 · RPH 2027", "unit:mt6:07")])
+        title = escape(catalogues["mt6"][unit]["title"])
+        return send(cid, f"Pilih Lesson Matematik SK Tahun 6 dalam <b>{title}</b>.",
+                    [_button(f"Buka Unit {int(unit)} · RPH 2027", f"unit:mt6:{unit}")])
 
     def selected(st):
         choice = st.get(STATE_KEY)
@@ -148,8 +150,8 @@ def install(runtime):
         if busy:
             return runtime.send(cid, "Fail RPH sedang dihantar.", [])
         st = runtime.state.get(cid, {})
-        if data == "matsubmit2528" and held_legacy_ratio(st):
-            return send_ratio_unit(cid, st)
+        if data == "matsubmit2528" and (unit := legacy_math_unit(st)):
+            return send_reviewed_math_unit(cid, st, unit)
         if not isinstance(data, str) or not data.startswith(PREFIX):
             return old_callback(cid, data)
         st = runtime.state.setdefault(cid, {})
@@ -199,10 +201,10 @@ def install(runtime):
             return send(cid, "Pilihan RPH 2027 tidak sah. Pilih semula.", [_button("RPH 2027", "home")])
 
     def after_time(cid, st):
+        if unit := legacy_math_unit(st):
+            return send_reviewed_math_unit(cid, st, unit)
         choice = selected(st)
         if choice is None:
-            if held_legacy_ratio(st):
-                return send_ratio_unit(cid, st)
             return old_continue(cid, st)
         choice["session_ready"] = True
         return choose_formats(cid, choice)
@@ -212,8 +214,8 @@ def install(runtime):
     def guard_picker(picker):
         def guarded(cid, *args, **kwargs):
             st = runtime.state.get(cid, {})
-            if held_legacy_ratio(st):
-                return send_ratio_unit(cid, st)
+            if unit := legacy_math_unit(st):
+                return send_reviewed_math_unit(cid, st, unit)
             return picker(cid, *args, **kwargs)
         return guarded
 
