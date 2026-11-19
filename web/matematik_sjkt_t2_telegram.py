@@ -25,7 +25,17 @@ def _class_record(runtime, cid, entry):
     return name, record, bool(year_two)
 
 
-def _slots(runtime, cid, target, matches_subject):
+def _matches_school_subject(entry, school_type):
+    name = " ".join(str(entry.get("subject") or "").casefold().split())
+    label = school_type.casefold()
+    return name in (f"matematik {label}", f"matematik ({label})")
+
+
+def _is_sjkt(entry):
+    return _matches_school_subject(entry, "SJKT")
+
+
+def _slots(runtime, cid, target, matches_subject=_is_sjkt):
     profile = runtime._teacher_profile(cid) or {}
     school_state = normalize_state(profile.get("state_name"))
     if school_closure(school_state, target):
@@ -62,11 +72,9 @@ def install_year_two(runtime, source, key, active_attr):
     slot_prefix = f"m{key}slot:"
     open_units = f"_{key}_open_units"
     school_type = source.SUBJECT.rsplit(" ", 1)[-1]
-    subject_names = (source.SUBJECT.casefold(), f"matematik ({school_type.casefold()})")
 
     def matches_subject(entry):
-        name = " ".join(str(entry.get("subject") or "").casefold().split())
-        return name in subject_names
+        return _matches_school_subject(entry, school_type)
 
     def valid_slot(runtime, cid):
         index, selected = runtime.state[cid][slot_key]
