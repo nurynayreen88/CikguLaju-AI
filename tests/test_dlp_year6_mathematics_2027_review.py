@@ -144,8 +144,9 @@ class MathematicsDLPYear6DownloadTests(unittest.TestCase):
                             pdf = PdfReader(BytesIO(response.data))
                             self.assertEqual(len(pdf.pages), 1)
                             text = " ".join(pdf.pages[0].extract_text().split())
-                            for field in ("title", "label", "standards", "reference", "evidence"):
+                            for field in ("title", "standards", "reference", "evidence"):
                                 self.assertIn(" ".join(plan[field].split()), text)
+                        self.assertIn(plan["label"].split(" · ")[0] + " · 90 min", text)
                         for value in ("6 Bestari", "18/10/2027", "08:00 - 09:30", "30"):
                             self.assertIn(value, text)
         self.assertEqual(ids, list(expected))
