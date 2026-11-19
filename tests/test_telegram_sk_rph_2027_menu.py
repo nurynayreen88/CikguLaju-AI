@@ -164,6 +164,12 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         text = " ".join(page.extract_text().split())
         for fragment in ("Hasil 284 dan 464", "Pemulihan", "Pengayaan", "Fokus susulan"):
             self.assertIn(fragment, text)
+        _, pdf = self._select("dp2", "02", "SK27-DPK3-MATH-Y2-L017")
+        reflection = ("Murid menerangkan langkah dan membuat semakan. " * 10).strip()
+        self.runtime.state[123]["rph_teacher_reflection"] = reflection
+        self.click(pdf)
+        page, = PdfReader(BytesIO(self.documents[-1][1])).pages
+        self.assertIn(reflection, " ".join(page.extract_text().split()))
 
     def test_every_exact_selection_can_send_word_and_pdf(self):
         keys = [key for key in self.buttons(self.click("sk27:home")) if key.startswith("sk27:set:")]

@@ -335,7 +335,7 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
     from reportlab.lib.pagesizes import A4
     from reportlab.lib.styles import ParagraphStyle
     from reportlab.lib.units import mm
-    from reportlab.platypus import Frame, PageTemplate, BaseDocTemplate, Paragraph, Spacer, Table
+    from reportlab.platypus import BaseDocTemplate, Frame, KeepInFrame, PageTemplate, Paragraph, Spacer, Table
 
     if mathematics:
         heading, details, activities = _math_layout(heading, details, activities, teacher)
@@ -401,7 +401,7 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
         opening.extend([paragraph(heading[1], body), paragraph(heading[2], topic)])
     fields_width = (48, 124) if mathematics else (36, 146)
     steps_width = (32, 112, 28) if mathematics else (36, 73, 73)
-    doc.build([
+    story = [
         *opening,
         Spacer(1, 8),
         table(details, fields_width),
@@ -409,4 +409,7 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
         table(activities, steps_width, header=True),
         Spacer(1, 8),
         table(reflection, fields_width),
-    ])
+    ]
+    if mathematics:
+        story = [KeepInFrame(182 * mm, 274 * mm, story, mode="shrink")]
+    doc.build(story)
