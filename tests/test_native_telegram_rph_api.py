@@ -295,6 +295,7 @@ class NativeRPHBridgeTests(unittest.TestCase):
             "Fasa / Masa","Aktiviti Pengajaran & Pembelajaran","Catatan"]
         pj["source_digest"]=source_fingerprint(3,"PJPK",1,"PK")
         state,_,_=build_native_input(pj)
+        self.assertEqual(state["task"], "rph")
         from web.pjpk_2027_preview_runtime import _selection as pj_selected
         self.assertIsNotNone(pj_selected(state))
         self.assertEqual(state["_pjpk_2027_preview_selection"],

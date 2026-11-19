@@ -246,7 +246,7 @@ def build_native_input(payload):
         if selected is None:
             raise ValueError("PJPK source not available in Telegram")
         s.update({
-            "task":"quick_material","quick_material_flow":True,
+            "quick_material_flow":True,
             "assessment_mode":"formative","rph_mode":"fast_rpt",
             "pdp_no":lesson,"topic":selected["title"],
             "unit":selected["title"],"unit_title":selected["title"],
