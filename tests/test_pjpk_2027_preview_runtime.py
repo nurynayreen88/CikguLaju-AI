@@ -32,6 +32,13 @@ class PJPKDraftRuntimeTests(unittest.TestCase):
                     manifest_entry = indexed[(year, subject, row["lesson"])]
                     self.assertEqual(row["sk"], manifest_entry["sk"])
                     self.assertEqual(row["sp"], manifest_entry["sp"])
+                    for kind in ("sk", "sp"):
+                        descriptions = row["standard_descriptions"][kind].split(" · ")
+                        self.assertEqual(len(descriptions), len(row[kind]))
+                        self.assertTrue(all(
+                            part.startswith(f"{code} ") and len(part) > len(code) + 5
+                            for code, part in zip(row[kind], descriptions)
+                        ))
                     self.assertEqual(row["title"], manifest_entry["title"])
                     self.assertEqual(len(row["activities"]), 2)
                     self.assertTrue(row["objective"])
@@ -48,6 +55,16 @@ class PJPKDraftRuntimeTests(unittest.TestCase):
         self.assertEqual(preview.list_lessons("Tahun 1", "Pendidikan Jasmani"), [])
         self.assertIsNone(preview._source(2, "pj", 38))
         self.assertEqual(preview.list_lessons("Tahun 2", "English"), [])
+
+    def test_same_code_uses_component_and_curriculum_section(self):
+        pj = preview._source(2, "pj", 1)
+        pk = preview._source(2, "pk", 1)
+        self.assertIn("1.1.1 Melakukan pergerakan ke ruang am", pj["standard_descriptions"]["sp"])
+        self.assertIn("1.1 Kemahiran membuat keputusan", pk["standard_descriptions"]["sk"])
+        athletics = preview._source(3, "pj", 14)
+        distance_running = preview._source(3, "pj", 17)
+        self.assertIn("5.1.2 Menentukan ruang", athletics["standard_descriptions"]["sp"])
+        self.assertIn("5.1.2 Melakukan aktiviti", distance_running["standard_descriptions"]["sp"])
 
     def test_current_rpt_fail_closed_on_bad_status_or_parent_code(self):
         source = preview.ROOT / preview.MANIFEST
@@ -78,7 +95,7 @@ class PJPKDraftRuntimeTests(unittest.TestCase):
         self.assertEqual(out["TARIKH"], rows["TARIKH"])
         self.assertEqual(out["KELAS"], rows["KELAS"])
         self.assertEqual(out["MATA PELAJARAN"], "Pendidikan Jasmani")
-        self.assertIn("1.1.1", out["STANDARD PEMBELAJARAN"])
+        self.assertIn("1.1.1 Melakukan pergerakan ke ruang am", out["STANDARD PEMBELAJARAN"])
         self.assertIn("Aktiviti 1", out["AKTIVITI UTAMA"])
         self.assertIn("DRAF CADANGAN", out["TAJUK"])
 
