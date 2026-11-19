@@ -19,6 +19,7 @@ from staging.sains.tahun6.penjana_2027 import ScienceYear6Runtime
 PREFIX = "sk27:"
 STATE_KEY = "_sk_rph_2027"
 SETS = {"s": ("Sains SK Tahun 5", "Sains", "Tahun 5"),
+        "mt4": ("Matematik SK Tahun 4", "Matematik", "Tahun 4"),
         "mt5": ("Matematik SK Tahun 5", "Matematik", "Tahun 5"),
         "mt6": ("Matematik SK Tahun 6", "Matematik", "Tahun 6"),
         "m5": ("Mathematics DLP Year 5", "Mathematics (DLP)", "Tahun 5"),
@@ -56,7 +57,7 @@ def install(runtime):
                "s6": (ScienceYear6Runtime(), render_sains_year6)}
     documents = {"m": render_mathematics, "d6": render_science,
                  "m5": year5_dlp.MATHEMATICS, "d5": year5_dlp.SCIENCE,
-                 "mt5": MathSKDownloads(5), "mt6": MathSKDownloads(6)}
+                 "mt4": MathSKDownloads(4), "mt5": MathSKDownloads(5), "mt6": MathSKDownloads(6)}
     catalogues = {scope: _science_catalogue(source) for scope, (source, _) in science.items()}
     catalogues.update({scope: {group["id"]: group for group in module.download_catalogue()}
                        for scope, module in documents.items()})

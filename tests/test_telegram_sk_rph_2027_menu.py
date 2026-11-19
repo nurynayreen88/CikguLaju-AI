@@ -86,9 +86,9 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                         self.assertEqual(len(PdfReader(BytesIO(self.documents[-1][1])).pages), 1)
                         counts[set_id] += 1
         self.assertEqual(counts, {"s": 116, "m": 54, "s6": 89, "d6": 61, "m5": 69,
-                                  "d5": 70, "mt5": 117, "mt6": 117})
-        self.assertEqual(len(self.documents), 1386)
-        self.assertEqual(self.credits, 693)
+                                  "d5": 70, "mt4": 117, "mt5": 117, "mt6": 117})
+        self.assertEqual(len(self.documents), 1620)
+        self.assertEqual(self.credits, 810)
 
     def test_wrong_set_old_buttons_and_failed_delivery_cannot_charge(self):
         word, _ = self._select("s", "01", "SK27-SCI-Y5-PDP-001")
@@ -109,6 +109,37 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         self.click(next_word)
         self.assertEqual(len(self.documents), 2)
         self.assertEqual(self.credits, 1)
+
+    def test_year_four_preserves_grouped_standards_and_thirty_minute_plan(self):
+        app = Flask(__name__)
+        register_downloads(app)
+        client = app.test_client()
+        token = "math-sk-2027-test-token-for-local-app"
+        headers = {"Authorization": f"Bearer {token}"}
+        query = {"year": 4, "subject": "MATH"}
+        lesson = "SK27-MATH-Y4-L005"
+        with patch.dict("os.environ", {"CIKGULAJU_WEB_NATIVE_RPH_ENABLED": "1",
+                                     "CIKGULAJU_AUTHORITATIVE_API_TOKEN": token}):
+            units = client.get(ROUTE + "/units", query_string=query, headers=headers).json["items"]
+            self.assertEqual(len(units), 8)
+            selection = {**query, "unit": units[0]["value"], "lesson": lesson}
+            response = client.post(ROUTE + "/render", headers=headers, json={
+                "selection": selection,
+                "teacher": {"class": "Bestari", "date": "2027-01-18",
+                            "time": "08:00-08:30", "students": "32"},
+                "format": "word",
+            })
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(client.get(ROUTE + "/availability",
+                                        query_string=selection | {"unit": units[1]["value"]},
+                                        headers=headers).status_code, 404)
+        word, _ = self._select("mt4", "01", lesson)
+        self.click(word)
+        for data in (response.data, self.documents[-1][1]):
+            doc = Document(BytesIO(data))
+            fields = {row.cells[0].text: row.cells[1].text for row in doc.tables[0].rows}
+            self.assertIn("30 minit", fields["Lesson / tempoh"])
+            self.assertIn("SP 1.5.1, 1.5.2", fields["SK / SP"])
 
     def test_private_web_render_matches_telegram_for_year_six_ratio(self):
         app = Flask(__name__)
