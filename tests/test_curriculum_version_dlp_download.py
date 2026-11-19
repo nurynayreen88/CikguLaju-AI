@@ -143,7 +143,8 @@ class DlpDownloadTests(unittest.TestCase):
                         selection = {"year": 2, "subject": subject, "unit": unit["id"],
                                      "lesson": item["id"]}
                         _, plan = BY_SUBJECT[subject].resolve_download(unit["id"], item["id"])
-                        word = self.download("word", selection=selection)
+                        teacher = self.teacher | {"time": ""} if subject == "MATH_DLP" else self.teacher
+                        word = self.download("word", selection=selection, teacher=teacher)
                         self.assertEqual(word.status_code, 200)
                         doc = Document(BytesIO(word.data))
                         fields = {a.text: b.text for a, b in (row.cells for row in doc.tables[0].rows)}
@@ -170,7 +171,7 @@ class DlpDownloadTests(unittest.TestCase):
                             self.assertEqual(len(table.rows), 5)
                             minutes = sum(int(row.cells[0].text.split()[-2]) for row in table.rows[1:])
                         self.assertEqual(minutes, item["minutes"])
-                        pdf = self.download("pdf", selection=selection)
+                        pdf = self.download("pdf", selection=selection, teacher=teacher)
                         self.assertEqual(pdf.status_code, 200)
                         page, = PdfReader(BytesIO(pdf.data)).pages
                         self.assertAlmostEqual(float(page.mediabox.width), 595.28, delta=1)

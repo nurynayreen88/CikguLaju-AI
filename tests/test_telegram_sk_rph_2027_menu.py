@@ -171,6 +171,33 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         page, = PdfReader(BytesIO(self.documents[-1][1])).pages
         self.assertIn(reflection, " ".join(page.extract_text().split()))
 
+    def test_dpk_activity_minutes_follow_the_selected_slot_without_rewriting_actions(self):
+        action_cells = []
+        for duration, end_time, main_minutes, headings, edge_minutes in (
+            (30, "08:30", 23, (10, 13), (3, 4)),
+            (60, "09:00", 46, (20, 26), (6, 8)),
+        ):
+            word, pdf = self._select("dp2", "03", "SK27-DPK3-MATH-Y2-L034")
+            self.runtime.state[123]["rph_time"] = f"08:00 - {end_time}"
+            self.click(word)
+            self.click(pdf)
+            doc = Document(BytesIO(self.documents[-2][1]))
+            fields = {a.text: b.text for a, b in (row.cells for row in doc.tables[0].rows)}
+            self.assertEqual(fields["Lesson / tempoh"], f"Lesson 034 · {duration} minit")
+            phases = doc.tables[1]
+            self.assertEqual(phases.cell(2, 0).text, f"Aktiviti Utama\n({main_minutes} minit)")
+            self.assertTrue(phases.cell(1, 0).text.endswith(f"({edge_minutes[0]} minit)"))
+            self.assertTrue(phases.cell(3, 0).text.endswith(f"({edge_minutes[1]} minit)"))
+            runs = phases.cell(2, 1).paragraphs[0].runs
+            titles = (f"Aktiviti 1 ({headings[0]} minit)", f"Aktiviti 2 / PBD ({headings[1]} minit)")
+            self.assertEqual([run.text for run in runs if run.bold], list(titles))
+            action_cells.append([run.text for run in runs if not run.bold])
+            page, = PdfReader(BytesIO(self.documents[-1][1])).pages
+            text = " ".join(page.extract_text().split())
+            for label in (f"Aktiviti Utama ({main_minutes} minit)", *titles):
+                self.assertIn(label, text)
+        self.assertEqual(action_cells[0], action_cells[1])
+
     def test_every_exact_selection_can_send_word_and_pdf(self):
         keys = [key for key in self.buttons(self.click("sk27:home")) if key.startswith("sk27:set:")]
         counts = Counter()
@@ -422,6 +449,7 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                                         query_string=selection | {"unit": units[1]["value"]},
                                         headers=headers).status_code, 404)
         word, _ = self._select("mt4", "01", lesson)
+        self.runtime.state[123]["rph_time"] = "08:00 - 08:30"
         self.click(word)
         for data in (response.data, self.documents[-1][1]):
             doc = Document(BytesIO(data))

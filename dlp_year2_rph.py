@@ -144,6 +144,40 @@ def render(subject, unit, lesson, fmt, teacher):
     return output.getvalue()
 
 
+def _math_phase_schedule(activities, time):
+    phases = []
+    for label, teacher_action, pupil_action in activities:
+        name, _, duration = label.replace("\n", " · ").rpartition(" · ")
+        authored_minutes = re.fullmatch(r"([1-9]\d*) min(?:it)?", duration.strip())
+        if not authored_minutes or not name:
+            raise ValueError(f"Expected an authored phase duration for {label!r}")
+        minutes = int(authored_minutes[1])
+        phases.append((name.replace(" · ", " – "), minutes, teacher_action, pupil_action))
+
+    planned = sum(phase[1] for phase in phases)
+    total = planned
+    clock = r"([01]\d|2[0-3]):([0-5]\d)"
+    slot = re.fullmatch(rf"{clock} - {clock}", time)
+    if slot:
+        start_hour, start_minute, end_hour, end_minute = map(int, slot.groups())
+        slot_minutes = (end_hour - start_hour) * 60 + end_minute - start_minute
+        if slot_minutes >= len(phases):
+            total = slot_minutes
+
+    # Preserve each phase's share of the published plan and round cumulative
+    # boundaries so the whole schedule uses exactly the selected slot.
+    result = []
+    elapsed_planned = elapsed = 0
+    for index, (name, minutes, teacher_action, pupil_action) in enumerate(phases):
+        elapsed_planned += minutes
+        remaining_phases = len(phases) - index - 1
+        boundary = (elapsed_planned * total + planned // 2) // planned
+        boundary = max(elapsed + 1, min(boundary, total - remaining_phases))
+        result.append((name, boundary - elapsed, teacher_action, pupil_action))
+        elapsed = boundary
+    return total, result
+
+
 def _math_layout(heading, details, activities, teacher):
     """Map the authored Mathematics lesson to the original three-table RPH."""
     english = heading[0] == "Daily Lesson Plan"
@@ -163,7 +197,10 @@ def _math_layout(heading, details, activities, teacher):
         pass
     labels = (("Date", "Day", "Time", "Class", "Number of pupils", "Topic") if english
               else ("Tarikh", "Hari", "Masa", "Kelas", "Bilangan Murid", "Tajuk"))
-    time = re.sub(r"\s*[-–—]\s*", " - ", teacher.get("time") or "")
+    time = re.sub(r"\s*[-–—]\s*", " - ", (teacher.get("time") or "").strip())
+    total, timed_phases = _math_phase_schedule(activities[1:], time)
+    unit = "min" if english else "minit"
+    duration = f"{total} {unit}"
     values = (display_date, day, time, teacher.get("class"),
               teacher.get("students"), heading[2])
     year_label = re.search(r"\b(?:Year|Tahun) [1-6](?: SK)?\b", heading[1])[0]
@@ -178,26 +215,29 @@ def _math_layout(heading, details, activities, teacher):
             sk, _, sp = value.partition(" · SP ")
             fields.extend([("Standard Kandungan", sk), ("Standard Pembelajaran", "SP " + sp)])
         else:
+            if label in {"Lesson / PdP", "Lesson / tempoh", "PdP / Tempoh"}:
+                session = re.sub(r"\s*·\s*\d+ min(?:it)?$", "", value)
+                value = f"{session} · {duration}"
             fields.append((label, value))
 
     def actions(teacher_action, pupil_action):
         teacher_label, pupil_label = ("Teacher", "Pupils") if english else ("Guru", "Murid")
         return f"{teacher_label}: {teacher_action}\n{pupil_label}: {pupil_action}"
 
-    def phase_title(phase):
-        name, sep, duration = phase.replace("\n", " · ").rpartition(" · ")
-        return f"{name.replace(' · ', ' – ')} ({duration})" if sep else phase
+    def phase_title(name, minutes):
+        return f"{name} ({minutes} {unit})"
 
     header = (("Phase / Time", "Teaching and Learning Activities", "Notes") if english
               else ("Fasa / Masa", "Aktiviti Pengajaran & Pembelajaran", "Catatan"))
     main_heading = "Main Activities" if english else "Aktiviti Utama"
-    induction, *main, closure = activities[1:]
+    induction, *main, closure = timed_phases
+    main_heading += f"\n({sum(phase[1] for phase in main)} {unit})"
     blocks = []
-    for phase, teacher_action, pupil_action in main:
-        blocks.extend(((phase_title(phase), True), (actions(teacher_action, pupil_action), False)))
-    phases = [header, (phase_title(induction[0]), actions(*induction[1:]), ""),
+    for phase, minutes, teacher_action, pupil_action in main:
+        blocks.extend(((phase_title(phase, minutes), True), (actions(teacher_action, pupil_action), False)))
+    phases = [header, (phase_title(*induction[:2]), actions(*induction[2:]), ""),
               (main_heading, tuple(blocks), ""),
-              (phase_title(closure[0]), actions(*closure[1:]), "")]
+              (phase_title(*closure[:2]), actions(*closure[2:]), "")]
     return (title, *heading[1:]), fields, phases
 
 
