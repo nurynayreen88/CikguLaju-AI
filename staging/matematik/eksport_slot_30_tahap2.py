@@ -1,4 +1,4 @@
-"""Export the reviewed half-hour RPH for SK Mathematics Years 5 and 6."""
+"""Export the reviewed half-hour RPH for SK Mathematics Years 4 to 6."""
 
 import argparse
 from dataclasses import dataclass
@@ -26,6 +26,8 @@ PHASES = (
 
 
 def unit_name(year, unit):
+    if (year, unit) == (4, 1):
+        return 'Nombor dan operasi'
     if (year, unit) == (6, 8):
         return 'Pengurusan data dan kebolehjadian'
     return UNITS[unit - 1]
@@ -62,7 +64,7 @@ def load(year):
         if not all(field.strip() for field in fields) or plan.lesson not in schedule:
             raise ValueError(f'Tahun {year} · Lesson {plan.lesson:03d} mempunyai kandungan atau agihan yang tidak sah.')
         original = STANDARD.findall(sources[plan.lesson - 1]['SP'])
-        if original != [plan.sp]:
+        if original != plan.sp.split(', '):
             raise ValueError(f'Tahun {year} · SP Lesson {plan.lesson:03d} berbeza daripada RPT.')
         plans.append(plan)
     if [plan.lesson for plan in plans] != list(schedule):
@@ -135,7 +137,7 @@ def export(year, output):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--tahun', required=True, type=int, choices=(5, 6))
+    parser.add_argument('--tahun', required=True, type=int, choices=(4, 5, 6))
     parser.add_argument('--output', required=True, type=Path)
     args = parser.parse_args()
     export(args.tahun, args.output)

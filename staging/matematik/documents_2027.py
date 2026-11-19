@@ -1,4 +1,4 @@
-"""Shared Year 5 and 6 SK Mathematics source for 2027 RPT and RPH delivery."""
+"""Shared Years 4 to 6 SK Mathematics source for 2027 RPT and RPH delivery."""
 
 from dataclasses import dataclass
 from functools import lru_cache
@@ -12,7 +12,7 @@ from staging.matematik.eksport_tahap2 import complete_rpt_details, full_schedule
 from web.rph_teacher_reflection import clean_reflection
 
 
-YEARS = (5, 6)
+YEARS = (4, 5, 6)
 RENDERERS = {"word": _word, "pdf": _pdf}
 
 

@@ -1,4 +1,4 @@
-"""Export the complete SK Mathematics Years 5 and 6 review sets."""
+"""Export the complete SK Mathematics Years 4 to 6 review sets."""
 
 import argparse
 from collections import Counter
@@ -41,6 +41,13 @@ def hour_document(year, number, week, source, lesson):
     if not codes or any(code.rsplit('.', 1)[0] != standard.split()[0] for code in codes):
         raise ValueError(f'Kod SK/SP Tahun {year} Lesson {number:03d} tidak sepadan.')
     heading = ('Rancangan Pengajaran Harian', f'Matematik SK Tahun {year} · 2027', title)
+    if year == 4:
+        original = re.split(r' dan (?:memberikan|menjawab) sekurang-kurangnya', source['Objektif'], maxsplit=1)[0]
+        objective = re.sub(r'\s*\[SP [^\]]+\]', '', original).rstrip('. ')
+        if number == 22:
+            objective = 'Murid dapat menolak dua nombor serta menolak dua nombor daripada satu nombor melibatkan pecahan.'
+    else:
+        objective = f'Murid dapat {title[0].lower() + title[1:]} mengikut evidens PBD.'
     fields = [
         ('Unit', f'Unit {unit} {unit_name(year, unit)}'),
         ('Lesson / tempoh', f'Lesson {number:03d} · {minutes} minit'),
@@ -48,7 +55,7 @@ def hour_document(year, number, week, source, lesson):
         ('Maklumat kelas', 'Kelas ______ · Tarikh ______ · Masa ______ · Murid ______'),
         ('SK / SP', f"SK {standard} · SP {', '.join(codes)}"),
         ('Rujukan', f'DSKP Matematik Tahun {year} · Buku Teks SK, hlm. {pages}'),
-        ('Objektif', f'Murid dapat {title[0].lower() + title[1:]} mengikut evidens PBD.'),
+        ('Objektif', objective),
         ('Bahan', source['BBM']),
     ]
     phases = [source[key] for _, key, _, _ in PHASE_MAP]
@@ -114,7 +121,7 @@ def export(year, output):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--tahun', type=int, choices=(5, 6), required=True)
+    parser.add_argument('--tahun', type=int, choices=(4, 5, 6), required=True)
     parser.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
     export(args.tahun, args.output)
