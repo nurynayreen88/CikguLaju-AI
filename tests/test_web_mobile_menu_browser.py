@@ -4,7 +4,7 @@ Runs against the production HTML; no credentials or live services required.
 """
 from pathlib import Path
 import unittest
-from urllib.parse import urlsplit
+from urllib.parse import parse_qs, urlsplit
 from playwright.sync_api import expect, sync_playwright
 
 WEB = Path(__file__).resolve().parents[1] / "web_v1_static_preview"
@@ -152,6 +152,65 @@ class PhoneMenuLayoutTests(unittest.TestCase):
                         expect(guide).to_be_visible()
                 finally:
                     page.close()
+
+    def test_year_one_book_references_appear_after_each_lesson_selection(self):
+        page = self.browser.new_page(viewport={"width": 390, "height": 840})
+        textbook = "Buku Teks Jilid 1, hlm. 1–4"
+        activitybook = "Buku Aktiviti Jilid 1, hlm. 1–5"
+        lesson = {"value": "PDP1", "label": "PdP 1 • Banding kuantiti melalui padanan",
+                  "textbook_ref": textbook, "activitybook_ref": activitybook}
+        unit = {"value": "u" + "a" * 24, "label": "Unit 1: Nombor Bulat Hingga 100"}
+        options = {"subjects": [{"value": "MATH", "label": "Matematik"}],
+                   "units": [unit], "pdp": [lesson]}
+
+        def mock(route):
+            request = urlsplit(route.request.url)
+            if request.path == "/":
+                return route.fulfill(content_type="text/html", path=WEB / "index.html")
+            if request.path == "/api/auth/telegram/session":
+                return route.fulfill(json={"rph_access_mode": "trial", "rph_trial_remaining": 10})
+            if request.path == "/api/auth/capabilities":
+                return route.fulfill(json={"telegram_widget_enabled": False})
+            if request.path == "/api/options":
+                kind = parse_qs(request.query).get("kind", [""])[0]
+                return route.fulfill(json=options.get(kind, []))
+            if request.path == "/api/web/rph/hari-ini":
+                return route.fulfill(json={
+                    "date": "2026-11-19", "day": "Khamis", "count": 1, "holiday_notice": "",
+                    "entries": [{"year": 1, "class_name": "1 Bestari",
+                                 "subject_code": "MATH", "subject": "Matematik",
+                                 "start": "08:00", "end": "08:30", "can_prepare": True}],
+                })
+            if request.path.startswith("/assets/"):
+                asset = WEB / request.path.rsplit("/", 1)[-1]
+                if asset.is_file():
+                    return route.fulfill(path=asset)
+            return route.fulfill(status=404, json={})
+
+        page.route("**/*", lambda route: route.abort())
+        page.route(HOST + "/**", mock)
+        try:
+            page.goto(HOST + "/", wait_until="load")
+            page.get_by_role("button", name="Buka Sediakan RPH").click()
+            page.locator("#curriculum").select_option("kssr")
+            page.locator("#year").select_option("1")
+            page.locator("#rph-subject-search input").click()
+            page.get_by_role("option", name="Matematik", exact=True).click()
+            expect(page.locator("#unit option", has_text="Unit 1:")).to_have_count(1)
+            page.locator("#unit").select_option(unit["value"])
+            page.locator("#lesson").select_option("PDP1")
+            expected = f"Rujukan buku: {textbook} • {activitybook}"
+            expect(page.locator("#lesson-source-pages")).to_have_text(expected)
+            page.locator("#lesson").select_option("")
+            expect(page.locator("#lesson-source-pages")).to_be_hidden()
+
+            page.get_by_role("navigation", name="Menu utama").get_by_role(
+                "button", name="RPH Pantas").click()
+            page.locator("#today-0-unit").select_option(unit["value"])
+            page.locator("#today-0-lesson").select_option("PDP1")
+            expect(page.locator("#today-list").get_by_text(expected, exact=True)).to_be_visible()
+        finally:
+            page.close()
 
     def test_desktop_sidebar_remains_vertical(self):
         page=self.browser.new_page(viewport={"width":1200,"height":900})
