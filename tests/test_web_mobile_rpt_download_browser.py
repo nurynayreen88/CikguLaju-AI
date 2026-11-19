@@ -172,6 +172,9 @@ class MobileRptDownloadTests(unittest.TestCase):
                         {year:3,pdf_ready:true,download_enabled:true,docx_ready:true,
                          docx_url:"/api/rpt/2027/sjkc/matematik/3.docx",note:"Tarikh Kumpulan A dan B dalam satu RPT."}]},
                     {code:"science_dlp",label:"Science (DLP)",years:[
+                        {year:3,pdf_ready:true,download_enabled:true,year_label:"Year 3"}]},
+                    {code:"mathematics_dlp",label:"Mathematics (DLP)",years:[
+                        {year:1,pdf_ready:false,download_enabled:false,coming_soon:true},
                         {year:3,pdf_ready:true,download_enabled:true,year_label:"Year 3"}]}
                 ];
                 const realFetch=window.fetch;
@@ -191,11 +194,11 @@ class MobileRptDownloadTests(unittest.TestCase):
             word=page.locator("#rpt-download-word")
             pdf=page.locator("#rpt-download-mobile")
             self.assertEqual(curriculum.locator("option").all_text_contents(),
-                             ["Pilih kurikulum","KSSR (SK)","KSSR (SJKC)","KP2027","DLP"])
+                             ["Pilih kurikulum","KSSR (SK)","KSSR (SJKC)","KP2027"])
             self.assertTrue(year.is_disabled())
             self.assertTrue(subject_search.is_disabled())
             curriculum.select_option("kssr")
-            self.assertEqual(year.locator("option").all_text_contents(),["Pilih tahun","Tahun 2","Tahun 4"])
+            self.assertEqual(year.locator("option").all_text_contents(),["Pilih tahun","Tahun 2","Year 3","Tahun 4"])
             year.select_option("2")
             self.assertEqual(subject.locator("option").all_text_contents(),["Pilih atau cari subjek","English (SK)"])
             choose_subject("English (SK)")
@@ -258,15 +261,17 @@ class MobileRptDownloadTests(unittest.TestCase):
             self.assertEqual(word.get_attribute("href"),"/api/rpt/2027/sjkc/sains/6.docx")
             curriculum.select_option("kp2027")
             year.select_option("1")
+            self.assertEqual(subject.locator("option").all_text_contents(),
+                             ["Pilih atau cari subjek","English (SK) — Dalam Penyediaan"])
             choose_subject("English (SK)")
             self.assertEqual(page.locator("#rpt-status").inner_text(),"Dalam Penyediaan")
             self.assertFalse(pdf.is_visible())
-            curriculum.select_option("dlp")
-            self.assertEqual(year.locator("option").all_text_contents(),["Pilih tahun","Year 3"])
+            curriculum.select_option("kssr")
             year.select_option("3")
-            choose_subject("Science (DLP)")
-            self.assertTrue(pdf.is_visible())
-            self.assertIsNone(word.get_attribute("href"))
+            for label in ("Science (DLP)", "Mathematics (DLP)"):
+                choose_subject(label)
+                self.assertTrue(pdf.is_visible())
+                self.assertIsNone(word.get_attribute("href"))
         finally:
             page.close()
 
