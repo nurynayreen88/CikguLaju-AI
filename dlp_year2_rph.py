@@ -144,140 +144,89 @@ def render(subject, unit, lesson, fmt, teacher):
 
 def _word(output, heading, details, activities, reflection):
     from docx import Document
-    from docx.enum.table import WD_TABLE_ALIGNMENT
+    from docx.enum.text import WD_ALIGN_PARAGRAPH
     from docx.oxml import OxmlElement
-    from docx.oxml.ns import qn
-    from docx.shared import Mm, Pt, RGBColor
-    from web.rph_document_style import INK, TEAL, style_word_table
+    from docx.shared import Mm, Pt
+    from web.rph_document_style import style_word_table, word_gap, word_typography
 
     doc = Document()
     doc.core_properties.title = f"{heading[0]} · {heading[2]}"
     section = doc.sections[0]
     section.page_width, section.page_height = Mm(210), Mm(297)
     section.left_margin = section.right_margin = Mm(14)
-    section.top_margin = section.bottom_margin = Mm(15)
+    section.top_margin = section.bottom_margin = Mm(14)
+    word_typography(doc, 10.5)
 
-    normal = doc.styles["Normal"]
-    normal.font.name, normal.font.size = "Calibri", Pt(9.75)
-    normal.paragraph_format.space_after = Pt(3)
-    normal.paragraph_format.space_before = Pt(0)
-    normal.paragraph_format.line_spacing = 1.08
-    title = doc.styles["Title"]
-    title.font.name, title.font.size = "Calibri", Pt(18)
-    title.font.bold, title.font.color.rgb = True, RGBColor(0, 0, 0)
-    title.paragraph_format.space_after = Pt(3)
-    properties = title.element.get_or_add_pPr()
-    border = properties.find(qn("w:pBdr"))
-    if border is not None:
-        properties.remove(border)
-    doc.add_paragraph(heading[0], "Title")
-    subtitle = doc.add_paragraph()
-    subtitle.add_run(heading[1]).font.color.rgb = RGBColor.from_string(TEAL)
-    topic = doc.add_paragraph()
-    topic_text = topic.add_run(heading[2])
-    topic_text.bold = True
-    topic_text.font.color.rgb = RGBColor.from_string(INK)
-    topic_text.font.size = Pt(12)
-    topic.paragraph_format.space_after = Pt(8)
+    label = doc.add_paragraph()
+    label.add_run(heading[0]).bold = True
+    label.paragraph_format.space_after = Pt(3)
+    context = doc.add_paragraph(heading[1])
+    context.paragraph_format.space_after = Pt(4)
+    title = doc.add_paragraph(heading[2], "Title")
+    title.alignment = WD_ALIGN_PARAGRAPH.LEFT
 
-    def table(rows, widths, header=False):
+    def table(rows, widths, *, header=False, padding=55):
         element = doc.add_table(rows=0, cols=len(widths))
-        element.style = "Table Grid"
-        element.autofit = False
-        element.alignment = WD_TABLE_ALIGNMENT.CENTER
         for row in rows:
             line = element.add_row()
             line._tr.get_or_add_trPr().append(OxmlElement("w:cantSplit"))
             for cell, value in zip(line.cells, row, strict=True):
-                paragraph = cell.paragraphs[0]
-                paragraph.paragraph_format.space_before = Pt(2.3)
-                paragraph.paragraph_format.space_after = Pt(2.3)
-                paragraph.add_run(value)
-        style_word_table(element, widths, header=header)
+                cell.paragraphs[0].add_run(value)
+        style_word_table(element, widths, header=header, padding=padding)
+        return element
 
-    def gap():
-        paragraph = doc.add_paragraph()
-        paragraph.paragraph_format.space_after = Pt(0)
-        paragraph.paragraph_format.line_spacing = Pt(8)
-
-    table(details, (36, 146))
-    gap()
-    table(activities, (34, 74, 74), header=True)
-    gap()
-    table(reflection, (36, 146))
+    table(details, (34, 148))
+    word_gap(doc)
+    table(activities, (30, 76, 76), header=True, padding=60)
+    word_gap(doc)
+    tail = table(reflection, (34, 148))
+    for i, (name, _) in enumerate(reflection):
+        if name.casefold() in ("refleksi", "reflection"):
+            tail.rows[i].cells[0].merge(tail.rows[i].cells[1])
     doc.save(output)
 
 
-@lru_cache(maxsize=1)
-def _pdf_fonts():
-    from reportlab import rl_config
-    from reportlab.pdfbase.pdfmetrics import registerFont
-    from reportlab.pdfbase.ttfonts import TTFont
-
-    paths = (
-        Path("/usr/share/fonts/truetype/dejavu"),
-        *(Path(directory) for directory in rl_config.TTFSearchPath),
-    )
-    for directory in paths:
-        if (directory / "DejaVuSans.ttf").is_file() and (directory / "DejaVuSans-Bold.ttf").is_file():
-            registerFont(TTFont("DLP-Regular", str(directory / "DejaVuSans.ttf")))
-            registerFont(TTFont("DLP-Bold", str(directory / "DejaVuSans-Bold.ttf")))
-            return "DLP-Regular", "DLP-Bold"
-    return "Helvetica", "Helvetica-Bold"
-
-
 def _pdf(output, heading, details, activities, reflection):
-    from reportlab.lib import colors
+    from reportlab.lib.colors import black
     from reportlab.lib.pagesizes import A4
     from reportlab.lib.styles import ParagraphStyle
     from reportlab.lib.units import mm
     from reportlab.platypus import Frame, PageTemplate, BaseDocTemplate, Paragraph, Spacer, Table
-    from web.rph_document_style import GRID, INK, MIST, NAVY, STRIPE, TEAL
+    from web.rph_document_style import pdf_box_style, pdf_fonts
 
-    regular, bold = _pdf_fonts()
-    body = ParagraphStyle("DLP body", fontName=regular, fontSize=9, leading=11.6, textColor=colors.HexColor("#" + INK))
-    label = ParagraphStyle("DLP label", parent=body, fontName=bold)
-    title = ParagraphStyle("DLP title", parent=label, fontSize=18, leading=23, spaceAfter=3, textColor=colors.black)
-    subtitle = ParagraphStyle("DLP subtitle", parent=body, textColor=colors.HexColor("#" + TEAL))
-    header_label = ParagraphStyle("DLP header", parent=label, textColor=colors.white)
-    topic = ParagraphStyle("DLP topic", parent=label, fontSize=12, leading=16, spaceBefore=2)
+    regular, bold, serif = pdf_fonts()
+    body = ParagraphStyle("RPH body", fontName=regular, fontSize=10.5, leading=12.3, textColor=black)
+    label = ParagraphStyle("RPH label", parent=body, fontName=bold)
+    title = ParagraphStyle("RPH topic", parent=body, fontName=serif, fontSize=20, leading=22, spaceAfter=7)
+    context = ParagraphStyle("RPH context", parent=body, spaceAfter=4)
+    caption = ParagraphStyle("RPH caption", parent=label, fontSize=10, spaceAfter=3)
 
     def paragraph(value, style):
-        if regular == "Helvetica":
-            value = value.replace("ℓ", "L").replace("−", "–")
         return Paragraph(escape(value).replace("\n", "<br/>"), style)
 
-    def table(rows, widths, header=False):
-        cells = [[paragraph(value, header_label if header and i == 0 else label if j == 0 else body)
-                  for j, value in enumerate(row)] for i, row in enumerate(rows)]
-        result = Table(cells, colWidths=[width * mm for width in widths], repeatRows=int(header))
-        commands = [
-            ("GRID", (0, 0), (-1, -1), 0.35, colors.HexColor("#" + GRID)),
-            ("ROWBACKGROUNDS", (1, 0), (-1, -1), [colors.white, colors.HexColor("#" + STRIPE)]),
-            ("BACKGROUND", (0, 0), (0, -1), colors.HexColor("#" + MIST)),
-            ("VALIGN", (0, 0), (-1, -1), "TOP"),
-            ("TOPPADDING", (0, 0), (-1, -1), 4),
-            ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
-        ]
-        if header:
-            commands.append(("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#" + NAVY)))
-        else:
-            commands.append(("LINEABOVE", (0, 0), (-1, 0), 1.5, colors.HexColor("#" + TEAL)))
-        result.setStyle(commands)
-        return result
+    def table(rows, widths, *, header=False, padding=2.75, span_reflection=False):
+        cells = []
+        commands = pdf_box_style(padding)
+        for index, row in enumerate(rows):
+            if span_reflection and row[0].casefold() in ("refleksi", "reflection"):
+                cells.append([[paragraph(row[0], label), paragraph(row[1], body)], ""])
+                commands.append(("SPAN", (0, index), (1, index)))
+            else:
+                cells.append([paragraph(value, label if col == 0 or (header and index == 0) else body)
+                              for col, value in enumerate(row)])
+        return Table(cells, colWidths=[width * mm for width in widths], repeatRows=int(header), style=commands)
 
     doc = BaseDocTemplate(output, pagesize=A4, title=f"{heading[0]} · {heading[2]}")
-    frame = Frame(14 * mm, 15 * mm, 182 * mm, 267 * mm,
+    frame = Frame(14 * mm, 14 * mm, 182 * mm, 269 * mm,
                   leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
-    doc.addPageTemplates(PageTemplate("DLP A4", frames=[frame]))
+    doc.addPageTemplates(PageTemplate("RPH A4", frames=[frame]))
     doc.build([
-        paragraph(heading[0], title),
-        paragraph(heading[1], subtitle),
-        paragraph(heading[2], topic),
-        Spacer(1, 8),
-        table(details, (36, 146)),
-        Spacer(1, 8),
-        table(activities, (34, 74, 74), header=True),
-        Spacer(1, 8),
-        table(reflection, (36, 146)),
+        paragraph(heading[0], caption),
+        paragraph(heading[1], context),
+        paragraph(heading[2], title),
+        table(details, (34, 148)),
+        Spacer(1, 6),
+        table(activities, (30, 76, 76), header=True, padding=3),
+        Spacer(1, 6),
+        table(reflection, (34, 148), span_reflection=True),
     ])
