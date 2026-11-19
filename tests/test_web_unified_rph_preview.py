@@ -152,8 +152,10 @@ class UnifiedWebRPHTests(unittest.TestCase):
                     layout = approved.get_json()["telegram_layout"]
                     header = {item["label"]: item["value"] for item in layout["header"]}
                     self.assertNotIn("DRAF", header["Topic"])
-                    self.assertEqual(header["Main Learning Standard"], "1.2.1")
-                    self.assertEqual(header["Complementary Learning Standard"], "3.2.1")
+                    self.assertTrue(header["Main Learning Standard"].startswith(
+                        "1.2.1 Understand with support the main idea"))
+                    self.assertTrue(header["Complementary Learning Standard"].startswith(
+                        "3.2.1 Understand the main idea"))
                     self.assertIn("missing words", layout["phases"][1]["activity"])
                     self.assertIn("44 min", layout["phases"][1]["notes"])
                     self.assertIn("Workbook p.4 Exercise 2", layout["phases"][1]["activity"])

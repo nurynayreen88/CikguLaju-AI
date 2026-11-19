@@ -10,7 +10,9 @@ from docx import Document
 from PIL import Image
 from flask import Flask
 from web.telegram_rph_parity import build_layout
-from web.unified_rph_web import create_blueprint, source_records, _docx
+from web.unified_rph_web import (
+    SUBJECT_LABELS, create_blueprint, english_index, source_records, verified_preview, _docx,
+)
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -70,6 +72,28 @@ class WebLogoAndTables(unittest.TestCase):
         self.assertEqual(layout["phases"][1]["activity"],
                          "Activity 1:\nPupils work out which task takes 15 minutes.")
         self.assertIn({"label": "Time", "value": "09:00 - 09:30"}, layout["header"])
+
+    def test_all_fixed_english_sow_lessons_have_both_roles_and_descriptions(self):
+        checked = 0
+        for year in range(2, 7):
+            for row in source_records(year, "ENGLISH"):
+                lesson = row["lesson"]
+                sow = english_index()[f"{year}/{lesson}"]
+                if sow["teacher_selected"]:
+                    continue
+                source = verified_preview(year, "ENGLISH", row["unit"], row["token"])
+                header = {field["label"]: field["value"]
+                          for field in build_layout(source, SUBJECT_LABELS)["header"]}
+                for role, key in (("Main", "main_ls"), ("Complementary", "complementary_ls")):
+                    with self.subTest(year=year, lesson=lesson, role=role):
+                        learning = sow[key]
+                        content = learning.rsplit(".", 1)[0]
+                        for label, code in (("Learning", learning), ("Content", content)):
+                            value = header[f"{role} {label} Standard"]
+                            self.assertTrue(value.startswith(code + " "), value)
+                            self.assertTrue(any(c.isalpha() for c in value[len(code):]), value)
+                checked += 1
+        self.assertEqual(checked, 767)
 
     @patch("web.unified_rph_web._has_paid_access",return_value=True)
     @patch("web.unified_rph_web._account",return_value=({"telegram_user_id":123},None))

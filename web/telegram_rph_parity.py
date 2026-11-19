@@ -6,6 +6,7 @@ curriculum standards. One contract powers print preview and Word downloads.
 from datetime import date
 import re
 
+from web.english_rph_standard_descriptions import describe_rows
 from web.rph_phase_display import activity_without_schedule, phase_heading
 
 COMMON = ("MATA PELAJARAN","TAHUN/TINGKATAN","TARIKH","HARI","MASA","KELAS",
@@ -74,8 +75,8 @@ def classify(label):
         (r"^(activity|aktiviti|main activities|main activity|langkah [1-9]|reinforcement|pengukuhan|assessment / pbd|pbd / reinforcement|pentaksiran pbd)","main"),
         (r"^(main sk/sp|main content standard|main cs)","main_standard"),
         (r"^(complementary sk/sp|complementary content standard|complementary cs)","comp_standard"),
-        (r"^(main ls|main learning standard)","main_ls"),
-        (r"^(complementary ls|complementary learning standard)","comp_ls"),
+        (r"^(main ls|main sp|main learning standard)","main_ls"),
+        (r"^(complementary ls|complementary sp|complementary learning standard)","comp_ls"),
         (r"^(standard kandungan|sk)$","sk"),
         (r"^(standard pembelajaran|sp)$","sp"),
         (r"^(learning objective|learning objectives|objectives|objective|objektif)","objectives"),
@@ -179,6 +180,8 @@ def build_layout(data,subject_labels):
         meta["PENGETAHUAN SEDIA ADA"]=(
             ("" if meta["PENGETAHUAN SEDIA ADA"]=="—" else meta["PENGETAHUAN SEDIA ADA"]+"\n")+
             "\n".join(extra))
+    if english:
+        meta = describe_rows(data["year"], meta, fixed_lesson=data.get("lesson"))
     return {
         "style":"telegram-native-rph-v1",
         "title":"DAILY LESSON PLAN" if english else "RANCANGAN PENGAJARAN HARIAN",

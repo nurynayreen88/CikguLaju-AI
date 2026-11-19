@@ -14,8 +14,10 @@ from web.english_y6_standalone_runtime import adapt_rows
 
 FIELDS = (
     ("TAJUK", "Topic"),
-    ("STANDARD KANDUNGAN", "Content Standard"),
-    ("STANDARD PEMBELAJARAN", "Learning Standard"),
+    ("MAIN CONTENT STANDARD", "Main Content Standard"),
+    ("MAIN LEARNING STANDARD", "Main Learning Standard"),
+    ("COMPLEMENTARY CONTENT STANDARD", "Complementary Content Standard"),
+    ("COMPLEMENTARY LEARNING STANDARD", "Complementary Learning Standard"),
     ("OBJEKTIF PEMBELAJARAN", "Learning Objectives"),
     ("KRITERIA KEJAYAAN", "Success Criteria"),
     ("BAHAN BANTU MENGAJAR", "Teaching and Learning Materials"),
@@ -36,7 +38,9 @@ def source_rows(lesson):
     rows = adapt_rows(selection, initial)
     if rows is initial or not rows.get("AKTIVITI UTAMA"):
         return None
-    return rows
+    from web.english_rph_standard_descriptions import describe_rows
+
+    return describe_rows(6, rows)
 
 
 def _docx_paragraph(text, *, bold=False):
