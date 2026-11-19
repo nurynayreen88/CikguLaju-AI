@@ -4,7 +4,6 @@ import hashlib
 from io import BytesIO
 import json
 from pathlib import Path
-import re
 import unittest
 
 from docx import Document
@@ -59,10 +58,9 @@ class DlpScienceYear3Tests(unittest.TestCase):
                 word = Document(BytesIO(render(SCIENCE, unit, lesson, "word", teacher)))
                 details = {a.text: b.text for a, b in (r.cells for r in word.tables[0].rows)}
                 self.assertEqual(details["Learning objective"], pbd)
-                self.assertEqual(details["Lesson / PdP"], f"{lesson_label} · {plan['minutes']} min")
+                self.assertEqual(details["Lesson / PdP"], lesson_label)
                 self.assertEqual(details["RPT 2027 dates"], " · ".join(plan["rpt_dates"]))
-                durations = [int(re.search(r"(\d+) min", r.cells[0].text)[1])
-                             for r in word.tables[1].rows[1:]]
-                self.assertEqual(durations, [phase["minutes"] for phase in plan["phases"]])
+                phases = [r.cells[0].text for r in word.tables[1].rows[1:]]
+                self.assertEqual(phases, [phase["phase"] for phase in plan["phases"]])
                 self.assertTrue(render(SCIENCE, unit, lesson, "pdf", teacher).startswith(b"%PDF-"))
         self.assertEqual(reviews, 4)

@@ -58,7 +58,8 @@ class MathematicsDLPYear6ReviewTests(unittest.TestCase):
                 self.assertAlmostEqual(section.page_height.mm, 297, places=1)
                 details = {row.cells[0].text: row.cells[1].text for row in word.tables[0].rows}
                 self.assertEqual(details["Topic"], plan["title"])
-                for label, key in (("Lesson / PdP", "label"), ("RPT date ranges", "dates"),
+                self.assertEqual(details["Lesson / PdP"], plan["label"].rsplit(" · ", 1)[0])
+                for label, key in (("RPT date ranges", "dates"),
                                    ("Standards", "standards"), ("Book reference", "reference"),
                                    ("Learning objective", "objective")):
                     self.assertEqual(details[label], plan[key])
@@ -77,7 +78,8 @@ class MathematicsDLPYear6ReviewTests(unittest.TestCase):
                 self.assertAlmostEqual(float(page.mediabox.width), 595.28, places=1)
                 self.assertAlmostEqual(float(page.mediabox.height), 841.89, places=1)
                 page_text = " ".join(page.extract_text().split())
-                for field in ("title", "label", "dates", "standards", "reference", "objective", "evidence"):
+                self.assertIn(plan["label"].rsplit(" · ", 1)[0], page_text)
+                for field in ("title", "dates", "standards", "reference", "objective", "evidence"):
                     self.assertIn(" ".join(plan[field].split()), page_text)
 
 
@@ -146,7 +148,8 @@ class MathematicsDLPYear6DownloadTests(unittest.TestCase):
                             text = " ".join(pdf.pages[0].extract_text().split())
                             for field in ("title", "standards", "reference", "evidence"):
                                 self.assertIn(" ".join(plan[field].split()), text)
-                        self.assertIn(plan["label"].split(" · ")[0] + " · 90 min", text)
+                        self.assertIn(plan["label"].rsplit(" · ", 1)[0], text)
+                        self.assertNotIn(plan["label"].rsplit(" · ", 1)[0] + " · 90 min", text)
                         for value in ("6 Bestari", "18/10/2027", "08:00 - 09:30", "30"):
                             self.assertIn(value, text)
         self.assertEqual(ids, list(expected))

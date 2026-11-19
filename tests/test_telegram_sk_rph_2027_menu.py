@@ -152,12 +152,12 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         phases = doc.tables[1]
         main = phases.cell(2, 1).paragraphs[0]
         headings = [run.text for run in main.runs if run.bold]
-        expected = ["Aktiviti 1 – Demonstrasi (15 minit)",
-                    "Aktiviti 2 – Latihan Berpandu (15 minit)",
-                    "Aktiviti 3 – PBD Individu (20 minit)"]
+        expected = ["Aktiviti 1 – Demonstrasi",
+                    "Aktiviti 2 – Latihan Berpandu",
+                    "Aktiviti 3 – PBD Individu"]
         self.assertEqual(headings, expected)
-        self.assertIn("(5 minit)", phases.cell(1, 0).text)
-        self.assertIn("(5 minit)", phases.cell(3, 0).text)
+        self.assertEqual(phases.cell(1, 0).text, "Set Induksi")
+        self.assertEqual(phases.cell(3, 0).text, "Penutup")
         self.assertIn("14 puluh dan 12 sa", main.text)
         self.assertIn("531 − 247 dan 620 − 156", main.text)
         page, = PdfReader(BytesIO(self.documents[1][1])).pages
@@ -171,32 +171,31 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         page, = PdfReader(BytesIO(self.documents[-1][1])).pages
         self.assertIn(reflection, " ".join(page.extract_text().split()))
 
-    def test_dpk_activity_minutes_follow_the_selected_slot_without_rewriting_actions(self):
-        action_cells = []
-        for duration, end_time, main_minutes, headings, edge_minutes in (
-            (30, "08:30", 23, (10, 13), (3, 4)),
-            (60, "09:00", 46, (20, 26), (6, 8)),
-        ):
+    def test_dpk_plan_uses_the_same_activities_at_different_class_times(self):
+        activity_tables = []
+        for end_time in ("08:30", "09:00"):
             word, pdf = self._select("dp2", "03", "SK27-DPK3-MATH-Y2-L034")
-            self.runtime.state[123]["rph_time"] = f"08:00 - {end_time}"
+            time = f"08:00 - {end_time}"
+            self.runtime.state[123]["rph_time"] = time
             self.click(word)
             self.click(pdf)
             doc = Document(BytesIO(self.documents[-2][1]))
             fields = {a.text: b.text for a, b in (row.cells for row in doc.tables[0].rows)}
-            self.assertEqual(fields["Lesson / tempoh"], f"Lesson 034 · {duration} minit")
+            self.assertEqual(fields["Lesson"], "Lesson 034")
+            self.assertEqual(fields["Masa"], time)
             phases = doc.tables[1]
-            self.assertEqual(phases.cell(2, 0).text, f"Aktiviti Utama\n({main_minutes} minit)")
-            self.assertTrue(phases.cell(1, 0).text.endswith(f"({edge_minutes[0]} minit)"))
-            self.assertTrue(phases.cell(3, 0).text.endswith(f"({edge_minutes[1]} minit)"))
+            self.assertEqual([row.cells[0].text for row in phases.rows],
+                             ["Fasa", "Set induksi", "Aktiviti Utama", "Penutup"])
+            titles = ("Aktiviti 1", "Aktiviti 2 / PBD")
             runs = phases.cell(2, 1).paragraphs[0].runs
-            titles = (f"Aktiviti 1 ({headings[0]} minit)", f"Aktiviti 2 / PBD ({headings[1]} minit)")
             self.assertEqual([run.text for run in runs if run.bold], list(titles))
-            action_cells.append([run.text for run in runs if not run.bold])
+            activity_tables.append([[cell.text for cell in row.cells] for row in phases.rows])
             page, = PdfReader(BytesIO(self.documents[-1][1])).pages
             text = " ".join(page.extract_text().split())
-            for label in (f"Aktiviti Utama ({main_minutes} minit)", *titles):
+            for label in (time, "Set induksi", "Aktiviti Utama", *titles, "Penutup"):
                 self.assertIn(label, text)
-        self.assertEqual(action_cells[0], action_cells[1])
+            self.assertNotRegex(text, r"\(\d+ minit\)")
+        self.assertEqual(activity_tables[0], activity_tables[1])
 
     def test_every_exact_selection_can_send_word_and_pdf(self):
         keys = [key for key in self.buttons(self.click("sk27:home")) if key.startswith("sk27:set:")]
@@ -425,7 +424,7 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
             self.assertEqual(self.runtime._continue_after_rph_time(123, state), "legacy materials")
             self.assertEqual(self.click("matsubmit2528"), ("legacy", "matsubmit2528"))
 
-    def test_year_four_preserves_grouped_standards_and_thirty_minute_plan(self):
+    def test_year_four_preserves_grouped_standards_and_class_time(self):
         app = Flask(__name__)
         register_downloads(app)
         client = app.test_client()
@@ -454,7 +453,7 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         for data in (response.data, self.documents[-1][1]):
             doc = Document(BytesIO(data))
             fields = {row.cells[0].text: row.cells[1].text for row in doc.tables[0].rows}
-            self.assertIn("30 minit", fields["Lesson / tempoh"])
+            self.assertEqual(fields["Masa"], "08:00 - 08:30")
             self.assertIn("SP 1.5.1, 1.5.2", fields["Standard Pembelajaran"])
 
     def test_private_web_render_matches_telegram_for_year_six_ratio(self):
