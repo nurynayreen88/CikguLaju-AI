@@ -5,6 +5,8 @@ on:
     paths:
       - 'web/native_telegram_sequence_rph_client.py'
       - 'web/unified_rph_web.py'
+      - 'web/telegram_rph_parity.py'
+      - 'web/rph_phase_display.py'
       - 'web_v1_static_preview/index.html'
       - 'tools/run_web_v1_preview.py'
       - 'tests/test_web_native_sequence_rph_bridge.py'
