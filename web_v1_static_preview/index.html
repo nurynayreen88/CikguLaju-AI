@@ -111,6 +111,7 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 .sidebar-more[open]>summary::after{transform:rotate(225deg)}
 .sidebar-more>summary:hover,.sidebar-more[open]>summary{background:#eef5f9}
 .sidebar-more-list{display:flex;flex-direction:column;gap:5px;margin-top:6px}
+.sidebar-more:not([open])>.sidebar-more-list{display:none}
 .sidebar-logout{margin-top:12px;min-height:44px;width:100%;text-align:center;border:1px solid #d5dfe6;background:white;border-radius:11px;padding:9px 12px;font:inherit;font-weight:650;color:#43576b;cursor:pointer}
 .app-main{min-width:0;background:#fff;border:1px solid #d7e5e9;border-radius:18px;padding:clamp(20px,4vw,36px);box-shadow:0 8px 28px #153b5b0b}
 .app-view{min-width:0}
@@ -497,7 +498,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <nav class="sidebar-menu" aria-label="Menu utama">
     <button type="button" class="sidebar-tab is-active" data-web-view="guide" aria-controls="view-guide" aria-current="page"><span aria-hidden="true">📖</span> Panduan</button>
     <button type="button" class="sidebar-tab" data-web-view="account" aria-controls="view-account"><span aria-hidden="true">👤</span> Profil &amp; Akses</button>
-    <button type="button" class="sidebar-tab" data-web-view="today" aria-controls="view-today"><span aria-hidden="true">⚡</span><span class="sidebar-tab-label">RPH Pantas<small>Hari Ini &amp; Minggu Ini</small></span></button>
+    <button type="button" class="sidebar-tab" data-web-view="today" aria-controls="view-today"><span aria-hidden="true">⚡</span><span class="sidebar-tab-label">RPH Pantas <small>Hari Ini &amp; Minggu Ini</small></span></button>
     <button type="button" class="sidebar-tab" data-web-view="rph" aria-controls="view-rph"><span aria-hidden="true">📘</span> Sediakan RPH</button>
     <button type="button" class="sidebar-tab" data-web-view="rpt" aria-controls="view-rpt"><span aria-hidden="true">📅</span> RPT 2027</button>
     <button type="button" class="sidebar-tab" data-web-view="payment" aria-controls="view-payment"><span aria-hidden="true">🏆</span> Rakan Pembangun</button>
