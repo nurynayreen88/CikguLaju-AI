@@ -124,7 +124,8 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
 
     def test_dlp_year3_api_downloads_every_exact_lesson(self):
         app = Flask(__name__)
-        app.register_blueprint(create_native_rph_blueprint(self.runtime))
+        runtime = SimpleNamespace(create_word_file=lambda *_: None, create_pdf_file=lambda *_: None)
+        app.register_blueprint(create_native_rph_blueprint(runtime))
         client = app.test_client()
         path = "/internal/rph/v1/dlp"
         token = "dlp-year-3-test-token-for-local-app"
