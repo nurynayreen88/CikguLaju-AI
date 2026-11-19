@@ -110,6 +110,21 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         self.assertEqual(len(self.documents), 16)
         self.assertEqual(self.credits, 8)
 
+    def test_primary_mathematics_opens_the_matching_year_set(self):
+        self.runtime.state[123] = {"task": "rph"}
+        self.click("cv_primary_kssr")
+        for year in (2, 3):
+            self.click(f"year_{year}")
+            units = self.buttons(self.click("sub_Matematik"))
+            self.assertIn("back_subjects", units)
+            first = next(item for item in units if item.startswith(f"sk27:unit:dp{year}:"))
+            lessons = self.buttons(self.click(first))
+            self.assertIn(f"sk27:kssr:dp{year}", lessons)
+            choice = next(item for item in lessons if item.startswith(f"sk27:pick:dp{year}:"))
+            self.assertEqual(self.click(choice), "existing class picker")
+            self.assertEqual(self.runtime.state[123]["curriculum_version"], "existing")
+            self.assertTrue(self.runtime.state[123]["lesson_no"].startswith(f"SK27-DPK3-MATH-Y{year}-"))
+
     def test_every_exact_selection_can_send_word_and_pdf(self):
         keys = [key for key in self.buttons(self.click("sk27:home")) if key.startswith("sk27:set:")]
         counts = Counter()
@@ -158,7 +173,8 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                 })
                 self.assertEqual(response.status_code, 200, response.get_json(silent=True))
                 document = Document(BytesIO(response.data))
-                self.assertIn("DPK Edisi 3", document.paragraphs[1].text)
+                self.assertEqual(document.paragraphs[1].text, f"Matematik SK Tahun {year} · 2027")
+                self.assertIn("DPK Edisi 3", document.tables[0].rows[5].cells[1].text)
                 self.assertIn("SP " + codes, document.tables[0].rows[4].cells[1].text)
                 self.assertIn("Semak sekali lagi.", document.tables[-1].rows[1].cells[1].text)
 

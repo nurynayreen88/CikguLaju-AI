@@ -148,6 +148,7 @@ def _word(output, heading, details, activities, reflection):
     from docx.oxml import OxmlElement
     from docx.oxml.ns import qn
     from docx.shared import Mm, Pt, RGBColor
+    from web.rph_document_style import INK, TEAL, style_word_table
 
     doc = Document()
     doc.core_properties.title = f"{heading[0]} · {heading[2]}"
@@ -157,12 +158,12 @@ def _word(output, heading, details, activities, reflection):
     section.top_margin = section.bottom_margin = Mm(15)
 
     normal = doc.styles["Normal"]
-    normal.font.name, normal.font.size = "Calibri", Pt(10)
+    normal.font.name, normal.font.size = "Calibri", Pt(9.75)
     normal.paragraph_format.space_after = Pt(3)
     normal.paragraph_format.space_before = Pt(0)
     normal.paragraph_format.line_spacing = 1.08
     title = doc.styles["Title"]
-    title.font.name, title.font.size = "Calibri", Pt(20)
+    title.font.name, title.font.size = "Calibri", Pt(18)
     title.font.bold, title.font.color.rgb = True, RGBColor(0, 0, 0)
     title.paragraph_format.space_after = Pt(3)
     properties = title.element.get_or_add_pPr()
@@ -170,9 +171,13 @@ def _word(output, heading, details, activities, reflection):
     if border is not None:
         properties.remove(border)
     doc.add_paragraph(heading[0], "Title")
-    doc.add_paragraph(heading[1])
+    subtitle = doc.add_paragraph()
+    subtitle.add_run(heading[1]).font.color.rgb = RGBColor.from_string(TEAL)
     topic = doc.add_paragraph()
-    topic.add_run(heading[2]).bold = True
+    topic_text = topic.add_run(heading[2])
+    topic_text.bold = True
+    topic_text.font.color.rgb = RGBColor.from_string(INK)
+    topic_text.font.size = Pt(12)
     topic.paragraph_format.space_after = Pt(8)
 
     def table(rows, widths, header=False):
@@ -180,21 +185,15 @@ def _word(output, heading, details, activities, reflection):
         element.style = "Table Grid"
         element.autofit = False
         element.alignment = WD_TABLE_ALIGNMENT.CENTER
-        for column, width in zip(element.columns, widths):
-            column.width = Mm(width)
-        for i, row in enumerate(rows):
+        for row in rows:
             line = element.add_row()
             line._tr.get_or_add_trPr().append(OxmlElement("w:cantSplit"))
-            for j, (cell, value, width) in enumerate(zip(line.cells, row, widths)):
-                cell.width = Mm(width)
-                if j == 0 or (header and i == 0):
-                    shading = OxmlElement("w:shd")
-                    shading.set(qn("w:fill"), "E8F0F2")
-                    cell._tc.get_or_add_tcPr().append(shading)
+            for cell, value in zip(line.cells, row, strict=True):
                 paragraph = cell.paragraphs[0]
-                paragraph.paragraph_format.space_before = Pt(3)
-                paragraph.paragraph_format.space_after = Pt(3)
-                paragraph.add_run(value).bold = j == 0 or (header and i == 0)
+                paragraph.paragraph_format.space_before = Pt(2.3)
+                paragraph.paragraph_format.space_after = Pt(2.3)
+                paragraph.add_run(value)
+        style_word_table(element, widths, header=header)
 
     def gap():
         paragraph = doc.add_paragraph()
@@ -203,7 +202,7 @@ def _word(output, heading, details, activities, reflection):
 
     table(details, (36, 146))
     gap()
-    table(activities, (36, 73, 73), header=True)
+    table(activities, (34, 74, 74), header=True)
     gap()
     table(reflection, (36, 146))
     doc.save(output)
@@ -233,11 +232,14 @@ def _pdf(output, heading, details, activities, reflection):
     from reportlab.lib.styles import ParagraphStyle
     from reportlab.lib.units import mm
     from reportlab.platypus import Frame, PageTemplate, BaseDocTemplate, Paragraph, Spacer, Table
+    from web.rph_document_style import GRID, INK, MIST, NAVY, STRIPE, TEAL
 
     regular, bold = _pdf_fonts()
-    body = ParagraphStyle("DLP body", fontName=regular, fontSize=9, leading=12)
+    body = ParagraphStyle("DLP body", fontName=regular, fontSize=9, leading=11.6, textColor=colors.HexColor("#" + INK))
     label = ParagraphStyle("DLP label", parent=body, fontName=bold)
-    title = ParagraphStyle("DLP title", parent=label, fontSize=19, leading=23, spaceAfter=3)
+    title = ParagraphStyle("DLP title", parent=label, fontSize=18, leading=23, spaceAfter=3, textColor=colors.black)
+    subtitle = ParagraphStyle("DLP subtitle", parent=body, textColor=colors.HexColor("#" + TEAL))
+    header_label = ParagraphStyle("DLP header", parent=label, textColor=colors.white)
     topic = ParagraphStyle("DLP topic", parent=label, fontSize=12, leading=16, spaceBefore=2)
 
     def paragraph(value, style):
@@ -246,18 +248,21 @@ def _pdf(output, heading, details, activities, reflection):
         return Paragraph(escape(value).replace("\n", "<br/>"), style)
 
     def table(rows, widths, header=False):
-        cells = [[paragraph(value, label if j == 0 or (header and i == 0) else body)
+        cells = [[paragraph(value, header_label if header and i == 0 else label if j == 0 else body)
                   for j, value in enumerate(row)] for i, row in enumerate(rows)]
         result = Table(cells, colWidths=[width * mm for width in widths], repeatRows=int(header))
         commands = [
-            ("GRID", (0, 0), (-1, -1), 0.45, colors.HexColor("#859298")),
-            ("BACKGROUND", (0, 0), (0, -1), colors.HexColor("#E8F0F2")),
+            ("GRID", (0, 0), (-1, -1), 0.35, colors.HexColor("#" + GRID)),
+            ("ROWBACKGROUNDS", (1, 0), (-1, -1), [colors.white, colors.HexColor("#" + STRIPE)]),
+            ("BACKGROUND", (0, 0), (0, -1), colors.HexColor("#" + MIST)),
             ("VALIGN", (0, 0), (-1, -1), "TOP"),
             ("TOPPADDING", (0, 0), (-1, -1), 4),
             ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
         ]
         if header:
-            commands.append(("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#E8F0F2")))
+            commands.append(("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#" + NAVY)))
+        else:
+            commands.append(("LINEABOVE", (0, 0), (-1, 0), 1.5, colors.HexColor("#" + TEAL)))
         result.setStyle(commands)
         return result
 
@@ -267,12 +272,12 @@ def _pdf(output, heading, details, activities, reflection):
     doc.addPageTemplates(PageTemplate("DLP A4", frames=[frame]))
     doc.build([
         paragraph(heading[0], title),
-        paragraph(heading[1], body),
+        paragraph(heading[1], subtitle),
         paragraph(heading[2], topic),
         Spacer(1, 8),
         table(details, (36, 146)),
         Spacer(1, 8),
-        table(activities, (36, 73, 73), header=True),
+        table(activities, (34, 74, 74), header=True),
         Spacer(1, 8),
         table(reflection, (36, 146)),
     ])

@@ -17,8 +17,7 @@ from rpt_2027.sjkc.matematik import documents as matematik_sjkc
 from rpt_2027.sjkt.matematik import documents as matematik_sjkt
 from rpt_2027.psv.telegram_downloads import pdf_ready as psv_pdf_ready, build_pdf as build_psv_pdf
 from rpt_2027.matematik.telegram_downloads import pdf_ready as math_pdf_ready
-from rpt_2027.matematik.sk_documents import DIGESTS as math_sk_editions
-from rpt_2027.matematik.sk_documents import document_path as math_sk_document
+from rpt_2027.matematik.sk_documents import DIGESTS as math_sk_editions, DPK_DIGESTS as math_dpk_editions
 from rpt_2027.bahasa_melayu.telegram_downloads import pdf_ready as bm_pdf_ready
 from rpt_2027.pendidikan_islam.telegram_downloads import pdf_ready as pi_pdf_ready
 from rpt_2027.pjpk.telegram_downloads import pdf_ready as pjpk_pdf_ready
@@ -160,14 +159,11 @@ def install(ns):
             if bm_pdf_ready(year):
                 kb.append([{"text": "📥 Bahasa Melayu (PDF • DRAF)",
                             "callback_data": "rpt2027_bm_pdf_%d" % year}])
-            math_label = ("Matematik SK (PDF • Kumpulan A/B)" if year in math_sk_editions
+            math_label = ("Matematik SK (PDF • Kumpulan A/B)" if year in math_sk_editions or year in math_dpk_editions
                           else "Matematik (PDF v28 • DRAF/SEMENTARA)")
             if math_pdf_ready(year, ns=ns):
                 kb.append([{"text": f"📥 {math_label}",
                             "callback_data": "rpt2027_math_pdf_%d" % year}])
-            if math_sk_document(year, dpk=True) is not None:
-                kb.append([{"text": "📥 Matematik SK (PDF • DPK Edisi 3)",
-                            "callback_data": "rpt2027_math_dpk_pdf_%d" % year}])
             if pi_pdf_ready(year):
                 kb.append([{"text": "📥 Pendidikan Islam (PDF • Cadangan)",
                             "callback_data": "rpt2027_pi_pdf_%d" % year}])
