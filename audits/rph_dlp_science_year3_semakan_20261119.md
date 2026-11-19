@@ -33,3 +33,5 @@ Semakan 20 November 2026 memadankan 13 CS dan 60 LS dengan DSKP edisi bahasa Ing
 | Review 04 | 9.1.3, 10.1.2 |
 
 Kesemua 112 respons Word/PDF lulus ujian setempat pada laluan penjana Web. Sebanyak 56 PDF terus dan 56 Word selepas penukaran ke PDF disahkan satu halaman A4. Semakan teks mengesahkan kod dan deskripsi, rujukan buku, butiran kelas dan refleksi. Semakan visual meliputi Lesson 08 dan Review 03.
+
+Penerbitan 20 November 2026. [PR #1030](https://github.com/nurynayreen88/CikguLaju-AI/pull/1030) digabungkan selepas enam semakan CI lulus. Penjana `a3ab490` aktif di Render pada 07:16 MYT melalui `dep-dbvo5h3tqb8s7396ns90`. Web mengesahkan sambungan kepada penjana. Laluan katalog terlindung dengan respons HTTP 401 bagi permintaan tanpa token. Muat turun melalui akaun guru produksi belum disahkan.
