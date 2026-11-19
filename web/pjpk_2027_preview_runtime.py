@@ -16,10 +16,21 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = "rpt_2027/pjpk/pjpk_2027_rpt_manifest.json"
+STANDARD_DESCRIPTIONS = "rph_standalone/pjpk/kssr_standard_descriptions.json"
 FLAG = "CIKGULAJU_PJPK_PREVIEW_ENABLED"
 SUBJECTS = {"Pendidikan Jasmani": "pj", "Pendidikan Kesihatan": "pk"}
 MAXIMUM = {"pj": {2: 37, 3: 38, 4: 34, 5: 33, 6: 34},
            "pk": {2: 35, 3: 32, 4: 32, 5: 32, 6: 32}}
+WORD_OVERFLOW = {
+    (2, "pj"): {3, 28, 30},
+    (2, "pk"): {23, 30, 35},
+    (3, "pj"): {1, 7, 8, 9, 10, 14, 19, 21, 22, 23, 24, 26, 28, 31, 32,
+                33, 34, 35, 36, 37, 38},
+    (4, "pj"): {10, 17},
+    (5, "pj"): {8, 10, 11, 12, 17, 32},
+    (6, "pj"): {1, 33},
+}
+WORD_TIGHT_OVERFLOW = {(2, "pj", 30), (3, "pj", 1), (3, "pj", 23), (3, "pj", 36)}
 PDP_RE = re.compile(r"^lesson_(\d{3})\.md$")
 MARKDOWN_LABEL = re.compile(r"^\*\*([^*\n]+?):\*\*\s*(.*?)\s*$")
 CODE_SK = re.compile(r"(?<!\d)(\d+\.\d+)(?![\d.])")
@@ -35,6 +46,26 @@ def _year(value):
 def _record_path(year, short_subject, number):
     return "rph_standalone/pjpk/year%d_%s/lesson_%03d.md" % (
         year, short_subject, number)
+
+
+@lru_cache(maxsize=4)
+def _standard_descriptions(root):
+    return json.loads((Path(root) / STANDARD_DESCRIPTIONS).read_text(encoding="utf-8"))
+
+
+def _describe_standards(year, subject, number, sk, sp, root):
+    standards = _standard_descriptions(str(root))[str(year)][subject]
+    overrides = standards.get("pdp_overrides", {}).get(str(number), {})
+    descriptions = {}
+    for kind, codes in (("sk", sk), ("sp", sp)):
+        entries = []
+        for code in codes:
+            description = overrides.get(code, standards[kind][code]).strip()
+            if not description:
+                raise ValueError("Empty PJPK curriculum standard")
+            entries.append(f"{code} {description}")
+        descriptions[kind] = " · ".join(entries)
+    return descriptions
 
 
 @lru_cache(maxsize=4)
@@ -118,8 +149,13 @@ def _source(year, short_subject, number, *, root=ROOT):
     title = labels.get("tajuk") or labels.get("unit/tajuk")
     if not title or title != record["title"]:
         return None
+    try:
+        descriptions = _describe_standards(year, short_subject, number, sk, sp, root)
+    except (OSError, ValueError, KeyError, TypeError, AttributeError):
+        return None
     return {"year": year, "subject": short_subject, "lesson": number,
             "title": title, "sk": sk, "sp": sp, "fields": labels,
+            "standard_descriptions": descriptions,
             "objective": objective, "activities": activities}
 
 
@@ -164,8 +200,8 @@ def adapt_rows(state, rows, *, root=ROOT):
         "MATA PELAJARAN": state["subject"],
         "TAHUN/TINGKATAN": "Tahun %d" % source["year"],
         "TAJUK": source["title"] + " [DRAF CADANGAN — SEMAK GURU]",
-        "STANDARD KANDUNGAN": ", ".join(source["sk"]),
-        "STANDARD PEMBELAJARAN": ", ".join(source["sp"]),
+        "STANDARD KANDUNGAN": source["standard_descriptions"]["sk"],
+        "STANDARD PEMBELAJARAN": source["standard_descriptions"]["sp"],
         "OBJEKTIF PEMBELAJARAN": source["objective"],
         "KRITERIA KEJAYAAN": source["objective"],
         "SET INDUKSI": labels["set induksi"],
@@ -282,5 +318,20 @@ def install(ns, *, enabled=None, root=ROOT):
 
     ns["callback"] = callback
     ns["_rph_rows"] = rows
+    previous_word = ns.get("create_word_file")
+    if callable(previous_word):
+        def word(state_value, *args, **kwargs):
+            path = previous_word(state_value, *args, **kwargs)
+            if isinstance(state_value, dict) and state_value.get("task") == "rph":
+                lesson = _selection(state_value, root=root)
+                if lesson and lesson["lesson"] in WORD_OVERFLOW.get(
+                        (lesson["year"], lesson["subject"]), ()):
+                    from web.english_y6_word_a4_runtime import compact_word_file
+
+                    key = (lesson["year"], lesson["subject"], lesson["lesson"])
+                    compact_word_file(path, point_size=8.0 if key in WORD_TIGHT_OVERFLOW else 8.5)
+            return path
+
+        ns["create_word_file"] = word
     ns["CIKGULAJU_PJPK_2027_PREVIEW_INSTALLED"] = True
     return True

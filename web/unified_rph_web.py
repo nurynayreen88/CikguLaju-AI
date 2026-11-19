@@ -278,6 +278,7 @@ def _pjpk_records(year, component):
         activity = _pj_activity_title(title) if component == "PJ" else title
         entries.append({"unit": unit, "label": f"PdP {n:03d} — {activity}",
                         "lesson": n, "token": f"p-{year}-{component}-{n:03d}",
+                        "standard_descriptions": candidate["standard_descriptions"],
                         "path": path, "status": "PRATONTON BELUM MUKTAMAD"})
     return entries
 
@@ -465,6 +466,13 @@ def verified_preview(year, subject, unit, token, component=None):
         raw = _read_source(row, year, subject)
         if raw is None:
             return None
+        if subject == "PJPK":
+            descriptions = row["standard_descriptions"]
+            raw = re.sub(
+                r"(?m)^\*\*(SK|SP):\*\*[^\n]*",
+                lambda match: f"**{match[1]}:** {descriptions[match[1].lower()]}",
+                raw,
+            )
         if subject == "ENGLISH" and year == 5 and row["lesson"] not in CHOICE_LESSONS:
             state = {"subject": subject, "year": year, "lesson_no": row["lesson"]}
             fields = [{"label": label, "value": value}
