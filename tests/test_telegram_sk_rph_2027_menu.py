@@ -141,23 +141,30 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         self.assertEqual(len(self.documents), 2)
         self.assertEqual(self.credits, 1)
 
-    def test_legacy_ratio_choices_open_verified_unit_without_charging(self):
-        for number in range(79, 85):
-            with self.subTest(number=number):
-                state = {
-                    "subject": "Matematik",
-                    "year": "Tahun 6",
-                    "pdp_sequence_code": f"MT6-PDP-{number:03d}",
-                }
-                self.runtime.state[123] = state
-                for result in (self.runtime._lesson_to_class_v2439(123),
-                               self.runtime._temporary_auto_pack_v2386(123),
-                               self.runtime._continue_after_rph_time(123, state),
-                               self.click("matsubmit2528")):
-                    self.assertIn("sk27:unit:mt6:07", self.buttons(result))
-                menu = self.buttons(self.click("sk27:unit:mt6:07"))
-                self.assertIn("sk27:pick:mt6:07:SK27-MATH-Y6-L097", menu)
-                self.assertNotIn(f"sk27:pick:mt6:07:{state['pdp_sequence_code']}", menu)
+    def test_legacy_math_choices_open_verified_units_without_charging(self):
+        cases = {
+            "01": ((4, 6), 3),
+            "02": ((22, 25, 27, 30, 31, 32), 31),
+            "03": ((34, 37, 38), 52),
+            "04": ((46, 47), 63),
+            "06": ((67, 68), 84),
+            "07": ((76, 78, 79, 80, 81, 82, 83, 84), 97),
+        }
+        for unit, (numbers, verified_lesson) in cases.items():
+            for number in numbers:
+                with self.subTest(unit=unit, number=number):
+                    code = f"MT6-PDP-{number:03d}"
+                    state = {"subject": "Matematik", "year": "Tahun 6", "pdp_sequence_code": code}
+                    self.runtime.state[123] = state
+                    unit_callback = f"sk27:unit:mt6:{unit}"
+                    for result in (self.runtime._lesson_to_class_v2439(123),
+                                   self.runtime._temporary_auto_pack_v2386(123),
+                                   self.runtime._continue_after_rph_time(123, state),
+                                   self.click("matsubmit2528")):
+                        self.assertIn(unit_callback, self.buttons(result))
+                    menu = self.buttons(self.click(unit_callback))
+                    self.assertIn(f"sk27:pick:mt6:{unit}:SK27-MATH-Y6-L{verified_lesson:03d}", menu)
+                    self.assertNotIn(f"sk27:pick:mt6:{unit}:{code}", menu)
         self.assertEqual(self.documents, [])
         self.assertEqual(self.credits, 0)
 
@@ -175,6 +182,7 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         self.assertEqual(self.credits, 1)
 
         for subject, year, code in (("Matematik", "Tahun 6", "MT6-PDP-085"),
+                                    ("Matematik", "Tahun 6", "MT6-PDP-005"),
                                     ("Matematik", "Tahun 5", "MT6-PDP-079"),
                                     ("Sains", "Tahun 6", "MT6-PDP-079")):
             state = {"subject": subject, "year": year, "pdp_sequence_code": code}

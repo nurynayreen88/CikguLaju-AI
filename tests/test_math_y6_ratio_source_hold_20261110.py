@@ -1,4 +1,4 @@
-"""Y6 ratio/cadangan source hold — no DB, payments, quotas or file writes.
+"""Y6 legacy source holds before rendering or credit handling.
 
 KPM DSKP Mathematics Y6 (Sep 2021) p56: 7.2.1 Nisbah, 7.3.1
 Kadaran, 7.4.1 masalah; topic 8 is Data/Kebolehjadian.
@@ -10,7 +10,7 @@ import unittest
 
 from flask import Flask
 
-from web.math_y6_ratio_source_hold_20261110 import held_math_y6_ratio_source
+from web.math_y6_ratio_source_hold_20261110 import held_math_y6_legacy_source
 from web.telegram_verified_sequence_rph_bridge import (
     _resolve, _unit_token, create_native_sequence_rph_blueprint,
 )
@@ -26,6 +26,16 @@ BAD = {
     "MT6-PDP-082": ("Pengukuhan Nisbah dan Kadaran", "8.1.1;8.2.1;8.3.1"),
     "MT6-PDP-083": ("Aplikasi Nisbah dan Kadaran", "8.1.1;8.2.1"),
     "MT6-PDP-084": ("Penyelesaian Masalah Bukan Rutin Nisbah dan Kadaran", "8.3.1"),
+}
+
+
+ADDITIONAL = {
+    "01": (4, 6),
+    "02": (22, 25, 27, 30, 31, 32),
+    "03": (34, 37, 38),
+    "04": (46, 47),
+    "06": (67, 68),
+    "07": (76, 78),
 }
 
 
@@ -72,21 +82,21 @@ class Year6RatioHoldTests(unittest.TestCase):
         rows = fixtures()
         self.assertEqual(len(rows), 6)
         for source in rows:
-            self.assertTrue(held_math_y6_ratio_source(
+            self.assertTrue(held_math_y6_legacy_source(
                 6, "MATH", source["pdp_sequence_code"], [source]))
-            self.assertFalse(held_math_y6_ratio_source(
+            self.assertFalse(held_math_y6_legacy_source(
                 5, "MATH", source["pdp_sequence_code"], [source]))
-            self.assertFalse(held_math_y6_ratio_source(
+            self.assertFalse(held_math_y6_legacy_source(
                 6, "SCIENCE", source["pdp_sequence_code"], [source]))
         combined = fixtures()[3]
-        self.assertTrue(held_math_y6_ratio_source(
+        self.assertTrue(held_math_y6_legacy_source(
             6, "MATH", "MT6-PDP-082", [combined]))
-        self.assertTrue(held_math_y6_ratio_source(
+        self.assertTrue(held_math_y6_legacy_source(
             6, "MATH", "MT6-PDP-082", [
                 row("MT6-PDP-082", "Pengukuhan", "8.1.1"),
                 row("MT6-PDP-082", "Pengukuhan", "8.2.1"),
                 row("MT6-PDP-082", "Pengukuhan", "8.3.1")]))
-        self.assertFalse(held_math_y6_ratio_source(
+        self.assertFalse(held_math_y6_legacy_source(
             6, "MATH", "MT6-PDP-082", [
                 row("MT6-PDP-082", "Pengukuhan", "8.1.1"),
                 row("MT6-PDP-083", "Aplikasi", "8.2.1")]))
@@ -102,12 +112,12 @@ class Year6RatioHoldTests(unittest.TestCase):
         ]
         for code, sp in corrected:
             with self.subTest(code=code):
-                self.assertTrue(held_math_y6_ratio_source(
+                self.assertTrue(held_math_y6_legacy_source(
                     6, "MATH", code, [row(code, BAD[code][0], sp)]))
         # Other source lesson IDs, even with the same 8.x codes, are not
         # blacklisted as these may correctly teach data/probability.
         safe = row("MT6-PDP-085", "Carta pai", "8.1.1")
-        self.assertFalse(held_math_y6_ratio_source(6, "MATH", "MT6-PDP-085", [safe]))
+        self.assertFalse(held_math_y6_legacy_source(6, "MATH", "MT6-PDP-085", [safe]))
 
     def test_native_resolution_filters_only_six_wrong_legacy_pdp(self):
         available = fixtures() + [
@@ -127,6 +137,52 @@ class Year6RatioHoldTests(unittest.TestCase):
         self.assertEqual(len(year5_group), 7)
         _, science_group = _resolve(rt, 6, "SCIENCE", KEY)
         self.assertEqual(len(science_group), 7)
+
+    def test_real_private_flask_route_blocks_additional_legacy_ids(self):
+        rendered = []
+        unit_names = {"01": "Nombor bulat dan operasi", "02": "Pecahan, perpuluhan dan peratus",
+                      "03": "Wang", "04": "Masa dan waktu", "06": "Ruang",
+                      "07": "Koordinat, nisbah dan kadaran"}
+        rows = []
+        for unit, numbers in ADDITIONAL.items():
+            for number in numbers:
+                rows.append(row(f"MT6-PDP-{number:03d}", f"PdP {number}", "1.1.2")
+                            | {"unit_code": unit, "unit_title": unit_names[unit]})
+            rows.append(row(f"MT6-PDP-{90 + int(unit):03d}", "Other PdP", "1.1.2")
+                        | {"unit_code": unit, "unit_title": unit_names[unit],
+                           "source_sequence_no": 100})
+        rt = fake_runtime(rows, rendered)
+        rt._sm2542_unique_units = lambda rows: list(unit_names.items())
+        app = Flask("math-y6-extra-legacy-hold")
+        app.register_blueprint(create_native_sequence_rph_blueprint(rt))
+        client = app.test_client()
+        secret = "test-internal-source-secret-" + "b" * 40
+        with patch.dict(os.environ, {
+            "CIKGULAJU_WEB_NATIVE_RPH_ENABLED": "1",
+            "CIKGULAJU_AUTHORITATIVE_API_TOKEN": secret,
+        }):
+            auth = {"Authorization": "Bearer " + secret}
+            for unit, numbers in ADDITIONAL.items():
+                query = {"year": 6, "subject": "MATH", "unit": _unit_token(unit, unit_names[unit])}
+                choices = client.get("/internal/rph/v1/sequence/lessons",
+                                     query_string=query, headers=auth)
+                self.assertEqual(choices.status_code, 200)
+                self.assertEqual([item["value"] for item in choices.json["items"]],
+                                 [f"MT6-PDP-{90 + int(unit):03d}"])
+                for number in numbers:
+                    with self.subTest(unit=unit, number=number):
+                        selection = query | {"lesson": f"MT6-PDP-{number:03d}"}
+                        availability = client.get("/internal/rph/v1/sequence/availability",
+                                                  query_string=selection, headers=auth)
+                        self.assertEqual(availability.status_code, 404)
+                        for fmt in ("word", "pdf"):
+                            response = client.post("/internal/rph/v1/sequence/render", headers=auth, json={
+                                "selection": selection, "format": fmt,
+                                "teacher": {"class": "6 Ikhlas", "date": "2027-10-18",
+                                            "time": "08:00 - 09:00", "students": "30"},
+                            })
+                            self.assertEqual(response.status_code, 404)
+            self.assertEqual(rendered, [])
 
     def test_real_private_flask_route_hides_six_and_blocks_old_links(self):
         rendered = []

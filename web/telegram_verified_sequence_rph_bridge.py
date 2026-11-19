@@ -125,16 +125,14 @@ def _available_groups(rows, unit, year, subject):
                 and str(row.get("sp_code") or "").strip() for row in items)
     }
     if year == 6 and subject == "MATH":
-        # Six source-backed Year 6 ratio lessons currently carry *Data* 8.x
-        # codes (DSKP 2021 requires 7.2/7.3/7.4). Hide only the exact
-        # known-bad codes. This also protects stale availability/render URLs
-        # before the Web can debit a user's free trial credit.
+        # Apply the same audited legacy hold as the Telegram menu, including
+        # stale availability/render URLs before the Web can debit credit.
         from web.math_y6_ratio_source_hold_20261110 import (
-            held_math_y6_ratio_source,
+            held_math_y6_legacy_source,
         )
         groups = {
             code: items for code, items in groups.items()
-            if not held_math_y6_ratio_source(year, subject, code, items)
+            if not held_math_y6_legacy_source(year, subject, code, items)
         }
     return groups
 

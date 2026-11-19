@@ -52,3 +52,5 @@ Rujukan yang digunakan ialah [buku teks Tahun 5 (PPD Batu Pahat)](https://sites.
 Padanan RPH Pantas Web dengan jadual sumber meliputi tarikh Kumpulan A dan B, urutan Lesson dan tempoh sesi bagi 35 minggu PdP setiap tahun, sehingga Minggu 38.
 
 Pilihan `MT6-PDP-079` hingga `MT6-PDP-084` kekal dalam HOLD. Jika guru memilih salah satu daripadanya melalui menu lama Telegram, bot menawarkan **Buka Unit 7 · RPH 2027**. Guru memilih Lesson set baharu daripada unit tersebut. Ujian regresi memeriksa empat titik masuk bagi keenam-enam pilihan, tiada fail atau debit semasa peralihan, dan penghantaran Word/PDF selepas guru memilih Lesson 097 dengan SP 7.2.1.
+
+Semakan berikutnya menilai [baki 17 pilihan dalam audit menu lama Tahun 6](matematik_y6_semak_menu_lama_20261119.md).
