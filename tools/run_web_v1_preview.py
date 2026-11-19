@@ -114,6 +114,8 @@ def options():
             if not isinstance(items, list):
                 return response
             subject = request.args.get("subject", "")
+            if subject == "MATH_DPK3":
+                return response
             year = int(request.args["year"])
             signer = lesson_signer(config)
             component = request.args.get("component", "")
@@ -147,15 +149,15 @@ def options():
             from web.native_telegram_sequence_rph_client import (
                 list_native_units, list_native_lessons, NativeRPHUnavailable,
             )
-            if year not in (2, 3) or request.args.get("component") or request.args.get("rph_today"):
-                return jsonify({"error": "Pilihan DPK Edisi 3 tidak sah."}), 400
+            if year not in (2, 3) or request.args.get("component"):
+                return jsonify({"error": "Pilihan Matematik tidak sah."}), 400
             try:
                 options = (list_native_units(year, native_subject) if kind == "units"
                            else list_native_lessons(year, native_subject, request.args.get("unit", "")))
             except ValueError:
-                return jsonify({"error": "Pilihan unit DPK Edisi 3 tidak sah."}), 400
+                return jsonify({"error": "Pilihan unit Matematik tidak sah."}), 400
             except NativeRPHUnavailable:
-                return jsonify({"error": "Set DPK Edisi 3 belum dapat dihubungi."}), 503
+                return jsonify({"error": "Katalog Matematik belum dapat dihubungi."}), 503
             return jsonify(options)
         if native_subject in ("MATH_DLP", "SCIENCE_DLP") and kind in ("units", "pdp"):
             from web.native_telegram_sequence_rph_client import (
@@ -216,13 +218,9 @@ def options():
                             for row in shared_subjects
                         ]
                         if year in (2, 3) and request.args.get("curriculum", "kssr") == "kssr":
-                            from web.native_telegram_sequence_rph_client import list_native_units, NativeRPHUnavailable
-
-                            try:
-                                if list_native_units(year, "MATH_DPK3"):
-                                    items.append({"value": "MATH_DPK3", "label": "Matematik (DPK Edisi 3)"})
-                            except (NativeRPHUnavailable, ValueError):
-                                pass
+                            # This audited SK set is paired with the Mathematics RPT for these years.
+                            items = [row for row in items if row["value"] != "MATH"]
+                            items.append({"value": "MATH_DPK3", "label": "Matematik"})
                         if year in range(2, 7):
                             from web.unified_rph_web import source_records
                             for code, label in (("MORAL", "Pendidikan Moral"),

@@ -6,7 +6,7 @@ from urllib.request import Request, build_opener
 
 from itsdangerous import URLSafeTimedSerializer
 
-from web.native_telegram_sequence_rph_client import DLP_CATALOGUES, DLP_SUBJECTS
+from web.native_telegram_sequence_rph_client import DLP_CATALOGUES, DLP_SUBJECTS, DPK_SUBJECT
 from web.teacher_profile_store import NoRedirect, ProfileUnavailable
 
 
@@ -143,6 +143,9 @@ def save_completion(config, uid, day, slot, component, number):
 
 
 def supports_completion(slot):
+    # Older Mathematics progress is indexed by a different sequence of lessons.
+    if slot["subject_code"] == DPK_SUBJECT:
+        return False
     return slot.get("curriculum") != "dlp" or (
         (slot["year"], slot["subject_code"]) in DLP_COMPLETION_LIMITS
     )

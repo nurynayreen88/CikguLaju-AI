@@ -16,7 +16,7 @@ from itsdangerous import BadSignature
 
 from web import native_telegram_sjkc_math_client as sjkc
 from web import native_telegram_sjkt_math_client as sjkt
-from web.native_telegram_sequence_rph_client import DLP_CATALOGUES, DLP_SUBJECTS
+from web.native_telegram_sequence_rph_client import DLP_CATALOGUES, DLP_SUBJECTS, DPK_SUBJECT, DPK_YEARS
 from web.primary_subject_choices import variants_by_name
 from web.rph_today_progress import (
     DLP_COMPLETION_LIMITS, attach_progress, class_key, dlp_completion_label, lesson_signer, read_progress,
@@ -221,6 +221,8 @@ def day_payload(profile, schedule, target, *, today=None, sjkc_catalogue=None, s
             raise ProfileValidation("Maklumat waktu dalam jadual tidak sah")
         year = class_year(cls)
         code, component = subject_identity(subject, year)
+        if code == "MATH" and year in DPK_YEARS:
+            code = DPK_SUBJECT
         subject_key = " ".join(subject.casefold().split())
         variant = variants_by_name().get(subject_key)
         curriculum = None
@@ -340,7 +342,8 @@ def assign_week_suggestions(days):
         # A generic PJPK period still needs the teacher to choose PJ or PK.
         if not suggestion or (code == "PJPK" and not component):
             continue
-        if any(slot.get("rpt_suggestion") != suggestion or "progress" not in slot for _, slot in entries):
+        if any(slot.get("rpt_suggestion") != suggestion
+               or (code != DPK_SUBJECT and "progress" not in slot) for _, slot in entries):
             continue
         sessions = suggestion.get("sessions")
         if sessions:
@@ -366,7 +369,7 @@ def assign_week_suggestions(days):
         compatible = True
         preceding = {sessions[0][0] - 1}
         for (_, slot), numbers in zip(entries, sessions, strict=True):
-            record = slot["progress"].get(component, {})
+            record = slot.get("progress", {}).get(component, {})
             completed = record.get("completed")
             previous = record.get("previous")
             if completed is not None and completed != numbers[-1]:
