@@ -10257,6 +10257,8 @@ def _create_rph_word(doc, section, s, ai_text, path):
     phases = _rph_layout_phases(s, rph)
     body_size = _rph_layout_body_size(phases, jawi)
     word_typography(doc, body_size, embed_fonts=not jawi)
+    if not jawi:
+        doc.styles["Normal"].paragraph_format.line_spacing = Pt(body_size + 2)
     section.page_width = Cm(21)
     section.page_height = Cm(29.7)
     section.top_margin = Cm(1.2)

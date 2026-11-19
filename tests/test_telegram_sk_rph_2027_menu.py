@@ -282,7 +282,9 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                     if fmt == "word":
                         doc = Document(BytesIO(result.data))
                         self.assertIn(teacher["class"], doc.tables[0].rows[3].cells[1].text)
-                        self.assertEqual(doc.tables[-1].rows[0].cells[1].text, teacher["reflection"])
+                        reflection = doc.tables[-1].rows[0].cells[0]
+                        self.assertEqual(reflection.text.splitlines(), ["Reflection", teacher["reflection"]])
+                        self.assertEqual(reflection._tc.grid_span, 2)
                     else:
                         page, = PdfReader(BytesIO(result.data)).pages
                         self.assertIn(teacher["class"], page.extract_text())
