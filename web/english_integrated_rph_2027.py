@@ -107,7 +107,7 @@ def _pdf_for_sheet(sheet, output):
     story = []
     for index, block in enumerate(sheet.iter_inner_content()):
         if hasattr(block, "rows"):
-            story.append(Paragraph(escape("  ·  ".join(cell.text for cell in block.rows[0].cells)), band))
+            story.append(Paragraph(escape("  ·  ".join(cell.text for cell in block.rows[0].cells if cell.text)), band))
             continue
         style = body
         if index == 0:

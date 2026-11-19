@@ -188,9 +188,11 @@ def build_native_input(payload):
         _require_text(part["value"],12000,allow_empty=True)
     if phases[1]["activity"].strip() in ("","—"):
         raise ValueError("No lesson-specific main activity")
-    if layout.get("activity_header") != (
-        ["Phase / Time","Teaching and Learning Activities","Notes"] if subject=="ENGLISH" else
-        ["Fasa / Masa","Aktiviti Pengajaran & Pembelajaran","Catatan"]):
+    activity_header = layout.get("activity_header")
+    expected = (["Phase", "Teaching and Learning Activities", "Notes"] if subject == "ENGLISH"
+                else ["Fasa", "Aktiviti Pengajaran & Pembelajaran", "Catatan"])
+    legacy = [expected[0] + (" / Time" if subject == "ENGLISH" else " / Masa"), *expected[1:]]
+    if activity_header not in (expected, legacy):
         raise ValueError("Phase headings don't match subject")
     labels={
         "OBJEKTIF PEMBELAJARAN":_extract(meta,*HEADINGS["OBJEKTIF PEMBELAJARAN"]),

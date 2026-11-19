@@ -290,9 +290,9 @@ def render_word(fields):
         ("Tajuk", fields["title"]), ("Objektif", fields["objective"]),
         ("BBM", fields["bbm"]), ("Pentaksiran", fields["assessment"]))], (43, 143))
     table([
-        [("Fasa / Masa", True), ("Aktiviti Pengajaran dan Pembelajaran", True)],
-        *[[(f"{title} ({minutes} minit)", True), (body, False)]
-          for title, minutes, body in fields["phases"]]
+        [("Fasa", True), ("Aktiviti Pengajaran dan Pembelajaran", True)],
+        *[[(title, True), (body, False)]
+          for title, _, body in fields["phases"]]
     ], (43, 143))
     table([[("Refleksi", True),
             ("____ / ____ murid mencapai objektif. Tindakan susulan: ______________", False)]],
@@ -349,9 +349,9 @@ def render_pdf(fields):
         info = [[strong(k), plain(v)] for k, v in (
             ("Tajuk", fields["title"]), ("Objektif", fields["objective"]),
             ("BBM", fields["bbm"]), ("Pentaksiran", fields["assessment"]))]
-        steps = [[strong("Fasa / Masa"), strong("Aktiviti Pengajaran dan Pembelajaran")]]
-        steps += [[strong(f"{name} ({minutes} minit)"), plain(text)]
-                  for name, minutes, text in fields["phases"]]
+        steps = [[strong("Fasa"), strong("Aktiviti Pengajaran dan Pembelajaran")]]
+        steps += [[strong(name), plain(text)]
+                  for name, _, text in fields["phases"]]
         story = [Paragraph("RANCANGAN PENGAJARAN HARIAN", heading),
                  Paragraph("AKTIVITI KHAS - DRAF UNTUK SEMAKAN GURU", sub),
                  grid(meta, (26, 65, 30, 65)), Spacer(1, 2 * mm),

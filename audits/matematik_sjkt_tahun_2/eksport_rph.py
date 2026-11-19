@@ -97,6 +97,13 @@ def _word(row, context, reflection, review):
     for element in list(body):
         if element is not section and element not in selected:
             body.remove(element)
+    for paragraph in document.paragraphs:
+        if paragraph.text.startswith(marker):
+            for run in paragraph.runs:
+                run.text = re.sub(r" +\| +60 minit$", "", run.text)
+        elif re.search(r" / (?:Set induksi dan bimbingan|Aktiviti murid|PBD individu|Penutup) \(", paragraph.text):
+            for run in paragraph.runs:
+                run.text = phase_heading(run.text)
     if context:
         header, = (p for p in document.paragraphs if p.text.startswith("Kelas ___"))
         header.runs[0].text = context
@@ -129,8 +136,7 @@ def _pdf(row, context, reflection, review):
             if not marker.search(text) or row["sp"] not in text:
                 raise ValueError("Halaman PDF tidak sepadan dengan PdP.")
             output.insert_pdf(document, from_page=index, to_page=index)
-            if context or reflection or not review:
-                _personalize_pdf(output[0], context, reflection, review)
+            _personalize_pdf(output[0], context, reflection, review)
             return output.tobytes(garbage=1, deflate=True, use_objstms=1)
     except fitz.FileDataError as exc:
         raise ValueError("Fail sumber RPH PDF tidak dapat dibaca.") from exc
@@ -144,6 +150,8 @@ def _personalize_pdf(page, context, reflection, review):
         for block in page.get_text("dict")["blocks"]
         for line in block.get("lines", [])
     ]
+    for rect in _schedule_rectangles(lines):
+        page.add_redact_annot(rect, fill=False, cross_out=False)
     blocks = []
     if context:
         start, = (rect for text, rect in lines if text.strip() == "Kelas")
@@ -177,6 +185,37 @@ def _personalize_pdf(page, context, reflection, review):
         )
         if spare < 0:
             raise ValueError("Butiran guru melebihi ruang yang tersedia dalam PDF.")
+
+
+def _schedule_rectangles(lines):
+    # The bilingual source stores a timing tag as separate numeric and
+    # Latin-font runs on one baseline. Locate the tag by its phase caption.
+    for text, duration in lines:
+        if text not in ("PdP", "Set induksi dan bimbingan", "Aktiviti murid", "PBD individu", "Penutup"):
+            continue
+        minutes = [(label, rect) for label, rect in lines
+                   if label == "minit" and rect.x0 > duration.x1
+                   and abs(rect.y0 - duration.y0) < 1]
+        if not minutes:
+            continue
+        _, unit = minutes[0]
+        numerals = [rect for label, rect in lines
+                    if re.fullmatch(r" *(?:\||\() *[0-9]{1,2} *", label)
+                    and abs(rect.x1 - unit.x0) < 1
+                    and abs(rect.y0 - unit.y0) < 4]
+        if not numerals:
+            continue
+        number = numerals[0]
+        erase = number | unit
+        closing = [rect for label, rect in lines
+                   if label == ")" and abs(rect.x0 - unit.x1) < 1
+                   and abs(rect.y0 - unit.y0) < 4]
+        if closing:
+            erase |= closing[0]
+        # The adjacent caption can share a sub-point of bounding box due to
+        # font metrics. Leave its final glyph intact.
+        erase.x0 += 1
+        yield erase
 
 
 def _reflection_soft_breaks(reflection):

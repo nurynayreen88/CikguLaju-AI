@@ -15,7 +15,6 @@ from reportlab.pdfgen.canvas import Canvas
 from reportlab.lib.pagesizes import A4
 
 from web import telegram_verified_sequence_rph_bridge as bridge
-from web.math_rph_delivery_quality_20261110 import _explicit_phase_minutes
 from web.math_y2_pdp21_rph import install as install_math_y2_pdp21
 
 AUTH = "test-internal-secret-token-" + "a" * 40
@@ -160,7 +159,7 @@ class NativeMathQualityTests(unittest.TestCase):
 
 
 class MathYear2AdditionTests(unittest.TestCase):
-    def test_plan_fits_teacher_slot_and_applies_to_the_verified_lesson_only(self):
+    def test_same_plan_applies_to_the_verified_lesson_at_any_slot(self):
         original = {"OBJEKTIF PEMBELAJARAN": "Objektif PdP lain", "REFLEKSI": "Refleksi guru"}
         runtime = SimpleNamespace(_rph_rows=lambda state, text: original)
         install_math_y2_pdp21(runtime)
@@ -173,16 +172,13 @@ class MathYear2AdditionTests(unittest.TestCase):
             ("021", "2.1.2", "tiga nombor", "58–61"),
         ):
             selected = {**state, "pdp_sequence_code": f"MT2-PDP-{number}", "sp_code": standard}
-            for end, duration in (("07:30", 30), ("08:00", 60), ("08:30", 90)):
-                with self.subTest(pdp=number, duration=duration):
+            lesson_rows = runtime._rph_rows(selected, "")
+            for end in ("07:30", "08:00", "08:30"):
+                with self.subTest(pdp=number, end=end):
                     rows = runtime._rph_rows({**selected, "rph_time": f"07:00 - {end}"}, "")
-                    phases = _explicit_phase_minutes(
-                        "Set Induksi " + rows["SET INDUKSI"] + "\n"
-                        + rows["AKTIVITI UTAMA"] + "\n"
-                        + "Penutup " + rows["PENUTUP"]
-                    )
-                    self.assertEqual(len(phases), 5)
-                    self.assertEqual(sum(phases.values()), duration)
+                    self.assertEqual(rows, lesson_rows)
+                    for key in ("SET INDUKSI", "AKTIVITI UTAMA", "PENUTUP"):
+                        self.assertNotIn("minit", rows[key])
                     self.assertIn(focus, rows["OBJEKTIF PEMBELAJARAN"])
                     self.assertIn("3 daripada 4", rows["OBJEKTIF PEMBELAJARAN"])
                     self.assertIn(pages, rows["BAHAN BANTU MENGAJAR"])

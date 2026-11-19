@@ -140,7 +140,7 @@ def make_sheet(year, week, group_a, group_b, slot, lessons, teacher=None):
     run.font.size = Pt(26)
     p.paragraph_format.space_after = Pt(3)
     labelled(document.add_paragraph(), "SOW references", f"Lesson {a:03d} + {b:03d}")
-    document.add_paragraph(f"Week {week:02d} · Session {slot} · 60 minutes   |   Group A {group_a} · Group B {group_b}")
+    document.add_paragraph(f"Week {week:02d} · Session {slot}   |   Group A {group_a} · Group B {group_b}")
     teacher = teacher or {}
     document.add_paragraph("   ".join(
         f"{label} {teacher.get(key) or blank}"
@@ -165,18 +165,18 @@ def make_sheet(year, week, group_a, group_b, slot, lessons, teacher=None):
         labelled(document.add_paragraph(), "Materials",
                  f"{a:03d} – {first_materials}\n{b:03d} – {second_materials}")
 
-    band(document, "Teaching and learning", "60 minutes")
-    labelled(document.add_paragraph(), "Set induction (5 min)", f"Show a prompt from the {topic.rstrip('.!?')} materials. Elicit relevant words and model one response.")
-    p = document.add_paragraph("Main activities (43 min)")
+    band(document, "Teaching and learning", "")
+    labelled(document.add_paragraph(), "Set induction", f"Show a prompt from the {topic.rstrip('.!?')} materials. Elicit relevant words and model one response.")
+    p = document.add_paragraph("Main activities")
     p.runs[0].bold = True
     for number, (_, _, task, _, _) in enumerate(lessons, 1):
         labelled(document.add_paragraph(), f"Activity {number}", task)
-    p = document.add_paragraph("PBD (8 min)")
+    p = document.add_paragraph("PBD")
     p.runs[0].bold = True
     p.add_run("  Collect evidence across both activities and confirm one response from each pupil during the session.")
     for number, (_, _, _, evidence, _) in enumerate(lessons, 1):
         labelled(document.add_paragraph(), f"Activity {number}", evidence)
-    labelled(document.add_paragraph(), "Closure (4 min)", "Invite pupils to share a response from the activities and recap one useful example from the session.")
+    labelled(document.add_paragraph(), "Closure", "Invite pupils to share a response from the activities and recap one useful example from the session.")
     labelled(document.add_paragraph(), "Reflection", "Activity 1 ____ / ____ met the target.   Activity 2 ____ / ____ met the target.")
     document.add_paragraph("Follow-up _________________________________________________________________")
     if teacher.get("reflection"):
