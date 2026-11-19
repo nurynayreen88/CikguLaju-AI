@@ -26,6 +26,7 @@ OBJECTIVE = re.compile(r"## Objektif dan kriteria kejayaan\s*\n(.*?)\n\s*## Lang
 EVIDENCE = re.compile(r"\b(?:Kriteria kejayaan|Bukti kejayaan|Evidens PBD|Evidens):\s*", re.I)
 SP = re.compile(r"^\d+\.\d+\.\d+$")
 SK = re.compile(r"^\d+\.\d+$")
+STANDARD_DESCRIPTIONS = "rph_standalone/psv/kssr_standard_descriptions.json"
 
 
 def _clean(value):
@@ -35,6 +36,11 @@ def _clean(value):
 def _codes(value, pattern):
     values = [v.strip() for v in str(value or "").split(";") if v.strip()]
     return values if values and all(pattern.fullmatch(v) for v in values) else None
+
+
+@lru_cache(maxsize=4)
+def _standard_descriptions(root):
+    return json.loads((Path(root) / STANDARD_DESCRIPTIONS).read_text(encoding="utf-8"))
 
 
 def _year(value):
@@ -186,9 +192,28 @@ def load_candidate(year, pdp, *, preview=False, root=ROOT):
         return None
     if not preview and status != "READY":
         return None
-    if _codes(meta.get("sk"), SK) != _codes(row.get("SK"), SK):
+    sk = _codes(row.get("SK"), SK)
+    sp = _codes(row.get("SP"), SP)
+    if not sk or _codes(meta.get("sk"), SK) != sk:
         return None
-    if _codes(meta.get("sp"), SP) != _codes(row.get("SP"), SP):
+    if not sp or _codes(meta.get("sp"), SP) != sp:
+        return None
+    try:
+        indexed = _standard_descriptions(root)[str(year)]
+        parents = indexed.get("sp_parent", {})
+        if any(parents.get(code, code.rsplit(".", 1)[0]) not in sk for code in sp):
+            return None
+        overrides = indexed.get("pdp_overrides", {}).get(str(pdp), {})
+        descriptions = {}
+        for kind, codes in (("sk", sk), ("sp", sp)):
+            parts = []
+            for code in codes:
+                value = overrides.get(code, indexed[kind][code]).strip()
+                if not value:
+                    return None
+                parts.append(f"{code} {value}")
+            descriptions[kind] = " · ".join(parts)
+    except (OSError, ValueError, TypeError, KeyError, AttributeError):
         return None
     match = OBJECTIVE.search(text)
     if match is None:
@@ -218,6 +243,7 @@ def load_candidate(year, pdp, *, preview=False, root=ROOT):
     return {
         "year": year, "pdp": pdp, "title": title, "sk": row["SK"],
         "sp": row["SP"], "objective": objective, "evidence": evidence,
+        "standard_descriptions": descriptions,
         "stages": stages, "materials": _clean(meta.get("bbm")),
         "differentiation": _clean(meta.get("pembezaan")),
         "safety": _clean(meta.get("keselamatan")),
@@ -246,8 +272,8 @@ def adapt_rows(state, rows, *, preview=False, root=ROOT):
         "MATA PELAJARAN": SUBJECT,
         "TAHUN/TINGKATAN": f"Tahun {year}",
         "TAJUK": plan["title"],
-        "STANDARD KANDUNGAN": plan["sk"],
-        "STANDARD PEMBELAJARAN": plan["sp"],
+        "STANDARD KANDUNGAN": plan["standard_descriptions"]["sk"],
+        "STANDARD PEMBELAJARAN": plan["standard_descriptions"]["sp"],
         "OBJEKTIF PEMBELAJARAN": plan["objective"],
         "KRITERIA KEJAYAAN": plan["evidence"],
         "SET INDUKSI": s["set induksi"],

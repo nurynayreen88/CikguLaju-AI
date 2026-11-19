@@ -307,6 +307,7 @@ class NativeRPHBridgeTests(unittest.TestCase):
             "Fasa / Masa","Aktiviti Pengajaran & Pembelajaran","Catatan"]
         psv["source_digest"]=source_fingerprint(2,"PSV",1)
         state,_,_=build_native_input(psv)
+        self.assertEqual(state["task"], "rph")
         from web.psv_2027_provisional_runtime import _selection as psv_selected
         self.assertIsNotNone(psv_selected(state))
         self.assertEqual(state["subject"],"Pendidikan Seni Visual")

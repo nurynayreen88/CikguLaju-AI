@@ -60,8 +60,8 @@ class TestProvisionalPSV(unittest.TestCase):
                     source = strict.load_candidate(year, number, preview=True)
                     self.assertIsNotNone(source)
                     rows = ns["_rph_rows"](chosen, "irrelevant AI text")
-                    self.assertEqual(rows["STANDARD KANDUNGAN"], source["sk"])
-                    self.assertEqual(rows["STANDARD PEMBELAJARAN"], source["sp"])
+                    self.assertEqual(rows["STANDARD KANDUNGAN"], source["standard_descriptions"]["sk"])
+                    self.assertEqual(rows["STANDARD PEMBELAJARAN"], source["standard_descriptions"]["sp"])
                     self.assertEqual(rows["OBJEKTIF PEMBELAJARAN"], source["objective"])
                     self.assertEqual(rows["KRITERIA KEJAYAAN"], source["evidence"])
                     self.assertIn("Aktiviti 1", rows["AKTIVITI UTAMA"])
@@ -70,6 +70,14 @@ class TestProvisionalPSV(unittest.TestCase):
                         self.assertEqual(rows[key], value)
                     self.assertNotIn("DRAF", " ".join(map(str, rows.values())))
         self.assertEqual(ns["callback"](99, "other_action"), ("original", "other_action"))
+
+    def test_shared_code_keeps_the_printed_construction_or_craft_scope(self):
+        construction = strict.load_candidate(2, 9, preview=True)
+        craft = strict.load_candidate(2, 13, preview=True)
+        self.assertIn("Bidang Membentuk dan Membuat Binaan",
+                      construction["standard_descriptions"]["sp"])
+        self.assertIn("Bidang Mengenal Kraf Tradisional",
+                      craft["standard_descriptions"]["sp"])
 
     def test_v2617_old_development_callback_and_new_subject_menu(self):
         """Exact Telegram symptom: v26.17 had a devsub2617_ PSV blocker."""
@@ -101,7 +109,7 @@ class TestProvisionalPSV(unittest.TestCase):
                     cid, "psv27pick|%d|001" % year), ("class", cid))
                 plan = strict.load_candidate(year, 1, preview=True)
                 rows = ns["_rph_rows"](ns["state"][cid], "rph")
-                self.assertEqual(rows["STANDARD PEMBELAJARAN"], plan["sp"])
+                self.assertEqual(rows["STANDARD PEMBELAJARAN"], plan["standard_descriptions"]["sp"])
         # KP2027 Year1 and secondary remain on their previous routes.
         self.assertEqual(ns["subjects"](301, "Tahun 1"),
                          ("original_subjects", "Tahun 1"))
