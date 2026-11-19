@@ -24,6 +24,7 @@ from rpt_2027.sjkc.bahasa_cina import documents as bahasa_cina_sjkc
 from rpt_2027.sjkc.bahasa_melayu import documents as bahasa_melayu_sjk
 from rpt_2027.sjkc.sains import documents as sains_sjkc
 from rpt_2027.sjkc.matematik import documents as matematik_sjkc
+from rpt_2027.sjkt.matematik import documents as matematik_sjkt
 
 ROOT = Path(__file__).resolve().parents[1] / "rpt_2027"
 YEARS = tuple(range(2,7))
@@ -34,7 +35,12 @@ SJK_RPTS = {
     "sains": sains_sjkc,
     "matematik": matematik_sjkc,
 }
-SJK_SLUG_BY_CODE = {definition.CODE: slug for slug, definition in SJK_RPTS.items()}
+SCHOOL_RPTS = {"sjkc": SJK_RPTS, "sjkt": {"matematik": matematik_sjkt}}
+SCHOOL_ROUTE_BY_CODE = {
+    definition.CODE: (school, slug)
+    for school, definitions in SCHOOL_RPTS.items()
+    for slug, definition in definitions.items()
+}
 # (Label, allowed years, legacy folder, legacy exact filename, legacy status)
 SUBJECTS = {
     "english": ("English (SK)", YEARS, "english", "RPT_ENGLISH_TAHUN_%d_2027_UNTUK_GURU.pdf", "TERSEDIA"),
@@ -263,27 +269,28 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
             subjects.append({"code": code, "label": f"{label} (DLP)", "years": entries})
             dlp_count += len(entries)
     sjk_count = 0
-    for slug, definition in SJK_RPTS.items():
-        folder = Path(root) / "sjkc" / slug.replace("-", "_")
-        entries = []
-        for year in definition.YEARS:
-            if definition.document_path(year, root=folder) is None:
-                continue
-            ready = bool(allowed and personalization_allowed)
-            word_ready = bool(ready and definition.document_path(year, "docx", root=folder))
-            entries.append({
-                "year": year,
-                "pdf_ready": True,
-                "status": "TERSEDIA" if ready else "Akses berbayar",
-                "download_enabled": ready,
-                "docx_ready": word_ready,
-                "docx_url": f"/api/rpt/2027/sjkc/{slug}/{year}.docx" if word_ready else None,
-                "note": "Tarikh Kumpulan A dan B dalam satu RPT.",
-                "is_draft": False,
-            })
-        if entries:
-            subjects.append({"code": definition.CODE, "label": definition.LABEL, "years": entries})
-            sjk_count += len(entries)
+    for school, definitions in SCHOOL_RPTS.items():
+        for slug, definition in definitions.items():
+            folder = Path(root) / school / slug.replace("-", "_")
+            entries = []
+            for year in definition.YEARS:
+                if definition.document_path(year, root=folder) is None:
+                    continue
+                ready = bool(allowed and personalization_allowed)
+                word_ready = bool(ready and definition.document_path(year, "docx", root=folder))
+                entries.append({
+                    "year": year,
+                    "pdf_ready": True,
+                    "status": "TERSEDIA" if ready else "Akses berbayar",
+                    "download_enabled": ready,
+                    "docx_ready": word_ready,
+                    "docx_url": f"/api/rpt/2027/{school}/{slug}/{year}.docx" if word_ready else None,
+                    "note": "Tarikh Kumpulan A dan B dalam satu RPT.",
+                    "is_draft": False,
+                })
+            if entries:
+                subjects.append({"code": definition.CODE, "label": definition.LABEL, "years": entries})
+                sjk_count += len(entries)
     for code, label in PRIMARY_LANGUAGE_SUBJECTS.items():
         subjects.append({
             "code": code,
@@ -328,17 +335,18 @@ def create_all_rpt_blueprint(*,root=ROOT):
         return jsonify(catalog_data(root=root,allowed=True,
                                     personalization_allowed=_has_paid_access(account)))
 
-    @bp.get("/api/rpt/2027/sjkc/<slug>/<int:year>.<fmt>")
-    def download_sjk(slug, year, fmt):
+    @bp.get("/api/rpt/2027/sjkc/<slug>/<int:year>.<fmt>", defaults={"school": "sjkc"})
+    @bp.get("/api/rpt/2027/sjkt/<slug>/<int:year>.<fmt>", defaults={"school": "sjkt"})
+    def download_sjk(slug, year, fmt, school):
         account, error = _account()
         if error is not None:
             return error
-        definition = SJK_RPTS.get(slug)
+        definition = SCHOOL_RPTS[school].get(slug)
         if definition is None:
             return jsonify({"error": "Pilihan RPT SJK tidak tersedia."}), 404
         if not _has_paid_access(account):
             return jsonify({"error": f"RPT {definition.LABEL} memerlukan akses berbayar aktif."}), 403
-        path = definition.document_path(year, fmt, root=Path(root) / "sjkc" / slug.replace("-", "_"))
+        path = definition.document_path(year, fmt, root=Path(root) / school / slug.replace("-", "_"))
         if path is None:
             return jsonify({"error": f"Pilihan RPT {definition.LABEL} tidak tersedia."}), 404
         mime = ("application/pdf" if fmt == "pdf" else
@@ -351,8 +359,9 @@ def create_all_rpt_blueprint(*,root=ROOT):
 
     @bp.get("/api/rpt/2027/all/<subject>/<int:year>.pdf")
     def download(subject,year):
-        if subject in SJK_SLUG_BY_CODE:
-            return download_sjk(SJK_SLUG_BY_CODE[subject], year, "pdf")
+        if subject in SCHOOL_ROUTE_BY_CODE:
+            school, slug = SCHOOL_ROUTE_BY_CODE[subject]
+            return download_sjk(slug, year, "pdf", school)
         account,error=_account()
         if error is not None:
             return error

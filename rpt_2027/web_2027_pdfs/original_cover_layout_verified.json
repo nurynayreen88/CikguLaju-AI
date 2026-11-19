@@ -950,6 +950,50 @@
       "source_sha256_by_subject_year": {
         "matematik:6": "1eda26ae8a13fda98535ce95e62e0f94ebfe7924106127df3581c21a55720847"
       }
+    },
+    "matematik_sjkt:2": {
+      "version": 1,
+      "status": "ALIGNED_RPT_PDF_COVER",
+      "page_width": 841.89,
+      "page_height": 595.304,
+      "tolerance_pt": 0.3,
+      "identity_background_rgb": [
+        0.9294117647058824,
+        0.9568627450980393,
+        0.9686274509803922
+      ],
+      "logo_background_rgb": [
+        0.9294117647058824,
+        0.9568627450980393,
+        0.9686274509803922
+      ],
+      "source_sha256_by_subject_year": {
+        "matematik_sjkt:2": "c76fc55f783e203e76306d172c9817856fc621c02a2109ea8625977d7145c284"
+      },
+      "logo_interior_top_left": [
+        365.5,
+        214.4,
+        476.3,
+        310.8
+      ],
+      "logo_image_safe_top_left": [
+        372,
+        220,
+        470,
+        305
+      ],
+      "school_row_top_left": [
+        292,
+        337,
+        674,
+        364.7
+      ],
+      "teacher_row_top_left": [
+        292,
+        367,
+        674,
+        394
+      ]
     }
   },
   "sjkc_matematik_year3": {

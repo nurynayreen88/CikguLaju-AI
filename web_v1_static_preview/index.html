@@ -2178,7 +2178,7 @@ const rptMobileLink=document.getElementById("rpt-download-mobile");
 const rptWordLink=document.getElementById("rpt-download-word");
 const rptStatus=document.getElementById("rpt-status");
 const rptCurricula=[
- ["kssr","KSSR (SK)"],["sjkc","KSSR (SJKC)"],["kp2027","KP2027"],["dlp","DLP"]
+ ["kssr","KSSR (SK)"],["sjkc","KSSR (SJKC)"],["sjkt","KSSR (SJKT)"],["kp2027","KP2027"],["dlp","DLP"]
 ];
 let rptCatalog=null;
 let rptDownloading=false;
@@ -2187,6 +2187,7 @@ function rptCurriculumFor(subject,year){
  if(year===1)return "kp2027";
  if(subject.endsWith("_dlp"))return "dlp";
  if(subject.endsWith("_sjkc")||subject==="bahasa_melayu_sjk")return "sjkc";
+ if(subject.endsWith("_sjkt"))return "sjkt";
  return "kssr";
 }
 function rptYearLabel(year,label){
@@ -2242,7 +2243,7 @@ function rptCanDownload(entry){
 function rptWordUrl(entry){
  const url=entry?.docx_url;
  return entry?.docx_ready===true&&typeof url==="string"&&
-  /^\/api\/rpt\/2027\/sjkc\/(bahasa-cina|bahasa-melayu|sains|matematik)\/[2-6]\.docx$/.test(url)?url:null;
+  /^\/api\/rpt\/2027\/(?:sjkc\/(?:bahasa-cina|bahasa-melayu|sains|matematik)\/[2-6]|sjkt\/matematik\/2)\.docx$/.test(url)?url:null;
 }
 function refreshRptDownload(){
  const prepared=document.getElementById("rpt-prepared-manual-link");
@@ -2263,7 +2264,7 @@ function refreshRptDownload(){
  if(year.year===1||year.coming_soon){rptStatus.textContent="Dalam Penyediaan";return;}
  if(!year.pdf_ready){rptStatus.textContent="Fail RPT belum tersedia.";return;}
  if(!ready){rptStatus.textContent="RPT ini memerlukan akses berbayar aktif.";return;}
- const calendar=selection.curriculum==="sjkc"?year.note:"";
+ const calendar=["sjkc","sjkt"].includes(selection.curriculum)?year.note:"";
  const cover=rptCatalog.personalizationAllowed?"Cetakan PDF dengan nama dan logo daripada Profil Guru.":"";
  rptStatus.textContent=[calendar,cover].filter(Boolean).join(" ");
 }

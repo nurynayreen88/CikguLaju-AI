@@ -71,6 +71,18 @@ async function main(){
   assert.strictEqual(callCount,112);
   if(write)assert.strictEqual(outputs,12);
 
+  const sjktPath=path.join(root,"..","sjkt","matematik","RPT_2027_Matematik_SJKT_Tahun_2.pdf");
+  const sjktRaw=fs.readFileSync(sjktPath);
+  const sjktHash=crypto.createHash("sha256").update(sjktRaw).digest("hex");
+  const sjktLayout=validatedLayout(layout,"matematik_sjkt:2",sjktHash);
+  assert.throws(()=>validatedLayout(layout,"matematik_sjkt:2","0".repeat(64)));
+  const sjktDocument=await PDF.PDFDocument.load(sjktRaw);
+  const sjktResult=await fillOriginalCover(sjktDocument,
+    {display_name:"Cikgu Contoh",school_name:"SJKT Contoh"},tinyPng,sjktLayout,
+    {PDFLib:PDF,textPng:async()=>tinyPng});
+  assert.ok(sjktResult.hasLogo&&sjktResult.hasSchool&&sjktResult.hasTeacher);
+  assert.equal((await PDF.PDFDocument.load(await sjktDocument.save())).getPageCount(),8);
+
   for(const year of [2,3,4,5,6]){
     const key="bahasa_cina_sjkc:"+year;
     const filename="RPT_2027_Bahasa_Cina_SJKC_Tahun_"+year+".pdf";
