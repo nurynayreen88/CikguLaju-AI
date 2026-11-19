@@ -63,6 +63,12 @@
  function lessonPickerLabel(code){
   return ["ENGLISH","SCIENCE_DLP","MATH_DLP"].includes(code)?"Lesson":"PdP";
  }
+ function dlpReviewNumber(title,code){
+  const limit={SCIENCE_DLP:10,MATH_DLP:8}[code];
+  const match=/^Review\s+([0-9]{2})\b/i.exec(title);
+  const number=Number(match?.[1]);
+  return number>=1&&number<=limit?number:null;
+ }
  function nativeLessonLabel(item,code){
   let text=String(item.label||"").trim();
   if(!/^(?:PdP|Lesson)\s*0*[1-9][0-9]*/i.test(text)){
@@ -70,11 +76,7 @@
    if(Number.isInteger(n)&&n>0&&n<10000)
     text=lessonPickerLabel(code)+" "+String(n).padStart(3,"0")+" — "+text;
   }
-  const reviewLabel={
-   SCIENCE_DLP:/^Review\s+(?:0[1-9]|10)\s+•\s+\S/,
-   MATH_DLP:/^Review\s+0[1-8]\s+•\s+\S/
-  };
-  const review=["SCIENCE_DLP","MATH_DLP"].includes(code)&&reviewLabel[code].test(text);
+  const review=/^Review\s+[0-9]{2}\s+•\s+\S/.test(text)&&dlpReviewNumber(text,code)!==null;
   if(!review&&!/^(?:Lesson|PdP)\s*0*[1-9][0-9]*(?:\b|\s|[•—–:-])/i.test(text))return "";
   const book=String(item.textbook_ref||item.student_book_ref||"").trim();
   if(book&&!text.includes(book))text+=" • "+book;
@@ -245,10 +247,8 @@
   return select;
  }
  function lessonNumber(title,code){
-  if(code==="SCIENCE_DLP"){
-   const review=/^Review\s+(0[1-9]|10)\b/i.exec(title);
-   if(review)return DLP_REVIEW_OFFSET+Number(review[1]);
-  }
+  const review=dlpReviewNumber(title,code);
+  if(review!==null)return DLP_REVIEW_OFFSET+review;
   const match=/^(?:Lesson|PdP)\s*(\d+)/i.exec(title);
   return match?Number(match[1]):null;
  }
@@ -297,7 +297,7 @@
   const component=selectedComponent(c);
   const progress=c.slot.progress?.[component];
   const label=c.slot.subject_code==="ENGLISH"?"Lesson":"PdP";
-  const isDlp=c.slot.subject_code==="SCIENCE_DLP";
+  const isDlp=["SCIENCE_DLP","MATH_DLP"].includes(c.slot.subject_code);
   const describe=number=>{
    if(isDlp){
     if(number>DLP_REVIEW_OFFSET)return "Review "+String(number-DLP_REVIEW_OFFSET).padStart(2,"0");

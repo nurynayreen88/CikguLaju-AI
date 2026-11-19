@@ -18,7 +18,7 @@ from web import native_telegram_sjkc_math_client as sjkc
 from web import native_telegram_sjkt_math_client as sjkt
 from web.primary_subject_choices import variants_by_name
 from web.rph_today_progress import (
-    DLP_MATH, DLP_SCIENCE, attach_progress, class_key, dlp_completion_label, lesson_signer, read_progress,
+    DLP_Y4_COMPLETION, attach_progress, class_key, dlp_completion_label, lesson_signer, read_progress,
     read_progress_summary, save_completion, valid_completion_number,
 )
 from web.teacher_profile_routes import _auth, _body
@@ -77,8 +77,10 @@ def subject_identity(value, year=None):
     if not isinstance(value, str):
         return None, None
     key = " ".join(value.casefold().strip().replace("&", " dan ").split())
-    if year == 4 and variants_by_name().get(key, {}).get("rph_code") == DLP_SCIENCE:
-        return DLP_SCIENCE, None
+    if year == 4:
+        code = variants_by_name().get(key, {}).get("rph_code")
+        if code in DLP_Y4_COMPLETION:
+            return code, None
     return SUBJECTS.get(key, (None, None))
 
 
@@ -224,9 +226,8 @@ def day_payload(profile, schedule, target, *, today=None, sjkc_catalogue=None, s
         curriculum = None
         if not closure and variant:
             variant_key = variant["code"]
-            if year == 4 and variant["curriculum"] == "dlp" and variant["rph_code"] in (DLP_SCIENCE, DLP_MATH):
+            if code in DLP_Y4_COMPLETION:
                 curriculum = variant["curriculum"]
-                code = variant["rph_code"]
             match = {
                 "matematik_sjkc": (sjkc, sjkc_catalogue),
                 "matematik_sjkt": (sjkt, sjkt_catalogue),
@@ -529,10 +530,10 @@ def progress_summary():
         row = {
             "class_name": class_names.get(key, key),
             "subject": component_labels.get(component) or SUBJECT_LABELS[code],
-            "label": {"ENGLISH": "Lesson", DLP_SCIENCE: "sesi"}.get(code, "PdP"),
+            "label": "sesi" if code in DLP_Y4_COMPLETION else {"ENGLISH": "Lesson"}.get(code, "PdP"),
             **summary,
         }
-        if code == DLP_SCIENCE and summary["completed"]:
+        if code in DLP_Y4_COMPLETION and summary["completed"]:
             row["last_label"] = dlp_completion_label(summary["last_number"])
         entries.append(row)
     return jsonify({"year": today.year, "entries": entries})
@@ -562,8 +563,6 @@ def complete_pdp():
         if (slot is None or (slot["subject_code"] == "PJPK") != bool(component)
                 or (slot["component"] and slot["component"] != component)):
             raise ProfileValidation("Slot ini tiada dalam jadual. Muat semula jadual waktu.")
-        if slot["subject_code"] == DLP_MATH:
-            raise ProfileValidation("Rekod Selesai PdP belum tersedia untuk subjek ini.")
         number = None
         if token is not None:
             record = lesson_signer(config).loads(token, max_age=28800)

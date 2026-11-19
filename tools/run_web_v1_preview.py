@@ -104,7 +104,7 @@ def options():
         return jsonify({"error": "Existing account required"}), 403
     if request.args.get("rph_today") == "1" and config.get("account_backend") == "supabase":
         from flask import after_this_request
-        from web.rph_today_progress import lesson_number, lesson_signer
+        from web.rph_today_progress import DLP_Y4_COMPLETION, lesson_number, lesson_signer
 
         @after_this_request
         def sign_pdp_options(response):
@@ -114,13 +114,15 @@ def options():
             if not isinstance(items, list):
                 return response
             subject = request.args.get("subject", "")
+            year = int(request.args["year"])
+            if subject in DLP_Y4_COMPLETION and year != 4:
+                return response
             signer = lesson_signer(config)
             component = request.args.get("component", "")
             for item in items:
                 number = lesson_number(item, subject)
                 if number is not None:
-                    item["completion_token"] = signer.dumps([uid, int(request.args["year"]),
-                                                               subject, component, number])
+                    item["completion_token"] = signer.dumps([uid, year, subject, component, number])
             response = jsonify(items)
             response.headers["Cache-Control"] = "no-store, private"
             response.headers["Vary"] = "Cookie"
