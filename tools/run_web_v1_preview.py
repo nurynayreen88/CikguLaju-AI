@@ -113,8 +113,10 @@ def options():
             items = response.get_json(silent=True)
             if not isinstance(items, list):
                 return response
-            signer = lesson_signer(config)
             subject = request.args.get("subject", "")
+            if subject == "SCIENCE_DLP":
+                return response
+            signer = lesson_signer(config)
             component = request.args.get("component", "")
             for item in items:
                 number = lesson_number(item)

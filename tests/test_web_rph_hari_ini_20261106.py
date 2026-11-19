@@ -478,6 +478,47 @@ class DailyTimetableRouteTests(TestCase):
         schedule.assert_called_once_with(self.conf["supabase_url"],self.conf["supabase_key"],123)
         self.assertEqual(reply.headers["Cache-Control"],"no-store, private")
 
+    def test_science_dlp_year4_day_and_week_pick_from_the_native_catalogue(self):
+        target = date(2027, 1, 11)
+        rows = [
+            ("4 Bestari", "Science (DLP)"), ("4 Amanah", "Sains (DLP)"),
+            ("4 Bestari", "Sains"), ("4 Bestari", "Mathematics (DLP)"),
+            ("3 Bestari", "Science (DLP)"),
+        ]
+        schedule = {"entries": [
+            {"day": "Isnin", "start": f"{8 + i:02}:00", "end": f"{8 + i:02}:30",
+             "class_name": cls, "subject": subject}
+            for i, (cls, subject) in enumerate(rows)
+        ]}
+        with ExitStack() as stack:
+            for name, value in {"_auth": (self.conf, 123, None), "get_schedule": schedule,
+                                "get_profile": {"state_name": "Pahang"}, "read_progress": [],
+                                "malaysia_today": target}.items():
+                stack.enter_context(patch("web.rph_hari_ini_web." + name, return_value=value))
+            save = stack.enter_context(patch("web.rph_hari_ini_web.save_completion"))
+            day = self.client.get("/api/web/rph/hari-ini")
+            week = self.client.get("/api/web/rph/minggu-ini")
+            self.assertEqual(day.status_code, 200)
+            self.assertEqual(week.status_code, 200)
+            for slots in (day.json["entries"], week.json["days"][0]["entries"]):
+                for slot in slots[:2]:
+                    self.assertTrue(slot["can_prepare"])
+                    self.assertEqual((slot["subject_code"], slot["curriculum"]), ("SCIENCE_DLP", "dlp"))
+                    self.assertIsNone(slot["rpt_suggestion"])
+                    self.assertNotIn("progress", slot)
+                self.assertEqual(slots[2]["subject_code"], "SCIENCE")
+                for slot in slots[3:]:
+                    self.assertFalse(slot["can_prepare"])
+                    self.assertIn("rpt_subject", slot)
+
+            result = self.client.post("/api/web/rph/hari-ini/completion", json={
+                "date": target.isoformat(), "start": "08:00", "class_name": "4 Bestari",
+                "subject_code": "SCIENCE_DLP", "component": "",
+                "token": lesson_signer(self.conf).dumps([123, 4, "SCIENCE_DLP", "", 1]),
+            })
+            self.assertEqual(result.status_code, 400)
+            save.assert_not_called()
+
     def test_invalid_date_and_unknown_params_fail_closed(self):
         with patch("web.rph_hari_ini_web._auth",return_value=(self.conf,123,None)):
             for qs in ({"date":"2026-11-99"},{"date":"2026-11-06","uid":"999"},

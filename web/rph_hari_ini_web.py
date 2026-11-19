@@ -218,9 +218,12 @@ def day_payload(profile, schedule, target, *, today=None, sjkc_catalogue=None, s
         code, component = subject_identity(subject)
         subject_key = " ".join(subject.casefold().split())
         variant = variants_by_name().get(subject_key)
-        school = None
+        curriculum = None
         if not closure and variant:
             variant_key = variant["code"]
+            if variant_key == "science_dlp" and year == 4:
+                curriculum = variant["curriculum"]
+                code = variant["rph_code"]
             match = {
                 "matematik_sjkc": (sjkc, sjkc_catalogue),
                 "matematik_sjkt": (sjkt, sjkt_catalogue),
@@ -230,7 +233,7 @@ def day_payload(profile, schedule, target, *, today=None, sjkc_catalogue=None, s
                 if school_key not in school_ready:
                     school_ready[school_key] = match[1](year)
                 if school_ready[school_key]:
-                    school = variant["curriculum"]
+                    curriculum = variant["curriculum"]
                     code = match[0].SUBJECT
         valid = bool(year and code)
         reason = ("" if valid else
@@ -243,8 +246,8 @@ def day_payload(profile, schedule, target, *, today=None, sjkc_catalogue=None, s
                  "class_name":cls,"subject":subject,
                  "year":year,"subject_code":code,"component":component,
                  "can_prepare":can_prepare,"reason":closure or reason,"rpt_suggestion":suggestion}
-        if school:
-            entry["curriculum"] = school
+        if curriculum:
+            entry["curriculum"] = curriculum
         elif variant and year and not closure:
             entry["reason"] = "RPH untuk subjek dan tahun ini dalam penyediaan."
             if variant["curriculum"] == "dlp" and year in variant.get("rpt_years", ()):
@@ -548,7 +551,8 @@ def complete_pdp():
                              sjkt_catalogue=sjkt.available)
         slot = next((entry for entry in result["entries"] if entry["can_prepare"]
                      and all(entry[key] == body[key] for key in ("start", "class_name", "subject_code"))), None)
-        if (slot is None or (slot["subject_code"] == "PJPK") != bool(component)
+        if (slot is None or slot.get("curriculum") == "dlp"
+                or (slot["subject_code"] == "PJPK") != bool(component)
                 or (slot["component"] and slot["component"] != component)):
             raise ProfileValidation("Slot ini tiada dalam jadual. Muat semula jadual waktu.")
         number = None

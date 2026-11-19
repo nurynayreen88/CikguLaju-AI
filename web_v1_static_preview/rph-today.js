@@ -36,7 +36,7 @@
  const TAGS=["component","theme","unit","topic","lesson"];
  const SOURCE_NAMES={
   BM:"Unit",ENGLISH:"Unit / Topic",PI:"Bidang / Tajuk",
-  MATH:"Bidang / Unit",MATH_SJKC:"Unit",MATH_SJKT:"Unit",SCIENCE:"Tema / Unit",MORAL:"Unit / Nilai",
+  MATH:"Bidang / Unit",MATH_SJKC:"Unit",MATH_SJKT:"Unit",SCIENCE:"Tema / Unit",SCIENCE_DLP:"Unit",MORAL:"Unit / Nilai",
   PSV:"Bidang / Unit",PJPK:"Unit / Tajuk",ARAB:"Unit",
   MUZIK:"Unit / Tajuk",SEJARAH:"Unit",RBT:"Unit"
  };
@@ -58,14 +58,18 @@
   if(dot&&["MATH","SCIENCE"].includes(code))return "Unit "+Number(dot[1])+": "+dot[2].trim();
   return value;
  }
+ function lessonPickerLabel(code){
+  return ["ENGLISH","SCIENCE_DLP"].includes(code)?"Lesson":"PdP";
+ }
  function nativeLessonLabel(item,code){
   let text=String(item.label||"").trim();
   if(!/^(?:PdP|Lesson)\s*0*[1-9][0-9]*/i.test(text)){
    const n=item.pdp_no??item.lesson_no??item.sequence_no;
    if(Number.isInteger(n)&&n>0&&n<10000)
-    text=(code==="ENGLISH"?"Lesson ":"PdP ")+String(n).padStart(3,"0")+" — "+text;
+    text=lessonPickerLabel(code)+" "+String(n).padStart(3,"0")+" — "+text;
   }
-  if(!/^(?:Lesson|PdP)\s*0*[1-9][0-9]*(?:\b|\s|[•—–:-])/i.test(text))return "";
+  const review=code==="SCIENCE_DLP"&&/^Review\s+(?:0[1-9]|10)\s+•\s+\S/.test(text);
+  if(!review&&!/^(?:Lesson|PdP)\s*0*[1-9][0-9]*(?:\b|\s|[•—–:-])/i.test(text))return "";
   const book=String(item.textbook_ref||item.student_book_ref||"").trim();
   if(book&&!text.includes(book))text+=" • "+book;
   return text;
@@ -459,7 +463,7 @@
    }else{
     const extra={subject:code,unit:control.unit.value};
     if(code==="PJPK")extra.component=control.component.value;
-    await loadStage(c,"lesson","pdp",extra,code==="ENGLISH"?"Lesson":"PdP");
+    await loadStage(c,"lesson","pdp",extra,lessonPickerLabel(code));
    }
   }else if(from==="topic"&&control.topic.value){
    await loadStage(c,"lesson","bm-pdp",{
@@ -470,6 +474,12 @@
  async function initialize(c){
   c.busy=true;updateAll();
   try{
+   // The timetable has validated this DLP subject. Its native unit endpoint
+   // verifies the catalogue directly, as in the standalone DLP picker.
+   if(c.slot.curriculum==="dlp"){
+    await advance(c,"subject");
+    return;
+   }
    const extra=["sjkc","sjkt"].includes(c.slot.curriculum)?{curriculum:c.slot.curriculum}:{};
    const items=await sourceOptions(c.slot.year,"subjects",extra);
    if(c.ticket!==requestId)return;
@@ -519,7 +529,7 @@
   c.bookRef=create("p","notice");
   for(const [name,label] of [
    ["component","Komponen PJ atau PK"],["theme","Tema"],["unit",SOURCE_NAMES[slot.subject_code]||"Unit / Tajuk"],
-   ["topic","Tajuk"],["lesson",slot.subject_code==="ENGLISH"?"Lesson":"PdP"]
+   ["topic","Tajuk"],["lesson",lessonPickerLabel(slot.subject_code)]
   ])stage(c,name,label);
   renderWeeklySuggestion(c);
   if(slot.progress&&(progressEditable||Object.values(slot.progress).some(record=>record.previous))){
