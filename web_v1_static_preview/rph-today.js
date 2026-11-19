@@ -33,6 +33,7 @@
  const bundleParts=new Map(),bundleAttempts=new Map();
  let bundleBusy=false,bundleSlots=[],singleDownloads=0;
  const WORD_MIME="application/vnd.openxmlformats-officedocument.wordprocessingml.document";
+ const DLP_REVIEW_OFFSET=100;
  const TAGS=["component","theme","unit","topic","lesson"];
  const SOURCE_NAMES={
   BM:"Unit",ENGLISH:"Unit / Topic",PI:"Bidang / Tajuk",
@@ -108,9 +109,9 @@
     const subjects=create("ul","pdp-summary-subjects");
     for(const row of rows){
      const item=create("li");
+     const latest=row.last_label||row.label+" "+row.last_number;
      const detail=row.completed
-      ? row.completed+" "+row.label+" selesai · Terakhir: "+row.label+" "+
-        row.last_number+" ("+dates.format(new Date(row.last_date+"T12:00:00+08:00"))+")"
+      ? row.completed+" "+row.label+" selesai · Terakhir: "+latest+" ("+dates.format(new Date(row.last_date+"T12:00:00+08:00"))+")"
       : "Belum ada rekod PdP";
      item.append(create("strong","",row.subject),create("span","notice",detail));
      subjects.append(item);
@@ -238,7 +239,11 @@
   select.addEventListener("change",()=>{void advance(c,name);});
   return select;
  }
- function lessonNumber(title){
+ function lessonNumber(title,code){
+  if(code==="SCIENCE_DLP"){
+   const review=/^Review\s+(0[1-9]|10)\b/i.exec(title);
+   if(review)return DLP_REVIEW_OFFSET+Number(review[1]);
+  }
   const match=/^(?:Lesson|PdP)\s*(\d+)/i.exec(title);
   return match?Number(match[1]):null;
  }
@@ -287,12 +292,19 @@
   const component=selectedComponent(c);
   const progress=c.slot.progress?.[component];
   const label=c.slot.subject_code==="ENGLISH"?"Lesson":"PdP";
-  const describe=number=>label+" "+String(number).padStart(3,"0");
+  const isDlp=c.slot.subject_code==="SCIENCE_DLP";
+  const describe=number=>{
+   if(isDlp){
+    if(number>DLP_REVIEW_OFFSET)return "Review "+String(number-DLP_REVIEW_OFFSET).padStart(2,"0");
+    return "Lesson "+String(number).padStart(2,"0");
+   }
+   return label+" "+String(number).padStart(3,"0");
+  };
   const previous=progress?.previous;
   const completed=progress?.completed;
   const completedNumber=number=>c.slot.rpt_suggestion?.sessions
    ?.find(session=>session.includes(number))?.at(-1)??number;
-  let next=previous&&previous<999?previous+1:null;
+  let next=!isDlp&&previous&&previous<999?previous+1:null;
   if(c.slot.subject_code==="SCIENCE"&&c.slot.year===6){
    if(previous===89)next=1;
    if(previous===84)next=null;
@@ -306,7 +318,7 @@
   let nextAvailable=false;
   for(const option of c.controls.lesson.options){
    if(!option.dataset.lessonLabel)continue;
-   const number=lessonNumber(option.dataset.lessonLabel);
+   const number=lessonNumber(option.dataset.lessonLabel,c.slot.subject_code);
    if(number===next)nextAvailable=true;
    const badge=c.slot.suggested_session?.includes(number)?" · Cadangan slot ini":
      !completed&&number===next?" · Sambungan kelas":
@@ -316,10 +328,10 @@
   }
   if(!completed&&nextAvailable)c.progressHint.textContent+=" Sambungan kelas: "+describe(next)+".";
   c.complete.hidden=Boolean(completed)&&
-    (!selection?.dataset.completionToken||completedNumber(lessonNumber(selection.dataset.lessonLabel))===completed);
+    (!selection?.dataset.completionToken||completedNumber(lessonNumber(selection.dataset.lessonLabel,c.slot.subject_code))===completed);
   c.complete.textContent=completed?"Betulkan rekod PdP":"Selesai PdP";
   c.complete.disabled=savingProgress||reviewing||!confirm.checked||
-    !selection?.dataset.completionToken||completedNumber(lessonNumber(selection.dataset.lessonLabel))===completed;
+    !selection?.dataset.completionToken||completedNumber(lessonNumber(selection.dataset.lessonLabel,c.slot.subject_code))===completed;
   c.undoCompletion.hidden=!completed;
   c.undoCompletion.disabled=savingProgress||reviewing||!confirm.checked;
  }
@@ -366,9 +378,9 @@
    if(name==="lesson"){
      option.dataset.lessonLabel=title;
      option.dataset.completionToken=String(item.completion_token||"");
-     if(c.slot.suggested_session?.includes(lessonNumber(title)))
+     if(c.slot.suggested_session?.includes(lessonNumber(title,c.slot.subject_code)))
       option.textContent+=" · Cadangan slot ini";
-     else if(!c.progressHint&&suggestedLessonNumbers(c).includes(lessonNumber(title)))
+     else if(!c.progressHint&&suggestedLessonNumbers(c).includes(lessonNumber(title,c.slot.subject_code)))
       option.textContent+=" · Cadangan minggu ini";
      option.dataset.bookRef=String(item.textbook_ref||item.student_book_ref||"").trim();
      option.dataset.activityBookRef=String(item.activitybook_ref||"").trim();

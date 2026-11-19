@@ -18,7 +18,8 @@ from web import native_telegram_sjkc_math_client as sjkc
 from web import native_telegram_sjkt_math_client as sjkt
 from web.primary_subject_choices import variants_by_name
 from web.rph_today_progress import (
-    attach_progress, class_key, lesson_signer, read_progress, read_progress_summary, save_completion,
+    DLP_SCIENCE, attach_progress, class_key, dlp_completion_label, lesson_signer, read_progress,
+    read_progress_summary, save_completion, valid_completion_number,
 )
 from web.teacher_profile_routes import _auth, _body
 from web.teacher_profile_store import (
@@ -72,10 +73,12 @@ NON_TEACHING = frozenset(("rehat", "perhimpunan", "perhimpunan rasmi",
                           "kokurikulum", "masa rehat"))
 
 
-def subject_identity(value):
+def subject_identity(value, year=None):
     if not isinstance(value, str):
         return None, None
     key = " ".join(value.casefold().strip().replace("&", " dan ").split())
+    if year == 4 and variants_by_name().get(key, {}).get("rph_code") == DLP_SCIENCE:
+        return DLP_SCIENCE, None
     return SUBJECTS.get(key, (None, None))
 
 
@@ -215,15 +218,14 @@ def day_payload(profile, schedule, target, *, today=None, sjkc_catalogue=None, s
                 or start >= end):
             raise ProfileValidation("Maklumat waktu dalam jadual tidak sah")
         year = class_year(cls)
-        code, component = subject_identity(subject)
+        code, component = subject_identity(subject, year)
         subject_key = " ".join(subject.casefold().split())
         variant = variants_by_name().get(subject_key)
         curriculum = None
         if not closure and variant:
             variant_key = variant["code"]
-            if variant_key == "science_dlp" and year == 4:
+            if code == DLP_SCIENCE:
                 curriculum = variant["curriculum"]
-                code = variant["rph_code"]
             match = {
                 "matematik_sjkc": (sjkc, sjkc_catalogue),
                 "matematik_sjkt": (sjkt, sjkt_catalogue),
@@ -508,8 +510,9 @@ def progress_summary():
     scopes = set(summaries)
     for slot in schedule["entries"]:
         name = slot.get("class_name")
-        code, component = subject_identity(slot.get("subject"))
-        if not class_year(name) or not code:
+        year = class_year(name)
+        code, component = subject_identity(slot.get("subject"), year)
+        if not year or not code:
             continue
         key = class_key(name)
         class_names.setdefault(key, name)
@@ -521,12 +524,16 @@ def progress_summary():
     entries = []
     component_labels = {"PJ": "Pendidikan Jasmani", "PK": "Pendidikan Kesihatan"}
     for key, code, component in sorted(scopes):
-        entries.append({
+        summary = summaries.get((key, code, component), {"completed": 0})
+        row = {
             "class_name": class_names.get(key, key),
             "subject": component_labels.get(component) or SUBJECT_LABELS[code],
-            "label": "Lesson" if code == "ENGLISH" else "PdP",
-            **summaries.get((key, code, component), {"completed": 0}),
-        })
+            "label": {"ENGLISH": "Lesson", DLP_SCIENCE: "sesi"}.get(code, "PdP"),
+            **summary,
+        }
+        if code == DLP_SCIENCE and summary["completed"]:
+            row["last_label"] = dlp_completion_label(summary["last_number"])
+        entries.append(row)
     return jsonify({"year": today.year, "entries": entries})
 
 @bp.post("/api/web/rph/hari-ini/completion")
@@ -551,8 +558,7 @@ def complete_pdp():
                              sjkt_catalogue=sjkt.available)
         slot = next((entry for entry in result["entries"] if entry["can_prepare"]
                      and all(entry[key] == body[key] for key in ("start", "class_name", "subject_code"))), None)
-        if (slot is None or slot.get("curriculum") == "dlp"
-                or (slot["subject_code"] == "PJPK") != bool(component)
+        if (slot is None or (slot["subject_code"] == "PJPK") != bool(component)
                 or (slot["component"] and slot["component"] != component)):
             raise ProfileValidation("Slot ini tiada dalam jadual. Muat semula jadual waktu.")
         number = None
@@ -560,7 +566,7 @@ def complete_pdp():
             record = lesson_signer(config).loads(token, max_age=28800)
             if (not isinstance(record, list) or len(record) != 5
                     or record[:4] != [uid, slot["year"], slot["subject_code"], component]
-                    or type(record[4]) is not int or not 1 <= record[4] <= 999):
+                    or not valid_completion_number(slot["subject_code"], record[4])):
                 raise ProfileValidation("Lesson/PdP ini tidak sepadan dengan slot jadual")
             number = record[4]
             if (slot["subject_code"] == "ENGLISH" and target.year == 2027

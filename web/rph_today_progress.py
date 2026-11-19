@@ -11,6 +11,9 @@ from web.teacher_profile_store import NoRedirect, ProfileUnavailable
 
 TABLE = "web_timetable_pdp_completion"
 RPC = "rpc/web_timetable_pdp_progress"
+DLP_SCIENCE = "SCIENCE_DLP"
+DLP_REVIEW_OFFSET = 100
+DLP_Y4_SESSION = re.compile(r"DLP-SCI-Y4-([LR])([0-9]{2})")
 NUMBER = re.compile(r"^(?:Lesson|PdP)\s*(\d{1,3})\b", re.IGNORECASE)
 
 
@@ -18,7 +21,27 @@ def class_key(value):
     return " ".join(value.casefold().split())
 
 
-def lesson_number(item):
+def valid_completion_number(subject, number):
+    if type(number) is not int:
+        return False
+    if subject == DLP_SCIENCE:
+        return 1 <= number <= 59 or DLP_REVIEW_OFFSET < number <= DLP_REVIEW_OFFSET + 10
+    return 1 <= number <= 999
+
+
+def dlp_completion_label(number):
+    if number > DLP_REVIEW_OFFSET:
+        return f"Review {number - DLP_REVIEW_OFFSET:02d}"
+    return f"Lesson {number:02d}"
+
+
+def lesson_number(item, subject=None):
+    if subject == DLP_SCIENCE:
+        match = DLP_Y4_SESSION.fullmatch(str(item.get("value", "")))
+        if not match:
+            return None
+        number = int(match[2]) + (DLP_REVIEW_OFFSET if match[1] == "R" else 0)
+        return number if valid_completion_number(subject, number) else None
     match = NUMBER.match(str(item.get("label", "")).strip())
     number = int(match[1]) if match else next(
         (item[key] for key in ("pdp_no", "lesson_no", "sequence_no")
@@ -111,7 +134,7 @@ def attach_progress(day, rows):
         scope = row["class_key"], row["subject_code"], row["component"]
         by_scope.setdefault(scope, {})[(row["pdp_date"], row["start_time"][:5])] = row["sequence_no"]
     for slot in day["entries"]:
-        if not slot["can_prepare"] or slot.get("curriculum") in ("sjkc", "dlp"):
+        if not slot["can_prepare"] or slot.get("curriculum") == "sjkc":
             continue
         slot_date = day["date"], slot["start"]
         recorded = {}

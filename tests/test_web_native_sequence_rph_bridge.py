@@ -137,24 +137,35 @@ class WebNativePdPBridgeTests(unittest.TestCase):
     def test_web_options_expose_science_only_in_dlp_year4(self):
         from tools.run_web_v1_preview import app
 
-        config = {"CIKGULAJU_WEB_SESSION_SECRET": "local-test-secret"}
+        from web.rph_today_progress import lesson_signer
+
+        config = {"CIKGULAJU_WEB_SESSION_SECRET": "local-test-secret", "account_backend": "supabase"}
         unit = {"value": "08", "label": "Unit 8 Materials"}
         lesson = {"value": "DLP-SCI-Y4-L46", "label": "Lesson 46 Sources of Basic Materials"}
+        review = {"value": "DLP-SCI-Y4-R08", "label": "Review 08 Materials Review"}
+        invalid = {"value": "DLP-SCI-Y4-R11", "label": "Review 11"}
         with (
             patch("web_v1_telegram_auth_routes._config", return_value=config),
             patch("web_v1_sessions.verify_session_ticket", return_value=123),
             patch("web_v1_telegram_auth_routes._lookup", return_value={"telegram_user_id": 123}),
             patch("web.native_telegram_sequence_rph_client.list_native_units", return_value=[unit]) as units,
-            patch("web.native_telegram_sequence_rph_client.list_native_lessons", return_value=[lesson]) as lessons,
+            patch("web.native_telegram_sequence_rph_client.list_native_lessons", return_value=[lesson, review, invalid]) as lessons,
         ):
             client = app.test_client()
             selection = {"curriculum": "dlp", "year": 4, "subject": "SCIENCE_DLP"}
             response = client.get("/api/options", query_string={**selection, "kind": "units"})
             self.assertEqual(response.status_code, 200)
             self.assertEqual(response.json, [unit])
-            response = client.get("/api/options", query_string={**selection, "kind": "pdp", "unit": "08"})
+            response = client.get("/api/options", query_string={
+                **selection, "kind": "pdp", "unit": "08", "rph_today": "1",
+            })
             self.assertEqual(response.status_code, 200)
-            self.assertEqual(response.json, [lesson])
+            self.assertEqual(response.headers["Vary"], "Cookie")
+            signer = lesson_signer(config)
+            first, second, bad = response.json
+            self.assertEqual(signer.loads(first["completion_token"]), [123, 4, "SCIENCE_DLP", "", 46])
+            self.assertEqual(signer.loads(second["completion_token"]), [123, 4, "SCIENCE_DLP", "", 108])
+            self.assertNotIn("completion_token", bad)
             response = client.get("/api/options", query_string={**selection, "kind": "units", "subject": "MATH_DLP"})
             self.assertEqual(response.status_code, 400)
             units.assert_called_once_with(4, "SCIENCE_DLP")

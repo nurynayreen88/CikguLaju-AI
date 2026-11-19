@@ -134,3 +134,11 @@ vm.runInNewContext(initialize, ctx);
   assert.equal(requested.length, 1);
   assert.equal(requested[0][1], "subjects");
 })().catch(error => { console.error(error); process.exitCode = 1; });
+
+const numberFunction = source.slice(source.indexOf(" function lessonNumber("),
+  source.indexOf(" function selectedComponent("));
+ctx.DLP_REVIEW_OFFSET=100;
+vm.runInNewContext(numberFunction, ctx);
+assert.equal(ctx.lessonNumber("Lesson 08 • Observe", "SCIENCE_DLP"), 8);
+assert.equal(ctx.lessonNumber("Review 08 • Materials Review", "SCIENCE_DLP"), 108);
+assert.equal(ctx.lessonNumber("Review 08 • Materials Review", "SCIENCE"), null);
