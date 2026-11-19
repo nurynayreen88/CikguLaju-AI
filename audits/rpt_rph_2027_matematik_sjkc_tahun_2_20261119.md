@@ -24,3 +24,9 @@ Set [96 RPH Word](../staging/matematik_sjkc/tahun_2/RPH_2027_Matematik_SJKC_Tahu
 ## Semakan teknikal
 
 Pilihan RPH Tahun 2 dan Tahun 3 menggunakan tarikh, unit dan PdP daripada sumber masing-masing. Web menghantar permintaan ke sumber yang sama dengan Telegram. Ujian meliputi akaun ujian, pengasingan Tahun 2 dan 3, format Word/PDF, kuota muat turun dan penolakan kombinasi unit/PdP yang salah.
+
+## Penerbitan
+
+[Telegram #954](https://github.com/nurynayreen88/CikguLaju-AI/pull/954) dan [Web #955](https://github.com/nurynayreen88/CikguLaju-AI/pull/955) telah dipasang ke produksi. Telegram mengesahkan pilihan RPH Tahun 2 aktif. Web menghidangkan pemilih Tahun 2 dan templat muka depan baharu. Ujian pelayar telefon membuka Unit RPH melalui carian Matematik SJKC Tahun 2.
+
+Kesemua 96 RPH dijana dalam Word dan PDF melalui laluan Web dengan akaun ujian. Eksport individu kekal satu halaman A4 dengan nama kelas, tarikh, masa, bilangan murid dan enam baris refleksi ujian. Pemilihan slot jadual waktu dan pemotongan kuota selepas penghantaran diuji dengan akaun simulasi. Semakan produksi mengesahkan keperluan log masuk untuk katalog dan dokumen. Muat turun dengan akaun guru produksi belum disahkan.
