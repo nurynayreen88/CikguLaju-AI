@@ -15,6 +15,7 @@ from staging.sains.tahun5.eksport_2027 import render_rph as render_sains_year5
 from staging.sains.tahun5.semakan_penjana import ReviewRuntime
 from staging.sains.tahun6.eksport_2027 import render_rph as render_sains_year6
 from staging.sains.tahun6.penjana_2027 import ScienceYear6Runtime
+from web.math_y6_ratio_source_hold_20261110 import held_math_y6_ratio_identity
 
 PREFIX = "sk27:"
 STATE_KEY = "_sk_rph_2027"
@@ -76,9 +77,18 @@ def install(runtime):
                      _button("Muat turun PDF", f"download:pdf:{selection['nonce']}"),
                      _button("Pilih PdP lain", f"unit:{selection['scope']}:{selection['unit']}")])
 
+    def held_legacy_ratio(st):
+        return (st.get("year") == "Tahun 6" and st.get("subject") == "Matematik"
+                and held_math_y6_ratio_identity(6, "MATH", st.get("pdp_sequence_code")))
+
+    def send_ratio_unit(cid, st):
+        st[STATE_KEY] = {"scope": "mt6"}
+        return send(cid, "Untuk Nisbah dan Kadaran, pilih Lesson dalam Unit 7 Matematik SK Tahun 6 di RPH 2027.",
+                    [_button("Buka Unit 7 · RPH 2027", "unit:mt6:07")])
+
     def selected(st):
         choice = st.get(STATE_KEY)
-        if choice and (st.get("subject"), st.get("year"), st.get("lesson_no")) == (
+        if choice and "id" in choice and (st.get("subject"), st.get("year"), st.get("lesson_no")) == (
                 SETS[choice["scope"]][1], SETS[choice["scope"]][2], choice["id"]):
             return choice
         return None
@@ -137,6 +147,9 @@ def install(runtime):
             busy = cid in runtime._processing_chats and bool(runtime.state.get(cid, {}).get(STATE_KEY))
         if busy:
             return runtime.send(cid, "Fail RPH sedang dihantar.", [])
+        st = runtime.state.get(cid, {})
+        if data == "matsubmit2528" and held_legacy_ratio(st):
+            return send_ratio_unit(cid, st)
         if not isinstance(data, str) or not data.startswith(PREFIX):
             return old_callback(cid, data)
         st = runtime.state.setdefault(cid, {})
@@ -188,11 +201,27 @@ def install(runtime):
     def after_time(cid, st):
         choice = selected(st)
         if choice is None:
+            if held_legacy_ratio(st):
+                return send_ratio_unit(cid, st)
             return old_continue(cid, st)
         choice["session_ready"] = True
         return choose_formats(cid, choice)
 
+    # These old pickers have already resolved the exact PdP code before
+    # handing off. Keep their indexed callbacks and saved choices stable.
+    def guard_picker(picker):
+        def guarded(cid, *args, **kwargs):
+            st = runtime.state.get(cid, {})
+            if held_legacy_ratio(st):
+                return send_ratio_unit(cid, st)
+            return picker(cid, *args, **kwargs)
+        return guarded
+
     runtime.callback = callback
     runtime._continue_after_rph_time = after_time
+    for name in ("_temporary_auto_pack_v2386", "_lesson_to_class_v2439"):
+        picker = getattr(runtime, name, None)
+        if callable(picker):
+            setattr(runtime, name, guard_picker(picker))
     runtime.CIKGULAJU_SK_2027_RPH_MENU = True
     return True
