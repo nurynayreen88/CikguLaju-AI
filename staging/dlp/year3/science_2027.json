@@ -1,0 +1,2697 @@
+{
+  "year": 3,
+  "planning_year": 2027,
+  "subject": "SCIENCE_DLP",
+  "rpt_file": "CikguLaju_RPT_DLP_2027_Science_Year_3.docx",
+  "rpt_sha256": "9f5c9e0f32c676b1f165d47851fe6cd6039051851638172515d23d9b8cd2eef9",
+  "plans": [
+    {
+      "id": "DLP-SCI-Y3-01",
+      "label": "Lesson 01",
+      "title": "Observe with the senses",
+      "unit": "Unit 1 Scientific Skills",
+      "rpt_dates": [
+        "A  4-7 Jan",
+        "B  4-8 Jan"
+      ],
+      "minutes": 30,
+      "standards": [
+        "CS 1.1",
+        "LS 1.1.1"
+      ],
+      "references": [
+        "TB pp. 2-3",
+        "AB pp. 1-2"
+      ],
+      "objective": "Record three observations and name the sense used for each.",
+      "materials": "Leaves, an opaque sound tube, trays and observation cards.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show a leaf and ask which features can be checked without guessing.",
+          "pupils": "Name one feature and say which sense can check it."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Set up looking, touching and quiet listening stations. Model the difference between “rough” and “looks old”.",
+          "pupils": "Examine the safe items and record an observation and sense at each station."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Ask each pupil to submit three evidence statements and check the sense named for each.",
+          "pupils": "Submit three observations and identify sight, touch or hearing beside each."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask how two pupils can check a disputed observation.",
+          "pupils": "Repeat it using the named sense and report what was observed."
+        }
+      ],
+      "follow_up": "Separate observable details from opinions."
+    },
+    {
+      "id": "DLP-SCI-Y3-02",
+      "label": "Lesson 02",
+      "title": "Classify living things",
+      "unit": "Unit 1 Scientific Skills",
+      "rpt_dates": [
+        "A  4-7 Jan",
+        "B  4-8 Jan"
+      ],
+      "minutes": 30,
+      "standards": [
+        "CS 1.1",
+        "LS 1.1.2"
+      ],
+      "references": [
+        "TB pp. 4-5",
+        "AB pp. 3"
+      ],
+      "objective": "Sort six pictures by one visible feature and state the sorting rule.",
+      "materials": "Six picture cards of living things and two sorting mats.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show a bird and a fish. Ask for one feature that can be seen in both images.",
+          "pupils": "Suggest a feature such as legs, fins or a visible covering."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Give pairs six animal pictures with clear features. Ask them to name one testable rule and keep it throughout their sort.",
+          "pupils": "Place all six cards into two groups using the named visible feature."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Give each pupil an unsorted copy and check all six placements against their rule.",
+          "pupils": "Sort the six pictures independently and write the sorting rule."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Show a new example and ask where it would go.",
+          "pupils": "Place it using the same feature and explain why."
+        }
+      ],
+      "follow_up": "Check pupils use one visible feature throughout."
+    },
+    {
+      "id": "DLP-SCI-Y3-03",
+      "label": "Lesson 03",
+      "title": "Measure and record length",
+      "unit": "Unit 1 Scientific Skills",
+      "rpt_dates": [
+        "A  4-7 Jan",
+        "B  4-8 Jan"
+      ],
+      "minutes": 30,
+      "standards": [
+        "CS 1.1",
+        "LS 1.1.3"
+      ],
+      "references": [
+        "TB pp. 6-7",
+        "AB pp. 4-5"
+      ],
+      "objective": "Select a ruler, measure two objects from the zero mark and record each reading in centimetres.",
+      "materials": "Centimetre rulers, pencils, strips of card and recording slips.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Hold a strip at the ruler’s 1 cm mark. Ask where its end should start.",
+          "pupils": "Identify the zero mark as the starting point."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Model alignment and show how to read the other end in cm. Give each pair two short objects.",
+          "pupils": "Take turns aligning each object at zero, reading the scale and recording the length."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Observe each pupil measuring one of the two objects and check both readings and units on the slip.",
+          "pupils": "Measure independently, then submit both lengths in centimetres."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Show a ruler with a gap before the zero mark.",
+          "pupils": "Explain why the ruler’s edge is different from its zero mark."
+        }
+      ],
+      "follow_up": "Reteach alignment at zero and use of cm."
+    },
+    {
+      "id": "DLP-SCI-Y3-04",
+      "label": "Lesson 04",
+      "title": "Make an inference",
+      "unit": "Unit 1 Scientific Skills",
+      "rpt_dates": [
+        "A  10-14 Jan",
+        "B  11-15 Jan"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 1.1",
+        "LS 1.1.4"
+      ],
+      "references": [
+        "TB pp. 8-10",
+        "AB pp. 6-7"
+      ],
+      "objective": "State one observation and use it to support one plausible explanation.",
+      "materials": "Illustrated footprints, comparison cards and an observation–inference sheet.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a picture of damp footprints beside a tap. Ask what the picture actually shows.",
+          "pupils": "Describe one visible detail without suggesting a cause."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model separate observation and inference columns. Give groups two illustrated scenes with more than one possible explanation.",
+          "pupils": "Record visible clues, suggest an explanation for each scene and compare which clues support it."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Give an unfamiliar scene to each pupil. Check that the inference is plausible and linked to a visible detail.",
+          "pupils": "Write one observation and one possible explanation connected by “because”."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask for another explanation that fits the same visible evidence.",
+          "pupils": "Offer an alternative and say what could be checked next."
+        }
+      ],
+      "follow_up": "Check inference is supported by a stated observation."
+    },
+    {
+      "id": "DLP-SCI-Y3-05",
+      "label": "Lesson 05",
+      "title": "Predict from evidence",
+      "unit": "Unit 1 Scientific Skills",
+      "rpt_dates": [
+        "A  17-21 Jan",
+        "B  18-22 Jan"
+      ],
+      "minutes": 30,
+      "standards": [
+        "CS 1.1",
+        "LS 1.1.5"
+      ],
+      "references": [
+        "TB pp. 11-12",
+        "AB pp. 8"
+      ],
+      "objective": "Make a prediction and cite a pattern or an earlier observation to support it.",
+      "materials": "Three picture cards from a growing pattern, a ruler and prediction slips.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show three pictures of the same shoot taken on different days.",
+          "pupils": "Describe the pattern across the three pictures."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Model using the first two pictures to predict the third. Offer a second sequence with its last picture covered.",
+          "pupils": "Record a prediction and point to a previous result that supports it."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Ask each pupil to finish a prediction sentence and give a reason drawn from the sequence.",
+          "pupils": "Submit a likely next result with one stated pattern or earlier observation."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Reveal the covered result and discuss predictions supported by the pattern.",
+          "pupils": "Compare the result with the prediction and say what evidence was used."
+        }
+      ],
+      "follow_up": "Check each prediction includes a previous observation."
+    },
+    {
+      "id": "DLP-SCI-Y3-06",
+      "label": "Lesson 06",
+      "title": "Communicate findings",
+      "unit": "Unit 1 Scientific Skills",
+      "rpt_dates": [
+        "A  17-21 Jan",
+        "B  18-22 Jan"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 1.1",
+        "LS 1.1.6"
+      ],
+      "references": [
+        "TB pp. 13-14",
+        "AB pp. 9"
+      ],
+      "objective": "Present three observations in a labelled table or drawing and explain one finding.",
+      "materials": "Shell or leaf cards, magnifiers, paper and sample table headings.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show an unlabelled recording sheet and ask what a reader needs to identify each result.",
+          "pupils": "Suggest a heading, label or key."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model two formats using a different specimen. Give groups specimens or clear photographs and ask them to choose a table or drawing.",
+          "pupils": "Observe three features, record each feature clearly and agree which result to explain."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check each pupil’s three observations and ask them to explain one without relying on their partner.",
+          "pupils": "Submit a labelled table or drawing and explain one recorded finding."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Compare two recordings that present the same idea differently.",
+          "pupils": "Identify one label that helped the reader understand a result."
+        }
+      ],
+      "follow_up": "Check that labels make all three observations interpretable."
+    },
+    {
+      "id": "DLP-SCI-Y3-07",
+      "label": "Lesson 07",
+      "title": "Use apparatus and handle specimens",
+      "unit": "Unit 1 Scientific Skills",
+      "rpt_dates": [
+        "A  24-28 Jan",
+        "B  25-29 Jan"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 1.2",
+        "LS 1.2.1, 1.2.2"
+      ],
+      "references": [
+        "TB pp. 15-17",
+        "AB pp. 10-11"
+      ],
+      "objective": "Demonstrate safe use of two tools and transfer a specimen without damaging it.",
+      "materials": "Magnifiers, blunt tongs, soft brushes, trays and dry leaves.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Compare a crushed paper leaf with an intact one and ask how tools could protect it.",
+          "pupils": "Name a way to hold or move a specimen gently."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Demonstrate proper handling of a magnifier and blunt tongs. Set up labelled practice stations with a specimen transfer path.",
+          "pupils": "Inspect a specimen using the magnifier and transfer the specimen between trays without crushing it."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Use a three-point checklist for two tools and the specimen transfer. Rotate so each pupil demonstrates independently.",
+          "pupils": "Select and use both tools safely, then show the leaf remains intact in the receiving tray."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask what to do if a fragile part breaks or spills.",
+          "pupils": "Explain how to stop, report and continue after guidance."
+        }
+      ],
+      "follow_up": "Recheck grip and handling with fragile specimens."
+    },
+    {
+      "id": "DLP-SCI-Y3-08",
+      "label": "Lesson 08",
+      "title": "Sketch, clean and store",
+      "unit": "Unit 1 Scientific Skills",
+      "rpt_dates": [
+        "A  31 Jan-4 Feb",
+        "B  2-4 Feb"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 1.2",
+        "LS 1.2.3, 1.2.4, 1.2.5"
+      ],
+      "references": [
+        "TB pp. 17-20",
+        "AB pp. 12-14"
+      ],
+      "objective": "Draw and label a specimen, clean used apparatus and return it to the correct place.",
+      "materials": "Specimens, pencils, trays, cleaning cloths, magnifiers and a storage chart.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Display a sketch with an unclear label and a tray with equipment in the wrong place.",
+          "pupils": "Suggest one correction to the picture or storage arrangement."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model a clear outline and straight label lines. Demonstrate wiping, drying and returning the apparatus after use.",
+          "pupils": "Observe a specimen, make a labelled sketch, clean the apparatus and match it to its storage place."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check every pupil’s drawing and observe each pupil cleaning and storing one item.",
+          "pupils": "Show a recognisable sketch with labels and demonstrate the correct clean-and-store sequence."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask why damp apparatus is dried before being stored.",
+          "pupils": "Explain one consequence of putting it away wet."
+        }
+      ],
+      "follow_up": "Check sketch labels, cleaning and correct storage separately."
+    },
+    {
+      "id": "DLP-SCI-Y3-09",
+      "label": "Lesson 09",
+      "title": "Follow science room rules",
+      "unit": "Unit 2 Science Room Rules",
+      "rpt_dates": [
+        "A  14-18 Feb",
+        "B  15-19 Feb"
+      ],
+      "minutes": 30,
+      "standards": [
+        "CS 2.1",
+        "LS 2.1.1"
+      ],
+      "references": [
+        "TB pp. 24-26",
+        "AB pp. 15-16"
+      ],
+      "objective": "Demonstrate one rule before, during and after a science room activity and explain one consequence.",
+      "materials": "Science room rules cards, teacher-made scenario cards and empty apparatus trays.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show a picture of a crowded doorway and ask how the class should enter safely.",
+          "pupils": "State one action that keeps the entrance clear."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Set up a short dry-run with empty trays and rules cards for before, during and after work.",
+          "pupils": "Rehearse entering, handling and returning materials safely. Explain each chosen rule to a partner."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Give each pupil three situation prompts and use a checklist for the three stages and a consequence.",
+          "pupils": "Demonstrate an appropriate rule at each stage and explain what could happen if one is ignored."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask which rule helps keep the next class safe.",
+          "pupils": "Name a rule and connect it to a possible consequence."
+        }
+      ],
+      "follow_up": "Rehearse the stage pupils overlooked."
+    },
+    {
+      "id": "DLP-SCI-Y3-10",
+      "label": "Lesson 10",
+      "title": "Types of teeth and functions",
+      "unit": "Unit 3 Humans",
+      "rpt_dates": [
+        "A  14-18 Feb",
+        "B  15-19 Feb"
+      ],
+      "minutes": 30,
+      "standards": [
+        "CS 3.1",
+        "LS 3.1.1"
+      ],
+      "references": [
+        "TB pp. 30-31",
+        "AB pp. 17-19"
+      ],
+      "objective": "Match incisors, canines and molars with cutting, tearing and grinding.",
+      "materials": "Tooth model or images, shape cards and job labels.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show a pointed and a broad tooth and ask what differences are visible.",
+          "pupils": "Describe the two shapes and propose a job for each."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Point to incisors, canines and molars on an image. Use cards to model cutting, tearing and grinding without food handling.",
+          "pupils": "Match each tooth group to its shape and job, then explain one match to a partner."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Use three unlabelled images and check the match between name and function for each pupil.",
+          "pupils": "Label all three types and match cutting, tearing and grinding to them."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask which tooth is useful for grinding and why its shape helps.",
+          "pupils": "Point to a molar and name its broad surface."
+        }
+      ],
+      "follow_up": "Revisit teeth whose shape pupils identified but whose job they confused."
+    },
+    {
+      "id": "DLP-SCI-Y3-11",
+      "label": "Lesson 11",
+      "title": "Structure of a tooth",
+      "unit": "Unit 3 Humans",
+      "rpt_dates": [
+        "A  21-25 Feb",
+        "B  22-26 Feb"
+      ],
+      "minutes": 30,
+      "standards": [
+        "CS 3.1",
+        "LS 3.1.2"
+      ],
+      "references": [
+        "TB pp. 32-33",
+        "AB pp. 20"
+      ],
+      "objective": "Label enamel, dentine, gum, blood vessels and nerves on a simple tooth diagram.",
+      "materials": "Large tooth cross-section, word bank and individual outline cards.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show the outside of a tooth and ask what the cutaway view could reveal.",
+          "pupils": "Suggest one part that cannot be seen from outside."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Trace the enamel, dentine, gum, blood vessels and nerves on a diagram with five colour-coded prompts.",
+          "pupils": "Place five word cards at the correct sites and compare enamel and dentine positions."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Give an unlabelled outline with five arrows. Check each pupil’s labels against the diagram.",
+          "pupils": "Label enamel, dentine, gum, blood vessels and nerves on the outline."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask pupils to point to the outer hard layer and the parts inside the tooth.",
+          "pupils": "Name enamel and distinguish it from the inside structures."
+        }
+      ],
+      "follow_up": "Recheck the locations of enamel and dentine using a layered diagram."
+    },
+    {
+      "id": "DLP-SCI-Y3-12",
+      "label": "Lesson 12",
+      "title": "Milk and permanent teeth",
+      "unit": "Unit 3 Humans",
+      "rpt_dates": [
+        "A  21-25 Feb",
+        "B  22-26 Feb"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 3.1",
+        "LS 3.1.3"
+      ],
+      "references": [
+        "TB pp. 34-36",
+        "AB pp. 21"
+      ],
+      "objective": "Compare two features of milk and permanent teeth in a two-column table.",
+      "materials": "Milk and permanent tooth-set diagrams, comparison table and counting counters.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show two tooth charts with covered headings and ask what can be counted or compared.",
+          "pupils": "Identify one difference visible between charts."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Give pairs labelled textbook diagrams to compare quantity, replacement and features visible in the drawings. Model evidence for one cell.",
+          "pupils": "Count and compare the charts, then enter paired observations in a two-column table."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Ask each pupil to produce two fair comparisons. Check each comparison refers to both tooth sets.",
+          "pupils": "Submit two comparisons with the same feature shown across the two columns."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask what replaces milk teeth as children grow.",
+          "pupils": "Identify permanent teeth and state one other difference from the table."
+        }
+      ],
+      "follow_up": "Recheck paired comparisons using the same feature on both sides."
+    },
+    {
+      "id": "DLP-SCI-Y3-13",
+      "label": "Lesson 13",
+      "title": "Care for teeth and explain why",
+      "unit": "Unit 3 Humans",
+      "rpt_dates": [
+        "A  28 Feb-4 Mar",
+        "B  1-5 Mar"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 3.1",
+        "LS 3.1.4, 3.1.5"
+      ],
+      "references": [
+        "TB pp. 37-39",
+        "AB pp. 22-25"
+      ],
+      "objective": "Use a labelled diagram to explain how one dental care practice protects the tooth.",
+      "materials": "Tooth model, washable food-residue marks, demonstration brush and tooth outlines.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show two dental care routines and ask which protects a tooth and how.",
+          "pupils": "Choose a routine and suggest one reason."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Mark the chewing surface and gumline on the model. Demonstrate gentle brushing and compare the marks before and after.",
+          "pupils": "Practise on the model. On a tooth outline, mark where a simulated residue mark changed after brushing."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check for a labelled part, a before-and-after observation and a care action linked to that part.",
+          "pupils": "Annotate the tooth outline with one observed change and explain how brushing helps clean that area."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask pupils to name one routine they can explain to someone else.",
+          "pupils": "Give a care action and link it to the tooth or gum area shown."
+        }
+      ],
+      "follow_up": "Have pupils point to the model area that supports their explanation."
+    },
+    {
+      "id": "DLP-SCI-Y3-14",
+      "label": "Lesson 14",
+      "title": "Classify foods",
+      "unit": "Unit 3 Humans",
+      "rpt_dates": [
+        "A  15-18 Mar",
+        "B  15-19 Mar"
+      ],
+      "minutes": 30,
+      "standards": [
+        "CS 3.2",
+        "LS 3.2.1"
+      ],
+      "references": [
+        "TB pp. 40-41",
+        "AB pp. 26"
+      ],
+      "objective": "Sort familiar foods into food classes and give another example for each assigned class.",
+      "materials": "Familiar food picture cards, food-class headings and example slips.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show pictures of rice and fish and ask how they could be placed into different food classes.",
+          "pupils": "Name a likely class for each card."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Model sorting single foods by the food class shown in the textbook. Give each group a small selection and the available class headings.",
+          "pupils": "Sort each card under a heading and propose one further example for each assigned class."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Allocate two or three class headings per pupil, then check correct placement and one new example for each.",
+          "pupils": "Sort the cards and write another example beside every heading assigned."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask for one way to justify a class choice when two foods look similar.",
+          "pupils": "Name the food class and point to a named example that supports it."
+        }
+      ],
+      "follow_up": "Recheck whole mixed dishes separately from single-food examples."
+    },
+    {
+      "id": "DLP-SCI-Y3-15",
+      "label": "Lesson 15",
+      "title": "Explain why food classes matter",
+      "unit": "Unit 3 Humans",
+      "rpt_dates": [
+        "A  15-18 Mar",
+        "B  15-19 Mar"
+      ],
+      "minutes": 30,
+      "standards": [
+        "CS 3.2",
+        "LS 3.2.2"
+      ],
+      "references": [
+        "TB pp. 42-43",
+        "AB pp. 27-29"
+      ],
+      "objective": "Match three food classes to their roles in the body and justify one choice.",
+      "materials": "Food-class cards, function cards and short scenario slips.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Ask what food helps with when someone needs energy to move.",
+          "pupils": "Propose a food class and give a reason."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Model “class–role” with one example. Give groups short needs such as energy, growth or healthy digestion and cards to match.",
+          "pupils": "Match food classes to their roles, then explain a match using one relevant body need."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Ask each pupil to match three classes to three roles and justify one selection.",
+          "pupils": "Submit three class–role pairs and give a reason for one pair."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Compare two distinct roles and ask for an example of each.",
+          "pupils": "Name the classes and explain one difference in their roles."
+        }
+      ],
+      "follow_up": "Use body-role prompts to clarify mixed-up class–role pairs."
+    },
+    {
+      "id": "DLP-SCI-Y3-16",
+      "label": "Lesson 16",
+      "title": "Plan a balanced meal",
+      "unit": "Unit 3 Humans",
+      "rpt_dates": [
+        "A  21-25 Mar",
+        "B  22-26 Mar"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 3.2",
+        "LS 3.2.3"
+      ],
+      "references": [
+        "TB pp. 44-46",
+        "AB pp. 30"
+      ],
+      "objective": "Propose one meal and explain how its components fit the food pyramid.",
+      "materials": "Food pyramid diagram, meal cards and plate templates.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a one-food meal picture and ask which parts of a balanced meal are missing.",
+          "pupils": "Name one missing food group and propose a food example."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model using the food pyramid to check variety and relative proportions. Ask pairs to improve a simple meal while keeping it realistic.",
+          "pupils": "Build a meal with cards, identify where each component fits in the pyramid and explain one revision."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Give each pupil a blank plate. Check the proposed meal and its explanation against the pyramid.",
+          "pupils": "Draw or list a meal and explain why the selected components fit the food pyramid."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Invite pupils to give one change that improves a sample meal.",
+          "pupils": "Name the food added or adjusted and connect it to its place in the pyramid."
+        }
+      ],
+      "follow_up": "Recheck pupils’ use of variety and the suggested proportions."
+    },
+    {
+      "id": "DLP-SCI-Y3-17",
+      "label": "Lesson 17",
+      "title": "Explain an imbalanced diet",
+      "unit": "Unit 3 Humans",
+      "rpt_dates": [
+        "A  28 Mar-1 Apr",
+        "B  29 Mar-2 Apr"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 3.2",
+        "LS 3.2.4, 3.2.5"
+      ],
+      "references": [
+        "TB pp. 47-48",
+        "AB pp. 29,31-32"
+      ],
+      "objective": "Compare two menus and explain one likely effect and one improvement for the less balanced menu.",
+      "materials": "Two illustrated menus, food pyramid and comparison slips.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show two sample menus and ask which contains a wider variety of suitable foods.",
+          "pupils": "Choose a menu and point to visible evidence."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Guide groups to label the food classes represented in two menus. Model tying a repeated imbalance to one effect.",
+          "pupils": "Annotate each menu with examples of food classes. Use the pyramid to compare the two menus over time."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check a labelled food example, one possible effect of a repeated imbalance and a realistic change.",
+          "pupils": "Label one food class in each menu. Explain one likely effect of the less balanced pattern and one change that addresses it."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask pupils why a single sample menu is different from a long-term diet.",
+          "pupils": "Explain that repeated patterns affect the body over time."
+        }
+      ],
+      "follow_up": "Ask pupils to revise an improvement that does not address the class or proportion they identified."
+    },
+    {
+      "id": "DLP-SCI-Y3-18",
+      "label": "Lesson 18",
+      "title": "Describe digestion",
+      "unit": "Unit 3 Humans",
+      "rpt_dates": [
+        "A  28 Mar-1 Apr",
+        "B  29 Mar-2 Apr"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 3.3",
+        "LS 3.3.1"
+      ],
+      "references": [
+        "TB pp. 49-53",
+        "AB pp. 33"
+      ],
+      "objective": "Explain in simple terms how food is broken down so the body can use nutrients.",
+      "materials": "Food-piece illustrations, digestion sequence cards and a body diagram.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Ask whether the body can use a large piece of food in the same form it is swallowed.",
+          "pupils": "Suggest what happens to food after chewing and swallowing."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Use picture cards to model food breaking down into smaller components and show where digestion occurs. Build a simple class sequence without using real food.",
+          "pupils": "Place cards in an evidence-based order and say how the body can make use of nutrients after breaking food down."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Invite each pupil to give a short oral or written explanation with both breakdown and purpose.",
+          "pupils": "Explain in simple terms what digestion changes and why that helps the body use nutrients."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask a pupil to complete “Digestion breaks food down so …”.",
+          "pupils": "Finish the sentence using a body-use or nutrients statement."
+        }
+      ],
+      "follow_up": "Check explanations link breakdown to the body’s use of nutrients."
+    },
+    {
+      "id": "DLP-SCI-Y3-19",
+      "label": "Lesson 19",
+      "title": "Trace the path of food",
+      "unit": "Unit 3 Humans",
+      "rpt_dates": [
+        "A  4-8 Apr",
+        "B  5-9 Apr"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 3.3",
+        "LS 3.3.2"
+      ],
+      "references": [
+        "TB pp. 50-51",
+        "AB pp. 34"
+      ],
+      "objective": "Place mouth, oesophagus, stomach, small intestine and large intestine in the correct order and identify the exit.",
+      "materials": "Digestive-pathway diagram, movable organ labels and arrows.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show an outline of the human body and ask where food enters.",
+          "pupils": "Point to the mouth and name a likely next place."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model following one continuous route using arrow cards. Give groups scrambled cards for the organs and the exit.",
+          "pupils": "Arrange mouth, oesophagus, stomach, small intestine and large intestine. Add the exit and trace the full route."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Give each pupil the unlabelled path and six movable labels, including the exit. Check order independently.",
+          "pupils": "Order the five organs correctly and identify the anus as the exit for undigested waste."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask which organ follows the stomach along the route.",
+          "pupils": "Point to and name the small intestine."
+        }
+      ],
+      "follow_up": "Rehearse the sequence where pupils mixed up the two intestines."
+    },
+    {
+      "id": "DLP-SCI-Y3-20",
+      "label": "Lesson 20",
+      "title": "Explain what happens after digestion",
+      "unit": "Unit 3 Humans",
+      "rpt_dates": [
+        "A  11-15 Apr",
+        "B  12-16 Apr"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 3.3",
+        "LS 3.3.3, 3.3.4"
+      ],
+      "references": [
+        "TB pp. 49-54",
+        "AB pp. 35-36"
+      ],
+      "objective": "Use arrows in a diagram to distinguish nutrient absorption from the removal of undigested waste.",
+      "materials": "Digestive diagram with coloured arrows, nutrient/waste cards and individual diagrams.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show two arrows after the small intestine and ask what could travel by different routes.",
+          "pupils": "Suggest what happens to useful nutrients and undigested material."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model two routes: nutrients through the wall of the small intestine into the blood, and remaining undigested food toward the exit.",
+          "pupils": "Place nutrient and remaining-food cards on the two routes. Explain what each arrow carries."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check arrows and a conclusion that the remaining undigested food goes through the large intestine and leaves as faeces.",
+          "pupils": "Draw and label the two routes. Add a sentence about what happens to the material the body does not use."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask which arrow carries nutrients to the body.",
+          "pupils": "Point to the route toward the blood and explain why the routes differ."
+        }
+      ],
+      "follow_up": "Use the diagram to revisit any answer that sends both nutrients and remaining food along the same route."
+    },
+    {
+      "id": "DLP-SCI-Y3-R01",
+      "label": "Review 01",
+      "title": "Humans",
+      "unit": "Consolidation",
+      "rpt_dates": [
+        "A  18-22 Apr",
+        "B  19-23 Apr"
+      ],
+      "minutes": 30,
+      "standards": [
+        "Review",
+        "Review taught standards"
+      ],
+      "references": [
+        "TB pp. 55-58",
+        "Teacher-selected prompts"
+      ],
+      "objective": "Explain the links between teeth, balanced meals and digestion using a diagram.",
+      "materials": "Tooth images, meal cards, digestion route and concept-map sheet.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show a tooth, a meal and a stomach picture. Ask for a connection between any two.",
+          "pupils": "Explain one link using a fact from the unit."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Model one connecting arrow with a verb. Ask pairs to place all three images and discuss how to connect them.",
+          "pupils": "Sketch a concept map linking teeth, balanced food and digestion using words along the arrows."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Check each pupil’s diagram has all three ideas and accurate labelled links.",
+          "pupils": "Make a map explaining how teeth start breaking food down, how a balanced meal supplies nutrients and how digestion lets the body use them."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask which link explains why chewing helps.",
+          "pupils": "Point to the relevant arrow and explain it in one sentence."
+        }
+      ],
+      "follow_up": "Revisit only the link still missing from the concept map."
+    },
+    {
+      "id": "DLP-SCI-Y3-21",
+      "label": "Lesson 21",
+      "title": "Group animals by what they eat",
+      "unit": "Unit 4 Animals",
+      "rpt_dates": [
+        "A  25-29 Apr",
+        "B  26-30 Apr"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 4.1",
+        "LS 4.1.1, 4.1.2"
+      ],
+      "references": [
+        "TB pp. 60-63",
+        "AB pp. 37-39"
+      ],
+      "objective": "Classify six examples as herbivores, carnivores or omnivores using food evidence.",
+      "materials": "Six animal pictures with diet records, group labels and classification grids.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a rabbit food card and a tiger food card and compare what the two animals eat.",
+          "pupils": "Describe the food evidence for each card."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model how plant, animal or both kinds of food support the three diet groups. Give groups six illustrated cases with diet evidence.",
+          "pupils": "Sort each case using the diet shown and record at least one piece of evidence for the classification."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Give an independent grid. Check six classifications and the evidence used instead of the animal’s appearance.",
+          "pupils": "Classify the six animals as herbivores, carnivores or omnivores using the diet records."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask how the evidence changes when a card lists plants and animals.",
+          "pupils": "Name omnivore and cite both types of food."
+        }
+      ],
+      "follow_up": "Correct group choices based only on size, teeth or appearance."
+    },
+    {
+      "id": "DLP-SCI-Y3-22",
+      "label": "Lesson 22",
+      "title": "Infer the group from an animal's diet",
+      "unit": "Unit 4 Animals",
+      "rpt_dates": [
+        "A  25-29 Apr",
+        "B  26-30 Apr"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 4.1",
+        "LS 4.1.3"
+      ],
+      "references": [
+        "TB pp. 62-63",
+        "AB pp. 40-41"
+      ],
+      "objective": "Use a food record to infer the group of an unfamiliar animal and justify the answer.",
+      "materials": "Four-day feeding log cards, diet group chart and evidence slips.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a single feeding observation and ask what additional detail might help identify a diet group.",
+          "pupils": "Say what food is recorded and propose what else to observe."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model reading a record across several days rather than relying on the animal’s shape. Give pairs an unfamiliar animal’s food log.",
+          "pupils": "Highlight plant and animal foods and infer the likely group from the full log."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Give each pupil a second short record. Check that the conclusion names the correct group and cites recorded foods.",
+          "pupils": "State the likely group and quote or paraphrase one or two food observations that justify it."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask whether a record of one meal is always enough to classify a diet.",
+          "pupils": "Explain why more observations may change the inference."
+        }
+      ],
+      "follow_up": "Check evidence is taken from the record rather than an assumed diet."
+    },
+    {
+      "id": "DLP-SCI-Y3-23",
+      "label": "Lesson 23",
+      "title": "Compare animal teeth",
+      "unit": "Unit 4 Animals",
+      "rpt_dates": [
+        "A  2-6 May",
+        "B  3-7 May"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 4.1",
+        "LS 4.1.4"
+      ],
+      "references": [
+        "TB pp. 64-66",
+        "AB pp. 42-43"
+      ],
+      "objective": "Compare two dental features across three animal groups and relate one feature to diet.",
+      "materials": "Clear tooth photos or diagrams of three animals, comparison grids and pencils.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Compare two close-up tooth images and ask what looks alike or different.",
+          "pupils": "Name a visible tooth feature without naming the diet yet."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Set out herbivore, carnivore and omnivore diagrams with diet labels. Model comparing a broad grinding surface and a pointed tearing surface.",
+          "pupils": "Compare two features for each pictured group and connect one observed feature to the type of food eaten."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Ask for an individual entry showing two comparisons across all three groups and one evidence-based link.",
+          "pupils": "Complete the grid and relate one specific tooth feature to the animal’s diet."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask what information would confirm a prediction about diet made from teeth alone.",
+          "pupils": "Propose checking what the animal is observed eating."
+        }
+      ],
+      "follow_up": "Revisit evidence from tooth shape and feeding behaviour."
+    },
+    {
+      "id": "DLP-SCI-Y3-24",
+      "label": "Lesson 24",
+      "title": "Explain evidence about animal diets",
+      "unit": "Unit 4 Animals",
+      "rpt_dates": [
+        "A  2-6 May",
+        "B  3-7 May"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 4.1",
+        "LS 4.1.5"
+      ],
+      "references": [
+        "TB pp. 67-68",
+        "AB pp. 44"
+      ],
+      "objective": "Present a classification with one supporting observation and explain an example of changed feeding behaviour.",
+      "materials": "Food record cards, a teacher-made before–after feeding scenario and presentation sheets.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show an animal feeding record with one change between two days.",
+          "pupils": "Describe what changed in the record before suggesting why."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Guide groups to separate the usual diet classification from a reported behaviour change. Model how to cite a recorded food item.",
+          "pupils": "Prepare a brief report naming the group, a supporting observation and one possible reason for the observed change."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check each pupil gives evidence for the group and explanation for the scenario rather than a claim about all animals in the group.",
+          "pupils": "Present a diet classification, name one supporting food observation and explain the behaviour change in the case."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask which part of the report is evidence and which part is explanation.",
+          "pupils": "Identify one direct observation and one interpretation."
+        }
+      ],
+      "follow_up": "Recheck that the explanation stays within the evidence provided."
+    },
+    {
+      "id": "DLP-SCI-Y3-25",
+      "label": "Lesson 25",
+      "title": "Identify ways plants reproduce",
+      "unit": "Unit 5 Plants",
+      "rpt_dates": [
+        "A  8-10 Jun",
+        "B  9-11 Jun"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 5.1",
+        "LS 5.1.1"
+      ],
+      "references": [
+        "TB pp. 72-73",
+        "AB pp. 45-46"
+      ],
+      "objective": "Match at least four familiar plants to a method of reproduction using specimen cards.",
+      "materials": "Six specimen photos: chilli, banana, potato, fern, cassava and snake plant. Six method cards.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show one seed and a photograph of a plantlet on a leaf.",
+          "pupils": "Describe where each new plant might start."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model matching chilli to seeds. Offer one specimen for each remaining method and ask groups to identify the relevant part or clue.",
+          "pupils": "Match all six examples: seed, sucker, underground stem, spore, stem cutting and leaf. Point to the relevant clue."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Shuffle the cards. Check four independent matches and ask each pupil to explain one of them.",
+          "pupils": "Match at least four specimens to their methods. Name or point to the plant part that supports one match."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask one pupil to explain why a particular example was not matched to seeds.",
+          "pupils": "Point to the observable plant part and name its method."
+        }
+      ],
+      "follow_up": "Revisit the method for any example a pupil matched to the wrong part."
+    },
+    {
+      "id": "DLP-SCI-Y3-26",
+      "label": "Lesson 26",
+      "title": "Explain why reproduction matters",
+      "unit": "Unit 5 Plants",
+      "rpt_dates": [
+        "A  13-17 Jun",
+        "B  14-18 Jun"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 5.1",
+        "LS 5.1.2"
+      ],
+      "references": [
+        "TB pp. 74-75",
+        "AB pp. 47-48"
+      ],
+      "objective": "Draw a cause-and-effect diagram linking new plants to food, habitats or the survival of a species.",
+      "materials": "Plant photos, picture cards for food and habitats and arrow-label slips.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Ask what might happen in a place where old plants die and no new plants grow.",
+          "pupils": "Suggest one effect for an animal or a person."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model a two-step cause-and-effect chain using one familiar plant. Give groups context cards for food, shelter or species survival.",
+          "pupils": "Arrange arrows to show how new plants replace old plants and what that allows organisms to continue using."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check each individual diagram links new plants to at least one supported outcome.",
+          "pupils": "Draw and label a cause-and-effect sequence for food, habitat or survival of a species."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask what would change if the first part of the chain stopped.",
+          "pupils": "Use the diagram to name one consequence of reduced reproduction."
+        }
+      ],
+      "follow_up": "Check the arrows explain a consequence rather than list unrelated facts."
+    },
+    {
+      "id": "DLP-SCI-Y3-27",
+      "label": "Lesson 27",
+      "title": "Investigate more than one propagation method",
+      "unit": "Unit 5 Plants",
+      "rpt_dates": [
+        "A  20-24 Jun",
+        "B  21-25 Jun"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 5.1",
+        "LS 5.1.3"
+      ],
+      "references": [
+        "TB pp. 76",
+        "AB pp. 49-50"
+      ],
+      "objective": "Set up two teacher-approved methods for one suitable plant and start a dated observation log.",
+      "materials": "Water spinach seeds, rooted water spinach stem cuttings, labelled containers, soil, water and dated logs.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show water spinach seeds and a rooted cutting from the same species. Ask where new shoots might appear.",
+          "pupils": "Identify which setup starts with a seed and which starts with a cutting."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Use the water spinach project on textbook p. 76. Set up the seeds in soil and the rooted cuttings in water. Agree a daily observation time.",
+          "pupils": "Label the two setups and log the date and starting appearance. Plan to record any new shoot at each daily check."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check both setups and each pupil’s baseline. Ask what evidence would count as a new shoot.",
+          "pupils": "Record the initial condition for each method and state one visible change to look for."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask how the class will distinguish the two setups at the next observation.",
+          "pupils": "Refer to the method and date labels and agree when to check them."
+        }
+      ],
+      "follow_up": "Check the two labels and reading times before beginning the daily log."
+    },
+    {
+      "id": "DLP-SCI-Y3-28",
+      "label": "Lesson 28",
+      "title": "Report the plant project",
+      "unit": "Unit 5 Plants",
+      "rpt_dates": [
+        "A  27 Jun-1 Jul",
+        "B  28 Jun-2 Jul"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 5.1",
+        "LS 5.1.3, 5.1.4"
+      ],
+      "references": [
+        "TB pp. 76-77",
+        "AB pp. 50-52"
+      ],
+      "objective": "Compare dated records from both propagation methods and support one conclusion using class records or mature samples.",
+      "materials": "Dated water spinach logs from Lesson 27, labelled teacher comparison photos and a two-column chart.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show two dated entries and ask what can be compared at the same point in the records.",
+          "pupils": "Name one feature such as first visible new roots or shoots."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Show how to compare seed and cutting entries by elapsed day. Supply labelled photos from an earlier setup if the class logs are incomplete.",
+          "pupils": "Compare new shoots in both logs. Label each observation as class evidence or an earlier teacher example."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check two dated entries and a conclusion supported by both methods. Accept a pending result if one has yet to show growth.",
+          "pupils": "Cite one dated observation for each method. State whether the evidence so far supports growth by both methods."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask why observations taken on different days should be labelled.",
+          "pupils": "Explain how dates make a comparison fairer to interpret."
+        }
+      ],
+      "follow_up": "Continue the log for any method without visible growth before drawing a class conclusion."
+    },
+    {
+      "id": "DLP-SCI-Y3-R02",
+      "label": "Review 02",
+      "title": "Animals and Plants",
+      "unit": "Consolidation",
+      "rpt_dates": [
+        "A  4-8 Jul",
+        "B  5-9 Jul"
+      ],
+      "minutes": 30,
+      "standards": [
+        "Review",
+        "Review taught standards"
+      ],
+      "references": [
+        "TB pp. 69-70,78",
+        "Teacher-selected prompts"
+      ],
+      "objective": "Sort four examples by diet or reproduction method and explain two selections.",
+      "materials": "Two animal diet cards, two plant propagation cards, labels and an evidence sheet.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show a diet entry and a cutting photograph and ask what each can establish.",
+          "pupils": "Identify which detail helps group an animal or identify a plant method."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Give pairs four review cases and model an evidence sentence on a separate example.",
+          "pupils": "Sort both animal and plant cases and prepare reasons using the recorded food or plant part."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Check each pupil groups all four cases and explains two choices using evidence.",
+          "pupils": "Submit four classifications and write two reasons drawn from the cards."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask why being able to point to a clue helps a reader check the answer.",
+          "pupils": "Name one clue from an animal or plant case."
+        }
+      ],
+      "follow_up": "Review any category pupils chose without referring to evidence."
+    },
+    {
+      "id": "DLP-SCI-Y3-29",
+      "label": "Lesson 29",
+      "title": "Recognise area and volume units",
+      "unit": "Unit 6 Measurement",
+      "rpt_dates": [
+        "A  4-8 Jul",
+        "B  5-9 Jul"
+      ],
+      "minutes": 30,
+      "standards": [
+        "CS 6.1",
+        "LS 6.1.1"
+      ],
+      "references": [
+        "TB pp. 80,85",
+        "AB pp. 53,58"
+      ],
+      "objective": "Select cm², cm³, mL or L for four examples and explain the choice for one example.",
+      "materials": "Unit cards, squares, cubes, a measuring cylinder, a litre jug and four use-case images.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Compare a square tile, a cube and a water container.",
+          "pupils": "Say which example shows a surface or holds a volume."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Match cm² to the square unit, cm³ to the cube and mL/L to liquid measures. Show the difference in practical scale between a small cylinder and a jug.",
+          "pupils": "Choose the suitable unit for each use-case image and discuss near choices in pairs."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Check each pupil chooses four appropriate units and justifies one choice by attribute or scale.",
+          "pupils": "Select cm², cm³, mL or L for the four items and explain one selection."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask which unit measures a surface and which unit could be used for a small liquid quantity.",
+          "pupils": "Name cm² and mL and describe the difference."
+        }
+      ],
+      "follow_up": "Check cm² and cm³ are linked to area and volume respectively."
+    },
+    {
+      "id": "DLP-SCI-Y3-30",
+      "label": "Lesson 30",
+      "title": "Measure a regular area",
+      "unit": "Unit 6 Measurement",
+      "rpt_dates": [
+        "A  4-8 Jul",
+        "B  5-9 Jul"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 6.1",
+        "LS 6.1.2"
+      ],
+      "references": [
+        "TB pp. 81-82",
+        "AB pp. 54-55"
+      ],
+      "objective": "Cover a regular outline with 1 cm squares and give the total in cm².",
+      "materials": "One-centimetre square tiles, regular outlines, a 1 cm grid and recording slips.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a rectangle on centimetre paper and ask what part is measured by area.",
+          "pupils": "Point to the inside surface rather than the outline."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model fitting tiles edge-to-edge without gaps and counting each tile once. Give pairs different regular outlines.",
+          "pupils": "Cover a rectangle or square with 1 cm squares and compare counts by rows or columns."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Ask each pupil to cover a fresh outline and record its area. Check coverage and unit.",
+          "pupils": "Make the tile count and record the total in cm²."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask why a gap or overlap changes the result.",
+          "pupils": "Describe whether coverage would be too little or counted twice."
+        }
+      ],
+      "follow_up": "Recheck systematic counting and square centimetre units."
+    },
+    {
+      "id": "DLP-SCI-Y3-31",
+      "label": "Lesson 31",
+      "title": "Estimate an irregular area",
+      "unit": "Unit 6 Measurement",
+      "rpt_dates": [
+        "A  11-15 Jul",
+        "B  12-16 Jul"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 6.1",
+        "LS 6.1.3"
+      ],
+      "references": [
+        "TB pp. 83-84",
+        "AB pp. 56"
+      ],
+      "objective": "Estimate the area of a leaf outline on a centimetre grid and explain how partial squares were counted.",
+      "materials": "Leaf outlines, transparent centimetre grids, pencils and tally sheets.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a leaf outline over a grid and ask why some squares are only partly covered.",
+          "pupils": "Identify one full square and one partial square."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Demonstrate counting full squares and using a consistent approximation for parts, such as pairing halves. Ask pairs to agree and document their rule.",
+          "pupils": "Mark full squares, estimate partial squares and use both counts to estimate the leaf’s area."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check each pupil gives an area in cm² and explains how partial squares contributed.",
+          "pupils": "Estimate a new leaf outline and show the full-square count and chosen partial-square rule."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask why two valid estimates of the same outline can differ slightly.",
+          "pupils": "Connect the difference to choices about partly covered squares."
+        }
+      ],
+      "follow_up": "Recheck estimates that omit partial areas or count them all as full."
+    },
+    {
+      "id": "DLP-SCI-Y3-32",
+      "label": "Lesson 32",
+      "title": "Measure the volume of a box",
+      "unit": "Unit 6 Measurement",
+      "rpt_dates": [
+        "A  18-22 Jul",
+        "B  19-23 Jul"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 6.1",
+        "LS 6.1.4"
+      ],
+      "references": [
+        "TB pp. 86-87",
+        "AB pp. 57-58"
+      ],
+      "objective": "Fill a small rectangular container with 1 cm cubes and record its volume in cm³.",
+      "materials": "Small box with whole-centimetre dimensions, 1 cm cubes and layer diagrams.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show an empty box and ask how cubes can measure the space inside.",
+          "pupils": "Propose filling the box with equal-sized cubes."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model making a full first layer with no space and recording its cube count. Guide pairs to fill the remaining layers.",
+          "pupils": "Pack cubes without gaps, count cubes in each layer and record the total."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check the pupil’s box model or labelled layers. Confirm a correct total in cm³.",
+          "pupils": "Fill a small box independently or show the checked layer counts and write its volume in cm³."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask which three dimensions a cube measures.",
+          "pupils": "Explain that the measured space has length, width and height."
+        }
+      ],
+      "follow_up": "Recheck pupils count all layers rather than just the bottom layer."
+    },
+    {
+      "id": "DLP-SCI-Y3-33",
+      "label": "Lesson 33",
+      "title": "Measure a liquid volume",
+      "unit": "Unit 6 Measurement",
+      "rpt_dates": [
+        "A  25-29 Jul",
+        "B  26-30 Jul"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 6.1",
+        "LS 6.1.5"
+      ],
+      "references": [
+        "TB pp. 88-90",
+        "AB pp. 59-60"
+      ],
+      "objective": "Choose a suitable measuring cylinder and record two readings at eye level in mL.",
+      "materials": "Small measuring cylinders, coloured water, pouring trays and a reading table.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show two drawings of the same cylinder viewed above and at eye level.",
+          "pupils": "Identify which viewing position gives a reliable reading."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model choosing a cylinder that holds the sample and has usable scale divisions. Place the cylinder on a level surface and show the bottom of the water meniscus at eye level.",
+          "pupils": "Choose a cylinder, pour with supervision and take two eye-level readings while a partner records the units."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Observe each pupil reading one sample and check that both readings are recorded correctly in mL.",
+          "pupils": "Read a cylinder at eye level and submit both mL values using the scale shown."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask how to read a line between numbered marks.",
+          "pupils": "State the value of a scale division and use it to explain a reading."
+        }
+      ],
+      "follow_up": "Correct oversize cylinder selection and reading above or below eye level."
+    },
+    {
+      "id": "DLP-SCI-Y3-34",
+      "label": "Lesson 34",
+      "title": "Calculate displaced volume",
+      "unit": "Unit 6 Measurement",
+      "rpt_dates": [
+        "A  1-5 Aug",
+        "B  2-6 Aug"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 6.1",
+        "LS 6.1.6"
+      ],
+      "references": [
+        "TB pp. 91-92",
+        "AB pp. 61-62"
+      ],
+      "objective": "Record the initial and final water levels for a submerged object and calculate the difference.",
+      "materials": "Plastic measuring cylinders, water, nonfloating objects that fit, thread and trays.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a water level before and after an object is submerged and ask what changed.",
+          "pupils": "State that the water level rose and suggest how to quantify the change."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Read at eye level before and after fully submerging a fitting object. Check for trapped air. Model final reading minus initial reading.",
+          "pupils": "Record the two readings for the same object and calculate the difference. Repeat if the readings are unclear."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Provide a separate card with 25 mL before and 38 mL after. Check subtraction and the unit for solid volume.",
+          "pupils": "Show 38 mL minus 25 mL and report the solid’s volume as 13 cm³. Compare the method with the group measurement."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask whether the final water level alone gives the object’s volume.",
+          "pupils": "Use the readings to explain why the change is needed."
+        }
+      ],
+      "follow_up": "Revisit that an increase of 1 mL in water level represents 1 cm³ of submerged solid."
+    },
+    {
+      "id": "DLP-SCI-Y3-35",
+      "label": "Lesson 35",
+      "title": "Explain an area or volume method",
+      "unit": "Unit 6 Measurement",
+      "rpt_dates": [
+        "A  8-12 Aug",
+        "B  9-13 Aug"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 6.1",
+        "LS 6.1.7"
+      ],
+      "references": [
+        "TB pp. 90-94",
+        "AB pp. 59-62"
+      ],
+      "objective": "Present two measurements with units and justify one tool or technique used.",
+      "materials": "A grid, a cylinder, outline cards, measured samples and evidence cards.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Present two claims with missing units and ask why they cannot be checked properly.",
+          "pupils": "Identify the missing units or information about the tools."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Set up an area method station and a volume method station. Model describing one technique and explaining why the selected tool fits the job.",
+          "pupils": "Make or check two measurements, record units and prepare reasons for a method choice."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Ask each pupil to show two results and justify one tool or method from the evidence.",
+          "pupils": "Present both measured values with units and explain one tool or technique used."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask what a different class would need to repeat the method.",
+          "pupils": "Name one detail about the tool, unit or technique that needs to be recorded."
+        }
+      ],
+      "follow_up": "Revisit justifications that name only the tool without a reason."
+    },
+    {
+      "id": "DLP-SCI-Y3-36",
+      "label": "Lesson 36",
+      "title": "Investigate floating and sinking",
+      "unit": "Unit 7 Density",
+      "rpt_dates": [
+        "A  16-19 Aug",
+        "B  17-20 Aug"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 7.1",
+        "LS 7.1.1"
+      ],
+      "references": [
+        "TB pp. 96-97",
+        "AB pp. 63"
+      ],
+      "objective": "Record the behaviour of four items in water and propose one explanation based on the observations.",
+      "materials": "Clear water tubs, trays, cork, plastic cap, metal washer and stone.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show four small objects and ask where each will go in water.",
+          "pupils": "Predict one float or sink result and say what could be observed."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Ask groups to lower each object gently in the same water, one at a time. Model recording a surface or bottom observation without pushing the object.",
+          "pupils": "Test all four items, record their behaviour and compare results to predictions."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check each pupil records four results and supplies one explanation based on a contrast or observation.",
+          "pupils": "Submit the table and describe a supported explanation of one result or contrast."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask why size alone is insufficient as an explanation.",
+          "pupils": "Cite two items whose results do not fit a size-only rule."
+        }
+      ],
+      "follow_up": "Review predictions that used only weight or size without evidence."
+    },
+    {
+      "id": "DLP-SCI-Y3-37",
+      "label": "Lesson 37",
+      "title": "Compare density with water",
+      "unit": "Unit 7 Density",
+      "rpt_dates": [
+        "A  15-19 Aug",
+        "B  16-20 Aug"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 7.1",
+        "LS 7.1.2"
+      ],
+      "references": [
+        "TB pp. 98-99",
+        "AB pp. 64-66"
+      ],
+      "objective": "Use fresh-water observations to infer which tested items are denser or less dense than water.",
+      "materials": "Fresh-water results from Lesson 36, stable tubs and density statement cards.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show two test results that behaved differently in fresh water.",
+          "pupils": "Identify which example stayed at the surface and which went to the bottom."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Explain how these tested items can be compared with water using the float/sink records. Keep the claim tied to the objects in the investigation.",
+          "pupils": "Place tested items under denser or less dense than fresh water and attach the observation used for each choice."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check individual classifications and ask for one short inference from the table.",
+          "pupils": "Write the density comparison for each tested item and point to its supporting freshwater behaviour."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask what the comparison uses as its reference.",
+          "pupils": "Identify fresh water and state how it was used to compare the items."
+        }
+      ],
+      "follow_up": "Recheck pupils do not rank the exact densities of the different items from float/sink data."
+    },
+    {
+      "id": "DLP-SCI-Y3-38",
+      "label": "Lesson 38",
+      "title": "Make water denser",
+      "unit": "Unit 7 Density",
+      "rpt_dates": [
+        "A  22-26 Aug",
+        "B  23-27 Aug"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 7.1",
+        "LS 7.1.3"
+      ],
+      "references": [
+        "TB pp. 99-101",
+        "AB pp. 68"
+      ],
+      "objective": "Compare an object's behaviour in fresh and salt water and explain the change using density.",
+      "materials": "Fresh water, teacher-pretested salt solution, equal cups, one pretested potato piece per group and trays.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a potato piece sinking in fresh water. Challenge groups to make that piece float by changing the water.",
+          "pupils": "Suggest what to change in the water and what to keep the same."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Offer fresh water and a pretested salt solution. Ask groups to plan two trials with the same piece and record each outcome.",
+          "pupils": "Compare the same piece in the two cups. Keep the amount of liquid similar and record whether the piece floats."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check one comparison from the table and an explanation of how the solution changed.",
+          "pupils": "Use the two observations to explain how dissolving salt made the water denser and changed what happened to the piece."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask why comparing two different objects would weaken the result.",
+          "pupils": "Explain that the same test object helps isolate the difference between the liquids."
+        }
+      ],
+      "follow_up": "If both results are the same, review the pretest and record what actually happened."
+    },
+    {
+      "id": "DLP-SCI-Y3-39",
+      "label": "Lesson 39",
+      "title": "Explain a use of density",
+      "unit": "Unit 7 Density",
+      "rpt_dates": [
+        "A  22-26 Aug",
+        "B  23-27 Aug"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 7.1",
+        "LS 7.1.4"
+      ],
+      "references": [
+        "TB pp. 102-104",
+        "AB pp. 67-68"
+      ],
+      "objective": "Create a labelled drawing and use an observation from class to explain a real-life example.",
+      "materials": "Floating marker and flotation-device images, class results and drawing sheets.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a floating marker and ask which classroom test it resembles.",
+          "pupils": "Name an object observed floating and describe what it did."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Ask groups to choose a familiar application. Model using an arrow or label to link the observation to why the object stays at the surface.",
+          "pupils": "Prepare a labelled sketch and explain the real-life use using one classroom observation."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check each pupil labels the object and water and explicitly links an actual observation to the application.",
+          "pupils": "Submit a sketch and write an explanation that names the classroom result used."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask what might change if the material or shape were changed.",
+          "pupils": "Suggest one change and say how it could be tested safely."
+        }
+      ],
+      "follow_up": "Strengthen links between the example and the specific observation."
+    },
+    {
+      "id": "DLP-SCI-Y3-40",
+      "label": "Lesson 40",
+      "title": "Test substances using litmus",
+      "unit": "Unit 8 Acid and Alkali",
+      "rpt_dates": [
+        "A  5-9 Sep",
+        "B  6-10 Sep"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 8.1",
+        "LS 8.1.1"
+      ],
+      "references": [
+        "TB pp. 106-108",
+        "AB pp. 69-71"
+      ],
+      "objective": "Record changes to red and blue litmus for three teacher-prepared samples and classify each sample.",
+      "materials": "Red and blue litmus, separate droppers, trays and teacher-prechecked acidic, alkaline and neutral samples.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Display the two litmus colours and read the safety rule for unknown liquids.",
+          "pupils": "State how the droppers and indicators will be used without tasting or touching samples."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Test a prechecked neutral water sample and show how to use a fresh red and blue strip for each labelled sample.",
+          "pupils": "Record the starting and final colours of both strips for three samples. Classify the samples from the paired results."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check the paired results. Blue turning red supports acidic. Red turning blue supports alkaline. Both unchanged supports neutral in this test.",
+          "pupils": "Submit the three-row table. For one sample, use both of its strip outcomes to explain the classification."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask why one unchanged strip alone is insufficient for a neutral claim.",
+          "pupils": "Explain that both red and blue strips need to be considered."
+        }
+      ],
+      "follow_up": "Repeat both strips with a prechecked comparison sample if the two results conflict."
+    },
+    {
+      "id": "DLP-SCI-Y3-41",
+      "label": "Lesson 41",
+      "title": "Compare reported properties safely",
+      "unit": "Unit 8 Acid and Alkali",
+      "rpt_dates": [
+        "A  5-9 Sep",
+        "B  6-10 Sep"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 8.1",
+        "LS 8.1.2"
+      ],
+      "references": [
+        "TB pp. 109-111",
+        "AB pp. 72-74"
+      ],
+      "objective": "Use teacher-provided descriptions to compare examples and explain why taste or touch cannot identify an unknown substance.",
+      "materials": "Teacher description cards for known acidic, alkaline and neutral examples, litmus records and a comparison chart.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a labelled picture and a container marked unknown. Ask which sources can provide safe evidence.",
+          "pupils": "Choose reliable written descriptions or an appropriate indicator with teacher supervision."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Compare descriptions of familiar examples and show the separate litmus record for each. Discuss which evidence to use for an unknown sample.",
+          "pupils": "Use the cards to compare two examples. Identify the wording that comes from a description and the colour evidence from the test."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check two comparisons based on the supplied descriptions. Ask how a pupil would respond to an unlabelled sample.",
+          "pupils": "Submit two comparisons. Tell the teacher about an unlabelled sample and explain the value of the documented indicator results."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask how to respond if a classmate suggests touching an unknown liquid.",
+          "pupils": "Explain the class safety rule and identify a safer evidence source."
+        }
+      ],
+      "follow_up": "Check pupils distinguish reported sensations from the indicator results they use as evidence."
+    },
+    {
+      "id": "DLP-SCI-Y3-42",
+      "label": "Lesson 42",
+      "title": "Compare other indicators",
+      "unit": "Unit 8 Acid and Alkali",
+      "rpt_dates": [
+        "A  12-16 Sep",
+        "B  13-17 Sep"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 8.1",
+        "LS 8.1.3"
+      ],
+      "references": [
+        "TB pp. 112",
+        "AB pp. 75"
+      ],
+      "objective": "Compare the colour changes of a teacher-prepared plant indicator and litmus for the same samples.",
+      "materials": "Teacher-made red cabbage indicator, litmus, droppers, safe teacher-prepared samples and a comparison grid.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show the plant indicator and litmus separately and ask how to compare their responses fairly.",
+          "pupils": "Suggest using the same samples and separate clean droppers."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Show the plant-indicator colour reference made with known samples. Test labelled samples alongside litmus using separate clean droppers.",
+          "pupils": "Use the same sample labels in both columns. Record the observed colour and interpret each test with its own key."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check two paired records and one claim about agreement or difference supported by the colour keys.",
+          "pupils": "Compare the two indicator results for one sample and explain your claim using its recorded colours and the two keys."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask why the class needs the supplied plant-indicator colour reference.",
+          "pupils": "Explain that different indicators can show different colours for the same type of substance."
+        }
+      ],
+      "follow_up": "Revisit any conclusion that uses litmus colours to interpret the plant indicator."
+    },
+    {
+      "id": "DLP-SCI-Y3-43",
+      "label": "Lesson 43",
+      "title": "Report indicator results",
+      "unit": "Unit 8 Acid and Alkali",
+      "rpt_dates": [
+        "A  12-16 Sep",
+        "B  13-17 Sep"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 8.1",
+        "LS 8.1.4"
+      ],
+      "references": [
+        "TB pp. 111-114",
+        "AB pp. 75-76"
+      ],
+      "objective": "Summarise results in a three-row table and draw a conclusion based on colour changes.",
+      "materials": "Class indicator records, sample labels and a three-row table template.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a record missing its conclusion and ask which columns provide evidence.",
+          "pupils": "Point to the result columns and name one useful value."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model a three-row table with sample, indicator observation and classification. Ask groups to verify their entries against the indicator key.",
+          "pupils": "Summarise their observations and discuss which colour changes justify one chosen claim."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check each pupil’s three-row table and require a conclusion grounded in a recorded result.",
+          "pupils": "Submit the table and explain one sample classification using its recorded colour changes."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Present an unlabelled result and ask what detail would make it interpretable.",
+          "pupils": "Specify the indicator colour before or after the test and the sample identity."
+        }
+      ],
+      "follow_up": "Review conclusions that omit the observed colour change."
+    },
+    {
+      "id": "DLP-SCI-Y3-R03",
+      "label": "Review 03",
+      "title": "Measurement, Density and Indicators",
+      "unit": "Consolidation",
+      "rpt_dates": [
+        "A  19-23 Sep",
+        "B  20-24 Sep"
+      ],
+      "minutes": 30,
+      "standards": [
+        "Review",
+        "Review taught standards"
+      ],
+      "references": [
+        "TB pp. 93-94,104,113-114",
+        "Teacher-selected prompts"
+      ],
+      "objective": "Correct one measurement and explain a result from a density or litmus table.",
+      "materials": "Cylinder drawing with 20, 25 and 30 mL marks. Recorded results for a cork or a sample tested with two litmus strips.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show a measurement read from the wrong scale mark.",
+          "pupils": "Identify what looks wrong and propose a check."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Show a reading of 30 mL written for a meniscus at 25 mL. Provide a cork-float record and a litmus result to choose from.",
+          "pupils": "Correct the reading, then choose either the float record or the paired litmus record and locate its evidence."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Check 25 mL. Accept a cork-density inference or a litmus classification when supported by the selected record.",
+          "pupils": "Write the corrected reading with its unit and justify one inference using a value or observation in your chosen record."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask which details allow someone else to check the pupil’s reasoning.",
+          "pupils": "Name a unit, a scale mark or a relevant table entry."
+        }
+      ],
+      "follow_up": "Use the wrong scale mark or evidence entry to select a short follow-up question."
+    },
+    {
+      "id": "DLP-SCI-Y3-44",
+      "label": "Lesson 44",
+      "title": "Identify Solar System members",
+      "unit": "Unit 9 The Solar System",
+      "rpt_dates": [
+        "A  19-23 Sep",
+        "B  20-24 Sep"
+      ],
+      "minutes": 30,
+      "standards": [
+        "CS 9.1",
+        "LS 9.1.1"
+      ],
+      "references": [
+        "TB pp. 116-119",
+        "AB pp. 77-79"
+      ],
+      "objective": "Label the Sun and the eight planets in order and name two other types of Solar System objects.",
+      "materials": "Sun and planet cards, orbit strip and object cards for asteroids and comets.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show the Sun and Earth cards and ask where the Sun belongs in the model.",
+          "pupils": "Place the Sun centrally and identify Earth as a planet."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Use the textbook sequence to check the eight planet cards. Demonstrate adding two other objects to an illustrated Solar System without treating them as planets.",
+          "pupils": "Build the Sun and planet sequence, then sort asteroid and comet cards as separate object types."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Check each pupil labels the Sun and eight planets in order and names two other object types.",
+          "pupils": "Label a sequence from the Sun outwards and add asteroids and comets to the list of other objects."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask pupils to name Earth’s neighbouring planets in the order from the Sun.",
+          "pupils": "Identify Venus and Mars from the completed order."
+        }
+      ],
+      "follow_up": "Practise the part of the planet sequence the pupil still reverses."
+    },
+    {
+      "id": "DLP-SCI-Y3-45",
+      "label": "Lesson 45",
+      "title": "Compare planet temperatures",
+      "unit": "Unit 9 The Solar System",
+      "rpt_dates": [
+        "A  19-23 Sep",
+        "B  20-24 Sep"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 9.1",
+        "LS 9.1.2"
+      ],
+      "references": [
+        "TB pp. 120-121",
+        "AB pp. 80-81"
+      ],
+      "objective": "Use a supplied data chart to state the general trend with distance and explain why Venus is an exception.",
+      "materials": "Teacher-supplied chart of relative distances and representative temperatures, axes and comparison slips.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Ask which of Mercury and Venus is closer to the Sun before revealing the data.",
+          "pupils": "Identify Mercury from the planet sequence and predict which might be hotter."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Read both columns of the chart. Guide groups to describe the broad trend and compare Mercury and Venus using the chart and the textbook explanation of Venus’s atmosphere.",
+          "pupils": "Order examples by distance, compare their temperatures and mark Venus as an exception to the simple distance prediction."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check each pupil states the general trend, cites Mercury/Venus evidence and links Venus’s high temperature to heat trapped by its atmosphere.",
+          "pupils": "Submit a trend statement and one evidence-backed explanation of Venus as an exception."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask why distance is useful but insufficient in this example.",
+          "pupils": "Explain that atmosphere can affect a planet’s temperature."
+        }
+      ],
+      "follow_up": "Check pupils distinguish the general trend from the Venus comparison."
+    },
+    {
+      "id": "DLP-SCI-Y3-46",
+      "label": "Lesson 46",
+      "title": "Model orbits around the Sun",
+      "unit": "Unit 9 The Solar System",
+      "rpt_dates": [
+        "A  26-30 Sep",
+        "B  27 Sep-1 Oct"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 9.1",
+        "LS 9.1.3"
+      ],
+      "references": [
+        "TB pp. 122-123",
+        "AB pp. 78,82"
+      ],
+      "objective": "Demonstrate an orbit and distinguish a planet's revolution from its rotation.",
+      "materials": "Tabletop Sun and planet models, a marked side of the planet ball and orbit arrows.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Spin the ball in place and ask whether it has travelled round the Sun.",
+          "pupils": "Identify a spin without an orbit."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Show rotation about the model’s axis and revolution around the Sun separately, then together. Set out an arrow track for partners to use.",
+          "pupils": "Take turns modelling one complete orbit and one spin. Use the marked side to show the difference."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Ask each pupil to identify and demonstrate both motions. Check the model travels around the Sun for revolution.",
+          "pupils": "Demonstrate the orbit and distinguish revolution from rotation in an explanation."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask which motion determines a planet’s year in the model.",
+          "pupils": "Point to the orbit and name revolution."
+        }
+      ],
+      "follow_up": "Recheck that rotation is about the planet’s own axis."
+    },
+    {
+      "id": "DLP-SCI-Y3-47",
+      "label": "Lesson 47",
+      "title": "Compare revolution times",
+      "unit": "Unit 9 The Solar System",
+      "rpt_dates": [
+        "A  26-30 Sep",
+        "B  27 Sep-1 Oct"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 9.1",
+        "LS 9.1.4"
+      ],
+      "references": [
+        "TB pp. 124",
+        "AB pp. 83"
+      ],
+      "objective": "Order four planets by their period of revolution and relate the pattern to distance from the Sun.",
+      "materials": "Four printed planet data cards, number strip and distance labels.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show two cards with different revolution periods and ask how they can be compared.",
+          "pupils": "Identify the relevant values and check their units."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Give four planets with periods in consistent units from a checked teaching chart. Model ordering one pair by period, then comparing distances.",
+          "pupils": "Arrange planets from the shortest to longest period and use a separate distance row to look for a pattern."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check each pupil orders all four and gives a distance–period relationship supported by the cards.",
+          "pupils": "Produce the ordered list and state how the period generally changes with distance from the Sun."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask what one revolution period measures.",
+          "pupils": "Explain it is the time for one trip around the Sun."
+        }
+      ],
+      "follow_up": "Review units and correct any comparison using a rotation period."
+    },
+    {
+      "id": "DLP-SCI-Y3-48",
+      "label": "Lesson 48",
+      "title": "Communicate Solar System findings",
+      "unit": "Unit 9 The Solar System",
+      "rpt_dates": [
+        "A  3-7 Oct",
+        "B  4-8 Oct"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 9.1",
+        "LS 9.1.5"
+      ],
+      "references": [
+        "TB pp. 121-126",
+        "AB pp. 84"
+      ],
+      "objective": "Use a diagram and a data point to explain one relationship in the Solar System.",
+      "materials": "Planet diagrams, checked temperature or period chart, blank poster sheets and evidence prompts.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a planet claim without supporting evidence and ask what could strengthen it.",
+          "pupils": "Suggest one matching data point or a labelled part of a model."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Model combining a diagram with a number or recorded comparison. Invite pairs to present one relationship about planet temperature, distance or revolution.",
+          "pupils": "Prepare a labelled diagram and select a data point that directly supports the explanation."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check each pupil names the relationship, labels the diagram accurately and points to a matching data point.",
+          "pupils": "Explain the relationship in one minute or on a written card using both the diagram and the data point."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask the class to identify the evidence in one presentation.",
+          "pupils": "Name the relevant label or data point and say how it supports the idea."
+        }
+      ],
+      "follow_up": "Recheck data points chosen only for interest rather than evidence."
+    },
+    {
+      "id": "DLP-SCI-Y3-49",
+      "label": "Lesson 49",
+      "title": "Identify a pulley and its purpose",
+      "unit": "Unit 10 Machine",
+      "rpt_dates": [
+        "A  3-7 Oct",
+        "B  4-8 Oct"
+      ],
+      "minutes": 30,
+      "standards": [
+        "CS 10.1",
+        "LS 10.1.1"
+      ],
+      "references": [
+        "TB pp. 128",
+        "AB pp. 85"
+      ],
+      "objective": "Label the wheel and rope of a pulley and describe what the device helps people do.",
+      "materials": "Fixed pulley demonstration, light attached load and outline cards.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Show a photo of a flag raising system and ask what guides the line.",
+          "pupils": "Identify the wheel or rope in the picture."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Point out the wheel and rope on a secure tabletop demonstration. Slowly raise the light load and trace the moving line.",
+          "pupils": "Observe the demonstration, trace the rope over the wheel and tell a partner what the pulley helps people move."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Give each pupil an outline to label. Check wheel, rope and a correct purpose statement.",
+          "pupils": "Label the wheel and rope and explain one way the pulley helps move a load."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask how the line moves when the load goes up.",
+          "pupils": "Use the demonstration to describe one direction of motion."
+        }
+      ],
+      "follow_up": "Recheck the parts that guide the rope and hold the load."
+    },
+    {
+      "id": "DLP-SCI-Y3-50",
+      "label": "Lesson 50",
+      "title": "Explain a fixed pulley",
+      "unit": "Unit 10 Machine",
+      "rpt_dates": [
+        "A  10-14 Oct",
+        "B  11-15 Oct"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 10.1",
+        "LS 10.1.2"
+      ],
+      "references": [
+        "TB pp. 129-130",
+        "AB pp. 86"
+      ],
+      "objective": "Use arrows to show the direction of pull and the direction of load movement on a model.",
+      "materials": "Secure fixed pulley stands, soft cords, very light test loads and arrow cards.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Hold a pulley diagram and ask which way to pull to make the load rise.",
+          "pupils": "Predict the pull and movement directions with two arrows."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Demonstrate changing the direction of pull using a secure model. Give pairs a checked station with a light test load.",
+          "pupils": "Pull the line down under supervision, observe the load rise and mark arrows on the model drawing."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check the pull and load arrows on a new sketch. Ask what the single fixed pulley changes in this demonstration.",
+          "pupils": "Draw a downward pull arrow and an upward load arrow. Explain that the pulley changes the direction of the pull."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask what the direction arrows can show about this model.",
+          "pupils": "State the two directions indicated by the labelled arrows."
+        }
+      ],
+      "follow_up": "Have pupils replay the pull and trace the cord if their two arrows point the same way."
+    },
+    {
+      "id": "DLP-SCI-Y3-51",
+      "label": "Lesson 51",
+      "title": "Find pulley applications",
+      "unit": "Unit 10 Machine",
+      "rpt_dates": [
+        "A  10-14 Oct",
+        "B  11-15 Oct"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 10.1",
+        "LS 10.1.3"
+      ],
+      "references": [
+        "TB pp. 131-132",
+        "AB pp. 87-89"
+      ],
+      "objective": "Identify three uses of pulleys and explain the benefit in one case.",
+      "materials": "Photos of flagpoles, blinds, wells and other checked examples, scenario cards and labels.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a flagpole rope and ask how it differs from lifting the flag directly by hand.",
+          "pupils": "Name one practical benefit of the pulley position."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Ask groups to identify the wheel, rope and load in illustrated uses. Provide picture options with and without pulleys to compare.",
+          "pupils": "Find how the parts work in each use and record a practical benefit in one case."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Check each pupil identifies three genuine applications and explains a benefit in one context.",
+          "pupils": "List three applications and connect a named benefit to the task the pulley helps perform."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask for evidence that one chosen example really uses a pulley.",
+          "pupils": "Point to the wheel and rope arrangement in its image."
+        }
+      ],
+      "follow_up": "Revisit machines chosen simply because they lift something."
+    },
+    {
+      "id": "DLP-SCI-Y3-52",
+      "label": "Lesson 52",
+      "title": "Build and explain a pulley model",
+      "unit": "Unit 10 Machine",
+      "rpt_dates": [
+        "A  17-21 Oct",
+        "B  18-22 Oct"
+      ],
+      "minutes": 60,
+      "standards": [
+        "CS 10.1",
+        "LS 10.1.4, 10.1.5"
+      ],
+      "references": [
+        "TB pp. 133-135",
+        "AB pp. 90-92"
+      ],
+      "objective": "Raise a small test load with a working model and use a labelled sketch to explain its operation.",
+      "materials": "Teacher-checked pulley kits, soft cords, clamps, arrow cards and very light test loads.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 5,
+          "teacher": "Show a secure model and ask what would stop the load from rising smoothly.",
+          "pupils": "Name one possible threading or alignment problem."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 30,
+          "teacher": "Check support and rope placement before testing. Assign a builder and an observer, then switch roles for a second test.",
+          "pupils": "Assemble and test the model with a light load. Record the observed motion, then swap roles and check the rope path."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 20,
+          "teacher": "Observe the pair lift the load. Ask each pupil for an individual sketch with a supported explanation.",
+          "pupils": "Show the load rise in the test. Draw the wheel, rope and load with arrows for pull and load motion."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 5,
+          "teacher": "Ask which change had a visible effect on the model’s performance.",
+          "pupils": "Describe an adjustment and the observed result."
+        }
+      ],
+      "follow_up": "Ask a pupil to correct the rope path or the two arrows and demonstrate the result."
+    },
+    {
+      "id": "DLP-SCI-Y3-R04",
+      "label": "Review 04",
+      "title": "Solar System and Machine",
+      "unit": "Consolidation",
+      "rpt_dates": [
+        "A  17-21 Oct",
+        "B  18-22 Oct"
+      ],
+      "minutes": 30,
+      "standards": [
+        "Review",
+        "Review taught standards"
+      ],
+      "references": [
+        "TB pp. 126,137",
+        "Teacher-selected prompts"
+      ],
+      "objective": "Read one orbit model and explain how changing the direction of a pull lifts a load.",
+      "materials": "Orbit diagram, small fixed-pulley model or diagram, arrow cards and two-question review sheet.",
+      "phases": [
+        {
+          "phase": "Set induction",
+          "minutes": 3,
+          "teacher": "Display an orbit drawing and a pulley drawing. Ask what travels in each.",
+          "pupils": "Identify the planet and the pulley load in their different models."
+        },
+        {
+          "phase": "Main activity",
+          "minutes": 15,
+          "teacher": "Review the centre and motion of an orbit and demonstrate the direction of pull and load movement. Give a new diagram for each topic.",
+          "pupils": "Read the orbit diagram and place arrows for the demonstrated fixed pulley in pairs."
+        },
+        {
+          "phase": "Practice and assessment",
+          "minutes": 9,
+          "teacher": "Check each pupil interprets one orbit representation and correctly explains the relation of pull to load movement.",
+          "pupils": "Explain the orbit and add pull and load arrows with an explanation of how the fixed pulley changes direction."
+        },
+        {
+          "phase": "Closure",
+          "minutes": 3,
+          "teacher": "Ask pupils to name one useful label in each model.",
+          "pupils": "Name the Sun and the load or pull direction and explain what each label shows."
+        }
+      ],
+      "follow_up": "Recheck revolution or direction change according to the pupil’s evidence."
+    }
+  ]
+}

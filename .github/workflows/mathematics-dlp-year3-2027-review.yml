@@ -1,0 +1,30 @@
+name: DLP Year 3 Science and Mathematics downloads
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/mathematics-dlp-year3-2027-review.yml'
+      - 'staging/dlp/year3/**'
+      - 'tests/test_dlp_mathematics_year3_review.py'
+      - 'tests/test_curriculum_version_dlp_science_year3.py'
+      - 'rpt_2027/dlp/*_Year_3.docx'
+      - 'web/native_rph_telegram_api.py'
+      - 'web/telegram_sk_rph_2027.py'
+      - 'tests/test_telegram_sk_rph_2027_menu.py'
+      - 'dlp_year2_rph.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render-and-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Flask==3.1.0 python-docx==1.2.0 reportlab==4.2.5 pypdf==5.1.0
+      - run: python -m unittest tests.test_dlp_mathematics_year3_review tests.test_curriculum_version_dlp_science_year3 -v
