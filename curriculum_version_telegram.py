@@ -17,6 +17,13 @@ DLP_YEARS = {
     for n in range(1, 7)
 }
 DLP_DOWNLOAD_YEAR = "Tahun 2"
+DLP_2027_SCOPES = {
+    "Tahun 3": {"SCIENCE_DLP": "d3", "MATH_DLP": "m3"},
+    "Tahun 4": {"SCIENCE_DLP": "d4", "MATH_DLP": "m4"},
+    "Tahun 5": {"SCIENCE_DLP": "d5", "MATH_DLP": "m5"},
+    "Tahun 6": {"SCIENCE_DLP": "d6", "MATH_DLP": "m"},
+}
+DLP_FIRST_YEAR = DLP_YEARS["cv_year1_dlp"]
 DLP_IN_PREPARATION = "Dalam Penyediaan"
 PRIMARY_CURRICULA = {
     "cv_primary_kssr": (LEGACY, "KSSR"),
@@ -47,6 +54,11 @@ def install(namespace):
         dev_subjects.update(dict.fromkeys(PRIMARY_LANGUAGE_SUBJECTS.values(), tuple(range(1, 7))))
     dlp_catalog = {code: module.units for code, module in BY_SUBJECT.items()}
     downloading = set()
+
+    def published_scopes(year_label):
+        if not namespace.get("CIKGULAJU_SK_2027_RPH_MENU"):
+            return {}
+        return DLP_2027_SCOPES.get(year_label, {})
 
     def curriculum_menu(cid):
         reset_selection(cid, None)
@@ -84,7 +96,8 @@ def install(namespace):
             keyboard = [[{"text":"Tahun 1 (KP Baharu)", "callback_data":"cv_year1_kp"}]]
         else:
             keyboard = [[{
-                "text": year_label + ("" if year_label == DLP_DOWNLOAD_YEAR else f" — {DLP_IN_PREPARATION}"),
+                "text": year_label + ("" if year_label == DLP_DOWNLOAD_YEAR or published_scopes(year_label)
+                                      else f" — {DLP_IN_PREPARATION}"),
                 "callback_data": key,
             }] for key, year_label in DLP_YEARS.items()]
         keyboard.extend([[{"text":"⬅️ Pilih Kurikulum", "callback_data":"level_primary"}],
@@ -98,15 +111,24 @@ def install(namespace):
     def dlp_subjects(cid, year_label):
         for key in ("dlp_subject", "dlp_unit", "dlp_lesson"):
             state[cid].pop(key, None)
-        has_downloads = year_label == DLP_DOWNLOAD_YEAR
+        year_two = year_label == DLP_DOWNLOAD_YEAR
+        scopes = published_scopes(year_label)
         keyboard = []
         for key, (code, name) in DLP_SUBJECTS.items():
-            count = sum(len(unit["lessons"]) for unit in dlp_catalog[code])
-            status = f"{count} RPH" if has_downloads else DLP_IN_PREPARATION
+            if year_label == DLP_FIRST_YEAR and code == "SCIENCE_DLP":
+                continue
+            if year_two:
+                count = sum(len(unit["lessons"]) for unit in dlp_catalog[code])
+                status = f"{count} RPH"
+            else:
+                status = "RPH 2027" if code in scopes else DLP_IN_PREPARATION
             keyboard.append([{"text": f"{name} — {status}", "callback_data": key}])
         keyboard.extend([[{"text":"⬅️ Pilih Tahun", "callback_data":"cv_primary_dlp"}],
                          [{"text":"🏠 Menu Utama", "callback_data":"home"}]])
-        prompt = "Pilih subjek untuk muat turun RPH." if has_downloads else "Pilih subjek DLP."
+        if year_label == DLP_FIRST_YEAR:
+            prompt = "Mathematics KP2027 dalam penyediaan. Komponen Sains berada dalam Alam dan Manusia."
+        else:
+            prompt = "Pilih subjek untuk muat turun RPH." if year_two or scopes else "Pilih subjek DLP."
         return send(cid, f"📘 <b>DLP · {year_label}</b>\n\n{prompt}", keyboard)
 
     def dlp_units(cid, subject_key):
@@ -233,7 +255,11 @@ def install(namespace):
             year_label = st.get("year")
             if not (_rph_flow(st) and year_label in DLP_YEARS.values() and version == DLP):
                 return year(cid, "primary")
-            _, name = DLP_SUBJECTS[d]
+            code, name = DLP_SUBJECTS[d]
+            if scope := published_scopes(year_label).get(code):
+                return namespace["callback"](cid, f"sk27:dlp:{scope}")
+            if year_label == DLP_FIRST_YEAR and code == "SCIENCE_DLP":
+                return dlp_subjects(cid, year_label)
             if year_label != DLP_DOWNLOAD_YEAR:
                 keyboard = [[{"text":"⬅️ Pilih Subjek", "callback_data":"back_subjects"}],
                             [{"text":"🏠 Menu Utama", "callback_data":"home"}]]
