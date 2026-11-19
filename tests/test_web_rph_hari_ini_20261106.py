@@ -484,7 +484,7 @@ class DailyTimetableRouteTests(TestCase):
             ("4 Bestari", "Science (DLP)"), ("4 Amanah", "Sains (DLP)"),
             ("4 Bestari", "Sains"), ("4 Bestari", "Mathematics (DLP)"),
             ("4 Amanah", "Matematik (DLP)"), ("4 Bestari", "Matematik"),
-            ("3 Bestari", "Science (DLP)"), ("6 Bestari", "Mathematics (DLP)"),
+            ("3 Bestari", "Science (DLP)"), ("3 Bestari", "Mathematics (DLP)"),
         ]
         schedule = {"entries": [
             {"day": "Isnin", "start": f"{8 + i:02}:00", "end": f"{8 + i:02}:30",
@@ -576,7 +576,7 @@ class DailyTimetableRouteTests(TestCase):
             self.assertEqual((math_progress["label"], math_progress["completed"], math_progress["last_label"]),
                              ("sesi", 1, "Review 08"))
             self.assertEqual(items["4 Amanah", "Mathematics (DLP)"]["completed"], 0)
-            self.assertNotIn(("6 Bestari", "Mathematics (DLP)"), items)
+            self.assertNotIn(("3 Bestari", "Mathematics (DLP)"), items)
 
     def test_year5_dlp_records_both_subjects_with_their_own_limits(self):
         target = date(2027, 1, 11)
@@ -641,6 +641,45 @@ class DailyTimetableRouteTests(TestCase):
             self.assertEqual(items["5 Bestari", "Science (DLP)"]["last_label"], "Review 10")
             self.assertEqual(items["5 Bestari", "Mathematics (DLP)"]["last_label"], "Review 08")
             self.assertEqual(items["5 Amanah", "Science (DLP)"]["completed"], 0)
+
+    def test_year6_dlp_day_and_week_use_their_own_catalogues(self):
+        target = date(2027, 1, 11)
+        subjects = [("Science (DLP)", "SCIENCE_DLP"), ("Sains (DLP)", "SCIENCE_DLP"),
+                    ("Mathematics (DLP)", "MATH_DLP"), ("Matematik (DLP)", "MATH_DLP")]
+        schedule = {"entries": [
+            {"day": "Isnin", "start": f"{8 + i:02}:00", "end": f"{8 + i:02}:30",
+             "class_name": "6 Bestari", "subject": subject}
+            for i, (subject, _) in enumerate(subjects)
+        ]}
+        with ExitStack() as stack:
+            for name, value in {"_auth": (self.conf, 123, None), "get_schedule": schedule,
+                                "get_profile": {"state_name": "Pahang"}, "malaysia_today": target,
+                                "read_progress": [], "read_progress_summary": {}}.items():
+                stack.enter_context(patch("web.rph_hari_ini_web." + name, return_value=value))
+            save = stack.enter_context(patch("web.rph_hari_ini_web.save_completion"))
+            day = self.client.get("/api/web/rph/hari-ini")
+            week = self.client.get("/api/web/rph/minggu-ini")
+            self.assertEqual((day.status_code, week.status_code), (200, 200))
+            slots = day.json["entries"]
+            self.assertEqual(slots, week.json["days"][0]["entries"])
+            self.assertEqual([slot["subject_code"] for slot in slots], [code for _, code in subjects])
+            for slot in slots:
+                self.assertTrue(slot["can_prepare"])
+                self.assertEqual((slot["year"], slot["curriculum"]), (6, "dlp"))
+                self.assertNotIn("progress", slot)
+                selection = {key: slot[key] for key in ("start", "class_name", "subject_code")}
+                token = lesson_signer(self.conf).dumps([123, 6, slot["subject_code"], "", 108])
+                for action in (token, None):
+                    result = self.client.post("/api/web/rph/hari-ini/completion",
+                                              headers={"Origin": "https://localhost"}, json={
+                        **selection, "date": target.isoformat(), "component": "", "token": action,
+                    })
+                    self.assertEqual(result.status_code, 400)
+                    self.assertIn("Rekod Selesai PdP belum tersedia", result.json["error"])
+            save.assert_not_called()
+            overview = self.client.get("/api/web/rph/hari-ini/progress")
+            self.assertEqual(overview.status_code, 200)
+            self.assertEqual(overview.json["entries"], [])
 
     def test_invalid_date_and_unknown_params_fail_closed(self):
         with patch("web.rph_hari_ini_web._auth",return_value=(self.conf,123,None)):

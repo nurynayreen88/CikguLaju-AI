@@ -227,7 +227,7 @@ def day_payload(profile, schedule, target, *, today=None, sjkc_catalogue=None, s
         if not closure and variant:
             variant_key = variant["code"]
             native_code = variant.get("rph_code")
-            if year in (4, 5) and (year, native_code) in DLP_CATALOGUES:
+            if year in (4, 5, 6) and (year, native_code) in DLP_CATALOGUES:
                 curriculum = variant["curriculum"]
                 code = native_code
             match = {
