@@ -52,6 +52,21 @@ class UnifiedWebRPHTests(unittest.TestCase):
         self.assertIsNone(verified_preview(2, "PSV", "Wrong unit", "v-2-001"))
         self.assertEqual(len(source_records(2, "PSV")), 42)
 
+    def test_pjpk_preview_uses_dskp_descriptions_for_all_339_plans(self):
+        from web.telegram_rph_parity import build_layout
+
+        count = 0
+        for year in range(2, 7):
+            for component in ("PJ", "PK"):
+                for row in source_records(year, "PJPK", component):
+                    preview = verified_preview(year, "PJPK", row["unit"], row["token"], component)
+                    layout = build_layout(preview, SUBJECT_LABELS)
+                    header = {field["label"]: field["value"] for field in layout["header"]}
+                    self.assertEqual(header["Standard Kandungan"], row["standard_descriptions"]["sk"])
+                    self.assertEqual(header["Standard Pembelajaran"], row["standard_descriptions"]["sp"])
+                    count += 1
+        self.assertEqual(count, 339)
+
     @patch("web.unified_rph_web._account", return_value=(None, ({"error": "Login required"}, 401)))
     def test_non_authenticated_read_rejected(self, _):
         self.assertEqual(self.client.get("/api/web/rph/preview").status_code, 401)
