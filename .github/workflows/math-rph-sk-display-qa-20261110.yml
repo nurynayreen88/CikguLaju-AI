@@ -5,6 +5,7 @@ on:
     paths:
       - 'web/math_rph_sk_display_fix_20261110.py'
       - 'web/math_rph_delivery_quality_20261110.py'
+      - 'web/math_y2_pdp21_rph.py'
       - 'web/telegram_verified_sequence_rph_bridge.py'
       - 'tests/test_telegram_math_native_quality_20261110.py'
       - 'tests/test_math_rph_sk_display_fix_20261110.py'
