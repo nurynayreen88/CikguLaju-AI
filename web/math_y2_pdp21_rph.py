@@ -37,7 +37,7 @@ def install(runtime):
                 "PENTAKSIRAN": "Guru semak empat hasil tambah dan catat murid yang masih tersilap pada langkah pertukaran.",
                 "SET INDUKSI": (
                     f"{induction} minit\n"
-                    "Guru tunjuk 8 blok sa dan tambah 7. Murid kumpulkan semula sebagai 1 puluh dan 5 sa."
+                    "Guru tambah tujuh blok sa kepada lapan blok sa. Murid kumpulkan semula sebagai 1 puluh dan 5 sa."
                 ),
                 "AKTIVITI UTAMA": (
                     f"Aktiviti 1 – Tambah dalam bentuk lazim ({guided} minit)\n"
