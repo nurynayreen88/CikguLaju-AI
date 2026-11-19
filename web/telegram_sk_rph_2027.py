@@ -179,7 +179,7 @@ def install(runtime):
                 if action == "dlp":
                     if curriculum != "dlp" or st.get("year") != year or not subject.endswith(" (DLP)"):
                         raise ValueError("Wrong DLP curriculum or year")
-                    back = [{"text": "Pilih Subjek DLP", "callback_data": f"cv_year{year.split()[-1]}_dlp"}]
+                    back = [{"text": "Pilih Subjek", "callback_data": "back_subjects"}]
                 else:
                     back = _button("Pilih set", "home")
                 st[STATE_KEY] = {"scope": scope, "from_dlp": action == "dlp"}

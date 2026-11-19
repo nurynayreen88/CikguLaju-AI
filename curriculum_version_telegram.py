@@ -13,8 +13,7 @@ from primary_language_subjects import PRIMARY_LANGUAGE_SUBJECTS
 
 DLP = "dlp"
 DLP_YEARS = {
-    f"cv_year{n}_dlp": f"Tahun {n}" + (" (KP Baharu)" if n == 1 else "")
-    for n in range(1, 7)
+    f"cv_year{n}_dlp": f"Tahun {n}" for n in range(2, 7)
 }
 DLP_DOWNLOAD_YEAR = "Tahun 2"
 DLP_2027_SCOPES = {
@@ -23,12 +22,9 @@ DLP_2027_SCOPES = {
     "Tahun 5": {"SCIENCE_DLP": "d5", "MATH_DLP": "m5"},
     "Tahun 6": {"SCIENCE_DLP": "d6", "MATH_DLP": "m"},
 }
-DLP_FIRST_YEAR = DLP_YEARS["cv_year1_dlp"]
-DLP_IN_PREPARATION = "Dalam Penyediaan"
 PRIMARY_CURRICULA = {
     "cv_primary_kssr": (LEGACY, "KSSR"),
-    "cv_primary_kp27": (KP2027, "KP27 (KP Baharu)"),
-    "cv_primary_dlp": (DLP, "DLP"),
+    "cv_primary_kp27": (KP2027, "KP2027"),
 }
 
 DLP_SUBJECTS = {
@@ -59,6 +55,14 @@ def install(namespace):
         if not namespace.get("CIKGULAJU_SK_2027_RPH_MENU"):
             return {}
         return DLP_2027_SCOPES.get(year_label, {})
+
+    def dlp_subject_buttons(st, year_label):
+        if not (_rph_flow(st) and st.get("curriculum_version") == LEGACY):
+            return []
+        scopes = published_scopes(year_label)
+        return [{"text": name, "callback_data": key}
+                for key, (code, name) in DLP_SUBJECTS.items()
+                if year_label == DLP_DOWNLOAD_YEAR or code in scopes]
 
     def curriculum_menu(cid):
         reset_selection(cid, None)
@@ -92,14 +96,8 @@ def install(namespace):
                 [{"text":f"Tahun {n}", "callback_data":f"year_{n}"} for n in row]
                 for row in ((1, 2), (3, 4), (5, 6))
             ]
-        elif version == KP2027:
-            keyboard = [[{"text":"Tahun 1 (KP Baharu)", "callback_data":"cv_year1_kp"}]]
         else:
-            keyboard = [[{
-                "text": year_label + ("" if year_label == DLP_DOWNLOAD_YEAR or published_scopes(year_label)
-                                      else f" — {DLP_IN_PREPARATION}"),
-                "callback_data": key,
-            }] for key, year_label in DLP_YEARS.items()]
+            keyboard = [[{"text":"Tahun 1 (KP Baharu)", "callback_data":"cv_year1_kp"}]]
         keyboard.extend([[{"text":"⬅️ Pilih Kurikulum", "callback_data":"level_primary"}],
                          [{"text":"🏠 Menu Utama", "callback_data":"home"}]])
         return send(cid, f"📚 <b>{label}</b>\n\nPilih tahun.", keyboard)
@@ -107,29 +105,6 @@ def install(namespace):
     def choose_year_one_preview(cid):
         reset_selection(cid, KP2027)["year"] = "Tahun 1"
         return subjects(cid, "Tahun 1")
-
-    def dlp_subjects(cid, year_label):
-        for key in ("dlp_subject", "dlp_unit", "dlp_lesson"):
-            state[cid].pop(key, None)
-        year_two = year_label == DLP_DOWNLOAD_YEAR
-        scopes = published_scopes(year_label)
-        keyboard = []
-        for key, (code, name) in DLP_SUBJECTS.items():
-            if year_label == DLP_FIRST_YEAR and code == "SCIENCE_DLP":
-                continue
-            if year_two:
-                count = sum(len(unit["lessons"]) for unit in dlp_catalog[code])
-                status = f"{count} RPH"
-            else:
-                status = "RPH 2027" if code in scopes else DLP_IN_PREPARATION
-            keyboard.append([{"text": f"{name} — {status}", "callback_data": key}])
-        keyboard.extend([[{"text":"⬅️ Pilih Tahun", "callback_data":"cv_primary_dlp"}],
-                         [{"text":"🏠 Menu Utama", "callback_data":"home"}]])
-        if year_label == DLP_FIRST_YEAR:
-            prompt = "Mathematics KP2027 dalam penyediaan. Komponen Sains berada dalam Alam dan Manusia."
-        else:
-            prompt = "Pilih subjek untuk muat turun RPH." if year_two or scopes else "Pilih subjek DLP."
-        return send(cid, f"📘 <b>DLP · {year_label}</b>\n\n{prompt}", keyboard)
 
     def dlp_units(cid, subject_key):
         code, name = DLP_SUBJECTS[subject_key]
@@ -209,7 +184,8 @@ def install(namespace):
     def subjects(cid,label):
         st=state.setdefault(cid,{})
         if st.get("curriculum_version") == DLP:
-            return dlp_subjects(cid, label) if label in DLP_YEARS.values() else primary_years(cid, DLP, "DLP")
+            reset_selection(cid, LEGACY)["year"] = label
+            return previous_subjects(cid, label)
         result=resolve_curriculum(st.get("curriculum_version"),label,st.get("subject"))
         if st.get("curriculum_version")==KP2027 and label in ("Tahun 1", "Tingkatan 1"):
             # Display candidate subjects only; never route into legacy SK/SP.
@@ -217,8 +193,11 @@ def install(namespace):
             if label=="Tahun 1":
                 # Temporary KP2027 menu-only hide; preserve legacy and stored data.
                 hidden={"BC","BT","Bahasa Cina","Bahasa Tamil"}
-                candidates=[sub for sub in candidates
-                            if sub not in hidden and subject_label.get(sub,sub) not in hidden]
+                candidates=list(dict.fromkeys(
+                    "Alam dan Manusia" if subject_label.get(sub, sub) == "Sains" else sub
+                    for sub in candidates
+                    if sub not in hidden and subject_label.get(sub, sub) not in hidden
+                ))
             kb=[[{"text":subject_label.get(sub,sub)+" — Akan Datang",
                   "callback_data":"cv_build_"+str(i)}]
                 for i,sub in enumerate(candidates)]
@@ -226,8 +205,10 @@ def install(namespace):
             kb.extend([[{"text":"📖 Pratonton Kerangka Rasmi KP2027","callback_data":"cv_preview"}],
                        [{"text":"⬅️ Pilih Tahun","callback_data":"cv_choose"}],
                        [{"text":"🏠 Menu Utama","callback_data":"home"}]])
+            notice = (" Komponen Sains Tahun 1 berada dalam Alam dan Manusia." if label == "Tahun 1" else "")
             return send(cid,"📚 <b>"+label+" (KP Baharu)</b>\n\n"
-                        "Bahan Kurikulum Persekolahan 2027 sedang disemak. Janaan RPH berstatus Akan Datang.",kb)
+                        "Bahan Kurikulum Persekolahan 2027 sedang disemak. Janaan RPH berstatus Akan Datang."
+                        + notice, kb)
         if not result["enabled"]:
             return send(cid,"⏳ KP2027 belum tersedia.",[[{"text":"⬅️ Tukar Kurikulum","callback_data":"cv_choose"}]])
         return previous_subjects(cid,label)
@@ -235,6 +216,8 @@ def install(namespace):
     def callback(cid,d):
         st=state.setdefault(cid,{})
         version = st.get("curriculum_version")
+        if d == "cv_primary_dlp":
+            d = "cv_primary_kssr"
         if d in PRIMARY_CURRICULA:
             if not _rph_flow(st):
                 return year(cid, "primary")
@@ -245,26 +228,26 @@ def install(namespace):
             if _rph_flow(st) and version == KP2027:
                 return choose_year_one_preview(cid)
             return year(cid, "primary")
+        if d == "cv_year1_dlp":
+            return year(cid, "primary")
         if d in DLP_YEARS:
-            if _rph_flow(st) and version == DLP:
+            if _rph_flow(st) and version in (LEGACY, DLP):
                 year_label = DLP_YEARS[d]
-                reset_selection(cid, DLP)["year"] = year_label
-                return dlp_subjects(cid, year_label)
+                reset_selection(cid, LEGACY)["year"] = year_label
+                return subjects(cid, year_label)
             return year(cid, "primary")
         if d in DLP_SUBJECTS:
             year_label = st.get("year")
-            if not (_rph_flow(st) and year_label in DLP_YEARS.values() and version == DLP):
+            if not (_rph_flow(st) and version in (LEGACY, DLP)
+                    and year_label in DLP_YEARS.values()):
                 return year(cid, "primary")
-            code, name = DLP_SUBJECTS[d]
-            if scope := published_scopes(year_label).get(code):
+            code, _ = DLP_SUBJECTS[d]
+            scope = published_scopes(year_label).get(code)
+            if year_label != DLP_DOWNLOAD_YEAR and not scope:
+                return subjects(cid, year_label)
+            reset_selection(cid, DLP)["year"] = year_label
+            if scope:
                 return namespace["callback"](cid, f"sk27:dlp:{scope}")
-            if year_label == DLP_FIRST_YEAR and code == "SCIENCE_DLP":
-                return dlp_subjects(cid, year_label)
-            if year_label != DLP_DOWNLOAD_YEAR:
-                keyboard = [[{"text":"⬅️ Pilih Subjek", "callback_data":"back_subjects"}],
-                            [{"text":"🏠 Menu Utama", "callback_data":"home"}]]
-                return send(cid, f"<b>{name} · {year_label}</b>\n\n"
-                            f"{DLP_IN_PREPARATION}.", keyboard)
             return dlp_units(cid, d)
         if d.startswith(("cv_dlp_word_", "cv_dlp_pdf_")):
             _, _, fmt, lesson_id = d.split("_", 3)
@@ -274,7 +257,7 @@ def install(namespace):
                 return year(cid, "primary")
             subject_key = st.get("dlp_subject")
             if subject_key not in DLP_SUBJECTS:
-                return dlp_subjects(cid, DLP_DOWNLOAD_YEAR)
+                return subjects(cid, DLP_DOWNLOAD_YEAR)
             code, _ = DLP_SUBJECTS[subject_key]
             groups = dlp_catalog[code]
             if d.startswith("cv_dlp_unit_"):
@@ -300,7 +283,7 @@ def install(namespace):
                 return choose(cid,label)
             if version == KP2027:
                 reset_selection(cid, KP2027)
-                return primary_years(cid, KP2027, "KP27 (KP Baharu)")
+                return primary_years(cid, KP2027, "KP2027")
             return curriculum_menu(cid)
         if d in ("cv_existing","cv_kp2027"):
             if _rph_flow(st) and st.get("year") != "Tingkatan 1":
@@ -349,9 +332,10 @@ def install(namespace):
         if version in (KP2027, DLP) and (
                 d.startswith(("sub_", "topic_", "st3|", "matpick2528|")) or d=="matsubmit2528"):
             if not st.get("year"):
-                return primary_years(cid, version, "KP27 (KP Baharu)" if version == KP2027 else "DLP")
+                return curriculum_menu(cid)
             return subjects(cid,st["year"])
         return previous_callback(cid,d)
+    namespace["_cikgulaju_dlp_subject_buttons"]=dlp_subject_buttons
     namespace["year"]=year
     namespace["subjects"]=subjects
     namespace["callback"]=callback

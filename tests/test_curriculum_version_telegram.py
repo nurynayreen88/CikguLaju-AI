@@ -23,7 +23,7 @@ class TelegramCurriculumTests(unittest.TestCase):
         self.ns["state"][1].update(curriculum_version="existing",year="Tahun 4")
         self.ns["year"](1,"primary")
         _, keyboard = self.messages[-1]
-        self.assertEqual([row[0]["text"] for row in keyboard[:3]], ["KSSR","KP27 (KP Baharu)","DLP"])
+        self.assertEqual([row[0]["text"] for row in keyboard[:2]], ["KSSR","KP2027"])
         self.assertNotIn("year_",str(keyboard))
         self.assertNotIn("year",self.ns["state"][1])
         self.ns["callback"](1,"year_1")
@@ -49,6 +49,8 @@ class TelegramCurriculumTests(unittest.TestCase):
         self.assertEqual(self.calls,[])
         self.assertIn("Tahun 1 (KP Baharu)",self.messages[-1][0])
         self.assertIn("Akan Datang",self.messages[-1][0])
+        self.assertIn("Alam dan Manusia",self.messages[-1][0])
+        self.assertIn("Alam dan Manusia — Akan Datang",str(self.messages[-1][1]))
         self.assertNotIn("Bahasa Cina",str(self.messages[-1][1]))
         self.assertNotIn("Bahasa Tamil",str(self.messages[-1][1]))
         self.assertIn("cv_build_0",str(self.messages[-1][1]))
@@ -64,21 +66,18 @@ class TelegramCurriculumTests(unittest.TestCase):
         self.ns["callback"](1,"cv_year1_kp")
         self.assertIn("Tahun 1 (KP Baharu)",self.messages[-1][0])
 
-    def test_year_two_lists_only_dlp_subjects_in_dlp(self):
-        self.ns["callback"](1,"cv_primary_dlp")
-        years = [row[0] for row in self.messages[-1][1][:6]]
-        self.assertEqual([button["callback_data"] for button in years],
-                         [f"cv_year{n}_dlp" for n in range(1,7)])
-        self.assertEqual(years[0]["text"],"Tahun 1 (KP Baharu) — Dalam Penyediaan")
-        self.assertEqual(years[1]["text"],"Tahun 2")
-        self.ns["callback"](1,"cv_year2_dlp")
-        keys = {button["callback_data"]:button["text"] for row in self.messages[-1][1] for button in row}
-        self.assertEqual(set(keys),{"cv_dlp_science","cv_dlp_math","cv_primary_dlp","home"})
+    def test_year_two_dlp_subjects_use_verified_catalogues(self):
+        self.ns["callback"](1,"cv_primary_kssr")
+        self.ns["callback"](1,"year_2")
+        state = self.ns["state"][1]
+        keys = {button["callback_data"]: button["text"]
+                for button in self.ns["_cikgulaju_dlp_subject_buttons"](state, "Tahun 2")}
+        self.assertEqual(set(keys), {"cv_dlp_science", "cv_dlp_math"})
         for data, code, title, count, unit_count in (
             ("cv_dlp_science", "SCIENCE_DLP", "Science (DLP)", 67, 10),
             ("cv_dlp_math", "MATH_DLP", "Mathematics (DLP)", 96, 8),
         ):
-            self.assertEqual(keys[data], f"{title} — {count} RPH")
+            self.assertEqual(keys[data], title)
             self.ns["callback"](1,data)
             self.assertIn("Pilih unit",self.messages[-1][0])
             groups = BY_SUBJECT[code].units
@@ -104,15 +103,11 @@ class TelegramCurriculumTests(unittest.TestCase):
                 self.assertIn("Pilih unit",self.messages[-1][0])
                 self.ns["callback"](1,data)
             self.ns["callback"](1,"back_subjects")
-            self.assertIn("cv_dlp_math",str(self.messages[-1][1]))
+            self.assertEqual(self.ns["state"][1]["curriculum_version"], "existing")
+            self.assertEqual(self.calls[-1], ("subjects", "Tahun 2"))
         self.assertNotIn("subject",self.ns["state"][1])
-        self.assertEqual(self.calls,[])
         self.ns["callback"](1,"sub_Sains")
-        self.assertEqual(self.calls,[])
-        self.ns["callback"](1,"cv_primary_kssr")
-        self.ns["callback"](1,"year_2")
-        self.ns["callback"](1,"sub_Sains")
-        self.assertEqual(self.calls,[("subjects","Tahun 2"),("callback","sub_Sains")])
+        self.assertEqual(self.calls[-1], ("callback","sub_Sains"))
 
     def test_download_honours_gate_and_delivers_selected_file(self):
         call = self.ns["callback"]
@@ -148,49 +143,38 @@ class TelegramCurriculumTests(unittest.TestCase):
         self.assertIn("belum berjaya dihantar", self.messages[-1][0])
         self.assertNotIn("_free_generation_pending_v25282", self.ns["state"][1])
 
-    def test_kp2027_dlp_lists_mathematics_and_explains_integrated_science(self):
+    def test_year_one_does_not_offer_dlp(self):
         call = self.ns["callback"]
-        call(1, "cv_primary_dlp")
-        call(1, "cv_year1_dlp")
-        message, keyboard = self.messages[-1]
-        self.assertIn("Tahun 1 (KP Baharu)", message)
-        self.assertIn("Komponen Sains berada dalam Alam dan Manusia", message)
-        buttons = {button["callback_data"]: button["text"] for row in keyboard for button in row}
-        self.assertNotIn("cv_dlp_science", buttons)
-        self.assertEqual(buttons["cv_dlp_math"], "Mathematics (DLP) — Dalam Penyediaan")
-        call(1, "cv_dlp_science")
-        self.assertIn("Alam dan Manusia", self.messages[-1][0])
+        call(1, "cv_primary_kssr")
+        call(1, "year_1")
+        self.assertEqual(self.ns["_cikgulaju_dlp_subject_buttons"](self.ns["state"][1], "Tahun 1"), [])
         call(1, "cv_dlp_math")
-        self.assertIn("Dalam Penyediaan", self.messages[-1][0])
-        self.assertEqual(self.calls, [])
+        self.assertIn("Pilih kurikulum", self.messages[-1][0])
+        call(1, "cv_primary_dlp")
+        self.assertIn("<b>KSSR</b>", self.messages[-1][0])
+        call(1, "cv_year1_dlp")
+        self.assertIn("Pilih kurikulum", self.messages[-1][0])
+        self.assertEqual(self.calls, [("subjects", "Tahun 1")])
 
-    def test_dlp_other_years_show_subject_status_without_using_year_two(self):
-        self.ns["callback"](1,"cv_primary_dlp")
-        for n in (3,4,5,6):
+    def test_dlp_other_years_require_the_published_menu(self):
+        call = self.ns["callback"]
+        call(1, "cv_primary_kssr")
+        for n in (3, 4, 5, 6):
             with self.subTest(year=n):
-                self.ns["callback"](1,f"cv_year{n}_dlp")
-                year_label = f"Tahun {n}" + (" (KP Baharu)" if n == 1 else "")
-                self.assertIn(year_label,self.messages[-1][0])
-                self.assertEqual([row[0]["text"] for row in self.messages[-1][1][:2]],
-                                 ["Science (DLP) — Dalam Penyediaan","Mathematics (DLP) — Dalam Penyediaan"])
-                for code in ("cv_dlp_science","cv_dlp_math"):
-                    self.ns["callback"](1,code)
-                    message = self.messages[-1][0]
-                    self.assertIn(year_label,message)
-                    self.assertIn("Dalam Penyediaan",message)
-                    self.assertNotIn("Activity Book",message)
-                self.ns["callback"](1,"matsubmit2528")
-                self.assertEqual(self.calls,[])
+                label = f"Tahun {n}"
+                call(1, f"year_{n}")
+                state = self.ns["state"][1]
+                self.assertEqual(self.ns["_cikgulaju_dlp_subject_buttons"](state, label), [])
+                call(1, "cv_dlp_math")
+                self.assertEqual(self.calls[-1], ("subjects", label))
+        self.assertNotIn("dlp_subject", self.ns["state"][1])
 
-    def test_stale_dlp_button_and_other_tasks(self):
-        self.ns["callback"](1,"cv_primary_kssr")
-        self.ns["callback"](1,"year_3")
-        self.ns["callback"](1,"cv_dlp_science")
-        self.assertNotIn("Observe",self.messages[-1][0])
-        self.ns["state"][1]={"task":"bbm"}
-        self.ns["year"](1,"primary")
-        self.ns["callback"](1,"year_2")
-        self.assertEqual(self.calls,[("subjects","Tahun 3"),("year","primary"),("subjects","Tahun 2")])
+    def test_other_tasks_do_not_offer_dlp(self):
+        self.ns["state"][1] = {"task": "bbm", "year": "Tahun 2", "curriculum_version": "existing"}
+        self.assertEqual(self.ns["_cikgulaju_dlp_subject_buttons"](self.ns["state"][1], "Tahun 2"), [])
+        self.ns["year"](1, "primary")
+        self.ns["callback"](1, "year_2")
+        self.assertEqual(self.calls, [("year", "primary"), ("subjects", "Tahun 2")])
 
     def test_other_years_preserve_old_subject_flow(self):
         self.ns["callback"](1,"cv_primary_kssr")
