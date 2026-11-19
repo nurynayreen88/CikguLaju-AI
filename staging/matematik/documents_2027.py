@@ -3,6 +3,7 @@
 from dataclasses import dataclass
 from functools import lru_cache
 from io import BytesIO
+import json
 from pathlib import Path
 
 from dlp_year2_rph import _pdf, _word
@@ -15,6 +16,7 @@ from web.rph_teacher_reflection import clean_reflection
 YEARS = (4, 5, 6)
 DPK_YEARS = (2, 3)
 RENDERERS = {"word": _word, "pdf": _pdf}
+DPK_STANDARDS = Path(__file__).with_name("standard_dpk_edisi3.json")
 
 
 @dataclass(frozen=True)
@@ -79,10 +81,18 @@ def _build_dpk_year(year):
         records, schedule = rph.load()
         details = rpt.lessons_by_id(records)
         documents = ((record[0], rph.document(record, schedule[record[0]])) for record in records)
+    curriculum = json.loads(DPK_STANDARDS.read_text(encoding="utf-8"))["years"][str(year)]
     lessons = []
     for number, parts in documents:
         unit, name, title, _, sp_text, _, volume, pages, _ = details[number]
         standards = tuple(sp_text.split(", "))
+        parents = dict.fromkeys(code.rsplit(".", 1)[0] for code in standards)
+        sk_descriptions = "\n".join(f"{code} {curriculum['sk'][code]}" for code in parents)
+        sp_descriptions = "\n".join(f"{code} {curriculum['sp'][code]['text']}" for code in standards)
+        heading, fields, activities, reflection = parts
+        fields = [(label, f"SK {sk_descriptions} · SP {sp_descriptions}" if label == "SK / SP" else value)
+                  for label, value in fields]
+        parts = heading, fields, activities, reflection
         lessons.append(Lesson(year, number, unit, name, title, standards[0].rsplit(".", 1)[0],
                               standards, f"Jilid {volume}, hlm. {pages}",
                               schedule[number][1], parts, dpk=True))

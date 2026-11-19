@@ -53,7 +53,7 @@ def hour_document(year, number, week, source, lesson):
         ('Lesson / tempoh', f'Lesson {number:03d} · {minutes} minit'),
         ('Tarikh RPT', f"M{week['minggu']:02d} · A {display_dates(week['A'])} · B {display_dates(week['B'])}"),
         ('Maklumat kelas', 'Kelas ______ · Tarikh ______ · Masa ______ · Murid ______'),
-        ('SK / SP', f"SK {standard} · SP {', '.join(codes)}"),
+        ('SK / SP', f"SK {standard} · SP {source['SP'].strip()}"),
         ('Rujukan', f'DSKP Matematik Tahun {year} · Buku Teks SK, hlm. {pages}'),
         ('Objektif', objective),
         ('Bahan', source['BBM']),

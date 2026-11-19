@@ -108,7 +108,8 @@ class ReviewSequenceTests(unittest.TestCase):
                     text = page.extract_text()
                 compact = " ".join(text.split())
                 for expected in (row["title"], row["unit"], f"PdP {row['id']:03d}",
-                                 f"SK {sk} · SP {row['sp']}", f"m/s {row['pages']}", plan["pbd"],
+                                 f"{sk} {plan['sk_text']}", f"{row['sp']} {plan['sp_text']}",
+                                 f"m/s {row['pages']}", plan["pbd"],
                                  plan["dates"], "5 Bestari", "18/01/2027", time, "Bil. murid: 32",
                                  "Murid membentangkan dapatan."):
                     self.assertIn(" ".join(expected.split()), compact)

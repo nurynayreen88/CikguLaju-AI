@@ -1,0 +1,458 @@
+{
+  "pdf_sha256": "ac444debec37ccef9756b573617d805799cdecb044111e8fe905a4308c6856be",
+  "source_url": "https://drive.google.com/file/d/1vjNjPj_rWoEHugtdtMu1c8pNj7MtLVxn/view",
+  "years": {
+    "2": {
+      "sk": {
+        "1.1": "Nilai nombor",
+        "1.2": "Nilai tempat",
+        "1.3": "Pola nombor",
+        "1.4": "Menganggar",
+        "1.5": "Membundarkan nombor",
+        "2.1": "Tambah dalam lingkungan 1000",
+        "2.2": "Tolak dalam lingkungan 1000",
+        "2.3": "Darab dalam lingkungan 1000",
+        "2.4": "Bahagi dalam lingkungan 1000",
+        "3.1": "Konsep perdua dan perempat pecahan wajar",
+        "3.2": "Pecahan wajar",
+        "3.3": "Perpuluhan",
+        "4.1": "Wang kertas dan duit syiling",
+        "4.2": "Tambah wang",
+        "4.3": "Tolak wang",
+        "4.4": "Darab wang",
+        "4.5": "Bahagi wang",
+        "5.1": "Waktu dalam jam dan minit",
+        "5.2": "Perkaitan dalam masa dan waktu",
+        "6.1": "Panjang",
+        "6.2": "Jisim",
+        "6.3": "Isi padu cecair",
+        "7.1": "Bentuk tiga dimensi",
+        "7.2": "Bentuk dua dimensi",
+        "8.1": "Mengumpul, mengelas dan menyusun data",
+        "8.2": "Carta palang"
+      },
+      "sp": {
+        "1.1.1(i)": {
+          "text": "Menamakan nombor hingga 1000: Membilang seratus-seratus hingga 1000 serta menulis dalam angka dan perkataan.",
+          "printed_page": 19
+        },
+        "1.1.1(ii)": {
+          "text": "Menamakan nombor hingga 1000: Membilang satu-satu dan sepuluh-sepuluh hingga 1000 serta menulis dalam angka dan perkataan.",
+          "printed_page": 19
+        },
+        "1.1.2": {
+          "text": "Membandingkan nilai dua nombor.",
+          "printed_page": 20
+        },
+        "1.1.3": {
+          "text": "Melengkapkan nombor mengikut tertib menaik dan menurun.",
+          "printed_page": 20
+        },
+        "1.2.1": {
+          "text": "Menyatakan nilai tempat dan nilai digit bagi sebarang nombor.",
+          "printed_page": 20
+        },
+        "1.3.1": {
+          "text": "Menyebut sebarang pola nombor satu-satu hingga sepuluh-sepuluh dan seratus-seratus.",
+          "printed_page": 21
+        },
+        "1.3.2": {
+          "text": "Melengkapkan pelbagai pola nombor yang mudah.",
+          "printed_page": 21
+        },
+        "1.4.1": {
+          "text": "Memberi anggaran bilangan objek yang munasabah.",
+          "printed_page": 21
+        },
+        "1.5.1": {
+          "text": "Membundarkan nombor bulat hingga puluh dan ratus terdekat.",
+          "printed_page": 22
+        },
+        "2.1.1": {
+          "text": "Menambah hingga tiga nombor dan hasil tambahnya dalam lingkungan 1000.",
+          "printed_page": 23
+        },
+        "2.2.1": {
+          "text": "Menolak hingga tiga nombor dalam lingkungan 1000.",
+          "printed_page": 24
+        },
+        "2.3.1": {
+          "text": "Mendarab dalam lingkungan fakta asas.",
+          "printed_page": 25
+        },
+        "2.3.2": {
+          "text": "Mendarab nombor satu digit dengan 10.",
+          "printed_page": 25
+        },
+        "2.4.1": {
+          "text": "Membahagi dalam lingkungan fakta asas.",
+          "printed_page": 26
+        },
+        "2.4.2": {
+          "text": "Membahagi sebarang nombor dua digit dengan 10.",
+          "printed_page": 26
+        },
+        "3.1.1": {
+          "text": "Mengenal pasti satu perdua, satu perempat, dua perempat dan tiga perempat.",
+          "printed_page": 27
+        },
+        "3.2.1": {
+          "text": "Menyebut, menulis dan menamakan pecahan wajar yang pengangkanya 1 hingga 9 dan penyebutnya 1 hingga 10.",
+          "printed_page": 27
+        },
+        "3.2.2": {
+          "text": "Membanding nilai dua pecahan wajar yang diberi.",
+          "printed_page": 27
+        },
+        "3.3.1": {
+          "text": "Menukar pecahan persepuluh kepada perpuluhan.",
+          "printed_page": 27
+        },
+        "3.3.2": {
+          "text": "Mewakilkan gambar rajah mengikut perpuluhan diberi.",
+          "printed_page": 27
+        },
+        "3.3.3": {
+          "text": "Membanding nilai dua perpuluhan yang diberi.",
+          "printed_page": 27
+        },
+        "4.1.1": {
+          "text": "Mengenal pasti mata wang Malaysia hingga RM100.",
+          "printed_page": 28
+        },
+        "4.1.2": {
+          "text": "Menentukan nilai wang hingga RM100.",
+          "printed_page": 28
+        },
+        "4.2.1": {
+          "text": "Menambah hingga tiga nilai wang dan hasil tambahnya hingga RM100.",
+          "printed_page": 28
+        },
+        "4.3.1": {
+          "text": "Menolak hingga tiga nilai wang dalam lingkungan RM100.",
+          "printed_page": 29
+        },
+        "4.4.1": {
+          "text": "Mendarab nilai wang dan hasil darabnya hingga RM100.",
+          "printed_page": 29
+        },
+        "4.5.1": {
+          "text": "Membahagi nilai wang dalam lingkungan RM100.",
+          "printed_page": 30
+        },
+        "5.1.1": {
+          "text": "Membaca dan menulis waktu dalam jam dan minit.",
+          "printed_page": 31
+        },
+        "5.1.2": {
+          "text": "Merekod waktu dalam jam dan minit.",
+          "printed_page": 31
+        },
+        "5.2.1": {
+          "text": "Menyatakan perkaitan hari dengan jam dan jam dengan minit.",
+          "printed_page": 31
+        },
+        "6.1.1": {
+          "text": "Mengenal unit panjang.",
+          "printed_page": 32
+        },
+        "6.1.2": {
+          "text": "Mengukur panjang.",
+          "printed_page": 32
+        },
+        "6.1.3": {
+          "text": "Menganggar panjang.",
+          "printed_page": 32
+        },
+        "6.2.1": {
+          "text": "Mengenal unit jisim.",
+          "printed_page": 32
+        },
+        "6.2.2": {
+          "text": "Menimbang objek.",
+          "printed_page": 32
+        },
+        "6.2.3": {
+          "text": "Menganggar jisim.",
+          "printed_page": 33
+        },
+        "6.3.1": {
+          "text": "Mengenal unit isi padu cecair.",
+          "printed_page": 33
+        },
+        "6.3.2": {
+          "text": "Menyukat isi padu cecair.",
+          "printed_page": 33
+        },
+        "6.3.3": {
+          "text": "Menganggar isi padu cecair.",
+          "printed_page": 33
+        },
+        "7.1.1": {
+          "text": "Mengenal pasti bentuk tiga dimensi berdasarkan huraian ciri-cirinya.",
+          "printed_page": 34
+        },
+        "7.1.2": {
+          "text": "Mengenal pasti bentuk asas bagi bentuk tiga dimensi.",
+          "printed_page": 34
+        },
+        "7.1.3": {
+          "text": "Mengenal pasti pelbagai bentangan bentuk tiga dimensi.",
+          "printed_page": 34
+        },
+        "7.2.1": {
+          "text": "Mengenal pasti bentuk dua dimensi berdasarkan huraian ciri-cirinya.",
+          "printed_page": 34
+        },
+        "7.2.2": {
+          "text": "Melukis bentuk dua dimensi.",
+          "printed_page": 34
+        },
+        "8.1.1": {
+          "text": "Mengumpul data berdasarkan situasi harian.",
+          "printed_page": 35
+        },
+        "8.2.1": {
+          "text": "Membaca dan mendapatkan maklumat dari carta palang.",
+          "printed_page": 35
+        }
+      }
+    },
+    "3": {
+      "sk": {
+        "1.1": "Nilai nombor",
+        "1.2": "Menganggar",
+        "1.3": "Membundarkan nombor",
+        "1.4": "Pola nombor",
+        "2.1": "Tambah dan tolak dalam lingkungan 10 000",
+        "2.2": "Darab dan bahagi dalam lingkungan 10 000",
+        "3.1": "Pecahan",
+        "3.2": "Perpuluhan",
+        "3.3": "Peratus",
+        "3.4": "Perkaitan antara pecahan, perpuluhan dan peratus",
+        "4.1": "Tambah dan tolak wang",
+        "4.2": "Darab dan bahagi wang",
+        "4.3": "Mata wang asing",
+        "4.4": "Simpanan dan perbelanjaan",
+        "5.1": "Waktu dalam jam, minit dan saat.",
+        "5.2": "Tambah dan tolak masa",
+        "5.3": "Darab dan bahagi masa",
+        "6.1": "Panjang",
+        "6.2": "Jisim",
+        "6.3": "Isipadu Cecair",
+        "7.1": "Prisma dan bukan prisma",
+        "7.2": "Bentuk poligon sekata",
+        "7.3": "Paksi simetri",
+        "8.1": "Koordinat pada sukuan pertama",
+        "9.1": "Mengumpul, mengelas dan menyusun data",
+        "9.2": "Carta pai"
+      },
+      "sp": {
+        "1.1.1(i)": {
+          "text": "Menamakan nombor hingga 10 000: Membilang seribu-seribu hingga 10 000 serta menulis dalam angka dan perkataan.",
+          "printed_page": 39
+        },
+        "1.1.1(ii)": {
+          "text": "Menamakan nombor hingga 10 000: Menyatakan nilai tempat dan nilai digit bagi sebarang nombor.",
+          "printed_page": 40
+        },
+        "1.1.2": {
+          "text": "Membandingkan nilai hingga tiga nombor.",
+          "printed_page": 40
+        },
+        "1.2.1": {
+          "text": "Memberi anggaran kuantiti yang munasabah.",
+          "printed_page": 42
+        },
+        "1.3.1": {
+          "text": "Membundarkan nombor bulat hingga ribu terdekat.",
+          "printed_page": 42
+        },
+        "1.4.1": {
+          "text": "Menyebut dan menulis pola nombor yang diberi secara tertib menaik dan menurun satu-satu hingga sepuluh-sepuluh, seratus-seratus dan seribu-seribu.",
+          "printed_page": 42
+        },
+        "1.4.2": {
+          "text": "Melengkapkan pelbagai pola nombor yang mudah.",
+          "printed_page": 42
+        },
+        "2.1.1": {
+          "text": "Menyelesaikan masalah tambah dan tolak melibatkan hingga tiga nombor dan hasil tambahnya dalam lingkungan 10 000 melibatkan situasi harian.",
+          "printed_page": 43
+        },
+        "2.1.2": {
+          "text": "Menyelesaikan masalah operasi bergabung tambah dan tolak dalam lingkungan 10 000 melibatkan situasi harian.",
+          "printed_page": 44
+        },
+        "2.2.1": {
+          "text": "Menyelesaikan masalah darab dan bahagi bagi sebarang nombor hingga empat digit dengan nombor satu digit, 10, 100 dan 1000, dan hasil darabnya hingga 10 000 melibatkan situasi harian.",
+          "printed_page": 44
+        },
+        "3.1.1": {
+          "text": "Menyatakan pecahan setara bagi pecahan wajar yang penyebutnya hingga 10.",
+          "printed_page": 45
+        },
+        "3.1.2": {
+          "text": "Menukar pecahan wajar kepada bentuk termudah, penyebutnya hingga 10.",
+          "printed_page": 46
+        },
+        "3.1.3": {
+          "text": "Menambah dan menolak dua pecahan wajar.",
+          "printed_page": 46
+        },
+        "3.1.4": {
+          "text": "Mengenal pasti pecahan tak wajar dan nombor bercampur melibatkan penyebutnya hingga 10.",
+          "printed_page": 47
+        },
+        "3.1.5": {
+          "text": "Menyatakan pecahan perseratus dalam perpuluhan.",
+          "printed_page": 47
+        },
+        "3.2.1": {
+          "text": "Membanding nilai dua perpuluhan melibatkan hingga dua tempat perpuluhan.",
+          "printed_page": 47
+        },
+        "3.2.2": {
+          "text": "Menambah dan menolak dua perpuluhan melibatkan hingga dua tempat perpuluhan, hasil tambahnya sehingga sifar perpuluhan sembilan sembilan.",
+          "printed_page": 47
+        },
+        "3.3.1": {
+          "text": "Mewakilkan peratus dalam petak seratus dan sebaliknya.",
+          "printed_page": 48
+        },
+        "3.3.2": {
+          "text": "Menyebut dan menulis satu peratus hingga seratus peratus.",
+          "printed_page": 48
+        },
+        "3.4.1": {
+          "text": "Membuat perkaitan antara pecahan, perpuluhan dan peratus .",
+          "printed_page": 48
+        },
+        "4.1.1": {
+          "text": "Menyelesaikan masalah tambah dan tolak melibatkan hingga tiga nilai wang dan hasil tambahnya hingga RM10 000.",
+          "printed_page": 49
+        },
+        "4.1.2": {
+          "text": "Menyelesaikan masalah operasi bergabung tambah dan tolak dalam lingkungan RM10 000 melibatkan situasi harian.",
+          "printed_page": 49
+        },
+        "4.2.1": {
+          "text": "Menyelesaikan masalah darab dan bahagi melibatkan nilai wang dengan nombor satu digit, 10, 100 dan 1000 dan hasil darabnya hingga RM10 000.",
+          "printed_page": 49
+        },
+        "4.3.1": {
+          "text": "Mengenal mata wang negara ASEAN.",
+          "printed_page": 50
+        },
+        "4.4.1": {
+          "text": "Menjelaskan keperluan dan kehendak sebagai asas kepada simpanan dan perbelanjaan.",
+          "printed_page": 50
+        },
+        "5.1.1": {
+          "text": "Membaca dan merekod waktu bagi sesuatu aktiviti.",
+          "printed_page": 51
+        },
+        "5.1.2": {
+          "text": "Menukar unit masa melibatkan jam dengan minit, dan minit dengan saat.",
+          "printed_page": 52
+        },
+        "5.2.1": {
+          "text": "Menyelesaikan ayat matematik tambah dan tolak hingga tiga nilai masa melibatkan jam, minit dan saat.",
+          "printed_page": 52
+        },
+        "5.2.2": {
+          "text": "Menyelesaikan masalah operasi bergabung tambah dan tolak nilai masa melibatkan jam, minit dan saat.",
+          "printed_page": 52
+        },
+        "5.3.1": {
+          "text": "Menyelesaikan ayat matematik darab dan bahagi melibatkan masa melibatkan jam, minit dan saat; dengan nombor satu digit.",
+          "printed_page": 53
+        },
+        "6.1.1": {
+          "text": "Menukar unit ukuran panjang melibatkan meter dan sentimeter.",
+          "printed_page": 54
+        },
+        "6.1.2": {
+          "text": "Menyelesaikan ayat matematik tambah dan tolak hingga tiga ukuran panjang melibatkan meter dan sentimeter.",
+          "printed_page": 54
+        },
+        "6.1.3": {
+          "text": "Menyelesaikan ayat matematik darab dan bahagi melibatkan ukuran panjang dengan nombor satu digit berkaitan meter dan sentimeter.",
+          "printed_page": 55
+        },
+        "6.2.1": {
+          "text": "Menukar unit ukuran jisim melibatkan kilogram dan gram.",
+          "printed_page": 56
+        },
+        "6.2.2": {
+          "text": "Menyelesaikan ayat matematik tambah dan tolak hingga tiga ukuran jisim melibatkan kilogram dan gram.",
+          "printed_page": 56
+        },
+        "6.2.3": {
+          "text": "Menyelesaikan ayat matematik darab dan bahagi melibatkan ukuran jisim dengan nombor satu digit dalam kilogram dan gram.",
+          "printed_page": 57
+        },
+        "6.3.1": {
+          "text": "Menukar unit isi padu cecair melibatkan liter dan mililiter.",
+          "printed_page": 57
+        },
+        "6.3.2": {
+          "text": "Menyelesaikan ayat matematik tambah dan tolak hingga tiga isi padu cecair melibatkan liter dan mililiter.",
+          "printed_page": 57
+        },
+        "6.3.3": {
+          "text": "Menyelesaikan ayat matematik darab dan bahagi melibatkan isi padu cecair dengan nombor satu digit dalam liter dan mililiter.",
+          "printed_page": 57
+        },
+        "7.1.1": {
+          "text": "Mengenal prisma segi empat sama, prisma segi empat tepat dan prisma segi tiga.",
+          "printed_page": 58
+        },
+        "7.1.2": {
+          "text": "Menyatakan ciri prisma segi empat sama, prisma segi empat tepat dan prisma segi tiga berdasarkan permukaan, tapak (base), bucu (vertex) dan tepi (edge).",
+          "printed_page": 58
+        },
+        "7.1.3": {
+          "text": "Membandingkan prisma dan bukan prisma berdasarkan permukaan, tapak, bucu dan tepi.",
+          "printed_page": 58
+        },
+        "7.2.1": {
+          "text": "Mengenal pasti bentuk poligon sekata bagi pentagon, heksagon, heptagon dan oktagon.",
+          "printed_page": 59
+        },
+        "7.2.2": {
+          "text": "Menghasilkan corak berasaskan bentuk poligon sekata.",
+          "printed_page": 59
+        },
+        "7.3.1": {
+          "text": "Mengenal pasti dan melukis paksi simetri.",
+          "printed_page": 59
+        },
+        "8.1.1": {
+          "text": "Mengenal pasti kedudukan objek berdasarkan titik rujukan dengan menggunakan ayat yang sesuai.",
+          "printed_page": 60
+        },
+        "8.1.2": {
+          "text": "Mengenal pasti objek berdasarkan kedudukan pada paksi mengufuk dan paksi mencancang.",
+          "printed_page": 60
+        },
+        "8.1.3": {
+          "text": "Menentukan kedudukan objek pada paksi mengufuk dan paksi mencancang.",
+          "printed_page": 60
+        },
+        "9.1.1": {
+          "text": "Mengumpul, mengelas dan menyusun data berdasarkan situasi harian.",
+          "printed_page": 61
+        },
+        "9.2.1": {
+          "text": "Membaca dan mendapatkan maklumat dari carta pai.",
+          "printed_page": 61
+        },
+        "9.2.2": {
+          "text": "Membuat perkaitan antara piktograf, carta palang dan carta pai bagi mewakili suatu maklumat.",
+          "printed_page": 61
+        }
+      }
+    }
+  }
+}

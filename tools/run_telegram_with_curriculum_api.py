@@ -853,3 +853,8 @@ MATEMATIK_SJKC_T2_RPH_ACTIVE = install_year_two(
     telegram_runtime, matematik_sjkc_t2, "sjkc2", "MATEMATIK_SJKC_T2_RPH_ACTIVE",
 )
 print("Matematik SJKC Tahun 2 RPH active:", MATEMATIK_SJKC_T2_RPH_ACTIVE, flush=True)
+
+
+from web.english_rph_standard_descriptions import install as install_english_standard_descriptions
+
+install_english_standard_descriptions(telegram_runtime)

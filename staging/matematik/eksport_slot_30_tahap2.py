@@ -96,7 +96,7 @@ def short_document(year, plan, week, source):
         ('Lesson / tempoh', f'Lesson {plan.lesson:03d} · 30 minit'),
         ('Tarikh RPT', f"M{week['minggu']:02d} · A {display_dates(week['A'])} · B {display_dates(week['B'])}"),
         ('Maklumat kelas', 'Kelas ______ · Tarikh ______ · Masa ______ · Murid ______'),
-        ('SK / SP', f'SK {sk} · SP {plan.sp}'),
+        ('SK / SP', f"SK {sk} · SP {source['SP'].strip()}"),
         ('Rujukan', f'DSKP Matematik Tahun {year} · Buku Teks SK, hlm. {plan.pages}'),
         ('Objektif', f'Murid dapat {plan.title} seperti diperincikan dalam evidens PBD.'),
         ('Bahan', plan.materials),

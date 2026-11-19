@@ -22,6 +22,7 @@ from web.sains_y5_83_activity_bank_draf_20261107 import BANK
 ROOT = Path(__file__).resolve().parents[3]
 SOURCE = Path(__file__).with_name("agihan_2027.json")
 SPECIFIC = Path(__file__).with_name("aktiviti_khusus.json")
+PROCESS_STANDARDS = Path(__file__).with_name("kemahiran_proses_dskp.json")
 CALENDAR = ROOT / "rpt_2027/takwim_pdp_2027_ab_draf.json"
 RPT_STEM = "CikguLaju_RPT_Sains_SK_Tahun5_2027_Semakan_Guru"
 DURATIONS = {30: (3, 7, 8, 9, 3), 60: (5, 16, 19, 15, 5)}
@@ -167,6 +168,7 @@ def build_source():
     custom = {int(i): value for i, value in json.loads(SPECIFIC.read_text(encoding="utf-8")).items()}
     calendar = json.loads(CALENDAR.read_text(encoding="utf-8"))["minggu"]
     content_standards = checked_statements()
+    process_standards = json.loads(PROCESS_STANDARDS.read_text(encoding="utf-8"))
     book_pages = checked_book_pages()
     rows = {row["id"]: row for row in data["pdp"]}
     if list(rows) != list(range(1, 117)) or len(rows) != len(data["pdp"]):
@@ -188,6 +190,9 @@ def build_source():
             row = rows[i]
             sp = row["sp"]
             is_kps = sp.startswith("1.1.")
+            standard = ({"sk_title": process_standards["sk_text"],
+                         "sp_text": process_standards["sp"][sp]}
+                        if is_kps else content_standards[sp])
             if not row["unit"].startswith(f"Unit {sp.split('.')[0]}:"):
                 raise ValueError(f"Unexpected unit for PdP {i:03d}")
             if row["review"] != (sp in core_codes):
@@ -204,6 +209,7 @@ def build_source():
                     raise ValueError(f"Missing audited textbook context for PdP {i:03d}")
             row.update(
                 sk=sp.rsplit(".", 1)[0], week=number,
+                sk_text=standard["sk_title"], sp_text=standard["sp_text"],
                 dates=f"A {date_range(week['A'])} · B {date_range(week['B'])}",
                 objective=pbd, pbd=pbd, materials=materials, safety=safety,
             )
@@ -317,7 +323,8 @@ def render_rph(stream, row, renderer, *, teacher=None):
         ("Nombor dan tempoh", f"PdP {row['id']:03d} · {row['minutes']} minit"),
         ("Julat RPT", row["dates"]),
         ("Kelas, tarikh dan masa", session),
-        ("Standard", f"SK {row['sk']} · SP {row['sp']}"),
+        ("Standard Kandungan", f"{row['sk']} {row['sk_text']}"),
+        ("Standard Pembelajaran", f"{row['sp']} {row['sp_text']}"),
         ("Buku teks", f"Buku Teks Sains Tahun 5 SK, m/s {row['pages']}"),
         ("Objektif", row["objective"]),
         ("Bahan", row["materials"]),
