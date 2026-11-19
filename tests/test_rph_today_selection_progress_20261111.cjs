@@ -100,3 +100,37 @@ update();
 assert.equal(ctx.generateAll.disabled, true);
 assert.match(ctx.allStatus.textContent, /Tiada slot dengan bahan disahkan/);
 console.log("RPH_HARI_INI_SELECTION_PROGRESS: PASS (no API, no quota, unchanged flow)");
+
+const labelFunctions = source.slice(source.indexOf(" function lessonPickerLabel("),
+  source.indexOf(" const summaryStatus="));
+vm.runInNewContext(labelFunctions, ctx);
+assert.equal(ctx.lessonPickerLabel("SCIENCE_DLP"), "Lesson");
+assert.equal(ctx.nativeLessonLabel({label: "Lesson 46 • Sources of Basic Materials",
+  textbook_ref: "Textbook pp. 142–144"}, "SCIENCE_DLP"),
+  "Lesson 46 • Sources of Basic Materials • Textbook pp. 142–144");
+assert.equal(ctx.nativeLessonLabel({label: "Review 08 • Materials Review"}, "SCIENCE_DLP"),
+  "Review 08 • Materials Review");
+assert.equal(ctx.nativeLessonLabel({label: "Review 08 • Materials Review"}, "SCIENCE"), "");
+assert.equal(ctx.nativeLessonLabel({label: "Review 11 • Unknown review"}, "SCIENCE_DLP"), "");
+
+const initialize = source.slice(source.indexOf(" async function initialize("),
+  source.indexOf(" function makeChoice("));
+const selected = [];
+const requested = [];
+Object.assign(ctx, {
+  requestId: 3, updateAll: () => {},
+  advance: async (choice, step) => selected.push([choice.slot.subject_code, step]),
+  sourceOptions: async (...args) => { requested.push(args); return [{value: "SCIENCE"}]; },
+});
+vm.runInNewContext(initialize, ctx);
+(async () => {
+  for (const [subject_code, curriculum] of [["SCIENCE_DLP", "dlp"], ["SCIENCE", "kssr"]]) {
+    const choice = {slot: {year: 4, subject_code, curriculum},
+      message: {textContent: ""}, ticket: 3};
+    await ctx.initialize(choice);
+    assert.equal(choice.busy, false);
+  }
+  assert.deepEqual(selected, [["SCIENCE_DLP", "subject"], ["SCIENCE", "subject"]]);
+  assert.equal(requested.length, 1);
+  assert.equal(requested[0][1], "subjects");
+})().catch(error => { console.error(error); process.exitCode = 1; });
