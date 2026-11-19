@@ -152,7 +152,7 @@ async function main(){
   }
 
   for(const year of [2,3]){
-    const dpkKey="matematik_dpk3:"+year;
+    const dpkKey="matematik_dpk:"+year;
     const dpkRaw=fs.readFileSync(path.join(root,"..","matematik",
       "CikguLaju_RPT_Matematik_SK_Tahun"+year+"_DPK_Edisi3_2027.pdf"));
     const dpkHash=crypto.createHash("sha256").update(dpkRaw).digest("hex");

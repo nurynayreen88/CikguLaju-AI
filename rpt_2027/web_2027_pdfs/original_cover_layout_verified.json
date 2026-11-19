@@ -1072,7 +1072,7 @@
         394
       ]
     },
-    "matematik_dpk3:2": {
+    "matematik_dpk:2": {
       "version": 1,
       "format": "PDF A4 landscape, original page 1; coordinates measured from PyMuPDF",
       "page_width": 841.8898,
@@ -1146,10 +1146,10 @@
       "cover_hash_synced_to_manifest_after_20261110_pdf_updates": true,
       "status": "ALIGNED_RPT_PDF_COVER",
       "source_sha256_by_subject_year": {
-        "matematik_dpk3:2": "04f5e56caf8f942a2d9e7fc55e0b5c2fc3371702505a0c756c46d403c4bc32c9"
+        "matematik_dpk:2": "04f5e56caf8f942a2d9e7fc55e0b5c2fc3371702505a0c756c46d403c4bc32c9"
       }
     },
-    "matematik_dpk3:3": {
+    "matematik_dpk:3": {
       "version": 1,
       "format": "PDF A4 landscape, original page 1; coordinates measured from PyMuPDF",
       "page_width": 841.8898,
@@ -1223,7 +1223,7 @@
       "cover_hash_synced_to_manifest_after_20261110_pdf_updates": true,
       "status": "ALIGNED_RPT_PDF_COVER",
       "source_sha256_by_subject_year": {
-        "matematik_dpk3:3": "2727448464d17996e29d10143d585bfb36517acc3ba7d5c0bc72c8f71ddcf5c6"
+        "matematik_dpk:3": "2727448464d17996e29d10143d585bfb36517acc3ba7d5c0bc72c8f71ddcf5c6"
       }
     }
   },

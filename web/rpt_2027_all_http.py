@@ -28,7 +28,7 @@ from rpt_2027.sjkt.matematik import documents as matematik_sjkt
 
 ROOT = Path(__file__).resolve().parents[1] / "rpt_2027"
 YEARS = tuple(range(2,7))
-MATH_DPK_CODE = "matematik_dpk3"
+MATH_DPK_CODE = "matematik_dpk"
 V2 = "web_2027_pdfs"
 SJK_RPTS = {
     "bahasa-cina": bahasa_cina_sjkc,

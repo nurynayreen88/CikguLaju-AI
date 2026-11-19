@@ -48,7 +48,7 @@ class AllSubjectRPTTests(unittest.TestCase):
         config = loads((root / "web_2027_pdfs/original_cover_layout_verified.json").read_text())
         layouts = config["science_year6_covers"] | config["aligned_rpt_covers"]
         catalog = client.get("/api/rpt/2027/catalog").get_json()
-        for subject, year in (("matematik_dpk3", 2), ("matematik_dpk3", 3),
+        for subject, year in (("matematik_dpk", 2), ("matematik_dpk", 3),
                               ("sains", 5), ("sains", 6), ("science_dlp", 5),
                               ("mathematics_dlp", 5), ("science_dlp", 6), ("mathematics_dlp", 6)):
             with self.subTest(subject=subject, year=year):
