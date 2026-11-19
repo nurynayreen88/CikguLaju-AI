@@ -1476,6 +1476,7 @@ function showRphAction(){
 const curriculum=document.getElementById("curriculum"),year=document.getElementById("year"),subject=document.getElementById("subject"),lesson=document.getElementById("lesson"),catalogStatus=document.getElementById("catalog-status");
 const unit=document.getElementById("unit"),component=document.getElementById("component"),theme=document.getElementById("theme"),topic=document.getElementById("topic");
 const subjectVariants=window.cikgulajuSubjectVariants||[];
+const kp2027ScienceNotice="Komponen Sains Tahun 1 KP2027 berada dalam Alam dan Manusia.";
 function canSelectRph(){
  return curriculum.value==="kssr"||dlpRphDownload()||
   (curriculum.value==="sjkc"&&["2","3"].includes(year.value)&&subject.value==="MATH_SJKC")||
@@ -1722,7 +1723,7 @@ year.addEventListener("change",async()=>{
  if(!targetYear)return;
  if(choice==="kp2027"){
   updateSelectionHelp("Tahun 1 (KP Baharu) akan datang.");
-  catalogStatus.textContent="Bahan Kurikulum Persekolahan 2027 masih dalam semakan.";
+  catalogStatus.textContent="Bahan KP2027 Tahun 1 sedang disediakan. "+kp2027ScienceNotice;
   return;
  }
  if(choice==="dlp"){
@@ -1733,7 +1734,7 @@ year.addEventListener("change",async()=>{
   })),"Pilih Subjek");
   showStep(subject,true);
   if(targetYear==="1"){
-   catalogStatus.textContent="Komponen Sains Tahun 1 KP2027 berada dalam Alam dan Manusia.";
+   catalogStatus.textContent=kp2027ScienceNotice;
   }
   updateSelectionHelp("Pilih subjek DLP.");
   return;
@@ -1802,7 +1803,8 @@ subject.addEventListener("change",async()=>{
    }catch(error){if(dlpRphDownload())catalogStatus.textContent=error.message;}
   }else{
    const yearLabel="Tahun "+targetYear+(targetYear==="1"?" (KP Baharu)":"");
-   catalogStatus.textContent="Bahan "+selectedSubject.label+" "+yearLabel+" sedang disediakan.";
+   catalogStatus.textContent="Bahan "+selectedSubject.label+" "+yearLabel+" sedang disediakan."
+    +(targetYear==="1"?" "+kp2027ScienceNotice:"");
    updateSelectionHelp("Dalam Penyediaan.");
   }
   return;
