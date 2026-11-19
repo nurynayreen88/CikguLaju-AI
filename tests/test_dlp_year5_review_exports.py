@@ -40,6 +40,10 @@ class DLPYear5ReviewExports(unittest.TestCase):
         self.assertEqual(Counter(plan["id"][0] for plan in plans), {"L": lessons, "R": reviews})
         data = json.loads(module.DATA.read_text(encoding="utf-8"))
         corrections = data.get("schedule_corrections", data.get("reference_corrections"))
+        descriptions = (
+            json.loads(module.STANDARD_DESCRIPTIONS.read_text(encoding="utf-8"))
+            if subject == "Science" else None
+        )
         changed = set()
         minutes = 0
         for original, updated, plan in zip(source, rows(rpt), plans, strict=True):
@@ -51,6 +55,16 @@ class DLPYear5ReviewExports(unittest.TestCase):
             self.assertEqual(before[4].splitlines()[-1], after[4].splitlines()[-1])
             self.assertEqual(after[3], plan["objective"])
             self.assertEqual(after[4].splitlines()[0].replace("TB ", "Textbook ", 1), plan["reference"])
+            if descriptions is not None:
+                expected_codes = (
+                    re.findall(r"\d+\.\d+\.\d+", before[2]) if plan["id"].startswith("L")
+                    else data["review_standards"][plan["id"]]
+                )
+                content_codes = tuple(dict.fromkeys(code.rsplit(".", 1)[0] for code in expected_codes))
+                expected_content = " · ".join(f"{code} {descriptions['cs'][code]}" for code in content_codes)
+                expected_learning = " · ".join(f"{code} {descriptions['ls'][code]}" for code in expected_codes)
+                self.assertEqual(plan["content_standards"], expected_content)
+                self.assertEqual(plan["learning_standards"], expected_learning)
             if before != after:
                 changed.add(plan["id"])
             duration = int(after[4].splitlines()[-1].removesuffix(" min"))
@@ -80,23 +94,28 @@ class DLPYear5ReviewExports(unittest.TestCase):
                     word = Document(folder / f"{stem}.docx")
                     self.assertEqual(word.tables[2].rows[0].cells[1].text, plan["evidence"])
                     table = word.tables[1]
+                    fields = {row.cells[0].text: row.cells[1].text for row in word.tables[0].rows}
                     if subject == "Mathematics":
-                        fields = {a.text: b.text for a, b in (row.cells for row in word.tables[0].rows)}
                         self.assertEqual(fields["Topic"], plan["title"])
                         text = "\n".join(row.cells[1].text for row in table.rows[1:])
                         for _, teacher, pupils in plan["phases"]:
                             self.assertIn(f"Teacher: {teacher}\nPupils: {pupils}", text)
                     else:
+                        self.assertEqual(fields["Content Standards"], plan["content_standards"])
+                        self.assertEqual(fields["Learning Standards"], plan["learning_standards"])
                         self.assertEqual(word.paragraphs[2].text, plan["title"])
                         self.assertEqual([tuple(cell.text for cell in row.cells)
                                           for row in table.rows[1:]],
                                          [(phase.rsplit(" · ", 1)[0], teacher, pupils)
                                           for phase, teacher, pupils in plan["phases"]])
+                    standard_fields = (
+                        ("content_standards", "learning_standards") if subject == "Science" else ("standards",)
+                    )
                     for pdf_folder in (folder, word_pdfs) if word_pdfs.exists() else (folder,):
                         self.assertNotRegex(stem.replace("_", " "), INTERNAL_LABEL)
                         content = self.check_pdf(pdf_folder / f"{stem}.pdf", 1, (595, 842))
                         self.assertIn(normalized(plan["label"].rsplit(" · ", 1)[0]), content)
-                        for field in ("title", "dates", "standards", "reference", "objective", "evidence"):
+                        for field in ("title", "dates", *standard_fields, "reference", "objective", "evidence"):
                             self.assertIn(normalized(plan[field]), content)
 
     def check_pdf(self, path, count, size):

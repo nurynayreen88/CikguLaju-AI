@@ -24,3 +24,10 @@ RPH Lesson 05 (LS 1.1.9–1.1.11) menggunakan tempoh dari gelembung terlepas hin
 Jalankan `PYTHONPATH=. python -m staging.dlp.year5.render_science --output /tmp/rph-science-dlp-y5` dari akar repositori. Penjana menyemak versi RPT sumber dan mengeksport RPT semakan Word serta 70 RPH Word/PDF. Semakan setempat meliputi 58 sesi 60 minit dan 12 sesi 30 minit. Setiap RPH memuatkan tindakan guru dan murid, PBD dengan contoh jawapan dan refleksi dalam satu halaman A4.
 
 **HOLD semakan guru.** RPT semakan disediakan sebagai salinan melalui penjana. Penerbitan set ini di Web dan Telegram menunggu pengesahan kandungan dan CI. Muat turun melalui akaun guru belum diuji.
+
+
+## Deskripsi Content Standards dan Learning Standards
+
+20 November 2026. Pindaan ini menambah penerangan Inggeris untuk **19 CS dan 95 LS** ke dalam 60 Lesson dan 10 Review. Kod dan skop deskripsi disemak terhadap jadual standard pada halaman bercetak 42–68 dalam DSKP KPM edisi Inggeris April 2019. Halaman standard sepadan antara [sumber DSKP](https://anyflip.com/ittl/gsxj/basic/51-88/) dengan [salinan rujukan kedua](https://anyflip.com/nuzm/dgyq/basic/51-88). Setiap Review menggunakan LS yang ditetapkan dan telah diajar dalam unit yang sama, serta memaparkan CS induknya.
+
+Semakan setempat menjana 140 respons Word/PDF daripada laluan dalaman yang digunakan oleh Web. Semua fail memaparkan kod dan deskripsi lengkap, halaman buku, waktu kelas yang dibekalkan dan refleksi. Cetakan Word dan fail PDF masing-masing lulus satu halaman A4. Ujian regresi eksport Matematik dan Science Year 5 turut lulus.
