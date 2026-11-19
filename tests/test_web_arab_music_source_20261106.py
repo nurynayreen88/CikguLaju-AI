@@ -31,7 +31,7 @@ class DraftWebQA(unittest.TestCase):
             with self.subTest(year=y,subject=subject),self.assertRaises(ValueError):
                 _check(y,subject,u,lesson)
 
-    @patch("web.native_telegram_other_draft_client.draft_available",return_value=("word",))
+    @patch("web.native_telegram_other_draft_client.draft_available",return_value=(("word",), "DRAF"))
     @patch("web.unified_rph_web._has_paid_access",return_value=True)
     @patch("web.unified_rph_web._account",return_value=({"telegram_user_id":55},None))
     def test_arab_source_availability_shows_draft_word_only(self,*_):
@@ -41,7 +41,7 @@ class DraftWebQA(unittest.TestCase):
         self.assertEqual(result.get_json()["formats"],["word"])
         self.assertEqual(result.get_json()["download_allowed"],True)
 
-    @patch("web.native_telegram_other_draft_client.draft_available",return_value=("word",))
+    @patch("web.native_telegram_other_draft_client.draft_available",return_value=(("word",), "DRAF"))
     @patch("web.unified_rph_web._has_paid_access",return_value=True)
     @patch("web.unified_rph_web._account",return_value=({"telegram_user_id":55},None))
     def test_arab_pdf_denied_before_native_renderer(self,*_):
@@ -51,7 +51,7 @@ class DraftWebQA(unittest.TestCase):
         self.assertEqual(result.get_json()["code"],"DRAFT_RPH_FORMAT_NOT_VERIFIED")
         render.assert_not_called()
 
-    @patch("web.native_telegram_other_draft_client.draft_available",return_value=("word",))
+    @patch("web.native_telegram_other_draft_client.draft_available",return_value=(("word",), "DRAF"))
     @patch("web.unified_rph_web._has_paid_access",return_value=False)
     @patch("web.unified_rph_web._account",return_value=(
         {"telegram_user_id":55,"free_remaining":0},None))
@@ -66,7 +66,7 @@ class DraftWebQA(unittest.TestCase):
         self.assertEqual(word.get_json()["code"],"FREE_TRIAL_EXHAUSTED")
         render.assert_not_called()
 
-    @patch("web.native_telegram_other_draft_client.draft_available",return_value=("word","pdf"))
+    @patch("web.native_telegram_other_draft_client.draft_available",return_value=(("word","pdf"), "DRAF"))
     @patch("web.unified_rph_web._has_paid_access",return_value=True)
     @patch("web.unified_rph_web._account",return_value=({"telegram_user_id":55},None))
     def test_music_native_word_download(self,*_):
@@ -90,6 +90,26 @@ class DraftWebQA(unittest.TestCase):
                      "DRAF tersedia melalui sumber Telegram",
                      "Tiada format RPH disahkan untuk PdP ini."):
             self.assertIn(text,page)
+
+    @patch("web.unified_rph_web._has_paid_access", return_value=True)
+    @patch("web.unified_rph_web._account", return_value=({"telegram_user_id":55}, None))
+    @patch("web.native_telegram_other_draft_client._read")
+    def test_only_reviewed_arabic_lesson_can_be_ready(self, read, *_):
+        ready = {"value":"001", "label":"PdP 001 — محاكاة الأصوات",
+                 "status":"READY", "formats":["word"]}
+        draft = {"value":"002", "label":"PdP 002 — Kenal bunyi (DRAF)",
+                 "status":"DRAF", "formats":["word"]}
+        read.return_value = {"source":"telegram-provisional-subjects-2027-v1",
+                             "status":"DRAF", "items":[ready, draft]}
+        self.assertEqual(list_draft_lessons(2, "ARAB", "u01"), [ready, draft])
+        read.return_value = {"available":True, "generator":"telegram-native",
+                             "status":"READY", "formats":["word"]}
+        result = self.client.get("/api/web/rph/availability", query_string=self.query)
+        self.assertEqual(result.get_json()["status"], "READY")
+        self.assertEqual(result.get_json()["formats"], ["word"])
+        other = self.client.get("/api/web/rph/availability",
+                                query_string={**self.query, "lesson":"002"})
+        self.assertEqual(other.status_code, 503)
 
 
 if __name__=="__main__":

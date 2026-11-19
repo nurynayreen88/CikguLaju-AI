@@ -21,6 +21,15 @@ on:
       - tests/test_web_native_sequence_rph_bridge.py
       - tests/test_web_rph_availability.py
       - .github/workflows/web-other-primary-native-rph-qa.yml
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - web/native_telegram_other_draft_client.py
+      - web/unified_rph_web.py
+      - tools/run_web_v1_preview.py
+      - tests/test_web_arab_music_source_20261106.py
+      - tests/test_web_draft_subject_options_20261106.py
+      - .github/workflows/web-other-primary-native-rph-qa.yml
   workflow_dispatch:
 permissions:
   contents: read

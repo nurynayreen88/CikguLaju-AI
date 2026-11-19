@@ -25,8 +25,10 @@ class DraftMenuTests(unittest.TestCase):
             patch("web.native_telegram_other_draft_client.list_draft_units"),
             patch("web.native_telegram_other_draft_client.list_draft_lessons"),
             patch("web.native_telegram_sejarah_2027_client.list_sejarah_units"),
+            patch("web.native_telegram_rbt_2027_client.list_rbt_units", return_value=[]),
         ]
-        self.config,self.auth,self.session,self.user,self.native,self.units,self.lessons,self.history=[p.start() for p in self.patches]
+        (self.config,self.auth,self.session,self.user,self.native,self.units,
+         self.lessons,self.history,_)=[p.start() for p in self.patches]
         self.native.return_value.list_subjects.return_value=[
             {"value":"BM","label":"Bahasa Melayu"}]
         self.units.return_value=[{"value":"u01","label":"Unit 1: Buku","status":"DRAF"}]
@@ -61,6 +63,16 @@ class DraftMenuTests(unittest.TestCase):
         codes={x["value"] for x in res.get_json()}
         self.assertNotIn("ARAB",codes)
         self.assertNotIn("MUZIK",codes)
+
+    def test_arabic_y2_without_subject_draft_label_when_unit_has_ready_pdp(self):
+        self.units.side_effect = lambda year, subject: [
+            {"value":"u01", "label":"Unit 1", "status":"DRAF",
+             "has_ready_lessons":(year, subject) == (2, "ARAB")}
+        ]
+        res = self.client.get("/api/options?kind=subjects&year=2")
+        labels = {item["value"]:item["label"] for item in res.get_json()}
+        self.assertEqual(labels["ARAB"], "Bahasa Arab")
+        self.assertEqual(labels["MUZIK"], "Pendidikan Muzik (DRAF)")
 
     def test_native_units_and_pdp_do_not_fallback_to_rpt(self):
         unit=self.client.get("/api/options?kind=units&year=2&subject=ARAB")
