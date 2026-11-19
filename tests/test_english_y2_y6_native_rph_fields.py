@@ -16,7 +16,7 @@ from web.english_y2_y3_standard_runtime import (
     SOW_INDEX, enrich_rows, install as install_y2_y3, _year_and_lesson,
 )
 from web.english_y4_standalone_runtime import adapt_rows as year4_rows
-from web.english_rph_standard_descriptions import describe_rows
+from web.english_rph_standard_descriptions import describe_rows, install as install_standard_descriptions
 from web.english_y5_standalone_runtime import (
     CHOICE_LESSONS as Y5_TEACHER_CHOICES,
     RELEASE_FLAG as Y5_RELEASE_FLAG,
@@ -51,6 +51,19 @@ class CrossYearEnglishDocumentRows(unittest.TestCase):
         self.assertEqual(describe_rows(6, teacher_choice, fixed_lesson=choice), teacher_choice)
         inconsistent = {"MAIN LEARNING STANDARD": "4.2.1", "MAIN CONTENT STANDARD": "5.1"}
         self.assertEqual(describe_rows(2, inconsistent), inconsistent)
+
+    def test_word_compaction_is_limited_to_four_a4_overflows(self):
+        runtime = types.SimpleNamespace(
+            _rph_rows=lambda *_: {},
+            create_word_file=lambda *_: "lesson.docx",
+            _is_english_subject=lambda state: state.get("subject") == "English",
+        )
+        install_standard_descriptions(runtime)
+        with patch("web.english_y6_word_a4_runtime.compact_word_file") as compact:
+            for year, lesson in ((2, 15), (2, 20), (4, 25), (4, 29), (2, 19), (5, 25)):
+                state = {"task": "rph", "subject": "English", "year": f"Tahun {year}", "lesson_no": lesson}
+                self.assertEqual(runtime.create_word_file(state), "lesson.docx")
+            self.assertEqual(compact.call_count, 4)
 
     def test_year2_year3_paired_sow_document_coverage(self):
         counts = {}

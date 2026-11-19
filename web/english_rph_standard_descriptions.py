@@ -10,6 +10,7 @@ DESCRIPTIONS = ROOT / "rph_standalone/english/kssr_standard_descriptions.json"
 SOW_INDEX = ROOT / "audits/english_primary_2_6_official_sow_index_20261103.json"
 CONTENT_CODE = re.compile(r"(?<![\d.])[1-5]\.\d(?!\d|\.\d)")
 LEARNING_CODE = re.compile(r"(?<![\d.])[1-5]\.\d\.\d(?!\d|\.\d)")
+COMPACT_WORD_LESSONS = {2: {15, 20}, 4: {25, 29}}
 
 
 @lru_cache(maxsize=1)
@@ -51,12 +52,35 @@ def describe_rows(year, rows, *, fixed_lesson=None):
 def install(runtime):
     previous = runtime._rph_rows
 
-    def rows_with_descriptions(state, *args, **kwargs):
-        rows = previous(state, *args, **kwargs)
-        if not isinstance(rows, dict) or not runtime._is_english_subject(state):
-            return rows
+    def primary_year(state):
+        if not runtime._is_english_subject(state):
+            return None
         year_label = str(state.get("year") or state.get("year_label") or "").strip()
         year = re.fullmatch(r"(?:(?:Tahun|Year)\s+)?([2-6])(?:\s*\(SK\))?", year_label, re.I)
-        return describe_rows(int(year[1]), rows, fixed_lesson=state.get("_web_english_standard_lesson")) if year else rows
+        return int(year[1]) if year else None
+
+    def rows_with_descriptions(state, *args, **kwargs):
+        rows = previous(state, *args, **kwargs)
+        if not isinstance(rows, dict) or not isinstance(state, dict):
+            return rows
+        return describe_rows(primary_year(state), rows, fixed_lesson=state.get("_web_english_standard_lesson"))
 
     runtime._rph_rows = rows_with_descriptions
+    previous_word = getattr(runtime, "create_word_file", None)
+    if not callable(previous_word):
+        return
+
+    def word_with_descriptions(state, *args, **kwargs):
+        path = previous_word(state, *args, **kwargs)
+        if not isinstance(state, dict) or str(state.get("task") or "").casefold() != "rph":
+            return path
+        targets = COMPACT_WORD_LESSONS.get(primary_year(state), ())
+        lesson = state.get("lesson_no") or state.get("textbook_lesson_no") or state.get("lesson")
+        number = re.fullmatch(r"[0-9]{1,3}", str(lesson or "").strip())
+        if number and int(number[0]) in targets:
+            from web.english_y6_word_a4_runtime import compact_word_file
+
+            compact_word_file(path)
+        return path
+
+    runtime.create_word_file = word_with_descriptions
