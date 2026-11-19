@@ -138,7 +138,8 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         document = Document(BytesIO(self.documents[0][1]))
         self.assertEqual(document.styles["Title"].font.name, "Source Serif 4 Semibold")
         self.assertEqual(document.styles["Normal"].font.name, "Source Sans 3")
-        self.assertEqual(document.paragraphs[2].style.name, "Title")
+        self.assertEqual(document.paragraphs[0].style.name, "Title")
+        self.assertEqual(document.paragraphs[0].text, "RANCANGAN PENGAJARAN HARIAN")
         reflection = next(row for row in document.tables[-1].rows if row.cells[0].text.startswith("Refleksi"))
         self.assertIn("murid mencapai objektif", reflection.cells[0].text)
         self.assertEqual(reflection.cells[0]._tc.grid_span, 2)
@@ -149,6 +150,24 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         for operands, operator in page.get_contents().operations:
             if operator in (b"rg", b"RG"):
                 self.assertIn(tuple(operands), ((0, 0, 0), (1, 1, 1)))
+
+    def test_math_year2_pdp017_has_a_full_subtraction_lesson(self):
+        word, pdf = self._select("dp2", "02", "SK27-DPK3-MATH-Y2-L017")
+        self.click(word)
+        self.click(pdf)
+        doc = Document(BytesIO(self.documents[0][1]))
+        fields = {row.cells[0].text: row.cells[1].text for row in doc.tables[0].rows}
+        self.assertIn("SP 2.2.1 Menolak hingga tiga nombor", fields["Standard Pembelajaran"])
+        self.assertIn("Buku Aktiviti, hlm. 44–48", fields["Rujukan"])
+        self.assertIn("2 daripada 2", fields["Kriteria Kejayaan"])
+        stages = doc.tables[1].rows[1:]
+        self.assertEqual(sum(int(row.cells[0].text.splitlines()[-1].split()[0]) for row in stages), 60)
+        self.assertIn("14 puluh dan 12 sa", stages[1].cells[2].text)
+        self.assertIn("531 − 247 dan 620 − 156", stages[3].cells[1].text)
+        page, = PdfReader(BytesIO(self.documents[1][1])).pages
+        text = " ".join(page.extract_text().split())
+        for fragment in ("Hasil 284 dan 464", "Pemulihan", "Pengayaan", "Fokus susulan"):
+            self.assertIn(fragment, text)
 
     def test_every_exact_selection_can_send_word_and_pdf(self):
         keys = [key for key in self.buttons(self.click("sk27:home")) if key.startswith("sk27:set:")]

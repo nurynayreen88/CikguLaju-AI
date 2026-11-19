@@ -6,7 +6,7 @@ from pathlib import Path
 
 from dlp_year2_rph import _pdf, _word
 from staging.matematik.eksport_agihan import display_dates
-from staging.matematik.tahun2 import eksport_unit_01 as unit_one
+from staging.matematik.tahun2 import eksport_unit_01 as unit_one, lesson_017
 
 
 SOURCE = Path(__file__).resolve().parent
@@ -142,6 +142,8 @@ def document(unit, info, plan, slot):
         ('Objektif', f'Murid dapat {title[0].lower() + title[1:]} dan menunjukkan hasil yang sepadan dalam tugasan PBD.'),
         ('Bahan', materials),
     ]
+    if unit == 2 and number == 17:
+        return lesson_017.document(heading, details)
     activities = [('Fasa', 'Tindakan guru', 'Tindakan murid')]
     actions = (
         INTRO[unit],
@@ -163,7 +165,7 @@ def export(chapters, schedule, output):
             parts = document(unit, info, plan, schedule[number])
             for extension, renderer in (('docx', _word), ('pdf', _pdf)):
                 with (output / f'CikguLaju_Matematik_T2_Lesson_{number:03d}.{extension}').open('wb') as stream:
-                    renderer(stream, *parts)
+                    renderer(stream, *parts, formal=True)
 
 
 def main():

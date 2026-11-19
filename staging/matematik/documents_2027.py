@@ -120,7 +120,7 @@ def render_download(plan, fmt, teacher):
     reflection = [(label, notes if label == "Refleksi" and notes else value)
                   for label, value in reflection]
     stream = BytesIO()
-    renderer(stream, heading, fields, activities, reflection)
+    renderer(stream, heading, fields, activities, reflection, formal=plan.dpk)
     return stream.getvalue()
 
 

@@ -142,7 +142,7 @@ def render(subject, unit, lesson, fmt, teacher):
     return output.getvalue()
 
 
-def _word(output, heading, details, activities, reflection):
+def _word(output, heading, details, activities, reflection, *, formal=False):
     from docx import Document
     from docx.enum.text import WD_ALIGN_PARAGRAPH
     from docx.oxml import OxmlElement
@@ -156,14 +156,36 @@ def _word(output, heading, details, activities, reflection):
     section.left_margin = section.right_margin = Mm(14)
     section.top_margin = section.bottom_margin = Mm(14)
     word_typography(doc, 10.5)
+    if formal:
+        section.top_margin = section.bottom_margin = Mm(12)
+        doc.styles["Normal"].paragraph_format.line_spacing = Pt(11.5)
 
-    label = doc.add_paragraph()
-    label.add_run(heading[0]).bold = True
-    label.paragraph_format.space_after = Pt(3)
-    context = doc.add_paragraph(heading[1])
-    context.paragraph_format.space_after = Pt(4)
-    title = doc.add_paragraph(heading[2], "Title")
-    title.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    if formal:
+        title = doc.add_paragraph(heading[0].upper(), "Title")
+        title.paragraph_format.space_after = Pt(3)
+        context = doc.add_paragraph(heading[1])
+        topic = doc.add_paragraph()
+        run = topic.add_run(heading[2])
+        run.bold = True
+        run.font.size = Pt(14)
+        topic.paragraph_format.space_before = Pt(4)
+        for paragraph in (title, context, topic):
+            paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    else:
+        label = doc.add_paragraph()
+        label.add_run(heading[0]).bold = True
+        label.paragraph_format.space_after = Pt(3)
+        context = doc.add_paragraph(heading[1])
+        context.paragraph_format.space_after = Pt(4)
+        title = doc.add_paragraph(heading[2], "Title")
+        title.alignment = WD_ALIGN_PARAGRAPH.LEFT
+
+    def section_label(text):
+        paragraph = doc.add_paragraph()
+        paragraph.paragraph_format.space_before = Pt(6)
+        paragraph.paragraph_format.space_after = Pt(2)
+        paragraph.paragraph_format.keep_with_next = True
+        paragraph.add_run(text).bold = True
 
     def table(rows, widths, *, header=False, padding=55):
         element = doc.add_table(rows=0, cols=len(widths))
@@ -175,18 +197,29 @@ def _word(output, heading, details, activities, reflection):
         style_word_table(element, widths, header=header, padding=padding)
         return element
 
-    table(details, (34, 148))
-    word_gap(doc)
-    table(activities, (30, 76, 76), header=True, padding=60)
-    word_gap(doc)
-    tail = table(reflection, (34, 148))
+    widths = (39, 143) if formal else (34, 148)
+    if formal:
+        section_label("MAKLUMAT PENGAJARAN")
+    table(details, widths, padding=38 if formal else 55)
+    if formal:
+        section_label("LANGKAH PENGAJARAN DAN PEMBELAJARAN")
+    else:
+        word_gap(doc)
+    table(activities, (32, 75, 75) if formal else (30, 76, 76), header=True,
+          padding=46 if formal else 60)
+    if formal:
+        section_label("PENTAKSIRAN DAN REFLEKSI")
+    else:
+        word_gap(doc)
+    tail = table(reflection, widths, padding=46 if formal else 55)
     for i, (name, _) in enumerate(reflection):
         if name.casefold() in ("refleksi", "reflection"):
             tail.rows[i].cells[0].merge(tail.rows[i].cells[1])
     doc.save(output)
 
 
-def _pdf(output, heading, details, activities, reflection):
+def _pdf(output, heading, details, activities, reflection, *, formal=False):
+    from reportlab.lib.enums import TA_CENTER
     from reportlab.lib.colors import black
     from reportlab.lib.pagesizes import A4
     from reportlab.lib.styles import ParagraphStyle
@@ -200,6 +233,8 @@ def _pdf(output, heading, details, activities, reflection):
     title = ParagraphStyle("RPH topic", parent=body, fontName=serif, fontSize=20, leading=22, spaceAfter=7)
     context = ParagraphStyle("RPH context", parent=body, spaceAfter=4)
     caption = ParagraphStyle("RPH caption", parent=label, fontSize=10, spaceAfter=3)
+    section_label = ParagraphStyle("RPH section", parent=label, spaceBefore=6, spaceAfter=2,
+                                   keepWithNext=True)
 
     def paragraph(value, style):
         return Paragraph(escape(value).replace("\n", "<br/>"), style)
@@ -217,16 +252,24 @@ def _pdf(output, heading, details, activities, reflection):
         return Table(cells, colWidths=[width * mm for width in widths], repeatRows=int(header), style=commands)
 
     doc = BaseDocTemplate(output, pagesize=A4, title=f"{heading[0]} · {heading[2]}")
-    frame = Frame(14 * mm, 14 * mm, 182 * mm, 269 * mm,
+    margin = 12 if formal else 14
+    frame = Frame(14 * mm, margin * mm, 182 * mm, (297 - 2 * margin) * mm,
                   leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
     doc.addPageTemplates(PageTemplate("RPH A4", frames=[frame]))
-    doc.build([
-        paragraph(heading[0], caption),
-        paragraph(heading[1], context),
-        paragraph(heading[2], title),
-        table(details, (34, 148)),
-        Spacer(1, 6),
-        table(activities, (30, 76, 76), header=True, padding=3),
-        Spacer(1, 6),
-        table(reflection, (34, 148), span_reflection=True),
+    widths = (39, 143) if formal else (34, 148)
+    if formal:
+        title.alignment, title.spaceAfter = TA_CENTER, 3
+        context.alignment = TA_CENTER
+        topic = ParagraphStyle("RPH formal topic", parent=label, fontSize=14, leading=16, alignment=TA_CENTER)
+        story = [paragraph(heading[0].upper(), title), paragraph(heading[1], context),
+                 paragraph(heading[2], topic), paragraph("MAKLUMAT PENGAJARAN", section_label)]
+    else:
+        story = [paragraph(heading[0], caption), paragraph(heading[1], context), paragraph(heading[2], title)]
+    story.extend([
+        table(details, widths, padding=2 if formal else 2.75),
+        paragraph("LANGKAH PENGAJARAN DAN PEMBELAJARAN", section_label) if formal else Spacer(1, 6),
+        table(activities, (32, 75, 75) if formal else (30, 76, 76), header=True, padding=2.5 if formal else 3),
+        paragraph("PENTAKSIRAN DAN REFLEKSI", section_label) if formal else Spacer(1, 6),
+        table(reflection, widths, span_reflection=True, padding=2.5 if formal else 2.75),
     ])
+    doc.build(story)

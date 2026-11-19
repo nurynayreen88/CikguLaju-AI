@@ -56,3 +56,10 @@ PYTHONPATH=. python -m staging.matematik.tahun2.eksport_rpt --output /tmp/matema
 - Web menyenaraikan Matematik (DPK Edisi 3) dalam KSSR (SK), dengan Unit dan PdP daripada penjana Telegram. RPT DPK dipilih di tab RPT 2027. RPH Pantas menggunakan susunan Matematik asal.
 - Ujian API persendirian menjana 234 Word dan 234 PDF satu halaman. Sahkan tajuk DPK, setiap SP, maklumat kelas dan refleksi guru. Kod DPK tidak diterima dalam set biasa dan kod biasa tidak diterima dalam set DPK. Ujian menu Telegram meliputi fail Word, PDF dan pengesahan debit.
 - Kedua-dua PDF RPT pilihan mempunyai satu muka depan profil dan 14 halaman jadual mengikut tarikh Kumpulan A dan B. Fail yang sama digunakan pada Web dan Telegram.
+
+## Semakan susulan Matematik Tahun 2 PdP 017
+
+- DPK Edisi 3 hlm. 24 memberikan SP 2.2.1 untuk penolakan hingga tiga nombor dalam lingkungan 1000. Fokus PdP 017 ialah penolakan dua nombor dengan mengumpul semula.
+- MOBIM Matematik Tahun 2 terbitan KPM 2024, hlm. 62–63, memadankan penolakan dua nombor dengan mengumpul semula kepada Buku Teks Jilid 1 hlm. 66–72 dan Buku Aktiviti hlm. 44–48. Sesi ini menggunakan bahagian Buku Teks hlm. 66–69 dan membenarkan guru memilih latihan yang sepadan daripada Buku Aktiviti. [MOBIM](https://cdn1.get-qr.com/files/68a47cf38144cc080190edc1/1755610364569-37bf4efd8af9e5eb0d7c7597cb14d90b.pdf)
+- Kekalkan tugasan individu 531 − 247 dan 620 − 156 daripada RPT. Semak hasilnya 284 dan 464. Agihkan 60 minit kepada lima fasa, lengkap dengan model 452 − 178, latihan berpandu, PBD individu, pemulihan, pengayaan dan refleksi.
+- Terapkan susun atur formal hitam putih pada set Matematik SK yang sama bagi Tahun 2 dan 3. Paparkan tajuk dokumen, maklumat pengajaran, langkah PdP dan pentaksiran dalam bahagian berasingan.
