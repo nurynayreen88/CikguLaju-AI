@@ -2,7 +2,7 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** WARNA WARNI KEK CAWAN
-**SK / SP (rujukan RPT):** 1.1.1
+**SK / SP DSKP:** 2.2.1, 2.2.2
 **Bidang/Fokus:** Perkusi & Irama — Kek Cawan Comel — iringan ensembel
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — bukan FINAL READY
@@ -19,9 +19,9 @@
 
 **Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019), m/s 19, dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
 
-**Rujukan buku teks:** m/s 20-21 daripada RPT rujukan yang padan dengan tema buku Kesenian Tahun 4. **Semakan teks unit/aktiviti dibuat, tetapi halaman penuh belum disahkan secara visual.** Sumber: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
+**Rujukan buku teks:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019), m/s 19, skor iringan Kek Cawan Comel untuk dua kumpulan perkusi.
 
 **Rujukan audio bercetak:** 9–11. **Belum disahkan sama ada fail trek tersedia atau sepadan dengan laluan penghantaran.**
 

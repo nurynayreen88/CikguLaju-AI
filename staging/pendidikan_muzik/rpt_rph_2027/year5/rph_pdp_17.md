@@ -2,7 +2,7 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** RAJA DI LAUTAN
-**SK / SP:** 2.4.1
+**SK / SP DSKP:** 2.4.1, 2.4.2
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 

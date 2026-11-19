@@ -26,6 +26,7 @@ def source_paths(year, lesson, component=None):
         f"{BASE}/SUCCESS_CRITERIA_DRAFT_20261106.json",
         f"{BASE}/KALENDAR_MINGGU_RPT_2027_INDUK_AUDIT_SNAPSHOT.json",
         f"{BASE}/DSKP_SP_CODE_PRESENCE_175_20261106.json",
+        f"{BASE}/dskp_standard_descriptions.json",
     )
 
 
