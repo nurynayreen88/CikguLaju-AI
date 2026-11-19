@@ -22,3 +22,7 @@ Jalankan `PYTHONDONTWRITEBYTECODE=1 python -m staging.sains.tahun6.eksport_2027 
 Dua set ujian setempat untuk takwim Sains dan bank Sains Tahun 6 lulus 16/16 selepas keluaran rujukan dibina semula. Semakan khusus Unit 3 mengesahkan tajuk, padanan SP, amali PdP 013–014 dan penyambungan bacaan ke PdP 016 pada fail yang baru dieksport.
 
 **HOLD semakan guru dan CI.** Fail ini sedia untuk semakan. Penerbitan dan muat turun melalui akaun guru di Web dan Telegram belum diuji.
+
+## Deskripsi SK dan SP pada RPH
+
+Set 89 PdP menggunakan bank teks 18 SK dan 96 SP yang dipadankan dengan jadual standard dalam [DSKP Sains Tahun 6, Bahagian Pembangunan Kurikulum KPM, September 2021](https://fliphtml5.com/mcbrg/xizk/DSKP_KSSR_Semakan_2017_Sains_Tahun_6/), halaman bercetak 42–74. Kod SK/SP, takwim PdP, urutan dan aktiviti dikekalkan. Tajuk PdP 006 dan 007 diselaraskan dengan sistem saraf pusat (2.2.2) dan sistem saraf periferi (2.2.3) yang sudah diajar dalam aktiviti masing-masing. Word dan PDF menggunakan medan Standard Kandungan dan Standard Pembelajaran. Fail RPT sedia ada tidak diganti oleh perubahan ini.

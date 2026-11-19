@@ -22,6 +22,7 @@ ROOT = Path(__file__).resolve().parents[3]
 SOURCE = Path(__file__).with_name("agihan_2027.json")
 CALENDAR = ROOT / "rpt_2027/takwim_pdp_2027_ab_draf.json"
 INVENTORY = ROOT / "audits/sains_dskp_t6_sp_token_inventory_20261106.json"
+DESCRIPTIONS = Path(__file__).with_name("deskripsi_dskp.json")
 RPT_STEM = "CikguLaju_RPT_Sains_SK_Tahun6_2027_Semakan_Guru"
 DURATIONS = {30: (3, 7, 8, 9, 3), 60: (5, 16, 19, 15, 5)}
 PHASES = ("Set induksi", "Aktiviti 1", "Aktiviti 2", "Pentaksiran PBD", "Penutup")
@@ -165,6 +166,11 @@ def build_source():
     data = json.loads(SOURCE.read_text(encoding="utf-8"))
     calendar = json.loads(CALENDAR.read_text(encoding="utf-8"))["minggu"]
     standards = set(json.loads(INVENTORY.read_text(encoding="utf-8"))["sp_tokens"])
+    descriptions = json.loads(DESCRIPTIONS.read_text(encoding="utf-8"))
+    if (set(descriptions["sp"]) != standards
+            or set(descriptions["sk"]) != {code.rsplit(".", 1)[0] for code in standards}
+            or any(not text.strip() for group in descriptions.values() for text in group.values())):
+        raise ValueError("Incomplete DSKP descriptions")
     rows = {row["id"]: row for row in data["pdp"]}
     opening = {lesson.number: lesson for lesson in LESSONS if lesson.year == 6}
     if len(rows) != len(data["pdp"]) or set(rows) != set(range(1, 90)):
@@ -191,6 +197,8 @@ def build_source():
             if len(sks) != 1 or not row["title"] or not row["unit"].startswith(f"Unit {next(iter(sks)).split('.')[0]}:"):
                 raise ValueError(f"Invalid source unit or SK PdP {i:03d}")
             row["sk"] = sks.pop()
+            row["sk_text"] = descriptions["sk"][row["sk"]]
+            row["sp_texts"] = [descriptions["sp"][code] for code in row["standards"]]
             row["week"] = number
             row["dates"] = f"A {date_range(week['A'])} · B {date_range(week['B'])}"
             if i in opening:
@@ -314,7 +322,10 @@ def render_rph(stream, row, renderer, *, teacher=None):
         ("Nombor dan tempoh", f"PdP {row['id']:03d} · {row['minutes']} minit"),
         ("Julat RPT", row["dates"]),
         ("Kelas, tarikh dan masa", session),
-        ("Standard", f"SK {row['sk']} · SP {', '.join(row['standards'])}"),
+        ("Standard Kandungan", f"{row['sk']} {row['sk_text']}"),
+        ("Standard Pembelajaran", " · ".join(
+            f"{code} {text}" for code, text in zip(row["standards"], row["sp_texts"], strict=True)
+        )),
         ("Buku teks", f"Buku Teks Sains Tahun 6 SK, m/s {row['pages']}"),
         ("Objektif", row["objective"]),
         ("Bahan", row["materials"]),
