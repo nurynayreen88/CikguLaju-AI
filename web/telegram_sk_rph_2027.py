@@ -8,6 +8,7 @@ from secrets import token_hex
 from tempfile import TemporaryDirectory
 
 from dlp_year2_rph import _pdf, _word
+from staging.dlp.year4 import render_science as year4_science
 from staging.dlp.year5 import downloads as year5_dlp
 from staging.dlp.year6 import render_mathematics, render_science
 from staging.matematik.documents_2027 import Downloads as MathSKDownloads
@@ -19,7 +20,8 @@ from web.math_y6_ratio_source_hold_20261110 import reviewed_math_y6_unit
 
 PREFIX = "sk27:"
 STATE_KEY = "_sk_rph_2027"
-SETS = {"s": ("Sains SK Tahun 5", "Sains", "Tahun 5"),
+SETS = {"d4": ("Science DLP Year 4", "Science (DLP)", "Tahun 4"),
+        "s": ("Sains SK Tahun 5", "Sains", "Tahun 5"),
         "dp2": ("Matematik SK Tahun 2 · DPK Edisi 3", "Matematik", "Tahun 2"),
         "dp3": ("Matematik SK Tahun 3 · DPK Edisi 3", "Matematik", "Tahun 3"),
         "mt4": ("Matematik SK Tahun 4", "Matematik", "Tahun 4"),
@@ -58,7 +60,7 @@ def install(runtime):
         return True
     science = {"s": (ReviewRuntime(), render_sains_year5),
                "s6": (ScienceYear6Runtime(), render_sains_year6)}
-    documents = {"m": render_mathematics, "d6": render_science,
+    documents = {"d4": year4_science, "m": render_mathematics, "d6": render_science,
                  "m5": year5_dlp.MATHEMATICS, "d5": year5_dlp.SCIENCE,
                  "mt4": MathSKDownloads(4), "mt5": MathSKDownloads(5), "mt6": MathSKDownloads(6),
                  "dp2": MathSKDownloads(2, dpk=True), "dp3": MathSKDownloads(3, dpk=True)}
