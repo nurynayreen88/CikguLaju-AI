@@ -92,7 +92,7 @@ class WebNativePdPBridgeTests(unittest.TestCase):
         data = {"source": "telegram-runtime-v1", "items": [
             {"value": unit, "label": "Unit 7 • Koordinat, nisbah dan kadaran"}]}
         with patch("web.native_telegram_sequence_rph_client._read", return_value=data) as read:
-            for year in (5, 6):
+            for year in (4, 5, 6):
                 new, = list_native_units(year, "MATH")
                 self.assertEqual(new["value"], "m" + unit[1:])
                 self.assertEqual(read.call_args.kwargs, {"route": MATH_SK_2027_ROUTE})
@@ -103,7 +103,7 @@ class WebNativePdPBridgeTests(unittest.TestCase):
                 self.assertEqual(read.call_args.kwargs, {})
             self.assertEqual(_selection(6, "MATH", unit, "MT6-PDP-097")[0], SEQUENCE_ROUTE)
             with self.assertRaises(ValueError):
-                _selection(4, "MATH", new["value"])
+                _selection(3, "MATH", new["value"])
             with self.assertRaises(ValueError):
                 _selection(6, "MATH_DLP", new["value"])
 

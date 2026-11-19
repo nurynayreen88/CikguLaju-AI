@@ -269,7 +269,7 @@ class DailyTimetablePureTests(TestCase):
 
     def test_math_weekly_suggestions_follow_the_same_117_pdp_plan_as_telegram(self):
         short = {1, 5, 8, 10, 20, 30, 33, 35, 39}
-        for year in range(2, 5):
+        for year in (2, 3):
             with self.subTest(year=year):
                 weeks = weekly_catalog()[f"MATH:{year}"]
                 self.assertEqual(set(map(int, weeks)), set(range(1, 45)) - {6, 19})
@@ -285,7 +285,8 @@ class DailyTimetablePureTests(TestCase):
                 )
 
     def test_aligned_math_years_finish_in_week_38_with_the_audited_slot_lengths(self):
-        for year, final_slots in ((5, [30, 60, 60, 30]), (6, [60, 30, 60, 30])):
+        for year, final_slots in ((4, [60, 30, 60, 30]), (5, [30, 60, 60, 30]),
+                                  (6, [60, 30, 60, 30])):
             with self.subTest(year=year):
                 weeks = weekly_catalog()[f"MATH:{year}"]
                 self.assertEqual(set(map(int, weeks)), set(range(1, 39)) - {6, 18, 19})

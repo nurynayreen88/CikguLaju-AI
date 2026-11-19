@@ -25,7 +25,7 @@ SCIENCE_2027_ROUTES = {
     6: ("w", "/internal/rph/v1/sains-sk-y6-2027"),
 }
 MATH_SK_2027_ROUTE = "/internal/rph/v1/matematik-sk-2027"
-MATH_SK_2027_YEARS = (5, 6)
+MATH_SK_2027_YEARS = (4, 5, 6)
 SEQUENCE_ROUTE = "/internal/rph/v1/sequence"
 DLP_ROUTE = "/internal/rph/v1/dlp"
 DLP_UNIT = re.compile(r"0[1-8]")
