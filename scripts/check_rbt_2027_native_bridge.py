@@ -14,7 +14,7 @@ sys.path.insert(0,str(ROOT))
 from flask import Flask
 from docx import Document
 from reportlab.pdfgen.canvas import Canvas
-from web.rbt_2027_user_runtime import SUBJECT, SELECTION, adapt_rows, install, _selected
+from web.rbt_2027_user_runtime import SUBJECT, SELECTION, adapt_rows, install, _lesson, _selected
 from web.rbt_2027_native_api import create_rbt_2027_native_blueprint
 
 TOKEN="rbt-ci-private-token-2027-0123456789-abcdef"
@@ -58,7 +58,8 @@ def run():
         rows=ns["_rph_rows"](state[1],"irrelevant generated text")
         assert "DRAF" in rows["TAJUK"]
         assert "Buku Teks RBT Tahun" in rows["BAHAN BANTU MENGAJAR"]
-        assert "Aktiviti 2 (25 minit)" in rows["AKTIVITI UTAMA"]
+        assert "Aktiviti 2\n" in rows["AKTIVITI UTAMA"]
+        assert "4.3 Artikel Jahitan" in rows["STANDARD KANDUNGAN"]
         state[1]["sk_code"]="0.0"
         assert _selected(state[1]) is None
         state[1]["sk_code"]="4.3"
@@ -114,6 +115,14 @@ def run():
                 assert res.status_code==200,(y,u,res.get_json())
                 lessons=res.get_json()["items"]
                 assert lessons and all(l["status"]=="DRAF" for l in lessons)
+                for option in lessons:
+                    lesson = _lesson(y, int(option["value"]))
+                    for key, codes in (("sk_description", lesson["sk"]),
+                                       ("sp_description", lesson["sp_codes"])):
+                        descriptions = lesson[key].split(" · ")
+                        assert len(descriptions) == len(codes)
+                        assert all(text.startswith(code + " ") and len(text) > len(code) + 7
+                                   for code, text in zip(codes, descriptions))
                 all_pdp.extend(int(l["value"]) for l in lessons)
                 count+=len(lessons)
             assert sorted(all_pdp)==list(range(1,33))

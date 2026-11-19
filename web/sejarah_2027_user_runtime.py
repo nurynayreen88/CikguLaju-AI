@@ -42,20 +42,24 @@ def _catalog(year, base_path):
         lessons = data["lessons"]
         if len(lessons) != len(rpt) or len(lessons) != 36:
             return ()
-        known_codes = {sp["code"] for sk in standards["standards"] for sp in sk["sp"]}
+        curriculum = {item["sk"]: item for item in standards["standards"]}
         unit_map = {str(x["sk"]): x for x in units["units"]}
         result = []
         for n, (row, plan) in enumerate(zip(lessons, rpt), 1):
             ident = f"SEJ-T{year}-PDP-{n:03d}"
             r = row["rph"]
             bt = r["textbook_reference"]
+            standard = curriculum.get(r.get("sk"))
+            sp_by_code = {item["code"]: item["text"] for item in standard["sp"]} if standard else {}
             if (row.get("id") != ident or row.get("num") != n
                     or plan.get("ID") != ident or plan.get("Status") == "READY"
                     or r.get("year") != year or r.get("academic_year") != 2027
                     or r.get("subject") != SUBJECT or not str(r.get("status", "")).startswith("DRAF")
                     or r.get("teacher_approval") is not False
                     or r.get("textbook_page_verified") is not False
-                    or not r.get("sp_codes") or not set(r["sp_codes"]) <= known_codes):
+                    or not standard or standard["title"] != r.get("sk_title")
+                    or not r.get("sp_codes")
+                    or any(not sp_by_code.get(code, "").strip() for code in r["sp_codes"])):
                 return ()
             unit = unit_map.get(str(r.get("sk")))
             if (not unit or bt.get("unit_title") != unit["name"]
@@ -75,6 +79,7 @@ def _catalog(year, base_path):
             if not md.is_file() or md.is_symlink():
                 return ()
             result.append({"id": ident, "pdp": n, "year": year, "rph": r,
+                           "sp_text": " · ".join(f"{code} {sp_by_code[code]}" for code in r["sp_codes"]),
                            "unit": unit["number"], "unit_title": unit["name"]})
         return tuple(result)
     except (OSError, KeyError, ValueError, TypeError, csv.Error):
@@ -118,7 +123,7 @@ def adapt_rows(state, rows, *, root=ROOT):
         "TAHUN/TINGKATAN": f"Tahun {row['year']}",
         "TAJUK": f"{row['unit_title']} — PdP {row['pdp']:03d} (DRAF)",
         "STANDARD KANDUNGAN": f"{r['sk']} — {r['sk_title']}",
-        "STANDARD PEMBELAJARAN": ", ".join(r["sp_codes"]),
+        "STANDARD PEMBELAJARAN": row["sp_text"],
         "OBJEKTIF PEMBELAJARAN": "; ".join(r["objective"]),
         "KRITERIA KEJAYAAN": r["success_criteria"],
         "PENGETAHUAN SEDIA ADA": "Pengetahuan murid tentang " + row["unit_title"],
@@ -128,9 +133,9 @@ def adapt_rows(state, rows, *, root=ROOT):
         "KBAT / PAK21": "Kemahiran Pemikiran Sejarah: menilai bukti, membuat inferens",
         "SET INDUKSI": r["set_induksi"]["activity"],
         "AKTIVITI UTAMA": (
-            "Aktiviti 1 (20 min) — " + r["aktiviti_1"]["activity"] + "\n"
-            "Aktiviti 2 (20 min) — " + r["aktiviti_2"]["activity"] + "\n"
-            "Pengukuhan dan PBD (10 min) — " + r["pengukuhan_pbd"]["activity"]),
+            "Aktiviti 1\n" + r["aktiviti_1"]["activity"] + "\n"
+            "Aktiviti 2\n" + r["aktiviti_2"]["activity"] + "\n"
+            "Pengukuhan dan PBD\n" + r["pengukuhan_pbd"]["activity"]),
         "PENTAKSIRAN": r["pengukuhan_pbd"]["activity"],
         "PENUTUP": r["penutup"]["activity"],
         "PEMULIHAN / PENGAYAAN": "Bimbing murid yang masih memerlukan sokongan.",
@@ -242,5 +247,18 @@ def install(ns, *, enabled=None, root=ROOT):
 
     ns["callback"] = callback
     ns["_rph_rows"] = rows
+    previous_word = ns.get("create_word_file")
+    if callable(previous_word):
+        def word(state_value, *args, **kwargs):
+            path = previous_word(state_value, *args, **kwargs)
+            if isinstance(state_value, dict) and state_value.get("task") == "rph":
+                row = _selected(state_value, root=root)
+                if row and (row["year"], row["pdp"]) == (6, 32):
+                    from web.english_y6_word_a4_runtime import compact_word_file
+
+                    compact_word_file(path, point_size=8.5)
+            return path
+
+        ns["create_word_file"] = word
     ns["SEJARAH_2027_USER_BRIDGE_ACTIVE"] = True
     return True
