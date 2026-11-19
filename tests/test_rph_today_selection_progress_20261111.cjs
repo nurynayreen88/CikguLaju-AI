@@ -117,6 +117,10 @@ assert.equal(ctx.nativeLessonLabel({label: "Review 08 • Data Handling Review",
   textbook_ref: "Textbook p. 242"}, "MATH_DLP"),
   "Review 08 • Data Handling Review • Textbook p. 242");
 assert.equal(ctx.nativeLessonLabel({label: "Review 09 • Unknown review"}, "MATH_DLP"), "");
+assert.equal(ctx.nativeLessonLabel({label: "Review 09 • Data"}, "MATH_DLP", 3), "Review 09 • Data");
+assert.equal(ctx.nativeLessonLabel({label: "Review 09 • Data"}, "MATH_DLP", 4), "");
+assert.equal(ctx.nativeLessonLabel({label: "Review 05 • Unknown review"}, "SCIENCE_DLP", 3), "");
+
 
 const initialize = source.slice(source.indexOf(" async function initialize("),
   source.indexOf(" function makeChoice("));
@@ -150,4 +154,7 @@ assert.equal(ctx.lessonNumber("Review 10 • Science", "SCIENCE_DLP"), 110);
 assert.equal(ctx.lessonNumber("Lesson 08 • Problem solving", "MATH_DLP"), 8);
 assert.equal(ctx.lessonNumber("Review 08 • Data Handling Review", "MATH_DLP"), 108);
 assert.equal(ctx.lessonNumber("Review 09 • Unknown review", "MATH_DLP"), null);
+assert.equal(ctx.lessonNumber("Review 09 • Data", "MATH_DLP", 3), 109);
+assert.equal(ctx.lessonNumber("Review 04 • Solar System and Machine", "SCIENCE_DLP", 3), 104);
+
 assert.equal(ctx.lessonNumber("Review 08 • Materials Review", "SCIENCE"), null);
