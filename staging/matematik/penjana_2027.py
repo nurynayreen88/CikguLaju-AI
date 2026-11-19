@@ -3,27 +3,30 @@
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 
-from staging.matematik.documents_2027 import YEARS, lessons_for_year, render_download
+from staging.matematik.documents_2027 import DPK_YEARS, YEARS, lessons_for_year, render_download
 
 
 ROUTE = "/internal/rph/v1/matematik-sk-2027"
+DPK_ROUTE = "/internal/rph/v1/matematik-sk-dpk-2027"
 
 
 class MathSK2027Runtime:
     CIKGULAJU_DB_V2600_ACTIVE = True
 
-    def __init__(self):
+    def __init__(self, *, dpk=False):
         self._plans = {}
         self._rows = {}
-        for year in YEARS:
+        for year in DPK_YEARS if dpk else YEARS:
             rows = self._rows[f"Tahun {year}"] = []
-            for plan in lessons_for_year(year):
+            for plan in lessons_for_year(year, dpk=dpk):
                 self._plans[plan.code] = plan
                 rows.extend({
                     "unit_code": f"Unit {plan.unit}", "unit_title": plan.unit_title,
                     "pdp_sequence_code": plan.code, "source_sequence_no": f"{plan.number:03d}",
-                    "pdp_title": plan.title, "sk_code": plan.sk, "sp_code": sp,
-                    "textbook_ref": f"Buku Teks m/s {plan.pages}",
+                    "pdp_title": plan.title,
+                    "sk_code": sp.rsplit(".", 1)[0] if dpk else plan.sk, "sp_code": sp,
+                    "textbook_ref": f"Buku Teks {plan.pages}" if dpk else f"Buku Teks m/s {plan.pages}",
+                    **({"dpk_minutes": plan.minutes} if dpk else {}),
                 } for sp in plan.standards)
 
     def _sm2542_rows(self, year, subject):
@@ -75,4 +78,8 @@ def register_downloads(app):
     app.register_blueprint(
         create_native_sequence_rph_blueprint(MathSK2027Runtime(), url_prefix=ROUTE),
         name="matematik_sk_2027",
+    )
+    app.register_blueprint(
+        create_native_sequence_rph_blueprint(MathSK2027Runtime(dpk=True), url_prefix=DPK_ROUTE),
+        name="matematik_sk_dpk_2027",
     )

@@ -71,37 +71,44 @@ def unit_for(number):
     return next((unit, row) for unit, row in enumerate(UNITS, 1) if number <= row[0])
 
 
+def document(plan, slot):
+    number, sp, volume, pages, title, model, task, evidence = plan
+    unit, (_, name, materials) = unit_for(number)
+    week, minutes = slot
+    opening, modelling, assessment, closing = PHASE_MINUTES[minutes]
+    sk = sp.rsplit('.', 1)[0]
+    details = [
+        ('Unit', f'Unit {unit} {name}'),
+        ('Lesson / tempoh', f'Lesson {number:03d} · {minutes} minit'),
+        ('Tarikh RPT', f"M{week['minggu']:02d} · A {display_dates(week['A'])} · B {display_dates(week['B'])}"),
+        ('Maklumat kelas', 'Kelas ______ · Tarikh ______ · Masa ______ · Murid ______'),
+        ('SK / SP', f'SK {sk} {STANDARDS[sk]} · SP {sp}'),
+        ('Rujukan', f'DPK Edisi 3, hlm. {DPK_PAGES[sp]} · Buku Teks Jilid {volume}, hlm. {pages}'),
+        ('Objektif', f'Murid dapat {title[0].lower() + title[1:]} dan memberi respons yang sepadan dalam tugasan PBD.'),
+        ('Bahan', materials),
+    ]
+    activities = [
+        ('Fasa', 'Tindakan guru', 'Tindakan murid'),
+        (f'Set induksi · {opening} minit', f'Paparkan bahan bagi topik {name.lower()}. Tanyakan maklumat yang sudah diketahui.',
+         'Nyatakan satu maklumat daripada model atau situasi.'),
+        (f'Aktiviti 1 · {modelling} minit', model, 'Ikuti model. Tunjukkan satu langkah, bacaan atau padanan kepada rakan.'),
+        (f'Aktiviti 2 / PBD · {assessment} minit', task, 'Selesaikan tugasan secara individu. Catat jawapan atau tunjukkan model kepada guru.'),
+        (f'Penutup · {closing} minit', 'Pilih satu respons untuk disemak dengan model asal.',
+         'Terangkan cara menyemak respons menggunakan maklumat dalam soalan.'),
+    ]
+    reflection = [('Evidens PBD', evidence), ('Refleksi', '___ / ___ murid mencapai objektif. Semak item yang belum dikuasai.')]
+    heading = ('Rancangan Pengajaran Harian', 'Matematik SK Tahun 3 · 2027 · Pilihan DPK Edisi 3', title)
+    return heading, details, activities, reflection
+
+
 def export(plans, schedule, output):
     output.mkdir(parents=True, exist_ok=True)
-    for number, sp, volume, pages, title, model, task, evidence in plans:
-        unit, (_, name, materials) = unit_for(number)
-        week, minutes = schedule[number]
-        opening, modelling, assessment, closing = PHASE_MINUTES[minutes]
-        sk = sp.rsplit('.', 1)[0]
-        details = [
-            ('Unit', f'Unit {unit} {name}'),
-            ('Lesson / tempoh', f'Lesson {number:03d} · {minutes} minit'),
-            ('Tarikh RPT', f"M{week['minggu']:02d} · A {display_dates(week['A'])} · B {display_dates(week['B'])}"),
-            ('Maklumat kelas', 'Kelas ______ · Tarikh ______ · Masa ______ · Murid ______'),
-            ('SK / SP', f'SK {sk} {STANDARDS[sk]} · SP {sp}'),
-            ('Rujukan', f'DPK Edisi 3, hlm. {DPK_PAGES[sp]} · Buku Teks Jilid {volume}, hlm. {pages}'),
-            ('Objektif', f'Murid dapat {title[0].lower() + title[1:]} dan memberi respons yang sepadan dalam tugasan PBD.'),
-            ('Bahan', materials),
-        ]
-        activities = [
-            ('Fasa', 'Tindakan guru', 'Tindakan murid'),
-            (f'Set induksi · {opening} minit', f'Paparkan bahan bagi topik {name.lower()}. Tanyakan maklumat yang sudah diketahui.',
-             'Nyatakan satu maklumat daripada model atau situasi.'),
-            (f'Aktiviti 1 · {modelling} minit', model, 'Ikuti model. Tunjukkan satu langkah, bacaan atau padanan kepada rakan.'),
-            (f'Aktiviti 2 / PBD · {assessment} minit', task, 'Selesaikan tugasan secara individu. Catat jawapan atau tunjukkan model kepada guru.'),
-            (f'Penutup · {closing} minit', 'Pilih satu respons untuk disemak dengan model asal.',
-             'Terangkan cara menyemak respons menggunakan maklumat dalam soalan.'),
-        ]
-        reflection = [('Evidens PBD', evidence), ('Refleksi', '___ / ___ murid mencapai objektif. Semak item yang belum dikuasai.')]
-        heading = ('Rancangan Pengajaran Harian', 'Matematik SK Tahun 3 · 2027 · Pilihan DPK Edisi 3', title)
+    for plan in plans:
+        number = plan[0]
+        parts = document(plan, schedule[number])
         for extension, renderer in (('docx', _word), ('pdf', _pdf)):
             with (output / f'CikguLaju_Matematik_T3_Lesson_{number:03d}.{extension}').open('wb') as stream:
-                renderer(stream, heading, details, activities, reflection)
+                renderer(stream, *parts)
 
 
 def main():

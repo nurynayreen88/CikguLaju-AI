@@ -22,7 +22,7 @@ GRID = colors.HexColor('#D6E1E5')
 
 
 def export_table(output, year, details, *, kssr_dskp=False, review_note=None,
-                 edition='Draf semakan guru'):
+                 edition='Draf semakan guru', profile_cover=False):
     pdfmetrics.registerFont(TTFont(REGULAR, str(FONT_DIR / 'DejaVuSans.ttf')))
     pdfmetrics.registerFont(TTFont(BOLD, str(FONT_DIR / 'DejaVuSans-Bold.ttf')))
     body = ParagraphStyle('RPT body', fontName=REGULAR, fontSize=8.5, leading=12, textColor=INK)
@@ -75,7 +75,34 @@ def export_table(output, year, details, *, kssr_dskp=False, review_note=None,
         commands.extend([('SPAN', (1, row), (-1, row)), ('BACKGROUND', (0, row), (-1, row), colors.HexColor('#E8F3EE'))])
     table.setStyle(TableStyle(commands))
 
-    width, _ = landscape(A4)
+    width, height = landscape(A4)
+
+    def cover(canvas, document):
+        def rectangle(x, top, box_width, box_height, stroke, fill):
+            canvas.setStrokeColor(stroke)
+            canvas.setFillColor(fill)
+            canvas.roundRect(x, height - top - box_height, box_width, box_height, 7, fill=1)
+
+        def centered(top, text, size, font=BOLD):
+            canvas.setFont(font, size)
+            canvas.setFillColor(INK)
+            canvas.drawCentredString(width / 2, height - top, text)
+
+        panel = colors.HexColor("#F5F8F6")
+        rectangle(width / 2 - 65, 69, 130, 130, GRID, colors.white)
+        centered(140, "LOGO SEKOLAH", 10)
+        centered(242, "Rancangan Pengajaran Tahunan 2027", 25)
+        centered(272, f"Matematik SK Tahun {year}", 21)
+        centered(296, "Pilihan DPK Edisi 3", 13)
+        rectangle(width / 2 - 330, 318, 660, 112, GRID, panel)
+        canvas.setFont(BOLD, 11)
+        canvas.setFillColor(INK)
+        canvas.drawString(116, height - 350, "NAMA SEKOLAH")
+        canvas.drawString(116, height - 406, "NAMA GURU")
+        canvas.setFont(REGULAR, 10)
+        canvas.drawString(277, height - 350, "_" * 42)
+        canvas.drawString(277, height - 406, "_" * 42)
+        centered(471, "Kumpulan A dan B · 117 Lesson · 96 jam", 11, REGULAR)
 
     def footer(canvas, document):
         canvas.setFont(REGULAR, 8)
@@ -97,4 +124,10 @@ def export_table(output, year, details, *, kssr_dskp=False, review_note=None,
         opening.append(pair(review_note, summary))
     elif kssr_dskp:
         opening.append(pair('42 sesi 30 minit dan 75 sesi 60 minit sepadan dengan set RPH.', summary))
-    pdf.build([*opening, Spacer(1, 10), table], onFirstPage=footer, onLaterPages=footer)
+    content = [*opening, Spacer(1, 10), table]
+    if profile_cover:
+        from reportlab.platypus import PageBreak
+
+        pdf.build([Spacer(1, 1), PageBreak(), *content], onFirstPage=cover, onLaterPages=footer)
+    else:
+        pdf.build(content, onFirstPage=footer, onLaterPages=footer)

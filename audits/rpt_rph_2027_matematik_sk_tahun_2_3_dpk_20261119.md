@@ -41,7 +41,7 @@ Kod SK/SP, masa dan evidens PBD kekal sepadan antara RPT dengan RPH. Penilaian t
 - 234 padanan RPT/RPH diperiksa untuk ID, tajuk, minggu, tarikh A/B, tempoh, SK/SP, halaman DPK, rujukan buku yang dicetak dan evidens PBD. Jumlah empat fasa diperiksa terhadap tempoh setiap RPH. Liputan kod dan padanan halaman DPK ditentusahkan semula terhadap PDF sumber.
 - 234 PDF asal dan 234 Word yang ditukar melalui LibreOffice muat satu halaman A4 setiap dokumen. Dua RPT PDF berorientasi landskap dan masing-masing mempunyai 14 halaman. Susun atur sampel Word, PDF dan halaman pertama kedua-dua RPT diperiksa secara visual.
 - 17 ujian regresi bagi menu RPH 2027 Telegram, pilihan masuk dan penghantaran RPT Matematik lulus.
-- Set ini tersedia melalui penjana di direktori staging. Pilihan DPK belum disambungkan kepada pemilih atau muat turun guru di Web dan Telegram.
+- Dokumen pilihan DPK mempunyai kod Lesson khusus. Laluan Telegram dan Web menggunakan rekod yang sama apabila menjana RPH. Status penerbitan direkodkan dalam log kemas kini.
 
 Jalankan arahan ini dari akar repositori. Bagi Tahun 3, gantikan nombor tahun pada nama modul dan laluan keluaran dengan `3`.
 
@@ -49,3 +49,10 @@ Jalankan arahan ini dari akar repositori. Bagi Tahun 3, gantikan nombor tahun pa
 PYTHONPATH=. python -m staging.matematik.tahun2.eksport_tahun2 --output /tmp/matematik-sk-dpk-t2
 PYTHONPATH=. python -m staging.matematik.tahun2.eksport_rpt --output /tmp/matematik-sk-dpk-t2/RPT.pdf
 ```
+
+## Pengesahan pemilih dan fail pilihan DPK
+
+- Telegram menyenaraikan set berasingan untuk Tahun 2 dan 3 di RPH 2027. Menu RPT 2027 mempunyai pilihan PDF DPK bagi kedua-dua tahun. Akses dan debit menggunakan fungsi asal.
+- Web menyenaraikan Matematik (DPK Edisi 3) dalam KSSR (SK), dengan Unit dan PdP daripada penjana Telegram. RPT DPK dipilih di tab RPT 2027. RPH Pantas menggunakan susunan Matematik asal.
+- Ujian API persendirian menjana 234 Word dan 234 PDF satu halaman. Sahkan tajuk DPK, setiap SP, maklumat kelas dan refleksi guru. Kod DPK tidak diterima dalam set biasa dan kod biasa tidak diterima dalam set DPK. Ujian menu Telegram meliputi fail Word, PDF dan pengesahan debit.
+- Kedua-dua PDF RPT pilihan mempunyai satu muka depan profil dan 14 halaman jadual mengikut tarikh Kumpulan A dan B. Fail yang sama digunakan pada Web dan Telegram.

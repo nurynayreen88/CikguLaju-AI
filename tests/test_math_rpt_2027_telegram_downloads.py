@@ -8,7 +8,7 @@ from unittest.mock import patch
 
 from rpt_2027.english import telegram_downloads as english
 from rpt_2027.matematik import telegram_downloads as math
-from rpt_2027.matematik.sk_documents import DIGESTS
+from rpt_2027.matematik.sk_documents import DIGESTS, document_path
 
 
 # Exact Drive originals; these assets are intentionally shipped in GitHub.
@@ -84,6 +84,21 @@ class MatematikRPTTests(unittest.TestCase):
         self.ns["callback"](9, "rpt2027_math_pdf_2")
         self.assertEqual(self.documents, [])
         self.assertIn("Akses Terhad", self.messages[-1][1])
+
+    def test_dpk_is_an_optional_paid_rpt_for_years_two_and_three(self):
+        self.ns["callback"](9, "rpt2027_math_dpk_pdf_2")
+        self.assertEqual(self.documents, [])
+        self.paid = True
+        for year in (2, 3):
+            self.ns["callback"](9, f"rpt2027_year_{year}")
+            options = [button["callback_data"] for row in self.messages[-1][2] for button in row]
+            self.assertIn(f"rpt2027_math_pdf_{year}", options)
+            self.assertIn(f"rpt2027_math_dpk_pdf_{year}", options)
+            self.ns["callback"](9, f"rpt2027_math_dpk_pdf_{year}")
+            self.assertEqual(self.documents[-1][1], str(document_path(year, dpk=True)))
+            self.assertIn("DPK Edisi 3", self.documents[-1][2])
+        self.ns["callback"](9, "rpt2027_math_dpk_pdf_4")
+        self.assertEqual(len(self.documents), 2)
 
     def test_paid_year_menu_and_exact_committed_pdf(self):
         self.paid = True

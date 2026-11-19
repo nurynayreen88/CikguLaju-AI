@@ -302,6 +302,8 @@ def create_native_sequence_rph_blueprint(runtime, *, url_prefix="/internal/rph/v
                 title = str(r.get("pdp_title") or code).strip()
                 label = ("PdP " + str(seq) + " • " if seq not in (None, "") else
                          "PdP • ") + title
+                if r.get("dpk_minutes") in (30, 60):
+                    label += f" · {r['dpk_minutes']} minit"
                 if len(code) > 100 or not code or len(label) > 300:
                     continue
                 # Keep only lesson-specific textbook references recorded by
