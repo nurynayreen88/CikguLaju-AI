@@ -18,6 +18,8 @@ FILE_TEMPLATE = "RPT_Matematik_Tahun_%d_2027_v28_SEMENTARA.pdf"
 def pdf_path(year):
     if type(year) is not int or year not in YEARS:
         raise ValueError("Unsupported RPT Matematik year")
+    if year in sk_documents.DPK_DIGESTS:
+        return PDF_ROOT / (sk_documents.DPK_FILE_TEMPLATE % year)
     if year in sk_documents.DIGESTS:
         return PDF_ROOT / (sk_documents.FILE_TEMPLATE % year)
     return PDF_ROOT / (FILE_TEMPLATE % year)
@@ -25,8 +27,8 @@ def pdf_path(year):
 
 def pdf_ready(year, ns=None):
     """Keep ns optional for compatibility with the English RPT menu."""
-    if year in sk_documents.DIGESTS:
-        return sk_documents.document_path(year, root=PDF_ROOT) is not None
+    if year in sk_documents.DPK_DIGESTS or year in sk_documents.DIGESTS:
+        return sk_documents.document_path(year, root=PDF_ROOT, dpk=year in sk_documents.DPK_DIGESTS) is not None
     try:
         path = pdf_path(year)
         if not path.is_file() or path.stat().st_size < 100000:
@@ -75,6 +77,7 @@ def install(ns):
         if suffix not in (("2", "3") if dpk else ("2", "3", "4", "5", "6")):
             return send(cid, "Pilihan tahun RPT Matematik tidak sah.")
         year = int(suffix)
+        dpk = year in sk_documents.DPK_DIGESTS
         path = (sk_documents.document_path(year, root=PDF_ROOT, dpk=True) if dpk
                 else pdf_path(year) if pdf_ready(year) else None)
         if path is None:
@@ -86,8 +89,6 @@ def install(ns):
 
         try:
             version = "Kumpulan A/B · 117 Lesson · 96 jam" if dpk or year in sk_documents.DIGESTS else "v28 (DRAF/SEMENTARA)"
-            if dpk:
-                version = f"DPK Edisi 3 · {version}"
             result = send_document(
                 cid, str(path),
                 f"RPT Matematik Tahun {year} — 2027 {version}",

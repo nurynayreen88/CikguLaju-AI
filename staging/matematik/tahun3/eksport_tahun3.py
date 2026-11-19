@@ -97,7 +97,7 @@ def document(plan, slot):
          'Terangkan cara menyemak respons menggunakan maklumat dalam soalan.'),
     ]
     reflection = [('Evidens PBD', evidence), ('Refleksi', '___ / ___ murid mencapai objektif. Semak item yang belum dikuasai.')]
-    heading = ('Rancangan Pengajaran Harian', 'Matematik SK Tahun 3 · 2027 · Pilihan DPK Edisi 3', title)
+    heading = ('Rancangan Pengajaran Harian', 'Matematik SK Tahun 3 · 2027', title)
     return heading, details, activities, reflection
 
 

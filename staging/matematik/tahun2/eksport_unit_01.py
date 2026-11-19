@@ -9,7 +9,7 @@ from staging.matematik.eksport_agihan import display_dates, read_agihan
 
 
 SOURCE = Path(__file__).with_name('unit_01.json')
-SUBTITLE = 'Matematik SK Tahun 2 · 2027 · Pilihan DPK Edisi 3'
+SUBTITLE = 'Matematik SK Tahun 2 · 2027'
 PHASES = ('Set induksi', 'Aktiviti 1', 'Aktiviti 2 / PBD', 'Penutup')
 MINUTES = {30: (5, 10, 12, 3), 60: (5, 25, 25, 5)}
 STANDARDS = {
