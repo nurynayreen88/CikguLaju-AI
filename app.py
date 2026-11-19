@@ -3222,7 +3222,7 @@ def _create_rph_word(doc, section, s, ai_text, path):
         add_row(table,label.title() if label not in ('EMK / NILAI','KBAT / PAK21') else label, (_rph_attendance_value(rph.get(label,'')) if label == 'BILANGAN MURID' else _rph_blank_or_value(rph.get(label,''))) if label in ('TARIKH','HARI','MASA','KELAS','BILANGAN MURID') else rph.get(label,''))
     doc.add_paragraph().paragraph_format.space_after=Pt(1)
     t2=doc.add_table(rows=1, cols=3); t2.alignment=WD_TABLE_ALIGNMENT.CENTER
-    for i,h in enumerate(['Fasa / Masa','Aktiviti Pengajaran & Pembelajaran','Catatan']):
+    for i,h in enumerate(['Fasa','Aktiviti Pengajaran & Pembelajaran','Catatan']):
         q=t2.rows[0].cells[i].paragraphs[0]; q.alignment=WD_ALIGN_PARAGRAPH.CENTER; z=q.add_run(h); z.bold=True
     phases=[('Set Induksi',rph.get('SET INDUKSI','')),('Aktiviti Utama',rph.get('AKTIVITI UTAMA','')),('Penutup',rph.get('PENUTUP',''))]
     for phase,text in phases:
@@ -3670,7 +3670,7 @@ def create_pdf_file(s, ai_text, cid):
         info=Table(rows,colWidths=[48*mm,124*mm])
         info.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.grey),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),1.7),('BOTTOMPADDING',(0,0),(-1,-1),1.7)]))
         story.extend([info,Spacer(1,1.5*mm)])
-        phase_rows=[[Paragraph('<b>Fasa / Masa</b>',body_style),Paragraph('<b>Aktiviti Pengajaran & Pembelajaran</b>',body_style),Paragraph('<b>Catatan</b>',body_style)]]
+        phase_rows=[[Paragraph('<b>Fasa</b>',body_style),Paragraph('<b>Aktiviti Pengajaran & Pembelajaran</b>',body_style),Paragraph('<b>Catatan</b>',body_style)]]
         for phase,key in [('Set Induksi','SET INDUKSI'),('Aktiviti Utama','AKTIVITI UTAMA'),('Penutup','PENUTUP')]:
             val=escape(_rph_format_activity_lines(rph.get(key) or '—')).replace('\n','<br/>')
             phase_rows.append([Paragraph('<b>'+phase+'</b>',body_style),Paragraph(val,body_style),Paragraph('',body_style)])
@@ -10217,13 +10217,14 @@ def _create_rph_word(doc, section, s, ai_text, path):
         value=(_rph_attendance_value(rph.get(label,'')) if label == 'BILANGAN MURID' else _rph_blank_or_value(rph.get(label,''))) if label in ('TARIKH','HARI','MASA','KELAS','BILANGAN MURID') else rph.get(label,''); add_row(table,_rph_display_label(s,label),_rph_display_value(s,label,value))
     doc.add_paragraph().paragraph_format.space_after=Pt(1)
     t2=doc.add_table(rows=1, cols=3); t2.alignment=WD_TABLE_ALIGNMENT.CENTER
-    for i,h in enumerate((['Phase / Time','Teaching and Learning Activities','Notes'] if _is_english_subject(s) else ['Fasa / Masa','Aktiviti Pengajaran & Pembelajaran','Catatan'])):
+    for i,h in enumerate((['Phase','Teaching and Learning Activities','Notes'] if _is_english_subject(s) else ['Fasa','Aktiviti Pengajaran & Pembelajaran','Catatan'])):
         q=t2.rows[0].cells[i].paragraphs[0]; q.alignment=WD_ALIGN_PARAGRAPH.CENTER; z=q.add_run(h); z.bold=True
     phase_labels = ('Set Induction', 'Main Activities', 'Closure') if _is_english_subject(s) else ('Set Induksi', 'Aktiviti Utama', 'Penutup')
     for phase, key in zip(phase_labels, ('SET INDUKSI', 'AKTIVITI UTAMA', 'PENUTUP')):
         cells = t2.add_row().cells
         cells[0].text = phase
-        activity = _rph_format_activity_lines(rph.get(key, '')) or '—'
+        _, activity = _rph_phase_time_v25179(phase, rph.get(key, ''))
+        activity = activity or '—'
         note = rph.get(f'CATATAN {key}', '')
         if key == 'AKTIVITI UTAMA' and pi_primary:
             paragraph = cells[1].paragraphs[0]
@@ -10806,7 +10807,7 @@ def create_pdf_file(s, ai_text, cid):
             for part in parts:
                 story.append(Paragraph('• '+escape(part), body_style))
             story.append(Spacer(1,2*mm))
-        phase_rows=[[Paragraph('<b>'+('Phase / Time' if _is_english_subject(s) else ('فاسا / ماس' if _pi_primary_v25210(s) else 'Fasa / Masa'))+'</b>',body_style),Paragraph('<b>'+('Teaching and Learning Activities' if _is_english_subject(s) else ('اکتيۏيتي ڤڠاجرن دان ڤمبلاجرن' if _pi_primary_v25210(s) else 'Aktiviti Pengajaran & Pembelajaran'))+'</b>',body_style),Paragraph('<b>'+('Notes' if _is_english_subject(s) else ('چاتتن' if _pi_primary_v25210(s) else 'Catatan'))+'</b>',body_style)]]
+        phase_rows=[[Paragraph('<b>'+('Phase' if _is_english_subject(s) else ('فاسا' if _pi_primary_v25210(s) else 'Fasa'))+'</b>',body_style),Paragraph('<b>'+('Teaching and Learning Activities' if _is_english_subject(s) else ('اکتيۏيتي ڤڠاجرن دان ڤمبلاجرن' if _pi_primary_v25210(s) else 'Aktiviti Pengajaran & Pembelajaran'))+'</b>',body_style),Paragraph('<b>'+('Notes' if _is_english_subject(s) else ('چاتتن' if _pi_primary_v25210(s) else 'Catatan'))+'</b>',body_style)]]
         for phase,key in ([('Set Induction','SET INDUKSI'),('Main Activities','AKTIVITI UTAMA'),('Closure','PENUTUP')] if _is_english_subject(s) else ([('ست ايندوکسي','SET INDUKSI'),('اکتيۏيتي اوتام','AKTIVITI UTAMA'),('ڤنوتوڤ','PENUTUP')] if _pi_primary_v25210(s) else [('Set Induksi','SET INDUKSI'),('Aktiviti Utama','AKTIVITI UTAMA'),('Penutup','PENUTUP')])):
             phase_label, phase_text = _rph_phase_time_v25179(phase, rph.get(key) or '—')
             if key == 'AKTIVITI UTAMA' and _pi_primary_v25210(s):
@@ -32197,14 +32198,10 @@ def _rph_format_activity_lines(value):
     return '\n'.join(out)
 
 def _rph_phase_time_v25179(phase, text):
-    """Move a leading duration-only line into the phase label safely."""
-    formatted=_rph_format_activity_lines(text or '')
-    lines=formatted.split('\n') if formatted else []
-    if lines:
-        m=re.match(r'^\(?\s*(\d+\s*(?:minit|minutes?|mins?))\s*\)?$',lines[0],re.I)
-        if m:
-            return f'{phase} ({m.group(1)})', '\n'.join(lines[1:]).strip()
-    return phase, formatted
+    """Format the phase for the downloadable RPH without timing annotations."""
+    from web.rph_phase_display import activity_without_schedule
+
+    return phase, activity_without_schedule(_rph_format_activity_lines(text or ''))
 # ===== END v25.180 =====
 
 

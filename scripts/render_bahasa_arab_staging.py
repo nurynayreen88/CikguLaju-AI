@@ -15,6 +15,8 @@ from docx.shared import Cm, Pt
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 
+from web.rph_phase_display import activity_without_schedule
+
 ARABIC = re.compile(r"[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]+")
 SECTIONS = (
     ("Set induksi", ("Set induksi",)),
@@ -148,7 +150,7 @@ def render_one(text: str, dest: Path) -> dict:
     for label, keys in SECTIONS:
         value = first(d, *keys)
         if value:
-            lessons.append((label, value))
+            lessons.append((label, activity_without_schedule(value)))
     if first(d, "BBM"):
         lessons.append(("BBM", first(d, "BBM")))
     if first(d, "Refleksi guru", "Refleksi"):

@@ -13,6 +13,8 @@ PDP_COUNT = 96
 YEAR = 3
 SUBJECT = "Matematik SJKC"
 RELEASE_FLAG = "CIKGULAJU_MATEMATIK_SJKC_T3_RPH_ENABLED"
+_CONTEXT_DURATION = re.compile(r" +(?:\| +)?60 分钟$")
+_PHASE_DURATION = re.compile(r"[0-9]{1,2} 分钟")
 
 
 def enabled():
@@ -49,7 +51,7 @@ def teacher_lines(teacher):
     name = teacher.get("class") or "__________"
     pupils = teacher.get("students") or "_____"
     return (
-        f"日期 Tarikh {date}   |   时间 Masa {time}   |   60 分钟",
+        f"日期 Tarikh {date}   |   时间 Masa {time}",
         f"班级 Kelas {name}   |   学生人数 Bilangan murid {pupils}",
     )
 
@@ -102,9 +104,19 @@ def _word(lesson, output, lines, reflection, *, path=None):
     for element in list(body):
         if element is not section and element not in selected:
             body.remove(element)
-    if lines:
-        context, = [p for p in doc.paragraphs if p.text.startswith("日期 Tarikh ")]
-        context.runs[0].text = "\n".join(lines)
+    context, = [p for p in doc.paragraphs if p.text.startswith("日期 Tarikh ")]
+    context.runs[0].text = "\n".join(lines) if lines else _CONTEXT_DURATION.sub("", context.text)
+    for table in doc.tables:
+        if table.cell(0, 1).text == "分钟":
+            for row in table.rows:
+                row.cells[1].paragraphs[0].runs[0].text = ""
+        else:
+            for row in table.rows:
+                phase = row.cells[0].paragraphs[0]
+                for run in phase.runs:
+                    title, sep, planned_time = run.text.rpartition("\n")
+                    if sep and _PHASE_DURATION.fullmatch(planned_time):
+                        run.text = title
     if reflection:
         notes, = [p for p in doc.paragraphs if p.text.startswith("教学反思")]
         paragraph = doc.add_paragraph()
@@ -136,11 +148,10 @@ def _pdf(lesson, output, lines, reflection, *, path=None):
     writer = PdfWriter()
     writer.add_page(page)
     writer.write(output)
-    if lines:
-        personalized = _personalize_pdf(output.getvalue(), lines, reflection)
-        output.seek(0)
-        output.truncate()
-        output.write(personalized)
+    personalized = _personalize_pdf(output.getvalue(), lines, reflection)
+    output.seek(0)
+    output.truncate()
+    output.write(personalized)
 
 
 def _personalize_pdf(source, lines, reflection):
@@ -153,10 +164,26 @@ def _personalize_pdf(source, lines, reflection):
             for block in page.get_text("dict")["blocks"] if "lines" in block
             for line in block["lines"]
         ]
-        context, = [rect for text, rect in text_lines if text.startswith("日期 Tarikh ")]
+        (context_text, context), = [(text, rect) for text, rect in text_lines
+                                    if text.startswith("日期 Tarikh ")]
         notes, = [rect for text, rect in text_lines if text.startswith("教学反思")]
-        page.add_redact_annot(context, fill=False)
+        minute_headers = [rect for text, rect in text_lines if text == "分钟"]
+        if minute_headers:
+            # SJKC Year 3 has a standalone, aligned column for phase minutes.
+            header, = minute_headers
+            durations = [rect for text, rect in text_lines
+                         if re.fullmatch(r"[0-9]{1,2}", text)
+                         and abs(rect.x0 - header.x0) < 1 and header.y1 < rect.y0 < notes.y0]
+            duration_cells = [header, *durations]
+        else:
+            # SJKC Year 2 puts durations on separate lines in the phase cells.
+            duration_cells = [rect for text, rect in text_lines
+                              if _PHASE_DURATION.fullmatch(text)
+                              and context.x0 <= rect.x0 < context.x0 + 15]
+        for rect in [context, *duration_cells]:
+            page.add_redact_annot(rect, fill=False)
         page.apply_redactions(images=0, graphics=0)
+        lines = lines or (_CONTEXT_DURATION.sub("", context_text),)
         font = fitz.Font("china-s")
         right = page.rect.width - context.x0
         writer = fitz.TextWriter(page.rect)
