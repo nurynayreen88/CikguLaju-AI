@@ -16,10 +16,10 @@ from itsdangerous import BadSignature
 
 from web import native_telegram_sjkc_math_client as sjkc
 from web import native_telegram_sjkt_math_client as sjkt
-from web.native_telegram_sequence_rph_client import DLP_CATALOGUES
+from web.native_telegram_sequence_rph_client import DLP_CATALOGUES, DLP_SUBJECTS
 from web.primary_subject_choices import variants_by_name
 from web.rph_today_progress import (
-    DLP_Y4_COMPLETION, attach_progress, class_key, dlp_completion_label, lesson_signer, read_progress,
+    DLP_COMPLETION_LIMITS, attach_progress, class_key, dlp_completion_label, lesson_signer, read_progress,
     read_progress_summary, save_completion, supports_completion, valid_completion_number,
 )
 from web.teacher_profile_routes import _auth, _body
@@ -78,10 +78,9 @@ def subject_identity(value, year=None):
     if not isinstance(value, str):
         return None, None
     key = " ".join(value.casefold().strip().replace("&", " dan ").split())
-    if year == 4:
-        code = variants_by_name().get(key, {}).get("rph_code")
-        if code in DLP_Y4_COMPLETION:
-            return code, None
+    code = variants_by_name().get(key, {}).get("rph_code")
+    if (year, code) in DLP_COMPLETION_LIMITS:
+        return code, None
     return SUBJECTS.get(key, (None, None))
 
 
@@ -530,13 +529,14 @@ def progress_summary():
     component_labels = {"PJ": "Pendidikan Jasmani", "PK": "Pendidikan Kesihatan"}
     for key, code, component in sorted(scopes):
         summary = summaries.get((key, code, component), {"completed": 0})
+        is_dlp = code in DLP_SUBJECTS
         row = {
             "class_name": class_names.get(key, key),
             "subject": component_labels.get(component) or SUBJECT_LABELS[code],
-            "label": "sesi" if code in DLP_Y4_COMPLETION else {"ENGLISH": "Lesson"}.get(code, "PdP"),
+            "label": "sesi" if is_dlp else {"ENGLISH": "Lesson"}.get(code, "PdP"),
             **summary,
         }
-        if code in DLP_Y4_COMPLETION and summary["completed"]:
+        if is_dlp and summary["completed"]:
             row["last_label"] = dlp_completion_label(summary["last_number"])
         entries.append(row)
     return jsonify({"year": today.year, "entries": entries})
@@ -573,7 +573,7 @@ def complete_pdp():
             record = lesson_signer(config).loads(token, max_age=28800)
             if (not isinstance(record, list) or len(record) != 5
                     or record[:4] != [uid, slot["year"], slot["subject_code"], component]
-                    or not valid_completion_number(slot["subject_code"], record[4])):
+                    or not valid_completion_number(slot["year"], slot["subject_code"], record[4])):
                 raise ProfileValidation("Lesson/PdP ini tidak sepadan dengan slot jadual")
             number = record[4]
             if (slot["subject_code"] == "ENGLISH" and target.year == 2027

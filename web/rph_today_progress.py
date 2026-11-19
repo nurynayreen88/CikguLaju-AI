@@ -6,17 +6,19 @@ from urllib.request import Request, build_opener
 
 from itsdangerous import URLSafeTimedSerializer
 
+from web.native_telegram_sequence_rph_client import DLP_CATALOGUES, DLP_SUBJECTS
 from web.teacher_profile_store import NoRedirect, ProfileUnavailable
 
 
 TABLE = "web_timetable_pdp_completion"
 RPC = "rpc/web_timetable_pdp_progress"
 DLP_REVIEW_OFFSET = 100
-DLP_Y4_COMPLETION = {
-    "MATH_DLP": ("MAT", 69, 8),
-    "SCIENCE_DLP": ("SCI", 59, 10),
+DLP_COMPLETION_LIMITS = {
+    (4, "MATH_DLP"): (69, 8),
+    (4, "SCIENCE_DLP"): (59, 10),
+    (5, "MATH_DLP"): (61, 8),
+    (5, "SCIENCE_DLP"): (60, 10),
 }
-DLP_Y4_SESSION = re.compile(r"DLP-(MAT|SCI)-Y4-([LR])([0-9]{2})")
 NUMBER = re.compile(r"^(?:Lesson|PdP)\s*(\d{1,3})\b", re.IGNORECASE)
 
 
@@ -24,11 +26,14 @@ def class_key(value):
     return " ".join(value.casefold().split())
 
 
-def valid_completion_number(subject, number):
+def valid_completion_number(year, subject, number):
     if type(number) is not int:
         return False
-    if subject in DLP_Y4_COMPLETION:
-        _, lessons, reviews = DLP_Y4_COMPLETION[subject]
+    if subject in DLP_SUBJECTS:
+        limits = DLP_COMPLETION_LIMITS.get((year, subject))
+        if limits is None:
+            return False
+        lessons, reviews = limits
         return 1 <= number <= lessons or DLP_REVIEW_OFFSET < number <= DLP_REVIEW_OFFSET + reviews
     return 1 <= number <= 999
 
@@ -39,13 +44,16 @@ def dlp_completion_label(number):
     return f"Lesson {number:02d}"
 
 
-def lesson_number(item, subject=None):
-    if subject in DLP_Y4_COMPLETION:
-        match = DLP_Y4_SESSION.fullmatch(str(item.get("value", "")))
-        if not match or match[1] != DLP_Y4_COMPLETION[subject][0]:
+def lesson_number(item, year, subject):
+    if subject in DLP_SUBJECTS:
+        scope = (year, subject)
+        value = item.get("value", "")
+        if (scope not in DLP_COMPLETION_LIMITS or not isinstance(value, str)
+                or not DLP_CATALOGUES[scope][2].fullmatch(value)):
             return None
-        number = int(match[3]) + (DLP_REVIEW_OFFSET if match[2] == "R" else 0)
-        return number if valid_completion_number(subject, number) else None
+        suffix = value.rsplit("-", 1)[-1]
+        number = int(suffix[1:]) + (DLP_REVIEW_OFFSET if suffix[0] == "R" else 0)
+        return number if valid_completion_number(year, subject, number) else None
     match = NUMBER.match(str(item.get("label", "")).strip())
     number = int(match[1]) if match else next(
         (item[key] for key in ("pdp_no", "lesson_no", "sequence_no")
@@ -134,7 +142,7 @@ def save_completion(config, uid, day, slot, component, number):
 
 def supports_completion(slot):
     return slot.get("curriculum") != "dlp" or (
-        slot["year"] == 4 and slot["subject_code"] in DLP_Y4_COMPLETION
+        (slot["year"], slot["subject_code"]) in DLP_COMPLETION_LIMITS
     )
 
 
