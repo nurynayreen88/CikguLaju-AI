@@ -6,9 +6,10 @@ actual row contracts used by both English Word and PDF document generators.
 import json
 import os
 from pathlib import Path
+import sys
 import types
 import unittest
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 from english_y2_standalone_render import apply as year2_activities
 from english_y3_standalone_render import apply as year3_activities
@@ -59,7 +60,9 @@ class CrossYearEnglishDocumentRows(unittest.TestCase):
             _is_english_subject=lambda state: state.get("subject") == "English",
         )
         install_standard_descriptions(runtime)
-        with patch("web.english_y6_word_a4_runtime.compact_word_file") as compact:
+        compact = Mock()
+        module = types.SimpleNamespace(compact_word_file=compact)
+        with patch.dict(sys.modules, {"web.english_y6_word_a4_runtime": module}):
             for year, lesson in ((2, 15), (2, 20), (4, 25), (4, 29), (2, 19), (5, 25)):
                 state = {"task": "rph", "subject": "English", "year": f"Tahun {year}", "lesson_no": lesson}
                 self.assertEqual(runtime.create_word_file(state), "lesson.docx")
