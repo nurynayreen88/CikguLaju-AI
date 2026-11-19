@@ -40,7 +40,8 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
             _temporary_auto_pack_v2386=lambda cid: "existing material picker",
             CIKGULAJU_TELEGRAM_SPECIAL_RPH_MENU_ACTIVE=True,
             SUBJECTS_BY_GRADE={}, SUBJECT_LABEL={},
-            subjects=lambda cid, label: ("legacy subjects", label),
+            subjects=lambda cid, label: [[{"text": "Sains", "callback_data": "sub_Sains"}],
+                                         r._cikgulaju_dlp_subject_buttons(r.state[cid], label)],
             year=lambda cid, level: ("legacy year", level),
             quick=lambda cid: None,
         )
@@ -78,15 +79,15 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
     def test_primary_dlp_path_opens_all_year_three_to_six_download_sets(self):
         scopes = {3: ("d3", "m3"), 4: ("d4", "m4"), 5: ("d5", "m5"), 6: ("d6", "m")}
         self.runtime.state[123] = {"task": "rph"}
-        self.click("cv_primary_dlp")
+        self.click("cv_primary_kssr")
         for year, subject_scopes in scopes.items():
-            year_button = f"cv_year{year}_dlp"
+            year_button = f"year_{year}"
             for name, scope in zip(("science", "math"), subject_scopes, strict=True):
                 with self.subTest(year=year, subject=name):
                     subjects = self.click(year_button)
-                    self.assertIn("RPH 2027", subjects[0][0]["text"])
+                    self.assertEqual(self.buttons(subjects), ["sub_Sains", "cv_dlp_science", "cv_dlp_math"])
                     units = self.buttons(self.click(f"cv_dlp_{name}"))
-                    self.assertIn(year_button, units)
+                    self.assertIn("back_subjects", units)
                     unit = next(button for button in units if button.startswith(f"sk27:unit:{scope}:"))
                     lessons = self.buttons(self.click(unit))
                     self.assertIn(f"sk27:dlp:{scope}", lessons)
@@ -104,7 +105,8 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                     self.assertEqual(len(PdfReader(BytesIO(self.documents[-1][1])).pages), 1)
                     return_to_units = f"sk27:dlp:{scope}"
                     self.assertIn(return_to_units, self.buttons(self.click(back)))
-                    self.assertIn(year_button, self.buttons(self.click(return_to_units)))
+                    self.assertIn("back_subjects", self.buttons(self.click(return_to_units)))
+                    self.assertIn(f"cv_dlp_{name}", self.buttons(self.click("back_subjects")))
         self.assertEqual(len(self.documents), 16)
         self.assertEqual(self.credits, 8)
 

@@ -46336,6 +46336,9 @@ def subjects(cid, label):
         if yr in years and name not in existing:
             buttons.append({'text':'🚧 '+name+' (Dalam Pembangunan)',
                             'callback_data':'devsub2617_'+name})
+    dlp_buttons = globals().get('_cikgulaju_dlp_subject_buttons')
+    if dlp_buttons is not None:
+        buttons.extend(dlp_buttons(state[cid], label))
     kb = [buttons[i:i+2] for i in range(0,len(buttons),2)]
     kb.extend([[{'text':'⬅️ Pilih Tahun/Tingkatan','callback_data':'choose_grade'}],
                [{'text':'🏠 Menu Utama','callback_data':'home'}]])
