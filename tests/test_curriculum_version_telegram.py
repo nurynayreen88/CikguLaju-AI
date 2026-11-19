@@ -1,8 +1,8 @@
 import html
-import json
 from pathlib import Path
 import unittest
 from curriculum_version_telegram import install
+from staging.dlp.year2.downloads import BY_SUBJECT
 
 class TelegramCurriculumTests(unittest.TestCase):
     def setUp(self):
@@ -74,16 +74,14 @@ class TelegramCurriculumTests(unittest.TestCase):
         self.ns["callback"](1,"cv_year2_dlp")
         keys = {button["callback_data"]:button["text"] for row in self.messages[-1][1] for button in row}
         self.assertEqual(set(keys),{"cv_dlp_science","cv_dlp_math","cv_primary_dlp","home"})
-        source = Path(__file__).resolve().parents[1] / "data" / "dlp_year2_review.json"
-        catalog = json.loads(source.read_text(encoding="utf-8"))
         for data, code, title, count, unit_count in (
-            ("cv_dlp_science", "SCIENCE_DLP", "Science (DLP)", 63, 10),
-            ("cv_dlp_math", "MATH_DLP", "Mathematics (DLP)", 78, 8),
+            ("cv_dlp_science", "SCIENCE_DLP", "Science (DLP)", 67, 10),
+            ("cv_dlp_math", "MATH_DLP", "Mathematics (DLP)", 96, 8),
         ):
             self.assertEqual(keys[data], f"{title} — {count} RPH")
             self.ns["callback"](1,data)
             self.assertIn("Pilih unit",self.messages[-1][0])
-            groups = catalog[code]
+            groups = BY_SUBJECT[code].units
             self.assertEqual([group["id"] for group in groups], [f"{number:02d}" for number in range(1, unit_count + 1)])
             self.assertEqual(len(self.messages[-1][1]), len(groups) + 1)
             self.assertEqual(sum(len(group["lessons"]) for group in groups),count)

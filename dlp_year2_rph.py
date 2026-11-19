@@ -90,20 +90,22 @@ def filename(lesson_id, fmt):
 
 def render(subject, unit, lesson, fmt, teacher):
     year = lesson.get("year", 2)
-    if year == 3:
-        lesson_label = f"{lesson['numbered_label']} · {lesson['minutes']} min"
-        phases = lesson["phases"]
+    phases = lesson["phases"]
+    if "numbered_label" in lesson:
+        minutes = lesson["minutes"]
+        lesson_label = f"{lesson['numbered_label']} · {minutes} min"
     else:
         scheduled = rpt_lessons(subject)[lesson["id"]]
-        lesson_label = f"Lesson {scheduled['number']:02d} · {scheduled['minutes']} min"
-        phases = lesson["phases"]
-        if subject == "SCIENCE_DLP" and scheduled["minutes"] == 30:
-            phases = [
-                (f"{phase.split(' · ', 1)[0]} · {duration} min", teacher_action, pupils_action)
-                for (phase, teacher_action, pupils_action), duration in zip(
-                    phases, (3, 15, 9, 3), strict=True
-                )
-            ]
+        minutes = scheduled["minutes"]
+        lesson_label = f"Lesson {scheduled['number']:02d} · {minutes} min"
+    if (year == 2 and subject == "SCIENCE_DLP" and minutes == 30
+            and not lesson_label.startswith("Review ")):
+        phases = [
+            (f"{phase.split(' · ', 1)[0]} · {duration} min", teacher_action, pupils_action)
+            for (phase, teacher_action, pupils_action), duration in zip(
+                phases, (3, 15, 9, 3), strict=True
+            )
+        ]
     heading = (
         "Daily Lesson Plan",
         f"{SUBJECTS[subject]} (DLP) · Year {year} SK",
@@ -121,11 +123,12 @@ def render(subject, unit, lesson, fmt, teacher):
         ("Class / date / time", "   ·   ".join(
             f"{label}: {value or '________'}" for label, value in class_details)),
         ("Standards", lesson["standards"]),
-        ("Book references", lesson["references"]),
+        ("Teaching source" if lesson_label.startswith("Review ") and year == 2 else "Book references",
+         lesson["references"]),
         ("Learning objective", lesson["objective"]),
         ("Materials", lesson["materials"]),
     ]
-    if year == 3:
+    if "rpt_dates" in lesson:
         details.insert(2, ("RPT 2027 dates", " · ".join(lesson["rpt_dates"])))
     activities = [("Phase", "Teacher", "Pupils"), *phases]
     reflection = [("Reflection", teacher.get("reflection") or lesson["reflection"])]

@@ -1,0 +1,490 @@
+{
+  "SCIENCE_DLP": [
+    {
+      "materials": "Object cards, a plastic dropper, water, an empty tray and child-growth cards.",
+      "activities": [
+        [
+          "Show two objects and ask which visible property could group them.",
+          "Describe a property that can be checked."
+        ],
+        [
+          "Model one sorting rule, safe dropper use over a tray, and ordering baby and child pictures.",
+          "Sort cards using one rule, move water in drops and describe a change as a child grows."
+        ],
+        [
+          "Give a new set of four cards. Check the stated rule and four placements, safe transfer of water, and one valid growth change.",
+          "Sort and label the groups, show a safe transfer and explain one change such as becoming taller."
+        ],
+        [
+          "Ask where the dropper should be placed after use.",
+          "Point to the tray and leave it ready for the next pupil."
+        ]
+      ],
+      "follow_up": "Repeat the sorting or apparatus step with pupils who missed it."
+    },
+    {
+      "materials": "Bean growth cards, chick and hen pictures, and individual picture strips.",
+      "activities": [
+        [
+          "Show a shoot and a mature plant. Ask what might come before the shoot.",
+          "Suggest a seed and explain the clue."
+        ],
+        [
+          "Mix bean growth cards and display a chick and a hen. Ask pairs to discuss visible features before sharing.",
+          "Order seed, sprouting seed, seedling and mature plant, then compare the two animals."
+        ],
+        [
+          "Provide a fresh set of shuffled growth cards and duckling and duck pictures. Check the order and one observable similarity or difference.",
+          "Order the four stages and say one comparison such as the duckling is smaller than the adult duck."
+        ],
+        [
+          "Ask how to tell a seedling from a sprouting seed.",
+          "Point to the young plant's leaves."
+        ]
+      ],
+      "follow_up": "Use matching picture pairs for pupils who need help comparing stages."
+    },
+    {
+      "materials": "Torch, screen, opaque card, a low-voltage cell and bulb, leads, sieve, sand and pebbles.",
+      "activities": [
+        [
+          "Show a shadow and ask how the torch, card and screen are placed.",
+          "Point to the card between the torch and screen."
+        ],
+        [
+          "Set up a shadow, a circuit with one loose lead and a sand–pebble mixture. Model one check at each station.",
+          "Move the card, close the circuit and select a sieve because the grains and pebbles differ in size."
+        ],
+        [
+          "Observe each pupil at the stations or ask for a marked diagram. Check that the card blocks light, the gap is closed, and a sieve traps pebbles.",
+          "Explain the shadow, reconnect the loose lead and select a separation tool with a reason."
+        ],
+        [
+          "Ask what happens when the circuit is opened again.",
+          "Predict that the bulb goes out and explain that the path is broken."
+        ]
+      ],
+      "follow_up": "Revisit the station corresponding to each pupil's incorrect explanation."
+    },
+    {
+      "materials": "Water-cycle pictures, a paper sailboat, a fan, trays and a simple model with illustrated instructions.",
+      "activities": [
+        [
+          "Show a paper sailboat and ask what can move it without touching the hull.",
+          "Suggest moving air and point to the sail."
+        ],
+        [
+          "Model labelling water vapour and clouds. Demonstrate the sailboat with the fan on and off, then compare a model with its drawing.",
+          "Arrange cycle cards, compare the boat's motion and match pieces to the assembly drawing."
+        ],
+        [
+          "Give a fresh diagram and a model with one piece missing. Check the cycle order, the wind explanation and the missing piece using the instructions.",
+          "Label water, vapour, clouds and rain in order. Explain that moving air pushes the sail and point to the missing piece."
+        ],
+        [
+          "Ask which stage sends water back towards rivers and seas.",
+          "Point to rain and describe where it flows."
+        ]
+      ],
+      "follow_up": "Match symbols to steps again with pupils who missed a cycle label or model part."
+    }
+  ],
+  "MATH_DLP": [
+    {
+      "materials": "Base-ten blocks, place-value mats and digit cards.",
+      "activities": [
+        [
+          "Show 407 and ask which digit tells how many tens it has.",
+          "Point to zero and describe its place."
+        ],
+        [
+          "Build 304 and 460. Compare the role of zero on both mats and write expanded forms.",
+          "Place hundreds, tens and ones, then write 300 + 0 + 4 and 400 + 60 + 0."
+        ],
+        [
+          "Give 508 and 750 to each pupil. Check two partitions and the value named for all six digits.",
+          "Build and partition both numbers, then state each digit's value including zero."
+        ],
+        [
+          "Swap the 5 and 8 in 508 and ask what changes.",
+          "Name the new number and explain the changed values."
+        ]
+      ],
+      "follow_up": "Rebuild numbers with an empty tens column before giving a new example."
+    },
+    {
+      "materials": "Number cards, a 0–1,000 number line, trays of counters and answer slips.",
+      "activities": [
+        [
+          "Show 296 and 310 and ask which is closer to 300.",
+          "Use distances of 4 and 10 to explain the choice."
+        ],
+        [
+          "Model estimating a tray using a group of ten as a benchmark. Use a number line to compare and round amounts.",
+          "Estimate the number of counters and explain how repeated groups of ten helped."
+        ],
+        [
+          "Check ascending order for 482, 257, 635 and 683 and rounds 300, 500, 600 and 700 in that order. Check one justified counter estimate.",
+          "Order and round the four cards, then record an estimate with a reason based on a benchmark."
+        ],
+        [
+          "Ask why 635 and 683 round to different hundreds.",
+          "Locate 650 between the two numbers."
+        ]
+      ],
+      "follow_up": "Mark the midpoint again for pupils who rounded to the wrong hundred."
+    },
+    {
+      "materials": "Base-ten blocks, place-value mats and addition cards.",
+      "activities": [
+        [
+          "Show nine ones and three ones. Ask how to record twelve ones.",
+          "Exchange ten ones for one ten and retain two ones."
+        ],
+        [
+          "Model 267 + 158 = 425 with exchanges in the ones and tens columns. Let pairs check by subtracting 158 from 425.",
+          "Explain both exchanges and use blocks or subtraction to check the sum."
+        ],
+        [
+          "Check 348 + 176 = 524 and 135 + 248 + 107 = 490. Look for a valid model or inverse check.",
+          "Solve both on a place-value mat or in columns and show a check for each sum."
+        ],
+        [
+          "Ask why a carried ten belongs in the tens column.",
+          "State that ten ones have the same value as one ten."
+        ]
+      ],
+      "follow_up": "Rebuild the column in which the exchange was missed."
+    },
+    {
+      "materials": "Place-value mats, base-ten blocks and one incorrect worked example.",
+      "activities": [
+        [
+          "Display 402 and ask what zero tells us about the tens.",
+          "Explain that the number has no tens before regrouping."
+        ],
+        [
+          "Model exchanging one hundred into ten tens and one of those tens into ten ones. Compare this with crossing out zero without an exchange.",
+          "Build 402, then explain why 3 hundreds, 9 tens and 12 ones keep its value."
+        ],
+        [
+          "Give the incorrect statement 503 − 278 = 335. Check the corrected answer 225 and both exchanges.",
+          "Correct the calculation independently and explain how 503 was rewritten without changing its value."
+        ],
+        [
+          "Ask how addition can check the answer.",
+          "Check 225 + 278 = 503."
+        ]
+      ],
+      "follow_up": "Use blocks to trace the exchange that a pupil omitted."
+    },
+    {
+      "materials": "Square counters, grid boards and multiplication cards.",
+      "activities": [
+        [
+          "Show three rows of four counters. Ask how many in each row.",
+          "Say four in each of three rows and count twelve."
+        ],
+        [
+          "Build 6 × 7 and 7 × 8. Split an array into familiar groups of five and the remaining rows.",
+          "Use a split such as five sevens and one seven, then join the partial products."
+        ],
+        [
+          "Give 6 × 8 and 7 × 9. Check both arrays and products 48 and 63.",
+          "Build or sketch the two arrays, label rows and columns and write each product."
+        ],
+        [
+          "Rotate an array and ask which dimensions change.",
+          "Explain that the number of counters stays the same."
+        ]
+      ],
+      "follow_up": "Practise one missed fact by rebuilding it in two smaller arrays."
+    },
+    {
+      "materials": "Counters, sorting cups, group mats and answer cards.",
+      "activities": [
+        [
+          "Show fourteen counters and groups of four. Ask what remains after making full groups.",
+          "Make three groups and identify two left over."
+        ],
+        [
+          "Model 53 ÷ 10 as five groups with three remaining. Check with 5 × 10 + 3 and compare the remainder with the divisor.",
+          "Make equal groups and write the matching multiplication and addition."
+        ],
+        [
+          "Check 29 ÷ 4 = 7 remainder 1 and 46 ÷ 10 = 4 remainder 6. Check both inverse equations and the size of each remainder.",
+          "Share or group the counters, record both results and verify them."
+        ],
+        [
+          "Ask why a remainder of four cannot be left when making groups of four.",
+          "Explain that those counters make another complete group."
+        ]
+      ],
+      "follow_up": "Use a group mat to check that no full group remains uncounted."
+    },
+    {
+      "materials": "Situation cards, operation symbols and answer slips.",
+      "activities": [
+        [
+          "Tell a short story about gaining seven pencils. Ask what happens to the total.",
+          "Explain that it increases and suggest addition."
+        ],
+        [
+          "Contrast combining, comparing, equal groups and equal sharing. Let pairs invent a story for 4 × 6.",
+          "Match each story to a symbol and explain what its numbers count."
+        ],
+        [
+          "Use 23 and 17 joined, 23 compared with 17, four bags of six, and 24 shared equally among four. Check +, −, ×, ÷ and one correct answer with a reason.",
+          "Match all four stories, solve one and write why the operation fits."
+        ],
+        [
+          "Ask what singles out the equal-sharing story.",
+          "Identify a total split into equal groups."
+        ]
+      ],
+      "follow_up": "Ask pupils who chose the wrong operation to act out the situation with counters."
+    },
+    {
+      "materials": "Equal-length strips, coloured pencils, rulers and answer slips.",
+      "activities": [
+        [
+          "Hold up two strips of different lengths. Ask if one half of each strip is the same length.",
+          "Identify that the wholes differ."
+        ],
+        [
+          "Use equal strips to model one half and three quarters. Line up the start points to compare the shaded parts.",
+          "Fold or partition each strip equally, shade and compare."
+        ],
+        [
+          "Give equal strips for 2/5 and 3/5. Check equal partitions, shading and the conclusion 2/5 < 3/5.",
+          "Shade both fractions and explain why the full strips must have equal length."
+        ],
+        [
+          "Ask what the denominator tells us.",
+          "State the number of equal parts in the whole."
+        ]
+      ],
+      "follow_up": "Guide pupils to align the whole strips before shading a new pair."
+    },
+    {
+      "materials": "Blank 0–1 number lines, tenths grids and number cards.",
+      "activities": [
+        [
+          "Show one shaded square in a ten-square strip. Ask for two names for its value.",
+          "Say one tenth and zero point one."
+        ],
+        [
+          "Place 3/10 and 0.3 on one line. Compare 0.3 and 0.6 by counting ticks from zero.",
+          "Match decimal and fraction cards and explain the shared position."
+        ],
+        [
+          "Give 2/10, 0.2, 7/10 and 0.5. Check both cards at 0.2, one at 0.7, and 0.5 between them.",
+          "Plot the four cards and explain why 2/10 and 0.2 coincide."
+        ],
+        [
+          "Ask which representation means five of ten equal parts.",
+          "Point to 0.5 and give the fraction 5/10."
+        ]
+      ],
+      "follow_up": "Use a ten-cell strip for pupils who misread the first decimal place."
+    },
+    {
+      "materials": "Play money, blank receipts and price cards.",
+      "activities": [
+        [
+          "Show prices RM2.40 and RM1.35. Ask how to line up the amounts.",
+          "Match ringgit with ringgit and sen with sen."
+        ],
+        [
+          "Model a receipt for RM3.20 and RM2.45. Count up from RM5.65 to RM10.00 to check RM4.35 change.",
+          "Add prices by place value and use coins to count up to the amount paid."
+        ],
+        [
+          "Give a new receipt with RM2.40 and RM3.35 paid with RM10.00. Check total RM5.75, change RM4.25 and an addition check.",
+          "Calculate both values and show that the total and change make RM10.00."
+        ],
+        [
+          "Ask why sen values use two digits.",
+          "Say that 100 sen make one ringgit."
+        ]
+      ],
+      "follow_up": "Practise the exchange between ringgit and sen when needed."
+    },
+    {
+      "materials": "Budget cards, price labels and play money.",
+      "activities": [
+        [
+          "Give a budget of RM8 and a price of RM6. Ask how much remains.",
+          "Identify RM2 as the amount remaining."
+        ],
+        [
+          "Model saving first from a RM12 budget. Let pairs choose items within the amount left.",
+          "Make a shopping choice, calculate remaining money and explain what can be saved."
+        ],
+        [
+          "Give RM15.00 with a notebook RM7.50, pencil RM2.30 and ruler RM4.20. Check a choice of exactly two items, its total and remaining savings.",
+          "Choose two items, show the addition and subtract the total from RM15.00."
+        ],
+        [
+          "Ask how choosing a less expensive item affects savings.",
+          "Explain the amount left increases by the price difference."
+        ]
+      ],
+      "follow_up": "Distinguish total spent from savings with a two-column record."
+    },
+    {
+      "materials": "Mini clocks, five-minute tick cards and activity slips.",
+      "activities": [
+        [
+          "Move the minute hand one large mark. Ask how many minutes passed.",
+          "Count five minutes."
+        ],
+        [
+          "Show 8:20 and 8:45. Mark five-minute jumps and compare a count-up method with subtraction.",
+          "Set both clocks and count five jumps for 25 minutes."
+        ],
+        [
+          "Give reading at 9:15 and art at 9:50. Check correct hands, written times and the interval of 35 minutes.",
+          "Set or draw both times independently and show the seven five-minute jumps."
+        ],
+        [
+          "Ask where the hour hand points at 9:50.",
+          "Identify a point between 9 and 10, nearer 10."
+        ]
+      ],
+      "follow_up": "Match hand positions to a written time before repeating the interval question."
+    },
+    {
+      "materials": "Centimetre rulers, scales, erasers, books and recording sheets.",
+      "activities": [
+        [
+          "Show an eraser and a book. Ask which likely weighs more and how to check.",
+          "Make a prediction and suggest the scale."
+        ],
+        [
+          "Demonstrate zero alignment for length and taring the scale for mass. Let pairs choose cm and g for the objects.",
+          "Estimate both lengths and masses, then measure and compare with estimates."
+        ],
+        [
+          "Give each pupil two objects and check the two estimated and measured lengths and masses. Accept values matching the available instruments.",
+          "Enter every result with cm or g and state one estimate that was above or below the reading."
+        ],
+        [
+          "Ask why a mass written without a unit cannot be checked.",
+          "Say that the value must identify the measurement unit."
+        ]
+      ],
+      "follow_up": "Reteach the specific zero mark or scale reading that was missed."
+    },
+    {
+      "materials": "Measuring jugs, water trays, and 150 mL, 500 mL and 2 L container cards.",
+      "activities": [
+        [
+          "Show a spoon and a large water jug. Ask which unit suits each.",
+          "Suggest mL for the spoon and L for the jug."
+        ],
+        [
+          "Compare the container capacities and read a jug at eye level. Ask pairs to show two measures of 150 mL.",
+          "Read the marks and combine the amounts to get 300 mL."
+        ],
+        [
+          "Check sensible units for 150 mL cup, 500 mL bottle and 2 L jug, a 200 mL reading, and 200 + 300 = 500 mL.",
+          "Choose units, measure 200 mL and solve how much water the two pours make."
+        ],
+        [
+          "Ask why two pours must use the same unit before adding.",
+          "Explain that the values must count the same sized units."
+        ]
+      ],
+      "follow_up": "Match capacities to labelled containers before repeating the practical reading."
+    },
+    {
+      "materials": "Card nets, cube model, tape and sketch slips.",
+      "activities": [
+        [
+          "Show a cube and ask what shape an unfolded face makes.",
+          "Identify a square."
+        ],
+        [
+          "Compare a working cube net of six connected squares with six squares in a straight row. Fold the valid arrangement and explain overlap in the other.",
+          "Predict, test and point to where the straight row overlaps."
+        ],
+        [
+          "Offer a cross made from four squares in a row with one above and one below the second square, and the straight row. Check choice and six square faces.",
+          "Select the cross, identify all six faces and write or say why the straight row fails."
+        ],
+        [
+          "Ask whether six squares alone guarantee a cube net.",
+          "Explain that their arrangement must allow all faces to close without overlap."
+        ]
+      ],
+      "follow_up": "Fold the incorrect net again to find the overlapping faces."
+    },
+    {
+      "materials": "Plane-shape cards, grid paper and a circle stencil.",
+      "activities": [
+        [
+          "Show a square and a triangle. Ask what can be counted along the edges.",
+          "Identify straight sides and vertices."
+        ],
+        [
+          "Model sorting cards by number of straight sides and vertices. Compare a square with a non-square rectangle.",
+          "Sort and label triangles, circles and four-sided shapes and justify one placement."
+        ],
+        [
+          "Give a triangle, square, non-square rectangle and circle. Check sorting and two labelled sketches with correct side and vertex counts.",
+          "Classify all four cards, draw two shapes and explain both placements using their properties."
+        ],
+        [
+          "Ask which two shapes share four straight sides but can have different adjacent side lengths.",
+          "Name the square and the non-square rectangle."
+        ]
+      ],
+      "follow_up": "Trace the corners and sides one at a time with pupils who mixed the counts."
+    },
+    {
+      "materials": "Matching horizontal and vertical bar charts, rulers and answer slips.",
+      "activities": [
+        [
+          "Show one vertical and one horizontal bar. Ask what must be checked before reading a count.",
+          "Point to the numbered scale."
+        ],
+        [
+          "Give two charts of the same votes with bars for drawing, reading and puzzles. Trace vertical bar tops and horizontal bar ends to their scales.",
+          "Read one category on both charts and explain why the readings agree."
+        ],
+        [
+          "Use scale marks at 0, 2, 4, 6, 8 and 10 for counts 8, 6 and 4. Check all three counts from each chart and difference of 4 between drawing and puzzles.",
+          "Record each count from both charts and calculate the requested difference."
+        ],
+        [
+          "Ask if the first bar must have the largest value.",
+          "Explain that the scale reading determines the largest value."
+        ]
+      ],
+      "follow_up": "Practise tracing bar ends on a scale marked in twos."
+    },
+    {
+      "materials": "Survey chart, two shop price cards and play money.",
+      "activities": [
+        [
+          "Show a bookshop survey. Ask which category has the most votes and how to tell.",
+          "Name the longest bar and read its value from the scale."
+        ],
+        [
+          "Use one sample to show how chart counts answer demand and how a price comparison answers cost.",
+          "Point to the evidence used for each kind of answer."
+        ],
+        [
+          "Use survey counts of six notebooks, four pencils and two rulers. A notebook costs RM4.60 at A and RM4.30 at B. Check most votes, RM0.30 difference and RM5.70 change from RM10 at B.",
+          "Read the chart, select the cheaper shop and show the subtraction for difference and change."
+        ],
+        [
+          "Ask how to verify the change.",
+          "Add RM4.30 and RM5.70 to get RM10.00."
+        ]
+      ],
+      "follow_up": "Reteach chart or money work based on the calculation each pupil missed."
+    }
+  ]
+}
