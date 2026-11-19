@@ -76,6 +76,8 @@ def _word(row, context, reflection, review):
     from docx import Document
     from docx.oxml.ns import qn
 
+    from web.rph_phase_display import phase_heading
+
     document = Document(ROOT / (STEM + ".docx"))
     body = document.element.body
     section = body.sectPr
@@ -239,6 +241,9 @@ def _reflection_soft_breaks(reflection):
 
 
 if __name__ == "__main__":
+    import sys
+
+    sys.path.insert(0, str(ROOT.parents[1]))
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("unit", type=int)
     parser.add_argument("pdp", type=int)

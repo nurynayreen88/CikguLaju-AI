@@ -84,3 +84,5 @@ class MatematikSjktRphRelease(unittest.TestCase):
                 for value in ("PdP 071", "5.3.1", "Bilangan murid 27", "Selesai latihan."):
                     self.assertIn(value, text)
                 self.assertNotIn("Draf semakan", text)
+                self.assertIn("08:00 - 09:00", text)
+                self.assertNotRegex(text, r"\(\s*\d+\s+minit\s*\)|\|\s*60\s+minit\b")
