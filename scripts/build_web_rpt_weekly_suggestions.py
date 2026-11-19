@@ -3,6 +3,7 @@
 Run from the repository root with PyMuPDF installed. The Web uses the
 generated JSON, so requests require no PDF parsing or additional dependencies.
 """
+from argparse import ArgumentParser
 from collections import defaultdict
 from datetime import datetime
 from hashlib import sha256
@@ -33,6 +34,13 @@ RTL_SUBJECTS = {"ARAB", "PI"}
 WEEK = re.compile(r"\bM(\d{2})\b")
 DATE = re.compile(r"\d{2}/\d{2}/2027")
 LESSON = re.compile(r"(?:(PJ|PK) )?(?:Lesson|PdP) (\d{3})")
+APPROVED_SCIENCE = {5: 116, 6: 89}
+SCIENCE_WEEK = re.compile(
+    r"^M(\d{2})\nA (\d{2}/\d{2})–(\d{2}/\d{2})\n"
+    r"B (\d{2}/\d{2})–(\d{2}/\d{2})$", re.MULTILINE
+)
+SCIENCE_PDP = re.compile(r"^PdP (\d{3})$", re.MULTILINE)
+SCIENCE_MINUTES = re.compile(r"^(30|60) minit$", re.MULTILINE)
 
 
 def read_weeks(path, subject):
@@ -90,7 +98,47 @@ def read_weeks(path, subject):
     return dates_by_week, lessons_by_week
 
 
-def main():
+def approved_science_weeks(path, year):
+    """Read the schedule printed in an approved SK Science PDF."""
+    with fitz.open(path) as pdf:
+        text = "".join(page.get_text() for page in list(pdf)[1:])
+    rows = list(SCIENCE_WEEK.finditer(text))
+    weeks = {}
+    for index, row in enumerate(rows):
+        end = rows[index + 1].start() if index + 1 < len(rows) else len(text)
+        body = text[row.end():end]
+        numbers = list(map(int, SCIENCE_PDP.findall(body)))
+        minutes = list(map(int, SCIENCE_MINUTES.findall(body)))
+        if len(numbers) > 1 or len(numbers) != len(minutes):
+            raise ValueError(f"{path}: invalid PdP or duration in week {row[1]}")
+        if not numbers:
+            continue
+        dates = [datetime.strptime(f"{value}/2027", "%d/%m/%Y").date().isoformat()
+                 for value in row.groups()[1:]]
+        week = weeks.setdefault(str(int(row[1])), [*dates, {"": []}, []])
+        if week[:4] != dates:
+            raise ValueError(f"{path}: conflicting dates in week {row[1]}")
+        week[4][""].extend(numbers)
+        week[5].extend(minutes)
+    expected = list(range(1, APPROVED_SCIENCE[year] + 1))
+    if year == 6:
+        expected = expected[84:] + expected[:84]
+    if ([n for row in weeks.values() for n in row[4][""]] != expected
+            or len(SCIENCE_PDP.findall(text)) != len(expected)
+            or sum(m for row in weeks.values() for m in row[5]) != 64 * 60
+            or max(map(int, weeks)) != 38
+            or weeks.keys() & {"6", "18", "19"}):
+        raise ValueError(f"{path}: published Science schedule is incomplete or inconsistent")
+    return weeks
+
+
+def update_approved_science(catalog):
+    for year in APPROVED_SCIENCE:
+        path = ROOT.parent / "sains" / f"CikguLaju_RPT_Sains_SK_Tahun{year}_2027.pdf"
+        catalog[f"SCIENCE:{year}"] = approved_science_weeks(path, year)
+
+
+def manifest_catalog():
     manifest = json.loads((ROOT / "manifest.json").read_text(encoding="utf-8"))
     catalog = {}
     for key, entry in manifest["files"].items():
@@ -106,6 +154,16 @@ def main():
             str(week): [*dates[week], lessons[week]]
             for week in sorted(lessons)
         }
+    return catalog
+
+
+def main():
+    parser = ArgumentParser(description=__doc__)
+    parser.add_argument("--approved-science", action="store_true",
+                        help="refresh only the approved SK Science Year 5 and 6 entries")
+    args = parser.parse_args()
+    catalog = json.loads(OUTPUT.read_text(encoding="utf-8")) if args.approved_science else manifest_catalog()
+    update_approved_science(catalog)
     OUTPUT.write_text("{\n" + ",\n".join(
         json.dumps(key) + ":" + json.dumps(weeks, separators=(",", ":"))
         for key, weeks in sorted(catalog.items())

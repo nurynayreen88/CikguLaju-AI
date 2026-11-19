@@ -139,7 +139,7 @@ def weekly_rpt_suggestion(state, target, subject, year):
         if row[offset] <= selected <= row[offset + 1]:
             suggestion = {"week": int(week), "group": "A" if group_a else "B",
                           "lessons": row[4]}
-            if subject == "MATH" and year in (4, 5, 6) and len(row) == 6:
+            if len(row) == 6:
                 suggestion["slot_minutes"] = row[5]
             return suggestion
     return None
@@ -358,17 +358,16 @@ def assign_week_suggestions(days):
             continue
         # A class that is ahead or behind its RPT needs an explicit choice.
         compatible = True
-        for index, ((_, slot), numbers) in enumerate(zip(entries, sessions, strict=True)):
+        preceding = {sessions[0][0] - 1}
+        for (_, slot), numbers in zip(entries, sessions, strict=True):
             record = slot["progress"].get(component, {})
             completed = record.get("completed")
             previous = record.get("previous")
             if completed is not None and completed != numbers[-1]:
                 compatible = False
-            if previous is not None:
-                expected = sessions[index - 1][-1] if index else numbers[0] - 1
-                already_completed = {row[-1] for row in sessions[:index]}
-                if previous != expected and previous not in already_completed:
-                    compatible = False
+            if previous is not None and previous not in preceding:
+                compatible = False
+            preceding.add(numbers[-1])
         if compatible:
             for (_, slot), numbers in zip(entries, sessions, strict=True):
                 slot["suggested_session"] = numbers
