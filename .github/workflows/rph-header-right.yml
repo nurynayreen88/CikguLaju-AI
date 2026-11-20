@@ -28,4 +28,4 @@ jobs:
       - name: Verify Word and PDF layout and curriculum retention
         run: |
           python -m pytest -q tests/test_arabic_header_right_20261121.py
-          python tools/other_draft_actual_smoke_20261106.py
+          PYTHONPATH=. python tools/other_draft_actual_smoke_20261106.py
