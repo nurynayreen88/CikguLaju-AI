@@ -25,6 +25,7 @@ class PpkiWebTest(unittest.TestCase):
             "lessons": [{"value": f"{n:03d}", "label": f"PdP {n:03d}", "formats": ["word", "pdf"],
                          "textbook_ref": "Buku Teks hlm. 21"} for n in range(1, 15)],
         }
+        self.catalog_year3 = None
         self.pdf = b"%PDF-1.4\n" + b"%" * 9000
         self.docx = BytesIO()
         with ZipFile(self.docx, "w") as doc:
@@ -50,7 +51,11 @@ class PpkiWebTest(unittest.TestCase):
         self.source_requests.append((path, payload))
         if path == "catalog":
             return json.dumps(self.catalog).encode()
-        if path in ("rpt.pdf", "rpt-current.pdf", "rpt-manipulatif.pdf"):
+        if path == "catalog?year=3":
+            if self.catalog_year3 is None:
+                raise ppki.NativeRPHUnavailable("Year 3 source is not deployed")
+            return json.dumps(self.catalog_year3).encode()
+        if path in ("rpt.pdf", "rpt-current.pdf", "rpt-manipulatif.pdf", "rpt.pdf?year=3"):
             return self.pdf
         return self.docx.getvalue() if payload["format"] == "word" else self.pdf
 
@@ -67,9 +72,51 @@ class PpkiWebTest(unittest.TestCase):
             self.assertEqual(response.status_code, 200, response.get_json())
             self.assertEqual(response.get_json()[0]["value"], token)
         self.assertEqual(len(response.get_json()), 14)
-        self.assertEqual(self.client.get(opts, query_string={"year": 3, **queries[0][0]}).status_code, 400)
+        self.assertEqual(self.client.get(opts, query_string={"year": 3, **queries[0][0]}).status_code, 503)
+        self.assertEqual(self.client.get(opts, query_string={"year": 4, **queries[0][0]}).status_code, 400)
         self.assertEqual(self.client.get(opts, query_string={"year": 2, "kind": "pdp", "subject": ppki.SUBJECT,
                                                              "unit": "u01"}).status_code, 400)
+
+    def test_year3_exact_pdp_rph_and_rpt_access(self):
+        self.catalog_year3 = {
+            **self.catalog, "year": 3,
+            "units": [{"value": ppki.UNIT1, "label": "Unit 1 · Sekolah, Duniaku"}],
+            "lessons": [{"value": f"{number:03d}", "label": f"PdP {number:03d}",
+                         "formats": ["word", "pdf"], "textbook_ref": "Buku Teks hlm. 4–16"}
+                        for number in range(1, 18)],
+        }
+        selection = {**self.selection, "year": 3, "unit": ppki.UNIT1, "lesson": "017"}
+        choices = self.client.get("/api/options", query_string={
+            "year": 3, "kind": "pdp", "subject": ppki.SUBJECT, "unit": ppki.UNIT1,
+        })
+        self.assertEqual([row["value"] for row in choices.json], [f"{number:03d}" for number in range(1, 18)])
+        for fmt in ("word", "pdf"):
+            response = self.client.get(f"/api/web/rph/{fmt}", query_string=selection)
+            self.assertEqual(response.status_code, 200)
+            self.assertIn("TAHUN_3_017", response.headers["Content-Disposition"])
+            self.assertEqual(self.source_requests[-1][1]["selection"], selection)
+        self.assertEqual(self.client.get("/api/web/rph/availability",
+                         query_string={**selection, "year": 2}).status_code, 503)
+        listing = self.client.get("/api/rpt/2027/catalog").json
+        entry, = [row for row in listing["subjects"] if row["code"] == ppki.RPT_CODE]
+        self.assertEqual([item["year"] for item in entry["years"]], [2, 3])
+        self.assertIn("17 PdP Unit 1", entry["years"][1]["note"])
+        url = f"/api/rpt/2027/all/{ppki.RPT_CODE}/3.pdf"
+        rpt = self.client.get(url)
+        self.assertEqual(rpt.status_code, 200)
+        self.assertIn("TAHUN_3_UNIT_1", rpt.headers["Content-Disposition"])
+        self.assertEqual(self.source_requests[-1][0], "rpt.pdf?year=3")
+        materials = "/api/web/rph/extra-materials"
+        self.assertEqual(self.client.get(materials, query_string=selection).json["items"], [])
+        video = self.client.get(materials, query_string={**selection, "lesson": "003"}).json["items"][0]
+        self.assertEqual((video["type"], video["action"]), ("video", "Muat Turun Video"))
+        self.assertTrue(video["url"].startswith("https://drive.usercontent.google.com/download?"))
+        self.paid = False
+        self.assertEqual(self.client.get(url).status_code, 403)
+        self.credits = 0
+        blocked = self.client.get(materials, query_string={**selection, "lesson": "003"})
+        self.assertEqual(blocked.status_code, 403)
+        self.assertEqual(blocked.json["code"], "FREE_TRIAL_EXHAUSTED")
 
     def test_manipulative_component_selection_and_existing_rpt(self):
         opts = "/api/options"
