@@ -171,6 +171,40 @@ class PpkiApiTest(unittest.TestCase):
                 self.assertIn("Kemahiran Manipulatif", page.extract_text())
                 self.assertIn(last, page.extract_text())
 
+    def test_year4_first_pengurusan_diri_unit(self):
+        app = Flask(__name__)
+        app.register_blueprint(create_ppki_blueprint())
+        client = app.test_client()
+        prefix = "/internal/rph/v1/ppki"
+        token = "Y" * 32
+        headers = {"Authorization": f"Bearer {token}"}
+        with patch.dict("os.environ", {"CIKGULAJU_AUTHORITATIVE_API_TOKEN": token,
+                                       "CIKGULAJU_WEB_NATIVE_RPH_ENABLED": "1"}):
+            options = client.get(prefix + "/catalog?year=4", headers=headers).get_json()
+            self.assertEqual(options["year"], 4)
+            self.assertEqual(options["units"], [{"value": UNIT1, "label": "Unit 1 · Bertamu di Inap Desa"}])
+            self.assertEqual([r["value"] for r in options["lessons"]], [f"{n:03d}" for n in range(1, 10)])
+            self.assertFalse(options["kemahiran_manipulatif"])
+            for lesson in options["lessons"]:
+                selection = {"year": 4, "subject": SUBJECT, "unit": UNIT1, "lesson": lesson["value"]}
+                for fmt in ("word", "pdf"):
+                    result = client.post(prefix + "/render", headers=headers,
+                                         json={"selection": selection, "teacher": dict.fromkeys(("class", "date", "time", "students"), ""), "format": fmt})
+                    self.assertEqual(result.status_code, 200)
+                    self.assertIn("TAHUN_4_" + lesson["value"], result.headers["Content-Disposition"])
+                    if fmt == "pdf":
+                        doc = PdfReader(BytesIO(result.data))
+                        self.assertEqual(len(doc.pages), 1)
+                        self.assertIn("Tahun 4", doc.pages[0].extract_text())
+                    else:
+                        self.assertEqual(len(Document(BytesIO(result.data)).tables), 3)
+            result = client.get(prefix + "/rpt.pdf?year=4", headers=headers)
+            self.assertEqual(result.status_code, 200)
+            rpt = PdfReader(BytesIO(result.data))
+            self.assertEqual(len(rpt.pages), 1)
+            self.assertIn("009", rpt.pages[0].extract_text())
+            self.assertEqual(client.get(prefix + "/rpt-manipulatif.pdf?year=4", headers=headers).status_code, 404)
+
     def test_all_71_word_pdf_and_protected_access(self):
         app = Flask(__name__)
         app.register_blueprint(create_ppki_blueprint())

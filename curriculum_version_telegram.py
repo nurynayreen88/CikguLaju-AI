@@ -283,7 +283,9 @@ def install(namespace):
     def subjects(cid,label):
         st=state.setdefault(cid,{})
         if st.get("curriculum_version") == PPKI:
-            return ppki_navigation(cid, st, "year3" if st.get("year") == "Tahun 3" else "year2")
+            from staging.ppki.catalog import YEAR
+            saved_year = str(st.get("year", "")).removeprefix("Tahun ")
+            return ppki_navigation(cid, st, f"year{saved_year or YEAR}")
         if st.get("curriculum_version") == DLP:
             reset_selection(cid, LEGACY)["year"] = label
             return previous_subjects(cid, label)

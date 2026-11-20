@@ -92,8 +92,8 @@ def install(ns):
         if is_ppki:
             from staging.ppki.catalog import (
                 MANIPULATIVE_UNIT_LESSONS, RPT_COMBINED_EDITION, RPT_COMBINED_FILENAME,
-                RPT_MANIPULATIVE_FILENAME, RPT_MANIPULATIVE_YEAR3_FILENAME, RPT_YEAR3_EDITION, RPT_YEAR3_FILENAME,
-                UNIT_LESSONS, YEAR3_LESSONS, YEAR3_MANIPULATIVE_UNIT_LESSONS,
+                RPT_MANIPULATIVE_FILENAME, RPT_MANIPULATIVE_YEAR3_FILENAME, RPT_YEAR3_EDITION, RPT_YEAR3_FILENAME, RPT_YEAR4_FILENAME,
+                UNIT_LESSONS, YEAR3_LESSONS, YEAR3_MANIPULATIVE_UNIT_LESSONS, YEAR4_LESSONS,
             )
             from staging.ppki.rpt import render_rpt
             count = sum(len(numbers) for numbers in UNIT_LESSONS.values())
@@ -103,6 +103,7 @@ def install(ns):
                 return send(cid, "📅 <b>RPT 2027 · Pendidikan Khas (PPKI)</b>\n\nPilih tahun.", [
                     [{"text": "Tahun 2", "callback_data": "rpt2027_ppki_year2"}],
                     [{"text": "Tahun 3", "callback_data": "rpt2027_ppki_year3"}],
+                    [{"text": "Tahun 4", "callback_data": "rpt2027_ppki_year4"}],
                     [{"text": "⬅️ Kembali", "callback_data": "rpt2027_home"}],
                 ])
             if data == "rpt2027_ppki_year2":
@@ -122,9 +123,17 @@ def install(ns):
                     [{"text": "Kemahiran Manipulatif (PDF)", "callback_data": "rpt2027_ppki_km_pdf3"}],
                     [{"text": "⬅️ Kembali", "callback_data": "rpt2027_ppki_home"}],
                 ])
+            if data == "rpt2027_ppki_year4":
+                count_year4 = sum(len(numbers) for numbers in YEAR4_LESSONS.values())
+                return send(cid, f"<b>PPKI Tahun 4 · Pengurusan Kehidupan</b>\n\n"
+                            f"Pengurusan Diri Unit 1: {count_year4} PdP.", [
+                    [{"text": "Pengurusan Diri Unit 1 (PDF)", "callback_data": "rpt2027_ppki_pdf4"}],
+                    [{"text": "⬅️ Kembali", "callback_data": "rpt2027_ppki_home"}],
+                ])
             downloads = {
                 "rpt2027_ppki_pdf2": (2, False), "rpt2027_ppki_km_pdf2": (2, True),
                 "rpt2027_ppki_pdf3": (3, False), "rpt2027_ppki_km_pdf3": (3, True),
+                "rpt2027_ppki_pdf4": (4, False),
             }
             if data not in downloads:
                 return send(cid, "Pilihan RPT PPKI tidak sah.")
@@ -136,6 +145,8 @@ def install(ns):
                 edition = "Kemahiran Manipulatif Unit 1–3"
             elif year == 3:
                 filename, edition = RPT_YEAR3_FILENAME, RPT_YEAR3_EDITION
+            elif year == 4:
+                filename, edition = RPT_YEAR4_FILENAME, "Unit 1"
             try:
                 with TemporaryDirectory(prefix="cikgulaju-rpt-ppki-") as folder:
                     path = Path(folder) / filename
