@@ -70,7 +70,7 @@ class DlpDownloadTests(unittest.TestCase):
         self.assertEqual(fields["Learning Standards"],
                          "10.1.6 Explain observations about a finished structure using drawings, digital tools, writing or speech")
         self.assertEqual(doc.tables[-1].cell(0, 1).text, self.teacher["reflection"])
-        self.assertEqual(len(doc.tables[1].rows), 5)
+        self.assertEqual(len(doc.tables[1].rows), 4)
         pdf = self.download("pdf")
         self.assertEqual(pdf.status_code, 200)
         self.assertEqual(pdf.mimetype, "application/pdf")
@@ -102,14 +102,10 @@ class DlpDownloadTests(unittest.TestCase):
                 self.assertEqual(references, lesson["references"])
                 word = Document(BytesIO(render("SCIENCE_DLP", unit, lesson, "word", self.teacher)))
                 self.assertEqual(word.tables[0].cell(1, 1).text, f"Lesson {number:02d}")
-                activities = word.tables[1].rows[1:]
                 self.assertEqual(science_rpt_lessons()[lesson["id"]]["minutes"], minutes)
-                self.assertEqual([r.cells[0].text for r in activities],
-                                 [phase[0].rsplit(" · ", 1)[0] for phase in lesson["phases"]])
-                self.assertEqual(
-                    [[cell.text for cell in r.cells[1:]] for r in activities],
-                    [phase[1:] for phase in lesson["phases"]],
-                )
+                activities = "\n".join(row.cells[1].text for row in word.tables[1].rows[1:])
+                for _, teacher_action, pupil_action in lesson["phases"]:
+                    self.assertIn(f"Teacher: {teacher_action}\nPupils: {pupil_action}", activities)
 
     def test_mathematics_lessons_match_the_year_two_rpt(self):
         folder = Path(__file__).resolve().parents[1] / "rpt_2027" / "dlp"
@@ -164,22 +160,19 @@ class DlpDownloadTests(unittest.TestCase):
                         self.assertEqual(shading.get(qn("w:fill")), fill)
                         self.assertEqual(fields["Lesson / PdP"], item["label"])
                         table = doc.tables[1]
+                        self.assertEqual(len(table.rows), 4)
+                        self.assertEqual([cell.text for cell in table.rows[0].cells],
+                                         ["Phase", "Teaching and Learning Activities", "Notes"])
+                        self.assertTrue(all(not row.cells[2].text for row in table.rows[1:]))
+                        headings = [run.text for run in table.cell(2, 1).paragraphs[0].runs if run.bold]
+                        phase_names = [table.cell(1, 0).text, *headings, table.cell(3, 0).text]
+                        self.assertEqual(phase_names,
+                                         [phase.rsplit(" · ", 1)[0] for phase, *_ in plan["phases"]])
+                        activity_text = "\n".join(row.cells[1].text for row in table.rows[1:])
+                        for _, teacher_action, pupil_action in plan["phases"]:
+                            self.assertIn(f"Teacher: {teacher_action}\nPupils: {pupil_action}", activity_text)
                         if subject == "MATH_DLP":
-                            self.assertEqual(len(table.rows), 4)
-                            self.assertEqual([cell.text for cell in table.rows[0].cells],
-                                             ["Phase", "Teaching and Learning Activities", "Notes"])
-                            headings = [run.text for run in table.cell(2, 1).paragraphs[0].runs
-                                        if run.bold]
-                            self.assertEqual(len(headings), len(plan["phases"]) - 2)
-                            phase_names = [table.cell(1, 0).text, *headings, table.cell(3, 0).text]
                             self.assertEqual(fields["Time"], self.teacher["time"])
-                            activity_text = "\n".join(row.cells[1].text for row in table.rows[1:])
-                            for _, teacher_action, pupil_action in plan["phases"]:
-                                self.assertIn(f"Teacher: {teacher_action}\nPupils: {pupil_action}",
-                                              activity_text)
-                        else:
-                            self.assertEqual(len(table.rows), 5)
-                            phase_names = [row.cells[0].text for row in table.rows[1:]]
                         for name in phase_names:
                             self.assertNotRegex(name, r"\d+ min(?:it)?\b")
                         pdf = self.download("pdf", selection=selection)
@@ -191,6 +184,7 @@ class DlpDownloadTests(unittest.TestCase):
                         cs_codes = list(dict.fromkeys(code.rsplit(".", 1)[0] for code in ls_codes))
                         pdf_text = " ".join(page.extract_text().split())
                         self.assertNotIn("RPT 2027 dates", pdf_text)
+                        self.assertIn("Phase Teaching and Learning Activities Notes", pdf_text)
                         pdf_fills = {bytes(round(float(value) * 255) for value in rgb).hex().upper()
                                      for rgb, operator in page.get_contents().operations if operator == b"rg"}
                         self.assertIn(fill, pdf_fills)

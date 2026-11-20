@@ -75,7 +75,14 @@ class ScienceYear6ReviewExports(unittest.TestCase):
                 word = Document(folder / f"{stem}.docx")
                 fields = {row.cells[0].text: row.cells[1].text for row in word.tables[0].rows}
                 self.assertEqual(fields["Standard Kandungan"], f"{plan['sk']} {plan['sk_text']}")
+                table = word.tables[1]
+                self.assertEqual([cell.text for cell in table.rows[0].cells],
+                                 ["Fasa", "Aktiviti Pengajaran & Pembelajaran", "Catatan"])
+                activities = "\n".join(row.cells[1].text for row in table.rows[1:])
+                for _, teacher, pupils in plan["phases"]:
+                    self.assertIn(f"Guru: {teacher}\nMurid: {pupils}", activities)
                 pdf = " ".join(PdfReader(folder / f"{stem}.pdf").pages[0].extract_text().split())
+                self.assertIn("Fasa Aktiviti Pengajaran & Pembelajaran Catatan", pdf)
                 for code, description in zip(plan["standards"], plan["sp_texts"], strict=True):
                     self.assertIn(f"{code} {description}", fields["Standard Pembelajaran"])
                     self.assertIn(f"{code} {description}", pdf)

@@ -171,6 +171,8 @@ _SESSION_LABELS = {
 _RPT_DATE_FIELDS = {"Tarikh RPT", "Julat RPT", "RPT 2027 dates", "RPT date ranges"}
 _MATHEMATICS_FILL = "DCEBFA"
 _SCIENCE_FILL = "DFF1E3"
+_FIELD_WIDTHS = (48, 134)
+_ACTIVITY_WIDTHS = (32, 122, 28)
 
 
 def _rph_display_rows(details, activities):
@@ -185,8 +187,8 @@ def _rph_display_rows(details, activities):
     return fields, phases
 
 
-def _math_layout(heading, details, activities, teacher):
-    """Map the authored Mathematics lesson to the original three-table RPH."""
+def _math_details(heading, details, teacher):
+    """Display Mathematics lesson and class details in the established fields."""
     english = heading[0] == "Daily Lesson Plan"
     title = heading[0].upper()
     teacher = teacher or {}
@@ -220,9 +222,14 @@ def _math_layout(heading, details, activities, teacher):
             fields.extend([("Standard Kandungan", sk), ("Standard Pembelajaran", "SP " + sp)])
         else:
             fields.append((label, value))
+    return (title, *heading[1:]), fields
+
+
+def _activity_table(activities, *, english):
+    """Place both roles in the activity cell and leave room for notes."""
+    teacher_label, pupil_label = ("Teacher", "Pupils") if english else ("Guru", "Murid")
 
     def actions(teacher_action, pupil_action):
-        teacher_label, pupil_label = ("Teacher", "Pupils") if english else ("Guru", "Murid")
         return f"{teacher_label}: {teacher_action}\n{pupil_label}: {pupil_action}"
 
     header = (("Phase", "Teaching and Learning Activities", "Notes") if english
@@ -234,10 +241,9 @@ def _math_layout(heading, details, activities, teacher):
         activity_title = phase.replace("\n", " – ").replace(" · ", " – ")
         blocks.extend(((activity_title, True),
                        (actions(teacher_action, pupil_action), False)))
-    phases = [header, (induction[0], actions(*induction[1:]), ""),
-              (main_heading, tuple(blocks), ""),
-              (closure[0], actions(*closure[1:]), "")]
-    return (title, *heading[1:]), fields, phases
+    return [header, (induction[0], actions(*induction[1:]), ""),
+            (main_heading, tuple(blocks), ""),
+            (closure[0], actions(*closure[1:]), "")]
 
 
 def _cell_lines(value, bold):
@@ -267,8 +273,9 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
         return element
 
     details, activities = _rph_display_rows(details, activities)
+    activities = _activity_table(activities, english=heading[0] == "Daily Lesson Plan")
     if mathematics:
-        heading, details, activities = _math_layout(heading, details, activities, teacher)
+        heading, details = _math_details(heading, details, teacher)
     doc = Document()
     doc.core_properties.title = f"{heading[0]} · {heading[2]}"
     section = doc.sections[0]
@@ -348,22 +355,17 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
                 paragraph.paragraph_format.space_after = Pt(padding)
                 if header and i == 0:
                     paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
-                if mathematics:
-                    for index, (line, strong) in enumerate(_cell_lines(value, bold)):
-                        if index:
-                            paragraph.add_run().add_break()
-                        paragraph.add_run(line).bold = strong
-                else:
-                    paragraph.add_run(value).bold = bold
+                for index, (line, strong) in enumerate(_cell_lines(value, bold)):
+                    if index:
+                        paragraph.add_run().add_break()
+                    paragraph.add_run(line).bold = strong
 
-    fields_width = (48, 134) if mathematics else (36, 146)
-    steps_width = (32, 122, 28) if mathematics else (36, 73, 73)
     word_gap(doc)
-    table(details, fields_width)
+    table(details, _FIELD_WIDTHS)
     word_gap(doc)
-    table(activities, steps_width, header=True)
+    table(activities, _ACTIVITY_WIDTHS, header=True)
     word_gap(doc)
-    table(reflection, fields_width)
+    table(reflection, _FIELD_WIDTHS)
     if mathematics:
         footer = section.footer.paragraphs[0]
         footer.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -386,8 +388,9 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
 
     fill = colors.HexColor("#" + (_MATHEMATICS_FILL if mathematics else _SCIENCE_FILL))
     details, activities = _rph_display_rows(details, activities)
+    activities = _activity_table(activities, english=heading[0] == "Daily Lesson Plan")
     if mathematics:
-        heading, details, activities = _math_layout(heading, details, activities, teacher)
+        heading, details = _math_details(heading, details, teacher)
     regular, bold, _ = pdf_fonts()
     font_size = 9 if mathematics else 9.5
     leading = (9.35 if compact else 9.9) if mathematics else (11 if compact else 12)
@@ -440,16 +443,14 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
         ("TOPPADDING", (0, 0), (-1, -1), 4),
         ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
     ])
-    fields_width = (48, 134) if mathematics else (36, 146)
-    steps_width = (32, 122, 28) if mathematics else (36, 73, 73)
     story = [
         title_panel,
         Spacer(1, 6),
-        table(details, fields_width),
+        table(details, _FIELD_WIDTHS),
         Spacer(1, 6),
-        table(activities, steps_width, header=True),
+        table(activities, _ACTIVITY_WIDTHS, header=True),
         Spacer(1, 6),
-        table(reflection, fields_width),
+        table(reflection, _FIELD_WIDTHS),
     ]
     if mathematics:
         story = [KeepInFrame(182 * mm, 274 * mm, story, mode="shrink")]
