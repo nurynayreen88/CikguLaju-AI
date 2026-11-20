@@ -67,6 +67,30 @@ PPKI_SOURCE_VIDEOS = {
     },
 }
 
+PPKI_YEAR2_AND_3_MEDIA = {
+    **{(2, ppki.UNIT3, f"{lesson:03d}"): ({
+        "type": "audio", "title": "Rasa Sayang · Rakaman alternatif Syntax Media (CC0) · Buku Teks hlm. 23",
+        "url": "https://drive.usercontent.google.com/download?id=19tKkCMYNtEd49dGOtnnA3338vQXRtY4C&export=download&confirm=t",
+        "action": "Muat Turun Audio",
+    },) for lesson in range(15, 19)},
+    (2, ppki.MANIPULATIVE_UNIT1, "050"): ({
+        "type": "audio", "title": "Sayang Kinabalu · Versi Reno di RIA Music Store · Buku Teks hlm. 45",
+        "url": "https://www.riamusicstore.com/product/sayang-kinabalu/", "action": "Dengar Audio",
+    },),
+    (2, ppki.MANIPULATIVE_UNIT2, "055"): ({
+        "type": "video", "title": "Labah-labah Kecil · Rakaman alternatif · Buku Teks hlm. 51",
+        "url": "https://www.youtube.com/watch?v=afPw9Bry2rA", "action": "Mainkan Rakaman",
+    },),
+    (3, ppki.UNIT3, "036"): ({
+        "type": "audio", "title": "Can Mali Can · Contoh iringan Legato Music · Buku Teks hlm. 32",
+        "url": "https://legatomusiconline.com/wp-content/uploads/2021/10/Chan-Mali-Chan-Flexi5-Sample-Sound.mp3",
+        "action": "Dengar Audio",
+    }, {
+        "type": "video", "title": "Can Mali Can · Iringan alternatif Teacher Rey · Buku Teks hlm. 32",
+        "url": "https://www.youtube.com/watch?v=HmPxwUhtehs", "action": "Mainkan Rakaman",
+    }),
+}
+
 PPKI_SINGA_DAN_TIKUS = (
     {"type": "video", "title": "Singa dan Tikus · Cerita Dongeng hlm. 62",
      "url": "https://www.youtube.com/watch?v=llPhFm0J_yc", "action": "Mainkan Rakaman"},
@@ -1290,6 +1314,7 @@ def create_blueprint():
         if sub == "MUZIK" and year in range(2, 7):
             return year, sub, unit, lesson, None
         if sub == ppki.SUBJECT and ((year, unit, lesson) == (3, ppki.UNIT1, "003")
+                                    or (year, unit, lesson) in PPKI_YEAR2_AND_3_MEDIA
                                     or (year, unit, lesson) in PPKI_SOURCE_VIDEOS
                                     or (year == 5 and (unit, lesson) in PPKI_YEAR5_MEDIA)
                                     or (year == 6 and unit == ppki.UNIT1 and lesson in PPKI_YEAR6_AGENCY_LESSONS)
@@ -1319,6 +1344,9 @@ def create_blueprint():
         try:
             if sub == ppki.SUBJECT:
                 ppki.validate_selection(year, sub, unit, token)
+                items = PPKI_YEAR2_AND_3_MEDIA.get((year, unit, token))
+                if items:
+                    return jsonify({"status": "PAUTAN_RAKAMAN", "items": items})
                 if year == 6:
                     items = PPKI_YEAR6_AGENCY_VIDEOS if unit == ppki.UNIT1 else PPKI_YEAR6_POETRY
                     return jsonify({"status": "PAUTAN_RAKAMAN", "items": items})
