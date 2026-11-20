@@ -21,6 +21,7 @@ UNIT = "u02-pengurusan-diri"
 UNIT3 = "u03-pengurusan-diri"
 UNIT4 = "u04-pengurusan-diri"
 UNIT5 = "u05-pengurusan-diri"
+UNIT6 = "u06-pengurusan-diri"
 UNIT_LESSONS = {
     UNIT: range(1, 15), UNIT3: range(15, 19), UNIT4: range(19, 24),
     UNIT5: range(24, 30), UNIT1: range(30, 40),
@@ -31,7 +32,7 @@ MANIPULATIVE_UNIT_LESSONS = {
     MANIPULATIVE_UNIT3: range(64, 72),
 }
 YEAR = 2
-YEARS = (2, 3, 4)
+YEARS = (2, 3, 4, 5)
 YEAR3_LESSONS = {
     UNIT1: range(1, 18), UNIT: range(18, 36), UNIT3: range(36, 40),
     UNIT4: range(40, 44), UNIT5: range(44, 50),
@@ -48,6 +49,10 @@ YEAR4_MANIPULATIVE_UNIT_LESSONS = {
     MANIPULATIVE_UNIT1: range(40, 55),
     MANIPULATIVE_UNIT2: range(55, 67),
     MANIPULATIVE_UNIT3: range(67, 79),
+}
+YEAR5_LESSONS = {
+    UNIT1: range(1, 10), UNIT: range(10, 14), UNIT3: range(14, 22),
+    UNIT4: range(22, 30), UNIT5: range(30, 34), UNIT6: range(34, 42),
 }
 FORMATS = ("word", "pdf")
 RPT_CODE = "pengurusan_kehidupan_ppki"
@@ -90,12 +95,14 @@ def _validate_unit(unit, unit_id, accepted_lessons):
 def catalog(year=YEAR):
     if year not in YEARS:
         raise ValueError("Unknown PPKI year")
-    direct_units = {YEAR: UNIT_LESSONS, 3: YEAR3_LESSONS, 4: YEAR4_LESSONS}[year]
+    direct_units = {
+        YEAR: UNIT_LESSONS, 3: YEAR3_LESSONS, 4: YEAR4_LESSONS, 5: YEAR5_LESSONS,
+    }[year]
     manipulative_units = {
         YEAR: MANIPULATIVE_UNIT_LESSONS,
         3: YEAR3_MANIPULATIVE_UNIT_LESSONS,
         4: YEAR4_MANIPULATIVE_UNIT_LESSONS,
-    }[year]
+    }.get(year, {})
     first_unit = next(iter(direct_units))
     try:
         path = "catalog" if year == YEAR else f"catalog?year={year}"
@@ -174,6 +181,8 @@ def accepted_unit(year, unit):
         return unit in YEAR3_LESSONS or unit in YEAR3_MANIPULATIVE_UNIT_LESSONS
     if year == 4:
         return unit in YEAR4_LESSONS or unit in YEAR4_MANIPULATIVE_UNIT_LESSONS
+    if year == 5:
+        return unit in YEAR5_LESSONS
     return year == YEAR and (unit in UNIT_LESSONS or unit in MANIPULATIVE_UNIT_LESSONS)
 
 
@@ -214,6 +223,8 @@ def request_rpt(*, combined=False, manipulative=False, year=YEAR):
     if year in (3, 4):
         path = "rpt-manipulatif.pdf" if manipulative else "rpt.pdf"
         return _document(f"{path}?year={year}", "pdf")
+    if year == 5 and not manipulative:
+        return _document("rpt.pdf?year=5", "pdf")
     if year != YEAR:
         raise ValueError("Invalid year for PPKI RPT")
     if manipulative:
