@@ -67,22 +67,25 @@ PPKI_SOURCE_VIDEOS = {
     },
 }
 
-PPKI_DOORBELL_AUDIO = {
-    "type": "audio", "title": "Bunyi loceng pintu · Buku Teks hlm. 61",
-    "url": "https://drive.usercontent.google.com/download?id=1d-vr96Ik_Jr6PttY2h7pou1wqeGNa92A&export=download&confirm=t",
-    "action": "Muat Turun Audio",
-}
-PPKI_SURROUNDING_SOUNDS = ({
-    "type": "audio", "title": "Bunyi kapal terbang melintas · Buku Teks hlm. 61",
-    "url": "https://drive.usercontent.google.com/download?id=1Ig0seAVuGqHJhLwRjoZrL8tYEKM40gJK&export=download&confirm=t",
-    "action": "Muat Turun Audio",
-}, {
-    "type": "audio", "title": "Kicauan burung · Buku Teks hlm. 61",
-    "url": "https://drive.usercontent.google.com/download?id=1HlKNJhtrp5ASu5NDaby9GUhMO9PnfWez&export=download&confirm=t",
-    "action": "Muat Turun Audio",
-}, PPKI_DOORBELL_AUDIO)
+def _ppki_mp3(title, file_id):
+    return {
+        "type": "audio", "title": title, "action": "Muat Turun Audio",
+        "url": f"https://drive.usercontent.google.com/download?id={file_id}&export=download&confirm=t",
+    }
 
-PPKI_YEAR2_AND_3_MEDIA = {
+
+PPKI_DOORBELL_AUDIO = _ppki_mp3("Bunyi loceng pintu", "1d-vr96Ik_Jr6PttY2h7pou1wqeGNa92A")
+PPKI_AIRPLANE_AUDIO = _ppki_mp3("Bunyi kapal terbang melintas", "1Ig0seAVuGqHJhLwRjoZrL8tYEKM40gJK")
+PPKI_BIRDS_AUDIO = _ppki_mp3("Kicauan burung", "1HlKNJhtrp5ASu5NDaby9GUhMO9PnfWez")
+PPKI_SURROUNDING_SOUNDS = (PPKI_AIRPLANE_AUDIO, PPKI_BIRDS_AUDIO, PPKI_DOORBELL_AUDIO)
+PPKI_SITUATION_SOUNDS = (
+    _ppki_mp3("Bunyi ketukan pintu", "1PE_jh74ozM0dFQP7pgog0jKBCBxGSl5s"),
+    _ppki_mp3("Bunyi hujan", "1ciXKlkIhdD_0PcszWGIgRCDi6t9RqsDc"),
+    PPKI_DOORBELL_AUDIO,
+    PPKI_AIRPLANE_AUDIO,
+)
+
+PPKI_LESSON_MEDIA = {
     **{(2, ppki.UNIT3, f"{lesson:03d}"): ({
         "type": "audio", "title": "Rasa Sayang · Rakaman alternatif Syntax Media (CC0) · Buku Teks hlm. 23",
         "url": "https://drive.usercontent.google.com/download?id=19tKkCMYNtEd49dGOtnnA3338vQXRtY4C&export=download&confirm=t",
@@ -107,6 +110,14 @@ PPKI_YEAR2_AND_3_MEDIA = {
         "type": "video", "title": "Can Mali Can · Iringan alternatif Teacher Rey · Buku Teks hlm. 32",
         "url": "https://www.youtube.com/watch?v=HmPxwUhtehs", "action": "Mainkan Rakaman",
     }),
+    (3, ppki.MANIPULATIVE_UNIT3, "062"): (
+        _ppki_mp3("Enam contoh bunyi kuat dan perlahan", "1ssu077B9Tm2ItgGvSYvAZLJXjlakdWjb"),
+    ),
+    (3, ppki.MANIPULATIVE_UNIT3, "063"): (*PPKI_SITUATION_SOUNDS, PPKI_BIRDS_AUDIO),
+    (3, ppki.MANIPULATIVE_UNIT3, "064"): PPKI_SITUATION_SOUNDS,
+    (6, ppki.MANIPULATIVE_UNIT3, "066"): (
+        _ppki_mp3("Tepukan isyarat larian · 80 dan 100 BPM", "1DOe-RuYGUKyaoymT_8BgMCfsYZBN5fj-"),
+    ),
 }
 
 PPKI_SINGA_DAN_TIKUS = (
@@ -1332,7 +1343,7 @@ def create_blueprint():
         if sub == "MUZIK" and year in range(2, 7):
             return year, sub, unit, lesson, None
         if sub == ppki.SUBJECT and ((year, unit, lesson) == (3, ppki.UNIT1, "003")
-                                    or (year, unit, lesson) in PPKI_YEAR2_AND_3_MEDIA
+                                    or (year, unit, lesson) in PPKI_LESSON_MEDIA
                                     or (year, unit, lesson) in PPKI_SOURCE_VIDEOS
                                     or (year == 5 and (unit, lesson) in PPKI_YEAR5_MEDIA)
                                     or (year == 6 and unit == ppki.UNIT1 and lesson in PPKI_YEAR6_AGENCY_LESSONS)
@@ -1362,7 +1373,7 @@ def create_blueprint():
         try:
             if sub == ppki.SUBJECT:
                 ppki.validate_selection(year, sub, unit, token)
-                items = PPKI_YEAR2_AND_3_MEDIA.get((year, unit, token))
+                items = PPKI_LESSON_MEDIA.get((year, unit, token))
                 if items:
                     return jsonify({"status": "PAUTAN_RAKAMAN", "items": items})
                 if year == 6:
