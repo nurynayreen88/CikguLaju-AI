@@ -81,13 +81,42 @@ def install(ns):
         is_psv = data.startswith("rpt2027_psv_pdf_")
         is_dlp = data.startswith("rpt2027_dlp:")
         is_language = data.startswith("rpt2027_language:")
+        is_ppki = data.startswith("rpt2027_ppki_")
         callback_key, separator, payload = data.partition(":")
         school_subject = SCHOOL_RPT_CALLBACKS.get(callback_key) if separator else None
-        if data != "rpt2027_home" and not is_year and not is_download and not is_psv and not is_dlp and not is_language and school_subject is None:
+        if data != "rpt2027_home" and not is_year and not is_download and not is_psv and not is_dlp and not is_language and not is_ppki and school_subject is None:
             return previous(cid, d)
         # Enforce entitlement again for stale/forged buttons and downloads.
         if not allowed(cid):
             return locked(cid)
+        if is_ppki:
+            from staging.ppki.catalog import RPT_FILENAME
+            from staging.ppki.rpt import render_rpt
+
+            if data == "rpt2027_ppki_home":
+                return send(cid, "📅 <b>RPT 2027 · Pendidikan Khas (PPKI)</b>\n\nPilih tahun.", [
+                    [{"text": "Tahun 2", "callback_data": "rpt2027_ppki_year2"}],
+                    [{"text": "⬅️ Kembali", "callback_data": "rpt2027_home"}],
+                ])
+            if data == "rpt2027_ppki_year2":
+                return send(cid, "<b>PPKI Tahun 2</b>\n\nAgihan 14 PdP bagi Unit 2.", [
+                    [{"text": "Pengurusan Kehidupan (PDF)", "callback_data": "rpt2027_ppki_pdf2"}],
+                    [{"text": "⬅️ Kembali", "callback_data": "rpt2027_ppki_home"}],
+                ])
+            if data != "rpt2027_ppki_pdf2":
+                return send(cid, "Pilihan RPT PPKI tidak sah.")
+            try:
+                with TemporaryDirectory(prefix="cikgulaju-rpt-ppki-") as folder:
+                    path = Path(folder) / RPT_FILENAME
+                    path.write_bytes(render_rpt())
+                    result = send_document(cid, str(path), "RPT 2027 PPKI · Pengurusan Kehidupan Tahun 2 · Unit 2")
+                verify = ns.get("_telegram_delivery_ok_v25279")
+                if callable(verify) and not verify(result):
+                    return send(cid, "Telegram belum mengesahkan penghantaran RPT PPKI.")
+                return result
+            except Exception as exc:
+                print("PPKI RPT delivery failed:", type(exc).__name__, flush=True)
+                return send(cid, "Muat turun RPT PPKI gagal. Cuba lagi.")
         if school_subject is not None:
             year, _, fmt = payload.partition(":")
             label = school_subject.LABEL
@@ -144,6 +173,7 @@ def install(ns):
             kb = [[{"text": "Tahun %s" % year,
                     "callback_data": "rpt2027_year_%s" % year}]
                   for year in range(1, 7)]
+            kb.append([{"text": "Pendidikan Khas (PPKI)", "callback_data": "rpt2027_ppki_home"}])
             kb.append([{"text": "🏠 Menu Utama", "callback_data": "home"}])
             return send(cid,
                 "📅 <b>RPT 2027</b>\n\n"

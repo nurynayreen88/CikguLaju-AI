@@ -12,6 +12,7 @@ from primary_language_subjects import PRIMARY_LANGUAGE_SUBJECTS
 
 
 DLP = "dlp"
+PPKI = "ppki"
 DLP_YEARS = {
     f"cv_year{n}_dlp": f"Tahun {n}" for n in range(2, 7)
 }
@@ -25,6 +26,7 @@ DLP_2027_SCOPES = {
 PRIMARY_CURRICULA = {
     "cv_primary_kssr": (LEGACY, "KSSR"),
     "cv_primary_kp27": (KP2027, "KP2027"),
+    "cv_primary_ppki": (PPKI, "Pendidikan Khas (PPKI)"),
 }
 
 DLP_SUBJECTS = {
@@ -96,6 +98,8 @@ def install(namespace):
                 [{"text":f"Tahun {n}", "callback_data":f"year_{n}"} for n in row]
                 for row in ((1, 2), (3, 4), (5, 6))
             ]
+        elif version == PPKI:
+            keyboard = [[{"text": "Tahun 2", "callback_data": "cv_ppki_year2"}]]
         else:
             keyboard = [[{"text":"Tahun 1 (KP Baharu)", "callback_data":"cv_year1_kp"}]]
         keyboard.extend([[{"text":"⬅️ Pilih Kurikulum", "callback_data":"level_primary"}],
@@ -105,6 +109,77 @@ def install(namespace):
     def choose_year_one_preview(cid):
         reset_selection(cid, KP2027)["year"] = "Tahun 1"
         return subjects(cid, "Tahun 1")
+
+    def ppki_navigation(cid, st, action):
+        from staging.ppki.catalog import SUBJECT, UNIT, catalog, lesson_filename, selected_lesson
+        from staging.ppki.render_pengurusan_kehidupan import render_lesson
+
+        source = catalog()
+
+        def show(label, prompt, choices, back):
+            keyboard = [[{"text": title, "callback_data": key}] for title, key in choices]
+            keyboard.append([{"text": "⬅️ Kembali", "callback_data": back}])
+            return send(cid, f"<b>{escape(label)}</b>\n\n{prompt}", keyboard)
+
+        if action == "year2":
+            reset_selection(cid, PPKI)["year"] = "Tahun 2"
+            return show("Pendidikan Khas (PPKI) · Tahun 2", "Pilih subjek.",
+                        [(source["subject"], "cv_ppki_subject")], "cv_primary_ppki")
+        if st.get("year") != "Tahun 2":
+            return primary_years(cid, PPKI, "Pendidikan Khas (PPKI)")
+        if action == "subject":
+            st["ppki_subject"] = SUBJECT
+            st.pop("ppki_component", None)
+            st.pop("ppki_unit", None)
+            st.pop("ppki_lesson", None)
+            return show(source["subject"], "Pilih komponen.",
+                        [(source["component"], "cv_ppki_component")], "cv_ppki_year2")
+        if st.get("ppki_subject") != SUBJECT:
+            return ppki_navigation(cid, st, "year2")
+        if action == "component":
+            st["ppki_component"] = True
+            st.pop("ppki_unit", None)
+            st.pop("ppki_lesson", None)
+            return show(source["component"], "Pilih unit.", [(source["unit"], "cv_ppki_unit")],
+                        "cv_ppki_subject")
+        if not st.get("ppki_component"):
+            return ppki_navigation(cid, st, "subject")
+        if action == "unit":
+            st["ppki_unit"] = UNIT
+            st.pop("ppki_lesson", None)
+            choices = [(f"PdP {row['pdp']} · {row['title']}", f"cv_ppki_lesson_{row['pdp']}")
+                       for row in source["lessons"]]
+            return show(source["unit"], "Pilih PdP.", choices, "cv_ppki_component")
+        command, _, number = action.partition("_")
+        lesson = selected_lesson(st.get("ppki_unit"), number)
+        if lesson is None:
+            return ppki_navigation(cid, st, "component")
+        if command == "lesson":
+            st["ppki_lesson"] = number
+            return show(lesson["title"], "Pilih format RPH.",
+                        [("⬇️ Muat Turun Word", f"cv_ppki_word_{number}"),
+                         ("⬇️ Muat Turun PDF", f"cv_ppki_pdf_{number}")], "cv_ppki_unit")
+        if command not in ("word", "pdf") or st.get("ppki_lesson") != number:
+            return ppki_navigation(cid, st, "unit")
+        if cid in downloading:
+            return send(cid, "Fail sedang dijana. Sila tunggu sebentar.")
+        downloading.add(cid)
+        try:
+            if not namespace["_credit_gate"](cid, st):
+                return
+            extension = "docx" if command == "word" else "pdf"
+            with TemporaryDirectory(prefix="cikgulaju-ppki-") as directory:
+                path = Path(directory) / lesson_filename(number, command)
+                path.write_bytes(render_lesson(source, lesson, extension, {}))
+                result = namespace["send_document"](cid, str(path), escape(lesson["title"]))
+            if namespace["_telegram_delivery_ok_v25279"](result):
+                return result
+        except Exception:
+            getLogger(__name__).exception("PPKI document delivery failed for %s", number)
+        finally:
+            st.pop("_free_generation_pending_v25282", None)
+            downloading.remove(cid)
+        return send(cid, "Fail PPKI belum berjaya dihantar. Pilih format untuk cuba semula.")
 
     def dlp_units(cid, subject_key):
         code, name = DLP_SUBJECTS[subject_key]
@@ -183,6 +258,8 @@ def install(namespace):
             [{"text":"⬅️ Tahun/Tingkatan","callback_data":"choose_grade"}]])
     def subjects(cid,label):
         st=state.setdefault(cid,{})
+        if st.get("curriculum_version") == PPKI:
+            return ppki_navigation(cid, st, "year2")
         if st.get("curriculum_version") == DLP:
             reset_selection(cid, LEGACY)["year"] = label
             return previous_subjects(cid, label)
@@ -224,6 +301,10 @@ def install(namespace):
             version, label = PRIMARY_CURRICULA[d]
             reset_selection(cid, version)
             return primary_years(cid, version, label)
+        if d.startswith("cv_ppki_"):
+            if _rph_flow(st) and version == PPKI:
+                return ppki_navigation(cid, st, d.removeprefix("cv_ppki_"))
+            return year(cid, "primary")
         if d == "cv_year1_kp":
             if _rph_flow(st) and version == KP2027:
                 return choose_year_one_preview(cid)
@@ -327,9 +408,9 @@ def install(namespace):
             if version != KP2027 or not st.get("year"):
                 return year(cid, "primary")
             return subjects(cid,st["year"])
-        if d=="back_subjects" and version in (KP2027, DLP) and st.get("year"):
+        if d=="back_subjects" and version in (KP2027, DLP, PPKI) and st.get("year"):
             return subjects(cid,st["year"])
-        if version in (KP2027, DLP) and (
+        if version in (KP2027, DLP, PPKI) and (
                 d.startswith(("sub_", "topic_", "st3|", "matpick2528|")) or d=="matsubmit2528"):
             if not st.get("year"):
                 return curriculum_menu(cid)

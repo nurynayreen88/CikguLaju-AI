@@ -46,10 +46,13 @@ def render_lesson(catalog, lesson, extension, teacher):
         ("Aktiviti 2 · Aplikasi", *lesson["practice"]),
         ("Penutup", *lesson["closure"]),
     ]
+    reflection = teacher.get("reflection") or (
+        f"____ / ____ murid mencapai objektif.\nSusulan: {lesson['follow_up']}"
+    )
     assessment = [
         ("Sokongan", lesson["support"]),
         ("Pentaksiran Bilik Darjah", lesson["assessment"]),
-        ("Refleksi", f"____ / ____ murid mencapai objektif.\nSusulan: {lesson['follow_up']}"),
+        ("Refleksi", reflection),
     ]
     output = BytesIO()
     RENDERERS[extension](output, heading, details, activities, assessment,
