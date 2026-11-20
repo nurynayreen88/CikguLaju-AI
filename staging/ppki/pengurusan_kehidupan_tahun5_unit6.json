@@ -1,0 +1,248 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 5,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 6 · Asas Pertolongan Cemas",
+  "content_standards": {
+    "6.1": "Asas pertolongan cemas.",
+    "6.2": "Kit pertolongan cemas."
+  },
+  "learning_standards": {
+    "6.1.1": "Menyatakan langkah asas bantu mula, mengenal pasti kecemasan, membuat keputusan, menghubungi pasukan kecemasan dan memberi rawatan sehingga bantuan sampai.",
+    "6.1.2": "Menerangkan kepentingan latihan asas pertolongan cemas.",
+    "6.1.3": "Mengaplikasi latihan asas pertolongan cemas secara sistematik.",
+    "6.1.4": "Mengamalkan sikap bertanggungjawab apabila berlaku kecemasan.",
+    "6.2.1": "Mengenal pasti kit pertolongan cemas.",
+    "6.2.2": "Menerangkan fungsi alatan dan bahan kit pertolongan cemas.",
+    "6.2.3": "Menunjuk cara penggunaan alatan dan bahan kit pertolongan cemas mengikut situasi.",
+    "6.2.4": "Menjaga alatan dan bahan kit pertolongan cemas secara sistematik dan selamat."
+  },
+  "lessons": [
+    {
+      "pdp": "034",
+      "title": "Mengenal urutan asas bantu mula",
+      "sp": "6.1.1",
+      "focus": "Mengenal urutan asas bantu mula.",
+      "book": "Buku Teks hlm. 43–45",
+      "objective": "Murid dapat menyatakan empat langkah asas bantu mula dan menyebut lokasi dalam latihan meminta bantuan.",
+      "materials": "Kad kecemasan, kad lokasi dan telefon latihan tanpa talian.",
+      "induction": [
+        "Paparkan situasi murid terjatuh dalam gambar.",
+        "Kenal pasti siapa atau di mana bantuan boleh diminta."
+      ],
+      "guided": [
+        "Bincangkan urutan mengenal situasi, menilai keselamatan, mendapatkan bantuan dan menunggu orang terlatih memberi arahan.",
+        "Susun kad urutan dan pilih tindakan pertama."
+      ],
+      "practice": [
+        "Adakan lakonan panggilan bantuan menggunakan telefon latihan. Modelkan menyatakan lokasi dan apa yang berlaku.",
+        "Sampaikan maklumat kepada watak petugas dalam simulasi dan ikut arahannya."
+      ],
+      "closure": [
+        "Tanya bila nombor 999 digunakan.",
+        "Pilih kad kecemasan sebenar dan ulang nombor."
+      ],
+      "support": "Gunakan telefon tanpa talian. Latihan tiada panggilan sebenar ke 999.",
+      "assessment": "Guru merekod sama ada murid dapat menyatakan empat langkah asas bantu mula dan menyebut lokasi dalam latihan meminta bantuan.",
+      "follow_up": "Hasilkan kad maklumat kecemasan berpandukan halaman 54."
+    },
+    {
+      "pdp": "035",
+      "title": "Menerangkan manfaat latihan pertolongan cemas",
+      "sp": "6.1.2",
+      "focus": "Menerangkan manfaat latihan pertolongan cemas.",
+      "book": "Buku Teks hlm. 46–47",
+      "objective": "Murid dapat menerangkan dua kepentingan latihan asas pertolongan cemas menggunakan situasi rekaan.",
+      "materials": "Kad sebab, gambar pembantu terlatih dan carta tindakan.",
+      "induction": [
+        "Paparkan gambar murid mendapatkan guru selepas kejadian.",
+        "Pilih apa yang boleh dilakukan sementara menunggu bantuan."
+      ],
+      "guided": [
+        "Bincangkan sebab latihan membantu seseorang bertindak tenang, mendapatkan bantuan dan mengelakkan tindakan berbahaya.",
+        "Padankan satu kemahiran dengan satu manfaat."
+      ],
+      "practice": [
+        "Beri dua situasi rekaan dan minta murid memilih bagaimana latihan membantu.",
+        "Terangkan satu manfaat bagi setiap situasi melalui gambar atau lisan."
+      ],
+      "closure": [
+        "Minta murid pilih di mana latihan boleh dibuat.",
+        "Tunjukkan contoh sumber latihan bersama guru."
+      ],
+      "support": "Gunakan gambar tanpa kecederaan grafik dan rangka ayat pendek.",
+      "assessment": "Guru merekod sama ada murid dapat menerangkan dua kepentingan latihan asas pertolongan cemas menggunakan situasi rekaan.",
+      "follow_up": "Ulang satu situasi dengan latihan memilih pembantu yang sesuai."
+    },
+    {
+      "pdp": "036",
+      "title": "Mensimulasikan bantuan bagi luka kecil",
+      "sp": "6.1.3",
+      "focus": "Mensimulasikan bantuan bagi luka kecil.",
+      "book": "Buku Teks hlm. 48–49",
+      "objective": "Murid dapat menunjukkan tiga langkah pertolongan cemas yang sesuai pada patung latihan.",
+      "materials": "Patung latihan, sarung tangan, kain kasa bersih dan kad 2C.",
+      "induction": [
+        "Paparkan gambar guru menerima kit pertolongan cemas.",
+        "Tunjuk kit yang sepadan dengan gambar."
+      ],
+      "guided": [
+        "Demonstrasikan pada patung urutan mendapatkan guru, membersihkan luka kecil simulasi dengan air bersih dan menutup dengan balutan bersih. Gunakan kad 2C.",
+        "Susun kad bersih dan tutup, kemudian ulang arahan secara ringkas."
+      ],
+      "practice": [
+        "Bimbing seorang murid pada setiap giliran menggunakan patung dan bahan latihan.",
+        "Tunjukkan urutan bantuan pada patung dan beritahu guru apabila selesai."
+      ],
+      "closure": [
+        "Minta murid menyebut tindakan jika tidak pasti tentang jenis kecederaan.",
+        "Pilih kad mendapatkan bantuan orang dewasa."
+      ],
+      "support": "Gunakan balutan latihan tanpa ubat sebenar. Elakkan simulasi pada tubuh rakan.",
+      "assessment": "Guru merekod sama ada murid dapat menunjukkan tiga langkah pertolongan cemas yang sesuai pada patung latihan.",
+      "follow_up": "Ulang urutan 2C dengan jalur gambar jika langkah masih tertukar."
+    },
+    {
+      "pdp": "037",
+      "title": "Bertindak dengan bertanggungjawab ketika kecemasan",
+      "sp": "6.1.4",
+      "focus": "Bertindak dengan bertanggungjawab ketika kecemasan.",
+      "book": "Buku Teks hlm. 44–45, 48–49",
+      "objective": "Murid dapat menunjukkan dua tindakan bertanggungjawab dalam satu simulasi kecemasan.",
+      "materials": "Kad situasi, kad peranan dan telefon latihan tanpa talian.",
+      "induction": [
+        "Paparkan gambar beberapa murid mengerumuni tempat kejadian.",
+        "Pilih satu tindakan yang membantu orang dewasa sampai dengan mudah."
+      ],
+      "guided": [
+        "Modelkan tindakan beri ruang, lapor lokasi dengan tepat dan tunggu arahan orang dewasa.",
+        "Ulang satu laporan ringkas tentang apa yang dilihat."
+      ],
+      "practice": [
+        "Lakonkan situasi rekaan dalam kumpulan kecil dengan peranan saksi, guru dan petugas.",
+        "Dapatkan bantuan, sampaikan maklumat dan ikut arahan tanpa mengerumuni tempat."
+      ],
+      "closure": [
+        "Semak satu tindakan bertanggungjawab dalam lakonan.",
+        "Nyatakan tindakan yang hendak diulang pada latihan seterusnya."
+      ],
+      "support": "Gunakan kad komunikasi dan telefon latihan. Tiada panggilan sebenar dibuat.",
+      "assessment": "Guru merekod sama ada murid dapat menunjukkan dua tindakan bertanggungjawab dalam satu simulasi kecemasan.",
+      "follow_up": "Ulang lakonan dengan lokasi dan orang dewasa yang berlainan."
+    },
+    {
+      "pdp": "038",
+      "title": "Mengenal kit pertolongan cemas",
+      "sp": "6.2.1",
+      "focus": "Mengenal kit pertolongan cemas.",
+      "book": "Buku Teks hlm. 50–51",
+      "objective": "Murid dapat mengenal pasti kit pertolongan cemas dan tiga item di dalamnya.",
+      "materials": "Kit latihan, kad label dan gambar beberapa kotak.",
+      "induction": [
+        "Paparkan gambar tiga kotak yang mempunyai fungsi berlainan.",
+        "Pilih gambar yang menyerupai kit pertolongan cemas."
+      ],
+      "guided": [
+        "Tunjukkan tanda yang membantu mengenal kit serta contoh kandungan biasa.",
+        "Padankan gambar kotak dengan kad nama kit."
+      ],
+      "practice": [
+        "Aturkan aktiviti mengecam kit dan mengasingkan kad alatan yang berkaitan.",
+        "Kenal pasti kit dan pilih sekurang-kurangnya tiga item sesuai."
+      ],
+      "closure": [
+        "Tunjukkan gambar lokasi simpanan sekolah.",
+        "Tunjuk lokasi yang mudah dikenal ketika diminta oleh guru."
+      ],
+      "support": "Gunakan kit latihan dan kad berwarna. Guru mengawal semua alatan sebenar.",
+      "assessment": "Guru merekod sama ada murid dapat mengenal pasti kit pertolongan cemas dan tiga item di dalamnya.",
+      "follow_up": "Ulang padanan menggunakan gambar jenis kit yang lain."
+    },
+    {
+      "pdp": "039",
+      "title": "Menerangkan fungsi alatan dalam kit",
+      "sp": "6.2.2",
+      "focus": "Menerangkan fungsi alatan dalam kit.",
+      "book": "Buku Teks hlm. 50–51",
+      "objective": "Murid dapat menerangkan fungsi sekurang-kurangnya tiga daripada empat item kit.",
+      "materials": "Kad alatan, gambar situasi dan kit latihan.",
+      "induction": [
+        "Tunjukkan sarung tangan dan kain kasa dalam bungkusan contoh.",
+        "Pilih satu alatan yang pernah dilihat."
+      ],
+      "guided": [
+        "Padankan kain kasa, plaster, sarung tangan dan kain anduh dengan fungsi asasnya.",
+        "Cuba satu padanan dan terangkan dengan kata mudah."
+      ],
+      "practice": [
+        "Beri empat kad fungsi kepada murid untuk dipadankan.",
+        "Namakan alatan yang sepadan dan jelaskan fungsinya secara ringkas."
+      ],
+      "closure": [
+        "Minta murid pilih satu alatan untuk diterangkan semula.",
+        "Nyatakan fungsinya atau tunjuk pada kad situasi."
+      ],
+      "support": "Gunakan alatan berbungkus dan kad bergambar. Bahan ubat hanya diperkenalkan melalui gambar.",
+      "assessment": "Guru merekod sama ada murid dapat menerangkan fungsi sekurang-kurangnya tiga daripada empat item kit.",
+      "follow_up": "Ulang fungsi item yang masih tertukar menggunakan contoh visual."
+    },
+    {
+      "pdp": "040",
+      "title": "Menunjuk cara menggunakan alatan kit dalam simulasi",
+      "sp": "6.2.3",
+      "focus": "Menunjuk cara menggunakan alatan kit dalam simulasi.",
+      "book": "Buku Teks hlm. 52",
+      "objective": "Murid dapat menunjukkan cara menggunakan sarung tangan dan balutan bersih dalam satu simulasi berpandu.",
+      "materials": "Sarung tangan latihan, kain kasa, plaster dan patung.",
+      "induction": [
+        "Paparkan ilustrasi penggunaan kit dan pilih satu item.",
+        "Namakan item atau tunjuk kad yang sepadan."
+      ],
+      "guided": [
+        "Demonstrasikan dengan patung cara memilih sarung tangan serta balutan bersih untuk situasi luka kecil simulasi.",
+        "Padankan item dengan langkah latihan, kemudian tunjuk pemilihan yang sesuai."
+      ],
+      "practice": [
+        "Berikan senario simulasi. Minta murid memilih alatan dan menunjukkan penggunaannya mengikut arahan guru.",
+        "Gunakan bahan latihan pada patung dan letakkan alatan semula selepas latihan."
+      ],
+      "closure": [
+        "Tanya siapa membantu jika alatan tidak dikenali.",
+        "Pilih kad guru atau petugas terlatih."
+      ],
+      "support": "Elakkan penggunaan ubat sebenar atau latihan pada tubuh rakan.",
+      "assessment": "Guru merekod sama ada murid dapat menunjukkan cara menggunakan sarung tangan dan balutan bersih dalam satu simulasi berpandu.",
+      "follow_up": "Ulang satu padanan alatan dengan senario simulasi yang setara."
+    },
+    {
+      "pdp": "041",
+      "title": "Memeriksa dan menyusun kit pertolongan cemas",
+      "sp": "6.2.4",
+      "focus": "Memeriksa dan menyusun kit pertolongan cemas.",
+      "book": "Buku Teks hlm. 53–54",
+      "objective": "Murid dapat melaksanakan tiga langkah memeriksa, menyusun dan melaporkan keadaan kit latihan.",
+      "materials": "Kotak latihan, kad tarikh, label dan senarai semak.",
+      "induction": [
+        "Paparkan gambar kit kemas dan kit yang tidak tersusun.",
+        "Pilih gambar kit yang mudah diperiksa."
+      ],
+      "guided": [
+        "Tunjukkan cara menyemak bilangan item, keadaan bungkusan dan tarikh luput pada kad contoh.",
+        "Semak dua item dengan senarai yang diberikan."
+      ],
+      "practice": [
+        "Sediakan kit latihan dengan item yang kurang atau label tarikh contoh yang telah luput.",
+        "Tandakan pemerhatian, susun item dan laporkan satu masalah kepada guru."
+      ],
+      "closure": [
+        "Tanya tindakan selepas mendapati item sudah luput.",
+        "Pilih kad asingkan dan laporkan kepada guru."
+      ],
+      "support": "Gunakan tarikh rekaan dan bungkusan latihan. Guru mengurus pelupusan bahan sebenar.",
+      "assessment": "Guru merekod sama ada murid dapat melaksanakan tiga langkah memeriksa, menyusun dan melaporkan keadaan kit latihan.",
+      "follow_up": "Latih menyemak kit contoh yang mempunyai bilangan item berlainan."
+    }
+  ]
+}

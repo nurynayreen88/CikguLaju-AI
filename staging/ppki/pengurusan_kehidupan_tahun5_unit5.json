@@ -1,0 +1,131 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 5,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 5 · Rumahku Selamat",
+  "content_standards": {
+    "5.1": "Keselamatan dalam penggunaan alatan dan bahan yang boleh mendatangkan bahaya di rumah."
+  },
+  "learning_standards": {
+    "5.1.1": "Menamakan alatan dan bahan yang boleh mendatangkan bahaya serta kegunaannya di rumah.",
+    "5.1.2": "Mengenal pasti penyalahgunaan alatan dan bahan yang boleh mendatangkan bahaya.",
+    "5.1.3": "Mengaplikasi cara mengurus alatan dan bahan yang boleh mendatangkan bahaya dengan betul.",
+    "5.1.4": "Mengamalkan penggunaan alatan dan bahan yang boleh mendatangkan bahaya dengan betul dan selamat dalam kehidupan harian."
+  },
+  "lessons": [
+    {
+      "pdp": "030",
+      "title": "Mengenal alatan dan bahan yang berbahaya di rumah",
+      "sp": "5.1.1",
+      "focus": "Mengenal alatan dan bahan yang berbahaya di rumah.",
+      "book": "Buku Teks hlm. 35–37",
+      "objective": "Murid dapat menamakan dan memadankan sekurang-kurangnya tiga daripada empat alatan atau bahan kepada kegunaannya.",
+      "materials": "Gambar alat, kad fungsi dan carta dapur serta halaman.",
+      "induction": [
+        "Paparkan gambar aktiviti di rumah dalam buku teks.",
+        "Tunjukkan satu alatan yang dikenali."
+      ],
+      "guided": [
+        "Modelkan padanan beberapa alatan dan bahan dengan fungsi biasa, seperti seterika untuk mengemaskan pakaian.",
+        "Padankan satu gambar alat kepada kad kegunaan."
+      ],
+      "practice": [
+        "Berikan empat contoh bergambar, termasuk alatan tajam dan bahan pembersihan.",
+        "Namakan atau tunjuk gambar bagi setiap fungsi dan pilih yang perlu dikendalikan orang dewasa."
+      ],
+      "closure": [
+        "Minta murid menunjukkan tanda amaran pada satu kad bekas.",
+        "Pilih kad dan jelaskan apa yang patut dilakukan."
+      ],
+      "support": "Sediakan gambar atau model kosong. Elakkan membawa bahan berbahaya ke kelas.",
+      "assessment": "Guru merekod sama ada murid dapat menamakan dan memadankan sekurang-kurangnya tiga daripada empat alatan atau bahan kepada kegunaannya.",
+      "follow_up": "Kelaskan dua contoh baharu mengikut kegunaannya di rumah."
+    },
+    {
+      "pdp": "031",
+      "title": "Mengenal penyalahgunaan alatan dan bahan",
+      "sp": "5.1.2",
+      "focus": "Mengenal penyalahgunaan alatan dan bahan.",
+      "book": "Buku Teks hlm. 38–39",
+      "objective": "Murid dapat mengenal pasti tiga contoh penyalahgunaan dan memadankan tindakan selamat.",
+      "materials": "Kad situasi rumah, kad amaran dan carta dua lajur.",
+      "induction": [
+        "Paparkan dua gambar penggunaan alat yang berbeza.",
+        "Pilih gambar yang menunjukkan penggunaan tidak selamat."
+      ],
+      "guided": [
+        "Kenal pasti tindakan berisiko dalam gambar, seperti bermain dengan alat tajam atau menyentuh bahan yang tidak diketahui.",
+        "Padankan tindakan berisiko dengan kad berhenti atau beritahu orang dewasa."
+      ],
+      "practice": [
+        "Bacakan tiga situasi rekaan melibatkan alat, elektrik dan bahan pembersihan.",
+        "Kenal pasti tindakan yang salah dan pilih satu tindakan selamat bagi setiap situasi."
+      ],
+      "closure": [
+        "Minta murid pilih pihak yang boleh membantu di rumah.",
+        "Tunjuk kad orang dewasa dipercayai."
+      ],
+      "support": "Gunakan gambar dan bahasa terus. Jangan demonstrasikan penyalahgunaan.",
+      "assessment": "Guru merekod sama ada murid dapat mengenal pasti tiga contoh penyalahgunaan dan memadankan tindakan selamat.",
+      "follow_up": "Ulang dengan satu contoh situasi di ruang dapur."
+    },
+    {
+      "pdp": "032",
+      "title": "Mengurus alatan dan bahan dengan selamat",
+      "sp": "5.1.3",
+      "focus": "Mengurus alatan dan bahan dengan selamat.",
+      "book": "Buku Teks hlm. 40–41",
+      "objective": "Murid dapat menunjukkan tiga langkah mengurus dan menyimpan alatan dengan selamat dalam simulasi.",
+      "materials": "Model alatan, kotak berlabel dan kad langkah penyimpanan.",
+      "induction": [
+        "Paparkan dua gambar tempat simpanan yang berbeza.",
+        "Pilih tempat yang sesuai bagi alat contoh."
+      ],
+      "guided": [
+        "Modelkan rutin semak label, asingkan alatan latihan dan pulangkan ke tempat ditetapkan. Terangkan bila perlu meminta orang dewasa.",
+        "Susun tiga kad langkah sebelum mencuba."
+      ],
+      "practice": [
+        "Sediakan simulasi selepas mengemas dapur atau halaman dengan model alatan sahaja.",
+        "Asingkan bahan, simpan model dan laporkan alatan yang tidak selamat kepada guru."
+      ],
+      "closure": [
+        "Minta murid semak tempat simpanan terakhir.",
+        "Tunjuk label yang menandakan tempat alat dikembalikan."
+      ],
+      "support": "Gunakan bekas bersih, model tanpa elektrik dan kad amaran besar.",
+      "assessment": "Guru merekod sama ada murid dapat menunjukkan tiga langkah mengurus dan menyimpan alatan dengan selamat dalam simulasi.",
+      "follow_up": "Latih semula satu urutan menggunakan kategori alatan yang lain."
+    },
+    {
+      "pdp": "033",
+      "title": "Mengamalkan rutin keselamatan dalam tugas harian",
+      "sp": "5.1.4",
+      "focus": "Mengamalkan rutin keselamatan dalam tugas harian.",
+      "book": "Buku Teks hlm. 38–42",
+      "objective": "Murid dapat mengamalkan dua langkah keselamatan dalam dua rutin penggunaan alatan dan bahan.",
+      "materials": "Bahan simulasi, kad bahaya dan carta semak tugas rumah.",
+      "induction": [
+        "Tunjukkan gambar jadual tugas di dapur dan halaman.",
+        "Pilih situasi yang biasa berlaku di rumah."
+      ],
+      "guided": [
+        "Bincangkan rutin berhenti apabila ada bahaya, meminta bantuan dan mengemas alatan selepas tugas yang sesuai.",
+        "Semak satu kad keselamatan sebelum memulakan lakonan."
+      ],
+      "practice": [
+        "Jalankan dua stesen rutin rumah dan buat satu perubahan pada setiap stesen.",
+        "Ikut arahan keselamatan, kenal situasi yang memerlukan bantuan dan susun alatan latihan."
+      ],
+      "closure": [
+        "Minta murid memilih satu peraturan untuk diamalkan di rumah.",
+        "Nyatakan pilihan melalui lisan atau gambar."
+      ],
+      "support": "Gunakan alat tiruan. Kendalikan sendiri bahan tajam, elektrik atau bahan pembersihan sebenar.",
+      "assessment": "Guru merekod sama ada murid dapat mengamalkan dua langkah keselamatan dalam dua rutin penggunaan alatan dan bahan.",
+      "follow_up": "Gunakan gambar sarung tangan ketuhar pada halaman 42 untuk membincangkan fungsi perlindungan."
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 5,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 1 · Kesusilaan Cerminan Diri",
+  "content_standards": {
+    "1.1": "Tanggungjawab diri terhadap komuniti setempat.",
+    "1.2": "Kemahiran berinteraksi dalam komuniti."
+  },
+  "learning_standards": {
+    "1.1.1": "Mengenal organisasi dalam komuniti setempat.",
+    "1.1.2": "Bercerita tentang tanggungjawab diri terhadap komuniti setempat.",
+    "1.1.3": "Mengaplikasi tanggungjawab diri terhadap komuniti setempat.",
+    "1.1.4": "Mempamerkan sikap bertanggungjawab terhadap komuniti setempat.",
+    "1.2.1": "Menyenaraikan panggilan hormat mengikut hierarki dalam komuniti.",
+    "1.2.2": "Mengenal pasti panggilan hormat mengikut pangkat dalam komuniti.",
+    "1.2.3": "Menggunakan panggilan hormat mengikut pangkat dalam komuniti.",
+    "1.2.4": "Menjelaskan kepentingan mengamalkan sikap berbudi pekerti dalam komuniti.",
+    "1.2.5": "Mengaplikasi sikap berbudi pekerti dalam komuniti."
+  },
+  "lessons": [
+    {
+      "pdp": "001",
+      "title": "Mengenal jawatankuasa komuniti",
+      "sp": "1.1.1",
+      "focus": "Mengenal jawatankuasa komuniti.",
+      "book": "Buku Teks hlm. 2–3",
+      "objective": "Murid dapat memadankan sekurang-kurangnya tiga daripada empat tugas kepada jawatan yang betul.",
+      "materials": "Gambar kejiranan, carta jawatankuasa dan kad tugas.",
+      "induction": [
+        "Paparkan gambar aktiviti kejiranan.",
+        "Pilih seorang watak dan nyatakan tugasnya."
+      ],
+      "guided": [
+        "Terangkan peranan pengerusi, setiausaha, bendahari dan ahli jawatankuasa.",
+        "Padankan satu kad tugas dengan jawatan yang betul."
+      ],
+      "practice": [
+        "Edarkan kad tugas dan carta kosong kepada kumpulan.",
+        "Lengkapkan carta dan perihalkan satu peranan."
+      ],
+      "closure": [
+        "Tanya siapa membantu menjalankan aktiviti yang dirancang.",
+        "Pilih kad jawatan yang sesuai."
+      ],
+      "support": "Gunakan kad berwarna dan model satu padanan dahulu.",
+      "assessment": "Guru merekod sama ada murid dapat memadankan sekurang-kurangnya tiga daripada empat tugas kepada jawatan yang betul.",
+      "follow_up": "Gunakan halaman 10 sebagai pengayaan carta organisasi kelas."
+    },
+    {
+      "pdp": "002",
+      "title": "Menceritakan tanggungjawab terhadap komuniti",
+      "sp": "1.1.2",
+      "focus": "Menceritakan tanggungjawab terhadap komuniti.",
+      "book": "Buku Teks hlm. 4",
+      "objective": "Murid dapat menceritakan dua tanggungjawab diri terhadap komuniti mengikut gambar.",
+      "materials": "Kad gambar jiran dan kerangka ayat.",
+      "induction": [
+        "Tunjukkan gambar jiran memerlukan bantuan.",
+        "Pilih gambar bantuan yang sesuai."
+      ],
+      "guided": [
+        "Bincangkan tanggungjawab seperti membantu jiran, menghormati orang lain dan menyertai aktiviti komuniti.",
+        "Pilih satu gambar dan lengkapkan ayat berpandu."
+      ],
+      "practice": [
+        "Susun tiga kad situasi dan beri setiap murid giliran bercerita.",
+        "Ceritakan cara bertindak dalam dua situasi dengan jelas."
+      ],
+      "closure": [
+        "Minta murid memilih satu tanggungjawab yang boleh diamalkan.",
+        "Sebut atau tunjuk kad amalan pilihan."
+      ],
+      "support": "Sediakan rangka ayat dan terima respons menggunakan kad.",
+      "assessment": "Guru merekod sama ada murid dapat menceritakan dua tanggungjawab diri terhadap komuniti mengikut gambar.",
+      "follow_up": "Ulang satu situasi menggunakan gambar dari persekitaran sekolah."
+    },
+    {
+      "pdp": "003",
+      "title": "Menjalankan peranan dalam gotong-royong",
+      "sp": "1.1.3",
+      "focus": "Menjalankan peranan dalam gotong-royong.",
+      "book": "Buku Teks hlm. 5",
+      "objective": "Murid dapat melaksanakan satu peranan dengan menyelesaikan tugas dan memulangkan alatan.",
+      "materials": "Kad watak, penyapu kecil, kain dan tong kertas.",
+      "induction": [
+        "Paparkan gambar aktiviti komuniti.",
+        "Pilih satu tugas yang dapat dilakukan."
+      ],
+      "guided": [
+        "Modelkan cara memilih peranan, meminta alat dan melaksanakan tugas di stesen.",
+        "Ambil satu kad peranan dan tunjuk alatan yang sesuai."
+      ],
+      "practice": [
+        "Jalankan gotong-royong simulasi menggunakan bahan bersih.",
+        "Selesaikan tugas yang dipilih dan pulangkan alatan."
+      ],
+      "closure": [
+        "Minta murid menyatakan sumbangan kepada kumpulan.",
+        "Tunjukkan hasil tugas atau sebut tindakan yang dibuat."
+      ],
+      "support": "Sediakan tugasan di aras capaian dan giliran bergambar.",
+      "assessment": "Guru merekod sama ada murid dapat melaksanakan satu peranan dengan menyelesaikan tugas dan memulangkan alatan.",
+      "follow_up": "Tukar peranan supaya murid boleh mencuba tugas lain."
+    },
+    {
+      "pdp": "004",
+      "title": "Mempamerkan sikap bertanggungjawab dalam kumpulan",
+      "sp": "1.1.4",
+      "focus": "Mempamerkan sikap bertanggungjawab dalam kumpulan.",
+      "book": "Buku Teks hlm. 5",
+      "objective": "Murid dapat mempamerkan dua amalan bertanggungjawab semasa tugas bersama.",
+      "materials": "Kad peranan, senarai semak dan bahan kelas.",
+      "induction": [
+        "Tunjukkan dua gambar tugasan yang sudah siap dan belum siap.",
+        "Pilih gambar kumpulan yang menyelesaikan tugas."
+      ],
+      "guided": [
+        "Bincangkan tanda sikap bertanggungjawab seperti bersedia, bekerjasama dan memaklumkan tugas selesai.",
+        "Padankan satu tindakan dengan tanda yang sesuai."
+      ],
+      "practice": [
+        "Bahagikan tugas mengemas bahan kelas kepada pasangan.",
+        "Selesaikan bahagian sendiri, serahkan alatan dan laporkan tugasan selesai."
+      ],
+      "closure": [
+        "Minta murid menyemak amalan sendiri.",
+        "Tandakan amalan yang ditunjukkan dan pilih satu untuk diulang."
+      ],
+      "support": "Sediakan dua peranan setara mengikut keupayaan murid.",
+      "assessment": "Guru merekod sama ada murid dapat mempamerkan dua amalan bertanggungjawab semasa tugas bersama.",
+      "follow_up": "Perhatikan amalan yang sama dalam satu rutin kelas lain."
+    },
+    {
+      "pdp": "005",
+      "title": "Menyenaraikan panggilan hormat dalam komuniti",
+      "sp": "1.2.1",
+      "focus": "Menyenaraikan panggilan hormat dalam komuniti.",
+      "book": "Buku Teks hlm. 6–7",
+      "objective": "Murid dapat menyenaraikan tiga panggilan hormat mengikut watak dalam komuniti.",
+      "materials": "Kad watak, gambar gotong-royong dan carta peranan.",
+      "induction": [
+        "Tunjukkan watak kanak-kanak dan orang dewasa dalam buku.",
+        "Pilih satu watak yang hendak disapa."
+      ],
+      "guided": [
+        "Modelkan sapaan yang sesuai bagi datuk, nenek, pak cik, mak cik dan jiran dewasa mengikut konteks.",
+        "Susun kad watak dan kad panggilan hormat."
+      ],
+      "practice": [
+        "Paparkan tiga situasi pertemuan dalam komuniti.",
+        "Senaraikan panggilan yang sesuai secara lisan atau menggunakan kad."
+      ],
+      "closure": [
+        "Minta murid memilih satu sapaan untuk situasi baharu.",
+        "Tunjukkan kad yang sesuai dan baca jika boleh."
+      ],
+      "support": "Sediakan kad bergambar dan dua pilihan awal bagi setiap situasi.",
+      "assessment": "Guru merekod sama ada murid dapat menyenaraikan tiga panggilan hormat mengikut watak dalam komuniti.",
+      "follow_up": "Ulang padanan dengan gambar watak yang berlainan."
+    },
+    {
+      "pdp": "006",
+      "title": "Mengenal panggilan hormat mengikut peranan dan pangkat",
+      "sp": "1.2.2",
+      "focus": "Mengenal panggilan hormat mengikut peranan dan pangkat.",
+      "book": "Buku Teks hlm. 8",
+      "objective": "Murid dapat mengenal pasti panggilan hormat yang sesuai daripada tiga kad situasi.",
+      "materials": "Dialog ringkas, kad watak dan kad panggilan.",
+      "induction": [
+        "Paparkan gambar majlis komuniti.",
+        "Tunjuk watak yang ingin disapa."
+      ],
+      "guided": [
+        "Bincangkan beza sapaan biasa dan gelaran yang diketahui melalui maklumat pada kad watak.",
+        "Padankan gelaran kepada watak pada satu contoh."
+      ],
+      "practice": [
+        "Edarkan kad situasi yang menyatakan peranan atau gelaran watak.",
+        "Pilih panggilan hormat yang sesuai bagi setiap kad."
+      ],
+      "closure": [
+        "Tanya cara menyapa jika gelaran seseorang belum diketahui.",
+        "Pilih sapaan umum yang sopan untuk situasi tersebut."
+      ],
+      "support": "Baca gelaran pada kad tanpa meminta murid meneka daripada rupa watak.",
+      "assessment": "Guru merekod sama ada murid dapat mengenal pasti panggilan hormat yang sesuai daripada tiga kad situasi.",
+      "follow_up": "Ulang padanan bagi satu gelaran yang masih tertukar."
+    },
+    {
+      "pdp": "007",
+      "title": "Menggunakan panggilan hormat dalam dialog",
+      "sp": "1.2.3",
+      "focus": "Menggunakan panggilan hormat dalam dialog.",
+      "book": "Buku Teks hlm. 8",
+      "objective": "Murid dapat menggunakan panggilan hormat yang sesuai dalam dua dialog komuniti.",
+      "materials": "Kad watak, kad dialog dan dua kerusi.",
+      "induction": [
+        "Tunjukkan contoh dialog menjemput tetamu duduk.",
+        "Kenal pasti panggilan hormat dalam dialog."
+      ],
+      "guided": [
+        "Modelkan cara membuka percakapan dan menyisipkan panggilan hormat yang diberi.",
+        "Ulang sapaan menggunakan kad, isyarat atau lisan."
+      ],
+      "practice": [
+        "Jalankan dua lakonan ringkas dengan pertukaran watak.",
+        "Gunakan panggilan yang sepadan dan berikan respons sopan."
+      ],
+      "closure": [
+        "Minta murid ulang sapaan bagi watak terakhir.",
+        "Sebut atau tunjuk sapaan yang digunakan."
+      ],
+      "support": "Beri skrip bergambar dan peluang untuk latihan berpasangan dahulu.",
+      "assessment": "Guru merekod sama ada murid dapat menggunakan panggilan hormat yang sesuai dalam dua dialog komuniti.",
+      "follow_up": "Ulang dialog dengan situasi di pusat komuniti."
+    },
+    {
+      "pdp": "008",
+      "title": "Menjelaskan kepentingan berbudi pekerti",
+      "sp": "1.2.4",
+      "focus": "Menjelaskan kepentingan berbudi pekerti.",
+      "book": "Buku Teks hlm. 9",
+      "objective": "Murid dapat menerangkan dua kepentingan berbudi pekerti dalam komuniti.",
+      "materials": "Kad perbuatan, kad kesan dan gambar kedai makan.",
+      "induction": [
+        "Paparkan gambar pelanggan disapa dengan sopan.",
+        "Tunjuk reaksi yang mungkin ditunjukkan oleh pelanggan."
+      ],
+      "guided": [
+        "Bandingkan dua respons watak dan bincangkan kesannya terhadap hubungan.",
+        "Padankan satu perbuatan dengan kesannya."
+      ],
+      "practice": [
+        "Berikan dua situasi seperti meminta bantuan dan mengucapkan terima kasih.",
+        "Jelaskan bagaimana perbuatan berbudi membantu dalam setiap situasi."
+      ],
+      "closure": [
+        "Minta murid pilih tabiat yang hendak dibawa ke luar kelas.",
+        "Nyatakan satu tabiat dan sebabnya."
+      ],
+      "support": "Gunakan dua pilihan kesan dan rangka ayat dengan gambar.",
+      "assessment": "Guru merekod sama ada murid dapat menerangkan dua kepentingan berbudi pekerti dalam komuniti.",
+      "follow_up": "Bincangkan kesan satu tindakan sopan yang baharu."
+    },
+    {
+      "pdp": "009",
+      "title": "Mengamalkan budi bahasa dalam situasi komuniti",
+      "sp": "1.2.5",
+      "focus": "Mengamalkan budi bahasa dalam situasi komuniti.",
+      "book": "Buku Teks hlm. 9",
+      "objective": "Murid dapat mengaplikasikan satu tindakan berbudi pekerti dalam setiap satu daripada dua situasi komuniti.",
+      "materials": "Kad peranan, bahan pinjaman dan kad ungkapan.",
+      "induction": [
+        "Paparkan situasi berkongsi barang dengan jiran.",
+        "Tunjuk ungkapan yang sesuai untuk meminta izin."
+      ],
+      "guided": [
+        "Modelkan perbuatan meminta izin, memulangkan barang dan menghargai pertolongan.",
+        "Pilih dan gunakan satu ungkapan pada masa yang sesuai."
+      ],
+      "practice": [
+        "Sediakan dua stesen lakonan untuk meminta bantuan dan memulangkan barang.",
+        "Amalkan tindakan sopan dalam kedua-dua situasi."
+      ],
+      "closure": [
+        "Ajak murid memilih satu amalan untuk rutin kelas.",
+        "Gunakan pilihan semasa memulangkan bahan latihan."
+      ],
+      "support": "Terima penggunaan lisan, kad komunikasi atau isyarat yang sesuai.",
+      "assessment": "Guru merekod sama ada murid dapat mengaplikasikan satu tindakan berbudi pekerti dalam setiap satu daripada dua situasi komuniti.",
+      "follow_up": "Perhatikan amalan yang sama dalam rutin perkongsian bahan."
+    }
+  ]
+}

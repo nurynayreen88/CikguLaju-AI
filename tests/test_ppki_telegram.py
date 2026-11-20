@@ -10,7 +10,7 @@ from pypdf import PdfReader
 
 from curriculum_version_telegram import install
 from rpt_2027.english.telegram_downloads import install as install_rpt
-from staging.ppki.catalog import MANIPULATIVE_UNIT1, MANIPULATIVE_UNIT2, MANIPULATIVE_UNIT3, MANIPULATIVE_UNIT_LESSONS, SUBJECT, UNIT, UNIT1, UNIT3, UNIT4, UNIT5, YEAR3_MANIPULATIVE_UNIT_LESSONS
+from staging.ppki.catalog import MANIPULATIVE_UNIT1, MANIPULATIVE_UNIT2, MANIPULATIVE_UNIT3, MANIPULATIVE_UNIT_LESSONS, SUBJECT, UNIT, UNIT1, UNIT3, UNIT4, UNIT5, UNIT6, YEAR3_MANIPULATIVE_UNIT_LESSONS
 from web.telegram_ppki_api import create_ppki_blueprint
 
 
@@ -115,6 +115,27 @@ class PpkiTelegramTest(unittest.TestCase):
         self.assertIn("Kemahiran Manipulatif: 39 PdP", self.messages[-1][0])
         callback(42, "rpt2027_ppki_km_pdf4")
         self.assertEqual(len(PdfReader(BytesIO(self.documents[-1][1])).pages), 3)
+
+    def test_year5_telegram_selects_unit6_and_delivers_both_formats_and_rpt(self):
+        callback = self.namespace["callback"]
+        self.namespace["year"](42, "primary")
+        for key in ("cv_primary_ppki", "cv_ppki_year5", "cv_ppki_subject",
+                    "cv_ppki_component", f"cv_ppki_unit_{UNIT6}", "cv_ppki_lesson_041"):
+            self.assertIn(key, [button["callback_data"] for row in self.messages[-1][1] for button in row])
+            callback(42, key)
+        callback(42, "cv_ppki_pdf_041")
+        self.assertFalse(self.documents)
+        self.allow = True
+        callback(42, "cv_ppki_word_041")
+        callback(42, "cv_ppki_pdf_041")
+        self.assertEqual([name.rsplit(".", 1)[1] for name, *_ in self.documents], ["docx", "pdf"])
+        self.assertIn("6.2.4", PdfReader(BytesIO(self.documents[-1][1])).pages[0].extract_text())
+        callback(42, "rpt2027_ppki_home")
+        self.assertIn("rpt2027_ppki_year5", [button["callback_data"] for row in self.messages[-1][1] for button in row])
+        callback(42, "rpt2027_ppki_year5")
+        self.assertIn("41 PdP", self.messages[-1][0])
+        callback(42, "rpt2027_ppki_pdf5")
+        self.assertEqual(len(PdfReader(BytesIO(self.documents[-1][1])).pages), 6)
 
     def test_rpt_under_own_menu_and_paid_gate(self):
         callback = self.namespace["callback"]
@@ -315,6 +336,66 @@ class PpkiApiTest(unittest.TestCase):
                 self.assertIn(sp, evidence)
                 for number in range(start, end + 1):
                     self.assertIn(f"{number:03d}", evidence)
+
+    def test_year5_all_41_word_pdf_and_rpt(self):
+        app = Flask(__name__)
+        app.register_blueprint(create_ppki_blueprint())
+        client = app.test_client()
+        prefix = "/internal/rph/v1/ppki"
+        token = "T" * 32
+        headers = {"Authorization": f"Bearer {token}"}
+        expected = (
+            (UNIT1, "Kesusilaan Cerminan Diri", 1, 9, "1.2.5"),
+            (UNIT, "Aktifkan Dirimu", 10, 13, "2.1.4"),
+            (UNIT3, "Emosi Sihat, Hubungan Erat", 14, 21, "3.2.4"),
+            (UNIT4, "Adab Mulia, Akhlak Terpelihara", 22, 29, "4.2.4"),
+            (UNIT5, "Rumahku Selamat", 30, 33, "5.1.4"),
+            (UNIT6, "Asas Pertolongan Cemas", 34, 41, "6.2.4"),
+        )
+        with patch.dict("os.environ", {"CIKGULAJU_AUTHORITATIVE_API_TOKEN": token,
+                                       "CIKGULAJU_WEB_NATIVE_RPH_ENABLED": "1"}):
+            got = client.get(prefix + "/catalog?year=5", headers=headers).get_json()
+            self.assertEqual(got["year"], 5)
+            self.assertEqual(got["units"], [{"value": UNIT1, "label": "Unit 1 · Kesusilaan Cerminan Diri"}])
+            self.assertFalse(got["kemahiran_manipulatif"])
+            sources = [{"value": UNIT1, "label": got["units"][0]["label"], "lessons": got["lessons"]},
+                       *got["additional_units"]]
+            for src, (unit, title, start, last, _) in zip(sources, expected, strict=True):
+                self.assertEqual(src["value"], unit)
+                self.assertIn(title, src["label"])
+                self.assertEqual([row["value"] for row in src["lessons"]],
+                                 [f"{n:03d}" for n in range(start, last + 1)])
+                for item in src["lessons"]:
+                    choice = {"year": 5, "subject": SUBJECT, "unit": unit, "lesson": item["value"]}
+                    for fmt in ("word", "pdf"):
+                        result = client.post(prefix + "/render", headers=headers, json={
+                            "selection": choice, "teacher": dict.fromkeys(("class", "date", "time", "students"), ""),
+                            "format": fmt,
+                        })
+                        self.assertEqual(result.status_code, 200, (unit, item["value"], fmt))
+                        self.assertIn("TAHUN_5_" + item["value"], result.headers["Content-Disposition"])
+                        if fmt == "pdf":
+                            pages = PdfReader(BytesIO(result.data)).pages
+                            self.assertEqual(len(pages), 1)
+                            self.assertIn(title, pages[0].extract_text())
+                        else:
+                            self.assertEqual(len(Document(BytesIO(result.data)).tables), 3)
+            bad = client.post(prefix + "/render", headers=headers, json={
+                "selection": {"year": 5, "subject": SUBJECT, "unit": UNIT1, "lesson": "041"},
+                "teacher": {}, "format": "pdf",
+            })
+            self.assertEqual(bad.status_code, 404)
+            result = client.get(prefix + "/rpt.pdf?year=5", headers=headers)
+            self.assertEqual(result.status_code, 200)
+            self.assertIn("TAHUN_5_UNIT_1_2_3_4_5_6_2027.pdf", result.headers["Content-Disposition"])
+            pages = PdfReader(BytesIO(result.data)).pages
+            for page, (_, label, start, end, sp) in zip(pages, expected, strict=True):
+                text = page.extract_text()
+                self.assertIn(label, text)
+                self.assertIn(sp, text)
+                for number in range(start, end + 1):
+                    self.assertIn(f"{number:03d}", text)
+            self.assertEqual(client.get(prefix + "/rpt-manipulatif.pdf?year=5", headers=headers).status_code, 404)
 
     def test_all_71_word_pdf_and_protected_access(self):
         app = Flask(__name__)
