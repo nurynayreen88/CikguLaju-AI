@@ -90,7 +90,7 @@ def main():
                     assert "Pemulihan / Pengayaan" not in pages[0].extract_text()
                 assert expected in content, (selection, fmt, content)
     print("MUSIC_REFLECTION_PASS 20", flush=True)
-    for subject,years in (("ARAB",(2,4,6)),("MUZIK",(2,4,6))):
+    for subject,years in (("ARAB",(2,3,4,6)),("MUZIK",(2,4,6))):
         for year in years:
             first=_unit_rows(year,subject)[0]
             lesson=_lesson_rows(year,subject,first["value"])[0]["value"]
@@ -98,7 +98,7 @@ def main():
             avail=c.get("/internal/rph/v1/other-drafts/availability",
                         query_string=query,headers=auth)
             assert avail.status_code==200,(subject,year,avail.status_code,avail.json)
-            reviewed = (subject, year, first["value"], lesson) == ("ARAB", 2, "u01", "001")
+            reviewed = subject == "ARAB" and year in (2, 3) and (first["value"], lesson) == ("u01", "001")
             assert avail.json["status"] == ("READY" if reviewed else "DRAF")
             formats=avail.json["formats"]
             if subject=="MUZIK":
@@ -139,7 +139,7 @@ def main():
                             assert fields["الفصل"] == "2 Bestari"
                             assert fields["عدد التلاميذ"] == "30"
                             assert b'w:cs="Amiri"' in xml and b"w:bidiVisual" in xml
-                            assert "CIKGULAJU_RPH_ARAB_TAHUN_2_001.docx" in result.headers["Content-Disposition"]
+                            assert f"CIKGULAJU_RPH_ARAB_TAHUN_{year}_001.docx" in result.headers["Content-Disposition"]
                 else:
                     assert body.startswith(b"%PDF-")
                 print("PASS",subject,year,lesson,fmt,len(body),flush=True)
@@ -183,7 +183,13 @@ def main():
         for lesson in _lesson_rows(y, "ARAB", unit["value"])
         if lesson["status"] == "READY"
     }
-    assert actual == {(2, unit, pdp) for unit, pdp in reviewed}
+    year_three = {
+        1: ("1.1.1", "٢ و٦"), 2: ("1.1.2", "٢ و٦"), 3: ("1.2.1", "٢ و٦"),
+        4: ("2.1.1", "٢ و٦"), 5: ("2.2.1", "٤ و٨"),
+        6: ("3.1.1", "٥ و٩"), 7: ("3.2.1", "٥ و٩"),
+    }
+    assert actual == ({(2, unit, pdp) for unit, pdp in reviewed}
+                      | {(3, "u01", pdp) for pdp in year_three})
     for (unit, pdp), sp in reviewed.items():
         reviewed_lesson = {"year": 2, "subject": "ARAB", "unit": unit, "lesson": f"{pdp:03d}"}
         status = c.get("/internal/rph/v1/other-drafts/availability", query_string=reviewed_lesson,
@@ -210,6 +216,25 @@ def main():
             assert "محاكاة" in fields["معيار التعلّم"]
             assert "٣ و٥" in doc.tables[2].cell(1, 1).text
     print(f"ARABIC_REVIEWED_WORD_PASS {len(reviewed)}", flush=True)
+    for pdp, (sp, pages) in year_three.items():
+        selection = {"year": 3, "subject": "ARAB", "unit": "u01", "lesson": f"{pdp:03d}"}
+        status = c.get("/internal/rph/v1/other-drafts/availability", query_string=selection, headers=auth)
+        assert status.json["status"] == "READY" and status.json["formats"] == ["word"]
+        result = c.post("/internal/rph/v1/other-drafts/render", headers=auth, json={
+            "selection": selection,
+            "teacher": {"class": "3 Bestari", "date": "2027-01-20",
+                        "time": "08:00 - 09:00", "students": "30", "reflection": "Catatan guru."},
+            "format": "word",
+        })
+        assert result.status_code == 200, result.json
+        doc = Document(io.BytesIO(result.data))
+        fields = {row.cells[0].text: row.cells[1].text for row in doc.tables[0].rows}
+        assert sp in fields["معيار التعلّم"]
+        assert fields["الفصل"] == "3 Bestari" and fields["عدد التلاميذ"] == "30"
+        assert pages in doc.tables[2].cell(1, 1).text
+        assert doc.tables[2].cell(2, 1).text == "Catatan guru."
+        assert [len(table.columns) for table in doc.tables] == [2, 3, 2]
+    print(f"ARABIC_YEAR3_REVIEWED_WORD_PASS {len(year_three)}", flush=True)
     wrong_unit = {"year": 2, "subject": "ARAB", "unit": "u01", "lesson": "018"}
     status = c.get("/internal/rph/v1/other-drafts/availability",
                    query_string=wrong_unit, headers=auth)
