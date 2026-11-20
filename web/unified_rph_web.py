@@ -67,6 +67,21 @@ PPKI_SOURCE_VIDEOS = {
     },
 }
 
+PPKI_DOORBELL_AUDIO = {
+    "type": "audio", "title": "Bunyi loceng pintu · Buku Teks hlm. 61",
+    "url": "https://drive.usercontent.google.com/download?id=1d-vr96Ik_Jr6PttY2h7pou1wqeGNa92A&export=download&confirm=t",
+    "action": "Muat Turun Audio",
+}
+PPKI_SURROUNDING_SOUNDS = ({
+    "type": "audio", "title": "Bunyi kapal terbang melintas · Buku Teks hlm. 61",
+    "url": "https://drive.usercontent.google.com/download?id=1Ig0seAVuGqHJhLwRjoZrL8tYEKM40gJK&export=download&confirm=t",
+    "action": "Muat Turun Audio",
+}, {
+    "type": "audio", "title": "Kicauan burung · Buku Teks hlm. 61",
+    "url": "https://drive.usercontent.google.com/download?id=1HlKNJhtrp5ASu5NDaby9GUhMO9PnfWez&export=download&confirm=t",
+    "action": "Muat Turun Audio",
+}, PPKI_DOORBELL_AUDIO)
+
 PPKI_YEAR2_AND_3_MEDIA = {
     **{(2, ppki.UNIT3, f"{lesson:03d}"): ({
         "type": "audio", "title": "Rasa Sayang · Rakaman alternatif Syntax Media (CC0) · Buku Teks hlm. 23",
@@ -81,6 +96,9 @@ PPKI_YEAR2_AND_3_MEDIA = {
         "type": "video", "title": "Labah-labah Kecil · Rakaman alternatif · Buku Teks hlm. 51",
         "url": "https://www.youtube.com/watch?v=afPw9Bry2rA", "action": "Mainkan Rakaman",
     },),
+    (2, ppki.MANIPULATIVE_UNIT3, "064"): PPKI_SURROUNDING_SOUNDS,
+    (2, ppki.MANIPULATIVE_UNIT3, "065"): (PPKI_DOORBELL_AUDIO,),
+    (2, ppki.MANIPULATIVE_UNIT3, "066"): PPKI_SURROUNDING_SOUNDS,
     (3, ppki.UNIT3, "036"): ({
         "type": "audio", "title": "Can Mali Can · Contoh iringan Legato Music · Buku Teks hlm. 32",
         "url": "https://legatomusiconline.com/wp-content/uploads/2021/10/Chan-Mali-Chan-Flexi5-Sample-Sound.mp3",
