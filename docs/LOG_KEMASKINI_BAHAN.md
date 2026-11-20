@@ -2,6 +2,7 @@
 
 | Tarikh | Bahan / perubahan | Semakan | Status |
 | --- | --- | --- | --- |
+| 2026-11-20 | Pindahkan Jana Bahan selepas panel Maklumat RPH di Sediakan RPH. | Lapan ujian Web dan semakan turutan DOM lulus. Muat turun Word/PDF lulus dalam ujian aliran PPKI. | DALAM SEMAKAN. Sahkan penerbitan Web. |
 | 2026-11-20 | Tambah laluan Pendidikan Khas (PPKI) dalam Sediakan RPH dan RPT 2027. | Uji pilihan tahun, subjek, komponen, unit dan 14 PdP. Word/PDF melalui penjana Telegram. RPT Unit 2 menggunakan akses berbayar. | DALAM SEMAKAN. Terbitkan selepas penjana PPKI aktif. |
 | 2026-11-20 | Selaraskan PDF RPT Web dan pemilih Bahasa Arab Tahun 2 untuk PdP 018, 021 dan 022. | 7 ujian pilihan Word dan 1 ujian integriti katalog RPT lulus setempat. | DALAM SEMAKAN. Terbitkan Web dahulu supaya pemilih Unit 2 menerima respons penjana yang lengkap. |
 | 2026-11-18 | Terbitkan RPT dan RPH 2027 Science dan Mathematics DLP Year 5 SK. [Telegram #931](https://github.com/nurynayreen88/CikguLaju-AI/pull/931) `8759eccb5e69` · [Web #932](https://github.com/nurynayreen88/CikguLaju-AI/pull/932) `705011518983` | Science 70 sesi dan 64 jam. Mathematics 69 sesi dan 96 jam. 278 fail Word/PDF setiap saluran lulus dengan sesi simulasi dan bebas label dalaman. Dua muka depan berprofil disahkan. | **LIVE.** Telegram `dep-dbugc0c9v7es73863oig` aktif 09:59:40 MYT dan Web `dep-dbugg9k9v7es73869mmg` aktif 10:08:31 MYT. Kedua-dua servis HTTP 200. SHA-256 dua templat sepadan dan laluan muat turun memerlukan sesi sah. Muat turun melalui akaun guru produksi belum disahkan. |
