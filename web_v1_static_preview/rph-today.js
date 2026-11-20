@@ -43,7 +43,6 @@
   MUZIK:"Unit / Tajuk",SEJARAH:"Unit",RBT:"Unit"
  };
  const TYPES=new Set(["textbook","workbook","audio"]);
- const musicLink=/^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]{10,100}\/view\?usp=drivesdk$/;
  const englishBookView=/^https:\/\/online\.anyflip\.com\/(?:rmzft\/wwgq|hykyg\/rrpd)\/mobile\/index\.html\?pageIndex=[1-9][0-9]{0,2}$/;
 
  function create(tag,cls,value){
@@ -748,7 +747,11 @@
   const li=create("li","material-download-row");
   li.append(create("span","material-download-name",name));
   const button=create(url?"a":"button","material-download-action",action);
-  if(url){button.href=url;button.target="_blank";button.rel="noopener";}
+  if(url){
+   button.href=url;
+   button.rel="noopener";
+   if(action!=="Muat Turun Audio")button.target="_blank";
+  }
   li.append(button);
   return {li,button};
  }
@@ -761,12 +764,12 @@
   if(item.type==="textbook")return item.url.startsWith("/api/web/rph/english-student-book?")||
     (subject==="SCIENCE"&&item.url.startsWith("/api/web/rph/science-textbook?"));
   if(item.type==="audio")return /^\/api\/web\/rph\/english-audio\/[1-4]\?/.test(item.url)||
-   (subject==="MUZIK"&&(musicLink.test(item.url)||musicDownload(item)));
+   (subject==="MUZIK"&&musicDownload(item));
   return false;
  }
  function musicDownload(item){
   return item.action==="Muat Turun Audio"&&
-   /^https:\/\/drive\.usercontent\.google\.com\/download\?id=[A-Za-z0-9_-]{10,100}&export=download$/.test(item.url);
+   /^https:\/\/drive\.usercontent\.google\.com\/download\?id=[A-Za-z0-9_-]{10,100}&export=download(?:&confirm=t)?$/.test(item.url);
  }
  async function inspectOne(c,epoch){
   const key=selectedKey(c),args=selection(c),qs=new URLSearchParams(args);
@@ -834,8 +837,7 @@
       }
       if(!readyMaterialLink(item,c.slot.subject_code))continue;
       const label=item.title;
-      const action=musicDownload(item)?"Muat Turun Audio":englishBookView.test(item.url)?"Buka Buku Asal":
-        item.type==="audio"&&musicLink.test(item.url)?"Buka Audio Sumber":"Download";
+      const action=musicDownload(item)?"Muat Turun Audio":englishBookView.test(item.url)?"Buka Buku Asal":"Download";
       const row=actionRow(label,action,item.url);
       c.resultList.append(row.li);found++;
      }

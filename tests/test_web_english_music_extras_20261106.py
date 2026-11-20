@@ -119,7 +119,12 @@ class ExtraMaterialsWebTests(unittest.TestCase):
     def test_browser_uses_lesson_token_not_rpt_id(self):
         static=(ROOT/"web_v1_static_preview"/"index.html").read_text("utf8")
         self.assertIn("/api/web/rph/extra-materials?",static)
-        self.assertIn("Buka Audio Sumber",static)
+        self.assertIn("Muat Turun Audio",static)
+        self.assertNotIn("Buka Audio Sumber",static)
+        self.assertIn("&export=download(?:&confirm=t)?",static)
+        today=(ROOT/"web_v1_static_preview"/"rph-today.js").read_text("utf8")
+        self.assertIn("&export=download(?:&confirm=t)?",today)
+        self.assertNotIn("Buka Audio Sumber",today)
         self.assertNotIn('"/api/materials?"',static)
 
     def test_music_project_with_no_track_number_requires_verified_download(self):
@@ -138,6 +143,14 @@ class ExtraMaterialsWebTests(unittest.TestCase):
             self.assertEqual(response.status_code, 200)
             self.assertEqual(response.json["items"][0]["title"], title)
             self.assertEqual(response.json["items"][0]["action"], "Muat Turun Audio")
+            track["download_url"] += "&confirm=t"
+            large = self.client.get("/api/web/rph/extra-materials", query_string=params)
+            self.assertEqual(large.status_code, 200)
+            self.assertEqual(large.json["items"][0]["url"], track["download_url"])
+            self.assertEqual(large.json["items"][0]["action"], "Muat Turun Audio")
+            track["download_url"] += "&next=https://example.com/"
+            wrong = self.client.get("/api/web/rph/extra-materials", query_string=params)
+            self.assertEqual(wrong.status_code, 503)
             track.pop("download_url")
             rejected = self.client.get("/api/web/rph/extra-materials", query_string=params)
             self.assertEqual(rejected.status_code, 503)
