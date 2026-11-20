@@ -1,3 +1,7 @@
+## 20 November 2026 — Semakan kandungan Audio Tahun 4
+
+Kandungan Audio 66, 67 dan 90–92 sepadan dengan contoh irama dan melodi pada halaman 70 dan 82 Buku Teks Pendidikan Kesenian Tahun 4. Status akses guru, hak edaran dan kelulusan audio umum masih berbaki. [Rekod semakan muzik dan skor](year4/SEMAKAN_VISUAL_SKOR_PDP21_24_20261106.md)
+
 ## 6 November 2026 — Percubaan pautan Audio Sumber dalam menu Muzik staging
 
 - **617 rekod** sumber Google Drive asal disalin sebagai **metadata pautan sahaja** (lima `audio_source_index_year{2..6}_20261106.json`); fail WAV/MP3 tidak disalin ke repositori, Drive CikguLaju atau database.
