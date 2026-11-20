@@ -55,7 +55,7 @@ class ScienceDLPYear4Review(unittest.TestCase):
                         f"{code} {descriptions['ls'][code]}" for code in expected_codes
                     ))
                     self.assertEqual(fields["Learning objective"], plan["objective"])
-                    self.assertEqual(fields["RPT 2027 dates"], " · ".join(plan["rpt_dates"]))
+                    self.assertNotIn("RPT 2027 dates", fields)
                     for folder in (output, word_pdf):
                         file = PdfReader(folder / f"{stem}.pdf")
                         self.assertEqual(len(file.pages), 1)
@@ -63,6 +63,7 @@ class ScienceDLPYear4Review(unittest.TestCase):
                         self.assertAlmostEqual(float(page.mediabox.width), 595.28, delta=1)
                         self.assertAlmostEqual(float(page.mediabox.height), 841.89, delta=1)
                         content = " ".join(page.extract_text().split())
+                        self.assertNotIn("RPT 2027 dates", content)
                         self.assertIn(plan["title"], content)
                         self.assertIn(" ".join(plan["objective"].split()), content)
                         self.assertIn(" ".join(fields["Book references"].split()), content)

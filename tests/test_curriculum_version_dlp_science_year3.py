@@ -75,12 +75,13 @@ class DlpScienceYear3Tests(unittest.TestCase):
                 self.assertEqual(details["Learning Standards"], learning_text)
                 self.assertEqual(details["Learning objective"], pbd)
                 self.assertEqual(details["Lesson / PdP"], lesson_label)
-                self.assertEqual(details["RPT 2027 dates"], " · ".join(plan["rpt_dates"]))
+                self.assertNotIn("RPT 2027 dates", details)
                 phases = [r.cells[0].text for r in word.tables[1].rows[1:]]
                 self.assertEqual(phases, [phase["phase"] for phase in plan["phases"]])
                 pdf = PdfReader(BytesIO(render(SCIENCE, unit, lesson, "pdf", teacher)))
                 self.assertEqual(len(pdf.pages), 1)
                 text = " ".join(pdf.pages[0].extract_text().split())
+                self.assertNotIn("RPT 2027 dates", text)
                 for value in (content_text, learning_text):
                     self.assertIn(" ".join(value.split()), text)
         self.assertEqual(reviews, 4)

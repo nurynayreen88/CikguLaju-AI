@@ -95,6 +95,7 @@ class DLPYear5ReviewExports(unittest.TestCase):
                     self.assertEqual(word.tables[2].rows[0].cells[1].text, plan["evidence"])
                     table = word.tables[1]
                     fields = {row.cells[0].text: row.cells[1].text for row in word.tables[0].rows}
+                    self.assertNotIn("RPT date ranges", fields)
                     if subject == "Mathematics":
                         self.assertEqual(fields["Topic"], plan["title"])
                         text = "\n".join(row.cells[1].text for row in table.rows[1:])
@@ -114,8 +115,9 @@ class DLPYear5ReviewExports(unittest.TestCase):
                     for pdf_folder in (folder, word_pdfs) if word_pdfs.exists() else (folder,):
                         self.assertNotRegex(stem.replace("_", " "), INTERNAL_LABEL)
                         content = self.check_pdf(pdf_folder / f"{stem}.pdf", 1, (595, 842))
+                        self.assertNotIn("RPT date ranges", content)
                         self.assertIn(normalized(plan["label"].rsplit(" · ", 1)[0]), content)
-                        for field in ("title", "dates", *standard_fields, "reference", "objective", "evidence"):
+                        for field in ("title", *standard_fields, "reference", "objective", "evidence"):
                             self.assertIn(normalized(plan[field]), content)
 
     def check_pdf(self, path, count, size):
