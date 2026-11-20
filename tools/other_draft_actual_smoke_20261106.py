@@ -122,22 +122,27 @@ def main():
                         "teacher":{"class":"","date":"","time":"","students":""},
                         "format":"pdf"})
                 assert bad.status_code==503,bad.json
-    reviewed_second = {"year":2,"subject":"ARAB","unit":"u01","lesson":"002"}
-    status = c.get("/internal/rph/v1/other-drafts/availability", query_string=reviewed_second,
-                   headers=auth)
-    assert status.json["status"] == "READY", status.json
-    second = c.post("/internal/rph/v1/other-drafts/render", headers=auth, json={
-        "selection": reviewed_second, "teacher": {"class":"2 Bestari","date":"2027-01-20",
-                                                   "time":"08:00 - 09:00","students":"30"},
-        "format": "word",
-    })
-    assert second.status_code == 200, second.json
     from docx import Document
 
-    second_doc = Document(io.BytesIO(second.data))
-    fields = {row.cells[0].text: row.cells[1].text for row in second_doc.tables[0].rows}
-    assert "٠٠٢" in fields["الصف والحصّة"]
-    assert "1.1.2" in fields["معيار التعلّم"]
+    for lesson, label, code, skill, pages in (
+        ("002", "٠٠٢", "1.1.2", "تحديد", "٢ و٤"),
+        ("003", "٠٠٣", "1.2.1", "محاكاة", "٣ و٥"),
+    ):
+        selection = {"year": 2, "subject": "ARAB", "unit": "u01", "lesson": lesson}
+        status = c.get("/internal/rph/v1/other-drafts/availability", query_string=selection,
+                       headers=auth)
+        assert status.json["status"] == "READY", status.json
+        result = c.post("/internal/rph/v1/other-drafts/render", headers=auth, json={
+            "selection": selection, "teacher": {"class": "2 Bestari", "date": "2027-01-20",
+                                                 "time": "08:00 - 09:00", "students": "30"},
+            "format": "word",
+        })
+        assert result.status_code == 200, result.json
+        doc = Document(io.BytesIO(result.data))
+        fields = {row.cells[0].text: row.cells[1].text for row in doc.tables[0].rows}
+        assert label in fields["الصف والحصّة"]
+        assert code in fields["معيار التعلّم"] and skill in fields["معيار التعلّم"]
+        assert pages in doc.tables[2].cell(1, 1).text
     year6={"year":6,"subject":"ARAB","unit":"u03","lesson":"030"}
     assert c.get("/internal/rph/v1/other-drafts/availability",query_string=year6,headers=auth).status_code==200
     result=c.post("/internal/rph/v1/other-drafts/render",headers=auth,json={
