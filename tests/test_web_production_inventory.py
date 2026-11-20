@@ -1,5 +1,6 @@
 """Production Web carries latest repo source files without publishing draft lessons."""
 import os
+import re
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -63,11 +64,14 @@ class ProductionSourceInventory(unittest.TestCase):
                 self.assertEqual(response.status_code, 200)
         self.assertLess(html.index("Lihat Contoh RPH"), html.index('id="email-auth-login"'))
         self.assertIn('href="/contoh-rph.pdf"', html)
-        self.assertIn('src="/assets/contoh-rph.webp"', html)
+        self.assertEqual(re.findall(r'href="/contoh-rph\.pdf#page=(\d+)"', html),
+                         [str(page) for page in range(1, 11)])
+        self.assertIn('href="/contoh-rph.pdf#page=5" target="_blank" rel="noopener">Pendidikan Islam', html)
+        self.assertIn('href="/contoh-rph.pdf#page=6" target="_blank" rel="noopener">Bahasa Arab', html)
         self.assertIn('href="#pilihan-log-masuk"', html)
         self.assertIn('id="pilihan-log-masuk"', html)
 
-    def test_public_rph_sample_serves_fixed_files(self):
+    def test_public_rph_sample_serves_fixed_ten_page_pdf(self):
         from tools.run_web_production import app
 
         client = app.test_client()
@@ -76,13 +80,10 @@ class ProductionSourceInventory(unittest.TestCase):
             self.assertEqual(response.mimetype, "application/pdf")
             pdf = response.data
             self.assertTrue(pdf.startswith(b"%PDF-"))
+            self.assertEqual(len(re.findall(rb"/Type\s*/Page\b", pdf)), 10)
             self.assertNotIn("Set-Cookie", response.headers)
         with client.get("/contoh-rph.pdf?year=6&subject=BM&lesson=002") as response:
             self.assertEqual(response.data, pdf)
-        with client.get("/assets/contoh-rph.webp") as response:
-            self.assertEqual(response.status_code, 200)
-            self.assertEqual(response.mimetype, "image/webp")
-            self.assertEqual(response.data[8:12], b"WEBP")
 
 if __name__=="__main__":
     unittest.main()

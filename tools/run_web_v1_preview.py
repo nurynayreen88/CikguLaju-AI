@@ -44,14 +44,8 @@ def preview():
 
 @app.get("/contoh-rph.pdf")
 def public_rph_sample_pdf():
-    return send_file(PREVIEW.with_name("contoh-rph-sains-tahun-5.pdf"),
+    return send_file(PREVIEW.with_name("CikguLaju_10_Contoh_RPH_SK.pdf"),
                      mimetype="application/pdf", max_age=300, conditional=True)
-
-
-@app.get("/assets/contoh-rph.webp")
-def public_rph_sample_image():
-    return send_file(PREVIEW.with_name("contoh-rph-sains-tahun-5.webp"),
-                     mimetype="image/webp", max_age=300, conditional=True)
 
 
 @app.get("/assets/primary-subjects.js")
