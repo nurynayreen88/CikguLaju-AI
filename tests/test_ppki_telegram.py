@@ -10,7 +10,7 @@ from pypdf import PdfReader
 
 from curriculum_version_telegram import install
 from rpt_2027.english.telegram_downloads import install as install_rpt
-from staging.ppki.catalog import SUBJECT, UNIT, UNIT3, UNIT4
+from staging.ppki.catalog import SUBJECT, UNIT, UNIT3, UNIT4, UNIT5
 from web.telegram_ppki_api import create_ppki_blueprint
 
 
@@ -40,23 +40,23 @@ class PpkiTelegramTest(unittest.TestCase):
         callback = self.namespace["callback"]
         self.namespace["year"](42, "primary")
         for key in ("cv_primary_ppki", "cv_ppki_year2", "cv_ppki_subject",
-                    "cv_ppki_component", f"cv_ppki_unit_{UNIT4}", "cv_ppki_lesson_023"):
+                    "cv_ppki_component", f"cv_ppki_unit_{UNIT5}", "cv_ppki_lesson_027"):
             self.assertIn(key, [button["callback_data"] for row in self.messages[-1][1] for button in row])
             callback(42, key)
         self.assertNotIn("lesson_no", self.state[42])
         callback(42, "cv_ppki_pdf_018")
         self.assertFalse(self.documents)
-        callback(42, f"cv_ppki_unit_{UNIT4}")
-        callback(42, "cv_ppki_lesson_023")
-        callback(42, "cv_ppki_word_023")
+        callback(42, f"cv_ppki_unit_{UNIT5}")
+        callback(42, "cv_ppki_lesson_027")
+        callback(42, "cv_ppki_word_027")
         self.assertFalse(self.documents)
         self.allow = True
-        callback(42, "cv_ppki_word_023")
-        callback(42, "cv_ppki_pdf_023")
+        callback(42, "cv_ppki_word_027")
+        callback(42, "cv_ppki_pdf_027")
         self.assertEqual([name.rsplit(".", 1)[1] for name, *_ in self.documents], ["docx", "pdf"])
         pdf = PdfReader(BytesIO(self.documents[-1][1]))
         self.assertEqual(len(pdf.pages), 1)
-        self.assertIn("4.1.3", pdf.pages[0].extract_text())
+        self.assertIn("5.1.4", pdf.pages[0].extract_text())
 
     def test_rpt_under_own_menu_and_paid_gate(self):
         callback = self.namespace["callback"]
@@ -67,17 +67,18 @@ class PpkiTelegramTest(unittest.TestCase):
         for key in ("rpt2027_home", "rpt2027_ppki_home", "rpt2027_ppki_year2", "rpt2027_ppki_pdf2"):
             callback(42, key)
         rpt = PdfReader(BytesIO(self.documents[-1][1]))
-        self.assertEqual(len(rpt.pages), 3)
+        self.assertEqual(len(rpt.pages), 4)
         content = "\n".join(page.extract_text() for page in rpt.pages)
-        for number in range(1, 24):
+        for number in range(1, 28):
             self.assertIn(f"{number:03d}", content)
         self.assertIn("Agihan PdP Unit 2", content)
         self.assertIn("Rumah Rubina", rpt.pages[2].extract_text())
-        self.assertIn("UNIT_2_3_4_2027.pdf", self.documents[-1][0])
+        self.assertIn("Budi Pekerti Mulia", rpt.pages[3].extract_text())
+        self.assertIn("UNIT_2_3_4_5_2027.pdf", self.documents[-1][0])
 
 
 class PpkiApiTest(unittest.TestCase):
-    def test_all_23_word_pdf_and_protected_access(self):
+    def test_all_27_word_pdf_and_protected_access(self):
         app = Flask(__name__)
         app.register_blueprint(create_ppki_blueprint())
         client = app.test_client()
@@ -94,7 +95,7 @@ class PpkiApiTest(unittest.TestCase):
             teacher = {"class": "2 Bestari", "date": "2027-03-04", "time": "08:00 - 08:30",
                        "students": "7", "reflection": "Ulang dengan kad gambar."}
             selection = {"year": 2, "subject": SUBJECT, "unit": UNIT, "lesson": "001"}
-            self.assertEqual([unit["value"] for unit in options["additional_units"]], [UNIT3, UNIT4])
+            self.assertEqual([unit["value"] for unit in options["additional_units"]], [UNIT3, UNIT4, UNIT5])
             units = [{"value": UNIT, "lessons": options["lessons"]}, *options["additional_units"]]
             for unit in units:
                 selection["unit"] = unit["value"]
@@ -117,7 +118,7 @@ class PpkiApiTest(unittest.TestCase):
             selection["lesson"] = "015"
             self.assertEqual(client.post(prefix + "/render", headers=headers,
                                          json={"selection": selection, "teacher": teacher, "format": "pdf"}).status_code, 404)
-            for endpoint, pages in (("/rpt.pdf", 1), ("/rpt-current.pdf", 3)):
+            for endpoint, pages in (("/rpt.pdf", 1), ("/rpt-current.pdf", 4)):
                 response = client.get(prefix + endpoint, headers=headers)
                 self.assertEqual(response.status_code, 200)
                 self.assertEqual(len(PdfReader(BytesIO(response.data)).pages), pages)
