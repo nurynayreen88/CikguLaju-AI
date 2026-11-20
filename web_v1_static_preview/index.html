@@ -2020,7 +2020,8 @@ async function populateMaterialList(){
    found++;
   }
  }
- if((subject.value==="ENGLISH"&&[2,3,4,5,6].includes(Number(year.value)))||
+ const arabYear3=subject.value==="ARAB"&&year.value==="3";
+ if((subject.value==="ENGLISH"&&[2,3,4,5,6].includes(Number(year.value)))||arabYear3||
     subject.value==="MUZIK"||(subject.value===ppkiSubject&&["2","3","4","5","6"].includes(year.value))||
     (subject.value==="SCIENCE"&&[1,2,3,5,6].includes(Number(year.value)))){
   try{
@@ -2051,11 +2052,13 @@ async function populateMaterialList(){
     const ownEnglishAudio=subject.value==="ENGLISH"&&item.type==="audio"&&
         /^\/api\/web\/rph\/english-audio\/[1-4]\?/.test(item.url);
     const sourceDownload=/^https:\/\/drive\.usercontent\.google\.com\/download\?id=[A-Za-z0-9_-]{10,100}&export=download(?:&confirm=t)?$/.test(item.url);
-    const musicDownload=subject.value==="MUZIK"&&item.type==="audio"&&item.action==="Muat Turun Audio"&&sourceDownload;
+    const sourceAudio=item.type==="audio"&&item.action==="Muat Turun Audio"&&sourceDownload;
+    const musicDownload=subject.value==="MUZIK"&&sourceAudio;
+    const arabAudioDownload=arabYear3&&sourceAudio;
     const ppkiDownload=subject.value===ppkiSubject&&sourceDownload&&
       ((item.type==="video"&&item.action==="Muat Turun Video")||
        (item.type==="audio"&&item.action==="Muat Turun Audio"));
-    const ppkiPlayback=subject.value===ppkiSubject&&item.type==="video"&&item.action==="Mainkan Rakaman"&&
+    const recordingPlayback=(subject.value===ppkiSubject||arabYear3)&&item.type==="video"&&item.action==="Mainkan Rakaman"&&
         /^https:\/\/www\.youtube\.com\/watch\?v=[A-Za-z0-9_-]{11}$/.test(item.url);
     const ppkiAudioPlayback=subject.value===ppkiSubject&&item.type==="audio"&&item.action==="Dengar Audio"&&
         (item.url==="https://alamak.my/koleksi/fabel/singa-dan-tikus"||
@@ -2066,9 +2069,9 @@ async function populateMaterialList(){
         item.url.startsWith("/api/web/rph/science-textbook?");
     const originalEnglishBook=subject.value==="ENGLISH"&&item.action==="Buka Buku Asal"&&
         /^https:\/\/online\.anyflip\.com\/(?:rmzft\/wwgq|hykyg\/rrpd)\/mobile\/index\.html\?pageIndex=[1-9][0-9]{0,2}$/.test(item.url);
-    if(!ownWorkbook&&!ownStudentBook&&!ownEnglishAudio&&!musicDownload&&!ownScienceBook&&!originalEnglishBook&&!ppkiDownload&&!ppkiPlayback&&!ppkiAudioPlayback)continue;
+    if(!ownWorkbook&&!ownStudentBook&&!ownEnglishAudio&&!musicDownload&&!arabAudioDownload&&!ownScienceBook&&!originalEnglishBook&&!ppkiDownload&&!recordingPlayback&&!ppkiAudioPlayback)continue;
     list.append(materialRow(item.title,{ready:true,url:item.url,
-      actionLabel:ownEnglishAudio?"Muat Turun Audio":originalEnglishBook||musicDownload||ppkiDownload||ppkiPlayback||ppkiAudioPlayback?item.action:"Download"}));
+      actionLabel:ownEnglishAudio?"Muat Turun Audio":originalEnglishBook||musicDownload||arabAudioDownload||ppkiDownload||recordingPlayback||ppkiAudioPlayback?item.action:"Download"}));
     found++;
    }
   }catch(e){sourceError=(sourceError+" "+e.message).trim();}

@@ -74,6 +74,36 @@ def _ppki_mp3(title, file_id):
     }
 
 
+ARAB_YEAR3_DAYS_AUDIO = {
+    "type": "audio", "title": "Sebutan tujuh nama hari · Zinou2go, CC BY-SA 3.0",
+    "url": "https://drive.usercontent.google.com/download?id=1MNsCyjEiy7tK1eu0O4H4xJioEQf0b2Qq&export=download&confirm=t",
+    "action": "Muat Turun Audio",
+}
+ARAB_YEAR3_TIME_VIDEO = {
+    "type": "video", "title": "Waktu itu emas · Nyanyian Muallim Hazar · Buku Teks hlm. 87",
+    "url": "https://www.youtube.com/watch?v=GLi9tLRQMw0", "action": "Mainkan Rakaman",
+}
+ARAB_YEAR3_MEDIA = {
+    ("u01", "010"): ({
+        "type": "video", "title": "Peralatan di dalam kelas · Nyanyian Muallim Hazar · Buku Teks hlm. 13–14",
+        "url": "https://www.youtube.com/watch?v=3cfsR_2ADTU", "action": "Mainkan Rakaman",
+    },),
+    ("u02", "028"): ({
+        "type": "video", "title": "Pakaian saya · Nyanyian NF Farhin · Buku Teks hlm. 55",
+        "url": "https://www.youtube.com/watch?v=v5e3wECmYDo", "action": "Mainkan Rakaman",
+    },),
+    ("u03", "043"): ({
+        "type": "video", "title": "Warna di sekeliling kita · Nyanyian Nonie Maryana · Buku Teks hlm. 83",
+        "url": "https://www.youtube.com/watch?v=QKsDg28oO14", "action": "Mainkan Rakaman",
+    },),
+    ("u04", "052"): (ARAB_YEAR3_DAYS_AUDIO, ARAB_YEAR3_TIME_VIDEO, {
+        "type": "video", "title": "Lagu hari-hari dalam seminggu · Muallim Hazar",
+        "url": "https://www.youtube.com/watch?v=bfU1oW4-VsQ", "action": "Mainkan Rakaman",
+    }),
+    ("u04", "054"): (ARAB_YEAR3_DAYS_AUDIO, ARAB_YEAR3_TIME_VIDEO),
+}
+
+
 PPKI_DOORBELL_AUDIO = _ppki_mp3("Bunyi loceng pintu", "1d-vr96Ik_Jr6PttY2h7pou1wqeGNa92A")
 PPKI_AIRPLANE_AUDIO = _ppki_mp3("Bunyi kapal terbang melintas", "1Ig0seAVuGqHJhLwRjoZrL8tYEKM40gJK")
 PPKI_BIRDS_AUDIO = _ppki_mp3("Kicauan burung", "1HlKNJhtrp5ASu5NDaby9GUhMO9PnfWez")
@@ -1342,6 +1372,8 @@ def create_blueprint():
             return year, sub, unit, lesson, found[0]["lesson"]
         if sub == "MUZIK" and year in range(2, 7):
             return year, sub, unit, lesson, None
+        if sub == "ARAB" and year == 3 and (unit, lesson) in ARAB_YEAR3_MEDIA:
+            return year, sub, unit, lesson, None
         if sub == ppki.SUBJECT and ((year, unit, lesson) == (3, ppki.UNIT1, "003")
                                     or (year, unit, lesson) in PPKI_LESSON_MEDIA
                                     or (year, unit, lesson) in PPKI_SOURCE_VIDEOS
@@ -1371,6 +1403,11 @@ def create_blueprint():
         except (ValueError, TypeError):
             return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
         try:
+            if sub == "ARAB":
+                from web.native_telegram_other_draft_client import draft_available
+
+                draft_available(year, sub, unit, token)
+                return jsonify({"status": "PAUTAN_RAKAMAN", "items": ARAB_YEAR3_MEDIA[(unit, token)]})
             if sub == ppki.SUBJECT:
                 ppki.validate_selection(year, sub, unit, token)
                 items = PPKI_LESSON_MEDIA.get((year, unit, token))
