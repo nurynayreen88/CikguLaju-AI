@@ -71,6 +71,35 @@ class PpkiWebTest(unittest.TestCase):
         self.assertEqual(self.client.get(opts, query_string={"year": 2, "kind": "pdp", "subject": ppki.SUBJECT,
                                                              "unit": "u01"}).status_code, 400)
 
+    def test_manipulative_component_selection_and_existing_rpt(self):
+        opts = "/api/options"
+        query = {"year": 2, "subject": ppki.SUBJECT}
+        self.assertEqual(self.client.get(opts, query_string={**query, "kind": "components"}).json,
+                         self.catalog["components"])
+        self.catalog["kemahiran_manipulatif"] = [{
+            "value": ppki.MANIPULATIVE_UNIT1, "label": "Unit 1 · Kami Aktif",
+            "lessons": [{"value": f"{n:03d}", "label": f"PdP {n:03d}",
+                         "formats": ["word", "pdf"], "textbook_ref": "Buku Teks hlm. 39"}
+                        for n in range(40, 44)],
+        }]
+        self.assertEqual([row["value"] for row in self.client.get(
+            opts, query_string={**query, "kind": "components"}).json],
+            [ppki.COMPONENT, ppki.MANIPULATIVE_COMPONENT])
+        self.assertEqual([row["value"] for row in self.client.get(
+            opts, query_string={**query, "kind": "units", "component": ppki.MANIPULATIVE_COMPONENT}).json],
+            [ppki.MANIPULATIVE_UNIT1])
+        self.assertEqual([row["value"] for row in self.client.get(
+            opts, query_string={**query, "kind": "pdp", "unit": ppki.MANIPULATIVE_UNIT1}).json],
+            ["040", "041", "042", "043"])
+        selected = {**query, "unit": ppki.MANIPULATIVE_UNIT1, "lesson": "040"}
+        self.assertEqual(self.client.get("/api/web/rph/word", query_string=selected).status_code, 200)
+        self.assertEqual(self.client.get("/api/web/rph/pdf", query_string=selected).status_code, 200)
+        self.assertGreaterEqual(self.client.get("/api/web/rph/word", query_string={
+            **selected, "unit": ppki.UNIT}).status_code, 400)
+        entry, = [row for row in self.client.get("/api/rpt/2027/catalog").json["subjects"]
+                  if row["code"] == ppki.RPT_CODE]
+        self.assertIn("Pengurusan Diri · Agihan 14 PdP Unit 2", entry["years"][0]["note"])
+
     def test_rph_word_pdf_and_trial_gate(self):
         prefix = "/api/web/rph/"
         available = self.client.get(prefix + "availability", query_string=self.selection)

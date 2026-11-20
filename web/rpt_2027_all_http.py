@@ -362,7 +362,7 @@ def create_all_rpt_blueprint(*,root=ROOT):
             data["subjects"].append({"code": ppki.RPT_CODE, "label": "Pengurusan Kehidupan", "years": [{
                 "year": ppki.YEAR, "status": f"AGIHAN {edition.upper()}", "pdf_ready": True,
                 "download_enabled": paid, "is_draft": False,
-                "note": f"Agihan {count} PdP {edition}. Guru menetapkan tarikh PdP mengikut jadual kelas.",
+                "note": f"Pengurusan Diri · Agihan {count} PdP {edition}. Guru menetapkan tarikh PdP mengikut jadual kelas.",
             }]})
             for key in ("total_rpt", "available_rpt", "total_display_choices"):
                 data[key] += 1
