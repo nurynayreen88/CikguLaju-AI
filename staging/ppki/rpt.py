@@ -2,7 +2,7 @@
 from io import BytesIO
 from xml.sax.saxutils import escape
 
-from staging.ppki.catalog import UNIT, UNIT_LESSONS, catalog
+from staging.ppki.catalog import RPT_COMBINED_EDITION, UNIT, UNIT_LESSONS, catalog
 from staging.ppki.render_pengurusan_kehidupan import PPKI_LABEL_FILL
 
 
@@ -49,14 +49,14 @@ def render_rpt(*, combined=False):
         ]
 
     units = list(UNIT_LESSONS) if combined else [UNIT]
-    edition = f"2–{len(units) + 1}" if combined else "2"
+    edition = RPT_COMBINED_EDITION if combined else "Unit 2"
     stream = BytesIO()
-    doc = SimpleDocTemplate(stream, pagesize=landscape(A4), title=f"RPT PPKI Tahun 2 · Agihan PdP Unit {edition}",
+    doc = SimpleDocTemplate(stream, pagesize=landscape(A4), title=f"RPT PPKI Tahun 2 · Agihan PdP {edition}",
                             leftMargin=15 * mm, rightMargin=15 * mm, topMargin=12 * mm, bottomMargin=12 * mm)
     story = []
-    for number, unit in enumerate(units, start=2):
+    for unit in units:
         if story:
             story.append(PageBreak())
-        story.extend(unit_story(unit, number))
+        story.extend(unit_story(unit, int(unit[1:3])))
     doc.build(story)
     return stream.getvalue()
