@@ -711,7 +711,7 @@ def create_blueprint():
                 verified_rpt_available(year, subject, unit, token)
             except (NativeRPHUnavailable, ValueError):
                 return None, (jsonify({
-                    "error": "RPH subjek ini belum boleh disahkan daripada RPT utama Telegram bagi PdP dipilih.",
+                    "error": "RPH Pendidikan Islam bagi PdP ini belum tersedia.",
                     "code": "TELEGRAM_RPT_RPH_NOT_READY",
                 }), 503)
             return {
@@ -799,7 +799,7 @@ def create_blueprint():
                 formats, status = draft_available(year, subject, unit, token)
             except (NativeRPHUnavailable, ValueError):
                 return None, (jsonify({
-                    "error":"RPH DRAF belum boleh disahkan dengan sumber asal Telegram.",
+                    "error":"RPH bagi PdP ini belum tersedia.",
                     "code":"TELEGRAM_OTHER_DRAFT_SOURCE_UNAVAILABLE",
                 }),503)
             return {
@@ -952,7 +952,7 @@ def create_blueprint():
                 from web.native_telegram_other_draft_client import request_draft_rph
                 if fmt not in selected.get("formats", ()):
                     return None, (jsonify({
-                        "error":"Format RPH DRAF ini belum diluluskan untuk muat turun.",
+                        "error":"Format yang dipilih belum tersedia untuk PdP ini.",
                         "code":"DRAFT_RPH_FORMAT_NOT_VERIFIED",
                     }),503), None
                 document = request_draft_rph(selected, fmt)
