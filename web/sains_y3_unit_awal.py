@@ -189,7 +189,7 @@ def plan_text(lesson, standards):
         f"KRITERIA KEJAYAAN: {lesson.objective}",
         f"BAHAN BANTU MENGAJAR: {lesson.materials} Buku Teks m/s {lesson.pages}.",
         f"EMK / NILAI: {teaching['EMK / NILAI']}",
-        f"KBAT / PAK21: {teaching['KBAT / PAK21']}",
+        f"KBAT / PAK21: {teaching['KBAT / PAK21'].removeprefix('KBAT: ')}",
         f"PENTAKSIRAN: {lesson.assessment}",
         f"SET INDUKSI: {lesson.induction}",
         f"AKTIVITI UTAMA:\nAktiviti 1 — {lesson.guided}\nAktiviti 2 — {lesson.independent}",
