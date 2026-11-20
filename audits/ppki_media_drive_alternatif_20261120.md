@@ -43,3 +43,9 @@ Indeks memasukkan rakaman pengajar bagi Unit 1 [Peralatan di dalam kelas, hlm. 1
 
 - [Web PR #1140](https://github.com/nurynayreen88/CikguLaju-AI/pull/1140) terbit dengan commit `ba965416063ff1c980ab0101ccedaaa9d32ad0bc` pada Render `dep-dc05fve0tbcc73amtofg` pada 22:26 MYT. 13 ujian Web PPKI setempat dan semakan sintaks JavaScript lulus. 27 semakan CI selesai tanpa kegagalan. Skrip produksi memuatkan butang muat turun bagi bahan PPKI dan `/readyz` mengesahkan Web serta sumber kurikulum boleh dicapai. Klik melalui akaun guru produksi belum disemak.
 - English sudah mempunyai tindakan muat turun apabila trek disahkan untuk pelajaran yang dipilih. Lihat [Web PR #1114](https://github.com/nurynayreen88/CikguLaju-AI/pull/1114) dan folder CikguLaju Audio & Video. [Arkib Pendidikan Muzik Tahun 1–6](https://drive.google.com/drive/folders/1yelTDB8kBpN7LdXyBcXs3KrVP8KS06Df) tersedia. Semakan ini tidak mengesahkan semua rakaman atau semua buku SK dan PPKI.
+
+## Kemas kini rakaman Deriaku
+
+[Buku teks Tahun 4 halaman bercetak 64](https://fliphtml5.com/xsdxr/bqah/T4_Pengurusan_Kehidupan/70/) merujuk lagu Deriaku bagi Kemahiran Manipulatif Unit 1, SP 1.2.1–1.2.3, dengan irama Anaklah Ikan. [Rakaman Aida Mahadi](https://www.youtube.com/watch?v=QKYC5Eaz0d0) menyatakan tajuk, komponen dan tahun yang sama. Pautan untuk main balik dimasukkan ke dalam indeks PPKI sedia ada dengan ID Drive yang sama. Fail MP3 yang boleh dimuat turun belum ditemui.
+
+PDF indeks dikemas kini tanpa membuang sepuluh pautan terdahulu. Salinan Drive baharu lulus semakan bait demi bait, menyimpan 11 pautan unik dalam satu halaman dan mempunyai SHA-256 `8487581db005c4c4ca48cf8523e7a9d306131dcd3e62090bd941ad1d8d30d870`.
