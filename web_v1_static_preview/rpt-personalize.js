@@ -215,7 +215,7 @@
     )).map(b=>b.toString(16).padStart(2,"0")).join("");
     if(actualSha!==declaredSha)throw Error("Checksum PDF tidak sepadan. Muat turun dibatalkan.");
     return {bytes,sha:actualSha,paidCover:response.headers.get("X-RPT-Personalization-Allowed")==="1",
-            combinedPpki:response.headers.get("content-disposition")?.includes("UNIT_2_3_2027.pdf")===true};
+            ppkiUnits:response.headers.get("content-disposition")?.match(/UNIT_(2(?:_3(?:_4)?)?)_2027\.pdf/)?.[1]||"2"};
   }
   async function downloadWithOriginalCover(code,year,openedViewer=null,mobileRequest=false){
     const source=await sourcePdf(code,year);
@@ -241,9 +241,9 @@
     const url=URL.createObjectURL(download);
     const yearLabel=code.endsWith("_dlp")||code==="english"?"_YEAR_":"_TAHUN_";
     const ppki=code==="pengurusan_kehidupan_ppki";
-    const ppkiEdition=source.combinedPpki?"Unit 2–3":"Unit 2";
+    const ppkiEdition=source.ppkiUnits==="2"?"Unit 2":"Unit 2–"+source.ppkiUnits.at(-1);
     const filename=ppki?"CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_"+
-      (source.combinedPpki?"2_3":"2")+"_2027.pdf":
+      source.ppkiUnits+"_2027.pdf":
       "CIKGULAJU_RPT_"+code.toUpperCase()+yearLabel+year+
       (result.personalized?"_2027_ISI_PROFIL.pdf":"_2027_PERCUMA.pdf");
     if(ppki)result.ppkiEdition=ppkiEdition;
