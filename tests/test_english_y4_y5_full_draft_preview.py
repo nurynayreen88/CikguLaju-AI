@@ -178,7 +178,8 @@ class EnglishY4Y5ReleaseCoverage(unittest.TestCase):
         app=(ROOT/"app.py").read_text(encoding="utf-8")
         i=app.rfind("def _create_rph_word(")
         self.assertGreater(i,0)
-        self.assertIn("rph = _rph_rows(s, ai_text)",app[i:i+250])
+        _, _, word = app[i:].partition("\n")
+        self.assertIn("rph = _rph_rows(s, ai_text)", word.split("\ndef ", 1)[0])
         for k in ("MAIN CONTENT STANDARD","MAIN LEARNING STANDARD",
                   "COMPLEMENTARY CONTENT STANDARD","COMPLEMENTARY LEARNING STANDARD"):
             self.assertIn(k,app[i:i+2700])

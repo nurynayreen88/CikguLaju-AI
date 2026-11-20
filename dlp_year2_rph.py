@@ -269,7 +269,7 @@ def _cell_lines(value, bold):
 
 
 def _word(output, heading, details, activities, reflection, *, compact=False,
-          mathematics=False, teacher=None):
+          mathematics=False, teacher=None, label_fill=None):
     from copy import deepcopy
 
     from docx import Document
@@ -280,7 +280,7 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
     from docx.shared import Mm, Pt, RGBColor
     from web.rph_document_style import word_gap
 
-    fill = _MATHEMATICS_FILL if mathematics else _SCIENCE_FILL
+    fill = label_fill or (_MATHEMATICS_FILL if mathematics else _SCIENCE_FILL)
 
     def shading():
         element = OxmlElement("w:shd")
@@ -393,7 +393,7 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
 
 
 def _pdf(output, heading, details, activities, reflection, *, compact=False,
-         mathematics=False, teacher=None):
+         mathematics=False, teacher=None, label_fill=None):
     from reportlab.lib import colors
     from reportlab.lib.enums import TA_CENTER
     from reportlab.lib.pagesizes import A4
@@ -402,7 +402,7 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
     from reportlab.platypus import BaseDocTemplate, Frame, KeepInFrame, PageTemplate, Paragraph, Spacer, Table
     from web.rph_document_style import pdf_box_style, pdf_fonts
 
-    fill = colors.HexColor("#" + (_MATHEMATICS_FILL if mathematics else _SCIENCE_FILL))
+    fill = colors.HexColor("#" + (label_fill or (_MATHEMATICS_FILL if mathematics else _SCIENCE_FILL)))
     details, activities = _rph_display_rows(details, activities)
     activities = _activity_table(activities, english=heading[0] == "Daily Lesson Plan")
     if mathematics:
