@@ -67,35 +67,46 @@ PPKI_SOURCE_VIDEOS = {
     },
 }
 
-def _ppki_mp3(title, file_id):
+def _drive_mp3(title, file_id):
     return {
         "type": "audio", "title": title, "action": "Muat Turun Audio",
         "url": f"https://drive.usercontent.google.com/download?id={file_id}&export=download&confirm=t",
     }
 
 
-ARAB_YEAR3_DAYS_AUDIO = {
-    "type": "audio", "title": "Sebutan tujuh nama hari · Zinou2go, CC BY-SA 3.0",
-    "url": "https://drive.usercontent.google.com/download?id=1MNsCyjEiy7tK1eu0O4H4xJioEQf0b2Qq&export=download&confirm=t",
-    "action": "Muat Turun Audio",
-}
+ARAB_YEAR3_DAYS_AUDIO = _drive_mp3(
+    "Sebutan tujuh nama hari · Zinou2go, CC BY-SA 3.0", "1MNsCyjEiy7tK1eu0O4H4xJioEQf0b2Qq"
+)
+ARAB_YEAR3_CLASS_AUDIO = _drive_mp3(
+    "Sebutan lima perkataan peralatan kelas", "1EpHVsUWS5Kdlo4RptFQucqPIk4DkcOU5"
+)
+ARAB_YEAR3_CLOTHING_AUDIO = _drive_mp3(
+    "Sebutan enam perkataan pakaian", "1eQBGbbeQS0y7V3VJW85D57txrtgqzRo6"
+)
+ARAB_YEAR3_COLOURS_AUDIO = _drive_mp3(
+    "Sebutan enam nama warna", "1bCvWaPMJru3IpOI6oFe9HQinfjRgMVLH"
+)
 ARAB_YEAR3_TIME_VIDEO = {
     "type": "video", "title": "Waktu itu emas · Nyanyian Muallim Hazar · Buku Teks hlm. 87",
     "url": "https://www.youtube.com/watch?v=GLi9tLRQMw0", "action": "Mainkan Rakaman",
 }
 ARAB_YEAR3_MEDIA = {
-    ("u01", "010"): ({
+    ("u01", "010"): (ARAB_YEAR3_CLASS_AUDIO, {
         "type": "video", "title": "Peralatan di dalam kelas · Nyanyian Muallim Hazar · Buku Teks hlm. 13–14",
         "url": "https://www.youtube.com/watch?v=3cfsR_2ADTU", "action": "Mainkan Rakaman",
-    },),
+    }),
+    ("u02", "022"): (ARAB_YEAR3_CLOTHING_AUDIO,),
+    ("u02", "023"): (ARAB_YEAR3_CLOTHING_AUDIO,),
     ("u02", "028"): ({
         "type": "video", "title": "Pakaian saya · Nyanyian NF Farhin · Buku Teks hlm. 55",
         "url": "https://www.youtube.com/watch?v=v5e3wECmYDo", "action": "Mainkan Rakaman",
     },),
-    ("u03", "043"): ({
+    ("u03", "036"): (ARAB_YEAR3_COLOURS_AUDIO,),
+    ("u03", "037"): (ARAB_YEAR3_COLOURS_AUDIO,),
+    ("u03", "043"): (ARAB_YEAR3_COLOURS_AUDIO, {
         "type": "video", "title": "Warna di sekeliling kita · Nyanyian Nonie Maryana · Buku Teks hlm. 83",
         "url": "https://www.youtube.com/watch?v=QKsDg28oO14", "action": "Mainkan Rakaman",
-    },),
+    }),
     ("u04", "052"): (ARAB_YEAR3_DAYS_AUDIO, ARAB_YEAR3_TIME_VIDEO, {
         "type": "video", "title": "Lagu hari-hari dalam seminggu · Muallim Hazar",
         "url": "https://www.youtube.com/watch?v=bfU1oW4-VsQ", "action": "Mainkan Rakaman",
@@ -104,13 +115,13 @@ ARAB_YEAR3_MEDIA = {
 }
 
 
-PPKI_DOORBELL_AUDIO = _ppki_mp3("Bunyi loceng pintu", "1d-vr96Ik_Jr6PttY2h7pou1wqeGNa92A")
-PPKI_AIRPLANE_AUDIO = _ppki_mp3("Bunyi kapal terbang melintas", "1Ig0seAVuGqHJhLwRjoZrL8tYEKM40gJK")
-PPKI_BIRDS_AUDIO = _ppki_mp3("Kicauan burung", "1HlKNJhtrp5ASu5NDaby9GUhMO9PnfWez")
+PPKI_DOORBELL_AUDIO = _drive_mp3("Bunyi loceng pintu", "1d-vr96Ik_Jr6PttY2h7pou1wqeGNa92A")
+PPKI_AIRPLANE_AUDIO = _drive_mp3("Bunyi kapal terbang melintas", "1Ig0seAVuGqHJhLwRjoZrL8tYEKM40gJK")
+PPKI_BIRDS_AUDIO = _drive_mp3("Kicauan burung", "1HlKNJhtrp5ASu5NDaby9GUhMO9PnfWez")
 PPKI_SURROUNDING_SOUNDS = (PPKI_AIRPLANE_AUDIO, PPKI_BIRDS_AUDIO, PPKI_DOORBELL_AUDIO)
 PPKI_SITUATION_SOUNDS = (
-    _ppki_mp3("Bunyi ketukan pintu", "1PE_jh74ozM0dFQP7pgog0jKBCBxGSl5s"),
-    _ppki_mp3("Bunyi hujan", "1ciXKlkIhdD_0PcszWGIgRCDi6t9RqsDc"),
+    _drive_mp3("Bunyi ketukan pintu", "1PE_jh74ozM0dFQP7pgog0jKBCBxGSl5s"),
+    _drive_mp3("Bunyi hujan", "1ciXKlkIhdD_0PcszWGIgRCDi6t9RqsDc"),
     PPKI_DOORBELL_AUDIO,
     PPKI_AIRPLANE_AUDIO,
 )
@@ -141,12 +152,12 @@ PPKI_LESSON_MEDIA = {
         "url": "https://www.youtube.com/watch?v=HmPxwUhtehs", "action": "Mainkan Rakaman",
     }),
     (3, ppki.MANIPULATIVE_UNIT3, "062"): (
-        _ppki_mp3("Enam contoh bunyi kuat dan perlahan", "1ssu077B9Tm2ItgGvSYvAZLJXjlakdWjb"),
+        _drive_mp3("Enam contoh bunyi kuat dan perlahan", "1ssu077B9Tm2ItgGvSYvAZLJXjlakdWjb"),
     ),
     (3, ppki.MANIPULATIVE_UNIT3, "063"): (*PPKI_SITUATION_SOUNDS, PPKI_BIRDS_AUDIO),
     (3, ppki.MANIPULATIVE_UNIT3, "064"): PPKI_SITUATION_SOUNDS,
     (6, ppki.MANIPULATIVE_UNIT3, "066"): (
-        _ppki_mp3("Tepukan isyarat larian · 80 dan 100 BPM", "1DOe-RuYGUKyaoymT_8BgMCfsYZBN5fj-"),
+        _drive_mp3("Tepukan isyarat larian · 80 dan 100 BPM", "1DOe-RuYGUKyaoymT_8BgMCfsYZBN5fj-"),
     ),
 }
 
