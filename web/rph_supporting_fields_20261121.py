@@ -96,23 +96,23 @@ def _kbat_from_context(activities, *, english=False):
     return "Mengaplikasikan kemahiran dalam situasi baharu" if not english else "Apply the skill to a new situation"
 
 
-def supplement_footer(heading, details, activities, footer):
-    """Append two compact rows to the existing last table, without editing input.
+def supplement_details(heading, details, activities, footer):
+    """Append two compact rows to details; preserve all footer rows and order.
 
-    The first footer rows (PBD, Sokongan, Refleksi) remain at exactly the same
-    indices, preserving established Web/Telegram and PDF tests.
+    RPH has three tables. The assessment, existing PPKI support and reflection
+    remain in their original final table, including every index and label.
     """
     family = _family(heading)
     if family is None:
-        return footer
-    if not isinstance(footer, (list, tuple)) or not all(
-        isinstance(row, (list, tuple)) and len(row) == 2 for row in footer
+        return details
+    if not isinstance(details, (list, tuple)) or not isinstance(footer, (list, tuple)) or not all(
+        isinstance(row, (list, tuple)) and len(row) == 2 for row in (*details, *footer)
     ):
-        return footer
-    present = " ".join(str(label).casefold() for label, _ in footer)
+        return details
+    present = " ".join(str(label).casefold() for label, _ in (*details, *footer))
     # Existing subject-supplied supports take precedence over inferred displays.
     if "emk" in present and "pak21" in present and "pemulihan" in present and "pengayaan" in present:
-        return footer
+        return details
     english = str(heading[0]).strip() == "Daily Lesson Plan"
     topic = _brief(heading[2], limit=62)
     objective = _field(details, "Objektif", "Objektif Pembelajaran", "Learning objective", "Learning objectives")
@@ -134,7 +134,7 @@ def supplement_footer(heading, details, activities, footer):
         label_one, label_two = "CCE / 21st-century learning / HOTS", "Remedial / Enrichment"
     else:
         if existing_support:
-            remediation = existing_support
+            remediation = f"Ulang tugasan {topic} dengan berpandukan sokongan yang dinyatakan dalam bahagian akhir RPH."
         else:
             aid = _brief(materials, 48)
             remediation = (
@@ -161,4 +161,4 @@ def supplement_footer(heading, details, activities, footer):
             f"{name}: {value}" for name, value in lines_two
             if name.casefold() not in present
         )))
-    return list(footer) + addition
+    return list(details) + addition
