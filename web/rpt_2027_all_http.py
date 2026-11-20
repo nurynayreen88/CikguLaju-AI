@@ -348,26 +348,27 @@ def create_all_rpt_blueprint(*,root=ROOT):
             return error
         paid = _has_paid_access(account)
         data = catalog_data(root=root, allowed=True, personalization_allowed=paid)
-        try:
-            ppki_source = ppki.catalog()
-        except ppki.NativeRPHUnavailable:
-            pass
-        else:
+        ppki_years = []
+        for ppki_year in ppki.YEARS:
+            try:
+                ppki_source = ppki.catalog() if ppki_year == ppki.YEAR else ppki.catalog(ppki_year)
+            except ppki.NativeRPHUnavailable:
+                continue
             by_unit = ppki_source["lessons_by_unit"]
             unit_numbers = ppki_source["unit_numbers"]
             edition = f"Unit {unit_numbers[0]}"
             if len(unit_numbers) > 1:
                 edition += f"–{unit_numbers[-1]}"
             count = sum(len(lessons) for lessons in by_unit.values())
-            data["subjects"].append({"code": ppki.RPT_CODE, "label": "Pengurusan Kehidupan", "years": [{
-                "year": ppki.YEAR, "status": f"AGIHAN {edition.upper()}", "pdf_ready": True,
+            ppki_years.append({
+                "year": ppki_year, "status": f"AGIHAN {edition.upper()}", "pdf_ready": True,
                 "download_enabled": paid, "is_draft": False,
                 "note": f"Pengurusan Diri · Agihan {count} PdP {edition}. Guru menetapkan tarikh PdP mengikut jadual kelas.",
-            }]})
+            })
             for key in ("total_rpt", "available_rpt", "total_display_choices"):
                 data[key] += 1
             manipulative = ppki_source["units_by_component"].get(ppki.MANIPULATIVE_COMPONENT, [])
-            if len(manipulative) == len(ppki.MANIPULATIVE_UNIT_LESSONS):
+            if ppki_year == ppki.YEAR and len(manipulative) == len(ppki.MANIPULATIVE_UNIT_LESSONS):
                 km_count = sum(len(numbers) for numbers in ppki.MANIPULATIVE_UNIT_LESSONS.values())
                 data["subjects"].append({"code": ppki.RPT_MANIPULATIVE_CODE, "label": "Kemahiran Manipulatif",
                                            "years": [{
@@ -377,6 +378,8 @@ def create_all_rpt_blueprint(*,root=ROOT):
                 }]})
                 for key in ("total_rpt", "available_rpt", "total_display_choices"):
                     data[key] += 1
+        if ppki_years:
+            data["subjects"].append({"code": ppki.RPT_CODE, "label": "Pengurusan Kehidupan", "years": ppki_years})
         return jsonify(data)
 
     @bp.get("/api/rpt/2027/sjkc/<slug>/<int:year>.<fmt>", defaults={"school": "sjkc"})
@@ -410,12 +413,12 @@ def create_all_rpt_blueprint(*,root=ROOT):
         if error is not None:
             return error
         if subject in {ppki.RPT_CODE, ppki.RPT_MANIPULATIVE_CODE}:
-            if year != ppki.YEAR:
+            if year not in ppki.YEARS or (subject == ppki.RPT_MANIPULATIVE_CODE and year != ppki.YEAR):
                 return jsonify({"error": "Pilihan RPT PPKI tidak tersedia."}), 404
             if not _has_paid_access(account):
                 return jsonify({"error": "RPT PPKI memerlukan akses berbayar aktif."}), 403
             try:
-                source = ppki.catalog()
+                source = ppki.catalog() if year == ppki.YEAR else ppki.catalog(year)
                 if subject == ppki.RPT_MANIPULATIVE_CODE:
                     units = source["units_by_component"].get(ppki.MANIPULATIVE_COMPONENT, [])
                     if len(units) != len(ppki.MANIPULATIVE_UNIT_LESSONS):
@@ -424,8 +427,11 @@ def create_all_rpt_blueprint(*,root=ROOT):
                     filename = ppki.RPT_MANIPULATIVE_FILENAME
                 else:
                     unit_numbers = source["unit_numbers"]
-                    document = ppki.request_rpt(combined=len(unit_numbers) > 1)
-                    filename = ("CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_"
+                    if year == ppki.YEAR:
+                        document = ppki.request_rpt(combined=len(unit_numbers) > 1)
+                    else:
+                        document = ppki.request_rpt(year=year)
+                    filename = (f"CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_{year}_UNIT_"
                                 + "_".join(str(unit) for unit in unit_numbers) + "_2027.pdf")
             except ppki.NativeRPHUnavailable:
                 return jsonify({"error": "PDF RPT PPKI belum dapat dihubungi."}), 503

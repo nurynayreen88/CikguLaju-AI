@@ -1225,6 +1225,8 @@ def create_blueprint():
             return year, sub, unit, lesson, found[0]["lesson"]
         if sub == "MUZIK" and year in range(2, 7):
             return year, sub, unit, lesson, None
+        if (year, sub, unit, lesson) == (3, ppki.SUBJECT, ppki.UNIT1, "003"):
+            return year, sub, unit, lesson, None
         if sub == "SCIENCE":
             from web.native_textbook_references import SCIENCE_PAGES
             if year in SCIENCE_PAGES:
@@ -1247,6 +1249,13 @@ def create_blueprint():
         except (ValueError, TypeError):
             return jsonify({"items": [], "status": "BELUM_TERSEDIA"})
         try:
+            if sub == ppki.SUBJECT:
+                ppki.validate_selection(year, sub, unit, token)
+                return jsonify({"status": "SUMBER_ASAL", "items": [{
+                    "type": "video", "title": "Video lagu Boneka Jari · Buku Teks hlm. 17",
+                    "url": "https://drive.usercontent.google.com/download?id=1b3VtIASO63AsD5iJ5uohzeQebwO8VMnD&export=download&confirm=t",
+                    "action": "Muat Turun Video",
+                }]})
             from web.native_telegram_extra_materials_20261106 import (
                 english_workbook_metadata, music_source_links,
                 english_student_book_metadata, english_audio_tracks,

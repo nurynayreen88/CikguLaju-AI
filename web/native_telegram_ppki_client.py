@@ -31,6 +31,8 @@ MANIPULATIVE_UNIT_LESSONS = {
     MANIPULATIVE_UNIT3: range(64, 72),
 }
 YEAR = 2
+YEARS = (2, 3)
+YEAR3_LESSONS = {UNIT1: range(1, 18)}
 FORMATS = ("word", "pdf")
 RPT_CODE = "pengurusan_kehidupan_ppki"
 RPT_MANIPULATIVE_CODE = "kemahiran_manipulatif_ppki"
@@ -44,7 +46,7 @@ def _request(path, accept, limit, payload=None):
     if data is not None:
         headers["Content-Type"] = "application/json"
     request = Request(base + "/internal/rph/v1/ppki/" + path, data=data, headers=headers)
-    timeout = 6 if path == "catalog" else 24
+    timeout = 6 if path.split("?", 1)[0] == "catalog" else 24
     try:
         with build_opener(HTTPSHandler(), BlockRedirects()).open(request, timeout=timeout) as response:
             if response.status != 200 or response.headers.get_content_type() != accept:
@@ -67,14 +69,20 @@ def _validate_unit(unit, unit_id, accepted_lessons):
         raise NativeRPHUnavailable("Invalid PPKI additional unit choices")
 
 
-def catalog():
+def catalog(year=YEAR):
+    if year not in YEARS:
+        raise ValueError("Unknown PPKI year")
+    direct_units = UNIT_LESSONS if year == YEAR else YEAR3_LESSONS
+    manipulative_units = MANIPULATIVE_UNIT_LESSONS if year == YEAR else {}
+    first_unit = next(iter(direct_units))
     try:
-        obj = json.loads(_request("catalog", "application/json", 20000))
+        path = "catalog" if year == YEAR else f"catalog?year={year}"
+        obj = json.loads(_request(path, "application/json", 20000))
     except (UnicodeError, ValueError) as exc:
         raise NativeRPHUnavailable("Invalid PPKI catalog JSON") from exc
-    expected = {"subjects": [SUBJECT], "components": [COMPONENT], "units": [UNIT],
-                "lessons": [f"{n:03d}" for n in UNIT_LESSONS[UNIT]]}
-    if not isinstance(obj, dict) or obj.get("source") != SOURCE or obj.get("year") != YEAR:
+    expected = {"subjects": [SUBJECT], "components": [COMPONENT], "units": [first_unit],
+                "lessons": [f"{n:03d}" for n in direct_units[first_unit]]}
+    if not isinstance(obj, dict) or obj.get("source") != SOURCE or obj.get("year") != year:
         raise NativeRPHUnavailable("Invalid PPKI catalog identity")
     for key, ids in expected.items():
         items = obj.get(key)
@@ -84,12 +92,12 @@ def catalog():
                 or [item.get("value") for item in items] != ids):
             raise NativeRPHUnavailable("Invalid PPKI catalog choices")
     extra = obj.get("additional_units", [])
-    expected_extra = list(UNIT_LESSONS)[1:]
+    expected_extra = list(direct_units)[1:]
     if not isinstance(extra, list) or len(extra) > len(expected_extra):
         raise NativeRPHUnavailable("Invalid PPKI additional units")
-    by_unit = {UNIT: obj["lessons"]}
+    by_unit = {first_unit: obj["lessons"]}
     for unit_id, unit in zip(expected_extra, extra):
-        expected_lessons = [f"{n:03d}" for n in UNIT_LESSONS[unit_id]]
+        expected_lessons = [f"{n:03d}" for n in direct_units[unit_id]]
         accepted_lessons = [expected_lessons]
         if unit_id == UNIT5:
             accepted_lessons.append(expected_lessons[:4])
@@ -97,10 +105,10 @@ def catalog():
         obj["units"].append({"value": unit_id, "label": unit["label"]})
         by_unit[unit_id] = unit["lessons"]
     manipulative = obj.get("kemahiran_manipulatif", [])
-    if not isinstance(manipulative, list) or len(manipulative) > len(MANIPULATIVE_UNIT_LESSONS):
+    if not isinstance(manipulative, list) or len(manipulative) > len(manipulative_units):
         raise NativeRPHUnavailable("Invalid PPKI Kemahiran Manipulatif units")
     manipulative_by_unit = {}
-    for (unit_id, numbers), unit in zip(MANIPULATIVE_UNIT_LESSONS.items(), manipulative):
+    for (unit_id, numbers), unit in zip(manipulative_units.items(), manipulative):
         expected_lessons = [f"{number:03d}" for number in numbers]
         accepted_lessons = [expected_lessons]
         if unit_id == MANIPULATIVE_UNIT1 and len(manipulative) == 1:
@@ -126,12 +134,12 @@ def catalog():
 
 
 def get_options(kind, year, subject=None, component=None, unit=None):
-    if (year != YEAR or kind not in ("subjects", "components", "units", "pdp")
+    if (year not in YEARS or kind not in ("subjects", "components", "units", "pdp")
             or (kind != "subjects" and subject != SUBJECT)
             or (kind == "units" and component not in (COMPONENT, MANIPULATIVE_COMPONENT))
-            or (kind == "pdp" and unit not in UNIT_LESSONS and unit not in MANIPULATIVE_UNIT_LESSONS)):
+            or (kind == "pdp" and not accepted_unit(year, unit))):
         raise ValueError("Invalid PPKI catalog selection")
-    source = catalog()
+    source = catalog() if year == YEAR else catalog(year)
     if kind == "pdp":
         return source["rph_lessons_by_unit"].get(unit, [])
     if kind == "units":
@@ -139,11 +147,17 @@ def get_options(kind, year, subject=None, component=None, unit=None):
     return source[kind]
 
 
+def accepted_unit(year, unit):
+    if year == 3:
+        return unit in YEAR3_LESSONS
+    return year == YEAR and (unit in UNIT_LESSONS or unit in MANIPULATIVE_UNIT_LESSONS)
+
+
 def validate_selection(year, subject, unit, lesson):
-    if (year != YEAR or subject != SUBJECT
-            or (unit not in UNIT_LESSONS and unit not in MANIPULATIVE_UNIT_LESSONS)):
+    if subject != SUBJECT or not accepted_unit(year, unit):
         raise ValueError("Invalid PPKI RPH selection")
-    lessons = catalog()["rph_lessons_by_unit"].get(unit, ())
+    source = catalog() if year == YEAR else catalog(year)
+    lessons = source["rph_lessons_by_unit"].get(unit, ())
     selected = next((row for row in lessons if row["value"] == lesson), None)
     if selected is None:
         raise ValueError("Invalid PPKI PdP")
@@ -172,7 +186,11 @@ def request_rph(selected, fmt):
     return _document("render", fmt, {"selection": selection, "teacher": teacher, "format": fmt})
 
 
-def request_rpt(*, combined=False, manipulative=False):
+def request_rpt(*, combined=False, manipulative=False, year=YEAR):
+    if year == 3 and not manipulative:
+        return _document("rpt.pdf?year=3", "pdf")
+    if year != YEAR:
+        raise ValueError("Invalid year for PPKI RPT")
     if manipulative:
         return _document("rpt-manipulatif.pdf", "pdf")
     return _document("rpt-current.pdf" if combined else "rpt.pdf", "pdf")
