@@ -177,6 +177,9 @@ def lesson_text(code):
 
 
 def plan_text(lesson, standards):
+    from web.sains_opening_pedagogy_20261121 import pedagogy_for_plan
+
+    teaching = pedagogy_for_plan(lesson)
     return "\n".join((
         f"TAJUK: {lesson.title}",
         f"STANDARD KANDUNGAN: {lesson.sk} {SK[lesson.sk]}",
@@ -185,6 +188,8 @@ def plan_text(lesson, standards):
         f"OBJEKTIF PEMBELAJARAN: {lesson.objective}",
         f"KRITERIA KEJAYAAN: {lesson.objective}",
         f"BAHAN BANTU MENGAJAR: {lesson.materials} Buku Teks m/s {lesson.pages}.",
+        f"EMK / NILAI: {teaching['EMK / NILAI']}",
+        f"KBAT / PAK21: {teaching['KBAT / PAK21'].removeprefix('KBAT: ')}",
         f"PENTAKSIRAN: {lesson.assessment}",
         f"SET INDUKSI: {lesson.induction}",
         f"AKTIVITI UTAMA:\nAktiviti 1 — {lesson.guided}\nAktiviti 2 — {lesson.independent}",
@@ -194,14 +199,17 @@ def plan_text(lesson, standards):
 
 
 def plan_rows(result, plan, standards):
+    from web.sains_opening_pedagogy_20261121 import pedagogy_for_plan
+
+    teaching = pedagogy_for_plan(plan)
     return {
         **result,
+        **teaching,
         "STANDARD KANDUNGAN": f"{plan.sk} {SK[plan.sk]}",
         "STANDARD PEMBELAJARAN": "\n".join(f"{sp} {standards[sp]}" for sp in plan.standards),
         "OBJEKTIF PEMBELAJARAN": "Murid dapat " + plan.objective[0].lower() + plan.objective[1:],
         "KRITERIA KEJAYAAN": plan.objective,
         "BAHAN BANTU MENGAJAR": f"{plan.materials} Buku Teks m/s {plan.pages}.",
-        "KBAT / PAK21": SK[plan.sk],
         "PENTAKSIRAN": plan.assessment,
         "SET INDUKSI": plan.induction,
         "AKTIVITI UTAMA": f"Aktiviti 1 – {plan.guided}\nAktiviti 2 – {plan.independent}",
