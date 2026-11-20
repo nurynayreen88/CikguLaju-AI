@@ -25,7 +25,7 @@ UNIT = re.compile(r"u(?:0[1-9]|[1-9][0-9])|x[a-f0-9]{12}")
 PDP = re.compile(r"0[0-9][0-9]")
 REVIEWED_ARABIC = {
     "u01": {f"{lesson:03d}" for lesson in range(1, 13)},
-    "u02": {f"{lesson:03d}" for lesson in (*range(13, 18), 19, 20, *range(23, 29))},
+    "u02": {f"{lesson:03d}" for lesson in range(13, 29)},
 }
 
 
