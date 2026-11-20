@@ -57,8 +57,7 @@ jobs:
           failed=[r for r in rows if r.get("error") or r.get("pages")!=1 or not r.get("a4")]
           assert not failed,(year,failed)
           assert report["summary"]["one_page_a4"]==expected,report["summary"]
-          if year==5:
-              assert all(r.get("draft_notice_present") for r in rows),"Year 5 draft notice was lost"
+          assert all(r.get("internal_label_in_pdf") is False for r in rows),"Internal labels leaked into teacher PDFs"
           print(f"English Year {year}: {expected}/{expected} actual ReportLab PDFs are one page A4 (isolated test only)")
           PY
       - name: Save per-Lesson PDF audit, not teacher private data
