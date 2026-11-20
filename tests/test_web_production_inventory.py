@@ -1,6 +1,8 @@
 """Production Web carries latest repo source files without publishing draft lessons."""
+import os
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -50,6 +52,37 @@ class ProductionSourceInventory(unittest.TestCase):
         self.assertNotIn('id="rph-preview-button"',html)
         self.assertIn('id="rph-word"',html)
         self.assertIn('id="rph-pdf"',html)
+
+    def test_public_rph_sample_is_visible_before_registration(self):
+        from tools.run_web_production import app
+
+        client = app.test_client()
+        with patch.dict(os.environ, {"SUPABASE_PUBLISHABLE_KEY": "test"}):
+            with client.get("/") as response:
+                html = response.get_data(as_text=True)
+                self.assertEqual(response.status_code, 200)
+        self.assertLess(html.index("Lihat Contoh RPH"), html.index('id="email-auth-login"'))
+        self.assertIn('href="/contoh-rph.pdf"', html)
+        self.assertIn('src="/assets/contoh-rph.webp"', html)
+        self.assertIn('href="#pilihan-log-masuk"', html)
+        self.assertIn('id="pilihan-log-masuk"', html)
+
+    def test_public_rph_sample_serves_fixed_files(self):
+        from tools.run_web_production import app
+
+        client = app.test_client()
+        with client.get("/contoh-rph.pdf") as response:
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.mimetype, "application/pdf")
+            pdf = response.data
+            self.assertTrue(pdf.startswith(b"%PDF-"))
+            self.assertNotIn("Set-Cookie", response.headers)
+        with client.get("/contoh-rph.pdf?year=6&subject=BM&lesson=002") as response:
+            self.assertEqual(response.data, pdf)
+        with client.get("/assets/contoh-rph.webp") as response:
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.mimetype, "image/webp")
+            self.assertEqual(response.data[8:12], b"WEBP")
 
 if __name__=="__main__":
     unittest.main()
