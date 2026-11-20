@@ -728,7 +728,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </section>
 <section id="view-rph" class="app-view" aria-labelledby="view-rph-heading" hidden>
 <h2 id="view-rph-heading" tabindex="-1">Sediakan RPH</h2><p id="account-access" class="notice" role="status"></p><section class="rph-guide" aria-label="Cara menyediakan RPH"><h3>Cara menyediakan RPH</h3><p><strong>1.</strong> Pilih Kurikulum → Tahun → Subjek → Unit/Tajuk → Lesson/PdP.</p><p><strong>2.</strong> Pilih kelas, tarikh, waktu mula/tamat dan bilangan murid jika perlu.</p><p><strong>3.</strong> Tekan <strong>Jana Bahan</strong> untuk melihat RPH PDF, RPH Word, Buku Teks, Audio dan Buku Aktiviti yang tersedia bagi Lesson/PdP ini, kemudian muat turun bahan pilihan.</p><p class="notice">Hanya RPH yang mempunyai sumber lengkap tersedia. 10 janaan RPH percuma dikongsi antara Web dan Telegram. Rakan Pembangun yang aktif mendapat akses tanpa had.</p></section><p id="selection-help" class="selection-help" role="status">Mula dengan memilih kurikulum.</p>
-<label for="curriculum">Kurikulum</label><select id="curriculum"><option value="">Pilih Kurikulum</option><option value="kssr">KSSR (SK)</option><option value="sjkc">KSSR (SJKC)</option><option value="sjkt">KSSR (SJKT)</option><option value="kp2027">KP2027</option></select>
+<label for="curriculum">Kurikulum</label><select id="curriculum"><option value="">Pilih Kurikulum</option><option value="kssr">KSSR (SK)</option><option value="sjkc">KSSR (SJKC)</option><option value="sjkt">KSSR (SJKT)</option><option value="kp2027">KP2027</option><option value="ppki">Pendidikan Khas (PPKI)</option></select>
 <label for="year" id="year-label" hidden>Tahun</label><select id="year" hidden disabled><option value="">Pilih Kurikulum dahulu</option></select>
 <label for="subject" id="subject-label" hidden>Subjek</label><select id="subject" hidden disabled><option value="">Pilih Tahun dahulu</option></select>
 <div id="rph-subject-search" class="school-picker-combo" hidden>
@@ -1188,7 +1188,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <script src="/assets/pdf-lib.min.js?v=1.17.1"></script>
 <script src="/assets/pdp-pdf-copy.js?v=science-copy-expanded-20261113"></script>
 <script src="/assets/primary-subjects.js?v=sjkt-tahun2-20261119"></script>
-<script src="/assets/rpt-personalize.js?v=20261116-english-integrated"></script>
+<script src="/assets/rpt-personalize.js?v=20261120-ppki"></script>
 <script>
 "use strict";
 window.onCikguLajuTelegramAuth=async function(user){
@@ -1434,6 +1434,7 @@ function currentRphLessonKey(){
 function currentRphParams(){
  if(!canSelectRph()||!/^[1-6]$/.test(year.value)||!subject.value||!unit.value||!lesson.value)return null;
  if(subject.value==="BM"&&(!theme.value||!topic.value))return null;
+ if(subject.value===ppkiSubject&&!theme.value)return null;
  if(!teacherClass.checkValidity()||!teacherDate.checkValidity()||
     !teacherTimeStart.checkValidity()||!teacherTimeEnd.checkValidity()||
     !teacherStudents.checkValidity())return null;
@@ -1477,9 +1478,11 @@ const curriculum=document.getElementById("curriculum"),year=document.getElementB
 const unit=document.getElementById("unit"),component=document.getElementById("component"),theme=document.getElementById("theme"),topic=document.getElementById("topic");
 const subjectVariants=window.cikgulajuSubjectVariants||[];
 const kp2027ScienceNotice="Komponen Sains Tahun 1 KP2027 berada dalam Alam dan Manusia.";
+const ppkiSubject="PENGURUSAN_KEHIDUPAN_PPKI";
 function canSelectRph(){
  if(isDlpRphSubject(subject.value))return dlpRphDownload();
  return curriculum.value==="kssr"||
+  (curriculum.value==="ppki"&&year.value==="2"&&subject.value===ppkiSubject)||
   (curriculum.value==="sjkc"&&["2","3"].includes(year.value)&&subject.value==="MATH_SJKC")||
   (curriculum.value==="sjkt"&&year.value==="2"&&subject.value==="MATH_SJKT");
 }
@@ -1516,6 +1519,7 @@ const curriculumYears={
  kssr:primaryYears,
  sjkc:primaryYears,
  sjkt:primaryYears.filter(option=>option.value==="2"),
+ ppki:primaryYears.filter(option=>option.value==="2"),
  kp2027:[{value:"1",label:"Tahun 1 (KP Baharu)"}]
 };
 let subjectLoadRevision=0;
@@ -1559,19 +1563,19 @@ function subjectNavLabel(code){
   BM:"Unit",ENGLISH:"Unit / Topic",PI:"Bidang / Tajuk",
   MATH:"Bidang / Unit",MATH_SJKC:"Unit",MATH_SJKT:"Unit",SCIENCE:"Tema / Unit",
   MORAL:"Unit / Nilai",PSV:"Bidang / Unit",PJPK:"Unit / Tajuk",
-  ARAB:"Unit",MUZIK:"Unit / Tajuk",SEJARAH:"Unit",RBT:"Unit"
+  ARAB:"Unit",MUZIK:"Unit / Tajuk",SEJARAH:"Unit",RBT:"Unit",[ppkiSubject]:"Unit"
  })[code]||"Unit / Tajuk";
 }
 function setSubjectNavigationLabels(){
  const code=subject.value;
- document.getElementById("theme-label").textContent="Pilih Tema";
+ document.getElementById("theme-label").textContent=code===ppkiSubject?"Pilih Komponen":"Pilih Tema";
  document.getElementById("unit-label").textContent="Pilih "+subjectNavLabel(code);
  document.getElementById("topic-label").textContent="Pilih Tajuk";
  document.getElementById("lesson-label").textContent=dlpRphDownload()?"Pilih Tajuk RPH":"Pilih "+(code==="ENGLISH"?"Lesson":"PdP");
 }
 function sourceUnitLabel(value){
  const label=String(value||"").trim();
- const numbered=/^(?:Unit|U)\s*0*([1-9][0-9]{0,2})\s*(?:[:：.\-–—•]\s*)?(.+)$/i.exec(label);
+ const numbered=/^(?:Unit|U)\s*0*([1-9][0-9]{0,2})\s*(?:[:：.\-–—•·]\s*)?(.+)$/i.exec(label);
  if(numbered)return "Unit "+Number(numbered[1])+": "+numbered[2].trim();
  const native=/^([1-9][0-9]{0,2})\s*[•·]\s*(.+)$/.exec(label);
  if(native&&(subject.value==="MATH"||subject.value==="SCIENCE"))
@@ -1751,6 +1755,16 @@ year.addEventListener("change",async()=>{
   updateSelectionHelp("Pilih subjek "+school+".");
   return;
  }
+ if(choice==="ppki"){
+  try{
+   const items=await loadOptions("subjects",{curriculum:"ppki"});
+   if(revision!==subjectLoadRevision)return;
+   fillSelect(subject,items,"Pilih Subjek");
+   showStep(subject,true);
+   updateSelectionHelp("Pilih subjek Pendidikan Khas (PPKI).");
+  }catch(error){if(revision===subjectLoadRevision)catalogStatus.textContent=error.message;}
+  return;
+ }
  if(choice!=="kssr")return;
  showStep(subject,true);
  updateSelectionHelp("Pilih Subjek.");
@@ -1802,7 +1816,12 @@ subject.addEventListener("change",async()=>{
  }
  updateSelectionHelp("Pilih Tema, Unit atau Tajuk untuk melihat Lesson/PdP.");
  try{
-  if(code==="PJPK"){
+  if(code===ppkiSubject){
+   showStep(theme,true);
+   updateSelectionHelp("Pilih komponen Pengurusan Kehidupan.");
+   await fillForSelection(theme,"components",{subject:code},"Pilih Komponen",
+    ()=>curriculum.value==="ppki"&&subject.value===code&&year.value===targetYear);
+  }else if(code==="PJPK"){
    showStep(component,true);
    await fillForSelection(component,"components",{subject:code},"Pilih PJ atau PK",()=>subject.value===code&&year.value===targetYear);
   }else if(code==="BM"){
@@ -1829,6 +1848,13 @@ theme.addEventListener("change",async()=>{
  resetSelect(unit,"Pilih Unit");resetSelect(topic,"Pilih Tajuk");resetSelect(lesson,"Pilih PdP");
  showStep(unit,!!selected);showStep(topic,false);showStep(lesson,false);
  resetMaterials();resetRphPreview();displayBookReference();
+ if(selected&&subject.value===ppkiSubject){
+  const current=()=>curriculum.value==="ppki"&&subject.value===ppkiSubject&&theme.value===selected&&year.value===targetYear;
+  try{
+   await fillForSelection(unit,"units",{subject:ppkiSubject,component:selected},"Pilih Unit",current);
+  }catch(error){if(current())catalogStatus.textContent=error.message;}
+  return;
+ }
  if(!selected||subject.value!=="BM")return;
  try{
   await fillForSelection(unit,"bm-units",{subject:"BM",theme:selected},"Pilih Unit",
@@ -1882,7 +1908,7 @@ const MATERIAL_CATEGORIES = Object.freeze([
  {code:"workbook",label:"Buku Aktiviti",kind:"workbook"}
 ]);
 const materialPanel=document.getElementById("materials-panel");
-let materialsRequestKey="";
+let materialsRequestKey="", materialsRequestVersion=0;
 function materialRow(title,{onDownload=null,url=null,ready=false,statusLabel="Belum tersedia",actionLabel="Download"}={}){
  const li=document.createElement("li");
  li.className="material-download-row";
@@ -1900,6 +1926,8 @@ async function populateMaterialList(){
  const key=currentRphLessonKey();
  if(!lesson.value)return;
  materialsRequestKey=key;
+ const version=++materialsRequestVersion;
+ const isCurrent=()=>version===materialsRequestVersion&&materialsRequestKey===key&&currentRphLessonKey()===key;
  materialPanel.hidden=false;
  const list=document.getElementById("materials-list");
  const status=document.getElementById("materials-status");
@@ -1916,7 +1944,7 @@ async function populateMaterialList(){
      credentials:"same-origin",cache:"no-store",redirect:"error"
    });
    const data=await result.json().catch(()=>({}));
-   if(materialsRequestKey!==key||currentRphLessonKey()!==key)return;
+   if(!isCurrent())return;
    if(result.ok&&data.available===true&&data.generator==="telegram-native"){
     verifiedRphKey=key;
     verifiedRphFormats=Array.isArray(data.formats)?
@@ -1928,7 +1956,7 @@ async function populateMaterialList(){
    }
   }catch(_error){sourceError="Semakan RPH belum dapat dihubungi.";}
  }
- if(materialsRequestKey!==key||currentRphLessonKey()!==key)return;
+ if(!isCurrent())return;
  if(sourceConfirmed){
   const rphReady=canGenerateRph()&&!!currentRphParams();
   const locked=!canGenerateRph();
@@ -1953,7 +1981,7 @@ async function populateMaterialList(){
    const response=await fetch("/api/web/rph/extra-materials?"+params,{
                               credentials:"same-origin",cache:"no-store",redirect:"error"});
    const data=await response.json().catch(()=>({}));
-   if(materialsRequestKey!==key||currentRphLessonKey()!==key)return;
+   if(!isCurrent())return;
    if(!response.ok)throw Error(data.error||"Bahan tambahan belum boleh disemak.");
    if(!Array.isArray(data.items)||data.items.length>30)throw Error("Senarai sumber tidak sah.");
    extraNotice=String(data.note||"");
@@ -1986,7 +2014,7 @@ async function populateMaterialList(){
    }
   }catch(e){sourceError=(sourceError+" "+e.message).trim();}
  }
- if(materialsRequestKey!==key||currentRphLessonKey()!==key)return;
+ if(!isCurrent())return;
  status.textContent=(found? "Hanya bahan yang tersedia dipaparkan. ":
    "Tiada bahan yang disahkan tersedia untuk Lesson/PdP ini. ")+
    (sourceError?"Semakan belum lengkap: "+sourceError:extraNotice);
@@ -2132,12 +2160,13 @@ const rptMobileLink=document.getElementById("rpt-download-mobile");
 const rptWordLink=document.getElementById("rpt-download-word");
 const rptStatus=document.getElementById("rpt-status");
 const rptCurricula=[
- ["kssr","KSSR (SK)"],["sjkc","KSSR (SJKC)"],["sjkt","KSSR (SJKT)"],["kp2027","KP2027"]
+ ["kssr","KSSR (SK)"],["sjkc","KSSR (SJKC)"],["sjkt","KSSR (SJKT)"],["kp2027","KP2027"],["ppki","Pendidikan Khas (PPKI)"]
 ];
 let rptCatalog=null;
 let rptDownloading=false;
 
 function rptCurriculumFor(subject,year){
+ if(subject==="pengurusan_kehidupan_ppki")return "ppki";
  if(year===1)return "kp2027";
  if(subject.endsWith("_sjkc")||subject==="bahasa_melayu_sjk")return "sjkc";
  if(subject.endsWith("_sjkt"))return "sjkt";
@@ -2218,6 +2247,7 @@ function refreshRptDownload(){
  if(year.year===1||year.coming_soon){rptStatus.textContent="Dalam Penyediaan";return;}
  if(!year.pdf_ready){rptStatus.textContent="Fail RPT belum tersedia.";return;}
  if(!ready){rptStatus.textContent="RPT ini memerlukan akses berbayar aktif.";return;}
+ if(selection.curriculum==="ppki"){rptStatus.textContent=year.note;return;}
  const calendar=["sjkc","sjkt"].includes(selection.curriculum)?year.note:"";
  const cover=rptCatalog.personalizationAllowed?"Cetakan PDF dengan nama dan logo daripada Profil Guru.":"";
  rptStatus.textContent=[calendar,cover].filter(Boolean).join(" ");

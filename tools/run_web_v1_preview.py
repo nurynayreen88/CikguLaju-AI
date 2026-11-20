@@ -139,6 +139,16 @@ def options():
         if kind not in ("subjects", "units", "pdp", "components",
                         "bm-themes", "bm-units", "bm-topics", "bm-pdp"):
             return jsonify({"error": "invalid option kind"}), 400
+        from web import native_telegram_ppki_client as ppki
+        if request.args.get("curriculum") == "ppki" or request.args.get("subject") == ppki.SUBJECT:
+            try:
+                items = ppki.get_options(kind, year, request.args.get("subject"),
+                                         request.args.get("component"), request.args.get("unit"))
+            except ValueError:
+                return jsonify({"error": "Pilihan Pendidikan Khas (PPKI) tidak sah."}), 400
+            except ppki.NativeRPHUnavailable:
+                return jsonify({"error": "Katalog Pendidikan Khas (PPKI) belum dapat dihubungi."}), 503
+            return jsonify(items)
         if kind == "components":
             return jsonify(component_options(request.args.get("subject", "")))
         school = {"sjkc": sjkc, "sjkt": sjkt}.get(request.args.get("curriculum"))

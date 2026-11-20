@@ -12,6 +12,8 @@ on:
       - web/native_telegram_sequence_rph_client.py
       - web/native_telegram_bm_rph_client.py
       - web/native_telegram_other_draft_client.py
+      - web/native_telegram_ppki_client.py
+      - tests/test_ppki_web.py
       - tests/test_web_arab_music_source_20261106.py
       - tests/test_web_draft_subject_options_20261106.py
       - tests/test_web_native_bm_sequence_rph.py
@@ -25,6 +27,8 @@ on:
     branches: [production/cikgulaju-web-20261105]
     paths:
       - web/native_telegram_other_draft_client.py
+      - web/native_telegram_ppki_client.py
+      - tests/test_ppki_web.py
       - web/unified_rph_web.py
       - tools/run_web_v1_preview.py
       - tests/test_web_arab_music_source_20261106.py
@@ -54,6 +58,7 @@ jobs:
           python -m unittest discover -s tests -p test_web_subject_specific_navigation.py -v
           python -m unittest discover -s tests -p test_web_arab_music_source_20261106.py -v
           python -m unittest discover -s tests -p test_web_draft_subject_options_20261106.py -v
+          python -m unittest discover -s tests -p test_ppki_web.py -v
       - name: Validate JavaScript inline browser syntax
         run: |
           python - <<'PY'

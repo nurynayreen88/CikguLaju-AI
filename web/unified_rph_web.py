@@ -22,6 +22,7 @@ from zipfile import ZIP_DEFLATED, ZipFile
 
 from flask import Blueprint, g, jsonify, request, send_file
 
+from web import native_telegram_ppki_client as ppki
 from web import native_telegram_sjkc_math_client as sjkc
 from web import native_telegram_sjkt_math_client as sjkt
 from web.english_rpt_2027_http import _account, _has_paid_access
@@ -48,6 +49,7 @@ SUBJECT_LABELS = {
     "RBT": "Reka Bentuk dan Teknologi",
     "ARAB": "Bahasa Arab",
     "MUZIK": "Pendidikan Muzik",
+    ppki.SUBJECT: "Pengurusan Kehidupan (PPKI)",
 }
 SOURCE_SUBJECTS = frozenset(("ENGLISH", "MORAL", "PJPK", "PSV"))
 MAX_TOKEN = 40
@@ -789,6 +791,15 @@ def create_blueprint():
                 "unit": unit, "lesson": token, "teacher": teacher,
                 "status": "DRAF CADANGAN",
             }, None
+        if subject == ppki.SUBJECT:
+            try:
+                row = ppki.validate_selection(year, subject, unit, token)
+            except (ppki.NativeRPHUnavailable, ValueError):
+                return None, (jsonify({"error": "RPH PPKI bagi PdP ini belum tersedia."}), 503)
+            return {
+                "source": ppki.SOURCE, "year": year, "subject": subject, "unit": unit,
+                "lesson": token, "teacher": teacher, "status": "READY", "formats": row["formats"],
+            }, None
         if subject in ("ARAB", "MUZIK"):
             if year not in range(2, 7) or component not in (None, ""):
                 return None, (jsonify({"error":"Subjek ini hanya tersedia untuk Tahun 2–6"}),400)
@@ -875,7 +886,7 @@ def create_blueprint():
         # Publish DRAF and format restrictions only for the new subjects.
         if selected.get("source")=="telegram-native-rbt-2027":
             result.update({"status":selected["status"],"formats":["word","pdf"]})
-        if selected.get("source")=="telegram-provisional-subjects-2027":
+        if selected.get("source") in ("telegram-provisional-subjects-2027", ppki.SOURCE):
             result.update({"status": selected["status"],
                            "formats": selected["formats"]})
         if selected.get("source") == "telegram-integrated-english-2027":
@@ -948,6 +959,8 @@ def create_blueprint():
             elif selected.get("source") == "telegram-native-sejarah-2027":
                 from web.native_telegram_sejarah_2027_client import request_sejarah_rph
                 document = request_sejarah_rph(selected, fmt)
+            elif selected.get("source") == ppki.SOURCE:
+                document = ppki.request_rph(selected, fmt)
             elif selected.get("source") == "telegram-provisional-subjects-2027":
                 from web.native_telegram_other_draft_client import request_draft_rph
                 if fmt not in selected.get("formats", ()):

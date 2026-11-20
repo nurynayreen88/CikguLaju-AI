@@ -15,6 +15,7 @@ from functools import lru_cache
 from pathlib import Path
 from flask import Blueprint, jsonify, send_file, request
 from primary_language_subjects import PRIMARY_LANGUAGE_SUBJECTS
+from web import native_telegram_ppki_client as ppki
 from web.english_rpt_2027_http import _account, _has_paid_access, integrated_pdf_path
 from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
 from rpt_2027.matematik import sk_documents as matematik_sk
@@ -345,8 +346,21 @@ def create_all_rpt_blueprint(*,root=ROOT):
         account,error=_account()
         if error is not None:
             return error
-        return jsonify(catalog_data(root=root,allowed=True,
-                                    personalization_allowed=_has_paid_access(account)))
+        paid = _has_paid_access(account)
+        data = catalog_data(root=root, allowed=True, personalization_allowed=paid)
+        try:
+            ppki.catalog()
+        except ppki.NativeRPHUnavailable:
+            pass
+        else:
+            data["subjects"].append({"code": ppki.RPT_CODE, "label": "Pengurusan Kehidupan", "years": [{
+                "year": ppki.YEAR, "status": "AGIHAN UNIT 2", "pdf_ready": True,
+                "download_enabled": paid, "is_draft": False,
+                "note": "Agihan 14 PdP Unit 2. Guru menetapkan tarikh PdP mengikut jadual kelas.",
+            }]})
+            for key in ("total_rpt", "available_rpt", "total_display_choices"):
+                data[key] += 1
+        return jsonify(data)
 
     @bp.get("/api/rpt/2027/sjkc/<slug>/<int:year>.<fmt>", defaults={"school": "sjkc"})
     @bp.get("/api/rpt/2027/sjkt/<slug>/<int:year>.<fmt>", defaults={"school": "sjkt"})
@@ -378,6 +392,20 @@ def create_all_rpt_blueprint(*,root=ROOT):
         account,error=_account()
         if error is not None:
             return error
+        if subject == ppki.RPT_CODE:
+            if year != ppki.YEAR:
+                return jsonify({"error": "Pilihan RPT PPKI tidak tersedia."}), 404
+            if not _has_paid_access(account):
+                return jsonify({"error": "RPT PPKI memerlukan akses berbayar aktif."}), 403
+            try:
+                document = ppki.request_rpt()
+            except ppki.NativeRPHUnavailable:
+                return jsonify({"error": "PDF RPT PPKI belum dapat dihubungi."}), 503
+            response = send_file(document, mimetype="application/pdf", as_attachment=True, conditional=False,
+                                 download_name="CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_2_2027.pdf")
+            response.headers["X-RPT-Source-SHA256"] = hashlib.sha256(document.getvalue()).hexdigest()
+            response.headers["X-RPT-Personalization-Allowed"] = "0"
+            return response
         math_dpk = subject == MATH_DPK_CODE and year in matematik_sk.DPK_DIGESTS
         math_sk = subject == "matematik" and year in matematik_sk.DIGESTS
         approved_sains = _approved_sk_science_file(subject, year, root)
