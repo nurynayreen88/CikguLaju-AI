@@ -1,0 +1,248 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 6,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 6 · Beringat sebelum Kena",
+  "content_standards": {
+    "6.1": "Tindakan ketika kemalangan atau kecemasan",
+    "6.2": "Penggunaan talian kecemasan"
+  },
+  "learning_standards": {
+    "6.1.1": "Menyatakan jenis kemalangan atau kecemasan di sekolah",
+    "6.1.2": "Mengenal pasti pertolongan cemas yang diperlukan mengikut situasi",
+    "6.1.3": "Mengaplikasi pertolongan cemas yang sesuai mengikut situasi",
+    "6.1.4": "Mempamerkan sikap bertanggungjawab ketika kemalangan atau kecemasan",
+    "6.2.1": "Menyatakan nombor talian kecemasan 999",
+    "6.2.2": "Menerangkan fungsi talian kecemasan",
+    "6.2.3": "Menunjuk cara menggunakan talian kecemasan mengikut situasi",
+    "6.2.4": "Meramal akibat jika talian kecemasan disalahgunakan"
+  },
+  "lessons": [
+    {
+      "pdp": "028",
+      "title": "Kenal kemalangan dan kecemasan di sekolah",
+      "sp": "6.1.1",
+      "focus": "Kenal kemalangan dan kecemasan di sekolah.",
+      "book": "Buku Teks hlm. 41–45",
+      "objective": "Murid dapat menyatakan jenis kejadian dalam tiga situasi sekolah.",
+      "materials": "Kad gambar situasi sekolah dan kad jenis kejadian",
+      "induction": [
+        "Memaparkan gambar situasi kecemasan daripada unit.",
+        "Menyatakan perkara yang dilihat pada satu gambar."
+      ],
+      "guided": [
+        "Membezakan contoh terjatuh, luka dan kecemasan yang memerlukan bantuan segera.",
+        "Memadankan satu gambar dengan jenis kejadian."
+      ],
+      "practice": [
+        "Mengagihkan tiga kad situasi untuk dikenal pasti.",
+        "Menamakan jenis kejadian dan menunjukkan lokasi yang tertera dalam kad."
+      ],
+      "closure": [
+        "Meminta murid menerangkan satu petunjuk daripada gambar.",
+        "Menyatakan jenis kejadian yang sepadan dengan petunjuk."
+      ],
+      "support": "Gunakan gambar neutral tanpa kecederaan nyata.",
+      "assessment": "Guru merekod sama ada murid dapat menyatakan jenis kejadian dalam tiga situasi sekolah.",
+      "follow_up": "Pilih satu peristiwa dan nyatakan siapa yang boleh dimaklumkan."
+    },
+    {
+      "pdp": "029",
+      "title": "Kenal pertolongan yang diperlukan",
+      "sp": "6.1.2",
+      "focus": "Kenal pertolongan yang diperlukan.",
+      "book": "Buku Teks hlm. 42–45",
+      "objective": "Murid dapat memadankan tindakan mendapatkan pertolongan dengan tiga situasi.",
+      "materials": "Kad situasi, guru bertugas, kit latihan dan kad 999",
+      "induction": [
+        "Memperkenalkan tiga pilihan bantuan di sekolah.",
+        "Menamakan seorang orang dewasa yang boleh membantu."
+      ],
+      "guided": [
+        "Memodelkan padanan keadaan pada kad dengan keperluan bantuan.",
+        "Memilih siapa yang perlu dimaklumkan dalam contoh pertama."
+      ],
+      "practice": [
+        "Membimbing simulasi memilih bantuan pada tiga kad kejadian.",
+        "Menunjuk bantuan yang diperlukan serta menyebut satu sebab pilihan."
+      ],
+      "closure": [
+        "Meminta pilihan apabila keadaan pada kad bertambah serius.",
+        "Menukar padanan atau menyatakan bantuan segera yang diperlukan."
+      ],
+      "support": "Beri pilihan dua kad pada setiap soalan.",
+      "assessment": "Guru merekod sama ada murid dapat memadankan tindakan mendapatkan pertolongan dengan tiga situasi.",
+      "follow_up": "Bezakan keadaan yang memerlukan guru bertugas dan talian kecemasan."
+    },
+    {
+      "pdp": "030",
+      "title": "Lakukan simulasi bantuan awal mengikut situasi",
+      "sp": "6.1.3",
+      "focus": "Lakukan simulasi bantuan awal mengikut situasi.",
+      "book": "Buku Teks hlm. 42–47",
+      "objective": "Murid dapat menunjukkan dua langkah bantuan awal yang sesuai dalam satu simulasi berpandu.",
+      "materials": "Patung latihan, kad T.O.T.A.P.S. dan peralatan latihan R.I.C.E.",
+      "induction": [
+        "Memperlihatkan kad urutan buku dan patung latihan.",
+        "Menamakan bahan yang disediakan oleh guru."
+      ],
+      "guided": [
+        "Mendemonstrasikan cara memanggil bantuan dan menerangkan langkah buku pada patung menggunakan contoh kecederaan ringan.",
+        "Memilih kad tindakan awal dan memerhati langkah demonstrasi."
+      ],
+      "practice": [
+        "Menyediakan satu situasi olok-olok dengan pemerhatian tanpa memeriksa rakan.",
+        "Memaklumkan guru dan menunjukkan tindakan yang sesuai pada patung mengikut arahan."
+      ],
+      "closure": [
+        "Meminta murid menunjukkan bila perlu menghentikan latihan dan memanggil bantuan.",
+        "Menyatakan tindakan apabila kad menunjukkan kecederaan serius."
+      ],
+      "support": "Gunakan model, kad langkah besar dan demonstrasi seorang demi seorang.",
+      "assessment": "Guru merekod sama ada murid dapat menunjukkan dua langkah bantuan awal yang sesuai dalam satu simulasi berpandu.",
+      "follow_up": "Pilih tindakan awal yang berbeza apabila keadaan pada kad berubah."
+    },
+    {
+      "pdp": "031",
+      "title": "Bertindak dengan tanggungjawab semasa kecemasan",
+      "sp": "6.1.4",
+      "focus": "Bertindak dengan tanggungjawab semasa kecemasan.",
+      "book": "Buku Teks hlm. 44–47",
+      "objective": "Murid dapat mempamerkan tiga tindakan bertanggungjawab dalam simulasi.",
+      "materials": "Kad peranan, kon tanda ruang dan kad semak",
+      "induction": [
+        "Menunjukkan gambar murid berkumpul di sekitar kejadian.",
+        "Memilih cara memberi ruang untuk bantuan tiba."
+      ],
+      "guided": [
+        "Mencontohkan cara memanggil guru, menjelaskan lokasi dan menjaga jarak.",
+        "Mempraktikkan ujaran ringkas untuk memanggil bantuan."
+      ],
+      "practice": [
+        "Membahagikan peranan saksi, pemanggil bantuan dan guru dalam simulasi.",
+        "Melakonkan peranan tanpa menyentuh patung atau menghalang ruang bantuan."
+      ],
+      "closure": [
+        "Membimbing semakan tingkah laku yang membantu.",
+        "Menyebut satu tanggungjawab yang telah diamalkan."
+      ],
+      "support": "Gunakan peranan bergambar dan satu arahan pada satu masa.",
+      "assessment": "Guru merekod sama ada murid dapat mempamerkan tiga tindakan bertanggungjawab dalam simulasi.",
+      "follow_up": "Tukar peranan dan ulang dengan lokasi rekaan yang lain."
+    },
+    {
+      "pdp": "032",
+      "title": "Nyatakan nombor kecemasan 999",
+      "sp": "6.2.1",
+      "focus": "Nyatakan nombor kecemasan 999.",
+      "book": "Buku Teks hlm. 48–49",
+      "objective": "Murid dapat mengenal pasti dan menyebut 999 dengan betul.",
+      "materials": "Kad nombor dan telefon mainan",
+      "induction": [
+        "Menunjukkan kad telefon dan kad bertanda kecemasan.",
+        "Menamakan alat komunikasi dalam gambar."
+      ],
+      "guided": [
+        "Mendemonstrasikan cara menyebut dan mengecam nombor 999.",
+        "Memadankan tiga digit pada kad dengan nombor yang didengar."
+      ],
+      "practice": [
+        "Memberi latihan memilih nombor dan menekan digit pada telefon mainan.",
+        "Menyebut 999 dan menunjukkan susunan digit yang betul."
+      ],
+      "closure": [
+        "Menukar tempat kad jawapan dan membuat semakan.",
+        "Memilih nombor dan menyebutnya dengan jelas."
+      ],
+      "support": "Gunakan kad berkontras dan telefon olok-olok yang terputus daripada talian.",
+      "assessment": "Guru merekod sama ada murid dapat mengenal pasti dan menyebut 999 dengan betul.",
+      "follow_up": "Pilih nombor daripada tiga kad hampir serupa."
+    },
+    {
+      "pdp": "033",
+      "title": "Terangkan fungsi talian kecemasan",
+      "sp": "6.2.2",
+      "focus": "Terangkan fungsi talian kecemasan.",
+      "book": "Buku Teks hlm. 48–50",
+      "objective": "Murid dapat menerangkan fungsi 999 menggunakan dua contoh kecemasan.",
+      "materials": "Kad situasi sebenar dan bukan kecemasan",
+      "induction": [
+        "Memaparkan gambar yang menggambarkan keadaan kecemasan.",
+        "Menyatakan bantuan yang diperlukan daripada contoh."
+      ],
+      "guided": [
+        "Menerangkan bahawa 999 menghubungkan panggilan kecemasan dengan bantuan yang diperlukan.",
+        "Memadankan satu gambar dengan jenis bantuan."
+      ],
+      "practice": [
+        "Mengedarkan kad kecemasan dan masalah harian.",
+        "Mengelaskan situasi dan menerangkan sebab 999 diperlukan bagi satu contoh."
+      ],
+      "closure": [
+        "Memberi satu situasi harian tanpa ancaman bahaya.",
+        "Menyatakan pilihan bantuan yang sesuai bagi situasi itu."
+      ],
+      "support": "Gunakan kad ikon dan rangka ayat bantuan diperlukan apabila.",
+      "assessment": "Guru merekod sama ada murid dapat menerangkan fungsi 999 menggunakan dua contoh kecemasan.",
+      "follow_up": "Terangkan perbezaan antara menghubungi guru dan panggilan kecemasan."
+    },
+    {
+      "pdp": "034",
+      "title": "Simulasi panggilan kecemasan yang betul",
+      "sp": "6.2.3",
+      "focus": "Simulasi panggilan kecemasan yang betul.",
+      "book": "Buku Teks hlm. 50–53",
+      "objective": "Murid dapat menyatakan jenis kejadian dan lokasi serta menjawab satu soalan operator dalam simulasi.",
+      "materials": "Telefon mainan, kad alamat rekaan dan kad operator",
+      "induction": [
+        "Memperkenalkan peranan pemanggil dan operator.",
+        "Menyebut satu butiran yang perlu diberikan kepada operator."
+      ],
+      "guided": [
+        "Menunjukkan dialog contoh dengan jenis kejadian, lokasi dan jawapan kepada soalan operator.",
+        "Menyusun kad butiran mengikut urutan dialog."
+      ],
+      "practice": [
+        "Menjalankan simulasi menggunakan telefon yang terputus daripada talian.",
+        "Menyampaikan kejadian dan lokasi serta mendengar arahan operator olok-olok."
+      ],
+      "closure": [
+        "Meminta murid menyemak butiran yang diberi.",
+        "Melengkapkan maklumat yang tertinggal dalam satu ayat."
+      ],
+      "support": "Sediakan kad komunikasi dan alamat rekaan yang mudah dibaca.",
+      "assessment": "Guru merekod sama ada murid dapat menyatakan jenis kejadian dan lokasi serta menjawab satu soalan operator dalam simulasi.",
+      "follow_up": "Ulang simulasi dengan satu lokasi baharu."
+    },
+    {
+      "pdp": "035",
+      "title": "Ramalkan akibat panggilan gurauan",
+      "sp": "6.2.4",
+      "focus": "Ramalkan akibat panggilan gurauan.",
+      "book": "Buku Teks hlm. 48–49, 52–53",
+      "objective": "Murid dapat meramal dua akibat yang munasabah daripada penyalahgunaan talian kecemasan.",
+      "materials": "Kad sebab, kad kesan dan situasi rekaan",
+      "induction": [
+        "Memperkenalkan dua situasi panggilan sebenar dan panggilan gurauan.",
+        "Memilih kad situasi yang memerlukan bantuan."
+      ],
+      "guided": [
+        "Membimbing murid menghubungkan panggilan gurauan dengan kelewatan menerima bantuan.",
+        "Memadankan satu sebab dan akibat menggunakan kad."
+      ],
+      "practice": [
+        "Memberi dua senario ringkas dan mengajak murid menjangka kesan kepada orang lain.",
+        "Menerangkan akibat panggilan palsu dan memilih respons yang bertanggungjawab."
+      ],
+      "closure": [
+        "Meminta satu pesanan ringkas tentang penggunaan 999.",
+        "Menyatakan bila panggilan itu wajar dibuat."
+      ],
+      "support": "Gunakan kad kesan bergambar dan pilihan ayat pendek.",
+      "assessment": "Guru merekod sama ada murid dapat meramal dua akibat yang munasabah daripada penyalahgunaan talian kecemasan.",
+      "follow_up": "Bina satu dialog menegur rakan dengan sopan jika dia mahu membuat panggilan gurauan."
+    }
+  ]
+}

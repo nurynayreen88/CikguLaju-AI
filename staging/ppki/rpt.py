@@ -6,7 +6,7 @@ from staging.ppki.catalog import (
     MANIPULATIVE_UNIT_LESSONS, RPT_COMBINED_EDITION, RPT_YEAR3_EDITION, UNIT, UNIT_LESSONS,
     YEAR, YEAR3_LESSONS, YEAR3_MANIPULATIVE_UNIT_LESSONS,
     RPT_YEAR4_EDITION, YEAR4_LESSONS, YEAR4_MANIPULATIVE_UNIT_LESSONS, RPT_YEAR5_EDITION, YEAR5_LESSONS,
-    YEAR5_MANIPULATIVE_UNIT_LESSONS, catalog,
+    YEAR5_MANIPULATIVE_UNIT_LESSONS, RPT_YEAR6_EDITION, YEAR6_LESSONS, catalog,
 )
 from staging.ppki.render_pengurusan_kehidupan import PPKI_LABEL_FILL
 
@@ -71,6 +71,9 @@ def render_rpt(*, combined=False, manipulative=False, year=YEAR):
     elif year == 5 and not manipulative:
         units = YEAR5_LESSONS
         edition = RPT_YEAR5_EDITION
+    elif year == 6 and not manipulative:
+        units = YEAR6_LESSONS
+        edition = RPT_YEAR6_EDITION
     elif year != YEAR:
         raise ValueError("Unknown PPKI RPT")
     elif manipulative:

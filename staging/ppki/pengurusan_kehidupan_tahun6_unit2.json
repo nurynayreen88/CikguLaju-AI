@@ -1,0 +1,219 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 6,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 2 · Kita Jaga Kita",
+  "content_standards": {
+    "2.1": "Penjagaan kebersihan diri",
+    "2.2": "Penjagaan penampilan diri"
+  },
+  "learning_standards": {
+    "2.1.1": "Menunjuk cara penjagaan kebersihan diri",
+    "2.1.2": "Mempraktikkan kebersihan diri",
+    "2.1.3": "Menaakul kepentingan menjaga kebersihan diri",
+    "2.1.4": "Mengamalkan kebersihan diri dalam kehidupan harian",
+    "2.2.1": "Menunjuk cara mendandan rambut dan menjaga kekemasan muka serta pakaian",
+    "2.2.2": "Mempraktikkan cara mendandan dan menjaga kekemasan diri",
+    "2.2.3": "Mempamerkan penampilan diri yang kemas"
+  },
+  "lessons": [
+    {
+      "pdp": "009",
+      "title": "Tunjuk rutin kebersihan diri",
+      "sp": "2.1.1",
+      "focus": "Tunjuk rutin kebersihan diri.",
+      "book": "Buku Teks hlm. 14–15",
+      "objective": "Murid dapat menunjukkan sekurang-kurangnya empat langkah membasuh tangan mengikut urutan.",
+      "materials": "Kad urutan, sabun dan model berus gigi",
+      "induction": [
+        "Memaparkan gambar tangan kotor dan gambar sebelum makan.",
+        "Menyatakan perkara yang perlu dilakukan sebelum makan."
+      ],
+      "guided": [
+        "Menunjukkan langkah membasuh tangan dan membezakan barangan kebersihan peribadi.",
+        "Menyusun kad langkah yang ditunjukkan."
+      ],
+      "practice": [
+        "Meminta murid menunjukkan satu rutin pada stesen latihan.",
+        "Menunjukkan langkah membasuh tangan daripada membasahkan hingga mengeringkan."
+      ],
+      "closure": [
+        "Meminta murid mencari kad langkah yang dikeluarkan.",
+        "Menyatakan kedudukan langkah itu dalam urutan."
+      ],
+      "support": "Sediakan kad langkah pada paras pandangan dan arahan satu demi satu.",
+      "assessment": "Guru merekod sama ada murid dapat menunjukkan sekurang-kurangnya empat langkah membasuh tangan mengikut urutan.",
+      "follow_up": "Bandingkan masa yang sesuai untuk dua rutin kebersihan."
+    },
+    {
+      "pdp": "010",
+      "title": "Praktikkan kebersihan mengikut situasi",
+      "sp": "2.1.2",
+      "focus": "Praktikkan kebersihan mengikut situasi.",
+      "book": "Buku Teks hlm. 14–17",
+      "objective": "Murid dapat mempraktikkan rutin kebersihan yang sesuai dalam dua situasi.",
+      "materials": "Sabun, tisu, gambar rutin dan kad semak",
+      "induction": [
+        "Membacakan situasi selepas menggunakan tandas dan selepas bersin.",
+        "Memilih kad tindakan kebersihan bagi satu situasi."
+      ],
+      "guided": [
+        "Memodelkan persediaan, penggunaan barangan sendiri dan cara mengemas stesen.",
+        "Mencuba langkah dengan bantuan kad semak."
+      ],
+      "practice": [
+        "Menyediakan latihan amali tangan dan simulasi memilih barangan kebersihan.",
+        "Mempraktikkan rutin yang sesuai dan memulangkan alatan selepas digunakan."
+      ],
+      "closure": [
+        "Menyemak perkara yang belum lengkap pada kad amali.",
+        "Mengulang langkah yang terlepas."
+      ],
+      "support": "Gunakan alat pengering yang mudah dicapai dan contoh bergambar.",
+      "assessment": "Guru merekod sama ada murid dapat mempraktikkan rutin kebersihan yang sesuai dalam dua situasi.",
+      "follow_up": "Cuba membuat pilihan rutin daripada situasi baharu."
+    },
+    {
+      "pdp": "011",
+      "title": "Terangkan sebab menjaga kebersihan",
+      "sp": "2.1.3",
+      "focus": "Terangkan sebab menjaga kebersihan.",
+      "book": "Buku Teks hlm. 14–15, 17",
+      "objective": "Murid dapat memberi dua alasan yang sesuai bagi amalan kebersihan diri.",
+      "materials": "Kad rutin, sebab dan akibat",
+      "induction": [
+        "Menunjukkan dua gambar pakaian dengan keadaan berbeza.",
+        "Menyatakan satu perbezaan yang kelihatan."
+      ],
+      "guided": [
+        "Menunjukkan cara menghubungkan tindakan menjaga kebersihan dengan keselesaan atau kesihatan.",
+        "Memadankan contoh rutin dengan kesan yang sesuai."
+      ],
+      "practice": [
+        "Mengedarkan tiga situasi untuk dibandingkan.",
+        "Memberi alasan bagi tindakan kebersihan yang dipilih."
+      ],
+      "closure": [
+        "Menguji satu alasan yang tidak sepadan dengan situasi.",
+        "Membetulkan alasan dan menyebut sebabnya."
+      ],
+      "support": "Gunakan rangka ayat sebab dan kad jawapan berikon.",
+      "assessment": "Guru merekod sama ada murid dapat memberi dua alasan yang sesuai bagi amalan kebersihan diri.",
+      "follow_up": "Terangkan kesan apabila satu rutin ditinggalkan berulang kali."
+    },
+    {
+      "pdp": "012",
+      "title": "Bina rutin harian menjaga kebersihan",
+      "sp": "2.1.4",
+      "focus": "Bina rutin harian menjaga kebersihan.",
+      "book": "Buku Teks hlm. 16–17",
+      "objective": "Murid dapat melaksanakan satu rutin dan merancang tiga amalan kebersihan pada carta harian.",
+      "materials": "Carta pagi hingga petang dan pelekat semakan",
+      "induction": [
+        "Memaparkan gambar persediaan sebelum sekolah dalam buku.",
+        "Memilih satu amalan yang dibuat sebelum ke sekolah."
+      ],
+      "guided": [
+        "Membimbing padanan rutin mengikut masa dan keadaan.",
+        "Meletakkan kad rutin pada carta yang sepadan."
+      ],
+      "practice": [
+        "Menetapkan masa untuk mempraktikkan satu rutin di sekolah.",
+        "Melaksanakan rutin dan merekodnya pada carta kendiri."
+      ],
+      "closure": [
+        "Membimbing murid menyemak rutin yang sudah dibuat.",
+        "Menetapkan satu amalan untuk diulang pada hari berikutnya."
+      ],
+      "support": "Gunakan carta bergambar dan satu ruang tanda pada setiap masa.",
+      "assessment": "Guru merekod sama ada murid dapat melaksanakan satu rutin dan merancang tiga amalan kebersihan pada carta harian.",
+      "follow_up": "Semak amalan dalam dua hari persekolahan seterusnya."
+    },
+    {
+      "pdp": "013",
+      "title": "Tunjuk cara mendandan dan memilih pakaian",
+      "sp": "2.2.1",
+      "focus": "Tunjuk cara mendandan dan memilih pakaian.",
+      "book": "Buku Teks hlm. 18–19",
+      "objective": "Murid dapat menunjukkan cara menjaga tiga aspek kekemasan diri.",
+      "materials": "Cermin, sikat peribadi dan kad pakaian",
+      "induction": [
+        "Memaparkan contoh penampilan untuk sekolah.",
+        "Menyebut satu ciri penampilan yang kemas."
+      ],
+      "guided": [
+        "Menunjukkan cara menyikat rambut, memastikan muka bersih dan memilih pakaian yang sesuai.",
+        "Menunjuk peralatan dan menyatakan fungsinya."
+      ],
+      "practice": [
+        "Meminta tiga demonstrasi ringkas menggunakan stesen berbeza.",
+        "Menunjukkan cara kekemasan rambut, muka dan pakaian menggunakan bahan latihan."
+      ],
+      "closure": [
+        "Meminta murid mengenal satu langkah yang tertinggal.",
+        "Menyebut langkah yang diperlukan dan memadankan kadnya."
+      ],
+      "support": "Sediakan kad bergambar dan pilihan bahan tanpa pewangi.",
+      "assessment": "Guru merekod sama ada murid dapat menunjukkan cara menjaga tiga aspek kekemasan diri.",
+      "follow_up": "Tunjukkan dua pilihan pakaian untuk situasi berlainan."
+    },
+    {
+      "pdp": "014",
+      "title": "Amali semakan kekemasan diri",
+      "sp": "2.2.2",
+      "focus": "Amali semakan kekemasan diri.",
+      "book": "Buku Teks hlm. 18–19",
+      "objective": "Murid dapat melaksanakan sekurang-kurangnya dua langkah kekemasan diri menggunakan kad semak.",
+      "materials": "Kad semak bergambar, cermin dan alatan peribadi",
+      "induction": [
+        "Menunjukkan kad persediaan sebelum masuk perhimpunan.",
+        "Memilih tindakan pertama daripada kad."
+      ],
+      "guided": [
+        "Membimbing semakan rambut, muka dan pakaian mengikut urutan.",
+        "Meniru urutan menggunakan cermin dan kad langkah."
+      ],
+      "practice": [
+        "Menyediakan stesen kekemasan dengan masa yang mencukupi.",
+        "Mengemas penampilan sendiri secara berperingkat dan menanda langkah yang siap."
+      ],
+      "closure": [
+        "Menyemak satu langkah yang belum lengkap secara individu.",
+        "Melengkapkan semakan mengikut arahan."
+      ],
+      "support": "Gunakan cermin pada aras sesuai dan semakan secara peribadi.",
+      "assessment": "Guru merekod sama ada murid dapat melaksanakan sekurang-kurangnya dua langkah kekemasan diri menggunakan kad semak.",
+      "follow_up": "Susun semula kad tanpa merujuk urutan contoh."
+    },
+    {
+      "pdp": "015",
+      "title": "Pamerkan penampilan kemas mengikut situasi",
+      "sp": "2.2.3",
+      "focus": "Pamerkan penampilan kemas mengikut situasi.",
+      "book": "Buku Teks hlm. 18–19",
+      "objective": "Murid dapat mempamerkan sekurang-kurangnya dua ciri penampilan kemas dalam satu situasi.",
+      "materials": "Gambar majlis, kad penampilan dan stesen cermin",
+      "induction": [
+        "Menunjukkan gambar dua suasana iaitu sekolah dan aktiviti santai.",
+        "Menyebut ciri penampilan yang sesuai bagi satu suasana."
+      ],
+      "guided": [
+        "Mencontohkan cara menilai kekemasan tanpa mengulas rupa rakan.",
+        "Memilih kad ciri yang boleh dinilai sendiri."
+      ],
+      "practice": [
+        "Menetapkan simulasi persediaan untuk satu majlis sekolah.",
+        "Membuat semakan kendiri dan mempamerkan penampilan yang sesuai."
+      ],
+      "closure": [
+        "Meminta murid menjelaskan satu pilihan yang dibuat.",
+        "Menyatakan sebab pilihan itu sesuai dengan situasi."
+      ],
+      "support": "Beri pilihan bahan tanpa sentuhan dan elakkan penilaian terbuka tentang rupa murid.",
+      "assessment": "Guru merekod sama ada murid dapat mempamerkan sekurang-kurangnya dua ciri penampilan kemas dalam satu situasi.",
+      "follow_up": "Ubah situasi dan nyatakan penyesuaian yang diperlukan."
+    }
+  ]
+}

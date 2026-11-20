@@ -1,0 +1,131 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 6,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 4 · Adab Sopan Mutiara Diri",
+  "content_standards": {
+    "4.1": "Penjagaan adab dalam bermasyarakat"
+  },
+  "learning_standards": {
+    "4.1.1": "Menyatakan adab semasa aktiviti kemasyarakatan",
+    "4.1.2": "Memerihalkan kepentingan menjaga adab ketika berinteraksi dalam masyarakat",
+    "4.1.3": "Menunjuk cara beradab ketika berinteraksi dalam aktiviti kemasyarakatan",
+    "4.1.4": "Mengamalkan adab ketika berinteraksi dalam aktiviti kemasyarakatan"
+  },
+  "lessons": [
+    {
+      "pdp": "020",
+      "title": "Nyatakan adab dalam aktiviti kemasyarakatan",
+      "sp": "4.1.1",
+      "focus": "Nyatakan adab dalam aktiviti kemasyarakatan.",
+      "book": "Buku Teks hlm. 28–29",
+      "objective": "Murid dapat menyatakan tiga adab dalam aktiviti kemasyarakatan.",
+      "materials": "Gambar aktiviti, kad ujaran dan kad tingkah laku",
+      "induction": [
+        "Menunjukkan gambar aktiviti kemasyarakatan dalam buku teks.",
+        "Menyebut satu tindakan yang dapat dilihat."
+      ],
+      "guided": [
+        "Memodelkan cara mendengar, mengambil giliran dan menyapa peserta dengan sopan.",
+        "Memilih kad tingkah laku yang sepadan dengan setiap contoh."
+      ],
+      "practice": [
+        "Memaparkan situasi ringkas semasa aktiviti bersama-sama.",
+        "Menyenaraikan adab yang sesuai dan memadankan kad ujaran."
+      ],
+      "closure": [
+        "Meminta satu contoh adab ketika rakan bercakap.",
+        "Menyatakan tindakan dan ujaran secara ringkas."
+      ],
+      "support": "Gunakan kad visual dan jawapan lisan atau isyarat.",
+      "assessment": "Guru merekod sama ada murid dapat menyatakan tiga adab dalam aktiviti kemasyarakatan.",
+      "follow_up": "Padankan adab kepada situasi program komuniti yang lain."
+    },
+    {
+      "pdp": "021",
+      "title": "Jelaskan kepentingan menjaga adab",
+      "sp": "4.1.2",
+      "focus": "Jelaskan kepentingan menjaga adab.",
+      "book": "Buku Teks hlm. 29–31",
+      "objective": "Murid dapat memerihalkan dua kepentingan menjaga adab mengikut contoh.",
+      "materials": "Kad peristiwa, tindakan dan akibat",
+      "induction": [
+        "Menunjukkan dua gambar orang berbincang semasa persiapan majlis.",
+        "Menyatakan perbezaan cara berinteraksi dalam gambar."
+      ],
+      "guided": [
+        "Mengaitkan amalan mendengar dan memberi giliran dengan kelancaran kerja bersama.",
+        "Memadankan tindakan dengan kesan dalam satu contoh."
+      ],
+      "practice": [
+        "Memberi dua situasi kerja komuniti untuk perbincangan pasangan.",
+        "Menerangkan bagaimana adab membantu kerjasama dan mengurangkan salah faham."
+      ],
+      "closure": [
+        "Meminta murid memberikan satu contoh semasa orang lain bercakap.",
+        "Menyatakan sebab amalan itu penting."
+      ],
+      "support": "Sediakan rangka ayat dan gambar kesan.",
+      "assessment": "Guru merekod sama ada murid dapat memerihalkan dua kepentingan menjaga adab mengikut contoh.",
+      "follow_up": "Bandingkan kesan jika amalan adab berubah."
+    },
+    {
+      "pdp": "022",
+      "title": "Tunjuk cara beradab dalam persiapan majlis",
+      "sp": "4.1.3",
+      "focus": "Tunjuk cara beradab dalam persiapan majlis.",
+      "book": "Buku Teks hlm. 28–31",
+      "objective": "Murid dapat menunjukkan tiga tindakan beradab semasa simulasi persiapan majlis.",
+      "materials": "Kad peranan, label barang dan kad dialog",
+      "induction": [
+        "Memperkenalkan peranan petugas dalam persiapan majlis.",
+        "Memilih peranan dan menyebut tugasan ringkasnya."
+      ],
+      "guided": [
+        "Menunjukkan cara meminta pertolongan, memberi arahan sopan dan mengucapkan terima kasih.",
+        "Mencuba dialog dengan pasangan menggunakan kad peranan."
+      ],
+      "practice": [
+        "Menetapkan giliran simulasi menyusun bahan majlis.",
+        "Menunjuk cara meminta dan menerima bantuan secara sopan."
+      ],
+      "closure": [
+        "Meminta pasangan mengenal aksi yang telah ditunjukkan.",
+        "Mengulang satu ujaran yang sesuai untuk tugasan."
+      ],
+      "support": "Gunakan kad pilihan ujaran dan skrip pendek.",
+      "assessment": "Guru merekod sama ada murid dapat menunjukkan tiga tindakan beradab semasa simulasi persiapan majlis.",
+      "follow_up": "Tukar peranan dan tunjuk cara membetulkan salah faham secara sopan."
+    },
+    {
+      "pdp": "023",
+      "title": "Amalkan adab ketika bekerja bersama",
+      "sp": "4.1.4",
+      "focus": "Amalkan adab ketika bekerja bersama.",
+      "book": "Buku Teks hlm. 30–31",
+      "objective": "Murid dapat mengamalkan sekurang-kurangnya dua adab sepanjang kerja kumpulan.",
+      "materials": "Kad tugas kumpulan dan borang semak bergambar",
+      "induction": [
+        "Menetapkan satu tugas kumpulan menyediakan ruang komuniti olok-olok.",
+        "Memilih tugas dan mendengar peraturan kumpulan."
+      ],
+      "guided": [
+        "Mengingatkan adab memberi giliran, meminta izin dan menghargai bantuan.",
+        "Berlatih cara menggunakan satu ujaran sopan dalam tugas yang dipilih."
+      ],
+      "practice": [
+        "Memantau kerja kumpulan dan memberi maklum balas khusus.",
+        "Melaksanakan tugas, memberi giliran dan menolong rakan secara sopan."
+      ],
+      "closure": [
+        "Membimbing murid menanda amalan yang dilakukan.",
+        "Memilih satu amalan untuk diulang ketika tugas berikutnya."
+      ],
+      "support": "Berikan kad isyarat giliran dan peranan yang jelas.",
+      "assessment": "Guru merekod sama ada murid dapat mengamalkan sekurang-kurangnya dua adab sepanjang kerja kumpulan.",
+      "follow_up": "Amalkan peraturan sama ketika menjalankan tugasan kelas sebenar."
+    }
+  ]
+}
