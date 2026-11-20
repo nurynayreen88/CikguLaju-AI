@@ -86,7 +86,8 @@ def _target(state):
 
 
 def _clean(raw):
-    return re.sub(r"\*\*(.*?)\*\*", r"\1", raw).strip()
+    lesson_text = re.split(r"(?m)^\*\*QA status:\*\*", raw, maxsplit=1)[0]
+    return re.sub(r"\*\*(.*?)\*\*", r"\1", lesson_text).strip()
 
 
 def load_lesson(number, *, root=LESSON_ROOT):

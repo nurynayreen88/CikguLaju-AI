@@ -58,8 +58,14 @@ def _real_rph_pdf_function():
     if len(matches)!=1:
         raise RuntimeError("Expected exactly one production native PDF table generator, got %d" % len(matches))
     node=matches[0]
-    # Never evaluate untrusted app-level startup statements.
-    isolated=ast.Module(body=[node],type_ignores=[])
+    # Include the formatting helpers called by the current native RPH path.
+    # Compile definitions only, without app startup, DB or network actions.
+    helper_names = ("_rph_document_rows", "_rph_table_labels")
+    helpers = {entry.name: entry for entry in tree.body
+               if isinstance(entry, ast.FunctionDef) and entry.name in helper_names}
+    if helpers.keys() != set(helper_names):
+        raise RuntimeError("Native RPH PDF formatting helpers are missing")
+    isolated=ast.Module(body=[*helpers.values(), node],type_ignores=[])
     ast.fix_missing_locations(isolated)
     return compile(isolated,str(path),"exec"),node.lineno
 
@@ -160,9 +166,7 @@ def run(year, *, all_lessons=False):
                 row["sow_main_in_pdf"]=(
                     "not fixed by SOW" in extracted if record["teacher_selected"] else
                     str(record["main_ls"]) in extracted)
-            row["draft_label_in_pdf"]=(
-                "DRAF" in extracted if record["teacher_selected"] or
-                   year==4 and lesson==30 or year==5 else None)
+            row["internal_label_in_pdf"] = bool(re.search(r"\bDRAF\b|QA status:", extracted, re.I))
             row["error"]=None
         except Exception as exc:
             row["error"]=repr(exc)
@@ -191,8 +195,8 @@ def run(year, *, all_lessons=False):
     # of the 160 supplied Lesson rows. Report test failures as evidence.
     if report["single_page_a4"] != len(results):
         raise SystemExit("Some native PDF RPHs overflowed beyond one A4 page")
-    if any(r["draft_label_in_pdf"] is False for r in results):
-        raise SystemExit("A native PDF lost an explicit teacher-choice or draft label")
+    if any(r["internal_label_in_pdf"] for r in results):
+        raise SystemExit("A native PDF exposes an internal draft or QA label")
     print("NATIVE_PDF_160_PER_YEAR_A4_PASS",year,flush=True)
     # This still does not certify real Telegram delivery, audio or teachers.
 

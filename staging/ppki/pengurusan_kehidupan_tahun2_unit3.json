@@ -1,0 +1,83 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 2,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 3 · Bersih Cermin Peribadi",
+  "content_standards": {
+    "3.1": "Menjaga kebersihan tandas dan bilik mandi."
+  },
+  "learning_standards": {
+    "3.1.1": "Menamakan alatan dan bahan untuk membersihkan tandas dan bilik mandi.",
+    "3.1.2": "Mengenal pasti fungsi alatan dan bahan menjaga kebersihan tandas dan bilik mandi.",
+    "3.1.3": "Menunjukkan cara membersih tandas dan bilik mandi.",
+    "3.1.4": "Menunjukkan langkah menjaga keselamatan ketika membersih tandas dan bilik mandi."
+  },
+  "lessons": [
+    {
+      "pdp": "015",
+      "title": "Kenali alatan dan bahan kebersihan tandas",
+      "sp": "3.1.1",
+      "focus": "Menamakan berus, penyental lantai, kain lap dan bahan pencuci.",
+      "book": "Buku Teks hlm. 24–25",
+      "objective": "Menamakan sekurang-kurangnya tiga daripada empat alatan atau bahan yang ditunjukkan.",
+      "materials": "Berus bersih, penyental, kain lap, gambar bahan pencuci dan kad nama.",
+      "induction": ["Paparkan gambar tandas dan bilik mandi. Perkenalkan ruang yang perlu dijaga kebersihannya.", "Tunjukkan salah satu ruang pada gambar."],
+      "guided": ["Sebut nama setiap alatan sambil menunjukkan objek atau kad gambar.", "Padankan gambar atau objek dengan kad nama yang betul."],
+      "practice": ["Tunjukkan empat alatan atau bahan secara rawak, tanpa menyebut namanya.", "Namakan melalui pertuturan, isyarat nama atau kad komunikasi."],
+      "support": "Mulakan dengan dua objek sebenar atau gambar besar. Kurangkan pilihan atau petunjuk mengikut respon murid.",
+      "assessment": "Guru merekod bilangan penamaan tepat daripada empat item dan bantuan yang digunakan.",
+      "closure": ["Tunjukkan satu gambar daripada halaman 25.", "Namakan satu alatan atau bahan yang sesuai."],
+      "follow_up": "Ulang penamaan bagi item yang masih tertukar."
+    },
+    {
+      "pdp": "016",
+      "title": "Fungsi alatan dan bahan kebersihan",
+      "sp": "3.1.2",
+      "focus": "Mengenal pasti alat atau bahan yang sesuai bagi mangkuk tandas, lantai dan sinki.",
+      "book": "Buku Teks hlm. 24–25",
+      "objective": "Mengenal pasti fungsi sekurang-kurangnya tiga daripada empat alatan atau bahan berdasarkan gambar tugas.",
+      "materials": "Kad tugas, berus contoh, penyental lantai, kain lap dan gambar bahan pencuci.",
+      "induction": ["Tunjukkan gambar sinki berpercik air.", "Pilih satu gambar alatan yang boleh digunakan."],
+      "guided": ["Modelkan penggunaan berus pada model mangkuk, penyental pada permukaan lantai dan kain pada sinki. Terangkan fungsi bahan pencuci melalui gambar.", "Padankan setiap alat atau bahan dengan tindakan yang ditunjukkan."],
+      "practice": ["Paparkan empat gambar kerja kebersihan secara berasingan.", "Pilih alatan atau bahan yang sepadan dan nyatakan atau tunjukkan kegunaannya."],
+      "support": "Beri dua pilihan alatan untuk setiap kad tugas, dan tambah pilihan apabila murid bersedia.",
+      "assessment": "Guru merekod tiga padanan fungsi yang tepat daripada empat dan tahap bantuan.",
+      "closure": ["Lakonkan satu gerakan membersih.", "Pilih alatan sepadan berdasarkan gerakan."],
+      "follow_up": "Ulang padanan berus mangkuk tandas dengan penyental lantai jika murid masih keliru."
+    },
+    {
+      "pdp": "017",
+      "title": "Simulasi membersihkan tandas dan bilik mandi",
+      "sp": "3.1.3",
+      "focus": "Menggosok model mangkuk tandas dan mengelap percikan pada model sinki.",
+      "book": "Buku Teks hlm. 24–25",
+      "objective": "Menunjukkan dua tindakan membersih, menggunakan alat yang sesuai bagi setiap permukaan model.",
+      "materials": "Model mangkuk tandas dan sinki, dulang cetek, air, berus dan kain lap yang bersih.",
+      "induction": ["Tunjukkan dua permukaan model dan dua alatan berbeza.", "Pilih alat untuk setiap permukaan."],
+      "guided": ["Modelkan cara menggosok mangkuk tiruan dengan berus, kemudian mengelap percikan pada sinki tiruan dengan kain.", "Tiru kedua-dua tindakan secara berpandu."],
+      "practice": ["Bahagikan murid kepada dua stesen meja. Pantau pemilihan alat dan gerakan.", "Bersihkan kedua-dua model dengan alat yang ditunjukkan."],
+      "support": "Letakkan alat dalam jangkauan, gunakan pemegang yang sesuai dan beri kad gambar satu tindakan bagi setiap stesen.",
+      "assessment": "Guru menanda pemilihan alat dan tindakan yang betul bagi kedua-dua permukaan serta jenis bantuan.",
+      "closure": ["Tunjukkan tempat menyimpan alat dan rutin mencuci tangan.", "Simpan alat dan cuci tangan."],
+      "follow_up": "Ulang simulasi pada permukaan yang masih memerlukan bimbingan."
+    },
+    {
+      "pdp": "018",
+      "title": "Langkah selamat ketika menjaga kebersihan",
+      "sp": "3.1.4",
+      "focus": "Persediaan, tindak balas kepada lantai basah dan penyimpanan alatan.",
+      "book": "Buku Teks hlm. 24–25",
+      "objective": "Menunjukkan tiga tindakan selamat bagi situasi sebelum, semasa dan selepas aktiviti membersih.",
+      "materials": "Sarung tangan saiz sesuai, kad lantai basah, tanda amaran, gambar rak alatan dan model.",
+      "induction": ["Tunjukkan gambar lantai basah di pintu tandas.", "Tunjuk kawasan yang perlu dielakkan dan cara memaklumkan guru."],
+      "guided": ["Modelkan pakai sarung tangan sebelum aktiviti, maklumkan kepada guru jika lantai basah dan simpan alat selepas selesai.", "Lakonkan setiap tindakan berdasarkan kad fasa."],
+      "practice": ["Berikan tiga kad situasi dalam ruang simulasi yang kering.", "Tunjukkan satu tindakan selamat yang sesuai bagi setiap kad."],
+      "support": "Gunakan satu kad pada satu masa dan tunjuk contoh pergerakan jika perlu. Terima isyarat meminta bantuan yang digunakan dalam kelas.",
+      "assessment": "Guru merekod tiga tindakan ditunjukkan serta sama ada kendiri atau dengan petunjuk.",
+      "closure": ["Ulang semula isyarat lantai basah dan tempat menyimpan alat.", "Nyatakan atau tunjuk satu langkah keselamatan."],
+      "follow_up": "Ulang lakonan bagi situasi yang masih memerlukan bimbingan."
+    }
+  ]
+}

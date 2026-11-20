@@ -2,7 +2,7 @@
 from flask import Blueprint, Response, jsonify, request
 
 from staging.ppki.catalog import (
-    FORMATS, RPT_FILENAME, SUBJECT, YEAR, catalog, lesson_filename, options, selected_lesson,
+    FORMATS, RPT_COMBINED_FILENAME, RPT_FILENAME, SUBJECT, YEAR, catalog, lesson_filename, options, selected_lesson,
 )
 from staging.ppki.render_pengurusan_kehidupan import render_lesson
 from staging.ppki.rpt import render_rpt
@@ -47,7 +47,10 @@ def create_ppki_blueprint():
                 or type(selection["year"]) is not int or selection["year"] != YEAR
                 or selection["subject"] != SUBJECT or fmt not in FORMATS):
             return jsonify({"error": "Invalid PPKI selection"}), 400
-        lesson = selected_lesson(selection["unit"], selection["lesson"])
+        unit = selection["unit"]
+        if not isinstance(unit, str):
+            return jsonify({"error": "Invalid PPKI unit"}), 400
+        lesson = selected_lesson(unit, selection["lesson"])
         if lesson is None:
             return jsonify({"error": "PPKI PdP unavailable"}), 404
         try:
@@ -55,17 +58,19 @@ def create_ppki_blueprint():
         except (ValueError, TypeError):
             return jsonify({"error": "Invalid teacher metadata"}), 400
         extension = "docx" if fmt == "word" else "pdf"
-        body = render_lesson(catalog(), lesson, extension, teacher)
+        body = render_lesson(catalog(unit), lesson, extension, teacher)
         response = Response(body, mimetype=MIMES[fmt])
         response.headers["Content-Disposition"] = f'attachment; filename="{lesson_filename(lesson["pdp"], fmt)}"'
         return response
 
-    @bp.get("/rpt.pdf")
-    def ppki_rpt():
+    @bp.get("/rpt.pdf", defaults={"combined": False})
+    @bp.get("/rpt-current.pdf", defaults={"combined": True})
+    def ppki_rpt(combined):
         if request.args:
             return jsonify({"error": "Unexpected query parameters"}), 400
-        response = Response(render_rpt(), mimetype=MIMES["pdf"])
-        response.headers["Content-Disposition"] = f'attachment; filename="{RPT_FILENAME}"'
+        response = Response(render_rpt(combined=combined), mimetype=MIMES["pdf"])
+        filename = RPT_COMBINED_FILENAME if combined else RPT_FILENAME
+        response.headers["Content-Disposition"] = f'attachment; filename="{filename}"'
         return response
 
     return bp
