@@ -141,6 +141,7 @@
  function updateAll(){
   const included=includedChoices();
   const selectable=included.filter(c=>c.slot.can_prepare);
+  const materialsAllowed=canGenerateRph();
   confirmWrap.hidden=!included.length;
   if(weekSlotCount&&weekSlotCount.textContent!==String(included.length))
    weekSlotCount.textContent=String(included.length);
@@ -150,7 +151,7 @@
   const incomplete=selectable.filter(c=>!c.controls.lesson.value);
   const busy=selectable.some(c=>c.busy);
   // Keep the original all-slots guard, covered by existing RPH Hari Ini QA.
-  generateAll.disabled=loading||reviewing||!confirm.checked||!selectable.length||
+  generateAll.disabled=loading||reviewing||!confirm.checked||!selectable.length||!materialsAllowed||
    (weekly?busy||selectable.every(c=>!c.controls.lesson.value):
     selectable.some(c=>c.busy||!c.controls.lesson.value));
   for(const c of choices){
@@ -165,6 +166,10 @@
   // existing button, selection flow, or any generation/credit endpoints.
   // Only saved timetable slot labels and source-backed selection states appear.
   if(!loading&&!reviewing&&resultsHost.hidden){
+   if(!materialsAllowed){
+    allStatus.textContent=selectable.length?rphMaterialsAccessMessage():"";
+    return;
+   }
    const done=selectable.length-incomplete.length;
    if(weekly){
     const pending=included.length-selectable.length;
@@ -802,6 +807,7 @@
    });
    const data=await availability.json().catch(()=>({}));
    if(epoch!==batchEpoch||key!==selectedKey(c))return;
+   if(updateRphTrialFromDenial(data))return;
    paired=data.code==="TELEGRAM_ENGLISH_INTEGRATED_UNAVAILABLE";
    if(availability.ok&&data.available===true&&data.generator==="telegram-native"){
     const pair=Array.isArray(data.lessons)?data.lessons.map(n=>String(n).padStart(3,"0")).join(" + "):"";
@@ -836,6 +842,7 @@
     });
     const data=await response.json().catch(()=>({}));
     if(epoch!==batchEpoch||key!==selectedKey(c))return;
+    if(updateRphTrialFromDenial(data))return;
     if(response.ok&&Array.isArray(data.items)&&data.items.length<=30){
      if(typeof data.pair_note==="string")errors.push(data.pair_note);
      for(const item of data.items){
@@ -891,6 +898,7 @@
   const response=await fetch("/api/web/rph/"+format+"?"+query,options);
   if(!response.ok){
    const body=await response.json().catch(()=>({}));
+   updateRphTrialFromDenial(body);
    throw Error(body.error||"Muat turun RPH gagal (HTTP "+response.status+").");
   }
   const mime=(response.headers.get("content-type")||"").toLowerCase();
@@ -1140,6 +1148,11 @@
  });
  window.rphTodayLoad=()=>{void load(dateInput.value);};
  window.cikgulajuProgressLoad=loadProgressSummary;
+ window.cikgulajuRphMaterialAccessChanged=()=>{
+  if(canGenerateRph()){updateAll();return;}
+  reviewing=false;
+  clearResults();
+ };
  const workspace=document.getElementById("workspace"),todayView=document.getElementById("view-today");
  if(workspace&&!workspace.hidden&&todayView&&!todayView.hidden)void load(dateInput.value);
 })();

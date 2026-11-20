@@ -18,9 +18,35 @@ class ExtraMaterialsWebTests(unittest.TestCase):
         self.sel={"year":"2","subject":"ENGLISH",
                   "unit":self.e2["unit"],"lesson":self.e2["token"]}
 
-    def _account(self):
+    def _account(self, credits=1, **access):
         return patch("web.unified_rph_web._account",
-                     return_value=({"telegram_user_id":1,"authenticated":True},None))
+                     return_value=({"telegram_user_id":1,"authenticated":True,
+                                    "free_remaining":credits,**access},None))
+
+    def test_exhausted_trial_blocks_new_material_links_and_direct_downloads(self):
+        music = {"year": "4", "subject": "MUZIK", "unit": "u07", "lesson": "021"}
+        with self._account(0), patch("web.unified_rph_web._selection") as select:
+            for endpoint in ("extra-materials", "english-audio/1", "english-student-book",
+                             "english-workbook", "english-paired-material/audio-1",
+                             "science-textbook"):
+                with self.subTest(endpoint=endpoint):
+                    response = self.client.get("/api/web/rph/" + endpoint, query_string=music)
+                    self.assertEqual(response.status_code, 403)
+                    self.assertEqual(response.json["code"], "FREE_TRIAL_EXHAUSTED")
+                    self.assertNotIn("items", response.json)
+            select.assert_not_called()
+
+    def test_paid_account_at_zero_can_open_materials_without_debit(self):
+        music = {"year": "4", "subject": "MUZIK", "unit": "u07", "lesson": "021"}
+        for access in ({"rakan_pembangun": True}, {"vip_expires_at": "2099-01-01T00:00:00Z"}):
+            with self.subTest(access=access), self._account(0, **access), patch(
+                    "web.native_telegram_extra_materials_20261106.music_source_links",
+                    return_value=[]) as tracks, patch(
+                    "web.rph_delivery_quota.authorize_rendered_document") as debit:
+                response = self.client.get("/api/web/rph/extra-materials", query_string=music)
+                self.assertEqual(response.status_code, 200)
+                tracks.assert_called_once_with(4, "u07", "021")
+                debit.assert_not_called()
 
     def test_workbook_is_bound_to_source_token_not_rpt_row(self):
         with self._account(),patch(

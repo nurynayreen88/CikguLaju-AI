@@ -35,6 +35,7 @@ function slot(class_name, subject, date) {
 }
 const a = slot("4 Bestari", "Matematik", "2027-01-04");
 const b = slot("5 Amanah", "Sains", "2027-01-05");
+let materialsAllowed = true;
 const ctx = {
   choices: [], loading: false, reviewing: false, weekly: false,
   bundleBusy: false, singleDownloads: 0, savingProgress: false,
@@ -42,6 +43,8 @@ const ctx = {
   list: {querySelectorAll: () => []}, confirmWrap: {hidden: true},
   confirm: {checked: false}, generateAll: {disabled: true},
   resultsHost: {hidden: true}, allStatus: {textContent: ""},
+  canGenerateRph: () => materialsAllowed,
+  rphMaterialsAccessMessage: () => "10 janaan RPH percuma telah habis.",
   TAGS: ["component", "theme", "unit", "topic", "lesson"],
 };
 vm.runInNewContext(body + "\nthis.updateAll = updateAll;", ctx);
@@ -78,6 +81,16 @@ ctx.confirm.checked = true;
 update();
 assert.equal(ctx.generateAll.disabled, false);
 assert.match(ctx.allStatus.textContent, /Tekan Jana Bahan Semua Lesson/);
+
+materialsAllowed = false;
+for (const weekly of [false, true]) {
+  ctx.weekly = weekly;
+  update();
+  assert.equal(ctx.generateAll.disabled, true);
+  assert.match(ctx.allStatus.textContent, /10 janaan RPH percuma telah habis/);
+}
+ctx.weekly = false;
+materialsAllowed = true;
 
 a.busy = true;
 update();

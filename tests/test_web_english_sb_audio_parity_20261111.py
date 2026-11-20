@@ -24,7 +24,7 @@ class WebEnglishSourceTests(unittest.TestCase):
 
     def account(self):
         return patch("web.unified_rph_web._account",
-                     return_value=({"telegram_user_id": 1, "authenticated": True}, None))
+                     return_value=({"telegram_user_id": 1, "authenticated": True, "free_remaining": 1}, None))
 
     def test_individual_source_download_actions_are_present(self):
         with self.account(), patch(

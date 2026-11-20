@@ -749,6 +749,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <p id="teacher-reflection-hint" class="notice">Maksimum 500 aksara dan 6 baris.</p>
 </div></div></section>
 <button id="show-materials" type="button" hidden disabled>Jana Bahan</button>
+<p id="materials-access-status" class="notice" role="status" hidden></p>
 <div id="rph-download-actions" hidden><button id="rph-word" type="button" disabled>Jana RPH Word</button> <button id="rph-pdf" type="button" disabled>Jana RPH PDF</button></div><p id="rph-download-status" class="notice" role="status" aria-live="polite"></p><section id="materials-panel" hidden aria-live="polite"><h3>Bahan untuk Lesson/PdP dipilih</h3><p id="materials-status" class="notice" role="status"></p><ul id="materials-list"></ul><button id="download-all" type="button" hidden disabled>Muat Turun Semua</button></section></section>
 <section id="view-special" class="app-view" aria-labelledby="view-special-heading" hidden>
  <h2 id="view-special-heading">RPH Aktiviti Khas</h2>
@@ -1225,10 +1226,22 @@ function applyRphAccount(account){
  document.getElementById("profile-access-summary").textContent=access.textContent;
  access.setAttribute("aria-live","polite");
  if(typeof showRphAction==="function")showRphAction();
+ syncRphMaterialsAccess();
+ window.cikgulajuRphMaterialAccessChanged?.();
 }
 function canGenerateRph(){
  return rphAccessMode==="paid"||
   (rphAccessMode==="trial"&&rphTrialRemaining!==null&&rphTrialRemaining>0);
+}
+function rphMaterialsAccessMessage(){
+ return rphAccessMode==="exhausted"||rphTrialRemaining===0
+  ?"10 janaan RPH percuma telah habis. Aktifkan akses berbayar untuk menggunakan Jana Bahan."
+  :"Baki janaan belum dapat disahkan. Sila Refresh status akaun.";
+}
+function updateRphTrialFromDenial(data){
+ if(data?.access_status!=="exhausted"&&data?.code!=="FREE_TRIAL_EXHAUSTED")return false;
+ applyRphAccount({rph_access_mode:"exhausted",rph_trial_remaining:0});
+ return true;
 }
 const webViewButtons=Array.from(document.querySelectorAll("[data-web-view]"));
 const sidebarMore=document.getElementById("sidebar-more");
@@ -1564,6 +1577,7 @@ function showStep(el,visible){
 function resetMaterials(){
  document.getElementById("show-materials").hidden=true;
  document.getElementById("show-materials").disabled=true;
+ document.getElementById("materials-access-status").hidden=true;
  document.getElementById("materials-panel").hidden=true;
  document.getElementById("materials-list").replaceChildren();
  document.getElementById("download-all").disabled=true;
@@ -1909,7 +1923,7 @@ lesson.addEventListener("change",()=>{
  if(!canSelectRph())return;
  if(lesson.value){
   document.getElementById("show-materials").hidden=false;
-  document.getElementById("show-materials").disabled=false;
+  syncRphMaterialsAccess();
   catalogStatus.textContent="Lesson/PdP dipilih.";updateSelectionHelp("Tekan Jana Bahan untuk melihat senarai bahan. Kelas, tarikh, waktu mula/tamat dan bilangan murid boleh diisi untuk RPH.");
   void checkRphAvailability();
  }
@@ -1923,6 +1937,20 @@ const MATERIAL_CATEGORIES = Object.freeze([
 ]);
 const materialPanel=document.getElementById("materials-panel");
 let materialsRequestKey="", materialsRequestVersion=0;
+function syncRphMaterialsAccess(){
+ const button=document.getElementById("show-materials");
+ const status=document.getElementById("materials-access-status");
+ const allowed=canGenerateRph();
+ button.disabled=button.hidden||!allowed;
+ status.hidden=button.hidden||allowed;
+ status.textContent=status.hidden?"":rphMaterialsAccessMessage();
+ if(!allowed&&!materialPanel.hidden){
+  materialsRequestVersion++;
+  materialPanel.hidden=true;
+  document.getElementById("materials-list").replaceChildren();
+  document.getElementById("download-all").disabled=true;
+ }
+}
 function materialRow(title,{onDownload=null,url=null,ready=false,statusLabel="Belum tersedia",actionLabel="Download"}={}){
  const li=document.createElement("li");
  li.className="material-download-row";
@@ -1942,7 +1970,7 @@ function materialRow(title,{onDownload=null,url=null,ready=false,statusLabel="Be
 }
 async function populateMaterialList(){
  const key=currentRphLessonKey();
- if(!lesson.value)return;
+ if(!lesson.value||!canGenerateRph())return;
  materialsRequestKey=key;
  const version=++materialsRequestVersion;
  const isCurrent=()=>version===materialsRequestVersion&&materialsRequestKey===key&&currentRphLessonKey()===key;
@@ -1963,6 +1991,7 @@ async function populateMaterialList(){
    });
    const data=await result.json().catch(()=>({}));
    if(!isCurrent())return;
+   if(updateRphTrialFromDenial(data))return;
    if(result.ok&&data.available===true&&data.generator==="telegram-native"){
     verifiedRphKey=key;
     verifiedRphFormats=Array.isArray(data.formats)?
@@ -2000,6 +2029,7 @@ async function populateMaterialList(){
                               credentials:"same-origin",cache:"no-store",redirect:"error"});
    const data=await response.json().catch(()=>({}));
    if(!isCurrent())return;
+   if(updateRphTrialFromDenial(data))return;
    if(!response.ok)throw Error(data.error||"Bahan tambahan belum boleh disemak.");
    if(!Array.isArray(data.items)||data.items.length>30)throw Error("Senarai sumber tidak sah.");
    extraNotice=String(data.note||"");
@@ -2397,11 +2427,11 @@ async function checkRphAvailability(){
   verifiedRphKey=selectedKey;
   showRphAction();
   if(body.download_allowed===false){
+   updateRphTrialFromDenial(body);
    const note=body.access_status==="exhausted"?
-     "RPH disahkan ada dalam Telegram, tetapi baki 10 janaan percuma untuk akaun ini ialah 0. Muat turun hanya selepas akses berbayar diaktifkan.":
+     rphMaterialsAccessMessage():
      "RPH disahkan ada dalam Telegram, tetapi akses janaan akaun belum disahkan. Semak Profil Saya atau refresh status.";
    downloadStatus.textContent=note;
-   updateSelectionHelp("Jana Bahan akan memaparkan RPH sebagai tersedia dengan status akses diperlukan, bukan hilang.");
   }else{
    downloadStatus.textContent=body.status&&body.status.includes("DRAF")?
      "RPH tersedia. Kandungan masih dalam semakan.":
@@ -2432,9 +2462,7 @@ async function generateRphFile(format){
   const response=await fetch(endpoint+key,rphDownloadOptions(teacherReflectionMode.value,teacherReflection.value));
   if(!response.ok){
    const message=await response.json().catch(()=>({}));
-   if(message.code==="FREE_TRIAL_EXHAUSTED"){
-     applyRphAccount({rph_access_mode:"exhausted",rph_trial_remaining:0});
-   }
+   updateRphTrialFromDenial(message);
    throw Error(response.status===401?"Sila log masuk semula.":
       message.error||"RPH belum tersedia (HTTP "+response.status+").");
   }
@@ -2495,7 +2523,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
-<script src="/assets/rph-today.js?v=refleksi-auto-manual-20261120"></script>
+<script src="/assets/rph-today.js?v=had-kuota-jana-bahan-20261120"></script>
 <script src="/assets/teacher-profile.js?v=pilihan-subjek-20261117"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>
