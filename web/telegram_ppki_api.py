@@ -2,7 +2,7 @@
 from flask import Blueprint, Response, jsonify, request
 
 from staging.ppki.catalog import (
-    FORMATS, RPT_COMBINED_FILENAME, RPT_FILENAME, RPT_MANIPULATIVE_FILENAME, RPT_YEAR3_FILENAME,
+    FORMATS, RPT_COMBINED_FILENAME, RPT_FILENAME, RPT_MANIPULATIVE_FILENAME, RPT_MANIPULATIVE_YEAR3_FILENAME, RPT_YEAR3_FILENAME,
     SUBJECT, YEAR, YEARS, catalog, lesson_filename, options, selected_lesson,
 )
 from staging.ppki.render_pengurusan_kehidupan import render_lesson
@@ -84,11 +84,9 @@ def create_ppki_blueprint():
             year = requested_year()
         except ValueError:
             return jsonify({"error": "Unexpected query parameters"}), 400
-        if year == 3 and manipulative:
-            return jsonify({"error": "PPKI RPT unavailable"}), 404
         response = Response(render_rpt(combined=combined, manipulative=manipulative, year=year), mimetype=MIMES["pdf"])
         if year == 3:
-            filename = RPT_YEAR3_FILENAME
+            filename = RPT_MANIPULATIVE_YEAR3_FILENAME if manipulative else RPT_YEAR3_FILENAME
         elif manipulative:
             filename = RPT_MANIPULATIVE_FILENAME
         else:

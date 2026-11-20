@@ -39,6 +39,12 @@ YEAR3_LESSONS = {
     UNIT4: range(40, 44), UNIT5: range(44, 50),
 }
 
+YEAR3_MANIPULATIVE_UNIT_LESSONS = {
+    MANIPULATIVE_UNIT1: range(50, 56),
+    MANIPULATIVE_UNIT2: range(56, 62),
+    MANIPULATIVE_UNIT3: range(62, 74),
+}
+
 # Keep the published order in the additional_units field.
 UNIT_FILES = {
     UNIT3: "pengurusan_kehidupan_tahun2_unit3.json",
@@ -53,24 +59,29 @@ RPT_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_2_2027.pdf"
 RPT_COMBINED_EDITION = "Unit 1–5"
 RPT_COMBINED_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_1_2_3_4_5_2027.pdf"
 RPT_MANIPULATIVE_FILENAME = "CIKGULAJU_RPT_PPKI_KEMAHIRAN_MANIPULATIF_TAHUN_2_2027.pdf"
+RPT_MANIPULATIVE_YEAR3_FILENAME = "CIKGULAJU_RPT_PPKI_KEMAHIRAN_MANIPULATIF_TAHUN_3_2027.pdf"
 RPT_YEAR3_EDITION = "Unit 1–5"
 RPT_YEAR3_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_3_UNIT_1_2_3_4_5_2027.pdf"
 
 
 def component_units(year):
     if year == 3:
-        return {COMPONENT: tuple(YEAR3_LESSONS)}
+        return {COMPONENT: tuple(YEAR3_LESSONS), MANIPULATIVE_COMPONENT: tuple(YEAR3_MANIPULATIVE_UNIT_LESSONS)}
     if year == YEAR:
         return COMPONENT_UNITS
     raise ValueError("Unknown PPKI year")
 
 
-@lru_cache(maxsize=len(LESSONS_BY_UNIT) + len(YEAR3_LESSONS))
+@lru_cache(maxsize=len(LESSONS_BY_UNIT) + len(YEAR3_LESSONS) + len(YEAR3_MANIPULATIVE_UNIT_LESSONS))
 def catalog(unit=UNIT, *, year=YEAR):
     if year == 3 and unit in YEAR3_LESSONS:
         filename = f"pengurusan_kehidupan_tahun3_unit{int(unit[1:3])}.json"
         source = json.loads(Path(__file__).with_name(filename).read_text(encoding="utf-8"))
         expected = YEAR3_LESSONS[unit]
+    elif year == 3 and unit in YEAR3_MANIPULATIVE_UNIT_LESSONS:
+        filename = f"pengurusan_kehidupan_tahun3_kemahiran_manipulatif_unit{int(unit[1:3])}.json"
+        source = json.loads(Path(__file__).with_name(filename).read_text(encoding="utf-8"))
+        expected = YEAR3_MANIPULATIVE_UNIT_LESSONS[unit]
     elif year == YEAR and unit == UNIT:
         source = load_catalog()
         expected = LESSONS_BY_UNIT[unit]

@@ -1,0 +1,188 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 3,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Kemahiran Manipulatif",
+  "unit": "Unit 2 · Tangan Kreatif",
+  "content_standards": {
+    "2.1": "Pergerakan motor halus menggunakan alatan atau bahan.",
+    "2.2": "Pergerakan motor halus dalam aktiviti harian."
+  },
+  "learning_standards": {
+    "2.1.1": "Melakukan pergerakan menyurih, menekan, menyepit, menggunting, merenjis dan mencucuk manik.",
+    "2.1.2": "Menunjukkan cara pergerakan motor halus dengan alatan atau bahan dalam aktiviti seni dan kraf.",
+    "2.2.1": "Melakukan pergerakan memerah, menguli, memotong, menyembur dan memberus.",
+    "2.2.2": "Menunjukkan cara pergerakan motor halus dengan alatan atau bahan dalam aktiviti harian."
+  },
+  "lessons": [
+    {
+      "pdp": "056",
+      "sp": "2.1.1",
+      "book": "Buku Teks hlm. 55–57",
+      "title": "Surih, tekan dan sepit bahan kraf",
+      "focus": "Surih, tekan dan sepit bahan kraf.",
+      "objective": "Murid dapat lakukan ketiga-tiga gerakan dua kali dengan kawalan.",
+      "materials": "Kad garis, plastisin, penyepit lebar, pompom besar.",
+      "induction": [
+        "Pamerkan contoh hasil kraf dan bahan yang digunakan.",
+        "Pilih alat atau bahan yang dikenal dalam gambar."
+      ],
+      "guided": [
+        "Modelkan cara memegang alatan untuk menyurih, menekan dan menyepit.",
+        "Surih lengkung, tekan plastisin dan pindah pompom."
+      ],
+      "practice": [
+        "Sediakan tiga stesen dengan contoh siap.",
+        "Pilih bahan bagi setiap stesen dan ulang gerakan."
+      ],
+      "closure": [
+        "Minta murid kenalkan satu gerakan yang baru digunakan.",
+        "Tunjuk pergerakan dan simpan alatan."
+      ],
+      "support": "Guna garisan tebal dan pemegang lebar.",
+      "assessment": "Guru merekod sama ada murid dapat lakukan ketiga-tiga gerakan dua kali dengan kawalan.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "057",
+      "sp": "2.1.1",
+      "book": "Buku Teks hlm. 55–57",
+      "title": "Gunting, renjis dan susun manik besar",
+      "focus": "Gunting, renjis dan susun manik besar.",
+      "objective": "Murid dapat siapkan satu hasil bagi setiap stesen dengan kawalan yang sesuai.",
+      "materials": "Gunting tumpul, kertas, berus, air berwarna, manik kraf bersaiz besar.",
+      "induction": [
+        "Pamerkan contoh hasil kraf dan bahan yang digunakan.",
+        "Pilih alat atau bahan yang dikenal dalam gambar."
+      ],
+      "guided": [
+        "Modelkan gunting mengikut garisan, renjis ke dulang dan masukkan tali melalui manik.",
+        "Cuba setiap tindakan secara berpandu."
+      ],
+      "practice": [
+        "Tetapkan tiga stesen berasingan di bawah pengawasan.",
+        "Ulang ketiga-tiga gerakan pada bahan pilihan."
+      ],
+      "closure": [
+        "Minta murid kenalkan satu gerakan yang baru digunakan.",
+        "Tunjuk pergerakan dan simpan alatan."
+      ],
+      "support": "Guna gunting adaptif dan bahan terlalu besar untuk ditelan.",
+      "assessment": "Guru merekod sama ada murid dapat siapkan satu hasil bagi setiap stesen dengan kawalan yang sesuai.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "058",
+      "sp": "2.1.2",
+      "book": "Buku Teks hlm. 56–57",
+      "title": "Hasilkan kad kraf bertekstur",
+      "focus": "Hasilkan kad kraf bertekstur.",
+      "objective": "Murid dapat siapkan satu kad dengan tiga gerakan yang dapat diperhatikan.",
+      "materials": "Kad, plastisin, pensel warna, gunting tumpul.",
+      "induction": [
+        "Pamerkan contoh hasil kraf dan bahan yang digunakan.",
+        "Pilih alat atau bahan yang dikenal dalam gambar."
+      ],
+      "guided": [
+        "Demonstrasi surih bentuk, gunting dan tekan bahan hiasan.",
+        "Ikut langkah pertama pada kad contoh."
+      ],
+      "practice": [
+        "Minta murid memilih bentuk dan melengkapkan kad mengikut urutan.",
+        "Gabungkan tiga pergerakan motor halus pada hasil kraf."
+      ],
+      "closure": [
+        "Minta murid kenalkan satu gerakan yang baru digunakan.",
+        "Tunjuk pergerakan dan simpan alatan."
+      ],
+      "support": "Sediakan bahagian siap potong apabila perlu.",
+      "assessment": "Guru merekod sama ada murid dapat siapkan satu kad dengan tiga gerakan yang dapat diperhatikan.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "059",
+      "sp": "2.2.1",
+      "book": "Buku Teks hlm. 58–60",
+      "title": "Perah, uli dan potong bahan lembut",
+      "focus": "Perah, uli dan potong bahan lembut.",
+      "objective": "Murid dapat tunjukkan ketiga-tiga gerakan dengan kawalan dalam dua pusingan.",
+      "materials": "Span, besen cetek, doh, pemotong plastik tumpul.",
+      "induction": [
+        "Tunjuk gambar rutin harian pada halaman rujukan.",
+        "Pilih bahan yang sesuai untuk stesen."
+      ],
+      "guided": [
+        "Modelkan memerah span, menguli doh dan memotong doh pada alas.",
+        "Tiru tiga gerakan mengikut turutan."
+      ],
+      "practice": [
+        "Sediakan stesen basuh dan penyediaan doh simulasi.",
+        "Lakukan gerakan mengikut kad tugas."
+      ],
+      "closure": [
+        "Minta murid pilih satu gerakan yang boleh digunakan dalam rutin lain.",
+        "Pilih gerakan dan kemas tempat kerja."
+      ],
+      "support": "Guna span lembut dan doh tidak melekit.",
+      "assessment": "Guru merekod sama ada murid dapat tunjukkan ketiga-tiga gerakan dengan kawalan dalam dua pusingan.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "060",
+      "sp": "2.2.1",
+      "book": "Buku Teks hlm. 58–59",
+      "title": "Sembur dan berus permukaan simulasi",
+      "focus": "Sembur dan berus permukaan simulasi.",
+      "objective": "Murid dapat lengkapkan kedua-dua gerakan dalam tiga daripada empat cubaan.",
+      "materials": "Botol sembur berisi air, berus lembut, dulang.",
+      "induction": [
+        "Tunjuk gambar rutin harian pada halaman rujukan.",
+        "Pilih bahan yang sesuai untuk stesen."
+      ],
+      "guided": [
+        "Modelkan semburan dekat pada dulang dan berus satu arah.",
+        "Picit penyembur dan berus dalam petak bertanda."
+      ],
+      "practice": [
+        "Tetapkan dua petak untuk disembur dan diberus secara bergilir.",
+        "Sembur ke sasaran dan berus sepanjang garisan."
+      ],
+      "closure": [
+        "Minta murid pilih satu gerakan yang boleh digunakan dalam rutin lain.",
+        "Pilih gerakan dan kemas tempat kerja."
+      ],
+      "support": "Guna picu ringan dan alas penyerap.",
+      "assessment": "Guru merekod sama ada murid dapat lengkapkan kedua-dua gerakan dalam tiga daripada empat cubaan.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "061",
+      "sp": "2.2.2",
+      "book": "Buku Teks hlm. 59–60",
+      "title": "Gunakan gerakan halus dalam rutin kebersihan",
+      "focus": "Gunakan gerakan halus dalam rutin kebersihan.",
+      "objective": "Murid dapat lengkapkan tiga tindakan dan kemas stesen selepas latihan.",
+      "materials": "Besen kecil, span, berus, kain.",
+      "induction": [
+        "Tunjuk gambar rutin harian pada halaman rujukan.",
+        "Pilih bahan yang sesuai untuk stesen."
+      ],
+      "guided": [
+        "Modelkan urutan membasah, memberus dan memerah span.",
+        "Padankan setiap tindakan dengan gambar rutin."
+      ],
+      "practice": [
+        "Tunjukkan stesen kebersihan dan sediakan kad tindakan berurutan.",
+        "Lakukan tiga tindakan lalu keringkan tempat kerja."
+      ],
+      "closure": [
+        "Minta murid pilih satu gerakan yang boleh digunakan dalam rutin lain.",
+        "Pilih gerakan dan kemas tempat kerja."
+      ],
+      "support": "Beri satu arahan bagi setiap giliran.",
+      "assessment": "Guru merekod sama ada murid dapat lengkapkan tiga tindakan dan kemas stesen selepas latihan.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    }
+  ]
+}

@@ -92,7 +92,8 @@ def install(ns):
         if is_ppki:
             from staging.ppki.catalog import (
                 MANIPULATIVE_UNIT_LESSONS, RPT_COMBINED_EDITION, RPT_COMBINED_FILENAME,
-                RPT_MANIPULATIVE_FILENAME, RPT_YEAR3_EDITION, RPT_YEAR3_FILENAME, UNIT_LESSONS, YEAR3_LESSONS,
+                RPT_MANIPULATIVE_FILENAME, RPT_MANIPULATIVE_YEAR3_FILENAME, RPT_YEAR3_EDITION, RPT_YEAR3_FILENAME,
+                UNIT_LESSONS, YEAR3_LESSONS, YEAR3_MANIPULATIVE_UNIT_LESSONS,
             )
             from staging.ppki.rpt import render_rpt
             count = sum(len(numbers) for numbers in UNIT_LESSONS.values())
@@ -114,20 +115,27 @@ def install(ns):
                 ])
             if data == "rpt2027_ppki_year3":
                 count_year3 = sum(len(numbers) for numbers in YEAR3_LESSONS.values())
+                manipulative_count = sum(len(numbers) for numbers in YEAR3_MANIPULATIVE_UNIT_LESSONS.values())
                 return send(cid, f"<b>PPKI Tahun 3 · Pengurusan Kehidupan</b>\n\n"
-                            f"Pengurusan Diri {RPT_YEAR3_EDITION}: {count_year3} PdP.", [
+                            f"Pengurusan Diri {RPT_YEAR3_EDITION}: {count_year3} PdP. Kemahiran Manipulatif: {manipulative_count} PdP.", [
                     [{"text": f"Pengurusan Diri {RPT_YEAR3_EDITION} (PDF)", "callback_data": "rpt2027_ppki_pdf3"}],
+                    [{"text": "Kemahiran Manipulatif (PDF)", "callback_data": "rpt2027_ppki_km_pdf3"}],
                     [{"text": "⬅️ Kembali", "callback_data": "rpt2027_ppki_home"}],
                 ])
-            if data not in {"rpt2027_ppki_pdf2", "rpt2027_ppki_km_pdf2", "rpt2027_ppki_pdf3"}:
+            downloads = {
+                "rpt2027_ppki_pdf2": (2, False), "rpt2027_ppki_km_pdf2": (2, True),
+                "rpt2027_ppki_pdf3": (3, False), "rpt2027_ppki_km_pdf3": (3, True),
+            }
+            if data not in downloads:
                 return send(cid, "Pilihan RPT PPKI tidak sah.")
-            year = 3 if data == "rpt2027_ppki_pdf3" else 2
-            manipulative = data == "rpt2027_ppki_km_pdf2"
+            year, manipulative = downloads[data]
             filename = RPT_MANIPULATIVE_FILENAME if manipulative else RPT_COMBINED_FILENAME
-            if year == 3:
-                filename, edition = RPT_YEAR3_FILENAME, RPT_YEAR3_EDITION
-            elif manipulative:
+            if manipulative:
+                if year == 3:
+                    filename = RPT_MANIPULATIVE_YEAR3_FILENAME
                 edition = "Kemahiran Manipulatif Unit 1–3"
+            elif year == 3:
+                filename, edition = RPT_YEAR3_FILENAME, RPT_YEAR3_EDITION
             try:
                 with TemporaryDirectory(prefix="cikgulaju-rpt-ppki-") as folder:
                     path = Path(folder) / filename
