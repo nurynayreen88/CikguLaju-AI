@@ -41,6 +41,12 @@ def _brief(text, limit=92):
     return first[:limit].rsplit(" ", 1)[0].rstrip(" ,.;") + "…"
 
 
+def _first_material(value):
+    """Use one complete, source-backed material name, not truncated words."""
+    first = re.split(r"[,;]", str(value or ""), maxsplit=1)[0].strip()
+    return first if 0 < len(first) <= 56 else ""
+
+
 def _lesson_pupil_action(activities):
     if not isinstance(activities, (tuple, list)):
         return ""
@@ -123,7 +129,7 @@ def supplement_details(heading, details, activities, footer):
     kbat = _kbat_from_context(activities, english=english)
     if english:
         remediation = (existing_support or
-                       f"Repeat the task with prompts and { _brief(materials, 30) or 'available materials' }.")
+                       f"Repeat the task with prompts and { _first_material(materials) or 'available lesson materials' }.")
         extension = f"Apply {topic} to a new example and explain the result."
         lines_one = (("Cross-curricular elements", emk), ("21st-century learning", pak21),
                      ("Higher-order thinking", kbat))
@@ -133,7 +139,7 @@ def supplement_details(heading, details, activities, footer):
         if existing_support:
             remediation = f"Bimbing murid mengulang {topic.lower()} berpandukan bahagian Sokongan."
         else:
-            aid = _brief(materials, 30)
+            aid = _first_material(materials)
             remediation = (
                 f"Bimbing murid mengulang {topic.lower()}" +
                 (f" menggunakan {aid}." if aid else " secara berperingkat.")
