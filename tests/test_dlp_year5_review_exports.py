@@ -98,17 +98,13 @@ class DLPYear5ReviewExports(unittest.TestCase):
                     self.assertNotIn("RPT date ranges", fields)
                     if subject == "Mathematics":
                         self.assertEqual(fields["Topic"], plan["title"])
-                        text = "\n".join(row.cells[1].text for row in table.rows[1:])
-                        for _, teacher, pupils in plan["phases"]:
-                            self.assertIn(f"Teacher: {teacher}\nPupils: {pupils}", text)
                     else:
                         self.assertEqual(fields["Content Standards"], plan["content_standards"])
                         self.assertEqual(fields["Learning Standards"], plan["learning_standards"])
                         self.assertEqual(word.paragraphs[2].text, plan["title"])
-                        self.assertEqual([tuple(cell.text for cell in row.cells)
-                                          for row in table.rows[1:]],
-                                         [(phase.rsplit(" · ", 1)[0], teacher, pupils)
-                                          for phase, teacher, pupils in plan["phases"]])
+                    text = "\n".join(row.cells[1].text for row in table.rows[1:])
+                    for _, teacher, pupils in plan["phases"]:
+                        self.assertIn(f"Teacher: {teacher}\nPupils: {pupils}", text)
                     standard_fields = (
                         ("content_standards", "learning_standards") if subject == "Science" else ("standards",)
                     )
