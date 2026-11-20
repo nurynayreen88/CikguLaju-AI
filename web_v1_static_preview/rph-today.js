@@ -760,8 +760,13 @@
   if(item.type==="workbook")return item.url.startsWith("/api/web/rph/english-workbook?");
   if(item.type==="textbook")return item.url.startsWith("/api/web/rph/english-student-book?")||
     (subject==="SCIENCE"&&item.url.startsWith("/api/web/rph/science-textbook?"));
-  if(item.type==="audio")return /^\/api\/web\/rph\/english-audio\/[1-4]\?/.test(item.url)||musicLink.test(item.url);
+  if(item.type==="audio")return /^\/api\/web\/rph\/english-audio\/[1-4]\?/.test(item.url)||
+   (subject==="MUZIK"&&(musicLink.test(item.url)||musicDownload(item)));
   return false;
+ }
+ function musicDownload(item){
+  return item.action==="Muat Turun Audio"&&
+   /^https:\/\/drive\.usercontent\.google\.com\/download\?id=[A-Za-z0-9_-]{10,100}&export=download$/.test(item.url);
  }
  async function inspectOne(c,epoch){
   const key=selectedKey(c),args=selection(c),qs=new URLSearchParams(args);
@@ -829,7 +834,7 @@
       }
       if(!readyMaterialLink(item,c.slot.subject_code))continue;
       const label=item.title;
-      const action=englishBookView.test(item.url)?"Buka Buku Asal":
+      const action=musicDownload(item)?"Muat Turun Audio":englishBookView.test(item.url)?"Buka Buku Asal":
         item.type==="audio"&&musicLink.test(item.url)?"Buka Audio Sumber":"Download";
       const row=actionRow(label,action,item.url);
       c.resultList.append(row.li);found++;

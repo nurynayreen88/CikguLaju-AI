@@ -2003,15 +2003,17 @@ async function populateMaterialList(){
         item.url.startsWith("/api/web/rph/english-student-book?");
     const ownEnglishAudio=item.type==="audio"&&
         /^\/api\/web\/rph\/english-audio\/[1-4]\?/.test(item.url);
-    const externalMusic=item.type==="audio"&&
+    const externalMusic=subject.value==="MUZIK"&&item.type==="audio"&&
         /^https:\/\/drive\.google\.com\/file\/d\/[A-Za-z0-9_-]{10,100}\/view\?usp=drivesdk$/.test(item.url);
+    const musicDownload=subject.value==="MUZIK"&&item.type==="audio"&&item.action==="Muat Turun Audio"&&
+        /^https:\/\/drive\.usercontent\.google\.com\/download\?id=[A-Za-z0-9_-]{10,100}&export=download$/.test(item.url);
     const ownScienceBook=item.type==="textbook"&&subject.value==="SCIENCE"&&
         item.url.startsWith("/api/web/rph/science-textbook?");
     const originalEnglishBook=subject.value==="ENGLISH"&&item.action==="Buka Buku Asal"&&
         /^https:\/\/online\.anyflip\.com\/(?:rmzft\/wwgq|hykyg\/rrpd)\/mobile\/index\.html\?pageIndex=[1-9][0-9]{0,2}$/.test(item.url);
-    if(!ownWorkbook&&!ownStudentBook&&!ownEnglishAudio&&!externalMusic&&!ownScienceBook&&!originalEnglishBook)continue;
+    if(!ownWorkbook&&!ownStudentBook&&!ownEnglishAudio&&!externalMusic&&!musicDownload&&!ownScienceBook&&!originalEnglishBook)continue;
     list.append(materialRow(item.title,{ready:true,url:item.url,
-      actionLabel:originalEnglishBook?item.action:externalMusic?"Buka Audio Sumber":"Download"}));
+      actionLabel:originalEnglishBook||musicDownload?item.action:externalMusic?"Buka Audio Sumber":"Download"}));
     found++;
    }
   }catch(e){sourceError=(sourceError+" "+e.message).trim();}
@@ -2479,7 +2481,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
-<script src="/assets/rph-today.js?v=dlp-y2-20261119"></script>
+<script src="/assets/rph-today.js?v=muzik-audio-20261120"></script>
 <script src="/assets/teacher-profile.js?v=pilihan-subjek-20261117"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>

@@ -1329,8 +1329,11 @@ def create_blueprint():
             return jsonify({"items": [], "error":
                             "Sumber bahan tambahan Telegram belum dapat disahkan."}), 503
         verified = bool(items) and all(item.get("content_verified") is True for item in items)
-        note = ("Rakaman sepadan dengan skor buku teks. Pautan membuka audio pada sumber asal."
-                if verified else "Pautan audio luar: akses, kandungan dan hak edar belum disahkan.")
+        if items and all(item.get("action") == "Muat Turun Audio" for item in items):
+            note = "Fail audio dimuat turun daripada Google Drive sumber asal."
+        else:
+            note = ("Rakaman sepadan dengan skor buku teks. Pautan membuka audio pada sumber asal."
+                    if verified else "Pautan audio luar: akses, kandungan dan hak edar belum disahkan.")
         return jsonify({"items": items, "status": "SUMBER_ASAL", "note": note})
 
     @bp.get("/api/web/rph/science-textbook")

@@ -96,6 +96,26 @@ class ExtraMaterialsWebTests(unittest.TestCase):
             pdf=self.client.get("/api/web/rph/english-workbook",query_string=self.sel)
             self.assertEqual(pdf.status_code,401)
 
+    def test_music_download_uses_the_original_drive_file(self):
+        params = {"year": "4", "subject": "MUZIK", "unit": "u07", "lesson": "021"}
+        file_id = "1tgNnRXXJC6SVvvVRodSQgt1o464hLe7V"
+        download = f"https://drive.usercontent.google.com/download?id={file_id}&export=download"
+        upstream = {"source": "telegram-provisional-subjects-2027-v1", "status": "DRAF",
+                    "available": True, "content_verified": True, "download_available": False,
+                    "links": [{"track": 66, "title": "Corak Irama 1",
+                               "url": f"https://drive.google.com/file/d/{file_id}/view?usp=drivesdk",
+                               "download_url": download}]}
+        with self._account(), patch("web.native_telegram_extra_materials_20261106._json",
+                                    return_value=upstream):
+            good = self.client.get("/api/web/rph/extra-materials", query_string=params)
+            upstream["links"][0]["download_url"] = download.replace(file_id, "different_source_file")
+            wrong = self.client.get("/api/web/rph/extra-materials", query_string=params)
+        self.assertEqual(good.status_code, 200)
+        self.assertEqual(good.json["items"][0]["url"], download)
+        self.assertEqual(good.json["items"][0]["action"], "Muat Turun Audio")
+        self.assertEqual(wrong.status_code, 503)
+        self.assertEqual(wrong.json["items"], [])
+
     def test_browser_uses_lesson_token_not_rpt_id(self):
         static=(ROOT/"web_v1_static_preview"/"index.html").read_text("utf8")
         self.assertIn("/api/web/rph/extra-materials?",static)

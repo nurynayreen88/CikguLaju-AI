@@ -15,7 +15,8 @@ from web.native_telegram_rph_client import BlockRedirects, NativeRPHUnavailable
 
 MUSIC_SOURCE = "telegram-provisional-subjects-2027-v1"
 WORKBOOK_SOURCE = "telegram-verified-english-workbook-v1"
-DRIVE_VIEW = re.compile(r"^https://drive\.google\.com/file/d/[A-Za-z0-9_-]{10,100}/view\?usp=drivesdk$")
+DRIVE_VIEW = re.compile(r"^https://drive\.google\.com/file/d/([A-Za-z0-9_-]{10,100})/view\?usp=drivesdk$")
+MUSIC_DOWNLOAD = "https://drive.usercontent.google.com/download?id={}&export=download"
 MUSIC_UNIT = re.compile(r"^(?:u(?:0[1-9]|[1-9][0-9])|x[a-f0-9]{12})$")
 MAX_PDF = 8 * 1024 * 1024
 PAIRED_SOURCE = "telegram-english-paired-materials-2027"
@@ -149,15 +150,20 @@ def music_source_links(year, unit, lesson, *, opener=None):
         raise NativeRPHUnavailable("Music link availability mismatch")
     out, seen = [], set()
     for item in links:
-        if (not isinstance(item, dict) or set(item) != {"title","url","track"}
+        if (not isinstance(item, dict) or set(item) - {"title","url","track","download_url"}
+                or not {"title","url","track"}.issubset(item)
                 or type(item["track"]) is not int or not 1 <= item["track"] <= 300
                 or not isinstance(item["title"], str) or not 1 <= len(item["title"]) <= 255
                 or not isinstance(item["url"], str) or not DRIVE_VIEW.fullmatch(item["url"])
                 or item["url"] in seen):
             raise NativeRPHUnavailable("Music source link unsafe or ambiguous")
         seen.add(item["url"])
+        download = item.get("download_url")
+        if "download_url" in item and download != MUSIC_DOWNLOAD.format(DRIVE_VIEW.fullmatch(item["url"])[1]):
+            raise NativeRPHUnavailable("Music download does not match the original source")
         out.append({"type":"audio", "title":"Audio "+str(item["track"])+" — "+item["title"],
-                    "url":item["url"], "action":"Buka Audio Sumber",
+                    "url":download or item["url"],
+                    "action":"Muat Turun Audio" if download else "Buka Audio Sumber",
                     "source_only":True, "content_verified": content_verified})
     return out
 
