@@ -8,6 +8,7 @@ import unittest
 from unittest.mock import patch
 
 from docx import Document
+from docx.oxml.ns import qn
 from flask import Flask
 from pypdf import PdfReader
 
@@ -157,7 +158,10 @@ class DlpDownloadTests(unittest.TestCase):
                         teacher_field = "Class" if subject == "MATH_DLP" else "Class / date / time"
                         self.assertIn("2 Bestari", fields[teacher_field])
                         self.assertEqual(fields["Learning objective"], plan["objective"])
-                        self.assertEqual(fields["RPT 2027 dates"], " · ".join(plan["rpt_dates"]))
+                        self.assertNotIn("RPT 2027 dates", fields)
+                        fill = "DCEBFA" if subject == "MATH_DLP" else "DFF1E3"
+                        shading = doc.tables[0].cell(0, 0)._tc.tcPr.find(qn("w:shd"))
+                        self.assertEqual(shading.get(qn("w:fill")), fill)
                         self.assertEqual(fields["Lesson / PdP"], item["label"])
                         table = doc.tables[1]
                         if subject == "MATH_DLP":
@@ -186,6 +190,10 @@ class DlpDownloadTests(unittest.TestCase):
                         ls_codes = re.findall(r"\b\d+\.\d+\.\d+\b", plan["standards"])
                         cs_codes = list(dict.fromkeys(code.rsplit(".", 1)[0] for code in ls_codes))
                         pdf_text = " ".join(page.extract_text().split())
+                        self.assertNotIn("RPT 2027 dates", pdf_text)
+                        pdf_fills = {bytes(round(float(value) * 255) for value in rgb).hex().upper()
+                                     for rgb, operator in page.get_contents().operations if operator == b"rg"}
+                        self.assertIn(fill, pdf_fills)
                         for label, codes in (("Content Standards", cs_codes), ("Learning Standards", ls_codes)):
                             lines = [line.split(maxsplit=1) for line in fields[label].splitlines()]
                             shown = list(dict.fromkeys(code.split("(")[0] for code, _ in lines))

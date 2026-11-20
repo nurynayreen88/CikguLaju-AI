@@ -168,14 +168,17 @@ _SESSION_LABELS = {
     "PdP / Tempoh": "PdP",
     "Nombor dan tempoh": "Nombor PdP",
 }
+_RPT_DATE_FIELDS = {"Tarikh RPT", "Julat RPT", "RPT 2027 dates", "RPT date ranges"}
+_MATHEMATICS_FILL = "DCEBFA"
+_SCIENCE_FILL = "DFF1E3"
 
 
 def _rph_display_rows(details, activities):
-    """Omit planning durations from the handout while keeping authored actions."""
+    """Keep class details and teaching content on the RPH handout."""
     fields = [
         (_SESSION_LABELS[label], _DURATION_SUFFIX.sub("", value)) if label in _SESSION_LABELS
         else (label, value)
-        for label, value in details
+        for label, value in details if label not in _RPT_DATE_FIELDS
     ]
     phases = [(_DURATION_SUFFIX.sub("", label), teacher, pupils)
               for label, teacher, pupils in activities]
@@ -255,6 +258,14 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
     from docx.shared import Mm, Pt, RGBColor
     from web.rph_document_style import word_gap
 
+    fill = _MATHEMATICS_FILL if mathematics else _SCIENCE_FILL
+
+    def shading():
+        element = OxmlElement("w:shd")
+        element.set(qn("w:val"), "clear")
+        element.set(qn("w:fill"), fill)
+        return element
+
     details, activities = _rph_display_rows(details, activities)
     if mathematics:
         heading, details, activities = _math_layout(heading, details, activities, teacher)
@@ -312,7 +323,9 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
         layout.space_before = Pt(4 if index == 0 else 0)
         layout.space_after = Pt(4 if index == len(opening) - 1 else 0)
         layout.keep_with_next = True
-        paragraph._p.get_or_add_pPr().insert_element_before(deepcopy(border), "w:spacing", "w:ind", "w:jc")
+        properties = paragraph._p.get_or_add_pPr()
+        properties.insert_element_before(deepcopy(border), "w:spacing", "w:ind", "w:jc")
+        properties.insert_element_before(shading(), "w:spacing", "w:ind", "w:jc")
 
     def table(rows, widths, header=False):
         element = doc.add_table(rows=0, cols=len(widths))
@@ -327,6 +340,8 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
             for j, (cell, value, width) in enumerate(zip(line.cells, row, widths)):
                 cell.width = Mm(width)
                 bold = j == 0 or (header and i == 0)
+                if bold:
+                    cell._tc.get_or_add_tcPr().append(shading())
                 paragraph = cell.paragraphs[0]
                 padding = 1 if mathematics else (2 if compact else 3)
                 paragraph.paragraph_format.space_before = Pt(padding)
@@ -369,6 +384,7 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
     from reportlab.platypus import BaseDocTemplate, Frame, KeepInFrame, PageTemplate, Paragraph, Spacer, Table
     from web.rph_document_style import pdf_box_style, pdf_fonts
 
+    fill = colors.HexColor("#" + (_MATHEMATICS_FILL if mathematics else _SCIENCE_FILL))
     details, activities = _rph_display_rows(details, activities)
     if mathematics:
         heading, details, activities = _math_layout(heading, details, activities, teacher)
@@ -396,7 +412,11 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
             cells[0] = [paragraph(value, table_heading) for value in rows[0]]
         result = Table(cells, colWidths=[width * mm for width in widths], repeatRows=int(header))
         padding = 2.5 if mathematics else (3 if compact else 4)
-        result.setStyle(pdf_box_style(padding))
+        commands = pdf_box_style(padding)
+        commands.append(("BACKGROUND", (0, 0), (0, -1), fill))
+        if header:
+            commands.append(("BACKGROUND", (1, 0), (-1, 0), fill))
+        result.setStyle(commands)
         return result
 
     def footer(canvas, document):
@@ -415,6 +435,7 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
     if not mathematics:
         opening.extend([paragraph(heading[1], subtitle), paragraph(heading[2], table_heading)])
     title_panel = Table([[opening]], colWidths=[182 * mm], style=[
+        ("BACKGROUND", (0, 0), (-1, -1), fill),
         ("BOX", (0, 0), (-1, -1), 0.75, colors.black),
         ("TOPPADDING", (0, 0), (-1, -1), 4),
         ("BOTTOMPADDING", (0, 0), (-1, -1), 4),

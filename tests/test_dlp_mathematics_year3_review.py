@@ -14,14 +14,14 @@ class MathematicsYear3DlpReviewTests(unittest.TestCase):
         drafts = verify_drafts()
         self.assertEqual(len(drafts), 82)
         for draft in drafts:
-            identifier, title, _, label, dates, _, _, _ = draft
+            identifier, title, _, label, _, _, _, _ = draft
             with self.subTest(lesson=identifier):
                 word = BytesIO()
                 render_plan(word, draft, _word)
                 document = Document(word)
                 details = {row.cells[0].text: row.cells[1].text for row in document.tables[0].rows}
                 self.assertEqual(details["Topic"], title)
-                self.assertEqual(details["RPT 2027 dates"], dates)
+                self.assertNotIn("RPT 2027 dates", details)
                 self.assertEqual(details["Lesson / PdP"], label)
                 self.assertAlmostEqual(document.sections[0].page_width.mm, 210, places=1)
                 self.assertAlmostEqual(document.sections[0].page_height.mm, 297, places=1)
@@ -33,3 +33,4 @@ class MathematicsYear3DlpReviewTests(unittest.TestCase):
                 self.assertAlmostEqual(float(pages[0].mediabox.height), 841.89, places=1)
                 self.assertIn("Year 3 SK", pages[0].extract_text())
                 self.assertIn("Reflection", pages[0].extract_text())
+                self.assertNotIn("RPT 2027 dates", pages[0].extract_text())

@@ -59,8 +59,8 @@ class MathematicsDLPYear6ReviewTests(unittest.TestCase):
                 details = {row.cells[0].text: row.cells[1].text for row in word.tables[0].rows}
                 self.assertEqual(details["Topic"], plan["title"])
                 self.assertEqual(details["Lesson / PdP"], plan["label"].rsplit(" · ", 1)[0])
-                for label, key in (("RPT date ranges", "dates"),
-                                   ("Standards", "standards"), ("Book reference", "reference"),
+                self.assertNotIn("RPT date ranges", details)
+                for label, key in (("Standards", "standards"), ("Book reference", "reference"),
                                    ("Learning objective", "objective")):
                     self.assertEqual(details[label], plan[key])
                 self.assertEqual(word.tables[2].rows[0].cells[1].text, plan["evidence"])
@@ -79,7 +79,8 @@ class MathematicsDLPYear6ReviewTests(unittest.TestCase):
                 self.assertAlmostEqual(float(page.mediabox.height), 841.89, places=1)
                 page_text = " ".join(page.extract_text().split())
                 self.assertIn(plan["label"].rsplit(" · ", 1)[0], page_text)
-                for field in ("title", "dates", "standards", "reference", "objective", "evidence"):
+                self.assertNotIn("RPT date ranges", page_text)
+                for field in ("title", "standards", "reference", "objective", "evidence"):
                     self.assertIn(" ".join(plan[field].split()), page_text)
 
 
