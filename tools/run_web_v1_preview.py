@@ -279,9 +279,9 @@ def options():
                                 try:
                                     units = list_draft_units(year,draft_code)
                                     if units:
-                                        has_ready_arabic = (year == 2 and draft_code == "ARAB"
-                                            and any(unit["value"] == "u01" and unit.get("has_ready_lessons") is True
-                                                    for unit in units))
+                                        has_ready_arabic = draft_code == "ARAB" and any(
+                                            unit.get("has_ready_lessons") is True for unit in units
+                                        )
                                         items.append({"value":draft_code,
                                                       "label":"Bahasa Arab" if has_ready_arabic else draft_label})
                                 except (NativeRPHUnavailable,ValueError):

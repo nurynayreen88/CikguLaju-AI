@@ -24,15 +24,16 @@ SUBJECTS = ("ARAB", "MUZIK")
 UNIT = re.compile(r"u(?:0[1-9]|[1-9][0-9])|x[a-f0-9]{12}")
 PDP = re.compile(r"0[0-9][0-9]")
 REVIEWED_ARABIC = {
-    "u01": {f"{lesson:03d}" for lesson in range(1, 13)},
-    "u02": {f"{lesson:03d}" for lesson in range(13, 29)},
-    "u03": {f"{lesson:03d}" for lesson in range(29, 45)},
-    "u04": {f"{lesson:03d}" for lesson in range(45, 61)},
+    (2, "u01"): {f"{lesson:03d}" for lesson in range(1, 13)},
+    (2, "u02"): {f"{lesson:03d}" for lesson in range(13, 29)},
+    (2, "u03"): {f"{lesson:03d}" for lesson in range(29, 45)},
+    (2, "u04"): {f"{lesson:03d}" for lesson in range(45, 61)},
+    (3, "u01"): {f"{lesson:03d}" for lesson in range(1, 8)},
 }
 
 
 def _reviewed_arabic_selection(year, subject, unit, lesson):
-    return (year, subject) == (2, "ARAB") and lesson in REVIEWED_ARABIC.get(unit, ())
+    return subject == "ARAB" and isinstance(lesson, str) and lesson in REVIEWED_ARABIC.get((year, unit), ())
 
 
 def _check(year, subject, unit=None, lesson=None):

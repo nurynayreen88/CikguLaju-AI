@@ -64,15 +64,17 @@ class DraftMenuTests(unittest.TestCase):
         self.assertNotIn("ARAB",codes)
         self.assertNotIn("MUZIK",codes)
 
-    def test_arabic_y2_without_subject_draft_label_when_unit_has_ready_pdp(self):
+    def test_arabic_without_subject_draft_label_when_unit_has_ready_pdp(self):
         self.units.side_effect = lambda year, subject: [
             {"value":"u01", "label":"Unit 1", "status":"DRAF",
-             "has_ready_lessons":(year, subject) == (2, "ARAB")}
+             "has_ready_lessons":year in (2, 3) and subject == "ARAB"}
         ]
-        res = self.client.get("/api/options?kind=subjects&year=2")
-        labels = {item["value"]:item["label"] for item in res.get_json()}
-        self.assertEqual(labels["ARAB"], "Bahasa Arab")
-        self.assertEqual(labels["MUZIK"], "Pendidikan Muzik (DRAF)")
+        for year in (2, 3, 4):
+            with self.subTest(year=year):
+                res = self.client.get(f"/api/options?kind=subjects&year={year}")
+                labels = {item["value"]:item["label"] for item in res.get_json()}
+                self.assertEqual(labels["ARAB"], "Bahasa Arab" if year in (2, 3) else "Bahasa Arab (DRAF)")
+                self.assertEqual(labels["MUZIK"], "Pendidikan Muzik (DRAF)")
 
     def test_native_units_and_pdp_do_not_fallback_to_rpt(self):
         unit=self.client.get("/api/options?kind=units&year=2&subject=ARAB")
