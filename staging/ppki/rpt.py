@@ -17,7 +17,7 @@ def render_rpt(*, combined=False, manipulative=False, year=YEAR):
     from web.rph_document_style import pdf_fonts
 
     regular, bold, _ = pdf_fonts()
-    font_size, leading, cell_padding = (8.5, 10, 3) if manipulative else (9, 11, 4)
+    font_size, leading, cell_padding = (8.5, 10, 3) if manipulative or year == 3 else (9, 11, 4)
     normal = ParagraphStyle("RPT cell", fontName=regular, fontSize=font_size, leading=leading)
     header = ParagraphStyle("RPT heading", parent=normal, fontName=bold)
     title = ParagraphStyle("RPT title", parent=header, fontSize=16, leading=19)

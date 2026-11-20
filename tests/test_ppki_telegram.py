@@ -146,7 +146,9 @@ class PpkiApiTest(unittest.TestCase):
                                          json={"selection": bad, "teacher": teacher, "format": "pdf"}).status_code, 404)
             rpt = client.get(prefix + "/rpt.pdf?year=3", headers=headers)
             self.assertEqual(rpt.status_code, 200)
-            text = "\n".join(page.extract_text() for page in PdfReader(BytesIO(rpt.data)).pages)
+            pages = PdfReader(BytesIO(rpt.data)).pages
+            self.assertEqual(len(pages), 1)
+            text = pages[0].extract_text()
             self.assertIn("Tahun 3", text)
             self.assertIn("017", text)
             self.assertEqual(client.get(prefix + "/rpt-manipulatif.pdf?year=3", headers=headers).status_code, 404)

@@ -26,7 +26,9 @@ def _available(year):
 def install(runtime):
     if getattr(runtime, "TELEGRAM_MUSIC_SOURCE_AUDIO_ACTIVE", False):
         return True
-    previous = runtime.callback
+    previous = getattr(runtime, "callback", None)
+    if not callable(previous):
+        return False
 
     def menu(chat_id, year, page):
         rows = _available(year)
