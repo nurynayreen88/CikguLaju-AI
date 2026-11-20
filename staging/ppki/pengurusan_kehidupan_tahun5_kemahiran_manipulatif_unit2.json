@@ -1,0 +1,390 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 5,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Kemahiran Manipulatif",
+  "unit": "Unit 2 · Kemahiran Bilateral",
+  "content_standards": {
+    "2.1": "Kemahiran bilateral",
+    "2.2": "Manipulasi alatan dan bahan",
+    "2.3": "Kemahiran visual-motor"
+  },
+  "learning_standards": {
+    "2.1.1": "Mengenal pasti penggunaan kedua-dua tangan semasa mengupas, meracik, menyagat, memberus, memerah, mengibas dan menyidai",
+    "2.1.2": "Melakukan simulasi pergerakan bilateral",
+    "2.1.3": "Melakukan pergerakan bilateral dalam aktiviti memasak dan mengurus pakaian",
+    "2.2.1": "Mengenal pasti cara mencucuk dan menarik benang, mengikat, menyapu, mengelap, menepuk, memukul dan menggoncang",
+    "2.2.2": "Melakukan simulasi manipulasi alatan dan bahan",
+    "2.2.3": "Memanipulasi alatan dan bahan dalam aktiviti menjahit, mengemas dan muzikal",
+    "2.3.1": "Mengenal pasti gerakan menggunting, menjentik, melambung, menyambut, menyusun dan mengasingkan",
+    "2.3.2": "Melakukan simulasi visual-motor dalam kraf dan permainan dalaman",
+    "2.3.3": "Melakukan pergerakan visual-motor dalam aktiviti kraf dan permainan dalaman"
+  },
+  "lessons": [
+    {
+      "pdp": "062",
+      "title": "Kenal fungsi dua tangan dalam kerja harian",
+      "sp": "2.1.1",
+      "focus": "Kenal fungsi dua tangan dalam kerja harian.",
+      "book": "Buku Teks hlm. 78–81",
+      "objective": "Murid dapat mengenal pasti peranan kedua-dua tangan dalam empat gerakan bilateral.",
+      "materials": "Kad aksi dapur dan pakaian, pemegang dan kain",
+      "induction": [
+        "Menunjukkan cara satu tangan memegang kain semasa tangan lain memberus.",
+        "Menyebut peranan setiap tangan."
+      ],
+      "guided": [
+        "Memadankan gerakan mengupas, meracik dan menyagat dengan gambar dapur.",
+        "Menunjuk tangan yang memegang dan tangan yang menggerakkan alatan."
+      ],
+      "practice": [
+        "Memberikan kad memberus, memerah, mengibas dan menyidai untuk dikenal pasti.",
+        "Memadankan kad dengan peranan tangan dan meniru gerakan secara olok-olok."
+      ],
+      "closure": [
+        "Memilih satu gerakan untuk semakan ringkas.",
+        "Menerangkan cara kedua-dua tangan bekerjasama."
+      ],
+      "support": "Gunakan gambar langkah dan satu gerakan pada satu masa.",
+      "assessment": "Guru merekod sama ada murid dapat mengenal pasti peranan kedua-dua tangan dalam empat gerakan bilateral.",
+      "follow_up": "Asingkan kad gerakan dapur daripada kad pengurusan pakaian."
+    },
+    {
+      "pdp": "063",
+      "title": "Simulasi gerakan bilateral di dua stesen",
+      "sp": "2.1.2",
+      "focus": "Simulasi gerakan bilateral di dua stesen.",
+      "book": "Buku Teks hlm. 78–81",
+      "objective": "Murid dapat melakukan dua gerakan bilateral dalam simulasi dapur dan pakaian.",
+      "materials": "Alatan tiruan tumpul, model makanan, kain dan bakul",
+      "induction": [
+        "Mempamerkan dua stesen dan memperkenalkan isyarat mula serta berhenti.",
+        "Memilih stesen pertama dan mengenal alatan."
+      ],
+      "guided": [
+        "Menunjukkan peranan tangan menggunakan penyagat tiruan dan kain latihan.",
+        "Meniru cara menstabilkan bahan sambil tangan lain bergerak."
+      ],
+      "practice": [
+        "Membimbing giliran mengupas, menyagat, memerah dan mengibas secara simulasi.",
+        "Mencuba gerakan dapur dan gerakan mengurus pakaian tanpa alat tajam."
+      ],
+      "closure": [
+        "Meminta murid menunjukkan kedudukan tangan sebelum bermula.",
+        "Memilih pegangan yang stabil dan menerangkan kegunaannya."
+      ],
+      "support": "Gunakan alas antiegelincir dan bahan yang mudah digenggam.",
+      "assessment": "Guru merekod sama ada murid dapat melakukan dua gerakan bilateral dalam simulasi dapur dan pakaian.",
+      "follow_up": "Gabungkan dua gerakan dalam satu urutan berdasarkan kad."
+    },
+    {
+      "pdp": "064",
+      "title": "Berus, perah dan sidai kain",
+      "sp": "2.1.3",
+      "focus": "Berus, perah dan sidai kain.",
+      "book": "Buku Teks hlm. 80–81, 83",
+      "objective": "Murid dapat menggunakan dua tangan pada sekurang-kurangnya tiga langkah mengurus kain.",
+      "materials": "Kain kecil, berus lembut, besen cetek dan rak rendah",
+      "induction": [
+        "Menunjukkan kain yang perlu dibasuh dan dikeringkan.",
+        "Memilih alatan yang diperlukan."
+      ],
+      "guided": [
+        "Memegang kain pada alas dan menunjukkan cara memberus, memerah dan mengibas.",
+        "Mencuba setiap gerakan dengan dua tangan mengikut contoh."
+      ],
+      "practice": [
+        "Menetapkan giliran di rak dan menunjukkan cara mengepit kain.",
+        "Memberus, memerah, mengibas dan menyidai kain sendiri."
+      ],
+      "closure": [
+        "Menyemak kawasan kerja selepas aktiviti.",
+        "Memilih langkah yang mengurangkan air menitis dan menyimpan alatan."
+      ],
+      "support": "Gunakan rak paras selesa dan penyepit besar.",
+      "assessment": "Guru merekod sama ada murid dapat menggunakan dua tangan pada sekurang-kurangnya tiga langkah mengurus kain.",
+      "follow_up": "Bandingkan cara menyidai dua kain yang berlainan saiz."
+    },
+    {
+      "pdp": "065",
+      "title": "Sediakan bebola roti dengan dua tangan",
+      "sp": "2.1.3",
+      "focus": "Sediakan bebola roti dengan dua tangan.",
+      "book": "Buku Teks hlm. 78–79, 82–83",
+      "objective": "Murid dapat melaksanakan dua gerakan bilateral ketika menyediakan bebola roti.",
+      "materials": "Roti, bahan siap yang diluluskan, mangkuk dan alas bersih",
+      "induction": [
+        "Menunjukkan gambar bebola roti dalam buku teks.",
+        "Mengenal pasti langkah yang menggunakan dua tangan."
+      ],
+      "guided": [
+        "Menyemak ramuan dan menunjukkan cara mencarik roti serta memegang mangkuk semasa menggaul.",
+        "Menggunakan dua tangan untuk mencarik roti dan menggaul bahan yang disediakan."
+      ],
+      "practice": [
+        "Menunjukkan cara menguli dan membentuk bebola. Guru mengendalikan langkah yang menggunakan haba.",
+        "Membentuk bebola dan meletakkannya pada dulang secara teratur."
+      ],
+      "closure": [
+        "Meminta murid mengemas alas dan mangkuk.",
+        "Menunjukkan semula satu gerakan bilateral yang digunakan."
+      ],
+      "support": "Gunakan ramuan siap dengan sukatan kecil dan alas antiegelincir.",
+      "assessment": "Guru merekod sama ada murid dapat melaksanakan dua gerakan bilateral ketika menyediakan bebola roti.",
+      "follow_up": "Susun kad langkah penyediaan hidangan dan terangkan urutannya."
+    },
+    {
+      "pdp": "066",
+      "title": "Kenal gerakan bagi alatan dan bahan",
+      "sp": "2.2.1",
+      "focus": "Kenal gerakan bagi alatan dan bahan.",
+      "book": "Buku Teks hlm. 84, 88–89",
+      "objective": "Murid dapat memadankan sekurang-kurangnya empat gerakan dengan alatan yang betul.",
+      "materials": "Kad aksi, tali tebal, papan berlubang dan alat perkusi ringan",
+      "induction": [
+        "Menunjukkan papan berlubang, benang dan alat perkusi.",
+        "Memberi satu contoh gerakan yang sesuai dengan setiap bahan."
+      ],
+      "guided": [
+        "Memadankan gambar mencucuk, menarik benang dan mengikat dengan bahan.",
+        "Meniru arah gerakan menggunakan tali tumpul dan papan latihan."
+      ],
+      "practice": [
+        "Mendemonstrasi tindakan menepuk, memukul dan menggoncang bergilir.",
+        "Memilih kad dan menamakan gerakan yang bersesuaian dengan alatan."
+      ],
+      "closure": [
+        "Mengangkat alatan daripada contoh baharu.",
+        "Mengenal satu gerakan dan menunjukkan arah yang sesuai."
+      ],
+      "support": "Gunakan kad gambar sahaja dahulu dan pendekkan demonstrasi.",
+      "assessment": "Guru merekod sama ada murid dapat memadankan sekurang-kurangnya empat gerakan dengan alatan yang betul.",
+      "follow_up": "Minta murid menerangkan perbezaan menepuk dengan menggoncang."
+    },
+    {
+      "pdp": "067",
+      "title": "Simulasi menyapu, mengelap dan mengikat",
+      "sp": "2.2.2",
+      "focus": "Simulasi menyapu, mengelap dan mengikat.",
+      "book": "Buku Teks hlm. 84, 86",
+      "objective": "Murid dapat melakukan simulasi tiga gerakan manipulasi mengikut contoh.",
+      "materials": "Penyapu ringan, kain lap, tali tebal dan serpihan kertas",
+      "induction": [
+        "Meletakkan kad gerakan pada tiga kawasan latihan.",
+        "Memilih kawasan dan menerangkan fungsi alatan."
+      ],
+      "guided": [
+        "Menunjukkan cara memegang penyapu, melipat kain lap dan menarik dua hujung tali.",
+        "Meniru setiap gerakan secara perlahan menggunakan bahan latihan."
+      ],
+      "practice": [
+        "Meminta murid berpindah stesen selepas isyarat.",
+        "Mengulangi gerakan dengan alatan dan meletakkannya semula pada tempat ditanda."
+      ],
+      "closure": [
+        "Menyoal cara memastikan ruang kekal kemas.",
+        "Menunjukkan pegangan yang stabil sebelum menyimpan alatan."
+      ],
+      "support": "Gunakan alat pemegang besar dan kurangkan jarak sapuan.",
+      "assessment": "Guru merekod sama ada murid dapat melakukan simulasi tiga gerakan manipulasi mengikut contoh.",
+      "follow_up": "Sambungkan menyapu dan mengelap mengikut urutan kad."
+    },
+    {
+      "pdp": "068",
+      "title": "Jahit jelujur kasar pada kad",
+      "sp": "2.2.3",
+      "focus": "Jahit jelujur kasar pada kad.",
+      "book": "Buku Teks hlm. 85",
+      "objective": "Murid dapat menghasilkan sekurang-kurangnya tiga jahitan jelujur pada kad.",
+      "materials": "Kad tebuk siap, jarum plastik tumpul dan benang tebal",
+      "induction": [
+        "Mempamerkan sampel garisan jahitan jelujur.",
+        "Menunjuk bahagian benang yang timbul dan tenggelam."
+      ],
+      "guided": [
+        "Menunjukkan cara memasukkan jarum tumpul dari hadapan dan menarik benang.",
+        "Mencuba satu jahitan pada kad berlubang yang dipegang stabil."
+      ],
+      "practice": [
+        "Memeriksa pegangan dan menunjukkan lubang seterusnya.",
+        "Menghasilkan jelujur kasar mengikut tanda pada kad."
+      ],
+      "closure": [
+        "Meminta murid membandingkan hasil dengan contoh.",
+        "Menunjuk urutan lubang dan menyimpan jarum di bekas yang disediakan."
+      ],
+      "support": "Mula dengan lubang besar dan tali yang hujungnya keras.",
+      "assessment": "Guru merekod sama ada murid dapat menghasilkan sekurang-kurangnya tiga jahitan jelujur pada kad.",
+      "follow_up": "Jahit mengikut dua garisan bertemu pada kad berbeza."
+    },
+    {
+      "pdp": "069",
+      "title": "Kemas kelas dengan tugasan bergilir",
+      "sp": "2.2.3",
+      "focus": "Kemas kelas dengan tugasan bergilir.",
+      "book": "Buku Teks hlm. 86–87",
+      "objective": "Murid dapat melakukan dua gerakan mengemas dengan alatan yang sesuai.",
+      "materials": "Penyapu kecil, penyodok, kain lap dan penanda kawasan",
+      "induction": [
+        "Menunjukkan dua kawasan kerja yang memerlukan sapuan atau lap.",
+        "Memilih alat berdasarkan keadaan kawasan."
+      ],
+      "guided": [
+        "Menunjukkan cara menyapu serpihan ke dalam penyodok dan mengelap satu arah.",
+        "Mencuba peranan pertama pada ruang yang ditetapkan."
+      ],
+      "practice": [
+        "Membimbing pertukaran peranan dan menunjukkan tempat menyimpan alatan.",
+        "Menyapu atau mengelap kawasan kedua lalu mengikat penanda bekas jika perlu."
+      ],
+      "closure": [
+        "Menyemak kawasan bersama kumpulan.",
+        "Menerangkan cara alatan digunakan dan memulangkannya."
+      ],
+      "support": "Tetapkan kawasan kecil dan tunjuk arah dengan anak panah.",
+      "assessment": "Guru merekod sama ada murid dapat melakukan dua gerakan mengemas dengan alatan yang sesuai.",
+      "follow_up": "Rancang pembahagian kerja bagi dua kawasan kelas yang lain."
+    },
+    {
+      "pdp": "070",
+      "title": "Main perkusi mengikut Dayung Sampan",
+      "sp": "2.2.3",
+      "focus": "Main perkusi mengikut Dayung Sampan.",
+      "book": "Buku Teks hlm. 88–89",
+      "objective": "Murid dapat memainkan dua corak empat detik menggunakan gerakan perkusi yang betul.",
+      "materials": "MP3 Dayung Sampan, alat perkusi ringan dan kad detik",
+      "induction": [
+        "Memainkan versi vokal dan menunjukkan detik lagu dengan tepukan.",
+        "Menepuk perlahan mengikut isyarat mula."
+      ],
+      "guided": [
+        "Menunjukkan cara bermain secara menepuk, memukul dan menggoncang.",
+        "Memilih alat dan mencuba corak empat detik dengan bimbingan."
+      ],
+      "practice": [
+        "Memainkan versi instrumental bermetronom dan memberi isyarat pertukaran alat.",
+        "Memainkan dua corak mengikut detik serta berhenti serentak."
+      ],
+      "closure": [
+        "Mengulang satu frasa lagu pada kelantangan selesa.",
+        "Menyebut cara alat dimainkan dan mengulangi corak pendek."
+      ],
+      "support": "Guna satu alat ringan dan detik yang ditunjukkan dengan kad.",
+      "assessment": "Guru merekod sama ada murid dapat memainkan dua corak empat detik menggunakan gerakan perkusi yang betul.",
+      "follow_up": "Bergilir antara pemain dan pemberi isyarat detik."
+    },
+    {
+      "pdp": "071",
+      "title": "Kenal gerakan mata dan tangan",
+      "sp": "2.3.1",
+      "focus": "Kenal gerakan mata dan tangan.",
+      "book": "Buku Teks hlm. 90–91",
+      "objective": "Murid dapat mengenal pasti sekurang-kurangnya empat daripada enam gerakan visual-motor.",
+      "materials": "Kad kata kerja, bola kain, bentuk besar dan gunting tumpul",
+      "induction": [
+        "Menunjukkan gambar murid melambung dan menyambut bola.",
+        "Menamakan gerakan daripada satu gambar."
+      ],
+      "guided": [
+        "Memadankan gambar menggunting, menjentik, melambung, menyambut, menyusun dan mengasingkan.",
+        "Meniru satu gerakan dan menunjuk gambar sepadan."
+      ],
+      "practice": [
+        "Menunjukkan dua demonstrasi secara rawak.",
+        "Mengenal gerakan, memilih kad dan menyatakan arah pandangan."
+      ],
+      "closure": [
+        "Menunjukkan gambar corak yang belum siap.",
+        "Memilih gerakan tangan yang diperlukan untuk melengkapkannya."
+      ],
+      "support": "Mulakan dengan dua gerakan berbeza jelas dan kad besar.",
+      "assessment": "Guru merekod sama ada murid dapat mengenal pasti sekurang-kurangnya empat daripada enam gerakan visual-motor.",
+      "follow_up": "Pilih gerakan yang sesuai bagi kraf atau permainan yang ditunjukkan."
+    },
+    {
+      "pdp": "072",
+      "title": "Simulasi kraf dan permainan dalaman",
+      "sp": "2.3.2",
+      "focus": "Simulasi kraf dan permainan dalaman.",
+      "book": "Buku Teks hlm. 90–93",
+      "objective": "Murid dapat melakukan sekurang-kurangnya dua gerakan visual-motor dalam simulasi.",
+      "materials": "Kertas bergaris, gunting tumpul, cakera besar dan sasaran",
+      "induction": [
+        "Menyediakan satu contoh kraf dan satu permainan sasaran.",
+        "Menunjuk alat yang digunakan di setiap stesen."
+      ],
+      "guided": [
+        "Menunjukkan cara mengikuti garisan dan menjentik cakera ke arah tanda.",
+        "Meniru gerakan secara perlahan sambil melihat sasaran."
+      ],
+      "practice": [
+        "Menyediakan latihan pendek di kedua-dua stesen.",
+        "Menggunting garisan mudah, menyusun potongan dan menjentik cakera."
+      ],
+      "closure": [
+        "Meminta murid menerangkan penyesuaian yang membantu.",
+        "Menunjukkan cara melihat sasaran sebelum menggerakkan tangan."
+      ],
+      "support": "Pilih garisan tebal dan jarak sasaran dekat.",
+      "assessment": "Guru merekod sama ada murid dapat melakukan sekurang-kurangnya dua gerakan visual-motor dalam simulasi.",
+      "follow_up": "Cuba garisan melengkung atau sasaran yang lebih kecil."
+    },
+    {
+      "pdp": "073",
+      "title": "Hasilkan bingkai gambar",
+      "sp": "2.3.3",
+      "focus": "Hasilkan bingkai gambar.",
+      "book": "Buku Teks hlm. 92, 94",
+      "objective": "Murid dapat menghasilkan satu bingkai menggunakan sekurang-kurangnya tiga gerakan yang sesuai.",
+      "materials": "Kadbod siap potong, foto, jalur kertas, gam dan gunting tumpul",
+      "induction": [
+        "Menunjukkan bingkai dan memperkenalkan bahagian yang dihias.",
+        "Menunjuk tempat meletakkan foto dan jalur."
+      ],
+      "guided": [
+        "Menunjukkan cara menggunting, menggulung dan menyusun jalur.",
+        "Mencuba satu gulungan dan menyemak saiz menggunakan contoh."
+      ],
+      "practice": [
+        "Membimbing susunan dan lekatan di sekeliling foto.",
+        "Menghasilkan bingkai dengan menyusun bahan di dalam sempadan."
+      ],
+      "closure": [
+        "Meminta murid memeriksa bahan yang belum melekat.",
+        "Membetulkan susunan dan menerangkan dua gerakan tangan."
+      ],
+      "support": "Sediakan jalur siap potong dan kadbod bergaris.",
+      "assessment": "Guru merekod sama ada murid dapat menghasilkan satu bingkai menggunakan sekurang-kurangnya tiga gerakan yang sesuai.",
+      "follow_up": "Rancang corak berulang menggunakan dua warna pada bingkai lain."
+    },
+    {
+      "pdp": "074",
+      "title": "Jentik dan susun dalam permainan sasaran",
+      "sp": "2.3.3",
+      "focus": "Jentik dan susun dalam permainan sasaran.",
+      "book": "Buku Teks hlm. 93",
+      "objective": "Murid dapat menggunakan gerakan menyusun dan menjentik dalam dua giliran permainan.",
+      "materials": "Cakera besar setara tudung botol, alas dan bulatan sasaran",
+      "induction": [
+        "Membuat satu jentikan dan menunjukkan garisan giliran.",
+        "Mengamati arah cakera dan mencari tanda sasaran."
+      ],
+      "guided": [
+        "Menunjukkan cara meletakkan cakera, melihat sasaran dan menjentik perlahan.",
+        "Mencuba satu jentikan dan mengubah kedudukan tangan berdasarkan arah cakera."
+      ],
+      "practice": [
+        "Mengendalikan permainan mudah secara bergilir.",
+        "Menyusun cakera di kawasan mula dan menjentik ke arah sasaran."
+      ],
+      "closure": [
+        "Membincangkan cara melaras daya jentikan.",
+        "Mencuba gerakan terakhir dan mengumpulkan cakera secara teratur."
+      ],
+      "support": "Gunakan cakera besar dan sasaran lebar.",
+      "assessment": "Guru merekod sama ada murid dapat menggunakan gerakan menyusun dan menjentik dalam dua giliran permainan.",
+      "follow_up": "Ubah jarak sasaran secara berperingkat selepas dua percubaan."
+    }
+  ]
+}

@@ -92,8 +92,8 @@ def install(ns):
         if is_ppki:
             from staging.ppki.catalog import (
                 MANIPULATIVE_UNIT_LESSONS, RPT_COMBINED_EDITION, RPT_COMBINED_FILENAME,
-                RPT_MANIPULATIVE_FILENAME, RPT_MANIPULATIVE_YEAR3_FILENAME, RPT_MANIPULATIVE_YEAR4_FILENAME, RPT_YEAR3_EDITION, RPT_YEAR3_FILENAME, RPT_YEAR4_EDITION, RPT_YEAR4_FILENAME, RPT_YEAR5_EDITION, RPT_YEAR5_FILENAME,
-                UNIT_LESSONS, YEAR3_LESSONS, YEAR3_MANIPULATIVE_UNIT_LESSONS, YEAR4_LESSONS, YEAR4_MANIPULATIVE_UNIT_LESSONS, YEAR5_LESSONS,
+                RPT_MANIPULATIVE_FILENAME, RPT_MANIPULATIVE_YEAR3_FILENAME, RPT_MANIPULATIVE_YEAR4_FILENAME, RPT_MANIPULATIVE_YEAR5_FILENAME, RPT_YEAR3_EDITION, RPT_YEAR3_FILENAME, RPT_YEAR4_EDITION, RPT_YEAR4_FILENAME, RPT_YEAR5_EDITION, RPT_YEAR5_FILENAME,
+                UNIT_LESSONS, YEAR3_LESSONS, YEAR3_MANIPULATIVE_UNIT_LESSONS, YEAR4_LESSONS, YEAR4_MANIPULATIVE_UNIT_LESSONS, YEAR5_LESSONS, YEAR5_MANIPULATIVE_UNIT_LESSONS,
             )
             from staging.ppki.rpt import render_rpt
             count = sum(len(numbers) for numbers in UNIT_LESSONS.values())
@@ -135,16 +135,18 @@ def install(ns):
                 ])
             if data == "rpt2027_ppki_year5":
                 count_year5 = sum(len(numbers) for numbers in YEAR5_LESSONS.values())
+                manipulative_count = sum(len(numbers) for numbers in YEAR5_MANIPULATIVE_UNIT_LESSONS.values())
                 return send(cid, f"<b>PPKI Tahun 5 · Pengurusan Kehidupan</b>\n\n"
-                            f"Pengurusan Diri {RPT_YEAR5_EDITION} · {count_year5} PdP.", [
+                            f"Pengurusan Diri {RPT_YEAR5_EDITION} · {count_year5} PdP. Kemahiran Manipulatif: {manipulative_count} PdP.", [
                     [{"text": f"Pengurusan Diri {RPT_YEAR5_EDITION} (PDF)", "callback_data": "rpt2027_ppki_pdf5"}],
+                    [{"text": "Kemahiran Manipulatif (PDF)", "callback_data": "rpt2027_ppki_km_pdf5"}],
                     [{"text": "⬅️ Kembali", "callback_data": "rpt2027_ppki_home"}],
                 ])
             downloads = {
                 "rpt2027_ppki_pdf2": (2, False), "rpt2027_ppki_km_pdf2": (2, True),
                 "rpt2027_ppki_pdf3": (3, False), "rpt2027_ppki_km_pdf3": (3, True),
                 "rpt2027_ppki_pdf4": (4, False), "rpt2027_ppki_km_pdf4": (4, True),
-                "rpt2027_ppki_pdf5": (5, False),
+                "rpt2027_ppki_pdf5": (5, False), "rpt2027_ppki_km_pdf5": (5, True),
             }
             if data not in downloads:
                 return send(cid, "Pilihan RPT PPKI tidak sah.")
@@ -155,6 +157,8 @@ def install(ns):
                     filename = RPT_MANIPULATIVE_YEAR3_FILENAME
                 elif year == 4:
                     filename = RPT_MANIPULATIVE_YEAR4_FILENAME
+                elif year == 5:
+                    filename = RPT_MANIPULATIVE_YEAR5_FILENAME
                 edition = "Kemahiran Manipulatif Unit 1–3"
             elif year == 3:
                 filename, edition = RPT_YEAR3_FILENAME, RPT_YEAR3_EDITION

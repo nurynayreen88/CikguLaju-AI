@@ -5,7 +5,8 @@ from xml.sax.saxutils import escape
 from staging.ppki.catalog import (
     MANIPULATIVE_UNIT_LESSONS, RPT_COMBINED_EDITION, RPT_YEAR3_EDITION, UNIT, UNIT_LESSONS,
     YEAR, YEAR3_LESSONS, YEAR3_MANIPULATIVE_UNIT_LESSONS,
-    RPT_YEAR4_EDITION, YEAR4_LESSONS, YEAR4_MANIPULATIVE_UNIT_LESSONS, RPT_YEAR5_EDITION, YEAR5_LESSONS, catalog,
+    RPT_YEAR4_EDITION, YEAR4_LESSONS, YEAR4_MANIPULATIVE_UNIT_LESSONS, RPT_YEAR5_EDITION, YEAR5_LESSONS,
+    YEAR5_MANIPULATIVE_UNIT_LESSONS, catalog,
 )
 from staging.ppki.render_pengurusan_kehidupan import PPKI_LABEL_FILL
 
@@ -24,11 +25,11 @@ def render_rpt(*, combined=False, manipulative=False, year=YEAR):
     header = ParagraphStyle("RPT heading", parent=normal, fontName=bold)
     title = ParagraphStyle("RPT title", parent=header, fontSize=16, leading=19)
 
-    def unit_story(unit, number):
+    def unit_story(unit, number, *, start=0, end=None, part=""):
         source = catalog(unit, year=year)
         padding = 1 if year in (3, 4) and unit == UNIT else cell_padding
         rows = [[Paragraph(label, header) for label in ("PdP", "Fokus", "SK", "SP", "Buku Teks")]]
-        for lesson in source["lessons"]:
+        for lesson in source["lessons"][start:end]:
             sp = lesson["sp"]
             sk = sp.rsplit(".", 1)[0]
             values = (
@@ -45,7 +46,7 @@ def render_rpt(*, combined=False, manipulative=False, year=YEAR):
             ("BOTTOMPADDING", (0, 0), (-1, -1), padding),
         ]))
         return [
-            Paragraph(f"RPT 2027 · Agihan PdP Unit {number}", title),
+            Paragraph(f"RPT 2027 · Agihan PdP Unit {number}{part}", title),
             Paragraph(escape(f"PPKI · Pengurusan Kehidupan Tahun {year} · {source['component']}"), header),
             Paragraph(escape(source["unit"]), header),
             Spacer(1, 3 * mm),
@@ -54,8 +55,12 @@ def render_rpt(*, combined=False, manipulative=False, year=YEAR):
             table,
         ]
 
-    if year in (3, 4) and manipulative:
-        units = YEAR3_MANIPULATIVE_UNIT_LESSONS if year == 3 else YEAR4_MANIPULATIVE_UNIT_LESSONS
+    if year in (3, 4, 5) and manipulative:
+        units = {
+            3: YEAR3_MANIPULATIVE_UNIT_LESSONS,
+            4: YEAR4_MANIPULATIVE_UNIT_LESSONS,
+            5: YEAR5_MANIPULATIVE_UNIT_LESSONS,
+        }[year]
         edition = "Kemahiran Manipulatif Unit 1–3"
     elif year == 3:
         units = YEAR3_LESSONS
@@ -81,6 +86,12 @@ def render_rpt(*, combined=False, manipulative=False, year=YEAR):
     for unit in units:
         if story:
             story.append(PageBreak())
-        story.extend(unit_story(unit, int(unit[1:3])))
+        number = int(unit[1:3])
+        if year == 5 and manipulative and number == 1:
+            story.extend(unit_story(unit, number, end=12, part=" · Bahagian 1"))
+            story.append(PageBreak())
+            story.extend(unit_story(unit, number, start=12, part=" · Bahagian 2"))
+        else:
+            story.extend(unit_story(unit, number))
     doc.build(story)
     return stream.getvalue()
