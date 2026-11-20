@@ -92,7 +92,10 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
 .public-rph-sample summary:focus-visible,.public-rph-sample a:focus-visible{outline:3px solid #087568;outline-offset:2px;border-radius:8px}
 .public-rph-sample-content{padding:0 12px 12px}
 .public-rph-sample-content h2{font-size:.98rem;margin:0 4px 10px;color:#173d37}
-.public-rph-sample-content img{display:block;width:100%;height:auto;background:white;border:1px solid #dce8e3;border-radius:8px}
+.public-rph-sample-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;list-style:none;margin:0;padding:0}
+.public-rph-sample-list a{display:flex;align-items:center;min-height:44px;padding:8px 10px;background:white;border:1px solid #dce8e3;border-radius:8px;color:#05675a;font-size:.9rem;font-weight:650;text-decoration:none}
+.public-rph-sample-list a:hover{text-decoration:underline}
+@media(max-width:390px){.public-rph-sample-list{grid-template-columns:minmax(0,1fr)}}
 .public-rph-sample-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 .public-rph-sample-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 12px;border-radius:9px;color:#05675a;font-weight:750}
 .public-rph-sample-actions a:last-child{background:#087568;color:white;text-decoration:none}
@@ -500,11 +503,21 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <details class="public-rph-sample">
   <summary>Lihat Contoh RPH</summary>
   <div class="public-rph-sample-content">
-    <h2>Sains Tahun 5 SK · Pencaran Biji Benih · PdP 060</h2>
-    <img src="/assets/contoh-rph.webp" width="1061" height="1500" loading="lazy" decoding="async"
-         alt="Rancangan Pengajaran Harian Sains Tahun 5, Komunikasi pemerhatian pencaran">
+    <h2>10 contoh RPH Sekolah Kebangsaan</h2>
+    <ul class="public-rph-sample-list">
+      <li><a href="/contoh-rph.pdf#page=1" target="_blank" rel="noopener">Bahasa Melayu</a></li>
+      <li><a href="/contoh-rph.pdf#page=2" target="_blank" rel="noopener">Bahasa Inggeris</a></li>
+      <li><a href="/contoh-rph.pdf#page=3" target="_blank" rel="noopener">Matematik</a></li>
+      <li><a href="/contoh-rph.pdf#page=4" target="_blank" rel="noopener">Sains</a></li>
+      <li><a href="/contoh-rph.pdf#page=5" target="_blank" rel="noopener">Pendidikan Islam</a></li>
+      <li><a href="/contoh-rph.pdf#page=6" target="_blank" rel="noopener">Bahasa Arab</a></li>
+      <li><a href="/contoh-rph.pdf#page=7" target="_blank" rel="noopener">Sejarah</a></li>
+      <li><a href="/contoh-rph.pdf#page=8" target="_blank" rel="noopener">Pendidikan Muzik</a></li>
+      <li><a href="/contoh-rph.pdf#page=9" target="_blank" rel="noopener">Pendidikan Jasmani</a></li>
+      <li><a href="/contoh-rph.pdf#page=10" target="_blank" rel="noopener">Pendidikan Moral</a></li>
+    </ul>
     <div class="public-rph-sample-actions">
-      <a href="/contoh-rph.pdf" target="_blank" rel="noopener">Buka Contoh PDF</a>
+      <a href="/contoh-rph.pdf" target="_blank" rel="noopener">Buka PDF lengkap</a>
       <a href="#pilihan-log-masuk">Daftar untuk 10 janaan percuma</a>
     </div>
   </div>
