@@ -21,4 +21,4 @@ Empat video rasmi alternatif dihubungkan dengan PdP 001–002 memandangkan pakai
 
 ## Penerbitan
 
-Laluan **PPKI → Tahun 6 → Pengurusan Kehidupan → Pengurusan Diri** menggunakan katalog Word/PDF yang sama dengan penjana Telegram. Agihan RPT 2027 disusun mengikut enam unit. Kemahiran Manipulatif Tahun 6 belum diterbitkan.
+Laluan **PPKI → Tahun 6 → Pengurusan Kehidupan → Pengurusan Diri** menggunakan katalog Word/PDF yang sama dengan penjana Telegram. Agihan RPT 2027 disusun mengikut enam unit. [Kemahiran Manipulatif Tahun 6](ppki_kemahiran_manipulatif_tahun6_20261121.md) diterbitkan sebagai agihan berasingan.
