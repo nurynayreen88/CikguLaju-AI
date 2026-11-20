@@ -152,7 +152,8 @@ def music_source_links(year, unit, lesson, *, opener=None):
     for item in links:
         if (not isinstance(item, dict) or set(item) - {"title","url","track","download_url"}
                 or not {"title","url","track"}.issubset(item)
-                or type(item["track"]) is not int or not 1 <= item["track"] <= 300
+                or not (item["track"] is None or
+                        type(item["track"]) is int and 1 <= item["track"] <= 300)
                 or not isinstance(item["title"], str) or not 1 <= len(item["title"]) <= 255
                 or not isinstance(item["url"], str) or not DRIVE_VIEW.fullmatch(item["url"])
                 or item["url"] in seen):
@@ -161,7 +162,10 @@ def music_source_links(year, unit, lesson, *, opener=None):
         download = item.get("download_url")
         if "download_url" in item and download != MUSIC_DOWNLOAD.format(DRIVE_VIEW.fullmatch(item["url"])[1]):
             raise NativeRPHUnavailable("Music download does not match the original source")
-        out.append({"type":"audio", "title":"Audio "+str(item["track"])+" — "+item["title"],
+        if item["track"] is None and not download:
+            raise NativeRPHUnavailable("Unverified named Music source")
+        label = f"Audio {item['track']} — {item['title']}" if item["track"] is not None else item["title"]
+        out.append({"type":"audio", "title":label,
                     "url":download or item["url"],
                     "action":"Muat Turun Audio" if download else "Buka Audio Sumber",
                     "source_only":True, "content_verified": content_verified})
