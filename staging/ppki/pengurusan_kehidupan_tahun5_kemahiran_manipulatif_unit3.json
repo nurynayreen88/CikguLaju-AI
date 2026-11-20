@@ -1,0 +1,306 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 5,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Kemahiran Manipulatif",
+  "unit": "Unit 3 · Lompat Tinggi-Tinggi",
+  "content_standards": {
+    "3.1": "Postur badan dan pergerakan lokomotor",
+    "3.2": "Imbangan badan",
+    "3.3": "Permainan luar"
+  },
+  "learning_standards": {
+    "3.1.1": "Melompat dengan postur betul pada pelbagai aras, jarak dan halangan",
+    "3.1.2": "Mengenal pasti postur badan yang betul semasa melompat",
+    "3.1.3": "Mengaplikasi teknik lompatan dalam permainan kecil atau pergerakan kreatif",
+    "3.2.1": "Mengimbang badan sambil menjengket",
+    "3.2.2": "Menggabungkan beberapa pergerakan imbangan sambil menjengket",
+    "3.2.3": "Mengaplikasi imbangan sambil menjengket dalam permainan atau pergerakan kreatif",
+    "3.3.1": "Melakukan pergerakan tangan dan kaki iaitu menguak, menolak, mengayuh dan menendang",
+    "3.3.2": "Menggabungkan pergerakan tangan dan kaki menggunakan alatan atau bahan",
+    "3.3.3": "Mengaplikasi pergerakan tangan dan kaki dalam permainan atau pergerakan kreatif"
+  },
+  "lessons": [
+    {
+      "pdp": "075",
+      "title": "Lompat dan mendarat dengan stabil",
+      "sp": "3.1.1",
+      "focus": "Lompat dan mendarat dengan stabil.",
+      "book": "Buku Teks hlm. 96–98",
+      "objective": "Murid dapat melakukan dua lompatan pendek dengan pendaratan lutut dibengkokkan.",
+      "materials": "Penanda lantai, gambar postur dan alas tidak gelincir",
+      "induction": [
+        "Menunjukkan dua gambar kedudukan badan semasa mendarat.",
+        "Menunjuk gambar dengan lutut dibengkokkan."
+      ],
+      "guided": [
+        "Menunjukkan persediaan, lonjakan rendah dan pendaratan pada kedua-dua kaki.",
+        "Meniru lenturan lutut dan pendaratan secara perlahan."
+      ],
+      "practice": [
+        "Meletakkan tanda berjarak dekat yang boleh dilaras.",
+        "Melompat ke dua tanda dan berhenti seimbang selepas mendarat."
+      ],
+      "closure": [
+        "Meminta murid menunjukkan pendaratan sebelum mengemas.",
+        "Menyebut sebab lutut dibengkokkan semasa mendarat."
+      ],
+      "support": "Guna tanda bersebelahan dan latihan pindah berat bagi murid yang memerlukannya.",
+      "assessment": "Guru merekod sama ada murid dapat melakukan dua lompatan pendek dengan pendaratan lutut dibengkokkan.",
+      "follow_up": "Tambah satu jarak yang sesuai selepas pendaratan konsisten."
+    },
+    {
+      "pdp": "076",
+      "title": "Lompat pelbagai aras dan halangan rendah",
+      "sp": "3.1.1",
+      "focus": "Lompat pelbagai aras dan halangan rendah.",
+      "book": "Buku Teks hlm. 96–97",
+      "objective": "Murid dapat menyelesaikan dua bentuk lompatan termasuk melepasi satu halangan rendah dengan postur betul.",
+      "materials": "Penanda rata, jalur busa rendah dan tikar tidak gelincir",
+      "induction": [
+        "Memperkenalkan garis mula dan kawasan menunggu.",
+        "Menunjuk laluan serta mendengar isyarat giliran."
+      ],
+      "guided": [
+        "Menunjukkan lompatan rendah ke hadapan dan melangkaui jalur busa.",
+        "Memerhati kedudukan tangan dan kedua-dua kaki ketika mendarat."
+      ],
+      "practice": [
+        "Melaras jarak dan aras halangan mengikut keupayaan murid.",
+        "Melompat pada dua pilihan aras dan melangkaui satu penanda rendah."
+      ],
+      "closure": [
+        "Menyemak titik pendaratan dan meminta percubaan terakhir yang selesa.",
+        "Memilih aras sesuai dan menunjukkan pendaratan seimbang."
+      ],
+      "support": "Mulakan dengan jalur rata pada lantai dan pastikan laluan lapang.",
+      "assessment": "Guru merekod sama ada murid dapat menyelesaikan dua bentuk lompatan termasuk melepasi satu halangan rendah dengan postur betul.",
+      "follow_up": "Gabungkan jarak pendek dan halangan rendah dalam satu laluan."
+    },
+    {
+      "pdp": "077",
+      "title": "Kenal postur lompatan yang betul",
+      "sp": "3.1.2",
+      "focus": "Kenal postur lompatan yang betul.",
+      "book": "Buku Teks hlm. 98",
+      "objective": "Murid dapat mengenal pasti sekurang-kurangnya tiga daripada empat postur yang betul.",
+      "materials": "Empat kad postur dan alas penanda",
+      "induction": [
+        "Menunjukkan gambar persediaan dan gambar pendaratan.",
+        "Memadankan gambar dengan perkataan mula atau akhir."
+      ],
+      "guided": [
+        "Menerangkan perubahan postur ketika bersedia, melonjak, di udara dan mendarat.",
+        "Menunjuk kedudukan lutut dan tangan pada setiap gambar."
+      ],
+      "practice": [
+        "Memberi empat kad secara rawak termasuk satu contoh postur silap.",
+        "Menyusun kad contoh dan menjelaskan satu pembetulan."
+      ],
+      "closure": [
+        "Meminta murid menunjuk postur paling selamat ketika mendarat.",
+        "Memilih kad yang betul dan menerangkan satu ciri utama."
+      ],
+      "support": "Guna dua kad pada satu masa dan besarkan gambar lutut.",
+      "assessment": "Guru merekod sama ada murid dapat mengenal pasti sekurang-kurangnya tiga daripada empat postur yang betul.",
+      "follow_up": "Nilai satu lompatan demonstrasi menggunakan kad semak."
+    },
+    {
+      "pdp": "078",
+      "title": "Gunakan lompatan dalam permainan jejak katak",
+      "sp": "3.1.3",
+      "focus": "Gunakan lompatan dalam permainan jejak katak.",
+      "book": "Buku Teks hlm. 96–98, 106",
+      "objective": "Murid dapat menggunakan teknik lompatan yang betul sekurang-kurangnya dua kali semasa permainan.",
+      "materials": "Jejak lantai, kad arah dan penanda lembut",
+      "induction": [
+        "Menandakan laluan permainan jejak katak.",
+        "Memilih laluan dan menunjuk tempat berhenti."
+      ],
+      "guided": [
+        "Menunjukkan urutan lompat, mendarat dan berhenti sebelum tanda berikutnya.",
+        "Meniru urutan pada dua tanda berdekatan."
+      ],
+      "practice": [
+        "Memberi kad arah dan mengendalikan giliran seorang demi seorang.",
+        "Menggunakan teknik lompatan pada laluan bertanda dan berhenti dalam kawasan sasaran."
+      ],
+      "closure": [
+        "Meminta murid menerangkan satu tindakan yang menjaga keselamatan.",
+        "Menunjukkan cara menunggu atau mendarat sebelum mengulang."
+      ],
+      "support": "Ganti lompatan dengan langkah berpandu untuk murid yang memerlukan penyesuaian.",
+      "assessment": "Guru merekod sama ada murid dapat menggunakan teknik lompatan yang betul sekurang-kurangnya dua kali semasa permainan.",
+      "follow_up": "Rancang dua laluan pendek dengan jarak penanda berbeza."
+    },
+    {
+      "pdp": "079",
+      "title": "Kekalkan imbangan sambil menjengket",
+      "sp": "3.2.1",
+      "focus": "Kekalkan imbangan sambil menjengket.",
+      "book": "Buku Teks hlm. 99",
+      "objective": "Murid dapat mengekalkan imbangan sambil menjengket selama tiga kiraan dalam dua percubaan.",
+      "materials": "Garis lantai, penanda kaki dan sokongan kukuh",
+      "induction": [
+        "Membezakan kedudukan tapak kaki rata dan tumit terangkat.",
+        "Menunjuk kedudukan menjengket pada gambar."
+      ],
+      "guided": [
+        "Menunjukkan cara mengangkat tumit sedikit sambil memandang hadapan.",
+        "Mencuba menjengket dengan sokongan yang sesuai."
+      ],
+      "practice": [
+        "Memberi kiraan perlahan dan memeriksa ruang di sekeliling.",
+        "Mengimbang badan sambil mengangkat tumit dan menurunkannya semula secara terkawal."
+      ],
+      "closure": [
+        "Meminta murid memilih satu kedudukan tangan yang membantu.",
+        "Mengulangi gerakan dan menyatakan sebab pilihan itu."
+      ],
+      "support": "Gunakan penyokong kukuh dan kurangkan tempoh setiap percubaan.",
+      "assessment": "Guru merekod sama ada murid dapat mengekalkan imbangan sambil menjengket selama tiga kiraan dalam dua percubaan.",
+      "follow_up": "Tambah tempoh apabila murid stabil dan selesa."
+    },
+    {
+      "pdp": "080",
+      "title": "Gabungkan langkah dan jengket",
+      "sp": "3.2.2",
+      "focus": "Gabungkan langkah dan jengket.",
+      "book": "Buku Teks hlm. 100",
+      "objective": "Murid dapat menggabungkan gerakan langkah, jengket dan henti dalam satu urutan.",
+      "materials": "Jejak kaki, kad urutan dan sokongan kukuh",
+      "induction": [
+        "Menunjukkan kad langkah, jengket dan berhenti.",
+        "Menyusun tiga kad mengikut contoh."
+      ],
+      "guided": [
+        "Menunjukkan cara melangkah sebelum menjengket pada penanda.",
+        "Meniru gerakan satu demi satu dengan pilihan sokongan."
+      ],
+      "practice": [
+        "Memberi isyarat peralihan mengikut urutan kad.",
+        "Menggabungkan dua langkah, satu jengket dan satu henti secara terkawal."
+      ],
+      "closure": [
+        "Mengubah arah jejak kepada urutan pendek yang lain.",
+        "Mengikuti urutan baharu sambil mengekalkan imbangan."
+      ],
+      "support": "Gunakan jejak berdekatan dan kiraan lisan yang tetap.",
+      "assessment": "Guru merekod sama ada murid dapat menggabungkan gerakan langkah, jengket dan henti dalam satu urutan.",
+      "follow_up": "Lakukan urutan ke arah sisi dengan ruang yang sesuai."
+    },
+    {
+      "pdp": "081",
+      "title": "Gunakan jengket dalam pergerakan kreatif",
+      "sp": "3.2.3",
+      "focus": "Gunakan jengket dalam pergerakan kreatif.",
+      "book": "Buku Teks hlm. 101",
+      "objective": "Murid dapat menggunakan imbangan sambil menjengket pada dua bahagian persembahan pendek.",
+      "materials": "Kad gerakan, jejak lantai dan kiraan atau tepukan",
+      "induction": [
+        "Memperkenalkan urutan langkah, jengket dan tangan terbuka.",
+        "Memilih satu gerakan yang boleh dilakukan dengan selesa."
+      ],
+      "guided": [
+        "Menunjukkan cara mengimbangi badan semasa pertukaran gerakan.",
+        "Mencuba gerakan pada kiraan perlahan bersama pasangan."
+      ],
+      "practice": [
+        "Memberi giliran kepada kumpulan kecil untuk membina dan mempersembahkan urutan.",
+        "Mempersembahkan urutan dengan dua bahagian menjengket dan berhenti pada isyarat."
+      ],
+      "closure": [
+        "Meminta kumpulan menunjukkan peralihan yang dipilih.",
+        "Menerangkan cara menjaga imbangan dan jarak."
+      ],
+      "support": "Gunakan sokongan yang sesuai atau lakukan urutan dengan gerakan kecil.",
+      "assessment": "Guru merekod sama ada murid dapat menggunakan imbangan sambil menjengket pada dua bahagian persembahan pendek.",
+      "follow_up": "Cipta urutan baharu dengan satu perubahan arah selepas jengket."
+    },
+    {
+      "pdp": "082",
+      "title": "Asas menguak, menolak, mengayuh dan menendang",
+      "sp": "3.3.1",
+      "focus": "Asas menguak, menolak, mengayuh dan menendang.",
+      "book": "Buku Teks hlm. 102–104",
+      "objective": "Murid dapat melakukan sekurang-kurangnya tiga daripada empat gerakan dengan kawalan.",
+      "materials": "Kad aksi, bola busa, dinding kukuh dan kerusi stabil",
+      "induction": [
+        "Menunjukkan empat kad aksi dan ruang untuk setiap latihan.",
+        "Menamakan satu gerakan yang pernah dilihat."
+      ],
+      "guided": [
+        "Menunjukkan kuakan tangan di udara, tolakan terkawal, kayuhan kaki duduk dan sepakan bola lembut.",
+        "Meniru satu gerakan pada satu masa mengikut isyarat."
+      ],
+      "practice": [
+        "Membimbing pertukaran stesen dengan ruang dan sokongan sesuai.",
+        "Melaksanakan setiap gerakan dalam julat yang selesa."
+      ],
+      "closure": [
+        "Menunjukkan dua kad secara rawak.",
+        "Memilih satu kad dan menunjukkan teknik asasnya."
+      ],
+      "support": "Gunakan latihan duduk dan pilihan bola yang lebih ringan.",
+      "assessment": "Guru merekod sama ada murid dapat melakukan sekurang-kurangnya tiga daripada empat gerakan dengan kawalan.",
+      "follow_up": "Terangkan anggota badan yang memulakan setiap gerakan."
+    },
+    {
+      "pdp": "083",
+      "title": "Gabung gerakan tangan dan kaki dengan alatan",
+      "sp": "3.3.2",
+      "focus": "Gabung gerakan tangan dan kaki dengan alatan.",
+      "book": "Buku Teks hlm. 103–105",
+      "objective": "Murid dapat menggabungkan sekurang-kurangnya satu gerakan tangan dan satu gerakan kaki dengan alatan.",
+      "materials": "Bola busa, sasaran lebar, kon dan kerusi stabil",
+      "induction": [
+        "Menunjukkan laluan dengan satu stesen tangan dan satu stesen kaki.",
+        "Melihat susunan stesen dan mengenal alatan."
+      ],
+      "guided": [
+        "Menunjukkan cara menolak bola dengan tangan dan menendang bola lain ke sasaran.",
+        "Mencuba setiap gerakan secara berasingan."
+      ],
+      "practice": [
+        "Menetapkan urutan dan memberi isyarat mengikut giliran.",
+        "Menggabungkan tolakan, langkah terkawal dan sepakan dengan bola busa."
+      ],
+      "closure": [
+        "Menanyakan alatan yang digunakan pada gerakan kedua.",
+        "Menunjukkan cara memulakan urutan tanpa mengganggu laluan rakan."
+      ],
+      "support": "Gunakan sasaran dekat dan beri masa beralih antara gerakan.",
+      "assessment": "Guru merekod sama ada murid dapat menggabungkan sekurang-kurangnya satu gerakan tangan dan satu gerakan kaki dengan alatan.",
+      "follow_up": "Tambah gerakan ketiga selepas dua gerakan stabil."
+    },
+    {
+      "pdp": "084",
+      "title": "Aplikasi gerakan dalam Sukaneka",
+      "sp": "3.3.3",
+      "focus": "Aplikasi gerakan dalam Sukaneka.",
+      "book": "Buku Teks hlm. 104–105",
+      "objective": "Murid dapat menggunakan sekurang-kurangnya dua gerakan tangan atau kaki dengan selamat dalam permainan.",
+      "materials": "Kad stesen, bola busa, sasaran dan kerusi stabil",
+      "induction": [
+        "Menunjukkan pelan sukaneka dengan ruang menunggu.",
+        "Memilih stesen permulaan dan menyebut satu peraturan."
+      ],
+      "guided": [
+        "Menunjukkan isyarat pertukaran dan contoh gerakan di stesen.",
+        "Mencuba gerakan dan memastikan ruang di hadapan kosong."
+      ],
+      "practice": [
+        "Menjalankan permainan kumpulan kecil secara bergilir.",
+        "Menggunakan kuakan, tolakan, kayuhan atau sepakan mengikut kad stesen."
+      ],
+      "closure": [
+        "Meminta murid menerangkan satu pilihan gerakan yang selamat.",
+        "Menunjukkan cara menyelesaikan satu stesen dan mengemas alatan."
+      ],
+      "support": "Beri pilihan stesen dan sesuaikan ulangan serta jarak.",
+      "assessment": "Guru merekod sama ada murid dapat menggunakan sekurang-kurangnya dua gerakan tangan atau kaki dengan selamat dalam permainan.",
+      "follow_up": "Cadangkan satu stesen baharu dengan kad arahan ringkas."
+    }
+  ]
+}

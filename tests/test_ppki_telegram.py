@@ -137,6 +137,24 @@ class PpkiTelegramTest(unittest.TestCase):
         callback(42, "rpt2027_ppki_pdf5")
         self.assertEqual(len(PdfReader(BytesIO(self.documents[-1][1])).pages), 6)
 
+    def test_year5_manipulative_menu_and_paid_rpt(self):
+        callback = self.namespace["callback"]
+        self.namespace["year"](42, "primary")
+        for key in ("cv_primary_ppki", "cv_ppki_year5", "cv_ppki_subject", "cv_ppki_component_km",
+                    f"cv_ppki_unit_{MANIPULATIVE_UNIT2}", "cv_ppki_lesson_070"):
+            self.assertIn(key, [button["callback_data"] for row in self.messages[-1][1] for button in row])
+            callback(42, key)
+        callback(42, "cv_ppki_pdf_070")
+        callback(42, "rpt2027_ppki_km_pdf5")
+        self.assertFalse(self.documents)
+        self.allow = True
+        callback(42, "cv_ppki_pdf_070")
+        self.assertIn("Dayung Sampan", PdfReader(BytesIO(self.documents[-1][1])).pages[0].extract_text())
+        callback(42, "rpt2027_ppki_year5")
+        self.assertIn("Kemahiran Manipulatif: 43 PdP", self.messages[-1][0])
+        callback(42, "rpt2027_ppki_km_pdf5")
+        self.assertEqual(len(PdfReader(BytesIO(self.documents[-1][1])).pages), 4)
+
     def test_rpt_under_own_menu_and_paid_gate(self):
         callback = self.namespace["callback"]
         callback(42, "rpt2027_ppki_pdf2")
@@ -357,7 +375,6 @@ class PpkiApiTest(unittest.TestCase):
             got = client.get(prefix + "/catalog?year=5", headers=headers).get_json()
             self.assertEqual(got["year"], 5)
             self.assertEqual(got["units"], [{"value": UNIT1, "label": "Unit 1 · Kesusilaan Cerminan Diri"}])
-            self.assertFalse(got["kemahiran_manipulatif"])
             sources = [{"value": UNIT1, "label": got["units"][0]["label"], "lessons": got["lessons"]},
                        *got["additional_units"]]
             for src, (unit, title, start, last, _) in zip(sources, expected, strict=True):
@@ -395,7 +412,55 @@ class PpkiApiTest(unittest.TestCase):
                 self.assertIn(sp, text)
                 for number in range(start, end + 1):
                     self.assertIn(f"{number:03d}", text)
-            self.assertEqual(client.get(prefix + "/rpt-manipulatif.pdf?year=5", headers=headers).status_code, 404)
+            result = client.get(prefix + "/rpt-manipulatif.pdf?year=5", headers=headers)
+            self.assertEqual(result.status_code, 200)
+            self.assertIn("KEMAHIRAN_MANIPULATIF_TAHUN_5", result.headers["Content-Disposition"])
+            pages = PdfReader(BytesIO(result.data)).pages
+            self.assertEqual(len(pages), 4)
+            for page, (first, last) in zip(pages, ((42, 53), (54, 61), (62, 74), (75, 84)), strict=True):
+                rows = [line.split()[0] for line in page.extract_text().splitlines()
+                        if line.split() and line.split()[0].isdigit()]
+                self.assertEqual(rows, [f"{n:03d}" for n in range(first, last + 1)])
+
+    def test_year5_all_43_manipulative_rph_word_and_pdf(self):
+        app = Flask(__name__)
+        app.register_blueprint(create_ppki_blueprint())
+        client = app.test_client()
+        prefix = "/internal/rph/v1/ppki"
+        key = "K" * 40
+        headers = {"Authorization": f"Bearer {key}"}
+        with patch.dict("os.environ", {"CIKGULAJU_AUTHORITATIVE_API_TOKEN": key,
+                                       "CIKGULAJU_WEB_NATIVE_RPH_ENABLED": "1"}):
+            source = client.get(prefix + "/catalog?year=5", headers=headers).get_json()
+            units = source["kemahiran_manipulatif"]
+            self.assertEqual([unit["value"] for unit in units], [
+                MANIPULATIVE_UNIT1, MANIPULATIVE_UNIT2, MANIPULATIVE_UNIT3,
+            ])
+            teacher = {"class": "5 Bestari", "date": "2027-02-16", "time": "09:00 - 10:00", "students": "8"}
+            for unit, numbers in zip(units, (range(42, 62), range(62, 75), range(75, 85)), strict=True):
+                self.assertEqual([lesson["value"] for lesson in unit["lessons"]], [f"{n:03d}" for n in numbers])
+                for lesson in unit["lessons"]:
+                    selection = {"year": 5, "subject": SUBJECT, "unit": unit["value"], "lesson": lesson["value"]}
+                    for fmt in ("word", "pdf"):
+                        response = client.post(prefix + "/render", headers=headers, json={
+                            "selection": selection, "teacher": teacher, "format": fmt,
+                        })
+                        self.assertEqual(response.status_code, 200)
+                        self.assertIn("TAHUN_5_" + lesson["value"], response.headers["Content-Disposition"])
+                        if fmt == "word":
+                            doc = Document(BytesIO(response.data))
+                            text = "\n".join([p.text for p in doc.paragraphs] +
+                                             [cell.text for table in doc.tables for row in table.rows for cell in row.cells])
+                        else:
+                            doc = PdfReader(BytesIO(response.data))
+                            self.assertEqual(len(doc.pages), 1)
+                            text = doc.pages[0].extract_text()
+                        self.assertIn(unit["label"], text)
+                        self.assertIn("5 Bestari", text)
+            response = client.post(prefix + "/render", headers=headers, json={
+                "selection": {**selection, "unit": MANIPULATIVE_UNIT2}, "teacher": teacher, "format": "pdf",
+            })
+            self.assertEqual(response.status_code, 404)
 
     def test_all_71_word_pdf_and_protected_access(self):
         app = Flask(__name__)

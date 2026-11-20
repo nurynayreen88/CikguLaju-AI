@@ -1,0 +1,599 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 5,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Kemahiran Manipulatif",
+  "unit": "Unit 1 · Pancainderaku",
+  "content_standards": {
+    "1.1": "Pengamatan penglihatan",
+    "1.2": "Pengamatan pendengaran",
+    "1.3": "Deria sentuhan",
+    "1.4": "Deria bau",
+    "1.5": "Jenis-jenis rasa"
+  },
+  "learning_standards": {
+    "1.1.1": "Mengenal pasti susunan objek dan gambar pada blok parket dan analogi bergambar",
+    "1.1.2": "Mencirikan objek dan gambar yang dilihat",
+    "1.1.3": "Menunjuk cara menyusun objek dan gambar berdasarkan contoh",
+    "1.1.4": "Melengkapkan tugasan permainan kecil mengikut prosedur dan arahan",
+    "1.2.1": "Mengenal pasti cerita pendek yang didengar",
+    "1.2.2": "Mengulang beberapa ayat dalam cerita pendek yang didengar",
+    "1.2.3": "Menyusun gambar mengikut urutan cerita yang didengar",
+    "1.2.4": "Menceritakan semula cerita yang didengar dengan cara sendiri",
+    "1.3.1": "Mengenal pasti bahan berbulu, berbiji dan melekit melalui sentuhan",
+    "1.3.2": "Mengelaskan objek atau bahan melalui sentuhan",
+    "1.3.3": "Menggunakan objek atau bahan dalam aktiviti seni",
+    "1.3.4": "Menghubungkaitkan bahan di sekeliling melalui sentuhan",
+    "1.4.1": "Menyatakan bau makanan yang elok, basi atau rosak",
+    "1.4.2": "Membandingkan bau makanan elok dengan bau makanan basi atau rosak",
+    "1.4.3": "Memilih makanan yang elok menggunakan deria bau",
+    "1.4.4": "Mengamalkan pemilihan makanan yang selamat berdasarkan bau makanan",
+    "1.5.1": "Mengenal pasti rasa manis, masam, pahit, masin, pedas, payau dan tawar",
+    "1.5.2": "Mengelaskan makanan atau minuman mengikut rasa",
+    "1.5.3": "Menghubungkaitkan rasa makanan dan minuman di sekeliling",
+    "1.5.4": "Menyediakan makanan atau minuman mengikut rasa"
+  },
+  "lessons": [
+    {
+      "pdp": "042",
+      "title": "Kenal susunan blok dan analogi gambar",
+      "sp": "1.1.1",
+      "focus": "Kenal susunan blok dan analogi gambar.",
+      "book": "Buku Teks hlm. 58–59",
+      "objective": "Murid dapat memadankan tiga susunan atau analogi dengan betul.",
+      "materials": "Blok parket, kad corak dan kad analogi",
+      "induction": [
+        "Menunjukkan blok longgar dan gambar objek siap.",
+        "Memilih satu bentuk yang kelihatan pada gambar."
+      ],
+      "guided": [
+        "Menandakan kedudukan bentuk pertama pada kad corak.",
+        "Menunjuk bentuk sepadan dan menyebut kedudukannya."
+      ],
+      "practice": [
+        "Memberi tiga corak dan dua pilihan bagi gambar seterusnya.",
+        "Memilih jawapan dan memadankannya dengan susunan contoh."
+      ],
+      "closure": [
+        "Mengangkat satu kad semakan.",
+        "Menerangkan satu petunjuk yang diberikan oleh corak."
+      ],
+      "support": "Gunakan kad berkontras dan satu pilihan pada setiap sisi.",
+      "assessment": "Guru merekod sama ada murid dapat memadankan tiga susunan atau analogi dengan betul.",
+      "follow_up": "Tambah corak yang bertukar arah selepas petunjuk pertama."
+    },
+    {
+      "pdp": "043",
+      "title": "Ciri objek dan gambar",
+      "sp": "1.1.2",
+      "focus": "Ciri objek dan gambar.",
+      "book": "Buku Teks hlm. 59–61",
+      "objective": "Murid dapat menyatakan dua ciri yang tepat bagi objek atau gambar.",
+      "materials": "Blok geometri, kad gambar dan kad kata",
+      "induction": [
+        "Menyerlahkan dua bentuk pada gambar rumah.",
+        "Menyebut perbezaan yang dapat dilihat."
+      ],
+      "guided": [
+        "Memodelkan cara menerangkan bentuk, warna dan kedudukan.",
+        "Memilih kad ciri bagi setiap bahagian gambar."
+      ],
+      "practice": [
+        "Memberi dua susunan berbeza untuk dibandingkan.",
+        "Menerangkan persamaan dan perbezaan dengan kad kata."
+      ],
+      "closure": [
+        "Meminta satu ciri bagi objek baharu.",
+        "Menyebut ciri dan menunjuk bahagian yang sepadan."
+      ],
+      "support": "Sediakan rangka ayat dan blok besar.",
+      "assessment": "Guru merekod sama ada murid dapat menyatakan dua ciri yang tepat bagi objek atau gambar.",
+      "follow_up": "Padankan penerangan rakan dengan gambar yang betul."
+    },
+    {
+      "pdp": "044",
+      "title": "Susun objek berpandukan contoh",
+      "sp": "1.1.3",
+      "focus": "Susun objek berpandukan contoh.",
+      "book": "Buku Teks hlm. 60–61",
+      "objective": "Murid dapat menyusun tiga objek mengikut kedudukan dalam contoh.",
+      "materials": "Kad model, blok besar dan alas kerja",
+      "induction": [
+        "Mempamerkan model bergambar yang terdiri daripada tiga bentuk.",
+        "Memilih blok pertama berdasarkan model."
+      ],
+      "guided": [
+        "Meletakkan satu blok pada kedudukan yang ditanda.",
+        "Meniru langkah awal dan menyusun baki blok mengikut model."
+      ],
+      "practice": [
+        "Menunjukkan model kedua dengan susunan berbeza.",
+        "Menunjuk cara membina model sambil menyebut urutan langkah."
+      ],
+      "closure": [
+        "Membandingkan susunan dengan model.",
+        "Membetulkan satu bentuk yang tersasar."
+      ],
+      "support": "Tanda sempadan bentuk pada alas kerja.",
+      "assessment": "Guru merekod sama ada murid dapat menyusun tiga objek mengikut kedudukan dalam contoh.",
+      "follow_up": "Bina semula susunan menggunakan model gambar tanpa garisan."
+    },
+    {
+      "pdp": "045",
+      "title": "Permainan bina bentuk mengikut arahan",
+      "sp": "1.1.4",
+      "focus": "Permainan bina bentuk mengikut arahan.",
+      "book": "Buku Teks hlm. 61",
+      "objective": "Murid dapat melengkapkan satu binaan dengan mengikuti tiga arahan mengikut urutan.",
+      "materials": "Blok parket, kad tugas dan alas",
+      "induction": [
+        "Menunjukkan kad tugasan bergambar dalam tiga langkah.",
+        "Membaca atau menunjuk arahan pertama."
+      ],
+      "guided": [
+        "Memodelkan cara mengambil blok, membina bentuk dan membuat semakan.",
+        "Meniru langkah mengikut urutan pada kad."
+      ],
+      "practice": [
+        "Meminta murid memilih satu binaan dan menamatkan tugasan.",
+        "Mengambil blok, membina objek dan menyemak susunan sebelum menyerahkan hasil."
+      ],
+      "closure": [
+        "Meminta kad disusun semula.",
+        "Menyebut urutan yang digunakan untuk melengkapkan binaan."
+      ],
+      "support": "Beri kad arahan satu demi satu.",
+      "assessment": "Guru merekod sama ada murid dapat melengkapkan satu binaan dengan mengikuti tiga arahan mengikut urutan.",
+      "follow_up": "Jalankan tugasan berpasangan dengan peranan pembaca dan pembina."
+    },
+    {
+      "pdp": "046",
+      "title": "Kenal cerita daripada rakaman",
+      "sp": "1.2.1",
+      "focus": "Kenal cerita daripada rakaman.",
+      "book": "Buku Teks hlm. 62–64",
+      "objective": "Murid dapat mengenal pasti tajuk bagi dua petikan cerita yang didengar.",
+      "materials": "Rakaman cerita, kad tajuk dan kad watak",
+      "induction": [
+        "Memaparkan dua kad watak dan memperkenalkan isyarat mula dengar.",
+        "Memilih kedudukan yang selesa untuk mendengar."
+      ],
+      "guided": [
+        "Memainkan petikan Singa dan Tikus dan berhenti selepas watak utama disebut.",
+        "Memilih kad watak selepas mendengar petikan."
+      ],
+      "practice": [
+        "Memainkan petikan Si Tanggang dan menunjukkan pilihan tajuk.",
+        "Memilih tajuk bagi setiap cerita dan menyebut satu petunjuk."
+      ],
+      "closure": [
+        "Meminta murid menyemak kad tajuk sekali lagi.",
+        "Memadankan satu watak dengan tajuk yang betul."
+      ],
+      "support": "Ulang petikan pendek dan tawarkan kad jawapan bergambar.",
+      "assessment": "Guru merekod sama ada murid dapat mengenal pasti tajuk bagi dua petikan cerita yang didengar.",
+      "follow_up": "Kenal tajuk daripada satu petikan tanpa gambar."
+    },
+    {
+      "pdp": "047",
+      "title": "Ulang ayat cerita yang didengar",
+      "sp": "1.2.2",
+      "focus": "Ulang ayat cerita yang didengar.",
+      "book": "Buku Teks hlm. 62, 64",
+      "objective": "Murid dapat mengulang dua ayat mudah daripada petikan yang didengar.",
+      "materials": "Rakaman Singa dan Tikus dan kad gambar",
+      "induction": [
+        "Memainkan petikan cerita yang memperkenalkan dua watak.",
+        "Menunjukkan kad watak yang disebut."
+      ],
+      "guided": [
+        "Memilih dua ayat pendek daripada petikan dan menjeda selepas setiap ayat.",
+        "Mengikuti sebutan sambil menunjuk gambar yang berkaitan."
+      ],
+      "practice": [
+        "Memainkan semula petikan tanpa menunjuk kad.",
+        "Mengulang dua ayat pilihan mengikut giliran."
+      ],
+      "closure": [
+        "Menyebut kata kunci daripada petikan.",
+        "Melengkapkan ayat yang merangkumi kata tersebut."
+      ],
+      "support": "Perlahankan rakaman dan bahagikan ayat kepada frasa pendek.",
+      "assessment": "Guru merekod sama ada murid dapat mengulang dua ayat mudah daripada petikan yang didengar.",
+      "follow_up": "Rakam sebutan murid untuk semakan kendiri di kelas."
+    },
+    {
+      "pdp": "048",
+      "title": "Susun urutan cerita Si Tanggang",
+      "sp": "1.2.3",
+      "focus": "Susun urutan cerita Si Tanggang.",
+      "book": "Buku Teks hlm. 64",
+      "objective": "Murid dapat menyusun sekurang-kurangnya tiga kad mengikut cerita yang didengar.",
+      "materials": "Podcast Si Tanggang, empat kad babak dan alas urutan",
+      "induction": [
+        "Menunjukkan empat kad babak yang disusun secara rawak.",
+        "Menunjuk kad yang menggambarkan kapal."
+      ],
+      "guided": [
+        "Memainkan petikan terpilih dan memodelkan cara mengenal pasti permulaan.",
+        "Meletakkan kad pertama pada kotak permulaan."
+      ],
+      "practice": [
+        "Memainkan sambungan dengan jeda pada pertukaran peristiwa.",
+        "Menyusun kad peristiwa seterusnya dan membandingkan dengan rakannya."
+      ],
+      "closure": [
+        "Meminta murid menunjukkan peristiwa terakhir.",
+        "Memilih kad yang tepat dan menyatakan cara mengenalinya."
+      ],
+      "support": "Guna tiga kad dengan kotak bernombor.",
+      "assessment": "Guru merekod sama ada murid dapat menyusun sekurang-kurangnya tiga kad mengikut cerita yang didengar.",
+      "follow_up": "Susun empat kad tanpa ulangan rakaman."
+    },
+    {
+      "pdp": "049",
+      "title": "Ceritakan semula dengan ayat sendiri",
+      "sp": "1.2.4",
+      "focus": "Ceritakan semula dengan ayat sendiri.",
+      "book": "Buku Teks hlm. 63–64",
+      "objective": "Murid dapat menceritakan tiga peristiwa mengikut urutan dengan ayat sendiri.",
+      "materials": "Kad peristiwa, petikan Sumpahan Mahsuri dan kad kata hubung",
+      "induction": [
+        "Memaparkan gambar babak awal dan akhir.",
+        "Menerangkan satu perkara yang dapat dilihat."
+      ],
+      "guided": [
+        "Memainkan petikan Sumpahan Mahsuri sebagai cerita alternatif dan memperkenalkan kata urutan.",
+        "Mencuba menyambung dua babak dengan satu kata hubung."
+      ],
+      "practice": [
+        "Mengedarkan tiga kad peristiwa sebagai rangka cerita.",
+        "Menceritakan semula peristiwa kepada pasangan menggunakan ayat sendiri."
+      ],
+      "closure": [
+        "Meminta murid menyebut satu pengajaran.",
+        "Mengaitkan pengajaran dengan tindakan satu watak."
+      ],
+      "support": "Guna kad isyarat dan benarkan sebutan frasa dahulu.",
+      "assessment": "Guru merekod sama ada murid dapat menceritakan tiga peristiwa mengikut urutan dengan ayat sendiri.",
+      "follow_up": "Ceritakan semula kepada kumpulan kecil tanpa melihat kad."
+    },
+    {
+      "pdp": "050",
+      "title": "Kenal tekstur melalui sentuhan",
+      "sp": "1.3.1",
+      "focus": "Kenal tekstur melalui sentuhan.",
+      "book": "Buku Teks hlm. 65",
+      "objective": "Murid dapat mengenal pasti tiga jenis tekstur melalui sentuhan.",
+      "materials": "Kain berbulu, alas berbintil dan pita lekat terlindung",
+      "induction": [
+        "Menunjukkan tiga sampel bersih pada alas.",
+        "Memilih satu sampel yang sanggup disentuh."
+      ],
+      "guided": [
+        "Memodelkan sentuhan hujung jari dan menamakan tekstur.",
+        "Menyentuh sampel yang dipilih serta memadankan kad ciri."
+      ],
+      "practice": [
+        "Menukar susunan sampel dan menawarkan pilihan untuk menyentuh dengan alat.",
+        "Mengenal pasti sampel berbulu, berbiji dan melekit."
+      ],
+      "closure": [
+        "Menyemak kad ciri satu demi satu.",
+        "Menerangkan satu petunjuk yang disedari semasa menyentuh."
+      ],
+      "support": "Benarkan murid menggunakan sarung tangan atau alat pemegang.",
+      "assessment": "Guru merekod sama ada murid dapat mengenal pasti tiga jenis tekstur melalui sentuhan.",
+      "follow_up": "Teka tekstur objek baharu dengan melihat dahulu jika perlu."
+    },
+    {
+      "pdp": "051",
+      "title": "Kelaskan objek mengikut tekstur",
+      "sp": "1.3.2",
+      "focus": "Kelaskan objek mengikut tekstur.",
+      "book": "Buku Teks hlm. 65",
+      "objective": "Murid dapat mengelaskan sekurang-kurangnya empat daripada enam sampel dengan tepat.",
+      "materials": "Tiga bakul berlabel dan enam sampel besar",
+      "induction": [
+        "Menyusun tiga bakul mengikut kad berbulu, berbiji dan melekit.",
+        "Menunjuk bakul yang dipilih untuk satu sampel."
+      ],
+      "guided": [
+        "Memodelkan cara menyentuh sampel dan meletakkannya pada bakul sepadan.",
+        "Menguji satu sampel sambil menyebut ciri yang dikenal pasti."
+      ],
+      "practice": [
+        "Mengagihkan enam sampel bertekstur kepada pasangan.",
+        "Mengelaskan sampel dan menyemak pilihan bersama pasangan."
+      ],
+      "closure": [
+        "Menunjukkan satu sampel yang tersalah letak.",
+        "Memindahkan sampel ke bakul yang tepat dan menyatakan sebab."
+      ],
+      "support": "Gunakan tiga sampel dengan perbezaan tekstur ketara.",
+      "assessment": "Guru merekod sama ada murid dapat mengelaskan sekurang-kurangnya empat daripada enam sampel dengan tepat.",
+      "follow_up": "Tambah sampel baharu dan minta murid menjelaskan pengelasan."
+    },
+    {
+      "pdp": "052",
+      "title": "Hasilkan papan sentuh",
+      "sp": "1.3.3",
+      "focus": "Hasilkan papan sentuh.",
+      "book": "Buku Teks hlm. 66–67",
+      "objective": "Murid dapat menghasilkan papan sentuh dengan tiga petak bertekstur berbeza.",
+      "materials": "Kadbod siap potong, gam dan tiga bahan tekstur",
+      "induction": [
+        "Menunjukkan papan sentuh yang siap.",
+        "Menunjuk satu petak dan menamakan teksturnya."
+      ],
+      "guided": [
+        "Menunjukkan cara menyusun sampel sebelum melekatkannya pada petak.",
+        "Memilih dua bahan dan mencuba kedudukan pada kadbod."
+      ],
+      "practice": [
+        "Membimbing lekatan dan menyemak hujung bahan supaya tidak terangkat.",
+        "Menghasilkan papan dengan tekstur berbeza dan melabel petak."
+      ],
+      "closure": [
+        "Meminta murid memperkenalkan papan kepada pasangan.",
+        "Menerangkan bahan dan tekstur pada satu petak."
+      ],
+      "support": "Sediakan petak besar dan gam pelekat sedia guna.",
+      "assessment": "Guru merekod sama ada murid dapat menghasilkan papan sentuh dengan tiga petak bertekstur berbeza.",
+      "follow_up": "Minta murid mencipta pola tekstur berulang untuk diteka rakan."
+    },
+    {
+      "pdp": "053",
+      "title": "Kaitkan tekstur dengan objek di sekeliling",
+      "sp": "1.3.4",
+      "focus": "Kaitkan tekstur dengan objek di sekeliling.",
+      "book": "Buku Teks hlm. 65, 67",
+      "objective": "Murid dapat memadankan dua tekstur dengan objek sebenar yang sepadan.",
+      "materials": "Papan sentuh, gambar dan contoh barangan kelas",
+      "induction": [
+        "Meminta murid menyentuh satu petak papan.",
+        "Memilih kad ciri yang sepadan."
+      ],
+      "guided": [
+        "Memadankan kain berbulu dengan gambar tuala.",
+        "Mencari satu lagi bahan yang mempunyai tekstur serupa."
+      ],
+      "practice": [
+        "Memaparkan gambar beberapa objek di kelas.",
+        "Memadankan tekstur dengan objek yang sesuai dan menyatakan kaitannya."
+      ],
+      "closure": [
+        "Memilih satu objek sebenar untuk semakan.",
+        "Membandingkan tekstur objek dengan sampel pada papan."
+      ],
+      "support": "Gunakan pilihan dua objek dengan ciri berbeza.",
+      "assessment": "Guru merekod sama ada murid dapat memadankan dua tekstur dengan objek sebenar yang sepadan.",
+      "follow_up": "Bina satu padanan tekstur baharu daripada bahan di rumah."
+    },
+    {
+      "pdp": "054",
+      "title": "Kenal bau makanan dan tanda rosak",
+      "sp": "1.4.1",
+      "focus": "Kenal bau makanan dan tanda rosak.",
+      "book": "Buku Teks hlm. 68",
+      "objective": "Murid dapat menyatakan bau bagi tiga keadaan makanan berdasarkan contoh.",
+      "materials": "Sampel segar yang diluluskan dan kad situasi",
+      "induction": [
+        "Menunjukkan gambar makanan segar, basi dan rosak.",
+        "Menyebut satu perbezaan yang dapat dilihat."
+      ],
+      "guided": [
+        "Menunjukkan bau makanan segar yang selamat dan membacakan kad gambaran bau rosak.",
+        "Memadankan istilah segar, masam dan tengik dengan kad situasi."
+      ],
+      "practice": [
+        "Mengemukakan tiga contoh makanan secara bergambar.",
+        "Menyatakan bau yang dijangka bagi setiap contoh berdasarkan maklumat pada kad."
+      ],
+      "closure": [
+        "Menunjuk gambar makanan berkulat.",
+        "Memilih tindakan memberitahu guru dan mengasingkan makanan itu."
+      ],
+      "support": "Tawarkan kad kata dan elakkan penghidu sampel bagi murid sensitif.",
+      "assessment": "Guru merekod sama ada murid dapat menyatakan bau bagi tiga keadaan makanan berdasarkan contoh.",
+      "follow_up": "Minta murid mencari petunjuk selain bau pada kad makanan."
+    },
+    {
+      "pdp": "055",
+      "title": "Bandingkan bau makanan",
+      "sp": "1.4.2",
+      "focus": "Bandingkan bau makanan.",
+      "book": "Buku Teks hlm. 70–71",
+      "objective": "Murid dapat membezakan bau dalam sekurang-kurangnya dua daripada tiga pasangan situasi.",
+      "materials": "Gambar makanan serta kad bau dan dua bekas contoh segar",
+      "induction": [
+        "Mengemukakan dua kad bau dan meminta murid memerhatikannya.",
+        "Menunjuk kad yang menerangkan bau segar."
+      ],
+      "guided": [
+        "Memodelkan perbandingan menggunakan pasangan kad segar dan tengik.",
+        "Menyebut perbezaan dan menyemak pada gambar."
+      ],
+      "practice": [
+        "Memberikan tiga pasangan situasi tanpa bahan rosak sebenar.",
+        "Menandakan sama atau berbeza dan menyatakan petunjuk bau."
+      ],
+      "closure": [
+        "Memilih satu pasangan untuk dibincangkan.",
+        "Menjelaskan mengapa dua makanan boleh mempunyai bau berbeza."
+      ],
+      "support": "Guna kad ikon dan pilihan jawapan dua perkataan.",
+      "assessment": "Guru merekod sama ada murid dapat membezakan bau dalam sekurang-kurangnya dua daripada tiga pasangan situasi.",
+      "follow_up": "Minta murid membezakan bau masam yang biasa dengan tanda perubahan luar biasa."
+    },
+    {
+      "pdp": "056",
+      "title": "Pilih makanan yang masih elok",
+      "sp": "1.4.3",
+      "focus": "Pilih makanan yang masih elok.",
+      "book": "Buku Teks hlm. 69–71",
+      "objective": "Murid dapat memilih makanan yang elok dalam tiga situasi berdasarkan petunjuk yang diberikan.",
+      "materials": "Kad tarikh, gambar makanan dan penanda dua warna",
+      "induction": [
+        "Mempamerkan gambar dua produk yang kelihatan sama.",
+        "Menyebut petunjuk yang boleh diperiksa sebelum memilih."
+      ],
+      "guided": [
+        "Memodelkan cara membaca kad penerangan bau, rupa dan tarikh.",
+        "Memilih produk yang masih baik dan menyatakan satu petunjuk."
+      ],
+      "practice": [
+        "Memberikan tiga pasangan makanan dengan maklumat yang berbeza.",
+        "Menanda pilihan dan mengasingkan makanan yang diragui."
+      ],
+      "closure": [
+        "Menguji situasi makanan yang berbau biasa tetapi luput tarikh.",
+        "Memilih untuk tidak mengambil makanan itu dan menyatakan sebab."
+      ],
+      "support": "Tandakan setiap petunjuk dengan warna dan gambar.",
+      "assessment": "Guru merekod sama ada murid dapat memilih makanan yang elok dalam tiga situasi berdasarkan petunjuk yang diberikan.",
+      "follow_up": "Bandingkan dua contoh yang hanya berbeza pada satu petunjuk."
+    },
+    {
+      "pdp": "057",
+      "title": "Amalkan pemeriksaan makanan yang selamat",
+      "sp": "1.4.4",
+      "focus": "Amalkan pemeriksaan makanan yang selamat.",
+      "book": "Buku Teks hlm. 69",
+      "objective": "Murid dapat menggunakan tiga petunjuk pemeriksaan dan mengasingkan contoh yang diragui.",
+      "materials": "Bungkusan contoh, kad semak dan dulang pengasingan",
+      "induction": [
+        "Menunjukkan bekas dengan label tarikh yang mudah dibaca.",
+        "Mencari tarikh pada label."
+      ],
+      "guided": [
+        "Memodelkan cara menyemak tarikh, bungkusan dan tanda bau luar biasa yang dinyatakan.",
+        "Mengikuti rutin melalui kad langkah."
+      ],
+      "practice": [
+        "Mengadakan simulasi pemilihan bekal tanpa makanan rosak sebenar.",
+        "Menyemak bekas, mengasingkan contoh yang meragukan dan memaklumkan kepada guru."
+      ],
+      "closure": [
+        "Memberi satu kad bekas bocor untuk semakan.",
+        "Mengulangi tindakan yang selamat tanpa menghidu atau merasa kandungan."
+      ],
+      "support": "Gunakan kad semak bergambar satu langkah pada satu masa.",
+      "assessment": "Guru merekod sama ada murid dapat menggunakan tiga petunjuk pemeriksaan dan mengasingkan contoh yang diragui.",
+      "follow_up": "Ulang rutin ketika memilih bekal yang diluluskan guru."
+    },
+    {
+      "pdp": "058",
+      "title": "Kenal jenis rasa makanan dan minuman",
+      "sp": "1.5.1",
+      "focus": "Kenal jenis rasa makanan dan minuman.",
+      "book": "Buku Teks hlm. 72–73",
+      "objective": "Murid dapat mengenal pasti sekurang-kurangnya lima daripada tujuh padanan rasa.",
+      "materials": "Kad tujuh rasa, gambar makanan dan kad contoh",
+      "induction": [
+        "Menunjukkan gambar air kosong dan buah.",
+        "Menyebut satu rasa yang biasa dikaitkan dengan gambar."
+      ],
+      "guided": [
+        "Memadankan contoh dengan kad manis, masam, pahit, masin, pedas, payau dan tawar.",
+        "Menyebut atau menunjuk kad rasa selepas melihat contoh."
+      ],
+      "practice": [
+        "Menukar susunan gambar dan meminta padanan kendiri.",
+        "Memilih rasa bagi setiap contoh berdasarkan gambar dan petunjuk."
+      ],
+      "closure": [
+        "Meminta satu contoh makanan masam.",
+        "Menyebut contoh dan memilih kad rasa sepadan."
+      ],
+      "support": "Mulakan dengan tiga rasa yang biasa dan tambah kad beransur-ansur.",
+      "assessment": "Guru merekod sama ada murid dapat mengenal pasti sekurang-kurangnya lima daripada tujuh padanan rasa.",
+      "follow_up": "Cari contoh berlainan bagi rasa yang sama tanpa perlu merasa."
+    },
+    {
+      "pdp": "059",
+      "title": "Kelaskan makanan dan minuman mengikut rasa",
+      "sp": "1.5.2",
+      "focus": "Kelaskan makanan dan minuman mengikut rasa.",
+      "book": "Buku Teks hlm. 73–74",
+      "objective": "Murid dapat mengelaskan sekurang-kurangnya empat daripada enam contoh dengan betul.",
+      "materials": "Kad makanan, kad minuman dan petak rasa",
+      "induction": [
+        "Memaparkan kad manis dan masam.",
+        "Memilih satu kad makanan dan menyebut rasa yang biasa."
+      ],
+      "guided": [
+        "Memodelkan pengelasan menggunakan maklumat pada kad.",
+        "Meletakkan satu contoh dalam petak yang sepadan."
+      ],
+      "practice": [
+        "Mengedarkan enam kad dengan contoh makanan dan minuman.",
+        "Mengasingkan kad dan menyemak padanan yang dipersetujui."
+      ],
+      "closure": [
+        "Menunjukkan satu kad yang boleh berubah mengikut penyediaan.",
+        "Menyatakan rasa berdasarkan penerangan pada kad itu."
+      ],
+      "support": "Guna tiga petak dengan ikon dan contoh rujukan.",
+      "assessment": "Guru merekod sama ada murid dapat mengelaskan sekurang-kurangnya empat daripada enam contoh dengan betul.",
+      "follow_up": "Bandingkan dua versi minuman dengan ramuan berbeza."
+    },
+    {
+      "pdp": "060",
+      "title": "Hubung kait rasa dengan ramuan",
+      "sp": "1.5.3",
+      "focus": "Hubung kait rasa dengan ramuan.",
+      "book": "Buku Teks hlm. 74",
+      "objective": "Murid dapat menerangkan dua hubungan antara rasa hidangan dengan ramuannya.",
+      "materials": "Kad peta titi, gambar ramuan dan gambar hidangan",
+      "induction": [
+        "Menunjukkan gambar air limau, teh kosong dan teh manis.",
+        "Memilih dua gambar yang kelihatan hampir sama."
+      ],
+      "guided": [
+        "Menerangkan hubungan rasa dengan ramuan menggunakan peta titi.",
+        "Memadankan satu pasangan hidangan dan rasa dengan contoh lain."
+      ],
+      "practice": [
+        "Memberi tiga kad ramuan untuk dilengkapkan pada peta.",
+        "Memadankan kad dan menerangkan cara ramuan mengubah rasa."
+      ],
+      "closure": [
+        "Mengeluarkan satu kad yang telah dipadankan.",
+        "Mengisi semula tempat kosong dan menerangkan pilihannya."
+      ],
+      "support": "Sediakan rangka ayat dan dua pilihan ramuan.",
+      "assessment": "Guru merekod sama ada murid dapat menerangkan dua hubungan antara rasa hidangan dengan ramuannya.",
+      "follow_up": "Bina padanan rasa bagi satu hidangan rekaan."
+    },
+    {
+      "pdp": "061",
+      "title": "Sediakan hidangan mengikut rasa",
+      "sp": "1.5.4",
+      "focus": "Sediakan hidangan mengikut rasa.",
+      "book": "Buku Teks hlm. 75–76",
+      "objective": "Murid dapat menyediakan satu hidangan mengikut tiga langkah resipi dan melabel rasa sasaran.",
+      "materials": "Bahan siap yang diluluskan, kad resipi, mangkuk dan sudu",
+      "induction": [
+        "Menunjukkan kad resipi emping jagung berperisa.",
+        "Memilih kad rasa yang sepadan dengan resipi."
+      ],
+      "guided": [
+        "Menyemak bahan dan menunjukkan cara menyukat serta menggaul bahan siap tanpa haba.",
+        "Menyukat bahan yang diluluskan dan menggaul mengikut petunjuk."
+      ],
+      "practice": [
+        "Menyediakan pilihan hidangan dengan ramuan yang sesuai untuk setiap murid.",
+        "Memilih satu rasa dan menghasilkan satu hidangan dengan bantuan yang perlu."
+      ],
+      "closure": [
+        "Meminta murid melabel dan mengemas ruang kerja.",
+        "Menyatakan rasa sasaran dan bahan yang memberikannya."
+      ],
+      "support": "Guna sukatan siap dan kad langkah. Benarkan peranan tanpa sentuhan makanan.",
+      "assessment": "Guru merekod sama ada murid dapat menyediakan satu hidangan mengikut tiga langkah resipi dan melabel rasa sasaran.",
+      "follow_up": "Pilih ramuan lain yang diluluskan bagi menghasilkan rasa berbeza."
+    }
+  ]
+}
