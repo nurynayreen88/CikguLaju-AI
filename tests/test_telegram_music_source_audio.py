@@ -65,7 +65,7 @@ class MusicSourceAudioTest(unittest.TestCase):
                         f"https://drive.usercontent.google.com/download?id={file_id}&export=download")
 
     def test_download_audit_applies_to_exact_year_and_pdp(self):
-        counts = {2:25, 3:30, 4:30, 5:29, 6:28}
+        counts = {2:25, 3:30, 4:30, 5:33, 6:28}
         source_files = set()
         for year, expected in counts.items():
             matched = 0
@@ -77,16 +77,18 @@ class MusicSourceAudioTest(unittest.TestCase):
                     matched += 1
                     source_files.update(item["file_id"] for item in verified)
             self.assertEqual(matched, expected)
-        self.assertEqual(len(source_files), 610)
+        self.assertEqual(len(source_files), 614)
 
     def test_additional_tracks_follow_the_specific_textbook_activity(self):
         expected = {
             (2, 19): [48], (2, 22): list(range(60, 67)), (2, 33): [84, 85, 86],
             (3, 2): [8], (3, 3): [5, 8],
             (4, 7): [17, 18], (4, 14): [44, 45, 46, 47], (4, 15): [48],
-            (4, 16): [48], (4, 18): [58, 59, 60],
+            (4, 16): [48], (4, 17): list(range(49, 58)), (4, 18): [58, 59, 60],
             (4, 31): list(range(110, 117)), (4, 32): [117], (4, 33): [117],
-            (5, 5): [22], (6, 18): [96],
+            (5, 5): [22], (5, 15): list(range(49, 55)), (5, 16): list(range(49, 55)),
+            (5, 34): [137, 138, 139, 150, 151, 158, 159, 160, 161],
+            (5, 35): [137, 138, 139, 150, 151, 158, 159, 160, 161], (6, 18): [96],
         }
         for (year, number), tracks in expected.items():
             with self.subTest(year=year, pdp=number):

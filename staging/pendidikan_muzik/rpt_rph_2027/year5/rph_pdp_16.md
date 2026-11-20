@@ -10,21 +10,21 @@
 
 **Objektif:** Kumpulan mempersembah sekurang-kurangnya tiga komponen rubrik projek dengan baik.
 
-**Set induksi (4 minit):** Guru memperkenalkan satu contoh bunyi, skor atau pergerakan yang berkait dengan kemahiran PdP; murid mengajuk atau mengemukakan respons ringkas.
+**Set induksi (4 minit):** Murid mengulang satu frasa lagu pilihan dengan audio latihan. Guru memberi isyarat mula untuk menyelaraskan nyanyian dan iringan.
 
-**Aktiviti 1 — Penerokaan (8 minit):** Murid membuat latihan terakhir dan menyemak alat sebelum memulakan persembahan.
+**Aktiviti 1 — Penerokaan (8 minit):** Murid menyemak audio lagu pilihan, alat perkusi dan ruang pergerakan. Guru membimbing setiap kumpulan berlatih bahagian yang belum seragam.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Setiap kumpulan membuat persembahan mini serta menerima ulasan berpandukan rubrik.
+**Aktiviti 2 — Amali / aplikasi (10 minit):** Setiap kumpulan mempersembahkan lagu pilihan dengan perkusi atau pergerakan. Murid mengisi borang penilaian kendiri dan memberikan satu ulasan kepada kumpulan lain.
 
 **Pengukuhan dan pentaksiran (6 minit):** Nilai penglibatan, kemahiran, kreativiti dan nilai murni.
 
 **Penutup (2 minit):** Murid menunjukkan semula kemahiran yang dipelajari, memberi satu refleksi dan menerima maklum balas guru.
 
-**Bahan:** Buku Teks Pendidikan Muzik Tahun 5 SK, DBP 2020, m/s 44-45; instrumen/kad/skor mengikut PdP.
+**Bahan:** Buku Teks Pendidikan Muzik Tahun 5 SK m/s 44–45, Audio 49–54 sebagai contoh Unit 4, alat perkusi dan borang projek.
 
 **Bukti buku:** https://anyflip.com/ziqkn/yatu/basic — semakan teks dan rujukan halaman untuk fokus ini, bukan kelulusan visual semua halaman.
 
-**Audio yang dicetak dalam buku:** Tiada trek khusus disahkan. **Fail audio sebenar belum diperiksa atau diaktifkan.**
+**Audio yang dicetak dalam buku:** Audio 49–54 ialah contoh lagu Hot Cross Buns dan Bow Wow Wow daripada Unit 4, m/s 27.
 
 **Nota audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks tiada BELUM disahkan pada buku asal; Kod SP projek mengikuti struktur DSKP Tahun 5; penomboran SP projek dalam RPT awam berbeza dan perlu pengesahan manual
 

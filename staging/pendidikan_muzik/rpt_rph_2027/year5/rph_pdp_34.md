@@ -10,21 +10,21 @@
 
 **Objektif:** Murid menyediakan pelan persembahan dengan tugasan untuk empat kumpulan.
 
-**Set induksi (4 minit):** Guru memperkenalkan satu contoh bunyi, skor atau pergerakan yang berkait dengan kemahiran PdP; murid mengajuk atau mengemukakan respons ringkas.
+**Set induksi (4 minit):** Guru memainkan petikan Joget Khatulistiwa sebagai contoh projek. Murid menepuk detik dan mengenal pasti bahagian nyanyian atau iringan.
 
-**Aktiviti 1 — Penerokaan (8 minit):** Guru menunjukkan contoh kumpulan nyanyian, perkusi, gerakan dan rekoder dalam buku.
+**Aktiviti 1 — Penerokaan (8 minit):** Guru membentuk empat kumpulan untuk nyanyian, perkusi, pergerakan dan rekoder. Murid memilih lagu daripada Unit 6–10 dan mengagihkan peranan.
 
-**Aktiviti 2 — Amali / aplikasi (10 minit):** Kumpulan menetapkan peranan, memilih aktiviti Unit 6–10 dan jadual latihan.
+**Aktiviti 2 — Amali / aplikasi (10 minit):** Murid mengisi borang tugas, menyediakan audio lagu pilihan dan menetapkan jadual latihan. Setiap kumpulan mencuba satu bahagian persembahan.
 
 **Pengukuhan dan pentaksiran (6 minit):** Semak tugas, peralatan dan kesediaan persembahan.
 
 **Penutup (2 minit):** Murid menunjukkan semula kemahiran yang dipelajari, memberi satu refleksi dan menerima maklum balas guru.
 
-**Bahan:** Buku Teks Pendidikan Muzik Tahun 5 SK, DBP 2020, m/s 88-89; instrumen/kad/skor mengikut PdP.
+**Bahan:** Buku Teks Pendidikan Muzik Tahun 5 SK m/s 88–89, audio contoh Joget Khatulistiwa, alat perkusi, rekoder dan borang projek.
 
 **Bukti buku:** https://anyflip.com/ziqkn/yatu/basic — semakan teks dan rujukan halaman untuk fokus ini, bukan kelulusan visual semua halaman.
 
-**Audio yang dicetak dalam buku:** Tiada trek khusus disahkan. **Fail audio sebenar belum diperiksa atau diaktifkan.**
+**Audio yang dicetak dalam buku:** Audio 137–139, 150–151 dan 158–161 ialah variasi Joget Khatulistiwa daripada Unit 10.
 
 **Nota audit:** Transkripsi RPT 2026 awam disemak; rujukan halaman buku teks tiada BELUM disahkan pada buku asal; Kod SP projek mengikuti struktur DSKP Tahun 5; penomboran SP projek dalam RPT awam berbeza dan perlu pengesahan manual
 

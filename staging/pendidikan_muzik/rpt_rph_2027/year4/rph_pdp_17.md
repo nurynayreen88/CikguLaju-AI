@@ -9,21 +9,21 @@
 
 **Objektif:** Memainkan frasa rekoder menggunakan penjarian G, A, B dan C’ dengan ton yang baik.
 
-**Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **LARIAN RIANG RIA**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
+**Set induksi (4 minit):** Guru memperdengarkan satu frasa latihan rekoder. Murid menunjukkan kedudukan jari bagi not G, A dan B sebelum mencuba not C’.
 
 **Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru menyemak postur serta cara meniup lembut sambil memperkenalkan penjarian not C’ seperti buku m/s 60.
 
 **Aktiviti 2 — Aplikasi muzik (10 minit):** Murid memainkan latihan rekoder 1–5 secara bertahap dan mengulang frasa yang tidak tepat pada tempo perlahan.
 
-**Pengukuhan dan pentaksiran (6 minit):** Catat ton, penjarian, postur dan perlidahan dengan dua percubaan.
+**Pengukuhan dan pentaksiran (6 minit):** Guru menilai ton, penjarian, postur dan perlidahan dalam dua percubaan. Sebagai pengayaan, murid menepuk corak irama melodi kaunter Cergas Badan dan memainkan satu frasa dengan iringan Audio 55 atau 56.
 
 **Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK m/s 60–61, rekoder, Audio 49–53 untuk latihan dan Audio 54–57 untuk pengayaan.
 
-**Rujukan buku teks:** m/s 60 daripada RPT rujukan yang padan dengan tema buku Kesenian Tahun 4. **Semakan teks unit/aktiviti dibuat, tetapi halaman penuh belum disahkan secara visual.** Sumber: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
+**Rujukan buku teks:** Buku Teks Pendidikan Kesenian Tahun 4 SK, DBP 2019, m/s 60–61. Latihan penjarian di m/s 60 dan skor melodi kaunter di m/s 61.
 
-**Rujukan audio bercetak:** 49–53. **Belum disahkan sama ada fail trek tersedia atau sepadan dengan laluan penghantaran.**
+**Rujukan audio bercetak:** Audio 49–53 untuk latihan rekoder. Audio 54–57 ialah vokal, instrumental, minus one dan melodi kaunter Cergas Badan.
 
 **Audit kod:** Pemetaan SP RPT belum kelulusan guru.
 
