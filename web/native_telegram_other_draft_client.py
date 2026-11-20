@@ -23,11 +23,14 @@ SOURCE = "telegram-provisional-subjects-2027-v1"
 SUBJECTS = ("ARAB", "MUZIK")
 UNIT = re.compile(r"u(?:0[1-9]|[1-9][0-9])|x[a-f0-9]{12}")
 PDP = re.compile(r"0[0-9][0-9]")
-REVIEWED_ARABIC_UNIT_ONE = tuple(f"{lesson:03d}" for lesson in range(1, 13))
+REVIEWED_ARABIC = {
+    "u01": {f"{lesson:03d}" for lesson in range(1, 13)},
+    "u02": {f"{lesson:03d}" for lesson in (*range(13, 18), 19, 20, *range(23, 29))},
+}
 
 
 def _reviewed_arabic_selection(year, subject, unit, lesson):
-    return (year, subject, unit) == (2, "ARAB", "u01") and lesson in REVIEWED_ARABIC_UNIT_ONE
+    return (year, subject) == (2, "ARAB") and lesson in REVIEWED_ARABIC.get(unit, ())
 
 
 def _check(year, subject, unit=None, lesson=None):
