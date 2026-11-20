@@ -28,7 +28,10 @@ NUM = re.compile(r"(?:00[1-9]|0[1-9]\d|[1-2]\d\d|3\d\d)")
 UNIT = re.compile(r"u(?:0[1-9]|[1-9][0-9])|x[a-f0-9]{12}")
 EXPECTED = {2:60,3:60,4:58,5:60,6:60}
 SUBJECTS = {"ARAB":"Bahasa Arab", "MUZIK":"Pendidikan Muzik"}
-REVIEWED_ARABIC = tuple((2, lesson) for lesson in range(1, 13))
+REVIEWED_ARABIC = tuple((2, lesson) for lesson in (
+    *range(1, 18), 19, 20, *range(23, 29),
+))
+ARABIC_TEXTBOOK_MISMATCH = {(2, 18), (2, 21), (2, 22)}
 
 
 def _check(year, subject, unit=None, lesson=None):
@@ -138,7 +141,7 @@ def _lesson_rows(year,subject,unit):
     rows=[]
     if subject=="ARAB":
         for (y,pdp),row in _arab_index().items():
-            if y!=year or f"u{int(row['unit']):02d}"!=unit:
+            if y!=year or f"u{int(row['unit']):02d}"!=unit or (y,pdp) in ARABIC_TEXTBOOK_MISMATCH:
                 continue
             focus=row["fokus"].strip()
             item={"value":f"{pdp:03d}","label":f"PdP {pdp:03d} — {focus} (DRAF)",

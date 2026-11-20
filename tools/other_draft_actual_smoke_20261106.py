@@ -26,7 +26,7 @@ def main():
     assert "CIKGULAJU_DB_PATH =" not in (
         entry.split("# Bahasa Arab + Pendidikan Muzik DRAF:")[1]
              .split("# Private source-matched RPT")[0])
-    for y,count in {2:60,3:60,4:58,5:60,6:60}.items():
+    for y,count in {2:57,3:60,4:58,5:60,6:60}.items():
         unit=_unit_rows(y,"ARAB")
         assert len(unit)==4
         lessons=0
@@ -43,7 +43,7 @@ def main():
         lessons=sum(len(_lesson_rows(y,"MUZIK",u["value"])) for u in unit)
         assert lessons==35,(y,lessons)
         print("MUZIK DRAF catalog",y,"unit",len(unit),"pdp",lessons,flush=True)
-    assert _arab_index() and _music_index(2)
+    assert len(_arab_index()) == 298 and _music_index(2)
     os.environ["BOT_TOKEN"]=""
     os.environ["GEMINI_API_KEY"]=""
     os.environ["CIKGULAJU_AUTHORITATIVE_API_TOKEN"]="t"*40
@@ -128,14 +128,24 @@ def main():
         "1.1.1", "1.1.2", "1.2.1", "2.1.1", "2.2.1", "3.1.1",
         "3.2.1", "1.3.1", "1.3.2", "2.3.5", "3.4.1", "1.4.1",
     )
-    assert sum(
-        lesson["status"] == "READY"
+    unit_two_standards = {
+        13: "1.1.1", 14: "2.2.2", 15: "1.1.1", 16: "2.2.2", 17: "3.1.1",
+        19: "1.3.1", 20: "1.3.2", 23: "1.4.1", 24: "1.4.5", 25: "2.3.1",
+        26: "3.4.1", 27: "1.4.5", 28: "2.5.1",
+    }
+    reviewed = {
+        ("u01", pdp): sp for pdp, sp in enumerate(unit_one_standards, start=1)
+    } | {("u02", pdp): sp for pdp, sp in unit_two_standards.items()}
+    actual = {
+        (y, unit["value"], int(lesson["value"]))
         for y in range(2, 7)
         for unit in _unit_rows(y, "ARAB")
         for lesson in _lesson_rows(y, "ARAB", unit["value"])
-    ) == len(unit_one_standards)
-    for pdp, sp in enumerate(unit_one_standards, start=1):
-        reviewed_lesson = {"year": 2, "subject": "ARAB", "unit": "u01", "lesson": f"{pdp:03d}"}
+        if lesson["status"] == "READY"
+    }
+    assert actual == {(2, unit, pdp) for unit, pdp in reviewed}
+    for (unit, pdp), sp in reviewed.items():
+        reviewed_lesson = {"year": 2, "subject": "ARAB", "unit": unit, "lesson": f"{pdp:03d}"}
         status = c.get("/internal/rph/v1/other-drafts/availability", query_string=reviewed_lesson,
                        headers=auth)
         assert status.json["status"] == "READY", status.json
@@ -159,7 +169,12 @@ def main():
         if pdp == 3:
             assert "محاكاة" in fields["معيار التعلّم"]
             assert "٣ و٥" in doc.tables[2].cell(1, 1).text
-    print("ARABIC_UNIT_ONE_12_WORD_PASS", flush=True)
+    print(f"ARABIC_REVIEWED_WORD_PASS {len(reviewed)}", flush=True)
+    for pdp in ("018", "021", "022"):
+        selection = {"year": 2, "subject": "ARAB", "unit": "u02", "lesson": pdp}
+        status = c.get("/internal/rph/v1/other-drafts/availability",
+                       query_string=selection, headers=auth)
+        assert status.status_code == 404, status.json
     year6={"year":6,"subject":"ARAB","unit":"u03","lesson":"030"}
     assert c.get("/internal/rph/v1/other-drafts/availability",query_string=year6,headers=auth).status_code==200
     result=c.post("/internal/rph/v1/other-drafts/render",headers=auth,json={
