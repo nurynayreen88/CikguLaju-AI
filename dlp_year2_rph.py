@@ -112,6 +112,14 @@ def filename(lesson_id, fmt):
     return f"CIKGULAJU_RPH_{lesson_id}." + ("docx" if fmt == "word" else "pdf")
 
 
+def science_class_fields(teacher, *, english, prefix=""):
+    labels = (("Date", "Time", "Class", "Number of pupils") if english
+              else ("Tarikh", "Masa", "Kelas", "Bilangan Murid"))
+    keys = ("date", "time", "class", "students")
+    return [(label, str(teacher.get(prefix + key) or "____________________"))
+            for key, label in zip(keys, labels)]
+
+
 def render(subject, unit, lesson, fmt, teacher):
     year = lesson.get("year", 2)
     lesson_label = lesson.get("numbered_label")
@@ -123,12 +131,8 @@ def render(subject, unit, lesson, fmt, teacher):
         f"{SUBJECTS[subject]} (DLP) · Year {year} SK",
         lesson["title"],
     )
-    class_details = (
-        ("Class", teacher["class"]),
-        ("Date", teacher["date"]),
-        ("Time", teacher["time"]),
-        ("Pupils", teacher["students"]),
-    )
+    mathematics = subject == "MATH_DLP"
+    class_fields = [] if mathematics else science_class_fields(teacher, english=True)
     if year == 2:
         ls_codes = [f"{code}{part}" for code, parts in _LEARNING_STANDARD.findall(lesson["standards"])
                     for part in parts.split(", ")]
@@ -138,8 +142,7 @@ def render(subject, unit, lesson, fmt, teacher):
     details = [
         ("Unit", unit["title"]),
         ("Lesson / PdP", lesson_label),
-        ("Class / date / time", "   ·   ".join(
-            f"{label}: {value or '________'}" for label, value in class_details)),
+        *class_fields,
         *standards,
         ("Teaching source" if lesson_label.startswith("Review ") and year == 2 else "Book references",
          lesson["references"]),
@@ -151,7 +154,7 @@ def render(subject, unit, lesson, fmt, teacher):
     activities = [("Phase", "Teacher", "Pupils"), *lesson["phases"]]
     reflection = [("Reflection", teacher.get("reflection") or lesson["reflection"])]
     output = BytesIO()
-    math_options = {"mathematics": True, "teacher": teacher} if subject == "MATH_DLP" else {}
+    math_options = {"mathematics": True, "teacher": teacher} if mathematics else {}
     if fmt == "word":
         _word(output, heading, details, activities, reflection, **math_options)
     elif fmt == "pdf":

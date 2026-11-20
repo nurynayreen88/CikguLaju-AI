@@ -11,7 +11,7 @@ import re
 
 from docx import Document
 
-from dlp_year2_rph import _pdf, _word
+from dlp_year2_rph import _pdf, _word, science_class_fields
 
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -197,17 +197,12 @@ def render_download(plan, fmt, teacher):
 
 def render_plan(stream, plan, renderer, *, teacher=None):
     teacher = teacher or {}
-    session = "  ".join(
-        f"{label}: {teacher.get(key) or '_______'}"
-        for key, label in (("class", "Class"), ("date", "Date"),
-                           ("time", "Time"), ("students", "Pupils"))
-    )
     heading = ("Daily Lesson Plan", "Science (DLP) · Year 6 SK", plan["title"])
     details = [
         ("Unit", plan["unit"]),
         ("Lesson / PdP", plan["label"]),
         ("RPT date ranges", plan["dates"]),
-        ("Class / date / time", session),
+        *science_class_fields(teacher, english=True),
         ("Content Standards", plan["content_standards"]),
         ("Learning Standards", plan["learning_standards"]),
         ("Book reference", plan["reference"]),

@@ -65,7 +65,9 @@ class DlpDownloadTests(unittest.TestCase):
         doc = Document(BytesIO(word.data))
         self.assertEqual(doc.paragraphs[2].text, "Explain Observations About a Built Model")
         fields = {left.text: right.text for left, right in (row.cells for row in doc.tables[0].rows)}
-        self.assertIn("2 Bestari", fields["Class / date / time"])
+        self.assertEqual([fields[label] for label in ("Date", "Time", "Class", "Number of pupils")],
+                         [self.teacher[key] for key in ("date", "time", "class", "students")])
+        self.assertNotIn("Class / date / time", fields)
         self.assertEqual(fields["Content Standards"], "10.1 Building sets")
         self.assertEqual(fields["Learning Standards"],
                          "10.1.6 Explain observations about a finished structure using drawings, digital tools, writing or speech")
@@ -76,6 +78,9 @@ class DlpDownloadTests(unittest.TestCase):
         self.assertEqual(pdf.mimetype, "application/pdf")
         self.assertTrue(pdf.data.startswith(b"%PDF-"))
         self.assertEqual(pdf.headers["Cache-Control"], "no-store, private")
+        pdf_text = " ".join(PdfReader(BytesIO(pdf.data)).pages[0].extract_text().split())
+        for label in ("Date", "Time", "Class", "Number of pupils"):
+            self.assertIn(f"{label} {fields[label]}", pdf_text)
         self.assertEqual(self.download("pdf", teacher=self.teacher | {"class": "X" * 41}).status_code, 400)
         self.assertEqual(self.download("pdf", teacher=self.teacher | {"reflection": "x\ny\nz\n1\n2\n3\n4"}).status_code, 400)
         self.assertEqual(self.client.post(self.path + "/render", json={}).status_code, 401)
@@ -151,8 +156,7 @@ class DlpDownloadTests(unittest.TestCase):
                         self.assertEqual(word.status_code, 200)
                         doc = Document(BytesIO(word.data))
                         fields = {a.text: b.text for a, b in (row.cells for row in doc.tables[0].rows)}
-                        teacher_field = "Class" if subject == "MATH_DLP" else "Class / date / time"
-                        self.assertIn("2 Bestari", fields[teacher_field])
+                        self.assertEqual(fields["Class"], self.teacher["class"])
                         self.assertEqual(fields["Learning objective"], plan["objective"])
                         self.assertNotIn("RPT 2027 dates", fields)
                         fill = "DCEBFA" if subject == "MATH_DLP" else "DFF1E3"
