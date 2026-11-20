@@ -113,9 +113,15 @@ class PpkiWebTest(unittest.TestCase):
         self.assertEqual(self.source_requests[-1][0], "rpt.pdf?year=3")
         materials = "/api/web/rph/extra-materials"
         self.assertEqual(self.client.get(materials, query_string=selection).json["items"], [])
-        video = self.client.get(materials, query_string={**selection, "lesson": "003"}).json["items"][0]
+        media = self.client.get(materials, query_string={**selection, "lesson": "003"}).json
+        self.assertEqual(media["status"], "SUMBER_ASAL")
+        video, audio = media["items"]
         self.assertEqual((video["type"], video["action"]), ("video", "Muat Turun Video"))
-        self.assertTrue(video["url"].startswith("https://drive.usercontent.google.com/download?"))
+        self.assertEqual((audio["type"], audio["action"]), ("audio", "Muat Turun Audio"))
+        self.assertIn("id=1oU6Nvp2LpwkI-zgBCZFgM7mkcwUV2q_u", video["url"])
+        self.assertIn("id=1uQtgQqy2mSFBRjENMi_NXmZc3M6T9x7b", audio["url"])
+        for item in (video, audio):
+            self.assertTrue(item["url"].startswith("https://drive.usercontent.google.com/download?"))
         self.paid = False
         self.assertEqual(self.client.get(url).status_code, 403)
         self.credits = 0

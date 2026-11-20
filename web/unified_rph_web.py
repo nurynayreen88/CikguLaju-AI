@@ -1253,8 +1253,12 @@ def create_blueprint():
                 ppki.validate_selection(year, sub, unit, token)
                 return jsonify({"status": "SUMBER_ASAL", "items": [{
                     "type": "video", "title": "Video lagu Boneka Jari · Buku Teks hlm. 17",
-                    "url": "https://drive.usercontent.google.com/download?id=1b3VtIASO63AsD5iJ5uohzeQebwO8VMnD&export=download&confirm=t",
+                    "url": "https://drive.usercontent.google.com/download?id=1oU6Nvp2LpwkI-zgBCZFgM7mkcwUV2q_u&export=download&confirm=t",
                     "action": "Muat Turun Video",
+                }, {
+                    "type": "audio", "title": "Audio lagu Boneka Jari · Buku Teks hlm. 17",
+                    "url": "https://drive.usercontent.google.com/download?id=1uQtgQqy2mSFBRjENMi_NXmZc3M6T9x7b&export=download&confirm=t",
+                    "action": "Muat Turun Audio",
                 }]})
             from web.native_telegram_extra_materials_20261106 import (
                 english_workbook_metadata, music_source_links,
