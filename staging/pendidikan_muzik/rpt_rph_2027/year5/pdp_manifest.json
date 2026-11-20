@@ -572,7 +572,8 @@
       "unit_number": 5,
       "unit": "RAJA DI LAUTAN",
       "sp": [
-        "2.4.1"
+        "2.4.1",
+        "2.4.2"
       ],
       "page": "42-43",
       "flags": [
@@ -594,7 +595,10 @@
       "source_book_audio_numbers_printed": "80–82",
       "source_book_audio_file_verified": false,
       "source_book_verification_level": "BUKU_ONLINE_TEKSTUAL_BUKAN_SEMAKAN_IMEJ_PENUH",
-      "rph_specificity_status": "TEKS_BUKU_TAHUN5_DIINTEGRASI"
+      "rph_specificity_status": "TEKS_BUKU_TAHUN5_DIINTEGRASI",
+      "sp_rpt_source": [
+        "2.4.1"
+      ]
     },
     {
       "pdp_id": "MZ-Y5-18",

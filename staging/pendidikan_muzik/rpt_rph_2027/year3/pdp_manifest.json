@@ -567,7 +567,7 @@
       "unit_number": 8,
       "sp": [
         "1.2.2",
-        "2.4.1"
+        "2.4.2"
       ],
       "page": "70-71",
       "audio": "59-63",
@@ -580,11 +580,15 @@
       "source_book_text_crosscheck": true,
       "source_book_crosscheck_scope": "SEMAKAN_TEKSTUAL_BUKU_BERPANDUKAN_HALAMAN; BUKAN_VISUAL_SCORE_AUDIO",
       "source_book_textbook": "Pendidikan Kesenian Tahun 3 SK DBP 2018 KSSR Semakan 2017",
-      "source_book_crosscheck_source_url": "https://anyflip.com/lcinm/flxx/basic/51-100",
+      "source_book_crosscheck_source_url": "https://anyflip.com/pkots/gcvz/basic",
       "source_book_audio_file_verified": false,
       "validation_status": "DRAF_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL",
       "source_book_sp_printed": "1.2.4, 2.2.9(ii), 2.2.11",
-      "source_book_audio_numbers_printed": "59–63"
+      "source_book_audio_numbers_printed": "59–63",
+      "source_rpt_original_sp": [
+        "1.2.2",
+        "2.4.1"
+      ]
     },
     {
       "pdp_id": "MZ-Y3-22",

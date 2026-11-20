@@ -382,7 +382,8 @@
       "pdp": 24,
       "unit": "ULI-ULI TEMBIKAR",
       "manifest_sp": [
-        "2.1.3"
+        "2.2.1",
+        "2.3.2"
       ],
       "sp_not_found_in_source": [],
       "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
@@ -488,7 +489,8 @@
       "pdp": 32,
       "unit": "SEGARNYA AIR TERJUN",
       "manifest_sp": [
-        "3.1.1"
+        "3.1.2",
+        "3.1.3"
       ],
       "sp_not_found_in_source": [],
       "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
@@ -812,7 +814,7 @@
       "unit": "CANTIK BERCAHAYA",
       "manifest_sp": [
         "1.2.2",
-        "2.4.1"
+        "2.4.2"
       ],
       "sp_not_found_in_source": [],
       "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
@@ -1069,7 +1071,8 @@
       "pdp": 5,
       "unit": "WARNA WARNI KEK CAWAN",
       "manifest_sp": [
-        "1.1.1"
+        "2.2.1",
+        "2.2.2"
       ],
       "sp_not_found_in_source": [],
       "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
@@ -1742,7 +1745,8 @@
       "pdp": 17,
       "unit": "RAJA DI LAUTAN",
       "manifest_sp": [
-        "2.4.1"
+        "2.4.1",
+        "2.4.2"
       ],
       "sp_not_found_in_source": [],
       "code_text_presence": "ALL_SP_CODES_PRESENT_IN_MUSIC_DSKP_EXTRACTED_TEXT",
