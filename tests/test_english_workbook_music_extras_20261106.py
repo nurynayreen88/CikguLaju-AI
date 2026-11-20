@@ -93,7 +93,7 @@ class EnglishWorkbookMaterials(unittest.TestCase):
 
 
 class MusicExternalLinkOnly(unittest.TestCase):
-    def test_music_source_links_never_claim_download_or_audio_verification(self):
+    def test_music_download_links_point_to_the_same_original_source(self):
         runtime=Mock()
         runtime.create_word_file=lambda *args:None
         runtime.create_pdf_file=lambda *args:None
@@ -113,10 +113,14 @@ class MusicExternalLinkOnly(unittest.TestCase):
             self.assertEqual(okay.status_code,200)
             self.assertEqual(okay.json["status"],"DRAF")
             self.assertIs(okay.json["download_available"],False)
+            self.assertIs(okay.json["content_verified"],False)
+            self.assertEqual(len(okay.json["links"]),4)
             for item in okay.json["links"]:
                 self.assertTrue(item["url"].startswith("https://drive.google.com/file/d/"))
                 self.assertIn("view?",item["url"])
-                self.assertNotIn("download_url",item)
+                file_id=item["url"].split("/")[5]
+                self.assertEqual(item["download_url"],
+                    f"https://drive.usercontent.google.com/download?id={file_id}&export=download")
             self.assertNotIn("Content-Disposition",okay.headers)
 
 
