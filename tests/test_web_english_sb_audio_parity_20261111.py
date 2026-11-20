@@ -206,11 +206,14 @@ class WebEnglishSourceTests(unittest.TestCase):
         html = (ROOT / "web_v1_static_preview" / "index.html").read_text("utf8")
         self.assertIn("ownStudentBook", html)
         self.assertIn("ownEnglishAudio", html)
-        self.assertIn("externalMusic", html)
+        self.assertIn("musicDownload", html)
+        self.assertNotIn("Buka Audio Sumber", html)
         self.assertNotIn("audio_storage_file_id", html)
         today = (ROOT / "web_v1_static_preview" / "rph-today.js").read_text("utf8")
         self.assertIn("/api/web/rph/english-student-book?", today)
         self.assertIn("english-audio", today)
+        self.assertIn("musicDownload", today)
+        self.assertNotIn("Buka Audio Sumber", today)
 
     def test_science_book_download_requires_exact_native_lesson_and_private_file(self):
         prefix = "web.native_textbook_references."
