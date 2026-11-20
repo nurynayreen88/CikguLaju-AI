@@ -115,6 +115,26 @@ class ActivityHeadingTypographyTests(unittest.TestCase):
         self.assertEqual(runtime._rph_activity_heading_markup_v25184(
             "Aktiviti 1: Uji"),"Aktiviti 1: Uji")
 
+    def test_shared_renderer_formats_verified_pi_standard_rows(self):
+        runtime = SimpleNamespace(
+            create_word_file=lambda state, text, chat_id: "existing.docx",
+            _rph_activity_heading_markup_v25184=html.escape,
+            _rph_document_rows=lambda state, rows: rows,
+            _pi_primary_v25210=lambda state: state["subject"] == "Pendidikan Islam",
+        )
+        install(runtime)
+        row = {"STANDARD PEMBELAJARAN": "Original"}
+        source = {
+            "subject": "Pendidikan Islam", "year": "Tahun 6",
+            "selected_sp_codes": ["1.6.2", "1.6.3"],
+            "grouped_sp_texts": ["1.6.2 ممباچ. 1.6.3 مڠعملكن."] * 2,
+        }
+        self.assertEqual(runtime._rph_document_rows(source, row), {
+            "STANDARD PEMBELAJARAN": "1.6.2 ممباچ.\n1.6.3 مڠعملكن.",
+        })
+        self.assertIs(runtime._rph_document_rows({**source, "year": "Tahun 1"}, row), row)
+        self.assertIs(runtime._rph_document_rows({**source, "subject": "Bahasa Arab"}, row), row)
+
 
 if __name__=="__main__":
     unittest.main()
