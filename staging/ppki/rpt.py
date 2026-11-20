@@ -6,7 +6,8 @@ from staging.ppki.catalog import (
     MANIPULATIVE_UNIT_LESSONS, RPT_COMBINED_EDITION, RPT_YEAR3_EDITION, UNIT, UNIT_LESSONS,
     YEAR, YEAR3_LESSONS, YEAR3_MANIPULATIVE_UNIT_LESSONS,
     RPT_YEAR4_EDITION, YEAR4_LESSONS, YEAR4_MANIPULATIVE_UNIT_LESSONS, RPT_YEAR5_EDITION, YEAR5_LESSONS,
-    YEAR5_MANIPULATIVE_UNIT_LESSONS, RPT_YEAR6_EDITION, YEAR6_LESSONS, catalog,
+    YEAR5_MANIPULATIVE_UNIT_LESSONS, RPT_YEAR6_EDITION, YEAR6_LESSONS,
+    YEAR6_MANIPULATIVE_UNIT_LESSONS, catalog,
 )
 from staging.ppki.render_pengurusan_kehidupan import PPKI_LABEL_FILL
 
@@ -55,11 +56,12 @@ def render_rpt(*, combined=False, manipulative=False, year=YEAR):
             table,
         ]
 
-    if year in (3, 4, 5) and manipulative:
+    if year in (3, 4, 5, 6) and manipulative:
         units = {
             3: YEAR3_MANIPULATIVE_UNIT_LESSONS,
             4: YEAR4_MANIPULATIVE_UNIT_LESSONS,
             5: YEAR5_MANIPULATIVE_UNIT_LESSONS,
+            6: YEAR6_MANIPULATIVE_UNIT_LESSONS,
         }[year]
         edition = "Kemahiran Manipulatif Unit 1–3"
     elif year == 3:
@@ -90,10 +92,11 @@ def render_rpt(*, combined=False, manipulative=False, year=YEAR):
         if story:
             story.append(PageBreak())
         number = int(unit[1:3])
-        if year == 5 and manipulative and number == 1:
-            story.extend(unit_story(unit, number, end=12, part=" · Bahagian 1"))
+        split_at = {5: 12, 6: 11}.get(year) if manipulative and number == 1 else None
+        if split_at is not None:
+            story.extend(unit_story(unit, number, end=split_at, part=" · Bahagian 1"))
             story.append(PageBreak())
-            story.extend(unit_story(unit, number, start=12, part=" · Bahagian 2"))
+            story.extend(unit_story(unit, number, start=split_at, part=" · Bahagian 2"))
         else:
             story.extend(unit_story(unit, number))
     doc.build(story)

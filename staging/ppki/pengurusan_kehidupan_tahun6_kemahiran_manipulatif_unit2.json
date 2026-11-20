@@ -1,0 +1,307 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 6,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Kemahiran Manipulatif",
+  "unit": "Unit 2 · Seiring dan Sejalan",
+  "content_standards": {
+    "2.1": "Kemahiran bilateral",
+    "2.2": "Manipulasi alatan dan bahan",
+    "2.3": "Kemahiran visual-motor"
+  },
+  "learning_standards": {
+    "2.1.1": "Mengenal pasti gerakan dua tangan ketika menggali, menggembur, menyodok, memotong, memetik dan menyiram",
+    "2.1.2": "Melakukan simulasi pergerakan bilateral",
+    "2.1.3": "Mengaplikasi pergerakan bilateral dalam perkebunan dengan selamat",
+    "2.2.1": "Mengenal pasti gerakan menguli, mencanai, menerap, memerah dan menumbuk",
+    "2.2.2": "Melakukan pergerakan yang melibatkan manipulasi alatan dan bahan",
+    "2.2.3": "Mengaplikasi manipulasi dalam aktiviti memasak dan kraf tangan dengan selamat",
+    "2.3.1": "Mengenal pasti gerakan visual-motor dalam aktiviti menaip dan permainan video",
+    "2.3.2": "Menggunakan papan kekunci dan tetikus ketika menaip",
+    "2.3.3": "Melakukan gerakan sentuh dan leret dalam permainan video",
+    "2.3.4": "Mengaplikasi kemahiran visual-motor pada komputer dan telefon bimbit"
+  },
+  "lessons": [
+    {
+      "pdp": "054",
+      "title": "Kenal gerakan dua tangan di kebun",
+      "sp": "2.1.1",
+      "focus": "Kenal gerakan dua tangan di kebun.",
+      "book": "Buku Teks hlm. 82–83",
+      "objective": "Murid dapat mengenal pasti sekurang-kurangnya empat daripada enam pergerakan perkebunan.",
+      "materials": "Kad aksi, penyiram kecil dan alatan kebun tiruan",
+      "induction": [
+        "Menunjukkan cara memegang bekas sambil menyodok bahan latihan.",
+        "Menyebut peranan satu tangan pada setiap alatan."
+      ],
+      "guided": [
+        "Memperkenalkan kad menggali, menggembur, menyodok, memotong, memetik dan menyiram.",
+        "Memadankan gambar alatan dengan aksi sambil menunjuk peranan kedua-dua tangan."
+      ],
+      "practice": [
+        "Memberi beberapa gambar situasi Kebun Mini untuk dipadankan.",
+        "Menyatakan gerakan dan menunjukkan pegangan awal tanpa alat tajam."
+      ],
+      "closure": [
+        "Memilih satu situasi untuk semakan ringkas.",
+        "Menunjukkan cara kedua-dua tangan menyediakan gerakan tersebut."
+      ],
+      "support": "Gunakan alatan ringan dan satu demonstrasi pada satu masa.",
+      "assessment": "Guru merekod sama ada murid dapat mengenal pasti sekurang-kurangnya empat daripada enam pergerakan perkebunan.",
+      "follow_up": "Cadangkan satu tugasan lain yang juga menggunakan kedua-dua tangan."
+    },
+    {
+      "pdp": "055",
+      "title": "Simulasikan pergerakan bilateral",
+      "sp": "2.1.2",
+      "focus": "Simulasikan pergerakan bilateral.",
+      "book": "Buku Teks hlm. 82–84",
+      "objective": "Murid dapat melakukan dua simulasi gerakan bilateral dengan pegangan stabil.",
+      "materials": "Bekas latihan, bahan pengganti tanah dan alat tumpul",
+      "induction": [
+        "Memaparkan dua kad gerakan di kebun.",
+        "Memilih kad gerakan pertama dan menamakan alatannya."
+      ],
+      "guided": [
+        "Mencontohkan cara menstabilkan bekas ketika menyodok dan menyiram.",
+        "Mencuba pegangan tanpa menggunakan bahan sebenar."
+      ],
+      "practice": [
+        "Membimbing latihan bergilir di dua stesen simulasi.",
+        "Melakukan dua gerakan dengan kedua-dua tangan dan memulangkan alat selepas giliran."
+      ],
+      "closure": [
+        "Menyemak kedudukan tangan serta ruang kerja.",
+        "Memperbaik pegangan pada percubaan terakhir."
+      ],
+      "support": "Gunakan pemegang besar dan alas antiegelincir.",
+      "assessment": "Guru merekod sama ada murid dapat melakukan dua simulasi gerakan bilateral dengan pegangan stabil.",
+      "follow_up": "Gabungkan dua gerakan mengikut urutan kad."
+    },
+    {
+      "pdp": "056",
+      "title": "Aplikasi dua tangan semasa menanam kacang",
+      "sp": "2.1.3",
+      "focus": "Aplikasi dua tangan semasa menanam kacang.",
+      "book": "Buku Teks hlm. 83–84",
+      "objective": "Murid dapat mengaplikasi dua gerakan bilateral dengan selamat semasa menyediakan semaian.",
+      "materials": "Biji kacang renek, bekas, media semaian dan alat tumpul",
+      "induction": [
+        "Menunjukkan gambar tanaman dan bekas semaian.",
+        "Menyatakan urutan asas sebelum menyiram."
+      ],
+      "guided": [
+        "Menunjukkan cara satu tangan memegang bekas ketika tangan lain mengisi media dan menanam biji.",
+        "Meniru langkah awal pada bekas latihan."
+      ],
+      "practice": [
+        "Mengawasi tugasan kebun di ruang bertanda dan menyesuaikan berat penyiram.",
+        "Mengisi bekas, menanam biji dan menyiram secara terkawal."
+      ],
+      "closure": [
+        "Membimbing murid menyusun alatan serta membersihkan tangan.",
+        "Menerangkan satu gerakan dua tangan yang digunakan."
+      ],
+      "support": "Sediakan bekas rendah dan media siap disukat.",
+      "assessment": "Guru merekod sama ada murid dapat mengaplikasi dua gerakan bilateral dengan selamat semasa menyediakan semaian.",
+      "follow_up": "Rekod perubahan tanaman sambil mengulang rutin menyiram."
+    },
+    {
+      "pdp": "057",
+      "title": "Kenal lima gerakan manipulasi di dapur",
+      "sp": "2.2.1",
+      "focus": "Kenal lima gerakan manipulasi di dapur.",
+      "book": "Buku Teks hlm. 85–86",
+      "objective": "Murid dapat mengenal pasti sekurang-kurangnya empat daripada lima gerakan manipulasi.",
+      "materials": "Kad aksi dan alatan latihan tumpul",
+      "induction": [
+        "Memaparkan kad doh dan acuan.",
+        "Memilih kad gerakan yang berkaitan."
+      ],
+      "guided": [
+        "Menunjukkan gerakan menguli, mencanai, menerap, memerah dan menumbuk menggunakan contoh selamat.",
+        "Menyebut atau menunjuk label yang sepadan selepas melihat aksi."
+      ],
+      "practice": [
+        "Mengedarkan gambar situasi daripada tema Tangkas di Dapur.",
+        "Memadankan setiap alatan dengan tindakan yang ditunjukkan."
+      ],
+      "closure": [
+        "Menunjukkan dua gerakan untuk dibandingkan.",
+        "Menyatakan satu beza pada cara menggunakan alatan."
+      ],
+      "support": "Mulakan dengan dua alat yang berbeza jelas.",
+      "assessment": "Guru merekod sama ada murid dapat mengenal pasti sekurang-kurangnya empat daripada lima gerakan manipulasi.",
+      "follow_up": "Namakan gerakan yang digunakan untuk membentuk kraf doh."
+    },
+    {
+      "pdp": "058",
+      "title": "Latih tindakan menguli, mencanai dan menerap",
+      "sp": "2.2.2",
+      "focus": "Latih tindakan menguli, mencanai dan menerap.",
+      "book": "Buku Teks hlm. 85–87",
+      "objective": "Murid dapat melakukan tiga gerakan manipulasi mengikut urutan.",
+      "materials": "Doh latihan, penggelek ringan dan acuan tumpul",
+      "induction": [
+        "Menunjukkan sampel doh sebelum dan selepas dibentuk.",
+        "Memilih satu kad aksi bagi setiap keadaan doh."
+      ],
+      "guided": [
+        "Mencontohkan cara menggunakan penggelek dan mengawal ketebalan doh.",
+        "Mencuba gerakan pada bahagian kecil doh latihan."
+      ],
+      "practice": [
+        "Menyediakan urutan uli, canai dan terap pada kad.",
+        "Melakukan tiga gerakan pada alas tanpa mengganggu ruang rakan."
+      ],
+      "closure": [
+        "Membimbing semakan bentuk dan susunan alatan.",
+        "Menamakan gerakan yang telah menghasilkan bentuk akhir."
+      ],
+      "support": "Gunakan doh lembut dan penggelek kecil.",
+      "assessment": "Guru merekod sama ada murid dapat melakukan tiga gerakan manipulasi mengikut urutan.",
+      "follow_up": "Bentuk corak baharu menggunakan acuan yang berlainan."
+    },
+    {
+      "pdp": "059",
+      "title": "Aplikasi manipulasi dalam kuih dan kraf",
+      "sp": "2.2.3",
+      "focus": "Aplikasi manipulasi dalam kuih dan kraf.",
+      "book": "Buku Teks hlm. 86–88",
+      "objective": "Murid dapat mengaplikasi dua gerakan manipulasi dalam dua konteks menggunakan alat tumpul dengan selamat.",
+      "materials": "Doh latihan, acuan tumpul dan kad kuih serta kraf",
+      "induction": [
+        "Menunjukkan gambar Kuih Kelepung Pelangi dan Batik Cham.",
+        "Menamakan satu gerakan yang boleh digunakan pada kedua-dua hasil."
+      ],
+      "guided": [
+        "Memodelkan langkah menguli dan menerap menggunakan doh latihan tanpa haba.",
+        "Mencuba setiap gerakan mengikut tanda pada alas."
+      ],
+      "practice": [
+        "Menjalankan dua stesen membentuk kuih olok-olok dan membuat corak kraf.",
+        "Menggunakan alatan yang sesuai untuk menghasilkan bentuk dan corak dengan selamat."
+      ],
+      "closure": [
+        "Membimbing semakan hasil dan mengemas ruang.",
+        "Menjelaskan satu perbezaan cara menggunakan alatan antara dua stesen."
+      ],
+      "support": "Sediakan doh siap dan kad langkah ringkas.",
+      "assessment": "Guru merekod sama ada murid dapat mengaplikasi dua gerakan manipulasi dalam dua konteks menggunakan alat tumpul dengan selamat.",
+      "follow_up": "Pilih bentuk lain dan terangkan cara menukar susunan gerakan."
+    },
+    {
+      "pdp": "060",
+      "title": "Kenal gerakan mata dan tangan pada peranti",
+      "sp": "2.3.1",
+      "focus": "Kenal gerakan mata dan tangan pada peranti.",
+      "book": "Buku Teks hlm. 89–91",
+      "objective": "Murid dapat mengenal pasti empat gerakan visual-motor berdasarkan peranti.",
+      "materials": "Kad skrin, papan kekunci dan tetikus latihan",
+      "induction": [
+        "Menunjukkan gambar papan kekunci, tetikus dan skrin sentuh.",
+        "Menamakan peranti yang ditunjukkan."
+      ],
+      "guided": [
+        "Memadankan gerakan tekan, klik, sentuh dan leret dengan peranti.",
+        "Menunjuk padanan apabila satu gerakan dipersembahkan."
+      ],
+      "practice": [
+        "Menunjukkan situasi menaip dan permainan video ringkas tanpa akaun.",
+        "Memilih tindakan tangan yang diperlukan berdasarkan arahan pada skrin."
+      ],
+      "closure": [
+        "Menyemak jawapan dengan satu kad situasi baharu.",
+        "Menamakan peranti dan gerakan yang sesuai."
+      ],
+      "support": "Gunakan kad skrin bercetak dan gerakan olok-olok.",
+      "assessment": "Guru merekod sama ada murid dapat mengenal pasti empat gerakan visual-motor berdasarkan peranti.",
+      "follow_up": "Bezakan penggunaan papan kekunci dengan tetikus dalam satu tugas."
+    },
+    {
+      "pdp": "061",
+      "title": "Tekan papan kekunci dan klik tetikus",
+      "sp": "2.3.2",
+      "focus": "Tekan papan kekunci dan klik tetikus.",
+      "book": "Buku Teks hlm. 90–91",
+      "objective": "Murid dapat menggunakan klik dan papan kekunci untuk menaip tiga perkataan berpandukan contoh.",
+      "materials": "Komputer latihan luar talian, kad perkataan dan tetikus",
+      "induction": [
+        "Memaparkan kotak teks yang belum dipilih.",
+        "Menunjuk tempat kursor sepatutnya diletakkan."
+      ],
+      "guided": [
+        "Menunjukkan cara mengklik kotak dan menekan huruf yang sepadan.",
+        "Mencuba satu huruf selepas memilih tempat menaip."
+      ],
+      "practice": [
+        "Meminta murid menaip tiga perkataan daripada kad.",
+        "Mengklik ruang, menaip dan menyemak huruf berpandukan kad."
+      ],
+      "closure": [
+        "Menunjukkan satu huruf yang perlu dibetulkan.",
+        "Membetulkan huruf dengan bantuan isyarat pada papan kekunci."
+      ],
+      "support": "Gunakan papan kekunci berlabel besar dan kursor jelas.",
+      "assessment": "Guru merekod sama ada murid dapat menggunakan klik dan papan kekunci untuk menaip tiga perkataan berpandukan contoh.",
+      "follow_up": "Taip frasa ringkas dalam kotak teks yang berbeza."
+    },
+    {
+      "pdp": "062",
+      "title": "Sentuh dan leret dalam permainan latihan",
+      "sp": "2.3.3",
+      "focus": "Sentuh dan leret dalam permainan latihan.",
+      "book": "Buku Teks hlm. 92–93",
+      "objective": "Murid dapat melakukan dua sentuhan dan dua leretan dengan tepat pada skrin latihan.",
+      "materials": "Tablet luar talian dengan latihan padanan tempatan",
+      "induction": [
+        "Menunjukkan sasaran sebelum dan selepas ikon dialihkan.",
+        "Menunjuk sasaran yang perlu disentuh."
+      ],
+      "guided": [
+        "Menunjukkan perbezaan sentuhan ringkas dengan leretan pada skrin.",
+        "Mencuba setiap gerakan pada ikon besar."
+      ],
+      "practice": [
+        "Menjalankan permainan padanan tempatan yang bebas daripada log masuk.",
+        "Menyentuh ikon dan meleret bentuk ke ruang yang ditunjukkan secara bergilir."
+      ],
+      "closure": [
+        "Membimbing murid menilai tindakan apabila ikon tidak bergerak.",
+        "Melaras arah atau kedudukan jari sebelum mengulangi."
+      ],
+      "support": "Letakkan tablet di atas alas dan gunakan sasaran besar.",
+      "assessment": "Guru merekod sama ada murid dapat melakukan dua sentuhan dan dua leretan dengan tepat pada skrin latihan.",
+      "follow_up": "Padankan lebih banyak bentuk selepas dua percubaan berjaya."
+    },
+    {
+      "pdp": "063",
+      "title": "Gunakan kemahiran visual-motor pada dua peranti",
+      "sp": "2.3.4",
+      "focus": "Gunakan kemahiran visual-motor pada dua peranti.",
+      "book": "Buku Teks hlm. 92–95",
+      "objective": "Murid dapat menyelesaikan satu tugasan visual-motor pada setiap peranti.",
+      "materials": "Komputer dan tablet latihan luar talian serta kad tugasan",
+      "induction": [
+        "Menunjukkan kad tugasan yang menggunakan dua peranti.",
+        "Memadankan langkah dengan peranti yang sesuai."
+      ],
+      "guided": [
+        "Memodelkan cara menaip dan mengklik pada komputer serta sentuh dan leret pada tablet.",
+        "Menyusun kad urutan untuk dua stesen latihan."
+      ],
+      "practice": [
+        "Membimbing tugasan menyalin kata dan memindahkan ikon tanpa maklumat peribadi.",
+        "Melengkapkan tugasan pada kedua-dua peranti dan menyemak paparan akhir."
+      ],
+      "closure": [
+        "Membincangkan perbezaan cara mengawal skrin.",
+        "Menyatakan fungsi satu gerakan pada setiap peranti."
+      ],
+      "support": "Benarkan kad simulasi jika peranti dikongsi.",
+      "assessment": "Guru merekod sama ada murid dapat menyelesaikan satu tugasan visual-motor pada setiap peranti.",
+      "follow_up": "Gunakan rangka kerja yang sama dengan tugasan padanan lain."
+    }
+  ]
+}
