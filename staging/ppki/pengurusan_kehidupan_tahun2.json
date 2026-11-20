@@ -8,7 +8,8 @@
   "status": "DALAM_SEMAKAN",
   "content_standards": {
     "2.1": "Penjagaan kebersihan anggota badan.",
-    "2.2": "Penjagaan kebersihan pakaian."
+    "2.2": "Penjagaan kebersihan pakaian.",
+    "2.3": "Penjagaan kebersihan di luar bilik darjah."
   },
   "learning_standards": {
     "2.1.1": "Menyatakan cara menjaga kebersihan anggota badan.",
@@ -17,7 +18,11 @@
     "2.2.1": "Menamakan alatan dan bahan membersih pakaian.",
     "2.2.2": "Menyatakan fungsi alatan dan bahan membersih pakaian.",
     "2.2.3": "Menunjukkan cara menggunakan alatan dan bahan membersih pakaian.",
-    "2.2.4": "Menunjukkan langkah menjaga keselamatan semasa menggunakan alatan dan bahan membersih pakaian."
+    "2.2.4": "Menunjukkan langkah menjaga keselamatan semasa menggunakan alatan dan bahan membersih pakaian.",
+    "2.3.1": "Menamakan alatan menjaga kebersihan di luar bilik darjah.",
+    "2.3.2": "Menyatakan fungsi alatan menjaga kebersihan di luar bilik darjah.",
+    "2.3.3": "Menunjukkan cara menggunakan alatan menjaga kebersihan di luar bilik darjah.",
+    "2.3.4": "Menunjukkan langkah menjaga keselamatan sebelum dan selepas aktiviti membersih di luar bilik darjah."
   },
   "lessons": [
     {
@@ -179,6 +184,70 @@
       "assessment": "Guru rekod respons yang ditunjukkan dalam ketiga-tiga situasi dan catat jenis bantuan.",
       "closure": ["Ulang isyarat berhenti pada gambar situasi berisiko.", "Tunjukkan cara meminta bantuan guru."],
       "follow_up": "Ulang lakonan bagi situasi yang belum mendapat respons selamat."
+    },
+    {
+      "pdp": "011",
+      "title": "Kenali alatan kebersihan di luar bilik darjah",
+      "sp": "2.3.1",
+      "focus": "Menamakan penyapu, penyodok, tong sampah dan kain lap",
+      "book": "Buku Teks hlm. 20–21",
+      "objective": "Menamakan sekurang-kurangnya tiga daripada empat alatan kebersihan yang ditunjukkan.",
+      "materials": "Penyapu, penyodok, tong sampah, kain lap dan kad gambar alatan.",
+      "induction": ["Tunjuk gambar gotong-royong di halaman 20.", "Pilih satu alatan yang dikenali pada gambar."],
+      "guided": ["Sebut nama dan tunjukkan setiap alatan sebenar.", "Ulang nama atau pilih kad nama yang sepadan."],
+      "practice": ["Tukar kedudukan alatan dan tunjuk satu item setiap giliran.", "Namakan alatan melalui pertuturan, isyarat nama atau kad komunikasi."],
+      "support": "Beri dua pilihan gambar pada peringkat latihan. Gunakan objek atau gambar besar dan kurangkan bantuan semasa pentaksiran.",
+      "assessment": "Guru rekod sekurang-kurangnya tiga penamaan tepat daripada empat alatan dan petunjuk yang digunakan.",
+      "closure": ["Pilih satu kad daripada kotak gambar.", "Sebut atau pilih nama alatan pada kad."],
+      "follow_up": "Ulang nama alatan yang masih dikelirukan menggunakan objek sebenar."
+    },
+    {
+      "pdp": "012",
+      "title": "Fungsi alatan kebersihan di luar kelas",
+      "sp": "2.3.2",
+      "focus": "Memilih alatan yang sesuai untuk kerja kebersihan",
+      "book": "Buku Teks hlm. 20–22",
+      "objective": "Menyatakan sekurang-kurangnya tiga daripada empat fungsi alatan berdasarkan situasi yang ditunjukkan.",
+      "materials": "Kad penyapu, penyodok, tong sampah dan kain lap serta empat kad situasi.",
+      "induction": ["Paparkan gambar daun kering bertaburan di laluan.", "Pilih satu alatan yang sesuai bagi gambar itu."],
+      "guided": ["Modelkan fungsi penyapu, penyodok, tong sampah dan kain lap.", "Padankan setiap alatan dengan gambar kegunaannya."],
+      "practice": ["Bentangkan empat situasi secara rawak.", "Nyatakan fungsi alatan yang dipilih atau padankannya dengan kad tindakan."],
+      "support": "Gunakan dua gambar bagi setiap situasi. Murid yang bersedia memberikan alasan berkaitan kerja yang dipilih.",
+      "assessment": "Guru merekod bilangan fungsi yang tepat daripada empat dan jenis petunjuk bagi setiap jawapan.",
+      "closure": ["Lakonkan penggunaan satu alatan seperti permainan halaman 22.", "Pilih gambar alatan dan nyatakan kegunaannya."],
+      "follow_up": "Ulang fungsi yang belum dikenal pasti melalui demonstrasi ringkas."
+    },
+    {
+      "pdp": "013",
+      "title": "Amali menyapu laluan di luar bilik darjah",
+      "sp": "2.3.3",
+      "focus": "Menggunakan penyapu, penyodok dan tong sampah",
+      "book": "Buku Teks hlm. 20–21",
+      "objective": "Menunjukkan tiga tindakan yang betul, iaitu menyapu, memasukkan bahan ke dalam penyodok dan membuangnya ke tong.",
+      "materials": "Penyapu ringan, penyodok bertangkai, tong sampah, kertas latihan dan tanda sempadan.",
+      "induction": ["Tinjau kawasan kering yang sudah diperiksa dan tandakan sempadannya.", "Kenal pasti tapak kerja dan pilih alatan."],
+      "guided": ["Modelkan sapuan pendek dan cara menahan penyodok ketika memasukkan kertas.", "Tiru tindakan ketika guru menunjukkan gerakan."],
+      "practice": ["Pantau murid menggunakan kertas bersih dalam kawasan ditetapkan.", "Sapu kertas, masukkan ke penyodok dan pindahkan ke tong."],
+      "support": "Pilih alatan sesuai dengan capaian dan genggaman murid. Gunakan kad urutan atau bahagikan tindakan dalam pasangan semasa latihan.",
+      "assessment": "Guru tanda setiap satu daripada tiga tindakan yang ditunjukkan oleh murid dan rekod bantuan.",
+      "closure": ["Tunjukkan tempat menyimpan alatan dan arahkan murid cuci tangan.", "Simpan alatan dan cuci tangan."],
+      "follow_up": "Latih semula tindakan yang belum ditunjukkan dengan yakin."
+    },
+    {
+      "pdp": "014",
+      "title": "Keselamatan sebelum dan selepas gotong-royong",
+      "sp": "2.3.4",
+      "focus": "Persediaan sebelum bekerja dan mengemas selepas kegiatan kebersihan",
+      "book": "Buku Teks hlm. 21",
+      "objective": "Menunjukkan dua tindakan selamat sebelum dan dua tindakan selepas gotong-royong.",
+      "materials": "Sarung tangan yang sesuai, tanda sempadan, penyapu, rak alatan, kemudahan cuci tangan dan kad sebelum/selepas.",
+      "induction": ["Paparkan dua gambar kawasan yang akan dan telah dibersihkan.", "Asingkan kad kepada situasi sebelum dan selepas."],
+      "guided": ["Modelkan pakai sarung tangan dan kenal pasti sempadan. Akhiri dengan menyimpan alatan dan mencuci tangan.", "Tiru empat tindakan mengikut fasa."],
+      "practice": ["Beri petunjuk mula dan tamat dalam simulasi kawasan terkawal.", "Tunjuk dua tindakan sebelum dan dua selepas aktiviti."],
+      "support": "Gunakan dua kad berurutan bagi setiap fasa. Gunakan sarung tangan sesuai dan beri petunjuk mengikut keperluan.",
+      "assessment": "Guru merekod empat tindakan secara individu, mengikut fasa. Catat tindakan kendiri dan bantuan yang digunakan.",
+      "closure": ["Tunjukkan kad pengingat selepas mengemas.", "Nyatakan satu tindakan sebelum dan satu selepas aktiviti."],
+      "follow_up": "Ulang fasa yang belum dikuasai menggunakan kad pengingat."
     }
   ]
 }
