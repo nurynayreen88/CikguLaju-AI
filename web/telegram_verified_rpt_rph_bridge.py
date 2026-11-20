@@ -21,7 +21,7 @@ from zipfile import ZipFile, BadZipFile
 from flask import Blueprint, Response, jsonify, request
 
 from web.native_rph_telegram_api import MIMES, compact_web_word_notes
-from web.pi_navigation import GENERIC_RPT_ACTIVITIES, pi_navigation_unit
+from web.pi_navigation import GENERIC_RPT_ACTIVITIES, is_pi_recitation_session, pi_navigation_unit
 from web.rph_teacher_reflection import clean_reflection, valid_teacher_fields
 
 CODE_LABELS = {"BM": "Bahasa Melayu", "PI": "Pendidikan Islam"}
@@ -103,8 +103,6 @@ def _resolve_verified_rpt(runtime, selection):
                   and str(s["standard_code"] or "").strip()]
             sp = [s for s in standards if s["standard_type"] == "SP"
                   and str(s["standard_code"] or "").strip()]
-            if not sk or not sp:
-                raise SourceUnavailable("Verified SK/SP incomplete")
             row["_std"] = standards
             if code == "PI":
                 detail = conn.execute(
@@ -116,6 +114,10 @@ def _resolve_verified_rpt(runtime, selection):
                 if detail is None:
                     raise SourceUnavailable("Verified Jawi PdP context unavailable")
                 row.update(dict(detail))
+            if not (sk and sp):
+                if code != "PI" or standards or not is_pi_recitation_session(row):
+                    raise SourceUnavailable("Verified SK/SP incomplete")
+                row["_pi_recitation"] = True
     except (sqlite3.Error, OSError) as exc:
         raise SourceUnavailable("Master RPT read failed") from exc
     return row
@@ -193,15 +195,15 @@ def _native_state(runtime, selection, teacher):
         "grouped_sp_codes": [str(s["standard_code"]) for s in sp],
         "selected_sp_codes": [str(s["standard_code"]) for s in sp],
         "grouped_sp_texts": [str(s.get("standard_text") or "") for s in sp],
-        "sk_code": str(sk[0]["standard_code"]),
-        "sk_text": str(sk[0].get("standard_text") or ""),
-        "sp_code": str(sp[0]["standard_code"]),
-        "sp_text": str(sp[0].get("standard_text") or ""),
+        "sk_code": str(sk[0]["standard_code"]) if sk else "",
+        "sk_text": str(sk[0].get("standard_text") or "") if sk else "",
+        "sp_code": str(sp[0]["standard_code"]) if sp else "",
+        "sp_text": str(sp[0].get("standard_text") or "") if sp else "",
     })
     if code == "PI":
         state.update({
             "_pi_full_jawi_rph_v25210": True,
-            "_pi_khatam_tasmik_v25210": False,
+            "_pi_khatam_tasmik_v25210": bool(row.get("_pi_recitation")),
             "topic": str(row.get("topic") or row.get("skill_focus") or unit),
             "subtopic": str(row.get("subtopic") or ""),
             "rpt_objective_jawi": str(row.get("objective_jawi") or ""),
@@ -221,8 +223,10 @@ def _native_text(runtime, state):
         raise SourceUnavailable("Native RPH content unavailable") from exc
     if not isinstance(text, str) or len(text.strip()) < 500:
         raise SourceUnavailable("RPH source content incomplete")
-    # This route must never invent a source or return a generic unverified RPH.
-    if not (state.get("sp_code") and state.get("rpt_entry_id")):
+    # Recitation sessions use the verified RPT lesson and individual assessment.
+    recitation = (state.get("subject") == "Pendidikan Islam"
+                  and state.get("_pi_khatam_tasmik_v25210") is True)
+    if not (state.get("rpt_entry_id") and (state.get("sp_code") or recitation)):
         raise SourceUnavailable("No confirmed lesson standards")
     return text
 

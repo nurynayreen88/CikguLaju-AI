@@ -10,8 +10,9 @@ from pathlib import Path
 from unittest.mock import Mock, patch
 
 from flask import Flask
+from web_v1_verified_pdp import VerifiedPdpCatalog
 from web.telegram_verified_rpt_rph_bridge import (
-    _native_state, _resolve_verified_rpt, SourceUnavailable,
+    _native_state, _native_text, _resolve_verified_rpt, SourceUnavailable,
     create_native_db_rph_blueprint,
 )
 
@@ -96,6 +97,33 @@ class NativeRPTBridgeTests(unittest.TestCase):
             conn.execute("UPDATE rpt_entry_standards SET verified=0 WHERE rpt_entry_id=102")
         with self.assertRaises(SourceUnavailable):
             _resolve_verified_rpt(self.runtime,self.selection)
+
+    def test_verified_khatam_session_needs_no_invented_standard(self):
+        with sqlite3.connect(self.db) as conn:
+            conn.execute("ALTER TABLE pi_pdp_details_v2591 ADD COLUMN jenis TEXT")
+            conn.execute("ALTER TABLE pi_pdp_details_v2591 ADD COLUMN mapping_status TEXT")
+            conn.execute("INSERT INTO rpt_entries VALUES (?,?,?,?,?,?,?,?,?,?,?,?)", (
+                201, "Tahun 3", "Pendidikan Islam", 1, "", "",
+                "ݢورو ممبيمبيڠ موريد ممباچ اية القرءان سچارا تلقي دان مشافهة.",
+                "القرءان 1 جم + تسميع 1 جم", "", "القرءان 1 جم + تسميع 1 جم",
+                2, "ڤنيلاين : تسميع باچاءن موريد",
+            ))
+            conn.execute("INSERT INTO pi_pdp_details_v2591 VALUES (?,?,?,?,?,?,?,?)", (
+                "Tahun 3", 2, 1, "موريد ممباچ اية القرءان دڠن فصيح.", "", "",
+                "KHATAM_TASMIK", "rpt_only_no_textbook_page",
+            ))
+        selection = {"year":3,"subject":"PI","unit":"Al-Quran","lesson":201}
+        catalog = VerifiedPdpCatalog(self.db)
+        self.assertEqual(catalog.list_pdp(year=3, subject_code="PI")[0]["unit_title"], "Al-Quran")
+        state = _native_state(self.runtime, selection, self.teacher)
+        self.assertTrue(state["_pi_khatam_tasmik_v25210"])
+        self.assertEqual(state["selected_sp_codes"], [])
+        self.assertFalse(state["sp_code"])
+        self.assertTrue(_native_text(self.runtime, state))
+        with sqlite3.connect(self.db) as conn:
+            conn.execute("UPDATE rpt_entries SET assessment_note='' WHERE id=201")
+        with self.assertRaises(SourceUnavailable):
+            _resolve_verified_rpt(self.runtime, selection)
 
 
 if __name__=="__main__":

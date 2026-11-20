@@ -6,7 +6,7 @@ No import of production app.py and no database mutations.
 """
 import sqlite3
 from pathlib import Path
-from web.pi_navigation import GENERIC_RPT_ACTIVITIES, pi_navigation_unit
+from web.pi_navigation import GENERIC_RPT_ACTIVITIES, is_pi_recitation_session, pi_navigation_unit
 from web_v1_verified_topics import SUBJECTS
 
 
@@ -55,21 +55,27 @@ class VerifiedPdpCatalog:
         ).fetchone()[0]
         if tables != 2:
             return set()
-        return {r[0] for r in con.execute(
-            """SELECT r.id FROM rpt_entries r
+        cur = con.execute(
+            """SELECT r.id AS rpt_id, r.topic, r.skill_focus, r.unit_title,
+                       r.assessment_note, d.*,
+                       (SELECT count(*) FROM rpt_entry_standards s
+                        WHERE s.rpt_entry_id=r.id AND s.verified=1) AS standard_rows,
+                       (SELECT count(DISTINCT s.standard_type) FROM rpt_entry_standards s
+                        WHERE s.rpt_entry_id=r.id AND s.verified=1
+                          AND s.standard_type IN ('SK','SP')
+                          AND trim(COALESCE(s.standard_code, ''))<>'') AS standard_types
+               FROM rpt_entries r JOIN pi_pdp_details_v2591 d
+                 ON d.year_label=r.year_label AND d.pdp_no=r.sequence_no AND d.verified=1
                WHERE r.year_label=? AND r.subject='Pendidikan Islam' AND r.verified=1
                  AND trim(COALESCE(r.unit_title, ''))=''
                  AND length(trim(COALESCE(r.activity_note, '')))>=30
-                 AND lower(trim(r.activity_note)) NOT IN (?, ?)
-                 AND EXISTS (SELECT 1 FROM pi_pdp_details_v2591 d
-                             WHERE d.year_label=r.year_label AND d.pdp_no=r.sequence_no
-                               AND d.verified=1)
-                 AND (SELECT count(DISTINCT s.standard_type) FROM rpt_entry_standards s
-                      WHERE s.rpt_entry_id=r.id AND s.verified=1
-                        AND s.standard_type IN ('SK','SP')
-                        AND trim(COALESCE(s.standard_code, ''))<>'')=2""",
+                 AND lower(trim(r.activity_note)) NOT IN (?, ?)""",
             (f"Tahun {year}", *GENERIC_RPT_ACTIVITIES),
-        )}
+        )
+        names = [column[0] for column in cur.description]
+        rows = (dict(zip(names, record)) for record in cur)
+        return {row["rpt_id"] for row in rows if row["standard_types"] == 2
+                or (row["standard_rows"] == 0 and is_pi_recitation_session(row))}
 
 
 def list_explicit_pjpk_entries(database_path, year, component):

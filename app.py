@@ -10194,6 +10194,16 @@ def _rph_document_rows(s, rows):
     title = re.sub(r'\s*(?:\[DRAF CADANGAN — SEMAK GURU\]|\(DRAF(?: UNTUK SEMAKAN)?\))$', '', title)
     if title != raw_title:
         rows = {**rows, 'TAJUK': title}
+    if s.get('subject') == 'Bahasa Melayu':
+        fields = ('STANDARD KANDUNGAN', 'STANDARD PEMBELAJARAN')
+        rows = {**rows, **{
+            key: re.sub(r'(?<![\d.])(\d+(?:\.\d+)+)(?:[ \t]+\1(?![\d.]))+',
+                        r'\1', rows[key])
+            for key in fields if isinstance(rows.get(key), str)
+        }}
+    if s.get('subject') == 'Sains':
+        from web.sains_rph_standard_descriptions import describe_rows
+        rows = describe_rows(s, rows)
     if _pi_primary_v25210(s):
         # Replace the generator's own source labels without altering the lesson anchors.
         wording = {
@@ -10207,15 +10217,42 @@ def _rph_document_rows(s, rows):
     return rows
 
 
+_PI_RPH_FILL = 'ECE4F6'
+_SAINS_RPH_FILL = 'DFF1E3'
+
+def _rph_table_labels(s, pi_primary):
+    if pi_primary:
+        return (
+            ('فاسا', 'اکتيۏيتي ڤڠاجرن دان ڤمبلاجرن', 'چاتتن'),
+            ('ست ايندوکسي', 'اکتيۏيتي اوتام', 'ڤنوتوڤ'),
+            ('ڤموليهن / ڤڠاياءن', 'رفليكسي'),
+        )
+    if _is_english_subject(s):
+        return (
+            ('Phase', 'Teaching and Learning Activities', 'Notes'),
+            ('Set Induction', 'Main Activities', 'Closure'),
+            ('Remedial / Enrichment', 'Reflection'),
+        )
+    return (
+        ('Fasa', 'Aktiviti Pengajaran & Pembelajaran', 'Catatan'),
+        ('Set Induksi', 'Aktiviti Utama', 'Penutup'),
+        ('Pemulihan / Pengayaan', 'Refleksi'),
+    )
+
+
 def _rph_title(s): return 'DAILY LESSON PLAN' if _is_english_subject(s) else 'RANCANGAN PENGAJARAN HARIAN'
 def _create_rph_word(doc, section, s, ai_text, path):
+    from docx.enum.table import WD_TABLE_DIRECTION
     from docx.oxml import OxmlElement
     from docx.oxml.ns import qn
+    from web.sains_rph_standard_descriptions import sequence_year
 
     rph = _rph_rows(s, ai_text)
     rph = _rph_document_rows(s, rph)
     body_size = 9.25 if rph.get('CATATAN AKTIVITI UTAMA') else 8.5
     pi_primary = _pi_primary_v25210(s)
+    science_primary = bool(sequence_year(s))
+    label_fill = _PI_RPH_FILL if pi_primary else _SAINS_RPH_FILL if science_primary else None
     p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     rr = p.add_run(_rph_title(s)); rr.bold=True; rr.font.size=Pt(15)
     p.paragraph_format.space_after = Pt(6)
@@ -10234,12 +10271,19 @@ def _create_rph_word(doc, section, s, ai_text, path):
     table=doc.add_table(rows=0, cols=2); table.alignment=WD_TABLE_ALIGNMENT.CENTER
     _info_labels=(['MATA PELAJARAN','TAHUN/TINGKATAN','TARIKH','HARI','MASA','KELAS','BILANGAN MURID','TAJUK','MAIN CONTENT STANDARD','MAIN LEARNING STANDARD','COMPLEMENTARY CONTENT STANDARD','COMPLEMENTARY LEARNING STANDARD','OBJEKTIF PEMBELAJARAN','KRITERIA KEJAYAAN','PENGETAHUAN SEDIA ADA','BAHAN BANTU MENGAJAR','EMK / NILAI','KBAT / PAK21','PENTAKSIRAN'] if _is_english_subject(s) else ['MATA PELAJARAN','TAHUN/TINGKATAN','TARIKH','HARI','MASA','KELAS','BILANGAN MURID','TAJUK','STANDARD KANDUNGAN','STANDARD PEMBELAJARAN','OBJEKTIF PEMBELAJARAN','KRITERIA KEJAYAAN','PENGETAHUAN SEDIA ADA','BAHAN BANTU MENGAJAR','EMK / NILAI','KBAT / PAK21','PENTAKSIRAN'])
     for label in _info_labels:
-        value=(_rph_attendance_value(rph.get(label,'')) if label == 'BILANGAN MURID' else _rph_blank_or_value(rph.get(label,''))) if label in ('TARIKH','HARI','MASA','KELAS','BILANGAN MURID') else rph.get(label,''); add_row(table,_rph_display_label(s,label),_rph_display_value(s,label,value))
+        value = rph.get(label, '')
+        if label == 'BILANGAN MURID':
+            value = _rph_attendance_value(value)
+        elif label in ('TARIKH', 'HARI', 'MASA', 'KELAS'):
+            value = _rph_blank_or_value(value)
+        elif pi_primary and label == 'STANDARD PEMBELAJARAN':
+            value = _dedup_standard_lines_v25216(value).replace('<br/>', '\n')
+        add_row(table, _rph_display_label(s, label), _rph_display_value(s, label, value))
     doc.add_paragraph().paragraph_format.space_after=Pt(1)
     t2=doc.add_table(rows=1, cols=3); t2.alignment=WD_TABLE_ALIGNMENT.CENTER
-    for i,h in enumerate((['Phase','Teaching and Learning Activities','Notes'] if _is_english_subject(s) else ['Fasa','Aktiviti Pengajaran & Pembelajaran','Catatan'])):
+    activity_header, phase_labels, tail_labels = _rph_table_labels(s, pi_primary)
+    for i,h in enumerate(activity_header):
         q=t2.rows[0].cells[i].paragraphs[0]; q.alignment=WD_ALIGN_PARAGRAPH.CENTER; z=q.add_run(h); z.bold=True
-    phase_labels = ('Set Induction', 'Main Activities', 'Closure') if _is_english_subject(s) else ('Set Induksi', 'Aktiviti Utama', 'Penutup')
     for phase, key in zip(phase_labels, ('SET INDUKSI', 'AKTIVITI UTAMA', 'PENUTUP')):
         cells = t2.add_row().cells
         cells[0].text = phase
@@ -10248,9 +10292,6 @@ def _create_rph_word(doc, section, s, ai_text, path):
         note = rph.get(f'CATATAN {key}', '')
         if key == 'AKTIVITI UTAMA' and pi_primary:
             paragraph = cells[1].paragraphs[0]
-            props = paragraph._p.get_or_add_pPr()
-            props.insert_element_before(OxmlElement('w:bidi'), 'w:jc')
-            props.get_or_add_jc().set(qn('w:val'), 'start')
             for index, (line, heading) in enumerate(_pi_rph_activity_lines(activity)):
                 if index:
                     paragraph.add_run().add_break()
@@ -10272,8 +10313,8 @@ def _create_rph_word(doc, section, s, ai_text, path):
         for c in row.cells:
             _word_set_cell_border(c, top={'val':'single','sz':'6','color':'666666'}, bottom={'val':'single','sz':'6','color':'666666'}, left={'val':'single','sz':'6','color':'666666'}, right={'val':'single','sz':'6','color':'666666'})
     t3=doc.add_table(rows=0, cols=2); t3.alignment=WD_TABLE_ALIGNMENT.CENTER
-    add_row(t3,('Remedial / Enrichment' if _is_english_subject(s) else 'Pemulihan / Pengayaan'),rph.get('PEMULIHAN / PENGAYAAN',''))
-    add_row(t3,('Reflection' if _is_english_subject(s) else 'Refleksi'),rph.get('REFLEKSI','') or ('____ / ____ pupils achieved the lesson objectives.\n____ / ____ pupils require further support.\nFollow-up action: ______________________________' if _is_english_subject(s) else '____ / ____ murid mencapai objektif.\n____ / ____ murid belum mencapai objektif.\nTindakan susulan: ______________________________'))
+    add_row(t3,tail_labels[0],rph.get('PEMULIHAN / PENGAYAAN',''))
+    add_row(t3,tail_labels[1],rph.get('REFLEKSI','') or ('____ / ____ pupils achieved the lesson objectives.\n____ / ____ pupils require further support.\nFollow-up action: ______________________________' if _is_english_subject(s) else '____ / ____ murid mencapai objektif.\n____ / ____ murid belum mencapai objektif.\nTindakan susulan: ______________________________'))
     footer=section.footer; fp=footer.paragraphs[0]; fp.alignment=WD_ALIGN_PARAGRAPH.CENTER; fr=fp.add_run('CikguLaju AI  •  '); fr.font.size=Pt(7.5); _word_page_number(fp)
     # Compact the active (second) Word RPH renderer, preserving all content.
     section.page_width = Cm(21)
@@ -10296,11 +10337,31 @@ def _create_rph_word(doc, section, s, ai_text, path):
     doc.styles['Normal'].paragraph_format.line_spacing = 1.0
     p.paragraph_format.space_after = Pt(2)
     rr.font.size = Pt(12)
-    for tbl in doc.tables:
+
+    def align_pi(paragraph):
+        if _has_jawi_v25213(paragraph.text):
+            props = paragraph._p.get_or_add_pPr()
+            props.insert_element_before(OxmlElement('w:bidi'), 'w:jc')
+            props.get_or_add_jc().set(qn('w:val'), 'start')
+        else:
+            paragraph.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+
+    if pi_primary:
+        align_pi(p)
+        rr.font.cs_bold = True
+    for tbl in (table, t2, t3):
         tbl.autofit = False
-        for row in tbl.rows:
-            for cell in row.cells:
+        if pi_primary:
+            tbl.table_direction = WD_TABLE_DIRECTION.RTL
+        for row_index, row in enumerate(tbl.rows):
+            for column_index, cell in enumerate(row.cells):
                 tcPr = cell._tc.get_or_add_tcPr()
+                pi_label_cell = pi_primary and (column_index == 0 or (tbl is t2 and row_index == 0))
+                if label_fill and (column_index == 0 or (tbl is t2 and row_index == 0)):
+                    shade = OxmlElement('w:shd')
+                    shade.set(qn('w:val'), 'clear')
+                    shade.set(qn('w:fill'), label_fill)
+                    tcPr.insert_element_before(shade, 'w:tcMar')
                 mar = tcPr.find(qn('w:tcMar'))
                 if mar is None:
                     mar = OxmlElement('w:tcMar'); tcPr.append(mar)
@@ -10311,20 +10372,29 @@ def _create_rph_word(doc, section, s, ai_text, path):
                     el.set(qn('w:w'), '18' if side in ('top','bottom') else '50')
                     el.set(qn('w:type'), 'dxa')
                 for para in cell.paragraphs:
+                    if pi_primary:
+                        align_pi(para)
                     para.paragraph_format.space_before = Pt(0)
                     para.paragraph_format.space_after = Pt(0)
-                    para.paragraph_format.line_spacing = 1.0
+                    para.paragraph_format.line_spacing = 0.96 if pi_primary else 1.0
                     for run in para.runs:
                         run.font.size = Pt(body_size)
+                        if pi_label_cell:
+                            run.bold = True
+                            run.font.cs_bold = True
+    tight_science_notes = science_primary and not any(
+        rph.get('CATATAN ' + phase) for phase in ('SET INDUKSI', 'AKTIVITI UTAMA', 'PENUTUP')
+    )
+    phase_widths = (2.65, 14.55, 1.55) if tight_science_notes else (2.65, 12.65, 3.45)
     # Keep the same Word grid and cell widths for RPH with populated Notes.
-    if pi_primary or rph.get('CATATAN AKTIVITI UTAMA'):
-        for tbl, widths in ((t2, (2.65, 12.65, 3.45)), (table, (5.3, 13.45)), (t3, (5.3, 13.45))):
+    if pi_primary or science_primary or rph.get('CATATAN AKTIVITI UTAMA'):
+        for tbl, widths in ((t2, phase_widths), (table, (5.3, 13.45)), (t3, (5.3, 13.45))):
             for column, width in zip(tbl.columns, widths):
                 column.width = Cm(width)
     # Give activity text most of the page width; Notes remains available.
     for row in t2.rows:
-        for cell, width in zip(row.cells, (Cm(2.65), Cm(12.65), Cm(3.45))):
-            cell.width = width
+        for cell, width in zip(row.cells, phase_widths):
+            cell.width = Cm(width)
     for tbl in (table,t3):
         for row in tbl.rows:
             for cell,width in zip(row.cells,(Cm(5.3),Cm(13.45))):
@@ -10792,8 +10862,15 @@ def create_pdf_file(s, ai_text, cid):
         # v23.61: compact professional RPH; worksheet design remains untouched.
         rph = _rph_rows(s, ai_text)
         rph = _rph_document_rows(s, rph)
+        from web.sains_rph_standard_descriptions import sequence_year
+
         body_style.fontSize, body_style.leading = (
             (9.25, 11) if rph.get('CATATAN AKTIVITI UTAMA') else (7.75, 8.85))
+        pi_primary = _pi_primary_v25210(s)
+        science_fill = colors.HexColor('#' + _SAINS_RPH_FILL) if sequence_year(s) else None
+        if pi_primary:
+            body_style.alignment = TA_RIGHT
+            pi_fill = colors.HexColor('#' + _PI_RPH_FILL)
         section_style.fontSize=8.8; section_style.leading=9.8
         story = [Paragraph(_rph_title(s), title_style), Spacer(1,2*mm)]
         rows=[]
@@ -10818,6 +10895,10 @@ def create_pdf_file(s, ai_text, cid):
             rows.append([Paragraph('<b>'+escape(_rph_display_label(s,label))+'</b>', body_style), Paragraph(escape(_rph_display_value(s,label,val)).replace('&lt;br/&gt;','<br/>'), body_style)])
         info=Table(rows,colWidths=[48*mm,124*mm],repeatRows=0)
         info.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.black),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),2.5),('BOTTOMPADDING',(0,0),(-1,-1),2.5)]))
+        if pi_primary:
+            info.setStyle(TableStyle([('BACKGROUND', (-1, 0), (-1, -1), pi_fill)]))
+        elif science_fill:
+            info.setStyle(TableStyle([('BACKGROUND', (0, 0), (0, -1), science_fill)]))
         story.extend([info,Spacer(1,3*mm)])
         for label, raw_val in long_standard_blocks:
             story.append(Paragraph('<b>'+escape(_rph_display_label(s,label))+'</b>', section_style))
@@ -10828,10 +10909,11 @@ def create_pdf_file(s, ai_text, cid):
             for part in parts:
                 story.append(Paragraph('• '+escape(part), body_style))
             story.append(Spacer(1,2*mm))
-        phase_rows=[[Paragraph('<b>'+('Phase' if _is_english_subject(s) else ('فاسا' if _pi_primary_v25210(s) else 'Fasa'))+'</b>',body_style),Paragraph('<b>'+('Teaching and Learning Activities' if _is_english_subject(s) else ('اکتيۏيتي ڤڠاجرن دان ڤمبلاجرن' if _pi_primary_v25210(s) else 'Aktiviti Pengajaran & Pembelajaran'))+'</b>',body_style),Paragraph('<b>'+('Notes' if _is_english_subject(s) else ('چاتتن' if _pi_primary_v25210(s) else 'Catatan'))+'</b>',body_style)]]
-        for phase,key in ([('Set Induction','SET INDUKSI'),('Main Activities','AKTIVITI UTAMA'),('Closure','PENUTUP')] if _is_english_subject(s) else ([('ست ايندوکسي','SET INDUKSI'),('اکتيۏيتي اوتام','AKTIVITI UTAMA'),('ڤنوتوڤ','PENUTUP')] if _pi_primary_v25210(s) else [('Set Induksi','SET INDUKSI'),('Aktiviti Utama','AKTIVITI UTAMA'),('Penutup','PENUTUP')])):
+        activity_header, phase_labels, tail_labels = _rph_table_labels(s, pi_primary)
+        phase_rows = [[Paragraph('<b>'+escape(label)+'</b>', body_style) for label in activity_header]]
+        for phase, key in zip(phase_labels, ('SET INDUKSI', 'AKTIVITI UTAMA', 'PENUTUP')):
             phase_label, phase_text = _rph_phase_time_v25179(phase, rph.get(key) or '—')
-            if key == 'AKTIVITI UTAMA' and _pi_primary_v25210(s):
+            if key == 'AKTIVITI UTAMA' and pi_primary:
                 lines = _pi_rph_activity_lines(phase_text or '—')
                 # The generic numbered-list formatter flattens Jawi headings into
                 # the preceding step. Pass the activity cell directly to the RTL raster.
@@ -10845,12 +10927,27 @@ def create_pdf_file(s, ai_text, cid):
             phase_rows.append([Paragraph('<b>'+phase_label+'</b>',body_style),cell,Paragraph(note,body_style)])
         pt=Table(phase_rows,colWidths=[32*mm,112*mm,28*mm],repeatRows=1)
         pt.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.black),('BACKGROUND',(0,0),(-1,0),colors.white),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),3),('BOTTOMPADDING',(0,0),(-1,-1),3)]))
+        if pi_primary:
+            pt.setStyle(TableStyle([
+                ('BACKGROUND', (0, 0), (-1, 0), pi_fill),
+                ('BACKGROUND', (-1, 1), (-1, -1), pi_fill),
+            ]))
+        elif science_fill:
+            pt.setStyle(TableStyle([
+                ('BACKGROUND', (0, 0), (-1, 0), science_fill),
+                ('BACKGROUND', (0, 1), (0, -1), science_fill),
+            ]))
         story.extend([pt,Spacer(1,3*mm)])
         tail=[]
-        for label,key in ([('Remedial / Enrichment','PEMULIHAN / PENGAYAAN'),('Reflection','REFLEKSI')] if _is_english_subject(s) else ([('ڤموليهن / ڤڠاياءن','PEMULIHAN / PENGAYAAN'),('رفليكسي','REFLEKSI')] if _pi_primary_v25210(s) else [('Pemulihan / Pengayaan','PEMULIHAN / PENGAYAAN'),('Refleksi','REFLEKSI')])):
+        for label, key in zip(tail_labels, ('PEMULIHAN / PENGAYAAN', 'REFLEKSI')):
             val=rph.get(key) or (('____ / ____ pupils achieved the lesson objectives.\n____ / ____ pupils require further support.\nFollow-up action: __________________________' if _is_english_subject(s) else '____ / ____ murid mencapai objektif.\n____ / ____ murid belum mencapai objektif.\nTindakan susulan: __________________________') if key=='REFLEKSI' else '—')
             tail.append([Paragraph('<b>'+label+'</b>',body_style),Paragraph(escape(val).replace('\n','<br/>'),body_style)])
-        tt=Table(tail,colWidths=[48*mm,124*mm]); tt.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.black),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),3),('BOTTOMPADDING',(0,0),(-1,-1),3)])); story.append(tt)
+        tt=Table(tail,colWidths=[48*mm,124*mm]); tt.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.black),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),3),('BOTTOMPADDING',(0,0),(-1,-1),3)]))
+        if pi_primary:
+            tt.setStyle(TableStyle([('BACKGROUND', (-1, 0), (-1, -1), pi_fill)]))
+        elif science_fill:
+            tt.setStyle(TableStyle([('BACKGROUND', (0, 0), (0, -1), science_fill)]))
+        story.append(tt)
         _hf=_pdf_header_footer_en if _is_english_subject(s) else _pdf_header_footer
         pdf.build(story,onFirstPage=_hf,onLaterPages=_hf); return path
 
