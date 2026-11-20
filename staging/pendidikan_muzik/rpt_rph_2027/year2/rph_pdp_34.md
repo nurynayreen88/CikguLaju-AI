@@ -14,7 +14,7 @@
 
 **Set Induksi — 4 minit:** Guru menyanyikan atau membunyikan dua contoh tempo menggunakan suara dan tepukan; murid mengelaskan lambat dan cepat.
 
-**Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid mengimbas lagu yang dipelajari sepanjang Tahun 2; guru membimbing nyanyian dua frasa serta tepukan empat detik pada dua tempo menggunakan suara dan isyarat tangan.
+**Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid memilih lagu yang telah dipelajari. Guru boleh menggunakan Audio 70–72 Tembikar Cantik untuk membimbing nyanyian dan tepukan empat detik pada dua tempo.
 
 **Aktiviti 2 — Aplikasi kemahiran (10 minit):** Pasangan murid membina gerak maju–setempat–undur dan satu gerak tangan selama empat detik. Murid menyelaraskan gerakan dengan nyanyian, kemudian membetulkan kesilapan tempo.
 
@@ -22,7 +22,7 @@
 
 **Penutup — 2 minit:** Murid menunjukkan satu gerakan yang dipertingkatkan dan menyebut sebab tempo perlu konsisten. Guru merekod pemerhatian PBD.
 
-**Bahan:** Skor atau kad lagu Tahun 2 yang sudah dimiliki guru, kad tempo dan ruang selamat.
+**Bahan:** Skor lagu pilihan, Audio 70–72 Tembikar Cantik sebagai pilihan ulang kaji, kad tempo dan ruang selamat.
 
 **Rujukan dan had sumber:** Ini **cadangan ulang kaji** menggunakan kemahiran yang pernah dipelajari, bukan bab atau halaman baharu buku teks. RPT lama menamakan `Projek Seni Muzik 3`; DSKP Muzik mempunyai **dua projek rasmi** dan tidak menyokong pelabelan Projek 3. Kod SP sumber asal disimpan dalam manifest untuk audit; cadangan SK/SP ini belum diluluskan silang oleh pakar kurikulum. Tiada audio atau lirik diperolehi/diaktifkan oleh bot.
 

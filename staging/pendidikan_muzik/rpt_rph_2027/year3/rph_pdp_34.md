@@ -14,7 +14,7 @@
 
 **Set Induksi — 4 minit:** Guru menunjukkan carta B, A dan G; murid menamakan not dan menyemak postur rekoder sebelum latihan.
 
-**Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid berlatih penjarian serta perlidahan 'tu' perlahan dengan rekoder individu; guru membetulkan lubang tidak tertutup sebelum frasa dimainkan.
+**Aktiviti 1 — Ulang kaji khusus (8 minit):** Guru memainkan petikan Audio 60 Selamat Malam. Murid menyemak penjarian not B, A dan G sebelum berlatih satu frasa dengan Audio 63.
 
 **Aktiviti 2 — Aplikasi kemahiran (10 minit):** Pasangan A memainkan frasa rekoder B/A/G daripada latihan sedia ada Tahun 3, pasangan B menepuk empat detik, kemudian bertukar peranan dan menilai ketepatan tempo.
 
@@ -22,7 +22,7 @@
 
 **Penutup — 2 minit:** Murid menyebut satu masalah penjarian dan cara membetulkannya. Guru merekod pemerhatian PBD.
 
-**Bahan:** Rekoder bersih, carta not B/A/G, kad pola empat detik dan alat perkusi selamat.
+**Bahan:** Rekoder bersih, buku Kesenian Tahun 3 m/s 71, Audio 60 dan 63 Selamat Malam, kad pola empat detik dan alat perkusi.
 
 **Rujukan dan had sumber:** Ini **cadangan ulang kaji** menggunakan kemahiran yang pernah dipelajari, bukan bab atau halaman baharu buku teks. RPT lama menamakan `Projek Seni Muzik 3`; DSKP Muzik mempunyai **dua projek rasmi** dan tidak menyokong pelabelan Projek 3. Kod SP sumber asal disimpan dalam manifest untuk audit; cadangan SK/SP ini belum diluluskan silang oleh pakar kurikulum. Tiada audio atau lirik diperolehi/diaktifkan oleh bot.
 

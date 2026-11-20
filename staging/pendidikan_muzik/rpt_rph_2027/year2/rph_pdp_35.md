@@ -16,13 +16,13 @@
 
 **Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid menyusun kad ikon menjadi corak empat detik, menepuk lalu mencatat satu pembetulan sebelum mempersembahkannya.
 
-**Aktiviti 2 — Aplikasi kemahiran (10 minit):** Murid mempersembahkan irama ciptaan secara pasangan. Guru menyoal fungsi sompoton serta iringan Sumazau dan meminta dua ulasan berdasarkan bahan yang dibaca/didengar secara sah.
+**Aktiviti 2 — Aplikasi kemahiran (10 minit):** Murid mempersembahkan corak ciptaan secara berpasangan. Guru memainkan petikan Audio 84–86 dan murid memberi dua ulasan tentang sompoton atau iringan Sumazau.
 
 **Pengukuhan dan Penilaian — 6 minit:** Rubrik dua komponen: corak empat detik tepat dan dua fakta apresiasi yang boleh disokong oleh bahan rujukan.
 
 **Penutup — 2 minit:** Murid menyatakan satu kekuatan hasil ciptaan serta satu kemahiran budaya muzik yang ingin diperbaiki. Guru merekod pemerhatian PBD.
 
-**Bahan:** Kad ikon perkusi, buku Kesenian Tahun 2 halaman 95–96 sebagai rujukan terdahulu dan kad respons.
+**Bahan:** Kad ikon perkusi, buku Kesenian Tahun 2 m/s 95–96 sebagai ulang kaji, Audio 84–86 dan kad respons.
 
 **Rujukan dan had sumber:** Ini **cadangan ulang kaji** menggunakan kemahiran yang pernah dipelajari, bukan bab atau halaman baharu buku teks. RPT lama menamakan `Projek Seni Muzik 3`; DSKP Muzik mempunyai **dua projek rasmi** dan tidak menyokong pelabelan Projek 3. Kod SP sumber asal disimpan dalam manifest untuk audit; cadangan SK/SP ini belum diluluskan silang oleh pakar kurikulum. Tiada audio atau lirik diperolehi/diaktifkan oleh bot.
 

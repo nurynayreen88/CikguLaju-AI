@@ -13,7 +13,7 @@
 
 **Set Induksi — 4 minit:** Guru membentangkan aktiviti projek Kesenian Penggal Satu dalam buku dan mengingatkan bahawa kita menumpukan bahagian muzik.
 
-**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid membentuk lima kumpulan sebagaimana arahan halaman 4–5, memilih satu lagu yang sudah dipelajari daripada Unit 1 hingga 5 serta menetapkan ketua dan peranan nyanyian, perkusi atau gerakan.
+**Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Guru memperdengarkan petikan Beg Cantik Menawan atau Bunga Gergasi. Murid membentuk lima kumpulan, memilih satu lagu Unit 1–5 dan mengagihkan tugas nyanyian, perkusi atau gerakan.
 
 **Aktiviti 2 — Pelaksanaan dan aplikasi (10 minit):** Kumpulan menyusun rancangan ringkas untuk persembahan muzikal, termasuk jadual latihan, alat yang diperlukan dan cara mengawal volume supaya nyanyian dapat didengar; kumpulan membentangkan pelan kepada guru.
 
@@ -21,7 +21,7 @@
 
 **Penutup — 2 minit:** Setiap ketua menyatakan satu perkara yang perlu disediakan sebelum persembahan. Guru merekod pemerhatian PBD.
 
-**Bahan:** Buku Kesenian Tahun 4 halaman 4–5, senarai semak dan kad peranan.
+**Bahan:** Buku Kesenian Tahun 4 m/s 4–5, kad peranan dan audio contoh Beg Cantik Menawan atau Bunga Gergasi.
 
 **Rujukan:** Buku Teks Pendidikan Kesenian Tahun 4 SK DBP 2019, Projek Penggal Satu, halaman 4-5; https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view. Projek Kesenian menggabungkan seni visual dan persembahan muzikal; RPH ini khusus muzik, bukan dakwaan seluruh projek gabungan. Kod SP Muzik asal tidak ditimpa oleh kod buku Kesenian. **Nombor audio bercetak bukan bukti fail sebenar; tiada audio diaktifkan atau lirik lagu dimuat naik.**
 

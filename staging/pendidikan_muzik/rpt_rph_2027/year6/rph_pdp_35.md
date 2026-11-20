@@ -16,13 +16,13 @@
 
 **Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid menyebut komposer, karya dan negara asal berdasarkan nota sumber yang dipilih guru, kemudian menyatakan satu ciri untuk perbincangan berkumpulan.
 
-**Aktiviti 2 — Aplikasi kemahiran (10 minit):** Murid mendengar karya yang hak penggunaannya telah disemak oleh guru, atau mengkaji nota karya tanpa audio, lalu menghasilkan dua ayat ulasan dengan satu bukti yang boleh diperiksa.
+**Aktiviti 2 — Aplikasi kemahiran (10 minit):** Guru memilih satu contoh Audio 71–73. Murid mendengar petikan, menjelaskan satu ciri bunyi dan menulis dua ayat ulasan berdasarkan karya tersebut.
 
 **Pengukuhan dan Penilaian — 6 minit:** Semak julat Classical DSKP, dua fakta karya tepat serta satu alasan daripada bahan; rekod pemulihan bagi murid yang tidak dapat menyokong ulasan.
 
 **Penutup — 2 minit:** Murid menyatakan satu perbezaan antara bukti yang disahkan dengan tekaan dalam apresiasi muzik. Guru merekod pemerhatian PBD.
 
-**Bahan:** DSKP Muzik Tahun 6 sebagai rujukan julat, nota karya yang diperiksa guru dan kad soalan apresiasi.
+**Bahan:** Buku Muzik Tahun 6 m/s 34–35, DSKP Muzik Tahun 6, Audio 71–73 dan kad soalan apresiasi.
 
 **Rujukan dan had sumber:** Ini **cadangan ulang kaji** menggunakan kemahiran yang pernah dipelajari, bukan bab atau halaman baharu buku teks. RPT lama menamakan `Projek Seni Muzik 3 — Persembahan`; DSKP Muzik mempunyai **dua projek rasmi** dan tidak menyokong pelabelan Projek 3. Kod SP sumber asal disimpan dalam manifest untuk audit; cadangan SK/SP ini belum diluluskan silang oleh pakar kurikulum. Tiada audio atau lirik diperolehi/diaktifkan oleh bot.
 

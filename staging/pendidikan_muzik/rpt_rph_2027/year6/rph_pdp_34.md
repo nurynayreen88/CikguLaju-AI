@@ -14,7 +14,7 @@
 
 **Set Induksi — 4 minit:** Guru mengimbas frasa Country Gardens dan melodi kaunter Memori Indah dari halaman 48–49 untuk mengenal perbezaan melodi utama dan kaunter.
 
-**Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid menyemak postur, penjarian, tanda nafas dan perlidahan daripada skor rekoder yang sudah dipelajari; guru memodelkan satu frasa menggunakan suara atau rekoder.
+**Aktiviti 1 — Ulang kaji khusus (8 minit):** Guru memodelkan satu frasa melodi kaunter Memori Indah dengan Audio 94. Murid menyemak penjarian dan berlatih dengan Audio 95 tanpa suara rekoder.
 
 **Aktiviti 2 — Aplikasi kemahiran (10 minit):** Kumpulan A memainkan frasa rekoder dan Kumpulan B memberi ketukan detik; kemudian bertukar supaya setiap murid dapat memperbaiki penjarian dan keseimbangan bunyi.
 
@@ -22,7 +22,7 @@
 
 **Penutup — 2 minit:** Murid menerangkan fungsi melodi kaunter dan menyatakan satu teknik rekoder yang meningkat. Guru merekod pemerhatian PBD.
 
-**Bahan:** Buku Muzik Tahun 6 halaman 48–49 sebagai ulang kaji, rekoder individu bersih, kad penjarian dan skor guru.
+**Bahan:** Buku Muzik Tahun 6 m/s 48–49, rekoder, kad penjarian, skor dan Audio 94–95 Memori Indah.
 
 **Rujukan dan had sumber:** Ini **cadangan ulang kaji** menggunakan kemahiran yang pernah dipelajari, bukan bab atau halaman baharu buku teks. RPT lama menamakan `Projek Seni Muzik 3 — Perancangan`; DSKP Muzik mempunyai **dua projek rasmi** dan tidak menyokong pelabelan Projek 3. Kod SP sumber asal disimpan dalam manifest untuk audit; cadangan SK/SP ini belum diluluskan silang oleh pakar kurikulum. Tiada audio atau lirik diperolehi/diaktifkan oleh bot.
 

@@ -1,7 +1,7 @@
 """Read-only, source-backed external audio links for Music Years 2–6.
 
-Source URLs point to the original Google Drive files. Direct download links
-require a matching PdP and a successful signed-out file check.
+Source URLs point to original Google Drive files. A direct download
+requires an exact match between the PdP and audited file IDs.
 """
 from __future__ import annotations
 
@@ -166,10 +166,14 @@ def links_for_pdp(year, pdp, *, root=ROOT):
 def audio_link_action(year, pdp, *, root=ROOT):
     """Distinguish score review, verified source downloads and view links."""
     links = links_for_pdp(year, pdp, root=root)
-    checked_downloads = _checked_downloads(Path(root)).get(str(year), {}).get(str(pdp))
-    if isinstance(checked_downloads, list) and checked_downloads == [x["file_id"] for x in links]:
-        links = [dict(item, download_url=SOURCE_DOWNLOAD.format(item["file_id"]))
-                 for item in links]
+    downloads, confirmed_ids = _checked_downloads(Path(root))
+    checked_ids = downloads.get(str(year), {}).get(str(pdp))
+    if links and checked_ids == [item["file_id"] for item in links]:
+        links = [
+            dict(item, download_url=SOURCE_DOWNLOAD.format(item["file_id"])
+                 + ("&confirm=t" if item["file_id"] in confirmed_ids else ""))
+            for item in links
+        ]
     links = [item for item in links if item["track"] is not None or "download_url" in item]
     checked = VERIFIED_YEAR4_TRACKS.get(pdp) if year == 4 else None
     if checked:
@@ -210,12 +214,17 @@ def _checked_downloads(root):
     try:
         path = root / "audio_source_download_audit_20261120.json"
         if path.is_symlink():
-            return {}
+            return {}, frozenset()
         data = json.loads(path.read_text(encoding="utf-8"))
         coverage = data.get("verified_pdp_files")
         if (data.get("schema") == 1 and isinstance(coverage, dict)
                 and all(isinstance(rows, dict) for rows in coverage.values())):
-            return coverage
+            confirmed = data.get("confirmed_download_file_ids", [])
+            if not isinstance(confirmed, list) or any(
+                    not isinstance(item, str) or not GOOGLE_ID.fullmatch(item)
+                    for item in confirmed):
+                return {}, frozenset()
+            return coverage, frozenset(confirmed)
     except (OSError, ValueError, AttributeError):
         pass
-    return {}
+    return {}, frozenset()
