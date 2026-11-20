@@ -90,8 +90,10 @@ def install(ns):
         if not allowed(cid):
             return locked(cid)
         if is_ppki:
-            from staging.ppki.catalog import RPT_COMBINED_FILENAME
+            from staging.ppki.catalog import RPT_COMBINED_FILENAME, UNIT_LESSONS
             from staging.ppki.rpt import render_rpt
+            count = sum(len(numbers) for numbers in UNIT_LESSONS.values())
+            edition = f"Unit 2–{len(UNIT_LESSONS) + 1}"
 
             if data == "rpt2027_ppki_home":
                 return send(cid, "📅 <b>RPT 2027 · Pendidikan Khas (PPKI)</b>\n\nPilih tahun.", [
@@ -99,7 +101,7 @@ def install(ns):
                     [{"text": "⬅️ Kembali", "callback_data": "rpt2027_home"}],
                 ])
             if data == "rpt2027_ppki_year2":
-                return send(cid, "<b>PPKI Tahun 2</b>\n\nAgihan 18 PdP bagi Unit 2 dan 3.", [
+                return send(cid, f"<b>PPKI Tahun 2</b>\n\nAgihan {count} PdP bagi {edition}.", [
                     [{"text": "Pengurusan Kehidupan (PDF)", "callback_data": "rpt2027_ppki_pdf2"}],
                     [{"text": "⬅️ Kembali", "callback_data": "rpt2027_ppki_home"}],
                 ])
@@ -109,7 +111,7 @@ def install(ns):
                 with TemporaryDirectory(prefix="cikgulaju-rpt-ppki-") as folder:
                     path = Path(folder) / RPT_COMBINED_FILENAME
                     path.write_bytes(render_rpt(combined=True))
-                    result = send_document(cid, str(path), "RPT 2027 PPKI · Pengurusan Kehidupan Tahun 2 · Unit 2–3")
+                    result = send_document(cid, str(path), f"RPT 2027 PPKI · Pengurusan Kehidupan Tahun 2 · {edition}")
                 verify = ns.get("_telegram_delivery_ok_v25279")
                 if callable(verify) and not verify(result):
                     return send(cid, "Telegram belum mengesahkan penghantaran RPT PPKI.")

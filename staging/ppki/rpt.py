@@ -1,8 +1,8 @@
-"""Print the Unit 2 allocation from the same catalog as the individual RPH."""
+"""Print allocations from the same catalog as the individual PPKI RPH."""
 from io import BytesIO
 from xml.sax.saxutils import escape
 
-from staging.ppki.catalog import UNIT, UNIT3, catalog
+from staging.ppki.catalog import UNIT, UNIT_LESSONS, catalog
 from staging.ppki.render_pengurusan_kehidupan import PPKI_LABEL_FILL
 
 
@@ -18,7 +18,8 @@ def render_rpt(*, combined=False):
     normal = ParagraphStyle("RPT cell", fontName=regular, fontSize=9, leading=11)
     header = ParagraphStyle("RPT heading", parent=normal, fontName=bold)
     title = ParagraphStyle("RPT title", parent=header, fontSize=16, leading=19)
-    def unit_story(unit):
+
+    def unit_story(unit, number):
         source = catalog(unit)
         rows = [[Paragraph(label, header) for label in ("PdP", "Fokus", "SK", "SP", "Buku Teks")]]
         for lesson in source["lessons"]:
@@ -38,7 +39,7 @@ def render_rpt(*, combined=False):
             ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
         ]))
         return [
-            Paragraph(f"RPT 2027 · Agihan PdP Unit {3 if unit == UNIT3 else 2}", title),
+            Paragraph(f"RPT 2027 · Agihan PdP Unit {number}", title),
             Paragraph("PPKI · Pengurusan Kehidupan Tahun 2 · Pengurusan Diri", header),
             Paragraph(escape(source["unit"]), header),
             Spacer(1, 3 * mm),
@@ -47,11 +48,15 @@ def render_rpt(*, combined=False):
             table,
         ]
 
+    units = list(UNIT_LESSONS) if combined else [UNIT]
+    edition = f"2–{len(units) + 1}" if combined else "2"
     stream = BytesIO()
-    doc = SimpleDocTemplate(stream, pagesize=landscape(A4), title=f"RPT PPKI Tahun 2 · Agihan PdP Unit {'2–3' if combined else '2'}",
+    doc = SimpleDocTemplate(stream, pagesize=landscape(A4), title=f"RPT PPKI Tahun 2 · Agihan PdP Unit {edition}",
                             leftMargin=15 * mm, rightMargin=15 * mm, topMargin=12 * mm, bottomMargin=12 * mm)
-    story = unit_story(UNIT)
-    if combined:
-        story.extend([PageBreak(), *unit_story(UNIT3)])
+    story = []
+    for number, unit in enumerate(units, start=2):
+        if story:
+            story.append(PageBreak())
+        story.extend(unit_story(unit, number))
     doc.build(story)
     return stream.getvalue()
