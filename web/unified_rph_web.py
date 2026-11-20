@@ -110,6 +110,13 @@ PPKI_YEAR6_AGENCY_VIDEOS = tuple(
     )
 )
 PPKI_YEAR6_AGENCY_LESSONS = frozenset(("001", "002"))
+PPKI_YEAR6_POETRY = (
+    {"type": "video", "title": "Contoh lafaz pantun · latihan hlm. 62",
+     "url": "https://www.youtube.com/watch?v=luTldCdJQLs", "action": "Mainkan Rakaman"},
+    {"type": "video", "title": "Sajak Jiwa Merdeka · contoh deklamasi hlm. 63",
+     "url": "https://www.youtube.com/watch?v=4vRHZ-dXtW8", "action": "Mainkan Rakaman"},
+)
+PPKI_YEAR6_POETRY_LESSONS = frozenset(("040", "041", "042"))
 
 def _safe_text(value, limit=300):
     return isinstance(value, str) and 0 < len(value) <= limit and bool(value.strip())
@@ -1285,7 +1292,8 @@ def create_blueprint():
         if sub == ppki.SUBJECT and ((year, unit, lesson) == (3, ppki.UNIT1, "003")
                                     or (year, unit, lesson) in PPKI_SOURCE_VIDEOS
                                     or (year == 5 and (unit, lesson) in PPKI_YEAR5_MEDIA)
-                                    or (year == 6 and unit == ppki.UNIT1 and lesson in PPKI_YEAR6_AGENCY_LESSONS)):
+                                    or (year == 6 and unit == ppki.UNIT1 and lesson in PPKI_YEAR6_AGENCY_LESSONS)
+                                    or (year == 6 and unit == ppki.MANIPULATIVE_UNIT1 and lesson in PPKI_YEAR6_POETRY_LESSONS)):
             return year, sub, unit, lesson, None
         if sub == "SCIENCE":
             from web.native_textbook_references import SCIENCE_PAGES
@@ -1312,7 +1320,8 @@ def create_blueprint():
             if sub == ppki.SUBJECT:
                 ppki.validate_selection(year, sub, unit, token)
                 if year == 6:
-                    return jsonify({"status": "PAUTAN_RAKAMAN", "items": PPKI_YEAR6_AGENCY_VIDEOS})
+                    items = PPKI_YEAR6_AGENCY_VIDEOS if unit == ppki.UNIT1 else PPKI_YEAR6_POETRY
+                    return jsonify({"status": "PAUTAN_RAKAMAN", "items": items})
                 if year == 5:
                     items = PPKI_YEAR5_MEDIA[(unit, token)]
                     return jsonify({"status": "PAUTAN_RAKAMAN", "items": items})
