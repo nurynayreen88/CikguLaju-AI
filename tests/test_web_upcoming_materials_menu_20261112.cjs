@@ -40,7 +40,7 @@ assert.ok(pos("rph")<pos("worksheet") && pos("worksheet")<pos("bbm") &&
  pos("bbm")<pos("uasa") && pos("uasa")<pos("pbd") &&
  pos("pbd")<pos("special"),"Teaching-material features should follow Sediakan RPH");
 assert.doesNotMatch(source,/id="view-kp2027"|data-web-view="kp2027"/);
-assert.match(source,/<select id="curriculum">.*<option value="kssr">KSSR \(SK\)<\/option><option value="sjkc">KSSR \(SJKC\)<\/option><option value="sjkt">KSSR \(SJKT\)<\/option><option value="kp2027">KP2027<\/option><\/select>/);
+assert.match(source,/<select id="curriculum">.*<option value="kssr">KSSR \(SK\)<\/option><option value="sjkc">KSSR \(SJKC\)<\/option><option value="sjkt">KSSR \(SJKT\)<\/option><option value="kp2027">KP2027<\/option><option value="ppki">Pendidikan Khas \(PPKI\)<\/option><\/select>/);
 assert.match(source,/<select id="year" hidden disabled>/);
 assert.match(source,/<select id="subject" hidden disabled>/);
 assert.match(source,/year===1\?"Tahun 1 \(KP Baharu\)"/);

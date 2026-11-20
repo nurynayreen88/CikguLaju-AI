@@ -1908,7 +1908,7 @@ const MATERIAL_CATEGORIES = Object.freeze([
  {code:"workbook",label:"Buku Aktiviti",kind:"workbook"}
 ]);
 const materialPanel=document.getElementById("materials-panel");
-let materialsRequestKey="";
+let materialsRequestKey="", materialsRequestVersion=0;
 function materialRow(title,{onDownload=null,url=null,ready=false,statusLabel="Belum tersedia",actionLabel="Download"}={}){
  const li=document.createElement("li");
  li.className="material-download-row";
@@ -1926,6 +1926,8 @@ async function populateMaterialList(){
  const key=currentRphLessonKey();
  if(!lesson.value)return;
  materialsRequestKey=key;
+ const version=++materialsRequestVersion;
+ const isCurrent=()=>version===materialsRequestVersion&&materialsRequestKey===key&&currentRphLessonKey()===key;
  materialPanel.hidden=false;
  const list=document.getElementById("materials-list");
  const status=document.getElementById("materials-status");
@@ -1942,7 +1944,7 @@ async function populateMaterialList(){
      credentials:"same-origin",cache:"no-store",redirect:"error"
    });
    const data=await result.json().catch(()=>({}));
-   if(materialsRequestKey!==key||currentRphLessonKey()!==key)return;
+   if(!isCurrent())return;
    if(result.ok&&data.available===true&&data.generator==="telegram-native"){
     verifiedRphKey=key;
     verifiedRphFormats=Array.isArray(data.formats)?
@@ -1954,7 +1956,7 @@ async function populateMaterialList(){
    }
   }catch(_error){sourceError="Semakan RPH belum dapat dihubungi.";}
  }
- if(materialsRequestKey!==key||currentRphLessonKey()!==key)return;
+ if(!isCurrent())return;
  if(sourceConfirmed){
   const rphReady=canGenerateRph()&&!!currentRphParams();
   const locked=!canGenerateRph();
@@ -1979,7 +1981,7 @@ async function populateMaterialList(){
    const response=await fetch("/api/web/rph/extra-materials?"+params,{
                               credentials:"same-origin",cache:"no-store",redirect:"error"});
    const data=await response.json().catch(()=>({}));
-   if(materialsRequestKey!==key||currentRphLessonKey()!==key)return;
+   if(!isCurrent())return;
    if(!response.ok)throw Error(data.error||"Bahan tambahan belum boleh disemak.");
    if(!Array.isArray(data.items)||data.items.length>30)throw Error("Senarai sumber tidak sah.");
    extraNotice=String(data.note||"");
@@ -2012,7 +2014,7 @@ async function populateMaterialList(){
    }
   }catch(e){sourceError=(sourceError+" "+e.message).trim();}
  }
- if(materialsRequestKey!==key||currentRphLessonKey()!==key)return;
+ if(!isCurrent())return;
  status.textContent=(found? "Hanya bahan yang tersedia dipaparkan. ":
    "Tiada bahan yang disahkan tersedia untuk Lesson/PdP ini. ")+
    (sourceError?"Semakan belum lengkap: "+sourceError:extraNotice);

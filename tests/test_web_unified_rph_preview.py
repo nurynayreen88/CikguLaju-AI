@@ -28,7 +28,7 @@ class UnifiedWebRPHTests(unittest.TestCase):
         self.assertEqual(set(SUBJECT_LABELS), {
             "ENGLISH", "BM", "MATH", "MATH_DPK3", "MATH_DLP", "MATH_SJKC", "MATH_SJKT",
             "SCIENCE", "SCIENCE_DLP", "PI",
-            "PJPK", "MORAL", "PSV", "SEJARAH", "ARAB", "MUZIK", "RBT",
+            "PJPK", "MORAL", "PSV", "SEJARAH", "ARAB", "MUZIK", "RBT", "PENGURUSAN_KEHIDUPAN_PPKI",
         })
         self.assertEqual(sum(k.startswith("6/") for k in english_index()), 160)
         self.assertEqual(len(source_records(6, "ENGLISH")), 160)
