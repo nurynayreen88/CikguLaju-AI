@@ -10,7 +10,7 @@ from pypdf import PdfReader
 
 from curriculum_version_telegram import install
 from rpt_2027.english.telegram_downloads import install as install_rpt
-from staging.ppki.catalog import MANIPULATIVE_UNIT1, MANIPULATIVE_UNIT_LESSONS, SUBJECT, UNIT, UNIT1, UNIT3, UNIT4, UNIT5
+from staging.ppki.catalog import MANIPULATIVE_UNIT1, MANIPULATIVE_UNIT_LESSONS, SUBJECT, UNIT, UNIT1, UNIT3, UNIT4, UNIT5, YEAR3_MANIPULATIVE_UNIT_LESSONS
 from web.telegram_ppki_api import create_ppki_blueprint
 
 
@@ -106,7 +106,7 @@ class PpkiTelegramTest(unittest.TestCase):
 
 
 class PpkiApiTest(unittest.TestCase):
-    def test_year3_49_word_pdf_and_rpt_have_exact_scope(self):
+    def test_year3_73_word_pdf_and_rpt_have_exact_scope(self):
         app = Flask(__name__)
         app.register_blueprint(create_ppki_blueprint())
         client = app.test_client()
@@ -118,15 +118,20 @@ class PpkiApiTest(unittest.TestCase):
             source = client.get(prefix + "/catalog?year=3", headers=headers).get_json()
             self.assertEqual(source["year"], 3)
             self.assertEqual(source["units"], [{"value": UNIT1, "label": "Unit 1 · Sekolah, Duniaku"}])
-            self.assertEqual(source["kemahiran_manipulatif"], [])
+            km = source["kemahiran_manipulatif"]
+            self.assertEqual([unit["value"] for unit in km], list(YEAR3_MANIPULATIVE_UNIT_LESSONS))
+            for unit in km:
+                self.assertEqual([row["value"] for row in unit["lessons"]],
+                                 [f"{n:03d}" for n in YEAR3_MANIPULATIVE_UNIT_LESSONS[unit["value"]]])
             self.assertEqual([row["value"] for row in source["lessons"]],
                              [f"{number:03d}" for number in range(1, 18)])
             self.assertEqual([unit["value"] for unit in source["additional_units"]], [UNIT, UNIT3, UNIT4, UNIT5])
             self.assertEqual(client.get(prefix + "/catalog?year=3&year=2", headers=headers).status_code, 400)
             teacher = {"class": "3 Bestari", "date": "2027-01-20", "time": "09:00 - 09:30",
                        "students": "8", "reflection": "Ulang dengan pilihan bergambar."}
-            units = [{"value": UNIT1, "lessons": source["lessons"]}, *source["additional_units"]]
-            expected = (range(1, 18), range(18, 36), range(36, 40), range(40, 44), range(44, 50))
+            units = [{"value": UNIT1, "lessons": source["lessons"]}, *source["additional_units"], *km]
+            expected = (range(1, 18), range(18, 36), range(36, 40), range(40, 44), range(44, 50),
+                        *YEAR3_MANIPULATIVE_UNIT_LESSONS.values())
             for unit, numbers in zip(units, expected, strict=True):
                 self.assertEqual([row["value"] for row in unit["lessons"]], [f"{n:03d}" for n in numbers])
                 for row in unit["lessons"]:
@@ -157,7 +162,14 @@ class PpkiApiTest(unittest.TestCase):
                 text = page.extract_text()
                 self.assertIn("Tahun 3", text)
                 self.assertIn(last, text)
-            self.assertEqual(client.get(prefix + "/rpt-manipulatif.pdf?year=3", headers=headers).status_code, 404)
+            response = client.get(prefix + "/rpt-manipulatif.pdf?year=3", headers=headers)
+            self.assertEqual(response.status_code, 200)
+            self.assertIn("KEMAHIRAN_MANIPULATIF_TAHUN_3", response.headers["Content-Disposition"])
+            km_rpt = PdfReader(BytesIO(response.data))
+            self.assertEqual(len(km_rpt.pages), 3)
+            for page, last in zip(km_rpt.pages, ("055", "061", "073"), strict=True):
+                self.assertIn("Kemahiran Manipulatif", page.extract_text())
+                self.assertIn(last, page.extract_text())
 
     def test_all_71_word_pdf_and_protected_access(self):
         app = Flask(__name__)

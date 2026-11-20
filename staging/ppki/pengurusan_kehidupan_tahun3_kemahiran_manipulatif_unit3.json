@@ -1,0 +1,366 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 3,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Kemahiran Manipulatif",
+  "unit": "Unit 3 · Istimewanya Deria",
+  "content_standards": {
+    "3.1": "Pengamatan pendengaran.",
+    "3.2": "Pengamatan penglihatan.",
+    "3.3": "Pengamatan sensori dengan deria sentuh dan bau.",
+    "3.4": "Koordinasi."
+  },
+  "learning_standards": {
+    "3.1.1": "Membezakan bunyi kuat dan perlahan.",
+    "3.1.2": "Memadankan bunyi yang didengar dengan sumber bunyi.",
+    "3.1.3": "Membuat perkaitan bunyi yang didengar dengan sesuatu perkara.",
+    "3.2.1": "Mengenal bentuk, huruf, nombor, perkataan atau ayat.",
+    "3.2.2": "Menyalin semula sesuatu bentuk, huruf, nombor, perkataan atau ayat.",
+    "3.2.3": "Melakukan pergerakan motor mata tangan dalam aktiviti melukis dan menyambung garisan mengikut arah.",
+    "3.3.1": "Mengenal pasti permukaan kasar, licin, panas dan sejuk dengan deria sentuh.",
+    "3.3.2": "Membezakan permukaan kasar, licin, panas dan sejuk dengan deria sentuh.",
+    "3.3.3": "Menjelaskan perbezaan jenis permukaan.",
+    "3.3.4": "Membezakan bau wangi dan busuk dengan deria bau.",
+    "3.4.1": "Mengimbang pergerakan semasa berjalan lurus di atas papan titian dan di atas lingkaran tali.",
+    "3.4.2": "Menunjukkan cara berjalan di atas titian lurus dan lingkaran tali dalam pelbagai kaedah simulasi."
+  },
+  "lessons": [
+    {
+      "pdp": "062",
+      "sp": "3.1.1",
+      "book": "Buku Teks hlm. 64–65",
+      "title": "Bezakan bunyi kuat dan perlahan",
+      "focus": "Bezakan bunyi kuat dan perlahan.",
+      "objective": "Murid dapat bezakan lima daripada enam bunyi tanpa melihat sumber.",
+      "materials": "Gendang kecil, kad kuat dan perlahan.",
+      "induction": [
+        "Tetapkan isyarat sedia dan berikan satu contoh bunyi dari jarak selesa.",
+        "Dengar dan tunjuk kad sedia apabila bersedia."
+      ],
+      "guided": [
+        "Hasilkan dua aras bunyi pada sumber yang sama.",
+        "Pilih kad kuat atau perlahan selepas setiap contoh."
+      ],
+      "practice": [
+        "Mainkan enam bunyi mengikut urutan baharu tanpa menunjukkan sumber.",
+        "Kelaskan bunyi mengikut kekuatan."
+      ],
+      "closure": [
+        "Ulang satu bunyi untuk menyemak pilihan terakhir.",
+        "Pilih kad yang menerangkan bunyi, sumber atau situasinya."
+      ],
+      "support": "Kekalkan volum sederhana dan jarak yang selesa.",
+      "assessment": "Guru merekod sama ada murid dapat bezakan lima daripada enam bunyi tanpa melihat sumber.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "063",
+      "sp": "3.1.2",
+      "book": "Buku Teks hlm. 64–65",
+      "title": "Padankan bunyi dengan sumber",
+      "focus": "Padankan bunyi dengan sumber.",
+      "objective": "Murid dapat padankan empat daripada lima bunyi dengan sumber tepat.",
+      "materials": "Kertas, loceng lembut, bekas biji tertutup, kad gambar.",
+      "induction": [
+        "Tetapkan isyarat sedia dan berikan satu contoh bunyi dari jarak selesa.",
+        "Dengar dan tunjuk kad sedia apabila bersedia."
+      ],
+      "guided": [
+        "Perdengarkan bunyi tiga objek sambil menunjukkan gambar.",
+        "Padankan bunyi pertama dengan gambar bersama guru."
+      ],
+      "practice": [
+        "Hasilkan lima bunyi daripada objek di belakang skrin.",
+        "Pilih satu kad sumber bagi setiap bunyi."
+      ],
+      "closure": [
+        "Ulang satu bunyi untuk menyemak pilihan terakhir.",
+        "Pilih kad yang menerangkan bunyi, sumber atau situasinya."
+      ],
+      "support": "Mulakan dengan dua pilihan bergambar.",
+      "assessment": "Guru merekod sama ada murid dapat padankan empat daripada lima bunyi dengan sumber tepat.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "064",
+      "sp": "3.1.3",
+      "book": "Buku Teks hlm. 65–67",
+      "title": "Kaitkan bunyi dengan situasi",
+      "focus": "Kaitkan bunyi dengan situasi.",
+      "objective": "Murid dapat kaitkan tiga daripada empat bunyi dengan situasi munasabah.",
+      "materials": "Kad gambar pintu, loceng waktu rehat, gambar hujan.",
+      "induction": [
+        "Tetapkan isyarat sedia dan berikan satu contoh bunyi dari jarak selesa.",
+        "Dengar dan tunjuk kad sedia apabila bersedia."
+      ],
+      "guided": [
+        "Hasilkan bunyi ketukan perlahan dan tunjuk gambar pintu.",
+        "Cadangkan sebab bunyi itu kedengaran."
+      ],
+      "practice": [
+        "Beri empat situasi dengan bunyi objek sebenar atau simulasi langsung.",
+        "Pilih gambar dan terangkan perkaitan bunyi dengan situasi."
+      ],
+      "closure": [
+        "Ulang satu bunyi untuk menyemak pilihan terakhir.",
+        "Pilih kad yang menerangkan bunyi, sumber atau situasinya."
+      ],
+      "support": "Sediakan pilihan gambar dan bingkai jawapan ringkas.",
+      "assessment": "Guru merekod sama ada murid dapat kaitkan tiga daripada empat bunyi dengan situasi munasabah.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "065",
+      "sp": "3.2.1",
+      "book": "Buku Teks hlm. 68–71",
+      "title": "Kenal bentuk, huruf, nombor dan perkataan",
+      "focus": "Kenal bentuk, huruf, nombor dan perkataan.",
+      "objective": "Murid dapat kenal pasti lima daripada enam kad yang meliputi empat kategori.",
+      "materials": "Kad bentuk, huruf, nombor dan perkataan biasa.",
+      "induction": [
+        "Tunjuk satu contoh yang besar pada halaman rujukan.",
+        "Jejak satu ciri dengan mata atau jari."
+      ],
+      "guided": [
+        "Modelkan ciri empat jenis kad dan padanan dengan ilustrasi.",
+        "Tunjuk atau namakan kad yang sama dengan model."
+      ],
+      "practice": [
+        "Campurkan empat kategori dan tunjuk contoh daripada halaman buku.",
+        "Asingkan kad mengikut kategori dan kenal pasti contoh yang diminta."
+      ],
+      "closure": [
+        "Pamerkan hasil atau pilihan kad yang tepat.",
+        "Tunjuk titik mula atau ciri yang membantu."
+      ],
+      "support": "Guna kad besar kontras tinggi.",
+      "assessment": "Guru merekod sama ada murid dapat kenal pasti lima daripada enam kad yang meliputi empat kategori.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "066",
+      "sp": "3.2.2",
+      "book": "Buku Teks hlm. 70–72",
+      "title": "Salin bentuk, huruf dan nombor",
+      "focus": "Salin bentuk, huruf dan nombor.",
+      "objective": "Murid dapat salin tiga daripada empat item dengan ciri utama yang dapat dikenal.",
+      "materials": "Kad model, pensel tebal, kertas petak.",
+      "induction": [
+        "Tunjuk satu contoh yang besar pada halaman rujukan.",
+        "Jejak satu ciri dengan mata atau jari."
+      ],
+      "guided": [
+        "Modelkan titik mula serta arah menyalin bulatan, huruf dan nombor.",
+        "Tulis atau jejak satu contoh bersama guru."
+      ],
+      "practice": [
+        "Letakkan kad model di sisi empat petak kosong.",
+        "Salin bentuk, huruf dan nombor mengikut contoh."
+      ],
+      "closure": [
+        "Pamerkan hasil atau pilihan kad yang tepat.",
+        "Tunjuk titik mula atau ciri yang membantu."
+      ],
+      "support": "Besarkan petak dan gunakan garis tebal.",
+      "assessment": "Guru merekod sama ada murid dapat salin tiga daripada empat item dengan ciri utama yang dapat dikenal.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "067",
+      "sp": "3.2.3",
+      "book": "Buku Teks hlm. 72",
+      "title": "Sambung garisan mengikut arah",
+      "focus": "Sambung garisan mengikut arah.",
+      "objective": "Murid dapat lengkapkan dua daripada tiga laluan dengan arah betul.",
+      "materials": "Lembaran anak panah, titik mula, pensel tebal.",
+      "induction": [
+        "Tunjuk satu contoh yang besar pada halaman rujukan.",
+        "Jejak satu ciri dengan mata atau jari."
+      ],
+      "guided": [
+        "Modelkan menyambung titik untuk membentuk satu laluan.",
+        "Tunjuk titik mula dan ikut anak panah dengan jari."
+      ],
+      "practice": [
+        "Beri tiga laluan bertitik dengan arah berbeza.",
+        "Sambung garisan sehingga titik akhir."
+      ],
+      "closure": [
+        "Pamerkan hasil atau pilihan kad yang tepat.",
+        "Tunjuk titik mula atau ciri yang membantu."
+      ],
+      "support": "Pendekkan laluan dan besarkan titik mula.",
+      "assessment": "Guru merekod sama ada murid dapat lengkapkan dua daripada tiga laluan dengan arah betul.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "068",
+      "sp": "3.3.1",
+      "book": "Buku Teks hlm. 73–75",
+      "title": "Kenal permukaan menggunakan deria sentuh",
+      "focus": "Kenal permukaan menggunakan deria sentuh.",
+      "objective": "Murid dapat kenal pasti tiga daripada empat ciri.",
+      "materials": "Kain kasar, plastik licin, bekas tertutup suam dan sejuk.",
+      "induction": [
+        "Pamerkan gambar pada halaman rujukan dan terangkan cara memberi isyarat berhenti.",
+        "Pilih sama ada hendak memerhati atau mencuba bahan."
+      ],
+      "guided": [
+        "Modelkan sentuhan pada bahan selamat dan padanan kad ciri.",
+        "Pilih kad kasar, licin, suam atau sejuk selepas mencuba."
+      ],
+      "practice": [
+        "Tawar empat bahan dan benarkan murid memilih cara memerhati.",
+        "Padankan bahan yang dikenal dengan cirinya."
+      ],
+      "closure": [
+        "Minta murid pilih satu ciri daripada aktiviti.",
+        "Nyatakan atau tunjuk satu ciri yang dikenal."
+      ],
+      "support": "Semak suhu dahulu dan tawar pilihan visual.",
+      "assessment": "Guru merekod sama ada murid dapat kenal pasti tiga daripada empat ciri.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "069",
+      "sp": "3.3.2",
+      "book": "Buku Teks hlm. 74–75",
+      "title": "Banding pasangan permukaan dan suhu",
+      "focus": "Banding pasangan permukaan dan suhu.",
+      "objective": "Murid dapat bezakan tiga daripada empat pasangan yang diuji.",
+      "materials": "Dua pasangan bahan bertekstur, bekas suhu selamat.",
+      "induction": [
+        "Pamerkan gambar pada halaman rujukan dan terangkan cara memberi isyarat berhenti.",
+        "Pilih sama ada hendak memerhati atau mencuba bahan."
+      ],
+      "guided": [
+        "Modelkan membandingkan dua sampel dan menerangkan perbezaan.",
+        "Pilih sampel lebih kasar atau sejuk."
+      ],
+      "practice": [
+        "Susun empat pasangan dan tukar kedudukan sampel.",
+        "Tunjuk atau namakan sampel yang menepati perbandingan."
+      ],
+      "closure": [
+        "Minta murid pilih satu ciri daripada aktiviti.",
+        "Nyatakan atau tunjuk satu ciri yang dikenal."
+      ],
+      "support": "Semak suhu dahulu dan benarkan isyarat atau kad.",
+      "assessment": "Guru merekod sama ada murid dapat bezakan tiga daripada empat pasangan yang diuji.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "070",
+      "sp": "3.3.3",
+      "book": "Buku Teks hlm. 75",
+      "title": "Terangkan perbezaan jenis permukaan",
+      "focus": "Terangkan perbezaan jenis permukaan.",
+      "objective": "Murid dapat beri dua perbandingan lengkap dengan kata ciri atau simbol.",
+      "materials": "Gambar buku teks, kain, papan licin, kad ayat.",
+      "induction": [
+        "Pamerkan gambar pada halaman rujukan dan terangkan cara memberi isyarat berhenti.",
+        "Pilih sama ada hendak memerhati atau mencuba bahan."
+      ],
+      "guided": [
+        "Modelkan penerangan tentang ciri dua permukaan berbeza.",
+        "Lengkapkan satu perbandingan dengan kad ciri."
+      ],
+      "practice": [
+        "Pamerkan tiga pasangan bahan yang pernah diperhatikan.",
+        "Terangkan satu ciri bagi setiap bahan dalam pasangan."
+      ],
+      "closure": [
+        "Minta murid pilih satu ciri daripada aktiviti.",
+        "Nyatakan atau tunjuk satu ciri yang dikenal."
+      ],
+      "support": "Benarkan pilihan kad ciri dan guna suhu selamat.",
+      "assessment": "Guru merekod sama ada murid dapat beri dua perbandingan lengkap dengan kata ciri atau simbol.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "071",
+      "sp": "3.3.4",
+      "book": "Buku Teks hlm. 76–77",
+      "title": "Bezakan bau wangi dan kurang menyenangkan",
+      "focus": "Bezakan bau wangi dan kurang menyenangkan.",
+      "objective": "Murid dapat bezakan tiga daripada empat contoh yang dipersembahkan.",
+      "materials": "Kad gambar dan bekas aroma ringan yang selamat.",
+      "induction": [
+        "Pamerkan gambar pada halaman rujukan dan terangkan cara memberi isyarat berhenti.",
+        "Pilih sama ada hendak memerhati atau mencuba bahan."
+      ],
+      "guided": [
+        "Modelkan cara menghidu dari jarak selesa dengan bekas pilihan.",
+        "Padankan contoh dengan kad bau atau pilih untuk berhenti."
+      ],
+      "practice": [
+        "Bandingkan sampel ringan yang dipersetujui atau gambar bahan lazim.",
+        "Asingkan contoh kepada dua kategori."
+      ],
+      "closure": [
+        "Minta murid pilih satu ciri daripada aktiviti.",
+        "Nyatakan atau tunjuk satu ciri yang dikenal."
+      ],
+      "support": "Elakkan bahan rosak dan pencetus alahan. Sediakan pilihan bergambar.",
+      "assessment": "Guru merekod sama ada murid dapat bezakan tiga daripada empat contoh yang dipersembahkan.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "072",
+      "sp": "3.4.1",
+      "book": "Buku Teks hlm. 78–79",
+      "title": "Imbang badan pada laluan lurus dan bulat",
+      "focus": "Imbang badan pada laluan lurus dan bulat.",
+      "objective": "Murid dapat kekalkan imbangan pada dua jenis laluan dan berhenti di tanda akhir.",
+      "materials": "Garis pita lantai, tali rata, tanda mula dan tamat.",
+      "induction": [
+        "Tunjuk tanda mula dan hentian pada laluan.",
+        "Kenal pasti arah bergerak dan tempat menunggu."
+      ],
+      "guided": [
+        "Modelkan langkah perlahan dan pandangan ke hadapan.",
+        "Lalui garis lurus dan kenal pasti lengkung tali."
+      ],
+      "practice": [
+        "Tetapkan dua laluan rata dan ruang sokongan di sisi.",
+        "Lengkapkan satu percubaan bagi setiap laluan."
+      ],
+      "closure": [
+        "Minta murid tunjuk kedudukan badan semasa berhenti.",
+        "Berhenti di penanda mengikut isyarat."
+      ],
+      "support": "Mulakan dengan laluan lebar di lantai.",
+      "assessment": "Guru merekod sama ada murid dapat kekalkan imbangan pada dua jenis laluan dan berhenti di tanda akhir.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "073",
+      "sp": "3.4.2",
+      "book": "Buku Teks hlm. 79–81",
+      "title": "Gabung titian lurus dan lingkaran dalam simulasi",
+      "focus": "Gabung titian lurus dan lingkaran dalam simulasi.",
+      "objective": "Murid dapat lengkapkan dua simulasi dengan langkah terkawal dan patuhi tanda berhenti.",
+      "materials": "Penanda lantai, tali rata, kon dan kad hentian.",
+      "induction": [
+        "Tunjuk tanda mula dan hentian pada laluan.",
+        "Kenal pasti arah bergerak dan tempat menunggu."
+      ],
+      "guided": [
+        "Modelkan urutan melalui dua laluan dan berhenti pada isyarat.",
+        "Latih laluan pertama dengan bantuan yang sesuai."
+      ],
+      "practice": [
+        "Susun dua simulasi tanpa halangan tinggi dan jelaskan tempat menunggu.",
+        "Lalui kedua-dua jenis laluan dalam dua susunan terkawal."
+      ],
+      "closure": [
+        "Minta murid tunjuk kedudukan badan semasa berhenti.",
+        "Berhenti di penanda mengikut isyarat."
+      ],
+      "support": "Guna laluan rata, giliran individu dan laluan pendek apabila perlu.",
+      "assessment": "Guru merekod sama ada murid dapat lengkapkan dua simulasi dengan langkah terkawal dan patuhi tanda berhenti.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    }
+  ]
+}

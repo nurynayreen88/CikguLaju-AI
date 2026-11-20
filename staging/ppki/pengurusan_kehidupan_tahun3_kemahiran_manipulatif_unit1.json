@@ -1,0 +1,188 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 3,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Kemahiran Manipulatif",
+  "unit": "Unit 1 · Jom Sihat",
+  "content_standards": {
+    "1.1": "Pergerakan asas bahagian tangan dengan alatan mengikut arah, aras dan jarak.",
+    "1.2": "Pergerakan asas bahagian kaki dengan alatan mengikut arah, aras dan jarak."
+  },
+  "learning_standards": {
+    "1.1.1": "Melakukan pergerakan menggunakan objek dengan cara melontar, menyambut, menangkap dan menepis.",
+    "1.1.2": "Melakukan gabungan beberapa pergerakan bahagian tangan dalam aktiviti permainan kecil.",
+    "1.2.1": "Melakukan pergerakan menggunakan objek dengan cara menendang, meleret, menggelecek dan meloncat.",
+    "1.2.2": "Melakukan gabungan pergerakan bahagian kaki dalam aktiviti permainan kecil."
+  },
+  "lessons": [
+    {
+      "pdp": "050",
+      "sp": "1.1.1",
+      "book": "Buku Teks hlm. 48–49",
+      "title": "Lontar dan sambut pundi kain",
+      "focus": "Lontar dan sambut pundi kain.",
+      "objective": "Murid dapat lontar tepat dan sambut dalam tiga daripada empat cubaan setiap gerakan.",
+      "materials": "Pundi kain lembut, gelung sasaran, pita lantai.",
+      "induction": [
+        "Tunjukkan gambar gerakan tangan pada halaman rujukan.",
+        "Pilih satu peralatan untuk mencuba gerakan."
+      ],
+      "guided": [
+        "Tunjukkan sasaran dan modelkan lontaran bawah tangan serta sambutan dua tangan.",
+        "Lontar ke gelung dan sambut pundi dari jarak dekat."
+      ],
+      "practice": [
+        "Tukar jarak sasaran dan beri isyarat bertukar peranan.",
+        "Lontar dan sambut dengan pasangan mengikut giliran."
+      ],
+      "closure": [
+        "Minta murid tunjuk kedudukan tangan sebelum giliran.",
+        "Ulang kedudukan tangan dan pulangkan peralatan."
+      ],
+      "support": "Gunakan sasaran besar dan ubah jarak secara beransur.",
+      "assessment": "Guru merekod sama ada murid dapat lontar tepat dan sambut dalam tiga daripada empat cubaan setiap gerakan.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "051",
+      "sp": "1.1.1",
+      "book": "Buku Teks hlm. 48–49",
+      "title": "Tangkap dan tepis bola lembut",
+      "focus": "Tangkap dan tepis bola lembut.",
+      "objective": "Murid dapat lakukan enam daripada lapan respons betul merangkumi kedua-dua gerakan.",
+      "materials": "Bola busa, belon kain, kon.",
+      "induction": [
+        "Tunjukkan gambar gerakan tangan pada halaman rujukan.",
+        "Pilih satu peralatan untuk mencuba gerakan."
+      ],
+      "guided": [
+        "Modelkan tangan bersedia ketika menangkap dan tapak terbuka ketika menepis.",
+        "Tangkap bola yang dihantar perlahan dan tepis belon ke sisi."
+      ],
+      "practice": [
+        "Ubah aras antara pinggang dan dada mengikut keupayaan.",
+        "Tangkap atau tepis mengikut isyarat yang diberi."
+      ],
+      "closure": [
+        "Minta murid tunjuk kedudukan tangan sebelum giliran.",
+        "Ulang kedudukan tangan dan pulangkan peralatan."
+      ],
+      "support": "Gunakan objek besar dan gerakan perlahan.",
+      "assessment": "Guru merekod sama ada murid dapat lakukan enam daripada lapan respons betul merangkumi kedua-dua gerakan.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "052",
+      "sp": "1.1.2",
+      "book": "Buku Teks hlm. 50",
+      "title": "Gabung gerakan tangan dalam permainan",
+      "focus": "Gabung gerakan tangan dalam permainan.",
+      "objective": "Murid dapat lengkapkan dua urutan tiga gerakan dan patuhi tanda berhenti.",
+      "materials": "Pundi kain, bola busa, bakul, kad giliran.",
+      "induction": [
+        "Tunjukkan gambar gerakan tangan pada halaman rujukan.",
+        "Pilih satu peralatan untuk mencuba gerakan."
+      ],
+      "guided": [
+        "Modelkan urutan melontar kepada rakan, menyambut dan memasukkan pundi ke bakul.",
+        "Cuba urutan dengan pasangan tanpa skor."
+      ],
+      "practice": [
+        "Tetapkan kawasan giliran dan tambah stesen tepis.",
+        "Jalankan dua pusingan dengan tiga gerakan sambil menunggu giliran."
+      ],
+      "closure": [
+        "Minta murid tunjuk kedudukan tangan sebelum giliran.",
+        "Ulang kedudukan tangan dan pulangkan peralatan."
+      ],
+      "support": "Gunakan kad urutan bergambar dan jarak dekat.",
+      "assessment": "Guru merekod sama ada murid dapat lengkapkan dua urutan tiga gerakan dan patuhi tanda berhenti.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "053",
+      "sp": "1.2.1",
+      "book": "Buku Teks hlm. 51",
+      "title": "Tendang dan leret bola ke sasaran",
+      "focus": "Tendang dan leret bola ke sasaran.",
+      "objective": "Murid dapat capai sasaran tiga daripada empat cubaan bagi setiap gerakan.",
+      "materials": "Bola busa, kon, dua sasaran lantai.",
+      "induction": [
+        "Tunjukkan dua kedudukan bola pada halaman rujukan.",
+        "Tunjuk arah gerakan kaki yang akan dicuba."
+      ],
+      "guided": [
+        "Modelkan tendangan lembut dan cara meleret bola di lantai.",
+        "Lakukan kedua-dua pergerakan menggunakan bahagian dalam kaki."
+      ],
+      "practice": [
+        "Tukar sasaran kiri dan kanan serta laraskan jarak.",
+        "Tendang atau leret mengikut kad sasaran."
+      ],
+      "closure": [
+        "Minta murid tunjuk cara berhenti dengan stabil.",
+        "Tunjuk posisi berhenti di penanda lantai."
+      ],
+      "support": "Gunakan pintu sasaran lebar dan jarak dekat.",
+      "assessment": "Guru merekod sama ada murid dapat capai sasaran tiga daripada empat cubaan bagi setiap gerakan.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "054",
+      "sp": "1.2.1",
+      "book": "Buku Teks hlm. 51",
+      "title": "Gelecek bola dan loncat di stesen",
+      "focus": "Gelecek bola dan loncat di stesen.",
+      "objective": "Murid dapat lalui dua laluan dengan gelecek terkawal dan pendaratan stabil.",
+      "materials": "Bola lembut, kon, penanda rata.",
+      "induction": [
+        "Tunjukkan dua kedudukan bola pada halaman rujukan.",
+        "Tunjuk arah gerakan kaki yang akan dicuba."
+      ],
+      "guided": [
+        "Modelkan sentuhan kaki kecil ketika menggelecek dan pendaratan stabil.",
+        "Gelecek melalui dua kon lalu loncat melepasi garisan rata."
+      ],
+      "practice": [
+        "Susun dua laluan dengan jarak kon berbeza.",
+        "Pilih laluan yang sesuai dan lakukan gelecek serta loncatan."
+      ],
+      "closure": [
+        "Minta murid tunjuk cara berhenti dengan stabil.",
+        "Tunjuk posisi berhenti di penanda lantai."
+      ],
+      "support": "Guna jarak pendek dan penanda lantai.",
+      "assessment": "Guru merekod sama ada murid dapat lalui dua laluan dengan gelecek terkawal dan pendaratan stabil.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    },
+    {
+      "pdp": "055",
+      "sp": "1.2.2",
+      "book": "Buku Teks hlm. 52",
+      "title": "Gabung gerakan kaki dalam bola sepak mini",
+      "focus": "Gabung gerakan kaki dalam bola sepak mini.",
+      "objective": "Murid dapat lakukan dua jenis gerakan dalam dua giliran dan patuhi peraturan.",
+      "materials": "Bola busa, kon rendah, gawang.",
+      "induction": [
+        "Tunjukkan dua kedudukan bola pada halaman rujukan.",
+        "Tunjuk arah gerakan kaki yang akan dicuba."
+      ],
+      "guided": [
+        "Modelkan gelecek, leret kepada rakan dan tendang ke gawang.",
+        "Ulang urutan tiga tindakan dengan pasangan."
+      ],
+      "practice": [
+        "Jalankan permainan kecil tanpa sentuhan badan dan beri isyarat giliran.",
+        "Gabungkan gerakan kaki untuk bergerak ke zon sasaran."
+      ],
+      "closure": [
+        "Minta murid tunjuk cara berhenti dengan stabil.",
+        "Tunjuk posisi berhenti di penanda lantai."
+      ],
+      "support": "Gunakan pasukan kecil dan gawang lebar.",
+      "assessment": "Guru merekod sama ada murid dapat lakukan dua jenis gerakan dalam dua giliran dan patuhi peraturan.",
+      "follow_up": "Ulang bahagian yang belum dikuasai dengan petunjuk yang sesuai."
+    }
+  ]
+}
