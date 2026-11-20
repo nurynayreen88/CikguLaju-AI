@@ -1603,11 +1603,12 @@ function fillSelect(el,items,label){
   if(el===subject)text=text.replace(/\s*(?:[—–:-]\s*)?(?:[([{]\s*)?(?:DRAF|DRAFT)(?:\s*[)\]}])?\s*$/i,"").trim()||text;
   if(el===unit)text=sourceUnitLabel(text);
   if(el===lesson){
-   text=numberedPdpLabel(item);
+   text=numberedPdpLabel(item).replace(/\s*\(DRAF\)\s*$/i," (Dalam semakan)");
    // No invented lesson numbers and no selectable anonymous lesson rows.
    if(!dlpRphDownload()&&!/^(?:Lesson|PdP)\s*0*[1-9][0-9]*(?:\b|\s|[•—–:-])/i.test(text))continue;
   }
-  const book=String(item.textbook_ref||item.student_book_ref||"").trim();
+  const book=String(item.textbook_ref||item.student_book_ref||"").trim()
+    .replace(/\(rujukan DRAF\)$/i,"(belum disahkan)");
   if(el===lesson&&book&&!text.includes(book))text+=" • "+book;
   const opt=new Option(text,String(item.value));
   opt.dataset.bookReference=el===lesson?book:"";
@@ -2355,7 +2356,7 @@ async function checkRphAvailability(){
    updateSelectionHelp("Jana Bahan akan memaparkan RPH sebagai tersedia dengan status akses diperlukan, bukan hilang.");
   }else{
    downloadStatus.textContent=body.status&&body.status.includes("DRAF")?
-     "RPH DRAF tersedia melalui sumber Telegram untuk SEMAKAN GURU (bukan FINAL READY).":
+     "RPH tersedia. Kandungan masih dalam semakan.":
      "RPH disahkan tersedia melalui Telegram.";
    updateSelectionHelp("Selepas melengkapkan maklumat RPH jika perlu, tekan Jana Bahan.");
   }
