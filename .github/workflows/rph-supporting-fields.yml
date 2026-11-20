@@ -1,0 +1,35 @@
+name: RPH EMK PAK21 KBAT Pemulihan Pengayaan
+
+on:
+  pull_request:
+    paths:
+      - "dlp_year2_rph.py"
+      - "web/rph_supporting_fields_20261121.py"
+      - "tests/test_rph_supporting_fields_20261121.py"
+      - ".github/workflows/rph-supporting-fields.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rph-supporting-fields:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --disable-pip-version-check "pytest>=8,<10" "python-docx>=1.1,<2" "pypdf>=5,<7" "reportlab>=4,<5" "lxml>=5,<7" "flask>=3.1,<4" "requests>=2,<3" "python-dotenv>=1,<2"
+      - name: Word PDF A4 and subject-specific source anchors
+        run: python -m pytest tests/test_rph_supporting_fields_20261121.py -q
+      - name: Install Word conversion tools for legacy A4 QA
+        run: |
+          if ! command -v soffice >/dev/null; then
+            sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=20 -o Acquire::https::Timeout=20 update -qq
+            sudo apt-get -o Acquire::Retries=2 -o Acquire::http::Timeout=20 -o Acquire::https::Timeout=20 install -y -qq --no-install-recommends libreoffice-writer fonts-crosextra-carlito
+          fi
+      - name: Protect legacy layout PDF download and source contracts
+        run: python -m pytest tests/test_curriculum_version_dlp_download.py tests/test_dlp_year4_science_review.py tests/test_dlp_year5_review_exports.py -q
+      - run: python -m py_compile web/rph_supporting_fields_20261121.py dlp_year2_rph.py
