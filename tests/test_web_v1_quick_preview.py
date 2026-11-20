@@ -33,6 +33,14 @@ class OneClickPreviewTests(unittest.TestCase):
         self.assertIn('!teacherTimeStart.checkValidity()||!teacherTimeEnd.checkValidity()', html)
         self.assertNotIn('if(!teacherClass.value.trim()||!teacherDate.value||!teacherTime.value', html)
 
+    def test_jana_bahan_follows_teacher_details_and_precedes_results(self):
+        html = (ROOT / "web_v1_static_preview" / "index.html").read_text(encoding="utf8")
+        teacher_panel = html.index('<section id="teacher-info"')
+        teacher_panel_end = html.index("</section>", teacher_panel)
+        generate_button = html.index('<button id="show-materials"')
+        self.assertLess(teacher_panel_end, generate_button)
+        self.assertLess(generate_button, html.index('<section id="materials-panel"'))
+
     @patch("web.unified_rph_web._has_paid_access", return_value=True)
     @patch("web.unified_rph_web._account", return_value=({"telegram_user_id": 123}, None))
     def test_source_backed_paid_preview_then_word_without_metadata(self, *_):
