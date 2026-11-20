@@ -4,7 +4,7 @@ from datetime import date
 from unicodedata import bidirectional
 
 from docx import Document
-from docx.enum.table import WD_TABLE_DIRECTION
+from docx.enum.table import WD_TABLE_ALIGNMENT, WD_TABLE_DIRECTION
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
@@ -43,13 +43,15 @@ def _paragraph(paragraph, text, *, bold=False, size=11, centered=False):
     rpr.insert_element_before(cs_size, "w:rtl")
 
 
-def _table(doc, widths, rows, *, header=False):
+def _table(doc, widths, rows, *, header=False, align_right=False):
     if doc.tables:
         spacer = doc.add_paragraph()
         spacer.paragraph_format.line_spacing = Pt(5)
         spacer.paragraph_format.space_after = Pt(0)
     table = doc.add_table(rows=0, cols=len(widths))
     table.table_direction = WD_TABLE_DIRECTION.RTL
+    if align_right:
+        table.alignment = WD_TABLE_ALIGNMENT.RIGHT
     table.style = "Table Grid"
     table.autofit = False
     for column, width in zip(table.columns, widths):
@@ -86,14 +88,18 @@ def render_arabic_word(plan, teacher_fields, reflection, dest):
     year = str(plan["year"]).translate(numerals)
     lesson = f"{plan['lesson']:03d}".translate(numerals)
     pages = plan["pages"].replace(" & ", " و").translate(numerals)
+    # A compact, right-side teacher header matches the primary RPH format.
+    # Move only display fields: keep all Arabic curriculum descriptions unchanged.
+    _table(doc, (3.25, 5.5), [
+        ("الفصل", class_name or ""),
+        ("التاريخ", lesson_date),
+        ("الوقت", time or ""),
+        ("عدد التلاميذ", pupils or ""),
+    ], align_right=True)
     _table(doc, (4.3, 14.4), [
         ("الصف والحصّة", f"الصفّ {year} • الحصّة {lesson}"),
         ("الوحدة", plan["topic"]),
         ("موضوع الدرس", plan["focus"]),
-        ("التاريخ", lesson_date),
-        ("الوقت", time or ""),
-        ("الفصل", class_name or ""),
-        ("عدد التلاميذ", pupils or ""),
         ("معيار المحتوى", f"\u2066{plan['sk']}\u2069  {plan['content_standard']}"),
         ("معيار التعلّم", f"\u2066{plan['sp']}\u2069  {plan['learning_standard']}"),
         ("هدف التعلّم", plan["objective"]),
