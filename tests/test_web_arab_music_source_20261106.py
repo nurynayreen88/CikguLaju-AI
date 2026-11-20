@@ -67,6 +67,50 @@ class DraftWebQA(unittest.TestCase):
         self.assertEqual(word.get_json()["code"],"FREE_TRIAL_EXHAUSTED")
         render.assert_not_called()
 
+    @patch("web.unified_rph_web._has_paid_access", return_value=False)
+    @patch("web.unified_rph_web._account")
+    @patch("web.native_telegram_other_draft_client._read")
+    def test_arab_year3_recordings_use_reviewed_pdp_and_trial_access(self, read, account, _):
+        account.return_value = ({"telegram_user_id": 55, "free_remaining": 1}, None)
+        read.return_value = {"available": True, "generator": "telegram-native",
+                             "status": "READY", "formats": ["word"]}
+        path = "/api/web/rph/extra-materials"
+        base = {**self.query, "year": 3}
+        for unit, lesson, video_ids in (
+            ("u01", "010", ("3cfsR_2ADTU",)),
+            ("u02", "028", ("v5e3wECmYDo",)),
+            ("u03", "043", ("QKsDg28oO14",)),
+            ("u04", "052", ("GLi9tLRQMw0", "bfU1oW4-VsQ")),
+            ("u04", "054", ("GLi9tLRQMw0",)),
+        ):
+            query = {**base, "unit": unit, "lesson": lesson}
+            response = self.client.get(path, query_string=query)
+            self.assertEqual(response.status_code, 200, response.json)
+            items = response.json["items"]
+            self.assertEqual(response.json["status"], "PAUTAN_RAKAMAN")
+            if unit == "u04":
+                audio = items.pop(0)
+                self.assertEqual((audio["type"], audio["action"]), ("audio", "Muat Turun Audio"))
+                self.assertEqual(audio["url"], "https://drive.usercontent.google.com/download?"
+                                 "id=1MNsCyjEiy7tK1eu0O4H4xJioEQf0b2Qq&export=download&confirm=t")
+            for video, video_id in zip(items, video_ids, strict=True):
+                self.assertEqual((video["type"], video["action"]), ("video", "Mainkan Rakaman"))
+                self.assertEqual(video["url"], "https://www.youtube.com/watch?v=" + video_id)
+            read.assert_called_with("availability", query, opener=None)
+
+        read.reset_mock()
+        for overrides in ({"year": 2}, {"unit": "u03"}, {"lesson": "053"}, {"lesson": "059"}):
+            self.assertEqual(self.client.get(path, query_string={**query, **overrides}).json["items"], [])
+        read.assert_not_called()
+        read.side_effect = NativeRPHUnavailable("source offline")
+        self.assertEqual(self.client.get(path, query_string=query).status_code, 503)
+        read.reset_mock()
+        account.return_value = ({"telegram_user_id": 55, "free_remaining": 0}, None)
+        blocked = self.client.get(path, query_string=query)
+        self.assertEqual(blocked.status_code, 403)
+        self.assertEqual(blocked.json["code"], "FREE_TRIAL_EXHAUSTED")
+        read.assert_not_called()
+
     @patch("web.native_telegram_other_draft_client.draft_available",return_value=(("word","pdf"), "DRAF"))
     @patch("web.unified_rph_web._has_paid_access",return_value=True)
     @patch("web.unified_rph_web._account",return_value=({"telegram_user_id":55},None))
