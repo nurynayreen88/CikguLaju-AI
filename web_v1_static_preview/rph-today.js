@@ -444,7 +444,8 @@
   c.rev++;
   clearAfter(c,from);
   c.reflection.value="";
-  c.reflectionPanel.open=false;
+  c.reflectionMode.value="auto";
+  c.reflectionManual.hidden=true;
   const code=c.slot.subject_code,control=c.controls;
   if(from==="lesson"){
    const chosen=control.lesson.selectedOptions[0];
@@ -580,18 +581,30 @@
    else countHint.textContent=count===0?"Senarai murid sesi "+schoolYear+" masih kosong. Guru boleh isi jumlah di sini.":
     "Rekod PBD belum dapat disemak. Guru boleh isi jumlah di sini.";
   });
-  c.reflectionPanel=create("details","rph-reflection");
+  const reflectionPanel=create("div","rph-reflection");
+  c.reflectionMode=create("select");
+  c.reflectionMode.id="daily-rph-reflection-mode-"+index;
+  c.reflectionMode.add(new Option("Auto (ikut RPH)","auto"));
+  c.reflectionMode.add(new Option("Manual (tulis sendiri)","manual"));
+  const reflectionModeLabel=create("label","","Refleksi");
+  reflectionModeLabel.htmlFor=c.reflectionMode.id;
+  c.reflectionManual=create("div");
+  c.reflectionManual.hidden=true;
+  c.reflectionMode.addEventListener("change",()=>{
+   c.reflectionManual.hidden=c.reflectionMode.value!=="manual";
+  });
   c.reflection=create("textarea");
   c.reflection.rows=3;
   c.reflection.maxLength=500;
   c.reflection.id="daily-rph-reflection-"+index;
-  const reflectionLabel=create("label","","Refleksi guru");
+  const reflectionLabel=create("label","","Catatan refleksi");
   reflectionLabel.htmlFor=c.reflection.id;
-  const reflectionHint=create("p","notice","Maksimum 500 aksara dan 6 baris. Biarkan kosong untuk menggunakan ruangan refleksi sedia ada.");
+  const reflectionHint=create("p","notice","Maksimum 500 aksara dan 6 baris.");
   reflectionHint.id=c.reflection.id+"-hint";
   c.reflection.setAttribute("aria-describedby",reflectionHint.id);
-  c.reflectionPanel.append(create("summary","","Tulis refleksi sendiri (pilihan)"),reflectionLabel,c.reflection,reflectionHint);
-  c.editor.append(c.bookRef,c.message,countLabel,c.students,countHint,c.reflectionPanel);
+  c.reflectionManual.append(reflectionLabel,c.reflection,reflectionHint);
+  reflectionPanel.append(reflectionModeLabel,c.reflectionMode,c.reflectionManual);
+  c.editor.append(c.bookRef,c.message,countLabel,c.students,countHint,reflectionPanel);
   card.append(c.editor);
   // Result cards are deliberately NOT appended inside the selection cards.
   // They are rendered in a single output area after the *entire* timetable.
@@ -854,9 +867,6 @@
    c.students.reportValidity();
    throw Error("Masukkan bilangan murid antara 1 hingga 200 untuk "+c.slot.class_name+".");
   }
-  const reflection=c.reflection.value.trim();
-  if(reflection.length>500||reflection.split(/\r\n|\r|\n/).length>6)
-   throw Error("Semak refleksi untuk "+c.slot.class_name+". Hadnya 500 aksara dan 6 baris.");
   const args=selection(c);
   const params=new URLSearchParams({
    year:args.year,subject:args.subject,unit:args.unit,lesson:args.lesson,
@@ -865,7 +875,7 @@
    rph_context:"hari-ini"
   });
   if(args.component)params.set("component",args.component);
-  const query=params.toString(),options=rphDownloadOptions(reflection);
+  const query=params.toString(),options=rphDownloadOptions(c.reflectionMode.value,c.reflection.value,c.slot.class_name);
   const key=JSON.stringify([format,query,options.body||""]);
   const safeClass=c.slot.class_name.replace(/[^a-z0-9_-]+/gi,"_").slice(0,45);
   const fallback="CIKGULAJU_RPH_"+safeClass+"_"+args.subject+"_"+format+"."+(format==="pdf"?"pdf":"docx");

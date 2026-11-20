@@ -4,6 +4,18 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const vm = require("node:vm");
 const source = fs.readFileSync("web_v1_static_preview/rph-today.js", "utf8");
+const home = fs.readFileSync("web_v1_static_preview/index.html", "utf8");
+const downloadOptions = home.slice(home.indexOf("function rphDownloadOptions("),
+  home.indexOf("let rphClassCountKey="));
+const reflection = vm.runInNewContext(downloadOptions + "\nrphDownloadOptions");
+assert.equal(reflection("auto", "Catatan terdahulu").body, undefined);
+assert.equal(reflection("auto", "").method, undefined);
+const manual = reflection("manual", "  Catatan cikgu  ");
+assert.equal(manual.method, "POST");
+assert.equal(JSON.parse(manual.body).reflection, "Catatan cikgu");
+assert.throws(() => reflection("manual", " ", "4 Bestari"), /Isi catatan refleksi untuk 4 Bestari/);
+assert.throws(() => reflection("manual", "x".repeat(501)), /500 aksara/);
+assert.throws(() => reflection("manual", Array(7).fill("Baris").join("\n")), /6 baris/);
 const start = source.indexOf(" function includedChoices(){");
 const end = source.indexOf(" function clearResults(){", start);
 assert.ok(start > -1 && end > start, "Expected isolated updateAll function");
