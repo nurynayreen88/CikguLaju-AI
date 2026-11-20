@@ -144,10 +144,18 @@ def document(unit, info, plan, slot):
     ]
     if unit == 2 and number == 17:
         return lesson_017.document(heading, details)
+    model_pupil_action = 'Ikuti contoh dengan bahan yang disediakan. Tunjukkan satu langkah atau padanan kepada rakan.'
+    if unit == 3 and number == 34:
+        model_pupil_action = (
+            'Setiap murid mengira jumlah petak yang sama besar pada jalur pecahan dan mengenal pasti tiga petak yang berlorek. '
+            'Murid menulis pecahan 3/5 berdasarkan jalur tersebut. '
+            'Murid menerangkan kepada rakan bahawa pengangka 3 menunjukkan bilangan petak yang berlorek, '
+            'manakala penyebut 5 menunjukkan jumlah petak pada jalur.'
+        )
     activities = [('Fasa', 'Tindakan guru', 'Tindakan murid')]
     actions = (
         INTRO[unit],
-        (model, 'Ikuti contoh dengan bahan yang disediakan. Tunjukkan satu langkah atau padanan kepada rakan.'),
+        (model, model_pupil_action),
         (task, 'Jawab atau tunjuk hasil secara individu. Semak unit, model atau label sebelum dihantar.'),
         CHECK[unit],
     )
