@@ -54,11 +54,19 @@ YEAR5_LESSONS = {
     UNIT1: range(1, 10), UNIT: range(10, 14), UNIT3: range(14, 22),
     UNIT4: range(22, 30), UNIT5: range(30, 34), UNIT6: range(34, 42),
 }
+
+YEAR5_MANIPULATIVE_UNIT_LESSONS = {
+    MANIPULATIVE_UNIT1: range(42, 62),
+    MANIPULATIVE_UNIT2: range(62, 75),
+    MANIPULATIVE_UNIT3: range(75, 85),
+}
+
 FORMATS = ("word", "pdf")
 RPT_CODE = "pengurusan_kehidupan_ppki"
 RPT_MANIPULATIVE_CODE = "kemahiran_manipulatif_ppki"
 RPT_MANIPULATIVE_YEAR3_FILENAME = "CIKGULAJU_RPT_PPKI_KEMAHIRAN_MANIPULATIF_TAHUN_3_2027.pdf"
 RPT_MANIPULATIVE_YEAR4_FILENAME = "CIKGULAJU_RPT_PPKI_KEMAHIRAN_MANIPULATIF_TAHUN_4_2027.pdf"
+RPT_MANIPULATIVE_YEAR5_FILENAME = "CIKGULAJU_RPT_PPKI_KEMAHIRAN_MANIPULATIF_TAHUN_5_2027.pdf"
 RPT_MANIPULATIVE_FILENAME = "CIKGULAJU_RPT_PPKI_KEMAHIRAN_MANIPULATIF_TAHUN_2_2027.pdf"
 
 
@@ -102,7 +110,8 @@ def catalog(year=YEAR):
         YEAR: MANIPULATIVE_UNIT_LESSONS,
         3: YEAR3_MANIPULATIVE_UNIT_LESSONS,
         4: YEAR4_MANIPULATIVE_UNIT_LESSONS,
-    }.get(year, {})
+        5: YEAR5_MANIPULATIVE_UNIT_LESSONS,
+    }[year]
     first_unit = next(iter(direct_units))
     try:
         path = "catalog" if year == YEAR else f"catalog?year={year}"
@@ -182,7 +191,7 @@ def accepted_unit(year, unit):
     if year == 4:
         return unit in YEAR4_LESSONS or unit in YEAR4_MANIPULATIVE_UNIT_LESSONS
     if year == 5:
-        return unit in YEAR5_LESSONS
+        return unit in YEAR5_LESSONS or unit in YEAR5_MANIPULATIVE_UNIT_LESSONS
     return year == YEAR and (unit in UNIT_LESSONS or unit in MANIPULATIVE_UNIT_LESSONS)
 
 
@@ -220,11 +229,9 @@ def request_rph(selected, fmt):
 
 
 def request_rpt(*, combined=False, manipulative=False, year=YEAR):
-    if year in (3, 4):
+    if year in (3, 4, 5):
         path = "rpt-manipulatif.pdf" if manipulative else "rpt.pdf"
         return _document(f"{path}?year={year}", "pdf")
-    if year == 5 and not manipulative:
-        return _document("rpt.pdf?year=5", "pdf")
     if year != YEAR:
         raise ValueError("Invalid year for PPKI RPT")
     if manipulative:

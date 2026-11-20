@@ -65,7 +65,7 @@ class PpkiWebTest(unittest.TestCase):
             if self.catalog_year5 is None:
                 raise ppki.NativeRPHUnavailable("Year 5 source is not deployed")
             return json.dumps(self.catalog_year5).encode()
-        if path in ("rpt.pdf?year=5", "rpt-manipulatif.pdf?year=4", "rpt.pdf?year=4", "rpt.pdf", "rpt-current.pdf", "rpt-manipulatif.pdf", "rpt.pdf?year=3", "rpt-manipulatif.pdf?year=3"):
+        if path in ("rpt.pdf?year=5", "rpt-manipulatif.pdf?year=5", "rpt-manipulatif.pdf?year=4", "rpt.pdf?year=4", "rpt.pdf", "rpt-current.pdf", "rpt-manipulatif.pdf", "rpt.pdf?year=3", "rpt-manipulatif.pdf?year=3"):
             return self.pdf
         return self.docx.getvalue() if payload["format"] == "word" else self.pdf
 
@@ -270,7 +270,46 @@ class PpkiWebTest(unittest.TestCase):
         entry, = [row for row in listing["subjects"] if row["code"] == ppki.RPT_CODE]
         year5, = [row for row in entry["years"] if row["year"] == 5]
         self.assertIn("41 PdP Unit 1–6", year5["note"])
+        self.catalog_year5["kemahiran_manipulatif"] = [{
+            "value": unit, "label": unit, "lessons": rows(numbers),
+        } for unit, numbers in (
+            (ppki.MANIPULATIVE_UNIT1, range(42, 62)),
+            (ppki.MANIPULATIVE_UNIT2, range(62, 75)),
+            (ppki.MANIPULATIVE_UNIT3, range(75, 85)),
+        )]
+        units = self.client.get("/api/options", query_string={
+            "year": 5, "kind": "units", "subject": ppki.SUBJECT, "component": ppki.MANIPULATIVE_COMPONENT,
+        })
+        self.assertEqual([unit["value"] for unit in units.json], [
+            ppki.MANIPULATIVE_UNIT1, ppki.MANIPULATIVE_UNIT2, ppki.MANIPULATIVE_UNIT3,
+        ])
+        query = {"year": 5, "subject": ppki.SUBJECT, "unit": ppki.MANIPULATIVE_UNIT2, "lesson": "070"}
+        for fmt in ("word", "pdf"):
+            self.assertEqual(self.client.get(f"/api/web/rph/{fmt}", query_string=query).status_code, 200)
+        materials = "/api/web/rph/extra-materials"
+        audio = self.client.get(materials, query_string=query).json["items"]
+        self.assertEqual(len(audio), 3)
+        self.assertTrue(all(item["action"] == "Muat Turun Audio" for item in audio))
+        self.assertEqual(len({item["url"] for item in audio}), 3)
+        self.assertEqual(self.client.get(materials, query_string={**query, "lesson": "071"}).json["items"], [])
+        self.assertEqual(self.client.get(materials, query_string={**query, "unit": ppki.MANIPULATIVE_UNIT1}).json["items"], [])
+        for number in ("046", "047", "048", "049"):
+            media = self.client.get(materials, query_string={
+                **query, "unit": ppki.MANIPULATIVE_UNIT1, "lesson": number,
+            }).json["items"]
+            self.assertTrue(any(item["type"] == "audio" and item["action"] == "Dengar Audio" for item in media))
+        km_path = f"/api/rpt/2027/all/{ppki.RPT_MANIPULATIVE_CODE}/5.pdf"
+        result = self.client.get(km_path)
+        self.assertIn(ppki.RPT_MANIPULATIVE_YEAR5_FILENAME, result.headers["Content-Disposition"])
+        self.assertEqual(self.source_requests[-1][0], "rpt-manipulatif.pdf?year=5")
+        listing = self.client.get("/api/rpt/2027/catalog").json
+        entry, = [row for row in listing["subjects"] if row["code"] == ppki.RPT_MANIPULATIVE_CODE]
+        year5, = [row for row in entry["years"] if row["year"] == 5]
+        self.assertIn("43 PdP Unit 1–3", year5["note"])
         self.paid = False
+        self.credits = 0
+        self.assertEqual(self.client.get(km_path).status_code, 403)
+        self.assertEqual(self.client.get(materials, query_string=query).status_code, 403)
         self.assertEqual(self.client.get(path).status_code, 403)
 
     def test_year4_manipulative_rph_rpt_and_media(self):

@@ -67,6 +67,38 @@ PPKI_SOURCE_VIDEOS = {
     },
 }
 
+PPKI_SINGA_DAN_TIKUS = (
+    {"type": "video", "title": "Singa dan Tikus · Cerita Dongeng hlm. 62",
+     "url": "https://www.youtube.com/watch?v=llPhFm0J_yc", "action": "Mainkan Rakaman"},
+    {"type": "audio", "title": "Singa dan Tikus · Audio dan bacaan (akaun percuma)",
+     "url": "https://alamak.my/koleksi/fabel/singa-dan-tikus", "action": "Dengar Audio"},
+)
+PPKI_SI_TANGGANG = {
+    "type": "audio", "title": "Si Tanggang · Audio SYOK untuk Cerita Mitos hlm. 64",
+    "url": "https://traffic.megaphone.fm/SOODO8947423793.mp3?updated=1679475898",
+    "action": "Dengar Audio",
+}
+PPKI_YEAR5_MEDIA = {
+    (ppki.MANIPULATIVE_UNIT1, "046"): (*PPKI_SINGA_DAN_TIKUS, PPKI_SI_TANGGANG),
+    (ppki.MANIPULATIVE_UNIT1, "047"): PPKI_SINGA_DAN_TIKUS,
+    (ppki.MANIPULATIVE_UNIT1, "048"): (PPKI_SI_TANGGANG,),
+    (ppki.MANIPULATIVE_UNIT1, "049"): ({
+        "type": "audio", "title": "Sumpahan Mahsuri · Audio SYOK untuk aktiviti Cerita Legenda hlm. 63",
+        "url": "https://traffic.megaphone.fm/SOODO5249040061.mp3?updated=1679475898",
+        "action": "Dengar Audio",
+    },),
+    (ppki.MANIPULATIVE_UNIT2, "070"): tuple(
+        {"type": "audio", "title": f"Dayung Sampan · {label} · Buku Teks hlm. 89",
+         "url": f"https://drive.usercontent.google.com/download?id={file_id}&export=download&confirm=t",
+         "action": "Muat Turun Audio"}
+        for label, file_id in (
+            ("Vokal", "1dy_n9xffN_5JGcfET6Np4ZZh96bvWX_5"),
+            ("Instrumental", "12hO_DBeEuGZy8__JRqmHgar0paGUqCOa"),
+            ("Instrumental dengan metronom", "16YdrFPMKkmYJjicDFQkQOTVpk_CPUBfp"),
+        )
+    ),
+}
+
 def _safe_text(value, limit=300):
     return isinstance(value, str) and 0 < len(value) <= limit and bool(value.strip())
 
@@ -1239,7 +1271,8 @@ def create_blueprint():
         if sub == "MUZIK" and year in range(2, 7):
             return year, sub, unit, lesson, None
         if sub == ppki.SUBJECT and ((year, unit, lesson) == (3, ppki.UNIT1, "003")
-                                    or (year, unit, lesson) in PPKI_SOURCE_VIDEOS):
+                                    or (year, unit, lesson) in PPKI_SOURCE_VIDEOS
+                                    or (year == 5 and (unit, lesson) in PPKI_YEAR5_MEDIA)):
             return year, sub, unit, lesson, None
         if sub == "SCIENCE":
             from web.native_textbook_references import SCIENCE_PAGES
@@ -1265,6 +1298,9 @@ def create_blueprint():
         try:
             if sub == ppki.SUBJECT:
                 ppki.validate_selection(year, sub, unit, token)
+                if year == 5:
+                    items = PPKI_YEAR5_MEDIA[(unit, token)]
+                    return jsonify({"status": "PAUTAN_RAKAMAN", "items": items})
                 source_video = PPKI_SOURCE_VIDEOS.get((year, unit, token))
                 if source_video:
                     return jsonify({"status": "PAUTAN_RAKAMAN", "items": [source_video]})

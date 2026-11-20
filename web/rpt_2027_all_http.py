@@ -432,6 +432,7 @@ def create_all_rpt_blueprint(*,root=ROOT):
                         ppki.YEAR: ppki.RPT_MANIPULATIVE_FILENAME,
                         3: ppki.RPT_MANIPULATIVE_YEAR3_FILENAME,
                         4: ppki.RPT_MANIPULATIVE_YEAR4_FILENAME,
+                        5: ppki.RPT_MANIPULATIVE_YEAR5_FILENAME,
                     }[year]
                 else:
                     unit_numbers = source["unit_numbers"]
