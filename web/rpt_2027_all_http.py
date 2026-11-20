@@ -428,8 +428,11 @@ def create_all_rpt_blueprint(*,root=ROOT):
                     if len(units) != len(ppki.MANIPULATIVE_UNIT_LESSONS):
                         return jsonify({"error": "Pilihan RPT PPKI tidak tersedia."}), 404
                     document = ppki.request_rpt(manipulative=True, year=year)
-                    filename = (ppki.RPT_MANIPULATIVE_FILENAME if year == ppki.YEAR
-                                else ppki.RPT_MANIPULATIVE_YEAR3_FILENAME)
+                    filename = {
+                        ppki.YEAR: ppki.RPT_MANIPULATIVE_FILENAME,
+                        3: ppki.RPT_MANIPULATIVE_YEAR3_FILENAME,
+                        4: ppki.RPT_MANIPULATIVE_YEAR4_FILENAME,
+                    }[year]
                 else:
                     unit_numbers = source["unit_numbers"]
                     if year == ppki.YEAR:

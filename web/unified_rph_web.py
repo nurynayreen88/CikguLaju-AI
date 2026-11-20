@@ -53,6 +53,19 @@ SUBJECT_LABELS = {
 }
 SOURCE_SUBJECTS = frozenset(("ENGLISH", "MORAL", "PJPK", "PSV"))
 MAX_TOKEN = 40
+PPKI_DERIAKU_VIDEO = {
+    "type": "video", "title": "Lagu Deriaku · Buku Teks hlm. 64",
+    "url": "https://www.youtube.com/watch?v=QKYC5Eaz0d0", "action": "Mainkan Rakaman",
+}
+PPKI_SOURCE_VIDEOS = {
+    (4, ppki.MANIPULATIVE_UNIT1, "043"): PPKI_DERIAKU_VIDEO,
+    (4, ppki.MANIPULATIVE_UNIT1, "044"): PPKI_DERIAKU_VIDEO,
+    (4, ppki.MANIPULATIVE_UNIT1, "045"): PPKI_DERIAKU_VIDEO,
+    (4, ppki.MANIPULATIVE_UNIT2, "066"): {
+        "type": "video", "title": "Iringan Hokey Cokey untuk Mari Bersenam · Buku Teks hlm. 85",
+        "url": "https://www.youtube.com/watch?v=w8nwZiAxkuE", "action": "Mainkan Rakaman",
+    },
+}
 
 def _safe_text(value, limit=300):
     return isinstance(value, str) and 0 < len(value) <= limit and bool(value.strip())
@@ -1225,7 +1238,8 @@ def create_blueprint():
             return year, sub, unit, lesson, found[0]["lesson"]
         if sub == "MUZIK" and year in range(2, 7):
             return year, sub, unit, lesson, None
-        if (year, sub, unit, lesson) == (3, ppki.SUBJECT, ppki.UNIT1, "003"):
+        if sub == ppki.SUBJECT and ((year, unit, lesson) == (3, ppki.UNIT1, "003")
+                                    or (year, unit, lesson) in PPKI_SOURCE_VIDEOS):
             return year, sub, unit, lesson, None
         if sub == "SCIENCE":
             from web.native_textbook_references import SCIENCE_PAGES
@@ -1251,6 +1265,9 @@ def create_blueprint():
         try:
             if sub == ppki.SUBJECT:
                 ppki.validate_selection(year, sub, unit, token)
+                source_video = PPKI_SOURCE_VIDEOS.get((year, unit, token))
+                if source_video:
+                    return jsonify({"status": "PAUTAN_RAKAMAN", "items": [source_video]})
                 return jsonify({"status": "SUMBER_ASAL", "items": [{
                     "type": "video", "title": "Video lagu Boneka Jari · Buku Teks hlm. 17",
                     "url": "https://drive.usercontent.google.com/download?id=1oU6Nvp2LpwkI-zgBCZFgM7mkcwUV2q_u&export=download&confirm=t",
