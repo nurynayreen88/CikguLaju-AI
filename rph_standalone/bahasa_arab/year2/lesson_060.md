@@ -1,30 +1,30 @@
-# RPH Bahasa Arab Tahun 2 — PdP 060 (DRAF / BELUM READY)
+# RPH Bahasa Arab Tahun 2 — PdP 060
 
 **Tahun:** 2 | **Subjek:** Bahasa Arab KSSR Semakan 2017 | **Unit:** أحافظ على الأدوات الدراسية
-**Fokus PdP:** Menulis ayat lokasi alat sekolah
-**SK/SP cadangan:** 3.3 / 3.3.1; sasaran kemahiran berdasarkan aktiviti buku teks pada h94, belum disahkan sebagai SP cetakan/RPT 2027 PdP rasmi.
+**Fokus PdP:** Salin ayat lokasi alat sekolah
+**DSKP SK/SP:** 3.4 / 3.4.1 — نسخ التراكيب.
 **Tarikh / masa / kelas:** Diisi guru ikut jadual sebenar.
-**Kosa kata / ayat:** القَلَم عَلَى الكِتَاب، المِبْرَاة فِي المِقْلَمَة، المِسْطَرَة فِي الحَقِيبَة
-**Objektif pembelajaran:** Menulis dua ayat lokasi menggunakan kata nama dan kata sendi Arab dengan betul.
-**Kriteria kejayaan:** Murid memperlihatkan bukti minimum dalam objektif; rekod PBD dan tindakan pemulihan ditentukan guru.
+**Kosa kata / ayat:** الْقَلَمُ عَلَى الْكِتَابِ. الْمِبْرَاةُ فِي الْمِقْلَمَةِ. الْمِقْلَمَةُ فِي الْحَقِيبَةِ.
+**Objektif pembelajaran:** أن ينسخ التلميذ تركيبين كاملين من أصل ثلاثة عن مكان الأدوات.
+**Kriteria kejayaan:** ينسخ التلميذ تركيبين على الأقل محافظًا على ترتيب الكلمات وأشكال الحروف واتصالها.
 
-**Set induksi:** Guru memaparkan dua gambar alat sekolah di dalam dan di atas bekas.
+**Set induksi:** يعرض المعلّم صورة قلم فوق كتاب وجملة مطابقة. يقرأ التلاميذ الجملة ويشيرون إلى عَلَى.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru mencontohkan penyusunan ayat dalam latihan أكتب وأقرأ h94 dan menandakan jarak kata serta arah RTL.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** ينسخ المعلّم الْقَلَمُ عَلَى الْكِتَابِ على السطر. يتتبّع التلاميذ ترتيب الكلمات ثم ينسخون الجملة.
 
-**Aktiviti 2 — Aplikasi murid:** Murid membina dua ayat dari kad perkataan dan menyalinnya ke lembaran sebelum bertukar semakan rakan.
+**Aktiviti 2 — Aplikasi murid:** يعرض المعلّم نموذجي المبراة في المقلمة والمقلمة في الحقيبة. ينسخ التلاميذ النموذجين ويراجعون ترتيب الكلمات.
 
-**Pengukuhan / Penilaian (PBD):** Dua ayat dinilai untuk ketepatan susunan kata dan makna lokasi.
+**Pengukuhan / Penilaian (PBD):** يقدّم المعلّم ثلاثة نماذج من الصفحة للنسخ الفردي. يراجع ترتيب الكلمات واتصال الحروف ويسجّل عدد التراكيب الصحيحة.
 
-**Penutup:** Murid membaca satu ayat hasil tulisannya.
+**Penutup:** يختار التلميذ جملة نسخها، ويقارنها بالنموذج، ثم يقرأها.
 
-**BBM:** Buku Teks h94, gambar/kad alat sekolah, alat tulis sebenar, rekod PBD.
+**BBM:** الكتاب المدرسي، نماذج التراكيب وأوراق مسطّرة.
 
-**Refleksi guru:** ____ / ____ murid mencapai objektif. Pemulihan/pengayaan: _______________________.
+**Refleksi guru:** بلغ هدف الدرس ____ من ____ تلميذًا. إجراء المتابعة ____________________.
 
 **Buku Teks:** Bahasa Arab Tahun 2 KSSR Semakan 2017 DBP cetakan 2017 ISBN 978-983-49-1589-6, Unit 4 halaman bercetak **94**, PDF asal: https://drive.google.com/file/d/13CqpBb4HosAM_-HTEN-hhBCt2W5wVXCZ/view.
 **Pemetaan halaman:** Halaman PDF fizikal 1-based 106 ialah halaman bercetak 94; jangan gunakan halaman PDF sebagai bukti halaman bercetak.
 **DSKP:** https://drive.google.com/file/d/1WY_c69UshDm3jHzVK86G2xfu77UUkGYO/view.
 **RPT rujukan 2026:** https://anyflip.com/zxzlm/jffk/basic.
-**Had semakan:** Halaman bergambar telah diperiksa sebagai bukti aktiviti tetapi kod SP individu pada imej, tatabahasa/padanan PBD, penjadualan RPT 2027 A/B, dan kelulusan guru belum dimuktamadkan. Ayat serta aktiviti merupakan olahan, bukan salinan teks buku.
-**Status:** DRAF_SEMAK / BELUM READY. Pratonton staging sahaja, tidak mengubah data pengguna/Telegram/Web atau produksinya.
+**Semakan:** Panel buku teks dan DPK dipadankan dengan RPH Word.
+**Status:** Kandungan RPH Word disemak.

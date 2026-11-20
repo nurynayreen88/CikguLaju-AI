@@ -1,30 +1,30 @@
-# RPH Bahasa Arab Tahun 2 — PdP 056 (DRAF / BELUM READY)
+# RPH Bahasa Arab Tahun 2 — PdP 056
 
 **Tahun:** 2 | **Subjek:** Bahasa Arab KSSR Semakan 2017 | **Unit:** أحافظ على الأدوات الدراسية
-**Fokus PdP:** Ayat kata tunjuk untuk alat sekolah
-**SK/SP cadangan:** 1.3 / 1.3.1; sasaran kemahiran berdasarkan aktiviti buku teks pada h89, belum disahkan sebagai SP cetakan/RPT 2027 PdP rasmi.
+**Fokus PdP:** Ulang ayat dengan hadha
+**DSKP SK/SP:** 1.4 / 1.4.1 — الاستماع إلى التراكيب ومحاكاتها وترديدها ونطقها نطقًا صحيحًا.
 **Tarikh / masa / kelas:** Diisi guru ikut jadual sebenar.
-**Kosa kata / ayat:** هَذَا قَلَم، هَذَا كِتَاب، هَذِهِ وَرَقَة، هَذِهِ حَقِيبَة
-**Objektif pembelajaran:** Menyebut tiga ayat dengan kata tunjuk yang sepadan.
-**Kriteria kejayaan:** Murid memperlihatkan bukti minimum dalam objektif; rekod PBD dan tindakan pemulihan ditentukan guru.
+**Kosa kata / ayat:** هَذَا كِتَابٌ، هَذَا قَلَمٌ، هَذَا دَفْتَرٌ
+**Objektif pembelajaran:** أن يحاكي التلميذ أربعة تراكيب من أصل خمسة مع هذا بعد سماعها.
+**Kriteria kejayaan:** يردّد التلميذ أربعة تراكيب على الأقل باستعمال هذا واسم الأداة المناسب.
 
-**Set induksi:** Guru menunjukkan buku, pen dan beg serta bertanya benda yang sedang dipegang.
+**Set induksi:** يعرض المعلّم صورة التعاونية ويقول هَذَا كِتَابٌ. يستمع التلاميذ ويردّدون التركيب.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing sebutan ayat هذا / هذه bersama gambar barang sekolah pada latihan h89.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** يشير المعلّم إلى القلم والدفتر والكتاب ويقول جملة لكل أداة. يردّد التلاميذ الجمل مع الإشارة إلى الصور.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memilih tiga objek lalu memperkenalkannya kepada pasangan dalam ayat lengkap berpandu.
+**Aktiviti 2 — Aplikasi murid:** يعرض المعلّم قلم رصاص وقلم تلوين ويقول جملة لكل واحد. يتناوب التلاميذ في ترديد الجمل مع رفع الأداة المناسبة.
 
-**Pengukuhan / Penilaian (PBD):** Tiga respons lisan dengan kata tunjuk tepat direkod.
+**Pengukuhan / Penilaian (PBD):** ينطق المعلّم خمسة تراكيب بترتيب مختلف. يحاكيها التلميذ ويسجّل المعلّم صحة اسم الإشارة واسم الأداة.
 
-**Penutup:** Murid mengulang satu ayat.
+**Penutup:** ينطق المعلّم جملة عن دفتر. يردّد التلاميذ الجملة ويشيرون إلى الدفتر.
 
-**BBM:** Buku Teks h89, gambar/kad alat sekolah, alat tulis sebenar, rekod PBD.
+**BBM:** الكتاب المدرسي، أدوات دراسية أو صورها وقائمة رصد.
 
-**Refleksi guru:** ____ / ____ murid mencapai objektif. Pemulihan/pengayaan: _______________________.
+**Refleksi guru:** بلغ هدف الدرس ____ من ____ تلميذًا. إجراء المتابعة ____________________.
 
 **Buku Teks:** Bahasa Arab Tahun 2 KSSR Semakan 2017 DBP cetakan 2017 ISBN 978-983-49-1589-6, Unit 4 halaman bercetak **89**, PDF asal: https://drive.google.com/file/d/13CqpBb4HosAM_-HTEN-hhBCt2W5wVXCZ/view.
 **Pemetaan halaman:** Halaman PDF fizikal 1-based 101 ialah halaman bercetak 89; jangan gunakan halaman PDF sebagai bukti halaman bercetak.
 **DSKP:** https://drive.google.com/file/d/1WY_c69UshDm3jHzVK86G2xfu77UUkGYO/view.
 **RPT rujukan 2026:** https://anyflip.com/zxzlm/jffk/basic.
-**Had semakan:** Halaman bergambar telah diperiksa sebagai bukti aktiviti tetapi kod SP individu pada imej, tatabahasa/padanan PBD, penjadualan RPT 2027 A/B, dan kelulusan guru belum dimuktamadkan. Ayat serta aktiviti merupakan olahan, bukan salinan teks buku.
-**Status:** DRAF_SEMAK / BELUM READY. Pratonton staging sahaja, tidak mengubah data pengguna/Telegram/Web atau produksinya.
+**Semakan:** Panel buku teks dan DPK dipadankan dengan RPH Word.
+**Status:** Kandungan RPH Word disemak.
