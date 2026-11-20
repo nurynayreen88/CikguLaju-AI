@@ -1,0 +1,248 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 6,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 1 · Wira Tidak Didendang",
+  "content_standards": {
+    "1.1": "Mengenali agensi perkhidmatan awam",
+    "1.2": "Kepelbagaian kaum di Malaysia"
+  },
+  "learning_standards": {
+    "1.1.1": "Mengenal agensi awam berdasarkan pakaian seragam",
+    "1.1.2": "Menjelaskan fungsi agensi perkhidmatan awam",
+    "1.1.3": "Mengenal pasti agensi mengikut khidmat yang diperlukan",
+    "1.1.4": "Mematuhi etika ketika berurusan dengan agensi perkhidmatan awam",
+    "1.2.1": "Menamakan pelbagai kaum di Malaysia",
+    "1.2.2": "Memerihalkan makanan tradisional, pakaian, rumah ibadat dan perayaan pelbagai kaum",
+    "1.2.3": "Menjelaskan kepentingan hubungan antara kaum di Malaysia",
+    "1.2.4": "Mempamerkan cara menghormati amalan dan budaya pelbagai kaum"
+  },
+  "lessons": [
+    {
+      "pdp": "001",
+      "title": "Kenal agensi melalui pakaian seragam",
+      "sp": "1.1.1",
+      "focus": "Kenal agensi melalui pakaian seragam.",
+      "book": "Buku Teks hlm. 2–5",
+      "objective": "Murid dapat memadankan tiga gambar pakaian dengan agensi yang betul.",
+      "materials": "Gambar pakaian seragam dan kad nama agensi",
+      "induction": [
+        "Menunjukkan gambar petugas bagi dua situasi dalam buku.",
+        "Menamakan satu petugas yang pernah dilihat."
+      ],
+      "guided": [
+        "Memadankan pakaian APM dan ATM dengan kad nama menggunakan petunjuk gambar.",
+        "Menunjuk petunjuk pada pakaian sebelum memilih kad."
+      ],
+      "practice": [
+        "Mengagihkan set gambar tanpa label kepada pasangan.",
+        "Memadankan gambar dengan nama agensi dan menyatakan satu petunjuk."
+      ],
+      "closure": [
+        "Memilih satu gambar untuk semakan individu.",
+        "Menamakan agensi berdasarkan pakaian dalam gambar."
+      ],
+      "support": "Gunakan gambar besar dan dua pilihan pada satu masa.",
+      "assessment": "Guru merekod sama ada murid dapat memadankan tiga gambar pakaian dengan agensi yang betul.",
+      "follow_up": "Masukkan satu gambar daripada situasi berlainan."
+    },
+    {
+      "pdp": "002",
+      "title": "Terangkan fungsi agensi awam",
+      "sp": "1.1.2",
+      "focus": "Terangkan fungsi agensi awam.",
+      "book": "Buku Teks hlm. 4–5",
+      "objective": "Murid dapat menjelaskan fungsi dua agensi awam dengan betul.",
+      "materials": "Kad agensi, kad tugas dan gambar buku teks",
+      "induction": [
+        "Menunjukkan gambar petugas membantu orang awam.",
+        "Menyatakan tindakan petugas yang kelihatan."
+      ],
+      "guided": [
+        "Memberi satu contoh fungsi APM dan satu contoh fungsi agensi lain dalam buku.",
+        "Memadankan kad tugas sambil menyemak contoh."
+      ],
+      "practice": [
+        "Memberi tiga kad fungsi untuk dipasangkan dengan agensi.",
+        "Menerangkan dua padanan menggunakan ayat agensi ini membantu apabila."
+      ],
+      "closure": [
+        "Meminta satu penerangan ringkas bagi kad baharu.",
+        "Menyatakan fungsi agensi yang dipilih."
+      ],
+      "support": "Beri rangka ayat dan ikon bagi setiap tugas.",
+      "assessment": "Guru merekod sama ada murid dapat menjelaskan fungsi dua agensi awam dengan betul.",
+      "follow_up": "Jelaskan perbezaan dua jenis bantuan awam."
+    },
+    {
+      "pdp": "003",
+      "title": "Pilih agensi mengikut keperluan",
+      "sp": "1.1.3",
+      "focus": "Pilih agensi mengikut keperluan.",
+      "book": "Buku Teks hlm. 5–6",
+      "objective": "Murid dapat memilih agensi yang sesuai bagi sekurang-kurangnya dua daripada tiga situasi.",
+      "materials": "Kad situasi, nama agensi dan peta pilihan",
+      "induction": [
+        "Membacakan situasi kehilangan kad pengenalan.",
+        "Menyatakan bantuan yang diperlukan oleh watak."
+      ],
+      "guided": [
+        "Mencontohkan cara memisahkan masalah daripada pihak yang boleh membantu.",
+        "Menunjuk kad masalah dan memilih Jabatan Pendaftaran Negara."
+      ],
+      "practice": [
+        "Mengedarkan kad situasi lain berdasarkan buku teks.",
+        "Memilih agensi yang sesuai dan menyatakan sebab kepada pasangan."
+      ],
+      "closure": [
+        "Memberi satu kad tanpa gambar untuk semakan.",
+        "Menyebut keperluan dan pilihan agensi."
+      ],
+      "support": "Sediakan dua kad pilihan bagi setiap situasi.",
+      "assessment": "Guru merekod sama ada murid dapat memilih agensi yang sesuai bagi sekurang-kurangnya dua daripada tiga situasi.",
+      "follow_up": "Cuba satu situasi dengan lebih daripada satu langkah untuk mendapatkan khidmat."
+    },
+    {
+      "pdp": "004",
+      "title": "Beradab ketika berurusan di kaunter",
+      "sp": "1.1.4",
+      "focus": "Beradab ketika berurusan di kaunter.",
+      "book": "Buku Teks hlm. 7",
+      "objective": "Murid dapat mempamerkan tiga tindakan beradab dalam simulasi kaunter.",
+      "materials": "Kad giliran, papan kaunter dan kad dialog",
+      "induction": [
+        "Menunjukkan dua cara memulakan pertanyaan di kaunter.",
+        "Memilih sapaan yang sesuai."
+      ],
+      "guided": [
+        "Memodelkan cara beratur, menyapa dan menyatakan urusan kepada petugas.",
+        "Mempraktikkan dialog pendek sambil memegang kad giliran."
+      ],
+      "practice": [
+        "Menjalankan simulasi kaunter menggunakan dokumen olok-olok.",
+        "Menunggu giliran, memohon bantuan dengan sopan dan mengucapkan terima kasih."
+      ],
+      "closure": [
+        "Meminta murid menyebut satu etika yang diamalkan.",
+        "Menerangkan kesan etika itu terhadap urusan."
+      ],
+      "support": "Benarkan kad komunikasi dan latihan berpasangan sebelum giliran.",
+      "assessment": "Guru merekod sama ada murid dapat mempamerkan tiga tindakan beradab dalam simulasi kaunter.",
+      "follow_up": "Tukar peranan petugas dengan pengunjung."
+    },
+    {
+      "pdp": "005",
+      "title": "Namakan pelbagai kaum di Malaysia",
+      "sp": "1.2.1",
+      "focus": "Namakan pelbagai kaum di Malaysia.",
+      "book": "Buku Teks hlm. 8–10",
+      "objective": "Murid dapat menamakan tiga kaum berdasarkan contoh buku teks.",
+      "materials": "Kad komuniti dan peta Malaysia",
+      "induction": [
+        "Menunjukkan dua contoh komuniti dalam buku teks.",
+        "Menyebut nama yang sudah dikenali."
+      ],
+      "guided": [
+        "Memadankan label Punjabi dan Semai dengan halaman rujukan, kemudian menunjukkan contoh lain daripada buku.",
+        "Memilih kad nama berdasarkan penerangan dan gambar berlabel."
+      ],
+      "practice": [
+        "Mengedarkan kad nama untuk dilengkapkan pada carta kelas.",
+        "Menamakan sekurang-kurangnya tiga kaum yang dipelajari."
+      ],
+      "closure": [
+        "Menunjukkan satu kad gambar bersama label.",
+        "Menyebut nama komuniti yang tertera."
+      ],
+      "support": "Gunakan label besar dan ulang sebutan secara perlahan.",
+      "assessment": "Guru merekod sama ada murid dapat menamakan tiga kaum berdasarkan contoh buku teks.",
+      "follow_up": "Tambahkan satu contoh daripada bahan rujukan guru."
+    },
+    {
+      "pdp": "006",
+      "title": "Perihalkan kepelbagaian amalan dan contoh budaya",
+      "sp": "1.2.2",
+      "focus": "Perihalkan kepelbagaian amalan dan contoh budaya.",
+      "book": "Buku Teks hlm. 8–10",
+      "objective": "Murid dapat memadankan empat kategori dan memerihalkan dua contoh dengan tepat.",
+      "materials": "Kad makanan, pakaian, rumah ibadat dan perayaan",
+      "induction": [
+        "Menunjukkan gambar makanan dan pakaian daripada buku.",
+        "Menamakan kategori bagi setiap gambar."
+      ],
+      "guided": [
+        "Memberi contoh cara menerangkan dua gambar berlabel dengan bahasa hormat.",
+        "Memadankan gambar dengan kategori dan menyebut ciri yang dilihat."
+      ],
+      "practice": [
+        "Menetapkan empat ruang pada kertas kumpulan.",
+        "Memilih gambar untuk setiap kategori dan menerangkan satu ciri bagi dua contoh."
+      ],
+      "closure": [
+        "Membincangkan perkaitan contoh dengan kepelbagaian masyarakat.",
+        "Menyebut satu contoh dan kategori yang betul."
+      ],
+      "support": "Gunakan gambar berbentuk kad berlabel dan pilihan frasa.",
+      "assessment": "Guru merekod sama ada murid dapat memadankan empat kategori dan memerihalkan dua contoh dengan tepat.",
+      "follow_up": "Hasilkan halaman buku skrap menggunakan empat kategori."
+    },
+    {
+      "pdp": "007",
+      "title": "Jelaskan kepentingan hubungan antara kaum",
+      "sp": "1.2.3",
+      "focus": "Jelaskan kepentingan hubungan antara kaum.",
+      "book": "Buku Teks hlm. 10–11",
+      "objective": "Murid dapat menjelaskan dua kepentingan hubungan baik antara kaum.",
+      "materials": "Gambar kejiranan, kad tindakan dan kad kesan",
+      "induction": [
+        "Menunjukkan situasi jiran bekerjasama dalam buku.",
+        "Menyebut satu tindakan yang membantu jiran."
+      ],
+      "guided": [
+        "Menghubungkan bantuan dan saling menghormati dengan kesan terhadap hubungan komuniti.",
+        "Memadankan satu tindakan dengan kesannya."
+      ],
+      "practice": [
+        "Memberi dua situasi kejiranan untuk perbincangan pasangan.",
+        "Menerangkan bagaimana tindakan baik membantu hubungan jiran."
+      ],
+      "closure": [
+        "Meminta murid melengkapkan rangka ayat kerjasama membantu kerana.",
+        "Menyebut satu sebab yang berkaitan dengan contoh."
+      ],
+      "support": "Gunakan kad sebab bergambar dan rangka ayat.",
+      "assessment": "Guru merekod sama ada murid dapat menjelaskan dua kepentingan hubungan baik antara kaum.",
+      "follow_up": "Bincangkan cara memulihkan hubungan apabila berlaku salah faham."
+    },
+    {
+      "pdp": "008",
+      "title": "Hormati amalan dan budaya dalam kejiranan",
+      "sp": "1.2.4",
+      "focus": "Hormati amalan dan budaya dalam kejiranan.",
+      "book": "Buku Teks hlm. 10–11",
+      "objective": "Murid dapat mempamerkan dua tindakan menghormati amalan budaya dalam simulasi.",
+      "materials": "Kad situasi dan kad ujaran sopan",
+      "induction": [
+        "Menunjukkan gambar lawatan ke rumah jiran.",
+        "Memilih kata sapaan yang sesuai."
+      ],
+      "guided": [
+        "Mencontohkan cara bertanya dengan izin, mendengar dan menerima jawapan.",
+        "Mempraktikkan dialog ringkas tanpa memperolok perbezaan."
+      ],
+      "practice": [
+        "Memberi situasi kunjungan dan kerja komuniti untuk simulasi.",
+        "Melakonkan tindakan hormat sambil memberi giliran kepada rakan."
+      ],
+      "closure": [
+        "Meminta murid menyebut satu tindakan yang dapat diamalkan.",
+        "Menunjukkan satu ujaran sopan mengikut konteks."
+      ],
+      "support": "Tawarkan kad ujaran dan pilihan respons secara isyarat.",
+      "assessment": "Guru merekod sama ada murid dapat mempamerkan dua tindakan menghormati amalan budaya dalam simulasi.",
+      "follow_up": "Latih cara meminta penjelasan tentang amalan yang belum dikenali."
+    }
+  ]
+}

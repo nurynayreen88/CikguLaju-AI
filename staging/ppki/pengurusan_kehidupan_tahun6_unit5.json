@@ -1,0 +1,131 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 6,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 5 · Sekali Cuba, Hidup Sengsara",
+  "content_standards": {
+    "5.1": "Penyalahgunaan bahan"
+  },
+  "learning_standards": {
+    "5.1.1": "Mengenal dadah, alkohol, inhalan, ubat dan racun sebagai bahan yang boleh disalahgunakan",
+    "5.1.2": "Menyatakan kesan penyalahgunaan bahan terhadap fizikal, mental dan emosi",
+    "5.1.3": "Mempraktikkan cara menolak penyalahgunaan bahan",
+    "5.1.4": "Melaporkan penyalahgunaan bahan dalam kalangan rakan kepada orang dewasa"
+  },
+  "lessons": [
+    {
+      "pdp": "024",
+      "title": "Kenal bahan yang boleh disalahgunakan",
+      "sp": "5.1.1",
+      "focus": "Kenal bahan yang boleh disalahgunakan.",
+      "book": "Buku Teks hlm. 33–35",
+      "objective": "Murid dapat mengenal pasti sekurang-kurangnya empat daripada lima kategori melalui gambar.",
+      "materials": "Kad gambar bukan jenama dan kad amaran",
+      "induction": [
+        "Memaparkan simbol amaran pada kad gambar.",
+        "Menyatakan tindakan yang sesuai apabila melihat simbol tersebut."
+      ],
+      "guided": [
+        "Menjelaskan kategori bahan yang disebut dalam buku menggunakan gambar sahaja.",
+        "Memadankan gambar contoh dengan label kategori."
+      ],
+      "practice": [
+        "Mengedarkan lima kad berdasarkan situasi rekaan.",
+        "Mengenal pasti kategori dan memilih tindakan memaklumkan orang dewasa."
+      ],
+      "closure": [
+        "Menunjukkan satu gambar bungkusan tanpa label.",
+        "Memilih tindakan menjauh dan memberitahu guru."
+      ],
+      "support": "Gunakan gambar neutral dan jangan bawa bahan sebenar ke kelas.",
+      "assessment": "Guru merekod sama ada murid dapat mengenal pasti sekurang-kurangnya empat daripada lima kategori melalui gambar.",
+      "follow_up": "Kelaskan lagi satu gambar mengikut panduan orang dewasa."
+    },
+    {
+      "pdp": "025",
+      "title": "Kenal kesan negatif penyalahgunaan bahan",
+      "sp": "5.1.2",
+      "focus": "Kenal kesan negatif penyalahgunaan bahan.",
+      "book": "Buku Teks hlm. 35–37",
+      "objective": "Murid dapat menyatakan satu kesan bagi setiap aspek fizikal, mental dan emosi.",
+      "materials": "Kad kesan fizikal, mental dan emosi",
+      "induction": [
+        "Menunjukkan tiga ikon badan, fikiran dan perasaan.",
+        "Menyatakan perbezaan fungsi yang dilambangkan."
+      ],
+      "guided": [
+        "Menerangkan contoh kesan terhadap badan, tumpuan dan emosi menggunakan kad neutral.",
+        "Memadankan satu kesan dengan ikon sesuai."
+      ],
+      "practice": [
+        "Membimbing murid menyusun kad kesan daripada situasi rekaan.",
+        "Memilih satu contoh kesan bagi setiap aspek dan menerangkannya."
+      ],
+      "closure": [
+        "Meminta satu penerangan ringkas sebagai semakan.",
+        "Menyatakan satu kesan tanpa menyebut nama rakan atau kisah peribadi."
+      ],
+      "support": "Guna ikon mudah dan pilihan jawapan tanpa situasi peribadi.",
+      "assessment": "Guru merekod sama ada murid dapat menyatakan satu kesan bagi setiap aspek fizikal, mental dan emosi.",
+      "follow_up": "Bina peta kesan yang membezakan tiga aspek."
+    },
+    {
+      "pdp": "026",
+      "title": "Tolak pujukan dan dapatkan bantuan",
+      "sp": "5.1.3",
+      "focus": "Tolak pujukan dan dapatkan bantuan.",
+      "book": "Buku Teks hlm. 38",
+      "objective": "Murid dapat menunjukkan penolakan dan langkah mendapatkan bantuan dalam dua situasi.",
+      "materials": "Kad dialog, pelan tempat selamat dan kad orang dewasa",
+      "induction": [
+        "Membacakan pujukan rekaan yang sesuai dengan buku.",
+        "Memilih kad jawapan yang tegas dan sopan."
+      ],
+      "guided": [
+        "Menunjukkan cara menolak, beredar ke tempat selamat dan mencari bantuan.",
+        "Berlatih ujaran ringkas dengan pasangan."
+      ],
+      "practice": [
+        "Menjalankan simulasi dua situasi tanpa bahan sebenar.",
+        "Menyatakan tidak, menjauh dan memilih orang dewasa untuk dimaklumkan."
+      ],
+      "closure": [
+        "Meminta murid menyatakan semula tindakan pertama.",
+        "Memilih ujaran yang sanggup digunakan."
+      ],
+      "support": "Benarkan isyarat, kad komunikasi atau ujaran bertulis.",
+      "assessment": "Guru merekod sama ada murid dapat menunjukkan penolakan dan langkah mendapatkan bantuan dalam dua situasi.",
+      "follow_up": "Berlatih menamatkan perbualan apabila pujukan berulang."
+    },
+    {
+      "pdp": "027",
+      "title": "Laporkan tindakan berbahaya kepada orang dewasa",
+      "sp": "5.1.4",
+      "focus": "Laporkan tindakan berbahaya kepada orang dewasa.",
+      "book": "Buku Teks hlm. 39",
+      "objective": "Murid dapat menyampaikan tiga butiran asas kepada orang dewasa yang sesuai dalam simulasi.",
+      "materials": "Kad situasi, kad pilihan dewasa dan templat laporan lisan",
+      "induction": [
+        "Memaparkan gambar murid mencari guru yang dipercayai.",
+        "Menyatakan siapa yang boleh membantu dalam situasi itu."
+      ],
+      "guided": [
+        "Menunjukkan cara bercakap secara peribadi dan melapor apa, di mana dan bila.",
+        "Memilih maklumat penting daripada satu kad rekaan."
+      ],
+      "practice": [
+        "Menjalankan simulasi menyampaikan laporan kepada guru.",
+        "Menyampaikan maklumat asas secara jelas tanpa membuat tuduhan tambahan."
+      ],
+      "closure": [
+        "Menyemak butiran yang masih kurang dan menegaskan langkah meminta bantuan.",
+        "Melengkapkan satu butiran sebelum mengakhiri laporan."
+      ],
+      "support": "Sediakan kad pilihan guru, penjaga atau kaunselor dan rangka ayat.",
+      "assessment": "Guru merekod sama ada murid dapat menyampaikan tiga butiran asas kepada orang dewasa yang sesuai dalam simulasi.",
+      "follow_up": "Gunakan contoh kedua apabila orang dewasa pertama belum dapat dihubungi."
+    }
+  ]
+}

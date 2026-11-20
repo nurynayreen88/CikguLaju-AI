@@ -1,0 +1,131 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 6,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 3 · Fikir Dahulu sebelum Bertindak",
+  "content_standards": {
+    "3.1": "Kemahiran membuat keputusan"
+  },
+  "learning_standards": {
+    "3.1.1": "Mengenal pasti situasi yang memerlukan keputusan",
+    "3.1.2": "Menyenaraikan pilihan sebelum membuat keputusan",
+    "3.1.3": "Memberi sebab bagi keputusan yang dibuat",
+    "3.1.4": "Membuat keputusan yang rasional"
+  },
+  "lessons": [
+    {
+      "pdp": "016",
+      "title": "Kenal situasi yang memerlukan keputusan",
+      "sp": "3.1.1",
+      "focus": "Kenal situasi yang memerlukan keputusan.",
+      "book": "Buku Teks hlm. 21–23",
+      "objective": "Murid dapat mengenal pasti situasi yang memerlukan keputusan dalam dua daripada tiga contoh.",
+      "materials": "Kad situasi dan dua kad pilihan",
+      "induction": [
+        "Menunjukkan gambar guru membawa banyak buku.",
+        "Menyatakan satu perkara yang berlaku dalam gambar."
+      ],
+      "guided": [
+        "Membezakan situasi yang memerlukan pilihan dengan tindakan yang sudah diarahkan.",
+        "Menunjuk pada kad situasi yang memerlukan pilihan sendiri."
+      ],
+      "practice": [
+        "Membacakan tiga kad situasi di sekolah.",
+        "Memilih situasi yang memerlukan keputusan dan menyatakannya dengan ringkas."
+      ],
+      "closure": [
+        "Meminta satu contoh daripada situasi dalam buku.",
+        "Menyebut keputusan yang perlu dibuat oleh watak."
+      ],
+      "support": "Gunakan peta pilihan dengan jawapan ya atau belum.",
+      "assessment": "Guru merekod sama ada murid dapat mengenal pasti situasi yang memerlukan keputusan dalam dua daripada tiga contoh.",
+      "follow_up": "Minta murid memberi satu contoh daripada rutin sekolah."
+    },
+    {
+      "pdp": "017",
+      "title": "Senaraikan pilihan tindakan",
+      "sp": "3.1.2",
+      "focus": "Senaraikan pilihan tindakan.",
+      "book": "Buku Teks hlm. 22–25",
+      "objective": "Murid dapat menyenaraikan dua pilihan yang berbeza bagi satu situasi.",
+      "materials": "Kad Pilihanku, botol plastik dan kad pilihan",
+      "induction": [
+        "Menunjukkan kad watak yang mempunyai masalah harian.",
+        "Menyatakan satu tindakan yang mungkin dipilih."
+      ],
+      "guided": [
+        "Membimbing murid membezakan pilihan yang berlainan bagi masalah sama.",
+        "Menambah satu pilihan pada peta tindakan."
+      ],
+      "practice": [
+        "Menggunakan permainan Pilihanku dengan botol sebagai penanda pilihan.",
+        "Menyenaraikan dua tindakan yang boleh diambil sebelum menentukan pilihan."
+      ],
+      "closure": [
+        "Meminta murid membandingkan pilihan yang telah dicatat.",
+        "Menyatakan perbezaan antara dua pilihan."
+      ],
+      "support": "Sediakan dua kad tindakan sebagai permulaan.",
+      "assessment": "Guru merekod sama ada murid dapat menyenaraikan dua pilihan yang berbeza bagi satu situasi.",
+      "follow_up": "Cipta pilihan ketiga yang masih sesuai dengan keadaan."
+    },
+    {
+      "pdp": "018",
+      "title": "Berikan alasan bagi pilihan",
+      "sp": "3.1.3",
+      "focus": "Berikan alasan bagi pilihan.",
+      "book": "Buku Teks hlm. 22–25",
+      "objective": "Murid dapat memberi sebab yang relevan bagi dua keputusan.",
+      "materials": "Kad situasi, kad sebab dan kad kesan",
+      "induction": [
+        "Membacakan satu pilihan daripada cerita Tindakan Bijak.",
+        "Menyatakan perkara yang mungkin berlaku selepas pilihan itu dibuat."
+      ],
+      "guided": [
+        "Mencontohkan penerangan keputusan menggunakan rangka saya memilih kerana.",
+        "Menghubungkan tindakan dengan sebab dan satu kesan."
+      ],
+      "practice": [
+        "Menyediakan dua situasi untuk dibincangkan berpasangan.",
+        "Memilih tindakan dan memberi alasan yang berkaitan dengan situasi."
+      ],
+      "closure": [
+        "Mengemukakan satu alasan yang kurang sesuai.",
+        "Membetulkan alasan menggunakan petunjuk daripada cerita."
+      ],
+      "support": "Gunakan kad kesan bergambar dan latihan lisan pendek.",
+      "assessment": "Guru merekod sama ada murid dapat memberi sebab yang relevan bagi dua keputusan.",
+      "follow_up": "Bandingkan dua alasan bagi pilihan sama."
+    },
+    {
+      "pdp": "019",
+      "title": "Buat keputusan rasional dalam lakonan",
+      "sp": "3.1.4",
+      "focus": "Buat keputusan rasional dalam lakonan.",
+      "book": "Buku Teks hlm. 24–25",
+      "objective": "Murid dapat membuat keputusan rasional dengan sebab yang sesuai dalam dua situasi.",
+      "materials": "Kad watak dan peta fikir pilihan dan akibat",
+      "induction": [
+        "Menunjukkan peta fikir pilihan, sebab dan akibat.",
+        "Menyusun tiga kad mengikut urutan membuat keputusan."
+      ],
+      "guided": [
+        "Memodelkan cara menimbang kesan satu pilihan kepada diri dan rakan.",
+        "Membandingkan dua tindakan berdasarkan satu situasi."
+      ],
+      "practice": [
+        "Memberi situasi baharu untuk lakonan pendek Pilihanku.",
+        "Melakonkan satu keputusan rasional dan menyebut sebab selepas lakonan."
+      ],
+      "closure": [
+        "Meminta murid merumuskan perkara yang perlu disemak sebelum bertindak.",
+        "Menyatakan satu akibat yang dipertimbangkan."
+      ],
+      "support": "Guna gambar dan pertimbangkan hanya dua pilihan pada satu masa.",
+      "assessment": "Guru merekod sama ada murid dapat membuat keputusan rasional dengan sebab yang sesuai dalam dua situasi.",
+      "follow_up": "Ubah satu maklumat dalam situasi dan nilai semula pilihan."
+    }
+  ]
+}
