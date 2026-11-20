@@ -72,15 +72,15 @@ def _node(parent, name, *, first=False):
 
 def _shade_cell(cell, fill):
     props = _node(cell, "tcPr", first=True)
-    shading = _node(props, "shd")
-    shading.set(W + "val", "clear")
-    shading.set(W + "fill", fill)
     borders = _node(props, "tcBorders")
     for edge in ("top", "bottom", "left", "right"):
         line = _node(borders, edge)
         line.set(W + "val", "single")
         line.set(W + "sz", "4")
         line.set(W + "color", "444444")
+    shading = _node(props, "shd")
+    shading.set(W + "val", "clear")
+    shading.set(W + "fill", fill)
 
 
 def _boxed_title(body, first_table, fill):
@@ -93,9 +93,6 @@ def _boxed_title(body, first_table, fill):
         if not any(key in visible for key in TITLE_MARKERS):
             continue
         ppr = _node(paragraph, "pPr", first=True)
-        shading = _node(ppr, "shd")
-        shading.set(W + "val", "clear")
-        shading.set(W + "fill", fill)
         borders = _node(ppr, "pBdr")
         for edge in ("top", "bottom", "left", "right"):
             line = _node(borders, edge)
@@ -103,6 +100,9 @@ def _boxed_title(body, first_table, fill):
             line.set(W + "sz", "6")
             line.set(W + "space", "5")
             line.set(W + "color", "444444")
+        shading = _node(ppr, "shd")
+        shading.set(W + "val", "clear")
+        shading.set(W + "fill", fill)
         return True
     return False
 
