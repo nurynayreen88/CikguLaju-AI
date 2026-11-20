@@ -118,35 +118,32 @@ def supplement_details(heading, details, activities, footer):
     objective = _field(details, "Objektif", "Objektif Pembelajaran", "Learning objective", "Learning objectives")
     materials = _field(details, "Bahan", "Bahan Bantu Mengajar", "Materials")
     existing_support = _field(footer, "Sokongan", "Pemulihan", "Remedial")
-    pupil_action = _brief(_lesson_pupil_action(activities), limit=70)
     emk = _emk_from_context(topic, objective, family, english=english)
     pak21 = _pak21_from_actions(activities, english=english, family=family)
-    if pupil_action:
-        pak21 += "; " + pupil_action
     kbat = _kbat_from_context(activities, english=english)
     if english:
         remediation = (existing_support or
-                       f"Repeat the task on {topic} with teacher prompts and { _brief(materials, 38) or 'available materials' }.")
-        extension = f"Use {topic} in a new example and explain the choice or result."
+                       f"Repeat the task with prompts and { _brief(materials, 30) or 'available materials' }.")
+        extension = f"Apply {topic} to a new example and explain the result."
         lines_one = (("Cross-curricular elements", emk), ("21st-century learning", pak21),
                      ("Higher-order thinking", kbat))
         lines_two = (("Remedial", remediation), ("Enrichment", extension))
         label_one, label_two = "CCE / 21st-century learning / HOTS", "Remedial / Enrichment"
     else:
         if existing_support:
-            remediation = f"Ulang tugasan {topic} dengan berpandukan sokongan yang dinyatakan dalam bahagian akhir RPH."
+            remediation = f"Bimbing murid mengulang {topic.lower()} berpandukan bahagian Sokongan."
         else:
-            aid = _brief(materials, 48)
+            aid = _brief(materials, 30)
             remediation = (
-                f"Bimbing semula tugasan berkaitan {topic}" +
+                f"Bimbing murid mengulang {topic.lower()}" +
                 (f" menggunakan {aid}." if aid else " secara berperingkat.")
             )
         if family == "ppki":
-            extension = f"Murid yang menguasai kemahiran memilih atau menunjukkan tindakan dalam situasi baharu berkaitan {topic}."
+            extension = f"Murid menggunakan kemahiran {topic.lower()} dalam situasi baharu."
         elif family == "sains":
-            extension = f"Bandingkan satu contoh baharu tentang {topic} dan nyatakan sebab berdasarkan pemerhatian."
+            extension = f"Bandingkan contoh baharu tentang {topic.lower()} dan berikan sebab."
         else:
-            extension = f"Bina satu contoh baharu berkaitan {topic} dan terangkan cara atau jawapan."
+            extension = f"Bina contoh baharu berkaitan {topic.lower()} dan terangkan langkah."
         lines_one = (("EMK", emk), ("PAK21", pak21), ("KBAT", kbat))
         lines_two = (("Pemulihan", remediation), ("Pengayaan", extension))
         label_one, label_two = "EMK / PAK21 / KBAT", "Pemulihan / Pengayaan"
