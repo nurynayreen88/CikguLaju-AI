@@ -111,7 +111,7 @@ def install(namespace):
         return subjects(cid, "Tahun 1")
 
     def ppki_navigation(cid, st, action):
-        from staging.ppki.catalog import SUBJECT, UNIT, catalog, lesson_filename, selected_lesson
+        from staging.ppki.catalog import SUBJECT, UNIT, UNIT_LESSONS, catalog, lesson_filename, selected_lesson
         from staging.ppki.render_pengurusan_kehidupan import render_lesson
 
         source = catalog()
@@ -140,27 +140,32 @@ def install(namespace):
             st["ppki_component"] = True
             st.pop("ppki_unit", None)
             st.pop("ppki_lesson", None)
-            return show(source["component"], "Pilih unit.", [(source["unit"], "cv_ppki_unit")],
-                        "cv_ppki_subject")
+            choices = [(catalog(unit)["unit"], f"cv_ppki_unit_{unit}") for unit in UNIT_LESSONS]
+            return show(source["component"], "Pilih unit.", choices, "cv_ppki_subject")
         if not st.get("ppki_component"):
             return ppki_navigation(cid, st, "subject")
-        if action == "unit":
-            st["ppki_unit"] = UNIT
+        if action == "unit" or action.startswith("unit_"):
+            unit = UNIT if action == "unit" else action.removeprefix("unit_")
+            if unit not in UNIT_LESSONS:
+                return ppki_navigation(cid, st, "component")
+            source = catalog(unit)
+            st["ppki_unit"] = unit
             st.pop("ppki_lesson", None)
             choices = [(f"PdP {row['pdp']} · {row['title']}", f"cv_ppki_lesson_{row['pdp']}")
                        for row in source["lessons"]]
             return show(source["unit"], "Pilih PdP.", choices, "cv_ppki_component")
         command, _, number = action.partition("_")
-        lesson = selected_lesson(st.get("ppki_unit"), number)
+        unit = st.get("ppki_unit")
+        lesson = selected_lesson(unit, number)
         if lesson is None:
             return ppki_navigation(cid, st, "component")
         if command == "lesson":
             st["ppki_lesson"] = number
             return show(lesson["title"], "Pilih format RPH.",
                         [("⬇️ Muat Turun Word", f"cv_ppki_word_{number}"),
-                         ("⬇️ Muat Turun PDF", f"cv_ppki_pdf_{number}")], "cv_ppki_unit")
+                         ("⬇️ Muat Turun PDF", f"cv_ppki_pdf_{number}")], f"cv_ppki_unit_{unit}")
         if command not in ("word", "pdf") or st.get("ppki_lesson") != number:
-            return ppki_navigation(cid, st, "unit")
+            return ppki_navigation(cid, st, f"unit_{unit}")
         if cid in downloading:
             return send(cid, "Fail sedang dijana. Sila tunggu sebentar.")
         downloading.add(cid)
@@ -170,7 +175,7 @@ def install(namespace):
             extension = "docx" if command == "word" else "pdf"
             with TemporaryDirectory(prefix="cikgulaju-ppki-") as directory:
                 path = Path(directory) / lesson_filename(number, command)
-                path.write_bytes(render_lesson(source, lesson, extension, {}))
+                path.write_bytes(render_lesson(catalog(unit), lesson, extension, {}))
                 result = namespace["send_document"](cid, str(path), escape(lesson["title"]))
             if namespace["_telegram_delivery_ok_v25279"](result):
                 return result

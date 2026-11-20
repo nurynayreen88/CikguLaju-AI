@@ -10,7 +10,7 @@ from pypdf import PdfReader
 
 from curriculum_version_telegram import install
 from rpt_2027.english.telegram_downloads import install as install_rpt
-from staging.ppki.catalog import SUBJECT, UNIT
+from staging.ppki.catalog import SUBJECT, UNIT, UNIT3
 from web.telegram_ppki_api import create_ppki_blueprint
 
 
@@ -40,22 +40,22 @@ class PpkiTelegramTest(unittest.TestCase):
         callback = self.namespace["callback"]
         self.namespace["year"](42, "primary")
         for key in ("cv_primary_ppki", "cv_ppki_year2", "cv_ppki_subject",
-                    "cv_ppki_component", "cv_ppki_unit", "cv_ppki_lesson_014"):
+                    "cv_ppki_component", f"cv_ppki_unit_{UNIT3}", "cv_ppki_lesson_018"):
             self.assertIn(key, [button["callback_data"] for row in self.messages[-1][1] for button in row])
             callback(42, key)
         self.assertNotIn("lesson_no", self.state[42])
-        callback(42, "cv_ppki_pdf_013")
+        callback(42, "cv_ppki_pdf_017")
         self.assertFalse(self.documents)
-        callback(42, "cv_ppki_lesson_014")
-        callback(42, "cv_ppki_word_014")
+        callback(42, "cv_ppki_lesson_018")
+        callback(42, "cv_ppki_word_018")
         self.assertFalse(self.documents)
         self.allow = True
-        callback(42, "cv_ppki_word_014")
-        callback(42, "cv_ppki_pdf_014")
+        callback(42, "cv_ppki_word_018")
+        callback(42, "cv_ppki_pdf_018")
         self.assertEqual([name.rsplit(".", 1)[1] for name, *_ in self.documents], ["docx", "pdf"])
         pdf = PdfReader(BytesIO(self.documents[-1][1]))
         self.assertEqual(len(pdf.pages), 1)
-        self.assertIn("2.3.4", pdf.pages[0].extract_text())
+        self.assertIn("3.1.4", pdf.pages[0].extract_text())
 
     def test_rpt_under_own_menu_and_paid_gate(self):
         callback = self.namespace["callback"]
@@ -66,8 +66,9 @@ class PpkiTelegramTest(unittest.TestCase):
         for key in ("rpt2027_home", "rpt2027_ppki_home", "rpt2027_ppki_year2", "rpt2027_ppki_pdf2"):
             callback(42, key)
         rpt = PdfReader(BytesIO(self.documents[-1][1]))
-        content = rpt.pages[0].extract_text()
-        for number in range(1, 15):
+        self.assertEqual(len(rpt.pages), 2)
+        content = "\n".join(page.extract_text() for page in rpt.pages)
+        for number in range(1, 19):
             self.assertIn(f"{number:03d}", content)
         self.assertIn("Agihan PdP Unit 2", content)
 
@@ -90,7 +91,9 @@ class PpkiApiTest(unittest.TestCase):
             teacher = {"class": "2 Bestari", "date": "2027-03-04", "time": "08:00 - 08:30",
                        "students": "7", "reflection": "Ulang dengan kad gambar."}
             selection = {"year": 2, "subject": SUBJECT, "unit": UNIT, "lesson": "001"}
-            for row in options["lessons"]:
+            self.assertEqual(options["additional_units"][0]["value"], UNIT3)
+            for row in options["lessons"] + options["additional_units"][0]["lessons"]:
+                selection["unit"] = UNIT if int(row["value"]) <= 14 else UNIT3
                 selection["lesson"] = row["value"]
                 for fmt in ("word", "pdf"):
                     response = client.post(prefix + "/render", headers=headers,
@@ -105,6 +108,11 @@ class PpkiApiTest(unittest.TestCase):
                         text = doc.pages[0].extract_text()
                     self.assertIn("2 Bestari", text)
                     self.assertIn("Ulang dengan kad gambar.", text)
+            selection["unit"] = UNIT
             selection["lesson"] = "015"
             self.assertEqual(client.post(prefix + "/render", headers=headers,
                                          json={"selection": selection, "teacher": teacher, "format": "pdf"}).status_code, 404)
+            for endpoint, pages in (("/rpt.pdf", 1), ("/rpt-current.pdf", 2)):
+                response = client.get(prefix + endpoint, headers=headers)
+                self.assertEqual(response.status_code, 200)
+                self.assertEqual(len(PdfReader(BytesIO(response.data)).pages), pages)

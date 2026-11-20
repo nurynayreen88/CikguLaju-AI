@@ -1,21 +1,32 @@
-"""Verified scope for the first PPKI RPH and RPT collection."""
+"""Verified PPKI RPH and RPT collections."""
 from functools import lru_cache
+from pathlib import Path
+import json
 
 from staging.ppki.render_pengurusan_kehidupan import load_catalog
 
 YEAR = 2
 SUBJECT = "PENGURUSAN_KEHIDUPAN_PPKI"
 UNIT = "u02-pengurusan-diri"
+UNIT3 = "u03-pengurusan-diri"
 COMPONENT = "pengurusan-diri"
 FORMATS = ("word", "pdf")
+UNIT_LESSONS = {UNIT: range(1, 15), UNIT3: range(15, 19)}
 RPT_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_2_2027.pdf"
+RPT_COMBINED_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_2_3_2027.pdf"
 
 
-@lru_cache(maxsize=1)
-def catalog():
-    source = load_catalog()
+@lru_cache(maxsize=2)
+def catalog(unit=UNIT):
+    if unit == UNIT:
+        source = load_catalog()
+    elif unit == UNIT3:
+        path = Path(__file__).with_name("pengurusan_kehidupan_tahun2_unit3.json")
+        source = json.loads(path.read_text(encoding="utf-8"))
+    else:
+        raise ValueError("Unknown PPKI unit")
     numbers = [lesson["pdp"] for lesson in source["lessons"]]
-    if source["year"] != YEAR or numbers != [f"{n:03d}" for n in range(1, 15)]:
+    if source["year"] != YEAR or numbers != [f"{n:03d}" for n in UNIT_LESSONS[unit]]:
         raise ValueError("PPKI catalog identity mismatch")
     for lesson in source["lessons"]:
         sp = lesson["sp"]
@@ -24,14 +35,11 @@ def catalog():
     return source
 
 
-def options():
-    source = catalog()
+def _unit_options(unit):
+    source = catalog(unit)
     return {
-        "source": "ppki-pengurusan-kehidupan-v1",
-        "year": YEAR,
-        "subjects": [{"value": SUBJECT, "label": source["subject"]}],
-        "components": [{"value": COMPONENT, "label": source["component"]}],
-        "units": [{"value": UNIT, "label": source["unit"]}],
+        "value": unit,
+        "label": source["unit"],
         "lessons": [
             {
                 "value": lesson["pdp"],
@@ -44,10 +52,24 @@ def options():
     }
 
 
+def options():
+    source = catalog()
+    first = _unit_options(UNIT)
+    return {
+        "source": "ppki-pengurusan-kehidupan-v1",
+        "year": YEAR,
+        "subjects": [{"value": SUBJECT, "label": source["subject"]}],
+        "components": [{"value": COMPONENT, "label": source["component"]}],
+        "units": [{"value": UNIT, "label": first["label"]}],
+        "lessons": first["lessons"],
+        "additional_units": [_unit_options(UNIT3)],
+    }
+
+
 def selected_lesson(unit, number):
-    if unit != UNIT:
+    if unit not in UNIT_LESSONS:
         return None
-    return next((lesson for lesson in catalog()["lessons"] if lesson["pdp"] == number), None)
+    return next((lesson for lesson in catalog(unit)["lessons"] if lesson["pdp"] == number), None)
 
 
 def lesson_filename(number, fmt):
