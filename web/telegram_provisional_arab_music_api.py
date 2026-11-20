@@ -28,7 +28,7 @@ NUM = re.compile(r"(?:00[1-9]|0[1-9]\d|[1-2]\d\d|3\d\d)")
 UNIT = re.compile(r"u(?:0[1-9]|[1-9][0-9])|x[a-f0-9]{12}")
 EXPECTED = {2:60,3:60,4:58,5:60,6:60}
 SUBJECTS = {"ARAB":"Bahasa Arab", "MUZIK":"Pendidikan Muzik"}
-REVIEWED_ARABIC = (2, 1)
+REVIEWED_ARABIC = ((2, 1), (2, 2))
 
 
 def _check(year, subject, unit=None, lesson=None):
@@ -120,11 +120,14 @@ def _unit_rows(year, subject):
     if not rows or len(set(k for k,_ in rows))!=len(rows):
         raise ValueError("Unavailable draft units")
     units = [{"value":u,"label":label,"status":"DRAF"} for u,label in rows]
-    if subject == "ARAB" and year == REVIEWED_ARABIC[0]:
-        row = _arab_index()[REVIEWED_ARABIC]
-        plan = _reviewed_arabic(row)
-        unit = next(item for item in units if item["value"] == f"u{plan['unit']:02d}")
-        unit["has_ready_lessons"] = True
+    if subject == "ARAB":
+        ready_units = {
+            f"u{_reviewed_arabic(_arab_index()[key])['unit']:02d}"
+            for key in REVIEWED_ARABIC if key[0] == year
+        }
+        for unit in units:
+            if unit["value"] in ready_units:
+                unit["has_ready_lessons"] = True
     return units
 
 
@@ -143,7 +146,7 @@ def _lesson_rows(year,subject,unit):
             # Source mapping is preliminary. Never call it visually verified.
             if row["halaman_buku"].strip():
                 item["textbook_ref"]="Buku Teks m/s "+row["halaman_buku"]+" (rujukan DRAF)"
-            if (year, pdp) == REVIEWED_ARABIC:
+            if (year, pdp) in REVIEWED_ARABIC:
                 plan = _reviewed_arabic(row)
                 item.update(status="READY", label=f"PdP {pdp:03d} — {plan['focus']}",
                             textbook_ref="Buku Teks m/s " + plan["pages"])
@@ -164,14 +167,15 @@ def _lesson_rows(year,subject,unit):
     return rows
 
 
-@lru_cache(maxsize=1)
-def _reviewed_arabic_source():
-    return json.loads((AR / "year2" / "pdp_001_ar.json").read_text(encoding="utf-8"))
+@lru_cache(maxsize=64)
+def _reviewed_arabic_source(year, lesson):
+    return json.loads((AR / f"year{year}" / f"pdp_{lesson:03d}_ar.json").read_text(encoding="utf-8"))
 
 
 def _reviewed_arabic(row):
-    plan = _reviewed_arabic_source()
-    if ((plan["year"], plan["lesson"]) != REVIEWED_ARABIC
+    key = int(row["tahun"]), int(row["pdp"])
+    plan = _reviewed_arabic_source(*key)
+    if ((plan["year"], plan["lesson"]) != key
             or plan["unit"] != int(row["unit"])
             or plan["topic"] != row["unit_name"]
             or (plan["sk"], plan["sp"], plan["pages"]) !=
@@ -193,7 +197,7 @@ def _selected(year,subject,unit,lesson):
         standards=display_sk_sp(first(f,"DSKP SK/SP","Kod SK/SP","SK/SP cadangan"))
         if title!=f"RPH Bahasa Arab Tahun {year} — PdP {n:03d}" or standards!=f"{row['sk']} / {row['sp']}":
             raise ValueError("Arabic draft source differs from the RPT index")
-        if (year, n) == REVIEWED_ARABIC:
+        if (year, n) in REVIEWED_ARABIC:
             return {"year":year, "subject":subject, "unit":unit, "lesson":n,
                     "title":title, "arabic":_reviewed_arabic(row),
                     "status":"READY", "formats":["word"]}

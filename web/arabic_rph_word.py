@@ -1,6 +1,7 @@
 """Render the reviewed, source-matched Arabic RPH in the original three-table layout."""
 
 from datetime import date
+from unicodedata import bidirectional
 
 from docx import Document
 from docx.enum.table import WD_TABLE_DIRECTION
@@ -10,13 +11,23 @@ from docx.oxml.ns import qn
 from docx.shared import Cm, Pt
 
 
+_ARABIC_FILL = "FCE8D8"
+
+
 def _paragraph(paragraph, text, *, bold=False, size=11, centered=False):
-    props = paragraph._p.get_or_add_pPr()
-    props.insert_element_before(OxmlElement("w:bidi"), "w:jc")
+    first_strong = next(
+        (direction for char in text if (direction := bidirectional(char)) in ("L", "R", "AL")),
+        "L",
+    )
     if centered:
         paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    else:
-        props.get_or_add_jc().set(qn("w:val"), "start")
+    if first_strong in ("R", "AL"):
+        props = paragraph._p.get_or_add_pPr()
+        props.insert_element_before(OxmlElement("w:bidi"), "w:jc")
+        if not centered:
+            props.get_or_add_jc().set(qn("w:val"), "start")
+    elif not centered:
+        paragraph.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     paragraph.paragraph_format.space_after = Pt(0)
     paragraph.paragraph_format.space_before = Pt(0)
     paragraph.paragraph_format.line_spacing = 1.0
@@ -48,7 +59,13 @@ def _table(doc, widths, rows, *, header=False):
         row._tr.get_or_add_trPr().append(OxmlElement("w:cantSplit"))
         for index, (cell, value, width) in enumerate(zip(row.cells, values, widths)):
             cell.width = Cm(width)
-            _paragraph(cell.paragraphs[0], value, bold=index == 0 or (header and row_index == 0))
+            is_label = index == 0 or (header and row_index == 0)
+            if is_label:
+                shade = OxmlElement("w:shd")
+                shade.set(qn("w:val"), "clear")
+                shade.set(qn("w:fill"), _ARABIC_FILL)
+                cell._tc.get_or_add_tcPr().append(shade)
+            _paragraph(cell.paragraphs[0], value, bold=is_label)
 
 
 def render_arabic_word(plan, teacher_fields, reflection, dest):
@@ -65,13 +82,18 @@ def render_arabic_word(plan, teacher_fields, reflection, dest):
     title = doc.add_paragraph()
     _paragraph(title, "خطة التدريس اليومية لمادة اللغة العربية", bold=True, size=17, centered=True)
     title.paragraph_format.space_after = Pt(4)
+    numerals = str.maketrans("0123456789", "٠١٢٣٤٥٦٧٨٩")
+    year = str(plan["year"]).translate(numerals)
+    lesson = f"{plan['lesson']:03d}".translate(numerals)
+    pages = plan["pages"].replace(" & ", " و").translate(numerals)
     _table(doc, (4.3, 14.4), [
-        ("الصف والحصّة", "الصفّ الثاني • الحصّة ٠٠١"),
+        ("الصف والحصّة", f"الصفّ {year} • الحصّة {lesson}"),
         ("الوحدة", plan["topic"]),
         ("موضوع الدرس", plan["focus"]),
         ("التاريخ", lesson_date),
         ("الوقت", time or "________"),
-        ("الفصل وعدد التلاميذ", f"{class_name or '________'} • {pupils or '____'}"),
+        ("الفصل", class_name or "________"),
+        ("عدد التلاميذ", pupils or "____"),
         ("معيار المحتوى", f"\u2066{plan['sk']}\u2069  {plan['content_standard']}"),
         ("معيار التعلّم", f"\u2066{plan['sp']}\u2069  {plan['learning_standard']}"),
         ("هدف التعلّم", plan["objective"]),
@@ -80,14 +102,14 @@ def render_arabic_word(plan, teacher_fields, reflection, dest):
     _table(doc, (3.1, 12.0, 3.6), [
         ("المرحلة", "أنشطة التعليم والتعلّم", "ملاحظات"),
         ("التمهيد", plan["induction"], ""),
-        ("النشاط الأول", plan["activity_1"], "ترديد جماعي"),
+        ("النشاط الأول", plan["activity_1"], plan.get("activity_1_note", "ترديد جماعي")),
         ("النشاط الثاني", plan["activity_2"], "عمل ثنائي"),
         ("التقويم التكويني", plan["assessment"], "أداء فردي"),
         ("الخاتمة", plan["closure"], ""),
     ], header=True)
     _table(doc, (4.3, 14.4), [
         ("الوسائل التعليمية", plan["materials"]),
-        ("المرجع", "كتاب اللغة العربية للصف الثاني، الصفحتان ٢ و٤."),
+        ("المرجع", f"كتاب اللغة العربية للصفّ {year}، ص {pages}."),
         ("تأمّل المعلّم", reflection or plan["reflection"]),
     ])
     _paragraph(section.footer.paragraphs[0], "CikguLaju AI", size=8, centered=True)
