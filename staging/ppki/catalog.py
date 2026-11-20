@@ -13,7 +13,7 @@ UNIT4 = "u04-pengurusan-diri"
 UNIT5 = "u05-pengurusan-diri"
 COMPONENT = "pengurusan-diri"
 FORMATS = ("word", "pdf")
-UNIT_LESSONS = {UNIT: range(1, 15), UNIT3: range(15, 19), UNIT4: range(19, 24), UNIT5: range(24, 28)}
+UNIT_LESSONS = {UNIT: range(1, 15), UNIT3: range(15, 19), UNIT4: range(19, 24), UNIT5: range(24, 30)}
 UNIT_FILES = {
     UNIT3: "pengurusan_kehidupan_tahun2_unit3.json",
     UNIT4: "pengurusan_kehidupan_tahun2_unit4.json",
