@@ -90,10 +90,10 @@ def install(ns):
         if not allowed(cid):
             return locked(cid)
         if is_ppki:
-            from staging.ppki.catalog import RPT_COMBINED_FILENAME, UNIT_LESSONS
+            from staging.ppki.catalog import RPT_COMBINED_EDITION, RPT_COMBINED_FILENAME, UNIT_LESSONS
             from staging.ppki.rpt import render_rpt
             count = sum(len(numbers) for numbers in UNIT_LESSONS.values())
-            edition = f"Unit 2–{len(UNIT_LESSONS) + 1}"
+            edition = RPT_COMBINED_EDITION
 
             if data == "rpt2027_ppki_home":
                 return send(cid, "📅 <b>RPT 2027 · Pendidikan Khas (PPKI)</b>\n\nPilih tahun.", [

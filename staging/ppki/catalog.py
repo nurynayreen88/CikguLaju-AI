@@ -7,20 +7,28 @@ from staging.ppki.render_pengurusan_kehidupan import load_catalog
 
 YEAR = 2
 SUBJECT = "PENGURUSAN_KEHIDUPAN_PPKI"
+UNIT1 = "u01-pengurusan-diri"
 UNIT = "u02-pengurusan-diri"
 UNIT3 = "u03-pengurusan-diri"
 UNIT4 = "u04-pengurusan-diri"
 UNIT5 = "u05-pengurusan-diri"
 COMPONENT = "pengurusan-diri"
 FORMATS = ("word", "pdf")
-UNIT_LESSONS = {UNIT: range(1, 15), UNIT3: range(15, 19), UNIT4: range(19, 24), UNIT5: range(24, 30)}
+UNIT_LESSONS = {
+    UNIT1: range(30, 40), UNIT: range(1, 15), UNIT3: range(15, 19),
+    UNIT4: range(19, 24), UNIT5: range(24, 30),
+}
+
+# Keep the published order in the additional_units field.
 UNIT_FILES = {
     UNIT3: "pengurusan_kehidupan_tahun2_unit3.json",
     UNIT4: "pengurusan_kehidupan_tahun2_unit4.json",
     UNIT5: "pengurusan_kehidupan_tahun2_unit5.json",
+    UNIT1: "pengurusan_kehidupan_tahun2_unit1.json",
 }
 RPT_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_2_2027.pdf"
-RPT_COMBINED_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_2_3_4_5_2027.pdf"
+RPT_COMBINED_EDITION = "Unit 1–5"
+RPT_COMBINED_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_1_2_3_4_5_2027.pdf"
 
 
 @lru_cache(maxsize=len(UNIT_LESSONS))

@@ -19,6 +19,23 @@ Skop pertama ialah komponen Pengurusan Diri, Unit 2 Diri Bersih Badan Sihat, bag
 | 013 | Amali menyapu laluan di luar bilik darjah | 2.3 / 2.3.3 | 20–21 |
 | 014 | Keselamatan sebelum dan selepas gotong-royong | 2.3 / 2.3.4 | 21 |
 
+## Unit 1 Mari Belajar
+
+| PdP | Fokus RPH | SK / SP | Buku Teks |
+| --- | --- | --- | --- |
+| 030 | Perkenalkan diri | 1.1 / 1.1.1 | 4 |
+| 031 | Kenali ahli keluarga asas | 1.1 / 1.1.2 | 5 |
+| 032 | Panggilan hormat dalam keluarga | 1.1 / 1.1.3 | 5 |
+| 033 | Nama ahli keluarga | 1.1 / 1.1.4 | 5 |
+| 034 | Adab berpakaian di rumah | 1.2 / 1.2.1 | 6–7 |
+| 035 | Adab bergaul dengan keluarga | 1.2 / 1.2.2 | 6–7 |
+| 036 | Adab berpakaian dan batasan pergaulan | 1.2 / 1.2.3 | 6–7 |
+| 037 | Butang, zip dan cangkuk pakaian | 1.3 / 1.3.1 | 8–9 |
+| 038 | Pilih dan pakai set pakaian | 1.3 / 1.3.2 | 10 |
+| 039 | Peragakan pakaian lengkap dan kemas | 1.3 / 1.3.3 | 10 |
+
+Unit 1 merujuk DSKP hlm. 23–25 dan Buku Teks hlm. 4–10. PdP 030–039 ialah nombor baharu kerana PdP 001–029 telah diterbitkan bagi Unit 2–5. Pemilih dan RPT memaparkan Unit 1 dahulu. [Buku teks Unit 1](https://fliphtml5.com/ktpkn/mnma/BT_Pengurusan_Diri_dan_Kemahiran_Manupulatif_Tahun_2/)
+
 ## Unit 3 Bersih Cermin Peribadi
 
 | PdP | Fokus RPH | SK / SP | Buku Teks |
@@ -63,6 +80,6 @@ Eksport pukal di bawah menjana 14 Word, 14 PDF berlabel ungu muda dan indeks RPT
 python -m staging.ppki.render_pengurusan_kehidupan --output /tmp/cikgulaju-ppki
 ```
 
-Laluan pengguna ialah Pendidikan Khas (PPKI) → Tahun 2 → Pengurusan Kehidupan → Pengurusan Diri → Unit 2, 3, 4 atau 5 → PdP. Web menggunakan katalog dan penjana yang sama melalui sambungan dalaman Telegram. RPT 2027 menawarkan PDF agihan 29 PdP Unit 2–5 untuk akaun berbayar aktif. Guru memilih tarikh pelaksanaan mengikut jadual kelas.
+Laluan pengguna ialah Pendidikan Khas (PPKI) → Tahun 2 → Pengurusan Kehidupan → Pengurusan Diri → Unit 1–5 → PdP. Web menggunakan katalog dan penjana yang sama melalui sambungan dalaman Telegram. RPT 2027 menawarkan PDF agihan 39 PdP Unit 1–5 untuk akaun berbayar aktif. Guru memilih tarikh pelaksanaan mengikut jadual kelas.
 
 [DSKP Pengurusan Kehidupan Tahun 2](https://asiemodel.net/wp-content/uploads/2022/08/024-DSKP-KSSR-PENDIDIKAN-KHAS-SEMAKAN-2017-MASALAH-PEMBELAJARAN-PENGURUSAN-KEHIDUPAN-TAHUN-2.pdf) · [Buku Teks hlm. 13](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/20/) · [Buku Teks hlm. 14](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/21/) · [Buku Teks hlm. 15](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/22/) · [Panduan RPI KPM](https://www.moe.gov.my/spi-kpm-bil-7-tahun-2023-buku-panduan-rancangan-pe) · [Buku Teks hlm. 19](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/26/) · [Buku Teks hlm. 21](https://fliphtml5.com/ktpkn/mnma/BT_Pengurusan_Diri_dan_Kemahiran_Manupulatif_Tahun_2/28/) · [Buku Teks hlm. 24](https://fliphtml5.com/ktpkn/mnma/BT_Pengurusan_Diri_dan_Kemahiran_Manupulatif_Tahun_2/31/) · [Buku Teks hlm. 25](https://fliphtml5.com/ktpkn/mnma/BT_Pengurusan_Diri_dan_Kemahiran_Manupulatif_Tahun_2/32/)
