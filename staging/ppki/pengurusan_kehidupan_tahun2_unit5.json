@@ -1,0 +1,83 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 2,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 5 · Budi Pekerti Mulia",
+  "content_standards": {
+    "5.1": "Adab dan tatasusila terhadap ahli keluarga."
+  },
+  "learning_standards": {
+    "5.1.1": "Melafazkan ucapan bertatasusila semasa berinteraksi dengan ahli keluarga.",
+    "5.1.2": "Menunjukkan respons emosi yang positif semasa berinteraksi dengan keluarga.",
+    "5.1.3": "Menunjukkan respons yang beradab kepada arahan yang diberi oleh ahli keluarga.",
+    "5.1.4": "Menunjukkan cara beradab dan bertatasusila semasa berinteraksi dengan ahli keluarga."
+  },
+  "lessons": [
+    {
+      "pdp": "024",
+      "title": "Ucapan sopan bersama keluarga",
+      "sp": "5.1.1",
+      "focus": "Mengucapkan terima kasih, meminta tolong dan meminta maaf.",
+      "book": "Buku Teks hlm. 33",
+      "objective": "Menggunakan ucapan sopan yang sesuai dalam sekurang-kurangnya dua daripada tiga situasi.",
+      "materials": "Buku teks, kad situasi, kad ucapan dan alat komunikasi murid jika digunakan.",
+      "induction": ["Tunjukkan situasi pujian pada halaman 33.", "Kenal pasti ucapan balas melalui ujaran atau kad."],
+      "guided": ["Modelkan ucapan ketika menerima bantuan, meminta bantuan dan terlanggar barang.", "Tiru ucapan atau pilih simbol dan sebutannya pada alat komunikasi."],
+      "practice": ["Lakonkan tiga situasi dengan kad bergambar tanpa menyebut ucapan untuk murid.", "Gunakan ucapan sopan yang sepadan melalui pertuturan atau alat komunikasi."],
+      "support": "Beri dua pilihan ucapan dan masa untuk murid memberi respons.",
+      "assessment": "Guru merekod ucapan yang sepadan daripada tiga situasi serta jenis bantuan.",
+      "closure": ["Ulang satu situasi menerima bantuan.", "Ucapkan terima kasih dengan cara komunikasi sendiri."],
+      "follow_up": "Latih semula ucapan untuk situasi yang masih tertukar."
+    },
+    {
+      "pdp": "025",
+      "title": "Respons emosi ketika bersama keluarga",
+      "sp": "5.1.2",
+      "focus": "Memberi respons yang sesuai apabila dipuji, kecewa atau perlu menunggu.",
+      "book": "Buku Teks hlm. 33",
+      "objective": "Menunjukkan satu respons emosi yang sesuai dalam sekurang-kurangnya dua daripada tiga situasi.",
+      "materials": "Buku teks, kad emosi dan kad situasi ringkas.",
+      "induction": ["Rujuk situasi pujian dalam buku teks.", "Pilih kad emosi bagi watak yang menerima pujian."],
+      "guided": ["Modelkan membalas pujian, meminta bantuan apabila kecewa dan meminta masa ketika menunggu.", "Pilih emosi yang dirasai dan cuba respons yang sesuai."],
+      "practice": ["Beri tiga situasi rekaan dan ruang menunggu respons murid.", "Tunjukkan respons melalui lakonan, ujaran atau alat komunikasi."],
+      "support": "Terima emosi murid. Tunjukkan pilihan respons seperti meminta bantuan atau ruang berehat.",
+      "assessment": "Guru merekod respons yang sesuai daripada tiga situasi dan bantuan yang diperlukan.",
+      "closure": ["Ulang pilihan respons apabila kecewa.", "Tunjukkan cara meminta bantuan atau masa bertenang."],
+      "follow_up": "Ulang situasi yang memerlukan bantuan dengan dua kad pilihan."
+    },
+    {
+      "pdp": "026",
+      "title": "Menjawab arahan keluarga dengan sopan",
+      "sp": "5.1.3",
+      "focus": "Memberi respons sopan kepada tugasan rumah yang ringkas dan selamat.",
+      "book": "Buku Teks hlm. 33",
+      "objective": "Memberi respons yang beradab kepada sekurang-kurangnya dua daripada tiga arahan dalam lakonan.",
+      "materials": "Buku teks, kad arahan, cawan plastik dan bakul.",
+      "induction": ["Rujuk gambar ahli keluarga meminta air pada halaman 33.", "Tunjukkan siapa yang meminta dan siapa yang menjawab."],
+      "guided": ["Modelkan memberi respons sebelum menghulurkan cawan. Tunjuk cara meminta arahan diulang.", "Berlatih menjawab dan bertindak atau meminta penjelasan."],
+      "practice": ["Berikan tiga arahan ringkas seperti hulur cawan, simpan kad dan letak bakul.", "Jawab dengan sopan, minta penjelasan atau minta bantuan jika perlu."],
+      "support": "Beri satu arahan pada satu masa dan tunjuk kad tindakan jika diperlukan.",
+      "assessment": "Guru merekod respons yang sesuai bagi setiap arahan, termasuk cara murid meminta penjelasan atau bantuan.",
+      "closure": ["Minta murid mengingat cara menjawab apabila kurang jelas.", "Lakonkan satu cara meminta arahan diulang."],
+      "follow_up": "Ulang arahan yang memerlukan model atau kad gambar."
+    },
+    {
+      "pdp": "027",
+      "title": "Adab meminjam barang ahli keluarga",
+      "sp": "5.1.4",
+      "focus": "Meminta izin, menunggu jawapan dan memulangkan barang.",
+      "book": "Buku Teks hlm. 32–33",
+      "objective": "Menunjukkan sekurang-kurangnya tiga daripada empat tindakan beradab dalam simulasi meminjam barang.",
+      "materials": "Buku teks, kad urutan, bekas pensel dan alat tulis.",
+      "induction": ["Tunjukkan gambar keluarga dan ajukan situasi meminjam pensel.", "Pilih apa yang perlu dilakukan sebelum mengambil pensel."],
+      "guided": ["Modelkan minta izin, tunggu jawapan, ucap terima kasih dan pulangkan barang.", "Susun kad urutan dan lakonkan langkah mengikut kad."],
+      "practice": ["Beri murid giliran sebagai pemilik dan peminjam. Beri satu contoh jawapan belum boleh dipinjam.", "Amalkan urutan meminjam. Tunggu atau pulangkan barang mengikut situasi."],
+      "support": "Letakkan kad urutan dalam jangkauan. Benarkan ujaran, isyarat atau alat komunikasi.",
+      "assessment": "Guru menanda empat tindakan dan merekod jenis bantuan. Jika izin belum diberi, nilai tindakan menunggu.",
+      "closure": ["Tunjukkan semula kad pertama dan terakhir.", "Nyatakan atau tunjuk tindakan sebelum mengambil dan selepas menggunakan barang."],
+      "follow_up": "Ulang langkah yang belum mantap dengan barang yang biasa digunakan murid."
+    }
+  ]
+}

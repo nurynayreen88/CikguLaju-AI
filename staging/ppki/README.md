@@ -42,6 +42,17 @@ Unit 3 dirujuk kepada DSKP hlm. 29 dan Buku Teks hlm. 24–25. Aktiviti amali me
 
 Rujukan Unit 4 ialah DSKP hlm. 30 dan Buku Teks hlm. 28–30. Agihan lima PdP serta simulasi ialah olahan guru berdasarkan kemahiran dalam buku teks. [Buku Teks hlm. 28](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/35/) · [Buku Teks hlm. 29](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/36/) · [Buku Teks hlm. 30](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/37/)
 
+## Unit 5 Budi Pekerti Mulia
+
+| PdP | Fokus RPH | SK / SP | Buku Teks |
+| --- | --- | --- | --- |
+| 024 | Ucapan sopan bersama keluarga | 5.1 / 5.1.1 | 33 |
+| 025 | Respons emosi ketika bersama keluarga | 5.1 / 5.1.2 | 33 |
+| 026 | Menjawab arahan keluarga dengan sopan | 5.1 / 5.1.3 | 33 |
+| 027 | Adab meminjam barang ahli keluarga | 5.1 / 5.1.4 | 32–33 |
+
+Kelompok Unit 5 merujuk SK 5.1 pada DSKP hlm. 31 dan buku teks hlm. 32–33. Contoh situasi dan lakonan diolah untuk mencapai objektif. Padanan kod bagi SK 5.2 masih dalam semakan. [Buku teks hlm. 33](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/40/)
+
 Kod dan deskripsi Unit 2 dirujuk kepada DSKP hlm. 26–28. Halaman 20–22 menyokong PdP kebersihan di luar bilik darjah. Halaman 16–19 dirujuk bagi alatan, cara mencuci dan tip keselamatan. Halaman bercetak 13–15 diperiksa secara visual pada salinan edisi DBP/KPM. PdP, contoh intervensi dan susunan aktiviti dalam kelompok ini ialah olahan pedagogi. CSV yang dijana menyenaraikan agihan untuk 14 PdP ini sahaja. Guru menentukan tarikh dan kaedah sokongan. Isi RPH termasuk jenis bantuan dan prestasi yang boleh diperhati tanpa menetapkan tahap penguasaan secara automatik. RPI guru diurus di luar penjana ini. Penjana mengisi tarikh, masa, kelas dan bilangan murid, tanpa ruang nama atau diagnosis individu.
 
 Eksport pukal di bawah menjana 14 Word, 14 PDF berlabel ungu muda dan indeks RPT CSV Unit 2 daripada akar repositori.
@@ -50,6 +61,6 @@ Eksport pukal di bawah menjana 14 Word, 14 PDF berlabel ungu muda dan indeks RPT
 python -m staging.ppki.render_pengurusan_kehidupan --output /tmp/cikgulaju-ppki
 ```
 
-Laluan pengguna ialah Pendidikan Khas (PPKI) → Tahun 2 → Pengurusan Kehidupan → Pengurusan Diri → Unit 2, 3 atau 4 → PdP. Web menggunakan katalog dan penjana yang sama melalui sambungan dalaman Telegram. RPT 2027 menawarkan PDF agihan 23 PdP Unit 2–4 untuk akaun berbayar aktif. Guru memilih tarikh pelaksanaan mengikut jadual kelas.
+Laluan pengguna ialah Pendidikan Khas (PPKI) → Tahun 2 → Pengurusan Kehidupan → Pengurusan Diri → Unit 2, 3, 4 atau 5 → PdP. Web menggunakan katalog dan penjana yang sama melalui sambungan dalaman Telegram. RPT 2027 menawarkan PDF agihan 27 PdP Unit 2–5 untuk akaun berbayar aktif. Guru memilih tarikh pelaksanaan mengikut jadual kelas.
 
 [DSKP Pengurusan Kehidupan Tahun 2](https://asiemodel.net/wp-content/uploads/2022/08/024-DSKP-KSSR-PENDIDIKAN-KHAS-SEMAKAN-2017-MASALAH-PEMBELAJARAN-PENGURUSAN-KEHIDUPAN-TAHUN-2.pdf) · [Buku Teks hlm. 13](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/20/) · [Buku Teks hlm. 14](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/21/) · [Buku Teks hlm. 15](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/22/) · [Panduan RPI KPM](https://www.moe.gov.my/spi-kpm-bil-7-tahun-2023-buku-panduan-rancangan-pe) · [Buku Teks hlm. 19](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/26/) · [Buku Teks hlm. 21](https://fliphtml5.com/ktpkn/mnma/BT_Pengurusan_Diri_dan_Kemahiran_Manupulatif_Tahun_2/28/) · [Buku Teks hlm. 24](https://fliphtml5.com/ktpkn/mnma/BT_Pengurusan_Diri_dan_Kemahiran_Manupulatif_Tahun_2/31/) · [Buku Teks hlm. 25](https://fliphtml5.com/ktpkn/mnma/BT_Pengurusan_Diri_dan_Kemahiran_Manupulatif_Tahun_2/32/)

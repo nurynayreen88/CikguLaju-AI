@@ -10,15 +10,17 @@ SUBJECT = "PENGURUSAN_KEHIDUPAN_PPKI"
 UNIT = "u02-pengurusan-diri"
 UNIT3 = "u03-pengurusan-diri"
 UNIT4 = "u04-pengurusan-diri"
+UNIT5 = "u05-pengurusan-diri"
 COMPONENT = "pengurusan-diri"
 FORMATS = ("word", "pdf")
-UNIT_LESSONS = {UNIT: range(1, 15), UNIT3: range(15, 19), UNIT4: range(19, 24)}
+UNIT_LESSONS = {UNIT: range(1, 15), UNIT3: range(15, 19), UNIT4: range(19, 24), UNIT5: range(24, 28)}
 UNIT_FILES = {
     UNIT3: "pengurusan_kehidupan_tahun2_unit3.json",
     UNIT4: "pengurusan_kehidupan_tahun2_unit4.json",
+    UNIT5: "pengurusan_kehidupan_tahun2_unit5.json",
 }
 RPT_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_2_2027.pdf"
-RPT_COMBINED_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_2_3_4_2027.pdf"
+RPT_COMBINED_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_2_3_4_5_2027.pdf"
 
 
 @lru_cache(maxsize=len(UNIT_LESSONS))
