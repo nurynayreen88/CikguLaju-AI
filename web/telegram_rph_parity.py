@@ -113,10 +113,10 @@ def build_layout(data,subject_labels):
     meta.update({
         "MATA PELAJARAN":subject_labels[data["subject"]],
         "TAHUN/TINGKATAN":("Year " if english else "Tahun ")+str(data["year"]),
-        "TARIKH":date.fromisoformat(teacher["date"]).strftime("%d/%m/%Y") if teacher.get("date") else "________________",
-        "MASA":clean(teacher.get("time")) or "________________",
-        "KELAS":clean(teacher.get("class")) or "________________",
-        "BILANGAN MURID":clean(teacher.get("students")) or "________________",
+        "TARIKH":date.fromisoformat(teacher["date"]).strftime("%d/%m/%Y") if teacher.get("date") else "",
+        "MASA":clean(teacher.get("time")),
+        "KELAS":clean(teacher.get("class")),
+        "BILANGAN MURID":clean(teacher.get("students")),
         "TAJUK":clean(data.get("unit") or data.get("title")) or "—",
     })
     if teacher.get("date"):
@@ -125,7 +125,7 @@ def build_layout(data,subject_labels):
             ("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday") if english else
             ("Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu","Ahad"))[weekday]
     else:
-        meta["HARI"]="________________"
+        meta["HARI"]=""
     phases={"induction":[],"main":[],"closure":[]}
     notes={"CATATAN SET INDUKSI":"","CATATAN AKTIVITI UTAMA":"","CATATAN PENUTUP":""}
     supports=[];reflection=[];extra=[]

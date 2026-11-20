@@ -52,6 +52,19 @@ class UnifiedWebRPHTests(unittest.TestCase):
         self.assertIsNone(verified_preview(2, "PSV", "Wrong unit", "v-2-001"))
         self.assertEqual(len(source_records(2, "PSV")), 42)
 
+    def test_unfilled_teacher_details_render_as_blank(self):
+        from web.telegram_rph_parity import build_layout
+
+        for subject, labels in (
+            ("ENGLISH", ("Date", "Day", "Time", "Class", "Number of Pupils")),
+            ("MORAL", ("Tarikh", "Hari", "Masa", "Kelas", "Bilangan Murid")),
+        ):
+            row = source_records(6, subject)[0]
+            preview = verified_preview(6, subject, row["unit"], row["token"])
+            layout = build_layout(preview, SUBJECT_LABELS)
+            header = {field["label"]: field["value"] for field in layout["header"]}
+            self.assertEqual({label: header[label] for label in labels}, dict.fromkeys(labels, ""))
+
     def test_pjpk_preview_uses_dskp_descriptions_for_all_339_plans(self):
         from web.telegram_rph_parity import build_layout
 
