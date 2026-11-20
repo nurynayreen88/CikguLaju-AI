@@ -137,11 +137,11 @@ def supplement_details(heading, details, activities, footer):
         label_one, label_two = "CCE / 21st-century learning / HOTS", "Remedial / Enrichment"
     else:
         if existing_support:
-            remediation = f"Bimbing murid mengulang {topic.lower()} berpandukan bahagian Sokongan."
+            remediation = f"Bimbing murid mengulang tugasan berkaitan {topic.lower()} berpandukan bahagian Sokongan."
         else:
             aid = _first_material(materials)
             remediation = (
-                f"Bimbing murid mengulang {topic.lower()}" +
+                f"Bimbing murid mengulang tugasan berkaitan {topic.lower()}" +
                 (f" menggunakan {aid}." if aid else " secara berperingkat.")
             )
         if family == "ppki":
