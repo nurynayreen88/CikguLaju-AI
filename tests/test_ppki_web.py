@@ -433,6 +433,13 @@ class PpkiWebTest(unittest.TestCase):
             self.assertEqual(len(clips), 2)
             self.assertTrue(all(item["action"] == "Mainkan Rakaman" for item in clips))
         self.assertEqual(self.client.get(media, query_string={**choice, "lesson": "043"}).json["items"], [])
+        tempo = {**base_query, "unit": ppki.MANIPULATIVE_UNIT3, "lesson": "066"}
+        clip, = self.client.get(media, query_string=tempo).json["items"]
+        self.assertEqual((clip["type"], clip["action"]), ("audio", "Muat Turun Audio"))
+        self.assertIn("id=1DOe-RuYGUKyaoymT_8BgMCfsYZBN5fj-", clip["url"])
+        self.assertIn("80 dan 100 BPM", clip["title"])
+        for other in ({**tempo, "lesson": "065"}, {**tempo, "unit": ppki.MANIPULATIVE_UNIT2}):
+            self.assertEqual(self.client.get(media, query_string=other).json["items"], [])
         km_rpt = self.client.get(km_path)
         self.assertEqual(km_rpt.status_code, 200)
         self.assertIn(ppki.RPT_MANIPULATIVE_YEAR6_FILENAME, km_rpt.headers["Content-Disposition"])
@@ -442,6 +449,7 @@ class PpkiWebTest(unittest.TestCase):
         self.credits = 0
         self.assertEqual(self.client.get(path).status_code, 403)
         self.assertEqual(self.client.get(media, query_string=selected).status_code, 403)
+        self.assertEqual(self.client.get(media, query_string=tempo).status_code, 403)
 
     def test_year4_manipulative_rph_rpt_and_media(self):
         def lessons(numbers):
@@ -528,8 +536,29 @@ class PpkiWebTest(unittest.TestCase):
         self.assertEqual(result.status_code, 200)
         self.assertIn("KEMAHIRAN_MANIPULATIF_TAHUN_3", result.headers["Content-Disposition"])
         self.assertEqual(self.source_requests[-1][0], "rpt-manipulatif.pdf?year=3")
+        media = "/api/web/rph/extra-materials"
+        situations = (
+            "1PE_jh74ozM0dFQP7pgog0jKBCBxGSl5s",
+            "1ciXKlkIhdD_0PcszWGIgRCDi6t9RqsDc",
+            "1d-vr96Ik_Jr6PttY2h7pou1wqeGNa92A",
+            "1Ig0seAVuGqHJhLwRjoZrL8tYEKM40gJK",
+        )
+        for number, ids in (
+            ("062", ("1ssu077B9Tm2ItgGvSYvAZLJXjlakdWjb",)),
+            ("063", (*situations, "1HlKNJhtrp5ASu5NDaby9GUhMO9PnfWez")),
+            ("064", situations),
+        ):
+            response = self.client.get(media, query_string={**selected, "lesson": number})
+            self.assertEqual(response.status_code, 200)
+            for item, file_id in zip(response.json["items"], ids, strict=True):
+                self.assertEqual((item["type"], item["action"]), ("audio", "Muat Turun Audio"))
+                self.assertEqual(item["url"], "https://drive.usercontent.google.com/download?"
+                                 f"id={file_id}&export=download&confirm=t")
+        self.assertEqual(self.client.get(media, query_string={**selected, "lesson": "065"}).json["items"], [])
         self.paid = False
         self.assertEqual(self.client.get(rpt).status_code, 403)
+        self.credits = 0
+        self.assertEqual(self.client.get(media, query_string={**selected, "lesson": "063"}).status_code, 403)
 
     def test_manipulative_component_selection_and_existing_rpt(self):
         opts = "/api/options"
