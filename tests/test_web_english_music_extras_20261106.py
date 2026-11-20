@@ -122,6 +122,26 @@ class ExtraMaterialsWebTests(unittest.TestCase):
         self.assertIn("Buka Audio Sumber",static)
         self.assertNotIn('"/api/materials?"',static)
 
+    def test_music_project_with_no_track_number_requires_verified_download(self):
+        params = {"year": "4", "subject": "MUZIK", "unit": "x9fa647ef75e2", "lesson": "025"}
+        file_id = "1zouWfTYxs4ziN0KARob6Aln2m7K7qIEM"
+        title = "Audio Projek Kesenian Penggal Dua"
+        track = {"track": None, "title": title,
+                 "url": f"https://drive.google.com/file/d/{file_id}/view?usp=drivesdk",
+                 "download_url": f"https://drive.usercontent.google.com/download?id={file_id}&export=download"}
+        upstream = {"source": "telegram-provisional-subjects-2027-v1", "status": "DRAF",
+                    "available": True, "content_verified": False, "download_available": False,
+                    "links": [track]}
+        with self._account(), patch("web.native_telegram_extra_materials_20261106._json",
+                                    return_value=upstream):
+            response = self.client.get("/api/web/rph/extra-materials", query_string=params)
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.json["items"][0]["title"], title)
+            self.assertEqual(response.json["items"][0]["action"], "Muat Turun Audio")
+            track.pop("download_url")
+            rejected = self.client.get("/api/web/rph/extra-materials", query_string=params)
+            self.assertEqual(rejected.status_code, 503)
+
 
 if __name__=="__main__":
     unittest.main()
