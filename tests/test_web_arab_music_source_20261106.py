@@ -96,29 +96,35 @@ class DraftWebQA(unittest.TestCase):
     @patch("web.unified_rph_web._has_paid_access", return_value=True)
     @patch("web.unified_rph_web._account", return_value=({"telegram_user_id":55}, None))
     @patch("web.native_telegram_other_draft_client._read")
-    def test_only_reviewed_arabic_unit_one_can_be_ready(self, read, *_):
-        ready = [
-            {"value": f"{pdp:03d}", "label": f"PdP {pdp:03d} — أصوات الحروف",
-             "status": "READY", "formats": ["word"]}
-            for pdp in range(1, 13)
-        ]
-        read.return_value = {"source": "telegram-provisional-subjects-2027-v1",
-                             "status": "DRAF", "items": ready}
-        self.assertEqual(list_draft_lessons(2, "ARAB", "u01"), ready)
-        for year, unit in ((2, "u02"), (3, "u01")):
+    def test_only_reviewed_arabic_choices_can_be_ready(self, read, *_):
+        for unit, pdps in (
+            ("u01", range(1, 13)),
+            ("u02", (13, 14, 15, 16, 17, 19, 20, 23, 24, 25, 26, 27, 28)),
+        ):
+            ready = [
+                {"value": f"{pdp:03d}", "label": f"PdP {pdp:03d} — اللغة العربية",
+                 "status": "READY", "formats": ["word"]}
+                for pdp in pdps
+            ]
+            read.return_value = {"source": "telegram-provisional-subjects-2027-v1",
+                                 "status": "DRAF", "items": ready}
+            self.assertEqual(list_draft_lessons(2, "ARAB", unit), ready)
             with self.assertRaises(NativeRPHUnavailable):
-                list_draft_lessons(year, "ARAB", unit)
+                list_draft_lessons(3, "ARAB", unit)
 
-        read.return_value = {"available": True, "generator": "telegram-native",
-                             "status": "READY", "formats": ["word"]}
-        for item in ready:
+            read.return_value = {"available": True, "generator": "telegram-native",
+                                 "status": "READY", "formats": ["word"]}
+            for item in ready:
+                result = self.client.get("/api/web/rph/availability", query_string={
+                    **self.query, "unit": unit, "lesson": item["value"],
+                })
+                self.assertEqual(result.get_json()["status"], "READY")
+                self.assertEqual(result.get_json()["formats"], ["word"])
+        for unit, lesson in (("u01", "013"), ("u02", "018"), ("u02", "021"),
+                             ("u02", "022"), ("u02", "029")):
             result = self.client.get("/api/web/rph/availability",
-                                     query_string={**self.query, "lesson": item["value"]})
-            self.assertEqual(result.get_json()["status"], "READY")
-            self.assertEqual(result.get_json()["formats"], ["word"])
-        result = self.client.get("/api/web/rph/availability",
-                                 query_string={**self.query, "lesson": "013"})
-        self.assertEqual(result.status_code, 503)
+                                     query_string={**self.query, "unit": unit, "lesson": lesson})
+            self.assertEqual(result.status_code, 503)
 
 
 if __name__=="__main__":
