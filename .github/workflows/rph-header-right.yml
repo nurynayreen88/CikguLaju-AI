@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.12'
       - name: Install layout-test dependencies
         run: python -m pip install --disable-pip-version-check pytest python-docx pypdf reportlab flask requests python-dotenv
       - name: Verify Word and PDF layout and curriculum retention
