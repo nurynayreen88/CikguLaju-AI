@@ -92,6 +92,43 @@ class PpkiWebTest(unittest.TestCase):
         self.assertEqual(self.client.get(opts, query_string={"year": 2, "kind": "pdp", "subject": ppki.SUBJECT,
                                                              "unit": "u01"}).status_code, 400)
 
+    def test_year2_media_match_exact_lessons(self):
+        def unit_record(unit, numbers):
+            return {
+                "value": unit, "label": unit,
+                "lessons": [{"value": f"{number:03d}", "label": f"PdP {number:03d}",
+                             "formats": ["word", "pdf"], "textbook_ref": "Buku Teks"}
+                            for number in numbers],
+            }
+
+        self.catalog["additional_units"] = [unit_record(ppki.UNIT3, ppki.UNIT_LESSONS[ppki.UNIT3])]
+        self.catalog["kemahiran_manipulatif"] = [
+            unit_record(unit, numbers) for unit, numbers in ppki.MANIPULATIVE_UNIT_LESSONS.items()
+        ]
+        path = "/api/web/rph/extra-materials"
+        rasa = {**self.selection, "unit": ppki.UNIT3, "lesson": "015"}
+        self.paid = False
+        for number in range(15, 19):
+            response = self.client.get(path, query_string={**rasa, "lesson": f"{number:03d}"})
+            self.assertEqual(response.status_code, 200)
+            record, = response.json["items"]
+            self.assertEqual((record["type"], record["action"]), ("audio", "Muat Turun Audio"))
+            self.assertIn("id=19tKkCMYNtEd49dGOtnnA3338vQXRtY4C", record["url"])
+        for unit, number, action, source in (
+            (ppki.MANIPULATIVE_UNIT1, "050", "Dengar Audio", "riamusicstore.com/product/sayang-kinabalu/"),
+            (ppki.MANIPULATIVE_UNIT2, "055", "Mainkan Rakaman", "youtube.com/watch?v=afPw9Bry2rA"),
+        ):
+            response = self.client.get(path, query_string={**rasa, "unit": unit, "lesson": number})
+            record, = response.json["items"]
+            self.assertEqual(record["action"], action)
+            self.assertIn(source, record["url"])
+        for wrong in (self.selection, {**rasa, "unit": ppki.UNIT4},
+                      {**rasa, "unit": ppki.MANIPULATIVE_UNIT1, "lesson": "051"}):
+            self.assertEqual(self.client.get(path, query_string=wrong).json["items"], [])
+        self.assertTrue(all(request == ("catalog", None) for request in self.source_requests))
+        self.credits = 0
+        self.assertEqual(self.client.get(path, query_string=rasa).status_code, 403)
+
     def test_year3_exact_pdp_rph_and_rpt_access(self):
         self.catalog_year3 = {
             **self.catalog, "year": 3,
@@ -152,6 +189,12 @@ class PpkiWebTest(unittest.TestCase):
         selection = {**selection, "unit": ppki.UNIT3, "lesson": "039"}
         self.assertEqual(self.client.get("/api/web/rph/pdf", query_string=selection).status_code, 200)
         self.assertEqual(self.client.get(materials, query_string=selection).json["items"], [])
+        can_mali_can = self.client.get(materials, query_string={**selection, "lesson": "036"}).json
+        audio, video = can_mali_can["items"]
+        self.assertEqual((audio["type"], audio["action"]), ("audio", "Dengar Audio"))
+        self.assertTrue(audio["url"].endswith("Chan-Mali-Chan-Flexi5-Sample-Sound.mp3"))
+        self.assertEqual((video["type"], video["action"]), ("video", "Mainkan Rakaman"))
+        self.assertTrue(video["url"].endswith("HmPxwUhtehs"))
         self.assertEqual(self.client.get("/api/web/rph/availability",
             query_string={**selection, "unit": ppki.UNIT}).status_code, 503)
         listing = self.client.get("/api/rpt/2027/catalog").json
