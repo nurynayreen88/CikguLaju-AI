@@ -13,7 +13,7 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Mm, Pt, RGBColor
 
-from dlp_year2_rph import _pdf, _word
+from dlp_year2_rph import _pdf, _word, science_class_fields
 from tools.sains_y5_83_textbook_original_sp_pages_20261107 import checked_book_pages
 from tools.sains_y5_kssr2017_official_sp_statements_20261107 import checked_statements
 from web.sains_y5_83_activity_bank_draf_20261107 import BANK
@@ -309,11 +309,6 @@ def export_rpt(path, weeks, rows):
 
 def render_rph(stream, row, renderer, *, teacher=None):
     teacher = teacher or {}
-    session = "  ".join(
-        f"{label}: {teacher.get(key) or '______'}"
-        for key, label in (("rph_class", "Kelas"), ("rph_date", "Tarikh"),
-                           ("rph_time", "Masa"), ("rph_students", "Bil. murid"))
-    )
     reflection = teacher.get("rph_teacher_reflection") or (
         "___ daripada ___ murid mencapai objektif. Tindakan susulan: ____________________"
     )
@@ -322,7 +317,7 @@ def render_rph(stream, row, renderer, *, teacher=None):
         ("Unit", row["unit"]),
         ("Nombor dan tempoh", f"PdP {row['id']:03d} · {row['minutes']} minit"),
         ("Julat RPT", row["dates"]),
-        ("Kelas, tarikh dan masa", session),
+        *science_class_fields(teacher, english=False, prefix="rph_"),
         ("Standard Kandungan", f"{row['sk']} {row['sk_text']}"),
         ("Standard Pembelajaran", f"{row['sp']} {row['sp_text']}"),
         ("Buku teks", f"Buku Teks Sains Tahun 5 SK, m/s {row['pages']}"),

@@ -332,8 +332,10 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                     if fmt == "word":
                         doc = Document(BytesIO(result.data))
                         fields = {a.text: b.text for a, b in (row.cells for row in doc.tables[0].rows)}
-                        self.assertIn(teacher["class"], fields["Class / date / time"])
-                        self.assertIn(teacher["date"], fields["Class / date / time"])
+                        self.assertEqual(fields["Class"], teacher["class"])
+                        self.assertEqual(fields["Date"], teacher["date"])
+                        self.assertEqual(fields["Time"], teacher["time"])
+                        self.assertEqual(fields["Number of pupils"], teacher["students"])
                         self.assertEqual(doc.tables[-1].rows[0].cells[1].text, teacher["reflection"])
                     else:
                         page, = PdfReader(BytesIO(result.data)).pages
@@ -369,7 +371,8 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         doc = Document(BytesIO(self.documents[-1][1]))
         self.assertEqual(doc.paragraphs[2].text, "Pemerhatian kualitatif dengan deria")
         fields = {a.text: b.text for a, b in (row.cells for row in doc.tables[0].rows)}
-        self.assertIn("Bestari", fields["Kelas, tarikh dan masa"])
+        self.assertIn("Bestari", fields["Kelas"])
+        self.assertTrue(all(fields[label] for label in ("Tarikh", "Masa", "Bilangan Murid")))
         self.assertNotIn("Julat RPT", fields)
         next_word, _ = self._select("m", "01", "DLP-MATH-Y6-L01")
         self.click(word)

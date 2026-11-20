@@ -13,7 +13,7 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Mm, Pt, RGBColor
 
-from dlp_year2_rph import _pdf, _word
+from dlp_year2_rph import _pdf, _word, science_class_fields
 from web.sains_unit_awal import LESSONS
 from web.sains_y6_84_activity_bank_draf_20261107 import BANK
 
@@ -311,17 +311,12 @@ def export_rpt(path, weeks, rows):
 
 def render_rph(stream, row, renderer, *, teacher=None):
     teacher = teacher or {}
-    session = "  ".join(
-        f"{label}: {teacher.get(key) or '______'}"
-        for key, label in (("class", "Kelas"), ("date", "Tarikh"),
-                           ("time", "Masa"), ("students", "Bil. murid"))
-    )
     heading = ("Rancangan Pengajaran Harian", "Sains · Tahun 6 SK · 2027", row["title"])
     details = [
         ("Unit", row["unit"]),
         ("Nombor dan tempoh", f"PdP {row['id']:03d} · {row['minutes']} minit"),
         ("Julat RPT", row["dates"]),
-        ("Kelas, tarikh dan masa", session),
+        *science_class_fields(teacher, english=False),
         ("Standard Kandungan", f"{row['sk']} {row['sk_text']}"),
         ("Standard Pembelajaran", " · ".join(
             f"{code} {text}" for code, text in zip(row["standards"], row["sp_texts"], strict=True)
