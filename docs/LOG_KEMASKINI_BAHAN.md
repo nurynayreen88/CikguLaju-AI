@@ -2,6 +2,7 @@
 
 | Tarikh | Bahan / perubahan | Semakan | Status |
 | --- | --- | --- | --- |
+| 2026-11-20 | Tambah PPKI Unit 1 Mari Belajar PdP 030–039, agihan 39 PdP Unit 1–5 dan Word Bahasa Arab Tahun 2 PdP 039–040. | Semak turutan Unit 1–5, keserasian penjana lama dan SHA-256 RPT Arab A/B. | DALAM SEMAKAN. Terbitkan Web dahulu. |
 | 2026-11-20 | Tambah pilihan PPKI SK 5.2 PdP 028–029 dan Word Bahasa Arab Tahun 2 PdP 037–038. Selaraskan RPT Bahasa Arab Kumpulan A/B. | Ujian menerima katalog PPKI Unit 5 versi empat dan enam PdP. Sahkan sempadan Bahasa Arab dipadankan mengikut unit. | DALAM SEMAKAN. Terbitkan Web sebelum penjana. |
 | 2026-11-20 | Terima PPKI Tahun 2 Unit 5 bagi PdP 024–027 dan agihan 27 PdP Unit 2–5. Selaraskan Word dan RPT A/B Bahasa Arab Tahun 2 PdP 034–036. | 13 ujian Web dan ujian aliran PPKI dengan penjana setempat. | DALAM SEMAKAN. Terbitkan Web sebelum penjana. |
 | 2026-11-20 | Selaraskan RPT A/B dan pemilih Word Bahasa Arab Tahun 2 untuk PdP 030 dan 032 dengan SP 2.2.2 dan 2.2.4. | Tujuh ujian pemilih Web lulus. PDF mempunyai hash sepadan dengan penjana dan halaman muka depan kekal sepadan. | DALAM SEMAKAN. Terbitkan Web sebelum Word baharu pada penjana. |
