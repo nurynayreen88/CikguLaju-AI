@@ -1,30 +1,31 @@
-# RPH Bahasa Arab Tahun 3 — PdP 034 (DRAF / BELUM READY)
+# RPH Bahasa Arab Tahun 3 — PdP 034 (DRAF INDEKS RPT 2027)
 
 **Tahun:** 3 | **Subjek:** Bahasa Arab KSSR Semakan 2017 | **Unit:** الألوان حولنا
-**Fokus PdP:** Mencantum dan menulis segmen bunyi
-**SK/SP cadangan:** 3.1 / 3.1.1; kod wujud dalam DSKP Tahun 3, tetapi padanan tepat aktiviti h66 dan RPT 2027 masih menunggu semakan berasingan.
-**Tarikh / masa / kelas:** Diisi guru mengikut kelas, negeri, waktu mula/tamat dan jadual sebenar.
-**Kosa kata / ayat:** ثَلَاثَة، خَرُوف، حَلِيب، ذَهَب
-**Objektif pembelajaran:** Membina dua perkataan daripada segmen dan menyalin dengan bentuk huruf betul.
-**Kriteria kejayaan:** Sekurang-kurangnya sasaran dalam objektif; guru merekod murid perlu bimbingan.
 
-**Set induksi:** Guru memaparkan segmen huruf yang belum disusun.
+**Fokus PdP:** كتابة حرف الذال منفصلًا ومتّصلًا بما قبله
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memodelkan cara menyambung potongan huruf pada permainan h66 dan menunjukkan jarak/arah tulisan.
+**DSKP SK/SP:** 3.1 / 3.1.1
 
-**Aktiviti 2 — Aplikasi murid:** Murid memasangkan kad untuk menghasilkan dua kata, menyalinnya dan melakukan semakan ejaan silang.
+**Objektif pembelajaran:** أن يكتب التلميذ حرف الذال في ثلاثة مواضع صحيحة على الأقل من أصل أربعة.
 
-**Pengukuhan / Penilaian (PBD):** Dua binaan kata dan tulisan dinilai.
+**Kriteria kejayaan:** يرسم التلميذ ثلاثة أشكال على الأقل مع وضع النقطة وفصل ما بعد الذال.
 
-**Penutup:** Murid menulis semula satu huruf sukar dengan tepat.
+**Set induksi:** يعرض المعلّم حرف الذال منفصلًا. يتتبّع التلاميذ شكله في الهواء ويشيرون إلى النقطة.
 
-**BBM:** Buku Teks Bahasa Arab Tahun 3 h66, kad huruf/warna, gambar dan borang semak PBD.
-**Refleksi guru:** ____ / ____ murid menguasai objektif; susulan: ________________.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** يكتب المعلّم نماذج الصفحة ويبيّن اتصال الذال بما قبله حيث يصحّ ذلك. ينسخ التلاميذ النماذج ببطء.
 
-**Buku Teks:** DBP/KPM KSSR Semakan 2017, Cetakan Pertama 2018 ISBN 978-983-49-2033-3, Unit 3 halaman bercetak **66**, PDF asal: https://drive.google.com/file/d/1U-j2TPeVTyLaZbU2qGDb9jmf53KAwNNH/view.
-**Lokasi dalam PDF:** Halaman PDF indeks 0-based = h66+7 (73), bercetak tetap h66. PDF ini imbasan dan bukan bukti teks boleh dicari.
-**DSKP asal:** https://drive.google.com/file/d/1VQcCrSyo-zmAndvAFv9pScQcLT-DRl00/view.
-**RPT rujukan 2026:** https://anyflip.com/zxzlm/vmip/basic.
-**Jejak semakan:** Halaman asal unit diperiksa secara visual, aktiviti dicadangkan mengikut imej dan kosa kata; kod SP individual dicadangkan daripada DSKP (belum disahkan sebagai SP tercetak pada imej h66).
-**Batas pelepasan:** Belum RPT 2027 Kumpulan A/B, belum kelulusan guru individu, belum ujian penuh bahasa Arab/Telegram-Web, tiada perubahan produksi.
-**Status:** DRAF_SEMAK / BELUM READY.
+**Aktiviti 2 — Aplikasi murid:** يكتب التلاميذ أشكال الذال على ألواح صغيرة. يتبادلون المراجعة مستعينين ببطاقة النموذج.
+
+**Pengukuhan / Penilaian (PBD):** يكتب التلميذ أربعة أمثلة فرديًّا. يتحقّق المعلّم من الشكل والاتصال الصحيح والنقطة.
+
+**Penutup:** يصحّح التلميذ مثالًا واحدًا ويكتب الذال منفصلًا مرّة أخرى.
+
+**BBM:** الكتاب المدرسي، ألواح، بطاقات أشكال.
+
+**Refleksi guru:** بلغ هدف الدرس ____ من ____ تلميذًا. إجراء المتابعة ____________________.
+
+**Buku Teks:** DBP/KPM, cetakan 2018, ISBN 978-983-49-2033-3, Unit 3 halaman bercetak 68. https://www.scribd.com/document/438677752/Bahasa-Arab-Tahun-3-Teks-KSSR-Semakan
+
+**DSKP asal:** https://asiemodel.net/wp-content/uploads/2022/08/011-DSKP-KSSR-SEMAKAN-2017-BAHASA-ARAB-TAHUN-3.pdf
+
+**Status:** Indeks tarikh RPT 2027 kekal draf. Word PdP menggunakan data Arab yang disemak.
