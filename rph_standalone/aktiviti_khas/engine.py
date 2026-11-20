@@ -194,14 +194,13 @@ def _teacher(fields):
         day = ("Isnin", "Selasa", "Rabu", "Khamis", "Jumaat", "Sabtu", "Ahad")[actual.weekday()]
         dt = actual.strftime("%d/%m/%Y")
     else:
-        dt, day = "__________", "__________"
+        day = ""
     if tm and (len(tm) > 12 or not re.fullmatch(
             r"(?:[01]\d|2[0-3]):[0-5]\d\s*-\s*(?:[01]\d|2[0-3]):[0-5]\d", tm)):
         raise ValueError("Invalid time range")
     if students and (not re.fullmatch(r"[1-9]\d{0,2}", students) or int(students) > 200):
         raise ValueError("Invalid pupil number")
-    return {"class": cls or "________", "date": dt, "day": day,
-            "time": tm or "________", "students": students or "_____"}
+    return {"class": cls, "date": dt, "day": day, "time": tm, "students": students}
 
 
 def fields_for(row, year, teacher, subject=None):
