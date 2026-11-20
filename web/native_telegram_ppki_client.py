@@ -31,7 +31,7 @@ MANIPULATIVE_UNIT_LESSONS = {
     MANIPULATIVE_UNIT3: range(64, 72),
 }
 YEAR = 2
-YEARS = (2, 3)
+YEARS = (2, 3, 4)
 YEAR3_LESSONS = {
     UNIT1: range(1, 18), UNIT: range(18, 36), UNIT3: range(36, 40),
     UNIT4: range(40, 44), UNIT5: range(44, 50),
@@ -41,6 +41,7 @@ YEAR3_MANIPULATIVE_UNIT_LESSONS = {
     MANIPULATIVE_UNIT2: range(56, 62),
     MANIPULATIVE_UNIT3: range(62, 74),
 }
+YEAR4_LESSONS = {UNIT1: range(1, 10)}
 FORMATS = ("word", "pdf")
 RPT_CODE = "pengurusan_kehidupan_ppki"
 RPT_MANIPULATIVE_CODE = "kemahiran_manipulatif_ppki"
@@ -81,8 +82,8 @@ def _validate_unit(unit, unit_id, accepted_lessons):
 def catalog(year=YEAR):
     if year not in YEARS:
         raise ValueError("Unknown PPKI year")
-    direct_units = UNIT_LESSONS if year == YEAR else YEAR3_LESSONS
-    manipulative_units = MANIPULATIVE_UNIT_LESSONS if year == YEAR else YEAR3_MANIPULATIVE_UNIT_LESSONS
+    direct_units = {YEAR: UNIT_LESSONS, 3: YEAR3_LESSONS, 4: YEAR4_LESSONS}[year]
+    manipulative_units = {YEAR: MANIPULATIVE_UNIT_LESSONS, 3: YEAR3_MANIPULATIVE_UNIT_LESSONS}.get(year, {})
     first_unit = next(iter(direct_units))
     try:
         path = "catalog" if year == YEAR else f"catalog?year={year}"
@@ -159,6 +160,8 @@ def get_options(kind, year, subject=None, component=None, unit=None):
 def accepted_unit(year, unit):
     if year == 3:
         return unit in YEAR3_LESSONS or unit in YEAR3_MANIPULATIVE_UNIT_LESSONS
+    if year == 4:
+        return unit in YEAR4_LESSONS
     return year == YEAR and (unit in UNIT_LESSONS or unit in MANIPULATIVE_UNIT_LESSONS)
 
 
@@ -199,6 +202,8 @@ def request_rpt(*, combined=False, manipulative=False, year=YEAR):
     if year == 3:
         path = "rpt-manipulatif.pdf" if manipulative else "rpt.pdf"
         return _document(f"{path}?year=3", "pdf")
+    if year == 4 and not manipulative:
+        return _document("rpt.pdf?year=4", "pdf")
     if year != YEAR:
         raise ValueError("Invalid year for PPKI RPT")
     if manipulative:

@@ -26,6 +26,7 @@ class PpkiWebTest(unittest.TestCase):
                          "textbook_ref": "Buku Teks hlm. 21"} for n in range(1, 15)],
         }
         self.catalog_year3 = None
+        self.catalog_year4 = None
         self.pdf = b"%PDF-1.4\n" + b"%" * 9000
         self.docx = BytesIO()
         with ZipFile(self.docx, "w") as doc:
@@ -55,7 +56,11 @@ class PpkiWebTest(unittest.TestCase):
             if self.catalog_year3 is None:
                 raise ppki.NativeRPHUnavailable("Year 3 source is not deployed")
             return json.dumps(self.catalog_year3).encode()
-        if path in ("rpt.pdf", "rpt-current.pdf", "rpt-manipulatif.pdf", "rpt.pdf?year=3", "rpt-manipulatif.pdf?year=3"):
+        if path == "catalog?year=4":
+            if self.catalog_year4 is None:
+                raise ppki.NativeRPHUnavailable("Year 4 source is not deployed")
+            return json.dumps(self.catalog_year4).encode()
+        if path in ("rpt.pdf?year=4", "rpt.pdf", "rpt-current.pdf", "rpt-manipulatif.pdf", "rpt.pdf?year=3", "rpt-manipulatif.pdf?year=3"):
             return self.pdf
         return self.docx.getvalue() if payload["format"] == "word" else self.pdf
 
@@ -73,7 +78,7 @@ class PpkiWebTest(unittest.TestCase):
             self.assertEqual(response.get_json()[0]["value"], token)
         self.assertEqual(len(response.get_json()), 14)
         self.assertEqual(self.client.get(opts, query_string={"year": 3, **queries[0][0]}).status_code, 503)
-        self.assertEqual(self.client.get(opts, query_string={"year": 4, **queries[0][0]}).status_code, 400)
+        self.assertEqual(self.client.get(opts, query_string={"year": 4, **queries[0][0]}).status_code, 503)
         self.assertEqual(self.client.get(opts, query_string={"year": 2, "kind": "pdp", "subject": ppki.SUBJECT,
                                                              "unit": "u01"}).status_code, 400)
 
@@ -153,6 +158,28 @@ class PpkiWebTest(unittest.TestCase):
         self.assertIn("49 PdP Unit 1–5", entry["years"][1]["note"])
         self.assertIn("TAHUN_3_UNIT_1_2_3_4_5_2027.pdf", self.client.get(url).headers["Content-Disposition"])
 
+
+    def test_year4_first_pengurusan_diri_unit(self):
+        self.catalog_year4 = {
+            **self.catalog, "year": 4,
+            "units": [{"value": ppki.UNIT1, "label": "Unit 1 · Bertamu di Inap Desa"}],
+            "lessons": [{"value": f"{number:03d}", "label": f"PdP {number:03d}",
+                         "formats": ["word", "pdf"], "textbook_ref": "Buku Teks"}
+                        for number in range(1, 10)],
+        }
+        selected = {"year": 4, "subject": ppki.SUBJECT, "unit": ppki.UNIT1, "lesson": "009"}
+        opts = self.client.get("/api/options", query_string={
+            "year": 4, "kind": "pdp", "subject": ppki.SUBJECT, "unit": ppki.UNIT1,
+        })
+        self.assertEqual([row["value"] for row in opts.json], [f"{n:03d}" for n in range(1, 10)])
+        self.assertEqual(self.client.get("/api/web/rph/word", query_string=selected).status_code, 200)
+        self.assertEqual(self.client.get("/api/web/rph/availability",
+                         query_string={**selected, "lesson": "010"}).status_code, 503)
+        rpt = self.client.get(f"/api/rpt/2027/all/{ppki.RPT_CODE}/4.pdf")
+        self.assertEqual(rpt.status_code, 200)
+        self.assertIn("TAHUN_4_UNIT_1", rpt.headers["Content-Disposition"])
+        self.assertEqual(self.source_requests[-1][0], "rpt.pdf?year=4")
+        self.assertEqual(self.client.get(f"/api/rpt/2027/all/{ppki.RPT_MANIPULATIVE_CODE}/4.pdf").status_code, 404)
 
     def test_year3_manipulative_rph_and_rpt(self):
         self.catalog_year3 = {
