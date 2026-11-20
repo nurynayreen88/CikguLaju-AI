@@ -3138,12 +3138,11 @@ def _rph_session_meta(s):
 
 
 def _rph_blank_or_value(value, width=28):
-    return str(value).strip() if str(value or '').strip() else ('_' * width)
+    return str(value or '').strip()
 
 def _rph_attendance_value(total):
-    """Show blank attendance first, followed by the teacher-entered class total, e.g. ____ / 30."""
-    total = str(total or '').strip()
-    return f'________ / {total}' if total else '________ / ________'
+    """Print the teacher-entered class size, if supplied."""
+    return _rph_blank_or_value(total)
 
 def _parse_rph_sections(ai_text):
     """Parse Gemini RPH headings into stable fields for table rendering."""
@@ -3206,12 +3205,12 @@ def _create_rph_word(doc, section, s, ai_text, path):
     rr = p.add_run('RANCANGAN PENGAJARAN HARIAN'); rr.bold=True; rr.font.size=Pt(15)
     p.paragraph_format.space_after = Pt(6)
 
-    def add_row(table, label, value):
+    def add_row(table, label, value, *, blank=False):
         cells = table.add_row().cells
         cells[0].width = Cm(4.4); cells[1].width = Cm(12.5)
         p0=cells[0].paragraphs[0]; p0.paragraph_format.space_after=Pt(0); x=p0.add_run(label); x.bold=True
         p1=cells[1].paragraphs[0]; p1.paragraph_format.space_after=Pt(0)
-        parts=(value or '—').split('\n')
+        parts=(value or ('' if blank else '—')).split('\n')
         p1.add_run(parts[0])
         for part in parts[1:]: p1.add_run('\n'+part)
         for c in cells:
@@ -3219,7 +3218,10 @@ def _create_rph_word(doc, section, s, ai_text, path):
 
     table=doc.add_table(rows=0, cols=2); table.alignment=WD_TABLE_ALIGNMENT.CENTER
     for label in ['MATA PELAJARAN','TAHUN/TINGKATAN','TARIKH','HARI','MASA','KELAS','BILANGAN MURID','TAJUK','STANDARD KANDUNGAN','STANDARD PEMBELAJARAN','OBJEKTIF PEMBELAJARAN','KRITERIA KEJAYAAN','PENGETAHUAN SEDIA ADA','BAHAN BANTU MENGAJAR','EMK / NILAI','KBAT / PAK21','PENTAKSIRAN']:
-        add_row(table,label.title() if label not in ('EMK / NILAI','KBAT / PAK21') else label, (_rph_attendance_value(rph.get(label,'')) if label == 'BILANGAN MURID' else _rph_blank_or_value(rph.get(label,''))) if label in ('TARIKH','HARI','MASA','KELAS','BILANGAN MURID') else rph.get(label,''))
+        is_metadata = label in ('TARIKH', 'HARI', 'MASA', 'KELAS', 'BILANGAN MURID')
+        value = _rph_blank_or_value(rph.get(label)) if is_metadata else rph.get(label, '')
+        add_row(table, label.title() if label not in ('EMK / NILAI', 'KBAT / PAK21') else label,
+                value, blank=is_metadata)
     doc.add_paragraph().paragraph_format.space_after=Pt(1)
     t2=doc.add_table(rows=1, cols=3); t2.alignment=WD_TABLE_ALIGNMENT.CENTER
     for i,h in enumerate(['Fasa','Aktiviti Pengajaran & Pembelajaran','Catatan']):
@@ -6416,14 +6418,14 @@ def webhook():
                 # legacy yang benar-benar belum mempunyai rph_time.
                 if (s.get('rph_time') or '').strip():
                     s['waiting'] = 'rph_students'
-                    send(cid,'👥 <b>Masukkan jumlah murid dalam kelas</b>\nContoh: <code>30</code>\nDalam RPH akan dipaparkan sebagai <code>________ / 30</code> supaya guru boleh isi bilangan murid yang hadir.\nTaip <code>-</code> jika mahu biarkan kosong.')
+                    send(cid,'👥 <b>Masukkan jumlah murid dalam kelas</b>\nContoh: <code>30</code>\nDalam RPH, jumlah ini dipaparkan sebagai <code>30</code>.\nTaip <code>-</code> jika mahu biarkan kosong.')
                 else:
                     s['waiting'] = 'rph_time'
                     send(cid,'⏰ <b>Masukkan masa PdP</b>\nContoh: <code>8:00 pagi - 9:00 pagi</code>')
             elif waiting == 'rph_time':
                 s['rph_time'] = '' if text in ('-','—') else text
                 s['waiting'] = 'rph_students'
-                send(cid,'👥 <b>Masukkan jumlah murid dalam kelas</b>\nContoh: <code>30</code>\nDalam RPH akan dipaparkan sebagai <code>________ / 30</code> supaya guru boleh isi bilangan murid yang hadir.\nTaip <code>-</code> jika mahu biarkan kosong.')
+                send(cid,'👥 <b>Masukkan jumlah murid dalam kelas</b>\nContoh: <code>30</code>\nDalam RPH, jumlah ini dipaparkan sebagai <code>30</code>.\nTaip <code>-</code> jika mahu biarkan kosong.')
             elif waiting == 'rph_students':
                 s['rph_students'] = '' if text in ('-','—') else text
                 s.pop('waiting',None)
@@ -10070,12 +10072,11 @@ def _rph_session_meta(s):
 
 
 def _rph_blank_or_value(value, width=28):
-    return str(value).strip() if str(value or '').strip() else ('_' * width)
+    return str(value or '').strip()
 
 def _rph_attendance_value(total):
-    """Show blank attendance first, followed by the teacher-entered class total, e.g. ____ / 30."""
-    total = str(total or '').strip()
-    return f'________ / {total}' if total else '________ / ________'
+    """Print the teacher-entered class size, if supplied."""
+    return _rph_blank_or_value(total)
 
 def _parse_rph_sections(ai_text):
     """Parse Gemini RPH headings into stable fields for table rendering."""
@@ -10257,12 +10258,12 @@ def _create_rph_word(doc, section, s, ai_text, path):
     rr = p.add_run(_rph_title(s)); rr.bold=True; rr.font.size=Pt(15)
     p.paragraph_format.space_after = Pt(6)
 
-    def add_row(table, label, value):
+    def add_row(table, label, value, *, blank=False):
         cells = table.add_row().cells
         cells[0].width = Cm(4.4); cells[1].width = Cm(12.5)
         p0=cells[0].paragraphs[0]; p0.paragraph_format.space_after=Pt(0); x=p0.add_run(label); x.bold=True
         p1=cells[1].paragraphs[0]; p1.paragraph_format.space_after=Pt(0)
-        parts=(value or '—').split('\n')
+        parts=(value or ('' if blank else '—')).split('\n')
         p1.add_run(parts[0])
         for part in parts[1:]: p1.add_run('\n'+part)
         for c in cells:
@@ -10278,7 +10279,8 @@ def _create_rph_word(doc, section, s, ai_text, path):
             value = _rph_blank_or_value(value)
         elif pi_primary and label == 'STANDARD PEMBELAJARAN':
             value = _dedup_standard_lines_v25216(value).replace('<br/>', '\n')
-        add_row(table, _rph_display_label(s, label), _rph_display_value(s, label, value))
+        add_row(table, _rph_display_label(s, label), _rph_display_value(s, label, value),
+                blank=label in ('TARIKH', 'HARI', 'MASA', 'KELAS', 'BILANGAN MURID'))
     doc.add_paragraph().paragraph_format.space_after=Pt(1)
     t2=doc.add_table(rows=1, cols=3); t2.alignment=WD_TABLE_ALIGNMENT.CENTER
     activity_header, phase_labels, tail_labels = _rph_table_labels(s, pi_primary)
@@ -15730,7 +15732,7 @@ def callback(cid, d):
             ss.pop('waiting',None)
             return preview_v3(cid,ss,ss.get('rph_gen_cb') or 'generate_selected_material')
         ss['waiting']='rph_students'
-        send(cid,f'✅ Kelas: <b>{html.escape(class_value)}</b>\n\n👥 Bilangan murid belum disimpan untuk kelas ini.\nMasukkan jumlah murid, contoh <code>30</code>.\nDalam RPH akan dipaparkan sebagai <code>________ / 30</code>.')
+        send(cid,f'✅ Kelas: <b>{html.escape(class_value)}</b>\n\n👥 Bilangan murid belum disimpan untuk kelas ini.\nMasukkan jumlah murid, contoh <code>30</code>.\nDalam RPH, jumlah ini dipaparkan sebagai <code>30</code>.')
 
     elif d == 'rphclass_manual':
         ss=state.setdefault(cid,{})
@@ -15748,7 +15750,7 @@ def callback(cid, d):
         ss=state.setdefault(cid,{})
         ss['rph_class']=str(ss.pop('pending_rph_class','') or '')
         ss['waiting']='rph_students'
-        send(cid,'👥 <b>Masukkan jumlah murid dalam kelas</b>\nContoh: <code>30</code>\nDalam RPH akan dipaparkan sebagai <code>________ / 30</code> supaya guru boleh isi bilangan murid yang hadir.\nTaip <code>-</code> jika mahu biarkan kosong.')
+        send(cid,'👥 <b>Masukkan jumlah murid dalam kelas</b>\nContoh: <code>30</code>\nDalam RPH, jumlah ini dipaparkan sebagai <code>30</code>.\nTaip <code>-</code> jika mahu biarkan kosong.')
 
     elif d == 'rph_generate_local':
         ss=state.setdefault(cid,{})
@@ -16555,14 +16557,14 @@ def webhook():
                 # legacy yang benar-benar belum mempunyai rph_time.
                 if (s.get('rph_time') or '').strip():
                     s['waiting'] = 'rph_students'
-                    send(cid,'👥 <b>Masukkan jumlah murid dalam kelas</b>\nContoh: <code>30</code>\nDalam RPH akan dipaparkan sebagai <code>________ / 30</code> supaya guru boleh isi bilangan murid yang hadir.\nTaip <code>-</code> jika mahu biarkan kosong.')
+                    send(cid,'👥 <b>Masukkan jumlah murid dalam kelas</b>\nContoh: <code>30</code>\nDalam RPH, jumlah ini dipaparkan sebagai <code>30</code>.\nTaip <code>-</code> jika mahu biarkan kosong.')
                 else:
                     s['waiting'] = 'rph_time'
                     send(cid,'⏰ <b>Masukkan masa PdP</b>\nContoh: <code>8:00 pagi - 9:00 pagi</code>')
             elif waiting == 'rph_time':
                 s['rph_time'] = '' if text in ('-','—') else text
                 s['waiting'] = 'rph_students'
-                send(cid,'👥 <b>Masukkan jumlah murid dalam kelas</b>\nContoh: <code>30</code>\nDalam RPH akan dipaparkan sebagai <code>________ / 30</code> supaya guru boleh isi bilangan murid yang hadir.\nTaip <code>-</code> jika mahu biarkan kosong.')
+                send(cid,'👥 <b>Masukkan jumlah murid dalam kelas</b>\nContoh: <code>30</code>\nDalam RPH, jumlah ini dipaparkan sebagai <code>30</code>.\nTaip <code>-</code> jika mahu biarkan kosong.')
             elif waiting == 'rph_students':
                 s['rph_students'] = '' if text in ('-','—') else text
                 s.pop('waiting',None)
@@ -20451,8 +20453,7 @@ def _worksheet_math2_contract_v2346(state):
 # === v23.61 RPH SEMANTIC + LANGUAGE + PAGINATION REPAIR ===
 def _rph_attendance_value(total):
     """Print the teacher-entered class size directly."""
-    total=str(total or '').strip()
-    return total if total else '________________'
+    return _rph_blank_or_value(total)
 
 def _rph_selected_sp_pairs(s):
     """Return only Learning Standards actually selected/confirmed in the flow."""

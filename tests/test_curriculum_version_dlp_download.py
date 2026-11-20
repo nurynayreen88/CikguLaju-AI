@@ -85,6 +85,25 @@ class DlpDownloadTests(unittest.TestCase):
         self.assertEqual(self.download("pdf", teacher=self.teacher | {"reflection": "x\ny\nz\n1\n2\n3\n4"}).status_code, 400)
         self.assertEqual(self.client.post(self.path + "/render", json={}).status_code, 401)
 
+    def test_unfilled_class_details_stay_blank_in_word_and_pdf(self):
+        teacher = dict.fromkeys(("date", "time", "class", "students"), "")
+        mathematics = {"year": 2, "subject": "MATH_DLP", "unit": "04",
+                       "lesson": "DLP-MAT-Y2-U04-01"}
+        for selection, labels in (
+            (self.selection, ("Date", "Time", "Class", "Number of pupils")),
+            (mathematics, ("Date", "Day", "Time", "Class", "Number of pupils")),
+        ):
+            with self.subTest(subject=selection["subject"]):
+                word = self.download("word", selection, teacher)
+                self.assertEqual(word.status_code, 200)
+                doc = Document(BytesIO(word.data))
+                fields = {left.text: right.text for left, right in (row.cells for row in doc.tables[0].rows)}
+                self.assertEqual({key: fields[key] for key in labels}, dict.fromkeys(labels, ""))
+                pdf = self.download("pdf", selection, teacher)
+                self.assertEqual(pdf.status_code, 200)
+                text = " ".join(PdfReader(BytesIO(pdf.data)).pages[0].extract_text().split())
+                self.assertIn(" ".join(labels), text)
+
     def test_science_lesson_numbers_standards_and_minutes_match_the_rpt(self):
         planned = Path(__file__).resolve().parents[1] / "rpt_2027" / "dlp"
         rpt = Document(planned / "CikguLaju_RPT_DLP_2027_Science_Year_2.docx")

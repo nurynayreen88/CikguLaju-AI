@@ -13,7 +13,6 @@ PDP_COUNT = 96
 YEAR = 3
 SUBJECT = "Matematik SJKC"
 RELEASE_FLAG = "CIKGULAJU_MATEMATIK_SJKC_T3_RPH_ENABLED"
-_CONTEXT_DURATION = re.compile(r" +(?:\| +)?60 分钟$")
 _PHASE_DURATION = re.compile(r"[0-9]{1,2} 分钟")
 
 
@@ -44,12 +43,11 @@ def units():
 
 
 def teacher_lines(teacher):
-    if not teacher or not any(teacher.values()):
-        return ()
-    date = teacher.get("date") or "____________"
-    time = teacher.get("time") or "____________"
-    name = teacher.get("class") or "__________"
-    pupils = teacher.get("students") or "_____"
+    teacher = teacher or {}
+    date = teacher.get("date") or ""
+    time = teacher.get("time") or ""
+    name = teacher.get("class") or ""
+    pupils = teacher.get("students") or ""
     return (
         f"日期 Tarikh {date}   |   时间 Masa {time}",
         f"班级 Kelas {name}   |   学生人数 Bilangan murid {pupils}",
@@ -105,7 +103,7 @@ def _word(lesson, output, lines, reflection, *, path=None):
         if element is not section and element not in selected:
             body.remove(element)
     context, = [p for p in doc.paragraphs if p.text.startswith("日期 Tarikh ")]
-    context.runs[0].text = "\n".join(lines) if lines else _CONTEXT_DURATION.sub("", context.text)
+    context.runs[0].text = "\n".join(lines)
     for table in doc.tables:
         if table.cell(0, 1).text == "分钟":
             for row in table.rows:
@@ -164,7 +162,7 @@ def _personalize_pdf(source, lines, reflection):
             for block in page.get_text("dict")["blocks"] if "lines" in block
             for line in block["lines"]
         ]
-        (context_text, context), = [(text, rect) for text, rect in text_lines
+        (_, context), = [(text, rect) for text, rect in text_lines
                                     if text.startswith("日期 Tarikh ")]
         notes, = [rect for text, rect in text_lines if text.startswith("教学反思")]
         minute_headers = [rect for text, rect in text_lines if text == "分钟"]
@@ -183,7 +181,6 @@ def _personalize_pdf(source, lines, reflection):
         for rect in [context, *duration_cells]:
             page.add_redact_annot(rect, fill=False)
         page.apply_redactions(images=0, graphics=0)
-        lines = lines or (_CONTEXT_DURATION.sub("", context_text),)
         font = fitz.Font("china-s")
         right = page.rect.width - context.x0
         writer = fitz.TextWriter(page.rect)

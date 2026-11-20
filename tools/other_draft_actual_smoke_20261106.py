@@ -89,6 +89,25 @@ def main():
                     content = pages[0].extract_text().split("Refleksi", 1)[1]
                     assert "Pemulihan / Pengayaan" not in pages[0].extract_text()
                 assert expected in content, (selection, fmt, content)
+    for subject, formats in (("MUZIK", ("word", "pdf")), ("ARAB", ("word",))):
+        unit = _unit_rows(2, subject)[0]["value"]
+        lesson = _lesson_rows(2, subject, unit)[0]["value"]
+        selection = {"year": 2, "subject": subject, "unit": unit, "lesson": lesson}
+        teacher = dict.fromkeys(("class", "date", "time", "students"), "")
+        for fmt in formats:
+            result = c.post("/internal/rph/v1/other-drafts/render", headers=auth,
+                            json={"selection": selection, "teacher": teacher, "format": fmt})
+            assert result.status_code == 200, (selection, fmt, result.json)
+            labels = (("التاريخ", "الوقت", "الفصل", "عدد التلاميذ") if subject == "ARAB" else
+                      ("Tarikh", "Hari", "Masa", "Kelas", "Bilangan Murid"))
+            if fmt == "word":
+                table = Document(io.BytesIO(result.data)).tables[0]
+                fields = {left.text: right.text for left, right in (row.cells for row in table.rows)}
+                assert tuple(fields[label] for label in labels) == ("",) * len(labels), fields
+            else:
+                pages = PdfReader(io.BytesIO(result.data)).pages
+                text = " ".join(pages[0].extract_text().split())
+                assert " ".join(labels) in text, text
     print("MUSIC_REFLECTION_PASS 20", flush=True)
     for subject,years in (("ARAB",(2,3,4,6)),("MUZIK",(2,4,6))):
         for year in years:

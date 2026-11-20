@@ -129,7 +129,7 @@ def science_class_fields(teacher, *, english, prefix=""):
     labels = (("Date", "Time", "Class", "Number of pupils") if english
               else ("Tarikh", "Masa", "Kelas", "Bilangan Murid"))
     keys = ("date", "time", "class", "students")
-    return [(label, str(teacher.get(prefix + key) or "____________________"))
+    return [(label, str(teacher.get(prefix + key) or "").strip())
             for key, label in zip(keys, labels)]
 
 
@@ -229,7 +229,7 @@ def _math_details(heading, details, teacher):
     fields = [("Subject" if english else "Mata Pelajaran",
                "Mathematics (DLP)" if english else "Matematik"),
               ("Year" if english else "Tahun/Tingkatan", year_label)]
-    fields.extend((key, value or "____________________") for key, value in zip(labels, values))
+    fields.extend((key, str(value or "").strip()) for key, value in zip(labels, values))
     for label, value in details:
         if label in {"Maklumat kelas", "Class / date / time"}:
             continue

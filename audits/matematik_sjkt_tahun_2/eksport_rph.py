@@ -38,7 +38,7 @@ def resolve(unit, pdp):
 
 def teacher_context(teacher):
     if teacher is None:
-        return "", ""
+        teacher = dict.fromkeys((key for key, _, _ in CONTEXT_FIELDS), "")
 
     from web.rph_teacher_reflection import clean_reflection, valid_teacher_fields
 
@@ -53,9 +53,9 @@ def teacher_context(teacher):
         if key == "students" and value and not re.fullmatch(r"[0-9]{1,3}", value):
             raise ValueError("Bilangan murid tidak sah.")
         fields.append((label, value))
-    context = "   ·   ".join(f"{label} {value or '________'}" for label, value in fields)
+    context = "   ·   ".join(f"{label} {value}".rstrip() for label, value in fields)
     reflection = clean_reflection(teacher.get("reflection", "")).expandtabs(2)
-    return (context if any(value for _, value in fields) else ""), reflection
+    return context, reflection
 
 
 def render(unit, pdp, extension, teacher=None, *, review=True):
