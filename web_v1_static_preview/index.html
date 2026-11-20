@@ -2052,14 +2052,16 @@ async function populateMaterialList(){
         /^\/api\/web\/rph\/english-audio\/[1-4]\?/.test(item.url);
     const sourceDownload=/^https:\/\/drive\.usercontent\.google\.com\/download\?id=[A-Za-z0-9_-]{10,100}&export=download(?:&confirm=t)?$/.test(item.url);
     const musicDownload=subject.value==="MUZIK"&&item.type==="audio"&&item.action==="Muat Turun Audio"&&sourceDownload;
-    const ppkiVideo=subject.value===ppkiSubject&&year.value==="3"&&item.type==="video"&&item.action==="Muat Turun Video"&&sourceDownload;
+    const ppkiDownload=subject.value===ppkiSubject&&sourceDownload&&
+      ((item.type==="video"&&item.action==="Muat Turun Video")||
+       (item.type==="audio"&&item.action==="Muat Turun Audio"));
     const ownScienceBook=item.type==="textbook"&&subject.value==="SCIENCE"&&
         item.url.startsWith("/api/web/rph/science-textbook?");
     const originalEnglishBook=subject.value==="ENGLISH"&&item.action==="Buka Buku Asal"&&
         /^https:\/\/online\.anyflip\.com\/(?:rmzft\/wwgq|hykyg\/rrpd)\/mobile\/index\.html\?pageIndex=[1-9][0-9]{0,2}$/.test(item.url);
     if(!ownWorkbook&&!ownStudentBook&&!ownEnglishAudio&&!musicDownload&&!ownScienceBook&&!originalEnglishBook&&!ppkiVideo)continue;
     list.append(materialRow(item.title,{ready:true,url:item.url,
-      actionLabel:ownEnglishAudio?"Muat Turun Audio":originalEnglishBook||musicDownload||ppkiVideo?item.action:"Download"}));
+      actionLabel:ownEnglishAudio?"Muat Turun Audio":originalEnglishBook||musicDownload||ppkiDownload?item.action:"Download"}));
     found++;
    }
   }catch(e){sourceError=(sourceError+" "+e.message).trim();}
