@@ -160,8 +160,10 @@ def music_source_links(year, unit, lesson, *, opener=None):
             raise NativeRPHUnavailable("Music source link unsafe or ambiguous")
         seen.add(item["url"])
         download = item.get("download_url")
-        if "download_url" in item and download != MUSIC_DOWNLOAD.format(DRIVE_VIEW.fullmatch(item["url"])[1]):
-            raise NativeRPHUnavailable("Music download does not match the original source")
+        if "download_url" in item:
+            original = MUSIC_DOWNLOAD.format(DRIVE_VIEW.fullmatch(item["url"])[1])
+            if download not in (original, original + "&confirm=t"):
+                raise NativeRPHUnavailable("Music download does not match the original source")
         if item["track"] is None and not download:
             raise NativeRPHUnavailable("Unverified named Music source")
         label = f"Audio {item['track']} — {item['title']}" if item["track"] is not None else item["title"]
