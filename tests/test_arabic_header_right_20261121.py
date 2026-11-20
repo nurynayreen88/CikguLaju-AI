@@ -22,6 +22,9 @@ def test_arabic_teacher_header_right_and_source_fields_preserved():
     render_arabic_word(plan, ("2 AMANAH", "", "08:00 - 09:00", "28", None), "متابعة", out)
     doc = Document(BytesIO(out.getvalue()))
     assert len(doc.tables) == 4
+    title_props = doc.paragraphs[0]._p.pPr
+    assert title_props.find(qn("w:pBdr")) is not None
+    assert title_props.find(qn("w:shd")).get(qn("w:fill")) == "FCE8D8"
     header = doc.tables[0]
     assert header.alignment == WD_TABLE_ALIGNMENT.RIGHT
     assert header.table_direction == WD_TABLE_DIRECTION.RTL
