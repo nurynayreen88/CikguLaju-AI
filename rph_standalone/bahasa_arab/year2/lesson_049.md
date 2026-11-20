@@ -1,30 +1,30 @@
-# RPH Bahasa Arab Tahun 2 — PdP 049 (DRAF / BELUM READY)
+# RPH Bahasa Arab Tahun 2 — PdP 049
 
 **Tahun:** 2 | **Subjek:** Bahasa Arab KSSR Semakan 2017 | **Unit:** أحافظ على الأدوات الدراسية
-**Fokus PdP:** Mendengar dan mengecam huruf ق
-**SK/SP cadangan:** 1.1 / 1.1.1; sasaran kemahiran berdasarkan aktiviti buku teks pada h80, belum disahkan sebagai SP cetakan/RPT 2027 PdP rasmi.
+**Fokus PdP:** Ulang bunyi huruf qaf
+**DSKP SK/SP:** 1.1 / 1.1.1 — محاكاة أصوات الحروف المسموعة وترديدها ونطقها.
 **Tarikh / masa / kelas:** Diisi guru ikut jadual sebenar.
-**Kosa kata / ayat:** قَلَم، قِرْد، قَهْوَة، مِقَصّ
-**Objektif pembelajaran:** Mengenal empat nama benda/haiwan yang mengandungi ق.
-**Kriteria kejayaan:** Murid memperlihatkan bukti minimum dalam objektif; rekod PBD dan tindakan pemulihan ditentukan guru.
+**Kosa kata / ayat:** قَلَم، قِطَار، قُرُود، قَهْوَة، مِقَصّ، عُنُق
+**Objektif pembelajaran:** أن يحاكي التلميذ صوت القاف بحركته في أربع كلمات من أصل خمس بعد سماعها.
+**Kriteria kejayaan:** يردّد التلميذ أربع كلمات على الأقل مع النطق الصحيح للقاف وحركتها.
 
-**Set induksi:** Guru menunjukkan pensel, gunting dan cawan sebagai bahan rangsangan.
+**Set induksi:** يعرض المعلّم صورة قلم وينطق قَلَمٌ. يستمع التلاميذ ويردّدون قَ ثم الكلمة.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menyebut latihan h80 serta memodelkan bunyi ق yang tidak sama dengan ك.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** ينطق المعلّم قَلَمٌ وقِطَارٌ وقُرُودٌ مع عرض الصور. يردّد التلاميذ قَ وقِ وقُ ثم يردّدون الكلمات.
 
-**Aktiviti 2 — Aplikasi murid:** Murid mengangkat kad ق apabila mendengar perkataan lalu memadankan empat bunyi dengan gambar.
+**Aktiviti 2 — Aplikasi murid:** ينطق المعلّم قَهْوَةٌ ومِقَصٌّ وعُنُقٌ. يرفع التلاميذ الصورة المناسبة ويردّدون الكلمة مع الانتباه إلى موضع القاف.
 
-**Pengukuhan / Penilaian (PBD):** Empat pengecaman bunyi dan sebutan dinilai.
+**Pengukuhan / Penilaian (PBD):** ينطق المعلّم خمس كلمات دون إظهار النص. يردّدها التلميذ ويسجّل المعلّم صحة نطق القاف في كل كلمة.
 
-**Penutup:** Murid menyebut kata قَلَم.
+**Penutup:** يعرض المعلّم صورة القطار وينطق كلمتها. يردّد التلاميذ القاف المكسورة ثم الكلمة.
 
-**BBM:** Buku Teks h80, gambar/kad alat sekolah, alat tulis sebenar, rekod PBD.
+**BBM:** الكتاب المدرسي، صور الكلمات وقائمة رصد النطق.
 
-**Refleksi guru:** ____ / ____ murid mencapai objektif. Pemulihan/pengayaan: _______________________.
+**Refleksi guru:** بلغ هدف الدرس ____ من ____ تلميذًا. إجراء المتابعة ____________________.
 
 **Buku Teks:** Bahasa Arab Tahun 2 KSSR Semakan 2017 DBP cetakan 2017 ISBN 978-983-49-1589-6, Unit 4 halaman bercetak **80**, PDF asal: https://drive.google.com/file/d/13CqpBb4HosAM_-HTEN-hhBCt2W5wVXCZ/view.
 **Pemetaan halaman:** Halaman PDF fizikal 1-based 92 ialah halaman bercetak 80; jangan gunakan halaman PDF sebagai bukti halaman bercetak.
 **DSKP:** https://drive.google.com/file/d/1WY_c69UshDm3jHzVK86G2xfu77UUkGYO/view.
 **RPT rujukan 2026:** https://anyflip.com/zxzlm/jffk/basic.
-**Had semakan:** Halaman bergambar telah diperiksa sebagai bukti aktiviti tetapi kod SP individu pada imej, tatabahasa/padanan PBD, penjadualan RPT 2027 A/B, dan kelulusan guru belum dimuktamadkan. Ayat serta aktiviti merupakan olahan, bukan salinan teks buku.
-**Status:** DRAF_SEMAK / BELUM READY. Pratonton staging sahaja, tidak mengubah data pengguna/Telegram/Web atau produksinya.
+**Semakan:** Panel buku teks dan DPK dipadankan dengan RPH Word.
+**Status:** Kandungan RPH Word disemak.
