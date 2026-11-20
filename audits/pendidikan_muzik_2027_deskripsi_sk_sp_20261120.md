@@ -27,10 +27,17 @@ Pindaan diselaraskan dalam draf RPH, senarai PdP dan RPT Markdown/CSV. Kod RPT a
 
 Kesemua 175 Word dan 175 PDF daripada laluan penjana draf setempat memaparkan kod dan deskripsi SK/SP. Semua PDF asli dan cetakan Word disahkan satu halaman A4. Ujian regresi katalog dan fail draf Bahasa Arab serta Muzik turut lulus.
 
+## Semakan visual skor
+
+- **Tahun 3 PdP 21.** Halaman bercetak 70 memaparkan penjarian G dan latihan G dalam meter 4/4. Halaman 71 memaparkan latihan rekoder serta skor *Selamat Malam* dalam meter 4/4 pada 80 detik seminit. Frasa menggunakan not B, A dan G. Nota guru mencadangkan satu kumpulan bernyanyi dan satu kumpulan bermain rekoder. Halaman 71 menyenaraikan trek 59–63. Sasaran latihan penjarian dan penilaian frasa adalah sepadan dengan halaman ini. [Halaman 70](https://fliphtml5.com/hkvtu/vifc/Pendidikan_Kesenian_Tahun_3_SK/76/) · [Halaman 71](https://fliphtml5.com/hkvtu/vifc/Pendidikan_Kesenian_Tahun_3_SK/77/)
+- **Tahun 5 PdP 19.** Halaman bercetak 49 memaparkan skor melodi kaunter rekoder dalam meter 2/4, dengan kord Am pada permulaan melodi dan SP 2.4.1(i)–(v) dalam nota guru. Nota untuk trek 92 menetapkan giliran pertama untuk nyanyian berpandukan skor F minor dan giliran kedua untuk rekoder berpandukan skor A minor. Padanan aktiviti dan PBD boleh merujuk skor bercetak serta arahan dua giliran itu. [Halaman 49](https://fliphtml5.com/fuozv/ygxh/PENDIDIKAN_MUZIK_T5_SK/55/)
+
+Pemeriksaan ini meliputi skor yang tercetak pada tiga halaman berkenaan. Rakaman trek 59–63 dan 90–93 serta skor lengkap yang dirujuk oleh kod QR masih belum diperiksa.
+
 ## Status pelepasan
 
 Tahun 5 PdP 19 mengekalkan SP 2.4.1 yang tercetak pada halaman 49. PBD menggunakan dua percubaan untuk menguji penjarian, perlidahan dan pernafasan. Nyanyian F minor dan rekoder A minor dibuat dalam pusingan berasingan mengikut nota buku. [Buku Teks Tahun 5, hlm. 49](https://fliphtml5.com/itcew/utmb/Pendidikan_Muzik_Tahun_5/55/)
 
-**DALAM SEMAKAN.** Keluaran sementara mempunyai deskripsi standard. Pengesahan visual skor, fail audio serta muat turun dengan akaun guru produksi masih terbuka.
+**DALAM SEMAKAN.** Keluaran sementara mempunyai deskripsi standard. Pengesahan visual skor bagi baki PdP, fail audio serta muat turun dengan akaun guru produksi masih terbuka.
 
 Semakan indeks audio menemui 118 PdP dengan rujukan nombor trek yang boleh dibaca. Daripada jumlah itu, 117 ada padanan nombor dalam folder sumber. Padanan ini masih memerlukan semakan fail yang betul, akses dan kesesuaian dengan skor buku.
