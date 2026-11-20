@@ -2,6 +2,7 @@
 
 | Tarikh | Bahan / perubahan | Semakan | Status |
 | --- | --- | --- | --- |
+| 2026-11-20 | Sambungkan Word Bahasa Arab Tahun 2 Unit 4 PdP 045–048 serta kemas kini PDF RPT A/B. | Padanan hlm. 76–79 dan DPK hlm. 1 dan 4. | DALAM SEMAKAN. Terbitkan Web dahulu. |
 | 2026-11-20 | Sambungkan Word Bahasa Arab Tahun 2 PdP 041–044 dan selaraskan PDF RPT A/B. | Padanan hlm. 63–65 dan 69 serta DPK hlm. 6. | DALAM SEMAKAN. Terbitkan Web dahulu. |
 | 2026-11-20 | Tambah PPKI Unit 1 Mari Belajar PdP 030–039, agihan 39 PdP Unit 1–5 dan Word Bahasa Arab Tahun 2 PdP 039–040. | Semak turutan Unit 1–5, keserasian penjana lama dan SHA-256 RPT Arab A/B. | DALAM SEMAKAN. Terbitkan Web dahulu. |
 | 2026-11-20 | Tambah pilihan PPKI SK 5.2 PdP 028–029 dan Word Bahasa Arab Tahun 2 PdP 037–038. Selaraskan RPT Bahasa Arab Kumpulan A/B. | Ujian menerima katalog PPKI Unit 5 versi empat dan enam PdP. Sahkan sempadan Bahasa Arab dipadankan mengikut unit. | DALAM SEMAKAN. Terbitkan Web sebelum penjana. |
