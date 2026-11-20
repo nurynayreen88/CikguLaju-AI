@@ -29,3 +29,5 @@ Buku teks bercetak berakhir pada halaman 106. Imbasan halaman 56–106 mengesan 
 | 101 | Video karaoke Mari Berlari | 3430 |
 
 Enam pautan ini masing-masing mengembalikan HTTP 503 pada 21 November 2026. Padanan rakaman asal masih perlu disahkan sebelum dipautkan.
+
+[Audit Kemahiran Manipulatif Tahun 6](ppki_kemahiran_manipulatif_tahun6_20261121.md) merekodkan 34 RPH dan contoh rakaman yang tersedia.

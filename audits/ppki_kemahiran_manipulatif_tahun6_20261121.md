@@ -1,6 +1,6 @@
 # PPKI Kemahiran Manipulatif Tahun 6
 
-Keluaran merangkumi 34 RPH dan RPT 2027, berpandukan [DSKP KSSR Pendidikan Khas Tahun 6](https://asiemodel.net/wp-content/uploads/2022/08/24.-DSKP-KSSR-PKhas-MP-Pengurusan-Kehidupan-Tahun-6_ISBN.pdf) halaman 35–45 dan [Buku Teks Pengurusan Kehidupan Tahun 6](https://fliphtml5.com/gutjj/czvs/PENGURUSAN_KEHIDUPAN_MASALAH_PEMBELAJARAN_TAHUN_6/) halaman bercetak 56–106.
+Keluaran merangkumi 34 RPH dan RPT 2027, berpandukan [DSKP KSSR Pendidikan Khas Tahun 6](https://asiemodel.net/wp-content/uploads/2022/08/24.-DSKP-KSSR-PKhas-MP-Pengurusan-Kehidupan-Tahun-6_ISBN.pdf) halaman 35–44 dan [Buku Teks Pengurusan Kehidupan Tahun 6](https://fliphtml5.com/gutjj/czvs/PENGURUSAN_KEHIDUPAN_MASALAH_PEMBELAJARAN_TAHUN_6/) halaman bercetak 56–106.
 
 | Unit | PdP | Buku teks | Standard Kandungan | Bilangan SP |
 | --- | --- | --- | --- | --- |
