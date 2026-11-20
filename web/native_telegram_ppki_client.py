@@ -16,7 +16,7 @@ UNIT = "u02-pengurusan-diri"
 UNIT3 = "u03-pengurusan-diri"
 UNIT4 = "u04-pengurusan-diri"
 UNIT5 = "u05-pengurusan-diri"
-UNIT_LESSONS = {UNIT: range(1, 15), UNIT3: range(15, 19), UNIT4: range(19, 24), UNIT5: range(24, 28)}
+UNIT_LESSONS = {UNIT: range(1, 15), UNIT3: range(15, 19), UNIT4: range(19, 24), UNIT5: range(24, 30)}
 YEAR = 2
 FORMATS = ("word", "pdf")
 RPT_CODE = "pengurusan_kehidupan_ppki"
@@ -64,12 +64,16 @@ def catalog():
         raise NativeRPHUnavailable("Invalid PPKI additional units")
     by_unit = {UNIT: obj["lessons"]}
     for unit_id, unit in zip(expected_extra, extra):
+        expected_lessons = [f"{n:03d}" for n in UNIT_LESSONS[unit_id]]
+        accepted_lessons = [expected_lessons]
+        if unit_id == UNIT5:
+            accepted_lessons.append(expected_lessons[:4])
         if (not isinstance(unit, dict) or unit.get("value") != unit_id
                 or not isinstance(unit.get("label"), str) or not 1 <= len(unit["label"]) <= 180
                 or not isinstance(unit.get("lessons"), list)
                 or any(not isinstance(item, dict) or not isinstance(item.get("label"), str)
                        or not 1 <= len(item["label"]) <= 180 for item in unit["lessons"])
-                or [item.get("value") for item in unit["lessons"]] != [f"{n:03d}" for n in UNIT_LESSONS[unit_id]]):
+                or [item.get("value") for item in unit["lessons"]] not in accepted_lessons):
             raise NativeRPHUnavailable("Invalid PPKI additional unit choices")
         obj["units"].append({"value": unit_id, "label": unit["label"]})
         by_unit[unit_id] = unit["lessons"]
