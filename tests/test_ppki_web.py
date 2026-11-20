@@ -70,7 +70,7 @@ class PpkiWebTest(unittest.TestCase):
             if self.catalog_year6 is None:
                 raise ppki.NativeRPHUnavailable("Year 6 source is not deployed")
             return json.dumps(self.catalog_year6).encode()
-        if path in ("rpt.pdf?year=6", "rpt.pdf?year=5", "rpt-manipulatif.pdf?year=5", "rpt-manipulatif.pdf?year=4", "rpt.pdf?year=4", "rpt.pdf", "rpt-current.pdf", "rpt-manipulatif.pdf", "rpt.pdf?year=3", "rpt-manipulatif.pdf?year=3"):
+        if path in ("rpt.pdf?year=6", "rpt-manipulatif.pdf?year=6", "rpt.pdf?year=5", "rpt-manipulatif.pdf?year=5", "rpt-manipulatif.pdf?year=4", "rpt.pdf?year=4", "rpt.pdf", "rpt-current.pdf", "rpt-manipulatif.pdf", "rpt.pdf?year=3", "rpt-manipulatif.pdf?year=3"):
             return self.pdf
         return self.docx.getvalue() if payload["format"] == "word" else self.pdf
 
@@ -353,8 +353,36 @@ class PpkiWebTest(unittest.TestCase):
         rpt = self.client.get(path)
         self.assertEqual(rpt.status_code, 200)
         self.assertIn("TAHUN_6_UNIT_1_2_3_4_5_6_2027.pdf", rpt.headers["Content-Disposition"])
-        self.assertEqual(self.client.get(f"/api/rpt/2027/all/{ppki.RPT_MANIPULATIVE_CODE}/6.pdf").status_code, 404)
+        km_path = f"/api/rpt/2027/all/{ppki.RPT_MANIPULATIVE_CODE}/6.pdf"
+        self.assertEqual(self.client.get(km_path).status_code, 404)
+        km_units = (
+            (ppki.MANIPULATIVE_UNIT1, range(36, 54)),
+            (ppki.MANIPULATIVE_UNIT2, range(54, 64)),
+            (ppki.MANIPULATIVE_UNIT3, range(64, 70)),
+        )
+        self.catalog_year6["kemahiran_manipulatif"] = [{
+            "value": unit, "label": unit, "lessons": rows(numbers),
+        } for unit, numbers in km_units]
+        comp = self.client.get("/api/options", query_string={**base_query, "kind": "components"})
+        self.assertEqual([item["value"] for item in comp.json], [ppki.COMPONENT, ppki.MANIPULATIVE_COMPONENT])
+        for unit, numbers in km_units:
+            options = self.client.get("/api/options", query_string={**base_query, "kind": "pdp", "unit": unit})
+            self.assertEqual([row["value"] for row in options.json], [f"{n:03d}" for n in numbers])
+            choice = {**base_query, "unit": unit, "lesson": f"{numbers[-1]:03d}"}
+            for fmt in ppki.FORMATS:
+                self.assertEqual(self.client.get(f"/api/web/rph/{fmt}", query_string=choice).status_code, 200)
+        for number in ("040", "041", "042"):
+            choice = {**base_query, "unit": ppki.MANIPULATIVE_UNIT1, "lesson": number}
+            clips = self.client.get(media, query_string=choice).json["items"]
+            self.assertEqual(len(clips), 2)
+            self.assertTrue(all(item["action"] == "Mainkan Rakaman" for item in clips))
+        self.assertEqual(self.client.get(media, query_string={**choice, "lesson": "043"}).json["items"], [])
+        km_rpt = self.client.get(km_path)
+        self.assertEqual(km_rpt.status_code, 200)
+        self.assertIn(ppki.RPT_MANIPULATIVE_YEAR6_FILENAME, km_rpt.headers["Content-Disposition"])
+        self.assertEqual(self.source_requests[-1][0], "rpt-manipulatif.pdf?year=6")
         self.paid = False
+        self.assertEqual(self.client.get(km_path).status_code, 403)
         self.credits = 0
         self.assertEqual(self.client.get(path).status_code, 403)
         self.assertEqual(self.client.get(media, query_string=selected).status_code, 403)

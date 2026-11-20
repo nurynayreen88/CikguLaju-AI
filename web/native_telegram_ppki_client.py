@@ -67,12 +67,20 @@ YEAR6_LESSONS = {
     UNIT4: range(20, 24), UNIT5: range(24, 28), UNIT6: range(28, 36),
 }
 
+
+YEAR6_MANIPULATIVE_UNIT_LESSONS = {
+    MANIPULATIVE_UNIT1: range(36, 54),
+    MANIPULATIVE_UNIT2: range(54, 64),
+    MANIPULATIVE_UNIT3: range(64, 70),
+}
+
 FORMATS = ("word", "pdf")
 RPT_CODE = "pengurusan_kehidupan_ppki"
 RPT_MANIPULATIVE_CODE = "kemahiran_manipulatif_ppki"
 RPT_MANIPULATIVE_YEAR3_FILENAME = "CIKGULAJU_RPT_PPKI_KEMAHIRAN_MANIPULATIF_TAHUN_3_2027.pdf"
 RPT_MANIPULATIVE_YEAR4_FILENAME = "CIKGULAJU_RPT_PPKI_KEMAHIRAN_MANIPULATIF_TAHUN_4_2027.pdf"
 RPT_MANIPULATIVE_YEAR5_FILENAME = "CIKGULAJU_RPT_PPKI_KEMAHIRAN_MANIPULATIF_TAHUN_5_2027.pdf"
+RPT_MANIPULATIVE_YEAR6_FILENAME = "CIKGULAJU_RPT_PPKI_KEMAHIRAN_MANIPULATIF_TAHUN_6_2027.pdf"
 RPT_MANIPULATIVE_FILENAME = "CIKGULAJU_RPT_PPKI_KEMAHIRAN_MANIPULATIF_TAHUN_2_2027.pdf"
 
 
@@ -117,7 +125,7 @@ def catalog(year=YEAR):
         3: YEAR3_MANIPULATIVE_UNIT_LESSONS,
         4: YEAR4_MANIPULATIVE_UNIT_LESSONS,
         5: YEAR5_MANIPULATIVE_UNIT_LESSONS,
-        6: {},
+        6: YEAR6_MANIPULATIVE_UNIT_LESSONS,
     }[year]
     first_unit = next(iter(direct_units))
     try:
@@ -200,7 +208,7 @@ def accepted_unit(year, unit):
     if year == 5:
         return unit in YEAR5_LESSONS or unit in YEAR5_MANIPULATIVE_UNIT_LESSONS
     if year == 6:
-        return unit in YEAR6_LESSONS
+        return unit in YEAR6_LESSONS or unit in YEAR6_MANIPULATIVE_UNIT_LESSONS
     return year == YEAR and (unit in UNIT_LESSONS or unit in MANIPULATIVE_UNIT_LESSONS)
 
 
@@ -238,11 +246,9 @@ def request_rph(selected, fmt):
 
 
 def request_rpt(*, combined=False, manipulative=False, year=YEAR):
-    if year in (3, 4, 5):
+    if year in (3, 4, 5, 6):
         path = "rpt-manipulatif.pdf" if manipulative else "rpt.pdf"
         return _document(f"{path}?year={year}", "pdf")
-    if year == 6 and not manipulative:
-        return _document("rpt.pdf?year=6", "pdf")
     if year != YEAR:
         raise ValueError("Invalid year for PPKI RPT")
     if manipulative:
