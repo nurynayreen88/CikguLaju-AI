@@ -359,7 +359,7 @@ def create_provisional_subjects_blueprint(runtime):
 
     @bp.get("/internal/rph/v1/other-drafts/audio-links")
     def audio_links():
-        """Original Music source VIEW links only, matched to exact verified PdP."""
+        """Original Music source links matched to the selected PdP."""
         try:
             year,subject=_query({"year","subject","unit","lesson"})
             if subject!="MUZIK":
@@ -373,11 +373,14 @@ def create_provisional_subjects_blueprint(runtime):
             if not isinstance(links,list) or len(links)>21:
                 raise ValueError("Ambiguous music links")
             items=[{"title":item["title"],"url":item["url"],
-                    "track":item["track"]} for item in links]
+                    "track":item["track"],
+                    **({"download_url":item["download_url"]} if "download_url" in item else {})}
+                   for item in links]
         except (ValueError,TypeError,KeyError,OSError,ImportError):
             return jsonify({"error":"Music audio source not available"}),503
         return jsonify({"source":SOURCE,"status":"DRAF",
                         "available":bool(items),"links":items,
+                        "content_verified":source["content_verified"],
                         "notice":source["notice"],"download_available":False})
 
     @bp.post("/internal/rph/v1/other-drafts/render")

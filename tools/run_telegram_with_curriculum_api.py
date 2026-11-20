@@ -865,3 +865,7 @@ print("Matematik SJKC Tahun 2 RPH active:", MATEMATIK_SJKC_T2_RPH_ACTIVE, flush=
 from web.english_rph_standard_descriptions import install as install_english_standard_descriptions
 
 install_english_standard_descriptions(telegram_runtime)
+
+from web.telegram_music_source_audio import install as install_music_source_audio
+
+TELEGRAM_MUSIC_SOURCE_AUDIO_ACTIVE = install_music_source_audio(telegram_runtime)

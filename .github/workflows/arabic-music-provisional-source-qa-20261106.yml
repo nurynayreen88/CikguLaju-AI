@@ -11,6 +11,10 @@ on:
     branches: [main]
     paths:
       - 'web/telegram_provisional_arab_music_api.py'
+      - 'web/telegram_music_source_audio.py'
+      - 'staging/pendidikan_muzik/rpt_rph_2027/external_audio_links_staging.py'
+      - 'staging/pendidikan_muzik/rpt_rph_2027/audio_source_download_audit_20261120.json'
+      - 'tests/test_telegram_music_source_audio.py'
       - 'tools/other_draft_actual_smoke_20261106.py'
       - 'rpt_2027/bahasa_arab/**'
       - '.github/workflows/arabic-music-provisional-source-qa-20261106.yml'
@@ -30,3 +34,5 @@ jobs:
         run: pip install Flask==3.1.3 requests==2.32.3 python-docx==1.2.0 reportlab==4.2.5 pypdf==5.1.0 Pillow==11.3.0 lxml==5.4.0
       - name: Real source catalog count and Word/PDF native smoke
         run: python -m tools.other_draft_actual_smoke_20261106
+      - name: Audio source links and Telegram callback
+        run: python -m unittest discover -s tests -p test_telegram_music_source_audio.py
