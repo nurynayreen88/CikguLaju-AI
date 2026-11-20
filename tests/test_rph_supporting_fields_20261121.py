@@ -53,7 +53,7 @@ def test_derived_fields_preserve_evidence_and_reflection(heading):
     else:
         for term in ("EMK:", "PAK21:", "KBAT:", "Pemulihan:", "Pengayaan:"):
             assert term in combined
-    assert "Murid membandingkan dua bacaan." in combined or "Murid berbincang" in combined
+    assert "Kolaborasi dan komunikasi" in combined or "Collaboration and communication" in combined
     assert "Dua bacaan dan satu perbandingan" in FOOTER[0][1]
 
 
