@@ -1,0 +1,278 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 4,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 1 · Bertamu di Inap Desa",
+  "content_standards": {
+    "1.1": "Tanggungjawab diri terhadap ahli keluarga asas.",
+    "1.2": "Kenali dan hormati keluarga kembangan.",
+    "1.3": "Kenali jenis pakaian."
+  },
+  "learning_standards": {
+    "1.1.1": "Menyatakan tanggungjawab diri terhadap ahli keluarga asas.",
+    "1.1.2": "Memerihalkan tentang diri ahli keluarga asas.",
+    "1.1.3": "Menunjukkan rasa penghargaan terhadap ahli keluarga asas.",
+    "1.2.1": "Mengenal pasti hierarki datuk dan nenek, bapa dan ibu saudara serta sepupu dalam keluarga kembangan.",
+    "1.2.2": "Menggunakan panggilan hormat mengikut pangkat dalam ahli keluarga kembangan.",
+    "1.2.3": "Melibatkan diri dalam aktiviti yang merapatkan hubungan kekeluargaan melalui simulasi atau main peranan.",
+    "1.3.1": "Mengenal pakaian unit beruniform sekolah, pakaian harian dan pakaian formal mengikut situasi.",
+    "1.3.2": "Menunjuk cara memakai pakaian yang sesuai mengikut situasi dan tempat untuk ibadat, rekreasi, majlis keraian dan perayaan.",
+    "1.3.3": "Mempraktikkan cara memakai pakaian yang sesuai mengikut situasi dan tempat dalam kehidupan seharian."
+  },
+  "lessons": [
+    {
+      "pdp": "001",
+      "title": "Nyatakan tanggungjawab terhadap keluarga asas",
+      "sp": "1.1.1",
+      "focus": "Nyatakan tanggungjawab terhadap keluarga asas.",
+      "book": "Buku Teks hlm. 2–4",
+      "objective": "Murid dapat nyatakan cara membantu dalam tiga daripada empat situasi.",
+      "materials": "Kad situasi beg, pinggan, mainan dan ruang makan.",
+      "induction": [
+        "Paparkan adegan tetamu tiba dan minta murid menunjuk orang yang sedang membantu.",
+        "Tunjuk watak yang membawa beg atau menghulurkan pinggan."
+      ],
+      "guided": [
+        "Modelkan sebutan “Saya boleh membantu dengan ...” menggunakan empat kad.",
+        "Padankan tugas mudah dengan setiap situasi, kemudian nyatakan cara membantu."
+      ],
+      "practice": [
+        "Berikan empat situasi tanpa jawapan tercetak.",
+        "Nyatakan satu tanggungjawab yang sesuai untuk setiap situasi."
+      ],
+      "closure": [
+        "Minta murid memilih satu contoh daripada aktiviti yang baru diselesaikan.",
+        "Tunjuk atau nyatakan contoh dan sebut kegunaannya."
+      ],
+      "support": "Benarkan murid memilih gambar sebelum memberi respons lisan.",
+      "assessment": "Guru merekod sama ada murid dapat nyatakan cara membantu dalam tiga daripada empat situasi.",
+      "follow_up": "Ulang satu langkah atau respons yang belum dikuasai dengan bahan bergambar."
+    },
+    {
+      "pdp": "002",
+      "title": "Perihalkan ahli keluarga asas",
+      "sp": "1.1.2",
+      "focus": "Perihalkan ahli keluarga asas.",
+      "book": "Buku Teks hlm. 5",
+      "objective": "Murid dapat perihalkan dua daripada tiga watak dengan dua butiran yang tepat.",
+      "materials": "Kad watak, ikon peranan dan hobi, bingkai ayat.",
+      "induction": [
+        "Tunjukkan dua watak keluarga dalam buku teks.",
+        "Namakan watak berdasarkan hubungan dalam gambar."
+      ],
+      "guided": [
+        "Modelkan ayat tentang hubungan dan satu maklumat bagi setiap watak.",
+        "Pilih ikon hobi atau aktiviti kemudian susun ayat dengan pasangan."
+      ],
+      "practice": [
+        "Paparkan gambar tiga watak rekaan dengan maklumat mudah.",
+        "Perihalkan setiap watak menggunakan hubungan dan satu ciri."
+      ],
+      "closure": [
+        "Minta murid memilih satu contoh daripada aktiviti yang baru diselesaikan.",
+        "Tunjuk atau nyatakan contoh dan sebut kegunaannya."
+      ],
+      "support": "Tawarkan watak rekaan dan pilihan kad untuk menjaga privasi.",
+      "assessment": "Guru merekod sama ada murid dapat perihalkan dua daripada tiga watak dengan dua butiran yang tepat.",
+      "follow_up": "Ulang satu langkah atau respons yang belum dikuasai dengan bahan bergambar."
+    },
+    {
+      "pdp": "003",
+      "title": "Tunjukkan penghargaan kepada ahli keluarga",
+      "sp": "1.1.3",
+      "focus": "Tunjukkan penghargaan kepada ahli keluarga.",
+      "book": "Buku Teks hlm. 6",
+      "objective": "Murid dapat tunjukkan dua cara menghargai ahli keluarga dalam dua daripada tiga situasi.",
+      "materials": "Kad watak, kad ucapan dan bahan simulasi.",
+      "induction": [
+        "Tunjukkan gambar sambutan dan nyatakan satu cara menghargai seseorang.",
+        "Pilih gambar tindakan yang menunjukkan penghargaan."
+      ],
+      "guided": [
+        "Modelkan ucapan terima kasih dan tindakan membantu selepas sambutan.",
+        "Latih satu ucapan dan satu tindakan dengan pasangan."
+      ],
+      "practice": [
+        "Beri tiga situasi seperti menerima bantuan atau meraikan hari istimewa.",
+        "Lakonkan tindakan penghargaan mengikut peranan."
+      ],
+      "closure": [
+        "Minta murid memilih satu contoh daripada aktiviti yang baru diselesaikan.",
+        "Tunjuk atau nyatakan contoh dan sebut kegunaannya."
+      ],
+      "support": "Sediakan pilihan ucapan pendek, isyarat atau gambar.",
+      "assessment": "Guru merekod sama ada murid dapat tunjukkan dua cara menghargai ahli keluarga dalam dua daripada tiga situasi.",
+      "follow_up": "Ulang satu langkah atau respons yang belum dikuasai dengan bahan bergambar."
+    },
+    {
+      "pdp": "004",
+      "title": "Kenal hierarki keluarga kembangan",
+      "sp": "1.2.1",
+      "focus": "Kenal hierarki keluarga kembangan.",
+      "book": "Buku Teks hlm. 7",
+      "objective": "Murid dapat tempatkan empat daripada lima kad pada hierarki yang betul.",
+      "materials": "Peta pokok kosong dan kad watak keluarga.",
+      "induction": [
+        "Tunjukkan peta pokok daripada buku teks dan dua kad generasi berbeza.",
+        "Tunjuk tempat watak datuk dan nenek pada peta."
+      ],
+      "guided": [
+        "Modelkan hubungan datuk dan nenek, ibu dan bapa saudara serta sepupu.",
+        "Letakkan kad contoh dalam peta mengikut hubungan."
+      ],
+      "practice": [
+        "Tukar kad kepada set rekaan dan beri lima kad ahli keluarga.",
+        "Tempatkan setiap kad pada baris generasi yang sesuai."
+      ],
+      "closure": [
+        "Minta murid memilih satu contoh daripada aktiviti yang baru diselesaikan.",
+        "Tunjuk atau nyatakan contoh dan sebut kegunaannya."
+      ],
+      "support": "Gunakan warna berbeza untuk generasi dalam peta.",
+      "assessment": "Guru merekod sama ada murid dapat tempatkan empat daripada lima kad pada hierarki yang betul.",
+      "follow_up": "Ulang satu langkah atau respons yang belum dikuasai dengan bahan bergambar."
+    },
+    {
+      "pdp": "005",
+      "title": "Gunakan panggilan hormat keluarga",
+      "sp": "1.2.2",
+      "focus": "Gunakan panggilan hormat keluarga.",
+      "book": "Buku Teks hlm. 8–10",
+      "objective": "Murid dapat gunakan panggilan hormat yang sesuai dalam tiga daripada empat giliran.",
+      "materials": "Kad watak, gambar situasi dan kad dialog ringkas.",
+      "induction": [
+        "Paparkan adegan mengemas dan baca model dialog dengan panggilan hormat.",
+        "Dengar dan tunjuk watak yang disapa."
+      ],
+      "guided": [
+        "Modelkan penggunaan panggilan yang sesuai bagi watak ibu dan bapa saudara dalam adegan.",
+        "Padankan panggilan yang diberi dengan watak dan berlatih meminta bantuan."
+      ],
+      "practice": [
+        "Lakonkan empat pertukaran pendek dan tukar kad watak setiap giliran.",
+        "Sapa watak dengan panggilan yang sesuai sebelum meminta bantuan."
+      ],
+      "closure": [
+        "Minta murid memilih satu contoh daripada aktiviti yang baru diselesaikan.",
+        "Tunjuk atau nyatakan contoh dan sebut kegunaannya."
+      ],
+      "support": "Terima panggilan setempat yang sesuai dengan keluarga murid.",
+      "assessment": "Guru merekod sama ada murid dapat gunakan panggilan hormat yang sesuai dalam tiga daripada empat giliran.",
+      "follow_up": "Ulang satu langkah atau respons yang belum dikuasai dengan bahan bergambar."
+    },
+    {
+      "pdp": "006",
+      "title": "Lakonkan aktiviti bersama keluarga kembangan",
+      "sp": "1.2.3",
+      "focus": "Lakonkan aktiviti bersama keluarga kembangan.",
+      "book": "Buku Teks hlm. 8–10",
+      "objective": "Murid dapat tunjukkan dua tindakan kerjasama dalam setiap lakonan.",
+      "materials": "Kad tugasan, peralatan kemas simulasi dan kad peranan.",
+      "induction": [
+        "Minta murid pilih gambar aktiviti mengemas atau riadah bersama.",
+        "Tunjuk satu aktiviti yang boleh dibuat bersama ahli keluarga."
+      ],
+      "guided": [
+        "Modelkan meminta bantuan, berkongsi tugasan dan mengucapkan terima kasih.",
+        "Latih turutan bersama pasangan dan tukar watak."
+      ],
+      "practice": [
+        "Sediakan dua situasi melibatkan kerja bersama dan riadah.",
+        "Lakonkan satu peranan aktif dalam setiap situasi dan bekerjasama dengan rakan."
+      ],
+      "closure": [
+        "Minta murid memilih satu contoh daripada aktiviti yang baru diselesaikan.",
+        "Tunjuk atau nyatakan contoh dan sebut kegunaannya."
+      ],
+      "support": "Sediakan satu arahan bergambar pada satu masa.",
+      "assessment": "Guru merekod sama ada murid dapat tunjukkan dua tindakan kerjasama dalam setiap lakonan.",
+      "follow_up": "Ulang satu langkah atau respons yang belum dikuasai dengan bahan bergambar."
+    },
+    {
+      "pdp": "007",
+      "title": "Kenal pakaian unit beruniform, harian dan formal",
+      "sp": "1.3.1",
+      "focus": "Kenal pakaian unit beruniform, harian dan formal.",
+      "book": "Buku Teks hlm. 11–12",
+      "objective": "Murid dapat kelaskan lima daripada enam gambar mengikut jenis pakaian.",
+      "materials": "Gambar pakaian, kad tiga kategori dan ilustrasi lokasi.",
+      "induction": [
+        "Paparkan gambar pakaian unit beruniform dan pakaian harian.",
+        "Tunjuk satu perbezaan yang dilihat."
+      ],
+      "guided": [
+        "Modelkan pengelasan kepada pakaian unit beruniform, harian dan formal.",
+        "Kelaskan dua gambar dengan bimbingan."
+      ],
+      "practice": [
+        "Campurkan enam kad daripada ketiga-tiga kategori.",
+        "Kelaskan setiap gambar dan beri nama kategori."
+      ],
+      "closure": [
+        "Minta murid memilih satu contoh daripada aktiviti yang baru diselesaikan.",
+        "Tunjuk atau nyatakan contoh dan sebut kegunaannya."
+      ],
+      "support": "Gunakan gambar pakaian yang biasa dilihat murid di sekolah.",
+      "assessment": "Guru merekod sama ada murid dapat kelaskan lima daripada enam gambar mengikut jenis pakaian.",
+      "follow_up": "Ulang satu langkah atau respons yang belum dikuasai dengan bahan bergambar."
+    },
+    {
+      "pdp": "008",
+      "title": "Tunjukkan cara memakai pakaian mengikut situasi",
+      "sp": "1.3.2",
+      "focus": "Tunjukkan cara memakai pakaian mengikut situasi.",
+      "book": "Buku Teks hlm. 13–15",
+      "objective": "Murid dapat pilih dan tunjuk cara bagi tiga daripada empat situasi.",
+      "materials": "Patung kertas, pakaian contoh dan kad situasi.",
+      "induction": [
+        "Paparkan kad rekreasi dan kad majlis keraian.",
+        "Pilih pakaian sesuai untuk salah satu situasi."
+      ],
+      "guided": [
+        "Modelkan memilih pakaian, memakai lapisan luar dan membetulkan kedudukan pada patung.",
+        "Susun kad langkah dan tunjuk cara menggunakan patung."
+      ],
+      "practice": [
+        "Beri empat kad situasi ibadat, rekreasi, keraian dan perayaan.",
+        "Pilih pakaian dan tunjuk urutan ringkas pada patung untuk setiap situasi."
+      ],
+      "closure": [
+        "Minta murid memilih satu contoh daripada aktiviti yang baru diselesaikan.",
+        "Tunjuk atau nyatakan contoh dan sebut kegunaannya."
+      ],
+      "support": "Benarkan simulasi dengan patung dan pilihan pakaian setempat.",
+      "assessment": "Guru merekod sama ada murid dapat pilih dan tunjuk cara bagi tiga daripada empat situasi.",
+      "follow_up": "Ulang satu langkah atau respons yang belum dikuasai dengan bahan bergambar."
+    },
+    {
+      "pdp": "009",
+      "title": "Amalkan cara memakai pakaian dengan kemas",
+      "sp": "1.3.3",
+      "focus": "Amalkan cara memakai pakaian dengan kemas.",
+      "book": "Buku Teks hlm. 13–15",
+      "objective": "Murid dapat laksanakan tiga langkah dengan tepat dalam dua situasi.",
+      "materials": "Jaket atau pakaian lapis luar, kad semak visual, patung tangan.",
+      "induction": [
+        "Tunjukkan dua gambar pakaian kemas dan minta murid tunjuk perincian yang sama.",
+        "Tunjuk kolar, bahu atau bukaan pakaian yang kemas."
+      ],
+      "guided": [
+        "Modelkan semakan pakaian sesuai, memakai jaket dan membetulkan bahagian hadapan.",
+        "Latih memakai pakaian lapis luar atau lakukan langkah dengan patung."
+      ],
+      "practice": [
+        "Tukar kepada dua kad situasi harian yang sesuai dan sediakan pilihan pakaian.",
+        "Pilih pilihan sesuai dan amalkan urutan pakaian yang kemas secara individu."
+      ],
+      "closure": [
+        "Minta murid memilih satu contoh daripada aktiviti yang baru diselesaikan.",
+        "Tunjuk atau nyatakan contoh dan sebut kegunaannya."
+      ],
+      "support": "Sediakan pakaian mudah dipakai dan hormati pilihan murid untuk simulasi.",
+      "assessment": "Guru merekod sama ada murid dapat laksanakan tiga langkah dengan tepat dalam dua situasi.",
+      "follow_up": "Ulang satu langkah atau respons yang belum dikuasai dengan bahan bergambar."
+    }
+  ]
+}

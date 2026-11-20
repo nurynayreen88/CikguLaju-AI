@@ -4,7 +4,7 @@ from xml.sax.saxutils import escape
 
 from staging.ppki.catalog import (
     MANIPULATIVE_UNIT_LESSONS, RPT_COMBINED_EDITION, RPT_YEAR3_EDITION, UNIT, UNIT_LESSONS,
-    YEAR, YEAR3_LESSONS, YEAR3_MANIPULATIVE_UNIT_LESSONS, catalog,
+    YEAR, YEAR3_LESSONS, YEAR3_MANIPULATIVE_UNIT_LESSONS, YEAR4_LESSONS, catalog,
 )
 from staging.ppki.render_pengurusan_kehidupan import PPKI_LABEL_FILL
 
@@ -59,6 +59,9 @@ def render_rpt(*, combined=False, manipulative=False, year=YEAR):
     elif year == 3:
         units = YEAR3_LESSONS
         edition = RPT_YEAR3_EDITION
+    elif year == 4 and not manipulative:
+        units = YEAR4_LESSONS
+        edition = "Unit 1"
     elif year != YEAR:
         raise ValueError("Unknown PPKI RPT")
     elif manipulative:
