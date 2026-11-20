@@ -65,7 +65,7 @@ class MusicSourceAudioTest(unittest.TestCase):
                         f"https://drive.usercontent.google.com/download?id={file_id}&export=download")
 
     def test_download_audit_applies_to_exact_year_and_pdp(self):
-        counts = {2:20, 3:23, 4:19, 5:28, 6:27}
+        counts = {2:23, 3:25, 4:24, 5:29, 6:28}
         source_files = set()
         for year, expected in counts.items():
             matched = 0
@@ -77,7 +77,29 @@ class MusicSourceAudioTest(unittest.TestCase):
                     matched += 1
                     source_files.update(item["file_id"] for item in verified)
             self.assertEqual(matched, expected)
-        self.assertEqual(len(source_files), 571)
+        self.assertEqual(len(source_files), 590)
+
+    def test_additional_tracks_follow_the_specific_textbook_activity(self):
+        expected = {
+            (2, 19): [48], (2, 22): list(range(60, 67)), (2, 33): [84, 85, 86],
+            (3, 2): [8], (3, 3): [5, 8],
+            (4, 7): [17, 18], (4, 18): [58, 59, 60],
+            (5, 5): [22], (6, 18): [96],
+        }
+        for (year, number), tracks in expected.items():
+            with self.subTest(year=year, pdp=number):
+                items = audio_link_action(year, number)["links"]
+                self.assertEqual([item["track"] for item in items], tracks)
+                self.assertTrue(all("download_url" in item for item in items))
+
+    def test_year_four_project_audio_uses_its_name_only_for_penggal_dua(self):
+        for number in (12, 13):
+            self.assertFalse(audio_link_action(4, number)["links"])
+        for number in (25, 26, 27):
+            item, = audio_link_action(4, number)["links"]
+            self.assertIsNone(item["track"])
+            self.assertEqual(item["title"], "Audio Projek Kesenian Penggal Dua")
+            self.assertIn("id=1zouWfTYxs4ziN0KARob6Aln2m7K7qIEM&", item["download_url"])
 
     def test_other_pdp_and_changed_file_ids_are_not_verified(self):
         self.assertFalse(audio_link_action(4, 20)["content_verified"])

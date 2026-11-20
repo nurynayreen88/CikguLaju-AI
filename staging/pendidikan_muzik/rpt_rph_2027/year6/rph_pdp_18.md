@@ -16,15 +16,15 @@
 
 **Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Murid membezakan minim bertitik serta krocet bertitik dan menyalin dua contoh not/tanda rehat yang betul daripada latihan halaman 50–51 ke baluk sendiri.
 
-**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Murid bergerak antara Stesen 1 halaman 52 (langkah, seret kaki, hayun badan) dan Stesen 2 halaman 53 (pergerakan bertema); kumpulan merancang dan mempersembahkan dua corak gerak selamat mengikut kiraan guru.
+**Aktiviti 2 — Aplikasi, latihan dan persembahan (10 minit):** Murid berlatih langkah, seretan kaki dan hayunan badan di Stesen 1. Di Stesen 2, murid mendengar Audio 96 dan mempersembahkan dua corak gerak bertema.
 
 **Pengukuhan dan Penilaian — 6 minit:** Semak dua contoh notasi bertitik dan ketepatan gerakan menurut tema dan tempo; catat penilaian rakan.
 
 **Penutup — 2 minit:** Murid menamakan nilai tambahan bagi tanda titik serta satu prinsip menjaga ruang. Guru merekod pencapaian dan keperluan pemulihan PBD.
 
-**Bahan:** Baluk kosong, kad not bertitik, penanda dua stesen dan kad arahan gerakan.
+**Bahan:** Buku Teks Pendidikan Muzik Tahun 6 SK m/s 50–53, Audio 96, baluk kosong, kad not bertitik dan penanda stesen.
 
-**Rujukan sumber:** Buku Teks Pendidikan Muzik Tahun 6 SK, DBP 2021, halaman 50–53; https://anyflip.com/zcnoa/yxcj/basic/51-100. Audio bercetak: 96 (gerakan); **tiada fail audio sebenar diperiksa atau diaktifkan**. Kod DSKP/RPT sumber dikekalkan, pemeriksaan skor visual dan pemetaan SK–SP belum kelulusan akhir.
+**Rujukan sumber:** Buku Teks Pendidikan Muzik Tahun 6 SK, DBP 2021, halaman 50–53; https://anyflip.com/zcnoa/yxcj/basic/51-100. Audio 96 ialah instrumental pergerakan Memori Indah. Kod DSKP/RPT sumber dikekalkan, pemeriksaan skor visual dan pemetaan SK–SP belum kelulusan akhir.
 
 **Catatan pelaksanaan / pemulihan:** __________________________________________
 

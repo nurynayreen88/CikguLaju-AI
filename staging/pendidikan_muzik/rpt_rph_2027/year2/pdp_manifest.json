@@ -514,7 +514,7 @@
       "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
       "source_book_text_crosscheck": true,
       "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
-      "source_book_audio_numbers_printed": "RPT lama: 48; perlu pengesahan audio halaman 55",
+      "source_book_audio_numbers_printed": "48",
       "source_book_audio_file_verified": false,
       "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK",
       "rpt2027_day_audit": {
@@ -598,7 +598,7 @@
       "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
       "source_book_text_crosscheck": true,
       "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
-      "source_book_audio_numbers_printed": "60–66 (berbeza rujukan RPT 57–59)",
+      "source_book_audio_numbers_printed": "60–66",
       "source_book_audio_file_verified": false,
       "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK",
       "source_rpt_audio_note": "RPT mencatat 57–59 lagu; halaman 62–63 buku sebenarnya membekalkan Audio 60–66 untuk skor perkusi. Nombor sumber asal dikekalkan."
@@ -882,7 +882,7 @@
       "source_book_text_crosscheck": true,
       "source_book_verification_level": "BUKU_KESENIAN_T2_ONLINE_TEXTUAL_ONLY",
       "pending_book_page_crosscheck": false,
-      "source_book_audio_numbers_printed": "84–85 (sompoton/Sumazau); 86 (muzik Sumazau) — tercetak, bukan fail",
+      "source_book_audio_numbers_printed": "84–86",
       "source_book_audio_file_verified": false,
       "rph_specificity_status": "TEKS_BUKU_MUZIK_TERPADU_DIPADANKAN",
       "flags": [

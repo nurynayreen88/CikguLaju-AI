@@ -11,7 +11,7 @@
 
 **Kriteria kejayaan:** Murid melengkapkan tugasan projek dengan sekurang-kurangnya tiga daripada empat item senarai semak guru.
 
-**Set Induksi — 4 minit:** Guru memperkenalkan Projek Kesenian Penggal Dua seperti halaman 54–55; memperkenalkan tajuk lagu contoh Ayahku Sayang tanpa menyalin liriknya.
+**Set Induksi — 4 minit:** Guru memperkenalkan Projek Kesenian Penggal Dua dan memperdengarkan sebahagian daripada audio projek sebelum murid memilih bahan persembahan.
 
 **Aktiviti 1 — Bimbingan dan demonstrasi (8 minit):** Kumpulan memilih bahan persembahan yang sesuai untuk Unit 6–10 (atau lagu contoh Ayahku Sayang jika bahan sah tersedia) dan menetapkan ketua, penyanyi, pemain alat serta penggerak mengikut kepakaran.
 
@@ -21,9 +21,9 @@
 
 **Penutup — 2 minit:** Setiap kumpulan menyatakan satu risiko praktikal yang perlu diatasi sebelum latihan. Guru merekod pemerhatian PBD.
 
-**Bahan:** Buku halaman 54–55, kad peranan dan borang perancangan projek.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK m/s 54–55, Audio Projek Kesenian Penggal Dua, kad peranan dan borang perancangan.
 
-**Rujukan:** Buku Teks Pendidikan Kesenian Tahun 4 SK DBP 2019, Projek Penggal Dua, halaman 54-55; https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view. Projek Kesenian menggabungkan seni visual dan persembahan muzikal; RPH ini khusus muzik, bukan dakwaan seluruh projek gabungan. Kod SP Muzik asal tidak ditimpa oleh kod buku Kesenian. **Nombor audio bercetak bukan bukti fail sebenar; tiada audio diaktifkan atau lirik lagu dimuat naik.**
+**Rujukan:** Buku Teks Pendidikan Kesenian Tahun 4 SK DBP 2019, Projek Penggal Dua, halaman 54-55; https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view. Projek Kesenian menggabungkan seni visual dan persembahan muzikal; RPH ini khusus muzik, bukan dakwaan seluruh projek gabungan. Kod SP Muzik asal tidak ditimpa oleh kod buku Kesenian.
 
 **Catatan pemulihan/refleksi:** ____________________________________________
 

@@ -12,7 +12,7 @@
 
 **Set induksi (4 minit):** Guru memperkenalkan contoh lagu, pola bunyi atau gambar berkaitan CANTIK MENAWAN; murid menunjukkan respons awal.
 
-**Aktiviti 1 — Eksplorasi (8 minit):** Guru mengulang cara mengekalkan nilai irama dan mengajak murid mengubah satu bar corak contoh.
+**Aktiviti 1 — Eksplorasi (8 minit):** Guru memainkan Audio 48 sebagai panduan detik. Murid mengubah satu bar corak contoh dan menepuk corak baharu mengikut detik metronom.
 
 **Aktiviti 2 — Aplikasi muzikal (10 minit):** Kumpulan mempersembah dua pola berbeza berdasarkan ikon ciptaan lalu menerima maklum balas kumpulan rakan.
 
@@ -20,11 +20,11 @@
 
 **Penutup (2 minit):** Murid melakukan satu contoh kemahiran, memberi refleksi dan menyatakan aspek yang mahu diperbaiki. Guru merekod pemerhatian PBD.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 55; audio berlesen jika telah diperiksa, kad atau alat muzik yang sesuai.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK m/s 55, Audio 48 (metronom), kad ikon dan alat perkusi.
 
 **Rujukan:** https://anyflip.com/iawvx/mran/basic/51-100. Teks buku/unit berkaitan telah dirujuk; semakan visual semua halaman belum lengkap.
 
-**Audio bercetak / rujukan RPT:** RPT lama: 48; perlu pengesahan audio halaman 55. **Tidak menandakan ketersediaan fail audio.**
+**Audio bercetak / rujukan RPT:** Audio 48.
 
 **Nota audit:** SP dan aktiviti perlu kelulusan guru individu.
 

@@ -63,7 +63,8 @@ def install(runtime):
         for index, (pdp, title, links) in enumerate(_available(year)):
             if pdp != number:
                 continue
-            buttons = [[{"text": f"⬇️ Audio {track['track']} · {track['title']}"[:64],
+            buttons = [[{"text": ("⬇️ " + (f"Audio {track['track']} · " if track["track"] is not None else "")
+                                  + track["title"])[:64],
                          "url": track["download_url"]}] for track in links]
             buttons.append([{"text": "⬅️ Pilih PdP",
                              "callback_data": f"muzik-audio:menu:{year}:{index // PAGE_SIZE}"}])

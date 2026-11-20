@@ -11,7 +11,7 @@
 
 **Set induksi (4 minit):** Guru memperkenalkan contoh bunyi, notasi atau gerak daripada unit **BEG CANTIK MENAWAN**, kemudian murid menunjukkan respons awal berdasarkan pengalaman muzik mereka.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru menandakan tempo pada skor lagu dan meminta murid mengikut detik dengan tepukan.
+**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru memainkan Audio 17 dan 18 secara bergilir sambil menunjukkan bahagian kumpulan suara pada skor Beg Cantik Menawan. Murid menepuk detik dan menyebut masa kumpulan suara masuk.
 
 **Aktiviti 2 — Aplikasi muzik (10 minit):** Murid menyanyikan frasa pendek secara bergilir, kemudian menyanyikan keseluruhan bahagian yang sesuai dengan tempo seragam.
 
@@ -19,11 +19,11 @@
 
 **Penutup (2 minit):** Murid menjelaskan satu kemahiran yang telah dicapai, memperagakan contoh ringkas dan memberi refleksi. Guru merekod pemerhatian PBD.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK (DBP 2019) dan alat atau kad muzik yang relevan dengan fokus, menggunakan rakaman yang diizinkan sahaja.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK m/s 30–31, skor Beg Cantik Menawan dan Audio 17–18.
 
 **Rujukan buku teks:** m/s 30-31 daripada RPT rujukan yang padan dengan tema buku Kesenian Tahun 4. **Semakan teks unit/aktiviti dibuat, tetapi halaman penuh belum disahkan secara visual.** Sumber: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
 
-**Rujukan audio bercetak:** 17–18 (rujukan bercetak). **Belum disahkan sama ada fail trek tersedia atau sepadan dengan laluan penghantaran.**
+**Rujukan audio bercetak:** Audio 17–18.
 
 **Audit kod:** Pemetaan SP RPT belum kelulusan guru.
 
