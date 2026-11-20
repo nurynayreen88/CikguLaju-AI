@@ -32,7 +32,10 @@ MANIPULATIVE_UNIT_LESSONS = {
 }
 YEAR = 2
 YEARS = (2, 3)
-YEAR3_LESSONS = {UNIT1: range(1, 18), UNIT: range(18, 36), UNIT3: range(36, 40)}
+YEAR3_LESSONS = {
+    UNIT1: range(1, 18), UNIT: range(18, 36), UNIT3: range(36, 40),
+    UNIT4: range(40, 44), UNIT5: range(44, 50),
+}
 FORMATS = ("word", "pdf")
 RPT_CODE = "pengurusan_kehidupan_ppki"
 RPT_MANIPULATIVE_CODE = "kemahiran_manipulatif_ppki"
@@ -99,7 +102,7 @@ def catalog(year=YEAR):
     for unit_id, unit in zip(expected_extra, extra):
         expected_lessons = [f"{n:03d}" for n in direct_units[unit_id]]
         accepted_lessons = [expected_lessons]
-        if unit_id == UNIT5:
+        if year == YEAR and unit_id == UNIT5:
             accepted_lessons.append(expected_lessons[:4])
         _validate_unit(unit, unit_id, accepted_lessons)
         obj["units"].append({"value": unit_id, "label": unit["label"]})

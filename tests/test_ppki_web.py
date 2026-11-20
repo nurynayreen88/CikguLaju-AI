@@ -138,6 +138,22 @@ class PpkiWebTest(unittest.TestCase):
         self.assertIn("39 PdP Unit 1–3", entry["years"][1]["note"])
         self.assertIn("TAHUN_3_UNIT_1_2_3_2027.pdf", self.client.get(url).headers["Content-Disposition"])
 
+        for unit, first, last in ((ppki.UNIT4, 40, 43), (ppki.UNIT5, 44, 49)):
+            self.catalog_year3["additional_units"].append({
+                "value": unit, "label": f"Unit {unit[1:3]}",
+                "lessons": [{"value": f"{number:03d}", "label": f"PdP {number:03d}",
+                             "formats": ["word", "pdf"], "textbook_ref": "Buku Teks"}
+                            for number in range(first, last + 1)],
+            })
+            selection = {**selection, "unit": unit, "lesson": f"{last:03d}"}
+            self.assertEqual(self.client.get("/api/web/rph/word", query_string=selection).status_code, 200)
+            self.assertEqual(self.client.get(materials, query_string=selection).json["items"], [])
+        listing = self.client.get("/api/rpt/2027/catalog").json
+        entry, = [row for row in listing["subjects"] if row["code"] == ppki.RPT_CODE]
+        self.assertIn("49 PdP Unit 1–5", entry["years"][1]["note"])
+        self.assertIn("TAHUN_3_UNIT_1_2_3_4_5_2027.pdf", self.client.get(url).headers["Content-Disposition"])
+
+
     def test_manipulative_component_selection_and_existing_rpt(self):
         opts = "/api/options"
         query = {"year": 2, "subject": ppki.SUBJECT}
