@@ -118,6 +118,26 @@ class PpkiWebTest(unittest.TestCase):
         self.assertEqual(blocked.status_code, 403)
         self.assertEqual(blocked.json["code"], "FREE_TRIAL_EXHAUSTED")
 
+        self.paid = True
+        self.catalog_year3["additional_units"] = [{
+            "value": unit, "label": label,
+            "lessons": [{"value": f"{number:03d}", "label": f"PdP {number:03d}",
+                         "formats": ["word", "pdf"], "textbook_ref": "Buku Teks"}
+                        for number in numbers],
+        } for unit, label, numbers in (
+            (ppki.UNIT, "Unit 2", range(18, 36)),
+            (ppki.UNIT3, "Unit 3", range(36, 40)),
+        )]
+        selection = {**selection, "unit": ppki.UNIT3, "lesson": "039"}
+        self.assertEqual(self.client.get("/api/web/rph/pdf", query_string=selection).status_code, 200)
+        self.assertEqual(self.client.get(materials, query_string=selection).json["items"], [])
+        self.assertEqual(self.client.get("/api/web/rph/availability",
+            query_string={**selection, "unit": ppki.UNIT}).status_code, 503)
+        listing = self.client.get("/api/rpt/2027/catalog").json
+        entry, = [row for row in listing["subjects"] if row["code"] == ppki.RPT_CODE]
+        self.assertIn("39 PdP Unit 1–3", entry["years"][1]["note"])
+        self.assertIn("TAHUN_3_UNIT_1_2_3_2027.pdf", self.client.get(url).headers["Content-Disposition"])
+
     def test_manipulative_component_selection_and_existing_rpt(self):
         opts = "/api/options"
         query = {"year": 2, "subject": ppki.SUBJECT}
