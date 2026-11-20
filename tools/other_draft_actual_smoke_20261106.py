@@ -124,25 +124,42 @@ def main():
                 assert bad.status_code==503,bad.json
     from docx import Document
 
-    for lesson, label, code, skill, pages in (
-        ("002", "٠٠٢", "1.1.2", "تحديد", "٢ و٤"),
-        ("003", "٠٠٣", "1.2.1", "محاكاة", "٣ و٥"),
-    ):
-        selection = {"year": 2, "subject": "ARAB", "unit": "u01", "lesson": lesson}
-        status = c.get("/internal/rph/v1/other-drafts/availability", query_string=selection,
+    unit_one_standards = (
+        "1.1.1", "1.1.2", "1.2.1", "2.1.1", "2.2.1", "3.1.1",
+        "3.2.1", "1.3.1", "1.3.2", "2.3.5", "3.4.1", "1.4.1",
+    )
+    assert sum(
+        lesson["status"] == "READY"
+        for y in range(2, 7)
+        for unit in _unit_rows(y, "ARAB")
+        for lesson in _lesson_rows(y, "ARAB", unit["value"])
+    ) == len(unit_one_standards)
+    for pdp, sp in enumerate(unit_one_standards, start=1):
+        reviewed_lesson = {"year": 2, "subject": "ARAB", "unit": "u01", "lesson": f"{pdp:03d}"}
+        status = c.get("/internal/rph/v1/other-drafts/availability", query_string=reviewed_lesson,
                        headers=auth)
         assert status.json["status"] == "READY", status.json
+        assert status.json["formats"] == ["word"]
         result = c.post("/internal/rph/v1/other-drafts/render", headers=auth, json={
-            "selection": selection, "teacher": {"class": "2 Bestari", "date": "2027-01-20",
-                                                 "time": "08:00 - 09:00", "students": "30"},
+            "selection": reviewed_lesson, "teacher": {"class": "2 Bestari", "date": "2027-01-20",
+                                                        "time": "08:00 - 09:00", "students": "30"},
             "format": "word",
         })
         assert result.status_code == 200, result.json
         doc = Document(io.BytesIO(result.data))
         fields = {row.cells[0].text: row.cells[1].text for row in doc.tables[0].rows}
-        assert label in fields["الصف والحصّة"]
-        assert code in fields["معيار التعلّم"] and skill in fields["معيار التعلّم"]
-        assert pages in doc.tables[2].cell(1, 1).text
+        number_ar = f"{pdp:03d}".translate(str.maketrans("0123456789", "٠١٢٣٤٥٦٧٨٩"))
+        assert number_ar in fields["الصف والحصّة"]
+        assert sp in fields["معيار التعلّم"]
+        assert "DRAF" not in "".join(cell.text for table in doc.tables
+                                     for row in table.rows for cell in row.cells)
+        if pdp == 2:
+            assert "تحديد" in fields["معيار التعلّم"]
+            assert "٢ و٤" in doc.tables[2].cell(1, 1).text
+        if pdp == 3:
+            assert "محاكاة" in fields["معيار التعلّم"]
+            assert "٣ و٥" in doc.tables[2].cell(1, 1).text
+    print("ARABIC_UNIT_ONE_12_WORD_PASS", flush=True)
     year6={"year":6,"subject":"ARAB","unit":"u03","lesson":"030"}
     assert c.get("/internal/rph/v1/other-drafts/availability",query_string=year6,headers=auth).status_code==200
     result=c.post("/internal/rph/v1/other-drafts/render",headers=auth,json={
