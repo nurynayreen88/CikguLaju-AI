@@ -1,30 +1,31 @@
-# RPH Bahasa Arab Tahun 3 — PdP 056 (DRAF / BELUM READY)
+# RPH Bahasa Arab Tahun 3 — PdP 056 (DRAF INDEKS RPT 2027)
 
 **Tahun:** 3 | **Subjek:** Bahasa Arab KSSR Semakan 2017 | **Unit:** الوقت كالذهب
-**Fokus PdP:** Dialog ringkas tentang waktu pulang atau keluar
-**SK/SP cadangan:** 1.4 / 1.4.1; nombor kod ada dalam DSKP asal, tetapi padanan SP cetakan h104 dan urutan RPT 2027 masih perlu pengesahan individu.
-**Tarikh / masa / kelas:** Guru mengisi waktu mula, tamat, tarikh, kelas mengikut negeri/jadual sebenar.
-**Kosa kata / ayat:** مَعَ السَّلَامَة، إِلَى اللِّقَاء، بَعْدَ الصَّلَاة
-**Objektif pembelajaran:** Melakonkan dua respons dialog berkaitan pergerakan harian.
-**Kriteria kejayaan:** Murid mencapai bukti minimum dalam objektif dan penilaian PBD; guru rekod keperluan bimbingan.
 
-**Set induksi:** Guru menunjukkan gambar keluarga dan bas sekolah dari h104.
+**Fokus PdP:** محاكاة تراكيب مواعيد الوجبات
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing bacaan dialog pendek keluar rumah/pulang dan ungkapan مع السلامة / إلى اللقاء pada h104.
+**DSKP SK/SP:** 1.4 / 1.4.1
 
-**Aktiviti 2 — Aplikasi murid:** Murid melakonkan pasangan ibu-anak dan rakan menggunakan kad masa, dengan dua giliran soal jawab.
+**Objektif pembelajaran:** أن يحاكي التلميذ ثلاثة تراكيب كاملة عن أوقات الوجبات.
 
-**Pengukuhan / Penilaian (PBD):** Dua respons dengan ungkapan sesuai dan intonasi jelas diperiksa.
+**Kriteria kejayaan:** يردّد التلميذ ثلاثة تراكيب كاملة بنطق وتنغيم مناسبين.
 
-**Penutup:** Murid mengucapkan satu salam perpisahan.
+**Set induksi:** يعرض المعلّم ثلاث صور للوجبات ويذكر نموذجًا واحدًا.
 
-**BBM:** Buku Teks Tahun 3 h104, gambar rutin/kad masa atau huruf, kad ayat dan senarai semak guru.
-**Refleksi guru:** ____ / ____ murid mencapai objektif; intervensi: ____________________.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** ينطق المعلّم تراكيب الوجبات من الصفحة مع النبر المناسب. يستمع التلاميذ ويردّدون كلّ تركيب.
 
-**Buku Teks:** DBP/KPM 2018 ISBN 978-983-49-2033-3, KSSR Semakan 2017, Unit 4 halaman bercetak **104**. PDF asal: https://drive.google.com/file/d/1U-j2TPeVTyLaZbU2qGDb9jmf53KAwNNH/view.
-**Pemetaan PDF:** Indeks halaman PDF 0-based = 104+7 = 111, kerana halaman muka depan dan pendahuluan; hanya halaman bercetak dipaparkan kepada guru.
-**DSKP asal:** https://drive.google.com/file/d/1VQcCrSyo-zmAndvAFv9pScQcLT-DRl00/view.
-**RPT rujukan 2026:** https://anyflip.com/zxzlm/vmip/basic.
-**Bukti visual:** Halaman bercetak unit ini diperiksa secara visual dalam PDF imbasan; padanan SK/SP h104 dalam perincian cetakan buku dan kecukupan PdP 2027 belum diluluskan.
-**Had pelepasan:** Bahasa Arab akhir, RPT 2027 Kumpulan A/B, penilaian guru per PdP, ujian pengeluaran Word/PDF kumpulan baharu serta Telegram/Web/DB belum lengkap.
-**Status:** DRAF_SEMAK / BELUM READY. Staging sahaja.
+**Aktiviti 2 — Aplikasi murid:** يختار تلميذ صورة وجبة ويحاكي زميله تركيبها بعد نموذج المعلّم. يتبادلان الدور.
+
+**Pengukuhan / Penilaian (PBD):** يقدّم المعلّم ثلاثة نماذج بترتيب مختلف. يردّدها التلميذ من دون تغيير الكلمات أو الترتيب.
+
+**Penutup:** يردّد التلميذ تركيبًا واحدًا مع إظهار صورة الوجبة.
+
+**BBM:** صور الوجبات، الكتاب المدرسي.
+
+**Refleksi guru:** بلغ هدف الدرس ____ من ____ تلميذًا. إجراء المتابعة ____________________.
+
+**Buku Teks:** DBP/KPM, cetakan 2018, ISBN 978-983-49-2033-3, Unit 4 halaman bercetak 104. https://www.scribd.com/document/438677752/Bahasa-Arab-Tahun-3-Teks-KSSR-Semakan
+
+**DSKP asal:** https://asiemodel.net/wp-content/uploads/2022/08/011-DSKP-KSSR-SEMAKAN-2017-BAHASA-ARAB-TAHUN-3.pdf
+
+**Status:** Indeks tarikh RPT 2027 kekal draf. Word PdP menggunakan data Arab yang disemak.

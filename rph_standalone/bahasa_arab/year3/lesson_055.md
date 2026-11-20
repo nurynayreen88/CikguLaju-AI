@@ -1,30 +1,31 @@
-# RPH Bahasa Arab Tahun 3 — PdP 055 (DRAF / BELUM READY)
+# RPH Bahasa Arab Tahun 3 — PdP 055 (DRAF INDEKS RPT 2027)
 
 **Tahun:** 3 | **Subjek:** Bahasa Arab KSSR Semakan 2017 | **Unit:** الوقت كالذهب
-**Fokus PdP:** Mendengar dan mengenal waktu aktiviti harian
-**SK/SP cadangan:** 1.2 / 1.2.2; nombor kod ada dalam DSKP asal, tetapi padanan SP cetakan h103 dan urutan RPT 2027 masih perlu pengesahan individu.
-**Tarikh / masa / kelas:** Guru mengisi waktu mula, tamat, tarikh, kelas mengikut negeri/jadual sebenar.
-**Kosa kata / ayat:** السَّاعَة، الفُطُور، الغَدَاء، المَسَاء، الصَّبَاح
-**Objektif pembelajaran:** Mengenal empat waktu atau aktiviti berdasarkan gambar jam.
-**Kriteria kejayaan:** Murid mencapai bukti minimum dalam objektif dan penilaian PBD; guru rekod keperluan bimbingan.
 
-**Set induksi:** Guru menayangkan gambar jam dan aktiviti makan/kelas.
+**Fokus PdP:** تحديد التراكيب المسموعة عن الأيّام
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru mengaitkan bahagian jam bergambar pada h103 dengan aktiviti pagi, tengah hari, petang dan malam.
+**DSKP SK/SP:** 1.4 / 1.4.3
 
-**Aktiviti 2 — Aplikasi murid:** Murid menunjuk gambar mengikut sebutan waktu guru, kemudian menyusun empat kad aktiviti seharian.
+**Objektif pembelajaran:** أن يحدّد التلميذ ثلاثة تراكيب صحيحة من أصل أربعة.
 
-**Pengukuhan / Penilaian (PBD):** Empat padanan waktu-gambar dan satu susunan harian diperiksa.
+**Kriteria kejayaan:** يطابق التلميذ ثلاثة تراكيب مسموعة مع اليوم والزمن الصحيحين.
 
-**Penutup:** Murid menyebut satu waktu ketika makan.
+**Set induksi:** يعرض المعلّم تقويمًا ويشير إلى ثلاثة أيّام متتالية.
 
-**BBM:** Buku Teks Tahun 3 h103, gambar rutin/kad masa atau huruf, kad ayat dan senarai semak guru.
-**Refleksi guru:** ____ / ____ murid mencapai objektif; intervensi: ____________________.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** ينطق المعلّم تراكيب من الصفحة عن الأمس واليوم والغد. يطابق التلاميذ التركيب مع بطاقة اليوم.
 
-**Buku Teks:** DBP/KPM 2018 ISBN 978-983-49-2033-3, KSSR Semakan 2017, Unit 4 halaman bercetak **103**. PDF asal: https://drive.google.com/file/d/1U-j2TPeVTyLaZbU2qGDb9jmf53KAwNNH/view.
-**Pemetaan PDF:** Indeks halaman PDF 0-based = 103+7 = 110, kerana halaman muka depan dan pendahuluan; hanya halaman bercetak dipaparkan kepada guru.
-**DSKP asal:** https://drive.google.com/file/d/1VQcCrSyo-zmAndvAFv9pScQcLT-DRl00/view.
-**RPT rujukan 2026:** https://anyflip.com/zxzlm/vmip/basic.
-**Bukti visual:** Halaman bercetak unit ini diperiksa secara visual dalam PDF imbasan; padanan SK/SP h103 dalam perincian cetakan buku dan kecukupan PdP 2027 belum diluluskan.
-**Had pelepasan:** Bahasa Arab akhir, RPT 2027 Kumpulan A/B, penilaian guru per PdP, ujian pengeluaran Word/PDF kumpulan baharu serta Telegram/Web/DB belum lengkap.
-**Status:** DRAF_SEMAK / BELUM READY. Staging sahaja.
+**Aktiviti 2 — Aplikasi murid:** يستمع التلاميذ إلى ترتيب جديد ويختار كلّ زوج بطاقتي الزمن واسم اليوم المطابقتين.
+
+**Pengukuhan / Penilaian (PBD):** ينطق المعلّم أربعة تراكيب بلا إشارة. يختار كلّ تلميذ ما يناسب كلّ تركيب.
+
+**Penutup:** ينطق المعلّم تركيبًا أخيرًا ويحدّد التلاميذ اليوم الذي سمعوه.
+
+**BBM:** تقويم، بطاقات اليوم، الكتاب المدرسي.
+
+**Refleksi guru:** بلغ هدف الدرس ____ من ____ تلميذًا. إجراء المتابعة ____________________.
+
+**Buku Teks:** DBP/KPM, cetakan 2018, ISBN 978-983-49-2033-3, Unit 4 halaman bercetak 103. https://www.scribd.com/document/438677752/Bahasa-Arab-Tahun-3-Teks-KSSR-Semakan
+
+**DSKP asal:** https://asiemodel.net/wp-content/uploads/2022/08/011-DSKP-KSSR-SEMAKAN-2017-BAHASA-ARAB-TAHUN-3.pdf
+
+**Status:** Indeks tarikh RPT 2027 kekal draf. Word PdP menggunakan data Arab yang disemak.
