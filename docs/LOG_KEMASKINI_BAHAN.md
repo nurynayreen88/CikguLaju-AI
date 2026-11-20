@@ -2,6 +2,9 @@
 
 | Tarikh | Bahan / perubahan | Semakan | Status |
 | --- | --- | --- | --- |
+| 2026-11-20 | Selaraskan 26 sumber English Tahun 3 dengan versi penjana, Lesson 001–003, 006–007, 011–014 dan 016–032. | Semua 160 cap jari sumber Web dan Telegram sepadan selepas pembetulan. | DALAM SEMAKAN. Sahkan penerbitan Web. |
+| 2026-11-20 | Selaraskan paparan English Year 6 Lesson 016, 032, 048 dan 064 dengan penjana. | Ujian tujuh belas kes English dan regresi aliran PPKI serta Bahasa Arab. | DALAM SEMAKAN. |
+| 2026-11-20 | Terima PPKI Tahun 2 Unit 3, agihan RPT Unit 2–3 dan Bahasa Arab Tahun 2 Word PdP 029, 031, 033. | 12 ujian pemetaaan Web, termasuk padanan silang unit dan sahkan laluan RPT. | DALAM SEMAKAN. Terbitkan Web sebelum penjana. |
 | 2026-11-20 | Pindahkan Jana Bahan selepas panel Maklumat RPH di Sediakan RPH. | Lapan ujian Web dan semakan turutan DOM lulus. Muat turun Word/PDF lulus dalam ujian aliran PPKI. | DALAM SEMAKAN. Sahkan penerbitan Web. |
 | 2026-11-20 | Tambah laluan Pendidikan Khas (PPKI) dalam Sediakan RPH dan RPT 2027. | Uji pilihan tahun, subjek, komponen, unit dan 14 PdP. Word/PDF melalui penjana Telegram. RPT Unit 2 menggunakan akses berbayar. | DALAM SEMAKAN. Terbitkan selepas penjana PPKI aktif. |
 | 2026-11-20 | Selaraskan PDF RPT Web dan pemilih Bahasa Arab Tahun 2 untuk PdP 018, 021 dan 022. | 7 ujian pilihan Word dan 1 ujian integriti katalog RPT lulus setempat. | DALAM SEMAKAN. Terbitkan Web dahulu supaya pemilih Unit 2 menerima respons penjana yang lengkap. |

@@ -8,18 +8,18 @@
 **References:** KPM Primary Year 3 SK Scheme of Work Lesson 21; toothbrushes, action-direction cards and brushing-teeth song/video.
 
 ## Set Induction (5 minutes)
-Teacher asks pupils about toothbrush colour and design. Pupils show or describe their toothbrushes.
+**Teacher:** Show a toothbrush or a picture and ask how pupils care for their teeth. **Pupils:** Describe its colour or design and say one action they use when brushing.
 
 ## Activity 1 — Preparation (15 minutes)
-In pairs pupils compare toothbrushes using simple sentences. Teacher models directions: up, down, left, right and round.
+**Teacher:** Model up, down, left, right and round using action-direction cards. Demonstrate a short spoken instruction with the matching movement. **Pupils:** Compare two toothbrushes or pictures with a partner, follow each direction and practise saying the instruction as they move.
 
 ## Activity 2 — Language Arts (25 minutes)
-Teacher plays the brushing-teeth song/video from the SOW learning outline. Pupils listen, perform actions and create a short group response using familiar language and movements.
+**Teacher:** Play the brushing-teeth song/video identified in the SOW outline, pause for pupils to identify directions, then invite groups to devise a short response using words and actions from the song. **Pupils:** Listen, perform the directions, agree on a sequence of movements and rehearse their group response with at least one spoken phrase.
 
 ## PBD (10 minutes)
-Teacher observes imaginative responses to the song and comprehension of its language. Pupils perform their group response.
+**Teacher:** Observe whether each group responds creatively to the song and whether individual pupils use one understandable phrase with two appropriate actions. **Pupils:** Perform their short sequence, say a relevant phrase and demonstrate two brushing movements.
 
 ## Closure (5 minutes)
-Teacher reviews useful vocabulary and toothbrushing actions. Pupils share a learned phrase.
+**Teacher:** Review two direction cards and invite pupils to connect the language to a healthy habit. **Pupils:** Say one direction and show its matching movement.
 
 **QA:** SOW lesson outline and standards checked. Direct Teacher's Book and Word/PDF output verification pending. NOT READY FOR RELEASE.

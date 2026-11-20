@@ -8,18 +8,18 @@
 **References:** KPM Year 3 SK SOW Lesson 26; pictures of walking, car, bike and bus; 'Going to school' rhyme supplied in SOW.
 
 ## Set Induction (5 minutes)
-Teacher displays four transport pictures. Pupils name the transport and suggest names for four pictured children.
+**Teacher:** Display the four transport pictures and invite pupils to connect each picture to a way of travelling to school. **Pupils:** Name the transport and point to the picture that matches the phrase they hear.
 
 ## Activity 1 — Rhyme modelling (15 minutes)
-Teacher introduces the SOW rhyme verse by verse, with gestures for each means of transport. Pupils listen and imitate.
+**Teacher:** Present the 'Going to school' rhyme from the SOW one verse at a time and model a gesture for each means of transport. **Pupils:** Listen for the transport word in each verse, choose its picture and repeat the verse with the matching movement.
 
 ## Activity 2 — Rhyme practice (25 minutes)
-Pupils repeat the full rhyme with actions; teacher writes a version with transport words missing. Pupils copy and complete the gaps, then rehearse in four groups.
+**Teacher:** Lead a complete rhyme recitation with gestures, then display the same rhyme with transport words omitted and organise four groups to rehearse the existing verses. **Pupils:** Copy and complete the missing words using the transport pictures, compare answers with a partner and perform their assigned verse as a group.
 
 ## PBD (10 minutes)
-Teacher observes comprehension of the rhyme and participation in group performance. Pupils perform their assigned verses.
+**Teacher:** Check each pupil's completed transport words and observe whether pupils recognise two transport phrases when the rhyme is recited and join in with suitable gestures. **Pupils:** Supply two missing transport words, identify the matching pictures and recite one verse with the appropriate action.
 
 ## Closure (5 minutes)
-Groups perform the complete rhyme in sequence and share a favourite transport word.
+**Teacher:** Invite the groups to recite the verses in order and correct one frequently confused transport word. **Pupils:** Join the complete rhyme and name a transport word they can now recognise.
 
 **QA:** SOW lesson standards and outline checked; direct source-asset and Word/PDF output verification pending. NOT READY FOR RELEASE.

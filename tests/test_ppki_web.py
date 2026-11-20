@@ -50,7 +50,7 @@ class PpkiWebTest(unittest.TestCase):
         self.source_requests.append((path, payload))
         if path == "catalog":
             return json.dumps(self.catalog).encode()
-        if path == "rpt.pdf":
+        if path in ("rpt.pdf", "rpt-current.pdf"):
             return self.pdf
         return self.docx.getvalue() if payload["format"] == "word" else self.pdf
 
@@ -103,6 +103,28 @@ class PpkiWebTest(unittest.TestCase):
         self.assertEqual(response.data, self.pdf)
         self.assertEqual(response.headers["X-RPT-Source-SHA256"], sha256(self.pdf).hexdigest())
         self.assertEqual(response.headers["X-RPT-Personalization-Allowed"], "0")
+
+    def test_unit_three_is_scoped_independently_and_rpt_expands(self):
+        self.catalog["additional_units"] = [{
+            "value": ppki.UNIT3, "label": "Unit 3 · Bersih Cermin Peribadi",
+            "lessons": [{"value": f"{n:03d}", "label": f"PdP {n:03d}", "formats": ["word", "pdf"],
+                         "textbook_ref": "Buku Teks hlm. 24–25"} for n in range(15, 19)],
+        }]
+        units = self.client.get("/api/options", query_string={"year": 2, "kind": "units",
+                                "subject": ppki.SUBJECT, "component": ppki.COMPONENT})
+        self.assertEqual([item["value"] for item in units.json], [ppki.UNIT, ppki.UNIT3])
+        for unit, numbers in ((ppki.UNIT, range(1, 15)), (ppki.UNIT3, range(15, 19))):
+            choices = self.client.get("/api/options", query_string={"year": 2, "kind": "pdp",
+                                      "subject": ppki.SUBJECT, "unit": unit})
+            self.assertEqual([int(item["value"]) for item in choices.json], list(numbers))
+        selection = {**self.selection, "unit": ppki.UNIT3, "lesson": "018"}
+        self.assertEqual(self.client.get("/api/web/rph/pdf", query_string=selection).status_code, 200)
+        wrong_unit = dict(selection, unit=ppki.UNIT)
+        self.assertEqual(self.client.get("/api/web/rph/pdf", query_string=wrong_unit).status_code, 503)
+        pdf = self.client.get(f"/api/rpt/2027/all/{ppki.RPT_CODE}/2.pdf")
+        self.assertEqual(pdf.status_code, 200)
+        self.assertIn("UNIT_2_3_2027.pdf", pdf.headers["Content-Disposition"])
+        self.assertEqual(self.source_requests[-1][0], "rpt-current.pdf")
 
     def test_missing_catalog_hides_rpt_and_blocks_fake_pdp(self):
         self.catalog["lessons"].pop()
