@@ -87,11 +87,10 @@ def _rph_format_activity_lines(value):
 
 def _rph_attendance_value(total):
     """Print the teacher-entered class size directly."""
-    total=str(total or '').strip()
-    return total if total else '________________'
+    return _rph_blank_or_value(total)
 
 def _rph_blank_or_value(value, width=28):
-    return str(value).strip() if str(value or '').strip() else ('_' * width)
+    return str(value or '').strip()
 
 def _is_english_subject(s): return str((s or {}).get('subject') or '').strip().lower() in ('bahasa inggeris','english')
 
@@ -187,12 +186,12 @@ def _create_rph_word(doc, section, s, ai_text, path):
     rr = p.add_run(_rph_title(s)); rr.bold=True; rr.font.size=Pt(15)
     p.paragraph_format.space_after = Pt(6)
 
-    def add_row(table, label, value):
+    def add_row(table, label, value, *, blank=False):
         cells = table.add_row().cells
         cells[0].width = Cm(4.4); cells[1].width = Cm(12.5)
         p0=cells[0].paragraphs[0]; p0.paragraph_format.space_after=Pt(0); x=p0.add_run(label); x.bold=True
         p1=cells[1].paragraphs[0]; p1.paragraph_format.space_after=Pt(0)
-        parts=(value or '—').split('\n')
+        parts=(value or ('' if blank else '—')).split('\n')
         p1.add_run(parts[0])
         for part in parts[1:]: p1.add_run('\n'+part)
         for c in cells:
@@ -208,7 +207,8 @@ def _create_rph_word(doc, section, s, ai_text, path):
             value = _rph_blank_or_value(value)
         elif pi_primary and label == 'STANDARD PEMBELAJARAN':
             value = _dedup_standard_lines_v25216(value).replace('<br/>', '\n')
-        add_row(table, _rph_display_label(s, label), _rph_display_value(s, label, value))
+        add_row(table, _rph_display_label(s, label), _rph_display_value(s, label, value),
+                blank=label in ('TARIKH', 'HARI', 'MASA', 'KELAS', 'BILANGAN MURID'))
     doc.add_paragraph().paragraph_format.space_after=Pt(1)
     t2=doc.add_table(rows=1, cols=3); t2.alignment=WD_TABLE_ALIGNMENT.CENTER
     activity_header, phase_labels, tail_labels = _rph_table_labels(s, pi_primary)
@@ -243,7 +243,8 @@ def _create_rph_word(doc, section, s, ai_text, path):
         for c in row.cells:
             _word_set_cell_border(c, top={'val':'single','sz':'6','color':'666666'}, bottom={'val':'single','sz':'6','color':'666666'}, left={'val':'single','sz':'6','color':'666666'}, right={'val':'single','sz':'6','color':'666666'})
     t3=doc.add_table(rows=0, cols=2); t3.alignment=WD_TABLE_ALIGNMENT.CENTER
-    add_row(t3,tail_labels[0],rph.get('PEMULIHAN / PENGAYAAN',''))
+    if s.get('subject') not in ('Pendidikan Muzik', 'Muzik') or rph.get('PEMULIHAN / PENGAYAAN'):
+        add_row(t3,tail_labels[0],rph.get('PEMULIHAN / PENGAYAAN',''))
     add_row(t3,tail_labels[1],rph.get('REFLEKSI','') or ('____ / ____ pupils achieved the lesson objectives.\n____ / ____ pupils require further support.\nFollow-up action: ______________________________' if _is_english_subject(s) else '____ / ____ murid mencapai objektif.\n____ / ____ murid belum mencapai objektif.\nTindakan susulan: ______________________________'))
     footer=section.footer; fp=footer.paragraphs[0]; fp.alignment=WD_ALIGN_PARAGRAPH.CENTER; fr=fp.add_run('CikguLaju AI  •  '); fr.font.size=Pt(7.5); _word_page_number(fp)
     # Compact the active (second) Word RPH renderer, preserving all content.
