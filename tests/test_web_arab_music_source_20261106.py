@@ -102,7 +102,7 @@ class DraftWebQA(unittest.TestCase):
             (2, "u02", range(13, 29)),
             (2, "u03", range(29, 45)),
             (2, "u04", range(45, 61)),
-            (3, "u01", range(1, 8)),
+            (3, "u01", range(1, 13)),
         ):
             ready = [
                 {"value": f"{pdp:03d}", "label": f"PdP {pdp:03d} — اللغة العربية",
@@ -127,7 +127,7 @@ class DraftWebQA(unittest.TestCase):
             result = self.client.get("/api/web/rph/availability",
                                      query_string={**self.query, "unit": unit, "lesson": lesson})
             self.assertEqual(result.status_code, 503)
-        for unit, lesson in (("u01", "008"), ("u02", "001")):
+        for unit, lesson in (("u01", "013"), ("u02", "001")):
             result = self.client.get("/api/web/rph/availability", query_string={
                 **self.query, "year": 3, "unit": unit, "lesson": lesson,
             })
