@@ -482,7 +482,7 @@
       "sp": [
         "2.4.1"
       ],
-      "page": "60",
+      "page": "60-61",
       "audio": null,
       "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
       "rpt2027_slot": {
@@ -495,7 +495,7 @@
       "source_book_text_crosscheck": true,
       "source_book_text_crosscheck_scope": "UNIT_DAN_CADANGAN_AKTIVITI; HALAMAN_DIRUJUK_DARI_RPT_2025_26, BELUM_VERIFIKASI_IMEJ_PENUH",
       "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
-      "source_book_audio_numbers_printed": "49–53",
+      "source_book_audio_numbers_printed": "49–57",
       "source_book_audio_file_verified": false,
       "book_text_topic_evidence": "Rekoder — penjarian not C’"
     },

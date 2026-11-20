@@ -1,3 +1,15 @@
+## 20 November 2026 — Audio projek Tahun 5 dan pengayaan rekoder Tahun 4
+
+| Tahun | PdP | Padanan | Rujukan buku teks |
+|---|---|---|---|
+| 4 | 17 | Audio 49–53 untuk latihan penjarian. Audio 54–57 untuk pengayaan melodi kaunter *Cergas Badan*. | [Hlm. 60–61](https://fliphtml5.com/jfuhh/hbrx/Buku_Teks_Pendidikan_Kesenian_Tahun_4/) |
+| 5 | 15–16 | Audio 49–54 menyediakan contoh *Hot Cross Buns* dan *Bow Wow Wow* daripada Unit 4. Kumpulan memilih satu lagu daripada Unit 1–5. | [Hlm. 27](https://fliphtml5.com/ubcth/vbqi/Pendidikan_Muzik_Tahun_5_SK/33/) dan [hlm. 44](https://online.anyflip.com/sgimv/qcts/files/basic-html/page50.html) |
+| 5 | 34–35 | Audio 137–139, 150–151 dan 158–161 menyediakan contoh nyanyian, iringan dan permainan rekoder atau perkusi *Joget Khatulistiwa*. Kumpulan memilih satu lagu daripada Unit 6–10. | [Hlm. 79 dan 82–87](https://fliphtml5.com/ubcth/vbqi/Pendidikan_Muzik_Tahun_5_SK/) dan [hlm. 88](https://online.anyflip.com/sgimv/qcts/files/basic-html/page94.html) |
+
+Keempat-empat trek tambahan Tahun 4 dan 15 trek contoh Tahun 5 diperoleh daripada pautan muat turun sumber tanpa log masuk Google. Semakan media mengenal pasti kesemua 19 fail sebagai MP3. Liputan indeks ialah 146 PdP dan 614 fail unik. Contoh projek Tahun 5 menggunakan semula fail yang sudah ada dalam unit berkenaan. Semakan ini meliputi rujukan halaman, nama fail dan kebolehcapaian sumber.
+
+Projek Penggal Dua Tahun 2 (PdP 26–27) menggunakan *Permainya Negaraku* pada [hlm. 46–47](https://anyflip.com/vextx/jgdi/basic/51-100). Fail asal yang dikenal pasti tersedia melalui akses Drive bersambung, tetapi muat turun tanpa sesi masih memulangkan halaman pengesahan Google Drive. PdP berkenaan belum termasuk dalam indeks muat turun terus.
+
 ## 20 November 2026 — Padanan tambahan audio mengikut nota guru dan projek
 
 Semakan halaman buku mengesahkan rujukan berikut. Muat turun tanpa sesi Google berjaya dan semua fail dikenal pasti sebagai WAV atau MP3. Liputan audit meningkat daripada 117 kepada 142 PdP dan daripada 571 kepada 610 fail asal.
