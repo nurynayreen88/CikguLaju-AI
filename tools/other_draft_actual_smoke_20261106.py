@@ -26,7 +26,7 @@ def main():
     assert "CIKGULAJU_DB_PATH =" not in (
         entry.split("# Bahasa Arab + Pendidikan Muzik DRAF:")[1]
              .split("# Private source-matched RPT")[0])
-    for y,count in {2:57,3:60,4:58,5:60,6:60}.items():
+    for y,count in {2:60,3:60,4:58,5:60,6:60}.items():
         unit=_unit_rows(y,"ARAB")
         assert len(unit)==4
         lessons=0
@@ -129,8 +129,9 @@ def main():
         "3.2.1", "1.3.1", "1.3.2", "2.3.5", "3.4.1", "1.4.1",
     )
     unit_two_standards = {
-        13: "1.1.1", 14: "2.2.2", 15: "1.1.1", 16: "2.2.2", 17: "3.1.1",
-        19: "1.3.1", 20: "1.3.2", 23: "1.4.1", 24: "1.4.5", 25: "2.3.1",
+        13: "1.1.1", 14: "2.2.2", 15: "1.1.1", 16: "2.2.2", 17: "3.1.1", 18: "2.2.3",
+        19: "1.3.1", 20: "1.3.2", 21: "2.3.1", 22: "2.3.3",
+        23: "1.4.1", 24: "1.4.5", 25: "2.3.1",
         26: "3.4.1", 27: "1.4.5", 28: "2.5.1",
     }
     reviewed = {
@@ -170,11 +171,10 @@ def main():
             assert "محاكاة" in fields["معيار التعلّم"]
             assert "٣ و٥" in doc.tables[2].cell(1, 1).text
     print(f"ARABIC_REVIEWED_WORD_PASS {len(reviewed)}", flush=True)
-    for pdp in ("018", "021", "022"):
-        selection = {"year": 2, "subject": "ARAB", "unit": "u02", "lesson": pdp}
-        status = c.get("/internal/rph/v1/other-drafts/availability",
-                       query_string=selection, headers=auth)
-        assert status.status_code == 404, status.json
+    wrong_unit = {"year": 2, "subject": "ARAB", "unit": "u01", "lesson": "018"}
+    status = c.get("/internal/rph/v1/other-drafts/availability",
+                   query_string=wrong_unit, headers=auth)
+    assert status.status_code == 404, status.json
     year6={"year":6,"subject":"ARAB","unit":"u03","lesson":"030"}
     assert c.get("/internal/rph/v1/other-drafts/availability",query_string=year6,headers=auth).status_code==200
     result=c.post("/internal/rph/v1/other-drafts/render",headers=auth,json={
