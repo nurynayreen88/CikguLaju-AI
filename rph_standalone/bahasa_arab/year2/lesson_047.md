@@ -1,30 +1,30 @@
-# RPH Bahasa Arab Tahun 2 — PdP 047 (DRAF / BELUM READY)
+# RPH Bahasa Arab Tahun 2 — PdP 047
 
 **Tahun:** 2 | **Subjek:** Bahasa Arab KSSR Semakan 2017 | **Unit:** أحافظ على الأدوات الدراسية
-**Fokus PdP:** Mendengar bunyi ط dalam perkataan
-**SK/SP cadangan:** 1.1 / 1.1.1; sasaran kemahiran berdasarkan aktiviti buku teks pada h78, belum disahkan sebagai SP cetakan/RPT 2027 PdP rasmi.
+**Fokus PdP:** Ulang bunyi huruf ta
+**DSKP SK/SP:** 1.1 / 1.1.1 — محاكاة أصوات الحروف المسموعة وترديدها ونطقها.
 **Tarikh / masa / kelas:** Diisi guru ikut jadual sebenar.
-**Kosa kata / ayat:** طَيَّار، طِفْل، طَمَاطِم، طَاوُوس
-**Objektif pembelajaran:** Mengecam tiga daripada empat kata apabila mendengar bunyi ط.
-**Kriteria kejayaan:** Murid memperlihatkan bukti minimum dalam objektif; rekod PBD dan tindakan pemulihan ditentukan guru.
+**Kosa kata / ayat:** طَبِيبَة، طِفْل، طُيُور، طَمَاطِم، مَطَر، ضَابِط
+**Objektif pembelajaran:** أن يحاكي التلميذ صوت الطاء بحركته في أربع كلمات من أصل خمس بعد سماعها.
+**Kriteria kejayaan:** يردّد التلميذ أربع كلمات على الأقل مع نطق الطاء وحركتها نطقًا صحيحًا.
 
-**Set induksi:** Guru menunjukkan gambar juruterbang, kanak-kanak dan tomato.
+**Set induksi:** يعرض المعلّم صورتي طِفْلٍ وطُيُورٍ وينطق الكلمتين. يستمع التلاميذ ويردّدون طِ وطُ.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing sebutan dan perbezaan makhraj ط berdasarkan ilustrasi kata h78.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** ينطق المعلّم طَبِيبَةٌ وطِفْلٌ وطُيُورٌ. يردّد التلاميذ الكلمات مع الإشارة إلى صورها.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menunjuk kad gambar sebaik mendengar kata, kemudian menyebut satu perkataan secara bergilir.
+**Aktiviti 2 — Aplikasi murid:** ينطق المعلّم طَمَاطِمُ ومَطَرٌ وضَابِطٌ. يستمع التلاميذ إلى موضع الطاء ويردّدون الكلمات في أزواج.
 
-**Pengukuhan / Penilaian (PBD):** Tiga kata dikenal dan disebut dengan tepat.
+**Pengukuhan / Penilaian (PBD):** ينطق المعلّم خمس كلمات بترتيب مختلف. يعيد التلميذ نطقها ويسجّل المعلّم صحة صوت الطاء وحركتها.
 
-**Penutup:** Murid menyebut satu kata berhuruf ط.
+**Penutup:** ينطق المعلّم إحدى الكلمات المصوّرة. يرفع التلاميذ صورتها ويردّدونها.
 
-**BBM:** Buku Teks h78, gambar/kad alat sekolah, alat tulis sebenar, rekod PBD.
+**BBM:** الكتاب المدرسي، بطاقات صور الكلمات وقائمة رصد النطق.
 
-**Refleksi guru:** ____ / ____ murid mencapai objektif. Pemulihan/pengayaan: _______________________.
+**Refleksi guru:** بلغ هدف الدرس ____ من ____ تلميذًا. إجراء المتابعة ____________________.
 
 **Buku Teks:** Bahasa Arab Tahun 2 KSSR Semakan 2017 DBP cetakan 2017 ISBN 978-983-49-1589-6, Unit 4 halaman bercetak **78**, PDF asal: https://drive.google.com/file/d/13CqpBb4HosAM_-HTEN-hhBCt2W5wVXCZ/view.
 **Pemetaan halaman:** Halaman PDF fizikal 1-based 90 ialah halaman bercetak 78; jangan gunakan halaman PDF sebagai bukti halaman bercetak.
 **DSKP:** https://drive.google.com/file/d/1WY_c69UshDm3jHzVK86G2xfu77UUkGYO/view.
 **RPT rujukan 2026:** https://anyflip.com/zxzlm/jffk/basic.
-**Had semakan:** Halaman bergambar telah diperiksa sebagai bukti aktiviti tetapi kod SP individu pada imej, tatabahasa/padanan PBD, penjadualan RPT 2027 A/B, dan kelulusan guru belum dimuktamadkan. Ayat serta aktiviti merupakan olahan, bukan salinan teks buku.
-**Status:** DRAF_SEMAK / BELUM READY. Pratonton staging sahaja, tidak mengubah data pengguna/Telegram/Web atau produksinya.
+**Semakan:** Panel buku teks dan DPK dipadankan dengan RPH Word.
+**Status:** Kandungan RPH Word disemak.
