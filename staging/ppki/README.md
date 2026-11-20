@@ -83,3 +83,15 @@ python -m staging.ppki.render_pengurusan_kehidupan --output /tmp/cikgulaju-ppki
 Laluan pengguna ialah Pendidikan Khas (PPKI) → Tahun 2 → Pengurusan Kehidupan → Pengurusan Diri → Unit 1–5 → PdP. Web menggunakan katalog dan penjana yang sama melalui sambungan dalaman Telegram. RPT 2027 menawarkan PDF agihan 39 PdP Unit 1–5 untuk akaun berbayar aktif. Guru memilih tarikh pelaksanaan mengikut jadual kelas.
 
 [DSKP Pengurusan Kehidupan Tahun 2](https://asiemodel.net/wp-content/uploads/2022/08/024-DSKP-KSSR-PENDIDIKAN-KHAS-SEMAKAN-2017-MASALAH-PEMBELAJARAN-PENGURUSAN-KEHIDUPAN-TAHUN-2.pdf) · [Buku Teks hlm. 13](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/20/) · [Buku Teks hlm. 14](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/21/) · [Buku Teks hlm. 15](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/22/) · [Panduan RPI KPM](https://www.moe.gov.my/spi-kpm-bil-7-tahun-2023-buku-panduan-rancangan-pe) · [Buku Teks hlm. 19](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/26/) · [Buku Teks hlm. 21](https://fliphtml5.com/ktpkn/mnma/BT_Pengurusan_Diri_dan_Kemahiran_Manupulatif_Tahun_2/28/) · [Buku Teks hlm. 24](https://fliphtml5.com/ktpkn/mnma/BT_Pengurusan_Diri_dan_Kemahiran_Manupulatif_Tahun_2/31/) · [Buku Teks hlm. 25](https://fliphtml5.com/ktpkn/mnma/BT_Pengurusan_Diri_dan_Kemahiran_Manupulatif_Tahun_2/32/)
+
+
+## Kemahiran Manipulatif Unit 1 Kami Aktif
+
+| PdP | Fokus RPH | SK / SP | Buku Teks |
+| --- | --- | --- | --- |
+| 040 | Golek bola ke sasaran | 1.2 / 1.2.1(i), (ii) | 39 |
+| 041 | Baling pundi kacang ke sasaran | 1.2 / 1.2.1(i), (iii) | 39 |
+| 042 | Ayun dan pukul objek ringan | 1.2 / 1.2.1(i), (vi) | 40 |
+| 043 | Tolak dan tarik objek | 1.2 / 1.2.1(viii), (ix) | 42 |
+
+Rujuk DSKP hlm. 36 dan nota guru pada hlm. 39, 40 dan 42. Empat RPH ini meliputi SK 1.2 dan tersedia melalui pilihan komponen Kemahiran Manipulatif selepas penerbitan. RPT Pengurusan Diri menggunakan agihan Unit 1–5. [Padanan sumber](../../audits/ppki_pengurusan_kehidupan_tahun2_kemahiran_manipulatif_20261120.md)
