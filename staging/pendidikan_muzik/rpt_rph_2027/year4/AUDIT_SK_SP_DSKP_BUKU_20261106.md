@@ -1,6 +1,10 @@
 **Kemas kini visual 6 November 2026:** Buku teks Tahun 4 telah dibuka pada halaman cetak 70–71 dan 82–83. Halaman 84 ialah Seni Visual Kota Ceria, bukan Muzik. Kedua-dua RPH kini merujuk skor/aktiviti pada halaman sebenar; audio kekal tidak disahkan. Rujuk `year4/SEMAKAN_VISUAL_SKOR_PDP21_24_20261106.md`.
 
 
+## Semakan deskripsi 20 November 2026
+
+Padankan 8 SK dan 19 SP bagi 35 RPH dengan jadual DSKP Pendidikan Muzik Tahun 4 halaman bercetak 19–29. Penjana menggunakan huraian ringkas bersama kod asal. Padanan SK 3.1 dengan SP 3.2.x serta SK 4.1 dengan SP 4.2.1 mengikut cetakan DSKP Muzik 2019. Semakan ini meliputi medan standard. Semakan audio dan skor keseluruhan masih berbaki. [DSKP Pendidikan Muzik Tahun 4](https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-PMz-Tahun-4.pdf)
+
 ## 6 November 2026 — keputusan kerja staging
 
 Kod bercetak DSKP Muzik dan buku teks telah diselaraskan pada draf RPH/RPT Tahun 4: PdP21 `3.2.2/3.2.3`, PdP24 `3.2.1/3.2.2/3.2.3`. Kod sumber RPT lama kekal pada `sp_rpt_source` dalam manifest. Bagi PdP21, teras mencipta melodi dihadkan kepada B/A/G; C’ daripada aktiviti buku teks hanya pengayaan pilihan. Ini **bukan kelulusan akhir** kerana SK 3.1 dan SP 3.2.x pada cetakan DSKP masih tidak seragam, skor visual belum disahkan dan tiada sign-off kurikulum. Produksi tidak berubah.

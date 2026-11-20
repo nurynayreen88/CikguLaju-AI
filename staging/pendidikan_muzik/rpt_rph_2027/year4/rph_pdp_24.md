@@ -10,11 +10,11 @@
 
 **Objektif:** Mencipta satu corak irama dan satu jawapan melodi ringkas menggunakan not B, A dan G, kemudian mempersembahkannya mengikut detik.
 
-**Set induksi (4 minit):** Guru menepuk pola soalan empat detik, kemudian murid membalas satu pola jawapan secara berpasangan; guru mengaitkan respons itu dengan ciptaan melodi.
+**Set induksi (4 minit):** Guru menepuk pola soalan empat detik. Murid membalas dengan pola tepukan dalam empat detik secara berpasangan.
 
-**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru memperkenalkan Contoh Soalan dan dua pilihan Contoh Jawapan pada skor buku m/s 82–83.
+**Aktiviti 1 — Demonstrasi / penerokaan (8 minit):** Guru menunjukkan contoh soalan dan dua jawapan pada halaman 82, kemudian memainkan contoh tersebut atau menggunakan Audio 90 hingga 92 jika tersedia daripada sumber sekolah. Murid mengikuti skor dan mengenal pasti dua jawapan yang berbeza bagi soalan yang sama.
 
-**Aktiviti 2 — Aplikasi muzik (10 minit):** Murid mencipta corak irama dengan empat kad notasi, menepuk corak serta menghasilkan melodi soalan-jawapan menggunakan not B, A dan G. Pasangan mempersembahkan dan guru menilai ketepatan detik serta pic.
+**Aktiviti 2 — Aplikasi muzik (10 minit):** Guru memberi contoh frasa soalan menggunakan not B, A dan G. Murid menyusun empat kad notasi seperti pada halaman 83, menepuk corak, kemudian menulis jawapan melodi pada baluk menggunakan not B, A dan G. Setiap pasangan memainkan soalan dan jawapan secara bergilir.
 
 **Pengukuhan dan pentaksiran (6 minit):** Setiap pasangan mempersembahkan satu soalan dan jawapan melodi B/A/G; guru merekod tiga aspek, iaitu ketepatan detik, pic dan respons pasangan.
 
@@ -22,12 +22,12 @@
 
 **Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK m/s 82–83, empat kad notasi bagi setiap kumpulan, kad B/A/G, papan baluk dan rekoder.
 
-**Rujukan buku teks:** m/s 82–83 bagi contoh soalan-jawapan dan permainan Cipta Melodi dalam Buku Teks Pendidikan Kesenian Tahun 4 (RPT lama hanya menyebut m/s 82). **Semakan visual halaman 82–83 dibuat pada 6 November 2026: contoh skor soalan/jawapan dan permainan empat kad notasi diperiksa. Halaman 84 ialah unit Seni Visual Kota Ceria, bukan kandungan PdP Muzik ini.** Sumber: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
+**Rujukan buku teks:** Buku Teks Pendidikan Kesenian Tahun 4, halaman 82–83. Halaman 82 memaparkan contoh skor soalan dan jawapan. Halaman 83 menerangkan permainan Cipta Melodi dengan empat kad notasi.
 
-**Rujukan audio bercetak:** 90–92. **Belum disahkan sama ada fail trek tersedia atau sepadan dengan laluan penghantaran.**
+**Rujukan audio bercetak:** Audio 90 untuk contoh soalan, Audio 91 untuk jawapan pertama dan Audio 92 untuk jawapan kedua. Melodi utama ketiga-tiga rakaman sepadan dengan skor halaman 82. Akses guru kepada fail masih perlu disahkan.
 
-**Audit silang DSKP/buku (6 Nov 2026, BELUM DILULUSKAN):** Draf menggunakan kod SP 3.2.1, 3.2.2, 3.2.3 yang dicetak dalam DSKP Muzik dan buku teks. Kod RPT asal 3.1.1, 3.1.2, 3.1.3 dikekalkan dalam manifest untuk audit. SK 3.1 / SP 3.2.x yang bercanggah dari segi nombor dalam DSKP masih memerlukan keputusan kurikulum; skor notasi visual dan audio belum disahkan.
+**Audit silang DSKP/buku (20 November 2026):** SK 3.1 dan SP 3.2.1 hingga 3.2.3 mengikut jadual DSKP Muzik Tahun 4 2019. Guru menggunakan contoh buku untuk perbandingan melodi. Ciptaan murid berfokus pada B, A dan G.
 
 **Refleksi / pemulihan:** __________________________________________________
 
-**Kawalan penerbitan:** DRAF STAGING. Ujian asas Word/PDF lulus tetapi integrasi Web–Telegram, skor dan audio belum disahkan; jangan aktifkan secara langsung di Web atau Telegram.
+**Kawalan penerbitan:** DRAF STAGING. Semakan capaian guru dan penyampaian melalui Web serta Telegram masih berbaki.
