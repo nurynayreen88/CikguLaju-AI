@@ -1,0 +1,131 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 3,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 3 · Bijak Cermat Diri Selamat",
+  "content_standards": {
+    "3.1": "Penjagaan kemudahan di tandas dan bilik mandi."
+  },
+  "learning_standards": {
+    "3.1.1": "Menamakan kemudahan di tandas dan bilik mandi.",
+    "3.1.2": "Menjelaskan cara menjaga kemudahan di tandas dan bilik mandi.",
+    "3.1.3": "Menunjukkan cara menjaga kemudahan di tandas dan bilik mandi.",
+    "3.1.4": "Mengaplikasikan cara menjaga kebersihan dan keselamatan ketika menjaga kemudahan tandas dan bilik mandi."
+  },
+  "lessons": [
+    {
+      "pdp": "036",
+      "title": "Namakan kemudahan di tandas dan bilik mandi",
+      "sp": "3.1.1",
+      "focus": "Mengenal kemudahan asas melalui gambar dan model.",
+      "book": "Buku Teks hlm. 32–33 (hlm. 32 sebagai set induksi)",
+      "objective": "Murid menamakan sekurang-kurangnya empat daripada lima kemudahan yang ditunjukkan.",
+      "materials": "Gambar tandas, sinki, paip, pancuran dan bekas sampah.",
+      "induction": [
+        "Guru memaparkan gambar bilik mandi dan tandas. Guru boleh menggunakan nyanyian berpandu pada hlm. 32 sebagai pengayaan.",
+        "Murid menunjuk kemudahan yang dikenali."
+      ],
+      "guided": [
+        "Guru memadankan gambar lima kemudahan dengan kad nama.",
+        "Murid menyebut atau memilih nama bagi setiap gambar."
+      ],
+      "practice": [
+        "Guru memaparkan lima kad tanpa label mengikut urutan baharu.",
+        "Murid memberi nama yang sepadan bagi setiap gambar."
+      ],
+      "closure": [
+        "Guru meminta nama satu kemudahan untuk mencuci tangan.",
+        "Murid menunjuk gambar sinki atau paip dan menamakannya."
+      ],
+      "support": "Gunakan gambar besar dan sediakan pilihan jawapan bergambar.",
+      "assessment": "Guru mencatat ketepatan nama bagi lima kemudahan.",
+      "follow_up": "Ulang nama yang masih tertukar dengan panduan visual."
+    },
+    {
+      "pdp": "037",
+      "title": "Jelaskan cara menjaga kemudahan",
+      "sp": "3.1.2",
+      "focus": "Memilih dan menerangkan tindakan menjaga kemudahan dengan betul.",
+      "book": "Buku Teks hlm. 34",
+      "objective": "Murid menerangkan sekurang-kurangnya tiga daripada empat tindakan penjagaan dalam situasi bergambar.",
+      "materials": "Kad situasi, ikon air, paip dan bekas sampah.",
+      "induction": [
+        "Guru menunjukkan gambar paip yang masih terbuka selepas digunakan.",
+        "Murid mencadangkan tindakan yang sesuai."
+      ],
+      "guided": [
+        "Guru menerangkan tindakan menutup paip, mengepam tandas, memasukkan sampah ke dalam bekas dan melapor kerosakan.",
+        "Murid memadankan setiap tindakan dengan gambar."
+      ],
+      "practice": [
+        "Guru memberikan empat gambar situasi baharu tanpa contoh jawapan.",
+        "Murid menjelaskan tindakan penjagaan yang sesuai bagi setiap gambar."
+      ],
+      "closure": [
+        "Guru meminta murid memilih cara mencegah pembaziran air.",
+        "Murid menunjukkan kad menutup paip dan memberi sebab."
+      ],
+      "support": "Gunakan bingkai ayat untuk jawapan lisan atau pilihan kad.",
+      "assessment": "Guru menanda ketepatan empat penerangan.",
+      "follow_up": "Ulang satu situasi dengan pilihan bergambar."
+    },
+    {
+      "pdp": "038",
+      "title": "Tunjukkan cara menjaga tandas dan bilik mandi",
+      "sp": "3.1.3",
+      "focus": "Menunjukkan tindakan penjagaan pada model atau stesen simulasi.",
+      "book": "Buku Teks hlm. 34",
+      "objective": "Murid menunjukkan sekurang-kurangnya tiga daripada empat tindakan yang betul.",
+      "materials": "Model tandas dan sinki, kad langkah serta bekas sampah.",
+      "induction": [
+        "Guru menunjukkan kedudukan pemegang paip dan butang pam pada model.",
+        "Murid menunjukkan alat kawalan yang disebut oleh guru."
+      ],
+      "guided": [
+        "Guru memodelkan cara menutup paip, mengepam, membuang sampah dan melaporkan kerosakan.",
+        "Murid meniru tindakan menggunakan model dan kad."
+      ],
+      "practice": [
+        "Guru menyediakan empat tugasan pendek yang mewakili situasi sebenar.",
+        "Murid menunjukkan tindakan penjagaan bagi setiap tugasan."
+      ],
+      "closure": [
+        "Guru meminta semakan keadaan tandas contoh sebelum keluar.",
+        "Murid memilih tindakan semakan yang sesuai."
+      ],
+      "support": "Gunakan simulasi dan elakkan penggunaan kemudahan tandas sebenar semasa penilaian.",
+      "assessment": "Guru merekod empat tindakan dan bantuan yang diperlukan.",
+      "follow_up": "Ulang tindakan yang memerlukan lebih bimbingan."
+    },
+    {
+      "pdp": "039",
+      "title": "Amalkan kebersihan dan keselamatan ketika menjaga kemudahan",
+      "sp": "3.1.4",
+      "focus": "Melaksanakan rutin keselamatan di stesen simulasi tandas dan bilik mandi.",
+      "book": "Buku Teks hlm. 34",
+      "objective": "Murid mengamalkan sekurang-kurangnya tiga daripada empat tindakan kebersihan dan keselamatan.",
+      "materials": "Model, kad semak dan papan tanda lantai basah.",
+      "induction": [
+        "Guru menunjukkan contoh gambar lantai basah dan sinki yang kemas.",
+        "Murid mengenal pasti gambar yang memerlukan amaran."
+      ],
+      "guided": [
+        "Guru memodelkan menjaga lantai kering, mencuci tangan, meletakkan tanda amaran dan meminta bantuan jika perlu.",
+        "Murid berlatih memilih tindakan mengikut gambar situasi."
+      ],
+      "practice": [
+        "Guru menyediakan empat tugasan simulasi di ruang yang kering.",
+        "Murid melakukan tindakan kebersihan dan keselamatan mengikut kad tugasan."
+      ],
+      "closure": [
+        "Guru meminta satu tindakan jika kemudahan tidak selamat.",
+        "Murid menunjukkan tanda amaran dan menyatakan orang dewasa yang boleh membantu."
+      ],
+      "support": "Sediakan stesen yang boleh dicapai serta kad arahan langkah demi langkah.",
+      "assessment": "Guru menyemak empat tindakan dan tahap bantuan.",
+      "follow_up": "Ulang satu tindakan melalui simulasi bergambar."
+    }
+  ]
+}

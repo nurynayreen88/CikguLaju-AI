@@ -106,7 +106,7 @@ class PpkiTelegramTest(unittest.TestCase):
 
 
 class PpkiApiTest(unittest.TestCase):
-    def test_year3_17_word_pdf_and_rpt_have_exact_scope(self):
+    def test_year3_39_word_pdf_and_rpt_have_exact_scope(self):
         app = Flask(__name__)
         app.register_blueprint(create_ppki_blueprint())
         client = app.test_client()
@@ -121,36 +121,41 @@ class PpkiApiTest(unittest.TestCase):
             self.assertEqual(source["kemahiran_manipulatif"], [])
             self.assertEqual([row["value"] for row in source["lessons"]],
                              [f"{number:03d}" for number in range(1, 18)])
+            self.assertEqual([unit["value"] for unit in source["additional_units"]], [UNIT, UNIT3])
             self.assertEqual(client.get(prefix + "/catalog?year=3&year=2", headers=headers).status_code, 400)
             teacher = {"class": "3 Bestari", "date": "2027-01-20", "time": "09:00 - 09:30",
                        "students": "8", "reflection": "Ulang dengan pilihan bergambar."}
-            for row in source["lessons"]:
-                selection = {"year": 3, "subject": SUBJECT, "unit": UNIT1, "lesson": row["value"]}
-                for fmt in ("word", "pdf"):
-                    response = client.post(prefix + "/render", headers=headers,
-                                           json={"selection": selection, "teacher": teacher, "format": fmt})
-                    self.assertEqual(response.status_code, 200)
-                    self.assertIn("TAHUN_3_" + row["value"], response.headers["Content-Disposition"])
-                    if fmt == "word":
-                        doc = Document(BytesIO(response.data))
-                        text = "\n".join([p.text for p in doc.paragraphs] +
-                                         [cell.text for table in doc.tables for cells in table.rows for cell in cells.cells])
-                    else:
-                        doc = PdfReader(BytesIO(response.data))
-                        self.assertEqual(len(doc.pages), 1)
-                        text = doc.pages[0].extract_text()
-                    self.assertIn("Tahun 3", text)
-                    self.assertIn("Ulang dengan pilihan bergambar.", text)
+            units = [{"value": UNIT1, "lessons": source["lessons"]}, *source["additional_units"]]
+            for unit, numbers in zip(units, (range(1, 18), range(18, 36), range(36, 40)), strict=True):
+                self.assertEqual([row["value"] for row in unit["lessons"]], [f"{n:03d}" for n in numbers])
+                for row in unit["lessons"]:
+                    selection = {"year": 3, "subject": SUBJECT, "unit": unit["value"], "lesson": row["value"]}
+                    for fmt in ("word", "pdf"):
+                        response = client.post(prefix + "/render", headers=headers,
+                                               json={"selection": selection, "teacher": teacher, "format": fmt})
+                        self.assertEqual(response.status_code, 200)
+                        self.assertIn("TAHUN_3_" + row["value"], response.headers["Content-Disposition"])
+                        if fmt == "word":
+                            doc = Document(BytesIO(response.data))
+                            text = "\n".join([p.text for p in doc.paragraphs] +
+                                             [cell.text for table in doc.tables for cells in table.rows for cell in cells.cells])
+                        else:
+                            doc = PdfReader(BytesIO(response.data))
+                            self.assertEqual(len(doc.pages), 1)
+                            text = doc.pages[0].extract_text()
+                        self.assertIn("Tahun 3", text)
+                        self.assertIn("Ulang dengan pilihan bergambar.", text)
             bad = {**selection, "year": 2}
             self.assertEqual(client.post(prefix + "/render", headers=headers,
                                          json={"selection": bad, "teacher": teacher, "format": "pdf"}).status_code, 404)
             rpt = client.get(prefix + "/rpt.pdf?year=3", headers=headers)
             self.assertEqual(rpt.status_code, 200)
             pages = PdfReader(BytesIO(rpt.data)).pages
-            self.assertEqual(len(pages), 1)
-            text = pages[0].extract_text()
-            self.assertIn("Tahun 3", text)
-            self.assertIn("017", text)
+            self.assertEqual(len(pages), 3)
+            for page, last in zip(pages, ("017", "035", "039"), strict=True):
+                text = page.extract_text()
+                self.assertIn("Tahun 3", text)
+                self.assertIn(last, text)
             self.assertEqual(client.get(prefix + "/rpt-manipulatif.pdf?year=3", headers=headers).status_code, 404)
 
     def test_all_71_word_pdf_and_protected_access(self):

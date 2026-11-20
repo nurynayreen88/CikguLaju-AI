@@ -34,7 +34,7 @@ COMPONENT_UNITS = {
     COMPONENT: tuple(UNIT_LESSONS),
     MANIPULATIVE_COMPONENT: tuple(MANIPULATIVE_UNIT_LESSONS),
 }
-YEAR3_LESSONS = {UNIT1: range(1, 18)}
+YEAR3_LESSONS = {UNIT1: range(1, 18), UNIT: range(18, 36), UNIT3: range(36, 40)}
 
 # Keep the published order in the additional_units field.
 UNIT_FILES = {
@@ -50,7 +50,8 @@ RPT_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_2_2027.pdf"
 RPT_COMBINED_EDITION = "Unit 1–5"
 RPT_COMBINED_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_1_2_3_4_5_2027.pdf"
 RPT_MANIPULATIVE_FILENAME = "CIKGULAJU_RPT_PPKI_KEMAHIRAN_MANIPULATIF_TAHUN_2_2027.pdf"
-RPT_YEAR3_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_3_UNIT_1_2027.pdf"
+RPT_YEAR3_EDITION = "Unit 1–3"
+RPT_YEAR3_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_3_UNIT_1_2_3_2027.pdf"
 
 
 def component_units(year):
@@ -64,8 +65,8 @@ def component_units(year):
 @lru_cache(maxsize=len(LESSONS_BY_UNIT) + len(YEAR3_LESSONS))
 def catalog(unit=UNIT, *, year=YEAR):
     if year == 3 and unit in YEAR3_LESSONS:
-        source = json.loads(Path(__file__).with_name(
-            "pengurusan_kehidupan_tahun3_unit1.json").read_text(encoding="utf-8"))
+        filename = f"pengurusan_kehidupan_tahun3_unit{int(unit[1:3])}.json"
+        source = json.loads(Path(__file__).with_name(filename).read_text(encoding="utf-8"))
         expected = YEAR3_LESSONS[unit]
     elif year == YEAR and unit == UNIT:
         source = load_catalog()
@@ -106,6 +107,7 @@ def _unit_options(unit, year=YEAR):
 def options(year=YEAR):
     units = component_units(year)
     first_unit = UNIT if year == YEAR else units[COMPONENT][0]
+    additional_units = UNIT_FILES if year == YEAR else units[COMPONENT]
     source = catalog(first_unit, year=year)
     first = _unit_options(first_unit, year)
     return {
@@ -115,7 +117,7 @@ def options(year=YEAR):
         "components": [{"value": COMPONENT, "label": source["component"]}],
         "units": [{"value": first_unit, "label": first["label"]}],
         "lessons": first["lessons"],
-        "additional_units": [_unit_options(unit, year) for unit in UNIT_FILES
+        "additional_units": [_unit_options(unit, year) for unit in additional_units
                              if unit in units[COMPONENT] and unit != first_unit],
         "kemahiran_manipulatif": [_unit_options(unit, year) for unit in units.get(MANIPULATIVE_COMPONENT, ())],
     }
