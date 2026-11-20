@@ -149,6 +149,30 @@ class PpkiWebTest(unittest.TestCase):
         with self.assertRaises(ppki.NativeRPHUnavailable):
             ppki.catalog()
 
+    def test_unit_five_and_combined_rpt(self):
+        self.catalog["additional_units"] = [
+            {"value": unit, "label": label,
+             "lessons": [{"value": f"{n:03d}", "label": f"PdP {n:03d}", "formats": ["word", "pdf"],
+                          "textbook_ref": "Buku Teks"} for n in ppki.UNIT_LESSONS[unit]]}
+            for unit, label in ((ppki.UNIT3, "Unit 3"), (ppki.UNIT4, "Unit 4 · Rumah Rubina"),
+                                (ppki.UNIT5, "Unit 5 · Budi Pekerti Mulia"))
+        ]
+        opts = self.client.get("/api/options", query_string={"kind": "pdp", "year": 2,
+                               "subject": ppki.SUBJECT, "unit": ppki.UNIT5})
+        self.assertEqual([row["value"] for row in opts.json], ["024", "025", "026", "027"])
+        selection = {**self.selection, "unit": ppki.UNIT5, "lesson": "027"}
+        for fmt in ("word", "pdf"):
+            self.assertEqual(self.client.get(f"/api/web/rph/{fmt}", query_string=selection).status_code, 200)
+        response = self.client.get("/api/rpt/2027/catalog")
+        entry, = [s for s in response.json["subjects"] if s["code"] == ppki.RPT_CODE]
+        self.assertIn("27 PdP Unit 2–5", entry["years"][0]["note"])
+        rpt = self.client.get(f"/api/rpt/2027/all/{ppki.RPT_CODE}/2.pdf")
+        self.assertEqual(rpt.status_code, 200)
+        self.assertIn("UNIT_2_3_4_5_2027.pdf", rpt.headers["Content-Disposition"])
+        self.catalog["additional_units"].reverse()
+        with self.assertRaises(ppki.NativeRPHUnavailable):
+            ppki.catalog()
+
     def test_missing_catalog_hides_rpt_and_blocks_fake_pdp(self):
         self.catalog["lessons"].pop()
         selection = self.client.get("/api/web/rph/availability", query_string=self.selection)
