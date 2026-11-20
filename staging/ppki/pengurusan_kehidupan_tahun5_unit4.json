@@ -1,0 +1,248 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 5,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 4 · Adab Mulia, Akhlak Terpelihara",
+  "content_standards": {
+    "4.1": "Penjagaan adab semasa makan dan minum.",
+    "4.2": "Adab berpakaian."
+  },
+  "learning_standards": {
+    "4.1.1": "Menyatakan adab semasa di meja makan.",
+    "4.1.2": "Memerihalkan kepentingan menjaga adab dan tatasusila semasa di meja makan.",
+    "4.1.3": "Menunjuk cara adab semasa di meja makan.",
+    "4.1.4": "Mengamalkan adab semasa di meja makan.",
+    "4.2.1": "Menyatakan jenis pakaian yang sopan dan sesuai mengikut situasi.",
+    "4.2.2": "Memerihalkan kepentingan menjaga adab berpakaian mengikut situasi.",
+    "4.2.3": "Menunjuk cara berpakaian sopan dan sesuai mengikut situasi.",
+    "4.2.4": "Mengamalkan cara berpakaian sopan dan sesuai mengikut situasi."
+  },
+  "lessons": [
+    {
+      "pdp": "022",
+      "title": "Mengenal adab di meja makan",
+      "sp": "4.1.1",
+      "focus": "Mengenal adab di meja makan.",
+      "book": "Buku Teks hlm. 29–31",
+      "objective": "Murid dapat menyatakan tiga amalan adab semasa di meja makan.",
+      "materials": "Gambar meja makan, kad amalan dan carta sebelum serta semasa makan.",
+      "induction": [
+        "Paparkan situasi hidangan dalam buku teks.",
+        "Pilih gambar perbuatan yang biasanya dilakukan sebelum makan."
+      ],
+      "guided": [
+        "Bincangkan kebersihan tangan, duduk tertib dan mengambil makanan secukupnya.",
+        "Padankan kad perbuatan dengan masa yang sesuai."
+      ],
+      "practice": [
+        "Edarkan empat kad pilihan dan minta murid mengenal amalan yang menunjukkan adab.",
+        "Nyatakan atau tunjuk tiga amalan yang sesuai."
+      ],
+      "closure": [
+        "Minta murid memilih satu amalan untuk waktu rehat.",
+        "Pilih kad amalan dan tunjuk bila perlu dilakukan."
+      ],
+      "support": "Gunakan gambar langkah dan hormati keperluan makan setiap murid.",
+      "assessment": "Guru merekod sama ada murid dapat menyatakan tiga amalan adab semasa di meja makan.",
+      "follow_up": "Ulang satu padanan yang belum dikuasai melalui gambar kantin."
+    },
+    {
+      "pdp": "023",
+      "title": "Menjelaskan kepentingan adab makan",
+      "sp": "4.1.2",
+      "focus": "Menjelaskan kepentingan adab makan.",
+      "book": "Buku Teks hlm. 30–31",
+      "objective": "Murid dapat menerangkan dua manfaat menjaga adab ketika makan bersama.",
+      "materials": "Kad amalan, kad kesan dan carta padanan.",
+      "induction": [
+        "Paparkan gambar pinggan dengan makanan yang berlebihan.",
+        "Pilih satu amalan yang dapat mengurangkan pembaziran."
+      ],
+      "guided": [
+        "Bandingkan tindakan menjaga kebersihan dan mengambil makanan secukupnya dengan kesan masing-masing.",
+        "Padankan satu tindakan dengan manfaatnya."
+      ],
+      "practice": [
+        "Berikan dua situasi di meja makan untuk murid menjelaskan pilihan tindakan.",
+        "Terangkan bagaimana amalan sesuai membantu menjaga kebersihan atau mengelakkan pembaziran."
+      ],
+      "closure": [
+        "Minta murid pilih satu sebab menjaga adab ketika makan bersama.",
+        "Nyatakan sebab atau tunjuk kad kesan yang sesuai."
+      ],
+      "support": "Beri dua kad manfaat bagi setiap amalan dan gunakan ayat berpandu.",
+      "assessment": "Guru merekod sama ada murid dapat menerangkan dua manfaat menjaga adab ketika makan bersama.",
+      "follow_up": "Bincangkan satu manfaat lain ketika mengemas meja."
+    },
+    {
+      "pdp": "024",
+      "title": "Menunjuk cara adab di meja makan",
+      "sp": "4.1.3",
+      "focus": "Menunjuk cara adab di meja makan.",
+      "book": "Buku Teks hlm. 30–31",
+      "objective": "Murid dapat menunjukkan tiga amalan di meja makan dalam urutan yang sesuai.",
+      "materials": "Pinggan, cawan, bahan simulasi dan kad langkah.",
+      "induction": [
+        "Tunjukkan meja yang telah disediakan untuk simulasi.",
+        "Pilih kad langkah pertama sebelum duduk."
+      ],
+      "guided": [
+        "Demonstrasikan persediaan tangan bersih, duduk tertib dan mengambil bahagian secukupnya melalui simulasi.",
+        "Susun kad urutan dan tunjuk satu perbuatan awal."
+      ],
+      "practice": [
+        "Bimbing seorang murid setiap giliran untuk menunjukkan keseluruhan urutan.",
+        "Demonstrasikan urutan dan gunakan ungkapan sopan ketika meminta bantuan."
+      ],
+      "closure": [
+        "Minta murid menyemak satu langkah menggunakan jalur gambar.",
+        "Betulkan kedudukan kad atau ulang perbuatan sasaran."
+      ],
+      "support": "Sediakan meja pada aras capaian dan alat makan yang biasa digunakan murid.",
+      "assessment": "Guru merekod sama ada murid dapat menunjukkan tiga amalan di meja makan dalam urutan yang sesuai.",
+      "follow_up": "Latih semula amalan yang tertinggal dalam satu simulasi ringkas."
+    },
+    {
+      "pdp": "025",
+      "title": "Mengamalkan adab dalam rutin makan",
+      "sp": "4.1.4",
+      "focus": "Mengamalkan adab dalam rutin makan.",
+      "book": "Buku Teks hlm. 30–31",
+      "objective": "Murid dapat mengamalkan tiga tindakan adab dalam rutin makan atau simulasi lengkap.",
+      "materials": "Gambar rutin, pinggan dan cawan contoh, kad semak.",
+      "induction": [
+        "Paparkan dua kad amalan sebelum dan selepas makan.",
+        "Pilih satu amalan bagi setiap masa."
+      ],
+      "guided": [
+        "Tunjukkan kad semak dan beri contoh cara menggunakan dalam rutin harian.",
+        "Amalkan tindakan pertama dengan petunjuk gambar."
+      ],
+      "practice": [
+        "Perhatikan rutin makan atau jalankan simulasi lengkap mengikut keperluan kelas.",
+        "Amalkan langkah adab yang dipilih semasa rutin dan kemas tempat sendiri."
+      ],
+      "closure": [
+        "Minta murid menanda satu amalan yang telah dilakukan.",
+        "Tandakan kad dan pilih amalan untuk diteruskan."
+      ],
+      "support": "Benarkan alat dan kedudukan makan yang memenuhi keperluan murid.",
+      "assessment": "Guru merekod sama ada murid dapat mengamalkan tiga tindakan adab dalam rutin makan atau simulasi lengkap.",
+      "follow_up": "Ulang pemerhatian pada waktu makan yang berbeza."
+    },
+    {
+      "pdp": "026",
+      "title": "Mengenal pakaian sesuai mengikut situasi",
+      "sp": "4.2.1",
+      "focus": "Mengenal pakaian sesuai mengikut situasi.",
+      "book": "Buku Teks hlm. 32–33",
+      "objective": "Murid dapat menyatakan satu jenis pakaian yang sesuai bagi setiap satu daripada tiga situasi.",
+      "materials": "Kad pakaian, kad tempat dan gambar majlis.",
+      "induction": [
+        "Paparkan dua gambar pakaian untuk situasi berbeza.",
+        "Pilih pakaian yang pernah dilihat dalam satu situasi."
+      ],
+      "guided": [
+        "Bincangkan kesesuaian pakaian bersih dan kemas untuk sekolah, rekreasi dan majlis.",
+        "Padankan satu pakaian dengan situasi contoh."
+      ],
+      "practice": [
+        "Edarkan tiga kad situasi dengan beberapa pilihan gambar pakaian.",
+        "Pilih, sebut atau tunjuk pakaian yang sesuai bagi setiap situasi."
+      ],
+      "closure": [
+        "Minta murid memilih satu pakaian untuk majlis perkahwinan.",
+        "Tunjukkan kad pakaian yang dipilih."
+      ],
+      "support": "Gunakan pelbagai contoh pakaian mengikut budaya dan keperluan murid.",
+      "assessment": "Guru merekod sama ada murid dapat menyatakan satu jenis pakaian yang sesuai bagi setiap satu daripada tiga situasi.",
+      "follow_up": "Berikan satu situasi baharu untuk latihan padanan."
+    },
+    {
+      "pdp": "027",
+      "title": "Menjelaskan kepentingan adab berpakaian",
+      "sp": "4.2.2",
+      "focus": "Menjelaskan kepentingan adab berpakaian.",
+      "book": "Buku Teks hlm. 32",
+      "objective": "Murid dapat menerangkan satu sebab pakaian sesuai bagi setiap satu daripada dua situasi.",
+      "materials": "Kad pakaian, gambar aktiviti dan kad sebab.",
+      "induction": [
+        "Tunjukkan contoh pakaian kemas dalam satu majlis.",
+        "Pilih situasi yang sepadan dengan pakaian tersebut."
+      ],
+      "guided": [
+        "Bandingkan keperluan rekreasi dengan keperluan majlis. Bincangkan keselesaan, keselamatan dan menghormati tempat.",
+        "Padankan satu pilihan pakaian dengan sebab yang sesuai."
+      ],
+      "practice": [
+        "Berikan dua pilihan berpakaian dalam dua situasi tanpa menilai rupa murid.",
+        "Pilih pakaian dan jelaskan sebab pilihan dibuat."
+      ],
+      "closure": [
+        "Tanya apa yang perlu diperiksa sebelum keluar menghadiri majlis.",
+        "Pilih satu kriteria seperti kemas atau sesuai dengan tempat."
+      ],
+      "support": "Gunakan rangka ayat dan contoh pakaian daripada pelbagai budaya.",
+      "assessment": "Guru merekod sama ada murid dapat menerangkan satu sebab pakaian sesuai bagi setiap satu daripada dua situasi.",
+      "follow_up": "Ulang satu pilihan dengan gambar situasi sekolah."
+    },
+    {
+      "pdp": "028",
+      "title": "Menunjuk cara berpakaian dengan kemas",
+      "sp": "4.2.3",
+      "focus": "Menunjuk cara berpakaian dengan kemas.",
+      "book": "Buku Teks hlm. 33",
+      "objective": "Murid dapat menunjukkan tiga langkah memilih dan mengemaskan pakaian untuk satu situasi.",
+      "materials": "Kad situasi, model berpakaian, jaket contoh dan kad langkah.",
+      "induction": [
+        "Paparkan gambar majlis lalu minta murid memilih satu set pakaian.",
+        "Padankan pakaian contoh dengan situasi."
+      ],
+      "guided": [
+        "Demonstrasikan cara memilih, memakai pada model dan memeriksa kekemasan.",
+        "Susun tiga kad urutan pada meja."
+      ],
+      "practice": [
+        "Sediakan stesen model berpakaian dan berikan satu kad situasi kepada murid.",
+        "Tunjukkan pilihan dan tiga langkah berpakaian dengan kemas menggunakan model."
+      ],
+      "closure": [
+        "Minta murid menyemak hasil bersama gambar rujukan.",
+        "Tunjukkan satu perkara yang telah dikemaskan."
+      ],
+      "support": "Gunakan model atau pakaian luar seperti jaket dan jaga privasi murid.",
+      "assessment": "Guru merekod sama ada murid dapat menunjukkan tiga langkah memilih dan mengemaskan pakaian untuk satu situasi.",
+      "follow_up": "Latih dengan situasi lain menggunakan senarai semak bergambar."
+    },
+    {
+      "pdp": "029",
+      "title": "Mengamalkan pilihan pakaian yang sesuai",
+      "sp": "4.2.4",
+      "focus": "Mengamalkan pilihan pakaian yang sesuai.",
+      "book": "Buku Teks hlm. 33",
+      "objective": "Murid dapat mengamalkan pemilihan dan semakan pakaian dalam dua situasi.",
+      "materials": "Kad sekolah dan majlis, model serta carta semak.",
+      "induction": [
+        "Paparkan dua situasi harian yang memerlukan pilihan pakaian berlainan.",
+        "Pilih satu situasi untuk dilakonkan."
+      ],
+      "guided": [
+        "Bimbing murid menyemak kebersihan dan kesesuaian sebelum memakai pakaian luar atau menggayakan model.",
+        "Tandakan dua kriteria pada carta semak."
+      ],
+      "practice": [
+        "Jalankan dua rutin simulasi memilih pakaian sekolah dan pakaian majlis.",
+        "Pilih set yang sesuai dan tunjuk cara memeriksa kekemasan dalam kedua-dua rutin."
+      ],
+      "closure": [
+        "Tanya bila kebersihan dan kekemasan boleh disemak.",
+        "Pilih gambar masa persediaan yang sesuai."
+      ],
+      "support": "Benarkan pilihan pakaian yang sesuai dengan budaya dan keperluan individu.",
+      "assessment": "Guru merekod sama ada murid dapat mengamalkan pemilihan dan semakan pakaian dalam dua situasi.",
+      "follow_up": "Gunakan lipatan serviette pada halaman 34 sebagai pengayaan adab meja apabila bahan tersedia."
+    }
+  ]
+}

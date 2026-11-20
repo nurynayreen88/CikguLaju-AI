@@ -1,0 +1,131 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 5,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 2 · Aktifkan Dirimu",
+  "content_standards": {
+    "2.1": "Penjagaan kesihatan dan kebersihan."
+  },
+  "learning_standards": {
+    "2.1.1": "Mengenal pasti tanda-tanda akil baligh.",
+    "2.1.2": "Menyatakan perubahan fizikal dan emosi bagi lelaki dan perempuan.",
+    "2.1.3": "Menunjuk cara mengurus diri dan emosi apabila mengalami tanda-tanda akil baligh seperti haid dan ihtilam.",
+    "2.1.4": "Mengamalkan penjagaan kesihatan dan kebersihan dalam kehidupan harian."
+  },
+  "lessons": [
+    {
+      "pdp": "010",
+      "title": "Mengenal tanda-tanda akil baligh",
+      "sp": "2.1.1",
+      "focus": "Mengenal tanda-tanda akil baligh.",
+      "book": "Buku Teks hlm. 11–13",
+      "objective": "Murid dapat mengenal pasti sekurang-kurangnya tiga daripada empat tanda akil baligh berdasarkan kad.",
+      "materials": "Ilustrasi buku teks, kad perubahan dan carta perkembangan.",
+      "induction": [
+        "Tunjukkan gambar peringkat kanak-kanak dan remaja.",
+        "Pilih satu perbezaan yang dapat dilihat pada ilustrasi."
+      ],
+      "guided": [
+        "Terangkan tanda akil baligh melalui gambar pendidikan dan bahasa yang mudah. Jelaskan bahawa masa perubahan berbeza antara individu.",
+        "Padankan dua contoh tanda kepada carta perkembangan."
+      ],
+      "practice": [
+        "Gunakan empat kad seperti jerawat, perubahan bau badan, pertumbuhan bulu dan perubahan suara.",
+        "Tunjukkan tanda yang berkaitan dengan akil baligh dan pilih labelnya."
+      ],
+      "closure": [
+        "Minta murid memilih kad yang diingati daripada pelajaran.",
+        "Nyatakan satu tanda melalui kata atau isyarat."
+      ],
+      "support": "Terangkan melalui ilustrasi dan soalan rekaan. Jaga privasi murid.",
+      "assessment": "Guru merekod sama ada murid dapat mengenal pasti sekurang-kurangnya tiga daripada empat tanda akil baligh berdasarkan kad.",
+      "follow_up": "Ulang padanan dua tanda menggunakan kad yang lebih jelas."
+    },
+    {
+      "pdp": "011",
+      "title": "Membezakan perubahan fizikal dan emosi",
+      "sp": "2.1.2",
+      "focus": "Membezakan perubahan fizikal dan emosi.",
+      "book": "Buku Teks hlm. 12–13",
+      "objective": "Murid dapat menyatakan dua contoh perubahan fizikal dan dua contoh perubahan emosi berdasarkan situasi.",
+      "materials": "Kad gambar dan situasi rekaan, carta dua lajur.",
+      "induction": [
+        "Paparkan gambar remaja yang mengalami perubahan suara.",
+        "Pilih sama ada kad itu berkaitan dengan tubuh atau perasaan."
+      ],
+      "guided": [
+        "Bincangkan contoh perubahan fizikal dan emosi yang mungkin dialami oleh lelaki dan perempuan.",
+        "Padankan satu perubahan tubuh dan satu perubahan emosi."
+      ],
+      "practice": [
+        "Edarkan empat kad watak rekaan dan minta murid mengelaskan perubahan.",
+        "Labelkan setiap kad sebagai perubahan fizikal atau emosi dan huraikan satu contoh."
+      ],
+      "closure": [
+        "Minta murid memilih orang dewasa yang boleh menjawab soalan kesihatan.",
+        "Pilih kad penjaga, guru atau petugas kesihatan yang dikenali."
+      ],
+      "support": "Gunakan kad istilah yang mudah dan elakkan pertanyaan tentang pengalaman peribadi di kelas.",
+      "assessment": "Guru merekod sama ada murid dapat menyatakan dua contoh perubahan fizikal dan dua contoh perubahan emosi berdasarkan situasi.",
+      "follow_up": "Ulang pengelasan dengan situasi watak yang berlainan."
+    },
+    {
+      "pdp": "012",
+      "title": "Mengurus diri dan emosi semasa akil baligh",
+      "sp": "2.1.3",
+      "focus": "Mengurus diri dan emosi semasa akil baligh.",
+      "book": "Buku Teks hlm. 14–15",
+      "objective": "Murid dapat menunjukkan tiga langkah mengurus kebersihan dan satu tindakan mengurus emosi dalam simulasi.",
+      "materials": "Kad situasi haid dan ihtilam, bahan kebersihan berbungkus dan carta rutin.",
+      "induction": [
+        "Paparkan gambar beg kebersihan peribadi.",
+        "Pilih satu alat kebersihan yang sesuai daripada kad."
+      ],
+      "guided": [
+        "Modelkan rutin kebersihan berdasarkan kad selepas haid atau ihtilam. Tunjukkan cara meminta bantuan orang dewasa yang dipercayai.",
+        "Susun tiga kad rutin dan pilih satu cara meminta bantuan."
+      ],
+      "practice": [
+        "Beri situasi rekaan dan minta murid menunjuk cara menggunakan kad, bahan pengajaran dan simulasi.",
+        "Tunjuk urutan kebersihan dan pilih satu tindakan untuk mengurus emosi."
+      ],
+      "closure": [
+        "Minta murid menyatakan tempat sesuai untuk bertanya secara peribadi.",
+        "Pilih kad ruang atau orang dewasa yang dipercayai."
+      ],
+      "support": "Gunakan bahan latihan tanpa sentuhan tubuh dan benarkan murid bertanya secara peribadi.",
+      "assessment": "Guru merekod sama ada murid dapat menunjukkan tiga langkah mengurus kebersihan dan satu tindakan mengurus emosi dalam simulasi.",
+      "follow_up": "Latih semula tindakan yang tertinggal dengan jalur urutan gambar."
+    },
+    {
+      "pdp": "013",
+      "title": "Mengamalkan rutin kebersihan harian",
+      "sp": "2.1.4",
+      "focus": "Mengamalkan rutin kebersihan harian.",
+      "book": "Buku Teks hlm. 16–17",
+      "objective": "Murid dapat melaksanakan tiga langkah rutin kebersihan harian dalam simulasi.",
+      "materials": "Kad rutin kebersihan, pakaian contoh, tuala dan carta semak.",
+      "induction": [
+        "Paparkan gambar persediaan sebelum ke sekolah.",
+        "Pilih barang yang sesuai untuk rutin kebersihan."
+      ],
+      "guided": [
+        "Bincangkan urutan membersihkan diri, mengeringkan badan dan memakai pakaian bersih.",
+        "Susun kad mengikut rutin pilihan."
+      ],
+      "practice": [
+        "Sediakan stesen simulasi mengurus pakaian bersih dan menyimpan barang kebersihan sendiri.",
+        "Laksanakan rutin simulasi dan tanda langkah yang sudah dilakukan."
+      ],
+      "closure": [
+        "Minta murid memilih masa untuk mengulang rutin.",
+        "Padankan amalan pilihan dengan gambar masa yang sesuai."
+      ],
+      "support": "Sediakan carta bergambar dan ruang persendirian untuk soalan murid.",
+      "assessment": "Guru merekod sama ada murid dapat melaksanakan tiga langkah rutin kebersihan harian dalam simulasi.",
+      "follow_up": "Gunakan kad semak rutin pada hari berikutnya."
+    }
+  ]
+}

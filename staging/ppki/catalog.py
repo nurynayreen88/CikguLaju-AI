@@ -6,13 +6,14 @@ import json
 from staging.ppki.render_pengurusan_kehidupan import load_catalog
 
 YEAR = 2
-YEARS = (2, 3, 4)
+YEARS = (2, 3, 4, 5)
 SUBJECT = "PENGURUSAN_KEHIDUPAN_PPKI"
 UNIT1 = "u01-pengurusan-diri"
 UNIT = "u02-pengurusan-diri"
 UNIT3 = "u03-pengurusan-diri"
 UNIT4 = "u04-pengurusan-diri"
 UNIT5 = "u05-pengurusan-diri"
+UNIT6 = "u06-pengurusan-diri"
 COMPONENT = "pengurusan-diri"
 MANIPULATIVE_COMPONENT = "kemahiran-manipulatif"
 MANIPULATIVE_UNIT1 = "u01-kemahiran-manipulatif"
@@ -55,6 +56,11 @@ YEAR4_MANIPULATIVE_UNIT_LESSONS = {
     MANIPULATIVE_UNIT3: range(67, 79),
 }
 
+YEAR5_LESSONS = {
+    UNIT1: range(1, 10), UNIT: range(10, 14), UNIT3: range(14, 22),
+    UNIT4: range(22, 30), UNIT5: range(30, 34), UNIT6: range(34, 42),
+}
+
 # Keep the published order in the additional_units field.
 UNIT_FILES = {
     UNIT3: "pengurusan_kehidupan_tahun2_unit3.json",
@@ -78,11 +84,17 @@ RPT_YEAR4_EDITION = "Unit 1–4"
 RPT_YEAR4_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_4_UNIT_1_2_3_4_2027.pdf"
 
 
+RPT_YEAR5_EDITION = "Unit 1–6"
+RPT_YEAR5_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_5_UNIT_1_2_3_4_5_6_2027.pdf"
+
+
 def component_units(year):
     if year == 3:
         return {COMPONENT: tuple(YEAR3_LESSONS), MANIPULATIVE_COMPONENT: tuple(YEAR3_MANIPULATIVE_UNIT_LESSONS)}
     if year == 4:
         return {COMPONENT: tuple(YEAR4_LESSONS), MANIPULATIVE_COMPONENT: tuple(YEAR4_MANIPULATIVE_UNIT_LESSONS)}
+    if year == 5:
+        return {COMPONENT: tuple(YEAR5_LESSONS)}
     if year == YEAR:
         return COMPONENT_UNITS
     raise ValueError("Unknown PPKI year")
@@ -90,7 +102,7 @@ def component_units(year):
 
 @lru_cache(maxsize=sum(map(len, (
     LESSONS_BY_UNIT, YEAR3_LESSONS, YEAR3_MANIPULATIVE_UNIT_LESSONS,
-    YEAR4_LESSONS, YEAR4_MANIPULATIVE_UNIT_LESSONS,
+    YEAR4_LESSONS, YEAR4_MANIPULATIVE_UNIT_LESSONS, YEAR5_LESSONS,
 ))))
 def catalog(unit=UNIT, *, year=YEAR):
     if year == 3 and unit in YEAR3_LESSONS:
@@ -109,6 +121,10 @@ def catalog(unit=UNIT, *, year=YEAR):
         filename = f"pengurusan_kehidupan_tahun4_kemahiran_manipulatif_unit{int(unit[1:3])}.json"
         source = json.loads(Path(__file__).with_name(filename).read_text(encoding="utf-8"))
         expected = YEAR4_MANIPULATIVE_UNIT_LESSONS[unit]
+    elif year == 5 and unit in YEAR5_LESSONS:
+        filename = f"pengurusan_kehidupan_tahun5_unit{int(unit[1:3])}.json"
+        source = json.loads(Path(__file__).with_name(filename).read_text(encoding="utf-8"))
+        expected = YEAR5_LESSONS[unit]
     elif year == YEAR and unit == UNIT:
         source = load_catalog()
         expected = LESSONS_BY_UNIT[unit]
