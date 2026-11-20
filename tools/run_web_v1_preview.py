@@ -42,6 +42,18 @@ def preview():
     return response
 
 
+@app.get("/contoh-rph.pdf")
+def public_rph_sample_pdf():
+    return send_file(PREVIEW.with_name("contoh-rph-sains-tahun-5.pdf"),
+                     mimetype="application/pdf", max_age=300, conditional=True)
+
+
+@app.get("/assets/contoh-rph.webp")
+def public_rph_sample_image():
+    return send_file(PREVIEW.with_name("contoh-rph-sains-tahun-5.webp"),
+                     mimetype="image/webp", max_age=300, conditional=True)
+
+
 @app.get("/assets/primary-subjects.js")
 def primary_subjects_script():
     import json

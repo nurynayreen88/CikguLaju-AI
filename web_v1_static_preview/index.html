@@ -87,6 +87,16 @@ label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width
  .brand-icon{object-fit:contain;flex-shrink:0;background:transparent}
  .login-brand{object-fit:contain;display:block;margin:0 auto 20px;background:transparent}
  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.public-rph-sample{margin:18px 0;border:1px solid #c4dfd4;border-radius:14px;background:#edf7f2}
+.public-rph-sample summary{padding:13px 16px;color:#05675a;font-weight:800;cursor:pointer}
+.public-rph-sample summary:focus-visible,.public-rph-sample a:focus-visible{outline:3px solid #087568;outline-offset:2px;border-radius:8px}
+.public-rph-sample-content{padding:0 12px 12px}
+.public-rph-sample-content h2{font-size:.98rem;margin:0 4px 10px;color:#173d37}
+.public-rph-sample-content img{display:block;width:100%;height:auto;background:white;border:1px solid #dce8e3;border-radius:8px}
+.public-rph-sample-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.public-rph-sample-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 12px;border-radius:9px;color:#05675a;font-weight:750}
+.public-rph-sample-actions a:last-child{background:#087568;color:white;text-decoration:none}
+.public-rph-sample-actions a:last-child:hover{background:#056459}
 
 /* Ruang guru: RPT diasingkan daripada halaman penyediaan RPH. */
 #workspace.panel{max-width:1160px;margin:26px auto 16px;padding:0;border:0;background:transparent;box-shadow:none}
@@ -487,8 +497,22 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <span class="pill">Versi Web</span>
 <h1>Sediakan RPH langkah demi langkah</h1>
 <p>Log masuk dengan akaun Telegram CikguLaju. Pilih Tahun, Subjek, Unit/Tajuk dan Lesson/PdP, kemudian jana RPH Word atau PDF terus menggunakan penjana Telegram.</p>
+<details class="public-rph-sample">
+  <summary>Lihat Contoh RPH</summary>
+  <div class="public-rph-sample-content">
+    <h2>Sains Tahun 5 SK · Pencaran Biji Benih · PdP 060</h2>
+    <img src="/assets/contoh-rph.webp" width="1061" height="1500" loading="lazy" decoding="async"
+         alt="Rancangan Pengajaran Harian Sains Tahun 5, Komunikasi pemerhatian pencaran">
+    <div class="public-rph-sample-actions">
+      <a href="/contoh-rph.pdf" target="_blank" rel="noopener">Buka Contoh PDF</a>
+      <a href="#pilihan-log-masuk">Daftar untuk 10 janaan percuma</a>
+    </div>
+  </div>
+</details>
+<div id="pilihan-log-masuk" tabindex="-1">
 <div id="telegram-widget" aria-label="Log masuk Telegram"></div>
 <p class="notice" role="status" id="login-status">Menyemak sambungan log masuk…</p>
+</div>
 </main>
 <section id="workspace" class="panel" hidden>
 <div class="app-shell">
