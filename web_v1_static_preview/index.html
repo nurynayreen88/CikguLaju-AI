@@ -1509,7 +1509,7 @@ const ppkiSubject="PENGURUSAN_KEHIDUPAN_PPKI";
 function canSelectRph(){
  if(isDlpRphSubject(subject.value))return dlpRphDownload();
  return curriculum.value==="kssr"||
-  (curriculum.value==="ppki"&&["2","3","4"].includes(year.value)&&subject.value===ppkiSubject)||
+  (curriculum.value==="ppki"&&["2","3","4","5"].includes(year.value)&&subject.value===ppkiSubject)||
   (curriculum.value==="sjkc"&&["2","3"].includes(year.value)&&subject.value==="MATH_SJKC")||
   (curriculum.value==="sjkt"&&year.value==="2"&&subject.value==="MATH_SJKT");
 }
@@ -1546,7 +1546,7 @@ const curriculumYears={
  kssr:primaryYears,
  sjkc:primaryYears,
  sjkt:primaryYears.filter(option=>option.value==="2"),
- ppki:primaryYears.filter(option=>["2","3","4"].includes(option.value)),
+ ppki:primaryYears.filter(option=>["2","3","4","5"].includes(option.value)),
  kp2027:[{value:"1",label:"Tahun 1 (KP Baharu)"}]
 };
 let subjectLoadRevision=0;
