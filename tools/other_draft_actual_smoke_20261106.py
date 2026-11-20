@@ -151,9 +151,10 @@ def main():
                         assert b"DRAF" not in xml
                         if reviewed:
                             doc = Document(io.BytesIO(body))
-                            assert [len(t.columns) for t in doc.tables] == [2, 3, 2]
+                            assert [len(t.columns) for t in doc.tables] == [2, 2, 3, 2]
                             assert "خطة التدريس اليومية" in doc.paragraphs[0].text
-                            fields = {row.cells[0].text: row.cells[1].text for row in doc.tables[0].rows}
+                            fields = {row.cells[0].text: row.cells[1].text
+                                      for table in doc.tables[:2] for row in table.rows}
                             assert "1.1.1" in fields["معيار التعلّم"]
                             assert fields["الفصل"] == "2 Bestari"
                             assert fields["عدد التلاميذ"] == "30"
@@ -248,7 +249,8 @@ def main():
         })
         assert result.status_code == 200, result.json
         doc = Document(io.BytesIO(result.data))
-        fields = {row.cells[0].text: row.cells[1].text for row in doc.tables[0].rows}
+        fields = {row.cells[0].text: row.cells[1].text
+                                      for table in doc.tables[:2] for row in table.rows}
         number_ar = f"{pdp:03d}".translate(str.maketrans("0123456789", "٠١٢٣٤٥٦٧٨٩"))
         assert number_ar in fields["الصف والحصّة"]
         assert sp in fields["معيار التعلّم"]
@@ -256,10 +258,10 @@ def main():
                                      for row in table.rows for cell in row.cells)
         if pdp == 2:
             assert "تحديد" in fields["معيار التعلّم"]
-            assert "٢ و٤" in doc.tables[2].cell(1, 1).text
+            assert "٢ و٤" in doc.tables[3].cell(1, 1).text
         if pdp == 3:
             assert "محاكاة" in fields["معيار التعلّم"]
-            assert "٣ و٥" in doc.tables[2].cell(1, 1).text
+            assert "٣ و٥" in doc.tables[3].cell(1, 1).text
     print(f"ARABIC_REVIEWED_WORD_PASS {len(reviewed)}", flush=True)
     for pdp, (sp, pages) in year_three.items():
         selection = {"year": 3, "subject": "ARAB", "unit": year_three_units[pdp], "lesson": f"{pdp:03d}"}
@@ -273,12 +275,13 @@ def main():
         })
         assert result.status_code == 200, result.json
         doc = Document(io.BytesIO(result.data))
-        fields = {row.cells[0].text: row.cells[1].text for row in doc.tables[0].rows}
+        fields = {row.cells[0].text: row.cells[1].text
+                                      for table in doc.tables[:2] for row in table.rows}
         assert sp in fields["معيار التعلّم"]
         assert fields["الفصل"] == "3 Bestari" and fields["عدد التلاميذ"] == "30"
-        assert pages in doc.tables[2].cell(1, 1).text
-        assert doc.tables[2].cell(2, 1).text == "Catatan guru."
-        assert [len(table.columns) for table in doc.tables] == [2, 3, 2]
+        assert pages in doc.tables[3].cell(1, 1).text
+        assert doc.tables[3].cell(2, 1).text == "Catatan guru."
+        assert [len(table.columns) for table in doc.tables] == [2, 2, 3, 2]
     print(f"ARABIC_YEAR3_REVIEWED_WORD_PASS {len(year_three)}", flush=True)
     wrong_unit = {"year": 2, "subject": "ARAB", "unit": "u01", "lesson": "018"}
     status = c.get("/internal/rph/v1/other-drafts/availability",
