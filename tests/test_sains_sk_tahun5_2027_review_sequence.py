@@ -107,10 +107,12 @@ class ReviewSequenceTests(unittest.TestCase):
                     self.assertAlmostEqual(float(page.mediabox.height), 841.89, places=1)
                     text = page.extract_text()
                 compact = " ".join(text.split())
+                self.assertNotIn("Julat RPT", compact)
+                self.assertNotIn(" ".join(plan["dates"].split()), compact)
                 for expected in (row["title"], row["unit"], f"PdP {row['id']:03d}",
                                  f"{sk} {plan['sk_text']}", f"{row['sp']} {plan['sp_text']}",
                                  f"m/s {row['pages']}", plan["pbd"],
-                                 plan["dates"], "5 Bestari", "18/01/2027", time, "Bil. murid: 32",
+                                 "Kelas 5 Bestari", "Tarikh 18/01/2027", f"Masa {time}", "Bilangan Murid 32",
                                  "Murid membentangkan dapatan."):
                     self.assertIn(" ".join(expected.split()), compact)
 
