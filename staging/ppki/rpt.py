@@ -2,11 +2,11 @@
 from io import BytesIO
 from xml.sax.saxutils import escape
 
-from staging.ppki.catalog import RPT_COMBINED_EDITION, UNIT, UNIT_LESSONS, catalog
+from staging.ppki.catalog import MANIPULATIVE_UNIT_LESSONS, RPT_COMBINED_EDITION, UNIT, UNIT_LESSONS, catalog
 from staging.ppki.render_pengurusan_kehidupan import PPKI_LABEL_FILL
 
 
-def render_rpt(*, combined=False):
+def render_rpt(*, combined=False, manipulative=False):
     from reportlab.lib import colors
     from reportlab.lib.pagesizes import A4, landscape
     from reportlab.lib.styles import ParagraphStyle
@@ -15,7 +15,8 @@ def render_rpt(*, combined=False):
     from web.rph_document_style import pdf_fonts
 
     regular, bold, _ = pdf_fonts()
-    normal = ParagraphStyle("RPT cell", fontName=regular, fontSize=9, leading=11)
+    font_size, leading, cell_padding = (8.5, 10, 3) if manipulative else (9, 11, 4)
+    normal = ParagraphStyle("RPT cell", fontName=regular, fontSize=font_size, leading=leading)
     header = ParagraphStyle("RPT heading", parent=normal, fontName=bold)
     title = ParagraphStyle("RPT title", parent=header, fontSize=16, leading=19)
 
@@ -35,12 +36,12 @@ def render_rpt(*, combined=False):
             ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#" + PPKI_LABEL_FILL)),
             ("GRID", (0, 0), (-1, -1), 0.4, colors.HexColor("#80758A")),
             ("VALIGN", (0, 0), (-1, -1), "TOP"),
-            ("TOPPADDING", (0, 0), (-1, -1), 4),
-            ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
+            ("TOPPADDING", (0, 0), (-1, -1), cell_padding),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), cell_padding),
         ]))
         return [
             Paragraph(f"RPT 2027 · Agihan PdP Unit {number}", title),
-            Paragraph("PPKI · Pengurusan Kehidupan Tahun 2 · Pengurusan Diri", header),
+            Paragraph(escape(f"PPKI · Pengurusan Kehidupan Tahun 2 · {source['component']}"), header),
             Paragraph(escape(source["unit"]), header),
             Spacer(1, 3 * mm),
             Paragraph("Guru menetapkan tarikh PdP mengikut jadual sekolah dan keperluan kelas.", normal),
@@ -48,8 +49,12 @@ def render_rpt(*, combined=False):
             table,
         ]
 
-    units = list(UNIT_LESSONS) if combined else [UNIT]
-    edition = RPT_COMBINED_EDITION if combined else "Unit 2"
+    if manipulative:
+        units = MANIPULATIVE_UNIT_LESSONS
+        edition = "Kemahiran Manipulatif Unit 1–3"
+    else:
+        units = UNIT_LESSONS if combined else (UNIT,)
+        edition = RPT_COMBINED_EDITION if combined else "Unit 2"
     stream = BytesIO()
     doc = SimpleDocTemplate(stream, pagesize=landscape(A4), title=f"RPT PPKI Tahun 2 · Agihan PdP {edition}",
                             leftMargin=15 * mm, rightMargin=15 * mm, topMargin=12 * mm, bottomMargin=12 * mm)

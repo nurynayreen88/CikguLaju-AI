@@ -15,13 +15,19 @@ UNIT5 = "u05-pengurusan-diri"
 COMPONENT = "pengurusan-diri"
 MANIPULATIVE_COMPONENT = "kemahiran-manipulatif"
 MANIPULATIVE_UNIT1 = "u01-kemahiran-manipulatif"
+MANIPULATIVE_UNIT2 = "u02-kemahiran-manipulatif"
+MANIPULATIVE_UNIT3 = "u03-kemahiran-manipulatif"
 FORMATS = ("word", "pdf")
 UNIT_LESSONS = {
     UNIT1: range(30, 40), UNIT: range(1, 15), UNIT3: range(15, 19),
     UNIT4: range(19, 24), UNIT5: range(24, 30),
 }
 
-MANIPULATIVE_UNIT_LESSONS = {MANIPULATIVE_UNIT1: range(40, 44)}
+MANIPULATIVE_UNIT_LESSONS = {
+    MANIPULATIVE_UNIT1: range(40, 54),
+    MANIPULATIVE_UNIT2: range(54, 64),
+    MANIPULATIVE_UNIT3: range(64, 72),
+}
 LESSONS_BY_UNIT = {**UNIT_LESSONS, **MANIPULATIVE_UNIT_LESSONS}
 COMPONENT_UNITS = {
     COMPONENT: tuple(UNIT_LESSONS),
@@ -35,10 +41,13 @@ UNIT_FILES = {
     UNIT5: "pengurusan_kehidupan_tahun2_unit5.json",
     UNIT1: "pengurusan_kehidupan_tahun2_unit1.json",
     MANIPULATIVE_UNIT1: "pengurusan_kehidupan_tahun2_kemahiran_manipulatif_unit1.json",
+    MANIPULATIVE_UNIT2: "pengurusan_kehidupan_tahun2_kemahiran_manipulatif_unit2.json",
+    MANIPULATIVE_UNIT3: "pengurusan_kehidupan_tahun2_kemahiran_manipulatif_unit3.json",
 }
 RPT_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_2_2027.pdf"
 RPT_COMBINED_EDITION = "Unit 1–5"
 RPT_COMBINED_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_1_2_3_4_5_2027.pdf"
+RPT_MANIPULATIVE_FILENAME = "CIKGULAJU_RPT_PPKI_KEMAHIRAN_MANIPULATIF_TAHUN_2_2027.pdf"
 
 
 @lru_cache(maxsize=len(LESSONS_BY_UNIT))

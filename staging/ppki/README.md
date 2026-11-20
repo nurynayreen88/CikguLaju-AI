@@ -93,5 +93,25 @@ Laluan pengguna ialah Pendidikan Khas (PPKI) → Tahun 2 → Pengurusan Kehidupa
 | 041 | Baling pundi kacang ke sasaran | 1.2 / 1.2.1(i), (iii) | 39 |
 | 042 | Ayun dan pukul objek ringan | 1.2 / 1.2.1(i), (vi) | 40 |
 | 043 | Tolak dan tarik objek | 1.2 / 1.2.1(viii), (ix) | 42 |
+| 044–046 | Menjunjung, menanduk dan aplikasi dalam permainan kecil | 1.1 / 1.1.1–1.1.2 | 37–38 |
+| 047–048 | Melantun, melambung, menampar dan menggabungkan gerakan tangan | 1.2 / 1.2.1(iv), (v), (vii), 1.2.2 | 40–43 |
+| 049–050 | Gerakan kaki di tempat dan aplikasi dalam permainan kecil | 1.3 / 1.3.1–1.3.2 | 44–45 |
+| 051–053 | Pergerakan lokomotor kaki dan permainan kecil | 1.4 / 1.4.1, 1.4.4 | 46–47 |
 
-Rujuk DSKP hlm. 36 dan nota guru pada hlm. 39, 40 dan 42. Empat RPH ini meliputi SK 1.2 dan tersedia melalui pilihan komponen Kemahiran Manipulatif selepas penerbitan. RPT Pengurusan Diri menggunakan agihan Unit 1–5. [Padanan sumber](../../audits/ppki_pengurusan_kehidupan_tahun2_kemahiran_manipulatif_20261120.md)
+## Kemahiran Manipulatif Unit 2 Jari Kreatif
+
+| PdP | Fokus RPH | SK / SP | Buku Teks |
+| --- | --- | --- | --- |
+| 054–055 | Gerakan jari tanpa alatan dan aplikasi simulasi | 2.1 / 2.1.1–2.1.2 | 50–51 |
+| 056–061 | Pengikat, contengan, sapuan, putaran dan penggunaan alatan | 2.2 / 2.2.1–2.2.4 | 52–55 |
+| 062–063 | Corak garisan dan koordinasi mata dengan tangan | 2.3 / 2.3.1–2.3.2 | 56–58 |
+
+## Kemahiran Manipulatif Unit 3 Lihat, Dengar dan Rasa
+
+| PdP | Fokus RPH | SK / SP | Buku Teks |
+| --- | --- | --- | --- |
+| 064–066 | Mengenal pasti bunyi, arah bunyi dan perbezaan bunyi | 3.1 / 3.1.1–3.1.3 | 61 |
+| 067–070 | Nama, susunan dan susun suai objek | 3.2 / 3.2.1–3.2.3 | 62–63 |
+| 071 | Mengenal pasti empat rasa dalam DSKP | 3.3 / 3.3.1(i)–(iv) | 64–65 |
+
+Kemahiran Manipulatif merangkumi 32 RPH Word/PDF dan mempunyai PDF agihan RPT 2027 Unit 1–3. RPT Pengurusan Diri meliputi 39 PdP Unit 1–5. [Padanan DSKP dan buku teks](../../audits/ppki_pengurusan_kehidupan_tahun2_kemahiran_manipulatif_20261120.md)

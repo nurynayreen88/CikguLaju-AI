@@ -2,7 +2,8 @@
 from flask import Blueprint, Response, jsonify, request
 
 from staging.ppki.catalog import (
-    FORMATS, RPT_COMBINED_FILENAME, RPT_FILENAME, SUBJECT, YEAR, catalog, lesson_filename, options, selected_lesson,
+    FORMATS, RPT_COMBINED_FILENAME, RPT_FILENAME, RPT_MANIPULATIVE_FILENAME,
+    SUBJECT, YEAR, catalog, lesson_filename, options, selected_lesson,
 )
 from staging.ppki.render_pengurusan_kehidupan import render_lesson
 from staging.ppki.rpt import render_rpt
@@ -65,11 +66,14 @@ def create_ppki_blueprint():
 
     @bp.get("/rpt.pdf", defaults={"combined": False})
     @bp.get("/rpt-current.pdf", defaults={"combined": True})
-    def ppki_rpt(combined):
+    @bp.get("/rpt-manipulatif.pdf", defaults={"combined": False, "manipulative": True})
+    def ppki_rpt(combined, manipulative=False):
         if request.args:
             return jsonify({"error": "Unexpected query parameters"}), 400
-        response = Response(render_rpt(combined=combined), mimetype=MIMES["pdf"])
+        response = Response(render_rpt(combined=combined, manipulative=manipulative), mimetype=MIMES["pdf"])
         filename = RPT_COMBINED_FILENAME if combined else RPT_FILENAME
+        if manipulative:
+            filename = RPT_MANIPULATIVE_FILENAME
         response.headers["Content-Disposition"] = f'attachment; filename="{filename}"'
         return response
 

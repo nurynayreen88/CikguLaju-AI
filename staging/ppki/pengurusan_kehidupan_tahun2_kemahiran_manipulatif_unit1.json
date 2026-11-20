@@ -6,10 +6,20 @@
   "component": "Kemahiran Manipulatif",
   "unit": "Unit 1 · Kami Aktif",
   "content_standards": {
-    "1.2": "Pergerakan bukan lokomotor bahagian tangan."
+    "1.1": "Pergerakan asas bahagian kepala.",
+    "1.2": "Pergerakan bukan lokomotor bahagian tangan.",
+    "1.3": "Pergerakan bukan lokomotor bahagian kaki.",
+    "1.4": "Pergerakan lokomotor bahagian kaki."
   },
   "learning_standards": {
-    "1.2.1": "Melakukan pergerakan menggunakan objek dengan cara mengayun, menggolek, membaling, melantun, melambung, memukul, menampar, menolak dan menarik."
+    "1.1.1": "Melakukan pergerakan menjunjung dan menanduk objek.",
+    "1.1.2": "Menunjukkan gerakan menjunjung dan menanduk objek dalam permainan kecil.",
+    "1.2.1": "Melakukan pergerakan menggunakan objek dengan cara mengayun, menggolek, membaling, melantun, melambung, memukul, menampar, menolak dan menarik.",
+    "1.2.2": "Menggabungkan pergerakan tangan bukan lokomotor dalam permainan kecil.",
+    "1.3.1": "Mengilas kaki ke kiri dan kanan, mengayun kaki serta mengimbang badan dengan kedudukan kaki yang berbeza.",
+    "1.3.2": "Menunjukkan pergerakan kaki bukan lokomotor dalam permainan kecil.",
+    "1.4.1": "Berjalan laju dan perlahan, melompat sebelah kaki, bercongklang dan berskip.",
+    "1.4.4": "Menunjukkan pergerakan lokomotor kaki dalam permainan kecil."
   },
   "lessons": [
     {
@@ -123,6 +133,286 @@
         "Demonstrasikan arah yang sepadan."
       ],
       "follow_up": "Ulang pasangan tolak dan tarik menggunakan jarak yang pendek."
+    },
+    {
+      "pdp": "044",
+      "title": "Menjunjung objek ringan",
+      "sp": "1.1.1",
+      "focus": "Subperkara (i). Menjunjung objek dengan kepala tegak.",
+      "book": "Buku Teks hlm. 37–38",
+      "objective": "Murid mengekalkan objek ringan di atas kepala sehingga kiraan tiga dalam dua daripada tiga percubaan.",
+      "materials": "Beg kain lembut, kerusi stabil dan kad kiraan.",
+      "induction": [
+        "Guru menunjukkan cara meletakkan beg kain di atas kepala.",
+        "Murid mengenal pasti kedudukan beg kain."
+      ],
+      "guided": [
+        "Guru membimbing murid menegakkan kepala sambil memandang tanda.",
+        "Murid mencuba gerakan dalam posisi duduk."
+      ],
+      "practice": [
+        "Guru mengira hingga tiga pada setiap giliran.",
+        "Murid menjunjung beg kain dan mengambilnya selepas isyarat."
+      ],
+      "closure": [
+        "Guru menunjukkan dua kedudukan kepala.",
+        "Murid memilih kedudukan yang membantu objek kekal stabil."
+      ],
+      "support": "Gunakan posisi duduk dan objek yang lebih lebar. Beri isyarat visual jika perlu.",
+      "assessment": "Guru merekod percubaan yang mencapai tiga kiraan dan bantuan yang diperlukan.",
+      "follow_up": "Ulang satu kiraan sebelum menambah tempoh."
+    },
+    {
+      "pdp": "045",
+      "title": "Menanduk objek terapung dengan terkawal",
+      "sp": "1.1.1",
+      "focus": "Subperkara (ii). Mengarahkan objek ringan dengan pergerakan kepala.",
+      "book": "Buku Teks hlm. 38",
+      "objective": "Murid mengarahkan objek terapung ke hadapan dalam dua daripada tiga percubaan terkawal.",
+      "materials": "Belon ringan, kad arah dan penanda ruang.",
+      "induction": [
+        "Guru menunjukkan arah objek bergerak selepas disentuh perlahan.",
+        "Murid menunjuk arah gerakan objek."
+      ],
+      "guided": [
+        "Guru memegang belon pada aras dahi dan menunjukkan pergerakan pendek.",
+        "Murid meniru gerakan tanpa objek sebelum mencuba dengan belon."
+      ],
+      "practice": [
+        "Guru menyediakan satu ruang giliran dan memegang belon hampir dengan murid.",
+        "Murid menggerakkan kepala perlahan untuk mengarahkan belon ke hadapan."
+      ],
+      "closure": [
+        "Guru mengulang isyarat mula dan berhenti.",
+        "Murid menunjukkan gerakan pendek menggunakan isyarat tersebut."
+      ],
+      "support": "Gunakan objek sangat ringan dan berhenti jika murid tidak selesa. Latih gerakan tanpa sentuhan apabila sesuai.",
+      "assessment": "Guru merekod arah objek dan tahap kawalan dalam tiga percubaan.",
+      "follow_up": "Ulang simulasi arah sebelum aktiviti bersentuhan."
+    },
+    {
+      "pdp": "046",
+      "title": "Junjung dan tanduk dalam permainan kecil",
+      "sp": "1.1.2",
+      "focus": "Aplikasi dua pergerakan kepala melalui giliran permainan.",
+      "book": "Buku Teks hlm. 38",
+      "objective": "Murid memilih dan menunjukkan kedua-dua pergerakan mengikut kad stesen.",
+      "materials": "Kad junjung dan tanduk, beg kain lembut serta belon ringan.",
+      "induction": [
+        "Guru meletakkan kad di dua stesen.",
+        "Murid memadankan kad dengan gerakan kepala."
+      ],
+      "guided": [
+        "Guru menunjukkan urutan stesen dengan langkah ringkas.",
+        "Murid menunjukkan pilihan gerakan di setiap stesen."
+      ],
+      "practice": [
+        "Guru memanggil seorang murid pada satu masa dan mengawal objek terapung.",
+        "Murid menjunjung beg kain di stesen pertama dan mengarahkan belon di stesen kedua."
+      ],
+      "closure": [
+        "Guru mengangkat kad secara bergilir.",
+        "Murid menunjukkan gerakan yang sepadan."
+      ],
+      "support": "Jalankan kedua-dua stesen dalam keadaan duduk jika sesuai. Gunakan kad gambar pada aras mata.",
+      "assessment": "Guru merekod gerakan yang tepat pada setiap stesen serta jenis bantuan.",
+      "follow_up": "Ulang stesen yang belum dikuasai dengan satu arahan pada satu masa."
+    },
+    {
+      "pdp": "047",
+      "title": "Melantun, melambung dan menampar objek",
+      "sp": "1.2.1",
+      "focus": "Subperkara (iv), (v) dan (vii). Tiga gerakan tangan dengan objek lembut.",
+      "book": "Buku Teks hlm. 40–41",
+      "objective": "Murid menunjukkan ketiga-tiga gerakan sekurang-kurangnya sekali mengikut arahan.",
+      "materials": "Bola span, belon ringan, tikar dan kad gerakan.",
+      "induction": [
+        "Guru menunjukkan perbezaan arah bola dan belon.",
+        "Murid menunjuk arah gerakan objek bagi setiap contoh."
+      ],
+      "guided": [
+        "Guru menunjukkan lantunan ke lantai, lambungan rendah dan tamparan lembut.",
+        "Murid meniru setiap pergerakan menggunakan objek yang sesuai."
+      ],
+      "practice": [
+        "Guru menunjukkan tiga kad secara bergilir.",
+        "Murid melantun bola, melambung bola rendah dan menampar belon dengan tapak tangan terbuka."
+      ],
+      "closure": [
+        "Guru mengulang satu gerakan tanpa menyebut namanya.",
+        "Murid memilih kad yang sepadan."
+      ],
+      "support": "Gunakan satu objek pada satu masa dan ruang yang lapang. Mulakan dengan jarak yang dekat.",
+      "assessment": "Guru menanda jenis gerakan yang ditunjukkan dan bantuan bagi setiap arahan.",
+      "follow_up": "Ulang gerakan yang tertukar menggunakan laluan objek yang jelas."
+    },
+    {
+      "pdp": "048",
+      "title": "Gabung gerakan tangan dalam permainan sasaran",
+      "sp": "1.2.2",
+      "focus": "Gabungan pergerakan tangan bukan lokomotor dalam permainan kecil.",
+      "book": "Buku Teks hlm. 41, 43",
+      "objective": "Murid melakukan urutan menggolek dan membaling mengikut dua tanda sasaran.",
+      "materials": "Bola lembut, pundi kacang, kon, gelung dan kad urutan.",
+      "induction": [
+        "Guru menunjukkan sasaran lantai dan sasaran balingan.",
+        "Murid memilih objek yang sesuai untuk setiap sasaran."
+      ],
+      "guided": [
+        "Guru menunjukkan cara menggolek bola sebelum membaling pundi kacang.",
+        "Murid meniru urutan dua gerakan secara berpandu."
+      ],
+      "practice": [
+        "Guru menyediakan lorong dan menunggu semua objek berhenti sebelum kutipan.",
+        "Murid menggolek bola hingga ke kon dan membaling pundi kacang ke gelung mengikut giliran."
+      ],
+      "closure": [
+        "Guru memaparkan kad gerakan kedua.",
+        "Murid menunjukkan gerakan yang dilakukan sebelum kad tersebut."
+      ],
+      "support": "Dekatkan sasaran dan gunakan kad bernombor satu serta dua.",
+      "assessment": "Guru merekod urutan dua gerakan, arah ke sasaran dan jenis bantuan.",
+      "follow_up": "Ulang kedua-dua gerakan berasingan sebelum menggabungkannya."
+    },
+    {
+      "pdp": "049",
+      "title": "Mengilas, mengayun dan mengimbang badan",
+      "sp": "1.3.1",
+      "focus": "Subperkara (i) hingga (iii). Gerakan kaki di tempat dan imbangan.",
+      "book": "Buku Teks hlm. 44–45",
+      "objective": "Murid menunjukkan kilas dan ayun kaki serta mengekalkan imbangan selama dua kiraan.",
+      "materials": "Tanda lantai, kerusi stabil dan kad kilas, ayun serta imbang.",
+      "induction": [
+        "Guru menunjukkan pergerakan kaki tanpa berpindah tempat.",
+        "Murid mengenal pasti tanda tempat berdiri."
+      ],
+      "guided": [
+        "Guru menunjukkan kilas ke kiri dan kanan, ayun kecil dan imbangan.",
+        "Murid meniru setiap gerakan secara perlahan dengan sokongan apabila diperlukan."
+      ],
+      "practice": [
+        "Guru mengangkat satu kad pada satu masa.",
+        "Murid menunjukkan gerakan yang sepadan dan mengekalkan imbangan sehingga kiraan dua."
+      ],
+      "closure": [
+        "Guru menunjukkan kad imbang.",
+        "Murid menunjukkan semula kedudukan yang stabil."
+      ],
+      "support": "Gunakan sokongan stabil. Kecilkan julat gerakan atau mulakan dengan versi duduk mengikut kebolehan.",
+      "assessment": "Guru mencatat gerakan yang berjaya dan bantuan yang digunakan.",
+      "follow_up": "Ulang satu pergerakan sebelum menyambung urutan."
+    },
+    {
+      "pdp": "050",
+      "title": "Permainan isyarat gerakan kaki di tempat",
+      "sp": "1.3.2",
+      "focus": "Aplikasi gerakan kaki bukan lokomotor dalam permainan kecil.",
+      "book": "Buku Teks hlm. 44–45",
+      "objective": "Murid menunjukkan sekurang-kurangnya dua daripada tiga gerakan mengikut isyarat permainan.",
+      "materials": "Kad isyarat, tapak kaki bercetak dan tempat berpaut yang stabil.",
+      "induction": [
+        "Guru memaparkan tiga kad permainan.",
+        "Murid memadankan kad dengan kilas, ayun atau imbang."
+      ],
+      "guided": [
+        "Guru menunjukkan cara berhenti selepas menerima kad henti.",
+        "Murid mencuba satu gerakan dan kembali ke kedudukan mula."
+      ],
+      "practice": [
+        "Guru menukar isyarat mengikut giliran.",
+        "Murid memilih dan melakukan gerakan di tempat serta berhenti apabila isyarat bertukar."
+      ],
+      "closure": [
+        "Guru meminta satu contoh gerakan.",
+        "Murid menunjukkan gerakan sambil kekal pada tanda lantai."
+      ],
+      "support": "Panjangkan masa respons dan gunakan kad bergambar besar. Sediakan sokongan mengikut keperluan.",
+      "assessment": "Guru merekod gerakan yang sepadan dengan tiga isyarat dan jenis bantuan.",
+      "follow_up": "Ulang dengan dua pilihan isyarat dahulu."
+    },
+    {
+      "pdp": "051",
+      "title": "Berjalan ikut tempo dan melompat sebelah kaki",
+      "sp": "1.4.1",
+      "focus": "Subperkara (i) dan (ii). Berjalan laju dan perlahan serta melompat sebelah kaki.",
+      "book": "Buku Teks hlm. 46",
+      "objective": "Murid membezakan dua tempo berjalan dan melakukan satu lompatan terkawal mengikut kebolehan.",
+      "materials": "Tanda lantai, kad tempo dan penanda tamat.",
+      "induction": [
+        "Guru menunjukkan dua tempo pergerakan.",
+        "Murid memadankan pergerakan dengan kad laju atau perlahan."
+      ],
+      "guided": [
+        "Guru menunjukkan cara berhenti dan mendarat pada tanda.",
+        "Murid berjalan mengikut dua tempo dan berlatih melompat dengan bimbingan."
+      ],
+      "practice": [
+        "Guru menukar isyarat tempo di lorong kosong.",
+        "Murid berjalan mengikut isyarat dan melakukan satu percubaan lompatan pada tanda akhir."
+      ],
+      "closure": [
+        "Guru menayangkan kad perlahan.",
+        "Murid menunjukkan cara bergerak dan berhenti."
+      ],
+      "support": "Sediakan pegangan stabil dan laluan pendek. Mulakan dengan pemindahan berat badan jika perlu.",
+      "assessment": "Guru menanda respons terhadap kedua-dua tempo dan bentuk lompatan yang ditunjukkan.",
+      "follow_up": "Latih imbangan dahulu jika pendaratan belum stabil."
+    },
+    {
+      "pdp": "052",
+      "title": "Bercongklang dan berskip mengikut tanda",
+      "sp": "1.4.1",
+      "focus": "Subperkara (iii) dan (iv). Dua corak pergerakan lokomotor.",
+      "book": "Buku Teks hlm. 46–47",
+      "objective": "Murid menunjukkan satu urutan pendek bagi setiap corak dengan bantuan yang bersesuaian.",
+      "materials": "Kad corak, tanda kaki kiri dan kanan serta laluan rata.",
+      "induction": [
+        "Guru menunjukkan dua corak langkah.",
+        "Murid memerhatikan kaki yang memimpin pergerakan."
+      ],
+      "guided": [
+        "Guru memperagakan corak secara perlahan melalui dua tanda lantai.",
+        "Murid mencuba corak langkah mengikut tanda."
+      ],
+      "practice": [
+        "Guru menyediakan percubaan berasingan bagi kedua-dua corak.",
+        "Murid bergerak bercongklang dan berskip mengikut kad pada giliran masing-masing."
+      ],
+      "closure": [
+        "Guru menunjukkan satu kad corak.",
+        "Murid menunjukkan langkah pertama bagi corak tersebut."
+      ],
+      "support": "Gunakan rentak perlahan dan dua tanda sahaja. Mulakan dengan pecahan langkah tanpa lompatan jika sesuai.",
+      "assessment": "Guru merekod kefahaman urutan langkah dan bilangan ulangan yang terkawal.",
+      "follow_up": "Latih semula rentak dan urutan kaki secara berpandu."
+    },
+    {
+      "pdp": "053",
+      "title": "Permainan kecil gerakan lokomotor",
+      "sp": "1.4.4",
+      "focus": "Aplikasi pergerakan lokomotor kaki dalam permainan kecil.",
+      "book": "Buku Teks hlm. 47",
+      "objective": "Murid menunjukkan dua gerakan lokomotor yang sepadan dengan kad stesen.",
+      "materials": "Kad gerakan, penanda stesen, kon dan laluan rata.",
+      "induction": [
+        "Guru menerangkan laluan dan isyarat berhenti.",
+        "Murid menunjukkan tempat mula dan tamat."
+      ],
+      "guided": [
+        "Guru memperagakan gerakan dengan laluan yang pendek.",
+        "Murid mencuba satu gerakan berpandu sebelum bergerak ke stesen."
+      ],
+      "practice": [
+        "Guru memberikan dua kad yang sesuai dengan kebolehan murid.",
+        "Murid bergerak mengikut kad, berhenti pada penanda dan menunggu giliran seterusnya."
+      ],
+      "closure": [
+        "Guru menunjukkan kad stesen pertama.",
+        "Murid menyebut atau menunjukkan cara bergerak di stesen tersebut."
+      ],
+      "support": "Sesuaikan jarak dan jenis gerakan. Sediakan laluan tanpa halangan serta sokongan yang stabil.",
+      "assessment": "Guru menanda gerakan yang sepadan dengan dua kad dan jenis sokongan.",
+      "follow_up": "Ulang satu stesen ketika murid memerlukan lebih banyak masa."
     }
   ]
 }

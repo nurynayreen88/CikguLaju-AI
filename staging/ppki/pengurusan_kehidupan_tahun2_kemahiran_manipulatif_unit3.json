@@ -1,0 +1,248 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 2,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Kemahiran Manipulatif",
+  "unit": "Unit 3 · Lihat, Dengar dan Rasa",
+  "content_standards": {
+    "3.1": "Pengamatan pendengaran.",
+    "3.2": "Pengamatan penglihatan.",
+    "3.3": "Pengamatan sensori rasa."
+  },
+  "learning_standards": {
+    "3.1.1": "Menyatakan bunyi yang didengar.",
+    "3.1.2": "Menyatakan arah bunyi yang didengar.",
+    "3.1.3": "Membezakan bunyi yang didengar.",
+    "3.2.1": "Menamakan objek atau bahan.",
+    "3.2.2": "Menyusun objek atau bahan mengikut saiz sama, besar ke kecil, kecil ke besar, menegak atau melintang.",
+    "3.2.3": "Melengkapkan gambar atau objek.",
+    "3.3.1": "Menggunakan deria rasa untuk mengenal pasti rasa manis, masam, pedas dan pahit."
+  },
+  "lessons": [
+    {
+      "pdp": "064",
+      "title": "Kenal pasti bunyi yang didengar",
+      "sp": "3.1.1",
+      "focus": "Menyatakan sumber bunyi yang biasa didengar.",
+      "book": "Buku Teks hlm. 61",
+      "objective": "Murid menyatakan atau memadankan sekurang-kurangnya dua daripada tiga bunyi.",
+      "materials": "Loceng kecil, kertas, bekas ketuk dan kad gambar.",
+      "induction": [
+        "Guru menghasilkan satu bunyi pada aras yang selesa.",
+        "Murid mendengar dan melihat bahan yang digunakan."
+      ],
+      "guided": [
+        "Guru menunjukkan beberapa sumber dan membunyikannya satu demi satu.",
+        "Murid memadankan bunyi dengan kad gambar."
+      ],
+      "practice": [
+        "Guru menyembunyikan sumber dan memainkan tiga bunyi ringkas.",
+        "Murid menyatakan atau memilih gambar sumber bagi setiap bunyi."
+      ],
+      "closure": [
+        "Guru mengulangi satu bunyi.",
+        "Murid menunjukkan kad sumber yang sepadan."
+      ],
+      "support": "Gunakan dua pilihan visual dahulu. Benarkan murid meminta bunyi dimainkan semula.",
+      "assessment": "Guru menanda padanan yang tepat daripada tiga bunyi dan jenis bantuan.",
+      "follow_up": "Ulang bunyi yang tertukar menggunakan kontras yang jelas."
+    },
+    {
+      "pdp": "065",
+      "title": "Tentukan arah datangnya bunyi",
+      "sp": "3.1.2",
+      "focus": "Menyatakan arah bunyi yang didengar.",
+      "book": "Buku Teks hlm. 61",
+      "objective": "Murid menunjukkan arah kiri atau kanan dengan betul dalam tiga daripada empat giliran.",
+      "materials": "Loceng kecil, kad kiri dan kanan serta tanda arah.",
+      "induction": [
+        "Guru menunjukkan tanda kiri dan kanan pada ruang yang sama arasnya.",
+        "Murid mengenal pasti kedua-dua arah."
+      ],
+      "guided": [
+        "Guru menghasilkan bunyi pada satu sisi secara berpandu.",
+        "Murid menoleh atau menunjuk ke arah bunyi."
+      ],
+      "practice": [
+        "Guru menghasilkan empat bunyi dari kiri atau kanan dengan aras yang sama.",
+        "Murid menunjukkan arah setiap bunyi melalui gerakan atau pemilihan kad."
+      ],
+      "closure": [
+        "Guru mengulangi bunyi dari sisi yang sukar.",
+        "Murid menyemak pilihan menggunakan kad arah."
+      ],
+      "support": "Pastikan jarak dan kelantangan selesa. Beri pilihan menunjuk atau menjawab secara lisan.",
+      "assessment": "Guru menanda arah yang tepat daripada empat percubaan dan tahap bantuan.",
+      "follow_up": "Ulang dua pilihan arah sambil jarak sumber disesuaikan."
+    },
+    {
+      "pdp": "066",
+      "title": "Bezakan bunyi yang sama dan berbeza",
+      "sp": "3.1.3",
+      "focus": "Membezakan ciri bunyi sekeliling melalui pasangan bunyi.",
+      "book": "Buku Teks hlm. 61",
+      "objective": "Murid menentukan sama atau berbeza dengan betul bagi dua daripada tiga pasangan bunyi.",
+      "materials": "Loceng, kertas, bekas ketuk dan kad sama serta berbeza.",
+      "induction": [
+        "Guru menghasilkan dua bunyi yang berbeza.",
+        "Murid memerhatikan dan menyatakan perbezaan yang didengar."
+      ],
+      "guided": [
+        "Guru memainkan satu pasangan sama dan satu pasangan berbeza.",
+        "Murid memilih kad yang menerangkan setiap pasangan."
+      ],
+      "practice": [
+        "Guru memainkan tiga pasangan bunyi pada aras yang selesa.",
+        "Murid memilih kad sama atau berbeza selepas mendengar setiap pasangan."
+      ],
+      "closure": [
+        "Guru meminta murid memilih satu pasangan contoh.",
+        "Murid menunjukkan kad yang sesuai dengan pasangan bunyi."
+      ],
+      "support": "Gunakan dua bunyi yang sangat berbeza dan beri masa antara setiap pasangan.",
+      "assessment": "Guru merekod jawapan yang tepat daripada tiga pasangan dan keperluan ulangan.",
+      "follow_up": "Ulang perbandingan satu pasangan dengan bimbingan."
+    },
+    {
+      "pdp": "067",
+      "title": "Namakan objek dan bahan di sekeliling",
+      "sp": "3.2.1",
+      "focus": "Menamakan objek atau bahan melalui pemerhatian.",
+      "book": "Buku Teks hlm. 62",
+      "objective": "Murid menamakan atau memilih label yang tepat bagi tiga daripada empat objek.",
+      "materials": "Bongkah kayu, kain, bekas plastik, span dan kad gambar atau label.",
+      "induction": [
+        "Guru menunjukkan dua objek berlainan rupa.",
+        "Murid mengenal pasti ciri yang dapat dilihat."
+      ],
+      "guided": [
+        "Guru menamakan setiap objek satu demi satu.",
+        "Murid menunjukkan objek yang disebut sambil memerhati bentuk dan warnanya."
+      ],
+      "practice": [
+        "Guru menyusun empat objek dalam urutan baharu.",
+        "Murid menamakan objek atau memadankannya dengan label yang sepadan."
+      ],
+      "closure": [
+        "Guru menunjukkan satu objek secara rawak.",
+        "Murid memilih label objek yang sepadan."
+      ],
+      "support": "Gunakan dua pilihan dahulu atau sediakan label gambar untuk murid yang memerlukan.",
+      "assessment": "Guru merekod tiga atau lebih padanan tepat dan jenis respons yang digunakan.",
+      "follow_up": "Ulang nama objek yang masih tertukar menggunakan contoh sebenar."
+    },
+    {
+      "pdp": "068",
+      "title": "Susun objek berdasarkan saiz",
+      "sp": "3.2.2",
+      "focus": "Subperkara (i) hingga (iii). Padankan saiz sama dan susun saiz menaik serta menurun.",
+      "book": "Buku Teks hlm. 62",
+      "objective": "Murid memadankan satu pasangan sama saiz dan menyusun tiga objek dalam kedua-dua arah saiz.",
+      "materials": "Blok pelbagai saiz, dua blok sama saiz dan kad anak panah.",
+      "induction": [
+        "Guru menunjukkan dua objek yang sama besar.",
+        "Murid memilih pasangan yang sepadan."
+      ],
+      "guided": [
+        "Guru membandingkan tiga blok pada aras yang sama.",
+        "Murid menunjukkan blok paling besar dan paling kecil."
+      ],
+      "practice": [
+        "Guru menunjukkan kad dua arah saiz secara bergilir.",
+        "Murid menyusun blok dari besar ke kecil dan dari kecil ke besar."
+      ],
+      "closure": [
+        "Guru mengalih satu blok.",
+        "Murid menunjukkan kedudukan yang betul dalam susunan asal."
+      ],
+      "support": "Gunakan tiga saiz yang jelas berbeza dan sediakan alas bertanda.",
+      "assessment": "Guru merekod ketepatan padanan sama saiz dan kedua-dua susunan.",
+      "follow_up": "Ulang susunan dua saiz sebelum menambah saiz pertengahan."
+    },
+    {
+      "pdp": "069",
+      "title": "Susun objek secara menegak dan melintang",
+      "sp": "3.2.2",
+      "focus": "Subperkara (iv) dan (v). Dua arah susunan objek.",
+      "book": "Buku Teks hlm. 62",
+      "objective": "Murid menyusun tiga objek secara menegak dan melintang dengan berpandukan garis mula.",
+      "materials": "Kad objek, alas dua garis pandu dan kad arah.",
+      "induction": [
+        "Guru menunjukkan arah menegak dan melintang pada alas.",
+        "Murid menelusuri arah kedua-dua garis."
+      ],
+      "guided": [
+        "Guru menyusun dua kad mengikut satu garis.",
+        "Murid menambah kad pada garis yang sama."
+      ],
+      "practice": [
+        "Guru memberi arahan menegak dan melintang secara bergilir.",
+        "Murid menyusun tiga kad pada setiap arah mengikut arahan."
+      ],
+      "closure": [
+        "Guru menunjukkan satu baris kad.",
+        "Murid menyatakan atau menunjukkan arah susunan tersebut."
+      ],
+      "support": "Gunakan alas berkontras tinggi dan tanda mula pada satu hujung garis.",
+      "assessment": "Guru menanda dua susunan yang betul dan jenis bantuan yang digunakan.",
+      "follow_up": "Ulang dengan dua kad sebelum memasukkan objek ketiga."
+    },
+    {
+      "pdp": "070",
+      "title": "Lengkapkan gambar melalui susun suai",
+      "sp": "3.2.3",
+      "focus": "Melengkapkan gambar atau objek dengan bahagian yang sepadan.",
+      "book": "Buku Teks hlm. 63",
+      "objective": "Murid meletakkan sekurang-kurangnya tiga bahagian pada kedudukan yang betul.",
+      "materials": "Papan susun suai tiga atau empat bahagian, gambar lengkap dan alas.",
+      "induction": [
+        "Guru menunjukkan gambar lengkap dan gambar berbahagian.",
+        "Murid menentukan bahagian yang belum ditempatkan."
+      ],
+      "guided": [
+        "Guru menunjukkan cara menggunakan bentuk tepi dan warna sebagai petunjuk.",
+        "Murid memadankan satu bahagian secara berpandu."
+      ],
+      "practice": [
+        "Guru memberi bahagian yang belum dipasang.",
+        "Murid memutar bahagian jika perlu dan melengkapkan gambar dengan menyusun bahagian yang sepadan."
+      ],
+      "closure": [
+        "Guru bertanya tentang satu kepingan tertentu.",
+        "Murid menunjukkan petunjuk yang membantu menentukan kedudukan kepingan."
+      ],
+      "support": "Gunakan kepingan besar dan gambar rujukan di sebelah papan. Kurangkan bilangan kepingan jika perlu.",
+      "assessment": "Guru merekod bilangan bahagian yang betul dan petunjuk yang digunakan.",
+      "follow_up": "Ulang padanan satu kepingan pada satu masa."
+    },
+    {
+      "pdp": "071",
+      "title": "Kenal pasti rasa manis, masam, pedas dan pahit",
+      "sp": "3.3.1",
+      "focus": "Subperkara (i) hingga (iv). Pengecaman empat rasa dalam DSKP.",
+      "book": "Buku Teks hlm. 64–65",
+      "objective": "Murid mengenal pasti sekurang-kurangnya tiga daripada empat kategori rasa melalui sampel sesuai atau bahan visual.",
+      "materials": "Kad makanan, kad rasa dan sampel pilihan yang dibenarkan.",
+      "induction": [
+        "Guru menunjukkan empat kad rasa dan memperkenalkan contoh makanan.",
+        "Murid memilih satu kad rasa berdasarkan pengalaman."
+      ],
+      "guided": [
+        "Guru membimbing padanan contoh dengan nama rasa.",
+        "Murid memadankan kad makanan dengan kad rasa."
+      ],
+      "practice": [
+        "Guru menyediakan sampel hanya jika sesuai dan menggunakan gambar bagi rasa pedas atau apabila pensampelan tidak sesuai.",
+        "Murid menyatakan atau memadankan kategori rasa berdasarkan bahan yang diberi."
+      ],
+      "closure": [
+        "Guru menunjukkan satu kad makanan.",
+        "Murid memilih nama rasa yang sepadan."
+      ],
+      "support": "Semak alahan dan sekatan pemakanan. Beri pilihan padanan visual tanpa merasa. Gunakan sampel individu jika dibenarkan.",
+      "assessment": "Guru merekod padanan bagi empat kategori dan jenis respons, sama ada melalui sampel atau gambar.",
+      "follow_up": "Ulang dua kategori yang tertukar dengan kad bergambar baharu."
+    }
+  ]
+}
