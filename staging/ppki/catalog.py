@@ -13,10 +13,19 @@ UNIT3 = "u03-pengurusan-diri"
 UNIT4 = "u04-pengurusan-diri"
 UNIT5 = "u05-pengurusan-diri"
 COMPONENT = "pengurusan-diri"
+MANIPULATIVE_COMPONENT = "kemahiran-manipulatif"
+MANIPULATIVE_UNIT1 = "u01-kemahiran-manipulatif"
 FORMATS = ("word", "pdf")
 UNIT_LESSONS = {
     UNIT1: range(30, 40), UNIT: range(1, 15), UNIT3: range(15, 19),
     UNIT4: range(19, 24), UNIT5: range(24, 30),
+}
+
+MANIPULATIVE_UNIT_LESSONS = {MANIPULATIVE_UNIT1: range(40, 44)}
+LESSONS_BY_UNIT = {**UNIT_LESSONS, **MANIPULATIVE_UNIT_LESSONS}
+COMPONENT_UNITS = {
+    COMPONENT: tuple(UNIT_LESSONS),
+    MANIPULATIVE_COMPONENT: tuple(MANIPULATIVE_UNIT_LESSONS),
 }
 
 # Keep the published order in the additional_units field.
@@ -25,13 +34,14 @@ UNIT_FILES = {
     UNIT4: "pengurusan_kehidupan_tahun2_unit4.json",
     UNIT5: "pengurusan_kehidupan_tahun2_unit5.json",
     UNIT1: "pengurusan_kehidupan_tahun2_unit1.json",
+    MANIPULATIVE_UNIT1: "pengurusan_kehidupan_tahun2_kemahiran_manipulatif_unit1.json",
 }
 RPT_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_2_2027.pdf"
 RPT_COMBINED_EDITION = "Unit 1–5"
 RPT_COMBINED_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_1_2_3_4_5_2027.pdf"
 
 
-@lru_cache(maxsize=len(UNIT_LESSONS))
+@lru_cache(maxsize=len(LESSONS_BY_UNIT))
 def catalog(unit=UNIT):
     if unit == UNIT:
         source = load_catalog()
@@ -41,7 +51,7 @@ def catalog(unit=UNIT):
     else:
         raise ValueError("Unknown PPKI unit")
     numbers = [lesson["pdp"] for lesson in source["lessons"]]
-    if source["year"] != YEAR or numbers != [f"{n:03d}" for n in UNIT_LESSONS[unit]]:
+    if source["year"] != YEAR or numbers != [f"{n:03d}" for n in LESSONS_BY_UNIT[unit]]:
         raise ValueError("PPKI catalog identity mismatch")
     for lesson in source["lessons"]:
         sp = lesson["sp"]
@@ -77,12 +87,13 @@ def options():
         "components": [{"value": COMPONENT, "label": source["component"]}],
         "units": [{"value": UNIT, "label": first["label"]}],
         "lessons": first["lessons"],
-        "additional_units": [_unit_options(unit) for unit in UNIT_FILES],
+        "additional_units": [_unit_options(unit) for unit in UNIT_FILES if unit in UNIT_LESSONS],
+        "kemahiran_manipulatif": [_unit_options(unit) for unit in MANIPULATIVE_UNIT_LESSONS],
     }
 
 
 def selected_lesson(unit, number):
-    if unit not in UNIT_LESSONS:
+    if unit not in LESSONS_BY_UNIT:
         return None
     return next((lesson for lesson in catalog(unit)["lessons"] if lesson["pdp"] == number), None)
 

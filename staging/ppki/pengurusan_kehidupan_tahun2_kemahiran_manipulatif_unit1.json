@@ -1,0 +1,128 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 2,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Kemahiran Manipulatif",
+  "unit": "Unit 1 · Kami Aktif",
+  "content_standards": {
+    "1.2": "Pergerakan bukan lokomotor bahagian tangan."
+  },
+  "learning_standards": {
+    "1.2.1": "Melakukan pergerakan menggunakan objek dengan cara mengayun, menggolek, membaling, melantun, melambung, memukul, menampar, menolak dan menarik."
+  },
+  "lessons": [
+    {
+      "pdp": "040",
+      "title": "Golek bola ke sasaran",
+      "sp": "1.2.1",
+      "focus": "Subperkara (i) dan (ii). Ayun tangan dan golek bola ke arah sasaran.",
+      "book": "Buku Teks hlm. 39",
+      "objective": "Menggolek bola melalui pintu sasaran yang ditanda dalam sekurang-kurangnya dua daripada tiga percubaan.",
+      "materials": "Buku teks, bola lembut, penanda lantai dan dua kon.",
+      "induction": [
+        "Tunjukkan pergerakan bola yang bergolek ke arah kon.",
+        "Jejaki laluan bola dan tunjuk tempat bola sepatutnya sampai."
+      ],
+      "guided": [
+        "Modelkan ayunan tangan dari paras rendah dan lepaskan bola di sepanjang lantai.",
+        "Tiru ayunan tanpa bola sebelum menggolek bola perlahan."
+      ],
+      "practice": [
+        "Sediakan tiga percubaan dengan satu bola pada satu masa.",
+        "Golek bola dari tanda mula ke antara dua kon."
+      ],
+      "support": "Dekatkan dan lebarkan sasaran. Benarkan murid menggolek dari posisi duduk stabil jika sesuai.",
+      "assessment": "Guru rekod bilangan bola yang melalui sasaran daripada tiga percubaan dan bantuan yang diperlukan.",
+      "closure": [
+        "Tanya bila tangan perlu melepaskan bola.",
+        "Tunjuk semula gerakan menggolek secara perlahan."
+      ],
+      "follow_up": "Ulang dengan sasaran lebih lebar jika bola kerap tersasar."
+    },
+    {
+      "pdp": "041",
+      "title": "Baling pundi kacang ke sasaran",
+      "sp": "1.2.1",
+      "focus": "Subperkara (i) dan (iii). Ayun tangan dan baling pundi kacang ke sasaran tetap.",
+      "book": "Buku Teks hlm. 39",
+      "objective": "Membaling pundi kacang dari bawah ke dalam kawasan sasaran dalam sekurang-kurangnya dua daripada tiga percubaan.",
+      "materials": "Buku teks, pundi kacang lembut, gelung dan tanda tempat berdiri.",
+      "induction": [
+        "Rujuk ilustrasi sasaran pada buku teks dan kenalkan sasaran lantai.",
+        "Tunjukkan tempat berdiri dan kawasan sasaran."
+      ],
+      "guided": [
+        "Modelkan ayunan dari bawah. Tunjukkan cara mengambil pundi kacang selepas isyarat.",
+        "Tiru ayunan dan cuba satu balingan berpandu."
+      ],
+      "practice": [
+        "Sediakan tiga balingan ke gelung dalam lorong yang kosong.",
+        "Lakukan satu balingan pada setiap giliran ke arah gelung."
+      ],
+      "support": "Gunakan gelung besar dan jarak yang boleh dicapai. Beri kad isyarat untuk giliran.",
+      "assessment": "Guru menanda balingan yang mendarat dalam sasaran daripada tiga percubaan dan jenis sokongan.",
+      "closure": [
+        "Tunjukkan semula arah ayunan.",
+        "Demonstrasikan ayunan tanpa pundi kacang."
+      ],
+      "follow_up": "Laraskan jarak dan latih semula masa melepaskan objek."
+    },
+    {
+      "pdp": "042",
+      "title": "Ayun dan pukul objek ringan",
+      "sp": "1.2.1",
+      "focus": "Subperkara (i) dan (vi). Ayun pemukul dan sentuh objek ringan dengan terkawal.",
+      "book": "Buku Teks hlm. 40",
+      "objective": "Mengayun pemukul ringan dan menyentuh bulu tangkis atau objek latihan dalam sekurang-kurangnya dua daripada tiga percubaan.",
+      "materials": "Buku teks, pemukul ringan, bulu tangkis atau bola span dan penanda ruang.",
+      "induction": [
+        "Tunjukkan gambar pukulan dan kenalkan kawasan ayunan.",
+        "Kenal pasti pemukul dan tunjuk ruang yang perlu dikosongkan."
+      ],
+      "guided": [
+        "Modelkan ayunan pendek ke objek pada aras sesuai. Pastikan murid lain berada di luar ruang ayunan.",
+        "Tiru ayunan tanpa objek, kemudian sentuh objek latihan."
+      ],
+      "practice": [
+        "Sediakan tiga percubaan dengan objek ringan dan satu pemukul pada satu masa.",
+        "Ayun pendek untuk menyentuh objek dan berhenti selepas pukulan."
+      ],
+      "support": "Gunakan bola span yang lebih besar dan objektif sentuhan pada jarak dekat.",
+      "assessment": "Guru rekod sentuhan terkawal daripada tiga percubaan serta tahap bantuan.",
+      "closure": [
+        "Ulang isyarat mula dan berhenti.",
+        "Tunjuk kedudukan pemukul yang selamat selepas digunakan."
+      ],
+      "follow_up": "Mulakan semula dengan sasaran lebih besar jika koordinasi belum stabil."
+    },
+    {
+      "pdp": "043",
+      "title": "Tolak dan tarik objek",
+      "sp": "1.2.1",
+      "focus": "Subperkara (viii) dan (ix). Tolak dan tarik objek ringan mengikut arah.",
+      "book": "Buku Teks hlm. 42",
+      "objective": "Menolak dan menarik objek ringan mengikut arahan dengan betul dalam sekurang-kurangnya tiga daripada empat giliran.",
+      "materials": "Buku teks, kotak ringan berpegang, kad tolak dan tarik, dua penanda meja.",
+      "induction": [
+        "Alih kotak ringan menjauhi dan menghampiri badan.",
+        "Padankan gerakan dengan kad tolak atau tarik."
+      ],
+      "guided": [
+        "Modelkan tolak menjauhi badan dan tarik menghampiri badan di antara penanda.",
+        "Tiru kedua-dua gerakan dan tunjuk penanda yang dituju."
+      ],
+      "practice": [
+        "Susun empat kad arahan dengan kedua-dua jenis gerakan.",
+        "Gerakkan kotak mengikut setiap arahan dari tanda mula."
+      ],
+      "support": "Gunakan meja pada aras yang sesuai, pegangan besar dan penanda arah yang jelas.",
+      "assessment": "Guru menanda arah gerakan yang betul daripada empat arahan dan bantuan yang digunakan.",
+      "closure": [
+        "Tunjukkan satu kad arahan tanpa menyebutnya.",
+        "Demonstrasikan arah yang sepadan."
+      ],
+      "follow_up": "Ulang pasangan tolak dan tarik menggunakan jarak yang pendek."
+    }
+  ]
+}

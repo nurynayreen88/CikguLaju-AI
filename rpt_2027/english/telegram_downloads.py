@@ -101,7 +101,7 @@ def install(ns):
                     [{"text": "⬅️ Kembali", "callback_data": "rpt2027_home"}],
                 ])
             if data == "rpt2027_ppki_year2":
-                return send(cid, f"<b>PPKI Tahun 2</b>\n\nAgihan {count} PdP bagi {edition}.", [
+                return send(cid, f"<b>PPKI Tahun 2 · Pengurusan Diri</b>\n\nAgihan {count} PdP bagi {edition}.", [
                     [{"text": "Pengurusan Kehidupan (PDF)", "callback_data": "rpt2027_ppki_pdf2"}],
                     [{"text": "⬅️ Kembali", "callback_data": "rpt2027_ppki_home"}],
                 ])

@@ -10,7 +10,7 @@ from pypdf import PdfReader
 
 from curriculum_version_telegram import install
 from rpt_2027.english.telegram_downloads import install as install_rpt
-from staging.ppki.catalog import SUBJECT, UNIT, UNIT1, UNIT3, UNIT4, UNIT5
+from staging.ppki.catalog import MANIPULATIVE_UNIT1, SUBJECT, UNIT, UNIT1, UNIT3, UNIT4, UNIT5
 from web.telegram_ppki_api import create_ppki_blueprint
 
 
@@ -58,6 +58,26 @@ class PpkiTelegramTest(unittest.TestCase):
         self.assertEqual(len(pdf.pages), 1)
         self.assertIn("1.3.3", pdf.pages[0].extract_text())
 
+    def test_manipulative_component_has_its_own_units(self):
+        callback = self.namespace["callback"]
+        self.namespace["year"](42, "primary")
+        for key in ("cv_primary_ppki", "cv_ppki_year2", "cv_ppki_subject",
+                    "cv_ppki_component_km", f"cv_ppki_unit_{MANIPULATIVE_UNIT1}",
+                    "cv_ppki_lesson_040"):
+            buttons = [item["callback_data"] for row in self.messages[-1][1] for item in row]
+            self.assertIn(key, buttons)
+            callback(42, key)
+        self.allow = True
+        callback(42, "cv_ppki_pdf_040")
+        name, body, _ = self.documents[-1]
+        self.assertTrue(name.endswith("_040.pdf"))
+        text = PdfReader(BytesIO(body)).pages[0].extract_text()
+        self.assertIn("Kami Aktif", text)
+        self.assertIn("1.2.1", text)
+        callback(42, f"cv_ppki_unit_{UNIT1}")
+        self.assertIn("Kemahiran Manipulatif", self.messages[-1][0])
+        self.assertEqual(len(self.documents), 1)
+
     def test_rpt_under_own_menu_and_paid_gate(self):
         callback = self.namespace["callback"]
         callback(42, "rpt2027_ppki_pdf2")
@@ -79,7 +99,7 @@ class PpkiTelegramTest(unittest.TestCase):
 
 
 class PpkiApiTest(unittest.TestCase):
-    def test_all_39_word_pdf_and_protected_access(self):
+    def test_all_43_word_pdf_and_protected_access(self):
         app = Flask(__name__)
         app.register_blueprint(create_ppki_blueprint())
         client = app.test_client()
@@ -97,7 +117,10 @@ class PpkiApiTest(unittest.TestCase):
                        "students": "7", "reflection": "Ulang dengan kad gambar."}
             selection = {"year": 2, "subject": SUBJECT, "unit": UNIT, "lesson": "001"}
             self.assertEqual([unit["value"] for unit in options["additional_units"]], [UNIT3, UNIT4, UNIT5, UNIT1])
-            units = [{"value": UNIT, "lessons": options["lessons"]}, *options["additional_units"]]
+            extra_unit, = options["kemahiran_manipulatif"]
+            self.assertEqual(extra_unit["value"], MANIPULATIVE_UNIT1)
+            self.assertEqual([row["value"] for row in extra_unit["lessons"]], ["040", "041", "042", "043"])
+            units = [{"value": UNIT, "lessons": options["lessons"]}, *options["additional_units"], extra_unit]
             for unit in units:
                 selection["unit"] = unit["value"]
                 for row in unit["lessons"]:

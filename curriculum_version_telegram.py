@@ -111,7 +111,10 @@ def install(namespace):
         return subjects(cid, "Tahun 1")
 
     def ppki_navigation(cid, st, action):
-        from staging.ppki.catalog import SUBJECT, UNIT, UNIT_LESSONS, catalog, lesson_filename, selected_lesson
+        from staging.ppki.catalog import (
+            COMPONENT, COMPONENT_UNITS, MANIPULATIVE_COMPONENT, MANIPULATIVE_UNIT1,
+            SUBJECT, UNIT, catalog, lesson_filename, selected_lesson,
+        )
         from staging.ppki.render_pengurusan_kehidupan import render_lesson
 
         source = catalog()
@@ -133,32 +136,41 @@ def install(namespace):
             st.pop("ppki_unit", None)
             st.pop("ppki_lesson", None)
             return show(source["subject"], "Pilih komponen.",
-                        [(source["component"], "cv_ppki_component")], "cv_ppki_year2")
+                        [(source["component"], "cv_ppki_component"),
+                         (catalog(MANIPULATIVE_UNIT1)["component"], "cv_ppki_component_km")],
+                        "cv_ppki_year2")
         if st.get("ppki_subject") != SUBJECT:
             return ppki_navigation(cid, st, "year2")
-        if action == "component":
-            st["ppki_component"] = True
+        if action in ("component", "component_km"):
+            component = MANIPULATIVE_COMPONENT if action == "component_km" else COMPONENT
+            st["ppki_component"] = component
             st.pop("ppki_unit", None)
             st.pop("ppki_lesson", None)
-            choices = [(catalog(unit)["unit"], f"cv_ppki_unit_{unit}") for unit in UNIT_LESSONS]
-            return show(source["component"], "Pilih unit.", choices, "cv_ppki_subject")
-        if not st.get("ppki_component"):
+            units = COMPONENT_UNITS[component]
+            choices = [(catalog(unit)["unit"], f"cv_ppki_unit_{unit}") for unit in units]
+            return show(catalog(units[0])["component"], "Pilih unit.", choices, "cv_ppki_subject")
+        component = st.get("ppki_component")
+        if component is True:  # Preserve existing Pengurusan Diri selections.
+            component = COMPONENT
+        if component not in COMPONENT_UNITS:
             return ppki_navigation(cid, st, "subject")
+        units = COMPONENT_UNITS[component]
+        back_to_component = "component_km" if component == MANIPULATIVE_COMPONENT else "component"
         if action == "unit" or action.startswith("unit_"):
             unit = UNIT if action == "unit" else action.removeprefix("unit_")
-            if unit not in UNIT_LESSONS:
-                return ppki_navigation(cid, st, "component")
+            if unit not in units:
+                return ppki_navigation(cid, st, back_to_component)
             source = catalog(unit)
             st["ppki_unit"] = unit
             st.pop("ppki_lesson", None)
             choices = [(f"PdP {row['pdp']} · {row['title']}", f"cv_ppki_lesson_{row['pdp']}")
                        for row in source["lessons"]]
-            return show(source["unit"], "Pilih PdP.", choices, "cv_ppki_component")
+            return show(source["unit"], "Pilih PdP.", choices, f"cv_ppki_{back_to_component}")
         command, _, number = action.partition("_")
         unit = st.get("ppki_unit")
-        lesson = selected_lesson(unit, number)
+        lesson = selected_lesson(unit, number) if unit in units else None
         if lesson is None:
-            return ppki_navigation(cid, st, "component")
+            return ppki_navigation(cid, st, back_to_component)
         if command == "lesson":
             st["ppki_lesson"] = number
             return show(lesson["title"], "Pilih format RPH.",
