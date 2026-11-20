@@ -55,7 +55,7 @@ class PpkiWebTest(unittest.TestCase):
             if self.catalog_year3 is None:
                 raise ppki.NativeRPHUnavailable("Year 3 source is not deployed")
             return json.dumps(self.catalog_year3).encode()
-        if path in ("rpt.pdf", "rpt-current.pdf", "rpt-manipulatif.pdf", "rpt.pdf?year=3"):
+        if path in ("rpt.pdf", "rpt-current.pdf", "rpt-manipulatif.pdf", "rpt.pdf?year=3", "rpt-manipulatif.pdf?year=3"):
             return self.pdf
         return self.docx.getvalue() if payload["format"] == "word" else self.pdf
 
@@ -153,6 +153,37 @@ class PpkiWebTest(unittest.TestCase):
         self.assertIn("49 PdP Unit 1–5", entry["years"][1]["note"])
         self.assertIn("TAHUN_3_UNIT_1_2_3_4_5_2027.pdf", self.client.get(url).headers["Content-Disposition"])
 
+
+    def test_year3_manipulative_rph_and_rpt(self):
+        self.catalog_year3 = {
+            **self.catalog, "year": 3,
+            "units": [{"value": ppki.UNIT1, "label": "Unit 1 · Sekolah, Duniaku"}],
+            "lessons": [{"value": f"{n:03d}", "label": f"PdP {n:03d}",
+                         "formats": ["word", "pdf"], "textbook_ref": "Buku Teks"}
+                        for n in range(1, 18)],
+        }
+        rpt = f"/api/rpt/2027/all/{ppki.RPT_MANIPULATIVE_CODE}/3.pdf"
+        self.assertEqual(self.client.get(rpt).status_code, 404)
+        self.catalog_year3["kemahiran_manipulatif"] = [{
+            "value": unit, "label": unit,
+            "lessons": [{"value": f"{n:03d}", "label": f"PdP {n:03d}",
+                         "formats": ["word", "pdf"], "textbook_ref": "Buku Teks"}
+                        for n in numbers],
+        } for unit, numbers in ppki.YEAR3_MANIPULATIVE_UNIT_LESSONS.items()]
+        selected = {"year": 3, "subject": ppki.SUBJECT, "unit": ppki.MANIPULATIVE_UNIT3, "lesson": "073"}
+        self.assertEqual(self.client.get("/api/web/rph/word", query_string=selected).status_code, 200)
+        self.assertEqual(self.client.get("/api/web/rph/availability",
+                         query_string={**selected, "lesson": "064", "unit": ppki.UNIT1}).status_code, 503)
+        data = self.client.get("/api/rpt/2027/catalog").json
+        entry, = [row for row in data["subjects"] if row["code"] == ppki.RPT_MANIPULATIVE_CODE]
+        self.assertEqual(entry["years"][0]["year"], 3)
+        self.assertIn("24 PdP Unit 1–3", entry["years"][0]["note"])
+        result = self.client.get(rpt)
+        self.assertEqual(result.status_code, 200)
+        self.assertIn("KEMAHIRAN_MANIPULATIF_TAHUN_3", result.headers["Content-Disposition"])
+        self.assertEqual(self.source_requests[-1][0], "rpt-manipulatif.pdf?year=3")
+        self.paid = False
+        self.assertEqual(self.client.get(rpt).status_code, 403)
 
     def test_manipulative_component_selection_and_existing_rpt(self):
         opts = "/api/options"
