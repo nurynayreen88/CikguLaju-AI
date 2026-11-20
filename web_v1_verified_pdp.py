@@ -56,8 +56,7 @@ class VerifiedPdpCatalog:
         if tables != 2:
             return set()
         cur = con.execute(
-            """SELECT r.id AS rpt_id, r.topic, r.skill_focus, r.unit_title,
-                       r.assessment_note, d.*,
+            """SELECT r.id AS rpt_id, r.*, d.*,
                        (SELECT count(*) FROM rpt_entry_standards s
                         WHERE s.rpt_entry_id=r.id AND s.verified=1) AS standard_rows,
                        (SELECT count(DISTINCT s.standard_type) FROM rpt_entry_standards s
