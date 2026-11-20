@@ -1,8 +1,8 @@
 """English Y2-6 offline A4 layout diagnostic using real source content.
 
-This is NOT the Telegram Word generator. It deliberately uses an isolated
-python-docx approximation of its three-table A4 layout. Read-only: never
-imports app.py, uses production credentials, or changes source files.
+Runs the active three-table Word builder with isolated English source rows.
+The layout functions are AST-checked against app.py without application startup.
+LibreOffice measures pagination of the resulting DOCX.
 """
 from pathlib import Path
 import json
@@ -96,14 +96,15 @@ def validate_word_function_snapshot():
     # app.py includes later-version Python syntax unrelated to the Word builder.
     # Parse only the last active Word function, not the 2.8 MB production module.
     app_text=(ROOT/"app.py").read_text(encoding="utf-8")
-    start=app_text.rindex("\ndef _create_rph_word(")+1
-    end=app_text.index("\ndef create_word_file(",start)
-    active=ast.parse(app_text[start:end])
-    frozen=ast.parse((ROOT/"qa/english_word_builder_snapshot.py").read_text(encoding="utf-8"))
-    def last(tree):
-        return [n for n in tree.body if isinstance(n,ast.FunctionDef) and n.name=="_create_rph_word"][-1]
-    if ast.dump(last(active),include_attributes=False)!=ast.dump(last(frozen),include_attributes=False):
-        raise RuntimeError("Production Word layout changed: update A4 snapshot after review")
+    frozen = ast.parse((ROOT/"qa/english_word_builder_snapshot.py").read_text(encoding="utf-8"))
+    frozen_functions = {node.name: node for node in frozen.body if isinstance(node, ast.FunctionDef)}
+    for name in ("_rph_document_rows", "_rph_table_labels", "_create_rph_word"):
+        start = app_text.rindex(f"\ndef {name}(") + 1
+        first_line_end = app_text.index("\n", start) + 1
+        end = re.search(r"(?m)^def ", app_text[first_line_end:]).start() + first_line_end
+        active = ast.parse(app_text[start:end]).body[0]
+        if ast.dump(active, include_attributes=False) != ast.dump(frozen_functions[name], include_attributes=False):
+            raise RuntimeError(f"Production Word layout changed in {name}; review the A4 snapshot")
 
 
 

@@ -1,6 +1,7 @@
 """Read-only offline full A4 verification for English RPH Y2-Y6 (800 lessons).
-Word builder is AST-locked to the active app.py function. Y6 uses live compact adapter.
-Y5 remains DRAF; generated PDFs are LibreOffice conversions, NOT native bot PDFs.
+The active Word layout and its table helpers are AST-checked.
+LibreOffice renders DOCX to measure pagination. Year 5 teacher-selected
+standards are represented by dedicated source previews.
 """
 import argparse
 from collections import Counter
@@ -122,8 +123,8 @@ def main(year,batch_size):
     (out/"verification.json").write_text(json.dumps(report,indent=2,ensure_ascii=False),encoding="utf-8")
     print("FULL_A4_AUDIT_Y"+str(year),json.dumps({"counts":dict(stats),"non_one_page":report["non_one_page"],
           "suspect":report["suspect_text"]},ensure_ascii=False),flush=True)
-    if stats["word_ok"]!=160 or stats["pdf_ok"]!=160:
-        raise SystemExit("Incomplete verification - see artifact for errors")
+    if (stats["one_page_a4"] != 160 or stats["suspect_extraction"] or stats["errors"]):
+        raise SystemExit("Word verification failed for one or more lessons. See verification.json.")
 
 if __name__=="__main__":
     a=argparse.ArgumentParser()

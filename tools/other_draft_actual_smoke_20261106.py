@@ -137,7 +137,8 @@ def main():
     reviewed = {
         ("u01", pdp): sp for pdp, sp in enumerate(unit_one_standards, start=1)
     } | {("u02", pdp): sp for pdp, sp in unit_two_standards.items()}
-    reviewed.update({("u03", 29): "1.1.1", ("u03", 31): "1.1.1", ("u03", 33): "3.1.1"})
+    reviewed.update({("u03", 29): "1.1.1", ("u03", 30): "2.2.2", ("u03", 31): "1.1.1",
+                     ("u03", 32): "2.2.4", ("u03", 33): "3.1.1"})
     actual = {
         (y, unit["value"], int(lesson["value"]))
         for y in range(2, 7)
