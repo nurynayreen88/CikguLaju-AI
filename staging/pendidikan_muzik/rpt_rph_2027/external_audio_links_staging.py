@@ -134,21 +134,28 @@ def links_for_pdp(year, pdp, *, root=ROOT):
         keys = numbers_from_printed_reference(
             row.get("source_book_audio_numbers_printed", "")
         )
-        named_title = None
+        named_titles = {}
         if not keys:
             named = row.get("source_book_audio_named")
-            if not isinstance(named, dict):
+            if not isinstance(named, list) or not 1 <= len(named) <= 21:
                 return []
-            catalog_title, named_title = named.get("catalog_title"), named.get("title")
-            if not all(isinstance(value, str) and 1 <= len(value) <= 255
-                       for value in (catalog_title, named_title)):
-                return []
-            keys = (catalog_title.casefold(),)
+            for item in named:
+                if not isinstance(item, dict):
+                    return []
+                catalog_title, title = item.get("catalog_title"), item.get("title")
+                if not all(isinstance(value, str) and 1 <= len(value) <= 255
+                           for value in (catalog_title, title)):
+                    return []
+                key = catalog_title.casefold()
+                if key in named_titles:
+                    return []
+                named_titles[key] = title
+            keys = tuple(named_titles)
         tracks = _source_catalog(year, root=root)
         if tracks is None or any(len(tracks.get(key, ())) != 1 for key in keys):
             return []
         return [
-            dict(tracks[key][0], title=named_title or tracks[key][0]["title"],
+            dict(tracks[key][0], title=named_titles.get(key, tracks[key][0]["title"]),
                  status=SOURCE_STATUS, download_available=False)
             for key in keys
         ]

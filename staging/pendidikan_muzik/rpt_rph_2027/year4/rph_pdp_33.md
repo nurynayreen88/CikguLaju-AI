@@ -12,7 +12,7 @@
 
 **Set induksi (4 minit):** Guru memperlihatkan semula carta urutan Kolattam dan murid mempraktikkan isyarat mula serta hentian.
 
-**Aktiviti 1 — Demonstrasi dan penerokaan (8 minit):** Kumpulan menyusun formasi dan mempraktikkan pergerakan buku dengan alat pengganti yang sesuai, tanpa mengganggu ruang murid lain.
+**Aktiviti 1 — Demonstrasi dan penerokaan (8 minit):** Murid mengulang pola ketukan dan langkah Kolattam berpandukan Audio 117. Guru menyemak persediaan sebelum persembahan.
 
 **Aktiviti 2 — Amali / aplikasi (10 minit):** Kumpulan mempersembahkan gerak pada tempo tetap; pemerhati menggunakan rubrik kreativiti dan kerjasama seperti contoh di halaman 103.
 
@@ -20,7 +20,7 @@
 
 **Penutup (2 minit):** Murid menyatakan satu dapatan tentang muzik dan menunjukkan semula kemahiran yang diamalkan; guru merekod tahap penguasaan berdasarkan evidens aktiviti.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 halaman 102–103, rubrik persembahan dan alat pengganti yang selamat.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK m/s 102–103, Audio 117, alat ketukan dan rubrik persembahan.
 
 **Rujukan:** Buku Teks Pendidikan Kesenian Tahun 4 SK KSSR Semakan 2017 halaman 102-103. Sumber Drive: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
 

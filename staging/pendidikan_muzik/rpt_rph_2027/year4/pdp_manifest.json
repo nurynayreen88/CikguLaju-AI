@@ -396,7 +396,8 @@
       "source_book_content_page_checked": true,
       "source_book_audio_number_printed": "44–47",
       "source_book_audio_file_verified": false,
-      "source_sp_mapping_status": "BUKU_DSKP_SP_TEXT_SEPADAN"
+      "source_sp_mapping_status": "BUKU_DSKP_SP_TEXT_SEPADAN",
+      "source_book_audio_numbers_printed": "44–47"
     },
     {
       "pdp_id": "MZ-Y4-15",
@@ -432,7 +433,8 @@
       "source_book_content_page_checked": true,
       "source_book_audio_number_printed": "48",
       "source_book_audio_file_verified": false,
-      "source_sp_mapping_status": "CADANGAN_CROSSWALK_BUKU_DSKP_BERBEZA"
+      "source_sp_mapping_status": "CADANGAN_CROSSWALK_BUKU_DSKP_BERBEZA",
+      "source_book_audio_numbers_printed": "48"
     },
     {
       "pdp_id": "MZ-Y4-16",
@@ -468,7 +470,8 @@
       "source_book_content_page_checked": true,
       "source_book_audio_number_printed": "48",
       "source_book_audio_file_verified": false,
-      "source_sp_mapping_status": "CADANGAN_CROSSWALK_BUKU_DSKP_BERBEZA"
+      "source_sp_mapping_status": "CADANGAN_CROSSWALK_BUKU_DSKP_BERBEZA",
+      "source_book_audio_numbers_printed": "48"
     },
     {
       "pdp_id": "MZ-Y4-17",
@@ -780,10 +783,12 @@
       "source_book_crosscheck_source_url": "https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view",
       "source_book_edition": "Pendidikan Kesenian Tahun 4 SK DBP2019 KSSR Semakan2017",
       "source_book_audio_numbers_printed": "Audio Projek Kesenian Penggal Dua",
-      "source_book_audio_named": {
-        "catalog_title": "AUDIO PROJEK KESENIAN PENGGAL 2.mp3",
-        "title": "Audio Projek Kesenian Penggal Dua"
-      },
+      "source_book_audio_named": [
+        {
+          "catalog_title": "AUDIO PROJEK KESENIAN PENGGAL 2.mp3",
+          "title": "Audio Projek Kesenian Penggal Dua"
+        }
+      ],
       "source_book_audio_file_verified": false,
       "source_book_project_evidence": true,
       "validation_status": "DRAF_PROJEK_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
@@ -812,10 +817,12 @@
       "source_book_crosscheck_source_url": "https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view",
       "source_book_edition": "Pendidikan Kesenian Tahun 4 SK DBP2019 KSSR Semakan2017",
       "source_book_audio_numbers_printed": "Audio Projek Kesenian Penggal Dua",
-      "source_book_audio_named": {
-        "catalog_title": "AUDIO PROJEK KESENIAN PENGGAL 2.mp3",
-        "title": "Audio Projek Kesenian Penggal Dua"
-      },
+      "source_book_audio_named": [
+        {
+          "catalog_title": "AUDIO PROJEK KESENIAN PENGGAL 2.mp3",
+          "title": "Audio Projek Kesenian Penggal Dua"
+        }
+      ],
       "source_book_audio_file_verified": false,
       "source_book_project_evidence": true,
       "validation_status": "DRAF_PROJEK_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
@@ -844,10 +851,12 @@
       "source_book_crosscheck_source_url": "https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view",
       "source_book_edition": "Pendidikan Kesenian Tahun 4 SK DBP2019 KSSR Semakan2017",
       "source_book_audio_numbers_printed": "Audio Projek Kesenian Penggal Dua",
-      "source_book_audio_named": {
-        "catalog_title": "AUDIO PROJEK KESENIAN PENGGAL 2.mp3",
-        "title": "Audio Projek Kesenian Penggal Dua"
-      },
+      "source_book_audio_named": [
+        {
+          "catalog_title": "AUDIO PROJEK KESENIAN PENGGAL 2.mp3",
+          "title": "Audio Projek Kesenian Penggal Dua"
+        }
+      ],
       "source_book_audio_file_verified": false,
       "source_book_project_evidence": true,
       "validation_status": "DRAF_PROJEK_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
@@ -964,7 +973,8 @@
       "source_book_content_page_checked": true,
       "source_book_audio_number_printed": "110–116",
       "source_book_audio_file_verified": false,
-      "source_sp_mapping_status": "BUKU_DSKP_SP_TEXT_SEPADAN"
+      "source_sp_mapping_status": "BUKU_DSKP_SP_TEXT_SEPADAN",
+      "source_book_audio_numbers_printed": "110–116"
     },
     {
       "pdp_id": "MZ-Y4-32",
@@ -1002,7 +1012,8 @@
       "source_book_content_page_checked": true,
       "source_book_audio_number_printed": "117",
       "source_book_audio_file_verified": false,
-      "source_sp_mapping_status": "CADANGAN_CROSSWALK_BUKU_DSKP_BERBEZA"
+      "source_sp_mapping_status": "CADANGAN_CROSSWALK_BUKU_DSKP_BERBEZA",
+      "source_book_audio_numbers_printed": "117"
     },
     {
       "pdp_id": "MZ-Y4-33",
@@ -1040,7 +1051,8 @@
       "source_book_content_page_checked": true,
       "source_book_audio_number_printed": "117",
       "source_book_audio_file_verified": false,
-      "source_sp_mapping_status": "CADANGAN_CROSSWALK_BUKU_DSKP_BERBEZA"
+      "source_sp_mapping_status": "CADANGAN_CROSSWALK_BUKU_DSKP_BERBEZA",
+      "source_book_audio_numbers_printed": "117"
     },
     {
       "pdp_id": "MZ-Y4-34",

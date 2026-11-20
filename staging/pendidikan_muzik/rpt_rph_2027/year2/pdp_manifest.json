@@ -334,7 +334,14 @@
       "rph_specificity_status": "TEKS_BUKU_MUZIK_TERPADU_DIPADANKAN",
       "validation_status": "DRAF_TEXTBOOK_CHECK_ONLY",
       "source_book_project_evidence": true,
-      "source_book_crosscheck_scope": "PROJEK_KESENIAN_TERPADU; ADAPTASI_BAHAGIAN_MUZIK_SAHAJA"
+      "source_book_crosscheck_scope": "PROJEK_KESENIAN_TERPADU; ADAPTASI_BAHAGIAN_MUZIK_SAHAJA",
+      "source_book_audio_numbers_printed": "Audio Projek Penggal Satu",
+      "source_book_audio_named": [
+        {
+          "catalog_title": "001-Projek Penggal 1...wav",
+          "title": "Audio Projek Penggal Satu"
+        }
+      ]
     },
     {
       "pdp_id": "MZ-Y2-13",
@@ -362,7 +369,14 @@
       "rph_specificity_status": "TEKS_BUKU_MUZIK_TERPADU_DIPADANKAN",
       "validation_status": "DRAF_TEXTBOOK_CHECK_ONLY",
       "source_book_project_evidence": true,
-      "source_book_crosscheck_scope": "PROJEK_KESENIAN_TERPADU; ADAPTASI_BAHAGIAN_MUZIK_SAHAJA"
+      "source_book_crosscheck_scope": "PROJEK_KESENIAN_TERPADU; ADAPTASI_BAHAGIAN_MUZIK_SAHAJA",
+      "source_book_audio_numbers_printed": "Audio Projek Penggal Satu",
+      "source_book_audio_named": [
+        {
+          "catalog_title": "001-Projek Penggal 1...wav",
+          "title": "Audio Projek Penggal Satu"
+        }
+      ]
     },
     {
       "pdp_id": "MZ-Y2-14",

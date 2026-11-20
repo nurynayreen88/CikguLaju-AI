@@ -21,7 +21,7 @@
 
 **Penutup — 2 minit:** Murid berkongsi satu kekuatan dan satu penambahbaikan; guru merekod PBD dan memastikan bahan disimpan selamat.
 
-**Bahan:** Buku Pendidikan Kesenian Tahun 3 halaman 4-5, alat perkusi, prop sedia ada dan senarai semak.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 3 SK m/s 4–5, audio Serangga, alat perkusi dan senarai semak.
 
 **Rujukan:** Buku Pendidikan Kesenian Tahun 3 DBP 2018 halaman 4-5; https://anyflip.com/lcinm/flxx/basic (Penggal Dua juga https://anyflip.com/iawvx/rlmd/basic/51-100). Projek buku asal **gabungan seni visual dan muzik**; RPH ini hanya aktiviti muzik. Kod DSKP Muzik tidak diubah; bahan rakaman/lirik penuh tidak diedarkan.
 
