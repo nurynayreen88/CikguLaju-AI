@@ -101,32 +101,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 1.1.1, 1.1.2 melalui kad pengelasan atau senarai contoh berlabel; dua penerangan fungsi atau sebab dalam jadual banding beza, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan kad pengelasan atau senarai contoh berlabel; dua penerangan fungsi atau sebab dalam jadual banding beza bagi SP 1.1.1, 1.1.2; guru menilai ketepatan pilihan dan pengelasan; ketepatan penerangan dan satu justifikasi.",
-      "bbm": "Kad simbol keselamatan, carta peraturan bengkel, pelan laluan keluar, kit pertolongan cemas demonstrasi",
+      "objektif": "Murid menyatakan empat peraturan yang meliputi diri, bengkel, alatan dan bahan, serta menerangkan maksud tiga tanda keselamatan.",
+      "kriteria_kejayaan": "Murid memberikan satu peraturan yang tepat bagi setiap empat kategori dan menerangkan sekurang-kurangnya tiga tanda dengan contoh tindakan.",
+      "bbm": "Buku Teks hlm. 4–7, gambar bengkel dan kad peraturan serta tanda keselamatan.",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan kad simbol keselamatan, pelan keluar, gambar bengkel dalam situasi \"kenal pasti risiko sebenar di bengkel sekolah\" dan mengaitkan masalah dengan SP 1.1.1, 1.1.2. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan gambar sebuah meja bengkel yang belum dikemas. Murid menyatakan satu risiko yang mereka lihat."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 1.1.1 menggunakan Kad simbol keselamatan, carta peraturan bengkel, pelan laluan keluar, kit pertolongan cemas demonstrasi. Murid mengenal pasti ciri/komponen berdasarkan contoh sebenar berkaitan peraturan dan simbol keselamatan bengkel lalu melengkapkan kad pengelasan berlabel (SP 1.1.1)."
+          "aktiviti": "Untuk SP 1.1.1, guru membimbing murid mencari peraturan di halaman 4–7. Murid mengasingkan kad kepada kategori diri, bengkel, alatan dan bahan, kemudian menyebut peraturan bagi setiap kategori."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 1.1.2 dan merekod pemerhatian. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 1.1.2 menggunakan dua contoh dan satu sebab yang munasabah. Guru menjelaskan prosedur kecemasan; jangan mensimulasikan penggunaan api atau kecederaan sebenar."
+          "aktiviti": "Untuk SP 1.1.2, guru memaparkan kad tanda pemadam api, pertolongan cemas dan satu tanda amaran di buku. Secara berpasangan, murid menerangkan maksud setiap tanda dan memberi contoh tindakan yang betul."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel; dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan pilihan dan pengelasan; ketepatan penerangan dan satu justifikasi mengikut SP 1.1.1, 1.1.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Secara individu, murid melengkapkan empat peraturan dan tiga padanan tanda dengan penerangan ringkas. Guru merekod ketepatan setiap kategori dan maksud tanda."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi amalan keselamatan bengkel."
+          "aktiviti": "Murid memilih satu peraturan untuk diamalkan apabila masuk bengkel. Guru merumuskan kaitan tanda dengan tindakan."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: kad pengelasan atau senarai contoh berlabel; dua penerangan fungsi atau sebab dalam jadual banding beza. Guru menyemak ketepatan pilihan dan pengelasan; ketepatan penerangan dan satu justifikasi mengikut SP 1.1.1, 1.1.2; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Lembaran individu dengan empat peraturan mengikut kategori dan tiga penerangan tanda keselamatan.",
       "keselamatan": "Guru menjelaskan prosedur kecemasan; jangan mensimulasikan penggunaan api atau kecederaan sebenar.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -152,8 +152,8 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "kad pengelasan atau senarai contoh berlabel; dua penerangan fungsi atau sebab dalam jadual banding beza",
-      "rubrik_pbd_khusus": "ketepatan pilihan dan pengelasan; ketepatan penerangan dan satu justifikasi",
+      "artefak_khusus": "Kad peraturan empat kategori dan lembaran tiga tanda keselamatan.",
+      "rubrik_pbd_khusus": "Ketepatan peraturan, kategori dan maksud tanda serta kesesuaian contoh tindakan.",
       "contoh_projek_cikgulaju": "peraturan dan simbol keselamatan bengkel",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
@@ -194,32 +194,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "konsep",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 1.1.3 melalui dua penerangan fungsi atau sebab dalam jadual banding beza, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza bagi SP 1.1.3; guru menilai ketepatan penerangan dan satu justifikasi.",
-      "bbm": "Kad simbol keselamatan, carta peraturan bengkel, pelan laluan keluar, kit pertolongan cemas demonstrasi",
+      "objektif": "Murid menunjukkan tindakan awal yang selamat bagi dua situasi kemalangan bengkel dalam simulasi kad peranan.",
+      "kriteria_kejayaan": "Murid menghentikan tugas, memaklumkan guru dan memilih tindakan selamat dalam kedua-dua situasi.",
+      "bbm": "Buku Teks hlm. 9, kad situasi melecur dan renjatan elektrik, kad tindakan dan senarai semak.",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan kad simbol keselamatan, pelan keluar, gambar bengkel dalam situasi \"kenal pasti risiko sebenar di bengkel sekolah\" dan mengaitkan masalah dengan SP 1.1.3. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan dua gambar di halaman 9. Murid mengenal pasti jenis kemalangan yang ditunjukkan."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru menunjukkan contoh fungsi atau konsep bagi peraturan dan simbol keselamatan bengkel. Murid membina peta hubungan sebab dan kesan bagi fokus SP 1.1.3 melalui soal jawab."
+          "aktiviti": "Untuk SP 1.1.3, guru menunjukkan cara menggunakan kad tindakan bagi satu situasi. Murid menyusun langkah awal, termasuk berhenti, memberi amaran kepada rakan dan mendapatkan bantuan guru."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Murid menerangkan dua pilihan dalam situasi baharu, mengenal pasti kelebihan dan kekurangan serta menulis satu justifikasi yang munasabah bagi SP 1.1.3. Guru menjelaskan prosedur kecemasan; jangan mensimulasikan penggunaan api atau kecederaan sebenar."
+          "aktiviti": "Dalam dua simulasi kad peranan, murid mengambil giliran melaporkan situasi melecur dan renjatan elektrik kepada guru. Murid menunjuk kad tindakan yang selamat tanpa menyentuh mangsa lakonan, alatan atau sumber elektrik."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 1.1.3 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik."
+          "aktiviti": "Guru menilai setiap murid dalam dua situasi menggunakan senarai semak. Rekod sama ada murid menghentikan tugas, memaklumkan guru dan memilih tindakan selamat yang sepadan."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi amalan keselamatan bengkel."
+          "aktiviti": "Murid menyebut kepada siapa kemalangan mesti dilaporkan. Guru menegaskan bahawa rawatan sebenar dikendalikan oleh orang dewasa yang bertanggungjawab."
         }
       },
-      "pbd_evidens": "Guru menyemak dua penerangan fungsi atau sebab dalam jadual banding beza mengikut SP 1.1.3 dan menggunakan kriteria ketepatan penerangan dan satu justifikasi. Murid merekod satu tindakan susulan yang realistik.",
+      "pbd_evidens": "Senarai semak pemerhatian dua simulasi kad peranan bagi setiap murid.",
       "keselamatan": "Guru menjelaskan prosedur kecemasan; jangan mensimulasikan penggunaan api atau kecederaan sebenar.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -244,8 +244,8 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "dua penerangan fungsi atau sebab dalam jadual banding beza",
-      "rubrik_pbd_khusus": "ketepatan penerangan dan satu justifikasi",
+      "artefak_khusus": "Urutan kad tindakan dan dua simulasi laporan kepada guru.",
+      "rubrik_pbd_khusus": "Berhenti, memaklumkan guru, memilih tindakan selamat dan tidak menghampiri bahaya.",
       "contoh_projek_cikgulaju": "peraturan dan simbol keselamatan bengkel",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
@@ -287,32 +287,32 @@
       "tempoh_minit": 60,
       "sesi_sambungan": 1,
       "aktiviti_kategori": "pembentangan",
-      "objektif": "Pada akhir sesi, murid dapat menunjukkan penguasaan SP 1.1.4, 1.1.5 melalui dua penerangan fungsi atau sebab dalam jadual banding beza; pembentangan hasil atau dokumentasi proses dan respons soalan, mengikut tahap proses reka bentuk yang diajar.",
-      "kriteria_kejayaan": "Murid menghasilkan dua penerangan fungsi atau sebab dalam jadual banding beza; pembentangan hasil atau dokumentasi proses dan respons soalan bagi SP 1.1.4, 1.1.5; guru menilai ketepatan penerangan dan satu justifikasi; kejelasan hujah, bukti ujian dan maklum balas.",
-      "bbm": "Kad simbol keselamatan, carta peraturan bengkel, pelan laluan keluar, kit pertolongan cemas demonstrasi",
+      "objektif": "Murid menerangkan dua amalan kebersihan atau penyelenggaraan dan merumuskan kesan bagi dua amalan bengkel yang diabaikan.",
+      "kriteria_kejayaan": "Murid menerangkan satu amalan kebersihan dan satu amalan penyelenggaraan, kemudian memadankan dua punca dengan kesannya.",
+      "bbm": "Buku Teks hlm. 11–12, gambar bengkel, kad punca dan kad kesan.",
       "langkah": {
         "set_induksi": {
           "minit": 5,
-          "aktiviti": "Guru menunjukkan kad simbol keselamatan, pelan keluar, gambar bengkel dalam situasi \"kenal pasti risiko sebenar di bengkel sekolah\" dan mengaitkan masalah dengan SP 1.1.4, 1.1.5. Murid menyatakan satu pemerhatian awal."
+          "aktiviti": "Guru menunjukkan gambar bengkel yang teratur di halaman 11. Murid mengenal pasti cara susun atur itu membantu kerja selamat."
         },
         "aktiviti_1": {
           "minit": 15,
-          "aktiviti": "Guru memberikan model kerja SP 1.1.4 menggunakan Kad simbol keselamatan, carta peraturan bengkel, pelan laluan keluar, kit pertolongan cemas demonstrasi. Murid menerangkan fungsi, proses atau kepentingan yang dinyatakan dalam SP 1.1.4 menggunakan dua contoh dan satu sebab yang munasabah."
+          "aktiviti": "Untuk SP 1.1.4, guru membimbing perbincangan kebersihan ruang kerja serta penjagaan alatan berdasarkan contoh halaman 11. Murid menyatakan satu tindakan bagi setiap amalan dan sebab tindakan itu penting."
         },
         "aktiviti_2": {
           "minit": 25,
-          "aktiviti": "Guru membimbing latihan 1.1.5 dan merekod pemerhatian. Murid membentangkan hasil semasa dan dokumentasi peraturan dan simbol keselamatan bengkel, menerangkan fungsi atau langkah reka bentuk serta menjawab satu soalan rakan (SP 1.1.5). Guru menjelaskan prosedur kecemasan; jangan mensimulasikan penggunaan api atau kecederaan sebenar."
+          "aktiviti": "Untuk SP 1.1.5, guru memberikan dua situasi daripada halaman 12 seperti lantai yang terkena tumpahan dan penggunaan alatan rosak. Murid memadankan punca dengan kesannya lalu mencadangkan satu cara mencegah setiap kejadian."
         },
         "pengukuhan_penilaian": {
           "minit": 10,
-          "aktiviti": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza; pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak ketepatan penerangan dan satu justifikasi; kejelasan hujah, bukti ujian dan maklum balas mengikut SP 1.1.4, 1.1.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal."
+          "aktiviti": "Guru menyemak penerangan dua amalan dan dua rumusan punca–kesan yang ditulis oleh setiap murid. Murid membetulkan satu padanan selepas maklum balas."
         },
         "penutup": {
           "minit": 5,
-          "aktiviti": "Murid menyatakan satu pengetahuan atau kemahiran yang benar-benar dicapai pada sesi ini, bukan keputusan akhir projek yang belum dilaksanakan. Guru merumuskan dan menyimpan rekod bagi amalan keselamatan bengkel."
+          "aktiviti": "Murid memilih satu tindakan kebersihan dan satu tindakan penjagaan alatan yang boleh dibuat di bawah arahan guru."
         }
       },
-      "pbd_evidens": "Evidens PdP ini: dua penerangan fungsi atau sebab dalam jadual banding beza; pembentangan hasil atau dokumentasi proses dan respons soalan. Guru menyemak ketepatan penerangan dan satu justifikasi; kejelasan hujah, bukti ujian dan maklum balas mengikut SP 1.1.4, 1.1.5; hasil projek akhir tidak diwajibkan bagi sesi konsep/lakaran awal.",
+      "pbd_evidens": "Dua penerangan amalan dan dua padanan punca serta kesan dalam lembaran individu.",
       "keselamatan": "Guru menjelaskan prosedur kecemasan; jangan mensimulasikan penggunaan api atau kecederaan sebenar.",
       "rujukan_buku_teks": {
         "status": "RUJUKAN_TEKS_DIGITAL_DITEMUI_BELUM_VISUAL_SAH",
@@ -338,8 +338,8 @@
         "halaman_buku_disahkan": false,
         "telegram_web_native_diuji": false
       },
-      "artefak_khusus": "dua penerangan fungsi atau sebab dalam jadual banding beza; pembentangan hasil atau dokumentasi proses dan respons soalan",
-      "rubrik_pbd_khusus": "ketepatan penerangan dan satu justifikasi; kejelasan hujah, bukti ujian dan maklum balas",
+      "artefak_khusus": "Lembaran amalan keselamatan dan jadual punca–kesan.",
+      "rubrik_pbd_khusus": "Kejelasan amalan, ketepatan punca dan kesan serta kesesuaian tindakan pencegahan.",
       "contoh_projek_cikgulaju": "peraturan dan simbol keselamatan bengkel",
       "status_cadangan_projek": "CADANGAN_PDP_CIKGULAJU_BUKAN_AKTIVITI_BUKU_DISAHKAN",
       "langkah_berdasarkan_sp": true,
