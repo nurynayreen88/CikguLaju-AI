@@ -92,12 +92,13 @@ def main():
                 assert result.status_code==200,(subject,year,fmt,result.status_code,result.json if result.is_json else len(result.data))
                 body=result.data
                 assert len(body)>1000
+                assert "_DRAF" not in result.headers["Content-Disposition"]
                 if fmt=="word":
                     with ZipFile(io.BytesIO(body)) as z:
                         assert "word/document.xml" in z.namelist()
                         assert z.testzip() is None
                         xml = z.read("word/document.xml")
-                        assert (b"DRAF" not in xml) == reviewed
+                        assert b"DRAF" not in xml
                         if reviewed:
                             from docx import Document
 
