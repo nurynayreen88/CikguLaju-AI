@@ -141,7 +141,10 @@ def run():
                     headers={"Authorization":"Bearer "+TOKEN})
                 assert res.status_code==200,(y,p,fmt,res.status_code,res.get_json())
                 assert res.data.startswith(b"PK\x03\x04" if fmt=="word" else b"%PDF-")
-                assert b"DRAF" in res.headers["Content-Disposition"].encode()
+                extension = "docx" if fmt == "word" else "pdf"
+                assert res.headers["Content-Disposition"] == (
+                    f'attachment; filename="CikguLaju_RPH_RBT_{y}_PdP_{p}.{extension}"'
+                )
                 assert res.headers["Cache-Control"]=="no-store, private"
         os.environ["CIKGULAJU_RBT_2027_DRAFT_USER_ENABLED"]="0"
         res=get("/internal/rph/v1/rbt/units?year=4")

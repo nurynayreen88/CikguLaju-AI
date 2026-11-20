@@ -196,7 +196,7 @@ def create_rbt_2027_native_blueprint(runtime):
             resp=Response(data,mimetype=MIMES[fmt])
             ext="docx" if fmt=="word" else "pdf"
             resp.headers["Content-Disposition"]=(
-                f'attachment; filename="CikguLaju_RPH_RBT_{y}_PdP_{row["pdp"]:03d}_DRAF.{ext}"')
+                f'attachment; filename="CikguLaju_RPH_RBT_{y}_PdP_{row["pdp"]:03d}.{ext}"')
             return resp
         except Exception as exc:
             print("RBT Telegram-native render failed:",type(exc).__name__,flush=True)

@@ -224,7 +224,7 @@ def _music_state(selected,teacher):
     state={"task":"rph","quick_material_flow":True,
            "year":f"Tahun {year}","year_label":f"Tahun {year}",
            "subject":"Pendidikan Muzik",
-           "topic":"DRAF CADANGAN — "+selected["title"],
+           "topic":selected["title"],
            "unit":selected["title"],"unit_title":selected["title"],
            "subtopic":"","lesson_no":str(selected["lesson"]),
            "pdp_no":selected["lesson"],
@@ -280,7 +280,6 @@ def _arab_word(selected,teacher,dest):
     doc=Document(dest)
     if len(doc.tables)!=1 or not doc.paragraphs:
         raise ValueError("Arabic Word structure invalid")
-    doc.paragraphs[0].add_run(" • DRAF UNTUK SEMAKAN GURU").bold=True
     for row in doc.tables[0].rows:
         caption = row.cells[0].text.strip()
         if caption=="Tarikh / Masa / Kelas":
@@ -439,8 +438,7 @@ def create_provisional_subjects_blueprint(runtime):
             elif not body.startswith(b"%PDF-"):
                 raise ValueError("Invalid PDF")
             resp=Response(body,mimetype=MIMES[fmt])
-            name = ("CIKGULAJU_RPH_ARAB_TAHUN_2_001" if selected.get("status") == "READY"
-                    else "CikguLaju_" + src["subject"] + "_DRAF")
+            name = f"CIKGULAJU_RPH_{src['subject']}_TAHUN_{src['year']}_{src['lesson']}"
             extension = "docx" if fmt == "word" else "pdf"
             resp.headers["Content-Disposition"] = f'attachment; filename="{name}.{extension}"'
             return resp

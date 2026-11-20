@@ -10188,12 +10188,32 @@ def _rph_display_value(s,key,value):
     if key=='TAJUK': return v.replace('Semua Subtopik','All Subtopics')
     return v
 
+def _rph_document_rows(s, rows):
+    raw_title = rows.get('TAJUK') or ''
+    title = re.sub(r'^(?:CADANGAN CIKGULAJU \(DRAF\)|DRAF CADANGAN)\s*[—–-]\s*', '', raw_title)
+    title = re.sub(r'\s*(?:\[DRAF CADANGAN — SEMAK GURU\]|\(DRAF(?: UNTUK SEMAKAN)?\))$', '', title)
+    if title != raw_title:
+        rows = {**rows, 'TAJUK': title}
+    if _pi_primary_v25210(s):
+        # Replace the generator's own source labels without altering the lesson anchors.
+        wording = {
+            'STANDARD PEMBELAJARAN': (' مڠيکوت RPT 2026', ''),
+            'OBJEKTIF PEMBELAJARAN': ('فوکوس RPT', 'فوکوس ڤدڤ'),
+            'BAHAN BANTU MENGAJAR': ('، باهن RPT دان', ' دان'),
+            'AKTIVITI UTAMA': ('توݢسن RPT يڠ دصحکن', 'توݢسن ڤمبلاجرن'),
+        }
+        rows = {**rows, **{key: (rows.get(key) or '').replace(old, new)
+                           for key, (old, new) in wording.items()}}
+    return rows
+
+
 def _rph_title(s): return 'DAILY LESSON PLAN' if _is_english_subject(s) else 'RANCANGAN PENGAJARAN HARIAN'
 def _create_rph_word(doc, section, s, ai_text, path):
     from docx.oxml import OxmlElement
     from docx.oxml.ns import qn
 
     rph = _rph_rows(s, ai_text)
+    rph = _rph_document_rows(s, rph)
     body_size = 9.25 if rph.get('CATATAN AKTIVITI UTAMA') else 8.5
     pi_primary = _pi_primary_v25210(s)
     p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -10771,6 +10791,7 @@ def create_pdf_file(s, ai_text, cid):
     if s.get('task') == 'rph':
         # v23.61: compact professional RPH; worksheet design remains untouched.
         rph = _rph_rows(s, ai_text)
+        rph = _rph_document_rows(s, rph)
         body_style.fontSize, body_style.leading = (
             (9.25, 11) if rph.get('CATATAN AKTIVITI UTAMA') else (7.75, 8.85))
         section_style.fontSize=8.8; section_style.leading=9.8
