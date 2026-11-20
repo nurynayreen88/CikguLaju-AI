@@ -177,6 +177,9 @@ def lesson_text(code):
 
 
 def plan_text(lesson, standards):
+    from web.sains_opening_pedagogy_20261121 import pedagogy_for_plan
+
+    teaching = pedagogy_for_plan(lesson)
     return "\n".join((
         f"TAJUK: {lesson.title}",
         f"STANDARD KANDUNGAN: {lesson.sk} {SK[lesson.sk]}",
@@ -185,6 +188,8 @@ def plan_text(lesson, standards):
         f"OBJEKTIF PEMBELAJARAN: {lesson.objective}",
         f"KRITERIA KEJAYAAN: {lesson.objective}",
         f"BAHAN BANTU MENGAJAR: {lesson.materials} Buku Teks m/s {lesson.pages}.",
+        f"EMK / NILAI: {teaching['EMK / NILAI']}",
+        f"KBAT / PAK21: {teaching['KBAT / PAK21']}",
         f"PENTAKSIRAN: {lesson.assessment}",
         f"SET INDUKSI: {lesson.induction}",
         f"AKTIVITI UTAMA:\nAktiviti 1 — {lesson.guided}\nAktiviti 2 — {lesson.independent}",
