@@ -189,9 +189,16 @@ def main():
         6: ("3.1.1", "٥ و٩"), 7: ("3.2.1", "٥ و٩"),
         8: ("1.3.1", "١١–١٢"), 9: ("1.3.2", "١١–١٢"), 10: ("2.3.5", "١٣–١٤"),
         11: ("3.3.1", "٢٠ و٢٤"), 12: ("1.4.1", "١٦–١٧"),
+        13: ("1.1.1", "٣٠"), 14: ("2.2.1", "٣١"), 15: ("3.1.1", "٣٢"),
+        16: ("1.1.1", "٣٣"), 17: ("2.2.1", "٣٤"), 18: ("3.1.1", "٣٥"),
+        19: ("1.1.1", "٣٦"), 20: ("2.2.1", "٣٧"), 21: ("3.1.1", "٣٨"),
+        22: ("1.3.2", "٤١"), 23: ("2.3.1", "٤٢"), 24: ("2.3.3", "٤٣"),
+        25: ("1.4.1", "٤٥"), 26: ("1.4.2", "٤٦"), 27: ("1.4.3", "٤٧"),
+        28: ("1.4.1", "٥٥"),
     }
+    year_three_units = {pdp: "u01" if pdp <= 12 else "u02" for pdp in year_three}
     assert actual == ({(2, unit, pdp) for unit, pdp in reviewed}
-                      | {(3, "u01", pdp) for pdp in year_three})
+                      | {(3, unit, pdp) for pdp, unit in year_three_units.items()})
     for (unit, pdp), sp in reviewed.items():
         reviewed_lesson = {"year": 2, "subject": "ARAB", "unit": unit, "lesson": f"{pdp:03d}"}
         status = c.get("/internal/rph/v1/other-drafts/availability", query_string=reviewed_lesson,
@@ -219,7 +226,7 @@ def main():
             assert "٣ و٥" in doc.tables[2].cell(1, 1).text
     print(f"ARABIC_REVIEWED_WORD_PASS {len(reviewed)}", flush=True)
     for pdp, (sp, pages) in year_three.items():
-        selection = {"year": 3, "subject": "ARAB", "unit": "u01", "lesson": f"{pdp:03d}"}
+        selection = {"year": 3, "subject": "ARAB", "unit": year_three_units[pdp], "lesson": f"{pdp:03d}"}
         status = c.get("/internal/rph/v1/other-drafts/availability", query_string=selection, headers=auth)
         assert status.json["status"] == "READY" and status.json["formats"] == ["word"]
         result = c.post("/internal/rph/v1/other-drafts/render", headers=auth, json={
