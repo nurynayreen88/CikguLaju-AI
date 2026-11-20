@@ -3,7 +3,8 @@ from io import BytesIO
 from xml.sax.saxutils import escape
 
 from staging.ppki.catalog import (
-    MANIPULATIVE_UNIT_LESSONS, RPT_COMBINED_EDITION, UNIT, UNIT_LESSONS, YEAR, YEAR3_LESSONS, catalog,
+    MANIPULATIVE_UNIT_LESSONS, RPT_COMBINED_EDITION, RPT_YEAR3_EDITION, UNIT, UNIT_LESSONS,
+    YEAR, YEAR3_LESSONS, catalog,
 )
 from staging.ppki.render_pengurusan_kehidupan import PPKI_LABEL_FILL
 
@@ -24,6 +25,7 @@ def render_rpt(*, combined=False, manipulative=False, year=YEAR):
 
     def unit_story(unit, number):
         source = catalog(unit, year=year)
+        padding = 1 if year == 3 and unit == UNIT else cell_padding
         rows = [[Paragraph(label, header) for label in ("PdP", "Fokus", "SK", "SP", "Buku Teks")]]
         for lesson in source["lessons"]:
             sp = lesson["sp"]
@@ -38,8 +40,8 @@ def render_rpt(*, combined=False, manipulative=False, year=YEAR):
             ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#" + PPKI_LABEL_FILL)),
             ("GRID", (0, 0), (-1, -1), 0.4, colors.HexColor("#80758A")),
             ("VALIGN", (0, 0), (-1, -1), "TOP"),
-            ("TOPPADDING", (0, 0), (-1, -1), cell_padding),
-            ("BOTTOMPADDING", (0, 0), (-1, -1), cell_padding),
+            ("TOPPADDING", (0, 0), (-1, -1), padding),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), padding),
         ]))
         return [
             Paragraph(f"RPT 2027 · Agihan PdP Unit {number}", title),
@@ -53,7 +55,7 @@ def render_rpt(*, combined=False, manipulative=False, year=YEAR):
 
     if year == 3 and not manipulative:
         units = YEAR3_LESSONS
-        edition = "Unit 1"
+        edition = RPT_YEAR3_EDITION
     elif year != YEAR:
         raise ValueError("Unknown PPKI RPT")
     elif manipulative:

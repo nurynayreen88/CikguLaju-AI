@@ -1,0 +1,541 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 3,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 2 · Kebersihan Menjamin Kesihatan Diri",
+  "content_standards": {
+    "2.1": "Penjagaan kebersihan bahagian sulit mengikut jantina.",
+    "2.2": "Penjagaan alatan dan bahan kebersihan diri.",
+    "2.3": "Penjagaan kebersihan pakaian, kasut dan stoking.",
+    "2.4": "Penjagaan dan keceriaan dalam dan luar bilik darjah.",
+    "2.5": "Peraturan dan arahan di kawasan yang boleh mendatangkan bahaya di sekolah."
+  },
+  "learning_standards": {
+    "2.1.1": "Menamakan bahagian sulit mengikut jantina.",
+    "2.1.2": "Menyatakan cara menjaga kebersihan bahagian sulit.",
+    "2.1.3": "Menunjukkan langkah membersihkan bahagian sulit.",
+    "2.2.1": "Menamakan jenis alatan dan bahan kebersihan diri.",
+    "2.2.2": "Menyatakan cara membersih dan menyimpan alatan serta bahan kebersihan diri.",
+    "2.2.3": "Membersih dan menyimpan alatan serta bahan kebersihan diri dengan cara yang betul.",
+    "2.3.1": "Menamakan alatan dan bahan untuk mencuci kasut dan stoking.",
+    "2.3.2": "Menunjukkan cara mencuci kasut dan stoking.",
+    "2.3.3": "Menerangkan langkah keselamatan diri semasa mencuci kasut dan stoking.",
+    "2.3.4": "Mengamalkan langkah keselamatan diri semasa mencuci kasut dan stoking.",
+    "2.3.5": "Mengaplikasikan cara membersih dan menyimpan alatan serta bahan mencuci kasut dan stoking.",
+    "2.4.1": "Menyatakan cara menjaga dan menceriakan dalam dan luar bilik darjah.",
+    "2.4.2": "Menunjukkan cara menjaga dan menceriakan dalam dan luar bilik darjah.",
+    "2.4.3": "Menerangkan langkah keselamatan diri semasa menjaga dan menceriakan dalam dan luar bilik darjah.",
+    "2.4.4": "Mengaplikasikan langkah keselamatan diri semasa menjaga dan menceriakan dalam dan luar bilik darjah.",
+    "2.5.1": "Mengenal dan menamakan kawasan yang boleh mendatangkan bahaya di sekolah.",
+    "2.5.2": "Memerihalkan kawasan yang boleh mendatangkan bahaya di sekolah.",
+    "2.5.3": "Menjelaskan kepentingan mematuhi arahan lisan dan bukan lisan di kawasan yang boleh mendatangkan bahaya di sekolah."
+  },
+  "lessons": [
+    {
+      "pdp": "018",
+      "title": "Namakan bahagian sulit dengan istilah yang betul",
+      "sp": "2.1.1",
+      "focus": "Pengenalan istilah anatomi melalui ilustrasi pembelajaran.",
+      "book": "Buku Teks hlm. 19",
+      "objective": "Murid memadankan sekurang-kurangnya tiga daripada empat label pada ilustrasi yang sesuai.",
+      "materials": "Ilustrasi pendidikan buku teks dan kad istilah.",
+      "induction": [
+        "Guru menerangkan bahawa aktiviti menggunakan gambar dan nama bahagian badan.",
+        "Murid menyebut nama bahagian badan yang sudah dipelajari."
+      ],
+      "guided": [
+        "Guru menunjukkan lokasi dada, punggung, faraj dan zakar pada ilustrasi yang sesuai.",
+        "Murid memadankan istilah dengan gambar sambil menjaga adab."
+      ],
+      "practice": [
+        "Guru mengagihkan empat kad label untuk ilustrasi baharu.",
+        "Murid meletakkan kad label pada ruang yang sepadan."
+      ],
+      "closure": [
+        "Guru menyemak satu label yang kerap tertukar.",
+        "Murid memilih label tepat untuk ilustrasi tersebut."
+      ],
+      "support": "Benarkan murid menunjuk jawapan tanpa menyebutnya di hadapan kelas.",
+      "assessment": "Guru menyemak ketepatan empat padanan label.",
+      "follow_up": "Ulang dua istilah dengan kad yang lebih jelas."
+    },
+    {
+      "pdp": "019",
+      "title": "Terangkan cara menjaga kebersihan diri",
+      "sp": "2.1.2",
+      "focus": "Penjagaan kebersihan semasa menggunakan tandas.",
+      "book": "Buku Teks hlm. 19–20",
+      "objective": "Murid menyatakan sekurang-kurangnya tiga daripada empat amalan kebersihan selepas menggunakan tandas.",
+      "materials": "Kad rutin bergambar dan model tandas.",
+      "induction": [
+        "Guru menunjukkan gambar gayung, tisu dan besen cuci tangan.",
+        "Murid memilih alat yang biasa digunakan di tandas."
+      ],
+      "guided": [
+        "Guru menerangkan amalan menggunakan air bersih, mengeringkan diri, membuang tisu dengan betul dan mencuci tangan.",
+        "Murid mengaitkan setiap amalan dengan gambar atau alat."
+      ],
+      "practice": [
+        "Guru memberi empat kad tindakan tanpa label.",
+        "Murid menerangkan tindakan dalam setiap kad dengan ayat mudah atau memilih frasa."
+      ],
+      "closure": [
+        "Guru meminta murid mengingat satu tindakan sebelum keluar tandas.",
+        "Murid menyebut atau menunjuk amalan yang sesuai."
+      ],
+      "support": "Gunakan kad rutin yang sama seperti rutin sekolah.",
+      "assessment": "Guru menanda sekurang-kurangnya tiga penerangan tepat.",
+      "follow_up": "Ulang urutan menggunakan kad langkah."
+    },
+    {
+      "pdp": "020",
+      "title": "Susun dan tunjuk langkah membersihkan diri",
+      "sp": "2.1.3",
+      "focus": "Simulasi langkah penjagaan selepas menggunakan tandas dengan kad dan model.",
+      "book": "Buku Teks hlm. 20",
+      "objective": "Murid menyusun dan menunjukkan sekurang-kurangnya tiga daripada empat langkah dalam turutan yang sesuai.",
+      "materials": "Kad urutan dan model tandas.",
+      "induction": [
+        "Guru menunjukkan dua kad langkah dalam susunan yang salah.",
+        "Murid mencadangkan langkah permulaan."
+      ],
+      "guided": [
+        "Guru menunjukkan urutan menggunakan air bersih, membersihkan, mengeringkan dan mencuci tangan melalui model.",
+        "Murid menyusun kad mengikut model yang diberi."
+      ],
+      "practice": [
+        "Guru menyediakan satu set kad bercampur dan model untuk simulasi.",
+        "Murid menunjukkan urutan dengan kad dan model."
+      ],
+      "closure": [
+        "Guru meminta satu langkah terakhir daripada urutan.",
+        "Murid memperagakan cuci tangan menggunakan model."
+      ],
+      "support": "Gunakan model atau ilustrasi sahaja. Jangan minta murid membuat demonstrasi pada tubuh sendiri atau orang lain.",
+      "assessment": "Guru merekod turutan langkah dan jenis bantuan.",
+      "follow_up": "Ulang satu pasangan langkah yang tertukar."
+    },
+    {
+      "pdp": "021",
+      "title": "Kenali alatan dan bahan kebersihan diri",
+      "sp": "2.2.1",
+      "focus": "Menamakan alatan dalam kit penjagaan diri.",
+      "book": "Buku Teks hlm. 21–23",
+      "objective": "Murid menamakan sekurang-kurangnya empat daripada enam alatan atau bahan yang ditunjukkan.",
+      "materials": "Kit bersih, gambar dan kad istilah.",
+      "induction": [
+        "Guru memaparkan beg kecil berisi alatan kebersihan.",
+        "Murid meneka satu item melalui petunjuk gambar."
+      ],
+      "guided": [
+        "Guru mengeluarkan tuala, span, sikat, sabun, ubat gigi dan berus gigi.",
+        "Murid memadankan item dengan kad nama dan menyebutnya."
+      ],
+      "practice": [
+        "Guru menunjukkan enam gambar dalam urutan baharu.",
+        "Murid menamakan item atau memilih label yang sepadan."
+      ],
+      "closure": [
+        "Guru meminta nama satu item untuk penjagaan rambut.",
+        "Murid menunjukkan sikat dan menyebut namanya."
+      ],
+      "support": "Gunakan saiz gambar yang sesuai dan terima jawapan melalui kad.",
+      "assessment": "Guru merekod jumlah nama yang tepat.",
+      "follow_up": "Ulang nama bagi dua item yang masih keliru."
+    },
+    {
+      "pdp": "022",
+      "title": "Terangkan cara membersih dan menyimpan alatan",
+      "sp": "2.2.2",
+      "focus": "Menghubungkan cara menjaga alatan dengan tempat simpanan.",
+      "book": "Buku Teks hlm. 22–23",
+      "objective": "Murid menerangkan langkah membersih dan menyimpan sekurang-kurangnya tiga daripada empat item.",
+      "materials": "Kad tuala, span mandi, sabun dan pengetip kuku bergambar.",
+      "induction": [
+        "Guru menunjukkan tuala basah pada gambar dan lokasi simpanan.",
+        "Murid memilih tindakan sebelum tuala disimpan."
+      ],
+      "guided": [
+        "Guru memadankan empat item dengan kad bersihkan, keringkan dan tempat simpanan yang sesuai.",
+        "Murid menerangkan cara menyimpan setiap item dengan ayat mudah."
+      ],
+      "practice": [
+        "Guru menunjukkan empat item tanpa urutan siap.",
+        "Murid memilih kad penjagaan dan menerangkan cara membersih serta menyimpan setiap item."
+      ],
+      "closure": [
+        "Guru meminta seorang murid menyemak padanan sabun.",
+        "Murid menunjukkan bekas sabun yang sesuai."
+      ],
+      "support": "Gunakan gambar pengetip kuku atau model tertutup.",
+      "assessment": "Guru memeriksa ketepatan tindakan membersih dan simpan bagi empat item.",
+      "follow_up": "Ulang dengan dua alatan yang digunakan setiap hari."
+    },
+    {
+      "pdp": "023",
+      "title": "Amali bersihkan dan simpan kit kebersihan",
+      "sp": "2.2.3",
+      "focus": "Mempraktikkan rutin bilas, keringkan dan simpan dengan bahan selamat.",
+      "book": "Buku Teks hlm. 22–23",
+      "objective": "Murid melaksanakan tiga langkah betul pada sekurang-kurangnya dua daripada tiga stesen.",
+      "materials": "Tuala kecil, span bersih, bekas sabun dan kad langkah.",
+      "induction": [
+        "Guru menunjukkan tuala dan dua lokasi simpanan.",
+        "Murid memilih ruang yang sesuai selepas tuala kering."
+      ],
+      "guided": [
+        "Guru memodelkan pembilasan span, pemerasan ringan dan penggantungan.",
+        "Murid meniru langkah di stesen latihan."
+      ],
+      "practice": [
+        "Guru menyediakan tiga stesen yang menggunakan tuala, span dan bekas sabun.",
+        "Murid membersihkan, mengeringkan dan menyimpan item mengikut stesen."
+      ],
+      "closure": [
+        "Guru meminta semakan permukaan meja dan tempat simpanan.",
+        "Murid memastikan alatan tersusun dan ruang kerja kering."
+      ],
+      "support": "Sediakan kain lap dan bekas kecil. Pastikan laluan kering.",
+      "assessment": "Guru merekod tiga langkah di setiap stesen.",
+      "follow_up": "Ulang satu stesen dengan kad urutan bergambar."
+    },
+    {
+      "pdp": "024",
+      "title": "Namakan alatan mencuci kasut dan stoking",
+      "sp": "2.3.1",
+      "focus": "Memilih alat dan bahan daripada dulang contoh.",
+      "book": "Buku Teks hlm. 24",
+      "objective": "Murid menamakan atau memilih sekurang-kurangnya tiga daripada empat alat atau bahan yang diperlukan.",
+      "materials": "Berus lembut, besen, air dan gambar sabun pencuci.",
+      "induction": [
+        "Guru menunjukkan kasut dan stoking yang perlu dicuci.",
+        "Murid meneka alat yang sesuai untuk kasut."
+      ],
+      "guided": [
+        "Guru menerangkan peranan berus, besen, air dan sabun pencuci.",
+        "Murid memadankan alat dengan gambar tindakan."
+      ],
+      "practice": [
+        "Guru menyediakan kad bahan relevan dan bahan pengalih perhatian.",
+        "Murid memilih serta menamakan empat item yang diperlukan."
+      ],
+      "closure": [
+        "Guru menunjukkan cara memilih besen yang sesuai.",
+        "Murid menyebut kegunaannya dalam satu ayat."
+      ],
+      "support": "Pegang alatan sebenar di bawah pengawasan atau gunakan kad.",
+      "assessment": "Guru menanda ketepatan empat pilihan.",
+      "follow_up": "Ulang perbandingan alat yang sering tertukar."
+    },
+    {
+      "pdp": "025",
+      "title": "Amali mencuci kasut dan stoking",
+      "sp": "2.3.2",
+      "focus": "Mempraktikkan langkah cuci kasut dan stoking pada stesen rendah risiko.",
+      "book": "Buku Teks hlm. 24",
+      "objective": "Murid menunjukkan sekurang-kurangnya tiga daripada empat langkah yang betul bagi setiap item.",
+      "materials": "Kasut contoh, stoking bersih, besen, berus lembut dan air.",
+      "induction": [
+        "Guru menunjukkan satu kasut dan satu stoking pada dua dulang.",
+        "Murid mengenal pasti perbezaan cara kedua-dua bahan dicuci."
+      ],
+      "guided": [
+        "Guru mendemonstrasi basahkan, bersihkan, bilas dan jemur menggunakan bahan contoh.",
+        "Murid meniru urutan pada stesen guru."
+      ],
+      "practice": [
+        "Guru membahagikan latihan kepada stesen kasut dan stoking.",
+        "Murid mempraktikkan empat langkah bagi setiap item dengan pengawasan."
+      ],
+      "closure": [
+        "Guru menunjukkan tempat jemuran sementara.",
+        "Murid meletakkan bahan contoh di tempat yang sesuai."
+      ],
+      "support": "Guru mengendalikan bahan pencuci. Gunakan air kosong jika sesuai.",
+      "assessment": "Guru menanda empat langkah bagi kasut dan stoking.",
+      "follow_up": "Ulang satu langkah menggunakan kad."
+    },
+    {
+      "pdp": "026",
+      "title": "Terangkan keselamatan semasa mencuci",
+      "sp": "2.3.3",
+      "focus": "Menjelaskan cara mengurangkan risiko tergelincir dan terkena bahan pencuci.",
+      "book": "Buku Teks hlm. 24",
+      "objective": "Murid memberi penerangan yang sesuai bagi sekurang-kurangnya tiga daripada empat situasi.",
+      "materials": "Kad bahaya, tanda lantai basah dan gambar kasut beralas.",
+      "induction": [
+        "Guru menunjukkan gambar air tertumpah di laluan.",
+        "Murid mengenal pasti bahaya yang mungkin berlaku."
+      ],
+      "guided": [
+        "Guru menerangkan tindakan menjaga kawasan kering, memakai alas kaki sesuai, menggunakan bahan dengan pengawasan dan menyimpan alatan.",
+        "Murid memadankan tindakan dengan setiap bahaya."
+      ],
+      "practice": [
+        "Guru menunjukkan empat situasi berasingan.",
+        "Murid menerangkan satu langkah selamat bagi setiap situasi."
+      ],
+      "closure": [
+        "Guru meminta tindakan jika lantai licin.",
+        "Murid menunjukkan tanda amaran atau kad lap kering."
+      ],
+      "support": "Gunakan simulasi bergambar tanpa mewujudkan lantai licin.",
+      "assessment": "Guru menyemak empat penerangan dan ketepatannya.",
+      "follow_up": "Ulang satu situasi menggunakan dua pilihan tindakan."
+    },
+    {
+      "pdp": "027",
+      "title": "Amalkan langkah keselamatan semasa mencuci",
+      "sp": "2.3.4",
+      "focus": "Mengamalkan keselamatan ketika menyediakan, menggunakan dan mengemas stesen cucian.",
+      "book": "Buku Teks hlm. 24",
+      "objective": "Murid menunjukkan sekurang-kurangnya tiga daripada empat tindakan selamat dalam simulasi.",
+      "materials": "Dulang, besen contoh, kad amaran dan kain lap.",
+      "induction": [
+        "Guru menunjukkan susunan stesen yang kemas.",
+        "Murid menyebut satu bahagian yang menjadikannya selamat."
+      ],
+      "guided": [
+        "Guru memperagakan kawasan kerja stabil, laluan lapang, alat selamat dan pembersihan selepas aktiviti.",
+        "Murid memilih kad tindakan mengikut urutan."
+      ],
+      "practice": [
+        "Guru menyediakan stesen simulasi dengan empat petunjuk bertanda.",
+        "Murid mempraktikkan tindakan selamat sebelum, semasa dan selepas mencuci."
+      ],
+      "closure": [
+        "Guru meminta satu semakan keselamatan terakhir.",
+        "Murid memeriksa laluan dan meletakkan alat di tempatnya."
+      ],
+      "support": "Gunakan dulang untuk menahan air dan pantau aktiviti.",
+      "assessment": "Guru merekod jumlah tindakan yang diamalkan tanpa arahan tambahan.",
+      "follow_up": "Latih semula tindakan yang terlepas menggunakan senarai visual."
+    },
+    {
+      "pdp": "028",
+      "title": "Bersihkan dan simpan alatan mencuci",
+      "sp": "2.3.5",
+      "focus": "Mengaplikasikan urutan penjagaan besen, berus dan bahan mencuci.",
+      "book": "Buku Teks hlm. 25",
+      "objective": "Murid menyelesaikan sekurang-kurangnya tiga daripada empat langkah pembersihan dan penyimpanan.",
+      "materials": "Besen kecil, berus, bekas bahan dan kain lap.",
+      "induction": [
+        "Guru menunjukkan berus dan besen selepas aktiviti contoh.",
+        "Murid menyatakan alatan yang perlu dibersihkan."
+      ],
+      "guided": [
+        "Guru menunjukkan cara membilas besen, mengeringkan, menggantung berus dan menyimpan bahan.",
+        "Murid meniru tindakan menggunakan alatan contoh."
+      ],
+      "practice": [
+        "Guru mengagihkan satu set alat bagi setiap pasangan.",
+        "Murid membersihkan dan menyusun alatan pada ruang simpanan bertanda."
+      ],
+      "closure": [
+        "Guru menyemak kedudukan berus yang digantung.",
+        "Murid menunjukkan tempat yang betul untuk besen."
+      ],
+      "support": "Gunakan bekas bahan kosong atau gambar untuk item pencuci.",
+      "assessment": "Guru menyemak empat langkah dan lokasi simpanan.",
+      "follow_up": "Ulang satu langkah perlahan-lahan dengan panduan bergambar."
+    },
+    {
+      "pdp": "029",
+      "title": "Nyatakan cara menjaga dan menceriakan kelas",
+      "sp": "2.4.1",
+      "focus": "Menyatakan cara menjaga ruang dalam dan luar kelas.",
+      "book": "Buku Teks hlm. 26–29",
+      "objective": "Murid menyatakan dua cadangan bagi ruang dalam kelas dan dua bagi ruang luar kelas.",
+      "materials": "Gambar kelas, koridor dan kad cadangan.",
+      "induction": [
+        "Guru menunjukkan gambar dua ruang sebelum dikemas.",
+        "Murid menyebut perbezaan antara kedua-dua ruang."
+      ],
+      "guided": [
+        "Guru mengenalkan contoh menyusun buku, menjaga sudut pembelajaran, mengemas laluan dan menyusun pasu yang selamat.",
+        "Murid mengasingkan kad cadangan mengikut lokasi."
+      ],
+      "practice": [
+        "Guru memberi gambar baharu untuk dua ruang.",
+        "Murid memilih serta menyatakan dua cadangan sesuai bagi setiap ruang."
+      ],
+      "closure": [
+        "Guru meminta murid memilih satu cadangan yang boleh dibuat hari ini.",
+        "Murid menyatakan sebab cadangan itu berguna."
+      ],
+      "support": "Gunakan pilihan bergambar dan lokasi yang dikenali.",
+      "assessment": "Guru menanda empat cadangan mengikut ruang.",
+      "follow_up": "Ulang padanan lokasi dengan dua ilustrasi."
+    },
+    {
+      "pdp": "030",
+      "title": "Amali kemas dan ceria dalam serta luar kelas",
+      "sp": "2.4.2",
+      "focus": "Menunjukkan cara mengemas sudut kelas dan kawasan luar yang diluluskan.",
+      "book": "Buku Teks hlm. 26–29",
+      "objective": "Murid menunjukkan dua tugas yang betul di sudut dalam kelas dan dua di luar kelas.",
+      "materials": "Kad tugasan, bekas simpanan dan alat ringan.",
+      "induction": [
+        "Guru menunjukkan keadaan sudut kelas dan kawasan luar yang dipilih.",
+        "Murid memilih satu perkara yang perlu dibetulkan."
+      ],
+      "guided": [
+        "Guru memodelkan menyusun buku, melap meja, menyusun pasu ringan dan mengemas laluan.",
+        "Murid berlatih tugas menggunakan kad bergambar."
+      ],
+      "practice": [
+        "Guru mengawasi dua stesen amali yang selamat.",
+        "Murid menunjukkan dua tugas dalam kelas dan dua di ruang luar diluluskan."
+      ],
+      "closure": [
+        "Guru meminta perbandingan sebelum dan selepas aktiviti.",
+        "Murid menyebut satu perubahan yang dapat diperhatikan."
+      ],
+      "support": "Sediakan pilihan tugas duduk, alatan ringan dan laluan mudah diakses.",
+      "assessment": "Guru menyemak empat tugas serta keadaan ruang selepas amali.",
+      "follow_up": "Latih semula satu tugas menggunakan langkah yang lebih kecil."
+    },
+    {
+      "pdp": "031",
+      "title": "Terangkan keselamatan semasa gotong-royong",
+      "sp": "2.4.3",
+      "focus": "Menjelaskan langkah selamat dalam tugas menceriakan kelas.",
+      "book": "Buku Teks hlm. 28–29",
+      "objective": "Murid menerangkan langkah yang sesuai bagi sekurang-kurangnya tiga daripada empat situasi.",
+      "materials": "Kad alatan, gambar gotong-royong dan tanda keselamatan.",
+      "induction": [
+        "Guru menunjukkan gambar alat berat dan alat ringan.",
+        "Murid memilih alat yang sesuai digunakan dengan bimbingan."
+      ],
+      "guided": [
+        "Guru menerangkan penggunaan perlindungan sesuai, pengawasan guru, laluan lapang dan tempat simpanan alat.",
+        "Murid mengaitkan setiap langkah dengan gambar bahaya."
+      ],
+      "practice": [
+        "Guru mengedarkan empat kad situasi gotong-royong.",
+        "Murid menerangkan satu tindakan selamat bagi setiap situasi."
+      ],
+      "closure": [
+        "Guru meminta murid menjelaskan sebab alat perlu disimpan.",
+        "Murid memberi alasan ringkas."
+      ],
+      "support": "Beri pilihan frasa untuk murid yang memerlukan sokongan bahasa.",
+      "assessment": "Guru mencatat tiga atau lebih langkah tepat.",
+      "follow_up": "Ulang satu situasi melalui peragaan guru."
+    },
+    {
+      "pdp": "032",
+      "title": "Amalkan keselamatan dalam gotong-royong",
+      "sp": "2.4.4",
+      "focus": "Menggunakan senarai keselamatan sebelum, semasa dan selepas tugas.",
+      "book": "Buku Teks hlm. 28–29",
+      "objective": "Murid melaksanakan sekurang-kurangnya tiga daripada empat tindakan selamat semasa amali berpandu.",
+      "materials": "Kad semak, alat ringan dan tanda ruang kerja.",
+      "induction": [
+        "Guru menunjukkan senarai empat semakan keselamatan.",
+        "Murid menunjuk kad yang perlu disemak dahulu."
+      ],
+      "guided": [
+        "Guru memodelkan semakan arahan, pemilihan alat, penjagaan laluan dan penyimpanan.",
+        "Murid meniru rutin menggunakan peralatan ringan."
+      ],
+      "practice": [
+        "Guru memberi tugas kemas yang telah diluluskan dalam ruang terkawal.",
+        "Murid menggunakan senarai semak sebelum, semasa dan selepas tugas."
+      ],
+      "closure": [
+        "Guru memimpin semakan terakhir pada ruang kerja.",
+        "Murid menunjukkan alatan yang telah disimpan."
+      ],
+      "support": "Jalankan tugasan dengan pengawasan dan bantuan mobiliti yang sesuai.",
+      "assessment": "Guru memerhati empat tindakan keselamatan dan jenis bantuan.",
+      "follow_up": "Ulang satu tugas dengan kad tanda yang mudah dilihat."
+    },
+    {
+      "pdp": "033",
+      "title": "Kenal kawasan yang boleh mendatangkan bahaya",
+      "sp": "2.5.1",
+      "focus": "Menamakan tempat pembuangan sampah, bilik suis, stor dan makmal dalam contoh sekolah.",
+      "book": "Buku Teks hlm. 30",
+      "objective": "Murid mengenal pasti sekurang-kurangnya tiga daripada empat kawasan melalui gambar atau peta.",
+      "materials": "Pelan sekolah ringkas, foto dan kad nama.",
+      "induction": [
+        "Guru menunjukkan simbol larangan di pintu tertutup.",
+        "Murid memberikan satu contoh tempat yang mempunyai larangan."
+      ],
+      "guided": [
+        "Guru menunjukkan empat gambar kawasan dan memadankan label pada pelan.",
+        "Murid menyebut atau menunjuk nama kawasan."
+      ],
+      "practice": [
+        "Guru menukar kedudukan gambar dan meminta murid memadankan label semula.",
+        "Murid mengenal pasti kawasan pada gambar dan pelan."
+      ],
+      "closure": [
+        "Guru meminta semakan satu lokasi daripada peta.",
+        "Murid menamakan kawasan tersebut."
+      ],
+      "support": "Gunakan gambar tanpa membawa murid ke ruang berisiko.",
+      "assessment": "Guru merekod ketepatan empat padanan.",
+      "follow_up": "Ulang nama lokasi yang tertukar pada pelan."
+    },
+    {
+      "pdp": "034",
+      "title": "Perihalkan risiko di kawasan larangan",
+      "sp": "2.5.2",
+      "focus": "Menghubungkait ciri tempat dengan risiko dalam situasi bergambar.",
+      "book": "Buku Teks hlm. 30",
+      "objective": "Murid menerangkan satu risiko bagi sekurang-kurangnya tiga daripada empat kawasan.",
+      "materials": "Kad kawasan, ikon bahaya dan kad sebab.",
+      "induction": [
+        "Guru menunjukkan foto bilik suis bertanda amaran.",
+        "Murid menyebut atau menunjuk satu petunjuk bahaya."
+      ],
+      "guided": [
+        "Guru menerangkan contoh risiko kebersihan, elektrik, penyimpanan alat dan bahan di makmal.",
+        "Murid memadankan ikon risiko dengan gambar yang berkaitan."
+      ],
+      "practice": [
+        "Guru menunjukkan empat lokasi dalam urutan baharu.",
+        "Murid menerangkan satu risiko bagi setiap lokasi menggunakan contoh atau kad."
+      ],
+      "closure": [
+        "Guru meminta seorang murid menyemak satu padanan alasan.",
+        "Murid memilih risiko yang paling relevan."
+      ],
+      "support": "Hadkan kepada risiko umum serta contoh dalam gambar.",
+      "assessment": "Guru menanda satu penerangan tepat bagi setiap kawasan.",
+      "follow_up": "Ulang padanan bagi dua kawasan yang masih keliru."
+    },
+    {
+      "pdp": "035",
+      "title": "Terangkan kepentingan mematuhi arahan",
+      "sp": "2.5.3",
+      "focus": "Menjelaskan sebab mematuhi arahan lisan guru dan papan tanda.",
+      "book": "Buku Teks hlm. 30",
+      "objective": "Murid menerangkan sebab yang sesuai dalam tiga daripada empat situasi termasuk kedua-dua jenis arahan.",
+      "materials": "Kad papan tanda dan kad situasi lisan.",
+      "induction": [
+        "Guru memaparkan satu tanda larangan dan membacakan satu arahan lisan.",
+        "Murid membezakan sumber kedua-dua arahan."
+      ],
+      "guided": [
+        "Guru menunjukkan contoh arahan dan menerangkan kaitannya dengan keselamatan.",
+        "Murid memilih tindakan patuh daripada dua pilihan."
+      ],
+      "practice": [
+        "Guru memberi dua arahan lisan dan dua tanda bergambar dalam simulasi.",
+        "Murid menyatakan satu sebab mematuhi setiap arahan."
+      ],
+      "closure": [
+        "Guru meminta satu tempat melapor jika arahan kurang jelas.",
+        "Murid mengenal pasti guru atau petugas yang boleh dirujuk."
+      ],
+      "support": "Bacakan arahan dengan jelas dan gunakan ikon untuk sokongan.",
+      "assessment": "Guru mencatat sebab betul bagi empat situasi.",
+      "follow_up": "Ulang satu arahan lisan dan satu papan tanda."
+    }
+  ]
+}
