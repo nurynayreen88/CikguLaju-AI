@@ -262,6 +262,24 @@ def _activity_table(activities, *, english):
             (closure[0], actions(*closure[1:]), "")]
 
 
+def _extract_teacher_header(rows, *, english):
+    """Keep the four class fields in a compact right-aligned top header.
+
+    Only their presentation changes; all teaching, standard and assessment
+    rows remain in their original order. Empty fields stay genuinely empty.
+    """
+    labels = (("Class", "Date", "Time", "Number of pupils") if english
+              else ("Kelas", "Tarikh", "Masa", "Bilangan Murid"))
+    values = {label: "" for label in labels}
+    remainder = []
+    for label, value in rows:
+        if label in values:
+            values[label] = value
+        else:
+            remainder.append((label, value))
+    return remainder, [(label, values[label]) for label in labels]
+
+
 def _cell_lines(value, bold):
     if isinstance(value, str):
         return [(line, bold) for line in value.split("\n")]
@@ -292,6 +310,8 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
     activities = _activity_table(activities, english=heading[0] == "Daily Lesson Plan")
     if mathematics:
         heading, details = _math_details(heading, details, teacher)
+    details, teacher_header = _extract_teacher_header(
+        details, english=heading[0] == "Daily Lesson Plan")
     doc = Document()
     doc.core_properties.title = f"{heading[0]} · {heading[2]}"
     section = doc.sections[0]
@@ -350,11 +370,11 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
         properties.insert_element_before(deepcopy(border), "w:spacing", "w:ind", "w:jc")
         properties.insert_element_before(shading(), "w:spacing", "w:ind", "w:jc")
 
-    def table(rows, widths, header=False):
+    def table(rows, widths, header=False, *, alignment=WD_TABLE_ALIGNMENT.CENTER):
         element = doc.add_table(rows=0, cols=len(widths))
         element.style = "Table Grid"
         element.autofit = False
-        element.alignment = WD_TABLE_ALIGNMENT.CENTER
+        element.alignment = alignment
         for column, width in zip(element.columns, widths):
             column.width = Mm(width)
         for i, row in enumerate(rows):
@@ -376,7 +396,9 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
                         paragraph.add_run().add_break()
                     paragraph.add_run(line).bold = strong
 
-    word_gap(doc)
+    word_gap(doc, 3)
+    table(teacher_header, (33, 59), alignment=WD_TABLE_ALIGNMENT.RIGHT)
+    word_gap(doc, 3)
     table(details, _FIELD_WIDTHS)
     word_gap(doc)
     table(activities, _ACTIVITY_WIDTHS, header=True)
@@ -407,6 +429,8 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
     activities = _activity_table(activities, english=heading[0] == "Daily Lesson Plan")
     if mathematics:
         heading, details = _math_details(heading, details, teacher)
+    details, teacher_header = _extract_teacher_header(
+        details, english=heading[0] == "Daily Lesson Plan")
     regular, bold, _ = pdf_fonts()
     font_size = 9 if mathematics else 9.5
     leading = (9.35 if compact else 9.9) if mathematics else (11 if compact else 12)
@@ -424,12 +448,13 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
             formatted.append(f'<b>{line}</b>' if strong else line)
         return Paragraph("<br/>".join(formatted), style)
 
-    def table(rows, widths, header=False):
+    def table(rows, widths, header=False, *, alignment="CENTER"):
         cells = [[paragraph(row[0], label), *(paragraph(value, body) for value in row[1:])]
                  for row in rows]
         if header:
             cells[0] = [paragraph(value, table_heading) for value in rows[0]]
-        result = Table(cells, colWidths=[width * mm for width in widths], repeatRows=int(header))
+        result = Table(cells, colWidths=[width * mm for width in widths],
+                       repeatRows=int(header), hAlign=alignment)
         padding = 2.5 if mathematics else (3 if compact else 4)
         commands = pdf_box_style(padding)
         commands.append(("BACKGROUND", (0, 0), (0, -1), fill))
@@ -461,7 +486,9 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
     ])
     story = [
         title_panel,
-        Spacer(1, 6),
+        Spacer(1, 3),
+        table(teacher_header, (33, 59), alignment="RIGHT"),
+        Spacer(1, 3),
         table(details, _FIELD_WIDTHS),
         Spacer(1, 6),
         table(activities, _ACTIVITY_WIDTHS, header=True),
