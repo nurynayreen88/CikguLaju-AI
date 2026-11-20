@@ -109,7 +109,7 @@ def supplement_footer(heading, details, activities, footer):
         isinstance(row, (list, tuple)) and len(row) == 2 for row in footer
     ):
         return footer
-    present = " ".join(str(label).casefold() for label, _ in footer + [] if isinstance(footer, list))
+    present = " ".join(str(label).casefold() for label, _ in footer)
     # Existing subject-supplied supports take precedence over inferred displays.
     if "emk" in present and "pak21" in present and "pemulihan" in present and "pengayaan" in present:
         return footer
@@ -121,10 +121,12 @@ def supplement_footer(heading, details, activities, footer):
     pupil_action = _brief(_lesson_pupil_action(activities), limit=70)
     emk = _emk_from_context(topic, objective, family, english=english)
     pak21 = _pak21_from_actions(activities, english=english, family=family)
+    if pupil_action:
+        pak21 += "; " + pupil_action
     kbat = _kbat_from_context(activities, english=english)
     if english:
         remediation = (existing_support or
-                       f"Repeat the current lesson task with teacher prompts and { _brief(materials, 45) or 'available materials' }.")
+                       f"Repeat the task on {topic} with teacher prompts and { _brief(materials, 38) or 'available materials' }.")
         extension = f"Use {topic} in a new example and explain the choice or result."
         lines_one = (("Cross-curricular elements", emk), ("21st-century learning", pak21),
                      ("Higher-order thinking", kbat))
