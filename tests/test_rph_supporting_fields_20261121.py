@@ -104,3 +104,36 @@ def test_no_duplication_and_other_subjects_unchanged():
     assert supplement_details(english, DETAILS, ACTIVITIES, FOOTER) is DETAILS
     sains = supplement_details(SAMPLES[0], DETAILS, ACTIVITIES, FOOTER)
     assert supplement_details(SAMPLES[0], DETAILS, ACTIVITIES, sains) == sains
+
+
+def test_real_ppki_catalogue_renders_without_replacing_support():
+    from staging.ppki.catalog import UNIT, YEAR, catalog
+    from staging.ppki.render_pengurusan_kehidupan import render_lesson
+    catalogue = catalog(UNIT, year=YEAR)
+    lesson = catalogue["lessons"][0]
+    teacher = {"class": "", "date": "", "time": "", "students": "", "reflection": ""}
+    data = render_lesson(catalogue, lesson, "docx", teacher)
+    doc = Document(BytesIO(data))
+    assert len(doc.tables) == 3
+    content = "\n".join(cell.text for row in doc.tables[0].rows for cell in row.cells)
+    footer = "\n".join(cell.text for row in doc.tables[2].rows for cell in row.cells)
+    assert "EMK" in content and "PAK21" in content
+    assert "Pemulihan" in content and "Pengayaan" in content
+    assert "Sokongan" in footer and lesson["support"] in footer
+    assert lesson["assessment"] in footer and "2.1.1" in content
+    pdf = render_lesson(catalogue, lesson, "pdf", teacher)
+    assert len(PdfReader(BytesIO(pdf)).pages) == 1
+
+
+def test_real_science_dlp_year2_keeps_three_tables_and_a4():
+    from dlp_year2_rph import catalog, render
+    units = catalog()["SCIENCE_DLP"]
+    first = units[0]["lessons"][0]
+    teacher = {"class": "", "date": "", "time": "", "students": "", "reflection": ""}
+    word = render("SCIENCE_DLP", units[0], first, "word", teacher)
+    doc = Document(BytesIO(word))
+    assert len(doc.tables) == 3
+    fields = "\n".join(cell.text for row in doc.tables[0].rows for cell in row.cells)
+    assert "21st-century" in fields and "Remedial" in fields and "Enrichment" in fields
+    pdf = render("SCIENCE_DLP", units[0], first, "pdf", teacher)
+    assert len(PdfReader(BytesIO(pdf)).pages) == 1
