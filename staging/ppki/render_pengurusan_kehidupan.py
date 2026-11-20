@@ -21,7 +21,8 @@ def load_catalog():
 def render_lesson(catalog, lesson, extension, teacher):
     lesson_date = teacher.get("date")
     display_date = date.fromisoformat(lesson_date).strftime("%d/%m/%Y") if lesson_date else ""
-    content = catalog["content_standard"]
+    sk = lesson["sp"].rsplit(".", 1)[0]
+    content = catalog["content_standards"][sk]
     learning = catalog["learning_standards"][lesson["sp"]]
     heading = ("Rancangan Pengajaran Harian", "PPKI · Pengurusan Kehidupan · Tahun 2", lesson["title"])
     details = [
@@ -31,7 +32,7 @@ def render_lesson(catalog, lesson, extension, teacher):
         ("Masa", teacher.get("time", "")),
         ("Kelas", teacher.get("class", "")),
         ("Bilangan Murid", teacher.get("students", "")),
-        ("Standard Kandungan", f"{content['code']} {content['description']}"),
+        ("Standard Kandungan", f"{sk} {content}"),
         ("Standard Pembelajaran", f"{lesson['sp']} {learning}\nFokus: {lesson['focus']}"),
         ("Objektif Pembelajaran", lesson["objective"]),
         ("Bahan Bantu Mengajar", lesson["materials"]),
@@ -57,7 +58,6 @@ def render_lesson(catalog, lesson, extension, teacher):
 def export(output, teacher):
     catalog = load_catalog()
     output.mkdir(parents=True, exist_ok=True)
-    content = catalog["content_standard"]
     index_path = output / "RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_SEMAKAN.csv"
     with index_path.open("w", encoding="utf-8-sig", newline="") as stream:
         index = csv.writer(stream)
@@ -68,8 +68,9 @@ def export(output, teacher):
             for extension in RENDERERS:
                 path = output / f"{stem}.{extension}"
                 path.write_bytes(render_lesson(catalog, lesson, extension, teacher))
-            index.writerow((catalog["unit"], lesson["pdp"], lesson["title"], content["code"],
-                            content["description"], lesson["sp"],
+            sk = lesson["sp"].rsplit(".", 1)[0]
+            index.writerow((catalog["unit"], lesson["pdp"], lesson["title"], sk,
+                            catalog["content_standards"][sk], lesson["sp"],
                             catalog["learning_standards"][lesson["sp"]], lesson["focus"],
                             lesson["book"]))
 

@@ -10,10 +10,14 @@ Skop pertama ialah komponen Pengurusan Diri, Unit 2 Diri Bersih Badan Sihat, bag
 | 004 | Urutan mencuci tangan | 2.1 / 2.1.2 | 15 |
 | 005 | Amali mencuci tangan | 2.1 / 2.1.3 | 15 |
 | 006 | Simulasi memberus gigi pada model | 2.1 / 2.1.3 | 14–15 |
+| 007 | Kenali alatan dan bahan mencuci pakaian | 2.2 / 2.2.1 | 16–17 |
+| 008 | Fungsi alatan dan bahan mencuci pakaian | 2.2 / 2.2.2 | 16–19 |
+| 009 | Amali mencuci kain secara manual | 2.2 / 2.2.3 | 19 |
+| 010 | Keselamatan semasa mencuci pakaian | 2.2 / 2.2.4 | 16, 18–19 |
 
-Kod dan deskripsi dirujuk kepada DSKP hlm. 26. Halaman bercetak 13–15 diperiksa secara visual pada salinan edisi DBP/KPM. PdP, contoh intervensi dan susunan aktiviti dalam kelompok ini ialah olahan pedagogi. CSV yang dijana menyenaraikan agihan untuk enam PdP ini sahaja. Guru menentukan tarikh dan kaedah sokongan. Isi RPH termasuk jenis bantuan dan prestasi yang boleh diperhati tanpa menetapkan tahap penguasaan secara automatik. RPI guru diurus di luar penjana ini. Penjana mengisi tarikh, masa, kelas dan bilangan murid, tanpa ruang nama atau diagnosis individu.
+Kod dan deskripsi dirujuk kepada DSKP hlm. 26–27. Halaman 16–19 dirujuk bagi alatan, cara mencuci dan tip keselamatan. Halaman bercetak 13–15 diperiksa secara visual pada salinan edisi DBP/KPM. PdP, contoh intervensi dan susunan aktiviti dalam kelompok ini ialah olahan pedagogi. CSV yang dijana menyenaraikan agihan untuk sepuluh PdP ini sahaja. Guru menentukan tarikh dan kaedah sokongan. Isi RPH termasuk jenis bantuan dan prestasi yang boleh diperhati tanpa menetapkan tahap penguasaan secara automatik. RPI guru diurus di luar penjana ini. Penjana mengisi tarikh, masa, kelas dan bilangan murid, tanpa ruang nama atau diagnosis individu.
 
-Jana 6 Word, 6 PDF dan indeks RPT CSV daripada akar repositori.
+Jana 10 Word, 10 PDF dan indeks RPT CSV daripada akar repositori.
 
 ```sh
 python -m staging.ppki.render_pengurusan_kehidupan --output /tmp/cikgulaju-ppki
@@ -21,4 +25,4 @@ python -m staging.ppki.render_pengurusan_kehidupan --output /tmp/cikgulaju-ppki
 
 Status perintis **Dalam Semakan**. Ujian tempatan meliputi medan kelas kosong dan terisi, turutan SK/SP pada indeks, deskripsi dalam Word dan PDF, serta cetakan satu halaman A4. Modul belum disambung ke pilihan kurikulum Web atau Telegram. Katalog KSSR ini mempunyai identiti dan tahun tersendiri untuk membolehkan penambahan sumber KP2027 kemudian.
 
-[DSKP Pengurusan Kehidupan Tahun 2](https://asiemodel.net/wp-content/uploads/2022/08/024-DSKP-KSSR-PENDIDIKAN-KHAS-SEMAKAN-2017-MASALAH-PEMBELAJARAN-PENGURUSAN-KEHIDUPAN-TAHUN-2.pdf) · [Buku Teks hlm. 13](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/20/) · [Buku Teks hlm. 14](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/21/) · [Buku Teks hlm. 15](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/22/) · [Panduan RPI KPM](https://www.moe.gov.my/spi-kpm-bil-7-tahun-2023-buku-panduan-rancangan-pe)
+[DSKP Pengurusan Kehidupan Tahun 2](https://asiemodel.net/wp-content/uploads/2022/08/024-DSKP-KSSR-PENDIDIKAN-KHAS-SEMAKAN-2017-MASALAH-PEMBELAJARAN-PENGURUSAN-KEHIDUPAN-TAHUN-2.pdf) · [Buku Teks hlm. 13](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/20/) · [Buku Teks hlm. 14](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/21/) · [Buku Teks hlm. 15](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/22/) · [Panduan RPI KPM](https://www.moe.gov.my/spi-kpm-bil-7-tahun-2023-buku-panduan-rancangan-pe) · [Buku Teks hlm. 19](https://fliphtml5.com/cfcmm/zilk/Buku_Teks_Pengurusan_Kehidupan_Masalah_Pembelajaran_Tahun_2/26/)
