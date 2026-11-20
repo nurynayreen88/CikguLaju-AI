@@ -122,12 +122,25 @@ class PpkiWebTest(unittest.TestCase):
             record, = response.json["items"]
             self.assertEqual(record["action"], action)
             self.assertIn(source, record["url"])
-        for wrong in (self.selection, {**rasa, "unit": ppki.UNIT4},
+        sounds = {**rasa, "unit": ppki.MANIPULATIVE_UNIT3, "lesson": "064"}
+        plane = "1Ig0seAVuGqHJhLwRjoZrL8tYEKM40gJK"
+        birds = "1HlKNJhtrp5ASu5NDaby9GUhMO9PnfWez"
+        bell = "1d-vr96Ik_Jr6PttY2h7pou1wqeGNa92A"
+        for number, file_ids in (("064", (plane, birds, bell)), ("065", (bell,)),
+                                 ("066", (plane, birds, bell))):
+            response = self.client.get(path, query_string={**sounds, "lesson": number})
+            self.assertEqual(response.status_code, 200)
+            for record, file_id in zip(response.json["items"], file_ids, strict=True):
+                self.assertEqual((record["type"], record["action"]), ("audio", "Muat Turun Audio"))
+                self.assertEqual(record["url"], "https://drive.usercontent.google.com/download?"
+                                 f"id={file_id}&export=download&confirm=t")
+        for wrong in (self.selection, {**rasa, "unit": ppki.UNIT4}, {**sounds, "lesson": "067"},
                       {**rasa, "unit": ppki.MANIPULATIVE_UNIT1, "lesson": "051"}):
             self.assertEqual(self.client.get(path, query_string=wrong).json["items"], [])
         self.assertTrue(all(request == ("catalog", None) for request in self.source_requests))
         self.credits = 0
         self.assertEqual(self.client.get(path, query_string=rasa).status_code, 403)
+        self.assertEqual(self.client.get(path, query_string=sounds).status_code, 403)
 
     def test_year3_exact_pdp_rph_and_rpt_access(self):
         self.catalog_year3 = {
