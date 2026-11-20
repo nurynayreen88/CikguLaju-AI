@@ -2,7 +2,7 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** ULI-ULI TEMBIKAR
-**SK / SP DSKP:** 2.1.3
+**SK / SP DSKP:** 2.2.1, 2.3.2
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 

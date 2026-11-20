@@ -10,7 +10,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 BOLD_HEADING = re.compile(r"^\s*\*\*([^*\n]+)\*\*\s*(.*)$")
+PHASE_DURATION = re.compile(r"\s*(?:\(\d+ minit\)|[–—-]\s*\d+ minit)$", re.I)
 CODES = re.compile(r"^[1-5]\.[1-9]\.\d+$")
+STANDARD_DESCRIPTIONS = "dskp_standard_descriptions.json"
 ACTIVITY_HEADER = ["Fasa / Masa", "Aktiviti Pengajaran & Pembelajaran", "Catatan"]
 
 
@@ -105,31 +107,25 @@ def build_staging_preview(root, year, pdp):
     if candidate_days_zero and not row["rpt2027_day_audit"].get("automatic_shift_or_skip_forbidden", False):
         raise ValueError("Music zero-day RPT slot cannot be auto-shifted")
     criteria = criterion[0][1] if criterion else drafted["criterion"] if drafted else "—"
-    # Each source heading already includes its activity number/phase name.
-    # Avoid "Aktiviti 1 - Aktiviti 1" and "Pengukuhan - Pengukuhan".
-    notes = labels["act1"][0] + "\n" + labels["act1"][1] + \
-            "\n\n" + labels["act2"][0] + "\n" + labels["act2"][1] + \
-            "\n\n" + labels["assessment"][0] + "\n" + labels["assessment"][1]
-    # The standalone 2019 Music Year 4 DSKP prints SK 3.1 with SP 3.2.x,
-    # and SK 4.1 with SP 4.2.1. Deriving SK from the SP prefix is WRONG.
-    # Keep this explicit source anomaly instead of silently normalizing SP.
-    standards = []
-    for code in sp:
-        parent = code.rsplit(".", 1)[0]
-        if year == 4 and parent == "3.2":
-            parent = "3.1"
-        elif year == 4 and code == "4.2.1":
-            parent = "4.1"
-        if parent not in standards:
-            standards.append(parent)
+    notes = "\n\n".join(
+        PHASE_DURATION.sub("", heading) + "\n" + activity
+        for heading, activity in (labels[key] for key in ("act1", "act2", "assessment"))
+    )
+    # The DSKP table supplies each parent explicitly because some printed
+    # Year 4 SP numbers have a different prefix from the corresponding SK.
+    bank = json.loads((base / STANDARD_DESCRIPTIONS).read_text(encoding="utf-8"))[str(year)]
+    learning = [bank["sp"][code] for code in sp]
+    standards = list(dict.fromkeys(entry["sk"] for entry in learning))
+    sk_text = "; ".join(f"{code} {bank['sk'][code]}" for code in standards)
+    sp_text = "; ".join(f"{code} {entry['description']}" for code, entry in zip(sp, learning, strict=True))
     ref = [v for k, v in items if re.search(r"^(?:refleksi|catatan.*pemulihan)", k, re.I)]
     reflection = ref[0] if ref else "____________"
     metadata = [
         ("Nama Guru", ""), ("Nama Sekolah", ""), ("Tarikh", ""), ("Hari", ""),
         ("Masa", ""), ("Kelas", ""), ("Bilangan Murid", ""), ("Tahun", str(year)),
         ("Subjek", "Pendidikan Muzik"), ("Tajuk", row["unit"]),
-        ("PdP", str(pdp)), ("Standard Kandungan", "; ".join(standards)),
-        ("Standard Pembelajaran", "; ".join(sp)),
+        ("PdP", str(pdp)), ("Standard Kandungan", sk_text),
+        ("Standard Pembelajaran", sp_text),
         ("OBJEKTIF PEMBELAJARAN", labels["objective"][1]),
         ("KRITERIA KEJAYAAN", criteria or "—"), ("PENGETAHUAN SEDIA ADA", "—"),
         ("BAHAN BANTU MENGAJAR", labels["materials"][1]),
@@ -141,9 +137,9 @@ def build_staging_preview(root, year, pdp):
         "header": [{"label": k, "value": v} for k, v in metadata],
         "activity_header": ACTIVITY_HEADER,
         "phases": [
-            {"label": "Set Induksi (4 minit)", "activity": labels["induction"][1], "notes": ""},
-            {"label": "Aktiviti Utama dan Pengukuhan (24 minit)", "activity": notes, "notes": ""},
-            {"label": "Penutup (2 minit)", "activity": labels["closure"][1], "notes": ""},
+            {"label": "Set Induksi", "activity": labels["induction"][1], "notes": ""},
+            {"label": "Aktiviti Utama dan Pengukuhan", "activity": notes, "notes": ""},
+            {"label": "Penutup", "activity": labels["closure"][1], "notes": ""},
         ],
         "footer": [
             {"label": "Pemulihan / Pengayaan", "value": reflection or "____________"},
@@ -170,7 +166,7 @@ def build_staging_preview(root, year, pdp):
         warnings.append("TEXTBOOK_NOT_FULLY_CROSSCHECKED_OR_NONOFFICIAL")
     return {
         "subject": "MUZIK", "year": year, "pdp": pdp,
-        "source_pdp_id": row["pdp_id"], "layout": layout,
+        "source_pdp_id": row["pdp_id"], "layout": layout, "sk_codes": standards,
         "phase_text": {key: value for key, (_, value) in labels.items()},
         "warnings": warnings, "approved_for_live": False,
         "source_sp_code_conflict": print_code_conflict,

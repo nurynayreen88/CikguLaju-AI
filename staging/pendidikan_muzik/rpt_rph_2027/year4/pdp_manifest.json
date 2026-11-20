@@ -121,9 +121,10 @@
       "unit": "WARNA WARNI KEK CAWAN",
       "unit_number": 2,
       "sp": [
-        "1.1.1"
+        "2.2.1",
+        "2.2.2"
       ],
-      "page": "20-21",
+      "page": "19",
       "audio": null,
       "flag": "RPT_2025_26_BELUM_BUKU_DAN_AUDIO_VERIFIED",
       "rpt2027_slot": {
@@ -138,7 +139,11 @@
       "source_book_file_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",
       "source_book_audio_numbers_printed": "9–11",
       "source_book_audio_file_verified": false,
-      "book_text_topic_evidence": "Kek Cawan Comel — iringan ensembel"
+      "book_text_topic_evidence": "Kek Cawan Comel — iringan ensembel",
+      "sp_rpt_source": [
+        "1.1.1"
+      ],
+      "page_rpt_source": "20-21"
     },
     {
       "pdp_id": "MZ-Y4-06",

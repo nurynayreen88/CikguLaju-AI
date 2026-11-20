@@ -2,7 +2,7 @@
 
 **Kelas:** __________  **Tarikh:** __________  **Masa:** __________
 **Unit/Tajuk:** SEGARNYA AIR TERJUN
-**SK / SP DSKP:** 3.1.1
+**SK / SP DSKP:** 3.1.2, 3.1.3
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
