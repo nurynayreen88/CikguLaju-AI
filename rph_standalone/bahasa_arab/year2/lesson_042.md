@@ -1,30 +1,30 @@
-# RPH Bahasa Arab Tahun 2 — PdP 042 (DRAF / BELUM READY)
+# RPH Bahasa Arab Tahun 2 — PdP 042
 
 **Tahun:** 2 | **Subjek:** Bahasa Arab KSSR Semakan 2017 | **Unit:** جسمي السليم
-**Fokus PdP:** Membaca ayat pemilikan anggota badan
-**SK/SP cadangan:** 2.3 / 2.3.2; pilihan awal berdasarkan kemahiran latihan pada halaman bercetak 64, belum padanan RPT 2027 atau kelulusan DSKP individu.
+**Fokus PdP:** Kenal pasti ayat indi
+**DSKP SK/SP:** 2.4 / 2.4.2 — تحديد التراكيب المقروءة.
 **Tarikh / masa / kelas:** Diisi guru berdasarkan jadual sebenar.
-**Kosa kata / ayat:** عِنْدِي رَأْس، عِنْدِي رِجْل، عِنْدِي عَيْن، عِنْدِي أَسْنَان
-**Objektif pembelajaran:** Membaca tiga ayat berpola عِنْدِي dengan betul.
-**Kriteria kejayaan:** Murid menunjukkan penguasaan minimum berdasarkan objektif dan penilaian individu; tindakan pemulihan direkod oleh guru.
+**Kosa kata / ayat:** عِنْدِي فَمٌ، عِنْدِي أُذُنٌ، عِنْدِي رِجْلٌ، عِنْدِي شَعْرٌ، عِنْدِي رَأْسٌ
+**Objektif pembelajaran:** أن يحدّد التلميذ أربعة تراكيب مكتوبة من أصل خمسة بمطابقتها مع صور أعضاء الجسم.
+**Kriteria kejayaan:** يختار التلميذ أربع بطاقات جمل صحيحة على الأقل من بين خمس بطاقات.
 
-**Set induksi:** Guru menunjukkan gambar murid menunjuk rambut dan anggota badan.
+**Set induksi:** يشير المعلّم إلى الرأس ويعرض بطاقة عِنْدِي رَأْسٌ. يقرأ التلاميذ البطاقة ويشيرون إلى الرأس.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru memperkenalkan bentuk عِنْدِي melalui contoh ayat pada h64 dan membimbing gabungan kata dalam bacaan.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** يعرض المعلّم جمل الصفحة مع صور الفم والأذن والرجل والشعر. يقرأ التلاميذ الجمل ويقرنونها بالصور المناسبة.
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyusun tiga ayat berpandu menggunakan kad kata, lalu membacanya di hadapan pasangan.
+**Aktiviti 2 — Aplikasi murid:** يرتّب المعلّم البطاقات من جديد ويشير إلى صورة. يحدّد التلاميذ الجملة المناسبة ويقرؤونها.
 
-**Pengukuhan / Penilaian (PBD):** Tiga ayat dapat dibaca dengan sebutan difahami dan susunan tepat.
+**Pengukuhan / Penilaian (PBD):** يعرض المعلّم خمس صور من الصفحة مع بطاقات الجمل. يطابق التلميذ كل صورة بجملتها، ويسجّل المعلّم النتيجة.
 
-**Penutup:** Murid membaca semula satu ayat pemilikan.
+**Penutup:** يعرض المعلّم جملة واحدة. يقرؤها التلاميذ ويشيرون إلى العضو المذكور.
 
-**BBM:** Buku Teks h64, gambar anggota badan/kad huruf atau nombor, alat tulis dan senarai semak guru.
+**BBM:** الكتاب المدرسي، بطاقات الجمل وصور أعضاء الجسم.
 
-**Refleksi guru:** ____ / ____ murid mencapai objektif. Pemulihan / pengayaan: ________________________.
+**Refleksi guru:** بلغ هدف الدرس ____ من ____ تلميذًا. إجراء المتابعة ____________________.
 
 **Buku Teks:** Bahasa Arab Tahun 2 KSSR Semakan 2017 DBP cetakan 2017, ISBN 978-983-49-1589-6, Unit 3 halaman bercetak **64**, sumber PDF asal https://drive.google.com/file/d/13CqpBb4HosAM_-HTEN-hhBCt2W5wVXCZ/view.
 **Pemetaan halaman:** Indeks PDF fizikal 1-based **76** bersamaan halaman bercetak 64 (offset +12, diuji pada helaian asli).
 **Rujukan DSKP:** https://drive.google.com/file/d/1WY_c69UshDm3jHzVK86G2xfu77UUkGYO/view.
 **RPT rujukan 2026:** https://anyflip.com/zxzlm/jffk/basic.
-**Had semakan:** Imej halaman buku dilihat sebagai rujukan aktiviti tetapi kod SP bercetak secara individu, tatabahasa setiap frasa, urutan RPT 2027 Kumpulan A/B dan kelulusan guru masih perlu disahkan. Ini kandungan olahan khusus bukan salinan penuh buku asal.
-**Status:** DRAF_SEMAK / BELUM READY. Hanya di GitHub staging; tiada kemas kini Telegram/Web atau database pengguna.
+**Semakan:** Panel buku teks dan DPK dipadankan dengan RPH Word.
+**Status:** Kandungan RPH Word disemak.
