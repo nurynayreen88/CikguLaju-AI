@@ -1,6 +1,6 @@
 # PPKI Pengurusan Kehidupan Tahun 4 · Bertamu di Inap Desa
 
-Rujuk [DSKP KSSRPK Semakan 2017 Tahun 4](https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-SEMAKAN-2017-PKHAS-MASALAH-PEMBELAJARANPENGURUSAN-KEHIDUPAN-TAHUN-4.pdf), [Buku Teks Pengurusan Kehidupan Tahun 4](https://fliphtml5.com/xsdxr/bqah/T4_Pengurusan_Kehidupan/). Nombor halaman merujuk kepada cetakan buku.
+Rujuk [DSKP KSSRPK Semakan 2017 Tahun 4](https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-SEMAKAN-2017-PKHAS-MASALAH-PEMBELAJARANPENGURUSAN-KEHIDUPAN-TAHUN-4.pdf), [Buku Teks Pengurusan Kehidupan Tahun 4](https://fliphtml5.com/xsdxr/bqah/T4_Pengurusan_Kehidupan/). [RPT rujukan](https://id.scribd.com/document/724854146/2-Pengurusan-Kehidupan-Tahun-4) menggunakan penomboran pakaian yang sama. Nombor halaman merujuk kepada cetakan buku.
 
 | PdP | SK/SP | DSKP | Buku teks |
 | --- | --- | --- | --- |
