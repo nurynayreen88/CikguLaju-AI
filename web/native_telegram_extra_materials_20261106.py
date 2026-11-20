@@ -136,9 +136,11 @@ def music_source_links(year, unit, lesson, *, opener=None):
                  {"year":year, "subject":"MUZIK", "unit":unit, "lesson":lesson}, opener=opener)
     if data is None:
         raise NativeRPHUnavailable("Music source missing")
+    content_verified = data.get("content_verified", False)
     if (data.get("source") != MUSIC_SOURCE or data.get("status") != "DRAF"
             or data.get("download_available") is not False
             or type(data.get("available")) is not bool
+            or type(content_verified) is not bool
             or not isinstance(data.get("links"), list)
             or len(data["links"]) > 21):
         raise NativeRPHUnavailable("Untrusted Music source links")
@@ -156,7 +158,7 @@ def music_source_links(year, unit, lesson, *, opener=None):
         seen.add(item["url"])
         out.append({"type":"audio", "title":"Audio "+str(item["track"])+" — "+item["title"],
                     "url":item["url"], "action":"Buka Audio Sumber",
-                    "source_only":True})
+                    "source_only":True, "content_verified": content_verified})
     return out
 
 

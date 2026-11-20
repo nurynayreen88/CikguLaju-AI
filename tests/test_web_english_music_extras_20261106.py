@@ -71,6 +71,23 @@ class ExtraMaterialsWebTests(unittest.TestCase):
         self.assertEqual(response.json["items"],mocked)
         self.assertIn("hak edar",response.json["note"])
 
+    def test_music_verified_score_label_and_source_action(self):
+        params = {"year": "4", "subject": "MUZIK", "unit": "u07", "lesson": "021"}
+        external = "https://drive.google.com/file/d/1tgNnRXXJC6SVvvVRodSQgt1o464hLe7V/view?usp=drivesdk"
+        upstream = {"source": "telegram-provisional-subjects-2027-v1", "status": "DRAF",
+                    "available": True, "content_verified": True, "download_available": False,
+                    "links": [{"track": 66, "title": "Corak Irama 1", "url": external}]}
+        with self._account(), patch("web.native_telegram_extra_materials_20261106._json",
+                                    return_value=upstream):
+            response = self.client.get("/api/web/rph/extra-materials", query_string=params)
+        self.assertEqual(response.status_code, 200)
+        self.assertIn("sepadan dengan skor buku teks", response.json["note"])
+        item, = response.json["items"]
+        self.assertTrue(item["content_verified"])
+        self.assertEqual(item["title"], "Audio 66 — Corak Irama 1")
+        self.assertEqual(item["url"], external)
+        self.assertEqual(item["action"], "Buka Audio Sumber")
+
     def test_materials_require_login(self):
         with patch("web.unified_rph_web._account",
                    side_effect=lambda:(None,(jsonify({"error":"Login"}),401))):

@@ -1324,13 +1324,14 @@ def create_blueprint():
                         "url": "/api/web/rph/science-textbook?" + params,
                         "action": "Download"}], "status": "SUMBER_ASAL"})
                 return jsonify({"items": [local_science_copy(year, token, pages)], "status": "SUMBER_ASAL"})
-            # Music intentionally remains original-owner VIEW links only.
             items = music_source_links(year, unit, token)
         except Exception:
             return jsonify({"items": [], "error":
                             "Sumber bahan tambahan Telegram belum dapat disahkan."}), 503
-        return jsonify({"items": items, "status": "SUMBER_ASAL",
-                        "note": "Pautan audio luar: akses, kandungan dan hak edar belum disahkan."})
+        verified = bool(items) and all(item.get("content_verified") is True for item in items)
+        note = ("Rakaman sepadan dengan skor buku teks. Pautan membuka audio pada sumber asal."
+                if verified else "Pautan audio luar: akses, kandungan dan hak edar belum disahkan.")
+        return jsonify({"items": items, "status": "SUMBER_ASAL", "note": note})
 
     @bp.get("/api/web/rph/science-textbook")
     def science_textbook():
