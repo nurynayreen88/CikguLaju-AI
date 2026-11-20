@@ -2047,7 +2047,7 @@ async function populateMaterialList(){
         item.url.startsWith("/api/web/rph/english-workbook?");
     const ownStudentBook=item.type==="textbook"&&
         item.url.startsWith("/api/web/rph/english-student-book?");
-    const ownEnglishAudio=item.type==="audio"&&
+    const ownEnglishAudio=subject.value==="ENGLISH"&&item.type==="audio"&&
         /^\/api\/web\/rph\/english-audio\/[1-4]\?/.test(item.url);
     const musicDownload=subject.value==="MUZIK"&&item.type==="audio"&&item.action==="Muat Turun Audio"&&
         /^https:\/\/drive\.usercontent\.google\.com\/download\?id=[A-Za-z0-9_-]{10,100}&export=download(?:&confirm=t)?$/.test(item.url);
@@ -2057,7 +2057,7 @@ async function populateMaterialList(){
         /^https:\/\/online\.anyflip\.com\/(?:rmzft\/wwgq|hykyg\/rrpd)\/mobile\/index\.html\?pageIndex=[1-9][0-9]{0,2}$/.test(item.url);
     if(!ownWorkbook&&!ownStudentBook&&!ownEnglishAudio&&!musicDownload&&!ownScienceBook&&!originalEnglishBook)continue;
     list.append(materialRow(item.title,{ready:true,url:item.url,
-      actionLabel:originalEnglishBook||musicDownload?item.action:"Download"}));
+      actionLabel:ownEnglishAudio||musicDownload?"Muat Turun Audio":originalEnglishBook?item.action:"Download"}));
     found++;
    }
   }catch(e){sourceError=(sourceError+" "+e.message).trim();}
@@ -2523,7 +2523,7 @@ rphPdf.addEventListener("click",()=>generateRphFile("pdf"));
 document.getElementById("logout").addEventListener("click",async()=>{await fetch("/api/auth/telegram/logout",{method:"POST",credentials:"same-origin"});location.reload();});
 </script>
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
-<script src="/assets/rph-today.js?v=had-kuota-jana-bahan-20261120"></script>
+<script src="/assets/rph-today.js?v=muat-turun-audio-english-20261120"></script>
 <script src="/assets/teacher-profile.js?v=pilihan-subjek-20261117"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>
