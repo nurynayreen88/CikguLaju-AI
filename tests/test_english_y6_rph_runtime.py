@@ -136,6 +136,17 @@ class Y6RPHReleaseTests(unittest.TestCase):
             self.assertIn("Teacher-selected",rows["STANDARD PEMBELAJARAN"])
             self.assertNotIn("3.2.1",rows["STANDARD PEMBELAJARAN"])
 
+    def test_audit_footer_stays_out_of_teacher_choice_document(self):
+        for number in (16, 32, 48, 64):
+            with self.subTest(lesson=number):
+                path = LESSON_ROOT / f"lesson_{number:03d}.md"
+                self.assertIn("**QA status:**", path.read_text(encoding="utf-8"))
+                state = {"year": "Tahun 6", "subject": "English", "lesson_no": number}
+                rows = adapt_rows(state, {})
+                self.assertTrue(rows["PEMULIHAN / PENGAYAAN"])
+                self.assertNotIn("QA status", rows["PEMULIHAN / PENGAYAAN"])
+                self.assertIn("not fixed by SOW", rows["STANDARD PEMBELAJARAN"])
+
     def test_install_keeps_original_webhook_and_credits(self):
         original=lambda st,*a,**kw:{"OBJEKTIF PEMBELAJARAN":"original","TARIKH":"xx"}
         runtime=types.SimpleNamespace(_rph_rows=original, callback=lambda *a:"ok", _credit_gate=lambda *a:True)
