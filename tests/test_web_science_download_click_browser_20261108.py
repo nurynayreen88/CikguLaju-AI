@@ -118,17 +118,18 @@ class ScienceBrowserDownloadTest(unittest.TestCase):
                             and "teacher_date=2026-11-08" in q for q in requests))
         self.assertEqual(self.page.evaluate("document.documentElement.scrollWidth"),375)
 
-    def test_access_zero_hides_science_download_and_never_calls_backend(self):
+    def test_access_zero_locks_materials_and_clears_existing_links(self):
+        self.page.locator("#show-materials").click()
+        self.assertTrue(self.page.locator("#materials-panel").is_visible())
         self.page.evaluate("""()=>{
             applyRphAccount({rph_access_mode:'exhausted',rph_trial_remaining:0});
             showRphAction();
         }""")
-        self.page.locator("#show-materials").click()
-        self.assertTrue(self.page.locator("#materials-panel").is_visible())
-        self.assertEqual(self.page.locator("#materials-list li").count(),2)
-        for row in self.page.locator("#materials-list li").all():
-            self.assertIn("Akses diperlukan",row.inner_text())
-            self.assertFalse(row.locator("button").is_enabled())
+        self.assertFalse(self.page.locator("#show-materials").is_enabled())
+        self.assertTrue(self.page.locator("#materials-panel").is_hidden())
+        self.assertEqual(self.page.locator("#materials-list li").count(),0)
+        self.assertIn("10 janaan RPH percuma telah habis",
+                      self.page.locator("#materials-access-status").inner_text())
         self.assertIn("0 daripada 10 janaan",
                       self.page.locator("#account-access").inner_text())
         self.assertEqual(self.page.evaluate("window.__sainsRequests.length"),0)

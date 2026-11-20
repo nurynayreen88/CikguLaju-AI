@@ -113,6 +113,7 @@ const catalogueCalls=[];
 const makeNode=()=>({textContent:"",children:[],append(...items){this.children.push(...items);},replaceChildren(){this.children=[];}});
 assert.doesNotMatch(source,/id="dlp-review-data"|id="dlp-rph-preview"/);
 const variantRpt={hidden:true,dataset:{}}, materials={hidden:true,disabled:true};
+const materialAccessNotice={hidden:true,textContent:""};
 let checkedRph=0;
 const variants=[
  {code:"science_dlp",label:"Science (DLP)",rph_code:"SCIENCE_DLP",curriculum:"dlp",rpt_years:[2,3,4,5,6]},
@@ -132,7 +133,10 @@ function dlpId(science,n){
 const ctx={
  curriculum,year,subject,unit,lesson,theme,topic,component,catalogStatus:{textContent:""},
  window:{cikgulajuSubjectVariants:variants},rphSubjectPicker:{sync(){}},
- document:{createElement:makeNode,createTextNode:text=>({textContent:text}),getElementById:id=>id==="show-materials"?materials:variantRpt},
+ document:{createElement:makeNode,createTextNode:text=>({textContent:text}),
+  getElementById:id=>({"show-materials":materials,"materials-access-status":materialAccessNotice})[id]??variantRpt},
+ materialPanel:{hidden:true},
+ canGenerateRph:()=>true,
  resetSelect(el,label){el.value="";el.options=[{value:"",label}];el.disabled=true;},
  fillSelect(el,items,label){ctx.resetSelect(el,label);el.options.push(...items);el.disabled=!items.length;},
  resetCurriculumChoices(){ctx.resetSelect(unit,"");ctx.resetSelect(lesson,"");unit.hidden=lesson.hidden=variantRpt.hidden=true;delete variantRpt.dataset.subject;},
@@ -172,6 +176,7 @@ const ctx={
 };
 vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexOf("async function loadOptions("))
  +"\n"+code.slice(code.indexOf('curriculum.addEventListener("change"'),code.indexOf('const MATERIAL_CATEGORIES'))
+ +"\n"+code.slice(code.indexOf("function syncRphMaterialsAccess("),code.indexOf("function materialRow("))
 ,ctx);
 (async()=>{
  listeners["curriculum.change"]();

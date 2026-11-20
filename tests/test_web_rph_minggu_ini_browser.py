@@ -41,6 +41,8 @@ class WeeklyRphBrowserTest(TestCase):
             window.showWebView = () => {};
             window.rphDownloadOptions = () => ({credentials:"same-origin"});
             window.refreshSharedRphBalance = async () => ({rph_access_mode:"paid"});
+            window.canGenerateRph = () => true;
+            window.updateRphTrialFromDenial = () => false;
           </script>
           <script src="/pdf-lib.min.js"></script>
           <script src="/rph-today.js"></script>

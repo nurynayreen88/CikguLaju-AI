@@ -82,7 +82,7 @@ class IntegratedWebTests(TestCase):
 
 
     @patch("web.native_telegram_integrated_english_client.integrated_enabled", return_value=True)
-    @patch("web.unified_rph_web._account", return_value=({"telegram_user_id": 123}, None))
+    @patch("web.unified_rph_web._account", return_value=({"telegram_user_id": 123, "free_remaining": 1}, None))
     def test_both_aliases_list_and_download_the_same_pair_materials(self, *_):
         app = Flask(__name__)
         app.register_blueprint(create_blueprint())
@@ -125,7 +125,7 @@ class IntegratedWebTests(TestCase):
                 assert fallback.json["items"][0]["url"].startswith("/api/web/rph/english-workbook?")
 
     @patch("web.native_telegram_integrated_english_client.integrated_enabled", return_value=True)
-    @patch("web.unified_rph_web._account", return_value=({"telegram_user_id": 123}, None))
+    @patch("web.unified_rph_web._account", return_value=({"telegram_user_id": 123, "free_remaining": 1}, None))
     def test_verified_online_book_view_for_both_pair_aliases_without_pdf(self, *_):
         app = Flask(__name__)
         app.register_blueprint(create_blueprint())

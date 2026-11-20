@@ -609,6 +609,28 @@ def create_blueprint():
         resp.headers["Vary"] = "Cookie"
         return resp
 
+    def generation_access_error(account, paid):
+        if paid:
+            return None
+        credits = account.get("free_remaining") if isinstance(account, dict) else None
+        if type(credits) is not int or not 0 <= credits <= 10:
+            return jsonify({
+                "error": "Baki janaan percuma belum dapat disahkan. Cuba Refresh.",
+                "code": "RPH_TRIAL_BALANCE_UNAVAILABLE",
+            }), 503
+        if credits == 0:
+            return jsonify({
+                "error": "10 janaan RPH percuma telah habis. Aktifkan Rakan Pembangun untuk akses tanpa had.",
+                "code": "FREE_TRIAL_EXHAUSTED", "remaining": 0,
+            }), 403
+        return None
+
+    def materials_access_error():
+        account, error = _account()
+        if error is not None:
+            return error
+        return generation_access_error(account, _has_paid_access(account))
+
     def selected_rph(*, require_generation_access=True, for_download=False):
         """Authenticate every request; check quota only for actual paid/trial
         preview and document generation, not read-only source availability.
@@ -621,15 +643,10 @@ def create_blueprint():
         # A paid account is unlimited; a trial account needs a verified,
         # strictly typed positive balance. Do not provision credits here.
         paid = _has_paid_access(account)
-        credits = account.get("free_remaining") if isinstance(account, dict) else None
-        if require_generation_access and not paid and (type(credits) is not int or not 0 <= credits <= 10):
-            return None, (jsonify({
-                "error": "Baki janaan percuma belum dapat disahkan. Cuba Refresh.",
-                "code": "RPH_TRIAL_BALANCE_UNAVAILABLE"}), 503)
-        if require_generation_access and not paid and credits == 0:
-            return None, (jsonify({
-                "error": "10 janaan RPH percuma telah habis. Aktifkan Rakan Pembangun untuk akses tanpa had.",
-                "code": "FREE_TRIAL_EXHAUSTED", "remaining": 0}), 403)
+        if require_generation_access:
+            error = generation_access_error(account, paid)
+            if error is not None:
+                return None, error
         # Never add account/payment details to a returned preview JSON or
         # the server-to-server native Telegram document payload.
         g.cikgulaju_rph_account = account
@@ -1185,7 +1202,7 @@ def create_blueprint():
             response.headers["X-RPH-Trial-Remaining"] = str(trial_remaining)
         return attach_bundle_receipt(response, document, "pdf")
 
-    # Extra teaching resources are independent of RPH generation credits.
+    # Extra teaching resources require generation access without debiting credits.
     # Selection is still bound to the exact logged-in user's source catalog.
     # The Web never guesses an RPT ID, exposes Telegram credentials or
     # copies files from an unsynchronized Web-side legacy database.
@@ -1222,7 +1239,7 @@ def create_blueprint():
 
     @bp.get("/api/web/rph/extra-materials")
     def extra_materials():
-        account, error = _account()
+        error = materials_access_error()
         if error is not None:
             return error
         try:
@@ -1338,7 +1355,7 @@ def create_blueprint():
 
     @bp.get("/api/web/rph/science-textbook")
     def science_textbook():
-        _, error = _account()
+        error = materials_access_error()
         if error is not None:
             return error
         try:
@@ -1361,7 +1378,7 @@ def create_blueprint():
 
     @bp.get("/api/web/rph/english-paired-material/<asset>")
     def english_paired_material(asset):
-        _, error = _account()
+        error = materials_access_error()
         if error is not None:
             return error
         from web.native_telegram_extra_materials_20261106 import (
@@ -1388,7 +1405,7 @@ def create_blueprint():
 
     @bp.get("/api/web/rph/english-workbook")
     def english_workbook():
-        account, error = _account()
+        error = materials_access_error()
         if error is not None:
             return error
         try:
@@ -1408,7 +1425,7 @@ def create_blueprint():
 
     @bp.get("/api/web/rph/english-student-book")
     def english_student_book():
-        account, error = _account()
+        error = materials_access_error()
         if error is not None:
             return error
         try:
@@ -1428,7 +1445,7 @@ def create_blueprint():
 
     @bp.get("/api/web/rph/english-audio/<int:track>")
     def english_audio(track):
-        account, error = _account()
+        error = materials_access_error()
         if error is not None:
             return error
         try:
