@@ -9,4 +9,6 @@
 
 Halaman bercetak 76–79 bersamaan halaman fizikal 88–91 dalam fail buku teks DBP cetakan 2017. Panel latihan mendengar pada hlm. 76 dan 78 menyokong SP 1.1.1 bagi ulang sebut bunyi yang didengar. Panel *أقرأ وأحدد* pada hlm. 77 dan 79 menyokong SP 2.2.2 bagi pengenalpastian suku kata bertulis. DPK hlm. 1 dan 4 mengesahkan huraian SP. Kedua-dua indeks dan PDF RPT Kumpulan A/B diselaraskan kepada kemahiran tersebut. Penyoalan, bahan pengajaran dan pentaksiran dalam RPH ialah olahan daripada contoh buku teks.
 
+Semakan awal hlm. 80–83 untuk PdP 049–052 mengenal pasti perbezaan pada PdP 052. Carta ulang kaji hlm. 83 memaparkan contoh huruf ف. Nota guru menggunakan huruf ق dan ط untuk tugasan buku skrap. Agihan PdP 052 perlu mengikut bahan yang dipilih untuk pentaksiran sebelum Word diterbitkan.
+
 [Buku Teks DBP](https://drive.google.com/file/d/13CqpBb4HosAM_-HTEN-hhBCt2W5wVXCZ/view) · [DPK](https://www.tcer.my/wp-content/uploads/2021/01/4_DPK_Bahasa-Arab-KSSR-Tahun-2-Edisi-2-1.pdf)
