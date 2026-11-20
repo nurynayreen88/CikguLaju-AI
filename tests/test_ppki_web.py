@@ -50,7 +50,7 @@ class PpkiWebTest(unittest.TestCase):
         self.source_requests.append((path, payload))
         if path == "catalog":
             return json.dumps(self.catalog).encode()
-        if path in ("rpt.pdf", "rpt-current.pdf"):
+        if path in ("rpt.pdf", "rpt-current.pdf", "rpt-manipulatif.pdf"):
             return self.pdf
         return self.docx.getvalue() if payload["format"] == "word" else self.pdf
 
@@ -99,6 +99,32 @@ class PpkiWebTest(unittest.TestCase):
         entry, = [row for row in self.client.get("/api/rpt/2027/catalog").json["subjects"]
                   if row["code"] == ppki.RPT_CODE]
         self.assertIn("Pengurusan Diri · Agihan 14 PdP Unit 2", entry["years"][0]["note"])
+
+    def test_complete_manipulative_catalog_and_paid_rpt(self):
+        labels = ("Kami Aktif", "Jari Kreatif", "Lihat, Dengar dan Rasa")
+        self.catalog["kemahiran_manipulatif"] = [
+            {"value": unit_id, "label": label, "lessons": [
+                {"value": f"{number:03d}", "label": f"PdP {number:03d}",
+                 "formats": ["word", "pdf"], "textbook_ref": "Buku Teks"}
+                for number in numbers]}
+            for (unit_id, numbers), label in zip(ppki.MANIPULATIVE_UNIT_LESSONS.items(), labels, strict=True)
+        ]
+        query = {"year": 2, "subject": ppki.SUBJECT}
+        units = self.client.get("/api/options", query_string={
+            **query, "kind": "units", "component": ppki.MANIPULATIVE_COMPONENT,
+        }).json
+        self.assertEqual([row["value"] for row in units], list(ppki.MANIPULATIVE_UNIT_LESSONS))
+        selected = {**query, "unit": ppki.MANIPULATIVE_UNIT3, "lesson": "071"}
+        self.assertEqual(self.client.get("/api/web/rph/pdf", query_string=selected).status_code, 200)
+        endpoint = f"/api/rpt/2027/all/{ppki.RPT_MANIPULATIVE_CODE}/2.pdf"
+        self.paid = False
+        self.assertEqual(self.client.get(endpoint).status_code, 403)
+        self.paid = True
+        entry, = [row for row in self.client.get("/api/rpt/2027/catalog").json["subjects"]
+                  if row["code"] == ppki.RPT_MANIPULATIVE_CODE]
+        self.assertIn("32 PdP Unit 1–3", entry["years"][0]["note"])
+        self.assertEqual(self.client.get(endpoint).status_code, 200)
+        self.assertEqual(self.source_requests[-1][0], "rpt-manipulatif.pdf")
 
     def test_rph_word_pdf_and_trial_gate(self):
         prefix = "/api/web/rph/"

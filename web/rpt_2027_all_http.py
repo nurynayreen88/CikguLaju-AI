@@ -366,6 +366,17 @@ def create_all_rpt_blueprint(*,root=ROOT):
             }]})
             for key in ("total_rpt", "available_rpt", "total_display_choices"):
                 data[key] += 1
+            manipulative = ppki_source["units_by_component"].get(ppki.MANIPULATIVE_COMPONENT, [])
+            if len(manipulative) == len(ppki.MANIPULATIVE_UNIT_LESSONS):
+                km_count = sum(len(numbers) for numbers in ppki.MANIPULATIVE_UNIT_LESSONS.values())
+                data["subjects"].append({"code": ppki.RPT_MANIPULATIVE_CODE, "label": "Kemahiran Manipulatif",
+                                           "years": [{
+                    "year": ppki.YEAR, "status": "AGIHAN UNIT 1–3", "pdf_ready": True,
+                    "download_enabled": paid, "is_draft": False,
+                    "note": f"Agihan {km_count} PdP Unit 1–3. Guru menetapkan tarikh PdP mengikut jadual kelas.",
+                }]})
+                for key in ("total_rpt", "available_rpt", "total_display_choices"):
+                    data[key] += 1
         return jsonify(data)
 
     @bp.get("/api/rpt/2027/sjkc/<slug>/<int:year>.<fmt>", defaults={"school": "sjkc"})
@@ -398,19 +409,28 @@ def create_all_rpt_blueprint(*,root=ROOT):
         account,error=_account()
         if error is not None:
             return error
-        if subject == ppki.RPT_CODE:
+        if subject in {ppki.RPT_CODE, ppki.RPT_MANIPULATIVE_CODE}:
             if year != ppki.YEAR:
                 return jsonify({"error": "Pilihan RPT PPKI tidak tersedia."}), 404
             if not _has_paid_access(account):
                 return jsonify({"error": "RPT PPKI memerlukan akses berbayar aktif."}), 403
             try:
-                unit_numbers = ppki.catalog()["unit_numbers"]
-                document = ppki.request_rpt(combined=len(unit_numbers) > 1)
+                source = ppki.catalog()
+                if subject == ppki.RPT_MANIPULATIVE_CODE:
+                    units = source["units_by_component"].get(ppki.MANIPULATIVE_COMPONENT, [])
+                    if len(units) != len(ppki.MANIPULATIVE_UNIT_LESSONS):
+                        return jsonify({"error": "Pilihan RPT PPKI tidak tersedia."}), 404
+                    document = ppki.request_rpt(manipulative=True)
+                    filename = ppki.RPT_MANIPULATIVE_FILENAME
+                else:
+                    unit_numbers = source["unit_numbers"]
+                    document = ppki.request_rpt(combined=len(unit_numbers) > 1)
+                    filename = ("CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_"
+                                + "_".join(str(unit) for unit in unit_numbers) + "_2027.pdf")
             except ppki.NativeRPHUnavailable:
                 return jsonify({"error": "PDF RPT PPKI belum dapat dihubungi."}), 503
             response = send_file(document, mimetype="application/pdf", as_attachment=True, conditional=False,
-                                 download_name=("CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_"
-                                                + "_".join(str(unit) for unit in unit_numbers) + "_2027.pdf"))
+                                 download_name=filename)
             response.headers["X-RPT-Source-SHA256"] = hashlib.sha256(document.getvalue()).hexdigest()
             response.headers["X-RPT-Personalization-Allowed"] = "0"
             return response

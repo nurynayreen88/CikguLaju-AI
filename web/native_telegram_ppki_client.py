@@ -14,6 +14,8 @@ SUBJECT = "PENGURUSAN_KEHIDUPAN_PPKI"
 COMPONENT = "pengurusan-diri"
 MANIPULATIVE_COMPONENT = "kemahiran-manipulatif"
 MANIPULATIVE_UNIT1 = "u01-kemahiran-manipulatif"
+MANIPULATIVE_UNIT2 = "u02-kemahiran-manipulatif"
+MANIPULATIVE_UNIT3 = "u03-kemahiran-manipulatif"
 UNIT1 = "u01-pengurusan-diri"
 UNIT = "u02-pengurusan-diri"
 UNIT3 = "u03-pengurusan-diri"
@@ -23,10 +25,16 @@ UNIT_LESSONS = {
     UNIT: range(1, 15), UNIT3: range(15, 19), UNIT4: range(19, 24),
     UNIT5: range(24, 30), UNIT1: range(30, 40),
 }
-MANIPULATIVE_UNIT_LESSONS = {MANIPULATIVE_UNIT1: range(40, 44)}
+MANIPULATIVE_UNIT_LESSONS = {
+    MANIPULATIVE_UNIT1: range(40, 54),
+    MANIPULATIVE_UNIT2: range(54, 64),
+    MANIPULATIVE_UNIT3: range(64, 72),
+}
 YEAR = 2
 FORMATS = ("word", "pdf")
 RPT_CODE = "pengurusan_kehidupan_ppki"
+RPT_MANIPULATIVE_CODE = "kemahiran_manipulatif_ppki"
+RPT_MANIPULATIVE_FILENAME = "CIKGULAJU_RPT_PPKI_KEMAHIRAN_MANIPULATIF_TAHUN_2_2027.pdf"
 
 
 def _request(path, accept, limit, payload=None):
@@ -93,7 +101,11 @@ def catalog():
         raise NativeRPHUnavailable("Invalid PPKI Kemahiran Manipulatif units")
     manipulative_by_unit = {}
     for (unit_id, numbers), unit in zip(MANIPULATIVE_UNIT_LESSONS.items(), manipulative):
-        _validate_unit(unit, unit_id, [[f"{number:03d}" for number in numbers]])
+        expected_lessons = [f"{number:03d}" for number in numbers]
+        accepted_lessons = [expected_lessons]
+        if unit_id == MANIPULATIVE_UNIT1 and len(manipulative) == 1:
+            accepted_lessons.append(expected_lessons[:4])
+        _validate_unit(unit, unit_id, accepted_lessons)
         manipulative_by_unit[unit_id] = unit["lessons"]
 
     rph_lessons = {**by_unit, **manipulative_by_unit}
@@ -160,5 +172,7 @@ def request_rph(selected, fmt):
     return _document("render", fmt, {"selection": selection, "teacher": teacher, "format": fmt})
 
 
-def request_rpt(*, combined=False):
+def request_rpt(*, combined=False, manipulative=False):
+    if manipulative:
+        return _document("rpt-manipulatif.pdf", "pdf")
     return _document("rpt-current.pdf" if combined else "rpt.pdf", "pdf")
