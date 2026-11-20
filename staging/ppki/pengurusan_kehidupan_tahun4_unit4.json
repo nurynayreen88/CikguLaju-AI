@@ -1,0 +1,190 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 4,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 4 · Budayakan Amalan Murni",
+  "content_standards": {
+    "4.1": "Adab dan tatasusila ketika berinteraksi.",
+    "4.2": "Adab berterima kasih dan bersyukur."
+  },
+  "learning_standards": {
+    "4.1.1": "Mengenal pasti adab dan tatasusila ketika berinteraksi dengan ahli keluarga dan orang lain, apabila menerima dan memberi arahan, serta semasa meminjam dan memulangkan barang.",
+    "4.1.2": "Mengaplikasikan adab dan tatasusila ketika berinteraksi berdasarkan situasi.",
+    "4.1.3": "Menaakul kepentingan menjaga adab dan tatasusila ketika berinteraksi.",
+    "4.2.1": "Melafazkan ucapan bertatasusila apabila menerima penghargaan dan ganjaran.",
+    "4.2.2": "Menunjukkan rasa berterima kasih dan bersyukur melalui perlakuan.",
+    "4.2.3": "Mengaplikasi sikap berterima kasih dan bersyukur dalam kehidupan seharian."
+  },
+  "lessons": [
+    {
+      "pdp": "034",
+      "title": "Mengenal adab ketika berinteraksi",
+      "sp": "4.1.1",
+      "focus": "Mengenal adab ketika berinteraksi.",
+      "book": "Buku Teks hlm. 47–49",
+      "objective": "Murid dapat mengenal pasti tiga adab sopan bagi tiga situasi interaksi.",
+      "materials": "Gambar kantin dan kelas, berus lukisan contoh, kad ungkapan.",
+      "induction": [
+        "Paparkan gambar rakan berkongsi makanan dan beri dua pilihan respons.",
+        "Pilih ungkapan yang sopan untuk situasi tersebut."
+      ],
+      "guided": [
+        "Bincangkan respons sopan kepada ahli keluarga atau orang lain, ketika menerima arahan dan ketika meminjam atau memulangkan barang.",
+        "Padankan satu ungkapan dengan setiap kategori situasi."
+      ],
+      "practice": [
+        "Edarkan tiga situasi mudah dan minta murid memilih tindakan atau ucapan yang sepadan.",
+        "Kenal pasti adab yang sesuai untuk ketiga-tiga situasi."
+      ],
+      "closure": [
+        "Tanya cara membuka percakapan sebelum meminjam barang.",
+        "Sebut atau pilih kad permintaan izin."
+      ],
+      "support": "Baca dialog pendek dan sediakan kad bergambar serta tulisan besar.",
+      "assessment": "Guru merekod sama ada murid dapat mengenal pasti tiga adab sopan bagi tiga situasi interaksi.",
+      "follow_up": "Ulang satu kategori dengan ungkapan yang berlainan."
+    },
+    {
+      "pdp": "035",
+      "title": "Mengamalkan adab dalam dialog",
+      "sp": "4.1.2",
+      "focus": "Mengamalkan adab dalam dialog.",
+      "book": "Buku Teks hlm. 48–51",
+      "objective": "Murid dapat mengamalkan ucapan atau perbuatan sopan dalam dua simulasi interaksi.",
+      "materials": "Kad peranan, berus contoh, kad tempat duduk dan kad ungkapan.",
+      "induction": [
+        "Tunjukkan gambar meminta pinjam berus dan minta murid meneka respons rakan.",
+        "Pilih gambaran respons yang sesuai."
+      ],
+      "guided": [
+        "Modelkan dialog meminta izin, memulangkan barang dan mengucapkan terima kasih. Tunjuk juga satu respons sopan apabila diberi arahan.",
+        "Ulang dialog pendek melalui pertuturan, kad atau isyarat."
+      ],
+      "practice": [
+        "Sediakan dua stesen lakonan, meminjam alat dan menerima arahan. Tukar peranan selepas latihan pertama.",
+        "Bina dialog dengan kad atau gunakan ungkapan sopan yang dipelajari di kedua-dua stesen."
+      ],
+      "closure": [
+        "Minta murid mengucapkan terima kasih ketika memulangkan bahan latihan.",
+        "Gunakan ungkapan pilihan sewaktu memulangkan bahan."
+      ],
+      "support": "Berikan skrip bergambar dan pilihan latihan individu bersama guru.",
+      "assessment": "Guru merekod sama ada murid dapat mengamalkan ucapan atau perbuatan sopan dalam dua simulasi interaksi.",
+      "follow_up": "Ulang dialog dengan barang yang berbeza."
+    },
+    {
+      "pdp": "036",
+      "title": "Kepentingan menjaga tutur kata",
+      "sp": "4.1.3",
+      "focus": "Kepentingan menjaga tutur kata.",
+      "book": "Buku Teks hlm. 52–53",
+      "objective": "Murid dapat memberikan dua sebab menjaga adab ketika berinteraksi dalam situasi yang diberikan.",
+      "materials": "Gambar dua cerita, kad tindakan dan kad kesan.",
+      "induction": [
+        "Paparkan gambar rakan yang sedih selepas ditegur secara kasar.",
+        "Tunjuk emosi watak menggunakan kad yang sesuai."
+      ],
+      "guided": [
+        "Bandingkan teguran kasar dengan teguran sopan. Bincangkan kesan kata-kata kepada perasaan dan hubungan.",
+        "Padankan satu tindakan dengan kesannya kepada watak."
+      ],
+      "practice": [
+        "Berikan dua situasi dan minta murid memilih ungkapan sopan serta memberi sebab.",
+        "Nyatakan sebab bagi setiap pilihan dengan bantuan rangka ayat jika perlu."
+      ],
+      "closure": [
+        "Minta murid menilai satu ayat yang boleh digunakan untuk minta maaf.",
+        "Pilih ayat dan terangkan bagaimana ayat itu membantu."
+      ],
+      "support": "Beri pilihan sebab bergambar tanpa meminta murid menceritakan pengalaman peribadi.",
+      "assessment": "Guru merekod sama ada murid dapat memberikan dua sebab menjaga adab ketika berinteraksi dalam situasi yang diberikan.",
+      "follow_up": "Ulang dengan dialog membeli alat tulis dalam gambar buku."
+    },
+    {
+      "pdp": "037",
+      "title": "Ucapan ketika menerima penghargaan",
+      "sp": "4.2.1",
+      "focus": "Ucapan ketika menerima penghargaan.",
+      "book": "Buku Teks hlm. 54–55",
+      "objective": "Murid dapat menyampaikan ucapan terima kasih yang sesuai dalam dua situasi menerima penghargaan.",
+      "materials": "Kad anugerah, sampul contoh dan kad ungkapan.",
+      "induction": [
+        "Paparkan gambar penyampaian anugerah dalam buku teks.",
+        "Pilih kad yang menunjukkan perasaan penerima."
+      ],
+      "guided": [
+        "Demonstrasikan cara memberi respons kepada guru yang menyampaikan anugerah dan ahli keluarga yang memberi pujian.",
+        "Pilih ungkapan yang sesuai untuk kedua-dua pemberi."
+      ],
+      "practice": [
+        "Adakan simulasi menerima sijil dan menerima pujian. Ubah watak pemberi pada setiap pusingan.",
+        "Ucapkan terima kasih secara lisan atau melalui kad yang boleh dibaca oleh pemberi."
+      ],
+      "closure": [
+        "Minta murid memilih satu ungkapan untuk kegunaan di luar kelas.",
+        "Nyatakan atau tunjuk ungkapan pilihan."
+      ],
+      "support": "Terima respons melalui kad komunikasi atau isyarat yang digunakan murid.",
+      "assessment": "Guru merekod sama ada murid dapat menyampaikan ucapan terima kasih yang sesuai dalam dua situasi menerima penghargaan.",
+      "follow_up": "Latih semula satu ucapan apabila watak pemberi bertukar."
+    },
+    {
+      "pdp": "038",
+      "title": "Menunjukkan rasa terima kasih melalui perbuatan",
+      "sp": "4.2.2",
+      "focus": "Menunjukkan rasa terima kasih melalui perbuatan.",
+      "book": "Buku Teks hlm. 55–57",
+      "objective": "Murid dapat menunjukkan dua perbuatan yang menyatakan rasa terima kasih dan bersyukur dalam simulasi.",
+      "materials": "Gambar menerima hadiah dan bantuan, kad tindakan dan bekas hadiah.",
+      "induction": [
+        "Paparkan situasi Arif menerima penghargaan daripada ibu dan ayah.",
+        "Tunjuk tindakan menghargai pemberian dalam gambar."
+      ],
+      "guided": [
+        "Bincangkan cara menghargai hadiah, menjaga bahan yang diterima dan membantu mengemas apabila sesuai.",
+        "Pilih satu perbuatan yang menunjukkan penghargaan."
+      ],
+      "practice": [
+        "Minta murid melakonkan penerimaan bahan kelas atau bantuan dengan dua pilihan respons.",
+        "Tunjukkan dua perbuatan yang menunjukkan penghargaan, seperti menjaga bahan dan memulangkannya dengan kemas."
+      ],
+      "closure": [
+        "Ajak murid memadankan tindakan yang ditunjukkan dengan situasinya.",
+        "Tunjuk kad perbuatan dan kad situasi yang sepadan."
+      ],
+      "support": "Gunakan model tindakan tanpa mewajibkan sentuhan atau pandangan mata.",
+      "assessment": "Guru merekod sama ada murid dapat menunjukkan dua perbuatan yang menyatakan rasa terima kasih dan bersyukur dalam simulasi.",
+      "follow_up": "Beri peluang menunjukkan satu perbuatan yang sama dalam rutin kelas."
+    },
+    {
+      "pdp": "039",
+      "title": "Mengamalkan rasa terima kasih dalam rutin",
+      "sp": "4.2.3",
+      "focus": "Mengamalkan rasa terima kasih dalam rutin.",
+      "book": "Buku Teks hlm. 55–57",
+      "objective": "Murid dapat mengamalkan ucapan atau perbuatan menghargai bantuan dalam dua rutin kelas.",
+      "materials": "Kad bantuan di sekolah, bahan kelas dan carta amalan.",
+      "induction": [
+        "Paparkan gambar watak menerima bantuan di tempat Rehat dan Rawat.",
+        "Nyatakan siapa yang membantu dan pilih respons yang sesuai."
+      ],
+      "guided": [
+        "Bimbing murid mengenal bantuan kecil yang diterima semasa mengambil bahan dan menyusun ruang belajar.",
+        "Pilih ungkapan atau tindakan menghargai bantuan bagi setiap rutin."
+      ],
+      "practice": [
+        "Jalankan dua rutin sebenar di kelas dengan peluang untuk mengucapkan terima kasih dan menjaga bahan.",
+        "Gunakan ungkapan atau perbuatan menghargai bantuan semasa kedua-dua rutin."
+      ],
+      "closure": [
+        "Minta murid memilih amalan yang hendak diteruskan di rumah atau di sekolah.",
+        "Tunjukkan kad amalan pilihan dan nyatakan bila akan dilakukan."
+      ],
+      "support": "Sediakan kad komunikasi pada tempat bahan dan beri masa untuk respons.",
+      "assessment": "Guru merekod sama ada murid dapat mengamalkan ucapan atau perbuatan menghargai bantuan dalam dua rutin kelas.",
+      "follow_up": "Buat jambangan kertas ringkas berpandukan halaman 58 sebagai pengayaan."
+    }
+  ]
+}
