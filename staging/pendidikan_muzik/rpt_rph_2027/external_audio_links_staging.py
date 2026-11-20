@@ -1,14 +1,12 @@
 """Read-only, source-backed external audio links for Music Years 2–6.
 
-This only opens original Google Drive *view* pages. It never sends audio bytes,
-creates a direct-download URL, grants a license, or consumes RPH credits.
-Only strict numeric textbook references are mapped to numbered source files;
-a matching filename is not evidence that the recording is authentic/correct.
-Requires a separate live-release review; not wired to production WSGI.
+Source URLs point to the original Google Drive files. Direct download links
+require a matching PdP and a successful signed-out file check.
 """
 from __future__ import annotations
 
 import json
+from functools import lru_cache
 from pathlib import Path
 import re
 
@@ -28,6 +26,7 @@ STRICT_NUMBERS = re.compile(
     re.IGNORECASE,
 )
 SOURCE_STATUS = "PAUTAN_ASAL_BELUM_DISAHKAN_AKSES_LESEN_DAN_AUDIO"
+SOURCE_DOWNLOAD = "https://drive.usercontent.google.com/download?id={}&export=download"
 VERIFIED_YEAR4_TRACKS = {
     21: (
         (66, "1tgNnRXXJC6SVvvVRodSQgt1o464hLe7V", "Corak Irama 1"),
@@ -144,8 +143,12 @@ def links_for_pdp(year, pdp, *, root=ROOT):
 
 
 def audio_link_action(year, pdp, *, root=ROOT):
-    """Distinguish score-checked recordings from numbered source candidates."""
+    """Distinguish score review, verified source downloads and view links."""
     links = links_for_pdp(year, pdp, root=root)
+    checked_downloads = _checked_downloads(Path(root)).get(str(year), {}).get(str(pdp))
+    if isinstance(checked_downloads, list) and checked_downloads == [x["file_id"] for x in links]:
+        links = [dict(item, download_url=SOURCE_DOWNLOAD.format(item["file_id"]))
+                 for item in links]
     checked = VERIFIED_YEAR4_TRACKS.get(pdp) if year == 4 else None
     if checked:
         if [(item["track"], item["file_id"]) for item in links] != [
@@ -178,3 +181,19 @@ def audio_link_action(year, pdp, *, root=ROOT):
         "download_available": False,
         "content_verified": False,
     }
+
+
+@lru_cache(maxsize=4)
+def _checked_downloads(root):
+    try:
+        path = root / "audio_source_download_audit_20261120.json"
+        if path.is_symlink():
+            return {}
+        data = json.loads(path.read_text(encoding="utf-8"))
+        coverage = data.get("verified_pdp_files")
+        if (data.get("schema") == 1 and isinstance(coverage, dict)
+                and all(isinstance(rows, dict) for rows in coverage.values())):
+            return coverage
+    except (OSError, ValueError, AttributeError):
+        pass
+    return {}
