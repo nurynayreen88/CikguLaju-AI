@@ -1,30 +1,31 @@
-# RPH Bahasa Arab Tahun 3 — PdP 044 (DRAF / BELUM READY)
+# RPH Bahasa Arab Tahun 3 — PdP 044 (DRAF INDEKS RPT 2027)
 
 **Tahun:** 3 | **Subjek:** Bahasa Arab KSSR Semakan 2017 | **Unit:** الألوان حولنا
-**Fokus PdP:** Bertanya dan menjawab tentang warna benda
-**SK/SP cadangan:** 1.4 / 1.4.1; kod wujud dalam DSKP Tahun 3, tetapi padanan tepat aktiviti h85 dan RPT 2027 masih menunggu semakan berasingan.
-**Tarikh / masa / kelas:** Diisi guru mengikut kelas, negeri, waktu mula/tamat dan jadual sebenar.
-**Kosa kata / ayat:** مَا لَوْنُهُ؟ لَوْنُهُ أَحْمَر، مَا لَوْنُهَا؟ لَوْنُهَا وَرْدِيّ
-**Objektif pembelajaran:** Melakonkan dua soal jawab mudah berkaitan warna.
-**Kriteria kejayaan:** Sekurang-kurangnya sasaran dalam objektif; guru merekod murid perlu bimbingan.
 
-**Set induksi:** Guru menunjukkan dua barang berwarna dan mengemukakan soalan ما لونه؟.
+**Fokus PdP:** محاكاة تراكيب السؤال والجواب عن الألوان
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing pola soal-jawab daripada latihan h85, menekankan pilihan لونُه / لونها berdasarkan benda yang dirujuk.
+**DSKP SK/SP:** 1.4 / 1.4.1
 
-**Aktiviti 2 — Aplikasi murid:** Murid melakonkan dua giliran soal jawab menggunakan kad objek yang berbeza dan menukar peranan.
+**Objektif pembelajaran:** أن يحاكي التلميذ ثلاثة تراكيب على الأقل من أصل أربعة مع تنغيم مناسب.
 
-**Pengukuhan / Penilaian (PBD):** Dua pertanyaan dan jawapan sesuai serta dapat difahami.
+**Kriteria kejayaan:** يردّد التلميذ ثلاثة تراكيب كاملة ويُظهر فرق التنغيم بين السؤال والجواب.
 
-**Penutup:** Murid menjawab satu soalan warna secara spontan.
+**Set induksi:** ينطق المعلّم سؤالًا وجوابًا من حوار الصفحة. يستمع التلاميذ ويرفعون بطاقة السؤال عند سماعه.
 
-**BBM:** Buku Teks Bahasa Arab Tahun 3 h85, kad huruf/warna, gambar dan borang semak PBD.
-**Refleksi guru:** ____ / ____ murid menguasai objektif; susulan: ________________.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** ينطق المعلّم أربعة تراكيب عن الألوان مع الإشارة إلى الصورة. يحاكي التلاميذ النطق والنبر والتنغيم.
 
-**Buku Teks:** DBP/KPM KSSR Semakan 2017, Cetakan Pertama 2018 ISBN 978-983-49-2033-3, Unit 3 halaman bercetak **85**, PDF asal: https://drive.google.com/file/d/1U-j2TPeVTyLaZbU2qGDb9jmf53KAwNNH/view.
-**Lokasi dalam PDF:** Halaman PDF indeks 0-based = h85+7 (92), bercetak tetap h85. PDF ini imbasan dan bukan bukti teks boleh dicari.
-**DSKP asal:** https://drive.google.com/file/d/1VQcCrSyo-zmAndvAFv9pScQcLT-DRl00/view.
-**RPT rujukan 2026:** https://anyflip.com/zxzlm/vmip/basic.
-**Jejak semakan:** Halaman asal unit diperiksa secara visual, aktiviti dicadangkan mengikut imej dan kosa kata; kod SP individual dicadangkan daripada DSKP (belum disahkan sebagai SP tercetak pada imej h85).
-**Batas pelepasan:** Belum RPT 2027 Kumpulan A/B, belum kelulusan guru individu, belum ujian penuh bahasa Arab/Telegram-Web, tiada perubahan produksi.
-**Status:** DRAF_SEMAK / BELUM READY.
+**Aktiviti 2 — Aplikasi murid:** يردّد التلاميذ الأسئلة والأجوبة في أزواج بعد نموذج المعلّم. يتبادلون الدور بعد تبديل الصورة.
+
+**Pengukuhan / Penilaian (PBD):** يقدّم المعلّم أربعة نماذج فرديّة. يردّدها التلميذ، ويرصد المعلّم اكتمال التركيب وتنغيمه.
+
+**Penutup:** يردّد التلاميذ سؤالًا وجوابًا واحدًا بعد النموذج.
+
+**BBM:** الكتاب المدرسي، بطاقات سؤال وجواب، صور أشياء.
+
+**Refleksi guru:** بلغ هدف الدرس ____ من ____ تلميذًا. إجراء المتابعة ____________________.
+
+**Buku Teks:** DBP/KPM, cetakan 2018, ISBN 978-983-49-2033-3, Unit 3 halaman bercetak 76. https://www.scribd.com/document/438677752/Bahasa-Arab-Tahun-3-Teks-KSSR-Semakan
+
+**DSKP asal:** https://asiemodel.net/wp-content/uploads/2022/08/011-DSKP-KSSR-SEMAKAN-2017-BAHASA-ARAB-TAHUN-3.pdf
+
+**Status:** Indeks tarikh RPT 2027 kekal draf. Word PdP menggunakan data Arab yang disemak.

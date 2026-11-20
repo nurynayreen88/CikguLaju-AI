@@ -1,30 +1,31 @@
-# RPH Bahasa Arab Tahun 3 — PdP 038 (DRAF / BELUM READY)
+# RPH Bahasa Arab Tahun 3 — PdP 038 (DRAF INDEKS RPT 2027)
 
 **Tahun:** 3 | **Subjek:** Bahasa Arab KSSR Semakan 2017 | **Unit:** الألوان حولنا
-**Fokus PdP:** Membaca variasi warna pada belon
-**SK/SP cadangan:** 2.2 / 2.2.2; kod wujud dalam DSKP Tahun 3, tetapi padanan tepat aktiviti h73 dan RPT 2027 masih menunggu semakan berasingan.
-**Tarikh / masa / kelas:** Diisi guru mengikut kelas, negeri, waktu mula/tamat dan jadual sebenar.
-**Kosa kata / ayat:** بُرْتُقَالِيّ، رَمَادِيّ، وَرْدِيّ، بَنَفْسَجِيّ، بُنِّيّ
-**Objektif pembelajaran:** Membaca empat daripada lima warna dan menunjukkan belon yang sesuai.
-**Kriteria kejayaan:** Sekurang-kurangnya sasaran dalam objektif; guru merekod murid perlu bimbingan.
 
-**Set induksi:** Guru menunjukkan gambar belon pelbagai warna daripada halaman 73.
+**Fokus PdP:** تمييز المقطع المقروء في كلمات الألوان
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing sebutan warna lanjutan pada belon h73 dan meminta murid membezakan kata yang hampir bunyinya.
+**DSKP SK/SP:** 2.2 / 2.2.3
 
-**Aktiviti 2 — Aplikasi murid:** Murid menyusun label warna di bawah belon, membaca dan bertukar peranan secara berpasangan.
+**Objektif pembelajaran:** أن يميّز التلميذ أربعة مقاطع مقروءة على الأقل من أصل خمسة.
 
-**Pengukuhan / Penilaian (PBD):** Empat bacaan warna serta padanan gambar tepat.
+**Kriteria kejayaan:** يختار التلميذ المقطع المطابق في أربع محاولات مع تمييز الحركة أو المدّ.
 
-**Penutup:** Murid memilih warna belon kegemaran dan menyebutnya.
+**Set induksi:** يعرض المعلّم مقطعين متقاربين من تمرين الصفحة ويقرؤهما. ينتبه التلاميذ إلى اختلاف الصوت.
 
-**BBM:** Buku Teks Bahasa Arab Tahun 3 h73, kad huruf/warna, gambar dan borang semak PBD.
-**Refleksi guru:** ____ / ____ murid menguasai objektif; susulan: ________________.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** يحدّد المعلّم مقاطع من الكلمات المعروضة. يقرأ التلاميذ كلّ مقطع ويقارنون الحركة أو المدّ في مثالين.
 
-**Buku Teks:** DBP/KPM KSSR Semakan 2017, Cetakan Pertama 2018 ISBN 978-983-49-2033-3, Unit 3 halaman bercetak **73**, PDF asal: https://drive.google.com/file/d/1U-j2TPeVTyLaZbU2qGDb9jmf53KAwNNH/view.
-**Lokasi dalam PDF:** Halaman PDF indeks 0-based = h73+7 (80), bercetak tetap h73. PDF ini imbasan dan bukan bukti teks boleh dicari.
-**DSKP asal:** https://drive.google.com/file/d/1VQcCrSyo-zmAndvAFv9pScQcLT-DRl00/view.
-**RPT rujukan 2026:** https://anyflip.com/zxzlm/vmip/basic.
-**Jejak semakan:** Halaman asal unit diperiksa secara visual, aktiviti dicadangkan mengikut imej dan kosa kata; kod SP individual dicadangkan daripada DSKP (belum disahkan sebagai SP tercetak pada imej h73).
-**Batas pelepasan:** Belum RPT 2027 Kumpulan A/B, belum kelulusan guru individu, belum ujian penuh bahasa Arab/Telegram-Web, tiada perubahan produksi.
-**Status:** DRAF_SEMAK / BELUM READY.
+**Aktiviti 2 — Aplikasi murid:** يقرأ التلميذ بطاقة مقطع. يختار زميله الشكل المطابق من بطاقتين ثمّ يتبادلان الدور.
+
+**Pengukuhan / Penilaian (PBD):** يعرض المعلّم خمس مجموعات مقاطع. يقرأ التلميذ المقطع المستهدف ويختار المطابق من البدائل.
+
+**Penutup:** يقارن التلاميذ بين مقطعين التبس أحدهما بالآخر ويعيدون قراءتهما.
+
+**BBM:** الكتاب المدرسي، بطاقات مقاطع من تمرين الصفحة.
+
+**Refleksi guru:** بلغ هدف الدرس ____ من ____ تلميذًا. إجراء المتابعة ____________________.
+
+**Buku Teks:** DBP/KPM, cetakan 2018, ISBN 978-983-49-2033-3, Unit 3 halaman bercetak 73. https://www.scribd.com/document/438677752/Bahasa-Arab-Tahun-3-Teks-KSSR-Semakan
+
+**DSKP asal:** https://asiemodel.net/wp-content/uploads/2022/08/011-DSKP-KSSR-SEMAKAN-2017-BAHASA-ARAB-TAHUN-3.pdf
+
+**Status:** Indeks tarikh RPT 2027 kekal draf. Word PdP menggunakan data Arab yang disemak.
