@@ -292,10 +292,10 @@ def _arab_word(selected,teacher,dest):
         caption = row.cells[0].text.strip()
         if caption=="Tarikh / Masa / Kelas":
             value=(
-                "Tarikh: "+(__import__("datetime").date.fromisoformat(dt).strftime("%d/%m/%Y") if dt else "___/___/_____")
-                +"   Masa: "+(tm or "________")
-                +"   Kelas: "+(cls or "________")
-                +"   Murid: "+(pupils or "_____"))
+                "Tarikh: "+(__import__("datetime").date.fromisoformat(dt).strftime("%d/%m/%Y") if dt else "")
+                +"   Masa: "+(tm or "")
+                +"   Kelas: "+(cls or "")
+                +"   Murid: "+(pupils or ""))
             row.cells[1].text=value
         elif caption == "Refleksi" and reflection:
             row.cells[1].text = reflection

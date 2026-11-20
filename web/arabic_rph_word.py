@@ -70,7 +70,7 @@ def _table(doc, widths, rows, *, header=False):
 
 def render_arabic_word(plan, teacher_fields, reflection, dest):
     class_name, date_iso, time, pupils, _ = teacher_fields
-    lesson_date = date.fromisoformat(date_iso).strftime("%d/%m/%Y") if date_iso else "___/___/_____"
+    lesson_date = date.fromisoformat(date_iso).strftime("%d/%m/%Y") if date_iso else ""
     doc = Document()
     section = doc.sections[0]
     section.page_width = Cm(21)
@@ -91,9 +91,9 @@ def render_arabic_word(plan, teacher_fields, reflection, dest):
         ("الوحدة", plan["topic"]),
         ("موضوع الدرس", plan["focus"]),
         ("التاريخ", lesson_date),
-        ("الوقت", time or "________"),
-        ("الفصل", class_name or "________"),
-        ("عدد التلاميذ", pupils or "____"),
+        ("الوقت", time or ""),
+        ("الفصل", class_name or ""),
+        ("عدد التلاميذ", pupils or ""),
         ("معيار المحتوى", f"\u2066{plan['sk']}\u2069  {plan['content_standard']}"),
         ("معيار التعلّم", f"\u2066{plan['sp']}\u2069  {plan['learning_standard']}"),
         ("هدف التعلّم", plan["objective"]),
