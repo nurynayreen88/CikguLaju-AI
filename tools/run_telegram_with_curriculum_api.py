@@ -869,3 +869,16 @@ install_english_standard_descriptions(telegram_runtime)
 from web.telegram_music_source_audio import install as install_music_source_audio
 
 TELEGRAM_MUSIC_SOURCE_AUDIO_ACTIVE = install_music_source_audio(telegram_runtime)
+
+
+# Non-destructive pastel headings and label boxes for other SK native Word RPH.
+# Owner-approved Sains, DLP and PPKI formats are explicitly excluded; the
+# existing PI/Jawi and Arabic renderers retain their fonts and RTL layout.
+# Run after all subject-specific Word wrappers, preserving their output.
+try:
+    from web.rph_reference_style_20261121 import install as install_rph_reference_word_style
+    RPH_REFERENCE_WORD_STYLE_ACTIVE = bool(install_rph_reference_word_style(telegram_runtime))
+except Exception as _reference_word_style_exc:
+    RPH_REFERENCE_WORD_STYLE_ACTIVE = False
+    print("RPH reference Word style unavailable:",
+          type(_reference_word_style_exc).__name__, flush=True)
