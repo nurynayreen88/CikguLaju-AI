@@ -25,6 +25,7 @@ STRICT_NUMBERS = re.compile(
     r"(?:\s*\((?:halaman\s+[1-9]\d{0,2}|rujukan bercetak)\))?$",
     re.IGNORECASE,
 )
+NUMBER_LIST = re.compile(r"[1-9][0-9]{0,2}(?:\s*,\s*[1-9][0-9]{0,2}){1,20}")
 SOURCE_STATUS = "PAUTAN_ASAL_BELUM_DISAHKAN_AKSES_LESEN_DAN_AUDIO"
 SOURCE_DOWNLOAD = "https://drive.usercontent.google.com/download?id={}&export=download"
 VERIFIED_YEAR4_TRACKS = {
@@ -41,14 +42,18 @@ VERIFIED_YEAR4_TRACKS = {
 
 
 def numbers_from_printed_reference(text):
-    """Reject notes, choices (5 atau 8), title ranges and ambiguous subtracks."""
+    """Read a checked numeric range or explicit list of original audio numbers."""
     if not isinstance(text, str):
         return ()
-    match = STRICT_NUMBERS.fullmatch(text.strip())
+    text = text.strip()
+    if NUMBER_LIST.fullmatch(text):
+        tracks = tuple(map(int, text.split(",")))
+        return tracks if tuple(sorted(set(tracks))) == tracks and tracks[-1] <= 300 else ()
+    match = STRICT_NUMBERS.fullmatch(text)
     if match is None:
         return ()
     start, stop = int(match.group(1)), int(match.group(2) or match.group(1))
-    if start > stop or stop - start > 20:
+    if start > stop or stop > 300 or stop - start > 20:
         return ()
     return tuple(range(start, stop + 1))
 
@@ -91,14 +96,14 @@ def _source_catalog(year, *, root=ROOT):
                     or file_id in seen_ids):
                 return None
             seen_ids.add(file_id)
-            if track is not None:
-                if type(track) is not int or not 1 <= track <= 300:
-                    return None
-                # Some title variations can share a track; refuse ambiguous mapping.
-                tracks.setdefault(track, []).append({
-                    "track": track, "title": title, "url": url,
-                    "file_id": file_id,
-                })
+            if track is not None and (type(track) is not int or not 1 <= track <= 300):
+                return None
+            # Unnumbered tracks can be matched only by the exact catalog title.
+            key = track if track is not None else title.casefold()
+            tracks.setdefault(key, []).append({
+                "track": track, "title": title, "url": url,
+                "file_id": file_id,
+            })
         return tracks
     except (OSError, UnicodeError, ValueError, TypeError, KeyError):
         return None
@@ -126,17 +131,33 @@ def links_for_pdp(year, pdp, *, root=ROOT):
                 or row.get("pdp") != pdp
                 or row.get("source_book_audio_file_verified") is not False):
             return []
-        nums = numbers_from_printed_reference(
+        keys = numbers_from_printed_reference(
             row.get("source_book_audio_numbers_printed", "")
         )
-        if not nums:
-            return []
+        named_titles = {}
+        if not keys:
+            named = row.get("source_book_audio_named")
+            if not isinstance(named, list) or not 1 <= len(named) <= 21:
+                return []
+            for item in named:
+                if not isinstance(item, dict):
+                    return []
+                catalog_title, title = item.get("catalog_title"), item.get("title")
+                if not all(isinstance(value, str) and 1 <= len(value) <= 255
+                           for value in (catalog_title, title)):
+                    return []
+                key = catalog_title.casefold()
+                if key in named_titles:
+                    return []
+                named_titles[key] = title
+            keys = tuple(named_titles)
         tracks = _source_catalog(year, root=root)
-        if tracks is None or any(len(tracks.get(n, ())) != 1 for n in nums):
+        if tracks is None or any(len(tracks.get(key, ())) != 1 for key in keys):
             return []
         return [
-            dict(tracks[n][0], status=SOURCE_STATUS, download_available=False)
-            for n in nums
+            dict(tracks[key][0], title=named_titles.get(key, tracks[key][0]["title"]),
+                 status=SOURCE_STATUS, download_available=False)
+            for key in keys
         ]
     except (OSError, UnicodeError, ValueError, TypeError, KeyError, IndexError):
         return []
@@ -149,6 +170,7 @@ def audio_link_action(year, pdp, *, root=ROOT):
     if isinstance(checked_downloads, list) and checked_downloads == [x["file_id"] for x in links]:
         links = [dict(item, download_url=SOURCE_DOWNLOAD.format(item["file_id"]))
                  for item in links]
+    links = [item for item in links if item["track"] is not None or "download_url" in item]
     checked = VERIFIED_YEAR4_TRACKS.get(pdp) if year == 4 else None
     if checked:
         if [(item["track"], item["file_id"]) for item in links] != [

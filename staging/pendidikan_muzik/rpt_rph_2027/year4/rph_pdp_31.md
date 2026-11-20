@@ -12,7 +12,7 @@
 
 **Set induksi (4 minit):** Guru menunjukkan gambar tarian Kolattam dan murid menyatakan hubungan antara kayu kol dengan irama.
 
-**Aktiviti 1 — Demonstrasi dan penerokaan (8 minit):** Guru memperkenalkan alat dalam buku seperti violin, mridangam, tambura, veena, manjira, bansuri dan harmonium; murid meneliti ciri fizikal dan cara menghasilkan bunyi.
+**Aktiviti 1 — Demonstrasi dan penerokaan (8 minit):** Guru memainkan petikan Audio 110 hingga 116 bersama gambar alat muzik. Murid mengenal pasti alat muzik berdasarkan bunyi yang didengar.
 
 **Aktiviti 2 — Amali / aplikasi (10 minit):** Murid menyusun peta alat dan keluarga alat, kemudian menerangkan sekurang-kurangnya tiga pilihan secara berpasangan.
 
@@ -20,7 +20,7 @@
 
 **Penutup (2 minit):** Murid menyatakan satu dapatan tentang muzik dan menunjukkan semula kemahiran yang diamalkan; guru merekod tahap penguasaan berdasarkan evidens aktiviti.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 halaman 100–101, imej instrumen dan kad pengelasan.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK m/s 100–101, Audio 110–116 dan gambar alat muzik Kolattam.
 
 **Rujukan:** Buku Teks Pendidikan Kesenian Tahun 4 SK KSSR Semakan 2017 halaman 100-101. Sumber Drive: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
 

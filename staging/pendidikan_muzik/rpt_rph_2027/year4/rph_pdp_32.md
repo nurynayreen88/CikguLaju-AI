@@ -12,7 +12,7 @@
 
 **Set induksi (4 minit):** Guru menunjukkan ketukan kayu kol melalui demonstrasi tanpa alat dan mengajak murid menepuk detik.
 
-**Aktiviti 1 — Demonstrasi dan penerokaan (8 minit):** Murid mengkaji ilustrasi gerakan buku: ketuk di hadapan, ke kiri/kanan dan bergerak membentuk bulatan. Guru memilih peralatan pengganti lembut jika kayu sebenar tidak selamat.
+**Aktiviti 1 — Demonstrasi dan penerokaan (8 minit):** Guru memainkan Audio 117 dan menunjukkan pola ketukan Kolattam. Murid memadankan pola ketukan dengan langkah pergerakan.
 
 **Aktiviti 2 — Amali / aplikasi (10 minit):** Kumpulan merancang pola empat atau lapan kiraan, bergerak dalam ruang selamat dan mengikut isyarat tempo yang diberi.
 
@@ -20,7 +20,7 @@
 
 **Penutup (2 minit):** Murid menyatakan satu dapatan tentang muzik dan menunjukkan semula kemahiran yang diamalkan; guru merekod tahap penguasaan berdasarkan evidens aktiviti.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 halaman 102–103, alat pengganti selamat serta kad tempo.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK m/s 102–103, Audio 117 dan alat ketukan yang sesuai.
 
 **Rujukan:** Buku Teks Pendidikan Kesenian Tahun 4 SK KSSR Semakan 2017 halaman 102-103. Sumber Drive: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
 

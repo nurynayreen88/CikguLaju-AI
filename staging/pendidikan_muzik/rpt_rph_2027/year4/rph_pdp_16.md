@@ -12,7 +12,7 @@
 
 **Set induksi (4 minit):** Murid mengulang semula urutan tangan-kaki yang dipelajari; guru membimbing penetapan tempo.
 
-**Aktiviti 1 — Demonstrasi dan penerokaan (8 minit):** Kumpulan merancang formasi ringkas berdasarkan urutan gerak Gemalai dalam buku, menentukan ketua dan isyarat mula/henti.
+**Aktiviti 1 — Demonstrasi dan penerokaan (8 minit):** Murid mengulang urutan langkah Pergerakan Gemalai dengan Audio 48. Guru membimbing penyelarasan ayunan dan langkah semasa latihan.
 
 **Aktiviti 2 — Amali / aplikasi (10 minit):** Setiap kumpulan mempersembahkan urutan mengikut tempo. Pemerhati menggunakan dua kriteria ringkas: keseragaman tempo dan kreativiti.
 
@@ -20,7 +20,7 @@
 
 **Penutup (2 minit):** Murid menyatakan satu dapatan tentang muzik dan menunjukkan semula kemahiran yang diamalkan; guru merekod tahap penguasaan berdasarkan evidens aktiviti.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 halaman 52–53, kad rubrik dan ruang persembahan.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 4 SK m/s 52–53, Audio 48 dan kad penilaian rakan.
 
 **Rujukan:** Buku Teks Pendidikan Kesenian Tahun 4 SK KSSR Semakan 2017 halaman 52-53. Sumber Drive: https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view
 

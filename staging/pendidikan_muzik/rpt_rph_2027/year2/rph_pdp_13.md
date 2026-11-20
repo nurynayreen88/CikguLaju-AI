@@ -20,7 +20,7 @@
 
 **Penutup — 2 minit:** Murid menyebut satu kekuatan dan satu penambahbaikan untuk kumpulan. Guru merekod PBD.
 
-**Bahan:** Buku Kesenian halaman 4–5, alat muzik improvisasi selamat, borang penilaian.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK m/s 4–5, Audio Projek Penggal Satu, alat muzik improvisasi dan borang penilaian.
 
 **Rujukan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, DBP 2017, halaman 4-5, https://anyflip.com/iawvx/mran/basic. Projek buku Kesenian menggabungkan Seni Visual dan Muzik; RPH ini cuma pemetaan bahagian muzik, bukan penggantian kod rasmi DSKP Muzik. Semua audio sebenar belum disahkan.
 

@@ -20,7 +20,7 @@
 
 **Penutup — 2 minit:** Ketua menerangkan satu persediaan yang belum selesai serta tindakan kumpulan. Guru merekod PBD.
 
-**Bahan:** Buku Kesenian halaman 4–5, kad peranan, borang jadual dan alat muzik selamat.
+**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK m/s 4–5, Audio Projek Penggal Satu, kad peranan dan borang jadual.
 
 **Rujukan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, DBP 2017, halaman 4-5, https://anyflip.com/iawvx/mran/basic. Projek buku Kesenian menggabungkan Seni Visual dan Muzik; RPH ini cuma pemetaan bahagian muzik, bukan penggantian kod rasmi DSKP Muzik. Semua audio sebenar belum disahkan.
 

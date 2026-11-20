@@ -1,3 +1,17 @@
+## 20 November 2026 — Padanan tambahan audio mengikut nota guru dan projek
+
+Semakan halaman buku mengesahkan rujukan berikut. Muat turun tanpa sesi Google berjaya dan semua fail dikenal pasti sebagai WAV atau MP3. Liputan audit meningkat daripada 117 kepada 142 PdP dan daripada 571 kepada 610 fail asal.
+
+| Tahun | PdP | Audio | Bukti |
+|---|---|---|---|
+| 2 | 12–13, 19, 22, 33 | Projek Penggal Satu, Audio 48, 60–66 dan 84–86 | [Buku hlm. 4–5, 55, 62–63 dan 95–96](https://fliphtml5.com/laiqy/thik/Buku_Teks_Pendidikan_Kesenian_Tahun_2/) |
+| 3 | 02–03, 12–13, 24–26 | Audio 8 bagi latihan detik. Audio 5 atau 8 bagi pergerakan. Vokal, instrumental dan minus one bagi projek Serangga dan Kau Sahabatku. | [Buku hlm. 4–5, 12–13, 48–49](https://fliphtml5.com/itcew/awun/Pendidikan_Kesenian_Tahun_3/) |
+| 4 | 07, 14–16, 18, 25–27, 31–33 | Audio 17–18, 44–48 (Tagunggu/Gemalai), 58–60, Projek Kesenian Penggal Dua dan 110–117 (Kolattam). | [Buku hlm. 30, 50–55, 62 dan 100–103](https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view) |
+| 5 | 05 | Audio 22 digunakan untuk menandakan dinamik. Audio 24–26 ialah latihan tempo dalam PdP 04. | [Buku hlm. 12–13](https://fliphtml5.com/ubcth/vbqi/Pendidikan_Muzik_Tahun_5_SK/) |
+| 6 | 18 | Audio 96 mengiringi aktiviti pergerakan Memori Indah. | [Buku hlm. 52–53](https://fliphtml5.com/hkvtu/xnxg/Buku_Teks_Pendidikan_Muzik_Tahun_6_(KSSR_Semakan_2017)/) |
+
+Buku Tahun 4 menamakan audio Penggal Dua tanpa nombor. Pautan menggunakan tajuk tersebut dan diberikan sebagai contoh bagi keseluruhan projek. Halaman 4–5 Penggal Satu meminta murid memilih lagu daripada Unit 1–5. Pilihan ini bergantung pada rancangan kumpulan. Audio Projek Penggal Dua Tahun 2 berada dalam arkib. Ujian sumber asal membuka skrin pengesahan Google Drive untuk fail besar, jadi butang muat turun langsung masih ditahan bagi PdP 26–27. Semakan ini mengesahkan rujukan dan akses sumber. Status semakan skor rakaman berasingan.
+
 ## 20 November 2026 — Pautan audio disahkan untuk dua PdP Tahun 4
 
 Audio 66 dan 67 bagi PdP 21 serta Audio 90 hingga 92 bagi PdP 24 sepadan dengan skor. Kesemua fail asal boleh dicapai dalam sesi tanpa log masuk Google dan cap SHA-256 kelima-limanya sama dengan fail yang diperiksa. Web memaparkan pautan sumber dalam senarai bahan bagi PdP berkenaan. Menu Pendidikan Muzik Tahun 4 dalam Telegram menyediakan pilihan audio untuk kedua-dua PdP. [Semakan skor dan rakaman](https://github.com/nurynayreen88/CikguLaju-AI/blob/89fab0429ee76b46002e4a7d75e43ff96ea87bb6/staging/pendidikan_muzik/rpt_rph_2027/year4/SEMAKAN_VISUAL_SKOR_PDP21_24_20261106.md)
