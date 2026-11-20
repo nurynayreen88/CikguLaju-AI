@@ -30,6 +30,7 @@ REVIEWED_ARABIC = {
     (2, "u04"): {f"{lesson:03d}" for lesson in range(45, 61)},
     (3, "u01"): {f"{lesson:03d}" for lesson in range(1, 13)},
     (3, "u02"): {f"{lesson:03d}" for lesson in range(13, 29)},
+    (3, "u03"): {f"{lesson:03d}" for lesson in range(29, 45)},
 }
 
 
