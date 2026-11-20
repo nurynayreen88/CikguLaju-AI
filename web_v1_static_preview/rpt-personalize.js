@@ -215,7 +215,7 @@
     )).map(b=>b.toString(16).padStart(2,"0")).join("");
     if(actualSha!==declaredSha)throw Error("Checksum PDF tidak sepadan. Muat turun dibatalkan.");
     return {bytes,sha:actualSha,paidCover:response.headers.get("X-RPT-Personalization-Allowed")==="1",
-            ppkiUnits:response.headers.get("content-disposition")?.match(/UNIT_(2(?:_3(?:_4)?)?)_2027\.pdf/)?.[1]||"2"};
+            ppkiUnits:response.headers.get("content-disposition")?.match(/UNIT_(2(?:_3(?:_4(?:_5)?)?)?)_2027\.pdf/)?.[1]||"2"};
   }
   async function downloadWithOriginalCover(code,year,openedViewer=null,mobileRequest=false){
     const source=await sourcePdf(code,year);
