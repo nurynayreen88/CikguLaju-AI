@@ -21,7 +21,7 @@ Skop pertama ialah komponen Pengurusan Diri, Unit 2 Diri Bersih Badan Sihat, bag
 
 Kod dan deskripsi dirujuk kepada DSKP hlm. 26–28. Halaman 20–22 menyokong PdP kebersihan di luar bilik darjah. Halaman 16–19 dirujuk bagi alatan, cara mencuci dan tip keselamatan. Halaman bercetak 13–15 diperiksa secara visual pada salinan edisi DBP/KPM. PdP, contoh intervensi dan susunan aktiviti dalam kelompok ini ialah olahan pedagogi. CSV yang dijana menyenaraikan agihan untuk 14 PdP ini sahaja. Guru menentukan tarikh dan kaedah sokongan. Isi RPH termasuk jenis bantuan dan prestasi yang boleh diperhati tanpa menetapkan tahap penguasaan secara automatik. RPI guru diurus di luar penjana ini. Penjana mengisi tarikh, masa, kelas dan bilangan murid, tanpa ruang nama atau diagnosis individu.
 
-Jana 14 Word, 14 PDF dan indeks RPT CSV daripada akar repositori.
+Jana 14 Word, 14 PDF berlabel ungu muda dan indeks RPT CSV daripada akar repositori.
 
 ```sh
 python -m staging.ppki.render_pengurusan_kehidupan --output /tmp/cikgulaju-ppki

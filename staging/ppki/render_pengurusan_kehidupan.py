@@ -12,6 +12,7 @@ from dlp_year2_rph import _pdf, _word
 
 SOURCE = Path(__file__).with_name("pengurusan_kehidupan_tahun2.json")
 RENDERERS = {"docx": _word, "pdf": _pdf}
+PPKI_LABEL_FILL = "EEE6F7"
 
 
 def load_catalog():
@@ -51,7 +52,8 @@ def render_lesson(catalog, lesson, extension, teacher):
         ("Refleksi", f"____ / ____ murid mencapai objektif.\nSusulan: {lesson['follow_up']}"),
     ]
     output = BytesIO()
-    RENDERERS[extension](output, heading, details, activities, assessment, compact=True)
+    RENDERERS[extension](output, heading, details, activities, assessment,
+                        compact=True, label_fill=PPKI_LABEL_FILL)
     return output.getvalue()
 
 
