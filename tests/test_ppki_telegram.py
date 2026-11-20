@@ -10,7 +10,7 @@ from pypdf import PdfReader
 
 from curriculum_version_telegram import install
 from rpt_2027.english.telegram_downloads import install as install_rpt
-from staging.ppki.catalog import MANIPULATIVE_UNIT1, SUBJECT, UNIT, UNIT1, UNIT3, UNIT4, UNIT5
+from staging.ppki.catalog import MANIPULATIVE_UNIT1, MANIPULATIVE_UNIT_LESSONS, SUBJECT, UNIT, UNIT1, UNIT3, UNIT4, UNIT5
 from web.telegram_ppki_api import create_ppki_blueprint
 
 
@@ -96,10 +96,17 @@ class PpkiTelegramTest(unittest.TestCase):
         self.assertIn("Budi Pekerti Mulia", rpt.pages[4].extract_text())
         self.assertIn("Mari Belajar", rpt.pages[0].extract_text())
         self.assertIn("UNIT_1_2_3_4_5_2027.pdf", self.documents[-1][0])
+        callback(42, "rpt2027_ppki_km_pdf2")
+        filename, data, _ = self.documents[-1]
+        self.assertIn("KEMAHIRAN_MANIPULATIF", filename)
+        rpt = PdfReader(BytesIO(data))
+        self.assertEqual(len(rpt.pages), 3)
+        self.assertIn("Jari Kreatif", rpt.pages[1].extract_text())
+        self.assertIn("Lihat, Dengar dan Rasa", rpt.pages[2].extract_text())
 
 
 class PpkiApiTest(unittest.TestCase):
-    def test_all_43_word_pdf_and_protected_access(self):
+    def test_all_71_word_pdf_and_protected_access(self):
         app = Flask(__name__)
         app.register_blueprint(create_ppki_blueprint())
         client = app.test_client()
@@ -117,10 +124,12 @@ class PpkiApiTest(unittest.TestCase):
                        "students": "7", "reflection": "Ulang dengan kad gambar."}
             selection = {"year": 2, "subject": SUBJECT, "unit": UNIT, "lesson": "001"}
             self.assertEqual([unit["value"] for unit in options["additional_units"]], [UNIT3, UNIT4, UNIT5, UNIT1])
-            extra_unit, = options["kemahiran_manipulatif"]
-            self.assertEqual(extra_unit["value"], MANIPULATIVE_UNIT1)
-            self.assertEqual([row["value"] for row in extra_unit["lessons"]], ["040", "041", "042", "043"])
-            units = [{"value": UNIT, "lessons": options["lessons"]}, *options["additional_units"], extra_unit]
+            manipulative = options["kemahiran_manipulatif"]
+            self.assertEqual([unit["value"] for unit in manipulative], list(MANIPULATIVE_UNIT_LESSONS))
+            for unit in manipulative:
+                self.assertEqual([row["value"] for row in unit["lessons"]],
+                                 [f"{number:03d}" for number in MANIPULATIVE_UNIT_LESSONS[unit["value"]]])
+            units = [{"value": UNIT, "lessons": options["lessons"]}, *options["additional_units"], *manipulative]
             for unit in units:
                 selection["unit"] = unit["value"]
                 for row in unit["lessons"]:
@@ -142,7 +151,7 @@ class PpkiApiTest(unittest.TestCase):
             selection["lesson"] = "015"
             self.assertEqual(client.post(prefix + "/render", headers=headers,
                                          json={"selection": selection, "teacher": teacher, "format": "pdf"}).status_code, 404)
-            for endpoint, pages in (("/rpt.pdf", 1), ("/rpt-current.pdf", 5)):
+            for endpoint, pages in (("/rpt.pdf", 1), ("/rpt-current.pdf", 5), ("/rpt-manipulatif.pdf", 3)):
                 response = client.get(prefix + endpoint, headers=headers)
                 self.assertEqual(response.status_code, 200)
                 self.assertEqual(len(PdfReader(BytesIO(response.data)).pages), pages)

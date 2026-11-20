@@ -90,7 +90,10 @@ def install(ns):
         if not allowed(cid):
             return locked(cid)
         if is_ppki:
-            from staging.ppki.catalog import RPT_COMBINED_EDITION, RPT_COMBINED_FILENAME, UNIT_LESSONS
+            from staging.ppki.catalog import (
+                MANIPULATIVE_UNIT_LESSONS, RPT_COMBINED_EDITION, RPT_COMBINED_FILENAME,
+                RPT_MANIPULATIVE_FILENAME, UNIT_LESSONS,
+            )
             from staging.ppki.rpt import render_rpt
             count = sum(len(numbers) for numbers in UNIT_LESSONS.values())
             edition = RPT_COMBINED_EDITION
@@ -101,16 +104,23 @@ def install(ns):
                     [{"text": "⬅️ Kembali", "callback_data": "rpt2027_home"}],
                 ])
             if data == "rpt2027_ppki_year2":
-                return send(cid, f"<b>PPKI Tahun 2 · Pengurusan Diri</b>\n\nAgihan {count} PdP bagi {edition}.", [
-                    [{"text": "Pengurusan Kehidupan (PDF)", "callback_data": "rpt2027_ppki_pdf2"}],
+                manipulative_count = sum(len(numbers) for numbers in MANIPULATIVE_UNIT_LESSONS.values())
+                return send(cid, f"<b>PPKI Tahun 2 · Pengurusan Kehidupan</b>\n\n"
+                            f"Pengurusan Diri: {count} PdP. Kemahiran Manipulatif: {manipulative_count} PdP.", [
+                    [{"text": "Pengurusan Diri (PDF)", "callback_data": "rpt2027_ppki_pdf2"}],
+                    [{"text": "Kemahiran Manipulatif (PDF)", "callback_data": "rpt2027_ppki_km_pdf2"}],
                     [{"text": "⬅️ Kembali", "callback_data": "rpt2027_ppki_home"}],
                 ])
-            if data != "rpt2027_ppki_pdf2":
+            if data not in {"rpt2027_ppki_pdf2", "rpt2027_ppki_km_pdf2"}:
                 return send(cid, "Pilihan RPT PPKI tidak sah.")
+            manipulative = data == "rpt2027_ppki_km_pdf2"
+            filename = RPT_MANIPULATIVE_FILENAME if manipulative else RPT_COMBINED_FILENAME
+            if manipulative:
+                edition = "Kemahiran Manipulatif Unit 1–3"
             try:
                 with TemporaryDirectory(prefix="cikgulaju-rpt-ppki-") as folder:
-                    path = Path(folder) / RPT_COMBINED_FILENAME
-                    path.write_bytes(render_rpt(combined=True))
+                    path = Path(folder) / filename
+                    path.write_bytes(render_rpt(combined=not manipulative, manipulative=manipulative))
                     result = send_document(cid, str(path), f"RPT 2027 PPKI · Pengurusan Kehidupan Tahun 2 · {edition}")
                 verify = ns.get("_telegram_delivery_ok_v25279")
                 if callable(verify) and not verify(result):

@@ -1,0 +1,305 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 2,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Kemahiran Manipulatif",
+  "unit": "Unit 2 · Jari Kreatif",
+  "content_standards": {
+    "2.1": "Pergerakan motor halus tanpa alatan.",
+    "2.2": "Pergerakan motor halus dengan alatan.",
+    "2.3": "Koordinasi mata dan tangan."
+  },
+  "learning_standards": {
+    "2.1.1": "Menjengkal pada pelbagai jarak serta mengacau dan memutar mengikut arah.",
+    "2.1.2": "Menunjukkan pergerakan motor halus tanpa alatan melalui nyanyian, simulasi atau kaedah terapi.",
+    "2.2.1": "Membuka dan menutup zip, mengait dan membuka cangkuk serta memasang dan membuka butang.",
+    "2.2.2": "Menunjukkan pergerakan motor halus beralatan melalui kaedah terapi atau simulasi.",
+    "2.2.3": "Menconteng dengan alat tulis, mengecat dengan berus pelbagai saiz dan memutar penutup, skru atau tombol.",
+    "2.2.4": "Menunjukkan pergerakan motor halus dengan alatan dalam pelbagai kaedah terapi atau simulasi.",
+    "2.3.1": "Meniru, menyambung titik, menulis semula dan melengkapkan pelbagai corak garisan.",
+    "2.3.2": "Menunjukkan koordinasi mata dan tangan melalui pelbagai kaedah terapi."
+  },
+  "lessons": [
+    {
+      "pdp": "054",
+      "title": "Jengkal, kacau dan putar tanpa alatan",
+      "sp": "2.1.1",
+      "focus": "Subperkara (i) hingga (iii). Gerakan jari dan tangan tanpa alatan.",
+      "book": "Buku Teks hlm. 50–51",
+      "objective": "Murid menunjukkan ketiga-tiga gerakan berdasarkan model atau isyarat.",
+      "materials": "Kad gerakan, tanda jarak di atas meja dan kad anak panah.",
+      "induction": [
+        "Guru menunjukkan tangan terbuka dan tangan bergerak membulat.",
+        "Murid memerhatikan perubahan kedudukan jari."
+      ],
+      "guided": [
+        "Guru memodelkan jengkal pada dua jarak, kacau mengikut anak panah dan gerakan putar.",
+        "Murid meniru setiap gerakan tanpa memegang alatan."
+      ],
+      "practice": [
+        "Guru menunjukkan tiga kad dalam susunan berbeza.",
+        "Murid menunjukkan jengkal, kacau dan putar mengikut kad."
+      ],
+      "closure": [
+        "Guru menunjukkan anak panah bulat.",
+        "Murid memilih dan menunjukkan satu gerakan yang sepadan."
+      ],
+      "support": "Gunakan tanda yang besar dan benarkan gerakan kecil dalam julat yang selesa.",
+      "assessment": "Guru menanda tiga gerakan dan kemampuan mengikut arah.",
+      "follow_up": "Ulang perbezaan gerakan kacau dan putar secara perlahan."
+    },
+    {
+      "pdp": "055",
+      "title": "Gerak jari dalam simulasi dapur",
+      "sp": "2.1.2",
+      "focus": "Aplikasi gerakan motor halus tanpa alatan dalam simulasi.",
+      "book": "Buku Teks hlm. 51",
+      "objective": "Murid menunjukkan sekurang-kurangnya dua gerakan jari mengikut urutan gambar simulasi.",
+      "materials": "Kad gambar mangkuk, penutup dan alas meja.",
+      "induction": [
+        "Guru memperkenalkan urutan kerja dapur melalui gambar.",
+        "Murid memilih gambar yang menunjukkan gerakan mengacau."
+      ],
+      "guided": [
+        "Guru melakonkan gerakan mengacau, memutar dan menjengkal tanpa objek.",
+        "Murid meniru gerakan mengikut kad secara berperingkat."
+      ],
+      "practice": [
+        "Guru menyusun kad simulasi dalam dua urutan mudah.",
+        "Murid melakonkan sekurang-kurangnya dua gerakan mengikut urutan kad pilihan."
+      ],
+      "closure": [
+        "Guru memilih satu gambar daripada simulasi.",
+        "Murid menunjukkan pergerakan yang sepadan dengan gambar tersebut."
+      ],
+      "support": "Gunakan dua gambar dengan kontras jelas dan sediakan masa untuk jari berehat.",
+      "assessment": "Guru merekod gerakan yang sepadan dan turutan yang dapat diikuti.",
+      "follow_up": "Ulang urutan dua kad sebelum menambah kad ketiga."
+    },
+    {
+      "pdp": "056",
+      "title": "Buka dan tutup zip serta cangkuk",
+      "sp": "2.2.1",
+      "focus": "Subperkara (i) dan (ii). Gerakan jari menggunakan zip dan cangkuk.",
+      "book": "Buku Teks hlm. 52–53",
+      "objective": "Murid membuka dan menutup zip serta mengait dan membuka cangkuk pada papan latihan.",
+      "materials": "Papan zip, papan cangkuk tumpul dan alas tidak licin.",
+      "induction": [
+        "Guru menunjukkan zip dan cangkuk dalam keadaan terbuka.",
+        "Murid mengenal pasti bahagian yang perlu dipegang."
+      ],
+      "guided": [
+        "Guru menunjukkan cara menstabilkan papan dan menggerakkan pengikat.",
+        "Murid mencuba gerakan membuka dan menutup dengan bantuan."
+      ],
+      "practice": [
+        "Guru menyediakan giliran latihan berasingan untuk dua pengikat.",
+        "Murid membuka dan menutup zip, kemudian mengait dan membuka cangkuk."
+      ],
+      "closure": [
+        "Guru menunjukkan sebuah pengikat tertutup.",
+        "Murid menerangkan atau menunjukkan cara membukanya."
+      ],
+      "support": "Gunakan kepala zip besar dan cangkuk tumpul. Pegangkan papan apabila diperlukan.",
+      "assessment": "Guru merekod empat tindakan yang dapat dilakukan dan jenis bantuan.",
+      "follow_up": "Ulang jenis pengikat yang memerlukan bantuan paling banyak."
+    },
+    {
+      "pdp": "057",
+      "title": "Pasang dan buka butang",
+      "sp": "2.2.1",
+      "focus": "Subperkara (iii). Gerakan jari menggunakan butang.",
+      "book": "Buku Teks hlm. 53",
+      "objective": "Murid memasang dan membuka sekurang-kurangnya satu butang besar dalam dua giliran.",
+      "materials": "Papan kain, butang besar, lubang butang berbingkai warna dan alas meja.",
+      "induction": [
+        "Guru menunjukkan butang dan pasangannya pada kain.",
+        "Murid memadankan butang dengan lubang yang betul."
+      ],
+      "guided": [
+        "Guru menunjukkan cara memegang kain dan menolak tepi butang masuk.",
+        "Murid mencuba tindakan memasang dan membuka secara berpandu."
+      ],
+      "practice": [
+        "Guru menjadualkan dua giliran memasang dan membuka.",
+        "Murid menarik kain dengan satu tangan sambil menggerakkan butang dengan tangan yang satu lagi."
+      ],
+      "closure": [
+        "Guru menunjukkan butang yang separuh masuk.",
+        "Murid menunjukkan langkah yang melengkapkan pemasangan."
+      ],
+      "support": "Gunakan kain kukuh, lubang lebih luas dan butang yang dipasang kemas.",
+      "assessment": "Guru merekod tindakan memasang dan membuka serta bantuan bagi setiap giliran.",
+      "follow_up": "Ulang dengan lubang lebih luas sebelum menggunakan saiz biasa."
+    },
+    {
+      "pdp": "058",
+      "title": "Simulasi bersiap menggunakan pengikat",
+      "sp": "2.2.2",
+      "focus": "Penggunaan zip, cangkuk dan butang dalam simulasi berpandu.",
+      "book": "Buku Teks hlm. 52–53",
+      "objective": "Murid menggunakan sekurang-kurangnya dua jenis pengikat yang sepadan dengan kad situasi.",
+      "materials": "Papan pengikat, beg berzip, kain berbutang dan kad situasi.",
+      "induction": [
+        "Guru menunjukkan gambar beg dan pakaian.",
+        "Murid memilih pengikat yang biasanya digunakan pada setiap gambar."
+      ],
+      "guided": [
+        "Guru menunjukkan urutan memilih, memegang dan menggerakkan pengikat.",
+        "Murid mencuba satu padanan secara berpandu."
+      ],
+      "practice": [
+        "Guru memberikan dua kad situasi yang berbeza.",
+        "Murid memilih pengikat yang betul dan menunjukkan cara menggunakannya."
+      ],
+      "closure": [
+        "Guru menunjukkan gambar beg terbuka.",
+        "Murid menyatakan atau menunjukkan cara menutup beg."
+      ],
+      "support": "Kurangkan bilangan pilihan atau gunakan pengikat bersaiz lebih besar mengikut keperluan.",
+      "assessment": "Guru merekod pengikat yang dipilih dan tindakan yang dilakukan bagi dua situasi.",
+      "follow_up": "Ulang situasi yang belum dikuasai menggunakan satu kad sahaja."
+    },
+    {
+      "pdp": "059",
+      "title": "Conteng dan cat menggunakan alatan",
+      "sp": "2.2.3",
+      "focus": "Subperkara (i) dan (ii). Contengan dan sapuan berus pada permukaan.",
+      "book": "Buku Teks hlm. 54–55",
+      "objective": "Murid menghasilkan dua jenis contengan dan membuat sapuan dengan dua saiz berus.",
+      "materials": "Pensel warna tebal, kertas, berus besar dan kecil serta cat boleh dibasuh.",
+      "induction": [
+        "Guru menunjukkan kesan pensel dan berus pada kertas.",
+        "Murid memadankan kesan dengan alat yang digunakan."
+      ],
+      "guided": [
+        "Guru menunjukkan cara memegang pensel dan menukar saiz berus.",
+        "Murid mencuba contengan lurus dan melengkung serta satu sapuan cat."
+      ],
+      "practice": [
+        "Guru menyediakan petak besar dan kecil.",
+        "Murid membuat dua jenis contengan dan membuat sapuan menggunakan berus yang sepadan dengan petak."
+      ],
+      "closure": [
+        "Guru menunjukkan satu hasil sapuan.",
+        "Murid mengenal pasti alat yang digunakan."
+      ],
+      "support": "Gunakan pemegang tebal dan lekatkan kertas di meja. Sediakan berus kering jika sesuai.",
+      "assessment": "Guru merekod jenis contengan, penggunaan dua saiz berus dan tahap bantuan.",
+      "follow_up": "Ulang sapuan pendek pada petak yang lebih besar."
+    },
+    {
+      "pdp": "060",
+      "title": "Putar penutup dan tombol",
+      "sp": "2.2.3",
+      "focus": "Subperkara (iii). Memutar penutup botol, skru latihan atau tombol.",
+      "book": "Buku Teks hlm. 54–55",
+      "objective": "Murid memutar dua alatan latihan mengikut arah buka dan tutup yang ditanda.",
+      "materials": "Bekas kosong berpenutup besar, tombol latihan dan kad anak panah.",
+      "induction": [
+        "Guru menunjukkan penutup dan tombol pada dua papan.",
+        "Murid mengenal pasti bahagian yang boleh diputar."
+      ],
+      "guided": [
+        "Guru memodelkan cara menahan bekas dan memutar penutup secara perlahan.",
+        "Murid meniru pergerakan mengikut anak panah."
+      ],
+      "practice": [
+        "Guru menyediakan dua jenis alatan dengan tanda arah.",
+        "Murid memutar penutup dan tombol mengikut arah yang ditunjukkan."
+      ],
+      "closure": [
+        "Guru menunjukkan dua anak panah.",
+        "Murid memilih arah untuk membuka penutup contoh."
+      ],
+      "support": "Gunakan penutup yang longgar dan objek stabil. Sediakan tanda arah yang besar.",
+      "assessment": "Guru menanda arah putaran yang tepat pada kedua-dua alatan dan jenis bantuan.",
+      "follow_up": "Ulang arah buka dan tutup pada satu alat dahulu."
+    },
+    {
+      "pdp": "061",
+      "title": "Gunakan alatan dalam simulasi kerja meja",
+      "sp": "2.2.4",
+      "focus": "Aplikasi contengan, sapuan cat dan putaran dalam simulasi.",
+      "book": "Buku Teks hlm. 54–55",
+      "objective": "Murid menggunakan alat yang sesuai untuk ketiga-tiga tugas dalam simulasi mudah.",
+      "materials": "Kad tugasan, bekas bertutup, pensel warna, berus, cat dan alas meja.",
+      "induction": [
+        "Guru menunjukkan tiga kad tugasan kerja meja.",
+        "Murid memadankan kad dengan alatan yang diperlukan."
+      ],
+      "guided": [
+        "Guru menunjukkan cara menyediakan alatan mengikut turutan kerja.",
+        "Murid berlatih meniru satu tindakan pada setiap alat."
+      ],
+      "practice": [
+        "Guru menyusun tugasan membuka bekas, membuat contengan dan menyapu cat.",
+        "Murid memilih alat yang sesuai dan melaksanakan setiap tugasan mengikut urutan."
+      ],
+      "closure": [
+        "Guru meminta murid menyusun semula peralatan.",
+        "Murid memadankan setiap alat dengan tugasan asal."
+      ],
+      "support": "Gunakan kad visual dan bekas yang telah dilonggarkan. Beri satu tindakan pada satu masa.",
+      "assessment": "Guru merekod pilihan alatan dan pelaksanaan tiga tugas tanpa menilai hasil seni.",
+      "follow_up": "Ulang tugas yang memerlukan sokongan menggunakan alat lebih mudah dipegang."
+    },
+    {
+      "pdp": "062",
+      "title": "Tiru, sambung dan lengkapkan corak garisan",
+      "sp": "2.3.1",
+      "focus": "Subperkara (i) hingga (iv). Tiru, sambung titik, tulis semula dan lengkapkan garisan.",
+      "book": "Buku Teks hlm. 56–58",
+      "objective": "Murid menghasilkan sekurang-kurangnya satu garisan bagi tiga daripada empat tugasan.",
+      "materials": "Kad corak lurus dan beralun, lembaran bertitik dan pensel tebal.",
+      "induction": [
+        "Guru menunjukkan corak lengkap dan yang belum lengkap.",
+        "Murid menelusuri arah garisan dengan jari."
+      ],
+      "guided": [
+        "Guru menunjukkan titik mula, laluan garisan dan cara meniru corak.",
+        "Murid menyambung satu garisan secara berpandu."
+      ],
+      "practice": [
+        "Guru memberi empat tugasan ringkas.",
+        "Murid meniru corak, menyambung titik, menulis semula corak dan melengkapkan garisan yang terputus."
+      ],
+      "closure": [
+        "Guru menunjukkan titik mula pada corak baharu.",
+        "Murid menunjukkan laluan seterusnya menggunakan jari."
+      ],
+      "support": "Besarkan jarak antara titik, gelapkan garisan dan sediakan alas yang tidak licin.",
+      "assessment": "Guru menanda tugasan yang lengkap, arah pergerakan dan jenis bantuan.",
+      "follow_up": "Ulang corak yang belum lengkap dengan garisan lebih pendek."
+    },
+    {
+      "pdp": "063",
+      "title": "Jejaki laluan menggunakan koordinasi mata dan tangan",
+      "sp": "2.3.2",
+      "focus": "Aplikasi koordinasi mata dan tangan melalui latihan berpandu.",
+      "book": "Buku Teks hlm. 56–58",
+      "objective": "Murid menjejaki dua laluan bercorak dari tanda mula hingga tanda tamat.",
+      "materials": "Jalur laluan tebal, kad mula dan tamat serta pen tebal boleh padam.",
+      "induction": [
+        "Guru meletakkan kad mula dan tamat pada satu laluan.",
+        "Murid menunjukkan kedua-dua tanda."
+      ],
+      "guided": [
+        "Guru menunjukkan cara mata mengikuti arah dan tangan menjejaki laluan.",
+        "Murid mencuba satu laluan menggunakan jari sebelum menggunakan pen."
+      ],
+      "practice": [
+        "Guru memberi laluan lurus dan beralun yang berlainan.",
+        "Murid menjejaki kedua-dua laluan sehingga tanda tamat."
+      ],
+      "closure": [
+        "Guru menutup tanda tamat.",
+        "Murid menunjukkan tempat laluan berakhir."
+      ],
+      "support": "Lebarkan laluan dan beri panduan arah visual pada selekoh.",
+      "assessment": "Guru merekod laluan yang selesai dan bantuan pada bahagian yang sukar.",
+      "follow_up": "Ulang satu selekoh pendek sebelum menggunakan laluan penuh."
+    }
+  ]
+}
