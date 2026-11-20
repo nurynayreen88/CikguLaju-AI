@@ -1,0 +1,482 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 4,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 2 · Kebersihan Diri",
+  "content_standards": {
+    "2.1": "Kebersihan anggota seksual.",
+    "2.2": "Kesedaran dan tanggungjawab menjaga tubuh badan.",
+    "2.3": "Batasan pergaulan.",
+    "2.4": "Keselamatan dalam penggunaan alatan dan bahan di bilik darjah."
+  },
+  "learning_standards": {
+    "2.1.1": "Menyatakan kepentingan menjaga kebersihan anggota seksual.",
+    "2.1.2": "Menunjuk cara menjaga kebersihan anggota seksual.",
+    "2.1.3": "Mempraktikkan cara menjaga kebersihan anggota seksual dalam kehidupan harian.",
+    "2.1.4": "Menaakul kepentingan menjaga kebersihan anggota seksual.",
+    "2.2.1": "Mengenal makanan seimbang.",
+    "2.2.2": "Memberi contoh makanan seimbang.",
+    "2.2.3": "Mempraktikkan cara pengambilan makanan yang seimbang untuk menjaga kesihatan diri.",
+    "2.2.4": "Mengenal pasti dan melakukan aktiviti fizikal yang bersesuaian untuk menjaga kesihatan diri.",
+    "2.2.5": "Menaakul kepentingan mengambil makanan seimbang dan melakukan aktiviti fizikal dalam kehidupan seharian.",
+    "2.3.1": "Menyatakan batasan pergaulan, sentuhan selamat, sentuhan tidak selamat dan sentuhan tidak selesa.",
+    "2.3.2": "Membezakan antara sentuhan selamat dengan sentuhan tidak selamat dan sentuhan tidak selesa.",
+    "2.3.3": "Memberi tindak balas melalui fizikal atau suara jika berlaku sentuhan tidak selamat.",
+    "2.3.4": "Menaakul kepentingan menjaga batasan pergaulan dan memberi tindak balas melalui fizikal atau suara apabila berlaku sentuhan tidak selamat.",
+    "2.4.1": "Mengenal pasti penggunaan alatan dan bahan di bilik darjah.",
+    "2.4.2": "Menerangkan peraturan penggunaan alatan dan bahan di bilik darjah.",
+    "2.4.3": "Mempraktikkan langkah keselamatan semasa menggunakan alatan dan bahan di bilik darjah."
+  },
+  "lessons": [
+    {
+      "pdp": "010",
+      "title": "Kepentingan menjaga kebersihan diri",
+      "sp": "2.1.1",
+      "focus": "Kepentingan menjaga kebersihan diri.",
+      "book": "Buku Teks hlm. 17–19",
+      "objective": "Murid dapat menyatakan dua manfaat menjaga kebersihan anggota peribadi.",
+      "materials": "Gambar klinik, kad manfaat dan gambar alatan kebersihan.",
+      "induction": [
+        "Tunjukkan gambar murid di klinik dan tanya sebab murid berjumpa doktor.",
+        "Perhatikan gambar dan pilih kad yang menggambarkan keadaan murid."
+      ],
+      "guided": [
+        "Bincangkan hubung kait rutin kebersihan dengan keselesaan dan kesihatan diri.",
+        "Padankan gambar rutin kebersihan dengan kad badan bersih atau badan selesa."
+      ],
+      "practice": [
+        "Berikan tiga kad kesan dan minta murid memilih dua manfaat penjagaan kebersihan anggota peribadi.",
+        "Nyatakan atau tunjuk dua manfaat pilihan."
+      ],
+      "closure": [
+        "Minta murid memilih satu amalan yang akan dilakukan selepas mandi.",
+        "Pilih amalan dan padankan dengan satu manfaat."
+      ],
+      "support": "Gunakan gambar besar dan baca satu pilihan pada satu masa.",
+      "assessment": "Guru merekod sama ada murid dapat menyatakan dua manfaat menjaga kebersihan anggota peribadi.",
+      "follow_up": "Ulang padanan manfaat yang belum dikuasai dengan dua gambar."
+    },
+    {
+      "pdp": "011",
+      "title": "Langkah menjaga kebersihan anggota peribadi",
+      "sp": "2.1.2",
+      "focus": "Langkah menjaga kebersihan anggota peribadi.",
+      "book": "Buku Teks hlm. 19",
+      "objective": "Murid dapat menunjukkan tiga langkah penjagaan dalam urutan yang betul pada model.",
+      "materials": "Kad urutan, model berpakaian, tuala bersih dan beg pakaian.",
+      "induction": [
+        "Paparkan tuala bersih dan beg pakaian. Tanya bila kedua-duanya digunakan.",
+        "Padankan tuala dengan gambar selepas mandi."
+      ],
+      "guided": [
+        "Demonstrasikan urutan membersihkan dan mengeringkan anggota peribadi pada model pengajaran dalam suasana menjaga privasi.",
+        "Perhatikan demonstrasi dan susun gambar bersih, kering dan tukar pakaian dalam."
+      ],
+      "practice": [
+        "Sediakan semula alatan dan minta murid menunjukkan urutan pada model sahaja.",
+        "Demonstrasikan urutan menggunakan kad dan model tanpa menyentuh tubuh sendiri atau rakan."
+      ],
+      "closure": [
+        "Semak urutan bersama murid dan tunjuk tempat menyimpan tuala.",
+        "Tunjukkan kad langkah terakhir."
+      ],
+      "support": "Gunakan kad bernombor dan isyarat visual bagi setiap langkah.",
+      "assessment": "Guru merekod sama ada murid dapat menunjukkan tiga langkah penjagaan dalam urutan yang betul pada model.",
+      "follow_up": "Sediakan jalur urutan gambar untuk latihan seterusnya."
+    },
+    {
+      "pdp": "012",
+      "title": "Rutin kebersihan selepas mandi",
+      "sp": "2.1.3",
+      "focus": "Rutin kebersihan selepas mandi.",
+      "book": "Buku Teks hlm. 19",
+      "objective": "Murid dapat melaksanakan tiga langkah rutin selepas mandi dalam simulasi.",
+      "materials": "Kad rutin, model berpakaian, tuala dan gambar pakaian dalam bersih.",
+      "induction": [
+        "Tunjukkan gambar dua beg pakaian dan tanya cara mengenal pasti barang sendiri.",
+        "Pilih beg yang mempunyai label sendiri."
+      ],
+      "guided": [
+        "Bimbing murid menyusun rutin selepas mandi dan bezakan barang sendiri daripada barang rakan.",
+        "Susun kad keringkan anggota, pilih pakaian dalam bersih dan simpan pakaian kotor."
+      ],
+      "practice": [
+        "Latih rutin di stesen simulasi menggunakan model dan gambar. Gunakan kad semak untuk peralihan antara langkah.",
+        "Tandakan kad semak selepas menyelesaikan setiap tindakan simulasi."
+      ],
+      "closure": [
+        "Tanya rutin yang boleh digunakan di rumah selepas mandi.",
+        "Sebut atau tunjuk kad rutin pilihan."
+      ],
+      "support": "Labelkan alatan dan sediakan kad semak bergambar.",
+      "assessment": "Guru merekod sama ada murid dapat melaksanakan tiga langkah rutin selepas mandi dalam simulasi.",
+      "follow_up": "Galakkan penggunaan kad semak untuk rutin sendiri di rumah."
+    },
+    {
+      "pdp": "013",
+      "title": "Sebab mengamalkan kebersihan anggota peribadi",
+      "sp": "2.1.4",
+      "focus": "Sebab mengamalkan kebersihan anggota peribadi.",
+      "book": "Buku Teks hlm. 18–19",
+      "objective": "Murid dapat memberikan sebab bagi dua tindakan menjaga kebersihan anggota peribadi.",
+      "materials": "Kad situasi, kad sebab dan gambar barangan kebersihan.",
+      "induction": [
+        "Tunjukkan gambar tuala sendiri dan tuala yang dikongsi.",
+        "Pilih gambar yang menunjukkan penggunaan barang sendiri."
+      ],
+      "guided": [
+        "Bandingkan dua situasi. Terangkan kaitan mengeringkan anggota dan menukar pakaian yang kotor dengan kebersihan dan keselesaan.",
+        "Sambungkan setiap kad situasi kepada sebab yang sepadan."
+      ],
+      "practice": [
+        "Berikan situasi baharu melibatkan tuala sendiri dan pakaian bersih.",
+        "Pilih tindakan dan beri satu sebab bagi setiap situasi."
+      ],
+      "closure": [
+        "Minta murid lengkapkan ayat tentang satu pilihan kebersihan.",
+        "Terangkan pilihan menggunakan frasa “Saya pilih … kerana …”."
+      ],
+      "support": "Gunakan pilihan bergambar dan rangka ayat.",
+      "assessment": "Guru merekod sama ada murid dapat memberikan sebab bagi dua tindakan menjaga kebersihan anggota peribadi.",
+      "follow_up": "Ulang satu situasi dengan gambar alatan sebenar."
+    },
+    {
+      "pdp": "014",
+      "title": "Mengenal kumpulan makanan",
+      "sp": "2.2.1",
+      "focus": "Mengenal kumpulan makanan.",
+      "book": "Buku Teks hlm. 20–21",
+      "objective": "Murid dapat memadankan sekurang-kurangnya tiga daripada empat kad makanan kepada kumpulan yang sesuai.",
+      "materials": "Gambar piramid makanan, carta pinggan dan kad makanan.",
+      "induction": [
+        "Paparkan gambar nasi, ikan dan sayur daripada buku.",
+        "Namakan atau tunjuk gambar makanan yang diketahui."
+      ],
+      "guided": [
+        "Tunjukkan kedudukan kumpulan makanan pada piramid dan padankan dengan makanan pada pinggan.",
+        "Letakkan satu kad makanan dalam kumpulan contoh."
+      ],
+      "practice": [
+        "Edarkan kad nasi, ikan, sayur dan buah serta carta kosong.",
+        "Padankan kad kepada kumpulan masing-masing."
+      ],
+      "closure": [
+        "Semak satu padanan dan minta murid menukar contoh dalam kumpulan yang sama.",
+        "Gantikan satu kad dengan contoh daripada kumpulan berkenaan."
+      ],
+      "support": "Sediakan carta berwarna dan pilihan yang terhad.",
+      "assessment": "Guru merekod sama ada murid dapat memadankan sekurang-kurangnya tiga daripada empat kad makanan kepada kumpulan yang sesuai.",
+      "follow_up": "Sediakan dua kad baharu bagi kumpulan yang belum dikenal."
+    },
+    {
+      "pdp": "015",
+      "title": "Contoh hidangan seimbang",
+      "sp": "2.2.2",
+      "focus": "Contoh hidangan seimbang.",
+      "book": "Buku Teks hlm. 20–22",
+      "objective": "Murid dapat memberikan dua contoh hidangan yang mengandungi makanan berkanji, protein serta sayur dan buah.",
+      "materials": "Kad gambar ikan, ayam, nasi, ubi, buah dan sayur, carta pinggan.",
+      "induction": [
+        "Paparkan dua hidangan dan tanya makanan yang berbeza.",
+        "Tunjuk sekurang-kurangnya satu perbezaan pada hidangan."
+      ],
+      "guided": [
+        "Terangkan fungsi petak makanan berkanji, protein serta sayur dan buah pada carta.",
+        "Cadangkan pengganti untuk satu bahan sambil mengekalkan kumpulan makanan."
+      ],
+      "practice": [
+        "Minta murid membina dua contoh hidangan menggunakan kad berlainan.",
+        "Bentangkan dua hidangan dengan kumpulan makanan yang sesuai."
+      ],
+      "closure": [
+        "Minta murid menamakan satu pilihan protein atau makanan berkanji.",
+        "Namakan makanan pilihan atau tunjuk kadnya."
+      ],
+      "support": "Sediakan kad pada dua dulang dan carta bergaris.",
+      "assessment": "Guru merekod sama ada murid dapat memberikan dua contoh hidangan yang mengandungi makanan berkanji, protein serta sayur dan buah.",
+      "follow_up": "Bina satu hidangan yang belum lengkap menggunakan kad tambahan."
+    },
+    {
+      "pdp": "016",
+      "title": "Memilih makanan seimbang untuk makan tengah hari",
+      "sp": "2.2.3",
+      "focus": "Memilih makanan seimbang untuk makan tengah hari.",
+      "book": "Buku Teks hlm. 20–22",
+      "objective": "Murid dapat menyusun satu pinggan dengan bahagian yang betul dan memilih air kosong.",
+      "materials": "Carta Pinggan Sihat, kad makanan dan air kosong, dulang simulasi.",
+      "induction": [
+        "Tunjukkan pinggan pada halaman 21 dan minta murid mengenal satu bahan.",
+        "Tunjuk makanan pilihan pada gambar pinggan."
+      ],
+      "guided": [
+        "Tunjuk cara mengisi suku makanan berkanji, suku protein serta separuh sayur dan buah. Letakkan kad air kosong di sisi.",
+        "Ikut demonstrasi dengan menempatkan kad mengikut petak."
+      ],
+      "practice": [
+        "Jalankan simulasi memilih hidangan di kantin menggunakan susun atur petak yang sama.",
+        "Pilih kad makanan dan air kosong untuk membina satu hidangan lengkap."
+      ],
+      "closure": [
+        "Minta murid menyemak petak sayur dan buah pada pinggan sendiri.",
+        "Tunjukkan satu pilihan yang mengisi petak tersebut."
+      ],
+      "support": "Gunakan pinggan berpetak dan kad makanan yang mudah digenggam.",
+      "assessment": "Guru merekod sama ada murid dapat menyusun satu pinggan dengan bahagian yang betul dan memilih air kosong.",
+      "follow_up": "Ulang pilihan hidangan dengan menu berlainan."
+    },
+    {
+      "pdp": "017",
+      "title": "Aktiviti fizikal yang sesuai",
+      "sp": "2.2.4",
+      "focus": "Aktiviti fizikal yang sesuai.",
+      "book": "Buku Teks hlm. 23",
+      "objective": "Murid dapat mengenal pasti dan melakukan satu aktiviti fizikal yang sesuai mengikut arahan mula dan berhenti.",
+      "materials": "Kad aktiviti, penanda lantai dan kerusi stabil.",
+      "induction": [
+        "Paparkan dua gambar gaya hidup pada halaman 23 dan minta murid mencari aktiviti fizikal.",
+        "Tunjuk gambar aktiviti yang melibatkan pergerakan."
+      ],
+      "guided": [
+        "Tunjuk dua pilihan pergerakan mengikut keupayaan, seperti berjalan pada laluan rata atau gerak tangan sambil duduk.",
+        "Pilih satu pergerakan dan ikut demonstrasi pada kadar yang selesa."
+      ],
+      "practice": [
+        "Bimbing murid mengulang pergerakan dalam ruang sendiri dan gunakan isyarat mula serta berhenti.",
+        "Lakukan pergerakan dan berhenti apabila isyarat diberikan."
+      ],
+      "closure": [
+        "Tanya pergerakan yang sesuai di ruang kelas.",
+        "Tunjuk atau namakan pergerakan pilihan."
+      ],
+      "support": "Sediakan alternatif duduk dan ruang pergerakan yang jelas.",
+      "assessment": "Guru merekod sama ada murid dapat mengenal pasti dan melakukan satu aktiviti fizikal yang sesuai mengikut arahan mula dan berhenti.",
+      "follow_up": "Ulang dengan satu kad pergerakan lain yang sesuai bagi murid."
+    },
+    {
+      "pdp": "018",
+      "title": "Sebab makan seimbang dan bergerak aktif",
+      "sp": "2.2.5",
+      "focus": "Sebab makan seimbang dan bergerak aktif.",
+      "book": "Buku Teks hlm. 23",
+      "objective": "Murid dapat memberikan satu sebab mengambil makanan seimbang dan satu sebab bergerak aktif.",
+      "materials": "Gambar gaya hidup, kad tindakan, kad sebab dan carta dua lajur.",
+      "induction": [
+        "Tunjukkan pasangan gambar pada halaman 23 dan minta murid mencari satu amalan sihat.",
+        "Pilih kad bagi perbuatan yang dilihat dalam gambar."
+      ],
+      "guided": [
+        "Bincangkan pilihan makanan dan aktiviti fizikal secara berasingan. Minta murid padankan satu sebab dengan setiap tabiat.",
+        "Padankan makanan seimbang dengan mendapat zat dan pergerakan dengan badan lebih cergas."
+      ],
+      "practice": [
+        "Berikan situasi makan tengah hari dan waktu lapang untuk murid membuat pilihan.",
+        "Pilih satu tindakan bagi setiap situasi dan terangkan sebabnya."
+      ],
+      "closure": [
+        "Minta murid memilih satu tabiat untuk diamalkan pada hari ini.",
+        "Nyatakan tabiat dan satu sebab ringkas."
+      ],
+      "support": "Berikan rangka ayat dan dua kad sebab bagi setiap situasi.",
+      "assessment": "Guru merekod sama ada murid dapat memberikan satu sebab mengambil makanan seimbang dan satu sebab bergerak aktif.",
+      "follow_up": "Tukar situasi kepada hari hujan dan bincangkan pilihan aktiviti di dalam."
+    },
+    {
+      "pdp": "019",
+      "title": "Batasan pergaulan dan ruang peribadi",
+      "sp": "2.3.1",
+      "focus": "Batasan pergaulan dan ruang peribadi.",
+      "book": "Buku Teks hlm. 24–26",
+      "objective": "Murid dapat menyatakan satu batas pergaulan dan menamakan tiga kategori sentuhan.",
+      "materials": "Gambar buku teks, kad “minta izin” dan carta tiga kategori.",
+      "induction": [
+        "Tunjukkan dua watak bergambar yang ingin bersalaman.",
+        "Pilih kad yang menunjukkan meminta izin dahulu."
+      ],
+      "guided": [
+        "Bincangkan batas ruang peribadi dan tiga kategori sentuhan menggunakan watak rekaan. Terangkan bahawa rasa tidak selesa boleh dilaporkan.",
+        "Namakan atau tunjuk kategori selepas setiap situasi guru."
+      ],
+      "practice": [
+        "Bacakan lagi situasi rekaan dan minta murid melengkapkan contoh menjaga batas pergaulan.",
+        "Berikan satu contoh batasan dan tunjuk tiga label yang dipelajari."
+      ],
+      "closure": [
+        "Minta murid tunjuk cara menyatakan “Saya tidak selesa” dengan kad.",
+        "Pilih kad atau gunakan perkataan sendiri."
+      ],
+      "support": "Gunakan kad respons atau kaedah komunikasi sedia ada. Elakkan sentuhan sebenar.",
+      "assessment": "Guru merekod sama ada murid dapat menyatakan satu batas pergaulan dan menamakan tiga kategori sentuhan.",
+      "follow_up": "Ulang satu contoh menggunakan watak rekaan dan pilihan bergambar."
+    },
+    {
+      "pdp": "020",
+      "title": "Membezakan jenis sentuhan",
+      "sp": "2.3.2",
+      "focus": "Membezakan jenis sentuhan.",
+      "book": "Buku Teks hlm. 24–26",
+      "objective": "Murid dapat mengelaskan tiga situasi kepada sentuhan selamat, tidak selamat dan tidak selesa berdasarkan gambar.",
+      "materials": "Tiga kad kategori dan kad situasi watak rekaan.",
+      "induction": [
+        "Paparkan gambar dua watak bercakap dengan ruang yang sesuai.",
+        "Tunjuk watak yang mempunyai ruang peribadi."
+      ],
+      "guided": [
+        "Huraikan petunjuk pada tiga situasi rekaan, seperti meminta izin, menarik secara paksa, atau menyentuh walaupun watak berasa tidak selesa.",
+        "Bandingkan situasi dan padankan satu contoh pada setiap kad kategori."
+      ],
+      "practice": [
+        "Edarkan tiga kad situasi baharu. Ingatkan murid bahawa perasaan watak perlu diambil kira.",
+        "Kelaskan ketiga-tiga situasi dan terangkan satu petunjuk."
+      ],
+      "closure": [
+        "Minta murid pilih kad tindakan jika watak berasa tidak selesa.",
+        "Pilih kad menjauh atau meminta bantuan."
+      ],
+      "support": "Baca satu kad pada satu masa dan gunakan isyarat gambar. Elakkan sentuhan sebenar.",
+      "assessment": "Guru merekod sama ada murid dapat mengelaskan tiga situasi kepada sentuhan selamat, tidak selamat dan tidak selesa berdasarkan gambar.",
+      "follow_up": "Ulang situasi yang mengelirukan selepas guru menerangkan perasaan watak."
+    },
+    {
+      "pdp": "021",
+      "title": "Menjauh dan meminta pertolongan",
+      "sp": "2.3.3",
+      "focus": "Menjauh dan meminta pertolongan.",
+      "book": "Buku Teks hlm. 25, 27",
+      "objective": "Murid dapat menunjukkan dua tindakan sesuai untuk menjauh dan mendapatkan bantuan.",
+      "materials": "Kad “Berhenti”, tanda ruang selamat dan kad orang dewasa dipercayai.",
+      "induction": [
+        "Paparkan pilihan tindakan pada halaman 27 dan minta murid menunjuk orang yang boleh membantu.",
+        "Pilih orang dewasa yang dipercayai."
+      ],
+      "guided": [
+        "Modelkan cara menggunakan suara atau kad, bergerak ke kawasan selamat dan memberitahu orang dewasa. Gunakan patung atau gambar tanpa sentuhan.",
+        "Susun tiga kad tindakan mengikut demonstrasi."
+      ],
+      "practice": [
+        "Tetapkan titik selamat di kelas dan bimbing latihan respons berdasarkan kad situasi rekaan.",
+        "Simulasikan respons yang sesuai dan sampaikan permintaan bantuan melalui suara atau kad."
+      ],
+      "closure": [
+        "Tanya siapa lagi yang boleh membantu jika orang pertama tiada.",
+        "Pilih kad seorang lagi dewasa yang dipercayai."
+      ],
+      "support": "Sediakan kad komunikasi dan laluan yang boleh diakses. Elakkan sentuhan sebenar.",
+      "assessment": "Guru merekod sama ada murid dapat menunjukkan dua tindakan sesuai untuk menjauh dan mendapatkan bantuan.",
+      "follow_up": "Ulang simulasi menggunakan pilihan orang dewasa lain di sekolah."
+    },
+    {
+      "pdp": "022",
+      "title": "Mengapa perlu mendapatkan pertolongan",
+      "sp": "2.3.4",
+      "focus": "Mengapa perlu mendapatkan pertolongan.",
+      "book": "Buku Teks hlm. 27",
+      "objective": "Murid dapat memberikan satu sebab menjaga batas dan satu sebab meminta pertolongan.",
+      "materials": "Kad sebab, kad situasi rekaan, carta tindakan dan kesan.",
+      "induction": [
+        "Paparkan gambar watak yang meminta bantuan pengawal.",
+        "Tunjuk tindakan watak selepas meninggalkan tempat asal."
+      ],
+      "guided": [
+        "Bincangkan bagaimana menjaga ruang peribadi, berpindah ke tempat selamat dan melapor membantu watak memperoleh perlindungan.",
+        "Padankan dua tindakan dengan hasil yang sesuai."
+      ],
+      "practice": [
+        "Berikan dua situasi rekaan. Satu melibatkan batas pergaulan dan satu lagi memerlukan bantuan.",
+        "Nyatakan tindakan dan sebab bagi setiap situasi melalui gambar, isyarat atau lisan."
+      ],
+      "closure": [
+        "Tegaskan bahawa orang dewasa bertanggungjawab membantu apabila murid melapor.",
+        "Pilih kad yang menunjukkan tempat atau orang yang boleh membantu."
+      ],
+      "support": "Gunakan ayat berpandu dan terima respons kad. Elakkan perkongsian pengalaman peribadi di hadapan kelas.",
+      "assessment": "Guru merekod sama ada murid dapat memberikan satu sebab menjaga batas dan satu sebab meminta pertolongan.",
+      "follow_up": "Ulang satu situasi dengan dua pilihan tindakan dan sebab."
+    },
+    {
+      "pdp": "023",
+      "title": "Kegunaan alatan dan bahan bilik darjah",
+      "sp": "2.4.1",
+      "focus": "Kegunaan alatan dan bahan bilik darjah.",
+      "book": "Buku Teks hlm. 28–31",
+      "objective": "Murid dapat memadankan tiga alatan kepada kegunaan yang betul.",
+      "materials": "Gambar rak buku, penebuk, pengokot dan gambar kertas.",
+      "induction": [
+        "Paparkan meja aktiviti dalam buku teks dan minta murid mencari alat yang dikenali.",
+        "Tunjukkan alat pada gambar."
+      ],
+      "guided": [
+        "Tunjukkan kegunaan rak buku, penebuk dan pengokot melalui bahan contoh yang telah disediakan.",
+        "Perhatikan hasil dan padankan contoh dengan satu alat."
+      ],
+      "practice": [
+        "Edarkan kad tugas menyimpan buku, menebuk kertas dan menyatukan helaian kertas.",
+        "Pilih alat yang sesuai bagi setiap kad tugas."
+      ],
+      "closure": [
+        "Minta murid menyemak satu pilihan sukar melalui gambar hasil.",
+        "Terangkan kegunaan satu alat atau tunjuk kad padanan."
+      ],
+      "support": "Gunakan alat sebenar yang dikawal guru dan kad bertekstur jika sesuai.",
+      "assessment": "Guru merekod sama ada murid dapat memadankan tiga alatan kepada kegunaan yang betul.",
+      "follow_up": "Ulang padanan dua alat yang fungsinya hampir sama."
+    },
+    {
+      "pdp": "024",
+      "title": "Peraturan menggunakan alatan bilik darjah",
+      "sp": "2.4.2",
+      "focus": "Peraturan menggunakan alatan bilik darjah.",
+      "book": "Buku Teks hlm. 30–31",
+      "objective": "Murid dapat menerangkan dua peraturan yang sesuai untuk dua alatan atau bahan bilik darjah.",
+      "materials": "Gambar suis kipas, rak buku, penebuk dan pengokot, kad peraturan.",
+      "induction": [
+        "Tunjukkan gambar tangan basah dekat suis tiruan dan minta murid pilih amalan selamat.",
+        "Pilih kad keringkan tangan dan rujuk guru."
+      ],
+      "guided": [
+        "Bincangkan peraturan berdasarkan gambar di buku, termasuk menyusun buku dengan kemas serta menyimpan alatan di tempat yang ditetapkan.",
+        "Padankan satu kad peraturan dengan gambar alat yang betul."
+      ],
+      "practice": [
+        "Bacakan tiga situasi dan minta murid membetulkan tindakan watak menggunakan ayat mudah.",
+        "Terangkan peraturan sesuai bagi setiap situasi."
+      ],
+      "closure": [
+        "Minta murid memilih satu peraturan untuk dipamerkan berdekatan stesen.",
+        "Sebut atau tunjuk peraturan pilihan."
+      ],
+      "support": "Gunakan gambar suis tiruan. Semua pengendalian alat sebenar di bawah pengawasan guru.",
+      "assessment": "Guru merekod sama ada murid dapat menerangkan dua peraturan yang sesuai untuk dua alatan atau bahan bilik darjah.",
+      "follow_up": "Susun kad peraturan di stesen alatan yang sebenar."
+    },
+    {
+      "pdp": "025",
+      "title": "Mempraktikkan keselamatan menggunakan alatan",
+      "sp": "2.4.3",
+      "focus": "Mempraktikkan keselamatan menggunakan alatan.",
+      "book": "Buku Teks hlm. 29–31",
+      "objective": "Murid dapat mempraktikkan tiga langkah keselamatan ketika menggunakan dan menyimpan penebuk kertas.",
+      "materials": "Penebuk kertas, kertas terpakai, penanda kedudukan jari dan bekas simpanan.",
+      "induction": [
+        "Paparkan hasil tebukan pada kertas dan tanya alat yang digunakan.",
+        "Pilih gambar alat yang sepadan."
+      ],
+      "guided": [
+        "Tunjukkan cara letak penebuk di atas meja, selitkan kertas dan jauhkan jari dari bahagian penekan.",
+        "Ikut urutan dengan kad sebelum memegang alat."
+      ],
+      "practice": [
+        "Sediakan stesen penebuk dan awasi seorang murid pada satu masa. Bimbing murid menggunakan alat dan menyimpannya selepas selesai.",
+        "Lakukan langkah dengan kedudukan jari yang selamat dan pulangkan alat ke bekas."
+      ],
+      "closure": [
+        "Minta murid tunjuk kad langkah keselamatan yang baru digunakan.",
+        "Pilih kad dan nyatakan sebabnya atau tunjuk kedudukan jari yang betul."
+      ],
+      "support": "Stabilkan alat di atas meja dan tawarkan latihan dengan model jika perlu.",
+      "assessment": "Guru merekod sama ada murid dapat mempraktikkan tiga langkah keselamatan ketika menggunakan dan menyimpan penebuk kertas.",
+      "follow_up": "Sebagai pengayaan, gunakan bahan yang telah dipotong untuk Diorama Makanan Sihat pada halaman 32."
+    }
+  ]
+}
