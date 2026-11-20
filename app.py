@@ -10313,7 +10313,8 @@ def _create_rph_word(doc, section, s, ai_text, path):
         for c in row.cells:
             _word_set_cell_border(c, top={'val':'single','sz':'6','color':'666666'}, bottom={'val':'single','sz':'6','color':'666666'}, left={'val':'single','sz':'6','color':'666666'}, right={'val':'single','sz':'6','color':'666666'})
     t3=doc.add_table(rows=0, cols=2); t3.alignment=WD_TABLE_ALIGNMENT.CENTER
-    add_row(t3,tail_labels[0],rph.get('PEMULIHAN / PENGAYAAN',''))
+    if s.get('subject') not in ('Pendidikan Muzik', 'Muzik') or rph.get('PEMULIHAN / PENGAYAAN'):
+        add_row(t3,tail_labels[0],rph.get('PEMULIHAN / PENGAYAAN',''))
     add_row(t3,tail_labels[1],rph.get('REFLEKSI','') or ('____ / ____ pupils achieved the lesson objectives.\n____ / ____ pupils require further support.\nFollow-up action: ______________________________' if _is_english_subject(s) else '____ / ____ murid mencapai objektif.\n____ / ____ murid belum mencapai objektif.\nTindakan susulan: ______________________________'))
     footer=section.footer; fp=footer.paragraphs[0]; fp.alignment=WD_ALIGN_PARAGRAPH.CENTER; fr=fp.add_run('CikguLaju AI  •  '); fr.font.size=Pt(7.5); _word_page_number(fp)
     # Compact the active (second) Word RPH renderer, preserving all content.
@@ -10940,6 +10941,10 @@ def create_pdf_file(s, ai_text, cid):
         story.extend([pt,Spacer(1,3*mm)])
         tail=[]
         for label, key in zip(tail_labels, ('PEMULIHAN / PENGAYAAN', 'REFLEKSI')):
+            if (key == 'PEMULIHAN / PENGAYAAN'
+                    and s.get('subject') in ('Pendidikan Muzik', 'Muzik')
+                    and not rph.get(key)):
+                continue
             val=rph.get(key) or (('____ / ____ pupils achieved the lesson objectives.\n____ / ____ pupils require further support.\nFollow-up action: __________________________' if _is_english_subject(s) else '____ / ____ murid mencapai objektif.\n____ / ____ murid belum mencapai objektif.\nTindakan susulan: __________________________') if key=='REFLEKSI' else '—')
             tail.append([Paragraph('<b>'+label+'</b>',body_style),Paragraph(escape(val).replace('\n','<br/>'),body_style)])
         tt=Table(tail,colWidths=[48*mm,124*mm]); tt.setStyle(TableStyle([('GRID',(0,0),(-1,-1),0.5,colors.black),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),3),('BOTTOMPADDING',(0,0),(-1,-1),3)]))
@@ -28395,7 +28400,7 @@ def _rph_flow_qa_v25109(state, rows):
             r['PENUTUP']="5 minutes\nPupils state or demonstrate the key learning. Teacher checks one final response, gives concise feedback and reinforces the target skill."
         else:
             r['PENUTUP']="5 minit\nMurid menyatakan semula pembelajaran utama atau menunjukkan satu contoh penguasaan. Guru membuat semakan akhir, memberi maklum balas ringkas dan menegaskan kemahiran utama PdP."
-    if weak(r.get('PEMULIHAN / PENGAYAAN')):
+    if sub not in ('pendidikan muzik', 'muzik') and weak(r.get('PEMULIHAN / PENGAYAAN')):
         if 'english' in sub or 'bahasa inggeris' in sub:
             r['PEMULIHAN / PENGAYAAN']="Remedial: Provide guided prompts or models while retaining the same target skill.\nEnrichment: Extend the same skill through a less-supported or more challenging application task."
         else:

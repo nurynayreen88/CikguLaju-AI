@@ -10,8 +10,10 @@ on:
   pull_request:
     branches: [main]
     paths:
+      - 'app.py'
       - 'web/telegram_provisional_arab_music_api.py'
       - 'web/telegram_music_source_audio.py'
+      - 'staging/pendidikan_muzik/rpt_rph_2027/native_layout_preview_staging.py'
       - 'staging/pendidikan_muzik/rpt_rph_2027/external_audio_links_staging.py'
       - 'staging/pendidikan_muzik/rpt_rph_2027/audio_source_download_audit_20261120.json'
       - 'tests/test_telegram_music_source_audio.py'
