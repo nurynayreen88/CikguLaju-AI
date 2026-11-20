@@ -2,8 +2,8 @@
 from flask import Blueprint, Response, jsonify, request
 
 from staging.ppki.catalog import (
-    FORMATS, RPT_COMBINED_FILENAME, RPT_FILENAME, RPT_MANIPULATIVE_FILENAME,
-    SUBJECT, YEAR, catalog, lesson_filename, options, selected_lesson,
+    FORMATS, RPT_COMBINED_FILENAME, RPT_FILENAME, RPT_MANIPULATIVE_FILENAME, RPT_YEAR3_FILENAME,
+    SUBJECT, YEAR, YEARS, catalog, lesson_filename, options, selected_lesson,
 )
 from staging.ppki.render_pengurusan_kehidupan import render_lesson
 from staging.ppki.rpt import render_rpt
@@ -30,9 +30,21 @@ def create_ppki_blueprint():
 
     @bp.get("/catalog")
     def ppki_catalog():
-        if request.args:
+        try:
+            year = requested_year()
+        except ValueError:
             return jsonify({"error": "Unexpected query parameters"}), 400
-        return jsonify(options())
+        return jsonify(options(year))
+
+    def requested_year():
+        if not request.args:
+            return YEAR
+        if set(request.args) != {"year"} or len(request.args.getlist("year")) != 1:
+            raise ValueError("Invalid PPKI year")
+        value = request.args["year"]
+        if value not in {str(year) for year in YEARS}:
+            raise ValueError("Invalid PPKI year")
+        return int(value)
 
     @bp.post("/render")
     def ppki_render():
@@ -45,13 +57,13 @@ def create_ppki_blueprint():
         fmt = data["format"]
         teacher = data["teacher"]
         if (not isinstance(selection, dict) or set(selection) != {"year", "subject", "unit", "lesson"}
-                or type(selection["year"]) is not int or selection["year"] != YEAR
+                or type(selection["year"]) is not int or selection["year"] not in YEARS
                 or selection["subject"] != SUBJECT or fmt not in FORMATS):
             return jsonify({"error": "Invalid PPKI selection"}), 400
-        unit = selection["unit"]
+        year, unit = selection["year"], selection["unit"]
         if not isinstance(unit, str):
             return jsonify({"error": "Invalid PPKI unit"}), 400
-        lesson = selected_lesson(unit, selection["lesson"])
+        lesson = selected_lesson(unit, selection["lesson"], year=year)
         if lesson is None:
             return jsonify({"error": "PPKI PdP unavailable"}), 404
         try:
@@ -59,21 +71,28 @@ def create_ppki_blueprint():
         except (ValueError, TypeError):
             return jsonify({"error": "Invalid teacher metadata"}), 400
         extension = "docx" if fmt == "word" else "pdf"
-        body = render_lesson(catalog(unit), lesson, extension, teacher)
+        body = render_lesson(catalog(unit, year=year), lesson, extension, teacher)
         response = Response(body, mimetype=MIMES[fmt])
-        response.headers["Content-Disposition"] = f'attachment; filename="{lesson_filename(lesson["pdp"], fmt)}"'
+        response.headers["Content-Disposition"] = f'attachment; filename="{lesson_filename(lesson["pdp"], fmt, year=year)}"'
         return response
 
     @bp.get("/rpt.pdf", defaults={"combined": False})
     @bp.get("/rpt-current.pdf", defaults={"combined": True})
     @bp.get("/rpt-manipulatif.pdf", defaults={"combined": False, "manipulative": True})
     def ppki_rpt(combined, manipulative=False):
-        if request.args:
+        try:
+            year = requested_year()
+        except ValueError:
             return jsonify({"error": "Unexpected query parameters"}), 400
-        response = Response(render_rpt(combined=combined, manipulative=manipulative), mimetype=MIMES["pdf"])
-        filename = RPT_COMBINED_FILENAME if combined else RPT_FILENAME
-        if manipulative:
+        if year == 3 and manipulative:
+            return jsonify({"error": "PPKI RPT unavailable"}), 404
+        response = Response(render_rpt(combined=combined, manipulative=manipulative, year=year), mimetype=MIMES["pdf"])
+        if year == 3:
+            filename = RPT_YEAR3_FILENAME
+        elif manipulative:
             filename = RPT_MANIPULATIVE_FILENAME
+        else:
+            filename = RPT_COMBINED_FILENAME if combined else RPT_FILENAME
         response.headers["Content-Disposition"] = f'attachment; filename="{filename}"'
         return response
 

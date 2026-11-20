@@ -2,11 +2,13 @@
 from io import BytesIO
 from xml.sax.saxutils import escape
 
-from staging.ppki.catalog import MANIPULATIVE_UNIT_LESSONS, RPT_COMBINED_EDITION, UNIT, UNIT_LESSONS, catalog
+from staging.ppki.catalog import (
+    MANIPULATIVE_UNIT_LESSONS, RPT_COMBINED_EDITION, UNIT, UNIT_LESSONS, YEAR, YEAR3_LESSONS, catalog,
+)
 from staging.ppki.render_pengurusan_kehidupan import PPKI_LABEL_FILL
 
 
-def render_rpt(*, combined=False, manipulative=False):
+def render_rpt(*, combined=False, manipulative=False, year=YEAR):
     from reportlab.lib import colors
     from reportlab.lib.pagesizes import A4, landscape
     from reportlab.lib.styles import ParagraphStyle
@@ -21,7 +23,7 @@ def render_rpt(*, combined=False, manipulative=False):
     title = ParagraphStyle("RPT title", parent=header, fontSize=16, leading=19)
 
     def unit_story(unit, number):
-        source = catalog(unit)
+        source = catalog(unit, year=year)
         rows = [[Paragraph(label, header) for label in ("PdP", "Fokus", "SK", "SP", "Buku Teks")]]
         for lesson in source["lessons"]:
             sp = lesson["sp"]
@@ -41,7 +43,7 @@ def render_rpt(*, combined=False, manipulative=False):
         ]))
         return [
             Paragraph(f"RPT 2027 · Agihan PdP Unit {number}", title),
-            Paragraph(escape(f"PPKI · Pengurusan Kehidupan Tahun 2 · {source['component']}"), header),
+            Paragraph(escape(f"PPKI · Pengurusan Kehidupan Tahun {year} · {source['component']}"), header),
             Paragraph(escape(source["unit"]), header),
             Spacer(1, 3 * mm),
             Paragraph("Guru menetapkan tarikh PdP mengikut jadual sekolah dan keperluan kelas.", normal),
@@ -49,14 +51,19 @@ def render_rpt(*, combined=False, manipulative=False):
             table,
         ]
 
-    if manipulative:
+    if year == 3 and not manipulative:
+        units = YEAR3_LESSONS
+        edition = "Unit 1"
+    elif year != YEAR:
+        raise ValueError("Unknown PPKI RPT")
+    elif manipulative:
         units = MANIPULATIVE_UNIT_LESSONS
         edition = "Kemahiran Manipulatif Unit 1–3"
     else:
         units = UNIT_LESSONS if combined else (UNIT,)
         edition = RPT_COMBINED_EDITION if combined else "Unit 2"
     stream = BytesIO()
-    doc = SimpleDocTemplate(stream, pagesize=landscape(A4), title=f"RPT PPKI Tahun 2 · Agihan PdP {edition}",
+    doc = SimpleDocTemplate(stream, pagesize=landscape(A4), title=f"RPT PPKI Tahun {year} · Agihan PdP {edition}",
                             leftMargin=15 * mm, rightMargin=15 * mm, topMargin=12 * mm, bottomMargin=12 * mm)
     story = []
     for unit in units:

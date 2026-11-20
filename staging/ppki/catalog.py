@@ -6,6 +6,7 @@ import json
 from staging.ppki.render_pengurusan_kehidupan import load_catalog
 
 YEAR = 2
+YEARS = (2, 3)
 SUBJECT = "PENGURUSAN_KEHIDUPAN_PPKI"
 UNIT1 = "u01-pengurusan-diri"
 UNIT = "u02-pengurusan-diri"
@@ -33,6 +34,7 @@ COMPONENT_UNITS = {
     COMPONENT: tuple(UNIT_LESSONS),
     MANIPULATIVE_COMPONENT: tuple(MANIPULATIVE_UNIT_LESSONS),
 }
+YEAR3_LESSONS = {UNIT1: range(1, 18)}
 
 # Keep the published order in the additional_units field.
 UNIT_FILES = {
@@ -48,19 +50,34 @@ RPT_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_2_2027.pdf"
 RPT_COMBINED_EDITION = "Unit 1–5"
 RPT_COMBINED_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_1_2_3_4_5_2027.pdf"
 RPT_MANIPULATIVE_FILENAME = "CIKGULAJU_RPT_PPKI_KEMAHIRAN_MANIPULATIF_TAHUN_2_2027.pdf"
+RPT_YEAR3_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_3_UNIT_1_2027.pdf"
 
 
-@lru_cache(maxsize=len(LESSONS_BY_UNIT))
-def catalog(unit=UNIT):
-    if unit == UNIT:
+def component_units(year):
+    if year == 3:
+        return {COMPONENT: tuple(YEAR3_LESSONS)}
+    if year == YEAR:
+        return COMPONENT_UNITS
+    raise ValueError("Unknown PPKI year")
+
+
+@lru_cache(maxsize=len(LESSONS_BY_UNIT) + len(YEAR3_LESSONS))
+def catalog(unit=UNIT, *, year=YEAR):
+    if year == 3 and unit in YEAR3_LESSONS:
+        source = json.loads(Path(__file__).with_name(
+            "pengurusan_kehidupan_tahun3_unit1.json").read_text(encoding="utf-8"))
+        expected = YEAR3_LESSONS[unit]
+    elif year == YEAR and unit == UNIT:
         source = load_catalog()
-    elif unit in UNIT_FILES:
+        expected = LESSONS_BY_UNIT[unit]
+    elif year == YEAR and unit in UNIT_FILES:
         path = Path(__file__).with_name(UNIT_FILES[unit])
         source = json.loads(path.read_text(encoding="utf-8"))
+        expected = LESSONS_BY_UNIT[unit]
     else:
         raise ValueError("Unknown PPKI unit")
     numbers = [lesson["pdp"] for lesson in source["lessons"]]
-    if source["year"] != YEAR or numbers != [f"{n:03d}" for n in LESSONS_BY_UNIT[unit]]:
+    if source["year"] != year or numbers != [f"{n:03d}" for n in expected]:
         raise ValueError("PPKI catalog identity mismatch")
     for lesson in source["lessons"]:
         sp = lesson["sp"]
@@ -69,8 +86,8 @@ def catalog(unit=UNIT):
     return source
 
 
-def _unit_options(unit):
-    source = catalog(unit)
+def _unit_options(unit, year=YEAR):
+    source = catalog(unit, year=year)
     return {
         "value": unit,
         "label": source["unit"],
@@ -86,27 +103,30 @@ def _unit_options(unit):
     }
 
 
-def options():
-    source = catalog()
-    first = _unit_options(UNIT)
+def options(year=YEAR):
+    units = component_units(year)
+    first_unit = UNIT if year == YEAR else units[COMPONENT][0]
+    source = catalog(first_unit, year=year)
+    first = _unit_options(first_unit, year)
     return {
         "source": "ppki-pengurusan-kehidupan-v1",
-        "year": YEAR,
+        "year": year,
         "subjects": [{"value": SUBJECT, "label": source["subject"]}],
         "components": [{"value": COMPONENT, "label": source["component"]}],
-        "units": [{"value": UNIT, "label": first["label"]}],
+        "units": [{"value": first_unit, "label": first["label"]}],
         "lessons": first["lessons"],
-        "additional_units": [_unit_options(unit) for unit in UNIT_FILES if unit in UNIT_LESSONS],
-        "kemahiran_manipulatif": [_unit_options(unit) for unit in MANIPULATIVE_UNIT_LESSONS],
+        "additional_units": [_unit_options(unit, year) for unit in UNIT_FILES
+                             if unit in units[COMPONENT] and unit != first_unit],
+        "kemahiran_manipulatif": [_unit_options(unit, year) for unit in units.get(MANIPULATIVE_COMPONENT, ())],
     }
 
 
-def selected_lesson(unit, number):
-    if unit not in LESSONS_BY_UNIT:
+def selected_lesson(unit, number, *, year=YEAR):
+    if not any(unit in units for units in component_units(year).values()):
         return None
-    return next((lesson for lesson in catalog(unit)["lessons"] if lesson["pdp"] == number), None)
+    return next((lesson for lesson in catalog(unit, year=year)["lessons"] if lesson["pdp"] == number), None)
 
 
-def lesson_filename(number, fmt):
+def lesson_filename(number, fmt, *, year=YEAR):
     suffix = {"word": "docx", "pdf": "pdf"}[fmt]
-    return f"CIKGULAJU_RPH_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_{number}.{suffix}"
+    return f"CIKGULAJU_RPH_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_{year}_{number}.{suffix}"

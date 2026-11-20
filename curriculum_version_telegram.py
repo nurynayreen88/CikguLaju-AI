@@ -99,7 +99,9 @@ def install(namespace):
                 for row in ((1, 2), (3, 4), (5, 6))
             ]
         elif version == PPKI:
-            keyboard = [[{"text": "Tahun 2", "callback_data": "cv_ppki_year2"}]]
+            from staging.ppki.catalog import YEARS
+            keyboard = [[{"text": f"Tahun {number}", "callback_data": f"cv_ppki_year{number}"}]
+                        for number in YEARS]
         else:
             keyboard = [[{"text":"Tahun 1 (KP Baharu)", "callback_data":"cv_year1_kp"}]]
         keyboard.extend([[{"text":"⬅️ Pilih Kurikulum", "callback_data":"level_primary"}],
@@ -112,55 +114,60 @@ def install(namespace):
 
     def ppki_navigation(cid, st, action):
         from staging.ppki.catalog import (
-            COMPONENT, COMPONENT_UNITS, MANIPULATIVE_COMPONENT, MANIPULATIVE_UNIT1,
-            SUBJECT, UNIT, catalog, lesson_filename, selected_lesson,
+            COMPONENT, MANIPULATIVE_COMPONENT, SUBJECT, UNIT, YEAR, YEARS, catalog,
+            component_units, lesson_filename, selected_lesson,
         )
         from staging.ppki.render_pengurusan_kehidupan import render_lesson
-
-        source = catalog()
 
         def show(label, prompt, choices, back):
             keyboard = [[{"text": title, "callback_data": key}] for title, key in choices]
             keyboard.append([{"text": "⬅️ Kembali", "callback_data": back}])
             return send(cid, f"<b>{escape(label)}</b>\n\n{prompt}", keyboard)
 
-        if action == "year2":
-            reset_selection(cid, PPKI)["year"] = "Tahun 2"
-            return show("Pendidikan Khas (PPKI) · Tahun 2", "Pilih subjek.",
+        if action in {f"year{number}" for number in YEARS}:
+            year = int(action.removeprefix("year"))
+            reset_selection(cid, PPKI)["year"] = f"Tahun {year}"
+            source = catalog(component_units(year)[COMPONENT][0], year=year)
+            return show(f"Pendidikan Khas (PPKI) · Tahun {year}", "Pilih subjek.",
                         [(source["subject"], "cv_ppki_subject")], "cv_primary_ppki")
-        if st.get("year") != "Tahun 2":
+        year = next((number for number in YEARS if st.get("year") == f"Tahun {number}"), None)
+        if year is None:
             return primary_years(cid, PPKI, "Pendidikan Khas (PPKI)")
+        units_by_component = component_units(year)
         if action == "subject":
             st["ppki_subject"] = SUBJECT
             st.pop("ppki_component", None)
             st.pop("ppki_unit", None)
             st.pop("ppki_lesson", None)
-            return show(source["subject"], "Pilih komponen.",
-                        [(source["component"], "cv_ppki_component"),
-                         (catalog(MANIPULATIVE_UNIT1)["component"], "cv_ppki_component_km")],
-                        "cv_ppki_year2")
+            components = [(catalog(units[0], year=year)["component"],
+                           "cv_ppki_component_km" if code == MANIPULATIVE_COMPONENT else "cv_ppki_component")
+                          for code, units in units_by_component.items()]
+            source = catalog(units_by_component[COMPONENT][0], year=year)
+            return show(source["subject"], "Pilih komponen.", components, f"cv_ppki_year{year}")
         if st.get("ppki_subject") != SUBJECT:
-            return ppki_navigation(cid, st, "year2")
+            return ppki_navigation(cid, st, f"year{year}")
         if action in ("component", "component_km"):
             component = MANIPULATIVE_COMPONENT if action == "component_km" else COMPONENT
+            if component not in units_by_component:
+                return ppki_navigation(cid, st, "subject")
             st["ppki_component"] = component
             st.pop("ppki_unit", None)
             st.pop("ppki_lesson", None)
-            units = COMPONENT_UNITS[component]
-            choices = [(catalog(unit)["unit"], f"cv_ppki_unit_{unit}") for unit in units]
-            return show(catalog(units[0])["component"], "Pilih unit.", choices, "cv_ppki_subject")
+            units = units_by_component[component]
+            choices = [(catalog(unit, year=year)["unit"], f"cv_ppki_unit_{unit}") for unit in units]
+            return show(catalog(units[0], year=year)["component"], "Pilih unit.", choices, "cv_ppki_subject")
         component = st.get("ppki_component")
         if component is True:  # Preserve existing Pengurusan Diri selections.
             component = COMPONENT
-        if component not in COMPONENT_UNITS:
+        if component not in units_by_component:
             return ppki_navigation(cid, st, "subject")
-        units = COMPONENT_UNITS[component]
+        units = units_by_component[component]
         back_to_component = "component_km" if component == MANIPULATIVE_COMPONENT else "component"
         if action == "unit" or action.startswith("unit_"):
-            unit = UNIT if action == "unit" else action.removeprefix("unit_")
+            unit = (UNIT if year == YEAR else units[0]) if action == "unit" else action.removeprefix("unit_")
             if unit not in units:
                 return ppki_navigation(cid, st, back_to_component)
-            source = catalog(unit)
+            source = catalog(unit, year=year)
             st["ppki_unit"] = unit
             st.pop("ppki_lesson", None)
             choices = [(f"PdP {row['pdp']} · {row['title']}", f"cv_ppki_lesson_{row['pdp']}")
@@ -168,7 +175,7 @@ def install(namespace):
             return show(source["unit"], "Pilih PdP.", choices, f"cv_ppki_{back_to_component}")
         command, _, number = action.partition("_")
         unit = st.get("ppki_unit")
-        lesson = selected_lesson(unit, number) if unit in units else None
+        lesson = selected_lesson(unit, number, year=year) if unit in units else None
         if lesson is None:
             return ppki_navigation(cid, st, back_to_component)
         if command == "lesson":
@@ -186,8 +193,8 @@ def install(namespace):
                 return
             extension = "docx" if command == "word" else "pdf"
             with TemporaryDirectory(prefix="cikgulaju-ppki-") as directory:
-                path = Path(directory) / lesson_filename(number, command)
-                path.write_bytes(render_lesson(catalog(unit), lesson, extension, {}))
+                path = Path(directory) / lesson_filename(number, command, year=year)
+                path.write_bytes(render_lesson(catalog(unit, year=year), lesson, extension, {}))
                 result = namespace["send_document"](cid, str(path), escape(lesson["title"]))
             if namespace["_telegram_delivery_ok_v25279"](result):
                 return result
@@ -276,7 +283,7 @@ def install(namespace):
     def subjects(cid,label):
         st=state.setdefault(cid,{})
         if st.get("curriculum_version") == PPKI:
-            return ppki_navigation(cid, st, "year2")
+            return ppki_navigation(cid, st, "year3" if st.get("year") == "Tahun 3" else "year2")
         if st.get("curriculum_version") == DLP:
             reset_selection(cid, LEGACY)["year"] = label
             return previous_subjects(cid, label)
