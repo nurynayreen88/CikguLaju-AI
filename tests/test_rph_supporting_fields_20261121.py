@@ -6,7 +6,7 @@ from docx import Document
 from pypdf import PdfReader
 
 from dlp_year2_rph import _pdf, _word
-from web.rph_supporting_fields_20261121 import supplement_footer
+from web.rph_supporting_fields_20261121 import supplement_details
 
 
 SAMPLES = (
@@ -40,9 +40,9 @@ def test_derived_fields_preserve_evidence_and_reflection(heading):
     original_details = list(DETAILS)
     original_activities = list(ACTIVITIES)
     original_footer = list(FOOTER)
-    rows = supplement_footer(heading, DETAILS, ACTIVITIES, FOOTER)
-    assert len(rows) == 4
-    assert rows[:2] == FOOTER
+    rows = supplement_details(heading, DETAILS, ACTIVITIES, FOOTER)
+    assert len(rows) == len(DETAILS) + 2
+    assert rows[:len(DETAILS)] == DETAILS
     assert DETAILS == original_details
     assert ACTIVITIES == original_activities
     assert FOOTER == original_footer
@@ -54,7 +54,7 @@ def test_derived_fields_preserve_evidence_and_reflection(heading):
         for term in ("EMK:", "PAK21:", "KBAT:", "Pemulihan:", "Pengayaan:"):
             assert term in combined
     assert "Murid membandingkan dua bacaan." in combined or "Murid berbincang" in combined
-    assert "Dua bacaan dan satu perbandingan" in combined
+    assert "Dua bacaan dan satu perbandingan" in FOOTER[0][1]
 
 
 @pytest.mark.parametrize("heading", SAMPLES)
@@ -71,7 +71,7 @@ def test_actual_renderers_keep_three_tables_and_a4(heading):
             assert len(doc.tables) == 3
             assert doc.tables[2].cell(0, 1).text == FOOTER[0][1]
             assert doc.tables[2].cell(1, 1).text == FOOTER[1][1]
-            cells = "\n".join(cell.text for row in doc.tables[2].rows for cell in row.cells)
+            cells = "\n".join(cell.text for row in doc.tables[0].rows for cell in row.cells)
             for term in (("EMK", "PAK21", "KBAT", "Pemulihan", "Pengayaan") if not english
                          else ("Cross-curricular", "21st-century", "Higher-order", "Remedial", "Enrichment")):
                 assert term.casefold() in cells.casefold()
@@ -92,13 +92,15 @@ def test_ppki_uses_existing_verified_support_text():
     existing = [("Sokongan", "Beri dua kad bergambar. Terima jawapan secara isyarat."),
                 ("Pentaksiran Bilik Darjah", "Dua tindakan yang betul."),
                 ("Refleksi", "___ murid mencapai objektif.")]
-    result = supplement_footer(heading, DETAILS, ACTIVITIES, existing)
-    assert result[:3] == existing
-    assert "Beri dua kad bergambar. Terima jawapan secara isyarat." in result[-1][1]
+    result = supplement_details(heading, DETAILS, ACTIVITIES, existing)
+    assert result[:len(DETAILS)] == DETAILS
+    assert existing[0][1] not in result[-1][1]
+    assert "sokongan yang dinyatakan" in result[-1][1]
+    assert existing[0][1] == "Beri dua kad bergambar. Terima jawapan secara isyarat."
 
 
 def test_no_duplication_and_other_subjects_unchanged():
     english = ("Daily Lesson Plan", "English Year 3", "Listening to directions")
-    assert supplement_footer(english, DETAILS, ACTIVITIES, FOOTER) is FOOTER
-    sains = supplement_footer(SAMPLES[0], DETAILS, ACTIVITIES, FOOTER)
-    assert supplement_footer(SAMPLES[0], DETAILS, ACTIVITIES, sains) == sains
+    assert supplement_details(english, DETAILS, ACTIVITIES, FOOTER) is DETAILS
+    sains = supplement_details(SAMPLES[0], DETAILS, ACTIVITIES, FOOTER)
+    assert supplement_details(SAMPLES[0], DETAILS, ACTIVITIES, sains) == sains
