@@ -1,0 +1,112 @@
+"""PPKI-only Web catalog, authenticated downloads and shared trial access."""
+from hashlib import sha256
+from io import BytesIO
+import json
+import unittest
+from unittest.mock import patch
+from zipfile import ZipFile
+
+from tools.run_web_v1_preview import app
+from web import native_telegram_ppki_client as ppki
+
+
+class PpkiWebTest(unittest.TestCase):
+    def setUp(self):
+        self.client = app.test_client()
+        self.source_requests = []
+        self.paid = True
+        self.credits = 1
+        self.selection = {"year": 2, "subject": ppki.SUBJECT, "unit": ppki.UNIT, "lesson": "014"}
+        self.catalog = {
+            "source": ppki.SOURCE, "year": 2,
+            "subjects": [{"value": ppki.SUBJECT, "label": "Pengurusan Kehidupan"}],
+            "components": [{"value": ppki.COMPONENT, "label": "Pengurusan Diri"}],
+            "units": [{"value": ppki.UNIT, "label": "Unit 2 · Diri Bersih Badan Sihat"}],
+            "lessons": [{"value": f"{n:03d}", "label": f"PdP {n:03d}", "formats": ["word", "pdf"],
+                         "textbook_ref": "Buku Teks hlm. 21"} for n in range(1, 15)],
+        }
+        self.pdf = b"%PDF-1.4\n" + b"%" * 9000
+        self.docx = BytesIO()
+        with ZipFile(self.docx, "w") as doc:
+            doc.writestr("word/document.xml", "<w:document/>")
+        auth_config = {"CIKGULAJU_WEB_SESSION_SECRET": "x" * 40}
+        for substitute in (
+            patch("web_v1_telegram_auth_routes._config", return_value=auth_config),
+            patch("web_v1_sessions.verify_session_ticket", return_value=42),
+            patch("web_v1_telegram_auth_routes._lookup", side_effect=self._account_lookup),
+            patch("web.unified_rph_web._account", side_effect=lambda: (self._account_lookup(), None)),
+            patch("web.rpt_2027_all_http._account", side_effect=lambda: (self._account_lookup(), None)),
+            patch("web.unified_rph_web._has_paid_access", side_effect=lambda _: self.paid),
+            patch("web.rpt_2027_all_http._has_paid_access", side_effect=lambda _: self.paid),
+            patch.object(ppki, "_request", side_effect=self._request),
+        ):
+            substitute.start()
+            self.addCleanup(substitute.stop)
+
+    def _account_lookup(self, *_):
+        return {"telegram_user_id": 42, "free_remaining": self.credits}
+
+    def _request(self, path, mime, limit, payload=None):
+        self.source_requests.append((path, payload))
+        if path == "catalog":
+            return json.dumps(self.catalog).encode()
+        if path == "rpt.pdf":
+            return self.pdf
+        return self.docx.getvalue() if payload["format"] == "word" else self.pdf
+
+    def test_separate_menu_path(self):
+        opts = "/api/options"
+        queries = [
+            ({"kind": "subjects", "curriculum": "ppki"}, ppki.SUBJECT),
+            ({"kind": "components", "subject": ppki.SUBJECT}, ppki.COMPONENT),
+            ({"kind": "units", "subject": ppki.SUBJECT, "component": ppki.COMPONENT}, ppki.UNIT),
+            ({"kind": "pdp", "subject": ppki.SUBJECT, "unit": ppki.UNIT}, "001"),
+        ]
+        for query, token in queries:
+            response = self.client.get(opts, query_string={"year": 2, **query})
+            self.assertEqual(response.status_code, 200, response.get_json())
+            self.assertEqual(response.get_json()[0]["value"], token)
+        self.assertEqual(len(response.get_json()), 14)
+        self.assertEqual(self.client.get(opts, query_string={"year": 3, **queries[0][0]}).status_code, 400)
+        self.assertEqual(self.client.get(opts, query_string={"year": 2, "kind": "pdp", "subject": ppki.SUBJECT,
+                                                             "unit": "u01"}).status_code, 400)
+
+    def test_rph_word_pdf_and_trial_gate(self):
+        prefix = "/api/web/rph/"
+        available = self.client.get(prefix + "availability", query_string=self.selection)
+        self.assertEqual(available.status_code, 200)
+        self.assertEqual(available.json["formats"], ["word", "pdf"])
+        for fmt in ("word", "pdf"):
+            response = self.client.post(prefix + fmt, query_string=self.selection,
+                                        json={"reflection": "Pemulihan esok."})
+            self.assertEqual(response.status_code, 200, response.get_json(silent=True))
+            render_request = self.source_requests[-1][1]
+            self.assertEqual(render_request["selection"], self.selection)
+            self.assertEqual(render_request["teacher"]["reflection"], "Pemulihan esok.")
+            self.assertEqual(response.headers["X-RPH-Generator"], "telegram-native")
+        self.paid, self.credits = False, 0
+        before = len(self.source_requests)
+        self.assertEqual(self.client.get(prefix + "word", query_string=self.selection).status_code, 403)
+        self.assertEqual(len(self.source_requests), before)
+
+    def test_rpt_list_paid_access_and_digest(self):
+        path = f"/api/rpt/2027/all/{ppki.RPT_CODE}/2.pdf"
+        self.paid = False
+        self.assertEqual(self.client.get(path).status_code, 403)
+        for paid in (False, True):
+            self.paid = paid
+            response = self.client.get("/api/rpt/2027/catalog")
+            entry, = [s for s in response.json["subjects"] if s["code"] == ppki.RPT_CODE]
+            self.assertEqual(entry["years"][0]["download_enabled"], paid)
+        response = self.client.get(path)
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.data, self.pdf)
+        self.assertEqual(response.headers["X-RPT-Source-SHA256"], sha256(self.pdf).hexdigest())
+        self.assertEqual(response.headers["X-RPT-Personalization-Allowed"], "0")
+
+    def test_missing_catalog_hides_rpt_and_blocks_fake_pdp(self):
+        self.catalog["lessons"].pop()
+        selection = self.client.get("/api/web/rph/availability", query_string=self.selection)
+        self.assertEqual(selection.status_code, 503)
+        response = self.client.get("/api/rpt/2027/catalog")
+        self.assertNotIn(ppki.RPT_CODE, [s["code"] for s in response.json["subjects"]])

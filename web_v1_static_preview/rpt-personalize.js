@@ -307,7 +307,9 @@
                  [!status.hasLogo&&"logo sekolah",!status.hasSchool&&"nama sekolah",
                   !status.hasTeacher&&"nama guru"].filter(Boolean).join(", ")+
                  ". Lengkapkan dalam Profil Guru.":"")
-           : "Versi percuma tanpa nama guru, nama sekolah atau logo. Maklumat Profil Guru tetap disimpan.");
+           : code==="pengurusan_kehidupan_ppki"
+             ? "Agihan 14 PdP bagi Unit 2."
+             : "Versi percuma tanpa nama guru, nama sekolah atau logo. Maklumat Profil Guru tetap disimpan.");
         return true;
       }catch(error){
         if(openedViewer && !openedViewer.closed){
