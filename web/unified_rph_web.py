@@ -99,6 +99,18 @@ PPKI_YEAR5_MEDIA = {
     ),
 }
 
+PPKI_YEAR6_AGENCY_VIDEOS = tuple(
+    {"type": "video", "title": f"{title} · Buku Teks hlm. {page}",
+     "url": f"https://www.youtube.com/watch?v={video}", "action": "Mainkan Rakaman"}
+    for title, page, video in (
+        ("Video korporat APM", 4, "99W3juDHrH4"),
+        ("Video korporat ATM", 4, "6zxka0GIb6s"),
+        ("Video korporat RELA", 5, "XlcwOJgC_2Q"),
+        ("Sorotan perkhidmatan Imigresen Malaysia", 5, "QVV7qoEW_lQ"),
+    )
+)
+PPKI_YEAR6_AGENCY_LESSONS = frozenset(("001", "002"))
+
 def _safe_text(value, limit=300):
     return isinstance(value, str) and 0 < len(value) <= limit and bool(value.strip())
 
@@ -1272,7 +1284,8 @@ def create_blueprint():
             return year, sub, unit, lesson, None
         if sub == ppki.SUBJECT and ((year, unit, lesson) == (3, ppki.UNIT1, "003")
                                     or (year, unit, lesson) in PPKI_SOURCE_VIDEOS
-                                    or (year == 5 and (unit, lesson) in PPKI_YEAR5_MEDIA)):
+                                    or (year == 5 and (unit, lesson) in PPKI_YEAR5_MEDIA)
+                                    or (year == 6 and unit == ppki.UNIT1 and lesson in PPKI_YEAR6_AGENCY_LESSONS)):
             return year, sub, unit, lesson, None
         if sub == "SCIENCE":
             from web.native_textbook_references import SCIENCE_PAGES
@@ -1298,6 +1311,8 @@ def create_blueprint():
         try:
             if sub == ppki.SUBJECT:
                 ppki.validate_selection(year, sub, unit, token)
+                if year == 6:
+                    return jsonify({"status": "PAUTAN_RAKAMAN", "items": PPKI_YEAR6_AGENCY_VIDEOS})
                 if year == 5:
                     items = PPKI_YEAR5_MEDIA[(unit, token)]
                     return jsonify({"status": "PAUTAN_RAKAMAN", "items": items})

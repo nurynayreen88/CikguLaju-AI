@@ -28,6 +28,7 @@ class PpkiWebTest(unittest.TestCase):
         self.catalog_year3 = None
         self.catalog_year4 = None
         self.catalog_year5 = None
+        self.catalog_year6 = None
         self.pdf = b"%PDF-1.4\n" + b"%" * 9000
         self.docx = BytesIO()
         with ZipFile(self.docx, "w") as doc:
@@ -65,7 +66,11 @@ class PpkiWebTest(unittest.TestCase):
             if self.catalog_year5 is None:
                 raise ppki.NativeRPHUnavailable("Year 5 source is not deployed")
             return json.dumps(self.catalog_year5).encode()
-        if path in ("rpt.pdf?year=5", "rpt-manipulatif.pdf?year=5", "rpt-manipulatif.pdf?year=4", "rpt.pdf?year=4", "rpt.pdf", "rpt-current.pdf", "rpt-manipulatif.pdf", "rpt.pdf?year=3", "rpt-manipulatif.pdf?year=3"):
+        if path == "catalog?year=6":
+            if self.catalog_year6 is None:
+                raise ppki.NativeRPHUnavailable("Year 6 source is not deployed")
+            return json.dumps(self.catalog_year6).encode()
+        if path in ("rpt.pdf?year=6", "rpt.pdf?year=5", "rpt-manipulatif.pdf?year=5", "rpt-manipulatif.pdf?year=4", "rpt.pdf?year=4", "rpt.pdf", "rpt-current.pdf", "rpt-manipulatif.pdf", "rpt.pdf?year=3", "rpt-manipulatif.pdf?year=3"):
             return self.pdf
         return self.docx.getvalue() if payload["format"] == "word" else self.pdf
 
@@ -311,6 +316,48 @@ class PpkiWebTest(unittest.TestCase):
         self.assertEqual(self.client.get(km_path).status_code, 403)
         self.assertEqual(self.client.get(materials, query_string=query).status_code, 403)
         self.assertEqual(self.client.get(path).status_code, 403)
+
+    def test_year6_components_documents_and_agency_videos(self):
+        def rows(numbers):
+            return [{"value": f"{n:03d}", "label": f"PdP {n:03d}",
+                     "formats": ["word", "pdf"], "textbook_ref": "Buku Teks"}
+                    for n in numbers]
+
+        units = (
+            (ppki.UNIT1, range(1, 9)), (ppki.UNIT, range(9, 16)), (ppki.UNIT3, range(16, 20)),
+            (ppki.UNIT4, range(20, 24)), (ppki.UNIT5, range(24, 28)), (ppki.UNIT6, range(28, 36)),
+        )
+        self.catalog_year6 = {
+            **self.catalog, "year": 6, "units": [{"value": ppki.UNIT1, "label": "Wira Tidak Didendang"}],
+            "lessons": rows(units[0][1]), "additional_units": [
+                {"value": unit, "label": unit, "lessons": rows(numbers)}
+                for unit, numbers in units[1:]
+            ],
+        }
+        base_query = {"year": 6, "subject": ppki.SUBJECT}
+        option = self.client.get("/api/options", query_string={**base_query, "kind": "components"})
+        self.assertEqual([item["value"] for item in option.json], [ppki.COMPONENT])
+        for unit, numbers in units:
+            options = self.client.get("/api/options", query_string={**base_query, "kind": "pdp", "unit": unit})
+            self.assertEqual([row["value"] for row in options.json], [f"{n:03d}" for n in numbers])
+            query = {**base_query, "unit": unit, "lesson": f"{numbers[-1]:03d}"}
+            for fmt in ppki.FORMATS:
+                self.assertEqual(self.client.get(f"/api/web/rph/{fmt}", query_string=query).status_code, 200)
+        media = "/api/web/rph/extra-materials"
+        selected = {**base_query, "unit": ppki.UNIT1, "lesson": "002"}
+        items = self.client.get(media, query_string=selected).json["items"]
+        self.assertEqual(len(items), 4)
+        self.assertTrue(all(item["action"] == "Mainkan Rakaman" for item in items))
+        self.assertEqual(self.client.get(media, query_string={**selected, "lesson": "003"}).json["items"], [])
+        path = f"/api/rpt/2027/all/{ppki.RPT_CODE}/6.pdf"
+        rpt = self.client.get(path)
+        self.assertEqual(rpt.status_code, 200)
+        self.assertIn("TAHUN_6_UNIT_1_2_3_4_5_6_2027.pdf", rpt.headers["Content-Disposition"])
+        self.assertEqual(self.client.get(f"/api/rpt/2027/all/{ppki.RPT_MANIPULATIVE_CODE}/6.pdf").status_code, 404)
+        self.paid = False
+        self.credits = 0
+        self.assertEqual(self.client.get(path).status_code, 403)
+        self.assertEqual(self.client.get(media, query_string=selected).status_code, 403)
 
     def test_year4_manipulative_rph_rpt_and_media(self):
         def lessons(numbers):
