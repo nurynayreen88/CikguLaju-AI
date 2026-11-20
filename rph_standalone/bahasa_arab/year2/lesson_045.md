@@ -1,30 +1,30 @@
-# RPH Bahasa Arab Tahun 2 — PdP 045 (DRAF / BELUM READY)
+# RPH Bahasa Arab Tahun 2 — PdP 045
 
 **Tahun:** 2 | **Subjek:** Bahasa Arab KSSR Semakan 2017 | **Unit:** أحافظ على الأدوات الدراسية
-**Fokus PdP:** Mendengar dan mengecam bunyi ف
-**SK/SP cadangan:** 1.1 / 1.1.1; sasaran kemahiran berdasarkan aktiviti buku teks pada h76, belum disahkan sebagai SP cetakan/RPT 2027 PdP rasmi.
+**Fokus PdP:** Ulang bunyi huruf fa
+**DSKP SK/SP:** 1.1 / 1.1.1 — محاكاة أصوات الحروف المسموعة وترديدها ونطقها.
 **Tarikh / masa / kelas:** Diisi guru ikut jadual sebenar.
-**Kosa kata / ayat:** فُلُوس، فَنَاء، فَرَاوِلَة، فَنِيل
-**Objektif pembelajaran:** Mengecam empat perkataan berhuruf ف selepas mendengar sebutan guru.
-**Kriteria kejayaan:** Murid memperlihatkan bukti minimum dalam objektif; rekod PBD dan tindakan pemulihan ditentukan guru.
+**Kosa kata / ayat:** فَرَاوِلَة، فِنَاء، فُلُوس، فَطِيرَة، صَحِيفَة، سَقْف
+**Objektif pembelajaran:** أن يحاكي التلميذ صوت الفاء بحركته في أربع كلمات من أصل خمس بعد سماعها.
+**Kriteria kejayaan:** يردّد التلميذ أربع كلمات على الأقل مع نطق الفاء وحركتها نطقًا صحيحًا.
 
-**Set induksi:** Guru memaparkan gambar duit dan strawberi untuk murid meneka bunyi awal.
+**Set induksi:** يعرض المعلّم صورة الفراولة وينطق فَرَاوِلَةٌ ببطء. يستمع التلاميذ ويردّدون صوت الفاء المفتوحة.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru menyebut kata di latihan mendengar h76, murid menunjukkan kad ف dan mengulang secara terkawal.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** ينطق المعلّم فَرَاوِلَةٌ وفِنَاءٌ وفُلُوسٌ مع عرض الصور. يردّد التلاميذ فَ وفِ وفُ ثم يكرّرون الكلمات.
 
-**Aktiviti 2 — Aplikasi murid:** Murid memadankan gambar dengan empat kad kata mengikut audio, kemudian membaca kepada pasangan.
+**Aktiviti 2 — Aplikasi murid:** ينطق المعلّم فَطِيرَةٌ وصَحِيفَةٌ وسَقْفٌ. يشير التلاميذ إلى الصورة المناسبة ويردّدون الكلمة المسموعة.
 
-**Pengukuhan / Penilaian (PBD):** Empat padanan audio-gambar dan sebutan dinilai.
+**Pengukuhan / Penilaian (PBD):** ينطق المعلّم خمس كلمات من الصفحة دون عرض كتابتها. يردّد التلميذ كل كلمة ويسجّل المعلّم صحة صوت الفاء وحركتها.
 
-**Penutup:** Murid menyebut satu kata ف.
+**Penutup:** يختار المعلّم صورة واحدة وينطق كلمتها. يردّد التلاميذ صوت الفاء ثم الكلمة.
 
-**BBM:** Buku Teks h76, gambar/kad alat sekolah, alat tulis sebenar, rekod PBD.
+**BBM:** الكتاب المدرسي، صور الكلمات وقائمة رصد النطق.
 
-**Refleksi guru:** ____ / ____ murid mencapai objektif. Pemulihan/pengayaan: _______________________.
+**Refleksi guru:** بلغ هدف الدرس ____ من ____ تلميذًا. إجراء المتابعة ____________________.
 
 **Buku Teks:** Bahasa Arab Tahun 2 KSSR Semakan 2017 DBP cetakan 2017 ISBN 978-983-49-1589-6, Unit 4 halaman bercetak **76**, PDF asal: https://drive.google.com/file/d/13CqpBb4HosAM_-HTEN-hhBCt2W5wVXCZ/view.
 **Pemetaan halaman:** Halaman PDF fizikal 1-based 88 ialah halaman bercetak 76; jangan gunakan halaman PDF sebagai bukti halaman bercetak.
 **DSKP:** https://drive.google.com/file/d/1WY_c69UshDm3jHzVK86G2xfu77UUkGYO/view.
 **RPT rujukan 2026:** https://anyflip.com/zxzlm/jffk/basic.
-**Had semakan:** Halaman bergambar telah diperiksa sebagai bukti aktiviti tetapi kod SP individu pada imej, tatabahasa/padanan PBD, penjadualan RPT 2027 A/B, dan kelulusan guru belum dimuktamadkan. Ayat serta aktiviti merupakan olahan, bukan salinan teks buku.
-**Status:** DRAF_SEMAK / BELUM READY. Pratonton staging sahaja, tidak mengubah data pengguna/Telegram/Web atau produksinya.
+**Semakan:** Panel buku teks dan DPK dipadankan dengan RPH Word.
+**Status:** Kandungan RPH Word disemak.

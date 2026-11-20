@@ -1,30 +1,30 @@
-# RPH Bahasa Arab Tahun 2 — PdP 048 (DRAF / BELUM READY)
+# RPH Bahasa Arab Tahun 2 — PdP 048
 
 **Tahun:** 2 | **Subjek:** Bahasa Arab KSSR Semakan 2017 | **Unit:** أحافظ على الأدوات الدراسية
-**Fokus PdP:** Membaca kata daripada segmen ط
-**SK/SP cadangan:** 2.1 / 2.1.1; sasaran kemahiran berdasarkan aktiviti buku teks pada h79, belum disahkan sebagai SP cetakan/RPT 2027 PdP rasmi.
+**Fokus PdP:** Kenal pasti suku kata berhuruf ta
+**DSKP SK/SP:** 2.2 / 2.2.2 — تحديد المقطع المقروء.
 **Tarikh / masa / kelas:** Diisi guru ikut jadual sebenar.
-**Kosa kata / ayat:** طَبِيب، طَعَام، طَوِيل، طَائِرَة
-**Objektif pembelajaran:** Membaca tiga kata dan menyusun dua kata berpandu.
-**Kriteria kejayaan:** Murid memperlihatkan bukti minimum dalam objektif; rekod PBD dan tindakan pemulihan ditentukan guru.
+**Kosa kata / ayat:** مَطْعَم، مَطَار، مَطْبَخ، طَبِيب، طَائِر
+**Objektif pembelajaran:** أن يحدّد التلميذ المقطع المكتوب الذي يشتمل على الطاء في ثلاث كلمات من أصل أربع.
+**Kriteria kejayaan:** يشير التلميذ إلى المقطع الذي فيه الطاء في ثلاث بطاقات على الأقل.
 
-**Set induksi:** Guru menunjukkan gambar doktor dan makanan untuk murid memberi tekaan.
+**Set induksi:** يعرض المعلّم صورتي المطار والمطعم. يسمّيهما التلاميذ ثم يقرؤون الاسمين مع المعلّم.
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing pembinaan kata daripada kad suku kata h79, menekankan bentuk ط dan tanda vokal.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** يعرض المعلّم مَطْعَمٌ ومَطَارٌ مقطّعتين كما في الصفحة. يقرأ التلاميذ ويشيرون إلى مَطْ وطَا.
 
-**Aktiviti 2 — Aplikasi murid:** Murid melengkapkan dua kad kata, membaca dan memadankan dengan gambar sepadan.
+**Aktiviti 2 — Aplikasi murid:** يوزّع المعلّم بطاقات مَطْبَخٌ وطَبِيبٌ وطَائِرٌ. يقرأ التلاميذ البطاقات ويختارون المقاطع التي فيها الطاء.
 
-**Pengukuhan / Penilaian (PBD):** Dua binaan kata dan tiga bacaan betul diperiksa.
+**Pengukuhan / Penilaian (PBD):** يعرض المعلّم أربع كلمات مقطّعة. يحدّد التلميذ المقطع المكتوب الذي فيه الطاء، ويسجّل المعلّم الاختيارات الصحيحة.
 
-**Penutup:** Murid membaca semula satu perkataan dengan ط.
+**Penutup:** يعرض المعلّم بطاقة طَائِرٌ. يحدّد التلاميذ طَا ويقرؤونه.
 
-**BBM:** Buku Teks h79, gambar/kad alat sekolah, alat tulis sebenar, rekod PBD.
+**BBM:** الكتاب المدرسي، صور الأماكن وبطاقات الكلمات والمقاطع.
 
-**Refleksi guru:** ____ / ____ murid mencapai objektif. Pemulihan/pengayaan: _______________________.
+**Refleksi guru:** بلغ هدف الدرس ____ من ____ تلميذًا. إجراء المتابعة ____________________.
 
 **Buku Teks:** Bahasa Arab Tahun 2 KSSR Semakan 2017 DBP cetakan 2017 ISBN 978-983-49-1589-6, Unit 4 halaman bercetak **79**, PDF asal: https://drive.google.com/file/d/13CqpBb4HosAM_-HTEN-hhBCt2W5wVXCZ/view.
 **Pemetaan halaman:** Halaman PDF fizikal 1-based 91 ialah halaman bercetak 79; jangan gunakan halaman PDF sebagai bukti halaman bercetak.
 **DSKP:** https://drive.google.com/file/d/1WY_c69UshDm3jHzVK86G2xfu77UUkGYO/view.
 **RPT rujukan 2026:** https://anyflip.com/zxzlm/jffk/basic.
-**Had semakan:** Halaman bergambar telah diperiksa sebagai bukti aktiviti tetapi kod SP individu pada imej, tatabahasa/padanan PBD, penjadualan RPT 2027 A/B, dan kelulusan guru belum dimuktamadkan. Ayat serta aktiviti merupakan olahan, bukan salinan teks buku.
-**Status:** DRAF_SEMAK / BELUM READY. Pratonton staging sahaja, tidak mengubah data pengguna/Telegram/Web atau produksinya.
+**Semakan:** Panel buku teks dan DPK dipadankan dengan RPH Word.
+**Status:** Kandungan RPH Word disemak.
