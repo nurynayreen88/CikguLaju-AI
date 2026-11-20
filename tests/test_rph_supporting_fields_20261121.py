@@ -103,7 +103,7 @@ def test_no_duplication_and_other_subjects_unchanged():
     english = ("Daily Lesson Plan", "English Year 3", "Listening to directions")
     assert supplement_details(english, DETAILS, ACTIVITIES, FOOTER) is DETAILS
     sains = supplement_details(SAMPLES[0], DETAILS, ACTIVITIES, FOOTER)
-    assert supplement_details(SAMPLES[0], DETAILS, ACTIVITIES, sains) == sains
+    assert supplement_details(SAMPLES[0], sains, ACTIVITIES, FOOTER) == sains
 
 
 def test_real_ppki_catalogue_renders_without_replacing_support():
