@@ -239,7 +239,9 @@
     const download=new Blob([output],{type:"application/pdf"});
     const url=URL.createObjectURL(download);
     const yearLabel=code.endsWith("_dlp")||code==="english"?"_YEAR_":"_TAHUN_";
-    const filename="CIKGULAJU_RPT_"+code.toUpperCase()+yearLabel+year+
+    const ppki=code==="pengurusan_kehidupan_ppki";
+    const filename=ppki?"CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_2_2027.pdf":
+      "CIKGULAJU_RPT_"+code.toUpperCase()+yearLabel+year+
       (result.personalized?"_2027_ISI_PROFIL.pdf":"_2027_PERCUMA.pdf");
     function downloadLink(doc){
       const link=doc.createElement("a");
@@ -258,7 +260,10 @@
         const title=doc.createElement("h1");
         title.textContent="RPT 2027 siap";
         const note=doc.createElement("p");
-        note.textContent=result.personalized?"PDF bersama profil sekolah sudah disediakan. Tekan Simpan PDF RPT. Pautan sah selama 10 minit.":"PDF percuma tanpa nama guru, nama sekolah dan logo sudah disediakan. Tekan Simpan PDF RPT. Pautan sah selama 10 minit.";
+        const ready=ppki?"Agihan PdP Unit 2 sudah disediakan.":
+          result.personalized?"PDF bersama profil sekolah sudah disediakan.":
+          "PDF percuma tanpa nama guru, nama sekolah dan logo sudah disediakan.";
+        note.textContent=ready+" Tekan Simpan PDF RPT. Pautan sah selama 10 minit.";
         doc.body.style.cssText="margin:0;min-height:100vh;padding:28px 18px;box-sizing:border-box;font-family:system-ui,Arial,sans-serif;background:#f0f7f5;color:#174353;";
         doc.body.replaceChildren(title,note,downloadLink(doc));
         setTimeout(()=>URL.revokeObjectURL(url),600000);
@@ -296,7 +301,9 @@
         return false;
       }
       if(button)button.disabled=true;
-      if(output)output.textContent="Menyediakan RPT 2027. Identiti sekolah hanya dicetak untuk akaun berbayar aktif…";
+      if(output)output.textContent=code==="pengurusan_kehidupan_ppki"?
+        "Menyediakan agihan PdP PPKI Unit 2…":
+        "Menyediakan RPT 2027. Identiti sekolah hanya dicetak untuk akaun berbayar aktif…";
       try{
         const status=await downloadWithOriginalCover(code,year,openedViewer,mobileRequest);
         if(output)output.textContent=(status.delivery==="phone-tab-link"?"PDF siap pada tab baharu. Tekan Simpan PDF RPT di tab itu. ":status.delivery==="phone-inline-link"?"PDF siap. Tekan Simpan PDF RPT di bawah untuk menyimpan. ":"PDF RPT berjaya dimuat turun. ")+
