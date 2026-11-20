@@ -44,7 +44,7 @@ def preview():
 
 @app.get("/contoh-rph.pdf")
 def public_rph_sample_pdf():
-    return send_file(PREVIEW.with_name("CikguLaju_10_Contoh_RPH_SK.pdf"),
+    return send_file(PREVIEW.with_name("CikguLaju_Contoh_RPH.pdf"),
                      mimetype="application/pdf", max_age=300, conditional=True)
 
 
