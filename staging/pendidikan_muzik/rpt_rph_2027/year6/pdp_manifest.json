@@ -348,7 +348,7 @@
       "source_book_verification_level": "BUKU_ONLINE_PROJEK_RASMI_SEMAKAN_TEKSTUAL",
       "project_book_evidence": true,
       "source_book_audio_file_verified": false,
-      "source_book_audio_numbers_printed": "Tiada audio projek khusus; pilihan lagu perlu disahkan",
+      "source_book_audio_numbers_printed": "74, 76, 86",
       "validation_status": "DRAF_PROJEK_RASMI_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
     },
     {
@@ -377,7 +377,7 @@
       "source_book_verification_level": "BUKU_ONLINE_PROJEK_RASMI_SEMAKAN_TEKSTUAL",
       "project_book_evidence": true,
       "source_book_audio_file_verified": false,
-      "source_book_audio_numbers_printed": "Tiada audio projek khusus; pilihan lagu perlu disahkan",
+      "source_book_audio_numbers_printed": "74, 76, 86",
       "validation_status": "DRAF_PROJEK_RASMI_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
     },
     {
@@ -739,7 +739,7 @@
       "source_book_verification_level": "BUKU_ONLINE_PROJEK_RASMI_SEMAKAN_TEKSTUAL",
       "project_book_evidence": true,
       "source_book_audio_file_verified": false,
-      "source_book_audio_numbers_printed": "Tiada audio projek khusus; pilihan lagu perlu disahkan",
+      "source_book_audio_numbers_printed": "89, 91, 139, 141, 162",
       "validation_status": "DRAF_PROJEK_RASMI_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
     },
     {
@@ -768,7 +768,7 @@
       "source_book_verification_level": "BUKU_ONLINE_PROJEK_RASMI_SEMAKAN_TEKSTUAL",
       "project_book_evidence": true,
       "source_book_audio_file_verified": false,
-      "source_book_audio_numbers_printed": "Tiada audio projek khusus; pilihan lagu perlu disahkan",
+      "source_book_audio_numbers_printed": "89, 91, 139, 141, 162",
       "validation_status": "DRAF_PROJEK_RASMI_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
     },
     {
@@ -975,7 +975,8 @@
       "reinforcement_specificity_reviewed": true,
       "reinforcement_review_scope": "CADANGAN_GURU_AKTIVITI_KHUSUS_SAHAJA; BUKAN_BUKU_TEKS_RASMI_DSKP_DILULUSKAN",
       "reinforcement_prior_unit_reference": "Muzik Tahun 6",
-      "source_book_audio_file_verified": false
+      "source_book_audio_file_verified": false,
+      "source_book_audio_numbers_printed": "94–95"
     },
     {
       "pdp_id": "MZ-Y6-35",
@@ -1009,7 +1010,8 @@
       "reinforcement_specificity_reviewed": true,
       "reinforcement_review_scope": "CADANGAN_GURU_AKTIVITI_KHUSUS_SAHAJA; BUKAN_BUKU_TEKS_RASMI_DSKP_DILULUSKAN",
       "reinforcement_prior_unit_reference": "Muzik Tahun 6",
-      "source_book_audio_file_verified": false
+      "source_book_audio_file_verified": false,
+      "source_book_audio_numbers_printed": "71–73"
     }
   ],
   "dskp_projects_per_year": 2,

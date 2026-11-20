@@ -12,7 +12,7 @@
 
 **Set induksi (4 minit):** Guru memperkenalkan contoh lagu, pola bunyi atau gambar berkaitan SEGARNYA AIR TERJUN; murid menunjukkan respons awal.
 
-**Aktiviti 1 — Eksplorasi (8 minit):** Guru membahagikan kumpulan nyanyian dan alat improvisasi serta mengedarkan skor corak irama.
+**Aktiviti 1 — Eksplorasi (8 minit):** Guru memainkan petikan Nyamannya di Air Terjun. Murid menepuk empat detik sebelum berlatih corak irama ciptaan dengan Audio 81 atau 82.
 
 **Aktiviti 2 — Aplikasi muzikal (10 minit):** Murid bertukar peranan, membina corak menggunakan kad ikon dan memainkannya pada lagu Nyamannya di Air Terjun.
 
@@ -20,7 +20,7 @@
 
 **Penutup (2 minit):** Murid melakukan satu contoh kemahiran, memberi refleksi dan menyatakan aspek yang mahu diperbaiki. Guru merekod pemerhatian PBD.
 
-**Bahan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, m/s 92-94; audio berlesen jika telah diperiksa, kad atau alat muzik yang sesuai.
+**Bahan:** Buku Kesenian Tahun 2 m/s 90 dan 92–94, Audio 80–82 Nyamannya di Air Terjun, kad ikon dan alat improvisasi.
 
 **Rujukan:** https://anyflip.com/iawvx/mran/basic/51-100. Teks buku/unit berkaitan telah dirujuk; semakan visual semua halaman belum lengkap.
 

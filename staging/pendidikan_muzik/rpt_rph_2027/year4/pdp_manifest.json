@@ -330,7 +330,7 @@
       "source_book_crosscheck_scope": "PROJEK_KESENIAN_TERPADU_TAHUN4; ADAPTASI_BAHAGIAN_MUZIK",
       "source_book_crosscheck_source_url": "https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view",
       "source_book_edition": "Pendidikan Kesenian Tahun 4 SK DBP2019 KSSR Semakan2017",
-      "source_book_audio_numbers_printed": "Nombor Audio Projek Kesenian tidak dipadankan ke fail",
+      "source_book_audio_numbers_printed": "14, 16, 24, 26",
       "source_book_audio_file_verified": false,
       "source_book_project_evidence": true,
       "validation_status": "DRAF_PROJEK_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
@@ -358,7 +358,7 @@
       "source_book_crosscheck_scope": "PROJEK_KESENIAN_TERPADU_TAHUN4; ADAPTASI_BAHAGIAN_MUZIK",
       "source_book_crosscheck_source_url": "https://drive.google.com/file/d/1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k/view",
       "source_book_edition": "Pendidikan Kesenian Tahun 4 SK DBP2019 KSSR Semakan2017",
-      "source_book_audio_numbers_printed": "Nombor Audio Projek Kesenian tidak dipadankan ke fail",
+      "source_book_audio_numbers_printed": "14, 16, 24, 26",
       "source_book_audio_file_verified": false,
       "source_book_project_evidence": true,
       "validation_status": "DRAF_PROJEK_SEMAKAN_TEKSTUAL_BUKU; BUKAN_FINAL"
@@ -1085,7 +1085,8 @@
       "reinforcement_specificity_reviewed": true,
       "reinforcement_review_scope": "CADANGAN_GURU_AKTIVITI_KHUSUS_SAHAJA; BUKAN_BUKU_TEKS_RASMI_DSKP_DILULUSKAN",
       "reinforcement_prior_unit_reference": "Kesenian Tahun 4",
-      "source_book_audio_file_verified": false
+      "source_book_audio_file_verified": false,
+      "source_book_audio_numbers_printed": "117"
     },
     {
       "pdp_id": "MZ-Y4-35",
@@ -1119,7 +1120,8 @@
       "reinforcement_specificity_reviewed": true,
       "reinforcement_review_scope": "CADANGAN_GURU_AKTIVITI_KHUSUS_SAHAJA; BUKAN_BUKU_TEKS_RASMI_DSKP_DILULUSKAN",
       "reinforcement_prior_unit_reference": "Kesenian Tahun 4",
-      "source_book_audio_file_verified": false
+      "source_book_audio_file_verified": false,
+      "source_book_audio_numbers_printed": "49, 68, 85"
     }
   ],
   "source_book_found_id": "1atgPcWpovM_In9W0EXTvWo2qBjZqRe5k",

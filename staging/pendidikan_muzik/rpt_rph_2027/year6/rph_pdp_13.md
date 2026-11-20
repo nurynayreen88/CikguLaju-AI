@@ -13,7 +13,7 @@
 
 **Set Induksi — 4 minit:** Guru mengimbas peranan ketua kumpulan, etika persembahan dan pemanasan sebelum menggunakan alat muzik.
 
-**Aktiviti 1 — Bimbingan projek (8 minit):** Ketua menyemak alat, pemanasan suara, peranan, tertib masuk dan latihan akhir menurut etika halaman 44–45.
+**Aktiviti 1 — Bimbingan projek (8 minit):** Ketua menyemak audio bagi lagu pilihan, alat, peranan dan tertib masuk. Murid berlatih satu bahagian yang belum seragam sebelum persembahan.
 
 **Aktiviti 2 — Pelaksanaan projek (10 minit):** Kumpulan membuat persembahan, mengamalkan etika sebelum, semasa dan selepas persembahan, serta menilai kumpulan lain dengan borang.
 
@@ -21,7 +21,7 @@
 
 **Penutup — 2 minit:** Ketua kumpulan berkongsi satu penambahbaikan serta memastikan peralatan disimpan dengan selamat.
 
-**Bahan:** Buku teks halaman 44-45, borang perancangan/penilaian, senarai alat, alat muzik sekolah.
+**Bahan:** Buku Muzik Tahun 6 m/s 44–45, borang penilaian, alat muzik dan audio contoh Mikroorganisma.
 
 **Rujukan:** Buku Teks Pendidikan Muzik Tahun 6 SK DBP 2021, halaman 44-45; https://anyflip.com/zcnoa/yxcj/basic/51-100. Buku menamakan dua projek rasmi Penggal Satu/Dua sahaja; **tiada Projek 3 rasmi**. Fail lagu/audio sebenar belum diaudit.
 

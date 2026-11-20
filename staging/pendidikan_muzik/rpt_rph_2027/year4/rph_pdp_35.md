@@ -14,7 +14,7 @@
 
 **Set Induksi — 4 minit:** Guru memaparkan carta penjarian G/A/B/C'/D' dan kad pola perkusi, kemudian murid meneka dua not pada baluk.
 
-**Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid membaca skor ringkas yang pernah dilatih pada Tahun 4, menepuk detik sebelum meniup rekoder dan membetulkan penjarian di bawah bimbingan guru.
+**Aktiviti 1 — Ulang kaji khusus (8 minit):** Guru memperdengarkan petikan Audio 49 dan 68 untuk mengimbas penjarian. Murid membaca skor, menepuk detik dan memainkan frasa rekoder. Guru boleh menggunakan Audio 85 sebagai pola perkusi contoh.
 
 **Aktiviti 2 — Aplikasi kemahiran (10 minit):** Kumpulan A memainkan frasa rekoder, Kumpulan B menepuk atau memainkan pola perkusi empat detik, kemudian kedua-dua kumpulan bertukar peranan.
 
@@ -22,7 +22,7 @@
 
 **Penutup — 2 minit:** Murid mengenal pasti satu perbezaan antara peranan melodi dengan iringan. Guru merekod pemerhatian PBD.
 
-**Bahan:** Rekoder individu bersih, carta G/A/B/C'/D', alat perkusi, skor rujukan terdahulu yang sah.
+**Bahan:** Rekoder, carta penjarian, alat perkusi, buku Kesenian Tahun 4 m/s 60, 78 dan 80, serta Audio 49, 68 dan 85.
 
 **Rujukan dan had sumber:** Ini **cadangan ulang kaji** menggunakan kemahiran yang pernah dipelajari, bukan bab atau halaman baharu buku teks. RPT lama menamakan `Projek Seni Muzik 3`; DSKP Muzik mempunyai **dua projek rasmi** dan tidak menyokong pelabelan Projek 3. Kod SP sumber asal disimpan dalam manifest untuk audit; cadangan SK/SP ini belum diluluskan silang oleh pakar kurikulum. Tiada audio atau lirik diperolehi/diaktifkan oleh bot.
 

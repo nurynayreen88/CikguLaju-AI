@@ -689,7 +689,7 @@
       "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
       "source_book_text_crosscheck": true,
       "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
-      "source_book_audio_numbers_printed": "Tiada audio baharu pada halaman ini",
+      "source_book_audio_numbers_printed": "67–69",
       "source_book_audio_file_verified": false,
       "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK"
     },
@@ -718,7 +718,14 @@
       "rph_specificity_status": "TEKS_BUKU_MUZIK_TERPADU_DIPADANKAN",
       "validation_status": "DRAF_TEXTBOOK_CHECK_ONLY",
       "source_book_project_evidence": true,
-      "source_book_crosscheck_scope": "PROJEK_KESENIAN_TERPADU; ADAPTASI_BAHAGIAN_MUZIK_SAHAJA"
+      "source_book_crosscheck_scope": "PROJEK_KESENIAN_TERPADU; ADAPTASI_BAHAGIAN_MUZIK_SAHAJA",
+      "source_book_audio_numbers_printed": "Audio Projek Penggal Dua — Permainya Negaraku",
+      "source_book_audio_named": [
+        {
+          "catalog_title": "Audio 36.1 -Projek Penggal Dua...wav",
+          "title": "Audio Projek Penggal Dua — Permainya Negaraku"
+        }
+      ]
     },
     {
       "pdp_id": "MZ-Y2-27",
@@ -746,7 +753,14 @@
       "rph_specificity_status": "TEKS_BUKU_MUZIK_TERPADU_DIPADANKAN",
       "validation_status": "DRAF_TEXTBOOK_CHECK_ONLY",
       "source_book_project_evidence": true,
-      "source_book_crosscheck_scope": "PROJEK_KESENIAN_TERPADU; ADAPTASI_BAHAGIAN_MUZIK_SAHAJA"
+      "source_book_crosscheck_scope": "PROJEK_KESENIAN_TERPADU; ADAPTASI_BAHAGIAN_MUZIK_SAHAJA",
+      "source_book_audio_numbers_printed": "Audio Projek Penggal Dua — Permainya Negaraku",
+      "source_book_audio_named": [
+        {
+          "catalog_title": "Audio 36.1 -Projek Penggal Dua...wav",
+          "title": "Audio Projek Penggal Dua — Permainya Negaraku"
+        }
+      ]
     },
     {
       "pdp_id": "MZ-Y2-28",
@@ -870,7 +884,7 @@
       "source_book_url": "https://anyflip.com/iawvx/mran/basic/51-100",
       "source_book_text_crosscheck": true,
       "source_book_verification_level": "PUBLIC_TEXTBOOK_EXTRACTED_TEXT_NOT_PAGE_IMAGE_SIGNOFF",
-      "source_book_audio_numbers_printed": "Tiada audio khusus baharu halaman 92–94",
+      "source_book_audio_numbers_printed": "80–82",
       "source_book_audio_file_verified": false,
       "rph_specificity_status": "TEKS_BUKU_TAHUN2_DISEMAK"
     },
@@ -935,7 +949,8 @@
       "reinforcement_specificity_reviewed": true,
       "reinforcement_review_scope": "CADANGAN_GURU_AKTIVITI_KHUSUS_SAHAJA; BUKAN_BUKU_TEKS_RASMI_DSKP_DILULUSKAN",
       "reinforcement_prior_unit_reference": "Kesenian Tahun 2",
-      "source_book_audio_file_verified": false
+      "source_book_audio_file_verified": false,
+      "source_book_audio_numbers_printed": "70–72"
     },
     {
       "pdp_id": "MZ-Y2-35",
@@ -969,7 +984,8 @@
       "reinforcement_specificity_reviewed": true,
       "reinforcement_review_scope": "CADANGAN_GURU_AKTIVITI_KHUSUS_SAHAJA; BUKAN_BUKU_TEKS_RASMI_DSKP_DILULUSKAN",
       "reinforcement_prior_unit_reference": "Kesenian Tahun 2",
-      "source_book_audio_file_verified": false
+      "source_book_audio_file_verified": false,
+      "source_book_audio_numbers_printed": "84–86"
     }
   ],
   "dskp_projects_per_year": 2,

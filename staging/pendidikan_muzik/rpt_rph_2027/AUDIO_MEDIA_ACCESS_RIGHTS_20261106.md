@@ -1,3 +1,26 @@
+## 20 November 2026 — Semakan baki 29 PdP Tahun 2–6
+
+| Tahun | PdP | Bahan dan rujukan |
+|---|---|---|
+| 2 | 25, 32, 34–35 | Audio 67–69 untuk *Tembikar Cantik*, m/s 70 dan 72–73. Audio 80–82 untuk *Nyamannya di Air Terjun*, m/s 90 dan 92–94. Audio 70–72 ialah pilihan latihan dua tempo, m/s 71. Audio 84–86 untuk ulang kaji sompoton dan Sumazau, m/s 95–96. [Buku Kesenian](https://anyflip.com/iawvx/mran/basic/51-100) |
+| 2 | 26–27 | *Permainya Negaraku*, m/s 46–47. Fail asal berjudul *Audio 36.1 -Projek Penggal Dua...wav* ialah PCM sepanjang 835.92 saat (147,456,766 bait) dalam arkib Drive. [Buku Kesenian](https://anyflip.com/vextx/jgdi/basic/51-100) |
+| 3 | 34 | Audio 60 dan 63 *Selamat Malam* untuk mengulang penjarian B, A dan G, m/s 71. [Buku Kesenian](https://anyflip.com/pkots/gcvz/basic) |
+| 4 | 12–13, 34–35 | Audio 14/16 dan 24/26 sebagai contoh lagu Unit 1–5 untuk projek m/s 4–5. Audio 117 untuk gerak Kolattam m/s 102–103. Audio 49, 68 dan 85 untuk menyemak penjarian C’, D’ dan pola perkusi daripada m/s 60, 78 dan 80. [Buku Kesenian](https://fliphtml5.com/jfuhh/hbrx/Buku_Teks_Pendidikan_Kesenian_Tahun_4/) |
+| 6 | 12–13, 26–27, 34–35 | Projek m/s 44–45 memilih lagu Unit 1–5. Audio 74, 76 dan 86 *Mikroorganisma* sebagai contoh. Projek m/s 88–89 memilih lagu Unit 6–10. Audio 89, 91, 139, 141 dan 162 sebagai contoh *Memori Indah* dan *Rindu*. Audio 94–95 untuk ulang kaji melodi kaunter m/s 48–49. Audio 71–73 untuk apresiasi klasik m/s 34–35. [Buku Muzik](https://fliphtml5.com/hkvtu/xnxg/) |
+
+Fail WAV Projek Penggal Dua Tahun 2 diperiksa dalam salinan arkib, dengan SHA-256 `40b2d14d4109d828126c9cbf89a561ce7ed213f32893e1b71fedceb24701e1a6`. Laluan muat turun asal dengan parameter pengesahan fail besar disemak sebagai lampiran `audio/wav` tanpa log masuk Google. Parameter digunakan hanya untuk ID fail dalam audit dan selepas padanan tepat PdP 26–27. Pautan **Muat Turun Audio** di Web dibuka di tab yang sama sebagai lampiran, dan tidak memaparkan pautan paparan Drive.
+
+| Tahun | Muat Turun Audio | PdP tanpa trek khusus |
+|---|---:|---|
+| 2 | 31 | 03, 07, 10, 15. Eksplorasi alat, ciptaan corak dan permainan ikon. |
+| 3 | 31 | 11, 30, 33, 35. Apresiasi jaz, solo/koir, muzik rock dan refleksi akhir. Buku menggunakan penerangan, gambar atau perbincangan. Guru boleh memperdengarkan contoh sendiri. |
+| 4 | 34 | 03. Penulisan not C’ dan D’ pada baluk. |
+| 5 | 33 | 09, 11. Permainan mencipta dan memainkan melodi sendiri. |
+| 6 | 34 | 24. Murid mencipta melodi dan memainkannya dalam kumpulan. |
+| Jumlah | 163 | 12 |
+
+Semakan ini meliputi keseluruhan 175 PdP. Lima belas padanan muat turun baharu menggunakan semula rakaman yang telah lulus audit kebolehcapaian. Fail projek Tahun 2 meliputi dua PdP dan menambah satu rakaman unik. Jumlahnya 615 fail unik dengan muat turun terus.
+
 ## 20 November 2026 — Audio projek Tahun 5 dan pengayaan rekoder Tahun 4
 
 | Tahun | PdP | Padanan | Rujukan buku teks |

@@ -6,13 +6,13 @@
 **Tempoh cadangan:** 30 minit
 **Status:** DRAF STAGING — belum FINAL READY
 
-**Objektif:** Mempersembahkan satu lagu/iringan Penggal Dua bertema Mari Melancong dan memberikan maklum balas rakan.
+**Objektif:** Mempersembahkan Permainya Negaraku secara berkumpulan dan memberikan satu ulasan kepada kumpulan rakan.
 
 **Kriteria kejayaan:** Murid melaksanakan tugasan serta memenuhi sekurang-kurangnya tiga daripada empat aspek yang diperiksa guru.
 
 **Set Induksi — 4 minit:** Guru meminta murid mengulang pemanasan suara dan menyemak alat serta giliran kumpulan.
 
-**Aktiviti 1 — Demonstrasi dan bimbingan (8 minit):** Kumpulan menjalankan latihan akhir satu frasa, iringan atau pergerakan untuk persembahan bertema Mari Melancong dan membetulkan tempo yang tidak seragam.
+**Aktiviti 1 — Demonstrasi dan bimbingan (8 minit):** Murid mengulang satu frasa Permainya Negaraku dengan audio projek dan menyemak isyarat mula serta tempo iringan. Guru membimbing kumpulan membetulkan satu peralihan.
 
 **Aktiviti 2 — Aplikasi dan persembahan (10 minit):** Kumpulan mempersembahkan aktiviti muzik yang dirancang, rakan merekod ketepatan irama, kerjasama dan pengurusan alat; murid menyimpan semua alat selepas sesi.
 
@@ -20,9 +20,9 @@
 
 **Penutup — 2 minit:** Murid menyatakan satu cara memperbaiki persembahan berkumpulan. Guru merekod PBD.
 
-**Bahan:** Buku Kesenian halaman 46–47, borang penilaian dan alat iringan selamat.
+**Bahan:** Buku Kesenian Tahun 2 m/s 46–47, audio Permainya Negaraku, borang penilaian dan alat iringan selamat.
 
-**Rujukan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, DBP 2017, halaman 46-47, https://anyflip.com/iawvx/mran/basic. Projek buku Kesenian menggabungkan Seni Visual dan Muzik; RPH ini cuma pemetaan bahagian muzik, bukan penggantian kod rasmi DSKP Muzik. Semua audio sebenar belum disahkan.
+**Rujukan:** Buku Teks Pendidikan Kesenian Tahun 2 SK, DBP 2017, halaman 46-47, https://anyflip.com/iawvx/mran/basic. Projek buku Kesenian menggabungkan Seni Visual dan Muzik; RPH ini cuma pemetaan bahagian muzik, bukan penggantian kod rasmi DSKP Muzik. Halaman 47 menyenaraikan Audio Projek Penggal Dua dan skor Permainya Negaraku.
 
 **Refleksi/pemulihan:** ________________________________________________
 

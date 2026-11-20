@@ -16,13 +16,13 @@
 
 **Aktiviti 1 — Ulang kaji khusus (8 minit):** Murid merujuk semula buku Kesenian Tahun 4 halaman 100–101, membezakan peranan muzik pengiring dan corak bunyi, kemudian menyatakan dua fakta tepat.
 
-**Aktiviti 2 — Aplikasi kemahiran (10 minit):** Murid berlatih gerak empat detik daripada pola halaman 102–103 menggunakan tepukan atau pengganti kayu lembut secara berpasangan, sambil mengekalkan jarak selamat.
+**Aktiviti 2 — Aplikasi kemahiran (10 minit):** Murid memainkan pola empat detik dan berlatih pergerakan Kolattam mengikut Audio 117. Guru menyemak ketepatan detik dan jarak selamat antara pasangan.
 
 **Pengukuhan dan Penilaian — 6 minit:** Rubrik: dua fakta Kolattam tepat, corak empat detik dan keselamatan ruang; guru memberi intervensi kepada murid yang keliru arah gerakan.
 
 **Penutup — 2 minit:** Murid menunjukkan gerakan paling tepat dan satu etika ketika menggunakan alat ganti. Guru merekod pemerhatian PBD.
 
-**Bahan:** Buku Kesenian Tahun 4 halaman 100–103 untuk ulang kaji, kad detik dan alat ganti lembut.
+**Bahan:** Buku Kesenian Tahun 4 m/s 100–103 sebagai ulang kaji, Audio 117, kad detik dan alat ganti lembut.
 
 **Rujukan dan had sumber:** Ini **cadangan ulang kaji** menggunakan kemahiran yang pernah dipelajari, bukan bab atau halaman baharu buku teks. RPT lama menamakan `Projek Seni Muzik 3`; DSKP Muzik mempunyai **dua projek rasmi** dan tidak menyokong pelabelan Projek 3. Kod SP sumber asal disimpan dalam manifest untuk audit; cadangan SK/SP ini belum diluluskan silang oleh pakar kurikulum. Tiada audio atau lirik diperolehi/diaktifkan oleh bot.
 
