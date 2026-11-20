@@ -5,7 +5,7 @@ No standards, page references, learning tasks, PBD or follow-up are rewritten.
 import pytest
 
 from web.sains_y3_unit_awal import (
-    LESSONS as YEAR3_OPENING, SP as YEAR3_SP, plan_rows,
+    LESSONS as YEAR3_OPENING, SP as YEAR3_SP, plan_rows, plan_text,
 )
 from web.sains_unit_awal import LESSONS as OTHER_OPENING, STANDARDS
 from web.sains_opening_pedagogy_20261121 import pedagogy_for_plan
@@ -33,6 +33,12 @@ def test_supports_are_specific_and_original_curriculum_and_pbd_remain(plan):
     assert result["EMK / NILAI"].strip()
     assert result["KBAT / PAK21"].startswith("KBAT: ")
     assert "; PAK21: " in result["KBAT / PAK21"]
+    source_text = plan_text(plan, standards)
+    assert "EMK / NILAI: " + result["EMK / NILAI"] in source_text
+    assert "KBAT / PAK21: " in source_text
+    assert plan.guided in source_text
+    assert plan.independent in source_text
+    assert "PEMULIHAN / PENGAYAAN: " + plan.follow_up in source_text
     assert result["KBAT / PAK21"] != "Kemahiran Proses Sains"
     assert len(result["EMK / NILAI"]) <= 78
     assert len(result["KBAT / PAK21"]) <= 138
