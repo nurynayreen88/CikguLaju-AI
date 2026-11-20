@@ -165,7 +165,7 @@ class PpkiWebTest(unittest.TestCase):
         self.assertIn("TAHUN_3_UNIT_1_2_3_4_5_2027.pdf", self.client.get(url).headers["Content-Disposition"])
 
 
-    def test_year4_first_pengurusan_diri_unit(self):
+    def test_year4_catalog_works_before_and_after_unit2_publication(self):
         self.catalog_year4 = {
             **self.catalog, "year": 4,
             "units": [{"value": ppki.UNIT1, "label": "Unit 1 · Bertamu di Inap Desa"}],
@@ -186,6 +186,25 @@ class PpkiWebTest(unittest.TestCase):
         self.assertIn("TAHUN_4_UNIT_1", rpt.headers["Content-Disposition"])
         self.assertEqual(self.source_requests[-1][0], "rpt.pdf?year=4")
         self.assertEqual(self.client.get(f"/api/rpt/2027/all/{ppki.RPT_MANIPULATIVE_CODE}/4.pdf").status_code, 404)
+        self.catalog_year4["additional_units"] = [{
+            "value": ppki.UNIT, "label": "Unit 2 · Kebersihan Diri",
+            "lessons": [{"value": f"{number:03d}", "label": f"PdP {number:03d}",
+                         "formats": ["word", "pdf"], "textbook_ref": "Buku Teks"}
+                        for number in range(10, 26)],
+        }]
+        query = {"year": 4, "kind": "pdp", "subject": ppki.SUBJECT, "unit": ppki.UNIT}
+        opts = self.client.get("/api/options", query_string=query)
+        self.assertEqual([row["value"] for row in opts.json], [f"{n:03d}" for n in range(10, 26)])
+        for fmt in ("word", "pdf"):
+            choice = {**selected, "unit": ppki.UNIT, "lesson": "025"}
+            self.assertEqual(self.client.get(f"/api/web/rph/{fmt}", query_string=choice).status_code, 200)
+        rpt = self.client.get(f"/api/rpt/2027/all/{ppki.RPT_CODE}/4.pdf")
+        self.assertIn("TAHUN_4_UNIT_1_2_2027.pdf", rpt.headers["Content-Disposition"])
+        listing = self.client.get("/api/rpt/2027/catalog").json
+        entry, = [row for row in listing["subjects"] if row["code"] == ppki.RPT_CODE]
+        year4, = [row for row in entry["years"] if row["year"] == 4]
+        self.assertIn("25 PdP Unit 1–2", year4["note"])
+
 
     def test_year3_manipulative_rph_and_rpt(self):
         self.catalog_year3 = {
