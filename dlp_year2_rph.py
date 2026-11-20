@@ -289,6 +289,8 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
         return element
 
     details, activities = _rph_display_rows(details, activities)
+    from web.rph_supporting_fields_20261121 import supplement_footer
+    reflection = supplement_footer(heading, details, activities, reflection)
     activities = _activity_table(activities, english=heading[0] == "Daily Lesson Plan")
     if mathematics:
         heading, details = _math_details(heading, details, teacher)
@@ -404,6 +406,8 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
 
     fill = colors.HexColor("#" + (label_fill or (_MATHEMATICS_FILL if mathematics else _SCIENCE_FILL)))
     details, activities = _rph_display_rows(details, activities)
+    from web.rph_supporting_fields_20261121 import supplement_footer
+    reflection = supplement_footer(heading, details, activities, reflection)
     activities = _activity_table(activities, english=heading[0] == "Daily Lesson Plan")
     if mathematics:
         heading, details = _math_details(heading, details, teacher)
