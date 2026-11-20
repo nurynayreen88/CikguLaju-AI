@@ -10,6 +10,7 @@ from pathlib import Path
 from unittest.mock import Mock, patch
 
 from flask import Flask
+from web.pi_navigation import pi_document_standards
 from web_v1_verified_pdp import VerifiedPdpCatalog
 from web.telegram_verified_rpt_rph_bridge import (
     _native_state, _native_text, _resolve_verified_rpt, SourceUnavailable,
@@ -18,6 +19,20 @@ from web.telegram_verified_rpt_rph_bridge import (
 
 
 class NativeRPTBridgeTests(unittest.TestCase):
+    def test_pi_shared_source_cell_keeps_one_complete_description_per_standard(self):
+        sk = "1.6 تجويد : باچاءن مد. 1.7 تجويد : ڤنجڠ مد."
+        sp = "1.6.2 مڠنل ڤستي باچاءن. 1.6.3 مڠڤليكاسيكن باچاءن."
+        for codes, source in [(("1.6", "1.7"), sk), (("1.6.2", "1.6.3"), sp)]:
+            expected = source.replace(" " + codes[1], "\n" + codes[1])
+            with self.subTest(codes=codes):
+                self.assertEqual(pi_document_standards(codes, (source, source)), expected)
+                self.assertEqual(
+                    pi_document_standards(codes, (source.removeprefix(codes[0]), source)),
+                    expected,
+                )
+        self.assertEqual(pi_document_standards(("1.6",), (sk,)), sk)
+        self.assertEqual(pi_document_standards(("1.6.2",), ("",)), "")
+
     def setUp(self):
         self.folder = tempfile.TemporaryDirectory()
         self.addCleanup(self.folder.cleanup)

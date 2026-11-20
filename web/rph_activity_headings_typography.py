@@ -121,6 +121,16 @@ def install(runtime):
         return False
     previous_word = runtime.create_word_file
     previous_pdf_markup = runtime._rph_activity_heading_markup_v25184
+    previous_document_rows = getattr(runtime, "_rph_document_rows", None)
+
+    def document_rows_with_pi_standards(state, rows):
+        rows = previous_document_rows(state, rows)
+        if (runtime._pi_primary_v25210(state)
+                and state.get("year") in ("Tahun 2", "Tahun 3", "Tahun 4", "Tahun 5", "Tahun 6")):
+            from web.pi_navigation import pi_rph_document_rows
+
+            return pi_rph_document_rows(state, rows)
+        return rows
 
     def word_with_consistent_activity_headings(state, source_text, chat_id):
         path = previous_word(state, source_text, chat_id)
@@ -138,5 +148,7 @@ def install(runtime):
 
     runtime.create_word_file = word_with_consistent_activity_headings
     runtime._rph_activity_heading_markup_v25184 = pdf_with_consistent_activity_headings
+    if callable(previous_document_rows):
+        runtime._rph_document_rows = document_rows_with_pi_standards
     runtime._CIKGULAJU_RPH_HEADING_BOLD_20261106 = True
     return True
