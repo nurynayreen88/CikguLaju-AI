@@ -122,8 +122,12 @@ def build_staging_preview(root, year, pdp):
             parent = "4.1"
         if parent not in standards:
             standards.append(parent)
-    ref = [v for k, v in items if re.search(r"^(?:refleksi|catatan.*pemulihan)", k, re.I)]
-    reflection = ref[0] if ref else "____________"
+    # The combined blank writing lines in the source are not teaching content.
+    footer_values = {
+        label.casefold(): value
+        for label, value in items
+        if value.strip(" _-—\n\t")
+    }
     metadata = [
         ("Nama Guru", ""), ("Nama Sekolah", ""), ("Tarikh", ""), ("Hari", ""),
         ("Masa", ""), ("Kelas", ""), ("Bilangan Murid", ""), ("Tahun", str(year)),
@@ -146,8 +150,8 @@ def build_staging_preview(root, year, pdp):
             {"label": "Penutup (2 minit)", "activity": labels["closure"][1], "notes": ""},
         ],
         "footer": [
-            {"label": "Pemulihan / Pengayaan", "value": reflection or "____________"},
-            {"label": "Refleksi", "value": "____________"},
+            {"label": "Pemulihan / Pengayaan", "value": footer_values.get("pemulihan / pengayaan", "")},
+            {"label": "Refleksi", "value": footer_values.get("refleksi", "")},
         ],
     }
     # This asserts only pedagogical phase fidelity, NOT full document conversion.

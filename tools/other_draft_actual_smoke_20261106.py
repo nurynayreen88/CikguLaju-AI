@@ -53,12 +53,43 @@ def main():
         raise AssertionError("Network prohibited in offline QA")
     with patch.object(requests.sessions.Session,"request",new=block_network):
         import app as runtime
+    from web.rph_teacher_reflection import install as install_teacher_reflection
+    assert install_teacher_reflection(runtime)
     web=Flask("other-draft-smoke")
     web.register_blueprint(create_provisional_subjects_blueprint(runtime))
     c=web.test_client()
     auth={"Authorization":"Bearer "+"t"*40}
     unauth=c.get("/internal/rph/v1/other-drafts/units?year=2&subject=ARAB")
     assert unauth.status_code==401,unauth.json
+    from docx import Document
+    from pypdf import PdfReader
+
+    reflection = "Murid mengulang corak irama dengan bimbingan guru."
+    for year in range(2, 7):
+        unit = _unit_rows(year, "MUZIK")[0]["value"]
+        lesson = _lesson_rows(year, "MUZIK", unit)[0]["value"]
+        selection = {"year": year, "subject": "MUZIK", "unit": unit, "lesson": lesson}
+        for manual in (False, True):
+            teacher = {"class": "Bestari", "date": "2027-02-01",
+                       "time": "08:00 - 09:00", "students": "30"}
+            if manual:
+                teacher["reflection"] = reflection
+            expected = reflection if manual else "murid mencapai objektif"
+            for fmt in ("word", "pdf"):
+                result = c.post("/internal/rph/v1/other-drafts/render", headers=auth,
+                                json={"selection": selection, "teacher": teacher, "format": fmt})
+                assert result.status_code == 200, (selection, fmt, result.json)
+                if fmt == "word":
+                    footer = Document(io.BytesIO(result.data)).tables[-1]
+                    assert [row.cells[0].text for row in footer.rows] == ["Refleksi"]
+                    content = footer.cell(0, 1).text
+                else:
+                    pages = PdfReader(io.BytesIO(result.data)).pages
+                    assert len(pages) == 1
+                    content = pages[0].extract_text().split("Refleksi", 1)[1]
+                    assert "Pemulihan / Pengayaan" not in pages[0].extract_text()
+                assert expected in content, (selection, fmt, content)
+    print("MUSIC_REFLECTION_PASS 20", flush=True)
     for subject,years in (("ARAB",(2,4,6)),("MUZIK",(2,4,6))):
         for year in years:
             first=_unit_rows(year,subject)[0]
@@ -100,8 +131,6 @@ def main():
                         xml = z.read("word/document.xml")
                         assert b"DRAF" not in xml
                         if reviewed:
-                            from docx import Document
-
                             doc = Document(io.BytesIO(body))
                             assert [len(t.columns) for t in doc.tables] == [2, 3, 2]
                             assert "خطة التدريس اليومية" in doc.paragraphs[0].text
@@ -122,8 +151,6 @@ def main():
                         "teacher":{"class":"","date":"","time":"","students":""},
                         "format":"pdf"})
                 assert bad.status_code==503,bad.json
-    from docx import Document
-
     unit_one_standards = (
         "1.1.1", "1.1.2", "1.2.1", "2.1.1", "2.2.1", "3.1.1",
         "3.2.1", "1.3.1", "1.3.2", "2.3.5", "3.4.1", "1.4.1",
