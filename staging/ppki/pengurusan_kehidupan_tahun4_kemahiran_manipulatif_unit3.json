@@ -1,0 +1,363 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 4,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Kemahiran Manipulatif",
+  "unit": "Unit 3 · Ringan Tangan",
+  "content_standards": {
+    "3.1": "Kemahiran bilateral.",
+    "3.2": "Manipulasi alatan dan bahan.",
+    "3.3": "Kemahiran visual-motor."
+  },
+  "learning_standards": {
+    "3.1.1": "Melakukan pergerakan dengan kedua-dua belah tangan dalam aktiviti melipat, menggulung, mengikat, memunjut, merenyuk dan menggumpal.",
+    "3.1.2": "Mereka cipta kraf dengan menggabungkan beberapa pergerakan.",
+    "3.2.1": "Melakukan pergerakan menggunakan alatan dan bahan untuk menyenduk, menyudu, mencucuk, mencedok, memotong, memutar, menyepit dan menyapu.",
+    "3.2.2": "Melakukan gabungan beberapa pergerakan menggunakan alatan dan bahan semasa makan.",
+    "3.2.3": "Melakukan pergerakan menyangkut, menyepit dan menggosok.",
+    "3.2.4": "Melakukan gabungan pergerakan semasa menguruskan pakaian.",
+    "3.3.1": "Membentuk bayang haiwan dengan memanipulasi jari tangan.",
+    "3.3.2": "Menghasilkan bayang-bayang bergerak dengan memanipulasi jari tangan.",
+    "3.3.3": "Melukis gambar berpandukan grid bertitik.",
+    "3.3.4": "Melukis gambar atau objek yang dilihat."
+  },
+  "lessons": [
+    {
+      "pdp": "067",
+      "title": "Melipat, menggulung dan merenyuk kertas",
+      "sp": "3.1.1",
+      "book": "Buku Teks hlm. 88–89",
+      "focus": "Melipat, menggulung dan merenyuk kertas.",
+      "objective": "Murid dapat melakukan lipatan, gulungan dan renyukan menggunakan kedua-dua tangan.",
+      "materials": "Kertas warna, tisu, kad langkah dan dulang kerja.",
+      "induction": [
+        "Paparkan gambar Hidupan Dasar Laut dan tiga contoh bentuk kertas.",
+        "Tunjuk contoh yang dibuat melalui lipatan."
+      ],
+      "guided": [
+        "Tunjukkan cara memegang kertas dengan kedua-dua tangan untuk melipat, menggulung dan merenyuk.",
+        "Tiru setiap pergerakan menggunakan bahan latihan."
+      ],
+      "practice": [
+        "Sediakan tiga sampel yang berbeza dan minta murid memilih pergerakan yang betul bagi setiap bentuk.",
+        "Hasilkan tiga bentuk kertas dengan menggunakan kedua-dua tangan."
+      ],
+      "closure": [
+        "Minta murid menyusun hasil bersebelahan kad tindakan.",
+        "Padankan satu hasil dengan tindakan yang digunakan."
+      ],
+      "support": "Sediakan kertas lembut dan saiz besar. Guru boleh mendemonstrasi terus daripada gambar buku.",
+      "assessment": "Guru merekod sama ada murid dapat melakukan lipatan, gulungan dan renyukan menggunakan kedua-dua tangan.",
+      "follow_up": "Ulang pergerakan yang belum dikuasai dengan bahan lebih mudah dipegang."
+    },
+    {
+      "pdp": "068",
+      "title": "Menggumpal, memunjut dan mengikat",
+      "sp": "3.1.1",
+      "book": "Buku Teks hlm. 88–89",
+      "focus": "Menggumpal, memunjut dan mengikat.",
+      "objective": "Murid dapat melakukan tiga pergerakan bilateral yang ditunjukkan menggunakan bahan sesuai.",
+      "materials": "Tisu, kain lembut, tali tebal pendek dan kad pergerakan.",
+      "induction": [
+        "Tunjukkan contoh gumpalan dan punjut kain daripada aktiviti kraf.",
+        "Pilih contoh yang perlu diikat."
+      ],
+      "guided": [
+        "Demonstrasikan cara menggumpal tisu, memunjut kain dan mengikat tali di sekeliling kain.",
+        "Tiru satu pergerakan pada setiap isyarat guru."
+      ],
+      "practice": [
+        "Beri masa untuk murid menghasilkan setiap bentuk dengan bahan berasingan.",
+        "Gunakan kedua-dua tangan untuk menggumpal, memunjut dan mengikat bahan."
+      ],
+      "closure": [
+        "Minta murid bandingkan hasil gumpalan dengan punjut.",
+        "Pilih kad pergerakan yang sepadan untuk setiap hasil."
+      ],
+      "support": "Gunakan tali tebal pendek dan panduan visual. Guru memantau pengendalian bahan kecil.",
+      "assessment": "Guru merekod sama ada murid dapat melakukan tiga pergerakan bilateral yang ditunjukkan menggunakan bahan sesuai.",
+      "follow_up": "Ulang ikatan dengan tali yang lebih mudah digenggam."
+    },
+    {
+      "pdp": "069",
+      "title": "Menghasilkan kraf Hidupan Dasar Laut",
+      "sp": "3.1.2",
+      "book": "Buku Teks hlm. 88–89",
+      "focus": "Menghasilkan kraf Hidupan Dasar Laut.",
+      "objective": "Murid dapat menghasilkan satu kraf dengan menggabungkan sekurang-kurangnya dua pergerakan bilateral.",
+      "materials": "Kertas warna, kad contoh, tisu dan gam.",
+      "induction": [
+        "Paparkan ilustrasi bingkai dasar laut.",
+        "Pilih satu bentuk yang hendak dihasilkan."
+      ],
+      "guided": [
+        "Modelkan gabungan lipatan dan gumpalan untuk menghasilkan dua unsur kraf. Terangkan cara menyusun bahagian pada latar.",
+        "Sediakan satu unsur melalui teknik pilihan dan padankan pada latar."
+      ],
+      "practice": [
+        "Bimbing murid menghasilkan dan menampal dua unsur yang menggunakan pergerakan berbeza.",
+        "Bina satu kraf dan tunjuk pergerakan yang digunakan untuk setiap unsur."
+      ],
+      "closure": [
+        "Jemput murid mempamerkan hasil dan memilih bahagian kegemaran.",
+        "Namakan atau tunjuk dua teknik yang telah digunakan."
+      ],
+      "support": "Beri bentuk prapotong dan bahan bersaiz besar jika diperlukan.",
+      "assessment": "Guru merekod sama ada murid dapat menghasilkan satu kraf dengan menggabungkan sekurang-kurangnya dua pergerakan bilateral.",
+      "follow_up": "Gunakan teknik yang sama untuk menghasilkan unsur laut yang lain."
+    },
+    {
+      "pdp": "070",
+      "title": "Menyenduk, menyudu, mencedok dan mencucuk",
+      "sp": "3.2.1",
+      "book": "Buku Teks hlm. 90–91",
+      "focus": "Menyenduk, menyudu, mencedok dan mencucuk.",
+      "objective": "Murid dapat melakukan sekurang-kurangnya tiga daripada empat gerakan menggunakan alat yang sepadan.",
+      "materials": "Senduk, sudu, garpu tumpul, penyendok dan bahan simulasi sesuai.",
+      "induction": [
+        "Paparkan gambar alat pada halaman 90 dan 91.",
+        "Pilih alat yang sepadan dengan satu aksi."
+      ],
+      "guided": [
+        "Tunjukkan keempat-empat gerakan menggunakan bahan simulasi dan nyatakan perbezaan menyenduk dan mencedok.",
+        "Padankan alat dengan setiap gerakan dan tiru urutan secara perlahan."
+      ],
+      "practice": [
+        "Sediakan stesen untuk memindahkan bahan simulasi dan mencucuk bahan lembut dengan pengawasan.",
+        "Lakukan satu percubaan bagi setiap gerakan dan letakkan alat selepas digunakan."
+      ],
+      "closure": [
+        "Minta murid memilih alat untuk memindahkan contoh yang diberi.",
+        "Tunjuk alat dan lakukan aksi ringkas."
+      ],
+      "support": "Sediakan pemegang besar dan bahan yang mudah dikendalikan. Guru menunjuk cara daripada gambar buku.",
+      "assessment": "Guru merekod sama ada murid dapat melakukan sekurang-kurangnya tiga daripada empat gerakan menggunakan alat yang sepadan.",
+      "follow_up": "Ulang gerakan yang tertukar dengan dua alat yang berbeza."
+    },
+    {
+      "pdp": "071",
+      "title": "Memotong, memutar, menyepit dan menyapu",
+      "sp": "3.2.1",
+      "book": "Buku Teks hlm. 90–91",
+      "focus": "Memotong, memutar, menyepit dan menyapu.",
+      "objective": "Murid dapat melakukan sekurang-kurangnya tiga daripada empat tugas dengan pergerakan dan alat yang sesuai.",
+      "materials": "Pisau plastik tumpul, bahan lembut simulasi, pengapit, kad dan alat penyapu makanan.",
+      "induction": [
+        "Paparkan contoh makanan yang sudah dipotong dan roti contoh.",
+        "Pilih gambar pergerakan yang digunakan untuk menyediakan satu bahan."
+      ],
+      "guided": [
+        "Modelkan empat pergerakan dengan bekas stabil dan alatan latihan yang sesuai.",
+        "Cuba setiap aksi pada bahan demonstrasi mengikut giliran."
+      ],
+      "practice": [
+        "Sediakan empat tugasan kecil dan bimbing murid memadankan alat dan menggunakannya dengan selamat.",
+        "Laksanakan setiap tugas sambil mengekalkan bahan pada dulang."
+      ],
+      "closure": [
+        "Minta murid tunjuk tempat alat perlu dipulangkan.",
+        "Susun alat mengikut ruang yang ditanda."
+      ],
+      "support": "Gunakan bahan mudah diubah bentuk dan alatan tumpul. Tiada pisau tajam digunakan oleh murid.",
+      "assessment": "Guru merekod sama ada murid dapat melakukan sekurang-kurangnya tiga daripada empat tugas dengan pergerakan dan alat yang sesuai.",
+      "follow_up": "Ulang satu tugas dengan alat yang lebih mudah digenggam."
+    },
+    {
+      "pdp": "072",
+      "title": "Menggabungkan gerakan semasa makan",
+      "sp": "3.2.2",
+      "book": "Buku Teks hlm. 90–91",
+      "focus": "Menggabungkan gerakan semasa makan.",
+      "objective": "Murid dapat menggabungkan dua pergerakan menggunakan alat semasa simulasi makan.",
+      "materials": "Pinggan beralas, sudu, garpu tumpul, senduk dan bahan simulasi.",
+      "induction": [
+        "Rujuk gambar hidangan di meja dan minta murid memilih alat yang sesuai.",
+        "Pilih satu alat makan daripada dua pilihan."
+      ],
+      "guided": [
+        "Tunjukkan urutan menyenduk hidangan contoh ke pinggan, kemudian menyudu atau mencucuk bahan simulasi.",
+        "Cuba satu aksi pada setiap arahan sebelum menggabungkannya."
+      ],
+      "practice": [
+        "Jalankan simulasi meja makan dan beri kad urutan kepada murid.",
+        "Gabungkan dua gerakan menggunakan alat sesuai dan kemas tempat selepas latihan."
+      ],
+      "closure": [
+        "Minta murid menjelaskan fungsi satu alat yang digunakan.",
+        "Tunjuk alat dan ulang gerakan yang berkaitan."
+      ],
+      "support": "Sediakan pinggan antiegelincir dan pemegang yang sesuai. Gunakan bahan simulasi jika perlu.",
+      "assessment": "Guru merekod sama ada murid dapat menggabungkan dua pergerakan menggunakan alat semasa simulasi makan.",
+      "follow_up": "Tukar hidangan contoh dan minta murid memilih alat sendiri."
+    },
+    {
+      "pdp": "073",
+      "title": "Menyangkut, menyepit dan menggosok",
+      "sp": "3.2.3",
+      "book": "Buku Teks hlm. 92",
+      "focus": "Menyangkut, menyepit dan menggosok.",
+      "objective": "Murid dapat melakukan ketiga-tiga pergerakan pengurusan pakaian yang disasarkan.",
+      "materials": "Penyangkut, penyepit kain, berus dan kain contoh.",
+      "induction": [
+        "Tunjukkan gambar kasut dan pakaian dalam buku teks.",
+        "Pilih alat yang sepadan dengan satu gambar."
+      ],
+      "guided": [
+        "Demonstrasikan menyangkut pakaian, menyepit kain dan menggosok kasut dengan berus.",
+        "Tiru setiap pergerakan tanpa alatan sebelum mencuba bahan sebenar."
+      ],
+      "practice": [
+        "Sediakan tiga stesen rendah dan bimbing satu aksi per stesen.",
+        "Lakukan satu giliran bagi setiap stesen dengan bahan contoh."
+      ],
+      "closure": [
+        "Sebut satu jenis tugas dan minta murid menunjukkan aksi yang sepadan.",
+        "Tunjukkan aksi atau pilih kad bergambar yang sepadan."
+      ],
+      "support": "Sediakan penyepit lembut dan penyangkut pada aras capaian. Aktiviti gosok menggunakan berus.",
+      "assessment": "Guru merekod sama ada murid dapat melakukan ketiga-tiga pergerakan pengurusan pakaian yang disasarkan.",
+      "follow_up": "Ulang satu stesen dengan bahan yang lebih mudah dipegang."
+    },
+    {
+      "pdp": "074",
+      "title": "Menggabungkan pergerakan untuk mengurus pakaian",
+      "sp": "3.2.4",
+      "book": "Buku Teks hlm. 92–93",
+      "focus": "Menggabungkan pergerakan untuk mengurus pakaian.",
+      "objective": "Murid dapat menggabungkan sekurang-kurangnya dua gerakan dalam satu rutin mengurus pakaian.",
+      "materials": "Baju contoh, penyepit, penyangkut dan bakul berlabel.",
+      "induction": [
+        "Paparkan gambar Urus Pakaian dan pilih satu situasi bersama murid.",
+        "Tunjukkan bahan yang memerlukan penyepit atau penyangkut."
+      ],
+      "guided": [
+        "Tunjukkan cara memindahkan pakaian dari bakul, menyepit kain pada tali dan menyangkut baju selepas mengemas.",
+        "Susun kad panduan dan praktikkan satu tindakan awal."
+      ],
+      "practice": [
+        "Jalankan satu rutin pakaian menggunakan barang di stesen. Sediakan ruang bagi setiap murid mengemas sendiri.",
+        "Gabungkan dua pergerakan dan kemas alatan selepas aktiviti."
+      ],
+      "closure": [
+        "Minta murid menyatakan sebab pakaian perlu disusun.",
+        "Pilih kad yang menunjukkan pakaian lebih mudah dicari atau disimpan."
+      ],
+      "support": "Laraskan ketinggian tali dan penyangkut. Gunakan latihan tanpa peralatan panas atau elektrik.",
+      "assessment": "Guru merekod sama ada murid dapat menggabungkan sekurang-kurangnya dua gerakan dalam satu rutin mengurus pakaian.",
+      "follow_up": "Latih rutin yang sama menggunakan jenis pakaian yang berbeza."
+    },
+    {
+      "pdp": "075",
+      "title": "Membentuk bayang haiwan dengan jari",
+      "sp": "3.3.1",
+      "book": "Buku Teks hlm. 94",
+      "focus": "Membentuk bayang haiwan dengan jari.",
+      "objective": "Murid dapat menghasilkan satu bayang haiwan yang sepadan dengan kad panduan.",
+      "materials": "Lampu LED tetap, skrin cerah dan kad kedudukan tangan.",
+      "induction": [
+        "Paparkan satu bayang haiwan dan minta murid mengenal bentuknya.",
+        "Pilih kad haiwan yang sepadan."
+      ],
+      "guided": [
+        "Modelkan kedudukan dua tangan bagi satu bentuk mudah. Laraskan jarak tangan daripada skrin.",
+        "Tiru kedudukan tangan sambil melihat bayang."
+      ],
+      "practice": [
+        "Sediakan dua contoh bentuk dan beri peluang mencuba secara bergilir.",
+        "Bentuk sekurang-kurangnya satu bayang yang boleh dipadankan dengan kad contoh."
+      ],
+      "closure": [
+        "Minta murid menunjukkan jari yang mengubah rupa bayang.",
+        "Tunjukkan kedudukan atau tukar bentuk dengan bantuan kad."
+      ],
+      "support": "Gunakan lampu tetap yang tidak dihalakan ke mata dan gambar tangan bersaiz besar.",
+      "assessment": "Guru merekod sama ada murid dapat menghasilkan satu bayang haiwan yang sepadan dengan kad panduan.",
+      "follow_up": "Ulang dengan satu bentuk haiwan yang berlainan."
+    },
+    {
+      "pdp": "076",
+      "title": "Menghasilkan bayang haiwan bergerak",
+      "sp": "3.3.2",
+      "book": "Buku Teks hlm. 95",
+      "focus": "Menghasilkan bayang haiwan bergerak.",
+      "objective": "Murid dapat menghasilkan dua gerakan bayang mengikut urutan kad aksi.",
+      "materials": "Lampu LED tetap, skrin dan kad dua aksi bayang.",
+      "induction": [
+        "Tunjukkan gambar Teater Bayang di dalam buku teks.",
+        "Pilih satu watak yang sesuai dilakonkan."
+      ],
+      "guided": [
+        "Tunjukkan cara mengekalkan bentuk asas sambil menggerakkan jari atau tangan secara terkawal.",
+        "Tiru satu perubahan gerakan di hadapan skrin."
+      ],
+      "practice": [
+        "Bimbing murid memilih dua aksi untuk persembahan pendek.",
+        "Gerakkan bayang watak mengikut dua kad aksi dalam turutan."
+      ],
+      "closure": [
+        "Minta seorang rakan mengenal satu aksi sambil murid mengulang bayang.",
+        "Tunjukkan aksi yang dipilih sekali lagi."
+      ],
+      "support": "Sediakan petunjuk visual, skrin pada aras sesuai dan latihan tanpa lampu sebelum persembahan.",
+      "assessment": "Guru merekod sama ada murid dapat menghasilkan dua gerakan bayang mengikut urutan kad aksi.",
+      "follow_up": "Tambah satu aksi mudah pada urutan yang sudah dikuasai."
+    },
+    {
+      "pdp": "077",
+      "title": "Melakar pada grid bertitik",
+      "sp": "3.3.3",
+      "book": "Buku Teks hlm. 96",
+      "focus": "Melakar pada grid bertitik.",
+      "objective": "Murid dapat menyalin sekurang-kurangnya tiga daripada empat garisan pada kedudukan yang betul.",
+      "materials": "Grid besar, contoh bentuk istana ringkas, pensel dan pembaris.",
+      "induction": [
+        "Tunjukkan gambar grid pada halaman 96 dan tandakan titik mula.",
+        "Tunjuk titik mula pada grid sendiri."
+      ],
+      "guided": [
+        "Modelkan cara memindahkan satu garisan dengan mengira jarak antara dua titik.",
+        "Sambungkan dua titik mengikut contoh."
+      ],
+      "practice": [
+        "Berikan bentuk bertitik empat garisan dan minta murid menyalin pada grid sendiri.",
+        "Lukis garisan mengikut kedudukan titik dan semak hasil dengan contoh."
+      ],
+      "closure": [
+        "Ajak murid mengesan satu garisan yang perlu diperiksa.",
+        "Bandingkan hujung garisan dengan titik pada contoh."
+      ],
+      "support": "Gunakan grid lebih besar dan titik mula berwarna.",
+      "assessment": "Guru merekod sama ada murid dapat menyalin sekurang-kurangnya tiga daripada empat garisan pada kedudukan yang betul.",
+      "follow_up": "Ulang satu bentuk grid yang menggabungkan garisan tegak dan melintang."
+    },
+    {
+      "pdp": "078",
+      "title": "Melukis semula objek daripada pemerhatian",
+      "sp": "3.3.4",
+      "book": "Buku Teks hlm. 97–98",
+      "focus": "Melukis semula objek daripada pemerhatian.",
+      "objective": "Murid dapat melukis semula satu objek yang dilihat dengan sekurang-kurangnya dua ciri yang boleh dikenal pasti.",
+      "materials": "Gambar kolam atau objek sebenar, kertas dan krayon.",
+      "induction": [
+        "Paparkan gambar kolam beserta satu objek yang ketara.",
+        "Pilih objek yang hendak dilukis."
+      ],
+      "guided": [
+        "Modelkan cara memerhati bentuk besar dahulu dan menambah satu ciri objek.",
+        "Lakar bentuk asas sambil meneliti contoh."
+      ],
+      "practice": [
+        "Beri masa melukis semula objek dan tambah dua ciri yang sepadan dengan contoh.",
+        "Siapkan lakaran dan tunjuk dua ciri yang telah dilukis."
+      ],
+      "closure": [
+        "Minta murid membuat perbandingan antara contoh dan hasil sendiri.",
+        "Tunjukkan ciri yang sama dan pilih satu bahagian untuk dikemas."
+      ],
+      "support": "Sediakan pemegang pensel besar, satu objek ringkas dan contoh berkontras tinggi.",
+      "assessment": "Guru merekod sama ada murid dapat melukis semula satu objek yang dilihat dengan sekurang-kurangnya dua ciri yang boleh dikenal pasti.",
+      "follow_up": "Gunakan aktiviti Wayang Kulit Haiwan pada halaman 98 sebagai pengayaan."
+    }
+  ]
+}
