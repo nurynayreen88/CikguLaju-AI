@@ -28,6 +28,17 @@ STRICT_NUMBERS = re.compile(
     re.IGNORECASE,
 )
 SOURCE_STATUS = "PAUTAN_ASAL_BELUM_DISAHKAN_AKSES_LESEN_DAN_AUDIO"
+VERIFIED_YEAR4_TRACKS = {
+    21: (
+        (66, "1tgNnRXXJC6SVvvVRodSQgt1o464hLe7V", "Corak Irama 1"),
+        (67, "1tuAys02dAzGePDIVns-gHQ8Xq0DaSwfJ", "Corak Irama 2"),
+    ),
+    24: (
+        (90, "1BY6ptHJRhLH8luim6uPKEavBfZL2NdET", "Contoh Soalan 1"),
+        (91, "1vvPxP8YHa3XpsxDgdwqT91NxUp2ODnPg", "Contoh Jawapan 1"),
+        (92, "1D2YGkXNHlwnD3pIynjZnkd-HtwrqiMbY", "Contoh Jawapan 2"),
+    ),
+}
 
 
 def numbers_from_printed_reference(text):
@@ -133,13 +144,27 @@ def links_for_pdp(year, pdp, *, root=ROOT):
 
 
 def audio_link_action(year, pdp, *, root=ROOT):
-    """Web-friendly data adapter; never describe a link as verified or downloadable."""
+    """Distinguish score-checked recordings from numbered source candidates."""
     links = links_for_pdp(year, pdp, root=root)
+    checked = VERIFIED_YEAR4_TRACKS.get(pdp) if year == 4 else None
+    if checked:
+        if [(item["track"], item["file_id"]) for item in links] != [
+            (track, file_id) for track, file_id, _ in checked
+        ]:
+            links = []
+        else:
+            links = [dict(item, title=title, status="PADANAN_SKOR_DISAHKAN")
+                     for item, (_, _, title) in zip(links, checked)]
+            return {
+                "available": True, "button_label": "Buka Audio Sumber",
+                "notice": "Rakaman sepadan dengan skor buku teks. Pautan membuka fail pada sumber asal.",
+                "links": links, "download_available": False, "content_verified": True,
+            }
     if not links:
         return {
             "available": False, "button_label": None,
             "notice": "Audio sumber belum dapat dipadankan dengan yakin.",
-            "links": [], "download_available": False,
+            "links": [], "download_available": False, "content_verified": False,
         }
     return {
         "available": True,
@@ -151,4 +176,5 @@ def audio_link_action(year, pdp, *, root=ROOT):
         ),
         "links": links,
         "download_available": False,
+        "content_verified": False,
     }

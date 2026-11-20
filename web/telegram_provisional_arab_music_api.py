@@ -378,6 +378,7 @@ def create_provisional_subjects_blueprint(runtime):
             return jsonify({"error":"Music audio source not available"}),503
         return jsonify({"source":SOURCE,"status":"DRAF",
                         "available":bool(items),"links":items,
+                        "content_verified":source["content_verified"],
                         "notice":source["notice"],"download_available":False})
 
     @bp.post("/internal/rph/v1/other-drafts/render")

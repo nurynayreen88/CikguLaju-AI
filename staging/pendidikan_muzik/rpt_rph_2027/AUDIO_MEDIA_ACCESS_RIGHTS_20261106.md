@@ -1,3 +1,7 @@
+## 20 November 2026 — Pautan audio disahkan untuk dua PdP Tahun 4
+
+Audio 66 dan 67 bagi PdP 21 serta Audio 90 hingga 92 bagi PdP 24 sepadan dengan skor. Kesemua fail asal boleh dicapai dalam sesi tanpa log masuk Google dan cap SHA-256 kelima-limanya sama dengan fail yang diperiksa. Web memaparkan pautan sumber dalam senarai bahan bagi PdP berkenaan. Menu Pendidikan Muzik Tahun 4 dalam Telegram menyediakan pilihan audio untuk kedua-dua PdP. [Semakan skor dan rakaman](https://github.com/nurynayreen88/CikguLaju-AI/blob/89fab0429ee76b46002e4a7d75e43ff96ea87bb6/staging/pendidikan_muzik/rpt_rph_2027/year4/SEMAKAN_VISUAL_SKOR_PDP21_24_20261106.md)
+
 ## 6 November 2026 — Percubaan pautan Audio Sumber dalam menu Muzik staging
 
 - **617 rekod** sumber Google Drive asal disalin sebagai **metadata pautan sahaja** (lima `audio_source_index_year{2..6}_20261106.json`); fail WAV/MP3 tidak disalin ke repositori, Drive CikguLaju atau database.
