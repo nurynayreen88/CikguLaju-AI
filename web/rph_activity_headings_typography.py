@@ -10,6 +10,7 @@ from __future__ import annotations
 import html
 import os
 import re
+import tempfile
 from pathlib import Path
 
 # Keep this narrow: a heading must BEGIN its own line. Ordinary body mentions
@@ -22,8 +23,7 @@ HEADING = re.compile(
     flags=re.IGNORECASE,
 )
 
-# PI has a separate Jawi/RTL renderer and must never be reformatted by this
-# Latin document helper.
+# The Latin heading rules exclude the separate Jawi and Arabic renderers.
 SKIP_SUBJECTS = ("pendidikan islam", "bahasa arab", "islamic", "arabic")
 
 
@@ -41,6 +41,31 @@ def _segments(raw):
         if i:
             yield "\n", False
         yield line, bool(HEADING.match(line))
+
+
+def _save_word_document(document, target):
+    with tempfile.NamedTemporaryFile(dir=target.parent, delete=False) as stream:
+        temp = Path(stream.name)
+        try:
+            document.save(stream)
+            stream.close()
+            os.replace(temp, target)
+        finally:
+            temp.unlink(missing_ok=True)
+
+
+def _compact_pi_year6_pdp076(path):
+    from docx import Document
+
+    target = Path(path)
+    document = Document(target)
+    for table in document.tables:
+        for row in table.rows:
+            for cell in row.cells:
+                for paragraph in cell.paragraphs:
+                    # Allow Amiri to keep its variable line height for Jawi marks.
+                    paragraph.paragraph_format.line_spacing = 0.92
+    _save_word_document(document, target)
 
 
 def bold_activity_headings_in_docx(path):
@@ -86,13 +111,7 @@ def bold_activity_headings_in_docx(path):
                     raise ValueError("RPH activity styling changed the content")
     if updated:
         # Save atomically; never leave a half-written RPH if ZIP saving fails.
-        temp = target.with_name(target.name + ".typography.tmp")
-        try:
-            doc.save(str(temp))
-            os.replace(str(temp), str(target))
-        finally:
-            if temp.exists():
-                temp.unlink()
+        _save_word_document(doc, target)
     return updated
 
 
@@ -116,7 +135,7 @@ def bold_pdf_heading_markup(raw_text, legacy_markup):
 
 
 def install(runtime):
-    """Patch actual Telegram output boundaries once, without altering app.py."""
+    """Apply document typography at the shared Word and PDF output boundaries."""
     if getattr(runtime, "_CIKGULAJU_RPH_HEADING_BOLD_20261106", False):
         return False
     previous_word = runtime.create_word_file
@@ -124,8 +143,19 @@ def install(runtime):
 
     def word_with_consistent_activity_headings(state, source_text, chat_id):
         path = previous_word(state, source_text, chat_id)
-        if eligible_rph(state) and isinstance(path, (str, Path)):
+        if not isinstance(path, (str, Path)):
+            return path
+        if eligible_rph(state):
             bold_activity_headings_in_docx(path)
+        elif (
+            isinstance(state, dict)
+            and state.get("task") == "rph"
+            and str(state.get("subject") or "").strip().casefold()
+            in ("pendidikan islam", "pendidikan agama islam")
+            and state.get("year") == "Tahun 6"
+            and str(state.get("rpt_entry_id")) == "1906"
+        ):
+            _compact_pi_year6_pdp076(path)
         return path
 
     def pdf_with_consistent_activity_headings(text):

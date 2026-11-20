@@ -115,6 +115,34 @@ class ActivityHeadingTypographyTests(unittest.TestCase):
         self.assertEqual(runtime._rph_activity_heading_markup_v25184(
             "Aktiviti 1: Uji"),"Aktiviti 1: Uji")
 
+    def test_pi_compacts_only_year6_pdp076_word(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "pi.docx"
+            content = "اکتيۏيتي ١\nموريد ممباچ ڤتيقن."
+            document = Document()
+            paragraph = document.add_table(rows=1, cols=1).cell(0, 0).paragraphs[0]
+            paragraph.paragraph_format.line_spacing = 1.0
+            heading, body = content.split("\n")
+            paragraph.add_run(heading).bold = True
+            paragraph.add_run("\n" + body).font.rtl = True
+            document.save(path)
+            original = path.read_bytes()
+            runtime = SimpleNamespace(
+                create_word_file=lambda state, text, chat_id: path,
+                _rph_activity_heading_markup_v25184=html.escape,
+            )
+            install(runtime)
+            state = {"task": "rph", "subject": "Pendidikan Islam", "year": "Tahun 6"}
+            runtime.create_word_file({**state, "rpt_entry_id": 1905}, "", "qa")
+            self.assertEqual(path.read_bytes(), original)
+
+            runtime.create_word_file({**state, "rpt_entry_id": 1906}, "", "qa")
+            result = Document(path).tables[0].cell(0, 0).paragraphs[0]
+            self.assertAlmostEqual(result.paragraph_format.line_spacing, 0.92, places=2)
+            self.assertEqual(result.text, content)
+            self.assertTrue(result.runs[0].bold)
+            self.assertTrue(result.runs[1].font.rtl)
+
 
 if __name__=="__main__":
     unittest.main()
