@@ -1,0 +1,131 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 3,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 4 · Ceria di Dapur Ibu",
+  "content_standards": {
+    "4.1": "Pengurusan di ruang dapur."
+  },
+  "learning_standards": {
+    "4.1.1": "Menamakan alatan dan perabot di dapur.",
+    "4.1.2": "Menjelaskan kegunaan alatan dan perabot di dapur.",
+    "4.1.3": "Menunjukkan cara menggunakan alatan dan perabot di dapur.",
+    "4.1.4": "Mengaplikasi cara menjaga kekemasan, kebersihan dan keselamatan semasa di dapur."
+  },
+  "lessons": [
+    {
+      "pdp": "040",
+      "title": "Namakan alatan dan perabot dapur",
+      "sp": "4.1.1",
+      "focus": "Mengenal alatan dan perabot melalui gambar dapur.",
+      "book": "Buku Teks hlm. 36–38",
+      "objective": "Murid menamakan empat daripada lima alatan atau perabot dapur.",
+      "materials": "Gambar dapur, kad nama, sudu dan mangkuk.",
+      "induction": [
+        "Guru paparkan gambar dapur dan tunjuk satu perabot.",
+        "Murid menunjuk benda lain yang pernah dilihat di dapur."
+      ],
+      "guided": [
+        "Guru menamakan sudu, mangkuk, sinki, kabinet dan meja sambil menunjukkan gambar.",
+        "Murid memadankan kad nama atau simbol dengan gambar."
+      ],
+      "practice": [
+        "Guru susun gambar tanpa label dalam urutan baharu.",
+        "Murid menamakan setiap gambar atau memilih kad jawapan."
+      ],
+      "closure": [
+        "Guru tunjuk dua gambar alatan dan perabot.",
+        "Murid menamakan satu daripada setiap jenis."
+      ],
+      "support": "Sediakan pilihan gambar dan sebutan model secara berperingkat.",
+      "assessment": "Guru rekod empat nama tepat daripada lima.",
+      "follow_up": "Ulang pasangan yang masih tertukar menggunakan objek sebenar yang selamat."
+    },
+    {
+      "pdp": "041",
+      "title": "Jelaskan kegunaan alatan dan perabot",
+      "sp": "4.1.2",
+      "focus": "Menghubungkan alatan dan perabot dapur dengan fungsi.",
+      "book": "Buku Teks hlm. 38",
+      "objective": "Murid menerangkan fungsi empat daripada lima item bergambar.",
+      "materials": "Kad fungsi, gambar sinki, kabinet, sudu, cawan dan meja.",
+      "induction": [
+        "Guru tunjuk gambar cawan kosong dan tanya fungsi.",
+        "Murid menyebut atau menunjukkan cara menggunakan cawan."
+      ],
+      "guided": [
+        "Guru padankan setiap gambar dengan satu fungsi dan terangkan sebab.",
+        "Murid lengkapkan bingkai “Saya guna ... untuk ...”."
+      ],
+      "practice": [
+        "Guru sediakan lima kad gambar bercampur dengan pilihan fungsi.",
+        "Murid memilih padanan, kemudian menjelaskan kegunaan bagi setiap item."
+      ],
+      "closure": [
+        "Guru minta fungsi kabinet atau sinki.",
+        "Murid menerangkan satu fungsi dengan perkataan sendiri."
+      ],
+      "support": "Gunakan ikon tindakan dan satu contoh pada satu masa.",
+      "assessment": "Guru tandakan sekurang-kurangnya empat hubungan item dan fungsi yang tepat.",
+      "follow_up": "Ulang fungsi yang tertukar melalui demonstrasi ringkas."
+    },
+    {
+      "pdp": "042",
+      "title": "Tunjukkan cara menggunakan alatan dapur",
+      "sp": "4.1.3",
+      "focus": "Menggunakan mangkuk, sudu dan meja dalam amali berpandu.",
+      "book": "Buku Teks hlm. 38",
+      "objective": "Murid menunjukkan tiga tindakan yang tepat semasa menyediakan tempat kerja.",
+      "materials": "Meja, mangkuk plastik, sudu besar dan bahan simulasi.",
+      "induction": [
+        "Guru tunjuk gambar aktiviti dapur pada hlm. 38 dan meja simulasi.",
+        "Murid menamakan dua item yang selamat digunakan."
+      ],
+      "guided": [
+        "Guru tunjuk cara meletakkan mangkuk stabil, mencedok bahan simulasi dan meletak sudu di dulang.",
+        "Murid meniru setiap tindakan mengikut urutan."
+      ],
+      "practice": [
+        "Guru sediakan stesen rendah tanpa elektrik atau alat tajam.",
+        "Murid menunjukkan tiga tindakan dengan alatan yang ditetapkan."
+      ],
+      "closure": [
+        "Guru tanya cara memastikan mangkuk stabil.",
+        "Murid menunjukkan tempat meletakkan mangkuk dengan betul."
+      ],
+      "support": "Guna dulang tidak licin dan kad langkah bergambar.",
+      "assessment": "Guru menilai kedudukan mangkuk, cara mencedok dan penyimpanan sudu.",
+      "follow_up": "Ulang tindakan yang belum tepat menggunakan model satu langkah."
+    },
+    {
+      "pdp": "043",
+      "title": "Amalkan kekemasan, kebersihan dan keselamatan di dapur",
+      "sp": "4.1.4",
+      "focus": "Mengemas stesen dan melapor bahaya dalam simulasi dapur.",
+      "book": "Buku Teks hlm. 39–40",
+      "objective": "Murid melaksanakan sekurang-kurangnya tiga daripada empat tindakan yang selamat.",
+      "materials": "Stesen dapur simulasi, kain bersih dan kad bahaya bergambar.",
+      "induction": [
+        "Guru tunjuk gambar pinggan pecah pada hlm. 39.",
+        "Murid memilih tindakan menjauh dan memaklumkan orang dewasa."
+      ],
+      "guided": [
+        "Guru tunjuk cara mengelap meja, menyimpan alatan, membuang sisa serta melapor bahaya.",
+        "Murid berlatih pada stesen tanpa serpihan sebenar."
+      ],
+      "practice": [
+        "Guru sediakan stesen berkecah dan satu kad bahaya.",
+        "Murid mengemas stesen dan memaklumkan bahaya tanpa menyentuhnya."
+      ],
+      "closure": [
+        "Guru minta satu contoh tindakan sebelum meninggalkan dapur.",
+        "Murid menyebut atau menunjukkan tindakan penjagaan stesen."
+      ],
+      "support": "Guna kad semak empat langkah, peralatan simulasi dan laluan yang kering.",
+      "assessment": "Guru semak tiga tindakan tepat dan bantuan yang diperlukan.",
+      "follow_up": "Ulang langkah melapor bahaya menggunakan gambar lain."
+    }
+  ]
+}
