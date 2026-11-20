@@ -1,0 +1,364 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 4,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Kemahiran Manipulatif",
+  "unit": "Unit 2 · Sihat dan Cergas",
+  "content_standards": {
+    "2.1": "Postur dan lokomotor.",
+    "2.2": "Imbangan.",
+    "2.3": "Pergerakan badan."
+  },
+  "learning_standards": {
+    "2.1.1": "Melonjakkan badan dalam posisi duduk dengan memberi tekanan kepada tangan dan bahu pada bahan sokongan.",
+    "2.1.2": "Melakukan pergerakan mendayung.",
+    "2.1.3": "Melakukan tekan tubi mudah.",
+    "2.1.4": "Melakukan pergerakan menyulur ke hadapan dengan menggunakan tangan dan siku.",
+    "2.1.5": "Melakukan gabungan beberapa pergerakan dalam aktiviti pergerakan kreatif.",
+    "2.2.1": "Berdiri dengan tangan di pinggang sambil menjunjung objek dengan dua belah kaki dan sebelah kaki.",
+    "2.2.2": "Berjalan di atas bangku panjang sambil menjunjung objek.",
+    "2.2.3": "Melakukan gabungan beberapa pergerakan dalam permainan kecil.",
+    "2.3.1": "Melakukan pergerakan bahagian tangan dan kaki dengan berjalan, berlari, melompat, mencongklang, membaling, menyambut, menghayun dan menepuk.",
+    "2.3.2": "Melakukan gabungan beberapa pergerakan menggunakan alatan.",
+    "2.3.3": "Melakukan gabungan beberapa pergerakan dalam permainan kecil atau pergerakan kreatif."
+  },
+  "lessons": [
+    {
+      "pdp": "055",
+      "title": "Lonjakan kecil dalam posisi duduk",
+      "sp": "2.1.1",
+      "book": "Buku Teks hlm. 75–77",
+      "focus": "Lonjakan kecil dalam posisi duduk.",
+      "objective": "Murid dapat melakukan dua lonjakan kecil dengan sokongan stabil dan kembali duduk secara terkawal.",
+      "materials": "Kerusi stabil, alas kaki antiegelincir dan kad langkah.",
+      "induction": [
+        "Tunjukkan ilustrasi lonjakan dalam posisi duduk.",
+        "Tunjuk lokasi tangan pada gambar."
+      ],
+      "guided": [
+        "Demonstrasikan kedudukan kaki dan tangan dengan kerusi stabil. Tunjukkan cara menolak sokongan secara terkawal dan kembali duduk.",
+        "Latih kedudukan tangan serta kaki sebelum mencuba."
+      ],
+      "practice": [
+        "Bimbing seorang murid pada satu masa untuk membuat lonjakan kecil mengikut kemampuan.",
+        "Lakukan percubaan terkawal dengan pengawasan guru dan kembali ke posisi asal."
+      ],
+      "closure": [
+        "Minta murid menunjukkan titik sokongan yang digunakan.",
+        "Tunjuk kedudukan tangan dan kaki sebelum berhenti."
+      ],
+      "support": "Sediakan pilihan latihan pemindahan berat badan jika lonjakan belum sesuai dan catat bentuk adaptasi.",
+      "assessment": "Guru merekod sama ada murid dapat melakukan dua lonjakan kecil dengan sokongan stabil dan kembali duduk secara terkawal.",
+      "follow_up": "Ulang langkah kedudukan tangan sebelum menambah bilangan cubaan."
+    },
+    {
+      "pdp": "056",
+      "title": "Pergerakan mendayung",
+      "sp": "2.1.2",
+      "book": "Buku Teks hlm. 76–77",
+      "focus": "Pergerakan mendayung.",
+      "objective": "Murid dapat melakukan tiga kitaran mendayung mengikut arah yang ditunjukkan.",
+      "materials": "Tikar latihan, kad anak panah dan penanda jarak.",
+      "induction": [
+        "Paparkan gambar murid mendayung secara duduk.",
+        "Tunjuk arah gerak tangan pada kad."
+      ],
+      "guided": [
+        "Demonstrasikan gerakan mendayung ke hadapan dan kembali pada kadar perlahan dengan ruang yang selamat.",
+        "Ikut satu kitaran mendayung dengan isyarat guru."
+      ],
+      "practice": [
+        "Beri isyarat mula dan akhir bagi tiga kitaran dari posisi duduk yang stabil.",
+        "Gerakkan tangan mengikut urutan dan kekalkan ruang di sekeliling."
+      ],
+      "closure": [
+        "Minta murid memilih kad arah bagi gerakan pertama.",
+        "Pilih kad dan tunjuk semula gerakan awal."
+      ],
+      "support": "Gunakan kerusi stabil atau latihan julat pendek mengikut keupayaan.",
+      "assessment": "Guru merekod sama ada murid dapat melakukan tiga kitaran mendayung mengikut arah yang ditunjukkan.",
+      "follow_up": "Ulang kitaran terakhir dengan tempo perlahan."
+    },
+    {
+      "pdp": "057",
+      "title": "Tekan tubi mudah",
+      "sp": "2.1.3",
+      "book": "Buku Teks hlm. 76–77",
+      "focus": "Tekan tubi mudah.",
+      "objective": "Murid dapat melakukan tiga ulangan tekan tubi mudah dengan posisi sokongan yang sesuai.",
+      "materials": "Tikar antiegelincir, permukaan sokongan stabil dan penanda tangan.",
+      "induction": [
+        "Tunjukkan gambar titik sokongan dalam tekan tubi mudah.",
+        "Pilih kedudukan tangan pada penanda."
+      ],
+      "guided": [
+        "Tunjukkan satu variasi ikut keupayaan menggunakan dinding stabil atau tikar. Terangkan pergerakan membengkok dan meluruskan siku.",
+        "Tiru kedudukan mula dan cuba satu ulangan perlahan dengan pengawasan."
+      ],
+      "practice": [
+        "Bimbing tiga ulangan mudah dengan rehat mengikut keperluan.",
+        "Lengkapkan gerakan turun dan kembali dalam julat yang selesa."
+      ],
+      "closure": [
+        "Minta murid menunjukkan kedudukan mula sebelum beredar.",
+        "Tunjukkan penempatan kedua-dua tangan dan posisi sokongan."
+      ],
+      "support": "Padankan variasi dan sasaran dengan kemampuan murid. Hentikan sewaktu tidak selesa.",
+      "assessment": "Guru merekod sama ada murid dapat melakukan tiga ulangan tekan tubi mudah dengan posisi sokongan yang sesuai.",
+      "follow_up": "Ulang pola siku menggunakan versi dinding atau isyarat bergambar."
+    },
+    {
+      "pdp": "058",
+      "title": "Menyulur ke hadapan menggunakan tangan dan siku",
+      "sp": "2.1.4",
+      "book": "Buku Teks hlm. 76–77",
+      "focus": "Menyulur ke hadapan menggunakan tangan dan siku.",
+      "objective": "Murid dapat menyulur ke hadapan menggunakan tangan dan siku hingga penanda yang ditetapkan.",
+      "materials": "Tikar bersambung, dua kon dan kad arah.",
+      "induction": [
+        "Paparkan gambar pergerakan menyulur pada buku teks.",
+        "Tunjuk anggota yang membantu gerakan ke hadapan."
+      ],
+      "guided": [
+        "Tunjukkan posisi rendah di atas tikar dan cara menggunakan tangan serta siku untuk maju dengan terkawal.",
+        "Cuba satu gerakan pendek mengikut demonstrasi."
+      ],
+      "practice": [
+        "Tetapkan laluan pendek tanpa halangan dan bimbing seorang murid pada setiap giliran.",
+        "Bergerak ke penanda dan berhenti mengikut isyarat."
+      ],
+      "closure": [
+        "Minta murid menunjukkan satu perkara yang menjadikan laluan selamat.",
+        "Nyatakan atau tunjuk tikar rata atau ruang kosong."
+      ],
+      "support": "Gunakan jarak pendek dan adaptasi motor yang sesuai. Catat jika sasaran penuh belum dicuba.",
+      "assessment": "Guru merekod sama ada murid dapat menyulur ke hadapan menggunakan tangan dan siku hingga penanda yang ditetapkan.",
+      "follow_up": "Ulang pola tangan dan siku tanpa menambah jarak sebelum bersedia."
+    },
+    {
+      "pdp": "059",
+      "title": "Menggabungkan pergerakan dalam lakonan",
+      "sp": "2.1.5",
+      "book": "Buku Teks hlm. 78–79",
+      "focus": "Menggabungkan pergerakan dalam lakonan.",
+      "objective": "Murid dapat menggabungkan dua pergerakan yang telah dipelajari dalam lakonan ringkas.",
+      "materials": "Kad watak Kucing dan Tikus, tikar serta penanda ruang.",
+      "induction": [
+        "Paparkan panel teater dan tanya watak yang murid kenal.",
+        "Pilih kad watak daripada panel."
+      ],
+      "guided": [
+        "Bina satu urutan kreatif daripada dua gerakan yang telah dipelajari. Modelkan pertukaran gerakan apabila kad bertukar.",
+        "Cuba dua gerakan secara berasingan sebelum menggabungkannya."
+      ],
+      "practice": [
+        "Bimbing pasangan membuat lakonan pendek di ruang masing-masing.",
+        "Lakonkan urutan dua gerakan mengikut kad watak."
+      ],
+      "closure": [
+        "Minta murid menamakan atau menunjukkan gerakan pertama.",
+        "Pilih dan ulang gerakan permulaan."
+      ],
+      "support": "Gunakan variasi posisi duduk atau pergerakan setempat tanpa sentuhan.",
+      "assessment": "Guru merekod sama ada murid dapat menggabungkan dua pergerakan yang telah dipelajari dalam lakonan ringkas.",
+      "follow_up": "Tukar watak dan susun satu urutan alternatif."
+    },
+    {
+      "pdp": "060",
+      "title": "Mengimbang ketika berdiri sambil menjunjung objek",
+      "sp": "2.2.1",
+      "book": "Buku Teks hlm. 80–81",
+      "focus": "Mengimbang ketika berdiri sambil menjunjung objek.",
+      "objective": "Murid dapat mengekalkan imbangan selama kiraan tiga dalam dua posisi yang dilatih.",
+      "materials": "Pundi kain ringan, garisan lantai dan tikar.",
+      "induction": [
+        "Tunjukkan pundi kain ringan dan gambar kedudukan tangan.",
+        "Tunjuk gambar tangan berada di pinggang."
+      ],
+      "guided": [
+        "Modelkan kedudukan dua kaki dan kemudian sebelah kaki di lantai rata. Letakkan pundi ringan hanya setelah kedudukan stabil.",
+        "Tiru posisi atas lantai tanpa pundi sebelum latihan yang diselia."
+      ],
+      "practice": [
+        "Bimbing murid mencuba kedua-dua posisi mengikut keupayaan dengan pundi kain ringan.",
+        "Kekalkan imbangan selama kiraan pendek pada setiap posisi dan letakkan semula pundi dengan selamat."
+      ],
+      "closure": [
+        "Minta murid nyatakan satu tanda badan sudah stabil.",
+        "Tunjuk kedudukan kaki atau pandangan ke hadapan."
+      ],
+      "support": "Gunakan sokongan atau penukaran berat badan jika berdiri sebelah kaki belum sesuai.",
+      "assessment": "Guru merekod sama ada murid dapat mengekalkan imbangan selama kiraan tiga dalam dua posisi yang dilatih.",
+      "follow_up": "Ulang posisi yang belum stabil secara individu di lantai."
+    },
+    {
+      "pdp": "061",
+      "title": "Berjalan sambil menjunjung objek ringan",
+      "sp": "2.2.2",
+      "book": "Buku Teks hlm. 80–81",
+      "focus": "Berjalan sambil menjunjung objek ringan.",
+      "objective": "Murid dapat berjalan tiga langkah terkawal sambil menjunjung objek ringan pada laluan yang sesuai.",
+      "materials": "Bangku gimnastik rendah yang stabil, tikar dan pundi kain ringan.",
+      "induction": [
+        "Paparkan gambar laluan bangku dan tanyakan titik mula.",
+        "Tunjuk kedudukan mula dan akhir pada gambar."
+      ],
+      "guided": [
+        "Modelkan langkah perlahan di garisan lantai sebelum bangku. Tunjukkan cara menaiki dan turun dengan pengawasan.",
+        "Berjalan di atas garisan dan berhenti pada akhir laluan."
+      ],
+      "practice": [
+        "Bimbing murid seorang demi seorang di atas bangku rendah apabila bersedia. Gunakan pundi ringan bagi latihan menjunjung.",
+        "Ambil tiga langkah terkawal dan turun dengan bantuan yang diperlukan."
+      ],
+      "closure": [
+        "Minta murid pilih tindakan jika objek terjatuh.",
+        "Berhenti dan tunggu bantuan guru sebelum mengambil objek."
+      ],
+      "support": "Gunakan laluan lantai sebagai penyesuaian dan rekod tahap sokongan yang digunakan.",
+      "assessment": "Guru merekod sama ada murid dapat berjalan tiga langkah terkawal sambil menjunjung objek ringan pada laluan yang sesuai.",
+      "follow_up": "Ulang laluan lantai sebelum beralih kepada bangku bagi murid yang memerlukan latihan."
+    },
+    {
+      "pdp": "062",
+      "title": "Laluan imbangan dalam permainan kecil",
+      "sp": "2.2.3",
+      "book": "Buku Teks hlm. 80–81",
+      "focus": "Laluan imbangan dalam permainan kecil.",
+      "objective": "Murid dapat menggabungkan dua aksi imbangan dalam satu giliran permainan.",
+      "materials": "Pita lantai, tikar, kad stesen dan pundi lembut.",
+      "induction": [
+        "Tunjukkan dua kad stesen imbangan dan tanyakan susunannya.",
+        "Susun kad berdiri dan berjalan."
+      ],
+      "guided": [
+        "Demonstrasikan gabungan berhenti seimbang dan berjalan ke penanda akhir.",
+        "Cuba kedua-dua aksi secara berasingan di lantai."
+      ],
+      "practice": [
+        "Jalankan permainan laluan dua stesen dengan giliran yang jelas. Pilih permukaan dan sokongan mengikut keupayaan.",
+        "Gabungkan aksi di setiap stesen, berhenti pada isyarat dan beri giliran."
+      ],
+      "closure": [
+        "Ajak murid menunjukkan stesen yang memerlukan lebih perhatian.",
+        "Nyatakan pilihan dan tunjuk cara membuat permulaan yang stabil."
+      ],
+      "support": "Hadkan seorang murid pada laluan dan sediakan sokongan mengikut keupayaan.",
+      "assessment": "Guru merekod sama ada murid dapat menggabungkan dua aksi imbangan dalam satu giliran permainan.",
+      "follow_up": "Ulang satu stesen secara berpandu sebelum percubaan baharu."
+    },
+    {
+      "pdp": "063",
+      "title": "Berjalan, berlari, melompat dan mencongklang",
+      "sp": "2.3.1",
+      "book": "Buku Teks hlm. 82–83",
+      "focus": "Berjalan, berlari, melompat dan mencongklang.",
+      "objective": "Murid dapat menunjukkan sekurang-kurangnya tiga daripada empat gerakan kaki yang dilatih.",
+      "materials": "Kad pergerakan, kon dan pita lantai.",
+      "induction": [
+        "Tunjukkan dua gambar pergerakan Pesta Ria.",
+        "Padankan gambar kepada berjalan atau melompat."
+      ],
+      "guided": [
+        "Modelkan berjalan, berlari perlahan, melompat dan mencongklang secara berasingan.",
+        "Ikut satu gerakan pada setiap isyarat sambil menjaga ruang."
+      ],
+      "practice": [
+        "Pilih satu daripada empat kad secara bergilir di laluan bertanda dan bimbing tempo yang selamat.",
+        "Lakukan gerakan yang ditunjuk dan kembali ke titik mula."
+      ],
+      "closure": [
+        "Minta murid membezakan satu pasangan gerakan melalui demonstrasi kecil.",
+        "Tunjukkan gerakan yang disebut oleh guru."
+      ],
+      "support": "Gunakan jarak pendek, pergerakan setempat atau variasi mobiliti yang sesuai.",
+      "assessment": "Guru merekod sama ada murid dapat menunjukkan sekurang-kurangnya tiga daripada empat gerakan kaki yang dilatih.",
+      "follow_up": "Ulang gerakan yang masih tertukar tanpa menambah kelajuan."
+    },
+    {
+      "pdp": "064",
+      "title": "Membaling, menyambut, menghayun dan menepuk",
+      "sp": "2.3.1",
+      "book": "Buku Teks hlm. 82–83",
+      "focus": "Membaling, menyambut, menghayun dan menepuk.",
+      "objective": "Murid dapat menunjukkan sekurang-kurangnya tiga daripada empat gerakan tangan yang dilatih.",
+      "materials": "Bola span, pundi kain, kad gerakan dan sasaran.",
+      "induction": [
+        "Paparkan gambar membaling dan menepuk dalam buku teks.",
+        "Pilih kad yang sepadan dengan aksi guru."
+      ],
+      "guided": [
+        "Modelkan balingan bawah tangan, sambutan dua tangan, hayunan setempat dan tepukan.",
+        "Tiru setiap aksi pada kadar perlahan sebelum menggunakan bola."
+      ],
+      "practice": [
+        "Aturkan giliran membaling dan menyambut dari jarak dekat. Selang-selikan gerak hayun dan tepuk mengikut kad.",
+        "Lakukan setiap aksi dan tunggu isyarat sebelum membaling."
+      ],
+      "closure": [
+        "Nyatakan satu cara mengelakkan bola terkena rakan.",
+        "Tunjukkan sasaran atau kedudukan menunggu giliran."
+      ],
+      "support": "Gunakan bola lembut dan kedudukan duduk jika sesuai.",
+      "assessment": "Guru merekod sama ada murid dapat menunjukkan sekurang-kurangnya tiga daripada empat gerakan tangan yang dilatih.",
+      "follow_up": "Ulang aksi yang belum dikuasai dengan jarak lebih dekat."
+    },
+    {
+      "pdp": "065",
+      "title": "Gabungan gerakan menggunakan bola",
+      "sp": "2.3.2",
+      "book": "Buku Teks hlm. 84",
+      "focus": "Gabungan gerakan menggunakan bola.",
+      "objective": "Murid dapat menggabungkan tiga pergerakan menggunakan bola dalam turutan yang ditetapkan.",
+      "materials": "Bola span, kon penanda dan bakul sasaran.",
+      "induction": [
+        "Tunjukkan aktiviti bola pada halaman 84.",
+        "Pilih dua pergerakan yang boleh dilakukan dengan bola."
+      ],
+      "guided": [
+        "Demonstrasikan urutan menerima bola, berjalan ke tanda dan membaling ke sasaran.",
+        "Latih satu bahagian urutan bersama guru."
+      ],
+      "practice": [
+        "Bimbing murid mengikuti tiga penanda dalam turutan yang ditetapkan.",
+        "Sambut bola dari jarak dekat, bergerak ke penanda dan baling ke bakul."
+      ],
+      "closure": [
+        "Minta murid menyemak susunan menggunakan kad.",
+        "Susun semula tiga kad pergerakan."
+      ],
+      "support": "Gunakan bola besar dan ubah jarak atau kedudukan sasaran mengikut keupayaan.",
+      "assessment": "Guru merekod sama ada murid dapat menggabungkan tiga pergerakan menggunakan bola dalam turutan yang ditetapkan.",
+      "follow_up": "Ulang urutan dengan petunjuk lantai yang lebih jelas."
+    },
+    {
+      "pdp": "066",
+      "title": "Mari Bersenam mengikut irama Hokey Cokey",
+      "sp": "2.3.3",
+      "book": "Buku Teks hlm. 84–86",
+      "focus": "Mari Bersenam mengikut irama Hokey Cokey.",
+      "objective": "Murid dapat menggabungkan sekurang-kurangnya tiga aksi dalam persembahan gerakan kreatif.",
+      "materials": "Buku teks, iringan Hokey Cokey atau nyanyian guru dan penanda ruang.",
+      "induction": [
+        "Tunjukkan gambar Mari Bersenam dan minta murid cuba satu pergerakan.",
+        "Pilih satu aksi untuk ditunjukkan."
+      ],
+      "guided": [
+        "Nyanyikan rangkap buku dengan irama Hokey Cokey. Isyaratkan aksi berjalan sisi, melompat atau tepuk secara bertahap.",
+        "Latih setiap pergerakan setempat mengikut kiraan dan isyarat."
+      ],
+      "practice": [
+        "Jalankan persembahan ringkas menggunakan iringan atau nyanyian guru, dengan ruang yang ditanda.",
+        "Gabungkan pergerakan mengikut urutan dan berhenti ketika isyarat diberi."
+      ],
+      "closure": [
+        "Minta murid nyatakan aksi terakhir dalam urutan.",
+        "Tunjuk kad dan ulang aksi terakhir."
+      ],
+      "support": "Gunakan rentak lebih perlahan dan pilihan aksi duduk. Pautan ialah iringan bagi lirik buku.",
+      "assessment": "Guru merekod sama ada murid dapat menggabungkan sekurang-kurangnya tiga aksi dalam persembahan gerakan kreatif.",
+      "follow_up": "Jadikan Boling Botol Berwarna pada halaman 86 sebagai pilihan pengayaan."
+    }
+  ]
+}
