@@ -92,7 +92,7 @@ def install(ns):
         if is_ppki:
             from staging.ppki.catalog import (
                 MANIPULATIVE_UNIT_LESSONS, RPT_COMBINED_EDITION, RPT_COMBINED_FILENAME,
-                RPT_MANIPULATIVE_FILENAME, UNIT_LESSONS,
+                RPT_MANIPULATIVE_FILENAME, RPT_YEAR3_FILENAME, UNIT_LESSONS, YEAR3_LESSONS,
             )
             from staging.ppki.rpt import render_rpt
             count = sum(len(numbers) for numbers in UNIT_LESSONS.values())
@@ -101,6 +101,7 @@ def install(ns):
             if data == "rpt2027_ppki_home":
                 return send(cid, "📅 <b>RPT 2027 · Pendidikan Khas (PPKI)</b>\n\nPilih tahun.", [
                     [{"text": "Tahun 2", "callback_data": "rpt2027_ppki_year2"}],
+                    [{"text": "Tahun 3", "callback_data": "rpt2027_ppki_year3"}],
                     [{"text": "⬅️ Kembali", "callback_data": "rpt2027_home"}],
                 ])
             if data == "rpt2027_ppki_year2":
@@ -111,17 +112,27 @@ def install(ns):
                     [{"text": "Kemahiran Manipulatif (PDF)", "callback_data": "rpt2027_ppki_km_pdf2"}],
                     [{"text": "⬅️ Kembali", "callback_data": "rpt2027_ppki_home"}],
                 ])
-            if data not in {"rpt2027_ppki_pdf2", "rpt2027_ppki_km_pdf2"}:
+            if data == "rpt2027_ppki_year3":
+                count_year3 = sum(len(numbers) for numbers in YEAR3_LESSONS.values())
+                return send(cid, f"<b>PPKI Tahun 3 · Pengurusan Kehidupan</b>\n\n"
+                            f"Pengurusan Diri Unit 1: {count_year3} PdP.", [
+                    [{"text": "Pengurusan Diri Unit 1 (PDF)", "callback_data": "rpt2027_ppki_pdf3"}],
+                    [{"text": "⬅️ Kembali", "callback_data": "rpt2027_ppki_home"}],
+                ])
+            if data not in {"rpt2027_ppki_pdf2", "rpt2027_ppki_km_pdf2", "rpt2027_ppki_pdf3"}:
                 return send(cid, "Pilihan RPT PPKI tidak sah.")
+            year = 3 if data == "rpt2027_ppki_pdf3" else 2
             manipulative = data == "rpt2027_ppki_km_pdf2"
             filename = RPT_MANIPULATIVE_FILENAME if manipulative else RPT_COMBINED_FILENAME
-            if manipulative:
+            if year == 3:
+                filename, edition = RPT_YEAR3_FILENAME, "Unit 1"
+            elif manipulative:
                 edition = "Kemahiran Manipulatif Unit 1–3"
             try:
                 with TemporaryDirectory(prefix="cikgulaju-rpt-ppki-") as folder:
                     path = Path(folder) / filename
-                    path.write_bytes(render_rpt(combined=not manipulative, manipulative=manipulative))
-                    result = send_document(cid, str(path), f"RPT 2027 PPKI · Pengurusan Kehidupan Tahun 2 · {edition}")
+                    path.write_bytes(render_rpt(combined=not manipulative, manipulative=manipulative, year=year))
+                    result = send_document(cid, str(path), f"RPT 2027 PPKI · Pengurusan Kehidupan Tahun {year} · {edition}")
                 verify = ns.get("_telegram_delivery_ok_v25279")
                 if callable(verify) and not verify(result):
                     return send(cid, "Telegram belum mengesahkan penghantaran RPT PPKI.")

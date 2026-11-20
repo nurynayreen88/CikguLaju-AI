@@ -106,6 +106,53 @@ class PpkiTelegramTest(unittest.TestCase):
 
 
 class PpkiApiTest(unittest.TestCase):
+    def test_year3_17_word_pdf_and_rpt_have_exact_scope(self):
+        app = Flask(__name__)
+        app.register_blueprint(create_ppki_blueprint())
+        client = app.test_client()
+        prefix = "/internal/rph/v1/ppki"
+        token = "P" * 32
+        headers = {"Authorization": f"Bearer {token}"}
+        with patch.dict("os.environ", {"CIKGULAJU_AUTHORITATIVE_API_TOKEN": token,
+                                       "CIKGULAJU_WEB_NATIVE_RPH_ENABLED": "1"}):
+            source = client.get(prefix + "/catalog?year=3", headers=headers).get_json()
+            self.assertEqual(source["year"], 3)
+            self.assertEqual(source["units"], [{"value": UNIT1, "label": "Unit 1 · Sekolah, Duniaku"}])
+            self.assertEqual(source["kemahiran_manipulatif"], [])
+            self.assertEqual([row["value"] for row in source["lessons"]],
+                             [f"{number:03d}" for number in range(1, 18)])
+            self.assertEqual(client.get(prefix + "/catalog?year=3&year=2", headers=headers).status_code, 400)
+            teacher = {"class": "3 Bestari", "date": "2027-01-20", "time": "09:00 - 09:30",
+                       "students": "8", "reflection": "Ulang dengan pilihan bergambar."}
+            for row in source["lessons"]:
+                selection = {"year": 3, "subject": SUBJECT, "unit": UNIT1, "lesson": row["value"]}
+                for fmt in ("word", "pdf"):
+                    response = client.post(prefix + "/render", headers=headers,
+                                           json={"selection": selection, "teacher": teacher, "format": fmt})
+                    self.assertEqual(response.status_code, 200)
+                    self.assertIn("TAHUN_3_" + row["value"], response.headers["Content-Disposition"])
+                    if fmt == "word":
+                        doc = Document(BytesIO(response.data))
+                        text = "\n".join([p.text for p in doc.paragraphs] +
+                                         [cell.text for table in doc.tables for cells in table.rows for cell in cells.cells])
+                    else:
+                        doc = PdfReader(BytesIO(response.data))
+                        self.assertEqual(len(doc.pages), 1)
+                        text = doc.pages[0].extract_text()
+                    self.assertIn("Tahun 3", text)
+                    self.assertIn("Ulang dengan pilihan bergambar.", text)
+            bad = {**selection, "year": 2}
+            self.assertEqual(client.post(prefix + "/render", headers=headers,
+                                         json={"selection": bad, "teacher": teacher, "format": "pdf"}).status_code, 404)
+            rpt = client.get(prefix + "/rpt.pdf?year=3", headers=headers)
+            self.assertEqual(rpt.status_code, 200)
+            pages = PdfReader(BytesIO(rpt.data)).pages
+            self.assertEqual(len(pages), 1)
+            text = pages[0].extract_text()
+            self.assertIn("Tahun 3", text)
+            self.assertIn("017", text)
+            self.assertEqual(client.get(prefix + "/rpt-manipulatif.pdf?year=3", headers=headers).status_code, 404)
+
     def test_all_71_word_pdf_and_protected_access(self):
         app = Flask(__name__)
         app.register_blueprint(create_ppki_blueprint())

@@ -1,0 +1,513 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 3,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 1 · Sekolah, Duniaku",
+  "content_standards": {
+    "1.1": "Kenali rakan.",
+    "1.2": "Kenali warga sekolah.",
+    "1.3": "Adab pergaulan dengan rakan dan warga sekolah.",
+    "1.4": "Peraturan di sekolah.",
+    "1.5": "Cara berpakaian di sekolah.",
+    "1.6": "Mengenal waktu makan dan makanan yang bersesuaian."
+  },
+  "learning_standards": {
+    "1.1.1": "Menyatakan nama, umur dan jantina rakan.",
+    "1.1.2": "Mengenal pasti panggilan yang sesuai semasa berkomunikasi dengan rakan.",
+    "1.1.3": "Menerangkan tentang diri rakan.",
+    "1.2.1": "Mengenal warga sekolah dan menggunakan panggilan yang sesuai.",
+    "1.2.2": "Menjelaskan peranan warga sekolah.",
+    "1.3.1": "Menggunakan bahasa yang sopan semasa berkomunikasi dengan rakan dan warga sekolah.",
+    "1.3.2": "Mempraktikkan adab dan batasan pergaulan dengan rakan dan warga sekolah.",
+    "1.3.3": "Membezakan sentuhan selamat dan sentuhan tidak selamat semasa bergaul dengan rakan dan warga sekolah.",
+    "1.4.1": "Menyatakan peraturan di dalam kelas, bilik khas, kantin, padang dan gelanggang permainan.",
+    "1.4.2": "Mengamalkan peraturan di dalam kelas, bilik khas, kantin, padang dan gelanggang permainan.",
+    "1.5.1": "Mengenal jenis pakaian seragam sekolah dan pakaian sukan.",
+    "1.5.2": "Membezakan pakaian seragam sekolah dengan pakaian sukan sekolah.",
+    "1.5.3": "Menunjukkan cara memakai pakaian seragam sekolah serta pakaian sukan.",
+    "1.6.1": "Menamakan sarapan pagi, makan tengah hari, minum petang dan makan malam.",
+    "1.6.2": "Menjelaskan kepentingan makan mengikut waktu.",
+    "1.6.3": "Menyenaraikan contoh makanan yang sesuai diambil mengikut waktu.",
+    "1.6.4": "Menghubungkait pengambilan jenis makanan mengikut waktu."
+  },
+  "lessons": [
+    {
+      "pdp": "001",
+      "title": "Kenali nama, umur dan jantina rakan",
+      "sp": "1.1.1",
+      "focus": "Menyebut butiran asas rakan melalui contoh berpasangan.",
+      "book": "Buku Teks hlm. 4–5",
+      "objective": "Murid menyatakan atau memadankan sekurang-kurangnya dua daripada tiga butiran rakan dengan tepat.",
+      "materials": "Kad profil rekaan dan kad nama, umur serta jantina.",
+      "induction": [
+        "Guru menunjukkan tiga ruang pada kad profil contoh.",
+        "Murid meneka maklumat bagi setiap ruang."
+      ],
+      "guided": [
+        "Guru membaca satu kad profil dan menunjukkan cara memadankan tiga butiran.",
+        "Murid meletakkan kad butiran pada ruang yang sepadan."
+      ],
+      "practice": [
+        "Guru memberikan profil baharu kepada pasangan.",
+        "Murid menyoal pasangan berdasarkan watak dan melengkapkan kad."
+      ],
+      "closure": [
+        "Guru meminta satu butiran daripada kad yang lengkap.",
+        "Murid menyampaikan butiran melalui lisan atau kad."
+      ],
+      "support": "Sediakan ikon bagi setiap butiran dan beri pilihan dua jawapan.",
+      "assessment": "Guru menanda ketepatan nama, umur dan jantina bagi satu profil baharu.",
+      "follow_up": "Ulang satu butiran yang tertukar dengan contoh lebih jelas."
+    },
+    {
+      "pdp": "002",
+      "title": "Panggilan yang sesuai untuk rakan",
+      "sp": "1.1.2",
+      "focus": "Mengenal dan memilih panggilan sopan dalam situasi bersama rakan.",
+      "book": "Buku Teks hlm. 4–5",
+      "objective": "Murid memilih panggilan sesuai bagi sekurang-kurangnya tiga daripada empat situasi.",
+      "materials": "Kad situasi serta nama watak.",
+      "induction": [
+        "Guru memperagakan cara menarik perhatian rakan dengan menyebut namanya.",
+        "Murid memilih kad nama yang sepadan."
+      ],
+      "guided": [
+        "Guru membandingkan penggunaan nama rakan dengan contoh gelaran yang kurang sopan.",
+        "Murid menerangkan pilihan dengan perkataan ringkas atau kad."
+      ],
+      "practice": [
+        "Guru mengagihkan situasi meminta bantuan, menjemput bermain, bertanya dan memberi salam.",
+        "Murid memilih dan menggunakan panggilan sesuai mengikut watak."
+      ],
+      "closure": [
+        "Guru menunjukkan satu kad tanpa contoh jawapan.",
+        "Murid menyebut panggilan sesuai."
+      ],
+      "support": "Paparkan bingkai ayat dan pilihan nama watak.",
+      "assessment": "Guru merekod pilihan sesuai dalam empat situasi.",
+      "follow_up": "Latih panggilan dengan kad watak yang dikenali."
+    },
+    {
+      "pdp": "003",
+      "title": "Ceritakan tentang rakan",
+      "sp": "1.1.3",
+      "focus": "Menerangkan diri rakan dengan butiran yang diberi dan satu sifat baik yang dapat diperhatikan.",
+      "book": "Buku Teks hlm. 4–5, 17 (pengayaan)",
+      "objective": "Murid menyampaikan sekurang-kurangnya tiga maklumat tepat tentang seorang watak rakan.",
+      "materials": "Kad profil rekaan, peta buih dan ikon sifat baik. Boneka jari dan video buku teks sebagai pengayaan.",
+      "induction": [
+        "Guru menunjukkan gambar rakan yang membantu mengemas kelas.",
+        "Murid menyatakan satu sifat baik berdasarkan gambar."
+      ],
+      "guided": [
+        "Guru memodelkan penerangan dengan nama, umur dan satu sifat baik.",
+        "Murid mengisi peta buih dengan maklumat daripada kad watak."
+      ],
+      "practice": [
+        "Guru memberi satu profil baharu dan masa untuk berlatih dalam pasangan.",
+        "Murid menerangkan tiga maklumat tentang watak kepada pasangan. Murid boleh menggunakan boneka jari jika mahu."
+      ],
+      "closure": [
+        "Guru meminta murid berkongsi satu sifat baik.",
+        "Murid menunjukkan perkataan atau gambar yang sepadan."
+      ],
+      "support": "Terima jawapan menggunakan ikon, ayat pendek atau alat komunikasi.",
+      "assessment": "Guru menyemak tiga maklumat berdasarkan profil yang sama.",
+      "follow_up": "Ulang latihan dengan dua butiran sebelum menambah sifat baik."
+    },
+    {
+      "pdp": "004",
+      "title": "Kenali warga sekolah dan panggilannya",
+      "sp": "1.2.1",
+      "focus": "Mengenal tujuh peranan warga sekolah dan memilih panggilan yang sesuai.",
+      "book": "Buku Teks hlm. 6–7",
+      "objective": "Murid memadankan sekurang-kurangnya lima daripada tujuh warga sekolah dengan panggilan sesuai.",
+      "materials": "Tujuh kad peranan, gambar dan kad panggilan.",
+      "induction": [
+        "Guru menunjukkan gambar guru besar dan pekerja kantin.",
+        "Murid menyebut peranan yang dikenali."
+      ],
+      "guided": [
+        "Guru memperkenalkan pentadbir, guru, pembantu pengurusan murid, staf sokongan, pengendali kantin, pengawal dan pekerja am.",
+        "Murid memadankan peranan dengan gambar di buku teks."
+      ],
+      "practice": [
+        "Guru mengedarkan tujuh kad situasi ringkas.",
+        "Murid memilih panggilan sopan mengikut warga sekolah yang ditemui."
+      ],
+      "closure": [
+        "Guru meminta murid berlatih satu sapaan.",
+        "Murid menggunakan panggilan yang dipilih."
+      ],
+      "support": "Gunakan panggilan yang diamalkan di sekolah serta ikon lokasi.",
+      "assessment": "Guru menanda lima atau lebih padanan warga dan panggilan yang sesuai.",
+      "follow_up": "Ulang peranan yang tertukar dalam permainan padan dua pilihan."
+    },
+    {
+      "pdp": "005",
+      "title": "Tugas warga sekolah",
+      "sp": "1.2.2",
+      "focus": "Menjelaskan peranan warga sekolah melalui situasi lazim.",
+      "book": "Buku Teks hlm. 6–7",
+      "objective": "Murid menerangkan tugas sesuai bagi sekurang-kurangnya tiga daripada empat warga sekolah.",
+      "materials": "Kad warga sekolah, kad tugas dan peta minda.",
+      "induction": [
+        "Guru bertanya siapa yang menyambut murid di pintu pagar.",
+        "Murid memilih gambar pengawal keselamatan."
+      ],
+      "guided": [
+        "Guru membaca situasi bantuan di pejabat, kelas, kantin dan pintu pagar.",
+        "Murid memadankan situasi dengan warga yang bertugas."
+      ],
+      "practice": [
+        "Guru menyediakan empat kad tugasan berasingan.",
+        "Murid menerangkan tugas setiap warga dengan ayat mudah atau kad frasa."
+      ],
+      "closure": [
+        "Guru meminta murid menyatakan satu tempat mendapatkan bantuan.",
+        "Murid memilih peranan yang paling sesuai."
+      ],
+      "support": "Sediakan bingkai ayat dan peta minda berpandu.",
+      "assessment": "Guru menyemak ketepatan empat penerangan tugas.",
+      "follow_up": "Ulang peranan yang mengelirukan dengan contoh di sekolah."
+    },
+    {
+      "pdp": "006",
+      "title": "Bahasa sopan dengan warga sekolah",
+      "sp": "1.3.1",
+      "focus": "Menggunakan ucapan dan permintaan sopan dalam lakonan ringkas.",
+      "book": "Buku Teks hlm. 8",
+      "objective": "Murid menggunakan ungkapan yang sesuai dalam sekurang-kurangnya tiga daripada empat situasi.",
+      "materials": "Kad lakonan, kad ucapan dan gambar lokasi.",
+      "induction": [
+        "Guru menunjukkan dua cara meminta bantuan dengan intonasi berlainan.",
+        "Murid memilih cara yang lebih sopan."
+      ],
+      "guided": [
+        "Guru memodelkan terima kasih, minta izin, tolong dan maaf melalui situasi dekat dengan murid.",
+        "Murid berlatih satu ungkapan bagi setiap situasi."
+      ],
+      "practice": [
+        "Guru menukar watak dan situasi pada empat kad.",
+        "Murid melakonkan respons dengan ungkapan dan intonasi yang sesuai."
+      ],
+      "closure": [
+        "Guru menunjukkan kad situasi yang diundi.",
+        "Murid memilih dan melafazkan ungkapan sopan."
+      ],
+      "support": "Benarkan murid membaca ungkapan daripada kad semasa berlatih.",
+      "assessment": "Guru menanda kesesuaian ungkapan dalam empat lakonan.",
+      "follow_up": "Latih semula ungkapan yang belum digunakan dengan spontan."
+    },
+    {
+      "pdp": "007",
+      "title": "Adab dan batas pergaulan",
+      "sp": "1.3.2",
+      "focus": "Mempraktikkan adab meminta izin, menunggu giliran dan menghormati ruang peribadi.",
+      "book": "Buku Teks hlm. 8–9",
+      "objective": "Murid menunjukkan sekurang-kurangnya tiga daripada empat respons beradab dalam simulasi.",
+      "materials": "Kad situasi, boneka dan penanda ruang.",
+      "induction": [
+        "Guru menunjukkan dua boneka yang mahu menggunakan alat yang sama.",
+        "Murid cadangkan cara meminta izin."
+      ],
+      "guided": [
+        "Guru memodelkan meminta izin, menunggu, memberi ruang dan berhenti apabila diminta.",
+        "Murid memilih respons yang sesuai untuk setiap lakonan boneka."
+      ],
+      "practice": [
+        "Guru menyediakan empat situasi simulasi tanpa sentuhan fizikal.",
+        "Murid melakonkan atau menunjukkan respons menggunakan boneka."
+      ],
+      "closure": [
+        "Guru meminta satu contoh menghormati batas rakan.",
+        "Murid menyebut atau menunjukkan tindakan yang sesuai."
+      ],
+      "support": "Gunakan kad berhenti dan kad izin dengan lambang yang jelas.",
+      "assessment": "Guru merekod respons beradab serta bantuan yang diperlukan.",
+      "follow_up": "Latih respons yang sukar dengan dua pilihan tindakan."
+    },
+    {
+      "pdp": "008",
+      "title": "Bezakan sentuhan selamat dan tidak selamat",
+      "sp": "1.3.3",
+      "focus": "Mengenal situasi yang melibatkan izin, rasa selamat dan tindakan mendapatkan bantuan.",
+      "book": "Buku Teks hlm. 9",
+      "objective": "Murid mengelaskan sekurang-kurangnya tiga daripada empat situasi dengan alasan mudah dan menyatakan seorang dewasa dipercayai.",
+      "materials": "Kad ilustrasi rekaan, boneka dan kad tanda berhenti.",
+      "induction": [
+        "Guru menerangkan bahawa murid boleh menolak sentuhan yang membuatkan murid tidak selesa.",
+        "Murid menunjukkan kad berhenti atau menggunakan respons pilihan."
+      ],
+      "guided": [
+        "Guru membincangkan situasi rekaan menggunakan gambar dan boneka sahaja.",
+        "Murid mengelaskan situasi berdasarkan izin, keselamatan dan perasaan."
+      ],
+      "practice": [
+        "Guru menunjukkan empat situasi baharu tanpa meminta perkongsian pengalaman peribadi.",
+        "Murid memilih kategori, memberi alasan dan berlatih meminta bantuan kepada dewasa dipercayai."
+      ],
+      "closure": [
+        "Guru mengulang langkah menolak, beredar dan memberitahu.",
+        "Murid menunjukkan seorang dewasa dipercayai melalui kad."
+      ],
+      "support": "Benarkan murid menjawab secara peribadi atau menunjuk kad.",
+      "assessment": "Guru menanda ketepatan kategori dan pilihan sumber bantuan.",
+      "follow_up": "Ulang dengan dua ilustrasi yang berbeza dengan jelas."
+    },
+    {
+      "pdp": "009",
+      "title": "Nyatakan peraturan tempat di sekolah",
+      "sp": "1.4.1",
+      "focus": "Menyatakan peraturan di kelas, bilik khas, kantin, padang dan gelanggang.",
+      "book": "Buku Teks hlm. 10–11",
+      "objective": "Murid menyatakan satu peraturan sesuai bagi sekurang-kurangnya empat daripada lima tempat.",
+      "materials": "Kad tempat dan ilustrasi peraturan sekolah.",
+      "induction": [
+        "Guru menunjukkan gambar bilik masakan dan gelanggang.",
+        "Murid memberi contoh peraturan yang diketahui."
+      ],
+      "guided": [
+        "Guru membezakan peraturan lima tempat. Guru menerangkan contoh izin, giliran dan keselamatan.",
+        "Murid memadankan ilustrasi peraturan dengan tempat yang sesuai."
+      ],
+      "practice": [
+        "Guru memberi lima kad tempat tanpa ayat contoh.",
+        "Murid menyebut atau memilih satu peraturan bagi setiap tempat."
+      ],
+      "closure": [
+        "Guru mengaitkan satu peraturan dengan keselamatan.",
+        "Murid menjelaskan sebab dengan ayat pendek."
+      ],
+      "support": "Gunakan gambar sebenar tempat di sekolah jika sesuai.",
+      "assessment": "Guru menyemak lima padanan tempat dan peraturan.",
+      "follow_up": "Ulang padanan lokasi yang masih keliru."
+    },
+    {
+      "pdp": "010",
+      "title": "Amalkan peraturan di sekolah",
+      "sp": "1.4.2",
+      "focus": "Mempraktikkan peraturan bagi lima lokasi melalui simulasi.",
+      "book": "Buku Teks hlm. 10–11",
+      "objective": "Murid mempraktikkan respons sesuai dalam sekurang-kurangnya empat daripada lima simulasi.",
+      "materials": "Label lokasi, garisan giliran dan alatan main peranan.",
+      "induction": [
+        "Guru menunjukkan lakonan berhenti di pintu bilik khas untuk meminta izin.",
+        "Murid menyebut tindakan yang patut dilakukan."
+      ],
+      "guided": [
+        "Guru menetapkan lima stesen ringkas yang mewakili tempat di sekolah.",
+        "Murid berlatih mematuhi peraturan dengan panduan di setiap stesen."
+      ],
+      "practice": [
+        "Guru memberi satu kad arahan bagi setiap tempat.",
+        "Murid mempraktikkan respons seperti beratur, izin atau berdiri di ruang selamat."
+      ],
+      "closure": [
+        "Guru meminta murid menunjukkan satu langkah keselamatan di gelanggang.",
+        "Murid memperagakan langkah secara simulasi."
+      ],
+      "support": "Gunakan kad bergambar dan jadikan semua stesen mudah diakses.",
+      "assessment": "Guru merekod respons sesuai serta jenis bantuan di lima stesen.",
+      "follow_up": "Ulang satu stesen yang memerlukan bantuan."
+    },
+    {
+      "pdp": "011",
+      "title": "Kenali pakaian seragam dan pakaian sukan",
+      "sp": "1.5.1",
+      "focus": "Mengenal pasti contoh pakaian seragam sekolah dan pakaian sukan.",
+      "book": "Buku Teks hlm. 12–13",
+      "objective": "Murid menamakan sekurang-kurangnya empat daripada enam contoh pakaian dengan tepat.",
+      "materials": "Set pakaian contoh atau kad gambar berlabel.",
+      "induction": [
+        "Guru menunjukkan dua set pakaian sekolah.",
+        "Murid menyebut item yang dikenali."
+      ],
+      "guided": [
+        "Guru menunjukkan contoh baju seragam, seluar atau skirt, pakaian sukan dan kasut yang digunakan di sekolah.",
+        "Murid memadankan setiap gambar dengan nama item yang sesuai."
+      ],
+      "practice": [
+        "Guru mengedarkan enam kad pakaian.",
+        "Murid memilih atau menyebut nama setiap item."
+      ],
+      "closure": [
+        "Guru meminta satu contoh untuk setiap set.",
+        "Murid menyatakan item daripada set yang betul."
+      ],
+      "support": "Gunakan pakaian contoh tanpa mewajibkan murid menyentuhnya.",
+      "assessment": "Guru menanda ketepatan nama bagi enam gambar.",
+      "follow_up": "Ulang istilah dengan gambar pakaian sebenar sekolah."
+    },
+    {
+      "pdp": "012",
+      "title": "Bezakan pakaian mengikut situasi",
+      "sp": "1.5.2",
+      "focus": "Membezakan set pakaian seragam dan set pakaian sukan mengikut kegunaan.",
+      "book": "Buku Teks hlm. 12–13",
+      "objective": "Murid memilih set sesuai dalam sekurang-kurangnya tiga daripada empat situasi dan memberikan satu sebab.",
+      "materials": "Kad situasi dan dua alas kategori pakaian.",
+      "induction": [
+        "Guru menunjukkan gambar perhimpunan serta aktiviti di padang.",
+        "Murid meneka pakaian yang sesuai."
+      ],
+      "guided": [
+        "Guru membandingkan kedua-dua set dan memberi satu contoh kegunaan bagi setiap set.",
+        "Murid menyusun kad pakaian mengikut kumpulan."
+      ],
+      "practice": [
+        "Guru mengemukakan empat situasi yang mengikuti peraturan pakaian sekolah.",
+        "Murid memilih set yang sesuai dan menyatakan sebab bagi satu situasi."
+      ],
+      "closure": [
+        "Guru menunjukkan satu pilihan yang perlu dibaiki.",
+        "Murid memindahkan kad ke kumpulan sepadan."
+      ],
+      "support": "Sediakan kata kunci kelas, perhimpunan dan sukan pada kad.",
+      "assessment": "Guru menyemak pilihan empat situasi dan satu sebab.",
+      "follow_up": "Latih pilihan dengan situasi kelas dan sukan yang paling biasa."
+    },
+    {
+      "pdp": "013",
+      "title": "Tunjukkan cara memakai pakaian sekolah dan sukan",
+      "sp": "1.5.3",
+      "focus": "Mempraktikkan urutan memakai dua set pakaian menggunakan model atau lapisan luar.",
+      "book": "Buku Teks hlm. 12–14",
+      "objective": "Murid menunjukkan sekurang-kurangnya tiga daripada empat langkah bagi setiap set dengan tertib.",
+      "materials": "Model pakaian, pakaian lapisan luar dan kad urutan.",
+      "induction": [
+        "Guru menunjukkan dua kad langkah yang disusun terbalik.",
+        "Murid menyusun kad mengikut urutan yang sesuai."
+      ],
+      "guided": [
+        "Guru memodelkan empat langkah untuk seragam serta empat langkah untuk sukan.",
+        "Murid meniru urutan menggunakan model atau pakaian lapisan luar."
+      ],
+      "practice": [
+        "Guru menyediakan satu stesen bagi setiap set pakaian.",
+        "Murid memilih item dan menunjukkan langkah pada model atau lapisan luar secara sukarela."
+      ],
+      "closure": [
+        "Guru meminta semakan kemasan akhir.",
+        "Murid menunjukkan satu cara mengemaskan pakaian."
+      ],
+      "support": "Sediakan pengikat yang mudah dipegang dan pelihara privasi murid.",
+      "assessment": "Guru menyemak urutan empat langkah bagi setiap set.",
+      "follow_up": "Ulang langkah yang sukar dengan kad urutan."
+    },
+    {
+      "pdp": "014",
+      "title": "Namakan empat waktu makan",
+      "sp": "1.6.1",
+      "focus": "Menamakan sarapan pagi, makan tengah hari, minum petang dan makan malam.",
+      "book": "Buku Teks hlm. 15–16",
+      "objective": "Murid menamakan sekurang-kurangnya tiga daripada empat waktu makan berdasarkan kad rutin.",
+      "materials": "Kad waktu makan, ilustrasi rutin dan jalur urutan.",
+      "induction": [
+        "Guru menunjukkan gambar suasana selepas bangun tidur.",
+        "Murid memilih label waktu makan yang sesuai."
+      ],
+      "guided": [
+        "Guru memperkenalkan empat waktu makan menggunakan urutan satu hari.",
+        "Murid memadankan label dengan ikon pagi, tengah hari, petang dan malam."
+      ],
+      "practice": [
+        "Guru mengagihkan empat kad rutin dalam susunan rawak.",
+        "Murid menyusun kad dan menyebut atau memilih label bagi setiap waktu."
+      ],
+      "closure": [
+        "Guru bertanya waktu selepas makan tengah hari.",
+        "Murid menunjukkan kad minum petang."
+      ],
+      "support": "Guna jalur warna dan ikon matahari atau bulan.",
+      "assessment": "Guru menyemak empat nama waktu makan.",
+      "follow_up": "Ulang dua kad waktu sebelum menambah kad lain."
+    },
+    {
+      "pdp": "015",
+      "title": "Mengapa makan mengikut waktu",
+      "sp": "1.6.2",
+      "focus": "Menjelaskan kepentingan makan secara teratur melalui rutin sekolah dan rumah.",
+      "book": "Buku Teks hlm. 16",
+      "objective": "Murid memberikan dua sebab mudah makan mengikut waktu daripada tiga situasi bergambar.",
+      "materials": "Kad rutin harian dan kad sebab.",
+      "induction": [
+        "Guru memaparkan gambar murid bersarapan sebelum sekolah.",
+        "Murid menyatakan satu manfaat yang difahami."
+      ],
+      "guided": [
+        "Guru membincangkan contoh mempunyai tenaga untuk belajar atau bermain serta mengelak rasa terlalu lapar.",
+        "Murid memadankan contoh rutin dengan satu sebab yang sesuai."
+      ],
+      "practice": [
+        "Guru mengedarkan tiga kad situasi rekaan.",
+        "Murid menerangkan sekurang-kurangnya dua sebab dengan lisan atau kad frasa."
+      ],
+      "closure": [
+        "Guru meminta murid memilih satu rutin makan yang diamalkan.",
+        "Murid menyatakan manfaat rutin tersebut."
+      ],
+      "support": "Benarkan murid memilih alasan daripada dua kad bergambar.",
+      "assessment": "Guru menanda dua sebab yang sesuai dengan situasi.",
+      "follow_up": "Ulang penerangan sebab menggunakan aktiviti yang dekat dengan murid."
+    },
+    {
+      "pdp": "016",
+      "title": "Senaraikan makanan yang sesuai",
+      "sp": "1.6.3",
+      "focus": "Menyenaraikan contoh makanan untuk waktu makan dengan menggunakan gambar menu.",
+      "book": "Buku Teks hlm. 15–16",
+      "objective": "Murid menyenaraikan sekurang-kurangnya satu contoh makanan bagi tiga daripada empat waktu makan.",
+      "materials": "Kad menu bergambar dan empat alas waktu makan.",
+      "induction": [
+        "Guru menunjukkan gambar hidangan daripada satu waktu makan.",
+        "Murid menamakan makanan yang dapat dikenal."
+      ],
+      "guided": [
+        "Guru menunjukkan beberapa pilihan munasabah bagi setiap waktu mengikut contoh buku dan makanan setempat.",
+        "Murid mengelaskan kad sambil menyebut nama makanan."
+      ],
+      "practice": [
+        "Guru membentangkan empat waktu makan secara rawak.",
+        "Murid menyenaraikan satu contoh makanan bagi setiap waktu menggunakan kad atau lisan."
+      ],
+      "closure": [
+        "Guru meminta satu contoh yang boleh dipilih pada waktu berbeza.",
+        "Murid memberi contoh daripada kad yang sama."
+      ],
+      "support": "Terima pelbagai pilihan makanan yang munasabah dan sesuai budaya.",
+      "assessment": "Guru merekod contoh yang sesuai bagi setiap waktu.",
+      "follow_up": "Ulang menggunakan gambar makanan yang biasa ditemui."
+    },
+    {
+      "pdp": "017",
+      "title": "Padankan menu dengan waktu makan",
+      "sp": "1.6.4",
+      "focus": "Menghubungkait pilihan hidangan dengan rutin makan satu hari.",
+      "book": "Buku Teks hlm. 15–16",
+      "objective": "Murid memadankan sekurang-kurangnya tiga daripada empat pilihan hidangan dengan waktu sesuai dan menerangkan satu padanan.",
+      "materials": "Jalur satu hari dan kad hidangan bergambar.",
+      "induction": [
+        "Guru menunjukkan jadual rekaan satu hari dengan ruang menu kosong.",
+        "Murid memilih satu kad untuk ruang sarapan."
+      ],
+      "guided": [
+        "Guru memodelkan cara memadankan hidangan dengan waktu tanpa menetapkan hanya satu jawapan betul.",
+        "Murid menyebut bila dan mengapa satu hidangan boleh dipilih."
+      ],
+      "practice": [
+        "Guru memberi empat ruang waktu dan beberapa kad pilihan.",
+        "Murid membina satu menu harian serta menerangkan satu padanan."
+      ],
+      "closure": [
+        "Guru menjemput murid berkongsi satu pasangan hidangan dan waktu.",
+        "Murid menunjukkan kad bagi padanan tersebut."
+      ],
+      "support": "Gunakan kad menu dan terima jawapan mengikut rutin keluarga yang munasabah.",
+      "assessment": "Guru menyemak empat padanan dan satu penerangan.",
+      "follow_up": "Bina semula satu bahagian menu dengan bimbingan."
+    }
+  ]
+}

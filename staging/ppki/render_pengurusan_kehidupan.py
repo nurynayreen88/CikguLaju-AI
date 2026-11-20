@@ -25,7 +25,7 @@ def render_lesson(catalog, lesson, extension, teacher):
     sk = lesson["sp"].rsplit(".", 1)[0]
     content = catalog["content_standards"][sk]
     learning = catalog["learning_standards"][lesson["sp"]]
-    heading = ("Rancangan Pengajaran Harian", "PPKI · Pengurusan Kehidupan · Tahun 2", lesson["title"])
+    heading = ("Rancangan Pengajaran Harian", f"PPKI · Pengurusan Kehidupan · Tahun {catalog['year']}", lesson["title"])
     details = [
         ("Unit", catalog["unit"]),
         ("PdP", lesson["pdp"]),
