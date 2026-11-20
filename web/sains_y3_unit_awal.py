@@ -205,7 +205,6 @@ def plan_rows(result, plan, standards):
         "OBJEKTIF PEMBELAJARAN": "Murid dapat " + plan.objective[0].lower() + plan.objective[1:],
         "KRITERIA KEJAYAAN": plan.objective,
         "BAHAN BANTU MENGAJAR": f"{plan.materials} Buku Teks m/s {plan.pages}.",
-        "KBAT / PAK21": teaching["KBAT / PAK21"],
         "PENTAKSIRAN": plan.assessment,
         "SET INDUKSI": plan.induction,
         "AKTIVITI UTAMA": f"Aktiviti 1 – {plan.guided}\nAktiviti 2 – {plan.independent}",
