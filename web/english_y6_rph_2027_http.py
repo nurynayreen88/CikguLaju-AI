@@ -56,7 +56,7 @@ def _docx_paragraph(text, *, bold=False):
 def make_docx(lesson, rows):
     body = [_docx_paragraph("CIKGULAJU AI — RANCANGAN PENGAJARAN HARIAN", bold=True),
             _docx_paragraph("ENGLISH YEAR 6 | RPT 2027 | LESSON %03d | 60 MINUTES" % lesson, bold=True),
-            _docx_paragraph("Class: __________________  Date: ______________  Time: ___________")]
+            _docx_paragraph("Class:    Date:    Time:")]
     for key, label in FIELDS:
         value = rows.get(key) or "—"
         body.append(_docx_paragraph(label + ":", bold=True))
