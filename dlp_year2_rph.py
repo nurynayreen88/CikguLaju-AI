@@ -48,6 +48,19 @@ def _standard_rows(descriptions, ls_codes):
     ]
 
 
+def mathematics_standard_rows(year, standards):
+    """Build the RPH fields from the same LS codes recorded in the RPT."""
+    descriptions = _standard_descriptions(year, "MATH_DLP")
+    codes = re.findall(r"\b(\d+\.\d+\.\d+)(?:[ \t]*(\([iv]+\)(?:,[ \t]*\([iv]+\))*))?",
+                       standards)
+    if not codes:
+        raise ValueError("Mathematics DLP lesson lacks a Learning Standard")
+    selected = dict.fromkeys(
+        f"{code}{part}" for code, parts in codes for part in re.split(r",\s*", parts)
+    )
+    return _standard_rows(descriptions, selected)
+
+
 @lru_cache(maxsize=1)
 def year3_science_catalog():
     path = _DLP_SOURCES / "year3" / "science_2027.json"

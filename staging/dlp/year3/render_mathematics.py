@@ -9,7 +9,7 @@ import re
 
 from docx import Document
 
-from dlp_year2_rph import _pdf, _word
+from dlp_year2_rph import _pdf, _word, mathematics_standard_rows
 
 
 SOURCE = Path(__file__).resolve().parent
@@ -149,7 +149,7 @@ def render_plan(stream, draft, renderer, *, teacher=None):
         ("Unit", unit),
         ("Lesson / PdP", f"{label} · {duration}"),
         ("RPT 2027 dates", dates),
-        ("Standards", details["Standards"]),
+        *mathematics_standard_rows(3, details["Standards"]),
         ("Book references", details["References"]),
         ("Learning objective", details["Learning objective"]),
         ("Materials", details["Materials"]),

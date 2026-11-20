@@ -14,6 +14,7 @@ from docx import Document
 from flask import Flask
 from pypdf import PdfReader
 
+from dlp_year2_rph import mathematics_standard_rows
 from staging.dlp.year6.render_mathematics import DATA, RPT, RPT_NAME, export, load_plans, official_rows
 from web.native_rph_telegram_api import create_native_rph_blueprint
 
@@ -60,7 +61,10 @@ class MathematicsDLPYear6ReviewTests(unittest.TestCase):
                 self.assertEqual(details["Topic"], plan["title"])
                 self.assertEqual(details["Lesson / PdP"], plan["label"].rsplit(" · ", 1)[0])
                 self.assertNotIn("RPT date ranges", details)
-                for label, key in (("Standards", "standards"), ("Book reference", "reference"),
+                standards = mathematics_standard_rows(6, plan["standards"])
+                for label, description in standards:
+                    self.assertEqual(details[label], description)
+                for label, key in (("Book reference", "reference"),
                                    ("Learning objective", "objective")):
                     self.assertEqual(details[label], plan[key])
                 self.assertEqual(word.tables[2].rows[0].cells[1].text, plan["evidence"])
@@ -80,7 +84,9 @@ class MathematicsDLPYear6ReviewTests(unittest.TestCase):
                 page_text = " ".join(page.extract_text().split())
                 self.assertIn(plan["label"].rsplit(" · ", 1)[0], page_text)
                 self.assertNotIn("RPT date ranges", page_text)
-                for field in ("title", "standards", "reference", "objective", "evidence"):
+                for _, description in standards:
+                    self.assertIn(" ".join(description.split()), page_text)
+                for field in ("title", "reference", "objective", "evidence"):
                     self.assertIn(" ".join(plan[field].split()), page_text)
 
 
@@ -124,6 +130,7 @@ class MathematicsDLPYear6DownloadTests(unittest.TestCase):
                 ids.append(key)
                 with self.subTest(lesson=key):
                     plan = expected[key]
+                    standards = mathematics_standard_rows(6, plan["standards"])
                     self.assertEqual(unit["title"], plan["unit"])
                     self.assertEqual(row, {"id": key, "title": plan["title"], "label": plan["label"],
                                            "book_reference": plan["reference"], "minutes": plan["minutes"]})
@@ -140,6 +147,8 @@ class MathematicsDLPYear6DownloadTests(unittest.TestCase):
                             doc = Document(BytesIO(response.data))
                             details = {a.text: b.text for a, b in (row.cells for row in doc.tables[0].rows)}
                             self.assertEqual(details["Topic"], plan["title"])
+                            for label, description in standards:
+                                self.assertEqual(details[label], description)
                             self.assertEqual(doc.tables[2].rows[0].cells[1].text, plan["evidence"])
                             self.assertEqual(doc.tables[2].rows[1].cells[1].text, self.teacher["reflection"])
                             text = " ".join(details.values())
@@ -147,7 +156,9 @@ class MathematicsDLPYear6DownloadTests(unittest.TestCase):
                             pdf = PdfReader(BytesIO(response.data))
                             self.assertEqual(len(pdf.pages), 1)
                             text = " ".join(pdf.pages[0].extract_text().split())
-                            for field in ("title", "standards", "reference", "evidence"):
+                            for _, description in standards:
+                                self.assertIn(" ".join(description.split()), text)
+                            for field in ("title", "reference", "evidence"):
                                 self.assertIn(" ".join(plan[field].split()), text)
                         self.assertIn(plan["label"].rsplit(" · ", 1)[0], text)
                         self.assertNotIn(plan["label"].rsplit(" · ", 1)[0] + " · 90 min", text)
