@@ -106,7 +106,7 @@ class PpkiTelegramTest(unittest.TestCase):
 
 
 class PpkiApiTest(unittest.TestCase):
-    def test_year3_39_word_pdf_and_rpt_have_exact_scope(self):
+    def test_year3_49_word_pdf_and_rpt_have_exact_scope(self):
         app = Flask(__name__)
         app.register_blueprint(create_ppki_blueprint())
         client = app.test_client()
@@ -121,12 +121,13 @@ class PpkiApiTest(unittest.TestCase):
             self.assertEqual(source["kemahiran_manipulatif"], [])
             self.assertEqual([row["value"] for row in source["lessons"]],
                              [f"{number:03d}" for number in range(1, 18)])
-            self.assertEqual([unit["value"] for unit in source["additional_units"]], [UNIT, UNIT3])
+            self.assertEqual([unit["value"] for unit in source["additional_units"]], [UNIT, UNIT3, UNIT4, UNIT5])
             self.assertEqual(client.get(prefix + "/catalog?year=3&year=2", headers=headers).status_code, 400)
             teacher = {"class": "3 Bestari", "date": "2027-01-20", "time": "09:00 - 09:30",
                        "students": "8", "reflection": "Ulang dengan pilihan bergambar."}
             units = [{"value": UNIT1, "lessons": source["lessons"]}, *source["additional_units"]]
-            for unit, numbers in zip(units, (range(1, 18), range(18, 36), range(36, 40)), strict=True):
+            expected = (range(1, 18), range(18, 36), range(36, 40), range(40, 44), range(44, 50))
+            for unit, numbers in zip(units, expected, strict=True):
                 self.assertEqual([row["value"] for row in unit["lessons"]], [f"{n:03d}" for n in numbers])
                 for row in unit["lessons"]:
                     selection = {"year": 3, "subject": SUBJECT, "unit": unit["value"], "lesson": row["value"]}
@@ -151,8 +152,8 @@ class PpkiApiTest(unittest.TestCase):
             rpt = client.get(prefix + "/rpt.pdf?year=3", headers=headers)
             self.assertEqual(rpt.status_code, 200)
             pages = PdfReader(BytesIO(rpt.data)).pages
-            self.assertEqual(len(pages), 3)
-            for page, last in zip(pages, ("017", "035", "039"), strict=True):
+            self.assertEqual(len(pages), 5)
+            for page, last in zip(pages, ("017", "035", "039", "043", "049"), strict=True):
                 text = page.extract_text()
                 self.assertIn("Tahun 3", text)
                 self.assertIn(last, text)

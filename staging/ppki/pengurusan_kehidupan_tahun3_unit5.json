@@ -1,0 +1,190 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 3,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 5 · Amalkan Budaya Sopan",
+  "content_standards": {
+    "5.1": "Adab dan tatasusila terhadap warga sekolah.",
+    "5.2": "Tingkah laku bertatasusila."
+  },
+  "learning_standards": {
+    "5.1.1": "Melafazkan ucapan bertatasusila semasa berinteraksi dengan warga sekolah.",
+    "5.1.2": "Menunjukkan respons emosi yang positif semasa berinteraksi dengan warga sekolah.",
+    "5.1.3": "Menunjukkan respons beradab terhadap arahan yang diberi oleh warga sekolah.",
+    "5.1.4": "Menunjukkan cara beradab dan bertatasusila semasa berinteraksi dengan warga sekolah.",
+    "5.2.1": "Menunjukkan adab dan tatasusila yang sopan di kantin dan kedai buku.",
+    "5.2.2": "Menyatakan kepentingan adab, tatasusila dan emosi yang positif di kantin dan di kedai buku."
+  },
+  "lessons": [
+    {
+      "pdp": "044",
+      "title": "Lafazkan ucapan bertatasusila",
+      "sp": "5.1.1",
+      "focus": "Memilih ucapan sopan mengikut situasi di sekolah.",
+      "book": "Buku Teks hlm. 41–42",
+      "objective": "Murid melafazkan tiga daripada empat ucapan yang sesuai.",
+      "materials": "Kad situasi warga sekolah dan kad ucapan.",
+      "induction": [
+        "Guru tunjuk gambar murid hendak melintas di hadapan guru.",
+        "Murid mendengar model ucapan meminta izin."
+      ],
+      "guided": [
+        "Guru modelkan ucapan salam, terima kasih, maaf dan meminta izin.",
+        "Murid berlatih mengucapkan setiap frasa dalam situasi bergambar."
+      ],
+      "practice": [
+        "Guru beri empat peranan ringkas dengan warga sekolah.",
+        "Murid memilih dan melafazkan ucapan sesuai ketika giliran sendiri."
+      ],
+      "closure": [
+        "Guru tunjuk satu gambar murid menerima bantuan.",
+        "Murid mengucapkan terima kasih kepada pasangan."
+      ],
+      "support": "Sediakan simbol dan frasa pendek sebagai petunjuk sebutan.",
+      "assessment": "Guru rekod padanan ucapan dan situasi bagi empat cubaan.",
+      "follow_up": "Ulang satu ucapan dalam rutin sebenar bersama guru."
+    },
+    {
+      "pdp": "045",
+      "title": "Tunjukkan respons emosi positif",
+      "sp": "5.1.2",
+      "focus": "Memberi respons tenang apabila berlaku kesilapan atau perubahan.",
+      "book": "Buku Teks hlm. 42",
+      "objective": "Murid menunjukkan respons positif yang sesuai bagi tiga daripada empat situasi.",
+      "materials": "Kad situasi, ikon emosi dan pilihan frasa sopan.",
+      "induction": [
+        "Guru tunjuk penjual kehabisan minuman pilihan.",
+        "Murid memilih ikon yang menggambarkan perasaan mereka."
+      ],
+      "guided": [
+        "Guru modelkan berhenti seketika, menyatakan perasaan dan meminta pilihan lain dengan tenang.",
+        "Murid meniru alternatif respons dengan kad atau ucapan."
+      ],
+      "practice": [
+        "Guru jalankan empat simulasi pendek seperti barang habis atau kesilapan tidak sengaja.",
+        "Murid menunjukkan respons yang menghormati diri dan orang lain."
+      ],
+      "closure": [
+        "Guru minta satu cara menenangkan diri di sekolah.",
+        "Murid menunjuk ikon atau menunjukkan gerak yang dipilih."
+      ],
+      "support": "Benarkan murid menggunakan simbol, bahasa isyarat atau jawapan lisan.",
+      "assessment": "Guru catat respons sesuai dan tahap bantuan bagi empat situasi.",
+      "follow_up": "Ulang satu situasi menggunakan pilihan respons bergambar."
+    },
+    {
+      "pdp": "046",
+      "title": "Berikan respons beradab terhadap arahan",
+      "sp": "5.1.3",
+      "focus": "Mendengar arahan warga sekolah dan menjawab dengan sopan.",
+      "book": "Buku Teks hlm. 42",
+      "objective": "Murid memberi respons beradab bagi tiga daripada empat arahan mudah.",
+      "materials": "Kad arahan, bekas alat tulis dan kad frasa.",
+      "induction": [
+        "Guru minta murid menyerahkan sebuah bekas dan modelkan jawapan sopan.",
+        "Murid mendengar dan mengulangi jawapan itu."
+      ],
+      "guided": [
+        "Guru demonstrasi cara mendengar, menjawab dan meminta penjelasan jika arahan kurang jelas.",
+        "Murid memilih frasa sesuai untuk dua contoh berpandu."
+      ],
+      "practice": [
+        "Guru beri empat arahan ringkas termasuk satu situasi yang memerlukan penjelasan.",
+        "Murid memberi respons sopan sebelum bertindak atau meminta bantuan."
+      ],
+      "closure": [
+        "Guru tanya tindakan jika dua arahan diterima serentak.",
+        "Murid menunjukkan cara meminta penjelasan dengan sopan."
+      ],
+      "support": "Guna arahan satu langkah, contoh lisan dan kad frasa pendek.",
+      "assessment": "Guru menanda tiga respons tepat daripada empat.",
+      "follow_up": "Latih satu arahan dengan orang dewasa lain yang dikenali."
+    },
+    {
+      "pdp": "047",
+      "title": "Amalkan adab ketika berinteraksi di sekolah",
+      "sp": "5.1.4",
+      "focus": "Melakukan simulasi bertatasusila bersama warga sekolah.",
+      "book": "Buku Teks hlm. 42",
+      "objective": "Murid menunjukkan tiga daripada empat tingkah laku sopan dalam lakonan.",
+      "materials": "Kad watak, gambar pejabat dan penanda giliran.",
+      "induction": [
+        "Guru lakonkan situasi memberi laluan kepada warga sekolah.",
+        "Murid memilih satu perbuatan yang menunjukkan hormat."
+      ],
+      "guided": [
+        "Guru modelkan memberi salam, menunggu giliran, memberi laluan dan berterima kasih.",
+        "Murid memilih kad perbuatan dan melakonkan contoh bersama pasangan."
+      ],
+      "practice": [
+        "Guru tetapkan situasi berjumpa petugas pejabat dan meminta bantuan.",
+        "Murid menunggu giliran, memulakan percakapan dan menamatkannya dengan sopan."
+      ],
+      "closure": [
+        "Guru minta satu perbuatan yang boleh diamalkan selepas kelas.",
+        "Murid menyatakan atau menunjukkan satu amalan."
+      ],
+      "support": "Gunakan kad giliran dan skrip bergambar mengikut keperluan.",
+      "assessment": "Guru memerhati empat tingkah laku dan merekod tiga yang ditunjukkan.",
+      "follow_up": "Lakukan pemerhatian susulan dalam satu rutin sekolah."
+    },
+    {
+      "pdp": "048",
+      "title": "Tunjukkan adab di kantin dan kedai buku",
+      "sp": "5.2.1",
+      "focus": "Mengamalkan giliran dan bahasa sopan di dua tempat jual beli.",
+      "book": "Buku Teks hlm. 43",
+      "objective": "Murid melakukan sekurang-kurangnya tiga daripada empat tingkah laku di dua stesen.",
+      "materials": "Kad kantin dan kedai buku, tanda giliran, bahan jual beli simulasi.",
+      "induction": [
+        "Guru tunjuk gambar barisan pada hlm. 43.",
+        "Murid mengenal pasti tempat mula beratur."
+      ],
+      "guided": [
+        "Guru modelkan beratur, meminta barang, menunggu jawapan dan mengucapkan terima kasih.",
+        "Murid meniru tindakan di stesen kantin."
+      ],
+      "practice": [
+        "Guru pindahkan latihan ke stesen kedai buku dengan giliran baharu.",
+        "Murid melakonkan pembelian dengan empat tindakan yang dipelajari."
+      ],
+      "closure": [
+        "Guru tunjuk gambar murid memotong barisan.",
+        "Murid menunjukkan tempat sepatutnya berdiri."
+      ],
+      "support": "Letakkan penanda lantai dan kad ucapan yang jelas.",
+      "assessment": "Guru menanda sekurang-kurangnya tiga adab merentas dua stesen.",
+      "follow_up": "Ulang stesen yang masih memerlukan bantuan dengan rakan pembimbing."
+    },
+    {
+      "pdp": "049",
+      "title": "Nyatakan kepentingan adab ketika membeli",
+      "sp": "5.2.2",
+      "focus": "Menjelaskan sebab beradab dan memberi respons positif di kantin dan kedai buku.",
+      "book": "Buku Teks hlm. 43",
+      "objective": "Murid menyatakan tiga daripada empat sebab yang sesuai bagi situasi yang diberi.",
+      "materials": "Kad sebab dan situasi kantin serta kedai buku.",
+      "induction": [
+        "Guru baca situasi barang yang hendak dibeli telah habis.",
+        "Murid pilih cara menyatakan kecewa dengan sopan."
+      ],
+      "guided": [
+        "Guru hubungkan beratur dengan keadilan, bertutur sopan dengan kefahaman dan bersabar dengan suasana teratur.",
+        "Murid memadankan setiap amalan dengan sebab bergambar."
+      ],
+      "practice": [
+        "Guru beri empat kad situasi, dua bagi setiap lokasi.",
+        "Murid menerangkan sebab adab yang sesuai bagi setiap situasi."
+      ],
+      "closure": [
+        "Guru minta satu sebab mengucapkan terima kasih kepada penjual.",
+        "Murid menyatakan atau memilih sebab itu."
+      ],
+      "support": "Gunakan bingkai ayat “Kita ... supaya ...” dan kad sebab bergambar.",
+      "assessment": "Guru semak tiga alasan yang tepat daripada empat situasi.",
+      "follow_up": "Ulang alasan yang masih tertukar dalam rutin kantin sekolah."
+    }
+  ]
+}
