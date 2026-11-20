@@ -95,7 +95,7 @@ def test_ppki_uses_existing_verified_support_text():
     result = supplement_details(heading, DETAILS, ACTIVITIES, existing)
     assert result[:len(DETAILS)] == DETAILS
     assert existing[0][1] not in result[-1][1]
-    assert "sokongan yang dinyatakan" in result[-1][1]
+    assert "bahagian Sokongan" in result[-1][1]
     assert existing[0][1] == "Beri dua kad bergambar. Terima jawapan secara isyarat."
 
 
