@@ -41,3 +41,14 @@ Tahun 5 PdP 19 mengekalkan SP 2.4.1 yang tercetak pada halaman 49. PBD menggunak
 **DALAM SEMAKAN.** Keluaran sementara mempunyai deskripsi standard. Pengesahan visual skor bagi baki PdP, fail audio serta muat turun dengan akaun guru produksi masih terbuka.
 
 Semakan indeks audio menemui 118 PdP dengan rujukan nombor trek yang boleh dibaca. Daripada jumlah itu, 117 ada padanan nombor dalam folder sumber. Padanan ini masih memerlukan semakan fail yang betul, akses dan kesesuaian dengan skor buku.
+
+## Semakan akses sumber audio
+
+Kesemua sembilan pautan dalam indeks bagi dua PdP mengembalikan HTTP 200 dengan jenis media audio/mpeg pada 20 November 2026. Fail dibuka sebagai MP3 dan tempoh sepadan dengan fail yang boleh dibaca oleh ffprobe. Nama dalam indeks sepadan dengan nombor dan jenis rakaman yang dicetak pada halaman buku. Tiada fail audio dimasukkan ke repositori.
+
+| PdP | Trek | Tempoh MP3 dalam saat |
+| --- | --- | --- |
+| Tahun 3 PdP 21 | 59, 60, 61, 62, 63 | 36.47, 42.43, 98.41, 99.64, 97.91 |
+| Tahun 5 PdP 19 | 90, 91, 92, 93 | 107.57, 108.72, 184.87, 182.21 |
+
+Pengesahan ini meliputi akses, jenis fail dan metadata tempoh. Padanan bunyi dengan skor dan kebenaran pengedaran masih terbuka.
