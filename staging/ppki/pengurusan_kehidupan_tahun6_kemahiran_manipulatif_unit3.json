@@ -1,0 +1,190 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 6,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Kemahiran Manipulatif",
+  "unit": "Unit 3 · Lari Berkejaran",
+  "content_standards": {
+    "3.1": "Postur badan dan pergerakan lokomotor",
+    "3.2": "Permainan luar"
+  },
+  "learning_standards": {
+    "3.1.1": "Mengenal pasti postur badan yang betul ketika berlari",
+    "3.1.2": "Berlari dengan postur badan yang betul",
+    "3.1.3": "Memanipulasi pergerakan berlari dalam permainan kecil atau gerakan kreatif",
+    "3.2.1": "Mengenal pasti pergerakan mengayuh, melompat, mencuit, menangkap dan mengelak",
+    "3.2.2": "Melakukan pergerakan tangan dan kaki dalam permainan kecil",
+    "3.2.3": "Mengaplikasi pergerakan tangan dan kaki dengan selamat dalam permainan kecil"
+  },
+  "lessons": [
+    {
+      "pdp": "064",
+      "title": "Kenal postur badan semasa berlari",
+      "sp": "3.1.1",
+      "focus": "Kenal postur badan semasa berlari.",
+      "book": "Buku Teks hlm. 98–101",
+      "objective": "Murid dapat mengenal pasti sekurang-kurangnya tiga ciri postur berlari yang betul.",
+      "materials": "Kad postur, gambar buku dan penanda rata",
+      "induction": [
+        "Menunjukkan dua gambar postur berlari.",
+        "Memilih gambar dengan pandangan ke hadapan."
+      ],
+      "guided": [
+        "Membimbing pemerhatian kepala, badan, ayunan tangan dan pergerakan kaki.",
+        "Menunjuk ciri yang sesuai pada gambar contoh."
+      ],
+      "practice": [
+        "Menunjukkan demonstrasi perlahan dan dua kad postur untuk dibandingkan.",
+        "Mengenal pasti postur yang betul serta menerangkan satu petunjuk."
+      ],
+      "closure": [
+        "Memilih satu gambar untuk semakan kendiri.",
+        "Menunjuk posisi badan atau tangan yang membantu pergerakan."
+      ],
+      "support": "Gunakan gambar besar dengan tanda pada anggota badan.",
+      "assessment": "Guru merekod sama ada murid dapat mengenal pasti sekurang-kurangnya tiga ciri postur berlari yang betul.",
+      "follow_up": "Nilai satu contoh pergerakan menggunakan kad semak."
+    },
+    {
+      "pdp": "065",
+      "title": "Berlari menggunakan postur yang sesuai",
+      "sp": "3.1.2",
+      "focus": "Berlari menggunakan postur yang sesuai.",
+      "book": "Buku Teks hlm. 98–101",
+      "objective": "Murid dapat mengekalkan tiga ciri postur berlari dalam dua percubaan pendek.",
+      "materials": "Penanda lantai, kon lembut dan kad isyarat",
+      "induction": [
+        "Memperkenalkan laluan lurus yang pendek dengan tempat mula dan berhenti.",
+        "Menunjuk ruang menunggu dan tanda tamat."
+      ],
+      "guided": [
+        "Menunjukkan pandangan ke hadapan, ayunan tangan terkawal dan langkah selesa.",
+        "Mencuba postur semasa berjalan dan kemudian berlari perlahan."
+      ],
+      "practice": [
+        "Membimbing percubaan bergilir dengan jarak yang sesuai.",
+        "Berlari dalam laluan, mengekalkan postur dan berhenti pada tanda."
+      ],
+      "closure": [
+        "Memberi maklum balas terhadap satu ciri postur.",
+        "Mengulang laluan dengan satu pembetulan."
+      ],
+      "support": "Gunakan laluan pendek atau langkah berpandu mengikut keupayaan.",
+      "assessment": "Guru merekod sama ada murid dapat mengekalkan tiga ciri postur berlari dalam dua percubaan pendek.",
+      "follow_up": "Cuba tempo lain sambil mengekalkan jarak selamat."
+    },
+    {
+      "pdp": "066",
+      "title": "Gabungkan larian dalam permainan berisyarat",
+      "sp": "3.1.3",
+      "focus": "Gabungkan larian dalam permainan berisyarat.",
+      "book": "Buku Teks hlm. 100–101",
+      "objective": "Murid dapat menggunakan dua variasi pergerakan berlari dalam permainan kecil dengan selamat.",
+      "materials": "Kad warna, kon lembut dan tepukan guru",
+      "induction": [
+        "Menunjukkan kad mula, perlahan dan henti.",
+        "Menunjuk tindakan bagi setiap kad."
+      ],
+      "guided": [
+        "Mencontohkan peralihan daripada mula kepada larian terkawal dan henti.",
+        "Mencuba perubahan langkah menggunakan kiraan guru."
+      ],
+      "practice": [
+        "Menjalankan permainan laluan berisyarat dengan giliran seorang demi seorang.",
+        "Mengubah tempo mengikut kad dan mengekalkan postur semasa berhenti."
+      ],
+      "closure": [
+        "Menyemak satu perubahan yang berjaya dilakukan.",
+        "Menunjukkan perubahan itu sekali lagi pada jarak pendek."
+      ],
+      "support": "Benarkan berjalan pantas dan guna hanya dua isyarat dahulu.",
+      "assessment": "Guru merekod sama ada murid dapat menggunakan dua variasi pergerakan berlari dalam permainan kecil dengan selamat.",
+      "follow_up": "Tambah satu pertukaran arah pada laluan lapang."
+    },
+    {
+      "pdp": "067",
+      "title": "Kenal pergerakan tangan dan kaki",
+      "sp": "3.2.1",
+      "focus": "Kenal pergerakan tangan dan kaki.",
+      "book": "Buku Teks hlm. 102–104",
+      "objective": "Murid dapat mengenal pasti sekurang-kurangnya empat daripada lima pergerakan.",
+      "materials": "Kad aksi, bola lembut dan penanda rata",
+      "induction": [
+        "Menunjukkan gambar dua aksi yang menggunakan anggota badan berlainan.",
+        "Menamakan anggota badan yang bergerak."
+      ],
+      "guided": [
+        "Memperkenalkan kad mengayuh, melompat, mencuit, menangkap dan mengelak.",
+        "Memadankan kad dengan demonstrasi ringkas."
+      ],
+      "practice": [
+        "Memberi lima kad aksi dan satu rangka pengelasan.",
+        "Memilih kad serta mengenal pasti anggota badan bagi setiap aksi."
+      ],
+      "closure": [
+        "Membimbing semakan satu aksi yang menggunakan tangan dan kaki.",
+        "Menunjukkan pergerakan itu secara perlahan."
+      ],
+      "support": "Gunakan demonstrasi duduk dan kad gambar besar.",
+      "assessment": "Guru merekod sama ada murid dapat mengenal pasti sekurang-kurangnya empat daripada lima pergerakan.",
+      "follow_up": "Kumpulkan aksi mengikut anggota badan yang digunakan."
+    },
+    {
+      "pdp": "068",
+      "title": "Lakukan gerakan tangan dan kaki dalam permainan",
+      "sp": "3.2.2",
+      "focus": "Lakukan gerakan tangan dan kaki dalam permainan.",
+      "book": "Buku Teks hlm. 104–105",
+      "objective": "Murid dapat melakukan sekurang-kurangnya dua gerakan tangan dan kaki semasa permainan.",
+      "materials": "Bola busa, penanda dan kad giliran",
+      "induction": [
+        "Menunjukkan arahan permainan kecil bertema Labu dan Labi.",
+        "Memilih satu peranan dan menyatakan arahan yang didengar."
+      ],
+      "guided": [
+        "Mencontohkan gerakan mengelak dengan langkah sisi dan menangkap bola lembut.",
+        "Mencuba satu gerakan pada ruang sendiri."
+      ],
+      "practice": [
+        "Menjalankan permainan ringkas dengan menyentuh penanda sebagai ganti mencuit rakan.",
+        "Melakukan gerakan tangan dan kaki pada giliran dengan kawalan."
+      ],
+      "closure": [
+        "Membimbing semakan gerakan yang paling mudah dan yang perlu diulang.",
+        "Menunjukkan satu gerakan pilihan secara perlahan."
+      ],
+      "support": "Gunakan sasaran dekat dan kurangkan kelajuan.",
+      "assessment": "Guru merekod sama ada murid dapat melakukan sekurang-kurangnya dua gerakan tangan dan kaki semasa permainan.",
+      "follow_up": "Ulang permainan dengan pertukaran giliran yang lebih jelas."
+    },
+    {
+      "pdp": "069",
+      "title": "Aplikasi pergerakan dengan selamat dalam permainan",
+      "sp": "3.2.3",
+      "focus": "Aplikasi pergerakan dengan selamat dalam permainan.",
+      "book": "Buku Teks hlm. 104–106",
+      "objective": "Murid dapat mengaplikasi dua gerakan dan mematuhi dua peraturan keselamatan semasa permainan.",
+      "materials": "Kon lembut, bola busa dan kad keselamatan",
+      "induction": [
+        "Menunjukkan laluan, sempadan dan zon menunggu.",
+        "Menunjuk tempat yang sesuai sebelum giliran bermula."
+      ],
+      "guided": [
+        "Mencontohkan cara mengelak, menangkap dan berhenti tanpa bertembung.",
+        "Mencuba gerakan menggunakan kad mula dan henti."
+      ],
+      "practice": [
+        "Mengendalikan stesen permainan kecil dengan tahap jarak yang boleh dilaras.",
+        "Menggunakan dua gerakan yang sesuai, menjaga jarak dan mematuhi isyarat berhenti."
+      ],
+      "closure": [
+        "Membimbing refleksi melalui kad keselamatan.",
+        "Menerangkan satu tindakan yang menjaga keselamatan kumpulan."
+      ],
+      "support": "Sediakan penanda jauh antara murid dan gerakan pilihan.",
+      "assessment": "Guru merekod sama ada murid dapat mengaplikasi dua gerakan dan mematuhi dua peraturan keselamatan semasa permainan.",
+      "follow_up": "Bina satu variasi permainan dengan peraturan ruang yang jelas."
+    }
+  ]
+}
