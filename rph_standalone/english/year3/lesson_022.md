@@ -8,20 +8,19 @@
 **References:** Get Smart plus 3 Student's Book p.17; Teacher's Book p.35; cut-up routine word cards.
 
 ## Set Induction (5 minutes)
-Teacher reviews challenging transport-to-school expressions. Pupils recall words and phrases.
+**Teacher:** Mime walking, travelling by bus and travelling by train, then ask how pupils get to school. **Pupils:** Name the transport phrases and choose one that matches their journey.
 
 ## Activity 1 — Preparation (15 minutes)
-Teacher distributes mixed word cards (take the bus, walk, take the train, drive). Pupils arrange phrases in pairs and identify words from spoken questions.
+**Teacher:** Give pairs mixed word cards for take the bus, walk, take the train and drive. Say two transport phrases aloud and model how to request repetition when unsure. **Pupils:** Arrange the phrases, point to the words they hear and practise asking for repetition politely.
 
 ## Activity 2 — Listening (25 minutes)
-Teacher guides the listening task on Student's Book p.17 following the SOW reference to Teacher's Book p.35. Pupils listen for routine and transport details and ask for repetition or clarification when needed.
+**Teacher:** Guide the Student's Book p.17 listening task using Teacher's Book p.35. Play or read the prescribed listening input as available, pausing to check transport and routine details without first giving the answers. **Pupils:** Listen for the relevant journey details, match them to the pictures or phrases, compare answers with a partner and ask for clarification when necessary.
+**Workbook:** Pupils complete Workbook p.11, Activity 1, by reading and writing sentences about travelling to school and work.
 
 ## PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.11, Activity 1; explain the printed task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.11, Activity 1, by reading and writing sentences about travelling to school and work.
-Teacher asks targeted detail questions and observes pupils' listening strategies. Pupils identify the transport and routine information heard.
+**Teacher:** Check two transport or routine details taken from the listening input and observe whether pupils request repetition appropriately when information is unclear. **Pupils:** Identify two details they heard and demonstrate one suitable clarification question.
 
 ## Closure (5 minutes)
-Pupils share a transport phrase and explain how they understood it.
+**Teacher:** Say two familiar transport phrases again and invite pupils to explain a helpful listening strategy. **Pupils:** Identify one phrase and say how they checked what they heard.
 
 **QA:** Lesson-level SOW checked; direct Teacher's Book review and Word/PDF output verification pending. NOT READY FOR RELEASE.

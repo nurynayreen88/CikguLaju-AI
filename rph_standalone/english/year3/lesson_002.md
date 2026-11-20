@@ -6,7 +6,7 @@
 **Complementary SK/SP:** Listening 1.2 / 1.2.2 — Understand supported specific information and details of short simple texts.  
 **Duration:** 60 minutes  
 **Objective:** Pupils describe two people using 'have got/has got' and identify two details heard in a partner's description.  
-**Materials:** Get Smart plus 3 Student's Book p.5 Activity 2; Teacher's Book pp.18–19; textbook-character flashcards; CD 1 Track 4 (dialogue); optional name slips and bag for 'Who is it?' activity.
+**Materials:** Get Smart plus 3 Student's Book p.5 Activity 2; Workbook p.2 Activity 2; Teacher's Book pp.18–19; character flashcards; CD 1 Track 4.
 
 ## Set Induction (5 minutes)
 **Teacher:** Review adjectives from Lesson 1 through a flashcard guessing game.
@@ -17,12 +17,10 @@
 **Pupils:** Listen and repeat appropriate descriptions.
 
 ## Activity 2 — Guided pair speaking (25 minutes)
-**Teacher:** Play CD 1 Track 4, model the dialogue and guide Student's Book p.5 Activity 2, using Teacher's Book pp.18–19 as the lesson reference. Pair pupils to describe characters and listen for details; encourage respectful language about appearance.
-**Pupils:** Describe two characters and identify details from a partner's description.
+**Teacher:** Play CD 1 Track 4 and model Student's Book p.5 Activity 2. Use two items from Workbook p.2 Activity 2 to check the verb forms before pupils speak in pairs.
+**Pupils:** Circle 'have got' or 'has got' in the Workbook items, then describe two characters and identify two details heard from a partner.
 
 ## PBD / Reinforcement (10 minutes)
-**Teacher:** Direct pupils to Workbook p.8, Activity 1; explain the printed task, check individual answers and record evidence against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.8, Activity 1, to describe differences in characters' appearance using 'has got' and 'hasn't got'.
 **Teacher:** Listen to each pupil's two descriptions; ask two listening-detail questions and record evidence against both SPs.
 **Pupils:** Give individual descriptions and answer oral questions.
 

@@ -8,20 +8,18 @@
 **References:** Get Smart plus 3 Student's Book p.19; Teacher's Book p.37; occupation flashcards and crossword worksheet.
 
 ## Set Induction (5 minutes)
-Teacher reviews firefighter, lifeguard and dentist with flashcards. Pupils name jobs and actions.
+**Teacher:** Show firefighter, lifeguard and dentist flashcards and give one clue about a job without naming it. **Pupils:** Name the job and say the action that helped them identify it.
 
 ## Activity 1 — Modelling (15 minutes)
-Teacher introduces additional occupations and models the Grammar Box and Activity 3 from Teacher's Book p.37. Pupils practise sentences and requests for help.
+**Teacher:** Use the Grammar Box and Activity 3 reference in Teacher's Book p.37 to model a short occupation clue; show how to request help politely when a word is unfamiliar. **Pupils:** Match job words with actions, rehearse one written clue orally and practise saying 'Can you help me, please?'.
 
 ## Activity 2 — Writing task (25 minutes)
-Teacher demonstrates how to read a crossword clue and write the correct occupation. Pupils complete a crossword in pairs, checking spelling and helping one another using 'Can you help me, please?'.
+**Teacher:** Demonstrate how to read a crossword clue, choose an occupation and check its spelling. Provide a blank clue card or writing space for pupils to create their own clues after the crossword. **Pupils:** Solve the occupation crossword in pairs, check the spellings, write two original job clues and ask for help politely when needed.
 
 ## PBD (10 minutes)
-**Teacher:** Use the original CikguLaju writing worksheet `materials/lesson_025_occupation_clue_cards.md`; assess job vocabulary, two original written occupation clues and one polite request for help. Do not assign Workbook p.12, Activity 1 again.
-**Pupils:** Match four occupations to descriptions, write two new job clues, and ask a partner for help when needed.
-Teacher checks written occupation words and listens for appropriate requests for help. Pupils correct mistakes.
+**Teacher:** Assess whether each pupil matches four job words to descriptions and writes two understandable original occupation clues with appropriate spelling; listen for one polite request for help. **Pupils:** Show their four matches, read their two written clues to a partner and use a polite help request if needed.
 
 ## Closure (5 minutes)
-Pupils describe one job and share one useful word.
+**Teacher:** Read one pupil-generated clue and invite the class to identify the occupation. **Pupils:** Name the occupation and state one word that made the clue understandable.
 
 **QA:** Official KPM SOW checked; direct Teacher's Book review and Word/PDF output verification pending. NOT READY FOR RELEASE.

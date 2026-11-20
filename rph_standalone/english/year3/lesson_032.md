@@ -8,20 +8,19 @@
 **References:** KPM Primary Year 3 SK Scheme of Work Lesson 32; Student's Book p.24 revision activities; Teacher's Book pp.44–45; unit worksheet and self-assessment sheet.
 
 ## Set Induction (5 minutes)
-Teacher reviews routine and occupation vocabulary. Pupils respond to picture prompts.
+**Teacher:** Show picture prompts of familiar daily routines and occupations. **Pupils:** Name one routine and use an appropriate frequency word in a short sentence.
 
 ## Activity 1 — Reading review (15 minutes)
-Teacher introduces the worksheet text about Hamid and May. Pupils read silently, identify the writer and locate frequency adverbs and third-person verb endings.
+**Teacher:** Introduce the unit worksheet passage about Hamid and May, then model locating a frequency word without giving all the answers. **Pupils:** Read the passage, identify who it is about, find one frequency adverb and underline a third-person verb ending.
 
 ## Activity 2 — Language consolidation (25 minutes)
-Teacher models unjumbling a sentence and distributes sentence strips. Pupils reconstruct correct routine sentences in groups and write short descriptions; optional revision activities from Student's Book p.24 support learning needs.
+**Teacher:** Demonstrate unjumbling a routine sentence, provide sentence strips and guide short written descriptions; use Student's Book p.24 revision activities to support pupils as needed. **Pupils:** Reorder scrambled sentences in groups, compare verb endings and write two short descriptions using vocabulary from the unit.
+**Workbook:** Pupils complete Workbook p.16, Activity 2, by writing questions and matching answers about everyday activities.
 
 ## PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.16, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.16, Activity 2, by writing questions and matching the answers about everyday activities.
-Teacher checks reading details and accurate written descriptions. Pupils complete a brief unit self-assessment.
+**Teacher:** Ask two questions about the worksheet passage and check one pupil-written short description for a suitable frequency word and verb form. **Pupils:** Answer two text-based questions, write one accurate sentence describing a routine and identify one area to practise.
 
 ## Closure (5 minutes)
-Teacher reviews common language errors and asks pupils to identify one area for improvement.
+**Teacher:** Correct one frequent word-order or verb-ending error and invite a self-assessment. **Pupils:** Read a corrected sentence and name one language feature they can now use.
 
 **QA:** Official KPM SOW checked; direct Teacher's Book and Word/PDF output verification pending. NOT READY FOR RELEASE.

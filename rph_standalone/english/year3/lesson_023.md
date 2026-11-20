@@ -8,20 +8,19 @@
 **References:** Get Smart plus 3 Student's Book p.17; Teacher's Book p.35; class survey worksheet.
 
 ## Set Induction (5 minutes)
-Teacher leads a miming game to review transport and routine vocabulary. Pupils guess the actions.
+**Teacher:** Mime travelling to school using different transport and invite quick guesses. **Pupils:** Name the transport phrases and answer one personal question about getting to school.
 
 ## Activity 1 — Guided practice (15 minutes)
-Teacher models present-simple questions about travelling to school or work, using Do you...? and Does your family member...? Pupils practise asking and answering.
+**Teacher:** Model Do you...? and Does your family member...? questions, including short yes/no replies and a request for repetition. **Pupils:** Ask and answer two sample transport questions with a partner, then correct a question after feedback.
 
 ## Activity 2 — Class survey (25 minutes)
-Teacher guides Student's Book p.17 Activity 4 and distributes survey worksheets. Pairs write one question, interview classmates and record yes/no answers.
+**Teacher:** Guide Student's Book p.17 Activity 4 and provide a simple class survey table. Demonstrate how to record a yes/no answer without interrupting the speaker. **Pupils:** Write one transport question, interview at least two classmates, record their responses and compare findings.
+**Workbook:** Pupils complete Workbook p.11, Activity 2, by matching people with transport and answering questions.
 
 ## PBD (10 minutes)
-**Teacher:** Direct pupils to Workbook p.11, Activity 2; explain the printed task, check individual responses and record achievement against the lesson objectives.
-**Pupils:** Pupils complete Workbook p.11, Activity 2, by matching people with transport and answering questions.
-Teacher listens to each pupil's question and response, and checks listening comprehension during the survey. Pupils report one result.
+**Teacher:** Observe one question-and-answer exchange from each pupil, checking understandable question form, response and listening for the partner's answer. **Pupils:** Ask one complete transport question, respond appropriately and report one classmate's answer.
 
 ## Closure (5 minutes)
-Pupils share findings and teacher corrects common question forms.
+**Teacher:** Invite two brief survey reports and correct one common question form. **Pupils:** Share one finding and repeat the corrected question aloud.
 
 **QA:** SOW lesson mapping checked; direct Teacher's Book review and Word/PDF output verification pending. NOT READY FOR RELEASE.
