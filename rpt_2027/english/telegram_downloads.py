@@ -92,7 +92,7 @@ def install(ns):
         if is_ppki:
             from staging.ppki.catalog import (
                 MANIPULATIVE_UNIT_LESSONS, RPT_COMBINED_EDITION, RPT_COMBINED_FILENAME,
-                RPT_MANIPULATIVE_FILENAME, RPT_MANIPULATIVE_YEAR3_FILENAME, RPT_YEAR3_EDITION, RPT_YEAR3_FILENAME, RPT_YEAR4_FILENAME,
+                RPT_MANIPULATIVE_FILENAME, RPT_MANIPULATIVE_YEAR3_FILENAME, RPT_YEAR3_EDITION, RPT_YEAR3_FILENAME, RPT_YEAR4_EDITION, RPT_YEAR4_FILENAME,
                 UNIT_LESSONS, YEAR3_LESSONS, YEAR3_MANIPULATIVE_UNIT_LESSONS, YEAR4_LESSONS,
             )
             from staging.ppki.rpt import render_rpt
@@ -126,8 +126,8 @@ def install(ns):
             if data == "rpt2027_ppki_year4":
                 count_year4 = sum(len(numbers) for numbers in YEAR4_LESSONS.values())
                 return send(cid, f"<b>PPKI Tahun 4 · Pengurusan Kehidupan</b>\n\n"
-                            f"Pengurusan Diri Unit 1: {count_year4} PdP.", [
-                    [{"text": "Pengurusan Diri Unit 1 (PDF)", "callback_data": "rpt2027_ppki_pdf4"}],
+                            f"Pengurusan Diri {RPT_YEAR4_EDITION} · {count_year4} PdP.", [
+                    [{"text": f"Pengurusan Diri {RPT_YEAR4_EDITION} (PDF)", "callback_data": "rpt2027_ppki_pdf4"}],
                     [{"text": "⬅️ Kembali", "callback_data": "rpt2027_ppki_home"}],
                 ])
             downloads = {
@@ -146,7 +146,7 @@ def install(ns):
             elif year == 3:
                 filename, edition = RPT_YEAR3_FILENAME, RPT_YEAR3_EDITION
             elif year == 4:
-                filename, edition = RPT_YEAR4_FILENAME, "Unit 1"
+                filename, edition = RPT_YEAR4_FILENAME, RPT_YEAR4_EDITION
             try:
                 with TemporaryDirectory(prefix="cikgulaju-rpt-ppki-") as folder:
                     path = Path(folder) / filename
