@@ -781,7 +781,7 @@
   if(item.type==="workbook")return item.url.startsWith("/api/web/rph/english-workbook?");
   if(item.type==="textbook")return item.url.startsWith("/api/web/rph/english-student-book?")||
     (subject==="SCIENCE"&&item.url.startsWith("/api/web/rph/science-textbook?"));
-  if(item.type==="audio")return /^\/api\/web\/rph\/english-audio\/[1-4]\?/.test(item.url)||
+  if(item.type==="audio")return (subject==="ENGLISH"&&/^\/api\/web\/rph\/english-audio\/[1-4]\?/.test(item.url))||
    (subject==="MUZIK"&&musicDownload(item));
   return false;
  }
@@ -857,7 +857,7 @@
       }
       if(!readyMaterialLink(item,c.slot.subject_code))continue;
       const label=item.title;
-      const action=musicDownload(item)?"Muat Turun Audio":englishBookView.test(item.url)?"Buka Buku Asal":"Download";
+      const action=item.type==="audio"?"Muat Turun Audio":englishBookView.test(item.url)?"Buka Buku Asal":"Download";
       const row=actionRow(label,action,item.url);
       c.resultList.append(row.li);found++;
      }
