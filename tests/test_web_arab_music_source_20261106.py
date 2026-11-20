@@ -100,6 +100,7 @@ class DraftWebQA(unittest.TestCase):
         for unit, pdps in (
             ("u01", range(1, 13)),
             ("u02", range(13, 29)),
+            ("u03", (29, 31, 33)),
         ):
             ready = [
                 {"value": f"{pdp:03d}", "label": f"PdP {pdp:03d} — اللغة العربية",
@@ -120,7 +121,7 @@ class DraftWebQA(unittest.TestCase):
                 })
                 self.assertEqual(result.get_json()["status"], "READY")
                 self.assertEqual(result.get_json()["formats"], ["word"])
-        for unit, lesson in (("u01", "013"), ("u01", "018"), ("u02", "029")):
+        for unit, lesson in (("u01", "013"), ("u01", "018"), ("u02", "029"), ("u03", "030")):
             result = self.client.get("/api/web/rph/availability",
                                      query_string={**self.query, "unit": unit, "lesson": lesson})
             self.assertEqual(result.status_code, 503)

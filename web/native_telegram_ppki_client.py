@@ -13,6 +13,7 @@ SOURCE = "ppki-pengurusan-kehidupan-v1"
 SUBJECT = "PENGURUSAN_KEHIDUPAN_PPKI"
 COMPONENT = "pengurusan-diri"
 UNIT = "u02-pengurusan-diri"
+UNIT3 = "u03-pengurusan-diri"
 YEAR = 2
 FORMATS = ("word", "pdf")
 RPT_CODE = "pengurusan_kehidupan_ppki"
@@ -54,9 +55,25 @@ def catalog():
                        or not 1 <= len(item["label"]) <= 180 for item in items)
                 or [item.get("value") for item in items] != ids):
             raise NativeRPHUnavailable("Invalid PPKI catalog choices")
+    extra = obj.get("additional_units", [])
+    if not isinstance(extra, list) or len(extra) > 1:
+        raise NativeRPHUnavailable("Invalid PPKI additional units")
+    by_unit = {UNIT: obj["lessons"]}
+    if extra:
+        unit = extra[0]
+        if (not isinstance(unit, dict) or unit.get("value") != UNIT3
+                or not isinstance(unit.get("label"), str) or not 1 <= len(unit["label"]) <= 180
+                or not isinstance(unit.get("lessons"), list)
+                or any(not isinstance(item, dict) or not isinstance(item.get("label"), str)
+                       or not 1 <= len(item["label"]) <= 180 for item in unit["lessons"])
+                or [item.get("value") for item in unit["lessons"]] != [f"{n:03d}" for n in range(15, 19)]):
+            raise NativeRPHUnavailable("Invalid PPKI Unit 3 choices")
+        obj["units"].append({"value": UNIT3, "label": unit["label"]})
+        by_unit[UNIT3] = unit["lessons"]
     if any(item.get("formats") != list(FORMATS) or not isinstance(item.get("textbook_ref"), str)
-           for item in obj["lessons"]):
+           for lessons in by_unit.values() for item in lessons):
         raise NativeRPHUnavailable("Invalid PPKI material metadata")
+    obj["lessons_by_unit"] = by_unit
     return obj
 
 
@@ -64,15 +81,18 @@ def get_options(kind, year, subject=None, component=None, unit=None):
     if (year != YEAR or kind not in ("subjects", "components", "units", "pdp")
             or (kind != "subjects" and subject != SUBJECT)
             or (kind == "units" and component != COMPONENT)
-            or (kind == "pdp" and unit != UNIT)):
+            or (kind == "pdp" and unit not in (UNIT, UNIT3))):
         raise ValueError("Invalid PPKI catalog selection")
-    return catalog()["lessons" if kind == "pdp" else kind]
+    source = catalog()
+    if kind == "pdp":
+        return source["lessons_by_unit"].get(unit, [])
+    return source[kind]
 
 
 def validate_selection(year, subject, unit, lesson):
-    if year != YEAR or subject != SUBJECT or unit != UNIT:
+    if year != YEAR or subject != SUBJECT or unit not in (UNIT, UNIT3):
         raise ValueError("Invalid PPKI RPH selection")
-    selected = next((row for row in catalog()["lessons"] if row["value"] == lesson), None)
+    selected = next((row for row in catalog()["lessons_by_unit"].get(unit, ()) if row["value"] == lesson), None)
     if selected is None:
         raise ValueError("Invalid PPKI PdP")
     return selected
@@ -100,5 +120,5 @@ def request_rph(selected, fmt):
     return _document("render", fmt, {"selection": selection, "teacher": teacher, "format": fmt})
 
 
-def request_rpt():
-    return _document("rpt.pdf", "pdf")
+def request_rpt(*, combined=False):
+    return _document("rpt-current.pdf" if combined else "rpt.pdf", "pdf")

@@ -349,14 +349,17 @@ def create_all_rpt_blueprint(*,root=ROOT):
         paid = _has_paid_access(account)
         data = catalog_data(root=root, allowed=True, personalization_allowed=paid)
         try:
-            ppki.catalog()
+            ppki_source = ppki.catalog()
         except ppki.NativeRPHUnavailable:
             pass
         else:
+            combined = ppki.UNIT3 in ppki_source["lessons_by_unit"]
+            edition = "Unit 2–3" if combined else "Unit 2"
+            count = 18 if combined else 14
             data["subjects"].append({"code": ppki.RPT_CODE, "label": "Pengurusan Kehidupan", "years": [{
-                "year": ppki.YEAR, "status": "AGIHAN UNIT 2", "pdf_ready": True,
+                "year": ppki.YEAR, "status": f"AGIHAN {edition.upper()}", "pdf_ready": True,
                 "download_enabled": paid, "is_draft": False,
-                "note": "Agihan 14 PdP Unit 2. Guru menetapkan tarikh PdP mengikut jadual kelas.",
+                "note": f"Agihan {count} PdP {edition}. Guru menetapkan tarikh PdP mengikut jadual kelas.",
             }]})
             for key in ("total_rpt", "available_rpt", "total_display_choices"):
                 data[key] += 1
@@ -398,11 +401,13 @@ def create_all_rpt_blueprint(*,root=ROOT):
             if not _has_paid_access(account):
                 return jsonify({"error": "RPT PPKI memerlukan akses berbayar aktif."}), 403
             try:
-                document = ppki.request_rpt()
+                combined = ppki.UNIT3 in ppki.catalog()["lessons_by_unit"]
+                document = ppki.request_rpt(combined=combined)
             except ppki.NativeRPHUnavailable:
                 return jsonify({"error": "PDF RPT PPKI belum dapat dihubungi."}), 503
             response = send_file(document, mimetype="application/pdf", as_attachment=True, conditional=False,
-                                 download_name="CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_2_2027.pdf")
+                                 download_name=("CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_"
+                                                + ("2_3" if combined else "2") + "_2027.pdf"))
             response.headers["X-RPT-Source-SHA256"] = hashlib.sha256(document.getvalue()).hexdigest()
             response.headers["X-RPT-Personalization-Allowed"] = "0"
             return response

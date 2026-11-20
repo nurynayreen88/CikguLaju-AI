@@ -214,7 +214,8 @@
       await crypto.subtle.digest("SHA-256",bytes)
     )).map(b=>b.toString(16).padStart(2,"0")).join("");
     if(actualSha!==declaredSha)throw Error("Checksum PDF tidak sepadan. Muat turun dibatalkan.");
-    return {bytes,sha:actualSha,paidCover:response.headers.get("X-RPT-Personalization-Allowed")==="1"};
+    return {bytes,sha:actualSha,paidCover:response.headers.get("X-RPT-Personalization-Allowed")==="1",
+            combinedPpki:response.headers.get("content-disposition")?.includes("UNIT_2_3_2027.pdf")===true};
   }
   async function downloadWithOriginalCover(code,year,openedViewer=null,mobileRequest=false){
     const source=await sourcePdf(code,year);
@@ -240,9 +241,12 @@
     const url=URL.createObjectURL(download);
     const yearLabel=code.endsWith("_dlp")||code==="english"?"_YEAR_":"_TAHUN_";
     const ppki=code==="pengurusan_kehidupan_ppki";
-    const filename=ppki?"CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_2_2027.pdf":
+    const ppkiEdition=source.combinedPpki?"Unit 2–3":"Unit 2";
+    const filename=ppki?"CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_"+
+      (source.combinedPpki?"2_3":"2")+"_2027.pdf":
       "CIKGULAJU_RPT_"+code.toUpperCase()+yearLabel+year+
       (result.personalized?"_2027_ISI_PROFIL.pdf":"_2027_PERCUMA.pdf");
+    if(ppki)result.ppkiEdition=ppkiEdition;
     function downloadLink(doc){
       const link=doc.createElement("a");
       link.href=url;
@@ -260,7 +264,7 @@
         const title=doc.createElement("h1");
         title.textContent="RPT 2027 siap";
         const note=doc.createElement("p");
-        const ready=ppki?"Agihan PdP Unit 2 sudah disediakan.":
+        const ready=ppki?"Agihan PdP "+ppkiEdition+" sudah disediakan.":
           result.personalized?"PDF bersama profil sekolah sudah disediakan.":
           "PDF percuma tanpa nama guru, nama sekolah dan logo sudah disediakan.";
         note.textContent=ready+" Tekan Simpan PDF RPT. Pautan sah selama 10 minit.";
@@ -302,7 +306,7 @@
       }
       if(button)button.disabled=true;
       if(output)output.textContent=code==="pengurusan_kehidupan_ppki"?
-        "Menyediakan agihan PdP PPKI Unit 2…":
+        "Menyediakan agihan PdP PPKI…":
         "Menyediakan RPT 2027. Identiti sekolah hanya dicetak untuk akaun berbayar aktif…";
       try{
         const status=await downloadWithOriginalCover(code,year,openedViewer,mobileRequest);
@@ -315,7 +319,7 @@
                   !status.hasTeacher&&"nama guru"].filter(Boolean).join(", ")+
                  ". Lengkapkan dalam Profil Guru.":"")
            : code==="pengurusan_kehidupan_ppki"
-             ? "Agihan 14 PdP bagi Unit 2."
+             ? "Agihan PdP bagi "+status.ppkiEdition+"."
              : "Versi percuma tanpa nama guru, nama sekolah atau logo. Maklumat Profil Guru tetap disimpan.");
         return true;
       }catch(error){
