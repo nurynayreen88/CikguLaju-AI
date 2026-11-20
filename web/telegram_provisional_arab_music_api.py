@@ -28,7 +28,7 @@ NUM = re.compile(r"(?:00[1-9]|0[1-9]\d|[1-2]\d\d|3\d\d)")
 UNIT = re.compile(r"u(?:0[1-9]|[1-9][0-9])|x[a-f0-9]{12}")
 EXPECTED = {2:60,3:60,4:58,5:60,6:60}
 SUBJECTS = {"ARAB":"Bahasa Arab", "MUZIK":"Pendidikan Muzik"}
-REVIEWED_ARABIC = tuple((2, lesson) for lesson in range(1, 37))
+REVIEWED_ARABIC = tuple((2, lesson) for lesson in range(1, 39))
 
 
 def _check(year, subject, unit=None, lesson=None):

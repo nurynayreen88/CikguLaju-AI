@@ -6,13 +6,16 @@
   "component": "Pengurusan Diri",
   "unit": "Unit 5 · Budi Pekerti Mulia",
   "content_standards": {
-    "5.1": "Adab dan tatasusila terhadap ahli keluarga."
+    "5.1": "Adab dan tatasusila terhadap ahli keluarga.",
+    "5.2": "Tingkahlaku bertatasusila."
   },
   "learning_standards": {
     "5.1.1": "Melafazkan ucapan bertatasusila semasa berinteraksi dengan ahli keluarga.",
     "5.1.2": "Menunjukkan respons emosi yang positif semasa berinteraksi dengan keluarga.",
     "5.1.3": "Menunjukkan respons yang beradab kepada arahan yang diberi oleh ahli keluarga.",
-    "5.1.4": "Menunjukkan cara beradab dan bertatasusila semasa berinteraksi dengan ahli keluarga."
+    "5.1.4": "Menunjukkan cara beradab dan bertatasusila semasa berinteraksi dengan ahli keluarga.",
+    "5.2.1": "Menunjukkan penghargaan secara lisan atau bukan lisan.",
+    "5.2.2": "Menunjukkan sikap menghormati orang lain."
   },
   "lessons": [
     {
@@ -78,6 +81,38 @@
       "assessment": "Guru menanda empat tindakan dan merekod jenis bantuan. Jika izin belum diberi, nilai tindakan menunggu.",
       "closure": ["Tunjukkan semula kad pertama dan terakhir.", "Nyatakan atau tunjuk tindakan sebelum mengambil dan selepas menggunakan barang."],
       "follow_up": "Ulang langkah yang belum mantap dengan barang yang biasa digunakan murid."
+    },
+    {
+      "pdp": "028",
+      "title": "Menunjukkan penghargaan kepada orang lain",
+      "sp": "5.2.1",
+      "focus": "Menghargai bantuan atau usaha orang lain melalui ucapan atau tindakan.",
+      "book": "Buku Teks hlm. 34–35",
+      "objective": "Menunjukkan satu cara penghargaan yang sesuai dalam sekurang-kurangnya dua daripada tiga situasi.",
+      "materials": "Buku teks, kad situasi, kad penghargaan dan alat komunikasi murid jika digunakan.",
+      "induction": ["Tunjukkan situasi penghargaan pada halaman 34.", "Kenal pasti siapa yang memberi dan menerima penghargaan."],
+      "guided": ["Modelkan berterima kasih selepas dibantu, mengucapkan tahniah dan memberi kad penghargaan.", "Pilih satu cara dan tunjukkan kepada rakan."],
+      "practice": ["Lakonkan rakan membantu, mencapai kejayaan dan meminjamkan alat tulis.", "Tunjukkan penghargaan yang sesuai untuk setiap situasi melalui ucapan atau tindakan."],
+      "support": "Tawarkan dua kad pilihan atau alat komunikasi. Beri masa untuk murid menunjukkan respons.",
+      "assessment": "Guru merekod penghargaan yang sesuai daripada tiga situasi serta bantuan yang diperlukan.",
+      "closure": ["Minta murid mengingat satu bantuan yang diterima semasa latihan.", "Tunjukkan cara menghargai pemberi bantuan."],
+      "follow_up": "Ulang situasi yang masih keliru dengan dua pilihan respons."
+    },
+    {
+      "pdp": "029",
+      "title": "Amalkan sikap menghormati orang lain",
+      "sp": "5.2.2",
+      "focus": "Menawarkan tempat duduk dengan sopan, menunggu giliran dan meminta izin.",
+      "book": "Buku Teks hlm. 34",
+      "objective": "Menunjukkan satu perlakuan hormat yang sesuai dalam sekurang-kurangnya dua daripada tiga situasi.",
+      "materials": "Buku teks, kerusi, kad situasi dan alat tulis untuk simulasi.",
+      "induction": ["Rujuk situasi menawarkan tempat duduk pada halaman 34.", "Tunjukkan cara watak itu menyapa tetamu."],
+      "guided": ["Modelkan tawarkan kerusi, tunggu giliran dalam perbualan dan minta izin meminjam barang.", "Cuba setiap perlakuan bersama rakan."],
+      "practice": ["Lakonkan tiga situasi dan beri masa murid memilih respons.", "Tawarkan tempat duduk, tunggu giliran atau minta izin mengikut situasi."],
+      "support": "Gunakan kad giliran dan kad tindakan. Terima ujaran, isyarat atau alat komunikasi.",
+      "assessment": "Guru menanda perlakuan hormat yang sesuai bagi setiap situasi dan merekod jenis bantuan.",
+      "closure": ["Tunjukkan satu kad situasi daripada latihan.", "Lakonkan satu cara menghormati orang lain."],
+      "follow_up": "Ulang satu situasi dalam rutin kelas dan kurangkan petunjuk secara beransur."
     }
   ]
 }

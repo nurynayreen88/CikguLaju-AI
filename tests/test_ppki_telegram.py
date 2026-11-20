@@ -40,23 +40,23 @@ class PpkiTelegramTest(unittest.TestCase):
         callback = self.namespace["callback"]
         self.namespace["year"](42, "primary")
         for key in ("cv_primary_ppki", "cv_ppki_year2", "cv_ppki_subject",
-                    "cv_ppki_component", f"cv_ppki_unit_{UNIT5}", "cv_ppki_lesson_027"):
+                    "cv_ppki_component", f"cv_ppki_unit_{UNIT5}", "cv_ppki_lesson_029"):
             self.assertIn(key, [button["callback_data"] for row in self.messages[-1][1] for button in row])
             callback(42, key)
         self.assertNotIn("lesson_no", self.state[42])
         callback(42, "cv_ppki_pdf_018")
         self.assertFalse(self.documents)
         callback(42, f"cv_ppki_unit_{UNIT5}")
-        callback(42, "cv_ppki_lesson_027")
-        callback(42, "cv_ppki_word_027")
+        callback(42, "cv_ppki_lesson_029")
+        callback(42, "cv_ppki_word_029")
         self.assertFalse(self.documents)
         self.allow = True
-        callback(42, "cv_ppki_word_027")
-        callback(42, "cv_ppki_pdf_027")
+        callback(42, "cv_ppki_word_029")
+        callback(42, "cv_ppki_pdf_029")
         self.assertEqual([name.rsplit(".", 1)[1] for name, *_ in self.documents], ["docx", "pdf"])
         pdf = PdfReader(BytesIO(self.documents[-1][1]))
         self.assertEqual(len(pdf.pages), 1)
-        self.assertIn("5.1.4", pdf.pages[0].extract_text())
+        self.assertIn("5.2.2", pdf.pages[0].extract_text())
 
     def test_rpt_under_own_menu_and_paid_gate(self):
         callback = self.namespace["callback"]
@@ -69,7 +69,7 @@ class PpkiTelegramTest(unittest.TestCase):
         rpt = PdfReader(BytesIO(self.documents[-1][1]))
         self.assertEqual(len(rpt.pages), 4)
         content = "\n".join(page.extract_text() for page in rpt.pages)
-        for number in range(1, 28):
+        for number in range(1, 30):
             self.assertIn(f"{number:03d}", content)
         self.assertIn("Agihan PdP Unit 2", content)
         self.assertIn("Rumah Rubina", rpt.pages[2].extract_text())
@@ -78,7 +78,7 @@ class PpkiTelegramTest(unittest.TestCase):
 
 
 class PpkiApiTest(unittest.TestCase):
-    def test_all_27_word_pdf_and_protected_access(self):
+    def test_all_29_word_pdf_and_protected_access(self):
         app = Flask(__name__)
         app.register_blueprint(create_ppki_blueprint())
         client = app.test_client()
