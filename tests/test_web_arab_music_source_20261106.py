@@ -99,7 +99,7 @@ class DraftWebQA(unittest.TestCase):
     def test_only_reviewed_arabic_choices_can_be_ready(self, read, *_):
         for unit, pdps in (
             ("u01", range(1, 13)),
-            ("u02", (13, 14, 15, 16, 17, 19, 20, 23, 24, 25, 26, 27, 28)),
+            ("u02", range(13, 29)),
         ):
             ready = [
                 {"value": f"{pdp:03d}", "label": f"PdP {pdp:03d} — اللغة العربية",
@@ -120,8 +120,7 @@ class DraftWebQA(unittest.TestCase):
                 })
                 self.assertEqual(result.get_json()["status"], "READY")
                 self.assertEqual(result.get_json()["formats"], ["word"])
-        for unit, lesson in (("u01", "013"), ("u02", "018"), ("u02", "021"),
-                             ("u02", "022"), ("u02", "029")):
+        for unit, lesson in (("u01", "013"), ("u01", "018"), ("u02", "029")):
             result = self.client.get("/api/web/rph/availability",
                                      query_string={**self.query, "unit": unit, "lesson": lesson})
             self.assertEqual(result.status_code, 503)
