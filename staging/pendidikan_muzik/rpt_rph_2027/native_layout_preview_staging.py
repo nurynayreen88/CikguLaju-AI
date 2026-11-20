@@ -9,6 +9,7 @@ import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+YEAR4_STANDARD_DESCRIPTIONS = "year4/standard_descriptions.json"
 BOLD_HEADING = re.compile(r"^\s*\*\*([^*\n]+)\*\*\s*(.*)$")
 CODES = re.compile(r"^[1-5]\.[1-9]\.\d+$")
 ACTIVITY_HEADER = ["Fasa / Masa", "Aktiviti Pengajaran & Pembelajaran", "Catatan"]
@@ -122,14 +123,19 @@ def build_staging_preview(root, year, pdp):
             parent = "4.1"
         if parent not in standards:
             standards.append(parent)
+    sk_display, sp_display = standards, sp
+    if year == 4:
+        descriptions = json.loads((base / YEAR4_STANDARD_DESCRIPTIONS).read_text(encoding="utf-8"))
+        sk_display = [f"{code} {descriptions['content'][code]}" for code in standards]
+        sp_display = [f"{code} {descriptions['learning'][code]}" for code in sp]
     ref = [v for k, v in items if re.search(r"^(?:refleksi|catatan.*pemulihan)", k, re.I)]
     reflection = ref[0] if ref else "____________"
     metadata = [
         ("Nama Guru", ""), ("Nama Sekolah", ""), ("Tarikh", ""), ("Hari", ""),
         ("Masa", ""), ("Kelas", ""), ("Bilangan Murid", ""), ("Tahun", str(year)),
         ("Subjek", "Pendidikan Muzik"), ("Tajuk", row["unit"]),
-        ("PdP", str(pdp)), ("Standard Kandungan", "; ".join(standards)),
-        ("Standard Pembelajaran", "; ".join(sp)),
+        ("PdP", str(pdp)), ("Standard Kandungan", "; ".join(sk_display)),
+        ("Standard Pembelajaran", "; ".join(sp_display)),
         ("OBJEKTIF PEMBELAJARAN", labels["objective"][1]),
         ("KRITERIA KEJAYAAN", criteria or "—"), ("PENGETAHUAN SEDIA ADA", "—"),
         ("BAHAN BANTU MENGAJAR", labels["materials"][1]),
@@ -171,6 +177,7 @@ def build_staging_preview(root, year, pdp):
     return {
         "subject": "MUZIK", "year": year, "pdp": pdp,
         "source_pdp_id": row["pdp_id"], "layout": layout,
+        "content_standard_codes": standards,
         "phase_text": {key: value for key, (_, value) in labels.items()},
         "warnings": warnings, "approved_for_live": False,
         "source_sp_code_conflict": print_code_conflict,
