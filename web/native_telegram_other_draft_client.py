@@ -28,7 +28,7 @@ REVIEWED_ARABIC = {
     (2, "u02"): {f"{lesson:03d}" for lesson in range(13, 29)},
     (2, "u03"): {f"{lesson:03d}" for lesson in range(29, 45)},
     (2, "u04"): {f"{lesson:03d}" for lesson in range(45, 61)},
-    (3, "u01"): {f"{lesson:03d}" for lesson in range(1, 8)},
+    (3, "u01"): {f"{lesson:03d}" for lesson in range(1, 13)},
 }
 
 
