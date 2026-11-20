@@ -12,6 +12,7 @@ import unittest
 from docx import Document
 from pypdf import PdfReader
 
+from dlp_year2_rph import mathematics_standard_rows
 from staging.dlp.year5 import render_mathematics, render_science
 
 
@@ -98,22 +99,24 @@ class DLPYear5ReviewExports(unittest.TestCase):
                     self.assertNotIn("RPT date ranges", fields)
                     if subject == "Mathematics":
                         self.assertEqual(fields["Topic"], plan["title"])
+                        standards = mathematics_standard_rows(5, plan["standards"])
                     else:
-                        self.assertEqual(fields["Content Standards"], plan["content_standards"])
-                        self.assertEqual(fields["Learning Standards"], plan["learning_standards"])
+                        standards = (("Content Standards", plan["content_standards"]),
+                                     ("Learning Standards", plan["learning_standards"]))
                         self.assertEqual(word.paragraphs[2].text, plan["title"])
+                    for label, description in standards:
+                        self.assertEqual(fields[label], description)
                     text = "\n".join(row.cells[1].text for row in table.rows[1:])
                     for _, teacher, pupils in plan["phases"]:
                         self.assertIn(f"Teacher: {teacher}\nPupils: {pupils}", text)
-                    standard_fields = (
-                        ("content_standards", "learning_standards") if subject == "Science" else ("standards",)
-                    )
                     for pdf_folder in (folder, word_pdfs) if word_pdfs.exists() else (folder,):
                         self.assertNotRegex(stem.replace("_", " "), INTERNAL_LABEL)
                         content = self.check_pdf(pdf_folder / f"{stem}.pdf", 1, (595, 842))
                         self.assertNotIn("RPT date ranges", content)
                         self.assertIn(normalized(plan["label"].rsplit(" · ", 1)[0]), content)
-                        for field in ("title", *standard_fields, "reference", "objective", "evidence"):
+                        for _, description in standards:
+                            self.assertIn(normalized(description), content)
+                        for field in ("title", "reference", "objective", "evidence"):
                             self.assertIn(normalized(plan[field]), content)
 
     def check_pdf(self, path, count, size):
