@@ -76,23 +76,31 @@ class DraftWebQA(unittest.TestCase):
                              "status": "READY", "formats": ["word"]}
         path = "/api/web/rph/extra-materials"
         base = {**self.query, "year": 3}
-        for unit, lesson, video_ids in (
-            ("u01", "010", ("3cfsR_2ADTU",)),
-            ("u02", "028", ("v5e3wECmYDo",)),
-            ("u03", "043", ("QKsDg28oO14",)),
-            ("u04", "052", ("GLi9tLRQMw0", "bfU1oW4-VsQ")),
-            ("u04", "054", ("GLi9tLRQMw0",)),
+        classroom = "1EpHVsUWS5Kdlo4RptFQucqPIk4DkcOU5"
+        clothing = "1eQBGbbeQS0y7V3VJW85D57txrtgqzRo6"
+        colours = "1bCvWaPMJru3IpOI6oFe9HQinfjRgMVLH"
+        days = "1MNsCyjEiy7tK1eu0O4H4xJioEQf0b2Qq"
+        for unit, lesson, audio_id, video_ids in (
+            ("u01", "010", classroom, ("3cfsR_2ADTU",)),
+            ("u02", "022", clothing, ()),
+            ("u02", "023", clothing, ()),
+            ("u02", "028", None, ("v5e3wECmYDo",)),
+            ("u03", "036", colours, ()),
+            ("u03", "037", colours, ()),
+            ("u03", "043", colours, ("QKsDg28oO14",)),
+            ("u04", "052", days, ("GLi9tLRQMw0", "bfU1oW4-VsQ")),
+            ("u04", "054", days, ("GLi9tLRQMw0",)),
         ):
             query = {**base, "unit": unit, "lesson": lesson}
             response = self.client.get(path, query_string=query)
             self.assertEqual(response.status_code, 200, response.json)
             items = response.json["items"]
             self.assertEqual(response.json["status"], "PAUTAN_RAKAMAN")
-            if unit == "u04":
+            if audio_id is not None:
                 audio = items.pop(0)
                 self.assertEqual((audio["type"], audio["action"]), ("audio", "Muat Turun Audio"))
                 self.assertEqual(audio["url"], "https://drive.usercontent.google.com/download?"
-                                 "id=1MNsCyjEiy7tK1eu0O4H4xJioEQf0b2Qq&export=download&confirm=t")
+                                 f"id={audio_id}&export=download&confirm=t")
             for video, video_id in zip(items, video_ids, strict=True):
                 self.assertEqual((video["type"], video["action"]), ("video", "Mainkan Rakaman"))
                 self.assertEqual(video["url"], "https://www.youtube.com/watch?v=" + video_id)
