@@ -1,0 +1,98 @@
+{
+  "program": "Program Pendidikan Khas Integrasi",
+  "curriculum": "KSSR Pendidikan Khas (Masalah Pembelajaran) Semakan 2017",
+  "year": 2,
+  "subject": "Pengurusan Kehidupan",
+  "component": "Pengurusan Diri",
+  "unit": "Unit 4 · Rumah Rubina",
+  "content_standards": {
+    "4.1": "Pengurusan bilik tidur dan ruang tamu."
+  },
+  "learning_standards": {
+    "4.1.1": "Menamakan alatan dan perabot di: (i) bilik tidur (ii) ruang tamu.",
+    "4.1.2": "Menyatakan fungsi alatan dan perabot.",
+    "4.1.3": "Mengaplikasikan cara menjaga kekemasan dan kebersihan alatan dan perabot."
+  },
+  "lessons": [
+    {
+      "pdp": "019",
+      "title": "Kenali alatan dan perabot ruang tamu",
+      "sp": "4.1.1",
+      "focus": "Penamaan alatan dan perabot ruang tamu, fokus (ii).",
+      "book": "Buku Teks hlm. 28–29",
+      "objective": "Menamakan sekurang-kurangnya tiga daripada empat alatan atau perabot ruang tamu.",
+      "materials": "Buku teks, kad gambar sofa, meja kopi, televisyen dan kipas, serta kad nama.",
+      "induction": ["Paparkan gambar ruang tamu daripada buku teks.", "Tunjukkan satu perabot yang dikenali."],
+      "guided": ["Sebut nama empat item sambil menunjukkannya pada gambar.", "Tiru sebutan atau padankan gambar dengan kad nama."],
+      "practice": ["Tunjukkan empat kad gambar satu demi satu tanpa menyebut jawapannya.", "Namakan setiap item secara lisan, dengan isyarat nama atau kad komunikasi."],
+      "support": "Mulakan dengan dua gambar yang mudah dibezakan. Tambah pilihan apabila murid bersedia.",
+      "assessment": "Guru merekod nama yang tepat daripada empat item dan jenis bantuan.",
+      "closure": ["Tunjukkan semula gambar ruang tamu.", "Tunjuk dan namakan satu item pilihan."],
+      "follow_up": "Ulang penamaan bagi item yang masih tertukar."
+    },
+    {
+      "pdp": "020",
+      "title": "Kenali alatan dan perabot bilik tidur",
+      "sp": "4.1.1",
+      "focus": "Penamaan alatan dan perabot bilik tidur, fokus (i).",
+      "book": "Buku Teks hlm. 30",
+      "objective": "Menamakan sekurang-kurangnya dua daripada tiga item bilik tidur yang ditunjukkan.",
+      "materials": "Buku teks, bantal, selimut dan gambar atau model katil.",
+      "induction": ["Tunjukkan gambar bilik tidur pada halaman 30.", "Tunjuk katil dalam gambar."],
+      "guided": ["Tunjuk bantal dan katil dalam buku teks. Gunakan selimut sebenar sebagai contoh tambahan.", "Sebut atau tunjuk kad nama yang sepadan dengan setiap item."],
+      "practice": ["Tunjukkan katil, bantal dan selimut dalam turutan rawak.", "Namakan setiap item menggunakan pertuturan, isyarat nama atau kad komunikasi."],
+      "support": "Benarkan murid menyentuh bantal dan selimut. Perkenalkan satu nama pada satu masa jika perlu.",
+      "assessment": "Guru merekod penamaan tepat daripada tiga item dan jenis bantuan.",
+      "closure": ["Tunjukkan dua item bilik tidur.", "Pilih dan namakan satu item."],
+      "follow_up": "Ulang padanan objek kepada kad nama bagi item yang belum dikuasai."
+    },
+    {
+      "pdp": "021",
+      "title": "Fungsi alatan dan perabot di rumah",
+      "sp": "4.1.2",
+      "focus": "Kegunaan sofa, televisyen, katil dan bantal.",
+      "book": "Buku Teks hlm. 28–30",
+      "objective": "Menyatakan fungsi yang tepat bagi sekurang-kurangnya tiga daripada empat item.",
+      "materials": "Buku teks, empat kad gambar item dan empat kad tindakan bergambar.",
+      "induction": ["Lakonkan duduk dan menonton televisyen.", "Tunjukkan gambar item yang sesuai dengan setiap tindakan."],
+      "guided": ["Padankan sofa dengan duduk, televisyen dengan menonton, katil dengan berbaring dan bantal dengan menyokong kepala.", "Tiru tindakan atau sebut fungsi setiap item."],
+      "practice": ["Edarkan empat kad item tanpa menunjuk kad tindakan yang sepadan.", "Nyatakan fungsi setiap item melalui ujaran, lakonan atau kad tindakan."],
+      "support": "Beri dua kad tindakan pada satu masa dan jarakkan pilihan supaya mudah ditunjuk.",
+      "assessment": "Guru merekod bilangan fungsi yang tepat dan tahap bantuan.",
+      "closure": ["Tunjukkan satu gambar daripada buku teks.", "Nyatakan satu fungsi item yang dipilih."],
+      "follow_up": "Ulang pasangan fungsi yang masih tertukar dengan objek sebenar atau simulasi."
+    },
+    {
+      "pdp": "022",
+      "title": "Kemas dan bersihkan ruang tamu",
+      "sp": "4.1.3",
+      "focus": "Mengemas sofa dan membersihkan meja kopi dalam simulasi.",
+      "book": "Buku Teks hlm. 28–29",
+      "objective": "Menunjukkan tiga tindakan: menyusun kusyen, mengalihkan barang dari meja dan mengelap meja kopi.",
+      "materials": "Kusyen, meja rendah, bakul, barang ringan dan kain lap.",
+      "induction": ["Tunjukkan ruang simulasi yang belum dikemas.", "Tunjukkan satu barang yang perlu disusun."],
+      "guided": ["Modelkan susun kusyen, masukkan barang meja ke bakul dan lap permukaan meja.", "Tiru setiap tindakan dengan bimbingan."],
+      "practice": ["Sediakan semula stesen sofa dan meja. Beri arahan ringkas dan perhatikan tindakan.", "Susun kusyen, alihkan barang ke bakul dan lap permukaan meja."],
+      "support": "Letakkan bakul dan kain dalam jangkauan. Gunakan kad urutan bergambar jika perlu.",
+      "assessment": "Guru menanda tiga tindakan yang dibuat dan tahap bantuan bagi setiap tindakan.",
+      "closure": ["Minta murid membandingkan keadaan meja sebelum dan selepas dikemas.", "Tunjukkan satu tanda meja sudah kemas."],
+      "follow_up": "Ulang tindakan yang belum tepat pada stesen yang sama."
+    },
+    {
+      "pdp": "023",
+      "title": "Kemas katil di bilik tidur",
+      "sp": "4.1.3",
+      "focus": "Mengemas katil melalui urutan tiga tindakan.",
+      "book": "Buku Teks hlm. 30",
+      "objective": "Menunjukkan tiga tindakan mengemas katil: meratakan alas, melipat selimut dan meletakkan bantal.",
+      "materials": "Model katil atau alas di atas meja rendah, kain alas, selimut ringan dan bantal.",
+      "induction": ["Tunjukkan gambar bilik tidur dan model katil yang belum dikemas.", "Tunjukkan bahagian yang perlu dikemas."],
+      "guided": ["Modelkan meratakan alas, melipat selimut dan meletakkan bantal di bahagian kepala katil.", "Tiru setiap tindakan secara berpandu."],
+      "practice": ["Susun semula model dan sediakan satu giliran bagi setiap murid.", "Kemas model dengan meratakan alas, melipat selimut dan meletakkan bantal."],
+      "support": "Gunakan kain ringan dan kad satu tindakan. Modelkan semula tindakan terakhir jika perlu.",
+      "assessment": "Guru merekod tindakan yang lengkap daripada tiga dan jenis bantuan bagi setiap tindakan.",
+      "closure": ["Tunjukkan model yang telah dikemas.", "Nyatakan atau tunjuk satu tindakan yang telah dibuat."],
+      "follow_up": "Ulang tindakan yang belum dikuasai menggunakan model yang sama."
+    }
+  ]
+}

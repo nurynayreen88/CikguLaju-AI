@@ -9,19 +9,24 @@ YEAR = 2
 SUBJECT = "PENGURUSAN_KEHIDUPAN_PPKI"
 UNIT = "u02-pengurusan-diri"
 UNIT3 = "u03-pengurusan-diri"
+UNIT4 = "u04-pengurusan-diri"
 COMPONENT = "pengurusan-diri"
 FORMATS = ("word", "pdf")
-UNIT_LESSONS = {UNIT: range(1, 15), UNIT3: range(15, 19)}
+UNIT_LESSONS = {UNIT: range(1, 15), UNIT3: range(15, 19), UNIT4: range(19, 24)}
+UNIT_FILES = {
+    UNIT3: "pengurusan_kehidupan_tahun2_unit3.json",
+    UNIT4: "pengurusan_kehidupan_tahun2_unit4.json",
+}
 RPT_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_2_2027.pdf"
-RPT_COMBINED_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_2_3_2027.pdf"
+RPT_COMBINED_FILENAME = "CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_2_3_4_2027.pdf"
 
 
-@lru_cache(maxsize=2)
+@lru_cache(maxsize=len(UNIT_LESSONS))
 def catalog(unit=UNIT):
     if unit == UNIT:
         source = load_catalog()
-    elif unit == UNIT3:
-        path = Path(__file__).with_name("pengurusan_kehidupan_tahun2_unit3.json")
+    elif unit in UNIT_FILES:
+        path = Path(__file__).with_name(UNIT_FILES[unit])
         source = json.loads(path.read_text(encoding="utf-8"))
     else:
         raise ValueError("Unknown PPKI unit")
@@ -62,7 +67,7 @@ def options():
         "components": [{"value": COMPONENT, "label": source["component"]}],
         "units": [{"value": UNIT, "label": first["label"]}],
         "lessons": first["lessons"],
-        "additional_units": [_unit_options(UNIT3)],
+        "additional_units": [_unit_options(unit) for unit in UNIT_FILES],
     }
 
 
