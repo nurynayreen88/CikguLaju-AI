@@ -546,9 +546,11 @@ except Exception as exc:
           type(exc).__name__, flush=True)
 
 
-from web.telegram_ppki_api import create_ppki_blueprint
-
-telegram_runtime.app.register_blueprint(create_ppki_blueprint())
+try:
+    from web.telegram_ppki_api import create_ppki_blueprint
+    telegram_runtime.app.register_blueprint(create_ppki_blueprint())
+except (AttributeError, ImportError, RuntimeError) as exc:
+    print("PPKI reader unavailable:", type(exc).__name__, flush=True)
 
 
 # English: authenticated workbook material from the original verified

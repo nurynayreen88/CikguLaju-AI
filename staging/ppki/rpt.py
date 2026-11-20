@@ -2,18 +2,18 @@
 from io import BytesIO
 from xml.sax.saxutils import escape
 
-from reportlab.lib import colors
-from reportlab.lib.pagesizes import A4, landscape
-from reportlab.lib.styles import ParagraphStyle
-from reportlab.lib.units import mm
-from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
-
 from staging.ppki.catalog import catalog
 from staging.ppki.render_pengurusan_kehidupan import PPKI_LABEL_FILL
-from web.rph_document_style import pdf_fonts
 
 
 def render_rpt():
+    from reportlab.lib import colors
+    from reportlab.lib.pagesizes import A4, landscape
+    from reportlab.lib.styles import ParagraphStyle
+    from reportlab.lib.units import mm
+    from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
+    from web.rph_document_style import pdf_fonts
+
     source = catalog()
     regular, bold, _ = pdf_fonts()
     normal = ParagraphStyle("RPT cell", fontName=regular, fontSize=9, leading=11)
