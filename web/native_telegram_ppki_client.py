@@ -32,7 +32,7 @@ MANIPULATIVE_UNIT_LESSONS = {
 }
 YEAR = 2
 YEARS = (2, 3)
-YEAR3_LESSONS = {UNIT1: range(1, 18)}
+YEAR3_LESSONS = {UNIT1: range(1, 18), UNIT: range(18, 36), UNIT3: range(36, 40)}
 FORMATS = ("word", "pdf")
 RPT_CODE = "pengurusan_kehidupan_ppki"
 RPT_MANIPULATIVE_CODE = "kemahiran_manipulatif_ppki"
