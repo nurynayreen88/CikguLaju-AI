@@ -1,0 +1,30 @@
+name: Sains SK Opening Pedagogy EMK KBAT PAK21
+
+on:
+  pull_request:
+    paths:
+      - "web/sains_y3_unit_awal.py"
+      - "web/sains_unit_awal.py"
+      - "web/sains_opening_pedagogy_20261121.py"
+      - "tests/test_sains_opening_pedagogy_20261121.py"
+      - ".github/workflows/sains-opening-pedagogy-20261121.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  opening-pedagogy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install unit-test tool
+        run: python -m pip install --disable-pip-version-check "pytest>=8,<10"
+      - name: Validate curriculum/activity/PBD identity in every opening PdP
+        run: python -m pytest tests/test_sains_opening_pedagogy_20261121.py -q
+      - name: Compile source modules
+        run: python -m py_compile web/sains_y3_unit_awal.py web/sains_unit_awal.py web/sains_opening_pedagogy_20261121.py
