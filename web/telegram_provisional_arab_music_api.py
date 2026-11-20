@@ -30,7 +30,7 @@ EXPECTED = {2:60,3:60,4:58,5:60,6:60}
 SUBJECTS = {"ARAB":"Bahasa Arab", "MUZIK":"Pendidikan Muzik"}
 REVIEWED_ARABIC = tuple(
     (year, lesson)
-    for year, last in ((2, 60), (3, 44))
+    for year, last in ((2, 60), (3, 60))
     for lesson in range(1, last + 1)
 )
 

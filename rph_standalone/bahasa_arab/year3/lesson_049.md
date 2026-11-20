@@ -1,30 +1,31 @@
-# RPH Bahasa Arab Tahun 3 — PdP 049 (DRAF / BELUM READY)
+# RPH Bahasa Arab Tahun 3 — PdP 049 (DRAF INDEKS RPT 2027)
 
 **Tahun:** 3 | **Subjek:** Bahasa Arab KSSR Semakan 2017 | **Unit:** الوقت كالذهب
-**Fokus PdP:** Mengecam bunyi ص melalui gambar
-**SK/SP cadangan:** 1.1 / 1.1.2; nombor kod ada dalam DSKP asal, tetapi padanan SP cetakan h92 dan urutan RPT 2027 masih perlu pengesahan individu.
-**Tarikh / masa / kelas:** Guru mengisi waktu mula, tamat, tarikh, kelas mengikut negeri/jadual sebenar.
-**Kosa kata / ayat:** صَقْر، صَحْن، صُنْدُوق
-**Objektif pembelajaran:** Mengenal sekurang-kurangnya tiga kata apabila mendengar ص.
-**Kriteria kejayaan:** Murid mencapai bukti minimum dalam objektif dan penilaian PBD; guru rekod keperluan bimbingan.
 
-**Set induksi:** Guru menunjukkan ilustrasi burung dan pinggan.
+**Fokus PdP:** محاكاة أصوات حرف الضاد
 
-**Aktiviti 1 — Bimbingan guru dan respons murid:** Guru membimbing murid mengenal bunyi ص daripada gambar kata dalam latihan h92, menekankan perbezaan ص dan س.
+**DSKP SK/SP:** 1.1 / 1.1.1
 
-**Aktiviti 2 — Aplikasi murid:** Murid mendengar kata rawak dan menunjuk gambar yang tepat sebelum mengulang sebutan.
+**Objektif pembelajaran:** أن يحاكي التلميذ أربعة أصوات صحيحة من أصل ستة.
 
-**Pengukuhan / Penilaian (PBD):** Tiga pengecaman bunyi dan sebutan dinilai.
+**Kriteria kejayaan:** يردّد التلميذ أربعة أمثلة للضاد من دون تغيير الحركة أو المدّ.
 
-**Penutup:** Murid menunjukkan bentuk ص pada kad.
+**Set induksi:** يعرض المعلّم حرف الضاد مع صورتين من الكتاب. يستمع التلاميذ إلى النطق.
 
-**BBM:** Buku Teks Tahun 3 h92, gambar rutin/kad masa atau huruf, kad ayat dan senarai semak guru.
-**Refleksi guru:** ____ / ____ murid mencapai objektif; intervensi: ____________________.
+**Aktiviti 1 — Bimbingan guru dan respons murid:** ينطق المعلّم صوت الضاد بالحركات القصيرة والطويلة. يردّد التلاميذ الصوت داخل الكلمة.
 
-**Buku Teks:** DBP/KPM 2018 ISBN 978-983-49-2033-3, KSSR Semakan 2017, Unit 4 halaman bercetak **92**. PDF asal: https://drive.google.com/file/d/1U-j2TPeVTyLaZbU2qGDb9jmf53KAwNNH/view.
-**Pemetaan PDF:** Indeks halaman PDF 0-based = 92+7 = 99, kerana halaman muka depan dan pendahuluan; hanya halaman bercetak dipaparkan kepada guru.
-**DSKP asal:** https://drive.google.com/file/d/1VQcCrSyo-zmAndvAFv9pScQcLT-DRl00/view.
-**RPT rujukan 2026:** https://anyflip.com/zxzlm/vmip/basic.
-**Bukti visual:** Halaman bercetak unit ini diperiksa secara visual dalam PDF imbasan; padanan SK/SP h92 dalam perincian cetakan buku dan kecukupan PdP 2027 belum diluluskan.
-**Had pelepasan:** Bahasa Arab akhir, RPT 2027 Kumpulan A/B, penilaian guru per PdP, ujian pengeluaran Word/PDF kumpulan baharu serta Telegram/Web/DB belum lengkap.
-**Status:** DRAF_SEMAK / BELUM READY. Staging sahaja.
+**Aktiviti 2 — Aplikasi murid:** يردّد التلميذ النموذج المسموع، ويشير زميله إلى بطاقة الصوت القصير أو الطويل.
+
+**Pengukuhan / Penilaian (PBD):** ينطق المعلّم ستّة نماذج، ويرصد دقّة نطق الضاد والحركة عند المحاكاة.
+
+**Penutup:** يردّد التلاميذ نموذجًا قصيرًا وآخر طويلًا.
+
+**BBM:** صور، بطاقات الحركات والمدّ، الكتاب المدرسي.
+
+**Refleksi guru:** بلغ هدف الدرس ____ من ____ تلميذًا. إجراء المتابعة ____________________.
+
+**Buku Teks:** DBP/KPM, cetakan 2018, ISBN 978-983-49-2033-3, Unit 4 halaman bercetak 94. https://www.scribd.com/document/438677752/Bahasa-Arab-Tahun-3-Teks-KSSR-Semakan
+
+**DSKP asal:** https://asiemodel.net/wp-content/uploads/2022/08/011-DSKP-KSSR-SEMAKAN-2017-BAHASA-ARAB-TAHUN-3.pdf
+
+**Status:** Indeks tarikh RPT 2027 kekal draf. Word PdP menggunakan data Arab yang disemak.
