@@ -354,8 +354,10 @@ def create_all_rpt_blueprint(*,root=ROOT):
             pass
         else:
             by_unit = ppki_source["lessons_by_unit"]
-            last_unit = len(by_unit) + 1
-            edition = f"Unit 2–{last_unit}" if last_unit > 2 else "Unit 2"
+            unit_numbers = ppki_source["unit_numbers"]
+            edition = f"Unit {unit_numbers[0]}"
+            if len(unit_numbers) > 1:
+                edition += f"–{unit_numbers[-1]}"
             count = sum(len(lessons) for lessons in by_unit.values())
             data["subjects"].append({"code": ppki.RPT_CODE, "label": "Pengurusan Kehidupan", "years": [{
                 "year": ppki.YEAR, "status": f"AGIHAN {edition.upper()}", "pdf_ready": True,
@@ -402,13 +404,13 @@ def create_all_rpt_blueprint(*,root=ROOT):
             if not _has_paid_access(account):
                 return jsonify({"error": "RPT PPKI memerlukan akses berbayar aktif."}), 403
             try:
-                unit_count = len(ppki.catalog()["lessons_by_unit"])
-                document = ppki.request_rpt(combined=unit_count > 1)
+                unit_numbers = ppki.catalog()["unit_numbers"]
+                document = ppki.request_rpt(combined=len(unit_numbers) > 1)
             except ppki.NativeRPHUnavailable:
                 return jsonify({"error": "PDF RPT PPKI belum dapat dihubungi."}), 503
             response = send_file(document, mimetype="application/pdf", as_attachment=True, conditional=False,
                                  download_name=("CIKGULAJU_RPT_PPKI_PENGURUSAN_KEHIDUPAN_TAHUN_2_UNIT_"
-                                                + "_".join(str(unit) for unit in range(2, unit_count + 2)) + "_2027.pdf"))
+                                                + "_".join(str(unit) for unit in unit_numbers) + "_2027.pdf"))
             response.headers["X-RPT-Source-SHA256"] = hashlib.sha256(document.getvalue()).hexdigest()
             response.headers["X-RPT-Personalization-Allowed"] = "0"
             return response

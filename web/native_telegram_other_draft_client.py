@@ -26,7 +26,7 @@ PDP = re.compile(r"0[0-9][0-9]")
 REVIEWED_ARABIC = {
     "u01": {f"{lesson:03d}" for lesson in range(1, 13)},
     "u02": {f"{lesson:03d}" for lesson in range(13, 29)},
-    "u03": {f"{lesson:03d}" for lesson in range(29, 39)},
+    "u03": {f"{lesson:03d}" for lesson in range(29, 41)},
 }
 
 

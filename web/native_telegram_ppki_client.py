@@ -12,11 +12,15 @@ from web.rph_teacher_reflection import valid_teacher_fields
 SOURCE = "ppki-pengurusan-kehidupan-v1"
 SUBJECT = "PENGURUSAN_KEHIDUPAN_PPKI"
 COMPONENT = "pengurusan-diri"
+UNIT1 = "u01-pengurusan-diri"
 UNIT = "u02-pengurusan-diri"
 UNIT3 = "u03-pengurusan-diri"
 UNIT4 = "u04-pengurusan-diri"
 UNIT5 = "u05-pengurusan-diri"
-UNIT_LESSONS = {UNIT: range(1, 15), UNIT3: range(15, 19), UNIT4: range(19, 24), UNIT5: range(24, 30)}
+UNIT_LESSONS = {
+    UNIT: range(1, 15), UNIT3: range(15, 19), UNIT4: range(19, 24),
+    UNIT5: range(24, 30), UNIT1: range(30, 40),
+}
 YEAR = 2
 FORMATS = ("word", "pdf")
 RPT_CODE = "pengurusan_kehidupan_ppki"
@@ -80,6 +84,8 @@ def catalog():
     if any(item.get("formats") != list(FORMATS) or not isinstance(item.get("textbook_ref"), str)
            for lessons in by_unit.values() for item in lessons):
         raise NativeRPHUnavailable("Invalid PPKI material metadata")
+    obj["units"].sort(key=lambda row: row["value"])
+    obj["unit_numbers"] = [int(row["value"][1:3]) for row in obj["units"]]
     obj["lessons_by_unit"] = by_unit
     return obj
 

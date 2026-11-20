@@ -181,6 +181,32 @@ class PpkiWebTest(unittest.TestCase):
         with self.assertRaises(ppki.NativeRPHUnavailable):
             ppki.catalog()
 
+    def test_unit_one_display_order_and_complete_rpt(self):
+        self.catalog["additional_units"] = [
+            {"value": unit, "label": label,
+             "lessons": [{"value": f"{n:03d}", "label": f"PdP {n:03d}", "formats": ["word", "pdf"],
+                          "textbook_ref": "Buku Teks"} for n in ppki.UNIT_LESSONS[unit]]}
+            for unit, label in ((ppki.UNIT3, "Unit 3"), (ppki.UNIT4, "Unit 4"), (ppki.UNIT5, "Unit 5"),
+                                (ppki.UNIT1, "Unit 1 · Mari Belajar"))
+        ]
+        units = self.client.get("/api/options", query_string={
+            "kind": "units", "year": 2, "subject": ppki.SUBJECT, "component": ppki.COMPONENT,
+        })
+        self.assertEqual([row["value"] for row in units.json],
+                         [ppki.UNIT1, ppki.UNIT, ppki.UNIT3, ppki.UNIT4, ppki.UNIT5])
+        choices = self.client.get("/api/options", query_string={
+            "kind": "pdp", "year": 2, "subject": ppki.SUBJECT, "unit": ppki.UNIT1,
+        })
+        self.assertEqual([row["value"] for row in choices.json], [f"{n:03d}" for n in range(30, 40)])
+        selection = {**self.selection, "unit": ppki.UNIT1, "lesson": "039"}
+        self.assertEqual(self.client.get("/api/web/rph/word", query_string=selection).status_code, 200)
+        response = self.client.get("/api/rpt/2027/catalog")
+        entry, = [row for row in response.json["subjects"] if row["code"] == ppki.RPT_CODE]
+        self.assertIn("39 PdP Unit 1–5", entry["years"][0]["note"])
+        rpt = self.client.get(f"/api/rpt/2027/all/{ppki.RPT_CODE}/2.pdf")
+        self.assertEqual(rpt.status_code, 200)
+        self.assertIn("UNIT_1_2_3_4_5_2027.pdf", rpt.headers["Content-Disposition"])
+
     def test_missing_catalog_hides_rpt_and_blocks_fake_pdp(self):
         self.catalog["lessons"].pop()
         selection = self.client.get("/api/web/rph/availability", query_string=self.selection)
