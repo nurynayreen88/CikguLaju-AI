@@ -268,12 +268,47 @@ def _cell_lines(value, bold):
     return [(line, heading) for block, heading in value for line in block.split("\n")]
 
 
+def _premium_header_payload(heading, details):
+    """Move (never discard) teacher metadata into the approved small RIGHT panel.
+
+    Source standards, activity steps, materials and reflections remain in their
+    original order. The subject/year/topic already visible in the identity
+    panel must not be repeated as separate curriculum rows.
+    """
+    english = heading[0].strip().casefold() == "daily lesson plan"
+    aliases = {
+        "class": "class", "kelas": "class",
+        "date": "date", "tarikh": "date",
+        "day": "day", "hari": "day",
+        "time": "time", "masa": "time",
+        "number of pupils": "students", "bilangan murid": "students",
+        "bil. murid": "students",
+    }
+    redundant = {"subject", "mata pelajaran", "year", "tahun/tingkatan",
+                 "topic", "tajuk"}
+    values = {}
+    remaining = []
+    for label, value in details:
+        clean = " ".join(label.casefold().split())
+        if clean in aliases:
+            values[aliases[clean]] = str(value or "")
+        elif clean not in redundant:
+            remaining.append((label, value))
+    labels = (("Class", "Date", "Day", "Time", "Number of pupils") if english
+              else ("Kelas", "Tarikh", "Hari", "Masa", "Bilangan Murid"))
+    keys = ("class", "date", "day", "time", "students")
+    # Do not invent a day for formats that did not have a day field.
+    fields = [(label, values.get(key, "")) for label, key in zip(labels, keys)
+              if key != "day" or "day" in values]
+    return remaining, fields
+
+
 def _word(output, heading, details, activities, reflection, *, compact=False,
           mathematics=False, teacher=None, label_fill=None):
     from copy import deepcopy
 
     from docx import Document
-    from docx.enum.table import WD_TABLE_ALIGNMENT
+    from docx.enum.table import WD_TABLE_ALIGNMENT, WD_CELL_VERTICAL_ALIGNMENT
     from docx.enum.text import WD_ALIGN_PARAGRAPH
     from docx.oxml import OxmlElement
     from docx.oxml.ns import qn
@@ -294,6 +329,7 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
     activities = _activity_table(activities, english=heading[0] == "Daily Lesson Plan")
     if mathematics:
         heading, details = _math_details(heading, details, teacher)
+    details, teacher_fields = _premium_header_payload(heading, details)
     doc = Document()
     doc.core_properties.title = f"{heading[0]} · {heading[2]}"
     section = doc.sections[0]
@@ -323,34 +359,37 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
     border = properties.find(qn("w:pBdr"))
     if border is not None:
         properties.remove(border)
-    title_paragraph = doc.add_paragraph(heading[0], "Title")
-    opening = [title_paragraph]
-    if mathematics:
-        title.font.name, title.font.size = "Arial", Pt(14)
-    else:
-        opening.append(doc.add_paragraph(heading[1]))
-        topic = doc.add_paragraph()
-        topic.add_run(heading[2]).bold = True
-        opening.append(topic)
-
-    border = OxmlElement("w:pBdr")
-    for edge in ("top", "left", "bottom", "right"):
-        line = OxmlElement(f"w:{edge}")
-        line.set(qn("w:val"), "single")
-        line.set(qn("w:sz"), "6")
-        line.set(qn("w:space"), "0")
-        line.set(qn("w:color"), "000000")
-        border.append(line)
-    for index, paragraph in enumerate(opening):
-        paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        layout = paragraph.paragraph_format
-        layout.left_indent = layout.right_indent = Mm(3 if mathematics else 0)
-        layout.space_before = Pt(4 if index == 0 else 0)
-        layout.space_after = Pt(4 if index == len(opening) - 1 else 0)
-        layout.keep_with_next = True
-        properties = paragraph._p.get_or_add_pPr()
-        properties.insert_element_before(deepcopy(border), "w:spacing", "w:ind", "w:jc")
-        properties.insert_element_before(shading(), "w:spacing", "w:ind", "w:jc")
+    # One complete 182 mm A4 banner, exactly aligned to every table below.
+    # Lesson identity remains at LEFT, the compact teacher panel at RIGHT.
+    header = doc.add_table(rows=1, cols=2)
+    header.style = "Table Grid"
+    header.autofit = False
+    header.alignment = WD_TABLE_ALIGNMENT.CENTER
+    for column, width in zip(header.columns, (118, 64)):
+        column.width = Mm(width)
+    header_left, header_right = header.rows[0].cells
+    for cell, width in zip((header_left, header_right), (118, 64)):
+        cell.width = Mm(width)
+        cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
+        cell._tc.get_or_add_tcPr().append(shading())
+    for index, text in enumerate(heading):
+        paragraph = (header_left.paragraphs[0] if index == 0
+                     else header_left.add_paragraph())
+        paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        paragraph.paragraph_format.space_before = Pt(1)
+        paragraph.paragraph_format.space_after = Pt(1)
+        run = paragraph.add_run(str(text))
+        run.bold = index in (0, 2)
+        run.font.size = Pt(13 if index == 0 else 10)
+    # Each field is shown once, in its original language, with no fake lines.
+    for index, (label_text, value) in enumerate(teacher_fields):
+        paragraph = (header_right.paragraphs[0] if index == 0
+                     else header_right.add_paragraph())
+        paragraph.paragraph_format.space_before = Pt(0)
+        paragraph.paragraph_format.space_after = Pt(1)
+        prefix = paragraph.add_run(label_text + ": ")
+        prefix.bold = True
+        paragraph.add_run(value)
 
     def table(rows, widths, header=False):
         element = doc.add_table(rows=0, cols=len(widths))
@@ -411,6 +450,7 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
     activities = _activity_table(activities, english=heading[0] == "Daily Lesson Plan")
     if mathematics:
         heading, details = _math_details(heading, details, teacher)
+    details, teacher_fields = _premium_header_payload(heading, details)
     regular, bold, _ = pdf_fonts()
     font_size = 9 if mathematics else 9.5
     leading = (9.35 if compact else 9.9) if mathematics else (11 if compact else 12)
@@ -454,12 +494,18 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
         doc.addPageTemplates(PageTemplate("RPH A4", frames=[frame], onPage=footer))
     else:
         doc.addPageTemplates(PageTemplate("DLP A4", frames=[frame]))
-    opening = [paragraph(heading[0], title)]
-    if not mathematics:
-        opening.extend([paragraph(heading[1], subtitle), paragraph(heading[2], table_heading)])
-    title_panel = Table([[opening]], colWidths=[182 * mm], style=[
+    # Use the same teacher-right / identity-left banner as native Word.
+    # It is a real table, not a coloured overlay on PDF text.
+    opening = [paragraph(heading[0], title),
+               paragraph(heading[1], subtitle),
+               paragraph(heading[2], label)]
+    teacher_lines = [paragraph(f"<b>{escape(name)}:</b> {escape(value)}", body)
+                     for name, value in teacher_fields]
+    title_panel = Table([[opening, teacher_lines]], colWidths=[118 * mm, 64 * mm], style=[
         ("BACKGROUND", (0, 0), (-1, -1), fill),
         ("BOX", (0, 0), (-1, -1), 0.75, colors.black),
+        ("INNERGRID", (0, 0), (-1, -1), 0.55, colors.black),
+        ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
         ("TOPPADDING", (0, 0), (-1, -1), 4),
         ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
     ])
