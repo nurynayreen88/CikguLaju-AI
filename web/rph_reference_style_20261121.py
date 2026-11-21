@@ -150,7 +150,7 @@ def style_three_table_word_bytes(document, fill):
     return output.getvalue()
 
 
-def style_word_path(path, fill, *, premium_header=False):
+def style_word_path(path, fill, *, premium_header=False, rtl_jawi=False):
     target = Path(path)
     if target.suffix.lower() != ".docx" or not target.is_file():
         return False
@@ -158,9 +158,9 @@ def style_word_path(path, fill, *, premium_header=False):
     updated = style_three_table_word_bytes(original, fill)
     if premium_header:
         from web.rph_premium_header_20261121 import premium_header_bytes
-        updated = premium_header_bytes(updated, fill)
+        updated = premium_header_bytes(updated, fill, rtl_jawi=rtl_jawi)
         from web.rph_equal_width_20261121 import equal_width_four_table_bytes
-        updated = equal_width_four_table_bytes(updated)
+        updated = equal_width_four_table_bytes(updated, rtl_jawi=rtl_jawi)
     if updated == original:
         return False
     temporary = target.with_name(target.name + ".style.tmp")
@@ -186,9 +186,12 @@ def install(runtime):
         if fill is not None and isinstance(path, (str, os.PathLike)):
             try:
                 subject = str(state.get("subject") or "").strip().casefold()
-                # Preserve the dedicated Arabic/Jawi right-to-left document layout.
-                style_word_path(path, fill, premium_header=subject not in
-                                ("pendidikan islam", "bahasa arab"))
+                # PI Word may upgrade only if the exact native Jawi labels
+                # and four-part grid match. Any mismatch preserves the
+                # original source; Arabic has a separate approved renderer.
+                style_word_path(path, fill,
+                                premium_header=subject != "bahasa arab",
+                                rtl_jawi=subject == "pendidikan islam")
             except (OSError, ValueError, etree.XMLSyntaxError) as exc:
                 # Fail open to the unchanged original document, never block a
                 # teacher's download because of a decorative formatting pass.
