@@ -190,7 +190,7 @@ def make_arab(source):
     if table.cell(4,0).text.strip()!='SK / SP':raise ValueError('Unexpected Arabic source')
     # Technical draft label is not part of lesson content. Preserve it only
     # in the admin source; do not include reviewer labels on teacher PDF.
-    title=re.sub(r'\s*[•·]\s*DRAF UNTUK SEMAKAN GURU\s*
+    title=re.sub(r'\s*[•·]\s*DRAF UNTUK SEMAKAN GURU\s*$', '', source.paragraphs[0].text, flags=re.I).strip()
     academic=source_academic_texts(source,[(0,[2,3,4,6,7,8,9,10,11,12,13,14])])
     out=Document();tone,_,rtl=prepare(out,'ARAB')
     make_hero(out,title,table.cell(2,1).text,['','','',''],'ARAB')
