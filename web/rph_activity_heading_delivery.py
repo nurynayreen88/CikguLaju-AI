@@ -23,19 +23,26 @@ DOC = "word/document.xml"
 MAX_XML = 8 * 1024 * 1024
 MAX_DOCX = 15 * 1024 * 1024
 
-# Only existing, standalone numbered headings are eligible, including Jawi/Arabic.
-# This is typographic only: no text or paragraph is inserted or rewritten.
-_NUMBERED_LABEL = r"(?:Aktiviti|Activity|اکتيۏيتي|اکتيۏيتی|النشاط|نشاط)\s+[1-9١-٩][0-9٠-٩]?"
+# Match standalone numbered activity headings from verified LTR, DLP, PPKI
+# and RTL templates. Preserve all text and existing line breaks.
+_NUMBER = r"[1-9١-٩][0-9٠-٩]{0,2}"
+_LABEL = (
+    r"(?:Aktiviti|Activity|Langkah|Step|اکتيۏيتي|اکتيۏيتی"
+    r"|اكتيويتي|اكتيفيتي|النشاط|نشاط)"
+)
+_NUMBERED_LABEL = rf"{_LABEL}\s+{_NUMBER}"
+_DURATION = rf"(?:\s*\(\s*{_NUMBER}\s*(?:minit|minutes?|mins?)\s*\))?"
+_TITLE_BASE = rf"(?:[1-9]\d?[.)]\s*)?{_NUMBERED_LABEL}{_DURATION}"
 _HEADING = re.compile(
-    rf"^{_NUMBERED_LABEL}(?:\s*[:\-–—]\s*[^.!?\n]{{1,75}})?$",
+    rf"^{_TITLE_BASE}(?:\s*[:：\-–—]\s*[^.!?\n]{{1,75}})?$",
     re.IGNORECASE,
 )
 _HEADING_PREFIX = re.compile(
-    rf"^{_NUMBERED_LABEL}\s*[:\-–—]\s*", re.IGNORECASE,
+    rf"^{_TITLE_BASE}\s*[:：\-–—]\s*", re.IGNORECASE,
 )
 _INSTRUCTION_START = re.compile(
-    r"^(?:Guru|Murid|Teacher|Pupil|Pupils|Student|Students"
-    r"|ݢورو|ڬورو|موريد|المعلم|الطلاب)\b",
+    r"^(?:Guru|Murid|Pelajar|Teacher|Teachers|Pupil|Pupils|Student|Students"
+    r"|ݢورو|ڬورو|موريد|المعلم|المعلمة|الطلاب|الطلبة)\b",
     re.IGNORECASE,
 )
 
