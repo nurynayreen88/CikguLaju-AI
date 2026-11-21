@@ -882,3 +882,14 @@ except Exception as _reference_word_style_exc:
     RPH_REFERENCE_WORD_STYLE_ACTIVE = False
     print("RPH reference Word style unavailable:",
           type(_reference_word_style_exc).__name__, flush=True)
+
+
+# Match the existing subject pastel palette in native PDF without reflowing
+# standards, activities, page size, or the protected Sains/DLP/PPKI/BA formats.
+try:
+    from web.rph_reference_pdf_style_20261121 import install as install_rph_reference_pdf_style
+    RPH_REFERENCE_PDF_STYLE_ACTIVE = bool(install_rph_reference_pdf_style(telegram_runtime))
+except Exception as _reference_pdf_style_exc:
+    RPH_REFERENCE_PDF_STYLE_ACTIVE = False
+    print("RPH reference PDF style unavailable:",
+          type(_reference_pdf_style_exc).__name__, flush=True)
