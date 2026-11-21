@@ -43,6 +43,7 @@ def test_arabic_teacher_header_right_and_source_fields_preserved():
         actual_mm = sum(col.width.mm for col in table.columns)
         assert abs(actual_mm - expected_mm) < 1, (index, actual_mm)
         assert table.table_direction == WD_TABLE_DIRECTION.RTL
+        assert table.alignment == WD_TABLE_ALIGNMENT.RIGHT
     assert len(header.columns) == 3
     assert header.alignment == WD_TABLE_ALIGNMENT.RIGHT
     identity = header.rows[0].cells[2].text
