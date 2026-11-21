@@ -11,6 +11,7 @@ from unittest.mock import patch
 from docx import Document
 from flask import Flask
 from pypdf import PdfReader
+from web.rph_premium_readback_20261121 import premium_rph_details
 
 from curriculum_version_telegram import install as install_curriculum
 from staging.matematik.penjana_2027 import DPK_ROUTE, ROUTE, register_downloads
@@ -132,9 +133,9 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         self.click(pdf)
         document = Document(BytesIO(self.documents[0][1]))
         self.assertEqual(document.styles["Normal"].font.name, "Arial")
-        self.assertEqual(document.paragraphs[0].text, "RANCANGAN PENGAJARAN HARIAN")
-        self.assertEqual([len(table.columns) for table in document.tables], [2, 3, 2])
-        reflection = next(row for row in document.tables[2].rows if row.cells[0].text == "Refleksi")
+        self.assertEqual(document.tables[0].cell(0, 0).paragraphs[0].text, "RANCANGAN PENGAJARAN HARIAN")
+        self.assertEqual([len(table.columns) for table in document.tables], [2, 2, 3, 2])
+        reflection = next(row for row in document.tables[3].rows if row.cells[0].text == "Refleksi")
         self.assertIn("murid mencapai objektif", reflection.cells[1].text)
         page, = PdfReader(BytesIO(self.documents[1][1])).pages
         self.assertNotIn("MAKLUMAT PENGAJARAN", page.extract_text())
@@ -145,11 +146,11 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         self.click(word)
         self.click(pdf)
         doc = Document(BytesIO(self.documents[0][1]))
-        fields = {row.cells[0].text: row.cells[1].text for row in doc.tables[0].rows}
+        fields = premium_rph_details(doc)
         self.assertIn("SP 2.2.1 Menolak hingga tiga nombor", fields["Standard Pembelajaran"])
         self.assertIn("Buku Aktiviti, hlm. 44–48", fields["Rujukan"])
         self.assertIn("2 daripada 2", fields["Kriteria Kejayaan"])
-        phases = doc.tables[1]
+        phases = doc.tables[2]
         main = phases.cell(2, 1).paragraphs[0]
         headings = [run.text for run in main.runs if run.bold]
         expected = ["Aktiviti 1 – Demonstrasi",
@@ -180,10 +181,10 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
             self.click(word)
             self.click(pdf)
             doc = Document(BytesIO(self.documents[-2][1]))
-            fields = {a.text: b.text for a, b in (row.cells for row in doc.tables[0].rows)}
+            fields = premium_rph_details(doc)
             self.assertEqual(fields["Lesson"], "Lesson 034")
             self.assertEqual(fields["Masa"], time)
-            phases = doc.tables[1]
+            phases = doc.tables[2]
             self.assertEqual([row.cells[0].text for row in phases.rows],
                              ["Fasa", "Set induksi", "Aktiviti Utama", "Penutup"])
             titles = ("Aktiviti 1", "Aktiviti 2 / PBD")
@@ -245,7 +246,7 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                 })
                 self.assertEqual(response.status_code, 200, response.get_json(silent=True))
                 document = Document(BytesIO(response.data))
-                fields = {a.text: b.text for a, b in (row.cells for row in document.tables[0].rows)}
+                fields = premium_rph_details(document)
                 self.assertEqual(fields["Tahun/Tingkatan"], f"Tahun {year}")
                 self.assertIn("DPK Edisi 3", fields["Rujukan"])
                 learning = fields["Standard Pembelajaran"].removeprefix("SP ").splitlines()
@@ -290,7 +291,7 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                                 self.assertIn(lesson["id"], file.headers["Content-Disposition"])
                                 if fmt == "word":
                                     document = Document(BytesIO(file.data))
-                                    text = " ".join(cell.text for row in document.tables[0].rows for cell in row.cells)
+                                    text = " ".join(cell.text for table in document.tables[:2] for row in table.rows for cell in row.cells)
                                     self.assertIn("3 Bestari", text)
                                     self.assertIn(lesson["label"], text)
                                 else:
@@ -331,7 +332,7 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
                     self.assertIn(f"{lesson}.{suffix}", result.headers["Content-Disposition"])
                     if fmt == "word":
                         doc = Document(BytesIO(result.data))
-                        fields = {a.text: b.text for a, b in (row.cells for row in doc.tables[0].rows)}
+                        fields = premium_rph_details(doc)
                         self.assertEqual(fields["Class"], teacher["class"])
                         self.assertEqual(fields["Date"], teacher["date"])
                         self.assertEqual(fields["Time"], teacher["time"])
@@ -369,8 +370,8 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         self.assertEqual(self.credits, 1)
 
         doc = Document(BytesIO(self.documents[-1][1]))
-        self.assertEqual(doc.paragraphs[2].text, "Pemerhatian kualitatif dengan deria")
-        fields = {a.text: b.text for a, b in (row.cells for row in doc.tables[0].rows)}
+        self.assertEqual(doc.tables[0].cell(0, 0).paragraphs[2].text, "Pemerhatian kualitatif dengan deria")
+        fields = premium_rph_details(doc)
         self.assertIn("Bestari", fields["Kelas"])
         self.assertTrue(all(fields[label] for label in ("Tarikh", "Masa", "Bilangan Murid")))
         self.assertNotIn("Julat RPT", fields)
@@ -417,7 +418,7 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         self.click(word)
         self.click(pdf)
         doc = Document(BytesIO(self.documents[0][1]))
-        fields = {row.cells[0].text: row.cells[1].text for row in doc.tables[0].rows}
+        fields = premium_rph_details(doc)
         self.assertIn("SP 7.2.1", fields["Standard Pembelajaran"])
         self.assertEqual(len(PdfReader(BytesIO(self.documents[1][1])).pages), 1)
         self.assertEqual(self.credits, 1)
@@ -461,7 +462,7 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         self.click(word)
         for data in (response.data, self.documents[-1][1]):
             doc = Document(BytesIO(data))
-            fields = {row.cells[0].text: row.cells[1].text for row in doc.tables[0].rows}
+            fields = premium_rph_details(doc)
             self.assertEqual(fields["Masa"], "08:00 - 08:30")
             self.assertIn("SP 1.5.1 — Mengenal pasti pola", fields["Standard Pembelajaran"])
             self.assertIn("1.5.2 — Melengkapkan pelbagai pola", fields["Standard Pembelajaran"])
@@ -493,7 +494,7 @@ class TelegramSKRPH2027Tests(unittest.TestCase):
         native, telegram = (Document(BytesIO(data)) for data in
                             (response.data, self.documents[-1][1]))
         native_fields, telegram_fields = (
-            {a.text: b.text for a, b in (row.cells for row in doc.tables[0].rows)}
+            premium_rph_details(doc)
             for doc in (native, telegram)
         )
         self.assertEqual(native_fields, telegram_fields)
