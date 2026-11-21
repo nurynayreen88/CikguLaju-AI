@@ -5,6 +5,8 @@ for the curriculum table, or silently accept a return to the old layout.
 """
 from __future__ import annotations
 
+import re
+
 
 def premium_rph_details(document):
     """Return fields of a 4-table DLP/PPKI Word plan without duplicating labels."""
@@ -31,7 +33,13 @@ def premium_rph_details(document):
     identity = header.cell(0, 0)
     if len(identity.paragraphs) < 3:
         raise AssertionError("Lesson identity lost subject, year or topic")
-    fields["Topic" if identity.paragraphs[0].text.casefold() == "daily lesson plan" else "Tajuk"] = identity.paragraphs[2].text
+    english = identity.paragraphs[0].text.casefold() == "daily lesson plan"
+    fields["Topic" if english else "Tajuk"] = identity.paragraphs[2].text
+    # The source Year/Tahun is displayed once in the wide lesson identity.
+    # Read it back for source-parity checks without adding a duplicate row.
+    match = re.search(r"\\b(?:Year|Tahun) [1-6]\\b", identity.paragraphs[1].text)
+    if match:
+        fields["Year" if english else "Tahun/Tingkatan"] = match.group(0)
     # The name of the subject appears in the identity panel, not in the
     # curriculum/standards rows. No duplicate subject or teacher metadata.
     forbidden = {"subject", "mata pelajaran", "date", "tarikh", "time", "masa",
