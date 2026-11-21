@@ -96,7 +96,7 @@ def test_every_registered_native_ltr_subject_is_in_word_and_pdf_regression():
         "SUBJECTS"))
     word_tested = set(_literal_tuple(
         ROOT / "tests/test_rph_premium_header_20261121.py",
-        "names", "test_all_nine_legacy_subjects_keep_every_source_word_and_header_left"))
+        "names", "test_all_nine_legacy_subjects_keep_every_source_word_and_header_right"))
     assert {item.casefold() for item in pdf_tested} == allowed
     assert {item.casefold() for item in word_tested} == allowed
 
@@ -137,7 +137,7 @@ def test_existing_outer_widths_and_header_fields_are_explicitly_fixed():
     assert layout["pdf_outer_table_width_mm"] == 172
     assert layout["pdf_story_flowables"] == 7
     assert len(layout["required_table_sections"]) == 4
-    assert layout["pdf_teacher_fields_left"] == [
+    assert layout["pdf_teacher_fields_right"] == [
         "class", "date", "day", "time", "pupil_count",
     ]
     for labels in (EXPECTED_BM, EXPECTED_EN):
@@ -154,7 +154,7 @@ def test_new_subject_acceptance_has_all_non_destructive_gates():
     assert len(requirements) >= 12
     for required in (
         "equal_left_and_right_outer_edges_on_every_main_box",
-        "short_teacher_box_left_for_ltr_right_for_pi_arabic_rtl",
+        "short_teacher_box_right_for_ltr_left_for_pi_arabic_rtl",
         "blank_teacher_metadata_without_lines_or_placeholders",
         "word_pdf_content_and_visual_parity_per_generator",
         "verified_sk_sp_descriptions_and_curriculum_mappings",
@@ -209,7 +209,7 @@ def test_one_universal_rph_box_layout_and_only_two_rtl_subjects():
 
 
 def test_small_teacher_panel_is_mirrored_for_ltr_and_two_rtl_subjects_only():
-    """Owner requires narrow left for standard subjects, narrow right for PI/BA."""
+    """Owner restores narrow RIGHT for LTR, narrow LEFT for PI/BA RTL."""
     from web.rph_premium_header_20261121 import premium_header_bytes
     from web.rph_reference_style_20261121 import style_three_table_word_bytes
     from web.rph_native_pdf_header_20261121 import premium_pdf_story
@@ -220,12 +220,12 @@ def test_small_teacher_panel_is_mirrored_for_ltr_and_two_rtl_subjects_only():
     panels = m["universal_layout"]["header_panels"]
     assert panels["small_panel"] == "teacher_metadata"
     assert panels["large_panel"] == "lesson_identity"
-    assert panels["ltr"]["small_panel_side"] == "left"
-    assert panels["ltr"]["large_panel_side"] == "right"
-    assert panels["rtl"]["small_panel_side"] == "right"
-    assert panels["rtl"]["large_panel_side"] == "left"
+    assert panels["ltr"]["small_panel_side"] == "right"
+    assert panels["ltr"]["large_panel_side"] == "left"
+    assert panels["rtl"]["small_panel_side"] == "left"
+    assert panels["rtl"]["large_panel_side"] == "right"
     assert set(panels["rtl"]["subjects"]) == {"pendidikan islam", "bahasa arab"}
-    assert "short_teacher_box_left_for_ltr_right_for_pi_arabic_rtl" in m["required_checks"]
+    assert "short_teacher_box_right_for_ltr_left_for_pi_arabic_rtl" in m["required_checks"]
 
     # The two native LTR adapters must implement the intended physical order.
     # Existing suites perform full source-preservation and A4 checks.
@@ -236,13 +236,13 @@ def test_small_teacher_panel_is_mirrored_for_ltr_and_two_rtl_subjects_only():
         doc = Document(BytesIO(premium_header_bytes(
             style_three_table_word_bytes(word_fixture(subject), fill), fill)))
         header = doc.tables[0]
-        assert header.columns[0].width < header.columns[1].width
-        assert ("Kelas" in header.cell(0, 0).text or "Class" in header.cell(0, 0).text)
-        assert ("Mata Pelajaran" in header.cell(0, 1).text
-                or "Subject" in header.cell(0, 1).text)
+        assert header.columns[0].width > header.columns[1].width
+        assert ("Kelas" in header.cell(0, 1).text or "Class" in header.cell(0, 1).text)
+        assert ("Mata Pelajaran" in header.cell(0, 0).text
+                or "Subject" in header.cell(0, 0).text)
         pdf = premium_pdf_story(
             {"task": "rph", "subject": subject}, pdf_fixture(subject))
-        assert pdf[0]._colWidths[0] < pdf[0]._colWidths[1]
+        assert pdf[0]._colWidths[0] > pdf[0]._colWidths[1]
 
     # The ready Arabic Word renderer is already independently guarded by the
     # physical A4 RTL suite, where the first 2 columns form the short RIGHT box.
@@ -295,7 +295,7 @@ def test_subject_appears_once_in_header_not_as_repeated_curriculum_row():
             style_three_table_word_bytes(word_fixture(display), fill), fill
         )
         doc = Document(BytesIO(doc_bytes))
-        assert label in doc.tables[0].cell(0, 1).text, subject
+        assert label in doc.tables[0].cell(0, 0).text, subject
         assert not any(
             row.cells[0].text.strip() == label
             for table in doc.tables[1:] for row in table.rows
