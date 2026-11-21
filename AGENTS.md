@@ -16,6 +16,15 @@
 - Perubahan besar atau berisiko pada produksi mesti melalui semakan tambahan. Jangan auto-merge tanpa CI atau jika terdapat isu kurikulum yang belum selesai.
 - Rekod setiap perubahan dan **status sebenar** di `docs/LOG_KEMASKINI_BAHAN.md`: `DALAM SEMAKAN`, `HOLD`, `MERGED MAIN`, `LIVE DISAHKAN`. Bezakan status kod dan status pengguna.
 
+## Syarat format RPH PREMIUM — WAJIB mulai 21 November 2026
+
+**Keputusan pemilik projek:** Untuk setiap RPH Word/PDF, semua kotak utama (kepala/maklumat guru, SK/SP, aktiviti, pemulihan-pengayaan, refleksi) mesti **sama lebar keseluruhan dan sejajar di kiri/kanan dalam dokumen yang sama**. Kotak **Kelas, Tarikh, Hari, Masa, Bilangan Murid** berada di **kanan atas** untuk layout LTR; input guru kosong mesti **kosong tanpa garisan atau placeholder**. Gunakan warna pastel ringan mengikut subjek, susun atur A4 formal dan tajuk Aktiviti 1/2/3 bold pada baris berasingan. Kekalkan EMK/KBAT/PAK21, PBD, pemulihan/pengayaan, refleksi serta **teks SK/SP dan aktiviti daripada sumber disahkan**.
+
+- **Rujukan autoritatif:** [docs/RPH_PREMIUM_STANDARD_20261121.md](docs/RPH_PREMIUM_STANDARD_20261121.md) dan [daftar subjek/format](docs/rph_premium_contract_20261121.json). Syarat ini mesti digunakan untuk **subjek baharu dan subjek yang belum selesai**, bukan sekadar 9 subjek LTR semasa.
+- **Jangan seragam secara paksa:** Sains, DLP, PPKI, PI/Jawi dan Bahasa Arab/RTL mempunyai susun atur diluluskan masing-masing; pelihara tulisan/arah/label khas. Audit Word **dan** PDF secara berasingan. Saiz mm Word dan PDF boleh berbeza mengikut margin, tetapi tepi kotak dalam *setiap* fail wajib sama.
+- **Pintu pelepasan:** PR bagi setiap penjana/keluarga subjek baharu mesti ada contoh output sebenar, semakan A4 dan tepi luar semua jadual, padanan teks Word/PDF/SK/SP, ujian format khas dan bukti deploy serta muat turun sebelum status `LIVE DISAHKAN`. Jangan guna kuota guru untuk ujian tanpa izin. Periksa laluan `selected.source` Web/Telegram secara individu; deploy penjana umum tidak membuktikan setiap sumber telah siap.
+- Perubahan kepada palet/subjek native wajib mendaftar alias dalam kontrak dan lulus ujian `tests/test_rph_premium_contract_20261121.py`. Jika gagal, kekalkan `HOLD` dan rekod di isu #1182, **jangan** longgarkan ujian untuk membenarkan kerosakan format.
+
 ## Templat laporan akhir setiap kerja
 - Bahan/komponen yang diperbaiki
 - Pautan PR + commit
