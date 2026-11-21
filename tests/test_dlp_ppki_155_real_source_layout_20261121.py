@@ -44,6 +44,16 @@ def _check_output(word, pdf, *, label, objective, subject):
         + [c.text for t in doc.tables for row in t.rows for c in row.cells]
     )
     assert objective in full_word, (label, "source objective lost")
+    # Main Activities: existing activity titles must be bold, separate lines;
+    # the teacher/pupil instruction sentences must retain normal font.
+    main_activity = doc.tables[2].rows[2].cells[1].paragraphs[0]
+    parts = main_activity.text.splitlines()
+    title_runs = [run.text for run in main_activity.runs if run.bold and run.text.strip()]
+    assert title_runs, (label, "no bold activity titles")
+    assert all(any(title.strip() == line.strip() for line in parts)
+               for title in title_runs), (label, title_runs)
+    assert any(run.text.strip() and run.bold is not True
+               for run in main_activity.runs), (label, "instructions all bold")
     assert TEACHER["reflection"] in full_word, (label, "teacher reflection lost")
     assert "____" not in doc.tables[0].cell(0, 1).text, label
 
