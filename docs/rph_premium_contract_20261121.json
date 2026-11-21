@@ -70,6 +70,7 @@
     ]
   },
   "required_checks": [
+    "subject_only_once_in_header_no_duplicate_subject_row_in_main_table",
     "a4_page_and_no_content_clipping",
     "equal_left_and_right_outer_edges_on_every_main_box",
     "blank_teacher_metadata_without_lines_or_placeholders",
@@ -100,6 +101,13 @@
   ],
   "workflow_rule": "Every new subject must use the one universal RPH box design, equal outer widths in each file. Only Pendidikan Islam/Jawi and Bahasa Arab/Arab use RTL direction/column reading order, not different geometry. Register subjects, add Word/PDF tests, audit separate Web routes; never force generic LTR adapters on Arabic/Jawi. Short teacher-info panel must be LEFT for normal LTR subjects and RIGHT for Pendidikan Islam/Bahasa Arab RTL, while outer box edges stay aligned.",
   "universal_layout": {
+    "subject_identity": {
+      "display_location": "header_lesson_identity_only",
+      "duplicate_subject_row_in_curriculum_table": false,
+      "applies_to": ["LTR", "RTL"],
+      "preserve_subject_year_topic_from_source": true,
+      "audit_word_and_pdf_per_download_route": true
+    },
     "rule": "ONE_OUTER_BOX_LAYOUT_ALL_SUBJECTS",
     "all_subjects_same_box_design": true,
     "all_subjects_equal_outer_box_width": true,
