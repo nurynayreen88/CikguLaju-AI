@@ -249,17 +249,20 @@ def options():
                     # Prove the live Telegram source is available before resolving
                     # any Web lesson; never fall back silently to a stale copy.
                     shared_subjects = source.list_subjects(year)
-                    # Add the complete 696-PdP PI premium collection alongside the
-                    # existing Telegram PI Unit/Bidang menu; do not replace it.
+                    # Pendidikan Islam remains on its original Telegram
+                    # verified-RPT/Bidang route. The 696 DOCX/PDF archives are
+                    # retained as private references, not a second user choice.
                     if year in range(2, 7) and request.args.get("subject") == "PI":
-                        from web.pi_696_private_bundle import UNIT as PI_PREMIUM_UNIT, pdp_options as pi_696_options
+                        from web.pi_696_private_bundle import UNIT as PI_ARCHIVE_UNIT
+                        if kind == "pdp" and request.args.get("unit") == PI_ARCHIVE_UNIT:
+                            return jsonify({
+                                "error": "Sila pilih semula Bidang Pendidikan Islam.",
+                                "code": "PI_ARCHIVE_OPTION_RETIRED",
+                            }), 400
                         if kind == "units":
-                            original = source.list_units(year, "PI")
-                            if not any(item.get("value") == PI_PREMIUM_UNIT for item in original):
-                                original.append({"value": PI_PREMIUM_UNIT, "label": "Senarai PdP"})
-                            return jsonify(original)
-                        if kind == "pdp" and request.args.get("unit") == PI_PREMIUM_UNIT:
-                            return jsonify(pi_696_options(year))
+                            options = source.list_units(year, "PI")
+                            return jsonify([item for item in options
+                                            if item.get("value") != PI_ARCHIVE_UNIT])
                     if kind == "subjects":
                         items = [
                             {**row, "label": ("Bahasa Inggeris (SK) · KSSR Semakan 2017"
