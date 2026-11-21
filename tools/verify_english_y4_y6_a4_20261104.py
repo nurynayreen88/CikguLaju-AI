@@ -102,7 +102,13 @@ def _measure(doc,pdf,year,lesson):
                   abs(float(x.mediabox.height)-841.89)<1.5 for x in p),
         "source_text":len(_text(doc)),
         "pdf_text":len(extracted),
-        "draft_label":("DRAF" in extracted) if year==6 and lesson in Y6_TEACHER_CHOICES else True,
+        # Source Year6 teacher-choice status was already verified in _build().
+        # The native document removes developer-only DRAF from its title; the
+        # teacher-facing choice notice must survive the Word/PDF conversion.
+        "teacher_choice_notice":(
+            "Teacher-selected:" in extracted and "not fixed by SOW" in extracted
+            and "CADANGAN CIKGULAJU (DRAF)" not in extracted
+        ) if year==6 and lesson in Y6_TEACHER_CHOICES else True,
     }
 
 
@@ -146,7 +152,7 @@ def run(year, lessons=None):
             raise RuntimeError("Text changed in compressed Word")
     raw_one=sum(x["raw"]["pages"]==1 and x["raw"]["a4"] for x in records)
     compact_one=sum(x["compact"]["pages"]==1 and x["compact"]["a4"]
-                    and x["compact"]["draft_label"] for x in records)
+                    and x["compact"]["teacher_choice_notice"] for x in records)
     report={"year":year,"lesson_total":len(nums),"raw_one_page_a4":raw_one,
             "compact_one_page_a4":compact_one,
             "raw_overflows":[x["lesson"] for x in records if x["raw"]["pages"]>1],
