@@ -6,6 +6,7 @@ is in a PRIVATE Storage bucket and never gets a public download URL.
 from __future__ import annotations
 
 from functools import lru_cache
+import os
 from hashlib import sha256
 from io import BytesIO
 from pathlib import Path
@@ -20,9 +21,25 @@ from zipfile import ZipFile, BadZipFile
 UNIT = "RPH Premium 2027"
 YEARS = {2: 112, 3: 147, 4: 151, 5: 143, 6: 143}
 BUCKET = "cikgulaju-materials"
-OBJECT = "rph-premium/pi-2027/v1/696-word-pdf-bundle.zip"
-ZIP_BYTES = 44284495
-ZIP_SHA256 = "e19684776c19479f9d5d77e17d5cfc2eececf1b5c4c0e40828b5d9c9f78709c2"
+ARCHIVES = {
+    "v1": {
+        "object": "rph-premium/pi-2027/v1/696-word-pdf-bundle.zip",
+        "bytes": 44284495,
+        "sha256": "e19684776c19479f9d5d77e17d5cfc2eececf1b5c4c0e40828b5d9c9f78709c2",
+    },
+    "v2": {
+        "object": "rph-premium/pi-2027/v2/696-word-pdf-bundle.zip",
+        "bytes": 49779272,
+        "sha256": "f68807065178f15e2acb4dd25caa7f179cad33a02d186327ec89515c9ae10569",
+    },
+}
+# v2 remains OFF until the new private Storage object exists and is verified.
+# Old v1 remains intact for safe rollback. Never expose a signed Drive URL.
+V2_FLAG = "CIKGULAJU_PI_LOGIN_V2_ENABLED"
+
+
+def _edition():
+    return "v2" if os.environ.get(V2_FLAG, "").strip() == "1" else "v1"
 
 
 class PrivatePIRPHUnavailable(Exception):
@@ -63,18 +80,21 @@ def _settings(config):
     return base, key
 
 
-@lru_cache(maxsize=1)
-def _verified_zip(base, key):
-    url = f"{base}/storage/v1/object/authenticated/{BUCKET}/{OBJECT}"
+@lru_cache(maxsize=2)
+def _verified_zip(base, key, edition):
+    if edition not in ARCHIVES:
+        raise PrivatePIRPHUnavailable("Unsupported private archive edition")
+    source = ARCHIVES[edition]
+    url = f"{base}/storage/v1/object/authenticated/{BUCKET}/{source['object']}"
     headers = {"Authorization": "Bearer " + key, "apikey": key, "Accept": "application/zip"}
     try:
         with urlopen(Request(url, headers=headers, method="GET"), timeout=45) as response:
             if response.status != 200:
                 raise PrivatePIRPHUnavailable("Private archive unavailable")
-            content = response.read(ZIP_BYTES + 1)
+            content = response.read(source["bytes"] + 1)
     except OSError as exc:
         raise PrivatePIRPHUnavailable("Private archive unavailable") from exc
-    if len(content) != ZIP_BYTES or sha256(content).hexdigest() != ZIP_SHA256:
+    if len(content) != source["bytes"] or sha256(content).hexdigest() != source["sha256"]:
         raise PrivatePIRPHUnavailable("Private archive integrity mismatch")
     try:
         archive = ZipFile(BytesIO(content))
@@ -87,7 +107,7 @@ def _verified_zip(base, key):
 
 def _file(year, n, fmt, config):
     base, key = _settings(config)
-    archive = _verified_zip(base, key)
+    archive = _verified_zip(base, key, _edition())
     if fmt not in ("word", "pdf"):
         raise ValueError("Unsupported format")
     extension = "pdf" if fmt == "pdf" else "docx"
@@ -132,10 +152,22 @@ def _personalize_word(data, teacher):
     if not document.tables or len(document.tables[0].columns) != 2:
         raise PrivatePIRPHUnavailable("Teacher panel unavailable")
     cell = document.tables[0].cell(0, 1)
-    if len(cell.paragraphs) < 4:
-        raise PrivatePIRPHUnavailable("Teacher panel incomplete")
     values = [str(teacher.get(k) or "").strip() for k in ("class", "date", "time", "students")]
-    for paragraph, value in zip(cell.paragraphs[:4], values):
+    if cell.tables:
+        # Approved login example: title + LEFT teacher grid, four labeled
+        # rows, each with a genuinely empty value cell. Never append to labels.
+        grid = cell.tables[0]
+        if len(grid.rows) != 4 or len(grid.columns) != 2:
+            raise PrivatePIRPHUnavailable("Approved teacher grid incomplete")
+        targets = [row.cells[1].paragraphs[0] for row in grid.rows]
+        if any(row.cells[1].text.strip() for row in grid.rows):
+            raise PrivatePIRPHUnavailable("Original teacher values are not blank")
+    else:
+        # Existing v1 RPH teacher labels and values share four paragraphs.
+        if len(cell.paragraphs) < 4:
+            raise PrivatePIRPHUnavailable("Teacher panel incomplete")
+        targets = list(cell.paragraphs[:4])
+    for paragraph, value in zip(targets, values):
         if value:
             paragraph.add_run(_rtl_safe_value(value)).font.name = "Amiri"
             paragraph.alignment = WD_ALIGN_PARAGRAPH.RIGHT
@@ -186,7 +218,8 @@ def request_private_document(year, lesson, fmt, teacher, config):
         return BytesIO(_file(year, n, fmt, config))
     if fmt == "pdf":
         # Preserve original PDF geometry; only fill its existing blank cells.
-        return BytesIO(_fill_pdf_fields(_file(year, n, "pdf", config), teacher))
+        return BytesIO(_fill_pdf_fields(
+            _file(year, n, "pdf", config), teacher, edition=_edition()))
     word = _personalize_word(_file(year, n, "word", config), teacher)
     return BytesIO(word)
 
@@ -249,8 +282,8 @@ def _draw_shaped_jawi(page, rect, value):
             page.show_pdf_page(page.rect, extra, 0, overlay=True)
 
 
-def _fill_pdf_fields(data, teacher):
-    """Fill only empty header/reflection panels of the original one-page PDF."""
+def _fill_pdf_fields(data, teacher, *, edition="v1"):
+    """Fill only existing blank boxes; v1 and owner-approved v2 differ."""
     try:
         import fitz
         document = fitz.open(stream=data, filetype="pdf")
@@ -260,8 +293,16 @@ def _fill_pdf_fields(data, teacher):
         for index, value in enumerate(values):
             if not value:
                 continue
-            top = 24 + (20.7 * index)
-            rect = fitz.Rect(91, top, 213, top + 17)
+            if edition == "v2":
+                # Approved RTL header: original Jawi labels are on the RIGHT.
+                # Place only in the empty value cells at the LEFT.
+                top = 33 + (20.2 * index)
+                rect = fitz.Rect(39, top, 126, top + 16)
+            elif edition == "v1":
+                top = 24 + (20.7 * index)
+                rect = fitz.Rect(91, top, 213, top + 17)
+            else:
+                raise PrivatePIRPHUnavailable("Unsupported PDF template edition")
             if _is_jawi(value):
                 _draw_shaped_jawi(page, rect, value)
             elif page.insert_textbox(rect, value, fontsize=9, fontname="helv") < 0:
