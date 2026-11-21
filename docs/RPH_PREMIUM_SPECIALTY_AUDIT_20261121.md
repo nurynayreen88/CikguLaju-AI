@@ -22,6 +22,12 @@ Penjejakan utama: [Isu #1182](https://github.com/nurynayreen88/CikguLaju-AI/issu
 - **Pintu penerimaan seterusnya:** bukti visual Word/PDF RPH sebenar bagi PI/Jawi, Sains, DLP/PPKI dan laluan Web khusus; padanan kandungan SK/SP, aktiviti serta lebar luar; akhir sekali klik muat turun dengan akaun guru tanpa menggunakan kuota untuk QA.
 - **Pemisahan status:** kod gabung GitHub, deploy Render dan fail dimuat turun pengguna ialah tiga peringkat berasingan. Rekod di sini tidak mengisytiharkan semua subjek SIAP.
 
+## Tambahan audit 21 November 2026 — semakan garisan fizikal PI/Jawi
+
+- PR [#1212](https://github.com/nurynayreen88/CikguLaju-AI/pull/1212), merged `b436e03eb1d2186944168a4dcfdd9102cb0a4567`: alat `tools/audit_pi_jawi_pdf.py` boleh membaca garisan vektor PDF dan mengesan tepi kotak yang lari, termasuk kepala RTL yang dilukis sebagai segmen. Workflow `pi-jawi-pdf-audit` lulus.
+- Hasil `grid_alignment.status` ialah `ALIGNED`, `MISALIGNED` atau `NOT_ASSESSED`; alat **tidak** menganggap PDF imej / tanpa garisan vektor sebagai lulus. Jalankan `python tools/audit_pi_jawi_pdf.py /path/to/rph.pdf --require-aligned-grid` untuk QA ketat. Status `structural_pass` lama sengaja kekal dan **tidak** membuktikan kotak sejajar.
+- Ujian CI menggunakan fixture PDF sintetik, bukan dokumen PDF Pendidikan Islam yang dimuat turun oleh guru. **Sumber sebenar, glyph Jawi dan sambungan Web/Telegram masih memerlukan audit**. Keputusan geometri sahaja tidak boleh diberi label `LIVE DISAHKAN`.
+
 ## Peraturan audit seterusnya
 
 1. **SATU REKA BENTUK KOTAK UNTUK SEMUA SUBJEK:** Semua kotak luar mesti sama lebar dan sejajar dalam setiap RPH. **Hanya Pendidikan Islam/Jawi dan Bahasa Arab/Arab menggunakan RTL** (arah label, penjajaran dan susunan kolum); **bukan** bentuk atau ukuran bingkai berbeza. Sains, DLP, PPKI dan subjek lain kekal LTR. Jangan paksa lajur dalaman sama lebar jika fungsinya berlainan.
