@@ -893,3 +893,15 @@ except Exception as _reference_pdf_style_exc:
     RPH_REFERENCE_PDF_STYLE_ACTIVE = False
     print("RPH reference PDF style unavailable:",
           type(_reference_pdf_style_exc).__name__, flush=True)
+
+
+# Fix English teaching-method names in the ORIGINAL Pendidikan Islam Jawi RPH.
+# Scope: PI native text only, including Web-through-Telegram Word/PDF.
+# SK, SP, curriculum DB and the native RTL Word/PDF templates stay untouched.
+try:
+    from web.pi_jawi_english_terms_20261122 import install as install_pi_jawi_terms
+    PI_JAWI_ENGLISH_TERMS_ACTIVE = bool(install_pi_jawi_terms(telegram_runtime))
+except Exception as _pi_term_exc:
+    PI_JAWI_ENGLISH_TERMS_ACTIVE = False
+    print("PI Jawi teaching terminology fix unavailable:",
+          type(_pi_term_exc).__name__, flush=True)
