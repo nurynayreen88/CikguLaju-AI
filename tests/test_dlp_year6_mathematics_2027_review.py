@@ -15,6 +15,7 @@ from flask import Flask
 from pypdf import PdfReader
 
 from dlp_year2_rph import mathematics_standard_rows
+from web.rph_premium_readback_20261121 import premium_rph_details
 from staging.dlp.year6.render_mathematics import DATA, RPT, RPT_NAME, export, load_plans, official_rows
 from web.native_rph_telegram_api import create_native_rph_blueprint
 
@@ -57,7 +58,7 @@ class MathematicsDLPYear6ReviewTests(unittest.TestCase):
                 section = word.sections[0]
                 self.assertAlmostEqual(section.page_width.mm, 210, places=1)
                 self.assertAlmostEqual(section.page_height.mm, 297, places=1)
-                details = {row.cells[0].text: row.cells[1].text for row in word.tables[0].rows}
+                details = premium_rph_details(word)
                 self.assertEqual(details["Topic"], plan["title"])
                 self.assertEqual(details["Lesson / PdP"], plan["label"].rsplit(" · ", 1)[0])
                 self.assertNotIn("RPT date ranges", details)
@@ -67,10 +68,10 @@ class MathematicsDLPYear6ReviewTests(unittest.TestCase):
                 for label, key in (("Book reference", "reference"),
                                    ("Learning objective", "objective")):
                     self.assertEqual(details[label], plan[key])
-                self.assertEqual(word.tables[2].rows[0].cells[1].text, plan["evidence"])
+                self.assertEqual(word.tables[3].rows[0].cells[1].text, plan["evidence"])
                 self.assertEqual(sum(int(phase.split()[-2]) for phase, *_ in plan["phases"]),
                                  plan["minutes"])
-                table = word.tables[1]
+                table = word.tables[2]
                 self.assertEqual(len(table.rows), 4)
                 activities = "\n".join(row.cells[1].text for row in table.rows[1:])
                 for _, teacher, pupils in plan["phases"]:
@@ -145,12 +146,12 @@ class MathematicsDLPYear6DownloadTests(unittest.TestCase):
                         self.assertIn(f"CIKGULAJU_RPH_{key}.{suffix}", response.headers["Content-Disposition"])
                         if fmt == "word":
                             doc = Document(BytesIO(response.data))
-                            details = {a.text: b.text for a, b in (row.cells for row in doc.tables[0].rows)}
+                            details = premium_rph_details(doc)
                             self.assertEqual(details["Topic"], plan["title"])
                             for label, description in standards:
                                 self.assertEqual(details[label], description)
-                            self.assertEqual(doc.tables[2].rows[0].cells[1].text, plan["evidence"])
-                            self.assertEqual(doc.tables[2].rows[1].cells[1].text, self.teacher["reflection"])
+                            self.assertEqual(doc.tables[3].rows[0].cells[1].text, plan["evidence"])
+                            self.assertEqual(doc.tables[3].rows[1].cells[1].text, self.teacher["reflection"])
                             text = " ".join(details.values())
                         else:
                             pdf = PdfReader(BytesIO(response.data))

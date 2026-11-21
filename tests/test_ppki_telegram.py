@@ -7,6 +7,7 @@ from unittest.mock import patch
 from docx import Document
 from flask import Flask
 from pypdf import PdfReader
+from web.rph_premium_readback_20261121 import premium_rph_details
 
 from curriculum_version_telegram import install
 from rpt_2027.english.telegram_downloads import install as install_rpt
@@ -331,7 +332,12 @@ class PpkiApiTest(unittest.TestCase):
                         if unit == UNIT:
                             self.assertIn("Kebersihan Diri", doc.pages[0].extract_text())
                     else:
-                        self.assertEqual(len(Document(BytesIO(result.data)).tables), 3)
+                        word = Document(BytesIO(result.data))
+                        self.assertEqual(len(word.tables), 4)
+                        fields = premium_rph_details(word)
+                        self.assertIn("Standard Kandungan", fields)
+                        self.assertIn("Standard Pembelajaran", fields)
+                        self.assertEqual(fields["Kelas"], "")
             result = client.get(prefix + "/rpt.pdf?year=4", headers=headers)
             self.assertEqual(result.status_code, 200)
             rpt = PdfReader(BytesIO(result.data))
@@ -382,7 +388,12 @@ class PpkiApiTest(unittest.TestCase):
                             self.assertEqual(len(pages), 1, (key, number))
                             self.assertIn(label, pages[0].extract_text())
                         else:
-                            self.assertEqual(len(Document(BytesIO(result.data)).tables), 3)
+                            word = Document(BytesIO(result.data))
+                            self.assertEqual(len(word.tables), 4)
+                            fields = premium_rph_details(word)
+                            self.assertIn("Standard Kandungan", fields)
+                            self.assertIn("Standard Pembelajaran", fields)
+                            self.assertEqual(fields["Kelas"], "")
             result = client.get(prefix + "/rpt-manipulatif.pdf?year=4", headers=headers)
             self.assertEqual(result.status_code, 200)
             self.assertIn("KEMAHIRAN_MANIPULATIF_TAHUN_4", result.headers["Content-Disposition"])
@@ -434,7 +445,12 @@ class PpkiApiTest(unittest.TestCase):
                             self.assertEqual(len(pages), 1)
                             self.assertIn(title, pages[0].extract_text())
                         else:
-                            self.assertEqual(len(Document(BytesIO(result.data)).tables), 3)
+                            word = Document(BytesIO(result.data))
+                            self.assertEqual(len(word.tables), 4)
+                            fields = premium_rph_details(word)
+                            self.assertIn("Standard Kandungan", fields)
+                            self.assertIn("Standard Pembelajaran", fields)
+                            self.assertEqual(fields["Kelas"], "")
             bad = client.post(prefix + "/render", headers=headers, json={
                 "selection": {"year": 5, "subject": SUBJECT, "unit": UNIT1, "lesson": "041"},
                 "teacher": {}, "format": "pdf",

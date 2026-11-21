@@ -1,0 +1,55 @@
+name: RPH premium DLP PPKI and future format guard
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "dlp_year2_rph.py"
+      - "web/native_rph_telegram_api.py"
+      - "tests/test_telegram_sk_rph_2027_menu.py"
+      - "tests/test_ppki_telegram.py"
+      - "tests/test_rph_supporting_fields_20261121.py"
+      - "web/rph_premium_readback_20261121.py"
+      - "tests/test_rph_premium_dlp_ppki_20261121.py"
+      - "tests/test_curriculum_version_dlp_download.py"
+      - "tests/test_curriculum_version_dlp_science_year3.py"
+      - "tests/test_dlp_mathematics_year3_review.py"
+      - "tests/test_dlp_year4_science_review.py"
+      - "tests/test_dlp_year5_review_exports.py"
+      - "tests/test_dlp_year6_mathematics_2027_review.py"
+      - "docs/RPH_PREMIUM_STANDARD_20261121.md"
+      - "docs/RPH_PREMIUM_SPECIALTY_AUDIT_20261121.md"
+      - "docs/rph_premium_contract_20261121.json"
+      - "AGENTS.md"
+      - ".github/workflows/rph-premium-dlp-ppki-guard-20261121.yml"
+  push:
+    branches: [main]
+    paths:
+      - "dlp_year2_rph.py"
+      - "web/native_rph_telegram_api.py"
+      - "tests/test_telegram_sk_rph_2027_menu.py"
+      - "tests/test_ppki_telegram.py"
+      - "tests/test_rph_supporting_fields_20261121.py"
+      - "web/rph_premium_readback_20261121.py"
+      - "tests/test_rph_premium_dlp_ppki_20261121.py"
+jobs:
+  render-real-dlp-ppki:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install real RPH document dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install python-docx pypdf reportlab flask pytest
+      - name: Generate real Word/PDF and validate premium geometry
+        run: |
+          python -m pytest -q tests/test_rph_premium_dlp_ppki_20261121.py
+      - name: DLP native Year 2 and Year 3 API and source regressions
+        run: |
+          python -m pytest -q tests/test_curriculum_version_dlp_download.py tests/test_curriculum_version_dlp_science_year3.py tests/test_dlp_mathematics_year3_review.py
+      - name: Check all DLP Year 5 and Year 6 source/format parity
+        run: |
+          python -m pytest -q tests/test_dlp_year5_review_exports.py tests/test_dlp_year6_mathematics_2027_review.py

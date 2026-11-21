@@ -13,6 +13,7 @@ from flask import Flask
 from pypdf import PdfReader
 
 from dlp_year2_rph import catalog, render, resolve, rpt_lessons, science_rpt_lessons
+from web.rph_premium_readback_20261121 import premium_rph_details
 from staging.dlp.year2.downloads import BY_SUBJECT
 from web.native_rph_telegram_api import create_native_rph_blueprint
 
@@ -63,8 +64,8 @@ class DlpDownloadTests(unittest.TestCase):
         self.assertIn('attachment; filename="CIKGULAJU_RPH_DLP-SCI-Y2-U10-06.docx"',
                       word.headers["Content-Disposition"])
         doc = Document(BytesIO(word.data))
-        self.assertEqual(doc.paragraphs[2].text, "Explain Observations About a Built Model")
-        fields = {left.text: right.text for left, right in (row.cells for row in doc.tables[0].rows)}
+        self.assertEqual(doc.tables[0].cell(0, 0).paragraphs[2].text, "Explain Observations About a Built Model")
+        fields = premium_rph_details(doc)
         self.assertEqual([fields[label] for label in ("Date", "Time", "Class", "Number of pupils")],
                          [self.teacher[key] for key in ("date", "time", "class", "students")])
         self.assertNotIn("Class / date / time", fields)
@@ -72,7 +73,7 @@ class DlpDownloadTests(unittest.TestCase):
         self.assertEqual(fields["Learning Standards"],
                          "10.1.6 Explain observations about a finished structure using drawings, digital tools, writing or speech")
         self.assertEqual(doc.tables[-1].cell(0, 1).text, self.teacher["reflection"])
-        self.assertEqual(len(doc.tables[1].rows), 4)
+        self.assertEqual(len(doc.tables[2].rows), 4)
         pdf = self.download("pdf")
         self.assertEqual(pdf.status_code, 200)
         self.assertEqual(pdf.mimetype, "application/pdf")
@@ -80,7 +81,7 @@ class DlpDownloadTests(unittest.TestCase):
         self.assertEqual(pdf.headers["Cache-Control"], "no-store, private")
         pdf_text = " ".join(PdfReader(BytesIO(pdf.data)).pages[0].extract_text().split())
         for label in ("Date", "Time", "Class", "Number of pupils"):
-            self.assertIn(f"{label} {fields[label]}", pdf_text)
+            self.assertIn(f"{label}: {fields[label]}", pdf_text)
         self.assertEqual(self.download("pdf", teacher=self.teacher | {"class": "X" * 41}).status_code, 400)
         self.assertEqual(self.download("pdf", teacher=self.teacher | {"reflection": "x\ny\nz\n1\n2\n3\n4"}).status_code, 400)
         self.assertEqual(self.client.post(self.path + "/render", json={}).status_code, 401)
@@ -97,12 +98,13 @@ class DlpDownloadTests(unittest.TestCase):
                 word = self.download("word", selection, teacher)
                 self.assertEqual(word.status_code, 200)
                 doc = Document(BytesIO(word.data))
-                fields = {left.text: right.text for left, right in (row.cells for row in doc.tables[0].rows)}
+                fields = premium_rph_details(doc)
                 self.assertEqual({key: fields[key] for key in labels}, dict.fromkeys(labels, ""))
                 pdf = self.download("pdf", selection, teacher)
                 self.assertEqual(pdf.status_code, 200)
                 text = " ".join(PdfReader(BytesIO(pdf.data)).pages[0].extract_text().split())
-                self.assertIn(" ".join(labels), text)
+                for name in labels:
+                    self.assertIn(name + ":", text)
 
     def test_science_lesson_numbers_standards_and_minutes_match_the_rpt(self):
         planned = Path(__file__).resolve().parents[1] / "rpt_2027" / "dlp"
@@ -125,9 +127,9 @@ class DlpDownloadTests(unittest.TestCase):
                               .replace("\n", " · "))
                 self.assertEqual(references, lesson["references"])
                 word = Document(BytesIO(render("SCIENCE_DLP", unit, lesson, "word", self.teacher)))
-                self.assertEqual(word.tables[0].cell(1, 1).text, f"Lesson {number:02d}")
+                self.assertEqual(word.tables[1].cell(1, 1).text, f"Lesson {number:02d}")
                 self.assertEqual(science_rpt_lessons()[lesson["id"]]["minutes"], minutes)
-                activities = "\n".join(row.cells[1].text for row in word.tables[1].rows[1:])
+                activities = "\n".join(row.cells[1].text for row in word.tables[2].rows[1:])
                 for _, teacher_action, pupil_action in lesson["phases"]:
                     self.assertIn(f"Teacher: {teacher_action}\nPupils: {pupil_action}", activities)
 
@@ -147,7 +149,7 @@ class DlpDownloadTests(unittest.TestCase):
                 self.assertEqual(row.cells[4].text, references.replace(" · ", "\n") + "\n60 min")
                 self.assertEqual(schedule[lesson["id"]], {"number": number, "minutes": 60})
                 doc = Document(BytesIO(render("MATH_DLP", unit, lesson, "word", self.teacher)))
-                fields = {a.text: b.text for a, b in (row.cells for row in doc.tables[0].rows)}
+                fields = premium_rph_details(doc)
                 self.assertEqual(fields["Lesson / PdP"], f"Lesson {number:02d}")
                 if lesson["id"] == "DLP-MAT-Y2-U01-07":
                     self.assertEqual(fields["Learning Standards"],
@@ -174,7 +176,7 @@ class DlpDownloadTests(unittest.TestCase):
                         word = self.download("word", selection=selection)
                         self.assertEqual(word.status_code, 200)
                         doc = Document(BytesIO(word.data))
-                        fields = {a.text: b.text for a, b in (row.cells for row in doc.tables[0].rows)}
+                        fields = premium_rph_details(doc)
                         self.assertEqual(fields["Class"], self.teacher["class"])
                         self.assertEqual(fields["Learning objective"], plan["objective"])
                         self.assertNotIn("RPT 2027 dates", fields)
@@ -182,7 +184,7 @@ class DlpDownloadTests(unittest.TestCase):
                         shading = doc.tables[0].cell(0, 0)._tc.tcPr.find(qn("w:shd"))
                         self.assertEqual(shading.get(qn("w:fill")), fill)
                         self.assertEqual(fields["Lesson / PdP"], item["label"])
-                        table = doc.tables[1]
+                        table = doc.tables[2]
                         self.assertEqual(len(table.rows), 4)
                         self.assertEqual([cell.text for cell in table.rows[0].cells],
                                          ["Phase", "Teaching and Learning Activities", "Notes"])

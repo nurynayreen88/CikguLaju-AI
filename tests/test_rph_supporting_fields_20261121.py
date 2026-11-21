@@ -58,7 +58,7 @@ def test_derived_fields_preserve_evidence_and_reflection(heading):
 
 
 @pytest.mark.parametrize("heading", SAMPLES)
-def test_actual_renderers_keep_three_tables_and_a4(heading):
+def test_actual_renderers_keep_four_aligned_tables_and_a4(heading):
     for renderer in (_word, _pdf):
         out = BytesIO()
         english = heading[0] == "Daily Lesson Plan"
@@ -68,10 +68,10 @@ def test_actual_renderers_keep_three_tables_and_a4(heading):
         raw = out.getvalue()
         if renderer is _word:
             doc = Document(BytesIO(raw))
-            assert len(doc.tables) == 3
-            assert doc.tables[2].cell(0, 1).text == FOOTER[0][1]
-            assert doc.tables[2].cell(1, 1).text == FOOTER[1][1]
-            cells = "\n".join(cell.text for row in doc.tables[0].rows for cell in row.cells)
+            assert len(doc.tables) == 4
+            assert doc.tables[3].cell(0, 1).text == FOOTER[0][1]
+            assert doc.tables[3].cell(1, 1).text == FOOTER[1][1]
+            cells = "\n".join(cell.text for row in doc.tables[1].rows for cell in row.cells)
             for term in (("EMK", "PAK21", "KBAT", "Pemulihan", "Pengayaan") if not english
                          else ("Cross-curricular", "21st-century", "Higher-order", "Remedial", "Enrichment")):
                 assert term.casefold() in cells.casefold()
@@ -114,9 +114,9 @@ def test_real_ppki_catalogue_renders_without_replacing_support():
     teacher = {"class": "", "date": "", "time": "", "students": "", "reflection": ""}
     data = render_lesson(catalogue, lesson, "docx", teacher)
     doc = Document(BytesIO(data))
-    assert len(doc.tables) == 3
-    content = "\n".join(cell.text for row in doc.tables[0].rows for cell in row.cells)
-    footer = "\n".join(cell.text for row in doc.tables[2].rows for cell in row.cells)
+    assert len(doc.tables) == 4
+    content = "\n".join(cell.text for row in doc.tables[1].rows for cell in row.cells)
+    footer = "\n".join(cell.text for row in doc.tables[3].rows for cell in row.cells)
     assert "EMK" in content and "PAK21" in content
     assert "Pemulihan" in content and "Pengayaan" in content
     assert "Sokongan" in footer and lesson["support"] in footer
@@ -125,15 +125,15 @@ def test_real_ppki_catalogue_renders_without_replacing_support():
     assert len(PdfReader(BytesIO(pdf)).pages) == 1
 
 
-def test_real_science_dlp_year2_keeps_three_tables_and_a4():
+def test_real_science_dlp_year2_keeps_four_tables_and_a4():
     from dlp_year2_rph import catalog, render
     units = catalog()["SCIENCE_DLP"]
     first = units[0]["lessons"][0]
     teacher = {"class": "", "date": "", "time": "", "students": "", "reflection": ""}
     word = render("SCIENCE_DLP", units[0], first, "word", teacher)
     doc = Document(BytesIO(word))
-    assert len(doc.tables) == 3
-    fields = "\n".join(cell.text for row in doc.tables[0].rows for cell in row.cells)
+    assert len(doc.tables) == 4
+    fields = "\n".join(cell.text for row in doc.tables[1].rows for cell in row.cells)
     assert "21st-century" in fields and "Remedial" in fields and "Enrichment" in fields
     pdf = render("SCIENCE_DLP", units[0], first, "pdf", teacher)
     assert len(PdfReader(BytesIO(pdf)).pages) == 1
@@ -144,7 +144,7 @@ def test_real_science_dlp_year2_keeps_three_tables_and_a4():
 def test_dlp_sains_matematik_ppki_all_outer_boxes_are_equal_width_a4(heading):
     """Owner's permanent rule: physical 182 mm grid in each specialty layout.
 
-    This checks actual Word/PDF renderers, not a source-code constant alone.
+    This checks actual Word/PDF renderers and four aligned tables, not a source-code constant alone.
     The content and existing RTL/subject-specific procedures are untouched.
     """
     import fitz
@@ -155,7 +155,7 @@ def test_dlp_sains_matematik_ppki_all_outer_boxes_are_equal_width_a4(heading):
     _word(word, heading, DETAILS, ACTIVITIES, FOOTER,
           mathematics=is_math, teacher=teacher)
     doc = Document(BytesIO(word.getvalue()))
-    assert len(doc.tables) == 3
+    assert len(doc.tables) == 4
     physical_widths = [sum(column.width.mm for column in table.columns)
                        for table in doc.tables]
     assert all(abs(width - 182) < .8 for width in physical_widths), (
@@ -207,6 +207,6 @@ def test_real_ppki_and_dlp_year2_word_table_outer_edges_stay_182mm():
         doc = Document(BytesIO(payload))
         widths = [sum(column.width.mm for column in table.columns)
                   for table in doc.tables]
-        assert len(widths) == 3, (label, len(widths))
+        assert len(widths) == 4, (label, len(widths))
         assert max(widths)-min(widths) < .4, (label, widths)
         assert all(abs(width-182)<.8 for width in widths), (label, widths)

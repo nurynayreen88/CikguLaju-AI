@@ -43,6 +43,13 @@ Dokumen ini ialah kontrak reka bentuk dan penerimaan RPH Word/PDF CikguLaju, **b
 - **Laluan Web alternatif:** berbeza mengikut `selected.source` (BM native, verified RPT master, Sejarah/RBT, sequence, English integrated, PPKI, SJKC/SJKT, provisional). Audit per-laluan **BELUM LENGKAP**; jangan guna label SIAP berdasarkan ujian penjana umum.
 - Pusat penjejakan baki: GitHub issue **#1182**. Rekod status selepas setiap fasa dalam `docs/LOG_KEMASKINI_BAHAN.md`.
 
+## Keperluan pematuhan untuk setiap penjana baharu
+
+1. Daftarkan laluan `Tahun → Subjek → Lesson/PdP → Word/PDF` termasuk bahasa/direction; identiti subjek sekali di kepala, guru di kanan bagi LTR dan kiri bagi PI/BA RTL.
+2. Beri ujian fail sumber **dan** fail sebenar (bukan hanya menguji fail HTML contoh). Untuk DLP/PPKI bersama, gunakan `web/rph_premium_readback_20261121.py`; jika struktur empat kotak tidak dipenuhi, jadikan kegagalan ujian sebagai status HOLD, bukan membuat perubahan automatik membuta tuli.
+3. Semak garis luar kiri/kanan pada A4, ketiadaan placeholder kelas/tarikh/masa, warna pastel, aktiviti lengkap dan teks SK/SP serta refleksi tanpa pengguguran.
+4. Laluan lain seperti Sains native, RPH PI PDF, Bahasa Arab DRAF/PDF, PPKI komponen lain dan SJKC/SJKT mesti diuji secara berasingan. Jangan menandakan semua sebagai seragam berdasarkan pembina DLP atau sembilan subjek biasa sahaja.
+
 ## 5. Peraturan masa depan
 
 **Tidak boleh merendahkan piawaian ini apabila menambah subjek/tahun baharu.** Jika subjek baharu menggunakan template lain, templat itu perlu memenuhi *hasil visual dan kandungan* yang sama dengan cara selamat untuk bahasa/formatnya sendiri. Simpan dalam PR + CI + matriks audit sebelum penerbitan; jangan buat full replace atau operasi pukal yang berisiko pada RPH sedia ada.
