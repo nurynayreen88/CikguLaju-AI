@@ -34,13 +34,52 @@ def eligible_rph(state):
     return bool(subject) and not any(x in subject for x in SKIP_SUBJECTS)
 
 
+_INSTRUCTION_PREFIX = re.compile(
+    r"^([ \t]*(?:(?:\d{1,2})[.)][ \t]*)?"
+    r"(?:Aktiviti|Activity)[ \t]+[1-9]\d{0,2}"
+    r"(?:[ \t]*\([ \t]*[1-9]\d{0,2}[ \t]*(?:minit|minutes?|mins?)[ \t]*\))?"
+    r"[ \t]*(?:[:：]|[–—-]))([ \t]*)(.+)$",
+    re.IGNORECASE,
+)
+_TEACHER_OR_PUPIL = re.compile(
+    r"^(?:guru|murid|teacher|pupil|pupils|student|students)\b", re.IGNORECASE,
+)
+
+
+def _inline_instruction(line):
+    """Find existing numbered label plus an INSTRUCTION, not a short title.
+
+    This creates a presentation-only line break after the heading label.
+    The original characters remain in their original order, and undoing that
+    new break restores the original source line byte-for-byte.
+    """
+    match = _INSTRUCTION_PREFIX.fullmatch(line)
+    if not match:
+        return None
+    body = match.group(3)
+    if not (
+        _TEACHER_OR_PUPIL.match(body)
+        or (body.endswith((".", "!", "?")) and len(body.split()) >= 5)
+    ):
+        return None
+    return match.group(1), match.group(2) + body
+
+
 def _segments(raw):
-    # Keep original whitespace and all line breaks (including blank lines).
-    lines = raw.split("\n")
-    for i, line in enumerate(lines):
+    # Keep every original text character. Only add a visual break to separate
+    # "Aktiviti 1: Guru..." into bold heading and ordinary body instruction.
+    for i, line in enumerate(raw.split("\n")):
         if i:
             yield "\n", False
-        yield line, bool(HEADING.match(line))
+        inline = _inline_instruction(line)
+        if inline:
+            yield inline[0], True
+            yield "\n", False
+            yield inline[1], False
+        else:
+            yield line, bool(HEADING.match(line))
+
+
 
 
 def bold_activity_headings_in_docx(path):
@@ -82,7 +121,7 @@ def bold_activity_headings_in_docx(path):
                         run.bold = True
                         updated += 1
                 paragraph._p.remove(original._r)
-                if paragraph.text != raw:
+                if paragraph.text != raw and paragraph.text.replace("\n", "") != raw.replace("\n", ""):
                     raise ValueError("RPH activity styling changed the content")
     if updated:
         # Save atomically; never leave a half-written RPH if ZIP saving fails.
@@ -108,7 +147,19 @@ def bold_pdf_heading_markup(raw_text, legacy_markup):
         return legacy_markup
     result = []
     for line, existing in zip(lines, old_parts):
-        if HEADING.match(line) and not existing.lstrip().startswith("<b>"):
+        inline = _inline_instruction(line)
+        if inline:
+            plain = html.escape(line)
+            # Only rebuild safe literal source markup, never modify markup
+            # containing unrelated formatting, links or curriculum metadata.
+            if existing in (plain, "<b>" + plain + "</b>"):
+                result.append(
+                    "<b>" + html.escape(inline[0]) + "</b><br/>"
+                    + html.escape(inline[1])
+                )
+            else:
+                result.append(existing)
+        elif HEADING.match(line) and not existing.lstrip().startswith("<b>"):
             result.append("<b>" + html.escape(line) + "</b>")
         else:
             result.append(existing)
