@@ -207,7 +207,7 @@ def test_native_pdf_activity_title_bold_preserves_real_paragraph_text(tmp_path):
     """The pre-render PDF story must preserve all source instruction wording."""
     from web.rph_native_pdf_header_20261121 import premium_pdf_story
 
-    for subject in ("Bahasa Melayu", "English", "Matematik"):
+    for subject in SUBJECTS:
         story = fixture(subject)
         activities = story[4]
         row = activities._cellvalues[2]
@@ -239,3 +239,14 @@ def test_native_pdf_activity_title_bold_preserves_real_paragraph_text(tmp_path):
             content = " ".join(p.get_text() for p in pdf)
         assert heading + " 1" in content
         assert "Guru menerangkan dengan jelas" in content
+        # Confirm the final PDF uses a bold font only for the three headings.
+        with fitz.open(str(pdf_path)) as inspected:
+            spans = [span for block in inspected[0].get_text("dict")["blocks"]
+                     for line in block.get("lines", []) for span in line["spans"]]
+        for n in (1, 2, 3):
+            assert any(f"{heading} {n} -" in span["text"]
+                       and "Bold" in span["font"] for span in spans), (subject, n)
+        for sentence in ("Guru menerangkan dengan jelas",
+                         "Murid menyiapkan latihan", "Guru menyemak jawapan"):
+            assert any(sentence in span["text"]
+                       and "Bold" not in span["font"] for span in spans), (subject, sentence)
