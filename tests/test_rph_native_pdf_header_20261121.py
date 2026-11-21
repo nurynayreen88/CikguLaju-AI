@@ -201,3 +201,41 @@ def test_source_app_uses_native_pdf_story_only_at_one_rph_build_site():
     where = source.index(needle)
     assert "story.append(tt)" in source[where - 380:where]
     assert "pdf.build(story,onFirstPage=_hf,onLaterPages=_hf)" in source[where:where + 450]
+
+
+def test_native_pdf_activity_title_bold_preserves_real_paragraph_text(tmp_path):
+    """The pre-render PDF story must preserve all source instruction wording."""
+    from web.rph_native_pdf_header_20261121 import premium_pdf_story
+
+    for subject in ("Bahasa Melayu", "English", "Matematik"):
+        story = fixture(subject)
+        activities = story[4]
+        row = activities._cellvalues[2]
+        heading = "Activity" if subject == "English" else "Aktiviti"
+        old = row[1]
+        row[1] = Paragraph(
+            f"{heading} 1 - Membaca dan mengenal pasti<br/>"
+            "Guru menerangkan dengan jelas.<br/>"
+            f"{heading} 2 - Perbincangan kumpulan<br/>"
+            "Murid menyiapkan latihan.<br/>"
+            f"{heading} 3 - Pentaksiran individu<br/>"
+            "Guru menyemak jawapan.",
+            old.style,
+        )
+        unchanged_text = row[1].getPlainText()
+        updated = premium_pdf_story({"task": "rph", "subject": subject}, story)
+        actual = updated[4]._cellvalues[2][1]
+        assert actual.getPlainText() == unchanged_text
+        for n in (1, 2, 3):
+            assert f"<b>{heading} {n} -" in actual.text
+        assert "<b>Guru menerangkan" not in actual.text
+        assert "<b>Murid menyiapkan" not in actual.text
+        assert "<b>Guru menyemak" not in actual.text
+        pdf_path = tmp_path / (subject.replace(" ", "_") + "_titles.pdf")
+        _pdf(updated, pdf_path)
+        import fitz
+        with fitz.open(str(pdf_path)) as pdf:
+            assert len(pdf) >= 1
+            content = " ".join(p.get_text() for p in pdf)
+        assert heading + " 1" in content
+        assert "Guru menerangkan dengan jelas" in content
