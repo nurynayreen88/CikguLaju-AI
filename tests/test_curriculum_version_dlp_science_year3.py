@@ -10,6 +10,7 @@ from docx import Document
 from pypdf import PdfReader
 
 from dlp_year2_rph import render, resolve, subject_units
+from web.rph_premium_readback_20261121 import premium_rph_details
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -68,7 +69,7 @@ class DlpScienceYear3Tests(unittest.TestCase):
                 unit, lesson = resolve(3, SCIENCE, unit_id, plan["id"])
                 self.assertIsNone(resolve(3, SCIENCE, "invalid", plan["id"]))
                 word = Document(BytesIO(render(SCIENCE, unit, lesson, "word", teacher)))
-                details = {a.text: b.text for a, b in (r.cells for r in word.tables[0].rows)}
+                details = premium_rph_details(word)
                 content_text = "\n".join(f"{code} {descriptions['cs'][code]}" for code in cs_codes)
                 learning_text = "\n".join(f"{code} {descriptions['ls'][code]}" for code in ls_codes)
                 self.assertEqual(details["Content Standards"], content_text)
@@ -76,7 +77,7 @@ class DlpScienceYear3Tests(unittest.TestCase):
                 self.assertEqual(details["Learning objective"], pbd)
                 self.assertEqual(details["Lesson / PdP"], lesson_label)
                 self.assertNotIn("RPT 2027 dates", details)
-                table = word.tables[1]
+                table = word.tables[2]
                 headings = [run.text for run in table.cell(2, 1).paragraphs[0].runs if run.bold]
                 phases = [table.cell(1, 0).text, *headings, table.cell(3, 0).text]
                 self.assertEqual(phases, [phase["phase"] for phase in plan["phases"]])
