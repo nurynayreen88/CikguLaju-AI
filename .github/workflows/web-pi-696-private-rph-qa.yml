@@ -5,6 +5,8 @@ on:
     branches: [production/cikgulaju-web-20261105]
     paths:
       - web/pi_696_private_bundle.py
+      - web/pi_696_jawi_pdf_fix.py
+      - tests/test_pi_696_jawi_pdf_fix_20261121.py
       - tests/test_pi_696_login_v2_selection_20261121.py
       - tests/test_pi_696_private_bundle_web_20261121.py
       - requirements-rph-word-bundle.txt
@@ -13,6 +15,8 @@ on:
     branches: [production/cikgulaju-web-20261105]
     paths:
       - web/pi_696_private_bundle.py
+      - web/pi_696_jawi_pdf_fix.py
+      - tests/test_pi_696_jawi_pdf_fix_20261121.py
       - tests/test_pi_696_private_bundle_web_20261121.py
       - requirements-rph-word-bundle.txt
       - .github/workflows/web-pi-696-private-rph-qa.yml
