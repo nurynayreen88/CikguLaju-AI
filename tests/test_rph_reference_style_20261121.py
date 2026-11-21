@@ -44,12 +44,12 @@ def _visible(data):
     return tuple(element.text for element in root.iter(qn("w:t")))
 
 
-def test_seven_subjects_and_jawi_only_change_style():
+def test_ten_sk_subjects_only_change_word_presentation():
     before = _fixture()
     for subject in (
         "Bahasa Melayu", "English", "Matematik", "Pendidikan Islam",
         "Sejarah", "Pendidikan Muzik", "Pendidikan Jasmani dan Pendidikan Kesihatan",
-        "Pendidikan Moral",
+        "Pendidikan Moral", "Pendidikan Seni Visual", "Reka Bentuk dan Teknologi",
     ):
         fill = color_for_state({"task": "rph", "subject": subject})
         assert fill
