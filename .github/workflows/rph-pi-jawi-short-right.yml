@@ -1,4 +1,4 @@
-name: RPH Pendidikan Islam Jawi kotak kecil kanan
+name: RPH Pendidikan Islam Jawi kotak guru kiri
 
 on:
   pull_request:
@@ -14,7 +14,7 @@ permissions:
   contents: read
 
 jobs:
-  pi-short-right:
+  pi-teacher-left:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,8 +26,8 @@ jobs:
           sudo apt-get -o Acquire::Retries=2 update -qq
           sudo apt-get -o Acquire::Retries=2 install -y -qq --no-install-recommends libreoffice-writer fonts-hosny-amiri
       - name: Install safe OOXML/test dependencies
-        run: python -m pip install "pytest>=8,<10" "python-docx>=1.1,<2" "lxml>=5,<7" "pypdf>=5,<7"
-      - name: Check preserved Jawi curriculum and physical RTL A4
+        run: python -m pip install "pytest>=8,<10" "python-docx>=1.1,<2" "lxml>=5,<7" "pypdf>=5,<7" "PyMuPDF>=1.24,<2.0"
+      - name: Check preserved Jawi curriculum, teacher-left position and physical PDF A4 grid
         run: python -m pytest -q tests/test_pi_jawi_short_right_header_20261121.py tests/test_rph_premium_header_20261121.py
       - name: Compile transformed modules
         run: python -m py_compile web/rph_premium_header_20261121.py web/rph_equal_width_20261121.py web/rph_reference_style_20261121.py tests/test_pi_jawi_short_right_header_20261121.py
