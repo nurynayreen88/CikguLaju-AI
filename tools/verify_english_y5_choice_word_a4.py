@@ -93,8 +93,15 @@ def main():
         after = collect_text(path)
         if before != after:
             raise RuntimeError("Compactor lost source text for Lesson " + str(n))
-        if "CADANGAN CIKGULAJU (DRAF)" not in after:
-            raise RuntimeError("Draft label absent from document for Lesson " + str(n))
+        # Teacher-choice status is enforced in the internal proposal source.
+        # Production deliberately removes developer-only DRAF prefixes from
+        # teacher-facing Word; the visible "Suggested" text must remain.
+        if "CADANGAN CIKGULAJU (DRAF)" not in rows["TAJUK"]:
+            raise RuntimeError("Source proposal status absent for Lesson " + str(n))
+        if "CADANGAN CIKGULAJU (DRAF)" in after:
+            raise RuntimeError("Internal DRAF marker leaked into Word for Lesson " + str(n))
+        if "Suggested:" not in after or "Suggested evidence:" not in after:
+            raise RuntimeError("Teacher-choice proposal cue absent for Lesson " + str(n))
         standards = (rows["MAIN LEARNING STANDARD"], rows["COMPLEMENTARY LEARNING STANDARD"])
         if any(code not in after for code in standards):
             raise RuntimeError(f"Selected DSKP standard missing for Lesson {n}")
@@ -122,7 +129,10 @@ def main():
         r["a4"]=all(abs(float(x.mediabox.width)-595.28)<1.5 and
                     abs(float(x.mediabox.height)-841.89)<1.5 for x in pages)
         text_content="\n".join(page.extract_text() or "" for page in pages)
-        r["pdf_contains_draft_notice"]="CADANGAN CIKGULAJU" in text_content
+        r["pdf_contains_proposal_cues"]=(
+            "Suggested:" in text_content and "Suggested evidence:" in text_content
+            and "CADANGAN CIKGULAJU (DRAF)" not in text_content
+        )
         r["pdf_contains_teacher_actions"]="Teacher:" in text_content
         r["pdf_contains_pupil_actions"]="Pupils:" in text_content
         r["pdf_contains_standards"] = all(code in text_content for code in r["standards"])
@@ -132,7 +142,7 @@ def main():
                    ensure_ascii=False,indent=2),encoding="utf-8")
     print("Y5_TEACHER_CHOICE_A4_AUDIT",json.dumps(records),flush=True)
     if any(not (r["pages"]==1 and r["a4"] and
-                r["pdf_contains_draft_notice"] and
+                r["pdf_contains_proposal_cues"] and
                 r["pdf_contains_teacher_actions"] and
                 r["pdf_contains_pupil_actions"] and r["pdf_contains_standards"]) for r in records):
         raise SystemExit("One or more Year5 teacher-choice RPH did not fit 1-page A4 or lost text")
