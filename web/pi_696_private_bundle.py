@@ -59,7 +59,7 @@ def valid_pdp(year, lesson):
 
 
 def unit_option(year):
-    return [{"value": UNIT, "label": UNIT}] if year in YEARS else []
+    return [{"value": UNIT, "label": "Senarai PdP"}] if year in YEARS else []
 
 
 def pdp_options(year):
