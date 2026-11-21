@@ -1,0 +1,33 @@
+name: RPH Word activity title source-preserving QA
+
+on:
+  push:
+    branches:
+      - fix/rph-word-activity-headings-safe-20261122
+    paths:
+      - web/rph_activity_heading_delivery.py
+      - web/unified_rph_web.py
+      - tests/test_rph_activity_heading_delivery_20261122.py
+      - .github/workflows/rph-word-activity-heading-guard-20261122.yml
+  pull_request:
+    paths:
+      - web/rph_activity_heading_delivery.py
+      - web/unified_rph_web.py
+      - tests/test_rph_activity_heading_delivery_20261122.py
+      - .github/workflows/rph-word-activity-heading-guard-20261122.yml
+
+jobs:
+  preserve-word-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install DOCX fixture dependencies
+        run: python -m pip install python-docx==1.1.2 lxml==5.4.0
+      - name: Ensure no Python syntax errors
+        run: python -m py_compile web/rph_activity_heading_delivery.py web/unified_rph_web.py
+      - name: Verify native Word text and layout preservation
+        run: python -m unittest discover -s tests -p 'test_rph_activity_heading_delivery_20261122.py' -v
