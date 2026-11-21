@@ -130,6 +130,17 @@ def main():
     print("PI_ENGLISH_TERM_INVENTORY",json.dumps({
         "distinct":len(inventory),"occurrences":len(english_rows),"top":inventory[:90]
     },ensure_ascii=False))
+    groups=["stay","stray","Role-Play","i-Think","THE YARN YARN","n- think","think",
+            "Roling Chip","Puzzle it Out -selesaikan","MIX-N-MATCH",
+            "Personal Learning Experiences","spin","talk partners","round table",
+            "hot seat","brainstorming","free discussion","Recap Group","Game"]
+    contexts={}
+    for group in groups:
+        ctx=[r for r in english_rows if r["english"].casefold()==group.casefold()]
+        contexts[group]=ctx[:2]
+    (OUT/"pi_selected_english_term_contexts.json").write_text(
+        json.dumps(contexts,ensure_ascii=False,indent=2),encoding="utf8")
+    print("PI_SELECTED_CONTEXTS",json.dumps(contexts,ensure_ascii=False))
     print("AUDIT_PASSED: source database not modified; no deployment performed")
     conn.close()
 
