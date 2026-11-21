@@ -233,9 +233,9 @@ def test_native_pdf_activity_title_bold_preserves_real_paragraph_text(tmp_path):
         assert "<b>Guru menyemak" not in actual.text
         pdf_path = tmp_path / (subject.replace(" ", "_") + "_titles.pdf")
         _pdf(updated, pdf_path)
-        from pypdf import PdfReader
-        pdf = PdfReader(str(pdf_path))
-        assert len(pdf.pages) >= 1
-        content = " ".join(p.extract_text() for p in pdf.pages)
+        import fitz
+        with fitz.open(str(pdf_path)) as pdf:
+            assert len(pdf) >= 1
+            content = " ".join(p.get_text() for p in pdf)
         assert heading + " 1" in content
         assert "Guru menerangkan dengan jelas" in content
