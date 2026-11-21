@@ -31,7 +31,7 @@ def premium_rph_details(document):
     identity = header.cell(0, 0)
     if len(identity.paragraphs) < 3:
         raise AssertionError("Lesson identity lost subject, year or topic")
-    fields["Topic" if identity.paragraphs[0].text == "DAILY LESSON PLAN" else "Tajuk"] = identity.paragraphs[2].text
+    fields["Topic" if identity.paragraphs[0].text.casefold() == "daily lesson plan" else "Tajuk"] = identity.paragraphs[2].text
     # The name of the subject appears in the identity panel, not in the
     # curriculum/standards rows. No duplicate subject or teacher metadata.
     forbidden = {"subject", "mata pelajaran", "date", "tarikh", "time", "masa",
