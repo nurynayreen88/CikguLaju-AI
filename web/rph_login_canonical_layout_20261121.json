@@ -1,0 +1,196 @@
+{
+  "version": "2026-11-21-approved-login-gallery",
+  "reference_path": "web_v1_static_preview/Contoh_RPH_Semua_16.html",
+  "reference_url_path": "/contoh-rph-semua",
+  "rule": "Change layout, not educational content. No rewriting SK, SP, objectives, activities or assessment.",
+  "structure": {
+    "hero": 1,
+    "teacher_fields": 4,
+    "main_tables": 2,
+    "activity_headings": "bold on their own lines",
+    "rtl_labels": "right",
+    "ltr_labels": "left",
+    "teacher_location": {
+      "ltr": "right",
+      "rtl": "left"
+    }
+  },
+  "subjects": [
+    {
+      "id": 1,
+      "subject_code": "BM",
+      "direction": "ltr",
+      "tone": "#edf3fa",
+      "strong": "#dbe8f5",
+      "hero_count": 1,
+      "teacher_field_count": 4,
+      "main_table_count": 2,
+      "activity_title_count": 3
+    },
+    {
+      "id": 2,
+      "subject_code": "ENGLISH",
+      "direction": "ltr",
+      "tone": "#eef5ea",
+      "strong": "#dfead9",
+      "hero_count": 1,
+      "teacher_field_count": 4,
+      "main_table_count": 2,
+      "activity_title_count": 3
+    },
+    {
+      "id": 3,
+      "subject_code": "MATH",
+      "direction": "ltr",
+      "tone": "#edf0fb",
+      "strong": "#dfe4f8",
+      "hero_count": 1,
+      "teacher_field_count": 4,
+      "main_table_count": 2,
+      "activity_title_count": 3
+    },
+    {
+      "id": 4,
+      "subject_code": "SCIENCE",
+      "direction": "ltr",
+      "tone": "#eaf5f4",
+      "strong": "#d7ece8",
+      "hero_count": 1,
+      "teacher_field_count": 4,
+      "main_table_count": 2,
+      "activity_title_count": 3
+    },
+    {
+      "id": 5,
+      "subject_code": "PI",
+      "direction": "rtl",
+      "tone": "#f8efe8",
+      "strong": "#efdfd1",
+      "hero_count": 1,
+      "teacher_field_count": 4,
+      "main_table_count": 2,
+      "activity_title_count": 3
+    },
+    {
+      "id": 6,
+      "subject_code": "ARAB",
+      "direction": "rtl",
+      "tone": "#ecf5ee",
+      "strong": "#d9ebde",
+      "hero_count": 1,
+      "teacher_field_count": 4,
+      "main_table_count": 2,
+      "activity_title_count": 3
+    },
+    {
+      "id": 7,
+      "subject_code": "SEJARAH",
+      "direction": "ltr",
+      "tone": "#f4f0e9",
+      "strong": "#e9dfcf",
+      "hero_count": 1,
+      "teacher_field_count": 4,
+      "main_table_count": 2,
+      "activity_title_count": 3
+    },
+    {
+      "id": 8,
+      "subject_code": "MORAL",
+      "direction": "ltr",
+      "tone": "#f8eef2",
+      "strong": "#f1dde5",
+      "hero_count": 1,
+      "teacher_field_count": 4,
+      "main_table_count": 2,
+      "activity_title_count": 3
+    },
+    {
+      "id": 9,
+      "subject_code": "PJ",
+      "direction": "ltr",
+      "tone": "#f3f2e8",
+      "strong": "#e9e7d4",
+      "hero_count": 1,
+      "teacher_field_count": 4,
+      "main_table_count": 2,
+      "activity_title_count": 3
+    },
+    {
+      "id": 10,
+      "subject_code": "PK",
+      "direction": "ltr",
+      "tone": "#eaf4f6",
+      "strong": "#d7e9ee",
+      "hero_count": 1,
+      "teacher_field_count": 4,
+      "main_table_count": 2,
+      "activity_title_count": 3
+    },
+    {
+      "id": 11,
+      "subject_code": "PSV",
+      "direction": "ltr",
+      "tone": "#f8f0e8",
+      "strong": "#f0e0cd",
+      "hero_count": 1,
+      "teacher_field_count": 4,
+      "main_table_count": 2,
+      "activity_title_count": 3
+    },
+    {
+      "id": 12,
+      "subject_code": "MUSIC",
+      "direction": "ltr",
+      "tone": "#eeeafa",
+      "strong": "#e2dcf5",
+      "hero_count": 1,
+      "teacher_field_count": 4,
+      "main_table_count": 2,
+      "activity_title_count": 3
+    },
+    {
+      "id": 13,
+      "subject_code": "RBT",
+      "direction": "ltr",
+      "tone": "#eff2f4",
+      "strong": "#e0e6e9",
+      "hero_count": 1,
+      "teacher_field_count": 4,
+      "main_table_count": 2,
+      "activity_title_count": 3
+    },
+    {
+      "id": 14,
+      "subject_code": "DLP_MATH",
+      "direction": "ltr",
+      "tone": "#e8f2fa",
+      "strong": "#d6e6f4",
+      "hero_count": 1,
+      "teacher_field_count": 4,
+      "main_table_count": 2,
+      "activity_title_count": 3
+    },
+    {
+      "id": 15,
+      "subject_code": "DLP_SCIENCE",
+      "direction": "ltr",
+      "tone": "#eaf5f0",
+      "strong": "#d8ebdf",
+      "hero_count": 1,
+      "teacher_field_count": 4,
+      "main_table_count": 2,
+      "activity_title_count": 3
+    },
+    {
+      "id": 16,
+      "subject_code": "PPKI",
+      "direction": "ltr",
+      "tone": "#f0f4e9",
+      "strong": "#e1ead7",
+      "hero_count": 1,
+      "teacher_field_count": 4,
+      "main_table_count": 2,
+      "activity_title_count": 3
+    }
+  ]
+}

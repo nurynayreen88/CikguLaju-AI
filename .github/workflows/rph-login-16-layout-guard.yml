@@ -1,0 +1,26 @@
+name: RPH approved 16-login-template layout guard
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - web_v1_static_preview/Contoh_RPH_Semua_16.html
+      - web/rph_login_canonical_layout_20261121.json
+      - tests/test_rph_login_canonical_layout_20261121.py
+      - .github/workflows/rph-login-16-layout-guard.yml
+  push:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - web_v1_static_preview/Contoh_RPH_Semua_16.html
+      - web/rph_login_canonical_layout_20261121.json
+      - tests/test_rph_login_canonical_layout_20261121.py
+      - .github/workflows/rph-login-16-layout-guard.yml
+permissions:
+  contents: read
+jobs:
+  approved-layout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m unittest discover -s tests -p 'test_rph_login_canonical_layout_20261121.py' -v
