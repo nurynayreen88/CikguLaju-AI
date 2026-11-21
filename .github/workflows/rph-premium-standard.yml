@@ -9,6 +9,7 @@ on:
       - "tests/test_rph*.py"
       - "docs/RPH_PREMIUM_STANDARD_20261121.md"
       - "docs/rph_premium_contract_20261121.json"
+      - "docs/LOG_KEMASKINI_BAHAN.md"
       - ".github/workflows/rph-premium-standard.yml"
   workflow_dispatch:
 
