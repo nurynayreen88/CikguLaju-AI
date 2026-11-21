@@ -65,6 +65,7 @@ def _make_bold(props) -> None:
 
 
 def _change_paragraph(para) -> bool:
+    # Keep native tab stops and either type of manual line break unchanged.
     # Protect complex Word markup and non-table prose against reflow.
     if not any(parent.tag == W + "tc" for parent in para.iterancestors()):
         return False
@@ -72,7 +73,7 @@ def _change_paragraph(para) -> bool:
         return False
     runs = para.findall(W + "r")
     if not runs or any(
-        node.tag not in (W + "rPr", W + "t", W + "br")
+        node.tag not in (W + "rPr", W + "t", W + "br", W + "cr", W + "tab")
         for run in runs for node in run
     ):
         return False
@@ -83,7 +84,7 @@ def _change_paragraph(para) -> bool:
             if node.tag == W + "rPr":
                 continue
             lines[-1].append((props, node, dict(run.attrib)))
-            if node.tag == W + "br":
+            if node.tag in (W + "br", W + "cr"):
                 lines.append([])
     heading_lines = set()
     for idx, line in enumerate(lines):
@@ -93,7 +94,7 @@ def _change_paragraph(para) -> bool:
     if not heading_lines:
         return False
     original_words = tuple(node.text for node in para.iter(W + "t"))
-    original_breaks = len(tuple(para.iter(W + "br")))
+    original_breaks = tuple((len(tuple(para.iter(W + name))) for name in ("br", "cr", "tab")))
     already_bold = True
     for idx in heading_lines:
         for props, node, _ in lines[idx]:
@@ -131,7 +132,7 @@ def _change_paragraph(para) -> bool:
             fresh.append(node)
             para.append(fresh)
     if (tuple(node.text for node in para.iter(W + "t")) != original_words
-            or len(tuple(para.iter(W + "br"))) != original_breaks):
+            or tuple(len(tuple(para.iter(W + name))) for name in ("br", "cr", "tab")) != original_breaks):
         raise ValueError("Activity title formatting changed RPH text")
     return True
 
