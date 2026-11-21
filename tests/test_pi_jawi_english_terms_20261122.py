@@ -95,6 +95,28 @@ class TestPITeachingTerms(unittest.TestCase):
         self.assertEqual(rt._local_rph_text({"subject":"English","task":"rph",
             "rpt_activity_note":"gallery walk"}).count("gallery walk"),1)
 
+    def test_teacher_reflection_standards_and_named_book_stay_exact(self):
+        def native(state):
+            return (state["rpt_activity_note"] + "\n" + state["sk_text"] +
+                    "\n" + state["sp_text"] + "\n" +
+                    state["rph_teacher_reflection"] + "\n" + state["book_title"])
+        rt=SimpleNamespace(_local_rph_text=native)
+        self.assertTrue(install(rt))
+        state={
+            "subject":"Pendidikan Islam", "task":"rph",
+            "rpt_activity_note":"gallery walk",
+            "sk_text":"gallery walk dalam petikan asal SK",
+            "sp_text":"think pair share dalam petikan SP asal",
+            "rph_teacher_reflection":"Saya memilih game untuk refleksi saya.",
+            "book_title":"The Gallery Walk (nama rasmi buku)",
+        }
+        original=copy.deepcopy(state)
+        output=rt._local_rph_text(state)
+        self.assertIn("جلاجه ݢاليري",output)
+        for key in ("sk_text","sp_text","rph_teacher_reflection","book_title"):
+            self.assertEqual(state[key],original[key])
+            self.assertIn(original[key],output)
+
     def test_all_809_verified_original_rpt_activities(self):
         db=ROOT/"CikguLaju_Curriculum_Master_v25_93_PI_ENGLISH_Y1_Y4.db"
         pieces=[ROOT/(db.name+x) for x in (".part1",".part2")]
