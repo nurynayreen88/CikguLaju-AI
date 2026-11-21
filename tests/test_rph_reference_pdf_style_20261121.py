@@ -181,3 +181,56 @@ def test_reportlab_separate_rule_grid_colors_full_label_cell():
     finally:
         before.close()
         after.close()
+
+
+
+def test_pdf_title_box_width_follows_actual_three_table_outer_grid():
+    """Native RPH title frame shares x0/x1 with the rows below."""
+    original = _pdf()
+    baseline = fitz.open(stream=original, filetype="pdf")
+    try:
+        expected = [
+            d["rect"] for d in baseline[0].get_drawings()
+            if 500 <= d["rect"].width <= 530
+            and d["rect"].y0 > 60
+            and d["rect"].height <= 25
+        ]
+        assert len(expected) >= 2
+        x0, x1 = expected[0].x0, expected[0].x1
+        for rect in expected:
+            assert abs(rect.x0-x0) < .25
+            assert abs(rect.x1-x1) < .25
+    finally:
+        baseline.close()
+    for subject in SUBJECTS:
+        fill = color_for_state({"task":"rph", "subject":subject})
+        styled = style_pdf_bytes(original, fill)
+        with fitz.open(stream=styled, filetype="pdf") as pdf:
+            frames = [
+                d["rect"] for d in pdf[0].get_drawings()
+                if d.get("fill") is not None and d["rect"].y0 < 65
+                and d["rect"].width > 450
+            ]
+            assert frames, subject
+            assert any(abs(rect.x0-x0)<.5 and abs(rect.x1-x1)<.5
+                       for rect in frames), (subject, frames)
+            assert pdf[0].get_text() == _inspect(original)[0][0]
+            assert len(pdf) == 1
+
+
+def test_pdf_title_box_fails_closed_without_repeated_source_grid():
+    """A single unknown rectangle cannot define an authoritative page margin."""
+    stream = BytesIO()
+    page = Canvas(stream, pagesize=A4)
+    page.setFont("Helvetica-Bold", 14)
+    page.drawCentredString(298, 800, "RANCANGAN PENGAJARAN HARIAN")
+    page.rect(35, 690, 520, 20)
+    page.drawString(45, 695, "Tajuk")
+    page.save()
+    result = style_pdf_bytes(stream.getvalue(), "EAF1FB")
+    with fitz.open(stream=result, filetype="pdf") as pdf:
+        boxes = [
+            d["rect"] for d in pdf[0].get_drawings()
+            if d.get("fill") is not None and d["rect"].y0 < 60
+        ]
+        assert boxes and max(rect.width for rect in boxes) < 400
