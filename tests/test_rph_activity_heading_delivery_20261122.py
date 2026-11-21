@@ -132,5 +132,123 @@ class ActivityTitleWordRegression(unittest.TestCase):
             self.assertTrue(_is_activity_heading(value), value)
 
 
+    def test_all_sixteen_subject_word_download_formats_preserve_every_source_part(self):
+        """The actual delivery adapter must handle all gallery categories safely.
+
+        These are source-shaped DOCX fixtures, NOT claims that every real RPH
+        or PDF has passed visual review.
+        """
+        from pathlib import Path
+        import json
+        from docx.oxml import OxmlElement
+
+        root = Path(__file__).resolve().parents[1]
+        manifest = json.loads(
+            (root / "web/rph_login_canonical_layout_20261121.json").read_text("utf-8")
+        )
+        self.assertEqual(len(manifest["subjects"]), 16)
+        headings = {
+            "BM": "Aktiviti 1 (15 minit): Perbincangan",
+            "ENGLISH": "Activity 1 (10 minutes): Guided Practice",
+            "MATH": "1. Aktiviti 1: Susun Nombor",
+            "SCIENCE": "Langkah 1 – Pemerhatian",
+            "PI": "اکتيۏيتي ١",
+            "ARAB": "النشاط ٢: مناقشة",
+            "SEJARAH": "Aktiviti 2: Garis Masa",
+            "MORAL": "Aktiviti 3: Nilai Murni",
+            "PJ": "Langkah 2: Latih Tubi",
+            "PK": "Aktiviti 1: Pendidikan Kesihatan",
+            "PSV": "Aktiviti 2: Hasil Karya",
+            "MUSIC": "Aktiviti 1 – Irama",
+            "RBT": "Aktiviti 3: Reka Bentuk",
+            "DLP_MATH": "Activity 2: Number Line",
+            "DLP_SCIENCE": "Step 3: Investigate",
+            "PPKI": "Aktiviti 1: Kenal Pasti",
+        }
+        self.assertEqual(set(headings), {item["subject_code"] for item in manifest["subjects"]})
+        for item in manifest["subjects"]:
+            code = item["subject_code"]
+            heading = headings[code]
+            with self.subTest(subject=code):
+                doc = Document()
+                doc.add_paragraph(code)
+                info = doc.add_table(rows=2, cols=2)
+                info.cell(0, 0).text = "Standard Kandungan"
+                info.cell(0, 1).text = "3.1 Standard kandungan asal"
+                info.cell(1, 0).text = "Standard Pembelajaran"
+                info.cell(1, 1).text = "3.1.2 Standard pembelajaran asal"
+                activity = doc.add_table(rows=2, cols=3)
+                activity.cell(0, 1).text = "Aktiviti Pengajaran"
+                activity.cell(1, 0).text = "Aktiviti Utama"
+                body = activity.cell(1, 1).paragraphs[0]
+                instruction = (
+                    "المعلم يشرح الموضوع." if code == "ARAB" else
+                    "موريد منوليس جاوابن." if code == "PI" else
+                    "Guru menerangkan dan murid menulis jawapan."
+                )
+                body.add_run(heading + "\n" + instruction)
+                activity.cell(1, 2).text = "Pentaksiran asal"
+                if item["direction"] == "rtl":
+                    activity._tbl.tblPr.append(OxmlElement("w:bidiVisual"))
+                    body._p.get_or_add_pPr().append(OxmlElement("w:bidi"))
+                original = BytesIO()
+                doc.save(original)
+                original_bytes = original.getvalue()
+                first, first_words = _read(original_bytes)
+                first_breaks = len(list(first.iter(W + "br")))
+                with ZipFile(BytesIO(original_bytes)) as z:
+                    other_parts = {
+                        name: z.read(name) for name in z.namelist()
+                        if name != DOC
+                    }
+
+                styled = style_word_activity_titles(original)
+                result_bytes = styled.getvalue()
+                self.assertNotEqual(result_bytes, original_bytes)
+                updated, updated_words = _read(result_bytes)
+                self.assertEqual(first_words, updated_words)
+                self.assertEqual(first_breaks, len(list(updated.iter(W + "br"))))
+                with ZipFile(BytesIO(result_bytes)) as z:
+                    self.assertIsNone(z.testzip())
+                    self.assertEqual(
+                        other_parts,
+                        {name: z.read(name) for name in z.namelist() if name != DOC}
+                    )
+                word = Document(BytesIO(result_bytes))
+                self.assertEqual(len(word.tables), 2)
+                self.assertEqual(word.tables[0].cell(1, 1).text,
+                                 "3.1.2 Standard pembelajaran asal")
+                self.assertEqual(word.tables[1].cell(1, 2).text, "Pentaksiran asal")
+                self.assertEqual(word.tables[1].cell(1, 1).text,
+                                 heading + "\n" + instruction)
+                lines = {}
+                for run in updated.iter(W + "r"):
+                    value = "".join(t.text or "" for t in run.findall(W + "t"))
+                    if value:
+                        props = run.find(W + "rPr")
+                        lines[value] = (
+                            props is not None and props.find(W + "b") is not None,
+                            props is not None and props.find(W + "bCs") is not None,
+                        )
+                self.assertEqual(lines[heading], (True, True))
+                self.assertEqual(lines[instruction], (False, False))
+                self.assertEqual(
+                    len(list(first.iter(W + "bidiVisual"))),
+                    len(list(updated.iter(W + "bidiVisual")))
+                )
+                self.assertIs(style_word_activity_titles(styled), styled)
+
+    def test_multi_subject_instruction_guard_never_bolds_a_full_sentence(self):
+        for example in (
+            "Aktiviti 1: Guru menerangkan langkah pengajaran",
+            "Langkah 2 - Murid melaksanakan tugasan",
+            "Activity 2: Students draw a picture",
+            "Step 3: Teacher explains the topic",
+            "اکتيۏيتي ١: موريد منوليس جاوابن",
+            "النشاط ٢: المعلم يشرح الموضوع",
+        ):
+            self.assertFalse(_is_activity_heading(example), example)
+
+
 if __name__ == "__main__":
     unittest.main()
