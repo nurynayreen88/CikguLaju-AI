@@ -46,6 +46,7 @@ def test_arabic_teacher_header_right_and_source_fields_preserved():
     assert len(header.columns) == 3
     assert header.alignment == WD_TABLE_ALIGNMENT.RIGHT
     identity = header.rows[0].cells[2].text
+    assert len(header.rows[0].cells[2].paragraphs) == 3
     for expected in ("الصف والحصّة", "الوحدة", "موضوع الدرس",
                      "المدرسة", "الفصل"):
         assert expected in identity
