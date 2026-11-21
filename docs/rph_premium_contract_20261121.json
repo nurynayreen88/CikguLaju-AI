@@ -66,7 +66,7 @@
       "time",
       "pupil_count"
     ],
-    "direction": "LTR for nine native subjects; preserve approved RTL for Arabic/Jawi",
+    "direction": "LTR universal; only Pendidikan Islam/Jawi and Bahasa Arab/Arab RTL direction; identical outer box layout for every subject",
     "status": "native_generator_telegram_deployed; other web routes not verified"
   },
   "required_checks": [
@@ -83,7 +83,9 @@
     "protected_specialty_subject_and_script_layouts",
     "tested_per_subject_per_year_per_download_route",
     "no_user_quota_spend_for_qa_without_authorization",
-    "render_live_and_real_download_confirmation_before_live_status"
+    "render_live_and_real_download_confirmation_before_live_status",
+    "one_universal_rph_outer_box_layout_even_for_rtl_subjects",
+    "rtl_direction_only_pendidikan_islam_and_bahasa_arab"
   ],
   "web_routes_requiring_individual_word_pdf_audit": [
     "telegram-native-bm-pdp",
@@ -96,5 +98,35 @@
     "PPKI/SJKC/SJKT dedicated clients",
     "default request_native_rph"
   ],
-  "workflow_rule": "When a new RPH palette or native subject is introduced, register the subject and add rendering tests before merging. Do not switch protected renderers to the LTR adapter. Web routes are separately auditable."
+  "workflow_rule": "Every new subject must use the one universal RPH box design, equal outer widths in each file. Only Pendidikan Islam/Jawi and Bahasa Arab/Arab use RTL direction/column reading order, not different geometry. Register subjects, add Word/PDF tests, audit separate Web routes; never force generic LTR adapters on Arabic/Jawi.",
+  "universal_layout": {
+    "rule": "ONE_OUTER_BOX_LAYOUT_ALL_SUBJECTS",
+    "all_subjects_same_box_design": true,
+    "all_subjects_equal_outer_box_width": true,
+    "structural_sections": [
+      "identity_and_teacher",
+      "curriculum_and_metadata",
+      "teaching_and_learning_activities",
+      "remedial_enrichment_reflection"
+    ],
+    "exceptions_affect_direction_only": true,
+    "direction_default": "LTR",
+    "rtl_only_subjects": [
+      "pendidikan islam",
+      "bahasa arab"
+    ],
+    "rtl_applies_to": [
+      "text_direction",
+      "labels",
+      "paragraph_alignment",
+      "column_reading_order"
+    ],
+    "rtl_does_not_change": [
+      "outer_box_geometry",
+      "overall_box_width",
+      "main_section_hierarchy",
+      "professional_table_style"
+    ],
+    "note": "Sains, DLP, PPKI, all other subjects remain LTR and share the same box design. Arabic/Jawi reverse reading direction only. Different code generators do not authorize different RPH visual designs."
+  }
 }
