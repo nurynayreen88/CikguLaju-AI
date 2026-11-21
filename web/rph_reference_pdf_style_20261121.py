@@ -85,6 +85,37 @@ def _existing_label_cell(page, label_box, drawings):
                 dividers.append(edge.x0)
         if dividers and label_box.x1 < min(dividers):
             return fitz.Rect(row.x0, row.y0, min(dividers), row.y1)
+    # ReportLab native RPH often draws the grid with individual line
+    # strokes (not closed cell rectangles). Infer ONLY from the real outer
+    # horizontal rules and a full-height vertical divider; never guess a
+    # column width from label text or shade the activity/value column.
+    horizontal = []
+    vertical = []
+    for shape in drawings:
+        if shape.get("rect") is None:
+            continue
+        line = fitz.Rect(shape["rect"])
+        if line.height < 1.5 and line.width >= page.rect.width * .55:
+            horizontal.append(line)
+        if line.width < 1.5 and line.height >= 12:
+            vertical.append(line)
+    for top in horizontal:
+        if top.y0 > label_box.y0 or top.x0 > label_box.x0 + 3:
+            continue
+        for bottom in horizontal:
+            if not (bottom.y0 >= label_box.y1
+                    and top.x0-1 <= bottom.x0 <= top.x0+1
+                    and abs(top.x1-bottom.x1) < 2
+                    and 12 < bottom.y0-top.y0 < 52):
+                continue
+            dividers = [
+                line.x0 for line in vertical
+                if (top.x0+45 < line.x0 < top.x0+page.rect.width*.5
+                    and line.y0 <= top.y0+2
+                    and line.y1 >= bottom.y0-2)
+            ]
+            if dividers and label_box.x1 < min(dividers)-2:
+                return fitz.Rect(top.x0, top.y0, min(dividers), bottom.y0)
     return fitz.Rect(label_box.x0-3, label_box.y0-1,
                      label_box.x1+3, label_box.y1+1)
 
