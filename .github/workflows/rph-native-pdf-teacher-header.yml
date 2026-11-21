@@ -1,4 +1,4 @@
-name: RPH PDF kanan atas dan pemeliharaan SK SP
+name: RPH PDF kotak guru kecil kiri dan pemeliharaan SK SP
 
 on:
   pull_request:
