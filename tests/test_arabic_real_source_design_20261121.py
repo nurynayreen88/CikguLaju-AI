@@ -127,7 +127,18 @@ def test_all_120_real_arabic_lessons_word_to_pdf_a4(tmp_path):
             assert abs(page.rect.width - 595.28) < 2
             assert abs(page.rect.height - 841.89) < 2
             assert page.get_text().strip(), word.name
-            for block in page.get_text("dict")["blocks"]:
+            # Text extraction is not a final glyph/ligature approval, but
+            # catch blank/tofu-only text and missing Amiri font substitution.
+            # This inspects all 120 REAL PDF outputs, not synthetic fixtures.
+            rendered_blocks = page.get_text("dict")["blocks"]
+            spans = [span for block in rendered_blocks if block.get("type") == 0
+                     for line in block.get("lines", []) for span in line["spans"]]
+            arabic_spans = [span for span in spans if any(
+                0x0600 <= ord(char) <= 0x08FF for char in span["text"])]
+            assert arabic_spans, (word.name, "Arabic script not extractable")
+            assert any("amiri" in str(span["font"]).casefold()
+                       for span in arabic_spans), (word.name, "Arabic Amiri not embedded")
+            for block in rendered_blocks:
                 if block.get("type") == 0:
                     x0, y0, x1, y1 = block["bbox"]
                     assert -1 <= x0 < x1 <= page.rect.width + 1, word.name
