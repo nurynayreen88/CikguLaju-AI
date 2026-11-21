@@ -100,6 +100,36 @@ def main():
         w=csv.DictWriter(f,fieldnames=list(exported[0]))
         w.writeheader();w.writerows(exported)
     print(json.dumps({"db_integrity":valid,"pi_rows":809,"stats":stats},ensure_ascii=False))
+    # Inventory instructional English phrases in the original 809 PI records.
+    # Retain source row IDs and exact snippets. Do not infer all Latin text is wrong.
+    english_groups={}
+    english_rows=[]
+    for y in YEARS:
+        rows=conn.execute("""SELECT id,sequence_no,activity_note,assessment_note,topic,subtopic
+                             FROM rpt_entries WHERE subject='Pendidikan Islam'
+                             AND year_label=? AND verified=1 ORDER BY sequence_no,id""",
+                          (f"Tahun {y}",)).fetchall()
+        for row in rows:
+            for field in ("activity_note","assessment_note","topic","subtopic"):
+                val=str(row[field] or "")
+                phrases=re.findall(r"[A-Za-z][A-Za-z -]{2,}[A-Za-z]",val)
+                for raw in phrases:
+                    value=" ".join(raw.split())
+                    if not value:continue
+                    english_groups.setdefault(value.casefold(),{"original":value,"count":0,"rows":[]})
+                    e=english_groups[value.casefold()]
+                    e["count"]+=1
+                    if len(e["rows"])<4:e["rows"].append(f"T{y}-PdP{row['sequence_no']}-{field}")
+                    english_rows.append({"year":y,"pdp":row["sequence_no"],"field":field,
+                                        "english":value,"context":val[max(0,val.find(raw)-55):val.find(raw)+len(raw)+55]})
+    inventory=sorted(english_groups.values(),key=lambda x:(-x["count"],x["original"].casefold()))
+    (OUT/"native_pi_english_term_inventory.json").write_text(
+        json.dumps({"term_groups":len(inventory),"term_occurrences":len(english_rows),
+                    "terms":inventory,"examples":english_rows[:200]},
+                   ensure_ascii=False,indent=2),encoding="utf8")
+    print("PI_ENGLISH_TERM_INVENTORY",json.dumps({
+        "distinct":len(inventory),"occurrences":len(english_rows),"top":inventory[:90]
+    },ensure_ascii=False))
     print("AUDIT_PASSED: source database not modified; no deployment performed")
     conn.close()
 
