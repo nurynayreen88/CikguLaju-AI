@@ -17,7 +17,7 @@ from web.sains_unit_awal import LESSONS as OTHER_LESSONS, STANDARDS
 from web.sains_y3_unit_awal import LESSONS as YEAR3_LESSONS, SP as YEAR3_SP, plan_rows
 
 ROOT = Path(__file__).resolve().parents[1]
-TARGET_YEARS = (2, 3, 4)
+TARGET_YEARS = (2, 3, 4, 5, 6)
 
 
 def _real_word_function():
