@@ -13,6 +13,7 @@ from docx import Document
 from pypdf import PdfReader
 
 from dlp_year2_rph import mathematics_standard_rows
+from web.rph_premium_readback_20261121 import premium_rph_details
 from staging.dlp.year5 import render_mathematics, render_science
 
 
@@ -93,9 +94,9 @@ class DLPYear5ReviewExports(unittest.TestCase):
                 with self.subTest(subject=subject, lesson=plan["id"]):
                     stem = f"CikguLaju_RPH_{subject}_DLP_Y5_{plan['id']}"
                     word = Document(folder / f"{stem}.docx")
-                    self.assertEqual(word.tables[2].rows[0].cells[1].text, plan["evidence"])
-                    table = word.tables[1]
-                    fields = {row.cells[0].text: row.cells[1].text for row in word.tables[0].rows}
+                    self.assertEqual(word.tables[3].rows[0].cells[1].text, plan["evidence"])
+                    table = word.tables[2]
+                    fields = premium_rph_details(word)
                     self.assertNotIn("RPT date ranges", fields)
                     if subject == "Mathematics":
                         self.assertEqual(fields["Topic"], plan["title"])
@@ -103,7 +104,7 @@ class DLPYear5ReviewExports(unittest.TestCase):
                     else:
                         standards = (("Content Standards", plan["content_standards"]),
                                      ("Learning Standards", plan["learning_standards"]))
-                        self.assertEqual(word.paragraphs[2].text, plan["title"])
+                        self.assertEqual(word.tables[0].cell(0, 0).paragraphs[2].text, plan["title"])
                     for label, description in standards:
                         self.assertEqual(fields[label], description)
                     text = "\n".join(row.cells[1].text for row in table.rows[1:])
