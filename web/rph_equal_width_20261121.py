@@ -44,7 +44,7 @@ def _printable_width(root):
     return min(available, MAX_WIDTH) if 4500 <= available <= 13000 else None
 
 
-def _set_table_geometry(table, target, ratios):
+def _set_table_geometry(table, target, ratios, *, rtl_jawi=False):
     weights = sum(ratios)
     widths = [round(target * part / weights) for part in ratios]
     widths[-1] = target - sum(widths[:-1])
@@ -56,7 +56,10 @@ def _set_table_geometry(table, target, ratios):
     indent.set(W + "w", "0")
     indent.set(W + "type", "dxa")
     align = _find_or_add(pr, "jc")
-    align.set(W + "val", "left")
+    align.set(W + "val", "right" if rtl_jawi else "left")
+    if rtl_jawi:
+        bidi = _find_or_add(pr, "bidiVisual")
+        bidi.set(W + "val", "1")
     layout = _find_or_add(pr, "tblLayout")
     layout.set(W + "type", "fixed")
 
@@ -75,7 +78,7 @@ def _set_table_geometry(table, target, ratios):
             cell_width.set(W + "type", "dxa")
 
 
-def equal_width_four_table_bytes(document):
+def equal_width_four_table_bytes(document, *, rtl_jawi=False):
     """Return aligned DOCX with identical displayed text and ZIP non-document parts.
 
     A document using merged or unrecognised table layouts is left intact.
@@ -109,7 +112,7 @@ def equal_width_four_table_bytes(document):
 
         text_before = tuple(node.text for node in root.iter(W + "t"))
         for table, ratios in zip(tables, RATIOS):
-            _set_table_geometry(table, target, ratios)
+            _set_table_geometry(table, target, ratios, rtl_jawi=rtl_jawi)
         if tuple(node.text for node in root.iter(W + "t")) != text_before:
             raise ValueError("Word RPH equal-width pass changed lesson text")
         new_xml = etree.tostring(root, xml_declaration=True, encoding="UTF-8",

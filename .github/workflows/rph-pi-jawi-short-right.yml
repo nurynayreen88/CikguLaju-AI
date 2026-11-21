@@ -1,0 +1,33 @@
+name: RPH Pendidikan Islam Jawi kotak kecil kanan
+
+on:
+  pull_request:
+    paths:
+      - "web/rph_premium_header_20261121.py"
+      - "web/rph_equal_width_20261121.py"
+      - "web/rph_reference_style_20261121.py"
+      - "tests/test_pi_jawi_short_right_header_20261121.py"
+      - ".github/workflows/rph-pi-jawi-short-right.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pi-short-right:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Word/PDF renderer and Arabic/Jawi fonts
+        run: |
+          sudo apt-get -o Acquire::Retries=2 update -qq
+          sudo apt-get -o Acquire::Retries=2 install -y -qq --no-install-recommends libreoffice-writer fonts-hosny-amiri
+      - name: Install safe OOXML/test dependencies
+        run: python -m pip install "pytest>=8,<10" "python-docx>=1.1,<2" "lxml>=5,<7" "pypdf>=5,<7"
+      - name: Check preserved Jawi curriculum and physical RTL A4
+        run: python -m pytest -q tests/test_pi_jawi_short_right_header_20261121.py tests/test_rph_premium_header_20261121.py
+      - name: Compile transformed modules
+        run: python -m py_compile web/rph_premium_header_20261121.py web/rph_equal_width_20261121.py web/rph_reference_style_20261121.py tests/test_pi_jawi_short_right_header_20261121.py
