@@ -317,14 +317,3 @@ except Exception as _sains_web_network_smoke_exc:
     WEB_SAINS_NATIVE_SMOKE_RESULT = None
     print("CIKGULAJU_SAINS_WEB_REAL_DOWNLOAD_SMOKE_UNAVAILABLE",
           type(_sains_web_network_smoke_exc).__name__,flush=True)
-
-
-# Import the reviewed PI v2 ZIP only when an explicit one-time Render flag is
-# enabled. This operation is isolated from request handling and fails closed;
-# the live Web continues to serve v1 until a separate v2 release switch.
-try:
-    from web.pi_696_import_once import start_when_enabled as _pi_v2_import
-    _pi_v2_import()
-except Exception as _pi_v2_import_error:
-    print("CIKGULAJU_PI_V2_IMPORT_INIT_FAILED",
-          type(_pi_v2_import_error).__name__, flush=True)
