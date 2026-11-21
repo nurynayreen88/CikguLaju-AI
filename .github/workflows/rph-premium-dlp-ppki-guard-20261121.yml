@@ -4,6 +4,10 @@ on:
     branches: [main]
     paths:
       - "dlp_year2_rph.py"
+      - "web/native_rph_telegram_api.py"
+      - "tests/test_telegram_sk_rph_2027_menu.py"
+      - "tests/test_ppki_telegram.py"
+      - "tests/test_rph_supporting_fields_20261121.py"
       - "web/rph_premium_readback_20261121.py"
       - "tests/test_rph_premium_dlp_ppki_20261121.py"
       - "tests/test_curriculum_version_dlp_download.py"
@@ -21,6 +25,10 @@ on:
     branches: [main]
     paths:
       - "dlp_year2_rph.py"
+      - "web/native_rph_telegram_api.py"
+      - "tests/test_telegram_sk_rph_2027_menu.py"
+      - "tests/test_ppki_telegram.py"
+      - "tests/test_rph_supporting_fields_20261121.py"
       - "web/rph_premium_readback_20261121.py"
       - "tests/test_rph_premium_dlp_ppki_20261121.py"
 jobs:
