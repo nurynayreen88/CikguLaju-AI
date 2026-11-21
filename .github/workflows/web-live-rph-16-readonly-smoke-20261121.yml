@@ -1,0 +1,90 @@
+# LIVE public-gallery checks only. Never log in, generate a teacher RPH,
+# use an account, or debit any trial quota. This is not a teacher-download QA.
+name: Web LIVE RPH gallery and private downloads - read only
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - ".github/workflows/web-live-rph-16-readonly-smoke-20261121.yml"
+      - "web_v1_static_preview/Contoh_RPH_Semua_16.html"
+      - "tools/run_web_v1_preview.py"
+      - "tools/run_web_production.py"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-gallery-and-private-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Ensure public-gallery source contract still matches 16 owner-approved examples
+        run: python -m unittest discover -s tests -p "test_web_login_16_rph_20261121.py" -v
+      - name: Install PDF reader for rendered LIVE asset
+        run: python -m pip install "PyMuPDF>=1.25,<2"
+      - name: Read-only external Web LIVE check without login or quota
+        env:
+          CIKGULAJU_PUBLIC_WEB: https://cikgulaju-web.onrender.com
+        run: |
+          python - <<'PY'
+          import os
+          import time
+          import urllib.error
+          import urllib.request
+          import fitz
+
+          root = os.environ["CIKGULAJU_PUBLIC_WEB"].rstrip("/")
+          def read(path):
+              req = urllib.request.Request(root + path, headers={
+                  "User-Agent": "CikguLaju-public-readonly-smoke/20261121",
+                  "Accept": "text/html,application/pdf,application/json",
+              })
+              for attempt in range(3):
+                  try:
+                      with urllib.request.urlopen(req, timeout=35) as r:
+                          return r.status, r.headers.get("Content-Type", ""), r.read(5_000_001)
+                  except urllib.error.HTTPError as err:
+                      if err.code in (502, 503, 504) and attempt < 2:
+                          time.sleep(5)
+                          continue
+                      return err.code, err.headers.get("Content-Type", ""), err.read(4096)
+                  except (TimeoutError, OSError):
+                      if attempt == 2:
+                          raise
+                      time.sleep(5)
+              raise AssertionError("Unexpected fetch retry exhaustion")
+
+          status, mime, data = read("/contoh-rph-semua")
+          assert status == 200 and "text/html" in mime, ("gallery", status, mime)
+          html = data.decode("utf-8")
+          assert "16 CONTOH RPH" in html and "Bahasa Arab" in html
+          assert "Pendidikan Islam" in html and 'id="rph-contoh-16"' in html
+          assert 'href="/contoh-rph-semua.pdf"' in html
+          print("LIVE_PUBLIC_HTML_16_PASS")
+
+          status, mime, data = read("/contoh-rph-semua.pdf")
+          assert status == 200 and "application/pdf" in mime, ("pdf", status, mime)
+          assert data.startswith(b"%PDF-"), "PDF signature missing"
+          with fitz.open(stream=data, filetype="pdf") as pdf:
+              assert len(pdf) == 16, ("PDF pages", len(pdf))
+              for i, page in enumerate(pdf, 1):
+                  assert abs(page.rect.width - 595.28) < 2, i
+                  assert abs(page.rect.height - 841.89) < 2, i
+                  assert len(page.get_text().strip()) > 100, ("Missing PDF text", i)
+          print("LIVE_PUBLIC_PDF_16_A4_PASS")
+
+          # These are GET requests with NO cookie, token or selected lesson;
+          # never request a valid user document or trigger any quota charge.
+          for path in ("/api/web/rph/word", "/api/web/rph/pdf"):
+              status, mime, data = read(path)
+              assert status in (401, 403), ("unauthenticated route", path, status, mime)
+              assert not data.startswith((b"%PDF-", b"PK\\x03\\x04")), path
+              print("LIVE_UNAUTHENTICATED_DOWNLOAD_BLOCKED", path, status)
+
+          print("READ_ONLY_SMOKE_PASS: not evidence of authenticated teacher downloads")
+          PY
