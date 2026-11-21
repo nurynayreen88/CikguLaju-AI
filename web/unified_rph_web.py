@@ -1195,6 +1195,12 @@ def create_blueprint():
                     "error": "RPH Matematik ini memerlukan pembetulan sebelum boleh dimuat turun. Kredit percubaan tidak digunakan.",
                     "code": "MATH_RPH_QUALITY_REVIEW_REQUIRED",
                 }), 503), None
+        # Existing activity titles may be bolded without changing any RPH
+        # content, Word tables, SK/SP, teacher information or trial quota.
+        # Unknown layouts always keep Telegram's original DOCX unchanged.
+        if fmt == "word":
+            from web.rph_activity_heading_delivery import style_word_activity_titles
+            document = style_word_activity_titles(document)
         if g.cikgulaju_rph_paid:
             return document, None, None
         from web.rph_delivery_quota import authorize_rendered_document
