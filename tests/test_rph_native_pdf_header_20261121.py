@@ -1,0 +1,158 @@
+"""Native PDF teacher box/outer-width parity without source lesson reconstruction."""
+from collections import Counter
+from io import BytesIO
+from pathlib import Path
+
+import fitz
+from reportlab.lib import colors
+from reportlab.lib.pagesizes import A4
+from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
+from reportlab.lib.units import mm
+from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
+
+from web.rph_native_pdf_header_20261121 import premium_pdf_story
+from web.rph_reference_pdf_style_20261121 import style_pdf_bytes
+from web.rph_reference_style_20261121 import color_for_state
+
+SUBJECTS = (
+    "Bahasa Melayu", "English", "Matematik", "Sejarah", "Pendidikan Muzik",
+    "Pendidikan Jasmani dan Pendidikan Kesihatan", "Pendidikan Moral",
+    "Pendidikan Seni Visual", "Reka Bentuk dan Teknologi",
+)
+
+
+def fixture(subject):
+    styles = getSampleStyleSheet()
+    cell = ParagraphStyle("PDFCell", parent=styles["Normal"], fontName="Helvetica",
+                          fontSize=7.75, leading=8.85)
+    title = ParagraphStyle("PDFTitle", parent=styles["Title"], fontName="Helvetica-Bold",
+                           fontSize=14, leading=16)
+    en = subject == "English"
+    pairs = [
+        ("Subject", "English") if en else ("Mata Pelajaran", subject),
+        ("Year / Form", "Year 3") if en else ("Tahun/Tingkatan", "Tahun 3"),
+        ("Date", "") if en else ("Tarikh", ""),
+        ("Day", "") if en else ("Hari", ""),
+        ("Time", "") if en else ("Masa", ""),
+        ("Class", "") if en else ("Kelas", ""),
+        ("Number of Pupils", "") if en else ("Bilangan Murid", ""),
+        ("Topic", "Helping at Home") if en else ("Tajuk", "Bantu-membantu di Dapur"),
+        ("Standard Kandungan", "2.1 Asas membaca dan memahami"),
+        ("Standard Pembelajaran", "2.1.1 Membaca dengan sebutan yang betul."),
+        ("Objektif Pembelajaran", "Murid membaca petikan dan menjawab tiga soalan."),
+        ("Kriteria Kejayaan", "Dua jawapan yang betul."),
+        ("EMK / NILAI", "Kerjasama dan tanggungjawab"),
+        ("KBAT / PAK21", "Think-Pair-Share"),
+        ("Pentaksiran", "Guru menyemak bacaan dan respons individu."),
+    ]
+    rows = [[Paragraph(f"<b>{lab}</b>", cell), Paragraph(value, cell)]
+            for lab, value in pairs]
+    info = Table(rows, colWidths=[48 * mm, 124 * mm])
+    info.setStyle(TableStyle([("GRID", (0, 0), (-1, -1), .5, colors.black)]))
+
+    activities = [
+        [Paragraph("<b>Fasa</b>", cell),
+         Paragraph("<b>Aktiviti Pengajaran dan Pembelajaran</b>", cell),
+         Paragraph("<b>Catatan</b>", cell)]
+    ]
+    for label, value in (
+        ("Set Induksi", "Guru menunjukkan gambar dan mengaitkan pengalaman murid."),
+        ("Aktiviti Utama", "Aktiviti 1: Murid membaca ayat secara berpandu. "
+         "Aktiviti 2: Murid menjawab tiga soalan. Aktiviti 3: Murid berkongsi jawapan."),
+        ("Penutup", "Murid menyatakan semula pembelajaran hari ini."),
+    ):
+        activities.append([Paragraph(label, cell), Paragraph(value, cell),
+                           Paragraph("", cell)])
+    phase = Table(activities, colWidths=[32 * mm, 112 * mm, 28 * mm])
+    phase.setStyle(TableStyle([("GRID", (0, 0), (-1, -1), .5, colors.black)]))
+    tail = Table([
+        [Paragraph("<b>Pemulihan / Pengayaan</b>", cell),
+         Paragraph("Bimbingan berfokus dan latihan tambahan.", cell)],
+        [Paragraph("<b>Refleksi</b>", cell), Paragraph("", cell)],
+    ], colWidths=[48 * mm, 124 * mm])
+    tail.setStyle(TableStyle([("GRID", (0, 0), (-1, -1), .5, colors.black)]))
+    title_text = "DAILY LESSON PLAN" if en else "RANCANGAN PENGAJARAN HARIAN"
+    return [Paragraph(title_text, title), Spacer(1, 2 * mm), info,
+            Spacer(1, 3 * mm), phase, Spacer(1, 3 * mm), tail]
+
+
+def _text_objects(piece):
+    if isinstance(piece, Paragraph):
+        yield piece.getPlainText()
+    elif isinstance(piece, Table):
+        for row in piece._cellvalues:
+            for cell in row:
+                yield from _text_objects(cell)
+    elif isinstance(piece, (list, tuple)):
+        for item in piece:
+            yield from _text_objects(item)
+
+
+def _pdf(payload, path):
+    SimpleDocTemplate(str(path), pagesize=A4, leftMargin=14 * mm,
+                      rightMargin=14 * mm, topMargin=12 * mm,
+                      bottomMargin=14 * mm).build(payload)
+    return path.read_bytes()
+
+
+def test_nine_subjects_same_width_teacher_top_right_and_source_preserved(tmp_path):
+    for subject in SUBJECTS:
+        state = {"task": "rph", "subject": subject}
+        before = fixture(subject)
+        original_text = Counter(_text_objects(before))
+        next_story = premium_pdf_story(state, before)
+        assert next_story is not before, subject
+        assert Counter(_text_objects(next_story)) == original_text, subject
+
+        banner = next_story[0]
+        assert isinstance(banner, Table) and len(banner._cellvalues) == 1
+        assert len(banner._cellvalues[0]) == 2
+        assert abs(sum(banner._colWidths) - 172 * mm) < .001
+        assert abs(sum(next_story[2]._colWidths) - 172 * mm) < .001
+        assert abs(sum(next_story[4]._colWidths) - 172 * mm) < .001
+        assert abs(sum(next_story[6]._colWidths) - 172 * mm) < .001
+        teacher = list(_text_objects(banner._cellvalues[0][1]))
+        assert ("Kelas" in teacher or "Class" in teacher), subject
+        assert ("Tarikh" in teacher or "Date" in teacher), subject
+        assert "____" not in " ".join(teacher)
+
+        document = _pdf(next_story, tmp_path / (subject.replace(" ", "_") + ".pdf"))
+        with fitz.open(stream=document, filetype="pdf") as pdf:
+            assert len(pdf) == 1, subject
+            text = pdf[0].get_text()
+            assert "2.1.1" in text and "Aktiviti 1" in text and "Refleksi" in text
+            assert "Kelas" in text or "Class" in text
+            assert pdf[0].rect.width > 590 and pdf[0].rect.height > 840
+        decorated = style_pdf_bytes(document, color_for_state(state))
+        with fitz.open(stream=decorated, filetype="pdf") as pdf:
+            assert len(pdf) == 1
+            assert pdf[0].get_text() == fitz.open(stream=document, filetype="pdf")[0].get_text()
+
+
+def test_specialty_and_unknown_layout_fail_closed():
+    source = fixture("Bahasa Melayu")
+    for state in (
+        {"task": "rph", "subject": "Sains"},
+        {"task": "rph", "subject": "Matematik", "curriculum_version": "DLP"},
+        {"task": "rph", "subject": "English", "programme": "PPKI"},
+        {"task": "rph", "subject": "Pendidikan Islam"},
+        {"task": "rph", "subject": "Bahasa Arab"},
+        {"task": "rpt", "subject": "Bahasa Melayu"},
+    ):
+        assert premium_pdf_story(state, source) is source, state
+
+    damaged = fixture("Bahasa Melayu")
+    damaged[2]._cellvalues[3][0] = Paragraph("Mislabeled", damaged[2]._cellvalues[3][0].style)
+    assert premium_pdf_story({"task": "rph", "subject": "Bahasa Melayu"}, damaged) is damaged
+    too_long = fixture("Bahasa Melayu")
+    too_long[2]._cellvalues[7][1] = Paragraph("Topic " * 60, too_long[2]._cellvalues[7][1].style)
+    assert premium_pdf_story({"task": "rph", "subject": "Bahasa Melayu"}, too_long) is too_long
+
+
+def test_source_app_uses_native_pdf_story_only_at_one_rph_build_site():
+    source = (Path(__file__).resolve().parents[1] / "app.py").read_text("utf-8")
+    needle = "story = premium_pdf_story(s, story)"
+    assert source.count(needle) == 1
+    where = source.index(needle)
+    assert "story.append(tt)" in source[where - 380:where]
+    assert "pdf.build(story,onFirstPage=_hf,onLaterPages=_hf)" in source[where:where + 450]
