@@ -125,6 +125,40 @@ def _existing_label_cell(page, label_box, drawings):
                      label_box.x1+3, label_box.y1+1)
 
 
+def _outer_table_horizontal_bounds(page, title, drawings):
+    """Find a repeated, full-width existing table span; never guess margins.
+
+    ReportLab native RPH often draws individual table rules. A rectangle-
+    based table is supported too. Only reuse a span repeated at least twice
+    below the title; labels/text-only PDFs retain their earlier title box.
+    """
+    import fitz
+
+    spans = {}
+    for item in drawings:
+        rect = item.get("rect")
+        if rect is None:
+            continue
+        box = fitz.Rect(rect)
+        if not (page.rect.width * .63 <= box.width <= page.rect.width * .94
+                and page.rect.x0 + 12 <= box.x0
+                and box.x1 <= page.rect.x1 - 12
+                and title.y1 + 3 < box.y0
+                and box.y0 <= page.rect.y1 - 24
+                and (box.height <= 1.5 or 12 <= box.height <= 110)):
+            continue
+        # Group tiny floating-point differences in the same actual grid.
+        key = (round(box.x0, 1), round(box.x1, 1))
+        spans.setdefault(key, set()).add(round(box.y0, 1))
+    choices = sorted(((len(ys), k) for k, ys in spans.items()),
+                     key=lambda item: (item[0], item[1][1]-item[1][0]),
+                     reverse=True)
+    if not choices or choices[0][0] < 2:
+        return None
+    left, right = choices[0][1]
+    return (left, right)
+
+
 def style_pdf_bytes(original, fill):
     """Return a pastel PDF with byte-identical extracted text and page geometry."""
     if not isinstance(original, bytes) or not original.startswith(b"%PDF-"):
@@ -144,7 +178,15 @@ def style_pdf_bytes(original, fill):
         source_sizes = [(p.rect.width, p.rect.height) for p in pdf]
         source_links = [len(p.get_links()) for p in pdf]
         title = titles[0]
-        border = fitz.Rect(title.x0-8, title.y0-4, title.x1+8, title.y1+4)
+        # Align the title frame with the actual outer table rules whenever
+        # their geometry is sufficiently grounded. This draws decoration only:
+        # every original text glyph, table and PDF link stays in place.
+        drawings = first.get_drawings()
+        outer = _outer_table_horizontal_bounds(first, title, drawings)
+        if outer is None:
+            border = fitz.Rect(title.x0-8, title.y0-4, title.x1+8, title.y1+4)
+        else:
+            border = fitz.Rect(outer[0], title.y0-4, outer[1], title.y1+4)
         if not first.rect.contains(border):
             return original
         first.draw_rect(border, color=(.22, .22, .22),

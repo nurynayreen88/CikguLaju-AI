@@ -393,3 +393,9 @@ Setiap sesi pembaikan baharu perlu merekodkan jenis bahan, rujukan PR, keputusan
 - **DALAM SEMAKAN / CI:** Aduan visual pengguna: lebar luar kotak maklumat di atas, standard, langkah PdP dan refleksi belum sejajar pada contoh BM Tahun 3. Pembetulan mengekalkan semua teks dan mengunci keempat-empat jadual Word LTR kepada satu lebar kandungan A4 yang sama, penjarakan mula kiri sifar, serta grid/cell width mengikut nisbah ruang yang disahkan.
 - Contoh BM Tahun 3 selepas pembetulan telah dirender dan diperiksa: satu halaman A4; empat bingkai luar bermula dan berakhir pada garis sama; teks SK/SP, EMK/PAK21, aktiviti, penilaian dan refleksi kekal.
 - Ujian automatik sembilan subjek Word, bilangan jadual/teks, kotak guru kosong, idempotensi dan Word→PDF A4. **Perubahan PDF native, RTL/Jawi/Arab, Sains/DLP/PPKI tidak dibuat.** Pengesahan muat turun akaun guru Web/Telegram wajib disemak sebelum menanda LIVE. Rujuk isu #1182.
+
+## 21 November 2026 — PDF RPH native: lebar bingkai tajuk diselaraskan
+
+- **DALAM SEMAKAN** (PR baharu): PDF Bahasa Melayu Tahun 3 asli mempunyai tiga jadual maklumat, aktiviti dan refleksi yang sudah sejajar pada x≈53.9–541.4 pt; hanya bingkai tajuk pastel sebelumnya mengikut lebar teks dan kelihatan lebih pendek. Pembaikan mendapati lebar jadual daripada aturan grid mendatar sebenar (sekurang-kurangnya dua aturan sepadan), kemudian melukis bingkai tajuk selari; jika aturan tidak dapat dipastikan, kekalkan gaya lama.
+- Tiada alihan teks, SK/SP, aktiviti atau metadata, tiada reka semula fail PDF. Sepuluh subjek SK menggunakan palet sedia ada; penjana Sains/DLP/PPKI/Bahasa Arab dikecualikan seperti sebelumnya.
+- Ujian mesti mengekalkan teks setiap halaman, geometri A4, pautan, idempotensi, serta memastikan bentuk asal yang tiada grid berulang gagal secara selamat. Pembetulan ini **bukan** jaminan kesetaraan penuh PDF dengan reka bentuk Word kepala guru kanan. Semak muat turun sebenar sebelum status LIVE.
