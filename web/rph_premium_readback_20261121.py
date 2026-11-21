@@ -37,7 +37,7 @@ def premium_rph_details(document):
     fields["Topic" if english else "Tajuk"] = identity.paragraphs[2].text
     # The source Year/Tahun is displayed once in the wide lesson identity.
     # Read it back for source-parity checks without adding a duplicate row.
-    match = re.search(r"\\b(?:Year|Tahun) [1-6]\\b", identity.paragraphs[1].text)
+    match = re.search(r"\b(?:Year|Tahun) [1-6]\b", identity.paragraphs[1].text)
     if match:
         fields["Year" if english else "Tahun/Tingkatan"] = match.group(0)
     # The name of the subject appears in the identity panel, not in the
