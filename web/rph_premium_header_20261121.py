@@ -25,8 +25,13 @@ ALIASES = {
     "kelas": "class", "class": "class",
     "bilangan murid": "students", "number of pupils": "students",
     "tajuk": "topic", "topic": "topic",
+    # Exact verified Pendidikan Islam (Jawi) native display labels.
+    "مات ڤلاجرن": "subject", "تاهون / تيڠکتن": "year",
+    "تاريخ": "date", "هاري": "day", "ماس": "time",
+    "کلس": "class", "بيلڠن موريد": "students", "تاجوق": "topic",
 }
-TITLES = {"rancangan pengajaran harian", "daily lesson plan"}
+TITLES = {"rancangan pengajaran harian", "daily lesson plan",
+          "رنچڠن ڤڠاجرن هارين"}
 
 
 def _node(parent, tag, **attributes):
@@ -50,10 +55,13 @@ def _cell_fill(cell, fill):
     return props
 
 
-def _styled_paragraph(cell, label_cell, value_cell, *, font_size=17):
+def _styled_paragraph(cell, label_cell, value_cell, *, font_size=17, rtl_jawi=False):
     paragraph = _node(cell, "p")
     props = _node(paragraph, "pPr")
     _node(props, "spacing", before=0, after=0, line=220, lineRule="auto")
+    if rtl_jawi:
+        _node(props, "bidi")
+        _node(props, "jc", val="right")
     for i, old_cell in enumerate((label_cell, value_cell)):
         if i:
             separator = _node(paragraph, "r")
@@ -76,11 +84,14 @@ def _styled_paragraph(cell, label_cell, value_cell, *, font_size=17):
     return paragraph
 
 
-def _make_banner(body, first_table, title, rows, fill):
+def _make_banner(body, first_table, title, rows, fill, *, rtl_jawi=False):
     banner = etree.Element(W + "tbl")
     properties = _node(banner, "tblPr")
     _node(properties, "tblW", w="10630", type="dxa")
     _node(properties, "tblLayout", type="fixed")
+    if rtl_jawi:
+        _node(properties, "bidiVisual")
+        _node(properties, "jc", val="right")
     borders = _node(properties, "tblBorders")
     for edge in ("top", "bottom", "left", "right", "insideV"):
         _node(borders, edge, val="single", sz=6, color="6D7C8B")
@@ -111,13 +122,14 @@ def _make_banner(body, first_table, title, rows, fill):
             sz = _node(rpr, "sz")
         sz.set(W + "val", "26")
     for name in ("subject", "year", "topic"):
-        _styled_paragraph(right, *rows[name], font_size=18 if name != "topic" else 16)
+        _styled_paragraph(right, *rows[name], font_size=18 if name != "topic" else 16,
+                          rtl_jawi=rtl_jawi)
     for name in ("class", "date", "day", "time", "students"):
-        _styled_paragraph(left, *rows[name], font_size=15)
+        _styled_paragraph(left, *rows[name], font_size=15, rtl_jawi=rtl_jawi)
     body.insert(body.index(first_table), banner)
 
 
-def premium_header_bytes(document, fill):
+def premium_header_bytes(document, fill, *, rtl_jawi=False):
     """Preserve exactly the original w:t nodes, leaving unsupported layouts alone."""
     if not isinstance(document, bytes) or not document.startswith(b"PK\x03\x04"):
         return document
@@ -153,7 +165,13 @@ def premium_header_bytes(document, fill):
         if title is None:
             return document
         before = Counter(item.text for item in root.iter(W + "t"))
-        _make_banner(body, first, title, rows, fill)
+        # The same XML cell order yields small LEFT for LTR and small RIGHT
+        # for RTL via bidiVisual, preserving the approved curriculum text.
+        if rtl_jawi and " ".join(_text(title).strip().casefold().split()) != "رنچڠن ڤڠاجرن هارين":
+            return document
+        if not rtl_jawi and " ".join(_text(title).strip().casefold().split()) == "رنچڠن ڤڠاجرن هارين":
+            return document
+        _make_banner(body, first, title, rows, fill, rtl_jawi=rtl_jawi)
         for row in details[:len(FIELDS)]:
             first.remove(row)
         after = Counter(item.text for item in root.iter(W + "t"))
