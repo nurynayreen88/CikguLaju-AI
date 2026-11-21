@@ -12,7 +12,11 @@ from io import BytesIO
 import re
 from zipfile import ZipFile
 
-from lxml import etree
+try:
+    from lxml import etree
+except ImportError:
+    # Formatting is optional; the validated Telegram Word must stay usable.
+    etree = None
 
 W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
 DOC = "word/document.xml"
@@ -113,7 +117,7 @@ def _change_paragraph(para) -> bool:
 
 def style_word_activity_titles(document: BytesIO) -> BytesIO:
     """Return a new DOCX stream only when existing numbered headings are styled."""
-    if not isinstance(document, BytesIO):
+    if etree is None or not isinstance(document, BytesIO):
         return document
     original = document.getvalue()
     if not (1000 <= len(original) <= MAX_DOCX and original.startswith(b"PK\x03\x04")):
