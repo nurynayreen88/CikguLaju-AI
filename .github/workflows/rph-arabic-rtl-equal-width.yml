@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - "web/arabic_rph_word.py"
+      - "rph_standalone/bahasa_arab/year*/pdp_*_ar.json"
       - "tests/test_arabic_header_right_20261121.py"
       - "tests/test_arabic_rph_a4_equal_width_20261121.py"
       - "tests/test_arabic_real_source_design_20261121.py"
