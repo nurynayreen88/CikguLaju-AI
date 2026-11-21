@@ -90,5 +90,47 @@ class ActivityTitleWordRegression(unittest.TestCase):
             self.assertTrue(_is_activity_heading(text), text)
 
 
+    def test_actual_word_path_styles_jawi_and_arabic_headings_safely(self):
+        doc = Document()
+        doc.add_paragraph("RPH asal tidak diubah")
+        table = doc.add_table(rows=2, cols=2)
+        table.cell(0, 0).text = "SK"
+        table.cell(0, 1).text = "2.1.1 Standard asal"
+        paragraph = table.cell(1, 1).paragraphs[0]
+        paragraph.add_run(
+            "اکتيۏيتي ١\nموريد منوليس جاوابن."
+            "\nالنشاط ٢: مناقشة\nالمعلم يشرح الموضوع."
+        )
+        original = BytesIO()
+        doc.save(original)
+        _, original_words = _read(original.getvalue())
+        styled = style_word_activity_titles(original)
+        updated, updated_words = _read(styled.getvalue())
+        self.assertEqual(original_words, updated_words)
+        found = {}
+        for run in updated.iter(W + "r"):
+            props = run.find(W + "rPr")
+            bold = props is not None and props.find(W + "b") is not None
+            for word in run.iter(W + "t"):
+                found[word.text] = bold
+        self.assertTrue(found["اکتيۏيتي ١"])
+        self.assertTrue(found["النشاط ٢: مناقشة"])
+        self.assertFalse(found["موريد منوليس جاوابن."])
+        self.assertFalse(found["المعلم يشرح الموضوع."])
+        self.assertEqual(
+            Document(BytesIO(styled.getvalue())).tables[0].cell(0, 1).text,
+            "2.1.1 Standard asal",
+        )
+
+    def test_jawi_arabic_instructions_not_mistaken_for_headings(self):
+        for value in (
+            "اکتيۏيتي ١: موريد منوليس جاوابن",
+            "النشاط ٢: المعلم يشرح الموضوع",
+        ):
+            self.assertFalse(_is_activity_heading(value), value)
+        for value in ("اکتيۏيتي ١", "النشاط ٢: مناقشة"):
+            self.assertTrue(_is_activity_heading(value), value)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -23,13 +23,19 @@ DOC = "word/document.xml"
 MAX_XML = 8 * 1024 * 1024
 MAX_DOCX = 15 * 1024 * 1024
 
+# Only existing, standalone numbered headings are eligible, including Jawi/Arabic.
+# This is typographic only: no text or paragraph is inserted or rewritten.
+_NUMBERED_LABEL = r"(?:Aktiviti|Activity|اکتيۏيتي|اکتيۏيتی|النشاط|نشاط)\s+[1-9١-٩][0-9٠-٩]?"
 _HEADING = re.compile(
-    r"^(?:Aktiviti|Activity)\s+[1-9]\d?"
-    r"(?:\s*[:\-–—]\s*[^.!?\n]{1,75})?$",
+    rf"^{_NUMBERED_LABEL}(?:\s*[:\-–—]\s*[^.!?\n]{{1,75}})?$",
     re.IGNORECASE,
 )
+_HEADING_PREFIX = re.compile(
+    rf"^{_NUMBERED_LABEL}\s*[:\-–—]\s*", re.IGNORECASE,
+)
 _INSTRUCTION_START = re.compile(
-    r"^(?:Guru|Murid|Teacher|Pupil|Pupils|Student|Students)\b",
+    r"^(?:Guru|Murid|Teacher|Pupil|Pupils|Student|Students"
+    r"|ݢورو|ڬورو|موريد|المعلم|الطلاب)\b",
     re.IGNORECASE,
 )
 
@@ -38,10 +44,7 @@ def _is_activity_heading(value: str) -> bool:
     value = " ".join(value.split())
     if not _HEADING.fullmatch(value):
         return False
-    remainder = re.sub(
-        r"^(?:Aktiviti|Activity)\s+[1-9]\d?\s*[:\-–—]\s*",
-        "", value, flags=re.IGNORECASE,
-    )
+    remainder = _HEADING_PREFIX.sub("", value)
     return remainder == value or not _INSTRUCTION_START.match(remainder)
 
 
