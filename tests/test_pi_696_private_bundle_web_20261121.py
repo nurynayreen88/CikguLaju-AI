@@ -20,6 +20,31 @@ class TestPIPremiumPrivateBundle(unittest.TestCase):
             self.assertEqual(options[-1]["pdp_no"], pi.YEARS[year])
             self.assertEqual(pi.unit_option(year)[0]["value"], "RPH Premium 2027")
 
+    def test_jawi_detection(self):
+        self.assertTrue(pi._is_jawi("موريد برايسي"))
+        self.assertTrue(pi._is_jawi("4 ڤرماتا"))
+        self.assertFalse(pi._is_jawi("4 Bestari"))
+        self.assertFalse(pi._is_jawi("2027-01-11"))
+
+    def test_pdf_header_can_accept_class_details_without_changing_source(self):
+        try:
+            import fitz
+        except ImportError:
+            self.skipTest("PyMuPDF not installed in minimal Web security test")
+        source = fitz.open()
+        source.new_page(width=595, height=842)
+        original = source.tobytes()
+        amended = pi._fill_pdf_fields(original, {
+            "class": "4 Bestari", "date": "2027-01-11",
+            "time": "08:00 - 09:00", "students": "32",
+            "reflection": "",
+        })
+        self.assertEqual(original, source.tobytes())
+        parsed = fitz.open(stream=amended, filetype="pdf")
+        rendered = parsed[0].get_text()
+        for field in ("4 Bestari", "2027-01-11", "08:00 - 09:00", "32"):
+            self.assertIn(field, rendered)
+
     def test_invalid_years_and_lesson_tokens_are_rejected(self):
         for selection in ((1, "1"), (7, "1"), (2, "0"), (2, "113"),
                           (6, "144"), (2, "001"), (2, "-2"), (2, "1/../x")):
