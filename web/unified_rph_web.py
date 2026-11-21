@@ -28,6 +28,8 @@ from web import native_telegram_sjkt_math_client as sjkt
 from web.english_rpt_2027_http import _account, _has_paid_access
 from web.english_y5_standalone_runtime import CHOICE_LESSONS, adapt_rows as year5_rows
 from web.rph_teacher_reflection import clean_reflection
+from web.pi_696_private_bundle import (UNIT as PI_PREMIUM_UNIT, PrivatePIRPHUnavailable,
+                                        valid_pdp as valid_pi_pdp, request_private_document)
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX = ROOT / "audits/english_primary_2_6_official_sow_index_20261103.json"
@@ -879,6 +881,21 @@ def create_blueprint():
                 "year": year, "subject": subject, "unit": unit,
                 "lesson": token, "teacher": teacher,
             }, None
+        # A distinct premium option includes all 696 authentic Word/PDF pairs,
+        # including six additional PdP; never reinterpret an RPT row token.
+        # Retain existing PI native master-RPT navigation and downloads unchanged.
+        if subject == "PI" and unit == PI_PREMIUM_UNIT:
+            try:
+                number = valid_pi_pdp(year, token)
+            except ValueError:
+                return None, (jsonify({
+                    "error": "Pilihan PdP Pendidikan Islam tidak sah.",
+                    "code": "PI_PREMIUM_PDP_INVALID"}), 400)
+            return {
+                "source": "pi-696-private-bundle",
+                "year": year, "subject": subject, "unit": unit,
+                "lesson": number, "teacher": teacher,
+            }, None
         # Pendidikan Islam still resolves its own exact native master RPT row.
         if subject == "PI":
             from web.native_verified_rpt_rph_client import (
@@ -1055,7 +1072,9 @@ def create_blueprint():
                   "trial" if valid_credits and credits > 0 else
                   "exhausted" if valid_credits and credits == 0 else
                   "unavailable")
-        result={"available": True, "generator": "telegram-native",
+        result={"available": True, "generator": (
+                    "pi-premium-private" if selected.get("source") == "pi-696-private-bundle"
+                    else "telegram-native"),
                 "download_allowed": allowed, "access_status": access}
         # Preserve the existing JSON contract for English/BM/PI/other users.
         # Publish DRAF and format restrictions only for the new subjects.
@@ -1125,6 +1144,10 @@ def create_blueprint():
             elif selected.get("source") == "telegram-native-bm-pdp":
                 from web.native_telegram_bm_rph_client import request_native_bm_rph
                 document = request_native_bm_rph(selected, fmt)
+            elif selected.get("source") == "pi-696-private-bundle":
+                from web_v1_telegram_auth_routes import _config
+                document = request_private_document(
+                    selected["year"], selected["lesson"], fmt, selected["teacher"], _config())
             elif selected.get("source") == "telegram-verified-rpt-master":
                 from web.native_verified_rpt_rph_client import request_verified_rpt_rph
                 document = request_verified_rpt_rph(selected, fmt)
@@ -1152,9 +1175,9 @@ def create_blueprint():
                 document = request_integrated(selected, fmt)
             else:
                 document = request_native_rph(selected, fmt)
-        except (NativeRPHUnavailable, ValueError):
+        except (NativeRPHUnavailable, PrivatePIRPHUnavailable, ValueError):
             return None, (jsonify({
-                "error": "Penjana RPH Telegram belum dapat dihubungi. Pilihan guru dikekalkan; cuba semula.",
+                "error": "Fail RPH bagi PdP ini belum boleh dimuat turun. Pilihan guru dikekalkan.",
                 "code": "TELEGRAM_RPH_GENERATOR_UNAVAILABLE"
             }), 503), None
         # Matematik only: check clear defects in the REAL Telegram Word/PDF
@@ -1220,7 +1243,9 @@ def create_blueprint():
         response = send_file(document,
             mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
             as_attachment=True,download_name=filename,conditional=False)
-        response.headers["X-RPH-Generator"] = "telegram-native"
+        response.headers["X-RPH-Generator"] = (
+            "pi-premium-private" if selected.get("source") == "pi-696-private-bundle"
+            else "telegram-native")
         response.headers["X-RPH-Access-Mode"] = (
             "paid" if g.cikgulaju_rph_paid else "trial")
         if trial_remaining is not None:
@@ -1353,7 +1378,9 @@ def create_blueprint():
         filename = f"CIKGULAJU_RPH_{selected['subject']}_TAHUN_{selected['year']}_{lesson_tag}.pdf"
         response = send_file(document,mimetype="application/pdf",
             as_attachment=True,download_name=filename,conditional=False)
-        response.headers["X-RPH-Generator"] = "telegram-native"
+        response.headers["X-RPH-Generator"] = (
+            "pi-premium-private" if selected.get("source") == "pi-696-private-bundle"
+            else "telegram-native")
         response.headers["X-RPH-Access-Mode"] = (
             "paid" if g.cikgulaju_rph_paid else "trial")
         if trial_remaining is not None:
