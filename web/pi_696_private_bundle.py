@@ -133,7 +133,14 @@ def _personalize_word(data, teacher):
             paragraph.add_run(value).font.name = "Amiri"
             paragraph.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     if teacher.get("reflection"):
-        raise PrivatePIRPHUnavailable("Manual reflection not supported for this source")
+        last = document.tables[-1]
+        if not last.rows or len(last.columns) != 2:
+            raise PrivatePIRPHUnavailable("Reflection panel unavailable")
+        reflection_cell = last.cell(len(last.rows) - 1, 1)
+        if reflection_cell.text.strip():
+            raise PrivatePIRPHUnavailable("Original reflection is not blank")
+        reflection_cell.paragraphs[0].add_run(
+            str(teacher["reflection"]).strip()).font.name = "Amiri"
     output = BytesIO()
     document.save(output)
     return output.getvalue()
@@ -170,5 +177,54 @@ def request_private_document(year, lesson, fmt, teacher, config):
         raise ValueError("Invalid private RPH request")
     if not _metadata_present(teacher):
         return BytesIO(_file(year, n, fmt, config))
-    docx = _personalize_word(_file(year, n, "word", config), teacher)
-    return BytesIO(docx if fmt == "word" else _pdf_from_word(docx))
+    if fmt == "pdf":
+        # Preserve original PDF geometry; only fill its existing blank cells.
+        return BytesIO(_fill_pdf_fields(_file(year, n, "pdf", config), teacher))
+    word = _personalize_word(_file(year, n, "word", config), teacher)
+    return BytesIO(word)
+
+
+def _fill_pdf_fields(data, teacher):
+    """Fill four consistently positioned blank Jawi header cells in original PDF."""
+    try:
+        import fitz
+        document = fitz.open(stream=data, filetype="pdf")
+        page = document[0]
+        values = [str(teacher.get(k) or "").strip()
+                  for k in ("class", "date", "time", "students")]
+        # Original Jawi labels start at (38, 20.5); only unused metadata
+        # cells are written. Never obscure the lesson title or SK/SP.
+        font = "helv"
+        font_file = Path(__file__).resolve().parents[1] / "fonts/jawi/Amiri-Regular.ttf"
+        if font_file.is_file():
+            page.insert_font(fontname="amiri", fontfile=str(font_file))
+            font = "amiri"
+        for index, value in enumerate(values):
+            if not value:
+                continue
+            top = 24 + (20.7 * index)
+            rect = fitz.Rect(91, top, 213, top + 17)
+            remaining = page.insert_textbox(rect, value, fontsize=9, fontname=font)
+            if remaining < 0:
+                raise PrivatePIRPHUnavailable("Teacher detail too long for existing box")
+        reflection = str(teacher.get("reflection") or "").strip()
+        if reflection:
+            labels = [
+                span
+                for block in page.get_text("dict")["blocks"]
+                for line in block.get("lines", ())
+                for span in line.get("spans", ())
+                if "رفليكسي" in span["text"] or "رفليکسي" in span["text"]
+            ]
+            if not labels:
+                raise PrivatePIRPHUnavailable("Reflection panel unavailable")
+            top = float(labels[-1]["bbox"][1]) + 2
+            rect = fitz.Rect(38, top, 430, min(top + 35, page.rect.y1 - 20))
+            if rect.height < 12 or page.insert_textbox(
+                    rect, reflection, fontsize=8, fontname=font) < 0:
+                raise PrivatePIRPHUnavailable("Manual reflection too long for the available box")
+        return document.tobytes(garbage=3, deflate=True)
+    except PrivatePIRPHUnavailable:
+        raise
+    except Exception as exc:
+        raise PrivatePIRPHUnavailable("Unable to fill the original PDF safely") from exc
