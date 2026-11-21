@@ -86,7 +86,6 @@ class TestOnePdPReflow(unittest.TestCase):
         body=all_text(output)
         for i in (2,3,4,6,7,8,9,10,11,12,13,14):
             self.assertIn("Original academic content "+str(i),body)
-        self.assertIn("رفليكسي", body) if False else None  # Jawi labels differ by source.
         self.assertNotIn("DRAF UNTUK SEMAKAN GURU",body)
         self.assertEqual(len(output.tables[0].cell(0,1).tables[0].rows),4)
 
