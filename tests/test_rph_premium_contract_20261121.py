@@ -96,7 +96,7 @@ def test_every_registered_native_ltr_subject_is_in_word_and_pdf_regression():
         "SUBJECTS"))
     word_tested = set(_literal_tuple(
         ROOT / "tests/test_rph_premium_header_20261121.py",
-        "names", "test_all_nine_legacy_subjects_keep_every_source_word_and_header_right"))
+        "names", "test_all_nine_legacy_subjects_keep_every_source_word_and_header_left"))
     assert {item.casefold() for item in pdf_tested} == allowed
     assert {item.casefold() for item in word_tested} == allowed
 
@@ -137,7 +137,7 @@ def test_existing_outer_widths_and_header_fields_are_explicitly_fixed():
     assert layout["pdf_outer_table_width_mm"] == 172
     assert layout["pdf_story_flowables"] == 7
     assert len(layout["required_table_sections"]) == 4
-    assert layout["pdf_teacher_fields_right"] == [
+    assert layout["pdf_teacher_fields_left"] == [
         "class", "date", "day", "time", "pupil_count",
     ]
     for labels in (EXPECTED_BM, EXPECTED_EN):
@@ -154,7 +154,7 @@ def test_new_subject_acceptance_has_all_non_destructive_gates():
     assert len(requirements) >= 12
     for required in (
         "equal_left_and_right_outer_edges_on_every_main_box",
-        "teacher_metadata_on_top_right_with_approved_rtl_exception",
+        "short_teacher_box_left_for_ltr_right_for_pi_arabic_rtl",
         "blank_teacher_metadata_without_lines_or_placeholders",
         "word_pdf_content_and_visual_parity_per_generator",
         "verified_sk_sp_descriptions_and_curriculum_mappings",
@@ -205,3 +205,60 @@ def test_one_universal_rph_box_layout_and_only_two_rtl_subjects():
         assert phrase.casefold() in standard.casefold(), phrase
     assert "HANYA SATU reka bentuk kotak RPH" in agents
     assert "bukan pengecualian untuk bentuk atau lebar kotak" in agents
+
+
+
+def test_small_teacher_panel_is_mirrored_for_ltr_and_two_rtl_subjects_only():
+    """Owner requires narrow left for standard subjects, narrow right for PI/BA."""
+    from web.rph_premium_header_20261121 import premium_header_bytes
+    from web.rph_reference_style_20261121 import style_three_table_word_bytes
+    from web.rph_native_pdf_header_20261121 import premium_pdf_story
+    from io import BytesIO
+    from docx import Document
+
+    m = _register()
+    panels = m["universal_layout"]["header_panels"]
+    assert panels["small_panel"] == "teacher_metadata"
+    assert panels["large_panel"] == "lesson_identity"
+    assert panels["ltr"]["small_panel_side"] == "left"
+    assert panels["ltr"]["large_panel_side"] == "right"
+    assert panels["rtl"]["small_panel_side"] == "right"
+    assert panels["rtl"]["large_panel_side"] == "left"
+    assert set(panels["rtl"]["subjects"]) == {"pendidikan islam", "bahasa arab"}
+    assert "short_teacher_box_left_for_ltr_right_for_pi_arabic_rtl" in m["required_checks"]
+
+    # The two native LTR adapters must implement the intended physical order.
+    # Existing suites perform full source-preservation and A4 checks.
+    from test_rph_premium_header_20261121 import fixture as word_fixture
+    from test_rph_native_pdf_header_20261121 import fixture as pdf_fixture
+    for subject in ("Bahasa Melayu", "English", "Matematik"):
+        fill = color_for_state({"task": "rph", "subject": subject})
+        doc = Document(BytesIO(premium_header_bytes(
+            style_three_table_word_bytes(word_fixture(subject), fill), fill)))
+        header = doc.tables[0]
+        assert header.columns[0].width < header.columns[1].width
+        assert ("Kelas" in header.cell(0, 0).text or "Class" in header.cell(0, 0).text)
+        assert ("Mata Pelajaran" in header.cell(0, 1).text
+                or "Subject" in header.cell(0, 1).text)
+        pdf = premium_pdf_story(
+            {"task": "rph", "subject": subject}, pdf_fixture(subject))
+        assert pdf[0]._colWidths[0] < pdf[0]._colWidths[1]
+
+    # The ready Arabic Word renderer is already independently guarded by the
+    # physical A4 RTL suite, where the first 2 columns form the short RIGHT box.
+    from web.arabic_rph_word import render_arabic_word
+    plan = {
+        "year": 2, "lesson": 1, "topic": "المدرسة", "focus": "الفصل",
+        "pages": "2 & 4", "sk": "1.1", "sp": "1.1.1",
+        "content_standard": "الاستماع", "learning_standard": "يسمع التلميذ",
+        "objective": "يذكر التلميذ الكلمات", "success": "يذكر كلمتين",
+        "induction": "يشاهد الصور", "activity_1": "يستمع إلى الكلمات",
+        "activity_2": "يردد الكلمات", "assessment": "يسمي صورتين",
+        "closure": "يلخص النشاط", "materials": "بطاقات", "reflection": "متابعة",
+    }
+    out = BytesIO()
+    render_arabic_word(plan, ("", "", "", "", None), "", out)
+    arabic = Document(BytesIO(out.getvalue()))
+    cols = [col.width.mm for col in arabic.tables[0].columns]
+    assert abs(sum(cols[:2]) - 87.5) < 1
+    assert cols[2] > sum(cols[:2])
