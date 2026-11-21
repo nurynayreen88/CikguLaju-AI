@@ -75,7 +75,7 @@ def xml_tokens(data):
     return Counter(t.text for t in root.iter(W + "t"))
 
 
-def test_all_nine_legacy_subjects_keep_every_source_word_and_header_left():
+def test_all_nine_legacy_subjects_keep_every_source_word_and_header_right():
     names = (
         "Bahasa Melayu", "English", "Matematik", "Sejarah",
         "Pendidikan Muzik", "Pendidikan Jasmani dan Pendidikan Kesihatan",
@@ -91,12 +91,12 @@ def test_all_nine_legacy_subjects_keep_every_source_word_and_header_left():
         assert len(doc.tables) == 4, subject
         header = doc.tables[0]
         assert len(header.columns) == 2
-        teacher = header.cell(0, 0).text
+        teacher = header.cell(0, 1).text
         assert ("Kelas" in teacher or "Class" in teacher), subject
         assert ("Tarikh" in teacher or "Date" in teacher), subject
         assert "____" not in teacher
-        assert "Mata Pelajaran" in header.cell(0, 1).text or "Subject" in header.cell(0, 1).text
-        assert header.columns[0].width < header.columns[1].width
+        assert "Mata Pelajaran" in header.cell(0, 0).text or "Subject" in header.cell(0, 0).text
+        assert header.columns[0].width > header.columns[1].width
         assert len(doc.tables[1].rows) == 7
         assert "2.1.1" in doc.tables[1].cell(1, 1).text
         assert "Aktiviti 1" in doc.tables[2].cell(2, 1).text
@@ -190,8 +190,8 @@ def test_all_four_outer_table_edges_have_the_same_width_for_nine_subjects():
                 assert [int(cell.find(W + "tcPr").find(W + "tcW").get(W + "w"))
                         for cell in row.findall(W + "tc")] == expected
         assert len(set(widths)) == 1, (subject, widths)
-        assert "____" not in Document(BytesIO(aligned)).tables[0].cell(0, 0).text
-        assert int(table_nodes[0].find(W + "tblGrid").findall(W + "gridCol")[0].get(W + "w")) < int(table_nodes[0].find(W + "tblGrid").findall(W + "gridCol")[1].get(W + "w"))
+        assert "____" not in Document(BytesIO(aligned)).tables[0].cell(0, 1).text
+        assert int(table_nodes[0].find(W + "tblGrid").findall(W + "gridCol")[0].get(W + "w")) > int(table_nodes[0].find(W + "tblGrid").findall(W + "gridCol")[1].get(W + "w"))
 
 
 def test_equal_width_fails_closed_when_document_has_unapproved_table_count():
