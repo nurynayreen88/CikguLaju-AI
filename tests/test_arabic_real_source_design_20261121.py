@@ -134,7 +134,7 @@ def test_all_120_real_arabic_lessons_word_to_pdf_a4(tmp_path):
             spans = [span for block in rendered_blocks if block.get("type") == 0
                      for line in block.get("lines", []) for span in line["spans"]]
             arabic_spans = [span for span in spans if any(
-                "\\u0600" <= char <= "\\u08ff" for char in span["text"])]
+                0x0600 <= ord(char) <= 0x08FF for char in span["text"])]
             assert arabic_spans, (word.name, "Arabic script not extractable")
             assert any("amiri" in str(span["font"]).casefold()
                        for span in arabic_spans), (word.name, "Arabic Amiri not embedded")
