@@ -61,6 +61,23 @@ _ACTIVITY_TITLE = re.compile(
 )
 
 
+def _is_standalone_activity_title(value):
+    if not _ACTIVITY_TITLE.fullmatch(value):
+        return False
+    remainder = re.sub(
+        r"^(?:Aktiviti|Activity)\s+[1-9]\d?\s*[.:)–—-]\s*",
+        "", value, flags=re.IGNORECASE,
+    )
+    # Full teacher/pupil instructions are NEVER treated as bold titles.
+    if remainder != value and (
+        re.match(r"^(?:Guru|Murid|Teacher|Pupils|Students)\b",
+                 remainder, re.IGNORECASE)
+        or remainder.endswith((".", "!", "?"))
+    ):
+        return False
+    return True
+
+
 def _bold_pdf_separate_activity_titles(table):
     """Apply bold only to source-authored title lines, never to instructions.
 
@@ -84,7 +101,7 @@ def _bold_pdf_separate_activity_titles(table):
             line = pieces[i]
             if i >= len(pieces) - 1 or "<" in line or ">" in line:
                 continue
-            if _ACTIVITY_TITLE.fullmatch(html.unescape(line).strip()):
+            if _is_standalone_activity_title(html.unescape(line).strip()):
                 pieces[i] = "<b>" + line + "</b>"
                 found = True
         if found:
