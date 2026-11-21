@@ -26,7 +26,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install lightweight layout contract dependencies
-        run: python -m pip install "pytest>=8,<10" "reportlab>=4,<5" "python-docx>=1.1,<2" "lxml>=5,<7"
+        run: python -m pip install "pytest>=8,<10" "reportlab>=4,<5" "python-docx>=1.1,<2" "pymupdf>=1.24,<2" "lxml>=5,<7"
       - name: Check permanent owner-approved RPH contract
         run: python -m pytest -q tests/test_rph_premium_contract_20261121.py
       - name: Compile registry contract regression test
