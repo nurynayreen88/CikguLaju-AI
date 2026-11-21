@@ -1,0 +1,32 @@
+# Offline document evidence. No login, Supabase, quota, teacher identity or DB.
+name: DLP PPKI - all 155 source Word PDF A4
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "dlp_year2_rph.py"
+      - "data/dlp_year2_review.json"
+      - "staging/ppki/render_pengurusan_kehidupan.py"
+      - "staging/ppki/pengurusan_kehidupan_tahun2.json"
+      - "web/rph_supporting_fields_20261121.py"
+      - "web/rph_premium_readback_20261121.py"
+      - "tests/test_dlp_ppki_155_real_source_layout_20261121.py"
+      - ".github/workflows/dlp-ppki-155-real-rph-layout-20261121.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  word-pdf-all-155:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install offline real Word/PDF inspection only
+        run: python -m pip install "pytest>=8,<10" "python-docx>=1.1,<2" "reportlab>=4,<5" "pypdf>=5,<7" "PyMuPDF>=1.24,<2" "flask>=3,<4" "lxml>=5,<7"
+      - name: Check every Year 2 DLP and PPKI pilot lesson with original generators
+        run: python -m pytest -q tests/test_dlp_ppki_155_real_source_layout_20261121.py
+      - name: Keep existing DLP and PPKI premium contract
+        run: python -m pytest -q tests/test_rph_premium_dlp_ppki_20261121.py
