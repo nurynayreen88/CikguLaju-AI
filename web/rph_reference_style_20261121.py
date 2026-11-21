@@ -159,6 +159,8 @@ def style_word_path(path, fill, *, premium_header=False):
     if premium_header:
         from web.rph_premium_header_20261121 import premium_header_bytes
         updated = premium_header_bytes(updated, fill)
+        from web.rph_equal_width_20261121 import equal_width_four_table_bytes
+        updated = equal_width_four_table_bytes(updated)
     if updated == original:
         return False
     temporary = target.with_name(target.name + ".style.tmp")
