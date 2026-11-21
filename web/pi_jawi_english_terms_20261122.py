@@ -129,10 +129,32 @@ def install(runtime) -> bool:
 
     @wraps(original)
     def _pi_jawi_terms(s):
-        if _pi_rph(s):
-            prepare_pi_state(s)
+        if not _pi_rph(s):
+            return original(s)
+        # Capture only the existing source activity/assessment notes.
+        # Do not run a global replacement over the full RPH: that might
+        # unintentionally alter a teacher's reflection, SK/SP or book title.
+        source_notes = []
+        for key in ("rpt_activity_note", "rpt_assessment_note"):
+            if isinstance(s.get(key), str):
+                source_notes.append(s[key])
+        for key in ("_quick_selected_rpt_row_v2388", "quick_rpt_row"):
+            row = s.get(key)
+            if isinstance(row, dict):
+                for field in ("activity_note", "assessment_note"):
+                    if isinstance(row.get(field), str):
+                        source_notes.append(row[field])
+        prepare_pi_state(s)
         text = original(s)
-        return normalize_english_terms(text) if _pi_rph(s) else text
+        if isinstance(text, str):
+            # A few historical generators directly copied the full
+            # RPT note instead of the normalized display field.
+            # Replace only that exact source-note block if it survives.
+            for note in source_notes:
+                revised = normalize_english_terms(note)
+                if note != revised and note in text:
+                    text = text.replace(note, revised)
+        return text
 
     runtime._local_rph_text = _pi_jawi_terms
     setattr(runtime, _MARKER, True)
