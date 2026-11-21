@@ -262,3 +262,46 @@ def test_small_teacher_panel_is_mirrored_for_ltr_and_two_rtl_subjects_only():
     cols = [col.width.mm for col in arabic.tables[0].columns]
     assert abs(sum(cols[:2]) - 87.5) < 1
     assert cols[2] > sum(cols[:2])
+
+
+def test_subject_appears_once_in_header_not_as_repeated_curriculum_row():
+    """Protect single subject identity for all nine audited LTR native generators.
+
+    Specialty RTL/DLP/Sains/PPKI routes require their own Word/PDF audits;
+    this generic native test must never be used as a false release gate.
+    """
+    from io import BytesIO
+    from docx import Document
+    from web.rph_premium_header_20261121 import premium_header_bytes
+    from web.rph_reference_style_20261121 import style_three_table_word_bytes
+    from test_rph_premium_header_20261121 import fixture as word_fixture
+    from test_rph_native_pdf_header_20261121 import fixture as pdf_fixture
+
+    m = _register()
+    identity = m["universal_layout"]["subject_identity"]
+    assert identity["display_location"] == "header_lesson_identity_only"
+    assert identity["duplicate_subject_row_in_curriculum_table"] is False
+    assert set(identity["applies_to"]) == {"LTR", "RTL"}
+    assert identity["preserve_subject_year_topic_from_source"] is True
+    assert identity["audit_word_and_pdf_per_download_route"] is True
+    assert "subject_only_once_in_header_no_duplicate_subject_row_in_main_table" in m["required_checks"]
+    assert "Jangan ulang baris" in STANDARD.read_text(encoding="utf-8")
+
+    for subject in m["regular_native_ltr_subjects"]:
+        display = "English" if subject == "english" else subject.title()
+        fill = color_for_state({"task": "rph", "subject": subject})
+        label = "Subject" if subject == "english" else "Mata Pelajaran"
+        doc_bytes = premium_header_bytes(
+            style_three_table_word_bytes(word_fixture(display), fill), fill
+        )
+        doc = Document(BytesIO(doc_bytes))
+        assert label in doc.tables[0].cell(0, 1).text, subject
+        assert not any(
+            row.cells[0].text.strip() == label
+            for table in doc.tables[1:] for row in table.rows
+        ), subject
+        story = premium_pdf_story({"task": "rph", "subject": subject}, pdf_fixture(display))
+        assert story is not None and story is not pdf_fixture(display), subject
+        assert not any(
+            row[0].getPlainText().strip() == label for row in story[2]._cellvalues
+        ), subject
