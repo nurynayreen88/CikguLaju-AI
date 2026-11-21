@@ -137,3 +137,76 @@ def test_real_science_dlp_year2_keeps_three_tables_and_a4():
     assert "21st-century" in fields and "Remedial" in fields and "Enrichment" in fields
     pdf = render("SCIENCE_DLP", units[0], first, "pdf", teacher)
     assert len(PdfReader(BytesIO(pdf)).pages) == 1
+
+
+
+@pytest.mark.parametrize("heading", SAMPLES)
+def test_dlp_sains_matematik_ppki_all_outer_boxes_are_equal_width_a4(heading):
+    """Owner's permanent rule: physical 182 mm grid in each specialty layout.
+
+    This checks actual Word/PDF renderers, not a source-code constant alone.
+    The content and existing RTL/subject-specific procedures are untouched.
+    """
+    import fitz
+
+    is_math = "matematik" in heading[1].casefold() or "mathematics" in heading[1].casefold()
+    teacher = {"class": "", "date": "", "time": "", "students": ""}
+    word = BytesIO()
+    _word(word, heading, DETAILS, ACTIVITIES, FOOTER,
+          mathematics=is_math, teacher=teacher)
+    doc = Document(BytesIO(word.getvalue()))
+    assert len(doc.tables) == 3
+    physical_widths = [sum(column.width.mm for column in table.columns)
+                       for table in doc.tables]
+    assert all(abs(width - 182) < .8 for width in physical_widths), (
+        heading[1], physical_widths,
+    )
+    assert max(physical_widths)-min(physical_widths) < .4
+    assert round(doc.sections[0].page_width.cm, 1) == 21
+    assert round(doc.sections[0].page_height.cm, 1) == 29.7
+
+    output = BytesIO()
+    _pdf(output, heading, DETAILS, ACTIVITIES, FOOTER,
+         mathematics=is_math, teacher=teacher)
+    with fitz.open(stream=output.getvalue(), filetype="pdf") as pdf:
+        assert len(pdf) == 1, (heading[1], len(pdf))
+        page = pdf[0]
+        assert abs(page.rect.width-595.28) < 1
+        assert abs(page.rect.height-841.89) < 1
+        # Actual ReportLab line operators should share both outer edges
+        # across details, activity and reflection tables (not label widths).
+        rules = [
+            fitz.Rect(item["rect"]) for item in page.get_drawings()
+            if 513 < fitz.Rect(item["rect"]).width < 520
+            and fitz.Rect(item["rect"]).height < 1.6
+        ]
+        assert len(rules) >= 5, (heading[1], rules)
+        assert max(rect.x0 for rect in rules)-min(rect.x0 for rect in rules) < 2
+        assert max(rect.x1 for rect in rules)-min(rect.x1 for rect in rules) < 2
+        txt = page.get_text()
+        assert "2.1.1" in txt and "Set Induksi" in txt or (
+            heading[0] == "Daily Lesson Plan" and "Set Induction" in txt
+        )
+
+
+def test_real_ppki_and_dlp_year2_word_table_outer_edges_stay_182mm():
+    """Read the reviewed source bank, not only synthetic display fixtures."""
+    from dlp_year2_rph import catalog, render
+    from staging.ppki.catalog import UNIT, YEAR, catalog as ppki_catalog
+    from staging.ppki.render_pengurusan_kehidupan import render_lesson
+
+    teacher = {"class": "", "date": "", "time": "", "students": "", "reflection": ""}
+    examples = []
+    source = ppki_catalog(UNIT, year=YEAR)
+    examples.append(("PPKI", render_lesson(source, source["lessons"][0], "docx", teacher)))
+    for subject in ("SCIENCE_DLP", "MATH_DLP"):
+        unit = catalog()[subject][0]
+        examples.append((subject, render(subject, unit, unit["lessons"][0], "word", teacher)))
+
+    for label, payload in examples:
+        doc = Document(BytesIO(payload))
+        widths = [sum(column.width.mm for column in table.columns)
+                  for table in doc.tables]
+        assert len(widths) == 3, (label, len(widths))
+        assert max(widths)-min(widths) < .4, (label, widths)
+        assert all(abs(width-182)<.8 for width in widths), (label, widths)
