@@ -12,6 +12,8 @@ on:
       - "web/sains_unit_awal.py"
       - "web/sains_y3_unit_awal.py"
       - "staging/ppki/render_pengurusan_kehidupan.py"
+      - "tests/test_rph_premium_header_20261121.py"
+      - "tests/test_rph_native_pdf_header_20261121.py"
       - "tests/test_arabic_real_source_design_20261121.py"
       - ".github/workflows/rph-all-subject-design-only-20261121.yml"
   workflow_dispatch:
