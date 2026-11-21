@@ -33,6 +33,14 @@ ARCHIVES = {
         "sha256": "f68807065178f15e2acb4dd25caa7f179cad33a02d186327ec89515c9ae10569",
     },
 }
+# PDF-only additive archive for all 696 v2 RPH: Amiri-Bold activity
+# headings re-rendered from their original Jawi Word templates.
+# SHA-256 checked before any user receives a file.
+ARCHIVES["v2-bold-pdf"] = {
+    "object": "rph-premium/pi-2027/v2/696-jawi-bold-pdf-addon.zip",
+    "bytes": 26641162,
+    "sha256": "4387c6808a286fb6855bdb5f48e43a4436ef7264e0b9e916c7067a99f217937d",
+}
 # v2 remains OFF until the new private Storage object exists and is verified.
 # Old v1 remains intact for safe rollback. Never expose a signed Drive URL.
 V2_FLAG = "CIKGULAJU_PI_LOGIN_V2_ENABLED"
@@ -107,9 +115,12 @@ def _verified_zip(base, key, edition):
 
 def _file(year, n, fmt, config):
     base, key = _settings(config)
-    archive = _verified_zip(base, key, _edition())
     if fmt not in ("word", "pdf"):
         raise ValueError("Unsupported format")
+    # Never serve the old non-bold archived PDF when v2 is active.
+    # Word source remains v2, with complex-script bold applied below.
+    edition = "v2-bold-pdf" if fmt == "pdf" and _edition() == "v2" else _edition()
+    archive = _verified_zip(base, key, edition)
     extension = "pdf" if fmt == "pdf" else "docx"
     folder = "PDF" if fmt == "pdf" else "DOCX"
     member = (f"Pendidikan_Islam/Tahun_{year}/{folder}/"
@@ -210,53 +221,22 @@ def _pdf_from_word(word_data):
         return data
 
 
-@lru_cache(maxsize=32)
-def _cached_jawi_bold_pdf(word_data, baseline_pdf):
-    from web.pi_696_jawi_pdf_fix import pdf_is_reliable
-    converted = _pdf_from_word(word_data)
-    if not pdf_is_reliable(converted, baseline_pdf):
-        raise PrivatePIRPHUnavailable("Jawi activity bold or page layout missing")
-    return converted
-
-
 def request_private_document(year, lesson, fmt, teacher, config):
     n = valid_pdp(year, lesson)
     if fmt not in ("word", "pdf") or not isinstance(teacher, dict):
         raise ValueError("Invalid private RPH request")
     personalized = _metadata_present(teacher)
-
-    # v2 source archives contain correct activity text and pre-bold Word
-    # headings, but their complex-script w:bCs markers were omitted.
-    # Apply presentation only, then render a matching Amiri-Bold PDF.
-    if _edition() == "v2":
-        from web.pi_696_jawi_pdf_fix import with_jawi_bold, pdf_is_reliable
-        source_word = _file(year, n, "word", config)
-        word, count = with_jawi_bold(source_word)
-        if fmt == "word":
-            return BytesIO(_personalize_word(word, teacher) if personalized else word)
-        baseline_pdf = _file(year, n, "pdf", config)
-        try:
-            if personalized:
-                output = _pdf_from_word(_personalize_word(word, teacher))
-                if not pdf_is_reliable(output, baseline_pdf):
-                    raise PrivatePIRPHUnavailable("Jawi PDF font or pages invalid")
-            else:
-                output = _cached_jawi_bold_pdf(word, baseline_pdf)
-            return BytesIO(output)
-        except PrivatePIRPHUnavailable as exc:
-            # Protect existing private download availability if the
-            # headless office converter becomes unavailable in production.
-            print("PI Jawi PDF improvement skipped:", type(exc).__name__, flush=True)
-            return BytesIO(_fill_pdf_fields(baseline_pdf, teacher, edition="v2")
-                           if personalized else baseline_pdf)
-
-    if not personalized:
-        return BytesIO(_file(year, n, fmt, config))
+    # All 696 PDFs are pre-rendered and audited from the approved Word
+    # source with Amiri-Bold (no LibreOffice/slow conversion on live Web).
     if fmt == "pdf":
-        return BytesIO(_fill_pdf_fields(
-            _file(year, n, "pdf", config), teacher, edition=_edition()))
-    return BytesIO(_personalize_word(_file(year, n, "word", config), teacher))
-
+        pdf = _file(year, n, "pdf", config)
+        return BytesIO(_fill_pdf_fields(pdf, teacher, edition=_edition())
+                       if personalized else pdf)
+    word = _file(year, n, "word", config)
+    if _edition() == "v2":
+        from web.pi_696_jawi_pdf_fix import with_jawi_bold
+        word, _ = with_jawi_bold(word)
+    return BytesIO(_personalize_word(word, teacher) if personalized else word)
 
 @lru_cache(maxsize=1)
 def _amiri_bytes():
