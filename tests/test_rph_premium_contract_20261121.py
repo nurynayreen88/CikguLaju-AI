@@ -245,7 +245,7 @@ def test_small_teacher_panel_is_mirrored_for_ltr_and_two_rtl_subjects_only():
         assert pdf[0]._colWidths[0] > pdf[0]._colWidths[1]
 
     # The ready Arabic Word renderer is already independently guarded by the
-    # physical A4 RTL suite, where the first 2 columns form the short RIGHT box.
+    # physical A4 RTL suite, where columns 1-2 form the short LEFT box.
     from web.arabic_rph_word import render_arabic_word
     plan = {
         "year": 2, "lesson": 1, "topic": "المدرسة", "focus": "الفصل",
@@ -260,8 +260,8 @@ def test_small_teacher_panel_is_mirrored_for_ltr_and_two_rtl_subjects_only():
     render_arabic_word(plan, ("", "", "", "", None), "", out)
     arabic = Document(BytesIO(out.getvalue()))
     cols = [col.width.mm for col in arabic.tables[0].columns]
-    assert abs(sum(cols[:2]) - 87.5) < 1
-    assert cols[2] > sum(cols[:2])
+    assert abs(sum(cols[1:]) - 87.5) < 1
+    assert cols[0] > sum(cols[1:])
 
 
 def test_subject_appears_once_in_header_not_as_repeated_curriculum_row():
