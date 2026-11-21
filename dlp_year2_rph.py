@@ -499,7 +499,10 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
     opening = [paragraph(heading[0], title),
                paragraph(heading[1], subtitle),
                paragraph(heading[2], label)]
-    teacher_lines = [paragraph(f"<b>{escape(name)}:</b> {escape(value)}", body)
+    # Use the native ReportLab Paragraph parser here. The wrapper helper
+    # escapes markup by design for curriculum content; passing formatting
+    # through that helper prints literal <b> tags in the downloadable PDF.
+    teacher_lines = [Paragraph(f"<b>{escape(name)}:</b> {escape(value)}", body)
                      for name, value in teacher_fields]
     title_panel = Table([[opening, teacher_lines]], colWidths=[118 * mm, 64 * mm], style=[
         ("BACKGROUND", (0, 0), (-1, -1), fill),
