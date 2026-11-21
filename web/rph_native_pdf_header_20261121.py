@@ -57,17 +57,37 @@ def premium_pdf_story(state, story):
     This is a native pre-render ReportLab layout change: no rasterization,
     hidden text, redaction, retyping of source curriculum, or PDF overlays.
     """
+    if not isinstance(state, dict):
+        return story
     fill = color_for_state(state)
-    subject = _normal(state.get("subject")) if isinstance(state, dict) else ""
+    subject = _normal(state.get("subject"))
+    # A legacy native RPH has precisely the title, three tables and three
+    # spacers. Additional flowables signal a different lesson format.
     if (not fill or any(marker in subject for marker in SPECIAL)
-            or not isinstance(story, list) or len(story) < 7):
+            or not isinstance(story, list) or len(story) != 7):
         return story
     title = story[0]
     original_info = story[2]
-    if not isinstance(title, Paragraph) or not isinstance(original_info, Table):
+    expected_title = ("DAILY LESSON PLAN" if subject in
+                      ("english", "bahasa inggeris")
+                      else "RANCANGAN PENGAJARAN HARIAN")
+    if (not isinstance(title, Paragraph)
+            or not isinstance(original_info, Table)
+            or title.getPlainText().strip() != expected_title):
         return story
-    if not isinstance(story[1], Spacer) or not isinstance(story[3], Spacer):
+    if not all(isinstance(story[index], Spacer) for index in (1, 3, 5)):
         return story
+    # All native outer grids must already be the approved 172 mm layout.
+    # Never mix a premium 172 mm banner with a specialty width or phase grid.
+    for table, sizes in (
+        (story[2], (48, 124)), (story[4], (32, 112, 28)),
+        (story[6], (48, 124)),
+    ):
+        if (not isinstance(table, Table)
+                or len(table._colWidths) != len(sizes)
+                or any(abs(width - mm * expected) > 2
+                       for width, expected in zip(table._colWidths, sizes))):
+            return story
     rows = getattr(original_info, "_cellvalues", ())
     if len(rows) < 12 or any(len(row) != 2 for row in rows):
         return story
