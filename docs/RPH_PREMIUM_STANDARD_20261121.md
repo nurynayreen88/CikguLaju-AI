@@ -15,6 +15,11 @@ Dokumen ini ialah kontrak reka bentuk dan penerimaan RPH Word/PDF CikguLaju, **b
 6. Pastikan bahagian penting yang berkenaan tidak hilang: deskripsi **SK/SP** daripada sumber disahkan, objektif, kriteria kejayaan, pengetahuan sedia ada, BBM, EMK/Nilai, KBAT, PAK21, PBD/pentaksiran, set induksi, aktiviti, penutup, pemulihan/pengayaan dan refleksi **auto/manual**. Tiada label dalaman `draf`, `produksi` atau `RPT` yang tersalah dimasukkan dalam RPH pengguna.
 7. **Word dan PDF mesti setara dari segi kandungan dan struktur utama**, walaupun kaedah pembinaan fail berbeza. Jangan mengubah arahan buku teks, SK/SP, susunan Lesson/PdP, pautan audio, atau kandungan asal hanya untuk membaiki bentuk.
 
+
+### Peraturan paparan nama mata pelajaran (21 November 2026)
+
+**Nama mata pelajaran, tahun dan identiti pelajaran dipaparkan di bahagian kepala RPH sahaja.** Jangan ulang baris `Mata Pelajaran` / `Subject` / `مات ڤلاجرن` / `المادة` dalam jadual maklumat PdP/SK/SP di bawah. Buang baris pendua sahaja; **jangan** buang nilai subjek/tahun/tajuk pada kepala atau mengubah SK/SP, objektif, aktiviti dan refleksi. Gunakan susunan kotak kecil guru di **kiri** untuk LTR dan di **kanan** untuk Pendidikan Islam/Jawi serta Bahasa Arab/Arab RTL; lebar keseluruhan kotak atas dan bawah mesti kekal sejajar, dengan garisan penuh dan tiada teks terpotong. Periksa Word **dan** PDF untuk setiap laluan muat turun sebelum menandakan `LIVE DISAHKAN`.
+
 ## 2. Kontrak teknikal semasa (bukan pembenaran untuk override semua subjek)
 
 - **Word native LTR yang diaudit (kotak kiri pendek):** sembilan subjek dalam `docs/rph_premium_contract_20261121.json`. Adapter yang sedia ada menyusun semula 3 jadual lama kepada **4 kotak**: kepala, maklumat PdP, aktiviti, refleksi. Lebar keempat-empat jadual disamakan berdasarkan kawasan cetak A4, maksimum `10630` twips untuk template tersebut. Tetapkan `tblW`, `tblGrid`, `tcW`, indent sifar dan penjajaran yang seragam. Simpan semua teks sumber.
