@@ -12,6 +12,7 @@ from docx.shared import Cm, Pt
 from lxml import etree
 
 from web.rph_premium_header_20261121 import premium_header_bytes
+from web.rph_equal_width_20261121 import equal_width_four_table_bytes
 from web.rph_reference_style_20261121 import color_for_state, style_three_table_word_bytes
 
 W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
@@ -132,7 +133,7 @@ def test_word_to_pdf_a4_one_page(tmp_path):
     for subject in ("Bahasa Melayu", "English", "Matematik"):
         original = fixture(subject)
         fill = color_for_state({"task": "rph", "subject": subject})
-        updated = premium_header_bytes(style_three_table_word_bytes(original, fill), fill)
+        updated = equal_width_four_table_bytes(premium_header_bytes(style_three_table_word_bytes(original, fill), fill))
         word = tmp_path / (subject.replace(" ", "_") + ".docx")
         word.write_bytes(updated)
         out = tmp_path / "pdf"
@@ -145,3 +146,51 @@ def test_word_to_pdf_a4_one_page(tmp_path):
         assert len(pages) == 1
         assert abs(float(pages[0].mediabox.width) - 595.28) < 2
         assert abs(float(pages[0].mediabox.height) - 841.89) < 2
+
+
+
+def test_all_four_outer_table_edges_have_the_same_width_for_nine_subjects():
+    """Native header, standards, activities and reflection use one fixed grid."""
+    cases = (
+        "Bahasa Melayu", "English", "Matematik", "Sejarah", "Pendidikan Muzik",
+        "Pendidikan Jasmani dan Pendidikan Kesihatan",
+        "Pendidikan Moral", "Pendidikan Seni Visual", "Reka Bentuk dan Teknologi",
+    )
+    for subject in cases:
+        fill = color_for_state({"task": "rph", "subject": subject})
+        original = fixture(subject)
+        header = premium_header_bytes(style_three_table_word_bytes(original, fill), fill)
+        aligned = equal_width_four_table_bytes(header)
+        assert aligned != header, subject
+        assert xml_tokens(aligned) == xml_tokens(header), subject
+        assert equal_width_four_table_bytes(aligned) == aligned, subject
+        with ZipFile(BytesIO(header)) as a, ZipFile(BytesIO(aligned)) as b:
+            assert a.namelist() == b.namelist()
+            for name in a.namelist():
+                if name != "word/document.xml":
+                    assert a.read(name) == b.read(name), (subject, name)
+            root = etree.fromstring(b.read("word/document.xml"))
+        table_nodes = root.find(W + "body").findall(W + "tbl")
+        assert len(table_nodes) == 4
+        widths = []
+        for index, table in enumerate(table_nodes):
+            props = table.find(W + "tblPr")
+            outer = props.find(W + "tblW")
+            assert outer.get(W + "type") == "dxa"
+            widths.append(int(outer.get(W + "w")))
+            assert props.find(W + "tblInd").get(W + "w") == "0"
+            assert props.find(W + "jc").get(W + "val") == "left"
+            cols = table.find(W + "tblGrid").findall(W + "gridCol")
+            assert len(cols) == (2, 2, 3, 2)[index]
+            assert sum(int(col.get(W + "w")) for col in cols) == widths[-1]
+            expected = [int(col.get(W + "w")) for col in cols]
+            for row in table.findall(W + "tr"):
+                assert [int(cell.find(W + "tcPr").find(W + "tcW").get(W + "w"))
+                        for cell in row.findall(W + "tc")] == expected
+        assert len(set(widths)) == 1, (subject, widths)
+        assert "____" not in Document(BytesIO(aligned)).tables[0].cell(0, 1).text
+
+
+def test_equal_width_fails_closed_when_document_has_unapproved_table_count():
+    original = fixture("Bahasa Melayu")
+    assert equal_width_four_table_bytes(original) == original
