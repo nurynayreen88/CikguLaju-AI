@@ -209,11 +209,11 @@ def test_real_native_word_main_activity_titles_are_bold_on_separate_lines():
         activity = document.tables[1].cell(2, 1)
         heading = "Activity" if subject == "English" else "Aktiviti"
         activity.text = (
-            f"{heading} 1 – Membaca dan mengenal pasti\\n"
-            "Guru menerangkan langkah dan murid membaca petikan.\\n"
-            f"{heading} 2 – Membandingkan jawapan\\n"
-            "Murid menjawab soalan secara berpasangan.\\n"
-            f"{heading} 3 – Pentaksiran individu\\n"
+            f"{heading} 1 – Membaca dan mengenal pasti\n"
+            "Guru menerangkan langkah dan murid membaca petikan.\n"
+            f"{heading} 2 – Membandingkan jawapan\n"
+            "Murid menjawab soalan secara berpasangan.\n"
+            f"{heading} 3 – Pentaksiran individu\n"
             "Guru menyemak jawapan yang dihasilkan."
         )
         original_text = activity.text
