@@ -47,8 +47,7 @@ def fixture():
     info.alignment = WD_TABLE_ALIGNMENT.RIGHT
     for label, value in (*JAWI_META,
                          ("ستاندرد کاندوڠن", "1.1 منڠنل ڤركارا اوتام"),
-                         ("ستاندرد ڤمبلاجرن", "1.1.1 منرڠکن ڤرلوکن")),
-    :
+                         ("ستاندرد ڤمبلاجرن", "1.1.1 منرڠکن ڤرلوکن")):
         row = info.add_row()
         row.cells[0].text = label
         row.cells[1].text = value
@@ -126,7 +125,8 @@ def test_unrecognized_jawi_or_ltr_input_fails_closed():
     out = BytesIO()
     doc.save(out)
     assert premium_header_bytes(out.getvalue(), "ECE4F6", rtl_jawi=True) == out.getvalue()
-    assert premium_header_bytes(fixture(), "ECE4F6") == fixture()
+    unchanged = fixture()
+    assert premium_header_bytes(unchanged, "ECE4F6") == unchanged
 
 
 def test_pi_rtl_word_renders_a4_without_moving_source_text(tmp_path):
