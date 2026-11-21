@@ -72,6 +72,13 @@ class ActivityTitleWordRegression(unittest.TestCase):
         unknown = BytesIO(b"invalid")
         self.assertIs(style_word_activity_titles(unknown), unknown)
 
+    def test_optional_ooxml_dependency_absence_keeps_original_word(self):
+        from unittest.mock import patch
+        from web import rph_activity_heading_delivery as formatter
+        original = _sample()
+        with patch.object(formatter, "etree", None):
+            self.assertIs(formatter.style_word_activity_titles(original), original)
+
     def test_instructions_are_not_misidentified_as_titles(self):
         for text in (
             "Aktiviti 1: Guru menunjukkan kad.",
