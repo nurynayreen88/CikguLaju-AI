@@ -116,17 +116,28 @@ def test_nine_subjects_same_width_teacher_top_right_and_source_preserved(tmp_pat
         assert ("Tarikh" in teacher or "Date" in teacher), subject
         assert "____" not in " ".join(teacher)
 
+        baseline = _pdf(fixture(subject), tmp_path / (subject.replace(" ", "_") + "-baseline.pdf"))
         document = _pdf(next_story, tmp_path / (subject.replace(" ", "_") + ".pdf"))
+        with fitz.open(stream=baseline, filetype="pdf") as older, \
+             fitz.open(stream=document, filetype="pdf") as newer:
+            old_words = Counter(w[4] for p in older for w in p.get_text("words"))
+            new_words = Counter(w[4] for p in newer for w in p.get_text("words"))
+            assert old_words == new_words, subject
         with fitz.open(stream=document, filetype="pdf") as pdf:
             assert len(pdf) == 1, subject
             text = pdf[0].get_text()
             assert "2.1.1" in text and "Aktiviti 1" in text and "Refleksi" in text
             assert "Kelas" in text or "Class" in text
+            teacher_label = "Class" if subject == "English" else "Kelas"
+            teacher_boxes = pdf[0].search_for(teacher_label)
+            assert teacher_boxes and min(box.x0 for box in teacher_boxes) > 330
+            assert "____" not in text
             assert pdf[0].rect.width > 590 and pdf[0].rect.height > 840
         decorated = style_pdf_bytes(document, color_for_state(state))
         with fitz.open(stream=decorated, filetype="pdf") as pdf:
             assert len(pdf) == 1
-            assert pdf[0].get_text() == fitz.open(stream=document, filetype="pdf")[0].get_text()
+            with fitz.open(stream=document, filetype="pdf") as source_pdf:
+                assert pdf[0].get_text() == source_pdf[0].get_text()
 
 
 def test_specialty_and_unknown_layout_fail_closed():
