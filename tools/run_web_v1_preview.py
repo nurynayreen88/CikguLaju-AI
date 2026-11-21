@@ -52,7 +52,7 @@ def public_rph_sample_pdf():
 def public_all_subject_rph_gallery():
     """Unauthenticated, read-only 16-subject illustrated RPH gallery.
 
-    This never invokes a teacher generator, uses user credits or exposes data.
+    This only serves a checked-in static HTML file with illustrative content.
     The existing reviewed 12-sample PDF route remains unchanged.
     """
     response = send_file(PREVIEW.with_name("Contoh_RPH_Semua_16.html"),
