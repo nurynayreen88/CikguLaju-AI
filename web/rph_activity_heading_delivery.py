@@ -99,8 +99,19 @@ def _change_paragraph(para) -> bool:
         for props, node, _ in lines[idx]:
             if node.tag != W + "t":
                 continue
-            if (props is None or props.find(W + "b") is None
-                    or props.find(W + "b").get(W + "val") in ("0", "false")):
+            # Arabic/Jawi headings also need complex-script bold (w:bCs).
+            # A run with only Latin bold (w:b) may still render unbolded
+            # when its visible letters use the Arabic script.
+            strong = props.find(W + "b") if props is not None else None
+            complex_strong = props.find(W + "bCs") if props is not None else None
+            complex_script = (
+                any("\u0600" <= ch <= "\u08ff" for ch in (node.text or ""))
+                or (props is not None and props.find(W + "rtl") is not None)
+            )
+            if (strong is None or strong.get(W + "val") in ("0", "false")
+                    or (complex_script and
+                        (complex_strong is None or
+                         complex_strong.get(W + "val") in ("0", "false")))):
                 already_bold = False
                 break
     if already_bold:
