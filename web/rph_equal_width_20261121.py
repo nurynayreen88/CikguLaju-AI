@@ -12,7 +12,7 @@ from lxml import etree
 
 W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
 XML = "word/document.xml"
-RATIOS = ((3730, 6900), (530, 1345), (265, 1265, 345), (530, 1345))
+RATIOS = ((6900, 3730), (530, 1345), (265, 1265, 345), (530, 1345))
 MAX_WIDTH = 10630  # Established 18.75 cm RPH content width in twips.
 
 
