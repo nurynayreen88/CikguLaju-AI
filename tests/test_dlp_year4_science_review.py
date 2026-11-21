@@ -9,6 +9,7 @@ import unittest
 
 from docx import Document
 from pypdf import PdfReader
+from web.rph_premium_readback_20261121 import premium_rph_details
 
 from staging.dlp.year4.render_science import LS_CODE, STANDARD_DESCRIPTIONS, export, load_plans
 
@@ -41,9 +42,9 @@ class ScienceDLPYear4Review(unittest.TestCase):
                 with self.subTest(lesson=plan["id"]):
                     stem = plan["id"]
                     word = Document(output / f"{stem}.docx")
-                    self.assertEqual(word.paragraphs[2].text, plan["title"])
+                    self.assertEqual(word.tables[0].cell(0, 0).paragraphs[2].text, plan["title"])
                     self.assertNotRegex(word.core_properties.title or "", INTERNAL_LABEL)
-                    fields = {row.cells[0].text: row.cells[1].text for row in word.tables[0].rows}
+                    fields = premium_rph_details(word)
                     expected_codes = (
                         plan["review_lss"] if "review_lss" in plan else LS_CODE.findall(" ".join(plan["standards"]))
                     )
