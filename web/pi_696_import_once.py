@@ -77,7 +77,8 @@ def _import():
         print("CIKGULAJU_PI_V2_IMPORT_SUCCESS bytes=49779272", flush=True)
     except Exception as exc:
         # Never log the bearer source URL or any credentials.
-        print("CIKGULAJU_PI_V2_IMPORT_FAILED", type(exc).__name__,\n              getattr(exc, "code", ""), flush=True)
+        print("CIKGULAJU_PI_V2_IMPORT_FAILED", type(exc).__name__,
+              getattr(exc, "code", ""), flush=True)
 
 
 def start_when_enabled():
