@@ -68,6 +68,7 @@ def _table(doc, widths, rows, *, header=False, align_right=False):
                 shade.set(qn("w:fill"), _ARABIC_FILL)
                 cell._tc.get_or_add_tcPr().append(shade)
             _paragraph(cell.paragraphs[0], value, bold=is_label)
+    return table
 
 
 def render_arabic_word(plan, teacher_fields, reflection, dest):
@@ -101,18 +102,32 @@ def render_arabic_word(plan, teacher_fields, reflection, dest):
     year = str(plan["year"]).translate(numerals)
     lesson = f"{plan['lesson']:03d}".translate(numerals)
     pages = plan["pages"].replace(" & ", " و").translate(numerals)
-    # A compact, right-side teacher header matches the primary RPH format.
-    # Move only display fields: keep all Arabic curriculum descriptions unchanged.
-    _table(doc, (3.25, 5.5), [
-        ("الفصل", class_name or ""),
-        ("التاريخ", lesson_date),
-        ("الوقت", time or ""),
-        ("عدد التلاميذ", pupils or ""),
-    ], align_right=True)
-    _table(doc, (4.3, 14.4), [
+    # A4 printable width is 18.70 cm (21 cm minus two 1.15 cm margins).
+    # Keep the same 8.75 cm teacher block physically on the RIGHT in RTL,
+    # but share one full-width outer border with the identity panel on the
+    # left. Move, do not duplicate, the three existing curriculum identity
+    # fields into that panel; leave SK/SP and every activity unmodified.
+    identity_rows = (
         ("الصف والحصّة", f"الصفّ {year} • الحصّة {lesson}"),
         ("الوحدة", plan["topic"]),
         ("موضوع الدرس", plan["focus"]),
+    )
+    header = _table(doc, (3.25, 5.5, 9.95), [
+        ("الفصل", class_name or "", ""),
+        ("التاريخ", lesson_date, ""),
+        ("الوقت", time or "", ""),
+        ("عدد التلاميذ", pupils or "", ""),
+    ], align_right=True)
+    identity_cell = header.cell(0, 2).merge(header.cell(3, 2))
+    shade = OxmlElement("w:shd")
+    shade.set(qn("w:val"), "clear")
+    shade.set(qn("w:fill"), _ARABIC_FILL)
+    identity_cell._tc.get_or_add_tcPr().append(shade)
+    for index, (label, value) in enumerate(identity_rows):
+        paragraph = (identity_cell.paragraphs[0] if index == 0
+                     else identity_cell.add_paragraph())
+        _paragraph(paragraph, f"{label}: {value}", bold=(index == 0), size=11)
+    _table(doc, (4.3, 14.4), [
         ("معيار المحتوى", f"\u2066{plan['sk']}\u2069  {plan['content_standard']}"),
         ("معيار التعلّم", f"\u2066{plan['sp']}\u2069  {plan['learning_standard']}"),
         ("هدف التعلّم", plan["objective"]),
