@@ -150,12 +150,15 @@ def style_three_table_word_bytes(document, fill):
     return output.getvalue()
 
 
-def style_word_path(path, fill):
+def style_word_path(path, fill, *, premium_header=False):
     target = Path(path)
     if target.suffix.lower() != ".docx" or not target.is_file():
         return False
     original = target.read_bytes()
     updated = style_three_table_word_bytes(original, fill)
+    if premium_header:
+        from web.rph_premium_header_20261121 import premium_header_bytes
+        updated = premium_header_bytes(updated, fill)
     if updated == original:
         return False
     temporary = target.with_name(target.name + ".style.tmp")
@@ -180,7 +183,10 @@ def install(runtime):
         fill = color_for_state(state)
         if fill is not None and isinstance(path, (str, os.PathLike)):
             try:
-                style_word_path(path, fill)
+                subject = str(state.get("subject") or "").strip().casefold()
+                # Preserve the dedicated Arabic/Jawi right-to-left document layout.
+                style_word_path(path, fill, premium_header=subject not in
+                                ("pendidikan islam", "bahasa arab"))
             except (OSError, ValueError, etree.XMLSyntaxError) as exc:
                 # Fail open to the unchanged original document, never block a
                 # teacher's download because of a decorative formatting pass.

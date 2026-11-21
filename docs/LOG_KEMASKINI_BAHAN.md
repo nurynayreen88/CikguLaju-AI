@@ -377,3 +377,12 @@ Setiap sesi pembaikan baharu perlu merekodkan jenis bahan, rujukan PR, keputusan
 - Ujian setempat penjana persendirian menjana kesemua 234 Word dan 234 PDF, mengesahkan SK/SP dan maklumat guru. Semua PDF RPH dan hasil render Word ialah satu halaman A4. Permintaan tanpa token dan pilihan Lesson daripada unit yang salah ditolak.
 - **MERGED MAIN DAN WEB PRODUKSI.** [PR #943](https://github.com/nurynayreen88/CikguLaju-AI/pull/943) digabung pada `6fe8ebaffbff2ac829945abcdb7bb5730cc6acb5` dan aktif di Render pada 20:56 MYT. [PR #944](https://github.com/nurynayreen88/CikguLaju-AI/pull/944) digabung pada `88f56348295b262a6c92f98eff3ee2e76ee7a5d6` dan aktif di Render pada 20:58 MYT. Ujian CI penjana, penghantaran Telegram, muka depan RPT dan RPH Pantas lulus.
 - Web produksi memberi respons pada pemeriksaan kesediaan dan menerbitkan dua SHA-256 muka depan RPT yang sepadan. Laluan penjana di Telegram menolak permintaan tanpa token. Penghantaran dan muat turun melalui sesi guru produksi masih belum disahkan.
+
+
+## 21 November 2026 — RPH premium kepala guru kanan atas (PR #1189)
+
+- **DALAM SEMAKAN / CI:** Penjana Word RPH native tiga jadual untuk Bahasa Melayu, English, Matematik, Sejarah, Muzik, PJPK, Moral, PSV dan RBT mendapat kotak tajuk/identiti di kiri dan kotak Kelas, Tarikh, Hari, Masa, Bilangan Murid di kanan atas.
+- Teknik selamat: pindah nod teks XML sedia ada daripada lapan baris metadata tanpa mereka semula SK/SP, objektif, aktiviti, penilaian atau rujukan. Pemeriksaan perbezaan setiap `w:t`; jika struktur bukan tiga jadual atau label tidak sepadan, penjana lama kekal.
+- Sains, DLP, PPKI dan Arab/Jawi Pendidikan Islam kekal pada penjana yang telah diluluskan; tiada campur tangan DB, RPT, identiti pengguna, kuota, audio, pautan muat turun atau cetakan lain.
+- Ujian baru meliputi sembilan subjek, metadata kosong tanpa garis bawah, cabang fail bukan standard, idempotensi, Word→PDF A4 satu halaman bagi tiga subjek wakil, dan pengekalan kandungan serta bahagian ZIP selain `document.xml`.
+- **Had:** PDF native masih melalui penjana asal; kesepadanan kepala kanan atas dalam PDF belum selesai dan perlu PR berasingan. Belum ada bukti muat turun sebenar akaun guru di Web/Telegram atau Render LIVE untuk pembetulan ini. Jangan tanda seluruh #1182 selesai sehingga pengesahan dibuat.
