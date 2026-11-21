@@ -6,6 +6,7 @@ on:
       - "web/arabic_rph_word.py"
       - "tests/test_arabic_header_right_20261121.py"
       - "tests/test_arabic_rph_a4_equal_width_20261121.py"
+      - "tests/test_arabic_real_source_design_20261121.py"
       - "tools/other_draft_actual_smoke_20261106.py"
       - ".github/workflows/rph-arabic-rtl-equal-width.yml"
   workflow_dispatch:
@@ -30,6 +31,6 @@ jobs:
       - name: Install test dependencies
         run: python -m pip install "pytest>=8,<10" "python-docx>=1.1,<2" "pymupdf>=1.24,<2"
       - name: Verify RTL, source fields, A4, true PDF grid alignment
-        run: python -m pytest -q tests/test_arabic_header_right_20261121.py tests/test_arabic_rph_a4_equal_width_20261121.py
+        run: python -m pytest -q tests/test_arabic_header_right_20261121.py tests/test_arabic_rph_a4_equal_width_20261121.py tests/test_arabic_real_source_design_20261121.py
       - name: Compile renderer and tests
-        run: python -m py_compile web/arabic_rph_word.py tests/test_arabic_rph_a4_equal_width_20261121.py
+        run: python -m py_compile web/arabic_rph_word.py tests/test_arabic_rph_a4_equal_width_20261121.py tests/test_arabic_real_source_design_20261121.py
