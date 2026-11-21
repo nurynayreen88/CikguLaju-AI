@@ -8,6 +8,9 @@ Unexpected source layouts fail closed to the existing PDF story.
 """
 from __future__ import annotations
 
+import html
+import re
+
 from reportlab.lib import colors
 from reportlab.lib.units import mm
 from reportlab.platypus import Paragraph, Spacer, Table, TableStyle
@@ -49,6 +52,49 @@ def _inner_identity_table(rows, indices, widths):
                   colWidths=[x * mm for x in widths], hAlign="LEFT")
     table.setStyle(_table_style())
     return table
+
+
+_ACTIVITY_TITLE = re.compile(
+    r"^(?:Aktiviti|Activity)\s+[1-9]\d?"
+    r"(?:\s*[.:)–—-]\s*\S.{0,109})?$",
+    re.IGNORECASE,
+)
+
+
+def _bold_pdf_separate_activity_titles(table):
+    """Apply bold only to source-authored title lines, never to instructions.
+
+    Existing <br/> boundaries and curriculum text remain identical; odd
+    ReportLab markup stays untouched rather than risking broken PDF output.
+    """
+    for row in getattr(table, "_cellvalues", ()):
+        if (len(row) != 3
+                or not isinstance(row[0], Paragraph)
+                or not isinstance(row[1], Paragraph)):
+            continue
+        if _normal(row[0].getPlainText()) not in ("aktiviti utama", "main activities"):
+            continue
+        source = row[1]
+        markup = source.text
+        if not isinstance(markup, str) or "<br" not in markup.casefold():
+            continue
+        pieces = re.split(r"(<br\s*/?>)", markup, flags=re.IGNORECASE)
+        found = False
+        for i in range(0, len(pieces), 2):
+            line = pieces[i]
+            if i >= len(pieces) - 1 or "<" in line or ">" in line:
+                continue
+            if _ACTIVITY_TITLE.fullmatch(html.unescape(line).strip()):
+                pieces[i] = "<b>" + line + "</b>"
+                found = True
+        if found:
+            try:
+                styled = Paragraph("".join(pieces), source.style)
+                if styled.getPlainText() == source.getPlainText():
+                    row[1] = styled
+            except (ValueError, TypeError):
+                # Fail closed to original content if ReportLab parsing differs.
+                continue
 
 
 def premium_pdf_story(state, story):
@@ -122,4 +168,5 @@ def premium_pdf_story(state, story):
         ("TOPPADDING", (0, 0), (-1, -1), 2.5),
         ("BOTTOMPADDING", (0, 0), (-1, -1), 2.5),
     ]))
+    _bold_pdf_separate_activity_titles(story[4])
     return [header, Spacer(1, 3 * mm), details, *story[3:]]
