@@ -141,3 +141,43 @@ def test_path_skips_unknown_pdf_and_invalid_color(tmp_path):
         pass
     else:
         raise AssertionError("Invalid RGB must be rejected")
+
+
+def test_reportlab_separate_rule_grid_colors_full_label_cell():
+    """Regression for production ReportLab's individual h/v table lines."""
+    buffer = BytesIO()
+    page = Canvas(buffer, pagesize=A4)
+    page.setFont("Helvetica-Bold", 14)
+    page.drawCentredString(298, 800, "RANCANGAN PENGAJARAN HARIAN")
+    page.setFont("Helvetica", 9)
+    left, divider, right = 35, 195, 555
+    top, middle, bottom = 760, 740, 720
+    for y in (top, middle, bottom):
+        page.line(left, y, right, y)
+    for x in (left, divider, right):
+        page.line(x, bottom, x, top)
+    page.drawString(42, 745, "MATA PELAJARAN")
+    page.drawString(202, 745, "Matematik")
+    page.drawString(42, 725, "STANDARD KANDUNGAN")
+    page.drawString(202, 725, "4.1")
+    page.save()
+
+    original = buffer.getvalue()
+    colored = style_pdf_bytes(original, "F0EBFA")
+    before = fitz.open(stream=original, filetype="pdf")
+    after = fitz.open(stream=colored, filetype="pdf")
+    try:
+        assert before[0].get_text() == after[0].get_text()
+        assert len(before) == len(after) == 1
+        # A full label cell should be filled: 160 pt, not a text-width strip.
+        shaded = [
+            item["rect"] for item in after[0].get_drawings()
+            if item.get("fill") is not None and
+            155 <= item["rect"].width <= 165 and
+            18 <= item["rect"].height <= 22
+        ]
+        assert len(shaded) >= 2, shaded
+        assert all(rect.x1 <= divider+2 for rect in shaded)
+    finally:
+        before.close()
+        after.close()
