@@ -132,7 +132,9 @@ def test_broken_metadata_order_is_fail_closed():
 def test_word_to_pdf_a4_one_page(tmp_path):
     import subprocess
     from pypdf import PdfReader
-    for subject in ("Bahasa Melayu", "English", "Matematik"):
+    for subject in ("Bahasa Melayu", "English", "Matematik", "Sejarah", "Pendidikan Muzik",
+                    "Pendidikan Jasmani dan Pendidikan Kesihatan", "Pendidikan Moral",
+                    "Pendidikan Seni Visual", "Reka Bentuk dan Teknologi"):
         original = fixture(subject)
         fill = color_for_state({"task": "rph", "subject": subject})
         updated = equal_width_four_table_bytes(premium_header_bytes(style_three_table_word_bytes(original, fill), fill))
@@ -148,6 +150,15 @@ def test_word_to_pdf_a4_one_page(tmp_path):
         assert len(pages) == 1
         assert abs(float(pages[0].mediabox.width) - 595.28) < 2
         assert abs(float(pages[0].mediabox.height) - 841.89) < 2
+        # Inspect the rendered PDF font, not merely the Word OOXML flags.
+        import fitz
+        with fitz.open(str(out / (word.stem + ".pdf"))) as real_pdf:
+            spans = [span for block in real_pdf[0].get_text("dict")["blocks"]
+                     for line in block.get("lines", []) for span in line["spans"]]
+        assert any("Aktiviti 1" in span["text"]
+                   and "Bold" in span["font"] for span in spans), subject
+        assert any("Murid membaca petikan" in span["text"]
+                   and "Bold" not in span["font"] for span in spans), subject
 
 
 
@@ -203,8 +214,9 @@ def test_real_native_word_main_activity_titles_are_bold_on_separate_lines():
     """Teacher-facing Word: existing title lines bold; teaching text unchanged."""
     from web.rph_reference_style_20261121 import style_three_table_word_bytes
 
-    for subject in ("Bahasa Melayu", "English", "Matematik",
-                    "Pendidikan Muzik", "Sejarah"):
+    for subject in ("Bahasa Melayu", "English", "Matematik", "Sejarah", "Pendidikan Muzik",
+                    "Pendidikan Jasmani dan Pendidikan Kesihatan", "Pendidikan Moral",
+                    "Pendidikan Seni Visual", "Reka Bentuk dan Teknologi"):
         document = Document(BytesIO(fixture(subject)))
         activity = document.tables[1].cell(2, 1)
         heading = "Activity" if subject == "English" else "Aktiviti"
