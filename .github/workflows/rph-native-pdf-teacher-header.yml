@@ -1,0 +1,30 @@
+name: RPH PDF kanan atas dan pemeliharaan SK SP
+
+on:
+  pull_request:
+    paths:
+      - "app.py"
+      - "web/rph_native_pdf_header_20261121.py"
+      - "tests/test_rph_native_pdf_header_20261121.py"
+      - ".github/workflows/rph-native-pdf-teacher-header.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  native-pdf-header:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install rendering dependencies
+        run: python -m pip install "pytest>=8,<10" "reportlab>=4,<5" "pymupdf>=1.24,<2" "lxml>=5,<7"
+      - name: Test teacher header and unchanged lesson content
+        run: python -m pytest tests/test_rph_native_pdf_header_20261121.py -q
+      - name: Keep existing native PDF pastel checks
+        run: python -m pytest tests/test_rph_reference_pdf_style_20261121.py -q
+      - name: Syntax-check affected production entrypoint
+        run: python -m py_compile app.py web/rph_native_pdf_header_20261121.py
