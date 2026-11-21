@@ -1,0 +1,51 @@
+name: RPH contoh semua 16 subjek - hasilkan PDF awam
+on:
+  pull_request:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - "web_v1_static_preview/Contoh_RPH_Semua_16.html"
+      - "tools/build_public_rph_16_pdf.py"
+      - ".github/workflows/web-build-16-rph-pdf-20261121.yml"
+  push:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - "web_v1_static_preview/Contoh_RPH_Semua_16.html"
+      - "tools/build_public_rph_16_pdf.py"
+      - ".github/workflows/web-build-16-rph-pdf-20261121.yml"
+permissions:
+  contents: write
+jobs:
+  create-and-verify-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fonts for Jawi and Arabic and PDF renderer
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq fonts-hosny-amiri fonts-dejavu-core
+          python -m pip install --disable-pip-version-check 'weasyprint>=62,<70' 'PyMuPDF>=1.25,<2'
+      - name: Build and audit 16 A4 pages
+        run: python tools/build_public_rph_16_pdf.py
+      - name: Save PDF artifact for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: contoh-rph-semua-16
+          path: web_v1_static_preview/CikguLaju_Contoh_RPH_Semua_16.pdf
+          retention-days: 14
+      - name: Publish new PDF to production branch without replacing previous 12
+        if: github.event_name == 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add web_v1_static_preview/CikguLaju_Contoh_RPH_Semua_16.pdf
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish verified 16-subject public RPH PDF"
+            git push origin HEAD:production/cikgulaju-web-20261105
+          fi

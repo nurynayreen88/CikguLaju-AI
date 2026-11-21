@@ -1,0 +1,31 @@
+name: Web login - 16 contoh RPH semua subjek
+on:
+  pull_request:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - "web_v1_static_preview/Contoh_RPH_Semua_16.html"
+      - "web_v1_static_preview/index.html"
+      - "tools/run_web_v1_preview.py"
+      - "tests/test_web_login_16_rph_20261121.py"
+      - ".github/workflows/web-login-rph-16-contoh-20261121.yml"
+  push:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - "web_v1_static_preview/Contoh_RPH_Semua_16.html"
+      - "web_v1_static_preview/index.html"
+      - "tools/run_web_v1_preview.py"
+      - "tests/test_web_login_16_rph_20261121.py"
+jobs:
+  public-gallery-contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Semak 16 contoh, arah RTL, pautan login dan muat turun
+        run: python -m unittest discover -s tests -p "test_web_login_16_rph_20261121.py" -v
+      - name: Semak sintaks endpoint awam
+        run: python -m py_compile tools/run_web_v1_preview.py

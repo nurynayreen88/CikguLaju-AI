@@ -12,7 +12,7 @@ import sqlite3
 from pathlib import Path
 import sys
 
-from flask import Flask, send_file, jsonify, request
+from flask import Flask, send_file, jsonify, request, redirect
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -46,6 +46,29 @@ def preview():
 def public_rph_sample_pdf():
     return send_file(PREVIEW.with_name("CikguLaju_Contoh_RPH.pdf"),
                      mimetype="application/pdf", max_age=300, conditional=True)
+
+
+@app.get("/contoh-rph-semua")
+def public_all_subject_rph_gallery():
+    """Unauthenticated, read-only 16-subject illustrated RPH gallery.
+
+    This only serves a checked-in static HTML file with illustrative content.
+    The existing reviewed 12-sample PDF route remains unchanged.
+    """
+    response = send_file(PREVIEW.with_name("Contoh_RPH_Semua_16.html"),
+                         mimetype="text/html", max_age=300, conditional=True)
+    response.headers["X-Content-Type-Options"] = "nosniff"
+    return response
+
+
+@app.get("/contoh-rph-semua.pdf")
+def public_all_subject_rph_pdf():
+    """Public 16-page PDF generated and audited in CI; never replace the old 12."""
+    pdf = PREVIEW.with_name("CikguLaju_Contoh_RPH_Semua_16.pdf")
+    if not pdf.is_file():
+        # Safe public fallback until the CI-generated asset is published.
+        return redirect("/contoh-rph-semua", code=302)
+    return send_file(pdf, mimetype="application/pdf", max_age=300, conditional=True)
 
 
 @app.get("/assets/primary-subjects.js")

@@ -63,11 +63,32 @@ class ProductionSourceInventory(unittest.TestCase):
                 html = response.get_data(as_text=True)
                 self.assertEqual(response.status_code, 200)
         self.assertLess(html.index("Lihat Contoh RPH"), html.index('id="email-auth-login"'))
-        self.assertIn("12 contoh RPH SK, PPKI dan DLP", html)
-        self.assertEqual(re.findall(r'href="/contoh-rph\.pdf[^"]*"', html),
-                         ['href="/contoh-rph.pdf"'])
+        self.assertIn("16 contoh RPH pelbagai subjek, DLP dan PPKI", html)
+        self.assertEqual(re.findall(r'href="/contoh-rph-semua"', html),
+                         ['href="/contoh-rph-semua"'])
         self.assertIn('href="#pilihan-log-masuk"', html)
         self.assertIn('id="pilihan-log-masuk"', html)
+
+    def test_public_rph_all_subjects_gallery_without_login(self):
+        from tools.run_web_production import app
+
+        client = app.test_client()
+        with client.get("/contoh-rph-semua") as response:
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.mimetype, "text/html")
+            html = response.get_data(as_text=True)
+            self.assertEqual(len(re.findall(r'<section id="rph-contoh-\d+" class="page ', html)), 16)
+            self.assertIn("Cetak / Simpan PDF", html)
+            self.assertIn('href="/contoh-rph-semua.pdf"', html)
+            self.assertNotIn("Set-Cookie", response.headers)
+        with client.get("/contoh-rph-semua.pdf") as response:
+            self.assertIn(response.status_code, (200, 302))
+            if response.status_code == 302:
+                self.assertEqual(response.headers.get("Location"), "/contoh-rph-semua")
+            else:
+                self.assertEqual(response.mimetype, "application/pdf")
+                self.assertTrue(response.data.startswith(b"%PDF-"))
+                self.assertEqual(len(re.findall(rb"/Type\s*/Page\b", response.data)), 16)
 
     def test_public_rph_sample_serves_fixed_twelve_page_pdf(self):
         from tools.run_web_production import app
