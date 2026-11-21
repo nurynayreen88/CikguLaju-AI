@@ -4,7 +4,7 @@ from datetime import date
 from unicodedata import bidirectional
 
 from docx import Document
-from docx.enum.table import WD_TABLE_ALIGNMENT, WD_TABLE_DIRECTION
+from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT, WD_TABLE_ALIGNMENT, WD_TABLE_DIRECTION
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
@@ -119,6 +119,11 @@ def render_arabic_word(plan, teacher_fields, reflection, dest):
         ("عدد التلاميذ", pupils or "", ""),
     ], align_right=True)
     identity_cell = header.cell(0, 2).merge(header.cell(3, 2))
+    # Vertical merges inherit empty paragraphs from all four source cells.
+    # Remove those ONLY in this new identity panel to avoid blank lines.
+    for paragraph in list(identity_cell.paragraphs)[1:]:
+        identity_cell._tc.remove(paragraph._p)
+    identity_cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
     shade = OxmlElement("w:shd")
     shade.set(qn("w:val"), "clear")
     shade.set(qn("w:fill"), _ARABIC_FILL)
