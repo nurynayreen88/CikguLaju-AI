@@ -1,0 +1,37 @@
+name: RPH Bahasa Arab RTL — kotak sejajar A4
+
+on:
+  pull_request:
+    paths:
+      - "web/arabic_rph_word.py"
+      - "tests/test_arabic_header_right_20261121.py"
+      - "tests/test_arabic_rph_a4_equal_width_20261121.py"
+      - "tools/other_draft_actual_smoke_20261106.py"
+      - ".github/workflows/rph-arabic-rtl-equal-width.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  arabic-rtl-a4:
+    name: Semak Word RTL dan tepi empat kotak sebenar PDF
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install renderer and tested fonts
+        run: |
+          sudo apt-get -o Acquire::Retries=2 update -qq
+          sudo apt-get -o Acquire::Retries=2 install -y -qq --no-install-recommends libreoffice-writer fontconfig
+          mkdir -p "$HOME/.local/share/fonts"
+          cp fonts/jawi/Amiri-Regular.ttf fonts/jawi/Amiri-Bold.ttf "$HOME/.local/share/fonts/"
+          fc-cache -f
+      - name: Install test dependencies
+        run: python -m pip install "pytest>=8,<10" "python-docx>=1.1,<2" "pymupdf>=1.24,<2"
+      - name: Verify RTL, source fields, A4, true PDF grid alignment
+        run: python -m pytest -q tests/test_arabic_header_right_20261121.py tests/test_arabic_rph_a4_equal_width_20261121.py
+      - name: Compile renderer and tests
+        run: python -m py_compile web/arabic_rph_word.py tests/test_arabic_rph_a4_equal_width_20261121.py
