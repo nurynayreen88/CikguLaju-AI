@@ -67,6 +67,17 @@ def _assert_design_and_source(raw, plan):
     for standard in ("sk", "sp"):
         assert plan[standard] in displayed
     assert "الصف والحصّة" in header.cell(0, 0).text
+    # RTL: Arabic activity labels are in their own cells, with bold Amiri.
+    # The source activities in adjacent cells must remain normal, verbatim.
+    phases = doc.tables[2]
+    for row_index, label in ((2, "النشاط الأول"), (3, "النشاط الثاني")):
+        heading_cell = phases.rows[row_index].cells[0]
+        action_cell = phases.rows[row_index].cells[1]
+        assert heading_cell.text.strip() == label, (plan["year"], plan["lesson"], label)
+        assert any(run.bold and label in run.text
+                   for para in heading_cell.paragraphs for run in para.runs)
+        assert not any(run.bold and run.text.strip()
+                       for para in action_cell.paragraphs for run in para.runs)
     return doc
 
 
