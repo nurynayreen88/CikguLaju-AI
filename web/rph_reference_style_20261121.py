@@ -7,6 +7,8 @@ teacher metadata, table structure, fonts, page dimensions or lesson content.
 from __future__ import annotations
 
 from io import BytesIO
+from copy import deepcopy
+import re
 import os
 from pathlib import Path
 from zipfile import ZipFile
@@ -107,6 +109,82 @@ def _boxed_title(body, first_table, fill):
     return False
 
 
+_ACTIVITY_TITLE = re.compile(
+    r"^(?:Aktiviti|Activity)\s+[1-9]\d?"
+    r"(?:\s*[.:)–—-]\s*\S.{0,109})?$",
+    re.IGNORECASE,
+)
+
+
+def _bold_separate_activity_titles(table):
+    """Bold only existing numbered title LINES in the native main-activity cell.
+
+    Preserves every original OOXML w:t text node, line break and source run
+    font. Nothing is inserted into curricula or other table cells. A title
+    embedded inside an instruction paragraph is not guessed or rewritten.
+    """
+    changed = False
+    for row in table.findall(W + "tr"):
+        cells = row.findall(W + "tc")
+        if len(cells) != 3:
+            continue
+        phase = " ".join(
+            "".join(node.text or "" for node in cells[0].iter(W + "t"))
+            .casefold().split()
+        )
+        if phase not in ("aktiviti utama", "main activities"):
+            continue
+        for para in cells[1].findall(W + "p"):
+            # Complex fields/hyperlinks are deliberately untouched.
+            if any(child.tag not in (W + "pPr", W + "r") for child in para):
+                continue
+            runs = para.findall(W + "r")
+            if not runs or any(
+                item.tag not in (W + "rPr", W + "t", W + "br")
+                for run in runs for item in run
+            ):
+                continue
+            lines = [[]]
+            for run in runs:
+                props = run.find(W + "rPr")
+                for item in run:
+                    if item.tag == W + "rPr":
+                        continue
+                    lines[-1].append((props, item))
+                    if item.tag == W + "br":
+                        lines.append([])
+            titles = [
+                i for i, line in enumerate(lines)
+                if i < len(lines) - 1
+                and _ACTIVITY_TITLE.fullmatch(
+                    "".join(item.text or "" for _, item in line
+                            if item.tag == W + "t").strip()
+                )
+            ]
+            if not titles:
+                continue
+            original_text = tuple(t.text for t in para.iter(W + "t"))
+            original_breaks = len(tuple(para.iter(W + "br")))
+            # Rebuild only these simple runs, keeping the exact original w:t
+            # nodes and all w:br nodes in order, with copied original rPr.
+            for run in runs:
+                para.remove(run)
+            for i, line in enumerate(lines):
+                for props, item in line:
+                    run = etree.Element(W + "r")
+                    if props is not None:
+                        run.append(deepcopy(props))
+                    if i in titles and item.tag == W + "t":
+                        bold = _node(_node(run, "rPr", first=True), "b")
+                        bold.set(W + "val", "1")
+                    run.append(item)
+                    para.append(run)
+            assert tuple(t.text for t in para.iter(W + "t")) == original_text
+            assert len(tuple(para.iter(W + "br"))) == original_breaks
+            changed = True
+    return changed
+
+
 def style_three_table_word_bytes(document, fill):
     """Return styled bytes; fail closed to original on unexpected table layout.
 
@@ -138,6 +216,7 @@ def style_three_table_word_bytes(document, fill):
                 for ci, cell in enumerate(cells):
                     if ci == 0 or (index == 1 and ri == 0):
                         _shade_cell(cell, fill)
+        _bold_separate_activity_titles(tables[1])
         if tuple(node.text for node in root.iter(W + "t")) != original_text:
             raise ValueError("RPH typography unexpectedly changed document text")
         updated_xml = etree.tostring(root, xml_declaration=True, encoding="UTF-8", standalone=True)
