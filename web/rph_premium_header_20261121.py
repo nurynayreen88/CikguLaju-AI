@@ -1,4 +1,4 @@
-"""Conservative premium right-hand teacher banner for legacy three-table RPH Word.
+"""Conservative premium small-left teacher banner for legacy three-table RPH Word.
 
 Move existing display nodes (not lesson text) into a compact two-column banner.
 Fail closed when the native layout differs from the audited structure. Specialty
@@ -85,17 +85,20 @@ def _make_banner(body, first_table, title, rows, fill):
     for edge in ("top", "bottom", "left", "right", "insideV"):
         _node(borders, edge, val="single", sz=6, color="6D7C8B")
     grid = _node(banner, "tblGrid")
-    _node(grid, "gridCol", w="6900")
+    # Owner's mirrored header requirement: short left box for the five
+    # teacher fields, wide right box for the lesson identity. PI/Arabic use
+    # their independent RTL renderers with the short box on the right.
     _node(grid, "gridCol", w="3730")
+    _node(grid, "gridCol", w="6900")
     table_row = _node(banner, "tr")
     left = _node(table_row, "tc")
     leftpr = _cell_fill(left, fill)
-    leftpr.find(W + "tcW").set(W + "w", "6900")
+    leftpr.find(W + "tcW").set(W + "w", "3730")
     right = _node(table_row, "tc")
     rightpr = _cell_fill(right, fill)
-    rightpr.find(W + "tcW").set(W + "w", "3730")
+    rightpr.find(W + "tcW").set(W + "w", "6900")
     title.getparent().remove(title)
-    left.append(title)
+    right.append(title)
     for old_run in title.iter(W + "r"):
         rpr = old_run.find(W + "rPr")
         if rpr is None:
@@ -108,9 +111,9 @@ def _make_banner(body, first_table, title, rows, fill):
             sz = _node(rpr, "sz")
         sz.set(W + "val", "26")
     for name in ("subject", "year", "topic"):
-        _styled_paragraph(left, *rows[name], font_size=18 if name != "topic" else 16)
+        _styled_paragraph(right, *rows[name], font_size=18 if name != "topic" else 16)
     for name in ("class", "date", "day", "time", "students"):
-        _styled_paragraph(right, *rows[name], font_size=15)
+        _styled_paragraph(left, *rows[name], font_size=15)
     body.insert(body.index(first_table), banner)
 
 
