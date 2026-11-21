@@ -63,6 +63,22 @@ class PremiumDlpPpkiProof(unittest.TestCase):
                     self.assertIn(label, fields)
                     self.assertIn(" ".join(fields[label].split()), text)
 
+    def test_web_native_word_wrapper_does_not_reflow_premium_four_boxes(self):
+        """Teacher Word downloads must preserve the 182 mm approved grid."""
+        from web.native_rph_telegram_api import compact_web_word_notes
+
+        teacher = {"class": "4 Bestari", "date": "2027-02-15",
+                   "time": "08:00 - 09:00", "students": "29"}
+        for subject, generate in self.samples(teacher):
+            with self.subTest(subject=subject):
+                word_bytes = generate("word")
+                self.assertEqual(compact_web_word_notes(word_bytes), word_bytes)
+                parsed = Document(BytesIO(word_bytes))
+                fields = premium_rph_details(parsed)
+                self.assertEqual(len(parsed.tables), 4)
+                self.assertIn("Standard Kandungan" if subject == "PPKI"
+                              else "Content Standards", fields)
+
     def test_blank_teacher_boxes_are_truly_blank(self):
         teacher = dict.fromkeys(("class", "date", "time", "students"), "")
         for subject, generate in self.samples(teacher):
