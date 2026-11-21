@@ -1,0 +1,31 @@
+name: PI Jawi teaching terminology native RPH QA
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "web/pi_jawi_english_terms_20261122.py"
+      - "tools/run_telegram_with_curriculum_api.py"
+      - "tests/test_pi_jawi_english_terms_20261122.py"
+      - ".github/workflows/pi-jawi-english-terms-20261122.yml"
+  push:
+    branches: [fix/pi-jawi-english-terms-native-20261122, main]
+    paths:
+      - "web/pi_jawi_english_terms_20261122.py"
+      - "tools/run_telegram_with_curriculum_api.py"
+      - "tests/test_pi_jawi_english_terms_20261122.py"
+      - ".github/workflows/pi-jawi-english-terms-20261122.yml"
+permissions:
+  contents: read
+jobs:
+  original-pi-source-readonly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify syntax and original native runtime integration
+        run: python -m py_compile web/pi_jawi_english_terms_20261122.py tools/run_telegram_with_curriculum_api.py
+      - name: Test exact Jawi replacements and source integrity on 809 original PI lessons
+        run: python -m unittest discover -s tests -p 'test_pi_jawi_english_terms_20261122.py' -v
