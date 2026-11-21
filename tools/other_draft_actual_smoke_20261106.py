@@ -257,10 +257,14 @@ def main():
         })
         assert result.status_code == 200, result.json
         doc = Document(io.BytesIO(result.data))
-        fields = {row.cells[0].text: row.cells[1].text
-                                      for table in doc.tables[:2] for row in table.rows}
+        fields = {
+            **{row.cells[1].text: row.cells[2].text
+               for row in doc.tables[0].rows},
+            **{row.cells[0].text: row.cells[1].text
+               for row in doc.tables[1].rows},
+        }
         number_ar = f"{pdp:03d}".translate(str.maketrans("0123456789", "٠١٢٣٤٥٦٧٨٩"))
-        assert number_ar in doc.tables[0].rows[0].cells[2].text
+        assert number_ar in doc.tables[0].rows[0].cells[0].text
         assert sp in fields["معيار التعلّم"]
         assert "DRAF" not in "".join(cell.text for table in doc.tables
                                      for row in table.rows for cell in row.cells)
@@ -283,8 +287,12 @@ def main():
         })
         assert result.status_code == 200, result.json
         doc = Document(io.BytesIO(result.data))
-        fields = {row.cells[0].text: row.cells[1].text
-                                      for table in doc.tables[:2] for row in table.rows}
+        fields = {
+            **{row.cells[1].text: row.cells[2].text
+               for row in doc.tables[0].rows},
+            **{row.cells[0].text: row.cells[1].text
+               for row in doc.tables[1].rows},
+        }
         assert sp in fields["معيار التعلّم"]
         assert fields["الفصل"] == "3 Bestari" and fields["عدد التلاميذ"] == "30"
         assert pages in doc.tables[3].cell(1, 1).text
