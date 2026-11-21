@@ -50,8 +50,10 @@ def _table(doc, widths, rows, *, header=False, align_right=False):
         spacer.paragraph_format.space_after = Pt(0)
     table = doc.add_table(rows=0, cols=len(widths))
     table.table_direction = WD_TABLE_DIRECTION.RTL
-    if align_right:
-        table.alignment = WD_TABLE_ALIGNMENT.RIGHT
+    # With RTL in LibreOffice, unspecified alignment can offset the other
+    # 18.7 cm tables by ~5 pt even when OOXML column sums are equal.
+    # Anchor every RTL table to the same right page margin.
+    table.alignment = WD_TABLE_ALIGNMENT.RIGHT
     table.style = "Table Grid"
     table.autofit = False
     for column, width in zip(table.columns, widths):
