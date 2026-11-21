@@ -161,7 +161,12 @@ def test_pi_rtl_word_renders_a4_without_moving_source_text(tmp_path):
             if 520 < fitz.Rect(item["rect"]).width < 538
             and fitz.Rect(item["rect"]).height < 1.7
         ]
-        assert len(rules) >= 6, ("No visible full-width Jawi table rules", rules)
+        wide = [
+            (item.get("type"), tuple(round(x, 1) for x in fitz.Rect(item["rect"])))
+            for item in page.get_drawings()
+            if fitz.Rect(item["rect"]).width > 425
+        ]
+        assert len(rules) >= 6, ("Jawi PDF drawing diagnostic", len(page.get_drawings()), wide[:45])
         assert max(r.x0 for r in rules)-min(r.x0 for r in rules) < 2, rules
         assert max(r.x1 for r in rules)-min(r.x1 for r in rules) < 2, rules
         # Neither Jawi text nor table geometry should exceed A4 bounds.
