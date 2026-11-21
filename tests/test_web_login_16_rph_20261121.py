@@ -56,6 +56,7 @@ class PublicRphExamplesTests(unittest.TestCase):
         self.assertIn(".ltr .hero {direction:ltr !important; flex-direction:row !important;}", page)
         self.assertIn(".rtl .hero {direction:rtl !important; flex-direction:row !important;}", page)
         self.assertIn("Cetak / Simpan PDF", page)
+        self.assertIn('href="/contoh-rph-semua.pdf"', page)
         self.assertIn("@media print", page)
         self.assertIn("window.print()", page)
         self.assertIn("Kembali ke log masuk", page)
@@ -85,6 +86,8 @@ class PublicRphExamplesTests(unittest.TestCase):
         self.assertNotIn("session_ticket", body)
         self.assertNotIn("login_required", body)
         self.assertIn('@app.get("/contoh-rph.pdf")', source)
+        self.assertIn('@app.get("/contoh-rph-semua.pdf")', source)
+        self.assertIn('return redirect("/contoh-rph-semua", code=302)', source)
 
 
 if __name__ == "__main__":
