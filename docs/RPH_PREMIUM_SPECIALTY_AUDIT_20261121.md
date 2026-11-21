@@ -28,6 +28,12 @@ Penjejakan utama: [Isu #1182](https://github.com/nurynayreen88/CikguLaju-AI/issu
 - Hasil `grid_alignment.status` ialah `ALIGNED`, `MISALIGNED` atau `NOT_ASSESSED`; alat **tidak** menganggap PDF imej / tanpa garisan vektor sebagai lulus. Jalankan `python tools/audit_pi_jawi_pdf.py /path/to/rph.pdf --require-aligned-grid` untuk QA ketat. Status `structural_pass` lama sengaja kekal dan **tidak** membuktikan kotak sejajar.
 - Ujian CI menggunakan fixture PDF sintetik, bukan dokumen PDF Pendidikan Islam yang dimuat turun oleh guru. **Sumber sebenar, glyph Jawi dan sambungan Web/Telegram masih memerlukan audit**. Keputusan geometri sahaja tidak boleh diberi label `LIVE DISAHKAN`.
 
+## Tambahan QA Word → PDF Jawi sebenar (contoh ujian), 21 November 2026
+
+- [PR #1214](https://github.com/nurynayreen88/CikguLaju-AI/pull/1214) **MERGED** `dab0b8a2cd55a3a40af20c148589eb3801236556`: ujian `test_pi_rtl_word_renders_a4_without_moving_source_text` kini memanggil alat baca-sahaja `inspect_pdf` pada PDF yang **betul-betul terhasil daripada Word melalui LibreOffice**.
+- Workflow **`pi-teacher-left` LULUS** pada head PR #1214. Pemeriksaan A4, keluasan garisan jadual, status `ALIGNED`, toleransi koordinat maksimum 2 mata dan susunan guru di kiri kekal. Ini menutup jurang **keserasian pembaca geometri dengan output Word→PDF**, bukan menguji semua dokumen yang dihasilkan aplikasi.
+- Data PdP dalam ujian adalah **fixture sintetik Jawi**; bukan bahan SK/SP sebenar yang dipilih melalui akaun guru atau pangkalan data produksi. Bentuk huruf Amiri, ketersediaan PDF native, serta semua laluan muat turun Web/Telegram masih **BELUM DISAHKAN**; jangan tukar status kepada SIAP atau LIVE berdasarkan satu fixture.
+
 ## Peraturan audit seterusnya
 
 1. **SATU REKA BENTUK KOTAK UNTUK SEMUA SUBJEK:** Semua kotak luar mesti sama lebar dan sejajar dalam setiap RPH. **Hanya Pendidikan Islam/Jawi dan Bahasa Arab/Arab menggunakan RTL** (arah label, penjajaran dan susunan kolum); **bukan** bentuk atau ukuran bingkai berbeza. Sains, DLP, PPKI dan subjek lain kekal LTR. Jangan paksa lajur dalaman sama lebar jika fungsinya berlainan.
