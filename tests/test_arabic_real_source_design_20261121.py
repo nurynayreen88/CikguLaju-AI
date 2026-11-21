@@ -25,7 +25,7 @@ TEXT_KEYS = (
     "objective", "success", "induction", "activity_1", "activity_2",
     "assessment", "closure", "materials", "reflection",
 )
-PDF_SAMPLES = ((2, 1), (2, 60), (3, 1), (3, 60))
+PDF_SAMPLES = tuple((year, lesson) for year in (2, 3) for lesson in range(1, 61))
 
 
 def _plan(year, lesson):
@@ -91,7 +91,8 @@ def test_all_120_real_reviewed_arabic_lessons_keep_source_and_outer_grid():
     assert total == 120
 
 
-def test_real_arabic_beginning_and_final_lessons_word_to_pdf_a4(tmp_path):
+def test_all_120_real_arabic_lessons_word_to_pdf_a4(tmp_path):
+    assert len(PDF_SAMPLES) == 120 and len(set(PDF_SAMPLES)) == 120
     assert shutil.which("libreoffice"), "Real Word-to-PDF converter required"
     inputs = []
     for year, number in PDF_SAMPLES:
@@ -111,9 +112,12 @@ def test_real_arabic_beginning_and_final_lessons_word_to_pdf_a4(tmp_path):
             "--outdir", str(pdfdir),
             *(str(file) for file in inputs),
         ],
-        capture_output=True, text=True, timeout=120,
+        capture_output=True, text=True, timeout=600,
     )
     assert proc.returncode == 0, proc.stderr[-1000:]
+    assert len(inputs) == 120
+    assert len(list(pdfdir.glob('Arab_Y*_PdP*.pdf'))) == 120, (
+        'missing PDF outputs', proc.stdout[-1000:], proc.stderr[-1000:])
     for word in inputs:
         path = pdfdir / (word.stem + ".pdf")
         assert path.exists(), (word.name, proc.stdout, proc.stderr)
