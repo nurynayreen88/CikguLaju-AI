@@ -82,6 +82,55 @@ class ActivityHeadingTypographyTests(unittest.TestCase):
             self.assertEqual(bold_activity_headings_in_docx(path),0)
             self.assertEqual(Document(path).tables[0].cell(1,1).text,sample)
 
+
+    def test_word_real_sains_numbered_steps_bold_heading_not_full_instruction(self):
+        """Sains native teacher/pupil action stays normal on its own line."""
+        sample = (
+            "Aktiviti 1 – Guru menunjukkan dua objek dan menerangkan kaedah.\n"
+            "Aktiviti 2: Murid membandingkan warna serta merekod jawapan.\n"
+            "Aktiviti 3: Pentaksiran individu\n"
+            "Guru menyemak dapatan dengan murid."
+        )
+        with tempfile.TemporaryDirectory() as location:
+            path = Path(location) / "sains-source.docx"
+            doc = Document()
+            row = doc.add_table(rows=1, cols=3).rows[0]
+            row.cells[0].text = "Aktiviti Utama"
+            row.cells[1].text = sample
+            doc.save(path)
+            assert bold_activity_headings_in_docx(path) == 3
+            after = Document(path).tables[0].cell(0, 1).paragraphs[0]
+            text = after.text
+            assert text.replace("\n", "") == sample.replace("\n", "")
+            assert "Aktiviti 1 –\n Guru menunjukkan" in text
+            assert "Aktiviti 2:\n Murid membandingkan" in text
+            assert [r.text for r in after.runs if r.bold] == [
+                "Aktiviti 1 –", "Aktiviti 2:", "Aktiviti 3: Pentaksiran individu",
+            ]
+            assert all(not r.bold for r in after.runs
+                       if "Guru menunjukkan" in r.text or "Murid membandingkan" in r.text)
+            assert bold_activity_headings_in_docx(path) == 0
+
+    def test_pdf_real_sains_steps_keep_full_instruction_unbolded(self):
+        raw = (
+            "Aktiviti 1 – Guru menunjukkan contoh dan memberi penerangan.\n"
+            "Aktiviti 2: Murid membuat pemerhatian dan merekod data.\n"
+            "Aktiviti 3 – Menilai dapatan\n"
+            "Guru merumuskan."
+        )
+        original = html.escape(raw).replace("\n", "<br/>")
+        result = bold_pdf_heading_markup(raw, original)
+        self.assertIn("<b>Aktiviti 1 –</b><br/> Guru menunjukkan", result)
+        self.assertIn("<b>Aktiviti 2:</b><br/> Murid membuat", result)
+        self.assertIn("<b>Aktiviti 3 – Menilai dapatan</b>", result)
+        self.assertNotIn("<b>Guru menunjukkan", result)
+        self.assertNotIn("<b>Murid membuat", result)
+        self.assertEqual(
+            html.unescape(result.replace("<b>", "").replace("</b>", "")
+                          .replace("<br/>", "").replace("\n", "")),
+            raw.replace("\n", ""),
+        )
+
     def test_avoid_changing_styled_standalone_and_non_rph_material(self):
         with tempfile.TemporaryDirectory() as d:
             path=Path(d)/"styled.docx"
