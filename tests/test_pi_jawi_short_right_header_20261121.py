@@ -156,19 +156,31 @@ def test_pi_rtl_word_renders_a4_without_moving_source_text(tmp_path):
     # For A4 with 1.15 cm margins, each approved table occupies 18.70 cm.
     with fitz.open(str(output)) as rendered:
         page = rendered[0]
-        rules = [
-            fitz.Rect(item["rect"]) for item in page.get_drawings()
-            if 520 < fitz.Rect(item["rect"]).width < 538
-            and fitz.Rect(item["rect"]).height < 1.7
-        ]
-        wide = [
-            (item.get("type"), tuple(round(x, 1) for x in fitz.Rect(item["rect"])))
-            for item in page.get_drawings()
-            if fitz.Rect(item["rect"]).width > 1
-        ]
-        assert len(rules) >= 6, ("Jawi PDF drawing diagnostic", len(page.get_drawings()), wide[:75])
-        assert max(r.x0 for r in rules)-min(r.x0 for r in rules) < 2, rules
-        assert max(r.x1 for r in rules)-min(r.x1 for r in rules) < 2, rules
+        # LibreOffice draws some RTL table borders as adjoining segments,
+        # while shaded cells are filled rectangles. Reconstruct a horizontal
+        # outer rule from the union of stroke segments on the same Y row.
+        horizontal = {}
+        for item in page.get_drawings():
+            rect = fitz.Rect(item["rect"])
+            if item.get("type") != "s" or not (rect.width > 1 and rect.height < 1.7):
+                continue
+            horizontal.setdefault(round(rect.y0 * 2) / 2, []).append(rect)
+        full_rows = []
+        for y, segments in horizontal.items():
+            left = min(r.x0 for r in segments)
+            right = max(r.x1 for r in segments)
+            if right - left > 520:
+                full_rows.append((round(y, 1), round(left, 1), round(right, 1)))
+        # The full-width native header must be present, and reconstructed
+        # full-span rules must agree at their outer edges within 2 points.
+        assert len(full_rows) >= 2, ("RTL PDF horizontal-rule groups", sorted(
+            (y, len(v), round(min(r.x0 for r in v), 1),
+             round(max(r.x1 for r in v), 1))
+            for y, v in horizontal.items()))
+        assert max(x[1] for x in full_rows)-min(x[1] for x in full_rows) < 2, full_rows
+        assert max(x[2] for x in full_rows)-min(x[2] for x in full_rows) < 2, full_rows
+        assert 30 <= min(x[1] for x in full_rows) <= 35, full_rows
+        assert 560 <= max(x[2] for x in full_rows) <= 565, full_rows
         # Neither Jawi text nor table geometry should exceed A4 bounds.
         for word in page.get_text("words"):
             assert word[0] >= -1 and word[2] <= page.rect.width + 1
