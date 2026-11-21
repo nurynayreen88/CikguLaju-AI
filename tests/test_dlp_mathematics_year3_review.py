@@ -6,6 +6,7 @@ from docx import Document
 from pypdf import PdfReader
 
 from dlp_year2_rph import _pdf, _word
+from web.rph_premium_readback_20261121 import premium_rph_details
 from staging.dlp.year3.render_mathematics import render_plan, verify_drafts
 
 
@@ -19,7 +20,7 @@ class MathematicsYear3DlpReviewTests(unittest.TestCase):
                 word = BytesIO()
                 render_plan(word, draft, _word)
                 document = Document(word)
-                details = {row.cells[0].text: row.cells[1].text for row in document.tables[0].rows}
+                details = premium_rph_details(document)
                 self.assertEqual(details["Topic"], title)
                 self.assertNotIn("RPT 2027 dates", details)
                 self.assertEqual(details["Lesson / PdP"], label)
