@@ -881,21 +881,24 @@ def create_blueprint():
                 "year": year, "subject": subject, "unit": unit,
                 "lesson": token, "teacher": teacher,
             }, None
-        # A distinct premium option includes all 696 authentic Word/PDF pairs,
-        # including six additional PdP; never reinterpret an RPT row token.
-        # Retain existing PI native master-RPT navigation and downloads unchanged.
-        if subject == "PI" and unit == PI_PREMIUM_UNIT:
-            try:
-                number = valid_pi_pdp(year, token)
-            except ValueError:
-                return None, (jsonify({
-                    "error": "Pilihan PdP Pendidikan Islam tidak sah.",
-                    "code": "PI_PREMIUM_PDP_INVALID"}), 400)
-            return {
-                "source": "pi-696-private-bundle",
-                "year": year, "subject": subject, "unit": unit,
-                "lesson": number, "teacher": teacher,
-            }, None
+        # The original PI Bidang -> PdP selection now resolves the approved
+        # 696-file archive. Keep its storage access private and quota-gated.
+        # The obsolete internal key remains accepted for older open tabs.
+        if subject == "PI" and year in range(2, 7):
+            from web.pi_696_catalog_20261121 import FIELD_LABELS, valid_choice
+            if unit == PI_PREMIUM_UNIT or unit in FIELD_LABELS.values():
+                try:
+                    number = (valid_pi_pdp(year, token) if unit == PI_PREMIUM_UNIT
+                              else valid_choice(year, unit, token))
+                except ValueError:
+                    return None, (jsonify({
+                        "error": "Pilihan Bidang/PdP Pendidikan Islam tidak sah.",
+                        "code": "PI_2027_SELECTION_INVALID"}), 400)
+                return {
+                    "source": "pi-696-private-bundle",
+                    "year": year, "subject": subject, "unit": unit,
+                    "lesson": number, "teacher": teacher,
+                }, None
         # Pendidikan Islam still resolves its own exact native master RPT row.
         if subject == "PI":
             from web.native_verified_rpt_rph_client import (
