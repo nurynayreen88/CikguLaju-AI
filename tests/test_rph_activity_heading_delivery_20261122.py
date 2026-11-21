@@ -250,5 +250,56 @@ class ActivityTitleWordRegression(unittest.TestCase):
             self.assertFalse(_is_activity_heading(example), example)
 
 
+    def test_prebolded_jawi_and_arabic_word_headings_require_complex_bold(self):
+        """Word may have w:b=1 but w:bCs missing/false: repair RTL only."""
+        from docx.oxml.ns import qn
+
+        for heading, empty_cs in (
+            ("اکتيۏيتي ١", True),
+            ("النشاط ٢: مناقشة", False),
+        ):
+            with self.subTest(heading=heading):
+                doc = Document()
+                table = doc.add_table(rows=2, cols=2)
+                table.cell(0, 0).text = "Standard Pembelajaran"
+                table.cell(0, 1).text = "3.1.2 Maklumat sumber asal"
+                paragraph = table.cell(1, 1).paragraphs[0]
+                title = paragraph.add_run(heading)
+                title.bold = True  # Legacy Latin bold already exists.
+                if not empty_cs:
+                    title.font.cs_bold = False  # Explicitly disabled.
+                paragraph.add_run("\n" + "موريد منوليس جاوابن.")
+                original = BytesIO()
+                doc.save(original)
+                prior_root, prior_words = _read(original.getvalue())
+                prior_breaks = len(list(prior_root.iter(W + "br")))
+
+                updated = style_word_activity_titles(original)
+                after_root, after_words = _read(updated.getvalue())
+                self.assertEqual(after_words, prior_words)
+                self.assertEqual(prior_breaks, len(list(after_root.iter(W + "br"))))
+                word = Document(BytesIO(updated.getvalue()))
+                self.assertEqual(
+                    word.tables[0].cell(0, 1).text, "3.1.2 Maklumat sumber asal"
+                )
+                out_runs = word.tables[0].cell(1, 1).paragraphs[0].runs
+                self.assertEqual(out_runs[0].text, heading)
+                self.assertTrue(out_runs[0].bold)
+                props = out_runs[0]._r.get_or_add_rPr()
+                self.assertEqual(props.find(qn("w:bCs")).get(qn("w:val")), "1")
+                self.assertFalse(out_runs[-1].bold)
+                self.assertIs(style_word_activity_titles(updated), updated)
+
+    def test_latin_heading_already_bold_is_not_repacked_for_missing_bcs(self):
+        doc = Document()
+        table = doc.add_table(rows=1, cols=2)
+        para = table.cell(0, 1).paragraphs[0]
+        para.add_run("Aktiviti 1: Perbincangan").bold = True
+        para.add_run("\nGuru menerangkan konsep.")
+        original = BytesIO()
+        doc.save(original)
+        self.assertIs(style_word_activity_titles(original), original)
+
+
 if __name__ == "__main__":
     unittest.main()
