@@ -77,6 +77,13 @@ def test_real_word_function_offline_a4(tmp_path):
         assert outfile.exists() and outfile.stat().st_size > 1000
         parsed = Document(str(outfile))
         assert len(parsed.tables) == 3, (year, len(parsed.tables))
+        # Permanent owner rule: preserve the existing Sains renderer while
+        # proving that all three OUTER table edges align on the same A4 grid.
+        # Do not force Sains through the generic LTR adapter or alter SK/SP.
+        widths = [sum(col.width.mm for col in table.columns)
+                  for table in parsed.tables]
+        assert all(140 < width < 190 for width in widths), (year, widths)
+        assert max(widths) - min(widths) < .8, (year, widths)
         content = "\n".join(c.text for t in parsed.tables for row in t.rows for c in row.cells)
         assert rows["EMK / NILAI"] in content
         assert rows["KBAT / PAK21"] in content
@@ -103,5 +110,8 @@ def test_real_word_function_offline_a4(tmp_path):
         assert abs(float(pages[0].mediabox.width) - 595.28) < 2
         assert abs(float(pages[0].mediabox.height) - 841.89) < 2
         body = pages[0].extract_text()
+        # Actual PDF generated from the SAME Word file must retain
+        # curriculum identity and source-backed SP without clipping.
+        assert "Sains" in body and "Standard Pembelajaran" in body
         assert "KBAT" in body and "EMK" in body
         assert "Pemulihan" in body
