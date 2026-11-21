@@ -1,4 +1,4 @@
-"""Public 16-subject RPH login gallery: one link, no credits or session."""
+"""Keep public gallery read-only, but do not show examples on login."""
 from __future__ import annotations
 
 import ast
@@ -36,13 +36,14 @@ class Sections(HTMLParser):
 
 
 class PublicRphExamplesTests(unittest.TestCase):
-    def test_one_public_login_link_to_sixteen_examples(self):
+    def test_login_has_no_public_rph_examples(self):
+        # The owner requested the examples be removed from login. The
+        # independently hosted gallery remains available only by direct URL.
         login = LOGIN.read_text(encoding="utf-8")
-        opening = login.split('<details class="public-rph-sample">', 1)[1].split("</details>", 1)[0]
-        self.assertIn("16 contoh RPH pelbagai subjek, DLP dan PPKI", opening)
-        self.assertEqual(opening.count('href="/contoh-rph-semua"'), 1)
-        self.assertNotIn('href="/contoh-rph.pdf"', opening)
-        self.assertIn('href="#pilihan-log-masuk"', opening)
+        self.assertNotIn('<details class="public-rph-sample">', login)
+        self.assertNotIn('href="/contoh-rph-semua"', login)
+        self.assertNotIn("Lihat Contoh RPH", login)
+        self.assertIn('id="pilihan-log-masuk"', login)
 
     def test_gallery_has_sixteen_a4_samples_and_owner_approved_rtl(self):
         page = GALLERY.read_text(encoding="utf-8")
