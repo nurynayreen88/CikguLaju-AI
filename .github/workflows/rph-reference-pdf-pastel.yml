@@ -1,0 +1,38 @@
+name: RPH PDF Pastel Parity 10 Subjek SK
+
+on:
+  pull_request:
+    paths:
+      - "web/rph_reference_pdf_style_20261121.py"
+      - "web/rph_reference_style_20261121.py"
+      - "tests/test_rph_reference_pdf_style_20261121.py"
+      - "tools/run_telegram_with_curriculum_api.py"
+      - ".github/workflows/rph-reference-pdf-pastel.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  native-pdf-style:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install PDF and contract test dependencies
+        run: python -m pip install --disable-pip-version-check "pytest>=8,<10" "PyMuPDF>=1.24,<2" "reportlab>=4.2,<5" "lxml>=5,<7"
+      - name: Verify 10 subjects, unchanged PDF text, source isolation and A4
+        run: python -m pytest -q tests/test_rph_reference_pdf_style_20261121.py
+      - name: Ensure adapter installs after subject-specific native renderer
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          src = Path("tools/run_telegram_with_curriculum_api.py").read_text("utf-8")
+          assert src.index("install_rph_reference_pdf_style") > src.index("install_rph_reference_word_style")
+          assert "RPH_REFERENCE_PDF_STYLE_ACTIVE" in src
+          PY
+      - name: Check Python syntax
+        run: python -m py_compile web/rph_reference_pdf_style_20261121.py tools/run_telegram_with_curriculum_api.py
