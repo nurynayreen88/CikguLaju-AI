@@ -1204,6 +1204,12 @@ def create_blueprint():
                     "error": "RPH Matematik ini memerlukan pembetulan sebelum boleh dimuat turun. Kredit percubaan tidak digunakan.",
                     "code": "MATH_RPH_QUALITY_REVIEW_REQUIRED",
                 }), 503), None
+        # Apply the approved outer table/header presentation to real Web
+        # downloads after source checks (including Maths source quality).
+        # Never rebuild SK, SP or activities, and never touch special RTL,
+        # Sains, DLP or PPKI renderers.
+        from web.rph_delivery_presentation_20261121 import presentation_for_web
+        document = presentation_for_web(selected, fmt, document)
         if g.cikgulaju_rph_paid:
             return document, None, None
         from web.rph_delivery_quota import authorize_rendered_document
