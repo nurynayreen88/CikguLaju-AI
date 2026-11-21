@@ -1,0 +1,30 @@
+name: RPH PDF native kotak maklumat guru dan lebar sejajar
+
+on:
+  pull_request:
+    paths:
+      - "app.py"
+      - "web/rph_native_pdf_header_20261121.py"
+      - "web/rph_reference_pdf_style_20261121.py"
+      - "web/rph_reference_style_20261121.py"
+      - "tests/test_rph_native_pdf_header_20261121.py"
+      - ".github/workflows/rph-native-pdf-header.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  native-pdf-header:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install PDF contract dependencies
+        run: python -m pip install "pytest>=8,<10" "reportlab>=4,<5" "pymupdf>=1.24,<2" "python-docx>=1.1,<2" "lxml>=5,<7"
+      - name: Verify nine subjects, untouched source text, A4, and special layouts
+        run: python -m pytest -q tests/test_rph_native_pdf_header_20261121.py tests/test_rph_reference_pdf_style_20261121.py
+      - name: Check Python syntax for native PDF adapter and runtime
+        run: python -m py_compile web/rph_native_pdf_header_20261121.py web/rph_reference_pdf_style_20261121.py app.py
