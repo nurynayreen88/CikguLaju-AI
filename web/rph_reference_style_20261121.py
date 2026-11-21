@@ -116,6 +116,23 @@ _ACTIVITY_TITLE = re.compile(
 )
 
 
+def _is_standalone_activity_title(value):
+    if not _ACTIVITY_TITLE.fullmatch(value):
+        return False
+    remainder = re.sub(
+        r"^(?:Aktiviti|Activity)\s+[1-9]\d?\s*[.:)–—-]\s*",
+        "", value, flags=re.IGNORECASE,
+    )
+    # Full teacher/pupil instructions are NEVER treated as bold titles.
+    if remainder != value and (
+        re.match(r"^(?:Guru|Murid|Teacher|Pupils|Students)\b",
+                 remainder, re.IGNORECASE)
+        or remainder.endswith((".", "!", "?"))
+    ):
+        return False
+    return True
+
+
 def _bold_separate_activity_titles(table):
     """Bold only existing numbered title LINES in the native main-activity cell.
 
@@ -156,7 +173,7 @@ def _bold_separate_activity_titles(table):
             titles = [
                 i for i, line in enumerate(lines)
                 if i < len(lines) - 1
-                and _ACTIVITY_TITLE.fullmatch(
+                and _is_standalone_activity_title(
                     "".join(item.text or "" for _, item in line
                             if item.tag == W + "t").strip()
                 )
