@@ -55,7 +55,7 @@ def test_owner_standard_is_mandatory_and_persisted_in_repository():
     policy = STANDARD.read_text(encoding="utf-8")
     agents = AGENTS.read_text(encoding="utf-8")
     for phrase in (
-        "semua kotak utama", "kanan atas", "Word dan PDF", "Sains",
+        "semua kotak utama", "kotak kecil", "Word dan PDF", "Sains",
         "PPKI", "Bahasa Arab", "SK/SP", "A4", "LIVE DISAHKAN",
     ):
         assert phrase.casefold() in policy.casefold(), phrase
