@@ -210,18 +210,52 @@ def _pdf_from_word(word_data):
         return data
 
 
+@lru_cache(maxsize=32)
+def _cached_jawi_bold_pdf(word_data, baseline_pdf):
+    from web.pi_696_jawi_pdf_fix import pdf_is_reliable
+    converted = _pdf_from_word(word_data)
+    if not pdf_is_reliable(converted, baseline_pdf):
+        raise PrivatePIRPHUnavailable("Jawi activity bold or page layout missing")
+    return converted
+
+
 def request_private_document(year, lesson, fmt, teacher, config):
     n = valid_pdp(year, lesson)
     if fmt not in ("word", "pdf") or not isinstance(teacher, dict):
         raise ValueError("Invalid private RPH request")
-    if not _metadata_present(teacher):
+    personalized = _metadata_present(teacher)
+
+    # v2 source archives contain correct activity text and pre-bold Word
+    # headings, but their complex-script w:bCs markers were omitted.
+    # Apply presentation only, then render a matching Amiri-Bold PDF.
+    if _edition() == "v2":
+        from web.pi_696_jawi_pdf_fix import with_jawi_bold, pdf_is_reliable
+        source_word = _file(year, n, "word", config)
+        word, count = with_jawi_bold(source_word)
+        if fmt == "word":
+            return BytesIO(_personalize_word(word, teacher) if personalized else word)
+        baseline_pdf = _file(year, n, "pdf", config)
+        try:
+            if personalized:
+                output = _pdf_from_word(_personalize_word(word, teacher))
+                if not pdf_is_reliable(output, baseline_pdf):
+                    raise PrivatePIRPHUnavailable("Jawi PDF font or pages invalid")
+            else:
+                output = _cached_jawi_bold_pdf(word, baseline_pdf)
+            return BytesIO(output)
+        except PrivatePIRPHUnavailable as exc:
+            # Protect existing private download availability if the
+            # headless office converter becomes unavailable in production.
+            print("PI Jawi PDF improvement skipped:", type(exc).__name__, flush=True)
+            return BytesIO(_fill_pdf_fields(baseline_pdf, teacher, edition="v2")
+                           if personalized else baseline_pdf)
+
+    if not personalized:
         return BytesIO(_file(year, n, fmt, config))
     if fmt == "pdf":
-        # Preserve original PDF geometry; only fill its existing blank cells.
         return BytesIO(_fill_pdf_fields(
             _file(year, n, "pdf", config), teacher, edition=_edition()))
-    word = _personalize_word(_file(year, n, "word", config), teacher)
-    return BytesIO(word)
+    return BytesIO(_personalize_word(_file(year, n, "word", config), teacher))
 
 
 @lru_cache(maxsize=1)
