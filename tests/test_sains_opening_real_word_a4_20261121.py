@@ -184,7 +184,7 @@ def test_all_32_source_backed_opening_lessons_have_aligned_word_and_a4_pdf(tmp_p
                 lesson.follow_up,
             ):
                 assert exact in contents, (lesson.code, exact[:80])
-            assert "____" not in parsed.tables[0].text if hasattr(parsed.tables[0], "text") else True
+            assert not any("____" in cell.text for row in parsed.tables[0].rows for cell in row.cells), lesson.code
             produced.append((word, lesson.code, lesson.standards))
 
     conversion = subprocess.run([
