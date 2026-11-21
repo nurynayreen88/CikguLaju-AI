@@ -48,6 +48,19 @@ def public_rph_sample_pdf():
                      mimetype="application/pdf", max_age=300, conditional=True)
 
 
+@app.get("/contoh-rph-semua")
+def public_all_subject_rph_gallery():
+    """Unauthenticated, read-only 16-subject illustrated RPH gallery.
+
+    This never invokes a teacher generator, uses user credits or exposes data.
+    The existing reviewed 12-sample PDF route remains unchanged.
+    """
+    response = send_file(PREVIEW.with_name("Contoh_RPH_Semua_16.html"),
+                         mimetype="text/html", max_age=300, conditional=True)
+    response.headers["X-Content-Type-Options"] = "nosniff"
+    return response
+
+
 @app.get("/assets/primary-subjects.js")
 def primary_subjects_script():
     import json
