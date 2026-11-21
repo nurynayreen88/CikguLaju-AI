@@ -167,7 +167,21 @@ def test_all_32_source_backed_opening_lessons_have_aligned_word_and_a4_pdf(tmp_p
             writer(document, document.sections[0], state, rows, str(word))
             assert word.is_file() and word.stat().st_size > 1000, lesson.code
 
+            # The last Telegram output wrapper formats actual Sains titles.
+            # Run that same adapter, with no app/DB/teacher session or credits,
+            # BEFORE the A4 Word -> PDF conversion below.
+            from web.rph_activity_headings_typography import bold_activity_headings_in_docx
+            assert bold_activity_headings_in_docx(word) >= 2, lesson.code
+
             parsed = Document(str(word))
+            main_activity = parsed.tables[1].rows[2].cells[1].paragraphs[0]
+            heading_runs = [
+                run.text for run in main_activity.runs
+                if run.bold and run.text.strip().startswith("Aktiviti ")
+            ]
+            assert len(heading_runs) >= 2, (lesson.code, heading_runs)
+            assert any(run.text.strip() and run.bold is not True
+                       for run in main_activity.runs), (lesson.code, "body all bold")
             assert len(parsed.tables) == 3, lesson.code
             widths = [sum(col.width.mm for col in t.columns)
                       for t in parsed.tables]
