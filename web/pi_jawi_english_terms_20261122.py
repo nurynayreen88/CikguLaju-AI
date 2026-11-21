@@ -93,7 +93,7 @@ def _pi_rph(state) -> bool:
     return (
         isinstance(state, dict)
         and state.get("subject") == "Pendidikan Islam"
-        and state.get("task", "rph") == "rph"
+        and state.get("task") == "rph"
     )
 
 
