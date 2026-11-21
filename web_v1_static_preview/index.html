@@ -2013,7 +2013,7 @@ async function populateMaterialList(){
    const data=await result.json().catch(()=>({}));
    if(!isCurrent())return;
    if(updateRphTrialFromDenial(data))return;
-   if(result.ok&&data.available===true&&data.generator==="telegram-native"){
+   if(result.ok&&data.available===true&&["telegram-native","pi-premium-private"].includes(data.generator)){
     verifiedRphKey=key;
     verifiedRphFormats=Array.isArray(data.formats)?
       data.formats.filter(f=>["word","pdf"].includes(f)):["word","pdf"];
@@ -2454,7 +2454,7 @@ async function checkRphAvailability(){
      body.error||"RPH bagi Lesson/PdP ini belum tersedia.");
   }
   const body=await response.json();
-  if(body.available!==true||body.generator!=="telegram-native")
+  if(body.available!==true||!["telegram-native","pi-premium-private"].includes(body.generator))
    throw Error("Sumber RPH belum tersedia.");
   const formats=Array.isArray(body.formats)?body.formats.filter(f=>["word","pdf"].includes(f)):["word","pdf"];
   if(!formats.length)throw Error("Tiada format RPH disahkan untuk PdP ini.");
@@ -2470,7 +2470,7 @@ async function checkRphAvailability(){
   }else{
    downloadStatus.textContent=body.status&&body.status.includes("DRAF")?
      "RPH tersedia. Kandungan masih dalam semakan.":
-     "RPH disahkan tersedia melalui Telegram.";
+     (body.generator==="pi-premium-private" ? "RPH Pendidikan Islam Premium tersedia untuk muat turun." : "RPH disahkan tersedia melalui Telegram.");
    updateSelectionHelp("Selepas melengkapkan maklumat RPH jika perlu, tekan Jana Bahan.");
   }
   if(!materialPanel.hidden)void populateMaterialList();
@@ -2491,7 +2491,7 @@ async function generateRphFile(format){
  const isPdf=format==="pdf";
  rphDownloadBusy=true;
  rphWord.disabled=true;rphPdf.disabled=true;
- downloadStatus.textContent="Menjana RPH "+(isPdf?"PDF":"Word")+" menggunakan penjana Telegram…";
+ downloadStatus.textContent="Menyediakan RPH "+(isPdf?"PDF":"Word")+" daripada sumber CikguLaju…";
  try{
   const endpoint=isPdf?"/api/web/rph/pdf?":"/api/web/rph/word?";
   const response=await fetch(endpoint+key,rphDownloadOptions(teacherReflectionMode.value,teacherReflection.value));
@@ -2508,7 +2508,7 @@ async function generateRphFile(format){
   const mime=response.headers.get("content-type")||"";
   if(!mime.includes(isPdf?"application/pdf":"wordprocessingml"))
     throw Error("Format dokumen RPH tidak sah.");
-  if(response.headers.get("X-RPH-Generator")!=="telegram-native")
+  if(!["telegram-native","pi-premium-private"].includes(response.headers.get("X-RPH-Generator")))
     throw Error("Dokumen bukan daripada penjana Telegram.");
   const blob=await response.blob();
   if(blob.size<1000||blob.size>15*1024*1024)
