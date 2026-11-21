@@ -78,7 +78,8 @@ class TestPILoginLayoutV2(unittest.TestCase):
             "time": "08:00 - 09:00", "students": "30",
             "reflection": "",
         }, edition="v2")
-        page = fitz.open(stream=edited, filetype="pdf")[0]
+        changed = fitz.open(stream=edited, filetype="pdf")
+        page = changed[0]
         expected = ["4 Bestari", "12/01/2027", "08:00 - 09:00", "30"]
         for idx, word in enumerate(expected):
             matching = page.search_for(word)
