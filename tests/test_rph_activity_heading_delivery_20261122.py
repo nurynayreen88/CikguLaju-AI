@@ -327,7 +327,7 @@ class ActivityTitleWordRegression(unittest.TestCase):
         new_root, updated_words = _read(styled.getvalue())
         self.assertEqual(original_words, updated_words)
         self.assertEqual(prior_counts, tuple(
-            len(list(new_root.iter(W + suffix))) for suffix in ("br", "cr", "tab"
+            len(list(new_root.iter(W + suffix))) for suffix in ("br", "cr", "tab")
         ))
         word = Document(BytesIO(styled.getvalue()))
         self.assertEqual(word.tables[0].cell(0, 1).text,
