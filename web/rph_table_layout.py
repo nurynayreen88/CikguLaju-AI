@@ -5,6 +5,10 @@ Mirrors Telegram _create_rph_word: title, two-column lesson information,
 Does not import the Telegram bot and does not change source lesson content.
 """
 from io import BytesIO
+from functools import lru_cache
+from pathlib import Path
+import json
+import re
 from xml.sax.saxutils import escape
 from zipfile import ZIP_DEFLATED, ZipFile
 from web.telegram_rph_parity import build_layout, clean
@@ -12,58 +16,119 @@ from web.telegram_rph_parity import build_layout, clean
 WORD = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 REL = "http://schemas.openxmlformats.org/officeDocument/2006/relationships"
 
-def _run(value, *, bold=False, size=17):
-    style = (
-        '<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:eastAsia="Arial"/>'
-        '<w:sz w:val="%d"/>' % size + ("<w:b/>" if bold else "")+"</w:rPr>"
-    )
-    fragments=[]
-    for index,piece in enumerate(str(value or "").split("\n")):
-        if index:
-            fragments.append("<w:br/>")
-        fragments.append('<w:t xml:space="preserve">'+escape(clean(piece))+"</w:t>")
-    return "<w:r>"+style+"".join(fragments)+"</w:r>"
+# These are visual-only rules from the approved sixteen-subject gallery.
+# They do not rewrite teacher, standard, activity or assessment text.
+@lru_cache(maxsize=1)
+def _canonical_subjects():
+    path = Path(__file__).with_name("rph_login_canonical_layout_20261121.json")
+    try:
+        contract = json.loads(path.read_text(encoding="utf-8"))
+        return {row["subject_code"]: row for row in contract["subjects"]}
+    except (OSError, ValueError, KeyError, TypeError):
+        # Missing design metadata must not prevent an otherwise valid RPH.
+        return {}
 
-def _para(value, *, bold=False, size=17, centered=False, after=0):
-    alignment='<w:jc w:val="center"/>' if centered else ""
+
+def _theme(data):
+    subject = str(data.get("subject") or "").upper()
+    alias = {
+        "MATH_DLP": "DLP_MATH",
+        "SCIENCE_DLP": "DLP_SCIENCE",
+        "MUZIK": "MUSIC",
+        "PENDIDIKAN_MUZIK": "MUSIC",
+        "PENGURUSAN_KEHIDUPAN_PPKI": "PPKI",
+    }
+    if subject == "PJPK":
+        token = str(data.get("selection") or "").upper().split("-")
+        subject = "PK" if "PK" in token else "PJ"
+    else:
+        subject = alias.get(subject, subject)
+    theme = _canonical_subjects().get(subject) or {}
+    return (
+        str(theme.get("tone") or "#EDF3FA").lstrip("#").upper(),
+        str(theme.get("strong") or "#DBE8F5").lstrip("#").upper(),
+        theme.get("direction") == "rtl",
+    )
+
+
+_ACTIVITY_TITLE = re.compile(
+    r"^(?:(?:Aktiviti|Activity|Langkah|Step|اکتيۏيتي)\s*\d+\s*[:：]?"
+    r"|(?:Pengukuhan|Pentaksiran|Reinforcement|Assessment)\s*[:：])$",
+    re.IGNORECASE,
+)
+
+
+def _run(value, *, bold=False, size=17, activity_headings=False, rtl=False):
+    font = "Amiri" if rtl else "Arial"
+    runs = []
+    for index, piece in enumerate(str(value or "").split("\n")):
+        is_title = activity_headings and bool(_ACTIVITY_TITLE.fullmatch(piece.strip()))
+        style = (
+            '<w:rPr><w:rFonts w:ascii="' + font + '" w:hAnsi="' + font +
+            '" w:cs="' + font + '" w:eastAsia="' + font + '"/>'
+            '<w:sz w:val="%d"/>' % size +
+            ("<w:b/>" if bold or is_title else "") +
+            ("<w:rtl/>" if rtl else "") + "</w:rPr>"
+        )
+        body = ('<w:br/>' if index else '') + (
+            '<w:t xml:space="preserve">' + escape(clean(piece)) + '</w:t>')
+        runs.append("<w:r>" + style + body + "</w:r>")
+    return "".join(runs)
+
+def _para(value, *, bold=False, size=17, centered=False, after=0,
+          activity_headings=False, rtl=False):
+    alignment = ('<w:jc w:val="center"/>' if centered else
+                 '<w:jc w:val="right"/>' if rtl else "")
+    direction = '<w:bidi w:val="1"/>' if rtl else ""
     return (
         '<w:p><w:pPr><w:spacing w:before="0" w:after="%d" '
-        'w:line="200" w:lineRule="auto"/>' % after+alignment+"</w:pPr>"+
-        _run(value,bold=bold,size=size)+"</w:p>"
+        'w:line="200" w:lineRule="auto"/>' % after +
+        alignment + direction + "</w:pPr>" +
+        _run(value, bold=bold, size=size, activity_headings=activity_headings,
+             rtl=rtl) + "</w:p>"
     )
 
-def _cell(value,width,*,bold=False,heading=False):
-    # Compact cell padding, black borders, no blue header shading.
-    inside=_para(value if value else " ",bold=bold or heading,
-                 size=17,centered=heading)
+def _cell(value, width, *, bold=False, heading=False, shade=None,
+          activity_headings=False, rtl=False):
+    inside = _para(value if value else " ", bold=bold or heading,
+                   size=20 if rtl else 17, centered=heading,
+                   activity_headings=activity_headings, rtl=rtl)
+    shade_xml = ('<w:shd w:val="clear" w:fill="' + shade + '"/>' if shade else "")
     return (
-        '<w:tc><w:tcPr><w:tcW w:w="%d" w:type="dxa"/>' % width+
+        '<w:tc><w:tcPr><w:tcW w:w="%d" w:type="dxa"/>' % width +
+        shade_xml +
         '<w:tcMar><w:top w:w="22" w:type="dxa"/><w:bottom w:w="22" w:type="dxa"/>'
         '<w:left w:w="50" w:type="dxa"/><w:right w:w="50" w:type="dxa"/>'
-        '</w:tcMar></w:tcPr>'+inside+"</w:tc>"
+        '</w:tcMar></w:tcPr>' + inside + "</w:tc>"
     )
 
-def _table(rows,widths,*,head=False):
-    total=sum(widths)
-    border=''.join('<w:'+x+' w:val="single" w:sz="6" w:color="666666"/>' for x in (
-        "top","left","bottom","right","insideH","insideV"))
-    table=(
-        '<w:tbl><w:tblPr><w:tblW w:w="%d" w:type="dxa"/>' % total+
-        '<w:tblLayout w:type="fixed"/><w:tblBorders>'+border+
-        '</w:tblBorders></w:tblPr><w:tblGrid>'+
-        ''.join('<w:gridCol w:w="%d"/>'%w for w in widths)+'</w:tblGrid>'
+def _table(rows, widths, *, head=False, tone="EDF3FA",
+           strong="DBE8F5", rtl=False, activity_table=False):
+    total = sum(widths)
+    border = ''.join('<w:' + x + ' w:val="single" w:sz="6" w:color="697681"/>' for x in (
+        "top", "left", "bottom", "right", "insideH", "insideV"))
+    direction = '<w:bidiVisual w:val="1"/>' if rtl else ""
+    table = (
+        '<w:tbl><w:tblPr><w:tblW w:w="%d" w:type="dxa"/>' % total +
+        '<w:tblLayout w:type="fixed"/>' + direction +
+        '<w:tblBorders>' + border + '</w:tblBorders></w:tblPr><w:tblGrid>' +
+        ''.join('<w:gridCol w:w="%d"/>' % w for w in widths) + '</w:tblGrid>'
     )
-    for index,values in enumerate(rows):
-        if len(values)!=len(widths):
+    for index, values in enumerate(rows):
+        if len(values) != len(widths):
             raise ValueError("Incorrect Word table row width")
-        is_head=head and index==0
-        table += '<w:tr><w:trPr><w:cantSplit/>'+(
-            '<w:tblHeader/>' if is_head else "")+'</w:trPr>'
-        for j,value in enumerate(values):
-            table += _cell(str(value),widths[j],bold=(j==0 and not is_head),
-                           heading=is_head)
+        is_head = head and index == 0
+        table += '<w:tr><w:trPr><w:cantSplit/>' + (
+            '<w:tblHeader/>' if is_head else "") + '</w:trPr>'
+        for j, value in enumerate(values):
+            shade = strong if is_head else tone if j == 0 else None
+            table += _cell(
+                str(value), widths[j], bold=(j == 0 and not is_head),
+                heading=is_head, shade=shade, rtl=rtl,
+                activity_headings=activity_table and index == 2 and j == 1,
+            )
         table += '</w:tr>'
-    return table+'</w:tbl>'
+    return table + '</w:tbl>'
 
 def build_rph_table_docx(data, subject_labels):
     """Build three structural tables from the same data as the browser preview."""
@@ -71,17 +136,18 @@ def build_rph_table_docx(data, subject_labels):
     if layout.get("style")!="telegram-native-rph-v1":
         raise ValueError("Unsupported verified RPH layout")
     head=layout["header"];phases=layout["phases"];footer=layout["footer"]
+    tone,strong,rtl=_theme(data)
     if len(head)<16 or len(phases)!=3 or len(footer)!=2:
         raise ValueError("Incomplete source-backed Telegram layout")
     content=[
-        _para(layout["title"],bold=True,size=30,centered=True,after=80),
-        _table([(row["label"],row["value"]) for row in head],(2950,7700)),
+        _para(layout["title"],bold=True,size=34 if rtl else 30,centered=True,after=80,rtl=rtl),
+        _table([(row["label"],row["value"]) for row in head],(2950,7700),tone=tone,strong=strong,rtl=rtl),
         _para(" ",after=10),
         _table([layout["activity_header"]]+[
             (row["label"],row["activity"],row["notes"])
-            for row in phases],(1500,7150,2000),head=True),
+            for row in phases],(1500,7150,2000),head=True,tone=tone,strong=strong,rtl=rtl,activity_table=True),
         _para(" ",after=10),
-        _table([(row["label"],row["value"]) for row in footer],(2950,7700)),
+        _table([(row["label"],row["value"]) for row in footer],(2950,7700),tone=tone,strong=strong,rtl=rtl),
         '<w:sectPr><w:footerReference w:type="default" r:id="rIdFooter1"/>'
         '<w:pgSz w:w="11906" w:h="16838"/>'
         '<w:pgMar w:top="425" w:bottom="425" w:left="625" w:right="625" '
