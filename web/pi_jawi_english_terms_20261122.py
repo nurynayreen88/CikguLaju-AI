@@ -152,7 +152,12 @@ def install(runtime) -> bool:
             # Replace only that exact source-note block if it survives.
             for note in source_notes:
                 revised = normalize_english_terms(note)
-                if note != revised and note in text:
+                # Only whole, substantial Jawi notes can be matched here.
+                # A short English label may also occur in a verified SK/SP
+                # or a teacher's free-text reflection and must remain there.
+                is_full_jawi_note = (len(note.strip()) >= 40
+                                     and any("\u0600" <= c <= "\u08ff" for c in note))
+                if is_full_jawi_note and note != revised and note in text:
                     text = text.replace(note, revised)
         return text
 
