@@ -12,7 +12,7 @@ on:
       - "web/sains_unit_awal.py"
       - "web/sains_y3_unit_awal.py"
       - "staging/ppki/render_pengurusan_kehidupan.py"
-      - "tests/test_rph_all_subject_design_only_20261121.py"
+      - "tests/test_arabic_real_source_design_20261121.py"
       - ".github/workflows/rph-all-subject-design-only-20261121.yml"
   workflow_dispatch:
 
@@ -45,4 +45,5 @@ jobs:
             tests/test_rph_premium_dlp_ppki_20261121.py \
             tests/test_pi_jawi_short_right_header_20261121.py \
             tests/test_arabic_header_right_20261121.py \
-            tests/test_arabic_rph_a4_equal_width_20261121.py
+            tests/test_arabic_rph_a4_equal_width_20261121.py \
+            tests/test_arabic_real_source_design_20261121.py
