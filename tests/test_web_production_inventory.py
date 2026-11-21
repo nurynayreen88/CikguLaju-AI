@@ -88,7 +88,9 @@ class ProductionSourceInventory(unittest.TestCase):
             else:
                 self.assertEqual(response.mimetype, "application/pdf")
                 self.assertTrue(response.data.startswith(b"%PDF-"))
-                self.assertEqual(len(re.findall(rb"/Type\s*/Page\b", response.data)), 16)
+                from io import BytesIO
+                from pypdf import PdfReader
+                self.assertEqual(len(PdfReader(BytesIO(response.data)).pages), 16)
 
     def test_public_rph_sample_serves_fixed_twelve_page_pdf(self):
         from tools.run_web_production import app
