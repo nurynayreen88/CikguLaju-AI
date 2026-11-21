@@ -170,3 +170,38 @@ def test_new_subject_acceptance_has_all_non_destructive_gates():
     assert "telegram-integrated-english-2027" in routes
     assert "PPKI/SJKC/SJKT dedicated clients" in routes
     assert "other future subjects" in m["future_or_separately_audited_programmes"]
+
+
+
+def test_one_universal_rph_box_layout_and_only_two_rtl_subjects():
+    """RTL changes reading order, never grants different RPH boxes or widths."""
+    m = _register()
+    layout = m["universal_layout"]
+    assert layout["rule"] == "ONE_OUTER_BOX_LAYOUT_ALL_SUBJECTS"
+    assert layout["all_subjects_same_box_design"] is True
+    assert layout["all_subjects_equal_outer_box_width"] is True
+    assert layout["exceptions_affect_direction_only"] is True
+    assert layout["direction_default"] == "LTR"
+    assert set(layout["rtl_only_subjects"]) == {
+        "pendidikan islam", "bahasa arab",
+    }
+    assert "outer_box_geometry" in layout["rtl_does_not_change"]
+    assert "overall_box_width" in layout["rtl_does_not_change"]
+    assert "main_section_hierarchy" in layout["rtl_does_not_change"]
+    assert layout["structural_sections"] == m["native_contract"]["required_table_sections"]
+    assert set(layout["rtl_applies_to"]) == {
+        "text_direction", "labels", "paragraph_alignment", "column_reading_order",
+    }
+    for name in m["regular_native_ltr_subjects"]:
+        assert name not in layout["rtl_only_subjects"], name
+    for marker in ("sains", "science", "ppki", "dlp"):
+        assert marker not in layout["rtl_only_subjects"], marker
+    assert "one_universal_rph_outer_box_layout_even_for_rtl_subjects" in m["required_checks"]
+    assert "rtl_direction_only_pendidikan_islam_and_bahasa_arab" in m["required_checks"]
+    standard = STANDARD.read_text(encoding="utf-8")
+    agents = AGENTS.read_text(encoding="utf-8")
+    for phrase in ("SATU REKA BENTUK KOTAK", "SATU-SATUNYA PERBEZAAN ARAH",
+                   "bukan kebenaran menggunakan lebar"):
+        assert phrase.casefold() in standard.casefold(), phrase
+    assert "HANYA SATU reka bentuk kotak RPH" in agents
+    assert "bukan pengecualian untuk bentuk atau lebar kotak" in agents
