@@ -292,8 +292,23 @@ def compact_web_word_notes(document):
         root=etree.fromstring(archive.read('word/document.xml'))
         body=root.find(w('body'))
         tables=body.findall(w('tbl')) if body is not None else []
+        if len(tables)==4:
+            # Owner-approved premium documents use four full-width tables:
+            # [identity/teacher, standards, activities, reflection].
+            # Their 182 mm activity grid is already aligned to the header.
+            # Legacy compacting widths (10630 twips) would distort that
+            # alignment; preserve the original bytes after shape checks.
+            header_rows=tables[0].findall(w('tr'))
+            activity_rows=tables[2].findall(w('tr'))
+            if (len(header_rows)!=1
+                    or len(header_rows[0].findall(w('tc')))!=2
+                    or not activity_rows
+                    or any(len(row.findall(w('tc')))!=3
+                           for row in activity_rows)):
+                raise ValueError('Unexpected four-table premium RPH structure')
+            return document
         if len(tables)!=3:
-            raise ValueError('Expected 3 native RPH tables')
+            raise ValueError('Expected 3 legacy or 4 premium RPH tables')
         activity=tables[1]
         # Keep native column widths when the source supplies teaching notes.
         for row in activity.findall(w('tr'))[1:]:
