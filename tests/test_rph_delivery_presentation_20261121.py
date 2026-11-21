@@ -31,7 +31,7 @@ def native_three_table_example():
     for i, (name, value) in enumerate((
         ("Fasa", "Aktiviti Pengajaran & Pembelajaran"),
         ("Set Induksi", "Guru memaparkan gambar."),
-        ("Aktiviti Utama", "Aktiviti 1\\nMurid mengenal pasti kata nama.\\nAktiviti 2\\nMurid membina ayat."),
+        ("Aktiviti Utama", "Aktiviti 1\nMurid mengenal pasti kata nama.\nAktiviti 2\nMurid membina ayat."),
         ("Penutup", "Murid menyatakan dua contoh kata nama."),
     )):
         activity.cell(i, 0).text = name
