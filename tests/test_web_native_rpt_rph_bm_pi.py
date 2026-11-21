@@ -34,6 +34,27 @@ class VerifiedRPTClientTests(unittest.TestCase):
         self.assertIn('TELEGRAM_RPT_RPH_NOT_READY',code)
         self.assertIn('authorize_rendered_document(',code)
 
+    def test_pi_unit_menu_keeps_original_bidang_without_archive_choice(self):
+        from pathlib import Path
+        root = Path(__file__).resolve().parents[1]
+        menu = (root / "tools" / "run_web_v1_preview.py").read_text("utf-8")
+        self.assertIn('source.list_units(year, "PI")', menu)
+        self.assertNotIn('original.append({"value": PI_PREMIUM_UNIT', menu)
+        self.assertNotIn('return jsonify(pi_696_options(year))', menu)
+        self.assertIn('PI_ARCHIVE_OPTION_RETIRED', menu)
+
+    def test_old_pi_archive_link_is_rejected_before_quota(self):
+        from pathlib import Path
+        code = (Path(__file__).resolve().parents[1] /
+                "web" / "unified_rph_web.py").read_text("utf-8")
+        start = code.index('if subject == "PI" and unit == PI_PREMIUM_UNIT:')
+        next_branch = code.index('if subject == "PI":', start)
+        retired = code[start:next_branch]
+        self.assertIn("PI_ARCHIVE_OPTION_RETIRED", retired)
+        self.assertIn("return None", retired)
+        self.assertNotIn('source": "pi-696-private-bundle"', retired)
+        self.assertIn('verified_rpt_available(year, subject, unit, token)', code)
+
     def test_availability_fails_closed_if_source_unconfigured(self):
         from unittest.mock import patch
         with patch.dict("os.environ",{
