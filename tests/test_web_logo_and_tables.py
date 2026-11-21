@@ -1,4 +1,4 @@
-"""Logo transparency and Telegram-parity 3-table RPH Web regression."""
+"""Logo transparency and RPH Web source-parity with approved four-table downloads."""
 import base64
 from io import BytesIO
 from pathlib import Path
@@ -97,7 +97,7 @@ class WebLogoAndTables(unittest.TestCase):
 
     @patch("web.unified_rph_web._has_paid_access",return_value=True)
     @patch("web.unified_rph_web._account",return_value=({"telegram_user_id":123},None))
-    def test_real_english_lessons_y2_to_y6_have_exact_three_word_tables(self,*_):
+    def test_real_english_lessons_y2_to_y6_have_approved_four_word_tables(self,*_):
         tested=0
         for year in range(2,7):
             records=source_records(year,"ENGLISH")
@@ -122,24 +122,31 @@ class WebLogoAndTables(unittest.TestCase):
                     word=self.client.get("/api/web/rph/word",query_string=query)
                     self.assertEqual(word.status_code,200)
                     doc=Document(BytesIO(word.data))
-                    self.assertEqual(len(doc.tables),3)
-                    info,activity,followup=doc.tables
+                    self.assertEqual(len(doc.tables),4)
+                    banner,info,activity,followup=doc.tables
+                    self.assertEqual(len(banner.columns),2)
                     self.assertEqual(len(info.columns),2)
                     self.assertEqual(len(activity.columns),3)
                     self.assertEqual(len(followup.columns),2)
-                    self.assertEqual(len(info.rows),len(layout["header"]))
+                    self.assertEqual(len(banner.rows),1)
+                    self.assertEqual(len(info.rows),len(layout["header"])-8)
                     self.assertEqual(len(activity.rows),4)
                     self.assertEqual(len(followup.rows),2)
-                    for number,field in enumerate(layout["header"]):
+                    banner_text="\n".join(cell.text for cell in banner.rows[0].cells)
+                    for field in layout["header"][:8]:
+                        self.assertIn(field["label"],banner_text)
+                        if field["value"]:
+                            self.assertIn(field["value"],banner_text)
+                    for number,field in enumerate(layout["header"][8:]):
                         self.assertEqual(info.cell(number,0).text,field["label"])
                         self.assertEqual(info.cell(number,1).text,field["value"])
                     for index,phase in enumerate(layout["phases"],1):
                         self.assertEqual(activity.cell(index,0).text,phase["label"])
                         self.assertEqual(activity.cell(index,1).text,phase["activity"])
                         self.assertEqual(activity.cell(index,2).text,phase["notes"])
-                    self.assertIn("4 Bestari",[r.cells[1].text for r in info.rows])
-                    self.assertIn("08/03/2027",[r.cells[1].text for r in info.rows])
-                    self.assertIn("09:15",[r.cells[1].text for r in info.rows])
+                    self.assertIn("4 Bestari",banner_text)
+                    self.assertIn("08/03/2027",banner_text)
+                    self.assertIn("09:15",banner_text)
                     self.assertEqual(layout["header"][3]["value"],"Monday")
                     self.assertAlmostEqual(doc.sections[0].page_width.cm,21.0,places=1)
                     self.assertAlmostEqual(doc.sections[0].page_height.cm,29.7,places=1)
@@ -150,7 +157,7 @@ class WebLogoAndTables(unittest.TestCase):
 
     @patch("web.unified_rph_web._has_paid_access",return_value=True)
     @patch("web.unified_rph_web._account",return_value=({"telegram_user_id":123},None))
-    def test_moral_pjpk_use_same_3_table_template_not_generic_lesson(self,*_):
+    def test_moral_pjpk_use_same_approved_four_table_template(self,*_):
         for year,subject,component in ((2,"MORAL",None),(3,"PJPK","PJ"),(4,"PJPK","PK")):
             records=source_records(year,subject,component)
             self.assertTrue(records)
@@ -166,7 +173,10 @@ class WebLogoAndTables(unittest.TestCase):
                                  ["Fasa","Aktiviti Pengajaran & Pembelajaran","Catatan"])
                 word=self.client.get("/api/web/rph/word",query_string=query)
                 self.assertEqual(word.status_code,200)
-                self.assertEqual(len(Document(BytesIO(word.data)).tables),3)
+                doc=Document(BytesIO(word.data))
+                self.assertEqual(len(doc.tables),4)
+                self.assertEqual(len(doc.tables[2].rows),4)
+                self.assertEqual(doc.tables[2].cell(2,0).text,"Aktiviti Utama")
 
     @patch("web.unified_rph_web._has_paid_access",return_value=True)
     @patch("web.unified_rph_web._account",return_value=({"telegram_user_id":123},None))
