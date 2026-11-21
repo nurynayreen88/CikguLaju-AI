@@ -116,17 +116,40 @@ def test_nine_subjects_same_width_teacher_top_right_and_source_preserved(tmp_pat
         assert ("Tarikh" in teacher or "Date" in teacher), subject
         assert "____" not in " ".join(teacher)
 
+        baseline = _pdf(fixture(subject), tmp_path / (
+            subject.replace(" ", "_") + "-original.pdf"))
         document = _pdf(next_story, tmp_path / (subject.replace(" ", "_") + ".pdf"))
-        with fitz.open(stream=document, filetype="pdf") as pdf:
-            assert len(pdf) == 1, subject
+        with (fitz.open(stream=baseline, filetype="pdf") as old_pdf,
+              fitz.open(stream=document, filetype="pdf") as pdf):
+            assert len(pdf) == len(old_pdf) == 1, subject
             text = pdf[0].get_text()
             assert "2.1.1" in text and "Aktiviti 1" in text and "Refleksi" in text
             assert "Kelas" in text or "Class" in text
             assert pdf[0].rect.width > 590 and pdf[0].rect.height > 840
+            # Same original paragraph words after header reflow; do not
+            # silently drop SK/SP, objectives or teacher metadata.
+            words_before = Counter(word[4] for page in old_pdf
+                                   for word in page.get_text("words"))
+            words_after = Counter(word[4] for page in pdf
+                                  for word in page.get_text("words"))
+            assert words_before == words_after, subject
+
+            teacher_label = "Class" if subject == "English" else "Kelas"
+            teacher_boxes = pdf[0].search_for(teacher_label)
+            assert teacher_boxes and min(box.x0 for box in teacher_boxes) > 330, subject
+            assert "____" not in text
+            # Confirm actual vector-rule alignment, not merely Table props.
+            rules = [item["rect"] for item in pdf[0].get_drawings()
+                     if item["rect"].width > 480
+                     and item["rect"].height < 1.5]
+            assert len(rules) >= 6, subject
+            assert max(box.x0 for box in rules) - min(box.x0 for box in rules) < .6
+            assert max(box.x1 for box in rules) - min(box.x1 for box in rules) < .6
         decorated = style_pdf_bytes(document, color_for_state(state))
-        with fitz.open(stream=decorated, filetype="pdf") as pdf:
-            assert len(pdf) == 1
-            assert pdf[0].get_text() == fitz.open(stream=document, filetype="pdf")[0].get_text()
+        with (fitz.open(stream=decorated, filetype="pdf") as pdf,
+              fitz.open(stream=document, filetype="pdf") as source_pdf):
+            assert len(pdf) == len(source_pdf) == 1
+            assert pdf[0].get_text() == source_pdf[0].get_text()
 
 
 def test_specialty_and_unknown_layout_fail_closed():
@@ -147,6 +170,25 @@ def test_specialty_and_unknown_layout_fail_closed():
     too_long = fixture("Bahasa Melayu")
     too_long[2]._cellvalues[7][1] = Paragraph("Topic " * 60, too_long[2]._cellvalues[7][1].style)
     assert premium_pdf_story({"task": "rph", "subject": "Bahasa Melayu"}, too_long) is too_long
+
+
+def test_unapproved_titles_and_outer_grids_are_not_reflowed():
+    state = {"task": "rph", "subject": "Bahasa Melayu"}
+    for changed in ("wrong-title", "phase-width", "reflection-width",
+                    "additional-flowable", "missing-spacer"):
+        story = fixture("Bahasa Melayu")
+        if changed == "wrong-title":
+            story[0] = Paragraph("Different lesson format", story[0].style)
+        elif changed == "phase-width":
+            story[4]._colWidths[-1] += 8 * mm
+        elif changed == "reflection-width":
+            story[6]._colWidths[-1] += 8 * mm
+        elif changed == "additional-flowable":
+            story.append(Spacer(1, mm))
+        else:
+            story[5] = Paragraph("not a spacer", story[0].style)
+        assert premium_pdf_story(state, story) is story, changed
+    assert premium_pdf_story(None, fixture("Bahasa Melayu")) is not None
 
 
 def test_source_app_uses_native_pdf_story_only_at_one_rph_build_site():
