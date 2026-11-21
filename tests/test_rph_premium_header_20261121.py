@@ -197,3 +197,43 @@ def test_all_four_outer_table_edges_have_the_same_width_for_nine_subjects():
 def test_equal_width_fails_closed_when_document_has_unapproved_table_count():
     original = fixture("Bahasa Melayu")
     assert equal_width_four_table_bytes(original) == original
+
+
+def test_real_native_word_main_activity_titles_are_bold_on_separate_lines():
+    """Teacher-facing Word: existing title lines bold; teaching text unchanged."""
+    from web.rph_reference_style_20261121 import style_three_table_word_bytes
+
+    for subject in ("Bahasa Melayu", "English", "Matematik",
+                    "Pendidikan Muzik", "Sejarah"):
+        document = Document(BytesIO(fixture(subject)))
+        activity = document.tables[1].cell(2, 1)
+        heading = "Activity" if subject == "English" else "Aktiviti"
+        activity.text = (
+            f"{heading} 1 – Membaca dan mengenal pasti\\n"
+            "Guru menerangkan langkah dan murid membaca petikan.\\n"
+            f"{heading} 2 – Membandingkan jawapan\\n"
+            "Murid menjawab soalan secara berpasangan.\\n"
+            f"{heading} 3 – Pentaksiran individu\\n"
+            "Guru menyemak jawapan yang dihasilkan."
+        )
+        original_text = activity.text
+        buf = BytesIO()
+        document.save(buf)
+        raw = buf.getvalue()
+        styled = style_three_table_word_bytes(
+            raw, color_for_state({"task": "rph", "subject": subject})
+        )
+        result = Document(BytesIO(styled))
+        after = result.tables[1].cell(2, 1)
+        assert after.text == original_text, subject
+        assert xml_tokens(raw) == xml_tokens(styled), subject
+        runs = after.paragraphs[0].runs
+        assert any(r.bold and f"{heading} 1" in r.text for r in runs), subject
+        assert any(r.bold and f"{heading} 2" in r.text for r in runs), subject
+        assert any(r.bold and f"{heading} 3" in r.text for r in runs), subject
+        for sentence in (
+            "Guru menerangkan langkah", "Murid menjawab soalan",
+            "Guru menyemak jawapan",
+        ):
+            assert any(sentence in r.text and not r.bold for r in runs), (subject, sentence)
+        assert not any("____" in r.text for r in runs)
