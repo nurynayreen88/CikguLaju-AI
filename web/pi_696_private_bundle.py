@@ -184,47 +184,102 @@ def request_private_document(year, lesson, fmt, teacher, config):
     return BytesIO(word)
 
 
+@lru_cache(maxsize=1)
+def _amiri_bytes():
+    """Fetch only the original open-source Amiri font for private server rendering.
+
+    Font bytes are never sent to users or exposed in public Storage.
+    """
+    candidate = Path(__file__).resolve().parents[1] / "fonts/jawi/Amiri-Regular.ttf"
+    if candidate.is_file():
+        data = candidate.read_bytes()
+    else:
+        url = "https://raw.githubusercontent.com/google/fonts/main/ofl/amiri/Amiri-Regular.ttf"
+        with urlopen(Request(url, headers={"User-Agent": "CikguLaju-RPH/1"}),
+                     timeout=18) as response:
+            data = response.read(2_000_001)
+    if not 10_000 <= len(data) <= 2_000_000 or data[:4] not in (
+            b"\x00\x01\x00\x00", b"true"):
+        raise PrivatePIRPHUnavailable("Fon Jawi belum boleh dimuatkan")
+    return data
+
+
+def _is_jawi(value):
+    return any("\u0600" <= ch <= "\u08ff" for ch in value)
+
+
+def _draw_shaped_jawi(page, rect, value):
+    """Use PyMuPDF Story/HTML shaping, never raw insert_textbox for RTL Jawi."""
+    from html import escape as escape_html
+    import fitz
+
+    font = _amiri_bytes()
+    with tempfile.TemporaryDirectory(prefix="cikgulaju-amiri-") as temporary:
+        path = Path(temporary)
+        (path / "Amiri-Regular.ttf").write_bytes(font)
+        css = (
+            "@font-face {font-family: Amiri;"
+            "src: url('Amiri-Regular.ttf');}"
+            "html,body,div {font-family: Amiri;font-size:9pt;line-height:10pt;"
+            "direction:rtl;text-align:right;margin:0;padding:0;}"
+        )
+        story = fitz.Story(
+            html='<div dir="rtl" lang="ms-Arab">' + escape_html(value) + "</div>",
+            user_css=css, archive=fitz.Archive(str(path))
+        )
+        overlay = BytesIO()
+        writer = fitz.DocumentWriter(overlay)
+        dev = writer.begin_page(page.rect)
+        placed = story.place(rect)
+        if placed[0] != 0:
+            writer.end_page()
+            writer.close()
+            raise PrivatePIRPHUnavailable("Catatan Jawi terlalu panjang untuk kotak")
+        story.draw(dev)
+        writer.end_page()
+        writer.close()
+        with fitz.open(stream=overlay.getvalue(), filetype="pdf") as extra:
+            page.show_pdf_page(page.rect, extra, 0, overlay=True)
+
+
 def _fill_pdf_fields(data, teacher):
-    """Fill four consistently positioned blank Jawi header cells in original PDF."""
+    """Fill only empty header/reflection panels of the original one-page PDF."""
     try:
         import fitz
         document = fitz.open(stream=data, filetype="pdf")
         page = document[0]
         values = [str(teacher.get(k) or "").strip()
                   for k in ("class", "date", "time", "students")]
-        # Original Jawi labels start at (38, 20.5); only unused metadata
-        # cells are written. Never obscure the lesson title or SK/SP.
-        font = "helv"
-        font_file = Path(__file__).resolve().parents[1] / "fonts/jawi/Amiri-Regular.ttf"
-        if font_file.is_file():
-            page.insert_font(fontname="amiri", fontfile=str(font_file))
-            font = "amiri"
         for index, value in enumerate(values):
             if not value:
                 continue
             top = 24 + (20.7 * index)
             rect = fitz.Rect(91, top, 213, top + 17)
-            remaining = page.insert_textbox(rect, value, fontsize=9, fontname=font)
-            if remaining < 0:
-                raise PrivatePIRPHUnavailable("Teacher detail too long for existing box")
+            if _is_jawi(value):
+                _draw_shaped_jawi(page, rect, value)
+            elif page.insert_textbox(rect, value, fontsize=9, fontname="helv") < 0:
+                raise PrivatePIRPHUnavailable("Maklumat guru terlalu panjang untuk kotak")
         reflection = str(teacher.get("reflection") or "").strip()
         if reflection:
             labels = [
-                span
-                for block in page.get_text("dict")["blocks"]
+                span for block in page.get_text("dict")["blocks"]
                 for line in block.get("lines", ())
                 for span in line.get("spans", ())
                 if "رفليكسي" in span["text"] or "رفليکسي" in span["text"]
             ]
             if not labels:
-                raise PrivatePIRPHUnavailable("Reflection panel unavailable")
+                raise PrivatePIRPHUnavailable("Kotak refleksi tiada dalam RPH sumber")
             top = float(labels[-1]["bbox"][1]) + 2
             rect = fitz.Rect(38, top, 430, min(top + 35, page.rect.y1 - 20))
-            if rect.height < 12 or page.insert_textbox(
-                    rect, reflection, fontsize=8, fontname=font) < 0:
-                raise PrivatePIRPHUnavailable("Manual reflection too long for the available box")
+            if rect.height < 12:
+                raise PrivatePIRPHUnavailable("Kotak refleksi tidak mencukupi")
+            if _is_jawi(reflection):
+                _draw_shaped_jawi(page, rect, reflection)
+            elif page.insert_textbox(rect, reflection, fontsize=8,
+                                     fontname="helv") < 0:
+                raise PrivatePIRPHUnavailable("Refleksi terlalu panjang untuk kotak")
         return document.tobytes(garbage=3, deflate=True)
     except PrivatePIRPHUnavailable:
         raise
     except Exception as exc:
-        raise PrivatePIRPHUnavailable("Unable to fill the original PDF safely") from exc
+        raise PrivatePIRPHUnavailable("PDF tidak dapat diisi dengan selamat") from exc
