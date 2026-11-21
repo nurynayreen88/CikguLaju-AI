@@ -10955,6 +10955,15 @@ def create_pdf_file(s, ai_text, cid):
         elif science_fill:
             tt.setStyle(TableStyle([('BACKGROUND', (0, 0), (0, -1), science_fill)]))
         story.append(tt)
+        # Reuse the SAME native Paragraph objects in the approved LTR PDF
+        # teacher/header grid; protected specialty/RTL renderers fail closed.
+        # A presentation failure must never prevent the teacher's original PDF.
+        try:
+            from web.rph_native_pdf_header_20261121 import premium_pdf_story
+            story = premium_pdf_story(s, story)
+        except (ValueError, TypeError, AttributeError, ImportError) as exc:
+            print("RPH native PDF header layout skipped:",
+                  type(exc).__name__, flush=True)
         _hf=_pdf_header_footer_en if _is_english_subject(s) else _pdf_header_footer
         pdf.build(story,onFirstPage=_hf,onLaterPages=_hf); return path
 
