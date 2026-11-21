@@ -99,6 +99,7 @@ def _existing_label_cell(page, label_box, drawings):
             horizontal.append(line)
         if line.width < 1.5 and line.height >= 12:
             vertical.append(line)
+    segments = []
     for top in horizontal:
         if top.y0 > label_box.y0 or top.x0 > label_box.x0 + 3:
             continue
@@ -115,7 +116,11 @@ def _existing_label_cell(page, label_box, drawings):
                     and line.y1 >= bottom.y0-2)
             ]
             if dividers and label_box.x1 < min(dividers)-2:
-                return fitz.Rect(top.x0, top.y0, min(dividers), bottom.y0)
+                segments.append(fitz.Rect(top.x0, top.y0, min(dividers), bottom.y0))
+    # A label may lie between several sets of lines (a multi-row table).
+    # Use the smallest enclosing real cell, never shade adjoining rows.
+    if segments:
+        return min(segments, key=lambda box: box.get_area())
     return fitz.Rect(label_box.x0-3, label_box.y0-1,
                      label_box.x1+3, label_box.y1+1)
 
