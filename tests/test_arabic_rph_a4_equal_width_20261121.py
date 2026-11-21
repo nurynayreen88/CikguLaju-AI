@@ -49,8 +49,8 @@ def test_approved_arabic_word_renders_physical_equal_width_a4(tmp_path):
     widths = [sum(col.width.mm for col in t.columns) for t in document.tables]
     assert max(widths)-min(widths) < .8, widths
     assert all(abs(x-187)<1 for x in widths)
-    assert document.tables[0].rows[1].cells[1].text == ""
-    identity = document.tables[0].rows[0].cells[2].text
+    assert document.tables[0].rows[1].cells[2].text == ""
+    identity = document.tables[0].rows[0].cells[0].text
     for token in ("المدرسة", "الفصل", "الصف والحصّة"):
         assert token in identity
 

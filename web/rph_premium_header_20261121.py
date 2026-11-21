@@ -1,4 +1,4 @@
-"""Conservative premium small-left teacher banner for legacy three-table RPH Word.
+"""Conservative premium small-right teacher banner for legacy three-table RPH Word.
 
 Move existing display nodes (not lesson text) into a compact two-column banner.
 Fail closed when the native layout differs from the audited structure. Specialty
@@ -96,20 +96,20 @@ def _make_banner(body, first_table, title, rows, fill, *, rtl_jawi=False):
     for edge in ("top", "bottom", "left", "right", "insideV"):
         _node(borders, edge, val="single", sz=6, color="6D7C8B")
     grid = _node(banner, "tblGrid")
-    # Owner's mirrored header requirement: short left box for the five
-    # teacher fields, wide right box for the lesson identity. PI/Arabic use
-    # their independent RTL renderers with the short box on the right.
-    _node(grid, "gridCol", w="3730")
+    # Restore owner-approved initial sample: identity is the wide LEFT
+    # column, and the teacher's five fields form the small RIGHT column.
+    # Keep all curriculum source text and its original paragraph nodes.
     _node(grid, "gridCol", w="6900")
+    _node(grid, "gridCol", w="3730")
     table_row = _node(banner, "tr")
     left = _node(table_row, "tc")
     leftpr = _cell_fill(left, fill)
-    leftpr.find(W + "tcW").set(W + "w", "3730")
+    leftpr.find(W + "tcW").set(W + "w", "6900")
     right = _node(table_row, "tc")
     rightpr = _cell_fill(right, fill)
-    rightpr.find(W + "tcW").set(W + "w", "6900")
+    rightpr.find(W + "tcW").set(W + "w", "3730")
     title.getparent().remove(title)
-    right.append(title)
+    left.append(title)
     for old_run in title.iter(W + "r"):
         rpr = old_run.find(W + "rPr")
         if rpr is None:
@@ -122,10 +122,10 @@ def _make_banner(body, first_table, title, rows, fill, *, rtl_jawi=False):
             sz = _node(rpr, "sz")
         sz.set(W + "val", "26")
     for name in ("subject", "year", "topic"):
-        _styled_paragraph(right, *rows[name], font_size=18 if name != "topic" else 16,
+        _styled_paragraph(left, *rows[name], font_size=18 if name != "topic" else 16,
                           rtl_jawi=rtl_jawi)
     for name in ("class", "date", "day", "time", "students"):
-        _styled_paragraph(left, *rows[name], font_size=15, rtl_jawi=rtl_jawi)
+        _styled_paragraph(right, *rows[name], font_size=15, rtl_jawi=rtl_jawi)
     body.insert(body.index(first_table), banner)
 
 
@@ -165,7 +165,7 @@ def premium_header_bytes(document, fill, *, rtl_jawi=False):
         if title is None:
             return document
         before = Counter(item.text for item in root.iter(W + "t"))
-        # The same XML cell order yields small LEFT for LTR and small RIGHT
+        # The same XML cell order yields small RIGHT for LTR and small LEFT
         # for RTL via bidiVisual, preserving the approved curriculum text.
         if rtl_jawi and " ".join(_text(title).strip().casefold().split()) != "رنچڠن ڤڠاجرن هارين":
             return document

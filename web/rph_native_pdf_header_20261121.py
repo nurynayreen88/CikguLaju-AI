@@ -105,11 +105,11 @@ def premium_pdf_story(state, story):
 
     identity = _inner_identity_table(rows, (0, 1, 7), (34, 73))
     teacher = _inner_identity_table(rows, (5, 2, 3, 4, 6), (23, 33))
-    # Mirror the native LTR header: short teacher panel physically on
-    # the LEFT, wide lesson identity on the RIGHT. Arabic/Jawi use RTL
-    # renderers with their short panel on the right instead.
-    header = Table([[teacher, [title, identity]]],
-                   colWidths=[60 * mm, 112 * mm], hAlign="CENTER")
+    # Restore owner-approved initial sample: the lesson identity occupies
+    # the wide LEFT panel and the teacher fields the small RIGHT panel.
+    # RTL specialty renderers are independent and require their own QA.
+    header = Table([[[title, identity], teacher]],
+                   colWidths=[112 * mm, 60 * mm], hAlign="CENTER")
     header.setStyle(_table_style(fill=fill, border=True))
 
     # Keep untouched curriculum paragraph objects and their source order.

@@ -59,9 +59,9 @@
       "teaching_and_learning_activities",
       "remedial_enrichment_reflection"
     ],
-    "direction": "LTR universal; only Pendidikan Islam/Jawi and Bahasa Arab/Arab RTL direction; identical outer box layout for every subject",
+    "direction": "LTR teacher box RIGHT and lesson identity LEFT; PI/BA RTL teacher box LEFT and lesson identity RIGHT; identical outer box widths",
     "status": "native_generator_telegram_deployed; other web routes not verified",
-    "pdf_teacher_fields_left": [
+    "pdf_teacher_fields_right": [
       "class",
       "date",
       "day",
@@ -70,6 +70,7 @@
     ]
   },
   "required_checks": [
+    "subject_only_once_in_header_no_duplicate_subject_row_in_main_table",
     "a4_page_and_no_content_clipping",
     "equal_left_and_right_outer_edges_on_every_main_box",
     "blank_teacher_metadata_without_lines_or_placeholders",
@@ -85,7 +86,7 @@
     "render_live_and_real_download_confirmation_before_live_status",
     "one_universal_rph_outer_box_layout_even_for_rtl_subjects",
     "rtl_direction_only_pendidikan_islam_and_bahasa_arab",
-    "short_teacher_box_left_for_ltr_right_for_pi_arabic_rtl"
+    "short_teacher_box_right_for_ltr_left_for_pi_arabic_rtl"
   ],
   "web_routes_requiring_individual_word_pdf_audit": [
     "telegram-native-bm-pdp",
@@ -98,8 +99,18 @@
     "PPKI/SJKC/SJKT dedicated clients",
     "default request_native_rph"
   ],
-  "workflow_rule": "Every new subject must use the one universal RPH box design, equal outer widths in each file. Only Pendidikan Islam/Jawi and Bahasa Arab/Arab use RTL direction/column reading order, not different geometry. Register subjects, add Word/PDF tests, audit separate Web routes; never force generic LTR adapters on Arabic/Jawi. Short teacher-info panel must be LEFT for normal LTR subjects and RIGHT for Pendidikan Islam/Bahasa Arab RTL, while outer box edges stay aligned.",
+  "workflow_rule": "Every new subject must use the one universal RPH box design, equal outer widths in each file. Only Pendidikan Islam/Jawi and Bahasa Arab/Arab use RTL direction/column reading order, not different geometry. Register subjects, add Word/PDF tests, audit separate Web routes; never force generic LTR adapters on Arabic/Jawi. Short teacher-info panel must be RIGHT for normal LTR subjects and LEFT for Pendidikan Islam/Bahasa Arab RTL, while outer box edges stay aligned.",
   "universal_layout": {
+    "subject_identity": {
+      "display_location": "header_lesson_identity_only",
+      "duplicate_subject_row_in_curriculum_table": false,
+      "applies_to": [
+        "LTR",
+        "RTL"
+      ],
+      "preserve_subject_year_topic_from_source": true,
+      "audit_word_and_pdf_per_download_route": true
+    },
     "rule": "ONE_OUTER_BOX_LAYOUT_ALL_SUBJECTS",
     "all_subjects_same_box_design": true,
     "all_subjects_equal_outer_box_width": true,
@@ -132,18 +143,18 @@
       "small_panel": "teacher_metadata",
       "large_panel": "lesson_identity",
       "ltr": {
-        "small_panel_side": "left",
-        "large_panel_side": "right"
+        "small_panel_side": "right",
+        "large_panel_side": "left"
       },
       "rtl": {
-        "small_panel_side": "right",
-        "large_panel_side": "left",
+        "small_panel_side": "left",
+        "large_panel_side": "right",
         "subjects": [
           "pendidikan islam",
           "bahasa arab"
         ]
       },
-      "note": "Overall full header width must match content and activities. A different direction only mirrors the narrow/wide internal panels, never outer geometry."
+      "note": "Restored owner-approved example: teacher metadata RIGHT and identity LEFT for LTR; teacher metadata LEFT and identity RIGHT for PI/BA RTL. Outer frame remains identical."
     }
   }
 }

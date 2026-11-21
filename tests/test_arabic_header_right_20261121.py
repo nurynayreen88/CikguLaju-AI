@@ -1,4 +1,4 @@
-"""Arabic RPH: right-side header and RTL content survive format changes."""
+"""Arabic RPH: owner-approved teacher-LEFT header and RTL content survive format changes."""
 from io import BytesIO
 
 from docx import Document
@@ -8,7 +8,7 @@ from docx.oxml.ns import qn
 from web.arabic_rph_word import render_arabic_word
 
 
-def test_arabic_teacher_header_right_and_source_fields_preserved():
+def test_arabic_teacher_header_left_and_source_fields_preserved():
     plan = {
         "year": 2, "lesson": 1, "topic": "المدرسة", "focus": "الفصل",
         "pages": "2 & 4", "sk": "1.1", "sp": "1.1.1",
@@ -28,15 +28,15 @@ def test_arabic_teacher_header_right_and_source_fields_preserved():
     header = doc.tables[0]
     assert header.alignment == WD_TABLE_ALIGNMENT.RIGHT
     assert header.table_direction == WD_TABLE_DIRECTION.RTL
-    assert [r.cells[0].text for r in header.rows] == [
+    assert [r.cells[1].text for r in header.rows] == [
         "الفصل", "التاريخ", "الوقت", "عدد التلاميذ",
     ]
-    assert [r.cells[1].text for r in header.rows] == [
+    assert [r.cells[2].text for r in header.rows] == [
         "2 AMANAH", "", "08:00 - 09:00", "28",
     ]
     for row in header.rows:
-        assert row.cells[0]._tc.tcPr.find(qn("w:shd")) is not None
-    # The RTL teacher group stays at the right, but its enclosing banner
+        assert row.cells[1]._tc.tcPr.find(qn("w:shd")) is not None
+    # The RTL teacher group is on the LEFT as in the first approved example, and the banner
     # shares the exact left/right outer edges of all subsequent RPH tables.
     expected_mm = 187
     for index, table in enumerate(doc.tables):
@@ -46,8 +46,8 @@ def test_arabic_teacher_header_right_and_source_fields_preserved():
         assert table.alignment == WD_TABLE_ALIGNMENT.RIGHT
     assert len(header.columns) == 3
     assert header.alignment == WD_TABLE_ALIGNMENT.RIGHT
-    identity = header.rows[0].cells[2].text
-    assert len(header.rows[0].cells[2].paragraphs) == 3
+    identity = header.rows[0].cells[0].text
+    assert len(header.rows[0].cells[0].paragraphs) == 3
     for expected in ("الصف والحصّة", "الوحدة", "موضوع الدرس",
                      "المدرسة", "الفصل"):
         assert expected in identity
@@ -56,8 +56,8 @@ def test_arabic_teacher_header_right_and_source_fields_preserved():
         # detail table or lose text from the approved Arabic lesson.
         assert value not in " ".join(
             cell.text for row in doc.tables[1].rows for cell in row.cells)
-    assert "____" not in " ".join(row.cells[1].text for row in header.rows)
-    assert not header.rows[1].cells[1].text  # empty date is truly blank
+    assert "____" not in " ".join(row.cells[2].text for row in header.rows)
+    assert not header.rows[1].cells[2].text  # empty date is truly blank
     body = " ".join(
         c.text for table in doc.tables[1:] for row in table.rows for c in row.cells
     )

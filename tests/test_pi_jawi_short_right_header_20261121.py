@@ -1,4 +1,4 @@
-"""Fail-closed PI Word header: narrow physical RIGHT, Jawi RTL, no source loss.
+"""Fail-closed PI Word header: narrow physical LEFT, Jawi RTL, no source loss.
 
 Uses an exact synthetic version of the existing native PI/Jawi 3-table input.
 Real authenticated PI PDF output remains a separate protected audit.
@@ -80,7 +80,7 @@ def tokens(data):
     return Counter(node.text for node in root.iter(W + "t"))
 
 
-def test_jawi_short_right_teacher_long_left_source_tokens_and_fixed_grid():
+def test_jawi_short_left_teacher_long_right_source_tokens_and_fixed_grid():
     source = fixture()
     fill = color_for_state({"task": "rph", "subject": "Pendidikan Islam"})
     assert fill
@@ -95,14 +95,15 @@ def test_jawi_short_right_teacher_long_left_source_tokens_and_fixed_grid():
     assert len(doc.tables) == 4
     assert doc.tables[0].table_direction == WD_TABLE_DIRECTION.RTL
     assert doc.tables[0].alignment == WD_TABLE_ALIGNMENT.RIGHT
-    assert doc.tables[0].columns[0].width < doc.tables[0].columns[1].width
-    # The first logical column of an RTL table is physically on the RIGHT.
+    assert doc.tables[0].columns[0].width > doc.tables[0].columns[1].width
+    # RTL first logical column is physically RIGHT: identity on the right,
+    # the short teacher block (second logical column) is physically LEFT.
     right = doc.tables[0].cell(0, 0).text
     left = doc.tables[0].cell(0, 1).text
-    assert "کلس" in right and "تاريخ" in right
-    assert "مات ڤلاجرن" in left and "تاجوق" in left
+    assert "مات ڤلاجرن" in right and "تاجوق" in right
+    assert "کلس" in left and "تاريخ" in left
     assert "1.1.1" in doc.tables[1].cell(1, 1).text
-    assert "____" not in right
+    assert "____" not in left
 
     with ZipFile(BytesIO(final)) as zipped:
         root = etree.fromstring(zipped.read("word/document.xml"))
@@ -131,7 +132,7 @@ def test_unrecognized_jawi_or_ltr_input_fails_closed():
 
 def test_pi_rtl_word_renders_a4_without_moving_source_text(tmp_path):
     fill = color_for_state({"task": "rph", "subject": "Pendidikan Islam"})
-    docx = tmp_path / "pi-jawi-short-right.docx"
+    docx = tmp_path / "pi-jawi-short-left.docx"
     docx.write_bytes(equal_width_four_table_bytes(
         premium_header_bytes(style_three_table_word_bytes(fixture(), fill),
                              fill, rtl_jawi=True), rtl_jawi=True))
@@ -143,7 +144,7 @@ def test_pi_rtl_word_renders_a4_without_moving_source_text(tmp_path):
                         "--outdir", str(tmp_path), str(docx)],
                        capture_output=True, text=True, timeout=90)
     assert p.returncode == 0, p.stderr
-    output = tmp_path / "pi-jawi-short-right.pdf"
+    output = tmp_path / "pi-jawi-short-left.pdf"
     assert output.exists()
     pdf = PdfReader(str(output))
     assert len(pdf.pages) == 1

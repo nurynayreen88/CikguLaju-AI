@@ -95,7 +95,7 @@ def _pdf(payload, path):
     return path.read_bytes()
 
 
-def test_nine_subjects_same_width_teacher_left_short_and_source_preserved(tmp_path):
+def test_nine_subjects_same_width_teacher_right_short_and_source_preserved(tmp_path):
     for subject in SUBJECTS:
         state = {"task": "rph", "subject": subject}
         before = fixture(subject)
@@ -111,12 +111,12 @@ def test_nine_subjects_same_width_teacher_left_short_and_source_preserved(tmp_pa
         assert abs(sum(next_story[2]._colWidths) - 172 * mm) < .001
         assert abs(sum(next_story[4]._colWidths) - 172 * mm) < .001
         assert abs(sum(next_story[6]._colWidths) - 172 * mm) < .001
-        teacher = list(_text_objects(banner._cellvalues[0][0]))
+        teacher = list(_text_objects(banner._cellvalues[0][1]))
         assert ("Kelas" in teacher or "Class" in teacher), subject
         assert ("Tarikh" in teacher or "Date" in teacher), subject
         assert "____" not in " ".join(teacher)
-        assert banner._colWidths[0] < banner._colWidths[1], subject
-        identity_text = list(_text_objects(banner._cellvalues[0][1]))
+        assert banner._colWidths[0] > banner._colWidths[1], subject
+        identity_text = list(_text_objects(banner._cellvalues[0][0]))
         assert any(t in identity_text for t in ("Mata Pelajaran", "Subject")), subject
 
         baseline = _pdf(fixture(subject), tmp_path / (
@@ -139,7 +139,7 @@ def test_nine_subjects_same_width_teacher_left_short_and_source_preserved(tmp_pa
 
             teacher_label = "Class" if subject == "English" else "Kelas"
             teacher_boxes = pdf[0].search_for(teacher_label)
-            assert teacher_boxes and min(box.x0 for box in teacher_boxes) < 210, subject
+            assert teacher_boxes and min(box.x0 for box in teacher_boxes) > 310, subject
             assert "____" not in text
             # Confirm actual vector-rule alignment, not merely Table props.
             rules = [item["rect"] for item in pdf[0].get_drawings()
