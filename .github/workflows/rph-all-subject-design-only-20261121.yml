@@ -1,0 +1,48 @@
+# One acceptance gate for the owner-approved layout across all current SK RPH
+# renderer families. Testing only: never rewrite a lesson, SK/SP or DB.
+name: RPH semua subjek — semak reka bentuk sahaja
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "app.py"
+      - "dlp_year2_rph.py"
+      - "web/rph_*.py"
+      - "web/arabic_rph_word.py"
+      - "web/sains_unit_awal.py"
+      - "web/sains_y3_unit_awal.py"
+      - "staging/ppki/render_pengurusan_kehidupan.py"
+      - "tests/test_rph_all_subject_design_only_20261121.py"
+      - ".github/workflows/rph-all-subject-design-only-20261121.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  all-current-subjects:
+    name: Word/PDF layout — 9 LTR + Sains + DLP/PPKI + PI/Arab RTL
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install offline document renderer and Jawi/Arabic font
+        run: |
+          sudo apt-get -o Acquire::Retries=2 update -qq
+          sudo apt-get -o Acquire::Retries=2 install -y -qq --no-install-recommends libreoffice-writer fonts-hosny-amiri
+      - name: Install layout test dependencies
+        run: python -m pip install "pytest>=8,<10" "python-docx>=1.1,<2" "reportlab>=4,<5" "pypdf>=5,<7" "PyMuPDF>=1.24,<2" "lxml>=5,<7" "flask>=3,<4"
+      - name: Validate all current renderer families without altering lesson content
+        run: |
+          python -m pytest -q \
+            tests/test_rph_premium_contract_20261121.py \
+            tests/test_rph_premium_header_20261121.py \
+            tests/test_rph_native_pdf_header_20261121.py \
+            tests/test_sains_opening_real_word_a4_20261121.py \
+            tests/test_rph_premium_dlp_ppki_20261121.py \
+            tests/test_pi_jawi_short_right_header_20261121.py \
+            tests/test_arabic_header_right_20261121.py \
+            tests/test_arabic_rph_a4_equal_width_20261121.py
