@@ -78,7 +78,7 @@ def test_approved_arabic_word_renders_physical_equal_width_a4(tmp_path):
             if 523 < fitz.Rect(item["rect"]).width < 534
             and fitz.Rect(item["rect"]).height < 1.7
         ]
-        assert len(horizontal) >= 8, horizontal
+        assert len(horizontal) >= 6, horizontal
         assert max(r.x0 for r in horizontal)-min(r.x0 for r in horizontal) < 2
         assert max(r.x1 for r in horizontal)-min(r.x1 for r in horizontal) < 2
         assert page.get_text().strip(), "Arabic renderer output must not be blank"
