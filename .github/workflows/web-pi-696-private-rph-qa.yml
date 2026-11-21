@@ -5,6 +5,7 @@ on:
     branches: [production/cikgulaju-web-20261105]
     paths:
       - web/pi_696_private_bundle.py
+      - tests/test_pi_696_login_v2_selection_20261121.py
       - tests/test_pi_696_private_bundle_web_20261121.py
       - requirements-rph-word-bundle.txt
       - .github/workflows/web-pi-696-private-rph-qa.yml
@@ -31,4 +32,4 @@ jobs:
       - name: Install the actual Web PDF and Word runtime
         run: pip install 'python-docx==1.1.2' 'PyMuPDF>=1.24.0,<1.27'
       - name: Check 696 catalog, extra six lessons, auth-independent source and PDF fields
-        run: python -m unittest discover -s tests -p 'test_pi_696_private_bundle_web_20261121.py' -v
+        run: python -m unittest discover -s tests -p 'test_pi_696*20261121.py' -v
