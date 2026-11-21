@@ -220,7 +220,7 @@ def _draw_shaped_jawi(page, rect, value):
         css = (
             "@font-face {font-family: Amiri;"
             "src: url('Amiri-Regular.ttf');}"
-            "div {font-family: Amiri;font-size:10pt;"
+            "html,body,div {font-family: Amiri;font-size:9pt;line-height:10pt;"
             "direction:rtl;text-align:right;margin:0;padding:0;}"
         )
         story = fitz.Story(
