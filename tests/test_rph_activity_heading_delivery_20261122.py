@@ -301,5 +301,61 @@ class ActivityTitleWordRegression(unittest.TestCase):
         self.assertIs(style_word_activity_titles(original), original)
 
 
+    def test_native_tabs_and_cr_breaks_are_preserved_while_activity_titles_bold(self):
+        """Word-generated tab and w:cr must not disable source-safe heading style."""
+        from docx.oxml import OxmlElement
+
+        doc = Document()
+        doc.add_paragraph("RPH asal")
+        table = doc.add_table(rows=3, cols=2)
+        table.cell(0, 0).text = "Standard Pembelajaran"
+        table.cell(0, 1).text = "2.2.1 Murid mengenal pasti bahan."
+        first = table.cell(1, 1).paragraphs[0]
+        first.add_run("Aktiviti 1\t\nMurid memerhati objek.")
+        second = table.cell(2, 1).paragraphs[0]
+        title = second.add_run("Activity 2: Matching")
+        title._r.append(OxmlElement("w:cr"))
+        second.add_run("Pupils record two examples.")
+        original = BytesIO()
+        doc.save(original)
+        old_root, original_words = _read(original.getvalue())
+        prior_counts = tuple(len(list(old_root.iter(W + suffix))) for suffix in ("br", "cr", "tab"))
+        self.assertEqual(prior_counts, (1, 1, 1))
+
+        styled = style_word_activity_titles(original)
+        self.assertIsNot(styled, original)
+        new_root, updated_words = _read(styled.getvalue())
+        self.assertEqual(original_words, updated_words)
+        self.assertEqual(prior_counts, tuple(
+            len(list(new_root.iter(W + suffix))) for suffix in ("br", "cr", "tab"
+        ))
+        word = Document(BytesIO(styled.getvalue()))
+        self.assertEqual(word.tables[0].cell(0, 1).text,
+                         "2.2.1 Murid mengenal pasti bahan.")
+        styled_runs = []
+        for run in new_root.iter(W + "r"):
+            value = "".join(n.text or "" for n in run.findall(W + "t"))
+            if value:
+                props = run.find(W + "rPr")
+                styled_runs.append((value, props is not None and props.find(W + "b") is not None))
+        flags = dict(styled_runs)
+        self.assertTrue(flags["Aktiviti 1"])
+        self.assertTrue(flags["Activity 2: Matching"])
+        self.assertFalse(flags["Murid memerhati objek."])
+        self.assertFalse(flags["Pupils record two examples."])
+        self.assertIs(style_word_activity_titles(styled), styled)
+
+    def test_single_line_tab_separated_teacher_instruction_not_bold(self):
+        """A tab alone must not promote a full instruction to an activity title."""
+        doc = Document()
+        table = doc.add_table(rows=1, cols=1)
+        table.cell(0, 0).paragraphs[0].add_run(
+            "Aktiviti 1:\tGuru menerangkan kaedah."
+        )
+        original = BytesIO()
+        doc.save(original)
+        self.assertIs(style_word_activity_titles(original), original)
+
+
 if __name__ == "__main__":
     unittest.main()
