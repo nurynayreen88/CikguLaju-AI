@@ -18,6 +18,8 @@ from lxml import etree
 from pypdf import PdfReader
 import fitz
 
+from tools.audit_pi_jawi_pdf import inspect_pdf
+
 from web.rph_equal_width_20261121 import equal_width_four_table_bytes
 from web.rph_premium_header_20261121 import premium_header_bytes
 from web.rph_reference_style_20261121 import color_for_state, style_three_table_word_bytes
@@ -154,6 +156,20 @@ def test_pi_rtl_word_renders_a4_without_moving_source_text(tmp_path):
     # Check PHYSICAL PDF rules, not only equal OOXML widths. A past
     # LibreOffice RTL rendering difference shifted one of the tables.
     # For A4 with 1.15 cm margins, each approved table occupies 18.70 cm.
+    # Test the production read-only PDF audit against an actual Word-to-PDF
+    # conversion, not only hand-drawn vector rectangles. No DB, quota, login,
+    # Web or Telegram call is made. Jawi letter shaping remains a separate
+    # visual approval, even if all measured outer borders align.
+    report = inspect_pdf(output)
+    assert report["page_count"] == 1
+    assert report["structural_pass"] is True
+    assert report["jawi_visual_approval"] == "NOT_ASSESSED"
+    geometry = report["pages"][0]["grid_alignment"]
+    assert geometry["status"] == "ALIGNED", geometry
+    assert geometry["full_width_rule_count"] >= 4, geometry
+    assert geometry["left_edge_drift_pt"] <= 2.0, geometry
+    assert geometry["right_edge_drift_pt"] <= 2.0, geometry
+
     with fitz.open(str(output)) as rendered:
         page = rendered[0]
         # LibreOffice draws some RTL table borders as adjoining segments,
