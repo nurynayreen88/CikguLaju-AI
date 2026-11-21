@@ -16,6 +16,7 @@ from docx.enum.table import WD_TABLE_ALIGNMENT, WD_TABLE_DIRECTION
 from docx.shared import Cm, Pt
 from lxml import etree
 from pypdf import PdfReader
+import fitz
 
 from web.rph_equal_width_20261121 import equal_width_four_table_bytes
 from web.rph_premium_header_20261121 import premium_header_bytes
@@ -150,3 +151,21 @@ def test_pi_rtl_word_renders_a4_without_moving_source_text(tmp_path):
     assert len(pdf.pages) == 1
     assert abs(float(pdf.pages[0].mediabox.width)-595.28) < 2
     assert abs(float(pdf.pages[0].mediabox.height)-841.89) < 2
+    # Check PHYSICAL PDF rules, not only equal OOXML widths. A past
+    # LibreOffice RTL rendering difference shifted one of the tables.
+    # For A4 with 1.15 cm margins, each approved table occupies 18.70 cm.
+    with fitz.open(str(output)) as rendered:
+        page = rendered[0]
+        rules = [
+            fitz.Rect(item["rect"]) for item in page.get_drawings()
+            if 520 < fitz.Rect(item["rect"]).width < 538
+            and fitz.Rect(item["rect"]).height < 1.7
+        ]
+        assert len(rules) >= 6, ("No visible full-width Jawi table rules", rules)
+        assert max(r.x0 for r in rules)-min(r.x0 for r in rules) < 2, rules
+        assert max(r.x1 for r in rules)-min(r.x1 for r in rules) < 2, rules
+        # Neither Jawi text nor table geometry should exceed A4 bounds.
+        for word in page.get_text("words"):
+            assert word[0] >= -1 and word[2] <= page.rect.width + 1
+            assert word[1] >= -1 and word[3] <= page.rect.height + 1
+
