@@ -1,0 +1,27 @@
+name: RPH Math Arabic source-preserving login layout QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - tools/reflow_rph_login_single_pdp_20261121.py
+      - tests/test_rph_login_reflow_single_pdp_20261121.py
+      - .github/workflows/rph-single-pdp-reflow-qa.yml
+  push:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - tools/reflow_rph_login_single_pdp_20261121.py
+      - tests/test_rph_login_reflow_single_pdp_20261121.py
+      - .github/workflows/rph-single-pdp-reflow-qa.yml
+permissions:
+  contents: read
+jobs:
+  source-preserving-reflow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install python-docx==1.1.2
+      - run: python -m unittest discover -s tests -p 'test_rph_login_reflow_single_pdp_20261121.py' -v
