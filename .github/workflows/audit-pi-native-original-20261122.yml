@@ -1,0 +1,26 @@
+name: Read-only audit native PI source and 696 draft
+on:
+  push:
+    branches: [audit/pi-native-source-20261122]
+    paths:
+      - tools/audit_pi_native_source_20261122.py
+      - .github/workflows/audit-pi-native-original-20261122.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit-pi-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Audit all original 809 PI PdP and 696 draft rows without changing curriculum
+        run: python tools/audit_pi_native_source_20261122.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cikgulaju-pi-original-source-audit-20261122
+          path: audit_output_pi_20261122/
+          retention-days: 15
