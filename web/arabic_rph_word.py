@@ -43,7 +43,7 @@ def _paragraph(paragraph, text, *, bold=False, size=11, centered=False):
     rpr.insert_element_before(cs_size, "w:rtl")
 
 
-def _table(doc, widths, rows, *, header=False, align_right=False):
+def _table(doc, widths, rows, *, header=False, align_right=False, teacher_left=False):
     if doc.tables:
         spacer = doc.add_paragraph()
         spacer.paragraph_format.line_spacing = Pt(5)
@@ -63,7 +63,7 @@ def _table(doc, widths, rows, *, header=False, align_right=False):
         row._tr.get_or_add_trPr().append(OxmlElement("w:cantSplit"))
         for index, (cell, value, width) in enumerate(zip(row.cells, values, widths)):
             cell.width = Cm(width)
-            is_label = index == 0 or (header and row_index == 0)
+            is_label = ((index == 1) if teacher_left else (index == 0)) or (header and row_index == 0)
             if is_label:
                 shade = OxmlElement("w:shd")
                 shade.set(qn("w:val"), "clear")
@@ -105,22 +105,22 @@ def render_arabic_word(plan, teacher_fields, reflection, dest):
     lesson = f"{plan['lesson']:03d}".translate(numerals)
     pages = plan["pages"].replace(" & ", " و").translate(numerals)
     # A4 printable width is 18.70 cm (21 cm minus two 1.15 cm margins).
-    # Keep the same 8.75 cm teacher block physically on the RIGHT in RTL,
-    # but share one full-width outer border with the identity panel on the
-    # left. Move, do not duplicate, the three existing curriculum identity
-    # fields into that panel; leave SK/SP and every activity unmodified.
+    # Restore the owner-approved example: 9.95 cm identity on the RIGHT,
+    # 8.75 cm teacher metadata on the LEFT in the physical RTL table.
+    # Keep the single full-width 18.7 cm outer border; do not change SK/SP
+    # and do not duplicate curriculum identity in the details table.
     identity_rows = (
         ("الصف والحصّة", f"الصفّ {year} • الحصّة {lesson}"),
         ("الوحدة", plan["topic"]),
         ("موضوع الدرس", plan["focus"]),
     )
-    header = _table(doc, (3.25, 5.5, 9.95), [
-        ("الفصل", class_name or "", ""),
-        ("التاريخ", lesson_date, ""),
-        ("الوقت", time or "", ""),
-        ("عدد التلاميذ", pupils or "", ""),
-    ], align_right=True)
-    identity_cell = header.cell(0, 2).merge(header.cell(3, 2))
+    header = _table(doc, (9.95, 3.25, 5.5), [
+        ("", "الفصل", class_name or ""),
+        ("", "التاريخ", lesson_date),
+        ("", "الوقت", time or ""),
+        ("", "عدد التلاميذ", pupils or ""),
+    ], align_right=True, teacher_left=True)
+    identity_cell = header.cell(0, 0).merge(header.cell(3, 0))
     # Vertical merges inherit empty paragraphs from all four source cells.
     # Remove those ONLY in this new identity panel to avoid blank lines.
     for paragraph in list(identity_cell.paragraphs)[1:]:
