@@ -47,6 +47,40 @@ class TestPIPremiumPrivateBundle(unittest.TestCase):
         for field in ("4 Bestari", "2027-01-11", "08:00 - 09:00", "32"):
             self.assertIn(field, rendered)
 
+    def test_roman_teacher_details_remain_left_to_right_in_jawi_word(self):
+        for value in ("4 Bestari", "2027-01-11", "08:00 - 09:00", "32",
+                      "30 murid mencapai objektif."):
+            self.assertEqual(pi._rtl_safe_value(value), "\\u200e" + value + "\\u200e")
+        self.assertEqual(pi._rtl_safe_value("موريد برايسي"), "موريد برايسي")
+
+    def test_word_fields_use_directional_isolation_without_editing_lesson(self):
+        from docx import Document
+        base = Document()
+        first = base.add_table(rows=1, cols=2)
+        first.cell(0, 0).text = "Original RPH content"
+        teacher_cell = first.cell(0, 1)
+        teacher_cell.paragraphs[0].text = "کلس : "
+        for label in ("تاريخ : ", "ماس : ", "بيلڠن موريد : "):
+            teacher_cell.add_paragraph(label)
+        last = base.add_table(rows=3, cols=2)
+        last.cell(2, 0).text = "رفليكسي (مانوال)"
+        original = io.BytesIO()
+        base.save(original)
+        personal = pi._personalize_word(original.getvalue(), {
+            "class": "4 Bestari", "date": "2027-01-11",
+            "time": "08:00 - 09:00", "students": "32",
+            "reflection": "30 murid mencapai objektif.",
+        })
+        self.assertEqual(Document(io.BytesIO(original.getvalue())).tables[0].cell(0,0).text,
+                         "Original RPH content")
+        changed = Document(io.BytesIO(personal))
+        self.assertEqual(changed.tables[0].cell(0, 0).text, "Original RPH content")
+        for paragraph, expected in zip(changed.tables[0].cell(0, 1).paragraphs,
+                                       ("4 Bestari", "2027-01-11", "08:00 - 09:00", "32")):
+            self.assertIn("\\u200e" + expected + "\\u200e", paragraph.text)
+        self.assertIn("\\u200e30 murid mencapai objektif.\\u200e",
+                      changed.tables[-1].cell(2, 1).text)
+
     def test_invalid_years_and_lesson_tokens_are_rejected(self):
         for selection in ((1, "1"), (7, "1"), (2, "0"), (2, "113"),
                           (6, "144"), (2, "001"), (2, "-2"), (2, "1/../x")):
