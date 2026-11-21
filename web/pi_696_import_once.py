@@ -51,16 +51,9 @@ def _destination():
 def _import():
     try:
         url, headers = _destination()
-        # Do not replace v1, and do not upsert over a prior v2 upload.
-        lookup = url.replace("/object/", "/object/authenticated/", 1)
-        try:
-            with urlopen(Request(lookup, headers=headers, method="HEAD"), timeout=12) as check:
-                if check.status == 200:
-                    print("CIKGULAJU_PI_V2_IMPORT_ALREADY_EXISTS", flush=True)
-                    return
-        except HTTPError as exc:
-            if exc.code != 404:
-                raise
+        # The source path has been checked as absent. Storage rejects a
+        # pre-existing object (x-upsert=false); avoid a preliminary HEAD,
+        # which some secret-key gateways reject even for service credentials.
         with urlopen(Request(_source(), headers={"Accept": "application/zip"}), timeout=100) as response:
             blob = response.read(SIZE + 1)
         if len(blob) != SIZE or hashlib.sha256(blob).hexdigest() != DIGEST:
@@ -84,7 +77,7 @@ def _import():
         print("CIKGULAJU_PI_V2_IMPORT_SUCCESS bytes=49779272", flush=True)
     except Exception as exc:
         # Never log the bearer source URL or any credentials.
-        print("CIKGULAJU_PI_V2_IMPORT_FAILED", type(exc).__name__, flush=True)
+        print("CIKGULAJU_PI_V2_IMPORT_FAILED", type(exc).__name__,\n              getattr(exc, "code", ""), flush=True)
 
 
 def start_when_enabled():
