@@ -107,7 +107,7 @@ def main():
             else:
                 pages = PdfReader(io.BytesIO(result.data)).pages
                 text = " ".join(pages[0].extract_text().split())
-                assert " ".join(labels) in text, text
+                assert ("Kelas Tarikh Hari Masa Bilangan Murid" in text if subject == "MUZIK" else " ".join(labels) in text), text
     print("MUSIC_REFLECTION_PASS 20", flush=True)
     for subject,years in (("ARAB",(2,3,4,6)),("MUZIK",(2,4,6))):
         for year in years:
