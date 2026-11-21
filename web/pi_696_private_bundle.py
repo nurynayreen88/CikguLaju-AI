@@ -296,8 +296,10 @@ def _fill_pdf_fields(data, teacher, *, edition="v1"):
             if edition == "v2":
                 # Approved RTL header: original Jawi labels are on the RIGHT.
                 # Place only in the empty value cells at the LEFT.
-                top = 33 + (20.2 * index)
-                rect = fitz.Rect(39, top, 126, top + 16)
+                # Verified against the real one-page v2 PDF: teacher grid
+                # borders at y=41.95,63.8,85.6,107.4,129.35 points.
+                top = 44 + (21.82 * index)
+                rect = fitz.Rect(39, top, 122.5, top + 18)
             elif edition == "v1":
                 top = 24 + (20.7 * index)
                 rect = fitz.Rect(91, top, 213, top + 17)
@@ -317,13 +319,14 @@ def _fill_pdf_fields(data, teacher, *, edition="v1"):
             ]
             if not labels:
                 raise PrivatePIRPHUnavailable("Kotak refleksi tiada dalam RPH sumber")
-            top = float(labels[-1]["bbox"][1]) + 2
-            rect = fitz.Rect(38, top, 430, min(top + 35, page.rect.y1 - 20))
+            top = float(labels[-1]["bbox"][1]) + (7 if edition == "v2" else 2)
+            bottom = (top + 19 if edition == "v2" else min(top + 35, page.rect.y1 - 20))
+            rect = fitz.Rect(38, top, 430, bottom)
             if rect.height < 12:
                 raise PrivatePIRPHUnavailable("Kotak refleksi tidak mencukupi")
             if _is_jawi(reflection):
                 _draw_shaped_jawi(page, rect, reflection)
-            elif page.insert_textbox(rect, reflection, fontsize=8,
+            elif page.insert_textbox(rect, reflection, fontsize=7.1 if edition == "v2" else 8,
                                      fontname="helv") < 0:
                 raise PrivatePIRPHUnavailable("Refleksi terlalu panjang untuk kotak")
         return document.tobytes(garbage=3, deflate=True)
