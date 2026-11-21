@@ -115,3 +115,103 @@ def test_real_word_function_offline_a4(tmp_path):
         assert "Sains" in body and "Standard Pembelajaran" in body
         assert "KBAT" in body and "EMK" in body
         assert "Pemulihan" in body
+
+
+def test_all_32_source_backed_opening_lessons_have_aligned_word_and_a4_pdf(tmp_path):
+    """Audit EVERY source-backed Sains opening lesson (32), not just 5 samples.
+
+    This is an offline test of the original native writer using real PdP
+    source records. No app server, teacher login, database write or quota.
+    The remaining whole-year Sains catalogue is explicitly out of scope.
+    """
+    import fitz
+
+    lessons = {
+        year: tuple(
+            p for p in (YEAR3_LESSONS if year == 3 else OTHER_LESSONS)
+            if p.year == year
+        )
+        for year in TARGET_YEARS
+    }
+    expected_counts = {2: 7, 3: 9, 4: 6, 5: 5, 6: 5}
+    assert {year: len(rows) for year, rows in lessons.items()} == expected_counts
+    assert sum(expected_counts.values()) == 32
+
+    writer = _real_word_function()
+    worddir = tmp_path / "sains-source-backed-word"
+    pdfdir = tmp_path / "sains-source-backed-pdf"
+    worddir.mkdir()
+    pdfdir.mkdir()
+    produced = []
+    for year, candidates in lessons.items():
+        standards = YEAR3_SP if year == 3 else STANDARDS[year]
+        for lesson in candidates:
+            rows = plan_rows({
+                "MATA PELAJARAN": "Sains",
+                "TAHUN/TINGKATAN": f"Tahun {year}",
+                "TAJUK": lesson.title,
+                "TARIKH": "", "HARI": "", "MASA": "", "KELAS": "",
+                "BILANGAN MURID": "",
+                "PENGETAHUAN SEDIA ADA": "Murid menggunakan pemerhatian awal.",
+                "REFLEKSI": "",
+            }, lesson, standards)
+            word = worddir / f"Sains_T{year}_{lesson.code}.docx"
+            state = {
+                "task": "rph", "subject": "Sains",
+                "year": f"Tahun {year}", "pdp_sequence_code": lesson.code,
+                "topic": lesson.title,
+            }
+            document = Document()
+            document.styles["Normal"].font.name = "Arial"
+            document.styles["Normal"].font.size = Pt(10)
+            writer(document, document.sections[0], state, rows, str(word))
+            assert word.is_file() and word.stat().st_size > 1000, lesson.code
+
+            parsed = Document(str(word))
+            assert len(parsed.tables) == 3, lesson.code
+            widths = [sum(col.width.mm for col in t.columns)
+                      for t in parsed.tables]
+            assert all(140 < w < 190 for w in widths), (lesson.code, widths)
+            assert max(widths) - min(widths) < 0.8, (lesson.code, widths)
+            contents = "\n".join(
+                cell.text for table in parsed.tables
+                for row in table.rows for cell in row.cells
+            )
+            for exact in (
+                rows["STANDARD KANDUNGAN"], rows["STANDARD PEMBELAJARAN"],
+                rows["EMK / NILAI"], rows["KBAT / PAK21"],
+                lesson.guided, lesson.independent, lesson.assessment,
+                lesson.follow_up,
+            ):
+                assert exact in contents, (lesson.code, exact[:80])
+            assert "____" not in parsed.tables[0].text if hasattr(parsed.tables[0], "text") else True
+            produced.append((word, lesson.code, lesson.standards))
+
+    conversion = subprocess.run([
+        "libreoffice",
+        "-env:UserInstallation=" + (tmp_path / "lo-all-32").as_uri(),
+        "--headless", "--convert-to", "pdf",
+        "--outdir", str(pdfdir),
+        *(str(item[0]) for item in produced),
+    ], capture_output=True, text=True, timeout=240)
+    assert conversion.returncode == 0, conversion.stderr[-1200:]
+
+    for word, code, standards in produced:
+        pdf_path = pdfdir / (word.stem + ".pdf")
+        assert pdf_path.is_file(), (code, conversion.stdout[-1200:])
+        with fitz.open(str(pdf_path)) as pdf:
+            assert 1 <= len(pdf) <= 2, (code, len(pdf))
+            document_text = " ".join(p.get_text() for p in pdf)
+            for required in ("Sains", "Standard Pembelajaran", "EMK", "KBAT",
+                             "Pemulihan", *standards):
+                assert required in document_text, (code, required)
+            for page in pdf:
+                assert abs(page.rect.width - 595.28) < 2, code
+                assert abs(page.rect.height - 841.89) < 2, code
+                for block in page.get_text("dict")["blocks"]:
+                    if block.get("type") != 0:
+                        continue
+                    x0, y0, x1, y1 = block["bbox"]
+                    assert -1 <= x0 < x1 <= page.rect.width + 1, (code, block["bbox"])
+                    assert -1 <= y0 < y1 <= page.rect.height + 1, (code, block["bbox"])
+    print("SAINS_SOURCE_BACKED_32_WORD_PDF_A4_PASS", len(produced))
