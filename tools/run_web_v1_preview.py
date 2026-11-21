@@ -256,7 +256,7 @@ def options():
                         if kind == "units":
                             original = source.list_units(year, "PI")
                             if not any(item.get("value") == PI_PREMIUM_UNIT for item in original):
-                                original.append({"value": PI_PREMIUM_UNIT, "label": PI_PREMIUM_UNIT})
+                                original.append({"value": PI_PREMIUM_UNIT, "label": "Senarai PdP"})
                             return jsonify(original)
                         if kind == "pdp" and request.args.get("unit") == PI_PREMIUM_UNIT:
                             return jsonify(pi_696_options(year))
