@@ -102,7 +102,9 @@ def main():
                       ("Tarikh", "Hari", "Masa", "Kelas", "Bilangan Murid"))
             if fmt == "word":
                 table = Document(io.BytesIO(result.data)).tables[0]
-                fields = {row.cells[0].text: row.cells[1].text for row in table.rows}
+                fields = ({row.cells[1].text: row.cells[2].text for row in table.rows}
+                          if subject == "ARAB" else
+                          {row.cells[0].text: row.cells[1].text for row in table.rows})
                 assert tuple(fields[label] for label in labels) == ("",) * len(labels), fields
             else:
                 pages = PdfReader(io.BytesIO(result.data)).pages
