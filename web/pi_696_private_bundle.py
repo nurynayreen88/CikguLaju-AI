@@ -117,6 +117,13 @@ def _metadata_present(teacher):
                for field in ("class", "date", "time", "students", "reflection"))
 
 
+def _rtl_safe_value(value):
+    # Existing template paragraphs are RTL. LRM preserves the exact order
+    # of Roman class names, ISO dates, times and Roman-language reflections.
+    # Jawi remains genuine RTL and is never reversed or transliterated.
+    return value if _is_jawi(value) else "\u200e" + value + "\u200e"
+
+
 def _personalize_word(data, teacher):
     """Fill blank fields only; preserve the SK/SP, activities and original content."""
     from docx import Document
@@ -130,7 +137,7 @@ def _personalize_word(data, teacher):
     values = [str(teacher.get(k) or "").strip() for k in ("class", "date", "time", "students")]
     for paragraph, value in zip(cell.paragraphs[:4], values):
         if value:
-            paragraph.add_run(value).font.name = "Amiri"
+            paragraph.add_run(_rtl_safe_value(value)).font.name = "Amiri"
             paragraph.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     if teacher.get("reflection"):
         last = document.tables[-1]
@@ -140,7 +147,7 @@ def _personalize_word(data, teacher):
         if reflection_cell.text.strip():
             raise PrivatePIRPHUnavailable("Original reflection is not blank")
         reflection_cell.paragraphs[0].add_run(
-            str(teacher["reflection"]).strip()).font.name = "Amiri"
+            _rtl_safe_value(str(teacher["reflection"]).strip())).font.name = "Amiri"
     output = BytesIO()
     document.save(output)
     return output.getvalue()
