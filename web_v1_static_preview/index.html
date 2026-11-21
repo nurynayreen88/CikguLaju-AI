@@ -2470,7 +2470,7 @@ async function checkRphAvailability(){
   }else{
    downloadStatus.textContent=body.status&&body.status.includes("DRAF")?
      "RPH tersedia. Kandungan masih dalam semakan.":
-     (body.generator==="pi-premium-private" ? "RPH Pendidikan Islam Premium tersedia untuk muat turun." : "RPH disahkan tersedia melalui Telegram.");
+     (body.generator==="pi-premium-private" ? "RPH Pendidikan Islam tersedia untuk dimuat turun." : "RPH disahkan tersedia melalui Telegram.");
    updateSelectionHelp("Selepas melengkapkan maklumat RPH jika perlu, tekan Jana Bahan.");
   }
   if(!materialPanel.hidden)void populateMaterialList();
