@@ -54,7 +54,7 @@ class ProductionSourceInventory(unittest.TestCase):
         self.assertIn('id="rph-word"',html)
         self.assertIn('id="rph-pdf"',html)
 
-    def test_public_rph_sample_is_visible_before_registration(self):
+    def test_public_rph_sample_is_removed_from_login(self):
         from tools.run_web_production import app
 
         client = app.test_client()
@@ -62,12 +62,12 @@ class ProductionSourceInventory(unittest.TestCase):
             with client.get("/") as response:
                 html = response.get_data(as_text=True)
                 self.assertEqual(response.status_code, 200)
-        self.assertLess(html.index("Lihat Contoh RPH"), html.index('id="email-auth-login"'))
-        self.assertIn("16 contoh RPH pelbagai subjek, DLP dan PPKI", html)
-        self.assertEqual(re.findall(r'href="/contoh-rph-semua"', html),
-                         ['href="/contoh-rph-semua"'])
-        self.assertIn('href="#pilihan-log-masuk"', html)
+        # Owner-requested rollback: login contains no RPH examples.
+        self.assertNotIn("Lihat Contoh RPH", html)
+        self.assertNotIn("16 contoh RPH pelbagai subjek, DLP dan PPKI", html)
+        self.assertNotIn('href="/contoh-rph-semua"', html)
         self.assertIn('id="pilihan-log-masuk"', html)
+        self.assertIn('id="email-auth-login"', html)
 
     def test_public_rph_all_subjects_gallery_without_login(self):
         from tools.run_web_production import app
