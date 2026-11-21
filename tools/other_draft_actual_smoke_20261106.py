@@ -155,8 +155,14 @@ def main():
                             doc = Document(io.BytesIO(body))
                             assert [len(t.columns) for t in doc.tables] == [3, 2, 3, 2]
                             assert "خطة التدريس اليومية" in doc.paragraphs[0].text
-                            fields = {row.cells[0].text: row.cells[1].text
-                                      for table in doc.tables[:2] for row in table.rows}
+                            # Header has 3 RTL cells: identity, teacher label,
+                            # teacher value. Standards table remains 2 cells.
+                            fields = {
+                                **{row.cells[1].text: row.cells[2].text
+                                   for row in doc.tables[0].rows},
+                                **{row.cells[0].text: row.cells[1].text
+                                   for row in doc.tables[1].rows},
+                            }
                             assert "1.1.1" in fields["معيار التعلّم"]
                             assert fields["الفصل"] == "2 Bestari"
                             assert fields["عدد التلاميذ"] == "30"
