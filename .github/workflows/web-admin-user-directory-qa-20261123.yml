@@ -11,6 +11,7 @@ on:
       - 'web_v1_static_preview/index.html'
       - 'tools/run_web_production.py'
       - 'supabase/migrations/20261123_admin_user_directory_service_role_only.sql'
+      - 'supabase/migrations/20261123_fix_admin_user_directory_opaque_key_403.sql'
       - 'tests/test_web_admin_user_directory_20261123.py'
       - 'tests/test_web_login_event_capture.py'
       - 'tests/test_web_login_remember_ui_20261123.py'
