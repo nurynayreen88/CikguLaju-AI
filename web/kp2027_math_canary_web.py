@@ -242,6 +242,7 @@ def create_blueprint():
     from flask import Blueprint, current_app, jsonify, make_response, request, send_file
     from web.rph_delivery_quota import authorize_rendered_document, has_active_paid_access
     from web.kp2027_pilot_teacher_fields import EXTRA_FIELDS, TeacherFieldError, personalize_approved_rph
+    from web.kp2027_pdp_catalog import math_approved_items
     from web_v1_telegram_auth_routes import COOKIE, _config, _lookup
     from web_v1_sessions import verify_session_ticket
 
@@ -290,9 +291,10 @@ def create_blueprint():
             return error
         try:
             groups = fetch_approved_catalog(config)
-        except PilotUnavailable:
-            return denied("Senarai RPH belum tersedia. Sila cuba lagi.", 503, "INVENTORY_UNAVAILABLE")
-        return jsonify({"groups": groups, "source": "verified-private-kp2027-v11"})
+            items = math_approved_items(groups, _CATALOG)
+        except (PilotUnavailable, ValueError, KeyError):
+            return denied("Senarai PdP belum tersedia. Sila cuba lagi.", 503, "INVENTORY_UNAVAILABLE")
+        return jsonify({"groups": groups, "items": items, "source": "verified-private-kp2027-v11"})
 
     @bp.post("/api/kp2027/sk/tahun-1/matematik/download")
     def download():
@@ -301,16 +303,16 @@ def create_blueprint():
         if request.headers.get("Origin") != ORIGIN:
             return denied("Permintaan mestilah daripada Web CikguLaju.", 403, "ORIGIN_REQUIRED")
         if not request.is_json or not 0 < (request.content_length or 0) <= 1024:
-            return denied("Pilihan Lesson tidak sah.", 400, "INVALID_REQUEST")
+            return denied("Pilihan PdP tidak sah.", 400, "INVALID_REQUEST")
         payload = request.get_json(silent=True)
         if (not isinstance(payload, dict) or
                 not {"group", "lesson", "format"}.issubset(payload) or
                 set(payload) - {"group", "lesson", "format"} - EXTRA_FIELDS):
-            return denied("Pilihan Lesson atau maklumat PdP tidak lengkap.", 400, "INVALID_SELECTION")
+            return denied("Pilihan PdP atau maklumat PdP tidak lengkap.", 400, "INVALID_SELECTION")
         try:
             group, lesson, fmt = valid_selection(payload["group"], payload["lesson"], payload["format"])
         except ValueError:
-            return denied("Lesson yang dipilih belum tersedia.", 404, "LESSON_NOT_AVAILABLE")
+            return denied("PdP yang dipilih belum tersedia.", 404, "LESSON_NOT_AVAILABLE")
         config, account, error = account_for_request()
         if error is not None:
             return error

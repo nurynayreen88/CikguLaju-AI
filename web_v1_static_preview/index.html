@@ -1551,17 +1551,46 @@ function kp2027CurrentLessons(){
  if(!kp2027PilotInventory)return [];
  return subject.value==="MATH_KP2027"?(kp2027PilotInventory.groups[kp2027PilotGroup.value]||[]):kp2027PilotInventory.lessons;
 }
-function kp2027DisplayLessons(){
- const numbers=kp2027CurrentLessons();
- fillSelect(lesson,numbers.map(n=>({value:String(n),label:"Lesson "+String(n).padStart(3,"0")})),"Pilih Lesson");
- showStep(lesson,true);
- document.getElementById("lesson-label").textContent="Pilih Lesson/PdP";
+function kp2027ValidEntries(items,approved,max){
+ if(!Array.isArray(items)||items.length!==approved.length||items.length>max)return false;
+ const ids=new Set();
+ for(const e of items){
+  if(!e||!Number.isInteger(e.no)||!approved.includes(e.no)||ids.has(e.no)||
+     typeof e.unit!=="string"||!e.unit.trim()||e.unit.length>150||
+     typeof e.tajuk!=="string"||!e.tajuk.trim()||e.tajuk.length>150||
+     typeof e.sp!=="string"||!/^[0-9]+[.][0-9]+[.][0-9]+$/.test(e.sp))return false;
+  ids.add(e.no);
+ }
+ return true;
+}
+function kp2027CurrentEntries(){
+ if(!kp2027PilotInventory)return [];
+ return subject.value==="MATH_KP2027"?(kp2027PilotInventory.items[kp2027PilotGroup.value]||[]):kp2027PilotInventory.items;
+}
+function kp2027DisplayUnits(){
+ const entries=kp2027CurrentEntries();
+ const units=[...new Set(entries.map(e=>e.unit))];
+ fillSelect(unit,units.map(v=>({value:v,label:v})),"Pilih Unit / Kandungan");
+ showStep(unit,true);
+ document.getElementById("unit-label").textContent="Pilih Unit / Kandungan";
+ resetSelect(lesson,"Pilih PdP");showStep(lesson,false);
+ document.getElementById("lesson-label").textContent="Pilih PdP";
  resetMaterials();resetRphPreview();
  kp2027PilotActions.hidden=true;
  for(const button of kp2027PilotButtons)button.disabled=true;
  kp2027PilotStatus.textContent="";
- catalogStatus.textContent=numbers.length+" Lesson yang diluluskan tersedia"+(subject.value==="MATH_KP2027"?" untuk Kumpulan "+kp2027PilotGroup.value:"")+".";
- updateSelectionHelp(numbers.length?"Pilih Lesson, isi Maklumat RPH, kemudian tekan Jana Bahan.":"Tiada Lesson yang diluluskan untuk pilihan ini.");
+ catalogStatus.textContent=entries.length+" PdP yang diluluskan dalam "+units.length+" Unit/Kandungan"+
+  (subject.value==="MATH_KP2027"?" (Kumpulan "+kp2027PilotGroup.value+")":"")+".";
+ updateSelectionHelp(units.length?"Pilih Unit / Kandungan terlebih dahulu, kemudian PdP.":"Tiada PdP yang diluluskan untuk pilihan ini.");
+}
+function kp2027DisplayPdps(){
+ const entries=kp2027CurrentEntries().filter(e=>e.unit===unit.value);
+ fillSelect(lesson,entries.map(e=>({value:String(e.no),
+   label:"PdP "+String(e.no).padStart(3,"0")+" — "+e.tajuk+" • SP "+e.sp})),"Pilih PdP");
+ showStep(lesson,!!unit.value);
+ resetMaterials();resetRphPreview();
+ catalogStatus.textContent=entries.length+" PdP disahkan untuk "+unit.value+".";
+ updateSelectionHelp(entries.length?"Pilih PdP berdasarkan tajuk dan SP, kemudian lengkapkan Maklumat RPH.":"Pilih Unit / Kandungan untuk melihat PdP.");
 }
 
 const kp2027ScienceNotice="Komponen Sains Tahun 1 KP2027 berada dalam Alam dan Manusia.";
@@ -1886,20 +1915,23 @@ subject.addEventListener("change",async()=>{
  if(curriculum.value==="kp2027"){
   const route=kp2027PilotRoutes[code],revision=kp2027PilotEpoch;
   if(!route||targetYear!=="1")return;
-  catalogStatus.textContent="Memuat senarai Lesson yang diluluskan...";
-  updateSelectionHelp("Semak Lesson yang tersedia selepas login.");
+  catalogStatus.textContent="Memuat senarai PdP yang diluluskan...";
+  updateSelectionHelp("Semak Unit dan PdP yang tersedia selepas log masuk.");
   try{
    const response=await fetch(route+"/available",{credentials:"same-origin",cache:"no-store",headers:{Accept:"application/json"}});
    const data=await response.json().catch(()=>({}));
-   if(!response.ok)throw Error(data.error||"Senarai Lesson tidak tersedia (HTTP "+response.status+").");
+   if(!response.ok)throw Error(data.error||"Senarai PdP tidak tersedia (HTTP "+response.status+").");
    let inventory;
    if(code==="MATH_KP2027"){
-    if(!data.groups||!kp2027ValidList(data.groups.A,125)||!kp2027ValidList(data.groups.B,125))
-     throw Error("Senarai Lesson Matematik tidak sah.");
-    inventory={groups:data.groups};
+    if(!data.groups||!kp2027ValidList(data.groups.A,125)||!kp2027ValidList(data.groups.B,125)||
+       !data.items||!kp2027ValidEntries(data.items.A,data.groups.A,125)||
+       !kp2027ValidEntries(data.items.B,data.groups.B,125))
+     throw Error("Padanan Unit dan PdP Matematik belum dapat disahkan.");
+    inventory={groups:data.groups,items:data.items};
    }else{
-    if(!kp2027ValidList(data.lessons,64))throw Error("Senarai Lesson Alam dan Manusia tidak sah.");
-    inventory={lessons:data.lessons};
+    if(!kp2027ValidList(data.lessons,64)||!kp2027ValidEntries(data.items,data.lessons,64))
+     throw Error("Padanan Unit dan PdP Alam dan Manusia belum dapat disahkan.");
+    inventory={lessons:data.lessons,items:data.items};
    }
    if(revision!==kp2027PilotEpoch||curriculum.value!=="kp2027"||subject.value!==code||year.value!=="1")return;
    kp2027PilotInventory=inventory;
@@ -1907,7 +1939,7 @@ subject.addEventListener("change",async()=>{
     kp2027PilotGroup.hidden=false;kp2027PilotGroup.disabled=false;
     document.getElementById("kp2027-pilot-group-label").hidden=false;
    }
-   kp2027DisplayLessons();
+   kp2027DisplayUnits();
   }catch(error){
    if(revision!==kp2027PilotEpoch||subject.value!==code||curriculum.value!=="kp2027")return;
    catalogStatus.textContent=error.message;
@@ -1991,6 +2023,7 @@ theme.addEventListener("change",async()=>{
  }catch(error){if(theme.value===selected)catalogStatus.textContent=error.message;}
 });
 unit.addEventListener("change",async()=>{
+ if(curriculum.value==="kp2027"){kp2027DisplayPdps();return;}
  const selected=unit.value,code=subject.value,targetTheme=theme.value,targetYear=year.value,targetComponent=component.value;
  resetSelect(topic,"Pilih Tajuk");resetSelect(lesson,"Pilih Lesson/PdP");
  showStep(topic,code==="BM"&&!!selected);showStep(lesson,code!=="BM"&&!!selected);
@@ -2021,7 +2054,7 @@ topic.addEventListener("change",async()=>{
 });
 kp2027PilotGroup.addEventListener("change",()=>{
  if(curriculum.value==="kp2027"&&subject.value==="MATH_KP2027"&&kp2027PilotInventory)
-  kp2027DisplayLessons();
+  kp2027DisplayUnits();
 });
 function kp2027TeacherPayload(){
  if(!teacherClass.checkValidity()||!teacherDate.checkValidity()||
@@ -2046,7 +2079,8 @@ function kp2027TeacherPayload(){
 async function kp2027DownloadApproved(format){
  const code=subject.value,route=kp2027PilotRoutes[code],value=Number(lesson.value);
  if(kp2027PilotBusy||curriculum.value!=="kp2027"||year.value!=="1"||!route||
-    !["word","pdf"].includes(format)||!lesson.value||!kp2027CurrentLessons().includes(value))return;
+    !["word","pdf"].includes(format)||!lesson.value||!kp2027CurrentLessons().includes(value)||
+    !kp2027CurrentEntries().some(e=>e.no===value&&e.unit===unit.value))return;
  const revision=kp2027PilotEpoch,group=kp2027PilotGroup.value;
  const status=document.getElementById("materials-status");
  let teacherPayload;
@@ -2068,7 +2102,7 @@ async function kp2027DownloadApproved(format){
   const documentBlob=await response.blob();
   const ext=format==="pdf"?"pdf":"docx";
   const fileName="CIKGULAJU_KP2027_"+(code==="MATH_KP2027"?"MATH_T1_"+group:"ALAM_T1")+
-   "_LESSON"+String(value).padStart(3,"0")+"."+ext;
+   "_PDP"+String(value).padStart(3,"0")+"."+ext;
   const fileUrl=URL.createObjectURL(documentBlob),anchor=document.createElement("a");
   anchor.href=fileUrl;anchor.download=fileName;anchor.click();
   setTimeout(()=>URL.revokeObjectURL(fileUrl),30000);
@@ -2094,11 +2128,12 @@ lesson.addEventListener("change",()=>{
  if(curriculum.value==="kp2027"){
   const ready=!!lesson.value&&kp2027CurrentLessons().includes(Number(lesson.value))&&!kp2027PilotBusy;
   kp2027PilotActions.hidden=true;
-  if(ready){
+  if(ready&&kp2027CurrentEntries().some(e=>e.no===Number(lesson.value)&&e.unit===unit.value)){
    document.getElementById("show-materials").hidden=false;
    syncRphMaterialsAccess();
-   updateSelectionHelp("Lesson dipilih. Isi kelas, tarikh, masa dan bilangan murid jika perlu, kemudian tekan Jana Bahan.");
-   catalogStatus.textContent="Lesson dipilih. Ruang Maklumat RPH tersedia di bawah.";
+   updateSelectionHelp("PdP dipilih. Isi kelas, tarikh, masa dan bilangan murid jika perlu, kemudian tekan Jana Bahan.");
+   const selectedEntry=kp2027CurrentEntries().find(e=>e.no===Number(lesson.value));
+   catalogStatus.textContent="PdP "+String(selectedEntry.no).padStart(3,"0")+" — "+selectedEntry.tajuk+" • SP "+selectedEntry.sp;
   }
   return;
  }
@@ -2156,7 +2191,7 @@ function populateKp2027MaterialList(){
  list.replaceChildren();
  materialPanel.hidden=false;
  if(!lesson.value||!kp2027CurrentLessons().includes(Number(lesson.value))){
-  status.textContent="Pilih Lesson yang telah diluluskan.";
+  status.textContent="Pilih PdP yang telah diluluskan.";
   return;
  }
  if(!canGenerateRph()){
