@@ -64,6 +64,31 @@ class TestBmKp2027Rph(TestCase):
                                       "Pemulihan","Pengayaan","30","1 Bestari","02/03/2027"):
                         self.assertIn(important,text)
 
+    def test_bm_printed_reflection_only_without_web_controls_or_internal_footer(self):
+        from docx import Document
+        import fitz
+        for fmt in ("word", "pdf"):
+            with self.subTest(format=fmt):
+                data=bm.render("A",1,fmt,{})
+                if fmt=="word":
+                    doc=Document(BytesIO(data))
+                    cells=[cell.text for tab in doc.tables for row in tab.rows for cell in row.cells]
+                    self.assertEqual(cells.count("Refleksi"),1)
+                    text=" ".join([p.text for p in doc.paragraphs]+cells)
+                else:
+                    pdf=fitz.open(stream=data,filetype="pdf")
+                    try:
+                        text=" ".join(page.get_text() for page in pdf)
+                    finally:
+                        pdf.close()
+                    self.assertIn("Refleksi",text)
+                for forbidden in ("Refleksi (Auto / Manual)", "SEMAKAN PELAKSANAAN",
+                                  "RPT M", "CIKGULAJU • KP2027"):
+                    self.assertNotIn(forbidden,text)
+                for required in ("Standard Pembelajaran", "Aktiviti 1", "Pemulihan",
+                                 "Pengayaan", "Refleksi"):
+                    self.assertIn(required,text)
+
     def test_invalid_group_lesson_format_and_teacher_payload_rejected(self):
         for group,n in (("C",1),("A",179),("B",176),("B",0),("A","1")):
             with self.subTest(group=group,n=n),self.assertRaises(bm.Unavailable):
