@@ -37,6 +37,10 @@ app.register_blueprint(web_email_auth_bp)
 from web_v1_email_auth_ui import install as install_email_auth_ui
 install_email_auth_ui(app)
 
+# Isolated KP2027 Year-1 Mathematics pilot; disabled by default and server-verified.
+from web.kp2027_math_canary_web import create_blueprint as create_kp2027_math_pilot
+app.register_blueprint(create_kp2027_math_pilot())
+
 
 
 
