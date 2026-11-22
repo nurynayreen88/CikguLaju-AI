@@ -1,0 +1,71 @@
+"""KP2027 Year 1 RPT A/B: archive integrity and authenticated Web wiring."""
+from __future__ import annotations
+
+import ast
+from hashlib import sha256
+from pathlib import Path
+import unittest
+
+from web import kp2027_year1_rpt_bundle as src
+
+ROOT=Path(__file__).resolve().parents[1]
+
+
+class TestKp2027RptYear1(unittest.TestCase):
+    def test_archive_sha_and_all_12_documents(self):
+        self.assertTrue(src.ready(),"All 12 documents must pass full SHA validation")
+        self.assertEqual(sha256(src.BUNDLE.read_bytes()).hexdigest(),src.BUNDLE_SHA)
+        self.assertEqual(len(src._approved_files()),12)
+        self.assertEqual(set(src.SUBJECTS),{"matematik","bahasa_melayu","alam_dan_manusia"})
+        total=0
+        for subject in src.SUBJECTS:
+            for group in ("A","B"):
+                self.assertGreater(src.COUNTS[subject][group],0)
+                total+=src.COUNTS[subject][group]
+                for fmt in ("pdf","docx"):
+                    with self.subTest(subject=subject,group=group,fmt=fmt):
+                        payload,name,digest=src.document(subject,group,fmt)
+                        self.assertGreater(len(payload),20000)
+                        self.assertEqual(sha256(payload).hexdigest(),digest)
+                        self.assertIn("_KUMPULAN_"+group+"_",name)
+                        self.assertEqual(name.endswith("."+fmt),True)
+                        self.assertTrue(payload.startswith(b"%PDF-" if fmt=="pdf" else b"PK\x03\x04"))
+        self.assertEqual(total,788)
+
+    def test_group_a_b_different_documents(self):
+        for subject in src.SUBJECTS:
+            self.assertNotEqual(src.document(subject,"A","pdf")[2],
+                                src.document(subject,"B","pdf")[2])
+
+    def test_invalid_group_subject_format_fail_closed(self):
+        for args in (("matematik","C","pdf"),("sains","A","pdf"),
+                     ("matematik","A","zip"),("matematik","a","docx")):
+            with self.subTest(args=args), self.assertRaises(src.BundleUnavailable):
+                src.document(*args)
+
+    def test_web_catalog_contains_group_specific_ready_choices(self):
+        server=(ROOT/"web/rpt_2027_all_http.py").read_text(encoding="utf-8")
+        ast.parse(server)
+        self.assertIn('from web import kp2027_year1_rpt_bundle as kp_rpt',server)
+        self.assertIn('"alam_dan_manusia"',server)
+        self.assertIn('"kp2027_groups": ["A","B"]',server)
+        self.assertIn('"/api/rpt/2027/kp2027/tahun-1/<subject>/<group>.<fmt>"',server)
+        self.assertIn('account, error = _account()',server)
+        self.assertIn('response.headers["X-RPT-Source-SHA256"] = digest',server)
+        self.assertIn('response.headers["X-RPT-QA-Status"] = "SEMAKAN-PELAKSANAAN"',server)
+        self.assertIn('return jsonify({"error": "Pilihan RPT KP2027 tidak sah."}), 404',server)
+
+    def test_web_unit_group_pdf_word_and_kssr_existing_logic(self):
+        page=(ROOT/"web_v1_static_preview/index.html").read_text(encoding="utf-8")
+        self.assertIn('id="rpt-kp2027-group"',page)
+        self.assertIn('function rptKP2027Url(entry,fmt)',page)
+        self.assertIn('async function downloadKP2027Rpt(selection,viewer=null)',page)
+        self.assertIn('if(rptKP2027Choice(selection))',page)
+        self.assertIn('rptWordLink.href=wordUrl',page)
+        self.assertIn('window.downloadCikguLajuRPT(selection.item.code',page)
+        self.assertIn('Kumpulan A atau B dahulu',page)
+        self.assertNotIn('year.year===1||year.coming_soon',page)
+
+
+if __name__=="__main__":
+    unittest.main()
