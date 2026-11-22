@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "checked_on": "2026-11-08",
+  "curriculum": "KP2027",
+  "level": "Tahun 1",
+  "subject": "Matematik",
+  "search_goal": "Find a readable original complete DK Matematik Tahun 1 KP2027 with SP and SPi in order to resolve source discrepancy without guessing.",
+  "result": "ORIGINAL_COMPLETE_DK_NOT_RETRIEVED",
+  "release_status": "SOURCE_HOLD_NOT_READY",
+  "important_evidence": [
+    {
+      "kind": "KPM_PARLIAMENTARY_WRITTEN_ANSWER",
+      "date": "2026-02-24",
+      "url": "https://www.parlimen.gov.my/files/jindex/pdf/JDR24022026.pdf",
+      "section": "NO SOALAN : 59; written response by KPM",
+      "supports": "KP2027 allocates Mathematics 3.5 hours per week in Tahap I. Cross-checks the 7 periods x 30min schedule printed in training slides.",
+      "exact_DK_SP_text_provided": false,
+      "evidence_type": "HIGH_AUTHORITY_POLICY_SCHEDULE_NOT_DK"
+    },
+    {
+      "kind": "BPK_MOE_2027_GENERAL_PAGE",
+      "url": "https://www.moe.gov.my/kurikulum-persekolahan-2027",
+      "supports": "Public general curriculum page and general framework PDF, not subject-specific Year 1 Mathematics DK.",
+      "exact_DK_SP_text_provided": false
+    },
+    {
+      "kind": "BPK_REPOSITORY_SITE",
+      "url": "https://repositori.bpk.moe-dl.edu.my/terbitan",
+      "supports": "Repository menu describes subject-level search for DSKP and curriculum publications.",
+      "observation": "The available retrieval presents an embedded-frame listing, no verified complete KP2027 Year 1 Math PDF.",
+      "exact_DK_SP_text_provided": false
+    },
+    {
+      "kind": "BPK_DOCMAN_LINK",
+      "url": "https://bpk.moe.gov.my/menu-docman/252-kurikulum-persekolahan-2027-terkini",
+      "supports": "Historic link to KP2027 resources mentioned in user Drive inventory.",
+      "observation": "Timed out in current public web retrieval.",
+      "exact_DK_SP_text_provided": false
+    },
+    {
+      "kind": "SARAWAK_PENATARAN_ROOT",
+      "url": "https://drive.google.com/drive/folders/1U9CZ9_n-S3J97xdV9v3hTJ-xU4-cvhWZ",
+      "observation": "Accessible 2027 Tahun 1 subject folder listing with MATEMATIK TAHUN 1 folder.",
+      "exact_DK_SP_text_provided": false
+    },
+    {
+      "kind": "SARAWAK_MATH_YEAR1_FOLDER",
+      "url": "https://drive.google.com/drive/folders/12vJPcODlF46-ed0mMQEUNDgggxng3djd",
+      "observation": "14 subfolders accessible, including SLOT 7: TEROKA DOKUMEN & KUIZ.",
+      "exact_DK_SP_text_provided": false
+    },
+    {
+      "kind": "DK_NAMED_FOLDER",
+      "url": "https://drive.google.com/drive/folders/1HJM3cW3OuzZjMULqM3AWes4sjLVF6Uvr",
+      "title": "01_DK MATEMATIK TAHUN 1 (SDPK SEDIA)",
+      "observation": "Accessible folder metadata; zero children visible to current connected account; do not equate folder title to a retrieved DK PDF.",
+      "exact_DK_SP_text_provided": false
+    },
+    {
+      "kind": "TRAINING_KP2027_COMPARISON_PDF",
+      "url": "https://drive.google.com/file/d/13x97bYD4fEHF_QvQQqy3f0ZWbCwC_LUD/view",
+      "file_sha256": "7119fa3789bb67bcf55d727e4e5090c7d092dfc17fc5b6fe0d997fa20f88c935",
+      "observation": "The 19-page training comparison says 7 topics, 30 SP, 7 periods per week x 30min. Sum of counts printed on 7 topic panels is 28; Wang panel says 2.",
+      "exact_DK_SP_text_provided": false
+    },
+    {
+      "kind": "TRAINING_GROUP_ASSIGNMENT_XLSX",
+      "url": "https://drive.google.com/file/d/1jXscf3gs8KIpZ4BTPVdRvSD-q9Lz4oVG/view",
+      "observation": "Group-assignment workbook lists 30 code labels, with 4 code labels under Wang (3.1.1, 3.2.1, 3.2.2, 3.2.3), but these are not verified against the original DK.",
+      "exact_DK_SP_text_provided": false
+    },
+    {
+      "kind": "USER_DRIVE_MATH_RPT_2027_DRAFT",
+      "url": "https://docs.google.com/document/d/1qkvjt0KyQ5l13UPF9utYvZMx78WuK2JG_VrKbzPJiYw/edit",
+      "observation": "CikguLaju v20 Kumpulan A states it is a timetable draft waiting for official Year1 Math DK, and not ready for RPH generation.",
+      "exact_DK_SP_text_provided": false
+    },
+    {
+      "kind": "THIRD_PARTY_BPK_2025_PROGRESS_REPORT_MIRROR",
+      "url": "https://fliphtml5.com/akwjbj/e1-KAD-PELAPORAN-SDK-2026/",
+      "observation": "Mirrored BPK achievement report says 30 Year 1 DK documents had been produced (including special education). This is not proof that the Math subject file is publicly retrievable or finalized.",
+      "exact_DK_SP_text_provided": false
+    }
+  ],
+  "source_conflict": {
+    "overall_SP_count_claim_in_comparison_slides": 30,
+    "sum_of_topic_panel_counts": 28,
+    "group_assignment_code_count": 30,
+    "unresolved_count_difference": 2,
+    "concentrated_topic": "Wang",
+    "original_DK_pages_verified": 0,
+    "source_discrepancy_resolved": false,
+    "assumed_sp_texts_added": 0,
+    "possible_explanations": [
+      "Training slide panel tally could be stale or incomplete",
+      "Group-assignment list could include codes from a different draft/version"
+    ],
+    "explanation_is_speculation_not_a_resolution": true
+  },
+  "caveats": {
+    "source_portal_search_is_not_exhaustive": true,
+    "folder_empty_means_no_visible_child_not_proof_of_global_nonexistence": true,
+    "KSSR_2017_Math_not_authorized_as_KP2027_source": true,
+    "official_final_DK_confirmed": false
+  },
+  "next_checks": [
+    "Obtain the exact publisher/edition/dated PDF for Mathematics Year 1 KP2027 from BPK or authorized school penataran.",
+    "Check original PDF table of contents, source page and every Wang SP code/text before deciding whether source panel tally or group list is correct.",
+    "Audit 7 Math editorial RPH drafts against verified DK, preserving original staging version and noting each change.",
+    "Only after content and order are confirmed, populate RPT 2027 and permit academic approval."
+  ],
+  "governance": {
+    "change_main_database": false,
+    "change_telegram": false,
+    "change_web": false,
+    "change_production": false,
+    "merge_draft_pr": false,
+    "material_ready_count": 0
+  }
+}

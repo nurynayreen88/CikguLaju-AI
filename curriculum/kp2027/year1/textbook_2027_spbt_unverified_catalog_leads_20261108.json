@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-11-08",
+  "curriculum": "KP2027",
+  "level": "Tahun 1",
+  "school_stream": "SK",
+  "release_status": "TITLE_CODE_LEAD_ONLY_NOT_VERIFIED",
+  "basis": {
+    "title": "Slaid Taklimat Pesanan SPBT Tahun 2026 Kegunaan Tahun 2027",
+    "url": "https://www.scribd.com/document/1005755183/Slaid-Taklimat-Pesanan-Spbt-Tahun-2026-Kegunaan-Tahun-2027",
+    "access": "Third-party Scribd transcript of apparently official SPBT training slides, NOT independently authenticated KPM original",
+    "year_for_use": 2027,
+    "issuer_claim": "BSTP KPM (as attributed in presentation), not independently verified",
+    "kind": "SECONDARY_TRANSCRIPT_NOT_ORIGINAL"
+  },
+  "items": [
+    {
+      "subject": "Bahasa Melayu SK",
+      "candidate_textbook_code": "BT011123",
+      "candidate_activity_book_code": "BA011123",
+      "candidate_textbook_title": "Bahasa Melayu SK Tahun 1",
+      "candidate_activity_book_title": "Bahasa Melayu SK Tahun 1",
+      "original_copy_acquired": false,
+      "original_copy_sha256": null,
+      "pages_mapped": 0,
+      "subject_dk_sp_mapping_verified": false,
+      "source_level": "UNVERIFIED_SECONDARY_TRANSCRIPT",
+      "approval_status": "REFERENCE_LEAD_ONLY"
+    },
+    {
+      "subject": "Bahasa Inggeris",
+      "candidate_textbook_code": "BT021005",
+      "candidate_activity_book_code": "BA021001",
+      "candidate_textbook_title": "Bahasa Inggeris Tahun 1",
+      "candidate_activity_book_title": "Bahasa Inggeris Tahun 1",
+      "original_copy_acquired": false,
+      "original_copy_sha256": null,
+      "pages_mapped": 0,
+      "subject_dk_sp_mapping_verified": false,
+      "source_level": "UNVERIFIED_SECONDARY_TRANSCRIPT",
+      "approval_status": "REFERENCE_LEAD_ONLY"
+    },
+    {
+      "subject": "Matematik SK",
+      "candidate_textbook_code": "BT081007",
+      "candidate_activity_book_code": "BA081005",
+      "candidate_textbook_title": "Matematik SK Tahun 1",
+      "candidate_activity_book_title": "Matematik SK Tahun 1",
+      "original_copy_acquired": false,
+      "original_copy_sha256": null,
+      "pages_mapped": 0,
+      "subject_dk_sp_mapping_verified": false,
+      "source_level": "UNVERIFIED_SECONDARY_TRANSCRIPT",
+      "approval_status": "REFERENCE_LEAD_ONLY"
+    },
+    {
+      "subject": "Pendidikan Islam",
+      "candidate_textbook_code": "BT101006",
+      "candidate_activity_book_code": "BA101005",
+      "candidate_textbook_title": "Pendidikan Islam Tahun 1",
+      "candidate_activity_book_title": "Pendidikan Islam Tahun 1",
+      "original_copy_acquired": false,
+      "original_copy_sha256": null,
+      "pages_mapped": 0,
+      "subject_dk_sp_mapping_verified": false,
+      "source_level": "UNVERIFIED_SECONDARY_TRANSCRIPT",
+      "approval_status": "REFERENCE_LEAD_ONLY"
+    },
+    {
+      "subject": "Bahasa Arab",
+      "candidate_textbook_code": "BT211030",
+      "candidate_activity_book_code": "BA211030",
+      "candidate_textbook_title": "Bahasa Arab Tahun 1",
+      "candidate_activity_book_title": "Bahasa Arab Tahun 1",
+      "original_copy_acquired": false,
+      "original_copy_sha256": null,
+      "pages_mapped": 0,
+      "subject_dk_sp_mapping_verified": false,
+      "source_level": "UNVERIFIED_SECONDARY_TRANSCRIPT",
+      "approval_status": "REFERENCE_LEAD_ONLY"
+    },
+    {
+      "subject": "Pendidikan Moral SK",
+      "candidate_textbook_code": "BT111021",
+      "candidate_activity_book_code": "BA111001",
+      "candidate_textbook_title": "Pendidikan Moral SK Tahun 1",
+      "candidate_activity_book_title": "Pendidikan Moral SK Tahun 1",
+      "original_copy_acquired": false,
+      "original_copy_sha256": null,
+      "pages_mapped": 0,
+      "subject_dk_sp_mapping_verified": false,
+      "source_level": "UNVERIFIED_SECONDARY_TRANSCRIPT",
+      "approval_status": "REFERENCE_LEAD_ONLY"
+    },
+    {
+      "subject": "Pendidikan Jasmani SK",
+      "candidate_textbook_code": "BT121062",
+      "candidate_activity_book_code": "BA121001",
+      "candidate_textbook_title": "Pendidikan Jasmani SK Tahun 1",
+      "candidate_activity_book_title": "Pendidikan Jasmani SK Tahun 1",
+      "original_copy_acquired": false,
+      "original_copy_sha256": null,
+      "pages_mapped": 0,
+      "subject_dk_sp_mapping_verified": false,
+      "source_level": "UNVERIFIED_SECONDARY_TRANSCRIPT",
+      "approval_status": "REFERENCE_LEAD_ONLY"
+    },
+    {
+      "subject": "Alam dan Manusia: Pembelajaran Bersepadu SK",
+      "candidate_textbook_code": "BT061001",
+      "candidate_activity_book_code": "BA061001",
+      "candidate_textbook_title": "Alam dan Manusia: Pembelajaran Bersepadu SK Tahun 1",
+      "candidate_activity_book_title": "Alam dan Manusia: Pembelajaran Bersepadu SK Tahun 1",
+      "original_copy_acquired": false,
+      "original_copy_sha256": null,
+      "pages_mapped": 0,
+      "subject_dk_sp_mapping_verified": false,
+      "source_level": "UNVERIFIED_SECONDARY_TRANSCRIPT",
+      "approval_status": "REFERENCE_LEAD_ONLY"
+    }
+  ],
+  "additional_variants": [
+    {
+      "subject": "Mathematics DLP Year 1",
+      "candidate_textbook_code": "BT081008",
+      "candidate_activity_book_code": "BA081006",
+      "evidence": "https://www.scribd.com/document/1005755183/Slaid-Taklimat-Pesanan-Spbt-Tahun-2026-Kegunaan-Tahun-2027",
+      "status": "UNVERIFIED_SECONDARY_TRANSCRIPT"
+    },
+    {
+      "subject": "Matematik Tahun 1 SJKC",
+      "candidate_textbook_code": "DT081005",
+      "candidate_activity_book_code": "DA081003",
+      "evidence": "https://www.scribd.com/document/1005755183/Slaid-Taklimat-Pesanan-Spbt-Tahun-2026-Kegunaan-Tahun-2027",
+      "status": "UNVERIFIED_SECONDARY_TRANSCRIPT"
+    },
+    {
+      "subject": "Matematik Tahun 1 SJKT",
+      "candidate_textbook_code": "ET081005",
+      "candidate_activity_book_code": "EA081003",
+      "evidence": "https://www.scribd.com/document/1005755183/Slaid-Taklimat-Pesanan-Spbt-Tahun-2026-Kegunaan-Tahun-2027",
+      "status": "UNVERIFIED_SECONDARY_TRANSCRIPT"
+    }
+  ],
+  "conflicts": [
+    {
+      "subject": "Matematik SK Buku Aktiviti",
+      "candidate_from_2027_spbt_presentation": "BA081005",
+      "observed_in_schools_2026_statement": "BA081009",
+      "other_url": "https://id.scribd.com/document/1010062622/penyata-BTLK",
+      "note": "Different document dates and potential catalog updates; cannot infer which code is correct for final 2027 issue. School statement is not official 2027 evidence.",
+      "resolution": "REQUIRE_AUTHENTIC_2027_KPM_SPBT_CATALOG_OR_BOOK_COVER"
+    }
+  ],
+  "nonrelevant_potential_hit": {
+    "name": "Dokumen Rujukan Matriks Pembelajaran",
+    "url": "https://www.moe.gov.my/dokumen-rujukan-matriks-pembelajaran",
+    "reason": "The KPM page is for Matriks Pembelajaran Tahun 4 and Tingkatan 3, not DK Matematik Tahun 1 KP2027."
+  },
+  "book_publishing_policy": {
+    "disable_textbook_download_links": true,
+    "disable_activitybook_download_links": true,
+    "disable_page_references": true,
+    "do_not_use_legacy_kssr_books_as_kp2027": true,
+    "manual_source_authentication_required": true
+  },
+  "remaining_gates": [
+    "Get original KPM/BSTP 2027 textbook catalog or actual cover/barcode",
+    "Verify ISBN/printing/edition after actual books exist and are lawfully accessible",
+    "Verify final DK Year1 Math SP and SPi, resolve Wang 2-versus-4 conflict",
+    "Match lesson activity against both DK and verified book pages individually before release"
+  ]
+}

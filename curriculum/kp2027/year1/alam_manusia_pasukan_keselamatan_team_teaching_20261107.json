@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "curriculum": "KP2027",
+  "level": "Tahun 1",
+  "subject": "Alam dan Manusia",
+  "as_of": "2026-11-07",
+  "status": "REVIEW_DRAFT_NOT_READY",
+  "source": {
+    "url": "https://sites.google.com/moe-dl.edu.my/gurupenataranalamdanmanusiakp2/home",
+    "kind": "PENATARAN_PORTAL_EXAMPLE_NOT_ORIGINAL_DK",
+    "text_note": "Portal penataran provides an example teaching prompt for 3.1.11 producing artwork based on pictures of safety teams, and 3.1.12 exhibiting and explaining the artwork; this is not a certified final DK transcription.",
+    "reference_codes": [
+      {
+        "code": "3.1.11",
+        "prompt_paraphrase": "Menghasilkan karya berdasarkan gambar pasukan keselamatan",
+        "final_dk_verified": false
+      },
+      {
+        "code": "3.1.12",
+        "prompt_paraphrase": "Mempamerkan dan menerangkan hasil karya",
+        "final_dk_verified": false
+      }
+    ],
+    "source_page_number": null,
+    "original_dk_pdf_sha256": null
+  },
+  "rph": {
+    "id": "KP27-Y1-ADM-PASUKAN-KESELAMATAN-REVIEW-01",
+    "title": "Pasukan Keselamatan — Hasilkan, Pamer dan Terangkan Karya",
+    "school_level": "Tahun 1",
+    "class_size_example": 30,
+    "proposed_duration_minutes": 60,
+    "source_duration_is_portal_example_only": true,
+    "model": "Pengajaran berpasukan Model 1 (seorang mengajar, seorang memerhati)",
+    "recommended_grouping": "6 kumpulan × 5 murid",
+    "proposed_objectives": [
+      "Murid menghasilkan satu karya visual berkumpulan berdasarkan gambar pasukan keselamatan.",
+      "Murid menerangkan sekurang-kurangnya satu tugas pasukan keselamatan yang dipilih ketika sesi pameran.",
+      "Murid menunjukkan sekurang-kurangnya satu amalan menghormati dan menghargai petugas keselamatan."
+    ],
+    "materials": [
+      "Gambar ahli bomba, polis dan penyelamat atau petugas kesihatan yang sesuai umur",
+      "Kad perkataan peranan dan nama pasukan",
+      "Kertas lukisan A3 serta bahan kolaj yang selamat",
+      "Gam tidak toksik, pensel warna dan gunting bermata tumpul",
+      "Kad rubrik pemerhatian individu untuk Guru B"
+    ],
+    "stages": [
+      {
+        "phase": "Set induksi",
+        "minutes": 6,
+        "teacher_A": "Tunjuk tiga gambar petugas keselamatan dan bertanya siapa membantu ketika kecemasan; kaitkan jawapan kepada peranan dalam komuniti tanpa simulasi berbahaya.",
+        "teacher_B": "Perhatikan tahap pengecaman awal setiap murid dan rekod kosa kata yang masih mengelirukan.",
+        "pupils": "Murid mengangkat kad gambar, menyebut nama pasukan dan berkongsi sebab masyarakat memerlukan bantuan mereka."
+      },
+      {
+        "phase": "Aktiviti 1 — Kenal tugas dan rancang karya",
+        "minutes": 10,
+        "teacher_A": "Bimbing kumpulan lima orang memilih satu pasukan; modelkan cara menyusun gambar dan perkataan tugas pada lakaran A3.",
+        "teacher_B": "Perhatikan penglibatan setiap ahli dan beri sokongan kad gambar atau bingkai ayat kepada murid yang belum yakin.",
+        "pupils": "Murid berbincang peranan pasukan dipilih, memilih kad tugas yang sesuai serta melakar susun atur karya."
+      },
+      {
+        "phase": "Aktiviti 2 — Hasilkan karya",
+        "minutes": 20,
+        "teacher_A": "Tunjuk cara penggunaan gam, gunting dan bahan kolaj yang selamat; bimbing pembinaan karya secara berperingkat.",
+        "teacher_B": "Rekod kerjasama, padanan visual dengan tugas yang diterangkan dan keperluan bantuan; beri maklum balas ringkas tanpa mengambil alih tugasan murid.",
+        "pupils": "Murid membahagi tugasan melukis, menampal, menulis label mudah dan menyemak sama ada gambar berkaitan dengan pasukan dipilih."
+      },
+      {
+        "phase": "Aktiviti 3 — Pamer dan terangkan",
+        "minutes": 16,
+        "teacher_A": "Anjur galeri mini enam kumpulan; sediakan kira-kira dua minit setiap kumpulan termasuk satu soalan ringkas daripada rakan.",
+        "teacher_B": "Gunakan senarai semak individu bagi penerangan lisan, hubungan karya dengan tugas dan adab mendengar; elakkan pentaksiran hanya pada wakil kumpulan.",
+        "pupils": "Murid mempamerkan karya, bergilir menyampaikan satu ayat tentang tugas pasukan dan mengemukakan soalan sopan kepada kumpulan lain."
+      },
+      {
+        "phase": "Pengukuhan/PBD dan penutup",
+        "minutes": 8,
+        "teacher_A": "Rumusan ringkas tentang peranan pasukan keselamatan dan cara meminta bantuan kepada orang dewasa yang dipercayai; beri tiket keluar bergambar.",
+        "teacher_B": "Buat semakan akhir evidens individu: padanan gambar-tugas, pernyataan lisan dan kerjasama; kenal pasti sokongan pelajaran susulan.",
+        "pupils": "Murid menyiapkan tiket keluar satu padanan gambar, menyatakan satu peranan petugas dan memberi satu contoh cara menghargai mereka."
+      }
+    ],
+    "assessment": {
+      "type": "PBD formatif melalui hasil karya, pemerhatian, penerangan lisan dan tiket keluar",
+      "evidence": [
+        "Karya berkumpulan yang sepadan dengan peranan",
+        "Sekurang-kurangnya satu penerangan lisan daripada setiap murid",
+        "Kad tiket keluar setiap murid"
+      ],
+      "checklist": [
+        "Padanan gambar dengan pasukan yang munasabah",
+        "Penerangan satu tugas yang jelas",
+        "Murid bertutur serta mendengar dengan sopan"
+      ],
+      "standard_prestasi": "BELUM_DISAHKAN_DARIPADA_DK_ORIGINAL",
+      "tp_claimed": null
+    },
+    "differentiation": {
+      "support": "Gunakan gambar yang jelas dan bingkai ayat 'Pasukan ini membantu...' serta pilih tugasan mewarna/menampal apabila literasi awal belum mantap.",
+      "extension": "Murid menerangkan perbezaan tugas dua pasukan menggunakan contoh komuniti yang selamat."
+    },
+    "character_values": [
+      "Tanggungjawab",
+      "Menghargai petugas",
+      "Kerjasama"
+    ],
+    "teacher_reflection_prompt": "Catat murid yang berjaya menghubungkan karya dengan peranan; ulang sebutan kosa kata atau kerja berpasukan apabila perlu.",
+    "single_teacher_adaptation": "Jika hanya seorang guru, gunakan kad pemerhatian mudah semasa bergerak antara enam kumpulan dan rakam pentaksiran lisan semasa galeri tanpa mengandaikan guru kedua tersedia.",
+    "official_sk": null,
+    "official_sp": null,
+    "official_spi": null,
+    "page_in_final_dk": null,
+    "textbook_pages": null,
+    "approved_by_teacher": false,
+    "approved_for_web": false,
+    "approved_for_telegram": false,
+    "rpt_scheduled": false
+  }
+}

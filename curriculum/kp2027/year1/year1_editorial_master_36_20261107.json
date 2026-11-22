@@ -1,0 +1,2002 @@
+{
+  "schema_version": "1.0",
+  "curriculum": "KP2027",
+  "level": "Tahun 1",
+  "as_of": "2026-11-07",
+  "release_status": "DRAFT_HOLD_NOT_READY",
+  "scope": "A set of original editorial lesson ideas only; not official KPM Year 1 lesson sequence",
+  "subject_count": 8,
+  "candidate_count": 36,
+  "approved_count": 0,
+  "verified_official_standards": 0,
+  "official_duration_verified": false,
+  "no_kssr_fallback": true,
+  "source_documents_verified": false,
+  "original_sources": [
+    "curriculum/kp2027/year1/candidate_rph_year1_24_20261107.json",
+    "curriculum/kp2027/year1/priority_three_subjects_extension_12_20261107.json"
+  ],
+  "records": [
+    {
+      "id": "KP27-Y1-ADM-C01",
+      "level": "Tahun 1",
+      "subject": "Alam dan Manusia",
+      "sequence_candidate": 1,
+      "title": "Kenali keselamatan di sekitar kita",
+      "minutes": 60,
+      "objective_candidate": "Murid mengenal pasti sekurang-kurangnya tiga situasi selamat dan satu tindakan meminta bantuan.",
+      "materials": [
+        "Kad gambar jalan raya",
+        "sekolah",
+        "rumah",
+        "pelekat warna."
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru pamer dua situasi berbeza di pintu pagar sekolah dan meminta murid meneka yang selamat.",
+          "pupil_action": "Murid mengangkat kad hijau atau merah dan menjelaskan satu sebab."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru A bimbing murid mengelaskan kad situasi di stesen keselamatan; Guru B memerhati dan merekod alasan yang diberi.",
+          "pupil_action": "Murid mengelaskan gambar, berbincang dan menyebut risiko dengan ayat mudah."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru A simulasi melintas di laluan pejalan kaki dan meminta cadangan; Guru B menyokong kumpulan yang keliru.",
+          "pupil_action": "Murid berlakon sebagai pejalan kaki, pemerhati dan pemberi nasihat secara bergilir."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru meminta setiap kumpulan menunjukkan satu tindakan selamat dan merumuskan tempat meminta bantuan.",
+          "pupil_action": "Murid tunjuk cara, sebut seorang dewasa dipercayai dan buat refleksi satu ayat."
+        }
+      ],
+      "formative_assessment": "Senarai semak: pengelasan betul, alasan munasabah, tunjuk cara selamat.",
+      "differentiation": "Kumpulan sokongan gunakan dua kad berikon; kumpulan cepat bina satu situasi baharu.",
+      "character_values": [
+        "Prihatin",
+        "bertanggungjawab"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/gurupenataranalamdanmanusiakp2/home",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-ADM-C02",
+      "level": "Tahun 1",
+      "subject": "Alam dan Manusia",
+      "sequence_candidate": 2,
+      "title": "Pasukan keselamatan membantu masyarakat",
+      "minutes": 60,
+      "objective_candidate": "Murid menghasilkan karya visual ringkas tentang pasukan keselamatan dan menerangkan peranannya.",
+      "materials": [
+        "Gambar anggota penyelamat",
+        "kertas A4",
+        "pensel warna",
+        "gam."
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru A tunjuk gambar ahli bomba dan petugas kesihatan; Guru B tanya bagaimana mereka membantu.",
+          "pupil_action": "Murid menyebut pekerjaan dan pengalaman yang pernah dilihat."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru A terangkan kaedah kolaj tiga bahan; Guru B bantu penyediaan bahan dan keselamatan alat.",
+          "pupil_action": "Murid pilih satu pasukan keselamatan lalu hasilkan kolaj berlabel."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru anjur galeri mini dan memberi model ayat penerangan; Guru B merekod penyertaan.",
+          "pupil_action": "Murid pamer karya, ceritakan tugas anggota yang dipilih dan mendengar rakan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru soal tindakan menghargai petugas dan beri maklum balas berdasarkan karya dan penerangan.",
+          "pupil_action": "Murid sebut satu cara berterima kasih dan kemaskan meja kerja."
+        }
+      ],
+      "formative_assessment": "Rubrik ringkas: karya siap, hubungan visual-peranan, penerangan lisan.",
+      "differentiation": "Rangka ayat bergambar disedia; murid maju tambah contoh tugas kecemasan.",
+      "character_values": [
+        "Penghargaan",
+        "kerjasama"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/gurupenataranalamdanmanusiakp2/home",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-ADM-C03",
+      "level": "Tahun 1",
+      "subject": "Alam dan Manusia",
+      "sequence_candidate": 3,
+      "title": "Deria membantu kita memerhati",
+      "minutes": 60,
+      "objective_candidate": "Murid membuat pemerhatian mudah menggunakan deria yang selamat dan menerangkan dapatan.",
+      "materials": [
+        "Bekas objek bertekstur",
+        "loceng",
+        "gambar buah",
+        "carta deria."
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru perkenal tiga objek tanpa menunjukkan; Guru B mengingatkan larangan merasa bahan asing.",
+          "pupil_action": "Murid meneka melalui bunyi atau tekstur dan berkongsi tekaan."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru A kendali stesen sentuhan dan pendengaran, Guru B merekod bukti pemerhatian.",
+          "pupil_action": "Murid bergilir memerhati bahan dan melengkapkan carta dengan ikon."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru memimpin perbandingan dua pemerhatian dan membetulkan andaian tanpa bukti.",
+          "pupil_action": "Murid jelaskan deria yang digunakan dan bandingkan dapatan rakan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru minta murid pilih satu amalan menjaga deria; Guru B menyemak pencapaian individu.",
+          "pupil_action": "Murid nyatakan amalan selamat dan serahkan carta."
+        }
+      ],
+      "formative_assessment": "Catatan pemerhatian lisan dan carta deria berikon.",
+      "differentiation": "Bahan manipulatif disederhanakan; murid cepat beri dua alasan berbeza.",
+      "character_values": [
+        "Ingin tahu",
+        "menjaga keselamatan"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/gurupenataranalamdanmanusiakp2/home",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-ADM-C04",
+      "level": "Tahun 1",
+      "subject": "Alam dan Manusia",
+      "sequence_candidate": 4,
+      "title": "Pasukan keselamatan melalui karya visual",
+      "minutes": 60,
+      "minutes_verified": false,
+      "objective_candidate": "Murid menghasilkan satu karya visual tentang peranan pasukan keselamatan dan menerangkan satu tindakan meminta bantuan.",
+      "materials": [
+        "Kad anggota keselamatan",
+        "gam",
+        "kertas warna",
+        "pensel warna"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menunjukkan gambar ambulans dan bomba serta mengajak murid mengenal tugas masing-masing.",
+          "pupil_action": "Murid menyebut sekurang-kurangnya satu tugas setiap pasukan berdasarkan gambar."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru A memperagakan cara merancang kolaj; Guru B memerhati interaksi dan merekod siapa memerlukan sokongan.",
+          "pupil_action": "Murid memilih satu pasukan, menyusun bentuk dan membina kolaj berlabel sendiri."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru A memimpin galeri karya; Guru B memberi sokongan ayat kepada murid yang belum lancar.",
+          "pupil_action": "Murid mempamerkan karya dan memberi penerangan satu ayat tentang peranan pasukan dipilih."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru meminta satu contoh bantuan selamat ketika kecemasan dan merumus dapatan kumpulan.",
+          "pupil_action": "Murid menunjukkan karya, menyebut orang dewasa untuk dihubungi dan membuat refleksi."
+        }
+      ],
+      "formative_assessment": "Karya visual relevan; penjelasan peranan; cara meminta bantuan selamat.",
+      "differentiation": "Sokongan dengan ikon dan bingkai ayat; pengayaan membina situasi bantuan baharu.",
+      "character_values": [
+        "Menghargai petugas",
+        "kerjasama"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/gurupenataranalamdanmanusiakp2/home",
+      "source_standard_hint": "Portal penataran memberi contoh nombor 3.1.11 dan 3.1.12 (belum boleh disahkan tanpa halaman DK asal)",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-ADM-C05",
+      "level": "Tahun 1",
+      "subject": "Alam dan Manusia",
+      "sequence_candidate": 5,
+      "title": "Jejak pokok di halaman sekolah",
+      "minutes": 60,
+      "minutes_verified": false,
+      "objective_candidate": "Murid memerhati dua perbezaan tumbuhan secara selamat dan mencadangkan satu amalan menjaganya.",
+      "materials": [
+        "Gambar tumbuhan",
+        "kaca pembesar plastik",
+        "carta ikon",
+        "pensel"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menjelaskan sempadan kawasan pemerhatian dan larangan menyentuh tumbuhan tidak dikenali.",
+          "pupil_action": "Murid meramalkan perbezaan daun berdasarkan gambar sebelum pemerhatian."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru A membimbing pengamatan ciri daun dua tumbuhan; Guru B mencatat bahasa pemerhatian murid.",
+          "pupil_action": "Murid memerhati bentuk atau saiz daun tanpa memetik lalu menanda ciri pada carta ikon."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru A membantu perbandingan dan melukis dua pemerhatian di papan; Guru B membimbing kumpulan kecil.",
+          "pupil_action": "Murid membanding lukisan, memberi alasan berasaskan bukti serta mencadang satu tindakan menjaga tanaman."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru merumus cara menjaga tumbuhan dan menyemak kefahaman dengan soalan baharu.",
+          "pupil_action": "Murid menyebut satu perbezaan dan satu amalan baik tanpa meniru pasangan."
+        }
+      ],
+      "formative_assessment": "Carta pemerhatian dua tumbuhan; penerangan satu perbezaan; amalan menjaga.",
+      "differentiation": "Gunakan dua gambar jelas untuk sokongan; murid yakin tambah satu soalan inkuiri.",
+      "character_values": [
+        "Keprihatinan alam",
+        "inkuiri"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/gurupenataranalamdanmanusiakp2/home",
+      "source_standard_hint": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-ADM-C06",
+      "level": "Tahun 1",
+      "subject": "Alam dan Manusia",
+      "sequence_candidate": 6,
+      "title": "Laluan selamat ke kelas",
+      "minutes": 60,
+      "minutes_verified": false,
+      "objective_candidate": "Murid mengenal dua risiko di kawasan sekolah dan membina model laluan selamat secara berkumpulan.",
+      "materials": [
+        "Pelan sekolah rekaan",
+        "kad bahaya",
+        "tali warna",
+        "pelekat tanda"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru mempamerkan pelan sekolah rekaan dan meminta murid mencari situasi tidak selamat.",
+          "pupil_action": "Murid menunjuk dua risiko seperti laluan licin dan pintu sibuk."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru A memberi kumpulan pelan ringkas; Guru B memerhati pertimbangan keselamatan dan merekod alasan.",
+          "pupil_action": "Murid meletak tanda amaran serta memilih laluan yang mengelak risiko dalam peta model."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru meminta setiap kumpulan menguji model dengan watak kertas dan mencuba laluan alternatif.",
+          "pupil_action": "Murid menggerakkan watak, mengenal halangan dan membetulkan laluan berdasarkan maklum balas."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru merumus aturan bergerak di sekolah dan menyoal keadaan baharu.",
+          "pupil_action": "Murid memperagakan satu peraturan dan menerangkan satu pilihan laluan."
+        }
+      ],
+      "formative_assessment": "Pelan berlabel dua risiko; tindakan selamat; alasan ringkas.",
+      "differentiation": "Kurangkan lokasi pada pelan bagi sokongan; tambah risiko baharu untuk pengayaan.",
+      "character_values": [
+        "Keselamatan",
+        "tanggungjawab"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/gurupenataranalamdanmanusiakp2/home",
+      "source_standard_hint": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-ADM-C07",
+      "level": "Tahun 1",
+      "subject": "Alam dan Manusia",
+      "sequence_candidate": 7,
+      "title": "Bahan terpakai jadi alat berguna",
+      "minutes": 60,
+      "minutes_verified": false,
+      "objective_candidate": "Murid membina prototaip mudah daripada bahan terpakai yang selamat dan menerangkan kegunaannya.",
+      "materials": [
+        "Kotak kecil bersih",
+        "gulungan kertas",
+        "pita kertas",
+        "gunting tumpul",
+        "kad lakaran"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menunjukkan dua bahan terpakai yang bersih serta mengajak murid meneka kegunaan baharu.",
+          "pupil_action": "Murid menjelaskan bahan yang selamat digunakan dan sebabnya."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru A memodel lakaran bekas pensel daripada kotak; Guru B menyemak keselamatan alat dan keperluan bantuan.",
+          "pupil_action": "Murid melakar reka bentuk mudah dan menyenaraikan bahan diperlukan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru A membimbing pembinaan prototaip; Guru B memerhati pembahagian tugas dan membantu pemotongan apabila perlu.",
+          "pupil_action": "Murid membina, menguji kestabilan dan menambah baik satu bahagian."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru mengurus pameran satu minit bagi setiap kumpulan dan merumus amalan guna semula.",
+          "pupil_action": "Murid menunjukkan hasil, menerangkan kegunaan dan mengemas bahan secara bertanggungjawab."
+        }
+      ],
+      "formative_assessment": "Prototaip berfungsi; penerangan kegunaan; langkah keselamatan alat.",
+      "differentiation": "Sediakan bentuk potong siap; murid maju menerangkan satu penambahbaikan reka bentuk.",
+      "character_values": [
+        "Kreativiti",
+        "kelestarian"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/gurupenataranalamdanmanusiakp2/home",
+      "source_standard_hint": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BA-C01",
+      "level": "Tahun 1",
+      "subject": "Bahasa Arab",
+      "sequence_candidate": 1,
+      "title": "Ucapan salam dan memperkenalkan diri",
+      "minutes": 60,
+      "objective_candidate": "Murid menyebut salam dan memperkenalkan nama dengan frasa Arab mudah.",
+      "materials": [
+        "Kad dialog berharakat",
+        "kad nama",
+        "audio sebutan guru."
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru memberi salam dalam bahasa Arab dan memperagakan respons dengan gerak.",
+          "pupil_action": "Murid mendengar, meniru sebutan dan menjawab salam."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru menulis frasa perkenalan berharakat serta membimbing ulangan sebutan.",
+          "pupil_action": "Murid memasangkan kad frasa dengan maksud dan berlatih menyebut nama."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru mengurus aktiviti temu kenal secara berpasangan dengan pertukaran peranan.",
+          "pupil_action": "Murid memberi salam, menyebut nama dan mendengar jawapan rakan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru menilai dua frasa lisan individu dengan membetulkan makhraj secara lembut.",
+          "pupil_action": "Murid mempersembahkan dialog ringkas dan menyatakan satu frasa yang dikuasai."
+        }
+      ],
+      "formative_assessment": "Dua frasa lisan dengan sebutan yang boleh difahami.",
+      "differentiation": "Kad transliterasi sementara untuk sokongan sahaja; murid mahir bina dialog tiga giliran.",
+      "character_values": [
+        "Saling menghormati"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/upippdsaratok/kp-2027",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BA-C02",
+      "level": "Tahun 1",
+      "subject": "Bahasa Arab",
+      "sequence_candidate": 2,
+      "title": "Mengenal objek di dalam kelas",
+      "minutes": 60,
+      "objective_candidate": "Murid mengenal dan menyebut sekurang-kurangnya tiga nama objek kelas dalam bahasa Arab.",
+      "materials": [
+        "Objek sebenar",
+        "kad perkataan berharakat",
+        "gambar beg dan buku."
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru angkat objek di kelas dan mengucapkan nama Arabnya dengan jelas.",
+          "pupil_action": "Murid mendengar, menunjuk objek dan meniru sebutan."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru jalankan permainan padanan kad perkataan dengan objek.",
+          "pupil_action": "Murid bekerja dalam kumpulan dan menyebut nama objek semasa memadan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru minta murid menggunakan satu frasa menunjuk objek dalam pasangan.",
+          "pupil_action": "Murid menunjukkan objek, menyebut frasa dan menilai ketepatan rakan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru buat kuiz lisan tiga objek tanpa paparan perkataan.",
+          "pupil_action": "Murid menyebut perkataan dan menyerah kad padanan."
+        }
+      ],
+      "formative_assessment": "Semakan sebutan tiga objek dan padanan gambar-perkataan.",
+      "differentiation": "Kurangkan pilihan kepada dua kad untuk sokongan; murid mahir guna frasa ringkas.",
+      "character_values": [
+        "Berani mencuba",
+        "kerjasama"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/upippdsaratok/kp-2027",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BA-C03",
+      "level": "Tahun 1",
+      "subject": "Bahasa Arab",
+      "sequence_candidate": 3,
+      "title": "Mendengar dan memilih nombor mudah",
+      "minutes": 60,
+      "objective_candidate": "Murid mengecam nombor satu hingga lima yang didengar dalam bahasa Arab.",
+      "materials": [
+        "Kad angka",
+        "pembilang",
+        "kad kata Arab berharakat."
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menyebut nombor satu hingga lima sambil menunjukkan pembilang.",
+          "pupil_action": "Murid mengangkat jari yang betul dan mengikut sebutan."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru menyebut nombor tanpa menunjukkan kad.",
+          "pupil_action": "Murid memilih kad angka dan menyusun pembilang dalam jumlah sesuai."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru berpasangan murid dalam permainan sebut-ambil-ajar.",
+          "pupil_action": "Murid menyebut nombor, memilih objek dan menyemak pilihan rakan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru sebut tiga nombor rawak untuk semakan individu.",
+          "pupil_action": "Murid angkat kad serta sebut balik nombor yang didengar."
+        }
+      ],
+      "formative_assessment": "Ketepatan tiga respons dengar-sebut dengan semakan guru.",
+      "differentiation": "Hadkan nombor satu hingga tiga untuk sokongan; murid mahir tambah urutan menurun.",
+      "character_values": [
+        "Fokus",
+        "yakin"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/upippdsaratok/kp-2027",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BI-C01",
+      "level": "Tahun 1",
+      "subject": "Bahasa Inggeris",
+      "sequence_candidate": 1,
+      "title": "Listening and following classroom instructions",
+      "minutes": 60,
+      "objective_candidate": "Pupils follow two related oral instructions independently.",
+      "materials": [
+        "Real classroom objects",
+        "Picture instruction cards",
+        "Observation checklist"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Teacher demonstrates a one-step instruction and asks what happened.",
+          "pupil_action": "Pupils listen, imitate the action and name a key action word."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Teacher gives two connected instructions without gestures.",
+          "pupil_action": "Pupils manipulate objects in the correct order, then choose the matching picture cards."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Teacher models polite requests and organizes a pair instruction game.",
+          "pupil_action": "Pupils take turns giving and following instructions and give constructive feedback."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Teacher delivers an unfamiliar two-step direction for an individual check.",
+          "pupil_action": "Pupils perform the actions and identify a word that helped them understand."
+        }
+      ],
+      "formative_assessment": "Two connected actions completed in the correct sequence.",
+      "differentiation": "Use gestures for pupils needing support; extend to three steps for confident listeners.",
+      "character_values": [
+        "Respect",
+        "Attentive listening"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/laporankp2027/home",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BI-C02",
+      "level": "Tahun 1",
+      "subject": "Bahasa Inggeris",
+      "sequence_candidate": 2,
+      "title": "Talking about things we like",
+      "minutes": 60,
+      "objective_candidate": "Pupils express one preference and one simple reason orally.",
+      "materials": [
+        "Teacher-made picture cards",
+        "Sentence frame",
+        "Toy microphone"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Teacher displays familiar activities and models a preference sentence.",
+          "pupil_action": "Pupils select a picture and state one thing they like."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Teacher demonstrates a simple reason sentence using an appropriate picture.",
+          "pupil_action": "Pupils practise two connected statements with a partner."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Teacher sets up a small-group picture show-and-tell.",
+          "pupil_action": "Pupils speak, listen and ask one short question about a classmate's choice."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Teacher asks pupils to choose a different picture independently.",
+          "pupil_action": "Pupils give a preference and reason, then reflect on a new word learned."
+        }
+      ],
+      "formative_assessment": "Two intelligible linked oral statements and appropriate listening.",
+      "differentiation": "Offer a pointing-and-phrase frame; extend with because for pupils ready to elaborate.",
+      "character_values": [
+        "Confidence",
+        "Respect for differences"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/laporankp2027/home",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BI-C03",
+      "level": "Tahun 1",
+      "subject": "Bahasa Inggeris",
+      "sequence_candidate": 3,
+      "title": "Reading helpful classroom signs",
+      "minutes": 60,
+      "objective_candidate": "Pupils match three familiar sign words with contexts and explain one sign.",
+      "materials": [
+        "Original classroom sign cards",
+        "Simple classroom map",
+        "Picture-word pairs"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Teacher shows a picture sign and asks where it might be found.",
+          "pupil_action": "Pupils predict the location and say how the sign helps."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Teacher demonstrates how letters, pictograms and context support reading.",
+          "pupil_action": "Pupils read and match signs to pictures, checking in pairs."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Teacher places new signs on a model classroom map.",
+          "pupil_action": "Pupils select appropriate locations and justify one placement."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Teacher gives three previously unseen picture-word matches for checking.",
+          "pupil_action": "Pupils respond independently and explain one sign's meaning."
+        }
+      ],
+      "formative_assessment": "Three accurate sign matches and one relevant explanation.",
+      "differentiation": "Use large icons for beginning readers; invite fluent pupils to create a new sign.",
+      "character_values": [
+        "Safety",
+        "Awareness"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/laporankp2027/home",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-C01",
+      "level": "Tahun 1",
+      "subject": "Bahasa Melayu",
+      "sequence_candidate": 1,
+      "title": "Mendengar arahan kelas",
+      "minutes": 60,
+      "objective_candidate": "Murid melaksanakan sekurang-kurangnya dua arahan lisan berturutan dengan betul.",
+      "materials": [
+        "Kad gambar peralatan kelas",
+        "objek sebenar",
+        "kad arahan."
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru memberi arahan satu langkah sambil membuat gerak; murid meniru.",
+          "pupil_action": "Murid mendengar, menunjuk objek dan menyebut kata tugas."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru membacakan arahan dua langkah tanpa menunjukkan kad; memerhati ketepatan.",
+          "pupil_action": "Murid mengambil kad, menyusunnya dan melakukan arahan mengikut urutan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru minta pasangan membina arahan sopan menggunakan kata kerja dipelajari.",
+          "pupil_action": "Murid bergilir sebagai pemberi dan penerima arahan, membetulkan urutan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru ulang arahan baharu sebagai semakan individu dan puji penggunaan bahasa sopan.",
+          "pupil_action": "Murid melaksanakan arahan serta menyatakan satu perkataan baharu."
+        }
+      ],
+      "formative_assessment": "Rekod tindakan tepat bagi dua arahan berturutan.",
+      "differentiation": "Gunakan satu arahan dengan ikon untuk pemulihan; tambah tiga langkah bagi pengayaan.",
+      "character_values": [
+        "Hormat",
+        "komunikasi sopan"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/kpbmthn1jb2027/home",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-C02",
+      "level": "Tahun 1",
+      "subject": "Bahasa Melayu",
+      "sequence_candidate": 2,
+      "title": "Bercerita tentang keluarga",
+      "minutes": 60,
+      "objective_candidate": "Murid bertutur dalam tiga ayat mudah tentang ahli keluarga dan mendengar respons rakan.",
+      "materials": [
+        "Kad kosa kata ahli keluarga",
+        "gambar keluarga rekaan",
+        "carta ayat."
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru paparkan gambar keluarga rekaan dan ajukan soalan siapa dan apa.",
+          "pupil_action": "Murid menyebut perkataan seperti ibu, ayah, abang atau kakak."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru modelkan tiga ayat tersusun dengan intonasi dan kata ganti yang sesuai.",
+          "pupil_action": "Murid berlatih berpasangan sambil menunjuk kad kosa kata."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru memandu perkongsian kumpulan kecil dan meminta satu soalan susulan daripada pendengar.",
+          "pupil_action": "Murid menceritakan keluarga sendiri atau keluarga rekaan dan bertanya secara sopan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memberi maklum balas sebutan dan penanda ayat.",
+          "pupil_action": "Murid merakam refleksi lisan satu ayat tentang apa yang dipelajari."
+        }
+      ],
+      "formative_assessment": "Senarai semak tiga ayat jelas dan respons pendengar.",
+      "differentiation": "Benarkan gambar keluarga rekaan untuk privasi; sediakan bingkai ayat untuk sokongan.",
+      "character_values": [
+        "Kasih sayang",
+        "hormat"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/kpbmthn1jb2027/home",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-C03",
+      "level": "Tahun 1",
+      "subject": "Bahasa Melayu",
+      "sequence_candidate": 3,
+      "title": "Membaca dan menulis ayat kebersihan",
+      "minutes": 60,
+      "objective_candidate": "Murid membaca ayat pendek dengan sebutan jelas dan menulis satu ayat bermakna.",
+      "materials": [
+        "Kad ayat",
+        "gambar sabun/tuala/tong sampah",
+        "lembaran garisan."
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru tunjuk gambar tangan kotor dan tangan bersih, kemudian tanya pilihan murid.",
+          "pupil_action": "Murid menghubungkan gambar dengan tindakan menjaga kebersihan."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru bimbing bacaan beramai-ramai kemudian individu bagi tiga ayat pendek.",
+          "pupil_action": "Murid membaca, memadankan ayat dengan gambar dan menanda perkataan kunci."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru menunjukkan pembinaan ayat menggunakan kad subjek dan perbuatan.",
+          "pupil_action": "Murid menyusun kad dan menyalin atau membina satu ayat sendiri."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru buat semakan bacaan serta tulisan menggunakan tiga kriteria mudah.",
+          "pupil_action": "Murid membaca ayat yang ditulis dan membetulkan ejaan dengan bimbingan."
+        }
+      ],
+      "formative_assessment": "Bacaan satu ayat dan tulisan dapat dibaca serta membawa makna.",
+      "differentiation": "Gunakan kad suku kata berwarna untuk sokongan; murid cepat menghasilkan dua ayat.",
+      "character_values": [
+        "Kebersihan",
+        "disiplin"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/kpbmthn1jb2027/home",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-C04",
+      "level": "Tahun 1",
+      "subject": "Bahasa Melayu",
+      "sequence_candidate": 4,
+      "title": "Mendengar pengumuman kelas",
+      "minutes": 60,
+      "minutes_verified": false,
+      "objective_candidate": "Murid mengenal dua maklumat daripada pengumuman lisan pendek dan menyatakan semula dengan tepat.",
+      "materials": [
+        "Pengumuman lisan asli",
+        "kad tempat",
+        "kad masa",
+        "helaian respons"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru membacakan pengumuman tentang tempat dan aktiviti kelas sekali tanpa paparan.",
+          "pupil_action": "Murid menyebut maklumat yang paling mereka ingat tanpa mengganggu rakan."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru membacakan pengumuman semula pada kadar sesuai sambil memodel soalan siapa, apa, di mana.",
+          "pupil_action": "Murid memilih kad gambar maklumat dan menyusun respons mengikut urutan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru mengubah satu butiran dalam pengumuman lalu meminta pasangan membanding maklumat.",
+          "pupil_action": "Murid berbincang dua perbezaan dan menyatakan maklumat yang benar-benar didengar."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memberi pengumuman baharu sebagai semakan individu dan maklum balas segera.",
+          "pupil_action": "Murid memilih dua butiran betul dan menjelaskan pilihan lisan."
+        }
+      ],
+      "formative_assessment": "Dua maklumat tepat daripada pengumuman baharu.",
+      "differentiation": "Sediakan kad gambar pilihan terhad; pengayaan gabungkan dua butiran dalam satu ayat.",
+      "character_values": [
+        "Dengar aktif",
+        "tertib"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/kpbmthn1jb2027/home",
+      "source_standard_hint": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-C05",
+      "level": "Tahun 1",
+      "subject": "Bahasa Melayu",
+      "sequence_candidate": 5,
+      "title": "Meminta pertolongan dengan sopan",
+      "minutes": 60,
+      "minutes_verified": false,
+      "objective_candidate": "Murid bertutur dalam dialog ringkas mengandungi permintaan dan ucapan terima kasih yang sesuai.",
+      "materials": [
+        "Kad situasi rekaan",
+        "kad frasa",
+        "bahan kelas"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru melakonkan permintaan kasar dan permintaan sopan tanpa memperlekeh watak.",
+          "pupil_action": "Murid membanding kedua-dua cara dan menyebut sebab satu lebih sesuai."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel intonasi permintaan sopan dan respons membantu.",
+          "pupil_action": "Murid menyusun kad frasa lalu berlatih dialog secara berpasangan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru memberi situasi meminta pensel, bantuan membuka bekas dan bantuan mencari buku.",
+          "pupil_action": "Murid bertukar peranan, menyesuaikan dialog serta memberi respons rakan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru menyoal murid secara individu dalam satu situasi tidak dilatih.",
+          "pupil_action": "Murid melakonkan dialog ringkas dan menyatakan satu frasa sopan."
+        }
+      ],
+      "formative_assessment": "Permintaan jelas dan sopan serta respons terima kasih.",
+      "differentiation": "Bingkai ayat bergambar untuk sokongan; pengayaan tambah sebab permintaan.",
+      "character_values": [
+        "Budi bahasa",
+        "hormat"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/kpbmthn1jb2027/home",
+      "source_standard_hint": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-C06",
+      "level": "Tahun 1",
+      "subject": "Bahasa Melayu",
+      "sequence_candidate": 6,
+      "title": "Membaca poster keselamatan",
+      "minutes": 60,
+      "minutes_verified": false,
+      "objective_candidate": "Murid membaca tiga frasa atau ayat pendek pada poster dan menghubungkan maksudnya dengan tindakan.",
+      "materials": [
+        "Poster asli keselamatan rekaan",
+        "kad frasa",
+        "pelekat ikon"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru memaparkan poster rekaan 'Berjalan dengan tertib' serta meminta murid meneka tujuannya.",
+          "pupil_action": "Murid meneliti gambar dan menyebut petunjuk tentang makna poster."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru membimbing bacaan frasa pendek daripada poster dan membetulkan sebutan dengan sensitif.",
+          "pupil_action": "Murid membaca bersama, kemudian memadankan frasa dengan ikon tindakan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru memberi poster kedua tanpa penerangan penuh dan meminta pasangan mengesan mesej utama.",
+          "pupil_action": "Murid membaca frasa pilihan serta membina demonstrasi tindakan selamat."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru menjalankan bacaan individu satu frasa baru dan soal makna.",
+          "pupil_action": "Murid membaca, memilih gambar yang sepadan dan membuat refleksi."
+        }
+      ],
+      "formative_assessment": "Tiga frasa yang dipadankan dengan betul serta satu bacaan individu.",
+      "differentiation": "Suku kata berwarna untuk sokongan; pengayaan terangkan pilihan mesej terbaik.",
+      "character_values": [
+        "Kepekaan keselamatan",
+        "membaca bermakna"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/kpbmthn1jb2027/home",
+      "source_standard_hint": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-BM-C07",
+      "level": "Tahun 1",
+      "subject": "Bahasa Melayu",
+      "sequence_candidate": 7,
+      "title": "Menulis nota peringatan ringkas",
+      "minutes": 60,
+      "minutes_verified": false,
+      "objective_candidate": "Murid menulis dua ayat peringatan ringkas berdasarkan situasi sebenar kelas dengan tulisan boleh dibaca.",
+      "materials": [
+        "Contoh nota asli",
+        "kad kata",
+        "kertas berbaris"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menunjukkan nota mengemas kelas dan bertanya siapa memerlukannya.",
+          "pupil_action": "Murid mengenal tujuan nota dan mencadang kata kerja sesuai."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel binaan ayat subjek-perbuatan menggunakan kad perkataan.",
+          "pupil_action": "Murid menyusun perkataan, membaca ayat dan membetulkan susunannya."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru meminta murid menghasilkan dua ayat untuk situasi menjaga alat kelas.",
+          "pupil_action": "Murid menulis, semak ejaan dengan pasangan dan menggantikan perkataan kurang jelas."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru membuat semakan berdasarkan mesej, ejaan asas dan tulisan yang dapat dibaca.",
+          "pupil_action": "Murid membaca nota sendiri dan membaiki satu bahagian."
+        }
+      ],
+      "formative_assessment": "Dua ayat peringatan bermakna, boleh dibaca dan berkaitan situasi.",
+      "differentiation": "Tulis semula bingkai ayat bagi sokongan; pengayaan tambah sebab peringatan.",
+      "character_values": [
+        "Bertanggungjawab",
+        "bahasa sopan"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/kpbmthn1jb2027/home",
+      "source_standard_hint": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-MT-C01",
+      "level": "Tahun 1",
+      "subject": "Matematik",
+      "sequence_candidate": 1,
+      "title": "Bandingkan kuantiti hingga sepuluh",
+      "minutes": 60,
+      "objective_candidate": "Murid membanding dua kumpulan objek dan menerangkan lebih banyak, lebih sedikit atau sama banyak.",
+      "materials": [
+        "Penutup botol",
+        "blok kecil",
+        "pinggan kertas",
+        "kad simbol."
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru letak dua kumpulan objek berlainan bilangan dan minta murid memilih kumpulan lebih banyak.",
+          "pupil_action": "Murid menganggar, menunjuk dan memberi alasan mudah."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru bimbing perbandingan satu-ke-satu menggunakan objek konkrit.",
+          "pupil_action": "Murid memasangkan objek, mengira baki dan menyebut hubungan kuantiti."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru tunjuk dua gambar kumpulan objek lalu hubung kepada representasi nombor.",
+          "pupil_action": "Murid melukis titik dan memilih kad perbandingan yang sesuai."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru beri situasi pensel dan pemadam untuk pentaksiran tanpa bantuan.",
+          "pupil_action": "Murid menerangkan perbandingan satu pasangan dan menyemak dengan bahan sebenar."
+        }
+      ],
+      "formative_assessment": "Respons individu dan lembaran padanan konkrit-gambar-nombor.",
+      "differentiation": "Kecilkan kuantiti kepada lima untuk sokongan; murid mahir cipta contoh sama banyak.",
+      "character_values": [
+        "Kejujuran menyemak",
+        "kerjasama"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/panitia-matematik-skk/kualiti-guru/ldp/ldp-2026",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-MT-C02",
+      "level": "Tahun 1",
+      "subject": "Matematik",
+      "sequence_candidate": 2,
+      "title": "Ikatan nombor menggunakan objek",
+      "minutes": 60,
+      "objective_candidate": "Murid menunjukkan sekurang-kurangnya dua cara membahagikan satu kumpulan objek kepada dua bahagian.",
+      "materials": [
+        "Sepuluh pembilang",
+        "dulang dua ruang",
+        "kad titik."
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru tunjuk enam pembilang, sembunyikan sebahagian dan tanya bilangan yang tinggal.",
+          "pupil_action": "Murid meneka dan menyemak dengan mengira semula."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel pembahagian enam objek kepada dua dulang yang berbeza.",
+          "pupil_action": "Murid menghasilkan beberapa pasangan, menyebut bilangan dan merekod dengan gambar."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru memimpin pertukaran daripada objek kepada rajah dua bahagian.",
+          "pupil_action": "Murid menyiapkan rajah ikatan nombor dan menerangkan satu pasangan kepada rakan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru beri cabaran tanpa objek bagi murid bersedia dan mengumpul bukti kerja.",
+          "pupil_action": "Murid memilih cara semak dan membuat satu ayat matematik lisan."
+        }
+      ],
+      "formative_assessment": "Dua pasangan nombor sah dan penerangan cara mendapatkan jawapan.",
+      "differentiation": "Gunakan empat objek untuk sokongan; murid cepat menguji susunan songsang.",
+      "character_values": [
+        "Tekun",
+        "berfikir"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/panitia-matematik-skk/kualiti-guru/ldp/ldp-2026",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-MT-C03",
+      "level": "Tahun 1",
+      "subject": "Matematik",
+      "sequence_candidate": 3,
+      "title": "Pola mudah di sekeliling kita",
+      "minutes": 60,
+      "objective_candidate": "Murid meneruskan dan menghasilkan pola berulang menggunakan warna atau bentuk.",
+      "materials": [
+        "Blok berwarna",
+        "pelekat bentuk",
+        "jalur kertas."
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru tunjuk susunan merah-biru-merah-biru lalu menutup sambungan.",
+          "pupil_action": "Murid meneka warna seterusnya dan menerangkan sebab."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru bimbing murid membina dua pola berulang menggunakan blok konkrit.",
+          "pupil_action": "Murid menyambung pola dan mengesan kesilapan yang sengaja diletakkan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru tukar blok kepada lukisan bentuk dan ajak murid cipta pola sendiri.",
+          "pupil_action": "Murid melukis pola dan menguji pola rakan dengan penjelasan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru paparkan pola baharu sebagai tiket keluar dan kumpul hasil.",
+          "pupil_action": "Murid lengkapkan dua kedudukan seterusnya secara individu."
+        }
+      ],
+      "formative_assessment": "Susunan pola dan alasan tentang unit ulangan.",
+      "differentiation": "Gunakan pola AB untuk sokongan dan ABC untuk pengayaan.",
+      "character_values": [
+        "Ketelitian",
+        "kreativiti"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/panitia-matematik-skk/kualiti-guru/ldp/ldp-2026",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-MT-C04",
+      "level": "Tahun 1",
+      "subject": "Matematik",
+      "sequence_candidate": 4,
+      "title": "Menyusun dan menjelaskan tertib bilangan",
+      "minutes": 60,
+      "minutes_verified": false,
+      "objective_candidate": "Murid menyusun kad bilangan bagi set kecil dan menerangkan satu hubungan sebelum atau selepas secara lisan.",
+      "materials": [
+        "Kad nombor",
+        "pembilang besar",
+        "garis nombor kosong"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menyusun tiga kad bilangan secara sengaja tidak tertib dan meminta murid mengesan masalah.",
+          "pupil_action": "Murid meramal kad yang perlu diubah berdasarkan jumlah objek."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru membimbing murid membilang objek konkrit sebelum menyusun kad angka.",
+          "pupil_action": "Murid membina barisan objek dan menyusun kad nombor mengikut tertib."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru menukar kepada gambar titik dan garis nombor kosong, lalu meminta murid menjelaskan kedudukan.",
+          "pupil_action": "Murid meletakkan nombor, mengenal nombor sebelum atau selepas dan menyemak dengan objek."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memberikan urutan berlubang baharu untuk pentaksiran tanpa bantuan.",
+          "pupil_action": "Murid melengkapkan urutan dan menyatakan sebab kedudukan pilihan."
+        }
+      ],
+      "formative_assessment": "Tertib bilangan tepat serta satu sebab yang boleh difahami.",
+      "differentiation": "Mulakan tiga kad; pengayaan bina urutan menurun dan jelaskan perubahan.",
+      "character_values": [
+        "Ketekunan",
+        "penaakulan"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/panitia-matematik-skk/kualiti-guru/ldp/ldp-2026",
+      "source_standard_hint": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-MT-C05",
+      "level": "Tahun 1",
+      "subject": "Matematik",
+      "sequence_candidate": 5,
+      "title": "Membezakan kumpulan yang sama banyak",
+      "minutes": 60,
+      "minutes_verified": false,
+      "objective_candidate": "Murid menghasilkan dua kumpulan sama banyak dan menunjukkan dua cara menyemaknya.",
+      "materials": [
+        "Pembilang",
+        "pinggan dua ruang",
+        "kad gambar",
+        "kad angka"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru meletakkan dua kumpulan objek yang hampir sama banyak dan menyoal sama atau berbeza.",
+          "pupil_action": "Murid menganggar dan menjelaskan strategi semak pilihan."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel padanan satu-dengan-satu menggunakan objek konkrit.",
+          "pupil_action": "Murid membina dua kumpulan, memadankan pasangan objek dan membetulkan baki."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru mengganti objek dengan rajah titik dan simbol nombor sebagai perwakilan bergambar.",
+          "pupil_action": "Murid melukis dua kumpulan, memilih angka sesuai dan menerangkan padanan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memberi dua gambar baharu untuk penilaian individu.",
+          "pupil_action": "Murid menentukan sama banyak atau tidak lalu menunjukkan cara menyemak."
+        }
+      ],
+      "formative_assessment": "Dua kumpulan sama banyak serta dua representasi yang setara.",
+      "differentiation": "Gunakan hingga lima objek untuk sokongan; pengayaan reka kumpulan tidak sama dan ubah supaya setara.",
+      "character_values": [
+        "Keadilan",
+        "ketelitian"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/panitia-matematik-skk/kualiti-guru/ldp/ldp-2026",
+      "source_standard_hint": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-MT-C06",
+      "level": "Tahun 1",
+      "subject": "Matematik",
+      "sequence_candidate": 6,
+      "title": "Membina cerita penggabungan objek",
+      "minutes": 60,
+      "minutes_verified": false,
+      "objective_candidate": "Murid memodel situasi penggabungan dua kumpulan dan menerangkan jumlah dengan objek dan gambar.",
+      "materials": [
+        "Pembilang",
+        "kad cerita rekaan",
+        "kertas grid",
+        "kad nombor"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru bercerita tentang dua kumpulan daun kertas yang dikumpulkan untuk pameran.",
+          "pupil_action": "Murid melakonkan penggabungan dan meneka hasil."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel dua kumpulan konkrit lalu menyatukannya tanpa terus memberikan simbol operasi.",
+          "pupil_action": "Murid mengumpul objek, membilang semua dan menerangkan jumlah."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru menukar objek kepada gambar titik dan memperkenalkan cara melabel jumlah yang betul.",
+          "pupil_action": "Murid melukis model sendiri untuk kad cerita baharu dan menyemak padanan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru meminta murid menjelaskan strategi pengiraan tanpa meniru contoh.",
+          "pupil_action": "Murid menerangkan model dan menghasilkan satu soalan baharu secara lisan."
+        }
+      ],
+      "formative_assessment": "Penyelesaian cerita dengan objek, gambar dan penjelasan jumlah.",
+      "differentiation": "Gunakan jumlah kecil bagi sokongan; pengayaan banding dua cara mengira.",
+      "character_values": [
+        "Berfikir sistematik",
+        "bekerjasama"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/panitia-matematik-skk/kualiti-guru/ldp/ldp-2026",
+      "source_standard_hint": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-MT-C07",
+      "level": "Tahun 1",
+      "subject": "Matematik",
+      "sequence_candidate": 7,
+      "title": "Meneroka pola bentuk dan warna",
+      "minutes": 60,
+      "minutes_verified": false,
+      "objective_candidate": "Murid meneruskan serta menghasilkan pola berulang dengan menerangkan unit ulangan.",
+      "materials": [
+        "Blok bentuk",
+        "kad warna",
+        "pelekat",
+        "jalur kertas"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menunjukkan satu susunan objek merah-biru-merah-biru dan menutup dua tempat seterusnya.",
+          "pupil_action": "Murid meneka objek dan menjelaskan sebab tekaan."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru membimbing ulangan pola AB dan ABB menggunakan objek manipulatif.",
+          "pupil_action": "Murid membina pola, menyemak ulangan dan membetulkan satu kesilapan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru memindahkan pola konkrit kepada gambar bentuk berwarna untuk membina representasi.",
+          "pupil_action": "Murid melukis pola dan bertukar jalur dengan rakan untuk disambung."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memberi pola baharu bagi penilaian individu tanpa bantuan.",
+          "pupil_action": "Murid melengkapkan dua langkah serta menyebut unit ulangan."
+        }
+      ],
+      "formative_assessment": "Pola baru yang konsisten serta penerangan unit ulangan.",
+      "differentiation": "Gunakan pola AB dengan dua warna untuk sokongan; pengayaan pola ABB atau AAB.",
+      "character_values": [
+        "Kreativiti",
+        "rasional"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/panitia-matematik-skk/kualiti-guru/ldp/ldp-2026",
+      "source_standard_hint": null,
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-PI-C01",
+      "level": "Tahun 1",
+      "subject": "Pendidikan Islam",
+      "sequence_candidate": 1,
+      "title": "Adab memberi salam dan menjawab salam",
+      "minutes": 60,
+      "objective_candidate": "Murid menunjukkan tatacara memberi dan menjawab salam secara sopan dalam situasi mudah.",
+      "materials": [
+        "Kad situasi bertamu",
+        "gambar kelas",
+        "kad dialog."
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru memperagakan dua cara menyapa yang berbeza dan meminta murid membandingkan kesopanan.",
+          "pupil_action": "Murid memilih cara yang sesuai serta menyebut sebab."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru membimbing sebutan lafaz salam dan jawapan secara bertahap dengan semakan lisan.",
+          "pupil_action": "Murid berlatih berpasangan dan saling memberi maklum balas."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru beri kad situasi bertemu guru, rakan dan tetamu lalu modelkan lakonan.",
+          "pupil_action": "Murid berlakon menyapa, menjawab salam dan menjaga adab."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru membuat semakan individu melalui satu situasi tanpa skrip.",
+          "pupil_action": "Murid menunjukkan amalan dan menyatakan satu sebab memberi salam."
+        }
+      ],
+      "formative_assessment": "Senarai semak kesesuaian situasi, adab dan sebutan.",
+      "differentiation": "Kad dialog besar bagi sokongan; murid cepat tambah sapaan sopan selepas salam.",
+      "character_values": [
+        "Adab",
+        "kasih sayang"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/upippdsaratok/kp-2027",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-PI-C02",
+      "level": "Tahun 1",
+      "subject": "Pendidikan Islam",
+      "sequence_candidate": 2,
+      "title": "Menjaga kebersihan diri",
+      "minutes": 60,
+      "objective_candidate": "Murid mengenal tindakan kebersihan harian dan menunjukkan urutan amalan yang dipilih.",
+      "materials": [
+        "Gambar mencuci tangan",
+        "berus gigi",
+        "tisu",
+        "carta urutan."
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menunjukkan pilihan amalan sebelum dan selepas makan.",
+          "pupil_action": "Murid menyebut pengalaman dan mengelaskan tindakan bersih."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru demonstrasi langkah mencuci tangan dengan air atau simulasi tanpa air.",
+          "pupil_action": "Murid menyusun gambar langkah lalu melakukan simulasi mengikut urutan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru membimbing kumpulan membincangkan tempat menjaga kebersihan di sekolah.",
+          "pupil_action": "Murid menghasilkan poster mini dua amalan dan menjelaskan kegunaannya."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru semak urutan dan minta janji amalan yang boleh dibuat esok.",
+          "pupil_action": "Murid tunjuk satu langkah serta menyebut komitmen sendiri."
+        }
+      ],
+      "formative_assessment": "Carta urutan dan pemerhatian demonstrasi.",
+      "differentiation": "Gunakan gambar tiga langkah bagi sokongan; murid mahir terangkan kaitan kebersihan dan kesihatan.",
+      "character_values": [
+        "Bersih",
+        "amanah"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/upippdsaratok/kp-2027",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-PI-C03",
+      "level": "Tahun 1",
+      "subject": "Pendidikan Islam",
+      "sequence_candidate": 3,
+      "title": "Amanah dalam penggunaan barang bersama",
+      "minutes": 60,
+      "objective_candidate": "Murid menjelaskan dua tingkah laku amanah dan mempraktikkan pemulangan barang yang dipinjam.",
+      "materials": [
+        "Kotak pensel kelas",
+        "kad kisah bergambar",
+        "pelekat simbol."
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru ceritakan kisah ringkas pensel pinjaman yang belum dipulangkan.",
+          "pupil_action": "Murid menyatakan perasaan pemilik dan cadangan tindakan."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru membacakan dua situasi dan meminta murid memilih tindakan amanah.",
+          "pupil_action": "Murid berbincang alasan dan memilih kad penyelesaian."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru menyusun lakonan meminjam dan memulangkan barang di beberapa stesen.",
+          "pupil_action": "Murid bergilir meminta izin, menggunakan dengan cermat dan memulangkan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru buat refleksi lisan tentang kesan tidak amanah.",
+          "pupil_action": "Murid menyebut satu janji serta demonstrasi memulangkan barang."
+        }
+      ],
+      "formative_assessment": "Respons dua situasi dan pemerhatian lakonan.",
+      "differentiation": "Beri kad pilihan bergambar; murid mahir nyatakan akibat dan cara membaikinya.",
+      "character_values": [
+        "Amanah",
+        "hormat"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/upippdsaratok/kp-2027",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-PJPK-C01",
+      "level": "Tahun 1",
+      "subject": "Pendidikan Jasmani dan Kesihatan",
+      "sequence_candidate": 1,
+      "title": "Bergerak selamat dalam ruang",
+      "minutes": 60,
+      "objective_candidate": "Murid menunjukkan tiga pergerakan lokomotor mudah sambil mematuhi peraturan ruang.",
+      "materials": [
+        "Kon penanda",
+        "Garisan lantai",
+        "Kad isyarat berhenti"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru memeriksa lantai dan memperkenalkan sempadan serta isyarat berhenti.",
+          "pupil_action": "Murid melakukan pemanasan badan ringan dan mengenal ruang selamat."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru menunjukkan berjalan, bergerak sisi dan lari anak terkawal.",
+          "pupil_action": "Murid mencuba pergerakan di lorong masing-masing tanpa bersentuhan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru mengurus laluan kon dan menukar isyarat arah dengan jelas.",
+          "pupil_action": "Murid mengikuti laluan, memperlahankan diri dan berhenti pada isyarat."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru menjalankan penyejukan badan serta soal jawab keselamatan.",
+          "pupil_action": "Murid menunjukkan gerakan pilihan dan menyebut satu peraturan penting."
+        }
+      ],
+      "formative_assessment": "Pemerhatian tiga pergerakan dan kepatuhan pada isyarat berhenti.",
+      "differentiation": "Sesuaikan kelajuan dan jarak dengan keupayaan individu tanpa pertandingan.",
+      "character_values": [
+        "Disiplin",
+        "Keselamatan"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/laporankp2027/home",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-PJPK-C02",
+      "level": "Tahun 1",
+      "subject": "Pendidikan Jasmani dan Kesihatan",
+      "sequence_candidate": 2,
+      "title": "Imbangan badan mengikut kemampuan",
+      "minutes": 60,
+      "objective_candidate": "Murid mengekalkan dua posisi imbangan mudah dengan pilihan sokongan yang selamat.",
+      "materials": [
+        "Penanda tapak kaki",
+        "Tikar tidak licin",
+        "Dinding sokongan"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru memeriksa permukaan dan menunjukkan lokasi bantuan bagi murid memerlukan sokongan.",
+          "pupil_action": "Murid melakukan regangan ringan dan menjarakkan diri."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel posisi berdiri satu kaki serta alternatif dua kaki.",
+          "pupil_action": "Murid mencuba posisi dan menggunakan sokongan apabila perlu."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru mengendalikan stesen imbangan mengikut kebolehan serta mengawasi risiko jatuh.",
+          "pupil_action": "Murid berlatih bergilir dan memberi galakan tanpa menyentuh rakan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memimpin penyejukan dan semakan langkah keselamatan.",
+          "pupil_action": "Murid menunjukkan dua imbangan yang sesuai dan menjelaskan cara menjaga kestabilan."
+        }
+      ],
+      "formative_assessment": "Dua cubaan imbangan terkawal mengikut tahap individu.",
+      "differentiation": "Benarkan sokongan dinding; pengayaan ubah kedudukan tangan, bukan ketinggian berbahaya.",
+      "character_values": [
+        "Keyakinan",
+        "Keselamatan"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/laporankp2027/home",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-PJPK-C03",
+      "level": "Tahun 1",
+      "subject": "Pendidikan Jasmani dan Kesihatan",
+      "sequence_candidate": 3,
+      "title": "Memilih makanan dan minuman harian",
+      "minutes": 60,
+      "objective_candidate": "Murid mencadangkan satu pilihan hidangan yang pelbagai dan menyatakan alasannya.",
+      "materials": [
+        "Kad hidangan rekaan",
+        "Gambar air kosong",
+        "Pinggan kertas"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menunjukkan dua pilihan bekal rekaan tanpa menilai bentuk tubuh atau kemampuan keluarga.",
+          "pupil_action": "Murid mengenal makanan yang pernah dilihat dan berkongsi idea."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru mengajak murid mengelaskan kad makanan dan minuman secara pelbagai.",
+          "pupil_action": "Murid menyusun pilihan dan berbincang tentang air kosong serta kebersihan."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru meminta kumpulan menghasilkan satu contoh bekal harian menggunakan kad.",
+          "pupil_action": "Murid membina model pinggan dan menerangkan sebab pilihan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru membimbing rumusan tentang pilihan yang munasabah dan amalan kebersihan makanan.",
+          "pupil_action": "Murid menyebut satu tindakan penjagaan diri yang boleh diamalkan."
+        }
+      ],
+      "formative_assessment": "Satu pilihan hidangan dengan alasan yang sesuai serta amalan kebersihan.",
+      "differentiation": "Beri set gambar terhad; pengayaan membanding dua pilihan dengan menghormati keadaan keluarga.",
+      "character_values": [
+        "Menjaga diri",
+        "Kesederhanaan"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/laporankp2027/home",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-PM-C01",
+      "level": "Tahun 1",
+      "subject": "Pendidikan Moral",
+      "sequence_candidate": 1,
+      "title": "Berkongsi alat pembelajaran",
+      "minutes": 60,
+      "objective_candidate": "Murid menunjukkan dua tindakan adil semasa berkongsi alat kelas.",
+      "materials": [
+        "Kotak alat kongsi",
+        "Kad giliran",
+        "Kad situasi"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menunjukkan alat yang tidak mencukupi untuk semua ahli kumpulan.",
+          "pupil_action": "Murid menyatakan perasaan jika tidak mendapat giliran."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru memodel cara meminta dan memulangkan alat serta menggunakan kad giliran.",
+          "pupil_action": "Murid menyusun giliran secara adil dan memberi alasan mudah."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru mengendalikan tugasan melukis dengan alat bersama.",
+          "pupil_action": "Murid bergilir menggunakan alat, meminta izin dan membantu rakan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memberikan situasi baharu yang memerlukan keputusan adil.",
+          "pupil_action": "Murid memilih respons, menunjukkan tindakan dan membuat refleksi ringkas."
+        }
+      ],
+      "formative_assessment": "Pemerhatian dua tindakan adil serta alasan lisan.",
+      "differentiation": "Gunakan kad visual untuk sokongan; perluas kepada penyelesaian konflik bagi murid maju.",
+      "character_values": [
+        "Keadilan",
+        "Bertolak ansur"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/laporankp2027/home",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-PM-C02",
+      "level": "Tahun 1",
+      "subject": "Pendidikan Moral",
+      "sequence_candidate": 2,
+      "title": "Bercakap benar apabila tersilap",
+      "minutes": 60,
+      "objective_candidate": "Murid memilih tindakan jujur dalam dua situasi dan menerangkan akibatnya.",
+      "materials": [
+        "Kad cerita rekaan",
+        "Patung jari",
+        "Kad pilihan tindakan"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru menceritakan situasi air tertumpah tanpa sengaja.",
+          "pupil_action": "Murid mencadangkan respons berbeza dan menamakan perasaan watak."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru membimbing perbandingan tindakan mengaku kesilapan dan menyembunyikannya.",
+          "pupil_action": "Murid mengelaskan pilihan dan membincangkan akibatnya."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru memimpin lakonan meminta maaf dan membaiki kesilapan.",
+          "pupil_action": "Murid berlakon menyatakan perkara benar dan mengambil tindakan bertanggungjawab."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru mengemukakan dilema baharu untuk semakan individu.",
+          "pupil_action": "Murid memilih tindakan serta menyatakan sebab tanpa meniru jawapan rakan."
+        }
+      ],
+      "formative_assessment": "Dua pilihan jujur dengan satu alasan bermakna.",
+      "differentiation": "Kad emosi untuk sokongan; murid maju menilai cara memulihkan kepercayaan.",
+      "character_values": [
+        "Kejujuran",
+        "Keberanian"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/laporankp2027/home",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    },
+    {
+      "id": "KP27-Y1-PM-C03",
+      "level": "Tahun 1",
+      "subject": "Pendidikan Moral",
+      "sequence_candidate": 3,
+      "title": "Menghormati perbezaan rakan",
+      "minutes": 60,
+      "objective_candidate": "Murid mempraktikkan dua respons hormat terhadap pilihan rakan yang berbeza.",
+      "materials": [
+        "Kad minat",
+        "Frasa sopan bergambar",
+        "Kad peranan"
+      ],
+      "stages": [
+        {
+          "phase": "Set induksi",
+          "teacher_action": "Guru memaparkan dua rakan yang gemar permainan berbeza.",
+          "pupil_action": "Murid berkongsi pilihan tanpa memperlekehkan pilihan lain."
+        },
+        {
+          "phase": "Aktiviti 1",
+          "teacher_action": "Guru membimbing frasa sopan untuk bersetuju atau tidak bersetuju.",
+          "pupil_action": "Murid melatih respons berpasangan sambil menjaga nada suara."
+        },
+        {
+          "phase": "Aktiviti 2",
+          "teacher_action": "Guru mengendalikan tugasan yang mempunyai pilihan peranan berlainan.",
+          "pupil_action": "Murid berunding, menerima perbezaan dan membantu rakan menyelesaikan tugasan."
+        },
+        {
+          "phase": "Pengukuhan/PBD dan penutup",
+          "teacher_action": "Guru memberi situasi pertikaian kecil untuk pentaksiran.",
+          "pupil_action": "Murid menunjukkan dua respons hormat dan menyatakan satu sebab."
+        }
+      ],
+      "formative_assessment": "Dua tindakan hormat yang dapat dilihat dalam lakonan.",
+      "differentiation": "Pilihan respons bergambar untuk sokongan; pengayaan reka penyelesaian konflik.",
+      "character_values": [
+        "Empati",
+        "Hormat"
+      ],
+      "source_index_url": "https://sites.google.com/moe-dl.edu.my/laporankp2027/home",
+      "official_sk": null,
+      "official_sp": null,
+      "official_spi": null,
+      "official_page": null,
+      "curriculum_alignment": "TO_VERIFY_AGAINST_ORIGINAL_DK",
+      "content_type": "ORIGINAL_EDITORIAL_TEACHER_DRAFT",
+      "readiness": "DRAFT_HOLD_NOT_READY",
+      "approved_by_teacher": false,
+      "approved_for_web": false,
+      "approved_for_telegram": false,
+      "rpt_scheduled": false
+    }
+  ]
+}
