@@ -750,8 +750,14 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
  </div>
 </div>
 <button type="button" id="rph-variant-rpt" hidden>Buka RPT 2027</button>
+<label for="kp2027-pilot-group" id="kp2027-pilot-group-label" hidden>Kumpulan</label><select id="kp2027-pilot-group" hidden disabled><option value="A">Kumpulan A</option><option value="B">Kumpulan B</option></select>
 <label for="component" id="component-label" hidden>Pilih komponen PJPK (PJ atau PK)</label><select id="component" hidden disabled><option value="">Pilih PJ atau PK</option></select><label for="theme" id="theme-label" hidden>Pilih Tema</label><select id="theme" hidden disabled><option value="">Pilih Tema</option></select><label for="unit" id="unit-label" hidden>Pilih Unit/Tajuk</label><select id="unit" hidden disabled><option value="">Pilih Subjek dahulu</option></select><label for="topic" id="topic-label" hidden>Pilih Tajuk</label><select id="topic" hidden disabled><option value="">Pilih Tajuk</option></select><label for="lesson" id="lesson-label" hidden>Pilih Lesson/PdP</label><select id="lesson" hidden disabled><option value="">Pilih Subjek dahulu</option></select>
-<p id="catalog-status" class="notice" role="status"></p><p id="lesson-source-pages" class="notice" role="status" hidden></p><section id="teacher-info" hidden aria-label="Maklumat kelas, masa dan murid"><h3>Maklumat RPH</h3><p>Isi maklumat PdP jika ada. Maklumat yang diisi akan dicetak dalam RPH Word atau PDF.</p><label for="teacher-class">Pilih Kelas</label><select id="teacher-class"><option value="">Pilih kelas (pilihan)</option><option value="__other__">+ Isi nama kelas lain</option></select><div id="teacher-class-other-wrap" hidden><label for="teacher-class-other">Nama Kelas Lain</label><input id="teacher-class-other" type="text" maxlength="40" autocomplete="off" placeholder="Contoh: 4 Bestari"></div><p class="notice" id="teacher-class-hint">Kelas yang disimpan dalam Profil Guru akan disenaraikan secara automatik.</p><label for="teacher-date">Tarikh PdP</label><input id="teacher-date" type="date"><div class="rph-time-fields"><div><label for="teacher-time-start">Waktu Mula</label><input id="teacher-time-start" type="time" step="60"></div><div><label for="teacher-time-end">Waktu Tamat</label><input id="teacher-time-end" type="time" step="60"></div></div><p class="notice">Jika isi masa, lengkapkan kedua-dua waktu mula dan tamat. Waktu tamat mestilah selepas waktu mula.</p><label for="teacher-students">Bilangan Murid</label><input id="teacher-students" type="number" min="1" max="200" step="1" inputmode="numeric" placeholder="Contoh: 32" aria-describedby="teacher-students-hint"><p id="teacher-students-hint" class="notice" role="status">Pilih kelas untuk mengambil bilangan murid daripada Rekod PBD.</p><button id="teacher-open-roster" type="button" hidden>Urus senarai murid</button>
+<p id="catalog-status" class="notice" role="status"></p>
+<div id="kp2027-pilot-downloads" hidden aria-label="Muat turun RPH KP2027">
+ <button type="button" id="kp2027-pilot-word" data-kp2027-format="word" disabled>Download RPH Word</button>
+ <button type="button" id="kp2027-pilot-pdf" data-kp2027-format="pdf" disabled>Download RPH PDF</button>
+ <p id="kp2027-pilot-status" class="notice" role="status" aria-live="polite"></p>
+</div><p id="lesson-source-pages" class="notice" role="status" hidden></p><section id="teacher-info" hidden aria-label="Maklumat kelas, masa dan murid"><h3>Maklumat RPH</h3><p>Isi maklumat PdP jika ada. Maklumat yang diisi akan dicetak dalam RPH Word atau PDF.</p><label for="teacher-class">Pilih Kelas</label><select id="teacher-class"><option value="">Pilih kelas (pilihan)</option><option value="__other__">+ Isi nama kelas lain</option></select><div id="teacher-class-other-wrap" hidden><label for="teacher-class-other">Nama Kelas Lain</label><input id="teacher-class-other" type="text" maxlength="40" autocomplete="off" placeholder="Contoh: 4 Bestari"></div><p class="notice" id="teacher-class-hint">Kelas yang disimpan dalam Profil Guru akan disenaraikan secara automatik.</p><label for="teacher-date">Tarikh PdP</label><input id="teacher-date" type="date"><div class="rph-time-fields"><div><label for="teacher-time-start">Waktu Mula</label><input id="teacher-time-start" type="time" step="60"></div><div><label for="teacher-time-end">Waktu Tamat</label><input id="teacher-time-end" type="time" step="60"></div></div><p class="notice">Jika isi masa, lengkapkan kedua-dua waktu mula dan tamat. Waktu tamat mestilah selepas waktu mula.</p><label for="teacher-students">Bilangan Murid</label><input id="teacher-students" type="number" min="1" max="200" step="1" inputmode="numeric" placeholder="Contoh: 32" aria-describedby="teacher-students-hint"><p id="teacher-students-hint" class="notice" role="status">Pilih kelas untuk mengambil bilangan murid daripada Rekod PBD.</p><button id="teacher-open-roster" type="button" hidden>Urus senarai murid</button>
 <div class="rph-reflection">
 <label for="teacher-reflection-mode">Refleksi</label>
 <select id="teacher-reflection-mode"><option value="auto">Auto (ikut RPH)</option><option value="manual">Manual (tulis sendiri)</option></select>
@@ -1516,6 +1522,41 @@ function showRphAction(){
 const curriculum=document.getElementById("curriculum"),year=document.getElementById("year"),subject=document.getElementById("subject"),lesson=document.getElementById("lesson"),catalogStatus=document.getElementById("catalog-status");
 const unit=document.getElementById("unit"),component=document.getElementById("component"),theme=document.getElementById("theme"),topic=document.getElementById("topic");
 const subjectVariants=window.cikgulajuSubjectVariants||[];
+const kp2027PilotGroup=document.getElementById("kp2027-pilot-group");
+const kp2027PilotActions=document.getElementById("kp2027-pilot-downloads");
+const kp2027PilotStatus=document.getElementById("kp2027-pilot-status");
+const kp2027PilotButtons=[document.getElementById("kp2027-pilot-word"),document.getElementById("kp2027-pilot-pdf")];
+const kp2027PilotRoutes={MATH_KP2027:"/api/kp2027/sk/tahun-1/matematik",ALAM_KP2027:"/api/kp2027/sk/tahun-1/alam-dan-manusia"};
+let kp2027PilotEpoch=0,kp2027PilotInventory=null,kp2027PilotBusy=false;
+function resetKp2027Pilot(){
+ kp2027PilotEpoch++;
+ kp2027PilotInventory=null;
+ kp2027PilotGroup.value="A";
+ kp2027PilotGroup.hidden=true;kp2027PilotGroup.disabled=true;
+ document.getElementById("kp2027-pilot-group-label").hidden=true;
+ kp2027PilotActions.hidden=true;kp2027PilotStatus.textContent="";
+ for(const button of kp2027PilotButtons)button.disabled=true;
+}
+function kp2027ValidList(numbers,max){
+ return Array.isArray(numbers)&&numbers.length<=max&&numbers.every(n=>Number.isInteger(n)&&n>=1&&n<=max)
+  &&new Set(numbers).size===numbers.length;
+}
+function kp2027CurrentLessons(){
+ if(!kp2027PilotInventory)return [];
+ return subject.value==="MATH_KP2027"?(kp2027PilotInventory.groups[kp2027PilotGroup.value]||[]):kp2027PilotInventory.lessons;
+}
+function kp2027DisplayLessons(){
+ const numbers=kp2027CurrentLessons();
+ fillSelect(lesson,numbers.map(n=>({value:String(n),label:"Lesson "+String(n).padStart(3,"0")})),"Pilih Lesson");
+ showStep(lesson,true);
+ document.getElementById("lesson-label").textContent="Pilih Lesson/PdP";
+ kp2027PilotActions.hidden=false;
+ for(const button of kp2027PilotButtons)button.disabled=true;
+ kp2027PilotStatus.textContent="";
+ catalogStatus.textContent=numbers.length+" Lesson yang diluluskan tersedia"+(subject.value==="MATH_KP2027"?" untuk Kumpulan "+kp2027PilotGroup.value:"")+".";
+ updateSelectionHelp(numbers.length?"Pilih Lesson, kemudian Download RPH Word atau PDF di sini.":"Tiada Lesson yang diluluskan untuk pilihan ini.");
+}
+
 const kp2027ScienceNotice="Komponen Sains Tahun 1 KP2027 berada dalam Alam dan Manusia.";
 const ppkiSubject="PENGURUSAN_KEHIDUPAN_PPKI";
 function canSelectRph(){
@@ -1563,6 +1604,7 @@ const curriculumYears={
 };
 let subjectLoadRevision=0;
 function selectCurriculum(){
+ resetKp2027Pilot();
  subjectLoadRevision++;
  const years=curriculumYears[curriculum.value]||[];
  fillSelect(year,years,"Pilih Tahun");
@@ -1763,6 +1805,7 @@ window.prepareRphFromToday=async function(slot,dateIso,inlineHost=null){
 
 curriculum.addEventListener("change",selectCurriculum);
 year.addEventListener("change",async()=>{
+ resetKp2027Pilot();
  const targetYear=year.value, choice=curriculum.value;
  const revision=++subjectLoadRevision;
  resetSelect(subject,"Pilih Subjek");resetCurriculumChoices();
@@ -1827,20 +1870,42 @@ year.addEventListener("change",async()=>{
  }
 });
 subject.addEventListener("change",async()=>{
+ resetKp2027Pilot();
  const code=subject.value,targetYear=year.value;
  resetCurriculumChoices();setSubjectNavigationLabels();
  rphSubjectPicker.sync();
  catalogStatus.textContent="";
  if(!code)return;
  if(curriculum.value==="kp2027"){
-  const pilotRoutes={MATH_KP2027:"/kp2027/tahun-1/matematik",ALAM_KP2027:"/kp2027/tahun-1/alam-dan-manusia"};
-  const route=pilotRoutes[code];
-  if(!route)return;
-  const link=document.createElement("a");
-  link.href=route;
-  link.textContent="Buka pilihan Lesson dan Download RPH Word/PDF";
-  catalogStatus.replaceChildren(link);
-  updateSelectionHelp("Sila log masuk. Hanya Lesson yang diluluskan dipaparkan dan kuota percubaan dikongsi.");
+  const route=kp2027PilotRoutes[code],revision=kp2027PilotEpoch;
+  if(!route||targetYear!=="1")return;
+  catalogStatus.textContent="Memuat senarai Lesson yang diluluskan...";
+  updateSelectionHelp("Semak Lesson yang tersedia selepas login.");
+  try{
+   const response=await fetch(route+"/available",{credentials:"same-origin",cache:"no-store",headers:{Accept:"application/json"}});
+   const data=await response.json().catch(()=>({}));
+   if(!response.ok)throw Error(data.error||"Senarai Lesson tidak tersedia (HTTP "+response.status+").");
+   let inventory;
+   if(code==="MATH_KP2027"){
+    if(!data.groups||!kp2027ValidList(data.groups.A,125)||!kp2027ValidList(data.groups.B,125))
+     throw Error("Senarai Lesson Matematik tidak sah.");
+    inventory={groups:data.groups};
+   }else{
+    if(!kp2027ValidList(data.lessons,64))throw Error("Senarai Lesson Alam dan Manusia tidak sah.");
+    inventory={lessons:data.lessons};
+   }
+   if(revision!==kp2027PilotEpoch||curriculum.value!=="kp2027"||subject.value!==code||year.value!=="1")return;
+   kp2027PilotInventory=inventory;
+   if(code==="MATH_KP2027"){
+    kp2027PilotGroup.hidden=false;kp2027PilotGroup.disabled=false;
+    document.getElementById("kp2027-pilot-group-label").hidden=false;
+   }
+   kp2027DisplayLessons();
+  }catch(error){
+   if(revision!==kp2027PilotEpoch||subject.value!==code||curriculum.value!=="kp2027")return;
+   catalogStatus.textContent=error.message;
+   updateSelectionHelp("Sila log masuk atau cuba semula. Bahan yang belum diluluskan tidak dipaparkan.");
+  }
   return;
  }
  if(["sjkc","sjkt"].includes(curriculum.value)&&!canSelectRph()){
@@ -1947,8 +2012,58 @@ topic.addEventListener("change",async()=>{
     ()=>year.value===targetYear&&subject.value==="BM"&&theme.value===targetTheme&&unit.value===targetUnit&&topic.value===selected);
  }catch(error){if(topic.value===selected)catalogStatus.textContent=error.message;}
 });
+kp2027PilotGroup.addEventListener("change",()=>{
+ if(curriculum.value==="kp2027"&&subject.value==="MATH_KP2027"&&kp2027PilotInventory)
+  kp2027DisplayLessons();
+});
+async function kp2027DownloadApproved(format){
+ const code=subject.value,route=kp2027PilotRoutes[code],value=Number(lesson.value);
+ if(kp2027PilotBusy||curriculum.value!=="kp2027"||year.value!=="1"||!route||
+    !["word","pdf"].includes(format)||!lesson.value||!kp2027CurrentLessons().includes(value))return;
+ const revision=kp2027PilotEpoch,group=kp2027PilotGroup.value;
+ const payload=code==="MATH_KP2027"?{group,lesson:value,format}:{lesson:value,format};
+ kp2027PilotBusy=true;
+ for(const button of kp2027PilotButtons)button.disabled=true;
+ kp2027PilotStatus.textContent="Menyediakan fail RPH...";
+ try{
+  const response=await fetch(route+"/download",{
+   method:"POST",credentials:"same-origin",cache:"no-store",
+   headers:{"Content-Type":"application/json",Accept:"application/octet-stream"},
+   body:JSON.stringify(payload)
+  });
+  if(!response.ok){
+   const data=await response.json().catch(()=>({}));
+   throw Error(data.error||"RPH belum dapat dimuat turun (HTTP "+response.status+").");
+  }
+  const documentBlob=await response.blob();
+  const ext=format==="pdf"?"pdf":"docx";
+  const fileName="CIKGULAJU_KP2027_"+(code==="MATH_KP2027"?"MATH_T1_"+group:"ALAM_T1")+
+   "_LESSON"+String(value).padStart(3,"0")+"."+ext;
+  const fileUrl=URL.createObjectURL(documentBlob),anchor=document.createElement("a");
+  anchor.href=fileUrl;anchor.download=fileName;anchor.click();
+  setTimeout(()=>URL.revokeObjectURL(fileUrl),30000);
+  if(revision===kp2027PilotEpoch)kp2027PilotStatus.textContent="Fail disediakan. Semak folder Downloads.";
+ }catch(error){
+  if(revision===kp2027PilotEpoch)kp2027PilotStatus.textContent=error.message;
+ }finally{
+  kp2027PilotBusy=false;
+  if(revision===kp2027PilotEpoch){
+   const ready=!!lesson.value&&kp2027CurrentLessons().includes(Number(lesson.value));
+   for(const button of kp2027PilotButtons)button.disabled=!ready;
+  }
+ }
+}
+for(const button of kp2027PilotButtons)
+ button.addEventListener("click",()=>{void kp2027DownloadApproved(button.dataset.kp2027Format);});
 lesson.addEventListener("change",()=>{
  resetMaterials();resetRphPreview();showRphAction();displayBookReference();
+ if(curriculum.value==="kp2027"){
+  const ready=!!lesson.value&&kp2027CurrentLessons().includes(Number(lesson.value))&&!kp2027PilotBusy;
+  for(const button of kp2027PilotButtons)button.disabled=!ready;
+  kp2027PilotStatus.textContent="";
+  if(ready)updateSelectionHelp("Lesson dipilih. Download RPH Word atau PDF di bawah tanpa membuka halaman lain.");
+  return;
+ }
  if(!canSelectRph())return;
  if(lesson.value){
   document.getElementById("show-materials").hidden=false;
