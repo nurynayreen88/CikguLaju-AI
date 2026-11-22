@@ -82,6 +82,10 @@ class QAOnlyWordPDF(unittest.TestCase):
                 reader=PdfReader(BytesIO(pdf))
                 self.assertGreaterEqual(len(reader.pages),1)
                 self.assertLessEqual(len(reader.pages),4)
+                # Visible PDF QA: a lone Refleksi row must never occupy page 2.
+                if len(reader.pages)>1:
+                    last=squeeze(reader.pages[-1].extract_text() or "")
+                    self.assertGreater(len(last),150, "Reflection-only orphan page")
                 for page in reader.pages:
                     self.assertAlmostEqual(float(page.mediabox.width),595.28,delta=0.1)
                     self.assertAlmostEqual(float(page.mediabox.height),841.89,delta=0.1)
