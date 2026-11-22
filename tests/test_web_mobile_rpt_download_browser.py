@@ -275,64 +275,70 @@ class MobileRptDownloadTests(unittest.TestCase):
         finally:
             page.close()
 
-    def test_phone_shows_the_direct_download_button_not_a_second_step_link(self):
-        for width in (320,360,375,390,430,760):
+    def test_phone_shows_one_direct_download_link(self):
+        for width in (320, 360, 375, 390, 430, 760):
             with self.subTest(width=width):
                 page=self.browser.new_page(viewport={"width":width,"height":840})
                 try:
                     result=self.prepare(page)
-                    self.assertEqual(result["href"],"#")
-                    self.assertEqual(result["linkDisplay"],"none")
-                    self.assertNotEqual(result["desktopButtonDisplay"],"none")
+                    self.assertEqual(result["href"],"/api/rpt/2027/all/pjpk/2.pdf")
+                    self.assertNotEqual(result["linkDisplay"],"none")
+                    self.assertEqual(result["desktopButtonDisplay"],"none")
                     self.assertIsNone(result["linkTarget"])
-                    self.assertFalse(result["desktopButtonDisabled"])
+                    self.assertFalse(result["linkHidden"])
+                    self.assertEqual(page.locator("#rpt-download-mobile").get_attribute("download"),"")
                     self.assertLessEqual(page.evaluate("document.documentElement.scrollWidth"),width+1)
                 finally:
                     page.close()
 
-    def test_phone_click_starts_direct_pdf_download_once_without_popup(self):
+    def test_phone_direct_pdf_click_stays_on_this_page_without_popup(self):
         page=self.browser.new_page(viewport={"width":390,"height":844})
         popups=[]
         try:
             self.prepare(page)
             page.on("popup",lambda popup:popups.append(popup))
             page.evaluate("""() => {
-                window.__rptMobileCalls=[];
-                window.downloadCikguLajuRPT=(code,year,name,output,button,viewer,mobile)=>{
-                    window.__rptMobileCalls.push({
-                        code,year,name,hasViewer:!!viewer,mobileRequest:!!mobile,
-                        expectedStatusElement:output?.id==="rpt-status"
-                    });
-                    return Promise.resolve(true);
-                };
+                window.__rptDirectTap=null;
+                window.open=()=>{throw Error("No popup allowed")};
+                window.downloadCikguLajuRPT=()=>{throw Error("Old async downloader must not run")};
+                const link=document.getElementById("rpt-download-mobile");
+                link.addEventListener("click",event=>{
+                    window.__rptDirectTap={
+                        href:link.getAttribute("href"),
+                        download:link.getAttribute("download"),
+                        target:link.getAttribute("target"),
+                        trusted:event.isTrusted
+                    };
+                    event.preventDefault(); // prevent file:// navigation in the test
+                });
             }""")
-            page.locator("#rpt-download").click()
-            result=page.evaluate("window.__rptMobileCalls")
-            self.assertEqual(result,[{
-                "code":"pjpk","year":2,"name":"PJPK",
-                "hasViewer":False,"mobileRequest":False,
-                "expectedStatusElement":True
-            }])
+            page.locator("#rpt-download-mobile").click()
+            self.assertEqual(page.evaluate("window.__rptDirectTap"),{
+                "href":"/api/rpt/2027/all/pjpk/2.pdf",
+                "download":"",
+                "target":None,
+                "trusted":True
+            })
             self.assertEqual(popups,[])
         finally:
-            for popup in popups:popup.close()
+            for popup in popups: popup.close()
             page.close()
 
     def test_phone_does_not_depend_on_popup_permission(self):
         page=self.browser.new_page(viewport={"width":375,"height":812})
         try:
             self.prepare(page)
-            result=page.evaluate("""() => {
+            page.evaluate("""() => {
                 window.open=()=>{throw Error("Popup must not be opened")};
-                window.__rptMobileCalls=[];
-                window.downloadCikguLajuRPT=(code,year,name,output,button,viewer)=>{
-                    window.__rptMobileCalls.push({code,year,hasViewer:!!viewer});
-                    return Promise.resolve(true);
-                };
-                document.querySelector("#rpt-download").click();
-                return window.__rptMobileCalls;
+                window.__nativeTap=0;
+                const link=document.getElementById("rpt-download-mobile");
+                link.addEventListener("click",event=>{
+                    event.preventDefault();
+                    window.__nativeTap++;
+                });
             }""")
-            self.assertEqual(result,[{"code":"pjpk","year":2,"hasViewer":False}])
+            page.locator("#rpt-download-mobile").click()
+            self.assertEqual(page.evaluate("window.__nativeTap"),1)
         finally:
             page.close()
 
@@ -340,9 +346,9 @@ class MobileRptDownloadTests(unittest.TestCase):
         page=self.browser.new_page(viewport={"width":1200,"height":900})
         try:
             result=self.prepare(page)
-            self.assertEqual(result["linkDisplay"],"none")
-            self.assertNotEqual(result["desktopButtonDisplay"],"none")
-            self.assertFalse(result["desktopButtonDisabled"])
+            self.assertNotEqual(result["linkDisplay"],"none")
+            self.assertEqual(result["desktopButtonDisplay"],"none")
+            self.assertEqual(result["href"],"/api/rpt/2027/all/pjpk/2.pdf")
         finally:
             page.close()
 
