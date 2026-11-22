@@ -1,0 +1,41 @@
+name: KP2027 Matematik Tahun 1 private canary - login quota QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'web/kp2027_math_canary_web.py'
+      - 'tests/test_kp2027_math_canary_web.py'
+      - 'tools/run_web_production.py'
+      - '.github/workflows/kp2027-math-private-pilot-20261122.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-auth-quota:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Web test framework only, no server secrets
+        run: python -m pip install 'Flask>=3.1,<4'
+      - name: Compile isolated Math route, tests and production launcher
+        run: python -m py_compile web/kp2027_math_canary_web.py tests/test_kp2027_math_canary_web.py tools/run_web_production.py
+      - name: Run strict source, session, request-origin and quota mock contract
+        run: python -m unittest discover -s tests -p 'test_kp2027_math_canary_web.py' -v
+      - name: Assert first pilot is limited to 3 QA-bound Lesson slots and never embeds source blobs in Git
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('web/kp2027_math_canary_web.py').read_text()
+          assert 'MAX_LESSON = 3' in p
+          assert 'CIKGULAJU_KP2027_MATH_CANARY_ENABLED' in p
+          assert 'Origin' in p and 'CANARY_APPROVED' in p
+          assert '/rest/v1/kp2027_private_pilot_assets' in p
+          assert 'authorize_rendered_document(' in p
+          assert 'content_base64=' not in p  # blobs stay in private DB, not in the repo
+          assert 'RPH_GENERATED' not in p
+          print('CANARY_CODE_GATE_PASS (not proof of LIVE user downloads)')
+          PY
