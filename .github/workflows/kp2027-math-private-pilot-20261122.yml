@@ -25,12 +25,12 @@ jobs:
         run: python -m py_compile web/kp2027_math_canary_web.py tests/test_kp2027_math_canary_web.py tools/run_web_production.py
       - name: Run strict source, session, request-origin and quota mock contract
         run: python -m unittest discover -s tests -p 'test_kp2027_math_canary_web.py' -v
-      - name: Assert first pilot is limited to 3 QA-bound Lesson slots and never embeds source blobs in Git
+      - name: Assert staged pilot is limited to 10 verified Lesson slots and never embeds source blobs in Git
         run: |
           python - <<'PY'
           from pathlib import Path
           p=Path('web/kp2027_math_canary_web.py').read_text()
-          assert 'MAX_LESSON = 3' in p
+          assert 'MAX_LESSON = 10' in p
           assert 'CIKGULAJU_KP2027_MATH_CANARY_ENABLED' in p
           assert 'Origin' in p and 'CANARY_APPROVED' in p
           assert '/rest/v1/kp2027_private_pilot_assets' in p
