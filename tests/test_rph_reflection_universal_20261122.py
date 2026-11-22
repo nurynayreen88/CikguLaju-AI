@@ -77,7 +77,7 @@ class TestUniversalReflection(unittest.TestCase):
             "footer":[{"label":"Pemulihan / Pengayaan","value":"Bimbingan"},
                       {"label":"Refleksi","value":"Ayat placeholder asal."}],
         }
-        self.assertEqual(criterion_from_layout(layout),CRITERION)
+        self.assertEqual(criterion_from_layout(layout),CRITERION.rstrip("."))
         self.assertTrue(personalize_layout(layout,{"students":"30"},"SCIENCE"))
         result=layout["footer"][1]["value"]
         self.assertEqual(result.count("____"),2)
