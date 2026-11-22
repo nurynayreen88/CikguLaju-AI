@@ -18,7 +18,7 @@ from web.teacher_profile_store import _get_one, ProfileUnavailable, _validated_n
 from web.school_logo_store import profile_logo_png
 
 
-def school_identity(config, uid):
+def school_identity(config, uid, *, allow_teacher_only=False):
     """Teacher identity comes from the signed Web session, not browser params."""
     if type(uid) is not int or uid < 1:
         raise ProfileUnavailable("Akaun guru tidak sah")
@@ -32,7 +32,7 @@ def school_identity(config, uid):
     state = _validated_name(row.get("state_name") or "", 40, "Negeri sekolah")
     logo = profile_logo_png(config["supabase_url"], config["supabase_key"], uid,
                             row.get("school_code") or "", row.get("legacy_logo_school_code") or "")
-    if not school and logo is None:
+    if not school and logo is None and not (allow_teacher_only and teacher and teacher.casefold() != "cikgu"):
         return None
     return {"school": school, "teacher": teacher, "state": state, "logo": logo}
 

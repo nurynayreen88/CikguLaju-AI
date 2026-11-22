@@ -7,6 +7,9 @@ on:
       - 'rpt_2027/kp2027/year1_rpt_bm_math_alam_20261122_umum.zip'
       - 'rpt_2027/kp2027/year1_rpt_bm_math_alam_gabungan_ab_20261122.zip'
       - 'web/kp2027_year1_rpt_combined.py'
+      - 'web/kp2027_year1_rpt_personalize.py'
+      - 'web/rpt_school_cover.py'
+      - 'tests/test_kp2027_rpt_profile_cover_20261122.py'
       - 'tests/test_kp2027_rpt_ab_combined_20261122.py'
       - 'web/kp2027_year1_rpt_bundle.py'
       - 'web/rpt_2027_all_http.py'
@@ -24,12 +27,16 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install profile cover test dependencies
+        run: python -m pip install Flask python-docx PyMuPDF
       - name: Verify all 12 source SHA hashes, A/B and Web
         run: python -m unittest discover -s tests -p 'test_kp2027_rpt_year1_20261122.py' -v
       - name: Validate one combined RPT per subject
         run: python -m unittest discover -s tests -p 'test_kp2027_rpt_ab_combined_20261122.py' -v
+      - name: Verify paid teacher profile school logo on Word/PDF; free unchanged
+        run: python -m unittest discover -s tests -p 'test_kp2027_rpt_profile_cover_20261122.py' -v
       - name: Python source syntax
-        run: python -m py_compile web/kp2027_year1_rpt_bundle.py web/kp2027_year1_rpt_combined.py web/rpt_2027_all_http.py
+        run: python -m py_compile web/kp2027_year1_rpt_bundle.py web/kp2027_year1_rpt_combined.py web/kp2027_year1_rpt_personalize.py web/rpt_2027_all_http.py
       - name: Browser JavaScript syntax
         run: |
           node - <<'NODE'
