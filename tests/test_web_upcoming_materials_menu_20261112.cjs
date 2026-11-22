@@ -260,11 +260,12 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  unit.value="Inspirasi Alam";
  await listeners["unit.change"]();
  assert.deepEqual(lesson.options.map(x=>x.value),["","38"]);
- assert.match(lesson.options[1].label,/PdP 038 — Kehendak Berbeza daripada Keperluan/);
+ assert.match(lesson.options[1].label,/RPH sumber 038 — Kehendak Berbeza daripada Keperluan/);
  lesson.value="38";
  listeners["lesson.change"]();
  assert.equal(materials.hidden,false);
  assert.equal(catalogueCalls.length,0);
+ assert.match(ctx.catalogStatus.textContent,/RPH sumber 038/);
  curriculum.value="sjkc";
  listeners["curriculum.change"]();
  for(const yearNumber of ["2","3"]){
