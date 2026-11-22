@@ -366,11 +366,11 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .rph-reflection{margin:12px 0}
 .rph-reflection textarea{display:block;width:100%;box-sizing:border-box;margin:8px 0;padding:12px;border:1px solid #ceded8;border-radius:12px;background:#fff;color:#18334b;font:inherit;resize:vertical}
 @media(max-width:380px){#teacher-info .rph-time-fields{grid-template-columns:minmax(0,1fr);gap:0}}
-/* Open the mobile PDF save view directly from a user gesture. */
+/* One click downloads the actual file: no mobile preview tab or second button. */
 #rpt-download-mobile{display:none!important}
 @media screen and (max-width:760px){
-  #rpt-download{display:none!important}
-  #rpt-download-mobile:not([hidden]){display:inline-flex!important}
+  #rpt-download:not([hidden]){display:inline-flex!important}
+  #rpt-download-mobile{display:none!important}
 }
 </style>
 <style>
@@ -845,7 +845,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
  </div>
  <div class="rpt-actions">
   <button id="rpt-download" type="button" disabled hidden>Muat turun PDF</button>
-  <a id="rpt-download-mobile" class="rpt-download-link" target="_blank" rel="noopener" aria-label="Muat turun PDF pada tab baharu" hidden>Muat turun PDF</a>
+  <a id="rpt-download-mobile" class="rpt-download-link" aria-label="Muat turun PDF" hidden>Muat turun PDF</a>
   <a id="rpt-download-word" class="rpt-download-link" hidden>Muat turun Word</a>
  </div>
  <p id="rpt-status" class="notice" role="status"></p>
@@ -2621,7 +2621,7 @@ function refreshRptDownload(){
  const cover=rptCatalog.personalizationAllowed?"Cetakan PDF dengan nama dan logo daripada Profil Guru.":"";
  rptStatus.textContent=[calendar,cover].filter(Boolean).join(" ");
 }
-async function downloadKP2027Rpt(selection,viewer=null){
+async function downloadKP2027Rpt(selection){
  const target=rptKP2027Url(selection,"pdf");
  if(!target)throw Error("RPT gabungan A/B belum tersedia.");
  rptStatus.textContent="Menyediakan satu PDF RPT gabungan Kumpulan A dan B…";
@@ -2636,35 +2636,28 @@ async function downloadKP2027Rpt(selection,viewer=null){
  if(blob.size<10000||blob.size>10000000)
   throw Error("Fail RPT yang diterima tidak lengkap.");
  const url=URL.createObjectURL(blob);
- if(viewer&&!viewer.closed){
-  try{viewer.location.replace(url);}
-  catch(_error){window.open(url,"_blank","noopener");}
-  setTimeout(()=>URL.revokeObjectURL(url),600000);
- }else{
-  const a=document.createElement("a");
-  a.href=url;
-  a.download="CIKGULAJU_RPT_KP2027_T1_"+selection.item.code.toUpperCase()+
-     "_KUMPULAN_AB_GABUNGAN_2027.pdf";
-  document.body.appendChild(a);a.click();a.remove();
-  setTimeout(()=>URL.revokeObjectURL(url),60000);
- }
+ const a=document.createElement("a");
+ a.href=url;
+ a.download="CIKGULAJU_RPT_KP2027_T1_"+selection.item.code.toUpperCase()+
+    "_KUMPULAN_AB_GABUNGAN_2027.pdf";
+ document.body.appendChild(a);a.click();a.remove();
+ setTimeout(()=>URL.revokeObjectURL(url),60000);
  rptStatus.textContent="PDF RPT gabungan Kumpulan A dan B sudah disediakan. "+
   "Satu fail setiap subjek; status SEMAKAN PELAKSANAAN.";
 }
-async function downloadSelectedRpt(selection,viewer=null,mobile=false){
+async function downloadSelectedRpt(selection){
  rptDownloading=true;
  for(const select of [rptCurriculum,rptYear,rptSubject,rptKp2027Group])select.disabled=true;
  rptSubjectPicker.sync();
  try{
   if(rptKP2027Choice(selection)){
-   try{await downloadKP2027Rpt(selection,viewer);}
+   try{await downloadKP2027Rpt(selection);}
    catch(error){
-    if(viewer&&!viewer.closed)try{viewer.close();}catch(_ignored){}
     rptStatus.textContent=error?.message||"Muat turun RPT KP2027 gagal.";
    }
   }else{
    await window.downloadCikguLajuRPT(selection.item.code,selection.year.year,selection.item.label,
-                                     rptStatus,rptDownload,viewer,mobile);
+                                     rptStatus,rptDownload,null,false);
   }
  }finally{
   rptDownloading=false;
@@ -2677,18 +2670,7 @@ rptMobileLink.addEventListener("click",(event)=>{
  event.preventDefault();
  const item=rptChoice();
  if(rptDownloading||!rptCanDownload(item))return;
- // Open during the actual touch/click gesture. On iOS Safari an asynchronous
- // Blob download launched after fetch() may otherwise be silently blocked.
- let viewer=null;
- try{
-  viewer=window.open("about:blank","_blank");
-  if(viewer){
-   viewer.opener=null;
-   viewer.document.title="CikguLaju RPT 2027";
-   viewer.document.body.textContent="Menyediakan PDF RPT 2027…";
-  }
- }catch(_error){viewer=null;}
- void downloadSelectedRpt(item,viewer,true);
+ void downloadSelectedRpt(item);
 });
 rptCurriculum.addEventListener("change",()=>{
  const years=new Map(rptEntries().map(({year})=>[year.year,rptYearLabel(year.year,year.year_label)]));
