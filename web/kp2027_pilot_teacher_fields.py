@@ -297,18 +297,9 @@ def _pdf_personalize(original, fields):
         anchors = [a for a in page.search_for("Refleksi") if a.x0 < 130 and a.y0 > 500]
         if len(anchors) != 1:
             raise TeacherFieldError("Ruang refleksi PDF tidak ditemukan.")
-        # Redact ONLY the UI suffix in the reflection label (never its font
-        # or the shaded cell background). The exact position is checked
-        # against the verified label, and its table border is untouched.
-        suffixes = [
-            rect for phrase in ("(Auto / Manual)", "(Automatik / Manual)")
-            for rect in page.search_for(phrase)
-            if abs(rect.y0 - anchors[0].y0) < 3
-            and anchors[0].x1 <= rect.x0 + 1
-            and rect.x1 < 155.8
-        ]
-        if len(suffixes) == 1:
-            page.add_redact_annot(suffixes[0], fill=None, cross_out=False)
+        # Never try to remove just '(Auto / Manual)' from a split line:
+        # a broken source label leaves 'Manual)' behind. The entire left
+        # label cell is redacted and recreated with its original font.
         # A page may contain a second 'Refleksi' in the original instruction
         # and a second 'Rujukan' in the footer; only the left-column labels
         # around the reserved reflection row are reliable anchors.
@@ -335,13 +326,15 @@ def _pdf_personalize(original, fields):
             y for y in horizontal_lines if anchors[0].y1 < y < footer_top
         ]
         if previous_borders and following_borders:
-            top = max(previous_borders) + 4.0
-            bottom = min(following_borders) - 4.0
+            row_top = max(previous_borders)
+            row_bottom = min(following_borders)
         else:
             # Legacy source PDFs without drawn borders.
-            top = anchors[0].y0 - 25.0
-            bottom = footer_top - 4.0
-        region = fitz.Rect(155.9, top, page.rect.width - 39, bottom)
+            row_top = anchors[0].y0 - 25.0
+            row_bottom = footer_top - 4.0
+        top, bottom = row_top + 1.0, row_bottom - 1.0
+        region = fitz.Rect(155.0, top, page.rect.width - 39, bottom)
+        label_region = fitz.Rect(37.0, top, 153.0, bottom)
         if region.height < 24 or region.height > 110:
             raise TeacherFieldError("Saiz kotak refleksi PDF tidak dijangka.")
         candidates = (
@@ -349,29 +342,43 @@ def _pdf_personalize(original, fields):
             if fields["_reflection_mode"] == "manual"
             else _reflection_candidates(_pdf_success_criterion(page))
         )
-        # Check ALL wording against the unchanged 1-page layout before
-        # clearing any old text. Prefer the full general reflection.
-        chosen = None
-        size = 0.0
-        for sentence in candidates:
-            safe_sentence = _pdf_safe_reflection(sentence)
-            # The RPH body is serif; use a single serif font for all lines
-            # rather than mixing the original serif with a sans-serif stamp.
-            for font_size in (9.0, 8.7, 8.3, 8.0, 7.6, 7.0):
-                scratch = fitz.open()
-                scratch_page = scratch.new_page(width=page.rect.width, height=page.rect.height)
-                result = scratch_page.insert_textbox(region, safe_sentence, fontname="tiro",
-                                                      fontsize=font_size, lineheight=1.05)
-                scratch.close()
-                if result >= 0:
-                    chosen = safe_sentence
-                    size = font_size
+        from web.kp2027_native_pdf_reflection import (
+            native_reflection_plan, append_native_reflection,
+        )
+        safe_candidates = tuple(_pdf_safe_reflection(sentence) for sentence in candidates)
+        try:
+            native_stream = native_reflection_plan(
+                document, page, safe_candidates, row_top, row_bottom,
+            )
+        except ValueError as exc:
+            raise TeacherFieldError(str(exc)) from exc
+
+        chosen, size = None, 0.0
+        if native_stream is None:
+            # Older PDF templates without embedded Noto Serif still use the
+            # verified safe fallback; never replace their label only halfway.
+            for sentence in safe_candidates:
+                for font_size in (9.0, 8.7, 8.3, 8.0, 7.6, 7.0):
+                    scratch = fitz.open()
+                    scratch_page = scratch.new_page(
+                        width=page.rect.width, height=page.rect.height,
+                    )
+                    result = scratch_page.insert_textbox(
+                        region, sentence, fontname="tiro",
+                        fontsize=font_size, lineheight=1.05,
+                    )
+                    scratch.close()
+                    if result >= 0:
+                        chosen, size = sentence, font_size
+                        break
+                if chosen is not None:
                     break
-            if chosen is not None:
-                break
-        if chosen is None:
-            raise TeacherFieldError("Refleksi terlalu panjang untuk kotak PDF. Ringkaskan atau gunakan Word.")
-        page.add_redact_annot(region, fill=(1, 1, 1), cross_out=False)
+            if chosen is None:
+                raise TeacherFieldError(
+                    "Refleksi terlalu panjang untuk kotak PDF. Gunakan Word atau ringkaskan."
+                )
+        page.add_redact_annot(label_region, fill=None, cross_out=False)
+        page.add_redact_annot(region, fill=None, cross_out=False)
         # Remove only the redundant KP2027 subtitle and footer (where present).
         # Do not touch the actual subject title, PdP content or DK citation.
         for block in page.get_text("dict")["blocks"]:
@@ -384,9 +391,21 @@ def _pdf_personalize(original, fields):
                             fill=(1, 1, 1), cross_out=False,
                         )
         page.apply_redactions(images=0, graphics=0, text=0)
-        if page.insert_textbox(region, chosen, fontname="tiro",
-                               fontsize=size, lineheight=1.05) < 0:
-            raise TeacherFieldError("Refleksi PDF tidak dapat dimuatkan dengan selamat.")
+        if native_stream is not None:
+            try:
+                append_native_reflection(document, page, native_stream)
+            except ValueError as exc:
+                raise TeacherFieldError(str(exc)) from exc
+        else:
+            page.insert_text(
+                (38.0, (row_top + row_bottom) / 2 + 4.7),
+                "Refleksi", fontname="tibo", fontsize=9.0,
+            )
+            if page.insert_textbox(
+                region, chosen, fontname="tiro",
+                fontsize=size, lineheight=1.05,
+            ) < 0:
+                raise TeacherFieldError("Refleksi PDF tidak dapat dimuatkan dengan selamat.")
         data = document.tobytes(garbage=4, deflate=True)
         if not data.startswith(b"%PDF-"):
             raise TeacherFieldError("Dokumen PDF peribadi tidak dapat disahkan.")
