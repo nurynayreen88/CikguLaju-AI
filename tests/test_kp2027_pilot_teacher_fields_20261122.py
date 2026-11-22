@@ -61,7 +61,7 @@ class TeacherFields(unittest.TestCase):
         bold_chars = sorted(set("Refleksi"))
 
         def cmap(chars):
-            return ("\\n".join(
+            return ("\n".join(
                 f"<{i:02X}> <{ord(ch):04X}>" for i, ch in enumerate(chars, 1)
             )).encode("ascii")
 
@@ -95,7 +95,7 @@ class TeacherFields(unittest.TestCase):
         self.assertNotIn(b"/tiro", result)
         self.assertNotIn(b"/helv", result)
         # Two unfilled mastery counts are drawn as lines, not fake numbers.
-        self.assertGreaterEqual(result.count(b" m\\n"), 2)
+        self.assertGreaterEqual(result.count(b" m\n"), 2)
 
     def test_printed_label_is_only_refleksi_in_word_and_pdf(self):
         from docx import Document
