@@ -6,6 +6,7 @@ on:
     paths:
       - scripts/audit_rpt2027_arabic_grid_20261123.py
       - scripts/repair_rpt2027_arabic_grid_20261123.py
+      - tests/test_rpt2027_arabic_grid_y2_y6_20261123.py
       - .github/workflows/rpt2027-arabic-grid-y2-y6-20261123.yml
   workflow_dispatch:
 permissions:
@@ -22,8 +23,26 @@ jobs:
       - run: python -m pip install --disable-pip-version-check PyMuPDF==1.24.14
       - name: Audit existing Arabic vector PDF five-column rules without modification
         run: python scripts/audit_rpt2027_arabic_grid_20261123.py
+      - name: Propose vector separator repair in CI scratch workspace only
+        run: python scripts/repair_rpt2027_arabic_grid_20261123.py
+      - name: Verify text and 298 hyperlinks preserved, 51 other RPT PDFs intact
+        run: python -m unittest discover -s tests -p 'test_rpt2027_arabic_grid_y2_y6_20261123.py' -v
+      - name: Record exact review-scope files; no commit or deploy in this pass
+        run: |
+          git status --short
+          python - <<'PY'
+          import subprocess
+          allowed={'rpt_2027/web_2027_pdfs/manifest.json',
+                   'rpt_2027/web_2027_pdfs/original_cover_layout_verified.json'}
+          allowed.update(f'rpt_2027/web_2027_pdfs/bahasa_arab/tahun_{y}.pdf' for y in range(2,7))
+          got=set(subprocess.check_output(['git','diff','--name-only'],text=True).splitlines())
+          assert got==allowed,(got,allowed)
+          print('ONLY_FIVE_ARABIC_PDF_VECTOR_RULES_AND_2_MANIFESTS',len(got))
+          PY
       - uses: actions/upload-artifact@v4
         with:
           name: rpt2027-arabic-y2-y6-grid-audit
-          path: qa_rpt_arab_grid/
+          path: |
+            qa_rpt_arab_grid/
+            rpt_2027/web_2027_pdfs/bahasa_arab/tahun_*.pdf
           retention-days: 7
