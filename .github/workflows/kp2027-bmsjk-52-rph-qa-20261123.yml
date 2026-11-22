@@ -8,6 +8,8 @@ on:
       - 'audits/kp2027_bm_sjk_year1_26sp_52pdp_20261122.json'
       - 'audits/kp2027_bm_sjk_tahun1_52_rph_editorial_qa_20261123.json'
       - 'tests/test_kp2027_bm_sjk_52_rph_editorial_20261123.py'
+      - 'audits/kp2027_bm_sjk_sksp_verified_20261123.json'
+      - 'tests/test_kp2027_bm_sjk_sksp_descriptions_20261123.py'
       - 'audits/kp2027_bm_sjk_official_sp_crosscheck_20261123.json'
       - 'tests/test_kp2027_bm_sjk_official_sp_crosscheck_20261123.py'
       - '.github/workflows/kp2027-bmsjk-52-rph-qa-20261123.yml'
@@ -38,3 +40,5 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_kp2027_bm_sjk_52_rph_editorial_20261123.py' -v
       - name: Validate 26 original SP codes and preserve HOLD
         run: python -m unittest discover -s tests -p 'test_kp2027_bm_sjk_official_sp_crosscheck_20261123.py' -v
+      - name: Validate complete original SK/SP descriptions for all 52 drafts
+        run: python -m unittest discover -s tests -p 'test_kp2027_bm_sjk_sksp_descriptions_20261123.py' -v

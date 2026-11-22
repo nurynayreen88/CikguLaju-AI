@@ -37,3 +37,9 @@
 - **HOLD / DALAM SEMAKAN.** 26 SP BM SJK Tahun 1 disemak terhadap PDF DK rasmi BPK KPM (Google Drive ID `19eJeNYAx5osXc2rvNjeE_pihg9euJS0S`, ISBN `978-967-420-798-4`); semua 26 kod SP ditemui dan fokus ringkas bagi pemetaan awal selaras dengan konteks standard asal.
 - Bukti audit: `audits/kp2027_bm_sjk_official_sp_crosscheck_20261123.json`, disokong ujian `tests/test_kp2027_bm_sjk_official_sp_crosscheck_20261123.py`. Pemetaan 26 SP → 52 cadangan RPH editorial kekal; **0 READY**. Ujian CI memastikan label HOLD tidak terlepas.
 - **Belum diluluskan:** penerangan penuh SK/SP dalam setiap RPH, agihan RPT tahunan Kumpulan A/B, kelulusan pedagogi, contoh Word/PDF, ujian akses/kuota/muat turun Web guru sebenar. Tiada perubahan kepada laluan pengguna, DB, bayaran, bahan PI v2 atau RPH/RPT lama.
+
+## 23 November 2026 — Penerangan SK/SP rasmi untuk 52 draf RPH BM SJK
+
+- **HOLD / DALAM SEMAKAN.** Sembilan penerangan SK dan 26 penerangan SP disemak padanan teks tepat dengan DK rasmi BM SJK Tahun 1 KPM 2026. Penerangan ini dimasukkan ke dalam semua **52 draf RPH QA** tanpa mengubah tajuk atau aktiviti guru/murid, refleksi, RPT lama, kuota, pengguna atau bahan PI v2. Komponen SP 1.2.2 dikekalkan.
+- Bukti: `audits/kp2027_bm_sjk_sksp_verified_20261123.json` dan ujian `tests/test_kp2027_bm_sjk_sksp_descriptions_20261123.py`. Semua bahan masih `QA_HOLD_NOT_READY`, 0 READY, tidak boleh dimuat turun oleh pengguna.
+- **Baki:** pengesahan RPT tahunan Kumpulan A/B, semakan pedagogi individu, format Word/PDF sebenar, akses login/kuota dan muat turun Web. Kandungan SK/SP sahaja tidak membenarkan READY.
