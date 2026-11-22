@@ -55,7 +55,10 @@ class TeacherFields(unittest.TestCase):
         import fitz
         for fmt, original in (("word", word_fixture()), ("pdf", pdf_fixture())):
             with self.subTest(fmt=fmt):
-                rendered = personalize_approved_rph(original, fmt, {})
+                rendered = personalize_approved_rph(original, fmt, {
+                    "teacher_students": "30",
+                    "reflection_mode": "auto"
+                })
                 self.assertNotEqual(rendered, original)
                 if fmt == "word":
                     text = Document(BytesIO(rendered)).tables[1].cell(1, 1).text
@@ -65,10 +68,28 @@ class TeacherFields(unittest.TestCase):
                     text = d[0].get_text()
                     d.close()
                 self.assertIn("sekurang-kurangnya dua objek", text)
-                self.assertIn("PdP dilaksanakan", text)
-                self.assertIn("kriteria kejayaan", text.lower())
+                self.assertEqual(text.count("____"), 2)
+                self.assertIn("orang", text)
+                self.assertIn("belum menguasai", text)
+                self.assertIn("latihan", text.lower())
+                self.assertNotIn("30 orang", text)
                 self.assertNotIn("Catatan asal selepas PdP.", text)
                 self.assertNotIn("25 murid", text)
+
+    def test_actions_follow_success_criterion_topic(self):
+        from web.kp2027_pilot_teacher_fields import _reflection_candidates
+        for criterion, expected in (
+            ("Murid membandingkan dua objek berdasarkan deria secara selamat.", "membandingkan dua objek"),
+            ("Murid membilang serta menyebut dan menulis nombor satu hingga sembilan.", "pembilang"),
+            ("Murid menilai situasi sentuhan tidak selamat dan meminta bantuan.", "simulasi"),
+            ("Murid membaca piktograf dan mengenal pasti data yang betul.", "piktograf"),
+        ):
+            with self.subTest(criterion=criterion):
+                for reflection in _reflection_candidates(criterion):
+                    self.assertEqual(reflection.count("____"), 2)
+                    self.assertIn("belum menguasai", reflection)
+                    self.assertIn(criterion, reflection)
+                self.assertIn(expected, _reflection_candidates(criterion)[0])
 
     def test_manual_reflection_overrides_criterion_based_auto_text(self):
         for fmt, original in (("word", word_fixture()), ("pdf", pdf_fixture())):
