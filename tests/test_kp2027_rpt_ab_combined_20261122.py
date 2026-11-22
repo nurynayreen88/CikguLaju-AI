@@ -48,7 +48,7 @@ class CombinedRPTQA(unittest.TestCase):
                 tables=tree.findall(".//w:tbl",NS)
                 self.assertGreaterEqual(len(tables),2)
                 pdp=defaultdict(list)
-                for tr in tables[1].findall("./w:tr",NS):
+                for tr in tables[0].findall("./w:tr",NS):
                     cells=tr.findall("./w:tc",NS)
                     text=[" ".join(x.text or "" for x in cell.findall(".//w:t",NS))
                           for cell in cells]
