@@ -65,3 +65,9 @@
 - `scripts/repair_rpt2027_arabic_grid_20261123.py` memulihkan pemisah vektor asal pada semua baris dan kepala jadual. Audit CI cadangan: **1,134 garisan** ditambah pada lima RPT: Tahun 2=230, Tahun 3=230, Tahun 4=217, Tahun 5=227, Tahun 6=230. Warna garis lembut; susunan RTL kekal.
 - Semua teks PDF dan 298 pautan asal DSKP (60+60+58+60+60) disemak pariti tepat. Pixel muka depan/logo/ruang profil dikekalkan. 51 fail PDF RPT subjek lain tidak berubah. Fail masih **DRAF**, bukan pengesahan SK/SP atau peruntukan PdP akhir.
 - Bukti pemeriksaan: `.github/workflows/rpt2027-arabic-grid-y2-y6-20261123.yml`, `tests/test_rpt2027_arabic_grid_y2_y6_20261123.py`, `audits/rpt2027_bahasa_arab_grid_20261123.json`. Periksa CI, merge PR dan Render LIVE; paparan muat turun autentik pengguna memerlukan pemeriksaan berasingan.
+
+## 23 November 2026 — KP2027 BM SJK T1: PBD dan pengayaan khusus 26 SP (QA sahaja)
+
+- Bank tambahan `audits/kp2027_bm_sjk_pbd_pengayaan_26sp_20261123.json`: 26 kaedah PBD dengan bukti yang boleh diperhatikan serta 26 pengayaan yang padan dengan setiap SP. Kedua-dua fasa 52 PdP menggunakan bukti PBD dan pengayaan spesifik yang sama bagi SP masing-masing; aktiviti penerokaan dan aplikasi masih berbeza.
+- Penjana QA `tools/kp2027_bmsjk_qa_word_pdf.py` mengambil versi editorial tanpa mengubah 52 rekod sumber: ayat murid dalam Penutup yang generik diganti pemeriksaan khusus SP; ayat PBD serta Pengayaan yang berulang diganti kandungan khusus SP. Teks SK dan SP rasmi kekal.
+- Semua bahan kekal `QA_HOLD_NOT_READY`; 0 READY, belum dipublish melalui Web dan belum disahkan pedagogi oleh guru. CI menguji 52 Word, 52 PDF, ketepatan teks dan halaman A4. Tiada perubahan RPT, kuota, bayaran, akaun, PI v2 atau RPH lain.
