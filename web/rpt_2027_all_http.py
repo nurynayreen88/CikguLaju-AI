@@ -18,6 +18,7 @@ from flask import Blueprint, jsonify, send_file, request
 from primary_language_subjects import PRIMARY_LANGUAGE_SUBJECTS
 from web import native_telegram_ppki_client as ppki
 from web import kp2027_year1_rpt_bundle as kp_rpt
+from web import kp2027_year1_rpt_combined as kp_ab
 from web.english_rpt_2027_http import _account, _has_paid_access, integrated_pdf_path
 from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
 from rpt_2027.matematik import sk_documents as matematik_sk
@@ -353,13 +354,13 @@ def create_all_rpt_blueprint(*,root=ROOT):
         # Extend only the live Web response; retain historical 56-source
         # catalog_data counts and KSSR regression fixtures exactly as before.
         # KP2027 archive status is distinct from 56 legacy RPT PDFs.
-        if kp_rpt.ready():
+        if kp_ab.ready():
             data["kp2027_rpt_available"] = [{
                 "code": code, "label": label, "year": 1,
                 "pdf_ready": True, "docx_ready": True,
-                "download_enabled": True, "kp2027_groups": ["A","B"],
+                "download_enabled": True, "kp2027_combined": True,
                 "status": "RPT SEMAKAN PELAKSANAAN",
-                "note": ("Agihan PdP Kumpulan A/B daripada bank RPT 2027. "
+                "note": ("Satu RPT bagi setiap subjek mengandungi tarikh Kumpulan A dan B. "
                          "Tarikh, cuti, jadual sekolah dan padanan RPH perlu disahkan."),
                 "is_draft": True,
             } for code,label in (
@@ -404,6 +405,28 @@ def create_all_rpt_blueprint(*,root=ROOT):
         if ppki_years:
             data["subjects"].append({"code": ppki.RPT_CODE, "label": "Pengurusan Kehidupan", "years": ppki_years})
         return jsonify(data)
+
+    @bp.get("/api/rpt/2027/kp2027/tahun-1/gabungan/<subject>.<fmt>")
+    def download_kp2027_year1_gabungan(subject,fmt):
+        account,error=_account()
+        if error is not None:
+            return error
+        if subject not in kp_ab.SUBJECTS or fmt not in kp_ab.FORMATS:
+            return jsonify({"error":"Pilihan RPT KP2027 tidak sah."}),404
+        try:
+            content,filename,digest=kp_ab.document(subject,fmt)
+        except kp_ab.BundleUnavailable:
+            return jsonify({"error":"RPT KP2027 gabungan belum disahkan pada pelayan."}),503
+        mimetype=("application/pdf" if fmt=="pdf" else
+                  "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
+        response=send_file(BytesIO(content),mimetype=mimetype,as_attachment=True,
+                           download_name=filename,conditional=False)
+        response.headers["X-RPT-Source-SHA256"]=digest
+        response.headers["X-RPT-Personalization-Allowed"]="0"
+        response.headers["X-RPT-Curriculum"]="KP2027-Year1"
+        response.headers["X-RPT-QA-Status"]="SEMAKAN-PELAKSANAAN"
+        response.headers["X-RPT-Groups"]="A,B"
+        return response
 
     @bp.get("/api/rpt/2027/kp2027/tahun-1/<subject>/<group>.<fmt>")
     def download_kp2027_year1(subject, group, fmt):
