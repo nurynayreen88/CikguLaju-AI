@@ -50,6 +50,53 @@ def pdf_fixture():
 
 
 class TeacherFields(unittest.TestCase):
+    def test_native_pdf_uses_original_noto_serif_9pt_not_times(self):
+        from types import SimpleNamespace
+        from web.kp2027_native_pdf_reflection import native_reflection_plan
+
+        regular_chars = sorted(set(
+            "____ orang murid menguasai dua corak tepukan dan empat organ deria. "
+            "____ orang murid memerlukan bimbingan. "
+        ) - {"_"})
+        bold_chars = sorted(set("Refleksi"))
+
+        def cmap(chars):
+            return ("\\n".join(
+                f"<{i:02X}> <{ord(ch):04X}>" for i, ch in enumerate(chars, 1)
+            )).encode("ascii")
+
+        class FontDocument:
+            def xref_get_key(self, number, key):
+                return "xref", ("105 0 R" if number == 106 else "97 0 R")
+
+            def xref_stream(self, number):
+                return cmap(regular_chars if number == 105 else bold_chars)
+
+            def xref_object(self, number):
+                count = len(regular_chars if number == 106 else bold_chars)
+                return "/Widths [ " + " ".join(["0"] + ["600"] * count) + " ]"
+
+        class Page:
+            rect = SimpleNamespace(width=595.3, height=841.9)
+
+            def get_fonts(self):
+                return [(106, "ttf", "TrueType", "BAAAAA+NotoSerif-Regular", "F1", ""),
+                        (98, "ttf", "TrueType", "CAAAAA+NotoSerif-Bold", "F2", "")]
+
+        result = native_reflection_plan(
+            FontDocument(), Page(),
+            ("____ orang murid menguasai dua corak tepukan dan empat organ deria. "
+             "____ orang murid memerlukan bimbingan.",),
+            712.2, 748.1,
+        )
+        self.assertIsInstance(result, bytes)
+        self.assertIn(b"/F1 9 Tf", result)
+        self.assertIn(b"/F2 9 Tf", result)
+        self.assertNotIn(b"/tiro", result)
+        self.assertNotIn(b"/helv", result)
+        # Two unfilled mastery counts are drawn as lines, not fake numbers.
+        self.assertGreaterEqual(result.count(b" m\\n"), 2)
+
     def test_printed_label_is_only_refleksi_in_word_and_pdf(self):
         from docx import Document
         import fitz
