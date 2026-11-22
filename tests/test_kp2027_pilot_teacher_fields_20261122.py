@@ -70,7 +70,7 @@ class TeacherFields(unittest.TestCase):
                 self.assertIn("sekurang-kurangnya dua objek", text)
                 self.assertEqual(text.count("____"), 2)
                 self.assertIn("orang", text)
-                self.assertIn("belum menguasai", text)
+                self.assertIn("belum menguasai", " ".join(text.split()))
                 self.assertIn("latihan", text.lower())
                 self.assertNotIn("30 orang", text)
                 self.assertNotIn("Catatan asal selepas PdP.", text)
