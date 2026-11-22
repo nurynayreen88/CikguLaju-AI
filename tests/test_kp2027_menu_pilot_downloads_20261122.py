@@ -17,7 +17,9 @@ class TestPilotNavigation(unittest.TestCase):
         self.assertNotIn('akan datang.', selector)
 
     def test_subject_stays_on_same_page_with_private_lessons_and_download(self):
-        section = PAGE[PAGE.index('subject.addEventListener("change",async()=>{'):][:2700]
+        start = PAGE.index('subject.addEventListener("change",async()=>{')
+        end = PAGE.index('component.addEventListener("change",async()=>{', start)
+        section = PAGE[start:end]
         self.assertIn('if(curriculum.value==="kp2027")', section)
         self.assertIn('fetch(route+"/available"', section)
         self.assertIn('kp2027DisplayUnits()', section)
@@ -25,10 +27,10 @@ class TestPilotNavigation(unittest.TestCase):
         self.assertIn('nombor bukan turutan RPT', PAGE)
         self.assertIn('Nombor RPH belum diselaraskan', PAGE)
         self.assertIn('if(curriculum.value==="kp2027"){kp2027DisplayPdps();return;}', PAGE)
-        self.assertIn('label:(subject.value==="ALAM_KP2027"?"RPH sumber ":"PdP ")+String(e.no).padStart(3,"0")+" — "+e.tajuk+" • SP "+e.sp', PAGE)
+        self.assertIn('label:(subject.value==="ALAM_KP2027"&&kp2027PilotInventory?.catalogMode!=="rpt93"?"RPH sumber ":"PdP ")+String(e.no).padStart(3,"0")+" — "+e.tajuk+" • SP "+e.sp', PAGE)
         self.assertIn('Pilih Unit / Kandungan', PAGE)
         self.assertIn('kp2027ValidEntries(data.items.A,data.groups.A,125)', PAGE)
-        self.assertIn('kp2027ValidEntries(data.items,data.lessons,64)', PAGE)
+        self.assertIn('kp2027ValidEntries(data.items,data.lessons,data.catalog_mode==="rpt93"?93:64)', PAGE)
         self.assertNotIn('Buka pilihan Lesson dan Download', section)
         self.assertNotIn('window.location.assign(', section)
         self.assertIn('id="kp2027-pilot-downloads" hidden', PAGE)

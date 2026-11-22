@@ -124,15 +124,15 @@ def fetch_approved_lessons(config,*,opener=None):
 
 _PAGE='''<!doctype html><html lang="ms"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Alam dan Manusia Tahun 1 KP2027 | CikguLaju</title>
 <style>body{margin:0;font:16px system-ui,sans-serif;background:#f5f7fa;color:#1a2735}.wrap{max-width:560px;margin:36px auto;background:#fff;border-radius:12px;padding:28px;box-shadow:0 6px 22px #19324916}h1{font-size:24px;margin:0 0 10px}p{line-height:1.55}label{display:block;margin:17px 0 7px;font-weight:600}select,button{width:100%;padding:13px;border-radius:7px;font:inherit}select{border:1px solid #bac6d2;background:white}button{margin-top:24px;border:0;background:#193755;color:white;font-weight:700;cursor:pointer}button:disabled{opacity:.55}small{color:#586779}.status{min-height:26px;margin-top:18px}a{color:#1c528e}</style></head>
-<body><main class="wrap"><h1>Alam dan Manusia • KP2027 Tahun 1</h1><p>Pilih Lesson yang telah diluluskan untuk muat turun RPH Word atau PDF. RPH digunakan untuk Kumpulan A/B; isikan kelas, tarikh dan masa pada fail.</p>
+<body><main class="wrap"><h1>Alam dan Manusia • KP2027 Tahun 1</h1><p>Pilih PdP mengikut RPT Kumpulan A/B apabila penyelarasan 93 PdP telah diluluskan; RPH sumber asal kekal ketika penyelarasan belum selesai.</p>
 <label for="lesson">Lesson / PdP</label><select id="lesson" disabled><option>Semak senarai Lesson...</option></select>
 <label for="fmt">Format</label><select id="fmt"><option value="pdf">PDF</option><option value="word">Word (.docx)</option></select>
 <button id="download" type="button" disabled>Download RPH</button><p class="status" id="message" role="status" aria-live="polite"></p>
 <small>Download memerlukan login CikguLaju dan menggunakan kelayakan/kuota yang sama. <a href="/">Kembali ke CikguLaju / Log masuk</a>.</small></main>
 <script>
 const l=document.getElementById('lesson'),f=document.getElementById('fmt'),b=document.getElementById('download'),m=document.getElementById('message');
-(async()=>{try{const r=await fetch('/api/kp2027/sk/tahun-1/alam-dan-manusia/available',{credentials:'same-origin',headers:{Accept:'application/json'}});const j=await r.json().catch(()=>({}));if(!r.ok)throw Error(j.error||'Senarai RPH belum tersedia ('+r.status+')');if(!Array.isArray(j.lessons))throw Error('Senarai Lesson tidak sah');l.replaceChildren();for(const n of j.lessons){const opt=document.createElement('option');opt.value=String(n);opt.textContent='Lesson '+String(n).padStart(3,'0');l.appendChild(opt)}l.disabled=j.lessons.length===0;b.disabled=l.disabled;m.textContent=j.lessons.length?j.lessons.length+' Lesson tersedia.':'Tiada Lesson yang diluluskan.';}catch(e){m.textContent=e.message}})();
-b.addEventListener('click',async()=>{if(l.disabled||!l.value)return;b.disabled=true;m.textContent='Menyediakan fail...';const lesson=Number(l.value),format=f.value;try{const r=await fetch('/api/kp2027/sk/tahun-1/alam-dan-manusia/download',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json','Accept':'application/octet-stream'},body:JSON.stringify({lesson,format})});if(!r.ok){const j=await r.json().catch(()=>({}));throw Error(j.error||'RPH tidak tersedia ('+r.status+')')}const data=await r.blob();const ext=format==='pdf'?'pdf':'docx',u=URL.createObjectURL(data),a=document.createElement('a');a.href=u;a.download='CIKGULAJU_KP2027_ALAM_T1_LESSON'+String(lesson).padStart(3,'0')+'.'+ext;a.click();setTimeout(()=>URL.revokeObjectURL(u),30000);m.textContent='Fail disediakan. Semak folder Downloads.';}catch(e){m.textContent=e.message}finally{b.disabled=l.disabled}});
+(async()=>{try{const r=await fetch('/api/kp2027/sk/tahun-1/alam-dan-manusia/available',{credentials:'same-origin',headers:{Accept:'application/json'}});const j=await r.json().catch(()=>({}));if(!r.ok)throw Error(j.error||'Senarai RPH belum tersedia ('+r.status+')');if(!Array.isArray(j.lessons))throw Error('Senarai Lesson tidak sah');l.replaceChildren();for(const n of j.lessons){const opt=document.createElement('option');opt.value=String(n);opt.textContent=(j.catalog_mode==='rpt93'?'PdP ':'RPH sumber ')+String(n).padStart(3,'0');l.appendChild(opt)}l.disabled=j.lessons.length===0;b.disabled=l.disabled;m.textContent=j.lessons.length?j.lessons.length+' Lesson tersedia.':'Tiada Lesson yang diluluskan.';}catch(e){m.textContent=e.message}})();
+b.addEventListener('click',async()=>{if(l.disabled||!l.value)return;b.disabled=true;m.textContent='Menyediakan fail...';const lesson=Number(l.value),format=f.value;try{const r=await fetch('/api/kp2027/sk/tahun-1/alam-dan-manusia/download',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json','Accept':'application/octet-stream'},body:JSON.stringify({lesson,format})});if(!r.ok){const j=await r.json().catch(()=>({}));throw Error(j.error||'RPH tidak tersedia ('+r.status+')')}const data=await r.blob();const ext=format==='pdf'?'pdf':'docx',u=URL.createObjectURL(data),a=document.createElement('a');a.href=u;a.download='CIKGULAJU_KP2027_ALAM_T1_PDP'+String(lesson).padStart(3,'0')+'.'+ext;a.click();setTimeout(()=>URL.revokeObjectURL(u),30000);m.textContent='Fail disediakan. Semak folder Downloads.';}catch(e){m.textContent=e.message}finally{b.disabled=l.disabled}});
 </script></body></html>'''
 
 
@@ -141,6 +141,10 @@ def create_blueprint():
     from web.rph_delivery_quota import authorize_rendered_document,has_active_paid_access
     from web.kp2027_pilot_teacher_fields import EXTRA_FIELDS, TeacherFieldError, personalize_approved_rph
     from web.kp2027_pdp_catalog import alam_approved_items
+    from web.kp2027_alam_rpt93_private import (
+        MAP as RPT93_MAP, valid_rpt_lesson, fetch_supplement,
+        supplement_inventory_approved, make_rpt_inventory, SupplementUnavailable,
+    )
     from web_v1_telegram_auth_routes import COOKIE,_config,_lookup
     from web_v1_sessions import verify_session_ticket
 
@@ -182,11 +186,26 @@ def create_blueprint():
         config,account,error=account_for_request()
         if error is not None:return error
         try:
-            lessons=fetch_approved_lessons(config)
-            items=alam_approved_items(lessons,CATALOG['items'])
-        except (PilotUnavailable,ValueError,KeyError):
+            source_lessons=fetch_approved_lessons(config)
+            # Retain the previous 64-source catalog until all 93 RPT entries
+            # are safely available; QA_HOLD never exposes supplements.
+            rpt_ready=False
+            if len(source_lessons)==64:
+                try:
+                    supplement_inventory_approved(config)
+                    rpt_ready=True
+                except SupplementUnavailable:
+                    pass
+            if rpt_ready:
+                items=make_rpt_inventory(source_lessons)
+                lessons=[entry['no'] for entry in items]
+            else:
+                lessons=source_lessons
+                items=alam_approved_items(source_lessons,CATALOG['items'])
+        except (PilotUnavailable,SupplementUnavailable,ValueError,KeyError):
             return denied('Senarai PdP belum tersedia. Cuba lagi.',503,'ALAM_INVENTORY_UNAVAILABLE')
-        return jsonify({'lessons':lessons,'items':items,'source':'verified-private-kp2027-alam-v10'})
+        return jsonify({'lessons':lessons,'items':items,'catalog_mode':'rpt93' if rpt_ready else 'source64',
+            'source':'verified-private-alam-rpt93-v4' if rpt_ready else 'verified-private-kp2027-alam-v10'})
 
     @bp.post('/api/kp2027/sk/tahun-1/alam-dan-manusia/download')
     def download():
@@ -198,8 +217,9 @@ def create_blueprint():
         if (not isinstance(payload,dict) or not {'lesson','format'}.issubset(payload)
                 or set(payload)-{'lesson','format'}-EXTRA_FIELDS):
             return denied('Pilihan PdP atau maklumat PdP tidak lengkap.',400,'INVALID_SELECTION')
-        try:lesson,fmt=valid_selection(payload['lesson'],payload['format'])
-        except ValueError:return denied('PdP belum tersedia.',404,'LESSON_NOT_AVAILABLE')
+        lesson,fmt=payload['lesson'],payload['format']
+        if type(lesson) is not int or fmt not in FORMATS or not 1<=lesson<=93:
+            return denied('PdP belum tersedia.',404,'LESSON_NOT_AVAILABLE')
         config,account,error=account_for_request()
         if error is not None:return error
         paid=has_active_paid_access(account)
@@ -207,8 +227,28 @@ def create_blueprint():
             return denied('Baki janaan tidak dapat disahkan.',503,'TRIAL_UNVERIFIED')
         if not paid and account['free_remaining']==0:
             return denied('10 janaan percuma telah habis. Aktifkan langganan.',403,'FREE_TRIAL_EXHAUSTED')
-        try:document=fetch_private_document(config,lesson,fmt)
-        except PilotUnavailable:return denied('RPH masih dalam semakan atau belum tersedia.',503,'ALAM_UNAVAILABLE')
+        try:
+            # Session 001–093 follows RPT only when *all* 64 original documents
+            # and the private 29-document archive are approved and verified.
+            source_lessons=fetch_approved_lessons(config)
+            rpt_ready=False
+            if len(source_lessons)==64:
+                try:
+                    supplement_inventory_approved(config)
+                    rpt_ready=True
+                except SupplementUnavailable:
+                    pass
+            if rpt_ready:
+                mapping=valid_rpt_lesson(lesson,fmt)
+                if lesson in RPT93_MAP and mapping['mapping_reason']!='existing_source':
+                    document=fetch_supplement(config,lesson,fmt)
+                else:
+                    document=fetch_private_document(config,mapping['source_rph'],fmt)
+            else:
+                valid_selection(lesson,fmt)
+                document=fetch_private_document(config,lesson,fmt)
+        except (PilotUnavailable,SupplementUnavailable,ValueError):
+            return denied('RPH masih dalam semakan atau belum tersedia.',503,'ALAM_UNAVAILABLE')
         try:
             document=personalize_approved_rph(document,fmt,{key:payload[key] for key in EXTRA_FIELDS if key in payload})
         except TeacherFieldError as exc:
@@ -222,7 +262,8 @@ def create_blueprint():
             remaining=charged['remaining']
         ext,mime=FORMATS[fmt]
         resp=send_file(BytesIO(document),mimetype=mime,as_attachment=True,
-            download_name=f'CIKGULAJU_KP2027_ALAM_T1_LESSON{lesson:03d}.{ext}',conditional=False)
+            download_name=(f'CIKGULAJU_KP2027_ALAM_T1_RPT_PDP{lesson:03d}.{ext}' if rpt_ready
+                 else f'CIKGULAJU_KP2027_ALAM_T1_LESSON{lesson:03d}.{ext}'),conditional=False)
         if remaining is not None:resp.headers['X-RPH-Trial-Remaining']=str(remaining)
         return resp
     return bp

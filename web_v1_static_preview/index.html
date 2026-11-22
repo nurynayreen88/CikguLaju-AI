@@ -1587,14 +1587,14 @@ function kp2027DisplayUnits(){
  kp2027PilotActions.hidden=true;
  for(const button of kp2027PilotButtons)button.disabled=true;
  kp2027PilotStatus.textContent="";
- catalogStatus.textContent=entries.length+(subject.value==="ALAM_KP2027"?" RPH sumber (nombor bukan turutan RPT)":" PdP yang diluluskan")+" dalam "+units.length+" Unit/Kandungan"+
+ catalogStatus.textContent=entries.length+(subject.value==="ALAM_KP2027"&&kp2027PilotInventory?.catalogMode!=="rpt93"?" RPH sumber (nombor bukan turutan RPT)":" PdP yang diluluskan")+" dalam "+units.length+" Unit/Kandungan"+
   (["MATH_KP2027","BM_SK_KP2027","PJ_KP2027"].includes(subject.value)?" (Kumpulan "+kp2027PilotGroup.value+")":"")+".";
- updateSelectionHelp(units.length?(subject.value==="ALAM_KP2027"?"Pilih RPH sumber berdasarkan tajuk dan SP. Nombor RPH belum diselaraskan dengan turutan PdP RPT.":"Pilih Unit / Kandungan terlebih dahulu, kemudian PdP."):"Tiada PdP yang diluluskan untuk pilihan ini.");
+ updateSelectionHelp(units.length?(subject.value==="ALAM_KP2027"&&kp2027PilotInventory?.catalogMode!=="rpt93"?"Pilih RPH sumber berdasarkan tajuk dan SP. Nombor RPH belum diselaraskan dengan turutan PdP RPT.":"Pilih Unit / Kandungan terlebih dahulu, kemudian PdP."):"Tiada PdP yang diluluskan untuk pilihan ini.");
 }
 function kp2027DisplayPdps(){
  const entries=kp2027CurrentEntries().filter(e=>e.unit===unit.value);
  fillSelect(lesson,entries.map(e=>({value:String(e.no),
-   label:(subject.value==="ALAM_KP2027"?"RPH sumber ":"PdP ")+String(e.no).padStart(3,"0")+" — "+e.tajuk+" • SP "+e.sp})),"Pilih PdP");
+   label:(subject.value==="ALAM_KP2027"&&kp2027PilotInventory?.catalogMode!=="rpt93"?"RPH sumber ":"PdP ")+String(e.no).padStart(3,"0")+" — "+e.tajuk+" • SP "+e.sp})),"Pilih PdP");
  showStep(lesson,!!unit.value);
  resetMaterials();resetRphPreview();
  catalogStatus.textContent=entries.length+" PdP disahkan untuk "+unit.value+".";
@@ -1951,9 +1951,11 @@ subject.addEventListener("change",async()=>{
      throw Error("Padanan PdP Pendidikan Jasmani belum dapat disahkan.");
     inventory={groups:data.groups,items:data.items};
    }else{
-    if(!kp2027ValidList(data.lessons,64)||!kp2027ValidEntries(data.items,data.lessons,64))
+    if(!["rpt93","source64",undefined].includes(data.catalog_mode)||
+        !kp2027ValidList(data.lessons,data.catalog_mode==="rpt93"?93:64)||
+        !kp2027ValidEntries(data.items,data.lessons,data.catalog_mode==="rpt93"?93:64))
      throw Error("Padanan Unit dan PdP Alam dan Manusia belum dapat disahkan.");
-    inventory={lessons:data.lessons,items:data.items};
+    inventory={lessons:data.lessons,items:data.items,catalogMode:data.catalog_mode||"source64"};
    }
    if(revision!==kp2027PilotEpoch||curriculum.value!=="kp2027"||subject.value!==code||year.value!=="1")return;
    kp2027PilotInventory=inventory;
@@ -2155,7 +2157,7 @@ lesson.addEventListener("change",()=>{
    syncRphMaterialsAccess();
    updateSelectionHelp("PdP dipilih. Isi kelas, tarikh, masa dan bilangan murid jika perlu, kemudian tekan Jana Bahan.");
    const selectedEntry=kp2027CurrentEntries().find(e=>e.no===Number(lesson.value));
-   catalogStatus.textContent=(subject.value==="ALAM_KP2027"?"RPH sumber ":"PdP ")+String(selectedEntry.no).padStart(3,"0")+" — "+selectedEntry.tajuk+" • SP "+selectedEntry.sp;
+   catalogStatus.textContent=(subject.value==="ALAM_KP2027"&&kp2027PilotInventory?.catalogMode!=="rpt93"?"RPH sumber ":"PdP ")+String(selectedEntry.no).padStart(3,"0")+" — "+selectedEntry.tajuk+" • SP "+selectedEntry.sp;
   }
   return;
  }
