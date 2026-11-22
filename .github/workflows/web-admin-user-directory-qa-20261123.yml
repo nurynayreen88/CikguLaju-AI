@@ -1,0 +1,38 @@
+name: Web admin user directory privacy and status QA
+on:
+  pull_request:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - 'web/admin_users_web.py'
+      - 'web/web_login_analytics.py'
+      - 'web_v1_email_auth_routes.py'
+      - 'web_v1_static_preview/admin-usage.js'
+      - 'web_v1_static_preview/index.html'
+      - 'tools/run_web_production.py'
+      - 'supabase/migrations/20261123_admin_user_directory_service_role_only.sql'
+      - 'tests/test_web_admin_user_directory_20261123.py'
+      - 'tests/test_web_login_event_capture.py'
+      - 'tests/test_web_login_remember_ui_20261123.py'
+      - '.github/workflows/web-admin-user-directory-qa-20261123.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  directory:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'flask==3.1.3' 'requests==2.32.3' 'gunicorn==23.0.0'
+      - run: python -m py_compile web/admin_users_web.py web/web_login_analytics.py web_v1_email_auth_routes.py tools/run_web_production.py
+      - run: node --check web_v1_static_preview/admin-usage.js
+      - run: python -m unittest discover -s tests -p test_web_admin_user_directory_20261123.py -v
+      - run: python -m unittest discover -s tests -p test_web_login_event_capture.py -v
+      - run: python -m unittest discover -s tests -p test_web_login_remember_ui_20261123.py -v
+      - run: python -m unittest discover -s tests -p test_web_v1_sessions.py -v
