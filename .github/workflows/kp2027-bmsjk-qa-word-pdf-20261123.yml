@@ -12,6 +12,8 @@ on:
       - 'audits/kp2027_bm_sjk_sksp_verified_20261123.json'
       - 'audits/kp2027_bm_sjk_rpt_2027_ab_calendar_unallocated_20261123.json'
       - 'tests/test_kp2027_bm_sjk_rpt_ab_20261123.py'
+      - 'tools/kp2027_bmsjk_rpt_ab_qa.py'
+      - 'tests/test_kp2027_bmsjk_rpt_ab_qa_word_pdf_20261123.py'
       - '.github/workflows/kp2027-bmsjk-qa-word-pdf-20261123.yml'
   workflow_dispatch:
 
@@ -34,10 +36,14 @@ jobs:
           test -f /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
       - name: Validate KPM calendar A/B and 52 proposed PdP without fabricated dates
         run: python -m unittest discover -s tests -p 'test_kp2027_bm_sjk_rpt_ab_20261123.py' -v
+      - name: Test A/B RPT candidate Word/PDF rendering (QA only)
+        run: python -m unittest discover -s tests -p 'test_kp2027_bmsjk_rpt_ab_qa_word_pdf_20261123.py' -v
       - name: Test source integrity, Word/PDF and 52 RPH pairs
         run: python -m unittest discover -s tests -p 'test_kp2027_bmsjk_qa_word_pdf_20261123.py' -v
-      - name: Generate offline QA export of 104 files
+      - name: Generate offline QA export of 104 RPH Word/PDF files
         run: python tools/kp2027_bmsjk_qa_word_pdf.py --out-dir out/bmsjk-qa-hold
+      - name: Generate offline A/B RPT candidate QA export (4 files)
+        run: python tools/kp2027_bmsjk_rpt_ab_qa.py --out-dir out/bmsjk-qa-hold
       - uses: actions/upload-artifact@v4
         with:
           name: KP2027-BMSJK-T1-52-RPH-Word-PDF-QA-HOLD
