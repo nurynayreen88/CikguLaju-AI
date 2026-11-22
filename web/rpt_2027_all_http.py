@@ -419,10 +419,21 @@ def create_all_rpt_blueprint(*,root=ROOT):
             return jsonify({"error":"RPT KP2027 gabungan belum disahkan pada pelayan."}),503
         mimetype=("application/pdf" if fmt=="pdf" else
                   "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
+        paid_cover=_has_paid_access(account)
+        personalized=False
+        if paid_cover:
+            from web.kp2027_year1_rpt_personalize import for_download as personalize_rpt
+            from web.teacher_profile_store import ProfileUnavailable, ProfileValidation
+            try:
+                content,personalized=personalize_rpt(account,subject,fmt,content)
+            except (ProfileUnavailable,ProfileValidation):
+                return jsonify({"error":"RPT dengan identiti sekolah belum dapat disediakan. Sila semak Profil Saya dan cuba lagi."}),503
         response=send_file(BytesIO(content),mimetype=mimetype,as_attachment=True,
                            download_name=filename,conditional=False)
         response.headers["X-RPT-Source-SHA256"]=digest
-        response.headers["X-RPT-Personalization-Allowed"]="0"
+        response.headers["X-RPT-Output-SHA256"]=hashlib.sha256(content).hexdigest()
+        response.headers["X-RPT-Personalization-Allowed"]="1" if paid_cover else "0"
+        response.headers["X-RPT-Personalization-Applied"]="1" if personalized else "0"
         response.headers["X-RPT-Curriculum"]="KP2027-Year1"
         response.headers["X-RPT-QA-Status"]="SEMAKAN-PELAKSANAAN"
         response.headers["X-RPT-Groups"]="A,B"
