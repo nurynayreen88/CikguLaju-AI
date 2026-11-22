@@ -148,8 +148,22 @@ const ctx={
   })[id]??variantRpt},
  async fetch(url,options){
   kpPilotRequests.push({url,options});
-  if(url.endsWith("/matematik/available"))return {ok:true,json:async()=>({groups:{A:[1,2],B:[1]}})};
-  if(url.endsWith("/alam-dan-manusia/available"))return {ok:true,json:async()=>({lessons:[1,2,38]})};
+  if(url.endsWith("/matematik/available"))return {ok:true,json:async()=>({
+   groups:{A:[1,2],B:[1]},
+   items:{
+    A:[{no:1,unit:"Nombor Bulat hingga 100 — Nilai Nombor",tajuk:"Kenal Nombor",sp:"1.1.1"},
+       {no:2,unit:"Nombor Bulat hingga 100 — Nilai Nombor",tajuk:"Kenal Nombor",sp:"1.1.1"}],
+    B:[{no:1,unit:"Nombor Bulat hingga 100 — Nilai Nombor",tajuk:"Kenal Nombor",sp:"1.1.1"}]
+   }
+  })};
+  if(url.endsWith("/alam-dan-manusia/available"))return {ok:true,json:async()=>({
+   lessons:[1,2,38],
+   items:[
+    {no:1,unit:"Diri Saya dan Keluarga",tajuk:"Anggota Badan Saya",sp:"1.1.1"},
+    {no:2,unit:"Diri Saya dan Keluarga",tajuk:"Lagu Anggota Badan",sp:"1.1.2"},
+    {no:38,unit:"Inspirasi Alam",tajuk:"Kehendak Berbeza daripada Keperluan",sp:"4.1.7"}
+   ]
+  })};
   throw Error("Unexpected pilot endpoint: "+url);
  },
  materialPanel:{hidden:true},
@@ -213,26 +227,40 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  subject.value="MATH_KP2027";
  await listeners["subject.change"]();
  assert.equal(kpPilotRequests.at(-1).url,"/api/kp2027/sk/tahun-1/matematik/available");
- assert.equal(unit.hidden,true);
- assert.equal(lesson.hidden,false);
- assert.deepEqual(lesson.options.map(x=>x.value),["","1","2"]);
+ assert.equal(unit.hidden,false);
+ assert.equal(lesson.hidden,true);
+ assert.deepEqual(unit.options.map(x=>x.value),["","Nombor Bulat hingga 100 — Nilai Nombor"]);
  assert.equal(kpPilotGroup.hidden,false);
  assert.equal(kpPilotActions.hidden,true);
  assert.equal(kpPilotWord.disabled,true);
+ unit.value="Nombor Bulat hingga 100 — Nilai Nombor";
+ await listeners["unit.change"]();
+ assert.equal(lesson.hidden,false);
+ assert.deepEqual(lesson.options.map(x=>x.value),["","1","2"]);
+ assert.match(lesson.options[1].label,/^PdP 001 — Kenal Nombor • SP 1[.]1[.]1$/);
  lesson.value="1";
  listeners["lesson.change"]();
  assert.equal(materials.hidden,false);
  assert.equal(kpPilotActions.hidden,true);
  kpPilotGroup.value="B";
  listeners["kp-pilot-group.change"]();
+ assert.equal(lesson.hidden,true);
+ assert.equal(unit.value,"");
+ unit.value="Nombor Bulat hingga 100 — Nilai Nombor";
+ await listeners["unit.change"]();
  assert.deepEqual(lesson.options.map(x=>x.value),["","1"]);
  assert.equal(kpPilotWord.disabled,true);
  subject.value="ALAM_KP2027";
  await listeners["subject.change"]();
  assert.equal(kpPilotRequests.at(-1).url,"/api/kp2027/sk/tahun-1/alam-dan-manusia/available");
- assert.deepEqual(lesson.options.map(x=>x.value),["","1","2","38"]);
+ assert.deepEqual(unit.options.map(x=>x.value),["","Diri Saya dan Keluarga","Inspirasi Alam"]);
+ assert.equal(lesson.hidden,true);
  assert.equal(kpPilotGroup.hidden,true);
  assert.equal(kpPilotActions.hidden,true);
+ unit.value="Inspirasi Alam";
+ await listeners["unit.change"]();
+ assert.deepEqual(lesson.options.map(x=>x.value),["","38"]);
+ assert.match(lesson.options[1].label,/PdP 038 — Kehendak Berbeza daripada Keperluan/);
  lesson.value="38";
  listeners["lesson.change"]();
  assert.equal(materials.hidden,false);
