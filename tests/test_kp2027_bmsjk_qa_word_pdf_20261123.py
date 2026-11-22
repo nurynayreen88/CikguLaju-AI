@@ -73,7 +73,7 @@ class QAOnlyWordPDF(unittest.TestCase):
                 activities=[c for row in document.tables[2].rows for c in row.cells
                             if re.search(r"^Aktiviti [123]:",c.text)]
                 self.assertEqual(len(activities),3)
-                self.assertTrue(all(c.paragraphs[0].runs[0].bold for c in activities))
+                self.assertTrue(all(next(run.bold for run in c.paragraphs[0].runs if run.text.strip()) for c in activities))
                 self.assertTrue("Kelas:" in document.tables[0].cell(0,1).text)
                 self.assertNotIn("_",document.tables[0].cell(0,1).text)
 
