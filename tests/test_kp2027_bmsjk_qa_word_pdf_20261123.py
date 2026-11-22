@@ -110,6 +110,11 @@ class QAOnlyWordPDF(unittest.TestCase):
                 self.assertEqual(entry["status"],"QA_HOLD_NOT_READY")
                 self.assertGreater(entry["bytes"],6000)
                 self.assertTrue((Path(tmp)/entry["name"]).is_file())
+                if entry["name"].endswith(".pdf"):
+                    pages=PdfReader(str(Path(tmp)/entry["name"])).pages
+                    if len(pages)>1:
+                        self.assertGreater(len(squeeze(pages[-1].extract_text() or "")),150,
+                                           "Orphan page in "+entry["name"])
 
 
 if __name__ == "__main__":
