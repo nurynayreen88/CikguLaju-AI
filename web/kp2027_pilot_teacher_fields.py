@@ -91,7 +91,7 @@ def _reflection_candidates(criterion):
     criterion = _clean_success_criterion(criterion)
     return (
         "PdP dilaksanakan mengikut perancangan. Pencapaian murid ditaksir "
-        "berdasarkan kriteria kejayaan: " + criterion + ". "
+        "berdasarkan kriteria kejayaan, iaitu " + criterion[0].lower() + criterion[1:] + ". "
         "Bimbingan susulan diberikan mengikut keperluan.",
         "PdP dilaksanakan mengikut perancangan. Kriteria kejayaan: "
         + criterion + ". Bimbingan susulan mengikut keperluan.",
