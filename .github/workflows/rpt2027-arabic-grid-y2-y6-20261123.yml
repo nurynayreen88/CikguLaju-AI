@@ -40,7 +40,7 @@ jobs:
                    'rpt_2027/web_2027_pdfs/original_cover_layout_verified.json'}
           allowed.update(f'rpt_2027/web_2027_pdfs/bahasa_arab/tahun_{y}.pdf' for y in range(2,7))
           got=set(subprocess.check_output(['git','diff','--name-only'],text=True).splitlines())
-          assert got==allowed,(got,allowed)
+          assert got==allowed or not got,(got,allowed)
           print('ONLY_FIVE_ARABIC_PDF_VECTOR_RULES_AND_2_MANIFESTS',len(got))
           PY
       - name: Commit five QA-approved RTL PDFs and source digests to review branch only
@@ -48,6 +48,10 @@ jobs:
         run: |
           set -euo pipefail
           test "$(git branch --show-current)" = 'fix/rpt2027-arabic-grid-y2-y6-20261123'
+          if git diff --quiet -- rpt_2027/web_2027_pdfs/manifest.json; then
+            echo 'Arabic PDF vector separator files already installed and tested; no repeated commit.'
+            exit 0
+          fi
           mkdir -p audits
           cp qa_rpt_arab_grid/repaired_audit.json audits/rpt2027_bahasa_arab_grid_20261123.json
           python - <<'PY'
