@@ -141,8 +141,7 @@ class UserDirectoryTests(unittest.TestCase):
 
     def test_email_login_recorder_accepts_verified_synthetic_id(self):
         from web.web_login_analytics import record_verified_web_login
-        from tests.test_web_login_event_capture import FakeOpener as LedgerOpener
-        opener = LedgerOpener()
+        opener = FakeOpener()
         self.assertTrue(record_verified_web_login(CONF, EMAIL_ID, opener=opener))
         self.assertEqual(json.loads(opener.requests[0][0].data),
                          {"telegram_user_id": EMAIL_ID, "source": "web"})
