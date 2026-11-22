@@ -1,0 +1,389 @@
+{
+  "version": 1,
+  "source_pdf_sha256": {
+    "MATH": "9fb7007dc8b22027dcc0d2dea4466a8fc1ac7fa8ba4c1fa2c88825a4eb9a5dde",
+    "ALAM": "d0c3dfc7c2e92cc9963b3d6b9a4f66222fc7ecc46397d768c0d43c746c14d3ba"
+  },
+  "sp_labels": {
+    "MATH": {
+      "1.1.1": {
+        "unit": "Nombor Bulat hingga 100 — Nilai Nombor",
+        "tajuk": "Kenal Nombor"
+      },
+      "1.1.2": {
+        "unit": "Nombor Bulat hingga 100 — Nilai Nombor",
+        "tajuk": "Banding Nilai Nombor"
+      },
+      "1.1.3": {
+        "unit": "Nombor Bulat hingga 100 — Nilai Nombor",
+        "tajuk": "Susunan Nombor"
+      },
+      "1.1.4": {
+        "unit": "Nombor Bulat hingga 100 — Nilai Nombor",
+        "tajuk": "Kedudukan Nombor"
+      },
+      "1.2.1": {
+        "unit": "Nombor Bulat hingga 100 — Ikatan Nombor",
+        "tajuk": "Ikatan Nombor Satu Digit"
+      },
+      "2.1.1": {
+        "unit": "Operasi Asas — Tambah dalam Lingkungan 30",
+        "tajuk": "Memahami Operasi Tambah"
+      },
+      "2.1.2": {
+        "unit": "Operasi Asas — Tambah hingga 30",
+        "tajuk": "Tambah Dua Nombor hingga 30"
+      },
+      "2.1.3": {
+        "unit": "Operasi Asas — Tambah hingga 30",
+        "tajuk": "Masalah Harian Operasi Tambah"
+      },
+      "2.2.1": {
+        "unit": "Operasi Asas — Tolak dalam Lingkungan 30",
+        "tajuk": "Memahami Konsep Tolak"
+      },
+      "2.2.2": {
+        "unit": "Operasi Asas — Tolak dalam Lingkungan 30",
+        "tajuk": "Menolak Dua Nombor hingga 30"
+      },
+      "2.2.3": {
+        "unit": "Operasi Asas — Tolak dalam Lingkungan 30",
+        "tajuk": "Selesaikan Masalah Operasi Tolak"
+      },
+      "3.1.1": {
+        "unit": "Wang — Mengenal Wang",
+        "tajuk": "Mengenal Wang Malaysia"
+      },
+      "3.2.1": {
+        "unit": "Wang — Nilai Wang",
+        "tajuk": "Menentukan Nilai Wang"
+      },
+      "3.2.2": {
+        "unit": "Wang — Penukaran Wang",
+        "tajuk": "Menukar Nilai Wang"
+      },
+      "3.2.3": {
+        "unit": "Wang — Perbandingan Nilai",
+        "tajuk": "Membandingkan Nilai Wang"
+      },
+      "4.1.1": {
+        "unit": "Bentuk dan Ruang — Bentuk Dua Dimensi",
+        "tajuk": "Mengenal Bentuk Dua Dimensi"
+      },
+      "4.1.2": {
+        "unit": "Bentuk dan Ruang — Pola Dua Dimensi",
+        "tajuk": "Menyusun Pola Bentuk"
+      },
+      "4.1.3": {
+        "unit": "Bentuk dan Ruang — Gabungan Bentuk",
+        "tajuk": "Mengesan Bentuk dalam Gabungan"
+      },
+      "5.1.1": {
+        "unit": "Masa dan Waktu — Jam",
+        "tajuk": "Menyatakan Masa dalam Jam"
+      },
+      "5.1.2": {
+        "unit": "Masa dan Waktu — Urutan Harian",
+        "tajuk": "Urutan Masa dalam Sehari"
+      },
+      "5.2.1": {
+        "unit": "Masa dan Waktu — Kalendar Masihi",
+        "tajuk": "Membaca Kalendar Masihi"
+      },
+      "6.1.1": {
+        "unit": "Ukuran — Panjang Bukan Piawai",
+        "tajuk": "Mengukur dengan Unit Bukan Piawai"
+      },
+      "6.1.2": {
+        "unit": "Ukuran — Membanding Panjang",
+        "tajuk": "Membanding Panjang Bukan Piawai"
+      },
+      "6.2.1": {
+        "unit": "Ukuran — Unit Panjang",
+        "tajuk": "Mengenal Sentimeter"
+      },
+      "6.2.2": {
+        "unit": "Ukuran — Mengukur Panjang",
+        "tajuk": "Mengukur Panjang dalam Sentimeter"
+      },
+      "6.2.3": {
+        "unit": "Ukuran — Perbandingan Panjang",
+        "tajuk": "Membanding Ukuran Tiga Objek"
+      },
+      "7.1.1": {
+        "unit": "Pengurusan Data — Mengumpul Maklumat",
+        "tajuk": "Mengumpul Maklumat Harian"
+      },
+      "7.1.2": {
+        "unit": "Pengurusan Data — Piktograf",
+        "tajuk": "Memahami Piktograf"
+      },
+      "7.1.3": {
+        "unit": "Pengurusan Data — Membaca Piktograf",
+        "tajuk": "Membaca Maklumat Piktograf"
+      },
+      "7.1.4": {
+        "unit": "Pengurusan Data — Masalah Harian",
+        "tajuk": "Menyelesaikan Masalah Data Harian"
+      }
+    },
+    "ALAM": {
+      "1.1.1": {
+        "unit": "Diri Saya dan Keluarga",
+        "tajuk": "Anggota Badan Saya"
+      },
+      "1.1.2": {
+        "unit": "Diri Saya dan Keluarga",
+        "tajuk": "Lagu Anggota Badan"
+      },
+      "1.1.3": {
+        "unit": "Diri Saya dan Keluarga",
+        "tajuk": "Irama dan Deria"
+      },
+      "1.1.5": {
+        "unit": "Diri Saya dan Keluarga",
+        "tajuk": "Lukis Anggota Deria"
+      },
+      "1.1.6": {
+        "unit": "Diri Saya dan Keluarga",
+        "tajuk": "Bezakan Objek dengan Deria"
+      },
+      "1.1.7": {
+        "unit": "Diri Saya dan Keluarga",
+        "tajuk": "Saya Membesar"
+      },
+      "1.1.8": {
+        "unit": "Diri Saya dan Keluarga",
+        "tajuk": "Tumbesaran dan Nyanyian Keluarga"
+      },
+      "1.1.10": {
+        "unit": "Diri Saya dan Keluarga",
+        "tajuk": "Gerak Mengikut Lirik"
+      },
+      "1.1.11": {
+        "unit": "Diri Saya dan Keluarga",
+        "tajuk": "Kenali Ahli Keluarga"
+      },
+      "1.1.12": {
+        "unit": "Diri Saya dan Keluarga",
+        "tajuk": "Ciri Warisan Dalam Keluarga"
+      },
+      "1.1.13": {
+        "unit": "Diri Saya dan Keluarga",
+        "tajuk": "Ciri Keluarga dan Kasih Sayang"
+      },
+      "1.1.15": {
+        "unit": "Diri Saya dan Keluarga",
+        "tajuk": "Karya Penghargaan untuk Keluarga"
+      },
+      "2.1.1": {
+        "unit": "Segar dan Ceria",
+        "tajuk": "Amalan Menjaga Kesihatan Diri"
+      },
+      "2.1.2": {
+        "unit": "Segar dan Ceria",
+        "tajuk": "Kebersihan Diri"
+      },
+      "2.1.4": {
+        "unit": "Segar dan Ceria",
+        "tajuk": "Nyanyian Kebersihan Diri"
+      },
+      "2.1.5": {
+        "unit": "Segar dan Ceria",
+        "tajuk": "Gerak Laku Mengikut Lirik Kebersihan"
+      },
+      "2.1.6": {
+        "unit": "Segar dan Ceria",
+        "tajuk": "Poster Amalan Kebersihan Diri"
+      },
+      "2.1.7": {
+        "unit": "Segar dan Ceria",
+        "tajuk": "Hidangan Utama dan Kepentingannya"
+      },
+      "2.1.9": {
+        "unit": "Segar dan Ceria",
+        "tajuk": "Merancang Menu Harian"
+      },
+      "2.1.10": {
+        "unit": "Segar dan Ceria",
+        "tajuk": "Membina Model Makanan"
+      },
+      "2.1.11": {
+        "unit": "Segar dan Ceria",
+        "tajuk": "Nyanyian Kepentingan Makanan"
+      },
+      "2.1.12": {
+        "unit": "Segar dan Ceria",
+        "tajuk": "Detik Muzik dan Postur"
+      },
+      "2.1.14": {
+        "unit": "Segar dan Ceria",
+        "tajuk": "Kepentingan Tidur dan Rehat"
+      },
+      "3.1.1": {
+        "unit": "Jaga Diri, Jaga Kita",
+        "tajuk": "Situasi Selamat dan Tidak Selamat"
+      },
+      "3.1.2": {
+        "unit": "Jaga Diri, Jaga Kita",
+        "tajuk": "Situasi Selamat dan Maklumat Peribadi"
+      },
+      "3.1.4": {
+        "unit": "Jaga Diri, Jaga Kita",
+        "tajuk": "Memahami Sentuhan Tidak Selamat dan Tidak Selesa"
+      },
+      "3.1.5": {
+        "unit": "Jaga Diri, Jaga Kita",
+        "tajuk": "Menilai Situasi Sentuhan dengan Berhati-hati"
+      },
+      "3.1.6": {
+        "unit": "Jaga Diri, Jaga Kita",
+        "tajuk": "Berkata Tidak dan Meminta Bantuan"
+      },
+      "3.1.8": {
+        "unit": "Jaga Diri, Jaga Kita",
+        "tajuk": "Lagu dan Sebutan Keselamatan"
+      },
+      "3.1.9": {
+        "unit": "Jaga Diri, Jaga Kita",
+        "tajuk": "Poster Situasi Tidak Selamat"
+      },
+      "3.1.10": {
+        "unit": "Jaga Diri, Jaga Kita",
+        "tajuk": "Pasukan Keselamatan dan Karya"
+      },
+      "3.1.12": {
+        "unit": "Jaga Diri, Jaga Kita",
+        "tajuk": "Pameran Hasil Karya Keselamatan"
+      },
+      "4.1.1": {
+        "unit": "Inspirasi Alam",
+        "tajuk": "Benda Hidup dan Bukan Hidup"
+      },
+      "4.1.2": {
+        "unit": "Inspirasi Alam",
+        "tajuk": "Ciri dan Keperluan Hidupan"
+      },
+      "4.1.4": {
+        "unit": "Inspirasi Alam",
+        "tajuk": "Nyanyian Hidupan di Sekeliling"
+      },
+      "4.1.5": {
+        "unit": "Inspirasi Alam",
+        "tajuk": "Kepentingan Keperluan Asas Hidupan"
+      },
+      "4.1.6": {
+        "unit": "Inspirasi Alam",
+        "tajuk": "Makanan, Air dan Udara Bersih"
+      },
+      "4.1.7": {
+        "unit": "Inspirasi Alam",
+        "tajuk": "Kehendak Berbeza daripada Keperluan"
+      },
+      "4.1.9": {
+        "unit": "Inspirasi Alam",
+        "tajuk": "Bunyi di Sekeliling Saya"
+      },
+      "4.1.10": {
+        "unit": "Inspirasi Alam",
+        "tajuk": "Bagaimana Bunyi Terhasil?"
+      },
+      "4.1.11": {
+        "unit": "Inspirasi Alam",
+        "tajuk": "Suara dan Bunyi Bahan"
+      },
+      "4.1.13": {
+        "unit": "Inspirasi Alam",
+        "tajuk": "Bunyi Bermanfaat dan Memudaratkan"
+      },
+      "4.1.14": {
+        "unit": "Inspirasi Alam",
+        "tajuk": "Menamakan Emosi Kendiri"
+      },
+      "4.1.15": {
+        "unit": "Inspirasi Alam",
+        "tajuk": "Emosi Berbeza dalam Situasi Sama"
+      },
+      "4.1.16": {
+        "unit": "Inspirasi Alam",
+        "tajuk": "Mengurus dan Melakar Emosi"
+      },
+      "4.1.18": {
+        "unit": "Inspirasi Alam",
+        "tajuk": "Nyanyian Lagu Emosi"
+      },
+      "5.1.1": {
+        "unit": "Kraf Cahaya",
+        "tajuk": "Sumber Cahaya di Sekeliling"
+      },
+      "5.1.2": {
+        "unit": "Kraf Cahaya",
+        "tajuk": "Cahaya dan Aktiviti Harian"
+      },
+      "5.1.4": {
+        "unit": "Kraf Cahaya",
+        "tajuk": "Cahaya Peranti Digital dan Mata"
+      },
+      "5.1.5": {
+        "unit": "Kraf Cahaya",
+        "tajuk": "Lagu Tentang Cahaya"
+      },
+      "5.1.6": {
+        "unit": "Kraf Cahaya",
+        "tajuk": "Pergerakan Muzik dan Kraf Cahaya"
+      },
+      "5.1.8": {
+        "unit": "Kraf Cahaya",
+        "tajuk": "Menghasilkan Kraf Berkaitan Cahaya"
+      },
+      "5.2.1": {
+        "unit": "Mercu Tanda",
+        "tajuk": "Mercu Tanda di Kawasan Setempat"
+      },
+      "5.2.2": {
+        "unit": "Mercu Tanda",
+        "tajuk": "Mercu Tanda Malaysia dan Dunia"
+      },
+      "5.2.4": {
+        "unit": "Mercu Tanda",
+        "tajuk": "Lagu Mercu Tanda Malaysia"
+      },
+      "5.2.5": {
+        "unit": "Mercu Tanda",
+        "tajuk": "Melukis Rupa Mercu Tanda Malaysia"
+      },
+      "5.2.6": {
+        "unit": "Mercu Tanda",
+        "tajuk": "Membina dan Menerangkan Model Mercu Tanda"
+      },
+      "5.2.8": {
+        "unit": "Mercu Tanda",
+        "tajuk": "Pameran Model Mercu Tanda Malaysia"
+      },
+      "6.1.1": {
+        "unit": "Pemikir Adiwira",
+        "tajuk": "Kenal Masalah di Sekeliling"
+      },
+      "6.1.2": {
+        "unit": "Pemikir Adiwira",
+        "tajuk": "Idea dan Rancangan Penyelesaian Masalah"
+      },
+      "6.1.4": {
+        "unit": "Pemikir Adiwira",
+        "tajuk": "Hasilkan Produk Adiwira Cilik"
+      },
+      "6.2.1": {
+        "unit": "Pentas Adiwira",
+        "tajuk": "Bentuk Aktiviti Pameran Produk"
+      },
+      "6.2.2": {
+        "unit": "Pentas Adiwira",
+        "tajuk": "Memilih dan Merancang Pembentangan Produk"
+      },
+      "6.2.4": {
+        "unit": "Pentas Adiwira",
+        "tajuk": "Pentas Adiwira Cilik"
+      }
+    }
+  }
+}
