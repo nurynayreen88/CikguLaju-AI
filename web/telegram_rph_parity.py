@@ -182,7 +182,7 @@ def build_layout(data,subject_labels):
             "\n".join(extra))
     if english:
         meta = describe_rows(data["year"], meta, fixed_lesson=data.get("lesson"))
-    return {
+    result = {
         "style":"telegram-native-rph-v1",
         "title":"DAILY LESSON PLAN" if english else "RANCANGAN PENGAJARAN HARIAN",
         "header":[{"label":ENGLISH_LABELS.get(k,k.title()) if english else k.title(),
@@ -211,3 +211,6 @@ def build_layout(data,subject_labels):
                  "Tindakan susulan: ______________________________")},
         ],
     }
+    from web.rph_reflection_universal import personalize_layout
+    personalize_layout(result, teacher, data["subject"])
+    return result
