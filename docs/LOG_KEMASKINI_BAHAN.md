@@ -43,3 +43,9 @@
 - **HOLD / DALAM SEMAKAN.** Sembilan penerangan SK dan 26 penerangan SP disemak padanan teks tepat dengan DK rasmi BM SJK Tahun 1 KPM 2026. Penerangan ini dimasukkan ke dalam semua **52 draf RPH QA** tanpa mengubah tajuk atau aktiviti guru/murid, refleksi, RPT lama, kuota, pengguna atau bahan PI v2. Komponen SP 1.2.2 dikekalkan.
 - Bukti: `audits/kp2027_bm_sjk_sksp_verified_20261123.json` dan ujian `tests/test_kp2027_bm_sjk_sksp_descriptions_20261123.py`. Semua bahan masih `QA_HOLD_NOT_READY`, 0 READY, tidak boleh dimuat turun oleh pengguna.
 - **Baki:** pengesahan RPT tahunan Kumpulan A/B, semakan pedagogi individu, format Word/PDF sebenar, akses login/kuota dan muat turun Web. Kandungan SK/SP sahaja tidak membenarkan READY.
+
+## 23 November 2026 — 52 Word + 52 PDF Bahasa Melayu SJK Tahun 1 (QA terasing)
+
+- **QA_HOLD_NOT_READY:** Penjana Word/PDF luar talian berasingan `tools/kp2027_bmsjk_qa_word_pdf.py` disediakan menggunakan 52 RPH editorial, 9 SK dan 26 SP asal. Dua format berkongsi kandungan yang sama, empat kotak utama A4 dengan jumlah lebar luar yang sama, medan guru kosong tanpa garisan, dan label `Refleksi` sahaja. Tajuk Aktiviti 1/2/3 bold pada baris sendiri. Tiada endpoint Web atau penggunaan kuota.
+- Ujian dan pakej untuk semakan: `tests/test_kp2027_bmsjk_qa_word_pdf_20261123.py`, `.github/workflows/kp2027-bmsjk-qa-word-pdf-20261123.yml`. Artifak GitHub Actions hanyalah **bahan QA 104 fail**, bukan bahan pengguna, dan tidak ditawarkan melalui Web/Telegram.
+- **Baki pintu penerbitan:** semakan visual A4, guru semak isi setiap PdP, lengkapkan medan EMK/KBAT/PAK21 jika disahkan, RPT penuh dengan kalendar A/B, kelulusan pengguna, ujian Web login/kuota/download. **0 READY** sehingga semua pintu dipenuhi. Tiada perubahan bahan lama, PI v2, DB, bayaran atau kawalan akses.
