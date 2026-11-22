@@ -80,6 +80,7 @@ def render_docx(group):
              "Fasa","Tarikh")
     widths=(12,41,76,109,21,14)
     table=doc.add_table(rows=1,cols=6)
+    table.style="Table Grid"
     table.autofit=False
     table.alignment=WD_TABLE_ALIGNMENT.CENTER
     for col,width in zip(table.columns,widths):
