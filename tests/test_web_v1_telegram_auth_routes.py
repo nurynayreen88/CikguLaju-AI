@@ -54,6 +54,33 @@ class TelegramAuthRoutesTests(unittest.TestCase):
             self.assertEqual(self.client.post("/api/auth/telegram/logout").status_code, 200)
             self.assertEqual(self.client.get("/api/auth/telegram/session").status_code, 401)
 
+    def test_telegram_remember_me_extends_only_opted_in_cookie(self):
+        with patch.dict(os.environ, self.config, clear=True):
+            normal = self.client.post("/api/auth/telegram/widget", json=self.payload(12345))
+            self.assertEqual(normal.status_code, 200)
+            self.assertIn("Max-Age=43200", normal.headers["Set-Cookie"])
+            self.assertIn("v1.", normal.headers["Set-Cookie"])
+
+            remembered_payload = self.payload(12345)
+            remembered_payload["remember_me"] = True
+            remembered = self.client.post("/api/auth/telegram/widget",
+                                          json=remembered_payload)
+            self.assertEqual(remembered.status_code, 200)
+            self.assertIn("Max-Age=1209600", remembered.headers["Set-Cookie"])
+            self.assertIn("v2.", remembered.headers["Set-Cookie"])
+            self.assertEqual(self.client.get("/api/auth/telegram/session").status_code, 200)
+
+            invalid_payload = self.payload(12345)
+            invalid_payload["remember_me"] = "yes"
+            self.assertEqual(self.client.post("/api/auth/telegram/widget",
+                                              json=invalid_payload).status_code, 400)
+
+            forged = self.payload(12345)
+            forged["id"] = "99999"
+            forged["remember_me"] = True
+            self.assertEqual(self.client.post("/api/auth/telegram/widget",
+                                              json=forged).status_code, 401)
+
     def test_authenticated_account_returns_entitlements(self):
         with patch.dict(os.environ, self.config, clear=True):
             login = self.client.post("/api/auth/telegram/widget", json=self.payload(12345))
