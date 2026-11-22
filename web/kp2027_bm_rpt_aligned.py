@@ -83,7 +83,7 @@ def _docx(r,fields):
     def para(text,size=9,bold=False):
         p=d.add_paragraph();p.alignment=1;p.paragraph_format.space_after=Pt(3)
         q=p.add_run(text);q.bold=bold;q.font.size=Pt(size);q.font.name='Aptos'
-    para('CIKGULAJU  •  KP2027  •  BAHASA MELAYU SK  •  TAHUN 1',9,True)
+    para('BAHASA MELAYU SK  •  TAHUN 1',9,True)
     para('RANCANGAN PENGAJARAN HARIAN',14,True)
     para(f'KUMPULAN {r["group"]}  •  PdP {r["lesson"]:03d}  •  {r["title"]}',9,True)
     def sh(cell,fill):
@@ -111,7 +111,7 @@ def _docx(r,fields):
       ('Bahan / BBM',r['material']),('Set Induksi',r['induction']),
       ('Aktiviti Utama',None),('Pengukuhan / PBD',r['pbd']),('Penutup',r['closure']),
       ('Pemulihan',r['remedial']),('Pengayaan',r['extension']),
-      ('Refleksi (Auto / Manual)',_reflection(r,fields))]
+      ('Refleksi',_reflection(r,fields))]
     t=d.add_table(rows=len(rows),cols=2);t.autofit=False;t.alignment=WD_TABLE_ALIGNMENT.CENTER
     t.columns[0].width=Cm(4.45);t.columns[1].width=Cm(14.05)
     for j,(label,value) in enumerate(rows):
@@ -126,7 +126,6 @@ def _docx(r,fields):
                 p=c1.paragraphs[0] if i==0 else c1.add_paragraph();q=p.add_run(title);q.bold=True
                 p2=c1.add_paragraph(body);p2.paragraph_format.space_after=Pt(2)
             c1.add_paragraph(r['hint'])
-    para(f'RPT {r["week"]} • Kumpulan {r["group"]} • SEMAKAN PELAKSANAAN',7)
     buffer=BytesIO();d.save(buffer)
     return buffer.getvalue()
 
@@ -147,7 +146,7 @@ def _pdf(r,fields):
       ('Bahan / BBM',r['material']),('Set Induksi',r['induction']),
       ('Aktiviti Utama',None),('Pengukuhan / PBD',r['pbd']),('Penutup',r['closure']),
       ('Pemulihan',r['remedial']),('Pengayaan',r['extension']),
-      ('Refleksi (Auto / Manual)',_reflection(r,fields))]
+      ('Refleksi',_reflection(r,fields))]
     body=''.join('<tr><th width="24%" bgcolor="#F4EDE6">'+raw(k)+'</th><td width="76%">'+(steps if v is None else raw(v))+'</td></tr>' for k,v in rows)
     html=f'''<html><head><style>body{{font-family:Arial,sans-serif;font-size:9pt;color:#253748;}}
     .top{{text-align:center;font-size:8pt;font-weight:bold;margin:0;}}
@@ -158,9 +157,9 @@ def _pdf(r,fields):
     .head th{{background:#f2f5f7;width:11%;}}.head td{{width:39%;}}
     .main th{{background:#f4ede6;width:24%;}}.main td{{width:76%;}}
     .main p{{margin:0 0 4px 0;}}.foot{{font-size:7pt;color:#4a5b6d;margin:6px 0;}}
-    </style></head><body><p class="top">CIKGULAJU • KP2027 • BAHASA MELAYU SK • TAHUN 1</p>
+    </style></head><body><p class="top">BAHASA MELAYU SK • TAHUN 1</p>
     <h1>RANCANGAN PENGAJARAN HARIAN</h1><h2>KUMPULAN {raw(r['group'])} • PdP {r['lesson']:03d} • {raw(r['title'])}</h2>
-    {head}<table width="100%" class="main">{body}</table><p class="foot">RPT {raw(r['week'])} • Kumpulan {raw(r['group'])} • SEMAKAN PELAKSANAAN</p>
+    {head}<table width="100%" class="main">{body}</table>
     </body></html>'''
     out=BytesIO();w=fitz.DocumentWriter(out)
     story=fitz.Story(html)
