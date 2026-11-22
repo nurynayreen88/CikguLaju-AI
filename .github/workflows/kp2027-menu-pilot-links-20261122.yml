@@ -15,6 +15,8 @@ on:
       - 'web/kp2027_pdp_catalog.py'
       - 'web/kp2027_pdp_source_labels_v1.json'
       - 'tests/test_kp2027_pdp_source_labels_20261122.py'
+      - 'tests/test_kp2027_alam_rpt93_source_mapping_20261122.py'
+      - 'audits/kp2027_alam_t1_rpt93_source64_83sp_qa29_20261122.json'
       - 'tests/test_kp2027_menu_pilot_downloads_20261122.py'
       - 'tests/test_kp2027_pilot_teacher_fields_20261122.py'
       - '.github/workflows/kp2027-menu-pilot-links-20261122.yml'
@@ -38,6 +40,7 @@ jobs:
           python -m unittest discover -s tests -p 'test_kp2027_menu_pilot_downloads_20261122.py' -v
           python -m unittest discover -s tests -p 'test_kp2027_pilot_teacher_fields_20261122.py' -v
           python -m unittest discover -s tests -p 'test_kp2027_pdp_source_labels_20261122.py' -v
+          python -m unittest discover -s tests -p 'test_kp2027_alam_rpt93_source_mapping_20261122.py' -v
           python -m unittest discover -s tests -p 'test_kp2027_bm_rph_rpt_aligned_20261122.py' -v
       - name: Compile gated routes and non-destructive form personalization
         run: python -m py_compile web/kp2027_math_canary_web.py web/kp2027_alam_private_web.py web/kp2027_bm_rpt_aligned.py web/kp2027_bm_rph_web.py web/kp2027_pilot_teacher_fields.py web/kp2027_pdp_catalog.py tools/run_web_production.py
