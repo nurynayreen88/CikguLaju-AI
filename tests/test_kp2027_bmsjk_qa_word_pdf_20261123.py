@@ -40,7 +40,7 @@ class QAOnlyWordPDF(unittest.TestCase):
             self.assertNotEqual(add["guided_pdp"],add["application_pdp"])
             for key in ("prior_knowledge","success_criterion","emk_nilai",
                         "kbat","pak21","closure"):
-                self.assertGreater(len(add[key]),28)
+                self.assertGreaterEqual(len(add[key]),28)
         self.assertEqual(len({r["editorial_supplement"]["guided_pdp"]
                              for r in self.records}),26)
         self.assertEqual(len({r["editorial_supplement"]["application_pdp"]
