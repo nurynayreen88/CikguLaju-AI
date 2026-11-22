@@ -59,6 +59,77 @@ class PaymentWebTests(unittest.TestCase):
         self.assertNotIn("private-reference", response.get_data(as_text=True))
         self.assertIn("no-store", response.headers["Cache-Control"])
 
+    def test_admin_payment_inbox_displays_email_not_synthetic_account_id(self):
+        uid = "8000000000000000000"
+        row = {"id": 8, "chat_id": uid, "amount": "20.00", "status": "pending",
+               "proof_telegram_file_id": "private-proof",
+               "proof_received_at": "2026-11-22T15:45:06.89408+00:00"}
+        with patch.dict(os.environ, {"CIKGULAJU_WEB_ADMIN_IDS": "901"}), \
+             patch("web.web_payment_routes._admin_payment_rows", return_value=[row]), \
+             patch("web.admin_usage_web._fetch",
+                   return_value=[{"telegram_user_id": uid, "first_name": None,
+                                  "last_name": None, "username": None}]), \
+             patch("web.web_payment_routes._email_payer_names",
+                   return_value={uid: "teacher@example.com"}) as email_source:
+            unauthenticated = self.client.get("/api/web/admin/payments")
+            self.assertEqual(unauthenticated.status_code, 403)
+            email_source.assert_not_called()
+            with patch("web.web_payment_routes._auth",
+                       return_value=(CONF, 901, None)):
+                response = self.client.get("/api/web/admin/payments")
+        self.assertEqual(response.status_code, 200, response.json)
+        item = response.json["items"][0]
+        self.assertEqual(item["name"], "teacher@example.com")
+        self.assertEqual(item["user_id"], uid)  # hidden immutable DB key
+        self.assertEqual(item["id"], "8")
+        self.assertNotIn("private-proof", response.get_data(as_text=True))
+        email_source.assert_called_once()
+
+    def test_server_only_email_lookup_maps_to_matching_auth_id(self):
+        from web.web_payment_routes import _email_payer_names
+        uid = "8000000000000000000"
+        auth_id = "12345678-1234-4234-9234-123456789012"
+
+        class Reply:
+            status = 200
+            def __init__(self, payload): self.payload = payload
+            def __enter__(self): return self
+            def __exit__(self, *args): return None
+            def read(self, length): return json.dumps(self.payload).encode()
+
+        class Transport:
+            def __init__(self): self.requests = []
+            def open(self, req, timeout):
+                self.requests.append(req)
+                if "/rest/v1/web_email_identities?" in req.full_url:
+                    return Reply([{"telegram_user_id": uid, "auth_user_id": auth_id}])
+                if req.full_url.endswith("/auth/v1/admin/users/" + auth_id):
+                    return Reply({"id": auth_id, "email": "teacher@example.com"})
+                raise AssertionError("Unexpected auth endpoint")
+
+        transport = Transport()
+        with patch("web.admin_usage_web._api_config",
+                   return_value=("https://unit.supabase.co",
+                                 {"apikey": "server-secret-test-only"})):
+            names = _email_payer_names(CONF, [uid], opener=transport)
+        self.assertEqual(names, {uid: "teacher@example.com"})
+        self.assertEqual(len(transport.requests), 2)
+        for req in transport.requests:
+            self.assertEqual(req.get_header("Apikey"), "server-secret-test-only")
+            self.assertNotIn("teacher@example.com", req.full_url)
+        self.assertEqual(_email_payer_names(CONF, [], opener=transport), {})
+
+    def test_email_display_unavailable_does_not_block_payment_review(self):
+        from web.web_payment_routes import _payer_names
+        uid = "8000000000000000000"
+        with patch("web.admin_usage_web._fetch", return_value=[
+             {"telegram_user_id": uid, "first_name": None, "last_name": None,
+              "username": None}]), \
+             patch("web.web_payment_routes._email_payer_names",
+                   side_effect=ProfileUnavailable("Auth unavailable")):
+            names = _payer_names(CONF, [{"chat_id": uid}])
+        self.assertEqual(names[uid], "Akaun e-mel")
+
     def test_admin_receipt_and_review_bind_authorized_admin_and_version(self):
         route = "/api/web/admin/payments/31"
         stamp = "2026-11-14T01:00:00+00:00"
