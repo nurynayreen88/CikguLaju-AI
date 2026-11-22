@@ -93,7 +93,8 @@ class TestKp2027RptYear1(unittest.TestCase):
         self.assertIn('if(rptKP2027Choice(selection))',page)
         self.assertIn('rptWordLink.href=wordUrl',page)
         self.assertIn('window.downloadCikguLajuRPT(selection.item.code',page)
-        self.assertIn('Kumpulan A atau B dahulu',page)
+        self.assertIn('Satu RPT mengandungi Kumpulan A dan B',page)
+        self.assertIn('/api/rpt/2027/kp2027/tahun-1/gabungan/',page)
         self.assertNotIn('year.year===1||year.coming_soon',page)
 
 
