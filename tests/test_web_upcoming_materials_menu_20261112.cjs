@@ -217,11 +217,12 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  assert.equal(lesson.hidden,false);
  assert.deepEqual(lesson.options.map(x=>x.value),["","1","2"]);
  assert.equal(kpPilotGroup.hidden,false);
- assert.equal(kpPilotActions.hidden,false);
+ assert.equal(kpPilotActions.hidden,true);
  assert.equal(kpPilotWord.disabled,true);
  lesson.value="1";
  listeners["lesson.change"]();
- assert.equal(kpPilotWord.disabled,false);
+ assert.equal(materials.hidden,false);
+ assert.equal(kpPilotActions.hidden,true);
  kpPilotGroup.value="B";
  listeners["kp-pilot-group.change"]();
  assert.deepEqual(lesson.options.map(x=>x.value),["","1"]);
@@ -231,7 +232,10 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  assert.equal(kpPilotRequests.at(-1).url,"/api/kp2027/sk/tahun-1/alam-dan-manusia/available");
  assert.deepEqual(lesson.options.map(x=>x.value),["","1","2","38"]);
  assert.equal(kpPilotGroup.hidden,true);
- assert.equal(kpPilotActions.hidden,false);
+ assert.equal(kpPilotActions.hidden,true);
+ lesson.value="38";
+ listeners["lesson.change"]();
+ assert.equal(materials.hidden,false);
  assert.equal(catalogueCalls.length,0);
  curriculum.value="sjkc";
  listeners["curriculum.change"]();
