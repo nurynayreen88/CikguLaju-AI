@@ -2559,9 +2559,11 @@ function rptKP2027Url(entry,fmt){
    rptKp2027Group.value+"."+fmt;
 }
 function rptCanDownload(entry){
- if(!entry||entry.year.pdf_ready!==true||entry.year.download_enabled!==true)return false;
- if(entry.year.year===1)return rptKP2027Url(entry,"pdf")!==null;
- return entry.year.year>1;
+ if(!entry)return false;
+ const {year}=entry;
+ if(!(year.pdf_ready===true&&year.download_enabled===true))return false;
+ if(year.year===1)return rptKP2027Url(entry,"pdf")!==null;
+ return year.year>1;
 }
 function rptWordUrl(entry){
  if(rptKP2027Choice(entry)){
