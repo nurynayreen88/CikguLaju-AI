@@ -139,6 +139,7 @@ b.addEventListener('click',async()=>{if(l.disabled||!l.value)return;b.disabled=t
 def create_blueprint():
     from flask import Blueprint,current_app,jsonify,make_response,request,send_file
     from web.rph_delivery_quota import authorize_rendered_document,has_active_paid_access
+    from web.kp2027_pilot_teacher_fields import EXTRA_FIELDS, TeacherFieldError, personalize_approved_rph
     from web_v1_telegram_auth_routes import COOKIE,_config,_lookup
     from web_v1_sessions import verify_session_ticket
 
@@ -190,8 +191,9 @@ def create_blueprint():
         if not request.is_json or not 0<(request.content_length or 0)<=1024:
             return denied('Pilihan Lesson tidak sah.',400,'INVALID_REQUEST')
         payload=request.get_json(silent=True)
-        if not isinstance(payload,dict) or set(payload)!={'lesson','format'}:
-            return denied('Pilihan Lesson tidak lengkap.',400,'INVALID_SELECTION')
+        if (not isinstance(payload,dict) or not {'lesson','format'}.issubset(payload)
+                or set(payload)-{'lesson','format'}-EXTRA_FIELDS):
+            return denied('Pilihan Lesson atau maklumat PdP tidak lengkap.',400,'INVALID_SELECTION')
         try:lesson,fmt=valid_selection(payload['lesson'],payload['format'])
         except ValueError:return denied('Lesson belum tersedia.',404,'LESSON_NOT_AVAILABLE')
         config,account,error=account_for_request()
@@ -203,6 +205,10 @@ def create_blueprint():
             return denied('10 janaan percuma telah habis. Aktifkan langganan.',403,'FREE_TRIAL_EXHAUSTED')
         try:document=fetch_private_document(config,lesson,fmt)
         except PilotUnavailable:return denied('RPH masih dalam semakan atau belum tersedia.',503,'ALAM_UNAVAILABLE')
+        try:
+            document=personalize_approved_rph(document,fmt,{key:payload[key] for key in EXTRA_FIELDS if key in payload})
+        except TeacherFieldError as exc:
+            return denied(str(exc),400,'INVALID_TEACHER_FIELDS')
         remaining=None
         if not paid:
             try:charged=authorize_rendered_document(account,account['telegram_user_id'],document,
