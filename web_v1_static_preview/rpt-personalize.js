@@ -277,7 +277,7 @@
         "Menyediakan RPT 2027. Identiti sekolah hanya dicetak untuk akaun berbayar aktif…";
       try{
         const status=await downloadWithOriginalCover(code,year,openedViewer,mobileRequest);
-        if(output)output.textContent=(status.delivery==="phone-tab-link"?"PDF siap pada tab baharu. Tekan Simpan PDF RPT di tab itu. ":status.delivery==="phone-inline-link"?"PDF siap. Tekan Simpan PDF RPT di bawah untuk menyimpan. ":"PDF RPT berjaya dimuat turun. ")+
+        if(output)output.textContent="PDF RPT berjaya dimuat turun. "+
           (status.personalized
            ? "Muka depan asal diisi untuk akaun berbayar aktif, tiada halaman tambahan."+
              ((!status.hasLogo||!status.hasSchool||!status.hasTeacher)
