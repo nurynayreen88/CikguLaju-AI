@@ -16,14 +16,21 @@ class TestPilotNavigation(unittest.TestCase):
         self.assertIn('showStep(subject,true)', selector)
         self.assertNotIn('akan datang.', selector)
 
-    def test_subject_opens_same_origin_private_pages_no_auto_download(self):
-        section = PAGE[PAGE.index('subject.addEventListener("change",async()=>{'):][:1900]
+    def test_subject_stays_on_same_page_with_private_lessons_and_download(self):
+        section = PAGE[PAGE.index('subject.addEventListener("change",async()=>{'):][:2700]
         self.assertIn('if(curriculum.value==="kp2027")', section)
-        self.assertIn('MATH_KP2027:"/kp2027/tahun-1/matematik"', section)
-        self.assertIn('ALAM_KP2027:"/kp2027/tahun-1/alam-dan-manusia"', section)
-        self.assertIn('catalogStatus.replaceChildren(link)', section)
+        self.assertIn('fetch(route+"/available"', section)
+        self.assertIn('kp2027DisplayLessons()', section)
+        self.assertNotIn('Buka pilihan Lesson dan Download', section)
         self.assertNotIn('window.location.assign(', section)
-        self.assertNotIn('fetch(', section)
+        self.assertIn('id="kp2027-pilot-downloads" hidden', PAGE)
+        self.assertIn('id="kp2027-pilot-group" hidden disabled', PAGE)
+        self.assertIn('id="kp2027-pilot-word"', PAGE)
+        self.assertIn('id="kp2027-pilot-pdf"', PAGE)
+        self.assertIn('MATH_KP2027:"/api/kp2027/sk/tahun-1/matematik"', PAGE)
+        self.assertIn('ALAM_KP2027:"/api/kp2027/sk/tahun-1/alam-dan-manusia"', PAGE)
+        self.assertIn('body:JSON.stringify(payload)', PAGE)
+        self.assertIn('credentials:"same-origin"', PAGE)
 
     def test_pilot_downloads_still_require_private_access_and_approval(self):
         self.assertIn("CIKGULAJU_KP2027_ALAM_CANARY_ENABLED", ALAM)
