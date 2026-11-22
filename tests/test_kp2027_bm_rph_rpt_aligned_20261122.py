@@ -82,7 +82,7 @@ class TestBmKp2027Rph(TestCase):
                     finally:
                         pdf.close()
                 from unicodedata import normalize
-                text=normalize("NFKC",text)  # PDF text extraction may use the ﬂ ligature.
+                text=re.sub(r"\\s+"," ",normalize("NFKC",text))  # Normalize PDF ligatures and wrapped labels.
                 for forbidden in ("Refleksi (Auto / Manual)", "SEMAKAN PELAKSANAAN",
                                   "RPT M", "CIKGULAJU • KP2027"):
                     self.assertNotIn(forbidden,text)
