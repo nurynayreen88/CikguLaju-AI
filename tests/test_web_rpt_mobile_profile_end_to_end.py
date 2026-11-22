@@ -83,6 +83,7 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
                 return route.fulfill(status=200,content_type="application/pdf",
                     headers={"X-RPT-Source-SHA256":"0"*64 if bad_hash else entry["sha256"],
                              "Cache-Control":"no-store, private",
+                             "Content-Disposition":'attachment; filename="CIKGULAJU_RPT_PENDIDIKAN_ISLAM_TAHUN_4_2027_DRAF.pdf"',
                              "X-RPT-Personalization-Allowed":"1" if paid else "0"},
                     body=ORIGINAL)
             # Unrelated preview/analytics assets are not used in this test.
@@ -121,12 +122,13 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
                 # The FIRST tap downloads the final, verified file directly.
                 # There must be no second "Simpan PDF" button or popup.
                 with page.expect_download(timeout=30000) as item:
-                    page.locator("#rpt-download").tap()
+                    page.locator("#rpt-download" if paid else "#rpt-download-mobile").tap()
                 downloaded=item.value
-                page.wait_for_function(
-                    "() => document.querySelector('#rpt-status').textContent.includes('PDF RPT berjaya dimuat turun')",
-                    timeout=30000
-                )
+                if paid:
+                    page.wait_for_function(
+                        "() => document.querySelector('#rpt-status').textContent.includes('PDF RPT berjaya dimuat turun')",
+                        timeout=30000
+                    )
                 data=Path(downloaded.path()).read_bytes()
                 output={
                     "bytes":len(data),
@@ -142,7 +144,7 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
                     self.assertIn("PENDIDIKAN_ISLAM_TAHUN_4_2027_ISI_PROFIL.pdf",output["filename"])
                 else:
                     self.assertEqual(output["sha"],entry["sha256"])
-                    self.assertIn("PENDIDIKAN_ISLAM_TAHUN_4_2027_PERCUMA.pdf",output["filename"])
+                    self.assertIn("PENDIDIKAN_ISLAM_TAHUN_4_2027_DRAF.pdf",output["filename"])
             self.assertEqual(len(context.pages),1)
             self.assertEqual(page.locator("#rpt-prepared-manual-link").count(),0)
             if bad_hash or not paid:
