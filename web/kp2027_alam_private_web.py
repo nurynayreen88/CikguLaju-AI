@@ -140,6 +140,7 @@ def create_blueprint():
     from flask import Blueprint,current_app,jsonify,make_response,request,send_file
     from web.rph_delivery_quota import authorize_rendered_document,has_active_paid_access
     from web.kp2027_pilot_teacher_fields import EXTRA_FIELDS, TeacherFieldError, personalize_approved_rph
+    from web.kp2027_pdp_catalog import alam_approved_items
     from web_v1_telegram_auth_routes import COOKIE,_config,_lookup
     from web_v1_sessions import verify_session_ticket
 
@@ -180,22 +181,25 @@ def create_blueprint():
         if os.environ.get(FEATURE_FLAG)!='1':return denied('Bahan Alam dan Manusia belum diaktifkan.',503,'ALAM_DISABLED')
         config,account,error=account_for_request()
         if error is not None:return error
-        try:lessons=fetch_approved_lessons(config)
-        except PilotUnavailable:return denied('Senarai Lesson belum tersedia. Cuba lagi.',503,'ALAM_INVENTORY_UNAVAILABLE')
-        return jsonify({'lessons':lessons,'source':'verified-private-kp2027-alam-v10'})
+        try:
+            lessons=fetch_approved_lessons(config)
+            items=alam_approved_items(lessons,CATALOG['items'])
+        except (PilotUnavailable,ValueError,KeyError):
+            return denied('Senarai PdP belum tersedia. Cuba lagi.',503,'ALAM_INVENTORY_UNAVAILABLE')
+        return jsonify({'lessons':lessons,'items':items,'source':'verified-private-kp2027-alam-v10'})
 
     @bp.post('/api/kp2027/sk/tahun-1/alam-dan-manusia/download')
     def download():
         if os.environ.get(FEATURE_FLAG)!='1':return denied('Penerbitan Alam dan Manusia belum diaktifkan.',503,'ALAM_DISABLED')
         if request.headers.get('Origin')!=ORIGIN:return denied('Permintaan mestilah daripada Web CikguLaju.',403,'ORIGIN_REQUIRED')
         if not request.is_json or not 0<(request.content_length or 0)<=1024:
-            return denied('Pilihan Lesson tidak sah.',400,'INVALID_REQUEST')
+            return denied('Pilihan PdP tidak sah.',400,'INVALID_REQUEST')
         payload=request.get_json(silent=True)
         if (not isinstance(payload,dict) or not {'lesson','format'}.issubset(payload)
                 or set(payload)-{'lesson','format'}-EXTRA_FIELDS):
-            return denied('Pilihan Lesson atau maklumat PdP tidak lengkap.',400,'INVALID_SELECTION')
+            return denied('Pilihan PdP atau maklumat PdP tidak lengkap.',400,'INVALID_SELECTION')
         try:lesson,fmt=valid_selection(payload['lesson'],payload['format'])
-        except ValueError:return denied('Lesson belum tersedia.',404,'LESSON_NOT_AVAILABLE')
+        except ValueError:return denied('PdP belum tersedia.',404,'LESSON_NOT_AVAILABLE')
         config,account,error=account_for_request()
         if error is not None:return error
         paid=has_active_paid_access(account)
