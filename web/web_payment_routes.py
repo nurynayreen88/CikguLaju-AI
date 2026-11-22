@@ -195,13 +195,31 @@ def _validate_receipt(content, mime):
     raise ValueError("Fail resit tidak sepadan dengan formatnya")
 
 
+def _receipt_destinations(uid):
+    """Real Telegram IDs are below 10^18; the email-only ID sequence is above.
+
+    The email identity RPC rejects real linked Telegram IDs >= 10^18.
+    Deliver synthetic-account receipts only to explicit Web admin chat IDs.
+    """
+    if type(uid) is not int or not 0 < uid < 2**63:
+        raise ProfileUnavailable("Akaun tidak sah")
+    if uid < 10**18:
+        return [uid]
+    from web.admin_usage_web import allowed_admin_ids
+    admins = sorted(i for i in allowed_admin_ids()
+                    if type(i) is int and 0 < i < 10**18)
+    if not admins:
+        raise ProfileUnavailable("Penerima resit admin belum dikonfigurasi")
+    # Bound worst-case upload time below the Web worker timeout.
+    return admins[:2]
+
+
 def _telegram_document(conf, uid, raw, ext, *, opener=None):
-    """Telegram stores the proof as its own immutable file_id, not public Storage."""
+    """Save proof using the production bot, never into a synthetic email chat."""
     token=os.environ.get("CIKGULAJU_WEB_BOT_TOKEN","")
     if not isinstance(token,str) or not re.fullmatch(r"[0-9]{5,15}:[A-Za-z0-9_-]{20,}",token):
         raise ProfileUnavailable("Sambungan resit ke bot tidak disahkan")
-    if type(uid) is not int or uid<1:
-        raise ProfileUnavailable("Akaun tidak sah")
+    destinations=_receipt_destinations(uid)
     boundary="cikgulajuweb"+uuid.uuid4().hex
     filename="CikguLaju_Resit_Web"+ext
     mime=next(k for k,v in CONTENT_TYPES.items() if v==ext)
@@ -210,30 +228,77 @@ def _telegram_document(conf, uid, raw, ext, *, opener=None):
             name+"\"\r\n\r\n"+value+"\r\n").encode("utf-8"))
     header=(("--"+boundary+"\r\nContent-Disposition: form-data; name=\"document\"; filename=\""+
         filename+"\"\r\nContent-Type: "+mime+"\r\n\r\n").encode("utf-8"))
-    data=(field("chat_id",str(uid))
-          +field("caption","Resit bayaran melalui Web CikguLaju. Permohonan masih perlu pengesahan admin.")
-          +header+raw+b"\r\n"+("--"+boundary+"--\r\n").encode())
     url="https://api.telegram.org/bot"+token+"/sendDocument"
-    req=Request(url,method="POST",data=data,headers={
-        "Content-Type":"multipart/form-data; boundary="+boundary,
-        "Content-Length":str(len(data)), "Accept":"application/json"})
+    client=opener or build_opener(HTTPSHandler(),NoRedirect())
+    for destination in destinations:
+        caption=("Resit Web CikguLaju untuk akaun "+str(uid)+
+                 ". Belum diluluskan; tunggu rekod Pending di Panel Admin."
+                 if uid >= 10**18 else
+                 "Resit bayaran melalui Web CikguLaju. Permohonan masih perlu pengesahan admin.")
+        data=(field("chat_id",str(destination))+field("caption",caption)
+              +header+raw+b"\r\n"+("--"+boundary+"--\r\n").encode())
+        req=Request(url,method="POST",data=data,headers={
+            "Content-Type":"multipart/form-data; boundary="+boundary,
+            "Content-Length":str(len(data)), "Accept":"application/json"})
+        try:
+            with client.open(req,timeout=9 if uid >= 10**18 else 28) as resp:
+                if resp.status != 200:
+                    continue
+                reply=json.loads(resp.read(MAX_REPLY+1))
+        except (HTTPError,URLError,OSError,ValueError,TypeError):
+            continue
+        item=reply.get("result") if isinstance(reply,dict) and reply.get("ok") is True else None
+        document=item.get("document") if isinstance(item,dict) else None
+        if (not isinstance(document,dict) or not document.get("file_id")
+                or type(item.get("message_id")) is not int
+                or item.get("chat",{}).get("id") != destination):
+            continue
+        return {
+            "file_id":str(document["file_id"]),
+            "unique_id":str(document.get("file_unique_id") or ""),
+            "message_id":item["message_id"],
+            "mime":str(document.get("mime_type") or mime)[:100],
+            "admin_chat_id":destination if uid >= 10**18 else None,
+        }
+    raise ProfileUnavailable(
+        "Resit belum dapat disimpan. Jangan bayar lagi; hubungi admin dengan resit asal.")
+
+
+def _notify_email_admin_review(uid, request_id, proof, *, opener=None):
+    """Reply to the admin receipt with Pending ID; never auto-approve a payment."""
+    from web.admin_usage_web import allowed_admin_ids
+    admin_id=proof.get("admin_chat_id") if isinstance(proof,dict) else None
+    receipt_message_id=proof.get("message_id") if isinstance(proof,dict) else None
+    if (type(uid) is not int or not 10**18 <= uid < 2**63
+            or type(request_id) is not int or not 0 < request_id < 10**18
+            or type(admin_id) is not int or admin_id not in allowed_admin_ids()
+            or type(receipt_message_id) is not int or receipt_message_id <= 0):
+        raise ProfileUnavailable("Makluman resit admin tidak sah")
+    token=os.environ.get("CIKGULAJU_WEB_BOT_TOKEN","")
+    if not isinstance(token,str) or not re.fullmatch(r"[0-9]{5,15}:[A-Za-z0-9_-]{20,}",token):
+        raise ProfileUnavailable("Sambungan Telegram admin belum tersedia")
+    body=json.dumps({
+        "chat_id":str(admin_id),
+        "reply_to_message_id":receipt_message_id,
+        "text":("Resit RM20 Web CikguLaju direkod sebagai Pending #"+
+                str(request_id)+".\nID akaun: "+str(uid)+
+                "\nBuka Panel Admin > Pending Bayaran. Semak transaksi sebenar sebelum meluluskan."),
+    },separators=(",",":")).encode("utf-8")
+    req=Request("https://api.telegram.org/bot"+token+"/sendMessage",
+                method="POST",data=body,
+                headers={"Content-Type":"application/json","Accept":"application/json"})
     try:
-        with (opener or build_opener(HTTPSHandler(),NoRedirect())).open(req,timeout=28) as resp:
+        with (opener or build_opener(HTTPSHandler(),NoRedirect())).open(req,timeout=9) as resp:
             if resp.status != 200:
-                raise ProfileUnavailable("Resit gagal dihantar ke Telegram")
+                raise ProfileUnavailable("Telegram belum menerima makluman admin")
             reply=json.loads(resp.read(MAX_REPLY+1))
-    except (HTTPError,URLError,OSError,ValueError,TypeError):
-        raise ProfileUnavailable("Resit tidak dapat disimpan oleh Telegram. Pastikan bot pernah dibuka.") from None
-    item=reply.get("result") if isinstance(reply,dict) and reply.get("ok") is True else None
-    document=item.get("document") if isinstance(item,dict) else None
-    if (not isinstance(document,dict) or not document.get("file_id")
-            or type(item.get("message_id")) is not int or item.get("chat",{}).get("id")!=uid):
-        raise ProfileUnavailable("Telegram belum mengesahkan penyimpanan resit")
-    return {
-        "file_id":str(document["file_id"]),
-        "unique_id":str(document.get("file_unique_id") or ""),
-        "message_id":item["message_id"],"mime":str(document.get("mime_type") or mime)[:100],
-    }
+    except (HTTPError,URLError,OSError,TypeError,ValueError):
+        raise ProfileUnavailable("Makluman admin belum disahkan") from None
+    result=reply.get("result") if isinstance(reply,dict) and reply.get("ok") is True else None
+    if (not isinstance(result,dict) or result.get("chat",{}).get("id") != admin_id
+            or type(result.get("message_id")) is not int):
+        raise ProfileUnavailable("Makluman admin belum disahkan")
+    return True
 
 
 def _notify_telegram_admin_review(uid, request_id, *, opener=None):
@@ -377,7 +442,9 @@ def payment_submit():
         # Otherwise the user could assume the receipt was lost and pay again.
         notified = False
         try:
-            notified = _notify_telegram_admin_review(uid, rid)
+            notified = (_notify_email_admin_review(uid, rid, proof)
+                        if uid >= 10**18 else
+                        _notify_telegram_admin_review(uid, rid))
         except Exception as exc:
             print("WEB PAYMENT ADMIN NOTIFICATION unavailable:",
                   type(exc).__name__, flush=True)
