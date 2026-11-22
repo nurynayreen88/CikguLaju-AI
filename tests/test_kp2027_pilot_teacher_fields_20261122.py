@@ -189,11 +189,16 @@ class TeacherFields(unittest.TestCase):
         with self.assertRaises(TeacherFieldError):
             personalize_approved_rph(invalid, "pdf", {"teacher_class": "1 Bestari"})
 
-    def test_manual_reflection_longer_than_one_page_box_fails_before_download(self):
-        with self.assertRaises(TeacherFieldError):
-            personalize_approved_rph(pdf_fixture(), "pdf", {
-                "reflection_mode": "manual", "reflection": ("Murid memerlukan bimbingan susulan berstruktur dan pemantauan khusus.\n" * 6).strip()
-            })
+    def test_manual_reflection_fits_in_expanded_box_without_clipping(self):
+        import fitz
+        reflection=("Murid memerlukan bimbingan susulan berstruktur dan pemantauan khusus.\n" * 6).strip()
+        rendered=personalize_approved_rph(pdf_fixture(), "pdf", {
+            "reflection_mode": "manual", "reflection": reflection
+        })
+        with fitz.open(stream=rendered,filetype="pdf") as doc:
+            self.assertEqual(doc.page_count,1)
+            self.assertEqual(doc[0].get_text().count("Murid memerlukan bimbingan"),6)
+            self.assertNotIn("Catatan asal selepas PdP.",doc[0].get_text())
 
 
     def test_alam_pdf_reflection_uses_full_cell_without_overlap_and_correct_action(self):
@@ -224,7 +229,7 @@ class TeacherFields(unittest.TestCase):
         page.insert_text((159, 612), "BARIS ASAL KEDUA", fontsize=8)
         page.insert_text((38, 660), "Rujukan: DK Alam dan Manusia", fontsize=8)
         page.insert_text((170, 824), "CIKGULAJU • KP2027 TAHUN 1 • Footer lama", fontsize=8)
-        self.assertEqual(_pdf_success_criterion(page), criterion)
+        self.assertEqual(_pdf_success_criterion(page), criterion.rstrip("."))
         self.assertIn("anggota tubuh", _reflection_candidates(criterion)[0])
         self.assertNotIn("gambar makanan", _reflection_candidates(criterion)[0])
         source=d.tobytes(); d.close()
