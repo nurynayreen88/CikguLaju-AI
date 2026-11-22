@@ -103,7 +103,7 @@ def _reflection_candidates(criterion):
 def _word_success_criterion(document):
     rows = [
         row for table in document.tables for row in table.rows
-        if len(row.cells) >= 2 and "Kriteria Kejayaan" in row.cells[0].text
+        if len(row.cells) >= 2 and " ".join(row.cells[0].text.split()) == "Kriteria Kejayaan"
     ]
     if len(rows) != 1:
         raise TeacherFieldError("Kriteria kejayaan RPH Word tidak ditemukan.")
