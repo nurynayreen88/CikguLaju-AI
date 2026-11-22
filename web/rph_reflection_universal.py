@@ -85,6 +85,9 @@ def personalize_layout(layout, teacher, subject):
     rows=[row for row in footer if isinstance(row,dict) and _key(row.get("label")) in REFLECTION]
     if len(rows)!=1:
         return False
+    # Auto/Manual selects the Web input mode; it is never a printed label.
+    if _key(rows[0].get("label")) == "refleksi auto manual":
+        rows[0]["label"] = "Refleksi"
     if teacher.get("reflection"):
         rows[0]["value"]=teacher["reflection"]
         return True
@@ -97,24 +100,67 @@ def personalize_layout(layout, teacher, subject):
 
 def _docx_rewrite(original, subject):
     from docx import Document
-    source=Document(BytesIO(original))
-    named=[]
+    from docx.enum.table import WD_ROW_HEIGHT_RULE
+
+    source = Document(BytesIO(original))
+    named = []
+    reflection_rows = []
     for table in source.tables:
         for row in table.rows:
-            if len(row.cells)>=2:
-                named.append((_key(row.cells[0].text),row.cells[1]))
-    target=[c for name,c in named if name in REFLECTION]
-    if len(target)!=1:
+            if len(row.cells) >= 2:
+                name = _key(row.cells[0].text)
+                named.append((name, row.cells[1]))
+                if name in REFLECTION:
+                    reflection_rows.append(row)
+    if len(reflection_rows) != 1:
         return original
-    criterion=""
-    for labels in (CRITERIA,OBJECTIVES):
-        opts=[c.text for name,c in named if name in labels]
-        if len(opts)==1 and 12<=len(opts[0].strip())<=380:
-            criterion=_clean(opts[0]);break
+    criterion = ""
+    for labels in (CRITERIA, OBJECTIVES):
+        opts = [cell.text for name, cell in named if name in labels]
+        if len(opts) == 1 and 12 <= len(opts[0].strip()) <= 380:
+            criterion = _clean(opts[0])
+            break
     if not criterion:
         return original
-    target[0].text=candidates(criterion,subject)[0]
-    out=BytesIO();source.save(out)
+
+    row = reflection_rows[0]
+    label_cell, value_cell = row.cells[0], row.cells[1]
+    # Preserve the label's original font/bold/colour and its shaded cell.
+    if _key(label_cell.text) == "refleksi auto manual":
+        label_runs = [run for p in label_cell.paragraphs for run in p.runs]
+        if not label_runs:
+            return original
+        label_runs[0].text = "Refleksi"
+        for run in label_runs[1:]:
+            run.text = ""
+
+    # Editing the original run (instead of cell.text) preserves font, size,
+    # paragraph spacing, alignment and runs in this verified table template.
+    paragraphs = value_cell.paragraphs
+    if not paragraphs:
+        return original
+    text = candidates(criterion, subject)[0]
+    first = paragraphs[0]
+    if first.runs:
+        first.runs[0].text = text
+        for run in first.runs[1:]:
+            run.text = ""
+    else:
+        first.add_run(text)
+    for paragraph in paragraphs[1:]:
+        # Extra paragraphs used only for old reflection wording may be safely
+        # dropped; never remove drawings or images from an unknown template.
+        if paragraph._element.xpath('.//w:drawing|.//w:object|.//w:pict'):
+            return original
+        paragraph._element.getparent().remove(paragraph._element)
+
+    # A historical fixed-height blank reflection area must not force a large
+    # empty box or clip a longer manual note in a Word copy.
+    if row.height is not None and row.height.pt >= 72:
+        row.height = None
+        row.height_rule = WD_ROW_HEIGHT_RULE.AUTO
+    out = BytesIO()
+    source.save(out)
     return out.getvalue()
 
 
@@ -187,6 +233,23 @@ def _pdf_rewrite(original, subject):
         if chosen is None:
             return original
         page.add_redact_annot(reflection,fill=(1,1,1),cross_out=False)
+        # Strip the UI mode suffix only when the existing verified PDF grid
+        # proves it lies inside the reflection label cell, not in the lesson.
+        label_anchors = [
+            rect for rect in page.search_for("Refleksi")
+            if rect.x0 < W * 0.35
+            and reflection.y0 - 4 <= rect.y0 <= reflection.y1 + 4
+        ]
+        if len(label_anchors) == 1:
+            suffixes = [
+                rect for phrase in ("(Auto / Manual)", "(Automatik / Manual)")
+                for rect in page.search_for(phrase)
+                if abs(rect.y0 - label_anchors[0].y0) < 3
+                and label_anchors[0].x1 <= rect.x0 + 1
+                and rect.x1 < reflection.x0 - 4
+            ]
+            if len(suffixes) == 1:
+                page.add_redact_annot(suffixes[0], fill=None, cross_out=False)
         page.apply_redactions(images=0,graphics=0,text=0)
         if page.insert_textbox(reflection,chosen[0],fontname="helv",
                                fontsize=chosen[1],lineheight=1.03)<0:
