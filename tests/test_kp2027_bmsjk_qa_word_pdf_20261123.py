@@ -29,6 +29,27 @@ class QAOnlyWordPDF(unittest.TestCase):
     def test_never_import_production_api_or_change_release_gate(self):
         self.assertEqual(len(self.records), 52)
         self.assertTrue(all(r["status"] == "QA_HOLD_NOT_READY" for r in self.records))
+        self.assertEqual(len({r["sp_code"] for r in self.records}),26)
+        self.assertEqual(len({r["proposed_pdp"] for r in self.records}),52)
+        for r in self.records:
+            self.assertEqual(r["status"],"QA_HOLD_NOT_READY")
+            add=r["editorial_supplement"]
+            self.assertEqual(len(add),8)
+            self.assertGreater(len(add["guided_pdp"]),90)
+            self.assertGreater(len(add["application_pdp"]),90)
+            self.assertNotEqual(add["guided_pdp"],add["application_pdp"])
+            for key in ("prior_knowledge","success_criterion","emk_nilai",
+                        "kbat","pak21","closure"):
+                self.assertGreater(len(add[key]),28)
+        self.assertEqual(len({r["editorial_supplement"]["guided_pdp"]
+                             for r in self.records}),26)
+        self.assertEqual(len({r["editorial_supplement"]["application_pdp"]
+                             for r in self.records}),26)
+        self.assertEqual(
+            self.records[8]["sp_components"],
+            ["ucapan selamat; ucapan penghargaan; permohonan maaf"]
+        )
+
         source = (ROOT / "tools/kp2027_bmsjk_qa_word_pdf.py").read_text(encoding="utf-8")
         tree = ast.parse(source)
         imports = set()
@@ -63,7 +84,13 @@ class QAOnlyWordPDF(unittest.TestCase):
                     r["sp_code"],r["sp_description"],
                     r["set_induksi"]["guru"],r["penutup"]["murid"],
                     r["aktiviti_utama"][0]["guru"],r["aktiviti_utama"][2]["murid"],
-                    r["penilaian"],r["pemulihan"],r["pengayaan"]
+                    r["penilaian"],r["pemulihan"],r["pengayaan"],
+                    r["editorial_supplement"]["success_criterion"],
+                    r["editorial_supplement"]["emk_nilai"],
+                    r["editorial_supplement"]["kbat"],
+                    r["editorial_supplement"]["pak21"],
+                    r["editorial_supplement"]["guided_pdp"] if r["phase"]=="penerokaan"
+                    else r["editorial_supplement"]["application_pdp"]
                 ):
                     self.assertIn(exact,text)
                 self.assertEqual(text.count("Refleksi"),1)
@@ -92,7 +119,11 @@ class QAOnlyWordPDF(unittest.TestCase):
                 pdf_text=squeeze(" ".join(page.extract_text() or "" for page in reader.pages))
                 for exact in (r["sk_description"],r["sp_description"],
                               r["aktiviti_utama"][0]["guru"],
-                              r["aktiviti_utama"][2]["murid"],r["penutup"]["murid"]):
+                              r["aktiviti_utama"][2]["murid"],r["penutup"]["murid"],
+                              r["editorial_supplement"]["success_criterion"],
+                              r["editorial_supplement"]["kbat"],
+                              r["editorial_supplement"]["guided_pdp"] if r["phase"]=="penerokaan"
+                              else r["editorial_supplement"]["application_pdp"]):
                     self.assertIn(squeeze(exact),pdf_text)
                 self.assertEqual(pdf_text.count("Refleksi"),1)
                 self.assertNotIn("Auto / Manual",pdf_text)
