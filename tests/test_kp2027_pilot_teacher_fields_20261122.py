@@ -196,5 +196,91 @@ class TeacherFields(unittest.TestCase):
             })
 
 
+    def test_alam_pdf_reflection_uses_full_cell_without_overlap_and_correct_action(self):
+        from web.kp2027_pilot_teacher_fields import _pdf_success_criterion, _reflection_candidates
+        import fitz
+        criterion = ("Murid menamakan dan menunjukkan sekurang-kurangnya "
+                     "lima bahagian tubuh dengan tepat.")
+        d = fitz.open()
+        page = d.new_page(width=595.3, height=841.9)
+        page.insert_text((170, 43), "RANCANGAN PENGAJARAN HARIAN", fontsize=12)
+        page.insert_text((215, 64), "KP2027 • TAHUN 1 • PdP 002 (RPT A/B)", fontsize=9)
+        for y, label in ((108, "Kelas:"), (121, "Tarikh:"),
+                         (134, "Masa:"), (147, "Bil. Murid:")):
+            page.insert_text((393.7, y), label, fontsize=8)
+        page.insert_text((38, 211), "Objektif Pembelajaran", fontsize=9)
+        page.insert_text((156, 211), "Pada akhir PdP, murid berjaya menyebut dengan", fontsize=9)
+        page.insert_text((156, 223), "tepat.", fontsize=9)
+        page.insert_text((38, 239), "Kriteria Kejayaan", fontsize=9)
+        page.insert_text((156, 239), criterion, fontsize=9)
+        page.insert_text((38, 256), "EMK / Nilai", fontsize=9)
+        page.insert_text((38, 551), "Pengayaan", fontsize=9)
+        page.draw_line((37, 564), (558, 564), color=(.7, .7, .7), width=.5)
+        page.draw_line((37, 646), (558, 646), color=(.7, .7, .7), width=.5)
+        page.insert_text((38, 609), "Refleksi (Auto / Manual)", fontsize=9)
+        # Old text begins ABOVE its vertically centered label: old redaction
+        # at label.y0-1 left the first line and caused overlapping fonts.
+        page.insert_text((159, 599), "CATATAN ASAL YANG MESTI DIPADAM", fontsize=8)
+        page.insert_text((159, 612), "BARIS ASAL KEDUA", fontsize=8)
+        page.insert_text((38, 660), "Rujukan: DK Alam dan Manusia", fontsize=8)
+        page.insert_text((170, 824), "CIKGULAJU • KP2027 TAHUN 1 • Footer lama", fontsize=8)
+        self.assertEqual(_pdf_success_criterion(page), criterion)
+        self.assertIn("anggota tubuh", _reflection_candidates(criterion)[0])
+        self.assertNotIn("gambar makanan", _reflection_candidates(criterion)[0])
+        source=d.tobytes(); d.close()
+        out=personalize_approved_rph(source,"pdf",{"reflection_mode":"auto","teacher_students":"35"})
+        with fitz.open(stream=out,filetype="pdf") as result:
+            self.assertEqual(result.page_count, 1)
+            page=result[0]
+            text=page.get_text()
+            self.assertEqual(text.count("____"),2)
+            self.assertIn("anggota tubuh",text)
+            self.assertNotIn("CATATAN ASAL",text)
+            self.assertNotIn("BARIS ASAL KEDUA",text)
+            self.assertNotIn("gambar makanan",text)
+            self.assertNotIn("KP2027 • TAHUN 1",text)
+            self.assertNotIn("KP2027 TAHUN 1",text)
+            spans=[span for block in page.get_text("dict")["blocks"]
+                   for line in block.get("lines",())
+                   for span in line["spans"]
+                   if span["bbox"][0]>=155 and 564<span["bbox"][1]<646]
+            self.assertGreaterEqual(len(spans),2)
+            self.assertEqual(len({round(x["size"],1) for x in spans}),1)
+            self.assertTrue(all(x["bbox"][3]<=646 for x in spans))
+
+    def test_alam_word_reflection_preserves_font_and_removes_redundant_lines(self):
+        from docx import Document
+        from docx.shared import Pt
+        d=Document(BytesIO(word_fixture()))
+        d.add_paragraph("KP2027 • TAHUN 1 • PdP 002 (RPT A/B)")
+        d.sections[0].footer.paragraphs[0].text="CIKGULAJU • KP2027 TAHUN 1 • Footer lama"
+        old=d.tables[1].cell(1,1).paragraphs[0].runs[0]
+        old.font.name="Liberation Serif"
+        old.font.size=Pt(8)
+        tmp=BytesIO();d.save(tmp)
+        output=personalize_approved_rph(tmp.getvalue(),"word",{"reflection_mode":"auto"})
+        result=Document(BytesIO(output))
+        self.assertNotIn("KP2027 • TAHUN 1"," ".join(p.text for p in result.paragraphs))
+        self.assertNotIn("KP2027 TAHUN 1",result.sections[0].footer.paragraphs[0].text)
+        runs=result.tables[1].cell(1,1).paragraphs[0].runs
+        self.assertTrue(runs)
+        self.assertEqual(runs[0].font.name,"Liberation Serif")
+        self.assertAlmostEqual(runs[0].font.size.pt,8.0)
+        self.assertEqual(result.tables[1].cell(1,1).text.count("____"),2)
+
+    def test_rpt_buttons_download_directly_without_second_mobile_save_step(self):
+        from pathlib import Path
+        root=Path(__file__).resolve().parents[1]
+        page=(root/"web_v1_static_preview/index.html").read_text(encoding="utf-8")
+        script=(root/"web_v1_static_preview/rpt-personalize.js").read_text(encoding="utf-8")
+        self.assertIn("#rpt-download:not([hidden]){display:inline-flex!important}",page)
+        self.assertNotIn('window.open("about:blank","_blank")',page)
+        self.assertIn('rptDownload.addEventListener("click"',page)
+        self.assertIn('a.download="CIKGULAJU_RPT_KP2027_T1_"',page)
+        self.assertIn('result.delivery="direct-download"',script)
+        self.assertNotIn('phone-tab-link',script)
+        self.assertNotIn('rpt-prepared-manual-link',script)
+
+
 if __name__ == "__main__":
     unittest.main()
