@@ -85,6 +85,43 @@ class PaymentWebTests(unittest.TestCase):
                                         json=body, headers={"Origin": self.url})
             self.assertEqual(response.status_code, 409)
 
+    def test_email_only_19_digit_admin_approval_and_rejection_are_valid(self):
+        """Synthetic Web account IDs must reach the owner-checking DB RPC."""
+        uid = 8000000000000000000
+        stamp = "2026-11-22T15:45:06.89408+00:00"
+        route = "/api/web/admin/payments/8/review"
+        with patch.dict(os.environ, {"CIKGULAJU_WEB_ADMIN_IDS": "901"}), \
+             patch("web.web_payment_routes._auth", return_value=(CONF, 901, None)), \
+             patch("web.web_payment_routes._review_rakan") as review:
+            for decision in ("approved", "rejected"):
+                review.return_value = {"status": decision}
+                response = self.client.post(
+                    route, base_url=self.url, headers={"Origin": self.url},
+                    json={"payer": str(uid), "receipt_at": stamp, "decision": decision},
+                )
+                self.assertEqual(response.status_code, 200, response.json)
+                self.assertEqual(response.json["status"], decision)
+                review.assert_called_with(CONF, 8, uid, 901, stamp, decision)
+
+    def test_admin_review_rejects_out_of_range_and_untrusted_payer_values(self):
+        stamp = "2026-11-22T15:45:06.89408+00:00"
+        route = "/api/web/admin/payments/8/review"
+        invalid = [
+            str(2**63), str(2**63 + 1), "9999999999999999999",
+            "08000000000000000000", "0", "-1", "nan", "7.5", 8000000000000000000,
+        ]
+        with patch.dict(os.environ, {"CIKGULAJU_WEB_ADMIN_IDS": "901"}), \
+             patch("web.web_payment_routes._auth", return_value=(CONF, 901, None)), \
+             patch("web.web_payment_routes._review_rakan") as review:
+            for payer in invalid:
+                with self.subTest(payer=payer):
+                    response = self.client.post(
+                        route, base_url=self.url, headers={"Origin": self.url},
+                        json={"payer": payer, "receipt_at": stamp, "decision": "approved"},
+                    )
+                    self.assertEqual(response.status_code, 400, response.json)
+            review.assert_not_called()
+
     def test_qr_does_not_create_pending(self):
         def source(path,**kwargs):
             return CATALOG if path.endswith("/catalog") else (b"\xff\xd8\xff"+b"x"*900,"image/jpeg")
