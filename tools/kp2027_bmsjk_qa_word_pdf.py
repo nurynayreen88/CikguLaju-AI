@@ -169,7 +169,7 @@ def render_docx(record):
     for i, (label, chunks) in enumerate(activities):
         put(t.cell(i, 0), [(label, True)])
         set_cell(t.cell(i, 0), TONE)
-        put(t.cell(i, 1), [(role + ": " + value, role == "Guru") for role, value in chunks])
+        put(t.cell(i, 1), [(role + ": " + value, False) for role, value in chunks])
     spacer()
     t = table((LABEL_WIDTH_MM, OUTER_WIDTH_MM-LABEL_WIDTH_MM), len(follow_up))
     for i, (label, contents) in enumerate(follow_up):
@@ -208,8 +208,9 @@ def render_pdf(record):
         "KPQA", fontName="KPQA", fontSize=8.3, leading=12,
         alignment=TA_LEFT, textColor=colors.HexColor("#193249"), spaceAfter=1
     )
-    def para(txt):
-        return Paragraph(escape(str(txt)), normal)
+    def para(txt, bold=False):
+        content = escape(str(txt))
+        return Paragraph("<b>"+content+"</b>" if bold else content, normal)
     def pack(lines):
         if not lines:
             return para(" ")
@@ -241,7 +242,7 @@ def render_pdf(record):
         return t
 
     h=heading(record)
-    left = [para(x) for x in h]
+    left = [para(x, bold=(i<2)) for i, x in enumerate(h)]
     right = [para(s+":") for s in ("Kelas", "Tarikh", "Masa", "Bil. Murid")]
     hdr = tb([[left, right]], [116, 58], [])
     hdr.setStyle(TableStyle([
@@ -251,7 +252,7 @@ def render_pdf(record):
     story = [hdr, Spacer(1, 4*mm)]
     standards, activities, follow_up = _rows(record)
     def content_table(rows):
-        return tb([[para(label), pack(contents)] for label, contents in rows],
+        return tb([[para(label, bold=True), pack(contents)] for label, contents in rows],
                   [LABEL_WIDTH_MM, OUTER_WIDTH_MM-LABEL_WIDTH_MM],
                   range(len(rows)))
     story += [content_table(standards), Spacer(1, 4*mm)]
