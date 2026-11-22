@@ -1,0 +1,1198 @@
+{
+  "source_archive_sha256": "b1ae8dcab0894bacc894d7fb310ff5ece27a1077e84846a64a86a61235d3a8ef",
+  "subject": "ALAM",
+  "A": {
+    "1": {
+      "sp": "1.1.1",
+      "codes": [
+        "1.1.1"
+      ],
+      "word": "0366435a5998c5cd081081b159bbaa61f004b72b600171a7550dce4676dcd0a1",
+      "pdf": "d748ead52bafc14a649be173a542dad39f2694c4736759a4e8b069626209b534",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "2": {
+      "sp": "1.1.2",
+      "codes": [
+        "1.1.2"
+      ],
+      "word": "9b31e86b23c0cb98b99c53f4d3aa037a3fe65d74e1cb1132cf45ebe61cac39e7",
+      "pdf": "f568aea5fce5ff9495940d3a4471ef745d401c5cde6e42035b68e5767e8ac86e",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "3": {
+      "sp": "1.1.3",
+      "codes": [
+        "1.1.3",
+        "1.1.4"
+      ],
+      "word": "8416dbed247b4bbd54e39bcf44057174274d72e729d2754578f88459531b9bc7",
+      "pdf": "b0d48d3dd575de87ae4e0ed14be665d35af763324e4747933b2ac7b2a20d3e2a",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "4": {
+      "sp": "1.1.5",
+      "codes": [
+        "1.1.5"
+      ],
+      "word": "9f17a8eb25a6ceb3fcf9ed57daed9bbef26ca63fcd5333da5b998f5069746d9c",
+      "pdf": "b0766bc83f302c4e4c086d3cb76e9efccfaac228335dfd84c6c487b0abdf7848",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "5": {
+      "sp": "1.1.6",
+      "codes": [
+        "1.1.6"
+      ],
+      "word": "a9321596aa3db430fdca541229b4415660be13bfebdc79577c5490ccd12476e0",
+      "pdf": "6f00ce3b5a1b53a2cceb523f513c1c65a998f771994034ab19a667a46dfb1967",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "6": {
+      "sp": "1.1.7",
+      "codes": [
+        "1.1.7"
+      ],
+      "word": "8581adf01cb498e5b866ef85bb12b4959dceba5e4b7c32f76dbfe3828d15df4c",
+      "pdf": "eb7465963835d7eec8d42ff57d414ed7a44dc944a7d5e009705376cf836b35b8",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "7": {
+      "sp": "1.1.8",
+      "codes": [
+        "1.1.8",
+        "1.1.9"
+      ],
+      "word": "2ee3c611a445ca4d7070bcc39d71c0c1702c62a4cf06b68b9d6c01c4e2a4ae11",
+      "pdf": "0fac3a6d3c4c90e3b3e160989ccc89f04427c564eea0d45706c9fb78ed09c233",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "8": {
+      "sp": "1.1.10",
+      "codes": [
+        "1.1.10"
+      ],
+      "word": "57ea59e39bc37ac17c71904a176a466a6d4a26f0369aa0246059fa2bb72a4e2c",
+      "pdf": "e08eb7cc44b07296a0569930b7d18414d6c1c4262624adf1d3829b375fc6e866",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "9": {
+      "sp": "1.1.11",
+      "codes": [
+        "1.1.11"
+      ],
+      "word": "863fd43b29e1ee307173bca8ea5fc871859a1cb86ab3933ff9c831737017a0e2",
+      "pdf": "ad86efd47bb24636ed1cc9f7e7faed85b68c846389338eb4b57483752318114f",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "10": {
+      "sp": "1.1.12",
+      "codes": [
+        "1.1.12"
+      ],
+      "word": "801996532538a4b1d87c5b7188a95137908ee19e85d1a188dc1738b956db3f86",
+      "pdf": "d9a728e46636c71e41d9414c261473d05c2e008bde51c83351a92cc91f9e3dda",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "11": {
+      "sp": "1.1.13",
+      "codes": [
+        "1.1.13",
+        "1.1.14"
+      ],
+      "word": "767cc28c900ed6e830d29bfd722619adff8f2631af1265d36a96a03d8a7d5b48",
+      "pdf": "c901da3c5fc8826fb30315a49b3f616da2169a7ad6f0c05108d4aff5b948c515",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "12": {
+      "sp": "1.1.15",
+      "codes": [
+        "1.1.15"
+      ],
+      "word": "33d868ea837a870930a7f76543caf4f0f1b6a0a009767349bf29e36c177dda26",
+      "pdf": "f058ab8fe2f974c75b157993458e59349cca67f926ddfa41ace441ad311cd8e5",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "13": {
+      "sp": "2.1.1",
+      "codes": [
+        "2.1.1"
+      ],
+      "word": "65208ab8f16de366fd7631074d88f4edbe0450d557efc5b513c67ed8e14b06c1",
+      "pdf": "98737c8de9ab2c1dfa797b96bf64be24ee81254b331a45832d622dc3e4c6d196",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "14": {
+      "sp": "2.1.2",
+      "codes": [
+        "2.1.2",
+        "2.1.3"
+      ],
+      "word": "90237d5e8d15f353a62f2aa91895a6944349cb4cac84b7f861e52ec1b629de9c",
+      "pdf": "9a936c4583feedd5425c497714fccc430ff2b8091045b7e1f72a659e69b28cbb",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "15": {
+      "sp": "2.1.4",
+      "codes": [
+        "2.1.4"
+      ],
+      "word": "97b2dde31ab1f210d3d7ac8e3ab65d831426cff930ec87c84d115bd9ddc7d962",
+      "pdf": "feadc92112cd7ac03591de5ea7f881ed90f522589248cf04fc97c7844a3a5d6d",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "16": {
+      "sp": "2.1.5",
+      "codes": [
+        "2.1.5"
+      ],
+      "word": "510206667d1550f60f9188ea0f0a781e5670f5637f97178297d107f78882ea13",
+      "pdf": "554137bb31a81d0def4e1852b82439d1c60347e47e8c0fb65909ea13b12932cf",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "17": {
+      "sp": "2.1.6",
+      "codes": [
+        "2.1.6"
+      ],
+      "word": "0ce45ff6180c25eaf08c2d22ca293595091da3981c2e035c4bf7664bcffcc7e3",
+      "pdf": "5dcad011ea0a54746c4736704ef236f90cc765f064e0998ff9e08e3a7669bd91",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "18": {
+      "sp": "2.1.7",
+      "codes": [
+        "2.1.7",
+        "2.1.8"
+      ],
+      "word": "9859863111e5a0885176f09b05dbb3aafc341b8e267f0134cca43295ef517efe",
+      "pdf": "da5ea80711f3c5351ff48eb081779408acc4a617f1f4acf8dc1653287aeb63e1",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "19": {
+      "sp": "2.1.9",
+      "codes": [
+        "2.1.9"
+      ],
+      "word": "246a170ae5cc057d8845d16f8b8286c58cc08c0b336a1c62629d033550033943",
+      "pdf": "386c3a4a0d3251364528a01b052200a415b8c9ff910e779362cfd53dd9a774d7",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "20": {
+      "sp": "2.1.10",
+      "codes": [
+        "2.1.10"
+      ],
+      "word": "4416ef4b6125584bc722bfa62550e8e3b0b893e9c672f07f6295843634b3a9b2",
+      "pdf": "d4a524375a784d3a37b622520482abe6fd253719952c09b3a5060230a5638d94",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "21": {
+      "sp": "2.1.11",
+      "codes": [
+        "2.1.11"
+      ],
+      "word": "eab2e7bcc9d2ce128d77fddf7c1eaaa199971064478d091063769c696229f07a",
+      "pdf": "c46fff2ffd4dd9c83024ca06e9a8cf77eb23ad134e21a2c0c0550482bfb5bd9f",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "22": {
+      "sp": "2.1.12",
+      "codes": [
+        "2.1.12",
+        "2.1.13"
+      ],
+      "word": "63045f2776190742d678e7c91f16b04b6a9f7fb9a89fd36bafe0432c171f8853",
+      "pdf": "c5d4b5d2777dc466a10e3407d40c17e31b1818c71887045ee1c11b7261049e74",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "23": {
+      "sp": "2.1.14",
+      "codes": [
+        "2.1.14"
+      ],
+      "word": "7cffcd7f98fa0141ea518070cf9a2a35fbb318109efd90e276ee8118b0ef782b",
+      "pdf": "ad41e5a3ebc263c07676f04e4c4b1ee342e0610fa708dab74e299c84828a1ed3",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "24": {
+      "sp": "3.1.1",
+      "codes": [
+        "3.1.1"
+      ],
+      "word": "3847f0cd79a634b8e9893b684e58020cbb702c1a55d889e91fc6b1ced6147c38",
+      "pdf": "50788eefc322f86fdd3211da7e710d53a26d4319eb02746714fe390fde653801",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "25": {
+      "sp": "3.1.2",
+      "codes": [
+        "3.1.2",
+        "3.1.3"
+      ],
+      "word": "9143d6fc40b765aeb6b553dbf11df567402fb7a1bb61a1d03a9d9bbc5291bbe5",
+      "pdf": "a92c90718ee7bd9e23171706a2fe1d6b0e17d8e24b5778418db28b1376162537",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "26": {
+      "sp": "3.1.4",
+      "codes": [
+        "3.1.4"
+      ],
+      "word": "e73404a13024cb007ef6b9df414d0efec77c05fbc76c49e8881ba37a0b20aa3c",
+      "pdf": "992a0844f4f0f72f169dd59e4837761876a03193685c78efb45dd889ab679ba1",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "27": {
+      "sp": "3.1.5",
+      "codes": [
+        "3.1.5"
+      ],
+      "word": "e427e4d001087b5904fc7b19f9844324d57b5a2b7acccaafd51070e7c502c70a",
+      "pdf": "2ec1d0ade718769997cb403e82e491bf23e5f5498ade46825e9880f10951961e",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "28": {
+      "sp": "3.1.6",
+      "codes": [
+        "3.1.6",
+        "3.1.7"
+      ],
+      "word": "33db79cabac05587027d7509d537a2c22e8575ff5bc78a235a27461540f10c01",
+      "pdf": "ff8fe2be45360625499ec1966fa41cf043553c1cea07b449def1436e774da76d",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "29": {
+      "sp": "3.1.8",
+      "codes": [
+        "3.1.8"
+      ],
+      "word": "768d21d3a3c5c243d9f7afb829cce8ea4bbdc0b457b7cca64fe834555433b08c",
+      "pdf": "0e2251ef8610bcad5a48a977c089573415034b6dfe3d44ad54c3cbb421cd567a",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "30": {
+      "sp": "3.1.9",
+      "codes": [
+        "3.1.9"
+      ],
+      "word": "0b3dbffbf1f0435f7787d232602eac8e6f72843f84a7b538cc7919e333465e7d",
+      "pdf": "2c57a2557ff2029c83d143ee3f1d30115e28cc29ed24055ba364680924ed3b70",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "31": {
+      "sp": "3.1.10",
+      "codes": [
+        "3.1.10",
+        "3.1.11"
+      ],
+      "word": "3703740fad22161719b662d094e35ef0c81ab9ca588a04b8d16f964db215b55c",
+      "pdf": "851afffe4fcf9af54f1844ffbc7c135a2569e45621ae5875fbfe793913e4bea0",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "32": {
+      "sp": "3.1.12",
+      "codes": [
+        "3.1.12"
+      ],
+      "word": "8ebba56d6b0d0ac356c1a14da9f6bd105ae3af363ae368d839846b960304fbab",
+      "pdf": "7060005a03908cae0773f60d4dd970528c6f9a384474430b809b4f1c30b0ca26",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "33": {
+      "sp": "4.1.1",
+      "codes": [
+        "4.1.1"
+      ],
+      "word": "4bf03b3029719401fbfc4d5da1cbfa4d9c964d2133200e6e45b823034333dc3c",
+      "pdf": "74144c68b0b9cb89787b4918c15313d636b98762cbef3a1e317ee841ee2c271a",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "34": {
+      "sp": "4.1.2",
+      "codes": [
+        "4.1.2",
+        "4.1.3"
+      ],
+      "word": "844488fbe4d81a9e86cc82a3ca723099d69e84d2f453cfbc6184ffe601854863",
+      "pdf": "0496ef5ed814b08916dba7ceb517f9aa26e31dfe021860d07cc49e28a62fd450",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "35": {
+      "sp": "4.1.4",
+      "codes": [
+        "4.1.4"
+      ],
+      "word": "795858a8d0d74b987e54572d8a725f5f9314179ff9bca6f098f3a4751e8fecaa",
+      "pdf": "3f7f32ec82d0373817e6540e57329d2f666c9ca27aa368ca7d0e741195c01884",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "36": {
+      "sp": "4.1.5",
+      "codes": [
+        "4.1.5"
+      ],
+      "word": "c62a29033dfd1ea08fbf0333428e2b3c705d5463c019abedc2c72c7aef7e30b5",
+      "pdf": "b6f3a0db63052b330fdb9722a2554262a3cdc3abc21c3e4d2c099c7b2a972016",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "37": {
+      "sp": "4.1.6",
+      "codes": [
+        "4.1.6"
+      ],
+      "word": "9c67a0d4b01c9cfc29af76fc1da755ed1d9aed37abe47c4a9dc73d1a7ba6ee13",
+      "pdf": "9c21ae3930b9827ae095c5be655eeb5c4fe964b809f8bd8a19dd4ebc5eb09906",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "38": {
+      "sp": "4.1.7",
+      "codes": [
+        "4.1.7",
+        "4.1.8"
+      ],
+      "word": "af46cffd54cf3fcdfe4fc69c6b4a69d9b975da175449b4098e1f561fbf902f67",
+      "pdf": "813d7518dcf7c5a378ec7220d13d41d9025582e8e2305f3441c76f8910cb74ef",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "39": {
+      "sp": "4.1.9",
+      "codes": [
+        "4.1.9"
+      ],
+      "word": "7319d3aaf6191a66d08693c5b54ec6c6a1c2c35b1ea79673bf31e580f151b584",
+      "pdf": "59547265db0a95b8dd9562f8f8adbacc1506ea0a177cbf0a4c76d972445a6bbd",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "40": {
+      "sp": "4.1.10",
+      "codes": [
+        "4.1.10"
+      ],
+      "word": "39b908cb778f0d9a43a9c9e8e246d6d5a7098f8c5a25cee780e7010a88a61fdf",
+      "pdf": "0f512a33eacb556168dd7916e8d7730920e406afc3f2ac981b4642bcabf1a99c",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "41": {
+      "sp": "4.1.11",
+      "codes": [
+        "4.1.11",
+        "4.1.12"
+      ],
+      "word": "147fd1ad9a268ca52c00fd6db2fdd00653144d4769d10c44204e5984d11706a8",
+      "pdf": "411fc154a084f2ca14b4391b4308d6a3c046b8757db25db392d9972cd4c39225",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "42": {
+      "sp": "4.1.13",
+      "codes": [
+        "4.1.13"
+      ],
+      "word": "844294be82a735ac959fa37648d26806f995ba5c42edcc9b235bc79c19691251",
+      "pdf": "d7f0f658b9cca99823bb7ae2fa07dc0a4372cea7f3081af0f1fc2b178e07bca2",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "43": {
+      "sp": "4.1.14",
+      "codes": [
+        "4.1.14"
+      ],
+      "word": "ab11ff2dc6031009346a8c387f1382f21b80ecf7ddb33e9476e67f61cf866f21",
+      "pdf": "d95029e330b21335534028da7d783b2fbfbcbffd7014d877a5e45fa935b3e15c",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "44": {
+      "sp": "4.1.15",
+      "codes": [
+        "4.1.15"
+      ],
+      "word": "cc251032d7ec41e9a7060ccbe0d3ccf1a73d0b77b42e946c9dac492765440f82",
+      "pdf": "40bfcad310cea9038a3ba13d6e2d8144d2ecc870f51890d041e46bb336c30dec",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "45": {
+      "sp": "4.1.16",
+      "codes": [
+        "4.1.16",
+        "4.1.17"
+      ],
+      "word": "f7c723d12a75da808e9537467d1c6586f3b4e22b46951694f6c7d3d07db7dab0",
+      "pdf": "54c552695316079f0dec03bafd20962b2267c65e9f2bccb8b4d8e9d0d5019bdc",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "46": {
+      "sp": "4.1.18",
+      "codes": [
+        "4.1.18"
+      ],
+      "word": "062cd7458c0a9aaa2d19acde0b9caf7aae3b8e8fb7f8a40b97e308855fbae19e",
+      "pdf": "35cc1e60d603b21341c126492f45eb20727531a1a68f6e2648af063e2daec9a6",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "47": {
+      "sp": "5.1.1",
+      "codes": [
+        "5.1.1"
+      ],
+      "word": "0f889c37f2e75f386cd0eb8d138ae0e87b02800219e9b0a76a8eb0aabff15359",
+      "pdf": "e9bb88b549b5326054901e9e517b1243d217d04bf6624c440687503a647c9df0",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "48": {
+      "sp": "5.1.2",
+      "codes": [
+        "5.1.2",
+        "5.1.3"
+      ],
+      "word": "43992feeed9b4405a763050285fd8fee73e845eca0e87c10a895f549ba7483d9",
+      "pdf": "a6cd72ac972998af64e3d701da3af58c1fc8e3ce3e64025904bca0c044518de4",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "49": {
+      "sp": "5.1.4",
+      "codes": [
+        "5.1.4"
+      ],
+      "word": "d50ad44abb991a7236b39c3a5e99bb917cd73d048a517c8e6170f30e65f50df6",
+      "pdf": "e050da73f337360d6af3b1363607e06b4fc04cc1e760e064de83150ace2786aa",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "50": {
+      "sp": "5.1.5",
+      "codes": [
+        "5.1.5"
+      ],
+      "word": "40143103fdd2ec44dbecfce638e15e984b6c18883e61b034659d938c67a72085",
+      "pdf": "ff4add8d070c64edf1a4ac47f11c35fee475efba2d509a0ceac2d9229ae94677",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "51": {
+      "sp": "5.1.6",
+      "codes": [
+        "5.1.6",
+        "5.1.7"
+      ],
+      "word": "4cd7abc7140b2e4324ca3fe3136c372414d631145e03a4a1ebaee52789f953db",
+      "pdf": "a8c10d12dcd786f5cf35de06edf106e4f88b7b083063ddd99a4a74e2b7cc8bd9",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "52": {
+      "sp": "5.1.8",
+      "codes": [
+        "5.1.8"
+      ],
+      "word": "580fa0bbbbf653c10916bbcb60feb4b49e3871b87a36685d18145f483fec4266",
+      "pdf": "ecc220019b4f3c4390359e49a0c31aa92da235cfb470dc9b0eb16c101117a5aa",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "53": {
+      "sp": "5.2.1",
+      "codes": [
+        "5.2.1"
+      ],
+      "word": "94eaa7566166dbafe95619a368fee309a6dd7eadbad19462efe20a57a81329c7",
+      "pdf": "5c40e47c71097e4718b209c495b0a56fc03e5f528ea02bf22b0d4081c89723e9",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "54": {
+      "sp": "5.2.2",
+      "codes": [
+        "5.2.2",
+        "5.2.3"
+      ],
+      "word": "eff2db12fb0c5a5599da1f4d56db84b72468600246ab479354be8763871f9601",
+      "pdf": "94efc5513574fcf44ae8483c0d1e7ce12595999e434db161b7d315adfe062afc",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "55": {
+      "sp": "5.2.4",
+      "codes": [
+        "5.2.4"
+      ],
+      "word": "8f670eef0f644940511e9e11d81de4ec1230a32ea37459c9f85aea0bf37cf9bb",
+      "pdf": "41c96009a4688fc50e667299b423d6b9b16fb95af1708d796f302169c7d44252",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "56": {
+      "sp": "5.2.5",
+      "codes": [
+        "5.2.5"
+      ],
+      "word": "a7f46efc0e8b8e762b1ed1519bfe57cff8d857cb719acb32ed6ddbef377822da",
+      "pdf": "31fadfd42f8a0de49feda26cef235aba3c56864b81d7228ec1583871cc2f2f40",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "57": {
+      "sp": "5.2.6",
+      "codes": [
+        "5.2.6",
+        "5.2.7"
+      ],
+      "word": "ee27e06999ac684ba4eb5b7be1d757f7923119f6ecb8e17cf5da452602e844ab",
+      "pdf": "9f3934c19f0d5ecc7cb1ddbe1e4744a8bde00ed589a752fe4c916c73b1ca0c7b",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "58": {
+      "sp": "5.2.8",
+      "codes": [
+        "5.2.8"
+      ],
+      "word": "48a4726d3cb501c1536d0db10ae3406e176250396890d94109c2d884b6578703",
+      "pdf": "9e62a748d60d8df1b7523cc9b89abb1f36ddca0aaff1acafa02aaa1be90bd28d",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "59": {
+      "sp": "6.1.1",
+      "codes": [
+        "6.1.1"
+      ],
+      "word": "9c9ae6e60a2a19cf09502b5a65675a5578f3548595bc480897aeca25c2abb40a",
+      "pdf": "9c5fc56af07010cf580bf7d441884a98becddfe14d5bdc7edafa254435356f97",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "60": {
+      "sp": "6.1.2",
+      "codes": [
+        "6.1.2",
+        "6.1.3"
+      ],
+      "word": "d413b2a92960866b3eaebaaff2621d566fa5916c821fd663339e62549b8f320c",
+      "pdf": "22b1ba632841bcc50cac7998c9e466c7613cdc5585880ac1e7cfdccd6bbce27a",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "61": {
+      "sp": "6.1.4",
+      "codes": [
+        "6.1.4"
+      ],
+      "word": "334e7db48be553ff05b16c9b87d215474ea96f65184e902126c4dbed5babce5a",
+      "pdf": "2296500225247ed941c4dfe966509a91bbe929c8117ca8b7864d5f62d8272ef3",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "62": {
+      "sp": "6.2.1",
+      "codes": [
+        "6.2.1"
+      ],
+      "word": "3d02a7346b48c7a82fd73694398f60b127e4a91d193f0460915c7c3e478cc056",
+      "pdf": "ad8080141b73d049492aa87e49322681dd6f38f3c756c933f5403a4fa0ef616c",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "63": {
+      "sp": "6.2.2",
+      "codes": [
+        "6.2.2",
+        "6.2.3"
+      ],
+      "word": "f0b5c82ab1ab077810fdb525f999a8337217e129fec81a17ec4061a575c011ec",
+      "pdf": "6aee0e66ab9674216adebdf65733a1ef5d54a63369e50397e743add8eb65c343",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "64": {
+      "sp": "6.2.4",
+      "codes": [
+        "6.2.4"
+      ],
+      "word": "f298b0aa7ea915946a8183ed270cc007f6995eaf96667635e7e80b9666f942c8",
+      "pdf": "0b584f4256c9c17c3cb5b3a36c739e884ef88e39880a475a18021be68ec32510",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    }
+  },
+  "B": {
+    "1": {
+      "sp": "1.1.1",
+      "codes": [
+        "1.1.1"
+      ],
+      "word": "0366435a5998c5cd081081b159bbaa61f004b72b600171a7550dce4676dcd0a1",
+      "pdf": "d748ead52bafc14a649be173a542dad39f2694c4736759a4e8b069626209b534",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "2": {
+      "sp": "1.1.2",
+      "codes": [
+        "1.1.2"
+      ],
+      "word": "9b31e86b23c0cb98b99c53f4d3aa037a3fe65d74e1cb1132cf45ebe61cac39e7",
+      "pdf": "f568aea5fce5ff9495940d3a4471ef745d401c5cde6e42035b68e5767e8ac86e",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "3": {
+      "sp": "1.1.3",
+      "codes": [
+        "1.1.3",
+        "1.1.4"
+      ],
+      "word": "8416dbed247b4bbd54e39bcf44057174274d72e729d2754578f88459531b9bc7",
+      "pdf": "b0d48d3dd575de87ae4e0ed14be665d35af763324e4747933b2ac7b2a20d3e2a",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "4": {
+      "sp": "1.1.5",
+      "codes": [
+        "1.1.5"
+      ],
+      "word": "9f17a8eb25a6ceb3fcf9ed57daed9bbef26ca63fcd5333da5b998f5069746d9c",
+      "pdf": "b0766bc83f302c4e4c086d3cb76e9efccfaac228335dfd84c6c487b0abdf7848",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "5": {
+      "sp": "1.1.6",
+      "codes": [
+        "1.1.6"
+      ],
+      "word": "a9321596aa3db430fdca541229b4415660be13bfebdc79577c5490ccd12476e0",
+      "pdf": "6f00ce3b5a1b53a2cceb523f513c1c65a998f771994034ab19a667a46dfb1967",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "6": {
+      "sp": "1.1.7",
+      "codes": [
+        "1.1.7"
+      ],
+      "word": "8581adf01cb498e5b866ef85bb12b4959dceba5e4b7c32f76dbfe3828d15df4c",
+      "pdf": "eb7465963835d7eec8d42ff57d414ed7a44dc944a7d5e009705376cf836b35b8",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "7": {
+      "sp": "1.1.8",
+      "codes": [
+        "1.1.8",
+        "1.1.9"
+      ],
+      "word": "2ee3c611a445ca4d7070bcc39d71c0c1702c62a4cf06b68b9d6c01c4e2a4ae11",
+      "pdf": "0fac3a6d3c4c90e3b3e160989ccc89f04427c564eea0d45706c9fb78ed09c233",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "8": {
+      "sp": "1.1.10",
+      "codes": [
+        "1.1.10"
+      ],
+      "word": "57ea59e39bc37ac17c71904a176a466a6d4a26f0369aa0246059fa2bb72a4e2c",
+      "pdf": "e08eb7cc44b07296a0569930b7d18414d6c1c4262624adf1d3829b375fc6e866",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "9": {
+      "sp": "1.1.11",
+      "codes": [
+        "1.1.11"
+      ],
+      "word": "863fd43b29e1ee307173bca8ea5fc871859a1cb86ab3933ff9c831737017a0e2",
+      "pdf": "ad86efd47bb24636ed1cc9f7e7faed85b68c846389338eb4b57483752318114f",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "10": {
+      "sp": "1.1.12",
+      "codes": [
+        "1.1.12"
+      ],
+      "word": "801996532538a4b1d87c5b7188a95137908ee19e85d1a188dc1738b956db3f86",
+      "pdf": "d9a728e46636c71e41d9414c261473d05c2e008bde51c83351a92cc91f9e3dda",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "11": {
+      "sp": "1.1.13",
+      "codes": [
+        "1.1.13",
+        "1.1.14"
+      ],
+      "word": "767cc28c900ed6e830d29bfd722619adff8f2631af1265d36a96a03d8a7d5b48",
+      "pdf": "c901da3c5fc8826fb30315a49b3f616da2169a7ad6f0c05108d4aff5b948c515",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "12": {
+      "sp": "1.1.15",
+      "codes": [
+        "1.1.15"
+      ],
+      "word": "33d868ea837a870930a7f76543caf4f0f1b6a0a009767349bf29e36c177dda26",
+      "pdf": "f058ab8fe2f974c75b157993458e59349cca67f926ddfa41ace441ad311cd8e5",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "13": {
+      "sp": "2.1.1",
+      "codes": [
+        "2.1.1"
+      ],
+      "word": "65208ab8f16de366fd7631074d88f4edbe0450d557efc5b513c67ed8e14b06c1",
+      "pdf": "98737c8de9ab2c1dfa797b96bf64be24ee81254b331a45832d622dc3e4c6d196",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "14": {
+      "sp": "2.1.2",
+      "codes": [
+        "2.1.2",
+        "2.1.3"
+      ],
+      "word": "90237d5e8d15f353a62f2aa91895a6944349cb4cac84b7f861e52ec1b629de9c",
+      "pdf": "9a936c4583feedd5425c497714fccc430ff2b8091045b7e1f72a659e69b28cbb",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "15": {
+      "sp": "2.1.4",
+      "codes": [
+        "2.1.4"
+      ],
+      "word": "97b2dde31ab1f210d3d7ac8e3ab65d831426cff930ec87c84d115bd9ddc7d962",
+      "pdf": "feadc92112cd7ac03591de5ea7f881ed90f522589248cf04fc97c7844a3a5d6d",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "16": {
+      "sp": "2.1.5",
+      "codes": [
+        "2.1.5"
+      ],
+      "word": "510206667d1550f60f9188ea0f0a781e5670f5637f97178297d107f78882ea13",
+      "pdf": "554137bb31a81d0def4e1852b82439d1c60347e47e8c0fb65909ea13b12932cf",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "17": {
+      "sp": "2.1.6",
+      "codes": [
+        "2.1.6"
+      ],
+      "word": "0ce45ff6180c25eaf08c2d22ca293595091da3981c2e035c4bf7664bcffcc7e3",
+      "pdf": "5dcad011ea0a54746c4736704ef236f90cc765f064e0998ff9e08e3a7669bd91",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "18": {
+      "sp": "2.1.7",
+      "codes": [
+        "2.1.7",
+        "2.1.8"
+      ],
+      "word": "9859863111e5a0885176f09b05dbb3aafc341b8e267f0134cca43295ef517efe",
+      "pdf": "da5ea80711f3c5351ff48eb081779408acc4a617f1f4acf8dc1653287aeb63e1",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "19": {
+      "sp": "2.1.9",
+      "codes": [
+        "2.1.9"
+      ],
+      "word": "246a170ae5cc057d8845d16f8b8286c58cc08c0b336a1c62629d033550033943",
+      "pdf": "386c3a4a0d3251364528a01b052200a415b8c9ff910e779362cfd53dd9a774d7",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "20": {
+      "sp": "2.1.10",
+      "codes": [
+        "2.1.10"
+      ],
+      "word": "4416ef4b6125584bc722bfa62550e8e3b0b893e9c672f07f6295843634b3a9b2",
+      "pdf": "d4a524375a784d3a37b622520482abe6fd253719952c09b3a5060230a5638d94",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "21": {
+      "sp": "2.1.11",
+      "codes": [
+        "2.1.11"
+      ],
+      "word": "eab2e7bcc9d2ce128d77fddf7c1eaaa199971064478d091063769c696229f07a",
+      "pdf": "c46fff2ffd4dd9c83024ca06e9a8cf77eb23ad134e21a2c0c0550482bfb5bd9f",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "22": {
+      "sp": "2.1.12",
+      "codes": [
+        "2.1.12",
+        "2.1.13"
+      ],
+      "word": "63045f2776190742d678e7c91f16b04b6a9f7fb9a89fd36bafe0432c171f8853",
+      "pdf": "c5d4b5d2777dc466a10e3407d40c17e31b1818c71887045ee1c11b7261049e74",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "23": {
+      "sp": "2.1.14",
+      "codes": [
+        "2.1.14"
+      ],
+      "word": "7cffcd7f98fa0141ea518070cf9a2a35fbb318109efd90e276ee8118b0ef782b",
+      "pdf": "ad41e5a3ebc263c07676f04e4c4b1ee342e0610fa708dab74e299c84828a1ed3",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "24": {
+      "sp": "3.1.1",
+      "codes": [
+        "3.1.1"
+      ],
+      "word": "3847f0cd79a634b8e9893b684e58020cbb702c1a55d889e91fc6b1ced6147c38",
+      "pdf": "50788eefc322f86fdd3211da7e710d53a26d4319eb02746714fe390fde653801",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "25": {
+      "sp": "3.1.2",
+      "codes": [
+        "3.1.2",
+        "3.1.3"
+      ],
+      "word": "9143d6fc40b765aeb6b553dbf11df567402fb7a1bb61a1d03a9d9bbc5291bbe5",
+      "pdf": "a92c90718ee7bd9e23171706a2fe1d6b0e17d8e24b5778418db28b1376162537",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "26": {
+      "sp": "3.1.4",
+      "codes": [
+        "3.1.4"
+      ],
+      "word": "e73404a13024cb007ef6b9df414d0efec77c05fbc76c49e8881ba37a0b20aa3c",
+      "pdf": "992a0844f4f0f72f169dd59e4837761876a03193685c78efb45dd889ab679ba1",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "27": {
+      "sp": "3.1.5",
+      "codes": [
+        "3.1.5"
+      ],
+      "word": "e427e4d001087b5904fc7b19f9844324d57b5a2b7acccaafd51070e7c502c70a",
+      "pdf": "2ec1d0ade718769997cb403e82e491bf23e5f5498ade46825e9880f10951961e",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "28": {
+      "sp": "3.1.6",
+      "codes": [
+        "3.1.6",
+        "3.1.7"
+      ],
+      "word": "33db79cabac05587027d7509d537a2c22e8575ff5bc78a235a27461540f10c01",
+      "pdf": "ff8fe2be45360625499ec1966fa41cf043553c1cea07b449def1436e774da76d",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "29": {
+      "sp": "3.1.8",
+      "codes": [
+        "3.1.8"
+      ],
+      "word": "768d21d3a3c5c243d9f7afb829cce8ea4bbdc0b457b7cca64fe834555433b08c",
+      "pdf": "0e2251ef8610bcad5a48a977c089573415034b6dfe3d44ad54c3cbb421cd567a",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "30": {
+      "sp": "3.1.9",
+      "codes": [
+        "3.1.9"
+      ],
+      "word": "0b3dbffbf1f0435f7787d232602eac8e6f72843f84a7b538cc7919e333465e7d",
+      "pdf": "2c57a2557ff2029c83d143ee3f1d30115e28cc29ed24055ba364680924ed3b70",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "31": {
+      "sp": "3.1.10",
+      "codes": [
+        "3.1.10",
+        "3.1.11"
+      ],
+      "word": "3703740fad22161719b662d094e35ef0c81ab9ca588a04b8d16f964db215b55c",
+      "pdf": "851afffe4fcf9af54f1844ffbc7c135a2569e45621ae5875fbfe793913e4bea0",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "32": {
+      "sp": "3.1.12",
+      "codes": [
+        "3.1.12"
+      ],
+      "word": "8ebba56d6b0d0ac356c1a14da9f6bd105ae3af363ae368d839846b960304fbab",
+      "pdf": "7060005a03908cae0773f60d4dd970528c6f9a384474430b809b4f1c30b0ca26",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "33": {
+      "sp": "4.1.1",
+      "codes": [
+        "4.1.1"
+      ],
+      "word": "4bf03b3029719401fbfc4d5da1cbfa4d9c964d2133200e6e45b823034333dc3c",
+      "pdf": "74144c68b0b9cb89787b4918c15313d636b98762cbef3a1e317ee841ee2c271a",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "34": {
+      "sp": "4.1.2",
+      "codes": [
+        "4.1.2",
+        "4.1.3"
+      ],
+      "word": "844488fbe4d81a9e86cc82a3ca723099d69e84d2f453cfbc6184ffe601854863",
+      "pdf": "0496ef5ed814b08916dba7ceb517f9aa26e31dfe021860d07cc49e28a62fd450",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "35": {
+      "sp": "4.1.4",
+      "codes": [
+        "4.1.4"
+      ],
+      "word": "795858a8d0d74b987e54572d8a725f5f9314179ff9bca6f098f3a4751e8fecaa",
+      "pdf": "3f7f32ec82d0373817e6540e57329d2f666c9ca27aa368ca7d0e741195c01884",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "36": {
+      "sp": "4.1.5",
+      "codes": [
+        "4.1.5"
+      ],
+      "word": "c62a29033dfd1ea08fbf0333428e2b3c705d5463c019abedc2c72c7aef7e30b5",
+      "pdf": "b6f3a0db63052b330fdb9722a2554262a3cdc3abc21c3e4d2c099c7b2a972016",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "37": {
+      "sp": "4.1.6",
+      "codes": [
+        "4.1.6"
+      ],
+      "word": "9c67a0d4b01c9cfc29af76fc1da755ed1d9aed37abe47c4a9dc73d1a7ba6ee13",
+      "pdf": "9c21ae3930b9827ae095c5be655eeb5c4fe964b809f8bd8a19dd4ebc5eb09906",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "38": {
+      "sp": "4.1.7",
+      "codes": [
+        "4.1.7",
+        "4.1.8"
+      ],
+      "word": "af46cffd54cf3fcdfe4fc69c6b4a69d9b975da175449b4098e1f561fbf902f67",
+      "pdf": "813d7518dcf7c5a378ec7220d13d41d9025582e8e2305f3441c76f8910cb74ef",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "39": {
+      "sp": "4.1.9",
+      "codes": [
+        "4.1.9"
+      ],
+      "word": "7319d3aaf6191a66d08693c5b54ec6c6a1c2c35b1ea79673bf31e580f151b584",
+      "pdf": "59547265db0a95b8dd9562f8f8adbacc1506ea0a177cbf0a4c76d972445a6bbd",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "40": {
+      "sp": "4.1.10",
+      "codes": [
+        "4.1.10"
+      ],
+      "word": "39b908cb778f0d9a43a9c9e8e246d6d5a7098f8c5a25cee780e7010a88a61fdf",
+      "pdf": "0f512a33eacb556168dd7916e8d7730920e406afc3f2ac981b4642bcabf1a99c",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "41": {
+      "sp": "4.1.11",
+      "codes": [
+        "4.1.11",
+        "4.1.12"
+      ],
+      "word": "147fd1ad9a268ca52c00fd6db2fdd00653144d4769d10c44204e5984d11706a8",
+      "pdf": "411fc154a084f2ca14b4391b4308d6a3c046b8757db25db392d9972cd4c39225",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "42": {
+      "sp": "4.1.13",
+      "codes": [
+        "4.1.13"
+      ],
+      "word": "844294be82a735ac959fa37648d26806f995ba5c42edcc9b235bc79c19691251",
+      "pdf": "d7f0f658b9cca99823bb7ae2fa07dc0a4372cea7f3081af0f1fc2b178e07bca2",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "43": {
+      "sp": "4.1.14",
+      "codes": [
+        "4.1.14"
+      ],
+      "word": "ab11ff2dc6031009346a8c387f1382f21b80ecf7ddb33e9476e67f61cf866f21",
+      "pdf": "d95029e330b21335534028da7d783b2fbfbcbffd7014d877a5e45fa935b3e15c",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "44": {
+      "sp": "4.1.15",
+      "codes": [
+        "4.1.15"
+      ],
+      "word": "cc251032d7ec41e9a7060ccbe0d3ccf1a73d0b77b42e946c9dac492765440f82",
+      "pdf": "40bfcad310cea9038a3ba13d6e2d8144d2ecc870f51890d041e46bb336c30dec",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "45": {
+      "sp": "4.1.16",
+      "codes": [
+        "4.1.16",
+        "4.1.17"
+      ],
+      "word": "f7c723d12a75da808e9537467d1c6586f3b4e22b46951694f6c7d3d07db7dab0",
+      "pdf": "54c552695316079f0dec03bafd20962b2267c65e9f2bccb8b4d8e9d0d5019bdc",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "46": {
+      "sp": "4.1.18",
+      "codes": [
+        "4.1.18"
+      ],
+      "word": "062cd7458c0a9aaa2d19acde0b9caf7aae3b8e8fb7f8a40b97e308855fbae19e",
+      "pdf": "35cc1e60d603b21341c126492f45eb20727531a1a68f6e2648af063e2daec9a6",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "47": {
+      "sp": "5.1.1",
+      "codes": [
+        "5.1.1"
+      ],
+      "word": "0f889c37f2e75f386cd0eb8d138ae0e87b02800219e9b0a76a8eb0aabff15359",
+      "pdf": "e9bb88b549b5326054901e9e517b1243d217d04bf6624c440687503a647c9df0",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "48": {
+      "sp": "5.1.2",
+      "codes": [
+        "5.1.2",
+        "5.1.3"
+      ],
+      "word": "43992feeed9b4405a763050285fd8fee73e845eca0e87c10a895f549ba7483d9",
+      "pdf": "a6cd72ac972998af64e3d701da3af58c1fc8e3ce3e64025904bca0c044518de4",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "49": {
+      "sp": "5.1.4",
+      "codes": [
+        "5.1.4"
+      ],
+      "word": "d50ad44abb991a7236b39c3a5e99bb917cd73d048a517c8e6170f30e65f50df6",
+      "pdf": "e050da73f337360d6af3b1363607e06b4fc04cc1e760e064de83150ace2786aa",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "50": {
+      "sp": "5.1.5",
+      "codes": [
+        "5.1.5"
+      ],
+      "word": "40143103fdd2ec44dbecfce638e15e984b6c18883e61b034659d938c67a72085",
+      "pdf": "ff4add8d070c64edf1a4ac47f11c35fee475efba2d509a0ceac2d9229ae94677",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "51": {
+      "sp": "5.1.6",
+      "codes": [
+        "5.1.6",
+        "5.1.7"
+      ],
+      "word": "4cd7abc7140b2e4324ca3fe3136c372414d631145e03a4a1ebaee52789f953db",
+      "pdf": "a8c10d12dcd786f5cf35de06edf106e4f88b7b083063ddd99a4a74e2b7cc8bd9",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "52": {
+      "sp": "5.1.8",
+      "codes": [
+        "5.1.8"
+      ],
+      "word": "580fa0bbbbf653c10916bbcb60feb4b49e3871b87a36685d18145f483fec4266",
+      "pdf": "ecc220019b4f3c4390359e49a0c31aa92da235cfb470dc9b0eb16c101117a5aa",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "53": {
+      "sp": "5.2.1",
+      "codes": [
+        "5.2.1"
+      ],
+      "word": "94eaa7566166dbafe95619a368fee309a6dd7eadbad19462efe20a57a81329c7",
+      "pdf": "5c40e47c71097e4718b209c495b0a56fc03e5f528ea02bf22b0d4081c89723e9",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "54": {
+      "sp": "5.2.2",
+      "codes": [
+        "5.2.2",
+        "5.2.3"
+      ],
+      "word": "eff2db12fb0c5a5599da1f4d56db84b72468600246ab479354be8763871f9601",
+      "pdf": "94efc5513574fcf44ae8483c0d1e7ce12595999e434db161b7d315adfe062afc",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "55": {
+      "sp": "5.2.4",
+      "codes": [
+        "5.2.4"
+      ],
+      "word": "8f670eef0f644940511e9e11d81de4ec1230a32ea37459c9f85aea0bf37cf9bb",
+      "pdf": "41c96009a4688fc50e667299b423d6b9b16fb95af1708d796f302169c7d44252",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "56": {
+      "sp": "5.2.5",
+      "codes": [
+        "5.2.5"
+      ],
+      "word": "a7f46efc0e8b8e762b1ed1519bfe57cff8d857cb719acb32ed6ddbef377822da",
+      "pdf": "31fadfd42f8a0de49feda26cef235aba3c56864b81d7228ec1583871cc2f2f40",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "57": {
+      "sp": "5.2.6",
+      "codes": [
+        "5.2.6",
+        "5.2.7"
+      ],
+      "word": "ee27e06999ac684ba4eb5b7be1d757f7923119f6ecb8e17cf5da452602e844ab",
+      "pdf": "9f3934c19f0d5ecc7cb1ddbe1e4744a8bde00ed589a752fe4c916c73b1ca0c7b",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "58": {
+      "sp": "5.2.8",
+      "codes": [
+        "5.2.8"
+      ],
+      "word": "48a4726d3cb501c1536d0db10ae3406e176250396890d94109c2d884b6578703",
+      "pdf": "9e62a748d60d8df1b7523cc9b89abb1f36ddca0aaff1acafa02aaa1be90bd28d",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "59": {
+      "sp": "6.1.1",
+      "codes": [
+        "6.1.1"
+      ],
+      "word": "9c9ae6e60a2a19cf09502b5a65675a5578f3548595bc480897aeca25c2abb40a",
+      "pdf": "9c5fc56af07010cf580bf7d441884a98becddfe14d5bdc7edafa254435356f97",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "60": {
+      "sp": "6.1.2",
+      "codes": [
+        "6.1.2",
+        "6.1.3"
+      ],
+      "word": "d413b2a92960866b3eaebaaff2621d566fa5916c821fd663339e62549b8f320c",
+      "pdf": "22b1ba632841bcc50cac7998c9e466c7613cdc5585880ac1e7cfdccd6bbce27a",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "61": {
+      "sp": "6.1.4",
+      "codes": [
+        "6.1.4"
+      ],
+      "word": "334e7db48be553ff05b16c9b87d215474ea96f65184e902126c4dbed5babce5a",
+      "pdf": "2296500225247ed941c4dfe966509a91bbe929c8117ca8b7864d5f62d8272ef3",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "62": {
+      "sp": "6.2.1",
+      "codes": [
+        "6.2.1"
+      ],
+      "word": "3d02a7346b48c7a82fd73694398f60b127e4a91d193f0460915c7c3e478cc056",
+      "pdf": "ad8080141b73d049492aa87e49322681dd6f38f3c756c933f5403a4fa0ef616c",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "63": {
+      "sp": "6.2.2",
+      "codes": [
+        "6.2.2",
+        "6.2.3"
+      ],
+      "word": "f0b5c82ab1ab077810fdb525f999a8337217e129fec81a17ec4061a575c011ec",
+      "pdf": "6aee0e66ab9674216adebdf65733a1ef5d54a63369e50397e743add8eb65c343",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    },
+    "64": {
+      "sp": "6.2.4",
+      "codes": [
+        "6.2.4"
+      ],
+      "word": "f298b0aa7ea915946a8183ed270cc007f6995eaf96667635e7e80b9666f942c8",
+      "pdf": "0b584f4256c9c17c3cb5b3a36c739e884ef88e39880a475a18021be68ec32510",
+      "source_qa_hold": "QA_HOLD_ACADEMIC_WEB_E2E"
+    }
+  }
+}
