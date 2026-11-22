@@ -142,7 +142,7 @@ class AlamFlaskContract(unittest.TestCase):
                  patch.object(c,'fetch_private_document',return_value=b'%PDF-1.7\n'+b'0'*1500),
                  patch.object(c,'fetch_approved_lessons',return_value=[1,3]),
                  # Synthetic bytes exercise auth/quota; real-layout tests own personalization.
-                 patch.object(c,'personalize_approved_rph',side_effect=lambda data,fmt,fields:data)]
+                 patch('web.kp2027_pilot_teacher_fields.personalize_approved_rph',side_effect=lambda data,fmt,fields:data)]
         mocks=[p.start() for p in patches]
         self.addCleanup(lambda:[p.stop() for p in reversed(patches)])
         app=self.Flask(__name__);app.testing=True;app.register_blueprint(c.create_blueprint())
