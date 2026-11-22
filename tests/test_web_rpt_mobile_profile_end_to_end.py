@@ -144,7 +144,7 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
                     self.assertEqual(output["sha"],entry["sha256"])
                     self.assertIn("PENDIDIKAN_ISLAM_TAHUN_4_2027_PERCUMA.pdf",output["filename"])
             self.assertEqual(len(context.pages),1)
-            self.assertIsNone(page.locator("#rpt-prepared-manual-link").count() or None)
+            self.assertEqual(page.locator("#rpt-prepared-manual-link").count(),0)
             if bad_hash or not paid:
                 self.assertNotIn(("GET","/api/web/teacher/profile"),requests)
                 self.assertNotIn(("GET","/api/web/teacher/school-logo"),requests)
