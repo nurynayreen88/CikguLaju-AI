@@ -483,6 +483,72 @@ def _proof_available(row):
     return bool(row.get("proof_received_at") and str(row.get("proof_telegram_file_id") or "").strip())
 
 
+def _email_payer_names(conf, payer_ids, *, opener=None):
+    """Resolve email-only payment labels privately through Supabase Auth Admin.
+
+    Called only by the authenticated Web admin inbox. The mapping/credentials
+    never reach the browser. DB payment review continues to bind to immutable
+    numeric account IDs, not mutable email addresses.
+    """
+    from web.admin_usage_web import _api_config
+
+    synthetic = sorted({str(int(uid)) for uid in payer_ids
+                        if str(uid).isdigit() and 10**18 <= int(uid) < 2**63})
+    if not synthetic:
+        return {}
+    base, headers = _api_config(conf)
+    client = opener or build_opener(HTTPSHandler(), NoRedirect())
+    query = urlencode({
+        "select": "telegram_user_id,auth_user_id",
+        "telegram_user_id": "in.(" + ",".join(synthetic) + ")",
+        "limit": str(min(len(synthetic), 20)),
+    })
+    req = Request(base + "/rest/v1/web_email_identities?" + query,
+                  headers=dict(headers), method="GET")
+    with client.open(req, timeout=6) as resp:
+        if resp.status != 200:
+            raise ProfileUnavailable("Padanan e-mel admin belum tersedia")
+        raw = resp.read(MAX_REPLY+1)
+    if len(raw)>MAX_REPLY:
+        raise ProfileUnavailable("Senarai identiti e-mel terlalu besar")
+    mapping = json.loads(raw)
+    if not isinstance(mapping,list):
+        raise ProfileUnavailable("Senarai identiti e-mel tidak sah")
+
+    labels = {}
+    for item in mapping[:20]:
+        if not isinstance(item,dict) or str(item.get("telegram_user_id")) not in synthetic:
+            continue
+        try:
+            auth_uid = str(uuid.UUID(str(item.get("auth_user_id"))))
+        except (ValueError, TypeError, AttributeError):
+            continue
+        # The Auth admin endpoint is server-only. Never send its credentials
+        # or unfiltered user responses to the caller.
+        user_request = Request(
+            base + "/auth/v1/admin/users/" + auth_uid,
+            headers=dict(headers), method="GET")
+        try:
+            with client.open(user_request, timeout=5) as user_response:
+                if user_response.status != 200:
+                    continue
+                body=user_response.read(4097)
+            if len(body)>4096:
+                continue
+            identity=json.loads(body)
+        except (HTTPError,URLError,OSError,ValueError,TypeError):
+            continue
+        if not isinstance(identity,dict):
+            continue
+        user = identity.get("user") if isinstance(identity.get("user"),dict) else identity
+        email=user.get("email")
+        if (str(user.get("id")) != auth_uid or not isinstance(email,str)
+                or len(email)>254 or not re.fullmatch(r"[^\\s@]{1,64}@[^\\s@]{1,189}",email)):
+            continue
+        labels[str(item["telegram_user_id"])] = email
+    return labels
+
+
 def _payer_names(conf, rows):
     from web.admin_usage_web import _fetch
 
@@ -493,10 +559,22 @@ def _payer_names(conf, rows):
         "select": "telegram_user_id,first_name,last_name,username",
         "telegram_user_id": "in.(" + ",".join(ids) + ")",
     })
-    return {str(user["telegram_user_id"]): (
+    names = {str(user["telegram_user_id"]): (
         " ".join(str(user.get(key) or "").strip() for key in ("first_name", "last_name")).strip()
         or user.get("username") or "Pengguna"
     ) for user in users}
+    synthetic = [uid for uid in ids if int(uid) >= 10**18]
+    for uid in synthetic:
+        names[uid] = "Akaun e-mel"
+    if synthetic:
+        try:
+            names.update(_email_payer_names(conf, synthetic))
+        except (ProfileUnavailable, RuntimeError, ValueError, OSError, TypeError,
+                KeyError, AttributeError):
+            # Keep the admin payment inbox usable if Auth is unavailable.
+            # Never expose synthetic numeric IDs as customer-visible names.
+            pass
+    return names
 
 
 @bp.get("/api/web/admin/payments")
