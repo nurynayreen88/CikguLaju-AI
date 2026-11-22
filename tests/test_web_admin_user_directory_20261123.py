@@ -4,6 +4,7 @@ import os
 import unittest
 from unittest.mock import patch
 from flask import Flask
+from pathlib import Path
 
 from web.admin_users_web import bp, _admin_users_data
 
@@ -62,6 +63,21 @@ class UserDirectoryTests(unittest.TestCase):
         self.config = patch("web.admin_users_web._config", return_value=CONF)
         self.config.start()
         self.addCleanup(self.config.stop)
+
+    def test_opaque_secret_rpc_uses_exclusive_database_acl_not_missing_jwt_guc(self):
+        """Modern sb_secret_ calls do not populate request.jwt.claim.role."""
+        migration = Path(__file__).resolve().parents[1] / (
+            "supabase/migrations/20261123_fix_admin_user_directory_opaque_key_403.sql"
+        )
+        sql = migration.read_text(encoding="utf-8")
+        self.assertIn("SECURITY DEFINER", sql)
+        self.assertIn("REVOKE ALL ON FUNCTION public.admin_user_directory", sql)
+        self.assertIn("FROM PUBLIC, anon, authenticated", sql)
+        self.assertIn("GRANT EXECUTE ON FUNCTION public.admin_user_directory", sql)
+        self.assertIn("TO service_role", sql)
+        self.assertNotIn("IF current_setting('request.jwt.claim.role'", sql)
+        self.assertIn("LIMIT 20 OFFSET (p_page * 20)", sql)
+        self.assertNotIn("EXECUTE format(", sql)
 
     def test_anonymous_and_non_admin_never_query_directory(self):
         with patch("web.admin_users_web.verify_session_ticket", return_value=None), \
