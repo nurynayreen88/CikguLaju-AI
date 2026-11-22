@@ -58,14 +58,15 @@ class TestKP2027ProfileCover(unittest.TestCase):
                     identity.assert_called_once_with({"account_backend":"supabase"},419,allow_teacher_only=True)
                     if fmt=='docx':
                         doc=Document(io.BytesIO(out))
-                        front=doc.tables[0]
-                        self.assertEqual(front.cell(0,1).text,SCHOOL)
-                        self.assertEqual(front.cell(2,3).text,TEACHER)
-                        self.assertEqual(front.cell(4,1).text,TEACHER)
-                        self.assertEqual(front.cell(0,3).text,'Johor')
+                        self.assertEqual(doc.paragraphs[4].text,'NAMA SEKOLAH: '+SCHOOL)
+                        self.assertEqual(doc.paragraphs[8].text,'NAMA GURU: '+TEACHER)
+                        self.assertIn('Disediakan oleh: '+TEACHER,doc.paragraphs[10].text)
+                        self.assertIn('NEGERI: Johor',doc.paragraphs[7].text)
+                        self.assertEqual(doc.paragraphs[2].text,'RPT 2027')
+                        self.assertEqual(len(doc.tables[0].columns),7)
                         with ZipFile(io.BytesIO(out)) as z:
                             self.assertTrue(any(x.startswith('word/media/image') for x in z.namelist()))
-                        self.assertIn('Kumpulan A',doc.paragraphs[3].text)
+                        self.assertIn('Kumpulan A',doc.paragraphs[12].text)
                         self.assertIn('Kumpulan B',doc.paragraphs[3].text)
                     else:
                         original=fitz.open(stream=data,filetype='pdf')
