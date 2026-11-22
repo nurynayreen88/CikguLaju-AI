@@ -41,6 +41,10 @@ install_email_auth_ui(app)
 from web.kp2027_math_canary_web import create_blueprint as create_kp2027_math_pilot
 app.register_blueprint(create_kp2027_math_pilot())
 
+# KP2027 Alam dan Manusia Year-1 private canary, independent of Mathematics.
+from web.kp2027_alam_canary_web import create_blueprint as create_kp2027_alam_pilot
+app.register_blueprint(create_kp2027_alam_pilot())
+
 
 
 
