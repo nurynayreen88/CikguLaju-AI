@@ -176,6 +176,138 @@ class PaymentWebTests(unittest.TestCase):
         store.assert_called_once()
         notice.assert_called_once_with(712,21)
 
+    def test_email_only_receipt_goes_to_admin_not_nonexistent_telegram_chat(self):
+        from web.web_payment_routes import _receipt_destinations
+        uid = 8000000000000000003
+
+        class Reply:
+            status = 200
+            def __enter__(self): return self
+            def __exit__(self, *args): return None
+            def read(self, n):
+                return json.dumps({"ok": True, "result": {
+                    "chat": {"id": 901}, "message_id": 44,
+                    "document": {"file_id": "saved-proof", "file_unique_id": "unique",
+                                 "mime_type": "application/pdf"}}}).encode()
+
+        class Transport:
+            def __init__(self): self.req = None; self.timeout = None
+            def open(self, req, timeout):
+                self.req = req
+                self.timeout = timeout
+                return Reply()
+
+        transport = Transport()
+        with patch.dict(os.environ, {"CIKGULAJU_WEB_ADMIN_IDS": "901"}):
+            self.assertEqual(_receipt_destinations(uid), [901])
+            self.assertEqual(_receipt_destinations(712), [712])
+            proof = _telegram_document(CONF, uid, RECEIPT, ".pdf", opener=transport)
+        self.assertEqual(proof["file_id"], "saved-proof")
+        self.assertEqual(proof["admin_chat_id"], 901)
+        self.assertEqual(proof["message_id"], 44)
+        self.assertIn(b'name="chat_id"\r\n\r\n901\r\n', transport.req.data)
+        self.assertNotIn(b'name="chat_id"\r\n\r\n8000000000000000003\r\n', transport.req.data)
+        self.assertEqual(transport.timeout, 9)
+        with patch.dict(os.environ, {"CIKGULAJU_WEB_ADMIN_IDS": ""}):
+            with self.assertRaises(ProfileUnavailable):
+                _receipt_destinations(uid)
+
+    def test_telegram_customer_receipt_still_uses_own_chat(self):
+        class Reply:
+            status = 200
+            def __enter__(self): return self
+            def __exit__(self, *args): return None
+            def read(self, n):
+                return json.dumps({"ok": True, "result": {
+                    "chat": {"id": 712}, "message_id": 55,
+                    "document": {"file_id": "telegram-proof"}}}).encode()
+
+        class Transport:
+            def __init__(self): self.req = None
+            def open(self, req, timeout): self.req = req; return Reply()
+
+        transport = Transport()
+        with patch.dict(os.environ, {"CIKGULAJU_WEB_ADMIN_IDS": ""}):
+            proof = _telegram_document(CONF, 712, RECEIPT, ".pdf", opener=transport)
+        self.assertIsNone(proof["admin_chat_id"])
+        self.assertIn(b'name="chat_id"\r\n\r\n712\r\n', transport.req.data)
+
+    def test_email_only_full_submit_creates_pending_and_notifies_admin(self):
+        uid=8000000000000000003
+        proof={"file_id":"bot-private-receipt","unique_id":"unique",
+               "message_id":44,"mime":"application/pdf","admin_chat_id":901}
+        with patch("web.web_payment_routes._auth",return_value=(CONF,uid,None)), \
+             patch("web.web_payment_routes._source",return_value=CATALOG), \
+             patch("web.web_payment_routes._existing",return_value=[]), \
+             patch("web.web_payment_routes._is_member",return_value=False), \
+             patch("web.web_payment_routes._telegram_document",return_value=proof) as upload, \
+             patch("web.web_payment_routes._payment_rest",
+                   return_value=[{"chat_id":str(uid),"status":"pending","id":91}]) as store, \
+             patch("web.web_payment_routes._notify_email_admin_review",
+                   return_value=True) as admin_notice, \
+             patch("web.web_payment_routes._notify_telegram_admin_review") as old_notice:
+            response=self.request_receipt()
+        self.assertEqual(response.status_code,201,response.json)
+        self.assertEqual(response.json["id"],91)
+        self.assertEqual(response.json["admin_notification"],"sent")
+        upload.assert_called_once()
+        self.assertEqual(upload.call_args.args[1],uid)
+        self.assertEqual(store.call_args.kwargs["body"]["chat_id"],str(uid))
+        self.assertEqual(store.call_args.kwargs["body"]["notes"],"proof_received_web")
+        admin_notice.assert_called_once_with(uid,91,proof)
+        old_notice.assert_not_called()
+
+    def test_email_only_notification_failure_keeps_pending_no_recharge(self):
+        uid=8000000000000000003
+        proof={"file_id":"bot-private-receipt","unique_id":"unique",
+               "message_id":44,"mime":"application/pdf","admin_chat_id":901}
+        with patch("web.web_payment_routes._auth",return_value=(CONF,uid,None)), \
+             patch("web.web_payment_routes._source",return_value=CATALOG), \
+             patch("web.web_payment_routes._existing",return_value=[]), \
+             patch("web.web_payment_routes._is_member",return_value=False), \
+             patch("web.web_payment_routes._telegram_document",return_value=proof), \
+             patch("web.web_payment_routes._payment_rest",
+                   return_value=[{"chat_id":str(uid),"status":"pending","id":92}]) as store, \
+             patch("web.web_payment_routes._notify_email_admin_review",
+                   side_effect=ProfileUnavailable("Bot notice failed")):
+            response=self.request_receipt()
+        self.assertEqual(response.status_code,201,response.json)
+        self.assertEqual(response.json["status"],"pending")
+        self.assertEqual(response.json["admin_notification"],"unconfirmed")
+        self.assertIn("Jangan bayar",response.json["message"])
+        store.assert_called_once()
+
+    def test_email_only_admin_followup_is_bound_to_original_receipt(self):
+        from web.web_payment_routes import _notify_email_admin_review
+        uid=8000000000000000003
+        proof={"admin_chat_id":901,"message_id":44}
+
+        class Reply:
+            status=200
+            def __enter__(self): return self
+            def __exit__(self,*args): return None
+            def read(self,n):
+                return json.dumps({"ok":True,"result":{
+                    "chat":{"id":901},"message_id":45}}).encode()
+
+        class Transport:
+            def __init__(self): self.req=None
+            def open(self,req,timeout): self.req=req;return Reply()
+
+        transport=Transport()
+        with patch.dict(os.environ,{"CIKGULAJU_WEB_ADMIN_IDS":"901"}):
+            self.assertTrue(_notify_email_admin_review(uid,91,proof,opener=transport))
+            payload=json.loads(transport.req.data)
+            self.assertEqual(payload["chat_id"],"901")
+            self.assertEqual(payload["reply_to_message_id"],44)
+            self.assertIn("Pending #91",payload["text"])
+            self.assertIn(str(uid),payload["text"])
+            self.assertNotIn("approved",payload["text"])
+            with self.assertRaises(ProfileUnavailable):
+                _notify_email_admin_review(uid,91,{"admin_chat_id":902,"message_id":44},
+                                           opener=transport)
+
+
     def test_telegram_admin_private_notice_uses_fixed_verified_payment_id(self):
         from web.web_payment_routes import _notify_telegram_admin_review
         from unittest.mock import Mock
