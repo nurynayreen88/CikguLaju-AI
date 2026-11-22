@@ -255,47 +255,14 @@
       link.style.cssText="display:inline-block;background:#087568;color:white;padding:14px 20px;border-radius:12px;font:bold 17px system-ui;text-decoration:none;";
       return link;
     }
-    // Chrome may treat navigating to blob: PDF as a download and leave the
-    // preopened phone tab empty. Keep a visible, user-activated save link in
-    // that same tab instead. This also works when Safari blocks async clicks.
-    if(openedViewer && !openedViewer.closed){
-      try{
-        const doc=openedViewer.document;
-        const title=doc.createElement("h1");
-        title.textContent="RPT 2027 siap";
-        const note=doc.createElement("p");
-        const ready=ppki?"Agihan PdP "+ppkiEdition+" sudah disediakan.":
-          result.personalized?"PDF bersama profil sekolah sudah disediakan.":
-          "PDF percuma tanpa nama guru, nama sekolah dan logo sudah disediakan.";
-        note.textContent=ready+" Tekan Simpan PDF RPT. Pautan sah selama 10 minit.";
-        doc.body.style.cssText="margin:0;min-height:100vh;padding:28px 18px;box-sizing:border-box;font-family:system-ui,Arial,sans-serif;background:#f0f7f5;color:#174353;";
-        doc.body.replaceChildren(title,note,downloadLink(doc));
-        setTimeout(()=>URL.revokeObjectURL(url),600000);
-        result.delivery="phone-tab-link";
-        return result;
-      }catch(error){
-        try{openedViewer.close();}catch(_ignored){}
-      }
-    }
-    if(mobileRequest){
-      // Popup-blocked browser: show a link that the teacher can tap with a
-      // fresh gesture, not an async synthetic click that may silently fail.
-      const previous=document.getElementById("rpt-prepared-manual-link");
-      if(previous)previous.remove();
-      const manual=downloadLink(document);
-      manual.id="rpt-prepared-manual-link";
-      const status=document.getElementById("rpt-status");
-      if(status)status.insertAdjacentElement("afterend",manual);
-      else document.body.appendChild(manual);
-      setTimeout(()=>{manual.remove();URL.revokeObjectURL(url);},600000);
-      result.delivery="phone-inline-link";
-      return result;
-    }
+    // A single tap on the RPT screen downloads the final file directly.
+    // No new tab and no second "Simpan PDF" button (including on mobile).
     const link=downloadLink(document);
+    link.hidden=true;
     try{
       document.body.appendChild(link);link.click();link.remove();
-    }finally{setTimeout(()=>URL.revokeObjectURL(url),30000);}
-    result.delivery="desktop-auto";
+    }finally{setTimeout(()=>URL.revokeObjectURL(url),60000);}
+    result.delivery="direct-download";
     return result;
   }
   if(typeof window!=="undefined"){
@@ -310,7 +277,7 @@
         "Menyediakan RPT 2027. Identiti sekolah hanya dicetak untuk akaun berbayar aktif…";
       try{
         const status=await downloadWithOriginalCover(code,year,openedViewer,mobileRequest);
-        if(output)output.textContent=(status.delivery==="phone-tab-link"?"PDF siap pada tab baharu. Tekan Simpan PDF RPT di tab itu. ":status.delivery==="phone-inline-link"?"PDF siap. Tekan Simpan PDF RPT di bawah untuk menyimpan. ":"PDF RPT berjaya dimuat turun. ")+
+        if(output)output.textContent="PDF RPT berjaya dimuat turun. "+
           (status.personalized
            ? "Muka depan asal diisi untuk akaun berbayar aktif, tiada halaman tambahan."+
              ((!status.hasLogo||!status.hasSchool||!status.hasTeacher)

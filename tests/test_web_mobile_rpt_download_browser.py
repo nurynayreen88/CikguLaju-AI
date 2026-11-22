@@ -1,4 +1,4 @@
-"""Real Chromium mobile regression: RPT click preopens viewer before async profile stamp."""
+"""Real Chromium mobile regression: RPT one click downloads, without viewer tab."""
 from pathlib import Path
 import unittest
 from playwright.sync_api import sync_playwright
@@ -192,7 +192,7 @@ class MobileRptDownloadTests(unittest.TestCase):
                 subject_search.fill(label)
                 subject_options.filter(has_text=label).tap()
             word=page.locator("#rpt-download-word")
-            pdf=page.locator("#rpt-download-mobile")
+            pdf=page.locator("#rpt-download")
             self.assertEqual(curriculum.locator("option").all_text_contents(),
                              ["Pilih kurikulum","KSSR (SK)","KSSR (SJKC)","KP2027"])
             self.assertTrue(year.is_disabled())
@@ -275,64 +275,61 @@ class MobileRptDownloadTests(unittest.TestCase):
         finally:
             page.close()
 
-    def test_phone_uses_safe_placeholder_link_for_personalized_rpt(self):
+    def test_phone_shows_the_direct_download_button_not_a_second_step_link(self):
         for width in (320,360,375,390,430,760):
             with self.subTest(width=width):
                 page=self.browser.new_page(viewport={"width":width,"height":840})
                 try:
                     result=self.prepare(page)
                     self.assertEqual(result["href"],"#")
-                    self.assertFalse(result["linkHidden"])
-                    self.assertNotEqual(result["linkDisplay"],"none")
-                    self.assertEqual(result["desktopButtonDisplay"],"none")
-                    self.assertEqual(result["linkTarget"],"_blank")
+                    self.assertEqual(result["linkDisplay"],"none")
+                    self.assertNotEqual(result["desktopButtonDisplay"],"none")
+                    self.assertIsNone(result["linkTarget"])
                     self.assertFalse(result["desktopButtonDisabled"])
                     self.assertLessEqual(page.evaluate("document.documentElement.scrollWidth"),width+1)
                 finally:
                     page.close()
 
-    def test_phone_click_opens_viewer_synchronously_for_profile_pdf(self):
+    def test_phone_click_starts_direct_pdf_download_once_without_popup(self):
         page=self.browser.new_page(viewport={"width":390,"height":844})
-        popup=None
+        popups=[]
         try:
             self.prepare(page)
+            page.on("popup",lambda popup:popups.append(popup))
             page.evaluate("""() => {
                 window.__rptMobileCalls=[];
-                window.downloadCikguLajuRPT=(code,year,name,output,button,viewer)=>{
+                window.downloadCikguLajuRPT=(code,year,name,output,button,viewer,mobile)=>{
                     window.__rptMobileCalls.push({
-                        code,year,name,hasViewer:!!viewer,
+                        code,year,name,hasViewer:!!viewer,mobileRequest:!!mobile,
                         expectedStatusElement:output?.id==="rpt-status"
                     });
                     return Promise.resolve(true);
                 };
             }""")
-            with page.expect_popup() as opened:
-                page.locator("#rpt-download-mobile").click()
-            popup=opened.value
+            page.locator("#rpt-download").click()
             result=page.evaluate("window.__rptMobileCalls")
             self.assertEqual(result,[{
                 "code":"pjpk","year":2,"name":"PJPK",
-                "hasViewer":True,"expectedStatusElement":True
+                "hasViewer":False,"mobileRequest":False,
+                "expectedStatusElement":True
             }])
-            self.assertEqual(popup.url,"about:blank")
-            self.assertIn("Menyediakan PDF RPT",popup.locator("body").inner_text())
+            self.assertEqual(popups,[])
         finally:
-            if popup:
-                popup.close()
+            for popup in popups:popup.close()
             page.close()
 
-    def test_phone_without_popup_permission_keeps_fallback_path(self):
+    def test_phone_does_not_depend_on_popup_permission(self):
         page=self.browser.new_page(viewport={"width":375,"height":812})
         try:
             self.prepare(page)
             result=page.evaluate("""() => {
-                window.open=()=>null;
+                window.open=()=>{throw Error("Popup must not be opened")};
                 window.__rptMobileCalls=[];
                 window.downloadCikguLajuRPT=(code,year,name,output,button,viewer)=>{
                     window.__rptMobileCalls.push({code,year,hasViewer:!!viewer});
                     return Promise.resolve(true);
                 };
-                document.querySelector("#rpt-download-mobile").click();
+                document.querySelector("#rpt-download").click();
                 return window.__rptMobileCalls;
             }""")
             self.assertEqual(result,[{"code":"pjpk","year":2,"hasViewer":False}])

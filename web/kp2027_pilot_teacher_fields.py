@@ -121,7 +121,12 @@ def _proposed_support_action(criterion):
     if any(key in value for key in ("emosi", "perasaan")):
         return ("aktiviti kad situasi untuk mengenal pasti dan menerangkan emosi secara berpandu",
                 "latihan kad situasi emosi")
-    if any(key in value for key in ("makanan", "hidangan", "menu", "pemakanan")):
+    if re.search(r"\b(?:anggota|tubuh)\b", value):
+        return ("latihan berpandu memadankan nama anggota tubuh pada carta serta menyebutnya semula",
+                "padanan nama anggota tubuh menggunakan carta")
+    # Match WHOLE words: "menu" is a substring of "menunjukkan" and
+    # previously caused incorrect food follow-up for body-parts lessons.
+    if re.search(r"\b(?:makanan|hidangan|menu|pemakanan)\b", value):
         return ("latihan mengelaskan gambar makanan dan membina menu mudah berpandu",
                 "latihan mengelaskan gambar makanan")
     if any(key in value for key in ("bunyi", "cahaya", "hidupan", "hidup", "keperluan")):
@@ -170,7 +175,9 @@ def _pdf_success_criterion(page):
     next_labels = [box for box in page.search_for("EMK / Nilai") if box.x0 < 130]
     if len(labels) != 1 or len(next_labels) != 1 or not labels[0].y0 < next_labels[0].y0:
         raise TeacherFieldError("Kriteria kejayaan RPH PDF tidak ditemukan.")
-    region = fitz.Rect(155.0, labels[0].y0 - 8.0, page.rect.width - 35,
+    # Start at the criterion row, not 8pt above it. The old clip pulled
+    # the last line of Objektif Pembelajaran into the automatic reflection.
+    region = fitz.Rect(155.0, labels[0].y0, page.rect.width - 35,
                        next_labels[0].y0 - 1.0)
     if not 15 <= region.height <= 150:
         raise TeacherFieldError("Ruang kriteria kejayaan PDF tidak sepadan dengan templat.")
@@ -221,7 +228,26 @@ def _word_personalize(original, fields):
         fields["_reflection"] if fields["_reflection_mode"] == "manual"
         else _reflection_candidates(_word_success_criterion(document))[0]
     )
-    reflection_rows[0].cells[1].text = reflection
+    reflection_cell = reflection_rows[0].cells[1]
+    original_runs = [run for paragraph in reflection_cell.paragraphs for run in paragraph.runs]
+    source_font = next((run.font.name for run in original_runs if run.font.name), None)
+    source_size = next((run.font.size for run in original_runs if run.font.size), None)
+    reflection_cell.text = reflection
+    for paragraph in reflection_cell.paragraphs:
+        for run in paragraph.runs:
+            if source_font:
+                run.font.name = source_font
+            if source_size:
+                run.font.size = source_size
+    # Keep the subject, title, curriculum standard and lesson number inside
+    # the RPH table, but remove the duplicate KP2027 banner line and footer.
+    for paragraph in list(document.paragraphs):
+        if paragraph.text.strip().startswith("KP2027 • TAHUN 1 •"):
+            paragraph._element.getparent().remove(paragraph._element)
+    for section in document.sections:
+        for paragraph in section.footer.paragraphs:
+            if "KP2027 TAHUN 1" in paragraph.text:
+                paragraph.text = ""
     result = BytesIO()
     document.save(result)
     return result.getvalue()
@@ -267,8 +293,31 @@ def _pdf_personalize(original, fields):
                    if a.x0 < 100 and a.y0 > anchors[0].y1]
         if not footers:
             raise TeacherFieldError("Sempadan ruang refleksi PDF tidak ditemukan.")
-        top = anchors[0].y0 - 1.0
-        bottom = min(a.y0 for a in footers) - 4.0
+        # The reflection label is vertically CENTRED, while the original
+        # text can start 10-35pt ABOVE it. Use the full table-cell boundaries
+        # so the original reflection is completely erased before inserting
+        # one consistently sized replacement. Preserve all table borders.
+        horizontal_lines = [
+            d["rect"].y0 for d in page.get_drawings()
+            if d["type"] == "s"
+            and abs(d["rect"].y0 - d["rect"].y1) < 1
+            and d["rect"].x0 < 50
+            and d["rect"].x1 > page.rect.width - 65
+        ]
+        footer_top = min(a.y0 for a in footers)
+        previous_borders = [
+            y for y in horizontal_lines if anchors[0].y0 - 110 < y < anchors[0].y0
+        ]
+        following_borders = [
+            y for y in horizontal_lines if anchors[0].y1 < y < footer_top
+        ]
+        if previous_borders and following_borders:
+            top = max(previous_borders) + 4.0
+            bottom = min(following_borders) - 4.0
+        else:
+            # Legacy source PDFs without drawn borders.
+            top = anchors[0].y0 - 25.0
+            bottom = footer_top - 4.0
         region = fitz.Rect(155.9, top, page.rect.width - 39, bottom)
         if region.height < 24 or region.height > 110:
             raise TeacherFieldError("Saiz kotak refleksi PDF tidak dijangka.")
@@ -283,11 +332,13 @@ def _pdf_personalize(original, fields):
         size = 0.0
         for sentence in candidates:
             safe_sentence = _pdf_safe_reflection(sentence)
-            for font_size in (9.0, 8.3, 7.6, 7.0, 6.4):
+            # The RPH body is serif; use a single serif font for all lines
+            # rather than mixing the original serif with a sans-serif stamp.
+            for font_size in (9.0, 8.7, 8.3, 8.0, 7.6, 7.0):
                 scratch = fitz.open()
                 scratch_page = scratch.new_page(width=page.rect.width, height=page.rect.height)
-                result = scratch_page.insert_textbox(region, safe_sentence, fontname="helv",
-                                                      fontsize=font_size, lineheight=1.0)
+                result = scratch_page.insert_textbox(region, safe_sentence, fontname="tiro",
+                                                      fontsize=font_size, lineheight=1.05)
                 scratch.close()
                 if result >= 0:
                     chosen = safe_sentence
@@ -298,9 +349,20 @@ def _pdf_personalize(original, fields):
         if chosen is None:
             raise TeacherFieldError("Refleksi terlalu panjang untuk kotak PDF. Ringkaskan atau gunakan Word.")
         page.add_redact_annot(region, fill=(1, 1, 1), cross_out=False)
+        # Remove only the redundant KP2027 subtitle and footer (where present).
+        # Do not touch the actual subject title, PdP content or DK citation.
+        for block in page.get_text("dict")["blocks"]:
+            for line in block.get("lines", ()):
+                for span in line["spans"]:
+                    y0, y1 = span["bbox"][1], span["bbox"][3]
+                    if "KP2027" in span["text"] and (y0 < 80 or y0 > 750):
+                        page.add_redact_annot(
+                            fitz.Rect(25, y0 - 1, page.rect.width - 25, y1 + 1),
+                            fill=(1, 1, 1), cross_out=False,
+                        )
         page.apply_redactions(images=0, graphics=0, text=0)
-        if page.insert_textbox(region, chosen, fontname="helv",
-                               fontsize=size, lineheight=1.0) < 0:
+        if page.insert_textbox(region, chosen, fontname="tiro",
+                               fontsize=size, lineheight=1.05) < 0:
             raise TeacherFieldError("Refleksi PDF tidak dapat dimuatkan dengan selamat.")
         data = document.tobytes(garbage=4, deflate=True)
         if not data.startswith(b"%PDF-"):
