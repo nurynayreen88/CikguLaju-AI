@@ -14,7 +14,10 @@ from urllib.request import Request, urlopen
 
 from flask import Blueprint, current_app, jsonify, make_response, request
 
-from web_v1_sessions import issue_session_ticket, verify_session_ticket
+from web_v1_sessions import (
+    REMEMBER_SESSION_SECONDS, DEFAULT_SESSION_SECONDS,
+    issue_session_ticket, verify_session_ticket,
+)
 from web_v1_telegram_auth_routes import COOKIE, _config, _lookup
 
 bp = Blueprint("web_v1_email_auth", __name__)
@@ -167,7 +170,7 @@ def _account_id(auth, auth_user_id, telegram_user_id=None):
     return result
 
 
-def _authenticated_response(auth, uid):
+def _authenticated_response(auth, uid, *, remember=False):
     if type(uid) is not int or uid <= 0:
         raise RuntimeError("Invalid account identity")
     account = _lookup(_config(), uid)
@@ -179,10 +182,12 @@ def _authenticated_response(auth, uid):
     except Exception as exc:
         current_app.logger.warning("Web email referral capture unavailable: %s",
                                    type(exc).__name__)
-    ticket = issue_session_ticket(uid, auth["session_secret"])
+    ticket = issue_session_ticket(uid, auth["session_secret"], remember=remember)
     response = _reply({"authenticated": True})
     response.set_cookie(COOKIE, ticket, secure=True, httponly=True,
-                        samesite="Lax", max_age=43200, path="/")
+                        samesite="Lax",
+                        max_age=REMEMBER_SESSION_SECONDS if remember else DEFAULT_SESSION_SECONDS,
+                        path="/")
     return response
 
 
@@ -190,8 +195,10 @@ def _authenticated_response(auth, uid):
 def email_register():
     if not _same_origin():
         return _reply({"error": "Permintaan tidak sah."}, 403)
-    credentials = _credentials(_request_payload())
-    if credentials is None:
+    payload = _request_payload()
+    remember = payload.get("remember_me", False) if isinstance(payload, dict) else False
+    credentials = _credentials(payload)
+    if credentials is None or type(remember) is not bool:
         return _reply({
             "error": "Masukkan emel yang sah dan kata laluan sekurang-kurangnya 8 aksara."
         }, 400)
@@ -212,7 +219,7 @@ def email_register():
         auth_user_id = _auth_user_id(result)
         if auth_user_id and isinstance(result, dict) and result.get("access_token"):
             uid = _account_id(auth, auth_user_id)
-            return _authenticated_response(auth, uid)
+            return _authenticated_response(auth, uid, remember=remember)
         # Hosted Supabase normally requires email confirmation before sign-in.
         # The account row is created only after a verified sign-in.
         return _reply({
@@ -234,8 +241,10 @@ def email_register():
 def email_login():
     if not _same_origin():
         return _reply({"error": "Permintaan tidak sah."}, 403)
-    credentials = _credentials(_request_payload())
-    if credentials is None:
+    payload = _request_payload()
+    remember = payload.get("remember_me", False) if isinstance(payload, dict) else False
+    credentials = _credentials(payload)
+    if credentials is None or type(remember) is not bool:
         return _reply({
             "error": "Masukkan emel yang sah dan kata laluan sekurang-kurangnya 8 aksara."
         }, 400)
@@ -254,7 +263,7 @@ def email_login():
                 "error": "Emel/kata laluan tidak sah atau emel belum disahkan."
             }, 401)
         uid = _account_id(auth, auth_user_id)
-        return _authenticated_response(auth, uid)
+        return _authenticated_response(auth, uid, remember=remember)
     except IdentityConflict:
         return _reply({"error": "Pautan emel akaun ini memerlukan bantuan admin."}, 409)
     except Exception as exc:

@@ -36,23 +36,73 @@
   const loginButton = document.getElementById("email-login-button");
   const registerButton = document.getElementById("email-register-button");
   const forgotButton = document.getElementById("email-forgot-button");
+  const loginTab = document.getElementById("email-mode-login");
+  const registerTab = document.getElementById("email-mode-register");
+  const authForm = document.getElementById("email-auth-form");
+  const passwordToggle = document.getElementById("email-password-toggle");
+  const repeatWrap = document.getElementById("email-register-confirm-wrap");
+  const repeatPassword = document.getElementById("email-register-confirm");
+  const remember = document.getElementById("email-remember-me");
+  const explainer = document.getElementById("email-auth-explainer");
+  let authMode = "login";
+  let authBusy = false;
+  const authButtons = [loginButton, registerButton, forgotButton, loginTab, registerTab];
 
-  async function runLoginAction(path, button) {
-    if (!loginStatus) return;
-    setBusy([loginButton, registerButton, forgotButton], true);
-    loginStatus.textContent = "Sedang menyemak maklumat…";
+  function selectAuthMode(mode) {
+    if (authBusy || (mode !== "login" && mode !== "register")) return;
+    authMode = mode;
+    const signingIn = mode === "login";
+    loginTab?.classList.toggle("is-active", signingIn);
+    registerTab?.classList.toggle("is-active", !signingIn);
+    loginTab?.setAttribute("aria-selected", String(signingIn));
+    registerTab?.setAttribute("aria-selected", String(!signingIn));
+    if (loginButton) loginButton.hidden = !signingIn;
+    if (registerButton) registerButton.hidden = signingIn;
+    if (repeatWrap) repeatWrap.hidden = signingIn;
+    if (repeatPassword) {
+      repeatPassword.required = !signingIn;
+      if (signingIn) repeatPassword.value = "";
+    }
+    if (loginPassword) {
+      loginPassword.autocomplete = signingIn ? "current-password" : "new-password";
+      loginPassword.placeholder = signingIn
+        ? "Masukkan kata laluan" : "Cipta kata laluan (minimum 8 aksara)";
+    }
+    if (forgotButton) forgotButton.hidden = !signingIn;
+    if (explainer) explainer.textContent = signingIn
+      ? "Sudah mempunyai akaun? Masukkan e-mel dan kata laluan."
+      : "Pengguna baharu boleh daftar menggunakan e-mel. Tidak perlu akaun Telegram.";
+    if (loginStatus) loginStatus.textContent = "";
+  }
+
+  async function runLoginAction(mode) {
+    if (!loginStatus || authBusy) return;
+    authBusy = true;
+    setBusy(authButtons, true);
+    loginStatus.textContent = mode === "register"
+      ? "Sedang mendaftar akaun…" : "Sedang menyemak log masuk…";
     try {
       const body = credentials(loginEmail, loginPassword);
-      const { response, data } = await postJson(path, body);
+      if (mode === "register" && loginPassword.value !== repeatPassword?.value) {
+        throw new Error("Ulangan kata laluan tidak sama.");
+      }
+      body.remember_me = remember?.checked === true;
+      const endpoint = mode === "register"
+        ? "/api/auth/email/register" : "/api/auth/email/login";
+      const { response, data } = await postJson(endpoint, body);
       if (response.status === 202 && data.confirmation_required) {
+        if (loginPassword) loginPassword.value = "";
+        if (repeatPassword) repeatPassword.value = "";
         loginStatus.textContent = data.message ||
-          "Semak emel untuk pengesahan. Selepas itu, kembali ke sini dan log masuk.";
+          "Semak e-mel untuk pengesahan. Selepas itu, pilih Log Masuk.";
         return;
       }
       if (!response.ok) {
         throw new Error(data.error || "Permintaan tidak berjaya. Cuba lagi.");
       }
       if (data.authenticated) {
+        if (loginPassword) loginPassword.value = "";
+        if (repeatPassword) repeatPassword.value = "";
         loginStatus.textContent = "Berjaya. Membuka akaun…";
         window.location.reload();
         return;
@@ -62,42 +112,50 @@
       loginStatus.textContent = error instanceof Error
         ? error.message : "Sambungan tergendala. Cuba lagi.";
     } finally {
-      setBusy([loginButton, registerButton, forgotButton], false);
+      authBusy = false;
+      setBusy(authButtons, false);
     }
   }
 
-  if (loginButton) {
-    loginButton.addEventListener("click", () => {
-      runLoginAction("/api/auth/email/login", loginButton);
-    });
-  }
-  if (registerButton) {
-    registerButton.addEventListener("click", () => {
-      runLoginAction("/api/auth/email/register", registerButton);
-    });
-  }
+  loginTab?.addEventListener("click", () => selectAuthMode("login"));
+  registerTab?.addEventListener("click", () => selectAuthMode("register"));
+  authForm?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    void runLoginAction(authMode);
+  });
+  passwordToggle?.addEventListener("click", () => {
+    if (!loginPassword) return;
+    const revealed = loginPassword.type === "password";
+    loginPassword.type = revealed ? "text" : "password";
+    passwordToggle.textContent = revealed ? "Sembunyi" : "Lihat";
+    passwordToggle.setAttribute("aria-pressed", String(revealed));
+    passwordToggle.setAttribute("aria-label",
+      revealed ? "Sembunyikan kata laluan" : "Tunjukkan kata laluan");
+  });
 
   if (forgotButton) {
     forgotButton.addEventListener("click", async () => {
-      if (!loginStatus) return;
+      if (!loginStatus || authBusy) return;
       const email = loginEmail && loginEmail.value.trim();
       if (!email) {
-        loginStatus.textContent = "Masukkan alamat emel dahulu, kemudian tekan Lupa kata laluan?.";
+        loginStatus.textContent = "Masukkan alamat e-mel dahulu, kemudian tekan Lupa kata laluan?.";
         if (loginEmail) loginEmail.focus();
         return;
       }
-      setBusy([loginButton, registerButton, forgotButton], true);
+      authBusy = true;
+      setBusy(authButtons, true);
       loginStatus.textContent = "Sedang meminta pautan pemulihan…";
       try {
         const { response, data } = await postJson("/api/auth/email/recover", { email });
-        if (!response.ok) throw new Error(data.error || "Emel pemulihan belum dapat diminta.");
+        if (!response.ok) throw new Error(data.error || "E-mel pemulihan belum dapat diminta.");
         loginStatus.textContent = data.message ||
-          "Jika akaun dengan emel ini wujud, pautan pemulihan akan dihantar.";
+          "Jika akaun dengan e-mel ini wujud, pautan pemulihan akan dihantar.";
       } catch (error) {
         loginStatus.textContent = error instanceof Error
           ? error.message : "Sambungan tergendala. Cuba lagi.";
       } finally {
-        setBusy([loginButton, registerButton, forgotButton], false);
+        authBusy = false;
+        setBusy(authButtons, false);
       }
     });
   }
