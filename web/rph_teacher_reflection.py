@@ -5,7 +5,7 @@ import unicodedata
 
 # Auto/Manual selects the Web input mode; it must never appear on printed RPH labels.
 _REFLEKSI_MODE_SUFFIX = re.compile(
-    r"^\\s*refleksi\\s*\\(\\s*auto(?:matik)?\\s*/\\s*manual\\s*\\)\\s*$", re.IGNORECASE
+    r"^\s*refleksi\s*\(\s*auto(?:matik)?\s*/\s*manual\s*\)\s*$", re.IGNORECASE
 )
 
 
