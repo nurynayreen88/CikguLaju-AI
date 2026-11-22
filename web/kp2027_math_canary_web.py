@@ -11,6 +11,7 @@ from hashlib import sha256
 from io import BytesIO
 import json
 import os
+from pathlib import Path
 import re
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, urlsplit
@@ -23,10 +24,22 @@ ORIGIN = "https://cikgulaju-web.onrender.com"
 FEATURE_FLAG = "CIKGULAJU_KP2027_MATH_CANARY_ENABLED"
 FORMATS = {"word": ("docx", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"),
            "pdf": ("pdf", "application/pdf")}
-MAX_LESSON = 10
-EXPECTED_SP = {**{i: "1.1.1" for i in range(1, 5)},
-               **{i: "1.1.2" for i in range(5, 9)},
-               **{i: "1.1.3" for i in range(9, 11)}}
+# Curriculum-only catalog: exact Lesson/SP and digest mapping from immutable QA V11.
+# Binary files never enter the public GitHub repository.
+_CATALOG = json.loads(Path(__file__).with_name("kp2027_math_v11_catalog.json").read_text(encoding="utf-8"))
+if _CATALOG.get("source_archive_sha256") != SOURCE_SHA:
+    raise RuntimeError("KP2027 Mathematics source catalog mismatch")
+MAX_LESSON = 125
+
+
+def expected_entry(group, lesson):
+    if group not in ("A", "B") or type(lesson) is not int or not 1 <= lesson <= MAX_LESSON:
+        raise ValueError("Invalid KP2027 Math lesson")
+    row = _CATALOG[group].get(str(lesson))
+    if not isinstance(row, dict):
+        raise ValueError("Lesson has no verified curriculum mapping")
+    return row
+
 
 
 class PilotUnavailable(Exception):
@@ -34,8 +47,9 @@ class PilotUnavailable(Exception):
 
 
 def valid_selection(group, lesson, fmt):
-    if group not in ("A", "B") or type(lesson) is not int or not 1 <= lesson <= MAX_LESSON or fmt not in FORMATS:
+    if fmt not in FORMATS:
         raise ValueError("Pilihan KP2027 Tahun 1 belum tersedia")
+    expected_entry(group, lesson)
     return group, lesson, fmt
 
 
@@ -86,7 +100,7 @@ def verify_private_row(row, group, lesson, fmt):
             or type(row.get("lesson")) is not int or row["lesson"] != lesson
             or row.get("format") != fmt or row.get("approval_status") != "CANARY_APPROVED"
             or row.get("source_archive_sha256") != SOURCE_SHA
-            or row.get("sp_code") != EXPECTED_SP[lesson]):
+            or row.get("sp_code") != expected_entry(group, lesson)["sp"]):
         raise PilotUnavailable("RPH belum diluluskan untuk muat turun")
     try:
         data = base64.b64decode(row["content_base64"], validate=True)
@@ -95,7 +109,8 @@ def verify_private_row(row, group, lesson, fmt):
     if type(row.get("byte_size")) is not int or row["byte_size"] != len(data):
         raise PilotUnavailable("RPH saiz tidak sepadan")
     digest = row.get("sha256_hex")
-    if not isinstance(digest, str) or len(digest) != 64 or not re.fullmatch("[0-9a-f]{64}", digest) or sha256(data).hexdigest() != digest:
+    if (not isinstance(digest, str) or len(digest) != 64 or not re.fullmatch("[0-9a-f]{64}", digest)
+            or digest != expected_entry(group, lesson)[fmt] or sha256(data).hexdigest() != digest):
         raise PilotUnavailable("RPH integriti gagal")
     return _document(data, fmt)
 
@@ -121,6 +136,60 @@ def fetch_private_document(config, group, lesson, fmt, *, opener=None):
     if not isinstance(rows, list) or len(rows) != 1:
         raise PilotUnavailable("Approved RPH not found")
     return verify_private_row(rows[0], group, lesson, fmt)
+
+
+def fetch_approved_catalog(config, *, opener=None):
+    """Read verified *metadata* only; never send RPH bytes to availability clients.
+
+    Release is data-driven: approve a complete verified Word/PDF pair in the
+    private table and it becomes selectable without a new Web deployment.
+    """
+    base, key = _settings(config)
+    params = urlencode({
+        "select": "kumpulan,lesson,format,sha256_hex,sp_code,source_archive_sha256,approval_status",
+        "subject": "eq.MATH", "approval_status": "eq.CANARY_APPROVED", "limit": "600",
+    })
+    req = Request(base + "/rest/v1/kp2027_private_pilot_assets?" + params,
+                  headers=_headers(key), method="GET")
+    open_request = opener or build_opener(_NoRedirects()).open
+    try:
+        with open_request(req, timeout=12) as response:
+            if getattr(response, "status", None) != 200:
+                raise PilotUnavailable("Curriculum inventory unavailable")
+            raw = response.read(200001)
+        if len(raw) > 200000:
+            raise PilotUnavailable("Inventory too large")
+        records = json.loads(raw)
+    except (HTTPError, URLError, OSError, ValueError, TypeError, json.JSONDecodeError) as exc:
+        raise PilotUnavailable("Curriculum inventory unavailable") from exc
+    if not isinstance(records, list) or len(records) > 600:
+        raise PilotUnavailable("Invalid curriculum inventory")
+    seen = {}
+    for item in records:
+        if not isinstance(item, dict):
+            raise PilotUnavailable("Invalid curriculum inventory")
+        group, lesson, fmt = item.get("kumpulan"), item.get("lesson"), item.get("format")
+        try:
+            valid_selection(group, lesson, fmt)
+        except ValueError:
+            raise PilotUnavailable("Invalid lesson in curriculum inventory") from None
+        expected = expected_entry(group, lesson)
+        if (item.get("sp_code") != expected["sp"] or item.get("sha256_hex") != expected[fmt]
+                or item.get("source_archive_sha256") != SOURCE_SHA
+                or item.get("approval_status") != "CANARY_APPROVED"):
+            raise PilotUnavailable("Unverified material in curriculum inventory")
+        key_ = (group, lesson)
+        formats = seen.setdefault(key_, set())
+        if fmt in formats:
+            raise PilotUnavailable("Duplicate curriculum asset")
+        formats.add(fmt)
+    result = {"A": [], "B": []}
+    for (group, lesson), formats in seen.items():
+        if formats == set(FORMATS):
+            result[group].append(lesson)
+    for group in result:
+        result[group].sort()
+    return result
 
 
 def debit_shared_trial(url, key, uid, reference):
@@ -155,11 +224,18 @@ _PAGE = '''<!doctype html><html lang="ms"><head><meta charset="utf-8"><meta name
 <style>body{margin:0;font:16px system-ui,sans-serif;background:#f5f7fa;color:#1a2735}.wrap{max-width:560px;margin:36px auto;background:white;border-radius:12px;padding:28px;box-shadow:0 6px 22px #19324916}h1{font-size:24px;margin:0 0 10px}p{line-height:1.55}label{display:block;margin:17px 0 7px;font-weight:600}select,button{width:100%;padding:13px;border-radius:7px;font:inherit}select{border:1px solid #bac6d2;background:#fff}button{margin-top:24px;border:0;background:#193755;color:white;font-weight:700;cursor:pointer}button:disabled{opacity:.55}small{color:#586779}.status{min-height:26px;margin-top:18px}a{color:#1c528e}</style></head>
 <body><main class="wrap"><h1>Matematik â¢ KP2027 Tahun 1</h1><p>RPH Lesson awal, format Word dan PDF. Sila log masuk menggunakan akaun CikguLaju. Setiap muat turun pengguna percubaan menggunakan kuota janaan sedia ada.</p>
 <label for="group">Kumpulan sekolah</label><select id="group"><option value="A">Kumpulan A</option><option value="B">Kumpulan B</option></select>
-<label for="lesson">Lesson</label><select id="lesson"><option value="1">Lesson 001</option><option value="2">Lesson 002</option><option value="3">Lesson 003</option><option value="4">Lesson 004</option><option value="5">Lesson 005</option><option value="6">Lesson 006</option><option value="7">Lesson 007</option><option value="8">Lesson 008</option><option value="9">Lesson 009</option><option value="10">Lesson 010</option></select>
+<label for="lesson">Lesson</label><select id="lesson" disabled><option value="">Semak senarai Lesson...</option></select>
 <label for="fmt">Format bahan</label><select id="fmt"><option value="pdf">PDF</option><option value="word">Word (.docx)</option></select>
 <button id="download" type="button">Download RPH</button><p class="status" id="message" role="status" aria-live="polite"></p>
 <small>Hanya Lesson yang telah lulus akan dibenarkan. <a href="/">Kembali ke CikguLaju / Log masuk</a>.</small></main>
-<script>document.getElementById('download').addEventListener('click',async()=>{const b=document.getElementById('download'),m=document.getElementById('message');b.disabled=true;m.textContent='Menyediakan fail...';const group=document.getElementById('group').value,lesson=Number(document.getElementById('lesson').value),format=document.getElementById('fmt').value;try{const r=await fetch('/api/kp2027/sk/tahun-1/matematik/download',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json','Accept':'application/octet-stream'},body:JSON.stringify({group,lesson,format})});if(!r.ok){const j=await r.json().catch(()=>({}));throw Error(j.error||'Muat turun belum tersedia ('+r.status+')')}const blob=await r.blob();const ext=format==='pdf'?'pdf':'docx',name='CIKGULAJU_KP2027_MATH_T1_'+group+'_LESSON'+String(lesson).padStart(3,'0')+'.'+ext;const u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),30000);m.textContent='Fail disediakan. Semak folder Downloads.';}catch(e){m.textContent=e.message}finally{b.disabled=false}})</script></body></html>'''
+<script>
+const g=document.getElementById('group'),l=document.getElementById('lesson'),f=document.getElementById('fmt'),b=document.getElementById('download'),m=document.getElementById('message');
+let choices={A:[],B:[]};b.disabled=true;
+function refresh(){l.replaceChildren();const list=choices[g.value]||[];for(const n of list){const o=document.createElement('option');o.value=String(n);o.textContent='Lesson '+String(n).padStart(3,'0');l.appendChild(o)}l.disabled=list.length===0;b.disabled=list.length===0;if(!list.length)m.textContent='Tiada Lesson yang diluluskan untuk kumpulan ini.';else m.textContent=list.length+' Lesson tersedia untuk Kumpulan '+g.value+'.'}
+g.addEventListener('change',refresh);
+(async()=>{try{const r=await fetch('/api/kp2027/sk/tahun-1/matematik/available',{credentials:'same-origin',headers:{Accept:'application/json'}});const j=await r.json().catch(()=>({}));if(!r.ok)throw Error(j.error||'Senarai Lesson belum tersedia ('+r.status+')');if(!j.groups||!Array.isArray(j.groups.A)||!Array.isArray(j.groups.B))throw Error('Senarai Lesson tidak sah');choices=j.groups;refresh()}catch(e){m.textContent=e.message}})();
+b.addEventListener('click',async()=>{if(l.disabled||!l.value)return;b.disabled=true;m.textContent='Menyediakan fail...';const group=g.value,lesson=Number(l.value),format=f.value;try{const r=await fetch('/api/kp2027/sk/tahun-1/matematik/download',{method:'POST',credentials:'same-origin',headers:{'Content-Type':'application/json','Accept':'application/octet-stream'},body:JSON.stringify({group,lesson,format})});if(!r.ok){const j=await r.json().catch(()=>({}));throw Error(j.error||'Muat turun belum tersedia ('+r.status+')')}const blob=await r.blob();const ext=format==='pdf'?'pdf':'docx',name='CIKGULAJU_KP2027_MATH_T1_'+group+'_LESSON'+String(lesson).padStart(3,'0')+'.'+ext;const u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),30000);m.textContent='Fail disediakan. Semak folder Downloads.';}catch(e){m.textContent=e.message}finally{b.disabled=l.disabled}})
+</script></body></html>'''
 
 
 def create_blueprint():
@@ -203,6 +279,19 @@ def create_blueprint():
         response.headers["Content-Security-Policy"] = ("default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; "
                                                         "connect-src 'self'; img-src 'self' blob:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'")
         return response
+
+    @bp.get("/api/kp2027/sk/tahun-1/matematik/available")
+    def available():
+        if os.environ.get(FEATURE_FLAG) != "1":
+            return denied("Bahan KP2027 belum diaktifkan.", 503, "KP2027_PILOT_DISABLED")
+        config, account, error = account_for_request()
+        if error is not None:
+            return error
+        try:
+            groups = fetch_approved_catalog(config)
+        except PilotUnavailable:
+            return denied("Senarai RPH belum tersedia. Sila cuba lagi.", 503, "INVENTORY_UNAVAILABLE")
+        return jsonify({"groups": groups, "source": "verified-private-kp2027-v11"})
 
     @bp.post("/api/kp2027/sk/tahun-1/matematik/download")
     def download():
