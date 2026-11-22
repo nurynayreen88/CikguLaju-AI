@@ -41,6 +41,10 @@ install_email_auth_ui(app)
 from web.kp2027_math_canary_web import create_blueprint as create_kp2027_math_pilot
 app.register_blueprint(create_kp2027_math_pilot())
 
+# KP2027 Alam dan Manusia, verified source, private login/quota route; OFF by default.
+from web.kp2027_alam_private_web import create_blueprint as create_kp2027_alam_private
+app.register_blueprint(create_kp2027_alam_private())
+
 
 
 
