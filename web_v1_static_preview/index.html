@@ -2517,6 +2517,19 @@ async function loadRptCatalog(){
     entries.push({item,year,curriculum:rptCurriculumFor(item.code,year.year)});
    }
   }
+  // KP2027 Year 1 is an additional, source-checked catalog; the historical
+  // 56-source KSSR RPT catalog and its counters remain unchanged.
+  if(Array.isArray(data.kp2027_rpt_available)){
+   for(const item of data.kp2027_rpt_available){
+    if(!item||!["matematik","bahasa_melayu","alam_dan_manusia"].includes(item.code)||
+       !Array.isArray(item.kp2027_groups)||item.kp2027_groups.join(",")!=="A,B"||
+       item.year!==1||item.pdf_ready!==true||item.docx_ready!==true)continue;
+    const entry={item:{code:item.code,label:item.label},year:item,curriculum:"kp2027"};
+    const oldIndex=entries.findIndex(e=>e.item.code===item.code&&e.year.year===1);
+    if(oldIndex>=0)entries[oldIndex]=entry;
+    else entries.push(entry);
+   }
+  }
   rptCatalog={entries,personalizationAllowed:data.personalization_allowed===true};
   const available=new Set(entries.map(entry=>entry.curriculum));
   const options=rptCurricula.filter(([code])=>available.has(code)).map(([code,label])=>new Option(label,code));
@@ -2594,9 +2607,10 @@ function refreshRptDownload(){
  rptStatus.textContent=[calendar,cover].filter(Boolean).join(" ");
 }
 async function downloadKP2027Rpt(selection,viewer=null){
+ const group=rptKp2027Group.value;
  const target=rptKP2027Url(selection,"pdf");
  if(!target)throw Error("Pilih Kumpulan A/B sebelum muat turun RPT.");
- rptStatus.textContent="Menyediakan PDF RPT Kumpulan "+rptKp2027Group.value+"…";
+ rptStatus.textContent="Menyediakan PDF RPT Kumpulan "+group+"…";
  const response=await fetch(target,{credentials:"same-origin",cache:"no-store"});
  if(!response.ok){
   const details=await response.json().catch(()=>({}));
@@ -2616,16 +2630,16 @@ async function downloadKP2027Rpt(selection,viewer=null){
   const a=document.createElement("a");
   a.href=url;
   a.download="CIKGULAJU_RPT_KP2027_T1_"+selection.item.code.toUpperCase()+
-     "_KUMPULAN_"+rptKp2027Group.value+"_SEMAKAN.pdf";
+     "_KUMPULAN_"+group+"_SEMAKAN.pdf";
   document.body.appendChild(a);a.click();a.remove();
   setTimeout(()=>URL.revokeObjectURL(url),60000);
  }
- rptStatus.textContent="PDF RPT Kumpulan "+rptKp2027Group.value+
+ rptStatus.textContent="PDF RPT Kumpulan "+group+
   " sudah disediakan untuk dimuat turun. Dokumen ialah RPT semakan pelaksanaan.";
 }
 async function downloadSelectedRpt(selection,viewer=null,mobile=false){
  rptDownloading=true;
- for(const select of [rptCurriculum,rptYear,rptSubject])select.disabled=true;
+ for(const select of [rptCurriculum,rptYear,rptSubject,rptKp2027Group])select.disabled=true;
  rptSubjectPicker.sync();
  try{
   if(rptKP2027Choice(selection)){
@@ -2641,6 +2655,7 @@ async function downloadSelectedRpt(selection,viewer=null,mobile=false){
  }finally{
   rptDownloading=false;
   for(const select of [rptCurriculum,rptYear,rptSubject])select.disabled=select.options.length<=1;
+  rptKp2027Group.disabled=!rptKP2027Choice(rptChoice());
    rptSubjectPicker.sync();
  }
 }
