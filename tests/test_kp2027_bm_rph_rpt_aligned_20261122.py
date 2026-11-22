@@ -118,7 +118,7 @@ class TestBmKp2027Rph(TestCase):
         html=(ROOT/"web_v1_static_preview/index.html").read_text("utf-8")
         self.assertIn('value:"BM_SK_KP2027",label:"Bahasa Melayu SK (KP2027)"',html)
         self.assertIn('/api/kp2027/sk/tahun-1/bahasa-melayu-sk',html)
-        self.assertIn('["MATH_KP2027","BM_SK_KP2027"].includes(code)',html)
+        self.assertIn('["MATH_KP2027","BM_SK_KP2027","PJ_KP2027"].includes(code)',html)
         self.assertIn('kp2027TeacherPayload()',html)
         self.assertIn('kp2027DownloadApproved(format)',html)
         self.assertIn('KP2027',html)
