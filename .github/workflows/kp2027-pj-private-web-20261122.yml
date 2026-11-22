@@ -1,0 +1,50 @@
+name: KP2027 PJ Tahun 1 private Word PDF login and source QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'web/kp2027_pj_private_web.py'
+      - 'web/kp2027_pj_t1_catalog.json'
+      - 'tests/test_kp2027_pj_private_web.py'
+      - 'tools/run_web_production.py'
+      - 'web_v1_static_preview/index.html'
+      - '.github/workflows/kp2027-pj-private-web-20261122.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  secured-documents:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Web documents runtime dependencies
+        run: python -m pip install 'Flask>=3.1,<4' python-docx==1.1.2 PyMuPDF==1.26.7
+      - name: Compile source, routes and production launcher
+        run: python -m py_compile web/kp2027_pj_private_web.py tests/test_kp2027_pj_private_web.py tools/run_web_production.py
+      - name: Private integrity and catalog unit tests
+        run: python -m unittest discover -s tests -p 'test_kp2027_pj_private_web.py' -v
+      - name: Regress existing KP2027 menu and quota
+        run: |
+          python -m unittest discover -s tests -p 'test_kp2027_menu_pilot_downloads_20261122.py' -v
+          python -m unittest discover -s tests -p 'test_kp2027_pilot_teacher_fields_20261122.py' -v
+      - name: Ensure feature gate, source pin, private quota and no public download
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          src=Path('web/kp2027_pj_private_web.py').read_text()
+          main=Path('web_v1_static_preview/index.html').read_text()
+          cat=json.loads(Path('web/kp2027_pj_t1_catalog.json').read_text())
+          assert sum(cat['groups'].values())==127 and len(cat['batches'])==8
+          assert 'CIKGULAJU_KP2027_PJ_PRIVATE_ENABLED' in src
+          assert 'approval_status' in src and 'CANARY_APPROVED' in src
+          assert 'sha256(file_bytes)' in src and 'sha256(payload)' in src
+          assert 'authorize_rendered_document' in src and 'Origin' in src
+          assert 'PJ_KP2027' in main
+          assert 'content_base64=' not in src
+          print('PJ_PRIVATE_PREDEPLOY_QA_SUCCESS (not live teacher session proof)')
+          PY
