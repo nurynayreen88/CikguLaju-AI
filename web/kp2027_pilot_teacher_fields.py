@@ -224,6 +224,17 @@ def _word_personalize(original, fields):
     ]
     if len(reflection_rows) != 1:
         raise TeacherFieldError("Kotak refleksi Word tidak ditemukan.")
+    # UI-only mode belongs on the Web form, not the printed RPH.
+    # Preserve the label's existing run typography and table geometry.
+    label_cell = reflection_rows[0].cells[0]
+    if re.fullmatch(r"Refleksi\s*\(\s*Auto(?:matik)?\s*/\s*Manual\s*\)",
+                    label_cell.text.strip(), flags=re.IGNORECASE):
+        runs = [run for paragraph in label_cell.paragraphs for run in paragraph.runs]
+        if not runs:
+            raise TeacherFieldError("Label refleksi Word tidak lengkap.")
+        runs[0].text = "Refleksi"
+        for run in runs[1:]:
+            run.text = ""
     reflection = (
         fields["_reflection"] if fields["_reflection_mode"] == "manual"
         else _reflection_candidates(_word_success_criterion(document))[0]
@@ -286,6 +297,18 @@ def _pdf_personalize(original, fields):
         anchors = [a for a in page.search_for("Refleksi") if a.x0 < 130 and a.y0 > 500]
         if len(anchors) != 1:
             raise TeacherFieldError("Ruang refleksi PDF tidak ditemukan.")
+        # Redact ONLY the UI suffix in the reflection label (never its font
+        # or the shaded cell background). The exact position is checked
+        # against the verified label, and its table border is untouched.
+        suffixes = [
+            rect for phrase in ("(Auto / Manual)", "(Automatik / Manual)")
+            for rect in page.search_for(phrase)
+            if abs(rect.y0 - anchors[0].y0) < 3
+            and anchors[0].x1 <= rect.x0 + 1
+            and rect.x1 < 155.8
+        ]
+        if len(suffixes) == 1:
+            page.add_redact_annot(suffixes[0], fill=None, cross_out=False)
         # A page may contain a second 'Refleksi' in the original instruction
         # and a second 'Rujukan' in the footer; only the left-column labels
         # around the reserved reflection row are reliable anchors.

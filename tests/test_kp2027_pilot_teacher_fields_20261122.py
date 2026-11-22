@@ -50,6 +50,46 @@ def pdf_fixture():
 
 
 class TeacherFields(unittest.TestCase):
+    def test_printed_label_is_only_refleksi_in_word_and_pdf(self):
+        from docx import Document
+        import fitz
+        for fmt, source in (("word", word_fixture()), ("pdf", pdf_fixture())):
+            for payload in (
+                {"reflection_mode": "auto"},
+                {"reflection_mode": "manual", "reflection": "Catatan guru tanpa perubahan."},
+            ):
+                with self.subTest(fmt=fmt, mode=payload["reflection_mode"]):
+                    result = personalize_approved_rph(source, fmt, payload)
+                    if fmt == "word":
+                        document = Document(BytesIO(result))
+                        self.assertEqual(document.tables[1].cell(1, 0).text, "Refleksi")
+                        self.assertIn("sekurang-kurangnya dua objek",
+                                      document.tables[1].cell(0, 1).text)
+                    else:
+                        with fitz.open(stream=result, filetype="pdf") as document:
+                            text = document[0].get_text()
+                            self.assertIn("Refleksi", text)
+                            self.assertNotIn("(Auto / Manual)", text)
+                            self.assertIn("Rujukan DK Matematik", text)
+                    self.assertNotEqual(result, source)
+
+    def test_word_reflection_label_preserves_original_typography(self):
+        from docx import Document
+        from docx.shared import Pt
+        document = Document(BytesIO(word_fixture()))
+        original_run = document.tables[1].cell(1, 0).paragraphs[0].runs[0]
+        original_run.font.name = "Liberation Serif"
+        original_run.font.size = Pt(9)
+        original_run.bold = True
+        buffer = BytesIO()
+        document.save(buffer)
+        output = personalize_approved_rph(buffer.getvalue(), "word", {})
+        label = Document(BytesIO(output)).tables[1].cell(1, 0)
+        self.assertEqual(label.text, "Refleksi")
+        self.assertEqual(label.paragraphs[0].runs[0].font.name, "Liberation Serif")
+        self.assertAlmostEqual(label.paragraphs[0].runs[0].font.size.pt, 9)
+        self.assertTrue(label.paragraphs[0].runs[0].bold)
+
     def test_auto_reflection_is_not_placeholder_even_when_teacher_fields_blank(self):
         from docx import Document
         import fitz
