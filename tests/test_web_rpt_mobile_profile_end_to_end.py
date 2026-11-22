@@ -83,6 +83,7 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
                 return route.fulfill(status=200,content_type="application/pdf",
                     headers={"X-RPT-Source-SHA256":"0"*64 if bad_hash else entry["sha256"],
                              "Cache-Control":"no-store, private",
+                             "Content-Disposition":'attachment; filename="CIKGULAJU_RPT_PENDIDIKAN_ISLAM_TAHUN_4_2027_DRAF.pdf"',
                              "X-RPT-Personalization-Allowed":"1" if paid else "0"},
                     body=ORIGINAL)
             # Unrelated preview/analytics assets are not used in this test.
@@ -117,9 +118,36 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
                     timeout=15000
                 )
                 self.assertEqual(downloads,[])
+            elif not paid:
+                # A mocked browser route cannot reliably persist a native
+                # attachment; inspect the *real trusted tap* without navigating
+                # to the fake .test host, then verify the server attachment
+                # contract in separate route tests.
+                page.evaluate("""() => {
+                    window.__freeRPTTap=null;
+                    const link=document.getElementById("rpt-download-mobile");
+                    link.addEventListener("click",event=>{
+                        window.__freeRPTTap={
+                            href:link.getAttribute("href"),
+                            download:link.getAttribute("download"),
+                            target:link.getAttribute("target"),
+                            trusted:event.isTrusted
+                        };
+                        event.preventDefault();
+                    });
+                }""")
+                page.locator("#rpt-download-mobile").tap()
+                self.assertEqual(page.evaluate("window.__freeRPTTap"),{
+                    "href":"/api/rpt/2027/all/pendidikan_islam/4.pdf",
+                    "download":"",
+                    "target":None,
+                    "trusted":True
+                })
+                self.assertEqual(downloads,[])
+                self.assertFalse(page.locator("#rpt-download-mobile").is_hidden())
             else:
-                # The FIRST tap downloads the final, verified file directly.
-                # There must be no second "Simpan PDF" button or popup.
+                # The paid version uses verified Blob with personalized cover:
+                # the FIRST tap downloads without opening another page.
                 with page.expect_download(timeout=30000) as item:
                     page.locator("#rpt-download").tap()
                 downloaded=item.value
@@ -137,12 +165,8 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
                 self.assertGreater(output["bytes"],8000)
                 self.assertEqual(output["header"],b"%PDF-")
                 self.assertEqual(downloads,[output["filename"]])
-                if paid:
-                    self.assertNotEqual(output["sha"],entry["sha256"])
-                    self.assertIn("PENDIDIKAN_ISLAM_TAHUN_4_2027_ISI_PROFIL.pdf",output["filename"])
-                else:
-                    self.assertEqual(output["sha"],entry["sha256"])
-                    self.assertIn("PENDIDIKAN_ISLAM_TAHUN_4_2027_PERCUMA.pdf",output["filename"])
+                self.assertNotEqual(output["sha"],entry["sha256"])
+                self.assertIn("PENDIDIKAN_ISLAM_TAHUN_4_2027_ISI_PROFIL.pdf",output["filename"])
             self.assertEqual(len(context.pages),1)
             self.assertEqual(page.locator("#rpt-prepared-manual-link").count(),0)
             if bad_hash or not paid:
@@ -150,7 +174,10 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
                 self.assertNotIn(("GET","/api/web/teacher/school-logo"),requests)
             else:
                 self.assertIn(("GET","/api/web/teacher/profile"),requests)
-            self.assertIn(("GET","/api/rpt/2027/all/pendidikan_islam/4.pdf"),requests)
+            if bad_hash or paid:
+                self.assertIn(("GET","/api/rpt/2027/all/pendidikan_islam/4.pdf"),requests)
+            else:
+                self.assertNotIn(("GET","/api/rpt/2027/all/pendidikan_islam/4.pdf"),requests)
             if not bad_hash and paid:
                 self.assertIn(("GET","/assets/rpt-original-cover-layout.json"),requests)
                 self.assertIn(("GET","/api/web/teacher/school-logo"),requests)
@@ -165,7 +192,7 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
     def test_invalid_source_sha_never_issues_a_personalized_pdf(self):
         self.run_case(bad_hash=True)
 
-    def test_free_user_receives_identical_source_and_profile_is_never_read(self):
+    def test_free_user_gets_native_attachment_link_without_profile_fetch(self):
         self.run_case(paid=False)
 
 
