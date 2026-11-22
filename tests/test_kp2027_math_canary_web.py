@@ -191,7 +191,9 @@ class TestFlaskDownloadContract(unittest.TestCase):
                       patch.object(sessions,'verify_session_ticket',return_value=123),
                       patch.object(quota,'has_active_paid_access',return_value=paid),
                       patch.object(quota,'authorize_rendered_document',return_value={'allowed':True,'remaining':9}),
-                      patch.object(c,'fetch_private_document',return_value=asset)]
+                      patch.object(c,'fetch_private_document',return_value=asset),
+                      # Synthetic bytes exercise auth/quota; real-layout tests own personalization.
+                      patch('web.kp2027_pilot_teacher_fields.personalize_approved_rph',side_effect=lambda data,fmt,fields:data)]
         self.mocks=[p.start() for p in self.stack]
         self.addCleanup(lambda:[p.stop() for p in reversed(self.stack)])
         app=self.F(__name__); app.testing=True

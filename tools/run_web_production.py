@@ -45,6 +45,10 @@ app.register_blueprint(create_kp2027_math_pilot())
 from web.kp2027_alam_private_web import create_blueprint as create_kp2027_alam_private
 app.register_blueprint(create_kp2027_alam_private())
 
+# KP2027 BM SK Tahun 1: 353 RPH following published RPT A/B; authenticated downloads.
+from web.kp2027_bm_rph_web import create_blueprint as create_kp2027_bm_rph
+app.register_blueprint(create_kp2027_bm_rph())
+
 
 
 
