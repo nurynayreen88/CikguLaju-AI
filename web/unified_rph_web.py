@@ -1201,6 +1201,11 @@ def create_blueprint():
         if fmt == "word":
             from web.rph_activity_heading_delivery import style_word_activity_titles
             document = style_word_activity_titles(document)
+        # Shared KSSR/PPKI/DLP/other-subject reflection policy; only edits a
+        # verifiably matching document cell and never the private PI v2 source.
+        # Run BEFORE charging any trial quota.
+        from web.rph_reflection_universal import personalize_verified_document
+        document = personalize_verified_document(document, fmt, selected)
         if g.cikgulaju_rph_paid:
             return document, None, None
         from web.rph_delivery_quota import authorize_rendered_document
