@@ -231,8 +231,8 @@ def render_pdf(record):
             ("INNERGRID", (0, 0), (-1, -1), .45, colors.HexColor("#8393A3")),
             ("LEFTPADDING", (0, 0), (-1, -1), 6),
             ("RIGHTPADDING", (0, 0), (-1, -1), 6),
-            ("TOPPADDING", (0, 0), (-1, -1), 6),
-            ("BOTTOMPADDING", (0, 0), (-1, -1), 6),
+            ("TOPPADDING", (0, 0), (-1, -1), 4),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
         ]
         for n in shaded_rows:
             styles.append(("BACKGROUND", (0, n), (0, n), colors.HexColor("#"+TONE)))
@@ -249,17 +249,17 @@ def render_pdf(record):
         ("BACKGROUND", (0, 0), (0, 0), colors.HexColor("#"+STRONG)),
         ("BACKGROUND", (1, 0), (1, 0), colors.HexColor("#"+TONE)),
     ]))
-    story = [hdr, Spacer(1, 4*mm)]
+    story = [hdr, Spacer(1, 2.5*mm)]
     standards, activities, follow_up = _rows(record)
     def content_table(rows):
         return tb([[para(label, bold=True), pack(contents)] for label, contents in rows],
                   [LABEL_WIDTH_MM, OUTER_WIDTH_MM-LABEL_WIDTH_MM],
                   range(len(rows)))
-    story += [content_table(standards), Spacer(1, 4*mm)]
+    story += [content_table(standards), Spacer(1, 2.5*mm)]
     story += [content_table([
         (label, [role+": "+value for role, value in chunks])
         for label,chunks in activities
-    ]), Spacer(1, 4*mm)]
+    ]), Spacer(1, 2.5*mm)]
     story.append(content_table(follow_up))
     doc.build(story)
     result=pdf.getvalue()
