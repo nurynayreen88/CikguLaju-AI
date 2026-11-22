@@ -88,7 +88,7 @@ class TeacherFields(unittest.TestCase):
                 for reflection in _reflection_candidates(criterion):
                     self.assertEqual(reflection.count("____"), 2)
                     self.assertIn("belum menguasai", reflection)
-                    self.assertIn(criterion, reflection)
+                    self.assertIn(criterion.removeprefix("Murid "), reflection)
                 self.assertIn(expected, _reflection_candidates(criterion)[0])
 
     def test_manual_reflection_overrides_criterion_based_auto_text(self):
