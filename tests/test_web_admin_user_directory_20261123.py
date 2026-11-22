@@ -146,7 +146,7 @@ class UserDirectoryTests(unittest.TestCase):
         self.assertEqual(json.loads(opener.requests[0][0].data),
                          {"telegram_user_id": EMAIL_ID, "source": "web"})
         with self.assertRaises(ValueError):
-            record_verified_web_login(CONF, 2**63, opener=LedgerOpener())
+            record_verified_web_login(CONF, 2**63, opener=FakeOpener())
 
 
 if __name__ == "__main__":
