@@ -82,23 +82,77 @@ def _clean_success_criterion(value):
     return criterion
 
 
-def _reflection_candidates(criterion):
-    """General, evidence-neutral reflection followed by the actual success criterion.
+def _proposed_support_action(criterion):
+    """Rule-based, topic-appropriate follow-up; never claim it has occurred."""
+    value = criterion.casefold()
+    if "deria" in value or ("objek" in value and ("membanding" in value or "ciri" in value)):
+        return ("latihan berpandu membandingkan dua objek selamat menggunakan kad ciri dan deria",
+                "latihan membandingkan dua objek selamat")
+    if any(key in value for key in ("sentuhan", "situasi tidak selamat", "keselamatan", "meminta bantuan")):
+        return ("simulasi situasi selamat dan latihan meminta bantuan daripada orang dewasa dipercayai",
+                "simulasi keselamatan secara berpandu")
+    if any(key in value for key in ("tambah", "tolak", "ikatan nombor", "operasi")):
+        return ("latihan berperingkat menggunakan pembilang dan kad operasi serta semakan semula",
+                "latihan operasi dengan pembilang")
+    if any(key in value for key in ("nombor", "kuantiti", "membilang", "angka")):
+        return ("latihan individu menggunakan kad nombor, pembilang dan padanan kuantiti",
+                "latihan nombor menggunakan pembilang")
+    if any(key in value for key in ("wang", "syiling", "ringgit", "sen")):
+        return ("aktiviti padanan nilai menggunakan wang replika dan situasi jual beli mudah",
+                "latihan nilai wang menggunakan replika")
+    if any(key in value for key in ("piktograf", "data", "maklumat harian")):
+        return ("latihan membaca piktograf serta mengumpul dan mengelaskan data mudah",
+                "latihan membaca data berpandu")
+    if any(key in value for key in ("mengukur", "ukuran", "panjang", "sentimeter")):
+        return ("aktiviti mengukur semula objek sebenar dengan alat yang sesuai",
+                "amali mengukur objek secara berpandu")
+    if any(key in value for key in ("bentuk", "pola")):
+        return ("latihan mengelaskan bentuk dan menyusun pola dengan kad dan bahan konkrit",
+                "latihan mengelaskan bentuk menggunakan kad")
+    if any(key in value for key in ("jam", "waktu", "kalendar", "masa")):
+        return ("latihan membaca jam model dan kalendar melalui contoh harian",
+                "latihan masa menggunakan jam model")
+    if any(key in value for key in ("lagu", "nyanyi", "irama", "muzik", "gerak mengikut")):
+        return ("latihan ulangan secara berkumpulan kecil menggunakan contoh irama dan pergerakan",
+                "latihan irama dan gerakan berpandu")
+    if any(key in value for key in ("melukis", "lukisan", "poster", "kraf", "model", "menghasilkan")):
+        return ("tunjuk cara langkah demi langkah menggunakan contoh visual dan bahan maujud",
+                "tunjuk cara menggunakan contoh visual")
+    if any(key in value for key in ("emosi", "perasaan")):
+        return ("aktiviti kad situasi untuk mengenal pasti dan menerangkan emosi secara berpandu",
+                "latihan kad situasi emosi")
+    if any(key in value for key in ("makanan", "hidangan", "menu", "pemakanan")):
+        return ("latihan mengelaskan gambar makanan dan membina menu mudah berpandu",
+                "latihan mengelaskan gambar makanan")
+    if any(key in value for key in ("bunyi", "cahaya", "hidupan", "hidup", "keperluan")):
+        return ("pemerhatian berstruktur dengan bahan sebenar dan kad pengelasan",
+                "aktiviti pemerhatian dan pengelasan")
+    return ("bimbingan kumpulan kecil melalui contoh langkah demi langkah dan pentaksiran semula",
+            "latihan berpandu dan pentaksiran semula")
 
-    Do not invent numbers of pupils who passed or claim mastery before assessment.
-    Shorter versions preserve the *whole* criterion for tight one-page PDFs.
+
+def _reflection_candidates(criterion):
+    """Auto text: leave both pupil counts blank and propose a criterion-specific action.
+
+    No mastery numbers can be inferred from class size or document metadata.
+    Every variant retains both blank fields, the full verified criterion, and
+    a follow-up action; compact variants accommodate one-page PDF templates.
     """
     criterion = _clean_success_criterion(criterion)
+    action, short_action = _proposed_support_action(criterion)
+    # Turn the verified "Murid <kata kerja> ..." into a natural, complete
+    # mastery sentence; never assert actual counts or compute them.
+    clause = criterion[6:] if criterion.casefold().startswith("murid ") else criterion
+    clause = clause[0].lower() + clause[1:]
     return (
-        "PdP dilaksanakan mengikut perancangan. Pencapaian murid ditaksir "
-        "berdasarkan kriteria kejayaan, iaitu " + criterion[0].lower() + criterion[1:] + ". "
-        "Bimbingan susulan diberikan mengikut keperluan.",
-        "PdP dilaksanakan mengikut perancangan. Kriteria kejayaan: "
-        + criterion + ". Bimbingan susulan mengikut keperluan.",
-        "PdP dilaksanakan mengikut perancangan. Kriteria kejayaan: "
-        + criterion + ".",
+        "PdP dilaksanakan mengikut perancangan. ____ orang murid menguasai "
+        "kemahiran " + clause + ". "
+        "____ orang murid belum menguasai dan akan mengikuti " + action + ".",
+        "____ orang murid menguasai kemahiran " + clause + ". "
+        "____ orang murid belum menguasai; tindakan: " + short_action + ".",
+        "____ orang menguasai kemahiran " + clause + ". "
+        "____ orang belum menguasai; tindakan: " + short_action + ".",
     )
-
 
 def _word_success_criterion(document):
     rows = [
