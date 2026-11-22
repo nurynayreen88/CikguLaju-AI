@@ -2522,7 +2522,7 @@ async function loadRptCatalog(){
   if(Array.isArray(data.kp2027_rpt_available)){
    for(const item of data.kp2027_rpt_available){
     if(!item||!["matematik","bahasa_melayu","alam_dan_manusia"].includes(item.code)||
-       !Array.isArray(item.kp2027_groups)||item.kp2027_groups.join(",")!=="A,B"||
+       item.kp2027_combined!==true||
        item.year!==1||item.pdf_ready!==true||item.docx_ready!==true)continue;
     const entry={item:{code:item.code,label:item.label},year:item,curriculum:"kp2027"};
     const oldIndex=entries.findIndex(e=>e.item.code===item.code&&e.year.year===1);
@@ -2549,14 +2549,11 @@ function rptChoice(){
 function rptKP2027Choice(entry){
  return Boolean(entry?.year?.year===1&&entry.curriculum==="kp2027"&&
   ["matematik","bahasa_melayu","alam_dan_manusia"].includes(entry.item.code)&&
-  Array.isArray(entry.year.kp2027_groups)&&entry.year.kp2027_groups.includes("A")&&
-  entry.year.kp2027_groups.includes("B")&&entry.year.pdf_ready===true);
+  entry.year.kp2027_combined===true&&entry.year.pdf_ready===true);
 }
 function rptKP2027Url(entry,fmt){
- if(!rptKP2027Choice(entry)||!["pdf","docx"].includes(fmt)||
-    !["A","B"].includes(rptKp2027Group.value))return null;
- return "/api/rpt/2027/kp2027/tahun-1/"+entry.item.code+"/"+
-   rptKp2027Group.value+"."+fmt;
+ if(!rptKP2027Choice(entry)||!["pdf","docx"].includes(fmt))return null;
+ return "/api/rpt/2027/kp2027/tahun-1/gabungan/"+entry.item.code+"."+fmt;
 }
 function rptCanDownload(entry){
  if(!entry)return false;
@@ -2578,9 +2575,9 @@ function refreshRptDownload(){
  if(prepared){URL.revokeObjectURL(prepared.href);prepared.remove();}
  const selection=rptChoice();
  const kpChoice=rptKP2027Choice(selection);
- rptKp2027GroupWrap.hidden=!kpChoice;
- rptKp2027Group.disabled=!kpChoice;
- if(!kpChoice)rptKp2027Group.value="";
+ rptKp2027GroupWrap.hidden=true;
+ rptKp2027Group.disabled=true;
+ rptKp2027Group.value="";
  const ready=rptCanDownload(selection);
  rptDownload.disabled=!ready;
  rptDownload.hidden=!ready;
@@ -2598,9 +2595,9 @@ function refreshRptDownload(){
  if(!year.download_enabled){rptStatus.textContent="RPT ini memerlukan akses berbayar aktif.";return;}
  if(kpChoice){
   rptStatus.textContent=ready
-   ?"RPT SEMAKAN PELAKSANAAN • Kumpulan "+rptKp2027Group.value+". "+
-     "Sahkan agihan PdP dan tarikh mengikut jadual sekolah sebelum guna. Word dan PDF disediakan."
-   :"Pilih Kumpulan A atau B dahulu. Setiap kumpulan mempunyai agihan tarikh berbeza.";
+   ?"RPT SEMAKAN PELAKSANAAN • Satu RPT mengandungi Kumpulan A dan B. "+
+     "Sahkan agihan PdP, tarikh dan jadual sekolah sebelum guna. Word dan PDF disediakan."
+   :"RPT KP2027 Tahun 1 belum boleh dimuat turun.";
   return;
  }
  if(selection.curriculum==="ppki"){rptStatus.textContent=year.note;return;}
@@ -2609,10 +2606,9 @@ function refreshRptDownload(){
  rptStatus.textContent=[calendar,cover].filter(Boolean).join(" ");
 }
 async function downloadKP2027Rpt(selection,viewer=null){
- const group=rptKp2027Group.value;
  const target=rptKP2027Url(selection,"pdf");
- if(!target)throw Error("Pilih Kumpulan A/B sebelum muat turun RPT.");
- rptStatus.textContent="Menyediakan PDF RPT Kumpulan "+group+"…";
+ if(!target)throw Error("RPT gabungan A/B belum tersedia.");
+ rptStatus.textContent="Menyediakan satu PDF RPT gabungan Kumpulan A dan B…";
  const response=await fetch(target,{credentials:"same-origin",cache:"no-store"});
  if(!response.ok){
   const details=await response.json().catch(()=>({}));
@@ -2632,12 +2628,12 @@ async function downloadKP2027Rpt(selection,viewer=null){
   const a=document.createElement("a");
   a.href=url;
   a.download="CIKGULAJU_RPT_KP2027_T1_"+selection.item.code.toUpperCase()+
-     "_KUMPULAN_"+group+"_SEMAKAN.pdf";
+     "_KUMPULAN_AB_GABUNGAN_2027.pdf";
   document.body.appendChild(a);a.click();a.remove();
   setTimeout(()=>URL.revokeObjectURL(url),60000);
  }
- rptStatus.textContent="PDF RPT Kumpulan "+group+
-  " sudah disediakan untuk dimuat turun. Dokumen ialah RPT semakan pelaksanaan.";
+ rptStatus.textContent="PDF RPT gabungan Kumpulan A dan B sudah disediakan. "+
+  "Satu fail setiap subjek; status SEMAKAN PELAKSANAAN.";
 }
 async function downloadSelectedRpt(selection,viewer=null,mobile=false){
  rptDownloading=true;

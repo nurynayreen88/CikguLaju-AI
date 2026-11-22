@@ -5,6 +5,9 @@ on:
     paths:
       - 'rpt_2027/kp2027/year1_rpt_bm_math_alam_20261122.zip'
       - 'rpt_2027/kp2027/year1_rpt_bm_math_alam_20261122_umum.zip'
+      - 'rpt_2027/kp2027/year1_rpt_bm_math_alam_gabungan_ab_20261122.zip'
+      - 'web/kp2027_year1_rpt_combined.py'
+      - 'tests/test_kp2027_rpt_ab_combined_20261122.py'
       - 'web/kp2027_year1_rpt_bundle.py'
       - 'web/rpt_2027_all_http.py'
       - 'web_v1_static_preview/index.html'
@@ -23,8 +26,10 @@ jobs:
           python-version: '3.12'
       - name: Verify all 12 source SHA hashes, A/B and Web
         run: python -m unittest discover -s tests -p 'test_kp2027_rpt_year1_20261122.py' -v
+      - name: Validate one combined RPT per subject
+        run: python -m unittest discover -s tests -p 'test_kp2027_rpt_ab_combined_20261122.py' -v
       - name: Python source syntax
-        run: python -m py_compile web/kp2027_year1_rpt_bundle.py web/rpt_2027_all_http.py
+        run: python -m py_compile web/kp2027_year1_rpt_bundle.py web/kp2027_year1_rpt_combined.py web/rpt_2027_all_http.py
       - name: Browser JavaScript syntax
         run: |
           node - <<'NODE'
