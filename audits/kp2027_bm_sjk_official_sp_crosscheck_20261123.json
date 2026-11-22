@@ -1,0 +1,389 @@
+{
+  "id": "kp2027_bm_sjk_tahun1_official_sp_crosscheck_20261123",
+  "verified_on": "2026-11-23",
+  "source": {
+    "title": "2. DK BAHASA MELAYU SJK TAHUN 1_ISBN.pdf",
+    "file_id": "19eJeNYAx5osXc2rvNjeE_pihg9euJS0S",
+    "isbn": "978-967-420-798-4",
+    "mime_type": "application/pdf",
+    "provider": "Google Drive; official DK KPM 2026"
+  },
+  "method": "Read original PDF text and verify exact code presence for each of the 26 SP; compare each editorial topic to the immediate original SP context. This is independent source-code alignment QA, not curriculum release approval. Draft PDF page references remain provisional.",
+  "outcome": {
+    "verified_unique_sp_codes": 26,
+    "verified_code_focus_alignment": 26,
+    "draft_rph_count": 52,
+    "ready_rph_count": 0,
+    "rpt_ab_final_approved": false,
+    "official_sk_sp_descriptions_in_drafts": false,
+    "user_word_pdf_approved": false,
+    "web_download_verified": false
+  },
+  "release_gate": "QA_HOLD_NOT_READY",
+  "checks": [
+    {
+      "sp": "1.1.1",
+      "sk": "1.1",
+      "editorial_focus": "Bunyi persekitaran",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP001",
+        "BM_SJK_KP2027_T1_PDP002"
+      ],
+      "source_pdf_page_draft": 34,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "1.1.2",
+      "sk": "1.1",
+      "editorial_focus": "Abjad dan suku kata",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP003",
+        "BM_SJK_KP2027_T1_PDP004"
+      ],
+      "source_pdf_page_draft": 34,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "1.1.3",
+      "sk": "1.1",
+      "editorial_focus": "Sebutan dan intonasi",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP005",
+        "BM_SJK_KP2027_T1_PDP006"
+      ],
+      "source_pdf_page_draft": 34,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "1.2.1",
+      "sk": "1.2",
+      "editorial_focus": "Respons ujaran sopan",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP007",
+        "BM_SJK_KP2027_T1_PDP008"
+      ],
+      "source_pdf_page_draft": 35,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "1.2.2",
+      "sk": "1.2",
+      "editorial_focus": "Ucapan mengikut situasi",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP009",
+        "BM_SJK_KP2027_T1_PDP010"
+      ],
+      "source_pdf_page_draft": 35,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "1.2.3",
+      "sk": "1.2",
+      "editorial_focus": "Arahan dan pertanyaan di sekolah",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP011",
+        "BM_SJK_KP2027_T1_PDP012"
+      ],
+      "source_pdf_page_draft": 36,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "1.2.4",
+      "sk": "1.2",
+      "editorial_focus": "Arahan dan pertanyaan di rumah",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP013",
+        "BM_SJK_KP2027_T1_PDP014"
+      ],
+      "source_pdf_page_draft": 36,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "2.1.1",
+      "sk": "2.1",
+      "editorial_focus": "Ajuk bunyi persekitaran",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP015",
+        "BM_SJK_KP2027_T1_PDP016"
+      ],
+      "source_pdf_page_draft": 42,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "2.1.2",
+      "sk": "2.1",
+      "editorial_focus": "Sebut abjad dan suku kata",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP017",
+        "BM_SJK_KP2027_T1_PDP018"
+      ],
+      "source_pdf_page_draft": 42,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "2.1.3",
+      "sk": "2.1",
+      "editorial_focus": "Ujaran dengan intonasi",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP019",
+        "BM_SJK_KP2027_T1_PDP020"
+      ],
+      "source_pdf_page_draft": 42,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "2.2.1",
+      "sk": "2.2",
+      "editorial_focus": "Ujaran sopan di sekolah",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP021",
+        "BM_SJK_KP2027_T1_PDP022"
+      ],
+      "source_pdf_page_draft": 43,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "2.2.2",
+      "sk": "2.2",
+      "editorial_focus": "Ujaran sopan di rumah",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP023",
+        "BM_SJK_KP2027_T1_PDP024"
+      ],
+      "source_pdf_page_draft": 43,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "2.3.1",
+      "sk": "2.3",
+      "editorial_focus": "Perihal diri",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP025",
+        "BM_SJK_KP2027_T1_PDP026"
+      ],
+      "source_pdf_page_draft": 43,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "2.3.2",
+      "sk": "2.3",
+      "editorial_focus": "Cerita bernilai murni",
+      "official_code_found": true,
+      "official_text_extracted_matches": 2,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP027",
+        "BM_SJK_KP2027_T1_PDP028"
+      ],
+      "source_pdf_page_draft": 44,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "2.3.3",
+      "sk": "2.3",
+      "editorial_focus": "Lakonan cerita",
+      "official_code_found": true,
+      "official_text_extracted_matches": 2,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP029",
+        "BM_SJK_KP2027_T1_PDP030"
+      ],
+      "source_pdf_page_draft": 44,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "3.1.1",
+      "sk": "3.1",
+      "editorial_focus": "Kenal simbol dan abjad",
+      "official_code_found": true,
+      "official_text_extracted_matches": 2,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP031",
+        "BM_SJK_KP2027_T1_PDP032"
+      ],
+      "source_pdf_page_draft": 50,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "3.1.2",
+      "sk": "3.1",
+      "editorial_focus": "Suku kata dan perkataan",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP033",
+        "BM_SJK_KP2027_T1_PDP034"
+      ],
+      "source_pdf_page_draft": 50,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "3.1.3",
+      "sk": "3.1",
+      "editorial_focus": "Perkataan, frasa dan ayat",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP035",
+        "BM_SJK_KP2027_T1_PDP036"
+      ],
+      "source_pdf_page_draft": 50,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "3.2.1",
+      "sk": "3.2",
+      "editorial_focus": "Ayat dan intonasi",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP037",
+        "BM_SJK_KP2027_T1_PDP038"
+      ],
+      "source_pdf_page_draft": 51,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "3.2.2",
+      "sk": "3.2",
+      "editorial_focus": "Maklumat dalam bahan",
+      "official_code_found": true,
+      "official_text_extracted_matches": 2,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP039",
+        "BM_SJK_KP2027_T1_PDP040"
+      ],
+      "source_pdf_page_draft": 51,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "3.2.3",
+      "sk": "3.2",
+      "editorial_focus": "Respons berdasarkan bacaan",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP041",
+        "BM_SJK_KP2027_T1_PDP042"
+      ],
+      "source_pdf_page_draft": 51,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "4.1.1",
+      "sk": "4.1",
+      "editorial_focus": "Lakaran bentuk",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP043",
+        "BM_SJK_KP2027_T1_PDP044"
+      ],
+      "source_pdf_page_draft": 56,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "4.1.2",
+      "sk": "4.1",
+      "editorial_focus": "Bentuk dan tekap abjad",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP045",
+        "BM_SJK_KP2027_T1_PDP046"
+      ],
+      "source_pdf_page_draft": 56,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "4.1.3",
+      "sk": "4.1",
+      "editorial_focus": "Menyalin tulisan",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP047",
+        "BM_SJK_KP2027_T1_PDP048"
+      ],
+      "source_pdf_page_draft": 56,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "4.2.1",
+      "sk": "4.2",
+      "editorial_focus": "Gabung suku kata dan frasa",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP049",
+        "BM_SJK_KP2027_T1_PDP050"
+      ],
+      "source_pdf_page_draft": 56,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    },
+    {
+      "sp": "4.2.2",
+      "sk": "4.2",
+      "editorial_focus": "Bina dan tulis ayat",
+      "official_code_found": true,
+      "official_text_extracted_matches": 1,
+      "linked_drafts": [
+        "BM_SJK_KP2027_T1_PDP051",
+        "BM_SJK_KP2027_T1_PDP052"
+      ],
+      "source_pdf_page_draft": 56,
+      "code_review": "verified_against_original",
+      "pedagogical_approval": "pending"
+    }
+  ]
+}
