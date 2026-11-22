@@ -68,7 +68,7 @@ class TestUniversalReflection(unittest.TestCase):
         self.assertIn("____ pupils",text)
         self.assertEqual(text.count("____"),2)
         self.assertIn(ENGLISH_CRITERION,text)
-        self.assertIn("oral practice",text)
+        self.assertIn("guided reading",text)
 
     def test_verified_kssr_layout_automatic_and_manual(self):
         layout={
@@ -86,6 +86,25 @@ class TestUniversalReflection(unittest.TestCase):
         layout["footer"][1]["value"]="Refleksi auto"
         self.assertTrue(personalize_layout(layout,{"reflection":"Catatan cikgu sendiri."},"SCIENCE"))
         self.assertEqual(layout["footer"][1]["value"],"Catatan cikgu sendiri.")
+
+    def test_actual_kssr_telegram_layout_uses_shared_policy(self):
+        from web.telegram_rph_parity import build_layout
+        source={
+            "subject":"MORAL","year":2,"unit":"Jiran Baik","lesson":1,
+            "teacher":{"class":"2 Amanah","date":"","time":"","students":"30"},
+            "fields":[
+                {"label":"Kriteria Kejayaan","value":CRITERION},
+                {"label":"Aktiviti 1","value":"Murid membandingkan dua objek selamat."},
+            ],
+        }
+        layout=build_layout(source,{"MORAL":"Pendidikan Moral"})
+        self.assertEqual(layout["style"],"telegram-native-rph-v1")
+        self.assertEqual(layout["footer"][1]["value"].count("____"),2)
+        self.assertIn("deria",layout["footer"][1]["value"])
+        self.assertNotIn("30 orang",layout["footer"][1]["value"])
+        source["teacher"]["reflection"]="Refleksi guru sebenar."
+        manual=build_layout(source,{"MORAL":"Pendidikan Moral"})
+        self.assertEqual(manual["footer"][1]["value"],"Refleksi guru sebenar.")
 
     def test_verified_word_document_changes_only_reflection_cell(self):
         source=word_fixture()
