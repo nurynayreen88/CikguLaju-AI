@@ -6,6 +6,7 @@ on:
       - 'web/kp2027_pj_private_web.py'
       - 'web/kp2027_pj_t1_catalog.json'
       - 'tests/test_kp2027_pj_private_web.py'
+      - 'tests/test_kp2027_pj_reflection_20261122.py'
       - 'tools/run_web_production.py'
       - 'web_v1_static_preview/index.html'
       - '.github/workflows/kp2027-pj-private-web-20261122.yml'
@@ -24,9 +25,11 @@ jobs:
       - name: Install Web documents runtime dependencies
         run: python -m pip install 'Flask>=3.1,<4' python-docx==1.1.2 PyMuPDF==1.26.7
       - name: Compile source, routes and production launcher
-        run: python -m py_compile web/kp2027_pj_private_web.py tests/test_kp2027_pj_private_web.py tools/run_web_production.py
+        run: python -m py_compile web/kp2027_pj_private_web.py tests/test_kp2027_pj_private_web.py tests/test_kp2027_pj_reflection_20261122.py tools/run_web_production.py
       - name: Private integrity and catalog unit tests
-        run: python -m unittest discover -s tests -p 'test_kp2027_pj_private_web.py' -v
+        run: |
+          python -m unittest discover -s tests -p 'test_kp2027_pj_private_web.py' -v
+          python -m unittest discover -s tests -p 'test_kp2027_pj_reflection_20261122.py' -v
       - name: Regress existing KP2027 menu and quota
         run: |
           python -m unittest discover -s tests -p 'test_kp2027_menu_pilot_downloads_20261122.py' -v
