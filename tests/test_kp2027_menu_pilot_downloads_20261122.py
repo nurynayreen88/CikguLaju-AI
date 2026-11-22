@@ -27,7 +27,7 @@ class TestPilotNavigation(unittest.TestCase):
         self.assertIn('nombor bukan turutan RPT', PAGE)
         self.assertIn('Nombor RPH belum diselaraskan', PAGE)
         self.assertIn('if(curriculum.value==="kp2027"){kp2027DisplayPdps();return;}', PAGE)
-        self.assertIn('label:(subject.value==="ALAM_KP2027"?"RPH sumber ":"PdP ")+String(e.no).padStart(3,"0")+" — "+e.tajuk+" • SP "+e.sp', PAGE)
+        self.assertIn('label:(subject.value==="ALAM_KP2027"&&kp2027PilotInventory?.catalogMode!=="rpt93"?"RPH sumber ":"PdP ")+String(e.no).padStart(3,"0")+" — "+e.tajuk+" • SP "+e.sp', PAGE)
         self.assertIn('Pilih Unit / Kandungan', PAGE)
         self.assertIn('kp2027ValidEntries(data.items.A,data.groups.A,125)', PAGE)
         self.assertIn('kp2027ValidEntries(data.items,data.lessons,data.catalog_mode==="rpt93"?93:64)', PAGE)
