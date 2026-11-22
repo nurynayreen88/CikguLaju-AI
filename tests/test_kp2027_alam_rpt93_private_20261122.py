@@ -64,7 +64,7 @@ class AlamRPT93Tests(unittest.TestCase):
         source={}
         for no in sorted(r.QA):
             entries.append({'number':no,'sp':r.MAP[no]['sp']})
-            for ext,prefix in (('docx',b'PK\\x03\\x04'),('pdf',b'%PDF-1.7\\n')):
+            for ext,prefix in (('docx',b'PK\x03\x04'),('pdf',b'%PDF-1.7\n')):
                 filename=f'CIKGULAJU_ALAM_KP2027_T1_RPT_PDP{no:03d}.{ext}'
                 raw=prefix+(f'private-{no}-{ext}'.encode()*100)
                 source[('Word' if ext=='docx' else 'PDF')+'/'+filename]=raw
