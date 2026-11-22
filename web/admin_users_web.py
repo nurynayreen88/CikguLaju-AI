@@ -94,10 +94,11 @@ def admin_users():
     if any(len(args.getlist(key)) != 1 for key in args):
         return jsonify({"error": "Penapis tidak sah"}), 400
     status = args.get("status", "all")
-    search = args.get("search", "").strip()
+    raw_search = args.get("search", "")
+    search = raw_search.strip()
     page_raw = args.get("page", "0")
-    if (status not in ALLOWED_STATUS or len(search) > 100
-            or any(ord(char) < 32 or ord(char) == 127 for char in search)
+    if (status not in ALLOWED_STATUS or len(raw_search) > 100
+            or any(ord(char) < 32 or ord(char) == 127 for char in raw_search)
             or not re.fullmatch(r"[0-9]{1,5}", page_raw)
             or int(page_raw) > 50000):
         return jsonify({"error": "Penapis tidak sah"}), 400
