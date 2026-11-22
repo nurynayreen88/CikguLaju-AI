@@ -1,0 +1,448 @@
+{
+  "id": "kp2027_bm_sjk_year1_26sp_52rpt_draft",
+  "date": "2026-11-22",
+  "source": {
+    "title": "Dokumen Kurikulum Bahasa Melayu Sekolah Jenis Kebangsaan Tahun 1",
+    "publisher": "Bahagian Pembangunan Kurikulum KPM",
+    "year": 2026,
+    "isbn": "978-967-420-798-4",
+    "drive_file_id": "19eJeNYAx5osXc2rvNjeE_pihg9euJS0S",
+    "download_class": "PRIVATE_USER_DRIVE"
+  },
+  "baseline_rpt": {
+    "title": "CIKGULAJU_RPT_2027_T1_BAHASA_MELAYU_SJK_PEMETAAN_AWAL.pdf",
+    "drive_file_id": "1gvpjsL-wy9py-ZU19Hv7OTFcvL6PwWha",
+    "status": "CADANGAN_52_PDP_BUKAN_RPT_TAHUNAN_FINAL"
+  },
+  "counts": {
+    "unique_sp": 26,
+    "proposed_pdp": 52,
+    "groups_published": 0,
+    "ready_rph": 0
+  },
+  "notes": [
+    "Semua 26 kod SP ini telah ditemui dalam PDF DK asal Tahun 1 terbitan 2026.",
+    "Halaman ialah rujukan PDF dalam pemetaan awal; perlu sahkan halaman fizikal bagi semakan akhir.",
+    "Dua PdP per SP ialah cadangan awal CikguLaju, bukan ketetapan agihan rasmi KPM.",
+    "Jangan pinjam isi KSSR lama atau menganggap satu RPH sumber boleh diguna untuk semua PdP sama kod.",
+    "RPH sebenar, RPT A/B penuh, contoh Word/PDF dan ujian akaun Web belum diluluskan."
+  ],
+  "records": [
+    {
+      "sp": "1.1.1",
+      "sk": "1.1",
+      "page_ref_pdf_draft": 34,
+      "bidang": "Mendengar",
+      "focus": "Bunyi persekitaran",
+      "rpt_pdp_proposals": [
+        1,
+        2
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "1.1.2",
+      "sk": "1.1",
+      "page_ref_pdf_draft": 34,
+      "bidang": "Mendengar",
+      "focus": "Abjad dan suku kata",
+      "rpt_pdp_proposals": [
+        3,
+        4
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "1.1.3",
+      "sk": "1.1",
+      "page_ref_pdf_draft": 34,
+      "bidang": "Mendengar",
+      "focus": "Sebutan dan intonasi",
+      "rpt_pdp_proposals": [
+        5,
+        6
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "1.2.1",
+      "sk": "1.2",
+      "page_ref_pdf_draft": 35,
+      "bidang": "Mendengar",
+      "focus": "Respons ujaran sopan",
+      "rpt_pdp_proposals": [
+        7,
+        8
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "1.2.2",
+      "sk": "1.2",
+      "page_ref_pdf_draft": 35,
+      "bidang": "Mendengar",
+      "focus": "Ucapan mengikut situasi",
+      "rpt_pdp_proposals": [
+        9,
+        10
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "1.2.3",
+      "sk": "1.2",
+      "page_ref_pdf_draft": 36,
+      "bidang": "Mendengar",
+      "focus": "Arahan dan pertanyaan di sekolah",
+      "rpt_pdp_proposals": [
+        11,
+        12
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "1.2.4",
+      "sk": "1.2",
+      "page_ref_pdf_draft": 36,
+      "bidang": "Mendengar",
+      "focus": "Arahan dan pertanyaan di rumah",
+      "rpt_pdp_proposals": [
+        13,
+        14
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "2.1.1",
+      "sk": "2.1",
+      "page_ref_pdf_draft": 42,
+      "bidang": "Bertutur",
+      "focus": "Ajuk bunyi persekitaran",
+      "rpt_pdp_proposals": [
+        15,
+        16
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "2.1.2",
+      "sk": "2.1",
+      "page_ref_pdf_draft": 42,
+      "bidang": "Bertutur",
+      "focus": "Sebut abjad dan suku kata",
+      "rpt_pdp_proposals": [
+        17,
+        18
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "2.1.3",
+      "sk": "2.1",
+      "page_ref_pdf_draft": 42,
+      "bidang": "Bertutur",
+      "focus": "Ujaran dengan intonasi",
+      "rpt_pdp_proposals": [
+        19,
+        20
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "2.2.1",
+      "sk": "2.2",
+      "page_ref_pdf_draft": 43,
+      "bidang": "Bertutur",
+      "focus": "Ujaran sopan di sekolah",
+      "rpt_pdp_proposals": [
+        21,
+        22
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "2.2.2",
+      "sk": "2.2",
+      "page_ref_pdf_draft": 43,
+      "bidang": "Bertutur",
+      "focus": "Ujaran sopan di rumah",
+      "rpt_pdp_proposals": [
+        23,
+        24
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "2.3.1",
+      "sk": "2.3",
+      "page_ref_pdf_draft": 43,
+      "bidang": "Bertutur",
+      "focus": "Perihal diri",
+      "rpt_pdp_proposals": [
+        25,
+        26
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "2.3.2",
+      "sk": "2.3",
+      "page_ref_pdf_draft": 44,
+      "bidang": "Bertutur",
+      "focus": "Cerita bernilai murni",
+      "rpt_pdp_proposals": [
+        27,
+        28
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "2.3.3",
+      "sk": "2.3",
+      "page_ref_pdf_draft": 44,
+      "bidang": "Bertutur",
+      "focus": "Lakonan cerita",
+      "rpt_pdp_proposals": [
+        29,
+        30
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "3.1.1",
+      "sk": "3.1",
+      "page_ref_pdf_draft": 50,
+      "bidang": "Membaca",
+      "focus": "Kenal simbol dan abjad",
+      "rpt_pdp_proposals": [
+        31,
+        32
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "3.1.2",
+      "sk": "3.1",
+      "page_ref_pdf_draft": 50,
+      "bidang": "Membaca",
+      "focus": "Suku kata dan perkataan",
+      "rpt_pdp_proposals": [
+        33,
+        34
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "3.1.3",
+      "sk": "3.1",
+      "page_ref_pdf_draft": 50,
+      "bidang": "Membaca",
+      "focus": "Perkataan, frasa dan ayat",
+      "rpt_pdp_proposals": [
+        35,
+        36
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "3.2.1",
+      "sk": "3.2",
+      "page_ref_pdf_draft": 51,
+      "bidang": "Membaca",
+      "focus": "Ayat dan intonasi",
+      "rpt_pdp_proposals": [
+        37,
+        38
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "3.2.2",
+      "sk": "3.2",
+      "page_ref_pdf_draft": 51,
+      "bidang": "Membaca",
+      "focus": "Maklumat dalam bahan",
+      "rpt_pdp_proposals": [
+        39,
+        40
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "3.2.3",
+      "sk": "3.2",
+      "page_ref_pdf_draft": 51,
+      "bidang": "Membaca",
+      "focus": "Respons berdasarkan bacaan",
+      "rpt_pdp_proposals": [
+        41,
+        42
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "4.1.1",
+      "sk": "4.1",
+      "page_ref_pdf_draft": 56,
+      "bidang": "Menulis",
+      "focus": "Lakaran bentuk",
+      "rpt_pdp_proposals": [
+        43,
+        44
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "4.1.2",
+      "sk": "4.1",
+      "page_ref_pdf_draft": 56,
+      "bidang": "Menulis",
+      "focus": "Bentuk dan tekap abjad",
+      "rpt_pdp_proposals": [
+        45,
+        46
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "4.1.3",
+      "sk": "4.1",
+      "page_ref_pdf_draft": 56,
+      "bidang": "Menulis",
+      "focus": "Menyalin tulisan",
+      "rpt_pdp_proposals": [
+        47,
+        48
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "4.2.1",
+      "sk": "4.2",
+      "page_ref_pdf_draft": 56,
+      "bidang": "Menulis",
+      "focus": "Gabung suku kata dan frasa",
+      "rpt_pdp_proposals": [
+        49,
+        50
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    },
+    {
+      "sp": "4.2.2",
+      "sk": "4.2",
+      "page_ref_pdf_draft": 56,
+      "bidang": "Menulis",
+      "focus": "Bina dan tulis ayat",
+      "rpt_pdp_proposals": [
+        51,
+        52
+      ],
+      "phases": [
+        "penerokaan",
+        "aplikasi"
+      ],
+      "status": "QA_ONLY_NOT_READY"
+    }
+  ]
+}
