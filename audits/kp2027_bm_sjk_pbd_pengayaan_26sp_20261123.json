@@ -1,0 +1,116 @@
+{
+  "id": "kp2027_bmsjk_t1_26sp_pbd_pengayaan_20261123",
+  "status": "QA_EDITORIAL_UNAPPROVED",
+  "source_note": "Bahan semakan pedagogi CikguLaju; tidak menggantikan DK rasmi, RPT sah atau kelulusan guru.",
+  "counts": {
+    "sp": 26,
+    "pdp": 52,
+    "ready": 0
+  },
+  "by_sp": {
+    "1.1.1": {
+      "pbd_evidence": "Guru memperdengarkan dua bunyi tanpa menunjukkan gambarnya, kemudian merekod ketepatan padanan kad sumber bunyi yang dipilih murid.",
+      "enrichment_action": "Murid mengenal pasti satu bunyi baharu di rumah atau sekolah dan membandingkan cirinya dengan bunyi yang dipelajari."
+    },
+    "1.1.2": {
+      "pbd_evidence": "Guru menyebut dua bunyi huruf dan dua suku kata secara rawak; bukti PBD ialah kad yang dipilih dan sebutan semula murid.",
+      "enrichment_action": "Murid mengelaskan kad suku kata baharu mengikut bunyi awal yang sama selepas mendengar sebutan guru."
+    },
+    "1.1.3": {
+      "pbd_evidence": "Guru memperdengarkan ayat penyata dan pertanyaan; murid memilih simbol yang sesuai, dan guru merekod ketepatan pilihan.",
+      "enrichment_action": "Murid mendengar dialog baharu dan menentukan intonasi yang sesuai berdasarkan maksud ujaran."
+    },
+    "1.2.1": {
+      "pbd_evidence": "Guru menyampaikan dua ujaran harian dan menilai sama ada respons lisan murid relevan, jelas serta sopan.",
+      "enrichment_action": "Murid memilih balasan paling sopan bagi situasi berbeza dan menjelaskan sebab pilihan kepada pasangan."
+    },
+    "1.2.2": {
+      "pbd_evidence": "Guru menyebut situasi ucapan selamat, penghargaan dan permohonan maaf; murid mengemukakan respons yang tepat bagi ketiga-tiganya.",
+      "enrichment_action": "Murid mencipta dialog pendek yang menggabungkan dua daripada tiga jenis ucapan sopan mengikut konteks."
+    },
+    "1.2.3": {
+      "pbd_evidence": "Guru memberikan dua arahan dan satu pertanyaan sekolah; bukti PBD ialah tindakan yang dilaksanakan serta respons lisan murid.",
+      "enrichment_action": "Murid membina pertanyaan sopan untuk situasi sekolah baharu dan mengemukakan jawapan sesuai."
+    },
+    "1.2.4": {
+      "pbd_evidence": "Guru memperdengarkan arahan dan pertanyaan rutin keluarga serta mencatat ketepatan tindakan atau jawapan yang diberikan murid.",
+      "enrichment_action": "Murid mengubah dialog rumah kepada situasi membantu ahli keluarga lain dengan respons sopan."
+    },
+    "2.1.1": {
+      "pbd_evidence": "Guru memperdengarkan dua rakaman dan memerhatikan kejelasan ajukan bunyi serta ketepatan sebutan sumbernya.",
+      "enrichment_action": "Murid mengajuk bunyi persekitaran tambahan tanpa rakaman untuk diteka dan diterangkan oleh rakan."
+    },
+    "2.1.2": {
+      "pbd_evidence": "Guru menunjukkan tiga kad abjad dan dua kad suku kata; murid menyebutnya, dan guru merekod kejelasan serta ketepatan sebutan.",
+      "enrichment_action": "Murid menggabungkan dua kad suku kata baharu lalu menyebut gabungan tersebut secara bergilir."
+    },
+    "2.1.3": {
+      "pbd_evidence": "Guru meminta murid menyebut satu ayat penyata dan satu ayat tanya; catatan PBD menumpu pada sebutan serta intonasi.",
+      "enrichment_action": "Murid melafazkan dialog ringkas baharu dengan pertukaran peranan dan intonasi bersesuaian."
+    },
+    "2.2.1": {
+      "pbd_evidence": "Guru memerhatikan lakonan murid di kantin atau perpustakaan dan mencatat penggunaan sekurang-kurangnya dua ungkapan sopan.",
+      "enrichment_action": "Murid menyesuaikan dialog sekolah apabila penerima permintaan berubah daripada rakan kepada guru."
+    },
+    "2.2.2": {
+      "pbd_evidence": "Guru menyemak dialog rumah yang dilakonkan murid untuk dua ungkapan sopan dan respons yang sesuai.",
+      "enrichment_action": "Murid membina dialog lain untuk meminta izin dan mengucapkan terima kasih kepada ahli keluarga."
+    },
+    "2.3.1": {
+      "pbd_evidence": "Guru mendengar perkenalan murid dan merekod sama ada tiga maklumat diri disampaikan secara teratur serta difahami.",
+      "enrichment_action": "Murid memperkenalkan diri kepada pasangan baharu dengan menambah maklumat minat atau hobi pilihan."
+    },
+    "2.3.2": {
+      "pbd_evidence": "Guru menyemak urutan dua peristiwa yang diceritakan semula serta keupayaan murid menyatakan satu nilai murni.",
+      "enrichment_action": "Murid mencadangkan tindakan alternatif watak yang menunjukkan nilai sama dan menceritakan akibatnya."
+    },
+    "2.3.3": {
+      "pbd_evidence": "Guru memerhatikan lakonan dua watak dan merekod kejelasan dialog, urutan cerita serta kerjasama kumpulan.",
+      "enrichment_action": "Murid menukar respons salah satu watak kepada ujaran yang lebih sopan tanpa mengubah jalan cerita."
+    },
+    "3.1.1": {
+      "pbd_evidence": "Guru menyediakan kad huruf dan simbol bercampur; murid mengecam sekurang-kurangnya tiga sasaran serta menunjukkan buktinya.",
+      "enrichment_action": "Murid mencari huruf sasaran dalam label bilik darjah lain dan membezakannya daripada simbol."
+    },
+    "3.1.2": {
+      "pbd_evidence": "Guru meminta murid membaca dua suku kata dan satu perkataan gabungan; ketepatan bacaan menjadi bukti pentaksiran.",
+      "enrichment_action": "Murid menukar salah satu suku kata pada perkataan dan membaca hasil gabungan baharu yang bermakna."
+    },
+    "3.1.3": {
+      "pbd_evidence": "Guru mendengar bacaan satu frasa dan satu ayat ringkas lalu menanda ketepatan sebutan perkataan serta kelancaran.",
+      "enrichment_action": "Murid membaca ayat bergambar baharu dan memilih frasa yang melengkapkannya dengan tepat."
+    },
+    "3.2.1": {
+      "pbd_evidence": "Guru mendengar bacaan ayat penyata dan ayat tanya murid serta mencatat padanan intonasi dengan tanda baca.",
+      "enrichment_action": "Murid membaca dialog pendek tambahan dengan perubahan intonasi apabila tanda baca ditukar."
+    },
+    "3.2.2": {
+      "pbd_evidence": "Guru mengajukan dua soalan berpandukan poster; murid menunjukkan bahagian maklumat yang menyokong setiap jawapan.",
+      "enrichment_action": "Murid membandingkan dua poster untuk menemukan persamaan dan perbezaan maklumat tersurat."
+    },
+    "3.2.3": {
+      "pbd_evidence": "Guru meminta satu respons tentang petikan yang dibaca dan mencatat sama ada jawapan murid disokong oleh bukti teks.",
+      "enrichment_action": "Murid memberi respons alternatif yang sopan bagi situasi dalam petikan dan menyatakan buktinya."
+    },
+    "4.1.1": {
+      "pbd_evidence": "Guru menyemak dua lakaran murid dari segi arah, bentuk asas dan kawalan pergerakan tangan mengikut contoh.",
+      "enrichment_action": "Murid mereka corak baharu dengan menggabungkan garis lurus dan lengkung secara berulang."
+    },
+    "4.1.2": {
+      "pbd_evidence": "Guru memerhatikan arah pembentukan dua huruf ketika murid menekap dan menyemak kekemasan bentuk akhir.",
+      "enrichment_action": "Murid membentuk huruf yang sama tanpa garis surih penuh dan membandingkan saiz tulisan."
+    },
+    "4.1.3": {
+      "pbd_evidence": "Guru menyemak satu ayat yang disalin murid dari segi bentuk huruf, susunan dan jarak antara perkataan.",
+      "enrichment_action": "Murid menyalin frasa baharu tanpa panduan penuh lalu membetulkan sendiri kesilapan penjarakan."
+    },
+    "4.2.1": {
+      "pbd_evidence": "Guru menilai satu perkataan dan satu frasa yang dibina murid daripada kad suku kata serta ketepatan maknanya.",
+      "enrichment_action": "Murid membina frasa lain menggunakan gabungan kad berbeza dan memadankannya dengan gambar."
+    },
+    "4.2.2": {
+      "pbd_evidence": "Guru memeriksa ayat yang ditulis berdasarkan gambar untuk susunan perkataan, makna dan tanda baca yang sesuai.",
+      "enrichment_action": "Murid menulis satu ayat tambahan untuk gambar bersiri kedua lalu menyuntingnya secara kendiri."
+    }
+  }
+}
