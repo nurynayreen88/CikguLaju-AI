@@ -65,38 +65,38 @@ def _word_logo(paragraph, png):
 
 
 def personalize_docx(original, identity):
-    """Update only editable cover cells; keep all 788 PdP rows and source styles."""
+    """Fill exact historical RPT cover paragraphs; leave weekly tables untouched."""
     from docx import Document
-    from docx.shared import Pt, RGBColor
+    from docx.shared import Pt
     school, teacher, state, logo = _identity_fields(identity)
     if not (school or teacher or state or logo):
         return original
     doc = Document(BytesIO(original))
-    if not doc.tables or len(doc.tables[0].rows) != 6:
-        raise ValueError("Unexpected original RPT cover")
-    cover = doc.tables[0]
-    expected = {(0, 0): "NAMA SEKOLAH", (0, 2): "NEGERI",
-                (2, 2): "NAMA GURU", (4, 0): "DISEDIAKAN OLEH"}
-    for (r, c), label in expected.items():
-        if cover.cell(r, c).text.strip() != label:
-            raise ValueError("Unexpected RPT cover field")
-    for row, col, value in ((0, 1, school), (0, 3, state),
-                            (2, 3, teacher), (4, 1, teacher)):
-        if not value:
-            continue
-        cell = cover.cell(row, col)
-        p = cell.paragraphs[0]
-        # Blank original cells contain no runs. Preserve original table styles.
-        for run in list(p.runs):
-            run.text = ""
-        run = p.add_run(value)
-        run.font.name = "Aptos"
-        run.font.size = Pt(8)
-        run.font.color.rgb = RGBColor(32, 56, 79)
+    if len(doc.paragraphs)<14 or not doc.tables or len(doc.tables[0].columns)!=7:
+        raise ValueError("Unexpected classic RPT cover")
+    markers={4:"NAMA SEKOLAH:", 5:"SUBJEK:", 7:"KUMPULAN:", 8:"NAMA GURU:",10:"Disediakan oleh:"}
+    for i, label in markers.items():
+        if not doc.paragraphs[i].text.startswith(label):
+            raise ValueError("Expected original RPT cover label missing")
+    def update(i, value, preferred=11):
+        if not value: return
+        p=doc.paragraphs[i]
+        if len(p.runs)!=1: raise ValueError("Classic cover run structure changed")
+        p.runs[0].text=value
+        # Shrink only unusually long values, preserving original typography otherwise.
+        if len(value)>95: p.runs[0].font.size=Pt(8.5)
+        elif len(value)>75: p.runs[0].font.size=Pt(10)
+    update(4, "NAMA SEKOLAH: "+school)
+    update(8, "NAMA GURU: "+teacher)
+    if state:
+        p=doc.paragraphs[7]
+        if len(p.runs)!=1 or "NEGERI:" not in p.text: raise ValueError("Original state field missing")
+        p.runs[0].text=p.text.split("NEGERI:",1)[0]+"NEGERI: "+state
+    if teacher:
+        update(10,"Disediakan oleh: "+teacher+"     Disemak oleh: ____________________")
     if logo:
-        _word_logo(doc.paragraphs[0], logo)
-    buf = BytesIO()
-    doc.save(buf)
+        _word_logo(doc.paragraphs[0],logo)
+    buf=BytesIO();doc.save(buf)
     return buf.getvalue()
 
 
@@ -118,32 +118,47 @@ def _fit_pdf_text(page, text, rect, *, maximum=8):
 
 
 def personalize_pdf(original, identity):
-    """Stamp only the original A4 landscape first-page blanks, no new cover."""
+    """Populate historical free-form 2027 cover, preserving source page count."""
     import fitz
     school, teacher, state, logo = _identity_fields(identity)
     if not (school or teacher or state or logo):
         return original
-    source = fitz.open(stream=original, filetype="pdf")
+    document=fitz.open(stream=original,filetype="pdf")
     try:
-        if not source.page_count or abs(source[0].rect.width - 841.89) > 2 or abs(source[0].rect.height - 595.3) > 2:
+        if not document.page_count or abs(document[0].rect.width-841.89)>2 or abs(document[0].rect.height-595.3)>2:
             raise ValueError("Unexpected RPT page dimensions")
-        cover = source[0]
-        for label in ("NAMA SEKOLAH", "NEGERI", "NAMA GURU", "DISEDIAKAN OLEH"):
-            if len([area for area in cover.search_for(label) if area.y0 < 240]) != 1:
-                raise ValueError("Expected RPT cover label missing")
-        # These rectangles are the four blank value cells on the source PDF.
-        _fit_pdf_text(cover, school, (139, 130, 414, 147.5))
-        _fit_pdf_text(cover, state, (531, 130, 805, 147.5))
-        _fit_pdf_text(cover, teacher, (531, 166.5, 805, 185))
-        _fit_pdf_text(cover, teacher, (139, 203.5, 414, 221))
+        page=document[0]
+        for label in ("RANCANGAN PENGAJARAN TAHUNAN","NAMA SEKOLAH:","NAMA GURU:","Disediakan oleh:"):
+            if len(page.search_for(label))!=1:
+                raise ValueError("Original RPT cover field not found")
+        # Coordinates are locked to the verified original A4 landscape cover.
+        # Redact only underscore placeholders, never text labels or any PdP table.
+        fields=[
+          (school,(338,257,620,285),(344,255,620,283)),
+          (teacher,(312,381,617,408),(317,379,617,407)),
+          (state,(485,349,610,377),(490,348,615,376)),
+          (teacher,(329,453,426,477),(331,453,424,476)),
+        ]
+        # The original 'Disemak oleh:' label begins at x=433; never redact it.
+        for value,erase,area in fields:
+            if value:page.add_redact_annot(fitz.Rect(*erase),fill=(1,1,1),cross_out=False)
+        if any(v for v,_,_ in fields): page.apply_redactions(images=0,graphics=0,text=0)
+        for i,(value,erase,area) in enumerate(fields):
+            if not value:continue
+            # Very long teacher names still appear in the generous NAMA GURU
+            # field, but need not force the much shorter 'Disediakan' slot.
+            if i==3:
+                try: _fit_pdf_text(page,value,area,maximum=8)
+                except ValueError: pass
+            else:_fit_pdf_text(page,value,area,maximum=10)
         if logo:
-            cover.insert_image(fitz.Rect(35, 42, 108, 114), stream=logo, keep_proportion=True, overlay=True)
-        result = source.tobytes(garbage=3, deflate=True)
-        if not result.startswith(b"%PDF-") or len(result) > 10_000_000:
-            raise ValueError("Stamped RPT is invalid")
-        return result
+            page.insert_image(fitz.Rect(36,43,107,111),stream=logo,keep_proportion=True,overlay=True)
+        data=document.tobytes(garbage=3,deflate=True)
+        if not data.startswith(b"%PDF-") or len(data)>10_000_000:
+            raise ValueError("Invalid personalized RPT PDF")
+        return data
     finally:
-        source.close()
+        document.close()
 
 
 def for_download(account, subject, fmt, original):
