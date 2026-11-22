@@ -487,6 +487,33 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .web-feedback-text{white-space:pre-wrap;margin:10px 0 0;line-height:1.55}
 </style>
 <link rel="stylesheet" href="/assets/pbd.css?v=assessment-20261113">
+<style>
+.admin-users-directory{margin:18px 0;padding:0;border:1px solid #d5e6e1;border-radius:16px;background:#fbfdfc;overflow:hidden}
+.admin-users-directory>summary{cursor:pointer;list-style:none;padding:16px 18px;font-size:1.02rem;font-weight:800;color:#1b5043;background:#eff7f3}
+.admin-users-directory>summary::-webkit-details-marker{display:none}
+.admin-users-directory>summary:focus-visible{outline:3px solid #087568;outline-offset:-3px}
+.admin-users-directory>summary small{display:block;margin-top:4px;color:#5b7469;font-size:.77rem;font-weight:500}
+.admin-users-body{padding:14px 17px 18px}
+.admin-users-note{font-size:.83rem;line-height:1.55;color:#61786d}
+.admin-users-filters{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(150px,1fr) auto;align-items:end;gap:10px;margin:14px 0}
+.admin-users-filters label{font-size:.82rem;font-weight:750;color:#3f6154;min-width:0}
+.admin-users-filters input,.admin-users-filters select{width:100%;min-height:44px;box-sizing:border-box;font:inherit;font-size:.94rem;border:1px solid #c9dbd2;border-radius:10px;padding:10px;margin-top:6px;background:white;color:#243f36}
+.admin-users-filters button,.admin-users-toolbar button,.admin-users-pagination button{min-height:44px;border:1px solid #bddacf;border-radius:10px;padding:10px 14px;background:white;color:#14674e;font:inherit;font-weight:750;cursor:pointer}
+.admin-users-filters button{background:#087568;color:white}
+.admin-users-directory button:disabled{opacity:.5;cursor:wait}
+.admin-users-toolbar{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.admin-users-toolbar p{font-size:.85rem;color:#526c61;margin:0}
+.admin-users-list{margin:12px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:10px;list-style:none}
+.admin-users-list li{border:1px solid #e0ebe6;border-radius:12px;padding:12px;background:white;min-width:0}
+.admin-user-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.admin-user-identity{font-size:.91rem;color:#173d32;overflow-wrap:anywhere;font-weight:750}
+.admin-user-badge{flex:none;font-size:.72rem;padding:5px 7px;border-radius:9px;background:#edf4f1;color:#27644f;font-weight:800}
+.admin-user-name{color:#567366;font-size:.84rem;margin:3px 0 9px;overflow-wrap:anywhere}
+.admin-users-list dl{margin:8px 0 0;display:grid;grid-template-columns:92px minmax(0,1fr);gap:4px 8px;font-size:.8rem;line-height:1.5}
+.admin-users-list dt{color:#6a8074}.admin-users-list dd{margin:0;color:#354d42;overflow-wrap:anywhere}
+.admin-users-pagination{display:flex;justify-content:center;align-items:center;gap:12px;margin:14px 0 2px;font-size:.87rem;color:#5d7569}
+@media(max-width:670px){.admin-users-filters{grid-template-columns:1fr}.admin-users-filters button{width:100%}.admin-users-body{padding:12px}.admin-users-list{grid-template-columns:minmax(0,1fr)}}
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -1119,6 +1146,36 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
  <div id="web-feedback-admin-list" aria-live="polite">Buka panel admin untuk melihat komen.</div>
  <button id="web-feedback-admin-more" type="button" class="profile-refresh" hidden>Muat Komen Terdahulu</button>
 </section>
+<details id="admin-users-directory" class="admin-users-directory">
+ <summary>👥 Senarai Pengguna <small>Telegram, e-mel, tarikh daftar dan status akses</small></summary>
+ <div class="admin-users-body">
+  <p class="admin-users-note">Hanya untuk admin. Tarikh log masuk berdasarkan rekod Web sejak pencatatan diaktifkan; “Belum direkodkan” bukan bermaksud pengguna tidak pernah log masuk.</p>
+  <div class="admin-users-filters">
+   <label for="admin-users-search">Cari pengguna
+    <input type="search" id="admin-users-search" placeholder="E-mel, nama atau ID Telegram" maxlength="100" autocomplete="off">
+   </label>
+   <label for="admin-users-filter">Status akses
+    <select id="admin-users-filter">
+     <option value="all">Semua pengguna</option>
+     <option value="free">Free</option>
+     <option value="rakan">Rakan Pembangun</option>
+     <option value="langganan">Langganan aktif</option>
+    </select>
+   </label>
+   <button type="button" id="admin-users-apply">Cari / Tapis</button>
+  </div>
+  <div class="admin-users-toolbar">
+   <p id="admin-users-status" role="status" aria-live="polite">Buka senarai untuk melihat rekod.</p>
+   <button type="button" id="admin-users-refresh" aria-label="Muat semula senarai pengguna">↻ Muat Semula</button>
+  </div>
+  <ul id="admin-users-list" class="admin-users-list" aria-label="Senarai akaun berdaftar"></ul>
+  <nav class="admin-users-pagination" aria-label="Halaman senarai pengguna">
+   <button id="admin-users-prev" type="button" hidden>Sebelum</button>
+   <span id="admin-users-page" aria-live="polite"></span>
+   <button id="admin-users-next" type="button" hidden>Seterusnya</button>
+  </nav>
+ </div>
+</details>
 <p class="notice">Statistik penggunaan dikira berdasarkan akaun berbeza yang log masuk ke Web.</p>
 <div class="admin-stats-grid" aria-label="Ringkasan penggunaan CikguLaju">
  <div class="admin-stats-card"><span>Pengguna berdaftar</span><strong id="web-admin-users">—</strong></div>
@@ -2878,7 +2935,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/teacher-profile.js?v=pilihan-subjek-20261117"></script>
 <script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>
-<script src="/assets/admin-usage.js?v=signup-analysis-20261118"></script>
+<script src="/assets/admin-usage.js?v=user-directory-20261123"></script>
 <script src="/assets/web-feedback.js?v=comments-inbox-20261112"></script>
 <script src="/assets/special-activities.js?v=pilihan-subjek-20261117"></script>
 </body>
