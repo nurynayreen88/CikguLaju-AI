@@ -1,0 +1,27 @@
+name: KSSR and all-source RPH reflection QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'web/rph_reflection_universal.py'
+      - 'web/telegram_rph_parity.py'
+      - 'web/unified_rph_web.py'
+      - 'tests/test_rph_reflection_universal_20261122.py'
+      - '.github/workflows/rph-reflection-kssr-20261122.yml'
+permissions:
+  contents: read
+jobs:
+  verify-reflection:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Word PDF dependencies
+        run: python -m pip install python-docx==1.1.2 PyMuPDF==1.26.7
+      - name: KSSR native Word PDF, parity, manual and blank-count tests
+        run: python -m unittest discover -s tests -p 'test_rph_reflection_universal_20261122.py' -v
+      - name: Syntax-check production routes and reflection policy
+        run: python -m py_compile web/rph_reflection_universal.py web/unified_rph_web.py web/telegram_rph_parity.py
