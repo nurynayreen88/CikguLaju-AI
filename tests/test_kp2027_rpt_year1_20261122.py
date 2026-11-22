@@ -32,6 +32,36 @@ class TestKp2027RptYear1(unittest.TestCase):
                         self.assertTrue(payload.startswith(b"%PDF-" if fmt=="pdf" else b"PK\x03\x04"))
         self.assertEqual(total,788)
 
+    def test_each_word_rpt_matches_general_2027_template(self):
+        """All six must use the same weekly seven-column general RPT layout."""
+        import io
+        import re
+        import xml.etree.ElementTree as ET
+        from zipfile import ZipFile
+        heading = ("Minggu / tarikh", "Tema / tajuk", "SK / SP / rujukan",
+                   "Aktiviti PdP", "PBD / pentaksiran",
+                   "Acara / status / sumber", "Catatan / pindaan")
+        for subject in src.SUBJECTS:
+            for group in src.GROUPS:
+                with self.subTest(subject=subject, group=group):
+                    payload, name, digest = src.document(subject,group,"docx")
+                    self.assertIn("FORMAT_UMUM_SEMAKAN",name)
+                    with ZipFile(io.BytesIO(payload)) as docx:
+                        root=ET.fromstring(docx.read("word/document.xml"))
+                    texts = [t.text or "" for t in root.iter(
+                        "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}t")]
+                    body="\\n".join(texts)
+                    for field in ("NAMA SEKOLAH", "NAMA GURU", "TAHUN / KELAS",
+                                  "DISEDIAKAN OLEH", "DISEMAK OLEH", "TARIKH SEMAKAN",
+                                  "JADUAL PERANCANGAN PdP", "LOG SEMAKAN"):
+                        self.assertIn(field,body)
+                    for column in heading:
+                        self.assertIn(column,body)
+                    ids={int(x) for x in re.findall(r"PdP (\\d{3})",body)}
+                    self.assertEqual(ids,set(range(1,src.COUNTS[subject][group]+1)))
+                    self.assertIn("SEMAKAN PELAKSANAAN",body)
+                    self.assertNotIn("STATUS: READY",body)
+
     def test_group_a_b_different_documents(self):
         for subject in src.SUBJECTS:
             self.assertNotEqual(src.document(subject,"A","pdf")[2],
