@@ -292,3 +292,157 @@
     if (!tab.hidden) tab.click();
   };
 })();
+
+
+/* Admin-only user directory: server controls authorization and filtering.
+ * No raw account UUID, passwords or service credentials in this script.
+ */
+(function () {
+  "use strict";
+  const get = id => document.getElementById(id);
+  const panel = get("admin-users-directory");
+  if (!panel) return;
+  const search = get("admin-users-search");
+  const filter = get("admin-users-filter");
+  const apply = get("admin-users-apply");
+  const refresh = get("admin-users-refresh");
+  const status = get("admin-users-status");
+  const list = get("admin-users-list");
+  const prev = get("admin-users-prev");
+  const next = get("admin-users-next");
+  const pageLabel = get("admin-users-page");
+  const date = new Intl.DateTimeFormat("ms-MY", {
+    timeZone: "Asia/Kuala_Lumpur", year: "numeric", month: "short",
+    day: "numeric", hour: "2-digit", minute: "2-digit"
+  });
+  const accessLabels = {
+    free: "Free",
+    rakan: "Rakan Pembangun",
+    langganan: "Langganan"
+  };
+  let page = 0;
+  let serial = 0;
+  let loaded = false;
+  let appliedSearch = "";
+  let appliedFilter = "all";
+
+  const formatDate = value => {
+    if (!value || !Number.isFinite(Date.parse(value))) return "Belum direkodkan";
+    return date.format(new Date(value));
+  };
+  function itemValue(label, value, parent) {
+    const dt = document.createElement("dt");
+    dt.textContent = label;
+    const dd = document.createElement("dd");
+    dd.textContent = value;
+    parent.append(dt, dd);
+  }
+  function renderItem(item) {
+    const li = document.createElement("li");
+    const header = document.createElement("div");
+    header.className = "admin-user-top";
+    const id = document.createElement("strong");
+    id.className = "admin-user-identity";
+    if (item.account_type === "email") {
+      id.textContent = item.email || "Akaun e-mel";
+    } else {
+      id.textContent = item.telegram_id ? "Telegram · " + item.telegram_id : "Akaun Telegram";
+    }
+    const badge = document.createElement("span");
+    badge.className = "admin-user-badge";
+    badge.textContent = accessLabels[item.access_status] || "Status tidak tersedia";
+    header.append(id, badge);
+    li.append(header);
+    if (item.display_name && item.display_name !== "Pengguna E-mel"
+        && item.display_name !== "Pengguna Telegram") {
+      const name = document.createElement("p");
+      name.className = "admin-user-name";
+      name.textContent = item.display_name;
+      li.append(name);
+    }
+    const details = document.createElement("dl");
+    if (item.account_type === "telegram" && item.email) {
+      itemValue("E-mel pautan", item.email, details);
+    }
+    itemValue("Daftar", formatDate(item.registered_at), details);
+    itemValue("Login terakhir", formatDate(item.last_login_at), details);
+    if (item.access_status === "langganan" && item.subscription_expires_at) {
+      itemValue("Tamat", formatDate(item.subscription_expires_at), details);
+    }
+    if (item.access_status === "free" && Number.isInteger(item.trial_remaining)) {
+      itemValue("RPH percuma", item.trial_remaining + " baki", details);
+    }
+    li.append(details);
+    return li;
+  }
+
+  async function load() {
+    if (!panel.open) return;
+    const ticket = ++serial;
+    apply.disabled = refresh.disabled = prev.disabled = next.disabled = true;
+    status.textContent = "Memuatkan senarai pengguna…";
+    list.replaceChildren();
+    try {
+      const params = new URLSearchParams({
+        status: appliedFilter, search: appliedSearch, page: String(page)
+      });
+      const response = await fetch("/api/web/admin/users?" + params.toString(), {
+        method: "GET", credentials: "same-origin", cache: "no-store", redirect: "error"
+      });
+      if (ticket !== serial) return;
+      if (response.status === 401 || response.status === 403) {
+        throw new Error("Akses admin diperlukan. Sila log masuk semula.");
+      }
+      if (!response.ok) throw new Error("Senarai pengguna tidak dapat dimuatkan (HTTP " +
+                                          response.status + ").");
+      const data = await response.json();
+      if (ticket !== serial) return;
+      if (!data || !Array.isArray(data.items) || !Number.isSafeInteger(data.total)
+          || data.page !== page) throw new Error("Respons senarai pengguna tidak sah.");
+      for (const item of data.items) list.append(renderItem(item));
+      const start = data.total === 0 ? 0 : page * 20 + 1;
+      const end = Math.min(data.total, page * 20 + data.items.length);
+      status.textContent = data.total === 0
+        ? "Tiada pengguna sepadan dengan carian ini."
+        : "Memaparkan " + start + "–" + end + " daripada " +
+          data.total.toLocaleString("ms-MY") + " pengguna.";
+      pageLabel.textContent = "Halaman " + (page + 1);
+      prev.hidden = page === 0;
+      next.hidden = data.more !== true;
+      loaded = true;
+    } catch (error) {
+      if (ticket === serial) {
+        status.textContent = error.message || "Senarai pengguna tidak dapat dimuatkan.";
+        prev.hidden = next.hidden = true;
+      }
+    } finally {
+      if (ticket === serial) {
+        apply.disabled = refresh.disabled = prev.disabled = next.disabled = false;
+      }
+    }
+  }
+
+  function applyFilters() {
+    appliedSearch = search.value.trim().slice(0, 100);
+    appliedFilter = filter.value;
+    page = 0;
+    void load();
+  }
+  panel.addEventListener("toggle", () => {
+    if (panel.open && !loaded) void load();
+  });
+  apply.addEventListener("click", applyFilters);
+  search.addEventListener("keydown", event => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      applyFilters();
+    }
+  });
+  filter.addEventListener("change", applyFilters);
+  refresh.addEventListener("click", () => void load());
+  prev.addEventListener("click", () => { if (page > 0) { page--; void load(); } });
+  next.addEventListener("click", () => { page++; void load(); });
+  window.cikgulajuUsersAdminLoad = () => {
+    if (panel.open) void load();
+  };
+})();
