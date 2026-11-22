@@ -16,6 +16,7 @@ from xml.sax.saxutils import escape
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "audits/kp2027_bm_sjk_tahun1_52_rph_editorial_qa_20261123.json"
 PEDAGOGY = ROOT / "audits/kp2027_bm_sjk_pedagogy_26sp_20261123.json"
+ASSESSMENT = ROOT / "audits/kp2027_bm_sjk_pbd_pengayaan_26sp_20261123.json"
 VERIFIED = ROOT / "audits/kp2027_bm_sjk_sksp_verified_20261123.json"
 PAGE_WIDTH_MM = 210
 PAGE_HEIGHT_MM = 297
@@ -43,10 +44,14 @@ def qa_records():
     # Editorial improvements never rewrite the audited curriculum or base RPH:
     # enrich copies with phase-specific practices and verified SP sub-components.
     bank = json.loads(PEDAGOGY.read_text(encoding="utf-8"))
+    assessment = json.loads(ASSESSMENT.read_text(encoding="utf-8"))
     verified = json.loads(VERIFIED.read_text(encoding="utf-8"))
     if (bank["status"] != "QA_EDITORIAL_UNAPPROVED"
             or bank["counts"] != {"sp": 26, "pdp": 52, "ready": 0}
-            or set(bank["by_sp"]) != set(verified["sp"])):
+            or set(bank["by_sp"]) != set(verified["sp"])
+            or assessment["status"] != "QA_EDITORIAL_UNAPPROVED"
+            or assessment["counts"] != {"sp": 26, "pdp": 52, "ready": 0}
+            or set(assessment["by_sp"]) != set(verified["sp"])):
         raise ValueError("Editorial supplement approval gate or SP inventory changed")
     enriched = []
     for original in records:
@@ -56,6 +61,12 @@ def qa_records():
                                  for v in supplement.values()):
             raise ValueError("Missing editorial pedagogical supplement")
         r["editorial_supplement"] = supplement.copy()
+        evidence = assessment["by_sp"][r["sp_code"]]
+        if (set(evidence) != {"pbd_evidence", "enrichment_action"} or
+            any(not isinstance(value, str) or len(value.strip()) < 85
+                for value in evidence.values())):
+            raise ValueError("Invalid SP-specific PBD or enrichment evidence")
+        r["editorial_assessment"] = evidence.copy()
         if r["sp_code"] == "1.2.2":
             r["sp_components"] = [
                 "; ".join(verified["special_sp_components"]["1.2.2"])
@@ -98,15 +109,16 @@ def _rows(record):
                          else "application_pdp")
             actions.append(("Pengukuhan khusus", record["editorial_supplement"][phase_key]))
         activities.append((item["title"], actions))
+    # A specific pupil check replaces the repeated generic pupil sentence;
+    # the audited source remains unchanged and is preserved separately.
     activities.append(("Penutup", [
         ("Guru", record["penutup"]["guru"]),
-        ("Murid", record["penutup"]["murid"]),
-        ("Semak kefahaman", record["editorial_supplement"]["closure"]),
+        ("Murid", record["editorial_supplement"]["closure"]),
     ]))
     follow_up = [
-        ("Pentaksiran / PBD", [record["penilaian"]]),
+        ("Pentaksiran / PBD", [record["editorial_assessment"]["pbd_evidence"]]),
         ("Pemulihan", [record["pemulihan"]]),
-        ("Pengayaan", [record["pengayaan"]]),
+        ("Pengayaan", [record["editorial_assessment"]["enrichment_action"]]),
         ("Refleksi", []),
     ]
     return standards, activities, follow_up
