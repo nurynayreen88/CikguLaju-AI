@@ -1400,6 +1400,12 @@ const teacherClass=document.getElementById("teacher-class"),
  teacherReflectionManual=document.getElementById("teacher-reflection-manual");
 teacherReflectionMode.addEventListener("change",()=>{
  teacherReflectionManual.hidden=teacherReflectionMode.value!=="manual";
+ if(curriculum.value==="kp2027"&&!document.getElementById("materials-panel").hidden)
+  populateKp2027MaterialList();
+});
+teacherReflection.addEventListener("input",()=>{
+ if(curriculum.value==="kp2027"&&!document.getElementById("materials-panel").hidden)
+  populateKp2027MaterialList();
 });
 let reflectionSelection="";
 function rphDownloadOptions(mode,reflection,className=""){
@@ -1504,7 +1510,7 @@ function resetRphPreview(){
   teacherReflectionMode.value="auto";
   teacherReflectionManual.hidden=true;
  }
- document.getElementById("teacher-info").hidden=!canSelectRph()||!lesson.value;
+ document.getElementById("teacher-info").hidden=!(canSelectRph()||curriculum.value==="kp2027")||!lesson.value;
  const actions=document.getElementById("rph-download-actions");
  const available=canGenerateRph()&&!!currentRphParams()&&verifiedRphKey===currentRphLessonKey();
  actions.hidden=!available;
@@ -1550,11 +1556,12 @@ function kp2027DisplayLessons(){
  fillSelect(lesson,numbers.map(n=>({value:String(n),label:"Lesson "+String(n).padStart(3,"0")})),"Pilih Lesson");
  showStep(lesson,true);
  document.getElementById("lesson-label").textContent="Pilih Lesson/PdP";
- kp2027PilotActions.hidden=false;
+ resetMaterials();resetRphPreview();
+ kp2027PilotActions.hidden=true;
  for(const button of kp2027PilotButtons)button.disabled=true;
  kp2027PilotStatus.textContent="";
  catalogStatus.textContent=numbers.length+" Lesson yang diluluskan tersedia"+(subject.value==="MATH_KP2027"?" untuk Kumpulan "+kp2027PilotGroup.value:"")+".";
- updateSelectionHelp(numbers.length?"Pilih Lesson, kemudian Download RPH Word atau PDF di sini.":"Tiada Lesson yang diluluskan untuk pilihan ini.");
+ updateSelectionHelp(numbers.length?"Pilih Lesson, isi Maklumat RPH, kemudian tekan Jana Bahan.":"Tiada Lesson yang diluluskan untuk pilihan ini.");
 }
 
 const kp2027ScienceNotice="Komponen Sains Tahun 1 KP2027 berada dalam Alam dan Manusia.";
@@ -2016,15 +2023,38 @@ kp2027PilotGroup.addEventListener("change",()=>{
  if(curriculum.value==="kp2027"&&subject.value==="MATH_KP2027"&&kp2027PilotInventory)
   kp2027DisplayLessons();
 });
+function kp2027TeacherPayload(){
+ if(!teacherClass.checkValidity()||!teacherDate.checkValidity()||
+    !teacherTimeStart.checkValidity()||!teacherTimeEnd.checkValidity()||!teacherStudents.checkValidity())
+  throw Error("Semak kelas, tarikh, masa dan bilangan murid.");
+ const className=chosenTeacherClass();
+ if(teacherClass.value==="__other__"&&(!teacherClassOther.checkValidity()||!className))
+  throw Error("Sila isi nama kelas.");
+ if(className.length>40)throw Error("Nama kelas tidak boleh melebihi 40 aksara.");
+ const start=teacherTimeStart.value,end=teacherTimeEnd.value;
+ if((start||end)&&(!start||!end||start>=end))throw Error("Sila isi waktu mula dan tamat dengan betul.");
+ const students=teacherStudents.value.trim();
+ if(students&&(!/^[1-9][0-9]{0,2}$/.test(students)||Number(students)>200))
+  throw Error("Bilangan murid mesti antara 1 hingga 200.");
+ const mode=teacherReflectionMode.value;
+ const reflection=mode==="manual"?teacherReflection.value.trim():"";
+ if(mode==="manual"&&(!reflection||reflection.length>500||reflection.split(/\r\n|\r|\n/).length>6))
+  throw Error("Isi refleksi manual, maksimum 500 aksara dan 6 baris, atau pilih Auto.");
+ return {teacher_class:className,teacher_date:teacherDate.value,teacher_start:start,
+   teacher_end:end,teacher_students:students,reflection_mode:mode,reflection};
+}
 async function kp2027DownloadApproved(format){
  const code=subject.value,route=kp2027PilotRoutes[code],value=Number(lesson.value);
  if(kp2027PilotBusy||curriculum.value!=="kp2027"||year.value!=="1"||!route||
     !["word","pdf"].includes(format)||!lesson.value||!kp2027CurrentLessons().includes(value))return;
  const revision=kp2027PilotEpoch,group=kp2027PilotGroup.value;
- const payload=code==="MATH_KP2027"?{group,lesson:value,format}:{lesson:value,format};
+ const status=document.getElementById("materials-status");
+ let teacherPayload;
+ try{teacherPayload=kp2027TeacherPayload();}catch(error){status.textContent=error.message;return;}
+ const payload=code==="MATH_KP2027"?{group,lesson:value,format,...teacherPayload}:{lesson:value,format,...teacherPayload};
  kp2027PilotBusy=true;
  for(const button of kp2027PilotButtons)button.disabled=true;
- kp2027PilotStatus.textContent="Menyediakan fail RPH...";
+ status.textContent="Menyediakan fail RPH...";
  try{
   const response=await fetch(route+"/download",{
    method:"POST",credentials:"same-origin",cache:"no-store",
@@ -2042,9 +2072,13 @@ async function kp2027DownloadApproved(format){
   const fileUrl=URL.createObjectURL(documentBlob),anchor=document.createElement("a");
   anchor.href=fileUrl;anchor.download=fileName;anchor.click();
   setTimeout(()=>URL.revokeObjectURL(fileUrl),30000);
-  if(revision===kp2027PilotEpoch)kp2027PilotStatus.textContent="Fail disediakan. Semak folder Downloads.";
+  const remaining=response.headers.get("X-RPH-Trial-Remaining");
+  if(/^(?:[0-9]|10)$/.test(remaining||""))
+   applyRphAccount({rph_access_mode:Number(remaining)>0?"trial":"exhausted",
+                    rph_trial_remaining:Number(remaining)});
+  if(revision===kp2027PilotEpoch)status.textContent="Fail disediakan. Semak folder Downloads.";
  }catch(error){
-  if(revision===kp2027PilotEpoch)kp2027PilotStatus.textContent=error.message;
+  if(revision===kp2027PilotEpoch)status.textContent=error.message;
  }finally{
   kp2027PilotBusy=false;
   if(revision===kp2027PilotEpoch){
@@ -2059,9 +2093,13 @@ lesson.addEventListener("change",()=>{
  resetMaterials();resetRphPreview();showRphAction();displayBookReference();
  if(curriculum.value==="kp2027"){
   const ready=!!lesson.value&&kp2027CurrentLessons().includes(Number(lesson.value))&&!kp2027PilotBusy;
-  for(const button of kp2027PilotButtons)button.disabled=!ready;
-  kp2027PilotStatus.textContent="";
-  if(ready)updateSelectionHelp("Lesson dipilih. Download RPH Word atau PDF di bawah tanpa membuka halaman lain.");
+  kp2027PilotActions.hidden=true;
+  if(ready){
+   document.getElementById("show-materials").hidden=false;
+   syncRphMaterialsAccess();
+   updateSelectionHelp("Lesson dipilih. Isi kelas, tarikh, masa dan bilangan murid jika perlu, kemudian tekan Jana Bahan.");
+   catalogStatus.textContent="Lesson dipilih. Ruang Maklumat RPH tersedia di bawah.";
+  }
   return;
  }
  if(!canSelectRph())return;
@@ -2111,6 +2149,27 @@ function materialRow(title,{onDownload=null,url=null,ready=false,statusLabel="Be
  else if(ready&&onDownload){action.addEventListener("click",onDownload);}
  li.append(name,action);
  return li;
+}
+function populateKp2027MaterialList(){
+ const status=document.getElementById("materials-status");
+ const list=document.getElementById("materials-list");
+ list.replaceChildren();
+ materialPanel.hidden=false;
+ if(!lesson.value||!kp2027CurrentLessons().includes(Number(lesson.value))){
+  status.textContent="Pilih Lesson yang telah diluluskan.";
+  return;
+ }
+ if(!canGenerateRph()){
+  status.textContent=rphMaterialsAccessMessage();
+  return;
+ }
+ try{kp2027TeacherPayload();}
+ catch(error){status.textContent=error.message;return;}
+ list.append(
+  materialRow("RPH PDF",{ready:true,onDownload:()=>{void kp2027DownloadApproved("pdf");}}),
+  materialRow("RPH Word",{ready:true,onDownload:()=>{void kp2027DownloadApproved("word");}})
+ );
+ status.textContent="Pilih format RPH untuk Download. Maklumat kelas, tarikh, masa dan murid yang diisi akan dicetak dalam fail.";
 }
 async function populateMaterialList(){
  const key=currentRphLessonKey();
@@ -2225,7 +2284,10 @@ async function populateMaterialList(){
    "Tiada bahan yang disahkan tersedia untuk Lesson/PdP ini. ")+
    (sourceError?"Semakan belum lengkap: "+sourceError:extraNotice);
 }
-document.getElementById("show-materials").addEventListener("click",()=>{void populateMaterialList();});
+document.getElementById("show-materials").addEventListener("click",()=>{
+ if(curriculum.value==="kp2027")populateKp2027MaterialList();
+ else void populateMaterialList();
+});
 function selectSearchText(value) {
   return value.toLocaleUpperCase("ms-MY").normalize("NFKD")
     .replace(/\p{M}/gu,"").replace(/[^\p{L}\p{N}]+/gu," ").trim();
@@ -2552,6 +2614,12 @@ teacherClassOther.addEventListener("change",()=>{
 for(const field of [teacherClass,teacherClassOther,teacherDate,teacherTimeStart,teacherTimeEnd,teacherStudents]){
  const refresh=()=>{
   resetRphPreview();showRphAction();
+  if(curriculum.value==="kp2027"){
+   try{kp2027TeacherPayload();updateSelectionHelp("Maklumat PdP disemak. Tekan Jana Bahan selepas memilih Lesson.");}
+   catch(error){updateSelectionHelp(error.message);}
+   if(!materialPanel.hidden)populateKp2027MaterialList();
+   return;
+  }
   updateSelectionHelp(currentRphParams()?
     "Maklumat lengkap. Tekan Jana RPH Word atau Jana RPH PDF.":
     "Semak kelas, tarikh, waktu mula/tamat atau bilangan murid. Jika mengisi masa, isi kedua-duanya.");

@@ -241,6 +241,7 @@ b.addEventListener('click',async()=>{if(l.disabled||!l.value)return;b.disabled=t
 def create_blueprint():
     from flask import Blueprint, current_app, jsonify, make_response, request, send_file
     from web.rph_delivery_quota import authorize_rendered_document, has_active_paid_access
+    from web.kp2027_pilot_teacher_fields import EXTRA_FIELDS, TeacherFieldError, personalize_approved_rph
     from web_v1_telegram_auth_routes import COOKIE, _config, _lookup
     from web_v1_sessions import verify_session_ticket
 
@@ -302,8 +303,10 @@ def create_blueprint():
         if not request.is_json or not 0 < (request.content_length or 0) <= 1024:
             return denied("Pilihan Lesson tidak sah.", 400, "INVALID_REQUEST")
         payload = request.get_json(silent=True)
-        if not isinstance(payload, dict) or set(payload) != {"group", "lesson", "format"}:
-            return denied("Pilihan Lesson tidak lengkap.", 400, "INVALID_SELECTION")
+        if (not isinstance(payload, dict) or
+                not {"group", "lesson", "format"}.issubset(payload) or
+                set(payload) - {"group", "lesson", "format"} - EXTRA_FIELDS):
+            return denied("Pilihan Lesson atau maklumat PdP tidak lengkap.", 400, "INVALID_SELECTION")
         try:
             group, lesson, fmt = valid_selection(payload["group"], payload["lesson"], payload["format"])
         except ValueError:
@@ -320,6 +323,10 @@ def create_blueprint():
             document = fetch_private_document(config, group, lesson, fmt)
         except PilotUnavailable:
             return denied("RPH ini masih dalam semakan atau tidak tersedia.", 503, "PILOT_ASSET_UNAVAILABLE")
+        try:
+            document = personalize_approved_rph(document, fmt, {key:payload[key] for key in EXTRA_FIELDS if key in payload})
+        except TeacherFieldError as exc:
+            return denied(str(exc), 400, "INVALID_TEACHER_FIELDS")
         remaining = None
         if not paid:
             try:
