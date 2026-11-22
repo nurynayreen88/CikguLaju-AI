@@ -49,6 +49,11 @@ app.register_blueprint(create_kp2027_alam_private())
 from web.kp2027_bm_rph_web import create_blueprint as create_kp2027_bm_rph
 app.register_blueprint(create_kp2027_bm_rph())
 
+# KP2027 PJ Tahun 1: 127 validated source RPH Word/PDF; privately secured.
+from web.kp2027_pj_private_web import create_blueprint as create_kp2027_pj_private
+app.register_blueprint(create_kp2027_pj_private())
+
+
 
 
 
