@@ -4,6 +4,7 @@ on:
     branches: [production/cikgulaju-web-20261105]
     paths:
       - 'rpt_2027/kp2027/year1_rpt_bm_math_alam_20261122.zip'
+      - 'rpt_2027/kp2027/year1_rpt_bm_math_alam_20261122_umum.zip'
       - 'web/kp2027_year1_rpt_bundle.py'
       - 'web/rpt_2027_all_http.py'
       - 'web_v1_static_preview/index.html'
