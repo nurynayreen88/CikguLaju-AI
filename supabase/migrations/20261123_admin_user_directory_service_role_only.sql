@@ -77,8 +77,9 @@ BEGIN
        'page', p_page,
        'page_size', 20,
        'items', coalesce(
-           (SELECT jsonb_agg(to_jsonb(page_rows) ORDER BY page_rows.registered_at DESC,
-                                                       page_rows.telegram_user_id DESC)
+           (SELECT jsonb_agg(to_jsonb(page_rows) - 'telegram_user_id'
+                               ORDER BY page_rows.registered_at DESC,
+                                        page_rows.telegram_user_id DESC)
               FROM (
                   SELECT f.account_type, f.telegram_id, f.email, f.display_name,
                          f.registered_at, f.last_login_at, f.trial_remaining,
@@ -91,10 +92,6 @@ BEGIN
            '[]'::jsonb)
     ) INTO result;
 
-    -- The internal synthetic account key is never returned to the browser.
-    result := jsonb_set(result, '{items}',
-        coalesce((SELECT jsonb_agg(item - 'telegram_user_id')
-                  FROM jsonb_array_elements(result->'items') AS item), '[]'::jsonb));
     RETURN result;
 END;
 $$;
