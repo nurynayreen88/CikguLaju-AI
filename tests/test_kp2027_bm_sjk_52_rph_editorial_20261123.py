@@ -45,7 +45,7 @@ class BM_SJK_52_RPH_EditorialQA(unittest.TestCase):
         for r in self.edition["records"]:
             self.assertEqual(r["status"],"QA_HOLD_NOT_READY")
             self.assertEqual((r["curriculum"],r["school_stream"],r["year"]),("KP2027","SJK",1))
-            self.assertTrue(re.fullmatch(r"[1-4]\\.\\d\\.\\d",r["sp_code"]))
+            self.assertTrue(re.fullmatch(r"[1-4][.][0-9]+[.][0-9]+",r["sp_code"]))
             self.assertEqual(r["refleksi_label"],"Refleksi")
             self.assertEqual(r["teacher_fields"],["Kelas","Tarikh","Masa","Bil. Murid"])
             self.assertEqual(len(r["objectives"]),2)
