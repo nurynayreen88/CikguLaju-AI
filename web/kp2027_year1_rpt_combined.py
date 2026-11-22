@@ -9,8 +9,8 @@ from pathlib import Path
 from zipfile import ZipFile, BadZipFile
 
 BUNDLE=(Path(__file__).resolve().parents[1]/"rpt_2027"/"kp2027"/
-        "year1_rpt_bm_math_alam_gabungan_ab_20261122.zip")
-BUNDLE_SHA="6d1b2c51bc8535ae4c02f6f9de3bc744bf914cae0694b8ccd82f97814b1e4d51"
+        "year1_rpt_bm_math_alam_gabungan_ab_kulit_asal_20261122.zip")
+BUNDLE_SHA="11bd6c81271cd6725bbaed30cdf0aaf38757846e22b2465ba4a8b5875d40abe1"
 SUBJECTS={"matematik":"MATH","alam_dan_manusia":"ALAM","bahasa_melayu":"BM_SK"}
 FORMATS={"docx":"WORD","pdf":"PDF"}
 COUNTS={"matematik":(125,124),"alam_dan_manusia":(93,93),
