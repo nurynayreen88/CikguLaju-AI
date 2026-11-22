@@ -124,7 +124,7 @@ def fetch_approved_lessons(config,*,opener=None):
 
 _PAGE='''<!doctype html><html lang="ms"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Alam dan Manusia Tahun 1 KP2027 | CikguLaju</title>
 <style>body{margin:0;font:16px system-ui,sans-serif;background:#f5f7fa;color:#1a2735}.wrap{max-width:560px;margin:36px auto;background:#fff;border-radius:12px;padding:28px;box-shadow:0 6px 22px #19324916}h1{font-size:24px;margin:0 0 10px}p{line-height:1.55}label{display:block;margin:17px 0 7px;font-weight:600}select,button{width:100%;padding:13px;border-radius:7px;font:inherit}select{border:1px solid #bac6d2;background:white}button{margin-top:24px;border:0;background:#193755;color:white;font-weight:700;cursor:pointer}button:disabled{opacity:.55}small{color:#586779}.status{min-height:26px;margin-top:18px}a{color:#1c528e}</style></head>
-<body><main class="wrap"><h1>Alam dan Manusia â¢ KP2027 Tahun 1</h1><p>Pilih Lesson yang telah diluluskan untuk muat turun RPH Word atau PDF. RPH digunakan untuk Kumpulan A/B; isikan kelas, tarikh dan masa pada fail.</p>
+<body><main class="wrap"><h1>Alam dan Manusia • KP2027 Tahun 1</h1><p>Pilih Lesson yang telah diluluskan untuk muat turun RPH Word atau PDF. RPH digunakan untuk Kumpulan A/B; isikan kelas, tarikh dan masa pada fail.</p>
 <label for="lesson">Lesson / PdP</label><select id="lesson" disabled><option>Semak senarai Lesson...</option></select>
 <label for="fmt">Format</label><select id="fmt"><option value="pdf">PDF</option><option value="word">Word (.docx)</option></select>
 <button id="download" type="button" disabled>Download RPH</button><p class="status" id="message" role="status" aria-live="polite"></p>
