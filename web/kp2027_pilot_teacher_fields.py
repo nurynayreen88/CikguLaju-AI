@@ -198,6 +198,59 @@ def _pdf_safe_reflection(value):
     return value
 
 
+
+def _word_printable_reflection_label(cell):
+    """Change only the printed label, retaining its original run formatting."""
+    label = " ".join(cell.text.split())
+    if label == "Refleksi":
+        return
+    if not re.fullmatch(r"Refleksi\\s*\\(\\s*Auto(?:matik)?\\s*/\\s*Manual\\s*\\)", label, re.I):
+        raise TeacherFieldError("Label refleksi Word tidak sepadan dengan templat.")
+    runs = [run for paragraph in cell.paragraphs for run in paragraph.runs]
+    if not runs:
+        raise TeacherFieldError("Format label refleksi Word tidak lengkap.")
+    runs[0].text = "Refleksi"
+    for run in runs[1:]:
+        run.text = ""
+
+
+def _pdf_printable_reflection_label(page, anchor):
+    """Redact the UI-only suffix, without whitening the pastel cell or its border."""
+    variants = ("(Auto / Manual)", "(Automatik / Manual)")
+    suffixes = [box for phrase in variants for box in page.search_for(phrase)
+                if box.x0 >= anchor.x1 - 1 and abs(box.y0 - anchor.y0) <= 3
+                and box.x1 < 205]
+    if len(suffixes) > 1:
+        raise TeacherFieldError("Label refleksi PDF berganda.")
+    if suffixes:
+        page.add_redact_annot(suffixes[0], fill=False, cross_out=False)
+
+
+def _pdf_reflection_font_file(page, region):
+    """Use full Liberation Serif when the approved source body uses that face.
+
+    The PDF's embedded source font is subsetted; trying to stamp arbitrary
+    reflection text with that subset yields missing glyphs. Use an installed
+    full font only when available, otherwise retain the current safe fallback.
+    """
+    from pathlib import Path
+
+    nearby = [
+        span.get("font", "") for block in page.get_text("dict")["blocks"]
+        for line in block.get("lines", ()) for span in line["spans"]
+        if span["bbox"][0] >= 150 and 120 < span["bbox"][1] < region.y0
+    ]
+    if not any("LiberationSerif" in name and "Bold" not in name for name in nearby):
+        return None
+    for path in (
+        "/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf",
+        "/usr/share/fonts/truetype/liberation2/LiberationSerif-Regular.ttf",
+    ):
+        if Path(path).is_file():
+            return path
+    return None
+
+
 def _word_personalize(original, fields):
     from docx import Document
     from docx.shared import Pt
@@ -228,6 +281,7 @@ def _word_personalize(original, fields):
         fields["_reflection"] if fields["_reflection_mode"] == "manual"
         else _reflection_candidates(_word_success_criterion(document))[0]
     )
+    _word_printable_reflection_label(reflection_rows[0].cells[0])
     reflection_cell = reflection_rows[0].cells[1]
     original_runs = [run for paragraph in reflection_cell.paragraphs for run in paragraph.runs]
     source_font = next((run.font.name for run in original_runs if run.font.name), None)
@@ -321,6 +375,9 @@ def _pdf_personalize(original, fields):
         region = fitz.Rect(155.9, top, page.rect.width - 39, bottom)
         if region.height < 24 or region.height > 110:
             raise TeacherFieldError("Saiz kotak refleksi PDF tidak dijangka.")
+        _pdf_printable_reflection_label(page, anchors[0])
+        font_file = _pdf_reflection_font_file(page, region)
+        font_alias = "CLRefBody" if font_file else "tiro"
         candidates = (
             (fields["_reflection"],)
             if fields["_reflection_mode"] == "manual"
@@ -337,7 +394,9 @@ def _pdf_personalize(original, fields):
             for font_size in (9.0, 8.7, 8.3, 8.0, 7.6, 7.0):
                 scratch = fitz.open()
                 scratch_page = scratch.new_page(width=page.rect.width, height=page.rect.height)
-                result = scratch_page.insert_textbox(region, safe_sentence, fontname="tiro",
+                if font_file:
+                    scratch_page.insert_font(fontname=font_alias, fontfile=font_file)
+                result = scratch_page.insert_textbox(region, safe_sentence, fontname=font_alias,
                                                       fontsize=font_size, lineheight=1.05)
                 scratch.close()
                 if result >= 0:
@@ -361,7 +420,9 @@ def _pdf_personalize(original, fields):
                             fill=(1, 1, 1), cross_out=False,
                         )
         page.apply_redactions(images=0, graphics=0, text=0)
-        if page.insert_textbox(region, chosen, fontname="tiro",
+        if font_file:
+            page.insert_font(fontname=font_alias, fontfile=font_file)
+        if page.insert_textbox(region, chosen, fontname=font_alias,
                                fontsize=size, lineheight=1.05) < 0:
             raise TeacherFieldError("Refleksi PDF tidak dapat dimuatkan dengan selamat.")
         data = document.tobytes(garbage=4, deflate=True)
