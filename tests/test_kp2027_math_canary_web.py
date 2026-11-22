@@ -30,7 +30,7 @@ def fake_row(group='A', lesson=1, fmt='word'):
             blob = b.getvalue()
     return {'subject': 'MATH', 'kumpulan': group, 'lesson': lesson, 'format': fmt,
             'content_base64': base64.b64encode(blob).decode('ascii'), 'byte_size': len(blob),
-            'sha256_hex': sha256(blob).hexdigest(), 'sp_code': '1.1.1',
+            'sha256_hex': sha256(blob).hexdigest(), 'sp_code': c.EXPECTED_SP[lesson],
             'approval_status': 'CANARY_APPROVED', 'source_archive_sha256': c.SOURCE_SHA}
 
 
@@ -43,13 +43,13 @@ class Response:
 
 class TestPilot(unittest.TestCase):
     def test_strict_selection(self):
-        for x in (0, 4, True, '1', '../1', 1.3, None):
+        for x in (0, 11, True, '1', '../1', 1.3, None):
             with self.subTest(x=x), self.assertRaises(ValueError): c.valid_selection('A', x, 'pdf')
         for group in ('', 'a', 'Z', None):
             with self.assertRaises(ValueError): c.valid_selection(group, 1, 'word')
         for fmt in ('zip', 'PDF', '../pdf', None):
             with self.assertRaises(ValueError): c.valid_selection('B', 1, fmt)
-        self.assertEqual(c.valid_selection('B',3,'word'),('B',3,'word'))
+        self.assertEqual(c.valid_selection('B',10,'word'),('B',10,'word'))
 
     def test_refuse_qa_and_bad_identity(self):
         row=fake_row()
@@ -57,6 +57,17 @@ class TestPilot(unittest.TestCase):
                             ('lesson',True),('sp_code','9.9.9'),('source_archive_sha256','x'*64)]:
             with self.subTest(field=field), self.assertRaises(c.PilotUnavailable):
                 c.verify_private_row({**row,field:value}, 'A', 1, 'word')
+
+    def test_each_lesson_sp_mapping_fail_closed(self):
+        self.assertEqual(c.MAX_LESSON, 10)
+        for lesson in range(1, 11):
+            with self.subTest(lesson=lesson):
+                self.assertEqual(c.valid_selection("A", lesson, "pdf"), ("A", lesson, "pdf"))
+                original = fake_row("A", lesson, "pdf")
+                c.verify_private_row(original, "A", lesson, "pdf")
+                changed = {**original, "sp_code": "9.9.9"}
+                with self.assertRaises(c.PilotUnavailable):
+                    c.verify_private_row(changed, "A", lesson, "pdf")
 
     def test_checksums_and_bad_docs(self):
         for fmt in ('word','pdf'):
@@ -105,7 +116,8 @@ class TestPilot(unittest.TestCase):
                     r=fake_row(g,n,fmt);r.update(content_base64=base64.b64encode(b).decode(),byte_size=len(b),sha256_hex=sha256(b).hexdigest())
                     self.assertEqual(c.verify_private_row(r,g,n,fmt),b)
         self.assertIn('Lesson 001',c._PAGE)
-        self.assertNotIn('Lesson 004',c._PAGE)
+        self.assertIn('Lesson 010',c._PAGE)
+        self.assertNotIn('Lesson 011',c._PAGE)
 
 if __name__=='__main__':unittest.main()
 
