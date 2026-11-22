@@ -115,6 +115,11 @@ const makeNode=()=>({textContent:"",children:[],append(...items){this.children.p
 assert.doesNotMatch(source,/id="dlp-review-data"|id="dlp-rph-preview"/);
 const variantRpt={hidden:true,dataset:{}}, materials={hidden:true,disabled:true};
 const materialAccessNotice={hidden:true,textContent:""};
+const kpPilotGroup=mockSelect("kp-pilot-group"),kpPilotGroupLabel={hidden:true},kpPilotActions={hidden:true};
+const kpPilotStatus={textContent:""};
+const kpPilotWord={disabled:true,dataset:{kp2027Format:"word"},addEventListener(event,fn){listeners["kpword."+event]=fn;}};
+const kpPilotPdf={disabled:true,dataset:{kp2027Format:"pdf"},addEventListener(event,fn){listeners["kppdf."+event]=fn;}};
+const kpPilotRequests=[];
 let checkedRph=0;
 const variants=[
  {code:"science_dlp",label:"Science (DLP)",rph_code:"SCIENCE_DLP",curriculum:"dlp",rpt_years:[2,3,4,5,6]},
@@ -135,7 +140,18 @@ const ctx={
  curriculum,year,subject,unit,lesson,theme,topic,component,catalogStatus,
  window:{cikgulajuSubjectVariants:variants},rphSubjectPicker:{sync(){}},
  document:{createElement:makeNode,createTextNode:text=>({textContent:text}),
-  getElementById:id=>({"show-materials":materials,"materials-access-status":materialAccessNotice})[id]??variantRpt},
+  getElementById:id=>({
+   "show-materials":materials,"materials-access-status":materialAccessNotice,
+   "kp2027-pilot-group":kpPilotGroup,"kp2027-pilot-group-label":kpPilotGroupLabel,
+   "kp2027-pilot-downloads":kpPilotActions,"kp2027-pilot-status":kpPilotStatus,
+   "kp2027-pilot-word":kpPilotWord,"kp2027-pilot-pdf":kpPilotPdf
+  })[id]??variantRpt},
+ async fetch(url,options){
+  kpPilotRequests.push({url,options});
+  if(url.endsWith("/matematik/available"))return {ok:true,json:async()=>({groups:{A:[1,2],B:[1]}})};
+  if(url.endsWith("/alam-dan-manusia/available"))return {ok:true,json:async()=>({lessons:[1,2,38]})};
+  throw Error("Unexpected pilot endpoint: "+url);
+ },
  materialPanel:{hidden:true},
  canGenerateRph:()=>true,
  resetSelect(el,label){el.value="";el.options=[{value:"",label}];el.disabled=true;},
@@ -196,13 +212,26 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  assert.deepEqual(catalogueCalls,[]);
  subject.value="MATH_KP2027";
  await listeners["subject.change"]();
- assert.equal(catalogStatus.children.length,1);
- assert.equal(catalogStatus.children[0].href,"/kp2027/tahun-1/matematik");
+ assert.equal(kpPilotRequests.at(-1).url,"/api/kp2027/sk/tahun-1/matematik/available");
  assert.equal(unit.hidden,true);
- assert.equal(lesson.hidden,true);
+ assert.equal(lesson.hidden,false);
+ assert.deepEqual(lesson.options.map(x=>x.value),["","1","2"]);
+ assert.equal(kpPilotGroup.hidden,false);
+ assert.equal(kpPilotActions.hidden,false);
+ assert.equal(kpPilotWord.disabled,true);
+ lesson.value="1";
+ listeners["lesson.change"]();
+ assert.equal(kpPilotWord.disabled,false);
+ kpPilotGroup.value="B";
+ listeners["kp-pilot-group.change"]();
+ assert.deepEqual(lesson.options.map(x=>x.value),["","1"]);
+ assert.equal(kpPilotWord.disabled,true);
  subject.value="ALAM_KP2027";
  await listeners["subject.change"]();
- assert.equal(catalogStatus.children[0].href,"/kp2027/tahun-1/alam-dan-manusia");
+ assert.equal(kpPilotRequests.at(-1).url,"/api/kp2027/sk/tahun-1/alam-dan-manusia/available");
+ assert.deepEqual(lesson.options.map(x=>x.value),["","1","2","38"]);
+ assert.equal(kpPilotGroup.hidden,true);
+ assert.equal(kpPilotActions.hidden,false);
  assert.equal(catalogueCalls.length,0);
  curriculum.value="sjkc";
  listeners["curriculum.change"]();
