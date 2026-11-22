@@ -35,12 +35,19 @@ class QAOnlyWordPDF(unittest.TestCase):
             self.assertEqual(r["status"],"QA_HOLD_NOT_READY")
             add=r["editorial_supplement"]
             self.assertEqual(len(add),8)
+            pbd=r["editorial_assessment"]
+            self.assertEqual(set(pbd),{"pbd_evidence","enrichment_action"})
+            self.assertTrue(all(len(value)>=85 for value in pbd.values()))
             self.assertGreater(len(add["guided_pdp"]),90)
             self.assertGreater(len(add["application_pdp"]),90)
             self.assertNotEqual(add["guided_pdp"],add["application_pdp"])
             for key in ("prior_knowledge","success_criterion","emk_nilai",
                         "kbat","pak21","closure"):
                 self.assertGreaterEqual(len(add[key]),28)
+        self.assertEqual(len({r["editorial_assessment"]["pbd_evidence"]
+                              for r in self.records}),26)
+        self.assertEqual(len({r["editorial_assessment"]["enrichment_action"]
+                              for r in self.records}),26)
         self.assertEqual(len({r["editorial_supplement"]["guided_pdp"]
                              for r in self.records}),26)
         self.assertEqual(len({r["editorial_supplement"]["application_pdp"]
@@ -82,9 +89,10 @@ class QAOnlyWordPDF(unittest.TestCase):
                 for exact in (
                     r["sk_code"],r["sk_description"],
                     r["sp_code"],r["sp_description"],
-                    r["set_induksi"]["guru"],r["penutup"]["murid"],
+                    r["set_induksi"]["guru"],r["editorial_supplement"]["closure"],
                     r["aktiviti_utama"][0]["guru"],r["aktiviti_utama"][2]["murid"],
-                    r["penilaian"],r["pemulihan"],r["pengayaan"],
+                    r["editorial_assessment"]["pbd_evidence"],
+                    r["pemulihan"],r["editorial_assessment"]["enrichment_action"],
                     r["editorial_supplement"]["success_criterion"],
                     r["editorial_supplement"]["emk_nilai"],
                     r["editorial_supplement"]["kbat"],
@@ -94,6 +102,9 @@ class QAOnlyWordPDF(unittest.TestCase):
                 ):
                     self.assertIn(exact,text)
                 self.assertEqual(text.count("Refleksi"),1)
+                self.assertNotIn(r["penutup"]["murid"],text)
+                self.assertNotIn(r["pengayaan"],text)
+                self.assertNotIn(r["penilaian"],text)
                 for bad in ("Auto / Manual","QA_HOLD_NOT_READY","SEMAKAN PELAKSANAAN",
                             "RPT", "______"):
                     self.assertNotIn(bad,text)
@@ -119,13 +130,17 @@ class QAOnlyWordPDF(unittest.TestCase):
                 pdf_text=squeeze(" ".join(page.extract_text() or "" for page in reader.pages))
                 for exact in (r["sk_description"],r["sp_description"],
                               r["aktiviti_utama"][0]["guru"],
-                              r["aktiviti_utama"][2]["murid"],r["penutup"]["murid"],
+                              r["aktiviti_utama"][2]["murid"],r["editorial_supplement"]["closure"],
+                              r["editorial_assessment"]["pbd_evidence"],
+                              r["editorial_assessment"]["enrichment_action"],
                               r["editorial_supplement"]["success_criterion"],
                               r["editorial_supplement"]["kbat"],
                               r["editorial_supplement"]["guided_pdp"] if r["phase"]=="penerokaan"
                               else r["editorial_supplement"]["application_pdp"]):
                     self.assertIn(squeeze(exact),pdf_text)
                 self.assertEqual(pdf_text.count("Refleksi"),1)
+                self.assertNotIn(squeeze(r["penutup"]["murid"]),pdf_text)
+                self.assertNotIn(squeeze(r["pengayaan"]),pdf_text)
                 self.assertNotIn("Auto / Manual",pdf_text)
                 self.assertNotIn("QA_HOLD_NOT_READY",pdf_text)
 
@@ -143,6 +158,8 @@ class QAOnlyWordPDF(unittest.TestCase):
                 self.assertTrue((Path(tmp)/entry["name"]).is_file())
                 if entry["name"].endswith(".pdf"):
                     pages=PdfReader(str(Path(tmp)/entry["name"])).pages
+                    self.assertEqual(len(pages),1,
+                                     "QA A4 PDF unexpectedly more than one page: "+entry["name"])
                     if len(pages)>1:
                         self.assertGreater(len(squeeze(pages[-1].extract_text() or "")),150,
                                            "Orphan page in "+entry["name"])
