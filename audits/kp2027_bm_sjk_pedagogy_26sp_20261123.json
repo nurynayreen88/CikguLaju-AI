@@ -1,0 +1,283 @@
+{
+  "id": "kp2027_bmsjk_t1_26sp_pedagogy_20261123",
+  "status": "QA_EDITORIAL_UNAPPROVED",
+  "scope": "52 drafts (2 per SP), not an official KPM RPT or academic approval",
+  "source": "DK BM SJK T1 KPM 2026 ISBN 978-967-420-798-4, SP text is in separate verified source",
+  "counts": {
+    "sp": 26,
+    "pdp": 52,
+    "ready": 0
+  },
+  "fields": [
+    "prior_knowledge",
+    "success_criterion",
+    "emk_nilai",
+    "kbat",
+    "pak21",
+    "guided_pdp",
+    "application_pdp",
+    "closure"
+  ],
+  "by_sp": {
+    "1.1.1": {
+      "prior_knowledge": "Murid pernah mendengar bunyi loceng, tapak kaki atau kenderaan dalam kehidupan harian.",
+      "success_criterion": "Murid memadankan sekurang-kurangnya dua bunyi yang diperdengarkan dengan gambar sumber bunyi yang tepat.",
+      "emk_nilai": "Kelestarian alam; peka terhadap bunyi di persekitaran.",
+      "kbat": "Membandingkan bunyi kuat, perlahan dan berulang untuk memilih sumber yang sesuai.",
+      "pak21": "Dengar-Fikir-Pasang; rakan menyemak padanan bunyi.",
+      "guided_pdp": "Guru memainkan tiga rakaman satu demi satu dan menghentikan audio selepas setiap bunyi. Murid memilih kad gambar sumber bunyi dan menyatakan petunjuk yang didengar.",
+      "application_pdp": "Guru menukar urutan rakaman dan menyelitkan bunyi yang belum dikenal pasti. Murid memilih gambar, menjelaskan petunjuk bunyi dan membetulkan padanan selepas semakan rakan.",
+      "closure": "Murid menunjukkan gambar satu bunyi yang dapat dikenal pasti dan menyatakan sumbernya."
+    },
+    "1.1.2": {
+      "prior_knowledge": "Murid biasa melihat huruf pada nama sendiri dan bahan bercetak.",
+      "success_criterion": "Murid memilih kad abjad atau suku kata yang sepadan dengan sekurang-kurangnya dua bunyi sebutan.",
+      "emk_nilai": "Bahasa dan komunikasi; mendengar dengan teliti.",
+      "kbat": "Membezakan bunyi dua suku kata yang hampir sama.",
+      "pak21": "Dengar-Susun-Semak secara pasangan menggunakan kad huruf.",
+      "guided_pdp": "Guru menyebut bunyi huruf dan suku kata dengan jelas mengikut irama ringkas. Murid mengangkat kad padanan serta mengulangi bunyi secara terkawal.",
+      "application_pdp": "Guru mengubah susunan bunyi huruf dan suku kata tanpa menunjukkan kad jawapan. Murid membina urutan kad yang didengar lalu membandingkannya dengan rakaman semula.",
+      "closure": "Murid menyebut satu suku kata yang dapat dikenal pasti melalui pendengaran."
+    },
+    "1.1.3": {
+      "prior_knowledge": "Murid pernah mendengar arahan dan pertanyaan yang disebut dengan intonasi berlainan.",
+      "success_criterion": "Murid memilih respons atau kad yang sepadan dengan sebutan serta intonasi ujaran yang didengar.",
+      "emk_nilai": "Bahasa dan kesantunan; menghormati orang yang sedang bercakap.",
+      "kbat": "Mengecam perbezaan maksud ujaran melalui intonasi.",
+      "pak21": "Dengar-Pilih-Jelas secara berpasangan.",
+      "guided_pdp": "Guru memperdengarkan ujaran yang sama dengan intonasi penyata dan pertanyaan. Murid mengenal pasti perbezaan bunyi hujung ujaran melalui kad simbol.",
+      "application_pdp": "Guru memperdengarkan ujaran baharu dan meminta murid menentukan sama ada nada yang didengar sesuai dengan konteks gambar. Murid memberikan alasan berdasarkan intonasi.",
+      "closure": "Murid memilih satu ujaran yang sesuai dengan situasi yang digambarkan."
+    },
+    "1.2.1": {
+      "prior_knowledge": "Murid biasa memberi respons kepada salam dan pertanyaan ringkas.",
+      "success_criterion": "Murid memberikan respons yang relevan dan sopan terhadap sekurang-kurangnya dua ujaran yang diperdengarkan.",
+      "emk_nilai": "Kesantunan berbahasa; saling menghormati.",
+      "kbat": "Memilih respons paling sesuai antara dua jawapan bagi satu ujaran.",
+      "pak21": "Dialog bergilir dan maklum balas rakan.",
+      "guided_pdp": "Guru memperdengarkan ujaran sopan seperti sapaan dan permintaan. Murid memilih dan menyebut respons yang bersesuaian secara berpandu.",
+      "application_pdp": "Guru mempelbagaikan pasangan ujaran dan respons mengikut watak dalam gambar. Murid mendengar, membalas dan menjelaskan mengapa respons itu sopan.",
+      "closure": "Murid memberi satu contoh balasan sopan terhadap ujaran guru."
+    },
+    "1.2.2": {
+      "prior_knowledge": "Murid pernah mendengar ucapan selamat, terima kasih dan permohonan maaf.",
+      "success_criterion": "Murid memadankan ucapan selamat, penghargaan dan permohonan maaf dengan situasi yang betul.",
+      "emk_nilai": "Nilai murni; menghargai bantuan dan memohon maaf dengan ikhlas.",
+      "kbat": "Menentukan jenis ucapan yang paling bertepatan bagi situasi baharu.",
+      "pak21": "Kad situasi dan dialog bergilir secara pasangan.",
+      "guided_pdp": "Guru membacakan tiga situasi berbeza; murid mendengar lalu memilih respons bagi ucapan selamat, penghargaan dan permohonan maaf.",
+      "application_pdp": "Guru memperdengarkan dialog pendek dengan tiga jenis ucapan secara rawak; murid mengelaskan jenis ucapan dan memberikan respons yang sopan bagi setiap situasi.",
+      "closure": "Murid melafazkan satu ucapan penghargaan atau permohonan maaf yang tepat mengikut situasi."
+    },
+    "1.2.3": {
+      "prior_knowledge": "Murid mengikuti arahan rutin di bilik darjah.",
+      "success_criterion": "Murid melaksanakan sekurang-kurangnya dua arahan sekolah dan memberikan jawapan sopan kepada satu pertanyaan.",
+      "emk_nilai": "Keselamatan dan disiplin di sekolah; mematuhi arahan.",
+      "kbat": "Memilih tindakan sesuai apabila arahan dan pertanyaan mempunyai maksud berbeza.",
+      "pak21": "Simulasi arahan dalam kumpulan kecil.",
+      "guided_pdp": "Guru menyebut arahan seperti menyusun buku dan beratur sebelum bertanya tentang lokasi bahan. Murid menunjukkan tindakan serta respons yang tepat.",
+      "application_pdp": "Guru memberikan arahan sekolah baharu tanpa gerak contoh dan mengemukakan pertanyaan susulan. Murid melaksanakan tindakan dan memberikan jawapan lengkap secara sopan.",
+      "closure": "Murid menyatakan satu arahan sekolah yang boleh dipatuhi dengan betul."
+    },
+    "1.2.4": {
+      "prior_knowledge": "Murid mengenali rutin membantu ahli keluarga di rumah.",
+      "success_criterion": "Murid mengenal pasti arahan atau pertanyaan di rumah dan menunjukkan satu respons yang bertepatan.",
+      "emk_nilai": "Kekeluargaan; bertanggungjawab dan hormat kepada ahli keluarga.",
+      "kbat": "Membezakan respons untuk permintaan tolong dan pertanyaan tentang lokasi.",
+      "pak21": "Permainan peranan keluarga menggunakan kad situasi.",
+      "guided_pdp": "Guru memainkan dialog ahli keluarga yang meminta menyimpan mainan dan bertanya tentang barang. Murid mendengar lalu memilih respons bersesuaian.",
+      "application_pdp": "Guru memperdengarkan dua situasi rumah yang baharu. Murid memadankan arahan dengan tindakan, menjawab pertanyaan dan menggunakan nada yang sopan.",
+      "closure": "Murid menerangkan satu tindakan yang sesuai selepas mendengar arahan ahli keluarga."
+    },
+    "2.1.1": {
+      "prior_knowledge": "Murid mengenali bunyi haiwan, cuaca atau kenderaan.",
+      "success_criterion": "Murid mengajuk sekurang-kurangnya dua bunyi yang diperdengarkan dengan perbezaan yang jelas.",
+      "emk_nilai": "Kelestarian alam; yakin mencuba aktiviti lisan.",
+      "kbat": "Membandingkan dan memilih cara mengajuk dua bunyi yang berbeza.",
+      "pak21": "Ajuk-Gilir-Teka melalui kumpulan kecil.",
+      "guided_pdp": "Guru memperdengarkan bunyi hujan, burung dan kenderaan; murid mengajuk bunyi satu demi satu sambil rakan meneka sumbernya.",
+      "application_pdp": "Guru memilih rakaman baharu mengikut tahap murid. Murid membuat ajukan dengan jelas serta memberi petunjuk tentang sumber bunyi untuk diteka rakan.",
+      "closure": "Murid mengajuk satu bunyi pilihan dan menyebut sumber bunyi itu."
+    },
+    "2.1.2": {
+      "prior_knowledge": "Murid biasa menyebut nama huruf pada kad abjad.",
+      "success_criterion": "Murid menyebut sekurang-kurangnya tiga abjad atau dua suku kata dengan sebutan yang boleh difahami.",
+      "emk_nilai": "Bahasa; keyakinan berkomunikasi.",
+      "kbat": "Mengelaskan suku kata berdasarkan bunyi awal yang sama.",
+      "pak21": "Latih Sebut-Gilir-Semak antara pasangan.",
+      "guided_pdp": "Guru menunjukkan kad abjad dan suku kata sambil menyebutnya secara berirama. Murid mengulang sebutan secara berkelompok sebelum mencuba seorang demi seorang.",
+      "application_pdp": "Guru memaparkan kad suku kata dalam urutan yang berbeza. Murid menyebutnya tanpa contoh awal dan menerima maklum balas untuk memperbaiki sebutan.",
+      "closure": "Murid menyebut satu pasangan suku kata dengan sebutan yang jelas."
+    },
+    "2.1.3": {
+      "prior_knowledge": "Murid pernah menyebut ayat pendek dalam perbualan harian.",
+      "success_criterion": "Murid menyebut sekurang-kurangnya satu ayat penyata dan satu ayat tanya dengan intonasi yang berbeza.",
+      "emk_nilai": "Kesantunan dan komunikasi; mendengar ketika rakan bertutur.",
+      "kbat": "Menentukan intonasi sesuai berdasarkan tanda baca dan situasi.",
+      "pak21": "Lakon-Tukar Peranan secara pasangan.",
+      "guided_pdp": "Guru menunjukkan kad ayat penyata dan ayat tanya lalu memodelkan perbezaan nada. Murid mengulang dengan sebutan jelas dan intonasi bersesuaian.",
+      "application_pdp": "Guru memberikan dialog dua situasi, seorang murid bertanya dan seorang menjawab. Murid bertukar peranan dan menyemak intonasi berdasarkan maklum balas rakan.",
+      "closure": "Murid menyebut satu ayat tanya dengan intonasi yang bersesuaian."
+    },
+    "2.2.1": {
+      "prior_knowledge": "Murid biasa bertanya dan meminta bantuan di kantin serta bilik darjah.",
+      "success_criterion": "Murid menyebut sekurang-kurangnya dua ujaran sopan bagi situasi sekolah yang berbeza.",
+      "emk_nilai": "Budi bahasa; menjaga keharmonian warga sekolah.",
+      "kbat": "Memilih ungkapan terbaik apabila meminta bantuan dalam dua tempat berlainan.",
+      "pak21": "Simulasi pasangan di kantin dan perpustakaan.",
+      "guided_pdp": "Guru menunjukkan dialog meminta makanan dan meminjam buku. Murid mempraktikkan sapaan, permintaan dan penghargaan secara berpandu.",
+      "application_pdp": "Guru mengagihkan kad watak pelanggan kantin, pengawas perpustakaan dan rakan kelas. Murid berlakon secara bergilir dengan ujaran sopan yang relevan.",
+      "closure": "Murid menyampaikan satu permintaan tolong menggunakan ungkapan yang sesuai."
+    },
+    "2.2.2": {
+      "prior_knowledge": "Murid pernah berinteraksi secara sopan dengan ahli keluarga.",
+      "success_criterion": "Murid menggunakan dua ungkapan sopan dalam dialog rumah yang berurutan.",
+      "emk_nilai": "Kasih sayang dan hormat-menghormati ahli keluarga.",
+      "kbat": "Membuat pilihan ungkapan yang tidak menyinggung perasaan dalam situasi rumah.",
+      "pak21": "Permainan peranan ahli keluarga dengan pertukaran watak.",
+      "guided_pdp": "Guru menunjukkan dialog meminta izin dan berterima kasih di rumah. Murid mengulang ungkapan sambil memperhatikan nada suara yang sesuai.",
+      "application_pdp": "Guru meminta murid memilih peranan ibu, ayah, adik atau abang serta membina dialog ringkas yang menunjukkan permintaan, respons dan penghargaan.",
+      "closure": "Murid menyebut satu ungkapan sopan yang sesuai digunakan di rumah."
+    },
+    "2.3.1": {
+      "prior_knowledge": "Murid mengetahui nama, minat atau hobi sendiri.",
+      "success_criterion": "Murid memperkenalkan diri dengan sekurang-kurangnya tiga maklumat ringkas dalam urutan yang difahami.",
+      "emk_nilai": "Jati diri; yakin dan menghormati perbezaan minat.",
+      "kbat": "Menyusun maklumat diri mengikut urutan untuk memudahkan pendengar.",
+      "pak21": "Temu Bual Dua Hala dan perkongsian pasangan.",
+      "guided_pdp": "Guru memodelkan perkenalan diri melalui kad nama, hobi dan sekolah. Murid menyusun tiga kad fakta sebelum memperkenalkan diri kepada pasangan.",
+      "application_pdp": "Guru mengatur temu bual berpasangan tentang hobi dan keluarga. Murid memperkenalkan diri secara spontan menggunakan maklumat terpilih tanpa membaca kad sepenuhnya.",
+      "closure": "Murid berkongsi satu maklumat diri yang belum diketengahkan kepada rakan."
+    },
+    "2.3.2": {
+      "prior_knowledge": "Murid pernah mendengar cerita ringkas yang mempunyai pengajaran.",
+      "success_criterion": "Murid menceritakan semula sekurang-kurangnya dua peristiwa dan menyebut satu nilai murni.",
+      "emk_nilai": "Kasih sayang; tolong-menolong dalam kehidupan harian.",
+      "kbat": "Menghubungkan tindakan watak dengan nilai yang sesuai.",
+      "pak21": "Susun Gambar-Ceritakan secara berkumpulan.",
+      "guided_pdp": "Guru membacakan cerita pendek dan memaparkan gambar peristiwa awal serta akhir. Murid menyusun gambar lalu menceritakan semula jalan cerita secara berpandu.",
+      "application_pdp": "Guru memberikan gambar cerita yang diacak. Murid menyusun urutan, menceritakan semula mengikut bahasa sendiri dan menyatakan nilai daripada tindakan watak.",
+      "closure": "Murid menjelaskan satu nilai yang boleh dicontohi daripada cerita."
+    },
+    "2.3.3": {
+      "prior_knowledge": "Murid pernah meniru dialog watak dalam cerita atau permainan.",
+      "success_criterion": "Murid melakonkan dialog dua watak dengan sebutan jelas dan urutan cerita yang sesuai.",
+      "emk_nilai": "Kerjasama dan hormat terhadap peranan rakan.",
+      "kbat": "Menyarankan respons watak yang lebih sopan ketika konflik kecil dalam cerita.",
+      "pak21": "Lakonan Mini dan ulasan rakan.",
+      "guided_pdp": "Guru membacakan skrip cerita bergambar dan membahagikan peranan watak. Murid berlatih menyebut dialog mengikut urutan dengan bimbingan.",
+      "application_pdp": "Guru membenarkan kumpulan memilih ekspresi serta gerak yang sesuai tanpa mengubah maksud cerita. Murid melakonkan babak ringkas dan memberi maklum balas sopan.",
+      "closure": "Murid menyatakan dialog watak yang paling menunjukkan nilai baik."
+    },
+    "3.1.1": {
+      "prior_knowledge": "Murid pernah melihat simbol dan abjad pada papan tanda.",
+      "success_criterion": "Murid mengecam sekurang-kurangnya tiga simbol atau huruf pada kad dan label mudah.",
+      "emk_nilai": "Literasi persekitaran; berhati-hati ketika membaca tanda.",
+      "kbat": "Membezakan simbol bukan huruf dengan abjad pada bahan yang sama.",
+      "pak21": "Cari-Padan-Jelaskan dalam kumpulan kecil.",
+      "guided_pdp": "Guru mempamerkan kad simbol, huruf dan label ringkas. Murid mengecam huruf yang dinamakan dan membezakannya daripada simbol bergambar.",
+      "application_pdp": "Guru menyediakan poster dengan campuran simbol dan huruf. Murid menandakan huruf sasaran lalu membacanya serta menerangkan perbezaan dengan simbol.",
+      "closure": "Murid menunjukkan satu huruf dan satu simbol daripada bahan yang dibaca."
+    },
+    "3.1.2": {
+      "prior_knowledge": "Murid pernah mengenali bunyi suku kata melalui lagu.",
+      "success_criterion": "Murid membaca dua suku kata dan menggabungkannya menjadi satu perkataan bermakna.",
+      "emk_nilai": "Bahasa; ketekunan ketika membaca.",
+      "kbat": "Membandingkan perkataan yang berubah makna apabila suku kata ditukar.",
+      "pak21": "Gabung Kad dan Baca Bersama.",
+      "guided_pdp": "Guru menunjukkan gabungan suku kata mudah seperti ba-tu dan bu-ku. Murid membaca setiap bahagian sebelum menyebut perkataan lengkap.",
+      "application_pdp": "Guru memberikan beberapa kad suku kata secara rawak. Murid membina perkataan bermakna, membacanya dan memadankan dengan gambar yang betul.",
+      "closure": "Murid membaca satu perkataan yang dibentuk daripada dua kad suku kata."
+    },
+    "3.1.3": {
+      "prior_knowledge": "Murid sudah dapat mengenal beberapa perkataan harian.",
+      "success_criterion": "Murid membaca satu frasa dan satu ayat ringkas dengan sebutan yang dapat difahami.",
+      "emk_nilai": "Budaya membaca; kesungguhan mencuba.",
+      "kbat": "Memilih frasa yang paling sesuai melengkapkan ayat bergambar.",
+      "pak21": "Baca Berantai dan maklum balas pasangan.",
+      "guided_pdp": "Guru memperkenalkan kad perkataan kemudian menyatukannya menjadi frasa serta ayat. Murid membaca secara berperingkat dengan bimbingan sebutan.",
+      "application_pdp": "Guru memberi ayat ringkas beserta gambar berlainan. Murid membaca secara bergilir dan memilih frasa yang paling tepat berdasarkan gambar.",
+      "closure": "Murid membaca satu ayat dengan sebutan yang lebih jelas daripada latihan awal."
+    },
+    "3.2.1": {
+      "prior_knowledge": "Murid mengenali tanda noktah dan tanda tanya pada ayat mudah.",
+      "success_criterion": "Murid membaca dua ayat dengan sebutan dan intonasi yang sesuai dengan tanda baca.",
+      "emk_nilai": "Bahasa; mendengar dan menghormati giliran membaca.",
+      "kbat": "Membandingkan intonasi ayat tanya dan ayat penyata dengan konteks gambar.",
+      "pak21": "Baca Bersama-Tiru-Tukar Giliran.",
+      "guided_pdp": "Guru membacakan ayat penyata serta ayat tanya dan menunjuk tanda baca. Murid membaca semula dengan nada yang sepadan.",
+      "application_pdp": "Guru memberikan dialog ringkas yang mengandungi dua tanda baca. Murid membaca dengan intonasi berlainan dan menerangkan maksud berdasarkan konteks.",
+      "closure": "Murid membaca satu ayat tanya serta menunjukkan tanda baca yang memandu intonasi."
+    },
+    "3.2.2": {
+      "prior_knowledge": "Murid pernah menggunakan poster atau label untuk mencari maklumat.",
+      "success_criterion": "Murid menyatakan sekurang-kurangnya dua maklumat tersurat daripada poster atau jadual ringkas.",
+      "emk_nilai": "Literasi maklumat; teliti dan jujur tentang bukti bacaan.",
+      "kbat": "Menentukan maklumat penting yang menyokong jawapan daripada poster.",
+      "pak21": "Cari Bukti dan Kongsi dengan rakan.",
+      "guided_pdp": "Guru menunjukkan poster waktu aktiviti bergambar dan menyoal lokasi atau masa yang tertera. Murid menunjuk bahagian poster yang menyokong jawapan.",
+      "application_pdp": "Guru memberikan poster atau jadual baharu. Murid mencari maklumat khusus, menanda bukti pada bahan dan menyampaikan jawapan lengkap.",
+      "closure": "Murid menyebut satu fakta yang boleh dibuktikan melalui poster."
+    },
+    "3.2.3": {
+      "prior_knowledge": "Murid pernah menjawab soalan mudah selepas membaca teks bergambar.",
+      "success_criterion": "Murid memberikan respons sopan kepada satu soalan dengan merujuk maklumat dalam petikan.",
+      "emk_nilai": "Sopan santun dan komunikasi berasaskan bukti.",
+      "kbat": "Memilih jawapan terbaik apabila dua respons berbeza diberikan.",
+      "pak21": "Baca-Fikir-Respons secara pasangan.",
+      "guided_pdp": "Guru membimbing murid membaca petikan ringkas lalu mencontohkan respons dengan merujuk ayat dalam teks. Murid menjawab soalan secara sopan.",
+      "application_pdp": "Guru mengedarkan petikan baharu dan soalan situasi. Murid membaca, memilih bukti berkaitan dan memberi respons sopan tanpa menokok maklumat.",
+      "closure": "Murid menyatakan satu respons yang dapat disokong oleh petikan dibaca."
+    },
+    "4.1.1": {
+      "prior_knowledge": "Murid pernah melakar garis lurus dan lengkung menggunakan pensel.",
+      "success_criterion": "Murid melakar dua bentuk atau corak yang jelas mengikut arah contoh.",
+      "emk_nilai": "Kreativiti dan kehalusan motor; menjaga bahan tulis.",
+      "kbat": "Membandingkan lakaran sebelum dan selepas mengubah arah garis.",
+      "pak21": "Tunjuk-Cuba-Semak secara berpasangan.",
+      "guided_pdp": "Guru menunjukkan cara melakar garis lurus, lengkung dan corak berulang. Murid menggerakkan pensel mengikut contoh dengan kawalan tangan.",
+      "application_pdp": "Guru memberikan pola yang belum dilengkapkan. Murid memilih arah garis yang sesuai, melengkapkan corak dan membandingkan hasil dengan contoh.",
+      "closure": "Murid menunjukkan satu lakaran kemas dan menyatakan jenis garisan digunakan."
+    },
+    "4.1.2": {
+      "prior_knowledge": "Murid pernah memegang pensel serta mengecam bentuk huruf.",
+      "success_criterion": "Murid menekap dua huruf dengan arah gerakan yang betul dan cuba membentuknya tanpa surihan penuh.",
+      "emk_nilai": "Ketekunan, kekemasan dan kawalan motor halus.",
+      "kbat": "Memilih arah gurisan yang memudahkan pembentukan huruf.",
+      "pak21": "Demonstrasi-Cuba-Semak kendiri.",
+      "guided_pdp": "Guru memperagakan arah pembentukan huruf pada kad besar. Murid menekap huruf berpandukan titik mula dan anak panah.",
+      "application_pdp": "Guru menyediakan huruf surih separa serta ruang kosong. Murid membentuk huruf dengan panduan berkurang dan menyemak saiz serta arah tulisan.",
+      "closure": "Murid menunjukkan satu huruf yang dibentuk dengan kemas dan betul."
+    },
+    "4.1.3": {
+      "prior_knowledge": "Murid pernah menyalin huruf dan perkataan mudah.",
+      "success_criterion": "Murid menyalin satu frasa atau ayat pendek dengan susunan huruf dan jarak yang munasabah.",
+      "emk_nilai": "Disiplin, kekemasan dan menghargai kerja sendiri.",
+      "kbat": "Mengenal pasti kesilapan jarak serta bentuk huruf pada dua contoh tulisan.",
+      "pak21": "Tulis-Pasang-Semak dengan senarai kriteria.",
+      "guided_pdp": "Guru memodelkan penyalinan perkataan dan frasa dengan penjarakan yang jelas. Murid menyalin serta memeriksa bentuk huruf secara berpandu.",
+      "application_pdp": "Guru memperkenalkan ayat ringkas dan senarai semak huruf serta jarak perkataan. Murid menyalin, menyemak hasil rakan dan membetulkan kesilapan.",
+      "closure": "Murid menunjukkan satu bahagian tulisan yang bertambah kemas selepas semakan."
+    },
+    "4.2.1": {
+      "prior_knowledge": "Murid mengenal suku kata mudah dan beberapa perkataan harian.",
+      "success_criterion": "Murid membina sekurang-kurangnya satu perkataan dan satu frasa bermakna daripada bahan yang diberi.",
+      "emk_nilai": "Bahasa dan kreativiti; berani mencuba gabungan baharu.",
+      "kbat": "Memilih susunan kad yang menghasilkan frasa paling bermakna.",
+      "pak21": "Susun-Bina-Semak dalam pasangan.",
+      "guided_pdp": "Guru menunjukkan kad suku kata dan memodelkan pembentukan satu perkataan. Murid menyusun kad kemudian menggabungkan dua perkataan menjadi frasa.",
+      "application_pdp": "Guru memberikan kad suku kata dan perkataan bercampur. Murid membina perkataan serta frasa baharu, menuliskannya dan menyemak makna melalui gambar.",
+      "closure": "Murid membaca satu frasa yang dibina sendiri dan menjelaskan maksudnya."
+    },
+    "4.2.2": {
+      "prior_knowledge": "Murid pernah menyebut ayat mudah berdasarkan gambar.",
+      "success_criterion": "Murid menulis sekurang-kurangnya satu ayat lengkap yang sesuai dengan gambar dan menyemak huruf serta tanda baca.",
+      "emk_nilai": "Bahasa; ketelitian dan menghargai hasil penulisan.",
+      "kbat": "Menilai dua binaan ayat untuk memilih yang lebih jelas dan gramatis.",
+      "pak21": "Bina-Tulis-Sunting bersama pasangan.",
+      "guided_pdp": "Guru memaparkan gambar dan menyusun bank perkataan menjadi ayat model. Murid memilih perkataan yang sesuai untuk membina ayat berpandukan contoh.",
+      "application_pdp": "Guru memperlihatkan gambar bersiri berlainan dan meminta murid membina ayat sendiri. Murid menulis, menyunting susunan perkataan serta tanda baca sebelum berkongsi hasil.",
+      "closure": "Murid membaca satu ayat lengkap yang ditulis dan menjelaskan padanannya dengan gambar."
+    }
+  }
+}

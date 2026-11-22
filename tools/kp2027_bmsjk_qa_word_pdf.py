@@ -15,6 +15,8 @@ from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "audits/kp2027_bm_sjk_tahun1_52_rph_editorial_qa_20261123.json"
+PEDAGOGY = ROOT / "audits/kp2027_bm_sjk_pedagogy_26sp_20261123.json"
+VERIFIED = ROOT / "audits/kp2027_bm_sjk_sksp_verified_20261123.json"
 PAGE_WIDTH_MM = 210
 PAGE_HEIGHT_MM = 297
 MARGIN_MM = 18
@@ -38,7 +40,28 @@ def qa_records():
                 or not r.get("sp_description") or len(r["aktiviti_utama"]) != 3
                 or r["refleksi_label"] != "Refleksi"):
             raise ValueError("A QA source is not complete for isolated export")
-    return records
+    # Editorial improvements never rewrite the audited curriculum or base RPH:
+    # enrich copies with phase-specific practices and verified SP sub-components.
+    bank = json.loads(PEDAGOGY.read_text(encoding="utf-8"))
+    verified = json.loads(VERIFIED.read_text(encoding="utf-8"))
+    if (bank["status"] != "QA_EDITORIAL_UNAPPROVED"
+            or bank["counts"] != {"sp": 26, "pdp": 52, "ready": 0}
+            or set(bank["by_sp"]) != set(verified["sp"])):
+        raise ValueError("Editorial supplement approval gate or SP inventory changed")
+    enriched = []
+    for original in records:
+        r = original.copy()
+        supplement = bank["by_sp"].get(r["sp_code"])
+        if not supplement or any(not isinstance(v, str) or len(v.strip()) < 16
+                                 for v in supplement.values()):
+            raise ValueError("Missing editorial pedagogical supplement")
+        r["editorial_supplement"] = supplement.copy()
+        if r["sp_code"] == "1.2.2":
+            r["sp_components"] = [
+                "; ".join(verified["special_sp_components"]["1.2.2"])
+            ]
+        enriched.append(r)
+    return enriched
 
 
 def heading(record):
@@ -57,19 +80,28 @@ def _rows(record):
         ("Standard Pembelajaran", [record["sp_code"] + " " + record["sp_description"]] +
          record.get("sp_components", [])),
         ("Objektif Pembelajaran", record["objectives"]),
+        ("Pengetahuan Sedia Ada", [record["editorial_supplement"]["prior_knowledge"]]),
+        ("Kriteria Kejayaan", [record["editorial_supplement"]["success_criterion"]]),
+        ("EMK / Nilai", [record["editorial_supplement"]["emk_nilai"]]),
+        ("KBAT", [record["editorial_supplement"]["kbat"]]),
+        ("PAK21", [record["editorial_supplement"]["pak21"]]),
         ("Bahan Bantu Mengajar", record["bbm"]),
     ]
     activities = [("Set Induksi", [
         ("Guru", record["set_induksi"]["guru"]),
         ("Murid", record["set_induksi"]["murid"]),
     ])]
-    for item in record["aktiviti_utama"]:
-        activities.append((item["title"], [
-            ("Guru", item["guru"]), ("Murid", item["murid"])
-        ]))
+    for i, item in enumerate(record["aktiviti_utama"]):
+        actions = [("Guru", item["guru"]), ("Murid", item["murid"])]
+        if i == 1:
+            phase_key = ("guided_pdp" if record["phase"] == "penerokaan"
+                         else "application_pdp")
+            actions.append(("Pengukuhan khusus", record["editorial_supplement"][phase_key]))
+        activities.append((item["title"], actions))
     activities.append(("Penutup", [
         ("Guru", record["penutup"]["guru"]),
         ("Murid", record["penutup"]["murid"]),
+        ("Semak kefahaman", record["editorial_supplement"]["closure"]),
     ]))
     follow_up = [
         ("Pentaksiran / PBD", [record["penilaian"]]),
@@ -97,9 +129,10 @@ def render_docx(record):
 
     normal = d.styles["Normal"]
     normal.font.name = "Arial"
-    normal.font.size = Pt(9)
+    normal.font.size = Pt(8.3)
     normal.font.color.rgb = RGBColor(25, 50, 73)
-    normal.paragraph_format.space_after = Pt(2)
+    normal.paragraph_format.space_after = Pt(0)
+    normal.paragraph_format.line_spacing = 1.0
 
     def set_cell(cell, fill=None):
         cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
@@ -149,7 +182,11 @@ def render_docx(record):
         return t
 
     def spacer():
-        d.add_paragraph().paragraph_format.space_after = Pt(1)
+        p = d.add_paragraph()
+        p.paragraph_format.space_before = Pt(0)
+        p.paragraph_format.space_after = Pt(0)
+        p.paragraph_format.line_spacing = Pt(1)
+        p.add_run(" ").font.size = Pt(1)
 
     h = heading(record)
     head = table((116, 58), 1)
@@ -205,7 +242,7 @@ def render_pdf(record):
         pdfmetrics.registerFont(TTFont("KPQABold", str(bold)))
         pdfmetrics.registerFontFamily("KPQA", normal="KPQA", bold="KPQABold")
     normal = ParagraphStyle(
-        "KPQA", fontName="KPQA", fontSize=8.3, leading=12,
+        "KPQA", fontName="KPQA", fontSize=8.2, leading=11,
         alignment=TA_LEFT, textColor=colors.HexColor("#193249"), spaceAfter=1
     )
     def para(txt, bold=False):
@@ -219,7 +256,7 @@ def render_pdf(record):
     doc = SimpleDocTemplate(
         pdf, pagesize=A4,
         leftMargin=MARGIN_MM*mm, rightMargin=MARGIN_MM*mm,
-        topMargin=16*mm, bottomMargin=16*mm,
+        topMargin=14*mm, bottomMargin=14*mm,
         title=f"RPH Bahasa Melayu SJK Tahun 1 PdP {record['proposed_pdp']:03d}"
     )
     width = OUTER_WIDTH_MM*mm
@@ -231,8 +268,8 @@ def render_pdf(record):
             ("INNERGRID", (0, 0), (-1, -1), .45, colors.HexColor("#8393A3")),
             ("LEFTPADDING", (0, 0), (-1, -1), 6),
             ("RIGHTPADDING", (0, 0), (-1, -1), 6),
-            ("TOPPADDING", (0, 0), (-1, -1), 4),
-            ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
+            ("TOPPADDING", (0, 0), (-1, -1), 2.5),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 2.5),
         ]
         for n in shaded_rows:
             styles.append(("BACKGROUND", (0, n), (0, n), colors.HexColor("#"+TONE)))
@@ -249,17 +286,17 @@ def render_pdf(record):
         ("BACKGROUND", (0, 0), (0, 0), colors.HexColor("#"+STRONG)),
         ("BACKGROUND", (1, 0), (1, 0), colors.HexColor("#"+TONE)),
     ]))
-    story = [hdr, Spacer(1, 2.5*mm)]
+    story = [hdr, Spacer(1, 2*mm)]
     standards, activities, follow_up = _rows(record)
     def content_table(rows):
         return tb([[para(label, bold=True), pack(contents)] for label, contents in rows],
                   [LABEL_WIDTH_MM, OUTER_WIDTH_MM-LABEL_WIDTH_MM],
                   range(len(rows)))
-    story += [content_table(standards), Spacer(1, 2.5*mm)]
+    story += [content_table(standards), Spacer(1, 2*mm)]
     story += [content_table([
         (label, [role+": "+value for role, value in chunks])
         for label,chunks in activities
-    ]), Spacer(1, 2.5*mm)]
+    ]), Spacer(1, 2*mm)]
     story.append(content_table(follow_up))
     doc.build(story)
     result=pdf.getvalue()

@@ -1,0 +1,1270 @@
+{
+  "id": "kp2027_bmsjk_t1_52pdp_rpt_ab_unallocated_20261123",
+  "status": "QA_HOLD_RPT_ANNUAL_NOT_COMPLETE",
+  "date": "2026-11-23",
+  "calendar_reference": {
+    "official_page": "https://www.moe.gov.my/index.php/kalendar-akademik-semasa",
+    "official_notice": "https://www.moe.gov.my/index.php/surat-siaran-kpm-bil1-tahun-2027-kalendar-akademik",
+    "comparison": "https://cerdik.my/kalendar-akademik-2027-kpm/",
+    "source_note": "School session and term dates cross-referenced with KPM announcement and public calendar transcription; state/public/festival holidays require individual confirmation before dated RPT."
+  },
+  "instruction": "52 PdP cadangan bagi 26 SP, bukan jumlah minimum tahunan atau jadual rasmi KPM. Kumpulan A/B mengekalkan urutan 52; tarikh dan masa setiap PdP hanya dipadankan dengan jadual waktu sekolah serta cuti negeri. Tiada label minggu, tiada tarikh atau masa rekaan.",
+  "owner_target": {
+    "last_curricular_pdp_on_or_before": "2027-11-05",
+    "not_official_kpm": true
+  },
+  "publishable": false,
+  "ready_rph": 0,
+  "groups": {
+    "A": {
+      "negeri": [
+        "Kedah",
+        "Kelantan",
+        "Terengganu"
+      ],
+      "mula": "2027-01-04",
+      "akhir": "2027-12-02",
+      "jumlah_hari_persekolahan": 201,
+      "segmen": [
+        [
+          "2027-01-04",
+          "2027-03-04"
+        ],
+        [
+          "2027-03-14",
+          "2027-05-20"
+        ],
+        [
+          "2027-06-06",
+          "2027-08-26"
+        ],
+        [
+          "2027-09-05",
+          "2027-12-02"
+        ]
+      ],
+      "cuti_penggal": [
+        [
+          "2027-03-05",
+          "2027-03-13"
+        ],
+        [
+          "2027-05-21",
+          "2027-06-05"
+        ],
+        [
+          "2027-08-27",
+          "2027-09-04"
+        ]
+      ],
+      "pdp_cadangan": [
+        {
+          "pdp_cadangan": 1,
+          "sk": "1.1",
+          "sp": "1.1.1",
+          "fokus": "Bunyi persekitaran",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 2,
+          "sk": "1.1",
+          "sp": "1.1.1",
+          "fokus": "Bunyi persekitaran",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 3,
+          "sk": "1.1",
+          "sp": "1.1.2",
+          "fokus": "Abjad dan suku kata",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 4,
+          "sk": "1.1",
+          "sp": "1.1.2",
+          "fokus": "Abjad dan suku kata",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 5,
+          "sk": "1.1",
+          "sp": "1.1.3",
+          "fokus": "Sebutan dan intonasi",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 6,
+          "sk": "1.1",
+          "sp": "1.1.3",
+          "fokus": "Sebutan dan intonasi",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 7,
+          "sk": "1.2",
+          "sp": "1.2.1",
+          "fokus": "Respons ujaran sopan",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 8,
+          "sk": "1.2",
+          "sp": "1.2.1",
+          "fokus": "Respons ujaran sopan",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 9,
+          "sk": "1.2",
+          "sp": "1.2.2",
+          "fokus": "Ucapan mengikut situasi",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 10,
+          "sk": "1.2",
+          "sp": "1.2.2",
+          "fokus": "Ucapan mengikut situasi",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 11,
+          "sk": "1.2",
+          "sp": "1.2.3",
+          "fokus": "Arahan dan pertanyaan di sekolah",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 12,
+          "sk": "1.2",
+          "sp": "1.2.3",
+          "fokus": "Arahan dan pertanyaan di sekolah",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 13,
+          "sk": "1.2",
+          "sp": "1.2.4",
+          "fokus": "Arahan dan pertanyaan di rumah",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 14,
+          "sk": "1.2",
+          "sp": "1.2.4",
+          "fokus": "Arahan dan pertanyaan di rumah",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 15,
+          "sk": "2.1",
+          "sp": "2.1.1",
+          "fokus": "Ajuk bunyi persekitaran",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 16,
+          "sk": "2.1",
+          "sp": "2.1.1",
+          "fokus": "Ajuk bunyi persekitaran",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 17,
+          "sk": "2.1",
+          "sp": "2.1.2",
+          "fokus": "Sebut abjad dan suku kata",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 18,
+          "sk": "2.1",
+          "sp": "2.1.2",
+          "fokus": "Sebut abjad dan suku kata",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 19,
+          "sk": "2.1",
+          "sp": "2.1.3",
+          "fokus": "Ujaran dengan intonasi",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 20,
+          "sk": "2.1",
+          "sp": "2.1.3",
+          "fokus": "Ujaran dengan intonasi",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 21,
+          "sk": "2.2",
+          "sp": "2.2.1",
+          "fokus": "Ujaran sopan di sekolah",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 22,
+          "sk": "2.2",
+          "sp": "2.2.1",
+          "fokus": "Ujaran sopan di sekolah",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 23,
+          "sk": "2.2",
+          "sp": "2.2.2",
+          "fokus": "Ujaran sopan di rumah",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 24,
+          "sk": "2.2",
+          "sp": "2.2.2",
+          "fokus": "Ujaran sopan di rumah",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 25,
+          "sk": "2.3",
+          "sp": "2.3.1",
+          "fokus": "Perihal diri",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 26,
+          "sk": "2.3",
+          "sp": "2.3.1",
+          "fokus": "Perihal diri",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 27,
+          "sk": "2.3",
+          "sp": "2.3.2",
+          "fokus": "Cerita bernilai murni",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 28,
+          "sk": "2.3",
+          "sp": "2.3.2",
+          "fokus": "Cerita bernilai murni",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 29,
+          "sk": "2.3",
+          "sp": "2.3.3",
+          "fokus": "Lakonan cerita",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 30,
+          "sk": "2.3",
+          "sp": "2.3.3",
+          "fokus": "Lakonan cerita",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 31,
+          "sk": "3.1",
+          "sp": "3.1.1",
+          "fokus": "Kenal simbol dan abjad",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 32,
+          "sk": "3.1",
+          "sp": "3.1.1",
+          "fokus": "Kenal simbol dan abjad",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 33,
+          "sk": "3.1",
+          "sp": "3.1.2",
+          "fokus": "Suku kata dan perkataan",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 34,
+          "sk": "3.1",
+          "sp": "3.1.2",
+          "fokus": "Suku kata dan perkataan",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 35,
+          "sk": "3.1",
+          "sp": "3.1.3",
+          "fokus": "Perkataan, frasa dan ayat",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 36,
+          "sk": "3.1",
+          "sp": "3.1.3",
+          "fokus": "Perkataan, frasa dan ayat",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 37,
+          "sk": "3.2",
+          "sp": "3.2.1",
+          "fokus": "Ayat dan intonasi",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 38,
+          "sk": "3.2",
+          "sp": "3.2.1",
+          "fokus": "Ayat dan intonasi",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 39,
+          "sk": "3.2",
+          "sp": "3.2.2",
+          "fokus": "Maklumat dalam bahan",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 40,
+          "sk": "3.2",
+          "sp": "3.2.2",
+          "fokus": "Maklumat dalam bahan",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 41,
+          "sk": "3.2",
+          "sp": "3.2.3",
+          "fokus": "Respons berdasarkan bacaan",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 42,
+          "sk": "3.2",
+          "sp": "3.2.3",
+          "fokus": "Respons berdasarkan bacaan",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 43,
+          "sk": "4.1",
+          "sp": "4.1.1",
+          "fokus": "Lakaran bentuk",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 44,
+          "sk": "4.1",
+          "sp": "4.1.1",
+          "fokus": "Lakaran bentuk",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 45,
+          "sk": "4.1",
+          "sp": "4.1.2",
+          "fokus": "Bentuk dan tekap abjad",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 46,
+          "sk": "4.1",
+          "sp": "4.1.2",
+          "fokus": "Bentuk dan tekap abjad",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 47,
+          "sk": "4.1",
+          "sp": "4.1.3",
+          "fokus": "Menyalin tulisan",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 48,
+          "sk": "4.1",
+          "sp": "4.1.3",
+          "fokus": "Menyalin tulisan",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 49,
+          "sk": "4.2",
+          "sp": "4.2.1",
+          "fokus": "Gabung suku kata dan frasa",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 50,
+          "sk": "4.2",
+          "sp": "4.2.1",
+          "fokus": "Gabung suku kata dan frasa",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 51,
+          "sk": "4.2",
+          "sp": "4.2.2",
+          "fokus": "Bina dan tulis ayat",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 52,
+          "sk": "4.2",
+          "sp": "4.2.2",
+          "fokus": "Bina dan tulis ayat",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        }
+      ]
+    },
+    "B": {
+      "negeri": [
+        "Johor",
+        "Melaka",
+        "Negeri Sembilan",
+        "Pahang",
+        "Perak",
+        "Perlis",
+        "Pulau Pinang",
+        "Sabah",
+        "Sarawak",
+        "Selangor",
+        "WP Kuala Lumpur",
+        "WP Putrajaya",
+        "WP Labuan"
+      ],
+      "mula": "2027-01-04",
+      "akhir": "2027-12-03",
+      "jumlah_hari_persekolahan": 203,
+      "segmen": [
+        [
+          "2027-01-04",
+          "2027-03-05"
+        ],
+        [
+          "2027-03-15",
+          "2027-05-21"
+        ],
+        [
+          "2027-06-07",
+          "2027-08-27"
+        ],
+        [
+          "2027-09-06",
+          "2027-12-03"
+        ]
+      ],
+      "cuti_penggal": [
+        [
+          "2027-03-06",
+          "2027-03-14"
+        ],
+        [
+          "2027-05-22",
+          "2027-06-06"
+        ],
+        [
+          "2027-08-28",
+          "2027-09-05"
+        ]
+      ],
+      "pdp_cadangan": [
+        {
+          "pdp_cadangan": 1,
+          "sk": "1.1",
+          "sp": "1.1.1",
+          "fokus": "Bunyi persekitaran",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 2,
+          "sk": "1.1",
+          "sp": "1.1.1",
+          "fokus": "Bunyi persekitaran",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 3,
+          "sk": "1.1",
+          "sp": "1.1.2",
+          "fokus": "Abjad dan suku kata",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 4,
+          "sk": "1.1",
+          "sp": "1.1.2",
+          "fokus": "Abjad dan suku kata",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 5,
+          "sk": "1.1",
+          "sp": "1.1.3",
+          "fokus": "Sebutan dan intonasi",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 6,
+          "sk": "1.1",
+          "sp": "1.1.3",
+          "fokus": "Sebutan dan intonasi",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 7,
+          "sk": "1.2",
+          "sp": "1.2.1",
+          "fokus": "Respons ujaran sopan",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 8,
+          "sk": "1.2",
+          "sp": "1.2.1",
+          "fokus": "Respons ujaran sopan",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 9,
+          "sk": "1.2",
+          "sp": "1.2.2",
+          "fokus": "Ucapan mengikut situasi",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 10,
+          "sk": "1.2",
+          "sp": "1.2.2",
+          "fokus": "Ucapan mengikut situasi",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 11,
+          "sk": "1.2",
+          "sp": "1.2.3",
+          "fokus": "Arahan dan pertanyaan di sekolah",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 12,
+          "sk": "1.2",
+          "sp": "1.2.3",
+          "fokus": "Arahan dan pertanyaan di sekolah",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 13,
+          "sk": "1.2",
+          "sp": "1.2.4",
+          "fokus": "Arahan dan pertanyaan di rumah",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 14,
+          "sk": "1.2",
+          "sp": "1.2.4",
+          "fokus": "Arahan dan pertanyaan di rumah",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 15,
+          "sk": "2.1",
+          "sp": "2.1.1",
+          "fokus": "Ajuk bunyi persekitaran",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 16,
+          "sk": "2.1",
+          "sp": "2.1.1",
+          "fokus": "Ajuk bunyi persekitaran",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 17,
+          "sk": "2.1",
+          "sp": "2.1.2",
+          "fokus": "Sebut abjad dan suku kata",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 18,
+          "sk": "2.1",
+          "sp": "2.1.2",
+          "fokus": "Sebut abjad dan suku kata",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 19,
+          "sk": "2.1",
+          "sp": "2.1.3",
+          "fokus": "Ujaran dengan intonasi",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 20,
+          "sk": "2.1",
+          "sp": "2.1.3",
+          "fokus": "Ujaran dengan intonasi",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 21,
+          "sk": "2.2",
+          "sp": "2.2.1",
+          "fokus": "Ujaran sopan di sekolah",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 22,
+          "sk": "2.2",
+          "sp": "2.2.1",
+          "fokus": "Ujaran sopan di sekolah",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 23,
+          "sk": "2.2",
+          "sp": "2.2.2",
+          "fokus": "Ujaran sopan di rumah",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 24,
+          "sk": "2.2",
+          "sp": "2.2.2",
+          "fokus": "Ujaran sopan di rumah",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 25,
+          "sk": "2.3",
+          "sp": "2.3.1",
+          "fokus": "Perihal diri",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 26,
+          "sk": "2.3",
+          "sp": "2.3.1",
+          "fokus": "Perihal diri",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 27,
+          "sk": "2.3",
+          "sp": "2.3.2",
+          "fokus": "Cerita bernilai murni",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 28,
+          "sk": "2.3",
+          "sp": "2.3.2",
+          "fokus": "Cerita bernilai murni",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 29,
+          "sk": "2.3",
+          "sp": "2.3.3",
+          "fokus": "Lakonan cerita",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 30,
+          "sk": "2.3",
+          "sp": "2.3.3",
+          "fokus": "Lakonan cerita",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 31,
+          "sk": "3.1",
+          "sp": "3.1.1",
+          "fokus": "Kenal simbol dan abjad",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 32,
+          "sk": "3.1",
+          "sp": "3.1.1",
+          "fokus": "Kenal simbol dan abjad",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 33,
+          "sk": "3.1",
+          "sp": "3.1.2",
+          "fokus": "Suku kata dan perkataan",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 34,
+          "sk": "3.1",
+          "sp": "3.1.2",
+          "fokus": "Suku kata dan perkataan",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 35,
+          "sk": "3.1",
+          "sp": "3.1.3",
+          "fokus": "Perkataan, frasa dan ayat",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 36,
+          "sk": "3.1",
+          "sp": "3.1.3",
+          "fokus": "Perkataan, frasa dan ayat",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 37,
+          "sk": "3.2",
+          "sp": "3.2.1",
+          "fokus": "Ayat dan intonasi",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 38,
+          "sk": "3.2",
+          "sp": "3.2.1",
+          "fokus": "Ayat dan intonasi",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 39,
+          "sk": "3.2",
+          "sp": "3.2.2",
+          "fokus": "Maklumat dalam bahan",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 40,
+          "sk": "3.2",
+          "sp": "3.2.2",
+          "fokus": "Maklumat dalam bahan",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 41,
+          "sk": "3.2",
+          "sp": "3.2.3",
+          "fokus": "Respons berdasarkan bacaan",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 42,
+          "sk": "3.2",
+          "sp": "3.2.3",
+          "fokus": "Respons berdasarkan bacaan",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 43,
+          "sk": "4.1",
+          "sp": "4.1.1",
+          "fokus": "Lakaran bentuk",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 44,
+          "sk": "4.1",
+          "sp": "4.1.1",
+          "fokus": "Lakaran bentuk",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 45,
+          "sk": "4.1",
+          "sp": "4.1.2",
+          "fokus": "Bentuk dan tekap abjad",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 46,
+          "sk": "4.1",
+          "sp": "4.1.2",
+          "fokus": "Bentuk dan tekap abjad",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 47,
+          "sk": "4.1",
+          "sp": "4.1.3",
+          "fokus": "Menyalin tulisan",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 48,
+          "sk": "4.1",
+          "sp": "4.1.3",
+          "fokus": "Menyalin tulisan",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 49,
+          "sk": "4.2",
+          "sp": "4.2.1",
+          "fokus": "Gabung suku kata dan frasa",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 50,
+          "sk": "4.2",
+          "sp": "4.2.1",
+          "fokus": "Gabung suku kata dan frasa",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 51,
+          "sk": "4.2",
+          "sp": "4.2.2",
+          "fokus": "Bina dan tulis ayat",
+          "fasa": "penerokaan",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        },
+        {
+          "pdp_cadangan": 52,
+          "sk": "4.2",
+          "sp": "4.2.2",
+          "fokus": "Bina dan tulis ayat",
+          "fasa": "aplikasi",
+          "tarikh": null,
+          "masa": null,
+          "kelas": null,
+          "semakan_pedagogi": "QA_HOLD_NOT_READY"
+        }
+      ]
+    }
+  },
+  "dependencies": [
+    "Jadual waktu subjek sekolah (sesi dan tempoh per minggu)",
+    "Cuti negeri dan cuti perayaan terpakai",
+    "Peruntukan masa pengajaran setahun yang sah untuk BM SJK KP2027",
+    "Pengembangan ulang kaji/pentaksiran sepanjang tahun",
+    "Semakan guru dan pengesahan setiap PdP",
+    "Render Word/PDF dan ujian muat turun Web sebenar"
+  ]
+}
