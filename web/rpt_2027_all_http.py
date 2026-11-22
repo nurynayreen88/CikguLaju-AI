@@ -358,7 +358,7 @@ def create_all_rpt_blueprint(*,root=ROOT):
             data["kp2027_rpt_available"] = [{
                 "code": code, "label": label, "year": 1,
                 "pdf_ready": True, "docx_ready": True,
-                "download_enabled": True, "kp2027_combined": True,
+                "download_enabled": True, "kp2027_combined": True, "kp2027_groups": ["A","B"],
                 "status": "RPT SEMAKAN PELAKSANAAN",
                 "note": ("Satu RPT bagi setiap subjek mengandungi tarikh Kumpulan A dan B. "
                          "Tarikh, cuti, jadual sekolah dan padanan RPH perlu disahkan."),
