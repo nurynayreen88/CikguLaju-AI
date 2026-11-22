@@ -7,7 +7,10 @@ import os
 from pathlib import Path
 from flask import Blueprint, current_app, jsonify, request, make_response
 from web_v1_telegram_login import verify_telegram_login
-from web_v1_sessions import issue_session_ticket, verify_session_ticket
+from web_v1_sessions import (
+    REMEMBER_SESSION_SECONDS, DEFAULT_SESSION_SECONDS,
+    issue_session_ticket, verify_session_ticket,
+)
 from web_v1_sqlite_account_adapter import lookup_existing_sqlite_account
 from web_v1_entitlements import display_trusted_account
 
@@ -60,7 +63,16 @@ def telegram_widget_callback():
     if not request.is_json or request.content_length is None or request.content_length > 8192:
         return jsonify({"error": "invalid request"}), 400
     payload = request.get_json(silent=True)
-    uid = verify_telegram_login(payload, config["CIKGULAJU_WEB_BOT_TOKEN"])
+    if not isinstance(payload, dict):
+        return jsonify({"error": "invalid request"}), 400
+    remember = payload.get("remember_me", False)
+    if type(remember) is not bool:
+        return jsonify({"error": "invalid remember-me option"}), 400
+    # The local UI option is not part of Telegram's signed HMAC payload.
+    # Remove only this server-recognized field before verifying Telegram.
+    telegram_claim = {key: value for key, value in payload.items()
+                      if key != "remember_me"}
+    uid = verify_telegram_login(telegram_claim, config["CIKGULAJU_WEB_BOT_TOKEN"])
     if uid is None:
         return jsonify({"error": "invalid Telegram authentication"}), 401
     created = False
@@ -92,7 +104,8 @@ def telegram_widget_callback():
         except Exception as exc:
             current_app.logger.warning("Web new-user admin notice unavailable: %s",
                                        type(exc).__name__)
-    ticket = issue_session_ticket(uid, config["CIKGULAJU_WEB_SESSION_SECRET"])
+    ticket = issue_session_ticket(uid, config["CIKGULAJU_WEB_SESSION_SECRET"],
+                                  remember=remember)
     # Record only a verified, registered Web login. Analytics must NEVER
     # block access or change credits, entitlements or session issuance.
     if config.get("account_backend") == "supabase":
@@ -104,7 +117,8 @@ def telegram_widget_callback():
                                        type(exc).__name__)
     response = make_response(jsonify({"authenticated": True}), 200)
     response.set_cookie(COOKIE, ticket, secure=True, httponly=True, samesite="Lax",
-                        max_age=43200, path="/")
+                        max_age=REMEMBER_SESSION_SECONDS if remember else DEFAULT_SESSION_SECONDS,
+                        path="/")
     return response
 
 
