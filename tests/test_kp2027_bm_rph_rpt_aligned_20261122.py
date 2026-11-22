@@ -81,7 +81,8 @@ class TestBmKp2027Rph(TestCase):
                         text=" ".join(page.get_text() for page in pdf)
                     finally:
                         pdf.close()
-                    self.assertIn("Refleksi",text)
+                from unicodedata import normalize
+                text=normalize("NFKC",text)  # PDF text extraction may use the ﬂ ligature.
                 for forbidden in ("Refleksi (Auto / Manual)", "SEMAKAN PELAKSANAAN",
                                   "RPT M", "CIKGULAJU • KP2027"):
                     self.assertNotIn(forbidden,text)
