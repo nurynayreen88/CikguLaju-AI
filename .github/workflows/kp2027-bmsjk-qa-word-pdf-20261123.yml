@@ -1,0 +1,40 @@
+name: KP2027 BM SJK 52 RPH QA Word PDF offline only
+
+on:
+  pull_request:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - 'tools/kp2027_bmsjk_qa_word_pdf.py'
+      - 'tests/test_kp2027_bmsjk_qa_word_pdf_20261123.py'
+      - 'audits/kp2027_bm_sjk_tahun1_52_rph_editorial_qa_20261123.json'
+      - '.github/workflows/kp2027-bmsjk-qa-word-pdf-20261123.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  isolated-word-pdf-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install QA-only PDF/Word dependencies
+        run: |
+          python -m pip install --disable-pip-version-check python-docx==1.1.2 reportlab==4.4.9 pypdf==6.21.4
+          test -f /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+          test -f /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+      - name: Test source integrity, Word/PDF and 52 RPH pairs
+        run: python -m unittest discover -s tests -p 'test_kp2027_bmsjk_qa_word_pdf_20261123.py' -v
+      - name: Generate offline QA export of 104 files
+        run: python tools/kp2027_bmsjk_qa_word_pdf.py --out-dir out/bmsjk-qa-hold
+      - uses: actions/upload-artifact@v4
+        with:
+          name: KP2027-BMSJK-T1-52-RPH-Word-PDF-QA-HOLD
+          path: out/bmsjk-qa-hold/
+          retention-days: 7
+          if-no-files-found: error
