@@ -22,6 +22,8 @@ class TestPilotNavigation(unittest.TestCase):
         self.assertIn('fetch(route+"/available"', section)
         self.assertIn('kp2027DisplayUnits()', section)
         self.assertIn('function kp2027DisplayPdps()', PAGE)
+        self.assertIn('nombor bukan turutan RPT', PAGE)
+        self.assertIn('Nombor RPH belum diselaraskan', PAGE)
         self.assertIn('if(curriculum.value==="kp2027"){kp2027DisplayPdps();return;}', PAGE)
         self.assertIn('label:"PdP "+String(e.no).padStart(3,"0")+" — "+e.tajuk+" • SP "+e.sp', PAGE)
         self.assertIn('Pilih Unit / Kandungan', PAGE)
