@@ -22,6 +22,7 @@ on:
       - tests/test_telegram_verified_sequence_rph_bridge.py
       - tools/run_telegram_with_curriculum_api.py
       - tests/test_native_telegram_rph_api.py
+      - tests/test_rph_reflection_label_20261122.py
       - tests/test_matematik_sjkc_rph_preview.py
       - staging/matematik_sjkc/tahun_3/**
       - .github/workflows/native-telegram-rph-api-qa.yml
@@ -55,6 +56,7 @@ on:
       - web/telegram_provisional_arab_music_api.py
       - tools/run_telegram_with_curriculum_api.py
       - tests/test_native_telegram_rph_api.py
+      - tests/test_rph_reflection_label_20261122.py
       - tests/test_matematik_sjkc_rph_preview.py
       - staging/matematik_sjkc/tahun_3/**
       - .github/workflows/native-telegram-rph-api-qa.yml
@@ -74,6 +76,7 @@ jobs:
         run: |
           python -m py_compile web/native_rph_telegram_api.py tools/run_telegram_with_curriculum_api.py
           python -m unittest discover -s tests -p test_native_telegram_rph_api.py -v
+          python -m unittest discover -s tests -p test_rph_reflection_label_20261122.py -v
           python -m unittest discover -s tests -p 'test_matematik_sjkc_rph_*.py' -v
           python -m unittest discover -s tests -p test_matematik_sjkt_rph_release.py -v
           python -m py_compile web/telegram_verified_rpt_rph_bridge.py web/telegram_verified_sequence_rph_bridge.py

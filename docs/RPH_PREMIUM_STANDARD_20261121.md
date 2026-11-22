@@ -16,6 +16,12 @@ Dokumen ini ialah kontrak reka bentuk dan penerimaan RPH Word/PDF CikguLaju, **b
 7. **Word dan PDF mesti setara dari segi kandungan dan struktur utama**, walaupun kaedah pembinaan fail berbeza. Jangan mengubah arahan buku teks, SK/SP, susunan Lesson/PdP, pautan audio, atau kandungan asal hanya untuk membaiki bentuk.
 
 
+### Peraturan paparan refleksi (22 November 2026)
+
+- **Label yang dicetak pada RPH hanyalah `Refleksi`** (atau padanan bahasa tulisan RPH). Jangan cetak `(Auto / Manual)`, `(Automatik / Manual)`, `mod automatik` atau nama kawalan UI pada dokumen Word/PDF. Pilihan Auto/Manual tetap boleh muncul pada halaman Web untuk memilih cara mengisi refleksi.
+- Gunakan fon, saiz, jarak baris dan penjajaran yang **sama seperti kandungan jadual**. Tinggi kotak refleksi mengikut bilangan baris sebenar, tanpa menetapkan ruang kosong besar untuk refleksi automatik; refleksi manual yang panjang mesti mengembang dengan selamat tanpa memotong teks.
+- **Kandungan refleksi dan aktiviti asal tidak diubah**, termasuk teks refleksi manual guru. Laksanakan ujian Word/PDF bagi setiap penjana berasingan; adapter label pada baris native tidak membuktikan semua penjana khusus atau Web sudah memenuhi syarat.
+
 ### Peraturan paparan nama mata pelajaran (21 November 2026)
 
 **Nama mata pelajaran, tahun dan identiti pelajaran dipaparkan di bahagian kepala RPH sahaja.** Jangan ulang baris `Mata Pelajaran` / `Subject` / `مات ڤلاجرن` / `المادة` dalam jadual maklumat PdP/SK/SP di bawah. Buang baris pendua sahaja; **jangan** buang nilai subjek/tahun/tajuk pada kepala atau mengubah SK/SP, objektif, aktiviti dan refleksi. Kekalkan susunan awal yang diluluskan: kotak kecil guru di **kanan** untuk LTR dan di **kiri** untuk Pendidikan Islam/Jawi serta Bahasa Arab/Arab RTL; lebar keseluruhan kotak atas dan bawah mesti kekal sejajar, dengan garisan penuh dan tiada teks terpotong. Periksa Word **dan** PDF untuk setiap laluan muat turun sebelum menandakan `LIVE DISAHKAN`.
