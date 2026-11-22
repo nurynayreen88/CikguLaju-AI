@@ -604,8 +604,12 @@ def admin_payment_review(payment_id):
     if not isinstance(data, dict) or set(data) != {"payer", "receipt_at", "decision"}:
         return jsonify({"error": "Keputusan semakan tidak sah"}), 400
     payer, received, decision = data["payer"], data["receipt_at"], data["decision"]
+    # Email-only accounts use 19-digit synthetic CikguLaju IDs. They must
+    # remain valid Postgres BIGINT values; ownership is rechecked by the
+    # review_rakan_payment RPC against the exact Pending payment row.
     if (not 0 < payment_id < 10**18 or not isinstance(payer, str)
-            or not re.fullmatch(r"[1-9][0-9]{0,17}", payer)
+            or not re.fullmatch(r"[1-9][0-9]{0,18}", payer)
+            or int(payer) >= 2**63
             or decision not in ("approved", "rejected")
             or not isinstance(received, str) or len(received) > 48):
         return jsonify({"error": "Keputusan semakan tidak sah"}), 400
