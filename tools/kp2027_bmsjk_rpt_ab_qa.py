@@ -134,7 +134,7 @@ def render_pdf(group):
         pdfmetrics.registerFont(TTFont("KPRPT",str(fonts/"DejaVuSans.ttf")))
         pdfmetrics.registerFont(TTFont("KPRPTBold",str(fonts/"DejaVuSans-Bold.ttf")))
         pdfmetrics.registerFontFamily("KPRPT",normal="KPRPT",bold="KPRPTBold")
-    style=ParagraphStyle("NormalKPRPT",fontName="KPRPT",fontSize=7.2,leading=10,
+    style=ParagraphStyle("NormalKPRPT",fontName="KPRPT",fontSize=7.2,leading=9.5,
                          alignment=TA_LEFT,textColor=colors.HexColor("#1B3349"))
     big=ParagraphStyle("HeaderKPRPT",parent=style,fontName="KPRPTBold",fontSize=12,leading=16)
     def para(value,bold=False):
@@ -172,8 +172,8 @@ def render_pdf(group):
         ("INNERGRID",(0,0),(-1,-1),.4,colors.HexColor("#8393A3")),
         ("LEFTPADDING",(0,0),(-1,-1),4),
         ("RIGHTPADDING",(0,0),(-1,-1),4),
-        ("TOPPADDING",(0,0),(-1,-1),4),
-        ("BOTTOMPADDING",(0,0),(-1,-1),4),
+        ("TOPPADDING",(0,0),(-1,-1),2.5),
+        ("BOTTOMPADDING",(0,0),(-1,-1),2.5),
     ]
     for i in range(2,len(data),2):
         st.append(("BACKGROUND",(0,i),(-1,i),colors.HexColor("#F2F6FA")))
