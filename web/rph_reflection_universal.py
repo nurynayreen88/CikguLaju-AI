@@ -233,6 +233,23 @@ def _pdf_rewrite(original, subject):
         if chosen is None:
             return original
         page.add_redact_annot(reflection,fill=(1,1,1),cross_out=False)
+        # Strip the UI mode suffix only when the existing verified PDF grid
+        # proves it lies inside the reflection label cell, not in the lesson.
+        label_anchors = [
+            rect for rect in page.search_for("Refleksi")
+            if rect.x0 < W * 0.35
+            and reflection.y0 - 4 <= rect.y0 <= reflection.y1 + 4
+        ]
+        if len(label_anchors) == 1:
+            suffixes = [
+                rect for phrase in ("(Auto / Manual)", "(Automatik / Manual)")
+                for rect in page.search_for(phrase)
+                if abs(rect.y0 - label_anchors[0].y0) < 3
+                and label_anchors[0].x1 <= rect.x0 + 1
+                and rect.x1 < reflection.x0 - 4
+            ]
+            if len(suffixes) == 1:
+                page.add_redact_annot(suffixes[0], fill=None, cross_out=False)
         page.apply_redactions(images=0,graphics=0,text=0)
         if page.insert_textbox(reflection,chosen[0],fontname="helv",
                                fontsize=chosen[1],lineheight=1.03)<0:
