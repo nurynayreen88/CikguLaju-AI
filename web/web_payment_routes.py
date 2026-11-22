@@ -543,7 +543,8 @@ def _email_payer_names(conf, payer_ids, *, opener=None):
         user = identity.get("user") if isinstance(identity.get("user"),dict) else identity
         email=user.get("email")
         if (str(user.get("id")) != auth_uid or not isinstance(email,str)
-                or len(email)>254 or not re.fullmatch(r"[^\\s@]{1,64}@[^\\s@]{1,189}",email)):
+                or len(email)>254 or any(char.isspace() for char in email)
+                or not re.fullmatch(r"[^@]{1,64}@[^@]{1,189}",email)):
             continue
         labels[str(item["telegram_user_id"])] = email
     return labels
