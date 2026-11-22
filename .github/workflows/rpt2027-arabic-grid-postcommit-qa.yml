@@ -1,0 +1,46 @@
+name: RPT2027 Arabic Grid Final 5-PDF Read-Only Gate
+on:
+  pull_request:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - .github/workflows/rpt2027-arabic-grid-postcommit-qa.yml
+      - rpt_2027/web_2027_pdfs/bahasa_arab/**
+      - rpt_2027/web_2027_pdfs/manifest.json
+      - rpt_2027/web_2027_pdfs/original_cover_layout_verified.json
+      - audits/rpt2027_bahasa_arab_grid_20261123.json
+      - tests/test_rpt2027_arabic_grid_y2_y6_20261123.py
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  final-source-grid-parity:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.24.14
+      - name: Verify all five committed Arabic RTL PDFs and 298 original source links
+        run: python -m unittest discover -s tests -p 'test_rpt2027_arabic_grid_y2_y6_20261123.py' -v
+      - name: Verify visual source certificate, 1134 vector dividers, five exact SHA hashes
+        run: |
+          python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          a=json.loads(Path('audits/rpt2027_bahasa_arab_grid_20261123.json').read_text('utf-8'))
+          m=json.loads(Path('rpt_2027/web_2027_pdfs/manifest.json').read_text('utf-8'))
+          assert a['status']=='DRAF_VECTOR_GRID_ONLY_NOT_ACADEMIC_FINAL'
+          assert a['files_repaired']==5 and a['added_dividers']==1134
+          assert a['arabic_dskp_original_links_preserved']==298
+          assert a['other_51_pdfs_unchanged'] and a['school_cover_pixels_unchanged']
+          assert a['source_text_unchanged'] and not m['academic_final_approved']
+          assert set(a['entries'])=={f'bahasa_arab:{y}' for y in range(2,7)}
+          for key, info in a['entries'].items():
+              path=Path('rpt_2027/web_2027_pdfs')/m['files'][key]['path']
+              assert hashlib.sha256(path.read_bytes()).hexdigest()==info['after_sha256']
+          print('ARABIC_KSSR_RPT_5_GRID_CI_VERIFIED')
+          PY
+          git diff --exit-code

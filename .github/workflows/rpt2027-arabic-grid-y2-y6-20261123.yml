@@ -1,0 +1,94 @@
+name: RPT2027 Arabic Five-Column Grid Visual Audit and Repair
+on:
+  pull_request:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - scripts/audit_rpt2027_arabic_grid_20261123.py
+      - scripts/repair_rpt2027_arabic_grid_20261123.py
+      - tests/test_rpt2027_arabic_grid_y2_y6_20261123.py
+      - .github/workflows/rpt2027-arabic-grid-y2-y6-20261123.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  inspect-rtl-vector-layout:
+    if: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'fix/rpt2027-arabic-grid-y2-y6-20261123' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.24.14
+      - name: Audit existing Arabic vector PDF five-column rules without modification
+        run: python scripts/audit_rpt2027_arabic_grid_20261123.py
+      - name: Repair five Arabic PDF sources only, preserving original text and links
+        run: python scripts/repair_rpt2027_arabic_grid_20261123.py
+      - name: Verify text and 298 hyperlinks preserved, 51 other RPT PDFs intact
+        run: python -m unittest discover -s tests -p 'test_rpt2027_arabic_grid_y2_y6_20261123.py' -v
+      - name: Record exact review-scope files before isolated-branch commit
+        run: |
+          git status --short
+          python - <<'PY'
+          import subprocess
+          allowed={'rpt_2027/web_2027_pdfs/manifest.json',
+                   'rpt_2027/web_2027_pdfs/original_cover_layout_verified.json'}
+          allowed.update(f'rpt_2027/web_2027_pdfs/bahasa_arab/tahun_{y}.pdf' for y in range(2,7))
+          got=set(subprocess.check_output(['git','diff','--name-only'],text=True).splitlines())
+          assert got==allowed or not got,(got,allowed)
+          print('ONLY_FIVE_ARABIC_PDF_VECTOR_RULES_AND_2_MANIFESTS',len(got))
+          PY
+      - name: Commit five QA-approved RTL PDFs and source digests to review branch only
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git branch --show-current)" = 'fix/rpt2027-arabic-grid-y2-y6-20261123'
+          if git diff --quiet -- rpt_2027/web_2027_pdfs/manifest.json; then
+            echo 'Arabic PDF vector separator files already installed and tested; no repeated commit.'
+            exit 0
+          fi
+          mkdir -p audits
+          cp qa_rpt_arab_grid/repaired_audit.json audits/rpt2027_bahasa_arab_grid_20261123.json
+          python - <<'PY'
+          import json
+          x=json.load(open('audits/rpt2027_bahasa_arab_grid_20261123.json'))
+          assert x['files_repaired']==5 and x['added_dividers']==1134
+          assert x['arabic_dskp_original_links_preserved']==298
+          assert x['source_text_unchanged'] and x['school_cover_pixels_unchanged']
+          assert x['other_51_pdfs_unchanged'] and len(x['entries'])==5
+          print('FIVE_ARABIC_RPT_GRID_DOCUMENTS_APPROVED_FOR_REVIEW_BRANCH_ONLY')
+          PY
+          git add -- rpt_2027/web_2027_pdfs/bahasa_arab/tahun_2.pdf \
+                     rpt_2027/web_2027_pdfs/bahasa_arab/tahun_3.pdf \
+                     rpt_2027/web_2027_pdfs/bahasa_arab/tahun_4.pdf \
+                     rpt_2027/web_2027_pdfs/bahasa_arab/tahun_5.pdf \
+                     rpt_2027/web_2027_pdfs/bahasa_arab/tahun_6.pdf \
+                     rpt_2027/web_2027_pdfs/manifest.json \
+                     rpt_2027/web_2027_pdfs/original_cover_layout_verified.json \
+                     audits/rpt2027_bahasa_arab_grid_20261123.json
+          python - <<'PY'
+          import subprocess
+          actual=set(subprocess.check_output(['git','diff','--cached','--name-only'],text=True).splitlines())
+          expected={'rpt_2027/web_2027_pdfs/manifest.json',
+                    'rpt_2027/web_2027_pdfs/original_cover_layout_verified.json',
+                    'audits/rpt2027_bahasa_arab_grid_20261123.json'}
+          expected.update(f'rpt_2027/web_2027_pdfs/bahasa_arab/tahun_{y}.pdf' for y in range(2,7))
+          assert actual==expected,(actual,expected)
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'fix(rpt): restore 1134 Arabic KSSR RPT five-column PDF grid dividers'
+          git push origin HEAD:fix/rpt2027-arabic-grid-y2-y6-20261123
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rpt2027-arabic-y2-y6-grid-audit
+          path: |
+            qa_rpt_arab_grid/
+            rpt_2027/web_2027_pdfs/bahasa_arab/tahun_*.pdf
+          retention-days: 7

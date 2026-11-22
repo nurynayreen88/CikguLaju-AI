@@ -7,8 +7,8 @@
   "files": {
     "bahasa_arab:2": {
       "path": "bahasa_arab/tahun_2.pdf",
-      "sha256": "747b738ad8552d14da9c03fd4d79b9cdc15801f59db71726d2342bc6634d62b8",
-      "bytes": 429707,
+      "sha256": "ed5699127c118f28fe86cff6edef6e8ee85e7d787e5ef753cb251a771b4ea4b7",
+      "bytes": 423764,
       "pages": 12,
       "status": "DRAF",
       "source_stage": "ARABIC_Y2_Y6_117_SOURCE_SP_VISUAL_CANDIDATES_NOT_ACADEMIC_FINAL_20261108",
@@ -16,8 +16,8 @@
     },
     "bahasa_arab:3": {
       "path": "bahasa_arab/tahun_3.pdf",
-      "sha256": "1caee896ce7b0452890590cafbc167e13aabdb9ecf4eba519daca50fee175c88",
-      "bytes": 328065,
+      "sha256": "c91f7b38a059ee9a208f852a3b371ee606326aa4d50e5742dc523efc68743d3b",
+      "bytes": 361921,
       "pages": 12,
       "status": "DRAF",
       "source_stage": "ARABIC_Y2_Y6_117_SOURCE_SP_VISUAL_CANDIDATES_NOT_ACADEMIC_FINAL_20261108",
@@ -25,8 +25,8 @@
     },
     "bahasa_arab:4": {
       "path": "bahasa_arab/tahun_4.pdf",
-      "sha256": "9193aee72e81a7cff560e37c1c68ad5985192b497ef2702f9423bf6b4f96cd21",
-      "bytes": 241309,
+      "sha256": "8b979445bcf8bc1663e4fc4196da11bb9a32fd756f5c916ace6503be059ae217",
+      "bytes": 252440,
       "pages": 11,
       "status": "DRAF",
       "source_stage": "ARABIC_Y2_Y6_117_SOURCE_SP_VISUAL_CANDIDATES_NOT_ACADEMIC_FINAL_20261108",
@@ -34,8 +34,8 @@
     },
     "bahasa_arab:5": {
       "path": "bahasa_arab/tahun_5.pdf",
-      "sha256": "d7b7c3f4f5c8442a88c03340e412d996ba83428add60b1cd0517872afb10ade8",
-      "bytes": 249352,
+      "sha256": "be92eff7fc8b1017f88641bbe2ad1227b26436b41cf3f9e327b632de1d52b0ca",
+      "bytes": 265019,
       "pages": 12,
       "status": "DRAF",
       "source_stage": "ARABIC_Y2_Y6_117_SOURCE_SP_VISUAL_CANDIDATES_NOT_ACADEMIC_FINAL_20261108",
@@ -43,8 +43,8 @@
     },
     "bahasa_arab:6": {
       "path": "bahasa_arab/tahun_6.pdf",
-      "sha256": "665a2254f5293b50dd5aae289054b646ce26957e0f1014d2550a91c7df7d62e0",
-      "bytes": 251770,
+      "sha256": "279d576410b261261190e3a8cb146cbd333bea5f04d31f5bd4711130cfdc4f30",
+      "bytes": 268146,
       "pages": 12,
       "status": "DRAF",
       "source_stage": "ARABIC_Y2_Y6_117_SOURCE_SP_VISUAL_CANDIDATES_NOT_ACADEMIC_FINAL_20261108",
