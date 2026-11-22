@@ -129,9 +129,10 @@ def render_docx(record):
 
     normal = d.styles["Normal"]
     normal.font.name = "Arial"
-    normal.font.size = Pt(9)
+    normal.font.size = Pt(8.3)
     normal.font.color.rgb = RGBColor(25, 50, 73)
-    normal.paragraph_format.space_after = Pt(2)
+    normal.paragraph_format.space_after = Pt(0)
+    normal.paragraph_format.line_spacing = 1.0
 
     def set_cell(cell, fill=None):
         cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
@@ -181,7 +182,11 @@ def render_docx(record):
         return t
 
     def spacer():
-        d.add_paragraph().paragraph_format.space_after = Pt(1)
+        p = d.add_paragraph()
+        p.paragraph_format.space_before = Pt(0)
+        p.paragraph_format.space_after = Pt(0)
+        p.paragraph_format.line_spacing = Pt(1)
+        p.add_run(" ").font.size = Pt(1)
 
     h = heading(record)
     head = table((116, 58), 1)
