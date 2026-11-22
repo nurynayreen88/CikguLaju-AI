@@ -1,0 +1,29 @@
+name: RPT2027 Arabic Five-Column Grid Visual Audit and Repair
+on:
+  pull_request:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - scripts/audit_rpt2027_arabic_grid_20261123.py
+      - scripts/repair_rpt2027_arabic_grid_20261123.py
+      - .github/workflows/rpt2027-arabic-grid-y2-y6-20261123.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect-rtl-vector-layout:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check PyMuPDF==1.24.14
+      - name: Audit existing Arabic vector PDF five-column rules without modification
+        run: python scripts/audit_rpt2027_arabic_grid_20261123.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rpt2027-arabic-y2-y6-grid-audit
+          path: qa_rpt_arab_grid/
+          retention-days: 7
