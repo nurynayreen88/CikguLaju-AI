@@ -31,3 +31,9 @@
 - **PRODUKSI WEB DAN TELEGRAM.** Web menyambungkan Sediakan RPH dan RPH Pantas kepada katalog Matematik SJKC Tahun 3 apabila penjana Telegram menyenaraikan sembilan unit. Fail RPT 2027 Word/PDF mempunyai 44 baris minggu A/B dan 96 PdP. [Calon asal #829](https://github.com/nurynayreen88/CikguLaju-AI/pull/829).
 - Ujian Web tempatan meliputi unit/PdP, jadual, akses dan kuota. Semakan 56 PDF asal turut lulus, termasuk pengisian muka depan bagi RPT Matematik SJKC Tahun 3. CI pelayar mudah alih lulus. Tanda selesai PdP untuk subjek ini memerlukan sokongan rekod kurikulum SJKC.
 - Render Web `dep-dbv1ovrrjlhs73dvns10` aktif 05:47:49 MYT dan Telegram `dep-dbv1os8qsg7c73e72u20` aktif 05:51:14 MYT pada 19 November. Halaman produksi dan sumber kurikulum dapat dicapai. Laluan RPT Word/PDF dan RPH memerlukan sesi. Ujian bersepadu dengan akaun simulasi memuat turun kesemua 96 Word dan 96 PDF dari penjana Telegram melalui Web. Muat turun menggunakan akaun guru produksi belum disahkan.
+
+## 23 November 2026 — Audit DK KP2027 BM SJK Tahun 1
+
+- **HOLD / DALAM SEMAKAN.** 26 SP BM SJK Tahun 1 disemak terhadap PDF DK rasmi BPK KPM (Google Drive ID `19eJeNYAx5osXc2rvNjeE_pihg9euJS0S`, ISBN `978-967-420-798-4`); semua 26 kod SP ditemui dan fokus ringkas bagi pemetaan awal selaras dengan konteks standard asal.
+- Bukti audit: `audits/kp2027_bm_sjk_official_sp_crosscheck_20261123.json`, disokong ujian `tests/test_kp2027_bm_sjk_official_sp_crosscheck_20261123.py`. Pemetaan 26 SP → 52 cadangan RPH editorial kekal; **0 READY**. Ujian CI memastikan label HOLD tidak terlepas.
+- **Belum diluluskan:** penerangan penuh SK/SP dalam setiap RPH, agihan RPT tahunan Kumpulan A/B, kelulusan pedagogi, contoh Word/PDF, ujian akses/kuota/muat turun Web guru sebenar. Tiada perubahan kepada laluan pengguna, DB, bayaran, bahan PI v2 atau RPH/RPT lama.
