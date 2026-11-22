@@ -205,29 +205,15 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
             # Tahun 1 follows the KP2027 curriculum, a separate source from
             # the old KSSR/2017 PDF. Explicit non-downloadable placeholder.
             if year==1:
-                yr_ready = code in kp_rpt.SUBJECTS and kp_rpt.ready()
-                if yr_ready:
-                    available += 1
-                    entries.append({
-                        "year": 1, "year_label": "Tahun 1 (KP2027)",
-                        "pdf_ready": True, "docx_ready": True,
-                        "status": "RPT SEMAKAN PELAKSANAAN",
-                        "download_enabled": bool(allowed),
-                        "note": ("Kumpulan A/B mempunyai agihan tarikh tersendiri. "
-                                 "Pernyataan SP dan rujukan DK disediakan. "
-                                 "Tarikh sebenar dan jadual sekolah perlu disahkan."),
-                        "is_draft": True, "kp2027_groups": ["A","B"],
-                    })
-                else:
-                    entries.append({
-                        "year":1,
-                        "pdf_ready":False,
-                        "status":YEAR1_PREVIEW_STATUS,
-                        "download_enabled":False,
-                        "note":"RPT Tahun 1 KP2027 masih disediakan. PDF belum diterbitkan.",
-                        "is_draft":True,
-                        "coming_soon":True,
-                    })
+                entries.append({
+                    "year":1,
+                    "pdf_ready":False,
+                    "status":YEAR1_PREVIEW_STATUS,
+                    "download_enabled":False,
+                    "note":"RPT Tahun 1 KP2027 masih disediakan. PDF belum diterbitkan.",
+                    "is_draft":True,
+                    "coming_soon":True,
+                })
                 continue
             integrated, digest = _integrated_english_file(code, year, root)
             if integrated is not None:
@@ -270,20 +256,6 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
                 "is_draft":current is not None or entry_status!="TERSEDIA",
             })
         subjects.append({"code":code,"label":label,"years":entries})
-    if kp_rpt.ready():
-        subjects.append({
-            "code": "alam_dan_manusia", "label": "Alam dan Manusia",
-            "years": [{
-                "year": 1, "year_label": "Tahun 1 (KP2027)",
-                "pdf_ready": True, "docx_ready": True,
-                "status": "RPT SEMAKAN PELAKSANAAN",
-                "download_enabled": bool(allowed),
-                "note": ("Kumpulan A/B. 93 PdP berdasarkan agihan projek. "
-                         "Sahkan peruntukan masa dan takwim sekolah sebelum mengguna."),
-                "is_draft": True, "kp2027_groups": ["A","B"],
-            }],
-        })
-        available += 1
     dlp_count = 0
     for code, label in DLP_SUBJECTS.items():
         entries = [
@@ -355,11 +327,11 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
         "allowed":bool(allowed),
         "personalization_allowed":bool(personalization_allowed),
         "subjects":subjects,
-        "total_rpt":56+dlp_count+sjk_count+(3 if kp_rpt.ready() else 0),
+        "total_rpt":56+dlp_count+sjk_count,
         "total_display_choices":sum(len(item["years"]) for item in subjects),
-        "year1_coming_soon": 8 if kp_rpt.ready() else 10,
+        "year1_coming_soon":10,
         "available_rpt":available+dlp_count+sjk_count+len(dpk_entries),
-        "note":"RPT KP2027 Tahun 1 bagi Matematik, Alam dan Manusia serta BM SK tersedia untuk semakan Kumpulan A/B. Jadual sekolah perlu disahkan. RPT SJK dan cetakan berprofil memerlukan akses berbayar aktif.",
+        "note":"Tahun 1 KP2027 belum boleh dimuat turun. RPT SK dan DLP tersedia kepada pengguna log masuk. RPT SJK dan cetakan berprofil memerlukan akses berbayar aktif.",
     }
 
 def create_all_rpt_blueprint(*,root=ROOT):
@@ -378,6 +350,23 @@ def create_all_rpt_blueprint(*,root=ROOT):
             return error
         paid = _has_paid_access(account)
         data = catalog_data(root=root, allowed=True, personalization_allowed=paid)
+        # Extend only the live Web response; retain historical 56-source
+        # catalog_data counts and KSSR regression fixtures exactly as before.
+        # KP2027 archive status is distinct from 56 legacy RPT PDFs.
+        if kp_rpt.ready():
+            data["kp2027_rpt_available"] = [{
+                "code": code, "label": label, "year": 1,
+                "pdf_ready": True, "docx_ready": True,
+                "download_enabled": True, "kp2027_groups": ["A","B"],
+                "status": "RPT SEMAKAN PELAKSANAAN",
+                "note": ("Agihan PdP Kumpulan A/B daripada bank RPT 2027. "
+                         "Tarikh, cuti, jadual sekolah dan padanan RPH perlu disahkan."),
+                "is_draft": True,
+            } for code,label in (
+                ("matematik","Matematik"),
+                ("bahasa_melayu","Bahasa Melayu SK"),
+                ("alam_dan_manusia","Alam dan Manusia"),
+            )]
         ppki_years = []
         manipulative_years = []
         for ppki_year in ppki.YEARS:
