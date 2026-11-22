@@ -145,7 +145,7 @@ def install(app):
             'body:JSON.stringify(user)',
             'body:JSON.stringify({...user,remember_me:document.getElementById("email-remember-me")?.checked===true})',
             1)
-        script_tag = '<script src="/assets/email-auth.js" defer></script>'
+        script_tag = '<script src="/assets/email-auth.js?v=login-remember-20261123" defer></script>'
         if "</body>" in page and script_tag not in page:
             page = page.replace("</body>", script_tag + "</body>", 1)
         response.set_data(page)
