@@ -110,7 +110,7 @@ class TeacherFields(unittest.TestCase):
     def test_manual_reflection_longer_than_one_page_box_fails_before_download(self):
         with self.assertRaises(TeacherFieldError):
             personalize_approved_rph(pdf_fixture(), "pdf", {
-                "reflection_mode": "manual", "reflection": "Murid perlu bimbingan. "*20
+                "reflection_mode": "manual", "reflection": ("Murid memerlukan bimbingan susulan berstruktur dan pemantauan khusus.\n" * 6).strip()
             })
 
 
