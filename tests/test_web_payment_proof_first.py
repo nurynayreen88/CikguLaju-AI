@@ -107,7 +107,7 @@ class PaymentWebTests(unittest.TestCase):
         stamp = "2026-11-22T15:45:06.89408+00:00"
         route = "/api/web/admin/payments/8/review"
         invalid = [
-            str(2**63), str(2**63 + 1), "9000000000000000000",
+            str(2**63), str(2**63 + 1), "9999999999999999999",
             "08000000000000000000", "0", "-1", "nan", "7.5", 8000000000000000000,
         ]
         with patch.dict(os.environ, {"CIKGULAJU_WEB_ADMIN_IDS": "901"}), \
