@@ -6,6 +6,7 @@ on:
       - 'rpt_2027/kp2027/year1_rpt_bm_math_alam_20261122.zip'
       - 'rpt_2027/kp2027/year1_rpt_bm_math_alam_20261122_umum.zip'
       - 'rpt_2027/kp2027/year1_rpt_bm_math_alam_gabungan_ab_20261122.zip'
+      - 'rpt_2027/kp2027/year1_rpt_bm_math_alam_gabungan_ab_kulit_asal_20261122.zip'
       - 'web/kp2027_year1_rpt_combined.py'
       - 'web/kp2027_year1_rpt_personalize.py'
       - 'web/rpt_school_cover.py'
