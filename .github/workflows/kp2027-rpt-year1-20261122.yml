@@ -1,0 +1,37 @@
+name: KP2027 Tahun 1 RPT A/B Word PDF QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'rpt_2027/kp2027/year1_rpt_bm_math_alam_20261122.zip'
+      - 'web/kp2027_year1_rpt_bundle.py'
+      - 'web/rpt_2027_all_http.py'
+      - 'web_v1_static_preview/index.html'
+      - 'tests/test_kp2027_rpt_year1_20261122.py'
+      - '.github/workflows/kp2027-rpt-year1-20261122.yml'
+permissions:
+  contents: read
+jobs:
+  verify-rpt-word-pdf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify all 12 source SHA hashes, A/B and Web
+        run: python -m unittest discover -s tests -p 'test_kp2027_rpt_year1_20261122.py' -v
+      - name: Python source syntax
+        run: python -m py_compile web/kp2027_year1_rpt_bundle.py web/rpt_2027_all_http.py
+      - name: Browser JavaScript syntax
+        run: |
+          node - <<'NODE'
+          const fs=require("node:fs"),vm=require("node:vm");
+          const html=fs.readFileSync("web_v1_static_preview/index.html","utf8");
+          const scripts=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)];
+          for(const match of scripts){
+            if(match[1].trim().length>100) new vm.Script(match[1]);
+          }
+          console.log("All inline JavaScript parses");
+          NODE
