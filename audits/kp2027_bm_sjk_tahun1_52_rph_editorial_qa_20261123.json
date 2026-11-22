@@ -28,7 +28,7 @@
       "focus_editorial": "Bunyi persekitaran",
       "phase": "penerokaan",
       "title_editorial": "Bunyi persekitaran — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat membezakan bunyi loceng, langkah dan kenderaan melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat memadankan bunyi dengan gambar sumbernya dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -75,12 +75,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Mendengar dan memahami maklumat penting dengan telitinya.",
+      "sp_description": "Mendengar untuk mengecam nama pelbagai bunyi persekitaran melalui lagu dan permainan bahasa."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP002",
@@ -97,7 +99,7 @@
       "focus_editorial": "Bunyi persekitaran",
       "phase": "aplikasi",
       "title_editorial": "Bunyi persekitaran — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat membezakan bunyi loceng, langkah dan kenderaan melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat memadankan bunyi dengan gambar sumbernya dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -144,12 +146,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Mendengar dan memahami maklumat penting dengan telitinya.",
+      "sp_description": "Mendengar untuk mengecam nama pelbagai bunyi persekitaran melalui lagu dan permainan bahasa."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP003",
@@ -166,7 +170,7 @@
       "focus_editorial": "Abjad dan suku kata",
       "phase": "penerokaan",
       "title_editorial": "Abjad dan suku kata — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat mengenal pasti bunyi huruf dan suku kata yang disebut melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat menyusun kad mengikut bunyi yang didengar dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -213,12 +217,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Mendengar dan memahami maklumat penting dengan telitinya.",
+      "sp_description": "Mendengar untuk mengecam nama abjad dan bunyi suku kata melalui lagu yang berirama lagu kanak-kanak dan permainan bahasa."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP004",
@@ -235,7 +241,7 @@
       "focus_editorial": "Abjad dan suku kata",
       "phase": "aplikasi",
       "title_editorial": "Abjad dan suku kata — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat mengenal pasti bunyi huruf dan suku kata yang disebut melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat menyusun kad mengikut bunyi yang didengar dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -282,12 +288,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Mendengar dan memahami maklumat penting dengan telitinya.",
+      "sp_description": "Mendengar untuk mengecam nama abjad dan bunyi suku kata melalui lagu yang berirama lagu kanak-kanak dan permainan bahasa."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP005",
@@ -304,7 +312,7 @@
       "focus_editorial": "Sebutan dan intonasi",
       "phase": "penerokaan",
       "title_editorial": "Sebutan dan intonasi — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat membezakan sebutan jelas dan intonasi ayat melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat memilih intonasi sesuai bagi ayat yang didengar dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -351,12 +359,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Mendengar dan memahami maklumat penting dengan telitinya.",
+      "sp_description": "Mendengar untuk mengecam sebutan perkataan, frasa dan ujaran dengan intonasi yang sesuai."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP006",
@@ -373,7 +383,7 @@
       "focus_editorial": "Sebutan dan intonasi",
       "phase": "aplikasi",
       "title_editorial": "Sebutan dan intonasi — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat membezakan sebutan jelas dan intonasi ayat melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat memilih intonasi sesuai bagi ayat yang didengar dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -420,12 +430,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Mendengar dan memahami maklumat penting dengan telitinya.",
+      "sp_description": "Mendengar untuk mengecam sebutan perkataan, frasa dan ujaran dengan intonasi yang sesuai."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP007",
@@ -442,7 +454,7 @@
       "focus_editorial": "Respons ujaran sopan",
       "phase": "penerokaan",
       "title_editorial": "Respons ujaran sopan — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat memberikan respons lisan yang sopan melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat memilih respons sesuai mengikut ujaran rakan dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -489,12 +501,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Mendengar dan memberikan respons terhadap maklumat yang disaring secara sopan.",
+      "sp_description": "Mendengar untuk memberikan respons terhadap ujaran yang disampaikan secara sopan."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP008",
@@ -511,7 +525,7 @@
       "focus_editorial": "Respons ujaran sopan",
       "phase": "aplikasi",
       "title_editorial": "Respons ujaran sopan — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat memberikan respons lisan yang sopan melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat memilih respons sesuai mengikut ujaran rakan dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -558,12 +572,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Mendengar dan memberikan respons terhadap maklumat yang disaring secara sopan.",
+      "sp_description": "Mendengar untuk memberikan respons terhadap ujaran yang disampaikan secara sopan."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP009",
@@ -580,7 +596,7 @@
       "focus_editorial": "Ucapan mengikut situasi",
       "phase": "penerokaan",
       "title_editorial": "Ucapan mengikut situasi — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat mengecam ungkapan mengikut situasi melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat melengkapkan dialog ringkas berdasarkan situasi dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -627,11 +643,18 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
+      ],
+      "sk_description": "Mendengar dan memberikan respons terhadap maklumat yang disaring secara sopan.",
+      "sp_description": "Mendengar untuk memberikan respons terhadap ucapan yang sopan mengikut situasi;",
+      "sp_components": [
+        "ucapan selamat",
+        "ucapan penghargaan",
+        "permohonan maaf"
       ]
     },
     {
@@ -649,7 +672,7 @@
       "focus_editorial": "Ucapan mengikut situasi",
       "phase": "aplikasi",
       "title_editorial": "Ucapan mengikut situasi — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat mengecam ungkapan mengikut situasi melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat melengkapkan dialog ringkas berdasarkan situasi dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -696,11 +719,18 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
+      ],
+      "sk_description": "Mendengar dan memberikan respons terhadap maklumat yang disaring secara sopan.",
+      "sp_description": "Mendengar untuk memberikan respons terhadap ucapan yang sopan mengikut situasi;",
+      "sp_components": [
+        "ucapan selamat",
+        "ucapan penghargaan",
+        "permohonan maaf"
       ]
     },
     {
@@ -718,7 +748,7 @@
       "focus_editorial": "Arahan dan pertanyaan di sekolah",
       "phase": "penerokaan",
       "title_editorial": "Arahan dan pertanyaan di sekolah — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat memahami arahan di sekolah melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat melaksanakan arahan dan menjawab pertanyaan dengan tepat dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -765,12 +795,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Mendengar dan memberikan respons terhadap maklumat yang disaring secara sopan.",
+      "sp_description": "Mendengar untuk memberikan respons terhadap arahan dan pertanyaan secara sopan mengikut situasi di sekolah."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP012",
@@ -787,7 +819,7 @@
       "focus_editorial": "Arahan dan pertanyaan di sekolah",
       "phase": "aplikasi",
       "title_editorial": "Arahan dan pertanyaan di sekolah — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat memahami arahan di sekolah melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat melaksanakan arahan dan menjawab pertanyaan dengan tepat dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -834,12 +866,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Mendengar dan memberikan respons terhadap maklumat yang disaring secara sopan.",
+      "sp_description": "Mendengar untuk memberikan respons terhadap arahan dan pertanyaan secara sopan mengikut situasi di sekolah."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP013",
@@ -856,7 +890,7 @@
       "focus_editorial": "Arahan dan pertanyaan di rumah",
       "phase": "penerokaan",
       "title_editorial": "Arahan dan pertanyaan di rumah — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat memahami ujaran ringkas di rumah melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat memberikan respons sesuai terhadap situasi rumah dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -903,12 +937,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Mendengar dan memberikan respons terhadap maklumat yang disaring secara sopan.",
+      "sp_description": "Mendengar untuk memberikan respons terhadap arahan dan pertanyaan secara sopan mengikut situasi di rumah."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP014",
@@ -925,7 +961,7 @@
       "focus_editorial": "Arahan dan pertanyaan di rumah",
       "phase": "aplikasi",
       "title_editorial": "Arahan dan pertanyaan di rumah — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat memahami ujaran ringkas di rumah melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat memberikan respons sesuai terhadap situasi rumah dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -972,12 +1008,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Mendengar dan memberikan respons terhadap maklumat yang disaring secara sopan.",
+      "sp_description": "Mendengar untuk memberikan respons terhadap arahan dan pertanyaan secara sopan mengikut situasi di rumah."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP015",
@@ -994,7 +1032,7 @@
       "focus_editorial": "Ajuk bunyi persekitaran",
       "phase": "penerokaan",
       "title_editorial": "Ajuk bunyi persekitaran — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat meniru bunyi yang didengar dengan jelas melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat menghasilkan semula bunyi dan menerangkan sumbernya dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -1041,12 +1079,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Bertutur berdasarkan maklumat penting secara sopan dalam pelbagai situasi.",
+      "sp_description": "Mengajuk bunyi persekitaran melalui lagu dan permainan bahasa."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP016",
@@ -1063,7 +1103,7 @@
       "focus_editorial": "Ajuk bunyi persekitaran",
       "phase": "aplikasi",
       "title_editorial": "Ajuk bunyi persekitaran — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat meniru bunyi yang didengar dengan jelas melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat menghasilkan semula bunyi dan menerangkan sumbernya dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -1110,12 +1150,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Bertutur berdasarkan maklumat penting secara sopan dalam pelbagai situasi.",
+      "sp_description": "Mengajuk bunyi persekitaran melalui lagu dan permainan bahasa."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP017",
@@ -1132,7 +1174,7 @@
       "focus_editorial": "Sebut abjad dan suku kata",
       "phase": "penerokaan",
       "title_editorial": "Sebut abjad dan suku kata — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat menyebut abjad dan suku kata dengan sebutan betul melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat membaca serta menyebut susunan kad secara bergilir dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -1179,12 +1221,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Bertutur berdasarkan maklumat penting secara sopan dalam pelbagai situasi.",
+      "sp_description": "Menyebut abjad dan bunyi suku kata dengan sebutan yang betul melalui lagu dan permainan bahasa."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP018",
@@ -1201,7 +1245,7 @@
       "focus_editorial": "Sebut abjad dan suku kata",
       "phase": "aplikasi",
       "title_editorial": "Sebut abjad dan suku kata — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat menyebut abjad dan suku kata dengan sebutan betul melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat membaca serta menyebut susunan kad secara bergilir dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -1248,12 +1292,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Bertutur berdasarkan maklumat penting secara sopan dalam pelbagai situasi.",
+      "sp_description": "Menyebut abjad dan bunyi suku kata dengan sebutan yang betul melalui lagu dan permainan bahasa."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP019",
@@ -1270,7 +1316,7 @@
       "focus_editorial": "Ujaran dengan intonasi",
       "phase": "penerokaan",
       "title_editorial": "Ujaran dengan intonasi — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat menuturkan ayat dengan sebutan dan intonasi sesuai melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat mempersembahkan ujaran ringkas bagi dua situasi dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -1317,12 +1363,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Bertutur berdasarkan maklumat penting secara sopan dalam pelbagai situasi.",
+      "sp_description": "Menyebut perkataan, frasa, dan ujaran yang didengar dengan sebutan yang betul dan intonasi yang sesuai."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP020",
@@ -1339,7 +1387,7 @@
       "focus_editorial": "Ujaran dengan intonasi",
       "phase": "aplikasi",
       "title_editorial": "Ujaran dengan intonasi — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat menuturkan ayat dengan sebutan dan intonasi sesuai melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat mempersembahkan ujaran ringkas bagi dua situasi dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -1386,12 +1434,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Bertutur berdasarkan maklumat penting secara sopan dalam pelbagai situasi.",
+      "sp_description": "Menyebut perkataan, frasa, dan ujaran yang didengar dengan sebutan yang betul dan intonasi yang sesuai."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP021",
@@ -1408,7 +1458,7 @@
       "focus_editorial": "Ujaran sopan di sekolah",
       "phase": "penerokaan",
       "title_editorial": "Ujaran sopan di sekolah — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat bertutur dengan bahasa yang sopan di sekolah melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat melakonkan pertuturan sopan dengan rakan dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -1455,12 +1505,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Bertutur dan memberikan respons terhadap maklumat yang disaring secara berhemah.",
+      "sp_description": "Menyebut dan menggunakan ujaran secara sopan mengikut situasi di sekolah."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP022",
@@ -1477,7 +1529,7 @@
       "focus_editorial": "Ujaran sopan di sekolah",
       "phase": "aplikasi",
       "title_editorial": "Ujaran sopan di sekolah — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat bertutur dengan bahasa yang sopan di sekolah melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat melakonkan pertuturan sopan dengan rakan dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -1524,12 +1576,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Bertutur dan memberikan respons terhadap maklumat yang disaring secara berhemah.",
+      "sp_description": "Menyebut dan menggunakan ujaran secara sopan mengikut situasi di sekolah."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP023",
@@ -1546,7 +1600,7 @@
       "focus_editorial": "Ujaran sopan di rumah",
       "phase": "penerokaan",
       "title_editorial": "Ujaran sopan di rumah — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat menggunakan ungkapan sopan semasa berinteraksi melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat membina dan melakonkan dialog keluarga dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -1593,12 +1647,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Bertutur dan memberikan respons terhadap maklumat yang disaring secara berhemah.",
+      "sp_description": "Menyebut dan menggunakan ujaran secara sopan mengikut situasi di rumah."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP024",
@@ -1615,7 +1671,7 @@
       "focus_editorial": "Ujaran sopan di rumah",
       "phase": "aplikasi",
       "title_editorial": "Ujaran sopan di rumah — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat menggunakan ungkapan sopan semasa berinteraksi melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat membina dan melakonkan dialog keluarga dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -1662,12 +1718,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Bertutur dan memberikan respons terhadap maklumat yang disaring secara berhemah.",
+      "sp_description": "Menyebut dan menggunakan ujaran secara sopan mengikut situasi di rumah."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP025",
@@ -1684,7 +1742,7 @@
       "focus_editorial": "Perihal diri",
       "phase": "penerokaan",
       "title_editorial": "Perihal diri — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat memperkenalkan maklumat ringkas tentang diri melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat bercerita secara berurutan mengenai diri dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -1731,12 +1789,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Bertutur dan menyampaikan pelbagai maklumat secara berhemah.",
+      "sp_description": "Bertutur tentang perihal diri dengan menggunakan perkataan, frasa dan ayat secara spontan dan sopan berdasarkan konteks."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP026",
@@ -1753,7 +1813,7 @@
       "focus_editorial": "Perihal diri",
       "phase": "aplikasi",
       "title_editorial": "Perihal diri — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat memperkenalkan maklumat ringkas tentang diri melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat bercerita secara berurutan mengenai diri dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -1800,12 +1860,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Bertutur dan menyampaikan pelbagai maklumat secara berhemah.",
+      "sp_description": "Bertutur tentang perihal diri dengan menggunakan perkataan, frasa dan ayat secara spontan dan sopan berdasarkan konteks."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP027",
@@ -1822,7 +1884,7 @@
       "focus_editorial": "Cerita bernilai murni",
       "phase": "penerokaan",
       "title_editorial": "Cerita bernilai murni — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat menceritakan semula peristiwa penting melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat menceritakan semula serta menyatakan nilai daripada cerita dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -1869,12 +1931,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Bertutur dan menyampaikan pelbagai maklumat secara berhemah.",
+      "sp_description": "Bercerita tentang cerita yang mengandungi nilai-nilai murni berdasarkan bahan."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP028",
@@ -1891,7 +1955,7 @@
       "focus_editorial": "Cerita bernilai murni",
       "phase": "aplikasi",
       "title_editorial": "Cerita bernilai murni — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat menceritakan semula peristiwa penting melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat menceritakan semula serta menyatakan nilai daripada cerita dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -1938,12 +2002,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Bertutur dan menyampaikan pelbagai maklumat secara berhemah.",
+      "sp_description": "Bercerita tentang cerita yang mengandungi nilai-nilai murni berdasarkan bahan."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP029",
@@ -1960,7 +2026,7 @@
       "focus_editorial": "Lakonan cerita",
       "phase": "penerokaan",
       "title_editorial": "Lakonan cerita — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat mengujarkan dialog watak dengan jelas melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat melakonkan adegan pendek secara berkumpulan dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -2007,12 +2073,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Bertutur dan menyampaikan pelbagai maklumat secara berhemah.",
+      "sp_description": "Berlakon tentang cerita yang mengandungi nilai-nilai murni berdasarkan konteks."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP030",
@@ -2029,7 +2097,7 @@
       "focus_editorial": "Lakonan cerita",
       "phase": "aplikasi",
       "title_editorial": "Lakonan cerita — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat mengujarkan dialog watak dengan jelas melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat melakonkan adegan pendek secara berkumpulan dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -2076,12 +2144,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Bertutur dan menyampaikan pelbagai maklumat secara berhemah.",
+      "sp_description": "Berlakon tentang cerita yang mengandungi nilai-nilai murni berdasarkan konteks."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP031",
@@ -2098,7 +2168,7 @@
       "focus_editorial": "Kenal simbol dan abjad",
       "phase": "penerokaan",
       "title_editorial": "Kenal simbol dan abjad — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat mengecam simbol dan bentuk huruf dalam bahan bercetak melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat mencari huruf sasaran pada label dan poster ringkas dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -2145,12 +2215,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Membaca pelbagai bahan dan mendapatkan maklumat penting.",
+      "sp_description": "Membaca untuk mengenal, mengecam simbol dan abjad melalui lagu dan permainan bahasa."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP032",
@@ -2167,7 +2239,7 @@
       "focus_editorial": "Kenal simbol dan abjad",
       "phase": "aplikasi",
       "title_editorial": "Kenal simbol dan abjad — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat mengecam simbol dan bentuk huruf dalam bahan bercetak melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat mencari huruf sasaran pada label dan poster ringkas dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -2214,12 +2286,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Membaca pelbagai bahan dan mendapatkan maklumat penting.",
+      "sp_description": "Membaca untuk mengenal, mengecam simbol dan abjad melalui lagu dan permainan bahasa."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP033",
@@ -2236,7 +2310,7 @@
       "focus_editorial": "Suku kata dan perkataan",
       "phase": "penerokaan",
       "title_editorial": "Suku kata dan perkataan — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat membaca suku kata dan perkataan yang dipadankan melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat menggabungkan kad suku kata menjadi perkataan bermakna dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -2283,12 +2357,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Membaca pelbagai bahan dan mendapatkan maklumat penting.",
+      "sp_description": "Membaca suku kata dan perkataan melalui lagu dan permainan bahasa."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP034",
@@ -2305,7 +2381,7 @@
       "focus_editorial": "Suku kata dan perkataan",
       "phase": "aplikasi",
       "title_editorial": "Suku kata dan perkataan — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat membaca suku kata dan perkataan yang dipadankan melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat menggabungkan kad suku kata menjadi perkataan bermakna dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -2352,12 +2428,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Membaca pelbagai bahan dan mendapatkan maklumat penting.",
+      "sp_description": "Membaca suku kata dan perkataan melalui lagu dan permainan bahasa."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP035",
@@ -2374,7 +2452,7 @@
       "focus_editorial": "Perkataan, frasa dan ayat",
       "phase": "penerokaan",
       "title_editorial": "Perkataan, frasa dan ayat — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat membaca perkataan serta frasa dengan bimbingan melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat membaca ayat ringkas berdasarkan gambar dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -2421,12 +2499,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Membaca pelbagai bahan dan mendapatkan maklumat penting.",
+      "sp_description": "Membaca perkataan, frasa dan ayat dengan sebutan yang betul."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP036",
@@ -2443,7 +2523,7 @@
       "focus_editorial": "Perkataan, frasa dan ayat",
       "phase": "aplikasi",
       "title_editorial": "Perkataan, frasa dan ayat — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat membaca perkataan serta frasa dengan bimbingan melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat membaca ayat ringkas berdasarkan gambar dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -2490,12 +2570,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Membaca pelbagai bahan dan mendapatkan maklumat penting.",
+      "sp_description": "Membaca perkataan, frasa dan ayat dengan sebutan yang betul."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP037",
@@ -2512,7 +2594,7 @@
       "focus_editorial": "Ayat dan intonasi",
       "phase": "penerokaan",
       "title_editorial": "Ayat dan intonasi — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat membaca ayat dengan sebutan dan intonasi sesuai melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat membaca dialog pendek sambil memberi perhatian kepada tanda baca dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -2559,12 +2641,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Membaca dan memahami pelbagai maklumat penting secara jelas dan tepat.",
+      "sp_description": "Membaca ayat dengan sebutan yang betul dan intonasi yang sesuai untuk memahami konteks."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP038",
@@ -2581,7 +2665,7 @@
       "focus_editorial": "Ayat dan intonasi",
       "phase": "aplikasi",
       "title_editorial": "Ayat dan intonasi — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat membaca ayat dengan sebutan dan intonasi sesuai melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat membaca dialog pendek sambil memberi perhatian kepada tanda baca dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -2628,12 +2712,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Membaca dan memahami pelbagai maklumat penting secara jelas dan tepat.",
+      "sp_description": "Membaca ayat dengan sebutan yang betul dan intonasi yang sesuai untuk memahami konteks."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP039",
@@ -2650,7 +2736,7 @@
       "focus_editorial": "Maklumat dalam bahan",
       "phase": "penerokaan",
       "title_editorial": "Maklumat dalam bahan — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat mencari maklumat tersurat daripada bahan melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat menjawab soalan berdasarkan maklumat yang dibaca dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -2697,12 +2783,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Membaca dan memahami pelbagai maklumat penting secara jelas dan tepat.",
+      "sp_description": "Membaca untuk memahami maklumat daripada bahan berdasarkan konteks."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP040",
@@ -2719,7 +2807,7 @@
       "focus_editorial": "Maklumat dalam bahan",
       "phase": "aplikasi",
       "title_editorial": "Maklumat dalam bahan — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat mencari maklumat tersurat daripada bahan melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat menjawab soalan berdasarkan maklumat yang dibaca dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -2766,12 +2854,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Membaca dan memahami pelbagai maklumat penting secara jelas dan tepat.",
+      "sp_description": "Membaca untuk memahami maklumat daripada bahan berdasarkan konteks."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP041",
@@ -2788,7 +2878,7 @@
       "focus_editorial": "Respons berdasarkan bacaan",
       "phase": "penerokaan",
       "title_editorial": "Respons berdasarkan bacaan — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat memberikan respons tentang bahan bacaan melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat menjelaskan respons menggunakan bukti daripada petikan dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -2835,12 +2925,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Membaca dan memahami pelbagai maklumat penting secara jelas dan tepat.",
+      "sp_description": "Membaca untuk memberikan respons berdasarkan konteks secara sopan."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP042",
@@ -2857,7 +2949,7 @@
       "focus_editorial": "Respons berdasarkan bacaan",
       "phase": "aplikasi",
       "title_editorial": "Respons berdasarkan bacaan — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat memberikan respons tentang bahan bacaan melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat menjelaskan respons menggunakan bukti daripada petikan dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -2904,12 +2996,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Membaca dan memahami pelbagai maklumat penting secara jelas dan tepat.",
+      "sp_description": "Membaca untuk memberikan respons berdasarkan konteks secara sopan."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP043",
@@ -2926,7 +3020,7 @@
       "focus_editorial": "Lakaran bentuk",
       "phase": "penerokaan",
       "title_editorial": "Lakaran bentuk — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat melakar bentuk yang ditunjukkan melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat melakar bentuk dengan kawalan pergerakan tangan dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -2973,12 +3067,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Menulis ayat secara mekanis dengan betulnya dan kemasnya.",
+      "sp_description": "Melakar pelbagai bentuk atau corak yang sesuai."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP044",
@@ -2995,7 +3091,7 @@
       "focus_editorial": "Lakaran bentuk",
       "phase": "aplikasi",
       "title_editorial": "Lakaran bentuk — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat melakar bentuk yang ditunjukkan melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat melakar bentuk dengan kawalan pergerakan tangan dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -3042,12 +3138,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Menulis ayat secara mekanis dengan betulnya dan kemasnya.",
+      "sp_description": "Melakar pelbagai bentuk atau corak yang sesuai."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP045",
@@ -3064,7 +3162,7 @@
       "focus_editorial": "Bentuk dan tekap abjad",
       "phase": "penerokaan",
       "title_editorial": "Bentuk dan tekap abjad — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat membentuk dan menekap huruf dengan betul melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat menekap abjad dan menulis semula tanpa panduan penuh dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -3111,12 +3209,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Menulis ayat secara mekanis dengan betulnya dan kemasnya.",
+      "sp_description": "Membentuk dan menekap abjad dengan betulnya."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP046",
@@ -3133,7 +3233,7 @@
       "focus_editorial": "Bentuk dan tekap abjad",
       "phase": "aplikasi",
       "title_editorial": "Bentuk dan tekap abjad — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat membentuk dan menekap huruf dengan betul melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat menekap abjad dan menulis semula tanpa panduan penuh dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -3180,12 +3280,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Menulis ayat secara mekanis dengan betulnya dan kemasnya.",
+      "sp_description": "Membentuk dan menekap abjad dengan betulnya."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP047",
@@ -3202,7 +3304,7 @@
       "focus_editorial": "Menyalin tulisan",
       "phase": "penerokaan",
       "title_editorial": "Menyalin tulisan — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat menyalin perkataan dengan bentuk tulisan yang jelas melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat menyalin frasa atau ayat pendek dengan kemas dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -3249,12 +3351,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Menulis ayat secara mekanis dengan betulnya dan kemasnya.",
+      "sp_description": "Menyalin abjad, suku kata, perkataan, frasa dan ayat."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP048",
@@ -3271,7 +3375,7 @@
       "focus_editorial": "Menyalin tulisan",
       "phase": "aplikasi",
       "title_editorial": "Menyalin tulisan — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat menyalin perkataan dengan bentuk tulisan yang jelas melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat menyalin frasa atau ayat pendek dengan kemas dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -3318,12 +3422,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Menulis ayat secara mekanis dengan betulnya dan kemasnya.",
+      "sp_description": "Menyalin abjad, suku kata, perkataan, frasa dan ayat."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP049",
@@ -3340,7 +3446,7 @@
       "focus_editorial": "Gabung suku kata dan frasa",
       "phase": "penerokaan",
       "title_editorial": "Gabung suku kata dan frasa — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat menggabungkan suku kata menjadi perkataan melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat menghasilkan frasa ringkas daripada kad perkataan dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -3387,12 +3493,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Membina dan menulis ayat yang bermakna.",
+      "sp_description": "Menggabungkan dan membentuk suku kata, perkataan dan frasa."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP050",
@@ -3409,7 +3517,7 @@
       "focus_editorial": "Gabung suku kata dan frasa",
       "phase": "aplikasi",
       "title_editorial": "Gabung suku kata dan frasa — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat menggabungkan suku kata menjadi perkataan melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat menghasilkan frasa ringkas daripada kad perkataan dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -3456,12 +3564,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Membina dan menulis ayat yang bermakna.",
+      "sp_description": "Menggabungkan dan membentuk suku kata, perkataan dan frasa."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP051",
@@ -3478,7 +3588,7 @@
       "focus_editorial": "Bina dan tulis ayat",
       "phase": "penerokaan",
       "title_editorial": "Bina dan tulis ayat — Penerokaan",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat membina ayat mudah berdasarkan gambar melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat menulis ayat yang lengkap dan menyemaknya semula dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -3525,12 +3635,14 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Membina dan menulis ayat yang bermakna.",
+      "sp_description": "Membina dan menulis ayat dengan binaan ayat yang betul."
     },
     {
       "id": "BM_SJK_KP2027_T1_PDP052",
@@ -3547,7 +3659,7 @@
       "focus_editorial": "Bina dan tulis ayat",
       "phase": "aplikasi",
       "title_editorial": "Bina dan tulis ayat — Aplikasi",
-      "source_evidence": "Dokumen Kurikulum BM SJK Tahun 1, ISBN 978-967-420-798-4; SP code only independently verified; official SK/SP description not reproduced here",
+      "source_evidence": "Original DK BM SJK T1, KPM 2026 ISBN 978-967-420-798-4; exact SK/SP descriptions verified in QA source audit 2026-11-23",
       "objectives": [
         "Pada akhir PdP, murid dapat membina ayat mudah berdasarkan gambar melalui bahan yang disediakan dengan bimbingan yang bersesuaian.",
         "Murid dapat menulis ayat yang lengkap dan menyemaknya semula dan menerangkan hasil kerja secara lisan atau menunjukkan bukti bertulis."
@@ -3594,12 +3706,23 @@
       ],
       "formatting_contract": "jadual besar tunggal; Aktiviti 1/2/3 bold di baris berasingan; label Refleksi sahaja; tanpa garis bawah untuk ruang kosong",
       "verification_required": [
-        "Penerangan penuh SK dan SP daripada DK muktamad",
+        "Penerapan teks SK/SP lengkap dalam Word/PDF perlu disahkan",
         "Kesepadanan cadangan PdP dengan RPT tahunan Kumpulan A dan B",
         "Semakan pedagogi setiap aktiviti oleh guru",
         "Pengesahan contoh Word dan PDF sebenar sebelum diterbitkan",
         "Ujian login, kuota dan muat turun Web"
-      ]
+      ],
+      "sk_description": "Membina dan menulis ayat yang bermakna.",
+      "sp_description": "Membina dan menulis ayat dengan binaan ayat yang betul."
     }
-  ]
+  ],
+  "source_validation": {
+    "date": "2026-11-23",
+    "source_file_id": "19eJeNYAx5osXc2rvNjeE_pihg9euJS0S",
+    "verified_sk_descriptions": 9,
+    "verified_sp_descriptions": 26,
+    "applied_draft_rph": 52,
+    "status": "SOURCE_TEXT_VERIFIED_QA_HOLD",
+    "remaining": "RPT tahunan A/B, semakan pedagogi, Word/PDF dan ujian Web"
+  }
 }
