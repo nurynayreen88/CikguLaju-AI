@@ -108,3 +108,74 @@ class TestPilot(unittest.TestCase):
         self.assertNotIn('Lesson 004',c._PAGE)
 
 if __name__=='__main__':unittest.main()
+
+class TestFlaskDownloadContract(unittest.TestCase):
+    """Runs in production-like CI with Flask installed; offline containers skip."""
+    def setUp(self):
+        try:
+            from flask import Flask
+            import web.rph_delivery_quota
+            import web_v1_telegram_auth_routes
+            import web_v1_sessions
+        except ImportError:
+            self.skipTest('Flask/auth stack is not installed in this offline test runner')
+        self.F = Flask
+        self.config = {'account_backend':'supabase', 'supabase_url':'https://'+c.HOST,
+                       'supabase_key':'sb_secret_'+'x'*40,
+                       'CIKGULAJU_WEB_SESSION_SECRET':'z'*48}
+        self.account={'authenticated':True,'telegram_user_id':123,'rakan_pembangun':True,
+                      'free_remaining':10,'vip_until':None,'vip_expires_at':None}
+
+    def _client(self, *, paid=True, asset=b'%PDF-1.7\n'+b'0'*1500):
+        import web.rph_delivery_quota as quota
+        import web_v1_telegram_auth_routes as auth
+        import web_v1_sessions as sessions
+        self.stack = [patch.object(auth,'_config',return_value=self.config),
+                      patch.object(auth,'_lookup',return_value=self.account),
+                      patch.object(sessions,'verify_session_ticket',return_value=123),
+                      patch.object(quota,'has_active_paid_access',return_value=paid),
+                      patch.object(quota,'authorize_rendered_document',return_value={'allowed':True,'remaining':9}),
+                      patch.object(c,'fetch_private_document',return_value=asset)]
+        self.mocks=[p.start() for p in self.stack]
+        self.addCleanup(lambda:[p.stop() for p in reversed(self.stack)])
+        app=self.F(__name__); app.testing=True
+        app.register_blueprint(c.create_blueprint())
+        client=app.test_client()
+        try: client.set_cookie('cikgulaju_web_v1_session','session')
+        except TypeError: client.set_cookie('localhost','cikgulaju_web_v1_session','session')
+        return client
+
+    def test_no_publish_flag_remains_disabled(self):
+        client=self._client()
+        with patch.dict('os.environ',{c.FEATURE_FLAG:'0'}):
+            r=client.post('/api/kp2027/sk/tahun-1/matematik/download',
+                          json={'group':'A','lesson':1,'format':'pdf'},headers={'Origin':c.ORIGIN})
+        self.assertEqual(r.status_code,503)
+
+    def test_same_origin_and_logged_in_required(self):
+        client=self._client()
+        with patch.dict('os.environ',{c.FEATURE_FLAG:'1'}):
+            no_origin=client.post('/api/kp2027/sk/tahun-1/matematik/download',
+                                  json={'group':'A','lesson':1,'format':'pdf'})
+            self.assertEqual(no_origin.status_code,403)
+            self.mocks[2].return_value=None
+            anonymous=client.post('/api/kp2027/sk/tahun-1/matematik/download',
+                                  json={'group':'A','lesson':1,'format':'pdf'},headers={'Origin':c.ORIGIN})
+            self.assertEqual(anonymous.status_code,401)
+
+    def test_paid_download_and_non_paid_quota_reuse(self):
+        client=self._client(paid=True)
+        with patch.dict('os.environ',{c.FEATURE_FLAG:'1'}):
+            r=client.post('/api/kp2027/sk/tahun-1/matematik/download',
+                          json={'group':'A','lesson':1,'format':'pdf'},headers={'Origin':c.ORIGIN})
+            self.assertEqual(r.status_code,200)
+            self.assertIn('LESSON001.pdf',r.headers['Content-Disposition'])
+            self.assertTrue(r.data.startswith(b'%PDF-'))
+            self.assertNotIn('X-RPH-Trial-Remaining',r.headers)
+        import web.rph_delivery_quota as quota
+        self.mocks[3].return_value=False
+        with patch.dict('os.environ',{c.FEATURE_FLAG:'1'}):
+            r=client.post('/api/kp2027/sk/tahun-1/matematik/download',
+                          json={'group':'A','lesson':1,'format':'pdf'},headers={'Origin':c.ORIGIN})
+            self.assertEqual(r.status_code,200)
+            self.assertEqual(r.headers['X-RPH-Trial-Remaining'],'9')
