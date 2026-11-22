@@ -112,7 +112,7 @@ class ReviewSequenceTests(unittest.TestCase):
                 for expected in (row["title"], row["unit"], f"PdP {row['id']:03d}",
                                  f"{sk} {plan['sk_text']}", f"{row['sp']} {plan['sp_text']}",
                                  f"m/s {row['pages']}", plan["pbd"],
-                                 "Kelas 5 Bestari", "Tarikh 18/01/2027", f"Masa {time}", "Bilangan Murid 32",
+                                 "Kelas: 5 Bestari", "Tarikh: 18/01/2027", f"Masa: {time}", "Bilangan Murid: 32",
                                  "Murid membentangkan dapatan."):
                     self.assertIn(" ".join(expected.split()), compact)
 
