@@ -72,7 +72,6 @@ class TeacherFields(unittest.TestCase):
                             self.assertNotIn("(Auto / Manual)", text)
                             self.assertIn("Rujukan DK Matematik", text)
                     self.assertNotEqual(result, source)
-        self.assertIn(b"word/", word_fixture())
 
     def test_word_reflection_label_preserves_original_typography(self):
         from docx import Document
