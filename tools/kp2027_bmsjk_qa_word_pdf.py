@@ -15,6 +15,8 @@ from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "audits/kp2027_bm_sjk_tahun1_52_rph_editorial_qa_20261123.json"
+PEDAGOGY = ROOT / "audits/kp2027_bm_sjk_pedagogy_26sp_20261123.json"
+VERIFIED = ROOT / "audits/kp2027_bm_sjk_sksp_verified_20261123.json"
 PAGE_WIDTH_MM = 210
 PAGE_HEIGHT_MM = 297
 MARGIN_MM = 18
@@ -38,7 +40,28 @@ def qa_records():
                 or not r.get("sp_description") or len(r["aktiviti_utama"]) != 3
                 or r["refleksi_label"] != "Refleksi"):
             raise ValueError("A QA source is not complete for isolated export")
-    return records
+    # Editorial improvements never rewrite the audited curriculum or base RPH:
+    # enrich copies with phase-specific practices and verified SP sub-components.
+    bank = json.loads(PEDAGOGY.read_text(encoding="utf-8"))
+    verified = json.loads(VERIFIED.read_text(encoding="utf-8"))
+    if (bank["status"] != "QA_EDITORIAL_UNAPPROVED"
+            or bank["counts"] != {"sp": 26, "pdp": 52, "ready": 0}
+            or set(bank["by_sp"]) != set(verified["sp"])):
+        raise ValueError("Editorial supplement approval gate or SP inventory changed")
+    enriched = []
+    for original in records:
+        r = original.copy()
+        supplement = bank["by_sp"].get(r["sp_code"])
+        if not supplement or any(not isinstance(v, str) or len(v.strip()) < 16
+                                 for v in supplement.values()):
+            raise ValueError("Missing editorial pedagogical supplement")
+        r["editorial_supplement"] = supplement.copy()
+        if r["sp_code"] == "1.2.2":
+            r["sp_components"] = [
+                "; ".join(verified["special_sp_components"]["1.2.2"])
+            ]
+        enriched.append(r)
+    return enriched
 
 
 def heading(record):
@@ -57,19 +80,28 @@ def _rows(record):
         ("Standard Pembelajaran", [record["sp_code"] + " " + record["sp_description"]] +
          record.get("sp_components", [])),
         ("Objektif Pembelajaran", record["objectives"]),
+        ("Pengetahuan Sedia Ada", [record["editorial_supplement"]["prior_knowledge"]]),
+        ("Kriteria Kejayaan", [record["editorial_supplement"]["success_criterion"]]),
+        ("EMK / Nilai", [record["editorial_supplement"]["emk_nilai"]]),
+        ("KBAT", [record["editorial_supplement"]["kbat"]]),
+        ("PAK21", [record["editorial_supplement"]["pak21"]]),
         ("Bahan Bantu Mengajar", record["bbm"]),
     ]
     activities = [("Set Induksi", [
         ("Guru", record["set_induksi"]["guru"]),
         ("Murid", record["set_induksi"]["murid"]),
     ])]
-    for item in record["aktiviti_utama"]:
-        activities.append((item["title"], [
-            ("Guru", item["guru"]), ("Murid", item["murid"])
-        ]))
+    for i, item in enumerate(record["aktiviti_utama"]):
+        actions = [("Guru", item["guru"]), ("Murid", item["murid"])]
+        if i == 1:
+            phase_key = ("guided_pdp" if record["phase"] == "penerokaan"
+                         else "application_pdp")
+            actions.append(("Pengukuhan khusus", record["editorial_supplement"][phase_key]))
+        activities.append((item["title"], actions))
     activities.append(("Penutup", [
         ("Guru", record["penutup"]["guru"]),
         ("Murid", record["penutup"]["murid"]),
+        ("Semak kefahaman", record["editorial_supplement"]["closure"]),
     ]))
     follow_up = [
         ("Pentaksiran / PBD", [record["penilaian"]]),
