@@ -182,6 +182,14 @@ def _authenticated_response(auth, uid, *, remember=False):
     except Exception as exc:
         current_app.logger.warning("Web email referral capture unavailable: %s",
                                    type(exc).__name__)
+    # Record verified email login exactly like Telegram, without blocking
+    # access when analytics is unavailable. Older events are not backfilled.
+    try:
+        from web.web_login_analytics import record_verified_web_login
+        record_verified_web_login(_config(), uid)
+    except Exception as exc:
+        current_app.logger.warning("Web email login analytics unavailable: %s",
+                                   type(exc).__name__)
     ticket = issue_session_ticket(uid, auth["session_secret"], remember=remember)
     response = _reply({"authenticated": True})
     response.set_cookie(COOKIE, ticket, secure=True, httponly=True,

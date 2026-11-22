@@ -55,7 +55,7 @@ class WebLoginEventTests(unittest.TestCase):
         self.assertEqual(req.get_header("Apikey"), key)
 
     def test_unverified_or_invalid_user_ids_never_trigger_network(self):
-        for value in (None, "123", 0, -3, True, 10**18):
+        for value in (None, "123", 0, -3, True, 2**63):
             opener = FakeOpener()
             with self.subTest(value=value), self.assertRaises(ValueError):
                 record_verified_web_login(config(), value, opener=opener)

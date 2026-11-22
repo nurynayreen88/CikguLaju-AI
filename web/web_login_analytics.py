@@ -24,8 +24,10 @@ def record_verified_web_login(config, uid, *, opener=None):
     """
     if not isinstance(config, dict) or config.get("account_backend") != "supabase":
         return False
-    if type(uid) is not int or not 0 < uid < 10**18:
-        raise ValueError("Expected a verified Telegram user ID")
+    # Validated Telegram IDs and email-only synthetic Web IDs are both
+    # legitimate CikguLaju account IDs; callers verify identity before logging.
+    if type(uid) is not int or not 0 < uid < 2**63:
+        raise ValueError("Expected a verified CikguLaju account ID")
 
     base = config.get("supabase_url", "")
     key = config.get("supabase_key", "")

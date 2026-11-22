@@ -28,6 +28,8 @@ from web.special_activities_web import bp as special_activities_bp
 app.register_blueprint(special_activities_bp)
 from web.admin_usage_web import bp as admin_usage_bp
 app.register_blueprint(admin_usage_bp)
+from web.admin_users_web import bp as admin_users_bp
+app.register_blueprint(admin_users_bp)
 from web.matematik_sjkt_t2_review_web import bp as matematik_sjkt_t2_review_bp
 app.register_blueprint(matematik_sjkt_t2_review_bp)
 from web.web_feedback_routes import bp as web_feedback_bp
