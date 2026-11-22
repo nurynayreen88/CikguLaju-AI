@@ -120,6 +120,45 @@ class TestUniversalReflection(unittest.TestCase):
         self.assertIn("deria",text)
         self.assertNotIn("30 orang",text)
 
+    def test_verified_kssr_word_preserves_font_label_and_compacts_empty_height(self):
+        from docx.shared import Pt
+        from docx.enum.table import WD_ROW_HEIGHT_RULE
+        doc = Document(BytesIO(word_fixture()))
+        row = doc.tables[2].rows[1]
+        row.cells[0].paragraphs[0].runs[0].text = "Refleksi (Auto / Manual)"
+        body_run = row.cells[1].paragraphs[0].runs[0]
+        body_run.font.name = "Liberation Serif"
+        body_run.font.size = Pt(9)
+        row.height = Pt(110)
+        row.height_rule = WD_ROW_HEIGHT_RULE.EXACTLY
+        original = BytesIO()
+        doc.save(original)
+        result = personalize_verified_document(BytesIO(original.getvalue()), "word", {
+            "subject": "SCIENCE", "source": "telegram-native-pdp-sequence", "teacher": {}
+        })
+        output = Document(result)
+        out_row = output.tables[2].rows[1]
+        self.assertEqual(out_row.cells[0].text, "Refleksi")
+        self.assertIn("deria", out_row.cells[1].text)
+        self.assertNotIn("Auto / Manual", out_row.cells[0].text)
+        self.assertEqual(out_row.cells[1].paragraphs[0].runs[0].font.name, "Liberation Serif")
+        self.assertAlmostEqual(out_row.cells[1].paragraphs[0].runs[0].font.size.pt, 9)
+        self.assertEqual(out_row.height_rule, WD_ROW_HEIGHT_RULE.AUTO)
+        self.assertIsNone(out_row.height)
+        self.assertEqual(output.tables[1].cell(1, 1).text,
+                         doc.tables[1].cell(1, 1).text)
+
+    def test_verified_layout_does_not_print_auto_manual_control_label(self):
+        layout = {
+            "style": "telegram-native-rph-v1",
+            "header": [{"label": "Kriteria Kejayaan", "value": CRITERION}],
+            "footer": [{"label": "Pemulihan / Pengayaan", "value": "Asal"},
+                       {"label": "Refleksi (Auto / Manual)", "value": "Asal"}],
+        }
+        self.assertTrue(personalize_layout(layout, {"reflection": "Catatan cikgu."}, "SCIENCE"))
+        self.assertEqual(layout["footer"][1]["label"], "Refleksi")
+        self.assertEqual(layout["footer"][1]["value"], "Catatan cikgu.")
+
     def test_verified_pdf_document_changes_only_reflection_row(self):
         source=pdf_fixture()
         output=personalize_verified_document(BytesIO(source),"pdf",
