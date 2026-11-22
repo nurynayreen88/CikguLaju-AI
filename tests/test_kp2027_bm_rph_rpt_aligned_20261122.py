@@ -51,7 +51,7 @@ class TestBmKp2027Rph(TestCase):
                     if fmt=="word":
                         self.assertTrue(payload.startswith(b"PK\x03\x04"))
                         d=Document(BytesIO(payload))
-                        text=" ".join(c.text for t in d.tables for row in t.rows for c in row.cells)
+                        text=" ".join([p.text for p in d.paragraphs]+[c.text for t in d.tables for row in t.rows for c in row.cells])
                     else:
                         self.assertTrue(payload.startswith(b"%PDF-"))
                         pdf=fitz.open(stream=payload,filetype="pdf")
