@@ -1,0 +1,48 @@
+{
+  "id": "kp2027_year1_verified_dk_library_registry",
+  "checked_at": "2026-11-22",
+  "verified_document_type": "Dokumen Kurikulum KP2027 Tahun 1, terbitan BPK KPM 2026",
+  "sources": [
+    {
+      "subject": "Bahasa Melayu SK",
+      "code": "BM_SK",
+      "id": "1-a9APG2zp8sAahgUweiP5PxzHyBC2TXh",
+      "status": "DK_PRESENT",
+      "published_assets": "353 RPH A/B secara Web, status SEMAKAN PELAKSANAAN"
+    },
+    {
+      "subject": "Bahasa Melayu SJK",
+      "code": "BM_SJK",
+      "id": "19eJeNYAx5osXc2rvNjeE_pihg9euJS0S",
+      "status": "DK_PRESENT",
+      "published_assets": "26 SP telah diaudit, 52 PdP cadangan masih QA"
+    },
+    {
+      "subject": "Matematik",
+      "code": "MATH",
+      "id": "1-kXRF38muWZ_UQg0l6qPjU0Pv-9-ulHb",
+      "status": "DK_PRESENT",
+      "published_assets": "249 RPH A/B CANARY_APPROVED dalam storan"
+    },
+    {
+      "subject": "Alam dan Manusia",
+      "code": "ALAM",
+      "id": "1FO2UkgGeDEDYwiwlfpjc1SFfNOw-pcrs",
+      "status": "DK_PRESENT",
+      "published_assets": "64 sumber dan 29 tambahan untuk susunan 93 PdP"
+    },
+    {
+      "subject": "Pendidikan Jasmani",
+      "code": "PJ",
+      "id": "1I-N29W5syivfvsThQplu2-SottmhXPQj",
+      "status": "DK_PRESENT",
+      "published_assets": "127 RPH A/B dalam storan"
+    }
+  ],
+  "cautions": [
+    "DK KP2027 Tahun 1 mesti digunakan; DSKP KSSR 2017 tidak sah sebagai pengganti.",
+    "RPH dan RPT baharu hanya READY selepas SP/PdP dan DOCX/PDF sebenar diuji.",
+    "Kewujudan dokumen DK tidak bermaksud semua RPH diluluskan.",
+    "Pendidikan Islam, Bahasa Arab, Bahasa Inggeris belum mempunyai DK Tahun 1 yang disahkan dalam inventori lima fail ini; jangan andaikan tiada pada sumber luar."
+  ]
+}
