@@ -4,6 +4,7 @@ on:
     branches: [production/cikgulaju-web-20261105]
     paths:
       - 'web/kp2027_math_canary_web.py'
+      - 'web/kp2027_math_v11_catalog.json'
       - 'tests/test_kp2027_math_canary_web.py'
       - 'tools/run_web_production.py'
       - '.github/workflows/kp2027-math-private-pilot-20261122.yml'
@@ -25,17 +26,24 @@ jobs:
         run: python -m py_compile web/kp2027_math_canary_web.py tests/test_kp2027_math_canary_web.py tools/run_web_production.py
       - name: Run strict source, session, request-origin and quota mock contract
         run: python -m unittest discover -s tests -p 'test_kp2027_math_canary_web.py' -v
-      - name: Assert staged pilot is limited to 10 verified Lesson slots and never embeds source blobs in Git
+      - name: Assert immutable V11 curriculum catalog, private access and no source blobs in Git
         run: |
           python - <<'PY'
           from pathlib import Path
           p=Path('web/kp2027_math_canary_web.py').read_text()
-          assert 'MAX_LESSON = 10' in p
+          assert 'MAX_LESSON = 125' in p
+          import json
+          catalog=json.loads(Path('web/kp2027_math_v11_catalog.json').read_text())
+          assert len(catalog['A'])==125 and len(catalog['B'])==124
+          assert catalog['A']['32']['sp'] != catalog['B']['32']['sp']
+          assert catalog['source_archive_sha256']=='07003ed9b0037359ff30a8956ba328d3d5eb76ad44417bf1be5be18d74fe50cf'
           assert 'CIKGULAJU_KP2027_MATH_CANARY_ENABLED' in p
           assert 'Origin' in p and 'CANARY_APPROVED' in p
           assert '/rest/v1/kp2027_private_pilot_assets' in p
           assert 'authorize_rendered_document(' in p
           assert 'content_base64=' not in p  # blobs stay in private DB, not in the repo
           assert 'RPH_GENERATED' not in p
+          assert '/api/kp2027/sk/tahun-1/matematik/available' in p
+          assert 'fetch_approved_catalog' in p
           print('CANARY_CODE_GATE_PASS (not proof of LIVE user downloads)')
           PY

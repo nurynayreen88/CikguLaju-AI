@@ -30,7 +30,7 @@ def fake_row(group='A', lesson=1, fmt='word'):
             blob = b.getvalue()
     return {'subject': 'MATH', 'kumpulan': group, 'lesson': lesson, 'format': fmt,
             'content_base64': base64.b64encode(blob).decode('ascii'), 'byte_size': len(blob),
-            'sha256_hex': sha256(blob).hexdigest(), 'sp_code': c.EXPECTED_SP[lesson],
+            'sha256_hex': sha256(blob).hexdigest(), 'sp_code': c.expected_entry(group, lesson)['sp'],
             'approval_status': 'CANARY_APPROVED', 'source_archive_sha256': c.SOURCE_SHA}
 
 
@@ -42,14 +42,26 @@ class Response:
     def read(self,n=-1): return self.raw[:n]
 
 class TestPilot(unittest.TestCase):
+    def setUp(self):
+        # Only tests use tiny synthetic RPH bytes. Production has *immutable*
+        # original PDF/Word hashes from the verified 249-file source catalog.
+        self.real_expected = c.expected_entry
+        synthetic = {fmt: fake_row('A', 1, fmt)['sha256_hex'] for fmt in ('word','pdf')}
+        def fixture_entry(group, lesson):
+            return {**self.real_expected(group, lesson), **synthetic}
+        self.fixture_patch = patch.object(c, 'expected_entry', side_effect=fixture_entry)
+        self.fixture_patch.start()
+        self.addCleanup(self.fixture_patch.stop)
+
     def test_strict_selection(self):
-        for x in (0, 11, True, '1', '../1', 1.3, None):
+        for x in (0, 126, True, '1', '../1', 1.3, None):
             with self.subTest(x=x), self.assertRaises(ValueError): c.valid_selection('A', x, 'pdf')
         for group in ('', 'a', 'Z', None):
             with self.assertRaises(ValueError): c.valid_selection(group, 1, 'word')
         for fmt in ('zip', 'PDF', '../pdf', None):
             with self.assertRaises(ValueError): c.valid_selection('B', 1, fmt)
-        self.assertEqual(c.valid_selection('B',10,'word'),('B',10,'word'))
+        self.assertEqual(c.valid_selection('B',124,'word'),('B',124,'word'))
+        with self.assertRaises(ValueError):c.valid_selection('B',125,'word')
 
     def test_refuse_qa_and_bad_identity(self):
         row=fake_row()
@@ -59,8 +71,8 @@ class TestPilot(unittest.TestCase):
                 c.verify_private_row({**row,field:value}, 'A', 1, 'word')
 
     def test_each_lesson_sp_mapping_fail_closed(self):
-        self.assertEqual(c.MAX_LESSON, 10)
-        for lesson in range(1, 11):
+        self.assertEqual(c.MAX_LESSON, 125)
+        for lesson in range(1, 126):
             with self.subTest(lesson=lesson):
                 self.assertEqual(c.valid_selection("A", lesson, "pdf"), ("A", lesson, "pdf"))
                 original = fake_row("A", lesson, "pdf")
@@ -68,6 +80,37 @@ class TestPilot(unittest.TestCase):
                 changed = {**original, "sp_code": "9.9.9"}
                 with self.assertRaises(c.PilotUnavailable):
                     c.verify_private_row(changed, "A", lesson, "pdf")
+
+    def test_full_catalog_immutable_and_groups_differ(self):
+        self.assertEqual(len(c._CATALOG['A']), 125)
+        self.assertEqual(len(c._CATALOG['B']), 124)
+        self.assertEqual(c.expected_entry('A',11)['sp'],'1.1.3')
+        self.assertEqual(c.expected_entry('A',13)['sp'],'1.1.4')
+        self.assertEqual(c.expected_entry('B',17)['sp'],'1.2.1')
+        self.assertNotEqual(c.expected_entry('A',32)['sp'], c.expected_entry('B',32)['sp'])
+        self.assertEqual(c._CATALOG['source_archive_sha256'], c.SOURCE_SHA)
+        import re
+        for group in ('A','B'):
+            for lesson in range(1, len(c._CATALOG[group])+1):
+                row=c.expected_entry(group,lesson)
+                for fmt in ('word','pdf'):
+                    self.assertRegex(row[fmt],r'^[0-9a-f]{64}$')
+
+    def test_catalog_only_complete_verified_pairs(self):
+        cfg={'account_backend':'supabase','supabase_url':'https://'+c.HOST,'supabase_key':'sb_secret_'+'z'*40}
+        def meta(g,n,f):
+            row=c.expected_entry(g,n)
+            return {'kumpulan':g,'lesson':n,'format':f,'sp_code':row['sp'],
+                    'sha256_hex':row[f],'source_archive_sha256':c.SOURCE_SHA,'approval_status':'CANARY_APPROVED'}
+        complete=[meta('A',11,'word'),meta('A',11,'pdf'),meta('B',11,'word'),meta('B',11,'pdf')]
+        partial=[meta('A',12,'word')]
+        catalog=c.fetch_approved_catalog(cfg,opener=lambda req,timeout=12:Response(complete+partial))
+        self.assertEqual(catalog,{'A':[11],'B':[11]})
+        for bad in ([meta('A',11,'word'),meta('A',11,'word')],
+                    [{**meta('A',11,'pdf'),'sha256_hex':'f'*64}],
+                    [{**meta('A',11,'pdf'),'sp_code':'9.9.9'}]):
+            with self.assertRaises(c.PilotUnavailable):
+                c.fetch_approved_catalog(cfg,opener=lambda req,timeout=12,bad=bad:Response(bad))
 
     def test_checksums_and_bad_docs(self):
         for fmt in ('word','pdf'):
@@ -109,15 +152,16 @@ class TestPilot(unittest.TestCase):
 
     def test_real_docs_source_digest_if_locally_mounted(self):
         if not PILOT.is_dir():self.skipTest('No private test fixtures')
-        for g in ('A','B'):
-            for n in (1,2,3):
-                for fmt,ext in (('word','docx'),('pdf','pdf')):
-                    b=(PILOT/f'MATH_T1_{g}_LESSON{n:03d}.{ext}').read_bytes()
-                    r=fake_row(g,n,fmt);r.update(content_base64=base64.b64encode(b).decode(),byte_size=len(b),sha256_hex=sha256(b).hexdigest())
-                    self.assertEqual(c.verify_private_row(r,g,n,fmt),b)
-        self.assertIn('Lesson 001',c._PAGE)
-        self.assertIn('Lesson 010',c._PAGE)
-        self.assertNotIn('Lesson 011',c._PAGE)
+        with patch.object(c, 'expected_entry', side_effect=self.real_expected):
+            for g in ('A','B'):
+                for n in (1,2,3):
+                    for fmt,ext in (('word','docx'),('pdf','pdf')):
+                        b=(PILOT/f'MATH_T1_{g}_LESSON{n:03d}.{ext}').read_bytes()
+                        r=fake_row(g,n,fmt)
+                        r.update(content_base64=base64.b64encode(b).decode(),byte_size=len(b),sha256_hex=sha256(b).hexdigest())
+                        self.assertEqual(c.verify_private_row(r,g,n,fmt),b)
+        self.assertIn('/api/kp2027/sk/tahun-1/matematik/available',c._PAGE)
+        self.assertNotIn('<option value="10">',c._PAGE)
 
 if __name__=='__main__':unittest.main()
 
@@ -156,6 +200,19 @@ class TestFlaskDownloadContract(unittest.TestCase):
         try: client.set_cookie('cikgulaju_web_v1_session','session')
         except TypeError: client.set_cookie('localhost','cikgulaju_web_v1_session','session')
         return client
+
+    def test_availability_login_and_no_quota_charge(self):
+        client=self._client()
+        with patch.object(c, 'fetch_approved_catalog',return_value={'A':[1,2,11],'B':[1,11]}) as feed:
+            with patch.dict('os.environ',{c.FEATURE_FLAG:'1'}):
+                res=client.get('/api/kp2027/sk/tahun-1/matematik/available')
+                self.assertEqual(res.status_code,200)
+                self.assertEqual(res.get_json()['groups']['A'],[1,2,11])
+                self.assertEqual(self.mocks[4].call_count,0)  # no trial debit for inventory
+                feed.assert_called_once()
+                self.mocks[2].return_value=None
+                res2=client.get('/api/kp2027/sk/tahun-1/matematik/available')
+                self.assertEqual(res2.status_code,401)
 
     def test_no_publish_flag_remains_disabled(self):
         client=self._client()
