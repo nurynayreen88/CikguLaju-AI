@@ -67,7 +67,7 @@ class TestKP2027ProfileCover(unittest.TestCase):
                         with ZipFile(io.BytesIO(out)) as z:
                             self.assertTrue(any(x.startswith('word/media/image') for x in z.namelist()))
                         self.assertIn('Kumpulan A',doc.paragraphs[12].text)
-                        self.assertIn('Kumpulan B',doc.paragraphs[3].text)
+                        self.assertIn('Kumpulan B',doc.paragraphs[12].text)
                     else:
                         original=fitz.open(stream=data,filetype='pdf')
                         updated=fitz.open(stream=out,filetype='pdf')
