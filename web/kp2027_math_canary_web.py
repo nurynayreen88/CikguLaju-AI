@@ -1,4 +1,4 @@
-"""CikguLaju KP2027 SK Year 1 Matematik: tiny, quota-gated private canary.
+"""CikguLaju KP2027 SK Year 1 Matematik: quota-gated private staged batch.
 
 This route is OFF by default. Only explicitly approved small pilot items can be
 served, from service-role-only Supabase rows. Login, entitlement/trial charging,
@@ -23,7 +23,10 @@ ORIGIN = "https://cikgulaju-web.onrender.com"
 FEATURE_FLAG = "CIKGULAJU_KP2027_MATH_CANARY_ENABLED"
 FORMATS = {"word": ("docx", "application/vnd.openxmlformats-officedocument.wordprocessingml.document"),
            "pdf": ("pdf", "application/pdf")}
-MAX_LESSON = 3
+MAX_LESSON = 10
+EXPECTED_SP = {**{i: "1.1.1" for i in range(1, 5)},
+               **{i: "1.1.2" for i in range(5, 9)},
+               **{i: "1.1.3" for i in range(9, 11)}}
 
 
 class PilotUnavailable(Exception):
@@ -83,7 +86,7 @@ def verify_private_row(row, group, lesson, fmt):
             or type(row.get("lesson")) is not int or row["lesson"] != lesson
             or row.get("format") != fmt or row.get("approval_status") != "CANARY_APPROVED"
             or row.get("source_archive_sha256") != SOURCE_SHA
-            or row.get("sp_code") != "1.1.1"):
+            or row.get("sp_code") != EXPECTED_SP[lesson]):
         raise PilotUnavailable("RPH belum diluluskan untuk muat turun")
     try:
         data = base64.b64decode(row["content_base64"], validate=True)
@@ -152,7 +155,7 @@ _PAGE = '''<!doctype html><html lang="ms"><head><meta charset="utf-8"><meta name
 <style>body{margin:0;font:16px system-ui,sans-serif;background:#f5f7fa;color:#1a2735}.wrap{max-width:560px;margin:36px auto;background:white;border-radius:12px;padding:28px;box-shadow:0 6px 22px #19324916}h1{font-size:24px;margin:0 0 10px}p{line-height:1.55}label{display:block;margin:17px 0 7px;font-weight:600}select,button{width:100%;padding:13px;border-radius:7px;font:inherit}select{border:1px solid #bac6d2;background:#fff}button{margin-top:24px;border:0;background:#193755;color:white;font-weight:700;cursor:pointer}button:disabled{opacity:.55}small{color:#586779}.status{min-height:26px;margin-top:18px}a{color:#1c528e}</style></head>
 <body><main class="wrap"><h1>Matematik â¢ KP2027 Tahun 1</h1><p>RPH Lesson awal, format Word dan PDF. Sila log masuk menggunakan akaun CikguLaju. Setiap muat turun pengguna percubaan menggunakan kuota janaan sedia ada.</p>
 <label for="group">Kumpulan sekolah</label><select id="group"><option value="A">Kumpulan A</option><option value="B">Kumpulan B</option></select>
-<label for="lesson">Lesson</label><select id="lesson"><option value="1">Lesson 001</option></select>
+<label for="lesson">Lesson</label><select id="lesson"><option value="1">Lesson 001</option><option value="2">Lesson 002</option><option value="3">Lesson 003</option><option value="4">Lesson 004</option><option value="5">Lesson 005</option><option value="6">Lesson 006</option><option value="7">Lesson 007</option><option value="8">Lesson 008</option><option value="9">Lesson 009</option><option value="10">Lesson 010</option></select>
 <label for="fmt">Format bahan</label><select id="fmt"><option value="pdf">PDF</option><option value="word">Word (.docx)</option></select>
 <button id="download" type="button">Download RPH</button><p class="status" id="message" role="status" aria-live="polite"></p>
 <small>Hanya Lesson yang telah lulus akan dibenarkan. <a href="/">Kembali ke CikguLaju / Log masuk</a>.</small></main>
