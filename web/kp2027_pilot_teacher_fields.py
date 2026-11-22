@@ -228,7 +228,17 @@ def _word_personalize(original, fields):
         fields["_reflection"] if fields["_reflection_mode"] == "manual"
         else _reflection_candidates(_word_success_criterion(document))[0]
     )
-    reflection_rows[0].cells[1].text = reflection
+    reflection_cell = reflection_rows[0].cells[1]
+    original_runs = [run for paragraph in reflection_cell.paragraphs for run in paragraph.runs]
+    source_font = next((run.font.name for run in original_runs if run.font.name), None)
+    source_size = next((run.font.size for run in original_runs if run.font.size), None)
+    reflection_cell.text = reflection
+    for paragraph in reflection_cell.paragraphs:
+        for run in paragraph.runs:
+            if source_font:
+                run.font.name = source_font
+            if source_size:
+                run.font.size = source_size
     # Keep the subject, title, curriculum standard and lesson number inside
     # the RPH table, but remove the duplicate KP2027 banner line and footer.
     for paragraph in list(document.paragraphs):
