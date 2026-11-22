@@ -1931,12 +1931,17 @@ subject.addEventListener("change",async()=>{
    const data=await response.json().catch(()=>({}));
    if(!response.ok)throw Error(data.error||"Senarai PdP tidak tersedia (HTTP "+response.status+").");
    let inventory;
-   if(code==="MATH_KP2027"||code==="BM_SK_KP2027"){
-    const max=code==="BM_SK_KP2027"?178:125;
-    if(!data.groups||!kp2027ValidList(data.groups.A,max)||!kp2027ValidList(data.groups.B,max)||
-       !data.items||!kp2027ValidEntries(data.items.A,data.groups.A,max)||
-       !kp2027ValidEntries(data.items.B,data.groups.B,max))
-     throw Error("Padanan Unit dan PdP belum dapat disahkan.");
+   if(code==="MATH_KP2027"){
+    if(!data.groups||!kp2027ValidList(data.groups.A,125)||!kp2027ValidList(data.groups.B,125)||
+       !data.items||!kp2027ValidEntries(data.items.A,data.groups.A,125)||
+       !kp2027ValidEntries(data.items.B,data.groups.B,125))
+     throw Error("Padanan Unit dan PdP Matematik belum dapat disahkan.");
+    inventory={groups:data.groups,items:data.items};
+   }else if(code==="BM_SK_KP2027"){
+    if(!data.groups||!kp2027ValidList(data.groups.A,178)||!kp2027ValidList(data.groups.B,175)||
+       !data.items||!kp2027ValidEntries(data.items.A,data.groups.A,178)||
+       !kp2027ValidEntries(data.items.B,data.groups.B,175))
+     throw Error("Padanan Unit dan PdP Bahasa Melayu belum dapat disahkan.");
     inventory={groups:data.groups,items:data.items};
    }else{
     if(!kp2027ValidList(data.lessons,64)||!kp2027ValidEntries(data.items,data.lessons,64))
