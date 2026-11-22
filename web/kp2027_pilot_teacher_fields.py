@@ -140,13 +140,17 @@ def _reflection_candidates(criterion):
     """
     criterion = _clean_success_criterion(criterion)
     action, short_action = _proposed_support_action(criterion)
+    # Turn the verified "Murid <kata kerja> ..." into a natural, complete
+    # mastery sentence; never assert actual counts or compute them.
+    clause = criterion[6:] if criterion.casefold().startswith("murid ") else criterion
+    clause = clause[0].lower() + clause[1:]
     return (
         "PdP dilaksanakan mengikut perancangan. ____ orang murid menguasai "
-        "berdasarkan kriteria kejayaan: " + criterion + ". "
+        "kemahiran " + clause + ". "
         "____ orang murid belum menguasai dan akan mengikuti " + action + ".",
-        "____ orang murid menguasai kriteria kejayaan: " + criterion + ". "
+        "____ orang murid menguasai kemahiran " + clause + ". "
         "____ orang murid belum menguasai; tindakan: " + short_action + ".",
-        "____ orang murid menguasai: " + criterion + ". "
+        "____ orang menguasai kemahiran " + clause + ". "
         "____ orang belum menguasai; tindakan: " + short_action + ".",
     )
 
