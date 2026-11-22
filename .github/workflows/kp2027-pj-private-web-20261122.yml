@@ -7,6 +7,8 @@ on:
       - 'web/kp2027_pj_t1_catalog.json'
       - 'tests/test_kp2027_pj_private_web.py'
       - 'tests/test_kp2027_pj_reflection_20261122.py'
+      - 'web/kp2027_pilot_teacher_fields.py'
+      - 'tests/test_kp2027_pilot_teacher_fields_20261122.py'
       - 'tools/run_web_production.py'
       - 'web_v1_static_preview/index.html'
       - '.github/workflows/kp2027-pj-private-web-20261122.yml'
