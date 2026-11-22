@@ -1771,8 +1771,14 @@ year.addEventListener("change",async()=>{
  updateSelectionHelp("Pilih Tahun.");
  if(!targetYear)return;
  if(choice==="kp2027"){
-  updateSelectionHelp("Tahun 1 (KP Baharu) akan datang.");
-  catalogStatus.textContent="Bahan KP2027 Tahun 1 sedang disediakan. "+kp2027ScienceNotice;
+  if(targetYear!=="1")return;
+  fillSelect(subject,[
+   {value:"MATH_KP2027",label:"Matematik (KP2027)"},
+   {value:"ALAM_KP2027",label:"Alam dan Manusia (KP2027)"}
+  ],"Pilih Subjek");
+  showStep(subject,true);
+  updateSelectionHelp("Pilih subjek. Download Word/PDF hanya untuk Lesson yang telah diluluskan.");
+  catalogStatus.textContent="Bahan KP2027 subjek lain sedang disediakan. "+kp2027ScienceNotice;
   return;
  }
  if(choice==="sjkc"||choice==="sjkt"){
@@ -1826,6 +1832,17 @@ subject.addEventListener("change",async()=>{
  rphSubjectPicker.sync();
  catalogStatus.textContent="";
  if(!code)return;
+ if(curriculum.value==="kp2027"){
+  const pilotRoutes={MATH_KP2027:"/kp2027/tahun-1/matematik",ALAM_KP2027:"/kp2027/tahun-1/alam-dan-manusia"};
+  const route=pilotRoutes[code];
+  if(!route)return;
+  const link=document.createElement("a");
+  link.href=route;
+  link.textContent="Buka pilihan Lesson dan Download RPH Word/PDF";
+  catalogStatus.replaceChildren(link);
+  updateSelectionHelp("Sila log masuk. Hanya Lesson yang diluluskan dipaparkan dan kuota percubaan dikongsi.");
+  return;
+ }
  if(["sjkc","sjkt"].includes(curriculum.value)&&!canSelectRph()){
   const variants=curriculum.value==="sjkt"?sjktSubjectOptions:sjkcSubjectOptions;
   const variant=variants.find(item=>item.value===code);
