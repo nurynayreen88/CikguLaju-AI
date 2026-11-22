@@ -10,6 +10,7 @@ from __future__ import annotations
 from datetime import date
 from io import BytesIO
 import re
+import unicodedata
 
 
 class TeacherFieldError(ValueError):
@@ -69,8 +70,71 @@ def parse_teacher_fields(payload):
         "Tarikh:": date.fromisoformat(raw_date).strftime("%d/%m/%Y") if raw_date else "",
         "Masa:": f"{start} - {end}" if start else "",
         "Bil. Murid:": count,
+        "_reflection_mode": mode,
         "_reflection": reflection if mode == "manual" else "",
     }
+
+
+def _clean_success_criterion(value):
+    criterion = " ".join(str(value or "").split()).strip(" .")
+    if not 12 <= len(criterion) <= 380 or any(ord(ch) < 32 for ch in criterion):
+        raise TeacherFieldError("Kriteria kejayaan RPH tidak dapat disahkan untuk refleksi automatik.")
+    return criterion
+
+
+def _reflection_candidates(criterion):
+    """General, evidence-neutral reflection followed by the actual success criterion.
+
+    Do not invent numbers of pupils who passed or claim mastery before assessment.
+    Shorter versions preserve the *whole* criterion for tight one-page PDFs.
+    """
+    criterion = _clean_success_criterion(criterion)
+    return (
+        "PdP dilaksanakan mengikut perancangan. Pencapaian murid ditaksir "
+        "berdasarkan kriteria kejayaan, iaitu " + criterion[0].lower() + criterion[1:] + ". "
+        "Bimbingan susulan diberikan mengikut keperluan.",
+        "PdP dilaksanakan mengikut perancangan. Kriteria kejayaan: "
+        + criterion + ". Bimbingan susulan mengikut keperluan.",
+        "PdP dilaksanakan mengikut perancangan. Kriteria kejayaan: "
+        + criterion + ".",
+    )
+
+
+def _word_success_criterion(document):
+    rows = [
+        row for table in document.tables for row in table.rows
+        if len(row.cells) >= 2 and " ".join(row.cells[0].text.split()) == "Kriteria Kejayaan"
+    ]
+    if len(rows) != 1:
+        raise TeacherFieldError("Kriteria kejayaan RPH Word tidak ditemukan.")
+    return _clean_success_criterion(rows[0].cells[1].text)
+
+
+def _pdf_success_criterion(page):
+    import fitz
+    labels = [box for box in page.search_for("Kriteria Kejayaan") if box.x0 < 130]
+    next_labels = [box for box in page.search_for("EMK / Nilai") if box.x0 < 130]
+    if len(labels) != 1 or len(next_labels) != 1 or not labels[0].y0 < next_labels[0].y0:
+        raise TeacherFieldError("Kriteria kejayaan RPH PDF tidak ditemukan.")
+    region = fitz.Rect(155.0, labels[0].y0 - 8.0, page.rect.width - 35,
+                       next_labels[0].y0 - 1.0)
+    if not 15 <= region.height <= 150:
+        raise TeacherFieldError("Ruang kriteria kejayaan PDF tidak sepadan dengan templat.")
+    return _clean_success_criterion(page.get_text("text", clip=region, sort=True))
+
+
+def _pdf_safe_reflection(value):
+    translation = str.maketrans({
+        "–": "-", "—": "-", "−": "-", "’": "'", "‘": "'",
+        "“": '"', "”": '"', "•": "-", "×": "x", "≤": "<=", "≥": ">=",
+        "…": "...", "\u00a0": " ",
+    })
+    value = unicodedata.normalize("NFKC", value.translate(translation))
+    try:
+        value.encode("latin-1")
+    except UnicodeEncodeError as exc:
+        raise TeacherFieldError("Kriteria kejayaan mengandungi aksara yang belum disokong dalam PDF.") from exc
+    return value
 
 
 def _word_personalize(original, fields):
@@ -93,14 +157,17 @@ def _word_personalize(original, fields):
                 run.font.size = Pt(8)
     if len(found) != 4:
         raise TeacherFieldError("Kotak kelas, tarikh, masa atau bilangan murid tidak lengkap.")
-    if fields["_reflection"]:
-        reflection_rows = [
-            row for table in document.tables for row in table.rows
-            if len(row.cells) >= 2 and "Refleksi" in row.cells[0].text
-        ]
-        if len(reflection_rows) != 1:
-            raise TeacherFieldError("Kotak refleksi Word tidak ditemukan.")
-        reflection_rows[0].cells[1].text = fields["_reflection"]
+    reflection_rows = [
+        row for table in document.tables for row in table.rows
+        if len(row.cells) >= 2 and "Refleksi" in row.cells[0].text
+    ]
+    if len(reflection_rows) != 1:
+        raise TeacherFieldError("Kotak refleksi Word tidak ditemukan.")
+    reflection = (
+        fields["_reflection"] if fields["_reflection_mode"] == "manual"
+        else _reflection_candidates(_word_success_criterion(document))[0]
+    )
+    reflection_rows[0].cells[1].text = reflection
     result = BytesIO()
     document.save(result)
     return result.getvalue()
@@ -136,38 +203,51 @@ def _pdf_personalize(original, fields):
             if size < 5.5:
                 raise TeacherFieldError("Nama kelas terlalu panjang untuk ruang PDF; gunakan nama yang lebih ringkas.")
             page.insert_text((left, anchor.y1 - 2), value, fontname="helv", fontsize=size, color=(0, 0, 0))
-        if fields["_reflection"]:
-            anchors = page.search_for("Refleksi")
-            footers = page.search_for("Rujukan")
-            if len(anchors) != 1 or len(footers) != 1:
-                raise TeacherFieldError("Ruang refleksi PDF tidak ditemukan.")
-            top = anchors[0].y0 - 1.0
-            bottom = footers[0].y0 - 4
-            region = fitz.Rect(155.9, top, page.rect.width - 39, bottom)
-            if region.height < 24 or region.height > 110:
-                raise TeacherFieldError("Saiz kotak refleksi PDF tidak dijangka.")
-            try:
-                fields["_reflection"].encode("latin-1")
-            except UnicodeEncodeError as exc:
-                raise TeacherFieldError("Refleksi mengandungi aksara yang belum disokong dalam PDF.") from exc
-            # Check the reflection fits BEFORE replacing any original text.
-            fits = False
-            for size in (9.0, 8.3, 7.6, 7.0, 6.4):
+        anchors = [a for a in page.search_for("Refleksi") if a.x0 < 130 and a.y0 > 500]
+        if len(anchors) != 1:
+            raise TeacherFieldError("Ruang refleksi PDF tidak ditemukan.")
+        # A page may contain a second 'Refleksi' in the original instruction
+        # and a second 'Rujukan' in the footer; only the left-column labels
+        # around the reserved reflection row are reliable anchors.
+        footers = [a for a in page.search_for("Rujukan")
+                   if a.x0 < 100 and a.y0 > anchors[0].y1]
+        if not footers:
+            raise TeacherFieldError("Sempadan ruang refleksi PDF tidak ditemukan.")
+        top = anchors[0].y0 - 1.0
+        bottom = min(a.y0 for a in footers) - 4.0
+        region = fitz.Rect(155.9, top, page.rect.width - 39, bottom)
+        if region.height < 24 or region.height > 110:
+            raise TeacherFieldError("Saiz kotak refleksi PDF tidak dijangka.")
+        candidates = (
+            (fields["_reflection"],)
+            if fields["_reflection_mode"] == "manual"
+            else _reflection_candidates(_pdf_success_criterion(page))
+        )
+        # Check ALL wording against the unchanged 1-page layout before
+        # clearing any old text. Prefer the full general reflection.
+        chosen = None
+        size = 0.0
+        for sentence in candidates:
+            safe_sentence = _pdf_safe_reflection(sentence)
+            for font_size in (9.0, 8.3, 7.6, 7.0, 6.4):
                 scratch = fitz.open()
                 scratch_page = scratch.new_page(width=page.rect.width, height=page.rect.height)
-                result = scratch_page.insert_textbox(region, fields["_reflection"], fontname="helv",
-                                                      fontsize=size, lineheight=1.0)
+                result = scratch_page.insert_textbox(region, safe_sentence, fontname="helv",
+                                                      fontsize=font_size, lineheight=1.0)
                 scratch.close()
                 if result >= 0:
-                    fits = True
+                    chosen = safe_sentence
+                    size = font_size
                     break
-            if not fits:
-                raise TeacherFieldError("Refleksi terlalu panjang untuk kotak PDF. Ringkaskan atau gunakan Word.")
-            page.add_redact_annot(region, fill=(1, 1, 1), cross_out=False)
-            page.apply_redactions(images=0, graphics=0, text=0)
-            if page.insert_textbox(region, fields["_reflection"], fontname="helv",
-                                   fontsize=size, lineheight=1.0) < 0:
-                raise TeacherFieldError("Refleksi PDF tidak dapat dimuatkan dengan selamat.")
+            if chosen is not None:
+                break
+        if chosen is None:
+            raise TeacherFieldError("Refleksi terlalu panjang untuk kotak PDF. Ringkaskan atau gunakan Word.")
+        page.add_redact_annot(region, fill=(1, 1, 1), cross_out=False)
+        page.apply_redactions(images=0, graphics=0, text=0)
+        if page.insert_textbox(region, chosen, fontname="helv",
+                               fontsize=size, lineheight=1.0) < 0:
+            raise TeacherFieldError("Refleksi PDF tidak dapat dimuatkan dengan selamat.")
         data = document.tobytes(garbage=4, deflate=True)
         if not data.startswith(b"%PDF-"):
             raise TeacherFieldError("Dokumen PDF peribadi tidak dapat disahkan.")
@@ -180,10 +260,8 @@ def _pdf_personalize(original, fields):
 
 
 def personalize_approved_rph(original, fmt, payload):
-    """Return immutable original when fields empty; otherwise a customized copy."""
+    """Return a personalized copy; automatic reflection uses the real success criterion."""
     fields = parse_teacher_fields(payload)
-    if not any(fields.values()):
-        return original
     try:
         if fmt == "word":
             return _word_personalize(original, fields)
