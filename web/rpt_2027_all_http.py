@@ -12,10 +12,12 @@ import json
 import hmac
 import re
 from functools import lru_cache
+from io import BytesIO
 from pathlib import Path
 from flask import Blueprint, jsonify, send_file, request
 from primary_language_subjects import PRIMARY_LANGUAGE_SUBJECTS
 from web import native_telegram_ppki_client as ppki
+from web import kp2027_year1_rpt_bundle as kp_rpt
 from web.english_rpt_2027_http import _account, _has_paid_access, integrated_pdf_path
 from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
 from rpt_2027.matematik import sk_documents as matematik_sk
@@ -203,15 +205,29 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
             # Tahun 1 follows the KP2027 curriculum, a separate source from
             # the old KSSR/2017 PDF. Explicit non-downloadable placeholder.
             if year==1:
-                entries.append({
-                    "year":1,
-                    "pdf_ready":False,
-                    "status":YEAR1_PREVIEW_STATUS,
-                    "download_enabled":False,
-                    "note":"RPT Tahun 1 KP2027 masih disediakan. PDF belum diterbitkan.",
-                    "is_draft":True,
-                    "coming_soon":True,
-                })
+                yr_ready = code in kp_rpt.SUBJECTS and kp_rpt.ready()
+                if yr_ready:
+                    available += 1
+                    entries.append({
+                        "year": 1, "year_label": "Tahun 1 (KP2027)",
+                        "pdf_ready": True, "docx_ready": True,
+                        "status": "RPT SEMAKAN PELAKSANAAN",
+                        "download_enabled": bool(allowed),
+                        "note": ("Kumpulan A/B mempunyai agihan tarikh tersendiri. "
+                                 "Pernyataan SP dan rujukan DK disediakan. "
+                                 "Tarikh sebenar dan jadual sekolah perlu disahkan."),
+                        "is_draft": True, "kp2027_groups": ["A","B"],
+                    })
+                else:
+                    entries.append({
+                        "year":1,
+                        "pdf_ready":False,
+                        "status":YEAR1_PREVIEW_STATUS,
+                        "download_enabled":False,
+                        "note":"RPT Tahun 1 KP2027 masih disediakan. PDF belum diterbitkan.",
+                        "is_draft":True,
+                        "coming_soon":True,
+                    })
                 continue
             integrated, digest = _integrated_english_file(code, year, root)
             if integrated is not None:
@@ -254,6 +270,20 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
                 "is_draft":current is not None or entry_status!="TERSEDIA",
             })
         subjects.append({"code":code,"label":label,"years":entries})
+    if kp_rpt.ready():
+        subjects.append({
+            "code": "alam_dan_manusia", "label": "Alam dan Manusia",
+            "years": [{
+                "year": 1, "year_label": "Tahun 1 (KP2027)",
+                "pdf_ready": True, "docx_ready": True,
+                "status": "RPT SEMAKAN PELAKSANAAN",
+                "download_enabled": bool(allowed),
+                "note": ("Kumpulan A/B. 93 PdP berdasarkan agihan projek. "
+                         "Sahkan peruntukan masa dan takwim sekolah sebelum mengguna."),
+                "is_draft": True, "kp2027_groups": ["A","B"],
+            }],
+        })
+        available += 1
     dlp_count = 0
     for code, label in DLP_SUBJECTS.items():
         entries = [
@@ -325,11 +355,11 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
         "allowed":bool(allowed),
         "personalization_allowed":bool(personalization_allowed),
         "subjects":subjects,
-        "total_rpt":56+dlp_count+sjk_count,
+        "total_rpt":56+dlp_count+sjk_count+(3 if kp_rpt.ready() else 0),
         "total_display_choices":sum(len(item["years"]) for item in subjects),
-        "year1_coming_soon":10,
+        "year1_coming_soon": 8 if kp_rpt.ready() else 10,
         "available_rpt":available+dlp_count+sjk_count+len(dpk_entries),
-        "note":"Tahun 1 KP2027 belum boleh dimuat turun. RPT SK dan DLP tersedia kepada pengguna log masuk. RPT SJK dan cetakan berprofil memerlukan akses berbayar aktif.",
+        "note":"RPT KP2027 Tahun 1 bagi Matematik, Alam dan Manusia serta BM SK tersedia untuk semakan Kumpulan A/B. Jadual sekolah perlu disahkan. RPT SJK dan cetakan berprofil memerlukan akses berbayar aktif.",
     }
 
 def create_all_rpt_blueprint(*,root=ROOT):
@@ -385,6 +415,27 @@ def create_all_rpt_blueprint(*,root=ROOT):
         if ppki_years:
             data["subjects"].append({"code": ppki.RPT_CODE, "label": "Pengurusan Kehidupan", "years": ppki_years})
         return jsonify(data)
+
+    @bp.get("/api/rpt/2027/kp2027/tahun-1/<subject>/<group>.<fmt>")
+    def download_kp2027_year1(subject, group, fmt):
+        account, error = _account()
+        if error is not None:
+            return error
+        if subject not in kp_rpt.SUBJECTS or group not in kp_rpt.GROUPS or fmt not in kp_rpt.FORMATS:
+            return jsonify({"error": "Pilihan RPT KP2027 tidak sah."}), 404
+        try:
+            payload, filename, digest = kp_rpt.document(subject, group, fmt)
+        except kp_rpt.BundleUnavailable:
+            return jsonify({"error": "RPT KP2027 belum disahkan pada pelayan."}), 503
+        mime = ("application/pdf" if fmt == "pdf" else
+                "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
+        response = send_file(BytesIO(payload), mimetype=mime, as_attachment=True,
+                             download_name=filename, conditional=False)
+        response.headers["X-RPT-Source-SHA256"] = digest
+        response.headers["X-RPT-Personalization-Allowed"] = "0"
+        response.headers["X-RPT-Curriculum"] = "KP2027-Year1"
+        response.headers["X-RPT-QA-Status"] = "SEMAKAN-PELAKSANAAN"
+        return response
 
     @bp.get("/api/rpt/2027/sjkc/<slug>/<int:year>.<fmt>", defaults={"school": "sjkc"})
     @bp.get("/api/rpt/2027/sjkt/<slug>/<int:year>.<fmt>", defaults={"school": "sjkt"})
