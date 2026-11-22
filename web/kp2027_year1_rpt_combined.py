@@ -10,7 +10,7 @@ from zipfile import ZipFile, BadZipFile
 
 BUNDLE=(Path(__file__).resolve().parents[1]/"rpt_2027"/"kp2027"/
         "year1_rpt_bm_math_alam_gabungan_ab_kulit_asal_20261122.zip")
-BUNDLE_SHA="11bd6c81271cd6725bbaed30cdf0aaf38757846e22b2465ba4a8b5875d40abe1"
+BUNDLE_SHA="859a78af79f2741c9caa074cab36fbb16d376028178b77fb2aaf993a297f2ff9"
 SUBJECTS={"matematik":"MATH","alam_dan_manusia":"ALAM","bahasa_melayu":"BM_SK"}
 FORMATS={"docx":"WORD","pdf":"PDF"}
 COUNTS={"matematik":(125,124),"alam_dan_manusia":(93,93),

@@ -63,7 +63,7 @@ class TestKP2027ProfileCover(unittest.TestCase):
                         self.assertIn('Disediakan oleh: '+TEACHER,doc.paragraphs[10].text)
                         self.assertIn('NEGERI: Johor',doc.paragraphs[7].text)
                         self.assertEqual(doc.paragraphs[2].text,'RPT 2027')
-                        self.assertEqual(len(doc.tables[0].columns),7)
+                        self.assertEqual(len(doc.tables[0].columns),5)
                         with ZipFile(io.BytesIO(out)) as z:
                             self.assertTrue(any(x.startswith('word/media/image') for x in z.namelist()))
                         self.assertIn('Kumpulan A',doc.paragraphs[12].text)

@@ -31,9 +31,9 @@ class CombinedRPTQA(unittest.TestCase):
                     self.assertIn("_KUMPULAN_AB_GABUNGAN_2027.",name)
 
     def test_three_word_files_each_preserve_both_group_pdp_sequences(self):
-        columns=("Minggu / tarikh","Tema / tajuk","SK / SP / rujukan",
-                 "Aktiviti PdP","PBD / pentaksiran","Acara / status / sumber",
-                 "Catatan / pindaan")
+        columns=("MINGGU / KUMPULAN","TEMA / TAJUK",
+                 "STANDARD KANDUNGAN & PEMBELAJARAN","PdP / AKTIVITI / PBD",
+                 "CATATAN / RUJUKAN")
         for subject in r.SUBJECTS:
             with self.subTest(subject=subject):
                 content,_,_=r.document(subject,"docx")
@@ -52,9 +52,9 @@ class CombinedRPTQA(unittest.TestCase):
                     cells=tr.findall("./w:tc",NS)
                     text=[" ".join(x.text or "" for x in cell.findall(".//w:t",NS))
                           for cell in cells]
-                    if len(text)<4 or text[0] not in ("A","B"):continue
+                    if len(text)<4 or text[0] not in ("KUMPULAN A","KUMPULAN B"):continue
                     match=re.search(r"PdP\s+(\d{3})",text[3])
-                    if match:pdp[text[0]].append(int(match.group(1)))
+                    if match:pdp[text[0][-1]].append(int(match.group(1)))
                 self.assertEqual(pdp["A"],list(range(1,r.COUNTS[subject][0]+1)))
                 self.assertEqual(pdp["B"],list(range(1,r.COUNTS[subject][1]+1)))
 
