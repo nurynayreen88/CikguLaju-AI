@@ -72,7 +72,7 @@ def personalize_docx(original, identity):
     if not (school or teacher or state or logo):
         return original
     doc = Document(BytesIO(original))
-    if len(doc.paragraphs)<14 or not doc.tables or len(doc.tables[0].columns)!=7:
+    if len(doc.paragraphs)<14 or not doc.tables or len(doc.tables[0].columns)!=5:
         raise ValueError("Unexpected classic RPT cover")
     markers={4:"NAMA SEKOLAH:", 5:"SUBJEK:", 7:"KUMPULAN:", 8:"NAMA GURU:",10:"Disediakan oleh:"}
     for i, label in markers.items():
