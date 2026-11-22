@@ -1,6 +1,6 @@
 """Immutable, source-checked KP2027 Tahun 1 RPT A/B downloads.
 
-The ZIP is the CikguLaju 22 Nov 2026 QA bundle (3 subjects x 2 groups x
+The ZIP is the standardized CikguLaju 22 Nov 2026 QA bundle (3 subjects x 2 groups x
 Word/PDF). Files remain SEMAKAN pelaksanaan, not a claim that a school's
 timetable or PdP distribution is final. No paths come from user input.
 """
@@ -14,8 +14,8 @@ from pathlib import Path
 from zipfile import ZipFile, BadZipFile
 
 BUNDLE = (Path(__file__).resolve().parents[1] / "rpt_2027" / "kp2027"
-          / "year1_rpt_bm_math_alam_20261122.zip")
-BUNDLE_SHA = "eaeba933830747ff1569f433a06e1de1705fc88a658e9bd6ef5633751361936e"
+          / "year1_rpt_bm_math_alam_20261122_umum.zip")
+BUNDLE_SHA = "0a25992db84d5b24fe5bc247af73d1feb4b98dd262b854827c583ca9e8853a41"
 SUBJECTS = {"matematik": "MATH", "bahasa_melayu": "BM_SK", "alam_dan_manusia": "ALAM"}
 GROUPS = ("A", "B")
 FORMATS = {"pdf": "PDF", "docx": "WORD"}
@@ -32,7 +32,7 @@ def _member(subject, group, fmt):
     if subject not in SUBJECTS or group not in GROUPS or fmt not in FORMATS:
         raise BundleUnavailable("Pilihan RPT KP2027 tidak sah")
     basename = ("CIKGULAJU_RPT_KP2027_T1_" + SUBJECTS[subject]
-                + "_KUMPULAN_" + group + "_PDP_LENGKAP_SEMAKAN." + fmt)
+                + "_KUMPULAN_" + group + "_FORMAT_UMUM_SEMAKAN." + fmt)
     return f"{FORMATS[fmt]}/{basename}", basename
 
 
