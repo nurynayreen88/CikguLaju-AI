@@ -58,3 +58,10 @@
 - RPT: `audits/kp2027_bm_sjk_rpt_2027_ab_calendar_unallocated_20261123.json` memetakan 52 urutan PdP bagi setiap Kumpulan A/B berdasarkan tarikh persekolahan 2027. **Tarikh setiap PdP dikosongkan** kerana jadual waktu sekolah, cuti negeri/perayaan dan peruntukan minimum tahunan belum disahkan. Ini **bukan RPT tahunan final**. Sumber: portal takwim rasmi KPM dan semakan silang kalendar umum.
 - RPT Word/PDF Kumpulan A/B QA menggunakan `tools/kp2027_bmsjk_rpt_ab_qa.py`, empat dokumen. Keseluruhan pakej QA terdiri daripada 104 RPH + 4 RPT = 108 dokumen; belum disiar di Web dan tidak menggunakan kuota pengguna.
 - Baki gerbang penerbitan: lengkapkan peruntukan penuh setahun, kalendar per subjek dan sekolah, semakan pedagogi setiap PdP, audit visual semua Word/PDF dan ujian pengguna log masuk/kuota/muat turun terus. Tiada perubahan KSSR, Pendidikan Islam v2, Telegram, DB atau pembayaran.
+
+## 23 November 2026 — Baiki RPT Bahasa Arab KSSR Tahun 2–6: garis pemisah lajur PDF
+
+- Audit visual sumber lima RPT PDF dalam `rpt_2027/web_2027_pdfs/bahasa_arab/` menunjukkan baris hanya dibingkaikan luar; garisan tegak dalaman lajur Catatan/Bahan, SP, SK dan Unit/Tajuk tidak dilukis. Web menghantar PDF sumber secara terus, maka CSS Web bukan puncanya.
+- `scripts/repair_rpt2027_arabic_grid_20261123.py` memulihkan pemisah vektor asal pada semua baris dan kepala jadual. Audit CI cadangan: **1,134 garisan** ditambah pada lima RPT: Tahun 2=230, Tahun 3=230, Tahun 4=217, Tahun 5=227, Tahun 6=230. Warna garis lembut; susunan RTL kekal.
+- Semua teks PDF dan 298 pautan asal DSKP (60+60+58+60+60) disemak pariti tepat. Pixel muka depan/logo/ruang profil dikekalkan. 51 fail PDF RPT subjek lain tidak berubah. Fail masih **DRAF**, bukan pengesahan SK/SP atau peruntukan PdP akhir.
+- Bukti pemeriksaan: `.github/workflows/rpt2027-arabic-grid-y2-y6-20261123.yml`, `tests/test_rpt2027_arabic_grid_y2_y6_20261123.py`, `audits/rpt2027_bahasa_arab_grid_20261123.json`. Periksa CI, merge PR dan Render LIVE; paparan muat turun autentik pengguna memerlukan pemeriksaan berasingan.
