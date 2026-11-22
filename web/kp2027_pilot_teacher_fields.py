@@ -227,7 +227,7 @@ def _word_personalize(original, fields):
     # UI-only mode belongs on the Web form, not the printed RPH.
     # Preserve the label's existing run typography and table geometry.
     label_cell = reflection_rows[0].cells[0]
-    if re.fullmatch(r"Refleksi\\s*\\(\\s*Auto(?:matik)?\\s*/\\s*Manual\\s*\\)",
+    if re.fullmatch(r"Refleksi\s*\(\s*Auto(?:matik)?\s*/\s*Manual\s*\)",
                     label_cell.text.strip(), flags=re.IGNORECASE):
         runs = [run for paragraph in label_cell.paragraphs for run in paragraph.runs]
         if not runs:
