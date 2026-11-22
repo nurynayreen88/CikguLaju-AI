@@ -110,6 +110,7 @@ function mockSelect(name){
 const curriculum=mockSelect("curriculum"),year=mockSelect("year"),subject=mockSelect("subject"),unit=mockSelect("unit");
 const lesson=mockSelect("lesson"),theme=mockSelect("theme"),topic=mockSelect("topic"),component=mockSelect("component");
 const catalogueCalls=[];
+const catalogStatus={textContent:"",children:[],replaceChildren(...items){this.children=items;this.textContent=items.map(x=>x.textContent||"").join(" ");}};
 const makeNode=()=>({textContent:"",children:[],append(...items){this.children.push(...items);},replaceChildren(){this.children=[];}});
 assert.doesNotMatch(source,/id="dlp-review-data"|id="dlp-rph-preview"/);
 const variantRpt={hidden:true,dataset:{}}, materials={hidden:true,disabled:true};
@@ -131,7 +132,7 @@ function dlpId(science,n){
  return `DLP-${science?"SCI":n==="4"?"MAT":"MATH"}-Y${n}-L01`;
 }
 const ctx={
- curriculum,year,subject,unit,lesson,theme,topic,component,catalogStatus:{textContent:""},
+ curriculum,year,subject,unit,lesson,theme,topic,component,catalogStatus,
  window:{cikgulajuSubjectVariants:variants},rphSubjectPicker:{sync(){}},
  document:{createElement:makeNode,createTextNode:text=>({textContent:text}),
   getElementById:id=>({"show-materials":materials,"materials-access-status":materialAccessNotice})[id]??variantRpt},
@@ -187,11 +188,22 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  assert.deepEqual(year.options.map(x=>x.label),["Pilih Tahun","Tahun 1 (KP Baharu)"]);
  year.value="1";
  await listeners["year.change"]();
- assert.equal(subject.disabled,true);
- assert.equal(subject.hidden,true);
- assert.match(ctx.help,/KP Baharu.*Akan Datang/i);
+ assert.equal(subject.disabled,false);
+ assert.equal(subject.hidden,false);
+ assert.deepEqual(subject.options.map(x=>x.value),["","MATH_KP2027","ALAM_KP2027"]);
+ assert.match(ctx.help,/Download Word\/PDF/i);
  assert.match(ctx.catalogStatus.textContent,/Alam dan Manusia/);
  assert.deepEqual(catalogueCalls,[]);
+ subject.value="MATH_KP2027";
+ await listeners["subject.change"]();
+ assert.equal(catalogStatus.children.length,1);
+ assert.equal(catalogStatus.children[0].href,"/kp2027/tahun-1/matematik");
+ assert.equal(unit.hidden,true);
+ assert.equal(lesson.hidden,true);
+ subject.value="ALAM_KP2027";
+ await listeners["subject.change"]();
+ assert.equal(catalogStatus.children[0].href,"/kp2027/tahun-1/alam-dan-manusia");
+ assert.equal(catalogueCalls.length,0);
  curriculum.value="sjkc";
  listeners["curriculum.change"]();
  for(const yearNumber of ["2","3"]){
@@ -310,7 +322,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  await listeners["year.change"]();
  resolveOldSubjects([{value:"MATH",label:"Matematik"}]);
  await pending;
- assert.deepEqual(subject.options.map(x=>x.value),[""]);
+ assert.deepEqual(subject.options.map(x=>x.value),["","MATH_KP2027","ALAM_KP2027"]);
  assert.match(ctx.catalogStatus.textContent,/Alam dan Manusia/);
  console.log("WEB_PLANNED_MENUS: PASS (curriculum first, scoped years and subjects, stale request discarded)");
 })().catch(error=>{console.error(error);process.exitCode=1;});

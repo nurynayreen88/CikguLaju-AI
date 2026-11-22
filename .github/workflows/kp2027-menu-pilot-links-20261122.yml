@@ -1,0 +1,26 @@
+name: KP2027 Year1 approved pilot menu navigation QA
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'web_v1_static_preview/index.html'
+      - 'web/kp2027_alam_private_web.py'
+      - 'tests/test_kp2027_menu_pilot_downloads_20261122.py'
+      - '.github/workflows/kp2027-menu-pilot-links-20261122.yml'
+  push:
+    branches: [fix/kp2027-menu-approved-downloads-20261122]
+permissions:
+  contents: read
+jobs:
+  menu-and-secure-routes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check only approved KP2027 private link selectors
+        run: python -m unittest discover -s tests -p 'test_kp2027_menu_pilot_downloads_20261122.py' -v
+      - name: Compile unchanged gated private routes
+        run: python -m py_compile web/kp2027_math_canary_web.py web/kp2027_alam_private_web.py tools/run_web_production.py
