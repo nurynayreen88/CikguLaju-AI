@@ -31,7 +31,7 @@ def word_fixture(criterion=CRITERION, reflection="Catatan refleksi asal."):
     b=BytesIO();d.save(b);return b.getvalue()
 
 
-def pdf_fixture(criterion=CRITERION):
+def pdf_fixture(criterion=CRITERION, reflection_label="Refleksi"):
     doc=fitz.open()
     page=doc.new_page(width=595,height=842)
     # Draw a real fixed-grid RPH: 2-column criterion and reflection cells.
@@ -43,7 +43,7 @@ def pdf_fixture(criterion=CRITERION):
     page.insert_text((180,180),criterion,fontsize=9)
     page.insert_text((45,258),"Aktiviti Utama",fontsize=10)
     page.insert_text((180,258),"Murid membezakan dua objek dengan selamat.",fontsize=9)
-    page.insert_text((45,729),"Refleksi",fontsize=10)
+    page.insert_text((45,729),reflection_label,fontsize=10)
     page.insert_text((180,729),"Catatan refleksi asal.",fontsize=9)
     data=doc.tobytes();doc.close();return data
 
@@ -173,6 +173,20 @@ class TestUniversalReflection(unittest.TestCase):
         self.assertIn(CRITERION,text)
         self.assertNotIn("Catatan refleksi asal",text)
         doc.close()
+
+    def test_verified_kssr_pdf_does_not_print_auto_manual_suffix(self):
+        source = pdf_fixture(reflection_label="Refleksi (Auto / Manual)")
+        result = personalize_verified_document(BytesIO(source), "pdf", {
+            "subject": "SCIENCE", "source": "telegram-native-pdp-sequence", "teacher": {}
+        })
+        with fitz.open(stream=result.getvalue(), filetype="pdf") as document:
+            page = document[0]
+            text = page.get_text()
+            self.assertIn("Refleksi", text)
+            self.assertNotIn("(Auto / Manual)", text)
+            self.assertIn("Kriteria Kejayaan", text)
+            self.assertIn("Aktiviti Utama", text)
+            self.assertEqual(text.count("____"), 2)
 
     def test_manual_and_historical_pi_v2_untouched(self):
         source=word_fixture()
