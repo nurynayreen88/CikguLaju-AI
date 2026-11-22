@@ -204,7 +204,7 @@ def _word_printable_reflection_label(cell):
     label = " ".join(cell.text.split())
     if label == "Refleksi":
         return
-    if not re.fullmatch(r"Refleksi\\s*\\(\\s*Auto(?:matik)?\\s*/\\s*Manual\\s*\\)", label, re.I):
+    if not re.fullmatch(r"Refleksi\s*\(\s*Auto(?:matik)?\s*/\s*Manual\s*\)", label, re.I):
         raise TeacherFieldError("Label refleksi Word tidak sepadan dengan templat.")
     runs = [run for paragraph in cell.paragraphs for run in paragraph.runs]
     if not runs:
