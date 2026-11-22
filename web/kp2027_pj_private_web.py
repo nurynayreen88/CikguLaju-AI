@@ -139,7 +139,10 @@ def private_document(config,group,lesson,fmt,opener=None):
 
 def personalize_pj(original, fmt, data):
     """Only populate user fields, never replace subject or standards."""
-    from web.kp2027_pilot_teacher_fields import parse_teacher_fields, TeacherFieldError
+    from web.kp2027_pilot_teacher_fields import (
+        parse_teacher_fields, TeacherFieldError, _reflection_candidates,
+        _word_success_criterion, _pdf_success_criterion, _pdf_safe_reflection,
+    )
     fields=parse_teacher_fields(data)
     labels=('Kelas:','Tarikh:','Masa:','Bil. Murid:')
     if fmt=='word':
@@ -156,7 +159,7 @@ def personalize_pj(original, fmt, data):
             for run in p.runs:run.font.size=Pt(7.6)
         if 'Refleksi' not in d.tables[0].cell(14,0).text:raise TeacherFieldError('Ruang refleksi tiada')
         refl=(fields['_reflection'] if fields['_reflection_mode']=='manual' else
-             'Pencapaian berdasarkan kriteria kejayaan:    murid mencapai;    murid memerlukan bimbingan. Tindakan susulan: latihan berpandu dan pengukuhan.')
+              _reflection_candidates(_word_success_criterion(d))[0])
         reflection=d.tables[0].cell(14,1);reflection.text=refl
         for p in reflection.paragraphs:
             for run in p.runs:run.font.size=Pt(7.6)
@@ -183,21 +186,24 @@ def personalize_pj(original, fmt, data):
         footers=[r for r in page.search_for('Rujukan DK rasmi') if r.x0<130 and r.y0>reflection.y1]
         if len(footers)!=1:raise TeacherFieldError('Ruang penutup PDF tidak sah')
         area=fitz.Rect(147,reflection.y0-2,565,footers[0].y0-4)
-        reply=(fields['_reflection'] if fields['_reflection_mode']=='manual' else
-               'Kriteria kejayaan:    murid mencapai;    murid memerlukan bimbingan. Tindakan susulan: latihan berpandu dan pengukuhan.')
-        if not reply.isascii():
-            raise TeacherFieldError('Refleksi PDF memerlukan aksara asas; gunakan Word untuk Jawi atau aksara khas')
-        fitted=False
-        for size in (7.8,7.2,6.6,6.0,5.5):
-            scratch=fitz.open();sp=scratch.new_page(width=595.3,height=841.89)
-            val=sp.insert_textbox(area,reply,fontname='helv',fontsize=size,lineheight=1.0)
-            scratch.close()
-            if val>=0:
-                fitted=True;break
-        if not fitted:raise TeacherFieldError('Refleksi terlalu panjang untuk PDF')
+        candidates=((fields['_reflection'],) if fields['_reflection_mode']=='manual'
+                    else _reflection_candidates(_pdf_success_criterion(page)))
+        chosen=None
+        font_size=None
+        for candidate in candidates:
+            safe=_pdf_safe_reflection(candidate)
+            for size in (8.1,7.7,7.2,6.7,6.2,5.8):
+                scratch=fitz.open()
+                sp=scratch.new_page(width=page.rect.width,height=page.rect.height)
+                val=sp.insert_textbox(area,safe,fontname='helv',fontsize=size,lineheight=1.0)
+                scratch.close()
+                if val>=0:
+                    chosen=safe; font_size=size;break
+            if chosen is not None:break
+        if chosen is None:raise TeacherFieldError('Refleksi terlalu panjang untuk PDF; ringkaskan atau gunakan Word.')
         page.add_redact_annot(area,fill=(1,1,1),cross_out=False)
         page.apply_redactions(images=0,graphics=0,text=0)
-        if page.insert_textbox(area,reply,fontname='helv',fontsize=size,lineheight=1.0)<0:
+        if page.insert_textbox(area,chosen,fontname='helv',fontsize=font_size,lineheight=1.0)<0:
             raise TeacherFieldError('Refleksi tidak muat')
         return d.tobytes(garbage=4,deflate=True)
     finally:
