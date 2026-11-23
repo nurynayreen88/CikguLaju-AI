@@ -1,3 +1,4 @@
+# QA retrigger: sample RPH from current main generator, 2026-11-23 (non-production).
 name: Native KSSR RPH — source-specific reflection and A4 QA
 on:
   pull_request:
