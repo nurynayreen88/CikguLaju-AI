@@ -106,7 +106,10 @@ def _make_banner(body, first_table, title, rows, fill, *, rtl_jawi=False):
     leftpr = _cell_fill(left, fill)
     leftpr.find(W + "tcW").set(W + "w", "6900")
     right = _node(table_row, "tc")
-    rightpr = _cell_fill(right, fill)
+    # Match the approved BM SK KP2027 Tahun 1 master: large lesson identity
+    # pastel on the left, small teacher panel neutral/light on the right.
+    # Do not create/remove any source field or change its value.
+    rightpr = _cell_fill(right, "F5F7FA")
     rightpr.find(W + "tcW").set(W + "w", "3730")
     title.getparent().remove(title)
     left.append(title)
