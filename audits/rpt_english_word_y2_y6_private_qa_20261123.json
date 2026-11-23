@@ -1,0 +1,82 @@
+{
+  "id": "rpt_english_2027_native_word_qa_private_20261123",
+  "date": "2026-11-23",
+  "status": "QA_HOLD_NOT_READY_NOT_WEB_PUBLISHED",
+  "academic_final": false,
+  "scope": {
+    "subject": "english",
+    "school": "SK",
+    "years": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "total_lessons": 800,
+    "lesson_each_year": 160,
+    "week_dates_per_year": 40,
+    "source": "Verified production RPT English Year 2–6 PDFs plus original editable Word"
+  },
+  "corrections": {
+    "Y2-Y6": {
+      "date_cells": 800,
+      "kind": "Kumpulan A/B weekly dates aligned to exact published PDFs, without touching lesson content"
+    },
+    "teacher_choice_topics": {
+      "count": 10,
+      "by_year": {
+        "4": 2,
+        "5": 2,
+        "6": 6
+      },
+      "kind": "Exact titles from production PDF; preserve teacher choice and academic hold"
+    },
+    "Y3": {
+      "main_and_complementary_cs_ls_descriptions": 160,
+      "format": "40-page landscape Word, 4 lessons per page; main and complementary CS/LS content copied from published RPT English Year 3 PDF",
+      "no_inferred_standards": true
+    }
+  },
+  "quality_checks": {
+    "original_lesson_order": [
+      1,
+      160
+    ],
+    "native_word_only": true,
+    "original_pdf_bytes_unchanged": true,
+    "year3_pdf_word_unit_focus_parity": 160,
+    "year3_word_40_week_tables": true,
+    "year3_word_render_pages": 40,
+    "year3_pages_landscape": true,
+    "year3_word_sha256": "f1d0e90726b904015ab56a1ae5352c196894ce2f9b2b7c8f2510fb234b65d5fc",
+    "year3_source_pdf_sha256": "149a59ebe35db6a980b03fdda07bf13d7f131c8cdb9b9a0a3622001e0e2a6b0e",
+    "date_qa_word_zip_sha256": "2f7644363dd1b04a3f121a73cb5729eeeceb2bb989e7a095b3a7a0c6a5ecf48e",
+    "year3_cs_ls_qa_zip_sha256": "f2155a1cf2b953c80bfa8ef4a99687e53ffd1d260654469c442d4f911fc5514c"
+  },
+  "known_academic_holds": [
+    "Y3 source PDF standard descriptions are copied into Word, but formal teacher approval is still required; content QA does not automatically establish academic FINAL.",
+    "Y4: 10 teacher-chosen/non-textbook lesson standards require source or teacher approval.",
+    "Y5: 9 teacher-chosen/non-textbook lesson standards require source or teacher approval.",
+    "Y6: 14 teacher-chosen/non-textbook lesson standards require source or teacher approval.",
+    "Y6 Language Awareness Lessons 96/112 have focus-label granularity differences between older Word and PDF; preserve PDF and hold review.",
+    "Remaining workbook page references and teacher-selected resources are not filled by inference."
+  ],
+  "storage": {
+    "private_supabase_bucket_exists": true,
+    "private_bucket_name": "cikgulaju-materials",
+    "english_rpt_private_objects_uploaded": false,
+    "current_qa_location": "Google Drive CikguLaju/RPT (not Web downloads)",
+    "public_repository_risk": "CikguLaju-AI visibility PUBLIC; never commit new premium English Word binary to public GitHub",
+    "current_bm_word_risk": "BM SK T2-T6 Word was previously committed to public GitHub, and paid-only Web gates do not remove direct GitHub/history access. Requires separate private-storage migration, after which public copies/history need remediation.",
+    "user_download": "DO NOT ENABLE UNTIL teacher approval AND private authenticated delivery AND exact SHA-256 readback"
+  },
+  "no_change": [
+    "production RPT PDFs",
+    "Web user download endpoint",
+    "user subscription rights",
+    "RPH credits",
+    "payments",
+    "Supabase database"
+  ]
+}
