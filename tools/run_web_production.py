@@ -336,3 +336,16 @@ except Exception as _sains_web_network_smoke_exc:
     WEB_SAINS_NATIVE_SMOKE_RESULT = None
     print("CIKGULAJU_SAINS_WEB_REAL_DOWNLOAD_SMOKE_UNAVAILABLE",
           type(_sains_web_network_smoke_exc).__name__,flush=True)
+
+
+# PRIVATE RPT Word: deliberately OFF by default; requires TWO explicit Render
+# env flags. No public route, teacher action, credit debit or billing change.
+# Operational migration is allowed to fail without taking the Web offline.
+try:
+    from tools.stage_private_rpt_word_once import stage_only_when_approved
+    PRIVATE_RPT_WORD_MIGRATION_DONE = stage_only_when_approved()
+except Exception as _private_word_stage_error:
+    PRIVATE_RPT_WORD_MIGRATION_DONE = False
+    # Never log HTTP request details, credentials or Storage paths.
+    print("CIKGULAJU_BM_KSSR_PRIVATE_WORD_STAGE_FAILED",
+          type(_private_word_stage_error).__name__, flush=True)

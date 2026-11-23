@@ -12,10 +12,13 @@ on:
       - 'web/rpt_2027_kssr_bm_word.py'
       - 'web/rpt_kssr_bm_private_storage.py'
       - 'tools/migrate_rpt_bm_kssr_word_private.py'
+      - 'tools/stage_private_rpt_word_once.py'
+      - 'tools/run_web_production.py'
       - 'web_v1_static_preview/index.html'
       - 'tests/test_rpt_kssr_bm_word_paid_20261123.py'
       - 'tests/test_rpt_kssr_bm_private_storage_20261123.py'
       - 'tests/test_rpt_bm_private_migration_20261123.py'
+      - 'tests/test_rpt_bm_private_startup_20261123.py'
       - '.github/workflows/kssr-bm-word-paid-20261123.yml'
   workflow_dispatch:
 permissions:
@@ -47,6 +50,7 @@ jobs:
           python -m unittest discover -s tests -p 'test_rpt_kssr_bm_word_paid_20261123.py' -v
           python -m unittest discover -s tests -p 'test_rpt_kssr_bm_private_storage_20261123.py' -v
           python -m unittest discover -s tests -p 'test_rpt_bm_private_migration_20261123.py' -v
+          python -m unittest discover -s tests -p 'test_rpt_bm_private_startup_20261123.py' -v
           python -m tools.migrate_rpt_bm_kssr_word_private
           python -m unittest discover -s tests -p 'test_web_rpt_2027_all.py' -v
       - name: Check generated document layout in LibreOffice
