@@ -29,28 +29,28 @@ def _function():
 class TestServerOnlyStartupMigration(TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.run = staticmethod(_function())
+        cls.invoke_migration = staticmethod(_function())
 
     def test_no_environment_flag_is_noop(self):
         with patch.dict(os.environ, {FLAG: "", ALLOW: "YES"}):
-            self.assertEqual(self.run(), "DISABLED")
+            self.assertEqual(self.invoke_migration(), "DISABLED")
 
     def test_second_approval_missing_never_runs(self):
         with patch.dict(os.environ, {FLAG: "RPT_BM_2027_V1", ALLOW: ""}):
-            self.assertEqual(self.run(), "DISABLED")
+            self.assertEqual(self.invoke_migration(), "DISABLED")
 
     def test_both_optins_verify_exact_five_or_fail_closed(self):
         with patch.dict(os.environ, {FLAG: "RPT_BM_2027_V1", ALLOW: "YES"}), \
              patch("tools.migrate_rpt_bm_kssr_word_private.migrate",
                    return_value=[2, 3, 4, 5, 6]) as migrate:
-            self.assertEqual(self.run(), "VERIFIED")
+            self.assertEqual(self.invoke_migration(), "VERIFIED")
             migrate.assert_called_once_with(upload=True)
 
     def test_partial_or_failed_migration_never_marks_verified(self):
         with patch.dict(os.environ, {FLAG: "RPT_BM_2027_V1", ALLOW: "YES"}), \
              patch("tools.migrate_rpt_bm_kssr_word_private.migrate",
                    return_value=[2, 3, 4]):
-            self.assertEqual(self.run(), "FAILED")
+            self.assertEqual(self.invoke_migration(), "FAILED")
 
     def test_sensitive_exception_body_never_printed(self):
         output = StringIO()
@@ -58,5 +58,5 @@ class TestServerOnlyStartupMigration(TestCase):
              patch("tools.migrate_rpt_bm_kssr_word_private.migrate",
                    side_effect=ValueError("secret-token-DO-NOT-PRINT")), \
              redirect_stdout(output):
-            self.assertEqual(self.run(), "FAILED")
+            self.assertEqual(self.invoke_migration(), "FAILED")
         self.assertNotIn("secret-token", output.getvalue())
