@@ -1,0 +1,29 @@
+name: Native active Science Mathematics T2–6 header read-only QA
+on:
+  pull_request:
+    paths:
+      - "tools/audit_native_science_math_header_20261123.py"
+      - ".github/workflows/audit-native-sains-math-header-20261123.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native-t2-t6-header:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install actual active native runtime dependencies
+        run: bash build_jawi.sh
+      - name: Check ten real source-based Word and PDF RPH headers
+        run: python -m tools.audit_native_science_math_header_20261123
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: AUDIT_ONLY_SAINS_MATH_T2_T6_REAL_NATIVE_HEADERS_20261123
+          path: qa/native-sains-math-header/*
+          if-no-files-found: error
+          retention-days: 3
