@@ -144,6 +144,8 @@ def test_pi_two_panel_pdf_reuses_all_jawi_objects_and_retains_rtl_labels():
                   for row in table._cellvalues for v in row)
     assert before==after
     assert any(row[0]=="BACKGROUND" for row in banner._bkgrndcmds)
+    assert reflow_verified_pi_header({**state, "programme":"PPKI"}, original) is original
+    assert reflow_verified_pi_header({**state, "curriculum":"DLP"}, original) is original
     assert reflow_verified_pi_header({"task":"rph","subject":"Bahasa Arab"},original) is original
     broken=_pi_story()
     broken[2]._cellvalues[0][1].text="Unknown"
