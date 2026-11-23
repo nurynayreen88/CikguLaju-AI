@@ -81,11 +81,11 @@ def migrate(*, upload=False, opener=None):
                         raise PrivateWordUnavailable("Upload response invalid")
             except HTTPError as exc:
                 # A conflict is not success; only allow an identical verified object.
-                if exc.code != 409:
+                if exc.code not in (400, 409):
                     raise PrivateWordUnavailable("Private upload unavailable") from exc
             except (URLError, OSError) as exc:
                 raise PrivateWordUnavailable("Private upload unavailable") from exc
-        # Always verify full bytes through private authenticated read, even on 409.
+        # A 400/409 is not success. Verify exact bytes regardless of upload response.
         actual, digest = fetch_document(year, config, opener=do_open)
         if digest != expected_sha or actual != source:
             raise PrivateWordUnavailable("Private upload verification failed")
