@@ -110,7 +110,7 @@ def _focus(rows, language):
     if not isinstance(sp, str) or not sp.strip():
         return None
     first_sp = next((line.strip() for line in sp.splitlines() if line.strip()), "")
-    first_sp = re.sub(r"^\\d+(?:\\.\\d+){1,3}\\s+", "", first_sp)
+    first_sp = re.sub(r"^\d+(?:\.\d+){1,3}\s+", "", first_sp)
     first_clause = " ".join(first_sp.split(";", 1)[0].split()).rstrip(".؛, ")
     if (not 24 <= len(first_clause) <= 105
             or any(phrase in first_clause.casefold() for phrase in _GENERIC_CRITERIA)
