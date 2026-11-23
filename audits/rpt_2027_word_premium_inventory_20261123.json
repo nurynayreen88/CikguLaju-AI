@@ -1,0 +1,109 @@
+{
+  "id": "rpt_word_premium_inventory_20261123",
+  "version": "2026-11-23",
+  "status": "SOURCE_INVENTORY_NOT_ACADEMIC_APPROVAL",
+  "entitlement": {
+    "eligible": [
+      "rakan_pembangun=true",
+      "vip_expires_at > now (UTC)",
+      "vip_until >= today"
+    ],
+    "excluded": [
+      "free_trial_credits",
+      "expired_paid_access",
+      "unverified_payments",
+      "not_signed_in"
+    ],
+    "pdf_policy": "Do not change any existing RPT PDF access rules",
+    "word_direct_link": "Server checks signed account; 403 if unpaid even with direct URL",
+    "no_generation_credit_charge": true
+  },
+  "ready_source_word_count": 21,
+  "kp2027_year1": {
+    "count": 3,
+    "format": "Combined Kumpulan A/B in a single Word file per subject",
+    "codes": [
+      "matematik",
+      "bahasa_melayu",
+      "alam_dan_manusia"
+    ],
+    "quality_status": "SEMAKAN PELAKSANAAN",
+    "pdf_access_unchanged": true
+  },
+  "existing_sjk_word": {
+    "count": 18,
+    "categories": [
+      {
+        "school": "SJKC",
+        "subject": "Bahasa Cina",
+        "years": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      },
+      {
+        "school": "SJKC/SJKT",
+        "subject": "Bahasa Melayu (SJK)",
+        "years": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      },
+      {
+        "school": "SJKC",
+        "subject": "Sains",
+        "years": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "count": 5
+      },
+      {
+        "school": "SJKC",
+        "subject": "Matematik",
+        "years": [
+          2,
+          3
+        ],
+        "count": 2
+      },
+      {
+        "school": "SJKT",
+        "subject": "Matematik",
+        "years": [
+          2
+        ],
+        "count": 1
+      }
+    ],
+    "existing_pdf_access": "Already paid; unchanged"
+  },
+  "pending_native_word_sources": [
+    {
+      "scope": "KSSR SK original RPT 56 PDF collection",
+      "scope_count": 56,
+      "reason": "PDF source published; no original Word files in corresponding approved catalog. Must reconstruct from verified RPT data, not blind PDF-to-DOCX conversion."
+    },
+    {
+      "scope": "Other SJKC/SJKT, DLP, PPKI and KP2027 Year 1 drafts",
+      "reason": "Source verification and editorial approval required. Do not advertise Word before docx and delivery tests pass."
+    }
+  ],
+  "safety": [
+    "Never publish QA_HOLD RPH or RPT candidates",
+    "Never fabricate a Word link for PDF-only subjects",
+    "Do not alter source RPT PDF or Word bytes",
+    "Do not change founders/subscribers, payments, credits, or quotas"
+  ]
+}
