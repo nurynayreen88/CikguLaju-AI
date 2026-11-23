@@ -8,8 +8,10 @@
   const updated = document.getElementById("web-admin-updated");
   const refresh = document.getElementById("web-admin-refresh");
   const view = document.getElementById("view-admin");
-  if (!tab || !view || !status || !updated || !refresh) return;
+  const top = document.getElementById("web-admin-top");
+  if (!tab || !view || !top || !status || !updated || !refresh) return;
   tab.hidden = true;
+  top.hidden = true;
   view.hidden = true;
   let busy = false;
 
@@ -22,7 +24,7 @@
     refreshRow.className = "admin-users-refresh-row";
     refreshRow.style.gridColumn = "1 / -1";
     refreshRow.style.padding = "0 0 4px";
-    refresh.textContent = "🔄 Muat Semula Analisis Pengguna";
+    refresh.textContent = "🔄 Muat Semula Statistik Pengguna";
     refresh.classList.add("profile-refresh");
     refreshRow.appendChild(refresh);
     registrationCard.insertAdjacentElement("afterend", refreshRow);
@@ -89,17 +91,21 @@
       });
       if (res.status === 401 || res.status === 403) {
         tab.hidden = true;
-        document.getElementById("view-admin").hidden = true;
+        top.hidden = true;
+        top.open = false;
+        view.hidden = true;
         return;
       }
-      if (!res.ok) throw Error("Analisis admin belum tersedia (HTTP " + res.status + ").");
+      if (!res.ok) throw Error("Statistik admin belum tersedia (HTTP " + res.status + ").");
       const result = await res.json();
       if (!result || !Number.isInteger(result.registered_users))
         throw Error("Format analisis tidak lengkap.");
       tab.hidden = false;
+      top.hidden = false;
       show(result);
+      window.cikgulajuAdminNotificationsInit?.();
     } catch (error) {
-      status.textContent = error.message || "Analisis tidak dapat dimuatkan. Cuba muat semula.";
+      status.textContent = error.message || "Statistik tidak dapat dimuatkan. Cuba muat semula.";
     } finally {
       busy = false;
       refresh.disabled = false;
@@ -220,6 +226,7 @@
       dialog.close();
       await load();
       status.textContent = decision === "approved" ? "Bayaran #" + item.id + " disahkan." : "Bayaran #" + item.id + " ditolak.";
+      window.cikgulajuAdminNotificationsRefresh?.();
     } catch (error) {
       detailStatus.textContent = error.message || "Semakan belum dapat disahkan. Muat semula senarai.";
     } finally {
@@ -289,7 +296,13 @@
   window.cikgulajuPaymentsAdminLoad = () => { page = 0; return load(); };
   window.cikgulajuOpenPaymentsAdmin = async () => {
     await window.cikgulajuAdminInit?.();
-    if (!tab.hidden) tab.click();
+    if (!tab.hidden) {
+      const top = document.getElementById("web-admin-top");
+      if (top) top.open = true;
+      const view = document.getElementById("view-admin");
+      if (view) view.hidden = false;
+      tab.click();
+    }
   };
 })();
 
@@ -464,4 +477,169 @@
   window.cikgulajuUsersAdminLoad = () => {
     if (panel.open) void load();
   };
+})();
+
+
+/* Pusat Admin: admin-only actionable notifications, backed by a service-only
+ * aggregate feed. No privileged credentials or unverified account IDs here.
+ * The notification count is pending work, not a browser push subscription. */
+(function(){
+  "use strict";
+  const get=id=>document.getElementById(id);
+  const top=get("web-admin-top"),tab=get("web-admin-tab"),
+    view=get("view-admin"),workspace=get("workspace"),
+    list=get("admin-notify-list"),status=get("admin-notify-status"),
+    more=get("admin-notify-more"),refresh=get("admin-notify-refresh"),
+    badge=get("admin-notify-count"),label=get("admin-notify-label"),
+    toast=get("web-admin-alert"),toastText=get("web-admin-alert-text");
+  if(!top||!tab||!view||!workspace||!list||!status||!more||!refresh||!badge||!label||!toast)return;
+  let loading=false,repeat=false,offset=0,total=0,initialized=false;
+  const types={
+    chat:{icon:"💬",title:"Chat pengguna belum dibaca",action:"Buka Chat",section:"chat"},
+    payment:{icon:"💳",title:"Bayaran menunggu pengesahan",action:"Semak Bayaran",section:"payment"},
+    feedback:{icon:"📝",title:"Komen pengguna baharu",action:"Urus Komen",section:"feedback"},
+    affiliate:{icon:"🎁",title:"Tuntutan affiliate menunggu",action:"Semak Tuntutan",section:"affiliate"}
+  };
+  const counts={chat:"admin-notify-chat",payment:"admin-notify-payment",
+    feedback:"admin-notify-feedback",affiliate:"admin-notify-affiliate"};
+  function syncAlert(){
+    const active=total>0;
+    top.classList.toggle("has-notifications",active);
+    badge.hidden=label.hidden=!active;
+    badge.textContent=total>99?"99+":String(total);
+    toast.hidden=!active||top.open||workspace.hidden||top.hidden;
+    toastText.textContent=total+" perkara memerlukan tindakan admin";
+  }
+  function itemNode(item){
+    const type=types[item.kind];
+    if(!type||typeof item.id!=="string")return null;
+    const row=document.createElement("li");
+    const details=document.createElement("div");
+    const heading=document.createElement("strong");
+    heading.textContent=type.icon+" "+type.title+
+      (item.kind==="chat"?" · Akaun "+item.id:" · #"+item.id);
+    const description=document.createElement("p");
+    const extra=item.kind==="payment"&&!item.has_proof?" · Bukti resit belum lengkap":"";
+    const unread=item.kind==="chat"&&item.unread_count?
+      " ("+item.unread_count+" mesej belum dibaca)":"";
+    description.textContent=String(item.summary||"")+unread+extra;
+    const timestamp=document.createElement("small");
+    const date=new Date(item.time);
+    timestamp.textContent=Number.isFinite(date.getTime())?
+      date.toLocaleString("ms-MY",{dateStyle:"medium",timeStyle:"short"}):"";
+    details.append(heading,description,timestamp);
+    const open=document.createElement("button");
+    open.type="button";
+    open.textContent=type.action;
+    open.addEventListener("click",()=>{
+      void window.cikgulajuOpenAdminSection?.(type.section,item.id);
+    });
+    row.append(details,open);
+    return row;
+  }
+  async function load(reset=true){
+    if(top.hidden||workspace.hidden||document.hidden)return;
+    if(loading){if(reset)repeat=true;return;}
+    loading=true;
+    refresh.disabled=more.disabled=true;
+    const wanted=reset?0:offset;
+    if(reset)status.textContent="Menyemak semua notifikasi…";
+    try{
+      const res=await fetch("/api/web/admin/notifications?offset="+wanted,
+        {credentials:"same-origin",cache:"no-store",redirect:"error"});
+      if(res.status===401||res.status===403){
+        top.open=false;top.hidden=true;tab.hidden=true;
+        throw Error("Sesi admin sudah tamat. Sila log masuk semula.");
+      }
+      const data=await res.json().catch(()=>({}));
+      if(!res.ok)throw Error(data.error||"Notifikasi admin belum tersedia.");
+      if(!Array.isArray(data.items)||!data.counts||
+         !Number.isSafeInteger(data.total)||typeof data.more!=="boolean")
+        throw Error("Format notifikasi tidak lengkap.");
+      if(reset){offset=0;list.replaceChildren();}
+      for(const item of data.items){
+        const node=itemNode(item);
+        if(node)list.append(node);
+      }
+      offset+=data.items.length;
+      total=data.total;
+      for(const [kind,id] of Object.entries(counts)){
+        const n=data.counts[kind];
+        get(id).textContent=Number.isSafeInteger(n)?n.toLocaleString("ms-MY"):"—";
+      }
+      const newToday=data.new_users_today;
+      get("admin-notify-new-users").textContent=Number.isSafeInteger(newToday)?
+        newToday.toLocaleString("ms-MY"):"—";
+      more.hidden=!data.more;
+      syncAlert();
+      status.textContent=total===0?"Tiada perkara menunggu tindakan admin.":
+        "Memaparkan "+offset.toLocaleString("ms-MY")+" daripada "+
+        total.toLocaleString("ms-MY")+" perkara yang masih memerlukan tindakan.";
+    }catch(error){
+      status.textContent=error.message||"Notifikasi belum dapat dimuatkan.";
+      if(reset&&offset===0)list.replaceChildren();
+    }finally{
+      loading=false;refresh.disabled=more.disabled=false;
+      if(repeat){repeat=false;void load(true);}
+    }
+  }
+  function reveal(){
+    if(top.hidden||tab.hidden)return false;
+    top.open=true;
+    view.hidden=false;
+    tab.click();  // existing verified admin loaders; does not switch teacher pages
+    return true;
+  }
+  window.cikgulajuOpenAdminSection=async (kind,id)=>{
+    if(!reveal())return;
+    let destination;
+    if(kind==="chat"){
+      if(id&&typeof window.cikgulajuOpenAdminChat==="function")
+        return window.cikgulajuOpenAdminChat(String(id));
+      destination=get("web-chat-admin-heading");
+    }else if(kind==="payment"){
+      get("admin-payment-filter").value="pending";
+      await window.cikgulajuPaymentsAdminLoad?.();
+      destination=get("admin-payments");
+    }else if(kind==="feedback"){
+      get("web-feedback-admin-filter").value="baru";
+      await window.cikgulajuFeedbackAdminLoad?.();
+      destination=get("web-feedback-admin-heading");
+    }else if(kind==="affiliate"){
+      destination=get("affiliate-admin");
+    }else if(kind==="users"){
+      const directory=get("admin-users-directory");
+      directory.open=true;
+      window.cikgulajuUsersAdminLoad?.();
+      destination=directory;
+    }else if(kind==="analytics"){
+      destination=view.querySelector(".admin-stats-grid");
+    }
+    if(destination&&!destination.hidden)
+      destination.scrollIntoView({behavior:"smooth",block:"start"});
+    else top.scrollIntoView({behavior:"smooth",block:"start"});
+  };
+  window.cikgulajuAdminNotificationsRefresh=()=>void load(true);
+  window.cikgulajuAdminNotificationsInit=()=>{
+    if(!initialized){initialized=true;}
+    void load(true);
+  };
+  top.addEventListener("toggle",()=>{
+    if(top.open){
+      if(top.hidden||tab.hidden){top.open=false;return;}
+      view.hidden=false;
+      tab.click();
+      void load(true);
+    }else view.hidden=true;
+    syncAlert();
+  });
+  toast.addEventListener("click",()=>{void window.cikgulajuOpenAdminSection("notifications");});
+  refresh.addEventListener("click",()=>void load(true));
+  more.addEventListener("click",()=>void load(false));
+  document.querySelectorAll("[data-admin-shortcut]").forEach(button=>
+    button.addEventListener("click",()=>void window.cikgulajuOpenAdminSection(button.dataset.adminShortcut)));
+  document.addEventListener("visibilitychange",()=>{if(!document.hidden)void load(true);});
+  window.addEventListener("focus",()=>void load(true));
+  window.setInterval(()=>void load(true),60000);
+  if(!top.hidden&&!workspace.hidden)void load(true);
 })();
