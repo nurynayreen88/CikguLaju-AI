@@ -79,6 +79,47 @@ class PremiumDlpPpkiProof(unittest.TestCase):
                 self.assertIn("Standard Kandungan" if subject == "PPKI"
                               else "Content Standards", fields)
 
+    def test_master_design_teacher_panel_only_is_neutral_without_extra_rows(self):
+        """Approved BM SK KP2027 master: pastel identity, neutral teacher box.
+
+        Test actual reviewed DLP Science, DLP Math and PPKI native Word.
+        Keep the original outer width, the exact number of source detail
+        rows, the teacher values, and every curriculum paragraph.
+        """
+        from docx.oxml.ns import qn
+        from dlp_year2_rph import _TEACHER_PANEL_FILL
+
+        teacher = {"class": "4 Amanah", "date": "2027-03-02",
+                   "time": "09:00 - 10:00", "students": "24",
+                   "reflection": "Catatan guru selepas PdP."}
+        palettes = {"SCIENCE_DLP": "DFF1E3",
+                    "MATH_DLP": "DCEBFA", "PPKI": "EEE6F7"}
+        for subject, generate in self.samples(teacher):
+            with self.subTest(subject=subject):
+                parsed = Document(BytesIO(generate("word")))
+                self.assertEqual(len(parsed.tables), 4)
+                head = parsed.tables[0]
+                self.assertEqual(head._tbl.tblGrid.gridCol_lst[0].get(qn("w:w")),
+                                 head.columns[0]._gridCol.get(qn("w:w")))
+                left_shade = head.cell(0, 0)._tc.get_or_add_tcPr().find(qn("w:shd"))
+                right_shade = head.cell(0, 1)._tc.get_or_add_tcPr().find(qn("w:shd"))
+                self.assertIsNotNone(left_shade)
+                self.assertIsNotNone(right_shade)
+                self.assertEqual(left_shade.get(qn("w:fill")), palettes[subject])
+                self.assertEqual(right_shade.get(qn("w:fill")), _TEACHER_PANEL_FILL)
+                self.assertGreater(head.columns[0].width, head.columns[1].width)
+                fields = premium_rph_details(parsed)
+                self.assertEqual(fields["Kelas" if subject=="PPKI" else "Class"],
+                                 teacher["class"])
+                self.assertIn(teacher["reflection"],
+                              parsed.tables[3].cell(len(parsed.tables[3].rows)-1,1).text)
+                # The new style must not add artificial curriculum sections
+                # on top of those already rendered by the source generator.
+                self.assertNotIn("Mata Pelajaran",
+                                 [r.cells[0].text for r in parsed.tables[1].rows])
+                self.assertNotIn("Subject",
+                                 [r.cells[0].text for r in parsed.tables[1].rows])
+
     def test_blank_teacher_boxes_are_truly_blank(self):
         teacher = dict.fromkeys(("class", "date", "time", "students"), "")
         for subject, generate in self.samples(teacher):
