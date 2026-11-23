@@ -835,6 +835,18 @@ telegram_runtime.ENGLISH_Y1_KSSR_WEB_ACTIVE = ENGLISH_Y1_KSSR_WEB_ACTIVE
 RPH_TEACHER_REFLECTION_ACTIVE = install_teacher_reflection(telegram_runtime)
 
 
+# Replace only code-only SK/SP display cells with exact verified DSKP/DPK
+# descriptions in seven already-audited native PdP examples. Never touch
+# the verified curriculum DB, other lessons or user quotas.
+try:
+    from web.rph_verified_standard_labels_20261124 import install as install_verified_sk_sp_labels
+    RPH_VERIFIED_STANDARD_LABELS_ACTIVE = bool(install_verified_sk_sp_labels(telegram_runtime))
+except Exception as _sk_sp_labels_exc:
+    RPH_VERIFIED_STANDARD_LABELS_ACTIVE = False
+    print("Verified RPH SK/SP description labels unavailable:",
+          type(_sk_sp_labels_exc).__name__, flush=True)
+
+
 # Remove legacy RM8/RM50 subscription advertising from Telegram menu only.
 # No change to payment amount, entitlement, callbacks or user records.
 from web.telegram_subscription_price_guard import install as install_subscription_price_guard
