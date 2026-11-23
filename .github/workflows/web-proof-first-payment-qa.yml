@@ -1,5 +1,12 @@
 name: Web manual payment receipts QA
 on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'web/web_payment_routes.py'
+      - 'tests/test_web_payment_proof_first.py'
+      - 'tests/test_web_payment_receipt_admin_fallback_20261123.py'
+      - '.github/workflows/web-proof-first-payment-qa.yml'
   push:
     branches: [feature/web-payment-portal-20261105]
   workflow_dispatch:
@@ -18,6 +25,7 @@ jobs:
       - run: python -m py_compile web/web_payment_routes.py tools/run_web_production.py
       - run: node --check web_v1_static_preview/web-payment.js
       - run: python -m unittest discover -s tests -p test_web_payment_proof_first.py -v
+      - run: python -m unittest discover -s tests -p test_web_payment_receipt_admin_fallback_20261123.py -v
       - run: python -m unittest discover -s tests -p test_web_sidebar_navigation.py -v
       - run: python -m unittest discover -s tests -p test_web_shared_teacher_profile.py -v
       - run: python -m unittest discover -s tests -p test_web_rpt_native_proxy_stdlib.py -v
