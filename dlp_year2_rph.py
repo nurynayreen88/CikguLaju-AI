@@ -411,9 +411,10 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
             paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
             paragraph.paragraph_format.space_before = Pt(0)
             paragraph.paragraph_format.space_after = Pt(1)
-            paragraph.paragraph_format.tab_stops.add_tab_stop(Mm(32))
-            paragraph.add_run(label_text + ": ").bold = True
-            paragraph.add_run("\t" + value)
+            # Source-backed pure values (subject, year, topic) remain exact
+            # in the original three paragraph slots. Other reviewed Years
+            # 3–6 read these values as whole strings when downloading.
+            paragraph.add_run(value).bold = index in (0, 2)
     else:
         for index, text in enumerate(heading):
             paragraph = (header_left.paragraphs[0] if index == 0
