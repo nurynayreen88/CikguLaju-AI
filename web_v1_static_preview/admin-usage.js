@@ -585,9 +585,10 @@
   }
   function reveal(){
     if(top.hidden||tab.hidden)return false;
+    const wasClosed=!top.open,wasHidden=view.hidden;
     top.open=true;
     view.hidden=false;
-    tab.click();  // existing verified admin loaders; does not switch teacher pages
+    if(wasClosed||wasHidden)tab.click(); // Existing admin loaders
     return true;
   }
   window.cikgulajuOpenAdminSection=async (kind,id)=>{
@@ -627,8 +628,9 @@
   top.addEventListener("toggle",()=>{
     if(top.open){
       if(top.hidden||tab.hidden){top.open=false;return;}
+      const needsOpen=view.hidden;
       view.hidden=false;
-      tab.click();
+      if(needsOpen)tab.click();
       void load(true);
     }else view.hidden=true;
     syncAlert();
