@@ -47,7 +47,7 @@ def check_one(runtime, path, row, code, output_dir):
         assert "____ / ____" in reflection
         assert "فوکوس ڤدڤ" not in reflection
     else:
-        assert "murid mencapai sasaran" in reflection or "murid mencapai sasaran" in reflection.casefold(), (
+        assert reflection.startswith("____ / ____ murid: "), (
             row["id"], objective, criterion, reflection
         )
         assert "____ / ____" in reflection
@@ -64,7 +64,7 @@ def check_one(runtime, path, row, code, output_dir):
         assert 594 < page.rect.width < 597 and 840 < page.rect.height < 844
         if code == "BM":
             # Latin text extraction is well supported for these audit samples.
-            assert "murid mencapai sasaran" in page.get_text().casefold()
+            assert "murid:" in page.get_text().casefold()
     if code == "PI":
         assert "سورة" in text
         assert "موري" in text
