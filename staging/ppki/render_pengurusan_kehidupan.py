@@ -54,10 +54,14 @@ def render_lesson(catalog, lesson, extension, teacher):
         ("Pentaksiran Bilik Darjah", lesson["assessment"]),
         ("Refleksi", reflection),
     ]
-    output = BytesIO()
-    RENDERERS[extension](output, heading, details, activities, assessment,
-                        compact=True, label_fill=PPKI_LABEL_FILL)
-    return output.getvalue()
+    # PPKI retains its original approved SK/SP/phase/reflection records;
+    # Word and PDF share the same RPH entrypoint as DLP.
+    from web.rph_unified_engine import render_structured_rph
+    return render_structured_rph(
+        source="ppki", fmt=extension, heading=heading, details=details,
+        activities=activities, footer=assessment, compact=True,
+        label_fill=PPKI_LABEL_FILL,
+    )
 
 
 def export(output, teacher):

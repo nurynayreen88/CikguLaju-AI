@@ -16,6 +16,7 @@ from reportlab.lib.units import mm
 from reportlab.platypus import Paragraph, Spacer, Table, TableStyle
 
 from web.rph_reference_style_20261121 import color_for_state
+from web.rph_unified_engine import TEACHER_PANEL_FILL
 
 EXPECTED_BM = (
     "Mata Pelajaran", "Tahun/Tingkatan", "Tarikh", "Hari", "Masa",
@@ -216,7 +217,7 @@ def premium_pdf_story(state, story):
     # Apply this to the EXISTING right-hand cell, without adding metadata,
     # moving source Paragraph objects or touching curriculum text.
     header.setStyle(TableStyle([
-        ("BACKGROUND", (1, 0), (1, 0), colors.HexColor("#F5F7FA")),
+        ("BACKGROUND", (1, 0), (1, 0), colors.HexColor("#" + TEACHER_PANEL_FILL)),
     ]))
 
     # Keep untouched curriculum paragraph objects and their source order.
