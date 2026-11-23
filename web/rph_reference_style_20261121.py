@@ -295,6 +295,12 @@ def style_word_path(path, fill, *, premium_header=False, rtl_jawi=False):
         updated = premium_header_bytes(updated, fill, rtl_jawi=rtl_jawi)
         from web.rph_equal_width_20261121 import equal_width_four_table_bytes
         updated = equal_width_four_table_bytes(updated, rtl_jawi=rtl_jawi)
+        if rtl_jawi:
+            # Only active source-backed PI native Word, never PI 696 archives:
+            # four verified RTL tables, standalone source title and fixed Jawi
+            # identity must be present before any paragraph justification.
+            from web.rph_active_pi_rtl_alignment_20261123 import align_active_pi_rtl_value_bytes
+            updated = align_active_pi_rtl_value_bytes(updated)
     if updated == original:
         return False
     if not _preserves_source_content(original, updated):
