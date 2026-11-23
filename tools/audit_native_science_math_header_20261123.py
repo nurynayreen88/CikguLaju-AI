@@ -61,7 +61,7 @@ def main():
                         if tables:
                             celltexts = [c.text for c in tables[0].rows[0].cells]
                             meta = [{"paragraphs":len(c.paragraphs), "text_head":c.text[:130],
-                                     "tabs":[[(tab.pos.twips if tab.pos else None) for tab in p.paragraph_format.tab_stops]
+                                     "tabs":[[(tab.position.twips if tab.position is not None else None) for tab in p.paragraph_format.tab_stops]
                                              for p in c.paragraphs[:5]]}
                                     for c in tables[0].rows[0].cells]
                         with fitz.open(str(pdf)) as pdf_doc:
@@ -96,10 +96,9 @@ def main():
                         last_error.append((type(exc).__name__, str(exc)[:150]))
                 else:
                     if code == "MATH":
-                        # The independently routed mathematics selection has
-                        # a source/runtime mismatch in this diagnostic build.
-                        # Record it, never make up or substitute lesson data,
-                        # and retain the verified Science audit documents.
+                        # Keep honest evidence of any independent Math routing
+                        # or renderer failure; never substitute a fake lesson.
+                        # Record the error and retain verified Science samples.
                         report.append({
                             "subject":code, "year":year, "status":"NOT_VERIFIED",
                             "reason":"native audit sample did not render",
