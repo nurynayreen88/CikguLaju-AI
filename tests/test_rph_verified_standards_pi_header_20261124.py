@@ -9,7 +9,7 @@ from web.rph_verified_standard_labels_20261124 import (
     _VERIFIED, display_verified_standards, install,
 )
 from web.rph_pi_native_pdf_header_20261124 import (
-    HEADER_LABELS, reflow_verified_pi_header,
+    HEADER_LABELS, PI_FILL, CenteredJawiTitle, reflow_verified_pi_header,
 )
 
 
@@ -150,26 +150,103 @@ def test_pi_two_panel_pdf_reuses_all_jawi_objects_and_retains_rtl_labels():
     before=Counter(id(v) for row in first._cellvalues for v in row)
     revised=reflow_verified_pi_header(state,original)
     assert len(revised)==9
-    assert revised[0] is original[0]
+    assert isinstance(revised[0], CenteredJawiTitle)
+    assert revised[0].original is original[0]
     assert revised[-3] is original[4]
     assert revised[-1] is original[6]
     banner=revised[2]
-    left,right=banner._cellvalues[0]
-    assert len(left._cellvalues)==3
-    assert len(right._cellvalues)==5
-    assert [row[1].text for row in left._cellvalues] == [
-        HEADER_LABELS[i] for i in (0,1,7)]
-    assert [row[1].text for row in right._cellvalues] == [
-        HEADER_LABELS[i] for i in (5,2,3,4,6)]
+    teacher, identity = banner._cellvalues[0]
+    # PDF physical positions: Kelas/Tarikh LEFT; PI/Tahun/Tajuk RIGHT.
+    assert len(teacher._cellvalues) == 5
+    assert len(identity._cellvalues) == 3
+    assert [row[1].text for row in identity._cellvalues] == [
+        HEADER_LABELS[i] for i in (0, 1, 7)]
+    assert [row[1].text for row in teacher._cellvalues] == [
+        HEADER_LABELS[i] for i in (5, 2, 3, 4, 6)]
     body=revised[4]
     assert len(body._cellvalues)==9
-    after=Counter(id(v) for table in (left,right,body)
+    after=Counter(id(v) for table in (identity, teacher, body)
                   for row in table._cellvalues for v in row)
     assert before==after
-    assert any(row[0]=="BACKGROUND" for row in banner._bkgrndcmds)
+    background = [row for row in banner._bkgrndcmds if row[0] == "BACKGROUND"]
+    assert len(background) == 2
+    assert all(row[-1] == PI_FILL for row in background)
+    assert any(row[-1] == PI_FILL for row in body._bkgrndcmds)
     assert reflow_verified_pi_header({**state, "programme":"PPKI"}, original) is original
     assert reflow_verified_pi_header({**state, "curriculum":"DLP"}, original) is original
     assert reflow_verified_pi_header({"task":"rph","subject":"Bahasa Arab"},original) is original
     broken=_pi_story()
     broken[2]._cellvalues[0][1].text="Unknown"
     assert reflow_verified_pi_header(state,broken) is broken
+
+
+
+def test_native_jawi_title_is_visually_centered_without_changing_its_glyph_image():
+    """The native title is drawn at the right; the wrapper centers its glyphs."""
+    from PIL import Image as PILImage, ImageDraw
+    from reportlab.lib.utils import ImageReader
+
+    class AlreadyShapedNativeTitle:
+        def __init__(self):
+            self.text = "رنچڠن ڤڠاجرن هارين"
+            self._img = None
+
+        def wrap(self, available_width, available_height):
+            # Original renderer: transparent raster with text on far RIGHT.
+            canvas = PILImage.new("RGBA", (300, 45), (255, 255, 255, 0))
+            ImageDraw.Draw(canvas).rectangle((240, 7, 281, 29), fill=(0, 0, 0, 255))
+            self._img = ImageReader(canvas)
+            return available_width, 15
+
+    title = AlreadyShapedNativeTitle()
+    centered = CenteredJawiTitle(title)
+    assert centered.wrap(180, 40) == (180, 15)
+
+    class CaptureCanvas:
+        def __init__(self):
+            self.calls = []
+        def drawImage(self, image, x, y, **kwargs):
+            self.calls.append((image, x, y, kwargs))
+
+    capture = CaptureCanvas()
+    centered.canv = capture
+    centered.draw()
+    assert len(capture.calls) == 1
+    image, x, y, kwargs = capture.calls[0]
+    actual_centre = x + kwargs["width"] / 2
+    assert abs(actual_centre - 90) < .01
+    assert kwargs["height"] == 15
+    assert title._img._image.getchannel("A").getbbox() == (240, 7, 282, 30)
+    assert image._image.getchannel("A").getbbox() == (0, 7, 42, 30)
+
+
+def test_word_pi_palette_matches_pdf_and_keeps_original_rtl_panels():
+    from web.rph_reference_style_20261121 import color_for_state
+    from web.rph_premium_header_20261121 import premium_header_bytes
+    from tests.test_pi_active_jawi_content_right_20261123 import native_pi_word
+    from web.rph_reference_style_20261121 import style_three_table_word_bytes
+    from docx import Document
+    from io import BytesIO
+    from zipfile import ZipFile
+    from lxml import etree
+    from collections import Counter
+
+    color = color_for_state({"task": "rph", "subject": "Pendidikan Islam"})
+    assert color == "ECE4F6"
+    source = native_pi_word()
+    result = premium_header_bytes(style_three_table_word_bytes(source, color),
+                                  color, rtl_jawi=True)
+    doc = Document(BytesIO(result))
+    assert len(doc.tables) == 4
+    assert doc.tables[0].cell(0, 0).text.startswith("مات ڤلاجرن")
+    assert "کلس" in doc.tables[0].cell(0, 1).text
+    with ZipFile(BytesIO(result)) as zipfile:
+        root = etree.fromstring(zipfile.read("word/document.xml"))
+    W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+    header = root.find(W+"body").findall(W+"tbl")[0]
+    cells = header.find(W+"tr").findall(W+"tc")
+    assert header.find(W+"tblPr/"+W+"bidiVisual") is not None
+    assert [cell.find(W+"tcPr/"+W+"shd").get(W+"fill") for cell in cells] == [color, color]
+    title = next(x for x in root.find(W+"body").findall(W+"p")
+                 if "رنچڠن ڤڠاجرن هارين" in "".join(n.text or "" for n in x.iter(W+"t")))
+    assert title.find(W+"pPr/"+W+"jc").get(W+"val") == "center"
