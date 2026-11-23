@@ -2628,6 +2628,14 @@ function rptKP2027Url(entry,fmt){
  if(!rptKP2027Choice(entry)||!["pdf","docx"].includes(fmt))return null;
  return "/api/rpt/2027/kp2027/tahun-1/gabungan/"+entry.item.code+"."+fmt;
 }
+function rptKP2027DownloadName(entry,fmt){
+ if(!rptKP2027Choice(entry)||!["pdf","docx"].includes(fmt))return null;
+ // Keep the one-tap browser download name identical to the SHA-checked
+ // server attachment. An empty <a download> chooses a short URL basename.
+ const code={matematik:"MATH",bahasa_melayu:"BM_SK",
+             alam_dan_manusia:"ALAM"}[entry.item.code];
+ return code?"CIKGULAJU_RPT_KP2027_T1_"+code+"_KUMPULAN_AB_GABUNGAN_2027."+fmt:null;
+}
 function rptCanDownload(entry){
  if(!entry)return false;
  const {year}=entry;
@@ -2670,7 +2678,7 @@ function refreshRptDownload(){
  rptWordLink.hidden=!wordUrl;
  if(directUrl){
   rptMobileLink.href=directUrl;
-  rptMobileLink.setAttribute("download","");
+  rptMobileLink.setAttribute("download",rptKP2027DownloadName(selection,"pdf")||"");
   rptMobileLink.removeAttribute("target");
  }else{
   rptMobileLink.removeAttribute("href");
@@ -2678,7 +2686,7 @@ function refreshRptDownload(){
  }
  if(wordUrl){
   rptWordLink.href=wordUrl;
-  rptWordLink.setAttribute("download","");
+  rptWordLink.setAttribute("download",rptKP2027DownloadName(selection,"docx")||"");
   rptWordLink.removeAttribute("target");
  }else{
   rptWordLink.removeAttribute("href");
