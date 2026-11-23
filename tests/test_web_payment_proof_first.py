@@ -236,55 +236,56 @@ class PaymentWebTests(unittest.TestCase):
             send.assert_not_called()
             src.assert_not_called()
 
-    def test_receipt_saved_only_after_bot_confirms_file(self):
-        proof={"file_id":"telegram-proof-id","unique_id":"unique",
-               "message_id":31,"mime":"application/pdf"}
-        with patch("web.web_payment_routes._source",return_value=CATALOG), \
-             patch("web.web_payment_routes._existing",return_value=[]), \
-             patch("web_v1_telegram_auth_routes._lookup",
-                   return_value={"telegram_user_id":712}), \
-             patch("web.web_payment_routes._telegram_document",return_value=proof) as bot, \
+    def test_receipt_is_private_before_pending_and_optional_admin_notice(self):
+        import hashlib
+        with patch("web.web_payment_routes._existing", return_value=[]), \
+             patch("web.web_payment_routes._is_member", return_value=False), \
+             patch("web.web_payment_routes._private_receipt_storage",
+                   return_value=True) as storage, \
              patch("web.web_payment_routes._payment_rest",
-                   return_value=[{"chat_id":"712","status":"pending","id":21}]) as write, \
-             patch("web.web_payment_routes._notify_telegram_admin_review",
-                   return_value=True) as notice:
-            r=self.request_receipt()
-        notice.assert_called_once_with(712,21)
-        self.assertEqual(r.json["admin_notification"],"sent")
-        self.assertEqual(r.status_code,201,r.json)
-        self.assertEqual(r.json["status"],"pending")
-        bot.assert_called_once()
-        self.assertEqual(bot.call_args.args[1],712)
-        self.assertEqual(write.call_args.args[1],"POST")
-        row=write.call_args.kwargs["body"]
-        self.assertEqual(row["proof_telegram_file_id"],"telegram-proof-id")
-        self.assertEqual(row["amount"],"20.00")
-        self.assertEqual(row["notes"],"proof_received_web")
-        self.assertEqual(row["chat_id"],"712")
+                   side_effect=lambda conf, method, **kw:
+                   [{**kw["body"], "id": 21}]) as write, \
+             patch("web.web_payment_routes._optional_web_receipt_notice",
+                   return_value=True) as notice, \
+             patch("web.web_payment_routes._audit_payment"):
+            response = self.request_receipt()
+        self.assertEqual(response.status_code, 201, response.json)
+        self.assertEqual(response.json["status"], "pending")
+        self.assertEqual(response.json["source"], "web")
+        self.assertEqual(response.json["admin_notification"], "sent")
+        body = write.call_args.kwargs["body"]
+        self.assertEqual(body["notes"], "proof_received_web_private")
+        self.assertEqual(body["chat_id"], "712")
+        self.assertEqual(body["proof_web_sha256"], hashlib.sha256(RECEIPT).hexdigest())
+        self.assertRegex(body["proof_web_path"],
+                         r"^receipts/712/[0-9a-f]{32}\.pdf$")
+        self.assertNotIn("proof_telegram_file_id", body)
+        storage.assert_called_once_with(CONF, "POST", body["proof_web_path"],
+                                        data=RECEIPT, mime="application/pdf")
+        notice.assert_called_once_with(712, 21)
 
-    def test_pending_is_not_lost_if_telegram_admin_notice_fails(self):
-        # A successfully saved payment must NEVER return 503 and induce a
-        # second payment just because the admin notification transport fails.
-        proof={"file_id":"telegram-proof-id","unique_id":"u",
-               "message_id":31,"mime":"application/pdf"}
-        with patch("web.web_payment_routes._source",return_value=CATALOG), \
-             patch("web.web_payment_routes._existing",return_value=[]), \
-             patch("web_v1_telegram_auth_routes._lookup",
-                   return_value={"telegram_user_id":712}), \
-             patch("web.web_payment_routes._telegram_document",return_value=proof), \
+    def test_pending_is_not_lost_when_optional_telegram_notice_fails(self):
+        # Web receipt is the durable primary channel; a Telegram outage cannot
+        # ask the customer to pay again or undo the recorded Pending row.
+        with patch("web.web_payment_routes._existing", return_value=[]), \
+             patch("web.web_payment_routes._is_member", return_value=False), \
+             patch("web.web_payment_routes._private_receipt_storage",
+                   return_value=True), \
              patch("web.web_payment_routes._payment_rest",
-                   return_value=[{"chat_id":"712","status":"pending","id":21}]) as store, \
-             patch("web.web_payment_routes._notify_telegram_admin_review",
-                   side_effect=ProfileUnavailable("Telegram unreachable")) as notice:
-            r=self.request_receipt()
-        self.assertEqual(r.status_code,201,r.json)
-        self.assertEqual(r.json["admin_notification"],"unconfirmed")
-        self.assertIn("Jangan bayar",r.json["message"])
-        self.assertEqual(r.json["id"],21)
+                   side_effect=lambda conf, method, **kw:
+                   [{**kw["body"], "id": 21}]) as store, \
+             patch("web.web_payment_routes._optional_web_receipt_notice",
+                   return_value=False) as notice, \
+             patch("web.web_payment_routes._audit_payment"):
+            response = self.request_receipt()
+        self.assertEqual(response.status_code, 201, response.json)
+        self.assertEqual(response.json["admin_notification"], "web_only")
+        self.assertEqual(response.json["id"], 21)
+        self.assertIn("Jangan bayar", response.json["message"])
         store.assert_called_once()
-        notice.assert_called_once_with(712,21)
+        notice.assert_called_once_with(712, 21)
 
-    def test_email_only_receipt_goes_to_admin_not_nonexistent_telegram_chat(self):
+    def test_legacy_telegram_receipts_use_confirmed_admin_first(self):
         from web.web_payment_routes import _receipt_destinations
         uid = 8000000000000000003
 
@@ -295,39 +296,40 @@ class PaymentWebTests(unittest.TestCase):
             def read(self, n):
                 return json.dumps({"ok": True, "result": {
                     "chat": {"id": 901}, "message_id": 44,
-                    "document": {"file_id": "saved-proof", "file_unique_id": "unique",
+                    "document": {"file_id": "saved-proof",
+                                 "file_unique_id": "unique",
                                  "mime_type": "application/pdf"}}}).encode()
 
         class Transport:
             def __init__(self): self.req = None; self.timeout = None
             def open(self, req, timeout):
-                self.req = req
-                self.timeout = timeout
+                self.req, self.timeout = req, timeout
                 return Reply()
 
         transport = Transport()
         with patch.dict(os.environ, {"CIKGULAJU_WEB_ADMIN_IDS": "901"}):
             self.assertEqual(_receipt_destinations(uid), [901])
-            self.assertEqual(_receipt_destinations(712), [712, 901])
-            proof = _telegram_document(CONF, uid, RECEIPT, ".pdf", opener=transport)
+            self.assertEqual(_receipt_destinations(712), [901, 712])
+            proof = _telegram_document(CONF, uid, RECEIPT, ".pdf",
+                                       opener=transport)
         self.assertEqual(proof["file_id"], "saved-proof")
         self.assertEqual(proof["admin_chat_id"], 901)
         self.assertEqual(proof["message_id"], 44)
         self.assertIn(b'name="chat_id"\r\n\r\n901\r\n', transport.req.data)
-        self.assertNotIn(b'name="chat_id"\r\n\r\n8000000000000000003\r\n', transport.req.data)
-        self.assertEqual(transport.timeout, 9)
+        self.assertNotIn(str(uid).encode() + b"\r\n", transport.req.data)
+        self.assertEqual(transport.timeout, 12)
         with patch.dict(os.environ, {"CIKGULAJU_WEB_ADMIN_IDS": ""}):
             with self.assertRaises(ProfileUnavailable):
                 _receipt_destinations(uid)
 
-    def test_telegram_customer_receipt_still_uses_own_chat(self):
+    def test_legacy_telegram_customer_receipt_uses_admin_first(self):
         class Reply:
             status = 200
             def __enter__(self): return self
             def __exit__(self, *args): return None
             def read(self, n):
                 return json.dumps({"ok": True, "result": {
-                    "chat": {"id": 712}, "message_id": 55,
+                    "chat": {"id": 901}, "message_id": 55,
                     "document": {"file_id": "telegram-proof"}}}).encode()
 
         class Transport:
@@ -335,54 +337,57 @@ class PaymentWebTests(unittest.TestCase):
             def open(self, req, timeout): self.req = req; return Reply()
 
         transport = Transport()
-        with patch.dict(os.environ, {"CIKGULAJU_WEB_ADMIN_IDS": ""}):
-            proof = _telegram_document(CONF, 712, RECEIPT, ".pdf", opener=transport)
-        self.assertIsNone(proof["admin_chat_id"])
-        self.assertIn(b'name="chat_id"\r\n\r\n712\r\n', transport.req.data)
+        with patch.dict(os.environ, {"CIKGULAJU_WEB_ADMIN_IDS": "901"}):
+            proof = _telegram_document(CONF, 712, RECEIPT, ".pdf",
+                                       opener=transport)
+        self.assertEqual(proof["admin_chat_id"], 901)
+        self.assertIn(b'name="chat_id"\r\n\r\n901\r\n', transport.req.data)
 
-    def test_email_only_full_submit_creates_pending_and_notifies_admin(self):
-        uid=8000000000000000003
-        proof={"file_id":"bot-private-receipt","unique_id":"unique",
-               "message_id":44,"mime":"application/pdf","admin_chat_id":901}
-        with patch("web.web_payment_routes._auth",return_value=(CONF,uid,None)), \
-             patch("web.web_payment_routes._source",return_value=CATALOG), \
-             patch("web.web_payment_routes._existing",return_value=[]), \
-             patch("web.web_payment_routes._is_member",return_value=False), \
-             patch("web.web_payment_routes._telegram_document",return_value=proof) as upload, \
+    def test_email_only_full_submit_creates_web_pending_and_notifies_admin(self):
+        uid = 8000000000000000003
+        with patch("web.web_payment_routes._auth",
+                   return_value=(CONF, uid, None)), \
+             patch("web.web_payment_routes._existing", return_value=[]), \
+             patch("web.web_payment_routes._is_member", return_value=False), \
+             patch("web.web_payment_routes._private_receipt_storage",
+                   return_value=True) as upload, \
              patch("web.web_payment_routes._payment_rest",
-                   return_value=[{"chat_id":str(uid),"status":"pending","id":91}]) as store, \
-             patch("web.web_payment_routes._notify_email_admin_review",
-                   return_value=True) as admin_notice, \
-             patch("web.web_payment_routes._notify_telegram_admin_review") as old_notice:
-            response=self.request_receipt()
-        self.assertEqual(response.status_code,201,response.json)
-        self.assertEqual(response.json["id"],91)
-        self.assertEqual(response.json["admin_notification"],"sent")
-        upload.assert_called_once()
-        self.assertEqual(upload.call_args.args[1],uid)
-        self.assertEqual(store.call_args.kwargs["body"]["chat_id"],str(uid))
-        self.assertEqual(store.call_args.kwargs["body"]["notes"],"proof_received_web")
-        admin_notice.assert_called_once_with(uid,91,proof)
-        old_notice.assert_not_called()
+                   side_effect=lambda conf, method, **kw:
+                   [{**kw["body"], "id": 91}]) as store, \
+             patch("web.web_payment_routes._optional_web_receipt_notice",
+                   return_value=True) as notice, \
+             patch("web.web_payment_routes._audit_payment"):
+            response = self.request_receipt()
+        self.assertEqual(response.status_code, 201, response.json)
+        self.assertEqual(response.json["id"], 91)
+        self.assertEqual(response.json["admin_notification"], "sent")
+        body = store.call_args.kwargs["body"]
+        self.assertEqual(body["chat_id"], str(uid))
+        self.assertEqual(body["notes"], "proof_received_web_private")
+        self.assertNotIn("proof_telegram_file_id", body)
+        upload.assert_called_once_with(CONF, "POST", body["proof_web_path"],
+                                       data=RECEIPT, mime="application/pdf")
+        notice.assert_called_once_with(uid, 91)
 
-    def test_email_only_notification_failure_keeps_pending_no_recharge(self):
-        uid=8000000000000000003
-        proof={"file_id":"bot-private-receipt","unique_id":"unique",
-               "message_id":44,"mime":"application/pdf","admin_chat_id":901}
-        with patch("web.web_payment_routes._auth",return_value=(CONF,uid,None)), \
-             patch("web.web_payment_routes._source",return_value=CATALOG), \
-             patch("web.web_payment_routes._existing",return_value=[]), \
-             patch("web.web_payment_routes._is_member",return_value=False), \
-             patch("web.web_payment_routes._telegram_document",return_value=proof), \
+    def test_email_only_optional_notice_failure_keeps_web_pending(self):
+        uid = 8000000000000000003
+        with patch("web.web_payment_routes._auth",
+                   return_value=(CONF, uid, None)), \
+             patch("web.web_payment_routes._existing", return_value=[]), \
+             patch("web.web_payment_routes._is_member", return_value=False), \
+             patch("web.web_payment_routes._private_receipt_storage",
+                   return_value=True), \
              patch("web.web_payment_routes._payment_rest",
-                   return_value=[{"chat_id":str(uid),"status":"pending","id":92}]) as store, \
-             patch("web.web_payment_routes._notify_email_admin_review",
-                   side_effect=ProfileUnavailable("Bot notice failed")):
-            response=self.request_receipt()
-        self.assertEqual(response.status_code,201,response.json)
-        self.assertEqual(response.json["status"],"pending")
-        self.assertEqual(response.json["admin_notification"],"unconfirmed")
-        self.assertIn("Jangan bayar",response.json["message"])
+                   side_effect=lambda conf, method, **kw:
+                   [{**kw["body"], "id": 92}]) as store, \
+             patch("web.web_payment_routes._optional_web_receipt_notice",
+                   return_value=False), \
+             patch("web.web_payment_routes._audit_payment"):
+            response = self.request_receipt()
+        self.assertEqual(response.status_code, 201, response.json)
+        self.assertEqual(response.json["status"], "pending")
+        self.assertEqual(response.json["admin_notification"], "web_only")
+        self.assertIn("Jangan bayar", response.json["message"])
         store.assert_called_once()
 
     def test_email_only_admin_followup_is_bound_to_original_receipt(self):
@@ -512,21 +517,31 @@ class PaymentWebTests(unittest.TestCase):
         self.assertEqual(r.status_code,400)
         upload.assert_not_called()
 
-    def test_full_rakan_quota_blocks_qr_receipt_and_displays_progress(self):
-        full=dict(CATALOG,progress_percentage="100.0%",rakan_open=False)
-        with patch("web.web_payment_routes._source",return_value=full), \
-             patch("web.web_payment_routes._existing",return_value=[]), \
-             patch("web.web_payment_routes._is_member",return_value=False), \
-             patch("web.web_payment_routes._telegram_document") as send:
-            cat=self.client.get("/api/web/payment/catalog",base_url=self.url)
-            q=self.client.get("/api/web/payment/qr",base_url=self.url)
-            r=self.request_receipt()
-        self.assertEqual(cat.status_code,200)
-        self.assertEqual(cat.json["progress_percentage"],"100.0%")
+    def test_full_rakan_quota_blocks_new_qr_but_accepts_old_payment_proof(self):
+        # Closing new enrolment may not discard a customer receipt for a
+        # transaction already made. Only the admin can approve an entitlement.
+        full = dict(CATALOG, progress_percentage="100.0%", rakan_open=False)
+        with patch("web.web_payment_routes._source", return_value=full), \
+             patch("web.web_payment_routes._existing", return_value=[]), \
+             patch("web.web_payment_routes._is_member", return_value=False), \
+             patch("web.web_payment_routes._private_receipt_storage",
+                   return_value=True), \
+             patch("web.web_payment_routes._payment_rest",
+                   side_effect=lambda conf, method, **kw:
+                   [{**kw["body"], "id": 93}]) as store, \
+             patch("web.web_payment_routes._optional_web_receipt_notice",
+                   return_value=False), \
+             patch("web.web_payment_routes._audit_payment"):
+            cat = self.client.get("/api/web/payment/catalog", base_url=self.url)
+            qr = self.client.get("/api/web/payment/qr", base_url=self.url)
+            receipt = self.request_receipt()
+        self.assertEqual(cat.status_code, 200, cat.json)
+        self.assertEqual(cat.json["progress_percentage"], "100.0%")
         self.assertFalse(cat.json["rakan_open"])
-        self.assertEqual(q.status_code,409)
-        self.assertEqual(r.status_code,409)
-        send.assert_not_called()
+        self.assertEqual(qr.status_code, 409)
+        self.assertEqual(receipt.status_code, 201, receipt.json)
+        self.assertEqual(receipt.json["status"], "pending")
+        store.assert_called_once()
 
     def test_already_member_cannot_pay_twice(self):
         with patch("web.web_payment_routes._source",return_value=CATALOG), \
