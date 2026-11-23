@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "audits/kp2027_bm_sjk_tahun1_52_rph_editorial_qa_20261123.json"
 PEDAGOGY = ROOT / "audits/kp2027_bm_sjk_pedagogy_26sp_20261123.json"
 ASSESSMENT = ROOT / "audits/kp2027_bm_sjk_pbd_pengayaan_26sp_20261123.json"
+ACTIVITY_TITLES = ROOT / "audits/kp2027_bm_sjk_activity_titles_26sp_20261123.json"
 VERIFIED = ROOT / "audits/kp2027_bm_sjk_sksp_verified_20261123.json"
 PAGE_WIDTH_MM = 210
 PAGE_HEIGHT_MM = 297
@@ -45,13 +46,17 @@ def qa_records():
     # enrich copies with phase-specific practices and verified SP sub-components.
     bank = json.loads(PEDAGOGY.read_text(encoding="utf-8"))
     assessment = json.loads(ASSESSMENT.read_text(encoding="utf-8"))
+    titles = json.loads(ACTIVITY_TITLES.read_text(encoding="utf-8"))
     verified = json.loads(VERIFIED.read_text(encoding="utf-8"))
     if (bank["status"] != "QA_EDITORIAL_UNAPPROVED"
             or bank["counts"] != {"sp": 26, "pdp": 52, "ready": 0}
             or set(bank["by_sp"]) != set(verified["sp"])
             or assessment["status"] != "QA_EDITORIAL_UNAPPROVED"
             or assessment["counts"] != {"sp": 26, "pdp": 52, "ready": 0}
-            or set(assessment["by_sp"]) != set(verified["sp"])):
+            or set(assessment["by_sp"]) != set(verified["sp"])
+            or titles["status"] != "QA_EDITORIAL_UNAPPROVED"
+            or titles["counts"] != {"sp":26,"phases":2,"pdp":52,"ready":0}
+            or set(titles["by_sp"]) != set(verified["sp"])):
         raise ValueError("Editorial supplement approval gate or SP inventory changed")
     enriched = []
     for original in records:
@@ -67,6 +72,15 @@ def qa_records():
                 for value in evidence.values())):
             raise ValueError("Invalid SP-specific PBD or enrichment evidence")
         r["editorial_assessment"] = evidence.copy()
+        phase = r["phase"]
+        per_sp = titles["by_sp"][r["sp_code"]]
+        if (phase not in ("penerokaan", "aplikasi")
+                or set(per_sp) != {"penerokaan", "aplikasi"}
+                or any(len(v) != 3 or not all(isinstance(t, str) and 8 <= len(t) <= 30
+                                               for t in v) for v in per_sp.values())):
+            raise ValueError("Invalid activity headings by source SP and phase")
+        r["editorial_activity_titles"] = [f"Aktiviti {i}: {name}"
+                                          for i, name in enumerate(per_sp[phase],1)]
         if r["sp_code"] == "1.2.2":
             r["sp_components"] = [
                 "; ".join(verified["special_sp_components"]["1.2.2"])
@@ -108,12 +122,9 @@ def _rows(record):
             phase_key = ("guided_pdp" if record["phase"] == "penerokaan"
                          else "application_pdp")
             actions.append(("Pengukuhan khusus", record["editorial_supplement"][phase_key]))
-        # Shorten the displayed heading only when the source label would
-        # split its final word into an isolated single character in Word.
-        display_title = ("Aktiviti 3: Semak dan baiki"
-                         if item["title"] == "Aktiviti 3: Pentaksiran dan penambahbaikan"
-                         else item["title"])
-        activities.append((display_title, actions))
+        # Headings are QA editorial labels keyed by verified SP and phase.
+        # Original activity instructions, titles, and curriculum remain unchanged.
+        activities.append((record["editorial_activity_titles"][i], actions))
     # A specific pupil check replaces the repeated generic pupil sentence;
     # the audited source remains unchanged and is preserved separately.
     activities.append(("Penutup", [
