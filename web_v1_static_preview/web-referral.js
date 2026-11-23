@@ -334,6 +334,7 @@
     void updateMembers();
     void updateAdmin();
   }
+  window.cikgulajuAffiliateAdminLoad = () => Promise.all([updateMembers(), updateAdmin()]);
   get("web-admin-tab")?.addEventListener("click", refreshAdmin);
   get("affiliate-admin-refresh").addEventListener("click", refreshAdmin);
   get("affiliate-admin-clear-member").addEventListener("click", () => {
