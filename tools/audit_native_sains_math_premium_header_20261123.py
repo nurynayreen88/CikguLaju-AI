@@ -49,10 +49,29 @@ def main():
                             "class":"", "date":"", "time":"", "students":"", "reflection":""
                         })
                         source = _source_text(runtime, state)
+                        rows = runtime._rph_rows(state, source)
+                        reflection = rows.get("REFLEKSI", "")
+                        assert isinstance(reflection, str) and reflection.strip()
+                        if code == "SCIENCE":
+                            # Actual verified Sains v26 source: only specific
+                            # Year2,4,5,6 criteria support a compact 4/5
+                            # reflection. Year3 is generic: do not fabricate.
+                            if year in (2, 4, 5, 6):
+                                assert "4/5 item" in reflection, (year, reflection)
+                                assert "mencapai objektif" not in reflection, (year, reflection)
+                                assert "____ / ____ murid" in reflection, (year, reflection)
+                            else:
+                                assert "4/5 item" not in reflection, (year, reflection)
                         unique = "native_header_" + uuid.uuid4().hex[:14]
                         word = Path(runtime.create_word_file(state, source, unique))
                         pdf = Path(runtime.create_pdf_file(state, source, unique+"p"))
                         doc = Document(str(word))
+                        if code == "SCIENCE":
+                            # Word must contain the exact same reflection
+                            # returned from the active _rph_rows adapter.
+                            assert doc.tables[-1].rows[-1].cells[1].text == reflection, (
+                                year, "Word reflection differs from source-linked rows"
+                            )
                         title_candidates = [(i,p.text) for i,p in enumerate(doc.paragraphs)
                                             if "RANCANGAN PENGAJARAN HARIAN" in p.text.casefold().upper()]
                         title_outside = bool(title_candidates)
@@ -68,6 +87,13 @@ def main():
                             page_count = len(pdf_doc)
                             pdf_title = bool(pdf_doc[0].search_for("RANCANGAN PENGAJARAN HARIAN"))
                             dimensions = (round(pdf_doc[0].rect.width), round(pdf_doc[0].rect.height))
+                            if code == "SCIENCE":
+                                extracted = " ".join(pdf_doc[0].get_text().split())
+                                expected = " ".join(reflection.split())
+                                assert expected in extracted, (
+                                    year, "Native PDF reflection lacks source-specific text",
+                                    expected, extracted[-240:],
+                                )
                         basename = f"{code}_YEAR{year}"
                         copy2(word, outdir / f"{basename}.docx")
                         copy2(pdf, outdir / f"{basename}.pdf")

@@ -126,6 +126,46 @@ def _focus(rows, language):
     return focused if len(focused) <= 135 else None
 
 
+_SCIENCE_4_OF_5 = re.compile(
+    r"^Murid dapat (?P<target>.+?) dengan betul pada sekurang-kurangnya "
+    r"4 daripada 5 item atau situasi yang diberi\.?$",
+    re.IGNORECASE,
+)
+
+
+def _science_compact_reflection(rows, current):
+    """Use only the exact verified Sains criterion, with no longer footer.
+
+    A blank numerator/denominator is a teacher field, not a fabricated
+    achievement. Unsupported or generic criteria leave the existing
+    reflection untouched instead of guessing from the topic or SP.
+    """
+    if not isinstance(current, str) or not current.strip():
+        return None
+    raw = rows.get("KRITERIA KEJAYAAN")
+    if not isinstance(raw, str):
+        return None
+    criterion = " ".join(raw.split())
+    match = _SCIENCE_4_OF_5.fullmatch(criterion)
+    if match is None:
+        return None
+    target = match.group("target").strip()
+    if (not 12 <= len(target) <= 110
+            or any(generic in target.casefold() for generic in (
+                "kps/konsep", "mengikut sp", "fokus pembelajaran",
+                "fokus pdp", "tugasan berpandu",
+            ))
+            or not re.search(r"[A-Za-z]{4,}", target)):
+        return None
+    candidate = (
+        "____ / ____ murid " + target +
+        " (4/5 item). Baki dibimbing."
+    )
+    # Critical A4 guard: Sains Year 2-6 has an approved 1-page footer.
+    # This is a replacement of the generic reflection, not an extra row.
+    return candidate if len(candidate) <= len(current.strip()) else None
+
+
 def objective_linked_reflection(state, rows):
     """Return a row copy only where a generic reflection has real lesson evidence."""
     if not isinstance(rows, dict):
@@ -141,6 +181,13 @@ def objective_linked_reflection(state, rows):
     current = rows.get("REFLEKSI")
     if current is not None and not _generic_reflection(current):
         return rows
+    subject = " ".join(str(state.get("subject") or "").strip().casefold().split())
+    if subject == "sains":
+        compact = _science_compact_reflection(rows, current)
+        if compact is not None:
+            revised = dict(rows)
+            revised["REFLEKSI"] = compact
+            return revised
     evidence = _focus(rows, language)
     if not evidence:
         return rows
@@ -164,7 +211,6 @@ def objective_linked_reflection(state, rows):
     # source-specific reflection ONLY when it is NO LONGER than the existing
     # generic footer. This prevents untested page-height increases; DLP,
     # PPKI, Arabic and KP2027 are still fully out of scope.
-    subject = " ".join(str(state.get("subject") or "").strip().casefold().split())
     if len(generated) > 215:
         return rows
     if subject in ("pendidikan islam", "bahasa melayu"):
