@@ -15,7 +15,7 @@ def main():
             note = str(row["activity_note"] or "")
             print("SOURCE_ACTIVITY_NOTE_REPR", repr(note))
             print("SOURCE_NOTE_LENGTH", len(note))
-            orphan = re.compile(r"(?m)(?<=[^\\s])\\s+2\\.(?=\\s*$)")
+            orphan = re.compile(r"(?m)(?<=\S)\s+2\.(?=\s*$)")
             print("SAMPLE_TRAILING_TWO_MATCH", bool(orphan.search(note)))
             matches = []
             for entry in db.execute("SELECT id,activity_note FROM rpt_entries WHERE subject='Pendidikan Islam' AND verified=1"):
