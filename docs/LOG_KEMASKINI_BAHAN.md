@@ -88,3 +88,10 @@
 - Audit RPT 93 PdP: 64 sumber + 29 calon QA = 93, merangkumi 83 SP unik. Semua julat tarikh Kumpulan A/B berada dalam segmen sekolah 2027, hari minggu kumpulan betul, dan sebelum sasaran pemilik 5 Nov; **0 padanan bermasalah** pada semakan pemetaan. Tarikh cuti khusus negeri/perayaan dan pengesahan sekolah tetap menjadi syarat akhir.
 - Semua 29 kekal `QA_ONLY_NOT_PUBLISHED`, **0 READY**; tiada perubahan Supabase/Web/kuota/Telegram. Ujian regresi ialah `tests/test_kp2027_alam29_qa_format_20261123.py`, bukti JSON `audits/kp2027_alam_t1_29_rph_native_qa_format_20261123.json`.
 
+
+## 23 November 2026 — KP2027 Tahun 1: pembetulan nama muat turun sebenar RPT PDF/Word di telefon
+
+- Ujian **ketikan sebenar** Chromium mudah alih mendedahkan isu pada 6 RPT Word/PDF (BM SK, Matematik, Alam dan Manusia): pautan `download=""` menyimpan nama daripada hujung URL (`matematik.pdf`, dll), bukan nama fail RPT CikguLaju yang lengkap, walaupun server menghantar Content-Disposition.
+- UI `web_v1_static_preview/index.html` kini menetapkan nama RPT KP2027 yang sama dengan nama ahli arkib RPT SHA-checked pada setiap pautan PDF/Word. Tiada perubahan untuk RPT KSSR/SJKC/SJKT/PPKI, kuota, personalisasi berbayar atau Word/PDF itu sendiri.
+- Regression baharu `tests/test_kp2027_rpt_mobile_true_one_tap_20261123.py` mengetik fail Word dan PDF sebenar bagi 3 subjek pada viewport telefon, mengesahkan nama fail dan SHA-256 byte, tiada tab/pemapar lain, serta butang hilang apabila akses tidak diberi.
+- Sekuriti: mock katalog/pelayan pada browser ujian sahaja, tanpa akaun dan storan pengguna. Dokumen RPH KP2027 yang masih QA tidak dibuka.
