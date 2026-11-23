@@ -36,6 +36,24 @@ _VERIFIED = {
     ("Sains", 6): ("13.1", "Kebaikan dan Keburukan Teknologi",
         "13.1.1", "Menyatakan maksud teknologi dan kepentingannya"),
 }
+# Additional *same-lesson* SP clauses explicitly present in the grouped
+# verified Math source. DPK/DSKP year-specific, not inferred from the title.
+_EXTRA_SPS = {
+    ("Matematik", 2): {
+        "1.1.1(ii)": "Menyebut sebarang nombor yang diberi dalam bentuk angka",
+    },
+    ("Matematik", 3): {
+        "1.1.1(iii)": "Memadan angka dengan namanya dalam perkataan",
+    },
+    ("Matematik", 4): {
+        "1.1.1(ii)": "Menyebut sebarang nombor yang diberi dalam bentuk angka",
+    },
+    ("Matematik", 5): {
+        "1.1.1(ii)": "Menyebut sebarang nombor dalam bentuk angka",
+        "1.1.1(iii)": "Menulis nombor dalam angka dan perkataan",
+    },
+}
+
 _MARKER = "_CIKGULAJU_SK_SP_VERIFIED_DESCRIPTIONS_20261124"
 
 
@@ -65,13 +83,20 @@ def display_verified_standards(state, rows):
 
     sk_code, sk_text, sp_code, sp_text = choice
     revisions = {}
-    for name, source_code, description in (
-        ("STANDARD KANDUNGAN", sk_code, sk_text),
-        ("STANDARD PEMBELAJARAN", sp_code, sp_text),
-    ):
-        shown = rows.get(name)
-        if isinstance(shown, str) and shown.strip() == source_code:
-            revisions[name] = f"{source_code} {description}"
+    shown_sk = rows.get("STANDARD KANDUNGAN")
+    if isinstance(shown_sk, str) and shown_sk.strip() == sk_code:
+        revisions["STANDARD KANDUNGAN"] = f"{sk_code} {sk_text}"
+    shown_sp = rows.get("STANDARD PEMBELAJARAN")
+    if isinstance(shown_sp, str):
+        # Source may combine 2 or 3 *individually coded* SP with semicolons.
+        # Expand ONLY when every one has an exact verified year-specific label.
+        # This is atomic: a single unknown clause means preserve the original.
+        sp_map = {sp_code: sp_text, **_EXTRA_SPS.get((subject, year_no), {})}
+        clauses = [piece.strip() for piece in shown_sp.split(";")]
+        if clauses and all(piece in sp_map for piece in clauses):
+            revisions["STANDARD PEMBELAJARAN"] = "; ".join(
+                f"{piece} {sp_map[piece]}" for piece in clauses
+            )
     if not revisions:
         return rows
     return {**rows, **revisions}
