@@ -63,6 +63,29 @@ def test_all_verified_combined_math_sp_clauses_have_complete_descriptions():
         assert display_verified_standards(state, bad)["STANDARD PEMBELAJARAN"] == bad["STANDARD PEMBELAJARAN"]
 
 
+def test_pdf_preserves_all_roman_subclauses_and_legacy_for_every_other_string():
+    from web.rph_math_multisp_pdf_guard_20261124 import (
+        _VERIFIED_COMPOUNDS, preserve_math_subclauses, install as install_pdf
+    )
+    assert len(_VERIFIED_COMPOUNDS) == 4
+    def legacy(value):
+        return "OLD_DEDUP_RESULT"
+
+    for exact in _VERIFIED_COMPOUNDS:
+        assert preserve_math_subclauses(exact, legacy) == exact
+    for other in ("1.1.1(i) Teori berlainan; 1.1.1(ii) Tiada bukti",
+                  "1.1.1(i) Membaca", "1.1.1(i);1.1.1(ii)",
+                  "٢.١ معيار تعليم", "<b>1.1.1(i)</b>"):
+        assert preserve_math_subclauses(other, legacy) == "OLD_DEDUP_RESULT"
+
+    runtime = SimpleNamespace(_dedup_standard_lines_v25216=legacy)
+    assert install_pdf(runtime) is True
+    assert install_pdf(runtime) is False
+    for exact in _VERIFIED_COMPOUNDS:
+        assert runtime._dedup_standard_lines_v25216(exact) == exact
+    assert runtime._dedup_standard_lines_v25216("Other subject") == "OLD_DEDUP_RESULT"
+
+
 def test_no_guessing_multistandard_specialty_or_other_lessons():
     example = _state("Sains", 5)
     source = {"STANDARD KANDUNGAN": "2.1",
