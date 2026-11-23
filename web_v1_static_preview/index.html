@@ -1290,7 +1290,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </section>
 <section id="view-payment" class="app-view" aria-labelledby="view-payment-heading" hidden>
 <h2 id="view-payment-heading">🏆 Rakan Pembangun</h2>
-<p>RM20 sekali bayar untuk akses sepanjang CikguLaju AI beroperasi. Buat bayaran menggunakan QR DuitNow atau link Touch ’n Go, kemudian hantar resit terus di Web. Pengesahan masih dilakukan oleh admin Telegram.</p>
+<p>RM20 sekali bayar untuk akses sepanjang CikguLaju AI beroperasi. Buat bayaran menggunakan QR DuitNow atau link Touch ’n Go, kemudian hantar resit terus di Web. Resit disimpan secara peribadi dalam Web CikguLaju dan disemak secara manual oleh admin. Telegram hanyalah makluman tambahan.</p>
 <section id="rakan-progress" class="rakan-progress" hidden aria-label="Status penyertaan Rakan Pembangun">
   <div class="rakan-progress-top"><strong>Rakan Pembangun Early Bird</strong><span><strong id="rakan-progress-percent">–</strong> telah menyertai</span></div>
   <div class="rakan-progress-track" role="progressbar" aria-label="Peratus Rakan Pembangun telah menyertai" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="rakan-progress-bar"><div id="rakan-progress-fill"></div></div>
@@ -1310,7 +1310,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   </div>
   <label for="payment-receipt">Muat naik resit bayaran</label>
   <input id="payment-receipt" type="file" accept=".jpg,.jpeg,.png,.webp,.pdf,image/jpeg,image/png,image/webp,application/pdf">
-  <p class="notice">PDF atau gambar resit, maksimum 4 MB. Pastikan jumlah bayaran sepadan dengan pakej. Resit baharu akan dihantar kepada bot sebagai bukti untuk semakan admin.</p>
+  <p class="notice">PDF atau gambar resit, maksimum 4 MB. Pastikan jumlah bayaran sepadan dengan pakej. Resit terus disimpan dalam Web untuk semakan admin. Telegram tidak diperlukan. Akses hanya diaktifkan selepas admin mengesahkan bayaran sebenar.</p>
   <button type="button" id="payment-submit" disabled>Hantar Resit Untuk Pengesahan</button>
 </section>
 <p id="payment-message" class="notice" role="status" aria-live="polite"></p>
@@ -3063,7 +3063,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
 <script src="/assets/rph-today.js?v=muat-turun-audio-english-20261120"></script>
 <script src="/assets/teacher-profile.js?v=pilihan-subjek-20261117"></script>
-<script src="/assets/web-payment.js?v=resit-ralat-stabil-20261123"></script>
+<script src="/assets/web-payment.js?v=resit-web-utama-20261123"></script>
 <script src="/assets/web-referral.js?v=pusat-admin-affiliate-open-20261123"></script>
 <script src="/assets/admin-usage.js?v=pusat-admin-actions-affiliate-20261123"></script>
 <script src="/assets/web-feedback.js?v=pusat-admin-alert-20261123"></script>
