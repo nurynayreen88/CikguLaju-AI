@@ -12,6 +12,7 @@ on:
       - 'web/rpt_school_cover.py'
       - 'tests/test_kp2027_rpt_profile_cover_20261122.py'
       - 'tests/test_kp2027_rpt_ab_combined_20261122.py'
+      - 'tests/test_rpt_word_paid_founder_gate_20261123.py'
       - 'web/kp2027_year1_rpt_bundle.py'
       - 'web/rpt_2027_all_http.py'
       - 'web_v1_static_preview/index.html'
@@ -36,6 +37,8 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_kp2027_rpt_ab_combined_20261122.py' -v
       - name: Verify paid teacher profile school logo on Word/PDF; free unchanged
         run: python -m unittest discover -s tests -p 'test_kp2027_rpt_profile_cover_20261122.py' -v
+      - name: Verify premium Word gate for founder, paid VIP and free/expired
+        run: python -m unittest discover -s tests -p 'test_rpt_word_paid_founder_gate_20261123.py' -v
       - name: Python source syntax
         run: python -m py_compile web/kp2027_year1_rpt_bundle.py web/kp2027_year1_rpt_combined.py web/kp2027_year1_rpt_personalize.py web/rpt_2027_all_http.py
       - name: Browser JavaScript syntax
