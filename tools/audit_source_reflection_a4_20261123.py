@@ -85,9 +85,11 @@ def check_one(runtime, path, row, code, output_dir):
     if code == "PI":
         assert "سورة" in text
         assert "موري" in text
-        assert "2. ممبتولكن باچاءن" in text
-        assert "3. ممبيمبيڠ راكن سباي" in text
-        assert "4. ݢورو مريكوت ڤنچاڤاين" in text
+        assert "٢. ممبتولكن باچاءن" in text
+        assert "٣. ممبيمبيڠ راكن سباي" in text
+        assert "٤. ݢورو مريكوت ڤنچاڤاين" in text
+        # Render-only change: Unicode Arabic-Indic digits in every visible Word cell.
+        assert not any("0" <= char <= "9" for char in text)
     # Rendering an authentic active source to PDF from the *Word* validates
     # 1.5 paragraph spacing and real page boundaries (not theoretical height).
     if shutil.which("libreoffice"):
