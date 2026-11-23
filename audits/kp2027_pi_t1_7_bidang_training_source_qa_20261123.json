@@ -1,0 +1,112 @@
+{
+  "id": "kp2027_pi_t1_7_bidang_training_source_qa_20261123",
+  "date": "2026-11-23",
+  "curriculum": "KP2027",
+  "subject": "Pendidikan Islam",
+  "year": 1,
+  "status": "QA_SOURCE_ONLY_NOT_READY",
+  "approved_to_publish": false,
+  "knowledge_tier": "SECONDARY_TEACHER_TRAINING_NOT_PRIMARY_DK",
+  "training_source": {
+    "title": "SR SLOT 1_PENGENALAN UMUM DK PI T1.pdf",
+    "google_drive_id": "1yLEViJZRtZeBmgXYWQe0pE2zJ7m4bt1Y",
+    "page_count": 55,
+    "sha256": "0ec59771a9a54f3682dd7ceb026bb4f506632849964adb52d9de032cc6a877b5",
+    "cited_pages": [
+      25,
+      33,
+      34,
+      41,
+      51
+    ],
+    "is_primary_curriculum_document": false
+  },
+  "official_dk_candidate": {
+    "source_page": "https://sites.google.com/moe-dl.edu.my/upippdsaratok/kp-2027",
+    "file_id": "1epPLRy2epJ40Wk68FXZIyilro5vBgl9s",
+    "filename": "6. DKP2027 PENDIDIKAN ISLAM TAHUN 1_PENATARAN 2.pdf",
+    "metadata_verified": true,
+    "file_size_bytes": 2259248,
+    "pdf_text_verified": false,
+    "last_download_error": "403",
+    "status": "FOUND_NOT_READ"
+  },
+  "official_ppki_dk_candidate": {
+    "source_page": "https://sites.google.com/moe-dl.edu.my/upippdsaratok/kp-2027",
+    "file_id": "1bPu7O98BamtoSbKXBKVmCIfEIvNCE2b8",
+    "filename": "24. DKP2027 PEND.ISLAM (PKHAS) TAHUN 1_PENATARAN 2.pdf",
+    "metadata_verified": true,
+    "file_size_bytes": 2523601,
+    "pdf_text_verified": false,
+    "last_download_error": "403",
+    "status": "FOUND_NOT_READ"
+  },
+  "domains": [
+    {
+      "name": "Al-Quran",
+      "subfield_codes": [
+        "1.1",
+        "1.2"
+      ]
+    },
+    {
+      "name": "Hadis",
+      "subfield_codes": [
+        "2.1"
+      ]
+    },
+    {
+      "name": "Akidah",
+      "subfield_codes": [
+        "3.1"
+      ]
+    },
+    {
+      "name": "Fiqah",
+      "subfield_codes": [
+        "4.1",
+        "4.2"
+      ]
+    },
+    {
+      "name": "Akhlak dan Tasawuf",
+      "subfield_codes": [
+        "5.1"
+      ]
+    },
+    {
+      "name": "Sirah",
+      "subfield_codes": [
+        "6.1"
+      ]
+    },
+    {
+      "name": "Jawi",
+      "subfield_codes": [
+        "7.1"
+      ]
+    }
+  ],
+  "domain_count": 7,
+  "subfield_count": 9,
+  "sp_codes_validated": 0,
+  "time_allocation": {
+    "suggested_periods_per_week": 6,
+    "source_page": 51,
+    "is_final": false
+  },
+  "qa_files": {
+    "owner_only_drive_word": "1OQHy8M_xhSoBM_FPvvYZ208Jjt1hskzn",
+    "owner_only_drive_pdf": "1Zbtbvr3j560JJDO32Ys10F52E2VFS50q",
+    "owner_only_drive_json": "1nwMkmqK00Gl8VT0COtIzIRdT2Z2RAy6p",
+    "render_pdf_pages": 1,
+    "visually_checked": true
+  },
+  "warnings": [
+    "These 1.1/1.2 etc are subfields, not Standard Pembelajaran code numbers",
+    "Do not infer or reuse KSSR 2017 SP for KP2027",
+    "Do not label this mapping a complete annual RPT or teacher-ready RPH",
+    "Need readable primary DK PDF, official SP and confirmed 2027 allocation before any RPH/READY approval",
+    "No production Web, Supabase, quota, payments or user record changes"
+  ]
+}
