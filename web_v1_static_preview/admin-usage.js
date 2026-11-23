@@ -406,6 +406,70 @@
       });
       li.append(chat);
     }
+    // Admin-only manual Rakan grant. No payment or referral is recorded.
+    if (item.access_status !== "rakan"
+        && typeof item.chat_user_id === "string"
+        && /^[1-9][0-9]{0,18}$/.test(item.chat_user_id)) {
+      const controls = document.createElement("div");
+      controls.className = "admin-user-manual-grant";
+      const note = document.createElement("p");
+      note.textContent = "Aktifkan akses seumur hidup tanpa pengesahan bayaran. Hanya untuk pemberian manual oleh admin.";
+      const label = document.createElement("label");
+      label.textContent = "Sebab pengaktifan";
+      const reason = document.createElement("select");
+      for (const [value, text] of [
+        ["hadiah_promosi","Hadiah / promosi"],
+        ["rakan_awal","Rakan awal pembangunan"],
+        ["pembetulan_akses","Pembetulan akses"],
+        ["lain_lain","Lain-lain"]
+      ]) {
+        const option = document.createElement("option");
+        option.value = value;
+        option.textContent = text;
+        reason.append(option);
+      }
+      label.append(reason);
+      const grant = document.createElement("button");
+      grant.type = "button";
+      grant.textContent = "🎖️ Aktifkan Rakan Pembangun";
+      const outcome = document.createElement("p");
+      outcome.setAttribute("role","status");
+      grant.addEventListener("click", async () => {
+        const identity = item.email || item.display_name
+          || (item.telegram_id ? "Telegram " + item.telegram_id : "akaun ini");
+        if (!window.confirm("Aktifkan Rakan Pembangun untuk " + identity +
+            " tanpa bayaran?\\nSebab: " + reason.selectedOptions[0].textContent +
+            "\\nTindakan ini menggunakan 1 slot (kecuali akaun admin), direkod dan tidak memberi komisen affiliate.")) return;
+        grant.disabled = reason.disabled = true;
+        outcome.textContent = "Mengesahkan pengaktifan…";
+        try {
+          const res = await fetch(
+            "/api/web/admin/users/" + encodeURIComponent(item.chat_user_id) + "/grant-rakan",
+            { method: "POST", credentials: "same-origin", redirect: "error",
+              cache: "no-store", headers: {"Content-Type": "application/json"},
+              body: JSON.stringify({reason:reason.value}) }
+          );
+          const result = await res.json().catch(() => ({}));
+          if (!res.ok || result.granted !== true)
+            throw Error(result.error || "Pengaktifan tidak dapat disahkan.");
+          outcome.textContent = "✅ Akses Rakan Pembangun sudah diaktifkan. Baki slot: " +
+            result.remaining + ".";
+          status.textContent = "Pengaktifan manual berjaya. Rekod disimpan dalam audit admin.";
+          badge.textContent = "Rakan Pembangun";
+          controls.remove();
+          window.cikgulajuAdminInit?.();
+          window.cikgulajuAdminNotificationsRefresh?.();
+          // Refresh only after successful authoritative confirmation.
+          void load();
+        } catch (error) {
+          outcome.textContent = error.message ||
+            "Status belum disahkan. Muat semula senarai sebelum mencuba lagi.";
+          grant.disabled = reason.disabled = false;
+        }
+      });
+      controls.append(note,label,grant,outcome);
+      li.append(controls);
+    }
     return li;
   }
 
