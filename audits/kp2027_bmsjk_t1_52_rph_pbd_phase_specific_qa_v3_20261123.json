@@ -1,0 +1,55 @@
+{
+  "id": "kp2027_bmsjk_t1_52_rph_pbd_phase_specific_qa_v3_20261123",
+  "date": "2026-11-23",
+  "subject": "Bahasa Melayu SJK",
+  "curriculum": "KP2027",
+  "year": 1,
+  "status": "QA_ONLY_NOT_READY",
+  "academic_approved": false,
+  "web_publish": false,
+  "ready_count": 0,
+  "source_version": "QA V2 2026-11-23 unified tables, 52 Word+52 PDF",
+  "change_scope": "Pentaksiran / PBD in the second (aplikasi) PdP of each of 26 SK/SP-aligned pairs only",
+  "counts": {
+    "unique_sp": 26,
+    "pdp": 52,
+    "phase_penerokaan_unchanged": 26,
+    "phase_aplikasi_pbd_rewritten": 26,
+    "pbd_distinct_between_phases": 26,
+    "docx_valid": 52,
+    "pdf_valid": 52,
+    "pdf_one_page": 52,
+    "word_pdf_content_parity": 52,
+    "unchanged_sk_sp_objective_activities": 52,
+    "word_activity_title_bold_three_per_document": 52,
+    "word_main_table_19_rows": 52
+  },
+  "private_drive": {
+    "archive_file_id": "1MGAdUrzBFyPiF9bqVYDz_AO4oxLav-39",
+    "shared": false,
+    "archive_filename": "CIKGULAJU_KP2027_BMSJK_T1_52_RPH_PBD_BERBEZA_QA_V3_20261123.zip",
+    "archive_bytes": 3512969,
+    "archive_sha256": "be2ebe173b4e3d9dae612a2c9eb714c982ee533525b757b90601c00e8c363db7",
+    "zip_entries": 105
+  },
+  "qa_evidence": {
+    "independent_audit_drive_id": "1fsUxvmeJ0QdXfjs31pBw0YCfe9xw_x1V",
+    "visual_rendered_docx_pdp": [
+      2,
+      26,
+      52
+    ],
+    "printed_reflection_label_only": "Refleksi",
+    "no_auto_manual_draft_labels_in_pdf": true,
+    "no_pdf_text_outside_page": true,
+    "original_source_pdbs_kept_for_first_phase": true,
+    "source_standard_text_untouched": true
+  },
+  "restrictions": [
+    "No production upload or READY promotion; existing KP2027 material unaffected",
+    "Original V2 QA archive preserved as rollback",
+    "Curriculum annual RPT placement and educational QA still required before publication",
+    "Rakan Pembangun and subscription gates, RPH quotas, billing, downloads and user records unchanged",
+    "This records independent technical QC, not official KPM academic approval"
+  ]
+}
