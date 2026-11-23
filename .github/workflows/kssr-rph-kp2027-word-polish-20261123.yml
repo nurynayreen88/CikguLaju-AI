@@ -1,0 +1,32 @@
+name: KSSR RPH KP2027 visual polish Word QA
+on:
+  pull_request:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - 'web/rph_kp2027_word_polish.py'
+      - 'web/unified_rph_web.py'
+      - 'tests/test_rph_kp2027_word_polish_20261123.py'
+      - 'web/rph_login_canonical_layout_20261121.json'
+      - '.github/workflows/kssr-rph-kp2027-word-polish-20261123.yml'
+  push:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - 'web/rph_kp2027_word_polish.py'
+      - 'web/unified_rph_web.py'
+      - 'tests/test_rph_kp2027_word_polish_20261123.py'
+      - 'web/rph_login_canonical_layout_20261121.json'
+jobs:
+  verify-word-source-integrity:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check 'python-docx==1.2.0' 'lxml==6.0.2'
+      - name: Verify 16 subject styles and byte-preserved Word attachments
+        run: python -m unittest -v tests.test_rph_kp2027_word_polish_20261123
