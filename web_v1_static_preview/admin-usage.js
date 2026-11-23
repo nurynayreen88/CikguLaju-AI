@@ -608,6 +608,8 @@
       await window.cikgulajuFeedbackAdminLoad?.();
       destination=get("web-feedback-admin-heading");
     }else if(kind==="affiliate"){
+      get("affiliate-admin-filter").value="pending";
+      await window.cikgulajuAffiliateAdminLoad?.();
       destination=get("affiliate-admin");
     }else if(kind==="users"){
       const directory=get("admin-users-directory");
