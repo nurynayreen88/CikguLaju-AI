@@ -7,6 +7,8 @@ bytes were accepted by Telegram. Admin review uses the shared Supabase payment t
 No anonymous user IDs, public Storage links, duplicate pending rows, automatic
 approval, paywall bypass, or new database columns.
 """
+import hashlib
+import hmac
 import json
 import mimetypes
 import os
@@ -28,6 +30,8 @@ MAX_RECEIPT = 4 * 1024 * 1024
 MAX_REPLY = 32768
 CONTENT_TYPES = {"application/pdf": ".pdf", "image/png": ".png",
                  "image/jpeg": ".jpg", "image/webp": ".webp"}
+WEB_RECEIPT_BUCKET = "cikgulaju-payment-receipts"
+WEB_RECEIPT_PATH = re.compile(r"receipts/[1-9][0-9]{0,18}/[0-9a-f]{32}\.(?:jpg|png|webp|pdf)\Z")
 
 
 @bp.after_request
@@ -228,6 +232,81 @@ def _validate_receipt(content, mime):
     if mime not in (actual_mime, "", None, "application/octet-stream"):
         raise ValueError("Format resit dan kandungan fail tidak sepadan")
     return ext
+
+
+def _private_receipt_storage(conf, method, path, *, data=None, mime=None):
+    """Store and retrieve receipts server-side in a private Supabase bucket.
+
+    No browser-facing storage path, public URL or signed storage URL.
+    Files are created once (no upsert) and reviewed only after admin auth.
+    """
+    if method not in ("POST", "GET") or not WEB_RECEIPT_PATH.fullmatch(path):
+        raise ProfileUnavailable("Laluan resit peribadi tidak sah")
+    base = _safe_host(conf["supabase_url"])
+    token = conf.get("supabase_key", "")
+    if not isinstance(token, str) or len(token) < 20:
+        raise ProfileUnavailable("Akses simpanan resit tidak sah")
+    path_prefix = ("/storage/v1/object/" if method == "POST"
+                   else "/storage/v1/object/authenticated/")
+    url = base + path_prefix + WEB_RECEIPT_BUCKET + "/" + path
+    headers = {"apikey": token, "Cache-Control": "no-store"}
+    if not token.startswith("sb_secret_"):
+        headers["Authorization"] = "Bearer " + token
+    if method == "POST":
+        if not isinstance(data, bytes) or not 700 <= len(data) <= MAX_RECEIPT:
+            raise ProfileUnavailable("Saiz resit tidak sah")
+        if mime not in CONTENT_TYPES:
+            raise ProfileUnavailable("Jenis resit tidak sah")
+        headers.update({"Content-Type": mime, "x-upsert": "false"})
+    try:
+        req = Request(url, method=method,
+                      data=data if method == "POST" else None, headers=headers)
+        with build_opener(HTTPSHandler(), NoRedirect()).open(req, timeout=18) as resp:
+            if resp.status not in (200, 201):
+                raise ProfileUnavailable("Simpanan resit belum disahkan")
+            raw = resp.read((4096 if method == "POST" else MAX_RECEIPT) + 1)
+        if len(raw) > (4096 if method == "POST" else MAX_RECEIPT):
+            raise ProfileUnavailable("Respons simpanan resit tidak sah")
+        if method == "POST":
+            receipt_reply = json.loads(raw)
+            if not isinstance(receipt_reply, dict):
+                raise ProfileUnavailable("Simpanan resit belum disahkan")
+            confirmed_path = receipt_reply.get("Key")
+            if confirmed_path not in (None, WEB_RECEIPT_BUCKET + "/" + path):
+                raise ProfileUnavailable("Laluan simpanan resit tidak sepadan")
+            return True
+        return raw
+    except (HTTPError, URLError, OSError, ValueError, TypeError, KeyError):
+        raise ProfileUnavailable("Simpanan resit Web belum tersedia") from None
+
+
+def _optional_web_receipt_notice(uid, request_id):
+    """Telegram is notification-only; neither the receipt nor Pending depends on it."""
+    try:
+        from web.admin_usage_web import allowed_admin_ids
+        admins = sorted(i for i in allowed_admin_ids()
+                        if type(i) is int and 0 < i < 10**18)
+        token = os.environ.get("CIKGULAJU_WEB_BOT_TOKEN", "")
+        if not admins or not re.fullmatch(r"[0-9]{5,15}:[A-Za-z0-9_-]{20,}", token):
+            return False
+        payload = json.dumps({
+            "chat_id": str(admins[0]),
+            "text": ("Resit Web CikguLaju telah disimpan secara peribadi. "
+                     "Permohonan Pending #" + str(request_id) +
+                     " untuk akaun " + str(uid) +
+                     ". Buka Pusat Admin → Bayaran untuk menyemak resit dan transaksi.")
+        }, separators=(",", ":")).encode("utf-8")
+        req = Request("https://api.telegram.org/bot" + token + "/sendMessage",
+                      data=payload, method="POST",
+                      headers={"Content-Type": "application/json"})
+        with build_opener(HTTPSHandler(), NoRedirect()).open(req, timeout=5) as resp:
+            if resp.status != 200:
+                return False
+            result = json.loads(resp.read(4096))
+        return isinstance(result, dict) and result.get("ok") is True
+    except (HTTPError, URLError, OSError, ValueError, TypeError, KeyError):
+        # No Telegram failure may affect payment submission success.
+        return False
 
 
 def _receipt_destinations(uid):
