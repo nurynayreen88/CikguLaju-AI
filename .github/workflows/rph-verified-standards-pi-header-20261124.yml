@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - "web/rph_verified_standard_labels_20261124.py"
+      - "web/rph_math_multisp_pdf_guard_20261124.py"
       - "web/rph_pi_native_pdf_header_20261124.py"
       - "web/rph_premium_header_20261121.py"
       - "web/rph_native_pdf_header_20261121.py"
