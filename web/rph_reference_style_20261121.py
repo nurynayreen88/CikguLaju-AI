@@ -27,7 +27,7 @@ PALETTES = {
     "matematik": "F0EBFA",
     "mathematics": "F0EBFA",
     "sains": "E7F3EA",
-    "pendidikan islam": "F3F1DF",
+    "pendidikan islam": "ECE4F6",
     "sejarah": "F8EEDF",
     "pendidikan muzik": "EAF5EA",
     "muzik": "EAF5EA",
