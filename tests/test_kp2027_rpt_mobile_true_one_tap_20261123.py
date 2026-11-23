@@ -1,20 +1,24 @@
-"""Mobile Chromium: all 6 approved KP2027 Year 1 combined RPT files download on one tap.
+"""Mobile Chromium: 6 KP2027 Year 1 RPT files download from a real local HTTP server.
 
-Offline, synthetic catalog and same-origin HTTP responses. Uses actual SHA-checked
-RPT PDF/Word source bytes; never needs accounts, Supabase or production login.
+No browser-route emulation of file downloads: actual HTTP Content-Disposition
+responses are streamed from the SHA-pinned approved bundle. Accounts, paid
+status, databases and production URLs are never accessed.
 """
 from __future__ import annotations
 
-import hashlib
-import unittest
+from hashlib import sha256
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+import json
 from pathlib import Path
+import threading
+import unittest
 from urllib.parse import urlsplit
+
 from playwright.sync_api import sync_playwright
 from web.kp2027_year1_rpt_combined import SUBJECTS, document, ready
 
 ROOT = Path(__file__).resolve().parents[1]
 WEB = ROOT / "web_v1_static_preview"
-HOST = "https://kp2027-direct-download.test"
 RPT_PREFIX = "/api/rpt/2027/kp2027/tahun-1/gabungan/"
 LABELS = {
     "matematik": "Matematik",
@@ -23,10 +27,77 @@ LABELS = {
 }
 
 
+class LocalRPTServer(BaseHTTPRequestHandler):
+    def log_message(self, *args):
+        pass
+
+    def send_bytes(self, body, mime, *, disposition=None, status=200):
+        self.send_response(status)
+        self.send_header("Content-Type", mime)
+        self.send_header("Content-Length", str(len(body)))
+        self.send_header("Cache-Control", "private, no-store")
+        if disposition:
+            self.send_header("Content-Disposition", disposition)
+        self.end_headers()
+        self.wfile.write(body)
+
+    def do_GET(self):
+        path = urlsplit(self.path).path
+        self.server.paths.append(path)
+        if path == "/":
+            return self.send_bytes((WEB / "index.html").read_bytes(), "text/html; charset=utf-8")
+        if path == "/api/rpt/2027/catalog":
+            payload = {
+                "subjects": [],
+                "personalization_allowed": False,
+                "kp2027_rpt_available": [
+                    {"code": code, "label": LABELS[code], "year": 1,
+                     "kp2027_combined": True,
+                     "pdf_ready": True, "docx_ready": True,
+                     "download_enabled": self.server.allowed,
+                     "status": "RPT SEMAKAN PELAKSANAAN"}
+                    for code in SUBJECTS
+                ],
+            }
+            return self.send_bytes(
+                json.dumps(payload, ensure_ascii=False).encode("utf-8"), "application/json")
+        if path.startswith(RPT_PREFIX):
+            suffix = path[len(RPT_PREFIX):]
+            if "." not in suffix:
+                return self.send_bytes(b"Not found", "text/plain", status=404)
+            code, fmt = suffix.rsplit(".", 1)
+            if not self.server.allowed:
+                return self.send_bytes(b'{"error":"Akses diperlukan"}',
+                                       "application/json", status=403)
+            if code not in SUBJECTS or fmt not in {"pdf", "docx"}:
+                return self.send_bytes(b"Not found", "text/plain", status=404)
+            payload, filename, digest = document(code, fmt)
+            assert sha256(payload).hexdigest() == digest
+            mime = ("application/pdf" if fmt == "pdf" else
+                    "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
+            return self.send_bytes(
+                payload, mime,
+                disposition='attachment; filename="' + filename + '"')
+        if path.startswith("/assets/"):
+            asset = WEB / path.rsplit("/", 1)[-1]
+            if asset.is_file():
+                mime = ("application/javascript" if asset.suffix == ".js" else
+                        "application/json" if asset.suffix == ".json" else
+                        "application/octet-stream")
+                return self.send_bytes(asset.read_bytes(), mime)
+        return self.send_bytes(b"Not found", "text/plain", status=404)
+
+
 class KP2027OneTapMobileRPT(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         assert ready(), "Source-locked KP2027 RPT bundle missing"
+        cls.server = ThreadingHTTPServer(("127.0.0.1", 0), LocalRPTServer)
+        cls.server.allowed = True
+        cls.server.paths = []
+        cls.host = "http://127.0.0.1:" + str(cls.server.server_address[1])
+        cls.thread = threading.Thread(target=cls.server.serve_forever, daemon=True)
+        cls.thread.start()
         cls.playwright = sync_playwright().start()
         cls.browser = cls.playwright.chromium.launch(headless=True)
 
@@ -34,76 +105,25 @@ class KP2027OneTapMobileRPT(unittest.TestCase):
     def tearDownClass(cls):
         cls.browser.close()
         cls.playwright.stop()
+        cls.server.shutdown()
+        cls.server.server_close()
+        cls.thread.join(timeout=10)
 
-    def _run(self, *, available=True):
+    def _run(self, *, available):
+        self.server.allowed = available
+        self.server.paths.clear()
         ctx = self.browser.new_context(
             viewport={"width": 390, "height": 844},
             device_scale_factor=2,
             is_mobile=True, has_touch=True,
-            accept_downloads=True,
-        )
+            accept_downloads=True)
         page = ctx.new_page()
-        paths = []
         pages = []
         downloads = []
-        page.on("download", lambda download: downloads.append(download.suggested_filename))
+        page.on("download", lambda item: downloads.append(item.suggested_filename))
         ctx.on("page", lambda p: pages.append(p))
-
-        def mock(route):
-            path = urlsplit(route.request.url).path
-            paths.append(path)
-            if path == "/":
-                return route.fulfill(
-                    status=200, content_type="text/html",
-                    body=(WEB / "index.html").read_bytes())
-            if path == "/api/rpt/2027/catalog":
-                return route.fulfill(json={
-                    "subjects": [],
-                    "personalization_allowed": False,
-                    "kp2027_rpt_available": [
-                        {
-                            "code": code, "label": LABELS[code], "year": 1,
-                            "kp2027_combined": True,
-                            "pdf_ready": True, "docx_ready": True,
-                            "download_enabled": available,
-                            "status": "RPT SEMAKAN PELAKSANAAN",
-                        } for code in SUBJECTS
-                    ],
-                })
-            if path.startswith(RPT_PREFIX):
-                selected = path[len(RPT_PREFIX):]
-                if "." not in selected:
-                    return route.fulfill(status=404, body="Unsupported path")
-                code, fmt = selected.rsplit(".", 1)
-                if not available or code not in SUBJECTS or fmt not in {"pdf", "docx"}:
-                    return route.fulfill(status=403, content_type="application/json",
-                                         body='{"error":"Akses diperlukan"}')
-                payload, name, digest = document(code, fmt)
-                assert hashlib.sha256(payload).hexdigest() == digest
-                mime = ("application/pdf" if fmt == "pdf" else
-                        "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
-                return route.fulfill(
-                    status=200,
-                    headers={
-                        "Content-Type": mime,
-                        "Content-Disposition": 'attachment; filename="' + name + '"',
-                        "Cache-Control": "private, no-store",
-                        "X-RPT-Source-SHA256": digest,
-                    },
-                    body=payload)
-            if path.startswith("/assets/"):
-                asset = WEB / path.rsplit("/", 1)[-1]
-                if asset.is_file():
-                    mime = ("application/javascript" if asset.suffix == ".js" else
-                            "application/json" if asset.suffix == ".json" else
-                            "application/octet-stream")
-                    return route.fulfill(status=200, content_type=mime,
-                                         body=asset.read_bytes())
-            return route.fulfill(status=404, body="No fixture")
-
-        page.route(HOST + "/**", mock)
         try:
-            page.goto(HOST + "/", wait_until="domcontentloaded")
+            page.goto(self.host + "/", wait_until="domcontentloaded")
             page.evaluate("""async () => {
                 document.querySelector("main.panel").hidden = true;
                 document.querySelector("#workspace").hidden = false;
@@ -112,54 +132,52 @@ class KP2027OneTapMobileRPT(unittest.TestCase):
             }""")
             page.locator("#rpt-curriculum").select_option("kp2027")
             page.locator("#rpt-year").select_option("1")
-
             for subject in SUBJECTS:
-                with self.subTest(subject=subject, available=available):
-                    page.evaluate("""(subject) => {
-                        const select=document.getElementById("rpt-subject");
-                        select.value=subject;
-                        select.dispatchEvent(new Event("change"));
-                    }""", subject)
-                    pdf = page.locator("#rpt-download-mobile")
-                    word = page.locator("#rpt-download-word")
-                    base = RPT_PREFIX + subject + "."
-                    if not available:
-                        self.assertTrue(pdf.is_hidden())
-                        self.assertTrue(word.is_hidden())
-                        self.assertTrue(page.locator("#rpt-download").is_hidden())
-                        self.assertNotIn(base + "pdf", paths)
-                        continue
-
-                    self.assertTrue(pdf.is_visible())
-                    self.assertTrue(word.is_visible())
+                page.evaluate("""(code) => {
+                    const select = document.getElementById("rpt-subject");
+                    select.value = code;
+                    select.dispatchEvent(new Event("change"));
+                }""", subject)
+                pdf = page.locator("#rpt-download-mobile")
+                word = page.locator("#rpt-download-word")
+                base = RPT_PREFIX + subject + "."
+                if not available:
+                    self.assertTrue(pdf.is_hidden())
+                    self.assertTrue(word.is_hidden())
                     self.assertTrue(page.locator("#rpt-download").is_hidden())
-                    self.assertEqual(pdf.get_attribute("href"), base + "pdf")
-                    self.assertEqual(word.get_attribute("href"), base + "docx")
-                    self.assertEqual(pdf.get_attribute("download"), document(subject, "pdf")[1])
-                    self.assertEqual(word.get_attribute("download"), document(subject, "docx")[1])
-                    self.assertIsNone(pdf.get_attribute("target"))
-                    self.assertIsNone(word.get_attribute("target"))
+                    self.assertNotIn(base + "pdf", self.server.paths)
+                    continue
 
-                    for fmt, control in (("pdf", pdf), ("docx", word)):
-                        with self.subTest(subject=subject, file_format=fmt):
-                            with page.expect_download(timeout=20000) as captured:
-                                control.tap()
-                            download = captured.value
-                            payload, expected_name, digest = document(subject, fmt)
-                            self.assertEqual(download.suggested_filename, expected_name)
-                            self.assertEqual(hashlib.sha256(Path(download.path()).read_bytes()).hexdigest(), digest)
-                            self.assertEqual(page.url, HOST + "/")
-                            self.assertEqual(len(ctx.pages), 1, "Unexpected extra tab/viewer")
-                            self.assertIn(base + fmt, paths)
-            self.assertEqual(len(pages), 0, "A popup must never be created")
+                self.assertTrue(pdf.is_visible())
+                self.assertTrue(word.is_visible())
+                self.assertTrue(page.locator("#rpt-download").is_hidden())
+                self.assertEqual(pdf.get_attribute("href"), base + "pdf")
+                self.assertEqual(word.get_attribute("href"), base + "docx")
+                self.assertEqual(pdf.get_attribute("download"), document(subject, "pdf")[1])
+                self.assertEqual(word.get_attribute("download"), document(subject, "docx")[1])
+                self.assertIsNone(pdf.get_attribute("target"))
+                self.assertIsNone(word.get_attribute("target"))
+                for fmt, control in (("pdf", pdf), ("docx", word)):
+                    with self.subTest(subject=subject, file_format=fmt):
+                        with page.expect_download(timeout=25000) as capture:
+                            control.tap()
+                        item = capture.value
+                        payload, expected_name, digest = document(subject, fmt)
+                        self.assertEqual(item.suggested_filename, expected_name)
+                        self.assertEqual(sha256(Path(item.path()).read_bytes()).hexdigest(), digest)
+                        self.assertEqual(page.url, self.host + "/")
+                        self.assertEqual(len(ctx.pages), 1)
+                        self.assertIn(base + fmt, self.server.paths)
+
+            self.assertEqual(len(pages), 0, "No extra viewer or popup tab")
             self.assertEqual(len(downloads), 6 if available else 0)
         finally:
             ctx.close()
 
-    def test_six_word_pdf_files_download_without_viewer_or_popup(self):
+    def test_all_six_word_pdf_downloads_are_complete_and_one_tap(self):
         self._run(available=True)
 
-    def test_unavailable_catalog_never_exposes_any_download(self):
+    def test_unavailable_status_hides_all_six_downloads(self):
         self._run(available=False)
 
 
