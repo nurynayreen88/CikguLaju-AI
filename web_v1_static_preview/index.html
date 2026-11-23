@@ -2663,7 +2663,7 @@ function rptWordUrl(entry){
  }
  const url=entry?.year?.docx_url;
  return entry?.year?.docx_ready===true&&typeof url==="string"&&
-  /^\/api\/rpt\/2027\/(?:sjkc\/(?:bahasa-cina|bahasa-melayu|sains|matematik)\/[2-6]|sjkt\/matematik\/2)\.docx$/.test(url)?url:null;
+  /^\/api\/rpt\/2027\/(?:sjkc\/(?:bahasa-cina|bahasa-melayu|sains|matematik)\/[2-6]|sjkt\/matematik\/2|all\/bahasa_melayu\/[2-6])\.docx$/.test(url)?url:null;
 }
 function refreshRptDownload(){
  const prepared=document.getElementById("rpt-prepared-manual-link");
@@ -2690,7 +2690,10 @@ function refreshRptDownload(){
  }
  if(wordUrl){
   rptWordLink.href=wordUrl;
-  rptWordLink.setAttribute("download",rptKP2027DownloadName(selection,"docx")||"");
+  const bmKssr=(selection?.curriculum==="kssr"&&selection.item.code==="bahasa_melayu"&&
+   selection.year.year>=2&&selection.year.year<=6)
+   ?"CIKGULAJU_RPT_BAHASA_MELAYU_SK_TAHUN_"+selection.year.year+"_2027_WORD.docx":null;
+  rptWordLink.setAttribute("download",rptKP2027DownloadName(selection,"docx")||bmKssr||"");
   rptWordLink.removeAttribute("target");
  }else{
   rptWordLink.removeAttribute("href");
