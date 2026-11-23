@@ -336,3 +336,32 @@ except Exception as _sains_web_network_smoke_exc:
     WEB_SAINS_NATIVE_SMOKE_RESULT = None
     print("CIKGULAJU_SAINS_WEB_REAL_DOWNLOAD_SMOKE_UNAVAILABLE",
           type(_sains_web_network_smoke_exc).__name__,flush=True)
+
+
+# Temporary server-only one-shot migration of five exact BM KSSR 2027 Word
+# assets from the *already shipped*, SHA-pinned local files to the PRIVATE
+# Supabase bucket. This NEVER runs without both separate environment opt-ins.
+# It has no HTTP endpoint; do not log key, file bytes, or teacher information.
+# Safe on repeated Gunicorn worker imports: no overwrites, byte-for-byte check.
+def _private_bm_word_startup_migration():
+    if os.environ.get("CIKGULAJU_PRIVATE_WORD_MIGRATION_ON_START") != "RPT_BM_2027_V1":
+        return "DISABLED"
+    if os.environ.get("CIKGULAJU_PRIVATE_WORD_MIGRATION_OK") != "YES":
+        print("CIKGULAJU_BM_WORD_PRIVATE_MIGRATION_NOT_AUTHORIZED", flush=True)
+        return "DISABLED"
+    try:
+        from tools.migrate_rpt_bm_kssr_word_private import migrate
+        years = migrate(upload=True)
+        if years != [2, 3, 4, 5, 6]:
+            raise RuntimeError("Incomplete private Word migration")
+        print("CIKGULAJU_BM_WORD_PRIVATE_MIGRATION_VERIFIED_2_3_4_5_6", flush=True)
+        return "VERIFIED"
+    except Exception as exc:
+        # Fail-safe: keep existing local paid Word and free PDF routes available.
+        # Exception strings can contain remote URLs, so print type only.
+        print("CIKGULAJU_BM_WORD_PRIVATE_MIGRATION_FAILED",
+              type(exc).__name__, flush=True)
+        return "FAILED"
+
+
+CIKGULAJU_PRIVATE_BM_WORD_MIGRATION_RESULT = _private_bm_word_startup_migration()
