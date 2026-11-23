@@ -133,7 +133,8 @@ def _native_grid_pastel(fill, details, activities, followup):
             or any(len(row) != count for rows, count in zip(data, (2, 3, 2))
                    for row in rows)):
         return
-    if _normal(data[1][0][0].getPlainText()) not in ("fasa", "phase"):
+    if (not isinstance(data[1][0][0], Paragraph)
+            or _normal(data[1][0][0].getPlainText()) not in ("fasa", "phase")):
         return
     tone = colors.HexColor("#" + fill)
     # Slightly stronger fill for the phase heading; no oversized dark boxes.
