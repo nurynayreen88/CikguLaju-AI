@@ -1836,7 +1836,8 @@ function fillKssrSubjects(items,readySjkc=[],readySjkt=[]){
  const sjkcReady=readySjkc.some(item=>item.value==="MATH_SJKC");
  const sjktReady=readySjkt.some(item=>item.value==="MATH_SJKT");
  const schools=[
-  ...sjkcSubjectOptions.filter(item=>(item.rpt_years||[]).includes(Number(year.value)))
+  ...sjkcSubjectOptions.filter(item=>(item.rpt_years||[]).includes(Number(year.value))||
+    (item.value==="matematik_sjkc"&&year.value==="3"))
    .map(item=>({...item,
     value:item.value==="matematik_sjkc"&&sjkcReady?"MATH_SJKC":item.value,
     label:kssrSchoolLabel(item.label,"SJKC")+
