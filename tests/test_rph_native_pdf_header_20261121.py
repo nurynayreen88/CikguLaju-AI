@@ -104,13 +104,15 @@ def test_nine_subjects_same_width_teacher_right_short_and_source_preserved(tmp_p
         assert next_story is not before, subject
         assert Counter(_text_objects(next_story)) == original_text, subject
 
-        banner = next_story[0]
+        assert isinstance(next_story[0], Paragraph)
+        assert next_story[0].style.alignment == 1
+        banner = next_story[2]
         assert isinstance(banner, Table) and len(banner._cellvalues) == 1
         assert len(banner._cellvalues[0]) == 2
         assert abs(sum(banner._colWidths) - 172 * mm) < .001
-        assert abs(sum(next_story[2]._colWidths) - 172 * mm) < .001
         assert abs(sum(next_story[4]._colWidths) - 172 * mm) < .001
         assert abs(sum(next_story[6]._colWidths) - 172 * mm) < .001
+        assert abs(sum(next_story[8]._colWidths) - 172 * mm) < .001
         teacher = list(_text_objects(banner._cellvalues[0][1]))
         assert ("Kelas" in teacher or "Class" in teacher), subject
         assert ("Tarikh" in teacher or "Date" in teacher), subject
@@ -224,7 +226,7 @@ def test_native_pdf_activity_title_bold_preserves_real_paragraph_text(tmp_path):
         )
         unchanged_text = row[1].getPlainText()
         updated = premium_pdf_story({"task": "rph", "subject": subject}, story)
-        actual = updated[4]._cellvalues[2][1]
+        actual = updated[6]._cellvalues[2][1]
         assert actual.getPlainText() == unchanged_text
         for n in (1, 2, 3):
             assert f"<b>{heading} {n} -" in actual.text
@@ -265,8 +267,8 @@ def test_native_pdf_pastel_is_drawn_in_real_label_cells_not_overlaid(tmp_path):
         styled = premium_pdf_story({"task": "rph", "subject": subject}, with_label)
         assert Counter(_text_objects(styled)) == before_text
 
-        assert styled[0]._colWidths == [112 * mm, 60 * mm]
-        for grid in (styled[2], styled[4], styled[6]):
+        assert styled[2]._colWidths == [112 * mm, 60 * mm]
+        for grid in (styled[4], styled[6], styled[8]):
             assert abs(sum(grid._colWidths) - 172 * mm) < .001
 
         filepath = tmp_path / (subject.replace(" ", "_") + "_native_pastel.pdf")
@@ -380,13 +382,13 @@ def test_bm_kp2027_neutral_teacher_panel_preserves_pdf_content_and_missing_field
         styled = premium_pdf_story(state, source)
         assert styled is not source
         assert Counter(_text_objects(styled)) == before
-        assert len(styled[2]._cellvalues) == len(source[2]._cellvalues) - 8
+        assert len(styled[4]._cellvalues) == len(source[2]._cellvalues) - 8
         assert not any(
             val in text
             for text in _text_objects(styled)
             for val in ("EMK / NILAI", "KBAT / PAK21")
         )
-        header = styled[0]
+        header = styled[2]
         assert len(header._bkgrndcmds) >= 2
         neutral = [cmd for cmd in header._bkgrndcmds
                    if cmd[0] == "BACKGROUND" and cmd[1] == (1, 0)]

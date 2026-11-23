@@ -1,6 +1,7 @@
 """Conservative native ReportLab PDF RPH header layout, non-destructive.
 
-Reuses the eight existing Paragraph pairs for subject, year, topic, class,
+Keeps the source title centered outside the header grid, and reuses the eight
+existing Paragraph pairs for subject, year, topic, class,
 date, day, time and pupil count. Leaves all remaining curriculum table rows,
 teaching phases, assessment, differentiation, reflection and PDF links intact.
 Speciality renderers (Sains, DLP, PPKI, Islamic Jawi, Arabic RTL) stay as-is.
@@ -210,7 +211,7 @@ def premium_pdf_story(state, story):
     # Restore owner-approved initial sample: the lesson identity occupies
     # the wide LEFT panel and the teacher fields the small RIGHT panel.
     # RTL specialty renderers are independent and require their own QA.
-    header = Table([[[title, identity], teacher]],
+    header = Table([[identity, teacher]],
                    colWidths=[112 * mm, 60 * mm], hAlign="CENTER")
     header.setStyle(_table_style(fill=fill, border=True))
     # BM SK KP2027 Year 1 reference uses a distinct neutral teacher panel.
@@ -232,4 +233,12 @@ def premium_pdf_story(state, story):
     ]))
     _bold_pdf_separate_activity_titles(story[4])
     _native_grid_pastel(fill, details, story[4], story[6])
-    return [header, Spacer(1, 3 * mm), details, *story[3:]]
+    # The original title Paragraph belongs OUTSIDE the header box. Align
+    # it to the full page centre, without retyping or changing its text.
+    # Reuse all eight existing source metadata Paragraph pairs in their
+    # stable two-column label/value sub-tables below.
+    from copy import copy
+    title.style = copy(title.style)
+    title.style.alignment = 1  # ReportLab TA_CENTER, without editing global style
+    return [title, Spacer(1, 1.5 * mm), header,
+            Spacer(1, 3 * mm), details, *story[3:]]

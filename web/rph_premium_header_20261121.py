@@ -1,6 +1,6 @@
-"""Conservative premium small-right teacher banner for legacy three-table RPH Word.
+"""Conservative centred standalone title and aligned two-panel header for native RPH Word.
 
-Move existing display nodes (not lesson text) into a compact two-column banner.
+Move existing metadata nodes (not lesson text) into a compact two-column banner.
 Fail closed when the native layout differs from the audited structure. Specialty
 Sains/DLP/PPKI/Jawi/Arabic renderers must not call this adapter.
 """
@@ -56,13 +56,18 @@ def _cell_fill(cell, fill):
     return props
 
 
-def _styled_paragraph(cell, label_cell, value_cell, *, font_size=17, rtl_jawi=False):
+def _styled_paragraph(cell, label_cell, value_cell, *, font_size=17,
+                      rtl_jawi=False, tab_pos=2050):
     paragraph = _node(cell, "p")
     props = _node(paragraph, "pPr")
     _node(props, "spacing", before=0, after=0, line=220, lineRule="auto")
+    # One shared tab stop per panel makes both label starts AND value starts
+    # align vertically. The right/left RTL direction is preserved.
+    tabs = _node(props, "tabs")
+    _node(tabs, "tab", val="left", pos=tab_pos)
+    _node(props, "jc", val="left")
     if rtl_jawi:
-        _node(props, "bidi")
-        _node(props, "jc", val="right")
+        _node(props, "bidi", val="1")
     for i, old_cell in enumerate((label_cell, value_cell)):
         if i:
             separator = _node(paragraph, "r")
@@ -97,8 +102,8 @@ def _make_banner(body, first_table, title, rows, fill, *, rtl_jawi=False):
     for edge in ("top", "bottom", "left", "right", "insideV"):
         _node(borders, edge, val="single", sz=6, color="6D7C8B")
     grid = _node(banner, "tblGrid")
-    # LTR title stays inside identity; Jawi RTL title stays above the panel.
-    # Keep all curriculum source text and its original paragraph nodes.
+    # The RPH title stays ABOVE the header table for both LTR and RTL;
+    # all curriculum words and each original paragraph are preserved.
     _node(grid, "gridCol", w="6900")
     _node(grid, "gridCol", w="3730")
     table_row = _node(banner, "tr")
@@ -111,21 +116,27 @@ def _make_banner(body, first_table, title, rows, fill, *, rtl_jawi=False):
     # Do not create/remove any source field or change its value.
     rightpr = _cell_fill(right, TEACHER_PANEL_FILL)
     rightpr.find(W + "tcW").set(W + "w", "3730")
-    if rtl_jawi:
-        # Keep the ORIGINAL full-width Jawi heading above the banner.
-        # Moving it into the identity cell cramped the active RPH title.
-        # This changes presentation only, never a w:t source text node.
-        ppr = title.find(W + "pPr")
-        if ppr is None:
-            ppr = etree.Element(W + "pPr")
-            title.insert(0, ppr)
-        justification = ppr.find(W + "jc")
-        if justification is None:
-            justification = _node(ppr, "jc")
-        justification.set(W + "val", "center")
-    else:
-        title.getparent().remove(title)
-        left.append(title)
+    # Keep the ORIGINAL source paragraph outside the box, centred across
+    # the page. The previous LTR banner moved this title INSIDE the wide
+    # identity cell; RTL already kept it outside. Strip only the cosmetic
+    # paragraph border/shading added by the earlier Word pastel pass.
+    ppr = title.find(W + "pPr")
+    if ppr is None:
+        ppr = etree.Element(W + "pPr")
+        title.insert(0, ppr)
+    for tag in ("pBdr", "shd"):
+        old = ppr.find(W + tag)
+        if old is not None:
+            ppr.remove(old)
+    justification = ppr.find(W + "jc")
+    if justification is None:
+        justification = _node(ppr, "jc")
+    justification.set(W + "val", "center")
+    title_spacing = ppr.find(W + "spacing")
+    if title_spacing is None:
+        title_spacing = _node(ppr, "spacing")
+    title_spacing.set(W + "before", "0")
+    title_spacing.set(W + "after", "95")
     for old_run in title.iter(W + "r"):
         rpr = old_run.find(W + "rPr")
         if rpr is None:
@@ -139,9 +150,10 @@ def _make_banner(body, first_table, title, rows, fill, *, rtl_jawi=False):
         sz.set(W + "val", "26")
     for name in ("subject", "year", "topic"):
         _styled_paragraph(left, *rows[name], font_size=18 if name != "topic" else 16,
-                          rtl_jawi=rtl_jawi)
+                          rtl_jawi=rtl_jawi, tab_pos=2050)
     for name in ("class", "date", "day", "time", "students"):
-        _styled_paragraph(right, *rows[name], font_size=15, rtl_jawi=rtl_jawi)
+        _styled_paragraph(right, *rows[name], font_size=15,
+                          rtl_jawi=rtl_jawi, tab_pos=1430)
     body.insert(body.index(first_table), banner)
 
 

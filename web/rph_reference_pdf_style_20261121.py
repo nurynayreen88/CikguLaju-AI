@@ -187,7 +187,13 @@ def _already_native_pastel_header(page, title, drawings, palette):
         if (abs(box.width - 172 * 72 / 25.4) < 1.5
                 and 48 <= box.height <= 120
                 and 12 < box.y0 < 160
-                and box.contains(title)
+                # Header may now start just BELOW a centred standalone
+                # title. The old version included title inside the colored
+                # table. Recognize both only when palette and teacher-side
+                # metadata geometry match this exact native table.
+                and (box.contains(title) or
+                     (0 <= box.y0 - title.y1 <= 25 and
+                      abs((title.x0 + title.x1)/2 - page.rect.width/2) <= 10))
                 and len(shade) == 3
                 and all(abs(shade[i] - palette[i]) < .012
                         for i in range(3))):

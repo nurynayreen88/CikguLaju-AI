@@ -89,6 +89,32 @@ def test_all_nine_legacy_subjects_keep_every_source_word_and_header_right():
         upgraded = premium_header_bytes(styled, fill)
         doc = Document(BytesIO(upgraded))
         assert len(doc.tables) == 4, subject
+        assert doc.paragraphs[0].text == (
+            "DAILY LESSON PLAN" if subject == "English"
+            else "RANCANGAN PENGAJARAN HARIAN"
+        )
+        # The title belongs outside the first pastel box in every year.
+        with ZipFile(BytesIO(upgraded)) as archive:
+            root = etree.fromstring(archive.read("word/document.xml"))
+        body = root.find(W + "body")
+        first_table = body.find(W + "tbl")
+        title_node = next(p for p in body.findall(W + "p")
+                          if any((n.text or "").strip() in
+                                 ("RANCANGAN PENGAJARAN HARIAN", "DAILY LESSON PLAN")
+                                 for n in p.iter(W + "t")))
+        assert body.index(title_node) < body.index(first_table)
+        props = title_node.find(W + "pPr")
+        assert props.find(W + "jc").get(W + "val") == "center"
+        assert props.find(W + "pBdr") is None
+        assert props.find(W + "shd") is None
+        hcells = first_table.find(W + "tr").findall(W + "tc")
+        assert [len(c.findall(W + "p")) for c in hcells] == [3, 5]
+        for cell, stop in zip(hcells, ("2050", "1430")):
+            for p in cell.findall(W + "p"):
+                tabs = p.find(W + "pPr/" + W + "tabs")
+                assert len(tabs.findall(W + "tab")) == 1
+                assert tabs.find(W + "tab").get(W + "pos") == stop
+                assert p.find(W + "pPr/" + W + "jc").get(W + "val") == "left"
         header = doc.tables[0]
         assert len(header.columns) == 2
         teacher = header.cell(0, 1).text
