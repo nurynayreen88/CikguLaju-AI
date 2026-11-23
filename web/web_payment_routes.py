@@ -640,12 +640,18 @@ def _admin_payment_auth():
 
 def _admin_payment_rows(conf, **filters):
     columns = ("id,chat_id,amount,status,submitted_at,reviewed_at,"
-               "proof_received_at,proof_telegram_file_id,proof_mime_type")
+               "proof_received_at,proof_telegram_file_id,proof_mime_type,"
+               "proof_web_path,proof_web_sha256")
     return _payment_rest(conf, "GET", query=urlencode({"select": columns, **filters}))
 
 
 def _proof_available(row):
-    return bool(row.get("proof_received_at") and str(row.get("proof_telegram_file_id") or "").strip())
+    if not row.get("proof_received_at"):
+        return False
+    return bool(
+        str(row.get("proof_telegram_file_id") or "").strip()
+        or (row.get("proof_web_path") and row.get("proof_web_sha256"))
+    )
 
 
 def _email_payer_names(conf, payer_ids, *, opener=None):
@@ -798,6 +804,23 @@ def _telegram_receipt_bytes(conf, row, *, opener=None):
         raise ProfileUnavailable("Fail resit belum dapat dibuka") from None
 
 
+def _private_web_receipt_bytes(conf,row):
+    """Recheck the private storage object and SHA-256 for an authorized admin."""
+    path=row.get("proof_web_path")
+    expected=row.get("proof_web_sha256")
+    if (not isinstance(path,str) or not WEB_RECEIPT_PATH.fullmatch(path)
+            or not isinstance(expected,str) or not re.fullmatch(r"[a-f0-9]{64}",expected)):
+        raise ProfileUnavailable("Rujukan resit peribadi tidak sah")
+    raw=_private_receipt_storage(conf,"GET",path)
+    mime=row.get("proof_mime_type")
+    ext=_validate_receipt(raw,mime)
+    if not path.endswith(ext):
+        raise ProfileUnavailable("Jenis resit tersimpan tidak sepadan")
+    if not hmac.compare_digest(hashlib.sha256(raw).hexdigest(), expected):
+        raise ProfileUnavailable("Integriti resit tersimpan tidak sepadan")
+    return raw,mime,ext
+
+
 @bp.get("/api/web/admin/payments/<int:payment_id>/receipt")
 def admin_payment_receipt(payment_id):
     conf, _, error = _admin_payment_auth()
@@ -809,7 +832,11 @@ def admin_payment_receipt(payment_id):
         rows = _admin_payment_rows(conf, id=f"eq.{payment_id}", limit=1)
         if not rows or not _proof_available(rows[0]):
             return jsonify({"error": "Resit tersimpan tidak dijumpai"}), 404
-        raw, mime, extension = _telegram_receipt_bytes(conf, rows[0])
+        row=rows[0]
+        if row.get("proof_web_path"):
+            raw,mime,extension=_private_web_receipt_bytes(conf,row)
+        else:
+            raw,mime,extension=_telegram_receipt_bytes(conf,row)
         response = Response(raw, mimetype=mime)
         response.headers["Content-Disposition"] = f'inline; filename="Resit-{payment_id}{extension}"'
         response.headers["Content-Security-Policy"] = "sandbox; default-src 'none'"
