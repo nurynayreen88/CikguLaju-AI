@@ -166,15 +166,14 @@ def render(subject, unit, lesson, fmt, teacher):
         details.insert(2, ("RPT 2027 dates", " · ".join(lesson["rpt_dates"])))
     activities = [("Phase", "Teacher", "Pupils"), *lesson["phases"]]
     reflection = [("Reflection", teacher.get("reflection") or lesson["reflection"])]
-    output = BytesIO()
+    # Shared CikguLaju RPH generator: curriculum extraction stays in DLP,
+    # while Word and PDF pass through one source-safe rendering entrance.
+    from web.rph_unified_engine import render_structured_rph
     math_options = {"mathematics": True, "teacher": teacher} if mathematics else {}
-    if fmt == "word":
-        _word(output, heading, details, activities, reflection, **math_options)
-    elif fmt == "pdf":
-        _pdf(output, heading, details, activities, reflection, **math_options)
-    else:
-        raise ValueError("Unsupported DLP format")
-    return output.getvalue()
+    return render_structured_rph(
+        source="dlp", fmt=fmt, heading=heading, details=details,
+        activities=activities, footer=reflection, **math_options,
+    )
 
 
 _DURATION_SUFFIX = re.compile(r"(?:[ \t]*·[ \t]*|\n)\d+[ \t]+min(?:it)?[ \t]*$")
@@ -188,7 +187,7 @@ _RPT_DATE_FIELDS = {"Tarikh RPT", "Julat RPT", "RPT 2027 dates", "RPT date range
 _MATHEMATICS_FILL = "DCEBFA"
 _SCIENCE_FILL = "DFF1E3"
 # Visual master: BM SK KP2027 Tahun 1, neutral small teacher-info panel.
-_TEACHER_PANEL_FILL = "F5F7FA"
+from web.rph_unified_engine import TEACHER_PANEL_FILL as _TEACHER_PANEL_FILL
 _FIELD_WIDTHS = (48, 134)
 _ACTIVITY_WIDTHS = (32, 122, 28)
 
