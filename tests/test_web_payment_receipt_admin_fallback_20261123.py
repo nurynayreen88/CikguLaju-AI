@@ -1,4 +1,4 @@
-"""Regression tests: Telegram account receipt falls back to trusted admin chat."""
+"""Legacy Telegram receipt compatibility: verified admin chat always first."""
 import json
 import os
 import unittest
@@ -45,27 +45,32 @@ class ReceiptFallbackTests(unittest.TestCase):
         e.start()
         self.addCleanup(e.stop)
 
-    def test_real_telegram_account_uses_admin_when_user_bot_chat_blocked(self):
-        self.assertEqual(_receipt_destinations(712),[712,901])
-        transport=TelegramTransport()
-        proof=_telegram_document(CONF,712,RECEIPT,".pdf",opener=transport)
-        self.assertEqual(transport.destinations,[712,901])
-        self.assertEqual(proof["file_id"],"private-file-id")
-        self.assertEqual(proof["admin_chat_id"],901)
+    def test_real_telegram_account_prefers_admin_before_unstarted_user_chat(self):
+        self.assertEqual(_receipt_destinations(712), [901, 712])
+        transport = TelegramTransport()
+        proof = _telegram_document(CONF, 712, RECEIPT, ".pdf", opener=transport)
+        self.assertEqual(transport.destinations, [901])
+        self.assertEqual(proof["file_id"], "private-file-id")
+        self.assertEqual(proof["admin_chat_id"], 901)
 
-    def test_normal_telegram_customer_chat_remains_first(self):
+    def test_confirmed_admin_chat_receives_receipt_without_customer_bot_setup(self):
         class WorkingTransport:
-            def open(self,req,timeout):
-                return Reply(712)
-        proof=_telegram_document(CONF,712,RECEIPT,".pdf",opener=WorkingTransport())
-        self.assertIsNone(proof["admin_chat_id"])
+            def __init__(self): self.sent = 0
+            def open(self, req, timeout):
+                self.sent += 1
+                return Reply(901)
+        transport = WorkingTransport()
+        proof = _telegram_document(CONF, 712, RECEIPT, ".pdf", opener=transport)
+        self.assertEqual(transport.sent, 1)
+        self.assertEqual(proof["admin_chat_id"], 901)
 
     def test_email_account_only_uses_admin_and_no_synthetic_chat(self):
         self.assertEqual(_receipt_destinations(8000000000000000005),[901])
 
-    def test_no_admin_fallback_keeps_original_telegram_and_email_fails_closed(self):
-        with patch.dict(os.environ,{"CIKGULAJU_WEB_ADMIN_IDS":""}):
-            self.assertEqual(_receipt_destinations(712),[712])
+    def test_no_verified_admin_chat_fails_closed_for_both_identity_types(self):
+        with patch.dict(os.environ, {"CIKGULAJU_WEB_ADMIN_IDS": ""}):
+            with self.assertRaises(ProfileUnavailable):
+                _receipt_destinations(712)
             with self.assertRaises(ProfileUnavailable):
                 _receipt_destinations(8000000000000000005)
 
