@@ -110,7 +110,7 @@ def _make_banner(body, first_table, title, rows, fill, *, rtl_jawi=False):
     left = _node(table_row, "tc")
     # The Jawi header needs a more visible warm pastel, but ALL text,
     # physical RTL column directions and other subjects stay untouched.
-    leftpr = _cell_fill(left, "F8EBCD" if rtl_jawi else fill)
+    leftpr = _cell_fill(left, fill)
 
     leftpr.find(W + "tcW").set(W + "w", "6900")
     right = _node(table_row, "tc")
