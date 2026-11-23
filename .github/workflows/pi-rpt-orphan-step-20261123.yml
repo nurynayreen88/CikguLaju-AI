@@ -23,5 +23,15 @@ jobs:
         run: python -m tools.audit_pi_orphan_number_20261123
       - name: Install actual native RPH engine dependencies
         run: bash build_jawi.sh
+      - name: Test exact PI source recovery and scope guards
+        run: python -m unittest discover -s tests -p 'test_pi_verified_rpt_activity_restore_20261123.py' -v
       - name: Inspect source to runtime rendering boundaries
         run: python -m tools.audit_pi_live_render_steps_20261123
+      - name: Upload genuine native Word and PDF (protected QA only)
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: CIKGULAJU_PI_809_AKTIF_4_LANGKAH_DIPULIHKAN
+          path: qa/pi-source-steps-fixed/*
+          if-no-files-found: error
+          retention-days: 7
