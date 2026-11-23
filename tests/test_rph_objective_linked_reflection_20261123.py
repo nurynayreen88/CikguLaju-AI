@@ -53,9 +53,14 @@ class ObjectiveLinkedNativeReflectionTests(unittest.TestCase):
                         "Pendidikan Seni Visual",
                         "Pendidikan Jasmani dan Pendidikan Kesihatan"):
             with self.subTest(subject=subject):
+                existing = ("____ / ____ murid mencapai objektif. "
+                            "____ / ____ murid belum mencapai objektif dan "
+                            "memerlukan sokongan pemulihan, semakan tambahan "
+                            "serta bimbingan khusus berdasarkan pencapaian akhir PdP.")
                 rows = {"KRITERIA KEJAYAAN": MALAY_CRITERION,
                         "OBJEKTIF PEMBELAJARAN": "Murid membaca petikan.",
-                        "REFLEKSI": "____ / ____ murid mencapai objektif."}
+                        "REFLEKSI": ("____ / ____ murid mencapai objektif."
+                                    if subject == "Bahasa Melayu" else existing)}
                 result = objective_linked_reflection(
                     {"task": "rph", "subject": subject}, rows)
                 self.assertIn("tiga isi penting", result["REFLEKSI"])
@@ -89,12 +94,27 @@ class ObjectiveLinkedNativeReflectionTests(unittest.TestCase):
     def test_english_uses_actual_success_criterion_not_bahasa_melayu(self):
         rows = {"KRITERIA KEJAYAAN": EN_CRITERION,
                 "OBJEKTIF PEMBELAJARAN": "Pupils can read a short passage.",
-                "REFLEKSI": "____ / ____ pupils achieved the lesson objectives."}
+                "REFLEKSI": ("____ / ____ pupils achieved the lesson objectives. "
+                             "____ / ____ pupils require further support and "
+                             "targeted reinforcement after this lesson.")}
         result = objective_linked_reflection(
             {"task": "rph", "subject": "English"}, rows)
         self.assertIn("4 out of 5", result["REFLEKSI"])
         self.assertIn("pupils met the criterion", result["REFLEKSI"])
         self.assertNotIn("murid mencapai", result["REFLEKSI"])
+
+    def test_other_subjects_cannot_add_page_pressure_from_short_reflection(self):
+        for subject in ("Sains", "Matematik", "English", "Sejarah",
+                        "Pendidikan Moral", "Pendidikan Muzik"):
+            original = {"KRITERIA KEJAYAAN": MALAY_CRITERION,
+                        "OBJEKTIF PEMBELAJARAN": "Murid membaca petikan.",
+                        "REFLEKSI": "____ / ____ murid mencapai objektif."}
+            if subject == "English":
+                original = {"KRITERIA KEJAYAAN": EN_CRITERION,
+                            "OBJEKTIF PEMBELAJARAN": "Pupils read a short passage.",
+                            "REFLEKSI": "____ / ____ pupils achieved the lesson objectives."}
+            self.assertIs(objective_linked_reflection(
+                {"task": "rph", "subject": subject}, original), original)
 
     def test_manual_teacher_reflection_is_authoritative(self):
         original = pi_rows()
