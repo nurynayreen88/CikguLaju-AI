@@ -1,0 +1,22 @@
+name: Audit active PI orphan numbered step
+on:
+  pull_request:
+    paths:
+      - "tools/audit_pi_orphan_number_20261123.py"
+      - "web/pi_rpt_orphan_step_guard_20261123.py"
+      - "tests/test_pi_rpt_orphan_step_guard_20261123.py"
+      - "tools/run_telegram_with_curriculum_api.py"
+      - ".github/workflows/pi-rpt-orphan-step-20261123.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Inspect exact active 809 verified RPT source
+        run: python -m tools.audit_pi_orphan_number_20261123
