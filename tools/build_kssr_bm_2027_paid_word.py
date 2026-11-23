@@ -29,7 +29,7 @@ PDF_MANIFEST = PDF_DIR / "manifest.json"
 COUNTS = {2: 164, 3: 165, 4: 165, 5: 166, 6: 165}
 HEADERS = ("MINGGU", "TEMA / UNIT", "STANDARD KANDUNGAN",
            "STANDARD PEMBELAJARAN", "CATATAN / RUJUKAN")
-WIDTHS = (2.2, 4.0, 4.2, 6.0, 9.8)
+WIDTHS = (1.45, 4.25, 4.35, 6.55, 11.0)
 
 
 def _shading(cell, color):
@@ -200,7 +200,7 @@ def build(year, pdf_manifest):
         heading.paragraph_format.keep_with_next = True
         run = heading.add_run("MINGGU " + week_label)
         run.bold = True
-        run.font.size = Pt(9)
+        run.font.size = Pt(10)
         run.font.color.rgb = RGBColor(27, 67, 102)
 
         table = doc.add_table(rows=1 + len(rows), cols=5)
@@ -211,19 +211,19 @@ def build(year, pdf_manifest):
         for col,label in enumerate(HEADERS):
             cell = table.cell(0, col)
             cell.width = Cm(WIDTHS[col])
-            _set_text(cell, label, bold=True, size=7.4, color=(22, 57, 83))
+            _set_text(cell, label, bold=True, size=8.0, color=(22, 57, 83))
             _shading(cell, "D9E9F3")
         _repeat_header(table.rows[0])
         _no_split(table.rows[0])
         for i, values in enumerate(rows, start=1):
             row = table.rows[i]
             _no_split(row)
-            _set_text(row.cells[0], week_label if i == 1 else "", bold=True, size=7)
+            _set_text(row.cells[0], f"{idx:02d}" if i == 1 else "", bold=True, size=8)
             _shading(row.cells[0], "EDF4E9")
             for col,val in enumerate(values, start=1):
                 cell = row.cells[col]
                 cell.width = Cm(WIDTHS[col])
-                _set_text(cell, val, size=7.1)
+                _set_text(cell, val, size=8.0)
                 if i % 2 == 0:
                     _shading(cell, "F8FBFD")
         if len(rows) > 1:
