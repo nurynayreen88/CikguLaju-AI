@@ -79,6 +79,20 @@ def formatted_original():
 
 def test_only_source_values_move_to_physical_rtl_right_without_losing_activity():
     source, before = formatted_original()
+    with ZipFile(BytesIO(before)) as z:
+        xml = etree.fromstring(z.read("word/document.xml"))
+        body = xml.find(W+"body")
+        tbls = body.findall(W+"tbl")
+        assert len(tbls)==4
+        header = tbls[0].find(W+"tr").findall(W+"tc")
+        assert "ڤنديديقن اسلام" in "".join(n.text or "" for n in header[0].iter(W+"t"))
+        assert "کلس" in "".join(n.text or "" for n in header[1].iter(W+"t"))
+        for i, tb in enumerate(tbls[1:]):
+            assert tb.find(W+"tblPr/"+W+"bidiVisual") is not None
+            assert all(len(x.findall(W+"tc")) == (2,3,2)[i] for x in tb.findall(W+"tr"))
+        val = tbls[2].findall(W+"tr")[2].findall(W+"tc")[1].find(W+"p")
+        assert any("\u0600" <= c <= "\u08ff" for c in "".join(n.text or "" for n in val.iter(W+"t")))
+        assert val.find(W+"pPr/"+W+"jc") is None, etree.tostring(val, encoding="unicode")[:1200]
     after = align_active_pi_rtl_value_bytes(before)
     if after == before:
         with ZipFile(BytesIO(before)) as z:
