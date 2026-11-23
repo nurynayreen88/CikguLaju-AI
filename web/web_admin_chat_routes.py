@@ -122,6 +122,10 @@ def _attachment(conf,uid,message_id,admin=False):
     if not rows or not rows[0].get("attachment_path"):
         return jsonify({"error":"Lampiran tidak dijumpai"}),404
     row=rows[0]
+    # File key must belong to the same account as the authenticated chat row.
+    if not isinstance(row.get("user_id"), (int, str)) or not row["attachment_path"].startswith(
+            "chat/"+str(row["user_id"])+"/"):
+        raise ValueError("Stored attachment owner mismatch")
     content=_storage(conf,"GET",row["attachment_path"])
     mime=row["attachment_mime"]
     if mime not in MIME or len(content)>MAX_FILE:raise ValueError("Invalid stored attachment")
