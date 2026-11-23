@@ -77,6 +77,8 @@ def _settings(config):
             or p.path not in ("", "/") or p.query or p.fragment or p.username or p.password
             or not isinstance(key, str) or len(key) < 30):
         raise PrivatePIRPHUnavailable("Private archive credentials unavailable")
+    if key.startswith("sb_publishable_"):
+        raise PrivatePIRPHUnavailable("Private archive server key required")
     return base, key
 
 
@@ -86,7 +88,12 @@ def _verified_zip(base, key, edition):
         raise PrivatePIRPHUnavailable("Unsupported private archive edition")
     source = ARCHIVES[edition]
     url = f"{base}/storage/v1/object/authenticated/{BUCKET}/{source['object']}"
-    headers = {"Authorization": "Bearer " + key, "apikey": key, "Accept": "application/zip"}
+    # Modern Supabase sb_secret_* keys are opaque, not JWTs. Passing them as
+    # Bearer tokens makes the Storage gateway reject an otherwise valid key.
+    # Legacy service-role JWTs continue to use both required headers.
+    headers = {"apikey": key, "Accept": "application/zip"}
+    if not key.startswith("sb_secret_"):
+        headers["Authorization"] = "Bearer " + key
     try:
         with urlopen(Request(url, headers=headers, method="GET"), timeout=45) as response:
             if response.status != 200:
