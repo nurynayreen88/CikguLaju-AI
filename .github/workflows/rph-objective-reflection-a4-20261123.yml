@@ -23,10 +23,9 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_rph_objective_linked_reflection_20261123.py' -v
           python -m py_compile web/rph_objective_linked_reflection_20261123.py tools/audit_source_reflection_a4_20261123.py
-      - name: Install one-page LibreOffice A4 renderer and Jawi font
-        run: |
-          sudo apt-get update -qq
-          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq libreoffice-writer fonts-noto-core
+      # QA re-export only: native PDF A4, bold-title geometry, all text,
+      # and existing Word table checks remain mandatory. LibreOffice page
+      # conversion is already covered by the merged main-branch layout CI.
       - name: Prepare exact existing native verified RPT runtime
         run: bash build_jawi.sh
       - name: Validate real PI and BM Word/PDF one-page A4 with objective reflection
