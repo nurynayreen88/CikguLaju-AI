@@ -1,6 +1,7 @@
 """Pastel RPH presentation for native 3-table Word downloads only.
 
-Sains, DLP and PPKI are the approved visual references and are never changed.
+DLP and PPKI retain their independent approved renderers. Native KSSR Sains
+uses the same source-preserving header alignment as other SK subjects.
 This updates OOXML formatting in-place: it cannot change curriculum text,
 teacher metadata, table structure, fonts, page dimensions or lesson content.
 """
@@ -25,6 +26,7 @@ PALETTES = {
     "bahasa inggeris": "E9F3F9",
     "matematik": "F0EBFA",
     "mathematics": "F0EBFA",
+    "sains": "E7F3EA",
     "pendidikan islam": "F3F1DF",
     "sejarah": "F8EEDF",
     "pendidikan muzik": "EAF5EA",
@@ -39,7 +41,7 @@ PALETTES = {
     "reka bentuk dan teknologi": "EDF0F7",
     "rbt": "EDF0F7",
 }
-REFERENCE = ("sains", "science", "ppki", "dlp")
+REFERENCE = ("science", "ppki", "dlp")
 TITLE_MARKERS = (
     "rancangan pengajaran harian",
     "daily lesson plan",
@@ -52,7 +54,9 @@ TITLE_MARKERS = (
 def color_for_state(state):
     if not isinstance(state, dict) or str(state.get("task") or "").strip().casefold() != "rph":
         return None
-    # Protect the three owner-approved references, including DLP Maths/Science.
+    # Protect DLP/PPKI and English-language Science; native SK Sains
+    # receives a pastel/two-panel header only when its actual 3-table
+    # source contract passes all existing source-text guards.
     for key in ("subject", "curriculum_version", "curriculum", "stream", "programme", "program", "school_type"):
         value = str(state.get(key) or "").strip().casefold()
         if any(ref in value for ref in REFERENCE):
