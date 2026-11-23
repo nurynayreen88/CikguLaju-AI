@@ -919,3 +919,15 @@ except Exception as _pi_source_steps_exc:
     print("PI verified RPT activity restore unavailable:",
           type(_pi_source_steps_exc).__name__, flush=True)
 
+# Replace only a generic native RPH auto reflection with a concise statement
+# quoting the real lesson's success criterion or objective. Keep manual and
+# already-specific reflections, academic source, steps, billing, and all other
+# approved layout contracts untouched. Final row wrapper shared by Word/PDF.
+try:
+    from web.rph_objective_linked_reflection_20261123 import install as install_objective_reflection
+    RPH_OBJECTIVE_REFLECTION_ACTIVE = bool(install_objective_reflection(telegram_runtime))
+except Exception as _objective_reflection_exc:
+    RPH_OBJECTIVE_REFLECTION_ACTIVE = False
+    print("RPH objective-linked reflection unavailable:",
+          type(_objective_reflection_exc).__name__, flush=True)
+
