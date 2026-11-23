@@ -30,6 +30,9 @@ _GENERIC_CRITERIA = (
     "fokus pembelajaran", "fokus pdp", "objektif pembelajaran",
     "mengikut sp", "mengikut standard", "menunjukkan penguasaan terhadap",
     "menunjukkan penguasaan terhadap fokus",
+    "bahan sasaran", "fokus kemahiran",
+    "menunjukkan pengetahuan atau kemahiran berdasarkan",
+    "tugasan berpandu dan individu",
     "موريد داڤت منيرو، منونجوقکن اتاو مڽلسايکن توݢسن",
     "فوکوس ڤدڤ",
 )
@@ -96,7 +99,31 @@ def _focus(rows, language):
         elif not re.search(r"[A-Za-z]{4,}", value):
             continue
         return value.rstrip(".؛;، ").strip()
-    return None
+
+    # A few BM native rows have generic objectives AND generic criteria,
+    # although their *verified* SP and actual lesson topic are specific.
+    # Use an exact, complete first SP clause plus the real title instead of
+    # claiming that a stock template is a meaningful lesson reflection.
+    if language not in ("ms", "en"):
+        return None
+    sp = rows.get("STANDARD PEMBELAJARAN")
+    if not isinstance(sp, str) or not sp.strip():
+        return None
+    first_sp = next((line.strip() for line in sp.splitlines() if line.strip()), "")
+    first_sp = re.sub(r"^\\d+(?:\\.\\d+){1,3}\\s+", "", first_sp)
+    first_clause = " ".join(first_sp.split(";", 1)[0].split()).rstrip(".؛, ")
+    if (not 24 <= len(first_clause) <= 105
+            or any(phrase in first_clause.casefold() for phrase in _GENERIC_CRITERIA)
+            or not re.search(r"[A-Za-z]{4,}", first_clause)):
+        return None
+    title = rows.get("TAJUK")
+    topic = ""
+    if isinstance(title, str):
+        topic = " ".join(title.rsplit(" — ", 1)[-1].split()).strip(". ")
+        if not 6 <= len(topic) <= 55 or topic.casefold() in ("semua subtopik", "all subtopics"):
+            topic = ""
+    focused = first_clause + (" (" + topic + ")" if topic else "")
+    return focused if len(focused) <= 135 else None
 
 
 def objective_linked_reflection(state, rows):
