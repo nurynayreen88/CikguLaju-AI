@@ -1,0 +1,38 @@
+name: Native KSSR Sains and Matematik T2-T6 — source and A4 header guard
+on:
+  pull_request:
+    paths:
+      - "web/rph_reference_style_20261121.py"
+      - "web/rph_native_pdf_header_20261121.py"
+      - "tests/test_rph_reference_style_20261121.py"
+      - "tests/test_rph_premium_header_20261121.py"
+      - "tests/test_rph_native_pdf_header_20261121.py"
+      - "tools/audit_native_sains_math_premium_header_20261123.py"
+      - ".github/workflows/rph-sains-math-real-native-premium-20261123.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native-sains-math-source-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Prepare exact native verified curriculum and dependencies
+        run: bash build_jawi.sh
+      - name: Fast protections for source text and all specialty renderers
+        run: |
+          python -m pytest -q tests/test_rph_reference_style_20261121.py tests/test_rph_premium_header_20261121.py tests/test_rph_native_pdf_header_20261121.py
+      - name: Fail closed on all 10 real KSSR RPH Word/PDF (Year 2-6)
+        run: python -m tools.audit_native_sains_math_premium_header_20261123
+      - name: Export real source-backed QA samples (no production output)
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: CIKGULAJU_SAINS_MATH_10_REAL_NATIVE_HEADERS_20261123
+          path: qa/native-sains-math-header/*
+          if-no-files-found: error
+          retention-days: 7
