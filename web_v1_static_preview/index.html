@@ -522,6 +522,13 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .admin-users-list dl{margin:8px 0 0;display:grid;grid-template-columns:92px minmax(0,1fr);gap:4px 8px;font-size:.8rem;line-height:1.5}
 .admin-users-list dt{color:#6a8074}.admin-users-list dd{margin:0;color:#354d42;overflow-wrap:anywhere}
 .admin-user-chat-button{margin-top:12px;min-height:44px;padding:8px 16px;border:1px solid #bddacf;border-radius:10px;background:#eaf7f1;color:#14674e;font:inherit;font-weight:750;cursor:pointer}
+.admin-user-manual-grant{margin-top:12px;padding:12px;border:1px solid #cddfd7;border-radius:12px;background:#f7fbf9}
+.admin-user-manual-grant p{font-size:.8rem;margin:0 0 9px;color:#486b5a}
+.admin-user-manual-grant label{display:block;font-weight:750;font-size:.82rem;color:#284c39}
+.admin-user-manual-grant select{display:block;width:100%;min-height:44px;padding:8px;margin:5px 0 10px;border:1px solid #c4d8cd;border-radius:9px;background:white;color:#244c39;font:inherit}
+.admin-user-manual-grant button{min-height:44px;width:100%;padding:9px;border:1px solid #136554;border-radius:10px;background:#0b7660;color:#fff;font:inherit;font-weight:800;cursor:pointer}
+.admin-user-manual-grant button:disabled{opacity:.55;cursor:wait}
+.admin-user-manual-grant p[role=status]{margin:8px 0 0;color:#315b49}
 
 /* Chat shortcut deliberately sits between top CikguLaju logo and teacher name. */
 .web-chat-top{margin:0 0 18px;border:1px solid #b8dcd1;border-radius:15px;background:#f7fbf9;overflow:hidden}
@@ -600,6 +607,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <div class="admin-notify-actions">
    <button type="button" id="admin-notify-more" hidden>Muat Lagi Notifikasi</button>
    <button type="button" id="admin-notify-refresh">↻ Muat Semula Notifikasi</button>
+   <button type="button" data-admin-shortcut="users">🎖️ Aktifkan Rakan Pembangun</button>
    <button type="button" data-admin-shortcut="analytics">📊 Statistik Pengguna</button>
   </div>
  </div>
@@ -667,7 +675,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <details id="admin-users-directory" class="admin-users-directory">
  <summary>👥 Senarai Pengguna <small>Telegram, e-mel, tarikh daftar dan status akses</small></summary>
  <div class="admin-users-body">
-  <p class="admin-users-note">Hanya untuk admin. Tekan <strong>💬 Chat</strong> pada pengguna untuk terus membuka perbualan, tanpa menaip ID. Tarikh log masuk berdasarkan rekod Web sejak pencatatan diaktifkan; “Belum direkodkan” bukan bermaksud pengguna tidak pernah log masuk.</p>
+  <p class="admin-users-note">Hanya untuk admin. Tekan <strong>💬 Chat</strong> untuk membuka perbualan. Gunakan <strong>🎖️ Aktifkan Rakan Pembangun</strong> untuk memberi akses manual tanpa rekod bayaran palsu, dengan sebab dan pengesahan. Pengaktifan manual mengambil satu slot kecuali akaun admin, dan tidak memberi mata affiliate. Tarikh login hanya berdasarkan rekod Web yang tersedia.</p>
   <div class="admin-users-filters">
    <label for="admin-users-search">Cari pengguna
     <input type="search" id="admin-users-search" placeholder="E-mel, nama atau ID Telegram" maxlength="100" autocomplete="off">
@@ -3065,7 +3073,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/teacher-profile.js?v=pilihan-subjek-20261117"></script>
 <script src="/assets/web-payment.js?v=resit-web-utama-20261123"></script>
 <script src="/assets/web-referral.js?v=pusat-admin-affiliate-open-20261123"></script>
-<script src="/assets/admin-usage.js?v=pusat-admin-actions-affiliate-20261123"></script>
+<script src="/assets/admin-usage.js?v=manual-rakan-pembangun-20261123"></script>
 <script src="/assets/web-feedback.js?v=pusat-admin-alert-20261123"></script>
 <script src="/assets/web-admin-chat.js?v=pusat-admin-read-20261123"></script>
 <script src="/assets/special-activities.js?v=pilihan-subjek-20261117"></script>
