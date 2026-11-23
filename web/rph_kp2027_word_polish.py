@@ -86,10 +86,12 @@ def _style(table, tone, strong):
     if props is None:
         return False
     changed = False
-    # 100% within the existing page margins; retain the original column widths,
-    # section settings, RTL direction and all semantic table cells.
-    _, did = _set(props, "tblW", {"w": "5000", "type": "pct"})
-    changed |= did
+    # Preserve the native table-width unit and its exact value. In particular,
+    # native English's 4-table banner has a fixed twip grid: converting tblW
+    # to 100% while leaving tblGrid and tcW in dxa causes overflowing and
+    # apparently overlapping boxes in some Word/PDF viewers. Cosmetic passes
+    # must never introduce contradictory table geometry.
+    # Only borders, soft fills and modest cell padding are changed here.
     borders, did = _set(props, "tblBorders", {})
     changed |= did
     for side in ("top", "left", "bottom", "right", "insideH", "insideV"):
