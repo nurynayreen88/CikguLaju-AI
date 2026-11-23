@@ -65,7 +65,10 @@ def _rpc(conf,name,payload):
     with build_opener(HTTPSHandler(),NoRedirect()).open(req,timeout=7) as resp:
         if resp.status != 200:
             raise ValueError("Chat status request failed")
-        raw=resp.read(4096)
+        max_bytes=65536 if name=="web_admin_notification_feed" else 4096
+        raw=resp.read(max_bytes+1)
+        if len(raw)>max_bytes:
+            raise ValueError("Chat RPC response too large")
     result=json.loads(raw)
     if not isinstance(result,dict):
         raise ValueError("Chat status response invalid")
