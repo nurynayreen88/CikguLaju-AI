@@ -121,6 +121,10 @@ def main():
                                 pdf_text = " ".join(pdf_doc[0].get_text().split())
                                 assert sk_label in pdf_text and sp_label in pdf_text, (
                                     family, year, "PDF lost verified standard descriptions")
+                                for code_sp, label_sp in _EXTRA_SPS.get((family, year), {}).items():
+                                    assert f"{code_sp} {label_sp}" in pdf_text, (
+                                        family, year, code_sp,
+                                        "PDF dropped a distinct verified subclause")
                             if code == "SCIENCE":
                                 extracted = " ".join(pdf_doc[0].get_text().split())
                                 expected = " ".join(reflection.split())
