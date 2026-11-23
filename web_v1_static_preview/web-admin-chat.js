@@ -4,7 +4,7 @@ const $=id=>document.getElementById(id);
 const own=$("web-chat-messages"), admin=$("web-admin-chat-thread");
 if(!own||!admin)return;
 let activeUser="";
-function render(node,items){
+function render(node,items,forAdmin=false){
   node.replaceChildren();
   if(!items.length){node.textContent="Belum ada mesej.";return;}
   for(const item of items){
@@ -15,7 +15,15 @@ function render(node,items){
     head.textContent=(item.sender_role==="admin"?"Admin":"Pengguna")+" · "+when;
     const body=document.createElement("div");
     body.textContent=item.message;
-    bubble.append(head,body);node.append(bubble);
+    bubble.append(head,body);
+    if(item.attachment_name){
+      const link=document.createElement("a");
+      link.href=(forAdmin?"/api/web/admin/chat-attachments/":"/api/web/chat/attachments/")+item.id;
+      link.textContent="📎 Muat Turun: "+item.attachment_name;
+      link.rel="noopener";link.download="";
+      bubble.append(link);
+    }
+    node.append(bubble);
   }
   node.scrollTop=node.scrollHeight;
 }
@@ -33,11 +41,16 @@ $("web-chat-refresh").addEventListener("click",ownLoad);
 $("web-chat-form").addEventListener("submit",async e=>{
   e.preventDefault();
   const box=$("web-chat-input"),message=box.value.trim();
-  if(!message)return;
+  const file=$("web-chat-file").files[0];
+  if(!message&&!file)return;
+  if(file&&file.size>4*1024*1024){$("web-chat-status").textContent="Lampiran melebihi 4 MB.";return;}
   try{
-    await api("/api/web/chat",{method:"POST",headers:{"Content-Type":"application/json"},
-      body:JSON.stringify({message})});
-    box.value="";await ownLoad();$("web-chat-status").textContent="Mesej dihantar.";
+    const options=file?{method:"POST",body:(()=>{
+      const data=new FormData();data.append("message",message);data.append("file",file);return data;
+    })()}:{method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({message})};
+    await api("/api/web/chat",options);
+    box.value="";$("web-chat-file").value="";await ownLoad();$("web-chat-status").textContent="Mesej dihantar.";
   }catch(err){$("web-chat-status").textContent=err.message;}
 });
 async function adminLoad(){
@@ -57,7 +70,7 @@ async function openThread(id){
     $("web-admin-chat-status").textContent="ID pengguna tidak sah.";return;
   }
   activeUser=id;$("web-admin-chat-user").value=id;
-  try{render(admin,(await api("/api/web/admin/chats/"+id)).items);
+  try{render(admin,(await api("/api/web/admin/chats/"+id)).items,true);
     $("web-admin-chat-status").textContent="Perbualan ID "+id;
   }catch(e){$("web-admin-chat-status").textContent=e.message;}
 }
@@ -66,10 +79,15 @@ $("web-admin-chat-refresh").addEventListener("click",adminLoad);
 $("web-admin-chat-form").addEventListener("submit",async e=>{
   e.preventDefault();
   if(!activeUser){$("web-admin-chat-status").textContent="Pilih ID pengguna dahulu.";return;}
-  const box=$("web-admin-chat-input"),message=box.value.trim();if(!message)return;
-  try{await api("/api/web/admin/chats/"+activeUser,{method:"POST",
-    headers:{"Content-Type":"application/json"},body:JSON.stringify({message})});
-    box.value="";await openThread(activeUser);
+  const box=$("web-admin-chat-input"),message=box.value.trim();
+  const file=$("web-admin-chat-file").files[0];if(!message&&!file)return;
+  if(file&&file.size>4*1024*1024){$("web-admin-chat-status").textContent="Lampiran melebihi 4 MB.";return;}
+  try{
+    const options=file?{method:"POST",body:(()=>{
+      const data=new FormData();data.append("message",message);data.append("file",file);return data;
+    })()}:{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({message})};
+    await api("/api/web/admin/chats/"+activeUser,options);
+    box.value="";$("web-admin-chat-file").value="";await openThread(activeUser);
   }catch(err){$("web-admin-chat-status").textContent=err.message;}
 });
 document.querySelectorAll('[data-web-view="feedback"]').forEach(b=>
