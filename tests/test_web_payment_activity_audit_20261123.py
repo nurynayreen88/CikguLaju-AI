@@ -27,6 +27,26 @@ class ActivityTests(unittest.TestCase):
         with patch("web.web_payment_routes.build_opener",side_effect=OSError("offline")):
             self.assertIsNone(_audit_payment(CONF,712,"payment_opened"))
 
+    def test_secret_key_is_apikey_only_not_bearer_jwt(self):
+        class Reply:
+            status=201
+            def __enter__(self): return self
+            def __exit__(self,*args): return False
+        class Transport:
+            def __init__(self): self.request=None
+            def open(self,req,timeout):
+                self.request=req
+                return Reply()
+        transport=Transport()
+        conf={"supabase_url":"https://unit.supabase.co",
+              "supabase_key":"sb_secret_"+"x"*45}
+        with patch("web.web_payment_routes.build_opener",return_value=transport):
+            _audit_payment(conf,8000000000000000005,"payment_opened")
+        self.assertIsNotNone(transport.request)
+        self.assertIsNone(transport.request.get_header("Authorization"))
+        self.assertEqual(transport.request.get_header("Apikey"),conf["supabase_key"])
+        self.assertIn(b"8000000000000000005",transport.request.data)
+
     def test_invalid_identity_or_event_not_written(self):
         with patch("web.web_payment_routes.build_opener") as opener:
             _audit_payment(CONF,0,"payment_opened")
