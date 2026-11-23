@@ -34,6 +34,45 @@ def main():
         ):
             print("PI_RENDER_STAGE", label, "LENGTH", len(value), "TEXT", repr(value[:850]))
         assert len(str(source["activity_note"])) >= 110
+        # Grounded acceptance: exact complete RPT rows, not just removal of '2.'.
+        fragments = (
+            "1. ممباچ اية سچارا تلقي دان مشافهة",
+            "2. ممبتولكن باچاءن يڠ كورڠ فصيح",
+            "3. ممبيمبيڠ راكن سباي",
+            "4. ݢورو مريكوت ڤنچاڤاين موريد.",
+        )
+        for field in ("ROWS_MAIN", "DOCUMENT_ROWS_MAIN"):
+            value = rows["AKTIVITI UTAMA"] if field == "ROWS_MAIN" else final_rows["AKTIVITI UTAMA"]
+            for item in fragments:
+                assert item in value, (field, "missing original source step", item)
+            assert "مشافهة 2." not in value, (field, "old truncated display survived")
+        # Export through the SAME two Telegram functions Web invokes. Never
+        # upload to materials, change credits or alter the verified DB.
+        import uuid, shutil
+        from pathlib import Path
+        from docx import Document
+        import fitz
+        output_dir = Path("qa/pi-source-steps-fixed")
+        output_dir.mkdir(parents=True, exist_ok=True)
+        unique = "audit_pi_" + uuid.uuid4().hex[:16]
+        word_file = Path(runtime.create_word_file(state, native, unique))
+        pdf_file = Path(runtime.create_pdf_file(state, native, unique+"p"))
+        assert word_file.is_file() and pdf_file.is_file()
+        word_doc = Document(str(word_file))
+        whole_word = "\\n".join(cell.text for table in word_doc.tables
+                               for row in table.rows for cell in row.cells)
+        for item in fragments:
+            assert item in whole_word, ("Word output lost source step", item)
+        assert "مشافهة 2." not in whole_word, "Word output retains source truncation"
+        with fitz.open(str(pdf_file)) as generated_pdf:
+            assert len(generated_pdf) == 1, "Native PI PDF exceeded one A4 page"
+            assert abs(generated_pdf[0].rect.width - 595.3) < 2
+            assert abs(generated_pdf[0].rect.height - 841.9) < 2
+        shutil.copy2(word_file, output_dir / "CIKGULAJU_PI_T2_PDP001_4_LANGKAH_SUMBER_AKTIF.docx")
+        shutil.copy2(pdf_file, output_dir / "CIKGULAJU_PI_T2_PDP001_4_LANGKAH_SUMBER_AKTIF_NATIVE.pdf")
+        print("PI_ACTUAL_NATIVE_WORD_PDF_4_SOURCE_STEPS_SUCCESS")
+        word_file.unlink(missing_ok=True)
+        pdf_file.unlink(missing_ok=True)
     finally:
         tmp.cleanup()
 
