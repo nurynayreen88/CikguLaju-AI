@@ -111,8 +111,8 @@ class TestKSSRWordPolish(unittest.TestCase):
     def test_unknown_source_and_invalid_word_fail_closed(self):
         original = sample()
         self.assertIs(polish_kssr_word(original, "UNKNOWN"), original)
-        self.assertIs(polish_kssr_word(BytesIO(b"not a Word file"), "BM"),
-                      polish_kssr_word(BytesIO(b"not a Word file"), "BM"))
+        invalid = BytesIO(b"not a Word file")
+        self.assertIs(polish_kssr_word(invalid, "BM"), invalid)
         off = sample("Nota guru sahaja")
         self.assertIs(polish_kssr_word(off, "BM"), off)
 
