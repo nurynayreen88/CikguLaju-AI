@@ -1,0 +1,71 @@
+name: Web PI postrelease read-only smoke (no user credits)
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/web-pi-postrelease-readonly-20261124.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-live-web-no-account:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Live Web health/readiness, unauthenticated PI RPH gates
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from urllib.request import Request, urlopen
+          from urllib.error import HTTPError, URLError
+          from time import sleep
+
+          WEB = "https://cikgulaju-web.onrender.com"
+
+          def get(path):
+              req = Request(WEB + path, headers={
+                  "Accept": "application/json",
+                  "User-Agent": "CikguLaju-ReadOnly-CI-20261124",
+              }, method="GET")
+              for attempt in range(3):
+                  try:
+                      with urlopen(req, timeout=20) as resp:
+                          code, payload, headers = resp.status, resp.read(16000), resp.headers
+                      return code, json.loads(payload), headers
+                  except HTTPError as exc:
+                      code, payload, headers = exc.code, exc.read(16000), exc.headers
+                      return code, json.loads(payload), headers
+                  except (URLError, TimeoutError) as exc:
+                      if attempt == 2:
+                          raise AssertionError("Web not reachable from external GitHub runner") from exc
+                      sleep(5)
+
+          code, health, headers = get("/healthz")
+          assert code == 200 and health.get("service") == "cikgulaju-web" and health.get("live") is True, (code,health)
+          print("PASS public /healthz: 200 live")
+
+          code, ready, headers = get("/readyz")
+          print("Readiness:",json.dumps({
+              key:ready.get(key) for key in (
+                  "service", "ready", "account_lookup_configured",
+                  "authoritative_curriculum_configured",
+                  "authoritative_curriculum_reachable",
+              )
+          }))
+          assert code == 200 and ready.get("ready") is True, (code,ready)
+          assert ready.get("account_lookup_configured") is True, ready
+          assert ready.get("authoritative_curriculum_configured") is True, ready
+          assert ready.get("authoritative_curriculum_reachable") is True, ready
+          print("PASS readyz: Web can reach authoritative Telegram curriculum")
+
+          for path in (
+              "/api/auth/telegram/session",
+              "/api/web/rph/availability?year=2&subject=PI",
+              "/api/web/rph/word?year=2&subject=PI",
+              "/api/web/rph/pdf?year=2&subject=PI",
+          ):
+              code, body, headers = get(path)
+              assert code == 401, (path,code,body)
+              print("PASS anonymous blocked:",path,code)
+          print("READ_ONLY_WEB_PI_SMOKE_PASS: no cookies, no uploads, no credit debit, no RPH render")
+          PY
