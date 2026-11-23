@@ -44,11 +44,16 @@ def premium_rph_details(document):
             and new_fields[2][0] in ("Topic", "Tajuk")):
         fields.update((label, value.strip("\t ")) for label, value in new_fields)
     else:
-        english = identity.paragraphs[0].text.casefold() == "daily lesson plan"
+        external_title = (document.paragraphs[0].text.strip().casefold()
+                          if document.paragraphs else "")
+        english = (identity.paragraphs[0].text.casefold() == "daily lesson plan"
+                   or external_title == "daily lesson plan")
         fields["Topic" if english else "Tajuk"] = identity.paragraphs[2].text
         match = re.search(r"\b(?:Year|Tahun) [1-6]\b", identity.paragraphs[1].text)
         if match:
             fields["Year" if english else "Tahun/Tingkatan"] = match.group(0)
+        if external_title in ("daily lesson plan", "rancangan pengajaran harian"):
+            fields["Subject" if english else "Mata Pelajaran"] = identity.paragraphs[0].text
     # The name of the subject appears in the identity panel, not in the
     # curriculum/standards rows. No duplicate subject or teacher metadata.
     forbidden = {"subject", "mata pelajaran", "date", "tarikh", "time", "masa",
