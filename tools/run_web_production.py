@@ -34,6 +34,8 @@ from web.matematik_sjkt_t2_review_web import bp as matematik_sjkt_t2_review_bp
 app.register_blueprint(matematik_sjkt_t2_review_bp)
 from web.web_feedback_routes import bp as web_feedback_bp
 app.register_blueprint(web_feedback_bp)
+from web.web_admin_chat_routes import bp as web_admin_chat_bp
+app.register_blueprint(web_admin_chat_bp)
 from web_v1_email_auth_routes import bp as web_email_auth_bp
 app.register_blueprint(web_email_auth_bp)
 from web_v1_email_auth_ui import install as install_email_auth_ui
@@ -165,6 +167,12 @@ def web_payment_script():
     return send_file(file, mimetype="application/javascript", max_age=1800,
                      conditional=True)
 
+
+@app.get("/assets/web-admin-chat.js")
+def web_admin_chat_script():
+    from flask import send_file
+    path = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "web-admin-chat.js"
+    return send_file(path, mimetype="application/javascript")
 
 @app.get("/assets/web-feedback.js")
 def web_feedback_script():

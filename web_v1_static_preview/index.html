@@ -7,7 +7,12 @@
 <link rel="icon" type="image/svg+xml" href="/assets/cikgulaju-logo.svg">
 <style>
 :root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#173d37;background:#f5f8f7}*{box-sizing:border-box}body{margin:0}.wrap{max-width:920px;margin:auto;padding:24px}.header{display:flex;align-items:center;gap:12px;font-size:1.1rem;font-weight:800}.mark{background:#087568;color:#fff;padding:13px;border-radius:13px}.panel{background:white;border:1px solid #e0eae6;border-radius:24px;padding:clamp(26px,6vw,58px);margin:56px auto 18px;max-width:640px;box-shadow:0 16px 48px #174b3910}h1{font-size:clamp(1.8rem,5vw,2.6rem);letter-spacing:-.04em;line-height:1.15;margin:0 0 18px}p{line-height:1.65;color:#536c64} .pill{display:inline-block;background:#e6f5ee;color:#087568;border-radius:30px;padding:7px 12px;font-size:.78rem;font-weight:700;margin-bottom:20px}.login{background:#087568;color:#fff;border:0;border-radius:12px;padding:15px 20px;font:inherit;font-weight:700;width:100%;margin-top:14px;cursor:not-allowed;opacity:.55}.notice{font-size:.88rem;color:#65796f;margin-top:14px}.foot{text-align:center;color:#75867f;font-size:.8rem;margin-top:26px}@media(max-width:550px){.wrap{padding:16px}.panel{margin-top:35px;border-radius:18px;padding:27px}}
-label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width:100%;padding:13px;border:1px solid #ceded8;border-radius:12px;background:white;font:inherit}select:disabled{background:#f1f5f3} [hidden]{display:none!important}#show-materials,#rpt-download{margin-top:18px;background:#087568;color:white;border:0;border-radius:12px;padding:13px 20px;font:inherit;font-weight:700;cursor:pointer}#materials-list{padding-left:22px;line-height:2}#materials-list a:not(.material-download-action){color:#087568;font-weight:700}#download-all:disabled,#rpt-download:disabled{opacity:.5;cursor:not-allowed}#logout{border:1px solid #ccdcd6;background:white;border-radius:12px;padding:12px 18px;margin-top:12px;cursor:pointer}.panel[hidden]{display:none}</style>
+label{display:block;margin:16px 0 6px;font-weight:700}select{display:block;width:100%;padding:13px;border:1px solid #ceded8;border-radius:12px;background:white;font:inherit}select:disabled{background:#f1f5f3} [hidden]{display:none!important}#show-materials,#rpt-download{margin-top:18px;background:#087568;color:white;border:0;border-radius:12px;padding:13px 20px;font:inherit;font-weight:700;cursor:pointer}#materials-list{padding-left:22px;line-height:2}#materials-list a:not(.material-download-action){color:#087568;font-weight:700}#download-all:disabled,#rpt-download:disabled{opacity:.5;cursor:not-allowed}#logout{border:1px solid #ccdcd6;background:white;border-radius:12px;padding:12px 18px;margin-top:12px;cursor:pointer}.panel[hidden]{display:none}.web-chat-messages{border:1px solid #d4e4ea;border-radius:12px;padding:12px;min-height:90px;max-height:350px;overflow:auto;background:#f9fcfd;margin:12px 0;display:grid;gap:9px}
+.web-chat-bubble{padding:10px 12px;border-radius:11px;background:#fff;border:1px solid #e1eaf0;white-space:pre-wrap;overflow-wrap:anywhere}
+.web-chat-bubble.admin{background:#e6f5f0;border-color:#b6ddd0}
+.web-chat-bubble small{display:block;color:#60778d;margin-bottom:4px}
+#web-admin-chat-inbox button{margin:4px;padding:7px 10px}
+</style>
 
 <style>
 #rph-preview-button,#rph-word,#rph-print{border:0;border-radius:12px;padding:13px 20px;background:#087568;color:white;font:inherit;font-weight:700;cursor:pointer;margin:12px 8px 8px 0}
@@ -548,7 +553,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
         <button type="button" class="sidebar-tab sidebar-tab--planned" data-web-view="uasa" aria-controls="view-uasa"><span aria-hidden="true">📝</span> Latihan UASA <span class="sidebar-coming-status">Akan Datang</span></button>
         <button type="button" class="sidebar-tab" data-web-view="pbd" aria-controls="view-pbd"><span aria-hidden="true">📊</span> Rekod PBD</button>
         <button type="button" class="sidebar-tab" data-web-view="special" aria-controls="view-special"><span aria-hidden="true">🌱</span> RPH Aktiviti Khas</button>
-        <button type="button" class="sidebar-tab" data-web-view="feedback" aria-controls="view-feedback"><span aria-hidden="true">💬</span> Komen &amp; Cadangan</button>
+        <button type="button" class="sidebar-tab" data-web-view="feedback" aria-controls="view-feedback"><span aria-hidden="true">💬</span> Chat Admin &amp; Komen</button>
         <button type="button" id="web-referral-tab" class="sidebar-tab" data-web-view="referral" aria-controls="view-referral" hidden><span aria-hidden="true">🎁</span> Affiliate Saya</button>
         <button type="button" id="web-admin-tab" class="sidebar-tab" data-web-view="admin" aria-controls="view-admin" hidden><span aria-hidden="true">📊</span> Analisis Admin</button>
       </div>
@@ -1080,7 +1085,20 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <button type="button" id="payment-refresh" class="profile-refresh">🔄 Refresh Status Bayaran</button>
 </section>
 <section id="view-feedback" class="app-view" aria-labelledby="web-feedback-heading" hidden>
-<h2 id="web-feedback-heading">💬 Komen &amp; Cadangan</h2>
+<h2 id="web-feedback-heading">💬 Chat Admin &amp; Komen</h2>
+<section class="teacher-timetable-section" aria-labelledby="web-chat-heading">
+ <h3 id="web-chat-heading">Chat dengan Admin</h3>
+ <p class="notice">Mesej anda dihantar terus kepada admin CikguLaju. ID akaun dikenal pasti secara automatik. Jika sudah bayar, jangan buat bayaran kedua.</p>
+ <div id="web-chat-messages" class="web-chat-messages" aria-live="polite"></div>
+ <form id="web-chat-form" class="teacher-profile-form">
+  <label for="web-chat-input">Mesej kepada admin</label>
+  <textarea id="web-chat-input" maxlength="1500" rows="3" placeholder="Contoh: Saya sudah bayar RM20 pada 12:28 tetapi gagal hantar resit."></textarea>
+  <label for="web-chat-file">Lampirkan resit / gambar / PDF (maksimum 4 MB)</label>
+  <input id="web-chat-file" type="file" accept=".pdf,.png,.jpg,.jpeg,.webp,application/pdf,image/png,image/jpeg,image/webp">
+  <div class="profile-actions"><button type="submit">Hantar Mesej</button><button id="web-chat-refresh" type="button" class="profile-refresh">Muat Semula Chat</button></div>
+ </form>
+ <p id="web-chat-status" role="status" aria-live="polite"></p>
+</section>
 <p>Cadangkan penambahbaikan atau maklumkan masalah RPH, RPT dan Web CikguLaju. Komen dihantar secara peribadi kepada admin, bukan dipaparkan kepada pengguna lain.</p>
 <form id="web-feedback-form" class="teacher-profile-form" autocomplete="off">
  <h3>Hantar Komen</h3>
@@ -1131,6 +1149,24 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   </div>
   <div class="profile-actions"><button type="button" id="admin-payment-close">Tutup</button></div>
  </dialog>
+</section>
+<section class="teacher-timetable-section" aria-labelledby="web-chat-admin-heading">
+ <h3 id="web-chat-admin-heading">💬 Chat Pengguna</h3>
+ <p class="notice">Pilih ID daripada senarai, atau masukkan ID akaun untuk memulakan chat. Semak identiti sebelum mengesahkan bayaran.</p>
+ <button id="web-admin-chat-refresh" type="button" class="profile-refresh">Muat Semula Senarai Chat</button>
+ <div id="web-admin-chat-inbox"></div>
+ <label for="web-admin-chat-user">ID akaun pengguna</label>
+ <input id="web-admin-chat-user" inputmode="numeric" placeholder="ID pengguna Telegram atau e-mel" maxlength="19">
+ <button id="web-admin-chat-open" type="button" class="profile-refresh">Buka Perbualan</button>
+ <div id="web-admin-chat-thread" class="web-chat-messages" aria-live="polite"></div>
+ <form id="web-admin-chat-form" class="teacher-profile-form">
+  <label for="web-admin-chat-input">Balasan admin</label>
+  <textarea id="web-admin-chat-input" rows="3" maxlength="1500"></textarea>
+  <label for="web-admin-chat-file">Lampiran admin (PDF atau gambar, maksimum 4 MB)</label>
+  <input id="web-admin-chat-file" type="file" accept=".pdf,.png,.jpg,.jpeg,.webp,application/pdf,image/png,image/jpeg,image/webp">
+  <button type="submit">Hantar Balasan</button>
+ </form>
+ <p id="web-admin-chat-status" role="status" aria-live="polite"></p>
 </section>
 <section class="teacher-timetable-section" aria-labelledby="web-feedback-admin-heading">
  <h3 id="web-feedback-admin-heading">💬 Komen &amp; Cadangan Pengguna</h3>
@@ -2953,6 +2989,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>
 <script src="/assets/admin-usage.js?v=user-directory-20261123"></script>
 <script src="/assets/web-feedback.js?v=comments-inbox-20261112"></script>
+<script src="/assets/web-admin-chat.js?v=chat-two-way-20261123"></script>
 <script src="/assets/special-activities.js?v=pilihan-subjek-20261117"></script>
 </body>
 </html>
