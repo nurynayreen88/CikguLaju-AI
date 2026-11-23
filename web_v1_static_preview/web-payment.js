@@ -22,12 +22,17 @@ let payCatalog=null;
 let payQrUrl=null;
 let payBusy=false;
 
+function receiptFileValid(file){
+  if(!file||file.size>4*1024*1024||file.size<700)return false;
+  if(["image/jpeg","image/png","image/webp","application/pdf"].includes(file.type))return true;
+  // Some Android file pickers omit MIME metadata; server checks file signatures.
+  return ["","application/octet-stream"].includes(file.type||"")
+    &&/\.(jpe?g|png|webp|pdf)$/i.test(file.name||"");
+}
 function paymentReady(){
   const file=payReceipt.files?.[0];
   const choice=payCatalog?.plans?.find(p=>p.code==="rakan_pembangun"&&p.amount==="20.00");
-  paySubmit.disabled=payBusy||payEntry.hidden||!choice||!file
-    ||file.size>4*1024*1024||file.size<700
-    ||!["image/jpeg","image/png","image/webp","application/pdf"].includes(file.type);
+  paySubmit.disabled=payBusy||payEntry.hidden||!choice||!receiptFileValid(file);
 }
 function clearPaymentQr(){
   if(payQrUrl)URL.revokeObjectURL(payQrUrl);
@@ -93,6 +98,7 @@ async function loadWebPayments(){
     }
     payQrNotice.textContent="Memuatkan QR DuitNow rasmi…";
     if(canPay)void loadPaymentQr();
+    return data;
   }catch(error){
     payCatalog=null;
     payEntry.hidden=true;
@@ -100,7 +106,20 @@ async function loadWebPayments(){
     payProgress.hidden=true;
     clearPaymentQr();
     payStatus.textContent="Status Rakan Pembangun belum dapat disemak dengan selamat.";
+    // When Telegram is temporarily offline, check the existing durable ledger.
+    try{
+      const fallback=await paymentApi("/api/web/payment/status");
+      if(fallback.status?.pending){
+        const item=fallback.status;
+        payStatus.textContent="⌛ RESIT SUDAH DIREKOD · MENUNGGU ADMIN\n"+
+          "Permohonan #"+item.id+" • RM"+item.amount+
+          "\nJangan buat bayaran atau hantar resit sekali lagi.";
+        payMessage.textContent="Status pakej sementara tidak tersedia tetapi resit anda telah direkod.";
+        return fallback;
+      }
+    }catch(_unavailable){/* Keep payment locked when status cannot be confirmed. */}
     payMessage.textContent=error.message+" Jangan buat bayaran baharu sehingga status boleh disahkan.";
+    return null;
   }finally{payBusy=false;paymentReady();}
 }
 async function loadPaymentQr(){
@@ -125,14 +144,17 @@ async function loadPaymentQr(){
 }
 payReceipt.addEventListener("change",()=>{
   const f=payReceipt.files?.[0];
-  if(f&&(f.size>4*1024*1024||f.size<700))payMessage.textContent="Resit mesti berukuran antara 700 B hingga 4 MB.";
+  if(f&&(f.size>4*1024*1024||f.size<700))
+    payMessage.textContent="Resit mesti berukuran antara 700 B hingga 4 MB.";
+  else if(f&&!receiptFileValid(f))
+    payMessage.textContent="Sila pilih resit JPG, PNG, WEBP atau PDF (maksimum 4 MB).";
   else payMessage.textContent="";
   paymentReady();
 });
 paySubmit.addEventListener("click",async()=>{
   const p=payCatalog?.plans?.find(row=>row.code==="rakan_pembangun"&&row.amount==="20.00");
   const f=payReceipt.files?.[0];
-  if(!p||!f||payBusy||payEntry.hidden)return;
+  if(!p||!receiptFileValid(f)||payBusy||payEntry.hidden)return;
   if(!window.confirm("Sahkan anda telah membayar RM20 sekali untuk Rakan Pembangun dan ingin menghantar resit bagi semakan admin?"))return;
   payBusy=true;paymentReady();
   payMessage.textContent="Menghantar resit dan menyemak rekod Pending…";
@@ -145,9 +167,17 @@ paySubmit.addEventListener("click",async()=>{
     await loadWebPayments();
     payMessage.textContent="Resit permohonan #"+result.id+" diterima. Menunggu pengesahan admin.";
   }catch(error){
-    // Read current state first to avoid duplicate payments after a response loss.
-    await loadWebPayments();
-    payMessage.textContent=error.message+" Jika masih gagal, tekan Chat Admin di atas untuk bantuan. Jangan buat bayaran sekali lagi.";
+    // A lost HTTP response must not imply the receipt was lost.
+    const current=await loadWebPayments();
+    if(current?.status?.pending){
+      payMessage.textContent="Resit sudah direkod sebagai permohonan #"+
+        current.status.id+". Menunggu pengesahan admin. Jangan bayar lagi.";
+    }else if(current?.already_member){
+      payMessage.textContent="Akses Rakan Pembangun sudah aktif. Tidak perlu bayar lagi.";
+    }else{
+      payMessage.textContent=error.message+
+        " Jika masih gagal, tekan Chat Admin di atas untuk bantuan. Jangan buat bayaran sekali lagi.";
+    }
   }finally{payBusy=false;paymentReady();}
 });
 payHelpChat.addEventListener("click",()=>{
