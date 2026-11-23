@@ -11,6 +11,7 @@ on:
       - 'tests/test_web_admin_chat_20261123.py'
       - 'tests/test_web_payment_proof_first.py'
       - 'tests/test_web_payment_receipt_admin_fallback_20261123.py'
+      - 'tests/test_web_payment_activity_audit_20261123.py'
       - '.github/workflows/web-proof-first-payment-qa.yml'
   push:
     branches: [feature/web-payment-portal-20261105]
@@ -34,6 +35,7 @@ jobs:
       - run: python -m unittest discover -s tests -p test_web_admin_chat_20261123.py -v
       - run: python -m unittest discover -s tests -p test_web_payment_proof_first.py -v
       - run: python -m unittest discover -s tests -p test_web_payment_receipt_admin_fallback_20261123.py -v
+      - run: python -m unittest discover -s tests -p test_web_payment_activity_audit_20261123.py -v
       - run: python -m unittest discover -s tests -p test_web_sidebar_navigation.py -v
       - run: python -m unittest discover -s tests -p test_web_shared_teacher_profile.py -v
       - run: python -m unittest discover -s tests -p test_web_rpt_native_proxy_stdlib.py -v
