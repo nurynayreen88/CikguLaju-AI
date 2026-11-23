@@ -105,3 +105,13 @@
 - Web hanya memaparkan butang Word selepas pengesahan kelayakan dan ketersediaan fail. Teks untuk pengguna percuma memaklumkan Word khas Rakan Pembangun dan langganan; PDF asal kekal.
 - Ujian Flask mengesahkan Word untuk Rakan Pembangun/langganan aktif, menolak percubaan percuma/tamat tempoh/tanpa login dan mengekalkan PDF. Ujian Chromium menekan butang dan memeriksa muat turun sebenar.
 - Tiada perubahan pembayaran, Supabase, harga, kuota, RPH, fail RPT asal atau dasar akses PDF.
+
+## 23 November 2026 — RPT Word berbayar BM SK KSSR Tahun 2–6 daripada sumber HTML asli
+
+- Menambah **5 RPT Word (.docx)** BM SK KSSR Tahun 2, 3, 4, 5 dan 6 daripada 44 jadual mingguan setiap tahun, keseluruhan **825 PdP** (164,165,165,166,165). Tidak menggunakan penukaran PDF-ke-Word atau overlay.
+- Bahan rujukan ialah fail HTML tersimpan dan PDF KSSR yang dikunci SHA dalam manifest 56 RPT. Semua SK/SP, PdP, tajuk, rujukan, tarikh A/B serta catatan sumber dikekalkan. **PDF asal tidak berubah**.
+- Word berorientasi A4 landskap dengan kotak lima lajur, pemisah yang jelas, warna terang dan nombor PdP ditebalkan. 44 muka surat/tahun dan tiada limpahan dalam render LibreOffice. Sampel muka depan/minggu 2/pertengahan/akhir telah diperiksa secara visual.
+- Fail Word dibungkus dengan cap masa ZIP tetap agar SHA-256 konsisten. Manifest bagi lima fail: rpt_2027/kssr_word_premium/manifest.json. Sumber Word berstatus DRAF SEMAKAN, bukan kelulusan akademik.
+- Pautan muat turun: /api/rpt/2027/all/bahasa_melayu/{tahun}.docx (tahun 2–6). Backend mengesahkan akaun aktif Rakan Pembangun atau langganan, menolak percuma/tamat tempoh 403, mengesahkan checksum HTML, PDF dan DOCX. Word satu klik dan nama fail panjang CikguLaju; PDF mengikut hak akses lama.
+- Inventori premium kini **26 fail Word** (21 sedia ada + 5 BM SK), baki 51 sumber KSSR PDF-only memerlukan sumber Word yang disahkan. Ujian: tests/test_rpt_kssr_bm_word_paid_20261123.py dan workflow kssr-bm-word-paid-20261123.yml.
+- Tiada perubahan Supabase, pembayaran, kuota, Telegram, bahan RPH atau bahan berstatus QA_HOLD.
