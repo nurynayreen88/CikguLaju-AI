@@ -1,0 +1,4 @@
+# Paid RPT Word binaries must not be committed to this PUBLIC repository.
+# Original SHA-verified objects live in private Supabase Storage.
+# Generate Word locally/in ephemeral CI only; do not push or upload artifacts.
+/rpt_2027/kssr_word_premium/bahasa_melayu/*.docx
