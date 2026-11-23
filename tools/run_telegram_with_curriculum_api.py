@@ -847,6 +847,18 @@ except Exception as _sk_sp_labels_exc:
           type(_sk_sp_labels_exc).__name__, flush=True)
 
 
+# Legacy PDF subcode dedup wrongly collapses (i), (ii) and (iii).
+# Retain all clauses ONLY for the four exact verified Math RPH examples,
+# leaving every unrelated PDF, Jawi, source row and Word unchanged.
+try:
+    from web.rph_math_multisp_pdf_guard_20261124 import install as install_math_pdf_subclauses
+    RPH_MATH_MULTISP_PDF_GUARD_ACTIVE = bool(install_math_pdf_subclauses(telegram_runtime))
+except Exception as _math_multisp_pdf_exc:
+    RPH_MATH_MULTISP_PDF_GUARD_ACTIVE = False
+    print("Mathematics PDF subclause preservation unavailable:",
+          type(_math_multisp_pdf_exc).__name__, flush=True)
+
+
 # Remove legacy RM8/RM50 subscription advertising from Telegram menu only.
 # No change to payment amount, entitlement, callbacks or user records.
 from web.telegram_subscription_price_guard import install as install_subscription_price_guard
