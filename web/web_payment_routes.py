@@ -508,7 +508,11 @@ def payment_own_status():
     conf,uid,err=_auth()
     if err is not None:return err
     try:
-        return jsonify({"status":_status_rows(_existing(conf,uid))})
+        status=_status_rows(_existing(conf,uid))
+        member=_is_member(conf,uid)
+        return jsonify({"status":status,"already_member":member,
+                        "receipt_upload_available":not status["pending"] and not member,
+                        "receipt_plan":{"code":"rakan_pembangun","amount":"20.00"}})
     except (ProfileUnavailable,PaymentConflict,ValueError,TypeError,KeyError,OSError):
         return jsonify({"error":"Status resit belum dapat disemak"}),503
 
