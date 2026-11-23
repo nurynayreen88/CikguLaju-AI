@@ -1,0 +1,33 @@
+{
+  "id": "kp2027_bmsjk_t1_52_rph_unified_main_table_qa_v2_20261123",
+  "status": "QA_ONLY_NOT_PUBLISHED",
+  "academic_approved": false,
+  "web_publish": false,
+  "curriculum": "KP2027",
+  "subject": "Bahasa Melayu SJK",
+  "year": 1,
+  "source": "GitHub Actions artifact 14780276090, workflow run 45087808836 (PR #1297), 52 draft RPH DOCX/PDF",
+  "source_content_preserved": true,
+  "format_change": "Merge the three main Word content tables into one single uniform-width two-column table, keeping the teacher header table separate.",
+  "word_count": 52,
+  "pdf_count": 52,
+  "checks": {
+    "docx_text_extracted_exact_parity": 52,
+    "word_main_table_19_rows": 52,
+    "word_header_plus_main_table_total_2": 52,
+    "one_page_pdf": 52,
+    "no_pdf_text_outside_page_bounds": 52,
+    "PDF_reflection_label_no_auto_manual": 52
+  },
+  "qa_drive_file_id": "10pJLrcuC73m2f0fjbK_BSyKpxm9B8YkQ",
+  "qa_drive_folder": "CikguLaju/RPH",
+  "qa_archive": "CIKGULAJU_KP2027_BMSJK_T1_52_RPH_JADUAL_SERAGAM_QA_V2_20261123.zip",
+  "qa_archive_bytes": 3520598,
+  "qa_archive_sha256": "13eda287d85da4e0fe806c138f7528a968f725d7b21d685e27effe04b857e463",
+  "review_notes": [
+    "Do not publish without source DK academic checking and complete RPT annual placement.",
+    "No user-facing RPH replacement or production downloads altered.",
+    "All 52 original source instructions, SK/SP, assessment text and content are unchanged.",
+    "Native Word-to-PDF rendering, not visual overlay."
+  ]
+}
