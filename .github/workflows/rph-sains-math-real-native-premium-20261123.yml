@@ -4,6 +4,8 @@ on:
     paths:
       - "web/rph_reference_style_20261121.py"
       - "web/rph_native_pdf_header_20261121.py"
+      - "web/rph_objective_linked_reflection_20261123.py"
+      - "tests/test_rph_objective_linked_reflection_20261123.py"
       - "tests/test_rph_reference_style_20261121.py"
       - "tests/test_rph_premium_header_20261121.py"
       - "tests/test_rph_native_pdf_header_20261121.py"
@@ -30,7 +32,7 @@ jobs:
       - name: Fast protections for source text and all specialty renderers
         run: |
           python -m pip install "pytest>=8,<10"
-          python -m pytest -q tests/test_rph_reference_style_20261121.py tests/test_rph_premium_header_20261121.py tests/test_rph_native_pdf_header_20261121.py
+          python -m pytest -q tests/test_rph_reference_style_20261121.py tests/test_rph_premium_header_20261121.py tests/test_rph_native_pdf_header_20261121.py tests/test_rph_objective_linked_reflection_20261123.py
       - name: Fail closed on all 10 real KSSR RPH Word/PDF (Year 2-6)
         run: python -m tools.audit_native_sains_math_premium_header_20261123
       - name: Export real source-backed QA samples (no production output)
