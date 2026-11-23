@@ -53,15 +53,25 @@ def main():
                         reflection = rows.get("REFLEKSI", "")
                         assert isinstance(reflection, str) and reflection.strip()
                         if code == "SCIENCE":
-                            # Actual verified Sains v26 source: only specific
-                            # Year2,4,5,6 criteria support a compact 4/5
-                            # reflection. Year3 is generic: do not fabricate.
+                            # Year2/4/5/6 use exact specific criteria;
+                            # Year3 Asid/Alkali uses only verified SP 8.1.1.
+                            # No objective/criterion source is rewritten.
                             if year in (2, 4, 5, 6):
                                 assert "4/5 item" in reflection, (year, reflection)
                                 assert "mencapai objektif" not in reflection, (year, reflection)
                                 assert "____ / ____ murid" in reflection, (year, reflection)
                             else:
-                                assert "4/5 item" not in reflection, (year, reflection)
+                                # Exact real Year 3 SP 8.1.1 Asid dan Alkali,
+                                # not fabricated from generic KPS/konsep.
+                                assert "menguji bahan berasid, beralkali" in reflection, (
+                                    year, reflection
+                                )
+                                assert "kertas litmus (4/5 item)" in reflection, (
+                                    year, reflection
+                                )
+                                assert "mencapai objektif" not in reflection, (
+                                    year, reflection
+                                )
                         unique = "native_header_" + uuid.uuid4().hex[:14]
                         word = Path(runtime.create_word_file(state, source, unique))
                         pdf = Path(runtime.create_pdf_file(state, source, unique+"p"))
