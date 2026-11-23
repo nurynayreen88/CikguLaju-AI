@@ -8,6 +8,7 @@ Never use on non-Jawi content, 696-archive layouts, or unverified structures.
 from __future__ import annotations
 
 from collections import Counter
+from copy import copy
 from io import BytesIO
 from zipfile import ZipFile, BadZipFile
 
@@ -99,7 +100,7 @@ def align_active_pi_rtl_value_bytes(original):
             out = BytesIO()
             with ZipFile(out, "w") as target:
                 for item in source.infolist():
-                    target.writestr(item, updated if item.filename == DOCUMENT
+                    target.writestr(copy(item), updated if item.filename == DOCUMENT
                                     else source.read(item.filename))
             output = out.getvalue()
             with ZipFile(BytesIO(output)) as checked:
