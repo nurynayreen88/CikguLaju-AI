@@ -122,7 +122,7 @@ def test_reference_subjects_never_change_pdf_or_teacher_download(tmp_path):
     ):
         assert runtime.create_pdf_file(state, "real curriculum text", "test") == str(path)
         assert path.read_bytes() == original, state
-    assert runtime.calls == 6
+    assert runtime.calls == 5
     assert runtime.create_pdf_file({"task": "rph", "subject": "Bahasa Melayu"}, "", "test") == str(path)
     assert path.read_bytes() != original
     assert _inspect(path.read_bytes())[0] == _inspect(original)[0]
