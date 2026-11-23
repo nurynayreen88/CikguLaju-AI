@@ -11,6 +11,7 @@ from zipfile import ZipFile, ZIP_DEFLATED
 from flask import Blueprint, jsonify, request, send_file
 from web.english_rpt_2027_http import _account, _has_paid_access
 from web.english_y6_standalone_runtime import adapt_rows
+from web.rph_year6_boxed_word_20261123 import boxed_word_bytes
 
 FIELDS = (
     ("TAJUK", "Topic"),
@@ -116,7 +117,8 @@ def create_blueprint():
         rows = source_rows(lesson)
         if rows is None:
             return jsonify({"error": "Year 6 lesson not available or mapping not verified"}), 404
-        return send_file(make_docx(lesson, rows), mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        return send_file(BytesIO(boxed_word_bytes(make_docx(lesson, rows).getvalue(), FIELDS)),
+                         mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
                          as_attachment=True, download_name="CIKGULAJU_ENGLISH_Y6_RPH_%03d_2027.docx" % lesson,
                          conditional=False)
 
