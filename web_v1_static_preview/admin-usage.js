@@ -373,6 +373,25 @@
       itemValue("RPH percuma", item.trial_remaining + " baki", details);
     }
     li.append(details);
+    if (typeof item.chat_user_id === "string"
+        && /^[1-9][0-9]{0,18}$/.test(item.chat_user_id)) {
+      const chat = document.createElement("button");
+      chat.type = "button";
+      chat.className = "admin-user-chat-button";
+      chat.textContent = "💬 Chat";
+      chat.setAttribute("aria-label", "Buka chat dengan " +
+        (item.display_name || item.email || item.telegram_id || "pengguna"));
+      chat.addEventListener("click", () => {
+        if (typeof window.cikgulajuOpenAdminChat !== "function") {
+          status.textContent = "Chat belum tersedia. Muat semula halaman.";
+          return;
+        }
+        void window.cikgulajuOpenAdminChat(item.chat_user_id).catch(error => {
+          status.textContent = error.message || "Perbualan belum dapat dibuka.";
+        });
+      });
+      li.append(chat);
+    }
     return li;
   }
 
