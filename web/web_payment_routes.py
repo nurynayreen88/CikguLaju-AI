@@ -299,7 +299,7 @@ def _optional_web_receipt_notice(uid, request_id):
         req = Request("https://api.telegram.org/bot" + token + "/sendMessage",
                       data=payload, method="POST",
                       headers={"Content-Type": "application/json"})
-        with build_opener(HTTPSHandler(), NoRedirect()).open(req, timeout=5) as resp:
+        with build_opener(HTTPSHandler(), NoRedirect()).open(req, timeout=2) as resp:
             if resp.status != 200:
                 return False
             result = json.loads(resp.read(4096))
@@ -571,19 +571,10 @@ def payment_submit():
             raise ValueError("Hanya resit pakej Rakan Pembangun diterima")
         if _is_member(conf,uid):
             return jsonify({"error":"Rakan Pembangun sudah aktif. Jangan bayar sekali lagi."}),409
-        # A genuine receipt must reach Web even when Telegram's catalog or
-        # message delivery is temporarily unavailable. RM20 is the fixed
-        # server-verified offering; admin still checks the actual transaction.
-        try:
-            catalog=_source("/internal/payment/v1/catalog")
-            plans=validated_plans(catalog)
-            _,rakan_open=validated_rakan_status(catalog)
-            if code not in plans:
-                raise ProfileUnavailable("Pakej tidak sepadan")
-            if not rakan_open:
-                return jsonify({"error":"Pendaftaran Rakan Pembangun sudah ditutup. Hubungi admin jika telah membayar."}),409
-        except ProfileUnavailable:
-            print("WEB PAYMENT RECEIPT: catalog unavailable; recording private proof for manual review", flush=True)
+        # This is evidence submission, NOT a new-payment authorization.
+        # New offers/QRs still require the live verified catalog. Accept a
+        # previously-paid RM20 proof in Web without any Telegram/API round trip;
+        # admin alone verifies the transaction and decides the entitlement.
         actual_mime=next(k for k,v in CONTENT_TYPES.items() if v==ext)
         path="receipts/"+str(uid)+"/"+uuid.uuid4().hex+ext
         _private_receipt_storage(conf,"POST",path,data=raw,mime=actual_mime)
