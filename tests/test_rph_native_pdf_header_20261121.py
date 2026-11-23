@@ -266,7 +266,8 @@ def test_native_pdf_pastel_is_drawn_in_real_label_cells_not_overlaid(tmp_path):
         assert Counter(_text_objects(styled)) == before_text
 
         assert styled[0]._colWidths == [112 * mm, 60 * mm]
-        assert sum(styled[2]._colWidths) == sum(styled[4]._colWidths) == sum(styled[6]._colWidths)
+        for grid in (styled[2], styled[4], styled[6]):
+            assert abs(sum(grid._colWidths) - 172 * mm) < .001
 
         filepath = tmp_path / (subject.replace(" ", "_") + "_native_pastel.pdf")
         content = _pdf(styled, filepath)
