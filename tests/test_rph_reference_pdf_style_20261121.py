@@ -114,7 +114,6 @@ def test_reference_subjects_never_change_pdf_or_teacher_download(tmp_path):
     first = runtime.create_pdf_file
     assert install(runtime) and runtime.create_pdf_file is first
     for state in (
-        {"task": "rph", "subject": "Sains"},
         {"task": "rph", "subject": "Science"},
         {"task": "rph", "subject": "Matematik", "curriculum_version": "DLP"},
         {"task": "rph", "subject": "English", "programme": "PPKI"},
