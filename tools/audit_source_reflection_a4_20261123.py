@@ -31,6 +31,7 @@ def _all_word_text(path):
 def check_one(runtime, path, row, code, output_dir):
     import fitz
     subject = "Pendidikan Islam" if code == "PI" else "Bahasa Melayu"
+    source_label = row.get("id") or row.get("source_sequence_no") or row.get("topic")
     teacher = {"class": "", "date": "", "time": "", "students": "", "reflection": ""}
     if code == "PI":
         selection = {"year": 2, "subject": code, "unit": pi_navigation_unit(row),
@@ -57,7 +58,7 @@ def check_one(runtime, path, row, code, output_dir):
         assert "فوکوس ڤدڤ" not in reflection
     else:
         assert reflection.startswith("____ / ____ murid: "), (
-            row["id"], objective, criterion, reflection
+            source_label, objective, criterion, reflection
         )
         assert "____ / ____" in reflection
 
@@ -93,17 +94,17 @@ def check_one(runtime, path, row, code, output_dir):
             converted = Path(temp) / (word.stem + ".pdf")
             with fitz.open(str(converted)) as converted_pdf:
                 assert len(converted_pdf) == 1, (
-                    subject, row["id"], "1.5x Word crossed one-page A4 limit")
+                    subject, source_label, "Word crossed one-page A4 limit")
                 assert 594 < converted_pdf[0].rect.width < 597
                 assert 840 < converted_pdf[0].rect.height < 844
     shutil.copy2(word, output_dir / ("CIKGULAJU_" + code + "_REFLEKSI_OBJ_AKTIF.docx"))
     shutil.copy2(pdf, output_dir / ("CIKGULAJU_" + code + "_REFLEKSI_OBJ_PDF_NATIVE.pdf"))
-    print("REAL REFLECTION PASS", subject, row["id"], "objective_length",
+    print("REAL REFLECTION PASS", subject, source_label, "objective_length",
           len(objective), "criterion_length", len(criterion),
           "reflection_length", len(reflection), "A4_WORD_PDF_ONE_PAGE")
     word.unlink(missing_ok=True)
     pdf.unlink(missing_ok=True)
-    return row["id"]
+    return source_label
 
 
 def main():
@@ -138,7 +139,7 @@ def main():
                     checked = True
                     break
                 except Exception as exc:
-                    errors.append((row["id"], type(exc).__name__, str(exc)[:150]))
+                    errors.append((row.get("id") or row.get("source_sequence_no") or row.get("topic"), type(exc).__name__, str(exc)[:150]))
             if not checked:
                 raise AssertionError(("No verified " + code + " candidate fits one-page RPH", errors[:8]))
     finally:
