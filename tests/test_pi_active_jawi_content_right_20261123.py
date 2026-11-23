@@ -80,7 +80,21 @@ def formatted_original():
 def test_only_source_values_move_to_physical_rtl_right_without_losing_activity():
     source, before = formatted_original()
     after = align_active_pi_rtl_value_bytes(before)
-    assert after != before
+    if after == before:
+        with ZipFile(BytesIO(before)) as z:
+            root = etree.fromstring(z.read("word/document.xml"))
+            body = root.find(W + "body")
+            tables = body.findall(W + "tbl")
+            parts = [t.findall(W + "tr") for t in tables]
+            detail = {
+                "title": ["".join(n.text or "" for n in p.iter(W+"t")) for p in body.findall(W+"p")],
+                "table_sizes": [[len(row.findall(W+"tc")) for row in rows] for rows in parts],
+                "bidi": [t.find(W+"tblPr/"+W+"bidiVisual") is not None for t in tables],
+                "header0": "".join(n.text or "" for n in parts[0][0].findall(W+"tc")[0].iter(W+"t")),
+                "header1": "".join(n.text or "" for n in parts[0][0].findall(W+"tc")[1].iter(W+"t")),
+                "value": "".join(n.text or "" for n in parts[2][2].findall(W+"tc")[1].iter(W+"t")),
+            }
+        assert after != before, detail
     assert _preserves_source_content(before, after)
     assert _preserves_source_content(source, after)
     assert align_active_pi_rtl_value_bytes(after) == after
