@@ -126,8 +126,14 @@ def build(year, pdf_manifest):
                 values = [cells[1].get_text(" ", strip=True), "", "", ""]
             else:
                 raise AssertionError((year, index, "invalid row shape", len(cells)))
-            for code in re.findall(r"\bPdP\s+(\d{3})\b", " ".join(values)):
-                source_ids.append(int(code))
+            # Notes may reference a previous lesson; count the canonical
+            # PdP marker in the HTML row, not unrelated numbers in notes.
+            primary = row.select_one("span.pd")
+            if primary is not None:
+                match = re.fullmatch(r"PdP\s+(\d{3})", primary.get_text(" ", strip=True))
+                if not match:
+                    raise AssertionError((year, index, "invalid canonical PdP", primary.get_text()))
+                source_ids.append(int(match.group(1)))
             expanded.append(values)
         rows_by_week.append((week_label, expanded))
     expected = list(range(1, COUNTS[year] + 1))
@@ -236,7 +242,14 @@ def build(year, pdf_manifest):
         " ".join(cell.text for row in table.rows for cell in row.cells)
         for table in check.tables
     )
-    parsed_ids = [int(x) for x in re.findall(r"\bPdP\s+(\d{3})\b", wordtext)]
+    # The first PdP id in each CATATAN cell is the canonical lesson.
+    # Other cited PdPs within notes are cross-references, not extra lessons.
+    parsed_ids = []
+    for table in check.tables:
+        for row in table.rows[1:]:
+            match = re.match(r"PdP\s+(\d{3})\b", row.cells[4].text)
+            if match:
+                parsed_ids.append(int(match.group(1)))
     if parsed_ids != expected:
         raise AssertionError((year, "Word PdP identifiers mismatch", len(parsed_ids), parsed_ids[:12]))
     if len(check.tables) != 44:
