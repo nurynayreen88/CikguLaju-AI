@@ -2200,13 +2200,13 @@ subject.addEventListener("change",async()=>{
   }catch(error){if(current())catalogStatus.textContent=error.message;}
   return;
  }
- if(!canSelectRph())return;
  const planned=plannedKssrLanguages.find(item=>"planned:"+item.value===code);
  if(planned){
   catalogStatus.textContent=planned.label+" Tahun "+targetYear+" — Dalam Penyediaan.";
   updateSelectionHelp("RPH dan bahan PdP sedang disediakan.");
   return;
  }
+ if(!canSelectRph())return;
  updateSelectionHelp("Pilih Tema, Unit atau Tajuk untuk melihat Lesson/PdP.");
  try{
   if(code===ppkiSubject){
