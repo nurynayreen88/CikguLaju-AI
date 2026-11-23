@@ -509,9 +509,14 @@ def payment_own_status():
     if err is not None:return err
     try:
         status=_status_rows(_existing(conf,uid))
+        if status["pending"]:
+            # The receipt has already been accepted: never make this
+            # fail-safe status depend on a separate membership lookup.
+            return jsonify({"status":status,"already_member":False,
+                            "receipt_upload_available":False})
         member=_is_member(conf,uid)
         return jsonify({"status":status,"already_member":member,
-                        "receipt_upload_available":not status["pending"] and not member,
+                        "receipt_upload_available":not member,
                         "receipt_plan":{"code":"rakan_pembangun","amount":"20.00"}})
     except (ProfileUnavailable,PaymentConflict,ValueError,TypeError,KeyError,OSError):
         return jsonify({"error":"Status resit belum dapat disemak"}),503
