@@ -319,6 +319,11 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .payment-qr img{width:min(320px,100%);max-height:355px;object-fit:contain}
 .payment-entry #payment-submit{margin:17px 0 5px;padding:13px 20px;border:0;background:#087568;color:#fff;border-radius:12px;font:inherit;font-weight:750;cursor:pointer}
 .payment-entry #payment-submit:disabled{opacity:.48;cursor:not-allowed}
+.payment-chat-help{border:1px solid #c6dfd7;border-left:4px solid #087568;background:#f5fbf8;border-radius:12px;padding:14px 16px;margin:14px 0}
+.payment-chat-help strong{color:#195746;display:block;font-size:.96rem}
+.payment-chat-help p{margin:7px 0 11px;line-height:1.55;font-size:.9rem}
+.payment-chat-help #payment-chat-help{border:0;background:#087568;color:#fff;font-weight:750;min-height:44px}
+.payment-chat-help #payment-chat-help:hover{background:#075b51}
 #payment-message{font-weight:650;color:#28576b;white-space:pre-wrap}
 @media(max-width:760px){.payment-entry{padding:15px}.payment-qr{padding:13px}}
 .payment-direct-link{display:flex;flex-direction:column;align-items:center;gap:11px;margin:14px 0 0;max-width:480px;text-align:center}
@@ -1113,7 +1118,11 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
   <button type="button" id="payment-submit" disabled>Hantar Resit Untuk Pengesahan</button>
 </section>
 <p id="payment-message" class="notice" role="status" aria-live="polite"></p>
-<p class="notice">Akses hanya dibuka selepas admin mengesahkan bayaran. Jika bayaran sudah dibuat tetapi terdapat masalah, jangan bayar sekali lagi—semak status dan hubungi admin.</p>
+<div class="payment-chat-help" role="note">
+ <strong>💬 Ada masalah muat naik resit?</strong>
+ <p>Jika resit gagal dihantar, tekan <b>Chat Admin</b> di bahagian atas atau butang di bawah. Maklumkan masalah dan lampirkan resit jika perlu. <b>Jangan buat bayaran sekali lagi.</b> Admin akan bantu semak; resit melalui chat tidak dianggap sebagai pengesahan bayaran automatik.</p>
+ <button type="button" id="payment-chat-help" class="profile-refresh">💬 Buka Chat Admin untuk bantuan resit</button>
+</div>
 <button type="button" id="payment-refresh" class="profile-refresh">🔄 Refresh Status Bayaran</button>
 </section>
 <section id="view-feedback" class="app-view" aria-labelledby="web-feedback-heading" hidden>
@@ -3004,7 +3013,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/pbd.js?v=assessment-20261113"></script>
 <script src="/assets/rph-today.js?v=muat-turun-audio-english-20261120"></script>
 <script src="/assets/teacher-profile.js?v=pilihan-subjek-20261117"></script>
-<script src="/assets/web-payment.js?v=rakan-rm20-20261111"></script>
+<script src="/assets/web-payment.js?v=resit-chat-bantuan-20261123"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>
 <script src="/assets/admin-usage.js?v=user-chat-oneclick-20261123"></script>
 <script src="/assets/web-feedback.js?v=comments-inbox-20261112"></script>
