@@ -160,7 +160,6 @@ def test_nine_subjects_same_width_teacher_right_short_and_source_preserved(tmp_p
 def test_specialty_and_unknown_layout_fail_closed():
     source = fixture("Bahasa Melayu")
     for state in (
-        {"task": "rph", "subject": "Sains"},
         {"task": "rph", "subject": "Matematik", "curriculum_version": "DLP"},
         {"task": "rph", "subject": "English", "programme": "PPKI"},
         {"task": "rph", "subject": "Pendidikan Islam"},
@@ -169,6 +168,7 @@ def test_specialty_and_unknown_layout_fail_closed():
     ):
         assert premium_pdf_story(state, source) is source, state
 
+    assert color_for_state({"task": "rph", "subject": "Sains"}) == "E7F3EA"
     damaged = fixture("Bahasa Melayu")
     damaged[2]._cellvalues[3][0] = Paragraph("Mislabeled", damaged[2]._cellvalues[3][0].style)
     assert premium_pdf_story({"task": "rph", "subject": "Bahasa Melayu"}, damaged) is damaged
