@@ -332,7 +332,7 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
         "total_display_choices":sum(len(item["years"]) for item in subjects),
         "year1_coming_soon":10,
         "available_rpt":available+dlp_count+sjk_count+len(dpk_entries),
-        "note":"Tahun 1 KP2027 belum boleh dimuat turun. RPT SK dan DLP tersedia kepada pengguna log masuk. RPT SJK dan cetakan berprofil memerlukan akses berbayar aktif.",
+        "note":"RPT PDF mengikut akses sedia ada. RPT Word hanya untuk Rakan Pembangun dan langganan aktif apabila fail Word disahkan tersedia.",
     }
 
 def create_all_rpt_blueprint(*,root=ROOT):
@@ -358,6 +358,7 @@ def create_all_rpt_blueprint(*,root=ROOT):
             data["kp2027_rpt_available"] = [{
                 "code": code, "label": label, "year": 1,
                 "pdf_ready": True, "docx_ready": True,
+                "docx_download_enabled": bool(paid), "word_paid_only": True,
                 "download_enabled": True, "kp2027_combined": True, "kp2027_groups": ["A","B"],
                 "status": "RPT SEMAKAN PELAKSANAAN",
                 "note": ("Satu RPT bagi setiap subjek mengandungi tarikh Kumpulan A dan B. "
@@ -413,13 +414,17 @@ def create_all_rpt_blueprint(*,root=ROOT):
             return error
         if subject not in kp_ab.SUBJECTS or fmt not in kp_ab.FORMATS:
             return jsonify({"error":"Pilihan RPT KP2027 tidak sah."}),404
+        paid_cover=_has_paid_access(account)
+        # Word contains editable material; trial credits and free PDF access
+        # must never authorize Word, even when its URL is typed directly.
+        if fmt=="docx" and not paid_cover:
+            return jsonify({"error":"RPT Word hanya untuk Rakan Pembangun dan pengguna berbayar aktif."}),403
         try:
             content,filename,digest=kp_ab.document(subject,fmt)
         except kp_ab.BundleUnavailable:
             return jsonify({"error":"RPT KP2027 gabungan belum disahkan pada pelayan."}),503
         mimetype=("application/pdf" if fmt=="pdf" else
                   "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
-        paid_cover=_has_paid_access(account)
         personalized=False
         if paid_cover:
             from web.kp2027_year1_rpt_personalize import for_download as personalize_rpt

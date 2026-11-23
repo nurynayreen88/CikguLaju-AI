@@ -95,3 +95,13 @@
 - UI `web_v1_static_preview/index.html` kini menetapkan nama RPT KP2027 yang sama dengan nama ahli arkib RPT SHA-checked pada setiap pautan PDF/Word. Tiada perubahan untuk RPT KSSR/SJKC/SJKT/PPKI, kuota, personalisasi berbayar atau Word/PDF itu sendiri.
 - Regression baharu `tests/test_kp2027_rpt_mobile_true_one_tap_20261123.py` mengetik fail Word dan PDF sebenar bagi 3 subjek pada viewport telefon, mengesahkan nama fail dan SHA-256 byte, tiada tab/pemapar lain, serta butang hilang apabila akses tidak diberi.
 - Sekuriti: mock katalog/pelayan pada browser ujian sahaja, tanpa akaun dan storan pengguna. Dokumen RPH KP2027 yang masih QA tidak dibuka.
+
+## 23 November 2026 — RPT Word khas Rakan Pembangun dan pengguna berbayar aktif
+
+- **RPT Word (.docx)** hanya untuk Rakan Pembangun atau pengguna berlangganan aktif. Kredit percubaan tidak memberikan hak Word. Semakan dilakukan pada backend berdasarkan sesi; pengguna percuma yang menaip URL terus menerima HTTP 403.
+- PDF kekal mengikut akses asal. KP2027 BM SK, Matematik, Alam dan Manusia Tahun 1 membenarkan PDF pengguna log masuk, Word berbayar. SJK kekal dengan akses berbayar untuk PDF dan Word.
+- Inventori Word sedia ada: **21 RPT** — KP2027 Tahun 1 (3); Bahasa Cina SJKC T2–6 (5); Bahasa Melayu SJK T2–6 (5); Sains SJKC T2–6 (5); Matematik SJKC T2–3 (2); Matematik SJKT T2 (1). Bukti sumber di audits/rpt_2027_word_premium_inventory_20261123.json.
+- 56 RPT KSSR SK yang kini hanya mempunyai PDF tidak akan mendapat pautan Word palsu. Versi Word perlu dibangunkan daripada kandungan yang disahkan, bukan konversi PDF yang merosakkan jadual.
+- Web hanya memaparkan butang Word selepas pengesahan kelayakan dan ketersediaan fail. Teks untuk pengguna percuma memaklumkan Word khas Rakan Pembangun dan langganan; PDF asal kekal.
+- Ujian Flask mengesahkan Word untuk Rakan Pembangun/langganan aktif, menolak percubaan percuma/tamat tempoh/tanpa login dan mengekalkan PDF. Ujian Chromium menekan butang dan memeriksa muat turun sebenar.
+- Tiada perubahan pembayaran, Supabase, harga, kuota, RPH, fail RPT asal atau dasar akses PDF.
