@@ -188,7 +188,8 @@ def admin_manual_rakan_grant(user_id):
         return jsonify({"error": "Permintaan pengaktifan tidak sah"}), 400
     body = request.get_json(silent=True)
     if (not isinstance(body, dict) or set(body) != {"reason"}
-            or body.get("reason") not in MANUAL_RAKAN_REASONS):
+            or type(body.get("reason")) is not str
+            or body["reason"] not in MANUAL_RAKAN_REASONS):
         return jsonify({"error": "Pilih sebab pengaktifan yang sah"}), 400
 
     try:
