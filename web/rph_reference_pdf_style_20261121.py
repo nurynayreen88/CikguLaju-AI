@@ -159,6 +159,51 @@ def _outer_table_horizontal_bounds(page, title, drawings):
     return (left, right)
 
 
+def _already_native_pastel_header(page, title, drawings, palette):
+    """Detect the source-drawn, full-width ReportLab teacher banner.
+
+    The older PDF decorator painted a second title frame from y=title-4
+    to y=title+4, crossing the banner's existing upper rule. The result
+    looked like overlapping English RPH boxes (e.g. Year 5 Serenade).
+    Never stamp an extra frame on a banner whose true native background
+    already encloses the title; native source owns its border and fills.
+    Fail closed on ordinary/unknown PDF layouts.
+    """
+    import fitz
+
+    if not page.rect.contains(title):
+        return False
+    # The native LTR RPH generator uses a verified 172 mm wide pastel
+    # banner and keeps teacher fields in its narrower right-hand cell.
+    # Require both physical geometry and original palette, never infer
+    # from English words alone.
+    native_headers = []
+    for drawing in drawings:
+        rect = drawing.get("rect")
+        shade = drawing.get("fill")
+        if rect is None or shade is None:
+            continue
+        box = fitz.Rect(rect)
+        if (abs(box.width - 172 * 72 / 25.4) < 1.5
+                and 48 <= box.height <= 120
+                and 12 < box.y0 < 160
+                and box.contains(title)
+                and len(shade) == 3
+                and all(abs(shade[i] - palette[i]) < .012
+                        for i in range(3))):
+            native_headers.append(box)
+    if len(native_headers) != 1:
+        return False
+    header = native_headers[0]
+    teacher_labels = ("Class", "Kelas")
+    return any(
+        any(header.contains(hit)
+            and hit.x0 > header.x0 + header.width * .59
+            for hit in page.search_for(label))
+        for label in teacher_labels
+    )
+
+
 def style_pdf_bytes(original, fill):
     """Return a pastel PDF with byte-identical extracted text and page geometry."""
     if not isinstance(original, bytes) or not original.startswith(b"%PDF-"):
@@ -182,6 +227,12 @@ def style_pdf_bytes(original, fill):
         # their geometry is sufficiently grounded. This draws decoration only:
         # every original text glyph, table and PDF link stays in place.
         drawings = first.get_drawings()
+        # The newer native generator has already drawn the header, the
+        # outer border and the three pastel label grids. Applying this
+        # older post-render decoration creates a second crossing title
+        # frame; leave its PDF bytes and all curriculum text untouched.
+        if _already_native_pastel_header(first, title, drawings, palette):
+            return original
         outer = _outer_table_horizontal_bounds(first, title, drawings)
         if outer is None:
             border = fitz.Rect(title.x0-8, title.y0-4, title.x1+8, title.y1+4)
