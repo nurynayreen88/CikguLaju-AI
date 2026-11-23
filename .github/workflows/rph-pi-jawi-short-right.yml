@@ -21,12 +21,28 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Install Word/PDF renderer and Arabic/Jawi fonts
-        run: |
-          sudo apt-get -o Acquire::Retries=2 update -qq
-          sudo apt-get -o Acquire::Retries=2 install -y -qq --no-install-recommends libreoffice-writer fonts-hosny-amiri
       - name: Install safe OOXML/test dependencies
         run: python -m pip install "pytest>=8,<10" "python-docx>=1.1,<2" "lxml>=5,<7" "pypdf>=5,<7" "PyMuPDF>=1.24,<2.0"
+      - name: Install Word/PDF renderer and Arabic/Jawi fonts (bounded)
+        shell: bash
+        run: |
+          set -euo pipefail
+          export DEBIAN_FRONTEND=noninteractive
+          echo "Refreshing Ubuntu packages (maximum 4 minutes)"
+          timeout --signal=TERM --kill-after=10s 240s sudo apt-get \
+            -o Acquire::Retries=1 \
+            -o Acquire::http::Timeout=25 \
+            -o Acquire::https::Timeout=25 update
+          echo "Installing LibreOffice and Amiri (maximum 7 minutes)"
+          timeout --signal=TERM --kill-after=10s 420s sudo apt-get \
+            -o Dpkg::Lock::Timeout=60 \
+            -o Acquire::Retries=1 \
+            -o Acquire::http::Timeout=25 \
+            -o Acquire::https::Timeout=25 install -y --no-install-recommends \
+            libreoffice-writer fonts-hosny-amiri
+          command -v libreoffice
+          libreoffice --version
+          fc-list -f '%{family}\n' | grep -i 'Amiri' | head -n 1
       - name: Check preserved Jawi curriculum, teacher-left position and physical PDF A4 grid
         run: python -m pytest -q tests/test_pi_jawi_short_right_header_20261121.py tests/test_rph_premium_header_20261121.py
       - name: Compile transformed modules
