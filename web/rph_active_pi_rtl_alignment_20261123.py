@@ -1,8 +1,9 @@
-"""Align only existing Jawi *value paragraphs* in active native PI RPH Word.
+"""Align the active Jawi RPH header and source value paragraphs without text edits.
 
 The native RTL tables already reverse their physical cell order. LibreOffice's
 logical left paragraph justification is displayed on the physical RIGHT of
-these RTL tables; changing only w:jc does not touch any academic text/font.
+these RTL tables. In the header, use that physical RIGHT edge and add gentle
+line spacing; original source text and fonts remain untouched.
 Never use on non-Jawi content, 696-archive layouts, or unverified structures.
 """
 from __future__ import annotations
@@ -66,8 +67,40 @@ def align_active_pi_rtl_value_bytes(original):
                         or table.find(W + "tblPr/" + W + "bidiVisual") is None
                         or any(len(r.findall(W + "tc")) != width for r in rows)):
                     return original
+            # Live PI header contract: exactly three identity lines (Mata
+            # Pelajaran/Tahun/Tajuk) in the wide physical RIGHT cell, and five
+            # PdP metadata lines (Kelas/Tarikh/Hari/Masa/Bilangan Murid) in
+            # the narrow physical LEFT cell. Unknown variants remain intact.
+            header_cells = header_rows[0].findall(W + "tc")
+            if [len(cell.findall(W + "p")) for cell in header_cells] != [3, 5]:
+                return original
             before = _tokens(root)
             changed = False
+            for header_cell in header_cells:
+                for paragraph in header_cell.findall(W + "p"):
+                    props = paragraph.find(W + "pPr")
+                    if props is None:
+                        props = etree.Element(W + "pPr")
+                        paragraph.insert(0, props)
+                    # LibreOffice displays w:jc=left on the physical RIGHT
+                    # of an RTL bidiVisual table; w:jc=right put both panels
+                    # hard against their LEFT borders in the real export.
+                    justification = props.find(W + "jc")
+                    if justification is None:
+                        justification = etree.SubElement(props, W + "jc")
+                    if justification.get(W + "val") != "left":
+                        justification.set(W + "val", "left")
+                        changed = True
+                    spacing = props.find(W + "spacing")
+                    if spacing is None:
+                        spacing = etree.SubElement(props, W + "spacing")
+                    # 260/240 is gentle 1.08x line spacing. Three-point
+                    # breathing room after each line keeps the metadata calm.
+                    for key, value in (("before", "0"), ("after", "65"),
+                                       ("line", "260"), ("lineRule", "auto")):
+                        if spacing.get(W + key) != value:
+                            spacing.set(W + key, value)
+                            changed = True
             for table in tables[1:]:
                 for row in table.findall(W + "tr"):
                     # Only value-column paragraphs. Do not flip label fonts,
