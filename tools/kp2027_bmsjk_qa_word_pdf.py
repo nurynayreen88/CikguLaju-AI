@@ -124,6 +124,14 @@ def _rows(record):
     return standards, activities, follow_up
 
 
+def _activity_line(role, value):
+    """Avoid doubled labels such as Guru: Guru memperdengarkan in documents."""
+    content = str(value).strip()
+    if content.casefold().startswith(role.casefold() + " "):
+        return content
+    return f"{role}: {content}"
+
+
 def render_docx(record):
     """Four equal-width outer tables, no template overlay or placeholders."""
     from docx import Document
@@ -218,7 +226,7 @@ def render_docx(record):
     for i, (label, chunks) in enumerate(activities):
         put(t.cell(i, 0), [(label, True)])
         set_cell(t.cell(i, 0), TONE)
-        put(t.cell(i, 1), [(role + ": " + value, False) for role, value in chunks])
+        put(t.cell(i, 1), [(_activity_line(role, value), False) for role, value in chunks])
     spacer()
     t = table((LABEL_WIDTH_MM, OUTER_WIDTH_MM-LABEL_WIDTH_MM), len(follow_up))
     for i, (label, contents) in enumerate(follow_up):
@@ -306,7 +314,7 @@ def render_pdf(record):
                   range(len(rows)))
     story += [content_table(standards), Spacer(1, 2*mm)]
     story += [content_table([
-        (label, [role+": "+value for role, value in chunks])
+        (label, [_activity_line(role, value) for role, value in chunks])
         for label,chunks in activities
     ]), Spacer(1, 2*mm)]
     story.append(content_table(follow_up))
