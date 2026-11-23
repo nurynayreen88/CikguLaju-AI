@@ -141,8 +141,9 @@ def test_unexpected_or_specialty_layout_is_left_as_is():
     output = BytesIO()
     doc.save(output)
     assert premium_header_bytes(output.getvalue(), "EAF1FB") == output.getvalue()
-    for subject in ("Sains", "Science", "Bahasa Arab"):
+    for subject in ("Science", "Bahasa Arab"):
         assert color_for_state({"task": "rph", "subject": subject}) is None
+    assert color_for_state({"task": "rph", "subject": "Sains"}) == "E7F3EA"
     assert color_for_state({"task": "rph", "subject": "Matematik", "curriculum": "DLP"}) is None
     assert color_for_state({"task": "rph", "subject": "English", "programme": "PPKI"}) is None
 

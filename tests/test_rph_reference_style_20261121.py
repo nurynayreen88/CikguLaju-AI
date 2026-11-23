@@ -71,7 +71,6 @@ def test_ten_sk_subjects_only_change_word_presentation():
 
 def test_reference_subjects_and_non_rph_are_unchanged():
     for state in (
-        {"task": "rph", "subject": "Sains"},
         {"task": "rph", "subject": "Science"},
         {"task": "rph", "subject": "Matematik", "curriculum_version": "DLP"},
         {"task": "rph", "subject": "English", "programme": "PPKI"},
@@ -79,6 +78,11 @@ def test_reference_subjects_and_non_rph_are_unchanged():
         {"task": "rpt", "subject": "Bahasa Melayu"},
     ):
         assert color_for_state(state) is None, state
+
+
+def test_native_sains_pastel_only_without_other_specialty_subjects():
+    assert color_for_state({"task": "rph", "subject": "Sains"}) == "E7F3EA"
+    assert color_for_state({"task": "rph", "subject": "Sains", "curriculum": "DLP"}) is None
 
 
 def test_three_table_contract_prevents_unexpected_rph_mutation():

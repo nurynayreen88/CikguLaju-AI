@@ -4,7 +4,9 @@ Keeps the source title centered outside the header grid, and reuses the eight
 existing Paragraph pairs for subject, year, topic, class,
 date, day, time and pupil count. Leaves all remaining curriculum table rows,
 teaching phases, assessment, differentiation, reflection and PDF links intact.
-Speciality renderers (Sains, DLP, PPKI, Islamic Jawi, Arabic RTL) stay as-is.
+Speciality renderers (DLP, PPKI, Islamic Jawi, Arabic RTL) stay as-is.
+Native KSSR Sains shares the vetted two-panel SK header; fail-closed
+layout checks still prevent edits to unsupported Sains story structures.
 Unexpected source layouts fail closed to the existing PDF story.
 """
 from __future__ import annotations
@@ -27,7 +29,7 @@ EXPECTED_EN = (
     "Subject", "Year / Form", "Date", "Day", "Time", "Class",
     "Number of Pupils", "Topic",
 )
-SPECIAL = ("pendidikan islam", "bahasa arab", "sains", "science", "ppki", "dlp")
+SPECIAL = ("pendidikan islam", "bahasa arab", "science", "ppki", "dlp")
 
 
 def _normal(value):

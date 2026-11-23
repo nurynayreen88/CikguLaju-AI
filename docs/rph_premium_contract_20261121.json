@@ -27,10 +27,10 @@
     "rbt": "reka bentuk dan teknologi"
   },
   "palette_special_cases": [
-    "pendidikan islam"
+    "pendidikan islam",
+    "sains"
   ],
   "protected_special_markers": [
-    "sains",
     "science",
     "ppki",
     "dlp",

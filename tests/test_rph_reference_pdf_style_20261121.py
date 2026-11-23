@@ -114,7 +114,6 @@ def test_reference_subjects_never_change_pdf_or_teacher_download(tmp_path):
     first = runtime.create_pdf_file
     assert install(runtime) and runtime.create_pdf_file is first
     for state in (
-        {"task": "rph", "subject": "Sains"},
         {"task": "rph", "subject": "Science"},
         {"task": "rph", "subject": "Matematik", "curriculum_version": "DLP"},
         {"task": "rph", "subject": "English", "programme": "PPKI"},
@@ -123,7 +122,7 @@ def test_reference_subjects_never_change_pdf_or_teacher_download(tmp_path):
     ):
         assert runtime.create_pdf_file(state, "real curriculum text", "test") == str(path)
         assert path.read_bytes() == original, state
-    assert runtime.calls == 6
+    assert runtime.calls == 5
     assert runtime.create_pdf_file({"task": "rph", "subject": "Bahasa Melayu"}, "", "test") == str(path)
     assert path.read_bytes() != original
     assert _inspect(path.read_bytes())[0] == _inspect(original)[0]
