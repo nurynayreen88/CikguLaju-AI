@@ -162,6 +162,29 @@ def _payment_rest(conf, method, *, query="", body=None, opener=None):
         raise ProfileUnavailable("Sambungan rekod pembayaran tidak tersedia") from None
 
 
+
+def _audit_payment(conf, uid, event_type):
+    """Best-effort private payment funnel audit; never affects checkout."""
+    if type(uid) is not int or uid <= 0 or event_type not in (
+        "payment_opened", "qr_viewed", "receipt_started",
+        "receipt_failed", "receipt_saved"):
+        return
+    try:
+        base = _safe_host(conf["supabase_url"])
+        token = conf["supabase_key"]
+        body = json.dumps({"telegram_user_id": uid,
+                           "event_type": event_type}).encode("utf-8")
+        req = Request(base + "/rest/v1/web_payment_activity",
+            method="POST", data=body, headers={
+                "apikey": token, "Authorization": "Bearer " + token,
+                "Content-Type": "application/json", "Prefer": "return=minimal"})
+        with build_opener(HTTPSHandler(), NoRedirect()).open(req, timeout=3) as resp:
+            if resp.status not in (200, 201, 204):
+                raise ValueError("audit response")
+    except (HTTPError, URLError, OSError, ValueError, KeyError, TypeError):
+        print("WEB PAYMENT ACTIVITY audit write unavailable", flush=True)
+
+
 class PaymentConflict(Exception):
     pass
 
@@ -369,6 +392,7 @@ def payment_catalog():
         member=_is_member(conf,uid)
     except (ProfileUnavailable,PaymentConflict):
         return jsonify({"error":"Sumber atau status Rakan Pembangun belum tersedia"}),503
+    _audit_payment(conf,uid,"payment_opened")
     return jsonify({"plans":list(plans.values()),"status":_status_rows(rows),
                     "progress_percentage":percentage,"rakan_open":rakan_open,
                     "already_member":member,
@@ -395,6 +419,7 @@ def payment_qr():
         image,mime=_source("/internal/payment/v1/qr",expect="image")
     except (ProfileUnavailable,PaymentConflict):
         return jsonify({"error":"QR pembayaran belum tersedia"}),503
+    _audit_payment(conf,uid,"qr_viewed")
     return Response(image,mimetype=mime)
 
 
@@ -413,6 +438,7 @@ def payment_submit():
     upload=request.files.get("receipt")
     mime=upload.mimetype if upload is not None else None
     raw=upload.stream.read(MAX_RECEIPT+1) if upload is not None else b""
+    _audit_payment(conf,uid,"receipt_started")
     try:
         ext=_validate_receipt(raw,mime)
         catalog=_source("/internal/payment/v1/catalog")
@@ -444,6 +470,7 @@ def payment_submit():
                 or type(saved[0].get("id")) is not int or saved[0]["id"] <= 0):
             raise ProfileUnavailable("Permohonan bayaran belum disahkan")
         rid = saved[0]["id"]
+        _audit_payment(conf,uid,"receipt_saved")
         # NEVER change a successfully saved Pending receipt into HTTP 503
         # just because the subsequent admin Telegram notification failed.
         # Otherwise the user could assume the receipt was lost and pay again.
@@ -464,10 +491,12 @@ def payment_submit():
                         "admin_notification":"sent" if notified else "unconfirmed",
                         "message":message}),201
     except PaymentConflict:
+        _audit_payment(conf,uid,"receipt_failed")
         return jsonify({"error":"Permohonan Pending sudah wujud. Jangan bayar dua kali."}),409
     except ValueError as exc:
         return jsonify({"error":str(exc)}),400
     except ProfileUnavailable as exc:
+        _audit_payment(conf,uid,"receipt_failed")
         # No identifiers or receipt content in logs; classify the failing step.
         print("WEB PAYMENT RECEIPT PROCESS unavailable:",
               str(exc)[:120], flush=True)
