@@ -1,0 +1,28 @@
+name: KP2027 Tahun 1 RPT direct download mobile browser
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'tests/test_kp2027_rpt_mobile_true_one_tap_20261123.py'
+      - '.github/workflows/kp2027-rpt-mobile-one-tap-20261123.yml'
+      - 'web_v1_static_preview/index.html'
+      - 'web/kp2027_year1_rpt_combined.py'
+      - 'web/rpt_2027_all_http.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  mobile_kp2027_rpt_download:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned mobile Chromium and browser test library
+        run: |
+          python -m pip install --disable-pip-version-check playwright==1.55.0
+          python -m playwright install --with-deps chromium
+      - name: Verify 6 signed RPT source files, one real tap, no new viewer tab, no QA release
+        run: python -m unittest discover -s tests -p 'test_kp2027_rpt_mobile_true_one_tap_20261123.py' -v
