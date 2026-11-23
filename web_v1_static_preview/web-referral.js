@@ -223,6 +223,7 @@
         if (adminList.contains(form)) filter.value = action;
         await Promise.all([updateAdmin(), updateMembers(membersPage)]);
         adminStatus.textContent = "Status tuntutan dikemas kini.";
+        window.cikgulajuAdminNotificationsRefresh?.();
       } catch (error) { adminStatus.textContent = error.message; }
       finally { button.disabled = false; }
     });
