@@ -59,7 +59,10 @@ def _check_output(word, pdf, *, label, objective, subject):
 
     assert pdf.startswith(b"%PDF-"), label
     with fitz.open(stream=pdf, filetype="pdf") as artifact:
-        assert 1 <= len(artifact) <= 4, (label, len(artifact))
+        # Owner-approved new header must fit one A4 page for every one of
+        # the 141 DLP Year 2 reviewed lessons and 14 PPKI pilot lessons.
+        # Never shorten SK/SP/activities/reflection to force this result.
+        assert len(artifact) == 1, (label, "More than one A4 page", len(artifact))
         text = " ".join(page.get_text() for page in artifact)
         assert len(text.strip()) > 150, (label, "PDF text missing")
         assert ("Content Standards" if subject != "PPKI" else "Standard Kandungan") in text, label

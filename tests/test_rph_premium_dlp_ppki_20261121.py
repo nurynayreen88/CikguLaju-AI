@@ -119,6 +119,51 @@ class PremiumDlpPpkiProof(unittest.TestCase):
                 self.assertNotIn("Subject",
                                  [r.cells[0].text for r in parsed.tables[1].rows])
 
+    def test_external_centre_title_and_two_aligned_source_panels_a4(self):
+        """Actual reviewed DLP/PPKI native Word and PDF, not example overlay."""
+        import fitz
+        from docx.enum.text import WD_ALIGN_PARAGRAPH
+        from docx.oxml.ns import qn
+
+        teacher = {"class": "", "date": "", "time": "", "students": ""}
+        for subject, generate in self.samples(teacher):
+            with self.subTest(subject=subject):
+                document = Document(BytesIO(generate("word")))
+                assert len(document.tables) == 4
+                assert document.paragraphs[0].text.strip().casefold() in (
+                    "daily lesson plan", "rancangan pengajaran harian")
+                assert document.paragraphs[0].alignment == WD_ALIGN_PARAGRAPH.CENTER
+                head = document.tables[0]
+                left, right = head.rows[0].cells
+                assert len(left.paragraphs) == 3
+                assert len(right.paragraphs) >= 4
+                # Source-backed identity must remain three EXACT values,
+                # not printed prefixes ("Topic:\t...") that break downloads
+                # for independently reviewed Year 3–6 DLP lesson plans.
+                assert "PPKI" in left.paragraphs[0].text if subject == "PPKI" else "DLP" in left.paragraphs[0].text
+                assert "Tahun" in left.paragraphs[1].text if subject == "PPKI" else "Year" in left.paragraphs[1].text
+                assert left.paragraphs[2].text.strip()
+                for para in right.paragraphs:
+                    tabs = para._p.find(qn("w:pPr")).find(qn("w:tabs"))
+                    assert tabs is not None, (subject, para.text)
+                    tab = tabs.find(qn("w:tab"))
+                    assert tab is not None
+                    assert abs(int(tab.get(qn("w:pos"))) / 56.6929 - 34) < .3
+                assert "____" not in right.text
+                pdf_bytes = generate("pdf")
+                with fitz.open(stream=pdf_bytes, filetype="pdf") as pages:
+                    assert len(pages) == 1, (subject, "one A4 page required")
+                    page = pages[0]
+                    title = "RANCANGAN PENGAJARAN HARIAN" if subject == "PPKI" else "Daily Lesson Plan"
+                    titles = page.search_for(title)
+                    assert titles, (subject, title)
+                    assert abs((titles[0].x0+titles[0].x1)/2 - page.rect.width/2) < 14
+                    assert page.rect.width > 590 and page.rect.height > 840
+                    assert any(d["rect"].y0 > titles[0].y1-1 and
+                               abs(d["rect"].width - 182*72/25.4) < 3
+                               for d in page.get_drawings()
+                               if d.get("fill") is not None), subject
+
     def test_blank_teacher_boxes_are_truly_blank(self):
         teacher = dict.fromkeys(("class", "date", "time", "students"), "")
         for subject, generate in self.samples(teacher):

@@ -304,6 +304,26 @@ def _premium_header_payload(heading, details):
     return remaining, fields
 
 
+def _separated_header_identity(heading):
+    """Separate only source-authored subject / Year / topic in reviewed layouts.
+
+    The exact original source phrases are kept; no new curriculum fields,
+    values or teacher metadata are synthesized. Unsupported headings retain
+    the established legacy layout.
+    """
+    if not isinstance(heading, (tuple, list)) or len(heading) != 3:
+        return None
+    subject, separator, year = str(heading[1]).rpartition(" · ")
+    if not separator or not re.fullmatch(r"(?:Year|Tahun) [1-6](?: SK)?", year):
+        return None
+    english = str(heading[0]).strip().casefold() == "daily lesson plan"
+    return (
+        ("Subject" if english else "Mata Pelajaran", subject),
+        ("Year" if english else "Tahun/Tingkatan", year),
+        ("Topic" if english else "Tajuk", str(heading[2])),
+    )
+
+
 def _word(output, heading, details, activities, reflection, *, compact=False,
           mathematics=False, teacher=None, label_fill=None):
     from copy import deepcopy
@@ -360,6 +380,13 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
     border = properties.find(qn("w:pBdr"))
     if border is not None:
         properties.remove(border)
+    # The complete source title belongs at the centre ABOVE the top box.
+    # No extra table or content is inserted for an unexpected heading.
+    identity_fields = _separated_header_identity(heading)
+    if identity_fields:
+        title_p = doc.add_paragraph(str(heading[0]), style="Title")
+        title_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        title_p.paragraph_format.space_after = Pt(2)
     # One complete 182 mm A4 banner, exactly aligned to every table below.
     # Lesson identity remains at LEFT, the compact teacher panel at RIGHT.
     header = doc.add_table(rows=1, cols=2)
@@ -377,24 +404,38 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
         cell._tc.get_or_add_tcPr().append(
             shading(_TEACHER_PANEL_FILL if index == 1 else fill)
         )
-    for index, text in enumerate(heading):
-        paragraph = (header_left.paragraphs[0] if index == 0
-                     else header_left.add_paragraph())
-        paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
-        paragraph.paragraph_format.space_before = Pt(1)
-        paragraph.paragraph_format.space_after = Pt(1)
-        run = paragraph.add_run(str(text))
-        run.bold = index in (0, 2)
-        run.font.size = Pt(13 if index == 0 else 10)
-    # Each field is shown once, in its original language, with no fake lines.
+    if identity_fields:
+        for index, (label_text, value) in enumerate(identity_fields):
+            paragraph = (header_left.paragraphs[0] if index == 0
+                         else header_left.add_paragraph())
+            paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
+            paragraph.paragraph_format.space_before = Pt(0)
+            paragraph.paragraph_format.space_after = Pt(1)
+            # Source-backed pure values (subject, year, topic) remain exact
+            # in the original three paragraph slots. Other reviewed Years
+            # 3–6 read these values as whole strings when downloading.
+            paragraph.add_run(value).bold = index in (0, 2)
+    else:
+        for index, text in enumerate(heading):
+            paragraph = (header_left.paragraphs[0] if index == 0
+                         else header_left.add_paragraph())
+            paragraph.alignment = WD_ALIGN_PARAGRAPH.LEFT
+            paragraph.paragraph_format.space_before = Pt(1)
+            paragraph.paragraph_format.space_after = Pt(1)
+            run = paragraph.add_run(str(text))
+            run.bold = index in (0, 2)
+            run.font.size = Pt(13 if index == 0 else 10)
+    # All teacher labels and values start at the same X positions.
     for index, (label_text, value) in enumerate(teacher_fields):
         paragraph = (header_right.paragraphs[0] if index == 0
                      else header_right.add_paragraph())
         paragraph.paragraph_format.space_before = Pt(0)
         paragraph.paragraph_format.space_after = Pt(1)
+        if identity_fields:
+            paragraph.paragraph_format.tab_stops.add_tab_stop(Mm(34))
         prefix = paragraph.add_run(label_text + ": ")
         prefix.bold = True
-        paragraph.add_run(value)
+        paragraph.add_run(("\t" if identity_fields else "") + value)
 
     def table(rows, widths, header=False):
         element = doc.add_table(rows=0, cols=len(widths))
@@ -499,11 +540,18 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
         doc.addPageTemplates(PageTemplate("RPH A4", frames=[frame], onPage=footer))
     else:
         doc.addPageTemplates(PageTemplate("DLP A4", frames=[frame]))
-    # Use the same teacher-right / identity-left banner as native Word.
-    # It is a real table, not a coloured overlay on PDF text.
-    opening = [paragraph(heading[0], title),
-               paragraph(heading[1], subtitle),
-               paragraph(heading[2], label)]
+    # Keep the original title above the two-panel header, in full-width
+    # centred text. Both identity and teacher data remain source-authored.
+    identity_fields = _separated_header_identity(heading)
+    if identity_fields:
+        opening = [
+            Paragraph(f"<b>{escape(name)}:</b> {escape(value)}", body)
+            for name, value in identity_fields
+        ]
+    else:
+        opening = [paragraph(heading[0], title),
+                   paragraph(heading[1], subtitle),
+                   paragraph(heading[2], label)]
     # Use the native ReportLab Paragraph parser here. The wrapper helper
     # escapes markup by design for curriculum content; passing formatting
     # through that helper prints literal <b> tags in the downloadable PDF.
@@ -519,6 +567,7 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
         ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
     ])
     story = [
+        *([paragraph(heading[0], title), Spacer(1, 3)] if identity_fields else []),
         title_panel,
         Spacer(1, 6),
         table(details, _FIELD_WIDTHS),
