@@ -223,7 +223,7 @@ def test_native_jawi_title_is_visually_centered_without_changing_its_glyph_image
 def test_word_pi_palette_matches_pdf_and_keeps_original_rtl_panels():
     from web.rph_reference_style_20261121 import color_for_state
     from web.rph_premium_header_20261121 import premium_header_bytes
-    from tests.test_pi_active_jawi_content_right_20261123 import native_pi_word
+    from test_pi_active_jawi_content_right_20261123 import native_pi_word
     from web.rph_reference_style_20261121 import style_three_table_word_bytes
     from docx import Document
     from io import BytesIO
