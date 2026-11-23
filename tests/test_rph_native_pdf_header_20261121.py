@@ -254,6 +254,81 @@ def test_native_pdf_activity_title_bold_preserves_real_paragraph_text(tmp_path):
                        and "Bold" not in span["font"] for span in spans), (subject, sentence)
 
 
+
+def test_real_bm_native_pdf_bold_titles_do_not_follow_teacher_sentences(tmp_path):
+    """Regression: actual BM v26 uses literal newlines normalized by Paragraph.
+
+    Word already had three separate bold title lines. Native PDF kept the
+    second and third titles at the END of the prior numbered instruction.
+    This test changes layout only; every original word stays identical.
+    """
+    from web.rph_native_pdf_header_20261121 import premium_pdf_story
+
+    story = fixture("Bahasa Melayu")
+    row = story[4]._cellvalues[2]
+    original = (
+        "Aktiviti 1 – Dengar dan cam<br/>"
+        "1. Guru membacakan ayat. Murid menyebut tanpa membaca teks terlebih dahulu.\n"
+        "Aktiviti 2 – Respons terhadap ujaran<br/>"
+        "2. Guru membacakan semula ayat. Murid memberikan respons yang betul.\n"
+        "Aktiviti 3 – PBD mendengar<br/>"
+        "3. Guru menyebut empat ayat lagi dan murid memberikan respons."
+    )
+    row[1] = Paragraph(original, row[1].style)
+    source_words = row[1].getPlainText()
+    # Confirm this test reproduces the original ReportLab line-merging input.
+    assert "dahulu. Aktiviti 2" in row[1].text
+    assert "betul. Aktiviti 3" in row[1].text
+
+    result = premium_pdf_story({"task": "rph", "subject": "Bahasa Melayu"}, story)
+    output = result[6]._cellvalues[2][1]
+    assert output.getPlainText() == source_words
+    assert output.text.count("<br/><b>Aktiviti ") == 2
+    for n in (1, 2, 3):
+        assert f"<b>Aktiviti {n} " in output.text
+    assert "dahulu. <br/><b>Aktiviti 2" in output.text
+    assert "betul. <br/><b>Aktiviti 3" in output.text
+
+    file = tmp_path / "bm_real_heading_breaks.pdf"
+    _pdf(result, file)
+    import fitz
+    with fitz.open(str(file)) as pdf:
+        assert len(pdf) == 1
+        assert 594 < pdf[0].rect.width < 597
+        lines = [
+            line for block in pdf[0].get_text("dict")["blocks"]
+            for line in block.get("lines", [])
+        ]
+        text_lines = ["".join(span["text"] for span in line["spans"])
+                      for line in lines]
+        assert not any("dahulu. Aktiviti 2" in text for text in text_lines)
+        assert not any("betul. Aktiviti 3" in text for text in text_lines)
+        for n in (1, 2, 3):
+            heading = [line for line in lines if
+                       any(f"Aktiviti {n} " in span["text"]
+                           for span in line["spans"])]
+            assert len(heading) == 1, (n, heading)
+            assert any("Aktiviti " in span["text"]
+                       and "Bold" in span["font"]
+                       for span in heading[0]["spans"]), n
+
+
+def test_native_pdf_does_not_turn_instruction_mention_into_activity_title():
+    from web.rph_native_pdf_header_20261121 import premium_pdf_story
+
+    story = fixture("Bahasa Melayu")
+    row = story[4]._cellvalues[2]
+    original = (
+        "Aktiviti 1 – Membaca<br/>"
+        "1. Guru menerangkan tentang Aktiviti 2 sebagai latihan pengukuhan.<br/>"
+        "2. Murid memberi respons tanpa tajuk baharu."
+    )
+    row[1] = Paragraph(original, row[1].style)
+    result = premium_pdf_story({"task": "rph", "subject": "Bahasa Melayu"}, story)
+    assert result[6]._cellvalues[2][1].getPlainText() == row[1].getPlainText()
+    assert "<b>Aktiviti 2" not in result[6]._cellvalues[2][1].text
+
+
 def test_native_pdf_pastel_is_drawn_in_real_label_cells_not_overlaid(tmp_path):
     """Nine native subject palettes render under ReportLab content at source."""
     from web.rph_reference_style_20261121 import color_for_state
