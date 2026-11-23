@@ -298,7 +298,7 @@ class PaymentWebTests(unittest.TestCase):
                     "chat": {"id": 901}, "message_id": 44,
                     "document": {"file_id": "saved-proof",
                                  "file_unique_id": "unique",
-                                 "mime_type": "application/pdf"}}).encode()
+                                 "mime_type": "application/pdf"}}}).encode()
 
         class Transport:
             def __init__(self): self.req = None; self.timeout = None
