@@ -536,6 +536,34 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .web-chat-alert{position:fixed;right:18px;bottom:18px;z-index:1100;max-width:min(90vw,350px);border:1px solid #b97f35;border-radius:13px;background:#fff4db;color:#68400d;box-shadow:0 12px 34px #0002;padding:12px 16px;font:inherit;font-weight:750;cursor:pointer;text-align:left}
 .web-chat-alert:focus-visible{outline:3px solid #087568;outline-offset:3px}
 @media(max-width:600px){.web-chat-top>summary{padding:12px}.web-chat-top>summary small{width:100%;margin-left:0}.web-chat-top>.teacher-timetable-section{margin:0 8px 10px;padding:10px}.web-chat-alert{right:10px;bottom:10px}}
+
+/* Admin-only dashboard above teacher name, parallel to Chat Admin. */
+#web-admin-tab{display:none!important}
+.web-admin-top{margin:0 0 14px;border:1px solid #b8d5eb;border-radius:15px;background:#f7fafc;overflow:hidden}
+.web-admin-top>summary{display:flex;align-items:center;flex-wrap:wrap;gap:10px;min-height:56px;padding:13px 16px;cursor:pointer;font-weight:850;color:#164a70;list-style:none}
+.web-admin-top>summary::-webkit-details-marker{display:none}
+.web-admin-top>summary small{margin-left:auto;color:#607585;font-size:.77rem}
+.web-admin-top>summary:focus-visible{outline:3px solid #087568;outline-offset:-3px}
+.web-admin-top.has-notifications{background:#fffaf1;border-color:#d5b17b}
+.admin-notify-count{padding:5px 9px;background:#ad312b;color:white;border-radius:40px;font-size:.78rem}
+.admin-notify-label{color:#9a3528;font-size:.8rem}
+.admin-notify-body{margin:0 13px 15px;padding:15px;border:1px solid #e1ebf0;border-radius:12px;background:white}
+.admin-notify-body h3{font-size:1.03rem;margin:0 0 9px;color:#164a70}
+.admin-notify-body>.notice{margin:7px 0 13px}
+.admin-notify-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:9px;margin:12px 0}
+.admin-notify-stats button{display:flex;flex-direction:column;align-items:flex-start;gap:6px;text-align:left;border:1px solid #d6e6ed;background:#f8fbfc;border-radius:10px;min-height:65px;padding:12px;color:#244b5a;font:inherit;font-weight:720;cursor:pointer}
+.admin-notify-stats strong{font-size:1.2rem}
+.admin-notify-list{list-style:none;margin:12px 0;padding:0;display:grid;gap:9px}
+.admin-notify-list li{padding:12px 13px;border:1px solid #e1eaf0;border-radius:11px;background:#fff;display:flex;gap:10px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.admin-notify-list li>div{min-width:0;flex:1 1 230px}
+.admin-notify-list strong{font-size:.91rem;color:#183f5d}
+.admin-notify-list p{margin:5px 0;line-height:1.5;overflow-wrap:anywhere;font-size:.84rem}
+.admin-notify-list small{color:#67808e}
+.admin-notify-list button,.admin-notify-actions button{padding:9px 13px;border:1px solid #b9d7d7;border-radius:9px;background:#eaf6f2;color:#115c52;font:inherit;font-weight:780;cursor:pointer;min-height:42px}
+.admin-notify-actions{display:flex;flex-wrap:wrap;gap:9px;align-items:center}
+.web-admin-top>#view-admin{padding:15px 16px 21px;background:white;border-top:1px solid #e0eaf0}
+.web-admin-alert{position:fixed;bottom:18px;left:18px;z-index:1090;max-width:min(90vw,355px);padding:12px 16px;background:#fff4db;border:1px solid #b97f35;border-radius:13px;color:#68400d;box-shadow:0 12px 34px #0002;font:inherit;font-weight:780;cursor:pointer}
+@media(max-width:600px){.web-admin-top>summary{padding:12px}.web-admin-top>summary small{width:100%;margin-left:0}.admin-notify-body{margin:0 8px 10px;padding:11px}.web-admin-top>#view-admin{padding:12px}.web-admin-alert{left:10px;bottom:10px}}
 .admin-users-pagination{display:flex;justify-content:center;align-items:center;gap:12px;margin:14px 0 2px;font-size:.87rem;color:#5d7569}
 @media(max-width:670px){.admin-users-filters{grid-template-columns:1fr}.admin-users-filters button{width:100%}.admin-users-body{padding:12px}.admin-users-list{grid-template-columns:minmax(0,1fr)}}
 </style>
@@ -555,6 +583,174 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </div>
 </main>
 <section id="workspace" class="panel" hidden>
+<details id="web-admin-top" class="web-admin-top" hidden>
+ <summary><span>🛠️ Pusat Admin</span><span id="admin-notify-count" class="admin-notify-count" hidden>0</span><span id="admin-notify-label" class="admin-notify-label" hidden>Perlu tindakan</span><small>Notifikasi &amp; pengurusan</small></summary>
+ <div class="admin-notify-body">
+  <h3>🔔 Semua Notifikasi Admin</h3>
+  <p class="notice">Perkara yang masih memerlukan tindakan. Chat dikira belum dibaca sehingga dibuka; bayaran, komen dan tuntutan kekal sehingga status dikemas kini.</p>
+  <div class="admin-notify-stats">
+   <button type="button" data-admin-shortcut="chat">💬 Chat <strong id="admin-notify-chat">0</strong></button>
+   <button type="button" data-admin-shortcut="payment">💳 Bayaran <strong id="admin-notify-payment">0</strong></button>
+   <button type="button" data-admin-shortcut="feedback">📝 Komen <strong id="admin-notify-feedback">0</strong></button>
+   <button type="button" data-admin-shortcut="affiliate">🎁 Affiliate <strong id="admin-notify-affiliate">0</strong></button>
+   <button type="button" data-admin-shortcut="users">👥 Daftar hari ini <strong id="admin-notify-new-users">0</strong></button>
+  </div>
+  <p id="admin-notify-status" class="notice" role="status" aria-live="polite">Menyemak notifikasi…</p>
+  <ul id="admin-notify-list" class="admin-notify-list" aria-label="Senarai semua perkara belum selesai"></ul>
+  <div class="admin-notify-actions">
+   <button type="button" id="admin-notify-more" hidden>Muat Lagi Notifikasi</button>
+   <button type="button" id="admin-notify-refresh">↻ Muat Semula Notifikasi</button>
+   <button type="button" data-admin-shortcut="analytics">📊 Statistik Pengguna</button>
+  </div>
+ </div>
+ <section id="view-admin" class="app-view" aria-labelledby="web-admin-heading" hidden>
+<h2 id="web-admin-heading">🛠️ Pusat Admin</h2>
+<section id="admin-payments" class="teacher-timetable-section" aria-labelledby="admin-payments-heading" hidden>
+ <h3 id="admin-payments-heading">Semakan Bayaran</h3>
+ <div class="profile-actions">
+  <label for="admin-payment-filter">Status bayaran</label>
+  <select id="admin-payment-filter"><option value="pending">Menunggu</option><option value="approved">Disahkan</option><option value="rejected">Ditolak</option></select>
+  <button id="admin-payment-refresh" type="button">Muat Semula Bayaran</button>
+ </div>
+ <p id="admin-payment-status" role="status" aria-live="polite"></p>
+ <ul id="admin-payment-list"></ul>
+ <div class="profile-actions">
+  <button id="admin-payment-prev" type="button" hidden>Halaman Sebelum</button>
+  <button id="admin-payment-next" type="button" hidden>Halaman Seterusnya</button>
+ </div>
+ <dialog id="admin-payment-dialog" aria-labelledby="admin-payment-dialog-title">
+  <h3 id="admin-payment-dialog-title">Resit Bayaran</h3>
+  <p id="admin-payment-dialog-status" role="status" aria-live="polite"></p>
+  <div id="admin-payment-proof"></div>
+  <div id="admin-payment-decision" hidden>
+   <label><input type="checkbox" id="admin-payment-confirm"> Saya telah menyemak resit dan transaksi sebenar.</label>
+   <div class="profile-actions">
+    <button type="button" id="admin-payment-approve" disabled>Sahkan Bayaran</button>
+    <button type="button" id="admin-payment-reject" disabled>Tolak Bayaran</button>
+   </div>
+  </div>
+  <div class="profile-actions"><button type="button" id="admin-payment-close">Tutup</button></div>
+ </dialog>
+</section>
+<section class="teacher-timetable-section" aria-labelledby="web-chat-admin-heading">
+ <h3 id="web-chat-admin-heading">💬 Chat Pengguna</h3>
+ <p class="notice">Pilih ID daripada senarai, atau masukkan ID akaun untuk memulakan chat. Semak identiti sebelum mengesahkan bayaran.</p>
+ <button id="web-admin-chat-refresh" type="button" class="profile-refresh">Muat Semula Senarai Chat</button>
+ <div id="web-admin-chat-inbox"></div>
+ <label for="web-admin-chat-user">ID akaun pengguna</label>
+ <input id="web-admin-chat-user" inputmode="numeric" placeholder="ID pengguna Telegram atau e-mel" maxlength="19">
+ <button id="web-admin-chat-open" type="button" class="profile-refresh">Buka Perbualan</button>
+ <div id="web-admin-chat-thread" class="web-chat-messages" aria-live="polite"></div>
+ <form id="web-admin-chat-form" class="teacher-profile-form">
+  <label for="web-admin-chat-input">Balasan admin</label>
+  <textarea id="web-admin-chat-input" rows="3" maxlength="1500"></textarea>
+  <label for="web-admin-chat-file">Lampiran admin (PDF atau gambar, maksimum 4 MB)</label>
+  <input id="web-admin-chat-file" type="file" accept=".pdf,.png,.jpg,.jpeg,.webp,application/pdf,image/png,image/jpeg,image/webp">
+  <button type="submit">Hantar Balasan</button>
+ </form>
+ <p id="web-admin-chat-status" role="status" aria-live="polite"></p>
+</section>
+<section class="teacher-timetable-section" aria-labelledby="web-feedback-admin-heading">
+ <h3 id="web-feedback-admin-heading">💬 Komen &amp; Cadangan Pengguna</h3>
+ <p class="notice">Komen daripada Web dan Telegram disatukan dalam rekod CikguLaju; hanya admin boleh melihat senarai ini.</p>
+ <label for="web-feedback-admin-filter">Paparkan komen</label>
+ <select id="web-feedback-admin-filter" aria-label="Tapis komen mengikut status">
+  <option value="semua">Semua status</option>
+  <option value="baru">Baharu</option>
+  <option value="dibaca">Dibaca</option>
+  <option value="selesai">Selesai</option>
+ </select>
+ <button id="web-feedback-admin-refresh" type="button" class="profile-refresh">🔄 Muat Semula Komen</button>
+ <div id="web-feedback-admin-list" aria-live="polite">Buka panel admin untuk melihat komen.</div>
+ <button id="web-feedback-admin-more" type="button" class="profile-refresh" hidden>Muat Komen Terdahulu</button>
+</section>
+<details id="admin-users-directory" class="admin-users-directory">
+ <summary>👥 Senarai Pengguna <small>Telegram, e-mel, tarikh daftar dan status akses</small></summary>
+ <div class="admin-users-body">
+  <p class="admin-users-note">Hanya untuk admin. Tekan <strong>💬 Chat</strong> pada pengguna untuk terus membuka perbualan, tanpa menaip ID. Tarikh log masuk berdasarkan rekod Web sejak pencatatan diaktifkan; “Belum direkodkan” bukan bermaksud pengguna tidak pernah log masuk.</p>
+  <div class="admin-users-filters">
+   <label for="admin-users-search">Cari pengguna
+    <input type="search" id="admin-users-search" placeholder="E-mel, nama atau ID Telegram" maxlength="100" autocomplete="off">
+   </label>
+   <label for="admin-users-filter">Status akses
+    <select id="admin-users-filter">
+     <option value="all">Semua pengguna</option>
+     <option value="free">Free</option>
+     <option value="rakan">Rakan Pembangun</option>
+     <option value="langganan">Langganan aktif</option>
+    </select>
+   </label>
+   <button type="button" id="admin-users-apply">Cari / Tapis</button>
+  </div>
+  <div class="admin-users-toolbar">
+   <p id="admin-users-status" role="status" aria-live="polite">Buka senarai untuk melihat rekod.</p>
+   <button type="button" id="admin-users-refresh" aria-label="Muat semula senarai pengguna">↻ Muat Semula</button>
+  </div>
+  <ul id="admin-users-list" class="admin-users-list" aria-label="Senarai akaun berdaftar"></ul>
+  <nav class="admin-users-pagination" aria-label="Halaman senarai pengguna">
+   <button id="admin-users-prev" type="button" hidden>Sebelum</button>
+   <span id="admin-users-page" aria-live="polite"></span>
+   <button id="admin-users-next" type="button" hidden>Seterusnya</button>
+  </nav>
+ </div>
+</details>
+<p class="notice">Statistik penggunaan dikira berdasarkan akaun berbeza yang log masuk ke Web.</p>
+<div class="admin-stats-grid" aria-label="Ringkasan penggunaan CikguLaju">
+ <div class="admin-stats-card"><span>Pengguna berdaftar</span><strong id="web-admin-users">—</strong></div>
+ <div class="admin-stats-card"><span>Pendaftaran baharu hari ini</span><strong id="web-admin-new-users-today">—</strong></div>
+ <div class="admin-stats-card"><span>Pendaftaran baharu · 7 hari</span><strong id="web-admin-new-users-7d">—</strong></div>
+ <div class="admin-stats-card"><span>Pendaftaran baharu · 30 hari</span><strong id="web-admin-new-users-30d">—</strong></div>
+ <div class="admin-stats-card"><span>Rakan Pembangun aktif</span><strong id="web-admin-rakan">—</strong></div>
+ <div class="admin-stats-card"><span>Login hari ini (MYT)</span><strong id="web-admin-today">—</strong></div>
+ <div class="admin-stats-card"><span>Login 7 hari terakhir</span><strong id="web-admin-week">—</strong></div>
+ <div class="admin-stats-card"><span>Login 30 hari terakhir</span><strong id="web-admin-month">—</strong></div>
+ <div class="admin-stats-card"><span>Penggunaan kredit percubaan tercatat</span><strong id="web-admin-credits">—</strong></div>
+ <div class="admin-stats-card"><span>Rekod penghantaran RPH disahkan</span><strong id="web-admin-rph">—</strong></div>
+</div>
+<p class="notice" id="web-admin-status" role="status" aria-live="polite">Memuatkan analisis…</p>
+<p class="notice" id="web-admin-rph-note">Rekod janaan lama mungkin belum lengkap.</p>
+<p class="admin-stats-caption" id="web-admin-updated"></p>
+<button type="button" id="web-admin-refresh">🔄 Muat Semula Statistik</button>
+<a href="/admin/semakan/matematik-sjkt-tahun-2">Semak RPH Matematik SJKT Tahun 2</a>
+<section id="affiliate-admin" class="teacher-timetable-section" aria-labelledby="affiliate-admin-heading" hidden>
+ <h3 id="affiliate-admin-heading">Pengurusan Affiliate</h3>
+ <h4>Senarai Affiliate dan Baki Mata</h4>
+ <label for="affiliate-members-filter">Status jemputan</label>
+ <select id="affiliate-members-filter">
+  <option value="all">Semua affiliate</option>
+  <option value="registered">Ada jemputan berdaftar</option>
+  <option value="none">Belum ada jemputan berdaftar</option>
+  <option value="unpaid">Ada jemputan tanpa bayaran disahkan</option>
+  <option value="paid">Ada jemputan dengan bayaran disahkan</option>
+ </select>
+ <button id="affiliate-admin-refresh" type="button">Muat Semula Rekod Affiliate</button>
+ <p id="affiliate-members-status" role="status" aria-live="polite"></p>
+ <ul id="affiliate-members-list"></ul>
+ <div class="profile-actions">
+  <button id="affiliate-members-prev" type="button" hidden>Halaman Sebelum</button>
+  <button id="affiliate-members-next" type="button" hidden>Halaman Seterusnya</button>
+ </div>
+ <div id="affiliate-admin-claims">
+  <h4>Tuntutan Ganjaran</h4>
+  <p id="affiliate-admin-member-filter" hidden>
+   <span id="affiliate-admin-selected-member"></span>
+   <button id="affiliate-admin-clear-member" type="button">Lihat Semua Affiliate</button>
+  </p>
+  <label for="affiliate-admin-filter">Status tuntutan</label>
+  <select id="affiliate-admin-filter">
+   <option value="pending">Menunggu</option><option value="processing">Dalam Proses</option>
+   <option value="paid">Dibayar</option><option value="rejected">Ditolak</option>
+   <option value="all">Semua status</option>
+  </select>
+  <p id="affiliate-admin-status" role="status" aria-live="polite"></p>
+  <div id="affiliate-admin-list"></div>
+  <button id="affiliate-admin-more" type="button" hidden>Lagi Tuntutan</button>
+ </div>
+</section>
+
+</section>
+</details>
+<button type="button" id="web-admin-alert" class="web-admin-alert" hidden>🔔 <span id="web-admin-alert-text">Notifikasi baharu Pusat Admin</span> · Lihat Semua</button>
 <details id="web-chat-top" class="web-chat-top">
  <summary id="web-chat-top-summary"><span>💬 Chat Admin</span><span id="web-chat-unread-badge" class="web-chat-unread-badge" hidden></span><span id="web-chat-unread-label" class="web-chat-unread-label" hidden>Mesej baharu</span><small id="web-chat-top-hint">Buka perbualan</small></summary>
 <section class="teacher-timetable-section" aria-labelledby="web-chat-heading">
@@ -592,7 +788,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
         <button type="button" class="sidebar-tab" data-web-view="special" aria-controls="view-special"><span aria-hidden="true">🌱</span> RPH Aktiviti Khas</button>
         <button type="button" class="sidebar-tab" data-web-view="feedback" aria-controls="view-feedback"><span aria-hidden="true">💬</span> Komen &amp; Cadangan</button>
         <button type="button" id="web-referral-tab" class="sidebar-tab" data-web-view="referral" aria-controls="view-referral" hidden><span aria-hidden="true">🎁</span> Affiliate Saya</button>
-        <button type="button" id="web-admin-tab" class="sidebar-tab" data-web-view="admin" aria-controls="view-admin" hidden><span aria-hidden="true">📊</span> Analisis Admin</button>
+        <button type="button" id="web-admin-tab" class="sidebar-tab" data-web-view="admin" aria-controls="view-admin" hidden><span aria-hidden="true">🛠️</span> Pusat Admin</button>
       </div>
     </details>
   </nav>
@@ -1148,152 +1344,6 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
  <button id="web-feedback-refresh" type="button" class="profile-refresh">🔄 Muat Semula</button>
  <div id="web-feedback-own" aria-live="polite">Buka menu ini untuk melihat komen anda.</div>
 </section>
-</section>
-<section id="view-admin" class="app-view" aria-labelledby="web-admin-heading" hidden>
-<h2 id="web-admin-heading">📊 Analisis Admin</h2>
-<section id="admin-payments" class="teacher-timetable-section" aria-labelledby="admin-payments-heading" hidden>
- <h3 id="admin-payments-heading">Semakan Bayaran</h3>
- <div class="profile-actions">
-  <label for="admin-payment-filter">Status bayaran</label>
-  <select id="admin-payment-filter"><option value="pending">Menunggu</option><option value="approved">Disahkan</option><option value="rejected">Ditolak</option></select>
-  <button id="admin-payment-refresh" type="button">Muat Semula Bayaran</button>
- </div>
- <p id="admin-payment-status" role="status" aria-live="polite"></p>
- <ul id="admin-payment-list"></ul>
- <div class="profile-actions">
-  <button id="admin-payment-prev" type="button" hidden>Halaman Sebelum</button>
-  <button id="admin-payment-next" type="button" hidden>Halaman Seterusnya</button>
- </div>
- <dialog id="admin-payment-dialog" aria-labelledby="admin-payment-dialog-title">
-  <h3 id="admin-payment-dialog-title">Resit Bayaran</h3>
-  <p id="admin-payment-dialog-status" role="status" aria-live="polite"></p>
-  <div id="admin-payment-proof"></div>
-  <div id="admin-payment-decision" hidden>
-   <label><input type="checkbox" id="admin-payment-confirm"> Saya telah menyemak resit dan transaksi sebenar.</label>
-   <div class="profile-actions">
-    <button type="button" id="admin-payment-approve" disabled>Sahkan Bayaran</button>
-    <button type="button" id="admin-payment-reject" disabled>Tolak Bayaran</button>
-   </div>
-  </div>
-  <div class="profile-actions"><button type="button" id="admin-payment-close">Tutup</button></div>
- </dialog>
-</section>
-<section class="teacher-timetable-section" aria-labelledby="web-chat-admin-heading">
- <h3 id="web-chat-admin-heading">💬 Chat Pengguna</h3>
- <p class="notice">Pilih ID daripada senarai, atau masukkan ID akaun untuk memulakan chat. Semak identiti sebelum mengesahkan bayaran.</p>
- <button id="web-admin-chat-refresh" type="button" class="profile-refresh">Muat Semula Senarai Chat</button>
- <div id="web-admin-chat-inbox"></div>
- <label for="web-admin-chat-user">ID akaun pengguna</label>
- <input id="web-admin-chat-user" inputmode="numeric" placeholder="ID pengguna Telegram atau e-mel" maxlength="19">
- <button id="web-admin-chat-open" type="button" class="profile-refresh">Buka Perbualan</button>
- <div id="web-admin-chat-thread" class="web-chat-messages" aria-live="polite"></div>
- <form id="web-admin-chat-form" class="teacher-profile-form">
-  <label for="web-admin-chat-input">Balasan admin</label>
-  <textarea id="web-admin-chat-input" rows="3" maxlength="1500"></textarea>
-  <label for="web-admin-chat-file">Lampiran admin (PDF atau gambar, maksimum 4 MB)</label>
-  <input id="web-admin-chat-file" type="file" accept=".pdf,.png,.jpg,.jpeg,.webp,application/pdf,image/png,image/jpeg,image/webp">
-  <button type="submit">Hantar Balasan</button>
- </form>
- <p id="web-admin-chat-status" role="status" aria-live="polite"></p>
-</section>
-<section class="teacher-timetable-section" aria-labelledby="web-feedback-admin-heading">
- <h3 id="web-feedback-admin-heading">💬 Komen &amp; Cadangan Pengguna</h3>
- <p class="notice">Komen daripada Web dan Telegram disatukan dalam rekod CikguLaju; hanya admin boleh melihat senarai ini.</p>
- <label for="web-feedback-admin-filter">Paparkan komen</label>
- <select id="web-feedback-admin-filter" aria-label="Tapis komen mengikut status">
-  <option value="semua">Semua status</option>
-  <option value="baru">Baharu</option>
-  <option value="dibaca">Dibaca</option>
-  <option value="selesai">Selesai</option>
- </select>
- <button id="web-feedback-admin-refresh" type="button" class="profile-refresh">🔄 Muat Semula Komen</button>
- <div id="web-feedback-admin-list" aria-live="polite">Buka panel admin untuk melihat komen.</div>
- <button id="web-feedback-admin-more" type="button" class="profile-refresh" hidden>Muat Komen Terdahulu</button>
-</section>
-<details id="admin-users-directory" class="admin-users-directory">
- <summary>👥 Senarai Pengguna <small>Telegram, e-mel, tarikh daftar dan status akses</small></summary>
- <div class="admin-users-body">
-  <p class="admin-users-note">Hanya untuk admin. Tekan <strong>💬 Chat</strong> pada pengguna untuk terus membuka perbualan, tanpa menaip ID. Tarikh log masuk berdasarkan rekod Web sejak pencatatan diaktifkan; “Belum direkodkan” bukan bermaksud pengguna tidak pernah log masuk.</p>
-  <div class="admin-users-filters">
-   <label for="admin-users-search">Cari pengguna
-    <input type="search" id="admin-users-search" placeholder="E-mel, nama atau ID Telegram" maxlength="100" autocomplete="off">
-   </label>
-   <label for="admin-users-filter">Status akses
-    <select id="admin-users-filter">
-     <option value="all">Semua pengguna</option>
-     <option value="free">Free</option>
-     <option value="rakan">Rakan Pembangun</option>
-     <option value="langganan">Langganan aktif</option>
-    </select>
-   </label>
-   <button type="button" id="admin-users-apply">Cari / Tapis</button>
-  </div>
-  <div class="admin-users-toolbar">
-   <p id="admin-users-status" role="status" aria-live="polite">Buka senarai untuk melihat rekod.</p>
-   <button type="button" id="admin-users-refresh" aria-label="Muat semula senarai pengguna">↻ Muat Semula</button>
-  </div>
-  <ul id="admin-users-list" class="admin-users-list" aria-label="Senarai akaun berdaftar"></ul>
-  <nav class="admin-users-pagination" aria-label="Halaman senarai pengguna">
-   <button id="admin-users-prev" type="button" hidden>Sebelum</button>
-   <span id="admin-users-page" aria-live="polite"></span>
-   <button id="admin-users-next" type="button" hidden>Seterusnya</button>
-  </nav>
- </div>
-</details>
-<p class="notice">Statistik penggunaan dikira berdasarkan akaun berbeza yang log masuk ke Web.</p>
-<div class="admin-stats-grid" aria-label="Ringkasan penggunaan CikguLaju">
- <div class="admin-stats-card"><span>Pengguna berdaftar</span><strong id="web-admin-users">—</strong></div>
- <div class="admin-stats-card"><span>Pendaftaran baharu hari ini</span><strong id="web-admin-new-users-today">—</strong></div>
- <div class="admin-stats-card"><span>Pendaftaran baharu · 7 hari</span><strong id="web-admin-new-users-7d">—</strong></div>
- <div class="admin-stats-card"><span>Pendaftaran baharu · 30 hari</span><strong id="web-admin-new-users-30d">—</strong></div>
- <div class="admin-stats-card"><span>Rakan Pembangun aktif</span><strong id="web-admin-rakan">—</strong></div>
- <div class="admin-stats-card"><span>Login hari ini (MYT)</span><strong id="web-admin-today">—</strong></div>
- <div class="admin-stats-card"><span>Login 7 hari terakhir</span><strong id="web-admin-week">—</strong></div>
- <div class="admin-stats-card"><span>Login 30 hari terakhir</span><strong id="web-admin-month">—</strong></div>
- <div class="admin-stats-card"><span>Penggunaan kredit percubaan tercatat</span><strong id="web-admin-credits">—</strong></div>
- <div class="admin-stats-card"><span>Rekod penghantaran RPH disahkan</span><strong id="web-admin-rph">—</strong></div>
-</div>
-<p class="notice" id="web-admin-status" role="status" aria-live="polite">Memuatkan analisis…</p>
-<p class="notice" id="web-admin-rph-note">Rekod janaan lama mungkin belum lengkap.</p>
-<p class="admin-stats-caption" id="web-admin-updated"></p>
-<button type="button" id="web-admin-refresh">🔄 Muat Semula Statistik</button>
-<a href="/admin/semakan/matematik-sjkt-tahun-2">Semak RPH Matematik SJKT Tahun 2</a>
-<section id="affiliate-admin" class="teacher-timetable-section" aria-labelledby="affiliate-admin-heading" hidden>
- <h3 id="affiliate-admin-heading">Pengurusan Affiliate</h3>
- <h4>Senarai Affiliate dan Baki Mata</h4>
- <label for="affiliate-members-filter">Status jemputan</label>
- <select id="affiliate-members-filter">
-  <option value="all">Semua affiliate</option>
-  <option value="registered">Ada jemputan berdaftar</option>
-  <option value="none">Belum ada jemputan berdaftar</option>
-  <option value="unpaid">Ada jemputan tanpa bayaran disahkan</option>
-  <option value="paid">Ada jemputan dengan bayaran disahkan</option>
- </select>
- <button id="affiliate-admin-refresh" type="button">Muat Semula Rekod Affiliate</button>
- <p id="affiliate-members-status" role="status" aria-live="polite"></p>
- <ul id="affiliate-members-list"></ul>
- <div class="profile-actions">
-  <button id="affiliate-members-prev" type="button" hidden>Halaman Sebelum</button>
-  <button id="affiliate-members-next" type="button" hidden>Halaman Seterusnya</button>
- </div>
- <div id="affiliate-admin-claims">
-  <h4>Tuntutan Ganjaran</h4>
-  <p id="affiliate-admin-member-filter" hidden>
-   <span id="affiliate-admin-selected-member"></span>
-   <button id="affiliate-admin-clear-member" type="button">Lihat Semua Affiliate</button>
-  </p>
-  <label for="affiliate-admin-filter">Status tuntutan</label>
-  <select id="affiliate-admin-filter">
-   <option value="pending">Menunggu</option><option value="processing">Dalam Proses</option>
-   <option value="paid">Dibayar</option><option value="rejected">Ditolak</option>
-   <option value="all">Semua status</option>
-  </select>
-  <p id="affiliate-admin-status" role="status" aria-live="polite"></p>
-  <div id="affiliate-admin-list"></div>
-  <button id="affiliate-admin-more" type="button" hidden>Lagi Tuntutan</button>
- </div>
-</section>
-
 </section>
 <section id="view-guide" class="app-view" aria-labelledby="view-guide-heading">
  <h2 id="view-guide-heading">Panduan Penggunaan</h2>
@@ -3015,7 +3065,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/teacher-profile.js?v=pilihan-subjek-20261117"></script>
 <script src="/assets/web-payment.js?v=resit-chat-bantuan-20261123"></script>
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>
-<script src="/assets/admin-usage.js?v=user-chat-oneclick-20261123"></script>
+<script src="/assets/admin-usage.js?v=pusat-admin-notifikasi-20261123"></script>
 <script src="/assets/web-feedback.js?v=comments-inbox-20261112"></script>
 <script src="/assets/web-admin-chat.js?v=chat-header-notify-20261123"></script>
 <script src="/assets/special-activities.js?v=pilihan-subjek-20261117"></script>
