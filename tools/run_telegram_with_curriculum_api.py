@@ -955,3 +955,16 @@ except Exception as _objective_reflection_exc:
     print("RPH objective-linked reflection unavailable:",
           type(_objective_reflection_exc).__name__, flush=True)
 
+
+
+# Display-only Jawi numerals for active Pendidikan Islam RPH.
+# Install LAST, after all curriculum rows, reflection, PI activity and Word
+# presentation adapters. Converts 0-9 to ٠-٩ only on generated Word/PDF;
+# no DB records, SK/SP identifiers, selections or credit counters are changed.
+try:
+    from web.rph_pi_jawi_numerals_20261124 import install as install_pi_jawi_numerals
+    RPH_PI_JAWI_NUMERALS_ACTIVE = bool(install_pi_jawi_numerals(telegram_runtime))
+except Exception as _pi_jawi_numerals_exc:
+    RPH_PI_JAWI_NUMERALS_ACTIVE = False
+    print("PI Jawi numeral presentation unavailable:",
+          type(_pi_jawi_numerals_exc).__name__, flush=True)
