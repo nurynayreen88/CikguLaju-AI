@@ -1201,6 +1201,12 @@ def create_blueprint():
         if fmt == "word":
             from web.rph_activity_heading_delivery import style_word_activity_titles
             document = style_word_activity_titles(document)
+            # Visual-only KP2027-style palette/borders on verified KSSR native
+            # Word. Source content, original RTL and unrelated PDF stay intact.
+            # Skip the separately approved private PI archive entirely.
+            if selected.get("source") != "pi-696-private-bundle":
+                from web.rph_kp2027_word_polish import polish_kssr_word
+                document = polish_kssr_word(document, selected.get("subject", ""))
         # Shared KSSR/PPKI/DLP/other-subject reflection policy; only edits a
         # verifiably matching document cell and never the private PI v2 source.
         # Run BEFORE charging any trial quota.
