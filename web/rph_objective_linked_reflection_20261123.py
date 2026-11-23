@@ -129,8 +129,8 @@ def objective_linked_reflection(state, rows):
         )
     else:
         generated = (
-            "____ / ____ murid mencapai sasaran: " + evidence +
-            ". Murid belum menguasai dibimbing semula."
+            "____ / ____ murid: " + evidence +
+            ". Baki dibimbing semula."
         )
     # Preserve a compact one-paragraph footer and limit added page pressure.
     if len(generated) > 215 or (current and len(generated) > len(current) + 90):
