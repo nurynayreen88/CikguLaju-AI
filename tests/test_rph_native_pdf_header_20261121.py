@@ -359,6 +359,5 @@ def test_native_pastel_pdf_never_gets_a_second_crossing_title_frame(tmp_path):
                 and 48 <= d["rect"].height <= 120
             ]
             assert len(banner) == 1, (subject, banner)
-            assert not (pdf.metadata.get("keywords") or "").find(
-                "CikguLaju-RPH-pastel-20261121"
-            ) >= 0, subject
+            assert "CikguLaju-RPH-pastel-20261121" not in (
+                pdf.metadata.get("keywords") or ""), subject
