@@ -95,7 +95,7 @@ class TestKp2027RptYear1(unittest.TestCase):
         self.assertIn('rptMobileLink.href=directUrl;',page)
         self.assertIn('function rptKP2027DownloadName(entry,fmt)',page)
         self.assertIn('rptMobileLink.setAttribute("download",rptKP2027DownloadName(selection,"pdf")||"");',page)
-        self.assertIn('rptWordLink.setAttribute("download",rptKP2027DownloadName(selection,"docx")||"");',page)
+        self.assertIn('rptWordLink.setAttribute("download",rptKP2027DownloadName(selection,"docx")||bmKssr||"");',page)
         self.assertIn('if(rptDirectPdfUrl(item))return;',page)
         self.assertNotIn('async function downloadKP2027Rpt(selection)',page)
         self.assertNotIn('window.open("about:blank","_blank")',page)

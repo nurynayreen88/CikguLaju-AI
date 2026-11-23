@@ -1,0 +1,92 @@
+{
+  "id": "kssr_bm_word_premium_from_native_html_20261123",
+  "ready_for_paid_word_download": true,
+  "academic_final": false,
+  "no_qa_hold_promoted": true,
+  "subject": "bahasa_melayu",
+  "years": [
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "files": {
+    "2": {
+      "year": 2,
+      "path": "bahasa_melayu/tahun_2.docx",
+      "sha256": "29f5c6431af6f9ec006c624485ed2e8d7ee5f7f01c52f243b24f9021a7bd0170",
+      "bytes": 55514,
+      "source_html": "rpt_2027/bahasa_melayu/RPT_BM_Tahun_2_2027_Format_2026_DRAF.html",
+      "source_html_sha256": "35064e3c1c72d534a6a7f5835304f9428d19753c0fd6023501f58434aa8c081b",
+      "source_pdf_sha256": "fbaa1d1c81b2feffc1150957c3d3a49c614871ad16440cc6d7bec1798fe5cbbd",
+      "weeks": 44,
+      "pdp": 164,
+      "source_pdf_identifiers": 164,
+      "status": "DRAF_SEMAKAN_NOT_ACADEMIC_FINAL",
+      "Word_editable": true,
+      "PDF_unchanged": true
+    },
+    "3": {
+      "year": 3,
+      "path": "bahasa_melayu/tahun_3.docx",
+      "sha256": "c8602d7fe24bfa6f1f60995d92cf4b705ece128f61a9912142a11a10953f3b5f",
+      "bytes": 57874,
+      "source_html": "rpt_2027/bahasa_melayu/RPT_BM_Tahun_3_2027_Format_2026_DRAF.html",
+      "source_html_sha256": "d5e1cf2194b4959920ca20afd0fa1c7f700502e3c26f18988822d9938c68f431",
+      "source_pdf_sha256": "98db51ca3f37a7be29fa379c6d670061753884517acd2abd9a40a21283552756",
+      "weeks": 44,
+      "pdp": 165,
+      "source_pdf_identifiers": 165,
+      "status": "DRAF_SEMAKAN_NOT_ACADEMIC_FINAL",
+      "Word_editable": true,
+      "PDF_unchanged": true
+    },
+    "4": {
+      "year": 4,
+      "path": "bahasa_melayu/tahun_4.docx",
+      "sha256": "9d2414c0b920d55ed88df7bdbf27c0b1ecfff9f2ee2795910d3336f04796fda4",
+      "bytes": 54937,
+      "source_html": "rpt_2027/bahasa_melayu/RPT_BM_Tahun_4_2027_Format_2026_DRAF.html",
+      "source_html_sha256": "24602f8ccf647ceb91286cc871d1c298c78a1e8c5b7dc96967684bd31758848c",
+      "source_pdf_sha256": "eb231841184177fa27a14f60fd4e2c4d0caf2cb0a15ebf674129e802d38d0c6f",
+      "weeks": 44,
+      "pdp": 165,
+      "source_pdf_identifiers": 165,
+      "status": "DRAF_SEMAKAN_NOT_ACADEMIC_FINAL",
+      "Word_editable": true,
+      "PDF_unchanged": true
+    },
+    "5": {
+      "year": 5,
+      "path": "bahasa_melayu/tahun_5.docx",
+      "sha256": "24320f38567d967e1de1b21e6af8d4ac0cb3f87e73a76ac0d2e456e18f12659f",
+      "bytes": 55510,
+      "source_html": "rpt_2027/bahasa_melayu/RPT_BM_Tahun_5_2027_Format_2026_DRAF.html",
+      "source_html_sha256": "c27c67f86865d742882851c549089f88c9b3363d696476af0d658bd25f12b9f7",
+      "source_pdf_sha256": "fbe90a74a6b8768e75215b189de93805decb3aa9f739caae3e0b450e79a0b11e",
+      "weeks": 44,
+      "pdp": 166,
+      "source_pdf_identifiers": 166,
+      "status": "DRAF_SEMAKAN_NOT_ACADEMIC_FINAL",
+      "Word_editable": true,
+      "PDF_unchanged": true
+    },
+    "6": {
+      "year": 6,
+      "path": "bahasa_melayu/tahun_6.docx",
+      "sha256": "0aa080bd40ccfea11fcaf2f3235148c845e23d359928d6190e48c8a3ac431e06",
+      "bytes": 55372,
+      "source_html": "rpt_2027/bahasa_melayu/RPT_BM_Tahun_6_2027_Format_2026_DRAF.html",
+      "source_html_sha256": "a0e8eac9ac3e4c4bf1c0a762694d583287235d28a4dabdb0da1f2ec164daa3bb",
+      "source_pdf_sha256": "480e8b4f47a807e1d3b1870b5cf224283b77171455a2f033d4fca9d9dea18da2",
+      "weeks": 44,
+      "pdp": 165,
+      "source_pdf_identifiers": 165,
+      "status": "DRAF_SEMAKAN_NOT_ACADEMIC_FINAL",
+      "Word_editable": true,
+      "PDF_unchanged": true
+    }
+  },
+  "original_pdf_manifest_untouched": true
+}
