@@ -42,6 +42,12 @@ def reflow_verified_pi_header(state, story):
         or str(state.get("subject") or "").strip() != "Pendidikan Islam"
     ):
         return story
+    # Never alter independent PI-like PPKI/DLP/SJKC/SJKT renderers.
+    for key in ("curriculum", "curriculum_version", "stream",
+                "programme", "program", "school_type"):
+        if any(tag in str(state.get(key) or "").casefold()
+               for tag in ("ppki", "dlp", "sjkc", "sjkt", "kp2027")):
+            return story
     if not isinstance(story, list) or len(story) != 7:
         return story
     title, top_space, info, middle_space, activity, foot_space, footer = story
