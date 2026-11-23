@@ -135,8 +135,8 @@ class KP2027OneTapMobileRPT(unittest.TestCase):
                     self.assertTrue(page.locator("#rpt-download").is_hidden())
                     self.assertEqual(pdf.get_attribute("href"), base + "pdf")
                     self.assertEqual(word.get_attribute("href"), base + "docx")
-                    self.assertEqual(pdf.get_attribute("download"), "")
-                    self.assertEqual(word.get_attribute("download"), "")
+                    self.assertEqual(pdf.get_attribute("download"), document(subject, "pdf")[1])
+                    self.assertEqual(word.get_attribute("download"), document(subject, "docx")[1])
                     self.assertIsNone(pdf.get_attribute("target"))
                     self.assertIsNone(word.get_attribute("target"))
 
