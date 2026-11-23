@@ -1,0 +1,35 @@
+name: Read-only real active PI RPH sample (NOT archive 696)
+on:
+  pull_request:
+    paths:
+      - "tools/export_pi_live_rph_sample_20261123.py"
+      - ".github/workflows/pi-live-real-rph-sample-20261123.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native-809-pi-sample:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install exact live native Jawi build requirements and fonts
+        run: |
+          bash build_jawi.sh
+      - name: Export one source-backed active Jawi Word/PDF without tokens or DB writes
+        env:
+          PYTHONUNBUFFERED: "1"
+          CIKGULAJU_WEB_NATIVE_RPH_ENABLED: "0"
+        run: |
+          python -m tools.export_pi_live_rph_sample_20261123
+      - name: Publish genuine CI examples, not illustrative templates
+        uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: CIKGULAJU_PI_AKTIF_T2_RPH_SEBENAR_20261123
+          path: qa/pi-active-real/*
+          if-no-files-found: error
+          retention-days: 7
