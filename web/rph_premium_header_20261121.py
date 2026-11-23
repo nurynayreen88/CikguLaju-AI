@@ -12,6 +12,7 @@ from io import BytesIO
 from zipfile import ZipFile
 
 from lxml import etree
+from web.rph_unified_engine import TEACHER_PANEL_FILL
 
 W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
 DOCUMENT = "word/document.xml"
@@ -109,7 +110,7 @@ def _make_banner(body, first_table, title, rows, fill, *, rtl_jawi=False):
     # Match the approved BM SK KP2027 Tahun 1 master: large lesson identity
     # pastel on the left, small teacher panel neutral/light on the right.
     # Do not create/remove any source field or change its value.
-    rightpr = _cell_fill(right, "F5F7FA")
+    rightpr = _cell_fill(right, TEACHER_PANEL_FILL)
     rightpr.find(W + "tcW").set(W + "w", "3730")
     title.getparent().remove(title)
     left.append(title)
