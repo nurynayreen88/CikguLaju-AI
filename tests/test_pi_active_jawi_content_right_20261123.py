@@ -116,6 +116,22 @@ def test_only_source_values_move_to_physical_rtl_right_without_losing_activity()
     assert doc.paragraphs[0].text == "رنچڠن ڤڠاجرن هارين"
     assert len(doc.tables) == 4
     assert doc.tables[0].cell(0, 0).text.startswith("مات ڤلاجرن")
+    # Both physical panels must sit at their RIGHT boundaries in LibreOffice's
+    # RTL table rendering, with modest breathing space between every line.
+    # In this document RTL w:jc=left => physical right (verified on real PDF).
+    with ZipFile(BytesIO(after)) as header_package:
+        xml = etree.fromstring(header_package.read("word/document.xml"))
+        header_cells = xml.find(W + "body").findall(W + "tbl")[0].find(W + "tr").findall(W + "tc")
+        assert [len(c.findall(W + "p")) for c in header_cells] == [3, 5]
+        for cell in header_cells:
+            for para in cell.findall(W + "p"):
+                ppr = para.find(W + "pPr")
+                assert ppr.find(W + "jc").get(W + "val") == "left"
+                spacing = ppr.find(W + "spacing")
+                assert spacing.get(W + "line") == "260"
+                assert spacing.get(W + "after") == "65"
+        assert "مات ڤلاجرن" in "".join(n.text or "" for n in header_cells[0].iter(W+"t"))
+        assert "بيلڠن موريد" in "".join(n.text or "" for n in header_cells[1].iter(W+"t"))
     assert "اکتيۏيتي 2" in doc.tables[2].cell(2, 1).text
     with ZipFile(BytesIO(after)) as z:
         root = etree.fromstring(z.read("word/document.xml"))
