@@ -1,0 +1,22 @@
+name: English 2027 Word private QA hold
+on:
+  pull_request:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - 'audits/rpt_english_word_y2_y6_private_qa_20261123.json'
+      - 'tests/test_rpt_english_private_word_qa_20261123.py'
+      - '.github/workflows/rpt-english-private-word-qa-20261123.yml'
+      - 'web/rpt_2027_all_http.py'
+      - 'rpt_2027/english/**'
+      - 'rpt_2027/kssr_word_premium/english/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa_gate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ensure Word QA remains non-public and 800 lessons evidence is locked
+        run: python -m unittest discover -s tests -p 'test_rpt_english_private_word_qa_20261123.py' -v
