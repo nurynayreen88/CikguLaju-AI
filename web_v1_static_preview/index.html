@@ -1495,7 +1495,7 @@ webViewButtons.forEach(button=>button.addEventListener("click",()=>{
  const view=document.getElementById(button.getAttribute("aria-controls"));
  const heading=document.getElementById(view.getAttribute("aria-labelledby"));
  heading.tabIndex=-1;
- heading.focus();
+ if(button.dataset.webView!=="admin")heading.focus();
  if(button.dataset.webView==="rph")void loadTeacherClasses();
  if(button.dataset.webView==="today")window.rphTodayLoad?.();
  if(button.dataset.webView==="pbd")window.cikgulajuPbdLoad?.();
