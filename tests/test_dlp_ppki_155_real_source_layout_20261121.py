@@ -64,6 +64,21 @@ def _check_output(word, pdf, *, label, objective, subject):
         assert len(text.strip()) > 150, (label, "PDF text missing")
         assert ("Content Standards" if subject != "PPKI" else "Standard Kandungan") in text, label
         assert TEACHER["reflection"] in " ".join(text.split()), (label, "PDF reflection lost")
+        # Real vector PDF check: the native 64 mm teacher panel is neutral
+        # and exactly aligned with the 182 mm pastel lesson header. No
+        # second overlay or recomposed lesson text is permitted.
+        page0 = artifact[0]
+        ink = [d for d in page0.get_drawings() if d.get("fill") is not None]
+        neutral = tuple(int("F5F7FA"[i:i+2], 16) / 255 for i in (0, 2, 4))
+        assert any(
+            abs(d["rect"].width - 64 * 72 / 25.4) < 1.5
+            and len(d["fill"]) == 3
+            and all(abs(d["fill"][i] - neutral[i]) < .012 for i in range(3))
+            for d in ink
+        ), (label, "teacher panel missing neutral native background")
+        assert any(
+            abs(d["rect"].width - 182 * 72 / 25.4) < 1.5 for d in ink
+        ), (label, "full-width master header background missing")
         for page in artifact:
             assert abs(page.rect.width - 595.28) < 2, label
             assert abs(page.rect.height - 841.89) < 2, label
