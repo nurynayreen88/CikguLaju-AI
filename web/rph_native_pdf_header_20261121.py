@@ -192,6 +192,13 @@ def premium_pdf_story(state, story):
     """
     if not isinstance(state, dict):
         return story
+    # Original PI/Jawi has the same verified eight metadata fields as SK.
+    # Reflow ONLY its existing raster flowables into the matching two-panel
+    # header; unsupported RTL layouts remain completely unchanged.
+    if (str(state.get("task") or "").strip() == "rph"
+            and str(state.get("subject") or "").strip() == "Pendidikan Islam"):
+        from web.rph_pi_native_pdf_header_20261124 import reflow_verified_pi_header
+        return reflow_verified_pi_header(state, story)
     fill = color_for_state(state)
     subject = _normal(state.get("subject"))
     # A legacy native RPH has precisely the title, three tables and three

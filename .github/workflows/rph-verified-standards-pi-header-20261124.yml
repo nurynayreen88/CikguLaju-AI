@@ -1,0 +1,50 @@
+name: RPH verified SK SP and PI two-panel native PDF QA
+on:
+  pull_request:
+    paths:
+      - "web/rph_verified_standard_labels_20261124.py"
+      - "web/rph_math_multisp_pdf_guard_20261124.py"
+      - "web/rph_pi_native_pdf_header_20261124.py"
+      - "web/rph_pi_jawi_numerals_20261124.py"
+      - "web/rph_premium_header_20261121.py"
+      - "web/rph_native_pdf_header_20261121.py"
+      - "tools/run_telegram_with_curriculum_api.py"
+      - "tools/audit_native_sains_math_premium_header_20261123.py"
+      - "tests/test_rph_verified_standards_pi_header_20261124.py"
+      - "tests/test_rph_pi_jawi_numerals_20261124.py"
+      - "tools/audit_source_reflection_a4_20261123.py"
+      - ".github/workflows/rph-verified-standards-pi-header-20261124.yml"
+permissions:
+  contents: read
+jobs:
+  actual-seven-plus-pi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 23
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install existing native runtime
+        run: bash build_jawi.sh
+      - name: Install Word PDF page-layout renderer
+        run: |
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq libreoffice-writer
+      - name: Unit guards for code-only SK/SP and Jawi header
+        run: |
+          python -m pip install "pytest>=8,<10"
+          python -m pytest -q tests/test_rph_verified_standards_pi_header_20261124.py tests/test_rph_pi_jawi_numerals_20261124.py tests/test_pi_active_jawi_content_right_20261123.py
+      - name: Check ten real native Sains and Math Word/PDF A4 lessons
+        run: python -m tools.audit_native_sains_math_premium_header_20261123
+      - name: Check real verified Pendidikan Islam Jawi and BM Word/PDF A4
+        run: python -m tools.audit_source_reflection_a4_20261123
+      - uses: actions/upload-artifact@v4
+        if: success()
+        with:
+          name: CIKGULAJU_SK_SP_PI_HEADER_20261124_REAL_SAMPLES
+          path: |
+            qa/native-sains-math-header/*
+            qa/rph-source-reflections/*
+          if-no-files-found: error
+          retention-days: 7

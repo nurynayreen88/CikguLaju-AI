@@ -50,6 +50,21 @@ def main():
                         })
                         source = _source_text(runtime, state)
                         rows = runtime._rph_rows(state, source)
+                        # Actual v26 code-only SK/SP must display verified
+                        # DSKP/DPK wording in BOTH Word and PDF. This is
+                        # presentation-only and cannot change source rows.
+                        if code == "MATH" or year in (5, 6):
+                            from web.rph_verified_standard_labels_20261124 import _VERIFIED
+                            family = "Matematik" if code == "MATH" else "Sains"
+                            sk, sk_label, sp, sp_label = _VERIFIED[family, year]
+                            assert rows["STANDARD KANDUNGAN"] == f"{sk} {sk_label}", (
+                                family, year, rows.get("STANDARD KANDUNGAN"))
+                            assert f"{sp} {sp_label}" in rows["STANDARD PEMBELAJARAN"], (
+                                family, year, rows.get("STANDARD PEMBELAJARAN"))
+                            from web.rph_verified_standard_labels_20261124 import _EXTRA_SPS
+                            for code_sp, label_sp in _EXTRA_SPS.get((family, year), {}).items():
+                                assert f"{code_sp} {label_sp}" in rows["STANDARD PEMBELAJARAN"], (
+                                    family, year, code_sp, rows.get("STANDARD PEMBELAJARAN"))
                         reflection = rows.get("REFLEKSI", "")
                         assert isinstance(reflection, str) and reflection.strip()
                         if code == "SCIENCE":
@@ -76,6 +91,11 @@ def main():
                         word = Path(runtime.create_word_file(state, source, unique))
                         pdf = Path(runtime.create_pdf_file(state, source, unique+"p"))
                         doc = Document(str(word))
+                        if code == "MATH" or year in (5, 6):
+                            table_text = " ".join(cell.text for row in doc.tables[1].rows
+                                                  for cell in row.cells)
+                            assert sk_label in table_text and sp_label in table_text, (
+                                family, year, "Word lost verified standard descriptions")
                         if code == "SCIENCE":
                             # Word must contain the exact same reflection
                             # returned from the active _rph_rows adapter.
@@ -97,6 +117,14 @@ def main():
                             page_count = len(pdf_doc)
                             pdf_title = bool(pdf_doc[0].search_for("RANCANGAN PENGAJARAN HARIAN"))
                             dimensions = (round(pdf_doc[0].rect.width), round(pdf_doc[0].rect.height))
+                            if code == "MATH" or year in (5, 6):
+                                pdf_text = " ".join(pdf_doc[0].get_text().split())
+                                assert sk_label in pdf_text and sp_label in pdf_text, (
+                                    family, year, "PDF lost verified standard descriptions")
+                                for code_sp, label_sp in _EXTRA_SPS.get((family, year), {}).items():
+                                    assert f"{code_sp} {label_sp}" in pdf_text, (
+                                        family, year, code_sp,
+                                        "PDF dropped a distinct verified subclause")
                             if code == "SCIENCE":
                                 extracted = " ".join(pdf_doc[0].get_text().split())
                                 expected = " ".join(reflection.split())

@@ -108,13 +108,16 @@ def _make_banner(body, first_table, title, rows, fill, *, rtl_jawi=False):
     _node(grid, "gridCol", w="3730")
     table_row = _node(banner, "tr")
     left = _node(table_row, "tc")
+    # The Jawi header needs a more visible warm pastel, but ALL text,
+    # physical RTL column directions and other subjects stay untouched.
     leftpr = _cell_fill(left, fill)
+
     leftpr.find(W + "tcW").set(W + "w", "6900")
     right = _node(table_row, "tc")
     # Match the approved BM SK KP2027 Tahun 1 master: large lesson identity
     # pastel on the left, small teacher panel neutral/light on the right.
     # Do not create/remove any source field or change its value.
-    rightpr = _cell_fill(right, TEACHER_PANEL_FILL)
+    rightpr = _cell_fill(right, fill if rtl_jawi else TEACHER_PANEL_FILL)
     rightpr.find(W + "tcW").set(W + "w", "3730")
     # Keep the ORIGINAL source paragraph outside the box, centred across
     # the page. The previous LTR banner moved this title INSIDE the wide
