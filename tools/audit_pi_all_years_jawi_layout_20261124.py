@@ -181,6 +181,12 @@ def main():
                             assert word.is_file() and pdf.is_file()
                             text=check_word(word,year)
                             check_pdf(pdf,year)
+                            # Keep four genuine source-backed Word overflow
+                            # samples for typography-only diagnosis. No user
+                            # download path or production renderer is changed.
+                            if row["id"] in (1687,1759,1831,1902):
+                                shutil.copy2(word,OUT/(candidate_name+"_A4_DIAG.docx"))
+                                shutil.copy2(pdf,OUT/(candidate_name+"_A4_NATIVE.pdf"))
                             check_word_to_pdf(word,year)
                             dest_word=OUT/(candidate_name+".docx")
                             dest_pdf=OUT/(candidate_name+".pdf")
