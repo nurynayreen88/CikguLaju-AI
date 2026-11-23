@@ -522,6 +522,14 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .admin-users-list dl{margin:8px 0 0;display:grid;grid-template-columns:92px minmax(0,1fr);gap:4px 8px;font-size:.8rem;line-height:1.5}
 .admin-users-list dt{color:#6a8074}.admin-users-list dd{margin:0;color:#354d42;overflow-wrap:anywhere}
 .admin-user-chat-button{margin-top:12px;min-height:44px;padding:8px 16px;border:1px solid #bddacf;border-radius:10px;background:#eaf7f1;color:#14674e;font:inherit;font-weight:750;cursor:pointer}
+.admin-user-profile{margin-top:12px;border:1px solid #cee3d9;border-radius:11px;background:#f9fdfb;overflow:hidden}
+.admin-user-profile>summary{display:flex;align-items:center;justify-content:center;min-height:44px;padding:9px 13px;background:#e9f6ef;color:#11634b;font-weight:800;cursor:pointer;list-style:none;text-align:center}
+.admin-user-profile>summary::-webkit-details-marker{display:none}
+.admin-user-profile>summary:focus-visible{outline:3px solid #087568;outline-offset:-3px}
+.admin-user-profile[open]>summary{border-bottom:1px solid #d5e7de;background:#e4f3eb}
+.admin-user-profile-body{padding:12px 12px 14px}
+.admin-user-profile-body dl{margin:0 0 10px}
+.admin-user-grant-success{margin:12px 0 0;padding:10px;background:#e9f6ef;border-radius:9px;color:#145d49;font-size:.82rem;font-weight:750}
 .admin-user-manual-grant{margin-top:12px;padding:12px;border:1px solid #cddfd7;border-radius:12px;background:#f7fbf9}
 .admin-user-manual-grant p{font-size:.8rem;margin:0 0 9px;color:#486b5a}
 .admin-user-manual-grant label{display:block;font-weight:750;font-size:.82rem;color:#284c39}
@@ -675,7 +683,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <details id="admin-users-directory" class="admin-users-directory">
  <summary>👥 Senarai Pengguna <small>Telegram, e-mel, tarikh daftar dan status akses</small></summary>
  <div class="admin-users-body">
-  <p class="admin-users-note">Hanya untuk admin. Tekan <strong>💬 Chat</strong> untuk membuka perbualan. Gunakan <strong>🎖️ Aktifkan Rakan Pembangun</strong> untuk memberi akses manual tanpa rekod bayaran palsu, dengan sebab dan pengesahan. Pengaktifan manual mengambil satu slot kecuali akaun admin, dan tidak memberi mata affiliate. Tarikh login hanya berdasarkan rekod Web yang tersedia.</p>
+  <p class="admin-users-note">Hanya untuk admin. Tekan <strong>👤 Buka Profil</strong> pada pengguna untuk melihat maklumat penuh, membuka chat atau memberi akses melalui <strong>🎖️ Aktifkan Rakan Pembangun</strong>. Pengaktifan manual memerlukan sebab dan pengesahan, tidak mencipta rekod bayaran atau mata affiliate. Tarikh login berdasarkan rekod Web yang tersedia.</p>
   <div class="admin-users-filters">
    <label for="admin-users-search">Cari pengguna
     <input type="search" id="admin-users-search" placeholder="E-mel, nama atau ID Telegram" maxlength="100" autocomplete="off">
@@ -3073,7 +3081,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/teacher-profile.js?v=pilihan-subjek-20261117"></script>
 <script src="/assets/web-payment.js?v=resit-web-utama-20261123"></script>
 <script src="/assets/web-referral.js?v=pusat-admin-affiliate-open-20261123"></script>
-<script src="/assets/admin-usage.js?v=manual-rakan-pembangun-20261123"></script>
+<script src="/assets/admin-usage.js?v=profil-pengguna-rakan-20261123"></script>
 <script src="/assets/web-feedback.js?v=pusat-admin-alert-20261123"></script>
 <script src="/assets/web-admin-chat.js?v=pusat-admin-read-20261123"></script>
 <script src="/assets/special-activities.js?v=pilihan-subjek-20261117"></script>
