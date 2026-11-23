@@ -102,6 +102,8 @@ class QAOnlyWordPDF(unittest.TestCase):
                 ):
                     self.assertIn(exact,text)
                 self.assertEqual(text.count("Refleksi"),1)
+                self.assertNotIn("Guru: Guru ",text)
+                self.assertNotIn("Murid: Murid ",text)
                 self.assertNotIn(r["penutup"]["murid"],text)
                 self.assertNotIn(r["pengayaan"],text)
                 self.assertNotIn(r["penilaian"],text)
@@ -139,6 +141,8 @@ class QAOnlyWordPDF(unittest.TestCase):
                               else r["editorial_supplement"]["application_pdp"]):
                     self.assertIn(squeeze(exact),pdf_text)
                 self.assertEqual(pdf_text.count("Refleksi"),1)
+                self.assertNotIn("Guru: Guru ",pdf_text)
+                self.assertNotIn("Murid: Murid ",pdf_text)
                 self.assertNotIn(squeeze(r["penutup"]["murid"]),pdf_text)
                 self.assertNotIn(squeeze(r["pengayaan"]),pdf_text)
                 self.assertNotIn("Auto / Manual",pdf_text)
@@ -158,6 +162,8 @@ class QAOnlyWordPDF(unittest.TestCase):
                 self.assertTrue((Path(tmp)/entry["name"]).is_file())
                 if entry["name"].endswith(".pdf"):
                     pages=PdfReader(str(Path(tmp)/entry["name"])).pages
+                    self.assertNotIn("Guru: Guru ",pages[0].extract_text() or "")
+                    self.assertNotIn("Murid: Murid ",pages[0].extract_text() or "")
                     self.assertEqual(len(pages),1,
                                      "QA A4 PDF unexpectedly more than one page: "+entry["name"])
                     if len(pages)>1:
