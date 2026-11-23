@@ -108,7 +108,10 @@ def _make_banner(body, first_table, title, rows, fill, *, rtl_jawi=False):
     _node(grid, "gridCol", w="3730")
     table_row = _node(banner, "tr")
     left = _node(table_row, "tc")
-    leftpr = _cell_fill(left, fill)
+    # The Jawi header needs a more visible warm pastel, but ALL text,
+    # physical RTL column directions and other subjects stay untouched.
+    leftpr = _cell_fill(left, "F8EBCD" if rtl_jawi else fill)
+
     leftpr.find(W + "tcW").set(W + "w", "6900")
     right = _node(table_row, "tc")
     # Match the approved BM SK KP2027 Tahun 1 master: large lesson identity
