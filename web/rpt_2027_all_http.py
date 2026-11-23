@@ -10,6 +10,7 @@ from __future__ import annotations
 import hashlib
 import json
 import hmac
+import os
 import re
 from functools import lru_cache
 from io import BytesIO
@@ -20,6 +21,7 @@ from web import native_telegram_ppki_client as ppki
 from web import kp2027_year1_rpt_bundle as kp_rpt
 from web import kp2027_year1_rpt_combined as kp_ab
 from web import rpt_2027_kssr_bm_word as bm_word
+from web import rpt_kssr_bm_private_storage as private_bm_word
 from web.english_rpt_2027_http import _account, _has_paid_access, integrated_pdf_path
 from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
 from rpt_2027.matematik import sk_documents as matematik_sk
@@ -249,8 +251,11 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
             if ready:
                 available+=1
             entry_status=status if current is None else ("SEPARA DRAF" if code=="sains" else "DRAF")
-            word = (bm_word.word_document(year,root=root)
-                    if code=="bahasa_melayu" and personalization_allowed and ready else None)
+            word = (
+                (private_bm_word.verified_manifest_entry(year,root=root)
+                 if os.environ.get("CIKGULAJU_KSSR_BM_WORD_PRIVATE")=="1"
+                 else bm_word.word_document(year,root=root))
+                if code=="bahasa_melayu" and personalization_allowed and ready else None)
             entries.append({
                 "year":year,
                 "pdf_ready":ready,
@@ -503,12 +508,22 @@ def create_all_rpt_blueprint(*,root=ROOT):
         # Backend gate also applies to users copying the URL, not just menu.
         if not _has_paid_access(account):
             return jsonify({"error":"RPT Word hanya untuk Rakan Pembangun dan pengguna berbayar aktif."}),403
-        source=bm_word.word_document(year,root=root)
-        if source is None:
-            return jsonify({"error":"RPT Word yang disahkan belum tersedia."}),503
-        path,digest=source
+        if os.environ.get("CIKGULAJU_KSSR_BM_WORD_PRIVATE")=="1":
+            # Server-only Supabase read, after the existing paid access gate.
+            # Never redirect the browser to a Storage URL or share service keys.
+            from web_v1_telegram_auth_routes import _config
+            try:
+                blob,digest=private_bm_word.fetch_document(year,_config(),root=root)
+            except private_bm_word.PrivateWordUnavailable:
+                return jsonify({"error":"RPT Word peribadi belum tersedia. Sila cuba semula."}),503
+            document=BytesIO(blob)
+        else:
+            source=bm_word.word_document(year,root=root)
+            if source is None:
+                return jsonify({"error":"RPT Word yang disahkan belum tersedia."}),503
+            document,digest=source
         response=send_file(
-            path,as_attachment=True,conditional=False,
+            document,as_attachment=True,conditional=False,
             mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
             download_name=f"CIKGULAJU_RPT_BAHASA_MELAYU_SK_TAHUN_{year}_2027_WORD.docx")
         response.headers["X-RPT-Source-SHA256"]=digest
