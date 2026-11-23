@@ -144,7 +144,25 @@ class ObjectiveLinkedNativeReflectionTests(unittest.TestCase):
                 self.assertNotIn("Manual", result["REFLEKSI"])
                 for key in rows.keys() - {"REFLEKSI"}:
                     self.assertEqual(result[key], rows[key])
-                meaningful = dict(rows)
+                self.assertIs(objective_linked_reflection(state, result), result)
+
+    def test_sains_generic_year3_criterion_and_teacher_manual_are_preserved(self):
+        generic = (
+            "Murid dapat kPS/konsep mengikut SP dengan betul pada "
+            "sekurang-kurangnya 4 daripada 5 item atau situasi yang diberi."
+        )
+        original = "________ / ________ murid mencapai objektif."
+        rows = {
+            "KRITERIA KEJAYAAN": generic,
+            "OBJEKTIF PEMBELAJARAN": (
+                "Pada akhir PdP, murid dapat kPS/konsep mengikut SP "
+                "dengan tepat berdasarkan aktiviti dan bukti yang diberikan."
+            ),
+            "REFLEKSI": original,
+        }
+        state = {"task": "rph", "subject": "Sains"}
+        self.assertIs(objective_linked_reflection(state, rows), rows)
+        meaningful = dict(rows)
         meaningful["KRITERIA KEJAYAAN"] = (
             "Murid dapat menyatakan cara haiwan membiak dengan betul pada "
             "sekurang-kurangnya 4 daripada 5 item atau situasi yang diberi."
