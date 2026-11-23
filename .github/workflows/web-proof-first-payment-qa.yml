@@ -6,6 +6,7 @@ on:
       - 'web/web_payment_routes.py'
       - 'tests/test_web_payment_proof_first.py'
       - 'tests/test_web_payment_receipt_admin_fallback_20261123.py'
+      - 'tests/test_web_payment_attempt_tracking_20261123.py'
       - '.github/workflows/web-proof-first-payment-qa.yml'
   push:
     branches: [feature/web-payment-portal-20261105]
@@ -26,6 +27,7 @@ jobs:
       - run: node --check web_v1_static_preview/web-payment.js
       - run: python -m unittest discover -s tests -p test_web_payment_proof_first.py -v
       - run: python -m unittest discover -s tests -p test_web_payment_receipt_admin_fallback_20261123.py -v
+      - run: python -m unittest discover -s tests -p test_web_payment_attempt_tracking_20261123.py -v
       - run: python -m unittest discover -s tests -p test_web_sidebar_navigation.py -v
       - run: python -m unittest discover -s tests -p test_web_shared_teacher_profile.py -v
       - run: python -m unittest discover -s tests -p test_web_rpt_native_proxy_stdlib.py -v

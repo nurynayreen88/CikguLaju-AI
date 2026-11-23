@@ -17,7 +17,7 @@ from io import BytesIO
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, urlsplit
 from urllib.request import Request, build_opener, HTTPSHandler
-from flask import Blueprint, Response, jsonify, request
+from flask import Blueprint, Response, jsonify, request, g
 
 from web.teacher_profile_routes import _auth
 from web.teacher_profile_store import ProfileUnavailable, NoRedirect
@@ -29,8 +29,49 @@ CONTENT_TYPES = {"application/pdf": ".pdf", "image/png": ".png",
                  "image/jpeg": ".jpg", "image/webp": ".webp"}
 
 
+def _track_payment_event(conf, uid, event_type, *, error_code=None, payment_id=None):
+    """Best-effort, server-authenticated audit; never blocks checkout or stores receipt."""
+    if type(uid) is not int or not 0 < uid < 2**63:
+        return
+    if event_type not in ("payment_page_opened", "qr_opened",
+                          "receipt_started", "receipt_failed", "receipt_saved"):
+        return
+    if error_code not in (None, "telegram_unavailable",
+                          "payment_backend_unavailable", "validation_failed", "other"):
+        error_code = "other"
+    try:
+        base = _safe_host(conf["supabase_url"])
+        token = conf["supabase_key"]
+        payload = {"telegram_user_id": uid, "event_type": event_type,
+                   "plan_code": "rakan_pembangun"}
+        if error_code:
+            payload["error_code"] = error_code
+        if type(payment_id) is int and payment_id > 0:
+            payload["payment_request_id"] = payment_id
+        req = Request(base + "/rest/v1/web_payment_attempt_events",
+                      data=json.dumps(payload).encode("utf-8"), method="POST",
+                      headers={"apikey": token, "Authorization": "Bearer " + token,
+                               "Content-Type": "application/json",
+                               "Prefer": "return=minimal"})
+        with build_opener(HTTPSHandler(), NoRedirect()).open(req, timeout=3) as resp:
+            if resp.status not in (200, 201, 204):
+                raise OSError("Audit write unsuccessful")
+    except Exception as exc:
+        # No tokens, receipt bytes, names or identifiers in application logs.
+        print("WEB PAYMENT AUDIT unavailable:", type(exc).__name__, flush=True)
+
+
 @bp.after_request
 def private_response(resp):
+    # The authenticated ID is captured server-side, never trusted from browser.
+    # Record failures even when a request exits through a validation branch.
+    audit = getattr(g, "payment_audit", None)
+    if audit is not None:
+        conf, uid, kind = audit
+        if kind == "receipt" and resp.status_code >= 400:
+            code = ("validation_failed" if resp.status_code == 400 else
+                    "payment_backend_unavailable" if resp.status_code == 503 else "other")
+            _track_payment_event(conf, uid, "receipt_failed", error_code=code)
     resp.headers["Cache-Control"] = "no-store, private"
     resp.headers["Vary"] = "Cookie"
     resp.headers["X-Content-Type-Options"] = "nosniff"
@@ -369,6 +410,7 @@ def payment_catalog():
         member=_is_member(conf,uid)
     except (ProfileUnavailable,PaymentConflict):
         return jsonify({"error":"Sumber atau status Rakan Pembangun belum tersedia"}),503
+    _track_payment_event(conf, uid, "payment_page_opened")
     return jsonify({"plans":list(plans.values()),"status":_status_rows(rows),
                     "progress_percentage":percentage,"rakan_open":rakan_open,
                     "already_member":member,
@@ -395,6 +437,7 @@ def payment_qr():
         image,mime=_source("/internal/payment/v1/qr",expect="image")
     except (ProfileUnavailable,PaymentConflict):
         return jsonify({"error":"QR pembayaran belum tersedia"}),503
+    _track_payment_event(conf, uid, "qr_opened")
     return Response(image,mimetype=mime)
 
 
@@ -403,6 +446,8 @@ def payment_submit():
     conf,uid,err=_auth()
     if err is not None:
         return err
+    g.payment_audit = (conf, uid, "receipt")
+    _track_payment_event(conf, uid, "receipt_started")
     if request.headers.get("Origin") != "https://"+request.host:
         return jsonify({"error":"Asal permintaan tidak sah"}),400
     if (request.content_length is None or request.content_length>MAX_RECEIPT+12000
@@ -444,6 +489,7 @@ def payment_submit():
                 or type(saved[0].get("id")) is not int or saved[0]["id"] <= 0):
             raise ProfileUnavailable("Permohonan bayaran belum disahkan")
         rid = saved[0]["id"]
+        _track_payment_event(conf, uid, "receipt_saved", payment_id=rid)
         # NEVER change a successfully saved Pending receipt into HTTP 503
         # just because the subsequent admin Telegram notification failed.
         # Otherwise the user could assume the receipt was lost and pay again.
