@@ -59,8 +59,12 @@ def main():
                             sk, sk_label, sp, sp_label = _VERIFIED[family, year]
                             assert rows["STANDARD KANDUNGAN"] == f"{sk} {sk_label}", (
                                 family, year, rows.get("STANDARD KANDUNGAN"))
-                            assert rows["STANDARD PEMBELAJARAN"] == f"{sp} {sp_label}", (
+                            assert f"{sp} {sp_label}" in rows["STANDARD PEMBELAJARAN"], (
                                 family, year, rows.get("STANDARD PEMBELAJARAN"))
+                            from web.rph_verified_standard_labels_20261124 import _EXTRA_SPS
+                            for code_sp, label_sp in _EXTRA_SPS.get((family, year), {}).items():
+                                assert f"{code_sp} {label_sp}" in rows["STANDARD PEMBELAJARAN"], (
+                                    family, year, code_sp, rows.get("STANDARD PEMBELAJARAN"))
                         reflection = rows.get("REFLEKSI", "")
                         assert isinstance(reflection, str) and reflection.strip()
                         if code == "SCIENCE":
