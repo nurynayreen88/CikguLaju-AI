@@ -40,6 +40,29 @@ def test_all_seven_verified_source_codes_expand_only_at_output():
         assert display_verified_standards(state, revised) is revised
 
 
+def test_all_verified_combined_math_sp_clauses_have_complete_descriptions():
+    from web.rph_verified_standard_labels_20261124 import _EXTRA_SPS
+    for year, raw in ((2, "1.1.1(i);1.1.1(ii)"),
+                      (3, "1.1.1(ii);1.1.1(iii)"),
+                      (4, "1.1.1(i);1.1.1(ii)"),
+                      (5, "1.1.1(i);1.1.1(ii);1.1.1(iii)")):
+        state = _state("Matematik", year)
+        rows = {"STANDARD KANDUNGAN": "1.1",
+                "STANDARD PEMBELAJARAN": raw,
+                "AKTIVITI UTAMA": "No teacher instruction loss"}
+        source_copy = dict(rows)
+        output = display_verified_standards(state, rows)
+        assert rows == source_copy
+        assert output["STANDARD PEMBELAJARAN"].count(";") == raw.count(";")
+        assert "1.1 Nilai nombor" == output["STANDARD KANDUNGAN"]
+        for code, label in _EXTRA_SPS.get(("Matematik", year), {}).items():
+            assert f"{code} {label}" in output["STANDARD PEMBELAJARAN"]
+        assert output["AKTIVITI UTAMA"] == "No teacher instruction loss"
+        assert display_verified_standards(state, output) is output
+        bad = {**rows, "STANDARD PEMBELAJARAN": raw + ";9.9.9"}
+        assert display_verified_standards(state, bad)["STANDARD PEMBELAJARAN"] == bad["STANDARD PEMBELAJARAN"]
+
+
 def test_no_guessing_multistandard_specialty_or_other_lessons():
     example = _state("Sains", 5)
     source = {"STANDARD KANDUNGAN": "2.1",
