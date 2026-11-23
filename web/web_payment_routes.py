@@ -203,14 +203,17 @@ def _receipt_destinations(uid):
     """
     if type(uid) is not int or not 0 < uid < 2**63:
         raise ProfileUnavailable("Akaun tidak sah")
-    if uid < 10**18:
-        return [uid]
     from web.admin_usage_web import allowed_admin_ids
     admins = sorted(i for i in allowed_admin_ids()
                     if type(i) is int and 0 < i < 10**18)
+    if uid < 10**18:
+        # Telegram's sendDocument fails if a user never started the bot or
+        # blocked it. Use the *configured* private admin as a fallback.
+        # Keep the original user's chat first for backward compatibility.
+        return [uid] + [admin for admin in admins if admin != uid][:2]
     if not admins:
         raise ProfileUnavailable("Penerima resit admin belum dikonfigurasi")
-    # Bound worst-case upload time below the Web worker timeout.
+    # Email-only accounts have no Telegram chat, only trusted admin recipients.
     return admins[:2]
 
 
@@ -245,7 +248,11 @@ def _telegram_document(conf, uid, raw, ext, *, opener=None):
                 if resp.status != 200:
                     continue
                 reply=json.loads(resp.read(MAX_REPLY+1))
-        except (HTTPError,URLError,OSError,ValueError,TypeError):
+        except (HTTPError,URLError,OSError,ValueError,TypeError) as exc:
+            # Never log tokens, user IDs, receipt bytes or Telegram URLs.
+            print("WEB PAYMENT RECEIPT BOT DELIVERY failed:",
+                  "http_"+str(exc.code) if isinstance(exc,HTTPError)
+                  else type(exc).__name__, flush=True)
             continue
         item=reply.get("result") if isinstance(reply,dict) and reply.get("ok") is True else None
         document=item.get("document") if isinstance(item,dict) else None
@@ -258,7 +265,7 @@ def _telegram_document(conf, uid, raw, ext, *, opener=None):
             "unique_id":str(document.get("file_unique_id") or ""),
             "message_id":item["message_id"],
             "mime":str(document.get("mime_type") or mime)[:100],
-            "admin_chat_id":destination if uid >= 10**18 else None,
+            "admin_chat_id":destination if destination != uid else None,
         }
     raise ProfileUnavailable(
         "Resit belum dapat disimpan. Jangan bayar lagi; hubungi admin dengan resit asal.")
@@ -460,7 +467,10 @@ def payment_submit():
         return jsonify({"error":"Permohonan Pending sudah wujud. Jangan bayar dua kali."}),409
     except ValueError as exc:
         return jsonify({"error":str(exc)}),400
-    except ProfileUnavailable:
+    except ProfileUnavailable as exc:
+        # No identifiers or receipt content in logs; classify the failing step.
+        print("WEB PAYMENT RECEIPT PROCESS unavailable:",
+              str(exc)[:120], flush=True)
         return jsonify({"error":"Resit tidak dapat direkodkan dengan selamat. Semak status pembayaran sebelum cuba lagi; jangan bayar sekali lagi."}),503
 
 
