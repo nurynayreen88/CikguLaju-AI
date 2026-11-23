@@ -7,23 +7,41 @@ on:
       - 'rpt_2027/bahasa_melayu/RPT_BM_Tahun_*_2027_Format_2026_DRAF.html'
       - 'rpt_2027/web_2027_pdfs/bahasa_melayu/tahun_*.pdf'
       - 'rpt_2027/web_2027_pdfs/manifest.json'
+      - 'rpt_2027/kssr_word_premium/**'
+      - 'web/rpt_2027_all_http.py'
+      - 'web/rpt_2027_kssr_bm_word.py'
+      - 'web_v1_static_preview/index.html'
+      - 'tests/test_rpt_kssr_bm_word_paid_20261123.py'
       - '.github/workflows/kssr-bm-word-paid-20261123.yml'
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   native_word:
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          persist-credentials: true
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
       - name: Install document parsing and parity tools
-        run: python -m pip install --disable-pip-version-check 'beautifulsoup4==4.14.2' 'python-docx==1.2.0' 'PyMuPDF==1.26.5'
+        run: python -m pip install --disable-pip-version-check 'beautifulsoup4==4.14.2' 'python-docx==1.2.0' 'PyMuPDF==1.26.5' 'Flask==3.1.3' 'pypdf==6.1.3' 
       - name: Build five editable RPT Word documents from original HTML
         run: python tools/build_kssr_bm_2027_paid_word.py
+      - name: Verify deterministic native Word outputs
+        run: |
+          sha256sum rpt_2027/kssr_word_premium/bahasa_melayu/*.docx > "$RUNNER_TEMP/first_word_sha"
+          python tools/build_kssr_bm_2027_paid_word.py
+          sha256sum rpt_2027/kssr_word_premium/bahasa_melayu/*.docx > "$RUNNER_TEMP/second_word_sha"
+          diff -u "$RUNNER_TEMP/first_word_sha" "$RUNNER_TEMP/second_word_sha"
+      - name: Regression - paid Word direct URL and free PDF
+        run: |
+          python -m unittest discover -s tests -p 'test_rpt_kssr_bm_word_paid_20261123.py' -v
+          python -m unittest discover -s tests -p 'test_web_rpt_2027_all.py' -v
       - name: Check generated document layout in LibreOffice
         shell: bash
         run: |
@@ -42,7 +60,6 @@ jobs:
           data=json.loads(path.read_text('utf-8'))
           preview=Path('/tmp')
           for year, row in data['files'].items():
-              matches=list(Path.home().glob('**/unfindable-do-not-search'))
               from glob import glob
               import os
               root=Path(os.environ['RUNNER_TEMP'])/'bm-word-preview'
@@ -64,3 +81,18 @@ jobs:
             ${{ runner.temp }}/bm-word-preview/*.pdf
           if-no-files-found: error
           retention-days: 15
+      - name: Commit the 5 validated Word files to this exact PR branch only
+        if: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'feature/rpt-kssr-bm-five-paid-word-20261123' }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git branch --show-current)" = "feature/rpt-kssr-bm-five-paid-word-20261123"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- rpt_2027/kssr_word_premium/manifest.json rpt_2027/kssr_word_premium/bahasa_melayu/tahun_*.docx
+          if git diff --cached --quiet; then
+            echo "All five verified Word files are already identical; no changes."
+          else
+            git commit -m 'docs(rpt): include five SHA-pinned editable BM KSSR Word RPT files'
+            git push origin HEAD:feature/rpt-kssr-bm-five-paid-word-20261123
+          fi
