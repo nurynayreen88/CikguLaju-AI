@@ -8,6 +8,59 @@ from web import pi_696_private_bundle as pi
 
 
 class TestPIPremiumPrivateBundle(unittest.TestCase):
+    def test_storage_auth_headers_modern_secret_and_legacy_jwt(self):
+        """Both key types read PRIVATE ZIPs without treating opaque secrets as JWTs."""
+        from hashlib import sha256
+
+        buf = io.BytesIO()
+        with ZipFile(buf, "w") as z:
+            z.writestr("health.txt", "Private source fixture")
+        blob = buf.getvalue()
+        spec = {
+            "object": "rph-premium/pi-2027/v2/696-word-pdf-bundle.zip",
+            "bytes": len(blob),
+            "sha256": sha256(blob).hexdigest(),
+        }
+
+        class Response(io.BytesIO):
+            status = 200
+
+        for key, expected_bearer in (
+            ("sb_secret_" + "x" * 40, False),
+            ("eyJ" + "y" * 55, True),
+        ):
+            with self.subTest(key_type="modern" if not expected_bearer else "legacy"):
+                requests = []
+
+                def fake_urlopen(request, timeout):
+                    requests.append(request)
+                    return Response(blob)
+
+                pi._verified_zip.cache_clear()
+                try:
+                    with patch.dict(pi.ARCHIVES, {"v2": spec}), patch.object(
+                        pi, "urlopen", side_effect=fake_urlopen
+                    ):
+                        z = pi._verified_zip(
+                            "https://soxakntcanbycjoygrcx.supabase.co", key, "v2"
+                        )
+                        self.assertIn("health.txt", z.namelist())
+                    headers = {name.lower(): value for name, value in requests[0].header_items()}
+                    self.assertEqual(headers["apikey"], key)
+                    self.assertEqual(headers["accept"], "application/zip")
+                    self.assertEqual("authorization" in headers, expected_bearer)
+                    if expected_bearer:
+                        self.assertEqual(headers["authorization"], "Bearer " + key)
+                finally:
+                    pi._verified_zip.cache_clear()
+
+    def test_publishable_key_cannot_access_private_pi_archive(self):
+        with self.assertRaises(pi.PrivatePIRPHUnavailable):
+            pi._settings({
+                "supabase_url": "https://soxakntcanbycjoygrcx.supabase.co",
+                "supabase_key": "sb_publishable_" + "x" * 40,
+            })
+
     def test_exact_696_choices_include_six_formerly_held(self):
         self.assertEqual(sum(pi.YEARS.values()), 696)
         self.assertEqual({year: len(pi.pdp_options(year)) for year in pi.YEARS}, pi.YEARS)
