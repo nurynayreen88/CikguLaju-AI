@@ -131,8 +131,24 @@ async function openThread(id){
     $("web-admin-chat-status").textContent="ID pengguna tidak sah.";return;
   }
   activeUser=id;$("web-admin-chat-user").value=id;
-  try{render(admin,(await api("/api/web/admin/chats/"+id)).items,true);
+  try{
+    const data=await api("/api/web/admin/chats/"+id);
+    const items=Array.isArray(data.items)?data.items:[];
+    render(admin,items,true);
     $("web-admin-chat-status").textContent="Perbualan ID "+id;
+    const latestUser=[...items].reverse().find(item=>item.sender_role==="user");
+    // Only mark messages as read after the selected conversation was rendered.
+    if(latestUser&&Number.isSafeInteger(latestUser.id)&&latestUser.id>0){
+      try{
+        await api("/api/web/admin/chats/"+id+"/read",{
+          method:"POST",headers:{"Content-Type":"application/json"},
+          body:JSON.stringify({last_seen_user_id:String(latestUser.id)})
+        });
+        window.cikgulajuAdminNotificationsRefresh?.();
+      }catch(_error){
+        $("web-admin-chat-status").textContent="Perbualan dibuka, tetapi status dibaca belum disimpan.";
+      }
+    }
   }catch(e){$("web-admin-chat-status").textContent=e.message;}
 }
 $("web-admin-chat-open").addEventListener("click",()=>openThread($("web-admin-chat-user").value.trim()));
@@ -140,6 +156,9 @@ $("web-admin-chat-open").addEventListener("click",()=>openThread($("web-admin-ch
 window.cikgulajuOpenAdminChat=async id=>{
   const tab=$("web-admin-tab");
   if(!tab||tab.hidden)throw Error("Akses chat admin belum tersedia.");
+  const top=$("web-admin-top"),view=$("view-admin");
+  if(top)top.open=true;
+  if(view)view.hidden=false;
   tab.click();
   await openThread(String(id));
   $("web-chat-admin-heading")?.scrollIntoView({block:"start",behavior:"auto"});
@@ -158,6 +177,7 @@ $("web-admin-chat-form").addEventListener("submit",async e=>{
     })()}:{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({message})};
     await api("/api/web/admin/chats/"+activeUser,options);
     box.value="";$("web-admin-chat-file").value="";await openThread(activeUser);
+    window.cikgulajuAdminNotificationsRefresh?.();
   }catch(err){$("web-admin-chat-status").textContent=err.message;}
 });
 // Chat lives at the top; the feedback tab is reserved for comments.
