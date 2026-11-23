@@ -149,10 +149,10 @@ def render_docx(record):
 
     normal = d.styles["Normal"]
     normal.font.name = "Arial"
-    normal.font.size = Pt(8.3)
+    normal.font.size = Pt(9.5)
     normal.font.color.rgb = RGBColor(25, 50, 73)
     normal.paragraph_format.space_after = Pt(0)
-    normal.paragraph_format.line_spacing = 1.0
+    normal.paragraph_format.line_spacing = 1.05
 
     def set_cell(cell, fill=None):
         cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
