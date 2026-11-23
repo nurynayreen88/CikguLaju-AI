@@ -40,23 +40,23 @@ class TestServerOnlyStartupMigration(TestCase):
             self.assertEqual(self.run(), "DISABLED")
 
     def test_both_optins_verify_exact_five_or_fail_closed(self):
-        with patch.dict(os.environ, {FLAG: "RPT_BM_2027_V1", ALLOW: "YES"}), \\
+        with patch.dict(os.environ, {FLAG: "RPT_BM_2027_V1", ALLOW: "YES"}), \
              patch("tools.migrate_rpt_bm_kssr_word_private.migrate",
                    return_value=[2, 3, 4, 5, 6]) as migrate:
             self.assertEqual(self.run(), "VERIFIED")
             migrate.assert_called_once_with(upload=True)
 
     def test_partial_or_failed_migration_never_marks_verified(self):
-        with patch.dict(os.environ, {FLAG: "RPT_BM_2027_V1", ALLOW: "YES"}), \\
+        with patch.dict(os.environ, {FLAG: "RPT_BM_2027_V1", ALLOW: "YES"}), \
              patch("tools.migrate_rpt_bm_kssr_word_private.migrate",
                    return_value=[2, 3, 4]):
             self.assertEqual(self.run(), "FAILED")
 
     def test_sensitive_exception_body_never_printed(self):
         output = StringIO()
-        with patch.dict(os.environ, {FLAG: "RPT_BM_2027_V1", ALLOW: "YES"}), \\
+        with patch.dict(os.environ, {FLAG: "RPT_BM_2027_V1", ALLOW: "YES"}), \
              patch("tools.migrate_rpt_bm_kssr_word_private.migrate",
-                   side_effect=ValueError("secret-token-DO-NOT-PRINT")), \\
+                   side_effect=ValueError("secret-token-DO-NOT-PRINT")), \
              redirect_stdout(output):
             self.assertEqual(self.run(), "FAILED")
         self.assertNotIn("secret-token", output.getvalue())
