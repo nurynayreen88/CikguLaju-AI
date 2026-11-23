@@ -103,6 +103,61 @@ class ObjectiveLinkedNativeReflectionTests(unittest.TestCase):
         self.assertIn("pupils met the criterion", result["REFLEKSI"])
         self.assertNotIn("murid mencapai", result["REFLEKSI"])
 
+    def test_sains_verified_years_2_4_5_6_use_short_source_specific_reflections(self):
+        """Four actual Sains source criteria from verified Year 2-6 samples."""
+        source_targets = {
+            2: "menyatakan cara haiwan membiak",
+            4: ("mengenal pasti beban, fulkrum dan daya pada tuas "
+                "dengan menjalankan aktiviti"),
+            5: "memerihalkan fungsi rangka utama manusia",
+            6: "menyatakan maksud teknologi dan kepentingannya",
+        }
+        original = (
+            "________ / ________ murid mencapai objektif. ________ murid "
+            "belum mencapai objektif dan akan diberi tindakan susulan/pemulihan."
+        )
+        for year, target in source_targets.items():
+            with self.subTest(year=year):
+                criterion = (
+                    "Murid dapat " + target +
+                    " dengan betul pada sekurang-kurangnya 4 daripada 5 "
+                    "item atau situasi yang diberi."
+                )
+                rows = {
+                    "KRITERIA KEJAYAAN": criterion,
+                    "OBJEKTIF PEMBELAJARAN": (
+                        "Pada akhir PdP, murid dapat " + target +
+                        " dengan tepat berdasarkan aktiviti dan bukti yang diberikan."
+                    ),
+                    "AKTIVITI UTAMA": "Aktiviti 1 – Siasatan\nGuru membimbing.",
+                    "REFLEKSI": original,
+                }
+                state = {"task": "rph", "subject": "Sains"}
+                result = objective_linked_reflection(state, rows)
+                self.assertIsNot(result, rows)
+                self.assertEqual(
+                    result["REFLEKSI"],
+                    "____ / ____ murid " + target + " (4/5 item). Baki dibimbing."
+                )
+                self.assertLessEqual(len(result["REFLEKSI"]), len(original))
+                self.assertNotIn("Auto", result["REFLEKSI"])
+                self.assertNotIn("Manual", result["REFLEKSI"])
+                for key in rows.keys() - {"REFLEKSI"}:
+                    self.assertEqual(result[key], rows[key])
+                meaningful = dict(rows)
+        meaningful["KRITERIA KEJAYAAN"] = (
+            "Murid dapat menyatakan cara haiwan membiak dengan betul pada "
+            "sekurang-kurangnya 4 daripada 5 item atau situasi yang diberi."
+        )
+        self.assertIs(objective_linked_reflection(
+            {**state, "rph_reflection_mode": "manual"}, meaningful), meaningful)
+        self.assertIs(objective_linked_reflection(
+            {**state, "rph_teacher_reflection": "Saya pilih catatan sendiri."},
+            meaningful), meaningful)
+        short = dict(meaningful)
+        short["REFLEKSI"] = "Murid mencapai objektif."
+        self.assertIs(objective_linked_reflection(state, short), short)
+
     def test_other_subjects_cannot_add_page_pressure_from_short_reflection(self):
         for subject in ("Sains", "Matematik", "English", "Sejarah",
                         "Pendidikan Moral", "Pendidikan Muzik"):
