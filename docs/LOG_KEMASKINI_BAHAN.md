@@ -115,3 +115,12 @@
 - Pautan muat turun: /api/rpt/2027/all/bahasa_melayu/{tahun}.docx (tahun 2–6). Backend mengesahkan akaun aktif Rakan Pembangun atau langganan, menolak percuma/tamat tempoh 403, mengesahkan checksum HTML, PDF dan DOCX. Word satu klik dan nama fail panjang CikguLaju; PDF mengikut hak akses lama.
 - Inventori premium kini **26 fail Word** (21 sedia ada + 5 BM SK), baki 51 sumber KSSR PDF-only memerlukan sumber Word yang disahkan. Ujian: tests/test_rpt_kssr_bm_word_paid_20261123.py dan workflow kssr-bm-word-paid-20261123.yml.
 - Tiada perubahan Supabase, pembayaran, kuota, Telegram, bahan RPH atau bahan berstatus QA_HOLD.
+
+## 23 November 2026 — RPT English KSSR Year 2–6 Word QA tersimpan secara berasingan
+
+- Semua 800 Lesson Word sumber Year 2–6: julat tarikh A/B (40 minggu × 5) diselaraskan terhadap PDF produksi tanpa mengubah kandungan Lesson asal. Sepuluh tajuk pilihan guru Year 4–6 diselaraskan kepada label PDF, bukan standard rekaan.
+- Year 3: versi **Word QA 40 halaman** kini memuatkan deskripsi Main dan Complementary CS/LS untuk 160 Lesson, semuanya daripada PDF English Year 3 produksi. Tema, fokus, halaman SB/TB/WB dan turutan Lesson mengikut sumber Word asal. Tiada kelulusan akademik automatik.
+- Semakan visual render 40 halaman landscape, jadual mempunyai garis dan tidak melimpah. Fail Word QA dan laporan disimpan dalam Google Drive CikguLaju/RPT, **tidak** di GitHub awam dan **tidak** boleh dimuat turun di Web lagi.
+- Bucket Supabase `cikgulaju-materials` disahkan PRIVATE; belum ada objek RPT Word English, jadi jangan buka butang Word English atau dakwa sudah tersedia untuk pengguna berbayar.
+- Amaran: repositori `CikguLaju-AI` diketahui PUBLIC. Sekatan endpoint Word berbayar bukan perlindungan jika fail Word masih boleh diakses secara langsung daripada GitHub. Lima Word BM KSSR terdahulu berada dalam repositori awam dan memerlukan penghijrahan storan PRIVATE serta remedi sejarah Git.
+- Fail Word English tidak diterbitkan sehingga sumber, kawalan akses private, dan ujian muat turun berbayar disahkan. Perlindungan regression dalam tests/test_rpt_english_private_word_qa_20261123.py.
