@@ -48,6 +48,28 @@ def _db(conf,method,params=None,body=None):
     if not isinstance(result,list):raise ValueError("Unexpected records")
     return result
 
+def _rpc(conf,name,payload):
+    """Service-only RPC: browser never supplies an account ID or an API key."""
+    if name not in ("web_chat_unread_status", "web_chat_mark_read"):
+        raise ValueError("Unsupported chat RPC")
+    base=conf["supabase_url"].rstrip("/")
+    key=conf["supabase_key"]
+    if not base.startswith("https://") or len(key)<20:
+        raise ValueError("Backend not configured")
+    headers={"apikey":key,"Content-Type":"application/json","Accept":"application/json"}
+    if not key.startswith("sb_secret_"):
+        headers["Authorization"]="Bearer "+key
+    req=Request(base+"/rest/v1/rpc/"+name,method="POST",
+                data=json.dumps(payload).encode("utf-8"),headers=headers)
+    with build_opener(HTTPSHandler(),NoRedirect()).open(req,timeout=7) as resp:
+        if resp.status != 200:
+            raise ValueError("Chat status request failed")
+        raw=resp.read(4096)
+    result=json.loads(raw)
+    if not isinstance(result,dict):
+        raise ValueError("Chat status response invalid")
+    return result
+
 def _storage(conf,method,path,raw=None,mime=None):
     """Never use public URLs or accept browser-chosen storage paths."""
     base=conf["supabase_url"].rstrip("/")
@@ -159,6 +181,42 @@ def own_chat():
         return jsonify({"items":_public_rows(list(reversed(rows)))})
     except (ValueError,KeyError,TypeError,OSError,HTTPError,URLError):
         return jsonify({"error":"Chat belum dapat dimuatkan"}),503
+
+@bp.get("/api/web/chat/unread")
+def own_unread():
+    conf,uid,err=_auth()
+    if err is not None:return err
+    try:
+        data=_rpc(conf,"web_chat_unread_status",{"p_user_id":uid})
+        count=data.get("unread_count")
+        if type(count) is not int or not 0<=count<=99:
+            raise ValueError("Invalid unread count")
+        return jsonify({"unread_count":count,"has_unread":count>0})
+    except (ValueError,KeyError,TypeError,OSError,HTTPError,URLError):
+        return jsonify({"error":"Notifikasi chat belum tersedia"}),503
+
+
+@bp.post("/api/web/chat/read")
+def own_mark_read():
+    conf,uid,err=_auth()
+    if err is not None:return err
+    data=request.get_json(silent=True) if request.is_json else None
+    if (not _origin_ok() or not request.content_length
+            or request.content_length>200 or not isinstance(data,dict)
+            or set(data)!={"last_seen_admin_id"}
+            or not _valid_id(data["last_seen_admin_id"])):
+        return jsonify({"error":"Penanda mesej tidak sah"}),400
+    try:
+        outcome=_rpc(conf,"web_chat_mark_read",{
+            "p_user_id":uid,
+            "p_last_seen_admin_id":int(data["last_seen_admin_id"])
+        })
+        if outcome.get("read") is not True:
+            raise ValueError("Read marker not confirmed")
+        return jsonify({"read":True})
+    except (ValueError,KeyError,TypeError,OSError,HTTPError,URLError):
+        return jsonify({"error":"Status mesej dibaca belum dapat disimpan"}),503
+
 
 @bp.post("/api/web/chat")
 def own_send():
