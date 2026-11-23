@@ -50,7 +50,8 @@ def _db(conf,method,params=None,body=None):
 
 def _rpc(conf,name,payload):
     """Service-only RPC: browser never supplies an account ID or an API key."""
-    if name not in ("web_chat_unread_status", "web_chat_mark_read"):
+    if name not in ("web_chat_unread_status", "web_chat_mark_read",
+                    "web_admin_notification_feed", "web_admin_mark_chat_read"):
         raise ValueError("Unsupported chat RPC")
     base=conf["supabase_url"].rstrip("/")
     key=conf["supabase_key"]
@@ -230,6 +231,55 @@ def own_send():
         return jsonify({"sent":True}),201
     except (ValueError,KeyError,TypeError,OSError,HTTPError,URLError):
         return jsonify({"error":"Mesej belum dapat dihantar"}),503
+
+@bp.get("/api/web/admin/notifications")
+def admin_notifications():
+    """Single private feed with server-derived admin identity and bounded pagination."""
+    conf,uid,err=_auth()
+    if err is not None:return err
+    if uid not in allowed_admin_ids():return jsonify({"error":"Admin sahaja"}),403
+    if set(request.args)-{"offset"} or len(request.args.getlist("offset"))>1:
+        return jsonify({"error":"Parameter notifikasi tidak sah"}),400
+    raw=request.args.get("offset","0")
+    if not re.fullmatch(r"(0|[1-9][0-9]{0,5})",raw) or int(raw)>100000:
+        return jsonify({"error":"Penanda notifikasi tidak sah"}),400
+    try:
+        data=_rpc(conf,"web_admin_notification_feed",{
+            "p_admin_id":uid,"p_offset":int(raw),"p_limit":40
+        })
+        if (not isinstance(data.get("items"),list)
+                or not isinstance(data.get("counts"),dict)
+                or type(data.get("total")) is not int
+                or type(data.get("more")) is not bool
+                or len(data["items"])>40):
+            raise ValueError("Invalid notification feed")
+        return jsonify(data)
+    except (ValueError,KeyError,TypeError,OSError,HTTPError,URLError):
+        return jsonify({"error":"Notifikasi admin belum dapat dimuatkan"}),503
+
+
+@bp.post("/api/web/admin/chats/<user_id>/read")
+def admin_chat_read(user_id):
+    """Mark only messages that were actually displayed in the admin thread."""
+    conf,uid,err=_auth()
+    if err is not None:return err
+    if uid not in allowed_admin_ids():return jsonify({"error":"Admin sahaja"}),403
+    data=request.get_json(silent=True) if request.is_json else None
+    if (not _valid_id(user_id) or not _origin_ok()
+            or not request.content_length or request.content_length>256
+            or not isinstance(data,dict) or set(data)!={"last_seen_user_id"}
+            or not _valid_id(data["last_seen_user_id"])):
+        return jsonify({"error":"Penanda chat tidak sah"}),400
+    try:
+        done=_rpc(conf,"web_admin_mark_chat_read",{
+            "p_admin_id":uid,"p_user_id":int(user_id),
+            "p_last_seen_user_id":int(data["last_seen_user_id"])
+        })
+        if done.get("read") is not True:raise ValueError("Unconfirmed read state")
+        return jsonify({"read":True})
+    except (ValueError,KeyError,TypeError,OSError,HTTPError,URLError):
+        return jsonify({"error":"Status chat admin belum dapat disimpan"}),503
+
 
 @bp.get("/api/web/admin/chats")
 def admin_inbox():
