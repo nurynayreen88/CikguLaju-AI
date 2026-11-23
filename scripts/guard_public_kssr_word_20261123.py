@@ -36,7 +36,7 @@ def main() -> int:
     except (OSError, subprocess.CalledProcessError) as exc:
         print(f"ERROR: unable to list tracked files: {exc}", file=sys.stderr)
         return 2
-    tracked = {s.decode("utf-8") for s in raw.split(b"\\0") if s}
+    tracked = {s.decode("utf-8") for s in raw.split(bytes([0])) if s}
     hashes = {}
     for path in tracked & set(KNOWN_PUBLIC):
         source = ROOT / path
@@ -44,7 +44,7 @@ def main() -> int:
             hashes[path] = hashlib.sha256(source.read_bytes()).hexdigest()
     problems = evaluate(tracked, hashes)
     if problems:
-        print("\\n".join("BLOCK: " + line for line in problems), file=sys.stderr)
+        print(chr(10).join("BLOCK: " + line for line in problems), file=sys.stderr)
         return 1
     print("FREEZE PASS: no additional or modified paid KSSR BM Word files.")
     print("SECURITY DEBT: five public files remain; see GitHub issue #1306.")
