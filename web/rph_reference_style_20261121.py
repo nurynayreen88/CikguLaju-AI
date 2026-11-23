@@ -12,7 +12,7 @@ from copy import deepcopy
 import re
 import os
 from pathlib import Path
-from zipfile import ZipFile
+from zipfile import BadZipFile, ZipFile
 
 from lxml import etree
 
@@ -258,7 +258,7 @@ def _preserves_source_content(original, styled):
     """
     if not (isinstance(original, bytes) and isinstance(styled, bytes)):
         return False
-    if not (original.startswith(b"PK\\x03\\x04") and styled.startswith(b"PK\\x03\\x04")):
+    if not (original.startswith(b"PK\x03\x04") and styled.startswith(b"PK\x03\x04")):
         return False
     try:
         with ZipFile(BytesIO(original)) as before, ZipFile(BytesIO(styled)) as after:
@@ -271,7 +271,7 @@ def _preserves_source_content(original, styled):
                 return False
             a = etree.fromstring(before.read(DOC))
             b = etree.fromstring(after.read(DOC))
-    except (OSError, ValueError, etree.XMLSyntaxError):
+    except (OSError, ValueError, BadZipFile, etree.XMLSyntaxError):
         return False
     protected = {
         W + "t", W + "instrText", W + "delText", W + "delInstrText",
