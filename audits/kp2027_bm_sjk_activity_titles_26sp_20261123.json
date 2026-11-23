@@ -1,0 +1,329 @@
+{
+  "id": "kp2027_bmsjk_t1_activity_titles_by_sp_phase_20261123",
+  "status": "QA_EDITORIAL_UNAPPROVED",
+  "note": "Tajuk aktiviti yang dipaparkan sahaja. Kandungan asal setiap aktiviti dan teks rasmi DK tidak diubah. Urutan PdP 52 masih cadangan dan 0 READY.",
+  "counts": {
+    "sp": 26,
+    "phases": 2,
+    "pdp": 52,
+    "ready": 0
+  },
+  "phases": [
+    "penerokaan",
+    "aplikasi"
+  ],
+  "by_sp": {
+    "1.1.1": {
+      "penerokaan": [
+        "Dengar bunyi",
+        "Padankan sumber",
+        "Cam bunyi sendiri"
+      ],
+      "aplikasi": [
+        "Imbas bunyi",
+        "Pilih gambar bunyi",
+        "Semak petunjuk bunyi"
+      ]
+    },
+    "1.1.2": {
+      "penerokaan": [
+        "Dengar bunyi huruf",
+        "Padan kad abjad",
+        "Sebut suku kata"
+      ],
+      "aplikasi": [
+        "Cam bunyi rawak",
+        "Susun kad suku kata",
+        "Semak urutan bunyi"
+      ]
+    },
+    "1.1.3": {
+      "penerokaan": [
+        "Dengar dua intonasi",
+        "Kenal nada ujaran",
+        "Pilih jenis ayat"
+      ],
+      "aplikasi": [
+        "Imbas intonasi",
+        "Padan ayat dan nada",
+        "Jelaskan nada pilihan"
+      ]
+    },
+    "1.2.1": {
+      "penerokaan": [
+        "Dengar ujaran sopan",
+        "Pilih respons sopan",
+        "Balas ujaran guru"
+      ],
+      "aplikasi": [
+        "Cam ujaran baharu",
+        "Berbalas ujaran",
+        "Nilai kesopanan respons"
+      ]
+    },
+    "1.2.2": {
+      "penerokaan": [
+        "Kenal jenis ucapan",
+        "Padan kad situasi",
+        "Lengkapkan ucapan"
+      ],
+      "aplikasi": [
+        "Dengar dialog baharu",
+        "Balas mengikut situasi",
+        "Semak ungkapan sopan"
+      ]
+    },
+    "1.2.3": {
+      "penerokaan": [
+        "Dengar arahan sekolah",
+        "Tunjuk tindakan",
+        "Jawab pertanyaan"
+      ],
+      "aplikasi": [
+        "Cam arahan baharu",
+        "Laksana arahan",
+        "Terangkan respons"
+      ]
+    },
+    "1.2.4": {
+      "penerokaan": [
+        "Dengar rutin keluarga",
+        "Padan arahan rumah",
+        "Jawab soalan rumah"
+      ],
+      "aplikasi": [
+        "Kenal situasi rumah",
+        "Lakon respons keluarga",
+        "Semak tindakan tepat"
+      ]
+    },
+    "2.1.1": {
+      "penerokaan": [
+        "Kenal sumber bunyi",
+        "Ajuk bunyi alam",
+        "Teka bunyi rakan"
+      ],
+      "aplikasi": [
+        "Dengar bunyi baharu",
+        "Ajuk dan teka",
+        "Jelaskan sumber bunyi"
+      ]
+    },
+    "2.1.2": {
+      "penerokaan": [
+        "Kenal kad abjad",
+        "Sebut bunyi huruf",
+        "Baca suku kata"
+      ],
+      "aplikasi": [
+        "Imbas sebutan",
+        "Sebut kad rawak",
+        "Semak gabungan suku"
+      ]
+    },
+    "2.1.3": {
+      "penerokaan": [
+        "Kenal jenis ayat",
+        "Tutur ayat penyata",
+        "Tutur ayat tanya"
+      ],
+      "aplikasi": [
+        "Baca dialog baharu",
+        "Tukar peranan tutur",
+        "Semak nada pertanyaan"
+      ]
+    },
+    "2.2.1": {
+      "penerokaan": [
+        "Kenal ujaran sekolah",
+        "Tutur permintaan",
+        "Amal penghargaan"
+      ],
+      "aplikasi": [
+        "Pilih peranan sekolah",
+        "Lakon dialog kantin",
+        "Nilai bahasa sopan"
+      ]
+    },
+    "2.2.2": {
+      "penerokaan": [
+        "Kenal dialog keluarga",
+        "Tutur meminta izin",
+        "Ucap terima kasih"
+      ],
+      "aplikasi": [
+        "Pilih watak keluarga",
+        "Lakon dialog rumah",
+        "Semak nada sopan"
+      ]
+    },
+    "2.3.1": {
+      "penerokaan": [
+        "Kenal maklumat diri",
+        "Susun kad perihal",
+        "Perkenalkan diri"
+      ],
+      "aplikasi": [
+        "Temu bual pasangan",
+        "Ceritakan minat diri",
+        "Semak urutan cerita"
+      ]
+    },
+    "2.3.2": {
+      "penerokaan": [
+        "Dengar cerita nilai",
+        "Susun gambar cerita",
+        "Sebut nilai murni"
+      ],
+      "aplikasi": [
+        "Susun peristiwa",
+        "Cerita semula",
+        "Jelaskan teladan watak"
+      ]
+    },
+    "2.3.3": {
+      "penerokaan": [
+        "Baca dialog watak",
+        "Latih sebutan watak",
+        "Lakon babak ringkas"
+      ],
+      "aplikasi": [
+        "Rancang watak cerita",
+        "Lakon dialog baharu",
+        "Ulas lakonan rakan"
+      ]
+    },
+    "3.1.1": {
+      "penerokaan": [
+        "Kenal kad simbol",
+        "Cam huruf sasaran",
+        "Asing simbol dan huruf"
+      ],
+      "aplikasi": [
+        "Cari huruf pada label",
+        "Pilih abjad tepat",
+        "Jelaskan beza simbol"
+      ]
+    },
+    "3.1.2": {
+      "penerokaan": [
+        "Kenal suku kata",
+        "Gabung suku kata",
+        "Baca perkataan"
+      ],
+      "aplikasi": [
+        "Susun kad baharu",
+        "Baca hasil gabungan",
+        "Padan gambar perkataan"
+      ]
+    },
+    "3.1.3": {
+      "penerokaan": [
+        "Baca kad perkataan",
+        "Gabung menjadi frasa",
+        "Baca ayat mudah"
+      ],
+      "aplikasi": [
+        "Imbas bacaan frasa",
+        "Pilih frasa bergambar",
+        "Baca ayat baharu"
+      ]
+    },
+    "3.2.1": {
+      "penerokaan": [
+        "Kenal tanda baca",
+        "Baca ayat penyata",
+        "Baca ayat tanya"
+      ],
+      "aplikasi": [
+        "Baca dialog pendek",
+        "Ubah nada bacaan",
+        "Semak intonasi"
+      ]
+    },
+    "3.2.2": {
+      "penerokaan": [
+        "Teliti poster",
+        "Cari fakta tersurat",
+        "Jawab soalan fakta"
+      ],
+      "aplikasi": [
+        "Baca jadual baharu",
+        "Tanda maklumat penting",
+        "Sokong jawapan fakta"
+      ]
+    },
+    "3.2.3": {
+      "penerokaan": [
+        "Baca petikan pendek",
+        "Cari bukti teks",
+        "Jawab secara sopan"
+      ],
+      "aplikasi": [
+        "Baca petikan baharu",
+        "Pilih respons tepat",
+        "Jelaskan bukti bacaan"
+      ]
+    },
+    "4.1.1": {
+      "penerokaan": [
+        "Kenal jenis garisan",
+        "Lakar garis dan lengkung",
+        "Lengkapkan corak"
+      ],
+      "aplikasi": [
+        "Imbas pola garisan",
+        "Lakar corak baharu",
+        "Semak bentuk lakaran"
+      ]
+    },
+    "4.1.2": {
+      "penerokaan": [
+        "Lihat bentuk huruf",
+        "Tekap arah gurisan",
+        "Bentuk huruf sendiri"
+      ],
+      "aplikasi": [
+        "Kenal titik mula",
+        "Tekap huruf separa",
+        "Tulis tanpa surihan"
+      ]
+    },
+    "4.1.3": {
+      "penerokaan": [
+        "Perhati tulisan model",
+        "Salin perkataan",
+        "Semak jarak tulisan"
+      ],
+      "aplikasi": [
+        "Baca ayat contoh",
+        "Salin ayat pendek",
+        "Baiki kekemasan tulisan"
+      ]
+    },
+    "4.2.1": {
+      "penerokaan": [
+        "Kenal kad suku kata",
+        "Bina perkataan",
+        "Gabung frasa mudah"
+      ],
+      "aplikasi": [
+        "Susun kad campuran",
+        "Bina frasa baharu",
+        "Semak makna frasa"
+      ]
+    },
+    "4.2.2": {
+      "penerokaan": [
+        "Lihat gambar ayat",
+        "Bina ayat model",
+        "Tulis ayat mudah"
+      ],
+      "aplikasi": [
+        "Perhati gambar bersiri",
+        "Tulis ayat baharu",
+        "Sunting tanda baca"
+      ]
+    }
+  }
+}
