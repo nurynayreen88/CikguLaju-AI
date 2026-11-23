@@ -78,3 +78,13 @@
 - Bank baru `audits/kp2027_bm_sjk_activity_titles_26sp_20261123.json`: **26 SP × 2 fasa × 3 tajuk**; 52 triplet berlainan bagi penerokaan dan aplikasi; aktiviti kekal pada susunan asal, nama yang dicetak ringkas, jelas dan bold.
 - Penjana QA `tools/kp2027_bmsjk_qa_word_pdf.py` menggabungkan tajuk khusus pada Word/PDF sahaja daripada bank editorial; rekod sumber, arahan guru/murid, teks SK/SP rasmi, RPT A/B belum lengkap dan keputusan PBD tidak diubah.
 - Ujian regression memeriksa 156 tajuk, 52 PDF A4, Word A4 dengan empat jadual seragam, label Refleksi sahaja, sumber SP konsisten, dan 0 READY. Belum dibuka di Web/Telegram. Bahan lama tidak disentuh.
+
+## 23 November 2026 — KP2027 Alam dan Manusia T1: 29 RPH QA — label RPT/refleksi dibersihkan secara native
+
+- Sumber Google Drive asal 29 Word + 29 PDF (ID `1kb7yxyPdakqB-zGjGpm3OEtMIjtt1lfE`) mempunyai `(RPT A/B)` pada judul dan `Refleksi (Auto / Manual)` pada semua 29 RPH. Sumber lama **tidak disentuh**.
+- 29 Word dibaiki secara native: buang `(RPT A/B)`, nota rujukan RPT minggu pada cetakan, dan label `Auto / Manual`; cetak **Refleksi** sahaja dengan ruang kosong; ringkaskan footer dalaman. Kandungan SK, SP, objektif, arahan Aktiviti 1–3, bahan, PBD, pemulihan dan pengayaan asal kekal tepat.
+- 29 PDF baharu dijana **daripada Word yang dibaiki, bukan overlay**. Semakan: **29/29 PDF satu muka A4**, 29 Word, 61 entri ZIP (termasuk manifest/rujukan). Contoh PDF/Word PdP 002 dan PdP 092 dirender dan disemak secara visual; warna ringan dan kotak selari dikekalkan.
+- Salinan QA bersih disimpan dalam Drive `CikguLaju/RPH/CIKGULAJU_ALAM_KP2027_T1_29_RPH_QA_FORMAT_BERSIH_20261123.zip`, ID `1rWOd6Mr6OMm0A5UDNT5cnGQQ6bg4sorf`; SHA-256 `0ad740db64c4f2acca4e1e0222f749ff9a7cf1fd1936f65b2b9802a49ff6d073`; saiz 1,988,026 bait. Metadata Drive telah disahkan.
+- Audit RPT 93 PdP: 64 sumber + 29 calon QA = 93, merangkumi 83 SP unik. Semua julat tarikh Kumpulan A/B berada dalam segmen sekolah 2027, hari minggu kumpulan betul, dan sebelum sasaran pemilik 5 Nov; **0 padanan bermasalah** pada semakan pemetaan. Tarikh cuti khusus negeri/perayaan dan pengesahan sekolah tetap menjadi syarat akhir.
+- Semua 29 kekal `QA_ONLY_NOT_PUBLISHED`, **0 READY**; tiada perubahan Supabase/Web/kuota/Telegram. Ujian regresi ialah `tests/test_kp2027_alam29_qa_format_20261123.py`, bukti JSON `audits/kp2027_alam_t1_29_rph_native_qa_format_20261123.json`.
+
