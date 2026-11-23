@@ -1,0 +1,25 @@
+name: KSSR unified SK SJKC SJKT selector QA
+
+on:
+  pull_request:
+    paths:
+      - "web_v1_static_preview/index.html"
+      - "tests/test_web_upcoming_materials_menu_20261112.cjs"
+      - ".github/workflows/kssr-unified-menu-20261123.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify-kssr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check unified KSSR menu, separate school catalog codes and KP2027 isolation
+        run: node tests/test_web_upcoming_materials_menu_20261112.cjs
+      - name: Check menu syntax
+        run: node --check tests/test_web_upcoming_materials_menu_20261112.cjs
