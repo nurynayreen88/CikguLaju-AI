@@ -111,11 +111,13 @@ class RPTWordPaidOnlyGate(unittest.TestCase):
         from pathlib import Path
         root=Path(__file__).resolve().parents[1]
         data=json.loads((root/"audits/rpt_2027_word_premium_inventory_20261123.json").read_text("utf-8"))
-        self.assertEqual(data["ready_source_word_count"],21)
+        self.assertEqual(data["ready_source_word_count"],26)
+        self.assertEqual(data["kssr_bm_word"]["count"],5)
+        self.assertEqual(data["kssr_bm_word"]["total_pdp"],825)
         self.assertEqual(data["kp2027_year1"]["count"],3)
         self.assertEqual(data["existing_sjk_word"]["count"],18)
         self.assertEqual(sum(item["count"] for item in data["existing_sjk_word"]["categories"]),18)
-        self.assertEqual(data["pending_native_word_sources"][0]["scope_count"],56)
+        self.assertEqual(data["pending_native_word_sources"][0]["scope_count"],51)
         self.assertEqual(data["status"],"SOURCE_INVENTORY_NOT_ACADEMIC_APPROVAL")
         self.assertTrue(data["entitlement"]["no_generation_credit_charge"])
 
