@@ -51,6 +51,14 @@ def main():
                         source = _source_text(runtime, state)
                         rows = runtime._rph_rows(state, source)
                         reflection = rows.get("REFLEKSI", "")
+                        if code == "SCIENCE" and year == 3 and "4/5 item" not in str(reflection):
+                            print("SCIENCE_Y3_REVIEW", json.dumps({
+                                "year": state.get("year"),
+                                "topic": rows.get("TAJUK"),
+                                "sp": rows.get("STANDARD PEMBELAJARAN"),
+                                "criterion": rows.get("KRITERIA KEJAYAAN"),
+                                "reflection": reflection,
+                            }, ensure_ascii=False), flush=True)
                         assert isinstance(reflection, str) and reflection.strip()
                         if code == "SCIENCE":
                             # Year2/4/5/6 use exact specific criteria;
