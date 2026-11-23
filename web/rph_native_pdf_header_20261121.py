@@ -113,9 +113,9 @@ def _bold_pdf_separate_activity_titles(table):
             # Restore only an unmistakable 1->2 or 2->3 heading boundary.
             # Preserve the original whitespace, words and numbered steps.
             inline = re.fullmatch(
-                r"(?P<instruction>.+[.!?])(?P<gap>[ \\t]+)"
-                r"(?P<title>(?:Aktiviti|Activity)\\s+"
-                r"(?P<number>[2-9]\\d?)\\s*[.:)–—-]\\s*\\S.{0,109})",
+                r"(?P<instruction>.+[.!?])(?P<gap>[ \t]+)"
+                r"(?P<title>(?:Aktiviti|Activity)\s+"
+                r"(?P<number>[2-9]\d?)\s*[.:)–—-]\s*\S.{0,109})",
                 line, flags=re.IGNORECASE | re.DOTALL,
             )
             if inline is None:
@@ -123,9 +123,9 @@ def _bold_pdf_separate_activity_titles(table):
             number = int(inline.group("number"))
             title = html.unescape(inline.group("title"))
             next_line = (pieces[i + 2] if i + 2 < len(pieces) else "")
-            if (not re.match(rf"^\\s*{number - 1}[.)]\\s+",
+            if (not re.match(rf"^\s*{number - 1}[.)]\s+",
                              inline.group("instruction"))
-                    or not re.match(rf"^\\s*{number}[.)]\\s+",
+                    or not re.match(rf"^\s*{number}[.)]\s+",
                                     html.unescape(next_line))
                     or not _is_standalone_activity_title(title.strip())):
                 continue
