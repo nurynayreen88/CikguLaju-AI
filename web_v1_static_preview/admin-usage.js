@@ -374,10 +374,26 @@
       name.textContent = item.display_name;
       li.append(name);
     }
+    // Keep the directory compact: open a user's profile for detailed actions.
+    // Nothing in the list itself can activate or change an entitlement.
+    const profile = document.createElement("details");
+    profile.className = "admin-user-profile";
+    const profileToggle = document.createElement("summary");
+    profileToggle.textContent = "👤 Buka Profil";
+    profileToggle.setAttribute("aria-label", "Buka profil " +
+      (item.display_name || item.email || item.telegram_id || "pengguna"));
+    profile.addEventListener("toggle", () => {
+      profileToggle.textContent = profile.open ? "👤 Tutup Profil" : "👤 Buka Profil";
+    });
+    const profileBody = document.createElement("div");
+    profileBody.className = "admin-user-profile-body";
     const details = document.createElement("dl");
-    if (item.account_type === "telegram" && item.email) {
-      itemValue("E-mel pautan", item.email, details);
-    }
+    itemValue("Jenis akaun", item.account_type === "email"
+      ? "E-mel" : "Telegram", details);
+    if (item.display_name) itemValue("Nama", item.display_name, details);
+    if (item.email) itemValue("E-mel", item.email, details);
+    if (item.chat_user_id) itemValue("ID akaun", item.chat_user_id, details);
+    itemValue("Status akses", accessLabels[item.access_status] || "Tidak tersedia", details);
     itemValue("Daftar", formatDate(item.registered_at), details);
     itemValue("Login terakhir", formatDate(item.last_login_at), details);
     if (item.access_status === "langganan" && item.subscription_expires_at) {
@@ -386,7 +402,7 @@
     if (item.access_status === "free" && Number.isInteger(item.trial_remaining)) {
       itemValue("RPH percuma", item.trial_remaining + " baki", details);
     }
-    li.append(details);
+    profileBody.append(details);
     if (typeof item.chat_user_id === "string"
         && /^[1-9][0-9]{0,18}$/.test(item.chat_user_id)) {
       const chat = document.createElement("button");
@@ -404,7 +420,7 @@
           status.textContent = error.message || "Perbualan belum dapat dibuka.";
         });
       });
-      li.append(chat);
+      profileBody.append(chat);
     }
     // Admin-only manual Rakan grant. No payment or referral is recorded.
     if (item.access_status !== "rakan"
@@ -457,10 +473,17 @@
           status.textContent = "Pengaktifan manual berjaya. Rekod disimpan dalam audit admin.";
           badge.textContent = "Rakan Pembangun";
           controls.remove();
+          const confirmation = document.createElement("p");
+          confirmation.className = "admin-user-grant-success";
+          confirmation.setAttribute("role", "status");
+          confirmation.textContent = "✅ Rakan Pembangun telah diaktifkan secara manual. Baki slot: " +
+            result.remaining + ".";
+          profileBody.append(confirmation);
           window.cikgulajuAdminInit?.();
           window.cikgulajuAdminNotificationsRefresh?.();
-          // Refresh only after successful authoritative confirmation.
-          void load();
+          // Preserve the visible success inside the opened profile.
+          // Filtered Free lists must refresh because this user is no longer Free.
+          if (appliedFilter !== "all") void load();
         } catch (error) {
           outcome.textContent = error.message ||
             "Status belum disahkan. Muat semula senarai sebelum mencuba lagi.";
@@ -468,8 +491,16 @@
         }
       });
       controls.append(note,label,grant,outcome);
-      li.append(controls);
+      profileBody.append(controls);
     }
+    if (item.access_status === "rakan") {
+      const active = document.createElement("p");
+      active.className = "admin-user-grant-success";
+      active.textContent = "✅ Akses Rakan Pembangun sudah aktif.";
+      profileBody.append(active);
+    }
+    profile.append(profileToggle, profileBody);
+    li.append(profile);
     return li;
   }
 
