@@ -169,9 +169,11 @@ def _science_compact_reflection(rows, current):
 # Explicitly verified native KSSR Sains Year 3 lesson (Asid dan Alkali,
 # SP 8.1.1). The source objective/criterion use the placeholder
 # "kPS/konsep mengikut SP"; do not generalize to other Year 3 lessons.
-_SCIENCE_Y3_SP_811 = (
-    "8.1.1 Menguji bahan yang berasid, beralkali dan neutral dari segi "
-    "perubahan warna kertas litmus dengan menjalankan penyiasatan"
+_SCIENCE_Y3_SP_811 = "8.1.1"
+_SCIENCE_Y3_TOPIC_811 = (
+    "Asid dan Alkali / 8.1 — Menguji bahan yang berasid, beralkali "
+    "dan neutral dari segi perubahan warna kertas litmus dengan "
+    "menjalankan penyiasatan."
 )
 _SCIENCE_Y3_GENERIC_CRITERION = (
     "Murid dapat kPS/konsep mengikut SP dengan betul pada sekurang-kurangnya "
@@ -182,7 +184,7 @@ _SCIENCE_Y3_GENERIC_CRITERION = (
 def _science_y3_verified_sp_reflection(state, rows, current):
     """Short, SP-evidenced output without altering the generic source rows.
 
-    Only the exact checked Year 3 SP 8.1.1 and original generic criterion
+    Only exact Year 3 SP code plus its verified full topic and original criterion
     are allowed. No inferred student result, no guessed learning target.
     """
     if (str(state.get("year") or "").strip() != "Tahun 3"
@@ -190,10 +192,10 @@ def _science_y3_verified_sp_reflection(state, rows, current):
         return None
     sp = " ".join(str(rows.get("STANDARD PEMBELAJARAN") or "").split())
     criterion = " ".join(str(rows.get("KRITERIA KEJAYAAN") or "").split())
-    topic = str(rows.get("TAJUK") or "").casefold()
+    topic = " ".join(str(rows.get("TAJUK") or "").split())
     if (sp != _SCIENCE_Y3_SP_811
             or criterion.casefold() != _SCIENCE_Y3_GENERIC_CRITERION.casefold()
-            or "asid dan alkali" not in topic):
+            or topic != _SCIENCE_Y3_TOPIC_811):
         return None
     candidate = (
         "____ / ____ murid menguji bahan berasid, beralkali dan neutral "
