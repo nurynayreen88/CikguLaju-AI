@@ -249,3 +249,30 @@ def test_real_native_word_main_activity_titles_are_bold_on_separate_lines():
         ):
             assert any(sentence in r.text and not r.bold for r in runs), (subject, sentence)
         assert not any("____" in r.text for r in runs)
+
+
+def test_bm_kp2027_teacher_panel_neutral_and_no_optional_rows_created():
+    """The right teacher panel is neutral; missing source fields stay missing."""
+    from docx.oxml.ns import qn
+    for subject in ("Bahasa Melayu", "English", "Pendidikan Moral"):
+        source = Document(BytesIO(fixture(subject)))
+        table = source.tables[0]
+        # Deliberately absent optional teaching rows: do not invent them.
+        for i in reversed(range(len(table.rows))):
+            if table.cell(i, 0).text in ("EMK / Nilai", "KBAT / PAK21"):
+                table._tbl.remove(table.rows[i]._tr)
+        stream = BytesIO()
+        source.save(stream)
+        raw = stream.getvalue()
+        fill = color_for_state({"task": "rph", "subject": subject})
+        updated = premium_header_bytes(style_three_table_word_bytes(raw, fill), fill)
+        doc = Document(BytesIO(updated))
+        assert len(doc.tables) == 4
+        header = doc.tables[0]
+        assert header.cell(0, 0)._tc.get_or_add_tcPr().find(W + "shd").get(W + "fill") == fill.upper()
+        assert header.cell(0, 1)._tc.get_or_add_tcPr().find(W + "shd").get(W + "fill") == "F5F7FA"
+        body = "\n".join(cell.text for table in doc.tables
+                         for row in table.rows for cell in row.cells)
+        assert "EMK / Nilai" not in body
+        assert "KBAT / PAK21" not in body
+        assert xml_tokens(updated) == xml_tokens(raw)
