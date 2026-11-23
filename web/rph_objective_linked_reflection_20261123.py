@@ -181,6 +181,13 @@ def objective_linked_reflection(state, rows):
     current = rows.get("REFLEKSI")
     if current is not None and not _generic_reflection(current):
         return rows
+    subject = " ".join(str(state.get("subject") or "").strip().casefold().split())
+    if subject == "sains":
+        compact = _science_compact_reflection(rows, current)
+        if compact is not None:
+            revised = dict(rows)
+            revised["REFLEKSI"] = compact
+            return revised
     evidence = _focus(rows, language)
     if not evidence:
         return rows
@@ -204,13 +211,6 @@ def objective_linked_reflection(state, rows):
     # source-specific reflection ONLY when it is NO LONGER than the existing
     # generic footer. This prevents untested page-height increases; DLP,
     # PPKI, Arabic and KP2027 are still fully out of scope.
-    subject = " ".join(str(state.get("subject") or "").strip().casefold().split())
-    if subject == "sains":
-        compact = _science_compact_reflection(rows, current)
-        if compact is not None:
-            revised = dict(rows)
-            revised["REFLEKSI"] = compact
-            return revised
     if len(generated) > 215:
         return rows
     if subject in ("pendidikan islam", "bahasa melayu"):
