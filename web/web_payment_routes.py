@@ -558,53 +558,51 @@ def payment_submit():
         # Even during a temporary outage, a saved Pending proof remains visible.
         if _status_rows(_existing(conf,uid))["pending"]:
             return jsonify({"error":"Resit telah diterima dan sedang disemak. Jangan bayar lagi."}),409
-        catalog=_source("/internal/payment/v1/catalog")
-        plans=validated_plans(catalog)
-        if code not in plans:
-            raise ValueError("Hanya pakej Rakan Pembangun ditawarkan")
-        _,rakan_open=validated_rakan_status(catalog)
+        if code != "rakan_pembangun":
+            raise ValueError("Hanya resit pakej Rakan Pembangun diterima")
         if _is_member(conf,uid):
             return jsonify({"error":"Rakan Pembangun sudah aktif. Jangan bayar sekali lagi."}),409
-        if not rakan_open:
-            return jsonify({"error":"Pendaftaran Rakan Pembangun telah penuh"}),409
-        proof=_telegram_document(conf,uid,raw,ext)
-        amount=plans[code]["amount"]
+        # A genuine receipt must reach Web even when Telegram's catalog or
+        # message delivery is temporarily unavailable. RM20 is the fixed
+        # server-verified offering; admin still checks the actual transaction.
+        try:
+            catalog=_source("/internal/payment/v1/catalog")
+            plans=validated_plans(catalog)
+            _,rakan_open=validated_rakan_status(catalog)
+            if code not in plans:
+                raise ProfileUnavailable("Pakej tidak sepadan")
+            if not rakan_open:
+                return jsonify({"error":"Pendaftaran Rakan Pembangun sudah ditutup. Hubungi admin jika telah membayar."}),409
+        except ProfileUnavailable:
+            print("WEB PAYMENT RECEIPT: catalog unavailable; recording private proof for manual review", flush=True)
+        actual_mime=next(k for k,v in CONTENT_TYPES.items() if v==ext)
+        path="receipts/"+str(uid)+"/"+uuid.uuid4().hex+ext
+        _private_receipt_storage(conf,"POST",path,data=raw,mime=actual_mime)
+        receipt_hash=hashlib.sha256(raw).hexdigest()
         data={
-            "chat_id":str(uid), "amount":amount,"status":"pending",
-            "telegram_message_id":proof["message_id"],
-            "proof_telegram_file_id":proof["file_id"],
-            "proof_file_unique_id":proof["unique_id"],
-            "proof_telegram_message_id":proof["message_id"],
-            "proof_mime_type":proof["mime"],
+            "chat_id":str(uid), "amount":"20.00", "status":"pending",
+            "proof_web_path":path,
+            "proof_web_sha256":receipt_hash,
+            "proof_mime_type":actual_mime,
             "proof_received_at":datetime.now(timezone.utc).isoformat(),
-            "notes":"proof_received_web",
+            "notes":"proof_received_web_private",
         }
         saved=_payment_rest(conf,"POST",body=data)
         if (len(saved)!=1 or saved[0].get("chat_id")!=str(uid)
                 or saved[0].get("status")!="pending"
-                or type(saved[0].get("id")) is not int or saved[0]["id"] <= 0):
-            raise ProfileUnavailable("Permohonan bayaran belum disahkan")
-        rid = saved[0]["id"]
+                or saved[0].get("proof_web_path")!=path
+                or saved[0].get("proof_web_sha256")!=receipt_hash
+                or type(saved[0].get("id")) is not int or saved[0]["id"]<=0):
+            raise ProfileUnavailable("Resit Web belum disahkan dalam rekod bayaran")
+        rid=saved[0]["id"]
         _audit_payment(conf,uid,"receipt_saved")
-        # NEVER change a successfully saved Pending receipt into HTTP 503
-        # just because the subsequent admin Telegram notification failed.
-        # Otherwise the user could assume the receipt was lost and pay again.
-        notified = False
-        try:
-            notified = (_notify_email_admin_review(uid, rid, proof)
-                        if uid >= 10**18 else
-                        _notify_telegram_admin_review(uid, rid))
-        except Exception as exc:
-            print("WEB PAYMENT ADMIN NOTIFICATION unavailable:",
-                  type(exc).__name__, flush=True)
-        message = ("Resit diterima, permohonan Pending dan menunggu pengesahan admin."
-                   if notified else
-                   "Resit diterima dan direkod sebagai Pending. Makluman admin belum "
-                   "dapat disahkan; admin boleh semak melalui Panel Admin → Pending Bayaran. "
-                   "Jangan bayar atau hantar resit sekali lagi.")
-        return jsonify({"submitted":True,"id":rid,"status":"pending",
-                        "admin_notification":"sent" if notified else "unconfirmed",
-                        "message":message}),201
+        # Optional side channel: Telegram failures can never turn 201 into 503.
+        notified=_optional_web_receipt_notice(uid,rid)
+        return jsonify({
+            "submitted":True,"id":rid,"status":"pending",
+            "source":"web","admin_notification":"sent" if notified else "web_only",
+            "message":"Resit berjaya disimpan di Web dan menunggu semakan admin. Jangan bayar sekali lagi."
+        }),201
     except PaymentConflict:
         _audit_payment(conf,uid,"receipt_failed")
         return jsonify({"error":"Permohonan Pending sudah wujud. Jangan bayar dua kali."}),409
