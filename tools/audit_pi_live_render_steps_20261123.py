@@ -1,6 +1,7 @@
 """Read-only diagnostic: compare full active PI source with native render stages."""
 import sqlite3
 from tools.bm_native_v26_navigation_audit import database
+from web.rph_pi_jawi_numerals_20261124 import jawi_display_digits
 
 def main():
     from tools import run_telegram_with_curriculum_api as live
@@ -41,11 +42,20 @@ def main():
             "3. ممبيمبيڠ راكن سباي",
             "4. ݢورو مريكوت ڤنچاڤاين موريد.",
         )
+        # Source stays in its native numbered form. Only the generated
+        # Jawi display converts 1-4 to ١-٤, so compare equivalent text
+        # without permitting a missing/duplicated original activity step.
+        for item in fragments:
+            assert item in source["activity_note"], ("SOURCE", "missing original source step", item)
         for field in ("ROWS_MAIN", "DOCUMENT_ROWS_MAIN"):
             value = rows["AKTIVITI UTAMA"] if field == "ROWS_MAIN" else final_rows["AKTIVITI UTAMA"]
             for item in fragments:
-                assert item in value, (field, "missing original source step", item)
-            assert "مشافهة 2." not in value, (field, "old truncated display survived")
+                printed = jawi_display_digits(item)
+                assert printed in value, (field, "missing original source step", printed)
+                assert item not in value, (field, "unconverted European numeral", item)
+            assert "مشافهة 2." not in value and "مشافهة ٢." not in value, (
+                field, "old truncated display survived"
+            )
         # Export through the SAME two Telegram functions Web invokes. Never
         # upload to materials, change credits or alter the verified DB.
         import uuid, shutil
@@ -69,8 +79,12 @@ def main():
         whole_word = "\\n".join(cell.text for table in word_doc.tables
                                for row in table.rows for cell in row.cells)
         for item in fragments:
-            assert item in whole_word, ("Word output lost source step", item)
-        assert "مشافهة 2." not in whole_word, "Word output retains source truncation"
+            printed = jawi_display_digits(item)
+            assert printed in whole_word, ("Word output lost source step", printed)
+            assert item not in whole_word, ("Word still uses European numerals", item)
+        assert "مشافهة 2." not in whole_word and "مشافهة ٢." not in whole_word, (
+            "Word output retains source truncation"
+        )
         with fitz.open(str(pdf_file)) as generated_pdf:
             assert len(generated_pdf) == 1, "Native PI PDF exceeded one A4 page"
             assert abs(generated_pdf[0].rect.width - 595.3) < 2
