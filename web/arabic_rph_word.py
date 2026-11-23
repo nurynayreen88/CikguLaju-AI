@@ -86,19 +86,9 @@ def render_arabic_word(plan, teacher_fields, reflection, dest):
 
     title = doc.add_paragraph()
     _paragraph(title, "خطة التدريس اليومية لمادة اللغة العربية", bold=True, size=17, centered=True)
-    title_props = title._p.get_or_add_pPr()
-    title_box = OxmlElement("w:pBdr")
-    for edge in ("top", "left", "bottom", "right"):
-        line = OxmlElement(f"w:{edge}")
-        line.set(qn("w:val"), "single")
-        line.set(qn("w:sz"), "6")
-        line.set(qn("w:color"), "000000")
-        title_box.append(line)
-    title_props.append(title_box)
-    title_shade = OxmlElement("w:shd")
-    title_shade.set(qn("w:val"), "clear")
-    title_shade.set(qn("w:fill"), _ARABIC_FILL)
-    title_props.append(title_shade)
+    # The Arabic title remains centred OUTSIDE the first RTL grid.
+    # Earlier shading/borders turned this separate title into a second
+    # floating box. Remove only that decoration; preserve the actual title.
     title.paragraph_format.space_after = Pt(4)
     numerals = str.maketrans("0123456789", "٠١٢٣٤٥٦٧٨٩")
     year = str(plan["year"]).translate(numerals)
@@ -133,7 +123,12 @@ def render_arabic_word(plan, teacher_fields, reflection, dest):
     for index, (label, value) in enumerate(identity_rows):
         paragraph = (identity_cell.paragraphs[0] if index == 0
                      else identity_cell.add_paragraph())
-        _paragraph(paragraph, f"{label}: {value}", bold=(index == 0), size=11)
+        # One RTL-aligned tab stop keeps both label and value starts
+        # vertically consistent for subject/year/topic without retyping
+        # any source field. The teacher's existing 3-column header already
+        # aligns its Class/Date/Time/Pupil-count values by real grid cells.
+        paragraph.paragraph_format.tab_stops.add_tab_stop(Cm(3.1))
+        _paragraph(paragraph, f"{label}:\t{value}", bold=(index == 0), size=11)
     _table(doc, (4.3, 14.4), [
         ("معيار المحتوى", f"\u2066{plan['sk']}\u2069  {plan['content_standard']}"),
         ("معيار التعلّم", f"\u2066{plan['sp']}\u2069  {plan['learning_standard']}"),

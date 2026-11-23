@@ -13,6 +13,8 @@ import subprocess
 
 from docx import Document
 from docx.enum.table import WD_TABLE_DIRECTION
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.oxml.ns import qn
 import fitz
 
 from web.arabic_rph_word import render_arabic_word
@@ -45,6 +47,19 @@ def test_approved_arabic_word_renders_physical_equal_width_a4(tmp_path):
         )
     document = Document(str(docx))
     assert len(document.tables) == 4
+    assert document.paragraphs[0].alignment == WD_ALIGN_PARAGRAPH.CENTER
+    title_props = document.paragraphs[0]._p.get_or_add_pPr()
+    assert title_props.find(qn("w:pBdr")) is None
+    assert title_props.find(qn("w:shd")) is None
+    identity_paras = document.tables[0].cell(0, 0).paragraphs
+    assert len(identity_paras) == 3
+    for paragraph in identity_paras:
+        tabs = paragraph._p.get_or_add_pPr().find(qn("w:tabs"))
+        assert tabs is not None
+        stops = tabs.findall(qn("w:tab"))
+        assert len(stops) == 1
+        assert abs(int(stops[0].get(qn("w:pos"))) - 1758) < 10
+        assert "\t" in paragraph.text
     assert all(t.table_direction == WD_TABLE_DIRECTION.RTL for t in document.tables)
     widths = [sum(col.width.mm for col in t.columns) for t in document.tables]
     assert max(widths)-min(widths) < .8, widths
