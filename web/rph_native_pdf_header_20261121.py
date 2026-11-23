@@ -212,6 +212,12 @@ def premium_pdf_story(state, story):
     header = Table([[[title, identity], teacher]],
                    colWidths=[112 * mm, 60 * mm], hAlign="CENTER")
     header.setStyle(_table_style(fill=fill, border=True))
+    # BM SK KP2027 Year 1 reference uses a distinct neutral teacher panel.
+    # Apply this to the EXISTING right-hand cell, without adding metadata,
+    # moving source Paragraph objects or touching curriculum text.
+    header.setStyle(TableStyle([
+        ("BACKGROUND", (1, 0), (1, 0), colors.HexColor("#F5F7FA")),
+    ]))
 
     # Keep untouched curriculum paragraph objects and their source order.
     details = Table(rows[8:], colWidths=[48 * mm, 124 * mm], hAlign="CENTER")
