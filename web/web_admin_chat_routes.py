@@ -56,7 +56,7 @@ def _storage(conf,method,path,raw=None,mime=None):
         raise ValueError("Invalid storage host")
     key=conf["supabase_key"]
     if not isinstance(key,str) or len(key)<20:raise ValueError("Missing storage key")
-    if not re.fullmatch(r"chat/[0-9]{1,19}/[0-9a-f]{32}\\.(pdf|png|jpg|webp)",path):
+    if not re.fullmatch(r"chat/[0-9]{1,19}/[0-9a-f]{32}\.(pdf|png|jpg|webp)",path):
         raise ValueError("Invalid storage key")
     url=base+"/storage/v1/object/"+BUCKET+"/"+path
     headers={"apikey":key}
@@ -89,8 +89,8 @@ def _message_with_attachment(conf,uid,owner,role):
     content=upload.stream.read(MAX_FILE+1)
     if mime not in MIME or not 700<=len(content)<=MAX_FILE:return None
     signatures={"application/pdf":content.startswith(b"%PDF-"),
-                "image/png":content.startswith(b"\\x89PNG\\r\\n\\x1a\\n"),
-                "image/jpeg":content.startswith(b"\\xff\\xd8\\xff"),
+                "image/png":content.startswith(b"\x89PNG\r\n\x1a\n"),
+                "image/jpeg":content.startswith(b"\xff\xd8\xff"),
                 "image/webp":content.startswith(b"RIFF") and content[8:12]==b"WEBP"}
     if not signatures[mime]:return None
     extension=MIME[mime]
@@ -191,9 +191,9 @@ def admin_thread(user_id):
     if uid not in allowed_admin_ids():return jsonify({"error":"Admin sahaja"}),403
     if not _valid_id(user_id):return jsonify({"error":"ID tidak sah"}),400
     try:
-        rows=_db(conf,"GET",{"select":"id,sender_role,message,created_at",
+        rows=_db(conf,"GET",{"select":"id,sender_role,message,created_at,attachment_path,attachment_name",
              "user_id":"eq."+user_id,"order":"id.desc","limit":"100"})
-        return jsonify({"items":list(reversed(rows)),"user_id":user_id})
+        return jsonify({"items":_public_rows(list(reversed(rows))),"user_id":user_id})
     except (ValueError,KeyError,TypeError,OSError,HTTPError,URLError):
         return jsonify({"error":"Perbualan belum tersedia"}),503
 
