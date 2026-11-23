@@ -62,6 +62,30 @@ class ObjectiveLinkedNativeReflectionTests(unittest.TestCase):
                 self.assertNotIn("Murid membaca petikan", result["REFLEKSI"])
                 self.assertEqual(result["KRITERIA KEJAYAAN"], MALAY_CRITERION)
 
+    def test_real_bm_generic_targets_fall_back_to_verified_sp_and_topic(self):
+        rows = {
+            "KRITERIA KEJAYAAN": (
+                "Murid membaca bahan sasaran mengikut fokus kemahiran dan "
+                "menunjukkan kefahaman melalui respons yang tepat."),
+            "OBJEKTIF PEMBELAJARAN": (
+                "Pada akhir pembelajaran, murid dapat menunjukkan pengetahuan "
+                "atau kemahiran berdasarkan Standard Pembelajaran 2.1.1 "
+                "melalui tugasan berpandu dan individu."),
+            "STANDARD PEMBELAJARAN": (
+                "2.1.1 Membaca dengan sebutan yang betul dan intonasi yang sesuai; "
+                "(i) perkataan (ii) ayat (iii) perenggan (iv) petikan"),
+            "TAJUK": "Hari Minggu dengan Keluarga — Membeli Bahan Kek",
+            "REFLEKSI": "____ / ____ murid mencapai objektif.",
+        }
+        result = objective_linked_reflection(
+            {"task": "rph", "subject": "Bahasa Melayu"}, rows)
+        self.assertIn("Membaca dengan sebutan yang betul", result["REFLEKSI"])
+        self.assertIn("Membeli Bahan Kek", result["REFLEKSI"])
+        self.assertNotIn("bahan sasaran", result["REFLEKSI"])
+        self.assertNotIn("fokus kemahiran", result["REFLEKSI"])
+        self.assertEqual(result["STANDARD PEMBELAJARAN"], rows["STANDARD PEMBELAJARAN"])
+        self.assertEqual(result["OBJEKTIF PEMBELAJARAN"], rows["OBJEKTIF PEMBELAJARAN"])
+
     def test_english_uses_actual_success_criterion_not_bahasa_melayu(self):
         rows = {"KRITERIA KEJAYAAN": EN_CRITERION,
                 "OBJEKTIF PEMBELAJARAN": "Pupils can read a short passage.",
