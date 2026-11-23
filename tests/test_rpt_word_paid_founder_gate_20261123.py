@@ -10,7 +10,7 @@ from hashlib import sha256
 from unittest.mock import patch
 import unittest
 
-from flask import Flask, jsonify
+from flask import Flask
 from web.english_rpt_2027_http import _has_paid_access
 from web.rpt_2027_all_http import create_all_rpt_blueprint
 from web.kp2027_year1_rpt_combined import SUBJECTS, document
@@ -108,7 +108,7 @@ class RPTWordPaidOnlyGate(unittest.TestCase):
 
     def test_anonymous_is_401_invalid_format_is_404_and_kssr_pdf_unchanged(self):
         with patch("web.rpt_2027_all_http._account",
-                   return_value=(None,(jsonify({"error":"Authentication required"}),401))):
+                   side_effect=lambda:(None,({"error":"Authentication required"},401))):
             self.assertEqual(self.client.get(PREFIX+"matematik.docx").status_code,401)
         with patch("web.rpt_2027_all_http._account",
                    return_value=({"telegram_user_id":99},None)):
