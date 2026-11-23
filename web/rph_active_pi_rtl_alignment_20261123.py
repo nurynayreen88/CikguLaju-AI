@@ -2,8 +2,8 @@
 
 The native RTL tables already reverse their physical cell order. LibreOffice's
 logical left paragraph justification is displayed on the physical RIGHT of
-these RTL tables. In the header, use that physical RIGHT edge and add gentle
-line spacing; original source text and fonts remain untouched.
+these RTL tables. The 1.5 line spacing is applied to header and each native
+PI Jawi table paragraph; original source text and fonts remain untouched.
 Never use on non-Jawi content, 696-archive layouts, or unverified structures.
 """
 from __future__ import annotations
@@ -94,17 +94,33 @@ def align_active_pi_rtl_value_bytes(original):
                     spacing = props.find(W + "spacing")
                     if spacing is None:
                         spacing = etree.SubElement(props, W + "spacing")
-                    # 260/240 is gentle 1.08x line spacing. Three-point
-                    # breathing room after each line keeps the metadata calm.
+                    # 360/240 = 1.5x line spacing requested for the
+                    # active PI Jawi RPH. Preserve the modest metadata gap.
                     for key, value in (("before", "0"), ("after", "65"),
-                                       ("line", "260"), ("lineRule", "auto")):
+                                       ("line", "360"), ("lineRule", "auto")):
                         if spacing.get(W + key) != value:
                             spacing.set(W + key, value)
                             changed = True
             for table in tables[1:]:
                 for row in table.findall(W + "tr"):
-                    # Only value-column paragraphs. Do not flip label fonts,
-                    # table order or teacher details, nor reflow the prose.
+                    # All Jawi table labels, values, notes and activity lines
+                    # use exact 1.5 line spacing. This touches ONLY w:spacing,
+                    # leaving source text, runs, fonts and boxes unchanged.
+                    for cell in row.findall(W + "tc"):
+                        for paragraph in cell.findall(W + "p"):
+                            props = paragraph.find(W + "pPr")
+                            if props is None:
+                                props = etree.Element(W + "pPr")
+                                paragraph.insert(0, props)
+                            spacing = props.find(W + "spacing")
+                            if spacing is None:
+                                spacing = etree.SubElement(props, W + "spacing")
+                            for key, value in (("line", "360"), ("lineRule", "auto")):
+                                if spacing.get(W + key) != value:
+                                    spacing.set(W + key, value)
+                                    changed = True
+                    # Only value-column paragraphs receive the existing
+                    # Jawi orientation adjustment; labels stay untouched.
                     value = row.findall(W + "tc")[1]
                     for p in value.findall(W + "p"):
                         text = _text(p)

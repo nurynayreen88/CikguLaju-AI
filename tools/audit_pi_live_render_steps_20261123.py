@@ -59,6 +59,13 @@ def main():
         pdf_file = Path(runtime.create_pdf_file(state, native, unique+"p"))
         assert word_file.is_file() and pdf_file.is_file()
         word_doc = Document(str(word_file))
+        assert len(word_doc.tables) == 4
+        for table in word_doc.tables:
+            for row in table.rows:
+                for cell in row.cells:
+                    for paragraph in cell.paragraphs:
+                        assert abs(paragraph.paragraph_format.line_spacing - 1.5) < 0.0001, ("Active PI Word missing 1.5x spacing", paragraph.text[:70])
+        print("PI_ACTIVE_SOURCE_WORD_SPACING_1_5_VALIDATED")
         whole_word = "\\n".join(cell.text for table in word_doc.tables
                                for row in table.rows for cell in row.cells)
         for item in fragments:
