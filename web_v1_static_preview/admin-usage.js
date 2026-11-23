@@ -113,7 +113,7 @@
   }
 
   refresh.addEventListener("click", () => void load());
-  tab.addEventListener("click", () => void load());
+  tab.addEventListener("click", () => { top.open = true; void load(); });
   // Called only after the regular Telegram Widget session has been checked.
   window.cikgulajuAdminInit = () => load();
   // Cover the case where session verification finishes before this asset loads.
@@ -225,6 +225,7 @@
       if (!response.ok || result.status !== decision) throw Error(result.error || "Semakan belum dapat disahkan.");
       dialog.close();
       await load();
+      window.cikgulajuAdminNotificationsRefresh?.();
       status.textContent = decision === "approved" ? "Bayaran #" + item.id + " disahkan." : "Bayaran #" + item.id + " ditolak.";
       window.cikgulajuAdminNotificationsRefresh?.();
     } catch (error) {
