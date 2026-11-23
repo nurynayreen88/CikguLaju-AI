@@ -177,10 +177,20 @@ def make_sheet(year, week, group_a, group_b, slot, lessons, teacher=None):
     for number, (_, _, _, evidence, _) in enumerate(lessons, 1):
         labelled(document.add_paragraph(), f"Activity {number}", evidence)
     labelled(document.add_paragraph(), "Closure", "Invite pupils to share a response from the activities and recap one useful example from the session.")
-    labelled(document.add_paragraph(), "Reflection", "Activity 1 ____ / ____ met the target.   Activity 2 ____ / ____ met the target.")
-    document.add_paragraph("Follow-up _________________________________________________________________")
+    # The printed reflection must refer to THIS pair's audited evidence,
+    # not a generic "met the target" statement. Counts remain blank because
+    # lesson outcomes are only known after teaching. Manual teacher reflection
+    # replaces (rather than duplicates) the proposed reflection.
     if teacher.get("reflection"):
-        labelled(document.add_paragraph(), "Teacher notes", teacher["reflection"])
+        labelled(document.add_paragraph(), "Reflection", teacher["reflection"])
+    else:
+        for n, (lesson_no, _, _, evidence, _) in enumerate(lessons, 1):
+            labelled(
+                document.add_paragraph(), "Reflection" if n == 1 else "",
+                f"Activity {n} (Lesson {lesson_no:03d}): ____ pupils achieved the "
+                f"success criterion ({evidence.rstrip('.')}); ____ pupils need "
+                "guided follow-up and reassessment."
+            )
     return document
 
 
