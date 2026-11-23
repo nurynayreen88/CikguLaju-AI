@@ -176,6 +176,60 @@ class ObjectiveLinkedNativeReflectionTests(unittest.TestCase):
         short["REFLEKSI"] = "Murid mencapai objektif."
         self.assertIs(objective_linked_reflection(state, short), short)
 
+    def test_sains_year3_verified_sp_811_reflection_and_manual_protection(self):
+        """Use actual Year 3 Asid dan Alkali SP when objective is stock text."""
+        source = {
+            "TAJUK": ("Asid dan Alkali / 8.1 — Menguji bahan yang berasid, "
+                      "beralkali dan neutral dari segi perubahan warna "
+                      "kertas litmus dengan menjalankan penyiasatan."),
+            "STANDARD PEMBELAJARAN": (
+                "8.1.1 Menguji bahan yang berasid, beralkali dan neutral "
+                "dari segi perubahan warna kertas litmus dengan menjalankan penyiasatan"
+            ),
+            "OBJEKTIF PEMBELAJARAN": (
+                "Pada akhir PdP, murid dapat kPS/konsep mengikut SP dengan "
+                "tepat berdasarkan aktiviti dan bukti yang diberikan."
+            ),
+            "KRITERIA KEJAYAAN": (
+                "Murid dapat kPS/konsep mengikut SP dengan betul pada "
+                "sekurang-kurangnya 4 daripada 5 item atau situasi yang diberi."
+            ),
+            "AKTIVITI UTAMA": (
+                "Aktiviti 1 – Pemerhatian Awal\n"
+                "Guru menyediakan kertas litmus untuk penyiasatan."
+            ),
+            "REFLEKSI": (
+                "________ / ________ murid mencapai objektif. ________ murid "
+                "belum mencapai objektif dan akan diberi tindakan susulan/pemulihan."
+            ),
+        }
+        state = {"task": "rph", "subject": "Sains", "year": "Tahun 3"}
+        updated = objective_linked_reflection(state, source)
+        self.assertIsNot(updated, source)
+        self.assertEqual(
+            updated["REFLEKSI"],
+            "____ / ____ murid menguji bahan berasid, beralkali dan neutral "
+            "menggunakan kertas litmus (4/5 item). Baki dibimbing."
+        )
+        self.assertLessEqual(len(updated["REFLEKSI"]), len(source["REFLEKSI"]))
+        for key in source.keys() - {"REFLEKSI"}:
+            self.assertEqual(updated[key], source[key])
+        self.assertIs(objective_linked_reflection(state, updated), updated)
+
+        # Never extrapolate this specific objective to a different lesson.
+        for altered in (
+            {**source, "STANDARD PEMBELAJARAN": "8.1.2 Mengelaskan bahan"},
+            {**source, "TAJUK": "Tumbuhan — Fotosintesis"},
+            {**source, "KRITERIA KEJAYAAN": "Kriteria lain."},
+        ):
+            self.assertIs(objective_linked_reflection(state, altered), altered)
+        self.assertIs(objective_linked_reflection(
+            {**state, "rph_reflection_mode": "manual"}, source), source)
+        self.assertIs(objective_linked_reflection(
+            {**state, "rph_teacher_reflection": "Saya tulis sendiri."}, source), source)
+        self.assertIs(objective_linked_reflection(
+            {**state, "year": "Tahun 4"}, source), source)
+
     def test_other_subjects_cannot_add_page_pressure_from_short_reflection(self):
         for subject in ("Sains", "Matematik", "English", "Sejarah",
                         "Pendidikan Moral", "Pendidikan Muzik"):
