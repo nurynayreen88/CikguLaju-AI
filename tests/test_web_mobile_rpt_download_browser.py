@@ -198,7 +198,7 @@ class MobileRptDownloadTests(unittest.TestCase):
             self.assertTrue(year.is_disabled())
             self.assertTrue(subject_search.is_disabled())
             curriculum.select_option("kssr")
-            self.assertEqual(year.locator("option").all_text_contents(),["Pilih tahun","Tahun 2","Year 3","Tahun 4","Tahun 5","Tahun 6"])
+            self.assertEqual(year.locator("option").all_text_contents(),["Pilih tahun","Tahun 2","Tahun 3","Tahun 4","Tahun 5","Tahun 6"])
             year.select_option("2")
             self.assertEqual(subject.locator("option").all_text_contents(),["Pilih atau cari subjek","Bahasa Cina (SJKC)","Bahasa Melayu (SJKC)","English (SK)","Matematik (SJKC)"])
             choose_subject("English (SK)")
