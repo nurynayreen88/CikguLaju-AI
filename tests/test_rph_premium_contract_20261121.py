@@ -242,7 +242,7 @@ def test_small_teacher_panel_is_mirrored_for_ltr_and_two_rtl_subjects_only():
                 or "Subject" in header.cell(0, 0).text)
         pdf = premium_pdf_story(
             {"task": "rph", "subject": subject}, pdf_fixture(subject))
-        assert pdf[0]._colWidths[0] > pdf[0]._colWidths[1]
+        assert pdf[2]._colWidths[0] > pdf[2]._colWidths[1]
 
     # The ready Arabic Word renderer is already independently guarded by the
     # physical A4 RTL suite, where columns 1-2 form the short LEFT box.
@@ -303,5 +303,5 @@ def test_subject_appears_once_in_header_not_as_repeated_curriculum_row():
         story = premium_pdf_story({"task": "rph", "subject": subject}, pdf_fixture(display))
         assert story is not None and story is not pdf_fixture(display), subject
         assert not any(
-            row[0].getPlainText().strip() == label for row in story[2]._cellvalues
+            row[0].getPlainText().strip() == label for row in story[4]._cellvalues
         ), subject
