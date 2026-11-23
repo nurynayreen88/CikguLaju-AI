@@ -16,6 +16,8 @@ import uuid
 from tools.bm_native_v26_navigation_audit import database
 from web.pi_navigation import pi_navigation_unit
 from web.telegram_verified_rpt_rph_bridge import _native_state, _native_text
+from web.telegram_native_bm_sequence_rph_bridge import _state as _bm_state, _content as _bm_content
+from web_v1_dropdown_catalog import _bm_verified_structured_rows, bm_sequence_token
 
 
 def _all_word_text(path):
@@ -29,12 +31,19 @@ def _all_word_text(path):
 def check_one(runtime, path, row, code, output_dir):
     import fitz
     subject = "Pendidikan Islam" if code == "PI" else "Bahasa Melayu"
-    unit = pi_navigation_unit(row) if code == "PI" else str(row.get("unit_title") or "").strip()
-    selection = {"year": 2, "subject": code, "unit": unit, "lesson": int(row["id"])}
-    state = _native_state(runtime, selection, {
-        "class": "", "date": "", "time": "", "students": "", "reflection": ""
-    })
-    native = _native_text(runtime, state)
+    teacher = {"class": "", "date": "", "time": "", "students": "", "reflection": ""}
+    if code == "PI":
+        selection = {"year": 2, "subject": code, "unit": pi_navigation_unit(row),
+                     "lesson": int(row["id"])}
+        state = _native_state(runtime, selection, teacher)
+        native = _native_text(runtime, state)
+    else:
+        # BM is NOT an RPT-entry-ID route: use the exact live verified PdP
+        # sequence token and grouped SK/SP mapping (Web and Telegram agree).
+        token = bm_sequence_token(2, row["theme"], row["unit_code"],
+                                  row["unit_title"], row["topic"])
+        state = _bm_state(runtime, 2, row["unit_title"], token, teacher)
+        native = _bm_content(runtime, state)
     rows = runtime._rph_rows(state, native)
     criterion = rows.get("KRITERIA KEJAYAAN", "")
     objective = rows.get("OBJEKTIF PEMBELAJARAN", "")
@@ -109,15 +118,15 @@ def main():
             candidates = {
                 "PI": [dict(r) for r in db.execute(
                     "SELECT * FROM rpt_entries WHERE id=1275 AND subject='Pendidikan Islam' AND verified=1")],
-                "BM": [dict(r) for r in db.execute(
-                    """SELECT * FROM rpt_entries
-                       WHERE subject='Bahasa Melayu' AND year_label='Tahun 2' AND verified=1
-                       AND length(COALESCE(activity_note,''))>55
-                       AND length(COALESCE(unit_title,''))>3
-                       AND lower(COALESCE(notes,'')) NOT LIKE '%superseded%'
-                       ORDER BY id LIMIT 16"""
-                )]
+                "BM": [],
             }
+        bm_rows = _bm_verified_structured_rows(db_path, 2)
+        grouped = {}
+        for item in bm_rows:
+            key = (item["theme"], item["unit_code"], item["unit_title"], item["topic"])
+            grouped.setdefault(key, item)
+        candidates["BM"] = list(grouped.values())[:25]
+        print("REAL_BM_VERIFIED_PDP_SEQUENCE_CHOICES", len(grouped), flush=True)
         output_dir = Path("qa/rph-source-reflections")
         output_dir.mkdir(parents=True, exist_ok=True)
         for code, records in candidates.items():
