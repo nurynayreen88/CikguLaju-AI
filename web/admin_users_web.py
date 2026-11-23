@@ -1,4 +1,4 @@
-"""Private, read-only CikguLaju user directory for verified Web admins.
+"""CikguLaju private user directory and audited admin-only access actions.
 
 The browser receives a chat target only through an admin-only session.
 It never accesses Supabase credentials or auth.users UUIDs directly. An explicitly allowlisted admin session is rechecked
@@ -119,3 +119,103 @@ def admin_users():
         current_app.logger.warning("Web admin directory unavailable: %s",
                                    type(exc).__name__)
         return jsonify({"error": "Senarai pengguna tidak dapat dimuatkan. Cuba semula."}), 503
+
+
+MANUAL_RAKAN_REASONS = frozenset(
+    ("hadiah_promosi", "rakan_awal", "pembetulan_akses", "lain_lain")
+)
+
+
+def _manual_rakan_grant(conf, user_id, admin_id, reason, *, opener=None):
+    """Call service-role-only atomic grant: no payment, referral, or credit writes."""
+    base, headers = _api_config(conf)
+    body = json.dumps({
+        "p_user_id": user_id, "p_admin_id": admin_id, "p_reason": reason
+    }, separators=(",", ":")).encode("utf-8")
+    req = Request(
+        base + "/rest/v1/rpc/grant_pioneer_manually",
+        method="POST",
+        data=body,
+        headers={**headers, "Content-Type": "application/json"},
+    )
+    client = opener or build_opener(HTTPSHandler(), _NoRedirect())
+    with client.open(req, timeout=12) as response:
+        if response.status != 200:
+            raise RuntimeError("Manual grant not confirmed")
+        raw = response.read(4097)
+    if len(raw) > 4096:
+        raise RuntimeError("Manual grant response too large")
+    result = json.loads(raw)
+    if not isinstance(result, dict):
+        raise RuntimeError("Manual grant response invalid")
+    if result.get("granted") is True:
+        if (type(result.get("count")) is not int
+                or type(result.get("remaining")) is not int):
+            raise RuntimeError("Manual grant confirmation invalid")
+        return {"granted": True, "remaining": result["remaining"]}
+    if result.get("error") in (
+        "invalid_input", "user_not_found", "already_active",
+        "previously_revoked", "pending_payment", "quota_full"
+    ):
+        return {"error": result["error"]}
+    raise RuntimeError("Manual grant outcome unknown")
+
+
+@bp.post("/api/web/admin/users/<user_id>/grant-rakan")
+def admin_manual_rakan_grant(user_id):
+    """Only an authenticated allowlisted admin can grant lifetime Rakan access.
+
+    No arbitrary browser-provided admin ID, account identifier substitutions,
+    or automatic referral payments. Requires explicit reason; audited in DB.
+    """
+    conf = _config()
+    if conf is None:
+        return jsonify({"error": "Sambungan akaun belum tersedia"}), 503
+    uid = verify_session_ticket(
+        request.cookies.get(COOKIE), conf["CIKGULAJU_WEB_SESSION_SECRET"])
+    if type(uid) is not int or uid <= 0:
+        return jsonify({"error": "Sila log masuk"}), 401
+    if uid not in allowed_admin_ids():
+        return jsonify({"error": "Akses admin diperlukan"}), 403
+    if conf.get("account_backend") != "supabase":
+        return jsonify({"error": "Sumber akaun belum tersedia"}), 503
+    if (request.headers.get("Origin") != "https://" + request.host
+            or request.content_length is None
+            or request.content_length > 512
+            or request.mimetype != "application/json"
+            or not re.fullmatch(r"[1-9][0-9]{0,18}", user_id)
+            or int(user_id) >= 2**63):
+        return jsonify({"error": "Permintaan pengaktifan tidak sah"}), 400
+    body = request.get_json(silent=True)
+    if (not isinstance(body, dict) or set(body) != {"reason"}
+            or body.get("reason") not in MANUAL_RAKAN_REASONS):
+        return jsonify({"error": "Pilih sebab pengaktifan yang sah"}), 400
+
+    try:
+        account = _lookup(conf, uid)
+        if not account or account.get("telegram_user_id") != uid:
+            return jsonify({"error": "Akaun admin belum disahkan"}), 403
+        result = _manual_rakan_grant(
+            conf, int(user_id), uid, body["reason"])
+    except (HTTPError, URLError, OSError, RuntimeError, ValueError,
+            TypeError, KeyError, json.JSONDecodeError) as exc:
+        current_app.logger.warning("Admin manual Rakan grant unavailable: %s",
+                                   type(exc).__name__)
+        return jsonify({"error": "Pengaktifan belum dapat disahkan. Semak status pengguna sebelum mencuba lagi."}), 503
+
+    if result.get("granted") is True:
+        return jsonify({
+            "granted": True,
+            "message": "Rakan Pembangun diaktifkan secara manual oleh admin.",
+            "remaining": result["remaining"],
+        }), 200
+    errors = {
+        "invalid_input": ("Permintaan tidak sah", 400),
+        "user_not_found": ("Akaun pengguna tidak ditemui", 404),
+        "already_active": ("Pengguna sudah menjadi Rakan Pembangun", 409),
+        "previously_revoked": ("Akses pernah dibatalkan. Semak sejarah akaun sebelum memulihkan akses.", 409),
+        "pending_payment": ("Bayaran pengguna masih Pending. Semak bayaran dahulu, jangan aktifkan secara manual.", 409),
+        "quota_full": ("Kuota 500 Rakan Pembangun telah penuh", 409),
+    }
+    message, status = errors[result["error"]]
+    return jsonify({"error": message}), status
