@@ -16,6 +16,7 @@ from xml.sax.saxutils import escape
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "audits/kp2027_bm_sjk_tahun1_52_rph_editorial_qa_20261123.json"
 PEDAGOGY = ROOT / "audits/kp2027_bm_sjk_pedagogy_26sp_20261123.json"
+ASSESSMENT = ROOT / "audits/kp2027_bm_sjk_pbd_pengayaan_26sp_20261123.json"
 VERIFIED = ROOT / "audits/kp2027_bm_sjk_sksp_verified_20261123.json"
 PAGE_WIDTH_MM = 210
 PAGE_HEIGHT_MM = 297
@@ -43,10 +44,14 @@ def qa_records():
     # Editorial improvements never rewrite the audited curriculum or base RPH:
     # enrich copies with phase-specific practices and verified SP sub-components.
     bank = json.loads(PEDAGOGY.read_text(encoding="utf-8"))
+    assessment = json.loads(ASSESSMENT.read_text(encoding="utf-8"))
     verified = json.loads(VERIFIED.read_text(encoding="utf-8"))
     if (bank["status"] != "QA_EDITORIAL_UNAPPROVED"
             or bank["counts"] != {"sp": 26, "pdp": 52, "ready": 0}
-            or set(bank["by_sp"]) != set(verified["sp"])):
+            or set(bank["by_sp"]) != set(verified["sp"])
+            or assessment["status"] != "QA_EDITORIAL_UNAPPROVED"
+            or assessment["counts"] != {"sp": 26, "pdp": 52, "ready": 0}
+            or set(assessment["by_sp"]) != set(verified["sp"])):
         raise ValueError("Editorial supplement approval gate or SP inventory changed")
     enriched = []
     for original in records:
@@ -56,6 +61,12 @@ def qa_records():
                                  for v in supplement.values()):
             raise ValueError("Missing editorial pedagogical supplement")
         r["editorial_supplement"] = supplement.copy()
+        evidence = assessment["by_sp"][r["sp_code"]]
+        if (set(evidence) != {"pbd_evidence", "enrichment_action"} or
+            any(not isinstance(value, str) or len(value.strip()) < 85
+                for value in evidence.values())):
+            raise ValueError("Invalid SP-specific PBD or enrichment evidence")
+        r["editorial_assessment"] = evidence.copy()
         if r["sp_code"] == "1.2.2":
             r["sp_components"] = [
                 "; ".join(verified["special_sp_components"]["1.2.2"])
@@ -97,19 +108,33 @@ def _rows(record):
             phase_key = ("guided_pdp" if record["phase"] == "penerokaan"
                          else "application_pdp")
             actions.append(("Pengukuhan khusus", record["editorial_supplement"][phase_key]))
-        activities.append((item["title"], actions))
+        # Shorten the displayed heading only when the source label would
+        # split its final word into an isolated single character in Word.
+        display_title = ("Aktiviti 3: Semak dan baiki"
+                         if item["title"] == "Aktiviti 3: Pentaksiran dan penambahbaikan"
+                         else item["title"])
+        activities.append((display_title, actions))
+    # A specific pupil check replaces the repeated generic pupil sentence;
+    # the audited source remains unchanged and is preserved separately.
     activities.append(("Penutup", [
         ("Guru", record["penutup"]["guru"]),
-        ("Murid", record["penutup"]["murid"]),
-        ("Semak kefahaman", record["editorial_supplement"]["closure"]),
+        ("Murid", record["editorial_supplement"]["closure"]),
     ]))
     follow_up = [
-        ("Pentaksiran / PBD", [record["penilaian"]]),
+        ("Pentaksiran / PBD", [record["editorial_assessment"]["pbd_evidence"]]),
         ("Pemulihan", [record["pemulihan"]]),
-        ("Pengayaan", [record["pengayaan"]]),
+        ("Pengayaan", [record["editorial_assessment"]["enrichment_action"]]),
         ("Refleksi", []),
     ]
     return standards, activities, follow_up
+
+
+def _activity_line(role, value):
+    """Avoid doubled labels such as Guru: Guru memperdengarkan in documents."""
+    content = str(value).strip()
+    if content.casefold().startswith(role.casefold() + " "):
+        return content
+    return f"{role}: {content}"
 
 
 def render_docx(record):
@@ -129,10 +154,10 @@ def render_docx(record):
 
     normal = d.styles["Normal"]
     normal.font.name = "Arial"
-    normal.font.size = Pt(8.3)
+    normal.font.size = Pt(9.5)
     normal.font.color.rgb = RGBColor(25, 50, 73)
     normal.paragraph_format.space_after = Pt(0)
-    normal.paragraph_format.line_spacing = 1.0
+    normal.paragraph_format.line_spacing = 1.05
 
     def set_cell(cell, fill=None):
         cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
@@ -206,7 +231,7 @@ def render_docx(record):
     for i, (label, chunks) in enumerate(activities):
         put(t.cell(i, 0), [(label, True)])
         set_cell(t.cell(i, 0), TONE)
-        put(t.cell(i, 1), [(role + ": " + value, False) for role, value in chunks])
+        put(t.cell(i, 1), [(_activity_line(role, value), False) for role, value in chunks])
     spacer()
     t = table((LABEL_WIDTH_MM, OUTER_WIDTH_MM-LABEL_WIDTH_MM), len(follow_up))
     for i, (label, contents) in enumerate(follow_up):
@@ -294,7 +319,7 @@ def render_pdf(record):
                   range(len(rows)))
     story += [content_table(standards), Spacer(1, 2*mm)]
     story += [content_table([
-        (label, [role+": "+value for role, value in chunks])
+        (label, [_activity_line(role, value) for role, value in chunks])
         for label,chunks in activities
     ]), Spacer(1, 2*mm)]
     story.append(content_table(follow_up))
