@@ -517,6 +517,20 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 .admin-users-list dl{margin:8px 0 0;display:grid;grid-template-columns:92px minmax(0,1fr);gap:4px 8px;font-size:.8rem;line-height:1.5}
 .admin-users-list dt{color:#6a8074}.admin-users-list dd{margin:0;color:#354d42;overflow-wrap:anywhere}
 .admin-user-chat-button{margin-top:12px;min-height:44px;padding:8px 16px;border:1px solid #bddacf;border-radius:10px;background:#eaf7f1;color:#14674e;font:inherit;font-weight:750;cursor:pointer}
+
+/* Chat shortcut deliberately sits between top CikguLaju logo and teacher name. */
+.web-chat-top{margin:0 0 18px;border:1px solid #b8dcd1;border-radius:15px;background:#f7fbf9;overflow:hidden}
+.web-chat-top>summary{display:flex;align-items:center;flex-wrap:wrap;gap:9px;padding:13px 16px;cursor:pointer;font-weight:800;color:#145445;list-style:none;min-height:56px}
+.web-chat-top>summary::-webkit-details-marker{display:none}
+.web-chat-top>summary:focus-visible{outline:3px solid #087568;outline-offset:-3px}
+.web-chat-top>summary small{margin-left:auto;color:#61786f;font-size:.76rem;font-weight:600}
+.web-chat-top>.teacher-timetable-section{margin:0 13px 14px;padding:15px;background:#fff}
+.web-chat-top.has-unread{border-color:#d29f5d;background:#fffaf1}
+.web-chat-unread-badge{display:inline-flex;min-width:26px;align-items:center;justify-content:center;background:#ad312b;color:#fff;border-radius:999px;padding:4px 8px;font-weight:850;font-size:.79rem}
+.web-chat-unread-label{color:#a72e27;font-size:.83rem;font-weight:850}
+.web-chat-alert{position:fixed;right:18px;bottom:18px;z-index:1100;max-width:min(90vw,350px);border:1px solid #b97f35;border-radius:13px;background:#fff4db;color:#68400d;box-shadow:0 12px 34px #0002;padding:12px 16px;font:inherit;font-weight:750;cursor:pointer;text-align:left}
+.web-chat-alert:focus-visible{outline:3px solid #087568;outline-offset:3px}
+@media(max-width:600px){.web-chat-top>summary{padding:12px}.web-chat-top>summary small{width:100%;margin-left:0}.web-chat-top>.teacher-timetable-section{margin:0 8px 10px;padding:10px}.web-chat-alert{right:10px;bottom:10px}}
 .admin-users-pagination{display:flex;justify-content:center;align-items:center;gap:12px;margin:14px 0 2px;font-size:.87rem;color:#5d7569}
 @media(max-width:670px){.admin-users-filters{grid-template-columns:1fr}.admin-users-filters button{width:100%}.admin-users-body{padding:12px}.admin-users-list{grid-template-columns:minmax(0,1fr)}}
 </style>
@@ -536,6 +550,23 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </div>
 </main>
 <section id="workspace" class="panel" hidden>
+<details id="web-chat-top" class="web-chat-top">
+ <summary id="web-chat-top-summary"><span>💬 Chat Admin</span><span id="web-chat-unread-badge" class="web-chat-unread-badge" hidden></span><span id="web-chat-unread-label" class="web-chat-unread-label" hidden>Mesej baharu</span><small id="web-chat-top-hint">Buka perbualan</small></summary>
+<section class="teacher-timetable-section" aria-labelledby="web-chat-heading">
+ <h3 id="web-chat-heading">Chat dengan Admin</h3>
+ <p class="notice">Mesej anda dihantar terus kepada admin CikguLaju. ID akaun dikenal pasti secara automatik. Jika sudah bayar, jangan buat bayaran kedua.</p>
+ <div id="web-chat-messages" class="web-chat-messages" aria-live="polite"></div>
+ <form id="web-chat-form" class="teacher-profile-form">
+  <label for="web-chat-input">Mesej kepada admin</label>
+  <textarea id="web-chat-input" maxlength="1500" rows="3" placeholder="Contoh: Saya sudah bayar RM20 pada 12:28 tetapi gagal hantar resit."></textarea>
+  <label for="web-chat-file">Lampirkan resit / gambar / PDF (maksimum 4 MB)</label>
+  <input id="web-chat-file" type="file" accept=".pdf,.png,.jpg,.jpeg,.webp,application/pdf,image/png,image/jpeg,image/webp">
+  <div class="profile-actions"><button type="submit">Hantar Mesej</button><button id="web-chat-refresh" type="button" class="profile-refresh">Muat Semula Chat</button></div>
+ </form>
+ <p id="web-chat-status" role="status" aria-live="polite"></p>
+</section>
+</details>
+<button type="button" id="web-chat-alert" class="web-chat-alert" hidden>🔔 <span id="web-chat-alert-text">Mesej baharu daripada admin</span> · Buka Chat</button>
 <div class="app-shell">
 <aside class="app-sidebar" aria-label="Navigasi CikguLaju Web">
   <div class="sidebar-brand"><div class="sidebar-teacher"><strong id="sidebar-teacher-name">Cikgu</strong><span id="sidebar-school-name">Ruang Guru</span></div></div>
@@ -554,7 +585,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
         <button type="button" class="sidebar-tab sidebar-tab--planned" data-web-view="uasa" aria-controls="view-uasa"><span aria-hidden="true">📝</span> Latihan UASA <span class="sidebar-coming-status">Akan Datang</span></button>
         <button type="button" class="sidebar-tab" data-web-view="pbd" aria-controls="view-pbd"><span aria-hidden="true">📊</span> Rekod PBD</button>
         <button type="button" class="sidebar-tab" data-web-view="special" aria-controls="view-special"><span aria-hidden="true">🌱</span> RPH Aktiviti Khas</button>
-        <button type="button" class="sidebar-tab" data-web-view="feedback" aria-controls="view-feedback"><span aria-hidden="true">💬</span> Chat Admin &amp; Komen</button>
+        <button type="button" class="sidebar-tab" data-web-view="feedback" aria-controls="view-feedback"><span aria-hidden="true">💬</span> Komen &amp; Cadangan</button>
         <button type="button" id="web-referral-tab" class="sidebar-tab" data-web-view="referral" aria-controls="view-referral" hidden><span aria-hidden="true">🎁</span> Affiliate Saya</button>
         <button type="button" id="web-admin-tab" class="sidebar-tab" data-web-view="admin" aria-controls="view-admin" hidden><span aria-hidden="true">📊</span> Analisis Admin</button>
       </div>
@@ -1086,20 +1117,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 <button type="button" id="payment-refresh" class="profile-refresh">🔄 Refresh Status Bayaran</button>
 </section>
 <section id="view-feedback" class="app-view" aria-labelledby="web-feedback-heading" hidden>
-<h2 id="web-feedback-heading">💬 Chat Admin &amp; Komen</h2>
-<section class="teacher-timetable-section" aria-labelledby="web-chat-heading">
- <h3 id="web-chat-heading">Chat dengan Admin</h3>
- <p class="notice">Mesej anda dihantar terus kepada admin CikguLaju. ID akaun dikenal pasti secara automatik. Jika sudah bayar, jangan buat bayaran kedua.</p>
- <div id="web-chat-messages" class="web-chat-messages" aria-live="polite"></div>
- <form id="web-chat-form" class="teacher-profile-form">
-  <label for="web-chat-input">Mesej kepada admin</label>
-  <textarea id="web-chat-input" maxlength="1500" rows="3" placeholder="Contoh: Saya sudah bayar RM20 pada 12:28 tetapi gagal hantar resit."></textarea>
-  <label for="web-chat-file">Lampirkan resit / gambar / PDF (maksimum 4 MB)</label>
-  <input id="web-chat-file" type="file" accept=".pdf,.png,.jpg,.jpeg,.webp,application/pdf,image/png,image/jpeg,image/webp">
-  <div class="profile-actions"><button type="submit">Hantar Mesej</button><button id="web-chat-refresh" type="button" class="profile-refresh">Muat Semula Chat</button></div>
- </form>
- <p id="web-chat-status" role="status" aria-live="polite"></p>
-</section>
+<h2 id="web-feedback-heading">💬 Komen &amp; Cadangan</h2>
 <p>Cadangkan penambahbaikan atau maklumkan masalah RPH, RPT dan Web CikguLaju. Komen dihantar secara peribadi kepada admin, bukan dipaparkan kepada pengguna lain.</p>
 <form id="web-feedback-form" class="teacher-profile-form" autocomplete="off">
  <h3>Hantar Komen</h3>
@@ -2990,7 +3008,7 @@ document.getElementById("logout").addEventListener("click",async()=>{await fetch
 <script src="/assets/web-referral.js?v=affiliate-invitation-filters-20261114"></script>
 <script src="/assets/admin-usage.js?v=user-chat-oneclick-20261123"></script>
 <script src="/assets/web-feedback.js?v=comments-inbox-20261112"></script>
-<script src="/assets/web-admin-chat.js?v=chat-oneclick-20261123"></script>
+<script src="/assets/web-admin-chat.js?v=chat-header-notify-20261123"></script>
 <script src="/assets/special-activities.js?v=pilihan-subjek-20261117"></script>
 </body>
 </html>
