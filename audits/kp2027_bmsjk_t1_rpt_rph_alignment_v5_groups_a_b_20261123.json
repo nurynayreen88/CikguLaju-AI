@@ -1,0 +1,56 @@
+{
+  "id": "kp2027_bmsjk_t1_rpt_rph_alignment_v5_groups_a_b_20261123",
+  "date": "2026-11-23",
+  "curriculum": "KP2027",
+  "subject": "Bahasa Melayu SJK",
+  "year": 1,
+  "status": "QA_ONLY_NOT_READY",
+  "web_publish": false,
+  "academic_approved": false,
+  "source_rpt": {
+    "A": {
+      "pdp": 52,
+      "sha256_docx": "13f9004fd2ab3f7292923a85155897fee168660674694791bf305003463d87b1",
+      "dates": "2027-01-04 until 2027-12-02",
+      "pdf_pages": 3
+    },
+    "B": {
+      "pdp": 52,
+      "sha256_docx": "480561a398741e71898407d958a058c5767228c18bfb46fe60cb4e333112aac4",
+      "dates": "2027-01-04 until 2027-12-03",
+      "pdf_pages": 3
+    }
+  },
+  "rph_qa_v5": {
+    "private_drive_id": "1JiGhEoWeIKaRedKoKg30j-LbKexHoJ2m",
+    "shared": false,
+    "sha256_zip": "7f1b9ae343bfcf9b84aa6d744f684ac1136984bf253fcdc4f203034d56ac6cab",
+    "pairs": 52
+  },
+  "qa_report": {
+    "private_drive_id": "1uia1WoRXBFjSSYNjqOHkM0RibR8-kYa3",
+    "shared": false
+  },
+  "checks": {
+    "rpt_rows_checked": 104,
+    "rph_pdp": 52,
+    "unique_sp": 26,
+    "phase_pairs": 26,
+    "focus_sk_sp_phase_mismatch": 0,
+    "blank_pdp_date_cells_per_group": 52,
+    "optional_seni_bahasa_pdp": [
+      39,
+      40,
+      41,
+      42
+    ]
+  },
+  "release_blockers": [
+    "RPT 52 PdP is a proposed academic sequence, not approved complete annual distribution",
+    "KPM calendar start/end verified, but lesson date needs school-specific timetable/state holidays and confirmed period allocation",
+    "No automatic multiplication of 52 PdP to pretend annual curriculum complete",
+    "Manual academic approval required before READY",
+    "No production Web, user quota, pricing or Supabase changes"
+  ],
+  "traceability": "Source native A/B RPT 3-page Word documents cross-compared row-by-row with all 52 QA V5 native RPH documents; full 52-row structured check is stored in owner-only Drive."
+}
