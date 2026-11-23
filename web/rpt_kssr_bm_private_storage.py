@@ -42,7 +42,7 @@ def _server_settings(config):
             or not isinstance(key, str) or len(key) < 30):
         raise PrivateWordUnavailable("Private storage configuration unavailable")
     # A publishable key can never be trusted as the server-side storage secret.
-    if key.startswith(("sb_publishable_", "eyJhbGciOi")) and len(key) < 100:
+    if key.startswith("sb_publishable_"):
         raise PrivateWordUnavailable("Storage service key required")
     return url.rstrip("/"), key
 
@@ -81,7 +81,7 @@ def verified_manifest_entry(year, *, root=bm_word.ROOT):
 
 def _check_docx(blob, entry):
     if (not isinstance(blob, bytes) or len(blob) != entry["bytes"]
-            or not blob.startswith(b"PK\\x03\\x04")
+            or not blob.startswith(bytes((80, 75, 3, 4)))
             or hashlib.sha256(blob).hexdigest() != entry["sha256"]):
         raise PrivateWordUnavailable("Private Word checksum mismatch")
     try:
