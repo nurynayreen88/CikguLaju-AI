@@ -320,3 +320,45 @@ def test_native_pdf_colors_dont_touch_specialty_generators_or_unknown_tables():
     before = tuple(malformed[4]._bkgrndcmds)
     _native_grid_pastel("EAF1FB", malformed[2], malformed[4], malformed[6])
     assert tuple(malformed[4]._bkgrndcmds) == before
+
+
+def test_native_pastel_pdf_never_gets_a_second_crossing_title_frame(tmp_path):
+    """Regression for the actual English Year 5 double-line PDF artifact.
+
+    The old post-render decorator put a second colored title rectangle on
+    an already colored full-width native banner, making two top rules appear
+    to overlap. Native PDFs must stay BYTE-IDENTICAL, not merely preserve
+    their text, after the decorator is called.
+    """
+    from web.rph_reference_pdf_style_20261121 import style_pdf_bytes
+    from web.rph_reference_style_20261121 import color_for_state
+
+    for subject in SUBJECTS:
+        state = {"task": "rph", "subject": subject}
+        document = _pdf(
+            premium_pdf_story(state, fixture(subject)),
+            tmp_path / (subject.replace(" ", "_") + "_source.pdf"),
+        )
+        after = style_pdf_bytes(document, color_for_state(state))
+        assert after == document, subject
+        with fitz.open(stream=after, filetype="pdf") as pdf:
+            assert len(pdf) == 1
+            page = pdf[0]
+            title = "DAILY LESSON PLAN" if subject == "English" else (
+                "RANCANGAN PENGAJARAN HARIAN"
+            )
+            assert title in page.get_text()
+            assert "2.1.1" in page.get_text()
+            teacher_label = "Class" if subject == "English" else "Kelas"
+            assert page.search_for(teacher_label)
+            banner = [
+                d for d in page.get_drawings()
+                if d.get("fill") is not None
+                and abs(d["rect"].width - 172 * mm) < 1.5
+                and 12 < d["rect"].y0 < 160
+                and 48 <= d["rect"].height <= 120
+            ]
+            assert len(banner) == 1, (subject, banner)
+            assert not (pdf.metadata.get("keywords") or "").find(
+                "CikguLaju-RPH-pastel-20261121"
+            ) >= 0, subject
