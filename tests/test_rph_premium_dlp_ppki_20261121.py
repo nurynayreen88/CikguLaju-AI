@@ -99,8 +99,7 @@ class PremiumDlpPpkiProof(unittest.TestCase):
                 parsed = Document(BytesIO(generate("word")))
                 self.assertEqual(len(parsed.tables), 4)
                 head = parsed.tables[0]
-                self.assertEqual(head._tbl.tblGrid.gridCol_lst[0].get(qn("w:w")),
-                                 head.columns[0]._gridCol.get(qn("w:w")))
+                self.assertAlmostEqual(sum(c.width.mm for c in head.columns), 182, delta=1)
                 left_shade = head.cell(0, 0)._tc.get_or_add_tcPr().find(qn("w:shd"))
                 right_shade = head.cell(0, 1)._tc.get_or_add_tcPr().find(qn("w:shd"))
                 self.assertIsNotNone(left_shade)
