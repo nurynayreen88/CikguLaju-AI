@@ -156,7 +156,7 @@ class QAOnlyWordPDF(unittest.TestCase):
                     self.assertIn(squeeze(exact),pdf_text)
                 self.assertEqual(pdf_text.count("Refleksi"),1)
                 for title in r["editorial_activity_titles"]:
-                    self.assertIn(title,pdf_text)
+                    self.assertIn(squeeze(title),squeeze(pdf_text))
                 self.assertNotIn("Guru: Guru ",pdf_text)
                 self.assertNotIn("Murid: Murid ",pdf_text)
                 self.assertNotIn(squeeze(r["penutup"]["murid"]),pdf_text)
@@ -182,7 +182,7 @@ class QAOnlyWordPDF(unittest.TestCase):
                     pdf_text=pages[0].extract_text() or ""
                     num=int(entry["name"].split("PDP")[1][:3])
                     for title in self.records[num-1]["editorial_activity_titles"]:
-                        self.assertIn(title,pdf_text)
+                        self.assertIn(squeeze(title),squeeze(pdf_text))
                     self.assertNotIn("Murid: Murid ",pages[0].extract_text() or "")
                     self.assertEqual(len(pages),1,
                                      "QA A4 PDF unexpectedly more than one page: "+entry["name"])
