@@ -40,6 +40,9 @@ def test_jawi_digits_are_exact_and_idempotent_but_url_is_not_broken():
     assert jawi_display_digits(example) == expected
     assert jawi_display_digits(expected) == expected
     assert jawi_display_digits(None) is None
+    assert jawi_display_digits("<font size='12'>Aktiviti 3</font>&#160;") == (
+        "<font size='12'>Aktiviti ٣</font>&#160;"
+    )
 
 
 def test_pi_rows_change_only_render_values_not_original_data_or_routes():
