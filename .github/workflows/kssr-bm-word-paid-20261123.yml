@@ -1,0 +1,66 @@
+name: Build native BM KSSR T2-T6 premium Word from source HTML
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'tools/build_kssr_bm_2027_paid_word.py'
+      - 'rpt_2027/bahasa_melayu/RPT_BM_Tahun_*_2027_Format_2026_DRAF.html'
+      - 'rpt_2027/web_2027_pdfs/bahasa_melayu/tahun_*.pdf'
+      - 'rpt_2027/web_2027_pdfs/manifest.json'
+      - '.github/workflows/kssr-bm-word-paid-20261123.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native_word:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install document parsing and parity tools
+        run: python -m pip install --disable-pip-version-check 'beautifulsoup4==4.14.2' 'python-docx==1.2.0' 'PyMuPDF==1.26.5'
+      - name: Build five editable RPT Word documents from original HTML
+        run: python tools/build_kssr_bm_2027_paid_word.py
+      - name: Check generated document layout in LibreOffice
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/bm-word-preview"
+          if ! command -v libreoffice >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq --no-install-recommends libreoffice-writer
+          fi
+          libreoffice -env:UserInstallation=file:///tmp/lo-bm-rpt-2027-ci --headless --convert-to pdf             --outdir "$RUNNER_TEMP/bm-word-preview" rpt_2027/kssr_word_premium/bahasa_melayu/*.docx
+          python - <<'PY'
+          from pathlib import Path
+          import fitz
+          import json
+          path=Path('rpt_2027/kssr_word_premium/manifest.json')
+          data=json.loads(path.read_text('utf-8'))
+          preview=Path('/tmp')
+          for year, row in data['files'].items():
+              matches=list(Path.home().glob('**/unfindable-do-not-search'))
+              from glob import glob
+              import os
+              root=Path(os.environ['RUNNER_TEMP'])/'bm-word-preview'
+              pdf=root/f'tahun_{year}.pdf'
+              assert pdf.exists(),(year,'LibreOffice conversion failed')
+              with fitz.open(pdf) as doc:
+                  pages=len(doc)
+                  text='\n'.join(p.get_text() for p in doc)
+                  assert pages >= 44 and pages <= 60,(year,pages,'layout overflow')
+                  assert 'DRAF SEMAKAN' in text,(year,'draft status lost')
+                  print(json.dumps({'year':year,'word_pages':pages,'file_size':pdf.stat().st_size}))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kssr-bm-t2-t6-word-qa-native-html
+          path: |
+            rpt_2027/kssr_word_premium/manifest.json
+            rpt_2027/kssr_word_premium/bahasa_melayu/*.docx
+            ${{ runner.temp }}/bm-word-preview/*.pdf
+          if-no-files-found: error
+          retention-days: 15
