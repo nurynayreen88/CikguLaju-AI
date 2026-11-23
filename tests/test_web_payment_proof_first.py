@@ -308,7 +308,7 @@ class PaymentWebTests(unittest.TestCase):
         transport = Transport()
         with patch.dict(os.environ, {"CIKGULAJU_WEB_ADMIN_IDS": "901"}):
             self.assertEqual(_receipt_destinations(uid), [901])
-            self.assertEqual(_receipt_destinations(712), [712])
+            self.assertEqual(_receipt_destinations(712), [712, 901])
             proof = _telegram_document(CONF, uid, RECEIPT, ".pdf", opener=transport)
         self.assertEqual(proof["file_id"], "saved-proof")
         self.assertEqual(proof["admin_chat_id"], 901)
