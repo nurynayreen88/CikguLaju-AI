@@ -58,13 +58,17 @@ def _storage(conf,method,path,raw=None,mime=None):
     if not isinstance(key,str) or len(key)<20:raise ValueError("Missing storage key")
     if not re.fullmatch(r"chat/[0-9]{1,19}/[0-9a-f]{32}\.(pdf|png|jpg|webp)",path):
         raise ValueError("Invalid storage key")
-    url=base+"/storage/v1/object/"+BUCKET+"/"+path
-    headers={"apikey":key}
+    headers={"apikey":key, "Cache-Control":"no-store"}
     if not key.startswith("sb_secret_"):headers["Authorization"]="Bearer "+key
     if method=="POST":
+        url=base+"/storage/v1/object/"+BUCKET+"/"+path
         headers["Content-Type"]=mime
         headers["x-upsert"]="false"
-        url=base+"/storage/v1/object/"+BUCKET+"/"+path
+    elif method=="GET":
+        # Private buckets require authenticated endpoint, never public URL.
+        url=base+"/storage/v1/object/authenticated/"+BUCKET+"/"+path
+    else:
+        raise ValueError("Unsupported storage operation")
     req=Request(url,data=raw if method=="POST" else None,method=method,headers=headers)
     with build_opener(HTTPSHandler(),NoRedirect()).open(req,timeout=15) as resp:
         if resp.status not in (200,201,204):raise ValueError("Storage request failed")
