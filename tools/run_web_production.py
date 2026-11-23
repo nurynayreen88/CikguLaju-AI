@@ -170,6 +170,7 @@ def web_payment_script():
 
 @app.get("/assets/web-admin-chat.js")
 def web_admin_chat_script():
+    from pathlib import Path
     from flask import send_file
     path = Path(__file__).resolve().parents[1] / "web_v1_static_preview" / "web-admin-chat.js"
     return send_file(path, mimetype="application/javascript")
