@@ -182,10 +182,7 @@ class ObjectiveLinkedNativeReflectionTests(unittest.TestCase):
             "TAJUK": ("Asid dan Alkali / 8.1 — Menguji bahan yang berasid, "
                       "beralkali dan neutral dari segi perubahan warna "
                       "kertas litmus dengan menjalankan penyiasatan."),
-            "STANDARD PEMBELAJARAN": (
-                "8.1.1 Menguji bahan yang berasid, beralkali dan neutral "
-                "dari segi perubahan warna kertas litmus dengan menjalankan penyiasatan"
-            ),
+            "STANDARD PEMBELAJARAN": "8.1.1",
             "OBJEKTIF PEMBELAJARAN": (
                 "Pada akhir PdP, murid dapat kPS/konsep mengikut SP dengan "
                 "tepat berdasarkan aktiviti dan bukti yang diberikan."
@@ -218,7 +215,7 @@ class ObjectiveLinkedNativeReflectionTests(unittest.TestCase):
 
         # Never extrapolate this specific objective to a different lesson.
         for altered in (
-            {**source, "STANDARD PEMBELAJARAN": "8.1.2 Mengelaskan bahan"},
+            {**source, "STANDARD PEMBELAJARAN": "8.1.2"},
             {**source, "TAJUK": "Tumbuhan — Fotosintesis"},
             {**source, "KRITERIA KEJAYAAN": "Kriteria lain."},
         ):
