@@ -106,6 +106,34 @@ def _bold_pdf_separate_activity_titles(table):
             if _is_standalone_activity_title(html.unescape(line).strip()):
                 pieces[i] = "<b>" + line + "</b>"
                 found = True
+                continue
+            # ReportLab's Paragraph normalizes literal source newlines to
+            # spaces. Thus a real heading may become the tail of the prior
+            # numbered instruction: "... dahulu. Aktiviti 2 – ...<br/>2. ...".
+            # Restore only an unmistakable 1->2 or 2->3 heading boundary.
+            # Preserve the original whitespace, words and numbered steps.
+            inline = re.fullmatch(
+                r"(?P<instruction>.+[.!?])(?P<gap>[ \\t]+)"
+                r"(?P<title>(?:Aktiviti|Activity)\\s+"
+                r"(?P<number>[2-9]\\d?)\\s*[.:)–—-]\\s*\\S.{0,109})",
+                line, flags=re.IGNORECASE | re.DOTALL,
+            )
+            if inline is None:
+                continue
+            number = int(inline.group("number"))
+            title = html.unescape(inline.group("title"))
+            next_line = (pieces[i + 2] if i + 2 < len(pieces) else "")
+            if (not re.match(rf"^\\s*{number - 1}[.)]\\s+",
+                             inline.group("instruction"))
+                    or not re.match(rf"^\\s*{number}[.)]\\s+",
+                                    html.unescape(next_line))
+                    or not _is_standalone_activity_title(title.strip())):
+                continue
+            pieces[i] = (
+                inline.group("instruction") + inline.group("gap")
+                + "<br/><b>" + inline.group("title") + "</b>"
+            )
+            found = True
         if found:
             try:
                 styled = Paragraph("".join(pieces), source.style)
