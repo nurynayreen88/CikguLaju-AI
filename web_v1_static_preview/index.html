@@ -1092,7 +1092,9 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
  <div id="web-chat-messages" class="web-chat-messages" aria-live="polite"></div>
  <form id="web-chat-form" class="teacher-profile-form">
   <label for="web-chat-input">Mesej kepada admin</label>
-  <textarea id="web-chat-input" maxlength="1500" rows="3" required placeholder="Contoh: Saya sudah bayar RM20 pada 12:28 tetapi gagal hantar resit."></textarea>
+  <textarea id="web-chat-input" maxlength="1500" rows="3" placeholder="Contoh: Saya sudah bayar RM20 pada 12:28 tetapi gagal hantar resit."></textarea>
+  <label for="web-chat-file">Lampirkan resit / gambar / PDF (maksimum 4 MB)</label>
+  <input id="web-chat-file" type="file" accept=".pdf,.png,.jpg,.jpeg,.webp,application/pdf,image/png,image/jpeg,image/webp">
   <div class="profile-actions"><button type="submit">Hantar Mesej</button><button id="web-chat-refresh" type="button" class="profile-refresh">Muat Semula Chat</button></div>
  </form>
  <p id="web-chat-status" role="status" aria-live="polite"></p>
@@ -1159,7 +1161,9 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
  <div id="web-admin-chat-thread" class="web-chat-messages" aria-live="polite"></div>
  <form id="web-admin-chat-form" class="teacher-profile-form">
   <label for="web-admin-chat-input">Balasan admin</label>
-  <textarea id="web-admin-chat-input" rows="3" maxlength="1500" required></textarea>
+  <textarea id="web-admin-chat-input" rows="3" maxlength="1500"></textarea>
+  <label for="web-admin-chat-file">Lampiran admin (PDF atau gambar, maksimum 4 MB)</label>
+  <input id="web-admin-chat-file" type="file" accept=".pdf,.png,.jpg,.jpeg,.webp,application/pdf,image/png,image/jpeg,image/webp">
   <button type="submit">Hantar Balasan</button>
  </form>
  <p id="web-admin-chat-status" role="status" aria-live="polite"></p>
