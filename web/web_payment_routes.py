@@ -174,10 +174,13 @@ def _audit_payment(conf, uid, event_type):
         token = conf["supabase_key"]
         body = json.dumps({"telegram_user_id": uid,
                            "event_type": event_type}).encode("utf-8")
+        headers = {"apikey": token, "Content-Type": "application/json",
+                   "Prefer": "return=minimal"}
+        # Supabase sb_secret_ keys must be sent as apikey, not as JWT bearer.
+        if not token.startswith("sb_secret_"):
+            headers["Authorization"] = "Bearer " + token
         req = Request(base + "/rest/v1/web_payment_activity",
-            method="POST", data=body, headers={
-                "apikey": token, "Authorization": "Bearer " + token,
-                "Content-Type": "application/json", "Prefer": "return=minimal"})
+                      method="POST", data=body, headers=headers)
         with build_opener(HTTPSHandler(), NoRedirect()).open(req, timeout=3) as resp:
             if resp.status not in (200, 201, 204):
                 raise ValueError("audit response")
