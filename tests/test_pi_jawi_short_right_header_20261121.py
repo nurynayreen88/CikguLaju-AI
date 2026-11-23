@@ -95,6 +95,10 @@ def test_jawi_short_left_teacher_long_right_source_tokens_and_fixed_grid():
     assert premium_header_bytes(final, fill, rtl_jawi=True) == final
     assert equal_width_four_table_bytes(final, rtl_jawi=True) == final
     doc = Document(BytesIO(final))
+    # The original Jawi title must stay above the identity/teacher table,
+    # not disappear into its wide identity cell. All original text remains.
+    assert doc.paragraphs[0].text == "رنچڠن ڤڠاجرن هارين"
+    assert "رنچڠن ڤڠاجرن هارين" not in doc.tables[0].cell(0, 0).text
     assert len(doc.tables) == 4
     assert doc.tables[0].table_direction == WD_TABLE_DIRECTION.RTL
     assert doc.tables[0].alignment == WD_TABLE_ALIGNMENT.RIGHT
@@ -110,8 +114,12 @@ def test_jawi_short_left_teacher_long_right_source_tokens_and_fixed_grid():
 
     with ZipFile(BytesIO(final)) as zipped:
         root = etree.fromstring(zipped.read("word/document.xml"))
-    tables = root.find(W + "body").findall(W + "tbl")
+    body = root.find(W + "body")
+    tables = body.findall(W + "tbl")
     assert len(tables) == 4
+    first_para = body.find(W + "p")
+    assert body.index(first_para) < body.index(tables[0])
+    assert first_para.find(W + "pPr").find(W + "jc").get(W + "val") == "center"
     widths = []
     for table in tables:
         pr = table.find(W + "tblPr")

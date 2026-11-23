@@ -97,8 +97,7 @@ def _make_banner(body, first_table, title, rows, fill, *, rtl_jawi=False):
     for edge in ("top", "bottom", "left", "right", "insideV"):
         _node(borders, edge, val="single", sz=6, color="6D7C8B")
     grid = _node(banner, "tblGrid")
-    # Restore owner-approved initial sample: identity is the wide LEFT
-    # column, and the teacher's five fields form the small RIGHT column.
+    # LTR title stays inside identity; Jawi RTL title stays above the panel.
     # Keep all curriculum source text and its original paragraph nodes.
     _node(grid, "gridCol", w="6900")
     _node(grid, "gridCol", w="3730")
@@ -112,8 +111,21 @@ def _make_banner(body, first_table, title, rows, fill, *, rtl_jawi=False):
     # Do not create/remove any source field or change its value.
     rightpr = _cell_fill(right, TEACHER_PANEL_FILL)
     rightpr.find(W + "tcW").set(W + "w", "3730")
-    title.getparent().remove(title)
-    left.append(title)
+    if rtl_jawi:
+        # Keep the ORIGINAL full-width Jawi heading above the banner.
+        # Moving it into the identity cell cramped the active RPH title.
+        # This changes presentation only, never a w:t source text node.
+        ppr = title.find(W + "pPr")
+        if ppr is None:
+            ppr = etree.Element(W + "pPr")
+            title.insert(0, ppr)
+        justification = ppr.find(W + "jc")
+        if justification is None:
+            justification = _node(ppr, "jc")
+        justification.set(W + "val", "center")
+    else:
+        title.getparent().remove(title)
+        left.append(title)
     for old_run in title.iter(W + "r"):
         rpr = old_run.find(W + "rPr")
         if rpr is None:
