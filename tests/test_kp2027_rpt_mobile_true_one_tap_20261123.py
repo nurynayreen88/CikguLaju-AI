@@ -49,11 +49,12 @@ class LocalRPTServer(BaseHTTPRequestHandler):
         if path == "/api/rpt/2027/catalog":
             payload = {
                 "subjects": [],
-                "personalization_allowed": False,
+                "personalization_allowed": self.server.paid,
                 "kp2027_rpt_available": [
                     {"code": code, "label": LABELS[code], "year": 1,
                      "kp2027_combined": True,
                      "pdf_ready": True, "docx_ready": True,
+                     "docx_download_enabled": self.server.paid,
                      "download_enabled": self.server.allowed,
                      "status": "RPT SEMAKAN PELAKSANAAN"}
                     for code in SUBJECTS
@@ -66,7 +67,7 @@ class LocalRPTServer(BaseHTTPRequestHandler):
             if "." not in suffix:
                 return self.send_bytes(b"Not found", "text/plain", status=404)
             code, fmt = suffix.rsplit(".", 1)
-            if not self.server.allowed:
+            if not self.server.allowed or (fmt == "docx" and not self.server.paid):
                 return self.send_bytes(b'{"error":"Akses diperlukan"}',
                                        "application/json", status=403)
             if code not in SUBJECTS or fmt not in {"pdf", "docx"}:
@@ -94,6 +95,7 @@ class KP2027OneTapMobileRPT(unittest.TestCase):
         assert ready(), "Source-locked KP2027 RPT bundle missing"
         cls.server = ThreadingHTTPServer(("127.0.0.1", 0), LocalRPTServer)
         cls.server.allowed = True
+        cls.server.paid = True
         cls.server.paths = []
         cls.host = "http://127.0.0.1:" + str(cls.server.server_address[1])
         cls.thread = threading.Thread(target=cls.server.serve_forever, daemon=True)
@@ -109,8 +111,9 @@ class KP2027OneTapMobileRPT(unittest.TestCase):
         cls.server.server_close()
         cls.thread.join(timeout=10)
 
-    def _run(self, *, available):
+    def _run(self, *, available, paid=True):
         self.server.allowed = available
+        self.server.paid = paid
         self.server.paths.clear()
         ctx = self.browser.new_context(
             viewport={"width": 390, "height": 844},
@@ -149,15 +152,23 @@ class KP2027OneTapMobileRPT(unittest.TestCase):
                     continue
 
                 self.assertTrue(pdf.is_visible())
-                self.assertTrue(word.is_visible())
+                self.assertEqual(word.is_visible(), paid)
                 self.assertTrue(page.locator("#rpt-download").is_hidden())
                 self.assertEqual(pdf.get_attribute("href"), base + "pdf")
-                self.assertEqual(word.get_attribute("href"), base + "docx")
                 self.assertEqual(pdf.get_attribute("download"), document(subject, "pdf")[1])
-                self.assertEqual(word.get_attribute("download"), document(subject, "docx")[1])
                 self.assertIsNone(pdf.get_attribute("target"))
-                self.assertIsNone(word.get_attribute("target"))
-                for fmt, control in (("pdf", pdf), ("docx", word)):
+                if paid:
+                    self.assertEqual(word.get_attribute("href"), base + "docx")
+                    self.assertEqual(word.get_attribute("download"), document(subject, "docx")[1])
+                    self.assertIsNone(word.get_attribute("target"))
+                else:
+                    self.assertIsNone(word.get_attribute("href"))
+                    self.assertIsNone(word.get_attribute("download"))
+                    self.assertIn("Rakan Pembangun", page.locator("#rpt-status").inner_text())
+                    result=ctx.request.get(self.host+base+"docx")
+                    self.assertEqual(result.status,403)
+                for fmt, control in ([("pdf", pdf), ("docx", word)] if paid
+                                     else [("pdf", pdf)]):
                     with self.subTest(subject=subject, file_format=fmt):
                         with page.expect_download(timeout=25000) as capture:
                             control.tap()
@@ -170,12 +181,15 @@ class KP2027OneTapMobileRPT(unittest.TestCase):
                         self.assertIn(base + fmt, self.server.paths)
 
             self.assertEqual(len(pages), 0, "No extra viewer or popup tab")
-            self.assertEqual(len(downloads), 6 if available else 0)
+            self.assertEqual(len(downloads), (6 if paid else 3) if available else 0)
         finally:
             ctx.close()
 
     def test_all_six_word_pdf_downloads_are_complete_and_one_tap(self):
         self._run(available=True)
+
+    def test_free_user_gets_pdf_not_word_and_direct_word_request_is_403(self):
+        self._run(available=True, paid=False)
 
     def test_unavailable_status_hides_all_six_downloads(self):
         self._run(available=False)
