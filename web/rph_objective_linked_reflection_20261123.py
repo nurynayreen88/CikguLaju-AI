@@ -159,8 +159,18 @@ def objective_linked_reflection(state, rows):
             "____ / ____ murid: " + evidence +
             ". Baki dibimbing semula."
         )
-    # Preserve a compact one-paragraph footer and limit added page pressure.
-    if len(generated) > 215 or (current and len(generated) > len(current) + 90):
+    # Only original PI and BM have passed real native Word->PDF one-page
+    # tests for an enlarged reflection. For other KSSR subjects, permit a
+    # source-specific reflection ONLY when it is NO LONGER than the existing
+    # generic footer. This prevents untested page-height increases; DLP,
+    # PPKI, Arabic and KP2027 are still fully out of scope.
+    subject = " ".join(str(state.get("subject") or "").strip().casefold().split())
+    if len(generated) > 215:
+        return rows
+    if subject in ("pendidikan islam", "bahasa melayu"):
+        if current and len(generated) > len(current) + 90:
+            return rows
+    elif not current or len(generated) > len(current):
         return rows
     revised = dict(rows)
     revised["REFLEKSI"] = generated
