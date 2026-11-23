@@ -1,0 +1,28 @@
+name: English paired RPH criterion-driven reflection Word PDF QA
+
+on:
+  pull_request:
+    paths:
+      - "tools/build_english_paired_rph_2027.py"
+      - "web/english_integrated_rph_2027.py"
+      - "tests/test_english_integrated_rph_2027.py"
+      - ".github/workflows/english-paired-reflection-20261123.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  paired-reflection:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install self-contained English RPH test dependencies
+        run: python -m pip install 'pytest>=8,<10' 'flask>=3,<4' 'python-docx>=1.1,<2' 'reportlab>=4,<5' 'pymupdf>=1.24,<2' 'lxml>=5,<7'
+      - name: Verify real verified English pairs in Word and PDF
+        run: python -m pytest tests/test_english_integrated_rph_2027.py -q
+      - name: Verify parser compatibility
+        run: python -m py_compile tools/build_english_paired_rph_2027.py web/english_integrated_rph_2027.py
