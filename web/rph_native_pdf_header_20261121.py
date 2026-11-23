@@ -114,6 +114,44 @@ def _bold_pdf_separate_activity_titles(table):
                 continue
 
 
+def _native_grid_pastel(fill, details, activities, followup):
+    """Color existing native ReportLab cells BEFORE PDF generation.
+
+    This is a vector layout style, not a PDF overlay or a text rewrite.
+    The outer grid widths, all Paragraph objects, page breaks and RTL-special
+    renderers remain in their own verified generator.
+    """
+    if (not isinstance(fill, str) or not re.fullmatch(r"[0-9a-fA-F]{6}", fill)
+            or not isinstance(details, Table)
+            or not isinstance(activities, Table)
+            or not isinstance(followup, Table)):
+        return
+    data = (details._cellvalues, activities._cellvalues, followup._cellvalues)
+    if (not 1 <= len(data[0]) <= 100
+            or not 4 <= len(data[1]) <= 100
+            or not 2 <= len(data[2]) <= 20
+            or any(len(row) != count for rows, count in zip(data, (2, 3, 2))
+                   for row in rows)):
+        return
+    if (not isinstance(data[1][0][0], Paragraph)
+            or _normal(data[1][0][0].getPlainText()) not in ("fasa", "phase")):
+        return
+    tone = colors.HexColor("#" + fill)
+    # Slightly stronger fill for the phase heading; no oversized dark boxes.
+    strong = colors.Color(tone.red * .90, tone.green * .90,
+                          tone.blue * .90)
+    details.setStyle(TableStyle([
+        ("BACKGROUND", (0, 0), (0, -1), tone),
+    ]))
+    activities.setStyle(TableStyle([
+        ("BACKGROUND", (0, 0), (-1, 0), strong),
+        ("BACKGROUND", (0, 1), (0, -1), tone),
+    ]))
+    followup.setStyle(TableStyle([
+        ("BACKGROUND", (0, 0), (0, -1), tone),
+    ]))
+
+
 def premium_pdf_story(state, story):
     """Return reflowed PDF story preserving each original Paragraph object.
 
@@ -186,4 +224,5 @@ def premium_pdf_story(state, story):
         ("BOTTOMPADDING", (0, 0), (-1, -1), 2.5),
     ]))
     _bold_pdf_separate_activity_titles(story[4])
+    _native_grid_pastel(fill, details, story[4], story[6])
     return [header, Spacer(1, 3 * mm), details, *story[3:]]
