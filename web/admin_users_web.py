@@ -1,7 +1,7 @@
 """Private, read-only CikguLaju user directory for verified Web admins.
 
-The browser never accesses Supabase credentials, auth.users or numeric email
-identity keys directly. An explicitly allowlisted admin session is rechecked
+The browser receives a chat target only through an admin-only session.
+It never accesses Supabase credentials or auth.users UUIDs directly. An explicitly allowlisted admin session is rechecked
 against the authoritative account table for every query. Search and status
 pagination occur inside a service-role-only database RPC, not in browser JS.
 """
@@ -64,11 +64,18 @@ def _admin_users_data(conf, status, search, page, *, opener=None):
         if (entry.get("access_status") not in ("free", "rakan", "langganan")
                 or entry.get("account_type") not in ("email", "telegram")):
             raise RuntimeError("Invalid user classification")
+        # Strictly validate the server-only lookup key before releasing a chat
+        # target through the verified admin response. Keep 64-bit IDs as text.
+        chat_id = entry.get("chat_user_id")
+        if (not isinstance(chat_id, str)
+                or not re.fullmatch(r"[1-9][0-9]{0,18}", chat_id)
+                or int(chat_id) >= 2**63):
+            raise RuntimeError("Admin chat target is invalid")
         # Do not return unrecognized columns from a privileged query.
         safe.append({key: entry.get(key) for key in (
             "account_type", "telegram_id", "email", "display_name",
             "registered_at", "last_login_at", "access_status",
-            "subscription_expires_at", "trial_remaining",
+            "subscription_expires_at", "trial_remaining", "chat_user_id",
         )})
     return {"items": safe, "total": result["total"], "page": page,
             "page_size": PAGE_SIZE, "more": (page + 1) * PAGE_SIZE < result["total"]}
