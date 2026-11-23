@@ -24,14 +24,14 @@ SAMPLE = {
          "registered_at": "2026-11-22T12:10:00+00:00",
          "last_login_at": "2026-11-22T14:00:00+00:00",
          "access_status": "rakan", "subscription_expires_at": None,
-         "trial_remaining": 10,
+         "trial_remaining": 10, "chat_user_id": str(EMAIL_ID),
          "telegram_user_id": EMAIL_ID, "auth_user_id": "secret"},
         {"account_type": "telegram", "telegram_id": "712",
          "email": None, "display_name": "Cikgu Contoh",
          "registered_at": "2026-11-20T12:10:00+00:00",
          "last_login_at": None,
          "access_status": "free", "subscription_expires_at": None,
-         "trial_remaining": 8,
+         "trial_remaining": 8, "chat_user_id": "712",
          "telegram_user_id": 712, "internal_note": "never-send"},
     ]
 }
@@ -136,7 +136,8 @@ class UserDirectoryTests(unittest.TestCase):
         self.assertEqual(len(result["items"]), 2)
         self.assertNotIn("telegram_user_id", str(result))
         self.assertNotIn("auth_user_id", str(result))
-        self.assertNotIn(str(EMAIL_ID), str(result))
+        self.assertEqual(result["items"][0]["chat_user_id"], str(EMAIL_ID))
+        self.assertEqual(result["items"][1]["chat_user_id"], "712")
         self.assertEqual(result["items"][0]["email"], "example@teacher.test")
         self.assertIsNone(result["items"][1]["last_login_at"])
         req, timeout = opener.requests[0]
