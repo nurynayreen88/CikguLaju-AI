@@ -83,7 +83,7 @@ async function loadWebPayments(){
     const canPay=!pending&&!active&&available;
     payEntry.hidden=!canPay;
     payDirectLink.hidden=!canPay;
-    payReceipt.value="";
+    if(pending||active||!available)payReceipt.value="";
     if(pending){
       const status=data.status;
       payStatus.textContent="⌛ RESIT MENUNGGU PENGESAHAN ADMIN\n"
@@ -114,7 +114,28 @@ async function loadWebPayments(){
         payStatus.textContent="⌛ RESIT SUDAH DIREKOD · MENUNGGU ADMIN\n"+
           "Permohonan #"+item.id+" • RM"+item.amount+
           "\nJangan buat bayaran atau hantar resit sekali lagi.";
-        payMessage.textContent="Status pakej sementara tidak tersedia tetapi resit anda telah direkod.";
+        payMessage.textContent="Resit anda tersimpan dalam Web. Menunggu semakan admin.";
+        payReceipt.value="";
+        return fallback;
+      }
+      if(fallback.already_member===true){
+        payStatus.textContent="✅ Rakan Pembangun anda sudah AKTIF. Tidak perlu bayar lagi.";
+        payReceipt.value="";
+        return fallback;
+      }
+      if(fallback.receipt_upload_available===true
+          &&fallback.receipt_plan?.code==="rakan_pembangun"
+          &&fallback.receipt_plan?.amount==="20.00"){
+        // Upload existing proof only. Never display or authorize a new
+        // payment when the live registration status is unavailable.
+        payCatalog={plans:[fallback.receipt_plan]};
+        payEntry.hidden=false;
+        payDirectLink.hidden=true;
+        payQrNotice.textContent="Kod QR tidak tersedia sekarang. Jangan buat bayaran baharu sehingga status pakej disahkan.";
+        payDesc.textContent="Sudah bayar RM20? Hantar resit asal melalui Web untuk semakan admin.";
+        payStatus.textContent="📎 HANTAR RESIT BAYARAN SEDIA ADA\n"+
+          "Sistem resit Web tersedia. Status pendaftaran baharu belum dapat disahkan.";
+        payMessage.textContent="Jika sudah membuat bayaran, muat naik resit di sini. Tidak perlu Telegram.";
         return fallback;
       }
     }catch(_unavailable){/* Keep payment locked when status cannot be confirmed. */}
@@ -157,7 +178,7 @@ paySubmit.addEventListener("click",async()=>{
   if(!p||!receiptFileValid(f)||payBusy||payEntry.hidden)return;
   if(!window.confirm("Sahkan anda telah membayar RM20 sekali untuk Rakan Pembangun dan ingin menghantar resit bagi semakan admin?"))return;
   payBusy=true;paymentReady();
-  payMessage.textContent="Menghantar resit dan menyemak rekod Pending…";
+  payMessage.textContent="Menyimpan resit secara peribadi di Web dan menyediakan rekod untuk semakan admin…";
   try{
     const body=new FormData();
     body.append("plan","rakan_pembangun");
@@ -165,7 +186,8 @@ paySubmit.addEventListener("click",async()=>{
     const result=await paymentApi("/api/web/payment/receipt",{method:"POST",body});
     if(!result.submitted||!result.id)throw Error("Rekod bayaran tidak dapat disahkan.");
     await loadWebPayments();
-    payMessage.textContent="Resit permohonan #"+result.id+" diterima. Menunggu pengesahan admin.";
+    payMessage.textContent="✅ Resit permohonan #"+result.id+
+      " telah disimpan di Web. Menunggu pengesahan admin. Tidak perlu Telegram.";
   }catch(error){
     // A lost HTTP response must not imply the receipt was lost.
     const current=await loadWebPayments();
