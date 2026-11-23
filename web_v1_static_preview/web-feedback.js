@@ -65,6 +65,7 @@
            });
            note.textContent="Status dikemas kini.";
            await loadAdmin();
+            window.cikgulajuAdminNotificationsRefresh?.();
          }catch(err){note.textContent=err.message||"Status tidak dapat disimpan.";}
          finally{save.disabled=false;}
        });
