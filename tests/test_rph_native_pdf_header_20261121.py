@@ -361,3 +361,45 @@ def test_native_pastel_pdf_never_gets_a_second_crossing_title_frame(tmp_path):
             assert len(banner) == 1, (subject, banner)
             assert "CikguLaju-RPH-pastel-20261121" not in (
                 pdf.metadata.get("keywords") or ""), subject
+
+
+def test_bm_kp2027_neutral_teacher_panel_preserves_pdf_content_and_missing_fields(tmp_path):
+    """Native 9-subject teacher panel matches the master, no overlay or extra rows."""
+    from reportlab.lib.colors import toColor
+    master_gray = toColor("#F5F7FA")
+    for subject in ("Bahasa Melayu", "English", "Pendidikan Moral"):
+        state = {"task": "rph", "subject": subject}
+        source = fixture(subject)
+        # Optional fields can differ by subject. Never insert them to
+        # make the rows match the master example.
+        source[2]._cellvalues[:] = [
+            row for row in source[2]._cellvalues
+            if row[0].getPlainText().casefold() not in ("emk / nilai", "kbat / pak21")
+        ]
+        before = Counter(_text_objects(source))
+        styled = premium_pdf_story(state, source)
+        assert styled is not source
+        assert Counter(_text_objects(styled)) == before
+        assert len(styled[2]._cellvalues) == len(source[2]._cellvalues) - 8
+        assert not any(
+            val in text
+            for text in _text_objects(styled)
+            for val in ("EMK / NILAI", "KBAT / PAK21")
+        )
+        header = styled[0]
+        assert len(header._bkgrndcmds) >= 2
+        neutral = [cmd for cmd in header._bkgrndcmds
+                   if cmd[0] == "BACKGROUND" and cmd[1] == (1, 0)]
+        assert len(neutral) == 1
+        c = neutral[0][3]
+        assert all(abs(a-b) < .001 for a,b in
+                   zip((c.red,c.green,c.blue),
+                       (master_gray.red,master_gray.green,master_gray.blue)))
+        final = _pdf(styled, tmp_path / ("KP_Master_" + subject.replace(" ","_") + ".pdf"))
+        with fitz.open(stream=final,filetype="pdf") as d:
+            assert len(d) == 1
+            assert "2.1.1" in d[0].get_text()
+            backgrounds = [x for x in d[0].get_drawings()
+                           if x.get("fill") is not None]
+            assert any(abs(v["rect"].width-60*mm)<1.5 for v in backgrounds)
+            assert any(abs(v["rect"].width-172*mm)<1.5 for v in backgrounds)
