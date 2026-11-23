@@ -1,0 +1,41 @@
+name: Guard public KSSR premium Word (freeze only)
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'rpt_2027/kssr_word_premium/**'
+      - 'scripts/guard_public_kssr_word_20261123.py'
+      - '.github/workflows/guard-public-kssr-word-20261123.yml'
+  push:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - 'rpt_2027/kssr_word_premium/**'
+      - 'scripts/guard_public_kssr_word_20261123.py'
+      - '.github/workflows/guard-public-kssr-word-20261123.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  freeze_new_public_word_files:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Prevent additional public premium Word files or changed baseline files
+        run: python scripts/guard_public_kssr_word_20261123.py
+      - name: Confirm guard fails on a synthetic extra Word file
+        run: |
+          python - <<'PY'
+          import runpy
+          guard=runpy.run_path("scripts/guard_public_kssr_word_20261123.py", run_name="guard_test")
+          original=guard["KNOWN_PUBLIC"]
+          assert guard["evaluate"](set(original),original)==[]
+          example=guard["PUBLIC_DIR"]+"bahasa_melayu/tahun_7.docx"
+          assert guard["evaluate"](set(original)|{example},original)==["NEW_PUBLIC_WORD_FILE "+example]
+          changed=dict(original)
+          changed[next(iter(changed))]="0"*64
+          assert len(guard["evaluate"](set(original),changed))==1
+          PY
