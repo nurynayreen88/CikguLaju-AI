@@ -19,8 +19,9 @@ from lxml import etree
 W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
 DOCUMENT = "word/document.xml"
 DIGITS = str.maketrans("0123456789", "٠١٢٣٤٥٦٧٨٩")
-# A URL/email is a reference, not a printed lesson number. Keep its identity.
-LINK = re.compile(r"https?://[^\s<>]+|www\.[^\s<>]+|[A-Za-z0-9_.+%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}", re.I)
+# Keep URLs, emails, HTML tags and entities intact (including numeric attributes).
+# Only visible decimal glyphs are converted.
+LINK = re.compile(r"<[^>]+>|&(?:#[0-9]+|#x[0-9a-fA-F]+|[A-Za-z][A-Za-z0-9]+);|https?://[^\s<>]+|www\.[^\s<>]+|[A-Za-z0-9_.+%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}", re.I)
 SPECIAL = ("ppki", "dlp", "sjkc", "sjkt", "kp2027")
 
 
