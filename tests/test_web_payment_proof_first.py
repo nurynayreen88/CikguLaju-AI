@@ -258,7 +258,7 @@ class PaymentWebTests(unittest.TestCase):
         self.assertEqual(body["chat_id"], "712")
         self.assertEqual(body["proof_web_sha256"], hashlib.sha256(RECEIPT).hexdigest())
         self.assertRegex(body["proof_web_path"],
-                         r"^receipts/712/[0-9a-f]{32}\\.pdf$")
+                         r"^receipts/712/[0-9a-f]{32}\.pdf$")
         self.assertNotIn("proof_telegram_file_id", body)
         storage.assert_called_once_with(CONF, "POST", body["proof_web_path"],
                                         data=RECEIPT, mime="application/pdf")
@@ -315,8 +315,8 @@ class PaymentWebTests(unittest.TestCase):
         self.assertEqual(proof["file_id"], "saved-proof")
         self.assertEqual(proof["admin_chat_id"], 901)
         self.assertEqual(proof["message_id"], 44)
-        self.assertIn(b'name="chat_id"\\r\\n\\r\\n901\\r\\n', transport.req.data)
-        self.assertNotIn(str(uid).encode() + b"\\r\\n", transport.req.data)
+        self.assertIn(b'name="chat_id"\r\n\r\n901\r\n', transport.req.data)
+        self.assertNotIn(str(uid).encode() + b"\r\n", transport.req.data)
         self.assertEqual(transport.timeout, 12)
         with patch.dict(os.environ, {"CIKGULAJU_WEB_ADMIN_IDS": ""}):
             with self.assertRaises(ProfileUnavailable):
@@ -341,7 +341,7 @@ class PaymentWebTests(unittest.TestCase):
             proof = _telegram_document(CONF, 712, RECEIPT, ".pdf",
                                        opener=transport)
         self.assertEqual(proof["admin_chat_id"], 901)
-        self.assertIn(b'name="chat_id"\\r\\n\\r\\n901\\r\\n', transport.req.data)
+        self.assertIn(b'name="chat_id"\r\n\r\n901\r\n', transport.req.data)
 
     def test_email_only_full_submit_creates_web_pending_and_notifies_admin(self):
         uid = 8000000000000000003
