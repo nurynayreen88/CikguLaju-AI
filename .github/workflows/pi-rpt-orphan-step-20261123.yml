@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - "tools/audit_pi_orphan_number_20261123.py"
+      - "tools/audit_pi_live_render_steps_20261123.py"
       - "web/pi_rpt_orphan_step_guard_20261123.py"
       - "tests/test_pi_rpt_orphan_step_guard_20261123.py"
       - "tools/run_telegram_with_curriculum_api.py"
@@ -20,3 +21,7 @@ jobs:
           python-version: "3.12"
       - name: Inspect exact active 809 verified RPT source
         run: python -m tools.audit_pi_orphan_number_20261123
+      - name: Install actual native RPH engine dependencies
+        run: bash build_jawi.sh
+      - name: Inspect source to runtime rendering boundaries
+        run: python -m tools.audit_pi_live_render_steps_20261123
