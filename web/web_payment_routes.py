@@ -420,6 +420,20 @@ def payment_catalog():
                     "note":"Pending hanya selepas resit sebenar. Kelulusan admin diperlukan."})
 
 
+@bp.get("/api/web/payment/status")
+def payment_own_status():
+    """Fail-safe: show existing Pending receipt even if the Telegram catalog is down.
+
+    Authenticated user's own payment only. No QR, price or ability to pay is exposed.
+    """
+    conf,uid,err=_auth()
+    if err is not None:return err
+    try:
+        return jsonify({"status":_status_rows(_existing(conf,uid))})
+    except (ProfileUnavailable,PaymentConflict,ValueError,TypeError,KeyError,OSError):
+        return jsonify({"error":"Status resit belum dapat disemak"}),503
+
+
 @bp.get("/api/web/payment/qr")
 def payment_qr():
     conf,uid,err=_auth()
