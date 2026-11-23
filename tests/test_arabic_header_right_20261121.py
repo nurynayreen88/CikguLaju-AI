@@ -23,8 +23,10 @@ def test_arabic_teacher_header_left_and_source_fields_preserved():
     doc = Document(BytesIO(out.getvalue()))
     assert len(doc.tables) == 4
     title_props = doc.paragraphs[0]._p.pPr
-    assert title_props.find(qn("w:pBdr")) is not None
-    assert title_props.find(qn("w:shd")).get(qn("w:fill")) == "FCE8D8"
+    # New shared visual contract: source title centred above first table,
+    # with NO standalone coloured border/shading around that title.
+    assert title_props.find(qn("w:pBdr")) is None
+    assert title_props.find(qn("w:shd")) is None
     header = doc.tables[0]
     assert header.alignment == WD_TABLE_ALIGNMENT.RIGHT
     assert header.table_direction == WD_TABLE_DIRECTION.RTL
