@@ -20,7 +20,7 @@ W = "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
 DOCUMENT = "word/document.xml"
 DIGITS = str.maketrans("0123456789", "٠١٢٣٤٥٦٧٨٩")
 # A URL/email is a reference, not a printed lesson number. Keep its identity.
-LINK = re.compile(r"https?://[^\\s<>]+|www\\.[^\\s<>]+|[A-Za-z0-9_.+%-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}", re.I)
+LINK = re.compile(r"https?://[^\s<>]+|www\.[^\s<>]+|[A-Za-z0-9_.+%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}", re.I)
 SPECIAL = ("ppki", "dlp", "sjkc", "sjkt", "kp2027")
 
 
@@ -72,7 +72,7 @@ def jawi_word_display_digits(original):
     All OOXML relationships, images, styles, hyperlinks, source fields and
     package members are preserved. Unsupported/uncertain layouts fail closed.
     """
-    if not isinstance(original, bytes) or not original.startswith(b"PK\\x03\\x04"):
+    if not isinstance(original, bytes) or not original.startswith(b"PK\x03\x04"):
         return original
     try:
         with ZipFile(BytesIO(original)) as src:
@@ -141,7 +141,7 @@ def jawi_word_display_digits(original):
                 if (len(old_nodes) != len(new_nodes)
                         or any(new.text != (
                             old.text if any(a.tag == W+"hyperlink" for a in old.iterancestors())
-                            else jawi_display_digits(old.text or "")
+                            else jawi_display_digits(old.text)
                         ) for old, new in zip(old_nodes, new_nodes))):
                     return original
             return output
