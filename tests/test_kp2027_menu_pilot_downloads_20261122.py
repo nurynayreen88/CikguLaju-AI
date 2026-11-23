@@ -9,7 +9,7 @@ MATH = (ROOT / "web" / "kp2027_math_canary_web.py").read_text(encoding="utf-8")
 
 class TestPilotNavigation(unittest.TestCase):
     def test_year1_has_only_verified_subject_routes(self):
-        selector = PAGE[PAGE.index('if(choice==="kp2027"){'):PAGE.index('if(choice==="sjkc"||choice==="sjkt"){')]
+        selector = PAGE[PAGE.index('if(choice==="kp2027"){'):PAGE.index('if(choice==="ppki"){')]
         self.assertIn('if(targetYear!=="1")return;', selector)
         self.assertIn('value:"MATH_KP2027"', selector)
         self.assertIn('value:"ALAM_KP2027"', selector)
