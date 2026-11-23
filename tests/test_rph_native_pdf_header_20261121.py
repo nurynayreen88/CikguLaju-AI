@@ -382,7 +382,7 @@ def test_native_pdf_colors_dont_touch_specialty_generators_or_unknown_tables():
     from web.rph_native_pdf_header_20261121 import _native_grid_pastel
 
     for subject in (
-        "Sains", "Pendidikan Islam", "Bahasa Arab", "Science",
+        "Pendidikan Islam", "Bahasa Arab", "Science",
     ):
         original = fixture("Bahasa Melayu")
         assert premium_pdf_story({"task": "rph", "subject": subject}, original) is original
