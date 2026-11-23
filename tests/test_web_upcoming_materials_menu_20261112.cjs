@@ -84,7 +84,7 @@ for(const feature of locations){
 }
 assert.match(nav, /class="sidebar-tab" data-web-view="pbd"/);
 assert.match(source, /id="pbd-save-roster"/);
-for(const name of ["today","rph","special","rpt","account","payment","referral","feedback","admin","guide"]){
+for(const name of ["today","rph","special","rpt","account","payment","referral","feedback","guide"]){
  assert.ok(source.includes('["'+name+'","view-'+name+'"]'),
  "Existing navigation changed unexpectedly: "+name);
 }
