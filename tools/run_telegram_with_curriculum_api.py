@@ -905,3 +905,17 @@ except Exception as _pi_term_exc:
     PI_JAWI_ENGLISH_TERMS_ACTIVE = False
     print("PI Jawi teaching terminology fix unavailable:",
           type(_pi_term_exc).__name__, flush=True)
+
+# Restore complete, pre-verified RPT item 2–4 when the legacy PI RPH row
+# formatter prints only the first instruction and a dangling "2.".
+# This touches final display rows shared by Word/PDF, NOT source DB or SK/SP.
+# Guarded by the exact RPT row ID, verified flag, 4 nonempty source steps,
+# and proof that the original first step was duplicated and truncated.
+try:
+    from web.pi_verified_rpt_activity_restore_20261123 import install as install_pi_source_steps
+    PI_VERIFIED_RPT_STEPS_RESTORED_ACTIVE = bool(install_pi_source_steps(telegram_runtime))
+except Exception as _pi_source_steps_exc:
+    PI_VERIFIED_RPT_STEPS_RESTORED_ACTIVE = False
+    print("PI verified RPT activity restore unavailable:",
+          type(_pi_source_steps_exc).__name__, flush=True)
+
