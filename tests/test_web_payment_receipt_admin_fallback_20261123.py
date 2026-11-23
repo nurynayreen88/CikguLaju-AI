@@ -21,7 +21,7 @@ class Reply:
         return json.dumps({"ok":True,"result":{
             "chat":{"id":self.destination},"message_id":42,
             "document":{"file_id":"private-file-id","file_unique_id":"u",
-                        "mime_type":"application/pdf"}}).encode()
+                        "mime_type":"application/pdf"}}}).encode()
 
 class TelegramTransport:
     def __init__(self): self.destinations=[]
