@@ -11,6 +11,7 @@ from hashlib import sha256
 import json
 from pathlib import Path
 import re
+from zipfile import ZipFile, ZipInfo, ZIP_DEFLATED
 
 from bs4 import BeautifulSoup
 from docx import Document
@@ -235,6 +236,17 @@ def build(year, pdf_manifest):
     output = OUT_DIR / "bahasa_melayu" / f"tahun_{year}.docx"
     output.parent.mkdir(parents=True, exist_ok=True)
     doc.save(output)
+    # Python's DOCX writer puts current timestamps on ZIP members.
+    # Seal identical OOXML contents with fixed archive dates for stable SHA.
+    normalized = output.with_suffix(".deterministic.docx")
+    with ZipFile(output) as original, ZipFile(normalized, "w", compression=ZIP_DEFLATED, compresslevel=9) as sealed:
+        for member in original.infolist():
+            info = ZipInfo(member.filename, date_time=(1980,1,1,0,0,0))
+            info.compress_type = ZIP_DEFLATED
+            info.create_system = member.create_system
+            info.external_attr = member.external_attr
+            sealed.writestr(info, original.read(member.filename))
+    normalized.replace(output)
     if not output.read_bytes().startswith(b"PK\x03\x04"):
         raise AssertionError((year, "Word ZIP signature missing"))
     check = Document(output)
