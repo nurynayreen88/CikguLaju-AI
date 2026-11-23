@@ -156,3 +156,47 @@ class IntegratedRPHTests(TestCase):
                 "students": "40", "reflection": "Follow-up " + "x" * 480,
             })) as document:
                 self.assertEqual(len(document), 1, (year, number))
+
+
+    def test_paired_reflection_matches_each_verified_criterion_in_word_and_pdf(self):
+        from io import BytesIO
+        from docx import Document
+        from web.english_integrated_rph_2027 import paired_plan_index
+
+        pair = paired_plan_index()[3, 13][-1]
+        evidence = [part[3] for part in pair]
+        self.assertEqual(len(evidence), 2)
+        teacher = {"class": "3 Amanah", "date": "2027-01-18",
+                   "time": "08:00 - 09:00", "students": "24"}
+        doc = Document(BytesIO(render(3, 13, "word", teacher)))
+        printed = "\n".join(p.text for p in doc.paragraphs)
+        for n, (lesson, _, _, criterion, _) in enumerate(pair, 1):
+            self.assertIn(f"Activity {n} (Lesson {lesson:03d})", printed)
+            self.assertIn(criterion.rstrip("."), printed)
+        self.assertNotIn("met the target", printed)
+        self.assertNotIn("Teacher notes", printed)
+        self.assertEqual(printed.count("Reflection"), 1)
+        self.assertIn("____ pupils", printed)
+        with fitz.open(stream=render(3, 13, "pdf", teacher), filetype="pdf") as pdf:
+            self.assertEqual(pdf.page_count, 1)
+            readable = " ".join(p.get_text() for p in pdf)
+            for criterion in evidence:
+                self.assertIn(" ".join(criterion.rstrip(".").split()),
+                              " ".join(readable.split()))
+            self.assertIn("Reflection", readable)
+
+        manual = "Pupils need another guided reading exercise tomorrow."
+        revised = Document(BytesIO(render(3, 13, "word",
+                                        {**teacher, "reflection": manual})))
+        paragraphs = [p.text for p in revised.paragraphs]
+        reflections = [p for p in paragraphs if p.startswith("Reflection")]
+        self.assertEqual(len(reflections), 1)
+        self.assertIn(manual, reflections[0])
+        self.assertNotIn("____ pupils", reflections[0])
+        self.assertNotIn("Teacher notes", "\n".join(paragraphs))
+        with fitz.open(stream=render(3, 13, "pdf",
+                                    {**teacher, "reflection": manual}),
+                       filetype="pdf") as pdf:
+            self.assertEqual(pdf.page_count, 1)
+            self.assertIn(manual, " ".join(p.get_text() for p in pdf))
+            self.assertNotIn("met the target", " ".join(p.get_text() for p in pdf))
