@@ -27,19 +27,28 @@ def premium_rph_details(document):
     for para in header.cell(0, 1).paragraphs:
         if ": " in para.text:
             label, value = para.text.split(": ", 1)
-            fields[label] = value
+            fields[label] = value.strip("\t ")
         elif para.text.endswith(":"):
             fields[para.text[:-1]] = ""
     identity = header.cell(0, 0)
     if len(identity.paragraphs) < 3:
         raise AssertionError("Lesson identity lost subject, year or topic")
-    english = identity.paragraphs[0].text.casefold() == "daily lesson plan"
-    fields["Topic" if english else "Tajuk"] = identity.paragraphs[2].text
-    # The source Year/Tahun is displayed once in the wide lesson identity.
-    # Read it back for source-parity checks without adding a duplicate row.
-    match = re.search(r"\b(?:Year|Tahun) [1-6]\b", identity.paragraphs[1].text)
-    if match:
-        fields["Year" if english else "Tahun/Tingkatan"] = match.group(0)
+    # New approved layout: the true RPH heading is centred OUTSIDE the
+    # header grid; its left panel contains exact source Subject, Year, Topic
+    # with aligned label/value tab stops. Preserve the legacy readback as a
+    # fail-safe for older teacher downloads.
+    new_fields = [p.text.split(": ", 1) for p in identity.paragraphs]
+    if (len(new_fields) == 3 and all(len(x) == 2 for x in new_fields)
+            and new_fields[0][0] in ("Subject", "Mata Pelajaran")
+            and new_fields[1][0] in ("Year", "Tahun/Tingkatan")
+            and new_fields[2][0] in ("Topic", "Tajuk")):
+        fields.update((label, value.strip("\t ")) for label, value in new_fields)
+    else:
+        english = identity.paragraphs[0].text.casefold() == "daily lesson plan"
+        fields["Topic" if english else "Tajuk"] = identity.paragraphs[2].text
+        match = re.search(r"\b(?:Year|Tahun) [1-6]\b", identity.paragraphs[1].text)
+        if match:
+            fields["Year" if english else "Tahun/Tingkatan"] = match.group(0)
     # The name of the subject appears in the identity panel, not in the
     # curriculum/standards rows. No duplicate subject or teacher metadata.
     forbidden = {"subject", "mata pelajaran", "date", "tarikh", "time", "masa",
