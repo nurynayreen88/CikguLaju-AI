@@ -1020,7 +1020,7 @@ body{background:linear-gradient(180deg,#edf7f7 0,#f4f8fc 240px,#f6f9fc 100%);col
 </section>
 <section id="view-rph" class="app-view" aria-labelledby="view-rph-heading" hidden>
 <h2 id="view-rph-heading" tabindex="-1">Sediakan RPH</h2><p id="account-access" class="notice" role="status"></p><section class="rph-guide" aria-label="Cara menyediakan RPH"><h3>Cara menyediakan RPH</h3><p><strong>1.</strong> Pilih Kurikulum → Tahun → Subjek → Unit/Tajuk → Lesson/PdP.</p><p><strong>2.</strong> Pilih kelas, tarikh, waktu mula/tamat dan bilangan murid jika perlu.</p><p><strong>3.</strong> Tekan <strong>Jana Bahan</strong> untuk melihat RPH PDF, RPH Word, Buku Teks, Audio dan Buku Aktiviti yang tersedia bagi Lesson/PdP ini, kemudian muat turun bahan pilihan.</p><p class="notice">Hanya RPH yang mempunyai sumber lengkap tersedia. 10 janaan RPH percuma dikongsi antara Web dan Telegram. Rakan Pembangun yang aktif mendapat akses tanpa had.</p></section><p id="selection-help" class="selection-help" role="status">Mula dengan memilih kurikulum.</p>
-<label for="curriculum">Kurikulum</label><select id="curriculum"><option value="">Pilih Kurikulum</option><option value="kssr">KSSR (SK)</option><option value="sjkc">KSSR (SJKC)</option><option value="sjkt">KSSR (SJKT)</option><option value="kp2027">KP2027</option><option value="ppki">Pendidikan Khas (PPKI)</option></select>
+<label for="curriculum">Kurikulum</label><select id="curriculum"><option value="">Pilih Kurikulum</option><option value="kssr">KSSR</option><option value="kp2027">KP2027</option><option value="ppki">Pendidikan Khas (PPKI)</option></select>
 <label for="year" id="year-label" hidden>Tahun</label><select id="year" hidden disabled><option value="">Pilih Kurikulum dahulu</option></select>
 <label for="subject" id="subject-label" hidden>Subjek</label><select id="subject" hidden disabled><option value="">Pilih Tahun dahulu</option></select>
 <div id="rph-subject-search" class="school-picker-combo" hidden>
@@ -1792,10 +1792,16 @@ const kp2027ScienceNotice="Komponen Sains Tahun 1 KP2027 berada dalam Alam dan M
 const ppkiSubject="PENGURUSAN_KEHIDUPAN_PPKI";
 function canSelectRph(){
  if(isDlpRphSubject(subject.value))return dlpRphDownload();
- return curriculum.value==="kssr"||
-  (curriculum.value==="ppki"&&["2","3","4","5","6"].includes(year.value)&&subject.value===ppkiSubject)||
-  (curriculum.value==="sjkc"&&["2","3"].includes(year.value)&&subject.value==="MATH_SJKC")||
-  (curriculum.value==="sjkt"&&year.value==="2"&&subject.value==="MATH_SJKT");
+ if(curriculum.value==="ppki")
+  return ["2","3","4","5","6"].includes(year.value)&&subject.value===ppkiSubject;
+ if(curriculum.value!=="kssr")return false;
+ if(subject.value==="MATH_SJKC")return ["2","3"].includes(year.value);
+ if(subject.value==="MATH_SJKT")return year.value==="2";
+ // Do not enable SK downloads for a school variant without an approved RPH.
+ if(subject.value.startsWith("planned:")||
+    [...sjkcSubjectOptions,...sjktSubjectOptions].some(item=>item.value===subject.value))
+  return false;
+ return Boolean(subject.value);
 }
 function isDlpRphSubject(code){
  return code==="SCIENCE_DLP"||code==="MATH_DLP";
@@ -1816,20 +1822,54 @@ const sjktSubjectOptions=subjectVariants.filter(item=>item.curriculum==="sjkt")
 const plannedKssrLanguages=subjectVariants.filter(item=>item.curriculum==="kssr")
  .map(item=>({...item,value:item.code}));
 const rphVariantRpt=document.getElementById("rph-variant-rpt");
-function fillKssrSubjects(items){
+function kssrSchoolLabel(label,school){
+ const raw=String(label||"").replace(/\s*\(SJK\)\s*$/i,"").trim();
+ return /\((?:SK|SJKC|SJKT)\)$/i.test(raw)
+  ?raw.replace(/\((?:SK|SJKC|SJKT)\)$/i,"("+school+")")
+  :raw+" ("+school+")";
+}
+function fillKssrSubjects(items,readySjkc=[],readySjkt=[]){
  const regular=items.filter(item=>!isDlpRphSubject(item.value));
  const available=new Set(regular.map(item=>String(item.value).toLowerCase()));
  const dlp=dlpSubjectOptions.filter(item=>dlpRphAvailable(year.value,item.value));
  const planned=plannedKssrLanguages.filter(item=>!available.has(item.value));
- fillSelect(subject,[...regular,...dlp,...planned.map(item=>({
-  ...item,value:"planned:"+item.value,label:item.label+" — Dalam Penyediaan"
- }))],"Pilih Subjek");
+ const sjkcReady=readySjkc.some(item=>item.value==="MATH_SJKC");
+ const sjktReady=readySjkt.some(item=>item.value==="MATH_SJKT");
+ const schools=[
+  ...sjkcSubjectOptions.filter(item=>(item.rpt_years||[]).includes(Number(year.value))||
+    (item.value==="matematik_sjkc"&&year.value==="3"))
+   .map(item=>({...item,
+    value:item.value==="matematik_sjkc"&&sjkcReady?"MATH_SJKC":item.value,
+    label:kssrSchoolLabel(item.label,"SJKC")+
+      (item.value==="matematik_sjkc"&&sjkcReady?"":" — RPH Dalam Penyediaan")
+   })),
+  ...(year.value==="2"?sjktSubjectOptions.map(item=>({...item,
+    value:sjktReady?"MATH_SJKT":item.value,
+    label:kssrSchoolLabel(item.label,"SJKT")+
+      (sjktReady?"":" — RPH Dalam Penyediaan")
+  })):[])
+ ];
+ fillSelect(subject,[
+  ...regular.map(item=>({...item,label:kssrSchoolLabel(item.label,"SK")})),
+  ...dlp,
+  ...planned.map(item=>({...item,value:"planned:"+item.value,
+   label:kssrSchoolLabel(item.label,"SK")+" — Dalam Penyediaan"})),
+  ...schools
+ ],"Pilih Subjek");
+}
+async function kssrSubjectOptionsForYear(targetYear){
+ const [sk,sjkc,sjkt]=await Promise.all([
+  loadOptions("subjects").catch(()=>[]),
+  ["2","3"].includes(targetYear)
+    ?loadOptions("subjects",{curriculum:"sjkc"}).catch(()=>[]):Promise.resolve([]),
+  targetYear==="2"
+    ?loadOptions("subjects",{curriculum:"sjkt"}).catch(()=>[]):Promise.resolve([])
+ ]);
+ return {sk,sjkc,sjkt};
 }
 const primaryYears=[1,2,3,4,5,6].map(n=>({value:String(n),label:"Tahun "+n}));
 const curriculumYears={
  kssr:primaryYears,
- sjkc:primaryYears,
- sjkt:primaryYears.filter(option=>option.value==="2"),
  ppki:primaryYears.filter(option=>["2","3","4","5","6"].includes(option.value)),
  kp2027:[{value:"1",label:"Tahun 1 (KP Baharu)"}]
 };
@@ -1995,7 +2035,7 @@ window.prepareRphFromToday=async function(slot,dateIso,inlineHost=null){
   }else showWebView("rph");
   const selectionEpoch=++todaySelectionEpoch;
   const schoolCurriculum=["sjkc","sjkt"].includes(slot.curriculum)?slot.curriculum:"";
-  curriculum.value=schoolCurriculum||"kssr";
+  curriculum.value="kssr";
   selectCurriculum();
   year.value=String(slot.year);
   showStep(subject,true);
@@ -2003,10 +2043,11 @@ window.prepareRphFromToday=async function(slot,dateIso,inlineHost=null){
   const expectedRevision=subjectLoadRevision;
   const subjects=slot.curriculum==="dlp"&&dlpRphAvailable(expectedYear,slot.subject_code)
    ?dlpSubjectOptions
-   :await loadOptions("subjects",schoolCurriculum?{curriculum:schoolCurriculum}:{});
+   :await kssrSubjectOptionsForYear(expectedYear);
   if(selectionEpoch!==todaySelectionEpoch)return false;
   if(expectedRevision!==subjectLoadRevision)throw Error("Pilihan ditukar semasa bacaan jadual.");
-  fillSelect(subject,subjects,"Pilih Subjek");
+  if(Array.isArray(subjects))fillSelect(subject,subjects,"Pilih Subjek");
+  else fillKssrSubjects(subjects.sk,subjects.sjkc,subjects.sjkt);
   if(![...subject.options].some(o=>o.value===slot.subject_code)){
    catalogStatus.textContent="Subjek dalam jadual belum tersedia untuk Tahun "+expectedYear+" dalam sumber Telegram.";
    updateSelectionHelp("Pilih subjek yang tersedia atau semak ejaan subjek dalam Jadual Waktu.");
@@ -2057,26 +2098,6 @@ year.addEventListener("change",async()=>{
   catalogStatus.textContent="Empat subjek KP2027 Tahun 1 tersedia; PdP dipaparkan mengikut status semakan. "+kp2027ScienceNotice;
   return;
  }
- if(choice==="sjkc"||choice==="sjkt"){
-  const sjkt=choice==="sjkt", school=sjkt?"SJKT":"SJKC";
-  const mathCode="MATH_"+school, mathVariant="matematik_"+choice;
-  let mathReady=false;
-  if(targetYear==="2"||(!sjkt&&targetYear==="3")){
-   try{
-    const items=await loadOptions("subjects",{curriculum:choice});
-    mathReady=items.some(item=>item.value===mathCode);
-   }catch(_error){}
-   if(revision!==subjectLoadRevision)return;
-  }
-  const variants=sjkt?sjktSubjectOptions:sjkcSubjectOptions;
-  fillSelect(subject,variants.map(item=>({
-   value:mathReady&&item.value===mathVariant?mathCode:item.value,
-   label:mathReady&&item.value===mathVariant?item.label:item.label+" — RPH Dalam Penyediaan"
-  })),"Pilih Subjek");
-  showStep(subject,true);
-  updateSelectionHelp("Pilih subjek "+school+".");
-  return;
- }
  if(choice==="ppki"){
   try{
    const items=await loadOptions("subjects",{curriculum:"ppki"});
@@ -2089,12 +2110,12 @@ year.addEventListener("change",async()=>{
  }
  if(choice!=="kssr")return;
  showStep(subject,true);
- updateSelectionHelp("Pilih Subjek.");
+ updateSelectionHelp("Pilih subjek SK, SJKC atau SJKT.");
  try{
-  const items=await loadOptions("subjects");
+  const items=await kssrSubjectOptionsForYear(targetYear);
   if(revision!==subjectLoadRevision)return;
-  fillKssrSubjects(items);
-  if(!items.length)updateSelectionHelp("Bahan bagi pilihan ini sedang disediakan.");
+  fillKssrSubjects(items.sk,items.sjkc,items.sjkt);
+  if(!items.sk.length)updateSelectionHelp("Katalog subjek SK belum dapat disemak; pilihan SJKC/SJKT yang mempunyai sumber masih ditunjukkan.");
  }catch(error){
   if(revision===subjectLoadRevision){
    fillKssrSubjects([]);
@@ -2158,12 +2179,12 @@ subject.addEventListener("change",async()=>{
   }
   return;
  }
- if(["sjkc","sjkt"].includes(curriculum.value)&&!canSelectRph()){
-  const variants=curriculum.value==="sjkt"?sjktSubjectOptions:sjkcSubjectOptions;
-  const variant=variants.find(item=>item.value===code);
-  if(!variant)return;
-  updateSelectionHelp("RPH "+variant.label+" Tahun "+targetYear+" dalam penyediaan.");
-  return;
+ if(curriculum.value==="kssr"&&!canSelectRph()){
+  const variant=[...sjkcSubjectOptions,...sjktSubjectOptions].find(item=>item.value===code);
+  if(variant){
+   updateSelectionHelp("RPH "+variant.label+" Tahun "+targetYear+" dalam penyediaan.");
+   return;
+  }
  }
  if(dlpRphDownload()){
   const selectedSubject=dlpSubjectOptions.find(item=>item.value===code);
@@ -2179,13 +2200,13 @@ subject.addEventListener("change",async()=>{
   }catch(error){if(current())catalogStatus.textContent=error.message;}
   return;
  }
- if(!canSelectRph())return;
  const planned=plannedKssrLanguages.find(item=>"planned:"+item.value===code);
  if(planned){
   catalogStatus.textContent=planned.label+" Tahun "+targetYear+" — Dalam Penyediaan.";
   updateSelectionHelp("RPH dan bahan PdP sedang disediakan.");
   return;
  }
+ if(!canSelectRph())return;
  updateSelectionHelp("Pilih Tema, Unit atau Tajuk untuk melihat Lesson/PdP.");
  try{
   if(code===ppkiSubject){
@@ -2676,7 +2697,7 @@ const rptMobileLink=document.getElementById("rpt-download-mobile");
 const rptWordLink=document.getElementById("rpt-download-word");
 const rptStatus=document.getElementById("rpt-status");
 const rptCurricula=[
- ["kssr","KSSR (SK)"],["sjkc","KSSR (SJKC)"],["sjkt","KSSR (SJKT)"],["kp2027","KP2027"],["ppki","Pendidikan Khas (PPKI)"]
+ ["kssr","KSSR"],["kp2027","KP2027"],["ppki","Pendidikan Khas (PPKI)"]
 ];
 let rptCatalog=null;
 let rptDownloading=false;
@@ -2684,8 +2705,6 @@ let rptDownloading=false;
 function rptCurriculumFor(subject,year){
  if(subject==="pengurusan_kehidupan_ppki"||subject==="kemahiran_manipulatif_ppki")return "ppki";
  if(year===1)return "kp2027";
- if(subject.endsWith("_sjkc")||subject==="bahasa_melayu_sjk")return "sjkc";
- if(subject.endsWith("_sjkt"))return "sjkt";
  return "kssr";
 }
 function rptYearLabel(year,label){
@@ -2843,7 +2862,8 @@ function refreshRptDownload(){
   return;
  }
  if(selection.curriculum==="ppki"){rptStatus.textContent=year.note;return;}
- const calendar=["sjkc","sjkt"].includes(selection.curriculum)?year.note:"";
+ const calendar=(selection.item.code.endsWith("_sjkc")||selection.item.code.endsWith("_sjkt")||
+  selection.item.code==="bahasa_melayu_sjk")?year.note:"";
  const cover=rptCatalog.personalizationAllowed?"Cetakan PDF dengan nama dan logo daripada Profil Guru.":"";
  rptStatus.textContent=[calendar,cover].filter(Boolean).join(" ");
 }
@@ -2886,10 +2906,14 @@ rptYear.addEventListener("change",()=>{
  rptKp2027Group.value="";
  const rows=rptEntries(Number(rptYear.value))
   .sort((a,b)=>subjectCollator.compare(a.item.label,b.item.label))
-  .map(({item,year})=>{
+  .map(({item,year,curriculum:kind})=>{
    const status=year.coming_soon?" — Dalam Penyediaan":
     !year.pdf_ready?" — Belum tersedia":!year.download_enabled?" — Akses berbayar":"";
-   return {label:item.label,value:item.code,option:new Option(item.label+status,item.code)};
+   const school=item.code.endsWith("_sjkc")||item.code==="bahasa_melayu_sjk"
+    ?"SJKC":item.code.endsWith("_sjkt")?"SJKT":"SK";
+   const display=kind==="kssr"&&!item.code.endsWith("_dlp")
+    ?kssrSchoolLabel(item.label,school):item.label;
+   return {label:display,value:item.code,option:new Option(display+status,item.code)};
   });
  resetRptSubjects(rptYear.value?"Pilih atau cari subjek":"Pilih tahun dahulu",rows);
  refreshRptDownload();
