@@ -71,3 +71,10 @@
 - Bank tambahan `audits/kp2027_bm_sjk_pbd_pengayaan_26sp_20261123.json`: 26 kaedah PBD dengan bukti yang boleh diperhatikan serta 26 pengayaan yang padan dengan setiap SP. Kedua-dua fasa 52 PdP menggunakan bukti PBD dan pengayaan spesifik yang sama bagi SP masing-masing; aktiviti penerokaan dan aplikasi masih berbeza.
 - Penjana QA `tools/kp2027_bmsjk_qa_word_pdf.py` mengambil versi editorial tanpa mengubah 52 rekod sumber: ayat murid dalam Penutup yang generik diganti pemeriksaan khusus SP; ayat PBD serta Pengayaan yang berulang diganti kandungan khusus SP. Teks SK dan SP rasmi kekal.
 - Semua bahan kekal `QA_HOLD_NOT_READY`; 0 READY, belum dipublish melalui Web dan belum disahkan pedagogi oleh guru. CI menguji 52 Word, 52 PDF, ketepatan teks dan halaman A4. Tiada perubahan RPT, kuota, bayaran, akaun, PI v2 atau RPH lain.
+
+## 23 November 2026 — KP2027 BM SJK T1: tajuk Aktiviti khusus bagi 52 RPH (QA sahaja)
+
+- Punca: Aktiviti 1/2/3 dalam 52 contoh RPH mempunyai tajuk generik yang sama. Guru sukar memahami fokus pelajaran daripada tajuk aktiviti.
+- Bank baru `audits/kp2027_bm_sjk_activity_titles_26sp_20261123.json`: **26 SP × 2 fasa × 3 tajuk**; 52 triplet berlainan bagi penerokaan dan aplikasi; aktiviti kekal pada susunan asal, nama yang dicetak ringkas, jelas dan bold.
+- Penjana QA `tools/kp2027_bmsjk_qa_word_pdf.py` menggabungkan tajuk khusus pada Word/PDF sahaja daripada bank editorial; rekod sumber, arahan guru/murid, teks SK/SP rasmi, RPT A/B belum lengkap dan keputusan PBD tidak diubah.
+- Ujian regression memeriksa 156 tajuk, 52 PDF A4, Word A4 dengan empat jadual seragam, label Refleksi sahaja, sumber SP konsisten, dan 0 READY. Belum dibuka di Web/Telegram. Bahan lama tidak disentuh.
