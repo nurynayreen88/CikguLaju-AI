@@ -103,3 +103,37 @@ def test_non_document_zip_members_preserved_byte_for_byte():
         for name in source.namelist():
             if name != "word/document.xml":
                 assert source.read(name) == target.read(name)
+
+
+def test_real_word_to_pdf_renders_a4_with_complete_header(tmp_path):
+    import subprocess
+    import fitz
+
+    rows = source_rows(1)
+    assert rows is not None
+    data = boxed_word_bytes(make_docx(1, rows).getvalue(), FIELDS)
+    word = tmp_path / "english-y6-001.docx"
+    word.write_bytes(data)
+    result = subprocess.run(
+        ["libreoffice",
+         "-env:UserInstallation=" + (tmp_path / "profile").as_uri(),
+         "--headless", "--convert-to", "pdf",
+         "--outdir", str(tmp_path), str(word)],
+        timeout=100, capture_output=True, text=True,
+    )
+    assert result.returncode == 0, (result.stdout, result.stderr)
+    pdf = tmp_path / "english-y6-001.pdf"
+    assert pdf.is_file()
+    with fitz.open(pdf) as document:
+        assert 1 <= len(document) <= 4
+        combined = "\n".join(page.get_text() for page in document)
+        assert "RANCANGAN PENGAJARAN HARIAN" in combined
+        assert "Main Learning Standard" in combined
+        assert "Activity 1" in combined
+        assert "Reflection" in combined
+        for page in document:
+            assert abs(page.rect.width - 595.3) < 3
+            assert abs(page.rect.height - 841.9) < 3
+            for box in page.get_text("blocks"):
+                assert box[0] >= -1 and box[2] <= page.rect.width + 1
+                assert box[1] >= -1 and box[3] <= page.rect.height + 1
