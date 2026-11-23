@@ -4,6 +4,52 @@ const $=id=>document.getElementById(id);
 const own=$("web-chat-messages"), admin=$("web-admin-chat-thread");
 if(!own||!admin)return;
 let activeUser="";
+const topChat=$("web-chat-top"),badge=$("web-chat-unread-badge"),
+  unreadLabel=$("web-chat-unread-label"),toast=$("web-chat-alert"),
+  toastText=$("web-chat-alert-text"),hint=$("web-chat-top-hint"),
+  workspace=$("workspace");
+const originalTitle=document.title;
+let unreadChecking=false,ownLoading=false;
+function updateNotice(count){
+  const unread=Number.isInteger(count)&&count>0?count:0;
+  badge.hidden=unread===0;
+  unreadLabel.hidden=unread===0;
+  badge.textContent=unread>=99?"99+":String(unread);
+  topChat.classList.toggle("has-unread",unread>0);
+  hint.textContent=unread>0?"Tekan untuk baca":"Buka perbualan";
+  toast.hidden=unread===0;
+  toastText.textContent=unread>=99?"99+ mesej baharu daripada admin":
+    unread+" mesej baharu daripada admin";
+  document.title=unread>0?"("+ (unread>=99?"99+":unread) +") "+originalTitle:originalTitle;
+}
+async function checkUnread(){
+  if(unreadChecking||!workspace||workspace.hidden||document.hidden)return;
+  unreadChecking=true;
+  try{
+    const data=await api("/api/web/chat/unread");
+    if(!Number.isInteger(data.unread_count)||data.unread_count<0)
+      throw Error("Status notifikasi tidak sah");
+    updateNotice(data.unread_count);
+    if(topChat.open&&data.unread_count>0&&!ownLoading)void ownLoad();
+  }catch(_error){/* Keep the last verified unread count visible. */}
+  finally{unreadChecking=false;}
+}
+function openOwnChat(){
+  topChat.open=true;
+  topChat.scrollIntoView({block:"start",behavior:"smooth"});
+  void ownLoad();
+}
+topChat.addEventListener("toggle",()=>{if(topChat.open)void ownLoad();});
+toast.addEventListener("click",openOwnChat);
+document.addEventListener("visibilitychange",()=>{if(!document.hidden)void checkUnread();});
+window.addEventListener("focus",()=>void checkUnread());
+window.cikgulajuChatOnLogin=()=>void checkUnread();
+if(workspace){
+  new MutationObserver(()=>{if(!workspace.hidden)void checkUnread();})
+    .observe(workspace,{attributes:true,attributeFilter:["hidden"]});
+}
+setInterval(()=>void checkUnread(),60000);
+if(!workspace?.hidden)void checkUnread();
 function render(node,items,forAdmin=false){
   node.replaceChildren();
   if(!items.length){node.textContent="Belum ada mesej.";return;}
@@ -34,8 +80,23 @@ async function api(path,opts){
   return j;
 }
 async function ownLoad(){
-  try{render(own,(await api("/api/web/chat")).items);$("web-chat-status").textContent="";}
-  catch(e){$("web-chat-status").textContent=e.message;}
+  if(ownLoading||!topChat.open)return;
+  ownLoading=true;
+  try{
+    const data=await api("/api/web/chat");
+    const items=Array.isArray(data.items)?data.items:[];
+    render(own,items);
+    $("web-chat-status").textContent="";
+    const latestAdmin=[...items].reverse().find(item=>item.sender_role==="admin");
+    if(latestAdmin && Number.isSafeInteger(latestAdmin.id) && latestAdmin.id>0){
+      await api("/api/web/chat/read",{
+        method:"POST",headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({last_seen_admin_id:String(latestAdmin.id)})
+      });
+    }
+    void checkUnread();
+  }catch(e){$("web-chat-status").textContent=e.message;}
+  finally{ownLoading=false;}
 }
 $("web-chat-refresh").addEventListener("click",ownLoad);
 $("web-chat-form").addEventListener("submit",async e=>{
@@ -99,8 +160,7 @@ $("web-admin-chat-form").addEventListener("submit",async e=>{
     box.value="";$("web-admin-chat-file").value="";await openThread(activeUser);
   }catch(err){$("web-admin-chat-status").textContent=err.message;}
 });
-document.querySelectorAll('[data-web-view="feedback"]').forEach(b=>
-  b.addEventListener("click",ownLoad));
+// Chat lives at the top; the feedback tab is reserved for comments.
 document.querySelectorAll('[data-web-view="admin"]').forEach(b=>
   b.addEventListener("click",adminLoad));
 })();
