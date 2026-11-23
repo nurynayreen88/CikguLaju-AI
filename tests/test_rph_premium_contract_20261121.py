@@ -107,7 +107,6 @@ def test_special_renderers_remain_protected_not_generic_ltr():
     assert markers == set(SPECIAL)
     assert set(REFERENCE) <= markers
     for s in (
-        {"task": "rph", "subject": "Sains"},
         {"task": "rph", "subject": "Science"},
         {"task": "rph", "subject": "Matematik", "curriculum_version": "DLP"},
         {"task": "rph", "subject": "English", "programme": "PPKI"},
@@ -117,6 +116,8 @@ def test_special_renderers_remain_protected_not_generic_ltr():
     # PI/Jawi deliberately has a palette, but must not go through the
     # generic PDF LTR table reflow. Verified specialty tests cover real
     # seven-flowable fixture, not just this no-op smoke.
+    assert "sains" in m["palette_special_cases"]
+    assert color_for_state({"task": "rph", "subject": "Sains"}) == "E7F3EA"
     assert "pendidikan islam" in m["palette_special_cases"]
     assert "pendidikan islam" in markers
     inert = ["original_special_rph"]
