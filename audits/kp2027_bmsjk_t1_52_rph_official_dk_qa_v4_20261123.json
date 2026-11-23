@@ -1,0 +1,123 @@
+{
+  "id": "kp2027_bmsjk_year1_52_rph_official_dk_corrections_qa_v4_20261123",
+  "date": "2026-11-23",
+  "curriculum": "KP2027",
+  "subject": "Bahasa Melayu SJK",
+  "year": 1,
+  "status": "QA_ONLY_NOT_READY",
+  "academic_approved": false,
+  "web_published": false,
+  "source_document": {
+    "title": "Dokumen Kurikulum Bahasa Melayu Sekolah Jenis Kebangsaan Tahun 1",
+    "publisher": "BPK KPM",
+    "isbn": "978-967-420-798-4",
+    "private_drive_id": "19eJeNYAx5osXc2rvNjeE_pihg9euJS0S",
+    "source_pdf_sha256": "2d70e9fcbf84bc13d9f544eee0cee072e585eb82d9c02b916e519537c5b53efe",
+    "source_pdf_bytes": 2389900
+  },
+  "archive": {
+    "private_drive_file_id": "1BWYZGM0WYZCnAByTRuK9U5R71zVoOn6a",
+    "shared": false,
+    "owner_only_verified": true,
+    "name": "CIKGULAJU_KP2027_BMSJK_T1_52_RPH_PADANAN_DK_QA_V4_20261123.zip",
+    "bytes": 3515027,
+    "sha256": "87d31b8fdd392b0bea2b6ee0a03d45d3e7a6ee401ad713144aecee548c43a00f",
+    "word": 52,
+    "pdf": 52,
+    "zip_entries": 105
+  },
+  "private_report_drive_id": "1zyBPQ_eRKS6X6Grzmb-9yi8ZE8prunpR",
+  "source_qa_v3_preserved": true,
+  "modification": {
+    "only_16_pdp": [
+      1,
+      2,
+      3,
+      4,
+      9,
+      10,
+      15,
+      16,
+      17,
+      18,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34
+    ],
+    "official_sp_1_2_2": {
+      "pdp": [
+        9,
+        10
+      ],
+      "fix": "Replace incorrect meminta izin scenario with ucapan selamat, penghargaan and permohonan maaf in source material references"
+    },
+    "required_lagu_dan_permainan_bahasa": {
+      "pdp": [
+        1,
+        2,
+        3,
+        4,
+        15,
+        16,
+        17,
+        18,
+        31,
+        32,
+        33,
+        34
+      ],
+      "sp": [
+        "1.1.1",
+        "1.1.2",
+        "2.1.1",
+        "2.1.2",
+        "3.1.1",
+        "3.1.2"
+      ],
+      "fix": "Add explicit brief song and language-game method to Set Induksi, and matching material to BBM; preserve main activities"
+    },
+    "official_sp_2_3_3": {
+      "pdp": [
+        29,
+        30
+      ],
+      "fix": "Specify moral-values story in referenced drama script"
+    },
+    "preserved": [
+      "all 52 SK descriptions",
+      "all 52 SP descriptions",
+      "all 52 objectives and success criteria",
+      "all 52 PBD entries",
+      "all 52 closure and enrichment",
+      "all unrelated activities"
+    ]
+  },
+  "qa": {
+    "official_source_sp_verified": 26,
+    "official_source_sk_verified": 9,
+    "sp_per_two_pdp": 26,
+    "docx_pdf_pair_complete": 52,
+    "docx_valid": 52,
+    "pdf_one_page": 52,
+    "word_pdf_core_text_parity": 52,
+    "three_bold_activities": 52,
+    "visually_reviewed_pdp": [
+      1,
+      9,
+      10,
+      29,
+      31,
+      34
+    ],
+    "pdf_not_overlay": true
+  },
+  "release_blockers": [
+    "Official DK fidelity of these 52 drafts is technically checked but teacher-facing publication still requires academic approval",
+    "52 proposed PdP (2 per SP) are not KPM's confirmed full-year RPT allocation",
+    "RPT annual plan for Kumpulan A/B and actual teaching weeks remain to verify",
+    "No READY promotion, production Web replacement, credit or billing edits"
+  ]
+}
