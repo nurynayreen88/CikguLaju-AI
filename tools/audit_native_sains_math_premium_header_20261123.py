@@ -124,8 +124,8 @@ def main():
         assert list(item.get("pdf_dimensions") or []) == [595, 842], item
         panels = item.get("metadata_first_row") or []
         assert len(panels) == 2, item
-        assert panels[0]["text_head"].startswith("Mata Pelajaran\\t"), item
-        assert panels[1]["text_head"].startswith("Kelas\\t"), item
+        assert panels[0]["text_head"].startswith("Mata Pelajaran" + chr(9)), item
+        assert panels[1]["text_head"].startswith("Kelas" + chr(9)), item
         assert panels[0]["tabs"] == [[2050], [2050], [2050]], item
         assert panels[1]["tabs"] == [[1430]] * 5, item
     print("NATIVE_SAINS_MATH_10_REAL_A4_FOUR_TABLE_HEADERS_VERIFIED")
