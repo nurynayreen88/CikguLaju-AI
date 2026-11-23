@@ -7,11 +7,12 @@ teacher metadata, table structure, fonts, page dimensions or lesson content.
 from __future__ import annotations
 
 from io import BytesIO
+from collections import Counter
 from copy import deepcopy
 import re
 import os
 from pathlib import Path
-from zipfile import ZipFile
+from zipfile import BadZipFile, ZipFile
 
 from lxml import etree
 
@@ -246,6 +247,43 @@ def style_three_table_word_bytes(document, fill):
     return output.getvalue()
 
 
+
+def _preserves_source_content(original, styled):
+    """Fail closed unless every source text token and untouched DOCX part survives.
+
+    The approved premium header deliberately relocates text into a new banner,
+    so compare the *multiset* of exact OOXML tokens, not their position. This
+    is a final safety gate after all presentation-only transforms, including
+    future optional ones. No source Word file or DB record is rewritten.
+    """
+    if not (isinstance(original, bytes) and isinstance(styled, bytes)):
+        return False
+    if not (original.startswith(b"PK\x03\x04") and styled.startswith(b"PK\x03\x04")):
+        return False
+    try:
+        with ZipFile(BytesIO(original)) as before, ZipFile(BytesIO(styled)) as after:
+            names = before.namelist()
+            if (DOC not in names or names != after.namelist()
+                    or before.testzip() is not None or after.testzip() is not None):
+                return False
+            if any(before.read(name) != after.read(name)
+                   for name in names if name != DOC):
+                return False
+            a = etree.fromstring(before.read(DOC))
+            b = etree.fromstring(after.read(DOC))
+    except (OSError, ValueError, BadZipFile, etree.XMLSyntaxError):
+        return False
+    protected = {
+        W + "t", W + "instrText", W + "delText", W + "delInstrText",
+        "{http://schemas.openxmlformats.org/drawingml/2006/main}t",
+    }
+    def tokens(root):
+        return Counter((node.tag, node.text or "")
+                       for node in root.iter() if node.tag in protected)
+    return tokens(a) == tokens(b)
+
+
+
 def style_word_path(path, fill, *, premium_header=False, rtl_jawi=False):
     target = Path(path)
     if target.suffix.lower() != ".docx" or not target.is_file():
@@ -258,6 +296,8 @@ def style_word_path(path, fill, *, premium_header=False, rtl_jawi=False):
         from web.rph_equal_width_20261121 import equal_width_four_table_bytes
         updated = equal_width_four_table_bytes(updated, rtl_jawi=rtl_jawi)
     if updated == original:
+        return False
+    if not _preserves_source_content(original, updated):
         return False
     temporary = target.with_name(target.name + ".style.tmp")
     try:

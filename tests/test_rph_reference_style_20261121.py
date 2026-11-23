@@ -6,7 +6,8 @@ from docx import Document
 from docx.oxml.ns import qn
 
 from web.rph_reference_style_20261121 import (
-    color_for_state, install, style_three_table_word_bytes,
+    _preserves_source_content, color_for_state, install,
+    style_three_table_word_bytes, style_word_path,
 )
 
 
@@ -114,3 +115,56 @@ def test_install_keeps_original_on_nonreference_and_double_install():
     assert runtime.create_word_file is first
     assert runtime.create_word_file({"task":"rph","subject":"Sains"}, "", "test") == "/nonexistent.docx"
     assert runtime.calls == ["Sains"]
+
+
+def test_final_guard_accepts_presentation_but_preserves_full_source_package(tmp_path):
+    original = _fixture()
+    styled = style_three_table_word_bytes(original, "EAF1FB")
+    assert styled != original
+    assert _preserves_source_content(original, styled)
+    word = tmp_path / "original_rph.docx"
+    word.write_bytes(original)
+    assert style_word_path(word, "EAF1FB")
+    assert word.read_bytes() == styled
+    assert _visible(word.read_bytes()) == _visible(original)
+
+
+def test_final_guard_rejects_missing_or_changed_sk_sp_even_if_zip_is_valid(
+    monkeypatch, tmp_path,
+):
+    import web.rph_reference_style_20261121 as presentation
+
+    original = _fixture()
+    doc = Document(io.BytesIO(original))
+    doc.tables[2].cell(0, 1).text = "1.1.2 Standard telah diubah."
+    modified = io.BytesIO()
+    doc.save(modified)
+    tampered = modified.getvalue()
+    assert not _preserves_source_content(original, tampered)
+
+    word = tmp_path / "original_rph.docx"
+    word.write_bytes(original)
+    # Simulate a faulty future presentation adapter: do not let it replace Word.
+    monkeypatch.setattr(presentation, "style_three_table_word_bytes",
+                        lambda document, fill: tampered)
+    assert not style_word_path(word, "EAF1FB")
+    assert word.read_bytes() == original
+
+
+def test_final_guard_refuses_changes_to_fonts_styles_and_attachments():
+    original = _fixture()
+    with ZipFile(io.BytesIO(original)) as archive:
+        updated = io.BytesIO()
+        with ZipFile(updated, "w") as target:
+            for member in archive.infolist():
+                content = archive.read(member.filename)
+                if member.filename == "word/styles.xml":
+                    content += b" "
+                target.writestr(member, content)
+    assert not _preserves_source_content(original, updated.getvalue())
+
+
+def test_final_guard_fails_closed_for_broken_word_zip():
+    original = _fixture()
+    assert not _preserves_source_content(original, b"not a Word file")
+    assert not _preserves_source_content(original, original[:130])
