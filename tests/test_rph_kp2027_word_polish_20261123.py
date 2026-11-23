@@ -90,9 +90,18 @@ class TestKSSRWordPolish(unittest.TestCase):
                 self.assertIn(item["tone"].upper().strip("#"), shadings)
                 self.assertIn(item["strong"].upper().strip("#"), shadings)
                 tables = list(final_xml.iter(W+"tbl"))
-                for tbl in tables:
-                    self.assertEqual(tbl.find(W+"tblPr/"+W+"tblW").get(W+"type"), "pct")
-                    self.assertEqual(tbl.find(W+"tblPr/"+W+"tblW").get(W+"w"), "5000")
+                source_tables = list(src_xml.iter(W+"tbl"))
+                for src_table, tbl in zip(source_tables, tables):
+                    # Existing layout geometry (table width, column grid,
+                    # each native cell width) must stay unchanged.
+                    def geometry(table):
+                        return (
+                            etree.tostring(table.find(W+"tblPr/"+W+"tblW")),
+                            etree.tostring(table.find(W+"tblGrid")),
+                            [etree.tostring(tc.find(W+"tcPr/"+W+"tcW"))
+                             for tr in table.findall(W+"tr") for tc in tr.findall(W+"tc")],
+                        )
+                    self.assertEqual(geometry(tbl), geometry(src_table))
                     self.assertIsNotNone(tbl.find(W+"tblPr/"+W+"tblBorders"))
                 self.assertEqual(
                     len(list(src_xml.iter(W+"bidiVisual"))),
@@ -107,6 +116,72 @@ class TestKSSRWordPolish(unittest.TestCase):
         self.assertEqual(word.tables[0].cell(5, 1).text, "")
         self.assertEqual(word.tables[2].cell(1, 0).text, "Refleksi")
         self.assertNotIn("Auto / Manual", "\n".join(p.text for p in word.paragraphs))
+
+
+
+    def test_english_four_table_fixed_native_grid_cannot_be_rescaled(self):
+        """Regression: 100% tblW with fixed native grid risks overlapping cells."""
+        from docx.shared import Cm
+        from docx.oxml.ns import qn
+
+        d = Document()
+        section = d.sections[0]
+        section.left_margin = Cm(1)
+        section.right_margin = Cm(1)
+        d.add_paragraph("DAILY LESSON PLAN")
+        header = d.add_table(rows=1, cols=2)
+        for i, (k, v) in enumerate((("Subject", "English Year 3"),
+                                    ("Class", "3 Amanah"))):
+            header.cell(0, i).text = k + ": " + v
+        detail = d.add_table(rows=4, cols=2)
+        for i, (k, v) in enumerate((
+            ("Content Standard", "2.1 Description in verified source."),
+            ("Learning Standard", "2.1.1 Verified standard."),
+            ("Learning Objectives", "Pupils read five simple sentences."),
+            ("Success Criteria", "Read four sentences correctly."))):
+            detail.cell(i, 0).text, detail.cell(i, 1).text = k, v
+        phase = d.add_table(rows=2, cols=3)
+        for j, txt in enumerate(("Phase", "Teaching and Learning Activities", "Notes")):
+            phase.cell(0, j).text = txt
+        for j, txt in enumerate(("Main activities", "Activity 1: Guided reading.", "")):
+            phase.cell(1, j).text = txt
+        tail = d.add_table(rows=2, cols=2)
+        tail.cell(0, 0).text, tail.cell(0, 1).text = "Remedial", "Reading support."
+        tail.cell(1, 0).text, tail.cell(1, 1).text = "Reflection", "Original text."
+
+        # Reproduce the exact risk: all four outer tables have native dxa
+        # widths and their column grid must not be rewritten as a % width.
+        for table, widths in zip(d.tables, ((6900, 3730), (2400, 8230),
+                                            (1850, 6500, 2280), (2400, 8230))):
+            table.autofit = False
+            pr = table._tbl.tblPr
+            tblw = pr.find(W + "tblW")
+            tblw.set(W + "type", "dxa")
+            tblw.set(W + "w", "10630")
+            grid = table._tbl.tblGrid
+            for col, width in zip(grid.findall(W+"gridCol"), widths):
+                col.set(W + "w", str(width))
+            for row in table.rows:
+                for cell, width in zip(row.cells, widths):
+                    tcw = cell._tc.get_or_add_tcPr().find(W + "tcW")
+                    tcw.set(W + "type", "dxa")
+                    tcw.set(W + "w", str(width))
+        raw = BytesIO()
+        d.save(raw)
+        polished = polish_kssr_word(BytesIO(raw.getvalue()), "ENGLISH")
+        original_nodes, before = words(raw.getvalue())
+        styled_nodes, after = words(polished.getvalue())
+        self.assertEqual(original_nodes, styled_nodes)
+        self.assertNotEqual(raw.getvalue(), polished.getvalue())
+        for a, b in zip(before.iter(W + "tbl"), after.iter(W + "tbl")):
+            for element in (W+"tblPr/"+W+"tblW", W+"tblGrid"):
+                self.assertEqual(etree.tostring(a.find(element)),
+                                 etree.tostring(b.find(element)))
+            self.assertEqual(
+                [etree.tostring(n) for n in a.iter(W+"tcW")],
+                [etree.tostring(n) for n in b.iter(W+"tcW")])
+        self.assertEqual(
+            polished.getvalue(), polish_kssr_word(polished, "ENGLISH").getvalue())
 
     def test_unknown_source_and_invalid_word_fail_closed(self):
         original = sample()
