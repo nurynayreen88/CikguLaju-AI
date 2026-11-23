@@ -226,7 +226,7 @@ def test_native_pdf_activity_title_bold_preserves_real_paragraph_text(tmp_path):
         )
         unchanged_text = row[1].getPlainText()
         updated = premium_pdf_story({"task": "rph", "subject": subject}, story)
-        actual = updated[4]._cellvalues[2][1]
+        actual = updated[6]._cellvalues[2][1]
         assert actual.getPlainText() == unchanged_text
         for n in (1, 2, 3):
             assert f"<b>{heading} {n} -" in actual.text
