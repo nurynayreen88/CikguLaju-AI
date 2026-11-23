@@ -250,3 +250,70 @@ def test_native_pdf_activity_title_bold_preserves_real_paragraph_text(tmp_path):
                          "Murid menyiapkan latihan", "Guru menyemak jawapan"):
             assert any(sentence in span["text"]
                        and "Bold" not in span["font"] for span in spans), (subject, sentence)
+
+
+def test_native_pdf_pastel_is_drawn_in_real_label_cells_not_overlaid(tmp_path):
+    """Nine native subject palettes render under ReportLab content at source."""
+    from web.rph_reference_style_20261121 import color_for_state
+
+    for subject in SUBJECTS:
+        with_label = fixture(subject)
+        source_copy = fixture(subject)
+        before_text = Counter(_text_objects(source_copy))
+        filled = color_for_state({"task": "rph", "subject": subject})
+        assert filled and len(filled) == 6
+        styled = premium_pdf_story({"task": "rph", "subject": subject}, with_label)
+        assert Counter(_text_objects(styled)) == before_text
+
+        assert styled[0]._colWidths == [112 * mm, 60 * mm]
+        assert sum(styled[2]._colWidths) == sum(styled[4]._colWidths) == sum(styled[6]._colWidths)
+
+        filepath = tmp_path / (subject.replace(" ", "_") + "_native_pastel.pdf")
+        content = _pdf(styled, filepath)
+        with fitz.open(stream=content, filetype="pdf") as actual:
+            assert len(actual) == 1
+            page = actual[0]
+            assert not any("____" in p.get_text() for p in actual)
+            assert "2.1.1" in page.get_text()
+            assert "Refleksi" in page.get_text()
+            # Background-colored native vector shapes coincide with actual
+            # label-grid cells, not an appended PDF editing layer.
+            paint = [d for d in page.get_drawings() if d.get("fill") is not None]
+            assert len(paint) >= 6, (subject, len(paint))
+            label_widths = (48 * mm, 32 * mm)
+            assert any(abs(d["rect"].width - width) < 2
+                       for d in paint for width in label_widths), subject
+            # The header and all three native tables share exact outer edges.
+            horizontal = [d["rect"] for d in page.get_drawings()
+                          if d["rect"].width > 475 and d["rect"].height < 1.5]
+            assert len(horizontal) >= 6
+            assert max(r.x0 for r in horizontal) - min(r.x0 for r in horizontal) < .6
+            assert max(r.x1 for r in horizontal) - min(r.x1 for r in horizontal) < .6
+
+        baseline = _pdf(source_copy, tmp_path / (subject.replace(" ", "_") + "_plain.pdf"))
+        with (fitz.open(stream=baseline, filetype="pdf") as old_pdf,
+              fitz.open(stream=content, filetype="pdf") as revised_pdf):
+            old_words = Counter(w[4] for p in old_pdf for w in p.get_text("words"))
+            new_words = Counter(w[4] for p in revised_pdf for w in p.get_text("words"))
+            assert old_words == new_words, subject
+
+
+def test_native_pdf_colors_dont_touch_specialty_generators_or_unknown_tables():
+    from web.rph_native_pdf_header_20261121 import _native_grid_pastel
+
+    for subject in (
+        "Sains", "Pendidikan Islam", "Bahasa Arab", "Science",
+    ):
+        original = fixture("Bahasa Melayu")
+        assert premium_pdf_story({"task": "rph", "subject": subject}, original) is original
+
+    example = fixture("Bahasa Melayu")
+    original_styles = [tuple(x._bkgrndcmds) for x in (example[2], example[4], example[6])]
+    _native_grid_pastel("EAF1FB", example[2], example[4], example[6])
+    assert all(len(table._bkgrndcmds) > len(old)
+               for table, old in zip((example[2], example[4], example[6]), original_styles))
+    malformed = fixture("Bahasa Melayu")
+    malformed[4]._cellvalues[0][0] = "Not a paragraph"
+    before = tuple(malformed[4]._bkgrndcmds)
+    _native_grid_pastel("EAF1FB", malformed[2], malformed[4], malformed[6])
+    assert tuple(malformed[4]._bkgrndcmds) == before
