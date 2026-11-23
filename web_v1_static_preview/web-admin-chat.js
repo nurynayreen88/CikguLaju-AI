@@ -75,6 +75,15 @@ async function openThread(id){
   }catch(e){$("web-admin-chat-status").textContent=e.message;}
 }
 $("web-admin-chat-open").addEventListener("click",()=>openThread($("web-admin-chat-user").value.trim()));
+// The directory uses this public UI function; the server still authorizes every request.
+window.cikgulajuOpenAdminChat=async id=>{
+  const tab=$("web-admin-tab");
+  if(!tab||tab.hidden)throw Error("Akses chat admin belum tersedia.");
+  tab.click();
+  await openThread(String(id));
+  $("web-chat-admin-heading")?.scrollIntoView({block:"start",behavior:"auto"});
+  $("web-admin-chat-input")?.focus({preventScroll:true});
+};
 $("web-admin-chat-refresh").addEventListener("click",adminLoad);
 $("web-admin-chat-form").addEventListener("submit",async e=>{
   e.preventDefault();
