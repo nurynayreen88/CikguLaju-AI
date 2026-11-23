@@ -6,7 +6,9 @@ on:
       - "web/rph_premium_header_20261121.py"
       - "web/rph_equal_width_20261121.py"
       - "web/rph_reference_style_20261121.py"
+      - "web/rph_active_pi_rtl_alignment_20261123.py"
       - "tests/test_pi_jawi_short_right_header_20261121.py"
+      - "tests/test_pi_active_jawi_content_right_20261123.py"
       - ".github/workflows/rph-pi-jawi-short-right.yml"
   workflow_dispatch:
 
@@ -44,6 +46,6 @@ jobs:
           libreoffice --version
           fc-list -f '%{family}\n' | grep -i 'Amiri' | head -n 1
       - name: Check preserved Jawi curriculum, teacher-left position and physical PDF A4 grid
-        run: python -m pytest -q tests/test_pi_jawi_short_right_header_20261121.py tests/test_rph_premium_header_20261121.py
+        run: python -m pytest -q tests/test_pi_jawi_short_right_header_20261121.py tests/test_pi_active_jawi_content_right_20261123.py tests/test_rph_premium_header_20261121.py
       - name: Compile transformed modules
-        run: python -m py_compile web/rph_premium_header_20261121.py web/rph_equal_width_20261121.py web/rph_reference_style_20261121.py tests/test_pi_jawi_short_right_header_20261121.py
+        run: python -m py_compile web/rph_premium_header_20261121.py web/rph_equal_width_20261121.py web/rph_reference_style_20261121.py web/rph_active_pi_rtl_alignment_20261123.py tests/test_pi_jawi_short_right_header_20261121.py tests/test_pi_active_jawi_content_right_20261123.py
