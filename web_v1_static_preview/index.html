@@ -1859,7 +1859,7 @@ function fillKssrSubjects(items,readySjkc=[],readySjkt=[]){
 }
 async function kssrSubjectOptionsForYear(targetYear){
  const [sk,sjkc,sjkt]=await Promise.all([
-  loadOptions("subjects"),
+  loadOptions("subjects").catch(()=>[]),
   ["2","3"].includes(targetYear)
     ?loadOptions("subjects",{curriculum:"sjkc"}).catch(()=>[]):Promise.resolve([]),
   targetYear==="2"
@@ -2115,7 +2115,7 @@ year.addEventListener("change",async()=>{
   const items=await kssrSubjectOptionsForYear(targetYear);
   if(revision!==subjectLoadRevision)return;
   fillKssrSubjects(items.sk,items.sjkc,items.sjkt);
-  if(!items.sk.length)updateSelectionHelp("Bahan SK bagi pilihan ini sedang disediakan.");
+  if(!items.sk.length)updateSelectionHelp("Katalog subjek SK belum dapat disemak; pilihan SJKC/SJKT yang mempunyai sumber masih ditunjukkan.");
  }catch(error){
   if(revision===subjectLoadRevision){
    fillKssrSubjects([]);
