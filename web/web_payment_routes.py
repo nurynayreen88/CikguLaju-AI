@@ -12,6 +12,7 @@ import mimetypes
 import os
 import re
 import uuid
+import time
 from datetime import datetime, timezone
 from io import BytesIO
 from urllib.error import HTTPError, URLError
@@ -139,8 +140,11 @@ def _payment_rest(conf, method, *, query="", body=None, opener=None):
     url = base + "/rest/v1/bot_payment_requests"
     if query:
         url += "?" + query
-    headers = {"apikey":token, "Authorization":"Bearer "+token,
-               "Accept":"application/json", "Content-Type":"application/json"}
+    headers = {"apikey":token, "Accept":"application/json",
+               "Content-Type":"application/json"}
+    # Supabase sb_secret_ is an API key, not a JWT Bearer token.
+    if not token.startswith("sb_secret_"):
+        headers["Authorization"]="Bearer "+token
     if method == "POST":
         headers["Prefer"]="return=representation"
     payload=json.dumps(body,separators=(",",":"),ensure_ascii=False).encode("utf-8") if body is not None else None
@@ -208,17 +212,22 @@ def _existing(conf, uid, *, opener=None):
 
 
 def _validate_receipt(content, mime):
-    if mime not in CONTENT_TYPES or not isinstance(content,bytes) or not 700<=len(content)<=MAX_RECEIPT:
+    """Check actual file signatures; tolerate Android's missing MIME metadata."""
+    if not isinstance(content,bytes) or not 700<=len(content)<=MAX_RECEIPT:
         raise ValueError("Resit mestilah gambar atau PDF berukuran maksimum 4 MB")
-    if mime=="application/pdf" and content.startswith(b"%PDF-"):
-        return ".pdf"
-    if mime=="image/jpeg" and content.startswith(b"\xff\xd8\xff"):
-        return ".jpg"
-    if mime=="image/png" and content.startswith(b"\x89PNG\r\n\x1a\n"):
-        return ".png"
-    if mime=="image/webp" and content.startswith(b"RIFF") and content[8:12]==b"WEBP":
-        return ".webp"
-    raise ValueError("Fail resit tidak sepadan dengan formatnya")
+    if content.startswith(b"%PDF-"):
+        actual_mime, ext = "application/pdf", ".pdf"
+    elif content.startswith(b"\xff\xd8\xff"):
+        actual_mime, ext = "image/jpeg", ".jpg"
+    elif content.startswith(b"\x89PNG\r\n\x1a\n"):
+        actual_mime, ext = "image/png", ".png"
+    elif content.startswith(b"RIFF") and content[8:12]==b"WEBP":
+        actual_mime, ext = "image/webp", ".webp"
+    else:
+        raise ValueError("Format resit tidak sah. Hantar JPG, PNG, WEBP atau PDF.")
+    if mime not in (actual_mime, "", None, "application/octet-stream"):
+        raise ValueError("Format resit dan kandungan fail tidak sepadan")
+    return ext
 
 
 def _receipt_destinations(uid):
@@ -232,15 +241,15 @@ def _receipt_destinations(uid):
     from web.admin_usage_web import allowed_admin_ids
     admins = sorted(i for i in allowed_admin_ids()
                     if type(i) is int and 0 < i < 10**18)
-    if uid < 10**18:
-        # Telegram's sendDocument fails if a user never started the bot or
-        # blocked it. Use the *configured* private admin as a fallback.
-        # Keep the original user's chat first for backward compatibility.
-        return [uid] + [admin for admin in admins if admin != uid][:2]
     if not admins:
         raise ProfileUnavailable("Penerima resit admin belum dikonfigurasi")
-    # Email-only accounts have no Telegram chat, only trusted admin recipients.
-    return admins[:2]
+    # Admin is the reliable recipient for manual verification. Telegram-login
+    # users may never have started the bot: trying their chat first caused an
+    # avoidable 400 and delayed the only important delivery (to admin).
+    destinations=admins[:2]
+    if uid < 10**18 and uid not in destinations:
+        destinations.append(uid)  # last-resort fallback for legacy bot users
+    return destinations
 
 
 def _telegram_document(conf, uid, raw, ext, *, opener=None):
@@ -269,30 +278,38 @@ def _telegram_document(conf, uid, raw, ext, *, opener=None):
         req=Request(url,method="POST",data=data,headers={
             "Content-Type":"multipart/form-data; boundary="+boundary,
             "Content-Length":str(len(data)), "Accept":"application/json"})
-        try:
-            with client.open(req,timeout=9 if uid >= 10**18 else 28) as resp:
-                if resp.status != 200:
+        # Two short attempts only for transport errors / Telegram 429 or 5xx.
+        # Invalid chat 400/403 is permanent; try the next confirmed destination.
+        for attempt in range(2):
+            try:
+                with client.open(req,timeout=12) as resp:
+                    if resp.status != 200:
+                        raise ValueError("Unexpected Telegram response")
+                    reply=json.loads(resp.read(MAX_REPLY+1))
+                item=reply.get("result") if isinstance(reply,dict) and reply.get("ok") is True else None
+                document=item.get("document") if isinstance(item,dict) else None
+                if (not isinstance(document,dict) or not document.get("file_id")
+                        or type(item.get("message_id")) is not int
+                        or item.get("chat",{}).get("id") != destination):
+                    raise ValueError("Unconfirmed Telegram receipt")
+                return {
+                    "file_id":str(document["file_id"]),
+                    "unique_id":str(document.get("file_unique_id") or ""),
+                    "message_id":item["message_id"],
+                    "mime":str(document.get("mime_type") or mime)[:100],
+                    "admin_chat_id":destination if destination != uid else None,
+                }
+            except (HTTPError,URLError,OSError,ValueError,TypeError) as exc:
+                transient=(not isinstance(exc,HTTPError)
+                           or exc.code==429 or 500<=exc.code<=599)
+                # Log category only. Never log receipt, URL, token, or user ID.
+                category=("http_"+str(exc.code) if isinstance(exc,HTTPError)
+                          else type(exc).__name__)
+                print("WEB PAYMENT RECEIPT DELIVERY unavailable: "+category,flush=True)
+                if attempt==0 and transient:
+                    time.sleep(0.5)
                     continue
-                reply=json.loads(resp.read(MAX_REPLY+1))
-        except (HTTPError,URLError,OSError,ValueError,TypeError) as exc:
-            # Never log tokens, user IDs, receipt bytes or Telegram URLs.
-            print("WEB PAYMENT RECEIPT BOT DELIVERY failed:",
-                  "http_"+str(exc.code) if isinstance(exc,HTTPError)
-                  else type(exc).__name__, flush=True)
-            continue
-        item=reply.get("result") if isinstance(reply,dict) and reply.get("ok") is True else None
-        document=item.get("document") if isinstance(item,dict) else None
-        if (not isinstance(document,dict) or not document.get("file_id")
-                or type(item.get("message_id")) is not int
-                or item.get("chat",{}).get("id") != destination):
-            continue
-        return {
-            "file_id":str(document["file_id"]),
-            "unique_id":str(document.get("file_unique_id") or ""),
-            "message_id":item["message_id"],
-            "mime":str(document.get("mime_type") or mime)[:100],
-            "admin_chat_id":destination if destination != uid else None,
-        }
+                break
     raise ProfileUnavailable(
         "Resit belum dapat disimpan. Jangan bayar lagi; hubungi admin dengan resit asal.")
 
@@ -444,13 +461,15 @@ def payment_submit():
     _audit_payment(conf,uid,"receipt_started")
     try:
         ext=_validate_receipt(raw,mime)
+        # Check the durable ledger BEFORE dependent catalog/network calls.
+        # Even during a temporary outage, a saved Pending proof remains visible.
+        if _status_rows(_existing(conf,uid))["pending"]:
+            return jsonify({"error":"Resit telah diterima dan sedang disemak. Jangan bayar lagi."}),409
         catalog=_source("/internal/payment/v1/catalog")
         plans=validated_plans(catalog)
         if code not in plans:
             raise ValueError("Hanya pakej Rakan Pembangun ditawarkan")
         _,rakan_open=validated_rakan_status(catalog)
-        if _status_rows(_existing(conf,uid))["pending"]:
-            return jsonify({"error":"Resit lain sedang disemak. Jangan bayar lagi."}),409
         if _is_member(conf,uid):
             return jsonify({"error":"Rakan Pembangun sudah aktif. Jangan bayar sekali lagi."}),409
         if not rakan_open:
@@ -500,10 +519,23 @@ def payment_submit():
         return jsonify({"error":str(exc)}),400
     except ProfileUnavailable as exc:
         _audit_payment(conf,uid,"receipt_failed")
-        # No identifiers or receipt content in logs; classify the failing step.
+        # A network timeout after database INSERT may lose its HTTP response.
+        # Recheck the immutable account's Pending row before reporting failure,
+        # so an accepted proof is never mistaken for a lost payment.
+        try:
+            pending=_status_rows(_existing(conf,uid))
+            if pending["pending"] and pending.get("proof_received_at"):
+                return jsonify({
+                    "submitted":True,"id":pending["id"],"status":"pending",
+                    "admin_notification":"unconfirmed",
+                    "message":"Resit telah direkod sebagai Pending. Admin akan semak. Jangan bayar sekali lagi."
+                }),201
+        except (ProfileUnavailable,PaymentConflict,KeyError,TypeError,ValueError,OSError):
+            pass
+        # No identifiers, tokens or receipt content in logs; report stage only.
         print("WEB PAYMENT RECEIPT PROCESS unavailable:",
               str(exc)[:120], flush=True)
-        return jsonify({"error":"Resit tidak dapat direkodkan dengan selamat. Semak status pembayaran sebelum cuba lagi; jangan bayar sekali lagi."}),503
+        return jsonify({"error":"Resit belum dapat disahkan. Semak status pembayaran dan gunakan Chat Admin jika masih gagal. Jangan bayar sekali lagi."}),503
 
 
 def _admin_payment_auth():
