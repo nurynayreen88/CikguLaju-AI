@@ -108,7 +108,12 @@ def _rows(record):
             phase_key = ("guided_pdp" if record["phase"] == "penerokaan"
                          else "application_pdp")
             actions.append(("Pengukuhan khusus", record["editorial_supplement"][phase_key]))
-        activities.append((item["title"], actions))
+        # Shorten the displayed heading only when the source label would
+        # split its final word into an isolated single character in Word.
+        display_title = ("Aktiviti 3: Semak dan baiki"
+                         if item["title"] == "Aktiviti 3: Pentaksiran dan penambahbaikan"
+                         else item["title"])
+        activities.append((display_title, actions))
     # A specific pupil check replaces the repeated generic pupil sentence;
     # the audited source remains unchanged and is preserved separately.
     activities.append(("Penutup", [
