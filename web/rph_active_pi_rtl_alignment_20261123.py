@@ -109,5 +109,7 @@ def align_active_pi_rtl_value_bytes(original):
                                for n in names if n != DOCUMENT)):
                     return original
             return output
-    except (OSError, ValueError, TypeError, BadZipFile, etree.XMLSyntaxError):
+    except (OSError, ValueError, TypeError, BadZipFile, etree.XMLSyntaxError) as exc:
+        # Diagnostic type only; no school, teacher or academic text in logs.
+        print("PI RTL alignment skipped:", type(exc).__name__, flush=True)
         return original
