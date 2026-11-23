@@ -15,7 +15,7 @@ on:
       - '.github/workflows/kssr-bm-word-paid-20261123.yml'
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
 jobs:
   native_word:
     runs-on: ubuntu-24.04
@@ -23,8 +23,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
-          persist-credentials: true
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -72,27 +72,18 @@ jobs:
                   assert 'DRAF SEMAKAN' in text,(year,'draft status lost')
                   print(json.dumps({'year':year,'word_pages':pages,'file_size':pdf.stat().st_size}))
           PY
-      - uses: actions/upload-artifact@v4
-        with:
-          name: kssr-bm-t2-t6-word-qa-native-html
-          path: |
-            rpt_2027/kssr_word_premium/manifest.json
-            rpt_2027/kssr_word_premium/bahasa_melayu/*.docx
-            ${{ runner.temp }}/bm-word-preview/*.pdf
-          if-no-files-found: error
-          retention-days: 15
-      - name: Commit the 5 validated Word files to this exact PR branch only
-        if: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref == 'feature/rpt-kssr-bm-five-paid-word-20261123' }}
-        shell: bash
+      # Never upload or push paid Word binaries to a public CI artifact or Git branch.
+      # Tests validate generated files in the ephemeral runner only.
+      - name: Verify paid Word workflow remains read-only
         run: |
-          set -euo pipefail
-          test "$(git branch --show-current)" = "feature/rpt-kssr-bm-five-paid-word-20261123"
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- rpt_2027/kssr_word_premium/manifest.json rpt_2027/kssr_word_premium/bahasa_melayu/tahun_*.docx
-          if git diff --cached --quiet; then
-            echo "All five verified Word files are already identical; no changes."
-          else
-            git commit -m 'docs(rpt): include five SHA-pinned editable BM KSSR Word RPT files'
-            git push origin HEAD:feature/rpt-kssr-bm-five-paid-word-20261123
-          fi
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('.github/workflows/kssr-bm-word-paid-20261123.yml')
+          source=p.read_text('utf-8')
+          assert 'contents: read' in source
+          assert 'persist-credentials: false' in source
+          assert ('uses: actions/'+'upload-artifact@') not in source
+          assert ('git'+' push') not in source
+          assert ('contents: '+'write') not in source
+          print('CI validation completed: permissions are read-only.')
+          PY
