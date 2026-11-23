@@ -1,0 +1,53 @@
+{
+  "id": "kp2027_alam_t1_29_rph_tailored_pbd_closure_recovery_extension_qa_20261123",
+  "created_on": "2026-11-23",
+  "curriculum": "KP2027",
+  "year": 1,
+  "subject": "Alam dan Manusia Pembelajaran Bersepadu",
+  "status": "QA_ONLY_NOT_PUBLISHED",
+  "academic_approved": false,
+  "web_publish": false,
+  "source_zip": "CIKGULAJU_ALAM_KP2027_T1_29_RPH_QA_FORMAT_BERSIH_20261123.zip",
+  "source_zip_sha256": "0ad740db64c4f2acca4e1e0222f749ff9a7cf1fd1936f65b2b9802a49ff6d073",
+  "qa_zip": "CIKGULAJU_KP2027_ALAM_T1_29_RPH_AKTIVITI_SOKONGAN_KHUSUS_QA_V3_20261123.zip",
+  "qa_zip_sha256": "5e48b06595fec113fe0e6f46482f28981295fa1128e6c08fe8aac5b3c65768b3",
+  "qa_zip_bytes": 1984473,
+  "private_drive_file_id": "1ubXD5fFjrxN9K9DJxGDquM3WF2mbKJx_",
+  "private_drive_folder_id": "1dVOG0p6WjRz5RyZI7-nS1rWkhc9Qe3V8",
+  "private_drive_metadata_verified": true,
+  "private_drive_shared": false,
+  "counts": {
+    "word": 29,
+    "pdf": 29,
+    "pdf_a4_one_page": 29,
+    "zip_entries": 59
+  },
+  "changes": {
+    "limited_to": [
+      "Pengukuhan / PBD",
+      "Penutup",
+      "Pemulihan",
+      "Pengayaan"
+    ],
+    "unique_lesson_specific_value_count_each": 29,
+    "all_sk_unchanged": true,
+    "all_sp_unchanged": true,
+    "all_objectives_unchanged": true,
+    "all_three_activities_unchanged": true,
+    "refleksi_print_label": "Refleksi",
+    "pdf_native_render_no_overlay": true,
+    "pdf_text_beyond_page_bounds": 0,
+    "visual_samples": [
+      "PDP002",
+      "PDP039",
+      "PDP085"
+    ]
+  },
+  "educational_safety": [
+    "Teacher-proposed QA wording uses lesson's source subject context; not independently official curriculum approved",
+    "No READY flag or Web download for these QA candidates",
+    "Manual educational check and authenticated production download remain mandatory",
+    "No source PDFs or production access, quotas, payments, or user database touched",
+    "Files stored owner-only on Google Drive, not public GitHub"
+  ]
+}
