@@ -187,6 +187,8 @@ _SESSION_LABELS = {
 _RPT_DATE_FIELDS = {"Tarikh RPT", "Julat RPT", "RPT 2027 dates", "RPT date ranges"}
 _MATHEMATICS_FILL = "DCEBFA"
 _SCIENCE_FILL = "DFF1E3"
+# Visual master: BM SK KP2027 Tahun 1, neutral small teacher-info panel.
+_TEACHER_PANEL_FILL = "F5F7FA"
 _FIELD_WIDTHS = (48, 134)
 _ACTIVITY_WIDTHS = (32, 122, 28)
 
@@ -317,10 +319,10 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
 
     fill = label_fill or (_MATHEMATICS_FILL if mathematics else _SCIENCE_FILL)
 
-    def shading():
+    def shading(color=fill):
         element = OxmlElement("w:shd")
         element.set(qn("w:val"), "clear")
-        element.set(qn("w:fill"), fill)
+        element.set(qn("w:fill"), color)
         return element
 
     details, activities = _rph_display_rows(details, activities)
@@ -368,10 +370,14 @@ def _word(output, heading, details, activities, reflection, *, compact=False,
     for column, width in zip(header.columns, (118, 64)):
         column.width = Mm(width)
     header_left, header_right = header.rows[0].cells
-    for cell, width in zip((header_left, header_right), (118, 64)):
+    for index, (cell, width) in enumerate(zip((header_left, header_right), (118, 64))):
         cell.width = Mm(width)
         cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
-        cell._tc.get_or_add_tcPr().append(shading())
+        # Recolor the existing small teacher cell only. Never insert, infer,
+        # remove, or move teacher/curriculum fields to mimic the master.
+        cell._tc.get_or_add_tcPr().append(
+            shading(_TEACHER_PANEL_FILL if index == 1 else fill)
+        )
     for index, text in enumerate(heading):
         paragraph = (header_left.paragraphs[0] if index == 0
                      else header_left.add_paragraph())
@@ -506,6 +512,7 @@ def _pdf(output, heading, details, activities, reflection, *, compact=False,
                      for name, value in teacher_fields]
     title_panel = Table([[opening, teacher_lines]], colWidths=[118 * mm, 64 * mm], style=[
         ("BACKGROUND", (0, 0), (-1, -1), fill),
+        ("BACKGROUND", (1, 0), (1, 0), colors.HexColor("#" + _TEACHER_PANEL_FILL)),
         ("BOX", (0, 0), (-1, -1), 0.75, colors.black),
         ("INNERGRID", (0, 0), (-1, -1), 0.55, colors.black),
         ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
