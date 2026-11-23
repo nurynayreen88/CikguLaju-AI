@@ -102,6 +102,10 @@ class QAOnlyWordPDF(unittest.TestCase):
                 ):
                     self.assertIn(exact,text)
                 self.assertEqual(text.count("Refleksi"),1)
+                if r["proposed_pdp"]==52:
+                    self.assertIn("Aktiviti 3: Semak dan baiki",text)
+                    self.assertEqual(r["aktiviti_utama"][2]["title"],
+                        "Aktiviti 3: Pentaksiran dan penambahbaikan")
                 self.assertNotIn("Guru: Guru ",text)
                 self.assertNotIn("Murid: Murid ",text)
                 self.assertNotIn(r["penutup"]["murid"],text)
