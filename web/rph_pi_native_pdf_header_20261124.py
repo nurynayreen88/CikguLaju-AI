@@ -9,14 +9,62 @@ from __future__ import annotations
 
 from reportlab.lib import colors
 from reportlab.lib.units import mm
-from reportlab.platypus import Table, TableStyle, Spacer
+from reportlab.platypus import Flowable, Table, TableStyle, Spacer
+from reportlab.lib.utils import ImageReader
+from PIL import Image
 
 HEADER_LABELS = (
     "مات ڤلاجرن", "تاهون / تيڠکتن", "تاريخ", "هاري",
     "ماس", "کلس", "بيلڠن موريد", "تاجوق",
 )
-IDENTITY_FILL = colors.HexColor("#F8EBCD")
-TEACHER_FILL = colors.HexColor("#F5F7FA")
+# ONE subject palette for all visible PI/Jawi label panels.
+# The native activity and reflection tables already use #ECE4F6.
+PI_FILL = colors.HexColor("#ECE4F6")
+IDENTITY_FILL = PI_FILL
+TEACHER_FILL = PI_FILL
+
+
+class CenteredJawiTitle(Flowable):
+    """Centre the EXISTING title glyph image instead of placing it at the right.
+
+    Native Jawi paragraphs are drawn into transparent PNGs by the existing
+    trusted text shaper, which always anchors them to the right. Cropping
+    only transparent horizontal margins and centering that already-shaped
+    artwork preserves every character, font, line and original lesson text.
+    This class is used exclusively for the verified PI PDF title.
+    """
+
+    def __init__(self, title):
+        super().__init__()
+        self.original = title
+        self.width = 0
+        self.height = 0
+
+    def wrap(self, available_width, available_height):
+        self.width = available_width
+        _, self.height = self.original.wrap(available_width, available_height)
+        return self.width, self.height
+
+    def draw(self):
+        reader = getattr(self.original, "_img", None)
+        source = getattr(reader, "_image", None)
+        if not isinstance(source, Image.Image) or source.mode != "RGBA":
+            # Safe fallback: never drop a title if a font renderer differs.
+            self.original.drawOn(self.canv, 0, 0)
+            return
+        bbox = source.getchannel("A").getbbox()
+        if not bbox:
+            self.original.drawOn(self.canv, 0, 0)
+            return
+        # Preserve vertical image extent and the original rasterized glyphs.
+        left, _, right, _ = bbox
+        width = self.width * (right - left) / source.width
+        crop = source.crop((left, 0, right, source.height))
+        self.canv.drawImage(
+            ImageReader(crop), (self.width - width) / 2, 0,
+            width=width, height=self.height, mask="auto",
+            preserveAspectRatio=True,
+        )
 
 
 def _flow_text(value):
@@ -67,15 +115,15 @@ def reflow_verified_pi_header(state, story):
         return story
     # ReportLab's native PI RTL Table wrapper has ALREADY reversed each
     # physical row to [Jawi value, Jawi label]. Do not reverse it again.
-    # Match other RPH: wide lesson identity LEFT; narrow teacher fields RIGHT.
+    # PI RTL master: wide subject/year/topic RIGHT; narrow teacher details LEFT.
     wide = _inner(rows, (0, 1, 7), (82, 26))
     teacher = _inner(rows, (5, 2, 3, 4, 6), (36, 20))
-    banner = Table([[wide, teacher]], colWidths=[112 * mm, 60 * mm],
+    banner = Table([[teacher, wide]], colWidths=[60 * mm, 112 * mm],
                    hAlign="CENTER")
     banner.setStyle(TableStyle([
         ("GRID", (0, 0), (-1, -1), 0.6, colors.HexColor("#6D7C8B")),
-        ("BACKGROUND", (0, 0), (0, 0), IDENTITY_FILL),
-        ("BACKGROUND", (1, 0), (1, 0), TEACHER_FILL),
+        ("BACKGROUND", (0, 0), (0, 0), TEACHER_FILL),
+        ("BACKGROUND", (1, 0), (1, 0), IDENTITY_FILL),
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
         ("LEFTPADDING", (0, 0), (-1, -1), 2),
         ("RIGHTPADDING", (0, 0), (-1, -1), 2),
@@ -87,11 +135,11 @@ def reflow_verified_pi_header(state, story):
     body.setStyle(TableStyle([
         ("GRID", (0, 0), (-1, -1), 0.5, colors.black),
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
-        ("BACKGROUND", (1, 0), (1, -1), colors.HexColor("#F3F1DF")),
+        ("BACKGROUND", (1, 0), (1, -1), PI_FILL),
         ("LEFTPADDING", (0, 0), (-1, -1), 5),
         ("RIGHTPADDING", (0, 0), (-1, -1), 5),
         ("TOPPADDING", (0, 0), (-1, -1), 2.5),
         ("BOTTOMPADDING", (0, 0), (-1, -1), 2.5),
     ]))
-    return [title, top_space, banner, Spacer(1, 2 * mm),
+    return [CenteredJawiTitle(title), top_space, banner, Spacer(1, 2 * mm),
             body, middle_space, activity, foot_space, footer]
