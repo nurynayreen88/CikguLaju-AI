@@ -19,6 +19,7 @@ from primary_language_subjects import PRIMARY_LANGUAGE_SUBJECTS
 from web import native_telegram_ppki_client as ppki
 from web import kp2027_year1_rpt_bundle as kp_rpt
 from web import kp2027_year1_rpt_combined as kp_ab
+from web import rpt_2027_kssr_bm_word as bm_word
 from web.english_rpt_2027_http import _account, _has_paid_access, integrated_pdf_path
 from rpt_2027.dlp.documents import PUBLISHED_YEARS, SUBJECTS as DLP_SUBJECTS, document_path
 from rpt_2027.matematik import sk_documents as matematik_sk
@@ -248,11 +249,16 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
             if ready:
                 available+=1
             entry_status=status if current is None else ("SEPARA DRAF" if code=="sains" else "DRAF")
+            word = (bm_word.word_document(year,root=root)
+                    if code=="bahasa_melayu" and personalization_allowed and ready else None)
             entries.append({
                 "year":year,
                 "pdf_ready":ready,
                 "status":entry_status if ready else "PDF BELUM DIPASANG",
                 "download_enabled":bool(ready and allowed),
+                "docx_ready":bool(word),
+                "docx_url":f"/api/rpt/2027/all/bahasa_melayu/{year}.docx" if word else None,
+                "word_paid_only":code=="bahasa_melayu",
                 "note":NOTES.get(code,DEFAULT_NOTE),
                 "is_draft":current is not None or entry_status!="TERSEDIA",
             })
@@ -485,6 +491,29 @@ def create_all_rpt_blueprint(*,root=ROOT):
         if fmt == "pdf":
             response.headers["X-RPT-Source-SHA256"] = hashlib.sha256(path.read_bytes()).hexdigest()
             response.headers["X-RPT-Personalization-Allowed"] = "1"
+        return response
+
+    @bp.get("/api/rpt/2027/all/<subject>/<int:year>.docx")
+    def download_kssr_word(subject,year):
+        account,error=_account()
+        if error is not None:
+            return error
+        if subject!="bahasa_melayu" or year not in bm_word.YEARS:
+            return jsonify({"error":"RPT Word KSSR belum tersedia bagi pilihan ini."}),404
+        # Backend gate also applies to users copying the URL, not just menu.
+        if not _has_paid_access(account):
+            return jsonify({"error":"RPT Word hanya untuk Rakan Pembangun dan pengguna berbayar aktif."}),403
+        source=bm_word.word_document(year,root=root)
+        if source is None:
+            return jsonify({"error":"RPT Word yang disahkan belum tersedia."}),503
+        path,digest=source
+        response=send_file(
+            path,as_attachment=True,conditional=False,
+            mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            download_name=f"CIKGULAJU_RPT_BAHASA_MELAYU_SK_TAHUN_{year}_2027_WORD.docx")
+        response.headers["X-RPT-Source-SHA256"]=digest
+        response.headers["X-RPT-Word-Access"]="paid-founder-only"
+        response.headers["X-RPT-Academic-Status"]="DRAF_SEMAKAN"
         return response
 
     @bp.get("/api/rpt/2027/all/<subject>/<int:year>.pdf")
