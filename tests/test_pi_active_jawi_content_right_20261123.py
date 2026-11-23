@@ -128,7 +128,8 @@ def test_only_source_values_move_to_physical_rtl_right_without_losing_activity()
                 ppr = para.find(W + "pPr")
                 assert ppr.find(W + "jc").get(W + "val") == "left"
                 spacing = ppr.find(W + "spacing")
-                assert spacing.get(W + "line") == "260"
+                assert spacing.get(W + "line") == "360"  # exact 1.5x
+                assert spacing.get(W + "lineRule") == "auto"
                 assert spacing.get(W + "after") == "65"
         assert "مات ڤلاجرن" in "".join(n.text or "" for n in header_cells[0].iter(W+"t"))
         assert "بيلڠن موريد" in "".join(n.text or "" for n in header_cells[1].iter(W+"t"))
@@ -137,6 +138,13 @@ def test_only_source_values_move_to_physical_rtl_right_without_losing_activity()
         root = etree.fromstring(z.read("word/document.xml"))
         tables = root.find(W + "body").findall(W + "tbl")
         assert all(t.find(W + "tblPr/" + W + "bidiVisual") is not None for t in tables)
+        for table in tables:
+            for paragraph in table.iter(W + "p"):
+                props = paragraph.find(W + "pPr")
+                spacing = props.find(W + "spacing") if props is not None else None
+                assert spacing is not None, "Missing PI table paragraph spacing"
+                assert spacing.get(W + "line") == "360", "Not 1.5 spacing"
+                assert spacing.get(W + "lineRule") == "auto"
         p = tables[2].findall(W + "tr")[2].findall(W + "tc")[1].find(W + "p")
         assert p.find(W + "pPr/" + W + "jc").get(W + "val") == "left"
         assert p.find(W + "pPr/" + W + "bidi").get(W + "val") == "1"
