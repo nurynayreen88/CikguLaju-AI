@@ -13,6 +13,7 @@ const payQr=document.getElementById("payment-qr-image");
 const payQrNotice=document.getElementById("payment-qr-notice");
 const payDirectLink=document.getElementById("payment-direct-link");
 const payRefresh=document.getElementById("payment-refresh");
+const payHelpChat=document.getElementById("payment-chat-help");
 const payProgress=document.getElementById("rakan-progress");
 const payPercent=document.getElementById("rakan-progress-percent");
 const payProgressFill=document.getElementById("rakan-progress-fill");
@@ -146,8 +147,24 @@ paySubmit.addEventListener("click",async()=>{
   }catch(error){
     // Read current state first to avoid duplicate payments after a response loss.
     await loadWebPayments();
-    payMessage.textContent=error.message;
+    payMessage.textContent=error.message+" Jika masih gagal, tekan Chat Admin di atas untuk bantuan. Jangan buat bayaran sekali lagi.";
   }finally{payBusy=false;paymentReady();}
+});
+payHelpChat.addEventListener("click",()=>{
+  const chat=document.getElementById("web-chat-top");
+  if(!chat){
+    payMessage.textContent="Chat Admin tidak tersedia. Muat semula Web untuk mendapatkan versi terkini.";
+    return;
+  }
+  chat.open=true;
+  chat.scrollIntoView({behavior:"smooth",block:"start"});
+  const input=document.getElementById("web-chat-input");
+  if(input&&!input.value.trim()){
+    input.value="Saya mengalami masalah memuat naik resit bayaran di Web CikguLaju. Mohon bantuan admin.";
+  }
+  const status=document.getElementById("web-chat-status");
+  if(status)status.textContent="Sila hantar mesej kepada admin. Lampirkan resit jika perlu.";
+  input?.focus({preventScroll:true});
 });
 payRefresh.addEventListener("click",()=>void loadWebPayments());
 document.querySelector('[data-web-view="payment"]').addEventListener("click",()=>void loadWebPayments());
