@@ -2654,8 +2654,12 @@ function rptDirectPdfUrl(entry){
  return null;
 }
 function rptWordUrl(entry){
+ // The visible link is supplementary: server checks the signed account as well.
+ // Paid means founder / rakan pembangun or an active paid subscription.
+ if(rptCatalog?.personalizationAllowed!==true)return null;
  if(rptKP2027Choice(entry)){
-  return entry.year.docx_ready===true?rptKP2027Url(entry,"docx"):null;
+  return entry.year.docx_ready===true&&entry.year.docx_download_enabled===true
+   ?rptKP2027Url(entry,"docx"):null;
  }
  const url=entry?.year?.docx_url;
  return entry?.year?.docx_ready===true&&typeof url==="string"&&
@@ -2700,7 +2704,8 @@ function refreshRptDownload(){
  if(kpChoice){
   rptStatus.textContent=ready
    ?"RPT SEMAKAN PELAKSANAAN • Satu RPT mengandungi Kumpulan A dan B. "+
-     "Sahkan agihan PdP, tarikh dan jadual sekolah sebelum guna. Word dan PDF disediakan."
+     "Sahkan agihan PdP, tarikh dan jadual sekolah sebelum guna. "+
+     (wordUrl?"Word dan PDF boleh dimuat turun.":"PDF boleh dimuat turun. RPT Word khas untuk Rakan Pembangun dan pengguna berbayar aktif.")
    :"RPT KP2027 Tahun 1 belum boleh dimuat turun.";
   return;
  }
