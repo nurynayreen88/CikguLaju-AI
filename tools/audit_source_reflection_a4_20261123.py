@@ -61,6 +61,13 @@ def check_one(runtime, path, row, code, output_dir):
             source_label, objective, criterion, reflection
         )
         assert "____ / ____" in reflection
+        # A stock BM criterion such as "membaca bahan sasaran mengikut
+        # fokus kemahiran" is still generic. The verified actual SP and
+        # specific topic must appear in the reflection instead.
+        assert "bahan sasaran" not in reflection.casefold(), reflection
+        assert "fokus kemahiran" not in reflection.casefold(), reflection
+        if str(row.get("topic") or "").strip() and len(str(row["topic"])) <= 55:
+            assert str(row["topic"]).casefold() in reflection.casefold(), (row["topic"], reflection)
 
     unique = "objqa" + uuid.uuid4().hex[:14]
     word = Path(runtime.create_word_file(state, native, unique))
