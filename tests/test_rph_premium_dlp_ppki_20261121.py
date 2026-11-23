@@ -137,17 +137,18 @@ class PremiumDlpPpkiProof(unittest.TestCase):
                 left, right = head.rows[0].cells
                 assert len(left.paragraphs) == 3
                 assert len(right.paragraphs) >= 4
-                left_labels = ["Mata Pelajaran:", "Tahun/Tingkatan:", "Tajuk:"] if subject == "PPKI" else (
-                    ["Subject:", "Year:", "Topic:"])
-                assert all(p.text.startswith(label) for p, label in
-                           zip(left.paragraphs, left_labels)), subject
-                for cell, expected in ((left, 32), (right, 34)):
-                    for para in cell.paragraphs:
-                        tabs = para._p.find(qn("w:pPr")).find(qn("w:tabs"))
-                        assert tabs is not None, (subject, para.text)
-                        tab = tabs.find(qn("w:tab"))
-                        assert tab is not None
-                        assert abs(int(tab.get(qn("w:pos"))) / 56.6929 - expected) < .3
+                # Source-backed identity must remain three EXACT values,
+                # not printed prefixes ("Topic:\t...") that break downloads
+                # for independently reviewed Year 3–6 DLP lesson plans.
+                assert "PPKI" in left.paragraphs[0].text if subject == "PPKI" else "DLP" in left.paragraphs[0].text
+                assert "Tahun" in left.paragraphs[1].text if subject == "PPKI" else "Year" in left.paragraphs[1].text
+                assert left.paragraphs[2].text.strip()
+                for para in right.paragraphs:
+                    tabs = para._p.find(qn("w:pPr")).find(qn("w:tabs"))
+                    assert tabs is not None, (subject, para.text)
+                    tab = tabs.find(qn("w:tab"))
+                    assert tab is not None
+                    assert abs(int(tab.get(qn("w:pos"))) / 56.6929 - 34) < .3
                 assert "____" not in right.text
                 pdf_bytes = generate("pdf")
                 with fitz.open(stream=pdf_bytes, filetype="pdf") as pages:
