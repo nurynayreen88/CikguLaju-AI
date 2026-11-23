@@ -85,5 +85,5 @@ jobs:
           assert ('uses: actions/'+'upload-artifact@') not in source
           assert ('git'+' push') not in source
           assert ('contents: '+'write') not in source
-          print('PRIVATE-WORD CI safety: READ ONLY; no public artifact or git push.')
+          print('CI validation completed: permissions are read-only.')
           PY
