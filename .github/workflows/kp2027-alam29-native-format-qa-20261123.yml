@@ -1,0 +1,24 @@
+name: KP2027 Alam 29 QA Native Format Ledger Guard
+on:
+  pull_request:
+    branches:
+      - production/cikgulaju-web-20261105
+    paths:
+      - audits/kp2027_alam_t1_29_rph_native_qa_format_20261123.json
+      - audits/kp2027_alam_t1_rpt93_source64_83sp_qa29_20261122.json
+      - audits/kp2027_bm_sjk_rpt_2027_ab_calendar_unallocated_20261123.json
+      - tests/test_kp2027_alam29_qa_format_20261123.py
+      - .github/workflows/kp2027-alam29-native-format-qa-20261123.yml
+permissions:
+  contents: read
+jobs:
+  no_release_29_qa_rph:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check pinned 29 QA RPH archive and group A/B RPT mapping
+        run: python -m unittest discover -s tests -p 'test_kp2027_alam29_qa_format_20261123.py' -v
