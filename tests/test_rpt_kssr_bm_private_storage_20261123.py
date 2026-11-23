@@ -5,6 +5,9 @@ No network, no teacher data, no billing writes or paid file copies in artifacts.
 from __future__ import annotations
 from hashlib import sha256
 from io import BytesIO
+from pathlib import Path
+from shutil import copyfile
+from tempfile import TemporaryDirectory
 from unittest import TestCase
 from unittest.mock import patch
 from flask import Flask
@@ -47,6 +50,22 @@ class PrivateStorageTests(TestCase):
             self.assertIsNotNone(private.verified_manifest_entry(year))
         self.assertIsNone(private.verified_manifest_entry(1))
         self.assertIsNone(private.verified_manifest_entry(7))
+
+    def test_private_manifest_still_works_without_any_git_word_binary(self):
+        # The private route relies on manifest and published source digests,
+        # not paid DOCX files in the PUBLIC Git checkout.
+        root = private.bm_word.ROOT
+        with TemporaryDirectory() as tmp:
+            target = Path(tmp)
+            (target / "kssr_word_premium").mkdir(parents=True)
+            (target / "web_2027_pdfs").mkdir(parents=True)
+            copyfile(root / "kssr_word_premium" / "manifest.json",
+                     target / "kssr_word_premium" / "manifest.json")
+            copyfile(root / "web_2027_pdfs" / "manifest.json",
+                     target / "web_2027_pdfs" / "manifest.json")
+            for year in range(2, 7):
+                self.assertIsNotNone(private.verified_manifest_entry(year, root=target))
+                self.assertIsNone(word_document(year, root=target))
 
     def test_direct_private_reader_checks_hash_and_fixed_path(self):
         captured = []
