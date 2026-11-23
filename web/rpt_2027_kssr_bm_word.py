@@ -50,7 +50,7 @@ def word_document(year, *, root=ROOT):
         if path.is_symlink() or not path.is_file():
             return None
         content=path.read_bytes()
-        if not 20000<=len(content)<=3_000_000 or content[:4]!=b"PK\x5cx03\x5cx04":
+        if not 20000<=len(content)<=3_000_000 or content[:4]!=b"PK\x03\x04":
             return None
         digest=hashlib.sha256(content).hexdigest()
         if digest!=entry.get("sha256") or len(content)!=entry.get("bytes"):
