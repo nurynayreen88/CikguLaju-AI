@@ -35,6 +35,11 @@ class QAOnlyWordPDF(unittest.TestCase):
             self.assertEqual(r["status"],"QA_HOLD_NOT_READY")
             add=r["editorial_supplement"]
             self.assertEqual(len(add),8)
+            titles=r["editorial_activity_titles"]
+            self.assertEqual(len(titles),3)
+            self.assertEqual([t.split(": ")[0] for t in titles],
+                             ["Aktiviti 1","Aktiviti 2","Aktiviti 3"])
+            self.assertTrue(all(len(t)<=43 for t in titles))
             pbd=r["editorial_assessment"]
             self.assertEqual(set(pbd),{"pbd_evidence","enrichment_action"})
             self.assertTrue(all(len(value)>=85 for value in pbd.values()))
@@ -44,6 +49,8 @@ class QAOnlyWordPDF(unittest.TestCase):
             for key in ("prior_knowledge","success_criterion","emk_nilai",
                         "kbat","pak21","closure"):
                 self.assertGreaterEqual(len(add[key]),28)
+        self.assertEqual(len({tuple(r["editorial_activity_titles"])
+                              for r in self.records}),52)
         self.assertEqual(len({r["editorial_assessment"]["pbd_evidence"]
                               for r in self.records}),26)
         self.assertEqual(len({r["editorial_assessment"]["enrichment_action"]
@@ -102,10 +109,13 @@ class QAOnlyWordPDF(unittest.TestCase):
                 ):
                     self.assertIn(exact,text)
                 self.assertEqual(text.count("Refleksi"),1)
-                if r["proposed_pdp"]==52:
-                    self.assertIn("Aktiviti 3: Semak dan baiki",text)
-                    self.assertEqual(r["aktiviti_utama"][2]["title"],
-                        "Aktiviti 3: Pentaksiran dan penambahbaikan")
+                for title in r["editorial_activity_titles"]:
+                    self.assertIn(title,text)
+                for generic in ("Aktiviti 1: Penerokaan bahan",
+                                "Aktiviti 2: Latihan berpandu",
+                                "Aktiviti 3: Pengukuhan individu",
+                                "Aktiviti 3: Pentaksiran dan penambahbaikan"):
+                    self.assertNotIn(generic,text)
                 self.assertNotIn("Guru: Guru ",text)
                 self.assertNotIn("Murid: Murid ",text)
                 self.assertNotIn(r["penutup"]["murid"],text)
@@ -145,6 +155,8 @@ class QAOnlyWordPDF(unittest.TestCase):
                               else r["editorial_supplement"]["application_pdp"]):
                     self.assertIn(squeeze(exact),pdf_text)
                 self.assertEqual(pdf_text.count("Refleksi"),1)
+                for title in r["editorial_activity_titles"]:
+                    self.assertIn(squeeze(title),squeeze(pdf_text))
                 self.assertNotIn("Guru: Guru ",pdf_text)
                 self.assertNotIn("Murid: Murid ",pdf_text)
                 self.assertNotIn(squeeze(r["penutup"]["murid"]),pdf_text)
@@ -167,6 +179,10 @@ class QAOnlyWordPDF(unittest.TestCase):
                 if entry["name"].endswith(".pdf"):
                     pages=PdfReader(str(Path(tmp)/entry["name"])).pages
                     self.assertNotIn("Guru: Guru ",pages[0].extract_text() or "")
+                    pdf_text=pages[0].extract_text() or ""
+                    num=int(entry["name"].split("PDP")[1][:3])
+                    for title in self.records[num-1]["editorial_activity_titles"]:
+                        self.assertIn(squeeze(title),squeeze(pdf_text))
                     self.assertNotIn("Murid: Murid ",pages[0].extract_text() or "")
                     self.assertEqual(len(pages),1,
                                      "QA A4 PDF unexpectedly more than one page: "+entry["name"])
