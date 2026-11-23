@@ -23,6 +23,10 @@ jobs:
           python-version: "3.12"
       - name: Prepare exact native verified curriculum and dependencies
         run: bash build_jawi.sh
+      - name: Install LibreOffice for real Word to A4 PDF geometry
+        run: |
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y -qq libreoffice-writer
       - name: Fast protections for source text and all specialty renderers
         run: |
           python -m pip install "pytest>=8,<10"
