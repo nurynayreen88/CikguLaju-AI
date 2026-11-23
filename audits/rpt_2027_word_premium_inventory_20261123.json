@@ -18,7 +18,7 @@
     "word_direct_link": "Server checks signed account; 403 if unpaid even with direct URL",
     "no_generation_credit_charge": true
   },
-  "ready_source_word_count": 21,
+  "ready_source_word_count": 26,
   "kp2027_year1": {
     "count": 3,
     "format": "Combined Kumpulan A/B in a single Word file per subject",
@@ -91,9 +91,9 @@
   },
   "pending_native_word_sources": [
     {
-      "scope": "KSSR SK original RPT 56 PDF collection",
-      "scope_count": 56,
-      "reason": "PDF source published; no original Word files in corresponding approved catalog. Must reconstruct from verified RPT data, not blind PDF-to-DOCX conversion."
+      "scope": "Remaining KSSR SK RPT 51 PDF-only subject-year documents",
+      "scope_count": 51,
+      "reason": "BM SK Year2-6 now source-first Word; remaining PDF sources need verified original editable curriculum tables, no blind PDF conversion."
     },
     {
       "scope": "Other SJKC/SJKT, DLP, PPKI and KP2027 Year 1 drafts",
@@ -105,5 +105,30 @@
     "Never fabricate a Word link for PDF-only subjects",
     "Do not alter source RPT PDF or Word bytes",
     "Do not change founders/subscribers, payments, credits, or quotas"
-  ]
+  ],
+  "kssr_bm_word": {
+    "count": 5,
+    "years": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "pdp_by_year": {
+      "2": 164,
+      "3": 165,
+      "4": 165,
+      "5": 166,
+      "6": 165
+    },
+    "total_pdp": 825,
+    "weeks_per_year": 44,
+    "source_type": "source-first native RPT HTML, not PDF-to-DOCX conversion",
+    "file_manifest": "rpt_2027/kssr_word_premium/manifest.json",
+    "academic_status": "DRAF_SEMAKAN_NOT_ACADEMIC_FINAL",
+    "access": "founder or active paid subscription only",
+    "source_sha_verified": true,
+    "pdf_original_unchanged": true
+  }
 }
