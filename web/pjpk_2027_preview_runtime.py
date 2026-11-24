@@ -219,6 +219,21 @@ def _source_reflection(state, source, previous):
     return "____ / ____ murid mencapai sasaran: " + target + ". Baki dibimbing."
 
 
+def _book_bbm(source):
+    """Append only explicit visually reviewed printed-page evidence, not RPT candidates."""
+    labels = source["fields"]
+    bbm = labels.get("bbm") or labels.get("bahan") or "Kad situasi, alat bantu mengajar selamat mengikut tajuk."
+    evidence = labels.get("buku teks", "")
+    match = re.match(r"^m/s\s+(\d+(?:\s*[-–]\s*\d+)?),\s*disemak visual pada Buku Teks\b", evidence, re.I)
+    if not match:
+        return bbm
+    pages = re.sub(r"\s*[-–]\s*", "–", match.group(1))
+    # Existing explicit book-page references are kept, not duplicated or rewritten.
+    if re.search(r"\bbuku teks[^.;\n]*?\b(?:m/s|hlm\.?|halaman)\s*\d", bbm, re.I):
+        return bbm
+    return bbm.rstrip(" .;") + f"; Buku Teks PJPK Tahun {source['year']}, m/s {pages}."
+
+
 def adapt_rows(state, rows, *, root=ROOT):
     source = _selection(state, root=root)
     if source is None or not isinstance(rows, dict):
@@ -241,8 +256,7 @@ def adapt_rows(state, rows, *, root=ROOT):
             or labels.get("pengukuhan dan penilaian (pbd)")
             or labels.get("pentaksiran/pbd", ""),
         "PENUTUP": labels["penutup"],
-        "BAHAN BANTU MENGAJAR": labels.get("bbm") or labels.get("bahan")
-            or "Kad situasi, alat bantu mengajar selamat mengikut tajuk.",
+        "BAHAN BANTU MENGAJAR": _book_bbm(source),
         "EMK / NILAI": "Keselamatan, kerjasama dan bertanggungjawab.",
         "REFLEKSI": _source_reflection(state, source, rows.get("REFLEKSI")),
     })
