@@ -125,13 +125,13 @@ const kpPilotPdf={disabled:true,dataset:{kp2027Format:"pdf"},addEventListener(ev
 const kpPilotRequests=[];
 let checkedRph=0;
 const variants=[
- {code:"science_dlp",label:"Science (DLP)",rph_code:"SCIENCE_DLP",curriculum:"dlp",rpt_years:[2,3,4,5,6]},
- {code:"mathematics_dlp",label:"Mathematics (DLP)",rph_code:"MATH_DLP",curriculum:"dlp",rpt_years:[2,3,4,5,6]},
+ {code:"science_dlp",label:"Science SK (DLP)",rph_code:"SCIENCE_DLP",curriculum:"dlp",rpt_years:[2,3,4,5,6]},
+ {code:"mathematics_dlp",label:"Mathematics SK (DLP)",rph_code:"MATH_DLP",curriculum:"dlp",rpt_years:[2,3,4,5,6]},
  {code:"matematik_sjkc",label:"Matematik SJKC",curriculum:"sjkc",rpt_years:[2]},
  {code:"matematik_sjkt",label:"Matematik SJKT",curriculum:"sjkt"},
  ...[
   ["bahasa_iban","Bahasa Iban"],["bahasa_kadazandusun","Bahasa Kadazandusun"],
-  ["bahasa_semai","Bahasa Semai"],["bahasa_cina_sk","Bahasa Cina (SK)"],["bahasa_tamil_sk","Bahasa Tamil (SK)"]
+  ["bahasa_semai","Bahasa Semai"],["bahasa_cina_sk","Bahasa Cina SK"],["bahasa_tamil_sk","Bahasa Tamil SK"]
  ].map(([code,label])=>({code,label,curriculum:"kssr"})),
 ];
 function dlpId(science,n){
@@ -181,7 +181,7 @@ const ctx={
   catalogueCalls.push(kind);
   if(extra.curriculum==="sjkc")return ctx.sjkcReady?[{value:"MATH_SJKC",label:"Matematik SJKC"}]:[];
   if(extra.curriculum==="sjkt")return ctx.sjktReady?[{value:"MATH_SJKT",label:"Matematik SJKT"}]:[];
-  return [{value:"MATH",label:"Matematik"},{value:"MATH_DPK3",label:"Matematik SK (DPK Edisi 3)"}];
+  return [{value:"MATH",label:"Matematik"},{value:"MATH_DPK3",label:"Matematik SK (DPK Edisi 3)"},{value:"BM",label:"Bahasa Melayu (SK)"},{value:"SCIENCE",label:"Sains"},{value:"ARAB",label:"Bahasa Arab (DRAF)"}];
  },
  showStep(el,visible){el.hidden=!visible;}, subjectNavLabel(){return "Unit";},
  async fillForSelection(el,kind,extra){
@@ -276,6 +276,9 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
   year.value=y;await listeners["year.change"]();
   assert.ok(subject.options.some(o=>o.value==="MATH"&&o.label==="Matematik SK"));
   assert.ok(subject.options.some(o=>o.value==="MATH_DPK3"&&o.label==="Matematik SK (DPK Edisi 3)"));
+  assert.ok(subject.options.some(o=>o.value==="BM"&&o.label==="Bahasa Melayu SK"));
+  assert.ok(subject.options.some(o=>o.value==="SCIENCE"&&o.label==="Sains SK"));
+  assert.ok(subject.options.some(o=>o.value==="ARAB"&&o.label==="Bahasa Arab SK (DRAF)"));
   const pending=subject.options.find(o=>o.value==="matematik_sjkc");
   assert.ok(pending,"Year "+y+" SJKC planned subject");
   assert.match(pending.label,/Matematik SJKC.*Dalam Penyediaan/);
@@ -327,7 +330,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
   year.value=n;
   await listeners["year.change"]();
   assert.deepEqual(subject.options.filter(x=>x.value.endsWith("_DLP")).map(x=>x.label),
-   ["Science (DLP)","Mathematics (DLP)"]);
+   ["Science SK (DLP)","Mathematics SK (DLP)"]);
   assert.ok(subject.options.some(item=>item.value==="MATH"));
   assert.deepEqual(catalogueCalls.splice(0),n==="2"?["subjects","subjects","subjects"]:n==="3"?["subjects","subjects"]:["subjects"]);
   for(const code of ["SCIENCE_DLP","MATH_DLP"]){
