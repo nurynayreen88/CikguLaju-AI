@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'tools/arabic_178_draft_shared_layout_20261124.py'
+      - 'web/telegram_provisional_arab_music_api.py'
       - 'audits/arabic_draft_y4_y6_sp_candidate_bank_20261124.json'
       - '.github/workflows/arabic-178-draft-shared-layout-20261124.yml'
   workflow_dispatch:
@@ -17,8 +18,38 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: pip install python-docx pymupdf
-      - run: python -m tools.arabic_178_draft_shared_layout_20261124 --out qa-arabic-178
+      - run: pip install python-docx pymupdf flask reportlab pypdf
+      - name: Generate all 178 through the actual private Word renderer
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from web.telegram_provisional_arab_music_api import _arab_index, _arab_word, _selected
+          from docx import Document
+          out = Path("qa-arabic-178")
+          out.mkdir()
+          count=0
+          for (year,n), row in _arab_index().items():
+              if year not in (4,5,6): continue
+              selected=_selected(year,"ARAB",f"u{int(row['unit']):02d}",f"{n:03d}")
+              assert selected.get("status","DRAF")=="DRAF"
+              assert selected["formats"]==["word"]
+              dest=out/f"BA_T{year}_{n:03d}.docx"
+              teacher={"class":"4 Bestari","date":"2027-01-20","time":"08:00 - 09:00","students":"30","reflection":""}
+              _arab_word(selected,teacher,dest)
+              doc=Document(dest)
+              assert [len(t.columns) for t in doc.tables]==[3,2,3,2]
+              assert [r.cells[2].text for r in doc.tables[0].rows]==["4 Bestari","20/01/2027","08:00 - 09:00","30"]
+              assert doc.tables[1].cell(1,1).text==row["sp"]
+              assert "DRAF" not in "".join(c.text for t in doc.tables for r in t.rows for c in r.cells)
+              if n==1:
+                  extra=out/"manual.docx"
+                  _arab_word(selected,{**teacher,"reflection":"Catatan guru."},extra)
+                  assert Document(extra).tables[-1].cell(2,1).text=="Catatan guru."
+                  extra.unlink()
+              count+=1
+          assert count==178,count
+          print("178 actual Arabic draft Word downloads verified")
+          PY
       - name: Install native PDF converter and Arabic font
         run: |
           timeout 240 sudo apt-get update
