@@ -613,6 +613,7 @@ def create_all_rpt_blueprint(*,root=ROOT):
         digest=hashlib.sha256(content).hexdigest()
         if staged is not None and digest!=_release_manifest(root)[f"{subject}:{year}"]["sha256"]:
             return jsonify({"error":"Versi RPT tidak sepadan."}),503
+        cover_reviewed = True
         if paid_cover and staged is None:
             # Compatibility downloads may be personalized only when their exact
             # bytes match an existing reviewed original-cover layout.
@@ -626,12 +627,16 @@ def create_all_rpt_blueprint(*,root=ROOT):
                              for x in candidates)
             except (OSError,ValueError,TypeError,AttributeError):
                 reviewed=False
-            if not reviewed:
-                return jsonify({"error":"Muka depan asal RPT belum sepadan dengan versi PDF. Identiti sekolah tidak diubah."}),503
+            cover_reviewed = reviewed
+        # Keep a valid, exact legacy PDF downloadable even when the original
+        # cover has not been reviewed. Entitlement is unchanged; the browser
+        # must not fetch private profile data or stamp an unreviewed cover.
         response=send_file(BytesIO(content),mimetype="application/pdf",as_attachment=True,
                            download_name=f"CIKGULAJU_RPT_{subject.upper()}_TAHUN_{year}_2027_DRAF.pdf",
                            conditional=False)
         response.headers["X-RPT-Personalization-Allowed"]="1" if paid_cover else "0"
         response.headers["X-RPT-Source-SHA256"]=digest
+        if paid_cover and not cover_reviewed:
+            response.headers["X-RPT-Cover-Status"]="unverified"
         return response
     return bp
