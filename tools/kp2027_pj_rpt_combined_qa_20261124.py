@@ -2,14 +2,18 @@
 Offline only; not a release document or a route to active downloads.
 """
 from pathlib import Path
-from collections import Counter
+from copy import deepcopy
+from hashlib import sha256
+from io import BytesIO
+from zipfile import ZipFile
+import re
 import json
 import argparse
 import subprocess
 from docx import Document
 from docx.shared import Mm, Pt, RGBColor
 from docx.enum.table import WD_TABLE_ALIGNMENT, WD_CELL_VERTICAL_ALIGNMENT
-from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 
@@ -98,41 +102,118 @@ def row(table, values, header=False):
     return rr
 
 
+def approved_template():
+    """Use the exact SHA-verified BM KP2027 document from the approved bundle."""
+    archive = ROOT / "rpt_2027/kp2027/year1_rpt_bm_math_alam_gabungan_ab_kulit_asal_20261122.zip"
+    data = archive.read_bytes()
+    assert sha256(data).hexdigest() == "859a78af79f2741c9caa074cab36fbb16d376028178b77fb2aaf993a297f2ff9"
+    name = "CIKGULAJU_RPT_KP2027_T1_BM_SK_KUMPULAN_AB_GABUNGAN_2027.docx"
+    with ZipFile(BytesIO(data)) as z:
+        payload = z.read("WORD/" + name)
+        manifest = json.loads(z.read("MANIFEST_QA.json"))
+        assert sha256(payload).hexdigest() == manifest["files"][name]["sha256"]
+    return Document(BytesIO(payload))
+
+
+def replace_paragraph_text(p, value):
+    if len(p.runs) != 1:
+        raise ValueError("Unexpected approved cover run structure: " + p.text)
+    p.runs[0].text = value
+
+
+def template_cover_and_grid():
+    doc = approved_template()
+    ps = doc.paragraphs
+    assert len(ps) >= 14 and len(doc.tables) >= 2
+    assert ps[2].text == "RPT 2027"
+    for idx, marker in ((4,"NAMA SEKOLAH:"),(5,"SUBJEK:"),(7,"KUMPULAN:"),
+                        (8,"NAMA GURU:"),(10,"Disediakan oleh:")):
+        assert ps[idx].text.startswith(marker)
+    table = doc.tables[0]
+    assert len(table.columns) == 5
+    assert tuple(c.text.strip() for c in table.rows[0].cells) == COLS
+    # Keep the native cover, page setup, actual table grid, header row and styles.
+    cover_nodes = {p._p for p in ps[:12]}
+    body = doc.element.body
+    for node in list(body):
+        if node not in cover_nodes and node is not table._tbl and node.tag != qn("w:sectPr"):
+            body.remove(node)
+    status_written = False
+    for p in ps[:12]:
+        orig = p.text
+        value = re.sub(r"Bahasa\s+Melayu(?:\s*\(?SK\)?)?", "PENDIDIKAN JASMANI", orig, flags=re.I)
+        if p is ps[5]:
+            value = "SUBJEK: PENDIDIKAN JASMANI"
+        if "SEMAKAN PELAKSANAAN" in value.upper():
+            value = re.sub("SEMAKAN PELAKSANAAN", "SALINAN SEMAKAN DALAMAN", value, flags=re.I)
+            status_written = True
+        if value != orig:
+            replace_paragraph_text(p, value)
+    if not status_written:
+        p = ps[5]
+        replace_paragraph_text(p, p.text + " — SALINAN SEMAKAN DALAMAN")
+    # Add a page break only if the retained cover does not already end with one.
+    if not any('w:type="page"' in p._p.xml for p in ps[:12]):
+        br = doc.add_paragraph()
+        br.add_run().add_break(WD_BREAK.PAGE)
+        table._tbl.addprevious(br._p)
+    # The explanatory note belongs on the internal review page, not the cover.
+    note = doc.add_paragraph()
+    paragraph(note, "127 PdP calon; 167 SP setiap kumpulan. Tarikh dan peruntukan jadual belum diluluskan. "
+              "107 padanan SP memerlukan semakan akademik.", False, 9)
+    table._tbl.addprevious(note._p)
+    source_row = next(r for r in table.rows[1:] if r.cells[0].text.strip() == "KUMPULAN A")
+    row_template = deepcopy(source_row._tr)
+    for r in list(table.rows)[1:]:
+        table._tbl.remove(r._tr)
+    header = table.rows[0]
+    for cell in header.cells:
+        pr = cell._tc.get_or_add_tcPr()
+        shading = pr.find(qn("w:shd"))
+        if shading is None:
+            shading = xml(pr, "shd", fill=TONE)
+        else:
+            shading.set(qn("w:fill"), TONE)
+    # Footer/header must not retain another subject's identity.
+    for sec in doc.sections:
+        for part in (sec.header, sec.footer):
+            for p in part.paragraphs:
+                value = re.sub(r"Bahasa\s+Melayu(?:\s*\(?SK\)?)?", "PENDIDIKAN JASMANI", p.text, flags=re.I)
+                if value != p.text:
+                    replace_paragraph_text(p, value)
+    return doc, table, row_template
+
+
+def template_row(table, row_template, values):
+    tr = deepcopy(row_template)
+    table._tbl.append(tr)
+    rr = table.rows[-1]
+    pr = tr.get_or_add_trPr()
+    for tag in ("trHeight", "tblHeader", "cantSplit"):
+        for element in list(pr.findall(qn("w:"+tag))):
+            pr.remove(element)
+    xml(pr, "cantSplit")
+    for cell, value in zip(rr.cells, values):
+        # Retain the exact cell geometry and first paragraph styling.
+        p0 = cell.paragraphs[0]
+        style = deepcopy(p0._p.pPr) if p0._p.pPr is not None else None
+        rstyle = deepcopy(p0.runs[0]._r.rPr) if p0.runs and p0.runs[0]._r.rPr is not None else None
+        cell.text = ""
+        for j, line in enumerate(value.split("\n")):
+            p = cell.paragraphs[0] if j == 0 else cell.add_paragraph()
+            if style is not None:
+                p._p.insert(0, deepcopy(style))
+            run = p.add_run(line)
+            if rstyle is not None:
+                run._r.insert(0, deepcopy(rstyle))
+            # Row text must remain readable and wrap rather than disappear.
+            p.paragraph_format.keep_with_next = False
+    return rr
+
+
 def build(output):
     groups = load_rows()
-    doc = Document()
-    sec = doc.sections[0]
-    sec.page_width, sec.page_height = Mm(297), Mm(210)
-    sec.left_margin = sec.right_margin = Mm(14)
-    sec.top_margin = sec.bottom_margin = Mm(14)
-    for txt, size in (("RANCANGAN PENGAJARAN TAHUNAN 2027", 26),
-                      ("PENDIDIKAN JASMANI", 21), ("KP2027 • TAHUN 1", 17),
-                      ("KUMPULAN A DAN B", 14), ("SALINAN SEMAKAN DALAMAN", 12)):
-        p = doc.add_paragraph()
-        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        p.paragraph_format.space_before = Pt(14)
-        r = paragraph(p, txt, True, size)
-        p.paragraph_format.space_before = Pt(14)
-    for label in ("NAMA SEKOLAH:", "NEGERI:", "NAMA GURU:", "KELAS:", "DISEDIAKAN OLEH:", "DISEMAK OLEH:"):
-        p = doc.add_paragraph()
-        paragraph(p, label, True, 11)
-    paragraph(doc.add_paragraph(),
-              "127 PdP calon, 167 SP setiap kumpulan. Tarikh dan peruntukan jadual belum diluluskan. "
-              "107 padanan SP berubah daripada katalog aktif dan memerlukan semakan akademik.", False, 10)
-    doc.add_page_break()
-    t = doc.add_table(rows=0, cols=5)
-    t.alignment = WD_TABLE_ALIGNMENT.CENTER
-    t.autofit = False
-    for col, width in zip(t.columns, WIDTHS):
-        col.width = Mm(width)
-    pr = t._tbl.tblPr
-    w = pr.find(qn("w:tblW"))
-    w.set(qn("w:type"), "dxa")
-    w.set(qn("w:w"), str(Mm(sum(WIDTHS)).twips))
-    borders = xml(pr, "tblBorders")
-    for side in ("top", "left", "bottom", "right", "insideH", "insideV"):
-        xml(borders, side, val="single", sz="4", color=EDGE)
-    row(t, COLS, True)
+    doc, t, row_template = template_cover_and_grid()
     for group, items in groups.items():
         for old, lesson, delta in items:
             sp = "\n".join(s["code"] + " " + s["text"] for s in lesson["standards"])
@@ -145,12 +226,17 @@ def build(output):
             notes = "DK hlm. " + ", ".join(map(str, old["dk_pages"])) + " (peta asal)"
             if delta["review_status"] == "REVIEW_REQUIRED":
                 notes += "\nSemak padanan SP calon."
-            row(t, ("KUMPULAN " + group, old["bidang"] + "\n" + lesson["title"],
+            template_row(t, row_template, ("KUMPULAN " + group, old["bidang"] + "\n" + lesson["title"],
                     learning, activity, notes))
     output.parent.mkdir(parents=True, exist_ok=True)
     doc.save(output)
     # A Word readback confirms exact rows, no lost standards, activities or group identity.
     result = Document(output)
+    reference = approved_template()
+    assert result.tables[0]._tbl.tblGrid.xml == reference.tables[0]._tbl.tblGrid.xml
+    assert result.paragraphs[2].text == reference.paragraphs[2].text
+    for idx in (4,7,8,10):
+        assert result.paragraphs[idx].text == reference.paragraphs[idx].text
     rows = result.tables[0].rows
     assert len(rows) == 128
     k = 1
