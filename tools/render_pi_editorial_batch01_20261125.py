@@ -21,6 +21,7 @@ def main():
     payload=json.loads(Path("staging/pendidikan_islam/active_activity_editorial_batch01_20261125.json").read_text(encoding="utf8"))
     assert payload["status"]=="QA_ONLY_NOT_FOR_RUNTIME"
     original=runtime._rph_rows
+    original_document=getattr(runtime,"_rph_document_rows",None)
     try:
         runtime.DB_PATH=str(db)
         runtime.CIKGULAJU_DB_V2600_ACTIVE=True
@@ -46,15 +47,26 @@ def main():
             assert all("موريد" in body for title,body in item["activities"])
             assert "ݢورو" in activity
             assert len(activity)<=len(rows["AKTIVITI UTAMA"])+100, "Avoid unchecked long output"
+            row_hits=[]
             def qa_rows(s,t):
                 current=original(s,t)
                 if s.get("subject")=="Pendidikan Islam" and int(s.get("rpt_entry_id") or 0)==item["id"]:
+                    row_hits.append("rows")
                     updated=dict(current)
                     updated["AKTIVITI UTAMA"]=activity
                     assert {k:v for k,v in updated.items() if k!="AKTIVITI UTAMA"}=={k:v for k,v in current.items() if k!="AKTIVITI UTAMA"}
                     return updated
                 return current
             runtime._rph_rows=qa_rows
+            if callable(original_document):
+                def qa_document(s,current):
+                    result=original_document(s,current)
+                    if isinstance(result,dict) and s.get("subject")=="Pendidikan Islam" and str(s.get("rpt_entry_id"))==str(item["id"]):
+                        row_hits.append("document_rows")
+                        result=dict(result)
+                        result["AKTIVITI UTAMA"]=activity
+                    return result
+                runtime._rph_document_rows=qa_document
             tag=f"PI_T{item['year']}_PDP{item['pdp']:03d}"
             unique="pi_editorial_"+uuid.uuid4().hex[:16]
             try:
@@ -62,6 +74,8 @@ def main():
                 pdf=Path(runtime.create_pdf_file(state,native,unique+"p"))
                 document=Document(str(word))
                 whole="\n".join(c.text for t in document.tables for r in t.rows for c in r.cells)
+                print("PI_QA_RENDER_HOOKS",tag,row_hits,flush=True)
+                print("PI_QA_WORD_ACTUAL",tag,repr(whole[:5000]),flush=True)
                 for title,body in item["activities"]:
                     assert normalized(title) in normalized(whole), (tag,"missing title",title)
                     assert normalized(body) in normalized(whole), (tag,"missing activity",body)
@@ -76,10 +90,12 @@ def main():
                 print("PI_EDITORIAL_RENDER",json.dumps(reports[-1]),flush=True)
             finally:
                 runtime._rph_rows=original
+                if callable(original_document): runtime._rph_document_rows=original_document
         (root/"report.json").write_text(json.dumps(reports,indent=2),encoding="utf8")
         assert len(reports)==8
     finally:
         runtime._rph_rows=original
+        if callable(original_document): runtime._rph_document_rows=original_document
         tmp.cleanup()
 
 if __name__=="__main__":
