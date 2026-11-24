@@ -4,6 +4,7 @@ No network, user account, quota, payment or production database writes.
 from pathlib import Path
 from tempfile import TemporaryDirectory
 import json
+import re
 import shutil
 import subprocess
 import uuid
@@ -89,6 +90,10 @@ def main():
                     assert "F8EAF2" in doc.tables[0]._tbl.xml
                     display="\n".join(c.text for t in doc.tables for r in t.rows for c in r.cells)
                     assert rows["REFLEKSI"] in display
+                    sp_cells = [r.cells[1].text for r in doc.tables[1].rows if r.cells[0].text.strip().casefold() == "standard pembelajaran"]
+                    assert len(sp_cells) == 1
+                    codes = [re.match(r"^\d+\.\d+", line)[0] for line in rows["STANDARD PEMBELAJARAN"].splitlines()]
+                    assert [re.match(r"^\d+\.\d+", line)[0] for line in sp_cells[0].splitlines()] == codes, (year,number,sp_cells)
                     name=f"Moral_T{year}_Sesi{number:03d}"
                     shutil.copy2(word,out/(name+".docx"))
                     shutil.copy2(pdf,out/(name+".pdf"))
@@ -99,6 +104,8 @@ def main():
                         content=page.get_text()
                         assert "Pendidikan Moral" in content
                         assert "Refleksi" in content
+                        # Match actual rendered text lines, not merely code presence.
+                        assert all(re.search(r"(?m)^\s*" + re.escape(code) + r"(?![\d.])", content) for code in codes), (year,number,codes,"SP line breaks missing in PDF")
                         # Native PDF subject palette must be rendered, not merely
                         # a DOCX wrapper. Test colored vector rectangles.
                         color=(248/255,234/255,242/255)
