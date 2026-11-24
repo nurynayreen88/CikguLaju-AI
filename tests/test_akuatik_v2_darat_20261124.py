@@ -95,5 +95,30 @@ class AquaticV2Source(unittest.TestCase):
         for key in [(4,"001"),(2,"028"),(5,"009"),(6,"026"),(1,"KP2027-A-050")]:
             self.assertEqual(renderer.options(*key),("V1",))
 
+    def test_protected_renderer_rejects_unlisted_and_unauthenticated(self):
+        from flask import Flask
+        from types import SimpleNamespace
+        from unittest.mock import patch
+        from web.native_rph_telegram_api import create_native_rph_blueprint
+        app=Flask(__name__)
+        app.register_blueprint(create_native_rph_blueprint(SimpleNamespace(
+            create_word_file=lambda *a: None, create_pdf_file=lambda *a: None)))
+        client=app.test_client()
+        route="/internal/rph/v1/akuatik-v2/render"
+        payload={"year":3,"source_id":"022","format":"pdf",
+                 "teacher":{"class":"","date":"","time":"","students":""}}
+        token="test-token-"+"x"*40
+        headers={"Authorization":"Bearer "+token}
+        with patch.dict("os.environ",{"CIKGULAJU_WEB_NATIVE_RPH_ENABLED":"1",
+                                      "CIKGULAJU_AUTHORITATIVE_API_TOKEN":token}):
+            self.assertEqual(client.post(route,json=payload).status_code,401)
+            self.assertEqual(client.post(route,json={**payload,"year":4,"source_id":"025"},headers=headers).status_code,400)
+            self.assertEqual(client.post(route,json={**payload,"qa_reference":True},headers=headers).status_code,400)
+            response=client.post(route,json=payload,headers=headers)
+            self.assertEqual(response.status_code,200)
+            self.assertTrue(response.data.startswith(b"%PDF-"))
+            self.assertIn("no-store",response.headers["Cache-Control"])
+            self.assertIn("AKUATIK_V2",response.headers["Content-Disposition"])
+
 if __name__=="__main__":
     unittest.main()
