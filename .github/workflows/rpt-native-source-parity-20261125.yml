@@ -1,0 +1,26 @@
+name: RPT 2027 PI BM actual native source parity (read-only QA)
+on:
+  pull_request:
+    paths:
+      - "tools/audit_rpt_native_source_parity_20261125.py"
+      - ".github/workflows/rpt-native-source-parity-20261125.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native-source-parity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check current verified native source IDs without database writes
+        run: python -m tools.audit_rpt_native_source_parity_20261125
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rpt-native-parity-20261125
+          path: qa/rpt-native-parity/report.json
+          if-no-files-found: error
+          retention-days: 7
