@@ -1,0 +1,584 @@
+{
+  "status": "QA_NOT_PUBLISHED",
+  "year": 4,
+  "source": "rpt_2027/sjkc/sains/year_4_kuala_lumpur.json",
+  "source_git_blob": "9edd108e78f05db329567eb3bccd4caf6f825601",
+  "records": [
+    {
+      "pdp": 1,
+      "unit_number": 1,
+      "topic": "用感官和工具观察",
+      "materials": "安全观察样本、放大镜",
+      "teacher_guidance": "区分观察与解释",
+      "source_focus": "用感官及合适工具描述可见变化，区分观察结果与解释。",
+      "ready": false
+    },
+    {
+      "pdp": 2,
+      "unit_number": 1,
+      "topic": "分类并比较",
+      "materials": "物品图卡、分类表",
+      "teacher_guidance": "按同一特征分组并比较",
+      "source_focus": "根据相同特征分组，并比较两组物体的异同。",
+      "ready": false
+    },
+    {
+      "pdp": 3,
+      "unit_number": 1,
+      "topic": "测量和应用数目",
+      "materials": "直尺、量具、记录表",
+      "teacher_guidance": "核对标准单位及读数",
+      "source_focus": "选择标准单位记录两项读数，说明如何正确使用测量工具。",
+      "ready": false
+    },
+    {
+      "pdp": 4,
+      "unit_number": 1,
+      "topic": "作出推断与预测",
+      "materials": "观察记录、证据卡",
+      "teacher_guidance": "提出有依据的推断及预测",
+      "source_focus": "从记录提出一个推断，并根据证据预测下一次观察的结果。",
+      "ready": false
+    },
+    {
+      "pdp": 5,
+      "unit_number": 1,
+      "topic": "沟通与按时间排序",
+      "materials": "三次观察图、时间表",
+      "teacher_guidance": "按时序排列并解释变化",
+      "source_focus": "把三次观察按时间排序，以表格呈现并解释变化。",
+      "ready": false
+    },
+    {
+      "pdp": 6,
+      "unit_number": 1,
+      "topic": "诠释资料和操作性定义",
+      "materials": "数据图、定义卡",
+      "teacher_guidance": "用可观察条件定义现象",
+      "source_focus": "指出数据中的变化趋势，再用可观察的条件定义所研究的现象。",
+      "ready": false
+    },
+    {
+      "pdp": 7,
+      "unit_number": 1,
+      "topic": "控制变数和提出假设",
+      "materials": "实验情境、变量卡",
+      "teacher_guidance": "辨认三类变量并提出可检验假设",
+      "source_focus": "定出操纵、反应及固定变数，写出一项可以验证的假设。",
+      "ready": false
+    },
+    {
+      "pdp": 8,
+      "unit_number": 1,
+      "topic": "检验假设并写报告",
+      "materials": "安全实验材料、报告表",
+      "teacher_guidance": "在教师指导下公平测试并检查假设",
+      "source_focus": "进行公平测试，记录结果并说明结果是否支持假设。",
+      "ready": false
+    },
+    {
+      "pdp": 9,
+      "unit_number": 2,
+      "topic": "辨认呼吸器官",
+      "materials": "人体呼吸图、标签",
+      "teacher_guidance": "辨认器官并标注空气路径",
+      "source_focus": "指认人体图中的呼吸器官，标出空气进入和离开的通道。",
+      "ready": false
+    },
+    {
+      "pdp": 10,
+      "unit_number": 2,
+      "topic": "空气流动与气体交换",
+      "materials": "肺部示意图、箭头",
+      "teacher_guidance": "说明气体交换及空气方向",
+      "source_focus": "在示意图上用箭头标明空气的路径，并说明肺部气体交换。",
+      "ready": false
+    },
+    {
+      "pdp": 11,
+      "unit_number": 2,
+      "topic": "比较吸入和呼出的空气",
+      "materials": "气体组成示意图",
+      "teacher_guidance": "比较吸入与呼出气体的组成",
+      "source_focus": "比较两张气体组成图，说明氧气和二氧化碳的含量变化。",
+      "ready": false
+    },
+    {
+      "pdp": 12,
+      "unit_number": 2,
+      "topic": "胸腔在呼吸时的变化",
+      "materials": "胸腔图、记录卡",
+      "teacher_guidance": "观察正常呼吸，不要求屏息",
+      "source_focus": "观察吸气和呼气时的胸腔变化，以图和箭头表示。",
+      "ready": false
+    },
+    {
+      "pdp": 13,
+      "unit_number": 2,
+      "topic": "活动与呼吸率",
+      "materials": "计时器、记录表",
+      "teacher_guidance": "自愿轻活动并记录呼吸次数，不作体能排名",
+      "source_focus": "记录休息及轻松活动后一分钟内的呼吸次数，用图表汇报。",
+      "ready": false
+    },
+    {
+      "pdp": 14,
+      "unit_number": 2,
+      "topic": "区分排遗和排泄",
+      "materials": "排遗排泄情境图",
+      "teacher_guidance": "区分消化残渣与代谢废物",
+      "source_focus": "分别用一个例子说明消化残渣排出与排泄废物的过程。",
+      "ready": false
+    },
+    {
+      "pdp": 15,
+      "unit_number": 2,
+      "topic": "排泄器官与排泄物",
+      "materials": "器官及排泄物配对卡",
+      "teacher_guidance": "配对肺、皮肤、肾及排泄物",
+      "source_focus": "把肺、皮肤和肾与相应排泄物配对。",
+      "ready": false
+    },
+    {
+      "pdp": 16,
+      "unit_number": 2,
+      "topic": "排出废物的重要性",
+      "materials": "人体废物图、因果卡",
+      "teacher_guidance": "解释排出废物的重要性",
+      "source_focus": "用图或短讲说明为什么人体需要排出不同类别的废物。",
+      "ready": false
+    },
+    {
+      "pdp": 17,
+      "unit_number": 2,
+      "topic": "感觉器官与外来刺激",
+      "materials": "刺激反应情境图",
+      "teacher_guidance": "找出刺激、感官及反应部位",
+      "source_focus": "从情境图找出刺激、感官及作出反应的身体部位。",
+      "ready": false
+    },
+    {
+      "pdp": 18,
+      "unit_number": 2,
+      "topic": "解释反应及其作用",
+      "materials": "日常情境卡",
+      "teacher_guidance": "解释反应对人体的保护作用",
+      "source_focus": "用两个日常情境解释人如何作出反应，推断其中一种反应的作用。",
+      "ready": false
+    },
+    {
+      "pdp": 19,
+      "unit_number": 2,
+      "topic": "感官保健与汇报",
+      "materials": "感官保健卡、画纸",
+      "teacher_guidance": "比较安全习惯与不良习惯",
+      "source_focus": "制作一张对照卡，说明一项影响感官的习惯和一种保护做法。",
+      "ready": false
+    },
+    {
+      "pdp": 20,
+      "unit_number": 3,
+      "topic": "辨认动物的呼吸器官",
+      "materials": "动物呼吸器官图",
+      "teacher_guidance": "辨认不同器官的实例",
+      "source_focus": "根据图卡指认动物使用的呼吸器官，并标出两种不同的例子。",
+      "ready": false
+    },
+    {
+      "pdp": 21,
+      "unit_number": 3,
+      "topic": "按呼吸器官分类",
+      "materials": "动物图卡、分类表",
+      "teacher_guidance": "以呼吸器官作为分类依据",
+      "source_focus": "为动物图卡分类并说明如何判断所属组别。",
+      "ready": false
+    },
+    {
+      "pdp": 22,
+      "unit_number": 3,
+      "topic": "有多种呼吸器官的动物",
+      "materials": "青蛙生命周期图",
+      "teacher_guidance": "说明不同阶段或条件下的呼吸方式",
+      "source_focus": "用一张示意图解释青蛙如何利用不止一种呼吸器官。",
+      "ready": false
+    },
+    {
+      "pdp": 23,
+      "unit_number": 3,
+      "topic": "脊椎动物与无脊椎动物",
+      "materials": "动物图卡、脊椎示意图",
+      "teacher_guidance": "按有无脊椎分类",
+      "source_focus": "根据是否有脊椎分类，给每组补充两个例子。",
+      "ready": false
+    },
+    {
+      "pdp": 24,
+      "unit_number": 3,
+      "topic": "五类脊椎动物的特征",
+      "materials": "五类脊椎动物特征卡",
+      "teacher_guidance": "以特征解释归类",
+      "source_focus": "根据各类别的专有特征把动物归类，并用一个特征解释分类。",
+      "ready": false
+    },
+    {
+      "pdp": 25,
+      "unit_number": 3,
+      "topic": "汇报脊椎动物的观察",
+      "materials": "脊椎动物对照表",
+      "teacher_guidance": "比较两类动物的异同",
+      "source_focus": "用对照表整理两类脊椎动物的异同，口头说明归类理由。",
+      "ready": false
+    },
+    {
+      "pdp": 26,
+      "unit_number": 4,
+      "topic": "观察植物对刺激的反应",
+      "materials": "含羞草或发芽记录图",
+      "teacher_guidance": "根据真实观察说明刺激反应",
+      "source_focus": "观察含羞草或发芽植物的资料，说出它们怎样对刺激作出反应。",
+      "ready": false
+    },
+    {
+      "pdp": 27,
+      "unit_number": 4,
+      "topic": "刺激与反应部位",
+      "materials": "根茎叶图、刺激卡",
+      "teacher_guidance": "配对刺激及反应部位",
+      "source_focus": "把叶、根和茎与其对光、水或触碰的反应配对。",
+      "ready": false
+    },
+    {
+      "pdp": 28,
+      "unit_number": 4,
+      "topic": "研究植物的反应",
+      "materials": "两组植物观察记录",
+      "teacher_guidance": "比较反应位置并标注",
+      "source_focus": "记录植物在两种条件下反应的位置，用标注图呈现结果。",
+      "ready": false
+    },
+    {
+      "pdp": 29,
+      "unit_number": 4,
+      "topic": "光合作用的定义",
+      "materials": "光合作用示意图",
+      "teacher_guidance": "说明绿色植物制造食物",
+      "source_focus": "用自己的话说明绿色植物怎样制造食物。",
+      "ready": false
+    },
+    {
+      "pdp": 30,
+      "unit_number": 4,
+      "topic": "光合作用的条件和原料",
+      "materials": "原料及条件图卡",
+      "teacher_guidance": "区分水、二氧化碳、光和叶绿素",
+      "source_focus": "用流程图分别标出水、二氧化碳，以及光与叶绿素的作用。",
+      "ready": false
+    },
+    {
+      "pdp": 31,
+      "unit_number": 4,
+      "topic": "光合作用的产物",
+      "materials": "光合作用产物图",
+      "teacher_guidance": "辨认糖和氧气",
+      "source_focus": "根据图示辨认糖和氧气，并说明植物如何利用或储存所制造的食物。",
+      "ready": false
+    },
+    {
+      "pdp": 32,
+      "unit_number": 4,
+      "topic": "光合作用对生物的重要性",
+      "materials": "食物链图、氧气示意图",
+      "teacher_guidance": "联系光合作用与生物需求",
+      "source_focus": "用图解说明光合作用如何提供食物与氧气，并解释其中一个例子。",
+      "ready": false
+    },
+    {
+      "pdp": 33,
+      "unit_number": 5,
+      "topic": "光沿着直线传播",
+      "materials": "带孔卡片、低亮度手电筒",
+      "teacher_guidance": "比较卡片对齐与不对齐的光路",
+      "source_focus": "排列带孔卡片，用观察说明光通过时的路线。",
+      "ready": false
+    },
+    {
+      "pdp": 34,
+      "unit_number": 5,
+      "topic": "材料与影子",
+      "materials": "三种透光材料、白屏",
+      "teacher_guidance": "比较影子清晰程度",
+      "source_focus": "比较透明、半透明和不透明材料所形成的影子并记录差异。",
+      "ready": false
+    },
+    {
+      "pdp": 35,
+      "unit_number": 5,
+      "topic": "影子的大小和形状",
+      "materials": "手电筒、挡光物、白屏",
+      "teacher_guidance": "改变一个位置并记录影子变化",
+      "source_focus": "改变光源或物体的位置，记录影子大小或形状，并用图概括结果。",
+      "ready": false
+    },
+    {
+      "pdp": 36,
+      "unit_number": 5,
+      "topic": "观察光的反射",
+      "materials": "镜子、手电筒、白纸",
+      "teacher_guidance": "观察反射光路，不照眼睛",
+      "source_focus": "用镜子改变光束的方向，指出入射光和反射光。",
+      "ready": false
+    },
+    {
+      "pdp": 37,
+      "unit_number": 5,
+      "topic": "反射的射线图和用途",
+      "materials": "反射射线图、日常用品图",
+      "teacher_guidance": "绘出光路并解释应用",
+      "source_focus": "用箭头绘出镜面反射的路线，并解释一种日常用途。",
+      "ready": false
+    },
+    {
+      "pdp": 38,
+      "unit_number": 5,
+      "topic": "观察光的折射",
+      "materials": "透明杯、水、铅笔",
+      "teacher_guidance": "观察铅笔在水中看似偏移",
+      "source_focus": "观察水中物体看似弯曲或偏移的情况，说出发生的位置。",
+      "ready": false
+    },
+    {
+      "pdp": 39,
+      "unit_number": 5,
+      "topic": "彩虹的形成与解释",
+      "materials": "彩虹示意图、棱镜示范",
+      "teacher_guidance": "解释白光分成多色，不直视太阳",
+      "source_focus": "根据实验或示意图标明白光分成多种颜色时发生的变化。",
+      "ready": false
+    },
+    {
+      "pdp": 40,
+      "unit_number": 6,
+      "topic": "振动产生声音",
+      "materials": "橡皮筋模型、音叉示范",
+      "teacher_guidance": "观察振动停止时声音改变",
+      "source_focus": "观察发声物的变化，说明停止振动时声音如何改变。",
+      "ready": false
+    },
+    {
+      "pdp": 41,
+      "unit_number": 6,
+      "topic": "声音传播的方向",
+      "materials": "低音量声源、方向图",
+      "teacher_guidance": "比较不同方向能否听见",
+      "source_focus": "比较不同方向是否听见同一声源，并用箭头画出传播方向。",
+      "ready": false
+    },
+    {
+      "pdp": 42,
+      "unit_number": 6,
+      "topic": "声音反射",
+      "materials": "回声情境图、声音传播图",
+      "teacher_guidance": "解释反射及应用",
+      "source_focus": "说明回声如何产生，并举出一个运用声音反射的例子。",
+      "ready": false
+    },
+    {
+      "pdp": 43,
+      "unit_number": 6,
+      "topic": "乐音噪音及改善方法",
+      "materials": "乐音噪音图、建议卡",
+      "teacher_guidance": "提出降低噪音的做法",
+      "source_focus": "比较两个声音场景，并提出一个能减少噪音的做法。",
+      "ready": false
+    },
+    {
+      "pdp": 44,
+      "unit_number": 7,
+      "topic": "能的定义和来源",
+      "materials": "能量来源图卡、装置图",
+      "teacher_guidance": "联系能与物体变化",
+      "source_focus": "说出能使物体发生变化的例子，并列出不同来源。",
+      "ready": false
+    },
+    {
+      "pdp": 45,
+      "unit_number": 7,
+      "topic": "辨认能的形式",
+      "materials": "日常装置、能量形式卡",
+      "teacher_guidance": "配对能的形式及用途",
+      "source_focus": "为日常物品的工作情境配对能的形式，并解释一项选择。",
+      "ready": false
+    },
+    {
+      "pdp": 46,
+      "unit_number": 7,
+      "topic": "能的转换",
+      "materials": "手电筒等安全装置图",
+      "teacher_guidance": "标出能量输入与输出",
+      "source_focus": "为一个常用装置画出能量转换图，并标注输入和输出。",
+      "ready": false
+    },
+    {
+      "pdp": 47,
+      "unit_number": 7,
+      "topic": "说明能量转换的观察",
+      "materials": "能量转换实例图",
+      "teacher_guidance": "比较形式变化并引用观察",
+      "source_focus": "比较两个能量转换例子，说明观察到的是形式改变。",
+      "ready": false
+    },
+    {
+      "pdp": 48,
+      "unit_number": 7,
+      "topic": "可更新和不可更新的能源",
+      "materials": "能源图卡、分类表",
+      "teacher_guidance": "区分可更新与不可更新",
+      "source_focus": "把太阳、风及燃料等能源分类，并说明分类依据。",
+      "ready": false
+    },
+    {
+      "pdp": 49,
+      "unit_number": 7,
+      "topic": "节约能源及交流",
+      "materials": "节能情境图、建议卡",
+      "teacher_guidance": "提出两项可行节能做法",
+      "source_focus": "设计两项节能做法，并向同伴说明它们怎样影响能源使用。",
+      "ready": false
+    },
+    {
+      "pdp": 50,
+      "unit_number": 8,
+      "topic": "材料与来源",
+      "materials": "材料及来源图卡",
+      "teacher_guidance": "配对木材、羊毛、金属、塑料",
+      "source_focus": "把木材、羊毛、金属和塑料与来源及物品配对。",
+      "ready": false
+    },
+    {
+      "pdp": 51,
+      "unit_number": 8,
+      "topic": "按材料来源分类",
+      "materials": "日常用品图、材料表",
+      "teacher_guidance": "辨认多种材料及来源",
+      "source_focus": "用图表给日常物品分类，向同伴解释一个由多种材料组成的例子。",
+      "ready": false
+    },
+    {
+      "pdp": 52,
+      "unit_number": 8,
+      "topic": "测试材料的性质",
+      "materials": "安全材料样本、记录表",
+      "teacher_guidance": "在相同条件下测试两种性质",
+      "source_focus": "进行两项性质测试，记录结果并说明采用的测试方法。",
+      "ready": false
+    },
+    {
+      "pdp": 53,
+      "unit_number": 8,
+      "topic": "选择材料及制作物品",
+      "materials": "物品设计图、材料样本",
+      "teacher_guidance": "选择符合用途的材料",
+      "source_focus": "为制作一个物品选择材料，解释其性质怎样符合用途。",
+      "ready": false
+    },
+    {
+      "pdp": 54,
+      "unit_number": 8,
+      "topic": "交流材料测试结果",
+      "materials": "测试记录、标注图",
+      "teacher_guidance": "用证据解释不同部位选材",
+      "source_focus": "用实验记录和标注图说明为什么不同部位可以选用不同的材料。",
+      "ready": false
+    },
+    {
+      "pdp": 55,
+      "unit_number": 9,
+      "topic": "观察地心引力",
+      "materials": "轻小物体、托盘",
+      "teacher_guidance": "观察物体下落方向",
+      "source_focus": "释放轻小物体并描述掉落方向，用观察说明地心引力。",
+      "ready": false
+    },
+    {
+      "pdp": 56,
+      "unit_number": 9,
+      "topic": "地心引力及其作用",
+      "materials": "地球仪、方向箭头",
+      "teacher_guidance": "标出不同地点重力指向",
+      "source_focus": "在地球仪示意图上画出不同地点的地心引力方向，并解释其作用。",
+      "ready": false
+    },
+    {
+      "pdp": 57,
+      "unit_number": 9,
+      "topic": "地球的自转和公转",
+      "materials": "地球仪、轨道模型",
+      "teacher_guidance": "区分自转公转及周期",
+      "source_focus": "用模型区分自转、公转，说明其方向和所需时间。",
+      "ready": false
+    },
+    {
+      "pdp": 58,
+      "unit_number": 9,
+      "topic": "地球自转产生的现象",
+      "materials": "地球仪、低亮度灯",
+      "teacher_guidance": "模拟昼夜及影子变化",
+      "source_focus": "使用地球仪和光源演示昼夜，比较不同时段的影子。",
+      "ready": false
+    },
+    {
+      "pdp": 59,
+      "unit_number": 9,
+      "topic": "汇报地球自转和公转",
+      "materials": "地球运动图、箭头",
+      "teacher_guidance": "分别标注地轴和公转轨道",
+      "source_focus": "画出地球的轴和轨道，用两句说明图区分两种运动。",
+      "ready": false
+    },
+    {
+      "pdp": 60,
+      "unit_number": 10,
+      "topic": "杠杆的三个作用点",
+      "materials": "杠杆模型、工具图",
+      "teacher_guidance": "辨认支点、动力点、阻力点",
+      "source_focus": "在杠杆模型及一件日常工具上标出支点、动力点和阻力点。",
+      "ready": false
+    },
+    {
+      "pdp": 61,
+      "unit_number": 10,
+      "topic": "杠杆距离和所需的力",
+      "materials": "轻物杠杆、距离标记",
+      "teacher_guidance": "比较支点距离对力的影响",
+      "source_focus": "改变阻力点至支点的距离，记录结果并结合示意图表达结论。",
+      "ready": false
+    },
+    {
+      "pdp": 62,
+      "unit_number": 10,
+      "topic": "常见简单机械及用途",
+      "materials": "简单机械图卡",
+      "teacher_guidance": "辨认类型及用途",
+      "source_focus": "从实例辨认不同类型简单机械，分别说明一项用途。",
+      "ready": false
+    },
+    {
+      "pdp": 63,
+      "unit_number": 10,
+      "topic": "辨认复杂机械",
+      "materials": "复杂机械结构图",
+      "teacher_guidance": "标出两种简单机械及分工",
+      "source_focus": "用结构图标出一件复杂机械内的两种简单机械并解释其分工。",
+      "ready": false
+    },
+    {
+      "pdp": 64,
+      "unit_number": 10,
+      "topic": "利用两种机械解决问题",
+      "materials": "安全模型组件、轻物",
+      "teacher_guidance": "设计组合机械并测试",
+      "source_focus": "设计包含两种简单机械的模型，演示如何运送一个小物件。",
+      "ready": false
+    }
+  ]
+}
