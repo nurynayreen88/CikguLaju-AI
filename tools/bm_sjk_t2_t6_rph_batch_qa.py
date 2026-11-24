@@ -43,6 +43,24 @@ def source(year):
     assert [r["pdp"] for r in d["lessons"]]==list(range(1,COUNTS[year]+1))
     return d["lessons"]
 
+from functools import lru_cache
+
+@lru_cache(maxsize=5)
+def standard_labels(year):
+    path=ROOT/f"rph_standalone/sjkc/bahasa_melayu/year{year}_standard_labels_20261124.json"
+    data=json.loads(path.read_text(encoding="utf-8"))
+    assert data["year"]==year and data["source_git_blob"]==BLOBS[year]
+    assert data["status"]=="QA_DSKP_TOPIC_LABELS_NOT_VERBATIM"
+    rows=[x for r in source(year) for x in [r]+([r["alternative"]] if r.get("alternative") else [])]
+    for key in ("sk","sp"):
+        assert set(data[key])=={code for r in rows for code in r[key]},(year,key)
+        assert all(v.strip() for v in data[key].values())
+    return data
+
+def display_standard(year,kind,codes):
+    labels=standard_labels(year)[kind]
+    return "; ".join(code+" "+labels[code] for code in codes)
+
 def workbook_text(value):
     if not value:return ""
     if isinstance(value,dict):value=[value]
@@ -76,8 +94,8 @@ def payload(year,r,alternative=False):
     if wb:references.append("Buku Aktiviti "+wb)
     details=[("PdP",f"{r['pdp']:03d}"+(" (Alternatif)" if alternative else "")),
         ("Tema / Unit",r["theme"]+(" / Unit "+str(r["unit_number"])+": "+r["unit"] if r.get("unit_number") else "")),
-        ("Standard Kandungan",", ".join(r["sk"])),
-        ("Standard Pembelajaran",", ".join(r["sp"])),
+        ("Standard Kandungan",display_standard(year,"sk",r["sk"])),
+        ("Standard Pembelajaran",display_standard(year,"sp",r["sp"])),
         ("Objektif Pembelajaran",focus),
         ("Kriteria Kejayaan","Murid melaksanakan tugasan berikut dengan tepat mengikut bahan: "+focus),
         ("BBM",bbm+("; "+"; ".join(references) if references else "")),
@@ -120,20 +138,20 @@ def export(year,out):
                 if fmt=="docx":
                     doc=Document(BytesIO(data));text=" ".join(c.text for t in doc.tables for row in t.rows for c in row.cells)
                     assert expected["focus"] in text
-                    assert all(x in text for x in expected["sp"])
+                    assert all(" ".join((x+" "+standard_labels(year)[kind][x]).split()) in " ".join(text.split()) for kind in ("sk","sp") for x in expected[kind])
                     assert all(any(run.bold and run.text.startswith("Aktiviti "+str(i)) for t in doc.tables for row in t.rows for c in row.cells for p in c.paragraphs for run in p.runs) for i in (1,2,3))
                 else:
                     with fitz.open(stream=data,filetype="pdf") as pdf:
                         assert len(pdf)==1,(year,r["pdp"],variant,len(pdf))
                         text=" ".join(pdf[0].get_text().split())
-                        assert all(x in text for x in expected["sp"])
+                        assert all(" ".join((x+" "+standard_labels(year)[kind][x]).split()) in " ".join(text.split()) for kind in ("sk","sp") for x in expected[kind])
                         assert all(x in text for x in ("Aktiviti 1","Aktiviti 2","Aktiviti 3","Refleksi"))
                 (out/name).write_bytes(data)
                 files.append({"name":name,"sha256":sha256(data).hexdigest(),"bytes":len(data)})
     assert len(files)==2*(COUNTS[year]+alternatives)
     (out/"manifest.json").write_text(json.dumps({"status":"QA_NOT_READY","ready":0,"year":year,
       "source_git_blob":BLOBS[year],"pdp":len(rows),"alternatives":alternatives,
-      "pending":["Independent SK/SP full descriptions and pedagogical review","Calendar alignment","Production authorization"],"files":files},indent=2),encoding="utf-8")
+      "pending":["Independent SK/SP full official wording verification and pedagogical review (editorial topic labels included)","Calendar alignment","Production authorization"],"files":files},indent=2),encoding="utf-8")
     print("BM SJK QA",year,"PdP",len(rows),"alternatives",alternatives,"files",len(files))
 if __name__=="__main__":
     p=argparse.ArgumentParser();p.add_argument("--year",type=int,choices=COUNTS,required=True);p.add_argument("--out",required=True)
