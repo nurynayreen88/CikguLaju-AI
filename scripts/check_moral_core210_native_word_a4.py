@@ -23,12 +23,13 @@ sys.path.insert(0, str(ROOT))
 from tools.audit_english_rph_word_a4_layout import validate_word_function_snapshot
 from qa.english_word_builder_snapshot import _create_rph_word
 from web.pendidikan_moral_80_runtime import adapt_rows, load_candidate
+from web.rph_reference_style_20261121 import style_word_path, color_for_state
 
 
 def make_word(year: int, number: int, out: Path) -> None:
     candidate = load_candidate(year, number)
     assert candidate is not None, (year, number, "unavailable moral core RPH source")
-    state = {"subject": "Pendidikan Moral", "year": f"Tahun {year}", "lesson_no": str(number)}
+    state = {"task": "rph", "subject": "Pendidikan Moral", "year": f"Tahun {year}", "lesson_no": str(number)}
     base = {
         "MATA PELAJARAN": "Pendidikan Moral",
         "TAHUN/TINGKATAN": f"Tahun {year}",
@@ -54,6 +55,13 @@ def make_word(year: int, number: int, out: Path) -> None:
     doc.styles["Normal"].font.name = "Arial"
     doc.styles["Normal"].font.size = Pt(10.5)
     _create_rph_word(doc, sec, state, rows, str(out))
+    # Apply the same installed presentation pass used for production Word.
+    # Snapshot-only output is not the approved user-facing format.
+    assert style_word_path(out, color_for_state(state), premium_header=True), (year, number, "premium style not applied")
+    checked = Document(out)
+    assert len(checked.tables) == 4, (year, number, "premium header missing")
+    assert len(checked.tables[0].columns) == 2
+    assert "F8EAF2" in checked.tables[0]._tbl.xml
 
 
 def main() -> None:
@@ -96,7 +104,7 @@ def main() -> None:
         "result":"PASS" if not issues else "NOT_ONE_PAGE",
         "total":len(outcomes),"one_page":sum(x["pages"]==1 and x["a4"] and x["required_text"] for x in outcomes),
         "page_count_distribution":dict(totals),"issues":issues,
-        "scope":"AST-verified active app.py Word table snapshot + actual Moral adapter; offline test; not live Telegram teacher delivery",
+        "scope":"AST-verified app.py Word snapshot + actual Moral source adapter + production premium style; offline test; not live delivery",
     }
     (out/"moral_core210_word_a4_report.json").write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding="utf-8")
     print(json.dumps(report,ensure_ascii=False),flush=True)
