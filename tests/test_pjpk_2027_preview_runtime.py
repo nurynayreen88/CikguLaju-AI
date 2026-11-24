@@ -11,6 +11,27 @@ from web import pjpk_2027_preview_runtime as preview
 
 
 class PJPKDraftRuntimeTests(unittest.TestCase):
+    def test_verified_printed_pages_added_to_bbm_without_changing_source(self):
+        count = 0
+        for subject, short in preview.SUBJECTS.items():
+            for year in range(2, 7):
+                for row in preview.list_lessons(year, subject):
+                    original = dict(row["fields"])
+                    bbm = preview._book_bbm(row)
+                    evidence = original.get("buku teks", "")
+                    import re
+                    match = re.match(r"^m/s\s+(\d+(?:\s*[-–]\s*\d+)?),\s*disemak visual pada Buku Teks\b", evidence, re.I)
+                    if match:
+                        self.assertIn("buku teks", bbm.casefold())
+                        count += 1
+                    else:
+                        self.assertEqual(bbm, original.get("bbm") or original.get("bahan") or "Kad situasi, alat bantu mengajar selamat mengikut tajuk.")
+                    self.assertEqual(row["fields"], original)
+        self.assertGreaterEqual(count, 31)
+        sample = preview._source(5, "pj", 1)
+        self.assertIn("Buku Teks PJPK Tahun 5, m/s 2.", preview._book_bbm(sample))
+        self.assertEqual(preview._book_bbm(preview._source(6, "pj", 33)).casefold().count("buku teks"), 1)
+
     def test_all_339_source_linked_reflections_preserve_activities(self):
         count = 0
         for subject, short in preview.SUBJECTS.items():
