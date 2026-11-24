@@ -93,11 +93,12 @@ def adapt_rows(state, previous, *, root=ROOT):
     )
     if not page_str:
         page_str = ", ".join(map(str, refs.get("calon_muka_surat_teks_digital", [])))
+    title = re.sub(r"^PdP\s+\d+\s*[:—–-]\s*", "", row["tajuk"], flags=re.I)
     out = dict(previous)
     out.update({
         "MATA PELAJARAN": SUBJECT,
         "TAHUN/TINGKATAN": f'Tahun {row["tahun"]}',
-        "TAJUK": f'{row["unit_label"]} — {row["tajuk"]} (DRAF UNTUK SEMAKAN)',
+        "TAJUK": f'{row["unit_label"]} — {title} (DRAF UNTUK SEMAKAN)',
         "STANDARD KANDUNGAN": row["sk_description"],
         "STANDARD PEMBELAJARAN": row["sp_description"],
         "OBJEKTIF PEMBELAJARAN": row["objektif"],
