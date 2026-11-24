@@ -85,40 +85,47 @@ def _clean_success_criterion(value):
 def _proposed_support_action(criterion):
     """Rule-based, topic-appropriate follow-up; never claim it has occurred."""
     value = criterion.casefold()
-    if "deria" in value or ("objek" in value and ("membanding" in value or "ciri" in value)):
+    def has(*words):
+        return any(re.search(r"\b"+re.escape(word)+r"\b", value) for word in words)
+    # Musical criteria have priority over incidental quantity words, e.g.
+    # "satu rangkap" and the substring "angka" within "rangkap".
+    if has("menyanyikan", "menyanyi", "nyanyian", "nyanyi", "lagu", "rangkap", "tempo", "pic", "irama", "muzik"):
+        return ("latihan nyanyian berpandu dengan sebutan, pic dan tempo mengikut contoh guru",
+                "latihan nyanyian berpandu")
+    if has("deria") or (has("objek") and has("membanding", "membandingkan", "perbandingan", "ciri")):
         return ("latihan berpandu membandingkan dua objek selamat menggunakan kad ciri dan deria",
                 "latihan membandingkan dua objek selamat")
-    if any(key in value for key in ("sentuhan", "situasi tidak selamat", "keselamatan", "meminta bantuan")):
+    if has("sentuhan", "situasi tidak selamat", "keselamatan", "meminta bantuan"):
         return ("simulasi situasi selamat dan latihan meminta bantuan daripada orang dewasa dipercayai",
                 "simulasi keselamatan secara berpandu")
-    if any(key in value for key in ("tambah", "tolak", "ikatan nombor", "operasi")):
+    if has("tambah", "menambah", "penambahan", "tolak", "menolak", "penolakan", "ikatan nombor", "operasi"):
         return ("latihan berperingkat menggunakan pembilang dan kad operasi serta semakan semula",
                 "latihan operasi dengan pembilang")
-    if any(key in value for key in ("nombor", "kuantiti", "membilang", "angka")):
+    if has("nombor", "kuantiti", "membilang", "bilangan", "angka"):
         return ("latihan individu menggunakan kad nombor, pembilang dan padanan kuantiti",
                 "latihan nombor menggunakan pembilang")
-    if any(key in value for key in ("wang", "syiling", "ringgit", "sen")):
+    if has("wang", "syiling", "ringgit", "sen"):
         return ("aktiviti padanan nilai menggunakan wang replika dan situasi jual beli mudah",
                 "latihan nilai wang menggunakan replika")
-    if any(key in value for key in ("piktograf", "data", "maklumat harian")):
+    if has("piktograf", "data", "maklumat harian"):
         return ("latihan membaca piktograf serta mengumpul dan mengelaskan data mudah",
                 "latihan membaca data berpandu")
-    if any(key in value for key in ("mengukur", "ukuran", "panjang", "sentimeter")):
+    if has("mengukur", "ukuran", "pengukuran", "panjang", "sentimeter"):
         return ("aktiviti mengukur semula objek sebenar dengan alat yang sesuai",
                 "amali mengukur objek secara berpandu")
-    if any(key in value for key in ("bentuk", "pola")):
+    if has("bentuk", "bentuk-bentuk", "pola"):
         return ("latihan mengelaskan bentuk dan menyusun pola dengan kad dan bahan konkrit",
                 "latihan mengelaskan bentuk menggunakan kad")
-    if any(key in value for key in ("jam", "waktu", "kalendar", "masa")):
+    if has("jam", "waktu", "kalendar", "masa"):
         return ("latihan membaca jam model dan kalendar melalui contoh harian",
                 "latihan masa menggunakan jam model")
-    if any(key in value for key in ("lagu", "nyanyi", "irama", "muzik", "gerak mengikut")):
+    if has("lagu", "nyanyi", "irama", "muzik", "gerak mengikut"):
         return ("latihan ulangan secara berkumpulan kecil menggunakan contoh irama dan pergerakan",
                 "latihan irama dan gerakan berpandu")
-    if any(key in value for key in ("melukis", "lukisan", "poster", "kraf", "model", "menghasilkan")):
+    if has("melukis", "lukisan", "poster", "kraf", "model", "menghasilkan"):
         return ("tunjuk cara langkah demi langkah menggunakan contoh visual dan bahan maujud",
                 "tunjuk cara menggunakan contoh visual")
-    if any(key in value for key in ("emosi", "perasaan")):
+    if has("emosi", "perasaan"):
         return ("aktiviti kad situasi untuk mengenal pasti dan menerangkan emosi secara berpandu",
                 "latihan kad situasi emosi")
     if re.search(r"\b(?:anggota|tubuh)\b", value):
@@ -129,7 +136,7 @@ def _proposed_support_action(criterion):
     if re.search(r"\b(?:makanan|hidangan|menu|pemakanan)\b", value):
         return ("latihan mengelaskan gambar makanan dan membina menu mudah berpandu",
                 "latihan mengelaskan gambar makanan")
-    if any(key in value for key in ("bunyi", "cahaya", "hidupan", "hidup", "keperluan")):
+    if has("bunyi", "cahaya", "hidupan", "hidup", "keperluan"):
         return ("pemerhatian berstruktur dengan bahan sebenar dan kad pengelasan",
                 "aktiviti pemerhatian dan pengelasan")
     return ("bimbingan kumpulan kecil melalui contoh langkah demi langkah dan pentaksiran semula",
