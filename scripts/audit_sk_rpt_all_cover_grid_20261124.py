@@ -35,10 +35,10 @@ def inspect(page):
                 lines.append((a.x,a.y,b.x,b.y))
             elif kind=="re":
                 r=rest[0]
-                if drawing.get("color") is not None or min(r.width,r.height)<2:
+                if drawing.get("color") is not None or min(r.width,r.height)<3:
                     lines.extend([(r.x0,r.y0,r.x1,r.y0),(r.x0,r.y1,r.x1,r.y1),
                                   (r.x0,r.y0,r.x0,r.y1),(r.x1,r.y0,r.x1,r.y1)])
-    vx=sorted({round(a,1) for a,b,c,d in lines if abs(a-c)<0.7 and abs(b-d)>12})
+    vx=sorted({round(a,1) for a,b,c,d in lines if abs(a-c)<0.7 and abs(b-d)>4})
     hy=sorted({round(b,1) for a,b,c,d in lines if abs(b-d)<0.7 and abs(a-c)>12})
     xclusters=[]
     for x in vx:
@@ -81,6 +81,8 @@ bm=V2/manifest["files"]["bahasa_melayu:2"]["path"]
 assert hashlib.sha256(bm.read_bytes()).hexdigest()==manifest["files"]["bahasa_melayu:2"]["sha256"]
 with fitz.open(bm) as doc:
     reference=positions(doc[0])
+    baseline_pages=[inspect(p) for p in list(doc)[1:]]
+    print("BM reference geometry sample",json.dumps(baseline_pages[:2]))
     assert reference["NAMA SEKOLAH"] and reference["NAMA GURU"]
     doc[0].get_pixmap(matrix=fitz.Matrix(1.2,1.2),alpha=False).save(str(OUT/"REFERENCE_BM_KSSR_T2.png"))
 results=[]
@@ -99,6 +101,9 @@ for key,digest in sorted(integrated.items()):
     results.append(audit(key,ROOT/"english"/f"RPT_English_SK_2027_Year_{year}_A_B.pdf",digest,"integrated",reference))
 from collections import Counter
 summary=dict(Counter(r["status"] for r in results))
+cover_reviews=[(r["key"],r["variant"]) for r in results if r.get("cover_different_label_positions")]
+print("Cover-only review candidates:",cover_reviews)
+print("Reference grid screen:",sum(len(p["vertical_positions"])>=6 for p in baseline_pages),"of",len(baseline_pages),"pages")
 (OUT/"audit.json").write_text(json.dumps({"status":"GEOMETRY_SCREEN_ONLY_NOT_VISUAL_OR_ACADEMIC_SIGNOFF",
     "reference":"bahasa_melayu:2","summary":summary,"files":results},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 print("SK RPT BATCH:",len(results),summary)
