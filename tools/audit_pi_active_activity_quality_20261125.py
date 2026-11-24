@@ -5,6 +5,7 @@ No production accounts, DB writes, credit use, or 696 archive.
 from collections import Counter, defaultdict
 from pathlib import Path
 import json
+from hashlib import sha256
 import re
 import sqlite3
 import unicodedata
@@ -12,7 +13,7 @@ from tools.bm_native_v26_navigation_audit import database
 from web.pi_jawi_english_terms_20261122 import normalize_english_terms
 from web.rph_pi_jawi_numerals_20261124 import jawi_display_digits
 
-MARKER = re.compile(r"(?<!\S)([1-9])\.\s+(?=\S)")
+MARKER = re.compile(r"(?<!\S)([1-9])\.\s*(?=[\u0600-\u08ff])")
 DIGITS = str.maketrans("٠١٢٣٤٥٦٧٨٩۰۱۲۳۴۵۶۷۸۹", "01234567890123456789")
 
 def normalized(text):
@@ -54,8 +55,16 @@ def candidate(rows,note,metrics):
     if not metrics["present_main"] or not metrics["missing"]:
         return None
     steps = source_steps(note)
-    additions = [jawi_display_digits(f"{i}. {steps[i-1]}") for i in metrics["missing"]]
-    return str(rows["AKTIVITI UTAMA"]).rstrip()+"\n"+"\n".join(additions)
+    # Rebuild an editorial candidate in the source order, rather than
+    # appending all missing steps under the last (assessment) heading.
+    # Existing specific material outside the source must be reviewed before
+    # adopting any candidate. This is never a runtime transformation.
+    buckets = [[steps[0]], steps[1:-1], [steps[-1]]] if len(steps)>=3 else [[steps[0]], [steps[-1]]]
+    blocks = []
+    for index, group in enumerate(buckets, 1):
+        heading = jawi_display_digits(f"اکتيۏيتي {index}")
+        blocks.append(heading+"\n"+"\n".join(jawi_display_digits(f"{i}. {step}") for i,step in enumerate(group,1)))
+    return "\n".join(blocks)
 
 def main():
     from tools import run_telegram_with_curriculum_api as running
@@ -65,6 +74,9 @@ def main():
     tmp,db=database()
     report={"status":"QA_ONLY_NOT_READY","source":"active v26 PI T2–6","years":{},"records":[]}
     examples=defaultdict(list)
+    shared_lines=defaultdict(list)
+    shared_main=defaultdict(list)
+    shared_candidate=defaultdict(list)
     try:
         runtime.DB_PATH=str(db)
         runtime.CIKGULAJU_DB_V2600_ACTIVE=True
@@ -104,6 +116,19 @@ def main():
                 if proposed is not None: stats["candidate"]+=1
                 record={"year":year,"pdp":row["sequence_no"],"id":row["id"],"unit":unit,
                     "topic":row.get("topic"),**m,"candidate_available":proposed is not None}
+                identity={"year":year,"pdp":row["sequence_no"],"id":row["id"],"unit":unit}
+                objective=normalized(rows.get("OBJEKTIF PEMBELAJARAN") or rows.get("OBJEKTIF"))
+                main_text=normalized(rows.get("AKTIVITI UTAMA"))
+                shared_main[sha256(main_text.encode()).hexdigest()].append({**identity,"objective":objective})
+                # Compare complete activity instruction lines, not shared headings
+                # or short conventional phrases. Legitimate repeated recitation
+                # routines are review flags, not automatic failures.
+                for line in set(normalized(x) for x in str(rows.get("AKTIVITI UTAMA") or "").splitlines()):
+                    line=re.sub(r"^[1-9]\.\s*","",line)
+                    if len(line)>=70 and not line.startswith("اکتيۏيتي"):
+                        shared_lines[line].append({**identity,"objective":objective})
+                if proposed:
+                    shared_candidate[normalized(proposed)].append({**identity,"objective":objective})
                 report["records"].append(record)
                 # At most two diagnostic examples per field/year: actual
                 # source, current output and candidate, not invented content.
@@ -117,6 +142,16 @@ def main():
                 report["records"].append({"year":year,"id":row["id"],"pdp":row["sequence_no"],
                     "error":type(exc).__name__})
         report["examples"]=[e for v in examples.values() for e in v]
+        def clusters(items):
+            return sorted(({"text":line,"count":len(entries),"distinct_objectives":len({e["objective"] for e in entries}),"records":entries}
+                           for line,entries in items.items() if len(entries)>1),key=lambda x:(-x["count"],x["text"]))
+        report["repeated_instruction_clusters"]=clusters(shared_lines)
+        report["identical_main_clusters"]=clusters(shared_main)
+        report["identical_candidate_clusters"]=clusters(shared_candidate)
+        print("PI_ACTIVITY_REUSE",json.dumps({"repeated_instruction_clusters":len(report["repeated_instruction_clusters"]),
+            "identical_main_clusters":len(report["identical_main_clusters"]),
+            "identical_candidate_clusters":len(report["identical_candidate_clusters"]),
+            "top_repeated_lines":[{k:v for k,v in x.items() if k!="records"} for x in report["repeated_instruction_clusters"][:12]]},ensure_ascii=False),flush=True)
         out=Path("qa/pi-activity-quality")
         out.mkdir(parents=True,exist_ok=True)
         (out/"audit.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf8")
