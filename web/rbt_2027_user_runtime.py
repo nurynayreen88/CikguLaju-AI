@@ -7,6 +7,8 @@ Telegram native row generator and class/date flow.
 """
 from __future__ import annotations
 
+from web.rph_source_criterion_reflection_20261124 import source_reflection
+
 import json
 import os
 import re
@@ -115,7 +117,7 @@ def adapt_rows(state, previous, *, root=ROOT):
         "PENTAKSIRAN": row["pbd_evidens"],
         "PENUTUP": l["penutup"]["aktiviti"],
         "PEMULIHAN / PENGAYAAN": "Bimbing murid memurnikan hasil SP pada sesi ini.",
-        "REFLEKSI": "___ / ___ murid mencapai objektif. Tindakan susulan: ________.",
+        "REFLEKSI": source_reflection(state, row["kriteria_kejayaan"], "___ / ___ murid mencapai objektif. Tindakan susulan: ________."),
     })
     return out
 
