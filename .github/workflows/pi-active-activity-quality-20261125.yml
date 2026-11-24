@@ -3,6 +3,8 @@ on:
   pull_request:
     paths:
       - "tools/audit_pi_active_activity_quality_20261125.py"
+      - "tools/render_pi_editorial_batch01_20261125.py"
+      - "staging/pendidikan_islam/active_activity_editorial_batch01_20261125.json"
       - ".github/workflows/pi-active-activity-quality-20261125.yml"
   workflow_dispatch:
 permissions:
@@ -28,5 +30,17 @@ jobs:
         with:
           name: pi-active-698-activity-quality-qa
           path: qa/pi-activity-quality/audit.json
+          if-no-files-found: warn
+          retention-days: 7
+      - name: Render eight curated source-specific activities with original Word and PDF generator
+        env:
+          PYTHONUNBUFFERED: "1"
+          CIKGULAJU_WEB_NATIVE_RPH_ENABLED: "0"
+        run: python -m tools.render_pi_editorial_batch01_20261125
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pi-editorial-batch01-native-word-pdf
+          path: qa/pi-editorial-batch01/*
           if-no-files-found: warn
           retention-days: 7
