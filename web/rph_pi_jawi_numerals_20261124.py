@@ -71,6 +71,9 @@ def display_pi_rows(state, rows):
         name: jawi_display_digits(value) if isinstance(value, str) else value
         for name, value in rows.items()
     }
+    from web.rph_pi_objective_lines_20261124 import objective_lines
+    if "OBJEKTIF PEMBELAJARAN" in rendered:
+        rendered["OBJEKTIF PEMBELAJARAN"] = objective_lines(rendered["OBJEKTIF PEMBELAJARAN"])
     return rendered if rendered != rows else rows
 
 
