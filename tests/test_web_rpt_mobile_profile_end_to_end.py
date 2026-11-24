@@ -37,7 +37,7 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
         cls.browser.close()
         cls.playwright.stop()
 
-    def run_case(self,bad_hash=False,paid=True):
+    def run_case(self,bad_hash=False,paid=True,cover_unverified=False):
         context=self.browser.new_context(
             viewport={"width":390,"height":844},is_mobile=True,has_touch=True,
             accept_downloads=True
@@ -84,7 +84,8 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
                     headers={"X-RPT-Source-SHA256":"0"*64 if bad_hash else entry["sha256"],
                              "Cache-Control":"no-store, private",
                              "Content-Disposition":'attachment; filename="CIKGULAJU_RPT_PENDIDIKAN_ISLAM_TAHUN_4_2027_DRAF.pdf"',
-                             "X-RPT-Personalization-Allowed":"1" if paid else "0"},
+                             "X-RPT-Personalization-Allowed":"1" if paid else "0",
+                             **({"X-RPT-Cover-Status":"unverified"} if cover_unverified else {})},
                     body=ORIGINAL)
             # Unrelated preview/analytics assets are not used in this test.
             if path.startswith("/assets/") and path.endswith(".js"):
@@ -165,11 +166,18 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
                 self.assertGreater(output["bytes"],8000)
                 self.assertEqual(output["header"],b"%PDF-")
                 self.assertEqual(downloads,[output["filename"]])
-                self.assertNotEqual(output["sha"],entry["sha256"])
-                self.assertIn("PENDIDIKAN_ISLAM_TAHUN_4_2027_ISI_PROFIL.pdf",output["filename"])
+                if cover_unverified:
+                    self.assertEqual(data, ORIGINAL)
+                    self.assertEqual(output["sha"], entry["sha256"])
+                    self.assertIn("PENDIDIKAN_ISLAM_TAHUN_4_2027_ASAL.pdf", output["filename"])
+                    self.assertIn("muka depan versi ini belum disahkan", page.locator("#rpt-status").inner_text())
+                    self.assertIn("Akses berbayar anda kekal", page.locator("#rpt-status").inner_text())
+                else:
+                    self.assertNotEqual(output["sha"],entry["sha256"])
+                    self.assertIn("PENDIDIKAN_ISLAM_TAHUN_4_2027_ISI_PROFIL.pdf",output["filename"])
             self.assertEqual(len(context.pages),1)
             self.assertEqual(page.locator("#rpt-prepared-manual-link").count(),0)
-            if bad_hash or not paid:
+            if bad_hash or not paid or cover_unverified:
                 self.assertNotIn(("GET","/api/web/teacher/profile"),requests)
                 self.assertNotIn(("GET","/api/web/teacher/school-logo"),requests)
             else:
@@ -178,7 +186,7 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
                 self.assertIn(("GET","/api/rpt/2027/all/pendidikan_islam/4.pdf"),requests)
             else:
                 self.assertNotIn(("GET","/api/rpt/2027/all/pendidikan_islam/4.pdf"),requests)
-            if not bad_hash and paid:
+            if not bad_hash and paid and not cover_unverified:
                 self.assertIn(("GET","/assets/rpt-original-cover-layout.json"),requests)
                 self.assertIn(("GET","/api/web/teacher/school-logo"),requests)
             else:
@@ -191,6 +199,9 @@ class RealMobilePersonalizedDownload(unittest.TestCase):
 
     def test_invalid_source_sha_never_issues_a_personalized_pdf(self):
         self.run_case(bad_hash=True)
+
+    def test_paid_unverified_cover_downloads_original_bytes_without_private_profile_fetch(self):
+        self.run_case(cover_unverified=True)
 
     def test_free_user_gets_native_attachment_link_without_profile_fetch(self):
         self.run_case(paid=False)
