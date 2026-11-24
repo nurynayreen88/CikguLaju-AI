@@ -35,9 +35,9 @@ def main():
             path = ROOT / source
             raw = path.read_bytes() if path.is_file() else b""
             content = raw.decode("utf-8")
-            sp = re.search(r"\*\*DSKP SK/SP:\*\*\s*(\d+\.\d+)\s*/\s*(\d+\.\d+\.\d+)(?:\s*[—–-]\s*([^\n]+))?",content)
-            present = {field: bool(re.search(r"\*\*"+re.escape(field)+r":\*\*\s*\S",content)) for field in
-                       ("Objektif pembelajaran","Kriteria kejayaan","Pengukuhan / Penilaian (PBD)")}
+            sp = re.search(r"\*\*(?:DSKP SK/SP|Kod SK/SP|SK/SP cadangan):\*\*\s*(\d+\.\d+)\s*/\s*(\d+\.\d+\.\d+)(?:\s*[—–-]\s*([^\n]+))?",content)
+            present = {field: bool(re.search(r"\*\*(?:"+pattern+r"):\*\*[^\S\n]*\S",content)) for field,pattern in
+                       {"Objektif":r"Objektif(?: pembelajaran| PdP)?", "Kriteria kejayaan":r"Kriteria kejayaan", "PBD":r"Pengukuhan / (?:Penilaian \(PBD\)|PBD)"}.items()}
             ok = bool(sp and sp[1]==row["sk"] and sp[2]==row["sp"] and all(present.values()))
             record = {"group":group,"year":key[0],"pdp":key[1],"rph":source,"changed_index":change is not None,
                       "sha256":hashlib.sha256(raw).hexdigest(),"expected_sk":row["sk"],"expected_sp":row["sp"],
@@ -55,7 +55,7 @@ def main():
         "rows":evidence},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("Matched",sum(r["pass"] for r in evidence),"of 596 A/B records (298 unique PdP)")
     if errors:
-        print(json.dumps(errors,ensure_ascii=False))
+        print(json.dumps([{"group":r["group"],"year":r["year"],"pdp":r["pdp"],"expected":r["expected_sp"],"actual":r["actual_sp"],"sections":r["required_sections"]} for r in errors if r["group"]=="A"],ensure_ascii=False))
         raise SystemExit(1)
 
 if __name__ == "__main__":
