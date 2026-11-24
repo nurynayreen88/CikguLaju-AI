@@ -56,7 +56,9 @@ class SejarahUserRuntimeTest(unittest.TestCase):
                 self.assertIn(r["textbook_reference"]["checked_focus_pages"]["printed_page_range"],
                               outcome["BAHAN BANTU MENGAJAR"])
                 self.assertIn("DRAF", outcome["TAJUK"])
-                self.assertTrue(outcome["REFLEKSI"] == r["reflection"])
+                self.assertIn(r["success_criteria"].rstrip(". "), outcome["REFLEKSI"])
+                self.assertNotIn("PdP ", outcome["TAJUK"])
+                self.assertEqual(adapt_rows({**state, "rph_teacher_reflection": "Catatan guru."}, original)["REFLEKSI"], "Catatan guru.")
                 self.assertEqual(original["REFLEKSI"], "Original generic")
 
     def test_stale_source_selection_does_not_replace_another_subject(self):
@@ -112,7 +114,8 @@ class SejarahUserRuntimeTest(unittest.TestCase):
         self.assertEqual(state[17][SELECTION], {"year": 5, "pdp": 7})
         self.assertEqual(state[17]["sp_code"], _lesson(5, 7)["rph"]["sp_codes"][0])
         formatted = ns["_rph_rows"](state[17])
-        self.assertIn("PdP 007", formatted["TAJUK"])
+        self.assertNotIn("PdP 007", formatted["TAJUK"])
+        self.assertIn("Agama Islam di Malaysia", formatted["TAJUK"])
         self.assertEqual(formatted["MATA PELAJARAN"], "Sejarah")
         self.assertEqual(ns["callback"](17, "home"), "original")
         self.assertEqual(original_calls[-1], (17, "home"))

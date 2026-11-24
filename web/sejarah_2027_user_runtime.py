@@ -7,6 +7,8 @@ Opt-out: CIKGULAJU_SEJARAH_2027_USER_ENABLED=0.
 """
 from __future__ import annotations
 
+from web.rph_source_criterion_reflection_20261124 import source_reflection
+
 import csv
 from functools import lru_cache
 import json
@@ -121,7 +123,7 @@ def adapt_rows(state, rows, *, root=ROOT):
     result.update({
         "MATA PELAJARAN": SUBJECT,
         "TAHUN/TINGKATAN": f"Tahun {row['year']}",
-        "TAJUK": f"{row['unit_title']} — PdP {row['pdp']:03d} (DRAF)",
+        "TAJUK": f"{row['unit_title']} (DRAF)",
         "STANDARD KANDUNGAN": f"{r['sk']} — {r['sk_title']}",
         "STANDARD PEMBELAJARAN": row["sp_text"],
         "OBJEKTIF PEMBELAJARAN": "; ".join(r["objective"]),
@@ -139,7 +141,7 @@ def adapt_rows(state, rows, *, root=ROOT):
         "PENTAKSIRAN": r["pengukuhan_pbd"]["activity"],
         "PENUTUP": r["penutup"]["activity"],
         "PEMULIHAN / PENGAYAAN": "Bimbing murid yang masih memerlukan sokongan.",
-        "REFLEKSI": r["reflection"],
+        "REFLEKSI": source_reflection(state, r["success_criteria"], r["reflection"]),
     })
     return result
 
