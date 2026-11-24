@@ -113,7 +113,7 @@ def _activity_titles(r):return [f'Aktiviti 1 – {r["title"]}','Aktiviti 2 – B
 
 def _docx(r,fields):
     from docx import Document
-    from docx.shared import Cm, Pt, RGBColor
+    from docx.shared import Cm, Pt, Twips
     from docx.enum.table import WD_TABLE_ALIGNMENT
     from docx.oxml import OxmlElement
     from docx.oxml.ns import qn
@@ -134,9 +134,11 @@ def _docx(r,fields):
             item=OxmlElement('w:'+side);item.set(qn('w:val'),'single');item.set(qn('w:sz'),'5');item.set(qn('w:color'),'BAC7D0');bd.append(item)
         tc.append(bd)
     head=d.add_table(rows=1,cols=2);head.autofit=False;head.alignment=WD_TABLE_ALIGNMENT.CENTER
-    for col,w in zip(head.columns,[11.5,7.0]):col.width=Cm(w)
+    # Use the exact same total twip width as the main grid.
+    left=Cm(11.5).twips;right=Cm(4.45).twips+Cm(14.05).twips-left
+    for col,w in zip(head.columns,[left,right]):col.width=Twips(w)
     hero,info=head.rows[0].cells
-    hero.width=Cm(11.5);info.width=Cm(7.0)
+    hero.width=Twips(left);info.width=Twips(right)
     sh(hero,'DBE8F5');sh(info,'EDF3FA');grid(hero);grid(info)
     for j,(value,bold,size) in enumerate((
         ('BAHASA MELAYU SK • TAHUN 1',True,11),
