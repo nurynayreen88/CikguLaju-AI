@@ -1,0 +1,1659 @@
+{
+ "status": "QA_SOURCE_EVIDENCE_NOT_OFFICIAL_STANDARD_TEXT",
+ "note": "Exact RPT references; independent official DSKP text needed. Do not treat lesson focus as official standard or publish as READY.",
+ "year": 4,
+ "source": "rpt_2027/sjkc/bahasa_melayu/year_4_kuala_lumpur.json",
+ "source_git_blob": "a3d4fe15e80ddc2735ad0d4111502a403c733988",
+ "dskp": "https://asiemodel.net/wp-content/uploads/2022/08/DSKP-BM-TAHUN-4-SJK_LATEST.pdf",
+ "sk": [
+  "1.1",
+  "1.2",
+  "1.3",
+  "2.1",
+  "2.2",
+  "2.3",
+  "3.1",
+  "3.2",
+  "3.3",
+  "4.1",
+  "4.2",
+  "4.3",
+  "4.4",
+  "5.1",
+  "5.2",
+  "5.3"
+ ],
+ "sp": {
+  "1.1.1": {
+   "pdp": [
+    "001",
+    "044",
+    "086"
+   ],
+   "single_code": [
+    {
+     "pdp": 1,
+     "variant": "V1",
+     "topic": "Suara Harmoni",
+     "focus": "Dengar dialog dan sebut semula syarat pertandingan nyanyian sebelum melakonkan perbualan.",
+     "textbook_page": "2",
+     "codes": [
+      "1.1.1"
+     ]
+    },
+    {
+     "pdp": 44,
+     "variant": "V1",
+     "topic": "Peraturan Menaiki Kereta",
+     "focus": "Dengar panduan dan sebut semula peraturan keselamatan ketika menaiki kereta.",
+     "textbook_page": "51",
+     "codes": [
+      "1.1.1"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "2.1.1": {
+   "pdp": [
+    "002",
+    "016",
+    "033",
+    "036",
+    "067",
+    "098"
+   ],
+   "single_code": [
+    {
+     "pdp": 2,
+     "variant": "V1",
+     "topic": "Berlatih Bersama-sama",
+     "focus": "Baca petikan dengan intonasi yang sesuai dan jelaskan tujuan rakaman latihan tiga sahabat.",
+     "textbook_page": "3",
+     "codes": [
+      "2.1.1"
+     ]
+    },
+    {
+     "pdp": 36,
+     "variant": "V1",
+     "topic": "Bersedia Hadapi Kebakaran",
+     "focus": "Baca dialog tentang pelan kebakaran dan nyatakan laluan serta tempat berkumpul yang ditunjukkan.",
+     "textbook_page": "43",
+     "codes": [
+      "2.1.1"
+     ]
+    }
+   ],
+   "combined_code": [
+    {
+     "pdp": 16,
+     "variant": "V1",
+     "topic": "Sambutan Hari Lahir",
+     "focus": "Baca petikan secara berpandu, lengkapkan fakta sambutan dan pilih kata nama am berdasarkan konteks.",
+     "textbook_page": "17",
+     "codes": [
+      "2.1.1",
+      "5.1.1(i)"
+     ]
+    },
+    {
+     "pdp": 33,
+     "variant": "V1",
+     "topic": "Bersihnya Botol Air",
+     "focus": "Baca petikan tentang penjagaan botol air dan tulis jawapan berdasarkan soalan dengan bimbingan.",
+     "textbook_page": "37",
+     "codes": [
+      "2.1.1",
+      "3.2.2"
+     ]
+    }
+   ]
+  },
+  "3.1.1": {
+   "pdp": [
+    "003",
+    "052",
+    "088"
+   ],
+   "single_code": [
+    {
+     "pdp": 3,
+     "variant": "V1",
+     "topic": "Meriahnya Suasana",
+     "focus": "Salin ayat tentang Hari Mesra Penduduk dengan tulisan berangkai dan semak sambungan huruf.",
+     "textbook_page": "4",
+     "codes": [
+      "3.1.1"
+     ]
+    },
+    {
+     "pdp": 52,
+     "variant": "V1",
+     "topic": "Santunilah Ibu Bapa",
+     "focus": "Tulis ayat tentang adab terhadap ibu bapa dalam bentuk tulisan berangkai.",
+     "textbook_page": "63",
+     "codes": [
+      "3.1.1"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "4.1.1": {
+   "pdp": [
+    "004",
+    "047",
+    "089",
+    "121"
+   ],
+   "single_code": [
+    {
+     "pdp": 4,
+     "variant": "V1",
+     "topic": "Rakan Ronda",
+     "focus": "Ceritakan semula kisah tiga sahabat dan lakonkan dialog dengan peribahasa yang sesuai.",
+     "textbook_page": "5",
+     "codes": [
+      "4.1.1"
+     ]
+    },
+    {
+     "pdp": 47,
+     "variant": "V1",
+     "topic": "Pemandu Bertanggungjawab",
+     "focus": "Sampaikan dialog Kereta dan Bas Sekolah dengan peribahasa yang sesuai dalam situasi.",
+     "textbook_page": "54",
+     "codes": [
+      "4.1.1"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "5.1.1(i)": {
+   "pdp": [
+    "005",
+    "016"
+   ],
+   "single_code": [
+    {
+     "pdp": 5,
+     "variant": "V1",
+     "topic": "Permainan Kata",
+     "focus": "Pilih kata nama am pada jadual permainan dan gunakan pilihan itu untuk membina ayat.",
+     "textbook_page": "6",
+     "codes": [
+      "5.1.1(i)"
+     ]
+    }
+   ],
+   "combined_code": [
+    {
+     "pdp": 16,
+     "variant": "V1",
+     "topic": "Sambutan Hari Lahir",
+     "focus": "Baca petikan secara berpandu, lengkapkan fakta sambutan dan pilih kata nama am berdasarkan konteks.",
+     "textbook_page": "17",
+     "codes": [
+      "2.1.1",
+      "5.1.1(i)"
+     ]
+    }
+   ]
+  },
+  "1.1.2": {
+   "pdp": [
+    "006",
+    "050",
+    "091"
+   ],
+   "single_code": [
+    {
+     "pdp": 6,
+     "variant": "V1",
+     "topic": "Lorong Tercantik",
+     "focus": "Dengar ucapan tahniah dan berikan respons terhadap sebab kemenangan lorong yang bersih.",
+     "textbook_page": "7",
+     "codes": [
+      "1.1.2"
+     ]
+    },
+    {
+     "pdp": 50,
+     "variant": "V1",
+     "topic": "Adat Makan",
+     "focus": "Dengar penerangan tentang adat makan dan berikan respons yang santun tentang amalan yang dikongsi.",
+     "textbook_page": "61",
+     "codes": [
+      "1.1.2"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "2.2.1": {
+   "pdp": [
+    "007",
+    "040",
+    "042A",
+    "072",
+    "103"
+   ],
+   "single_code": [
+    {
+     "pdp": 7,
+     "variant": "V1",
+     "topic": "Hadiah Tersembunyi",
+     "focus": "Baca grafik laman komuniti dan gambarkan tindakan penduduk menceriakan taman.",
+     "textbook_page": "8",
+     "codes": [
+      "2.2.1"
+     ]
+    },
+    {
+     "pdp": 40,
+     "variant": "V1",
+     "topic": "Pas Keselamatan",
+     "focus": "Tafsir maklumat pada pas sekolah dan gambarkan cara mengurus pergerakan murid dan pelawat.",
+     "textbook_page": "47",
+     "codes": [
+      "2.2.1"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "3.2.1": {
+   "pdp": [
+    "008",
+    "057",
+    "065",
+    "093"
+   ],
+   "single_code": [
+    {
+     "pdp": 8,
+     "variant": "V1",
+     "topic": "Taman Poket",
+     "focus": "Tulis ayat dan bina perenggan tentang usaha membina taman berpandukan ilustrasi.",
+     "textbook_page": "9",
+     "codes": [
+      "3.2.1"
+     ]
+    },
+    {
+     "pdp": 57,
+     "variant": "V1",
+     "topic": "Seni Ubah Wajah",
+     "focus": "Tulis ayat dan perenggan tentang persembahan seni ubah wajah berpandukan bahan multimedia.",
+     "textbook_page": "68",
+     "codes": [
+      "3.2.1"
+     ]
+    }
+   ],
+   "combined_code": [
+    {
+     "pdp": 65,
+     "variant": "V1",
+     "topic": "Minuman Tradisional dan Angklung",
+     "focus": "Tulis perenggan tentang penyediaan moru dan lengkapkan petikan angklung dengan kata tugas yang sesuai.",
+     "textbook_page": "79",
+     "codes": [
+      "3.2.1",
+      "5.1.4(i)",
+      "5.1.4(ii)"
+     ]
+    }
+   ]
+  },
+  "4.2.1": {
+   "pdp": [
+    "009",
+    "053",
+    "094"
+   ],
+   "single_code": [
+    {
+     "pdp": 9,
+     "variant": "V1",
+     "topic": "Kejiranan Ini",
+     "focus": "Lafazkan sajak dengan jelas dan terangkan maksud rangkap tentang kerjasama jiran.",
+     "textbook_page": "10",
+     "codes": [
+      "4.2.1"
+     ]
+    },
+    {
+     "pdp": 53,
+     "variant": "V1",
+     "topic": "Budaya Kita",
+     "focus": "Deklamasikan sajak dan jelaskan dengan bahasa sendiri maksud rangkap tentang warisan budaya.",
+     "textbook_page": "64",
+     "codes": [
+      "4.2.1"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "5.1.1(ii)": {
+   "pdp": [
+    "010"
+   ],
+   "single_code": [
+    {
+     "pdp": 10,
+     "variant": "V1",
+     "topic": "Seikhlas Hati",
+     "focus": "Gunakan nama orang, tempat dan haiwan peliharaan sebagai kata nama khas dalam ayat.",
+     "textbook_page": "11",
+     "codes": [
+      "5.1.1(ii)"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "1.1.3": {
+   "pdp": [
+    "011",
+    "055",
+    "097",
+    "112"
+   ],
+   "single_code": [
+    {
+     "pdp": 11,
+     "variant": "V1",
+     "topic": "Rela Berbakti",
+     "focus": "Jawab soalan tentang pembinaan laluan khas dan jelaskan manfaatnya kepada pengguna.",
+     "textbook_page": "12",
+     "codes": [
+      "1.1.3"
+     ]
+    },
+    {
+     "pdp": 55,
+     "variant": "V1",
+     "topic": "Seni Muzik Gamelan",
+     "focus": "Dengar perbualan tentang gamelan dan jawab soalan dengan alasan berdasarkan maklumat yang didengar.",
+     "textbook_page": "66",
+     "codes": [
+      "1.1.3"
+     ]
+    }
+   ],
+   "combined_code": [
+    {
+     "pdp": 112,
+     "variant": "V1",
+     "topic": "Situasi di Makmal Sains",
+     "focus": "Berikan respons dengan alasan tentang penjagaan pagar dan bina ayat penyata daripada gambar makmal.",
+     "textbook_page": "141",
+     "codes": [
+      "1.1.3",
+      "5.3.2(i)"
+     ]
+    }
+   ]
+  },
+  "2.3.1": {
+   "pdp": [
+    "012",
+    "017",
+    "019",
+    "045",
+    "049",
+    "051",
+    "077",
+    "082",
+    "084A",
+    "108",
+    "114"
+   ],
+   "single_code": [
+    {
+     "pdp": 12,
+     "variant": "V1",
+     "topic": "Doktor Badut",
+     "focus": "Analisis tindakan Chun Wei dan jelaskan kesan kerja amalnya kepada pesakit.",
+     "textbook_page": "13",
+     "codes": [
+      "2.3.1"
+     ]
+    },
+    {
+     "pdp": 19,
+     "variant": "V1",
+     "topic": "Tip Kekal Sihat ketika Musim Panas",
+     "focus": "Analisis teks dan hubungkan amalan penjagaan diri dengan kesannya ketika cuaca panas.",
+     "textbook_page": "23",
+     "codes": [
+      "2.3.1"
+     ]
+    }
+   ],
+   "combined_code": [
+    {
+     "pdp": 17,
+     "variant": "V1",
+     "topic": "Si Jalak dan Si Balung",
+     "focus": "Huraikan nilai daripada cerita dan lengkapkan dialog dengan kata ganti nama yang sesuai.",
+     "textbook_page": "20",
+     "codes": [
+      "2.3.1",
+      "5.1.1(iii)"
+     ]
+    },
+    {
+     "pdp": 49,
+     "variant": "V1",
+     "topic": "Keselamatan di Rumah",
+     "focus": "Jawab soalan tentang keselamatan Norah dan pilih kata adjektif cara serta jarak mengikut konteks.",
+     "textbook_page": "59",
+     "codes": [
+      "2.3.1",
+      "5.1.3(i)",
+      "5.1.3(ii)"
+     ]
+    }
+   ]
+  },
+  "3.2.2": {
+   "pdp": [
+    "013",
+    "033",
+    "062",
+    "080",
+    "099",
+    "125",
+    "126A",
+    "128"
+   ],
+   "single_code": [
+    {
+     "pdp": 13,
+     "variant": "V1",
+     "topic": "Kelas Bimbingan Kraf Tangan",
+     "focus": "Tulis jawapan fakta daripada poster dan cadangkan cara menarik penyertaan murid.",
+     "textbook_page": "14",
+     "codes": [
+      "3.2.2"
+     ]
+    },
+    {
+     "pdp": 62,
+     "variant": "V1",
+     "topic": "Indahnya Hiasan",
+     "focus": "Tulis jawapan fakta tentang bunga manggar dan thoranam, kemudian beri cadangan hiasan berserta sebab.",
+     "textbook_page": "73",
+     "codes": [
+      "3.2.2"
+     ]
+    }
+   ],
+   "combined_code": [
+    {
+     "pdp": 33,
+     "variant": "V1",
+     "topic": "Bersihnya Botol Air",
+     "focus": "Baca petikan tentang penjagaan botol air dan tulis jawapan berdasarkan soalan dengan bimbingan.",
+     "textbook_page": "37",
+     "codes": [
+      "2.1.1",
+      "3.2.2"
+     ]
+    },
+    {
+     "pdp": 80,
+     "variant": "V1",
+     "topic": "Lawatan ke Keningau",
+     "focus": "Lengkapkan petikan dengan kata berimbuhan dan tulis jawapan tentang keindahan alam.",
+     "textbook_page": "99",
+     "codes": [
+      "5.2.1(i)",
+      "5.2.1(ii)",
+      "3.2.2"
+     ]
+    }
+   ]
+  },
+  "4.2.2": {
+   "pdp": [
+    "014",
+    "058",
+    "100"
+   ],
+   "single_code": [
+    {
+     "pdp": 14,
+     "variant": "V1",
+     "topic": "Misi Kita",
+     "focus": "Nyanyikan lagu mengikut irama rakyat dan jelaskan maksud rangkap tentang jiran dan kerja bersama.",
+     "textbook_page": "15",
+     "codes": [
+      "4.2.2"
+     ]
+    },
+    {
+     "pdp": 58,
+     "variant": "V1",
+     "topic": "Mari Menari",
+     "focus": "Nyanyikan lagu mengikut irama rakyat dan jelaskan maksud rangkap tentang gerak tari dan melodi.",
+     "textbook_page": "69",
+     "codes": [
+      "4.2.2"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "5.1.1(iii)": {
+   "pdp": [
+    "015",
+    "017"
+   ],
+   "single_code": [
+    {
+     "pdp": 15,
+     "variant": "V1",
+     "topic": "Berkongsi Rezeki",
+     "focus": "Lengkapkan dialog raja, bendahara dan petani menggunakan kata ganti nama yang sesuai.",
+     "textbook_page": "16",
+     "codes": [
+      "5.1.1(iii)"
+     ]
+    }
+   ],
+   "combined_code": [
+    {
+     "pdp": 17,
+     "variant": "V1",
+     "topic": "Si Jalak dan Si Balung",
+     "focus": "Huraikan nilai daripada cerita dan lengkapkan dialog dengan kata ganti nama yang sesuai.",
+     "textbook_page": "20",
+     "codes": [
+      "2.3.1",
+      "5.1.1(iii)"
+     ]
+    }
+   ]
+  },
+  "1.2.1": {
+   "pdp": [
+    "018",
+    "060",
+    "102"
+   ],
+   "single_code": [
+    {
+     "pdp": 18,
+     "variant": "V1",
+     "topic": "Jaga Postur",
+     "focus": "Nilai cara duduk ketika membaca dan berikan alasan berdasarkan grafik jarak dan postur.",
+     "textbook_page": "22",
+     "codes": [
+      "1.2.1"
+     ]
+    },
+    {
+     "pdp": 60,
+     "variant": "V1",
+     "topic": "Cantiknya Kraf Tempurung",
+     "focus": "Nilai kegunaan hasil kraf tempurung dan nyatakan sebab memilih satu hasil kraf secara santun.",
+     "textbook_page": "71",
+     "codes": [
+      "1.2.1"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "3.2.3": {
+   "pdp": [
+    "020",
+    "068",
+    "104"
+   ],
+   "single_code": [
+    {
+     "pdp": 20,
+     "variant": "V1",
+     "topic": "Bijak Bertindak",
+     "focus": "Analisis grafik pemakanan dan catat maklumat tentang nutrien serta manfaatnya.",
+     "textbook_page": "24",
+     "codes": [
+      "3.2.3"
+     ]
+    },
+    {
+     "pdp": 68,
+     "variant": "V1",
+     "topic": "Asingkan Dahulu sebelum Buang",
+     "focus": "Analisis penerangan pengurusan sisa kantin dan catat langkah pengasingan mengikut urutan.",
+     "textbook_page": "84",
+     "codes": [
+      "3.2.3"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "4.3.1": {
+   "pdp": [
+    "021",
+    "063",
+    "105"
+   ],
+   "single_code": [
+    {
+     "pdp": 21,
+     "variant": "V1",
+     "topic": "Pesanan dan Nasihatku",
+     "focus": "Ubah suai rangkap sajak untuk menasihati adik tentang langkah mencegah penyakit.",
+     "textbook_page": "25",
+     "codes": [
+      "4.3.1"
+     ]
+    },
+    {
+     "pdp": 63,
+     "variant": "V1",
+     "topic": "Busana Sarawak",
+     "focus": "Ubah suai rangkap sajak tentang busana tradisional berpandukan ciri yang ditunjukkan.",
+     "textbook_page": "74",
+     "codes": [
+      "4.3.1"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "5.1.1(iv)": {
+   "pdp": [
+    "022"
+   ],
+   "single_code": [
+    {
+     "pdp": 22,
+     "variant": "V1",
+     "topic": "Sudut Kesihatan",
+     "focus": "Padankan penjodoh bilangan dengan bahan pameran dan bina ayat bagi pilihan yang dibuat.",
+     "textbook_page": "26",
+     "codes": [
+      "5.1.1(iv)"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "1.2.2": {
+   "pdp": [
+    "023",
+    "066",
+    "107"
+   ],
+   "single_code": [
+    {
+     "pdp": 23,
+     "variant": "V1",
+     "topic": "Yang Mana Satu?",
+     "focus": "Banding beza dua berus gigi dan jelaskan sebab berus yang bersih lebih sesuai digunakan.",
+     "textbook_page": "27",
+     "codes": [
+      "1.2.2"
+     ]
+    },
+    {
+     "pdp": 66,
+     "variant": "V1",
+     "topic": "Gunakan Kami",
+     "focus": "Banding beza bekas pembuangan mengikut bahan dan terangkan kegunaan berdasarkan cirinya.",
+     "textbook_page": "82",
+     "codes": [
+      "1.2.2"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "2.3.2": {
+   "pdp": [
+    "024",
+    "029",
+    "056",
+    "061",
+    "087",
+    "092",
+    "119",
+    "124"
+   ],
+   "single_code": [
+    {
+     "pdp": 24,
+     "variant": "V1",
+     "topic": "Riangnya Hati Kami",
+     "focus": "Baca dialog watak Periuk, Span dan Pencuci dengan intonasi yang menggambarkan suasana.",
+     "textbook_page": "28",
+     "codes": [
+      "2.3.2"
+     ]
+    },
+    {
+     "pdp": 29,
+     "variant": "V1",
+     "topic": "Sayangilah Kaki Kita",
+     "focus": "Sampaikan petikan ceramah penjagaan kaki dengan sebutan, jeda dan intonasi yang sesuai.",
+     "textbook_page": "33",
+     "codes": [
+      "2.3.2"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "3.2.4": {
+   "pdp": [
+    "025",
+    "073",
+    "109"
+   ],
+   "single_code": [
+    {
+     "pdp": 25,
+     "variant": "V1",
+     "topic": "Pastikan Bersih",
+     "focus": "Tulis ayat yang diimlakkan daripada ceramah tentang gerai bersih dan semak tanda baca.",
+     "textbook_page": "29",
+     "codes": [
+      "3.2.4"
+     ]
+    },
+    {
+     "pdp": 73,
+     "variant": "V1",
+     "topic": "Alamku Bersih",
+     "focus": "Tulis ayat yang diimlakkan mengenai pilihan bahan mesra alam dan semak ketepatan ayat.",
+     "textbook_page": "89",
+     "codes": [
+      "3.2.4"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "4.3.2": {
+   "pdp": [
+    "026",
+    "069",
+    "110"
+   ],
+   "single_code": [
+    {
+     "pdp": 26,
+     "variant": "V1",
+     "topic": "Cegah sebelum Terlambat",
+     "focus": "Ubah bahagian penyelesaian cerita Sang Nuri untuk menunjukkan cara menangani pembiakan nyamuk.",
+     "textbook_page": "30",
+     "codes": [
+      "4.3.2"
+     ]
+    },
+    {
+     "pdp": 69,
+     "variant": "V1",
+     "topic": "Selamatkan Alam Kita",
+     "focus": "Ubah penyelesaian cerita Sang Tanah dan Sang Tebing untuk menunjukkan cara mengurangkan hakisan.",
+     "textbook_page": "85",
+     "codes": [
+      "4.3.2"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "5.1.2(i)": {
+   "pdp": [
+    "027",
+    "034"
+   ],
+   "single_code": [
+    {
+     "pdp": 27,
+     "variant": "V1",
+     "topic": "Ops Bersih!",
+     "focus": "Bezakan kata kerja aktif transitif dan tak transitif, kemudian bina ayat tentang kerja membersihkan kelas.",
+     "textbook_page": "31",
+     "codes": [
+      "5.1.2(i)"
+     ]
+    }
+   ],
+   "combined_code": [
+    {
+     "pdp": 34,
+     "variant": "V1",
+     "topic": "Kebersihan Persekitaran",
+     "focus": "Bina ayat dengan kata kerja aktif dan tulis karangan berdasarkan draf daripada gambar.",
+     "textbook_page": "40",
+     "codes": [
+      "5.1.2(i)",
+      "3.3.1"
+     ]
+    }
+   ]
+  },
+  "1.2.3": {
+   "pdp": [
+    "028",
+    "071",
+    "113"
+   ],
+   "single_code": [
+    {
+     "pdp": 28,
+     "variant": "V1",
+     "topic": "Program Hidangan Berkhasiat di Sekolah (HiTS)",
+     "focus": "Jawab soalan tentang tujuan program berdasarkan grafik pemakanan di sekolah.",
+     "textbook_page": "32",
+     "codes": [
+      "1.2.3"
+     ]
+    },
+    {
+     "pdp": 71,
+     "variant": "V1",
+     "topic": "Gunalah Saya",
+     "focus": "Jawab soalan tentang pengering tangan menggunakan maklumat dalam grafik teknologi mesra alam.",
+     "textbook_page": "87",
+     "codes": [
+      "1.2.3"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "3.3.1": {
+   "pdp": [
+    "030",
+    "034",
+    "037",
+    "041",
+    "078",
+    "115"
+   ],
+   "single_code": [
+    {
+     "pdp": 30,
+     "variant": "V1",
+     "topic": "Bersih Hidup Sejahtera",
+     "focus": "Bina draf dan karangan berdasarkan pengalaman keluarga bergotong-royong di rumah.",
+     "textbook_page": "34",
+     "codes": [
+      "3.3.1"
+     ]
+    },
+    {
+     "pdp": 37,
+     "variant": "V1",
+     "topic": "Terima Kasih Bomba",
+     "focus": "Tulis draf dan karangan imaginatif tentang tindakan watak selepas menjumpai ular di rumah.",
+     "textbook_page": "44",
+     "codes": [
+      "3.3.1"
+     ]
+    }
+   ],
+   "combined_code": [
+    {
+     "pdp": 34,
+     "variant": "V1",
+     "topic": "Kebersihan Persekitaran",
+     "focus": "Bina ayat dengan kata kerja aktif dan tulis karangan berdasarkan draf daripada gambar.",
+     "textbook_page": "40",
+     "codes": [
+      "5.1.2(i)",
+      "3.3.1"
+     ]
+    }
+   ]
+  },
+  "4.3.3": {
+   "pdp": [
+    "031",
+    "074",
+    "116"
+   ],
+   "single_code": [
+    {
+     "pdp": 31,
+     "variant": "V1",
+     "topic": "Jagalah Kesihatan",
+     "focus": "Ubah seni kata lagu untuk menyampaikan pesanan tentang pemakanan seimbang dan persembahkannya.",
+     "textbook_page": "35",
+     "codes": [
+      "4.3.3"
+     ]
+    },
+    {
+     "pdp": 74,
+     "variant": "V1",
+     "topic": "Amalan Hijau",
+     "focus": "Ubah seni kata lagu dengan memasukkan amalan menjaga kawasan rumah dan persembahkannya.",
+     "textbook_page": "90",
+     "codes": [
+      "4.3.3"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "5.1.2(ii)": {
+   "pdp": [
+    "032"
+   ],
+   "single_code": [
+    {
+     "pdp": 32,
+     "variant": "V1",
+     "topic": "Rutin Dinesh",
+     "focus": "Lengkapkan penerangan rutin sekolah dengan kata kerja pasif dan bina satu ayat pasif baharu.",
+     "textbook_page": "36",
+     "codes": [
+      "5.1.2(ii)"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "1.3.1": {
+   "pdp": [
+    "035",
+    "076",
+    "096",
+    "118"
+   ],
+   "single_code": [
+    {
+     "pdp": 35,
+     "variant": "V1",
+     "topic": "Sentiasa Berwaspada",
+     "focus": "Susun peristiwa murid diekori van dan ceritakan tindakan watak dengan intonasi yang sesuai.",
+     "textbook_page": "42",
+     "codes": [
+      "1.3.1"
+     ]
+    },
+    {
+     "pdp": 76,
+     "variant": "V1",
+     "topic": "Mesra Alam",
+     "focus": "Ceritakan pengalaman watak berkenalan dengan kereta mesra alam berdasarkan gambar dan frasa.",
+     "textbook_page": "92",
+     "codes": [
+      "1.3.1"
+     ]
+    }
+   ],
+   "combined_code": [
+    {
+     "pdp": 96,
+     "variant": "V1",
+     "topic": "Mengharumkan Nama Negara",
+     "focus": "Ceritakan urutan kejohanan berdasarkan gambar dan lengkapkan teks dengan kata berimbuhan apitan.",
+     "textbook_page": "120",
+     "codes": [
+      "1.3.1",
+      "5.2.1(iii)"
+     ]
+    }
+   ]
+  },
+  "5.1.3(i)": {
+   "pdp": [
+    "038",
+    "049"
+   ],
+   "single_code": [],
+   "combined_code": [
+    {
+     "pdp": 38,
+     "variant": "V1",
+     "topic": "Berhati-hati di Dapur",
+     "focus": "Gunakan kata adjektif cara dan jarak untuk menerangkan tindakan selamat ketika membantu di dapur.",
+     "textbook_page": "45",
+     "codes": [
+      "5.1.3(i)",
+      "5.1.3(ii)"
+     ]
+    },
+    {
+     "pdp": 49,
+     "variant": "V1",
+     "topic": "Keselamatan di Rumah",
+     "focus": "Jawab soalan tentang keselamatan Norah dan pilih kata adjektif cara serta jarak mengikut konteks.",
+     "textbook_page": "59",
+     "codes": [
+      "2.3.1",
+      "5.1.3(i)",
+      "5.1.3(ii)"
+     ]
+    }
+   ]
+  },
+  "5.1.3(ii)": {
+   "pdp": [
+    "038",
+    "049"
+   ],
+   "single_code": [],
+   "combined_code": [
+    {
+     "pdp": 38,
+     "variant": "V1",
+     "topic": "Berhati-hati di Dapur",
+     "focus": "Gunakan kata adjektif cara dan jarak untuk menerangkan tindakan selamat ketika membantu di dapur.",
+     "textbook_page": "45",
+     "codes": [
+      "5.1.3(i)",
+      "5.1.3(ii)"
+     ]
+    },
+    {
+     "pdp": 49,
+     "variant": "V1",
+     "topic": "Keselamatan di Rumah",
+     "focus": "Jawab soalan tentang keselamatan Norah dan pilih kata adjektif cara serta jarak mengikut konteks.",
+     "textbook_page": "59",
+     "codes": [
+      "2.3.1",
+      "5.1.3(i)",
+      "5.1.3(ii)"
+     ]
+    }
+   ]
+  },
+  "1.3.2": {
+   "pdp": [
+    "039",
+    "081",
+    "123"
+   ],
+   "single_code": [
+    {
+     "pdp": 39,
+     "variant": "V1",
+     "topic": "Awas Langkahmu",
+     "focus": "Tonton bahan keselamatan dan ceritakan sebab murid perlu mematuhi peraturan sekolah.",
+     "textbook_page": "46",
+     "codes": [
+      "1.3.2"
+     ]
+    },
+    {
+     "pdp": 81,
+     "variant": "V1",
+     "topic": "Kontinjen Negara",
+     "focus": "Tonton bahan dan ceritakan semula cara kontinjen memperkenalkan identiti negara.",
+     "textbook_page": "102",
+     "codes": [
+      "1.3.2"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "4.4.1": {
+   "pdp": [
+    "042",
+    "084",
+    "126"
+   ],
+   "single_code": [],
+   "combined_code": [
+    {
+     "pdp": 42,
+     "variant": "V1",
+     "topic": "Waspada Selalu",
+     "focus": "Kenal tulisan Jawi pada setem dan pamerkan perkataan yang dikenal pasti.",
+     "textbook_page": "49",
+     "codes": [
+      "4.4.1",
+      "4.4.2"
+     ]
+    },
+    {
+     "pdp": 84,
+     "variant": "V1",
+     "topic": "Jata Negara",
+     "focus": "Kenal tulisan Jawi pada Jata Negara dan pamerkan perkataan yang dikenal pasti.",
+     "textbook_page": "105",
+     "codes": [
+      "4.4.1",
+      "4.4.2"
+     ]
+    }
+   ]
+  },
+  "4.4.2": {
+   "pdp": [
+    "042",
+    "084",
+    "126"
+   ],
+   "single_code": [],
+   "combined_code": [
+    {
+     "pdp": 42,
+     "variant": "V1",
+     "topic": "Waspada Selalu",
+     "focus": "Kenal tulisan Jawi pada setem dan pamerkan perkataan yang dikenal pasti.",
+     "textbook_page": "49",
+     "codes": [
+      "4.4.1",
+      "4.4.2"
+     ]
+    },
+    {
+     "pdp": 84,
+     "variant": "V1",
+     "topic": "Jata Negara",
+     "focus": "Kenal tulisan Jawi pada Jata Negara dan pamerkan perkataan yang dikenal pasti.",
+     "textbook_page": "105",
+     "codes": [
+      "4.4.1",
+      "4.4.2"
+     ]
+    }
+   ]
+  },
+  "5.1.3(iii)": {
+   "pdp": [
+    "043"
+   ],
+   "single_code": [
+    {
+     "pdp": 43,
+     "variant": "V1",
+     "topic": "Keselamatan di Kebun Sekolah",
+     "focus": "Gunakan kata adjektif ukuran untuk menerangkan kelengkapan yang sesuai ketika berkebun.",
+     "textbook_page": "50",
+     "codes": [
+      "5.1.3(iii)"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "3.3.2": {
+   "pdp": [
+    "046",
+    "083",
+    "120"
+   ],
+   "single_code": [
+    {
+     "pdp": 46,
+     "variant": "V1",
+     "topic": "Panduan Melintas di Lampu Isyarat",
+     "focus": "Edit ejaan, tanda baca dan imbuhan dalam petikan tentang cara menggunakan lintasan berisyarat.",
+     "textbook_page": "53",
+     "codes": [
+      "3.3.2"
+     ]
+    },
+    {
+     "pdp": 83,
+     "variant": "V1",
+     "topic": "Catatanku",
+     "focus": "Edit catatan perjalanan dengan membetulkan kesalahan ejaan, tanda baca dan imbuhan.",
+     "textbook_page": "104",
+     "codes": [
+      "3.3.2"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "5.1.3(iv)": {
+   "pdp": [
+    "048"
+   ],
+   "single_code": [
+    {
+     "pdp": 48,
+     "variant": "V1",
+     "topic": "Pandu Cermat",
+     "focus": "Gunakan kata adjektif perasaan untuk menerangkan reaksi penumpang dalam beberapa situasi perjalanan.",
+     "textbook_page": "55",
+     "codes": [
+      "5.1.3(iv)"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "5.1.3(v)": {
+   "pdp": [
+    "054"
+   ],
+   "single_code": [
+    {
+     "pdp": 54,
+     "variant": "V1",
+     "topic": "Karnival Kebudayaan dan Kesenian",
+     "focus": "Gunakan kata adjektif pancaindera untuk menghuraikan bunyi, rupa dan tekstur bahan pameran.",
+     "textbook_page": "65",
+     "codes": [
+      "5.1.3(v)"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "5.1.4(i)": {
+   "pdp": [
+    "059",
+    "065"
+   ],
+   "single_code": [
+    {
+     "pdp": 59,
+     "variant": "V1",
+     "topic": "Pencinta Seni",
+     "focus": "Gabungkan maklumat tentang koleksi ukiran kayu dalam ayat menggunakan kata hubung yang sesuai.",
+     "textbook_page": "70",
+     "codes": [
+      "5.1.4(i)"
+     ]
+    }
+   ],
+   "combined_code": [
+    {
+     "pdp": 65,
+     "variant": "V1",
+     "topic": "Minuman Tradisional dan Angklung",
+     "focus": "Tulis perenggan tentang penyediaan moru dan lengkapkan petikan angklung dengan kata tugas yang sesuai.",
+     "textbook_page": "79",
+     "codes": [
+      "3.2.1",
+      "5.1.4(i)",
+      "5.1.4(ii)"
+     ]
+    }
+   ]
+  },
+  "5.1.4(ii)": {
+   "pdp": [
+    "064",
+    "065"
+   ],
+   "single_code": [
+    {
+     "pdp": 64,
+     "variant": "V1",
+     "topic": "Pattu Pavadai",
+     "focus": "Lengkapkan penerangan pakaian tradisional dengan kata sendi nama dan bina ayat sendiri.",
+     "textbook_page": "75",
+     "codes": [
+      "5.1.4(ii)"
+     ]
+    }
+   ],
+   "combined_code": [
+    {
+     "pdp": 65,
+     "variant": "V1",
+     "topic": "Minuman Tradisional dan Angklung",
+     "focus": "Tulis perenggan tentang penyediaan moru dan lengkapkan petikan angklung dengan kata tugas yang sesuai.",
+     "textbook_page": "79",
+     "codes": [
+      "3.2.1",
+      "5.1.4(i)",
+      "5.1.4(ii)"
+     ]
+    }
+   ]
+  },
+  "5.1.4(iii)": {
+   "pdp": [
+    "070"
+   ],
+   "single_code": [
+    {
+     "pdp": 70,
+     "variant": "V1",
+     "topic": "Bertindak Bijak Alam Terpelihara",
+     "focus": "Gunakan kata nafi tidak dan bukan dalam dialog tentang perangkap minyak.",
+     "textbook_page": "86",
+     "codes": [
+      "5.1.4(iii)"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "5.1.4(iv)": {
+   "pdp": [
+    "075"
+   ],
+   "single_code": [
+    {
+     "pdp": 75,
+     "variant": "V1",
+     "topic": "Rumahku Mesra Alam",
+     "focus": "Pilih kata bilangan yang sesuai untuk melengkapkan teks tentang tugas dan kelengkapan rumah.",
+     "textbook_page": "91",
+     "codes": [
+      "5.1.4(iv)"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "5.2.1(i)": {
+   "pdp": [
+    "079",
+    "080"
+   ],
+   "single_code": [],
+   "combined_code": [
+    {
+     "pdp": 79,
+     "variant": "V1",
+     "topic": "Program Kejiranan Hijau",
+     "focus": "Lengkapkan dialog temu bual dengan kata berimbuhan awalan dan akhiran yang sesuai.",
+     "textbook_page": "95",
+     "codes": [
+      "5.2.1(i)",
+      "5.2.1(ii)"
+     ]
+    },
+    {
+     "pdp": 80,
+     "variant": "V1",
+     "topic": "Lawatan ke Keningau",
+     "focus": "Lengkapkan petikan dengan kata berimbuhan dan tulis jawapan tentang keindahan alam.",
+     "textbook_page": "99",
+     "codes": [
+      "5.2.1(i)",
+      "5.2.1(ii)",
+      "3.2.2"
+     ]
+    }
+   ]
+  },
+  "5.2.1(ii)": {
+   "pdp": [
+    "079",
+    "080"
+   ],
+   "single_code": [],
+   "combined_code": [
+    {
+     "pdp": 79,
+     "variant": "V1",
+     "topic": "Program Kejiranan Hijau",
+     "focus": "Lengkapkan dialog temu bual dengan kata berimbuhan awalan dan akhiran yang sesuai.",
+     "textbook_page": "95",
+     "codes": [
+      "5.2.1(i)",
+      "5.2.1(ii)"
+     ]
+    },
+    {
+     "pdp": 80,
+     "variant": "V1",
+     "topic": "Lawatan ke Keningau",
+     "focus": "Lengkapkan petikan dengan kata berimbuhan dan tulis jawapan tentang keindahan alam.",
+     "textbook_page": "99",
+     "codes": [
+      "5.2.1(i)",
+      "5.2.1(ii)",
+      "3.2.2"
+     ]
+    }
+   ]
+  },
+  "5.2.1(iii)": {
+   "pdp": [
+    "085",
+    "096"
+   ],
+   "single_code": [
+    {
+     "pdp": 85,
+     "variant": "V1",
+     "topic": "Kami Anak Malaysia",
+     "focus": "Gunakan kata berimbuhan apitan untuk melengkapkan rangkap sajak tentang jati diri.",
+     "textbook_page": "106",
+     "codes": [
+      "5.2.1(iii)"
+     ]
+    }
+   ],
+   "combined_code": [
+    {
+     "pdp": 96,
+     "variant": "V1",
+     "topic": "Mengharumkan Nama Negara",
+     "focus": "Ceritakan urutan kejohanan berdasarkan gambar dan lengkapkan teks dengan kata berimbuhan apitan.",
+     "textbook_page": "120",
+     "codes": [
+      "1.3.1",
+      "5.2.1(iii)"
+     ]
+    }
+   ]
+  },
+  "5.2.2(i)": {
+   "pdp": [
+    "090"
+   ],
+   "single_code": [
+    {
+     "pdp": 90,
+     "variant": "V1",
+     "topic": "Rumah Patriotik",
+     "focus": "Gabungkan perkataan untuk membentuk kata majmuk bebas berkaitan rumah dan sambutan kemerdekaan.",
+     "textbook_page": "111",
+     "codes": [
+      "5.2.2(i)"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "5.2.2(ii)": {
+   "pdp": [
+    "095"
+   ],
+   "single_code": [
+    {
+     "pdp": 95,
+     "variant": "V1",
+     "topic": "Identiti Kami",
+     "focus": "Gunakan kata majmuk mantap dalam ayat berkaitan kad pengenalan dan kewarganegaraan.",
+     "textbook_page": "116",
+     "codes": [
+      "5.2.2(ii)"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "5.2.3(i)": {
+   "pdp": [
+    "101"
+   ],
+   "single_code": [],
+   "combined_code": [
+    {
+     "pdp": 101,
+     "variant": "V1",
+     "topic": "Taman Sains Sekolah",
+     "focus": "Bezakan kata ganda penuh daripada kata ganda separa dan gunakan kedua-duanya dalam ayat.",
+     "textbook_page": "127",
+     "codes": [
+      "5.2.3(i)",
+      "5.2.3(ii)"
+     ]
+    }
+   ]
+  },
+  "5.2.3(ii)": {
+   "pdp": [
+    "101"
+   ],
+   "single_code": [],
+   "combined_code": [
+    {
+     "pdp": 101,
+     "variant": "V1",
+     "topic": "Taman Sains Sekolah",
+     "focus": "Bezakan kata ganda penuh daripada kata ganda separa dan gunakan kedua-duanya dalam ayat.",
+     "textbook_page": "127",
+     "codes": [
+      "5.2.3(i)",
+      "5.2.3(ii)"
+     ]
+    }
+   ]
+  },
+  "5.3.1": {
+   "pdp": [
+    "106"
+   ],
+   "single_code": [
+    {
+     "pdp": 106,
+     "variant": "V1",
+     "topic": "Permainan Pembelajaran Bahasa Melayu",
+     "focus": "Bina ayat tunggal daripada maklumat permainan dan satukan idea berkaitan menjadi ayat majmuk.",
+     "textbook_page": "132",
+     "codes": [
+      "5.3.1"
+     ]
+    }
+   ],
+   "combined_code": []
+  },
+  "5.3.2(i)": {
+   "pdp": [
+    "111",
+    "112"
+   ],
+   "single_code": [
+    {
+     "pdp": 111,
+     "variant": "V1",
+     "topic": "Perabot Batang Paip",
+     "focus": "Bina ayat penyata untuk menerangkan ciri dan kegunaan perabot daripada batang paip.",
+     "textbook_page": "137",
+     "codes": [
+      "5.3.2(i)"
+     ]
+    }
+   ],
+   "combined_code": [
+    {
+     "pdp": 112,
+     "variant": "V1",
+     "topic": "Situasi di Makmal Sains",
+     "focus": "Berikan respons dengan alasan tentang penjagaan pagar dan bina ayat penyata daripada gambar makmal.",
+     "textbook_page": "141",
+     "codes": [
+      "1.1.3",
+      "5.3.2(i)"
+     ]
+    }
+   ]
+  },
+  "5.3.2(ii)": {
+   "pdp": [
+    "117",
+    "128"
+   ],
+   "single_code": [
+    {
+     "pdp": 117,
+     "variant": "V1",
+     "topic": "Lakukan Sendiri, Jimat Belanja",
+     "focus": "Bina ayat tanya berdasarkan dialog tentang jahitan pakaian dan tanyakan kepada rakan.",
+     "textbook_page": "147",
+     "codes": [
+      "5.3.2(ii)"
+     ]
+    }
+   ],
+   "combined_code": [
+    {
+     "pdp": 128,
+     "variant": "V1",
+     "topic": "Rekod Perbelanjaan Bulanan",
+     "focus": "Tulis jawapan berdasarkan rekod perbelanjaan dan bina ayat tanya serta ayat aktif daripada gambar.",
+     "textbook_page": "161",
+     "codes": [
+      "3.2.2",
+      "5.3.2(ii)",
+      "5.3.3"
+     ]
+    }
+   ]
+  },
+  "5.3.3": {
+   "pdp": [
+    "122",
+    "128"
+   ],
+   "single_code": [
+    {
+     "pdp": 122,
+     "variant": "V1",
+     "topic": "Berniaga dari Rumah",
+     "focus": "Bina ayat aktif untuk menerangkan cara ibu Najwa menyediakan dan menjual rojak buah.",
+     "textbook_page": "152",
+     "codes": [
+      "5.3.3"
+     ]
+    }
+   ],
+   "combined_code": [
+    {
+     "pdp": 128,
+     "variant": "V1",
+     "topic": "Rekod Perbelanjaan Bulanan",
+     "focus": "Tulis jawapan berdasarkan rekod perbelanjaan dan bina ayat tanya serta ayat aktif daripada gambar.",
+     "textbook_page": "161",
+     "codes": [
+      "3.2.2",
+      "5.3.2(ii)",
+      "5.3.3"
+     ]
+    }
+   ]
+  },
+  "5.3.4": {
+   "pdp": [
+    "127"
+   ],
+   "single_code": [
+    {
+     "pdp": 127,
+     "variant": "V1",
+     "topic": "Urusan di Bank",
+     "focus": "Tukar ayat tentang urusan bank daripada susunan biasa kepada susunan songsang dan sebaliknya.",
+     "textbook_page": "157",
+     "codes": [
+      "5.3.4"
+     ]
+    }
+   ],
+   "combined_code": []
+  }
+ },
+ "lessons": 128,
+ "alternatives": 3
+}
