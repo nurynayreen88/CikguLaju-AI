@@ -125,9 +125,8 @@ def display_verified_standards(state, rows):
     if not re.fullmatch(re.escape(prefix) + r"-PDP-\d{3}", code):
         return rows
 
-    rows = _expand_source_cells(state, rows)
     if not choice:
-        return rows
+        return _expand_source_cells(state, rows)
 
     sk_code, sk_text, sp_code, sp_text = choice
     revisions = {}
@@ -146,8 +145,8 @@ def display_verified_standards(state, rows):
                 f"{piece} {sp_map[piece]}" for piece in clauses
             )
     if not revisions:
-        return rows
-    return {**rows, **revisions}
+        return _expand_source_cells(state, rows)
+    return _expand_source_cells(state, {**rows, **revisions})
 
 
 def install(runtime):
