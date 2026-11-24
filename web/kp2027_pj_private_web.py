@@ -257,10 +257,15 @@ def create_blueprint():
             return denied('Pilihan PdP tidak sah.',400,'INVALID_REQUEST')
         data=request.get_json(silent=True)
         if (not isinstance(data,dict) or not {'group','lesson','format'}.issubset(data) or
-            set(data)-{'group','lesson','format'}-EXTRA_FIELDS):
+            set(data)-{'group','lesson','format','rph_variant'}-EXTRA_FIELDS):
             return denied('Maklumat RPH tidak lengkap.',400,'INVALID_SELECTION')
         try:group,lesson,fmt,_=select_group(data['group'],data['lesson'],data['format'])
         except ValueError:return denied('PdP PJ belum tersedia.',404,'LESSON_NOT_AVAILABLE')
+        from web.akuatik_v2_web_client import KP2027, request_document, NativeRPHUnavailable
+        variant=data.get('rph_variant')
+        source_id=KP2027.get((group,lesson))
+        if variant not in (None,'V2_DARAT') or (variant=='V2_DARAT' and not source_id):
+            return denied('V2 tidak tersedia untuk PdP ini.',400,'INVALID_VARIANT')
         config,account,error=account_for_request()
         if error is not None:return error
         paid=has_active_paid_access(account)
@@ -268,9 +273,18 @@ def create_blueprint():
             return denied('Baki janaan percuma tidak dapat disahkan.',503,'TRIAL_UNVERIFIED')
         if not paid and account['free_remaining']==0:
             return denied('10 janaan percuma telah habis. Aktifkan langganan.',403,'FREE_TRIAL_EXHAUSTED')
-        try:doc=private_document(config,group,lesson,fmt)
-        except PrivateRphUnavailable:return denied('RPH PJ masih disemak atau belum tersedia.',503,'PJ_ASSET_UNAVAILABLE')
-        try:doc=personalize_pj(doc,fmt,{key:data[key] for key in EXTRA_FIELDS if key in data})
+        try:
+            doc=private_document(config,group,lesson,fmt)
+            if variant=='V2_DARAT':
+                from web.kp2027_pilot_teacher_fields import parse_teacher_fields
+                fields=parse_teacher_fields({key:data[key] for key in EXTRA_FIELDS if key in data})
+                teacher={'class':fields['Kelas:'],'date':data.get('teacher_date',''),
+                         'time':fields['Masa:'],'students':fields['Bil. Murid:'],
+                         'reflection':fields['_reflection']}
+                doc=request_document(1,source_id,fmt,teacher).getvalue()
+            else:
+                doc=personalize_pj(doc,fmt,{key:data[key] for key in EXTRA_FIELDS if key in data})
+        except (PrivateRphUnavailable,NativeRPHUnavailable):return denied('RPH PJ masih disemak atau belum tersedia.',503,'PJ_ASSET_UNAVAILABLE')
         except TeacherFieldError as exc:return denied(str(exc),400,'INVALID_TEACHER_FIELDS')
         remaining=None
         if not paid:
@@ -282,7 +296,7 @@ def create_blueprint():
             remaining=result['remaining']
         ext,mime=FORMATS[fmt]
         response=send_file(BytesIO(doc),mimetype=mime,as_attachment=True,
-          download_name=f'CIKGULAJU_KP2027_PJ_T1_{group}_PDP{lesson:03d}.{ext}',conditional=False)
+          download_name=f'CIKGULAJU_KP2027_PJ_T1_{group}_PDP{lesson:03d}'+('_AKUATIK_V2' if variant=='V2_DARAT' else '')+f'.{ext}',conditional=False)
         if remaining is not None:response.headers['X-RPH-Trial-Remaining']=str(remaining)
         return response
 
