@@ -1,0 +1,27 @@
+name: RPH SJKC and DLP login template academic text preservation
+on:
+  pull_request:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - tools/rph_reflow_multilesson_login_20261121.py
+      - tests/test_rph_login_multilesson_reflow_20261121.py
+      - .github/workflows/rph-multilesson-login-qa.yml
+  push:
+    branches: [production/cikgulaju-web-20261105]
+    paths:
+      - tools/rph_reflow_multilesson_login_20261121.py
+      - tests/test_rph_login_multilesson_reflow_20261121.py
+      - .github/workflows/rph-multilesson-login-qa.yml
+permissions:
+  contents: read
+jobs:
+  text-preservation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install python-docx==1.1.2
+      - run: python -m unittest discover -s tests -p 'test_rph_login_multilesson_reflow_20261121.py' -v
