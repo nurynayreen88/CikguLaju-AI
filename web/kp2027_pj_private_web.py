@@ -137,8 +137,64 @@ def private_document(config,group,lesson,fmt,opener=None):
     return file_bytes
 
 
+def _replace_word_cell(cell, value, reference=None, bold=None):
+    """Replace only cell text; retain the source typography and alignment."""
+    paragraphs=cell.paragraphs
+    first=paragraphs[0]
+    runs=first.runs
+    run=runs[0] if runs else first.add_run()
+    if reference is not None:
+        from copy import deepcopy
+        if run._r.rPr is not None:run._r.remove(run._r.rPr)
+        if reference._r.rPr is not None:run._r.insert(0,deepcopy(reference._r.rPr))
+    run.text=value
+    if bold is not None:run.bold=bold
+    for old in runs[1:]:old.text=''
+    for paragraph in paragraphs[1:]:
+        for old in paragraph.runs:old.text=''
+
+
+def _pj_pdf_fonts(span):
+    # Standard full-font fallbacks with the same serif/sans family as source.
+    name=span.get('font','').casefold()
+    serif=bool(span.get('flags',0)&4) or any(x in name for x in ('serif','times','roman'))
+    if 'sans' in name:serif=False
+    return ('tiro','tibo') if serif else ('helv','hebo')
+
+
+def _pj_reflection_boxes(page, anchor, footer):
+    import fitz
+    # Source templates draw either lines or rectangular cells. Only accept
+    # horizontal edges spanning the full reflection row.
+    borders=[]
+    for drawing in page.get_drawings():
+        for item in drawing.get('items',()):
+            if item[0]=='l':
+                p,q=item[1:3]
+                if abs(p.y-q.y)<.8 and min(p.x,q.x)<155 and max(p.x,q.x)>535:
+                    borders.append((p.y,min(p.x,q.x),max(p.x,q.x)))
+            elif item[0]=='re':
+                r=item[1]
+                if r.x0<155 and r.x1>535:
+                    borders.extend(((r.y0,r.x0,r.x1),(r.y1,r.x0,r.x1)))
+    above=[v for v in borders if anchor.y0-120<v[0]<=anchor.y0]
+    below=[v for v in borders if anchor.y1<=v[0]<=footer.y0+1]
+    if above and below:
+        top=max(v[0] for v in above)+1
+        bottom=min(v[0] for v in below)-1
+        right=min(v[2] for v in above+below)-2
+        left=min(v[1] for v in above+below)
+    else:
+        # Legacy source with no usable grid edges: keep the existing
+        # verified bounds and never erase earlier lesson rows.
+        top=anchor.y0-2;bottom=footer.y0-4;right=565;left=35
+    if not 18<=bottom-top<=140:
+        raise ValueError('Sempadan refleksi PJ tidak sepadan')
+    return fitz.Rect(147,top,right,bottom),fitz.Rect(left+2,top,145,bottom)
+
+
 def personalize_pj(original, fmt, data):
-    """Only populate user fields, never replace subject or standards."""
+    """Personalize the verified PJ copy, keeping original lesson rows."""
     from web.kp2027_pilot_teacher_fields import (
         parse_teacher_fields, TeacherFieldError, _reflection_candidates,
         _word_success_criterion, _pdf_success_criterion, _pdf_safe_reflection,
@@ -147,22 +203,30 @@ def personalize_pj(original, fmt, data):
     labels=('Kelas:','Tarikh:','Masa:','Bil. Murid:')
     if fmt=='word':
         from docx import Document
-        from docx.shared import Pt
+        from docx.enum.table import WD_ROW_HEIGHT_RULE
         d=Document(BytesIO(original))
         if len(d.tables)!=1 or len(d.tables[0].rows)!=15 or d.tables[0].cell(0,0).text!='Maklumat PdP':
             raise TeacherFieldError('Templat Word PJ tidak sepadan')
-        header=d.tables[0].cell(0,1)
+        table=d.tables[0]
+        header=table.cell(0,1)
         if not all(k in header.text for k in labels):raise TeacherFieldError('Ruang maklumat Word tiada')
         content='    '.join(x+(' '+fields[x] if fields[x] else '') for x in labels)
-        header.text=content
-        for p in header.paragraphs:
-            for run in p.runs:run.font.size=Pt(7.6)
-        if 'Refleksi' not in d.tables[0].cell(14,0).text:raise TeacherFieldError('Ruang refleksi tiada')
+        _replace_word_cell(header,content)
+        # Bold the subject heading without changing its wording or layout.
+        paragraphs=list(d.paragraphs)+[p for row in table.rows for cell in row.cells for p in cell.paragraphs]
+        for p in paragraphs:
+            if re.match(r'^\s*PENDIDIKAN JASMANI\b',p.text,re.I):
+                for run in p.runs:run.bold=True
+        label,reflection=table.rows[14].cells
+        if not re.fullmatch(r'Refleksi(?:\s*\(\s*Auto(?:matik)?\s*/\s*Manual\s*\))?',label.text.strip(),re.I):
+            raise TeacherFieldError('Ruang refleksi tiada')
         refl=(fields['_reflection'] if fields['_reflection_mode']=='manual' else
               _reflection_candidates(_word_success_criterion(d))[0])
-        reflection=d.tables[0].cell(14,1);reflection.text=refl
-        for p in reflection.paragraphs:
-            for run in p.runs:run.font.size=Pt(7.6)
+        nearby=next((run for p in table.cell(13,1).paragraphs for run in p.runs if run.text.strip()),None)
+        _replace_word_cell(label,'Refleksi',bold=True)
+        _replace_word_cell(reflection,refl,reference=nearby,bold=False)
+        table.rows[14].height=None
+        table.rows[14].height_rule=WD_ROW_HEIGHT_RULE.AUTO
         out=BytesIO();d.save(out);return out.getvalue()
     if fmt!='pdf':raise TeacherFieldError('Format RPH tidak sah')
     import fitz
@@ -170,6 +234,7 @@ def personalize_pj(original, fmt, data):
     try:
         if d.page_count!=1:raise TeacherFieldError('RPH PDF asal bukan satu halaman')
         page=d[0]
+        spans=[s for b in page.get_text('dict')['blocks'] for l in b.get('lines',()) for s in l['spans']]
         for label in labels:
             value=fields[label]
             if not value:continue
@@ -185,26 +250,61 @@ def personalize_pj(original, fmt, data):
         if reflection is None:raise TeacherFieldError('Ruang refleksi PDF tidak sah')
         footers=[r for r in page.search_for('Rujukan DK rasmi') if r.x0<130 and r.y0>reflection.y1]
         if len(footers)!=1:raise TeacherFieldError('Ruang penutup PDF tidak sah')
-        area=fitz.Rect(147,reflection.y0-2,565,footers[0].y0-4)
+        try:area,label_area=_pj_reflection_boxes(page,reflection,footers[0])
+        except ValueError as exc:raise TeacherFieldError(str(exc)) from exc
+        nearby=[s for s in spans if s['bbox'][0]>=147 and s['bbox'][3]<=area.y0+1 and s['text'].strip()]
+        reference=max(nearby,key=lambda s:s['bbox'][3],default={'font':'Helvetica','size':8.2})
+        regular,bold=_pj_pdf_fonts(reference)
+        size=max(8.0,min(10.0,float(reference['size'])))
         candidates=((fields['_reflection'],) if fields['_reflection_mode']=='manual'
                     else _reflection_candidates(_pdf_success_criterion(page)))
-        chosen=None
-        font_size=None
+        chosen=None; continuation=None
+        def fit(text,box):
+            with fitz.open() as scratch:
+                sp=scratch.new_page(width=page.rect.width,height=page.rect.height)
+                return sp.insert_textbox(box,text,fontname=regular,fontsize=size,lineheight=1.12)
+        # Reserve padding and center the reflection text within its real cell.
+        inner=fitz.Rect(area.x0+3,area.y0+2,area.x1-3,area.y1-2)
         for candidate in candidates:
             safe=_pdf_safe_reflection(candidate)
-            for size in (8.1,7.7,7.2,6.7,6.2,5.8):
-                scratch=fitz.open()
-                sp=scratch.new_page(width=page.rect.width,height=page.rect.height)
-                val=sp.insert_textbox(area,safe,fontname='helv',fontsize=size,lineheight=1.0)
-                scratch.close()
-                if val>=0:
-                    chosen=safe; font_size=size;break
-            if chosen is not None:break
-        if chosen is None:raise TeacherFieldError('Refleksi terlalu panjang untuk PDF; ringkaskan atau gunakan Word.')
-        page.add_redact_annot(area,fill=(1,1,1),cross_out=False)
+            spare=fit(safe,inner)
+            if spare>=0:chosen=safe;break
+        if chosen is None:
+            continuation=_pdf_safe_reflection(candidates[0])
+            chosen='Refleksi bersambung pada halaman seterusnya.'
+            spare=fit(chosen,inner)
+            if spare<0:raise TeacherFieldError('Sempadan ruang refleksi PJ tidak sah')
+        # Replace entire old label and value, including any wrapped UI suffix.
+        # No opaque overlay; retain source fills and borders.
+        page.add_redact_annot(area,fill=None,cross_out=False)
+        page.add_redact_annot(label_area,fill=None,cross_out=False)
+        heading=[]
+        for s in spans:
+            if (s['bbox'][1]<155 and re.match(r'^\s*PENDIDIKAN JASMANI\b',s['text'],re.I)
+                    and not (s.get('flags',0)&16) and 'bold' not in s.get('font','').casefold()):
+                text=s['text']; box=fitz.Rect(s['bbox']); _,head_bold=_pj_pdf_fonts(s)
+                fs=float(s['size'])
+                # Keep its original baseline and do not invade teacher fields.
+                width=fitz.get_text_length(text,fontname=head_bold,fontsize=fs)
+                limit=385 if box.x0<385 and box.x1<=385 else page.rect.width-30
+                if box.x0+width<=limit:
+                    page.add_redact_annot(box,fill=None,cross_out=False)
+                    heading.append((s['origin'],text,head_bold,fs))
         page.apply_redactions(images=0,graphics=0,text=0)
-        if page.insert_textbox(area,chosen,fontname='helv',fontsize=font_size,lineheight=1.0)<0:
+        for origin,text,face,fs in heading:
+            page.insert_text(origin,text,fontname=face,fontsize=fs)
+        page.insert_text((label_area.x0+3,(label_area.y0+label_area.y1)/2+size*.3),
+                         'Refleksi',fontname=bold,fontsize=size)
+        inner.y0+=max(0,spare)/2
+        if page.insert_textbox(inner,chosen,fontname=regular,fontsize=size,lineheight=1.12)<0:
             raise TeacherFieldError('Refleksi tidak muat')
+        if continuation:
+            extra=d.new_page(width=595.28,height=841.89)
+            extra.insert_text((37,48),'RANCANGAN PENGAJARAN HARIAN',fontname=bold,fontsize=12)
+            extra.insert_text((37,73),'PENDIDIKAN JASMANI',fontname=bold,fontsize=11)
+            extra.insert_text((37,94),'Refleksi',fontname=bold,fontsize=size)
+            if extra.insert_textbox(fitz.Rect(37,105,558,795),continuation,fontname=regular,fontsize=size,lineheight=1.12)<0:
+                raise TeacherFieldError('Refleksi tidak muat')
         return d.tobytes(garbage=4,deflate=True)
     finally:
         d.close()
