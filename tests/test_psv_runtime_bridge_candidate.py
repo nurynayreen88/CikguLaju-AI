@@ -115,7 +115,7 @@ class PSVBridgeTests(unittest.TestCase):
                 row = runtime._rph_rows(state)
                 self.assertEqual(row["MATA PELAJARAN"], psv.SUBJECT)
                 self.assertEqual(row["STANDARD PEMBELAJARAN"],
-                                 psv.load_candidate(y, n, preview=True)["standard_descriptions"]["sp"])
+                                 psv.load_candidate(y, n, preview=True)["standard_descriptions"]["sp"].replace(" · ", "\n"))
                 self.assertEqual(row["REFLEKSI"], base["REFLEKSI"])
                 self.assertEqual(row["TARIKH"], base["TARIKH"])
                 self.assertTrue(row["AKTIVITI UTAMA"])
