@@ -231,10 +231,14 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  subject.value="MATH_KP2027";
  await listeners["subject.change"]();
  assert.equal(kpPilotRequests.filter(item=>item.url!=="/api/web/teacher/profile").at(-1).url,"/api/kp2027/sk/tahun-1/matematik/available");
+ assert.equal(kpPilotGroup.hidden,false);
+ // No school state in the mock profile: the teacher must choose A/B first.
+ assert.equal(unit.hidden,true);
+ kpPilotGroup.value="A";
+ listeners["kp-pilot-group.change"]();
  assert.equal(unit.hidden,false);
  assert.equal(lesson.hidden,true);
  assert.deepEqual(unit.options.map(x=>x.value),["","Nombor Bulat hingga 100 — Nilai Nombor"]);
- assert.equal(kpPilotGroup.hidden,false);
  assert.equal(kpPilotActions.hidden,true);
  assert.equal(kpPilotWord.disabled,true);
  unit.value="Nombor Bulat hingga 100 — Nilai Nombor";
