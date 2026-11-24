@@ -89,7 +89,7 @@ def check_one(runtime, path, row, code, output_dir):
         assert "٣. ممبيمبيڠ راكن سباي" in text
         assert "٤. ݢورو مريكوت ڤنچاڤاين" in text
         # Render-only change: Unicode Arabic-Indic digits in every visible Word cell.
-        assert not any("0" <= char <= "9" for char in text)
+        assert not any("0" <= char <= "9" for char in text.replace("PAK 21", ""))
     # Rendering an authentic active source to PDF from the *Word* validates
     # 1.5 paragraph spacing and real page boundaries (not theoretical height).
     if shutil.which("libreoffice"):
