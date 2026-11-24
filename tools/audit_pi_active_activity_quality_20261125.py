@@ -12,6 +12,7 @@ import unicodedata
 from tools.bm_native_v26_navigation_audit import database
 from web.pi_jawi_english_terms_20261122 import normalize_english_terms
 from web.rph_pi_jawi_numerals_20261124 import jawi_display_digits
+from web.pi_navigation import is_pi_recitation_session
 
 MARKER = re.compile(r"(?<!\S)([1-9])\.\s*(?=[\u0600-\u08ff])")
 DIGITS = str.maketrans("٠١٢٣٤٥٦٧٨٩۰۱۲۳۴۵۶۷۸۹", "01234567890123456789")
@@ -78,6 +79,7 @@ def main():
     shared_main=defaultdict(list)
     shared_candidate=defaultdict(list)
     candidate_bank=[]
+    source_specific_recitation=[]
     registry=json.loads(Path("staging/pendidikan_islam/active_activity_source_registry_20261125.json").read_text(encoding="utf8"))
     source_registry={entry["year"]:entry for entry in registry["years"]}
     try:
@@ -136,7 +138,7 @@ def main():
                     source_row=state.get("_quick_selected_rpt_row_v2388") or {}
                     # Store every candidate, not just representative examples.
                     # Source references are claims from DB, not verified page evidence.
-                    candidate_bank.append({**identity,"status":"QA_HOLD_SOURCE_PAGE_REVIEW",
+                    candidate_bank.append({**identity,"source_recitation_only":bool(is_pi_recitation_session(source_row)),"status":"QA_HOLD_SOURCE_PAGE_REVIEW",
                         "topic":row.get("topic"),"objective":rows.get("OBJEKTIF PEMBELAJARAN") or rows.get("OBJEKTIF"),
                         "sk_codes":state.get("grouped_sk_codes",[]), "sp_codes":state.get("grouped_sp_codes",[]),
                         "sk_texts":state.get("grouped_sk_texts",[]), "sp_texts":state.get("grouped_sp_texts",[]),
@@ -180,6 +182,16 @@ def main():
         assert len({x["id"] for x in candidate_bank})==len(candidate_bank)
         assert len(candidate_bank)==sum(s["candidate"] for s in report["years"].values())
         (out/"all_activity_candidates.json").write_text(json.dumps({"status":"QA_HOLD_NOT_FOR_RUNTIME","records":candidate_bank},ensure_ascii=False,indent=2)+"\n",encoding="utf8")
+        # Produce source-specific recitation candidates only when the objective
+        # gives an explicit surah + numbered verse range. Keep exact original
+        # source notes and existing candidates for comparison; never invent verses.
+        from tools.pi_active_recitation_candidate_20261125 import specialize_recitation
+        for item in candidate_bank:
+            if item["unit"]!="Al-Quran": continue
+            special=specialize_recitation(item)
+            if special: source_specific_recitation.append(special)
+        (out/"recitation_specific_candidates.json").write_text(json.dumps({"status":"QA_HOLD_NOT_FOR_RUNTIME","records":source_specific_recitation},ensure_ascii=False,indent=2)+"\n",encoding="utf8")
+        print("PI_RECITATION_SPECIFIC",json.dumps({"total":len(source_specific_recitation),"years":dict(Counter(x["year"] for x in source_specific_recitation)), "distinct_activity_texts":len({normalized(x["specific_main"]) for x in source_specific_recitation}),"source_recitation_only_without_textbook_page":sum(x["source_recitation_only"] and not x["textbook_pages_claim"] for x in candidate_bank),"ready":0}),flush=True)
         print("PI_FULL_CANDIDATE_BANK",json.dumps({"total":len(candidate_bank),"years":dict(Counter(x["year"] for x in candidate_bank)),
             "same_candidate_review":sum(x["same_candidate_as_another_pdp"] for x in candidate_bank),
             "textbook_reference_claim_available":sum(bool(x["textbook_pages_claim"]) for x in candidate_bank),
