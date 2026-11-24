@@ -92,9 +92,31 @@ def load_candidate(year, number):
                 value=_clean(meta.get("nilai", "")), title=_clean(meta.get("unit", "")))
 
 
+def _activity_display(value):
+    """Keep source headings and every instruction; separate heading from body."""
+    lines = []
+    for line in value.splitlines():
+        match = re.match(r"^(Aktiviti [12])(?:\s*\(\d+\s*minit\))?\s+[—–-]\s+(.+)$", line, re.I)
+        if not match:
+            lines.append(line)
+            continue
+        heading, body = match.groups()
+        # Existing source-authored heading, if present, is separated by a
+        # second em dash. Never bold a teacher/pupil instruction.
+        suffix, sep, rest = body.partition(" — ")
+        if (sep and len(suffix) <= 110 and
+                not re.match(r"^(Guru|Murid|Teacher|Pupils)\b", suffix, re.I)
+                and not suffix.endswith((".", "!", "?"))):
+            heading += " — " + suffix
+            body = rest
+        lines.extend((heading, body))
+    return "\n".join(lines)
+
+
 def _document_rows(state, result, source_sp=None):
     """Presentation only; retain canonical session ID and source fields."""
     result = dict(result)
+    result["AKTIVITI UTAMA"] = _activity_display(result["AKTIVITI UTAMA"])
     result["TAJUK"] = re.sub(r"^PdP\s+\d+\s*[—–:-]\s*", "", result["TAJUK"], flags=re.I)
     manual = state.get("rph_teacher_reflection")
     if isinstance(manual, str) and manual.strip():

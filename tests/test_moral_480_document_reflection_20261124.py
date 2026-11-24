@@ -18,7 +18,15 @@ def test_all_480():
             assert not re.match(r"PdP\s+\d+", result["TAJUK"], re.I)
             assert plan["title"].startswith(f"PdP {number:03d}")
             for key, value in plan["fields"].items():
-                if key != "TAJUK":
+                if key == "AKTIVITI UTAMA":
+                    def normalized(text):
+                        return " ".join(re.sub(r"\s*\(\d+\s*minit\)|[—–]", " ", text).split())
+                    assert normalized(result[key]) == normalized(value), (year,number,key)
+                    for n in (1,2):
+                        title = next(line for line in result[key].splitlines() if line.startswith(f"Aktiviti {n}"))
+                        from web.rph_reference_style_20261121 import _is_standalone_activity_title
+                        assert _is_standalone_activity_title(title), (year,number,title)
+                elif key != "TAJUK":
                     assert result[key] == value, (year, number, key)
             assert result["KELAS"] == ""
             assert base["REFLEKSI"] == "____ / ____ murid mencapai objektif."
