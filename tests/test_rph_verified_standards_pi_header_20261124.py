@@ -299,3 +299,45 @@ def test_previously_audited_official_label_has_priority_over_source_variant():
     out = display_verified_standards(state, rows)
     assert out["STANDARD KANDUNGAN"] == "1.1 Nombor bulat hingga 10 000 000"
     assert out["STANDARD PEMBELAJARAN"].startswith("1.1.1 Membaca, menyebut dan menulis")
+
+
+def test_pi_compact_identity_word_removes_only_labels_and_bolds_jawi():
+    from test_pi_active_jawi_content_right_20261123 import formatted_original
+    from web.rph_pi_compact_identity_20261124 import compact_pi_identity
+    from docx import Document
+    from io import BytesIO
+    from lxml import etree
+    from zipfile import ZipFile
+    _, source = formatted_original()
+    result = compact_pi_identity(source)
+    assert result != source
+    assert compact_pi_identity(result) == result
+    doc = Document(BytesIO(result))
+    before = Document(BytesIO(source))
+    p = doc.tables[0].cell(0,0).paragraphs
+    assert p[0].text == "ڤنديديقن اسلام"
+    assert p[1].text == "تاهون ٣"
+    assert p[0].runs[0].bold
+    assert p[2].text == before.tables[0].cell(0,0).paragraphs[2].text
+    assert doc.tables[0].cell(0,1).text == before.tables[0].cell(0,1).text
+    for a,b in zip(doc.tables[1:],before.tables[1:]):
+        assert [[c.text for c in r.cells] for r in a.rows] == [[c.text for c in r.cells] for r in b.rows]
+    with ZipFile(BytesIO(result)) as z:
+        root=etree.fromstring(z.read("word/document.xml"))
+        W="{http://schemas.openxmlformats.org/wordprocessingml/2006/main}"
+        first=root.find(W+"body").find(W+"tbl").find(W+"tr").find(W+"tc").find(W+"p")
+        assert all(r.find(W+"rPr/"+W+"bCs").get(W+"val")=="1" for r in first.findall(W+"r"))
+
+def test_pi_pdf_compact_identity_removes_only_two_labels():
+    original=_pi_story()
+    style=getSampleStyleSheet()["Normal"]
+    original[2]._cellvalues[0][0]=Paragraph("ڤنديديقن اسلام",style)
+    original[2]._cellvalues[1][0]=Paragraph("تاهون ٢",style)
+    result=reflow_verified_pi_header({"task":"rph","subject":"Pendidikan Islam","year":"Tahun 2"},original)
+    teacher, identity = result[2]._cellvalues[0]
+    assert identity._cellvalues[0][0].getPlainText()=="ڤنديديقن اسلام"
+    assert "<b>" in identity._cellvalues[0][0].text
+    assert identity._cellvalues[1][0].text=="تاهون ٢"
+    assert identity._cellvalues[0][1]==identity._cellvalues[1][1]==""
+    assert identity._cellvalues[2]==original[2]._cellvalues[7]
+    assert result[-3] is original[4] and result[-1] is original[6]
