@@ -1,0 +1,584 @@
+{
+  "status": "QA_NOT_PUBLISHED",
+  "year": 5,
+  "source": "rpt_2027/sjkc/sains/year_5_kuala_lumpur.json",
+  "source_git_blob": "5a246d10b75c288647406cde0eb7dfe39a010c47",
+  "records": [
+    {
+      "pdp": 1,
+      "unit_number": 1,
+      "topic": "观察与分类",
+      "materials": "安全物品、分类表",
+      "teacher_guidance": "按共同特征观察分类",
+      "source_focus": "观察物品并按共同特征分组，说明分类依据。",
+      "ready": false
+    },
+    {
+      "pdp": 2,
+      "unit_number": 1,
+      "topic": "测量与推断",
+      "materials": "纸模型、直尺、记录表",
+      "teacher_guidance": "根据跳距数据提出推断",
+      "source_focus": "记录模型的跳距，提出有证据支持的推断。",
+      "ready": false
+    },
+    {
+      "pdp": 3,
+      "unit_number": 1,
+      "topic": "预测与沟通",
+      "materials": "纸模型、预测记录表",
+      "teacher_guidance": "比较预测及实测跳距",
+      "source_focus": "先预测模型跳距，再以表格和口述报告观察结果。",
+      "ready": false
+    },
+    {
+      "pdp": 4,
+      "unit_number": 1,
+      "topic": "时空关系与诠释资料",
+      "materials": "摆动模型、计时器",
+      "teacher_guidance": "记录同一时段摆动次数",
+      "source_focus": "记录摆动次数随时间的变化，并解释数据趋势。",
+      "ready": false
+    },
+    {
+      "pdp": 5,
+      "unit_number": 1,
+      "topic": "操作性定义与控制变数",
+      "materials": "摆动记录、变量卡",
+      "teacher_guidance": "以可量度次数定义快慢并辨认变量",
+      "source_focus": "以可量度的结果定义摆动快慢，区分三类变数。",
+      "ready": false
+    },
+    {
+      "pdp": 6,
+      "unit_number": 1,
+      "topic": "提出假设与实验报告",
+      "materials": "轻质摆动模型、记录表",
+      "teacher_guidance": "教师指导公平测试并检查假设",
+      "source_focus": "提出一个可检验的假设，完成摆动实验并写出结论。",
+      "ready": false
+    },
+    {
+      "pdp": 7,
+      "unit_number": 2,
+      "topic": "人体主要骨骼",
+      "materials": "人体骨骼图、标签",
+      "teacher_guidance": "辨认主要骨骼及功能",
+      "source_focus": "在骨骼图标出头骨、脊柱、肋骨和四肢骨，并说明功能。",
+      "ready": false
+    },
+    {
+      "pdp": 8,
+      "unit_number": 2,
+      "topic": "关节的位置与功能",
+      "materials": "纸关节模型、人体图",
+      "teacher_guidance": "观察关节位置及活动方式",
+      "source_focus": "用肢体动作或纸模型指出关节位置和活动方式。",
+      "ready": false
+    },
+    {
+      "pdp": 9,
+      "unit_number": 2,
+      "topic": "骨骼系统的重要性",
+      "materials": "骨骼系统图、功能卡",
+      "teacher_guidance": "解释支撑、保护、运动",
+      "source_focus": "以标注图解释骨骼对支撑、保护和运动的作用。",
+      "ready": false
+    },
+    {
+      "pdp": 10,
+      "unit_number": 2,
+      "topic": "血液循环的主要部分",
+      "materials": "循环系统图、功能卡",
+      "teacher_guidance": "配对心脏血管血液和肺",
+      "source_focus": "配对心脏、血管、血液和肺与各自的功能。",
+      "ready": false
+    },
+    {
+      "pdp": 11,
+      "unit_number": 2,
+      "topic": "血液的循环路线",
+      "materials": "循环路线图、双色箭头",
+      "teacher_guidance": "标示血液循环路线",
+      "source_focus": "用两色箭头画出含氧较多和含二氧化碳较多的血液路线。",
+      "ready": false
+    },
+    {
+      "pdp": 12,
+      "unit_number": 2,
+      "topic": "血液循环与人体需要",
+      "materials": "循环图、氧气标签",
+      "teacher_guidance": "解释血液运输氧气",
+      "source_focus": "以循环图解释血液如何为身体运送氧气。",
+      "ready": false
+    },
+    {
+      "pdp": 13,
+      "unit_number": 2,
+      "topic": "人体系统之间的联系",
+      "materials": "系统关系图、案例卡",
+      "teacher_guidance": "说明两个系统的合作",
+      "source_focus": "用关系图解释两个系统如何合作，并推论一处失常的影响。",
+      "ready": false
+    },
+    {
+      "pdp": 14,
+      "unit_number": 2,
+      "topic": "保护人体系统",
+      "materials": "健康行为图卡",
+      "teacher_guidance": "说明习惯如何保护系统",
+      "source_focus": "设计健康习惯卡，说明每项做法所保护的系统。",
+      "ready": false
+    },
+    {
+      "pdp": 15,
+      "unit_number": 3,
+      "topic": "物种生存与身体特征",
+      "materials": "动物图片、特征卡",
+      "teacher_guidance": "联系特征与生存",
+      "source_focus": "从图片说明物种生存的意思，并把外形特征与自卫功能配对。",
+      "ready": false
+    },
+    {
+      "pdp": 16,
+      "unit_number": 3,
+      "topic": "动物的自卫本能",
+      "materials": "动物自卫图卡",
+      "teacher_guidance": "解释断尾喷墨等防御本能",
+      "source_focus": "用图卡解释断尾、喷墨等本能如何帮助动物脱离天敌。",
+      "ready": false
+    },
+    {
+      "pdp": 17,
+      "unit_number": 3,
+      "topic": "适应恶劣气候",
+      "materials": "寒热环境动物图",
+      "teacher_guidance": "联系特征及环境",
+      "source_focus": "比较寒冷和炎热环境中的动物，并以特征解释其适应方式。",
+      "ready": false
+    },
+    {
+      "pdp": 18,
+      "unit_number": 3,
+      "topic": "保护卵与照顾幼儿",
+      "materials": "卵幼儿保护图卡",
+      "teacher_guidance": "比较不同照顾方式",
+      "source_focus": "把动物保护卵和照顾幼儿的不同做法分类，并举例说明。",
+      "ready": false
+    },
+    {
+      "pdp": 19,
+      "unit_number": 3,
+      "topic": "设计动物模型",
+      "materials": "动物设计纸、环境卡",
+      "teacher_guidance": "设计适应环境及自卫的特征",
+      "source_focus": "绘制适应指定环境的动物草图，标出自卫和耐候特征。",
+      "ready": false
+    },
+    {
+      "pdp": 20,
+      "unit_number": 3,
+      "topic": "展示动物模型",
+      "materials": "动物模型、评价卡",
+      "teacher_guidance": "解释结构与生存关系",
+      "source_focus": "展示模型并解释其结构，比较不同设计对物种生存的作用。",
+      "ready": false
+    },
+    {
+      "pdp": 21,
+      "unit_number": 3,
+      "topic": "食物链、生产者与消费者",
+      "materials": "生物卡、箭头",
+      "teacher_guidance": "标注生产者与消费者",
+      "source_focus": "排列生物卡组成食物链，标出生产者和各级消费者。",
+      "ready": false
+    },
+    {
+      "pdp": 22,
+      "unit_number": 3,
+      "topic": "能量在食物链中的流动",
+      "materials": "食物链图、能量箭头",
+      "teacher_guidance": "解释能量传递方向",
+      "source_focus": "画出能量传递方向，解释生产者如何通过光合作用进入食物链。",
+      "ready": false
+    },
+    {
+      "pdp": 23,
+      "unit_number": 3,
+      "topic": "组成不同栖息地的食物网",
+      "materials": "栖息地生物卡",
+      "teacher_guidance": "连接食物链组成食物网",
+      "source_focus": "把同一栖息地的食物链连成食物网，再比较另一个栖息地。",
+      "ready": false
+    },
+    {
+      "pdp": 24,
+      "unit_number": 3,
+      "topic": "食物网中的数量变化",
+      "materials": "食物网图、移除卡",
+      "teacher_guidance": "依据关系预测种群变化",
+      "source_focus": "移除一张生物卡，预测相关种群的变化，并图示推理过程。",
+      "ready": false
+    },
+    {
+      "pdp": 25,
+      "unit_number": 4,
+      "topic": "植物的自卫特征",
+      "materials": "植物照片、特征卡",
+      "teacher_guidance": "说明自卫特征，不接触刺激性植物",
+      "source_focus": "用照片辨认尖刺、气味等特征，说明它们如何帮助自卫。",
+      "ready": false
+    },
+    {
+      "pdp": 26,
+      "unit_number": 4,
+      "topic": "植物适应气候和季节",
+      "materials": "植物环境图卡",
+      "teacher_guidance": "联系叶茎特征与气候",
+      "source_focus": "比较不同环境中的植物，联系落叶、蜡质茎和叶形与环境。",
+      "ready": false
+    },
+    {
+      "pdp": 27,
+      "unit_number": 4,
+      "topic": "表达植物的适应方式",
+      "materials": "植物适应记录图",
+      "teacher_guidance": "引用观察说明适应方式",
+      "source_focus": "绘制带注释的适应图，并用观察证据说明结论。",
+      "ready": false
+    },
+    {
+      "pdp": 28,
+      "unit_number": 4,
+      "topic": "种子和果实的传播",
+      "materials": "种子图片、安全样本",
+      "teacher_guidance": "按传播方式分类",
+      "source_focus": "观察样本或图片，按风、水、动物和自动爆裂方式分类。",
+      "ready": false
+    },
+    {
+      "pdp": 29,
+      "unit_number": 4,
+      "topic": "由种子特征预测传播方式",
+      "materials": "未知种子图片、特征表",
+      "teacher_guidance": "从形状浮力或附着特征预测",
+      "source_focus": "根据未知样本的形状、浮力或附着特征作出有依据的预测。",
+      "ready": false
+    },
+    {
+      "pdp": 30,
+      "unit_number": 4,
+      "topic": "分享种子传播证据",
+      "materials": "传播证据记录、图表纸",
+      "teacher_guidance": "以特征解释传播方式",
+      "source_focus": "以图表呈现种子的特征与传播方式，并解释观察结果。",
+      "ready": false
+    },
+    {
+      "pdp": 31,
+      "unit_number": 5,
+      "topic": "生活中的电源",
+      "materials": "电源及器材图卡",
+      "teacher_guidance": "配对电源与日常用途",
+      "source_focus": "把器材与电源配对，说明不同电源在生活中的应用。",
+      "ready": false
+    },
+    {
+      "pdp": 32,
+      "unit_number": 5,
+      "topic": "组成串联和并联电路",
+      "materials": "低压电路组件、符号图",
+      "teacher_guidance": "监督下组装串并联，不接市电",
+      "source_focus": "用低压干电池组装两种电路，并以符号绘图。",
+      "ready": false
+    },
+    {
+      "pdp": 33,
+      "unit_number": 5,
+      "topic": "两种电路的灯泡亮度",
+      "materials": "相同低压元件、记录表",
+      "teacher_guidance": "比较两种电路亮度及通路",
+      "source_focus": "用相同元件比较亮度，并在图上标记电流通路。",
+      "ready": false
+    },
+    {
+      "pdp": 34,
+      "unit_number": 5,
+      "topic": "灯泡数量与亮度",
+      "materials": "低压电池盒、额定灯泡",
+      "teacher_guidance": "固定电池数量比较灯泡数",
+      "source_focus": "固定电池数量，改变灯泡数量并记录相对亮度。",
+      "ready": false
+    },
+    {
+      "pdp": 35,
+      "unit_number": 5,
+      "topic": "干电池数量与亮度",
+      "materials": "额定低压器材、记录表",
+      "teacher_guidance": "在额定范围内比较电池数量",
+      "source_focus": "在元件额定范围内改变电池数量，比较记录并总结。",
+      "ready": false
+    },
+    {
+      "pdp": 36,
+      "unit_number": 5,
+      "topic": "开关与灯泡操作",
+      "materials": "低压开关、电路图",
+      "teacher_guidance": "比较开关位置与灯泡状态",
+      "source_focus": "试开关的位置，绘图说明串联与并联灯泡的变化。",
+      "ready": false
+    },
+    {
+      "pdp": 37,
+      "unit_number": 5,
+      "topic": "影响日常用电量的因素",
+      "materials": "模拟电费数据、表格",
+      "teacher_guidance": "归纳功率、使用频率、时间的影响",
+      "source_focus": "比较模拟电费资料，归纳功率、使用频率与时间的影响。",
+      "ready": false
+    },
+    {
+      "pdp": 38,
+      "unit_number": 5,
+      "topic": "安全用电与节省用电",
+      "materials": "用电情境图、建议卡",
+      "teacher_guidance": "辨认风险及节能做法",
+      "source_focus": "分析用电情境并制作建议图卡，说明风险和相应做法。",
+      "ready": false
+    },
+    {
+      "pdp": 39,
+      "unit_number": 6,
+      "topic": "热和温度",
+      "materials": "常温及温水、温度计",
+      "teacher_guidance": "区分热与温度，避免烫伤",
+      "source_focus": "比较不同温度的水，用例子区分热与温度。",
+      "ready": false
+    },
+    {
+      "pdp": 40,
+      "unit_number": 6,
+      "topic": "使用温度计与记录读数",
+      "materials": "无汞温度计、安全水样",
+      "teacher_guidance": "正确读数并记录摄氏度",
+      "source_focus": "用数码或无汞温度计测量，并以摄氏度记录读数。",
+      "ready": false
+    },
+    {
+      "pdp": 41,
+      "unit_number": 6,
+      "topic": "冰点、沸点和温度曲线",
+      "materials": "教师示范记录、温度图",
+      "teacher_guidance": "依据资料辨认冰点沸点",
+      "source_focus": "观察教师示范及温度数据，绘图辨认冰点与沸点。",
+      "ready": false
+    },
+    {
+      "pdp": 42,
+      "unit_number": 6,
+      "topic": "热水冷却时的温度",
+      "materials": "安全温水、温度记录表",
+      "teacher_guidance": "定时测量冷却并解释趋势",
+      "source_focus": "定时记录热水冷却至室温的读数，解释曲线趋稳的原因。",
+      "ready": false
+    },
+    {
+      "pdp": 43,
+      "unit_number": 6,
+      "topic": "热胀冷缩",
+      "materials": "热胀冷缩示意及教师示范",
+      "teacher_guidance": "归纳温度变化与尺寸变化",
+      "source_focus": "观察教师示范和不同材料的温度变化，归纳膨胀与收缩。",
+      "ready": false
+    },
+    {
+      "pdp": 44,
+      "unit_number": 6,
+      "topic": "热胀冷缩的应用",
+      "materials": "桥梁伸缩缝图",
+      "teacher_guidance": "解释伸缩缝的用途",
+      "source_focus": "用桥梁伸缩缝的示意图解释设计用途，分享观察结论。",
+      "ready": false
+    },
+    {
+      "pdp": 45,
+      "unit_number": 7,
+      "topic": "辨认会生锈的物品",
+      "materials": "生锈物品图片、安全样本",
+      "teacher_guidance": "按材质及表面特征分类",
+      "source_focus": "比较图片或样品，按材质和表面特征说明分类。",
+      "ready": false
+    },
+    {
+      "pdp": 46,
+      "unit_number": 7,
+      "topic": "探究铁生锈的条件",
+      "materials": "教师准备铁钉对照记录",
+      "teacher_guidance": "比较空气和水的影响",
+      "source_focus": "在教师指导下比较铁钉的条件，记录空气和水的影响。",
+      "ready": false
+    },
+    {
+      "pdp": 47,
+      "unit_number": 7,
+      "topic": "日常防锈方法",
+      "materials": "防锈方法图、用品卡",
+      "teacher_guidance": "依据用途选择防锈方法",
+      "source_focus": "为不同用品选防锈方法，并说明保护的作用。",
+      "ready": false
+    },
+    {
+      "pdp": 48,
+      "unit_number": 7,
+      "topic": "呈现生锈实验结果",
+      "materials": "生锈实验真实记录",
+      "teacher_guidance": "以数据比较不同条件",
+      "source_focus": "比较不同条件的记录，以图表陈述实验结论。",
+      "ready": false
+    },
+    {
+      "pdp": 49,
+      "unit_number": 8,
+      "topic": "固体、液体与气体",
+      "materials": "物质图卡、安全样本",
+      "teacher_guidance": "按固液气形态分类",
+      "source_focus": "根据形态为生活物品分类，并说出分类理由。",
+      "ready": false
+    },
+    {
+      "pdp": 50,
+      "unit_number": 8,
+      "topic": "三种物质形态的特征",
+      "materials": "安全容器、物质性质表",
+      "teacher_guidance": "比较形状体积及所占空间",
+      "source_focus": "比较形状、质量、体积和所占空间，用表格记录。",
+      "ready": false
+    },
+    {
+      "pdp": 51,
+      "unit_number": 8,
+      "topic": "水的三种形态",
+      "materials": "冰水及水蒸气示意图",
+      "teacher_guidance": "区分水蒸气与可见小水滴",
+      "source_focus": "按证据配对冰、水和水蒸气，绘制对照图。",
+      "ready": false
+    },
+    {
+      "pdp": 52,
+      "unit_number": 8,
+      "topic": "水的形态变化",
+      "materials": "形态变化流程卡",
+      "teacher_guidance": "区分五种变化过程",
+      "source_focus": "用流程图整理凝固、融化、蒸发、沸腾和凝聚。",
+      "ready": false
+    },
+    {
+      "pdp": 53,
+      "unit_number": 8,
+      "topic": "受热或散热时的形态变化",
+      "materials": "融冰凝聚示范、图卡",
+      "teacher_guidance": "归类受热散热实例",
+      "source_focus": "观察融冰和凝聚示范，把生活实例归入受热或散热。",
+      "ready": false
+    },
+    {
+      "pdp": 54,
+      "unit_number": 8,
+      "topic": "云、雨与水循环",
+      "materials": "水循环图卡、箭头",
+      "teacher_guidance": "解释蒸发凝聚与降雨",
+      "source_focus": "画出水循环模型并解释蒸发、凝聚与降雨的关系。",
+      "ready": false
+    },
+    {
+      "pdp": 55,
+      "unit_number": 9,
+      "topic": "月球反射阳光",
+      "materials": "低亮度灯、球",
+      "teacher_guidance": "模拟月球反射阳光",
+      "source_focus": "用灯和球模拟光照，以观察证据说明月光的来源。",
+      "ready": false
+    },
+    {
+      "pdp": 56,
+      "unit_number": 9,
+      "topic": "月球自转与公转",
+      "materials": "标记球、轨道图",
+      "teacher_guidance": "区别月球自转公转",
+      "source_focus": "用标记球模拟两种运动，说明方向及周期。",
+      "ready": false
+    },
+    {
+      "pdp": 57,
+      "unit_number": 9,
+      "topic": "月相与农历",
+      "materials": "月相图、农历资料",
+      "teacher_guidance": "排列月相并配对日期",
+      "source_focus": "按模拟和观察资料排列月相，并把月相与农历日期配对。",
+      "ready": false
+    },
+    {
+      "pdp": 58,
+      "unit_number": 9,
+      "topic": "辨认星座图形",
+      "materials": "星图、画纸",
+      "teacher_guidance": "辨认和连接星座",
+      "source_focus": "依星图辨认并连线绘出常见星座。",
+      "ready": false
+    },
+    {
+      "pdp": 59,
+      "unit_number": 9,
+      "topic": "星座的用途与图解",
+      "materials": "星图、方向季节资料",
+      "teacher_guidance": "说明星座用途及线索",
+      "source_focus": "比较辨方向和辨季节的实例，并说明所用的星图线索。",
+      "ready": false
+    },
+    {
+      "pdp": 60,
+      "unit_number": 10,
+      "topic": "身边工具的用途",
+      "materials": "安全工具图卡",
+      "teacher_guidance": "解释工具怎样帮助工作",
+      "source_focus": "观察身边工具并解释工具如何帮助完成工作。",
+      "ready": false
+    },
+    {
+      "pdp": 61,
+      "unit_number": 10,
+      "topic": "工具中的简单机械",
+      "materials": "工具结构示意图",
+      "teacher_guidance": "标注简单机械及分工",
+      "source_focus": "标注工具内的简单机械，说明部件如何配合。",
+      "ready": false
+    },
+    {
+      "pdp": 62,
+      "unit_number": 10,
+      "topic": "组合机械的重要性",
+      "materials": "安全工具模型",
+      "teacher_guidance": "比较部件齐全与缺少的表现",
+      "source_focus": "用安全工具模型比较部件齐全与缺少时的操作表现。",
+      "ready": false
+    },
+    {
+      "pdp": 63,
+      "unit_number": 10,
+      "topic": "优质工具的特征",
+      "materials": "两种工具方案、评价表",
+      "teacher_guidance": "按安全耐用易保养比较",
+      "source_focus": "以安全、耐用及易保养为准则比较两种工具方案。",
+      "ready": false
+    },
+    {
+      "pdp": 64,
+      "unit_number": 10,
+      "topic": "工具设计与表达",
+      "materials": "工具设计纸、标注卡",
+      "teacher_guidance": "表达机械组合的作用",
+      "source_focus": "展示工具设计图，并以标注说明机械组合的作用。",
+      "ready": false
+    }
+  ]
+}
