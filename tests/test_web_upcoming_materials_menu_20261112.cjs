@@ -173,7 +173,7 @@ const ctx={
  materialPanel:{hidden:true},
  canGenerateRph:()=>true,
  resetSelect(el,label){el.value="";el.options=[{value:"",label}];el.disabled=true;},
- fillSelect(el,items,label){ctx.resetSelect(el,label);el.options.push(...items);el.disabled=!items.length;},
+ fillSelect(el,items,label){ctx.resetSelect(el,label);if(el===subject)items=[...items].sort((a,b)=>new Intl.Collator("ms-MY",{sensitivity:"base"}).compare(a.label,b.label));el.options.push(...items);el.disabled=!items.length;},
  resetCurriculumChoices(){ctx.resetSelect(unit,"");ctx.resetSelect(lesson,"");unit.hidden=lesson.hidden=variantRpt.hidden=true;delete variantRpt.dataset.subject;},
  setSubjectNavigationLabels(){},
  resetMaterials(){},resetRphPreview(){},showRphAction(){},displayBookReference(){},
@@ -224,7 +224,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  await listeners["year.change"]();
  assert.equal(subject.disabled,false);
  assert.equal(subject.hidden,false);
- assert.deepEqual(subject.options.map(x=>x.value),["","MATH_KP2027","ALAM_KP2027","BM_SK_KP2027","PJ_KP2027"]);
+ assert.deepEqual(subject.options.map(x=>x.value),["","ALAM_KP2027","BM_SK_KP2027","MATH_KP2027","PJ_KP2027"]);
  assert.match(ctx.help,/Download Word\/PDF/i);
  assert.match(ctx.catalogStatus.textContent,/Alam dan Manusia/);
  assert.deepEqual(catalogueCalls,[]);
@@ -335,8 +335,10 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
   year.value=n;
   await listeners["year.change"]();
   assert.deepEqual(subject.options.filter(x=>x.value.endsWith("_DLP")).map(x=>x.label),
-   ["Science SK (DLP)","Mathematics SK (DLP)"]);
+   ["Mathematics SK (DLP)","Science SK (DLP)"]);
   assert.ok(subject.options.some(item=>item.value==="MATH"));
+  const labels=subject.options.slice(1).map(item=>item.label);
+  assert.deepEqual(labels,[...labels].sort(new Intl.Collator("ms-MY",{sensitivity:"base"}).compare));
   assert.deepEqual(catalogueCalls.splice(0),n==="2"?["subjects","subjects","subjects"]:n==="3"?["subjects","subjects"]:["subjects"]);
   for(const code of ["SCIENCE_DLP","MATH_DLP"]){
    const id=dlpId(code==="SCIENCE_DLP",n);
@@ -386,7 +388,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  await listeners["year.change"]();
  for(const resolve of resolveOldSubjects)resolve([{value:"MATH",label:"Matematik"}]);
  await pending;
- assert.deepEqual(subject.options.map(x=>x.value),["","MATH_KP2027","ALAM_KP2027","BM_SK_KP2027","PJ_KP2027"]);
+ assert.deepEqual(subject.options.map(x=>x.value),["","ALAM_KP2027","BM_SK_KP2027","MATH_KP2027","PJ_KP2027"]);
  assert.match(ctx.catalogStatus.textContent,/Alam dan Manusia/);
  console.log("WEB_PLANNED_MENUS: PASS (curriculum first, scoped years and subjects, stale request discarded)");
 })().catch(error=>{console.error(error);process.exitCode=1;});
