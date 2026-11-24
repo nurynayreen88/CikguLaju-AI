@@ -79,6 +79,7 @@ def main():
     shared_main=defaultdict(list)
     shared_candidate=defaultdict(list)
     candidate_bank=[]
+    residual_review=[]
     source_specific_recitation=[]
     registry=json.loads(Path("staging/pendidikan_islam/active_activity_source_registry_20261125.json").read_text(encoding="utf8"))
     source_registry={entry["year"]:entry for entry in registry["years"]}
@@ -150,6 +151,8 @@ def main():
                         "source_steps":source_steps(row["activity_note"]),"current_main":rows.get("AKTIVITI UTAMA"),
                         "candidate_main":proposed,"candidate_missing_source_steps":[i for i,step in enumerate(source_steps(row["activity_note"]),1) if normalized(step) not in normalized(proposed)],
                         "dskp_page_checked":False,"textbook_page_checked":False,"jawi_editor_approved":False,"native_output_approved":False,"ready":False})
+                if proposed is None:
+                    residual_review.append({**identity,"topic":row.get("topic"),"objective":rows.get("OBJEKTIF PEMBELAJARAN") or rows.get("OBJEKTIF"),"source_note":row["activity_note"],"current_main":rows.get("AKTIVITI UTAMA"),"source_steps":source_steps(row["activity_note"]),"metrics":m,"reason":"UNNUMBERED_OR_UNPARSED_SOURCE" if not m["source_steps"] else "NO_EXACT_STEP_IN_MAIN" if not m["present_main"] else "ALL_PARSED_STEPS_PRESENT_REVIEW_QUALITY","ready":False})
                 report["records"].append(record)
                 # At most two diagnostic examples per field/year: actual
                 # source, current output and candidate, not invented content.
@@ -190,6 +193,12 @@ def main():
         assert len({x["id"] for x in candidate_bank})==len(candidate_bank)
         assert len(candidate_bank)==sum(s["candidate"] for s in report["years"].values())
         (out/"all_activity_candidates.json").write_text(json.dumps({"status":"QA_HOLD_NOT_FOR_RUNTIME","records":candidate_bank},ensure_ascii=False,indent=2)+"\n",encoding="utf8")
+        # Preserve all non-candidate lessons, rather than silently dropping them.
+        assert len(candidate_bank)+len(residual_review)==698
+        (out/"residual_42_editorial_review.json").write_text(json.dumps({"status":"QA_HOLD_NOT_FOR_RUNTIME","records":residual_review},ensure_ascii=False,indent=2)+"\n",encoding="utf8")
+        priority=[x for x in candidate_bank if x["same_candidate_as_another_pdp"] or x["reference_review_type"]=="TEXTBOOK_PAGE_MISSING_REVIEW"]
+        (out/"priority_duplicate_or_missing_reference.json").write_text(json.dumps({"status":"QA_HOLD_NOT_FOR_RUNTIME","records":priority},ensure_ascii=False,indent=2)+"\n",encoding="utf8")
+        print("PI_RESIDUAL_REVIEW",json.dumps({"total":len(residual_review),"by_reason":dict(Counter(x["reason"] for x in residual_review)),"by_year":dict(Counter(x["year"] for x in residual_review)),"priority_duplicate_or_missing_reference":len(priority),"ready":0}),flush=True)
         # Produce source-specific recitation candidates only when the objective
         # gives an explicit surah + numbered verse range. Keep exact original
         # source notes and existing candidates for comparison; never invent verses.
@@ -207,7 +216,7 @@ def main():
             "dskp_text_page_candidate_complete":sum(x["dskp_code_page_candidates_complete"] for x in candidate_bank),
             "ready":0}),flush=True)
         print("PI_ACTIVITY_QUALITY",json.dumps(report["years"],ensure_ascii=False),flush=True)
-        for e in report["examples"][:20]:
+        for e in report["examples"]:
             print("PI_ACTIVITY_EXAMPLE",json.dumps(e,ensure_ascii=False),flush=True)
         assert sum(s["source"] for s in report["years"].values())==698
         assert sum(s["rendered"] for s in report["years"].values())==698
