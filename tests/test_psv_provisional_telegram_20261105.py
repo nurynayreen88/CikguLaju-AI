@@ -71,6 +71,26 @@ class TestProvisionalPSV(unittest.TestCase):
                     self.assertNotIn("DRAF", " ".join(map(str, rows.values())))
         self.assertEqual(ns["callback"](99, "other_action"), ("original", "other_action"))
 
+    def test_all_210_reflections_and_source_activity_lines(self):
+        total = 0
+        for year in range(2, 7):
+            for number in range(1, 43):
+                plan = strict.load_candidate(year, number, preview=True)
+                state = {"subject": bridge.SUBJECT, "year": f"Tahun {year}",
+                         "lesson_no": str(number), "sk_code": plan["sk"].split("; ")[0],
+                         "sp_code": plan["sp"].split("; ")[0],
+                         bridge.SESSION_KEY: {"year": year, "number": number, "subject": bridge.SUBJECT}}
+                base = {"KELAS": "", "REFLEKSI": "____ / ____ murid mencapai objektif."}
+                out = bridge.adapt_rows(state, base)
+                self.assertTrue(out["REFLEKSI"].startswith("____ / ____ murid mencapai sasaran:"), (year, number, out["REFLEKSI"]))
+                self.assertEqual(out["AKTIVITI UTAMA"], "Aktiviti 1\n" + plan["stages"]["aktiviti 1"] + "\n\nAktiviti 2\n" + plan["stages"]["aktiviti 2"])
+                self.assertEqual(out["STANDARD PEMBELAJARAN"], plan["standard_descriptions"]["sp"])
+                self.assertEqual(bridge.adapt_rows({**state, "rph_teacher_reflection": "Catatan guru."}, base)["REFLEKSI"], "Catatan guru.")
+                self.assertEqual(bridge.adapt_rows({**state, "rph_reflection_mode": "manual"}, base)["REFLEKSI"], "")
+                self.assertEqual(base["REFLEKSI"], "____ / ____ murid mencapai objektif.")
+                total += 1
+        self.assertEqual(total, 210)
+
     def test_shared_code_keeps_the_printed_construction_or_craft_scope(self):
         construction = strict.load_candidate(2, 9, preview=True)
         craft = strict.load_candidate(2, 13, preview=True)
