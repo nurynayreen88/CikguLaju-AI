@@ -36,6 +36,24 @@ class PSVBridgeTests(unittest.TestCase):
                     count += 1
         self.assertEqual(count, 210)
 
+    def test_four_visually_reviewed_year5_project_page_anchors(self):
+        import csv
+        audit = ROOT / "rph_standalone/psv/audits/psv_individual_210_review_20261105.csv"
+        with audit.open(encoding="utf-8-sig", newline="") as stream:
+            records = {(int(r["Tahun"]), int(r["PdP"])): r for r in csv.DictReader(stream)}
+        self.assertEqual(len(records), 210)
+        for pdp, page in ((20, "4–5"), (21, "4–5"), (41, "46–49"), (42, "46–49")):
+            rec = records[5, pdp]
+            self.assertIn("BUKU_TEKS_VISUAL_SAH", rec["Pemeriksaan_RPH_individu"].split(";"))
+            self.assertIn("ms " + page, rec["Bukti_buku"])
+            plan = psv.load_candidate(5, pdp, preview=True)
+            source = (ROOT / rec["Fail_RPH"]).read_text(encoding="utf-8")
+            meta = {k.casefold(): v.strip() for k, v in psv.FIELD.findall(source)}
+            self.assertEqual(plan["materials"], psv._clean(meta["bbm"]).rstrip(" .;") + "; Buku Teks Tahun 5 ms " + page + ".")
+            out = psv.adapt_rows({"subject": "PSV", "year": "Tahun 5", "lesson_no": pdp}, {}, preview=True)
+            self.assertEqual(out["BAHAN BANTU MENGAJAR"], plan["materials"])
+            self.assertIsNone(psv.load_candidate(5, pdp))
+
     def test_release_status_match_is_exact_and_never_accepts_draft(self):
         self.assertTrue(psv._has_ready_status("**Status:** READY\n"))
         self.assertTrue(psv._has_ready_status("# Header\n**Status:** READY\n## Next"))
