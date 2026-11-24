@@ -4,7 +4,7 @@
   "subject": "数学（华小）",
   "unit": "整数与运算",
   "source": "DSKP Matematik SJK(C) Tahun 4, printed pages 31–34",
-  "note": "Original candidate teaching activities, not approved RPT allocation or textbook page mapping. Candidate IDs are not printable PdP numbers.",
+  "note": "Textbook printed page ranges matched using contents and selected teacher-note SP evidence; detailed page QA and RPT allocation remain pending. Candidate IDs not printed.",
   "records": [
     {
       "candidate_id": "T4-U1-C01",
@@ -33,9 +33,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "使用数位表逐位提示。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        2,
+        3
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C02",
@@ -64,9 +67,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "先练习四位数，再加入含零的五位数。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        1,
+        3
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C03",
@@ -95,9 +101,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "用数位表辅助书写。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        2,
+        3
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C04",
@@ -126,9 +135,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "使用颜色标记不同数位。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        4,
+        4
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C05",
@@ -157,9 +169,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "从三位数开始逐步增加数位。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        5,
+        5
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C06",
@@ -188,9 +203,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "把两个数对齐在数位表上比较。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        6,
+        7
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C07",
@@ -219,9 +237,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "减少数卡数量后逐步增加。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        6,
+        7
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C08",
@@ -250,9 +271,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "先使用简单连续数列，再增加难度。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        7,
+        7
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C09",
@@ -281,9 +305,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "用小数量实物重新配对。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        9,
+        9
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C10",
@@ -312,9 +339,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "先分类个位数，再扩展至五位数。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        9,
+        9
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C11",
@@ -343,9 +373,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "提供清晰的参照组和分组图。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        10,
+        10
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C12",
@@ -374,9 +407,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "先在数轴标出两个端点再判断。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        11,
+        12
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C13",
@@ -405,9 +441,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "用箭头标记相邻数的变化。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        14,
+        15
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C14",
@@ -436,16 +475,19 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "先提供一个完整示例。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        14,
+        15
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C15",
       "sk": "1.6",
       "sp": "1.6.1",
       "topic": "整数加法",
-      "objective": "完成四道和不超过十万的加法算式。",
+      "objective": "完成四道涉及最多四个数的加法算式，其和不超过十万。",
       "criterion": "至少三题计算及数位排列正确。",
       "induction": "教师提出与本课主题相关的一个简短问题，了解学生的已有知识。",
       "activities": [
@@ -467,9 +509,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "先练两项加法再增加项数。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        18,
+        19
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C16",
@@ -498,9 +543,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "从不借位的减法开始。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        20,
+        20
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C17",
@@ -529,9 +577,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "把连续减法拆成两个算式。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        21,
+        21
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C18",
@@ -548,7 +599,7 @@
         },
         {
           "title": "活动二：引导练习",
-          "body": "学生练习一位数、两位数及整百整千乘数的算式。"
+          "body": "学生练习至两位数、100 或 1 000 的乘法算式，并核对乘积不超过十万。"
         },
         {
           "title": "活动三：独立应用",
@@ -560,9 +611,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "由一位数乘法逐步过渡。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        24,
+        25
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C19",
@@ -579,7 +633,7 @@
         },
         {
           "title": "活动二：引导练习",
-          "body": "学生练习不同允许除数的算式并互相核对。"
+          "body": "学生练习除数为至两位数、100 或 1 000 的算式，并互相核对。"
         },
         {
           "title": "活动三：独立应用",
@@ -591,9 +645,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "先练除数为一位数的算式。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        26,
+        27
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C20",
@@ -622,9 +679,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "把混合算式分为两个步骤。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        22,
+        23
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C21",
@@ -653,9 +713,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "先用较小整数练习。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        28,
+        29
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C22",
@@ -684,9 +747,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "使用较小数目和实物。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        30,
+        30
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C23",
@@ -715,9 +781,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "先用较小整数和实物示范。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        31,
+        31
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C24",
@@ -746,9 +815,12 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "用图示标记已知量及所求量。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        34,
+        40
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     },
     {
       "candidate_id": "T4-U1-C25",
@@ -777,9 +849,14 @@
       "closure": "学生复述本课所用的方法，教师针对常见错误作出总结。",
       "remedial": "提供句式和图示帮助列式。",
       "extension": "学生自拟一道同类题目，并说明解题方法。",
-      "textbook_pages": null,
+      "textbook_pages": [
+        41,
+        42
+      ],
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_TEXTBOOK_AND_RPT_MAPPING"
+      "status": "DRAFT_TEXTBOOK_RANGE_MAPPED_PENDING_DETAIL_QA_RPT"
     }
-  ]
+  ],
+  "textbook_source": "https://fliphtml5.com/fpdbc/cfnl/",
+  "dskp_crosscheck": "https://fliphtml5.com/dsymy/mozv"
 }
