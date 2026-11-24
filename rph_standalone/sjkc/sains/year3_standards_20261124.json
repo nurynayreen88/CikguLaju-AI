@@ -1,0 +1,205 @@
+{
+  "year": 3,
+  "status": "EDITORIAL_LABELS_QA_ONLY",
+  "source_rpt": "rpt_2027/sjkc/sains/year_3_kuala_lumpur.json",
+  "source_git_blob": "bf55ef46513d4dc17ba323f092a3332e853e2d6c",
+  "dskp_reference": "https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Sains-Tahun-3-SJKC-v2-1.pdf",
+  "policy": "Editorial Chinese topic labels based on original RPT and partial DSKP cross-check, not verbatim official descriptions. Independent semantic verification required before release. RPT unchanged.",
+  "sk": {
+    "1.1": "科学程序技能",
+    "1.2": "操纵性技能",
+    "2.1": "科学室规则",
+    "3.1": "牙齿",
+    "3.2": "食物与营养",
+    "3.3": "消化",
+    "4.1": "进食习性",
+    "5.1": "植物繁殖",
+    "6.1": "面积与体积",
+    "7.1": "密度与浮沉",
+    "8.1": "酸与碱",
+    "9.1": "太阳系",
+    "10.1": "滑轮"
+  },
+  "sp": {
+    "1.1.1": {
+      "description": "观察"
+    },
+    "1.1.2": {
+      "description": "分类"
+    },
+    "1.1.3": {
+      "description": "测量与数目"
+    },
+    "1.1.4": {
+      "description": "推断"
+    },
+    "1.1.5": {
+      "description": "预测"
+    },
+    "1.1.6": {
+      "description": "沟通"
+    },
+    "1.2.1": {
+      "description": "妥善使用器材"
+    },
+    "1.2.2": {
+      "description": "谨慎处理标本"
+    },
+    "1.2.3": {
+      "description": "绘制标本和器材"
+    },
+    "1.2.4": {
+      "description": "正确清洗器材"
+    },
+    "1.2.5": {
+      "description": "安全归放器材"
+    },
+    "2.1.1": {
+      "description": "遵守科学室规则"
+    },
+    "3.1.1": {
+      "description": "辨认牙齿种类与功能"
+    },
+    "3.1.2": {
+      "description": "认识牙齿结构"
+    },
+    "3.1.3": {
+      "description": "比较乳牙恒牙"
+    },
+    "3.1.4": {
+      "description": "保护牙齿方法"
+    },
+    "3.1.5": {
+      "description": "表达牙齿保健观察"
+    },
+    "3.2.1": {
+      "description": "辨认营养素"
+    },
+    "3.2.2": {
+      "description": "说明营养素作用"
+    },
+    "3.2.3": {
+      "description": "均衡饮食"
+    },
+    "3.2.4": {
+      "description": "不均衡饮食后果"
+    },
+    "3.2.5": {
+      "description": "交流营养观察"
+    },
+    "3.3.1": {
+      "description": "消化概念"
+    },
+    "3.3.2": {
+      "description": "消化路径"
+    },
+    "3.3.3": {
+      "description": "营养吸收及排遗"
+    },
+    "3.3.4": {
+      "description": "表达消化过程"
+    },
+    "4.1.1": {
+      "description": "按进食习性分类"
+    },
+    "4.1.2": {
+      "description": "举例草食肉食杂食"
+    },
+    "4.1.3": {
+      "description": "按食物推断类别"
+    },
+    "4.1.4": {
+      "description": "比较动物牙齿"
+    },
+    "4.1.5": {
+      "description": "汇报进食观察"
+    },
+    "5.1.1": {
+      "description": "举例各繁殖方式"
+    },
+    "5.1.2": {
+      "description": "推断繁殖重要性"
+    },
+    "5.1.3": {
+      "description": "植物的多种繁殖方式"
+    },
+    "5.1.4": {
+      "description": "汇报繁殖观察"
+    },
+    "6.1.1": {
+      "description": "辨认面积体积单位"
+    },
+    "6.1.2": {
+      "description": "方格测量规则面积"
+    },
+    "6.1.3": {
+      "description": "估计不规则面积"
+    },
+    "6.1.4": {
+      "description": "小立方块测量盒体积"
+    },
+    "6.1.5": {
+      "description": "正确测量液体体积"
+    },
+    "6.1.6": {
+      "description": "排水法测量不规则固体"
+    },
+    "6.1.7": {
+      "description": "交流测量观察"
+    },
+    "7.1.1": {
+      "description": "推断浮沉"
+    },
+    "7.1.2": {
+      "description": "联系浮沉和密度"
+    },
+    "7.1.3": {
+      "description": "增加水密度的方法"
+    },
+    "7.1.4": {
+      "description": "表达密度观察"
+    },
+    "8.1.1": {
+      "description": "石蕊试纸判断酸碱中性"
+    },
+    "8.1.2": {
+      "description": "比较感官描述与科学测试证据"
+    },
+    "8.1.3": {
+      "description": "探索其他指示材料"
+    },
+    "8.1.4": {
+      "description": "汇报酸碱观察"
+    },
+    "9.1.1": {
+      "description": "辨认太阳系成员"
+    },
+    "9.1.2": {
+      "description": "联系行星位置与表面温度"
+    },
+    "9.1.3": {
+      "description": "描述行星公转轨道"
+    },
+    "9.1.4": {
+      "description": "联系距离和公转周期"
+    },
+    "9.1.5": {
+      "description": "表达太阳系观察"
+    },
+    "10.1.1": {
+      "description": "滑轮概念和用途"
+    },
+    "10.1.2": {
+      "description": "定滑轮操作"
+    },
+    "10.1.3": {
+      "description": "生活应用"
+    },
+    "10.1.4": {
+      "description": "制作滑轮模型"
+    },
+    "10.1.5": {
+      "description": "表达滑轮观察"
+    }
+  }
+}
