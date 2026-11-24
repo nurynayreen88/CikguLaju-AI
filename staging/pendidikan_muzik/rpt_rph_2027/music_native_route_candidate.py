@@ -34,6 +34,7 @@ def source_paths(year,pdp):
         f"year{year}/RPT_MUZIK_TAHUN_{year}_2027_DRAF.csv",
         "SUCCESS_CRITERIA_DRAFT_20261106.json",
         "DSKP_SP_CODE_PRESENCE_175_20261106.json",
+        "dskp_standard_descriptions.json",
     )
 
 
@@ -82,7 +83,7 @@ def load(year,pdp,*,root=ROOT):
             return None
         return {
             "year":year,"pdp":pdp,"subject":SUBJECT,"title":row["unit"],
-            "digest":digest,"sk":header["Standard Kandungan"].split("; "),
+            "digest":digest,"sk":preview["sk_codes"],
             "sp":row["sp"],"preview":preview,
             "unofficial":row.get("pdp_kind")=="CADANGAN_PENGUKUHAN_BUKAN_PROJEK_RASMI",
         }
