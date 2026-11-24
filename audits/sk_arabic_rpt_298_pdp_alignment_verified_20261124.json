@@ -1,0 +1,36 @@
+{
+  "status": "SOURCE_ALIGNMENT_VERIFIED_NOT_ACADEMIC_APPROVAL",
+  "verified_commit": "2f798ebaf4bdbcbf7583d21c8346aabe313ac77f",
+  "workflow_run": 45339270823,
+  "workflow_url": "https://github.com/nurynayreen88/CikguLaju-AI/actions/runs/45339270823",
+  "unique_pdp": 298,
+  "group_rows": {
+    "A": 298,
+    "B": 298
+  },
+  "matched": 596,
+  "year_counts": {
+    "2": 60,
+    "3": 60,
+    "4": 58,
+    "5": 60,
+    "6": 60
+  },
+  "checks": [
+    "SK and SP exact match to source RPH",
+    "objective, success criteria and PBD fields present",
+    "unique lesson identifiers and group labels"
+  ],
+  "artifact": {
+    "id": 14894932502,
+    "sha256": "106cad08ee60afc36435261bc210cd7559d018a6642e3b6061df89e7ced67a95",
+    "bytes": 36185,
+    "expires_at": "2026-12-01T06:17:09Z"
+  },
+  "remaining": [
+    "Verify full official DSKP statements; 14 additional SP codes need official text evidence",
+    "Rebuild candidate using approved BM cover and original RPT grid, preserve calendar and group data",
+    "Visual QA and separate publication approval"
+  ],
+  "production_changed": false
+}
