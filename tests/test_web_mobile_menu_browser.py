@@ -195,7 +195,7 @@ class PhoneMenuLayoutTests(unittest.TestCase):
             page.locator("#curriculum").select_option("kssr")
             page.locator("#year").select_option("1")
             page.locator("#rph-subject-search input").click()
-            page.get_by_role("option", name="Matematik (SK)", exact=True).click()
+            page.get_by_role("option", name="Matematik SK", exact=True).click()
             expect(page.locator("#unit option", has_text="Unit 1:")).to_have_count(1)
             page.locator("#unit").select_option(unit["value"])
             page.locator("#lesson").select_option("PDP1")
