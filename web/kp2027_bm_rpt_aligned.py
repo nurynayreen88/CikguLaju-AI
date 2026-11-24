@@ -180,46 +180,53 @@ def _docx(r,fields):
     return buffer.getvalue()
 
 def _pdf(r,fields):
-    # Explicit physical widths and fills; no HTML table auto-sizing.
-    from reportlab import __file__ as reportlab_file
-    from reportlab.lib import colors
-    from reportlab.lib.enums import TA_CENTER
-    from reportlab.lib.styles import ParagraphStyle
-    from reportlab.pdfbase import pdfmetrics
-    from reportlab.pdfbase.ttfonts import TTFont
-    from reportlab.platypus import SimpleDocTemplate, Paragraph, Table, TableStyle, Spacer
-    fonts=Path(reportlab_file).parent/'fonts'
-    for name,filename in (('CikguBmRegular','Vera.ttf'),('CikguBmBold','VeraBd.ttf')):
-        if name not in pdfmetrics.getRegisteredFontNames():
-            pdfmetrics.registerFont(TTFont(name,str(fonts/filename)))
-    pdfmetrics.registerFontFamily('CikguBmRegular',normal='CikguBmRegular',bold='CikguBmBold')
-    ink=colors.HexColor('#253748')
-    tone=colors.HexColor('#EDF3FA');strong=colors.HexColor('#DBE8F5')
-    border=colors.HexColor('#BAC7D0')
-    normal=ParagraphStyle('BmText',fontName='CikguBmRegular',fontSize=8.5,leading=10.8,textColor=ink)
-    label=ParagraphStyle('BmLabel',parent=normal,fontName='CikguBmBold')
-    title=ParagraphStyle('BmTitle',parent=label,fontSize=14,leading=17,alignment=TA_CENTER)
-    hero=ParagraphStyle('BmHero',parent=normal,fontSize=10,leading=13)
+    # PyMuPDF is already installed in production. Measure each cell at its
+    # fixed width before drawing, rather than letting HTML tables collapse
+    # empty teacher fields. No additional renderer dependency is required.
+    import fitz
+    normal_css=("body{font-family:sans-serif;font-size:8.5pt;line-height:1.25;"
+                "margin:0;padding:0;color:#253748;}p{margin:0;padding:0;}")
+    title_css=normal_css+"body{font-size:14pt;text-align:center;}"
+    hero_css=normal_css+"body{font-size:10pt;line-height:1.3;}"
+    tone=(237/255,243/255,250/255);strong=(219/255,232/255,245/255)
+    border=(186/255,199/255,208/255)
+    page_w,page_h=595.28,841.89
+    left=37.14;total=521.0;bottom=page_h-23
     def raw(value):return escape(str(value),quote=False).replace('\n','<br/>')
-    def para(value,style=normal):return Paragraph(raw(value),style)
-    def table(rows,widths):
-        t=Table(rows,colWidths=widths,hAlign='CENTER',splitByRow=1)
-        t.setStyle(TableStyle([('GRID',(0,0),(-1,-1),.55,border),
-            ('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),7),
-            ('RIGHTPADDING',(0,0),(-1,-1),7),('TOPPADDING',(0,0),(-1,-1),4),
-            ('BOTTOMPADDING',(0,0),(-1,-1),4)]))
-        return t
-    identity=Paragraph('<b>BAHASA MELAYU SK • TAHUN 1</b><br/>'
-        +raw(f'PdP {r["lesson"]:03d} • Kumpulan {r["group"]}')+'<br/>'+raw(r['title']),hero)
-    info=Paragraph('<br/>'.join('<b>'+raw(k)+'</b> '+raw(_safe_value(fields,k))
-        for k in ('Kelas:','Tarikh:','Masa:','Bil. Murid:')),normal)
-    header=table([[identity,info]],[324,197])
-    header.setStyle(TableStyle([('BACKGROUND',(0,0),(0,0),strong),('BACKGROUND',(1,0),(1,0),tone)]))
-    steps=[]
-    for heading,body in zip(_activity_titles(r),r['activities']):
-        steps.append(Paragraph('<b>'+raw(heading)+'</b><br/>'+raw(body),normal))
-        steps.append(Spacer(1,2))
-    steps.append(para(r['hint']))
+    def measure(html,width,css):
+        story=fitz.Story(html,user_css=css)
+        more,filled=story.place(fitz.Rect(0,0,width,750))
+        if more:raise Unavailable('Kandungan sel RPH melebihi satu halaman')
+        return filled[3]-filled[1]+1.5
+    def place(page,rect,html,css):
+        spare,scale=page.insert_htmlbox(rect,html,css=css,scale_low=1)
+        if spare<0 or scale!=1:raise Unavailable('Ruang teks RPH tidak dapat disahkan')
+    document=fitz.open()
+    def new_page():
+        page=document.new_page(width=page_w,height=page_h)
+        title='<b>RANCANGAN PENGAJARAN HARIAN</b>'
+        h=measure(title,total,title_css)
+        place(page,fitz.Rect(left,23,left+total,23+h),title,title_css)
+        return page,23+h+5
+    page,y=new_page()
+    identity=('<b>BAHASA MELAYU SK • TAHUN 1</b><br/>'
+        +raw(f'PdP {r["lesson"]:03d} • Kumpulan {r["group"]}')+'<br/>'+raw(r['title']))
+    info='<br/>'.join('<b>'+raw(k)+'</b> '+raw(_safe_value(fields,k))
+        for k in ('Kelas:','Tarikh:','Masa:','Bil. Murid:'))
+    def row_height(cells,widths,styles):
+        return max(measure(value,w-14,css) for value,w,css in zip(cells,widths,styles))+8
+    def draw_row(page,y,cells,widths,styles,fills):
+        h=row_height(cells,widths,styles)
+        x=left
+        for value,w,css,fill in zip(cells,widths,styles,fills):
+            page.draw_rect(fitz.Rect(x,y,x+w,y+h),color=border,fill=fill,width=.55)
+            place(page,fitz.Rect(x+7,y+4,x+w-7,y+h-4),value,css)
+            x+=w
+        return y+h
+    y=draw_row(page,y,[identity,info],[324,197],[hero_css,normal_css],[strong,tone])+6
+    steps='<br/>'.join('<b>'+raw(heading)+'</b><br/>'+raw(body)
+        for heading,body in zip(_activity_titles(r),r['activities']))
+    steps+='<br/>'+raw(r['hint'])
     rows=[('Kandungan / Tajuk',r['unit']+' • '+r['title']),
       ('Standard Kandungan (SK)',r['sk_code']+' '+r['sk']),
       ('Standard Pembelajaran (SP)',r['sp_code']+' '+r['sp']),
@@ -230,12 +237,17 @@ def _pdf(r,fields):
       ('Aktiviti Utama',None),('Pengukuhan / PBD',r['pbd']),('Penutup',r['closure']),
       ('Pemulihan',r['remedial']),('Pengayaan',r['extension']),
       ('Refleksi',_reflection(r,fields))]
-    body=table([[para(k,label),steps if v is None else para(v)] for k,v in rows],[125,396])
-    body.setStyle(TableStyle([('BACKGROUND',(0,0),(0,-1),tone)]))
-    out=BytesIO()
-    doc=SimpleDocTemplate(out,pagesize=(595.28,841.89),leftMargin=31,rightMargin=31,topMargin=23,bottomMargin=23)
-    doc.build([para('RANCANGAN PENGAJARAN HARIAN',title),Spacer(1,5),header,Spacer(1,6),body])
-    result=out.getvalue()
+    try:
+        for label,value in rows:
+            cells=['<b>'+raw(label)+'</b>',steps if value is None else raw(value)]
+            widths=[125,396];styles=[normal_css,normal_css]
+            h=row_height(cells,widths,styles)
+            if y+h>bottom:page,y=new_page()
+            if y+h>bottom:raise Unavailable('Kandungan RPH tidak dapat dimuatkan pada A4')
+            y=draw_row(page,y,cells,widths,styles,[tone,(1,1,1)])
+        result=document.tobytes(garbage=4,deflate=True)
+    finally:
+        document.close()
     if not result.startswith(b'%PDF-'):raise Unavailable('PDF RPH tidak dapat disahkan')
     return result
 
