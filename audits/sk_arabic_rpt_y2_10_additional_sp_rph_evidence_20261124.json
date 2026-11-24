@@ -1,0 +1,106 @@
+{
+  "status": "QA_RPH_SHORT_STATEMENTS_NOT_FULL_DSKP",
+  "source_delta_sha": "749109123b8552d636077bddbb41756cc60d3003",
+  "records": [
+    {
+      "year": 2,
+      "pdp": "054",
+      "code": "2.2.3",
+      "source": "rph_standalone/bahasa_arab/year2/lesson_054.md",
+      "sha": "63b7f27ab25251e68badea2a137d383a0fb09012",
+      "actual": "2.2.3",
+      "short_statement": "تمييز المقطع المقروء.",
+      "match": true
+    },
+    {
+      "year": 2,
+      "pdp": "038",
+      "code": "2.3.3",
+      "source": "rph_standalone/bahasa_arab/year2/lesson_038.md",
+      "sha": "0b623613b5aa89d6625173a039c16a62203cc2f3",
+      "actual": "2.3.3",
+      "short_statement": "تمييز المقطع المقروء.",
+      "match": true
+    },
+    {
+      "year": 2,
+      "pdp": "032",
+      "code": "2.2.4",
+      "source": "rph_standalone/bahasa_arab/year2/lesson_032.md",
+      "sha": "b44bce8c41013739e69f5ba8344a9abc56d1fc8c",
+      "actual": "2.2.4",
+      "short_statement": "تكوين المقطع المقروء.",
+      "match": true
+    },
+    {
+      "year": 2,
+      "pdp": "034",
+      "code": "2.1.2",
+      "source": "rph_standalone/bahasa_arab/year2/lesson_034.md",
+      "sha": "8fa2db0ed0e3776be3234c340da74e9b7bf4186f",
+      "actual": "2.1.2",
+      "short_statement": "تحديد الحروف المركزة المقروءة.",
+      "match": true
+    },
+    {
+      "year": 2,
+      "pdp": "057",
+      "code": "1.4.3",
+      "source": "rph_standalone/bahasa_arab/year2/lesson_057.md",
+      "sha": "602dae655d68828de7f4eeca16a962c2b0a8831b",
+      "actual": "1.4.3",
+      "short_statement": "تحديد التراكيب المسموعة.",
+      "match": true
+    },
+    {
+      "year": 2,
+      "pdp": "041",
+      "code": "2.4.4",
+      "source": "rph_standalone/bahasa_arab/year2/lesson_041.md",
+      "sha": "3d1877aa3eab958b2a9aec2c2501a93555a6009b",
+      "actual": "2.4.4",
+      "short_statement": "تمثيل التراكيب المقروءة ارتجاليًّا.",
+      "match": true
+    },
+    {
+      "year": 2,
+      "pdp": "059",
+      "code": "2.4.2",
+      "source": "rph_standalone/bahasa_arab/year2/lesson_059.md",
+      "sha": "c24581f20acd6b1530c25a76aef13fca64ec8a8d",
+      "actual": "2.4.2",
+      "short_statement": "تحديد التراكيب المقروءة.",
+      "match": true
+    },
+    {
+      "year": 2,
+      "pdp": "043",
+      "code": "2.4.3",
+      "source": "rph_standalone/bahasa_arab/year2/lesson_043.md",
+      "sha": "504b8af25212bd1e5c6ee7c8c19531ff7ca12eed",
+      "actual": "2.4.3",
+      "short_statement": "تمييز التراكيب المقروءة.",
+      "match": true
+    },
+    {
+      "year": 2,
+      "pdp": "044",
+      "code": "2.5.3",
+      "source": "rph_standalone/bahasa_arab/year2/lesson_044.md",
+      "sha": "20458d64853e6aa57049f4df9976309a86293307",
+      "actual": "2.5.3",
+      "short_statement": "تمييز الأرقام والأعداد وقراءتها قراءة صحيحة.",
+      "match": true
+    },
+    {
+      "year": 2,
+      "pdp": "058",
+      "code": "1.4.2",
+      "source": "rph_standalone/bahasa_arab/year2/lesson_058.md",
+      "sha": "d4a337e514ad6a37252e462dfd0af7700ec7c2cb",
+      "actual": "1.4.2",
+      "short_statement": "حفظ التراكيب المسموعة وتسميعها.",
+      "match": true
+    }
+  ]
+}
