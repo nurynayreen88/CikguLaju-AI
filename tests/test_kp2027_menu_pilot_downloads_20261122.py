@@ -57,6 +57,19 @@ class TestPilotNavigation(unittest.TestCase):
         self.assertIn('personalize_approved_rph', ALAM)
         self.assertIn('personalize_approved_rph', MATH)
 
+    def test_rph_group_is_automatic_and_rpt_group_remains(self):
+        self.assertIn('function kp2027GroupForState(value)', PAGE)
+        self.assertIn('["KEDAH","KELANTAN","TERENGGANU"].includes(state)', PAGE)
+        self.assertIn('fetch("/api/web/teacher/profile"', PAGE)
+        self.assertIn('kp2027GroupForState(data.profile?.state_name)', PAGE)
+        self.assertIn('const group=await kp2027SavedSchoolGroup();', PAGE)
+        self.assertIn('kp2027PilotGroup.value=group;', PAGE)
+        self.assertNotIn('kp2027PilotGroup.hidden=false', PAGE)
+        self.assertNotIn('kp2027-pilot-group-label").hidden=false', PAGE)
+        self.assertIn('Negeri sekolah belum ditetapkan.', PAGE)
+        self.assertIn('id="rpt-kp2027-group"', PAGE)
+        self.assertIn('{group,lesson:value,format,...teacherPayload}', PAGE)
+
     def test_pilot_downloads_still_require_private_access_and_approval(self):
         self.assertIn("CIKGULAJU_KP2027_ALAM_CANARY_ENABLED", ALAM)
         self.assertIn("CANARY_APPROVED", ALAM)

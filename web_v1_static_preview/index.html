@@ -1513,7 +1513,15 @@ webViewButtons.forEach(button=>button.addEventListener("click",()=>{
  const heading=document.getElementById(view.getAttribute("aria-labelledby"));
  heading.tabIndex=-1;
  if(button.dataset.webView!=="admin")heading.focus();
- if(button.dataset.webView==="rph")void loadTeacherClasses();
+ if(button.dataset.webView==="rph"){
+  void loadTeacherClasses();
+  if(curriculum.value==="kp2027"&&["MATH_KP2027","BM_SK_KP2027","PJ_KP2027"].includes(subject.value)){
+   let savedGroup="";
+   try{if(teacherProfileState.loaded)savedGroup=kp2027GroupForState(JSON.parse(teacherProfileState.savedProfile||"{}").state_name);}catch(_error){}
+   if(!kp2027PilotInventory||(teacherProfileState.loaded&&savedGroup!==kp2027PilotGroup.value))
+    subject.dispatchEvent(new Event("change"));
+  }
+ }
  if(button.dataset.webView==="today")window.rphTodayLoad?.();
  if(button.dataset.webView==="pbd")window.cikgulajuPbdLoad?.();
  if(button.dataset.webView==="feedback")window.cikgulajuFeedbackLoad?.();
@@ -1731,10 +1739,23 @@ const kp2027PilotStatus=document.getElementById("kp2027-pilot-status");
 const kp2027PilotButtons=[document.getElementById("kp2027-pilot-word"),document.getElementById("kp2027-pilot-pdf")];
 const kp2027PilotRoutes={MATH_KP2027:"/api/kp2027/sk/tahun-1/matematik",ALAM_KP2027:"/api/kp2027/sk/tahun-1/alam-dan-manusia",BM_SK_KP2027:"/api/kp2027/sk/tahun-1/bahasa-melayu-sk",PJ_KP2027:"/api/kp2027/sk/tahun-1/pendidikan-jasmani"};
 let kp2027PilotEpoch=0,kp2027PilotInventory=null,kp2027PilotBusy=false;
+// Match the 2027 school calendar: Kedah, Kelantan and Terengganu are A.
+function kp2027GroupForState(value){
+ const state=String(value||"").trim().toUpperCase().replace(/\./g,"").replace(/\s+/g," ").replace(/^(?:WP|W P|WILAYAH PERSEKUTUAN)\s+/,"");
+ if(["KEDAH","KELANTAN","TERENGGANU"].includes(state))return "A";
+ if(["JOHOR","MELAKA","NEGERI SEMBILAN","PAHANG","PERAK","PERLIS","PULAU PINANG","SABAH","SARAWAK","SELANGOR","KUALA LUMPUR","PUTRAJAYA","LABUAN"].includes(state))return "B";
+ return "";
+}
+async function kp2027SavedSchoolGroup(){
+ const response=await fetch("/api/web/teacher/profile",{credentials:"same-origin",cache:"no-store",headers:{Accept:"application/json"}});
+ if(!response.ok)throw Error("Negeri sekolah belum dapat disemak. Sila cuba semula.");
+ const data=await response.json();
+ return kp2027GroupForState(data.profile?.state_name);
+}
 function resetKp2027Pilot(){
  kp2027PilotEpoch++;
  kp2027PilotInventory=null;
- kp2027PilotGroup.value="A";
+ kp2027PilotGroup.value="";
  kp2027PilotGroup.hidden=true;kp2027PilotGroup.disabled=true;
  document.getElementById("kp2027-pilot-group-label").hidden=true;
  kp2027PilotActions.hidden=true;kp2027PilotStatus.textContent="";
@@ -1777,7 +1798,7 @@ function kp2027DisplayUnits(){
  for(const button of kp2027PilotButtons)button.disabled=true;
  kp2027PilotStatus.textContent="";
  catalogStatus.textContent=entries.length+(subject.value==="ALAM_KP2027"&&kp2027PilotInventory?.catalogMode!=="rpt93"?" RPH sumber (nombor bukan turutan RPT)":" PdP yang diluluskan")+" dalam "+units.length+" Unit/Kandungan"+
-  (["MATH_KP2027","BM_SK_KP2027","PJ_KP2027"].includes(subject.value)?" (Kumpulan "+kp2027PilotGroup.value+")":"")+".";
+  ".";
  updateSelectionHelp(units.length?(subject.value==="ALAM_KP2027"&&kp2027PilotInventory?.catalogMode!=="rpt93"?"Pilih RPH sumber berdasarkan tajuk dan SP. Nombor RPH belum diselaraskan dengan turutan PdP RPT.":"Pilih Unit / Kandungan terlebih dahulu, kemudian PdP."):"Tiada PdP yang diluluskan untuk pilihan ini.");
 }
 function kp2027DisplayPdps(){
@@ -2170,11 +2191,17 @@ subject.addEventListener("change",async()=>{
     inventory={lessons:data.lessons,items:data.items,catalogMode:data.catalog_mode||"source64"};
    }
    if(revision!==kp2027PilotEpoch||curriculum.value!=="kp2027"||subject.value!==code||year.value!=="1")return;
-   kp2027PilotInventory=inventory;
    if(["MATH_KP2027","BM_SK_KP2027","PJ_KP2027"].includes(code)){
-    kp2027PilotGroup.hidden=false;kp2027PilotGroup.disabled=false;
-    document.getElementById("kp2027-pilot-group-label").hidden=false;
+    const group=await kp2027SavedSchoolGroup();
+    if(revision!==kp2027PilotEpoch||curriculum.value!=="kp2027"||subject.value!==code||year.value!=="1")return;
+    if(!group){
+     catalogStatus.textContent="Negeri sekolah belum ditetapkan.";
+     updateSelectionHelp("Sila pilih negeri sekolah dan simpan di Profil & Akses. Kumpulan RPH akan dipilih secara automatik.");
+     return;
+    }
+    kp2027PilotGroup.value=group;
    }
+   kp2027PilotInventory=inventory;
    kp2027DisplayUnits();
   }catch(error){
    if(revision!==kp2027PilotEpoch||subject.value!==code||curriculum.value!=="kp2027")return;
