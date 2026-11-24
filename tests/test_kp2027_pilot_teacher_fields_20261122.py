@@ -269,6 +269,21 @@ class TeacherFields(unittest.TestCase):
         self.assertIn("Rujukan DK Matematik", fulltext)
         rendered.close()
 
+    def test_native_9pt_overflow_preserves_full_manual_reflection(self):
+        import fitz
+        from unittest.mock import patch
+        reflection=("Murid memerlukan bimbingan susulan berstruktur dan pemantauan khusus.\n"*6).strip()
+        with patch("web.kp2027_native_pdf_reflection.native_reflection_plan",
+                   side_effect=ValueError("Refleksi tidak muat pada fon asal 9 pt. Ringkaskan refleksi atau guna Word.")):
+            data=personalize_approved_rph(pdf_fixture(),"pdf",{
+                "reflection_mode":"manual","reflection":reflection})
+        with fitz.open(stream=data,filetype="pdf") as doc:
+            text=" ".join(page.get_text() for page in doc)
+            self.assertEqual(text.count("Murid memerlukan bimbingan"),6)
+            self.assertIn("MATEMATIK Tahun 1",text)
+            self.assertNotIn("Catatan asal selepas PdP.",text)
+            self.assertLessEqual(doc.page_count,2)
+
     def test_does_not_stamp_wrong_pdf_layout(self):
         import fitz
         d = fitz.open(); d.new_page()
