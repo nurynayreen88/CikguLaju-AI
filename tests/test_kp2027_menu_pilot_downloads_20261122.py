@@ -57,16 +57,21 @@ class TestPilotNavigation(unittest.TestCase):
         self.assertIn('personalize_approved_rph', ALAM)
         self.assertIn('personalize_approved_rph', MATH)
 
-    def test_rph_group_is_automatic_and_rpt_group_remains(self):
+    def test_rph_group_is_automatic_or_manual_and_rpt_group_remains(self):
         self.assertIn('function kp2027GroupForState(value)', PAGE)
         self.assertIn('["KEDAH","KELANTAN","TERENGGANU"].includes(state)', PAGE)
         self.assertIn('fetch("/api/web/teacher/profile"', PAGE)
         self.assertIn('kp2027GroupForState(data.profile?.state_name)', PAGE)
         self.assertIn('const group=await kp2027SavedSchoolGroup();', PAGE)
-        self.assertIn('kp2027PilotGroup.value=group;', PAGE)
-        self.assertNotIn('kp2027PilotGroup.hidden=false', PAGE)
-        self.assertNotIn('kp2027-pilot-group-label").hidden=false', PAGE)
-        self.assertIn('Negeri sekolah belum ditetapkan.', PAGE)
+        self.assertIn('function kp2027ApplySchoolGroup(group)', PAGE)
+        self.assertIn('kp2027PilotGroup.value=automatic?group:"";', PAGE)
+        self.assertIn('kp2027PilotGroup.hidden=automatic;', PAGE)
+        self.assertIn('kp2027PilotGroup.disabled=automatic;', PAGE)
+        self.assertIn('if(!kp2027ApplySchoolGroup(group))', PAGE)
+        self.assertIn('Pilih Kumpulan A atau B.', PAGE)
+        self.assertIn('value="" disabled selected>Pilih Kumpulan A / B', PAGE)
+        self.assertIn('if(!response.ok)return "";', PAGE)
+        self.assertIn('!kp2027PilotGroup.hidden&&["A","B"].includes(kp2027PilotGroup.value)', PAGE)
         self.assertIn('id="rpt-kp2027-group"', PAGE)
         self.assertIn('{group,lesson:value,format,...teacherPayload}', PAGE)
 
