@@ -957,6 +957,15 @@ except Exception as _objective_reflection_exc:
 
 
 
+# Display each already-known native SK standard on its own line, AFTER
+# source-linked reflection selection. Keep all source and identity bytes.
+try:
+    from web.rph_standard_line_display_20261124 import install as install_standard_lines
+    RPH_STANDARD_LINES_ACTIVE = bool(install_standard_lines(telegram_runtime))
+except Exception as _standard_lines_exc:
+    RPH_STANDARD_LINES_ACTIVE = False
+    print("RPH standard line display unavailable:", type(_standard_lines_exc).__name__, flush=True)
+
 # Display-only Jawi numerals for active Pendidikan Islam RPH.
 # Install LAST, after all curriculum rows, reflection, PI activity and Word
 # presentation adapters. Converts 0-9 to ٠-٩ only on generated Word/PDF;
