@@ -29,7 +29,7 @@ jobs:
         if: always()
         with:
           name: pi-active-698-activity-quality-qa
-          path: qa/pi-activity-quality/audit.json
+          path: qa/pi-activity-quality/*.json
           if-no-files-found: warn
           retention-days: 7
       - name: Render eight curated source-specific activities with original Word and PDF generator
