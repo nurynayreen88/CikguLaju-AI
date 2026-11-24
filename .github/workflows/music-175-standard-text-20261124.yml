@@ -1,0 +1,37 @@
+name: Music SK 175 RPH standard text QA
+on:
+  pull_request:
+    paths:
+      - 'staging/pendidikan_muzik/rpt_rph_2027/**'
+      - '.github/workflows/music-175-standard-text-20261124.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: All 175 original source RPH with full standard text
+        run: |
+          python - <<'PY'
+          from staging.pendidikan_muzik.rpt_rph_2027.music_native_route_candidate import load
+          total = 0
+          for year in range(2,7):
+              for pdp in range(1,36):
+                  row = load(year,pdp)
+                  assert row is not None, (year,pdp)
+                  preview = row['preview']
+                  header = {x['label']:x['value'] for x in preview['layout']['header']}
+                  assert all(code+' ' in header['Standard Kandungan'] for code in row['sk'])
+                  assert all(code+' ' in header['Standard Pembelajaran'] for code in row['sp'])
+                  assert preview['approved_for_live'] is False
+                  for key in ('objective','induction','act1','act2','assessment','closure','materials'):
+                      assert preview['phase_text'][key].strip(), (year,pdp,key)
+                  total += 1
+          assert total == 175
+          print('175/175 RPH source candidates checked; publication remains on hold')
+          PY
