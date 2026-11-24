@@ -155,7 +155,7 @@ class WebNativePdPBridgeTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 _selection(6, "MATH_DLP", new["value"])
 
-    def test_web_options_list_one_sk_math_and_accept_it_in_rph_pantas(self):
+    def test_web_options_list_both_sk_math_editions_and_accept_dpk_in_rph_pantas(self):
         from tools.run_web_v1_preview import app
 
         config = {"CIKGULAJU_WEB_SESSION_SECRET": "local-test-secret", "account_backend": "supabase"}
@@ -178,8 +178,9 @@ class WebNativePdPBridgeTests(unittest.TestCase):
             for year in (2, 3):
                 response = client.get("/api/options", query_string={"kind": "subjects", "year": year})
                 self.assertEqual(response.status_code, 200, response.json)
-                self.assertEqual([row for row in response.json if row["label"] == "Matematik"],
-                                 [{"value": "MATH_DPK3", "label": "Matematik"}])
+                self.assertEqual([row for row in response.json if row["value"] in {"MATH","MATH_DPK3"}],
+                                 [{"value":"MATH","label":"Matematik SK"},
+                                  {"value":"MATH_DPK3","label":"Matematik SK (DPK Edisi 3)"}])
             response = client.get("/api/options", query_string={
                 "kind": "pdp", "year": 2, "subject": "MATH_DPK3", "unit": "d123", "rph_today": "1",
             })
