@@ -1,0 +1,24 @@
+name: SK Arabic RPT current source alignment
+on:
+  pull_request:
+    paths:
+      - 'tools/sk_arabic_rpt_alignment_20261124.py'
+      - 'audits/sk_arabic_rpt_index_revision_delta_20261124.json'
+      - '.github/workflows/sk-arabic-rpt-alignment-20261124.yml'
+      - 'rph_standalone/bahasa_arab/**'
+      - 'rpt_2027/bahasa_arab/**'
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python tools/sk_arabic_rpt_alignment_20261124.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: arabic-sk-rpt-rph-alignment
+          path: qa-arabic-rpt/
+          retention-days: 7
