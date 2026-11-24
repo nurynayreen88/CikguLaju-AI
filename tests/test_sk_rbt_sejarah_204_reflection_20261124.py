@@ -22,9 +22,17 @@ def test_all_204():
                 evidence = re.split(r";\s*guru menilai\b", criterion.strip(), maxsplit=1, flags=re.I)[0].rstrip(". ")
                 assert evidence in out["REFLEKSI"], (module.SUBJECT,year,pdp)
                 assert out["REFLEKSI"].startswith("____ / ____")
-                assert out["KRITERIA KEJAYAAN"] == criterion
                 expected_sp = row["sp_description"] if module is rbt else row["sp_text"]
                 assert out["STANDARD PEMBELAJARAN"].splitlines() == expected_sp.split(" · "), (module.SUBJECT,year,pdp)
+                assert out["KRITERIA KEJAYAAN"] == criterion
+                if module is rbt:
+                    bbm = out["BAHAN BANTU MENGAJAR"]
+                    if year == 4 and pdp in (1, 2, 3):
+                        assert bbm == row["bbm"], (year,pdp,bbm)
+                        assert "Buku Teks hlm." in bbm
+                    else:
+                        assert "cadangan halaman, perlu semak visual" in bbm
+                    assert not row["review"]["release_ready"]
                 assert out["KELAS"] == original["KELAS"] and out["TARIKH"] == ""
                 assert "DRAF" in out["TAJUK"]
                 assert not re.search(r"PdP\s+\d{3}\b",out["TAJUK"],re.I)

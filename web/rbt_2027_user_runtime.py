@@ -93,6 +93,19 @@ def adapt_rows(state, previous, *, root=ROOT):
     )
     if not page_str:
         page_str = ", ".join(map(str, refs.get("calon_muka_surat_teks_digital", [])))
+    # Exact three source-reviewed lessons in
+    # audits/rbt_tahun_4_unit_1_semakan_visual_20261120.md.
+    # Keep their existing BBM wording. No automatic promotion of draft status.
+    visual_evidence = {
+        (4, 1): (("1.1.1", "1.1.2"), (4, 7)),
+        (4, 2): (("1.1.3",), (9,)),
+        (4, 3): (("1.1.4", "1.1.5"), (11, 12)),
+    }
+    expected = visual_evidence.get((row["tahun"], row["pdp"]))
+    evidence = (tuple(row["sp_codes"]), tuple(refs.get("calon_muka_surat_teks_digital") or ()))
+    bbm = row["bbm"]
+    if expected is None or evidence != expected:
+        bbm += ". Buku Teks RBT Tahun " + str(row["tahun"]) + ": " + page_str + " (cadangan halaman, perlu semak visual)."
     title = re.sub(r"^PdP\s+\d+\s*[:—–-]\s*", "", row["tajuk"], flags=re.I)
     out = dict(previous)
     out.update({
@@ -104,9 +117,7 @@ def adapt_rows(state, previous, *, root=ROOT):
         "OBJEKTIF PEMBELAJARAN": row["objektif"],
         "KRITERIA KEJAYAAN": row["kriteria_kejayaan"],
         "PENGETAHUAN SEDIA ADA": f'Pengalaman murid berkaitan {row["unit_label"]}.',
-        "BAHAN BANTU MENGAJAR": (row["bbm"] + ". Buku Teks RBT Tahun " +
-                                  str(row["tahun"]) + ": " + page_str +
-                                  " (cadangan halaman, perlu semak visual)."),
+        "BAHAN BANTU MENGAJAR": bbm,
         "EMK / NILAI": "Kreativiti dan inovasi; kerjasama; keselamatan.",
         "KBAT / PAK21": "Penyelesaian masalah reka bentuk; menilai fungsi; komunikasi.",
         "SET INDUKSI": l["set_induksi"]["aktiviti"],
