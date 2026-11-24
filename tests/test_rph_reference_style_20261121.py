@@ -50,6 +50,7 @@ def test_ten_sk_subjects_only_change_word_presentation():
     for subject in (
         "Bahasa Melayu", "English", "Matematik", "Pendidikan Islam",
         "Sejarah", "Pendidikan Muzik", "Pendidikan Jasmani dan Pendidikan Kesihatan",
+        "Pendidikan Jasmani", "Pendidikan Kesihatan",
         "Pendidikan Moral", "Pendidikan Seni Visual", "Reka Bentuk dan Teknologi",
     ):
         fill = color_for_state({"task": "rph", "subject": subject})
