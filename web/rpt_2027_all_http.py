@@ -337,7 +337,7 @@ def catalog_data(*,root=ROOT, allowed=True, personalization_allowed=False):
         "allowed":bool(allowed),
         "personalization_allowed":bool(personalization_allowed),
         "subjects":subjects,
-        "total_rpt":56+dlp_count+sjk_count,
+        "total_rpt":56+dlp_count+sjk_count+len(dpk_entries),
         "total_display_choices":sum(len(item["years"]) for item in subjects),
         "year1_coming_soon":10,
         "available_rpt":available+dlp_count+sjk_count+len(dpk_entries),
