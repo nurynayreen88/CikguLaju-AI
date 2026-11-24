@@ -199,6 +199,31 @@ def main():
         priority=[x for x in candidate_bank if x["same_candidate_as_another_pdp"] or x["reference_review_type"]=="TEXTBOOK_PAGE_MISSING_REVIEW"]
         (out/"priority_duplicate_or_missing_reference.json").write_text(json.dumps({"status":"QA_HOLD_NOT_FOR_RUNTIME","records":priority},ensure_ascii=False,indent=2)+"\n",encoding="utf8")
         print("PI_RESIDUAL_REVIEW",json.dumps({"total":len(residual_review),"by_reason":dict(Counter(x["reason"] for x in residual_review)),"by_year":dict(Counter(x["year"] for x in residual_review)),"priority_duplicate_or_missing_reference":len(priority),"ready":0}),flush=True)
+        # Select the next source-grounded editorial batch, excluding all staged IDs.
+        staged_ids=set()
+        for staged_file in sorted(Path("staging/pendidikan_islam").glob("active_activity_editorial_batch*_20261125.json")):
+            staged=json.loads(staged_file.read_text(encoding="utf8"))
+            for item in staged["records"]:
+                assert item["id"] not in staged_ids, ("duplicate editorial ID",item["id"])
+                staged_ids.add(item["id"])
+        next_queue=[]
+        for year in range(2,7):
+            eligible=[x for x in candidate_bank+residual_review if x["year"]==year and x["id"] not in staged_ids]
+            # Prioritize identical candidate activity blocks, then missing references;
+            # use round-robin by field rather than selecting only one field.
+            grouped=defaultdict(list)
+            for item in sorted(eligible,key=lambda x:(not x.get("same_candidate_as_another_pdp",False),x.get("reference_review_type")!="TEXTBOOK_PAGE_MISSING_REVIEW",x["pdp"])):
+                grouped[item["unit"]].append(item)
+            selected=[]
+            while len(selected)<12 and any(grouped.values()):
+                for unit in sorted(grouped):
+                    if grouped[unit] and len(selected)<12:
+                        selected.append(grouped[unit].pop(0))
+            next_queue.extend(selected)
+        (out/"next_editorial_batch.json").write_text(json.dumps({"status":"QA_HOLD_NOT_FOR_RUNTIME","records":next_queue},ensure_ascii=False,indent=2)+"\n",encoding="utf8")
+        print("PI_NEXT_EDITORIAL_BATCH",json.dumps({"staged_ids":len(staged_ids),"total":len(next_queue),"years":dict(Counter(x["year"] for x in next_queue))},ensure_ascii=False),flush=True)
+        for item in next_queue:
+            print("PI_NEXT_EDITORIAL_SOURCE",json.dumps({k:item.get(k) for k in ("id","year","pdp","unit","objective","source_note","sk_codes","sp_codes","textbook_pages_claim","dskp_text_layer_pages_by_sp","reference_review_type")},ensure_ascii=False),flush=True)
         # Produce source-specific recitation candidates only when the objective
         # gives an explicit surah + numbered verse range. Keep exact original
         # source notes and existing candidates for comparison; never invent verses.
