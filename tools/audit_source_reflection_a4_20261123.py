@@ -116,6 +116,68 @@ def check_one(runtime, path, row, code, output_dir):
     return source_label
 
 
+
+def check_pi_all_years(runtime, db_path, output_dir):
+    """Real native source samples across every available KSSR PI year 2–6."""
+    import fitz
+    from docx.oxml.ns import qn
+    from web.rph_pi_jawi_numerals_20261124 import jawi_display_digits
+    failures = []
+    report = []
+    with sqlite3.connect(db_path.resolve().as_uri()+"?mode=ro", uri=True) as db:
+        db.row_factory = sqlite3.Row
+        for year in range(2, 7):
+            records = [dict(row) for row in db.execute(
+                "SELECT * FROM rpt_entries WHERE subject=? AND year_label=? AND verified=1 ORDER BY id",
+                ("Pendidikan Islam", f"Tahun {year}"))]
+            if not records:
+                failures.append((year, "no verified source"))
+                continue
+            for index in sorted({0, len(records)//2, len(records)-1}):
+                row = records[index]
+                word = pdf = None
+                try:
+                    state = _native_state(runtime, {
+                        "year": year, "subject": "PI", "unit": pi_navigation_unit(row),
+                        "lesson": int(row["id"])
+                    }, {"class": "", "date": "", "time": "", "students": "", "reflection": ""})
+                    native = _native_text(runtime, state)
+                    rows = runtime._rph_rows(state, native)
+                    assert rows.get("AKTIVITI UTAMA"), "missing activity"
+                    assert rows.get("REFLEKSI"), "missing reflection"
+                    unique = "pibulk" + uuid.uuid4().hex[:14]
+                    word = Path(runtime.create_word_file(state, native, unique))
+                    pdf = Path(runtime.create_pdf_file(state, native, unique+"p"))
+                    doc, text = _all_word_text(word)
+                    assert jawi_display_digits(text) == text, "European numerals in Word"
+                    header = doc.tables[0]
+                    assert header._tbl.tblPr.find(qn("w:bidiVisual")) is not None
+                    assert "ڤنديديقن اسلام" in header.cell(0,0).text
+                    assert "کلس" in header.cell(0,1).text
+                    titles = [p for p in doc.paragraphs if p.text.strip() == "رنچڠن ڤڠاجرن هارين"]
+                    assert len(titles) == 1 and titles[0].alignment == 1, "title not centred"
+                    with fitz.open(str(pdf)) as book:
+                        assert len(book) >= 1
+                        for page in book:
+                            assert 594 < page.rect.width < 597 and 840 < page.rect.height < 844
+                        pages = len(book)
+                    name = f"PI_T{year}_ID{row['id']}"
+                    shutil.copy2(word, output_dir / (name+".docx"))
+                    shutil.copy2(pdf, output_dir / (name+".pdf"))
+                    report.append((year, row["id"], pages))
+                    print("PI_YEAR_SAMPLE_PASS", year, row["id"], pages, flush=True)
+                except Exception as exc:
+                    failures.append((year, row["id"], type(exc).__name__, str(exc)[:180]))
+                finally:
+                    if word is not None:
+                        word.unlink(missing_ok=True)
+                    if pdf is not None:
+                        pdf.unlink(missing_ok=True)
+    print("PI_YEAR_SAMPLE_REPORT", report, "FAILURES", failures, flush=True)
+    assert not failures, failures
+    assert {year for year, _, _ in report} == set(range(2,7))
+
+
 def main():
     from tools import run_telegram_with_curriculum_api as live
     runtime = live.telegram_runtime
@@ -151,6 +213,7 @@ def main():
                     errors.append((row.get("id") or row.get("source_sequence_no") or row.get("topic"), type(exc).__name__, str(exc)[:150]))
             if not checked:
                 raise AssertionError(("No verified " + code + " candidate fits one-page RPH", errors[:8]))
+        check_pi_all_years(runtime, db_path, output_dir)
     finally:
         tmp.cleanup()
 
