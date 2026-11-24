@@ -52,6 +52,35 @@ def ready():
     try:approved_source();return True
     except (Unavailable,OSError):return False
 
+# Reviewed first-occurrence source rows: demonstration, guided practice,
+# then application. These are original activities, not generated replacements.
+_ACTIVITY_ORDER_ANCHORS = {
+    "1.1.1": 1, "2.1.1": 2, "3.1.1": 3, "4.1.1": 4,
+    "3.1.2": 5, "2.1.2": 6, "1.1.2": 13, "4.1.2": 16,
+    "3.1.3": 17, "1.1.3": 23, "2.1.3": 24, "4.1.3": 26,
+    "3.2.1": 27, "1.2.1": 28, "2.2.1": 29, "4.2.1": 31,
+    "3.2.2": 32, "2.2.2": 33, "1.2.2": 40, "4.2.2": 43,
+    "3.2.3": 44, "2.3.1": 45, "1.2.3": 52, "2.3.2": 57,
+    "1.2.4": 63, "2.3.3": 69,
+}
+
+
+def _ordered_activities(record, source):
+    """Only restore reviewed ordering when all three original steps match."""
+    anchor_no = _ACTIVITY_ORDER_ANCHORS.get(record.get("sp_code"))
+    anchor = source.get("A", {}).get(str(anchor_no), {})
+    original = record.get("activities")
+    preferred = anchor.get("activities")
+    if (anchor.get("sp_code") != record.get("sp_code")
+            or not isinstance(original, list) or not isinstance(preferred, list)
+            or len(original) != 3 or len(preferred) != 3
+            or not all(isinstance(step, str) for step in original + preferred)
+            or sorted(original) != sorted(preferred)
+            or original == preferred):
+        return record
+    return {**record, "activities": list(preferred)}
+
+
 def lesson(group,n):
     if group not in COUNTS or type(n) is not int or not 1<=n<=COUNTS[group]:
         raise Unavailable('Pilihan PdP BM SK tidak sah')
@@ -66,8 +95,8 @@ def lesson(group,n):
                 "Menulis ayat secara mekanis dengan betulnya dan kemasnya."),
     }.get(record["sk_code"])
     if corrected and record["sk"] == corrected[0]:
-        return {**record, "sk": corrected[1]}
-    return record
+        record = {**record, "sk": corrected[1]}
+    return _ordered_activities(record, approved_source())
 
 def _safe_value(fields,key):
     return fields.get(key,'') or ''
