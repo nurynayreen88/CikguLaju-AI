@@ -16,6 +16,7 @@ SUBJECTS = (
     "Bahasa Melayu", "English", "Matematik", "Pendidikan Islam",
     "Sejarah", "Pendidikan Muzik",
     "Pendidikan Jasmani dan Pendidikan Kesihatan",
+    "Pendidikan Jasmani", "Pendidikan Kesihatan",
     "Pendidikan Moral", "Pendidikan Seni Visual", "Reka Bentuk dan Teknologi",
 )
 
