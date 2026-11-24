@@ -1,0 +1,26 @@
+name: KP2027 PJ 127 RPH native Word PDF QA
+on:
+  pull_request:
+    paths:
+      - 'audits/kp2027_pj_t1_127_rph_structured_candidates_20261124.json'
+      - 'tools/kp2027_pj_127_rph_qa.py'
+      - 'tools/kp2027_bmsjk_qa_word_pdf.py'
+      - '.github/workflows/kp2027-pj-127-rph-word-pdf-qa-20261124.yml'
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install python-docx reportlab pymupdf
+      - run: python -m tools.kp2027_pj_127_rph_qa --out-dir /tmp/pj-qa
+      - run: python -m tools.kp2027_bmsjk_qa_word_pdf --out-dir /tmp/bmsjk-regression
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pj-127-rph-word-pdf-qa
+          path: /tmp/pj-qa
+          retention-days: 7

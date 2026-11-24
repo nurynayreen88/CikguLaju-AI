@@ -1,0 +1,2066 @@
+{
+  "status": "QA_STRUCTURE_ONLY_NOT_ACADEMIC_APPROVAL",
+  "source": "audits/kp2027_pj_t1_127_rph_structured_candidates_20261124.json",
+  "source_blob_sha": "b0f46374c9cf90cdb9345f6ca90ffe01b4f427e0",
+  "notes": "Automated structural presence and textual uniqueness only; not verification of DK wording, individual SP pedagogy, academic approval, dates, or live materials. Existing RPH, RPT and separate Akuatik V2 unchanged.",
+  "groups": {
+    "A": {
+      "count": 64,
+      "complete_pka": 64,
+      "distinct_titles": 64,
+      "distinct_criteria": 64,
+      "failures": [],
+      "rows": [
+        {
+          "pdp": 1,
+          "title": "Bentuk dan layangan",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 2,
+          "title": "Imbangan dan pindah berat",
+          "domain_counts": {
+            "P": 1,
+            "K": 3,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 3,
+          "title": "Ruang diri dan ruang am",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 4,
+          "title": "Arah dan aras",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 5,
+          "title": "Laluan lurus dan lengkok",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 6,
+          "title": "Laluan lingkar dan zig-zag",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 7,
+          "title": "Lampu isyarat kelajuan",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 8,
+          "title": "Gerak pelbagai daya",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 9,
+          "title": "Rakan dan alatan: arah dan aras",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 10,
+          "title": "Rakan dan alatan: jarak",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 11,
+          "title": "Stesen lokomotor",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 2
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 12,
+          "title": "Lompat tali bergilir",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 13,
+          "title": "Langkah ikut tempo",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 14,
+          "title": "Imbangan gerak setempat",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 15,
+          "title": "Gerak dalam kehidupan",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 16,
+          "title": "Gerak setempat ikut rentak",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 17,
+          "title": "Cermin muzik",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 18,
+          "title": "Watak dalam lagu",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 19,
+          "title": "Watak kreatif",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 20,
+          "title": "Empat kiraan lokomotor",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 21,
+          "title": "Gerak empat kiraan digital",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 22,
+          "title": "Jejak haiwan",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 23,
+          "title": "Imbangan sisi dan depan",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 24,
+          "title": "Imbangan kaki belakang",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 25,
+          "title": "Bilangan tapak sokongan",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 26,
+          "title": "Imbangan songsang lejang",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 27,
+          "title": "Putaran 90 darjah",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 28,
+          "title": "Putaran 180 darjah",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 29,
+          "title": "Guling balak",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 30,
+          "title": "Guling sisi",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 31,
+          "title": "Guling depan tuck",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 32,
+          "title": "Baling sasaran dekat",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 33,
+          "title": "Baling pelbagai arah",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 34,
+          "title": "Lambung dan tangkap",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 35,
+          "title": "Tangkap bola besar",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 36,
+          "title": "Lantun bola setempat",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 37,
+          "title": "Lantun sambil berjalan",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 38,
+          "title": "Gelecek dalam kaki",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 39,
+          "title": "Tendang bola pegun",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 40,
+          "title": "Pukul dengan tangan",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 41,
+          "title": "Pukul dengan raket pendek",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 42,
+          "title": "Pukul bola leret",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 43,
+          "title": "Pukul di tee",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 44,
+          "title": "Datuk Harimau: peraturan",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 45,
+          "title": "Datuk Harimau: giliran",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 46,
+          "title": "Congkak",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 47,
+          "title": "Bina objek bertema",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 48,
+          "title": "Arah jam analog",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 49,
+          "title": "Arah jam berpasangan",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 50,
+          "title": "Mencari harta karun",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 51,
+          "title": "Keyakinan dalam air",
+          "domain_counts": {
+            "P": 1,
+            "K": 4,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": true,
+          "aquatic_conditions": {
+            "supervision": true,
+            "assessment_conditional": true,
+            "separate_v2": true
+          }
+        },
+        {
+          "pdp": 52,
+          "title": "Memanaskan badan",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 2
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 53,
+          "title": "Banding pemanasan dan penyejukan",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 54,
+          "title": "Menyejukkan badan",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 55,
+          "title": "Amalan minum air",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 56,
+          "title": "Aerobik: jantung dan paru-paru",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 57,
+          "title": "Aerobik: stesen gerak",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 58,
+          "title": "Regangan dinamik dan statik",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 59,
+          "title": "Daya tahan otot",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 60,
+          "title": "Duduk ke berdiri",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 61,
+          "title": "Baring ke duduk dan berdiri",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 62,
+          "title": "Ukur pertumbuhan peribadi",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 63,
+          "title": "Rekod pertumbuhan diri",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 64,
+          "title": "BMI 5-9T",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        }
+      ]
+    },
+    "B": {
+      "count": 63,
+      "complete_pka": 63,
+      "distinct_titles": 63,
+      "distinct_criteria": 63,
+      "failures": [],
+      "rows": [
+        {
+          "pdp": 1,
+          "title": "Bentuk dan layangan",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 2,
+          "title": "Imbangan dan pindah berat",
+          "domain_counts": {
+            "P": 1,
+            "K": 3,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 3,
+          "title": "Ruang diri dan ruang am",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 4,
+          "title": "Arah dan aras",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 5,
+          "title": "Laluan lurus dan lengkok",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 6,
+          "title": "Laluan lingkar dan zig-zag",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 7,
+          "title": "Lampu isyarat kelajuan",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 8,
+          "title": "Gerak pelbagai daya",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 9,
+          "title": "Rakan dan alatan: arah dan aras",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 10,
+          "title": "Rakan dan alatan: jarak",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 11,
+          "title": "Stesen lokomotor",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 2
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 12,
+          "title": "Lompat tali bergilir",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 13,
+          "title": "Langkah ikut tempo",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 14,
+          "title": "Imbangan gerak setempat",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 15,
+          "title": "Gerak dalam kehidupan",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 16,
+          "title": "Gerak setempat ikut rentak",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 17,
+          "title": "Cermin muzik",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 18,
+          "title": "Watak dalam lagu",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 19,
+          "title": "Watak kreatif",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 20,
+          "title": "Empat kiraan lokomotor",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 21,
+          "title": "Gerak empat kiraan digital",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 22,
+          "title": "Jejak haiwan",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 23,
+          "title": "Imbangan sisi dan depan",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 24,
+          "title": "Imbangan kaki belakang",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 25,
+          "title": "Bilangan tapak sokongan",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 26,
+          "title": "Imbangan songsang lejang",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 27,
+          "title": "Putaran 90 darjah",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 28,
+          "title": "Putaran 180 darjah",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 29,
+          "title": "Guling balak",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 30,
+          "title": "Guling sisi",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 31,
+          "title": "Guling depan tuck",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 32,
+          "title": "Baling sasaran dekat",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 33,
+          "title": "Baling pelbagai arah",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 34,
+          "title": "Lambung dan tangkap",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 35,
+          "title": "Tangkap bola besar",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 36,
+          "title": "Lantun bola setempat",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 37,
+          "title": "Gelecek dalam kaki",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 38,
+          "title": "Gelecek selekoh",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 39,
+          "title": "Tendang bola pegun",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 40,
+          "title": "Pukul dengan tangan dan raket",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 41,
+          "title": "Pukul bola leret",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 42,
+          "title": "Pukul di tee",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 43,
+          "title": "Datuk Harimau: peraturan",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 44,
+          "title": "Datuk Harimau: giliran",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 45,
+          "title": "Congkak",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 46,
+          "title": "Bina objek bertema",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 47,
+          "title": "Arah jam analog",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 48,
+          "title": "Arah jam berpasangan",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 49,
+          "title": "Mencari harta karun",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 50,
+          "title": "Keyakinan dalam air",
+          "domain_counts": {
+            "P": 1,
+            "K": 4,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": true,
+          "aquatic_conditions": {
+            "supervision": true,
+            "assessment_conditional": true,
+            "separate_v2": true
+          }
+        },
+        {
+          "pdp": 51,
+          "title": "Memanaskan badan",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 2
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 52,
+          "title": "Banding pemanasan dan penyejukan",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 53,
+          "title": "Menyejukkan badan",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 54,
+          "title": "Amalan minum air",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 55,
+          "title": "Aerobik: jantung dan paru-paru",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 56,
+          "title": "Aerobik: stesen gerak",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 57,
+          "title": "Regangan dinamik dan statik",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 58,
+          "title": "Daya tahan otot",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 59,
+          "title": "Duduk ke berdiri",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 60,
+          "title": "Baring ke duduk dan berdiri",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 61,
+          "title": "Ukur pertumbuhan peribadi",
+          "domain_counts": {
+            "P": 1,
+            "K": 2,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 62,
+          "title": "Rekod pertumbuhan diri",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        },
+        {
+          "pdp": 63,
+          "title": "BMI 5-9T",
+          "domain_counts": {
+            "P": 1,
+            "K": 1,
+            "A": 1
+          },
+          "primary_in_standards": true,
+          "three_distinct_activities": true,
+          "criteria_present": true,
+          "pbd_present": true,
+          "safety_present": true,
+          "is_aquatic": false,
+          "aquatic_conditions": null
+        }
+      ]
+    }
+  }
+}

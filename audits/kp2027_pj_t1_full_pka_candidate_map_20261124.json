@@ -1,0 +1,2534 @@
+{
+  "status": "QA_FULL_CANDIDATE_MAP_NOT_READY",
+  "source_map": "audits/kp2027_pj_t1_rpt_127_pdp_source_map_20261124.json",
+  "source_isbn": "978-967-420-807-3",
+  "notes": [
+    "No production changes. Original primary SP and PdP numbers retained. Every K/A code must have lesson-specific evidence before publication. This map is a coverage-checked candidate, not proof of full pedagogical alignment or mastery.",
+    "For aquatics, gymnastics and BMI follow school safety/privacy procedures; do not fabricate practical mastery or lesson dates. No textbook references."
+  ],
+  "groups": {
+    "A": {
+      "count": 64,
+      "distinct_sp": 167,
+      "all_domains": 64,
+      "changed_mappings": 54,
+      "rows": [
+        {
+          "pdp": 1,
+          "primary_sp": "P1.1.1",
+          "original_sp": [
+            "P1.1.1",
+            "K1.1.1",
+            "A1.1.1"
+          ],
+          "candidate_sp": [
+            "P1.1.1",
+            "K1.1.1",
+            "K1.1.5",
+            "A1.1.1"
+          ],
+          "focus_evidence": "Bentuk badan dan layangan rendah; namakan bentuk serta pergerakan yang menghasilkan layangan.",
+          "dk_pages": [
+            24,
+            25
+          ],
+          "date": null
+        },
+        {
+          "pdp": 2,
+          "primary_sp": "P1.1.1",
+          "original_sp": [
+            "P1.1.1",
+            "K1.1.2",
+            "A1.1.2"
+          ],
+          "candidate_sp": [
+            "P1.1.1",
+            "K1.1.2",
+            "K1.1.3",
+            "K1.1.4",
+            "A1.1.2"
+          ],
+          "focus_evidence": "Imbangan dan pindah berat pada permukaan rata; tunjuk bahagian badan yang menyokong dan memindah berat.",
+          "dk_pages": [
+            24
+          ],
+          "date": null
+        },
+        {
+          "pdp": 3,
+          "primary_sp": "P1.1.2",
+          "original_sp": [
+            "P1.1.2",
+            "K1.1.3",
+            "A1.1.3"
+          ],
+          "candidate_sp": [
+            "P1.1.2",
+            "K1.1.6",
+            "A1.1.3"
+          ],
+          "focus_evidence": "Bergerak dalam ruang diri dan ruang am yang ditandakan; bezakan kedua-duanya.",
+          "dk_pages": [
+            24,
+            25
+          ],
+          "date": null
+        },
+        {
+          "pdp": 4,
+          "primary_sp": "P1.1.3",
+          "original_sp": [
+            "P1.1.3",
+            "K1.1.4",
+            "A1.1.4"
+          ],
+          "candidate_sp": [
+            "P1.1.3",
+            "K1.1.7",
+            "A1.1.4"
+          ],
+          "focus_evidence": "Ikut arah dan aras melalui kad isyarat; tunjuk semula arah serta aras.",
+          "dk_pages": [
+            24,
+            25
+          ],
+          "date": null
+        },
+        {
+          "pdp": 5,
+          "primary_sp": "P1.1.4",
+          "original_sp": [
+            "P1.1.4",
+            "K1.1.5",
+            "A1.1.5"
+          ],
+          "candidate_sp": [
+            "P1.1.4",
+            "K1.1.8",
+            "A1.1.5"
+          ],
+          "focus_evidence": "Berjalan melalui laluan lurus dan berlengkok; lakar laluan dengan jari atau pensel.",
+          "dk_pages": [
+            25
+          ],
+          "date": null
+        },
+        {
+          "pdp": 6,
+          "primary_sp": "P1.1.4",
+          "original_sp": [
+            "P1.1.4",
+            "K1.1.6",
+            "A1.1.6"
+          ],
+          "candidate_sp": [
+            "P1.1.4",
+            "K1.1.8",
+            "A1.1.6"
+          ],
+          "focus_evidence": "Berjalan melalui laluan lingkar dan zig-zag; terangkan lakaran kepada rakan.",
+          "dk_pages": [
+            25
+          ],
+          "date": null
+        },
+        {
+          "pdp": 7,
+          "primary_sp": "P1.1.5",
+          "original_sp": [
+            "P1.1.5",
+            "K1.1.7"
+          ],
+          "candidate_sp": [
+            "P1.1.5",
+            "K1.1.9",
+            "A1.1.3"
+          ],
+          "focus_evidence": "Lampu isyarat kelajuan; bezakan laju dengan perlahan.",
+          "dk_pages": [
+            24,
+            25,
+            26
+          ],
+          "date": null
+        },
+        {
+          "pdp": 8,
+          "primary_sp": "P1.1.6",
+          "original_sp": [
+            "P1.1.6",
+            "K1.1.8",
+            "A1.1.7"
+          ],
+          "candidate_sp": [
+            "P1.1.6",
+            "K1.1.10",
+            "A1.1.7"
+          ],
+          "focus_evidence": "Tunjuk contoh pergerakan ringan, berat, kuat, lemah, kasar dan lembut tanpa perlanggaran.",
+          "dk_pages": [
+            25,
+            26
+          ],
+          "date": null
+        },
+        {
+          "pdp": 9,
+          "primary_sp": "P1.1.7",
+          "original_sp": [
+            "P1.1.7",
+            "K1.1.9",
+            "A1.2.1"
+          ],
+          "candidate_sp": [
+            "P1.1.7",
+            "K1.1.11",
+            "A1.1.2"
+          ],
+          "focus_evidence": "Gerak berpasangan dengan alatan pada arah dan aras berlainan; namakan hubungan gerak.",
+          "dk_pages": [
+            24,
+            26
+          ],
+          "date": null
+        },
+        {
+          "pdp": 10,
+          "primary_sp": "P1.1.7",
+          "original_sp": [
+            "P1.1.7",
+            "K1.1.10",
+            "A1.2.2"
+          ],
+          "candidate_sp": [
+            "P1.1.7",
+            "K1.1.11",
+            "A1.1.7"
+          ],
+          "focus_evidence": "Gerak berpasangan dengan alatan pada jarak dan ruang berlainan; nyatakan contoh hubungan.",
+          "dk_pages": [
+            25,
+            26
+          ],
+          "date": null
+        },
+        {
+          "pdp": 11,
+          "primary_sp": "P1.2.1",
+          "original_sp": [
+            "P1.2.1",
+            "A1.2.3"
+          ],
+          "candidate_sp": [
+            "P1.2.1",
+            "K1.2.1",
+            "K1.2.2",
+            "A1.2.3",
+            "A1.2.4"
+          ],
+          "focus_evidence": "Stesen gerak lokomotor mengikut kesediaan; kenal teknik dan kegunaan harian melalui contoh digital guru.",
+          "dk_pages": [
+            29
+          ],
+          "date": null
+        },
+        {
+          "pdp": 12,
+          "primary_sp": "P1.2.2",
+          "original_sp": [
+            "P1.2.2",
+            "K1.1.11",
+            "A1.2.4"
+          ],
+          "candidate_sp": [
+            "P1.2.2",
+            "K1.2.3",
+            "A1.2.2"
+          ],
+          "focus_evidence": "Latihan lompat tali bertahap dengan guru; kenal masa mula melompat.",
+          "dk_pages": [
+            29
+          ],
+          "date": null
+        },
+        {
+          "pdp": 13,
+          "primary_sp": "P1.2.3",
+          "original_sp": [
+            "P1.2.3",
+            "K1.2.1"
+          ],
+          "candidate_sp": [
+            "P1.2.3",
+            "K1.2.4",
+            "A1.2.1"
+          ],
+          "focus_evidence": "Bergerak mengikut tepukan dua tempo; bezakan tempo.",
+          "dk_pages": [
+            29,
+            30
+          ],
+          "date": null
+        },
+        {
+          "pdp": 14,
+          "primary_sp": "P1.2.4",
+          "original_sp": [
+            "P1.2.4",
+            "K1.2.2",
+            "A1.2.5"
+          ],
+          "candidate_sp": [
+            "P1.2.4",
+            "K1.2.5",
+            "K1.2.6",
+            "A1.2.5"
+          ],
+          "focus_evidence": "Gerak bukan lokomotor dalam ruang sendiri; jelaskan cara bergerak dan mengimbang; permainan kecil tanpa penyingkiran.",
+          "dk_pages": [
+            30
+          ],
+          "date": null
+        },
+        {
+          "pdp": 15,
+          "primary_sp": "P1.2.4",
+          "original_sp": [
+            "P1.2.4",
+            "K1.2.3",
+            "A1.2.6"
+          ],
+          "candidate_sp": [
+            "P1.2.4",
+            "K1.2.5",
+            "K1.2.8",
+            "A1.2.6"
+          ],
+          "focus_evidence": "Gerak bukan lokomotor berpandu; kenal kegunaan harian melalui contoh digital guru dan berbincang.",
+          "dk_pages": [
+            30,
+            31
+          ],
+          "date": null
+        },
+        {
+          "pdp": 16,
+          "primary_sp": "P1.2.5",
+          "original_sp": [
+            "P1.2.5",
+            "K1.2.4",
+            "A1.2.7"
+          ],
+          "candidate_sp": [
+            "P1.2.5",
+            "K1.2.7",
+            "A1.2.7"
+          ],
+          "focus_evidence": "Gerak setempat mengikut dua tempo secara berpasangan; bezakan tempo.",
+          "dk_pages": [
+            30
+          ],
+          "date": null
+        },
+        {
+          "pdp": 17,
+          "primary_sp": "P1.3.1",
+          "original_sp": [
+            "P1.3.1",
+            "K1.2.5",
+            "A1.3.1"
+          ],
+          "candidate_sp": [
+            "P1.3.1",
+            "K1.3.1",
+            "A1.3.1"
+          ],
+          "focus_evidence": "Cermin muzik; kenal arah kanan dan kiri.",
+          "dk_pages": [
+            33
+          ],
+          "date": null
+        },
+        {
+          "pdp": 18,
+          "primary_sp": "P1.3.2",
+          "original_sp": [
+            "P1.3.2",
+            "K1.2.6",
+            "A1.3.2"
+          ],
+          "candidate_sp": [
+            "P1.3.2",
+            "K1.3.2",
+            "A1.3.2"
+          ],
+          "focus_evidence": "Tiru watak mengikut lirik; namakan watak.",
+          "dk_pages": [
+            33
+          ],
+          "date": null
+        },
+        {
+          "pdp": 19,
+          "primary_sp": "P1.3.2",
+          "original_sp": [
+            "P1.3.2",
+            "K1.2.7"
+          ],
+          "candidate_sp": [
+            "P1.3.2",
+            "K1.3.2",
+            "A1.3.3"
+          ],
+          "focus_evidence": "Tiru watak lain mengikut muzik; namakan watak dan cuba dengan yakin.",
+          "dk_pages": [
+            33
+          ],
+          "date": null
+        },
+        {
+          "pdp": 20,
+          "primary_sp": "P1.3.3",
+          "original_sp": [
+            "P1.3.3",
+            "K1.2.8",
+            "A1.3.3"
+          ],
+          "candidate_sp": [
+            "P1.3.3",
+            "K1.3.3",
+            "A1.3.5"
+          ],
+          "focus_evidence": "Langkah lokomotor empat kiraan bersama pasangan; namakan gerakan.",
+          "dk_pages": [
+            33,
+            34
+          ],
+          "date": null
+        },
+        {
+          "pdp": 21,
+          "primary_sp": "P1.3.4",
+          "original_sp": [
+            "P1.3.4",
+            "A1.3.4"
+          ],
+          "candidate_sp": [
+            "P1.3.4",
+            "K1.3.3",
+            "A1.3.4"
+          ],
+          "focus_evidence": "Carian gerakan empat kiraan dengan peranti guru, tiru dan rakam dengan izin; kenal gerakan.",
+          "dk_pages": [
+            33,
+            34
+          ],
+          "date": null
+        },
+        {
+          "pdp": 22,
+          "primary_sp": "P1.4.1",
+          "original_sp": [
+            "P1.4.1",
+            "K1.3.1",
+            "A1.3.5"
+          ],
+          "candidate_sp": [
+            "P1.4.1",
+            "K1.4.1",
+            "K1.4.2",
+            "A1.4.3"
+          ],
+          "focus_evidence": "Aksi haiwan rendah menggunakan beberapa bahagian badan; kenal bahagian badan dan haiwan.",
+          "dk_pages": [
+            36
+          ],
+          "date": null
+        },
+        {
+          "pdp": 23,
+          "primary_sp": "P1.4.2",
+          "original_sp": [
+            "P1.4.2",
+            "K1.3.2",
+            "A1.4.1"
+          ],
+          "candidate_sp": [
+            "P1.4.2",
+            "K1.4.3",
+            "A1.4.1"
+          ],
+          "focus_evidence": "Imbangan sebelah kaki ke sisi dan depan; kenal bahagian badan yang membantu kestabilan; pakaian sesuai.",
+          "dk_pages": [
+            36
+          ],
+          "date": null
+        },
+        {
+          "pdp": 24,
+          "primary_sp": "P1.4.2",
+          "original_sp": [
+            "P1.4.2",
+            "K1.3.3",
+            "A1.4.2"
+          ],
+          "candidate_sp": [
+            "P1.4.2",
+            "K1.4.3",
+            "A1.4.2"
+          ],
+          "focus_evidence": "Imbangan sebelah kaki ke belakang secara terkawal; kenal bantuan tangan dan kaki; semak alatan.",
+          "dk_pages": [
+            36
+          ],
+          "date": null
+        },
+        {
+          "pdp": 25,
+          "primary_sp": "P1.4.3",
+          "original_sp": [
+            "P1.4.3",
+            "K1.4.1"
+          ],
+          "candidate_sp": [
+            "P1.4.3",
+            "K1.4.4",
+            "A1.4.4"
+          ],
+          "focus_evidence": "Banding bilangan tapak sokongan dengan kestabilan; cabaran mengikut kemampuan.",
+          "dk_pages": [
+            36,
+            37
+          ],
+          "date": null
+        },
+        {
+          "pdp": 26,
+          "primary_sp": "P1.4.4",
+          "original_sp": [
+            "P1.4.4",
+            "K1.4.2",
+            "A1.4.3"
+          ],
+          "candidate_sp": [
+            "P1.4.4",
+            "K1.4.4",
+            "A1.4.3"
+          ],
+          "focus_evidence": "Imbangan songsang lejang hanya selepas prasyarat dan di bawah guru kompeten; bincang tapak sokongan.",
+          "dk_pages": [
+            36,
+            37
+          ],
+          "date": null
+        },
+        {
+          "pdp": 27,
+          "primary_sp": "P1.4.5",
+          "original_sp": [
+            "P1.4.5",
+            "K1.4.3",
+            "A1.4.4"
+          ],
+          "candidate_sp": [
+            "P1.4.5",
+            "K1.4.5",
+            "A1.4.2"
+          ],
+          "focus_evidence": "Putaran menegak 90 darjah di trampolin hanya dengan kemudahan sesuai dan pengawasan kompeten; kenal peranan anggota badan.",
+          "dk_pages": [
+            36,
+            37
+          ],
+          "date": null
+        },
+        {
+          "pdp": 28,
+          "primary_sp": "P1.4.5",
+          "original_sp": [
+            "P1.4.5",
+            "K1.4.4",
+            "A1.4.5"
+          ],
+          "candidate_sp": [
+            "P1.4.5",
+            "K1.4.5",
+            "A1.4.5"
+          ],
+          "focus_evidence": "Putaran menegak 180 darjah hanya selepas penguasaan prasyarat dan pengawasan kompeten; terangkan peranan anggota badan.",
+          "dk_pages": [
+            37
+          ],
+          "date": null
+        },
+        {
+          "pdp": 29,
+          "primary_sp": "P1.4.6",
+          "original_sp": [
+            "P1.4.6",
+            "K1.4.5",
+            "A1.4.6"
+          ],
+          "candidate_sp": [
+            "P1.4.6",
+            "K1.4.6",
+            "A1.4.6"
+          ],
+          "focus_evidence": "Guling balak di atas tikar dengan guru kompeten; kenal cara melalui sumber teknologi.",
+          "dk_pages": [
+            37,
+            38
+          ],
+          "date": null
+        },
+        {
+          "pdp": 30,
+          "primary_sp": "P1.4.7",
+          "original_sp": [
+            "P1.4.7",
+            "K1.4.6",
+            "A1.4.7"
+          ],
+          "candidate_sp": [
+            "P1.4.7",
+            "K1.4.6",
+            "A1.4.7"
+          ],
+          "focus_evidence": "Guling sisi di atas tikar dengan guru kompeten; kenal cara melalui sumber teknologi; hormati kemampuan rakan.",
+          "dk_pages": [
+            37,
+            38
+          ],
+          "date": null
+        },
+        {
+          "pdp": 31,
+          "primary_sp": "P1.4.8",
+          "original_sp": [
+            "P1.4.8"
+          ],
+          "candidate_sp": [
+            "P1.4.8",
+            "K1.4.6",
+            "A1.4.2"
+          ],
+          "focus_evidence": "Guling depan hanya di atas tikar dan dengan guru kompeten; kenal cara melalui sumber teknologi.",
+          "dk_pages": [
+            36,
+            38
+          ],
+          "date": null
+        },
+        {
+          "pdp": 32,
+          "primary_sp": "P2.1.1",
+          "original_sp": [
+            "P2.1.1",
+            "K2.1.1",
+            "A2.1.1"
+          ],
+          "candidate_sp": [
+            "P2.1.1",
+            "K2.1.1",
+            "A2.1.1"
+          ],
+          "focus_evidence": "Baling objek lembut ke sasaran; nyatakan cara membaling.",
+          "dk_pages": [
+            44
+          ],
+          "date": null
+        },
+        {
+          "pdp": 33,
+          "primary_sp": "P2.1.1",
+          "original_sp": [
+            "P2.1.1",
+            "K2.1.2",
+            "A2.1.2"
+          ],
+          "candidate_sp": [
+            "P2.1.1",
+            "K2.1.1",
+            "A2.1.2"
+          ],
+          "focus_evidence": "Baling objek lembut ke sasaran; nyatakan cara membaling.",
+          "dk_pages": [
+            44
+          ],
+          "date": null
+        },
+        {
+          "pdp": 34,
+          "primary_sp": "P2.1.2",
+          "original_sp": [
+            "P2.1.2",
+            "A2.1.3"
+          ],
+          "candidate_sp": [
+            "P2.1.2",
+            "K2.1.2",
+            "A2.1.3"
+          ],
+          "focus_evidence": "Lambung rendah dan tangkap sendiri; kenal kedudukan tangan.",
+          "dk_pages": [
+            44
+          ],
+          "date": null
+        },
+        {
+          "pdp": 35,
+          "primary_sp": "P2.1.3",
+          "original_sp": [
+            "P2.1.3",
+            "K2.1.3"
+          ],
+          "candidate_sp": [
+            "P2.1.3",
+            "K2.1.2",
+            "A2.1.4"
+          ],
+          "focus_evidence": "Tangkap bola besar lembut daripada pasangan; kenal kedudukan tangan.",
+          "dk_pages": [
+            44
+          ],
+          "date": null
+        },
+        {
+          "pdp": 36,
+          "primary_sp": "P2.1.4",
+          "original_sp": [
+            "P2.1.4",
+            "K2.1.4",
+            "A2.1.4"
+          ],
+          "candidate_sp": [
+            "P2.1.4",
+            "K2.1.3",
+            "A2.1.4"
+          ],
+          "focus_evidence": "Lantun setempat dan semasa berjalan; terangkan cara lantunan terkawal.",
+          "dk_pages": [
+            44
+          ],
+          "date": null
+        },
+        {
+          "pdp": 37,
+          "primary_sp": "P2.1.4",
+          "original_sp": [
+            "P2.1.4",
+            "A2.1.5"
+          ],
+          "candidate_sp": [
+            "P2.1.4",
+            "K2.1.3",
+            "A2.1.5"
+          ],
+          "focus_evidence": "Lantun setempat dan semasa berjalan; terangkan cara lantunan terkawal.",
+          "dk_pages": [
+            44,
+            45
+          ],
+          "date": null
+        },
+        {
+          "pdp": 38,
+          "primary_sp": "P2.1.5",
+          "original_sp": [
+            "P2.1.5",
+            "K2.1.5",
+            "A2.1.6"
+          ],
+          "candidate_sp": [
+            "P2.1.5",
+            "K2.1.4",
+            "A2.1.6"
+          ],
+          "focus_evidence": "Mengelecek perlahan dengan bahagian dalam kaki; terangkan cara kawal bola.",
+          "dk_pages": [
+            44,
+            45
+          ],
+          "date": null
+        },
+        {
+          "pdp": 39,
+          "primary_sp": "P2.1.6",
+          "original_sp": [
+            "P2.1.6",
+            "K2.1.6"
+          ],
+          "candidate_sp": [
+            "P2.1.6",
+            "K2.1.5",
+            "A2.1.7"
+          ],
+          "focus_evidence": "Tendang bola pegun ke sasaran; nyatakan cara tendangan.",
+          "dk_pages": [
+            44,
+            45
+          ],
+          "date": null
+        },
+        {
+          "pdp": 40,
+          "primary_sp": "P2.1.7",
+          "original_sp": [
+            "P2.1.7",
+            "A2.1.7"
+          ],
+          "candidate_sp": [
+            "P2.1.7",
+            "K2.1.6",
+            "K2.1.7",
+            "A2.1.2"
+          ],
+          "focus_evidence": "Pukul bola span dengan tangan atau raket pendek; kenal titik sentuhan dan cara memukul.",
+          "dk_pages": [
+            44,
+            45
+          ],
+          "date": null
+        },
+        {
+          "pdp": 41,
+          "primary_sp": "P2.1.7",
+          "original_sp": [
+            "P2.1.7",
+            "K2.1.7",
+            "A2.1.8"
+          ],
+          "candidate_sp": [
+            "P2.1.7",
+            "K2.1.6",
+            "K2.1.7",
+            "A2.1.8"
+          ],
+          "focus_evidence": "Pukul bola span dengan tangan atau raket pendek; kenal titik sentuhan dan cara memukul.",
+          "dk_pages": [
+            45
+          ],
+          "date": null
+        },
+        {
+          "pdp": 42,
+          "primary_sp": "P2.1.8",
+          "original_sp": [
+            "P2.1.8",
+            "K2.1.8",
+            "A2.1.9"
+          ],
+          "candidate_sp": [
+            "P2.1.8",
+            "K2.1.6",
+            "K2.1.7",
+            "A2.1.9"
+          ],
+          "focus_evidence": "Pukul bola leret menggunakan alatan sesuai dalam zon kosong; nyatakan sentuhan dan cara pukulan.",
+          "dk_pages": [
+            45,
+            46
+          ],
+          "date": null
+        },
+        {
+          "pdp": 43,
+          "primary_sp": "P2.1.9",
+          "original_sp": [
+            "P2.1.9"
+          ],
+          "candidate_sp": [
+            "P2.1.9",
+            "K2.1.8",
+            "A2.1.4"
+          ],
+          "focus_evidence": "Pukul bola span di tee dengan bet silinder ringan di bawah pengawasan; kenal cara melalui sumber teknologi.",
+          "dk_pages": [
+            44,
+            45,
+            46
+          ],
+          "date": null
+        },
+        {
+          "pdp": 44,
+          "primary_sp": "P3.1.1",
+          "original_sp": [
+            "P3.1.1",
+            "K3.1.1",
+            "K3.1.2",
+            "A3.1.1"
+          ],
+          "candidate_sp": [
+            "P3.1.1",
+            "K3.1.1",
+            "K3.1.2",
+            "A3.1.1"
+          ],
+          "focus_evidence": "Datuk Harimau di ruang ditanda; nyatakan gerak lokomotor dan peraturan.",
+          "dk_pages": [
+            52
+          ],
+          "date": null
+        },
+        {
+          "pdp": 45,
+          "primary_sp": "P3.1.1",
+          "original_sp": [
+            "P3.1.1",
+            "K3.1.3",
+            "A3.1.2"
+          ],
+          "candidate_sp": [
+            "P3.1.1",
+            "K3.1.1",
+            "K3.1.2",
+            "A3.1.2"
+          ],
+          "focus_evidence": "Datuk Harimau di ruang ditanda; nyatakan gerak lokomotor dan peraturan.",
+          "dk_pages": [
+            52
+          ],
+          "date": null
+        },
+        {
+          "pdp": 46,
+          "primary_sp": "P3.1.2",
+          "original_sp": [
+            "P3.1.2",
+            "K3.1.4",
+            "A3.1.3"
+          ],
+          "candidate_sp": [
+            "P3.1.2",
+            "K3.1.2",
+            "A3.1.3"
+          ],
+          "focus_evidence": "Congkak dengan alatan sesuai umur; nyatakan cara bermain dan bergilir.",
+          "dk_pages": [
+            52
+          ],
+          "date": null
+        },
+        {
+          "pdp": 47,
+          "primary_sp": "P3.1.3",
+          "original_sp": [
+            "P3.1.3",
+            "K3.1.5",
+            "A3.1.4"
+          ],
+          "candidate_sp": [
+            "P3.1.3",
+            "K3.1.3",
+            "K3.1.4",
+            "A3.1.4"
+          ],
+          "focus_evidence": "Bina objek bertema menggunakan doh atau blok besar; nyatakan reka bentuk dan motor halus.",
+          "dk_pages": [
+            52
+          ],
+          "date": null
+        },
+        {
+          "pdp": 48,
+          "primary_sp": "P3.1.4",
+          "original_sp": [
+            "P3.1.4",
+            "K3.1.6",
+            "K3.1.7",
+            "A3.1.5"
+          ],
+          "candidate_sp": [
+            "P3.1.4",
+            "K3.1.5",
+            "A3.1.5"
+          ],
+          "focus_evidence": "Ikut arah muka jam pada lantai; nyatakan arah 3, 6, 9 dan 12.",
+          "dk_pages": [
+            52,
+            53
+          ],
+          "date": null
+        },
+        {
+          "pdp": 49,
+          "primary_sp": "P3.1.4",
+          "original_sp": [
+            "P3.1.4",
+            "K3.1.8",
+            "A3.1.6"
+          ],
+          "candidate_sp": [
+            "P3.1.4",
+            "K3.1.5",
+            "A3.1.6"
+          ],
+          "focus_evidence": "Ikut arah muka jam pada lantai; nyatakan arah 3, 6, 9 dan 12.",
+          "dk_pages": [
+            53
+          ],
+          "date": null
+        },
+        {
+          "pdp": 50,
+          "primary_sp": "P3.1.5",
+          "original_sp": [
+            "P3.1.5",
+            "K3.1.9",
+            "A3.1.7"
+          ],
+          "candidate_sp": [
+            "P3.1.5",
+            "K3.1.5",
+            "K3.1.6",
+            "A3.1.7"
+          ],
+          "focus_evidence": "Cari kad harta karun di kawasan tertutup dengan petunjuk dan arah jam; nyatakan petunjuk.",
+          "dk_pages": [
+            53
+          ],
+          "date": null
+        },
+        {
+          "pdp": 51,
+          "primary_sp": "P3.1.6",
+          "original_sp": [
+            "P3.1.6",
+            "K3.1.10",
+            "A3.1.8"
+          ],
+          "candidate_sp": [
+            "P3.1.6",
+            "K3.1.7",
+            "K3.1.8",
+            "K3.1.9",
+            "K3.1.10",
+            "A3.1.8"
+          ],
+          "focus_evidence": "Akuatik asas hanya di kemudahan sesuai dengan pengajar kompeten dan kawalan keselamatan. Evidens setiap kemahiran mengikut kesediaan; jika tiada kemudahan, jangan rekod penguasaan praktikal.",
+          "dk_pages": [
+            53,
+            54
+          ],
+          "date": null
+        },
+        {
+          "pdp": 52,
+          "primary_sp": "P4.1.1",
+          "original_sp": [
+            "P4.1.1",
+            "K4.1.1",
+            "K4.1.2",
+            "A4.1.1",
+            "A4.1.2"
+          ],
+          "candidate_sp": [
+            "P4.1.1",
+            "K4.1.1",
+            "A4.1.1",
+            "A4.1.2"
+          ],
+          "focus_evidence": "Pemanasan badan ringan; nyatakan perubahan pernafasan dan degupan.",
+          "dk_pages": [
+            59
+          ],
+          "date": null
+        },
+        {
+          "pdp": 53,
+          "primary_sp": "P4.1.1",
+          "original_sp": [
+            "P4.1.1",
+            "K4.1.3",
+            "A4.1.3"
+          ],
+          "candidate_sp": [
+            "P4.1.1",
+            "K4.1.3",
+            "A4.1.3"
+          ],
+          "focus_evidence": "Bandingkan pemanasan badan dan penyejukan melalui pemerhatian selepas gerak ringan.",
+          "dk_pages": [
+            59
+          ],
+          "date": null
+        },
+        {
+          "pdp": 54,
+          "primary_sp": "P4.1.2",
+          "original_sp": [
+            "P4.1.2",
+            "K4.1.4",
+            "A4.1.4"
+          ],
+          "candidate_sp": [
+            "P4.1.2",
+            "K4.1.2",
+            "K4.1.4",
+            "A4.1.4"
+          ],
+          "focus_evidence": "Sejukkan badan dengan gerak ringan; namakan aktiviti dan perhatikan perubahan pernafasan.",
+          "dk_pages": [
+            59,
+            60
+          ],
+          "date": null
+        },
+        {
+          "pdp": 55,
+          "primary_sp": "P4.1.3",
+          "original_sp": [
+            "P4.1.3",
+            "K4.1.5",
+            "A4.1.5"
+          ],
+          "candidate_sp": [
+            "P4.1.3",
+            "K4.1.5",
+            "A4.1.5"
+          ],
+          "focus_evidence": "Amalkan minum air sebelum, semasa dan selepas aktiviti; jelaskan keperluannya.",
+          "dk_pages": [
+            60
+          ],
+          "date": null
+        },
+        {
+          "pdp": 56,
+          "primary_sp": "P4.2.1",
+          "original_sp": [
+            "P4.2.1",
+            "K4.2.1",
+            "A4.2.1"
+          ],
+          "candidate_sp": [
+            "P4.2.1",
+            "K4.2.1",
+            "K4.2.2",
+            "A4.2.1"
+          ],
+          "focus_evidence": "Aktiviti aerobik berimpak rendah mengikut kemampuan; kenal jantung, paru-paru dan contoh aktiviti.",
+          "dk_pages": [
+            63
+          ],
+          "date": null
+        },
+        {
+          "pdp": 57,
+          "primary_sp": "P4.2.1",
+          "original_sp": [
+            "P4.2.1",
+            "K4.2.2",
+            "A4.2.2"
+          ],
+          "candidate_sp": [
+            "P4.2.1",
+            "K4.2.1",
+            "K4.2.2",
+            "A4.2.2"
+          ],
+          "focus_evidence": "Aktiviti aerobik berimpak rendah mengikut kemampuan; kenal jantung, paru-paru dan contoh aktiviti.",
+          "dk_pages": [
+            63
+          ],
+          "date": null
+        },
+        {
+          "pdp": 58,
+          "primary_sp": "P4.2.2",
+          "original_sp": [
+            "P4.2.2",
+            "K4.2.3",
+            "K4.2.4",
+            "A4.2.3"
+          ],
+          "candidate_sp": [
+            "P4.2.2",
+            "K4.2.3",
+            "K4.2.4",
+            "A4.2.3"
+          ],
+          "focus_evidence": "Regangan dinamik dan statik berpandu, sumber teknologi pilihan guru; namakan dan nyatakan tujuannya.",
+          "dk_pages": [
+            63
+          ],
+          "date": null
+        },
+        {
+          "pdp": 59,
+          "primary_sp": "P4.2.3",
+          "original_sp": [
+            "P4.2.3",
+            "K4.2.5",
+            "A4.2.4"
+          ],
+          "candidate_sp": [
+            "P4.2.3",
+            "K4.2.5",
+            "A4.2.4"
+          ],
+          "focus_evidence": "Latihan daya tahan otot mengikut DK secara bertahap tanpa memaksa; kenal bahagian otot.",
+          "dk_pages": [
+            63,
+            64
+          ],
+          "date": null
+        },
+        {
+          "pdp": 60,
+          "primary_sp": "P4.2.4",
+          "original_sp": [
+            "P4.2.4",
+            "K4.2.6",
+            "A4.2.5"
+          ],
+          "candidate_sp": [
+            "P4.2.4",
+            "K4.2.6",
+            "A4.2.5"
+          ],
+          "focus_evidence": "Bergerak dari duduk atau baring ke berdiri dengan pengawasan dan mengikut kemampuan; nyatakan kegunaan otot.",
+          "dk_pages": [
+            63,
+            64
+          ],
+          "date": null
+        },
+        {
+          "pdp": 61,
+          "primary_sp": "P4.2.4",
+          "original_sp": [
+            "P4.2.4",
+            "K4.2.7",
+            "A4.2.6"
+          ],
+          "candidate_sp": [
+            "P4.2.4",
+            "K4.2.6",
+            "A4.2.6"
+          ],
+          "focus_evidence": "Bergerak dari duduk atau baring ke berdiri dengan pengawasan dan mengikut kemampuan; nyatakan kegunaan otot.",
+          "dk_pages": [
+            64
+          ],
+          "date": null
+        },
+        {
+          "pdp": 62,
+          "primary_sp": "P4.2.5",
+          "original_sp": [
+            "P4.2.5",
+            "K4.2.8",
+            "A4.2.7"
+          ],
+          "candidate_sp": [
+            "P4.2.5",
+            "K4.2.7",
+            "K4.2.8",
+            "A4.2.7"
+          ],
+          "focus_evidence": "Ukur tinggi dan berat secara peribadi dengan guru; kenal komponen badan dan kepelbagaian bentuk tanpa perbandingan atau ejekan.",
+          "dk_pages": [
+            64,
+            65
+          ],
+          "date": null
+        },
+        {
+          "pdp": 63,
+          "primary_sp": "P4.2.6",
+          "original_sp": [
+            "P4.2.6",
+            "K4.2.9",
+            "A4.2.8"
+          ],
+          "candidate_sp": [
+            "P4.2.6",
+            "K4.2.9",
+            "A4.2.8"
+          ],
+          "focus_evidence": "Rekod ukuran sendiri secara sulit dan bincang pertumbuhan dengan guru.",
+          "dk_pages": [
+            64,
+            65
+          ],
+          "date": null
+        },
+        {
+          "pdp": 64,
+          "primary_sp": "P4.2.7",
+          "original_sp": [
+            "P4.2.7",
+            "K4.2.10",
+            "A4.2.9"
+          ],
+          "candidate_sp": [
+            "P4.2.7",
+            "K4.2.10",
+            "A4.2.9"
+          ],
+          "focus_evidence": "Pengukuran BMI 5-9T menggunakan prosedur sekolah dengan guru, secara sulit; jangan jadikan BMI sasaran penurunan berat atau ranking murid.",
+          "dk_pages": [
+            64,
+            65
+          ],
+          "date": null
+        }
+      ]
+    },
+    "B": {
+      "count": 63,
+      "distinct_sp": 167,
+      "all_domains": 63,
+      "changed_mappings": 53,
+      "rows": [
+        {
+          "pdp": 1,
+          "primary_sp": "P1.1.1",
+          "original_sp": [
+            "P1.1.1",
+            "K1.1.1",
+            "A1.1.1"
+          ],
+          "candidate_sp": [
+            "P1.1.1",
+            "K1.1.1",
+            "K1.1.5",
+            "A1.1.1"
+          ],
+          "focus_evidence": "Bentuk badan dan layangan rendah; namakan bentuk serta pergerakan yang menghasilkan layangan.",
+          "dk_pages": [
+            24,
+            25
+          ],
+          "date": null
+        },
+        {
+          "pdp": 2,
+          "primary_sp": "P1.1.1",
+          "original_sp": [
+            "P1.1.1",
+            "K1.1.2",
+            "A1.1.2"
+          ],
+          "candidate_sp": [
+            "P1.1.1",
+            "K1.1.2",
+            "K1.1.3",
+            "K1.1.4",
+            "A1.1.2"
+          ],
+          "focus_evidence": "Imbangan dan pindah berat pada permukaan rata; tunjuk bahagian badan yang menyokong dan memindah berat.",
+          "dk_pages": [
+            24
+          ],
+          "date": null
+        },
+        {
+          "pdp": 3,
+          "primary_sp": "P1.1.2",
+          "original_sp": [
+            "P1.1.2",
+            "K1.1.3",
+            "A1.1.3"
+          ],
+          "candidate_sp": [
+            "P1.1.2",
+            "K1.1.6",
+            "A1.1.3"
+          ],
+          "focus_evidence": "Bergerak dalam ruang diri dan ruang am yang ditandakan; bezakan kedua-duanya.",
+          "dk_pages": [
+            24,
+            25
+          ],
+          "date": null
+        },
+        {
+          "pdp": 4,
+          "primary_sp": "P1.1.3",
+          "original_sp": [
+            "P1.1.3",
+            "K1.1.4",
+            "A1.1.4"
+          ],
+          "candidate_sp": [
+            "P1.1.3",
+            "K1.1.7",
+            "A1.1.4"
+          ],
+          "focus_evidence": "Ikut arah dan aras melalui kad isyarat; tunjuk semula arah serta aras.",
+          "dk_pages": [
+            24,
+            25
+          ],
+          "date": null
+        },
+        {
+          "pdp": 5,
+          "primary_sp": "P1.1.4",
+          "original_sp": [
+            "P1.1.4",
+            "K1.1.5",
+            "A1.1.5"
+          ],
+          "candidate_sp": [
+            "P1.1.4",
+            "K1.1.8",
+            "A1.1.5"
+          ],
+          "focus_evidence": "Berjalan melalui laluan lurus dan berlengkok; lakar laluan dengan jari atau pensel.",
+          "dk_pages": [
+            25
+          ],
+          "date": null
+        },
+        {
+          "pdp": 6,
+          "primary_sp": "P1.1.4",
+          "original_sp": [
+            "P1.1.4",
+            "K1.1.6",
+            "A1.1.6"
+          ],
+          "candidate_sp": [
+            "P1.1.4",
+            "K1.1.8",
+            "A1.1.6"
+          ],
+          "focus_evidence": "Berjalan melalui laluan lingkar dan zig-zag; terangkan lakaran kepada rakan.",
+          "dk_pages": [
+            25
+          ],
+          "date": null
+        },
+        {
+          "pdp": 7,
+          "primary_sp": "P1.1.5",
+          "original_sp": [
+            "P1.1.5",
+            "K1.1.7"
+          ],
+          "candidate_sp": [
+            "P1.1.5",
+            "K1.1.9",
+            "A1.1.3"
+          ],
+          "focus_evidence": "Lampu isyarat kelajuan; bezakan laju dengan perlahan.",
+          "dk_pages": [
+            24,
+            25,
+            26
+          ],
+          "date": null
+        },
+        {
+          "pdp": 8,
+          "primary_sp": "P1.1.6",
+          "original_sp": [
+            "P1.1.6",
+            "K1.1.8",
+            "A1.1.7"
+          ],
+          "candidate_sp": [
+            "P1.1.6",
+            "K1.1.10",
+            "A1.1.7"
+          ],
+          "focus_evidence": "Tunjuk contoh pergerakan ringan, berat, kuat, lemah, kasar dan lembut tanpa perlanggaran.",
+          "dk_pages": [
+            25,
+            26
+          ],
+          "date": null
+        },
+        {
+          "pdp": 9,
+          "primary_sp": "P1.1.7",
+          "original_sp": [
+            "P1.1.7",
+            "K1.1.9",
+            "A1.2.1"
+          ],
+          "candidate_sp": [
+            "P1.1.7",
+            "K1.1.11",
+            "A1.1.2"
+          ],
+          "focus_evidence": "Gerak berpasangan dengan alatan pada arah dan aras berlainan; namakan hubungan gerak.",
+          "dk_pages": [
+            24,
+            26
+          ],
+          "date": null
+        },
+        {
+          "pdp": 10,
+          "primary_sp": "P1.1.7",
+          "original_sp": [
+            "P1.1.7",
+            "K1.1.10",
+            "A1.2.2"
+          ],
+          "candidate_sp": [
+            "P1.1.7",
+            "K1.1.11",
+            "A1.1.7"
+          ],
+          "focus_evidence": "Gerak berpasangan dengan alatan pada jarak dan ruang berlainan; nyatakan contoh hubungan.",
+          "dk_pages": [
+            25,
+            26
+          ],
+          "date": null
+        },
+        {
+          "pdp": 11,
+          "primary_sp": "P1.2.1",
+          "original_sp": [
+            "P1.2.1",
+            "A1.2.3"
+          ],
+          "candidate_sp": [
+            "P1.2.1",
+            "K1.2.1",
+            "K1.2.2",
+            "A1.2.3",
+            "A1.2.4"
+          ],
+          "focus_evidence": "Stesen gerak lokomotor mengikut kesediaan; kenal teknik dan kegunaan harian melalui contoh digital guru.",
+          "dk_pages": [
+            29
+          ],
+          "date": null
+        },
+        {
+          "pdp": 12,
+          "primary_sp": "P1.2.2",
+          "original_sp": [
+            "P1.2.2",
+            "K1.1.11",
+            "A1.2.4"
+          ],
+          "candidate_sp": [
+            "P1.2.2",
+            "K1.2.3",
+            "A1.2.2"
+          ],
+          "focus_evidence": "Latihan lompat tali bertahap dengan guru; kenal masa mula melompat.",
+          "dk_pages": [
+            29
+          ],
+          "date": null
+        },
+        {
+          "pdp": 13,
+          "primary_sp": "P1.2.3",
+          "original_sp": [
+            "P1.2.3",
+            "K1.2.1"
+          ],
+          "candidate_sp": [
+            "P1.2.3",
+            "K1.2.4",
+            "A1.2.1"
+          ],
+          "focus_evidence": "Bergerak mengikut tepukan dua tempo; bezakan tempo.",
+          "dk_pages": [
+            29,
+            30
+          ],
+          "date": null
+        },
+        {
+          "pdp": 14,
+          "primary_sp": "P1.2.4",
+          "original_sp": [
+            "P1.2.4",
+            "K1.2.2",
+            "A1.2.5"
+          ],
+          "candidate_sp": [
+            "P1.2.4",
+            "K1.2.5",
+            "K1.2.6",
+            "A1.2.5"
+          ],
+          "focus_evidence": "Gerak bukan lokomotor dalam ruang sendiri; jelaskan cara bergerak dan mengimbang; permainan kecil tanpa penyingkiran.",
+          "dk_pages": [
+            30
+          ],
+          "date": null
+        },
+        {
+          "pdp": 15,
+          "primary_sp": "P1.2.4",
+          "original_sp": [
+            "P1.2.4",
+            "K1.2.3",
+            "A1.2.6"
+          ],
+          "candidate_sp": [
+            "P1.2.4",
+            "K1.2.5",
+            "K1.2.8",
+            "A1.2.6"
+          ],
+          "focus_evidence": "Gerak bukan lokomotor berpandu; kenal kegunaan harian melalui contoh digital guru dan berbincang.",
+          "dk_pages": [
+            30,
+            31
+          ],
+          "date": null
+        },
+        {
+          "pdp": 16,
+          "primary_sp": "P1.2.5",
+          "original_sp": [
+            "P1.2.5",
+            "K1.2.4",
+            "A1.2.7"
+          ],
+          "candidate_sp": [
+            "P1.2.5",
+            "K1.2.7",
+            "A1.2.7"
+          ],
+          "focus_evidence": "Gerak setempat mengikut dua tempo secara berpasangan; bezakan tempo.",
+          "dk_pages": [
+            30
+          ],
+          "date": null
+        },
+        {
+          "pdp": 17,
+          "primary_sp": "P1.3.1",
+          "original_sp": [
+            "P1.3.1",
+            "K1.2.5",
+            "A1.3.1"
+          ],
+          "candidate_sp": [
+            "P1.3.1",
+            "K1.3.1",
+            "A1.3.1"
+          ],
+          "focus_evidence": "Cermin muzik; kenal arah kanan dan kiri.",
+          "dk_pages": [
+            33
+          ],
+          "date": null
+        },
+        {
+          "pdp": 18,
+          "primary_sp": "P1.3.2",
+          "original_sp": [
+            "P1.3.2",
+            "K1.2.6",
+            "A1.3.2"
+          ],
+          "candidate_sp": [
+            "P1.3.2",
+            "K1.3.2",
+            "A1.3.2"
+          ],
+          "focus_evidence": "Tiru watak mengikut lirik; namakan watak.",
+          "dk_pages": [
+            33
+          ],
+          "date": null
+        },
+        {
+          "pdp": 19,
+          "primary_sp": "P1.3.2",
+          "original_sp": [
+            "P1.3.2",
+            "K1.2.7"
+          ],
+          "candidate_sp": [
+            "P1.3.2",
+            "K1.3.2",
+            "A1.3.3"
+          ],
+          "focus_evidence": "Tiru watak lain mengikut muzik; namakan watak dan cuba dengan yakin.",
+          "dk_pages": [
+            33
+          ],
+          "date": null
+        },
+        {
+          "pdp": 20,
+          "primary_sp": "P1.3.3",
+          "original_sp": [
+            "P1.3.3",
+            "K1.2.8",
+            "A1.3.3"
+          ],
+          "candidate_sp": [
+            "P1.3.3",
+            "K1.3.3",
+            "A1.3.5"
+          ],
+          "focus_evidence": "Langkah lokomotor empat kiraan bersama pasangan; namakan gerakan.",
+          "dk_pages": [
+            33,
+            34
+          ],
+          "date": null
+        },
+        {
+          "pdp": 21,
+          "primary_sp": "P1.3.4",
+          "original_sp": [
+            "P1.3.4",
+            "A1.3.4"
+          ],
+          "candidate_sp": [
+            "P1.3.4",
+            "K1.3.3",
+            "A1.3.4"
+          ],
+          "focus_evidence": "Carian gerakan empat kiraan dengan peranti guru, tiru dan rakam dengan izin; kenal gerakan.",
+          "dk_pages": [
+            33,
+            34
+          ],
+          "date": null
+        },
+        {
+          "pdp": 22,
+          "primary_sp": "P1.4.1",
+          "original_sp": [
+            "P1.4.1",
+            "K1.3.1",
+            "A1.3.5"
+          ],
+          "candidate_sp": [
+            "P1.4.1",
+            "K1.4.1",
+            "K1.4.2",
+            "A1.4.3"
+          ],
+          "focus_evidence": "Aksi haiwan rendah menggunakan beberapa bahagian badan; kenal bahagian badan dan haiwan.",
+          "dk_pages": [
+            36
+          ],
+          "date": null
+        },
+        {
+          "pdp": 23,
+          "primary_sp": "P1.4.2",
+          "original_sp": [
+            "P1.4.2",
+            "K1.3.2",
+            "A1.4.1"
+          ],
+          "candidate_sp": [
+            "P1.4.2",
+            "K1.4.3",
+            "A1.4.1"
+          ],
+          "focus_evidence": "Imbangan sebelah kaki ke sisi dan depan; kenal bahagian badan yang membantu kestabilan; pakaian sesuai.",
+          "dk_pages": [
+            36
+          ],
+          "date": null
+        },
+        {
+          "pdp": 24,
+          "primary_sp": "P1.4.2",
+          "original_sp": [
+            "P1.4.2",
+            "K1.3.3",
+            "A1.4.2"
+          ],
+          "candidate_sp": [
+            "P1.4.2",
+            "K1.4.3",
+            "A1.4.2"
+          ],
+          "focus_evidence": "Imbangan sebelah kaki ke belakang secara terkawal; kenal bantuan tangan dan kaki; semak alatan.",
+          "dk_pages": [
+            36
+          ],
+          "date": null
+        },
+        {
+          "pdp": 25,
+          "primary_sp": "P1.4.3",
+          "original_sp": [
+            "P1.4.3",
+            "K1.4.1"
+          ],
+          "candidate_sp": [
+            "P1.4.3",
+            "K1.4.4",
+            "A1.4.4"
+          ],
+          "focus_evidence": "Banding bilangan tapak sokongan dengan kestabilan; cabaran mengikut kemampuan.",
+          "dk_pages": [
+            36,
+            37
+          ],
+          "date": null
+        },
+        {
+          "pdp": 26,
+          "primary_sp": "P1.4.4",
+          "original_sp": [
+            "P1.4.4",
+            "K1.4.2",
+            "A1.4.3"
+          ],
+          "candidate_sp": [
+            "P1.4.4",
+            "K1.4.4",
+            "A1.4.3"
+          ],
+          "focus_evidence": "Imbangan songsang lejang hanya selepas prasyarat dan di bawah guru kompeten; bincang tapak sokongan.",
+          "dk_pages": [
+            36,
+            37
+          ],
+          "date": null
+        },
+        {
+          "pdp": 27,
+          "primary_sp": "P1.4.5",
+          "original_sp": [
+            "P1.4.5",
+            "K1.4.3",
+            "A1.4.4"
+          ],
+          "candidate_sp": [
+            "P1.4.5",
+            "K1.4.5",
+            "A1.4.2"
+          ],
+          "focus_evidence": "Putaran menegak 90 darjah di trampolin hanya dengan kemudahan sesuai dan pengawasan kompeten; kenal peranan anggota badan.",
+          "dk_pages": [
+            36,
+            37
+          ],
+          "date": null
+        },
+        {
+          "pdp": 28,
+          "primary_sp": "P1.4.5",
+          "original_sp": [
+            "P1.4.5",
+            "K1.4.4",
+            "A1.4.5"
+          ],
+          "candidate_sp": [
+            "P1.4.5",
+            "K1.4.5",
+            "A1.4.5"
+          ],
+          "focus_evidence": "Putaran menegak 180 darjah hanya selepas penguasaan prasyarat dan pengawasan kompeten; terangkan peranan anggota badan.",
+          "dk_pages": [
+            37
+          ],
+          "date": null
+        },
+        {
+          "pdp": 29,
+          "primary_sp": "P1.4.6",
+          "original_sp": [
+            "P1.4.6",
+            "K1.4.5",
+            "A1.4.6"
+          ],
+          "candidate_sp": [
+            "P1.4.6",
+            "K1.4.6",
+            "A1.4.6"
+          ],
+          "focus_evidence": "Guling balak di atas tikar dengan guru kompeten; kenal cara melalui sumber teknologi.",
+          "dk_pages": [
+            37,
+            38
+          ],
+          "date": null
+        },
+        {
+          "pdp": 30,
+          "primary_sp": "P1.4.7",
+          "original_sp": [
+            "P1.4.7",
+            "K1.4.6",
+            "A1.4.7"
+          ],
+          "candidate_sp": [
+            "P1.4.7",
+            "K1.4.6",
+            "A1.4.7"
+          ],
+          "focus_evidence": "Guling sisi di atas tikar dengan guru kompeten; kenal cara melalui sumber teknologi; hormati kemampuan rakan.",
+          "dk_pages": [
+            37,
+            38
+          ],
+          "date": null
+        },
+        {
+          "pdp": 31,
+          "primary_sp": "P1.4.8",
+          "original_sp": [
+            "P1.4.8"
+          ],
+          "candidate_sp": [
+            "P1.4.8",
+            "K1.4.6",
+            "A1.4.2"
+          ],
+          "focus_evidence": "Guling depan hanya di atas tikar dan dengan guru kompeten; kenal cara melalui sumber teknologi.",
+          "dk_pages": [
+            36,
+            38
+          ],
+          "date": null
+        },
+        {
+          "pdp": 32,
+          "primary_sp": "P2.1.1",
+          "original_sp": [
+            "P2.1.1",
+            "K2.1.1",
+            "A2.1.1"
+          ],
+          "candidate_sp": [
+            "P2.1.1",
+            "K2.1.1",
+            "A2.1.1"
+          ],
+          "focus_evidence": "Baling objek lembut ke sasaran; nyatakan cara membaling.",
+          "dk_pages": [
+            44
+          ],
+          "date": null
+        },
+        {
+          "pdp": 33,
+          "primary_sp": "P2.1.1",
+          "original_sp": [
+            "P2.1.1",
+            "K2.1.2",
+            "A2.1.2"
+          ],
+          "candidate_sp": [
+            "P2.1.1",
+            "K2.1.1",
+            "A2.1.2"
+          ],
+          "focus_evidence": "Baling objek lembut ke sasaran; nyatakan cara membaling.",
+          "dk_pages": [
+            44
+          ],
+          "date": null
+        },
+        {
+          "pdp": 34,
+          "primary_sp": "P2.1.2",
+          "original_sp": [
+            "P2.1.2",
+            "K2.1.3",
+            "A2.1.3"
+          ],
+          "candidate_sp": [
+            "P2.1.2",
+            "K2.1.2",
+            "A2.1.3"
+          ],
+          "focus_evidence": "Lambung rendah dan tangkap sendiri; kenal kedudukan tangan.",
+          "dk_pages": [
+            44
+          ],
+          "date": null
+        },
+        {
+          "pdp": 35,
+          "primary_sp": "P2.1.3",
+          "original_sp": [
+            "P2.1.3",
+            "A2.1.4"
+          ],
+          "candidate_sp": [
+            "P2.1.3",
+            "K2.1.2",
+            "A2.1.4"
+          ],
+          "focus_evidence": "Tangkap bola besar lembut daripada pasangan; kenal kedudukan tangan.",
+          "dk_pages": [
+            44
+          ],
+          "date": null
+        },
+        {
+          "pdp": 36,
+          "primary_sp": "P2.1.4",
+          "original_sp": [
+            "P2.1.4",
+            "K2.1.4",
+            "A2.1.5"
+          ],
+          "candidate_sp": [
+            "P2.1.4",
+            "K2.1.3",
+            "A2.1.5"
+          ],
+          "focus_evidence": "Lantun setempat dan semasa berjalan; terangkan cara lantunan terkawal.",
+          "dk_pages": [
+            44,
+            45
+          ],
+          "date": null
+        },
+        {
+          "pdp": 37,
+          "primary_sp": "P2.1.5",
+          "original_sp": [
+            "P2.1.5",
+            "K2.1.5"
+          ],
+          "candidate_sp": [
+            "P2.1.5",
+            "K2.1.4",
+            "A2.1.2"
+          ],
+          "focus_evidence": "Mengelecek perlahan dengan bahagian dalam kaki; terangkan cara kawal bola.",
+          "dk_pages": [
+            44
+          ],
+          "date": null
+        },
+        {
+          "pdp": 38,
+          "primary_sp": "P2.1.5",
+          "original_sp": [
+            "P2.1.5",
+            "K2.1.6",
+            "A2.1.6"
+          ],
+          "candidate_sp": [
+            "P2.1.5",
+            "K2.1.4",
+            "A2.1.6"
+          ],
+          "focus_evidence": "Mengelecek perlahan dengan bahagian dalam kaki; terangkan cara kawal bola.",
+          "dk_pages": [
+            44,
+            45
+          ],
+          "date": null
+        },
+        {
+          "pdp": 39,
+          "primary_sp": "P2.1.6",
+          "original_sp": [
+            "P2.1.6",
+            "A2.1.7"
+          ],
+          "candidate_sp": [
+            "P2.1.6",
+            "K2.1.5",
+            "A2.1.7"
+          ],
+          "focus_evidence": "Tendang bola pegun ke sasaran; nyatakan cara tendangan.",
+          "dk_pages": [
+            44,
+            45
+          ],
+          "date": null
+        },
+        {
+          "pdp": 40,
+          "primary_sp": "P2.1.7",
+          "original_sp": [
+            "P2.1.7",
+            "K2.1.7",
+            "A2.1.8"
+          ],
+          "candidate_sp": [
+            "P2.1.7",
+            "K2.1.6",
+            "K2.1.7",
+            "A2.1.8"
+          ],
+          "focus_evidence": "Pukul bola span dengan tangan atau raket pendek; kenal titik sentuhan dan cara memukul.",
+          "dk_pages": [
+            45
+          ],
+          "date": null
+        },
+        {
+          "pdp": 41,
+          "primary_sp": "P2.1.8",
+          "original_sp": [
+            "P2.1.8",
+            "K2.1.8",
+            "A2.1.9"
+          ],
+          "candidate_sp": [
+            "P2.1.8",
+            "K2.1.6",
+            "K2.1.7",
+            "A2.1.9"
+          ],
+          "focus_evidence": "Pukul bola leret menggunakan alatan sesuai dalam zon kosong; nyatakan sentuhan dan cara pukulan.",
+          "dk_pages": [
+            45,
+            46
+          ],
+          "date": null
+        },
+        {
+          "pdp": 42,
+          "primary_sp": "P2.1.9",
+          "original_sp": [
+            "P2.1.9"
+          ],
+          "candidate_sp": [
+            "P2.1.9",
+            "K2.1.8",
+            "A2.1.4"
+          ],
+          "focus_evidence": "Pukul bola span di tee dengan bet silinder ringan di bawah pengawasan; kenal cara melalui sumber teknologi.",
+          "dk_pages": [
+            44,
+            45,
+            46
+          ],
+          "date": null
+        },
+        {
+          "pdp": 43,
+          "primary_sp": "P3.1.1",
+          "original_sp": [
+            "P3.1.1",
+            "K3.1.1",
+            "K3.1.2",
+            "A3.1.1"
+          ],
+          "candidate_sp": [
+            "P3.1.1",
+            "K3.1.1",
+            "K3.1.2",
+            "A3.1.1"
+          ],
+          "focus_evidence": "Datuk Harimau di ruang ditanda; nyatakan gerak lokomotor dan peraturan.",
+          "dk_pages": [
+            52
+          ],
+          "date": null
+        },
+        {
+          "pdp": 44,
+          "primary_sp": "P3.1.1",
+          "original_sp": [
+            "P3.1.1",
+            "K3.1.3",
+            "A3.1.2"
+          ],
+          "candidate_sp": [
+            "P3.1.1",
+            "K3.1.1",
+            "K3.1.2",
+            "A3.1.2"
+          ],
+          "focus_evidence": "Datuk Harimau di ruang ditanda; nyatakan gerak lokomotor dan peraturan.",
+          "dk_pages": [
+            52
+          ],
+          "date": null
+        },
+        {
+          "pdp": 45,
+          "primary_sp": "P3.1.2",
+          "original_sp": [
+            "P3.1.2",
+            "K3.1.4",
+            "A3.1.3"
+          ],
+          "candidate_sp": [
+            "P3.1.2",
+            "K3.1.2",
+            "A3.1.3"
+          ],
+          "focus_evidence": "Congkak dengan alatan sesuai umur; nyatakan cara bermain dan bergilir.",
+          "dk_pages": [
+            52
+          ],
+          "date": null
+        },
+        {
+          "pdp": 46,
+          "primary_sp": "P3.1.3",
+          "original_sp": [
+            "P3.1.3",
+            "K3.1.5",
+            "A3.1.4"
+          ],
+          "candidate_sp": [
+            "P3.1.3",
+            "K3.1.3",
+            "K3.1.4",
+            "A3.1.4"
+          ],
+          "focus_evidence": "Bina objek bertema menggunakan doh atau blok besar; nyatakan reka bentuk dan motor halus.",
+          "dk_pages": [
+            52
+          ],
+          "date": null
+        },
+        {
+          "pdp": 47,
+          "primary_sp": "P3.1.4",
+          "original_sp": [
+            "P3.1.4",
+            "K3.1.6",
+            "K3.1.7",
+            "A3.1.5"
+          ],
+          "candidate_sp": [
+            "P3.1.4",
+            "K3.1.5",
+            "A3.1.5"
+          ],
+          "focus_evidence": "Ikut arah muka jam pada lantai; nyatakan arah 3, 6, 9 dan 12.",
+          "dk_pages": [
+            52,
+            53
+          ],
+          "date": null
+        },
+        {
+          "pdp": 48,
+          "primary_sp": "P3.1.4",
+          "original_sp": [
+            "P3.1.4",
+            "K3.1.8",
+            "A3.1.6"
+          ],
+          "candidate_sp": [
+            "P3.1.4",
+            "K3.1.5",
+            "A3.1.6"
+          ],
+          "focus_evidence": "Ikut arah muka jam pada lantai; nyatakan arah 3, 6, 9 dan 12.",
+          "dk_pages": [
+            53
+          ],
+          "date": null
+        },
+        {
+          "pdp": 49,
+          "primary_sp": "P3.1.5",
+          "original_sp": [
+            "P3.1.5",
+            "K3.1.9",
+            "A3.1.7"
+          ],
+          "candidate_sp": [
+            "P3.1.5",
+            "K3.1.5",
+            "K3.1.6",
+            "A3.1.7"
+          ],
+          "focus_evidence": "Cari kad harta karun di kawasan tertutup dengan petunjuk dan arah jam; nyatakan petunjuk.",
+          "dk_pages": [
+            53
+          ],
+          "date": null
+        },
+        {
+          "pdp": 50,
+          "primary_sp": "P3.1.6",
+          "original_sp": [
+            "P3.1.6",
+            "K3.1.10",
+            "A3.1.8"
+          ],
+          "candidate_sp": [
+            "P3.1.6",
+            "K3.1.7",
+            "K3.1.8",
+            "K3.1.9",
+            "K3.1.10",
+            "A3.1.8"
+          ],
+          "focus_evidence": "Akuatik asas hanya di kemudahan sesuai dengan pengajar kompeten dan kawalan keselamatan. Evidens setiap kemahiran mengikut kesediaan; jika tiada kemudahan, jangan rekod penguasaan praktikal.",
+          "dk_pages": [
+            53,
+            54
+          ],
+          "date": null
+        },
+        {
+          "pdp": 51,
+          "primary_sp": "P4.1.1",
+          "original_sp": [
+            "P4.1.1",
+            "K4.1.1",
+            "K4.1.2",
+            "A4.1.1",
+            "A4.1.2"
+          ],
+          "candidate_sp": [
+            "P4.1.1",
+            "K4.1.1",
+            "A4.1.1",
+            "A4.1.2"
+          ],
+          "focus_evidence": "Pemanasan badan ringan; nyatakan perubahan pernafasan dan degupan.",
+          "dk_pages": [
+            59
+          ],
+          "date": null
+        },
+        {
+          "pdp": 52,
+          "primary_sp": "P4.1.1",
+          "original_sp": [
+            "P4.1.1",
+            "K4.1.3",
+            "A4.1.3"
+          ],
+          "candidate_sp": [
+            "P4.1.1",
+            "K4.1.3",
+            "A4.1.3"
+          ],
+          "focus_evidence": "Bandingkan pemanasan badan dan penyejukan melalui pemerhatian selepas gerak ringan.",
+          "dk_pages": [
+            59
+          ],
+          "date": null
+        },
+        {
+          "pdp": 53,
+          "primary_sp": "P4.1.2",
+          "original_sp": [
+            "P4.1.2",
+            "K4.1.4",
+            "A4.1.4"
+          ],
+          "candidate_sp": [
+            "P4.1.2",
+            "K4.1.2",
+            "K4.1.4",
+            "A4.1.4"
+          ],
+          "focus_evidence": "Sejukkan badan dengan gerak ringan; namakan aktiviti dan perhatikan perubahan pernafasan.",
+          "dk_pages": [
+            59,
+            60
+          ],
+          "date": null
+        },
+        {
+          "pdp": 54,
+          "primary_sp": "P4.1.3",
+          "original_sp": [
+            "P4.1.3",
+            "K4.1.5",
+            "A4.1.5"
+          ],
+          "candidate_sp": [
+            "P4.1.3",
+            "K4.1.5",
+            "A4.1.5"
+          ],
+          "focus_evidence": "Amalkan minum air sebelum, semasa dan selepas aktiviti; jelaskan keperluannya.",
+          "dk_pages": [
+            60
+          ],
+          "date": null
+        },
+        {
+          "pdp": 55,
+          "primary_sp": "P4.2.1",
+          "original_sp": [
+            "P4.2.1",
+            "K4.2.1",
+            "A4.2.1"
+          ],
+          "candidate_sp": [
+            "P4.2.1",
+            "K4.2.1",
+            "K4.2.2",
+            "A4.2.1"
+          ],
+          "focus_evidence": "Aktiviti aerobik berimpak rendah mengikut kemampuan; kenal jantung, paru-paru dan contoh aktiviti.",
+          "dk_pages": [
+            63
+          ],
+          "date": null
+        },
+        {
+          "pdp": 56,
+          "primary_sp": "P4.2.1",
+          "original_sp": [
+            "P4.2.1",
+            "K4.2.2",
+            "A4.2.2"
+          ],
+          "candidate_sp": [
+            "P4.2.1",
+            "K4.2.1",
+            "K4.2.2",
+            "A4.2.2"
+          ],
+          "focus_evidence": "Aktiviti aerobik berimpak rendah mengikut kemampuan; kenal jantung, paru-paru dan contoh aktiviti.",
+          "dk_pages": [
+            63
+          ],
+          "date": null
+        },
+        {
+          "pdp": 57,
+          "primary_sp": "P4.2.2",
+          "original_sp": [
+            "P4.2.2",
+            "K4.2.3",
+            "K4.2.4",
+            "A4.2.3"
+          ],
+          "candidate_sp": [
+            "P4.2.2",
+            "K4.2.3",
+            "K4.2.4",
+            "A4.2.3"
+          ],
+          "focus_evidence": "Regangan dinamik dan statik berpandu, sumber teknologi pilihan guru; namakan dan nyatakan tujuannya.",
+          "dk_pages": [
+            63
+          ],
+          "date": null
+        },
+        {
+          "pdp": 58,
+          "primary_sp": "P4.2.3",
+          "original_sp": [
+            "P4.2.3",
+            "K4.2.5",
+            "A4.2.4"
+          ],
+          "candidate_sp": [
+            "P4.2.3",
+            "K4.2.5",
+            "A4.2.4"
+          ],
+          "focus_evidence": "Latihan daya tahan otot mengikut DK secara bertahap tanpa memaksa; kenal bahagian otot.",
+          "dk_pages": [
+            63,
+            64
+          ],
+          "date": null
+        },
+        {
+          "pdp": 59,
+          "primary_sp": "P4.2.4",
+          "original_sp": [
+            "P4.2.4",
+            "K4.2.6",
+            "A4.2.5"
+          ],
+          "candidate_sp": [
+            "P4.2.4",
+            "K4.2.6",
+            "A4.2.5"
+          ],
+          "focus_evidence": "Bergerak dari duduk atau baring ke berdiri dengan pengawasan dan mengikut kemampuan; nyatakan kegunaan otot.",
+          "dk_pages": [
+            63,
+            64
+          ],
+          "date": null
+        },
+        {
+          "pdp": 60,
+          "primary_sp": "P4.2.4",
+          "original_sp": [
+            "P4.2.4",
+            "K4.2.7",
+            "A4.2.6"
+          ],
+          "candidate_sp": [
+            "P4.2.4",
+            "K4.2.6",
+            "A4.2.6"
+          ],
+          "focus_evidence": "Bergerak dari duduk atau baring ke berdiri dengan pengawasan dan mengikut kemampuan; nyatakan kegunaan otot.",
+          "dk_pages": [
+            64
+          ],
+          "date": null
+        },
+        {
+          "pdp": 61,
+          "primary_sp": "P4.2.5",
+          "original_sp": [
+            "P4.2.5",
+            "K4.2.8",
+            "A4.2.7"
+          ],
+          "candidate_sp": [
+            "P4.2.5",
+            "K4.2.7",
+            "K4.2.8",
+            "A4.2.7"
+          ],
+          "focus_evidence": "Ukur tinggi dan berat secara peribadi dengan guru; kenal komponen badan dan kepelbagaian bentuk tanpa perbandingan atau ejekan.",
+          "dk_pages": [
+            64,
+            65
+          ],
+          "date": null
+        },
+        {
+          "pdp": 62,
+          "primary_sp": "P4.2.6",
+          "original_sp": [
+            "P4.2.6",
+            "K4.2.9",
+            "A4.2.8"
+          ],
+          "candidate_sp": [
+            "P4.2.6",
+            "K4.2.9",
+            "A4.2.8"
+          ],
+          "focus_evidence": "Rekod ukuran sendiri secara sulit dan bincang pertumbuhan dengan guru.",
+          "dk_pages": [
+            64,
+            65
+          ],
+          "date": null
+        },
+        {
+          "pdp": 63,
+          "primary_sp": "P4.2.7",
+          "original_sp": [
+            "P4.2.7",
+            "K4.2.10",
+            "A4.2.9"
+          ],
+          "candidate_sp": [
+            "P4.2.7",
+            "K4.2.10",
+            "A4.2.9"
+          ],
+          "focus_evidence": "Pengukuran BMI 5-9T menggunakan prosedur sekolah dengan guru, secara sulit; jangan jadikan BMI sasaran penurunan berat atau ranking murid.",
+          "dk_pages": [
+            64,
+            65
+          ],
+          "date": null
+        }
+      ]
+    }
+  }
+}

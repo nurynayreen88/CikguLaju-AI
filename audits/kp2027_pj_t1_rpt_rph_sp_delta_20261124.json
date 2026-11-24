@@ -1,0 +1,2533 @@
+{
+  "status": "QA_ONLY_NOT_PUBLISHED",
+  "scope": "KP2027 PJ Tahun 1; compare current RPT source map against proposed RPH structured candidates",
+  "source_paths": [
+    "audits/kp2027_pj_t1_rpt_127_pdp_source_map_20261124.json",
+    "audits/kp2027_pj_t1_127_rph_structured_candidates_20261124.json"
+  ],
+  "source_blob_shas": [
+    "2b00995e6d828608d048fbcf353b8a9a12ad3eb6",
+    "b0f46374c9cf90cdb9345f6ca90ffe01b4f427e0"
+  ],
+  "policy": "Do not replace current RPT or active RPH SP based on group-level coverage alone. Review each changed row against original DK and intended activity. No new dates, standards, approvals or release flags.",
+  "groups": {
+    "A": {
+      "count": 64,
+      "original_sp_coverage": 167,
+      "candidate_sp_coverage": 167,
+      "removed_from_group": [],
+      "added_to_group": [],
+      "unchanged": 10,
+      "review_required": 54,
+      "rows": [
+        {
+          "pdp": 1,
+          "current_sp": [
+            "P1.1.1",
+            "K1.1.1",
+            "A1.1.1"
+          ],
+          "candidate_sp": [
+            "P1.1.1",
+            "K1.1.1",
+            "K1.1.5",
+            "A1.1.1"
+          ],
+          "added": [
+            "K1.1.5"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 2,
+          "current_sp": [
+            "P1.1.1",
+            "K1.1.2",
+            "A1.1.2"
+          ],
+          "candidate_sp": [
+            "P1.1.1",
+            "K1.1.2",
+            "K1.1.3",
+            "K1.1.4",
+            "A1.1.2"
+          ],
+          "added": [
+            "K1.1.3",
+            "K1.1.4"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 3,
+          "current_sp": [
+            "P1.1.2",
+            "K1.1.3",
+            "A1.1.3"
+          ],
+          "candidate_sp": [
+            "P1.1.2",
+            "K1.1.6",
+            "A1.1.3"
+          ],
+          "added": [
+            "K1.1.6"
+          ],
+          "removed": [
+            "K1.1.3"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 4,
+          "current_sp": [
+            "P1.1.3",
+            "K1.1.4",
+            "A1.1.4"
+          ],
+          "candidate_sp": [
+            "P1.1.3",
+            "K1.1.7",
+            "A1.1.4"
+          ],
+          "added": [
+            "K1.1.7"
+          ],
+          "removed": [
+            "K1.1.4"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 5,
+          "current_sp": [
+            "P1.1.4",
+            "K1.1.5",
+            "A1.1.5"
+          ],
+          "candidate_sp": [
+            "P1.1.4",
+            "K1.1.8",
+            "A1.1.5"
+          ],
+          "added": [
+            "K1.1.8"
+          ],
+          "removed": [
+            "K1.1.5"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 6,
+          "current_sp": [
+            "P1.1.4",
+            "K1.1.6",
+            "A1.1.6"
+          ],
+          "candidate_sp": [
+            "P1.1.4",
+            "K1.1.8",
+            "A1.1.6"
+          ],
+          "added": [
+            "K1.1.8"
+          ],
+          "removed": [
+            "K1.1.6"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 7,
+          "current_sp": [
+            "P1.1.5",
+            "K1.1.7"
+          ],
+          "candidate_sp": [
+            "P1.1.5",
+            "K1.1.9",
+            "A1.1.3"
+          ],
+          "added": [
+            "K1.1.9",
+            "A1.1.3"
+          ],
+          "removed": [
+            "K1.1.7"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 8,
+          "current_sp": [
+            "P1.1.6",
+            "K1.1.8",
+            "A1.1.7"
+          ],
+          "candidate_sp": [
+            "P1.1.6",
+            "K1.1.10",
+            "A1.1.7"
+          ],
+          "added": [
+            "K1.1.10"
+          ],
+          "removed": [
+            "K1.1.8"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 9,
+          "current_sp": [
+            "P1.1.7",
+            "K1.1.9",
+            "A1.2.1"
+          ],
+          "candidate_sp": [
+            "P1.1.7",
+            "K1.1.11",
+            "A1.1.2"
+          ],
+          "added": [
+            "K1.1.11",
+            "A1.1.2"
+          ],
+          "removed": [
+            "K1.1.9",
+            "A1.2.1"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 10,
+          "current_sp": [
+            "P1.1.7",
+            "K1.1.10",
+            "A1.2.2"
+          ],
+          "candidate_sp": [
+            "P1.1.7",
+            "K1.1.11",
+            "A1.1.7"
+          ],
+          "added": [
+            "K1.1.11",
+            "A1.1.7"
+          ],
+          "removed": [
+            "K1.1.10",
+            "A1.2.2"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 11,
+          "current_sp": [
+            "P1.2.1",
+            "A1.2.3"
+          ],
+          "candidate_sp": [
+            "P1.2.1",
+            "K1.2.1",
+            "K1.2.2",
+            "A1.2.3",
+            "A1.2.4"
+          ],
+          "added": [
+            "K1.2.1",
+            "K1.2.2",
+            "A1.2.4"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 12,
+          "current_sp": [
+            "P1.2.2",
+            "K1.1.11",
+            "A1.2.4"
+          ],
+          "candidate_sp": [
+            "P1.2.2",
+            "K1.2.3",
+            "A1.2.2"
+          ],
+          "added": [
+            "K1.2.3",
+            "A1.2.2"
+          ],
+          "removed": [
+            "K1.1.11",
+            "A1.2.4"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 13,
+          "current_sp": [
+            "P1.2.3",
+            "K1.2.1"
+          ],
+          "candidate_sp": [
+            "P1.2.3",
+            "K1.2.4",
+            "A1.2.1"
+          ],
+          "added": [
+            "K1.2.4",
+            "A1.2.1"
+          ],
+          "removed": [
+            "K1.2.1"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 14,
+          "current_sp": [
+            "P1.2.4",
+            "K1.2.2",
+            "A1.2.5"
+          ],
+          "candidate_sp": [
+            "P1.2.4",
+            "K1.2.5",
+            "K1.2.6",
+            "A1.2.5"
+          ],
+          "added": [
+            "K1.2.5",
+            "K1.2.6"
+          ],
+          "removed": [
+            "K1.2.2"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 15,
+          "current_sp": [
+            "P1.2.4",
+            "K1.2.3",
+            "A1.2.6"
+          ],
+          "candidate_sp": [
+            "P1.2.4",
+            "K1.2.5",
+            "K1.2.8",
+            "A1.2.6"
+          ],
+          "added": [
+            "K1.2.5",
+            "K1.2.8"
+          ],
+          "removed": [
+            "K1.2.3"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 16,
+          "current_sp": [
+            "P1.2.5",
+            "K1.2.4",
+            "A1.2.7"
+          ],
+          "candidate_sp": [
+            "P1.2.5",
+            "K1.2.7",
+            "A1.2.7"
+          ],
+          "added": [
+            "K1.2.7"
+          ],
+          "removed": [
+            "K1.2.4"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 17,
+          "current_sp": [
+            "P1.3.1",
+            "K1.2.5",
+            "A1.3.1"
+          ],
+          "candidate_sp": [
+            "P1.3.1",
+            "K1.3.1",
+            "A1.3.1"
+          ],
+          "added": [
+            "K1.3.1"
+          ],
+          "removed": [
+            "K1.2.5"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 18,
+          "current_sp": [
+            "P1.3.2",
+            "K1.2.6",
+            "A1.3.2"
+          ],
+          "candidate_sp": [
+            "P1.3.2",
+            "K1.3.2",
+            "A1.3.2"
+          ],
+          "added": [
+            "K1.3.2"
+          ],
+          "removed": [
+            "K1.2.6"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 19,
+          "current_sp": [
+            "P1.3.2",
+            "K1.2.7"
+          ],
+          "candidate_sp": [
+            "P1.3.2",
+            "K1.3.2",
+            "A1.3.3"
+          ],
+          "added": [
+            "K1.3.2",
+            "A1.3.3"
+          ],
+          "removed": [
+            "K1.2.7"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 20,
+          "current_sp": [
+            "P1.3.3",
+            "K1.2.8",
+            "A1.3.3"
+          ],
+          "candidate_sp": [
+            "P1.3.3",
+            "K1.3.3",
+            "A1.3.5"
+          ],
+          "added": [
+            "K1.3.3",
+            "A1.3.5"
+          ],
+          "removed": [
+            "K1.2.8",
+            "A1.3.3"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 21,
+          "current_sp": [
+            "P1.3.4",
+            "A1.3.4"
+          ],
+          "candidate_sp": [
+            "P1.3.4",
+            "K1.3.3",
+            "A1.3.4"
+          ],
+          "added": [
+            "K1.3.3"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 22,
+          "current_sp": [
+            "P1.4.1",
+            "K1.3.1",
+            "A1.3.5"
+          ],
+          "candidate_sp": [
+            "P1.4.1",
+            "K1.4.1",
+            "K1.4.2",
+            "A1.4.3"
+          ],
+          "added": [
+            "K1.4.1",
+            "K1.4.2",
+            "A1.4.3"
+          ],
+          "removed": [
+            "K1.3.1",
+            "A1.3.5"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 23,
+          "current_sp": [
+            "P1.4.2",
+            "K1.3.2",
+            "A1.4.1"
+          ],
+          "candidate_sp": [
+            "P1.4.2",
+            "K1.4.3",
+            "A1.4.1"
+          ],
+          "added": [
+            "K1.4.3"
+          ],
+          "removed": [
+            "K1.3.2"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 24,
+          "current_sp": [
+            "P1.4.2",
+            "K1.3.3",
+            "A1.4.2"
+          ],
+          "candidate_sp": [
+            "P1.4.2",
+            "K1.4.3",
+            "A1.4.2"
+          ],
+          "added": [
+            "K1.4.3"
+          ],
+          "removed": [
+            "K1.3.3"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 25,
+          "current_sp": [
+            "P1.4.3",
+            "K1.4.1"
+          ],
+          "candidate_sp": [
+            "P1.4.3",
+            "K1.4.4",
+            "A1.4.4"
+          ],
+          "added": [
+            "K1.4.4",
+            "A1.4.4"
+          ],
+          "removed": [
+            "K1.4.1"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 26,
+          "current_sp": [
+            "P1.4.4",
+            "K1.4.2",
+            "A1.4.3"
+          ],
+          "candidate_sp": [
+            "P1.4.4",
+            "K1.4.4",
+            "A1.4.3"
+          ],
+          "added": [
+            "K1.4.4"
+          ],
+          "removed": [
+            "K1.4.2"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 27,
+          "current_sp": [
+            "P1.4.5",
+            "K1.4.3",
+            "A1.4.4"
+          ],
+          "candidate_sp": [
+            "P1.4.5",
+            "K1.4.5",
+            "A1.4.2"
+          ],
+          "added": [
+            "K1.4.5",
+            "A1.4.2"
+          ],
+          "removed": [
+            "K1.4.3",
+            "A1.4.4"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 28,
+          "current_sp": [
+            "P1.4.5",
+            "K1.4.4",
+            "A1.4.5"
+          ],
+          "candidate_sp": [
+            "P1.4.5",
+            "K1.4.5",
+            "A1.4.5"
+          ],
+          "added": [
+            "K1.4.5"
+          ],
+          "removed": [
+            "K1.4.4"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 29,
+          "current_sp": [
+            "P1.4.6",
+            "K1.4.5",
+            "A1.4.6"
+          ],
+          "candidate_sp": [
+            "P1.4.6",
+            "K1.4.6",
+            "A1.4.6"
+          ],
+          "added": [
+            "K1.4.6"
+          ],
+          "removed": [
+            "K1.4.5"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 30,
+          "current_sp": [
+            "P1.4.7",
+            "K1.4.6",
+            "A1.4.7"
+          ],
+          "candidate_sp": [
+            "P1.4.7",
+            "K1.4.6",
+            "A1.4.7"
+          ],
+          "added": [],
+          "removed": [],
+          "review_status": "CODE_SET_UNCHANGED"
+        },
+        {
+          "pdp": 31,
+          "current_sp": [
+            "P1.4.8"
+          ],
+          "candidate_sp": [
+            "P1.4.8",
+            "K1.4.6",
+            "A1.4.2"
+          ],
+          "added": [
+            "K1.4.6",
+            "A1.4.2"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 32,
+          "current_sp": [
+            "P2.1.1",
+            "K2.1.1",
+            "A2.1.1"
+          ],
+          "candidate_sp": [
+            "P2.1.1",
+            "K2.1.1",
+            "A2.1.1"
+          ],
+          "added": [],
+          "removed": [],
+          "review_status": "CODE_SET_UNCHANGED"
+        },
+        {
+          "pdp": 33,
+          "current_sp": [
+            "P2.1.1",
+            "K2.1.2",
+            "A2.1.2"
+          ],
+          "candidate_sp": [
+            "P2.1.1",
+            "K2.1.1",
+            "A2.1.2"
+          ],
+          "added": [
+            "K2.1.1"
+          ],
+          "removed": [
+            "K2.1.2"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 34,
+          "current_sp": [
+            "P2.1.2",
+            "A2.1.3"
+          ],
+          "candidate_sp": [
+            "P2.1.2",
+            "K2.1.2",
+            "A2.1.3"
+          ],
+          "added": [
+            "K2.1.2"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 35,
+          "current_sp": [
+            "P2.1.3",
+            "K2.1.3"
+          ],
+          "candidate_sp": [
+            "P2.1.3",
+            "K2.1.2",
+            "A2.1.4"
+          ],
+          "added": [
+            "K2.1.2",
+            "A2.1.4"
+          ],
+          "removed": [
+            "K2.1.3"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 36,
+          "current_sp": [
+            "P2.1.4",
+            "K2.1.4",
+            "A2.1.4"
+          ],
+          "candidate_sp": [
+            "P2.1.4",
+            "K2.1.3",
+            "A2.1.4"
+          ],
+          "added": [
+            "K2.1.3"
+          ],
+          "removed": [
+            "K2.1.4"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 37,
+          "current_sp": [
+            "P2.1.4",
+            "A2.1.5"
+          ],
+          "candidate_sp": [
+            "P2.1.4",
+            "K2.1.3",
+            "A2.1.5"
+          ],
+          "added": [
+            "K2.1.3"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 38,
+          "current_sp": [
+            "P2.1.5",
+            "K2.1.5",
+            "A2.1.6"
+          ],
+          "candidate_sp": [
+            "P2.1.5",
+            "K2.1.4",
+            "A2.1.6"
+          ],
+          "added": [
+            "K2.1.4"
+          ],
+          "removed": [
+            "K2.1.5"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 39,
+          "current_sp": [
+            "P2.1.6",
+            "K2.1.6"
+          ],
+          "candidate_sp": [
+            "P2.1.6",
+            "K2.1.5",
+            "A2.1.7"
+          ],
+          "added": [
+            "K2.1.5",
+            "A2.1.7"
+          ],
+          "removed": [
+            "K2.1.6"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 40,
+          "current_sp": [
+            "P2.1.7",
+            "A2.1.7"
+          ],
+          "candidate_sp": [
+            "P2.1.7",
+            "K2.1.6",
+            "K2.1.7",
+            "A2.1.2"
+          ],
+          "added": [
+            "K2.1.6",
+            "K2.1.7",
+            "A2.1.2"
+          ],
+          "removed": [
+            "A2.1.7"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 41,
+          "current_sp": [
+            "P2.1.7",
+            "K2.1.7",
+            "A2.1.8"
+          ],
+          "candidate_sp": [
+            "P2.1.7",
+            "K2.1.6",
+            "K2.1.7",
+            "A2.1.8"
+          ],
+          "added": [
+            "K2.1.6"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 42,
+          "current_sp": [
+            "P2.1.8",
+            "K2.1.8",
+            "A2.1.9"
+          ],
+          "candidate_sp": [
+            "P2.1.8",
+            "K2.1.6",
+            "K2.1.7",
+            "A2.1.9"
+          ],
+          "added": [
+            "K2.1.6",
+            "K2.1.7"
+          ],
+          "removed": [
+            "K2.1.8"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 43,
+          "current_sp": [
+            "P2.1.9"
+          ],
+          "candidate_sp": [
+            "P2.1.9",
+            "K2.1.8",
+            "A2.1.4"
+          ],
+          "added": [
+            "K2.1.8",
+            "A2.1.4"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 44,
+          "current_sp": [
+            "P3.1.1",
+            "K3.1.1",
+            "K3.1.2",
+            "A3.1.1"
+          ],
+          "candidate_sp": [
+            "P3.1.1",
+            "K3.1.1",
+            "K3.1.2",
+            "A3.1.1"
+          ],
+          "added": [],
+          "removed": [],
+          "review_status": "CODE_SET_UNCHANGED"
+        },
+        {
+          "pdp": 45,
+          "current_sp": [
+            "P3.1.1",
+            "K3.1.3",
+            "A3.1.2"
+          ],
+          "candidate_sp": [
+            "P3.1.1",
+            "K3.1.1",
+            "K3.1.2",
+            "A3.1.2"
+          ],
+          "added": [
+            "K3.1.1",
+            "K3.1.2"
+          ],
+          "removed": [
+            "K3.1.3"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 46,
+          "current_sp": [
+            "P3.1.2",
+            "K3.1.4",
+            "A3.1.3"
+          ],
+          "candidate_sp": [
+            "P3.1.2",
+            "K3.1.2",
+            "A3.1.3"
+          ],
+          "added": [
+            "K3.1.2"
+          ],
+          "removed": [
+            "K3.1.4"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 47,
+          "current_sp": [
+            "P3.1.3",
+            "K3.1.5",
+            "A3.1.4"
+          ],
+          "candidate_sp": [
+            "P3.1.3",
+            "K3.1.3",
+            "K3.1.4",
+            "A3.1.4"
+          ],
+          "added": [
+            "K3.1.3",
+            "K3.1.4"
+          ],
+          "removed": [
+            "K3.1.5"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 48,
+          "current_sp": [
+            "P3.1.4",
+            "K3.1.6",
+            "K3.1.7",
+            "A3.1.5"
+          ],
+          "candidate_sp": [
+            "P3.1.4",
+            "K3.1.5",
+            "A3.1.5"
+          ],
+          "added": [
+            "K3.1.5"
+          ],
+          "removed": [
+            "K3.1.6",
+            "K3.1.7"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 49,
+          "current_sp": [
+            "P3.1.4",
+            "K3.1.8",
+            "A3.1.6"
+          ],
+          "candidate_sp": [
+            "P3.1.4",
+            "K3.1.5",
+            "A3.1.6"
+          ],
+          "added": [
+            "K3.1.5"
+          ],
+          "removed": [
+            "K3.1.8"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 50,
+          "current_sp": [
+            "P3.1.5",
+            "K3.1.9",
+            "A3.1.7"
+          ],
+          "candidate_sp": [
+            "P3.1.5",
+            "K3.1.5",
+            "K3.1.6",
+            "A3.1.7"
+          ],
+          "added": [
+            "K3.1.5",
+            "K3.1.6"
+          ],
+          "removed": [
+            "K3.1.9"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 51,
+          "current_sp": [
+            "P3.1.6",
+            "K3.1.10",
+            "A3.1.8"
+          ],
+          "candidate_sp": [
+            "P3.1.6",
+            "K3.1.7",
+            "K3.1.8",
+            "K3.1.9",
+            "K3.1.10",
+            "A3.1.8"
+          ],
+          "added": [
+            "K3.1.7",
+            "K3.1.8",
+            "K3.1.9"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 52,
+          "current_sp": [
+            "P4.1.1",
+            "K4.1.1",
+            "K4.1.2",
+            "A4.1.1",
+            "A4.1.2"
+          ],
+          "candidate_sp": [
+            "P4.1.1",
+            "K4.1.1",
+            "A4.1.1",
+            "A4.1.2"
+          ],
+          "added": [],
+          "removed": [
+            "K4.1.2"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 53,
+          "current_sp": [
+            "P4.1.1",
+            "K4.1.3",
+            "A4.1.3"
+          ],
+          "candidate_sp": [
+            "P4.1.1",
+            "K4.1.3",
+            "A4.1.3"
+          ],
+          "added": [],
+          "removed": [],
+          "review_status": "CODE_SET_UNCHANGED"
+        },
+        {
+          "pdp": 54,
+          "current_sp": [
+            "P4.1.2",
+            "K4.1.4",
+            "A4.1.4"
+          ],
+          "candidate_sp": [
+            "P4.1.2",
+            "K4.1.2",
+            "K4.1.4",
+            "A4.1.4"
+          ],
+          "added": [
+            "K4.1.2"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 55,
+          "current_sp": [
+            "P4.1.3",
+            "K4.1.5",
+            "A4.1.5"
+          ],
+          "candidate_sp": [
+            "P4.1.3",
+            "K4.1.5",
+            "A4.1.5"
+          ],
+          "added": [],
+          "removed": [],
+          "review_status": "CODE_SET_UNCHANGED"
+        },
+        {
+          "pdp": 56,
+          "current_sp": [
+            "P4.2.1",
+            "K4.2.1",
+            "A4.2.1"
+          ],
+          "candidate_sp": [
+            "P4.2.1",
+            "K4.2.1",
+            "K4.2.2",
+            "A4.2.1"
+          ],
+          "added": [
+            "K4.2.2"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 57,
+          "current_sp": [
+            "P4.2.1",
+            "K4.2.2",
+            "A4.2.2"
+          ],
+          "candidate_sp": [
+            "P4.2.1",
+            "K4.2.1",
+            "K4.2.2",
+            "A4.2.2"
+          ],
+          "added": [
+            "K4.2.1"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 58,
+          "current_sp": [
+            "P4.2.2",
+            "K4.2.3",
+            "K4.2.4",
+            "A4.2.3"
+          ],
+          "candidate_sp": [
+            "P4.2.2",
+            "K4.2.3",
+            "K4.2.4",
+            "A4.2.3"
+          ],
+          "added": [],
+          "removed": [],
+          "review_status": "CODE_SET_UNCHANGED"
+        },
+        {
+          "pdp": 59,
+          "current_sp": [
+            "P4.2.3",
+            "K4.2.5",
+            "A4.2.4"
+          ],
+          "candidate_sp": [
+            "P4.2.3",
+            "K4.2.5",
+            "A4.2.4"
+          ],
+          "added": [],
+          "removed": [],
+          "review_status": "CODE_SET_UNCHANGED"
+        },
+        {
+          "pdp": 60,
+          "current_sp": [
+            "P4.2.4",
+            "K4.2.6",
+            "A4.2.5"
+          ],
+          "candidate_sp": [
+            "P4.2.4",
+            "K4.2.6",
+            "A4.2.5"
+          ],
+          "added": [],
+          "removed": [],
+          "review_status": "CODE_SET_UNCHANGED"
+        },
+        {
+          "pdp": 61,
+          "current_sp": [
+            "P4.2.4",
+            "K4.2.7",
+            "A4.2.6"
+          ],
+          "candidate_sp": [
+            "P4.2.4",
+            "K4.2.6",
+            "A4.2.6"
+          ],
+          "added": [
+            "K4.2.6"
+          ],
+          "removed": [
+            "K4.2.7"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 62,
+          "current_sp": [
+            "P4.2.5",
+            "K4.2.8",
+            "A4.2.7"
+          ],
+          "candidate_sp": [
+            "P4.2.5",
+            "K4.2.7",
+            "K4.2.8",
+            "A4.2.7"
+          ],
+          "added": [
+            "K4.2.7"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 63,
+          "current_sp": [
+            "P4.2.6",
+            "K4.2.9",
+            "A4.2.8"
+          ],
+          "candidate_sp": [
+            "P4.2.6",
+            "K4.2.9",
+            "A4.2.8"
+          ],
+          "added": [],
+          "removed": [],
+          "review_status": "CODE_SET_UNCHANGED"
+        },
+        {
+          "pdp": 64,
+          "current_sp": [
+            "P4.2.7",
+            "K4.2.10",
+            "A4.2.9"
+          ],
+          "candidate_sp": [
+            "P4.2.7",
+            "K4.2.10",
+            "A4.2.9"
+          ],
+          "added": [],
+          "removed": [],
+          "review_status": "CODE_SET_UNCHANGED"
+        }
+      ]
+    },
+    "B": {
+      "count": 63,
+      "original_sp_coverage": 167,
+      "candidate_sp_coverage": 167,
+      "removed_from_group": [],
+      "added_to_group": [],
+      "unchanged": 10,
+      "review_required": 53,
+      "rows": [
+        {
+          "pdp": 1,
+          "current_sp": [
+            "P1.1.1",
+            "K1.1.1",
+            "A1.1.1"
+          ],
+          "candidate_sp": [
+            "P1.1.1",
+            "K1.1.1",
+            "K1.1.5",
+            "A1.1.1"
+          ],
+          "added": [
+            "K1.1.5"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 2,
+          "current_sp": [
+            "P1.1.1",
+            "K1.1.2",
+            "A1.1.2"
+          ],
+          "candidate_sp": [
+            "P1.1.1",
+            "K1.1.2",
+            "K1.1.3",
+            "K1.1.4",
+            "A1.1.2"
+          ],
+          "added": [
+            "K1.1.3",
+            "K1.1.4"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 3,
+          "current_sp": [
+            "P1.1.2",
+            "K1.1.3",
+            "A1.1.3"
+          ],
+          "candidate_sp": [
+            "P1.1.2",
+            "K1.1.6",
+            "A1.1.3"
+          ],
+          "added": [
+            "K1.1.6"
+          ],
+          "removed": [
+            "K1.1.3"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 4,
+          "current_sp": [
+            "P1.1.3",
+            "K1.1.4",
+            "A1.1.4"
+          ],
+          "candidate_sp": [
+            "P1.1.3",
+            "K1.1.7",
+            "A1.1.4"
+          ],
+          "added": [
+            "K1.1.7"
+          ],
+          "removed": [
+            "K1.1.4"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 5,
+          "current_sp": [
+            "P1.1.4",
+            "K1.1.5",
+            "A1.1.5"
+          ],
+          "candidate_sp": [
+            "P1.1.4",
+            "K1.1.8",
+            "A1.1.5"
+          ],
+          "added": [
+            "K1.1.8"
+          ],
+          "removed": [
+            "K1.1.5"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 6,
+          "current_sp": [
+            "P1.1.4",
+            "K1.1.6",
+            "A1.1.6"
+          ],
+          "candidate_sp": [
+            "P1.1.4",
+            "K1.1.8",
+            "A1.1.6"
+          ],
+          "added": [
+            "K1.1.8"
+          ],
+          "removed": [
+            "K1.1.6"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 7,
+          "current_sp": [
+            "P1.1.5",
+            "K1.1.7"
+          ],
+          "candidate_sp": [
+            "P1.1.5",
+            "K1.1.9",
+            "A1.1.3"
+          ],
+          "added": [
+            "K1.1.9",
+            "A1.1.3"
+          ],
+          "removed": [
+            "K1.1.7"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 8,
+          "current_sp": [
+            "P1.1.6",
+            "K1.1.8",
+            "A1.1.7"
+          ],
+          "candidate_sp": [
+            "P1.1.6",
+            "K1.1.10",
+            "A1.1.7"
+          ],
+          "added": [
+            "K1.1.10"
+          ],
+          "removed": [
+            "K1.1.8"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 9,
+          "current_sp": [
+            "P1.1.7",
+            "K1.1.9",
+            "A1.2.1"
+          ],
+          "candidate_sp": [
+            "P1.1.7",
+            "K1.1.11",
+            "A1.1.2"
+          ],
+          "added": [
+            "K1.1.11",
+            "A1.1.2"
+          ],
+          "removed": [
+            "K1.1.9",
+            "A1.2.1"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 10,
+          "current_sp": [
+            "P1.1.7",
+            "K1.1.10",
+            "A1.2.2"
+          ],
+          "candidate_sp": [
+            "P1.1.7",
+            "K1.1.11",
+            "A1.1.7"
+          ],
+          "added": [
+            "K1.1.11",
+            "A1.1.7"
+          ],
+          "removed": [
+            "K1.1.10",
+            "A1.2.2"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 11,
+          "current_sp": [
+            "P1.2.1",
+            "A1.2.3"
+          ],
+          "candidate_sp": [
+            "P1.2.1",
+            "K1.2.1",
+            "K1.2.2",
+            "A1.2.3",
+            "A1.2.4"
+          ],
+          "added": [
+            "K1.2.1",
+            "K1.2.2",
+            "A1.2.4"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 12,
+          "current_sp": [
+            "P1.2.2",
+            "K1.1.11",
+            "A1.2.4"
+          ],
+          "candidate_sp": [
+            "P1.2.2",
+            "K1.2.3",
+            "A1.2.2"
+          ],
+          "added": [
+            "K1.2.3",
+            "A1.2.2"
+          ],
+          "removed": [
+            "K1.1.11",
+            "A1.2.4"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 13,
+          "current_sp": [
+            "P1.2.3",
+            "K1.2.1"
+          ],
+          "candidate_sp": [
+            "P1.2.3",
+            "K1.2.4",
+            "A1.2.1"
+          ],
+          "added": [
+            "K1.2.4",
+            "A1.2.1"
+          ],
+          "removed": [
+            "K1.2.1"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 14,
+          "current_sp": [
+            "P1.2.4",
+            "K1.2.2",
+            "A1.2.5"
+          ],
+          "candidate_sp": [
+            "P1.2.4",
+            "K1.2.5",
+            "K1.2.6",
+            "A1.2.5"
+          ],
+          "added": [
+            "K1.2.5",
+            "K1.2.6"
+          ],
+          "removed": [
+            "K1.2.2"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 15,
+          "current_sp": [
+            "P1.2.4",
+            "K1.2.3",
+            "A1.2.6"
+          ],
+          "candidate_sp": [
+            "P1.2.4",
+            "K1.2.5",
+            "K1.2.8",
+            "A1.2.6"
+          ],
+          "added": [
+            "K1.2.5",
+            "K1.2.8"
+          ],
+          "removed": [
+            "K1.2.3"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 16,
+          "current_sp": [
+            "P1.2.5",
+            "K1.2.4",
+            "A1.2.7"
+          ],
+          "candidate_sp": [
+            "P1.2.5",
+            "K1.2.7",
+            "A1.2.7"
+          ],
+          "added": [
+            "K1.2.7"
+          ],
+          "removed": [
+            "K1.2.4"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 17,
+          "current_sp": [
+            "P1.3.1",
+            "K1.2.5",
+            "A1.3.1"
+          ],
+          "candidate_sp": [
+            "P1.3.1",
+            "K1.3.1",
+            "A1.3.1"
+          ],
+          "added": [
+            "K1.3.1"
+          ],
+          "removed": [
+            "K1.2.5"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 18,
+          "current_sp": [
+            "P1.3.2",
+            "K1.2.6",
+            "A1.3.2"
+          ],
+          "candidate_sp": [
+            "P1.3.2",
+            "K1.3.2",
+            "A1.3.2"
+          ],
+          "added": [
+            "K1.3.2"
+          ],
+          "removed": [
+            "K1.2.6"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 19,
+          "current_sp": [
+            "P1.3.2",
+            "K1.2.7"
+          ],
+          "candidate_sp": [
+            "P1.3.2",
+            "K1.3.2",
+            "A1.3.3"
+          ],
+          "added": [
+            "K1.3.2",
+            "A1.3.3"
+          ],
+          "removed": [
+            "K1.2.7"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 20,
+          "current_sp": [
+            "P1.3.3",
+            "K1.2.8",
+            "A1.3.3"
+          ],
+          "candidate_sp": [
+            "P1.3.3",
+            "K1.3.3",
+            "A1.3.5"
+          ],
+          "added": [
+            "K1.3.3",
+            "A1.3.5"
+          ],
+          "removed": [
+            "K1.2.8",
+            "A1.3.3"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 21,
+          "current_sp": [
+            "P1.3.4",
+            "A1.3.4"
+          ],
+          "candidate_sp": [
+            "P1.3.4",
+            "K1.3.3",
+            "A1.3.4"
+          ],
+          "added": [
+            "K1.3.3"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 22,
+          "current_sp": [
+            "P1.4.1",
+            "K1.3.1",
+            "A1.3.5"
+          ],
+          "candidate_sp": [
+            "P1.4.1",
+            "K1.4.1",
+            "K1.4.2",
+            "A1.4.3"
+          ],
+          "added": [
+            "K1.4.1",
+            "K1.4.2",
+            "A1.4.3"
+          ],
+          "removed": [
+            "K1.3.1",
+            "A1.3.5"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 23,
+          "current_sp": [
+            "P1.4.2",
+            "K1.3.2",
+            "A1.4.1"
+          ],
+          "candidate_sp": [
+            "P1.4.2",
+            "K1.4.3",
+            "A1.4.1"
+          ],
+          "added": [
+            "K1.4.3"
+          ],
+          "removed": [
+            "K1.3.2"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 24,
+          "current_sp": [
+            "P1.4.2",
+            "K1.3.3",
+            "A1.4.2"
+          ],
+          "candidate_sp": [
+            "P1.4.2",
+            "K1.4.3",
+            "A1.4.2"
+          ],
+          "added": [
+            "K1.4.3"
+          ],
+          "removed": [
+            "K1.3.3"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 25,
+          "current_sp": [
+            "P1.4.3",
+            "K1.4.1"
+          ],
+          "candidate_sp": [
+            "P1.4.3",
+            "K1.4.4",
+            "A1.4.4"
+          ],
+          "added": [
+            "K1.4.4",
+            "A1.4.4"
+          ],
+          "removed": [
+            "K1.4.1"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 26,
+          "current_sp": [
+            "P1.4.4",
+            "K1.4.2",
+            "A1.4.3"
+          ],
+          "candidate_sp": [
+            "P1.4.4",
+            "K1.4.4",
+            "A1.4.3"
+          ],
+          "added": [
+            "K1.4.4"
+          ],
+          "removed": [
+            "K1.4.2"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 27,
+          "current_sp": [
+            "P1.4.5",
+            "K1.4.3",
+            "A1.4.4"
+          ],
+          "candidate_sp": [
+            "P1.4.5",
+            "K1.4.5",
+            "A1.4.2"
+          ],
+          "added": [
+            "K1.4.5",
+            "A1.4.2"
+          ],
+          "removed": [
+            "K1.4.3",
+            "A1.4.4"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 28,
+          "current_sp": [
+            "P1.4.5",
+            "K1.4.4",
+            "A1.4.5"
+          ],
+          "candidate_sp": [
+            "P1.4.5",
+            "K1.4.5",
+            "A1.4.5"
+          ],
+          "added": [
+            "K1.4.5"
+          ],
+          "removed": [
+            "K1.4.4"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 29,
+          "current_sp": [
+            "P1.4.6",
+            "K1.4.5",
+            "A1.4.6"
+          ],
+          "candidate_sp": [
+            "P1.4.6",
+            "K1.4.6",
+            "A1.4.6"
+          ],
+          "added": [
+            "K1.4.6"
+          ],
+          "removed": [
+            "K1.4.5"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 30,
+          "current_sp": [
+            "P1.4.7",
+            "K1.4.6",
+            "A1.4.7"
+          ],
+          "candidate_sp": [
+            "P1.4.7",
+            "K1.4.6",
+            "A1.4.7"
+          ],
+          "added": [],
+          "removed": [],
+          "review_status": "CODE_SET_UNCHANGED"
+        },
+        {
+          "pdp": 31,
+          "current_sp": [
+            "P1.4.8"
+          ],
+          "candidate_sp": [
+            "P1.4.8",
+            "K1.4.6",
+            "A1.4.2"
+          ],
+          "added": [
+            "K1.4.6",
+            "A1.4.2"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 32,
+          "current_sp": [
+            "P2.1.1",
+            "K2.1.1",
+            "A2.1.1"
+          ],
+          "candidate_sp": [
+            "P2.1.1",
+            "K2.1.1",
+            "A2.1.1"
+          ],
+          "added": [],
+          "removed": [],
+          "review_status": "CODE_SET_UNCHANGED"
+        },
+        {
+          "pdp": 33,
+          "current_sp": [
+            "P2.1.1",
+            "K2.1.2",
+            "A2.1.2"
+          ],
+          "candidate_sp": [
+            "P2.1.1",
+            "K2.1.1",
+            "A2.1.2"
+          ],
+          "added": [
+            "K2.1.1"
+          ],
+          "removed": [
+            "K2.1.2"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 34,
+          "current_sp": [
+            "P2.1.2",
+            "K2.1.3",
+            "A2.1.3"
+          ],
+          "candidate_sp": [
+            "P2.1.2",
+            "K2.1.2",
+            "A2.1.3"
+          ],
+          "added": [
+            "K2.1.2"
+          ],
+          "removed": [
+            "K2.1.3"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 35,
+          "current_sp": [
+            "P2.1.3",
+            "A2.1.4"
+          ],
+          "candidate_sp": [
+            "P2.1.3",
+            "K2.1.2",
+            "A2.1.4"
+          ],
+          "added": [
+            "K2.1.2"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 36,
+          "current_sp": [
+            "P2.1.4",
+            "K2.1.4",
+            "A2.1.5"
+          ],
+          "candidate_sp": [
+            "P2.1.4",
+            "K2.1.3",
+            "A2.1.5"
+          ],
+          "added": [
+            "K2.1.3"
+          ],
+          "removed": [
+            "K2.1.4"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 37,
+          "current_sp": [
+            "P2.1.5",
+            "K2.1.5"
+          ],
+          "candidate_sp": [
+            "P2.1.5",
+            "K2.1.4",
+            "A2.1.2"
+          ],
+          "added": [
+            "K2.1.4",
+            "A2.1.2"
+          ],
+          "removed": [
+            "K2.1.5"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 38,
+          "current_sp": [
+            "P2.1.5",
+            "K2.1.6",
+            "A2.1.6"
+          ],
+          "candidate_sp": [
+            "P2.1.5",
+            "K2.1.4",
+            "A2.1.6"
+          ],
+          "added": [
+            "K2.1.4"
+          ],
+          "removed": [
+            "K2.1.6"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 39,
+          "current_sp": [
+            "P2.1.6",
+            "A2.1.7"
+          ],
+          "candidate_sp": [
+            "P2.1.6",
+            "K2.1.5",
+            "A2.1.7"
+          ],
+          "added": [
+            "K2.1.5"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 40,
+          "current_sp": [
+            "P2.1.7",
+            "K2.1.7",
+            "A2.1.8"
+          ],
+          "candidate_sp": [
+            "P2.1.7",
+            "K2.1.6",
+            "K2.1.7",
+            "A2.1.8"
+          ],
+          "added": [
+            "K2.1.6"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 41,
+          "current_sp": [
+            "P2.1.8",
+            "K2.1.8",
+            "A2.1.9"
+          ],
+          "candidate_sp": [
+            "P2.1.8",
+            "K2.1.6",
+            "K2.1.7",
+            "A2.1.9"
+          ],
+          "added": [
+            "K2.1.6",
+            "K2.1.7"
+          ],
+          "removed": [
+            "K2.1.8"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 42,
+          "current_sp": [
+            "P2.1.9"
+          ],
+          "candidate_sp": [
+            "P2.1.9",
+            "K2.1.8",
+            "A2.1.4"
+          ],
+          "added": [
+            "K2.1.8",
+            "A2.1.4"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 43,
+          "current_sp": [
+            "P3.1.1",
+            "K3.1.1",
+            "K3.1.2",
+            "A3.1.1"
+          ],
+          "candidate_sp": [
+            "P3.1.1",
+            "K3.1.1",
+            "K3.1.2",
+            "A3.1.1"
+          ],
+          "added": [],
+          "removed": [],
+          "review_status": "CODE_SET_UNCHANGED"
+        },
+        {
+          "pdp": 44,
+          "current_sp": [
+            "P3.1.1",
+            "K3.1.3",
+            "A3.1.2"
+          ],
+          "candidate_sp": [
+            "P3.1.1",
+            "K3.1.1",
+            "K3.1.2",
+            "A3.1.2"
+          ],
+          "added": [
+            "K3.1.1",
+            "K3.1.2"
+          ],
+          "removed": [
+            "K3.1.3"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 45,
+          "current_sp": [
+            "P3.1.2",
+            "K3.1.4",
+            "A3.1.3"
+          ],
+          "candidate_sp": [
+            "P3.1.2",
+            "K3.1.2",
+            "A3.1.3"
+          ],
+          "added": [
+            "K3.1.2"
+          ],
+          "removed": [
+            "K3.1.4"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 46,
+          "current_sp": [
+            "P3.1.3",
+            "K3.1.5",
+            "A3.1.4"
+          ],
+          "candidate_sp": [
+            "P3.1.3",
+            "K3.1.3",
+            "K3.1.4",
+            "A3.1.4"
+          ],
+          "added": [
+            "K3.1.3",
+            "K3.1.4"
+          ],
+          "removed": [
+            "K3.1.5"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 47,
+          "current_sp": [
+            "P3.1.4",
+            "K3.1.6",
+            "K3.1.7",
+            "A3.1.5"
+          ],
+          "candidate_sp": [
+            "P3.1.4",
+            "K3.1.5",
+            "A3.1.5"
+          ],
+          "added": [
+            "K3.1.5"
+          ],
+          "removed": [
+            "K3.1.6",
+            "K3.1.7"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 48,
+          "current_sp": [
+            "P3.1.4",
+            "K3.1.8",
+            "A3.1.6"
+          ],
+          "candidate_sp": [
+            "P3.1.4",
+            "K3.1.5",
+            "A3.1.6"
+          ],
+          "added": [
+            "K3.1.5"
+          ],
+          "removed": [
+            "K3.1.8"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 49,
+          "current_sp": [
+            "P3.1.5",
+            "K3.1.9",
+            "A3.1.7"
+          ],
+          "candidate_sp": [
+            "P3.1.5",
+            "K3.1.5",
+            "K3.1.6",
+            "A3.1.7"
+          ],
+          "added": [
+            "K3.1.5",
+            "K3.1.6"
+          ],
+          "removed": [
+            "K3.1.9"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 50,
+          "current_sp": [
+            "P3.1.6",
+            "K3.1.10",
+            "A3.1.8"
+          ],
+          "candidate_sp": [
+            "P3.1.6",
+            "K3.1.7",
+            "K3.1.8",
+            "K3.1.9",
+            "K3.1.10",
+            "A3.1.8"
+          ],
+          "added": [
+            "K3.1.7",
+            "K3.1.8",
+            "K3.1.9"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 51,
+          "current_sp": [
+            "P4.1.1",
+            "K4.1.1",
+            "K4.1.2",
+            "A4.1.1",
+            "A4.1.2"
+          ],
+          "candidate_sp": [
+            "P4.1.1",
+            "K4.1.1",
+            "A4.1.1",
+            "A4.1.2"
+          ],
+          "added": [],
+          "removed": [
+            "K4.1.2"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 52,
+          "current_sp": [
+            "P4.1.1",
+            "K4.1.3",
+            "A4.1.3"
+          ],
+          "candidate_sp": [
+            "P4.1.1",
+            "K4.1.3",
+            "A4.1.3"
+          ],
+          "added": [],
+          "removed": [],
+          "review_status": "CODE_SET_UNCHANGED"
+        },
+        {
+          "pdp": 53,
+          "current_sp": [
+            "P4.1.2",
+            "K4.1.4",
+            "A4.1.4"
+          ],
+          "candidate_sp": [
+            "P4.1.2",
+            "K4.1.2",
+            "K4.1.4",
+            "A4.1.4"
+          ],
+          "added": [
+            "K4.1.2"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 54,
+          "current_sp": [
+            "P4.1.3",
+            "K4.1.5",
+            "A4.1.5"
+          ],
+          "candidate_sp": [
+            "P4.1.3",
+            "K4.1.5",
+            "A4.1.5"
+          ],
+          "added": [],
+          "removed": [],
+          "review_status": "CODE_SET_UNCHANGED"
+        },
+        {
+          "pdp": 55,
+          "current_sp": [
+            "P4.2.1",
+            "K4.2.1",
+            "A4.2.1"
+          ],
+          "candidate_sp": [
+            "P4.2.1",
+            "K4.2.1",
+            "K4.2.2",
+            "A4.2.1"
+          ],
+          "added": [
+            "K4.2.2"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 56,
+          "current_sp": [
+            "P4.2.1",
+            "K4.2.2",
+            "A4.2.2"
+          ],
+          "candidate_sp": [
+            "P4.2.1",
+            "K4.2.1",
+            "K4.2.2",
+            "A4.2.2"
+          ],
+          "added": [
+            "K4.2.1"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 57,
+          "current_sp": [
+            "P4.2.2",
+            "K4.2.3",
+            "K4.2.4",
+            "A4.2.3"
+          ],
+          "candidate_sp": [
+            "P4.2.2",
+            "K4.2.3",
+            "K4.2.4",
+            "A4.2.3"
+          ],
+          "added": [],
+          "removed": [],
+          "review_status": "CODE_SET_UNCHANGED"
+        },
+        {
+          "pdp": 58,
+          "current_sp": [
+            "P4.2.3",
+            "K4.2.5",
+            "A4.2.4"
+          ],
+          "candidate_sp": [
+            "P4.2.3",
+            "K4.2.5",
+            "A4.2.4"
+          ],
+          "added": [],
+          "removed": [],
+          "review_status": "CODE_SET_UNCHANGED"
+        },
+        {
+          "pdp": 59,
+          "current_sp": [
+            "P4.2.4",
+            "K4.2.6",
+            "A4.2.5"
+          ],
+          "candidate_sp": [
+            "P4.2.4",
+            "K4.2.6",
+            "A4.2.5"
+          ],
+          "added": [],
+          "removed": [],
+          "review_status": "CODE_SET_UNCHANGED"
+        },
+        {
+          "pdp": 60,
+          "current_sp": [
+            "P4.2.4",
+            "K4.2.7",
+            "A4.2.6"
+          ],
+          "candidate_sp": [
+            "P4.2.4",
+            "K4.2.6",
+            "A4.2.6"
+          ],
+          "added": [
+            "K4.2.6"
+          ],
+          "removed": [
+            "K4.2.7"
+          ],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 61,
+          "current_sp": [
+            "P4.2.5",
+            "K4.2.8",
+            "A4.2.7"
+          ],
+          "candidate_sp": [
+            "P4.2.5",
+            "K4.2.7",
+            "K4.2.8",
+            "A4.2.7"
+          ],
+          "added": [
+            "K4.2.7"
+          ],
+          "removed": [],
+          "review_status": "REVIEW_REQUIRED"
+        },
+        {
+          "pdp": 62,
+          "current_sp": [
+            "P4.2.6",
+            "K4.2.9",
+            "A4.2.8"
+          ],
+          "candidate_sp": [
+            "P4.2.6",
+            "K4.2.9",
+            "A4.2.8"
+          ],
+          "added": [],
+          "removed": [],
+          "review_status": "CODE_SET_UNCHANGED"
+        },
+        {
+          "pdp": 63,
+          "current_sp": [
+            "P4.2.7",
+            "K4.2.10",
+            "A4.2.9"
+          ],
+          "candidate_sp": [
+            "P4.2.7",
+            "K4.2.10",
+            "A4.2.9"
+          ],
+          "added": [],
+          "removed": [],
+          "review_status": "CODE_SET_UNCHANGED"
+        }
+      ]
+    }
+  }
+}
