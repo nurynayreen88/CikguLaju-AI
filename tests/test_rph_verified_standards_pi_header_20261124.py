@@ -318,6 +318,8 @@ def test_pi_compact_identity_word_removes_only_labels_and_bolds_jawi():
     assert p[0].text == "ڤنديديقن اسلام"
     assert p[1].text == "تاهون ٣"
     assert p[0].runs[0].bold
+    from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT
+    assert doc.tables[0].cell(0,0).vertical_alignment == WD_CELL_VERTICAL_ALIGNMENT.CENTER
     assert p[2].text == before.tables[0].cell(0,0).paragraphs[2].text
     assert doc.tables[0].cell(0,1).text == before.tables[0].cell(0,1).text
     for a,b in zip(doc.tables[1:],before.tables[1:]):
@@ -340,4 +342,34 @@ def test_pi_pdf_compact_identity_removes_only_two_labels():
     assert identity._cellvalues[1][0].text=="تاهون ٢"
     assert identity._cellvalues[0][1]==identity._cellvalues[1][1]==""
     assert identity._cellvalues[2]==original[2]._cellvalues[7]
+    assert result[-3] is original[4] and result[-1] is original[6]
+
+def test_pi_topic_duration_display_only():
+    from web.rph_pi_topic_display_20261124 import clean_pi_topic
+    samples = {
+        "عقيدة ١ جم": "عقيدة",
+        "القرءان ٣٠ مينيت": "القرءان",
+        "القرءان ١ جم ٣٠ مينيت": "القرءان",
+        "القرءان (تجويد) ٣٠ مينيت (اولڠن حكوم إظهار شفوي)": "القرءان (تجويد) (اولڠن حكوم إظهار شفوي)",
+        "Jawi 1 jam setengah": "Jawi",
+        "Jawi setengah jam": "Jawi",
+        "Jawi 1 jam": "Jawi",
+        "Surah ١": "Surah ١",
+    }
+    for source, expected in samples.items():
+        assert clean_pi_topic(source)==expected
+        assert clean_pi_topic(expected)==expected
+
+def test_pi_pdf_topic_duration_and_vertical_center():
+    original=_pi_story()
+    style=getSampleStyleSheet()["Normal"]
+    original[2]._cellvalues[0][0]=Paragraph("ڤنديديقن اسلام",style)
+    original[2]._cellvalues[1][0]=Paragraph("تاهون ٢",style)
+    original[2]._cellvalues[7][0]=Paragraph("القرءان ١ جم ٣٠ مينيت (اولڠن)",style)
+    result=reflow_verified_pi_header({"task":"rph","subject":"Pendidikan Islam","year":"Tahun 2"},original)
+    banner=result[2]
+    identity=banner._cellvalues[0][1]
+    assert identity._cellvalues[2][0].getPlainText()=="القرءان (اولڠن)"
+    assert banner._cellStyles[0][1].valign=="MIDDLE"
+    assert original[2]._cellvalues[7][0].getPlainText()=="القرءان ١ جم ٣٠ مينيت (اولڠن)"
     assert result[-3] is original[4] and result[-1] is original[6]
