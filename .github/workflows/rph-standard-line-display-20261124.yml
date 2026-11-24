@@ -1,0 +1,21 @@
+name: Native SK RPH standard line display source regression
+on:
+  pull_request:
+    paths:
+      - 'web/rph_standard_line_display_20261124.py'
+      - 'tests/test_rph_standard_line_display_20261124.py'
+      - '.github/workflows/rph-standard-line-display-20261124.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pytest python-docx reportlab pypdf flask
+      - run: python -m pytest -q -s tests/test_rph_standard_line_display_20261124.py
