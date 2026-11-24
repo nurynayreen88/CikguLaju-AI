@@ -21,10 +21,10 @@ HEADER_PANELS = {"ltr": ("identity", "teacher"), "rtl": ("teacher", "identity")}
 
 # Only verified structured RPH adapters are enabled. Other families must be
 # audited one by one, not silently converted into DLP/PPKI structures.
-STRUCTURED_SOURCES = frozenset(("dlp", "ppki"))
+STRUCTURED_SOURCES = frozenset(("dlp", "ppki", "akuatik_v2"))
 
 
-def render_structured_rph(*, source: Literal["dlp", "ppki"],
+def render_structured_rph(*, source: Literal["dlp", "ppki", "akuatik_v2"],
                           fmt: Literal["word", "docx", "pdf"],
                           heading, details, activities, footer,
                           compact=False, mathematics=False,
@@ -44,8 +44,8 @@ def render_structured_rph(*, source: Literal["dlp", "ppki"],
     if not all(isinstance(rows, (list, tuple)) for rows in
                (details, activities, footer)):
         raise ValueError("Missing source-backed RPH rows")
-    if source == "ppki" and mathematics:
-        raise ValueError("PPKI cannot use the DLP Mathematics adapter")
+    if source in ("ppki", "akuatik_v2") and mathematics:
+        raise ValueError("Non-mathematics source cannot use the DLP Mathematics adapter")
     # Delayed import keeps the existing DLP public API and all its source
     # parsers unchanged; no circular import when dlp_year2_rph calls us.
     from dlp_year2_rph import _word, _pdf
