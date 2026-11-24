@@ -92,6 +92,35 @@ def load_candidate(year, number):
                 value=_clean(meta.get("nilai", "")), title=_clean(meta.get("unit", "")))
 
 
+def _document_rows(state, result):
+    """Presentation only; retain canonical session ID and source fields."""
+    result = dict(result)
+    result["TAJUK"] = re.sub(r"^PdP\s+\d+\s*[—–:-]\s*", "", result["TAJUK"], flags=re.I)
+    manual = state.get("rph_teacher_reflection")
+    if isinstance(manual, str) and manual.strip():
+        result["REFLEKSI"] = manual
+        return result
+    if str(state.get("rph_reflection_mode") or "").casefold() == "manual":
+        result["REFLEKSI"] = ""
+        return result
+    current = str(result.get("REFLEKSI") or "").strip()
+    if current and not re.search(r"murid (?:mencapai|menguasai) (?:objektif|kriteria kejayaan)", current, re.I):
+        return result
+    # Select a complete criterion or source statement, never truncate words.
+    for field in ("KRITERIA KEJAYAAN", "OBJEKTIF PEMBELAJARAN", "STANDARD PEMBELAJARAN"):
+        raw = str(result.get(field) or "").strip()
+        text = " ".join(raw.split()).rstrip(". ")
+        candidates = [text] + re.split(r";\s+|(?<=\.)\s+(?=[A-Z])", text)
+        evidence = next((s.strip(". ") for s in candidates
+                         if 18 <= len(s.strip(". ")) <= 145
+                         and re.search(r"[A-Za-z]{4,}", s)
+                         and not re.search(r"fokus pembelajaran|mengikut SP|mencapai objektif", s, re.I)), "")
+        if evidence:
+            result["REFLEKSI"] = "____ / ____ murid mencapai sasaran: " + evidence + ". Baki dibimbing."
+            return result
+    return result
+
+
 def adapt_rows(state, rows):
     if not isinstance(state, dict) or not isinstance(rows, dict):
         return rows
@@ -103,10 +132,10 @@ def adapt_rows(state, rows):
         plan = load_plan(year, state[STATE_KEY])
         if plan is None or str(state.get("lesson_no")) != str(plan["number"]):
             raise ValueError("Invalid Moral RPT session")
-        return {
+        return _document_rows(state, {
             **rows, **plan["fields"], "MATA PELAJARAN": SUBJECT,
             "TAHUN/TINGKATAN": f"Tahun {year}",
-        }
+        })
     raw = str(state.get("lesson_no") or state.get("pdp_no") or "").strip()
     if year is None or not raw.isascii() or not raw.isdecimal():
         return rows
@@ -137,7 +166,7 @@ def adapt_rows(state, rows):
         "BAHAN BANTU MENGAJAR": p["materials"],
         "EMK / NILAI": p["value"],
     })
-    return result
+    return _document_rows(state, result)
 
 
 def install(runtime):
