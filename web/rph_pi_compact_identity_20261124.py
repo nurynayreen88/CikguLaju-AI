@@ -69,6 +69,28 @@ def compact_pi_identity(data):
                 if a<b:n.text=value[:a]+value[b:]
                 offset+=len(value)
             assert text(topic)==full[:start]+full[end:]
+        # Explicit complex-script AND Latin bold for matching labels only.
+        from web.rph_pi_jawi_numerals_20261124 import PAK21
+        def bold(run):
+            pr=run.find(W+"rPr")
+            if pr is None:
+                pr=etree.Element(W+"rPr");run.insert(0,pr)
+            for tag in ("b","bCs"):
+                e=pr.find(W+tag)
+                if e is None:e=etree.SubElement(pr,W+tag)
+                e.set(W+"val","1")
+        for p in [lines[2], *cells[1].findall(W+"p")]:
+            for r in p.findall(W+"r"):
+                if r.find(W+"tab") is not None:break
+                if text(r).strip():bold(r)
+        for row in tables[1].findall(W+"tr"):
+            label=row.find(W+"tc")
+            label_text=text(label).strip()
+            if "EMK" in label_text or "KBAT" in label_text or PAK21.search(label_text):
+                for run in label.iter(W+"r"):
+                    if text(run).strip():bold(run)
+                for node in label.iter(W+"t"):
+                    if node.text:node.text=PAK21.sub("PAK 21",node.text)
         out=BytesIO()
         with ZipFile(out,"w") as dest:
             for item in z.infolist():
