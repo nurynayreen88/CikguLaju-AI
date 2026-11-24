@@ -1,0 +1,20 @@
+name: Moral 480 source reflection QA
+on:
+  pull_request:
+    paths:
+      - 'web/pendidikan_moral_80_runtime.py'
+      - 'tests/test_moral_480_document_reflection_20261124.py'
+      - '.github/workflows/moral-480-document-reflection-20261124.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pytest reportlab pypdf python-docx
+      - run: python -m pytest -q tests/test_moral_480_document_reflection_20261124.py

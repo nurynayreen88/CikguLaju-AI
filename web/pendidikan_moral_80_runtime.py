@@ -92,6 +92,41 @@ def load_candidate(year, number):
                 value=_clean(meta.get("nilai", "")), title=_clean(meta.get("unit", "")))
 
 
+def _document_rows(state, result, source_sp=None):
+    """Presentation only; retain canonical session ID and source fields."""
+    result = dict(result)
+    result["TAJUK"] = re.sub(r"^PdP\s+\d+\s*[—–:-]\s*", "", result["TAJUK"], flags=re.I)
+    manual = state.get("rph_teacher_reflection")
+    if isinstance(manual, str) and manual.strip():
+        result["REFLEKSI"] = manual
+        return result
+    if str(state.get("rph_reflection_mode") or "").casefold() == "manual":
+        result["REFLEKSI"] = ""
+        return result
+    current = str(result.get("REFLEKSI") or "").strip()
+    if current and not re.search(r"murid (?:mencapai|menguasai) (?:objektif|kriteria kejayaan)", current, re.I):
+        return result
+    # Compact the single known tight core lesson with an exact source SP.
+    if _year(state.get("year") or state.get("year_label")) == 6 and source_sp and str(state.get("lesson_no")) == "8":
+        result["REFLEKSI"] = "____ / ____ murid: " + source_sp.split(" | ", 1)[0].rstrip(". ") + ". Baki dibimbing."
+        return result
+    # Select a complete criterion or source statement, never truncate words.
+    for field in ("KRITERIA KEJAYAAN", "OBJEKTIF PEMBELAJARAN", "STANDARD PEMBELAJARAN"):
+        raw = str((source_sp if field == "STANDARD PEMBELAJARAN" and source_sp else result.get(field)) or "").strip()
+        text = " ".join(raw.split()).rstrip(". ")
+        candidates = [text] + re.split(r"\s*\|\s*|;\s+|(?<=\.)\s+(?=[A-Z])", text)
+        if field == "STANDARD PEMBELAJARAN":
+            candidates = [re.sub(r"^\d+\.\d+\s*[—–:-]?\s*", "", s) for s in candidates]
+        evidence = next((s.strip(". ") for s in candidates
+                         if 18 <= len(s.strip(". ")) <= 145
+                         and re.search(r"[A-Za-z]{4,}", s)
+                         and not re.search(r"fokus pembelajaran|mengikut SP|mencapai objektif", s, re.I)), "")
+        if evidence:
+            result["REFLEKSI"] = "____ / ____ murid mencapai sasaran: " + evidence + ". Baki dibimbing."
+            return result
+    return result
+
+
 def adapt_rows(state, rows):
     if not isinstance(state, dict) or not isinstance(rows, dict):
         return rows
@@ -103,10 +138,10 @@ def adapt_rows(state, rows):
         plan = load_plan(year, state[STATE_KEY])
         if plan is None or str(state.get("lesson_no")) != str(plan["number"]):
             raise ValueError("Invalid Moral RPT session")
-        return {
+        return _document_rows(state, {
             **rows, **plan["fields"], "MATA PELAJARAN": SUBJECT,
             "TAHUN/TINGKATAN": f"Tahun {year}",
-        }
+        })
     raw = str(state.get("lesson_no") or state.get("pdp_no") or "").strip()
     if year is None or not raw.isascii() or not raw.isdecimal():
         return rows
@@ -137,7 +172,8 @@ def adapt_rows(state, rows):
         "BAHAN BANTU MENGAJAR": p["materials"],
         "EMK / NILAI": p["value"],
     })
-    return result
+    source_sp = " | ".join(x["text"] for x in p["unit"]["sp"] if x["code"] in p["sp"])
+    return _document_rows(state, result, source_sp)
 
 
 def install(runtime):
