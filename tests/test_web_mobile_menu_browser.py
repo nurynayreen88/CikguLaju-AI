@@ -239,7 +239,7 @@ class PhoneMenuLayoutTests(unittest.TestCase):
               admin.click();
             }""")
             expect(page.locator("#web-admin-top")).to_be_visible()
-            expect(page.locator("#web-admin-top summary")).to_contain_text("Pusat Admin")
+            expect(page.locator("#web-admin-top > summary")).to_contain_text("Pusat Admin")
             expect(page.locator("#web-admin-tab")).to_be_hidden()
             expect(page.locator("#web-admin-tab")).to_have_attribute("aria-current","page")
             expect(page.locator("#web-admin-heading")).to_be_visible()
