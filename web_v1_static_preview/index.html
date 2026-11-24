@@ -1518,7 +1518,7 @@ webViewButtons.forEach(button=>button.addEventListener("click",()=>{
   if(curriculum.value==="kp2027"&&["MATH_KP2027","BM_SK_KP2027","PJ_KP2027"].includes(subject.value)){
    let savedGroup="";
    try{if(teacherProfileState.loaded)savedGroup=kp2027GroupForState(JSON.parse(teacherProfileState.savedProfile||"{}").state_name);}catch(_error){}
-   if(!kp2027PilotInventory||(savedGroup&&savedGroup!==kp2027PilotGroup.value))
+   if(!kp2027PilotInventory||(teacherProfileState.loaded&&savedGroup!==kp2027PilotGroup.value))
     subject.dispatchEvent(new Event("change"));
   }
  }
