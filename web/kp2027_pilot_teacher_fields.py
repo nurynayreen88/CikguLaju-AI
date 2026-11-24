@@ -89,7 +89,7 @@ def _proposed_support_action(criterion):
         return any(re.search(r"\b"+re.escape(word)+r"\b", value) for word in words)
     # Musical criteria have priority over incidental quantity words, e.g.
     # "satu rangkap" and the substring "angka" within "rangkap".
-    if has("menyanyikan", "menyanyi", "nyanyian", "nyanyi", "lagu", "rangkap", "tempo", "pic", "irama", "muzik"):
+    if has("menyanyikan", "menyanyi", "nyanyian", "nyanyi", "lagu", "tempo", "pic", "irama", "muzik"):
         return ("latihan nyanyian berpandu dengan sebutan, pic dan tempo mengikut contoh guru",
                 "latihan nyanyian berpandu")
     if has("deria") or (has("objek") and has("membanding", "membandingkan", "perbandingan", "ciri")):
@@ -119,7 +119,7 @@ def _proposed_support_action(criterion):
     if has("jam", "waktu", "kalendar", "masa"):
         return ("latihan membaca jam model dan kalendar melalui contoh harian",
                 "latihan masa menggunakan jam model")
-    if has("lagu", "nyanyi", "irama", "muzik", "gerak mengikut"):
+    if has("gerak mengikut", "pergerakan mengikut"):
         return ("latihan ulangan secara berkumpulan kecil menggunakan contoh irama dan pergerakan",
                 "latihan irama dan gerakan berpandu")
     if has("melukis", "lukisan", "poster", "kraf", "model", "menghasilkan"):
