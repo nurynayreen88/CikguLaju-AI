@@ -21,6 +21,20 @@
       "pdp": 59,
       "reason": "Objective lists invalidators 7–12 but RPT activity note lists 13–18. Check original RPT and textbook before selecting range.",
       "source_run": 45496513559
+    },
+    {
+      "id": 1387,
+      "year": 3,
+      "pdp": 1,
+      "reason": "Native objective has Al-Kafirun range 3–1 in logical text order; may be bidi ordering, not necessarily a wrong intended range. Verify exact original RPT/mushaf and native Word/PDF display; no automatic reversal.",
+      "source_run": 45498362049
+    },
+    {
+      "id": 1391,
+      "year": 3,
+      "pdp": 5,
+      "reason": "Native objective has Al-Kafirun range 5–4 in logical text order; may be bidi ordering, not necessarily a wrong intended range. Verify exact original RPT/mushaf and native Word/PDF display; no automatic reversal.",
+      "source_run": 45498362049
     }
   ]
 }
