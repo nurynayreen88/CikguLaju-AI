@@ -373,3 +373,16 @@ def test_pi_pdf_topic_duration_and_vertical_center():
     assert banner._cellStyles[0][1].valign=="MIDDLE"
     assert original[2]._cellvalues[7][0].getPlainText()=="القرءان ١ جم ٣٠ مينيت (اولڠن)"
     assert result[-3] is original[4] and result[-1] is original[6]
+
+def test_pi_pdf_latin_acronyms_keep_bold_and_pak_21():
+    original=_pi_story()
+    style=getSampleStyleSheet()["Normal"]
+    original[2]._cellvalues[8][1]=Paragraph("EMK / نيلاي",style)
+    original[2]._cellvalues[9][1]=Paragraph("KBAT / PAK٢١",style)
+    revised=reflow_verified_pi_header({"task":"rph","subject":"Pendidikan Islam","year":"Tahun 2"},original)
+    body=revised[4]
+    assert "<b>" in body._cellvalues[0][1].text
+    assert body._cellvalues[1][1].getPlainText()=="KBAT / PAK 21"
+    assert "<b>" in body._cellvalues[1][1].text
+    assert body._cellvalues[0][0] is original[2]._cellvalues[8][0]
+    assert body._cellvalues[1][0] is original[2]._cellvalues[9][0]
