@@ -64,6 +64,9 @@ def _assert_design_and_source(raw, plan):
     )
     for field in TEXT_KEYS:
         assert plan[field] in displayed, (plan["year"], plan["lesson"], field)
+    footer_reflection = doc.tables[3].cell(2, 1).text
+    if "بلغ هدف الدرس" in plan["reflection"]:
+        assert plan["success"].strip() in footer_reflection
     for standard in ("sk", "sp"):
         assert plan[standard] in displayed
     assert "الصف" in header.cell(0, 0).text
@@ -155,3 +158,11 @@ def test_all_120_real_arabic_lessons_word_to_pdf_a4(tmp_path):
             assert len(strokes) >= 6, (word.name, len(strokes))
             assert max(p.x0 for p in strokes) - min(p.x0 for p in strokes) < 2
             assert max(p.x1 for p in strokes) - min(p.x1 for p in strokes) < 2
+
+
+def test_reviewed_arabic_manual_reflection_is_exact():
+    plan = _plan(2, 2)
+    data = BytesIO()
+    manual = "أعاد التلميذ قراءة الكلمات بمساعدة المعلّم."
+    render_arabic_word(plan, ("", "", "", "", None), manual, data)
+    assert Document(BytesIO(data.getvalue())).tables[3].cell(2, 1).text == manual
