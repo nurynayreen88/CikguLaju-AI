@@ -55,7 +55,19 @@ def ready():
 def lesson(group,n):
     if group not in COUNTS or type(n) is not int or not 1<=n<=COUNTS[group]:
         raise Unavailable('Pilihan PdP BM SK tidak sah')
-    return approved_source()[group][str(n)]
+    record = approved_source()[group][str(n)]
+    # DK BPK KPM 2026, BM SK Tahun 1, ISBN 978-967-420-797-7,
+    # printed pp.39 and 44. Preserve the SHA-pinned penataran source and
+    # every other lesson field; only correct the two exact legacy SK labels.
+    corrected = {
+        "3.2": ("Membaca dan memahami pelbagai maklumat penting dengan jelas dan tepat.",
+                "Membaca dan memahami pelbagai maklumat penting secara jelas dan tepat."),
+        "4.1": ("Menulis ayat secara mekanis.",
+                "Menulis ayat secara mekanis dengan betulnya dan kemasnya."),
+    }.get(record["sk_code"])
+    if corrected and record["sk"] == corrected[0]:
+        return {**record, "sk": corrected[1]}
+    return record
 
 def _safe_value(fields,key):
     return fields.get(key,'') or ''
