@@ -3,13 +3,13 @@
   "year": 4,
   "subject": "数学（华小）",
   "unit": "钱币",
-  "dskp_source": "https://fliphtml5.com/dsymy/mozv/",
+  "dskp_source": "https://asiemodel.net/wp-content/uploads/2022/08/DSKP-KSSR-Semakan-2017-Matematik-Tahun-4-SJKC.pdf",
   "dskp_crosscheck": [
     "https://anyflip.com/xzmqr/mxus/basic/51-91",
     "https://anyflip.com/ysqd/pngh/basic/51-88"
   ],
   "textbook_source": "https://anyflip.com/zehqn/akxt/basic/51-100",
-  "note": "Eight original teaching candidates; SP topic alignment provisional from indexed source excerpts and parallel language cross-check. Full document access blocked. No official wording, textbook page numbers, final PdP sequence, or remaining SP coverage asserted. Do not publish.",
+  "note": "All 17 SP codes and topic scopes crosschecked visually against printed pp. 41–42 on 2026-11-24. Original teaching candidates, not verbatim standards. Textbook pages, calendar, sequence, document rendering and pedagogical QA pending; HOLD.",
   "records": [
     {
       "candidate_id": "T4-U3-C01",
@@ -40,7 +40,7 @@
       "extension": "学生设计同类任务并说明答案的依据。",
       "textbook_pages": null,
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_FULL_DSKP_TEXTBOOK_RPT_QA"
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
     },
     {
       "candidate_id": "T4-U3-C02",
@@ -71,7 +71,7 @@
       "extension": "学生设计同类任务并说明答案的依据。",
       "textbook_pages": null,
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_FULL_DSKP_TEXTBOOK_RPT_QA"
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
     },
     {
       "candidate_id": "T4-U3-C03",
@@ -102,7 +102,7 @@
       "extension": "学生设计同类任务并说明答案的依据。",
       "textbook_pages": null,
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_FULL_DSKP_TEXTBOOK_RPT_QA"
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
     },
     {
       "candidate_id": "T4-U3-C04",
@@ -133,7 +133,7 @@
       "extension": "学生设计同类任务并说明答案的依据。",
       "textbook_pages": null,
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_FULL_DSKP_TEXTBOOK_RPT_QA"
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
     },
     {
       "candidate_id": "T4-U3-C05",
@@ -164,15 +164,108 @@
       "extension": "学生设计同类任务并说明答案的依据。",
       "textbook_pages": null,
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_FULL_DSKP_TEXTBOOK_RPT_QA"
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U3-C09",
+      "sk": "3.2",
+      "sp": "3.2.2",
+      "topic": "乘除混合计算",
+      "objective": "独立计算四道币值乘除混合题，数值限RM100 000。",
+      "criterion": "四题至少三题正确。",
+      "induction": "比较整箱货物的总价与分摊金额。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师用价格表示范从左到右逐步计算。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生根据批量采购卡列式，再交换检查。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生完成四道新题并用逆运算核对。"
+        }
+      ],
+      "bbm": "价目表、运算卡",
+      "assessment": "教师依据本课成功标准检查个人作答，并记录实际掌握人数。",
+      "closure": "学生说明本课所用方法，教师针对错误给予反馈。",
+      "remedial": "把混合算式拆成两道单步算式。",
+      "extension": "设计一道批量采购与分摊的题目。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U3-C10",
+      "sk": "3.3",
+      "sp": "3.3.1",
+      "topic": "短期预算",
+      "objective": "根据虚构收入为一周目标编制每日、每周和每月预算。",
+      "criterion": "三份预算收支均平衡，至少两份达到指定目标。",
+      "induction": "展示为班级活动储蓄的情境。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师演示如何从目标金额推算每日储蓄。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生比较不同储蓄计划的可行性。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立填写三种期间的预算表。"
+        }
+      ],
+      "bbm": "预算表、情境卡",
+      "assessment": "教师依据本课成功标准检查个人作答，并记录实际掌握人数。",
+      "closure": "学生说明本课所用方法，教师针对错误给予反馈。",
+      "remedial": "提供已填入固定收入的预算表。",
+      "extension": "调整一项开支并解释新计划。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U3-C11",
+      "sk": "3.3",
+      "sp": "3.3.2",
+      "topic": "收支记录",
+      "objective": "根据五笔模拟交易填写储蓄和支出记录。",
+      "criterion": "五笔交易至少四笔分类与余额正确。",
+      "induction": "展示一张缺少余额的模拟记录。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范记录收入、支出及结余。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生按交易日期填表并核对余额。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立记录五笔交易，判断能否达到目标。"
+        }
+      ],
+      "bbm": "模拟交易卡、收支表",
+      "assessment": "教师依据本课成功标准检查个人作答，并记录实际掌握人数。",
+      "closure": "学生说明本课所用方法，教师针对错误给予反馈。",
+      "remedial": "用两笔交易练习分类。",
+      "extension": "根据记录提出改善储蓄的方法。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
     },
     {
       "candidate_id": "T4-U3-C06",
       "sk": "3.3",
       "sp": "3.3.3",
-      "topic": "储蓄和开支记录",
+      "topic": "保存储蓄与开支记录的理由",
       "objective": "从一份模拟收支表找出三项资料，并说明保存记录的两项用途。",
-      "criterion": "五项至少四项正确。",
+      "criterion": "两项用途均解释合理，且三项资料至少两项正确。",
       "induction": "比较有记录和没有记录的零用钱情况。",
       "activities": [
         {
@@ -195,7 +288,100 @@
       "extension": "学生设计同类任务并说明答案的依据。",
       "textbook_pages": null,
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_FULL_DSKP_TEXTBOOK_RPT_QA"
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U3-C12",
+      "sk": "3.4",
+      "sp": "3.4.1",
+      "topic": "理财决定的后果",
+      "objective": "分析三种虚构消费决定并说明其可能后果。",
+      "criterion": "至少两种决定的后果解释合理。",
+      "induction": "比较立即购买与延后购买的故事。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师引导学生区分即时满足与长期影响。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生用因果图讨论三种不同选择。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立写出每种决定的可能后果。"
+        }
+      ],
+      "bbm": "因果图、故事卡",
+      "assessment": "教师依据本课成功标准检查个人作答，并记录实际掌握人数。",
+      "closure": "学生说明本课所用方法，教师针对错误给予反馈。",
+      "remedial": "提供后果选项供配对。",
+      "extension": "比较同一决定对两个不同预算的影响。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U3-C13",
+      "sk": "3.4",
+      "sp": "3.4.2",
+      "topic": "需要与想要",
+      "objective": "在有限预算内选择必需品并说明取舍。",
+      "criterion": "四项物品至少三项分类正确，选择不超预算。",
+      "induction": "出示有限预算与购物清单。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范按必要程度排列物品。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生分组拟订购买清单并计算总额。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立分类四项物品并写出取舍理由。"
+        }
+      ],
+      "bbm": "商品卡、模拟钱币",
+      "assessment": "教师依据本课成功标准检查个人作答，并记录实际掌握人数。",
+      "closure": "学生说明本课所用方法，教师针对错误给予反馈。",
+      "remedial": "减少物品数并给出价格提示。",
+      "extension": "预算减少时重新安排购买次序。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U3-C14",
+      "sk": "3.4",
+      "sp": "3.4.3",
+      "topic": "比较理财资料",
+      "objective": "比较两份虚构商店报价和附加费用并作出有依据的选择。",
+      "criterion": "准确比较两项总成本并说明一项合理依据。",
+      "induction": "展示标价不同但运费不同的商品。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师说明应比较完整成本而非广告标价。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生核对价目表与模拟收据，计算总成本。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立选择方案并写出计算及理由。"
+        }
+      ],
+      "bbm": "模拟广告、报价表",
+      "assessment": "教师依据本课成功标准检查个人作答，并记录实际掌握人数。",
+      "closure": "学生说明本课所用方法，教师针对错误给予反馈。",
+      "remedial": "圈出标价和附加费用。",
+      "extension": "加入优惠条件重新比较。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
     },
     {
       "candidate_id": "T4-U3-C07",
@@ -226,7 +412,7 @@
       "extension": "学生设计同类任务并说明答案的依据。",
       "textbook_pages": null,
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_FULL_DSKP_TEXTBOOK_RPT_QA"
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
     },
     {
       "candidate_id": "T4-U3-C08",
@@ -257,7 +443,104 @@
       "extension": "学生设计同类任务并说明答案的依据。",
       "textbook_pages": null,
       "rpt_pdp": null,
-      "status": "DRAFT_PENDING_FULL_DSKP_TEXTBOOK_RPT_QA"
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U3-C15",
+      "sk": "3.6",
+      "sp": "3.6.1",
+      "topic": "认识付款方式",
+      "objective": "辨认现金、付款卡及电子付款的示例。",
+      "criterion": "五张情境卡至少四张分类正确。",
+      "induction": "展示不含个人资料的付款方式图卡。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师解释不同方式的基本特征。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生配对付款方式与相应图示。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立分类五张新情境卡。"
+        }
+      ],
+      "bbm": "自制图卡、模拟付款卡",
+      "assessment": "教师依据本课成功标准检查个人作答，并记录实际掌握人数。",
+      "closure": "学生说明本课所用方法，教师针对错误给予反馈。",
+      "remedial": "先比较现金和非现金。",
+      "extension": "说明一种付款方式需要注意的安全事项。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U3-C16",
+      "sk": "3.6",
+      "sp": "3.6.2",
+      "topic": "付款工具的应用",
+      "objective": "为四种模拟交易选择合适的付款方式并解释。",
+      "criterion": "至少三种选择有合理依据。",
+      "induction": "提出买车票、文具和支付服务费的情境。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范比较是否接受现金或电子付款。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生角色扮演模拟商店交易，不使用真实账户。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立选择四种交易的付款方式及理由。"
+        }
+      ],
+      "bbm": "情境卡、模拟收据",
+      "assessment": "教师依据本课成功标准检查个人作答，并记录实际掌握人数。",
+      "closure": "学生说明本课所用方法，教师针对错误给予反馈。",
+      "remedial": "提供可接受付款方式的提示。",
+      "extension": "讨论一种备用付款方式。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
+    },
+    {
+      "candidate_id": "T4-U3-C17",
+      "sk": "3.7",
+      "sp": "3.7.1",
+      "topic": "钱币应用题",
+      "objective": "解答四道RM100 000以内的基本及混合运算应用题。",
+      "criterion": "至少三题算式和答案正确。",
+      "induction": "展示学校义卖收入和支出的情境。",
+      "activities": [
+        {
+          "title": "活动一：示范与观察",
+          "body": "教师示范用条形图找出已知量与未知量。"
+        },
+        {
+          "title": "活动二：引导练习",
+          "body": "学生分组比较单步与多步解法。"
+        },
+        {
+          "title": "活动三：独立应用",
+          "body": "学生独立完成四题并验算一题。"
+        }
+      ],
+      "bbm": "情境卡、条形图",
+      "assessment": "教师依据本课成功标准检查个人作答，并记录实际掌握人数。",
+      "closure": "学生说明本课所用方法，教师针对错误给予反馈。",
+      "remedial": "把多步题分成两个问题。",
+      "extension": "设计一个有多种解法的预算问题。",
+      "textbook_pages": null,
+      "rpt_pdp": null,
+      "status": "DRAFT_DSKP_CODE_SCOPE_CHECKED_PENDING_TEXTBOOK_RPT_QA"
     }
+  ],
+  "dskp_printed_pages": [
+    41,
+    42
   ]
 }
