@@ -127,8 +127,8 @@ let checkedRph=0;
 const variants=[
  {code:"science_dlp",label:"Science (DLP)",rph_code:"SCIENCE_DLP",curriculum:"dlp",rpt_years:[2,3,4,5,6]},
  {code:"mathematics_dlp",label:"Mathematics (DLP)",rph_code:"MATH_DLP",curriculum:"dlp",rpt_years:[2,3,4,5,6]},
- {code:"matematik_sjkc",label:"Matematik (SJKC)",curriculum:"sjkc",rpt_years:[2]},
- {code:"matematik_sjkt",label:"Matematik (SJKT)",curriculum:"sjkt"},
+ {code:"matematik_sjkc",label:"Matematik SJKC",curriculum:"sjkc",rpt_years:[2]},
+ {code:"matematik_sjkt",label:"Matematik SJKT",curriculum:"sjkt"},
  ...[
   ["bahasa_iban","Bahasa Iban"],["bahasa_kadazandusun","Bahasa Kadazandusun"],
   ["bahasa_semai","Bahasa Semai"],["bahasa_cina_sk","Bahasa Cina (SK)"],["bahasa_tamil_sk","Bahasa Tamil (SK)"]
@@ -181,7 +181,7 @@ const ctx={
   catalogueCalls.push(kind);
   if(extra.curriculum==="sjkc")return ctx.sjkcReady?[{value:"MATH_SJKC",label:"Matematik SJKC"}]:[];
   if(extra.curriculum==="sjkt")return ctx.sjktReady?[{value:"MATH_SJKT",label:"Matematik SJKT"}]:[];
-  return [{value:"MATH",label:"Matematik"}];
+  return [{value:"MATH",label:"Matematik"},{value:"MATH_DPK3",label:"Matematik SK (DPK Edisi 3)"}];
  },
  showStep(el,visible){el.hidden=!visible;}, subjectNavLabel(){return "Unit";},
  async fillForSelection(el,kind,extra){
@@ -274,10 +274,11 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  assert.deepEqual(year.options.map(x=>x.value),["","1","2","3","4","5","6"]);
  for(const y of ["2","3"]){
   year.value=y;await listeners["year.change"]();
-  assert.ok(subject.options.some(o=>o.value==="MATH"&&o.label==="Matematik (SK)"));
+  assert.ok(subject.options.some(o=>o.value==="MATH"&&o.label==="Matematik SK"));
+  assert.ok(subject.options.some(o=>o.value==="MATH_DPK3"&&o.label==="Matematik SK (DPK Edisi 3)"));
   const pending=subject.options.find(o=>o.value==="matematik_sjkc");
   assert.ok(pending,"Year "+y+" SJKC planned subject");
-  assert.match(pending.label,/Matematik \(SJKC\).*Dalam Penyediaan/);
+  assert.match(pending.label,/Matematik SJKC.*Dalam Penyediaan/);
   subject.value=pending.value;await listeners["subject.change"]();
   assert.equal(unit.hidden,true);assert.equal(lesson.hidden,true);
   assert.match(ctx.help,/dalam penyediaan/i);
@@ -287,7 +288,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  for(const y of ["2","3"]){
   year.value=y;await listeners["year.change"]();
   const option=subject.options.find(o=>o.value==="MATH_SJKC");
-  assert.ok(option);assert.equal(option.label,"Matematik (SJKC)");
+  assert.ok(option);assert.equal(option.label,"Matematik SJKC");
   subject.value="MATH_SJKC";await listeners["subject.change"]();
   assert.deepEqual(unit.options.map(o=>o.value),["","2"]);
   unit.value="2";await listeners["unit.change"]();
@@ -298,12 +299,12 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
   "subjects","subjects","units","MATH_SJKC","pdp","MATH_SJKC","2"]);
  year.value="2";await listeners["year.change"]();
  const draftSjkt=subject.options.find(o=>o.value==="matematik_sjkt");
- assert.ok(draftSjkt);assert.match(draftSjkt.label,/Matematik \(SJKT\).*Dalam Penyediaan/);
+ assert.ok(draftSjkt);assert.match(draftSjkt.label,/Matematik SJKT.*Dalam Penyediaan/);
  subject.value=draftSjkt.value;await listeners["subject.change"]();
  assert.equal(unit.hidden,true);
  ctx.sjktReady=true;await listeners["year.change"]();
  const sjktOption=subject.options.find(o=>o.value==="MATH_SJKT");
- assert.ok(sjktOption);assert.equal(sjktOption.label,"Matematik (SJKT)");
+ assert.ok(sjktOption);assert.equal(sjktOption.label,"Matematik SJKT");
  subject.value=sjktOption.value;await listeners["subject.change"]();
  assert.deepEqual(unit.options.map(o=>o.value),["","5"]);
  unit.value="5";await listeners["unit.change"]();
@@ -354,7 +355,7 @@ vm.runInNewContext(code.slice(code.indexOf("const subjectVariants="),code.indexO
  assert.deepEqual(year.options.map(x=>x.value),["","1","2","3","4","5","6"]);
  year.value="2";
  await listeners["year.change"]();
- assert.ok(subject.options.some(o=>o.value==="MATH"&&o.label==="Matematik (SK)"));
+ assert.ok(subject.options.some(o=>o.value==="MATH"&&o.label==="Matematik SK"));
  assert.ok(subject.options.some(o=>o.value==="MATH_SJKC"));
  assert.ok(subject.options.some(o=>o.value==="MATH_SJKT"));
  for(const option of subject.options.filter(item=>item.value.startsWith("planned:"))){
